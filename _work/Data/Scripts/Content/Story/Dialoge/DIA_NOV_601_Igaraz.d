@@ -51,11 +51,11 @@ FUNC VOID DIA_Igaraz_Hello_Info()
 {
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self ,other,"DIA_Igaranz_Hello_13_00"); //Что я могу сделать для тебя, брат?
+		AI_Output (self ,other,"DIA_Igaranz_Hello_13_00"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ, Р±СЂР°С‚?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Igaranz_Hello_13_01"); //Что я могу сделать для тебя?
+		AI_Output (self ,other,"DIA_Igaranz_Hello_13_01"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 	};	
 };
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE DIA_Igaraz_Wurst(C_INFO)
 	condition	= DIA_Igaraz_Wurst_Condition;
 	information	= DIA_Igaraz_Wurst_Info;
 	permanent	= FALSE;
-	description = "Я занимаюсь распределением колбасы.";
+	description = "РЇ Р·Р°РЅРёРјР°СЋСЃСЊ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј РєРѕР»Р±Р°СЃС‹.";
 };                       
 
 FUNC INT DIA_Igaraz_Wurst_Condition()
@@ -84,8 +84,8 @@ FUNC INT DIA_Igaraz_Wurst_Condition()
 
 FUNC VOID DIA_Igaraz_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Igaraz_Wurst_15_00"); //Я раздаю колбасу.
-	AI_Output (self, other, "DIA_Igaraz_Wurst_13_01"); //Ты работаешь на Горакса, да? Хорошо, тогда давай сюда эту колбасу.
+	AI_Output (other, self, "DIA_Igaraz_Wurst_15_00"); //РЇ СЂР°Р·РґР°СЋ РєРѕР»Р±Р°СЃСѓ.
+	AI_Output (self, other, "DIA_Igaraz_Wurst_13_01"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р“РѕСЂР°РєСЃР°, РґР°? РҐРѕСЂРѕС€Рѕ, С‚РѕРіРґР° РґР°РІР°Р№ СЃСЋРґР° СЌС‚Сѓ РєРѕР»Р±Р°СЃСѓ.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -109,7 +109,7 @@ INSTANCE DIA_Igaranz_NotWork   (C_INFO)
 	condition   = DIA_Igaraz_NotWork_Condition;
 	information = DIA_Igaraz_NotWork_Info;
 	permanent   = FALSE;
-	description	= "Почему ты не работаешь?";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ?";
 };
 FUNC INT DIA_Igaraz_NotWork_Condition()
 {	
@@ -122,12 +122,12 @@ FUNC INT DIA_Igaraz_NotWork_Condition()
 };
 FUNC VOID DIA_Igaraz_NotWork_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_NotWork_15_00"); //Почему ты не работаешь?
-	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_01"); //Мне позволено изучать учения Инноса. Я постигаю его мудрость.
-	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //Однажды он выберет меня - и тогда я пройду испытание магией и войду в Круг Огня.
+	AI_Output (other,self ,"DIA_Igaranz_NotWork_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_01"); //РњРЅРµ РїРѕР·РІРѕР»РµРЅРѕ РёР·СѓС‡Р°С‚СЊ СѓС‡РµРЅРёСЏ РРЅРЅРѕСЃР°. РЇ РїРѕСЃС‚РёРіР°СЋ РµРіРѕ РјСѓРґСЂРѕСЃС‚СЊ.
+	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //РћРґРЅР°Р¶РґС‹ РѕРЅ РІС‹Р±РµСЂРµС‚ РјРµРЅСЏ - Рё С‚РѕРіРґР° СЏ РїСЂРѕР№РґСѓ РёСЃРїС‹С‚Р°РЅРёРµ РјР°РіРёРµР№ Рё РІРѕР№РґСѓ РІ РљСЂСѓРі РћРіРЅСЏ.
 };
 ///////////////////////////////////////////////////////////////////////
-//Wer sind die Erwдhlten?
+//Wer sind die ErwРґhlten?
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_Choosen   (C_INFO)
 {
@@ -136,7 +136,7 @@ INSTANCE DIA_Igaranz_Choosen   (C_INFO)
 	condition   = DIA_Igaraz_Choosen_Condition;
 	information = DIA_Igaraz_Choosen_Info;
 	permanent   = TRUE;
-	description	= "Кто такие Избранные?";
+	description	= "РљС‚Рѕ С‚Р°РєРёРµ РР·Р±СЂР°РЅРЅС‹Рµ?";
 };
 
 FUNC INT DIA_Igaraz_Choosen_Condition()
@@ -151,14 +151,14 @@ FUNC INT DIA_Igaraz_Choosen_Condition()
 };
 FUNC VOID DIA_Igaraz_Choosen_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_15_00"); //Кто такие Избранные?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_01"); //Это послушники, которым Иннос предписал пройти испытание магией.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_02"); //Тот, кто проходит его, принимается в ряды Магов Огня.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_15_00"); //РљС‚Рѕ С‚Р°РєРёРµ РР·Р±СЂР°РЅРЅС‹Рµ?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_01"); //Р­С‚Рѕ РїРѕСЃР»СѓС€РЅРёРєРё, РєРѕС‚РѕСЂС‹Рј РРЅРЅРѕСЃ РїСЂРµРґРїРёСЃР°Р» РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ РјР°РіРёРµР№.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_02"); //РўРѕС‚, РєС‚Рѕ РїСЂРѕС…РѕРґРёС‚ РµРіРѕ, РїСЂРёРЅРёРјР°РµС‚СЃСЏ РІ СЂСЏРґС‹ РњР°РіРѕРІ РћРіРЅСЏ.
 	
 	Info_ClearChoices (DIA_Igaranz_Choosen);
 	Info_AddChoice 	(DIA_Igaranz_Choosen,Dialog_Back,DIA_Igaranz_Choosen_back);
-	Info_AddChoice	(DIA_Igaranz_Choosen,"Что такое Испытание Магией?",DIA_Igaranz_Choosen_TestOfMagic);
-	Info_AddChoice	(DIA_Igaranz_Choosen,"Как я могу стать Избранным?",DIA_Igaranz_Choosen_HowChoosen);
+	Info_AddChoice	(DIA_Igaranz_Choosen,"Р§С‚Рѕ С‚Р°РєРѕРµ РСЃРїС‹С‚Р°РЅРёРµ РњР°РіРёРµР№?",DIA_Igaranz_Choosen_TestOfMagic);
+	Info_AddChoice	(DIA_Igaranz_Choosen,"РљР°Рє СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ РР·Р±СЂР°РЅРЅС‹Рј?",DIA_Igaranz_Choosen_HowChoosen);
 };	
 
 FUNC VOID DIA_Igaranz_Choosen_back ()
@@ -168,19 +168,19 @@ FUNC VOID DIA_Igaranz_Choosen_back ()
 
 FUNC VOID DIA_Igaranz_Choosen_TestOfMagic ()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Что такое Испытание Магией?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_01"); //Это испытание, которому Высший Совет подвергает всех избранных послушников.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Это задание, при выполнении которого проверяются вера и сообразительность послушника.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_03"); //Все избранные послушники принимают в нем участие - но только один из них может успешно выполнить его.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ РСЃРїС‹С‚Р°РЅРёРµ РњР°РіРёРµР№?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_01"); //Р­С‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ, РєРѕС‚РѕСЂРѕРјСѓ Р’С‹СЃС€РёР№ РЎРѕРІРµС‚ РїРѕРґРІРµСЂРіР°РµС‚ РІСЃРµС… РёР·Р±СЂР°РЅРЅС‹С… РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Р­С‚Рѕ Р·Р°РґР°РЅРёРµ, РїСЂРё РІС‹РїРѕР»РЅРµРЅРёРё РєРѕС‚РѕСЂРѕРіРѕ РїСЂРѕРІРµСЂСЏСЋС‚СЃСЏ РІРµСЂР° Рё СЃРѕРѕР±СЂР°Р·РёС‚РµР»СЊРЅРѕСЃС‚СЊ РїРѕСЃР»СѓС€РЅРёРєР°.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_03"); //Р’СЃРµ РёР·Р±СЂР°РЅРЅС‹Рµ РїРѕСЃР»СѓС€РЅРёРєРё РїСЂРёРЅРёРјР°СЋС‚ РІ РЅРµРј СѓС‡Р°СЃС‚РёРµ - РЅРѕ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РёР· РЅРёС… РјРѕР¶РµС‚ СѓСЃРїРµС€РЅРѕ РІС‹РїРѕР»РЅРёС‚СЊ РµРіРѕ.
 };
 
 FUNC VOID DIA_Igaranz_Choosen_HowChoosen ()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_HowChoosen_15_00"); //Как я могу стать Избранным?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //Ты не можешь влиять на это. Иннос самолично выбирает своих послушников, а Высший Совет объявляет его волю.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_HowChoosen_15_00"); //РљР°Рє СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ РР·Р±СЂР°РЅРЅС‹Рј?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //РўС‹ РЅРµ РјРѕР¶РµС€СЊ РІР»РёСЏС‚СЊ РЅР° СЌС‚Рѕ. РРЅРЅРѕСЃ СЃР°РјРѕР»РёС‡РЅРѕ РІС‹Р±РёСЂР°РµС‚ СЃРІРѕРёС… РїРѕСЃР»СѓС€РЅРёРєРѕРІ, Р° Р’С‹СЃС€РёР№ РЎРѕРІРµС‚ РѕР±СЉСЏРІР»СЏРµС‚ РµРіРѕ РІРѕР»СЋ.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Erzдhl mir was ьber Innos Lehren
+//	ErzРґhl mir was СЊber Innos Lehren
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 {
@@ -189,7 +189,7 @@ INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 	condition   = DIA_Igaraz_StudyInnos_Condition;
 	information = DIA_Igaraz_StudyInnos_Info;
 	permanent   = FALSE;
-	description	= "Как я могу начать изучать писания?";
+	description	= "РљР°Рє СЏ РјРѕРіСѓ РЅР°С‡Р°С‚СЊ РёР·СѓС‡Р°С‚СЊ РїРёСЃР°РЅРёСЏ?";
 };
 
 FUNC INT DIA_Igaraz_StudyInnos_Condition()
@@ -204,12 +204,12 @@ FUNC INT DIA_Igaraz_StudyInnos_Condition()
 };
 FUNC VOID DIA_Igaraz_StudyInnos_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_StudyInnos_15_00"); //Как я могу начать изучать писания?
-	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_01"); //Ты должен получить доступ в библиотеку.
-	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //Однако мастер Парлан даст тебе ключ, только когда ты выполнишь все его задания.
+	AI_Output (other,self ,"DIA_Igaranz_StudyInnos_15_00"); //РљР°Рє СЏ РјРѕРіСѓ РЅР°С‡Р°С‚СЊ РёР·СѓС‡Р°С‚СЊ РїРёСЃР°РЅРёСЏ?
+	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃС‚СѓРї РІ Р±РёР±Р»РёРѕС‚РµРєСѓ.
+	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //РћРґРЅР°РєРѕ РјР°СЃС‚РµСЂ РџР°СЂР»Р°РЅ РґР°СЃС‚ С‚РµР±Рµ РєР»СЋС‡, С‚РѕР»СЊРєРѕ РєРѕРіРґР° С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ РІСЃРµ РµРіРѕ Р·Р°РґР°РЅРёСЏ.
 };
 //**************************************************************************
-//	ABSCHNITT 2  DIE PRЬFUNG DER MAGIE 
+//	ABSCHNITT 2  DIE PRР¬FUNG DER MAGIE 
 //**************************************************************************
 ///////////////////////////////////////////////////////////////////////
 //	Info CHOOSEN
@@ -233,7 +233,7 @@ func int DIA_Igaraz_IMTHEMAN_Condition ()
 };
 func void DIA_Igaraz_IMTHEMAN_Info ()
 {
-	AI_Output (self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(гордо) Это свершилось. Иннос выбрал меня я приму участие в испытании магией.
+	AI_Output (self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(РіРѕСЂРґРѕ) Р­С‚Рѕ СЃРІРµСЂС€РёР»РѕСЃСЊ. РРЅРЅРѕСЃ РІС‹Р±СЂР°Р» РјРµРЅСЏ СЏ РїСЂРёРјСѓ СѓС‡Р°СЃС‚РёРµ РІ РёСЃРїС‹С‚Р°РЅРёРё РјР°РіРёРµР№.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info METOO
@@ -245,7 +245,7 @@ instance DIA_Igaraz_METOO		(C_INFO)
 	condition	 = 	DIA_Igaraz_METOO_Condition;
 	information	 = 	DIA_Igaraz_METOO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я тоже ...";
+	description	 = 	"РЇ С‚РѕР¶Рµ ...";
 };
 var int DIA_Igaraz_METOO_NOPERM ;
 
@@ -260,17 +260,17 @@ func int DIA_Igaraz_METOO_Condition ()
 };
 func void DIA_Igaraz_METOO_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_15_00"); //Я тоже - я потребовал прохождения Испытания Огнем.
-	AI_Output (self, other, "DIA_Igaraz_METOO_13_01"); //ЧТО ты потребовал? Ты либо любимчик Инноса, либо сумасшедший.
-	AI_Output (other, self, "DIA_Igaraz_METOO_15_02"); //Мне уже удалось много безумных вещей, и, возможно, удастся и это тоже...
-	AI_Output (self, other, "DIA_Igaraz_METOO_13_03"); //Иннос поддерживает меня - и я пройду это испытание!
+	AI_Output (other, self, "DIA_Igaraz_METOO_15_00"); //РЇ С‚РѕР¶Рµ - СЏ РїРѕС‚СЂРµР±РѕРІР°Р» РїСЂРѕС…РѕР¶РґРµРЅРёСЏ РСЃРїС‹С‚Р°РЅРёСЏ РћРіРЅРµРј.
+	AI_Output (self, other, "DIA_Igaraz_METOO_13_01"); //Р§РўРћ С‚С‹ РїРѕС‚СЂРµР±РѕРІР°Р»? РўС‹ Р»РёР±Рѕ Р»СЋР±РёРјС‡РёРє РРЅРЅРѕСЃР°, Р»РёР±Рѕ СЃСѓРјР°СЃС€РµРґС€РёР№.
+	AI_Output (other, self, "DIA_Igaraz_METOO_15_02"); //РњРЅРµ СѓР¶Рµ СѓРґР°Р»РѕСЃСЊ РјРЅРѕРіРѕ Р±РµР·СѓРјРЅС‹С… РІРµС‰РµР№, Рё, РІРѕР·РјРѕР¶РЅРѕ, СѓРґР°СЃС‚СЃСЏ Рё СЌС‚Рѕ С‚РѕР¶Рµ...
+	AI_Output (self, other, "DIA_Igaraz_METOO_13_03"); //РРЅРЅРѕСЃ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ РјРµРЅСЏ - Рё СЏ РїСЂРѕР№РґСѓ СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ!
 	
 
 	Info_ClearChoices	 (DIA_Igaraz_METOO);
 	Info_AddChoice 		 (DIA_Igaraz_METOO,DIALOG_BACK,DIA_Igaraz_METOO_BACK);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Может, нам лучше действовать вместе...",DIA_Igaraz_METOO_HELP);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"И как, еще ничего не нашел?",DIA_Igaraz_METOO_TELL);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Ты не видел Агона или Ульфа?",DIA_Igaraz_METOO_AGON);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"РњРѕР¶РµС‚, РЅР°Рј Р»СѓС‡С€Рµ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РІРјРµСЃС‚Рµ...",DIA_Igaraz_METOO_HELP);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"Р РєР°Рє, РµС‰Рµ РЅРёС‡РµРіРѕ РЅРµ РЅР°С€РµР»?",DIA_Igaraz_METOO_TELL);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"РўС‹ РЅРµ РІРёРґРµР» РђРіРѕРЅР° РёР»Рё РЈР»СЊС„Р°?",DIA_Igaraz_METOO_AGON);
 };
 FUNC VOID DIA_Igaraz_METOO_BACK()
 {
@@ -278,19 +278,19 @@ FUNC VOID DIA_Igaraz_METOO_BACK()
 };
 FUNC VOID DIA_Igaraz_METOO_TELL ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_TELL_15_00"); //И как, еще ничего не нашел?
-	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_01"); //Так как у тебя все равно никаких шансов, я, пожалуй, скажу тебе:
-	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Даже не пытайся искать около ферм - ты там ничего не найдешь.
+	AI_Output (other, self, "DIA_Igaraz_METOO_TELL_15_00"); //Р РєР°Рє, РµС‰Рµ РЅРёС‡РµРіРѕ РЅРµ РЅР°С€РµР»?
+	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_01"); //РўР°Рє РєР°Рє Сѓ С‚РµР±СЏ РІСЃРµ СЂР°РІРЅРѕ РЅРёРєР°РєРёС… С€Р°РЅСЃРѕРІ, СЏ, РїРѕР¶Р°Р»СѓР№, СЃРєР°Р¶Сѓ С‚РµР±Рµ:
+	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Р”Р°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ РёСЃРєР°С‚СЊ РѕРєРѕР»Рѕ С„РµСЂРј - С‚С‹ С‚Р°Рј РЅРёС‡РµРіРѕ РЅРµ РЅР°Р№РґРµС€СЊ.
 };
 FUNC VOID DIA_Igaraz_METOO_HELP ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_HELP_15_00"); //Может, нам лучше действовать вместе...
-	AI_Output (self, other, "DIA_Igaraz_METOO_HELP_13_01"); //Забудь об этом. Я выполню это задание один. Ты мне будешь только обузой.
+	AI_Output (other, self, "DIA_Igaraz_METOO_HELP_15_00"); //РњРѕР¶РµС‚, РЅР°Рј Р»СѓС‡С€Рµ РґРµР№СЃС‚РІРѕРІР°С‚СЊ РІРјРµСЃС‚Рµ...
+	AI_Output (self, other, "DIA_Igaraz_METOO_HELP_13_01"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. РЇ РІС‹РїРѕР»РЅСЋ СЌС‚Рѕ Р·Р°РґР°РЅРёРµ РѕРґРёРЅ. РўС‹ РјРЅРµ Р±СѓРґРµС€СЊ С‚РѕР»СЊРєРѕ РѕР±СѓР·РѕР№.
 };
 FUNC VOID DIA_Igaraz_METOO_AGON ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_AGON_15_00"); //Ты не видел Агона или Ульфа?
-	AI_Output (self, other, "DIA_Igaraz_METOO_AGON_13_01"); //Мы разделились у таверны. Я пошел к фермам, а эти двое пошли вместе - но куда, я не знаю.
+	AI_Output (other, self, "DIA_Igaraz_METOO_AGON_15_00"); //РўС‹ РЅРµ РІРёРґРµР» РђРіРѕРЅР° РёР»Рё РЈР»СЊС„Р°?
+	AI_Output (self, other, "DIA_Igaraz_METOO_AGON_13_01"); //РњС‹ СЂР°Р·РґРµР»РёР»РёСЃСЊ Сѓ С‚Р°РІРµСЂРЅС‹. РЇ РїРѕС€РµР» Рє С„РµСЂРјР°Рј, Р° СЌС‚Рё РґРІРѕРµ РїРѕС€Р»Рё РІРјРµСЃС‚Рµ - РЅРѕ РєСѓРґР°, СЏ РЅРµ Р·РЅР°СЋ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ADD
@@ -302,7 +302,7 @@ instance DIA_Igaraz_ADD		(C_INFO)
 	condition	 = 	DIA_Igaraz_ADD_Condition;
 	information	 = 	DIA_Igaraz_ADD_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Ты знаешь что-нибудь о 'живой скале'?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ 'Р¶РёРІРѕР№ СЃРєР°Р»Рµ'?";
 };
 func int DIA_Igaraz_ADD_Condition ()
 {	
@@ -317,20 +317,20 @@ func int DIA_Igaraz_ADD_Condition ()
 };
 func void DIA_Igaraz_ADD_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_Add_15_00"); //Ты знаешь что-нибудь о 'живой скале'?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_01"); //(хихикает) Нет! Тебе дал задание Серпентес?
-	AI_Output (other, self, "DIA_Igaraz_Add_15_02"); //Да, а что?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_03"); //Я, кажется, догадываюсь, что он имел в виду...
-	AI_Output (self, other, "DIA_Igaraz_Add_13_04"); //Ты будешь не первым, кто провалил это испытание...
-	AI_Output (other, self, "DIA_Igaraz_Add_15_05"); //Где мне найти эту живую скалу?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_06"); //Просто иди по этой тропинке. Спустя некоторое время ты увидишь реку.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_07"); //Продолжай идти по тропинке в горы. Она должна быть где-то там.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_08"); //Если ты дойдешь до моста - значит, ты зашел слишком далеко.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_09"); //(смеется) ЕСЛИ тебе вообще удастся уйти далеко...
-	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //Это все что я могу сказать тебе... (с сарказмом) Это ведь все же должно быть твое ИСПЫТАНИЕ!
+	AI_Output (other, self, "DIA_Igaraz_Add_15_00"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ 'Р¶РёРІРѕР№ СЃРєР°Р»Рµ'?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_01"); //(С…РёС…РёРєР°РµС‚) РќРµС‚! РўРµР±Рµ РґР°Р» Р·Р°РґР°РЅРёРµ РЎРµСЂРїРµРЅС‚РµСЃ?
+	AI_Output (other, self, "DIA_Igaraz_Add_15_02"); //Р”Р°, Р° С‡С‚Рѕ?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_03"); //РЇ, РєР°Р¶РµС‚СЃСЏ, РґРѕРіР°РґС‹РІР°СЋСЃСЊ, С‡С‚Рѕ РѕРЅ РёРјРµР» РІ РІРёРґСѓ...
+	AI_Output (self, other, "DIA_Igaraz_Add_13_04"); //РўС‹ Р±СѓРґРµС€СЊ РЅРµ РїРµСЂРІС‹Рј, РєС‚Рѕ РїСЂРѕРІР°Р»РёР» СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ...
+	AI_Output (other, self, "DIA_Igaraz_Add_15_05"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚Сѓ Р¶РёРІСѓСЋ СЃРєР°Р»Сѓ?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_06"); //РџСЂРѕСЃС‚Рѕ РёРґРё РїРѕ СЌС‚РѕР№ С‚СЂРѕРїРёРЅРєРµ. РЎРїСѓСЃС‚СЏ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ С‚С‹ СѓРІРёРґРёС€СЊ СЂРµРєСѓ.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_07"); //РџСЂРѕРґРѕР»Р¶Р°Р№ РёРґС‚Рё РїРѕ С‚СЂРѕРїРёРЅРєРµ РІ РіРѕСЂС‹. РћРЅР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РіРґРµ-С‚Рѕ С‚Р°Рј.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_08"); //Р•СЃР»Рё С‚С‹ РґРѕР№РґРµС€СЊ РґРѕ РјРѕСЃС‚Р° - Р·РЅР°С‡РёС‚, С‚С‹ Р·Р°С€РµР» СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_09"); //(СЃРјРµРµС‚СЃСЏ) Р•РЎР›Р С‚РµР±Рµ РІРѕРѕР±С‰Рµ СѓРґР°СЃС‚СЃСЏ СѓР№С‚Рё РґР°Р»РµРєРѕ...
+	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //Р­С‚Рѕ РІСЃРµ С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ... (СЃ СЃР°СЂРєР°Р·РјРѕРј) Р­С‚Рѕ РІРµРґСЊ РІСЃРµ Р¶Рµ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‚РІРѕРµ РРЎРџР«РўРђРќРР•!
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Perm Prьfung 
+//	Info Perm PrСЊfung 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaraz_Pruefung		(C_INFO)
 {
@@ -338,7 +338,7 @@ instance DIA_Igaraz_Pruefung		(C_INFO)
 	nr			 = 	22;
 	condition	 = 	DIA_Igaraz_Pruefung_Condition;
 	information	 = 	DIA_Igaraz_Pruefung_Info;
-	description	 =  "Выяснил что-нибудь новое?";
+	description	 =  "Р’С‹СЏСЃРЅРёР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ?";
 };
 func int DIA_Igaraz_Pruefung_Condition ()
 {	
@@ -351,8 +351,8 @@ func int DIA_Igaraz_Pruefung_Condition ()
 };
 func void DIA_Igaraz_Pruefung_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_Pruefung_15_00"); //Выяснил что-нибудь новое?
-	AI_Output (self, other, "DIA_Igaraz_Pruefung_13_01"); //Пока нет, но я продолжаю поиски.
+	AI_Output (other, self, "DIA_Igaraz_Pruefung_15_00"); //Р’С‹СЏСЃРЅРёР» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ?
+	AI_Output (self, other, "DIA_Igaraz_Pruefung_13_01"); //РџРѕРєР° РЅРµС‚, РЅРѕ СЏ РїСЂРѕРґРѕР»Р¶Р°СЋ РїРѕРёСЃРєРё.
 	
 	AI_StopProcessInfos (self); 
 	
@@ -386,19 +386,19 @@ func int DIA_Igaraz_Stein_Condition ()
 };
 func void DIA_Igaraz_Stein_Info ()
 {
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_00"); //Эй, подожди. Нам нужно поговорить...
-	AI_Output (other, self, "DIA_Igaraz_Seufz_15_01"); //Я так не думаю...
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_02"); //Я ждал этого испытания много лет. Иннос поддерживает меня и я ДОЛЖЕН пройти его.
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_00"); //Р­Р№, РїРѕРґРѕР¶РґРё. РќР°Рј РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ...
+	AI_Output (other, self, "DIA_Igaraz_Seufz_15_01"); //РЇ С‚Р°Рє РЅРµ РґСѓРјР°СЋ...
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_02"); //РЇ Р¶РґР°Р» СЌС‚РѕРіРѕ РёСЃРїС‹С‚Р°РЅРёСЏ РјРЅРѕРіРѕ Р»РµС‚. РРЅРЅРѕСЃ РїРѕРґРґРµСЂР¶РёРІР°РµС‚ РјРµРЅСЏ Рё СЏ Р”РћР›Р–Р•Рќ РїСЂРѕР№С‚Рё РµРіРѕ.
 	
 	if Npc_KnowsInfo (other, DIA_Ulf_Abrechnung)
 	{
-		AI_Output (other, self, "DIA_Igaraz_Seufz_15_03"); //Где-то я уже это слышал.
+		AI_Output (other, self, "DIA_Igaraz_Seufz_15_03"); //Р“РґРµ-С‚Рѕ СЏ СѓР¶Рµ СЌС‚Рѕ СЃР»С‹С€Р°Р».
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Igaraz_Seufz_15_04"); //Ты не первый, кто говорит это.
+		AI_Output (other, self, "DIA_Igaraz_Seufz_15_04"); //РўС‹ РЅРµ РїРµСЂРІС‹Р№, РєС‚Рѕ РіРѕРІРѕСЂРёС‚ СЌС‚Рѕ.
 	};
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_05"); //Хватит болтать. Мне нужно то, что ты нашел. А тебе пришло время умереть!
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_05"); //РҐРІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. РњРЅРµ РЅСѓР¶РЅРѕ С‚Рѕ, С‡С‚Рѕ С‚С‹ РЅР°С€РµР». Рђ С‚РµР±Рµ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ СѓРјРµСЂРµС‚СЊ!
 	
 	
 	AI_StopProcessInfos (self);
@@ -476,7 +476,7 @@ INSTANCE DIA_Igaranz_TalkAboutBabo   (C_INFO)
 	condition   = DIA_Igaraz_TalkAboutBabo_Condition;
 	information = DIA_Igaraz_TalkAboutBabo_Info;
 	permanent   = FALSE;
-	description = "Нам нужно поговорить о Бабо.";
+	description = "РќР°Рј РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ Рѕ Р‘Р°Р±Рѕ.";
 };
 FUNC INT DIA_Igaraz_TalkAboutBabo_Condition()
 {
@@ -487,12 +487,12 @@ FUNC INT DIA_Igaraz_TalkAboutBabo_Condition()
 };
 FUNC VOID DIA_Igaraz_TalkAboutBabo_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_TalkAboutBabo_15_00"); //Нам нужно поговорить о Бабо.
-	AI_Output (self ,other,"DIA_Igaranz_TalkAboutBabo_13_01"); //(сдержанно) Да, в чем дело?
+	AI_Output (other,self ,"DIA_Igaranz_TalkAboutBabo_15_00"); //РќР°Рј РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ Рѕ Р‘Р°Р±Рѕ.
+	AI_Output (self ,other,"DIA_Igaranz_TalkAboutBabo_13_01"); //(СЃРґРµСЂР¶Р°РЅРЅРѕ) Р”Р°, РІ С‡РµРј РґРµР»Рѕ?
 };
 
 //**************************************************************************
-//	Du hast etwas was Babo gehцrt
+//	Du hast etwas was Babo gehС†rt
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 {
@@ -501,7 +501,7 @@ INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 	condition   = DIA_Igaraz_BabosBelongings_Condition;
 	information = DIA_Igaraz_BabosBelongings_Info;
 	permanent   = FALSE;
-	description = "У тебя есть кое-что принадлежащее Бабо.";
+	description = "РЈ С‚РµР±СЏ РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ РїСЂРёРЅР°РґР»РµР¶Р°С‰РµРµ Р‘Р°Р±Рѕ.";
 };
 FUNC INT DIA_Igaraz_BabosBelongings_Condition()
 {
@@ -512,10 +512,10 @@ FUNC INT DIA_Igaraz_BabosBelongings_Condition()
 };
 FUNC VOID DIA_Igaraz_BabosBelongings_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_00"); //У тебя есть кое-что принадлежащее Бабо.
-	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_01"); //И что бы это могло быть?
-	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_02"); //Несколько листков бумаги. Бабо хотел бы получить их назад.
-	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_03"); //(насмешливо) Да? Надо же! Могу представить. Вынужден огорчить, я предпочел бы оставить их у себя. Похоже, тут налицо противоречие интересов.
+	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ РїСЂРёРЅР°РґР»РµР¶Р°С‰РµРµ Р‘Р°Р±Рѕ.
+	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_01"); //Р С‡С‚Рѕ Р±С‹ СЌС‚Рѕ РјРѕРіР»Рѕ Р±С‹С‚СЊ?
+	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_02"); //РќРµСЃРєРѕР»СЊРєРѕ Р»РёСЃС‚РєРѕРІ Р±СѓРјР°РіРё. Р‘Р°Р±Рѕ С…РѕС‚РµР» Р±С‹ РїРѕР»СѓС‡РёС‚СЊ РёС… РЅР°Р·Р°Рґ.
+	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_03"); //(РЅР°СЃРјРµС€Р»РёРІРѕ) Р”Р°? РќР°РґРѕ Р¶Рµ! РњРѕРіСѓ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ. Р’С‹РЅСѓР¶РґРµРЅ РѕРіРѕСЂС‡РёС‚СЊ, СЏ РїСЂРµРґРїРѕС‡РµР» Р±С‹ РѕСЃС‚Р°РІРёС‚СЊ РёС… Сѓ СЃРµР±СЏ. РџРѕС…РѕР¶Рµ, С‚СѓС‚ РЅР°Р»РёС†Рѕ РїСЂРѕС‚РёРІРѕСЂРµС‡РёРµ РёРЅС‚РµСЂРµСЃРѕРІ.
 };
 
 //**************************************************************************
@@ -528,7 +528,7 @@ INSTANCE DIA_Igaranz_WhereDocs   (C_INFO)
 	condition   = DIA_Igaraz_WhereDocs_Condition;
 	information = DIA_Igaraz_WhereDocs_Info;
 	permanent   = FALSE;
-	description = "Где эти бумаги?";
+	description = "Р“РґРµ СЌС‚Рё Р±СѓРјР°РіРё?";
 };
 FUNC INT DIA_Igaraz_WhereDocs_Condition()
 {
@@ -539,14 +539,14 @@ FUNC INT DIA_Igaraz_WhereDocs_Condition()
 };
 FUNC VOID DIA_Igaraz_WhereDocs_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_00"); //Где эти бумаги?
-	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_01"); //(лукаво) Ну, конечно же, я не держу их при себе. Боюсь, ничем не могу помочь.
-	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_02"); //Где они?
-	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_03"); //Я запер их в сундуке. А ключ от него тебе никогда не получить.
+	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_00"); //Р“РґРµ СЌС‚Рё Р±СѓРјР°РіРё?
+	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_01"); //(Р»СѓРєР°РІРѕ) РќСѓ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РЅРµ РґРµСЂР¶Сѓ РёС… РїСЂРё СЃРµР±Рµ. Р‘РѕСЋСЃСЊ, РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ.
+	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_02"); //Р“РґРµ РѕРЅРё?
+	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_03"); //РЇ Р·Р°РїРµСЂ РёС… РІ СЃСѓРЅРґСѓРєРµ. Рђ РєР»СЋС‡ РѕС‚ РЅРµРіРѕ С‚РµР±Рµ РЅРёРєРѕРіРґР° РЅРµ РїРѕР»СѓС‡РёС‚СЊ.
 };
 
 //**************************************************************************
-//	Was soll Babo fьr dich tun?
+//	Was soll Babo fСЊr dich tun?
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosJob   (C_INFO)
 {
@@ -555,7 +555,7 @@ INSTANCE DIA_Igaranz_BabosJob   (C_INFO)
 	condition   = DIA_Igaraz_BabosJob_Condition;
 	information = DIA_Igaraz_BabosJob_Info;
 	permanent   = FALSE;
-	description = "Что Бабо должен делать для тебя?";
+	description = "Р§С‚Рѕ Р‘Р°Р±Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?";
 };
 FUNC INT DIA_Igaraz_BabosJob_Condition()
 {
@@ -566,15 +566,15 @@ FUNC INT DIA_Igaraz_BabosJob_Condition()
 };
 FUNC VOID DIA_Igaraz_BabosJob_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_00"); //Что Бабо должен делать для тебя?
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_01"); //Если бы я знал, что этот слизняк наложит в штаны из-за нескольких кустов болотной травы, я бы давно позаботился, чтобы кто-нибудь другой занял его место в монастырском саду.
-	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_02"); //Он должен выращивать болотную траву?
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_03"); //Конечно. Так как она больше не поступает из-за Барьера, цена на травку в городе выросла втрое.
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_04"); //Мы могли бы хорошо заработать на этом. Но Бабо отказывается сотрудничать.
+	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_00"); //Р§С‚Рѕ Р‘Р°Р±Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_01"); //Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р», С‡С‚Рѕ СЌС‚РѕС‚ СЃР»РёР·РЅСЏРє РЅР°Р»РѕР¶РёС‚ РІ С€С‚Р°РЅС‹ РёР·-Р·Р° РЅРµСЃРєРѕР»СЊРєРёС… РєСѓСЃС‚РѕРІ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹, СЏ Р±С‹ РґР°РІРЅРѕ РїРѕР·Р°Р±РѕС‚РёР»СЃСЏ, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕР№ Р·Р°РЅСЏР» РµРіРѕ РјРµСЃС‚Рѕ РІ РјРѕРЅР°СЃС‚С‹СЂСЃРєРѕРј СЃР°РґСѓ.
+	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_02"); //РћРЅ РґРѕР»Р¶РµРЅ РІС‹СЂР°С‰РёРІР°С‚СЊ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ?
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_03"); //РљРѕРЅРµС‡РЅРѕ. РўР°Рє РєР°Рє РѕРЅР° Р±РѕР»СЊС€Рµ РЅРµ РїРѕСЃС‚СѓРїР°РµС‚ РёР·-Р·Р° Р‘Р°СЂСЊРµСЂР°, С†РµРЅР° РЅР° С‚СЂР°РІРєСѓ РІ РіРѕСЂРѕРґРµ РІС‹СЂРѕСЃР»Р° РІС‚СЂРѕРµ.
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_04"); //РњС‹ РјРѕРіР»Рё Р±С‹ С…РѕСЂРѕС€Рѕ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РЅР° СЌС‚РѕРј. РќРѕ Р‘Р°Р±Рѕ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ СЃРѕС‚СЂСѓРґРЅРёС‡Р°С‚СЊ.
 };
 
 //**************************************************************************
-//	Wieviel willst du fьr die Papiere haben?
+//	Wieviel willst du fСЊr die Papiere haben?
 //**************************************************************************
 INSTANCE DIA_Igaranz_Price   (C_INFO)
 {
@@ -583,7 +583,7 @@ INSTANCE DIA_Igaranz_Price   (C_INFO)
 	condition   = DIA_Igaraz_Price_Condition;
 	information = DIA_Igaraz_Price_Info;
 	permanent   = FALSE;
-	description = "Сколько ты хочешь за эти бумаги?";
+	description = "РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚Рё Р±СѓРјР°РіРё?";
 };
 FUNC INT DIA_Igaraz_Price_Condition()
 {
@@ -594,10 +594,10 @@ FUNC INT DIA_Igaraz_Price_Condition()
 };
 FUNC VOID DIA_Igaraz_Price_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Price_15_00"); //Сколько ты хочешь за эти бумаги?
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_01"); //(смеется) Ха, вообще-то говоря, они практически бесценны. Очень редко можно встретить что-нибудь подобное.
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_02"); //Но у меня нет желания рисковать своим будущим из-за нескольких золотых.
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_03"); //300 монет, и ты можешь делать с этими бумагами все, что захочешь.
+	AI_Output (other,self ,"DIA_Igaranz_Price_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚Рё Р±СѓРјР°РіРё?
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_01"); //(СЃРјРµРµС‚СЃСЏ) РҐР°, РІРѕРѕР±С‰Рµ-С‚Рѕ РіРѕРІРѕСЂСЏ, РѕРЅРё РїСЂР°РєС‚РёС‡РµСЃРєРё Р±РµСЃС†РµРЅРЅС‹. РћС‡РµРЅСЊ СЂРµРґРєРѕ РјРѕР¶РЅРѕ РІСЃС‚СЂРµС‚РёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРґРѕР±РЅРѕРµ.
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_02"); //РќРѕ Сѓ РјРµРЅСЏ РЅРµС‚ Р¶РµР»Р°РЅРёСЏ СЂРёСЃРєРѕРІР°С‚СЊ СЃРІРѕРёРј Р±СѓРґСѓС‰РёРј РёР·-Р·Р° РЅРµСЃРєРѕР»СЊРєРёС… Р·РѕР»РѕС‚С‹С….
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_03"); //300 РјРѕРЅРµС‚, Рё С‚С‹ РјРѕР¶РµС€СЊ РґРµР»Р°С‚СЊ СЃ СЌС‚РёРјРё Р±СѓРјР°РіР°РјРё РІСЃРµ, С‡С‚Рѕ Р·Р°С…РѕС‡РµС€СЊ.
 };
 
 //**************************************************************************
@@ -610,7 +610,7 @@ INSTANCE DIA_Igaranz_BuyIt   (C_INFO)
 	condition   = DIA_Igaraz_BuyIt_Condition;
 	information = DIA_Igaraz_BuyIt_Info;
 	permanent   = FALSE;
-	description = "Я хочу купить эти бумаги.";
+	description = "РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ СЌС‚Рё Р±СѓРјР°РіРё.";
 };
 FUNC INT DIA_Igaraz_BuyIt_Condition()
 {
@@ -622,8 +622,8 @@ FUNC INT DIA_Igaraz_BuyIt_Condition()
 };
 FUNC VOID DIA_Igaraz_BuyIt_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BuyIt_15_00"); //Я хочу купить эти бумаги.
-	AI_Output (self ,other,"DIA_Igaranz_BuyIt_13_01"); //Послушай, я сейчас не могу отлучиться. Я дам тебе ключ от моего сундука. В нем все равно больше ничего нет.
+	AI_Output (other,self ,"DIA_Igaranz_BuyIt_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ СЌС‚Рё Р±СѓРјР°РіРё.
+	AI_Output (self ,other,"DIA_Igaranz_BuyIt_13_01"); //РџРѕСЃР»СѓС€Р°Р№, СЏ СЃРµР№С‡Р°СЃ РЅРµ РјРѕРіСѓ РѕС‚Р»СѓС‡РёС‚СЊСЃСЏ. РЇ РґР°Рј С‚РµР±Рµ РєР»СЋС‡ РѕС‚ РјРѕРµРіРѕ СЃСѓРЅРґСѓРєР°. Р’ РЅРµРј РІСЃРµ СЂР°РІРЅРѕ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµС‚.
 	
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	B_GiveInvItems (self,other,ItKe_IgarazChest_mis,1);
@@ -640,7 +640,7 @@ INSTANCE DIA_Igaraz_PICKPOCKET (C_INFO)
 	condition	= DIA_Igaraz_PICKPOCKET_Condition;
 	information	= DIA_Igaraz_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Igaraz_PICKPOCKET_Condition()
@@ -675,7 +675,7 @@ func void DIA_Igaraz_PICKPOCKET_DoIt()
 	{
 		B_ResetThiefLevel();
 		AI_StopProcessInfos	(self);
-		B_Attack (self, other, AR_Theft, 1); //AR_Theft fьhrt zu NEWS!
+		B_Attack (self, other, AR_Theft, 1); //AR_Theft fСЊhrt zu NEWS!
 	};
 };
 	
@@ -753,7 +753,7 @@ INSTANCE DIA_Igaranz_Perm   (C_INFO)
 	condition   = DIA_Igaraz_Perm_Condition;
 	information = DIA_Igaraz_Perm_Info;
 	permanent   = FALSE;
-	description	= "У тебя есть что-нибудь интересное для меня?";
+	description	= "РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РґР»СЏ РјРµРЅСЏ?";
 };
 FUNC INT DIA_Igaraz_Perm_Condition()
 {
@@ -766,8 +766,8 @@ FUNC INT DIA_Igaraz_Perm_Condition()
 };
 FUNC VOID DIA_Igaraz_Perm_Info()
 {
-	AI_Output (other ,self,"DIA_Igaranz_Perm_15_00"); //У тебя есть что-нибудь интересное для меня?
-	AI_Output (self ,other,"DIA_Igaranz_Perm_13_01"); //Хмм... нет.
+	AI_Output (other ,self,"DIA_Igaranz_Perm_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self ,other,"DIA_Igaranz_Perm_13_01"); //РҐРјРј... РЅРµС‚.
 	
 	AI_StopProcessInfos(self); 
 		

@@ -2,7 +2,7 @@
 instance Pal_216_Cedric (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Седрик";
+	name 		= "РЎРµРґСЂРёРє";
 	guild 		= GIL_PAL;
 	id 			= 216;
 	voice 		= 12;

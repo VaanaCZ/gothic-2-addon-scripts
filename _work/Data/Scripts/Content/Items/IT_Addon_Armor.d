@@ -12,7 +12,7 @@ const int VALUE_ITAR_Bloodwyn_Addon 	= 1300;
 // ******************************************************
 INSTANCE ITAR_PIR_L_Addon (C_Item)
 {
-	name 					=	"Одежда пирата";
+	name 					=	"РћРґРµР¶РґР° РїРёСЂР°С‚Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -53,7 +53,7 @@ INSTANCE ITAR_PIR_L_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_M_Addon (C_Item)
 {
-	name 					=	"Доспехи пирата";
+	name 					=	"Р”РѕСЃРїРµС…Рё РїРёСЂР°С‚Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -94,7 +94,7 @@ INSTANCE ITAR_PIR_M_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_H_Addon (C_Item)
 {
-	name 					=	"Одежда капитана";
+	name 					=	"РћРґРµР¶РґР° РєР°РїРёС‚Р°РЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -135,7 +135,7 @@ INSTANCE ITAR_PIR_H_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Thorus_Addon (C_Item)
 {
-	name 					=	"Тяжелые доспехи стражника";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё СЃС‚СЂР°Р¶РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -155,7 +155,7 @@ INSTANCE ITAR_Thorus_Addon (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
-	description				=	"Доспехи стражи Ворона";
+	description				=	"Р”РѕСЃРїРµС…Рё СЃС‚СЂР°Р¶Рё Р’РѕСЂРѕРЅР°";
 
 	TEXT[0]					= 	PRINT_Addon_BDTArmor;
 	TEXT[1]					=	NAME_Prot_Edge;			
@@ -177,7 +177,7 @@ INSTANCE ITAR_Thorus_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Raven_Addon (C_Item)
 {
-	name 					=	"Доспехи Ворона";
+	name 					=	"Р”РѕСЃРїРµС…Рё Р’РѕСЂРѕРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -218,7 +218,7 @@ INSTANCE ITAR_Raven_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_OreBaron_Addon (C_Item)
 {
-	name 					=	"Доспехи рудного барона";
+	name 					=	"Р”РѕСЃРїРµС…Рё СЂСѓРґРЅРѕРіРѕ Р±Р°СЂРѕРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -259,7 +259,7 @@ INSTANCE ITAR_OreBaron_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_RANGER_Addon (C_Item)
 {
-	name 					=	"Доспехи 'Кольца Воды'";
+	name 					=	"Р”РѕСЃРїРµС…Рё 'РљРѕР»СЊС†Р° Р’РѕРґС‹'";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -300,7 +300,7 @@ INSTANCE ITAR_RANGER_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Fake_RANGER (C_Item)
 {
-	name 					=	"Разбитые доспехи";
+	name 					=	"Р Р°Р·Р±РёС‚С‹Рµ РґРѕСЃРїРµС…Рё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -371,7 +371,7 @@ INSTANCE ITAR_KDW_L_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Bloodwyn_Addon (C_Item)
 {
-	name 					=	"Доспехи Бладвина";
+	name 					=	"Р”РѕСЃРїРµС…Рё Р‘Р»Р°РґРІРёРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -412,7 +412,7 @@ INSTANCE ITAR_Bloodwyn_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_MayaZombie_Addon (C_Item)
 {
-	name 					=	"Старые доспехи";
+	name 					=	"РЎС‚Р°СЂС‹Рµ РґРѕСЃРїРµС…Рё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,13 +453,13 @@ INSTANCE ITAR_MayaZombie_Addon (C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rьstungen
+//	Magische RСЊstungen
 //
 
 
 instance ItAr_FireArmor_Addon (C_Item)
 {
-	name 					=	"Магические доспехи";
+	name 					=	"РњР°РіРёС‡РµСЃРєРёРµ РґРѕСЃРїРµС…Рё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

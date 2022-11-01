@@ -1,6 +1,6 @@
 INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 {
-	name 				=	"Ржавый ключ";
+	name 				=	"Р Р¶Р°РІС‹Р№ РєР»СЋС‡";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -12,8 +12,8 @@ INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Открывает дверь в древнем храме, за которой";
-	TEXT[3]				=   " находится телепортационный камень";
+	TEXT[2]				=	"РћС‚РєСЂС‹РІР°РµС‚ РґРІРµСЂСЊ РІ РґСЂРµРІРЅРµРј С…СЂР°РјРµ, Р·Р° РєРѕС‚РѕСЂРѕР№";
+	TEXT[3]				=   " РЅР°С…РѕРґРёС‚СЃСЏ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Р№ РєР°РјРµРЅСЊ";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
@@ -31,9 +31,9 @@ INSTANCE ITKE_Greg_ADDON_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Ключ от";
-	TEXT[3]				=   "хижины капитана";
-	TEXT[4]				=   "Грега";	
+	TEXT[2]				=	"РљР»СЋС‡ РѕС‚";
+	TEXT[3]				=   "С…РёР¶РёРЅС‹ РєР°РїРёС‚Р°РЅР°";
+	TEXT[4]				=   "Р“СЂРµРіР°";	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
@@ -49,10 +49,10 @@ INSTANCE ITKE_Addon_Tavern_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ Лу";
+	description			= 	"РљР»СЋС‡ Р›Сѓ";
 	
-	TEXT[2]				=	"Открывает таверну";
-	TEXT[3]				=   "в бандитском лагере";
+	TEXT[2]				=	"РћС‚РєСЂС‹РІР°РµС‚ С‚Р°РІРµСЂРЅСѓ";
+	TEXT[3]				=   "РІ Р±Р°РЅРґРёС‚СЃРєРѕРј Р»Р°РіРµСЂРµ";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -69,10 +69,10 @@ INSTANCE ITKE_Addon_Esteban_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ Эстебана";
+	description			= 	"РљР»СЋС‡ Р­СЃС‚РµР±Р°РЅР°";
 	
-	TEXT[2]				=	"Открывает сундук в";
-	TEXT[3]				=   "его убежище";
+	TEXT[2]				=	"РћС‚РєСЂС‹РІР°РµС‚ СЃСѓРЅРґСѓРє РІ";
+	TEXT[3]				=   "РµРіРѕ СѓР±РµР¶РёС‰Рµ";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -90,10 +90,10 @@ INSTANCE ITKE_ORLAN_TELEPORTSTATION (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ Орлана";
+	description			= 	"РљР»СЋС‡ РћСЂР»Р°РЅР°";
 	
-	TEXT[2]				=	"Открывает дверь в пещеру";
-	TEXT[3]				=   "к югу от его таверны";
+	TEXT[2]				=	"РћС‚РєСЂС‹РІР°РµС‚ РґРІРµСЂСЊ РІ РїРµС‰РµСЂСѓ";
+	TEXT[3]				=   "Рє СЋРіСѓ РѕС‚ РµРіРѕ С‚Р°РІРµСЂРЅС‹";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -114,8 +114,8 @@ INSTANCE ITKE_CANYONLIBRARY_HIERARCHY_BOOKS_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"принадлежал шаману в лагере орков";
-	TEXT[3]				=   "перед библиотекой ученых";
+	TEXT[2]				=	"РїСЂРёРЅР°РґР»РµР¶Р°Р» С€Р°РјР°РЅСѓ РІ Р»Р°РіРµСЂРµ РѕСЂРєРѕРІ";
+	TEXT[3]				=   "РїРµСЂРµРґ Р±РёР±Р»РёРѕС‚РµРєРѕР№ СѓС‡РµРЅС‹С…";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -132,9 +132,9 @@ INSTANCE ITKE_ADDON_BUDDLER_01 (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ от сундука";
+	description			= 	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 	
-	TEXT[2]				=	"из лагеря бандитов";
+	TEXT[2]				=	"РёР· Р»Р°РіРµСЂСЏ Р±Р°РЅРґРёС‚РѕРІ";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -152,9 +152,9 @@ INSTANCE ITKE_ADDON_SKINNER (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ от сундука";
+	description			= 	"РљР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР°";
 	
-	TEXT[2]				=	"Ключ Скиннера";
+	TEXT[2]				=	"РљР»СЋС‡ РЎРєРёРЅРЅРµСЂР°";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -172,9 +172,9 @@ INSTANCE ITKE_Addon_Thorus (C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Ключ Торуса";
+	description			= 	"РљР»СЋС‡ РўРѕСЂСѓСЃР°";
 	
-	TEXT[2]				=	"Открывает сундук";
+	TEXT[2]				=	"РћС‚РєСЂС‹РІР°РµС‚ СЃСѓРЅРґСѓРє";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

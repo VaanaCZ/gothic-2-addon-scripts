@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Swamp(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Болотный дракон";
+	name							=	"Р‘РѕР»РѕС‚РЅС‹Р№ РґСЂР°РєРѕРЅ";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_SWAMP;
 	level							=	300;
@@ -34,7 +34,7 @@ PROTOTYPE Mst_Default_Dragon_Swamp(C_Npc)
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
 	damage		[DAM_INDEX_FIRE]	=	129;
-	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fьr Fire+Fly
+	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fСЊr Fire+Fly
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----	
@@ -74,7 +74,7 @@ func void B_SetVisuals_Dragon_Swamp()
 //*****************
 INSTANCE Dragon_Swamp	(Mst_Default_Dragon_Swamp)
 {
-	name		=	"Пандродор";
+	name		=	"РџР°РЅРґСЂРѕРґРѕСЂ";
 	flags				   			= 	NPC_FLAG_IMMORTAL;
 	fight_tactic	=	FAI_DRAGON;
 	B_SetVisuals_Dragon_Swamp();

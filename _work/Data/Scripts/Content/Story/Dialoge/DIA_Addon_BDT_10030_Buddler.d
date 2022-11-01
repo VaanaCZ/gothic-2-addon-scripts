@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10030_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10030_Buddler_Hi_Condition;
 	information = DIA_Addon_10030_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "С тобой все в порядке?";
+	description = "РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 {	
@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10030_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10030_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//С тобой все в порядке?
+	AI_Output (other, self, "DIA_Addon_BDT_10030_Buddler_Hi_15_00");//РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Рабы убирают большие глыбы с дороги.
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(усмехается) А после мы соберем золотые яблоки.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Р Р°Р±С‹ СѓР±РёСЂР°СЋС‚ Р±РѕР»СЊС€РёРµ РіР»С‹Р±С‹ СЃ РґРѕСЂРѕРіРё.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(СѓСЃРјРµС…Р°РµС‚СЃСЏ) Рђ РїРѕСЃР»Рµ РјС‹ СЃРѕР±РµСЂРµРј Р·РѕР»РѕС‚С‹Рµ СЏР±Р»РѕРєРё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//Вот теперь мы получим сладкое золото.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_03");//Р’РѕС‚ С‚РµРїРµСЂСЊ РјС‹ РїРѕР»СѓС‡РёРј СЃР»Р°РґРєРѕРµ Р·РѕР»РѕС‚Рѕ.
 		AI_StopProcessInfos(self);
 	};
 };

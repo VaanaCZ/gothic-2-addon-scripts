@@ -76,7 +76,7 @@ FUNC INT DIA_Addon_Matt_Hello_Condition()
 };
 func VOID DIA_Addon_Matt_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Matt_Hello_10_01"); //А, новичок? Прекрасно. Нам сейчас пригодится каждый человек.
+	AI_Output (self ,other,"DIA_Addon_Matt_Hello_10_01"); //Рђ, РЅРѕРІРёС‡РѕРє? РџСЂРµРєСЂР°СЃРЅРѕ. РќР°Рј СЃРµР№С‡Р°СЃ РїСЂРёРіРѕРґРёС‚СЃСЏ РєР°Р¶РґС‹Р№ С‡РµР»РѕРІРµРє.
 };
 
 // ************************************************************
@@ -89,7 +89,7 @@ INSTANCE DIA_Addon_Matt_PERM (C_INFO)
 	condition	= DIA_Addon_Matt_PERM_Condition;
 	information	= DIA_Addon_Matt_PERM_Info;
 	permanent	= TRUE;
-	Description  = "Как дела?";
+	Description  = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Addon_Matt_PERM_Condition()
 {
@@ -97,30 +97,30 @@ FUNC INT DIA_Addon_Matt_PERM_Condition()
 };
 func VOID DIA_Addon_Matt_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Matt_Alright_15_01"); //Как дела?
+	AI_Output (other, self, "DIA_Addon_Matt_Alright_15_01"); //РљР°Рє РґРµР»Р°?
 	
 	if (self.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
 		if (self.attribute[ATR_HITPOINTS] < 100)
 		{
-			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_02"); //Какую часть фразы 'ЛЕЧЕБНОЕ ЗЕЛЬЕ' ты не понял?
+			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_02"); //РљР°РєСѓСЋ С‡Р°СЃС‚СЊ С„СЂР°Р·С‹ 'Р›Р•Р§Р•Р‘РќРћР• Р—Р•Р›Р¬Р•' С‚С‹ РЅРµ РїРѕРЅСЏР»?
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_01"); //Все в порядке, капитан!
+			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_01"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ, РєР°РїРёС‚Р°РЅ!
 		};
 	}
 	else if (GregIsBack == TRUE)
 	&& (!Npc_IsDead(Greg))
 	{
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_01"); //Шутишь? У нас больше нет корабля.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_02"); //Остается только ждать, пока Грег решит, что делать дальше.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_01"); //РЁСѓС‚РёС€СЊ? РЈ РЅР°СЃ Р±РѕР»СЊС€Рµ РЅРµС‚ РєРѕСЂР°Р±Р»СЏ.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_02"); //РћСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р¶РґР°С‚СЊ, РїРѕРєР° Р“СЂРµРі СЂРµС€РёС‚, С‡С‚Рѕ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_03"); //Сейчас в лагере все спокойно. Так что я собираюсь немного отдохнуть.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_04"); //На твоем месте, кстати, я бы сделал те же самое.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_05"); //Бандиты здесь, так что ситуация может измениться быстрее, чем мы предполагали.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_03"); //РЎРµР№С‡Р°СЃ РІ Р»Р°РіРµСЂРµ РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ. РўР°Рє С‡С‚Рѕ СЏ СЃРѕР±РёСЂР°СЋСЃСЊ РЅРµРјРЅРѕРіРѕ РѕС‚РґРѕС…РЅСѓС‚СЊ.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_04"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ, РєСЃС‚Р°С‚Рё, СЏ Р±С‹ СЃРґРµР»Р°Р» С‚Рµ Р¶Рµ СЃР°РјРѕРµ.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_05"); //Р‘Р°РЅРґРёС‚С‹ Р·РґРµСЃСЊ, С‚Р°Рє С‡С‚Рѕ СЃРёС‚СѓР°С†РёСЏ РјРѕР¶РµС‚ РёР·РјРµРЅРёС‚СЊСЃСЏ Р±С‹СЃС‚СЂРµРµ, С‡РµРј РјС‹ РїСЂРµРґРїРѕР»Р°РіР°Р»Рё.
 	};
 };
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Addon_Matt_Bandits(C_INFO)
 	condition	= DIA_Addon_Matt_Bandits_Condition;
 	information	= DIA_Addon_Matt_Bandits_Info;
 
-	description = "Что ты знаешь об этих бандитах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РёС… Р±Р°РЅРґРёС‚Р°С…?";
 };                       
 FUNC INT DIA_Addon_Matt_Bandits_Condition()
 {
@@ -142,13 +142,13 @@ FUNC INT DIA_Addon_Matt_Bandits_Condition()
 };
 func VOID DIA_Addon_Matt_Bandits_Info()
 {	
-	AI_Output (other, self,"DIA_Addon_Matt_Bandits_15_03"); //Что ты знаешь о бандитах?
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_01"); //Ты имеешь в виду, кроме того, что они смертельно опасны и во много раз превосходят нас числом?
-	AI_Output (other,self ,"DIA_Addon_Matt_Bandits_15_02"); //Да.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_02"); //У них полно золота.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_03"); //Ну, по крайней мере, у них БЫЛО полно золота. За последнюю партию товара они нам так и не заплатили.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_04"); //Но я сомневаюсь, что они сделали это от нехватки средств.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_05"); //Думаю, что они просто слишком зазнались.
+	AI_Output (other, self,"DIA_Addon_Matt_Bandits_15_03"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р±Р°РЅРґРёС‚Р°С…?
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_01"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ, РєСЂРѕРјРµ С‚РѕРіРѕ, С‡С‚Рѕ РѕРЅРё СЃРјРµСЂС‚РµР»СЊРЅРѕ РѕРїР°СЃРЅС‹ Рё РІРѕ РјРЅРѕРіРѕ СЂР°Р· РїСЂРµРІРѕСЃС…РѕРґСЏС‚ РЅР°СЃ С‡РёСЃР»РѕРј?
+	AI_Output (other,self ,"DIA_Addon_Matt_Bandits_15_02"); //Р”Р°.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_02"); //РЈ РЅРёС… РїРѕР»РЅРѕ Р·РѕР»РѕС‚Р°.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_03"); //РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Сѓ РЅРёС… Р‘Р«Р›Рћ РїРѕР»РЅРѕ Р·РѕР»РѕС‚Р°. Р—Р° РїРѕСЃР»РµРґРЅСЋСЋ РїР°СЂС‚РёСЋ С‚РѕРІР°СЂР° РѕРЅРё РЅР°Рј С‚Р°Рє Рё РЅРµ Р·Р°РїР»Р°С‚РёР»Рё.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_04"); //РќРѕ СЏ СЃРѕРјРЅРµРІР°СЋСЃСЊ, С‡С‚Рѕ РѕРЅРё СЃРґРµР»Р°Р»Рё СЌС‚Рѕ РѕС‚ РЅРµС…РІР°С‚РєРё СЃСЂРµРґСЃС‚РІ.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_05"); //Р”СѓРјР°СЋ, С‡С‚Рѕ РѕРЅРё РїСЂРѕСЃС‚Рѕ СЃР»РёС€РєРѕРј Р·Р°Р·РЅР°Р»РёСЃСЊ.
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ INSTANCE DIA_Addon_Matt_Francis(C_INFO)
 	condition	= DIA_Addon_Matt_Francis_Condition;
 	information	= DIA_Addon_Matt_Francis_Info;
 
-	description = "Что ты знаешь о Фрэнсисе?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?";
 };                       
 FUNC INT DIA_Addon_Matt_Francis_Condition()
 {
@@ -176,10 +176,10 @@ FUNC INT DIA_Addon_Matt_Francis_Condition()
 };
 func VOID DIA_Addon_Matt_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_00"); //Что ты знаешь о Фрэнсисе?
-	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_01"); //Кроме того, что он ленив и не справляется со своими обязанностями?
-	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_02"); //Да.
-	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_03"); //Надо подумать... Хм-м... Нет, больше ничего в голову не приходит.
+	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?
+	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_01"); //РљСЂРѕРјРµ С‚РѕРіРѕ, С‡С‚Рѕ РѕРЅ Р»РµРЅРёРІ Рё РЅРµ СЃРїСЂР°РІР»СЏРµС‚СЃСЏ СЃРѕ СЃРІРѕРёРјРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚СЏРјРё?
+	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_02"); //Р”Р°.
+	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_03"); //РќР°РґРѕ РїРѕРґСѓРјР°С‚СЊ... РҐРј-Рј... РќРµС‚, Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РІ РіРѕР»РѕРІСѓ РЅРµ РїСЂРёС…РѕРґРёС‚.
 };
 
 
@@ -199,7 +199,7 @@ instance DIA_Addon_Matt_Anheuern(C_INFO)
 	condition	= DIA_Addon_Matt_Anheuern_Condition;
 	information	= DIA_Addon_Matt_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Пойдем со мной.";
+	description = "РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.";
 };                       
 FUNC INT DIA_Addon_Matt_Anheuern_Condition()
 {
@@ -210,20 +210,20 @@ FUNC INT DIA_Addon_Matt_Anheuern_Condition()
 };
 func VOID DIA_Addon_Matt_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_00"); //Пойдем со мной.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_01"); //Я не могу сейчас никуда идти. Я отдыхаю.
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_02"); //Приказ Грега.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_03"); //Понимаю, понимаю. Это, конечно, все меняет. Уже иду.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_04"); //А куда мы направляемся?
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_00"); //РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_01"); //РЇ РЅРµ РјРѕРіСѓ СЃРµР№С‡Р°СЃ РЅРёРєСѓРґР° РёРґС‚Рё. РЇ РѕС‚РґС‹С…Р°СЋ.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_02"); //РџСЂРёРєР°Р· Р“СЂРµРіР°.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_03"); //РџРѕРЅРёРјР°СЋ, РїРѕРЅРёРјР°СЋ. Р­С‚Рѕ, РєРѕРЅРµС‡РЅРѕ, РІСЃРµ РјРµРЅСЏРµС‚. РЈР¶Рµ РёРґСѓ.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_04"); //Рђ РєСѓРґР° РјС‹ РЅР°РїСЂР°РІР»СЏРµРјСЃСЏ?
 	
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
-	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Заткнись и иди за мной.",DIA_Addon_Matt_Anheuern_ShutUp);
-	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Мы должны очистить каньон от зверей.",DIA_Addon_Matt_Anheuern_ClearCanyon);
+	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Р—Р°С‚РєРЅРёСЃСЊ Рё РёРґРё Р·Р° РјРЅРѕР№.",DIA_Addon_Matt_Anheuern_ShutUp);
+	Info_AddChoice (DIA_Addon_Matt_Anheuern,"РњС‹ РґРѕР»Р¶РЅС‹ РѕС‡РёСЃС‚РёС‚СЊ РєР°РЅСЊРѕРЅ РѕС‚ Р·РІРµСЂРµР№.",DIA_Addon_Matt_Anheuern_ClearCanyon);
 };
 func VOID DIA_Addon_Matt_Anheuern_ShutUp()
 {
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ShutUp_15_00"); //Заткнись и иди за мной.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ShutUp_10_01"); //(саркастически) Есть, капитан!
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ShutUp_15_00"); //Р—Р°С‚РєРЅРёСЃСЊ Рё РёРґРё Р·Р° РјРЅРѕР№.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ShutUp_10_01"); //(СЃР°СЂРєР°СЃС‚РёС‡РµСЃРєРё) Р•СЃС‚СЊ, РєР°РїРёС‚Р°РЅ!
 	
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	AI_StopProcessInfos (self);
@@ -232,10 +232,10 @@ func VOID DIA_Addon_Matt_Anheuern_ShutUp()
 };
 func VOID DIA_Addon_Matt_Anheuern_ClearCanyon()
 {
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_00"); //Мы должны очистить каньон от зверей.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_01"); //Ты рехнулся. Там их полно! А с этими бритвозубами шутки плохи.
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_02"); //Я знаю. Ну так что, ты идешь?
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_03"); //(вздыхает) Надеюсь, у тебя достаточно бутылок с лечебным зельем. Они нам понадобятся.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_00"); //РњС‹ РґРѕР»Р¶РЅС‹ РѕС‡РёСЃС‚РёС‚СЊ РєР°РЅСЊРѕРЅ РѕС‚ Р·РІРµСЂРµР№.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_01"); //РўС‹ СЂРµС…РЅСѓР»СЃСЏ. РўР°Рј РёС… РїРѕР»РЅРѕ! Рђ СЃ СЌС‚РёРјРё Р±СЂРёС‚РІРѕР·СѓР±Р°РјРё С€СѓС‚РєРё РїР»РѕС…Рё.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_02"); //РЇ Р·РЅР°СЋ. РќСѓ С‚Р°Рє С‡С‚Рѕ, С‚С‹ РёРґРµС€СЊ?
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_03"); //(РІР·РґС‹С…Р°РµС‚) РќР°РґРµСЋСЃСЊ, Сѓ С‚РµР±СЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р±СѓС‚С‹Р»РѕРє СЃ Р»РµС‡РµР±РЅС‹Рј Р·РµР»СЊРµРј. РћРЅРё РЅР°Рј РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ.
 
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	AI_StopProcessInfos (self);
@@ -253,7 +253,7 @@ instance DIA_Addon_Matt_ComeOn(C_INFO)
 	condition	= 	DIA_Addon_Matt_ComeOn_Condition;
 	information	= 	DIA_Addon_Matt_ComeOn_Info;
 	permanent	= 	TRUE;
-	description	= 	"Пойдем со мной.";
+	description	= 	"РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.";
 };
 func int DIA_Addon_Matt_ComeOn_Condition ()
 {
@@ -266,7 +266,7 @@ func int DIA_Addon_Matt_ComeOn_Condition ()
 };
 func void DIA_Addon_Matt_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Matt_ComeOn_15_00"); //Идем со мной.
+	AI_Output (other, self, "DIA_Addon_Matt_ComeOn_15_00"); //РРґРµРј СЃРѕ РјРЅРѕР№.
 	
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
@@ -275,7 +275,7 @@ func void DIA_Addon_Matt_ComeOn_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_ComeOn_10_01"); //Есть, капитан!
+		AI_Output (self, other, "DIA_Addon_Matt_ComeOn_10_01"); //Р•СЃС‚СЊ, РєР°РїРёС‚Р°РЅ!
 		AI_StopProcessInfos (self);
 		B_Addon_PiratesFollowAgain();
 		Npc_ExchangeRoutine	(self,"FOLLOW");
@@ -293,7 +293,7 @@ INSTANCE DIA_Addon_Matt_GoHome(C_INFO)
 	condition	= DIA_Addon_Matt_GoHome_Condition;
 	information	= DIA_Addon_Matt_GoHome_Info;
 	permanent	= TRUE;
-	description = "Ты мне больше не нужен.";
+	description = "РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.";
 };                       
 FUNC INT DIA_Addon_Matt_GoHome_Condition()
 {
@@ -305,8 +305,8 @@ FUNC INT DIA_Addon_Matt_GoHome_Condition()
 
 FUNC VOID DIA_Addon_Matt_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Matt_DontNeedYou_15_00"); //Ты мне больше не нужен.
-	AI_Output (self, other, "DIA_Addon_Matt_GoHome_10_01"); //(бормочет под нос) Мне не помешает выпить кружечку грога!
+	AI_Output (other,self ,"DIA_Addon_Matt_DontNeedYou_15_00"); //РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.
+	AI_Output (self, other, "DIA_Addon_Matt_GoHome_10_01"); //(Р±РѕСЂРјРѕС‡РµС‚ РїРѕРґ РЅРѕСЃ) РњРЅРµ РЅРµ РїРѕРјРµС€Р°РµС‚ РІС‹РїРёС‚СЊ РєСЂСѓР¶РµС‡РєСѓ РіСЂРѕРіР°!
 		
 	AI_StopProcessInfos (self); 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -336,14 +336,14 @@ FUNC INT DIA_Addon_Matt_TooFar_Condition()
 
 FUNC VOID DIA_Addon_Matt_TooFar_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_01"); //Дальше тебе придется идти одному, (саркастически) капитан.
+	AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_01"); //Р”Р°Р»СЊС€Рµ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РёРґС‚Рё РѕРґРЅРѕРјСѓ, (СЃР°СЂРєР°СЃС‚РёС‡РµСЃРєРё) РєР°РїРёС‚Р°РЅ.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_03"); //Мы с ребятами возвращаемся в лагерь!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_03"); //РњС‹ СЃ СЂРµР±СЏС‚Р°РјРё РІРѕР·РІСЂР°С‰Р°РµРјСЃСЏ РІ Р»Р°РіРµСЂСЊ!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_02"); //Я возвращаюсь в лагерь!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_02"); //РЇ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ РІ Р»Р°РіРµСЂСЊ!
 	};
 	
 	B_Addon_PiratesGoHome();
@@ -352,7 +352,7 @@ FUNC VOID DIA_Addon_Matt_TooFar_Info()
 };
 
 // ------------------------------------------------------------
-// 			 Ich kцnnte 'nen Heiltrank gebrauchen!
+// 			 Ich kС†nnte 'nen Heiltrank gebrauchen!
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Matt_Healing(C_INFO)
 {
@@ -373,7 +373,7 @@ FUNC INT DIA_Addon_Matt_Healing_Condition()
 };
 func VOID DIA_Addon_Matt_Healing_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Matt_Healing_10_01"); //Эй, капитан, мне не помешало бы лечебное зелье!
+	AI_Output (self, other, "DIA_Addon_Matt_Healing_10_01"); //Р­Р№, РєР°РїРёС‚Р°РЅ, РјРЅРµ РЅРµ РїРѕРјРµС€Р°Р»Рѕ Р±С‹ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ!
 };
 
 

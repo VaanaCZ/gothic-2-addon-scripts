@@ -2,7 +2,7 @@
 instance Mil_324_Peck (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ïåê";	
+	name 		= "ÐŸÐµÐº";	
 	guild 		= GIL_MIL;
 	id 			= 324;
 	voice 		= 12;

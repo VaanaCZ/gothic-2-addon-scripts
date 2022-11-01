@@ -75,15 +75,15 @@ FUNC INT DIA_Joe_Hallo_Condition()
 };
 FUNC VOID DIA_Joe_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Эй, спасибо, парень. Действительно, огромное спасибо. Я уж думал, мне никогда не выбраться отсюда...
+	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Р­Р№, СЃРїР°СЃРёР±Рѕ, РїР°СЂРµРЅСЊ. Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ, РѕРіСЂРѕРјРЅРѕРµ СЃРїР°СЃРёР±Рѕ. РЇ СѓР¶ РґСѓРјР°Р», РјРЅРµ РЅРёРєРѕРіРґР° РЅРµ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°...
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP ((XP_Ambient*4));
 	
-	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Что ты делаешь ЗДЕСЬ?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Я оказался взаперти. Дверь была открыта, и я хотел просто пошарить там - но как только я зашел внутрь, пришел стражник и запер эту чертову дверь.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Я попал в дурацкое положение - и был бы очень благодарен, если бы все это осталось между нами.
-	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Понимаю. Да уж, тут действительно нечем гордиться.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Я сейчас был бы не прочь что-нибудь выпить.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р—Р”Р•РЎР¬?
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//РЇ РѕРєР°Р·Р°Р»СЃСЏ РІР·Р°РїРµСЂС‚Рё. Р”РІРµСЂСЊ Р±С‹Р»Р° РѕС‚РєСЂС‹С‚Р°, Рё СЏ С…РѕС‚РµР» РїСЂРѕСЃС‚Рѕ РїРѕС€Р°СЂРёС‚СЊ С‚Р°Рј - РЅРѕ РєР°Рє С‚РѕР»СЊРєРѕ СЏ Р·Р°С€РµР» РІРЅСѓС‚СЂСЊ, РїСЂРёС€РµР» СЃС‚СЂР°Р¶РЅРёРє Рё Р·Р°РїРµСЂ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ РґРІРµСЂСЊ.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//РЇ РїРѕРїР°Р» РІ РґСѓСЂР°С†РєРѕРµ РїРѕР»РѕР¶РµРЅРёРµ - Рё Р±С‹Р» Р±С‹ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕРґР°СЂРµРЅ, РµСЃР»Рё Р±С‹ РІСЃРµ СЌС‚Рѕ РѕСЃС‚Р°Р»РѕСЃСЊ РјРµР¶РґСѓ РЅР°РјРё.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//РџРѕРЅРёРјР°СЋ. Р”Р° СѓР¶, С‚СѓС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµС‡РµРј РіРѕСЂРґРёС‚СЊСЃСЏ.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//РЇ СЃРµР№С‡Р°СЃ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START"); 
 };
@@ -97,7 +97,7 @@ INSTANCE DIA_Joe_Perm   (C_INFO)
 	condition   = DIA_Joe_Perm_Condition;
 	information = DIA_Joe_Perm_Info;
 	permanent   = TRUE;
-	description	= "Все в порядке?";
+	description	= "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 FUNC INT DIA_Joe_Perm_Condition()
 {	
@@ -108,8 +108,8 @@ FUNC INT DIA_Joe_Perm_Condition()
 };
 FUNC VOID DIA_Joe_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Все в порядке?
-	AI_Output (self, other,"DIA_Joe_Perm_10_01");//Спасибо, что освободил меня.
+	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other,"DIA_Joe_Perm_10_01");//РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ РѕСЃРІРѕР±РѕРґРёР» РјРµРЅСЏ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -123,7 +123,7 @@ INSTANCE DIA_Joe_Sign   (C_INFO)
 	condition   = DIA_Joe_Sign_Condition;
 	information = DIA_Joe_Sign_Info;
 	permanent   = FALSE;
-	description	= "(Показать сигнал воров)";
+	description	= "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };
 FUNC INT DIA_Joe_Sign_Condition()
 {	
@@ -136,8 +136,8 @@ FUNC INT DIA_Joe_Sign_Condition()
 FUNC VOID DIA_Joe_Sign_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Эй, привет - у нас есть общие друзья. И я хотел бы выразить свою благодарность за спасение.
-	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Вот, возьми эти отмычки - я уверен, они пригодятся тебе.
+	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Р­Р№, РїСЂРёРІРµС‚ - Сѓ РЅР°СЃ РµСЃС‚СЊ РѕР±С‰РёРµ РґСЂСѓР·СЊСЏ. Р СЏ С…РѕС‚РµР» Р±С‹ РІС‹СЂР°Р·РёС‚СЊ СЃРІРѕСЋ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊ Р·Р° СЃРїР°СЃРµРЅРёРµ.
+	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рё РѕС‚РјС‹С‡РєРё - СЏ СѓРІРµСЂРµРЅ, РѕРЅРё РїСЂРёРіРѕРґСЏС‚СЃСЏ С‚РµР±Рµ.
 	
 	B_GiveInvItems (self, other, ItKE_Lockpick, 5);
 	

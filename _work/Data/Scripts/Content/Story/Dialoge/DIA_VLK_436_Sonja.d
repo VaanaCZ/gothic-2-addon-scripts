@@ -80,17 +80,17 @@ func void DIA_Sonja_STANDARD_Info ()
 {
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_00"); //Если хочешь развлечься, поговори с Бромором.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_00"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ СЂР°Р·РІР»РµС‡СЊСЃСЏ, РїРѕРіРѕРІРѕСЂРё СЃ Р‘СЂРѕРјРѕСЂРѕРј.
 	}
 	else if (other.guild == GIL_DJG)
 	&& (Sonja_Says == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //У таких парней как ты одна проблема - вас больше интересуют орки, чем мы.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //РЈ С‚Р°РєРёС… РїР°СЂРЅРµР№ РєР°Рє С‚С‹ РѕРґРЅР° РїСЂРѕР±Р»РµРјР° - РІР°СЃ Р±РѕР»СЊС€Рµ РёРЅС‚РµСЂРµСЃСѓСЋС‚ РѕСЂРєРё, С‡РµРј РјС‹.
 		Sonja_Says = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_02"); //Если ты хочешь поговорить, иди, найди себе женщину, и женись на ней.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ, РёРґРё, РЅР°Р№РґРё СЃРµР±Рµ Р¶РµРЅС‰РёРЅСѓ, Рё Р¶РµРЅРёСЃСЊ РЅР° РЅРµР№.
 	};
 	AI_StopProcessInfos (self);
 };

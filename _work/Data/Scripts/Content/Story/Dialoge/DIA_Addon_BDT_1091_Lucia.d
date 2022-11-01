@@ -62,7 +62,7 @@ INSTANCE DIA_Addon_Lucia_Hi   (C_INFO)
 	condition   = DIA_Addon_Lucia_Hi_Condition;
 	information = DIA_Addon_Lucia_Hi_Info;
 	permanent   = FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Lucia_Hi_Condition()
 {	
@@ -70,8 +70,8 @@ FUNC INT DIA_Addon_Lucia_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Hi_15_00");//Как дела?
-	AI_Output (self, other, "DIA_Addon_Lucia_Hi_16_01");//Послушай. Если тебе нужна еда, спроси у Снафа. А если ты хочешь выпить, то ты обратился к нужному человеку.
+	AI_Output (other, self, "DIA_Addon_Lucia_Hi_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Lucia_Hi_16_01");//РџРѕСЃР»СѓС€Р°Р№. Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РµРґР°, СЃРїСЂРѕСЃРё Сѓ РЎРЅР°С„Р°. Рђ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІС‹РїРёС‚СЊ, С‚Рѕ С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ Рє РЅСѓР¶РЅРѕРјСѓ С‡РµР»РѕРІРµРєСѓ.
 };
 //---------------------------------------------------------------------
 //	Info was
@@ -83,7 +83,7 @@ INSTANCE DIA_Addon_Lucia_was   (C_INFO)
 	condition   = DIA_Addon_Lucia_was_Condition;
 	information = DIA_Addon_Lucia_was_Info;
 	permanent   = FALSE;
-	description = "И что же вы здесь пьете?";
+	description = "Р С‡С‚Рѕ Р¶Рµ РІС‹ Р·РґРµСЃСЊ РїСЊРµС‚Рµ?";
 };
 FUNC INT DIA_Addon_Lucia_was_Condition()
 {	
@@ -94,14 +94,14 @@ FUNC INT DIA_Addon_Lucia_was_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_was_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_was_15_00");//И что же вы здесь пьете?
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");//Ну, пива у нас немного. Пиво на остров привозят только паладины.
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");//И пожалуй, это единственная хорошая вещь, которую они привозят...
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//Так что обычно мы пьем крепкие напитки. У меня есть самогон, грог и белый ром.
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//Хм-м... Тебе стоит попробовать вот это. Я взяла рецепт у Сэмюэля. Надо признать, он действительно знает свое дело.
+	AI_Output (other, self, "DIA_Addon_Lucia_was_15_00");//Р С‡С‚Рѕ Р¶Рµ РІС‹ Р·РґРµСЃСЊ РїСЊРµС‚Рµ?
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");//РќСѓ, РїРёРІР° Сѓ РЅР°СЃ РЅРµРјРЅРѕРіРѕ. РџРёРІРѕ РЅР° РѕСЃС‚СЂРѕРІ РїСЂРёРІРѕР·СЏС‚ С‚РѕР»СЊРєРѕ РїР°Р»Р°РґРёРЅС‹.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");//Р РїРѕР¶Р°Р»СѓР№, СЌС‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ С…РѕСЂРѕС€Р°СЏ РІРµС‰СЊ, РєРѕС‚РѕСЂСѓСЋ РѕРЅРё РїСЂРёРІРѕР·СЏС‚...
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//РўР°Рє С‡С‚Рѕ РѕР±С‹С‡РЅРѕ РјС‹ РїСЊРµРј РєСЂРµРїРєРёРµ РЅР°РїРёС‚РєРё. РЈ РјРµРЅСЏ РµСЃС‚СЊ СЃР°РјРѕРіРѕРЅ, РіСЂРѕРі Рё Р±РµР»С‹Р№ СЂРѕРј.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//РҐРј-Рј... РўРµР±Рµ СЃС‚РѕРёС‚ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РІРѕС‚ СЌС‚Рѕ. РЇ РІР·СЏР»Р° СЂРµС†РµРїС‚ Сѓ РЎСЌРјСЋСЌР»СЏ. РќР°РґРѕ РїСЂРёР·РЅР°С‚СЊ, РѕРЅ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р·РЅР°РµС‚ СЃРІРѕРµ РґРµР»Рѕ.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"У Люсии я могу купить выпивку.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"РЈ Р›СЋСЃРёРё СЏ РјРѕРіСѓ РєСѓРїРёС‚СЊ РІС‹РїРёРІРєСѓ.");
 };
 //---------------------------------------------------------------------
 //	Info Khorinis
@@ -113,7 +113,7 @@ INSTANCE DIA_Addon_Lucia_Khorinis   (C_INFO)
 	condition   = DIA_Addon_Lucia_Khorinis_Condition;
 	information = DIA_Addon_Lucia_Khorinis_Info;
 	permanent   = FALSE;
-	description = "Ты из Хориниса, верно?";
+	description = "РўС‹ РёР· РҐРѕСЂРёРЅРёСЃР°, РІРµСЂРЅРѕ?";
 };
 FUNC INT DIA_Addon_Lucia_Khorinis_Condition()
 {	
@@ -126,18 +126,18 @@ FUNC INT DIA_Addon_Lucia_Khorinis_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Khorinis_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Khorinis_15_00");//Ты из Хориниса, верно?
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Ох, не напоминай. Жизнь у меня там была незавидная.
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//Пока в город приходили корабли с заключенными, там еще можно было как-то прожить.
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//Но потом... (смеется) Нет, спасибо. Может быть, это из-за того, что мы на острове... Ладно, в любом случае, с той жизнью покончено.
+	AI_Output (other, self, "DIA_Addon_Lucia_Khorinis_15_00");//РўС‹ РёР· РҐРѕСЂРёРЅРёСЃР°, РІРµСЂРЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//РћС…, РЅРµ РЅР°РїРѕРјРёРЅР°Р№. Р–РёР·РЅСЊ Сѓ РјРµРЅСЏ С‚Р°Рј Р±С‹Р»Р° РЅРµР·Р°РІРёРґРЅР°СЏ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//РџРѕРєР° РІ РіРѕСЂРѕРґ РїСЂРёС…РѕРґРёР»Рё РєРѕСЂР°Р±Р»Рё СЃ Р·Р°РєР»СЋС‡РµРЅРЅС‹РјРё, С‚Р°Рј РµС‰Рµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РєР°Рє-С‚Рѕ РїСЂРѕР¶РёС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//РќРѕ РїРѕС‚РѕРј... (СЃРјРµРµС‚СЃСЏ) РќРµС‚, СЃРїР°СЃРёР±Рѕ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЌС‚Рѕ РёР·-Р·Р° С‚РѕРіРѕ, С‡С‚Рѕ РјС‹ РЅР° РѕСЃС‚СЂРѕРІРµ... Р›Р°РґРЅРѕ, РІ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, СЃ С‚РѕР№ Р¶РёР·РЅСЊСЋ РїРѕРєРѕРЅС‡РµРЅРѕ.
 
 	if (MIS_LuciasLetter != 0)
 	|| (SC_KnowsLuciaCaughtByBandits != 0)
 	|| (Nadja_GaveLuciaInfo != 0)
 	{
-		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_06"); //С Элврихом я порвала!
-		AI_Output (other,self , "DIA_Addon_Lucia_Khorinis_15_04"); //Почему?
-		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_05"); //Он трус! Когда бандиты утащили меня, он даже не попытался мне помочь.
+		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_06"); //РЎ Р­Р»РІСЂРёС…РѕРј СЏ РїРѕСЂРІР°Р»Р°!
+		AI_Output (other,self , "DIA_Addon_Lucia_Khorinis_15_04"); //РџРѕС‡РµРјСѓ?
+		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_05"); //РћРЅ С‚СЂСѓСЃ! РљРѕРіРґР° Р±Р°РЅРґРёС‚С‹ СѓС‚Р°С‰РёР»Рё РјРµРЅСЏ, РѕРЅ РґР°Р¶Рµ РЅРµ РїРѕРїС‹С‚Р°Р»СЃСЏ РјРЅРµ РїРѕРјРѕС‡СЊ.
 		TOPIC_END_Lucia = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	};
@@ -153,7 +153,7 @@ INSTANCE DIA_Addon_Lucia_Jetzt   (C_INFO)
 	condition   = DIA_Addon_Lucia_Jetzt_Condition;
 	information = DIA_Addon_Lucia_Jetzt_Info;
 	permanent   = FALSE;
-	description = "Что ты собираешься делать дальше?";
+	description = "Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?";
 };
 FUNC INT DIA_Addon_Lucia_Jetzt_Condition()
 {	
@@ -164,10 +164,10 @@ FUNC INT DIA_Addon_Lucia_Jetzt_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Jetzt_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Jetzt_15_00");//Что ты собираешься делать?
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//Посмотрим. Пока я остаюсь здесь, со Снафом, Фиском и остальными.
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//Ты уже видел Торуса? О Иннос, вот это мужчина!
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(смеется) Извини... давай вернемся к твоему вопросу... Цели у меня пока нет. Просто плыву по течению.
+	AI_Output (other, self, "DIA_Addon_Lucia_Jetzt_15_00");//Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//РџРѕСЃРјРѕС‚СЂРёРј. РџРѕРєР° СЏ РѕСЃС‚Р°СЋСЃСЊ Р·РґРµСЃСЊ, СЃРѕ РЎРЅР°С„РѕРј, Р¤РёСЃРєРѕРј Рё РѕСЃС‚Р°Р»СЊРЅС‹РјРё.
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//РўС‹ СѓР¶Рµ РІРёРґРµР» РўРѕСЂСѓСЃР°? Рћ РРЅРЅРѕСЃ, РІРѕС‚ СЌС‚Рѕ РјСѓР¶С‡РёРЅР°!
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(СЃРјРµРµС‚СЃСЏ) РР·РІРёРЅРё... РґР°РІР°Р№ РІРµСЂРЅРµРјСЃСЏ Рє С‚РІРѕРµРјСѓ РІРѕРїСЂРѕСЃСѓ... Р¦РµР»Рё Сѓ РјРµРЅСЏ РїРѕРєР° РЅРµС‚. РџСЂРѕСЃС‚Рѕ РїР»С‹РІСѓ РїРѕ С‚РµС‡РµРЅРёСЋ.
 };
 //---------------------------------------------------------------------
 //	Info Paladine
@@ -179,7 +179,7 @@ INSTANCE DIA_Addon_Lucia_Paladine   (C_INFO)
 	condition   = DIA_Addon_Lucia_Paladine_Condition;
 	information = DIA_Addon_Lucia_Paladine_Info;
 	permanent   = FALSE;
-	description = "Ты не очень-то любишь паладинов, верно?";
+	description = "РўС‹ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ Р»СЋР±РёС€СЊ РїР°Р»Р°РґРёРЅРѕРІ, РІРµСЂРЅРѕ?";
 };
 FUNC INT DIA_Addon_Lucia_Paladine_Condition()
 {	
@@ -190,18 +190,18 @@ FUNC INT DIA_Addon_Lucia_Paladine_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_15_00");//Ты не очень-то любишь паладинов, верно?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Этих фанатиков-убийц, которым платят маги огня? Нет, не люблю.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Лорд Хаген и его громилы заняли город, и все ползают перед ними на брюхе.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_03");//А мне это не по душе. Я не собиралась ждать, пока они не закроют Красную Лампу и не посадят меня за решетку.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_15_00");//РўС‹ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ Р»СЋР±РёС€СЊ РїР°Р»Р°РґРёРЅРѕРІ, РІРµСЂРЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Р­С‚РёС… С„Р°РЅР°С‚РёРєРѕРІ-СѓР±РёР№С†, РєРѕС‚РѕСЂС‹Рј РїР»Р°С‚СЏС‚ РјР°РіРё РѕРіРЅСЏ? РќРµС‚, РЅРµ Р»СЋР±Р»СЋ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Р›РѕСЂРґ РҐР°РіРµРЅ Рё РµРіРѕ РіСЂРѕРјРёР»С‹ Р·Р°РЅСЏР»Рё РіРѕСЂРѕРґ, Рё РІСЃРµ РїРѕР»Р·Р°СЋС‚ РїРµСЂРµРґ РЅРёРјРё РЅР° Р±СЂСЋС…Рµ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_03");//Рђ РјРЅРµ СЌС‚Рѕ РЅРµ РїРѕ РґСѓС€Рµ. РЇ РЅРµ СЃРѕР±РёСЂР°Р»Р°СЃСЊ Р¶РґР°С‚СЊ, РїРѕРєР° РѕРЅРё РЅРµ Р·Р°РєСЂРѕСЋС‚ РљСЂР°СЃРЅСѓСЋ Р›Р°РјРїСѓ Рё РЅРµ РїРѕСЃР°РґСЏС‚ РјРµРЅСЏ Р·Р° СЂРµС€РµС‚РєСѓ.
 	
 	if (Npc_GetTrueGuild (other) != GIL_SLD)
 	&& (Npc_GetTrueGuild (other) != GIL_DJG)
 	{
 		Info_ClearChoices (DIA_Addon_Lucia_Paladine);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Закончить разговор",DIA_Addon_Lucia_Paladine_BACK);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Но паладины сражаются во имя Инноса, который выбирает своих воинов.",DIA_Addon_Lucia_Paladine_WAHL);
-		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Паладины - это воины Инноса. Они не убийцы.",DIA_Addon_Lucia_Paladine_MURDER);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"Р—Р°РєРѕРЅС‡РёС‚СЊ СЂР°Р·РіРѕРІРѕСЂ",DIA_Addon_Lucia_Paladine_BACK);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"РќРѕ РїР°Р»Р°РґРёРЅС‹ СЃСЂР°Р¶Р°СЋС‚СЃСЏ РІРѕ РёРјСЏ РРЅРЅРѕСЃР°, РєРѕС‚РѕСЂС‹Р№ РІС‹Р±РёСЂР°РµС‚ СЃРІРѕРёС… РІРѕРёРЅРѕРІ.",DIA_Addon_Lucia_Paladine_WAHL);
+		Info_AddChoice (DIA_Addon_Lucia_Paladine,"РџР°Р»Р°РґРёРЅС‹ - СЌС‚Рѕ РІРѕРёРЅС‹ РРЅРЅРѕСЃР°. РћРЅРё РЅРµ СѓР±РёР№С†С‹.",DIA_Addon_Lucia_Paladine_MURDER);
 		
 	};
 };
@@ -211,34 +211,34 @@ FUNC VOID DIA_Addon_Lucia_Paladine_BACK()
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_WAHL()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WAHL_15_00");//Но паладины сражаются во имя Инноса, который выбирает своих воинов.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_01");//Я верю, что люди сами выбирают свой путь.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_02");//А твои слова удивляют меня. Ты говоришь, как один из них.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WAHL_15_00");//РќРѕ РїР°Р»Р°РґРёРЅС‹ СЃСЂР°Р¶Р°СЋС‚СЃСЏ РІРѕ РёРјСЏ РРЅРЅРѕСЃР°, РєРѕС‚РѕСЂС‹Р№ РІС‹Р±РёСЂР°РµС‚ СЃРІРѕРёС… РІРѕРёРЅРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_01");//РЇ РІРµСЂСЋ, С‡С‚Рѕ Р»СЋРґРё СЃР°РјРё РІС‹Р±РёСЂР°СЋС‚ СЃРІРѕР№ РїСѓС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WAHL_16_02");//Рђ С‚РІРѕРё СЃР»РѕРІР° СѓРґРёРІР»СЏСЋС‚ РјРµРЅСЏ. РўС‹ РіРѕРІРѕСЂРёС€СЊ, РєР°Рє РѕРґРёРЅ РёР· РЅРёС….
 	
-	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Ты когда-нибудь кого-нибудь убивала?",DIA_Addon_Lucia_Paladine_KILL);
+	Info_AddChoice (DIA_Addon_Lucia_Paladine,"РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ СѓР±РёРІР°Р»Р°?",DIA_Addon_Lucia_Paladine_KILL);
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_KILL()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//Ты когда-нибудь кого-нибудь убивала?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_01");//Нет, и очень этому рада.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//Давай прекратим говорить о таких серьезных вещах.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Лучше выпьем и будем наслаждаться каждым моментом жизни, данной нам богами.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ СѓР±РёРІР°Р»Р°?
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_01");//РќРµС‚, Рё РѕС‡РµРЅСЊ СЌС‚РѕРјСѓ СЂР°РґР°.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//Р”Р°РІР°Р№ РїСЂРµРєСЂР°С‚РёРј РіРѕРІРѕСЂРёС‚СЊ Рѕ С‚Р°РєРёС… СЃРµСЂСЊРµР·РЅС‹С… РІРµС‰Р°С….
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Р›СѓС‡С€Рµ РІС‹РїСЊРµРј Рё Р±СѓРґРµРј РЅР°СЃР»Р°Р¶РґР°С‚СЊСЃСЏ РєР°Р¶РґС‹Рј РјРѕРјРµРЅС‚РѕРј Р¶РёР·РЅРё, РґР°РЅРЅРѕР№ РЅР°Рј Р±РѕРіР°РјРё.
 	
 	Info_ClearChoices (DIA_Addon_Lucia_Paladine);
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_WEIB()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WEIB_15_00");//Ты отвергаешь Инноса, падшая девица?
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_01");//Нет, что ты! Просто некоторые люди злоупотребляют его именем.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_02");//Но я ни на секунду не сомневалась в божественном великолепии Инноса.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_WEIB_15_00");//РўС‹ РѕС‚РІРµСЂРіР°РµС€СЊ РРЅРЅРѕСЃР°, РїР°РґС€Р°СЏ РґРµРІРёС†Р°?
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_01");//РќРµС‚, С‡С‚Рѕ С‚С‹! РџСЂРѕСЃС‚Рѕ РЅРµРєРѕС‚РѕСЂС‹Рµ Р»СЋРґРё Р·Р»РѕСѓРїРѕС‚СЂРµР±Р»СЏСЋС‚ РµРіРѕ РёРјРµРЅРµРј.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_WEIB_16_02");//РќРѕ СЏ РЅРё РЅР° СЃРµРєСѓРЅРґСѓ РЅРµ СЃРѕРјРЅРµРІР°Р»Р°СЃСЊ РІ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕРј РІРµР»РёРєРѕР»РµРїРёРё РРЅРЅРѕСЃР°.
 };
 FUNC VOID DIA_Addon_Lucia_Paladine_MURDER()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//Паладины - это воины Инноса. Они не убийцы.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_01");//И что с того? На их мечах кровь - так же, как на мечах бандитов и пиратов.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//Единственное отличие в том, что они убивают именем Инноса, потому что хотят выжить.
+	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//РџР°Р»Р°РґРёРЅС‹ - СЌС‚Рѕ РІРѕРёРЅС‹ РРЅРЅРѕСЃР°. РћРЅРё РЅРµ СѓР±РёР№С†С‹.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_01");//Р С‡С‚Рѕ СЃ С‚РѕРіРѕ? РќР° РёС… РјРµС‡Р°С… РєСЂРѕРІСЊ - С‚Р°Рє Р¶Рµ, РєР°Рє РЅР° РјРµС‡Р°С… Р±Р°РЅРґРёС‚РѕРІ Рё РїРёСЂР°С‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ РѕС‚Р»РёС‡РёРµ РІ С‚РѕРј, С‡С‚Рѕ РѕРЅРё СѓР±РёРІР°СЋС‚ РёРјРµРЅРµРј РРЅРЅРѕСЃР°, РїРѕС‚РѕРјСѓ С‡С‚Рѕ С…РѕС‚СЏС‚ РІС‹Р¶РёС‚СЊ.
 	
-	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Ты отвергаешь Инноса, падшая девица?",DIA_Addon_Lucia_Paladine_WEIB);
+	Info_AddChoice (DIA_Addon_Lucia_Paladine,"РўС‹ РѕС‚РІРµСЂРіР°РµС€СЊ РРЅРЅРѕСЃР°, РїР°РґС€Р°СЏ РґРµРІРёС†Р°?",DIA_Addon_Lucia_Paladine_WEIB);
 };
 //---------------------------------------------------------------------
 //	Info Attentat
@@ -262,7 +262,7 @@ FUNC INT DIA_Addon_Lucia_Attentat_Condition()
 FUNC VOID DIA_Addon_Lucia_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Lucia_Attentat_16_00");//Ничего.
+	AI_Output (self, other, "DIA_Addon_Lucia_Attentat_16_00");//РќРёС‡РµРіРѕ.
 };
 //---------------------------------------------------------------------
 //	Info Trade
@@ -275,7 +275,7 @@ INSTANCE DIA_Addon_Lucia_Trade   (C_INFO)
 	information = DIA_Addon_Lucia_Trade_Info;
 	permanent   = TRUE;
 	trade		= TRUE;
-	description = "Дай мне что-нибудь выпить.";
+	description = "Р”Р°Р№ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ.";
 };
 FUNC INT DIA_Addon_Lucia_Trade_Condition()
 {	
@@ -286,7 +286,7 @@ FUNC INT DIA_Addon_Lucia_Trade_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_Trade_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_Trade_15_00");//Дай мне что-нибудь выпить.
+	AI_Output (other, self, "DIA_Addon_Lucia_Trade_15_00");//Р”Р°Р№ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ.
 	B_GiveTradeInv(self);
 };
 //---------------------------------------------------------------------
@@ -299,7 +299,7 @@ INSTANCE DIA_Addon_Lucia_lernen   (C_INFO)
 	condition   = DIA_Addon_Lucia_lernen_Condition;
 	information = DIA_Addon_Lucia_lernen_Info;
 	permanent   = FALSE;
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 FUNC INT DIA_Addon_Lucia_lernen_Condition()
 {	
@@ -310,11 +310,11 @@ FUNC INT DIA_Addon_Lucia_lernen_Condition()
 };
 FUNC VOID DIA_Addon_Lucia_lernen_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_lernen_15_00");//Ты можешь меня чему-нибудь обучить?
-	AI_Output (self, other, "DIA_Addon_Lucia_lernen_16_01");//(смеется) С радостью. Я могу помочь тебе увеличить ловкость.
+	AI_Output (other, self, "DIA_Addon_Lucia_lernen_15_00");//РўС‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РѕР±СѓС‡РёС‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Lucia_lernen_16_01");//(СЃРјРµРµС‚СЃСЏ) РЎ СЂР°РґРѕСЃС‚СЊСЋ. РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СѓРІРµР»РёС‡РёС‚СЊ Р»РѕРІРєРѕСЃС‚СЊ.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Люсия может помочь мне стать более ловким.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Р›СЋСЃРёСЏ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -326,7 +326,7 @@ instance DIA_Addon_Lucia_TEACH		(C_INFO)
 	condition	 = 	DIA_Addon_Lucia_TEACH_Condition;
 	information	 = 	DIA_Addon_Lucia_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу стать более ловким.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј.";
 };
 func int DIA_Addon_Lucia_TEACH_Condition ()
 {	
@@ -337,7 +337,7 @@ func int DIA_Addon_Lucia_TEACH_Condition ()
 };
 func void DIA_Addon_Lucia_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lucia_TEACH_15_00"); //Я хочу стать более ловким.
+	AI_Output (other, self, "DIA_Addon_Lucia_TEACH_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј.
 	
 	Info_ClearChoices   (DIA_Addon_Lucia_TEACH);
 	Info_AddChoice 		(DIA_Addon_Lucia_TEACH, DIALOG_BACK, DIA_Addon_Lucia_TEACH_BACK);

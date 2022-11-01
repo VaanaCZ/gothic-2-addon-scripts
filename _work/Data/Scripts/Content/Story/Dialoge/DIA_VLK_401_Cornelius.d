@@ -37,7 +37,7 @@ INSTANCE DIA_Cornelius_SeeMurder   (C_INFO)
 	condition   = DIA_Cornelius_SeeMurder_Condition;
 	information = DIA_Cornelius_SeeMurder_Info;
 	permanent   = FALSE;
-	description	= "Ты видел, как убили Лотара, да?";
+	description	= "РўС‹ РІРёРґРµР», РєР°Рє СѓР±РёР»Рё Р›РѕС‚Р°СЂР°, РґР°?";
 };
 
 FUNC INT DIA_Cornelius_SeeMurder_Condition()
@@ -50,9 +50,9 @@ FUNC INT DIA_Cornelius_SeeMurder_Condition()
 
 FUNC VOID DIA_Cornelius_SeeMurder_Info()
 {
-	AI_Output (other,self ,"DIA_Cornelius_SeeMurder_15_00"); //Ты видел, как убили Лотара, да?
-	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_01"); //(нервно) Я не обязан отвечать на такие вопросы.
-	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_02"); //Лорд Хаген уже допрашивал меня.
+	AI_Output (other,self ,"DIA_Cornelius_SeeMurder_15_00"); //РўС‹ РІРёРґРµР», РєР°Рє СѓР±РёР»Рё Р›РѕС‚Р°СЂР°, РґР°?
+	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_01"); //(РЅРµСЂРІРЅРѕ) РЇ РЅРµ РѕР±СЏР·Р°РЅ РѕС‚РІРµС‡Р°С‚СЊ РЅР° С‚Р°РєРёРµ РІРѕРїСЂРѕСЃС‹.
+	AI_Output (self ,other,"DIA_Cornelius_SeeMurder_13_02"); //Р›РѕСЂРґ РҐР°РіРµРЅ СѓР¶Рµ РґРѕРїСЂР°С€РёРІР°Р» РјРµРЅСЏ.
 };
 
 //*********************************************************************
@@ -65,7 +65,7 @@ INSTANCE DIA_Cornelius_WhatYouSee   (C_INFO)
 	condition   = DIA_Cornelius_WhatYouSee_Condition;
 	information = DIA_Cornelius_WhatYouSee_Info;
 	permanent   = FALSE;
-	description	= "Что именно ты видел?";
+	description	= "Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚С‹ РІРёРґРµР»?";
 };
 
 FUNC INT DIA_Cornelius_WhatYouSee_Condition()
@@ -78,11 +78,11 @@ FUNC INT DIA_Cornelius_WhatYouSee_Condition()
 
 FUNC VOID DIA_Cornelius_WhatYouSee_Info()
 {
-	AI_Output (other,self ,"DIA_Cornelius_WhatYouSee_15_00"); //Что именно ты видел?
-	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_01"); //(возбужденно) Послушай, у меня нет времени на болтовню с тобой.
-	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_02"); //(возбужденно) Уходи, я сейчас никого не принимаю.
+	AI_Output (other,self ,"DIA_Cornelius_WhatYouSee_15_00"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚С‹ РІРёРґРµР»?
+	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_01"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) РџРѕСЃР»СѓС€Р°Р№, Сѓ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° Р±РѕР»С‚РѕРІРЅСЋ СЃ С‚РѕР±РѕР№.
+	AI_Output (self ,other,"DIA_Cornelius_WhatYouSee_13_02"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) РЈС…РѕРґРё, СЏ СЃРµР№С‡Р°СЃ РЅРёРєРѕРіРѕ РЅРµ РїСЂРёРЅРёРјР°СЋ.
 	
-	B_LogEntry (TOPIC_RESCUEBENNET,"Корнелиус отказывается разговаривать со мной."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"РљРѕСЂРЅРµР»РёСѓСЃ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃРѕ РјРЅРѕР№."); 
 	
 	AI_StopProcessInfos (self);
 };
@@ -97,7 +97,7 @@ INSTANCE DIA_Cornelius_Enough   (C_INFO)
 	condition   = DIA_Cornelius_Enough_Condition;
 	information = DIA_Cornelius_Enough_Info;
 	permanent   = FALSE;
-	description	= "Хватит! ЧТО ТЫ ВИДЕЛ?";
+	description	= "РҐРІР°С‚РёС‚! Р§РўРћ РўР« Р’РР”Р•Р›?";
 };
 
 FUNC INT DIA_Cornelius_Enough_Condition()
@@ -110,12 +110,12 @@ FUNC INT DIA_Cornelius_Enough_Condition()
 
 FUNC VOID DIA_Cornelius_Enough_Info()
 {
-	AI_Output (other,self ,"DIA_Cornelius_Enough_15_00"); //Хватит! ЧТО ТЫ ВИДЕЛ?
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_01"); //(нервно) Я... я видел, как наемник нанес удар в спину паладину.
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_02"); //(нервно) А затем он вынул свой меч и вонзил его ему в грудь.
-	AI_Output (other,self ,"DIA_Cornelius_Enough_15_03"); //Ты в этом совершенно уверен?
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_04"); //(испуганно) Да, конечно. Я видел это своим собственными глазами.
-	AI_Output (self ,other,"DIA_Cornelius_Enough_13_05"); //(испуганно) Но мне правда сейчас некогда. Мне нужно работать с документами.
+	AI_Output (other,self ,"DIA_Cornelius_Enough_15_00"); //РҐРІР°С‚РёС‚! Р§РўРћ РўР« Р’РР”Р•Р›?
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_01"); //(РЅРµСЂРІРЅРѕ) РЇ... СЏ РІРёРґРµР», РєР°Рє РЅР°РµРјРЅРёРє РЅР°РЅРµСЃ СѓРґР°СЂ РІ СЃРїРёРЅСѓ РїР°Р»Р°РґРёРЅСѓ.
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_02"); //(РЅРµСЂРІРЅРѕ) Рђ Р·Р°С‚РµРј РѕРЅ РІС‹РЅСѓР» СЃРІРѕР№ РјРµС‡ Рё РІРѕРЅР·РёР» РµРіРѕ РµРјСѓ РІ РіСЂСѓРґСЊ.
+	AI_Output (other,self ,"DIA_Cornelius_Enough_15_03"); //РўС‹ РІ СЌС‚РѕРј СЃРѕРІРµСЂС€РµРЅРЅРѕ СѓРІРµСЂРµРЅ?
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_04"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЇ РІРёРґРµР» СЌС‚Рѕ СЃРІРѕРёРј СЃРѕР±СЃС‚РІРµРЅРЅС‹РјРё РіР»Р°Р·Р°РјРё.
+	AI_Output (self ,other,"DIA_Cornelius_Enough_13_05"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РќРѕ РјРЅРµ РїСЂР°РІРґР° СЃРµР№С‡Р°СЃ РЅРµРєРѕРіРґР°. РњРЅРµ РЅСѓР¶РЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ СЃ РґРѕРєСѓРјРµРЅС‚Р°РјРё.
 
 	AI_StopProcessInfos (self);
 };
@@ -130,7 +130,7 @@ INSTANCE DIA_Cornelius_DontBelieveYou   (C_INFO)
 	condition   = DIA_Cornelius_DontBelieveYou_Condition;
 	information = DIA_Cornelius_DontBelieveYou_Info;
 	permanent   = TRUE;
-	description	= "Я тебе не верю.";
+	description	= "РЇ С‚РµР±Рµ РЅРµ РІРµСЂСЋ.";
 };
 
 FUNC INT DIA_Cornelius_DontBelieveYou_Condition()
@@ -144,36 +144,36 @@ FUNC INT DIA_Cornelius_DontBelieveYou_Condition()
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_Info()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_15_00"); //Я тебе не верю.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_13_01"); //(с напускной уверенностью) И что? Что ты собираешься делать?
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_15_00"); //РЇ С‚РµР±Рµ РЅРµ РІРµСЂСЋ.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_13_01"); //(СЃ РЅР°РїСѓСЃРєРЅРѕР№ СѓРІРµСЂРµРЅРЅРѕСЃС‚СЊСЋ) Р С‡С‚Рѕ? Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ?
 
 	Info_ClearChoices (DIA_Cornelius_DontBelieveYou);
 	//hier fehlt noch Taschendiebstahl
-	Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Сколько ты хочешь?",DIA_Cornelius_DontBelieveYou_WhatYouWant);
-	Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Ты ведь очень дорожишь своей жизнью, правда?",DIA_Cornelius_DontBelieveYou_WantSurvive);
+	Info_AddChoice (DIA_Cornelius_DontBelieveYou,"РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?",DIA_Cornelius_DontBelieveYou_WhatYouWant);
+	Info_AddChoice (DIA_Cornelius_DontBelieveYou,"РўС‹ РІРµРґСЊ РѕС‡РµРЅСЊ РґРѕСЂРѕР¶РёС€СЊ СЃРІРѕРµР№ Р¶РёР·РЅСЊСЋ, РїСЂР°РІРґР°?",DIA_Cornelius_DontBelieveYou_WantSurvive);
 	
 	if (hero.guild == GIL_KDF)
 	{
-		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Тебя могли бы заставить говорить в монастыре.",DIA_Cornelius_DontBelieveYou_Monastery);
+		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"РўРµР±СЏ РјРѕРіР»Рё Р±С‹ Р·Р°СЃС‚Р°РІРёС‚СЊ РіРѕРІРѕСЂРёС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.",DIA_Cornelius_DontBelieveYou_Monastery);
 	};
 	if (hero.guild == GIL_SLD)
 	{
-		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Я могу сказать наемникам, где ты живешь.",DIA_Cornelius_DontBelieveYou_KnowYourHome);
+		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"РЇ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ РЅР°РµРјРЅРёРєР°Рј, РіРґРµ С‚С‹ Р¶РёРІРµС€СЊ.",DIA_Cornelius_DontBelieveYou_KnowYourHome);
 	};
 	if (hero.guild == GIL_MIL)
 	{
-		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"За лжесвидетельство тебя посадят в тюрьму - и надолго!",DIA_Cornelius_DontBelieveYou_Perjury);
+		Info_AddChoice (DIA_Cornelius_DontBelieveYou,"Р—Р° Р»Р¶РµСЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕ С‚РµР±СЏ РїРѕСЃР°РґСЏС‚ РІ С‚СЋСЂСЊРјСѓ - Рё РЅР°РґРѕР»РіРѕ!",DIA_Cornelius_DontBelieveYou_Perjury);
 	};
 };
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_WhatYouWant ()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WhatYouWant_15_00"); //Сколько ты хочешь?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_01"); //(надменно) У тебя не хватит золота, чтобы заплатить мне.
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WhatYouWant_15_02"); //Сколько?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_03"); //2000 золотых. Ну... Тогда я, возможно, пересмотрю свою точку зрения.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WhatYouWant_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_01"); //(РЅР°РґРјРµРЅРЅРѕ) РЈ С‚РµР±СЏ РЅРµ С…РІР°С‚РёС‚ Р·РѕР»РѕС‚Р°, С‡С‚РѕР±С‹ Р·Р°РїР»Р°С‚РёС‚СЊ РјРЅРµ.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WhatYouWant_15_02"); //РЎРєРѕР»СЊРєРѕ?
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WhatYouWant_13_03"); //2000 Р·РѕР»РѕС‚С‹С…. РќСѓ... РўРѕРіРґР° СЏ, РІРѕР·РјРѕР¶РЅРѕ, РїРµСЂРµСЃРјРѕС‚СЂСЋ СЃРІРѕСЋ С‚РѕС‡РєСѓ Р·СЂРµРЅРёСЏ.
 	
-	B_LogEntry (TOPIC_RESCUEBENNET,"Корнелиус готов разговаривать со мной за 2000 золота.");
+	B_LogEntry (TOPIC_RESCUEBENNET,"РљРѕСЂРЅРµР»РёСѓСЃ РіРѕС‚РѕРІ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃРѕ РјРЅРѕР№ Р·Р° 2000 Р·РѕР»РѕС‚Р°.");
 	
 	Cornelius_PayForProof = TRUE;
 	Info_ClearChoices (DIA_Cornelius_DontBelieveYou);
@@ -181,10 +181,10 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_WhatYouWant ()
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_WantSurvive ()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WantSurvive_15_00"); //Ты ведь очень дорожишь своей жизнью, правда?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_01"); //(испуганно) Если ты нападешь на меня, тебя повесят.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_02"); //У меня очень влиятельные друзья. Так что даже не думай тронуть меня хотя бы пальцем.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_03"); //А теперь убирайся отсюда! Иди я позову стражу!
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_WantSurvive_15_00"); //РўС‹ РІРµРґСЊ РѕС‡РµРЅСЊ РґРѕСЂРѕР¶РёС€СЊ СЃРІРѕРµР№ Р¶РёР·РЅСЊСЋ, РїСЂР°РІРґР°?
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р•СЃР»Рё С‚С‹ РЅР°РїР°РґРµС€СЊ РЅР° РјРµРЅСЏ, С‚РµР±СЏ РїРѕРІРµСЃСЏС‚.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_02"); //РЈ РјРµРЅСЏ РѕС‡РµРЅСЊ РІР»РёСЏС‚РµР»СЊРЅС‹Рµ РґСЂСѓР·СЊСЏ. РўР°Рє С‡С‚Рѕ РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№ С‚СЂРѕРЅСѓС‚СЊ РјРµРЅСЏ С…РѕС‚СЏ Р±С‹ РїР°Р»СЊС†РµРј.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_WantSurvive_13_03"); //Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°! РРґРё СЏ РїРѕР·РѕРІСѓ СЃС‚СЂР°Р¶Сѓ!
 	
 	
 	
@@ -193,10 +193,10 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_WantSurvive ()
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_Monastery()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_00"); //Тебя могли бы заставить говорить в монастыре.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Monastery_13_01"); //(белый как мел) Что ты этим хочешь сказать?
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_02"); //Ну, у нас есть методы заставить говорить правду. Очень болезненные методы.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Monastery_13_03"); //Нет, пожалуйста, не нужно. Я скажу тебе все, что ты хочешь узнать.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_00"); //РўРµР±СЏ РјРѕРіР»Рё Р±С‹ Р·Р°СЃС‚Р°РІРёС‚СЊ РіРѕРІРѕСЂРёС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Monastery_13_01"); //(Р±РµР»С‹Р№ РєР°Рє РјРµР») Р§С‚Рѕ С‚С‹ СЌС‚РёРј С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ?
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Monastery_15_02"); //РќСѓ, Сѓ РЅР°СЃ РµСЃС‚СЊ РјРµС‚РѕРґС‹ Р·Р°СЃС‚Р°РІРёС‚СЊ РіРѕРІРѕСЂРёС‚СЊ РїСЂР°РІРґСѓ. РћС‡РµРЅСЊ Р±РѕР»РµР·РЅРµРЅРЅС‹Рµ РјРµС‚РѕРґС‹.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Monastery_13_03"); //РќРµС‚, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ РЅСѓР¶РЅРѕ. РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ.
 	
 	Cornelius_TellTruth = TRUE;
 	Info_ClearChoices (DIA_Cornelius_DontBelieveYou);
@@ -204,12 +204,12 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_Monastery()
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_KnowYourHome()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_00"); //Я могу сказать наемникам, где ты живешь.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_01"); //(белый как мел) Что ты этим хочешь сказать?
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_02"); //Ручаюсь, они жаждут познакомиться с тобой. Им очень не нравится эта ситуация.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_03"); //Ты не можешь сделать это. Они убьют меня!
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_04"); //Вполне вероятно.
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_05"); //Я скажу все, что ты хочешь, только не делай этого.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_00"); //РЇ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ РЅР°РµРјРЅРёРєР°Рј, РіРґРµ С‚С‹ Р¶РёРІРµС€СЊ.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_01"); //(Р±РµР»С‹Р№ РєР°Рє РјРµР») Р§С‚Рѕ С‚С‹ СЌС‚РёРј С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ?
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_02"); //Р СѓС‡Р°СЋСЃСЊ, РѕРЅРё Р¶Р°Р¶РґСѓС‚ РїРѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№. РРј РѕС‡РµРЅСЊ РЅРµ РЅСЂР°РІРёС‚СЃСЏ СЌС‚Р° СЃРёС‚СѓР°С†РёСЏ.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_03"); //РўС‹ РЅРµ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ. РћРЅРё СѓР±СЊСЋС‚ РјРµРЅСЏ!
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_KnowYourHome_15_04"); //Р’РїРѕР»РЅРµ РІРµСЂРѕСЏС‚РЅРѕ.
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_KnowYourHome_13_05"); //РЇ СЃРєР°Р¶Сѓ РІСЃРµ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ, С‚РѕР»СЊРєРѕ РЅРµ РґРµР»Р°Р№ СЌС‚РѕРіРѕ.
 	
 	Cornelius_TellTruth = TRUE;
 	Info_ClearChoices (DIA_Cornelius_DontBelieveYou);
@@ -217,9 +217,9 @@ FUNC VOID DIA_Cornelius_DontBelieveYou_KnowYourHome()
 
 FUNC VOID DIA_Cornelius_DontBelieveYou_Perjury()
 {
-	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Perjury_15_00"); //За лжесвидетельство тебя посадят в тюрьму - и надолго!
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_01"); //Ты пытаешься угрожать мне? Какой-то жалкий стражник угрожает мне, секретарю губернатора?
-	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_02"); //Если ты немедленно не исчезнешь, я позабочусь, чтобы тебя разжаловали.
+	AI_Output (other,self ,"DIA_Cornelius_DontBelieveYou_Perjury_15_00"); //Р—Р° Р»Р¶РµСЃРІРёРґРµС‚РµР»СЊСЃС‚РІРѕ С‚РµР±СЏ РїРѕСЃР°РґСЏС‚ РІ С‚СЋСЂСЊРјСѓ - Рё РЅР°РґРѕР»РіРѕ!
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_01"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ СѓРіСЂРѕР¶Р°С‚СЊ РјРЅРµ? РљР°РєРѕР№-С‚Рѕ Р¶Р°Р»РєРёР№ СЃС‚СЂР°Р¶РЅРёРє СѓРіСЂРѕР¶Р°РµС‚ РјРЅРµ, СЃРµРєСЂРµС‚Р°СЂСЋ РіСѓР±РµСЂРЅР°С‚РѕСЂР°?
+	AI_Output (self ,other,"DIA_Cornelius_DontBelieveYou_Perjury_13_02"); //Р•СЃР»Рё С‚С‹ РЅРµРјРµРґР»РµРЅРЅРѕ РЅРµ РёСЃС‡РµР·РЅРµС€СЊ, СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ С‚РµР±СЏ СЂР°Р·Р¶Р°Р»РѕРІР°Р»Рё.
 	
 	Cornelius_ThreatenByMilSC = TRUE;
 	
@@ -236,7 +236,7 @@ INSTANCE DIA_Cornelius_PayCornelius   (C_INFO)
 	condition   = DIA_Cornelius_PayCornelius_Condition;
 	information = DIA_Cornelius_PayCornelius_Info;
 	permanent   = TRUE;
-	description	= "Вот золото.";
+	description	= "Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.";
 };
 
 FUNC INT DIA_Cornelius_PayCornelius_Condition()
@@ -250,13 +250,13 @@ FUNC INT DIA_Cornelius_PayCornelius_Condition()
 
 FUNC VOID DIA_Cornelius_PayCornelius_Info()
 {
-	AI_Output (other,self ,"DIA_Cornelius_PayCornelius_15_00"); //Вот золото.
+	AI_Output (other,self ,"DIA_Cornelius_PayCornelius_15_00"); //Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.
 	
 	B_GiveInvItems (other,self ,ItMi_Gold,2000);
 	
-	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_01"); //Лучше я не буду спрашивать, где ты его взял.
-	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_02"); //Правда, если честно, меня это совсем не волнует.
-	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_03"); //Главное, что оно теперь мое.
+	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_01"); //Р›СѓС‡С€Рµ СЏ РЅРµ Р±СѓРґСѓ СЃРїСЂР°С€РёРІР°С‚СЊ, РіРґРµ С‚С‹ РµРіРѕ РІР·СЏР».
+	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_02"); //РџСЂР°РІРґР°, РµСЃР»Рё С‡РµСЃС‚РЅРѕ, РјРµРЅСЏ СЌС‚Рѕ СЃРѕРІСЃРµРј РЅРµ РІРѕР»РЅСѓРµС‚.
+	AI_Output (self ,other,"DIA_Cornelius_PayCornelius_13_03"); //Р“Р»Р°РІРЅРѕРµ, С‡С‚Рѕ РѕРЅРѕ С‚РµРїРµСЂСЊ РјРѕРµ.
 	
 	Cornelius_TellTruth = TRUE;
 };
@@ -272,7 +272,7 @@ INSTANCE DIA_Cornelius_RealStory   (C_INFO)
 	condition   = DIA_Cornelius_RealStory_Condition;
 	information = DIA_Cornelius_RealStory_Info;
 	permanent   = TRUE;
-	description	= "Так что произошло на самом деле?";
+	description	= "РўР°Рє С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РЅР° СЃР°РјРѕРј РґРµР»Рµ?";
 };
 
 FUNC INT DIA_Cornelius_RealStory_Condition()
@@ -285,21 +285,21 @@ FUNC INT DIA_Cornelius_RealStory_Condition()
 
 FUNC VOID DIA_Cornelius_RealStory_Info()
 {
-	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_00"); //Так что произошло на самом деле?
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_01"); //Я не видел, что произошло. Я получил золото за то, что обвиню этого наемника.
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_02"); //В нынешние времена каждый сам за себя. А мне нужны были деньги.
-	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_03"); //Кто заплатил тебе?
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_04"); //Тебе достаточно того, что я сказал. Он убьет меня, если я проговорюсь.
-	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_05"); //Ты готов подтвердить сказанное тобой перед лордом Хагеном?
-	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_06"); //Я пока еще не выжил из ума. Я не собираюсь оставаться в городе.
+	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_00"); //РўР°Рє С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РЅР° СЃР°РјРѕРј РґРµР»Рµ?
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_01"); //РЇ РЅРµ РІРёРґРµР», С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ. РЇ РїРѕР»СѓС‡РёР» Р·РѕР»РѕС‚Рѕ Р·Р° С‚Рѕ, С‡С‚Рѕ РѕР±РІРёРЅСЋ СЌС‚РѕРіРѕ РЅР°РµРјРЅРёРєР°.
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_02"); //Р’ РЅС‹РЅРµС€РЅРёРµ РІСЂРµРјРµРЅР° РєР°Р¶РґС‹Р№ СЃР°Рј Р·Р° СЃРµР±СЏ. Рђ РјРЅРµ РЅСѓР¶РЅС‹ Р±С‹Р»Рё РґРµРЅСЊРіРё.
+	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_03"); //РљС‚Рѕ Р·Р°РїР»Р°С‚РёР» С‚РµР±Рµ?
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_04"); //РўРµР±Рµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С‚РѕРіРѕ, С‡С‚Рѕ СЏ СЃРєР°Р·Р°Р». РћРЅ СѓР±СЊРµС‚ РјРµРЅСЏ, РµСЃР»Рё СЏ РїСЂРѕРіРѕРІРѕСЂСЋСЃСЊ.
+	AI_Output (other,self ,"DIA_Cornelius_RealStory_15_05"); //РўС‹ РіРѕС‚РѕРІ РїРѕРґС‚РІРµСЂРґРёС‚СЊ СЃРєР°Р·Р°РЅРЅРѕРµ С‚РѕР±РѕР№ РїРµСЂРµРґ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј?
+	AI_Output (self ,other,"DIA_Cornelius_RealStory_13_06"); //РЇ РїРѕРєР° РµС‰Рµ РЅРµ РІС‹Р¶РёР» РёР· СѓРјР°. РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РІ РіРѕСЂРѕРґРµ.
 	
 	if (Npc_HasItems (self,ItWr_CorneliusTagebuch_Mis) >=1)
 	{
-		AI_Output (self ,other,"DIA_Cornelius_RealStory_13_07"); //Я дам тебе мой дневник, он послужит достаточным доказательством.
+		AI_Output (self ,other,"DIA_Cornelius_RealStory_13_07"); //РЇ РґР°Рј С‚РµР±Рµ РјРѕР№ РґРЅРµРІРЅРёРє, РѕРЅ РїРѕСЃР»СѓР¶РёС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅС‹Рј РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕРј.
 		B_GiveInvItems (self,other,ItWr_CorneliusTagebuch_Mis,1);
 	};
 	
-	B_LogEntry (TOPIC_RESCUEBENNET,"Корнелиус солгал. Ему заплатили, чтобы упечь Беннета в тюрьму. Но он не говорит мне, кто подкупил его. Он весь дрожит от страха.");
+	B_LogEntry (TOPIC_RESCUEBENNET,"РљРѕСЂРЅРµР»РёСѓСЃ СЃРѕР»РіР°Р». Р•РјСѓ Р·Р°РїР»Р°С‚РёР»Рё, С‡С‚РѕР±С‹ СѓРїРµС‡СЊ Р‘РµРЅРЅРµС‚Р° РІ С‚СЋСЂСЊРјСѓ. РќРѕ РѕРЅ РЅРµ РіРѕРІРѕСЂРёС‚ РјРЅРµ, РєС‚Рѕ РїРѕРґРєСѓРїРёР» РµРіРѕ. РћРЅ РІРµСЃСЊ РґСЂРѕР¶РёС‚ РѕС‚ СЃС‚СЂР°С…Р°.");
 	
 	CorneliusFlee = TRUE;
 	
@@ -348,7 +348,7 @@ INSTANCE DIA_Cornelius_PICKPOCKET (C_INFO)
 	condition	= DIA_Cornelius_PICKPOCKET_Condition;
 	information	= DIA_Cornelius_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Красть эту книгу рискованно)";
+	description = "(РљСЂР°СЃС‚СЊ СЌС‚Сѓ РєРЅРёРіСѓ СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Cornelius_PICKPOCKET_Condition()

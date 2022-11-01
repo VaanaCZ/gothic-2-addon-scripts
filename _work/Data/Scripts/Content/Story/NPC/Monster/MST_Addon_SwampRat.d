@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Swamprat (C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Болотная крыса";
+	name							=	"Р‘РѕР»РѕС‚РЅР°СЏ РєСЂС‹СЃР°";
 	guild							=	GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPRAT;
 	level							=	12;

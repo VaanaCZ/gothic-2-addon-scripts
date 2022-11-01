@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterrдtsel beim Steinkreis Onars Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (OrnamentschalterrРґtsel beim Steinkreis Onars Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 {
@@ -15,13 +15,13 @@ func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_BIGFARM_Addon, ItMi_OrnamentEffekt_BIGFARM_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Я активировал механизм круга камней, находящегося неподалеку от фермы Секоба. Раздался грохот, а потом появился каменный страж, который попытался меня убить."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РјРµС…Р°РЅРёР·Рј РєСЂСѓРіР° РєР°РјРЅРµР№, РЅР°С…РѕРґСЏС‰РµРіРѕСЃСЏ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹ РЎРµРєРѕР±Р°. Р Р°Р·РґР°Р»СЃСЏ РіСЂРѕС…РѕС‚, Р° РїРѕС‚РѕРј РїРѕСЏРІРёР»СЃСЏ РєР°РјРµРЅРЅС‹Р№ СЃС‚СЂР°Р¶, РєРѕС‚РѕСЂС‹Р№ РїРѕРїС‹С‚Р°Р»СЃСЏ РјРµРЅСЏ СѓР±РёС‚СЊ."); 
 			ORNAMENT_SWITCHED_BIGFARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterrдtsel beim Steinkreis Lobarts Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (OrnamentschalterrРґtsel beim Steinkreis Lobarts Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 {
@@ -30,13 +30,13 @@ func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 			Wld_PlayEffect("FX_EarthQuake",  hero, hero, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Я активировал механизм круга камней, находящегося неподалеку от фермы Лобарта. Земля затряслась, но ничего не произошло."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РјРµС…Р°РЅРёР·Рј РєСЂСѓРіР° РєР°РјРЅРµР№, РЅР°С…РѕРґСЏС‰РµРіРѕСЃСЏ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°. Р—РµРјР»СЏ Р·Р°С‚СЂСЏСЃР»Р°СЃСЊ, РЅРѕ РЅРёС‡РµРіРѕ РЅРµ РїСЂРѕРёР·РѕС€Р»Рѕ."); 
 			ORNAMENT_SWITCHED_FARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterrдtsel beim Steinkreis im Medium Forest) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (OrnamentschalterrРґtsel beim Steinkreis im Medium Forest) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 {
@@ -52,7 +52,7 @@ func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_FOREST_Addon, ItMi_OrnamentEffekt_FOREST_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Я активировал механизм круга камней, находящегося в лесу на севере. Появился огромный каменный страж в очень дурном настроении."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РјРµС…Р°РЅРёР·Рј РєСЂСѓРіР° РєР°РјРЅРµР№, РЅР°С…РѕРґСЏС‰РµРіРѕСЃСЏ РІ Р»РµСЃСѓ РЅР° СЃРµРІРµСЂРµ. РџРѕСЏРІРёР»СЃСЏ РѕРіСЂРѕРјРЅС‹Р№ РєР°РјРµРЅРЅС‹Р№ СЃС‚СЂР°Р¶ РІ РѕС‡РµРЅСЊ РґСѓСЂРЅРѕРј РЅР°СЃС‚СЂРѕРµРЅРёРё."); 
 			ORNAMENT_SWITCHED_FOREST = TRUE;
 		};
 };

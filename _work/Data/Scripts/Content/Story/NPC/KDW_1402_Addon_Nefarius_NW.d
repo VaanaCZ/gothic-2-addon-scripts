@@ -1,7 +1,7 @@
 INSTANCE KDW_1402_Addon_Nefarius_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Нефариус";
+	name 		= "РќРµС„Р°СЂРёСѓСЃ";
 	guild 		= GIL_KDW; 
 	id 			= 1402;
 	voice 		= 5;

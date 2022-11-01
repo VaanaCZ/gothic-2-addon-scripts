@@ -38,7 +38,7 @@ INSTANCE DIA_Lothar_FirstEXIT   (C_INFO)
 	condition   = DIA_Lothar_FirstEXIT_Condition;
 	information = DIA_Lothar_FirstEXIT_Info;
 	permanent   = TRUE;
-	description = "Мне нужно идти! (КОНЕЦ)";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё! (РљРћРќР•Р¦)";
 };
 FUNC INT DIA_Lothar_FirstEXIT_Condition()
 {	
@@ -49,26 +49,26 @@ FUNC INT DIA_Lothar_FirstEXIT_Condition()
 };
 FUNC VOID DIA_Lothar_FirstEXIT_Info() 
 {
-	AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_00"); //Я должен идти!
+	AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_00"); //РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё!
 	if (Lothar_Regeln == FALSE)
 	{
-		AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_01"); //Подожди! Ты даже не знаешь новых законов города!
-		AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_02"); //Позже.
+		AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_01"); //РџРѕРґРѕР¶РґРё! РўС‹ РґР°Р¶Рµ РЅРµ Р·РЅР°РµС€СЊ РЅРѕРІС‹С… Р·Р°РєРѕРЅРѕРІ РіРѕСЂРѕРґР°!
+		AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_02"); //РџРѕР·Р¶Рµ.
 	}
 	else
 	{
 		if (Player_TalkedAboutDragons == TRUE)
 		&& ((hero.guild != GIL_PAL)	&&	(hero.guild != GIL_KDF))
 		{
-			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_03"); //Если я еще хоть раз услышу, что ты рассказываешь людям о драконах, у тебя будут большие проблемы, тебе все ясно?
+			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_03"); //Р•СЃР»Рё СЏ РµС‰Рµ С…РѕС‚СЊ СЂР°Р· СѓСЃР»С‹С€Сѓ, С‡С‚Рѕ С‚С‹ СЂР°СЃСЃРєР°Р·С‹РІР°РµС€СЊ Р»СЋРґСЏРј Рѕ РґСЂР°РєРѕРЅР°С…, Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹, С‚РµР±Рµ РІСЃРµ СЏСЃРЅРѕ?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_04"); //Пока ты находишься в Хоринисе, ты можешь чувствовать себя в безопасности.
+			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_04"); //РџРѕРєР° С‚С‹ РЅР°С…РѕРґРёС€СЊСЃСЏ РІ РҐРѕСЂРёРЅРёСЃРµ, С‚С‹ РјРѕР¶РµС€СЊ С‡СѓРІСЃС‚РІРѕРІР°С‚СЊ СЃРµР±СЏ РІ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.
 
 			if (hero.guild != GIL_PAL)
 			{
-				AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_05"); //Город теперь охраняют паладины короля!
+				AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_05"); //Р“РѕСЂРѕРґ С‚РµРїРµСЂСЊ РѕС…СЂР°РЅСЏСЋС‚ РїР°Р»Р°РґРёРЅС‹ РєРѕСЂРѕР»СЏ!
 			};
 		};
 
@@ -110,25 +110,25 @@ func int DIA_Lothar_Hallo_Condition ()
 
 func void DIA_Lothar_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Lothar_Hallo_01_00"); //Стой, чужеземец!
+	AI_Output (self, other, "DIA_Lothar_Hallo_01_00"); //РЎС‚РѕР№, С‡СѓР¶РµР·РµРјРµС†!
 
 	if (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	&& ((hero.guild != GIL_PAL)	&&	(hero.guild != GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_01"); //Я не видел, чтобы ты проходил через эти ворота.
-		AI_Output (other, self, "DIA_Lothar_Hallo_15_02"); //И?
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_03"); //А стража у других ворот получила приказ не пропускать неизвестных лиц в город.
-		AI_Output (other, self, "DIA_Lothar_Hallo_15_04"); //Нуууу...
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_05"); //Придется серьезно поговорить с ними обоими!
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_06"); //Теперь, что касается нас:
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_01"); //РЇ РЅРµ РІРёРґРµР», С‡С‚РѕР±С‹ С‚С‹ РїСЂРѕС…РѕРґРёР» С‡РµСЂРµР· СЌС‚Рё РІРѕСЂРѕС‚Р°.
+		AI_Output (other, self, "DIA_Lothar_Hallo_15_02"); //Р?
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_03"); //Рђ СЃС‚СЂР°Р¶Р° Сѓ РґСЂСѓРіРёС… РІРѕСЂРѕС‚ РїРѕР»СѓС‡РёР»Р° РїСЂРёРєР°Р· РЅРµ РїСЂРѕРїСѓСЃРєР°С‚СЊ РЅРµРёР·РІРµСЃС‚РЅС‹С… Р»РёС† РІ РіРѕСЂРѕРґ.
+		AI_Output (other, self, "DIA_Lothar_Hallo_15_04"); //РќСѓСѓСѓСѓ...
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_05"); //РџСЂРёРґРµС‚СЃСЏ СЃРµСЂСЊРµР·РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРјРё РѕР±РѕРёРјРё!
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_06"); //РўРµРїРµСЂСЊ, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РЅР°СЃ:
 	};
 
-	AI_Output (self, other, "DIA_Lothar_Hallo_01_07"); //Я Лотар. Паладин короля и преданный слуга Инноса.
-	AI_Output (self, other, "DIA_Lothar_Hallo_01_08"); //Наш командующий, лорд Хаген, вверил мне задачу объяснять всем новоприбывшим новые законы, которым должны подчиняться все жители этого города.
+	AI_Output (self, other, "DIA_Lothar_Hallo_01_07"); //РЇ Р›РѕС‚Р°СЂ. РџР°Р»Р°РґРёРЅ РєРѕСЂРѕР»СЏ Рё РїСЂРµРґР°РЅРЅС‹Р№ СЃР»СѓРіР° РРЅРЅРѕСЃР°.
+	AI_Output (self, other, "DIA_Lothar_Hallo_01_08"); //РќР°С€ РєРѕРјР°РЅРґСѓСЋС‰РёР№, Р»РѕСЂРґ РҐР°РіРµРЅ, РІРІРµСЂРёР» РјРЅРµ Р·Р°РґР°С‡Сѓ РѕР±СЉСЏСЃРЅСЏС‚СЊ РІСЃРµРј РЅРѕРІРѕРїСЂРёР±С‹РІС€РёРј РЅРѕРІС‹Рµ Р·Р°РєРѕРЅС‹, РєРѕС‚РѕСЂС‹Рј РґРѕР»Р¶РЅС‹ РїРѕРґС‡РёРЅСЏС‚СЊСЃСЏ РІСЃРµ Р¶РёС‚РµР»Рё СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°.
 
 	//ADDON>
-	AI_Output (self, other, "DIA_Addon_Lothar_Hallo_01_00"); //Недавно в городе начали пропадать люди, так что горожанам нужно быть осторожнее, чтобы не разделить эту судьбу.
+	AI_Output (self, other, "DIA_Addon_Lothar_Hallo_01_00"); //РќРµРґР°РІРЅРѕ РІ РіРѕСЂРѕРґРµ РЅР°С‡Р°Р»Рё РїСЂРѕРїР°РґР°С‚СЊ Р»СЋРґРё, С‚Р°Рє С‡С‚Рѕ РіРѕСЂРѕР¶Р°РЅР°Рј РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ, С‡С‚РѕР±С‹ РЅРµ СЂР°Р·РґРµР»РёС‚СЊ СЌС‚Сѓ СЃСѓРґСЊР±Сѓ.
 	//ADDON<
 
 	if Npc_KnowsInfo (other, DIA_Lester_SEND_XARDAS)
@@ -147,7 +147,7 @@ instance DIA_Lothar_MESSAGE		(C_INFO)
 	condition	 = 	DIA_Lothar_MESSAGE_Condition;
 	information	 = 	DIA_Lothar_MESSAGE_Info;
 	permanent    =  FALSE;
-	description	 = 	"У меня важное сообщение для предводителя паладинов!";
+	description	 = 	"РЈ РјРµРЅСЏ РІР°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РїР°Р»Р°РґРёРЅРѕРІ!";
 };
 func int DIA_Lothar_MESSAGE_Condition ()
 {	
@@ -159,9 +159,9 @@ func int DIA_Lothar_MESSAGE_Condition ()
 };
 func void DIA_Lothar_MESSAGE_Info ()
 {
- 	AI_Output (other, self, "DIA_Lothar_MESSAGE_15_00"); //У меня важное сообщение для предводителя паладинов!
-	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_01"); //Достопочтенный лорд Хаген никого не принимает.
-	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_02"); //За все вопросы, касающиеся простого народа, отвечает лорд Андрэ, командир городской стражи.
+ 	AI_Output (other, self, "DIA_Lothar_MESSAGE_15_00"); //РЈ РјРµРЅСЏ РІР°Р¶РЅРѕРµ СЃРѕРѕР±С‰РµРЅРёРµ РґР»СЏ РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РїР°Р»Р°РґРёРЅРѕРІ!
+	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_01"); //Р”РѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅС‹Р№ Р»РѕСЂРґ РҐР°РіРµРЅ РЅРёРєРѕРіРѕ РЅРµ РїСЂРёРЅРёРјР°РµС‚.
+	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_02"); //Р—Р° РІСЃРµ РІРѕРїСЂРѕСЃС‹, РєР°СЃР°СЋС‰РёРµСЃСЏ РїСЂРѕСЃС‚РѕРіРѕ РЅР°СЂРѕРґР°, РѕС‚РІРµС‡Р°РµС‚ Р»РѕСЂРґ РђРЅРґСЂСЌ, РєРѕРјР°РЅРґРёСЂ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё.
 };	
 
 // ***************************************************************
@@ -174,7 +174,7 @@ instance DIA_Lothar_EyeInnos (C_INFO)
 	condition	 = 	DIA_Lothar_EyeInnos_Condition;
 	information	 = 	DIA_Lothar_EyeInnos_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я пришел, чтобы получить Глаз Инноса!";
+	description	 = 	"РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°!";
 };
 func int DIA_Lothar_EyeInnos_Condition ()
 {	
@@ -186,23 +186,23 @@ func int DIA_Lothar_EyeInnos_Condition ()
 };
 func void DIA_Lothar_EyeInnos_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_EyeInnos_15_00"); //Я пришел, чтобы получить Глаз Инноса!
+	AI_Output (other, self, "DIA_Lothar_EyeInnos_15_00"); //РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°!
 
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_01"); //Вопрос о Глазе должен решать лорд Хаген. Поговори с ним об этом.
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_01"); //Р’РѕРїСЂРѕСЃ Рѕ Р“Р»Р°Р·Рµ РґРѕР»Р¶РµРЅ СЂРµС€Р°С‚СЊ Р»РѕСЂРґ РҐР°РіРµРЅ. РџРѕРіРѕРІРѕСЂРё СЃ РЅРёРј РѕР± СЌС‚РѕРј.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_02"); //Священный Глаз Инноса! Откуда ты знаешь о нем?! Ты не принадлежишь к нашему ордену!
-		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_03"); //Мне сказал о нем маг.
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_04"); //Я не знаю, какими мотивами он руководствовался, когда доверил один из секретов нашего ордена тебе...
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_05"); //Но он, наверняка, не имел в виду, что ТЫ можешь коснуться его своими руками.
-		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_06"); //Но...
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_07"); //Я ничего об этом даже слышать не хочу!
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_02"); //РЎРІСЏС‰РµРЅРЅС‹Р№ Р“Р»Р°Р· РРЅРЅРѕСЃР°! РћС‚РєСѓРґР° С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЅРµРј?! РўС‹ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РЅР°С€РµРјСѓ РѕСЂРґРµРЅСѓ!
+		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_03"); //РњРЅРµ СЃРєР°Р·Р°Р» Рѕ РЅРµРј РјР°Рі.
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_04"); //РЇ РЅРµ Р·РЅР°СЋ, РєР°РєРёРјРё РјРѕС‚РёРІР°РјРё РѕРЅ СЂСѓРєРѕРІРѕРґСЃС‚РІРѕРІР°Р»СЃСЏ, РєРѕРіРґР° РґРѕРІРµСЂРёР» РѕРґРёРЅ РёР· СЃРµРєСЂРµС‚РѕРІ РЅР°С€РµРіРѕ РѕСЂРґРµРЅР° С‚РµР±Рµ...
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_05"); //РќРѕ РѕРЅ, РЅР°РІРµСЂРЅСЏРєР°, РЅРµ РёРјРµР» РІ РІРёРґСѓ, С‡С‚Рѕ РўР« РјРѕР¶РµС€СЊ РєРѕСЃРЅСѓС‚СЊСЃСЏ РµРіРѕ СЃРІРѕРёРјРё СЂСѓРєР°РјРё.
+		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_06"); //РќРѕ...
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_07"); //РЇ РЅРёС‡РµРіРѕ РѕР± СЌС‚РѕРј РґР°Р¶Рµ СЃР»С‹С€Р°С‚СЊ РЅРµ С…РѕС‡Сѓ!
 		if (Player_TalkedAboutDragons == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lothar_EyeInnos_01_08"); //Сначала ты нес всякую чушь о драконах, и теперь - вот это. Невероятно!
+			AI_Output (self, other, "DIA_Lothar_EyeInnos_01_08"); //РЎРЅР°С‡Р°Р»Р° С‚С‹ РЅРµСЃ РІСЃСЏРєСѓСЋ С‡СѓС€СЊ Рѕ РґСЂР°РєРѕРЅР°С…, Рё С‚РµРїРµСЂСЊ - РІРѕС‚ СЌС‚Рѕ. РќРµРІРµСЂРѕСЏС‚РЅРѕ!
 		};
 	};
 };	
@@ -217,7 +217,7 @@ instance DIA_Lothar_Dragons (C_INFO)
 	condition	 = 	DIA_Lothar_Dragons_Condition;
 	information	 = 	DIA_Lothar_Dragons_Info;
 	permanent    =  FALSE;
-	description	 = 	"Послушай - этому городу угрожают драконы!";
+	description	 = 	"РџРѕСЃР»СѓС€Р°Р№ - СЌС‚РѕРјСѓ РіРѕСЂРѕРґСѓ СѓРіСЂРѕР¶Р°СЋС‚ РґСЂР°РєРѕРЅС‹!";
 };
 func int DIA_Lothar_Dragons_Condition ()
 {	
@@ -229,19 +229,19 @@ func int DIA_Lothar_Dragons_Condition ()
 };
 func void DIA_Lothar_Dragons_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Dragons_15_00"); //Послушай - этому городу угрожают драконы!
+	AI_Output (other, self, "DIA_Lothar_Dragons_15_00"); //РџРѕСЃР»СѓС€Р°Р№ - СЌС‚РѕРјСѓ РіРѕСЂРѕРґСѓ СѓРіСЂРѕР¶Р°СЋС‚ РґСЂР°РєРѕРЅС‹!
 	if ((hero.guild != GIL_PAL)&&(hero.guild != GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_01"); //Это не может быть правдой!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_02"); //Еще один сумасшедший!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_03"); //В городе и без этого полно проблем. Не хватает только еще идиота, пугающего людей баснями о драконах!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_04"); //Я немедля посадил в тюрьму последнего, кто рассказывал здесь сказки о драконах, и отправил его тюремным транспортом в Долину Рудников. Так что придержи свой язык!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_05"); //Мы не можем позволить, чтобы кто-либо здесь сеял панику среди людей!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_01"); //Р­С‚Рѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РїСЂР°РІРґРѕР№!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_02"); //Р•С‰Рµ РѕРґРёРЅ СЃСѓРјР°СЃС€РµРґС€РёР№!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_03"); //Р’ РіРѕСЂРѕРґРµ Рё Р±РµР· СЌС‚РѕРіРѕ РїРѕР»РЅРѕ РїСЂРѕР±Р»РµРј. РќРµ С…РІР°С‚Р°РµС‚ С‚РѕР»СЊРєРѕ РµС‰Рµ РёРґРёРѕС‚Р°, РїСѓРіР°СЋС‰РµРіРѕ Р»СЋРґРµР№ Р±Р°СЃРЅСЏРјРё Рѕ РґСЂР°РєРѕРЅР°С…!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_04"); //РЇ РЅРµРјРµРґР»СЏ РїРѕСЃР°РґРёР» РІ С‚СЋСЂСЊРјСѓ РїРѕСЃР»РµРґРЅРµРіРѕ, РєС‚Рѕ СЂР°СЃСЃРєР°Р·С‹РІР°Р» Р·РґРµСЃСЊ СЃРєР°Р·РєРё Рѕ РґСЂР°РєРѕРЅР°С…, Рё РѕС‚РїСЂР°РІРёР» РµРіРѕ С‚СЋСЂРµРјРЅС‹Рј С‚СЂР°РЅСЃРїРѕСЂС‚РѕРј РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ. РўР°Рє С‡С‚Рѕ РїСЂРёРґРµСЂР¶Рё СЃРІРѕР№ СЏР·С‹Рє!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_05"); //РњС‹ РЅРµ РјРѕР¶РµРј РїРѕР·РІРѕР»РёС‚СЊ, С‡С‚РѕР±С‹ РєС‚Рѕ-Р»РёР±Рѕ Р·РґРµСЃСЊ СЃРµСЏР» РїР°РЅРёРєСѓ СЃСЂРµРґРё Р»СЋРґРµР№!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_06"); //Я часто слышу об этом. Но в это трудно поверить.
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_07"); //Будет лучше, если ты оставишь эти мысли при себе. Мы должны всеми силами избегать паники среди людей.
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_06"); //РЇ С‡Р°СЃС‚Рѕ СЃР»С‹С€Сѓ РѕР± СЌС‚РѕРј. РќРѕ РІ СЌС‚Рѕ С‚СЂСѓРґРЅРѕ РїРѕРІРµСЂРёС‚СЊ.
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_07"); //Р‘СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё С‚С‹ РѕСЃС‚Р°РІРёС€СЊ СЌС‚Рё РјС‹СЃР»Рё РїСЂРё СЃРµР±Рµ. РњС‹ РґРѕР»Р¶РЅС‹ РІСЃРµРјРё СЃРёР»Р°РјРё РёР·Р±РµРіР°С‚СЊ РїР°РЅРёРєРё СЃСЂРµРґРё Р»СЋРґРµР№.
 	};
 	Player_TalkedAboutDragons = TRUE;
 };	
@@ -256,7 +256,7 @@ instance DIA_Addon_Lothar_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Lothar_Ornament_Condition;
 	information	 = 	DIA_Addon_Lothar_Ornament_Info;
 
-	description	 = 	"Ты знаешь что-нибудь о каменном существе из круга камней у фермы Лобарта?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РєР°РјРµРЅРЅРѕРј СЃСѓС‰РµСЃС‚РІРµ РёР· РєСЂСѓРіР° РєР°РјРЅРµР№ Сѓ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°?";
 };
 
 func int DIA_Addon_Lothar_Ornament_Condition ()
@@ -270,29 +270,29 @@ func int DIA_Addon_Lothar_Ornament_Condition ()
 
 func void DIA_Addon_Lothar_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lothar_Ornament_15_00"); //Ты знаешь что-нибудь о каменном существе из круга камней у фермы Лобарта?
-	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_01"); //Конечно. Мы уничтожили его. Оно угрожало близлежащим фермам.
-	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_02"); //А почему тебя это интересует?
+	AI_Output	(other, self, "DIA_Addon_Lothar_Ornament_15_00"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РєР°РјРµРЅРЅРѕРј СЃСѓС‰РµСЃС‚РІРµ РёР· РєСЂСѓРіР° РєР°РјРЅРµР№ Сѓ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°?
+	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_01"); //РљРѕРЅРµС‡РЅРѕ. РњС‹ СѓРЅРёС‡С‚РѕР¶РёР»Рё РµРіРѕ. РћРЅРѕ СѓРіСЂРѕР¶Р°Р»Рѕ Р±Р»РёР·Р»РµР¶Р°С‰РёРј С„РµСЂРјР°Рј.
+	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_02"); //Рђ РїРѕС‡РµРјСѓ С‚РµР±СЏ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃСѓРµС‚?
 	
 	Info_ClearChoices	(DIA_Addon_Lothar_Ornament);
-	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "Я ищу часть металлического орнамента.", DIA_Addon_Lothar_Ornament_suche );
-	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "Ты думаешь, это нормально?", DIA_Addon_Lothar_Ornament_normal );
+	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "РЇ РёС‰Сѓ С‡Р°СЃС‚СЊ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРѕРіРѕ РѕСЂРЅР°РјРµРЅС‚Р°.", DIA_Addon_Lothar_Ornament_suche );
+	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "РўС‹ РґСѓРјР°РµС€СЊ, СЌС‚Рѕ РЅРѕСЂРјР°Р»СЊРЅРѕ?", DIA_Addon_Lothar_Ornament_normal );
 };
 func void DIA_Addon_Lothar_Ornament_normal ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_00"); //Ты думаешь, это нормально?
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_01"); //Что, появление каменного монстра?
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_02"); //Насколько я знаю, этим вопросом занимаются маги воды.
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_03"); //Мне же совершенно не до этого. У нас хватает дел в городе и Долине Рудников.
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_04"); //Понимаю.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_00"); //РўС‹ РґСѓРјР°РµС€СЊ, СЌС‚Рѕ РЅРѕСЂРјР°Р»СЊРЅРѕ?
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_01"); //Р§С‚Рѕ, РїРѕСЏРІР»РµРЅРёРµ РєР°РјРµРЅРЅРѕРіРѕ РјРѕРЅСЃС‚СЂР°?
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_02"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, СЌС‚РёРј РІРѕРїСЂРѕСЃРѕРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РјР°РіРё РІРѕРґС‹.
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_03"); //РњРЅРµ Р¶Рµ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµ РґРѕ СЌС‚РѕРіРѕ. РЈ РЅР°СЃ С…РІР°С‚Р°РµС‚ РґРµР» РІ РіРѕСЂРѕРґРµ Рё Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_04"); //РџРѕРЅРёРјР°СЋ.
 };
 
 func void DIA_Addon_Lothar_Ornament_suche ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_00"); //Я ищу часть металлического орнамента.
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_01"); //Она должна была быть неподалеку от фермы Лобарта, в круге камней.
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_02"); //Да, я помню этот предмет. Мы нашли его у каменного монстра. Я подумал, что это магическая руна.
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_03"); //Вернувшись в город, я отдал ее лорду Хагену. Возможно, она до сих пор у него.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_00"); //РЇ РёС‰Сѓ С‡Р°СЃС‚СЊ РјРµС‚Р°Р»Р»РёС‡РµСЃРєРѕРіРѕ РѕСЂРЅР°РјРµРЅС‚Р°.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_01"); //РћРЅР° РґРѕР»Р¶РЅР° Р±С‹Р»Р° Р±С‹С‚СЊ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°, РІ РєСЂСѓРіРµ РєР°РјРЅРµР№.
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_02"); //Р”Р°, СЏ РїРѕРјРЅСЋ СЌС‚РѕС‚ РїСЂРµРґРјРµС‚. РњС‹ РЅР°С€Р»Рё РµРіРѕ Сѓ РєР°РјРµРЅРЅРѕРіРѕ РјРѕРЅСЃС‚СЂР°. РЇ РїРѕРґСѓРјР°Р», С‡С‚Рѕ СЌС‚Рѕ РјР°РіРёС‡РµСЃРєР°СЏ СЂСѓРЅР°.
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_03"); //Р’РµСЂРЅСѓРІС€РёСЃСЊ РІ РіРѕСЂРѕРґ, СЏ РѕС‚РґР°Р» РµРµ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅР° РґРѕ СЃРёС… РїРѕСЂ Сѓ РЅРµРіРѕ.
 };
 
 // ***************************************************************
@@ -305,7 +305,7 @@ instance DIA_Lothar_WhoDragons (C_INFO)
 	condition	 = 	DIA_Lothar_WhoDragons_Condition;
 	information	 = 	DIA_Lothar_WhoDragons_Info;
 	permanent    =  FALSE;
-	description	 = 	"Кто-то уже докладывал о драконах?";
+	description	 = 	"РљС‚Рѕ-С‚Рѕ СѓР¶Рµ РґРѕРєР»Р°РґС‹РІР°Р» Рѕ РґСЂР°РєРѕРЅР°С…?";
 };
 func int DIA_Lothar_WhoDragons_Condition ()
 {	
@@ -317,12 +317,12 @@ func int DIA_Lothar_WhoDragons_Condition ()
 };
 func void DIA_Lothar_WhoDragons_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_WhoDragons_15_00"); //Кто-то уже докладывал о драконах?
-	AI_Output (self, other, "DIA_Lothar_WhoDragons_01_01"); //Да. Парень по имени Диего. Если я не ошибаюсь.
+	AI_Output (other, self, "DIA_Lothar_WhoDragons_15_00"); //РљС‚Рѕ-С‚Рѕ СѓР¶Рµ РґРѕРєР»Р°РґС‹РІР°Р» Рѕ РґСЂР°РєРѕРЅР°С…?
+	AI_Output (self, other, "DIA_Lothar_WhoDragons_01_01"); //Р”Р°. РџР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё Р”РёРµРіРѕ. Р•СЃР»Рё СЏ РЅРµ РѕС€РёР±Р°СЋСЃСЊ.
 
 	if ((hero.guild != GIL_PAL)	&&	(hero.guild != GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_WhoDragons_01_02"); //(угрожающе) Я предупреждал его - как и тебя! Но этот безумец не переставал действовать мне на нервы!
+		AI_Output (self, other, "DIA_Lothar_WhoDragons_01_02"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» РµРіРѕ - РєР°Рє Рё С‚РµР±СЏ! РќРѕ СЌС‚РѕС‚ Р±РµР·СѓРјРµС† РЅРµ РїРµСЂРµСЃС‚Р°РІР°Р» РґРµР№СЃС‚РІРѕРІР°С‚СЊ РјРЅРµ РЅР° РЅРµСЂРІС‹!
 	};
 };	
 
@@ -336,7 +336,7 @@ instance DIA_Lothar_Regeln (C_INFO)
 	condition	 = 	DIA_Lothar_Regeln_Condition;
 	information	 = 	DIA_Lothar_Regeln_Info;
 	permanent    =  FALSE;
-	description	 = 	"Хорошо - объясни мне законы этого города!";
+	description	 = 	"РҐРѕСЂРѕС€Рѕ - РѕР±СЉСЏСЃРЅРё РјРЅРµ Р·Р°РєРѕРЅС‹ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°!";
 };
 func int DIA_Lothar_Regeln_Condition ()
 {	
@@ -344,12 +344,12 @@ func int DIA_Lothar_Regeln_Condition ()
 };
 func void DIA_Lothar_Regeln_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Regeln_15_00"); //(легкий вздох) Хорошо - объясни мне законы этого города!
-	AI_Output (self, other, "DIA_Lothar_Regeln_01_01"); //Во-первых, достопочтенный паладин лорд Хаген расквартирован в верхнем квартале, вместе со своими войсками.
-	AI_Output (self, other, "DIA_Lothar_Regeln_01_02"); //Вот почему доступ в верхнюю часть города разрешен только уважаемым горожанам.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_04"); //Во-вторых, городская ратуша, находящаяся в верхнем квартале, в настоящее время является командным пунктом паладинов. Доступ туда имеют только сами паладины и члены ополчения.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_05"); //И в третьих, тот, кто обвиняется в преступлении, должен предстать перед командиром ополчения.
-	AI_Output (self, other, "DIA_Lothar_Regeln_01_05"); //Есть вопросы?
+	AI_Output (other, self, "DIA_Lothar_Regeln_15_00"); //(Р»РµРіРєРёР№ РІР·РґРѕС…) РҐРѕСЂРѕС€Рѕ - РѕР±СЉСЏСЃРЅРё РјРЅРµ Р·Р°РєРѕРЅС‹ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°!
+	AI_Output (self, other, "DIA_Lothar_Regeln_01_01"); //Р’Рѕ-РїРµСЂРІС‹С…, РґРѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅС‹Р№ РїР°Р»Р°РґРёРЅ Р»РѕСЂРґ РҐР°РіРµРЅ СЂР°СЃРєРІР°СЂС‚РёСЂРѕРІР°РЅ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ, РІРјРµСЃС‚Рµ СЃРѕ СЃРІРѕРёРјРё РІРѕР№СЃРєР°РјРё.
+	AI_Output (self, other, "DIA_Lothar_Regeln_01_02"); //Р’РѕС‚ РїРѕС‡РµРјСѓ РґРѕСЃС‚СѓРї РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° СЂР°Р·СЂРµС€РµРЅ С‚РѕР»СЊРєРѕ СѓРІР°Р¶Р°РµРјС‹Рј РіРѕСЂРѕР¶Р°РЅР°Рј.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_04"); //Р’Рѕ-РІС‚РѕСЂС‹С…, РіРѕСЂРѕРґСЃРєР°СЏ СЂР°С‚СѓС€Р°, РЅР°С…РѕРґСЏС‰Р°СЏСЃСЏ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ, РІ РЅР°СЃС‚РѕСЏС‰РµРµ РІСЂРµРјСЏ СЏРІР»СЏРµС‚СЃСЏ РєРѕРјР°РЅРґРЅС‹Рј РїСѓРЅРєС‚РѕРј РїР°Р»Р°РґРёРЅРѕРІ. Р”РѕСЃС‚СѓРї С‚СѓРґР° РёРјРµСЋС‚ С‚РѕР»СЊРєРѕ СЃР°РјРё РїР°Р»Р°РґРёРЅС‹ Рё С‡Р»РµРЅС‹ РѕРїРѕР»С‡РµРЅРёСЏ.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_05"); //Р РІ С‚СЂРµС‚СЊРёС…, С‚РѕС‚, РєС‚Рѕ РѕР±РІРёРЅСЏРµС‚СЃСЏ РІ РїСЂРµСЃС‚СѓРїР»РµРЅРёРё, РґРѕР»Р¶РµРЅ РїСЂРµРґСЃС‚Р°С‚СЊ РїРµСЂРµРґ РєРѕРјР°РЅРґРёСЂРѕРј РѕРїРѕР»С‡РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Lothar_Regeln_01_05"); //Р•СЃС‚СЊ РІРѕРїСЂРѕСЃС‹?
 	
 	Lothar_Regeln = TRUE;
 };	
@@ -364,7 +364,7 @@ instance DIA_Addon_Lothar_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Lothar_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Lothar_MissingPeople_Info;
 
-	description	 = 	"В городе пропадают жители?";
+	description	 = 	"Р’ РіРѕСЂРѕРґРµ РїСЂРѕРїР°РґР°СЋС‚ Р¶РёС‚РµР»Рё?";
 };
 
 func int DIA_Addon_Lothar_MissingPeople_Condition ()
@@ -378,11 +378,11 @@ func int DIA_Addon_Lothar_MissingPeople_Condition ()
 
 func void DIA_Addon_Lothar_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lothar_MissingPeople_15_00"); //В городе пропадают жители?
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_01"); //Да, и с каждым днем все больше.
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_02"); //Хуже всего то, что ополчение до сих пор не выяснило, кто стоит за этими событиями.
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_03"); //Неудивительно, что горожане начали с недоверием относиться к незнакомцам.
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_04"); //Так что не стоит их провоцировать. Тебе понятно?
+	AI_Output	(other, self, "DIA_Addon_Lothar_MissingPeople_15_00"); //Р’ РіРѕСЂРѕРґРµ РїСЂРѕРїР°РґР°СЋС‚ Р¶РёС‚РµР»Рё?
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_01"); //Р”Р°, Рё СЃ РєР°Р¶РґС‹Рј РґРЅРµРј РІСЃРµ Р±РѕР»СЊС€Рµ.
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_02"); //РҐСѓР¶Рµ РІСЃРµРіРѕ С‚Рѕ, С‡С‚Рѕ РѕРїРѕР»С‡РµРЅРёРµ РґРѕ СЃРёС… РїРѕСЂ РЅРµ РІС‹СЏСЃРЅРёР»Рѕ, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° СЌС‚РёРјРё СЃРѕР±С‹С‚РёСЏРјРё.
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_03"); //РќРµСѓРґРёРІРёС‚РµР»СЊРЅРѕ, С‡С‚Рѕ РіРѕСЂРѕР¶Р°РЅРµ РЅР°С‡Р°Р»Рё СЃ РЅРµРґРѕРІРµСЂРёРµРј РѕС‚РЅРѕСЃРёС‚СЊСЃСЏ Рє РЅРµР·РЅР°РєРѕРјС†Р°Рј.
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_04"); //РўР°Рє С‡С‚Рѕ РЅРµ СЃС‚РѕРёС‚ РёС… РїСЂРѕРІРѕС†РёСЂРѕРІР°С‚СЊ. РўРµР±Рµ РїРѕРЅСЏС‚РЅРѕ?
 	
 		if (SC_HearedAboutMissingPeople == FALSE)
 		{
@@ -404,7 +404,7 @@ instance DIA_Lothar_HowCitizen (C_INFO)
 	condition	 = 	DIA_Lothar_HowCitizen_Condition;
 	information	 = 	DIA_Lothar_HowCitizen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Как я могу стать гражданином этого города?";
+	description	 = 	"РљР°Рє СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°?";
 };
 func int DIA_Lothar_HowCitizen_Condition ()
 {	
@@ -417,11 +417,11 @@ func int DIA_Lothar_HowCitizen_Condition ()
 };
 func void DIA_Lothar_HowCitizen_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_06"); //Как я могу стать гражданином этого города?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_07"); //Гражданином города может считаться только тот, кто имеет постоянную работу!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_09"); //Но не думай, что ты сможешь предстать перед лордом Хагеном только потому, что ты являешься гражданином!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_10"); //Как гражданин, ты получишь доступ в верхнюю часть города - и не более того!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_11"); //Только будучи членом ополчения, ты сможешь получить доступ в ратушу!
+	AI_Output (other, self, "DIA_Lothar_Add_15_06"); //РљР°Рє СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_07"); //Р“СЂР°Р¶РґР°РЅРёРЅРѕРј РіРѕСЂРѕРґР° РјРѕР¶РµС‚ СЃС‡РёС‚Р°С‚СЊСЃСЏ С‚РѕР»СЊРєРѕ С‚РѕС‚, РєС‚Рѕ РёРјРµРµС‚ РїРѕСЃС‚РѕСЏРЅРЅСѓСЋ СЂР°Р±РѕС‚Сѓ!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_09"); //РќРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РїСЂРµРґСЃС‚Р°С‚СЊ РїРµСЂРµРґ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј С‚РѕР»СЊРєРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ СЏРІР»СЏРµС€СЊСЃСЏ РіСЂР°Р¶РґР°РЅРёРЅРѕРј!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_10"); //РљР°Рє РіСЂР°Р¶РґР°РЅРёРЅ, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РґРѕСЃС‚СѓРї РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР° - Рё РЅРµ Р±РѕР»РµРµ С‚РѕРіРѕ!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_11"); //РўРѕР»СЊРєРѕ Р±СѓРґСѓС‡Рё С‡Р»РµРЅРѕРј РѕРїРѕР»С‡РµРЅРёСЏ, С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃС‚СѓРї РІ СЂР°С‚СѓС€Сѓ!
 };
 
 // ***************************************************************
@@ -434,7 +434,7 @@ instance DIA_Lothar_WoArbeit (C_INFO)
 	condition	 = 	DIA_Lothar_WoArbeit_Condition;
 	information	 = 	DIA_Lothar_WoArbeit_Info;
 	permanent    =  FALSE;
-	description	 = 	"Где я могу найти работу?";
+	description	 = 	"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ?";
 };
 func int DIA_Lothar_WoArbeit_Condition ()
 {	
@@ -447,12 +447,12 @@ func int DIA_Lothar_WoArbeit_Condition ()
 };
 func void DIA_Lothar_WoArbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_14"); //Где я могу найти работу?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_15"); //Тебе придется стать учеником одного из мастеров  в нижней части города.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_16"); //Как только мастер примет тебя на работу, ты станешь гражданином этого города.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_17"); //Однако другие мастера должны согласиться с этим, таковы обычаи Хориниса.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_18"); //Если ты думал найти работу в портовом квартале, забудь об этом!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_19"); //Там живут отбросы общества. Даже не суй туда свой нос, ты пожалеешь об этом!
+	AI_Output (other, self, "DIA_Lothar_Add_15_14"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_15"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ  РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_16"); //РљР°Рє С‚РѕР»СЊРєРѕ РјР°СЃС‚РµСЂ РїСЂРёРјРµС‚ С‚РµР±СЏ РЅР° СЂР°Р±РѕС‚Сѓ, С‚С‹ СЃС‚Р°РЅРµС€СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_17"); //РћРґРЅР°РєРѕ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° РґРѕР»Р¶РЅС‹ СЃРѕРіР»Р°СЃРёС‚СЊСЃСЏ СЃ СЌС‚РёРј, С‚Р°РєРѕРІС‹ РѕР±С‹С‡Р°Рё РҐРѕСЂРёРЅРёСЃР°.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_18"); //Р•СЃР»Рё С‚С‹ РґСѓРјР°Р» РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_19"); //РўР°Рј Р¶РёРІСѓС‚ РѕС‚Р±СЂРѕСЃС‹ РѕР±С‰РµСЃС‚РІР°. Р”Р°Р¶Рµ РЅРµ СЃСѓР№ С‚СѓРґР° СЃРІРѕР№ РЅРѕСЃ, С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј!
 };
 
 // ***************************************************************
@@ -465,7 +465,7 @@ instance DIA_Lothar_ToOV (C_INFO)
 	condition	 = 	DIA_Lothar_ToOV_Condition;
 	information	 = 	DIA_Lothar_ToOV_Info;
 	permanent    =  FALSE;
-	description	 = 	"Как мне попасть в верхний квартал?";
+	description	 = 	"РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?";
 };
 func int DIA_Lothar_ToOV_Condition ()
 {	
@@ -479,10 +479,10 @@ func int DIA_Lothar_ToOV_Condition ()
 };
 func void DIA_Lothar_ToOV_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_ToOV_15_00"); //Как мне попасть в верхний квартал?
-	AI_Output (self, other, "DIA_Lothar_ToOV_01_01"); //Скажи, ты меня вообще слушаешь?!
-	AI_Output (self, other, "DIA_Lothar_ToOV_01_02"); //Ты не являешься гражданином этого города. Ты можешь даже не пытаться - стража все равно тебя не пустит.
-	AI_Output (self, other, "DIA_Lothar_ToOV_01_03"); //Все, что находится за внутренними вратами, для тебя является запретной зоной!
+	AI_Output (other, self, "DIA_Lothar_ToOV_15_00"); //РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»?
+	AI_Output (self, other, "DIA_Lothar_ToOV_01_01"); //РЎРєР°Р¶Рё, С‚С‹ РјРµРЅСЏ РІРѕРѕР±С‰Рµ СЃР»СѓС€Р°РµС€СЊ?!
+	AI_Output (self, other, "DIA_Lothar_ToOV_01_02"); //РўС‹ РЅРµ СЏРІР»СЏРµС€СЊСЃСЏ РіСЂР°Р¶РґР°РЅРёРЅРѕРј СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°. РўС‹ РјРѕР¶РµС€СЊ РґР°Р¶Рµ РЅРµ РїС‹С‚Р°С‚СЊСЃСЏ - СЃС‚СЂР°Р¶Р° РІСЃРµ СЂР°РІРЅРѕ С‚РµР±СЏ РЅРµ РїСѓСЃС‚РёС‚.
+	AI_Output (self, other, "DIA_Lothar_ToOV_01_03"); //Р’СЃРµ, С‡С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ Р·Р° РІРЅСѓС‚СЂРµРЅРЅРёРјРё РІСЂР°С‚Р°РјРё, РґР»СЏ С‚РµР±СЏ СЏРІР»СЏРµС‚СЃСЏ Р·Р°РїСЂРµС‚РЅРѕР№ Р·РѕРЅРѕР№!
 };	
 
 // ***************************************************************
@@ -495,7 +495,7 @@ instance DIA_Lothar_ToMiliz (C_INFO)
 	condition	 = 	DIA_Lothar_ToMiliz_Condition;
 	information	 = 	DIA_Lothar_ToMiliz_Info;
 	permanent    =  FALSE;
-	description	 = 	"Как я могу поступить на службу в ополчение?";
+	description	 = 	"РљР°Рє СЏ РјРѕРіСѓ РїРѕСЃС‚СѓРїРёС‚СЊ РЅР° СЃР»СѓР¶Р±Сѓ РІ РѕРїРѕР»С‡РµРЅРёРµ?";
 };
 func int DIA_Lothar_ToMiliz_Condition ()
 {	
@@ -507,13 +507,13 @@ func int DIA_Lothar_ToMiliz_Condition ()
 };
 func void DIA_Lothar_ToMiliz_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_26"); //Как я могу поступить на службу в ополчение?
+	AI_Output (other, self, "DIA_Lothar_Add_15_26"); //РљР°Рє СЏ РјРѕРіСѓ РїРѕСЃС‚СѓРїРёС‚СЊ РЅР° СЃР»СѓР¶Р±Сѓ РІ РѕРїРѕР»С‡РµРЅРёРµ?
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_27"); //По прямому указанию лорда Хагена, на службу в ополчение принимаются только граждане города.
-		AI_Output (other, self, "DIA_Lothar_Add_15_28"); //Понимаю.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_27"); //РџРѕ РїСЂСЏРјРѕРјСѓ СѓРєР°Р·Р°РЅРёСЋ Р»РѕСЂРґР° РҐР°РіРµРЅР°, РЅР° СЃР»СѓР¶Р±Сѓ РІ РѕРїРѕР»С‡РµРЅРёРµ РїСЂРёРЅРёРјР°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ РіСЂР°Р¶РґР°РЅРµ РіРѕСЂРѕРґР°.
+		AI_Output (other, self, "DIA_Lothar_Add_15_28"); //РџРѕРЅРёРјР°СЋ.
 	};
-	AI_Output (self ,other, "DIA_Lothar_Add_01_29"); //Если ты хочешь узнать больше, поговори с лордом Андрэ в казармах.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_29"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ, РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ РІ РєР°Р·Р°СЂРјР°С….
 };	
 
 // ***************************************************************
@@ -526,7 +526,7 @@ instance DIA_Lothar_ToPaladins (C_INFO)
 	condition	 = 	DIA_Lothar_ToPaladins_Condition;
 	information	 = 	DIA_Lothar_ToPaladins_Info;
 	permanent    =  FALSE;
-	description	 = 	"Что мне нужно сделать, чтобы получить доспехи как у тебя?";
+	description	 = 	"Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃРїРµС…Рё РєР°Рє Сѓ С‚РµР±СЏ?";
 };
 func int DIA_Lothar_ToPaladins_Condition ()
 {	
@@ -539,18 +539,18 @@ func int DIA_Lothar_ToPaladins_Condition ()
 };
 func void DIA_Lothar_ToPaladins_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_30"); //Что мне нужно сделать, чтобы получить доспехи как у тебя?
+	AI_Output (other, self, "DIA_Lothar_Add_15_30"); //Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃРїРµС…Рё РєР°Рє Сѓ С‚РµР±СЏ?
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_31"); //(напыщенно) Что? Ты даже не являешься членом ополчения!
+		AI_Output (self ,other, "DIA_Lothar_Add_01_31"); //(РЅР°РїС‹С‰РµРЅРЅРѕ) Р§С‚Рѕ? РўС‹ РґР°Р¶Рµ РЅРµ СЏРІР»СЏРµС€СЊСЃСЏ С‡Р»РµРЅРѕРј РѕРїРѕР»С‡РµРЅРёСЏ!
 	};
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_32"); //Ты даже не ГРАЖДАНИН!
+		AI_Output (self ,other, "DIA_Lothar_Add_01_32"); //РўС‹ РґР°Р¶Рµ РЅРµ Р“Р РђР–Р”РђРќРРќ!
 	};
-	AI_Output (self ,other, "DIA_Lothar_Add_01_33"); //Как ты даже думать смеешь о том, чтобы носить доспехи ПАЛАДИНА?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_34"); //Только немногим из солдат ополчения, успешно выполнившим необычайно важные задания, была дарована такая честь.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_35"); //(сурово) Если ты хочешь стать паладином, впереди тебя ждет очень долгий и тернистый путь, мой мальчик!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_33"); //РљР°Рє С‚С‹ РґР°Р¶Рµ РґСѓРјР°С‚СЊ СЃРјРµРµС€СЊ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РЅРѕСЃРёС‚СЊ РґРѕСЃРїРµС…Рё РџРђР›РђР”РРќРђ?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_34"); //РўРѕР»СЊРєРѕ РЅРµРјРЅРѕРіРёРј РёР· СЃРѕР»РґР°С‚ РѕРїРѕР»С‡РµРЅРёСЏ, СѓСЃРїРµС€РЅРѕ РІС‹РїРѕР»РЅРёРІС€РёРј РЅРµРѕР±С‹С‡Р°Р№РЅРѕ РІР°Р¶РЅС‹Рµ Р·Р°РґР°РЅРёСЏ, Р±С‹Р»Р° РґР°СЂРѕРІР°РЅР° С‚Р°РєР°СЏ С‡РµСЃС‚СЊ.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_35"); //(СЃСѓСЂРѕРІРѕ) Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј, РІРїРµСЂРµРґРё С‚РµР±СЏ Р¶РґРµС‚ РѕС‡РµРЅСЊ РґРѕР»РіРёР№ Рё С‚РµСЂРЅРёСЃС‚С‹Р№ РїСѓС‚СЊ, РјРѕР№ РјР°Р»СЊС‡РёРє!
 };	
 
 // ***************************************************************
@@ -563,7 +563,7 @@ instance DIA_Lothar_WoAndre (C_INFO)
 	condition	 = 	DIA_Lothar_WoAndre_Condition;
 	information	 = 	DIA_Lothar_WoAndre_Info;
 	permanent    =  FALSE;
-	description	 = 	"Где мне найти командира городской стражи?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєРѕРјР°РЅРґРёСЂР° РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё?";
 };
 func int DIA_Lothar_WoAndre_Condition ()
 {	
@@ -575,8 +575,8 @@ func int DIA_Lothar_WoAndre_Condition ()
 };
 func void DIA_Lothar_WoAndre_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_WoAndre_15_00"); //Где мне найти командира городской стражи?
-	AI_Output (self, other, "DIA_Lothar_WoAndre_01_01"); //Лорда Андрэ можно найти в казармах в противоположном конце города.
+	AI_Output (other, self, "DIA_Lothar_WoAndre_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєРѕРјР°РЅРґРёСЂР° РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё?
+	AI_Output (self, other, "DIA_Lothar_WoAndre_01_01"); //Р›РѕСЂРґР° РђРЅРґСЂСЌ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ РєР°Р·Р°СЂРјР°С… РІ РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅРѕРј РєРѕРЅС†Рµ РіРѕСЂРѕРґР°.
 };	
 
 // ***************************************************************
@@ -589,7 +589,7 @@ instance DIA_Lothar_Schlafen (C_INFO)
 	condition	 = 	DIA_Lothar_Schlafen_Condition;
 	information	 = 	DIA_Lothar_Schlafen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Где я могу провести ночь?";
+	description	 = 	"Р“РґРµ СЏ РјРѕРіСѓ РїСЂРѕРІРµСЃС‚Рё РЅРѕС‡СЊ?";
 };
 func int DIA_Lothar_Schlafen_Condition ()
 {	
@@ -600,10 +600,10 @@ func int DIA_Lothar_Schlafen_Condition ()
 };
 func void DIA_Lothar_Schlafen_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_22"); //Где я могу провести ночь?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_23"); //Если ты ищешь место для ночлега, иди в отель, находящийся перед казармами.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_24"); //Паладины платят за ночлег всех путников, которые заходят в этот город.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_25"); //Странствующие торговцы с рыночной площади также ночуют там.
+	AI_Output (other, self, "DIA_Lothar_Add_15_22"); //Р“РґРµ СЏ РјРѕРіСѓ РїСЂРѕРІРµСЃС‚Рё РЅРѕС‡СЊ?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_23"); //Р•СЃР»Рё С‚С‹ РёС‰РµС€СЊ РјРµСЃС‚Рѕ РґР»СЏ РЅРѕС‡Р»РµРіР°, РёРґРё РІ РѕС‚РµР»СЊ, РЅР°С…РѕРґСЏС‰РёР№СЃСЏ РїРµСЂРµРґ РєР°Р·Р°СЂРјР°РјРё.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_24"); //РџР°Р»Р°РґРёРЅС‹ РїР»Р°С‚СЏС‚ Р·Р° РЅРѕС‡Р»РµРі РІСЃРµС… РїСѓС‚РЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ Р·Р°С…РѕРґСЏС‚ РІ СЌС‚РѕС‚ РіРѕСЂРѕРґ.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_25"); //РЎС‚СЂР°РЅСЃС‚РІСѓСЋС‰РёРµ С‚РѕСЂРіРѕРІС†С‹ СЃ СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё С‚Р°РєР¶Рµ РЅРѕС‡СѓСЋС‚ С‚Р°Рј.
 };	
 
 // ***************************************************************
@@ -629,7 +629,7 @@ func int DIA_Lothar_PermB4OV_Condition ()
 };
 func void DIA_Lothar_PermB4OV_Info ()
 {
-	AI_Output (self, other, "DIA_Lothar_PermB4OV_01_00"); //Обо всем остальном ты можешь поговорить с лордом Андрэ!
+	AI_Output (self, other, "DIA_Lothar_PermB4OV_01_00"); //РћР±Рѕ РІСЃРµРј РѕСЃС‚Р°Р»СЊРЅРѕРј С‚С‹ РјРѕР¶РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ!
 	AI_StopProcessInfos(self);
 };	
 	
@@ -638,42 +638,42 @@ func void DIA_Lothar_PermB4OV_Info ()
 // 		Blubb
 // ***************
 
-func void B_Lothar_Blubb() //ьberflьsige Outputs
+func void B_Lothar_Blubb() //СЊberflСЊsige Outputs
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_00"); //Но я ДОЛЖЕН увидеться с лордом Хагеном!
+	AI_Output (other, self, "DIA_Lothar_Add_15_00"); //РќРѕ СЏ Р”РћР›Р–Р•Рќ СѓРІРёРґРµС‚СЊСЃСЏ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј!
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_45"); //Как я понимаю, он принял тебя в ряды ополчения.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_46"); //Хмм... Надеюсь, он знает, что делает.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_45"); //РљР°Рє СЏ РїРѕРЅРёРјР°СЋ, РѕРЅ РїСЂРёРЅСЏР» С‚РµР±СЏ РІ СЂСЏРґС‹ РѕРїРѕР»С‡РµРЅРёСЏ.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_46"); //РҐРјРј... РќР°РґРµСЋСЃСЊ, РѕРЅ Р·РЅР°РµС‚, С‡С‚Рѕ РґРµР»Р°РµС‚.
 	
-	AI_Output (other, self, "DIA_Lothar_Add_15_20"); //Сколько мастеров работает в городе?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_21"); //Насколько я знаю, всего их пять.
+	AI_Output (other, self, "DIA_Lothar_Add_15_20"); //РЎРєРѕР»СЊРєРѕ РјР°СЃС‚РµСЂРѕРІ СЂР°Р±РѕС‚Р°РµС‚ РІ РіРѕСЂРѕРґРµ?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_21"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РІСЃРµРіРѕ РёС… РїСЏС‚СЊ.
 		
-	AI_Output (self ,other, "DIA_Lothar_Add_01_62"); //Скажи мне, разве я говорил недостаточно внятно? Хватит разговоров о драконах!
-	AI_Output (other, self, "DIA_Lothar_Add_15_63"); //Откуда тебе знать?..
-	AI_Output (self ,other, "DIA_Lothar_Add_01_64"); //Это НЕ ТВОЕ дело!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_65"); //Это было последний раз, понятно?!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_62"); //РЎРєР°Р¶Рё РјРЅРµ, СЂР°Р·РІРµ СЏ РіРѕРІРѕСЂРёР» РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІРЅСЏС‚РЅРѕ? РҐРІР°С‚РёС‚ СЂР°Р·РіРѕРІРѕСЂРѕРІ Рѕ РґСЂР°РєРѕРЅР°С…!
+	AI_Output (other, self, "DIA_Lothar_Add_15_63"); //РћС‚РєСѓРґР° С‚РµР±Рµ Р·РЅР°С‚СЊ?..
+	AI_Output (self ,other, "DIA_Lothar_Add_01_64"); //Р­С‚Рѕ РќР• РўР’РћР• РґРµР»Рѕ!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_65"); //Р­С‚Рѕ Р±С‹Р»Рѕ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·, РїРѕРЅСЏС‚РЅРѕ?!
 	
-	AI_Output (other, self, "DIA_Lothar_Add_15_66"); //Где мне найти командира ополчения?
-	AI_Output (other, self, "DIA_Lothar_Add_15_08"); //Теперь я ученик одного из мастеров!
+	AI_Output (other, self, "DIA_Lothar_Add_15_66"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєРѕРјР°РЅРґРёСЂР° РѕРїРѕР»С‡РµРЅРёСЏ?
+	AI_Output (other, self, "DIA_Lothar_Add_15_08"); //РўРµРїРµСЂСЊ СЏ СѓС‡РµРЅРёРє РѕРґРЅРѕРіРѕ РёР· РјР°СЃС‚РµСЂРѕРІ!
 	
-	// ------ NEWS_Modul fьr Unterstadt ------
-	AI_Output (self ,other, "DIA_Lothar_Add_01_47"); //Опять ты.
+	// ------ NEWS_Modul fСЊr Unterstadt ------
+	AI_Output (self ,other, "DIA_Lothar_Add_01_47"); //РћРїСЏС‚СЊ С‚С‹.
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_43"); //Как я слышал, ты разговаривал с лордом Андрэ?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_44"); //Я говорил тебе, что ты можешь присоединиться к ополчению, только если станешь гражданином города.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_43"); //РљР°Рє СЏ СЃР»С‹С€Р°Р», С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_44"); //РЇ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРїРѕР»С‡РµРЅРёСЋ, С‚РѕР»СЊРєРѕ РµСЃР»Рё СЃС‚Р°РЅРµС€СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј РіРѕСЂРѕРґР°.
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_48"); //Я доложил лорду Хагену, что ты желаешь поговорить с ним...
-	AI_Output (other, self, "DIA_Lothar_Add_15_49"); //И? Что он сказал?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_50"); //Он никогда не слышал о тебе.
-	AI_Output (other, self, "DIA_Lothar_Add_15_51"); //Конечно нет. Ты сказал ему о драконах?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_52"); //Разве я не говорил тебе, чтобы ты прекратил нести этот вздор?!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_48"); //РЇ РґРѕР»РѕР¶РёР» Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ, С‡С‚Рѕ С‚С‹ Р¶РµР»Р°РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј...
+	AI_Output (other, self, "DIA_Lothar_Add_15_49"); //Р? Р§С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р»?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_50"); //РћРЅ РЅРёРєРѕРіРґР° РЅРµ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ.
+	AI_Output (other, self, "DIA_Lothar_Add_15_51"); //РљРѕРЅРµС‡РЅРѕ РЅРµС‚. РўС‹ СЃРєР°Р·Р°Р» РµРјСѓ Рѕ РґСЂР°РєРѕРЅР°С…?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_52"); //Р Р°Р·РІРµ СЏ РЅРµ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, С‡С‚РѕР±С‹ С‚С‹ РїСЂРµРєСЂР°С‚РёР» РЅРµСЃС‚Рё СЌС‚РѕС‚ РІР·РґРѕСЂ?!
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_12"); //Я слышал, ты уже получил одобрение некоторых мастеров.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_13"); //Похоже, ты полон решимости добиться своего, да?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_12"); //РЇ СЃР»С‹С€Р°Р», С‚С‹ СѓР¶Рµ РїРѕР»СѓС‡РёР» РѕРґРѕР±СЂРµРЅРёРµ РЅРµРєРѕС‚РѕСЂС‹С… РјР°СЃС‚РµСЂРѕРІ.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_13"); //РџРѕС…РѕР¶Рµ, С‚С‹ РїРѕР»РѕРЅ СЂРµС€РёРјРѕСЃС‚Рё РґРѕР±РёС‚СЊСЃСЏ СЃРІРѕРµРіРѕ, РґР°?
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_01"); //Ты должен повиноваться законам, как и все остальные!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_02"); //Лорд Хаген не принимает.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_03"); //Если у тебя действительно есть что-то ВАЖНОЕ, иди к лорду Андрэ. Он поможет тебе!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРІРёРЅРѕРІР°С‚СЊСЃСЏ Р·Р°РєРѕРЅР°Рј, РєР°Рє Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_02"); //Р›РѕСЂРґ РҐР°РіРµРЅ РЅРµ РїСЂРёРЅРёРјР°РµС‚.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_03"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЃС‚СЊ С‡С‚Рѕ-С‚Рѕ Р’РђР–РќРћР•, РёРґРё Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ. РћРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ!
 };
 
 
@@ -707,40 +707,40 @@ func int DIA_Lothar_HelloAgain_Condition ()
 };
 func void DIA_Lothar_HelloAgain_Info ()
 {
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_00"); //Ах! Опять ты!
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_01"); //Так тебе все же удалось получить доступ в верхний квартал!
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_00"); //РђС…! РћРїСЏС‚СЊ С‚С‹!
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_01"); //РўР°Рє С‚РµР±Рµ РІСЃРµ Р¶Рµ СѓРґР°Р»РѕСЃСЊ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃС‚СѓРї РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»!
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_36"); //Где ты взял эту мантию?
-		AI_Output (other, self, "DIA_Lothar_Add_15_37"); //Я прошел Испытание Огнем.
-		AI_Output (self ,other, "DIA_Lothar_Add_01_38"); //Невероятно. Тогда то, что происходит здесь, может быть волей Инноса...
+		AI_Output (self ,other, "DIA_Lothar_Add_01_36"); //Р“РґРµ С‚С‹ РІР·СЏР» СЌС‚Сѓ РјР°РЅС‚РёСЋ?
+		AI_Output (other, self, "DIA_Lothar_Add_15_37"); //РЇ РїСЂРѕС€РµР» РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_38"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ. РўРѕРіРґР° С‚Рѕ, С‡С‚Рѕ РїСЂРѕРёСЃС…РѕРґРёС‚ Р·РґРµСЃСЊ, РјРѕР¶РµС‚ Р±С‹С‚СЊ РІРѕР»РµР№ РРЅРЅРѕСЃР°...
 	};
 
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_39"); //Ты ведь не присоединился к наемникам Онара, нет?
-		AI_Output (self ,other, "DIA_Lothar_Add_01_40"); //Как ты попал сюда?
-		AI_Output (other, self, "DIA_Lothar_Add_15_41"); //Я принес предложение мира от Ли...
-		AI_Output (self ,other, "DIA_Lothar_Add_01_42"); //Ха! Лорд Хаген никогда не согласится на это.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_39"); //РўС‹ РІРµРґСЊ РЅРµ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј РћРЅР°СЂР°, РЅРµС‚?
+		AI_Output (self ,other, "DIA_Lothar_Add_01_40"); //РљР°Рє С‚С‹ РїРѕРїР°Р» СЃСЋРґР°?
+		AI_Output (other, self, "DIA_Lothar_Add_15_41"); //РЇ РїСЂРёРЅРµСЃ РїСЂРµРґР»РѕР¶РµРЅРёРµ РјРёСЂР° РѕС‚ Р›Рё...
+		AI_Output (self ,other, "DIA_Lothar_Add_01_42"); //РҐР°! Р›РѕСЂРґ РҐР°РіРµРЅ РЅРёРєРѕРіРґР° РЅРµ СЃРѕРіР»Р°СЃРёС‚СЃСЏ РЅР° СЌС‚Рѕ.
 	};
 		
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_02"); //Есть вещи, о которых ты всегда должен помнить. В противном случае ты будешь вышвырнут отсюда так же быстро, как попал сюда.
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_03"); //Тебе можно входить только в дома торговцев. Ты узнаешь их по вывескам над дверьми - тут тяжело ошибиться.
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_04"); //Другие здания здесь принадлежат знатным горожанам - там тебе совершенно нечего делать!
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_02"); //Р•СЃС‚СЊ РІРµС‰Рё, Рѕ РєРѕС‚РѕСЂС‹С… С‚С‹ РІСЃРµРіРґР° РґРѕР»Р¶РµРЅ РїРѕРјРЅРёС‚СЊ. Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ С‚С‹ Р±СѓРґРµС€СЊ РІС‹С€РІС‹СЂРЅСѓС‚ РѕС‚СЃСЋРґР° С‚Р°Рє Р¶Рµ Р±С‹СЃС‚СЂРѕ, РєР°Рє РїРѕРїР°Р» СЃСЋРґР°.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_03"); //РўРµР±Рµ РјРѕР¶РЅРѕ РІС…РѕРґРёС‚СЊ С‚РѕР»СЊРєРѕ РІ РґРѕРјР° С‚РѕСЂРіРѕРІС†РµРІ. РўС‹ СѓР·РЅР°РµС€СЊ РёС… РїРѕ РІС‹РІРµСЃРєР°Рј РЅР°Рґ РґРІРµСЂСЊРјРё - С‚СѓС‚ С‚СЏР¶РµР»Рѕ РѕС€РёР±РёС‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_04"); //Р”СЂСѓРіРёРµ Р·РґР°РЅРёСЏ Р·РґРµСЃСЊ РїСЂРёРЅР°РґР»РµР¶Р°С‚ Р·РЅР°С‚РЅС‹Рј РіРѕСЂРѕР¶Р°РЅР°Рј - С‚Р°Рј С‚РµР±Рµ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ!
 	if (other.guild == GIL_KDF) 
 	|| (other.guild == GIL_NOV) 
 	{
-		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_05"); //Даже несмотря на то, что ты теперь член ордена Инноса.
+		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_05"); //Р”Р°Р¶Рµ РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚Рѕ, С‡С‚Рѕ С‚С‹ С‚РµРїРµСЂСЊ С‡Р»РµРЅ РѕСЂРґРµРЅР° РРЅРЅРѕСЃР°.
 	};
 	if (other.guild == GIL_MIL)
 	{	
-		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_06"); //Будучи членом ополчения, ты также получаешь доступ в покои паладинов.
-		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_07"); //Но твое место по-прежнему в казармах.
+		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_06"); //Р‘СѓРґСѓС‡Рё С‡Р»РµРЅРѕРј РѕРїРѕР»С‡РµРЅРёСЏ, С‚С‹ С‚Р°РєР¶Рµ РїРѕР»СѓС‡Р°РµС€СЊ РґРѕСЃС‚СѓРї РІ РїРѕРєРѕРё РїР°Р»Р°РґРёРЅРѕРІ.
+		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_07"); //РќРѕ С‚РІРѕРµ РјРµСЃС‚Рѕ РїРѕ-РїСЂРµР¶РЅРµРјСѓ РІ РєР°Р·Р°СЂРјР°С….
 	};
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_08"); //В этом квартале живут знатные горожане. Так что относись к ним с уважением.
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_09"); //Мы поняли друг друга?
-	AI_Output (other, self, "DIA_Lothar_HelloAgain_15_10"); //Конечно.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_08"); //Р’ СЌС‚РѕРј РєРІР°СЂС‚Р°Р»Рµ Р¶РёРІСѓС‚ Р·РЅР°С‚РЅС‹Рµ РіРѕСЂРѕР¶Р°РЅРµ. РўР°Рє С‡С‚Рѕ РѕС‚РЅРѕСЃРёСЃСЊ Рє РЅРёРј СЃ СѓРІР°Р¶РµРЅРёРµРј.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_09"); //РњС‹ РїРѕРЅСЏР»Рё РґСЂСѓРі РґСЂСѓРіР°?
+	AI_Output (other, self, "DIA_Lothar_HelloAgain_15_10"); //РљРѕРЅРµС‡РЅРѕ.
 };	
 
 // ***************************************************************
@@ -753,7 +753,7 @@ instance DIA_Lothar_Hagen (C_INFO)
 	condition	 = 	DIA_Lothar_Hagen_Condition;
 	information	 = 	DIA_Lothar_Hagen_Info;
 	permanent    =  TRUE;
-	description  = 	"Где я могу найти лорда Хагена?";
+	description  = 	"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р»РѕСЂРґР° РҐР°РіРµРЅР°?";
 };
 func int DIA_Lothar_Hagen_Condition ()
 {	
@@ -765,9 +765,9 @@ func int DIA_Lothar_Hagen_Condition ()
 };
 func void DIA_Lothar_Hagen_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Hagen_15_00"); //Где я могу найти лорда Хагена?
-	AI_Output (self, other, "DIA_Lothar_Hagen_01_01"); //Он в ратуше, в конце верхнего квартала.
-	AI_Output (self, other, "DIA_Lothar_Hagen_01_02"); //Но тебя не примут там без веской на то причины.
+	AI_Output (other, self, "DIA_Lothar_Hagen_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё Р»РѕСЂРґР° РҐР°РіРµРЅР°?
+	AI_Output (self, other, "DIA_Lothar_Hagen_01_01"); //РћРЅ РІ СЂР°С‚СѓС€Рµ, РІ РєРѕРЅС†Рµ РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°.
+	AI_Output (self, other, "DIA_Lothar_Hagen_01_02"); //РќРѕ С‚РµР±СЏ РЅРµ РїСЂРёРјСѓС‚ С‚Р°Рј Р±РµР· РІРµСЃРєРѕР№ РЅР° С‚Рѕ РїСЂРёС‡РёРЅС‹.
 };
 
 // ***************************************************************
@@ -780,7 +780,7 @@ instance DIA_Lothar_OWRunning (C_INFO)
 	condition	 = 	DIA_Lothar_OWRunning_Condition;
 	information	 = 	DIA_Lothar_OWRunning_Info;
 	permanent    =  FALSE;
-	description  = 	"Я пришел увидеться с лордом Хагеном...";
+	description  = 	"РЇ РїСЂРёС€РµР» СѓРІРёРґРµС‚СЊСЃСЏ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј...";
 };
 func int DIA_Lothar_OWRunning_Condition ()
 {	
@@ -792,12 +792,12 @@ func int DIA_Lothar_OWRunning_Condition ()
 };
 func void DIA_Lothar_OWRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_53"); //Я пришел увидеться с лордом Хагеном...
-	AI_Output (self ,other, "DIA_Lothar_Add_01_54"); //И? Ты не докучал ему своими россказнями о драконах, нет?
-	AI_Output (other, self, "DIA_Lothar_Add_15_55"); //Да, я говорил ему...
-	AI_Output (self ,other, "DIA_Lothar_Add_01_56"); //Скажи мне, что это неправда...
-	AI_Output (other, self, "DIA_Lothar_Add_15_57"); //Он послал меня добыть доказательства...
-	AI_Output (self ,other, "DIA_Lothar_Add_01_58"); //Ну что ж, тогда удачи. (себе под нос) Что за безумец...
+	AI_Output (other, self, "DIA_Lothar_Add_15_53"); //РЇ РїСЂРёС€РµР» СѓРІРёРґРµС‚СЊСЃСЏ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј...
+	AI_Output (self ,other, "DIA_Lothar_Add_01_54"); //Р? РўС‹ РЅРµ РґРѕРєСѓС‡Р°Р» РµРјСѓ СЃРІРѕРёРјРё СЂРѕСЃСЃРєР°Р·РЅСЏРјРё Рѕ РґСЂР°РєРѕРЅР°С…, РЅРµС‚?
+	AI_Output (other, self, "DIA_Lothar_Add_15_55"); //Р”Р°, СЏ РіРѕРІРѕСЂРёР» РµРјСѓ...
+	AI_Output (self ,other, "DIA_Lothar_Add_01_56"); //РЎРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ РЅРµРїСЂР°РІРґР°...
+	AI_Output (other, self, "DIA_Lothar_Add_15_57"); //РћРЅ РїРѕСЃР»Р°Р» РјРµРЅСЏ РґРѕР±С‹С‚СЊ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°...
+	AI_Output (self ,other, "DIA_Lothar_Add_01_58"); //РќСѓ С‡С‚Рѕ Р¶, С‚РѕРіРґР° СѓРґР°С‡Рё. (СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р§С‚Рѕ Р·Р° Р±РµР·СѓРјРµС†...
 	
 	AI_StopProcessInfos (self);
 };
@@ -812,7 +812,7 @@ instance DIA_Lothar_OWRunningBrief (C_INFO)
 	condition	 = 	DIA_Lothar_OWRunningBrief_Condition;
 	information	 = 	DIA_Lothar_OWRunningBrief_Info;
 	permanent    =  FALSE;
-	description  = 	"У меня есть доказательство! Вот письмо от командующего Гаронда!";
+	description  = 	"РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ! Р’РѕС‚ РїРёСЃСЊРјРѕ РѕС‚ РєРѕРјР°РЅРґСѓСЋС‰РµРіРѕ Р“Р°СЂРѕРЅРґР°!";
 };
 func int DIA_Lothar_OWRunningBrief_Condition ()
 {	
@@ -824,9 +824,9 @@ func int DIA_Lothar_OWRunningBrief_Condition ()
 };
 func void DIA_Lothar_OWRunningBrief_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_59"); //У меня есть доказательство! Вот письмо от командующего Гаронда!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_60"); //Так драконы действительно существуют?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_61"); //Я был несправедлив к тебе. Я буду молить Инноса о прощении за мое поведение.
+	AI_Output (other, self, "DIA_Lothar_Add_15_59"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ! Р’РѕС‚ РїРёСЃСЊРјРѕ РѕС‚ РєРѕРјР°РЅРґСѓСЋС‰РµРіРѕ Р“Р°СЂРѕРЅРґР°!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_60"); //РўР°Рє РґСЂР°РєРѕРЅС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃСѓС‰РµСЃС‚РІСѓСЋС‚?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_61"); //РЇ Р±С‹Р» РЅРµСЃРїСЂР°РІРµРґР»РёРІ Рє С‚РµР±Рµ. РЇ Р±СѓРґСѓ РјРѕР»РёС‚СЊ РРЅРЅРѕСЃР° Рѕ РїСЂРѕС‰РµРЅРёРё Р·Р° РјРѕРµ РїРѕРІРµРґРµРЅРёРµ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -841,7 +841,7 @@ instance DIA_Lothar_PERM (C_INFO)
 	condition	 = 	DIA_Lothar_PERM_Condition;
 	information	 = 	DIA_Lothar_PERM_Info;
 	permanent    =  TRUE;
-	description  = 	"Ничего интересного не было?";
+	description  = 	"РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ Р±С‹Р»Рѕ?";
 };
 func int DIA_Lothar_PERM_Condition ()
 {	
@@ -853,19 +853,19 @@ func int DIA_Lothar_PERM_Condition ()
 };
 func void DIA_Lothar_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_PERM_15_00"); //Ничего интересного не было за последнее время?
+	AI_Output (other, self, "DIA_Lothar_PERM_15_00"); //РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ Р±С‹Р»Рѕ Р·Р° РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?
 	if (other.guild == GIL_NONE)
 	|| (other.guild == GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Lothar_PERM_01_01"); //Да, сюда стали пускать оборванцев вроде тебя. Такого не случалось уже многие века.
+		AI_Output (self, other, "DIA_Lothar_PERM_01_01"); //Р”Р°, СЃСЋРґР° СЃС‚Р°Р»Рё РїСѓСЃРєР°С‚СЊ РѕР±РѕСЂРІР°РЅС†РµРІ РІСЂРѕРґРµ С‚РµР±СЏ. РўР°РєРѕРіРѕ РЅРµ СЃР»СѓС‡Р°Р»РѕСЃСЊ СѓР¶Рµ РјРЅРѕРіРёРµ РІРµРєР°.
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Lothar_PERM_01_02"); //Ты должен зарубить себе на носу. В качестве члена городской стражи в твои обязанности входит поддерживать в городе закон и порядок!
+		AI_Output (self, other, "DIA_Lothar_PERM_01_02"); //РўС‹ РґРѕР»Р¶РµРЅ Р·Р°СЂСѓР±РёС‚СЊ СЃРµР±Рµ РЅР° РЅРѕСЃСѓ. Р’ РєР°С‡РµСЃС‚РІРµ С‡Р»РµРЅР° РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё РІ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РІС…РѕРґРёС‚ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ РІ РіРѕСЂРѕРґРµ Р·Р°РєРѕРЅ Рё РїРѕСЂСЏРґРѕРє!
 	}
 	else //KdF oder NOV
 	{
-		AI_Output (self, other, "DIA_Lothar_PERM_01_03"); //Нет.
+		AI_Output (self, other, "DIA_Lothar_PERM_01_03"); //РќРµС‚.
 	};
 };
 

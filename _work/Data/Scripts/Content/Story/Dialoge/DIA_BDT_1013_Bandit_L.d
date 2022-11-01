@@ -20,7 +20,7 @@ FUNC VOID DIA_BDT_1013_BANDIT_FIRSTEXIT_Info()
 	&& (!Npc_IsDead (Ambusher_1014)) 
 	&& (!Npc_IsDead (Ambusher_1015))
 	{
-		AI_Output	(self, other, "DIA_BDT_1013_BANDIT_FIRSTEXIT_01_00"); //На твоем месте я бы не ходил в эту пещеру - мои приятели, что живут там, сдерут с тебя шкуру живьем.
+		AI_Output	(self, other, "DIA_BDT_1013_BANDIT_FIRSTEXIT_01_00"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹ РЅРµ С…РѕРґРёР» РІ СЌС‚Сѓ РїРµС‰РµСЂСѓ - РјРѕРё РїСЂРёСЏС‚РµР»Рё, С‡С‚Рѕ Р¶РёРІСѓС‚ С‚Р°Рј, СЃРґРµСЂСѓС‚ СЃ С‚РµР±СЏ С€РєСѓСЂСѓ Р¶РёРІСЊРµРј.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -68,33 +68,33 @@ func int DIA_BDT_1013_BANDIT_WHERE_Condition ()
 
 func void DIA_BDT_1013_BANDIT_WHERE_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1013_BANDIT_WHERE_01_00"); //Эй - откуда ты такой взялся, а?
+	AI_Output			(self, other, "DIA_BDT_1013_BANDIT_WHERE_01_00"); //Р­Р№ - РѕС‚РєСѓРґР° С‚С‹ С‚Р°РєРѕР№ РІР·СЏР»СЃСЏ, Р°?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
 	
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Я спустился с гор.",DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN);	
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Я пришел от Ксардаса...",DIA_BDT_1013_BANDIT_WHERE_XARDAS);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РЇ СЃРїСѓСЃС‚РёР»СЃСЏ СЃ РіРѕСЂ.",DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN);	
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РЇ РїСЂРёС€РµР» РѕС‚ РљСЃР°СЂРґР°СЃР°...",DIA_BDT_1013_BANDIT_WHERE_XARDAS);
 };
 //-------------------------------------------------------------------------------------------
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_15_00"); //Я спустился с гор.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_01"); //Точно. Ты спустился с гор. И это плохо для тебя.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_15_00"); //РЇ СЃРїСѓСЃС‚РёР»СЃСЏ СЃ РіРѕСЂ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_01"); //РўРѕС‡РЅРѕ. РўС‹ СЃРїСѓСЃС‚РёР»СЃСЏ СЃ РіРѕСЂ. Р СЌС‚Рѕ РїР»РѕС…Рѕ РґР»СЏ С‚РµР±СЏ.
 	B_UseFakeScroll();
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_02"); //Очень плохо.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_03"); //Тебя ищут - целая куча плохих парней.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_04"); //Есть человек, с которым тебе просто необходимо переговорить. Иди за мной!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_02"); //РћС‡РµРЅСЊ РїР»РѕС…Рѕ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_03"); //РўРµР±СЏ РёС‰СѓС‚ - С†РµР»Р°СЏ РєСѓС‡Р° РїР»РѕС…РёС… РїР°СЂРЅРµР№.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_04"); //Р•СЃС‚СЊ С‡РµР»РѕРІРµРє, СЃ РєРѕС‚РѕСЂС‹Рј С‚РµР±Рµ РїСЂРѕСЃС‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ РїРµСЂРµРіРѕРІРѕСЂРёС‚СЊ. РРґРё Р·Р° РјРЅРѕР№!
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Может быть, позже...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Кто ищет меня?",DIA_BDT_1013_BANDIT_WHERE_WHO);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Хорошо! Ты идешь первым!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РљС‚Рѕ РёС‰РµС‚ РјРµРЅСЏ?",DIA_BDT_1013_BANDIT_WHERE_WHO);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РҐРѕСЂРѕС€Рѕ! РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_XARDAS()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_15_00"); //Я пришел от Ксардаса...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01"); //Это тот старый маг? Он называет себя Ксардасом... Браго это будет интересно...
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_15_00"); //РЇ РїСЂРёС€РµР» РѕС‚ РљСЃР°СЂРґР°СЃР°...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01"); //Р­С‚Рѕ С‚РѕС‚ СЃС‚Р°СЂС‹Р№ РјР°Рі? РћРЅ РЅР°Р·С‹РІР°РµС‚ СЃРµР±СЏ РљСЃР°СЂРґР°СЃРѕРј... Р‘СЂР°РіРѕ СЌС‚Рѕ Р±СѓРґРµС‚ РёРЅС‚РµСЂРµСЃРЅРѕ...
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -102,8 +102,8 @@ FUNC VOID DIA_BDT_1013_BANDIT_WHERE_XARDAS()
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_YES()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_YES_15_00"); //Хорошо! Ты идешь первым!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_YES_01_01"); //Просто следуй за мной, пещера находится вон там.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_YES_15_00"); //РҐРѕСЂРѕС€Рѕ! РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_YES_01_01"); //РџСЂРѕСЃС‚Рѕ СЃР»РµРґСѓР№ Р·Р° РјРЅРѕР№, РїРµС‰РµСЂР° РЅР°С…РѕРґРёС‚СЃСЏ РІРѕРЅ С‚Р°Рј.
 	
 	Npc_ExchangeRoutine	(self,"AMBUSH"); 
 	
@@ -112,66 +112,66 @@ FUNC VOID DIA_BDT_1013_BANDIT_WHERE_YES()
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_WHO()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_WHO_15_00"); //Кто ищет меня?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_01"); //За тобой охотится половина Хориниса, а ты хочешь сказать мне, что ничего не знаешь об этом?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02"); //Ах! Понимаю! Ты не хочешь говорить мне об этом, хм? Хорошо - это твое дело.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_03"); //Так ты идешь или нет?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_WHO_15_00"); //РљС‚Рѕ РёС‰РµС‚ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_01"); //Р—Р° С‚РѕР±РѕР№ РѕС…РѕС‚РёС‚СЃСЏ РїРѕР»РѕРІРёРЅР° РҐРѕСЂРёРЅРёСЃР°, Р° С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02"); //РђС…! РџРѕРЅРёРјР°СЋ! РўС‹ РЅРµ С…РѕС‡РµС€СЊ РіРѕРІРѕСЂРёС‚СЊ РјРЅРµ РѕР± СЌС‚РѕРј, С…Рј? РҐРѕСЂРѕС€Рѕ - СЌС‚Рѕ С‚РІРѕРµ РґРµР»Рѕ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_03"); //РўР°Рє С‚С‹ РёРґРµС€СЊ РёР»Рё РЅРµС‚?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Может быть, позже...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"С кем я должен поговорить?",DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Хорошо! Ты идешь первым!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РЎ РєРµРј СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ?",DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РҐРѕСЂРѕС€Рѕ! РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_15_00"); //С кем я должен поговорить?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_01"); //С нашим главарем. Его зовут Браго. Он лучше все тебе объяснит, чем я.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_02"); //Ну что ты - мы идем?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_15_00"); //РЎ РєРµРј СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_01"); //РЎ РЅР°С€РёРј РіР»Р°РІР°СЂРµРј. Р•РіРѕ Р·РѕРІСѓС‚ Р‘СЂР°РіРѕ. РћРЅ Р»СѓС‡С€Рµ РІСЃРµ С‚РµР±Рµ РѕР±СЉСЏСЃРЅРёС‚, С‡РµРј СЏ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_02"); //РќСѓ С‡С‚Рѕ С‚С‹ - РјС‹ РёРґРµРј?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Может быть, позже...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Откуда мне знать, что это не ловушка?",DIA_BDT_1013_BANDIT_WHERE_NOTRAP);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Хорошо! Ты идешь первым!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ Р»РѕРІСѓС€РєР°?",DIA_BDT_1013_BANDIT_WHERE_NOTRAP);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РҐРѕСЂРѕС€Рѕ! РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 	
 func void DIA_BDT_1013_BANDIT_WHERE_NOTRAP()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_15_00"); //Откуда мне знать, что это не ловушка?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_01"); //Знаешь, я уже устал от тебя. Если тебе не нужна моя помощь, можешь просто идти в город, пусть там тебя посадят за решетку!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02"); //Либо ты сейчас идешь со мной, либо забудь о том, что я тебе говорил!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_15_00"); //РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ Р»РѕРІСѓС€РєР°?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_01"); //Р—РЅР°РµС€СЊ, СЏ СѓР¶Рµ СѓСЃС‚Р°Р» РѕС‚ С‚РµР±СЏ. Р•СЃР»Рё С‚РµР±Рµ РЅРµ РЅСѓР¶РЅР° РјРѕСЏ РїРѕРјРѕС‰СЊ, РјРѕР¶РµС€СЊ РїСЂРѕСЃС‚Рѕ РёРґС‚Рё РІ РіРѕСЂРѕРґ, РїСѓСЃС‚СЊ С‚Р°Рј С‚РµР±СЏ РїРѕСЃР°РґСЏС‚ Р·Р° СЂРµС€РµС‚РєСѓ!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02"); //Р›РёР±Рѕ С‚С‹ СЃРµР№С‡Р°СЃ РёРґРµС€СЊ СЃРѕ РјРЅРѕР№, Р»РёР±Рѕ Р·Р°Р±СѓРґСЊ Рѕ С‚РѕРј, С‡С‚Рѕ СЏ С‚РµР±Рµ РіРѕРІРѕСЂРёР»!
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Может быть, позже...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Кое-кто уже пытался провести меня ...",DIA_BDT_1013_BANDIT_WHERE_DAMALS);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Хорошо! Ты идешь первым!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РљРѕРµ-РєС‚Рѕ СѓР¶Рµ РїС‹С‚Р°Р»СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ ...",DIA_BDT_1013_BANDIT_WHERE_DAMALS);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РҐРѕСЂРѕС€Рѕ! РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_DAMALS()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00"); //Полегче, приятель! Кое-кто уже пытался провести меня...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_01"); //Ох?
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02"); //Этот парень предложил, чтобы мы вместе нашли амулет и поделили доход.
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03"); //А когда мы достигли нашей цели, он и со своими дружками напал на меня.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_04"); //Похоже, ты просто связался с плохими людьми - и где это было?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00"); //РџРѕР»РµРіС‡Рµ, РїСЂРёСЏС‚РµР»СЊ! РљРѕРµ-РєС‚Рѕ СѓР¶Рµ РїС‹С‚Р°Р»СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_01"); //РћС…?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02"); //Р­С‚РѕС‚ РїР°СЂРµРЅСЊ РїСЂРµРґР»РѕР¶РёР», С‡С‚РѕР±С‹ РјС‹ РІРјРµСЃС‚Рµ РЅР°С€Р»Рё Р°РјСѓР»РµС‚ Рё РїРѕРґРµР»РёР»Рё РґРѕС…РѕРґ.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03"); //Рђ РєРѕРіРґР° РјС‹ РґРѕСЃС‚РёРіР»Рё РЅР°С€РµР№ С†РµР»Рё, РѕРЅ Рё СЃРѕ СЃРІРѕРёРјРё РґСЂСѓР¶РєР°РјРё РЅР°РїР°Р» РЅР° РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_04"); //РџРѕС…РѕР¶Рµ, С‚С‹ РїСЂРѕСЃС‚Рѕ СЃРІСЏР·Р°Р»СЃСЏ СЃ РїР»РѕС…РёРјРё Р»СЋРґСЊРјРё - Рё РіРґРµ СЌС‚Рѕ Р±С‹Р»Рѕ?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Это не так уж важно.",DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Я был заключенным в горнодобывающей колонии.",DIA_BDT_1013_BANDIT_WHERE_PRISONER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Р­С‚Рѕ РЅРµ С‚Р°Рє СѓР¶ РІР°Р¶РЅРѕ.",DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РЇ Р±С‹Р» Р·Р°РєР»СЋС‡РµРЅРЅС‹Рј РІ РіРѕСЂРЅРѕРґРѕР±С‹РІР°СЋС‰РµР№ РєРѕР»РѕРЅРёРё.",DIA_BDT_1013_BANDIT_WHERE_PRISONER);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_PRISONER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_00"); //Я был заключенным в горнодобывающей колонии.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_01"); //(потрясенный) Ты пришел из-за Барьера? Парень, тогда мы были там вместе.
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_02"); //Я не знаю тебя...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_03"); //Я был шахтером в Старом Лагере. Я оттуда почти никогда не выходил.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_04"); //(заговорщицки) Но сейчас важнее то, что у тебя большие проблемы!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_05"); //Кто-то назначил кругленькую сумму за твою голову. И раздал несколько постеров с твоей физиономией!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_06"); //На твоем месте я был бы очень, очень осторожным. Среди нас есть люди, которые за деньги готовы убить свою собственную мать.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_07"); //Но я думаю, что мы, бывшие заключенные из колонии, должны держаться вместе!
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_08"); //Тогда я должен сказать тебе большое спасибо...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_09"); //Пустяки. Просто постарайся остаться в живых.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_00"); //РЇ Р±С‹Р» Р·Р°РєР»СЋС‡РµРЅРЅС‹Рј РІ РіРѕСЂРЅРѕРґРѕР±С‹РІР°СЋС‰РµР№ РєРѕР»РѕРЅРёРё.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_01"); //(РїРѕС‚СЂСЏСЃРµРЅРЅС‹Р№) РўС‹ РїСЂРёС€РµР» РёР·-Р·Р° Р‘Р°СЂСЊРµСЂР°? РџР°СЂРµРЅСЊ, С‚РѕРіРґР° РјС‹ Р±С‹Р»Рё С‚Р°Рј РІРјРµСЃС‚Рµ.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_02"); //РЇ РЅРµ Р·РЅР°СЋ С‚РµР±СЏ...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_03"); //РЇ Р±С‹Р» С€Р°С…С‚РµСЂРѕРј РІ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ. РЇ РѕС‚С‚СѓРґР° РїРѕС‡С‚Рё РЅРёРєРѕРіРґР° РЅРµ РІС‹С…РѕРґРёР».
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_04"); //(Р·Р°РіРѕРІРѕСЂС‰РёС†РєРё) РќРѕ СЃРµР№С‡Р°СЃ РІР°Р¶РЅРµРµ С‚Рѕ, С‡С‚Рѕ Сѓ С‚РµР±СЏ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_05"); //РљС‚Рѕ-С‚Рѕ РЅР°Р·РЅР°С‡РёР» РєСЂСѓРіР»РµРЅСЊРєСѓСЋ СЃСѓРјРјСѓ Р·Р° С‚РІРѕСЋ РіРѕР»РѕРІСѓ. Р СЂР°Р·РґР°Р» РЅРµСЃРєРѕР»СЊРєРѕ РїРѕСЃС‚РµСЂРѕРІ СЃ С‚РІРѕРµР№ С„РёР·РёРѕРЅРѕРјРёРµР№!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_06"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ СЏ Р±С‹Р» Р±С‹ РѕС‡РµРЅСЊ, РѕС‡РµРЅСЊ РѕСЃС‚РѕСЂРѕР¶РЅС‹Рј. РЎСЂРµРґРё РЅР°СЃ РµСЃС‚СЊ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ Р·Р° РґРµРЅСЊРіРё РіРѕС‚РѕРІС‹ СѓР±РёС‚СЊ СЃРІРѕСЋ СЃРѕР±СЃС‚РІРµРЅРЅСѓСЋ РјР°С‚СЊ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_07"); //РќРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РјС‹, Р±С‹РІС€РёРµ Р·Р°РєР»СЋС‡РµРЅРЅС‹Рµ РёР· РєРѕР»РѕРЅРёРё, РґРѕР»Р¶РЅС‹ РґРµСЂР¶Р°С‚СЊСЃСЏ РІРјРµСЃС‚Рµ!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_08"); //РўРѕРіРґР° СЏ РґРѕР»Р¶РµРЅ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Р±РѕР»СЊС€РѕРµ СЃРїР°СЃРёР±Рѕ...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_09"); //РџСѓСЃС‚СЏРєРё. РџСЂРѕСЃС‚Рѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ РѕСЃС‚Р°С‚СЊСЃСЏ РІ Р¶РёРІС‹С….
 	
 	Bdt13_Friend = TRUE;
 	B_SetAttitude (self, ATT_FRIENDLY);
@@ -183,18 +183,18 @@ func void DIA_BDT_1013_BANDIT_WHERE_PRISONER()
 
 func void DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_15_00"); //Это не так уж важно.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_01_01"); //Как знаешь. Так как, ты идешь или нет?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_15_00"); //Р­С‚Рѕ РЅРµ С‚Р°Рє СѓР¶ РІР°Р¶РЅРѕ.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_01_01"); //РљР°Рє Р·РЅР°РµС€СЊ. РўР°Рє РєР°Рє, С‚С‹ РёРґРµС€СЊ РёР»Рё РЅРµС‚?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Может быть, позже...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Хорошо! Ты идешь первым!",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"РҐРѕСЂРѕС€Рѕ! РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј!",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func VOID DIA_BDT_1013_BANDIT_WHERE_LATER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00"); //Может быть, позже...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01"); //Позже не будет, приятель!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01"); //РџРѕР·Р¶Рµ РЅРµ Р±СѓРґРµС‚, РїСЂРёСЏС‚РµР»СЊ!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -226,13 +226,13 @@ func void DIA_1013_BANDIT_AMBUSH_Info ()
 	if (Npc_IsDead(Ambusher_1014))
 	&& (Npc_IsDead(Ambusher_1015))
 	{
-		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_00"); //Тебе не стоило идти за мной...
+		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_00"); //РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ РёРґС‚Рё Р·Р° РјРЅРѕР№...
 		B_Attack 			(self, other, AR_SuddenEnemyInferno, 1);
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_01"); //Эй, парни, посмотрите, кто у нас здесь...
+		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_01"); //Р­Р№, РїР°СЂРЅРё, РїРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ...
 		AI_StopProcessInfos (self);
 	};
 };
@@ -247,7 +247,7 @@ instance DIA_1013_BANDIT_NAME (C_INFO)
 	condition	 = 	DIA_1013_BANDIT_NAME_Condition;
 	information	 = 	DIA_1013_BANDIT_NAME_Info;
 	PERMANENT	 =  FALSE;	
-	description	 = 	"Кто назначил цену за мою голову?";
+	description	 = 	"РљС‚Рѕ РЅР°Р·РЅР°С‡РёР» С†РµРЅСѓ Р·Р° РјРѕСЋ РіРѕР»РѕРІСѓ?";
 };
 func int DIA_1013_BANDIT_NAME_Condition ()
 {	
@@ -258,14 +258,14 @@ func int DIA_1013_BANDIT_NAME_Condition ()
 };
 func void DIA_1013_BANDIT_NAME_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_00"); //Кто назначил цену за мою голову?
-	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_01"); //Я этого не знаю, только один из нас видел его.
-	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_02"); //И кто это?
-	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_03"); //Эй, послушай - я действительно не могу сказать тебе это. Кто знает, как все выйдет...
+	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_00"); //РљС‚Рѕ РЅР°Р·РЅР°С‡РёР» С†РµРЅСѓ Р·Р° РјРѕСЋ РіРѕР»РѕРІСѓ?
+	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_01"); //РЇ СЌС‚РѕРіРѕ РЅРµ Р·РЅР°СЋ, С‚РѕР»СЊРєРѕ РѕРґРёРЅ РёР· РЅР°СЃ РІРёРґРµР» РµРіРѕ.
+	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_02"); //Р РєС‚Рѕ СЌС‚Рѕ?
+	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_03"); //Р­Р№, РїРѕСЃР»СѓС€Р°Р№ - СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ СЌС‚Рѕ. РљС‚Рѕ Р·РЅР°РµС‚, РєР°Рє РІСЃРµ РІС‹Р№РґРµС‚...
 	
 	Log_CreateTopic (Topic_Bandits,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Bandits,LOG_RUNNING);
-	B_LogEntry (Topic_Bandits,"За мной охотятся бандиты. У них есть листок с моим изображением. Интересно, что все это значит.");
+	B_LogEntry (Topic_Bandits,"Р—Р° РјРЅРѕР№ РѕС…РѕС‚СЏС‚СЃСЏ Р±Р°РЅРґРёС‚С‹. РЈ РЅРёС… РµСЃС‚СЊ Р»РёСЃС‚РѕРє СЃ РјРѕРёРј РёР·РѕР±СЂР°Р¶РµРЅРёРµРј. РРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ РІСЃРµ СЌС‚Рѕ Р·РЅР°С‡РёС‚.");
 	MIS_Steckbriefe = LOG_RUNNING;
 };
 
@@ -279,7 +279,7 @@ instance DIA_1013_BANDIT_DEXTER		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_DEXTER_Condition;
 	information	 = 	DIA_1013_BANDIT_DEXTER_Info;
 	PERMANENT	 =  TRUE;	
-	description	 = 	"10 золотых монет за имя того, кто назначил цену за мою голову.";
+	description	 = 	"10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° РёРјСЏ С‚РѕРіРѕ, РєС‚Рѕ РЅР°Р·РЅР°С‡РёР» С†РµРЅСѓ Р·Р° РјРѕСЋ РіРѕР»РѕРІСѓ.";
 };
 func int DIA_1013_BANDIT_DEXTER_Condition ()
 {	
@@ -292,25 +292,25 @@ func int DIA_1013_BANDIT_DEXTER_Condition ()
 };
 func void DIA_1013_BANDIT_DEXTER_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_00"); //10 золотых монет за имя того, кто назначил цену за мою голову.
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_01"); //Ох, я действительно не могу сказать...
-	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_02"); //Выкладывай, живее!
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_03"); //(делает глубокий вдох) Ох, парень! Хорошо. Его зовут Декстер. Около большой фермы есть крутая скала.
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_04"); //На ней сторожевая башня и несколько шахт. Он устроил свое логово где-то там.
+	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_00"); //10 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° РёРјСЏ С‚РѕРіРѕ, РєС‚Рѕ РЅР°Р·РЅР°С‡РёР» С†РµРЅСѓ Р·Р° РјРѕСЋ РіРѕР»РѕРІСѓ.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_01"); //РћС…, СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ...
+	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_02"); //Р’С‹РєР»Р°РґС‹РІР°Р№, Р¶РёРІРµРµ!
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_03"); //(РґРµР»Р°РµС‚ РіР»СѓР±РѕРєРёР№ РІРґРѕС…) РћС…, РїР°СЂРµРЅСЊ! РҐРѕСЂРѕС€Рѕ. Р•РіРѕ Р·РѕРІСѓС‚ Р”РµРєСЃС‚РµСЂ. РћРєРѕР»Рѕ Р±РѕР»СЊС€РѕР№ С„РµСЂРјС‹ РµСЃС‚СЊ РєСЂСѓС‚Р°СЏ СЃРєР°Р»Р°.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_04"); //РќР° РЅРµР№ СЃС‚РѕСЂРѕР¶РµРІР°СЏ Р±Р°С€РЅСЏ Рё РЅРµСЃРєРѕР»СЊРєРѕ С€Р°С…С‚. РћРЅ СѓСЃС‚СЂРѕРёР» СЃРІРѕРµ Р»РѕРіРѕРІРѕ РіРґРµ-С‚Рѕ С‚Р°Рј.
 	
-	B_LogEntry (Topic_Bandits,"Главаря бандитов зовут Декстер. Он скрывается в шахте около поместья лендлорда.");
+	B_LogEntry (Topic_Bandits,"Р“Р»Р°РІР°СЂСЏ Р±Р°РЅРґРёС‚РѕРІ Р·РѕРІСѓС‚ Р”РµРєСЃС‚РµСЂ. РћРЅ СЃРєСЂС‹РІР°РµС‚СЃСЏ РІ С€Р°С…С‚Рµ РѕРєРѕР»Рѕ РїРѕРјРµСЃС‚СЊСЏ Р»РµРЅРґР»РѕСЂРґР°.");
 	
 	if (B_GiveInvItems(other, self, itmi_gold, 10))
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_05"); //Видишь, это было не так уж и сложно. Вот твое золото.
+		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_05"); //Р’РёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ Рё СЃР»РѕР¶РЅРѕ. Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_06"); //Эээ - я только что понял, что у меня не осталось даже десяти монет.
-		AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_07"); //Что?! Я... Ох - забудь об этом - я сам виноват. Не нужно было называть тебе имя, пока я не увидел золота...
+		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_06"); //Р­СЌСЌ - СЏ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїРѕРЅСЏР», С‡С‚Рѕ Сѓ РјРµРЅСЏ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ РґР°Р¶Рµ РґРµСЃСЏС‚Рё РјРѕРЅРµС‚.
+		AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_07"); //Р§С‚Рѕ?! РЇ... РћС… - Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј - СЏ СЃР°Рј РІРёРЅРѕРІР°С‚. РќРµ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РЅР°Р·С‹РІР°С‚СЊ С‚РµР±Рµ РёРјСЏ, РїРѕРєР° СЏ РЅРµ СѓРІРёРґРµР» Р·РѕР»РѕС‚Р°...
 	};
 	
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_08"); //Только никому не говори, что это я назвал тебе его.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_08"); //РўРѕР»СЊРєРѕ РЅРёРєРѕРјСѓ РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ СЌС‚Рѕ СЏ РЅР°Р·РІР°Р» С‚РµР±Рµ РµРіРѕ.
 			
 	Bdt13_Dexter_verraten = TRUE;
 };
@@ -325,7 +325,7 @@ instance DIA_1013_BANDIT_PIC		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_PIC_Condition;
 	information	 = 	DIA_1013_BANDIT_PIC_Info;
 	PERMANENT	 =  FALSE;	
-	description	 = 	"Могу я взять эту картинку?";
+	description	 = 	"РњРѕРіСѓ СЏ РІР·СЏС‚СЊ СЌС‚Сѓ РєР°СЂС‚РёРЅРєСѓ?";
 };
 func int DIA_1013_BANDIT_PIC_Condition ()
 {	
@@ -336,8 +336,8 @@ func int DIA_1013_BANDIT_PIC_Condition ()
 };
 func void DIA_1013_BANDIT_PIC_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_PIC_15_00"); //Могу я взять эту картинку?
-	AI_Output (self, other, "DIA_1013_BANDIT_PIC_01_01"); //Конечно (ухмыляется) - ведь на ней ТВОЯ рожа.
+	AI_Output (other, self, "DIA_1013_BANDIT_PIC_15_00"); //РњРѕРіСѓ СЏ РІР·СЏС‚СЊ СЌС‚Сѓ РєР°СЂС‚РёРЅРєСѓ?
+	AI_Output (self, other, "DIA_1013_BANDIT_PIC_01_01"); //РљРѕРЅРµС‡РЅРѕ (СѓС…РјС‹Р»СЏРµС‚СЃСЏ) - РІРµРґСЊ РЅР° РЅРµР№ РўР’РћРЇ СЂРѕР¶Р°.
 	B_GiveInvItems (self, other, ItWr_Poster_MIS,1);
 };
 
@@ -351,7 +351,7 @@ instance DIA_1013_BANDIT_FromMaleth		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_FromMaleth_Condition;
 	information	 = 	DIA_1013_BANDIT_FromMaleth_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Меня послал один из фермеров у города...";
+	description	 = 	"РњРµРЅСЏ РїРѕСЃР»Р°Р» РѕРґРёРЅ РёР· С„РµСЂРјРµСЂРѕРІ Сѓ РіРѕСЂРѕРґР°...";
 };
 func int DIA_1013_BANDIT_FromMaleth_Condition ()
 {	
@@ -363,9 +363,9 @@ func int DIA_1013_BANDIT_FromMaleth_Condition ()
 };
 func void DIA_1013_BANDIT_FromMaleth_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_00"); //Меня послал один из фермеров у города...
-	AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_01"); //Что? Фермеры знают об этом укрытии?
-	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_02"); //Они заметили пропажу овцы.
+	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» РѕРґРёРЅ РёР· С„РµСЂРјРµСЂРѕРІ Сѓ РіРѕСЂРѕРґР°...
+	AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_01"); //Р§С‚Рѕ? Р¤РµСЂРјРµСЂС‹ Р·РЅР°СЋС‚ РѕР± СЌС‚РѕРј СѓРєСЂС‹С‚РёРё?
+	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_02"); //РћРЅРё Р·Р°РјРµС‚РёР»Рё РїСЂРѕРїР°Р¶Сѓ РѕРІС†С‹.
 	
 	var C_NPC b14; b14 = Hlp_GetNpc(Bdt_1014_Bandit_L);
 	var C_NPC b15; b15 = Hlp_GetNpc(Bdt_1015_Bandit_L);
@@ -373,13 +373,13 @@ func void DIA_1013_BANDIT_FromMaleth_Info ()
 	if (Npc_IsDead (b14))
 	&& (Npc_IsDead (b15))
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_03"); //Черт! Ну, тогда мне стоит поискать другое место. Если они найдут это логово пустым, может быть, они прекратят искать меня.
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_03"); //Р§РµСЂС‚! РќСѓ, С‚РѕРіРґР° РјРЅРµ СЃС‚РѕРёС‚ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕРµ РјРµСЃС‚Рѕ. Р•СЃР»Рё РѕРЅРё РЅР°Р№РґСѓС‚ СЌС‚Рѕ Р»РѕРіРѕРІРѕ РїСѓСЃС‚С‹Рј, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅРё РїСЂРµРєСЂР°С‚СЏС‚ РёСЃРєР°С‚СЊ РјРµРЅСЏ.
 	}
 	else //mindestens einer lebt noch
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_04"); //Он хочет, чтобы вы все были мертвы...
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_05"); //Подожди - ты ведь не сделаешь этого со мной, правда, ведь я помог тебе?
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_06"); //Иди туда и расправься с другими, если ты так жаждешь крови - а я сваливаю отсюда!
+		AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_04"); //РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РІС‹ РІСЃРµ Р±С‹Р»Рё РјРµСЂС‚РІС‹...
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_05"); //РџРѕРґРѕР¶РґРё - С‚С‹ РІРµРґСЊ РЅРµ СЃРґРµР»Р°РµС€СЊ СЌС‚РѕРіРѕ СЃРѕ РјРЅРѕР№, РїСЂР°РІРґР°, РІРµРґСЊ СЏ РїРѕРјРѕРі С‚РµР±Рµ?
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_06"); //РРґРё С‚СѓРґР° Рё СЂР°СЃРїСЂР°РІСЊСЃСЏ СЃ РґСЂСѓРіРёРјРё, РµСЃР»Рё С‚С‹ С‚Р°Рє Р¶Р°Р¶РґРµС€СЊ РєСЂРѕРІРё - Р° СЏ СЃРІР°Р»РёРІР°СЋ РѕС‚СЃСЋРґР°!
 	};
 	
 	Bdt_1013_Away = TRUE;
@@ -400,7 +400,7 @@ instance DIA_1013_BANDIT_FromCavalorn (C_INFO)
 	condition	 = 	DIA_1013_BANDIT_FromCavalorn_Condition;
 	information	 = 	DIA_1013_BANDIT_FromCavalorn_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Похоже, у тебя скоро будут проблемы!";
+	description	 = 	"РџРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ СЃРєРѕСЂРѕ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹!";
 };
 func int DIA_1013_BANDIT_FromCavalorn_Condition ()
 {	
@@ -412,10 +412,10 @@ func int DIA_1013_BANDIT_FromCavalorn_Condition ()
 };
 func void DIA_1013_BANDIT_FromCavalorn_Info ()
 {
-	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_00"); //Похоже, у тебя скоро будут проблемы!
-	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_01"); //Что такое?
-	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_02"); //Сюда направляется парень по имени Кавалорн.
-	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_03"); //Проклятье! Он все еще жив? Я сматываюсь отсюда...
+	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_00"); //РџРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ СЃРєРѕСЂРѕ Р±СѓРґСѓС‚ РїСЂРѕР±Р»РµРјС‹!
+	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_01"); //Р§С‚Рѕ С‚Р°РєРѕРµ?
+	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_02"); //РЎСЋРґР° РЅР°РїСЂР°РІР»СЏРµС‚СЃСЏ РїР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё РљР°РІР°Р»РѕСЂРЅ.
+	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_03"); //РџСЂРѕРєР»СЏС‚СЊРµ! РћРЅ РІСЃРµ РµС‰Рµ Р¶РёРІ? РЇ СЃРјР°С‚С‹РІР°СЋСЃСЊ РѕС‚СЃСЋРґР°...
 
 	Bdt_1013_Away = TRUE;
 	B_GivePlayerXP (XP_BanditWeg);
@@ -441,7 +441,7 @@ instance DIA_1013_BANDIT_PERM		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_PERM_Condition;
 	information	 = 	DIA_1013_BANDIT_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Есть что-нибудь еще, что может заинтересовать меня?";
+	description	 = 	"Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ, С‡С‚Рѕ РјРѕР¶РµС‚ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ РјРµРЅСЏ?";
 };
 func int DIA_1013_BANDIT_PERM_Condition ()
 {	
@@ -453,17 +453,17 @@ func int DIA_1013_BANDIT_PERM_Condition ()
 };
 func void DIA_1013_BANDIT_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_PERM_15_00"); //Есть что-нибудь еще, что может заинтересовать меня?
+	AI_Output (other, self, "DIA_1013_BANDIT_PERM_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ, С‡С‚Рѕ РјРѕР¶РµС‚ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ РјРµРЅСЏ?
 
 	if (bdt13_Gossip_Wildnis == FALSE)
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_01"); //Ты имеешь в виду эту местность? Если хочешь остаться в живых, тебе лучше держаться дороги.
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_02"); //Чем дальше ты заходишь в глушь, тем опаснее там находиться.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_01"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ СЌС‚Сѓ РјРµСЃС‚РЅРѕСЃС‚СЊ? Р•СЃР»Рё С…РѕС‡РµС€СЊ РѕСЃС‚Р°С‚СЊСЃСЏ РІ Р¶РёРІС‹С…, С‚РµР±Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РґРѕСЂРѕРіРё.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_02"); //Р§РµРј РґР°Р»СЊС€Рµ С‚С‹ Р·Р°С…РѕРґРёС€СЊ РІ РіР»СѓС€СЊ, С‚РµРј РѕРїР°СЃРЅРµРµ С‚Р°Рј РЅР°С…РѕРґРёС‚СЊСЃСЏ.
 		bdt13_Gossip_Wildnis = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_03"); //Я сказал тебе все, что мог.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_03"); //РЇ СЃРєР°Р·Р°Р» С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ РјРѕРі.
 	};
 };
 

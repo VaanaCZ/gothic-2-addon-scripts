@@ -97,7 +97,7 @@ func void ZS_RansackBody_End ()
 
 
 // **************************************	
-// ------ Allijack plündert Ratten ------
+// ------ Allijack plÑŒndert Ratten ------
 // **************************************
 
 func void ZS_GetMeat ()

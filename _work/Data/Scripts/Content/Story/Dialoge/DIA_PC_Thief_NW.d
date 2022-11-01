@@ -32,7 +32,7 @@ FUNC VOID DIA_DiegoNW_EXIT_Info()
 
 
 // ************************************************************
-// 	  	  Wie laufen die Geschдfte? (perm)
+// 	  	  Wie laufen die GeschРґfte? (perm)
 // ************************************************************
 
 INSTANCE DIA_DiegoNW_Perm(C_INFO)
@@ -43,7 +43,7 @@ INSTANCE DIA_DiegoNW_Perm(C_INFO)
 	information	= DIA_DiegoNW_Perm_Info;
 	permanent	= TRUE;
 
-	description = "Как торговля?";
+	description = "РљР°Рє С‚РѕСЂРіРѕРІР»СЏ?";
 };                       
 FUNC INT DIA_DiegoNW_Perm_Condition()
 {
@@ -54,10 +54,10 @@ FUNC INT DIA_DiegoNW_Perm_Condition()
 };
 FUNC VOID DIA_DiegoNW_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_01"); //Паршиво. Почему никто не сказал мне, что Хоринис за это время полностью разорился?
-	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_02"); //Понятия не имею. Я знаю этот город только таким.
-	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_03"); //Ты бы видел его несколько лет назад. Он бы тебе совсем не понравился в нынешнем состоянии.
+	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_01"); //РџР°СЂС€РёРІРѕ. РџРѕС‡РµРјСѓ РЅРёРєС‚Рѕ РЅРµ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РҐРѕСЂРёРЅРёСЃ Р·Р° СЌС‚Рѕ РІСЂРµРјСЏ РїРѕР»РЅРѕСЃС‚СЊСЋ СЂР°Р·РѕСЂРёР»СЃСЏ?
+	AI_Output (other,self ,"DIA_DiegoNW_Perm_15_02"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РЇ Р·РЅР°СЋ СЌС‚РѕС‚ РіРѕСЂРѕРґ С‚РѕР»СЊРєРѕ С‚Р°РєРёРј.
+	AI_Output (self ,other,"DIA_DiegoNW_Perm_11_03"); //РўС‹ Р±С‹ РІРёРґРµР» РµРіРѕ РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ РЅР°Р·Р°Рґ. РћРЅ Р±С‹ С‚РµР±Рµ СЃРѕРІСЃРµРј РЅРµ РїРѕРЅСЂР°РІРёР»СЃСЏ РІ РЅС‹РЅРµС€РЅРµРј СЃРѕСЃС‚РѕСЏРЅРёРё.
 };
 
 
@@ -91,15 +91,15 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Info()
 {	
 	if (Diego_IsDead == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_01"); //Эй! Ты выглядишь так, будто увидел призрака!
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_02"); //(смеется) А ты думал, что мне пришел конец, верно?
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_03"); //Я тогда довольно долго провалялся без сознания. Но как видишь, я все еще жив.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_04"); //Ладно, самое важное - это то, что сейчас мы оба здесь.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_05"); //Ты должен мне помочь.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_01"); //Р­Р№! РўС‹ РІС‹РіР»СЏРґРёС€СЊ С‚Р°Рє, Р±СѓРґС‚Рѕ СѓРІРёРґРµР» РїСЂРёР·СЂР°РєР°!
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_02"); //(СЃРјРµРµС‚СЃСЏ) Рђ С‚С‹ РґСѓРјР°Р», С‡С‚Рѕ РјРЅРµ РїСЂРёС€РµР» РєРѕРЅРµС†, РІРµСЂРЅРѕ?
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_03"); //РЇ С‚РѕРіРґР° РґРѕРІРѕР»СЊРЅРѕ РґРѕР»РіРѕ РїСЂРѕРІР°Р»СЏР»СЃСЏ Р±РµР· СЃРѕР·РЅР°РЅРёСЏ. РќРѕ РєР°Рє РІРёРґРёС€СЊ, СЏ РІСЃРµ РµС‰Рµ Р¶РёРІ.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_04"); //Р›Р°РґРЅРѕ, СЃР°РјРѕРµ РІР°Р¶РЅРѕРµ - СЌС‚Рѕ С‚Рѕ, С‡С‚Рѕ СЃРµР№С‡Р°СЃ РјС‹ РѕР±Р° Р·РґРµСЃСЊ.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_NeedHelp_11_05"); //РўС‹ РґРѕР»Р¶РµРЅ РјРЅРµ РїРѕРјРѕС‡СЊ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_11_00"); //Хорошо, что ты здесь. Ты должен помочь мне.
+		AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_11_00"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРјРѕС‡СЊ РјРЅРµ.
 	};
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 	
@@ -108,65 +108,65 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Info()
 	//	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Wer bist du?",DIA_DiegoNW_NeedHelp_WhoAreYou);//Joly:macht keinen Sinn. Ohne mit Diego gesprochen zu haben -> Kein DiegoNW !! Hauptstory Kapitel 2 OW!!!!
 	};
 	
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Что это на тебе за одежда?",DIA_DiegoNW_NeedHelp_Clothes);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Что ты делаешь здесь?",DIA_DiegoNW_NeedHelp_Plan);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Какие планы?",DIA_DiegoNW_NeedHelp_Problem);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Р§С‚Рѕ СЌС‚Рѕ РЅР° С‚РµР±Рµ Р·Р° РѕРґРµР¶РґР°?",DIA_DiegoNW_NeedHelp_Clothes);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?",DIA_DiegoNW_NeedHelp_Plan);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"РљР°РєРёРµ РїР»Р°РЅС‹?",DIA_DiegoNW_NeedHelp_Problem);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Plan()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Plan_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_01"); //За мной следит стража. Они всегда начеку.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_02"); //Не думаю, что мне будет легко устроиться здесь.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Plan_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_01"); //Р—Р° РјРЅРѕР№ СЃР»РµРґРёС‚ СЃС‚СЂР°Р¶Р°. РћРЅРё РІСЃРµРіРґР° РЅР°С‡РµРєСѓ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Plan_11_02"); //РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ РјРЅРµ Р±СѓРґРµС‚ Р»РµРіРєРѕ СѓСЃС‚СЂРѕРёС‚СЊСЃСЏ Р·РґРµСЃСЊ.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_WhoAreYou()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_00"); //Кто ты?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_01"); //Черт, это все, наверное, из-за одежды. В старой одежде, стражники не пустили бы меня в город.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_02"); //Вот почему я купил это одеяние у торговца за городом. Теперь-то, надеюсь, ты вспомнил меня? Я Диего.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_03"); //В старой колонии я учил тебя всему, что необходимо для выживания.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_04"); //Ты же не мог вот так просто все забыть.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_05"); //Ээ... а что именно произошло там?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_06"); //Черт побери! Ты действительно ничего не помнишь.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_07"); //Послушай, у меня действительно нет времени объяснять все тебе теперь. Послушай только одно: мы были чертовски хорошими друзьями, и я не раз спасал твою жизнь.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_08"); //А теперь мне нужна твоя помощь.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_01"); //Р§РµСЂС‚, СЌС‚Рѕ РІСЃРµ, РЅР°РІРµСЂРЅРѕРµ, РёР·-Р·Р° РѕРґРµР¶РґС‹. Р’ СЃС‚Р°СЂРѕР№ РѕРґРµР¶РґРµ, СЃС‚СЂР°Р¶РЅРёРєРё РЅРµ РїСѓСЃС‚РёР»Рё Р±С‹ РјРµРЅСЏ РІ РіРѕСЂРѕРґ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_02"); //Р’РѕС‚ РїРѕС‡РµРјСѓ СЏ РєСѓРїРёР» СЌС‚Рѕ РѕРґРµСЏРЅРёРµ Сѓ С‚РѕСЂРіРѕРІС†Р° Р·Р° РіРѕСЂРѕРґРѕРј. РўРµРїРµСЂСЊ-С‚Рѕ, РЅР°РґРµСЋСЃСЊ, С‚С‹ РІСЃРїРѕРјРЅРёР» РјРµРЅСЏ? РЇ Р”РёРµРіРѕ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_03"); //Р’ СЃС‚Р°СЂРѕР№ РєРѕР»РѕРЅРёРё СЏ СѓС‡РёР» С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ РґР»СЏ РІС‹Р¶РёРІР°РЅРёСЏ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_04"); //РўС‹ Р¶Рµ РЅРµ РјРѕРі РІРѕС‚ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РІСЃРµ Р·Р°Р±С‹С‚СЊ.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_WhoAreYou_15_05"); //Р­СЌ... Р° С‡С‚Рѕ РёРјРµРЅРЅРѕ РїСЂРѕРёР·РѕС€Р»Рѕ С‚Р°Рј?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_06"); //Р§РµСЂС‚ РїРѕР±РµСЂРё! РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРЅРёС€СЊ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_07"); //РџРѕСЃР»СѓС€Р°Р№, Сѓ РјРµРЅСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµС‚ РІСЂРµРјРµРЅРё РѕР±СЉСЏСЃРЅСЏС‚СЊ РІСЃРµ С‚РµР±Рµ С‚РµРїРµСЂСЊ. РџРѕСЃР»СѓС€Р°Р№ С‚РѕР»СЊРєРѕ РѕРґРЅРѕ: РјС‹ Р±С‹Р»Рё С‡РµСЂС‚РѕРІСЃРєРё С…РѕСЂРѕС€РёРјРё РґСЂСѓР·СЊСЏРјРё, Рё СЏ РЅРµ СЂР°Р· СЃРїР°СЃР°Р» С‚РІРѕСЋ Р¶РёР·РЅСЊ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_WhoAreYou_11_08"); //Рђ С‚РµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Clothes()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_00"); //Что это на тебе за одежда?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_01"); //Я купил ее у торговца за городом. Стража не хотела пропускать меня в город.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_02"); //Также не стоит никому говорить, откуда я пришел.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_03"); //Это имеет смысл.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_04"); //Я тоже так думаю. Но даже хотя я снял свой старый наряд, я все равно остался прежним.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_05"); //И у меня большие планы касательно этого города.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_00"); //Р§С‚Рѕ СЌС‚Рѕ РЅР° С‚РµР±Рµ Р·Р° РѕРґРµР¶РґР°?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_01"); //РЇ РєСѓРїРёР» РµРµ Сѓ С‚РѕСЂРіРѕРІС†Р° Р·Р° РіРѕСЂРѕРґРѕРј. РЎС‚СЂР°Р¶Р° РЅРµ С…РѕС‚РµР»Р° РїСЂРѕРїСѓСЃРєР°С‚СЊ РјРµРЅСЏ РІ РіРѕСЂРѕРґ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_02"); //РўР°РєР¶Рµ РЅРµ СЃС‚РѕРёС‚ РЅРёРєРѕРјСѓ РіРѕРІРѕСЂРёС‚СЊ, РѕС‚РєСѓРґР° СЏ РїСЂРёС€РµР».
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Clothes_15_03"); //Р­С‚Рѕ РёРјРµРµС‚ СЃРјС‹СЃР».
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_04"); //РЇ С‚РѕР¶Рµ С‚Р°Рє РґСѓРјР°СЋ. РќРѕ РґР°Р¶Рµ С…РѕС‚СЏ СЏ СЃРЅСЏР» СЃРІРѕР№ СЃС‚Р°СЂС‹Р№ РЅР°СЂСЏРґ, СЏ РІСЃРµ СЂР°РІРЅРѕ РѕСЃС‚Р°Р»СЃСЏ РїСЂРµР¶РЅРёРј.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Clothes_11_05"); //Р Сѓ РјРµРЅСЏ Р±РѕР»СЊС€РёРµ РїР»Р°РЅС‹ РєР°СЃР°С‚РµР»СЊРЅРѕ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°.
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_00"); //Какие планы?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_01"); //Здесь многое переменилось с тех пор, как я покинул его. Мне как-то нужно опять встать на ноги.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_02"); //В чем проблема?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_03"); //Я должен попасть в верхний квартал.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_04"); //Но я не гражданин этого города, и у меня нет денег, чтобы подкупить стражу. Вот зачем нужен ты!
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_05"); //То есть, ты хочешь, чтобы я одолжил тебе золота?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_06"); //Чушь. У меня есть золото. Я бы сказал даже целая куча золота! Но, к сожалению, оно не при мне.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_07"); //Ты должен забрать мое золото там, где оно находится.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_00"); //РљР°РєРёРµ РїР»Р°РЅС‹?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_01"); //Р—РґРµСЃСЊ РјРЅРѕРіРѕРµ РїРµСЂРµРјРµРЅРёР»РѕСЃСЊ СЃ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РїРѕРєРёРЅСѓР» РµРіРѕ. РњРЅРµ РєР°Рє-С‚Рѕ РЅСѓР¶РЅРѕ РѕРїСЏС‚СЊ РІСЃС‚Р°С‚СЊ РЅР° РЅРѕРіРё.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_02"); //Р’ С‡РµРј РїСЂРѕР±Р»РµРјР°?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_03"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_04"); //РќРѕ СЏ РЅРµ РіСЂР°Р¶РґР°РЅРёРЅ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°, Рё Сѓ РјРµРЅСЏ РЅРµС‚ РґРµРЅРµРі, С‡С‚РѕР±С‹ РїРѕРґРєСѓРїРёС‚СЊ СЃС‚СЂР°Р¶Сѓ. Р’РѕС‚ Р·Р°С‡РµРј РЅСѓР¶РµРЅ С‚С‹!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_15_05"); //РўРѕ РµСЃС‚СЊ, С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РѕРґРѕР»Р¶РёР» С‚РµР±Рµ Р·РѕР»РѕС‚Р°?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_06"); //Р§СѓС€СЊ. РЈ РјРµРЅСЏ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ. РЇ Р±С‹ СЃРєР°Р·Р°Р» РґР°Р¶Рµ С†РµР»Р°СЏ РєСѓС‡Р° Р·РѕР»РѕС‚Р°! РќРѕ, Рє СЃРѕР¶Р°Р»РµРЅРёСЋ, РѕРЅРѕ РЅРµ РїСЂРё РјРЅРµ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_11_07"); //РўС‹ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РјРѕРµ Р·РѕР»РѕС‚Рѕ С‚Р°Рј, РіРґРµ РѕРЅРѕ РЅР°С…РѕРґРёС‚СЃСЏ.
 	
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"У меня нет времени на это.",DIA_DiegoNW_NeedHelp_Problem_NoTime);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"А что мне с этого будет?",DIA_DiegoNW_NeedHelp_Problem_Reward);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Ладно, я помогу тебе.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.",DIA_DiegoNW_NeedHelp_Problem_NoTime);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Рђ С‡С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?",DIA_DiegoNW_NeedHelp_Problem_Reward);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Р›Р°РґРЅРѕ, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_NoTime()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_00"); //У меня нет времени на это.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_01"); //Эй, я думал мы друзья! Это ведь я, не забывай, спасал твою задницу, когда тебя бросили в колонию.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_02"); //Ты преувеличиваешь.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_03"); //Да?! А ты задумайся на минутку, что могло бы быть, если бы я не объяснил тебе тогда, как нужно вести себя в колонии.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_04"); //Рудные бароны сожрали бы тебя на завтрак, и ты бы подох жалкой смертью где-нибудь в шахте.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_01"); //Р­Р№, СЏ РґСѓРјР°Р» РјС‹ РґСЂСѓР·СЊСЏ! Р­С‚Рѕ РІРµРґСЊ СЏ, РЅРµ Р·Р°Р±С‹РІР°Р№, СЃРїР°СЃР°Р» С‚РІРѕСЋ Р·Р°РґРЅРёС†Сѓ, РєРѕРіРґР° С‚РµР±СЏ Р±СЂРѕСЃРёР»Рё РІ РєРѕР»РѕРЅРёСЋ.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_NoTime_15_02"); //РўС‹ РїСЂРµСѓРІРµР»РёС‡РёРІР°РµС€СЊ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_03"); //Р”Р°?! Рђ С‚С‹ Р·Р°РґСѓРјР°Р№СЃСЏ РЅР° РјРёРЅСѓС‚РєСѓ, С‡С‚Рѕ РјРѕРіР»Рѕ Р±С‹ Р±С‹С‚СЊ, РµСЃР»Рё Р±С‹ СЏ РЅРµ РѕР±СЉСЏСЃРЅРёР» С‚РµР±Рµ С‚РѕРіРґР°, РєР°Рє РЅСѓР¶РЅРѕ РІРµСЃС‚Рё СЃРµР±СЏ РІ РєРѕР»РѕРЅРёРё.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_NoTime_11_04"); //Р СѓРґРЅС‹Рµ Р±Р°СЂРѕРЅС‹ СЃРѕР¶СЂР°Р»Рё Р±С‹ С‚РµР±СЏ РЅР° Р·Р°РІС‚СЂР°Рє, Рё С‚С‹ Р±С‹ РїРѕРґРѕС… Р¶Р°Р»РєРѕР№ СЃРјРµСЂС‚СЊСЋ РіРґРµ-РЅРёР±СѓРґСЊ РІ С€Р°С…С‚Рµ.
 
 	MIS_HelpDiegoNW = LOG_FAILED;
 	
@@ -175,67 +175,67 @@ FUNC VOID DIA_DiegoNW_NeedHelp_Problem_NoTime()
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_Reward()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_Reward_15_00"); //Что мне с этого будет?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_Reward_11_01"); //Я когда-нибудь спрашивал тебя, что ты мне дашь взамен? Мы же друзья, разве этого недостаточно?
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_Reward_15_00"); //Р§С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_Reward_11_01"); //РЇ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃРїСЂР°С€РёРІР°Р» С‚РµР±СЏ, С‡С‚Рѕ С‚С‹ РјРЅРµ РґР°С€СЊ РІР·Р°РјРµРЅ? РњС‹ Р¶Рµ РґСЂСѓР·СЊСЏ, СЂР°Р·РІРµ СЌС‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ?
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_15_00"); //Ладно, я помогу тебе.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_01"); //Прекрасно. Слушай внимательно. Когда Барьер еще был на месте, я спрятал в Долине Рудников небольшой клад.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_02"); //Это было довольно давно, и поэтому когда я оттуда уходил, я забыл его забрать.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_03"); //А сейчас мне очень нужны эти деньги.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_11_03"); //Если вкратце, ты должен пойти в Долину Рудников и забрать мое золото.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_15_00"); //Р›Р°РґРЅРѕ, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_01"); //РџСЂРµРєСЂР°СЃРЅРѕ. РЎР»СѓС€Р°Р№ РІРЅРёРјР°С‚РµР»СЊРЅРѕ. РљРѕРіРґР° Р‘Р°СЂСЊРµСЂ РµС‰Рµ Р±С‹Р» РЅР° РјРµСЃС‚Рµ, СЏ СЃРїСЂСЏС‚Р°Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РЅРµР±РѕР»СЊС€РѕР№ РєР»Р°Рґ.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_02"); //Р­С‚Рѕ Р±С‹Р»Рѕ РґРѕРІРѕР»СЊРЅРѕ РґР°РІРЅРѕ, Рё РїРѕСЌС‚РѕРјСѓ РєРѕРіРґР° СЏ РѕС‚С‚СѓРґР° СѓС…РѕРґРёР», СЏ Р·Р°Р±С‹Р» РµРіРѕ Р·Р°Р±СЂР°С‚СЊ.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_11_03"); //Рђ СЃРµР№С‡Р°СЃ РјРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РЅС‹ СЌС‚Рё РґРµРЅСЊРіРё.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_11_03"); //Р•СЃР»Рё РІРєСЂР°С‚С†Рµ, С‚С‹ РґРѕР»Р¶РµРЅ РїРѕР№С‚Рё РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ Рё Р·Р°Р±СЂР°С‚СЊ РјРѕРµ Р·РѕР»РѕС‚Рѕ.
 
 	MIS_HelpDiegoNW = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_HelpDiegoNW,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HelpDiegoNW,LOG_RUNNING);
-	B_LogEntry (TOPIC_HelpDiegoNW,"Золото Диего находится в Долине рудников. Оно нужно ему, чтобы попасть в верхнюю часть города, и он попросил меня найти это золото.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"Р—РѕР»РѕС‚Рѕ Р”РёРµРіРѕ РЅР°С…РѕРґРёС‚СЃСЏ РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ. РћРЅРѕ РЅСѓР¶РЅРѕ РµРјСѓ, С‡С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°, Рё РѕРЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РЅР°Р№С‚Рё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.");
 	
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Что ты собираешься делать с этим золотом?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Откуда у тебя это золото?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold);
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Где спрятано это золото?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ СЃ СЌС‚РёРј Р·РѕР»РѕС‚РѕРј?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"РћС‚РєСѓРґР° Сѓ С‚РµР±СЏ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold);
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Р“РґРµ СЃРїСЂСЏС‚Р°РЅРѕ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ?",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold);
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_15_00"); //Что ты собираешься делать с этим золотом?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_01"); //Я хочу свести счеты с одним из торговцев в верхнем квартале. Я очень этого хочу.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_02"); //А затем, я буду готов начать новую карьеру!
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_15_00"); //Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ СЃ СЌС‚РёРј Р·РѕР»РѕС‚РѕРј?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_01"); //РЇ С…РѕС‡Сѓ СЃРІРµСЃС‚Рё СЃС‡РµС‚С‹ СЃ РѕРґРЅРёРј РёР· С‚РѕСЂРіРѕРІС†РµРІ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ. РЇ РѕС‡РµРЅСЊ СЌС‚РѕРіРѕ С…РѕС‡Сѓ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_YourPlan_11_02"); //Рђ Р·Р°С‚РµРј, СЏ Р±СѓРґСѓ РіРѕС‚РѕРІ РЅР°С‡Р°С‚СЊ РЅРѕРІСѓСЋ РєР°СЂСЊРµСЂСѓ!
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_15_00"); //Откуда у тебя это золото?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_01"); //Я что, единственный что ли, кто откладывал золото для себя в Долине Рудников?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_02"); //Украсть несколько кусков руды было легче легкого. Просто на случай, если нам когда-нибудь удастся выбраться оттуда.
-	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_HowGold_11_03"); //Все были так сосредоточены на руде, что на золото никто не обращал внимания... 
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_15_00"); //РћС‚РєСѓРґР° Сѓ С‚РµР±СЏ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_01"); //РЇ С‡С‚Рѕ, РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ С‡С‚Рѕ Р»Рё, РєС‚Рѕ РѕС‚РєР»Р°РґС‹РІР°Р» Р·РѕР»РѕС‚Рѕ РґР»СЏ СЃРµР±СЏ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_HowGold_11_02"); //РЈРєСЂР°СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РєСѓСЃРєРѕРІ СЂСѓРґС‹ Р±С‹Р»Рѕ Р»РµРіС‡Рµ Р»РµРіРєРѕРіРѕ. РџСЂРѕСЃС‚Рѕ РЅР° СЃР»СѓС‡Р°Р№, РµСЃР»Рё РЅР°Рј РєРѕРіРґР°-РЅРёР±СѓРґСЊ СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚С‚СѓРґР°.
+	AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_HowGold_11_03"); //Р’СЃРµ Р±С‹Р»Рё С‚Р°Рє СЃРѕСЃСЂРµРґРѕС‚РѕС‡РµРЅС‹ РЅР° СЂСѓРґРµ, С‡С‚Рѕ РЅР° Р·РѕР»РѕС‚Рѕ РЅРёРєС‚Рѕ РЅРµ РѕР±СЂР°С‰Р°Р» РІРЅРёРјР°РЅРёСЏ... 
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_00"); //Где спрятано это золото?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_01"); //Прямо на торговой площади. Над заброшенной шахтой. Оно в кожаном кошельке.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_00"); //Р“РґРµ СЃРїСЂСЏС‚Р°РЅРѕ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_01"); //РџСЂСЏРјРѕ РЅР° С‚РѕСЂРіРѕРІРѕР№ РїР»РѕС‰Р°РґРё. РќР°Рґ Р·Р°Р±СЂРѕС€РµРЅРЅРѕР№ С€Р°С…С‚РѕР№. РћРЅРѕ РІ РєРѕР¶Р°РЅРѕРј РєРѕС€РµР»СЊРєРµ.
 	if (Diego_angekommen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_01"); //Обойдись без комментариев. Я и сам помню, что мы проходили мимо этого места.
-		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_02"); //Просто принеси мне золото.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_01"); //РћР±РѕР№РґРёСЃСЊ Р±РµР· РєРѕРјРјРµРЅС‚Р°СЂРёРµРІ. РЇ Рё СЃР°Рј РїРѕРјРЅСЋ, С‡С‚Рѕ РјС‹ РїСЂРѕС…РѕРґРёР»Рё РјРёРјРѕ СЌС‚РѕРіРѕ РјРµСЃС‚Р°.
+		AI_Output (self ,other,"DIA_Addon_DiegoNW_WillHelpYou_WhereGold_11_02"); //РџСЂРѕСЃС‚Рѕ РїСЂРёРЅРµСЃРё РјРЅРµ Р·РѕР»РѕС‚Рѕ.
 	};
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_02"); //Но проверь, чтобы это был тот самый кошелек, чтобы не ходить туда вхолостую.
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_03"); //Как я опознаю его?
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_04"); //Он полон золота. Доверху полон!
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_02"); //РќРѕ РїСЂРѕРІРµСЂСЊ, С‡С‚РѕР±С‹ СЌС‚Рѕ Р±С‹Р» С‚РѕС‚ СЃР°РјС‹Р№ РєРѕС€РµР»РµРє, С‡С‚РѕР±С‹ РЅРµ С…РѕРґРёС‚СЊ С‚СѓРґР° РІС…РѕР»РѕСЃС‚СѓСЋ.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_15_03"); //РљР°Рє СЏ РѕРїРѕР·РЅР°СЋ РµРіРѕ?
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_11_04"); //РћРЅ РїРѕР»РѕРЅ Р·РѕР»РѕС‚Р°. Р”РѕРІРµСЂС…Сѓ РїРѕР»РѕРЅ!
 					
-	Info_AddChoice (DIA_DiegoNW_NeedHelp,"Я попытаюсь найти твое золото.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt);		
+	Info_AddChoice (DIA_DiegoNW_NeedHelp,"РЇ РїРѕРїС‹С‚Р°СЋСЃСЊ РЅР°Р№С‚Рё С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.",DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt);		
 	
-	B_LogEntry (TOPIC_HelpDiegoNW,"Золото Диего находится где-то на старой торговой площади, там, где товары переправлялись в колонию по канатной дороге, над заброшенной шахтой.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"Р—РѕР»РѕС‚Рѕ Р”РёРµРіРѕ РЅР°С…РѕРґРёС‚СЃСЏ РіРґРµ-С‚Рѕ РЅР° СЃС‚Р°СЂРѕР№ С‚РѕСЂРіРѕРІРѕР№ РїР»РѕС‰Р°РґРё, С‚Р°Рј, РіРґРµ С‚РѕРІР°СЂС‹ РїРµСЂРµРїСЂР°РІР»СЏР»РёСЃСЊ РІ РєРѕР»РѕРЅРёСЋ РїРѕ РєР°РЅР°С‚РЅРѕР№ РґРѕСЂРѕРіРµ, РЅР°Рґ Р·Р°Р±СЂРѕС€РµРЅРЅРѕР№ С€Р°С…С‚РѕР№.");
 };
 
 FUNC VOID DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_TryIt_15_00"); //Я попытаюсь найти твое золото.
-	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_TryIt_11_01"); //(ухмыляется) Сделай это. Этого будет достаточно для меня.
+	AI_Output (other,self ,"DIA_DiegoNW_NeedHelp_Problem_TryIt_15_00"); //РЇ РїРѕРїС‹С‚Р°СЋСЃСЊ РЅР°Р№С‚Рё С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self ,other,"DIA_DiegoNW_NeedHelp_Problem_TryIt_11_01"); //(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РЎРґРµР»Р°Р№ СЌС‚Рѕ. Р­С‚РѕРіРѕ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ РјРµРЅСЏ.
 
 	Info_ClearChoices (DIA_DiegoNW_NeedHelp);
 };
@@ -251,7 +251,7 @@ INSTANCE DIA_DiegoNW_HelpYou(C_INFO)
 	condition	= DIA_DiegoNW_HelpYou_Condition;
 	information	= DIA_DiegoNW_HelpYou_Info;
 	permanent	= FALSE;
-	description	= "Ладно, я все же помогу тебе.";
+	description	= "Р›Р°РґРЅРѕ, СЏ РІСЃРµ Р¶Рµ РїРѕРјРѕРіСѓ С‚РµР±Рµ.";
 };                       
 FUNC INT DIA_DiegoNW_HelpYou_Condition()
 {
@@ -264,18 +264,18 @@ FUNC INT DIA_DiegoNW_HelpYou_Condition()
 };
 FUNC VOID DIA_DiegoNW_HelpYou_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_00"); //Ладно, я все же помогу тебе.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_01"); //Я знал это.
-	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_02"); //Давай перейдем сразу к делу.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_03"); //Хорошо. Я спрятал золото в Долине Рудников, и ты должен забрать его оттуда для меня.
-	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_06"); //А я буду ждать здесь и все подготовлю для дальнейших действий.
+	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_00"); //Р›Р°РґРЅРѕ, СЏ РІСЃРµ Р¶Рµ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_01"); //РЇ Р·РЅР°Р» СЌС‚Рѕ.
+	AI_Output (other,self ,"DIA_DiegoNW_HelpYou_15_02"); //Р”Р°РІР°Р№ РїРµСЂРµР№РґРµРј СЃСЂР°Р·Сѓ Рє РґРµР»Сѓ.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_03"); //РҐРѕСЂРѕС€Рѕ. РЇ СЃРїСЂСЏС‚Р°Р» Р·РѕР»РѕС‚Рѕ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ, Рё С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РµРіРѕ РѕС‚С‚СѓРґР° РґР»СЏ РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_DiegoNW_HelpYou_11_06"); //Рђ СЏ Р±СѓРґСѓ Р¶РґР°С‚СЊ Р·РґРµСЃСЊ Рё РІСЃРµ РїРѕРґРіРѕС‚РѕРІР»СЋ РґР»СЏ РґР°Р»СЊРЅРµР№С€РёС… РґРµР№СЃС‚РІРёР№.
 	DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold();
 	DIA_DiegoNW_NeedHelp_Problem_WillHelpYou_WhereGold_End_TryIt();
 
 	MIS_HelpDiegoNW = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_HelpDiegoNW,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HelpDiegoNW,LOG_RUNNING);
-	B_LogEntry (TOPIC_HelpDiegoNW,"Золото Диего находится в Долине рудников. Оно нужно ему, чтобы попасть в верхнюю часть города, и он попросил меня найти это золото.");
+	B_LogEntry (TOPIC_HelpDiegoNW,"Р—РѕР»РѕС‚Рѕ Р”РёРµРіРѕ РЅР°С…РѕРґРёС‚СЃСЏ РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ. РћРЅРѕ РЅСѓР¶РЅРѕ РµРјСѓ, С‡С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°, Рё РѕРЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РЅР°Р№С‚Рё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ.");
 };
 
 //***********************************************
@@ -289,7 +289,7 @@ INSTANCE DIA_DiegoNW_HaveYourGold(C_INFO)
 	condition	= DIA_DiegoNW_HaveYourGold_Condition;
 	information	= DIA_DiegoNW_HaveYourGold_Info;
 	permanent	= TRUE;
-	description	= "Я нашел твое золото!";
+	description	= "РЇ РЅР°С€РµР» С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ!";
 };            
 
 FUNC INT DIA_DiegoNW_HaveYourGold_Condition()
@@ -305,15 +305,15 @@ FUNC INT DIA_DiegoNW_HaveYourGold_Condition()
 
 FUNC VOID B_DIEGONW_DIEGOSREVENGE ()
 {
-	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_05"); //Очень хорошо. Пусть Гербрандт теперь дрожит от страха.
+	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_05"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РџСѓСЃС‚СЊ Р“РµСЂР±СЂР°РЅРґС‚ С‚РµРїРµСЂСЊ РґСЂРѕР¶РёС‚ РѕС‚ СЃС‚СЂР°С…Р°.
 };
 
 var int DiegosRevenge;
 
 FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_HaveYourGold_15_00"); //Я нашел твое золото!
-	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_01"); //Отлично. Покажи.
+	AI_Output (other,self ,"DIA_DiegoNW_HaveYourGold_15_00"); //РЇ РЅР°С€РµР» С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ!
+	AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_01"); //РћС‚Р»РёС‡РЅРѕ. РџРѕРєР°Р¶Рё.
 	
 	IF (Npc_HasItems (other,ItSe_DiegosTreasure_Mis) >=1)
 	{
@@ -323,9 +323,9 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 	}
 	else if (Npc_HasItems (other,ItMi_Gold < DiegosTreasure))
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_02"); //Но здесь не все! Ты что, не доверяешь мне? Мне нужна вся сумма.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_03"); //Если мой план сработает, золота останется достаточно и для тебя.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_04"); //Так что, пожалуйста, принеси всю сумму. Это очень важно!
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_02"); //РќРѕ Р·РґРµСЃСЊ РЅРµ РІСЃРµ! РўС‹ С‡С‚Рѕ, РЅРµ РґРѕРІРµСЂСЏРµС€СЊ РјРЅРµ? РњРЅРµ РЅСѓР¶РЅР° РІСЃСЏ СЃСѓРјРјР°.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_03"); //Р•СЃР»Рё РјРѕР№ РїР»Р°РЅ СЃСЂР°Р±РѕС‚Р°РµС‚, Р·РѕР»РѕС‚Р° РѕСЃС‚Р°РЅРµС‚СЃСЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Рё РґР»СЏ С‚РµР±СЏ.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_04"); //РўР°Рє С‡С‚Рѕ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РїСЂРёРЅРµСЃРё РІСЃСЋ СЃСѓРјРјСѓ. Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ!
 	}
 	else
 	{
@@ -337,9 +337,9 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 	if (Npc_IsDead (Gerbrandt) == FALSE)
 	&& (DiegosRevenge == TRUE)
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_06"); //Послушай, я все еще не договорился со стражей.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_07"); //Я хочу, чтобы ты отнес это письмо Гербрандту. Это один из торговцев в верхнем квартале.
-		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_08"); //Передай ему привет от меня. А затем встретимся перед домом Гербрандта.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_06"); //РџРѕСЃР»СѓС€Р°Р№, СЏ РІСЃРµ РµС‰Рµ РЅРµ РґРѕРіРѕРІРѕСЂРёР»СЃСЏ СЃРѕ СЃС‚СЂР°Р¶РµР№.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_07"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РѕС‚РЅРµСЃ СЌС‚Рѕ РїРёСЃСЊРјРѕ Р“РµСЂР±СЂР°РЅРґС‚Сѓ. Р­С‚Рѕ РѕРґРёРЅ РёР· С‚РѕСЂРіРѕРІС†РµРІ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ.
+		AI_Output (self ,other,"DIA_DiegoNW_HaveYourGold_11_08"); //РџРµСЂРµРґР°Р№ РµРјСѓ РїСЂРёРІРµС‚ РѕС‚ РјРµРЅСЏ. Рђ Р·Р°С‚РµРј РІСЃС‚СЂРµС‚РёРјСЃСЏ РїРµСЂРµРґ РґРѕРјРѕРј Р“РµСЂР±СЂР°РЅРґС‚Р°.
 
 		CreateInvItems (self ,ItWr_DiegosLetter_MIS,1);
 		B_GiveInvItems (self,other,ItWr_DiegosLetter_MIS,1);
@@ -352,7 +352,7 @@ FUNC VOID DIA_DiegoNW_HaveYourGold_Info()
 
 		Log_CreateTopic (TOPIC_DiegosResidence,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_DiegosResidence,LOG_RUNNING);
-		B_LogEntry (TOPIC_DiegosResidence,"Диего дал мне письмо для торговца Гербрандта.");
+		B_LogEntry (TOPIC_DiegosResidence,"Р”РёРµРіРѕ РґР°Р» РјРЅРµ РїРёСЃСЊРјРѕ РґР»СЏ С‚РѕСЂРіРѕРІС†Р° Р“РµСЂР±СЂР°РЅРґС‚Р°.");
 		
 		AI_StopProcessInfos (self);
 	};		
@@ -372,7 +372,7 @@ INSTANCE DIA_DiegoNW_DeliveredLetter(C_INFO)
 	condition	= DIA_DiegoNW_DeliveredLetter_Condition;
 	information	= DIA_DiegoNW_DeliveredLetter_Info;
 	permanent	= FALSE;
-	description	= "Я доставил твое письмо.";
+	description	= "РЇ РґРѕСЃС‚Р°РІРёР» С‚РІРѕРµ РїРёСЃСЊРјРѕ.";
 };
                        
 FUNC INT DIA_DiegoNW_DeliveredLetter_Condition()
@@ -387,61 +387,61 @@ FUNC INT DIA_DiegoNW_DeliveredLetter_Condition()
 FUNC VOID DIA_DiegoNW_DeliveredLetter_Info()
 {
 		
-	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_00"); //Я доставил твое письмо.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_01"); //Очень хорошо. Как Гербрандт воспринял это?
-	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_02"); //Он был в шоке и моментально исчез куда-то.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_03"); //(удовлетворенно) Я так и думал.
-	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_04"); //Боюсь, правда, что в первую очередь мне придется заняться обстановкой моего нового дома. Если я правильно помню, вкус у Гербрандта просто ужасный.
+	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_00"); //РЇ РґРѕСЃС‚Р°РІРёР» С‚РІРѕРµ РїРёСЃСЊРјРѕ.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РљР°Рє Р“РµСЂР±СЂР°РЅРґС‚ РІРѕСЃРїСЂРёРЅСЏР» СЌС‚Рѕ?
+	AI_Output (other,self ,"DIA_DiegoNW_DeliveredLetter_15_02"); //РћРЅ Р±С‹Р» РІ С€РѕРєРµ Рё РјРѕРјРµРЅС‚Р°Р»СЊРЅРѕ РёСЃС‡РµР· РєСѓРґР°-С‚Рѕ.
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_03"); //(СѓРґРѕРІР»РµС‚РІРѕСЂРµРЅРЅРѕ) РЇ С‚Р°Рє Рё РґСѓРјР°Р».
+	AI_Output (self ,other,"DIA_DiegoNW_DeliveredLetter_11_04"); //Р‘РѕСЋСЃСЊ, РїСЂР°РІРґР°, С‡С‚Рѕ РІ РїРµСЂРІСѓСЋ РѕС‡РµСЂРµРґСЊ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅСЏС‚СЊСЃСЏ РѕР±СЃС‚Р°РЅРѕРІРєРѕР№ РјРѕРµРіРѕ РЅРѕРІРѕРіРѕ РґРѕРјР°. Р•СЃР»Рё СЏ РїСЂР°РІРёР»СЊРЅРѕ РїРѕРјРЅСЋ, РІРєСѓСЃ Сѓ Р“РµСЂР±СЂР°РЅРґС‚Р° РїСЂРѕСЃС‚Рѕ СѓР¶Р°СЃРЅС‹Р№.
 	  
 	B_GivePlayerXP (XP_DiegoHasANewHome);
 
 	Wld_AssignRoomToGuild ("reich01",		GIL_PUBLIC);
 
 	Info_ClearChoices (DIA_DiegoNW_DeliveredLetter);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Как тебе удалось провернуть это?",DIA_DiegoNW_DeliveredLetter_YourTrick);	
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Значит, это теперь твой дом?",DIA_DiegoNW_DeliveredLetter_YourHouse);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"РљР°Рє С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕРІРµСЂРЅСѓС‚СЊ СЌС‚Рѕ?",DIA_DiegoNW_DeliveredLetter_YourTrick);	
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Р—РЅР°С‡РёС‚, СЌС‚Рѕ С‚РµРїРµСЂСЊ С‚РІРѕР№ РґРѕРј?",DIA_DiegoNW_DeliveredLetter_YourHouse);
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_Gerbrandt ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_15_00"); //Что насчет Гербрандта?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_01"); //Он наслаждался беззаботной жизнью слишком долго.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_02"); //Он жил здесь, купаясь в роскоши, когда я питался похлебкой из мясных жуков.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_03"); //Понятия не имею, куда он сбежал отсюда, но он больше не осмелится появиться в Хоринисе вновь - я позабочусь об этом.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_04"); //Если ты ищешь его, попробуй пошарить в портовом квартале.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ Р“РµСЂР±СЂР°РЅРґС‚Р°?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_01"); //РћРЅ РЅР°СЃР»Р°Р¶РґР°Р»СЃСЏ Р±РµР·Р·Р°Р±РѕС‚РЅРѕР№ Р¶РёР·РЅСЊСЋ СЃР»РёС€РєРѕРј РґРѕР»РіРѕ.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_02"); //РћРЅ Р¶РёР» Р·РґРµСЃСЊ, РєСѓРїР°СЏСЃСЊ РІ СЂРѕСЃРєРѕС€Рё, РєРѕРіРґР° СЏ РїРёС‚Р°Р»СЃСЏ РїРѕС…Р»РµР±РєРѕР№ РёР· РјСЏСЃРЅС‹С… Р¶СѓРєРѕРІ.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_03"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РєСѓРґР° РѕРЅ СЃР±РµР¶Р°Р» РѕС‚СЃСЋРґР°, РЅРѕ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ РѕСЃРјРµР»РёС‚СЃСЏ РїРѕСЏРІРёС‚СЊСЃСЏ РІ РҐРѕСЂРёРЅРёСЃРµ РІРЅРѕРІСЊ - СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_Gerbrandt_11_04"); //Р•СЃР»Рё С‚С‹ РёС‰РµС€СЊ РµРіРѕ, РїРѕРїСЂРѕР±СѓР№ РїРѕС€Р°СЂРёС‚СЊ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourHouse()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_00"); //Значит, это теперь твой дом?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_01"); //Да, от погреба до чердака! Со всей мебелью!
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_02"); //Я столько лет провел в невыносимых условиях и теперь мечтаю о том, как я буду спать в огромной кровати с балдахином.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_03"); //А потом, на завтрак, я буду есть превосходный окорок и запивать его дорогим вином.
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_04"); //Да, ты своего не упустишь.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_05"); //Точно.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_00"); //Р—РЅР°С‡РёС‚, СЌС‚Рѕ С‚РµРїРµСЂСЊ С‚РІРѕР№ РґРѕРј?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_01"); //Р”Р°, РѕС‚ РїРѕРіСЂРµР±Р° РґРѕ С‡РµСЂРґР°РєР°! РЎРѕ РІСЃРµР№ РјРµР±РµР»СЊСЋ!
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_02"); //РЇ СЃС‚РѕР»СЊРєРѕ Р»РµС‚ РїСЂРѕРІРµР» РІ РЅРµРІС‹РЅРѕСЃРёРјС‹С… СѓСЃР»РѕРІРёСЏС… Рё С‚РµРїРµСЂСЊ РјРµС‡С‚Р°СЋ Рѕ С‚РѕРј, РєР°Рє СЏ Р±СѓРґСѓ СЃРїР°С‚СЊ РІ РѕРіСЂРѕРјРЅРѕР№ РєСЂРѕРІР°С‚Рё СЃ Р±Р°Р»РґР°С…РёРЅРѕРј.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_03"); //Рђ РїРѕС‚РѕРј, РЅР° Р·Р°РІС‚СЂР°Рє, СЏ Р±СѓРґСѓ РµСЃС‚СЊ РїСЂРµРІРѕСЃС…РѕРґРЅС‹Р№ РѕРєРѕСЂРѕРє Рё Р·Р°РїРёРІР°С‚СЊ РµРіРѕ РґРѕСЂРѕРіРёРј РІРёРЅРѕРј.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourHouse_15_04"); //Р”Р°, С‚С‹ СЃРІРѕРµРіРѕ РЅРµ СѓРїСѓСЃС‚РёС€СЊ.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourHouse_11_05"); //РўРѕС‡РЅРѕ.
 };
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourTrick ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_00"); //Как тебе удалось провернуть это?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_01"); //Ты думаешь, Гербрандт заработал свое состояние на честном бизнесе?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_02"); //Конечно, он никогда не марал руки, когда доходило до грязных дел. У него для этого был помощник.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_03"); //На моей совести тогда много чего было. Гербрандт, в конце концов, решил избавиться от меня. Вероятно, он опасался, что я знаю слишком много.
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_04"); //Ты никогда не говорил мне об этом.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_05"); //А ты никогда и не спрашивал.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_00"); //РљР°Рє С‚РµР±Рµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕРІРµСЂРЅСѓС‚СЊ СЌС‚Рѕ?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_01"); //РўС‹ РґСѓРјР°РµС€СЊ, Р“РµСЂР±СЂР°РЅРґС‚ Р·Р°СЂР°Р±РѕС‚Р°Р» СЃРІРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ РЅР° С‡РµСЃС‚РЅРѕРј Р±РёР·РЅРµСЃРµ?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_02"); //РљРѕРЅРµС‡РЅРѕ, РѕРЅ РЅРёРєРѕРіРґР° РЅРµ РјР°СЂР°Р» СЂСѓРєРё, РєРѕРіРґР° РґРѕС…РѕРґРёР»Рѕ РґРѕ РіСЂСЏР·РЅС‹С… РґРµР». РЈ РЅРµРіРѕ РґР»СЏ СЌС‚РѕРіРѕ Р±С‹Р» РїРѕРјРѕС‰РЅРёРє.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_03"); //РќР° РјРѕРµР№ СЃРѕРІРµСЃС‚Рё С‚РѕРіРґР° РјРЅРѕРіРѕ С‡РµРіРѕ Р±С‹Р»Рѕ. Р“РµСЂР±СЂР°РЅРґС‚, РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, СЂРµС€РёР» РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РјРµРЅСЏ. Р’РµСЂРѕСЏС‚РЅРѕ, РѕРЅ РѕРїР°СЃР°Р»СЃСЏ, С‡С‚Рѕ СЏ Р·РЅР°СЋ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_15_04"); //РўС‹ РЅРёРєРѕРіРґР° РЅРµ РіРѕРІРѕСЂРёР» РјРЅРµ РѕР± СЌС‚РѕРј.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_11_05"); //Рђ С‚С‹ РЅРёРєРѕРіРґР° Рё РЅРµ СЃРїСЂР°С€РёРІР°Р».
 	
 	Info_ClearChoices (DIA_DiegoNW_DeliveredLetter);
 	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,DIALOG_BACK,DIA_DiegoNW_DeliveredLetter_YourTrick_BACK);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Что насчет моей доли?",DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD);
-	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Что насчет Гербрандта?",DIA_DiegoNW_DeliveredLetter_Gerbrandt);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Р§С‚Рѕ РЅР°СЃС‡РµС‚ РјРѕРµР№ РґРѕР»Рё?",DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD);
+	Info_AddChoice (DIA_DiegoNW_DeliveredLetter,"Р§С‚Рѕ РЅР°СЃС‡РµС‚ Р“РµСЂР±СЂР°РЅРґС‚Р°?",DIA_DiegoNW_DeliveredLetter_Gerbrandt);
 }; 
 
 FUNC VOID DIA_DiegoNW_DeliveredLetter_YourTrick_REWARD()
 {
 
-	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_15_00"); //Что насчет моей доли?
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_01"); //Похоже, ты ничего не забыл из того, чему я учил тебя.
-	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_02"); //Но ты прав, у меня ничего бы не вышло без твоей помощи. Вот твоя доля.
+	AI_Output (other,self ,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РјРѕРµР№ РґРѕР»Рё?
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_01"); //РџРѕС…РѕР¶Рµ, С‚С‹ РЅРёС‡РµРіРѕ РЅРµ Р·Р°Р±С‹Р» РёР· С‚РѕРіРѕ, С‡РµРјСѓ СЏ СѓС‡РёР» С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_DiegoNW_TalkedToJudge_YourTrick_REWARD_11_02"); //РќРѕ С‚С‹ РїСЂР°РІ, Сѓ РјРµРЅСЏ РЅРёС‡РµРіРѕ Р±С‹ РЅРµ РІС‹С€Р»Рѕ Р±РµР· С‚РІРѕРµР№ РїРѕРјРѕС‰Рё. Р’РѕС‚ С‚РІРѕСЏ РґРѕР»СЏ.
 	
 	CreateInvItems (self ,ItMi_Gold,500);
 	B_GiveInvItems (self,other,ItMi_Gold,500);
@@ -469,7 +469,7 @@ INSTANCE DIA_DiegoNW_CanYouTeach(C_INFO)
 	information	= DIA_DiegoNW_CanYouTeach_Info;
 	permanent	= TRUE;
 
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 FUNC INT DIA_DiegoNW_CanYouTeach_Condition()
 {
@@ -481,16 +481,16 @@ FUNC INT DIA_DiegoNW_CanYouTeach_Condition()
 };
 FUNC VOID DIA_DiegoNW_CanYouTeach_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_CanYouTeach_15_00"); //Ты можешь научить меня чему-нибудь?
+	AI_Output (other,self ,"DIA_DiegoNW_CanYouTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
 	if (Npc_KnowsInfo (other,DIA_DiegoNW_DeliveredLetter))
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_01"); //Да, конечно. Дай мне знать, когда будешь готов.
+		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. Р”Р°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 		
 		Diego_Teach = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_02"); //Сначала мне нужно решить свои проблемы.
+		AI_Output (self ,other,"DIA_DiegoNW_CanYouTeach_11_02"); //РЎРЅР°С‡Р°Р»Р° РјРЅРµ РЅСѓР¶РЅРѕ СЂРµС€РёС‚СЊ СЃРІРѕРё РїСЂРѕР±Р»РµРјС‹.
 	};
 };
 
@@ -512,7 +512,7 @@ INSTANCE DIA_DiegoNW_Teach(C_INFO)
 	information	= DIA_DiegoNW_Teach_Info;
 	permanent	= TRUE;
 
-	description = "Научи меня.";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ.";
 };                       
 FUNC INT DIA_DiegoNW_Teach_Condition()
 {
@@ -524,8 +524,8 @@ FUNC INT DIA_DiegoNW_Teach_Condition()
 };
 FUNC VOID DIA_DiegoNW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_DiegoNW_Teach_15_00"); //Обучи меня.
-	AI_Output (self ,other,"DIA_DiegoNW_Teach_11_01"); //Я могу научить тебя, как стать более ловким.
+	AI_Output (other,self ,"DIA_DiegoNW_Teach_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_DiegoNW_Teach_11_01"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ, РєР°Рє СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј.
 	
 	DiegoNW_Merke_Dex = other.attribute[ATR_DEXTERITY];
 	
@@ -539,7 +539,7 @@ func void DIA_DiegoNW_Teach_BACK()
 {
 	if (DiegoNW_Merke_DEX < other.attribute[ATR_DEXTERITY])
 	{
-		AI_Output (self, other, "DIA_DiegoNW_Teach_BACK_11_00"); //Ты уже стал более ловким. Так держать!
+		AI_Output (self, other, "DIA_DiegoNW_Teach_BACK_11_00"); //РўС‹ СѓР¶Рµ СЃС‚Р°Р» Р±РѕР»РµРµ Р»РѕРІРєРёРј. РўР°Рє РґРµСЂР¶Р°С‚СЊ!
 	};
 	Info_ClearChoices	(DIA_DiegoNW_Teach);
 };
@@ -582,7 +582,7 @@ instance DIA_DiegoNW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_DiegoNW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_DiegoNW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Я собираюсь покинуть Хоринис.";
+	description	 = 	"РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕРєРёРЅСѓС‚СЊ РҐРѕСЂРёРЅРёСЃ.";
 };
 
 func int DIA_DiegoNW_KnowWhereEnemy_Condition ()
@@ -596,32 +596,32 @@ func int DIA_DiegoNW_KnowWhereEnemy_Condition ()
 
 func void DIA_DiegoNW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_DiegoNW_KnowWhereEnemy_15_00"); //Я собираюсь покинуть Хоринис.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_01"); //Мудрое решение. Я был бы не прочь отправиться с тобой. Этот город изменился слишком быстро - времена, когда здесь можно было разбогатеть, уже в прошлом.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_02"); //Я мог бы научить тебя метко стрелять, пользоваться отмычками и мог бы повысить твою ловкость.
-	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_03"); //Также, я уверен, тебе не помешает хороший вор.
+	AI_Output			(other, self, "DIA_DiegoNW_KnowWhereEnemy_15_00"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїРѕРєРёРЅСѓС‚СЊ РҐРѕСЂРёРЅРёСЃ.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_01"); //РњСѓРґСЂРѕРµ СЂРµС€РµРЅРёРµ. РЇ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№. Р­С‚РѕС‚ РіРѕСЂРѕРґ РёР·РјРµРЅРёР»СЃСЏ СЃР»РёС€РєРѕРј Р±С‹СЃС‚СЂРѕ - РІСЂРµРјРµРЅР°, РєРѕРіРґР° Р·РґРµСЃСЊ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ СЂР°Р·Р±РѕРіР°С‚РµС‚СЊ, СѓР¶Рµ РІ РїСЂРѕС€Р»РѕРј.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_02"); //РЇ РјРѕРі Р±С‹ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РјРµС‚РєРѕ СЃС‚СЂРµР»СЏС‚СЊ, РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РѕС‚РјС‹С‡РєР°РјРё Рё РјРѕРі Р±С‹ РїРѕРІС‹СЃРёС‚СЊ С‚РІРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ.
+	AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_03"); //РўР°РєР¶Рµ, СЏ СѓРІРµСЂРµРЅ, С‚РµР±Рµ РЅРµ РїРѕРјРµС€Р°РµС‚ С…РѕСЂРѕС€РёР№ РІРѕСЂ.
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING);
-	B_LogEntry (TOPIC_Crew,"Конечно же, Диего готов пойти со мной. Ему кажется, что чем скорее он покинет Хоринис, тем лучше. Он мог бы научить меня, как стать более ловким и сделать из меня отличного лучника. Также он может научить меня пользоваться отмычками.");	
+	B_LogEntry (TOPIC_Crew,"РљРѕРЅРµС‡РЅРѕ Р¶Рµ, Р”РёРµРіРѕ РіРѕС‚РѕРІ РїРѕР№С‚Рё СЃРѕ РјРЅРѕР№. Р•РјСѓ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‡РµРј СЃРєРѕСЂРµРµ РѕРЅ РїРѕРєРёРЅРµС‚ РҐРѕСЂРёРЅРёСЃ, С‚РµРј Р»СѓС‡С€Рµ. РћРЅ РјРѕРі Р±С‹ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ, РєР°Рє СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј Рё СЃРґРµР»Р°С‚СЊ РёР· РјРµРЅСЏ РѕС‚Р»РёС‡РЅРѕРіРѕ Р»СѓС‡РЅРёРєР°. РўР°РєР¶Рµ РѕРЅ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РѕС‚РјС‹С‡РєР°РјРё.");	
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_DiegoNW_KnowWhereEnemy_15_04"); //Я подумаю над этим. Но пока моя команда полностью укомплектована.
-		AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_05"); //Не торопись. Я все равно никуда не денусь.
+		AI_Output			(other,self , "DIA_DiegoNW_KnowWhereEnemy_15_04"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј. РќРѕ РїРѕРєР° РјРѕСЏ РєРѕРјР°РЅРґР° РїРѕР»РЅРѕСЃС‚СЊСЋ СѓРєРѕРјРїР»РµРєС‚РѕРІР°РЅР°.
+		AI_Output			(self, other, "DIA_DiegoNW_KnowWhereEnemy_11_05"); //РќРµ С‚РѕСЂРѕРїРёСЃСЊ. РЇ РІСЃРµ СЂР°РІРЅРѕ РЅРёРєСѓРґР° РЅРµ РґРµРЅСѓСЃСЊ.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Возможно, я дам тебе знать, когда придет время.",DIA_DiegoNW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Ты не хочешь присоединиться?",DIA_DiegoNW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"Р’РѕР·РјРѕР¶РЅРѕ, СЏ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.",DIA_DiegoNW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_DiegoNW_KnowWhereEnemy,"РўС‹ РЅРµ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ?",DIA_DiegoNW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_Yes_15_00"); //Почему бы тебе не отправиться в путь со мной? Встретимся у гавани.
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_01"); //Ммм. Ты прав, в Хоринисе все равно нечего делать. Я поплыву с тобой.
+	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_Yes_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ РїСѓС‚СЊ СЃРѕ РјРЅРѕР№? Р’СЃС‚СЂРµС‚РёРјСЃСЏ Сѓ РіР°РІР°РЅРё.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_01"); //РњРјРј. РўС‹ РїСЂР°РІ, РІ РҐРѕСЂРёРЅРёСЃРµ РІСЃРµ СЂР°РІРЅРѕ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ. РЇ РїРѕРїР»С‹РІСѓ СЃ С‚РѕР±РѕР№.
 	
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -633,7 +633,7 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 	
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "NW_CITY_UPTOWN_PATH_23" )== 1)
     {
-		AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02"); //Подожди, я буду готов через минуту.
+		AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_02"); //РџРѕРґРѕР¶РґРё, СЏ Р±СѓРґСѓ РіРѕС‚РѕРІ С‡РµСЂРµР· РјРёРЅСѓС‚Сѓ.
 		AI_SetWalkmode 	(self, NPC_WALK);		
 		AI_GotoWP (self,"NW_CITY_UPTOWN_HUT_01_01");
 		CreateInvItems (self,ItAR_Diego,1);
@@ -642,7 +642,7 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 		AI_GotoWP (self,self.wp);
 	};
 	
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_03"); //Ну, я готов. Встретимся у корабля.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_Yes_11_03"); //РќСѓ, СЏ РіРѕС‚РѕРІ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ Сѓ РєРѕСЂР°Р±Р»СЏ.
 	
 	
 	if (MIS_ReadyforChapter6 == TRUE)
@@ -659,8 +659,8 @@ FUNC VOID DIA_DiegoNW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_DiegoNW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_No_15_00"); //Возможно, я дам тебе знать, когда придет время.
-	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_No_11_01"); //Попробуй. И, возможно, Я даже присоединюсь к тебе. Кто знает?
+	AI_Output (other,self ,"DIA_DiegoNW_KnowWhereEnemy_No_15_00"); //Р’РѕР·РјРѕР¶РЅРѕ, СЏ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РїСЂРёРґРµС‚ РІСЂРµРјСЏ.
+	AI_Output (self ,other,"DIA_DiegoNW_KnowWhereEnemy_No_11_01"); //РџРѕРїСЂРѕР±СѓР№. Р, РІРѕР·РјРѕР¶РЅРѕ, РЇ РґР°Р¶Рµ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє С‚РµР±Рµ. РљС‚Рѕ Р·РЅР°РµС‚?
 
 	Diego_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_DiegoNW_KnowWhereEnemy);
@@ -676,7 +676,7 @@ instance DIA_DiegoNW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_DiegoNW_LeaveMyShip_Condition;
 	information	 = 	DIA_DiegoNW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ты должен заботиться о городе.";
+	description	 = 	"РўС‹ РґРѕР»Р¶РµРЅ Р·Р°Р±РѕС‚РёС‚СЊСЃСЏ Рѕ РіРѕСЂРѕРґРµ.";
 };
 func int DIA_DiegoNW_LeaveMyShip_Condition ()
 {	
@@ -688,11 +688,11 @@ func int DIA_DiegoNW_LeaveMyShip_Condition ()
 };
 func void DIA_DiegoNW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_00"); //Ты должен заботиться о городе.
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_01"); //Да? Я тебе больше не нужен? Ох, ладно. Не забудь заглянуть ко мне, когда вернешься в город.
-	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_02"); //Ты думаешь, мы еще встретимся?
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_03"); //Я никогда не забуду выражение твоего лица, когда ты лежал на земле после того, как Булит вырубил тебя. Тогда мы встретились в первый раз.
-	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_04"); //Им никогда не одолеть тебя. Мы ОБЯЗАТЕЛЬНО встретимся снова. Береги себя.
+	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ Р·Р°Р±РѕС‚РёС‚СЊСЃСЏ Рѕ РіРѕСЂРѕРґРµ.
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_01"); //Р”Р°? РЇ С‚РµР±Рµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ? РћС…, Р»Р°РґРЅРѕ. РќРµ Р·Р°Р±СѓРґСЊ Р·Р°РіР»СЏРЅСѓС‚СЊ РєРѕ РјРЅРµ, РєРѕРіРґР° РІРµСЂРЅРµС€СЊСЃСЏ РІ РіРѕСЂРѕРґ.
+	AI_Output			(other, self, "DIA_DiegoNW_LeaveMyShip_15_02"); //РўС‹ РґСѓРјР°РµС€СЊ, РјС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ?
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_03"); //РЇ РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±СѓРґСѓ РІС‹СЂР°Р¶РµРЅРёРµ С‚РІРѕРµРіРѕ Р»РёС†Р°, РєРѕРіРґР° С‚С‹ Р»РµР¶Р°Р» РЅР° Р·РµРјР»Рµ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє Р‘СѓР»РёС‚ РІС‹СЂСѓР±РёР» С‚РµР±СЏ. РўРѕРіРґР° РјС‹ РІСЃС‚СЂРµС‚РёР»РёСЃСЊ РІ РїРµСЂРІС‹Р№ СЂР°Р·.
+	AI_Output			(self, other, "DIA_DiegoNW_LeaveMyShip_11_04"); //РРј РЅРёРєРѕРіРґР° РЅРµ РѕРґРѕР»РµС‚СЊ С‚РµР±СЏ. РњС‹ РћР‘РЇР—РђРўР•Р›Р¬РќРћ РІСЃС‚СЂРµС‚РёРјСЃСЏ СЃРЅРѕРІР°. Р‘РµСЂРµРіРё СЃРµР±СЏ.
 	
 	
 	Diego_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
@@ -702,7 +702,7 @@ func void DIA_DiegoNW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 {
@@ -711,7 +711,7 @@ instance DIA_DiegoNW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_DiegoNW_StillNeedYou_Condition;
 	information	 = 	DIA_DiegoNW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Возвращайся. Я хочу, чтобы ты сопровождал меня.";
+	description	 = 	"Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ СЃРѕРїСЂРѕРІРѕР¶РґР°Р» РјРµРЅСЏ.";
 };
 
 func int DIA_DiegoNW_StillNeedYou_Condition ()
@@ -726,8 +726,8 @@ func int DIA_DiegoNW_StillNeedYou_Condition ()
 
 func void DIA_DiegoNW_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_DiegoNW_StillNeedYou_15_00"); //Возвращайся. Я хочу, чтобы ты сопровождал меня.
-	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_01"); //Куда подевалась твоя решительность, друг? Конечно, я присоединюсь к тебе - ты только определись с тем, что тебе нужно.
+	AI_Output	(other, self, "DIA_DiegoNW_StillNeedYou_15_00"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ СЃРѕРїСЂРѕРІРѕР¶РґР°Р» РјРµРЅСЏ.
+	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_01"); //РљСѓРґР° РїРѕРґРµРІР°Р»Р°СЃСЊ С‚РІРѕСЏ СЂРµС€РёС‚РµР»СЊРЅРѕСЃС‚СЊ, РґСЂСѓРі? РљРѕРЅРµС‡РЅРѕ, СЏ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє С‚РµР±Рµ - С‚С‹ С‚РѕР»СЊРєРѕ РѕРїСЂРµРґРµР»РёСЃСЊ СЃ С‚РµРј, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Diego_IsOnBoard	 = LOG_SUCCESS;
@@ -735,14 +735,14 @@ func void DIA_DiegoNW_StillNeedYou_Info ()
 	
 	if (Hlp_StrCmp(Npc_GetNearestWP(self), "NW_CITY_UPTOWN_PATH_23" )== 1)
     {
-		AI_Output (self ,other,"DIA_DiegoNW_StillNeedYou_11_02"); //Подожди, я буду готов через минуту.
+		AI_Output (self ,other,"DIA_DiegoNW_StillNeedYou_11_02"); //РџРѕРґРѕР¶РґРё, СЏ Р±СѓРґСѓ РіРѕС‚РѕРІ С‡РµСЂРµР· РјРёРЅСѓС‚Сѓ.
 		AI_GotoWP (self,"NW_CITY_UPTOWN_HUT_01_01");
 		CreateInvItems (self,ItAR_Diego,1);
 		AI_EquipArmor (self,ItAr_Diego);
 		AI_GotoWP (self,self.wp);
 	};
 	
-	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_03"); //Отлично, мы можем идти.
+	AI_Output	(self, other, "DIA_DiegoNW_StillNeedYou_11_03"); //РћС‚Р»РёС‡РЅРѕ, РјС‹ РјРѕР¶РµРј РёРґС‚Рё.
 	
 	AI_StopProcessInfos (self);
 

@@ -36,7 +36,7 @@ INSTANCE DIA_Dar_Hallo (C_INFO)
 	condition   = DIA_Dar_Hallo_Condition;
 	information = DIA_Dar_Hallo_Info;
 	permanent   = FALSE;
-	description = "Что ты куришь?";
+	description = "Р§С‚Рѕ С‚С‹ РєСѓСЂРёС€СЊ?";
 };
 
 FUNC INT DIA_Dar_Hallo_Condition()
@@ -46,30 +46,30 @@ FUNC INT DIA_Dar_Hallo_Condition()
 
 FUNC VOID DIA_Dar_Hallo_Info()
 {
-	AI_Output (other, self, "DIA_Dar_Hallo_15_00"); //Что ты куришь?
-	AI_Output (self, other, "DIA_Dar_Hallo_03_01"); //Хочешь затянуться?
+	AI_Output (other, self, "DIA_Dar_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ РєСѓСЂРёС€СЊ?
+	AI_Output (self, other, "DIA_Dar_Hallo_03_01"); //РҐРѕС‡РµС€СЊ Р·Р°С‚СЏРЅСѓС‚СЊСЃСЏ?
 	
 	Info_ClearChoices (DIA_Dar_Hallo);
-	Info_AddChoice (DIA_Dar_Hallo, "Нет.", DIA_Dar_Hallo_Nein);
-	Info_AddChoice (DIA_Dar_Hallo, "Конечно.", DIA_Dar_Hallo_Ja);
+	Info_AddChoice (DIA_Dar_Hallo, "РќРµС‚.", DIA_Dar_Hallo_Nein);
+	Info_AddChoice (DIA_Dar_Hallo, "РљРѕРЅРµС‡РЅРѕ.", DIA_Dar_Hallo_Ja);
 };
 
 func void DIA_Dar_Hallo_Ja()
 {
-	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_00"); //Конечно.
+	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_00"); //РљРѕРЅРµС‡РЅРѕ.
 	CreateInvItem (other, itmi_joint);
 	B_UseItem (other, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_01"); //Неплохо, да?
-	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_02"); //Где ты взял эту траву?
+	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_01"); //РќРµРїР»РѕС…Рѕ, РґР°?
+	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_02"); //Р“РґРµ С‚С‹ РІР·СЏР» СЌС‚Сѓ С‚СЂР°РІСѓ?
 	CreateInvItem (self, itmi_joint);
 	B_UseItem (self, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_03"); //(усмехается) У меня свои источники.
+	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_03"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РЈ РјРµРЅСЏ СЃРІРѕРё РёСЃС‚РѕС‡РЅРёРєРё.
 	Info_ClearChoices (DIA_Dar_Hallo);	
 };
 
 func void DIA_Dar_Hallo_Nein()
 {
-	AI_Output (other, self, "DIA_Dar_Hallo_Nein_15_00"); //Нет.
+	AI_Output (other, self, "DIA_Dar_Hallo_Nein_15_00"); //РќРµС‚.
 	Info_ClearChoices (DIA_Dar_Hallo);	
 };
 
@@ -85,7 +85,7 @@ INSTANCE DIA_Dar_PERM (C_INFO)
 	condition   = DIA_Dar_PERM_Condition;
 	information = DIA_Dar_PERM_Info;
 	permanent   = TRUE;
-	description = "Ты чувствуешь что-нибудь кроме дыма?";
+	description = "РўС‹ С‡СѓРІСЃС‚РІСѓРµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєСЂРѕРјРµ РґС‹РјР°?";
 };
 
 FUNC INT DIA_Dar_PERM_Condition()
@@ -98,17 +98,17 @@ FUNC INT DIA_Dar_PERM_Condition()
 
 FUNC VOID DIA_Dar_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Dar_PERM_15_00"); //Ты чувствуешь что-нибудь кроме дыма?
+	AI_Output (other, self, "DIA_Dar_PERM_15_00"); //РўС‹ С‡СѓРІСЃС‚РІСѓРµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєСЂРѕРјРµ РґС‹РјР°?
 	
 	if (Dar_LostAgainstCipher == TRUE)
 	&& (Dar_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Dar_PERM_03_01"); //(саркастически) Иногда я позволяю всяким мстительным болотным наркоманам задать мне взбучку...
+		AI_Output (self, other, "DIA_Dar_PERM_03_01"); //(СЃР°СЂРєР°СЃС‚РёС‡РµСЃРєРё) РРЅРѕРіРґР° СЏ РїРѕР·РІРѕР»СЏСЋ РІСЃСЏРєРёРј РјСЃС‚РёС‚РµР»СЊРЅС‹Рј Р±РѕР»РѕС‚РЅС‹Рј РЅР°СЂРєРѕРјР°РЅР°Рј Р·Р°РґР°С‚СЊ РјРЅРµ РІР·Р±СѓС‡РєСѓ...
 		Dar_einmal = TRUE;
 	}
 		else //DEFAULT
 	{
-		AI_Output (self, other, "DIA_Dar_PERM_03_02"); //Но не сейчас.
+		AI_Output (self, other, "DIA_Dar_PERM_03_02"); //РќРѕ РЅРµ СЃРµР№С‡Р°СЃ.
 	};
 };
 
@@ -123,7 +123,7 @@ INSTANCE DIA_Dar_WannaJoin (C_INFO)
 	condition   = DIA_Dar_WannaJoin_Condition;
 	information = DIA_Dar_WannaJoin_Info;
 	permanent   = FALSE;
-	description = "Я хочу присоединиться к наемникам. Ты не возражаешь?";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј. РўС‹ РЅРµ РІРѕР·СЂР°Р¶Р°РµС€СЊ?";
 };
 
 FUNC INT DIA_Dar_WannaJoin_Condition()
@@ -138,8 +138,8 @@ FUNC INT DIA_Dar_WannaJoin_Condition()
 
 FUNC VOID DIA_Dar_WannaJoin_Info()
 {
-	AI_Output (other, self, "DIA_Dar_WannaJoin_15_00"); //Я хочу присоединиться к наемникам. Ты не возражаешь?
-	AI_Output (self, other, "DIA_Dar_WannaJoin_03_01"); //Мне все равно.
+	AI_Output (other, self, "DIA_Dar_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј. РўС‹ РЅРµ РІРѕР·СЂР°Р¶Р°РµС€СЊ?
+	AI_Output (self, other, "DIA_Dar_WannaJoin_03_01"); //РњРЅРµ РІСЃРµ СЂР°РІРЅРѕ.
 };
 
 // ************************************************************
@@ -153,12 +153,12 @@ INSTANCE DIA_Dar_DuDieb (C_INFO)
 	condition   = DIA_Dar_DuDieb_Condition;
 	information = DIA_Dar_DuDieb_Info;
 	permanent   = FALSE;
-	description = "Сифер сказал мне, что кто-то украл у него тюк болотной травы...";
+	description = "РЎРёС„РµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РєС‚Рѕ-С‚Рѕ СѓРєСЂР°Р» Сѓ РЅРµРіРѕ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹...";
 };
 
 FUNC INT DIA_Dar_DuDieb_Condition()
 {
-	if (Npc_KnowsInfo (other, DIA_Cipher_TradeWhat)) //von Diebstahl gehцrt
+	if (Npc_KnowsInfo (other, DIA_Cipher_TradeWhat)) //von Diebstahl gehС†rt
 	&& (MIS_Cipher_Paket == LOG_RUNNING)
 	{
 		return TRUE;
@@ -167,10 +167,10 @@ FUNC INT DIA_Dar_DuDieb_Condition()
 
 FUNC VOID DIA_Dar_DuDieb_Info()
 {
-	AI_Output (other, self, "DIA_Dar_DuDieb_15_00"); //Сифер сказал мне, что кто-то украл у него тюк болотной травы...
-	AI_Output (self, other, "DIA_Dar_DuDieb_03_01"); //(смеется идиотским приглушенным смехом)
-	AI_Output (other, self, "DIA_Dar_DuDieb_15_02"); //Ты ничего не знаешь об этом?
-	AI_Output (self, other, "DIA_Dar_DuDieb_03_03"); //(очень коротко) Нет.
+	AI_Output (other, self, "DIA_Dar_DuDieb_15_00"); //РЎРёС„РµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РєС‚Рѕ-С‚Рѕ СѓРєСЂР°Р» Сѓ РЅРµРіРѕ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹...
+	AI_Output (self, other, "DIA_Dar_DuDieb_03_01"); //(СЃРјРµРµС‚СЃСЏ РёРґРёРѕС‚СЃРєРёРј РїСЂРёРіР»СѓС€РµРЅРЅС‹Рј СЃРјРµС…РѕРј)
+	AI_Output (other, self, "DIA_Dar_DuDieb_15_02"); //РўС‹ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј?
+	AI_Output (self, other, "DIA_Dar_DuDieb_03_03"); //(РѕС‡РµРЅСЊ РєРѕСЂРѕС‚РєРѕ) РќРµС‚.
 	
 	Dar_Verdacht = TRUE;
 };
@@ -186,7 +186,7 @@ INSTANCE DIA_Dar_WoPaket (C_INFO)
 	condition   = DIA_Dar_WoPaket_Condition;
 	information = DIA_Dar_WoPaket_Info;
 	permanent   = TRUE;
-	description = "Где тюк?";
+	description = "Р“РґРµ С‚СЋРє?";
 };
 
 FUNC INT DIA_Dar_WoPaket_Condition()
@@ -201,22 +201,22 @@ FUNC INT DIA_Dar_WoPaket_Condition()
 
 FUNC VOID DIA_Dar_WoPaket_Info()
 {
-	AI_Output (other, self, "DIA_Dar_WoPaket_15_00"); //(угрожающе) Где тюк?
+	AI_Output (other, self, "DIA_Dar_WoPaket_15_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р“РґРµ С‚СЋРє?
 		
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{	
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_01"); //Хорошо, хорошо, хорошо. Я продал его какому-то идиоту в городе.
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_02"); //Это было в гавани. Я не помню, как он выглядел.
-		AI_Output (other, self, "DIA_Dar_WoPaket_15_03"); //Может, тебе нужна еще одна хорошая встряска?
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_04"); //Если честно, я был обкуренный в хлам. Я совершенно не представляю, как этот парень выглядел.
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_05"); //Это было в гавани около кораблестроителей. Это все, что я помню.
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_01"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. РЇ РїСЂРѕРґР°Р» РµРіРѕ РєР°РєРѕРјСѓ-С‚Рѕ РёРґРёРѕС‚Сѓ РІ РіРѕСЂРѕРґРµ.
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_02"); //Р­С‚Рѕ Р±С‹Р»Рѕ РІ РіР°РІР°РЅРё. РЇ РЅРµ РїРѕРјРЅСЋ, РєР°Рє РѕРЅ РІС‹РіР»СЏРґРµР».
+		AI_Output (other, self, "DIA_Dar_WoPaket_15_03"); //РњРѕР¶РµС‚, С‚РµР±Рµ РЅСѓР¶РЅР° РµС‰Рµ РѕРґРЅР° С…РѕСЂРѕС€Р°СЏ РІСЃС‚СЂСЏСЃРєР°?
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_04"); //Р•СЃР»Рё С‡РµСЃС‚РЅРѕ, СЏ Р±С‹Р» РѕР±РєСѓСЂРµРЅРЅС‹Р№ РІ С…Р»Р°Рј. РЇ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏСЋ, РєР°Рє СЌС‚РѕС‚ РїР°СЂРµРЅСЊ РІС‹РіР»СЏРґРµР».
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_05"); //Р­С‚Рѕ Р±С‹Р»Рѕ РІ РіР°РІР°РЅРё РѕРєРѕР»Рѕ РєРѕСЂР°Р±Р»РµСЃС‚СЂРѕРёС‚РµР»РµР№. Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ РїРѕРјРЅСЋ.
 	
 		Dar_Dieb = TRUE;
-		B_LogEntry (Topic_CipherPaket,"Дар признал, что украл тюк с травой. Он продал ее в портовом квартале Хориниса, около кораблестроителей.");
+		B_LogEntry (Topic_CipherPaket,"Р”Р°СЂ РїСЂРёР·РЅР°Р», С‡С‚Рѕ СѓРєСЂР°Р» С‚СЋРє СЃ С‚СЂР°РІРѕР№. РћРЅ РїСЂРѕРґР°Р» РµРµ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ РҐРѕСЂРёРЅРёСЃР°, РѕРєРѕР»Рѕ РєРѕСЂР°Р±Р»РµСЃС‚СЂРѕРёС‚РµР»РµР№.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_06"); //Что я могу знать?
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_06"); //Р§С‚Рѕ СЏ РјРѕРіСѓ Р·РЅР°С‚СЊ?
 	};
 };
 
@@ -231,7 +231,7 @@ INSTANCE DIA_Dar_AufsMaul (C_INFO)
 	condition   = DIA_Dar_AufsMaul_Condition;
 	information = DIA_Dar_AufsMaul_Info;
 	permanent   = FALSE;
-	description = "Я вышибу эту информацию из тебя!";
+	description = "РЇ РІС‹С€РёР±Сѓ СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ РёР· С‚РµР±СЏ!";
 };
 
 FUNC INT DIA_Dar_AufsMaul_Condition()
@@ -246,10 +246,10 @@ FUNC INT DIA_Dar_AufsMaul_Condition()
 
 FUNC VOID DIA_Dar_AufsMaul_Info()
 {
-	AI_Output (other, self, "DIA_Dar_AufsMaul_15_00"); //Я вышибу эту информацию из тебя!
-	AI_Output (self, other, "DIA_Dar_AufsMaul_03_01"); //Расслабься. Я слишком обкурился, чтобы драться с тобой!
+	AI_Output (other, self, "DIA_Dar_AufsMaul_15_00"); //РЇ РІС‹С€РёР±Сѓ СЌС‚Сѓ РёРЅС„РѕСЂРјР°С†РёСЋ РёР· С‚РµР±СЏ!
+	AI_Output (self, other, "DIA_Dar_AufsMaul_03_01"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РЇ СЃР»РёС€РєРѕРј РѕР±РєСѓСЂРёР»СЃСЏ, С‡С‚РѕР±С‹ РґСЂР°С‚СЊСЃСЏ СЃ С‚РѕР±РѕР№!
 	B_GiveInvItems (self, other, itmi_joint, 1);
-	AI_Output (self, other, "DIA_Dar_AufsMaul_03_02"); //Вот, затянись!
+	AI_Output (self, other, "DIA_Dar_AufsMaul_03_02"); //Р’РѕС‚, Р·Р°С‚СЏРЅРёСЃСЊ!
 };
 
 // ************************************************************
@@ -277,11 +277,11 @@ FUNC INT DIA_Dar_Kameradenschwein_Condition()
 
 FUNC VOID DIA_Dar_Kameradenschwein_Info()
 {
-	AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_00"); //Трепач! Ты сказал Сиферу, что я взял его траву!
+	AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_00"); //РўСЂРµРїР°С‡! РўС‹ СЃРєР°Р·Р°Р» РЎРёС„РµСЂСѓ, С‡С‚Рѕ СЏ РІР·СЏР» РµРіРѕ С‚СЂР°РІСѓ!
 	if (Npc_KnowsInfo (other, DIA_Dar_WannaJoin))
 	&& (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_01");  //Я ни за что не проголосую за тебя.
+		AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_01");  //РЇ РЅРё Р·Р° С‡С‚Рѕ РЅРµ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ.
 	};
 };
 
@@ -296,7 +296,7 @@ INSTANCE DIA_Dar_Pilztabak (C_INFO)
 	condition   = DIA_Dar_Pilztabak_Condition;
 	information = DIA_Dar_Pilztabak_Info;
 	permanent   = FALSE;
-	description	= "Ты когда-нибудь пробовал грибной табак?";
+	description	= "РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РїСЂРѕР±РѕРІР°Р» РіСЂРёР±РЅРѕР№ С‚Р°Р±Р°Рє?";
 };
 
 FUNC INT DIA_Dar_Pilztabak_Condition()
@@ -309,23 +309,23 @@ FUNC INT DIA_Dar_Pilztabak_Condition()
 
 FUNC VOID DIA_Dar_Pilztabak_Info()
 {
-	AI_Output (other, self, "DIA_Dar_Pilztabak_15_00"); //Ты когда-нибудь пробовал грибной табак?
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_01"); //Звучит интересно. Дай его сюда.
+	AI_Output (other, self, "DIA_Dar_Pilztabak_15_00"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РїСЂРѕР±РѕРІР°Р» РіСЂРёР±РЅРѕР№ С‚Р°Р±Р°Рє?
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_01"); //Р—РІСѓС‡РёС‚ РёРЅС‚РµСЂРµСЃРЅРѕ. Р”Р°Р№ РµРіРѕ СЃСЋРґР°.
 	B_GiveInvItems (other, self, Itmi_Pilztabak, 1);
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_02"); //Так, попробуем...
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_02"); //РўР°Рє, РїРѕРїСЂРѕР±СѓРµРј...
 	CreateInvItem (self, itmi_joint);
 	B_UseItem (self, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_03"); //Ты когда-нибудь курил его САМ?
-	AI_Output (other, self, "DIA_Dar_Pilztabak_15_04"); //Ну...
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_03"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РєСѓСЂРёР» РµРіРѕ РЎРђРњ?
+	AI_Output (other, self, "DIA_Dar_Pilztabak_15_04"); //РќСѓ...
 	CreateInvItem (self, itmi_joint);
 	B_UseItem (self, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_05"); //Курил или нет?
-	AI_Output (other, self, "DIA_Dar_Pilztabak_15_06"); //Мне было некогда...
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_07"); //Ох, черт!
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_05"); //РљСѓСЂРёР» РёР»Рё РЅРµС‚?
+	AI_Output (other, self, "DIA_Dar_Pilztabak_15_06"); //РњРЅРµ Р±С‹Р»Рѕ РЅРµРєРѕРіРґР°...
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_07"); //РћС…, С‡РµСЂС‚!
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_08"); //Святой Робар!
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_08"); //РЎРІСЏС‚РѕР№ Р РѕР±Р°СЂ!
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_09"); //Это дерьмо слишком крутое! Даже и не вздумай пробовать!
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_09"); //Р­С‚Рѕ РґРµСЂСЊРјРѕ СЃР»РёС€РєРѕРј РєСЂСѓС‚РѕРµ! Р”Р°Р¶Рµ Рё РЅРµ РІР·РґСѓРјР°Р№ РїСЂРѕР±РѕРІР°С‚СЊ!
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -409,7 +409,7 @@ instance DIA_Dar_ORCRING		(C_INFO)
 	condition	 = 	DIA_Dar_ORCRING_Condition;
 	information	 = 	DIA_Dar_ORCRING_Info;
 
-	description	 = 	"Похоже, часть наемников исчезла.";
+	description	 = 	"РџРѕС…РѕР¶Рµ, С‡Р°СЃС‚СЊ РЅР°РµРјРЅРёРєРѕРІ РёСЃС‡РµР·Р»Р°.";
 };
 
 func int DIA_Dar_ORCRING_Condition ()
@@ -422,82 +422,82 @@ func int DIA_Dar_ORCRING_Condition ()
 
 func void DIA_Dar_ORCRING_Info ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_15_00"); //Похоже, часть наемников исчезла.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_03_01"); //Конечно. Это так. Сильвио сейчас очень далеко, и он увел с собой половину людей.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_03_02"); //Мне плевать. У меня будет больше шансов показать себя и заслужить уважение Ли. Для этого нужно сделать что-нибудь громкое.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_03_03"); //Если я смогу принести доказательство, что действительно крутой парень, возможно, я даже смогу стать одним из телохранителей Ли.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_15_00"); //РџРѕС…РѕР¶Рµ, С‡Р°СЃС‚СЊ РЅР°РµРјРЅРёРєРѕРІ РёСЃС‡РµР·Р»Р°.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_03_01"); //РљРѕРЅРµС‡РЅРѕ. Р­С‚Рѕ С‚Р°Рє. РЎРёР»СЊРІРёРѕ СЃРµР№С‡Р°СЃ РѕС‡РµРЅСЊ РґР°Р»РµРєРѕ, Рё РѕРЅ СѓРІРµР» СЃ СЃРѕР±РѕР№ РїРѕР»РѕРІРёРЅСѓ Р»СЋРґРµР№.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_03_02"); //РњРЅРµ РїР»РµРІР°С‚СЊ. РЈ РјРµРЅСЏ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ С€Р°РЅСЃРѕРІ РїРѕРєР°Р·Р°С‚СЊ СЃРµР±СЏ Рё Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ Р›Рё. Р”Р»СЏ СЌС‚РѕРіРѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РіСЂРѕРјРєРѕРµ.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_03_03"); //Р•СЃР»Рё СЏ СЃРјРѕРіСѓ РїСЂРёРЅРµСЃС‚Рё РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ, С‡С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РєСЂСѓС‚РѕР№ РїР°СЂРµРЅСЊ, РІРѕР·РјРѕР¶РЅРѕ, СЏ РґР°Р¶Рµ СЃРјРѕРіСѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· С‚РµР»РѕС…СЂР°РЅРёС‚РµР»РµР№ Р›Рё.
 
 	Info_ClearChoices	(DIA_Dar_ORCRING);
-	Info_AddChoice	(DIA_Dar_ORCRING, "Меня это не интересует.", DIA_Dar_ORCRING_no );
-	Info_AddChoice	(DIA_Dar_ORCRING, "Крутой парень? Ты?", DIA_Dar_ORCRING_necken );
+	Info_AddChoice	(DIA_Dar_ORCRING, "РњРµРЅСЏ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚.", DIA_Dar_ORCRING_no );
+	Info_AddChoice	(DIA_Dar_ORCRING, "РљСЂСѓС‚РѕР№ РїР°СЂРµРЅСЊ? РўС‹?", DIA_Dar_ORCRING_necken );
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG) || (hero.guild == GIL_KDF))
 	{
-		Info_AddChoice	(DIA_Dar_ORCRING, "Как это должно выглядеть?", DIA_Dar_ORCRING_wie );
+		Info_AddChoice	(DIA_Dar_ORCRING, "РљР°Рє СЌС‚Рѕ РґРѕР»Р¶РЅРѕ РІС‹РіР»СЏРґРµС‚СЊ?", DIA_Dar_ORCRING_wie );
 	};
 };
 
 func void DIA_Dar_ORCRING_necken ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_15_00"); //Крутой парень? Ты?
-	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_01"); //(злобно) Ох, ладно, заткнись. Ты-то вообще кто такой?
+	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_15_00"); //РљСЂСѓС‚РѕР№ РїР°СЂРµРЅСЊ? РўС‹?
+	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_01"); //(Р·Р»РѕР±РЅРѕ) РћС…, Р»Р°РґРЅРѕ, Р·Р°С‚РєРЅРёСЃСЊ. РўС‹-С‚Рѕ РІРѕРѕР±С‰Рµ РєС‚Рѕ С‚Р°РєРѕР№?
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_02"); //Какой-то надутый простофиля из города. Тебе вообще ничего не светит.
+			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_02"); //РљР°РєРѕР№-С‚Рѕ РЅР°РґСѓС‚С‹Р№ РїСЂРѕСЃС‚РѕС„РёР»СЏ РёР· РіРѕСЂРѕРґР°. РўРµР±Рµ РІРѕРѕР±С‰Рµ РЅРёС‡РµРіРѕ РЅРµ СЃРІРµС‚РёС‚.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_03"); //Ты здесь всего пару дней и уже задрал нос выше облаков.
+			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_03"); //РўС‹ Р·РґРµСЃСЊ РІСЃРµРіРѕ РїР°СЂСѓ РґРЅРµР№ Рё СѓР¶Рµ Р·Р°РґСЂР°Р» РЅРѕСЃ РІС‹С€Рµ РѕР±Р»Р°РєРѕРІ.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_04"); //Кого ты хочешь напугать этой своей магической чушью? Только не меня.
+			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_04"); //РљРѕРіРѕ С‚С‹ С…РѕС‡РµС€СЊ РЅР°РїСѓРіР°С‚СЊ СЌС‚РѕР№ СЃРІРѕРµР№ РјР°РіРёС‡РµСЃРєРѕР№ С‡СѓС€СЊСЋ? РўРѕР»СЊРєРѕ РЅРµ РјРµРЅСЏ.
 		}; 
 	
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 	{
-		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_05"); //И даже, если подумать, раскроить твой череп - именно то, что мне нужно, чтобы заслужить уважение Ли и его парней.
+		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_05"); //Р РґР°Р¶Рµ, РµСЃР»Рё РїРѕРґСѓРјР°С‚СЊ, СЂР°СЃРєСЂРѕРёС‚СЊ С‚РІРѕР№ С‡РµСЂРµРї - РёРјРµРЅРЅРѕ С‚Рѕ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ, С‡С‚РѕР±С‹ Р·Р°СЃР»СѓР¶РёС‚СЊ СѓРІР°Р¶РµРЅРёРµ Р›Рё Рё РµРіРѕ РїР°СЂРЅРµР№.
 
 		Info_ClearChoices	(DIA_Dar_ORCRING);
-		Info_AddChoice	(DIA_Dar_ORCRING, "У меня нет времени на эту чушь.", DIA_Dar_ORCRING_necken_no );
-		Info_AddChoice	(DIA_Dar_ORCRING, "Ладно. Попробуй.", DIA_Dar_ORCRING_necken_schlagen );
+		Info_AddChoice	(DIA_Dar_ORCRING, "РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Сѓ С‡СѓС€СЊ.", DIA_Dar_ORCRING_necken_no );
+		Info_AddChoice	(DIA_Dar_ORCRING, "Р›Р°РґРЅРѕ. РџРѕРїСЂРѕР±СѓР№.", DIA_Dar_ORCRING_necken_schlagen );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_06"); //Ты подожди. Я найду способ произвести впечатление на Ли.
+		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_06"); //РўС‹ РїРѕРґРѕР¶РґРё. РЇ РЅР°Р№РґСѓ СЃРїРѕСЃРѕР± РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° Р›Рё.
 	};
 };
 var int Dar_FightAgainstPaladin;
 func void DIA_Dar_ORCRING_necken_schlagen ()
 {
 	Dar_FightAgainstPaladin = TRUE;
-	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_schlagen_15_00"); //Ладно. Попробуй.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_schlagen_03_01"); //Ох, я не могу ждать.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_schlagen_15_00"); //Р›Р°РґРЅРѕ. РџРѕРїСЂРѕР±СѓР№.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_schlagen_03_01"); //РћС…, СЏ РЅРµ РјРѕРіСѓ Р¶РґР°С‚СЊ.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };
 
 func void DIA_Dar_ORCRING_necken_no ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_no_15_00"); //У меня нет времени на эту чушь.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_no_03_01"); //О, да. Ты же рыцарь правосудия, как я мог забыть. Жаль. Я думал, что у тебя больше мужества.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_no_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Сѓ С‡СѓС€СЊ.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_no_03_01"); //Рћ, РґР°. РўС‹ Р¶Рµ СЂС‹С†Р°СЂСЊ РїСЂР°РІРѕСЃСѓРґРёСЏ, РєР°Рє СЏ РјРѕРі Р·Р°Р±С‹С‚СЊ. Р–Р°Р»СЊ. РЇ РґСѓРјР°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ Р±РѕР»СЊС€Рµ РјСѓР¶РµСЃС‚РІР°.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Dar_ORCRING_wie ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_wie_15_00"); //Как это должно выглядеть?
-	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_01"); //Я не знаю точно. Какой-нибудь трофей орков вполне подошел бы.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_02"); //Что-нибудь вроде эмблемы лидера орков, ну или что-то вроде. Знамя, нарукавная нашивка или кольцо, ну, ты понял.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_03"); //Я не смогу произвести впечатление без этого. Это очевидно.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_wie_15_00"); //РљР°Рє СЌС‚Рѕ РґРѕР»Р¶РЅРѕ РІС‹РіР»СЏРґРµС‚СЊ?
+	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_01"); //РЇ РЅРµ Р·РЅР°СЋ С‚РѕС‡РЅРѕ. РљР°РєРѕР№-РЅРёР±СѓРґСЊ С‚СЂРѕС„РµР№ РѕСЂРєРѕРІ РІРїРѕР»РЅРµ РїРѕРґРѕС€РµР» Р±С‹.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_02"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РІСЂРѕРґРµ СЌРјР±Р»РµРјС‹ Р»РёРґРµСЂР° РѕСЂРєРѕРІ, РЅСѓ РёР»Рё С‡С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ. Р—РЅР°РјСЏ, РЅР°СЂСѓРєР°РІРЅР°СЏ РЅР°С€РёРІРєР° РёР»Рё РєРѕР»СЊС†Рѕ, РЅСѓ, С‚С‹ РїРѕРЅСЏР».
+	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_03"); //РЇ РЅРµ СЃРјРѕРіСѓ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ Р±РµР· СЌС‚РѕРіРѕ. Р­С‚Рѕ РѕС‡РµРІРёРґРЅРѕ.
 	
 	Log_CreateTopic (TOPIC_Dar_BringOrcEliteRing, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Dar_BringOrcEliteRing, LOG_RUNNING);
-	B_LogEntry (TOPIC_Dar_BringOrcEliteRing,"Дар хочет стать важной шишкой в рядах наемников. Он хочет заполучить трофей орков. Знамя, нарукавную нашивку, кольцо, или еще что-нибудь."); 
+	B_LogEntry (TOPIC_Dar_BringOrcEliteRing,"Р”Р°СЂ С…РѕС‡РµС‚ СЃС‚Р°С‚СЊ РІР°Р¶РЅРѕР№ С€РёС€РєРѕР№ РІ СЂСЏРґР°С… РЅР°РµРјРЅРёРєРѕРІ. РћРЅ С…РѕС‡РµС‚ Р·Р°РїРѕР»СѓС‡РёС‚СЊ С‚СЂРѕС„РµР№ РѕСЂРєРѕРІ. Р—РЅР°РјСЏ, РЅР°СЂСѓРєР°РІРЅСѓСЋ РЅР°С€РёРІРєСѓ, РєРѕР»СЊС†Рѕ, РёР»Рё РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ."); 
 
 	MIS_Dar_BringOrcEliteRing = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Dar_ORCRING);
@@ -505,8 +505,8 @@ func void DIA_Dar_ORCRING_wie ()
 
 func void DIA_Dar_ORCRING_no ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_no_15_00"); //Меня это не интересует.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_no_03_01"); //(злобно) Конечно нет. Я бы очень удивился, если бы это было не так.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_no_15_00"); //РњРµРЅСЏ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_no_03_01"); //(Р·Р»РѕР±РЅРѕ) РљРѕРЅРµС‡РЅРѕ РЅРµС‚. РЇ Р±С‹ РѕС‡РµРЅСЊ СѓРґРёРІРёР»СЃСЏ, РµСЃР»Рё Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє.
 	Info_ClearChoices	(DIA_Dar_ORCRING);
 };
 
@@ -533,8 +533,8 @@ func int DIA_Dar_FIGHTAGAINSTPALOVER_Condition ()
 
 func void DIA_Dar_FIGHTAGAINSTPALOVER_Info ()
 {
-	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_00"); //Хорошо, я знаю, что Ли не особенно разозлится, если я опять сцеплюсь с тобой.
-	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_01"); //Я не хочу заводить себе здесь врагов. Так что забудем об этом, хорошо?
+	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_00"); //РҐРѕСЂРѕС€Рѕ, СЏ Р·РЅР°СЋ, С‡С‚Рѕ Р›Рё РЅРµ РѕСЃРѕР±РµРЅРЅРѕ СЂР°Р·РѕР·Р»РёС‚СЃСЏ, РµСЃР»Рё СЏ РѕРїСЏС‚СЊ СЃС†РµРїР»СЋСЃСЊ СЃ С‚РѕР±РѕР№.
+	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_01"); //РЇ РЅРµ С…РѕС‡Сѓ Р·Р°РІРѕРґРёС‚СЊ СЃРµР±Рµ Р·РґРµСЃСЊ РІСЂР°РіРѕРІ. РўР°Рє С‡С‚Рѕ Р·Р°Р±СѓРґРµРј РѕР± СЌС‚РѕРј, С…РѕСЂРѕС€Рѕ?
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };
@@ -549,7 +549,7 @@ instance DIA_Dar_BRINGORCELITERING		(C_INFO)
 	condition	 = 	DIA_Dar_BRINGORCELITERING_Condition;
 	information	 = 	DIA_Dar_BRINGORCELITERING_Info;
 
-	description	 = 	"Я принес трофей орков, который ты искал.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С‚СЂРѕС„РµР№ РѕСЂРєРѕРІ, РєРѕС‚РѕСЂС‹Р№ С‚С‹ РёСЃРєР°Р».";
 };
 
 func int DIA_Dar_BRINGORCELITERING_Condition ()
@@ -564,50 +564,50 @@ func int DIA_Dar_BRINGORCELITERING_Condition ()
 
 func void DIA_Dar_BRINGORCELITERING_Info ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_00"); //Я принес трофей орков, который ты искал.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_01"); //Что ты там принес мне?
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_02"); //Кольцо предводителя орков.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_03"); //Ух ты, в таком случае... Что ты хочешь за него?
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚СЂРѕС„РµР№ РѕСЂРєРѕРІ, РєРѕС‚РѕСЂС‹Р№ С‚С‹ РёСЃРєР°Р».
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_01"); //Р§С‚Рѕ С‚С‹ С‚Р°Рј РїСЂРёРЅРµСЃ РјРЅРµ?
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_02"); //РљРѕР»СЊС†Рѕ РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РѕСЂРєРѕРІ.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_03"); //РЈС… С‚С‹, РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ... Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° РЅРµРіРѕ?
 	MIS_Dar_BringOrcEliteRing = LOG_SUCCESS;
 
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
 
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Что ты можешь предложить мне?", DIA_Dar_BRINGORCELITERING_was );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?", DIA_Dar_BRINGORCELITERING_was );
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Заплати мне золотом.", DIA_Dar_BRINGORCELITERING_geld );
+		Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Р—Р°РїР»Р°С‚Рё РјРЅРµ Р·РѕР»РѕС‚РѕРј.", DIA_Dar_BRINGORCELITERING_geld );
 	};
 		
 };
 func void DIA_Dar_BRINGORCELITERING_geld ()
 {
 	
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_00"); //Заплати мне золотом.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_00"); //Р—Р°РїР»Р°С‚Рё РјРЅРµ Р·РѕР»РѕС‚РѕРј.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_01"); //Ммм. 600 золотых монет?
-		AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_02"); //Что?
+		AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_01"); //РњРјРј. 600 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚?
+		AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_02"); //Р§С‚Рѕ?
 	};
 
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_03"); //Ладно. Я дам тебе 1200 монет.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_03"); //Р›Р°РґРЅРѕ. РЇ РґР°Рј С‚РµР±Рµ 1200 РјРѕРЅРµС‚.
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_04"); //Забирай их или оставь себе это кольцо.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_04"); //Р—Р°Р±РёСЂР°Р№ РёС… РёР»Рё РѕСЃС‚Р°РІСЊ СЃРµР±Рµ СЌС‚Рѕ РєРѕР»СЊС†Рѕ.
 	};
 	
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Этого недостаточно.", DIA_Dar_BRINGORCELITERING_geld_no );
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Договорились.", DIA_Dar_BRINGORCELITERING_geld_ok );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.", DIA_Dar_BRINGORCELITERING_geld_no );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ.", DIA_Dar_BRINGORCELITERING_geld_ok );
 
 };
 func void DIA_Dar_BRINGORCELITERING_geld_ok ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_ok_15_00"); //Договорились. Держи кольцо.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_ok_15_00"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. Р”РµСЂР¶Рё РєРѕР»СЊС†Рѕ.
 	B_GiveInvItems 		(other, self, ItRi_OrcEliteRing, 1);					
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_ok_03_01"); //Спасибо. Не терпится услышать, что другие скажут об этом.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_ok_03_01"); //РЎРїР°СЃРёР±Рѕ. РќРµ С‚РµСЂРїРёС‚СЃСЏ СѓСЃР»С‹С€Р°С‚СЊ, С‡С‚Рѕ РґСЂСѓРіРёРµ СЃРєР°Р¶СѓС‚ РѕР± СЌС‚РѕРј.
 
 	CreateInvItems 		(self, ItMi_Gold, 1200);									
 	B_GiveInvItems 		(self, other, ItMi_Gold, 1200);					
@@ -618,33 +618,33 @@ func void DIA_Dar_BRINGORCELITERING_geld_ok ()
 
 func void DIA_Dar_BRINGORCELITERING_geld_no ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_no_15_00"); //Этого недостаточно.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_no_03_01"); //А я думаю, что это слишком много. Этот бизнес не нравится мне. Не хочу обидеть.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_no_15_00"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_no_03_01"); //Рђ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ СЌС‚Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ. Р­С‚РѕС‚ Р±РёР·РЅРµСЃ РЅРµ РЅСЂР°РІРёС‚СЃСЏ РјРЅРµ. РќРµ С…РѕС‡Сѓ РѕР±РёРґРµС‚СЊ.
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
 };
 
 func void DIA_Dar_BRINGORCELITERING_was ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_15_00"); //Что ты можешь предложить мне?
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_01"); //Либо забирай деньги, либо этот амулет, который я... ну, скажем, приобрел недавно.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_02"); //Он повысит твою ловкость. Я сам испытывал его.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_01"); //Р›РёР±Рѕ Р·Р°Р±РёСЂР°Р№ РґРµРЅСЊРіРё, Р»РёР±Рѕ СЌС‚РѕС‚ Р°РјСѓР»РµС‚, РєРѕС‚РѕСЂС‹Р№ СЏ... РЅСѓ, СЃРєР°Р¶РµРј, РїСЂРёРѕР±СЂРµР» РЅРµРґР°РІРЅРѕ.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_02"); //РћРЅ РїРѕРІС‹СЃРёС‚ С‚РІРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ. РЇ СЃР°Рј РёСЃРїС‹С‚С‹РІР°Р» РµРіРѕ.
 
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Заплати мне золотом.", DIA_Dar_BRINGORCELITERING_geld );
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Давай мне амулет.", DIA_Dar_BRINGORCELITERING_was_am );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Р—Р°РїР»Р°С‚Рё РјРЅРµ Р·РѕР»РѕС‚РѕРј.", DIA_Dar_BRINGORCELITERING_geld );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Р”Р°РІР°Р№ РјРЅРµ Р°РјСѓР»РµС‚.", DIA_Dar_BRINGORCELITERING_was_am );
 };
 
 func void DIA_Dar_BRINGORCELITERING_was_am ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_am_15_00"); //Давай мне амулет.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_01"); //Конечно. Пусть он доставит тебе радость. Теперь давай мне это кольцо.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_am_15_00"); //Р”Р°РІР°Р№ РјРЅРµ Р°РјСѓР»РµС‚.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_01"); //РљРѕРЅРµС‡РЅРѕ. РџСѓСЃС‚СЊ РѕРЅ РґРѕСЃС‚Р°РІРёС‚ С‚РµР±Рµ СЂР°РґРѕСЃС‚СЊ. РўРµРїРµСЂСЊ РґР°РІР°Р№ РјРЅРµ СЌС‚Рѕ РєРѕР»СЊС†Рѕ.
 
 	B_GiveInvItems 		(other, self, ItRi_OrcEliteRing, 1);					
 	CreateInvItems 		(self, ItAm_Dex_01, 1);									
 	B_GiveInvItems 		(self, other, ItAm_Dex_01, 1);					
 	B_GivePlayerXP 		(XP_Dar_BringOrcEliteRing);
 
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_02"); //Теперь я счастлив.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_02"); //РўРµРїРµСЂСЊ СЏ СЃС‡Р°СЃС‚Р»РёРІ.
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
 
 };

@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Crimson_Hi   (C_INFO)
 	condition   = DIA_Addon_Crimson_Hi_Condition;
 	information = DIA_Addon_Crimson_Hi_Info;
 	permanent   = FALSE;
-	description = "Что ты делаешь? Ты плавишь наше золото?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ? РўС‹ РїР»Р°РІРёС€СЊ РЅР°С€Рµ Р·РѕР»РѕС‚Рѕ?";
 };
 FUNC INT DIA_Addon_Crimson_Hi_Condition()
 {	
@@ -71,10 +71,10 @@ FUNC INT DIA_Addon_Crimson_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Что ты делаешь? Ты плавишь наше золото?
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Нет, мою овощи. Конечно же, я плавлю золото. И отливаю из него монеты.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//Представляешь, однажды вечером Ворон подошел ко мне и бросил мне форму для отливки.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Из одного самородка я могу сделать целую пригоршню монет. Они получаются такого качества, что от настоящих их не отличить!
+	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ? РўС‹ РїР»Р°РІРёС€СЊ РЅР°С€Рµ Р·РѕР»РѕС‚Рѕ?
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//РќРµС‚, РјРѕСЋ РѕРІРѕС‰Рё. РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РїР»Р°РІР»СЋ Р·РѕР»РѕС‚Рѕ. Р РѕС‚Р»РёРІР°СЋ РёР· РЅРµРіРѕ РјРѕРЅРµС‚С‹.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//РџСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, РѕРґРЅР°Р¶РґС‹ РІРµС‡РµСЂРѕРј Р’РѕСЂРѕРЅ РїРѕРґРѕС€РµР» РєРѕ РјРЅРµ Рё Р±СЂРѕСЃРёР» РјРЅРµ С„РѕСЂРјСѓ РґР»СЏ РѕС‚Р»РёРІРєРё.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//РР· РѕРґРЅРѕРіРѕ СЃР°РјРѕСЂРѕРґРєР° СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ С†РµР»СѓСЋ РїСЂРёРіРѕСЂС€РЅСЋ РјРѕРЅРµС‚. РћРЅРё РїРѕР»СѓС‡Р°СЋС‚СЃСЏ С‚Р°РєРѕРіРѕ РєР°С‡РµСЃС‚РІР°, С‡С‚Рѕ РѕС‚ РЅР°СЃС‚РѕСЏС‰РёС… РёС… РЅРµ РѕС‚Р»РёС‡РёС‚СЊ!
 };
 //---------------------------------------------------------------------
 //	Info How
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Crimson_How   (C_INFO)
 	condition   = DIA_Addon_Crimson_How_Condition;
 	information = DIA_Addon_Crimson_How_Info;
 	permanent   = FALSE;
-	description = "Сколько монет ты дашь мне за самородок?";
+	description = "РЎРєРѕР»СЊРєРѕ РјРѕРЅРµС‚ С‚С‹ РґР°С€СЊ РјРЅРµ Р·Р° СЃР°РјРѕСЂРѕРґРѕРє?";
 };
 FUNC INT DIA_Addon_Crimson_How_Condition()
 {	
@@ -97,8 +97,8 @@ FUNC INT DIA_Addon_Crimson_How_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_How_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//Сколько монет ты дашь мне за самородок?
-	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//Ну, тебя я совсем не знаю, но думаю, что дам тебе особую цену. За один самородок я дам тебе...
+	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//РЎРєРѕР»СЊРєРѕ РјРѕРЅРµС‚ С‚С‹ РґР°С€СЊ РјРЅРµ Р·Р° СЃР°РјРѕСЂРѕРґРѕРє?
+	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//РќСѓ, С‚РµР±СЏ СЏ СЃРѕРІСЃРµРј РЅРµ Р·РЅР°СЋ, РЅРѕ РґСѓРјР°СЋ, С‡С‚Рѕ РґР°Рј С‚РµР±Рµ РѕСЃРѕР±СѓСЋ С†РµРЅСѓ. Р—Р° РѕРґРёРЅ СЃР°РјРѕСЂРѕРґРѕРє СЏ РґР°Рј С‚РµР±Рµ...
 	B_Say_Gold (self, other, 10);
 };	
 //---------------------------------------------------------------------
@@ -111,7 +111,7 @@ INSTANCE DIA_Addon_Crimson_Feilsch   (C_INFO)
 	condition   = DIA_Addon_Crimson_Feilsch_Condition;
 	information = DIA_Addon_Crimson_Feilsch_Info;
 	permanent   = FALSE;
-	description = "Давай поторгуемся!";
+	description = "Р”Р°РІР°Р№ РїРѕС‚РѕСЂРіСѓРµРјСЃСЏ!";
 };
 FUNC INT DIA_Addon_Crimson_Feilsch_Condition()
 {	
@@ -122,10 +122,10 @@ FUNC INT DIA_Addon_Crimson_Feilsch_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Feilsch_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");//Давай поторгуемся!
-	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");//Хм-м, нет. Столько я даю каждому рудокопу.
-	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//Но ты говорил, что это особая цена.
-	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//Это так. Я всем плачу особую цену.
+	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");//Р”Р°РІР°Р№ РїРѕС‚РѕСЂРіСѓРµРјСЃСЏ!
+	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");//РҐРј-Рј, РЅРµС‚. РЎС‚РѕР»СЊРєРѕ СЏ РґР°СЋ РєР°Р¶РґРѕРјСѓ СЂСѓРґРѕРєРѕРїСѓ.
+	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//РќРѕ С‚С‹ РіРѕРІРѕСЂРёР», С‡С‚Рѕ СЌС‚Рѕ РѕСЃРѕР±Р°СЏ С†РµРЅР°.
+	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//Р­С‚Рѕ С‚Р°Рє. РЇ РІСЃРµРј РїР»Р°С‡Сѓ РѕСЃРѕР±СѓСЋ С†РµРЅСѓ.
 };	
 //---------------------------------------------------------------------
 //	Info Gold tauschen
@@ -137,7 +137,7 @@ INSTANCE DIA_Addon_Crimson_Gold   (C_INFO)
 	condition   = DIA_Addon_Crimson_Gold_Condition;
 	information = DIA_Addon_Crimson_Gold_Info;
 	permanent   = TRUE;
-	description = "Продать золотые слитки...";
+	description = "РџСЂРѕРґР°С‚СЊ Р·РѕР»РѕС‚С‹Рµ СЃР»РёС‚РєРё...";
 };
 FUNC INT DIA_Addon_Crimson_Gold_Condition()
 {	
@@ -148,19 +148,19 @@ FUNC INT DIA_Addon_Crimson_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Gold_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Gold_15_00");//Займемся торговлей...
+	AI_Output (other, self, "DIA_Addon_Crimson_Gold_15_00");//Р—Р°Р№РјРµРјСЃСЏ С‚РѕСЂРіРѕРІР»РµР№...
 	
 	Info_ClearChoices (DIA_Addon_Crimson_Gold);
 	Info_AddChoice (DIA_Addon_Crimson_Gold,DIALOG_BACK,DIA_Addon_Crimson_Gold_BACK);
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Продать все золотые слитки",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Продать 1 золотой слиток",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"РџСЂРѕРґР°С‚СЊ РІСЃРµ Р·РѕР»РѕС‚С‹Рµ СЃР»РёС‚РєРё",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"РџСЂРѕРґР°С‚СЊ 1 Р·РѕР»РѕС‚РѕР№ СЃР»РёС‚РѕРє",DIA_Addon_Crimson_Gold_1);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_Gold_10_01");//Но у тебя с собой нет ни одного самородка.
+		AI_Output (self, other, "DIA_Addon_Crimson_Gold_10_01");//РќРѕ Сѓ С‚РµР±СЏ СЃ СЃРѕР±РѕР№ РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ СЃР°РјРѕСЂРѕРґРєР°.
 	};
 };	
 FUNC VOID DIA_Addon_Crimson_Gold_BACK()
@@ -180,8 +180,8 @@ FUNC VOID DIA_Addon_Crimson_Gold_ALLE()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Продать все золотые слитки",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Продать 1 золотой слиток",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"РџСЂРѕРґР°С‚СЊ РІСЃРµ Р·РѕР»РѕС‚С‹Рµ СЃР»РёС‚РєРё",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"РџСЂРѕРґР°С‚СЊ 1 Р·РѕР»РѕС‚РѕР№ СЃР»РёС‚РѕРє",DIA_Addon_Crimson_Gold_1);
 	};
 };
 FUNC VOID DIA_Addon_Crimson_Gold_1()
@@ -194,13 +194,13 @@ FUNC VOID DIA_Addon_Crimson_Gold_1()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Продать все золотые слитки",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"Продать 1 золотой слиток",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"РџСЂРѕРґР°С‚СЊ РІСЃРµ Р·РѕР»РѕС‚С‹Рµ СЃР»РёС‚РєРё",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"РџСЂРѕРґР°С‚СЊ 1 Р·РѕР»РѕС‚РѕР№ СЃР»РёС‚РѕРє",DIA_Addon_Crimson_Gold_1);
 	};
 };
 FUNC VOID B_Say_CrimsonBeliar()
 {
-	AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_LOS_10_00");//КАРДИМОН ФАТАГН ШАТАР ФАТАГН БЕЛИАР.
+	AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_LOS_10_00");//РљРђР Р”РРњРћРќ Р¤РђРўРђР“Рќ РЁРђРўРђР  Р¤РђРўРђР“Рќ Р‘Р•Р›РРђР .
 };
 
 //---------------------------------------------------------------------
@@ -213,7 +213,7 @@ INSTANCE DIA_Addon_Crimson_Raven   (C_INFO)
 	condition   = DIA_Addon_Crimson_Raven_Condition;
 	information = DIA_Addon_Crimson_Raven_Info;
 	permanent   = FALSE;
-	description = "Что ты знаешь о Вороне?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р’РѕСЂРѕРЅРµ?";
 };
 FUNC INT DIA_Addon_Crimson_Raven_Condition()
 {	
@@ -224,14 +224,14 @@ FUNC INT DIA_Addon_Crimson_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Raven_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Что ты знаешь о Вороне?
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//Ты не поверишь! Я был там. Я видел, что он делал в гробнице!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//(со страхом) Он бормотал и выкрикивал какие-то странные слова. Снова и снова...
+	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ Р’РѕСЂРѕРЅРµ?
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//РўС‹ РЅРµ РїРѕРІРµСЂРёС€СЊ! РЇ Р±С‹Р» С‚Р°Рј. РЇ РІРёРґРµР», С‡С‚Рѕ РѕРЅ РґРµР»Р°Р» РІ РіСЂРѕР±РЅРёС†Рµ!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//(СЃРѕ СЃС‚СЂР°С…РѕРј) РћРЅ Р±РѕСЂРјРѕС‚Р°Р» Рё РІС‹РєСЂРёРєРёРІР°Р» РєР°РєРёРµ-С‚Рѕ СЃС‚СЂР°РЅРЅС‹Рµ СЃР»РѕРІР°. РЎРЅРѕРІР° Рё СЃРЅРѕРІР°...
 	B_Say_CrimsonBeliar();
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//А потом из могилы вырвался столб света, и я услышал ужасный вопль.
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//О боги... Этот голос... Он звучал, как голос предвестника конца света!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Ворон говорил с ним! Они разговаривали - Ворон и этот голос!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Я не помню, о чем они говорили. Но дрожь в конечностях мне удалось унять только через несколько часов.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//Рђ РїРѕС‚РѕРј РёР· РјРѕРіРёР»С‹ РІС‹СЂРІР°Р»СЃСЏ СЃС‚РѕР»Р± СЃРІРµС‚Р°, Рё СЏ СѓСЃР»С‹С€Р°Р» СѓР¶Р°СЃРЅС‹Р№ РІРѕРїР»СЊ.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//Рћ Р±РѕРіРё... Р­С‚РѕС‚ РіРѕР»РѕСЃ... РћРЅ Р·РІСѓС‡Р°Р», РєР°Рє РіРѕР»РѕСЃ РїСЂРµРґРІРµСЃС‚РЅРёРєР° РєРѕРЅС†Р° СЃРІРµС‚Р°!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Р’РѕСЂРѕРЅ РіРѕРІРѕСЂРёР» СЃ РЅРёРј! РћРЅРё СЂР°Р·РіРѕРІР°СЂРёРІР°Р»Рё - Р’РѕСЂРѕРЅ Рё СЌС‚РѕС‚ РіРѕР»РѕСЃ!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//РЇ РЅРµ РїРѕРјРЅСЋ, Рѕ С‡РµРј РѕРЅРё РіРѕРІРѕСЂРёР»Рё. РќРѕ РґСЂРѕР¶СЊ РІ РєРѕРЅРµС‡РЅРѕСЃС‚СЏС… РјРЅРµ СѓРґР°Р»РѕСЃСЊ СѓРЅСЏС‚СЊ С‚РѕР»СЊРєРѕ С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ С‡Р°СЃРѕРІ.
 };	
 //---------------------------------------------------------------------
 //	Info FATAGN
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_Crimson_FATAGN   (C_INFO)
 	condition   = DIA_Addon_Crimson_FATAGN_Condition;
 	information = DIA_Addon_Crimson_FATAGN_Info;
 	permanent   = TRUE;
-	description = "Ты можешь повторить слова Ворона?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїРѕРІС‚РѕСЂРёС‚СЊ СЃР»РѕРІР° Р’РѕСЂРѕРЅР°?";
 };
 FUNC INT DIA_Addon_Crimson_FATAGN_Condition()
 {	
@@ -257,18 +257,18 @@ FUNC VOID DIA_Addon_Crimson_FATAGN_Info()
 {
 	Crimson_SayBeliar = (Crimson_SayBeliar +1);
 	
-	AI_Output (other, self, "DIA_Addon_Crimson_FATAGN_15_00");//Ты можешь повторить слова Ворона?
+	AI_Output (other, self, "DIA_Addon_Crimson_FATAGN_15_00");//РўС‹ РјРѕР¶РµС€СЊ РїРѕРІС‚РѕСЂРёС‚СЊ СЃР»РѕРІР° Р’РѕСЂРѕРЅР°?
 	
 	if (Crimson_SayBeliar <= 3)
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_01");//Конечно. Ты готов?
+		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_01");//РљРѕРЅРµС‡РЅРѕ. РўС‹ РіРѕС‚РѕРІ?
 		
 		Info_ClearChoices (DIA_Addon_Crimson_FATAGN);
-		Info_AddChoice (DIA_Addon_Crimson_FATAGN,"Хорошо",DIA_Addon_Crimson_FATAGN_LOS);	
+		Info_AddChoice (DIA_Addon_Crimson_FATAGN,"РҐРѕСЂРѕС€Рѕ",DIA_Addon_Crimson_FATAGN_LOS);	
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_02");//Думаю, нам лучше не ввязываться в это...
+		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_02");//Р”СѓРјР°СЋ, РЅР°Рј Р»СѓС‡С€Рµ РЅРµ РІРІСЏР·С‹РІР°С‚СЊСЃСЏ РІ СЌС‚Рѕ...
 	};
 };	
 FUNC VOID DIA_Addon_Crimson_FATAGN_LOS()

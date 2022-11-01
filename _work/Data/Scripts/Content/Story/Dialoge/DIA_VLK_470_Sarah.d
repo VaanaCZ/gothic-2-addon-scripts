@@ -81,7 +81,7 @@ func int DIA_Sarah_Greet_Condition ()
 };
 func void DIA_Sarah_Greet_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_Add_16_07"); //Ах! Опять ты!
+	AI_Output (self, other, "DIA_Sarah_Add_16_07"); //РђС…! РћРїСЏС‚СЊ С‚С‹!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -93,7 +93,7 @@ instance DIA_Sarah_HALLO		(C_INFO)
 	condition	 = 	DIA_Sarah_HALLO_Condition;
 	information	 = 	DIA_Sarah_HALLO_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Как торговля?";
+	description	 = 	"РљР°Рє С‚РѕСЂРіРѕРІР»СЏ?";
 };
 
 func int DIA_Sarah_HALLO_Condition ()
@@ -102,14 +102,14 @@ func int DIA_Sarah_HALLO_Condition ()
 };
 func void DIA_Sarah_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Как торговля?
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Когда пришли паладины, я сначала думала, что это хорошо для бизнеса.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Но теперь Гарад делает для них оружие, а ни я, ни Хакон еще не получили от них ни одной монеты.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //И, что еще хуже, фермеры больше не поставляют нам продовольствие, и цены на все взлетели до небес.
-	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Одно маленькое утешение - паладины оплачивают мою комнату в отеле.
+	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //РљР°Рє С‚РѕСЂРіРѕРІР»СЏ?
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //РљРѕРіРґР° РїСЂРёС€Р»Рё РїР°Р»Р°РґРёРЅС‹, СЏ СЃРЅР°С‡Р°Р»Р° РґСѓРјР°Р»Р°, С‡С‚Рѕ СЌС‚Рѕ С…РѕСЂРѕС€Рѕ РґР»СЏ Р±РёР·РЅРµСЃР°.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //РќРѕ С‚РµРїРµСЂСЊ Р“Р°СЂР°Рґ РґРµР»Р°РµС‚ РґР»СЏ РЅРёС… РѕСЂСѓР¶РёРµ, Р° РЅРё СЏ, РЅРё РҐР°РєРѕРЅ РµС‰Рµ РЅРµ РїРѕР»СѓС‡РёР»Рё РѕС‚ РЅРёС… РЅРё РѕРґРЅРѕР№ РјРѕРЅРµС‚С‹.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Р, С‡С‚Рѕ РµС‰Рµ С…СѓР¶Рµ, С„РµСЂРјРµСЂС‹ Р±РѕР»СЊС€Рµ РЅРµ РїРѕСЃС‚Р°РІР»СЏСЋС‚ РЅР°Рј РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёРµ, Рё С†РµРЅС‹ РЅР° РІСЃРµ РІР·Р»РµС‚РµР»Рё РґРѕ РЅРµР±РµСЃ.
+	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //РћРґРЅРѕ РјР°Р»РµРЅСЊРєРѕРµ СѓС‚РµС€РµРЅРёРµ - РїР°Р»Р°РґРёРЅС‹ РѕРїР»Р°С‡РёРІР°СЋС‚ РјРѕСЋ РєРѕРјРЅР°С‚Сѓ РІ РѕС‚РµР»Рµ.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Сара торгует оружием на рыночной площади.");	
+	B_LogEntry (Topic_CityTrader,"РЎР°СЂР° С‚РѕСЂРіСѓРµС‚ РѕСЂСѓР¶РёРµРј РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Bauern
@@ -121,7 +121,7 @@ instance DIA_Sarah_Bauern		(C_INFO)
 	condition	 = 	DIA_Sarah_Bauern_Condition;
 	information	 = 	DIA_Sarah_Bauern_Info;
 	permanent	 =  FALSE;
-	description	 = 	"А что за проблема с фермерами?";
+	description	 = 	"Рђ С‡С‚Рѕ Р·Р° РїСЂРѕР±Р»РµРјР° СЃ С„РµСЂРјРµСЂР°РјРё?";
 };
 
 func int DIA_Sarah_Bauern_Condition ()
@@ -133,13 +133,13 @@ func int DIA_Sarah_Bauern_Condition ()
 };
 func void DIA_Sarah_Bauern_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //А что за проблема с фермерами?
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Они отказываются поставлять нам продовольствие.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Теперь, когда корабли больше не заходят в наш порт, город полностью зависит от продуктов, производимых нашими фермерами.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //А Онар, самый крупный фермер, нанял наемников, чтобы защищать свою ферму от городской стражи. До этого они забирали у него все подчистую.
-	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Но наемники не просто охраняют ферму Онара.
-	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Они добрались даже до маленьких ферм у города, и запугивают их владельцев.
-	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Я видела их, когда ходила на ферму Акила. Не хотела бы я сейчас оказаться на его месте.
+	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Рђ С‡С‚Рѕ Р·Р° РїСЂРѕР±Р»РµРјР° СЃ С„РµСЂРјРµСЂР°РјРё?
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //РћРЅРё РѕС‚РєР°Р·С‹РІР°СЋС‚СЃСЏ РїРѕСЃС‚Р°РІР»СЏС‚СЊ РЅР°Рј РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёРµ.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РєРѕСЂР°Р±Р»Рё Р±РѕР»СЊС€Рµ РЅРµ Р·Р°С…РѕРґСЏС‚ РІ РЅР°С€ РїРѕСЂС‚, РіРѕСЂРѕРґ РїРѕР»РЅРѕСЃС‚СЊСЋ Р·Р°РІРёСЃРёС‚ РѕС‚ РїСЂРѕРґСѓРєС‚РѕРІ, РїСЂРѕРёР·РІРѕРґРёРјС‹С… РЅР°С€РёРјРё С„РµСЂРјРµСЂР°РјРё.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //Рђ РћРЅР°СЂ, СЃР°РјС‹Р№ РєСЂСѓРїРЅС‹Р№ С„РµСЂРјРµСЂ, РЅР°РЅСЏР» РЅР°РµРјРЅРёРєРѕРІ, С‡С‚РѕР±С‹ Р·Р°С‰РёС‰Р°С‚СЊ СЃРІРѕСЋ С„РµСЂРјСѓ РѕС‚ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё. Р”Рѕ СЌС‚РѕРіРѕ РѕРЅРё Р·Р°Р±РёСЂР°Р»Рё Сѓ РЅРµРіРѕ РІСЃРµ РїРѕРґС‡РёСЃС‚СѓСЋ.
+	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //РќРѕ РЅР°РµРјРЅРёРєРё РЅРµ РїСЂРѕСЃС‚Рѕ РѕС…СЂР°РЅСЏСЋС‚ С„РµСЂРјСѓ РћРЅР°СЂР°.
+	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //РћРЅРё РґРѕР±СЂР°Р»РёСЃСЊ РґР°Р¶Рµ РґРѕ РјР°Р»РµРЅСЊРєРёС… С„РµСЂРј Сѓ РіРѕСЂРѕРґР°, Рё Р·Р°РїСѓРіРёРІР°СЋС‚ РёС… РІР»Р°РґРµР»СЊС†РµРІ.
+	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //РЇ РІРёРґРµР»Р° РёС…, РєРѕРіРґР° С…РѕРґРёР»Р° РЅР° С„РµСЂРјСѓ РђРєРёР»Р°. РќРµ С…РѕС‚РµР»Р° Р±С‹ СЏ СЃРµР№С‡Р°СЃ РѕРєР°Р·Р°С‚СЊСЃСЏ РЅР° РµРіРѕ РјРµСЃС‚Рµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -152,7 +152,7 @@ instance DIA_Sarah_AkilsHof		(C_INFO)
 	condition	 = 	DIA_Sarah_AkilsHof_Condition;
 	information	 = 	DIA_Sarah_AkilsHof_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Где мне найти ферму Акила?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ РђРєРёР»Р°?";
 };
 
 func int DIA_Sarah_AkilsHof_Condition ()
@@ -164,10 +164,10 @@ func int DIA_Sarah_AkilsHof_Condition ()
 };
 func void DIA_Sarah_AkilsHof_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Где мне найти ферму Акила?
-	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Если выйдешь из восточных ворот и пойдешь по дороге направо, скоро ты увидишь каменную лестницу.
-	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //Она ведет прямо к ферме Акила.
-	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Но я бы сейчас туда не совалась - эти наемники наверняка все еще там.
+	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ РђРєРёР»Р°?
+	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Р•СЃР»Рё РІС‹Р№РґРµС€СЊ РёР· РІРѕСЃС‚РѕС‡РЅС‹С… РІРѕСЂРѕС‚ Рё РїРѕР№РґРµС€СЊ РїРѕ РґРѕСЂРѕРіРµ РЅР°РїСЂР°РІРѕ, СЃРєРѕСЂРѕ С‚С‹ СѓРІРёРґРёС€СЊ РєР°РјРµРЅРЅСѓСЋ Р»РµСЃС‚РЅРёС†Сѓ.
+	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //РћРЅР° РІРµРґРµС‚ РїСЂСЏРјРѕ Рє С„РµСЂРјРµ РђРєРёР»Р°.
+	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //РќРѕ СЏ Р±С‹ СЃРµР№С‡Р°СЃ С‚СѓРґР° РЅРµ СЃРѕРІР°Р»Р°СЃСЊ - СЌС‚Рё РЅР°РµРјРЅРёРєРё РЅР°РІРµСЂРЅСЏРєР° РІСЃРµ РµС‰Рµ С‚Р°Рј.
 };
 
 
@@ -182,7 +182,7 @@ instance DIA_Sarah_Trade		(C_INFO)
 	information	 = 	DIA_Sarah_Trade_Info;
 	Trade		 = 	TRUE;
 	permanent	 =	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Sarah_Trade_Condition ()
@@ -197,7 +197,7 @@ func int DIA_Sarah_Trade_Condition ()
 func void DIA_Sarah_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Sarah_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Sarah_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	Sarah_WaffenGesehen = TRUE;
 	
@@ -225,8 +225,8 @@ func int DIA_Sarah_IMKNAST_Condition ()
 };
 func void DIA_Sarah_IMKNAST_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Ты! Ты осмелился появиться здесь! Я, конечно не могу доказать этого, но я готова поклясться, что это твоих рук дело!
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Это ты виноват, что я здесь. Ты и этот проклятый Кантар - да накажет вас Иннос!
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //РўС‹! РўС‹ РѕСЃРјРµР»РёР»СЃСЏ РїРѕСЏРІРёС‚СЊСЃСЏ Р·РґРµСЃСЊ! РЇ, РєРѕРЅРµС‡РЅРѕ РЅРµ РјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ СЌС‚РѕРіРѕ, РЅРѕ СЏ РіРѕС‚РѕРІР° РїРѕРєР»СЏСЃС‚СЊСЃСЏ, С‡С‚Рѕ СЌС‚Рѕ С‚РІРѕРёС… СЂСѓРє РґРµР»Рѕ!
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Р­С‚Рѕ С‚С‹ РІРёРЅРѕРІР°С‚, С‡С‚Рѕ СЏ Р·РґРµСЃСЊ. РўС‹ Рё СЌС‚РѕС‚ РїСЂРѕРєР»СЏС‚С‹Р№ РљР°РЅС‚Р°СЂ - РґР° РЅР°РєР°Р¶РµС‚ РІР°СЃ РРЅРЅРѕСЃ!
 	
 	AI_StopProcessInfos (self);
 };
@@ -241,7 +241,7 @@ instance DIA_Sarah_Success		(C_INFO)
 	condition	 = 	DIA_Sarah_Success_Condition;
 	information	 = 	DIA_Sarah_Success_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Кантар пытался подставить тебя ...";
+	description	 = 	"РљР°РЅС‚Р°СЂ РїС‹С‚Р°Р»СЃСЏ РїРѕРґСЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ ...";
 };
 
 func int DIA_Sarah_Success_Condition ()
@@ -254,9 +254,9 @@ func int DIA_Sarah_Success_Condition ()
 };
 func void DIA_Sarah_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Кантар пытался подставить тебя и заполучить твой прилавок. Но я сдал его городской страже.
-	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Ты этим нажил себе очень опасного врага. Я давно знаю этого ублюдка. И он всегда хотел заполучить мой прилавок.
-	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Возьми это оружие в знак моей благодарности.
+	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //РљР°РЅС‚Р°СЂ РїС‹С‚Р°Р»СЃСЏ РїРѕРґСЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ Рё Р·Р°РїРѕР»СѓС‡РёС‚СЊ С‚РІРѕР№ РїСЂРёР»Р°РІРѕРє. РќРѕ СЏ СЃРґР°Р» РµРіРѕ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рµ.
+	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //РўС‹ СЌС‚РёРј РЅР°Р¶РёР» СЃРµР±Рµ РѕС‡РµРЅСЊ РѕРїР°СЃРЅРѕРіРѕ РІСЂР°РіР°. РЇ РґР°РІРЅРѕ Р·РЅР°СЋ СЌС‚РѕРіРѕ СѓР±Р»СЋРґРєР°. Р РѕРЅ РІСЃРµРіРґР° С…РѕС‚РµР» Р·Р°РїРѕР»СѓС‡РёС‚СЊ РјРѕР№ РїСЂРёР»Р°РІРѕРє.
+	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Р’РѕР·СЊРјРё СЌС‚Рѕ РѕСЂСѓР¶РёРµ РІ Р·РЅР°Рє РјРѕРµР№ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё.
 	
 	B_GivePlayerXP (XP_CantharImKnast);
 	B_GiveInvItems (self, other, ItMw_Piratensaebel,1);

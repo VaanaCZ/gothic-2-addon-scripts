@@ -31,7 +31,7 @@ INSTANCE DIA_Zuris_PICKPOCKET (C_INFO)
 	condition	= DIA_Zuris_PICKPOCKET_Condition;
 	information	= DIA_Zuris_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Его зелье будет украсть легко)";
+	description = "(Р•РіРѕ Р·РµР»СЊРµ Р±СѓРґРµС‚ СѓРєСЂР°СЃС‚СЊ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Zuris_PICKPOCKET_Condition()
@@ -95,7 +95,7 @@ func int DIA_Zuris_Sperre_Condition ()
 };
 func void DIA_Zuris_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Zuris_Sperre_14_00"); //Ты заключенный, сбежавший из горнодобывающей колонии. Проваливай!
+	AI_Output (self, other, "DIA_Zuris_Sperre_14_00"); //РўС‹ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№, СЃР±РµР¶Р°РІС€РёР№ РёР· РіРѕСЂРЅРѕРґРѕР±С‹РІР°СЋС‰РµР№ РєРѕР»РѕРЅРёРё. РџСЂРѕРІР°Р»РёРІР°Р№!
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -122,11 +122,11 @@ func int DIA_Zuris_GREET_Condition ()
 };
 func void DIA_Zuris_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Zuris_GREET_14_00"); //Я Зурис, специалист по зельям.
-	AI_Output (self, other, "DIA_Zuris_GREET_14_01"); //Тебе нужна лечебная эссенция или магический эликсир? Тогда ты обратился по адресу.
+	AI_Output (self, other, "DIA_Zuris_GREET_14_00"); //РЇ Р—СѓСЂРёСЃ, СЃРїРµС†РёР°Р»РёСЃС‚ РїРѕ Р·РµР»СЊСЏРј.
+	AI_Output (self, other, "DIA_Zuris_GREET_14_01"); //РўРµР±Рµ РЅСѓР¶РЅР° Р»РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ РёР»Рё РјР°РіРёС‡РµСЃРєРёР№ СЌР»РёРєСЃРёСЂ? РўРѕРіРґР° С‚С‹ РѕР±СЂР°С‚РёР»СЃСЏ РїРѕ Р°РґСЂРµСЃСѓ.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Зурис торгует зельями на рыночной площади.");
+	B_LogEntry (Topic_CityTrader,"Р—СѓСЂРёСЃ С‚РѕСЂРіСѓРµС‚ Р·РµР»СЊСЏРјРё РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -142,7 +142,7 @@ instance DIA_Zuris_WAREZ		(C_INFO)
 	information	 = 	DIA_Zuris_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Zuris_WAREZ_Condition ()
@@ -152,12 +152,12 @@ func int DIA_Zuris_WAREZ_Condition ()
 func void DIA_Zuris_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Zuris_WAREZ_15_00"); //Покажи мне свои товары.
+	AI_Output			(other, self, "DIA_Zuris_WAREZ_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	if (Zuris_einmal == FALSE)
 	&& (!Npc_KnowsInfo (other, DIA_Zuris_Potions))
 	{
-		AI_Output (self, other, "DIA_Zuris_GREET_14_02"); //Я только что получил несколько новых зелий. Мой гость, Мастер Дарон, Маг Огня, принес мне их из монастыря.
+		AI_Output (self, other, "DIA_Zuris_GREET_14_02"); //РЇ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїРѕР»СѓС‡РёР» РЅРµСЃРєРѕР»СЊРєРѕ РЅРѕРІС‹С… Р·РµР»РёР№. РњРѕР№ РіРѕСЃС‚СЊ, РњР°СЃС‚РµСЂ Р”Р°СЂРѕРЅ, РњР°Рі РћРіРЅСЏ, РїСЂРёРЅРµСЃ РјРЅРµ РёС… РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ.
 		Zuris_einmal = TRUE;
 	};
 };
@@ -171,7 +171,7 @@ instance DIA_Zuris_POTIONS		(C_INFO)
 	condition	= 	DIA_Zuris_POTIONS_Condition;
 	information	= 	DIA_Zuris_POTIONS_Info;
 	permanent	= FALSE;
-	description	= 	"Ты сам готовишь свои зелья?";
+	description	= 	"РўС‹ СЃР°Рј РіРѕС‚РѕРІРёС€СЊ СЃРІРѕРё Р·РµР»СЊСЏ?";
 };
 
 func int DIA_Zuris_POTIONS_Condition ()
@@ -183,16 +183,16 @@ func int DIA_Zuris_POTIONS_Condition ()
 };
 func void DIA_Zuris_POTIONS_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_POTIONS_15_00"); //Ты сам готовишь свои зелья?
-	AI_Output (self, other, "DIA_Zuris_POTIONS_14_01"); //Нет, я получаю их из монастыря или покупаю у Константино, алхимика.
+	AI_Output (other, self, "DIA_Zuris_POTIONS_15_00"); //РўС‹ СЃР°Рј РіРѕС‚РѕРІРёС€СЊ СЃРІРѕРё Р·РµР»СЊСЏ?
+	AI_Output (self, other, "DIA_Zuris_POTIONS_14_01"); //РќРµС‚, СЏ РїРѕР»СѓС‡Р°СЋ РёС… РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ РёР»Рё РїРѕРєСѓРїР°СЋ Сѓ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ, Р°Р»С…РёРјРёРєР°.
 	
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Если тебя интересуют рецепты приготовления зелий, тебе нужно поговорить с ним. Ему как раз нужен помощник.
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Но он слишком туп, чтобы нанять кого-нибудь самому. И к тому же, упрям как мул.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Р•СЃР»Рё С‚РµР±СЏ РёРЅС‚РµСЂРµСЃСѓСЋС‚ СЂРµС†РµРїС‚С‹ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј. Р•РјСѓ РєР°Рє СЂР°Р· РЅСѓР¶РµРЅ РїРѕРјРѕС‰РЅРёРє.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //РќРѕ РѕРЅ СЃР»РёС€РєРѕРј С‚СѓРї, С‡С‚РѕР±С‹ РЅР°РЅСЏС‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ СЃР°РјРѕРјСѓ. Р Рє С‚РѕРјСѓ Р¶Рµ, СѓРїСЂСЏРј РєР°Рє РјСѓР».
 	};
 	
-	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //Он всегда проходит мимо меня, когда выходит через восточные ворота собирать растения для своих зелий.
+	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //РћРЅ РІСЃРµРіРґР° РїСЂРѕС…РѕРґРёС‚ РјРёРјРѕ РјРµРЅСЏ, РєРѕРіРґР° РІС‹С…РѕРґРёС‚ С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Рµ РІРѕСЂРѕС‚Р° СЃРѕР±РёСЂР°С‚СЊ СЂР°СЃС‚РµРЅРёСЏ РґР»СЏ СЃРІРѕРёС… Р·РµР»РёР№.
 };
 
 // **************************************************
@@ -206,7 +206,7 @@ instance DIA_Zuris_Kraut (C_INFO)
 	condition	= DIA_Zuris_Kraut_Condition;
 	information	= DIA_Zuris_Kraut_Info;
 	permanent	= FALSE;
-	description	= "А где именно Константино собирает травы?";
+	description	= "Рђ РіРґРµ РёРјРµРЅРЅРѕ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ СЃРѕР±РёСЂР°РµС‚ С‚СЂР°РІС‹?";
 };
 
 func int DIA_Zuris_Kraut_Condition ()
@@ -218,9 +218,9 @@ func int DIA_Zuris_Kraut_Condition ()
 };
 func void DIA_Zuris_Kraut_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //А где именно Константино собирает травы?
-	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //Он всегда выходит через восточные ворота города, а затем исчезает в лесу налево.
-	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Он как-то сказал мне, что почти все, что ему нужно, растет там, за исключением царского щавеля.
+	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //Рђ РіРґРµ РёРјРµРЅРЅРѕ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ СЃРѕР±РёСЂР°РµС‚ С‚СЂР°РІС‹?
+	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //РћРЅ РІСЃРµРіРґР° РІС‹С…РѕРґРёС‚ С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Рµ РІРѕСЂРѕС‚Р° РіРѕСЂРѕРґР°, Р° Р·Р°С‚РµРј РёСЃС‡РµР·Р°РµС‚ РІ Р»РµСЃСѓ РЅР°Р»РµРІРѕ.
+	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //РћРЅ РєР°Рє-С‚Рѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РїРѕС‡С‚Рё РІСЃРµ, С‡С‚Рѕ РµРјСѓ РЅСѓР¶РЅРѕ, СЂР°СЃС‚РµС‚ С‚Р°Рј, Р·Р° РёСЃРєР»СЋС‡РµРЅРёРµРј С†Р°СЂСЃРєРѕРіРѕ С‰Р°РІРµР»СЏ.
 	
 	Wld_InsertItem (ItPl_Mana_Herb_01,"FP_ITEM_HERB_01");
 	Wld_InsertItem (ItPl_Mana_Herb_02,"FP_ITEM_HERB_02");
@@ -236,7 +236,7 @@ func void DIA_Zuris_Kraut_Info ()
 };
 
 // **************************************************
-//					 Kronstцckel
+//					 KronstС†ckel
 // **************************************************
 
 instance DIA_Zuris_Kronstoeckel (C_INFO)
@@ -246,7 +246,7 @@ instance DIA_Zuris_Kronstoeckel (C_INFO)
 	condition	= DIA_Zuris_Kronstoeckel_Condition;
 	information	= DIA_Zuris_Kronstoeckel_Info;
 	permanent	= FALSE;
-	description	= "Константино говорил тебе, где можно найти царский щавель?";
+	description	= "РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, РіРґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ?";
 };
 
 func int DIA_Zuris_Kronstoeckel_Condition ()
@@ -258,10 +258,10 @@ func int DIA_Zuris_Kronstoeckel_Condition ()
 };
 func void DIA_Zuris_Kronstoeckel_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //Константино говорил тебе, где можно найти царский щавель?
-	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //Он как-то упоминал, что он растет около каменных кругов.
-	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //Около фермы Лобарта, эта ферма находится неподалеку от других ворот, есть один из таких каменных кругов.
-	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //Насколько я помню, он стоит на холме. Там когда-то была могила, или что-то вроде этого.
+	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РіРѕРІРѕСЂРёР» С‚РµР±Рµ, РіРґРµ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ?
+	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //РћРЅ РєР°Рє-С‚Рѕ СѓРїРѕРјРёРЅР°Р», С‡С‚Рѕ РѕРЅ СЂР°СЃС‚РµС‚ РѕРєРѕР»Рѕ РєР°РјРµРЅРЅС‹С… РєСЂСѓРіРѕРІ.
+	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //РћРєРѕР»Рѕ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°, СЌС‚Р° С„РµСЂРјР° РЅР°С…РѕРґРёС‚СЃСЏ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РґСЂСѓРіРёС… РІРѕСЂРѕС‚, РµСЃС‚СЊ РѕРґРёРЅ РёР· С‚Р°РєРёС… РєР°РјРµРЅРЅС‹С… РєСЂСѓРіРѕРІ.
+	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ РїРѕРјРЅСЋ, РѕРЅ СЃС‚РѕРёС‚ РЅР° С…РѕР»РјРµ. РўР°Рј РєРѕРіРґР°-С‚Рѕ Р±С‹Р»Р° РјРѕРіРёР»Р°, РёР»Рё С‡С‚Рѕ-С‚Рѕ РІСЂРѕРґРµ СЌС‚РѕРіРѕ.
 	
 	Wld_InsertItem (ItPl_Perm_Herb,"FP_ITEM_HERB_11");
 };
@@ -276,7 +276,7 @@ instance DIA_Zuris_WHERE		(C_INFO)
 	condition	 = 	DIA_Zuris_WHERE_Condition;
 	information	 = 	DIA_Zuris_WHERE_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Где я могу найти Константино?";
+	description	 = 	"Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ?";
 };
 
 func int DIA_Zuris_WHERE_Condition ()
@@ -289,8 +289,8 @@ func int DIA_Zuris_WHERE_Condition ()
 };
 func void DIA_Zuris_WHERE_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_WHERE_15_00"); //Где я могу найти Константино?
-	AI_Output (self, other, "DIA_Zuris_WHERE_14_01"); //Его дом находится в туннеле около кузницы Гарада. Его будет нетрудно найти.
+	AI_Output (other, self, "DIA_Zuris_WHERE_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ?
+	AI_Output (self, other, "DIA_Zuris_WHERE_14_01"); //Р•РіРѕ РґРѕРј РЅР°С…РѕРґРёС‚СЃСЏ РІ С‚СѓРЅРЅРµР»Рµ РѕРєРѕР»Рѕ РєСѓР·РЅРёС†С‹ Р“Р°СЂР°РґР°. Р•РіРѕ Р±СѓРґРµС‚ РЅРµС‚СЂСѓРґРЅРѕ РЅР°Р№С‚Рё.
 };
 
 
@@ -303,7 +303,7 @@ instance DIA_Zuris_Kloster		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Zuris_Kloster_Condition;
 	information	 = 	DIA_Zuris_Kloster_Info;
-	description  =  "Расскажи мне о монастыре.";
+	description  =  "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјРѕРЅР°СЃС‚С‹СЂРµ.";
 };
 
 func int DIA_Zuris_Kloster_Condition ()
@@ -315,8 +315,8 @@ func int DIA_Zuris_Kloster_Condition ()
 };
 func void DIA_Zuris_Kloster_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //Расскажи мне о монастыре.
-	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //Тебе лучше поговорить об этом с самим Мастером Дароном. Он знает больше меня.
+	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј СЃ СЃР°РјРёРј РњР°СЃС‚РµСЂРѕРј Р”Р°СЂРѕРЅРѕРј. РћРЅ Р·РЅР°РµС‚ Р±РѕР»СЊС€Рµ РјРµРЅСЏ.
 };
 
 // ************************************************************
@@ -329,7 +329,7 @@ INSTANCE DIA_Zuris_Minenanteil (C_INFO)
 	condition	= DIA_Zuris_Minenanteil_Condition;
 	information	= DIA_Zuris_Minenanteil_Info;
 
-	description = "Ты продаешь шахтерские акции?";
+	description = "РўС‹ РїСЂРѕРґР°РµС€СЊ С€Р°С…С‚РµСЂСЃРєРёРµ Р°РєС†РёРё?";
 };   
                     
 FUNC INT DIA_Zuris_Minenanteil_Condition()
@@ -343,8 +343,8 @@ FUNC INT DIA_Zuris_Minenanteil_Condition()
 
 FUNC VOID DIA_Zuris_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //Ты продаешь шахтерские акции?
-	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Да. Это оказалось не самое выгодное дело. Это последний раз, когда я ввязываюсь в подобное сомнительное предприятие!
+	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ С€Р°С…С‚РµСЂСЃРєРёРµ Р°РєС†РёРё?
+	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Р”Р°. Р­С‚Рѕ РѕРєР°Р·Р°Р»РѕСЃСЊ РЅРµ СЃР°РјРѕРµ РІС‹РіРѕРґРЅРѕРµ РґРµР»Рѕ. Р­С‚Рѕ РїРѕСЃР»РµРґРЅРёР№ СЂР°Р·, РєРѕРіРґР° СЏ РІРІСЏР·С‹РІР°СЋСЃСЊ РІ РїРѕРґРѕР±РЅРѕРµ СЃРѕРјРЅРёС‚РµР»СЊРЅРѕРµ РїСЂРµРґРїСЂРёСЏС‚РёРµ!
 	
 	B_GivePlayerXP (XP_Ambient);
 };	

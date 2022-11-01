@@ -4,7 +4,7 @@
 // Monster nehmen andere Monster und Humans NUR wahr, 
 // wenn sie ATT_HOSTILE gesetzt haben
 // (oder wenn sie oder ein Freund getroffen werden)
-// Beutetiere nehmen Jäger über PERC_ASSESSWARN wahr
+// Beutetiere nehmen JÐ´ger ÑŒber PERC_ASSESSWARN wahr
 // --------------------------------------------------
 // Orcs greifen direkt an
 // **************************************************
@@ -20,15 +20,15 @@ func void B_MM_AssessEnemy ()
 		return;
 	}; 
 	
-	// ------- OVERRIDE für menschliche Enemies ------
+	// ------- OVERRIDE fÑŒr menschliche Enemies ------
 	if ((self.aivar[AIV_NoFightParker] == TRUE)	//werden nie angegriffen und greifen auch selbst nicht an.
 		|| 	(other.aivar[AIV_NoFightParker] == TRUE))
 	{
 		return;
 	};
 	
-	// ------- OVERRIDE für menschliche Enemies ------
-	if (self.aivar[AIV_EnemyOverride] == TRUE)	//Joly: für Inubis, Skelette in der Krypta und ä.
+	// ------- OVERRIDE fÑŒr menschliche Enemies ------
+	if (self.aivar[AIV_EnemyOverride] == TRUE)	//Joly: fÑŒr Inubis, Skelette in der Krypta und Ð´.
 	&& (other.guild < GIL_SEPERATOR_HUM)
 	{
 		return;
@@ -70,7 +70,7 @@ func void B_MM_AssessEnemy ()
 		return;
 	};
 	
-	// ------- Monster sollen sich zu Tode stürzen, etc. ------
+	// ------- Monster sollen sich zu Tode stÑŒrzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	{
 		return;
@@ -87,7 +87,7 @@ func void B_MM_AssessEnemy ()
 		};
 	};
 		
-	// ------ Monster können nach HINTEN nicht so weit riechen ------
+	// ------ Monster kÑ†nnen nach HINTEN nicht so weit riechen ------
 	// --------------------------------------------------------------
 	// ------ wenn ich weit riechen kann ------
 	if (self.senses_range > PERC_DIST_MONSTER_ACTIVE_MAX)
@@ -185,7 +185,7 @@ func void B_MM_AssessEnemy ()
 		};
 	};
 		
-	// ------ Jäger greift Beute immer direkt an ------
+	// ------ JÐ´ger greift Beute immer direkt an ------
 	if (C_PredatorFoundPrey(self, other)) 	
 	{
 		Npc_ClearAIQueue	(self);
@@ -195,7 +195,7 @@ func void B_MM_AssessEnemy ()
 		return;
 	};
 	
-	// ------ Beute flieht vor Jäger (wenn in Droh-Reichweite (Abfrage s.o.) ------
+	// ------ Beute flieht vor JÐ´ger (wenn in Droh-Reichweite (Abfrage s.o.) ------
 	if (C_PredatorFoundPrey(other, self))
 	{
 		if (!Npc_IsInState (other, ZS_MM_Hunt))

@@ -41,7 +41,7 @@ func int DIA_Thekla_HALLO_Condition ()
 
 func void DIA_Thekla_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Thekla_HALLO_17_00"); //Что ты делаешь здесь, на моей кухне?
+	AI_Output (self, other, "DIA_Thekla_HALLO_17_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ, РЅР° РјРѕРµР№ РєСѓС…РЅРµ?
 };
 
 // ************************************************************
@@ -54,7 +54,7 @@ instance DIA_Thekla_Lecker		(C_INFO)
 	condition	= DIA_Thekla_Lecker_Condition;
 	information	= DIA_Thekla_Lecker_Info;
 	permanent 	= FALSE;
-	description	= "Как у тебя здесь вкусно пахнет!";
+	description	= "РљР°Рє Сѓ С‚РµР±СЏ Р·РґРµСЃСЊ РІРєСѓСЃРЅРѕ РїР°С…РЅРµС‚!";
 };
 
 func int DIA_Thekla_Lecker_Condition ()
@@ -67,9 +67,9 @@ func int DIA_Thekla_Lecker_Condition ()
 
 func void DIA_Thekla_Lecker_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Lecker_15_00"); //Как у тебя здесь вкусно пахнет!
-	AI_Output (self, other, "DIA_Thekla_Lecker_17_01"); //Не подлизывайся! Я знаю таких, как ты, как облупленных! Вон их сколько вокруг бродит!
-	AI_Output (self, other, "DIA_Thekla_Lecker_17_02"); //Сначала вы пытаетесь подхалимничать, а затем, когда от вас что-то нужно, то никого не найдешь!
+	AI_Output (other, self, "DIA_Thekla_Lecker_15_00"); //РљР°Рє Сѓ С‚РµР±СЏ Р·РґРµСЃСЊ РІРєСѓСЃРЅРѕ РїР°С…РЅРµС‚!
+	AI_Output (self, other, "DIA_Thekla_Lecker_17_01"); //РќРµ РїРѕРґР»РёР·С‹РІР°Р№СЃСЏ! РЇ Р·РЅР°СЋ С‚Р°РєРёС…, РєР°Рє С‚С‹, РєР°Рє РѕР±Р»СѓРїР»РµРЅРЅС‹С…! Р’РѕРЅ РёС… СЃРєРѕР»СЊРєРѕ РІРѕРєСЂСѓРі Р±СЂРѕРґРёС‚!
+	AI_Output (self, other, "DIA_Thekla_Lecker_17_02"); //РЎРЅР°С‡Р°Р»Р° РІС‹ РїС‹С‚Р°РµС‚РµСЃСЊ РїРѕРґС…Р°Р»РёРјРЅРёС‡Р°С‚СЊ, Р° Р·Р°С‚РµРј, РєРѕРіРґР° РѕС‚ РІР°СЃ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ, С‚Рѕ РЅРёРєРѕРіРѕ РЅРµ РЅР°Р№РґРµС€СЊ!
 };
 
 // ************************************************************
@@ -85,7 +85,7 @@ instance DIA_Thekla_Hunger		(C_INFO)
 	condition	= DIA_Thekla_Hunger_Condition;
 	information	= DIA_Thekla_Hunger_Info;
 	permanent 	= FALSE;
-	description	= "Я голоден!";
+	description	= "РЇ РіРѕР»РѕРґРµРЅ!";
 };
 
 func int DIA_Thekla_Hunger_Condition ()
@@ -98,26 +98,26 @@ func int DIA_Thekla_Hunger_Condition ()
 
 func void DIA_Thekla_Hunger_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Hunger_15_00"); //Я голоден!
+	AI_Output (other, self, "DIA_Thekla_Hunger_15_00"); //РЇ РіРѕР»РѕРґРµРЅ!
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_01"); //Я не кормлю бродяг. Я кормлю только тех, кто работает.
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_02"); //(презрительно) И этот сброд, наемников, конечно.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_01"); //РЇ РЅРµ РєРѕСЂРјР»СЋ Р±СЂРѕРґСЏРі. РЇ РєРѕСЂРјР»СЋ С‚РѕР»СЊРєРѕ С‚РµС…, РєС‚Рѕ СЂР°Р±РѕС‚Р°РµС‚.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_02"); //(РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) Р СЌС‚РѕС‚ СЃР±СЂРѕРґ, РЅР°РµРјРЅРёРєРѕРІ, РєРѕРЅРµС‡РЅРѕ.
 	}
 	else if (other.guild == GIL_SLD)
 	|| 		(other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_03"); //Вот твоя еда.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_03"); //Р’РѕС‚ С‚РІРѕСЏ РµРґР°.
 		B_GiveInvItems (self, other, ItFo_XPStew, 1);
 		Thekla_GaveStew = TRUE;
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_04"); //Мы не обслуживаем здесь ополчение.
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_04"); //РњС‹ РЅРµ РѕР±СЃР»СѓР¶РёРІР°РµРј Р·РґРµСЃСЊ РѕРїРѕР»С‡РµРЅРёРµ.
 	}
 	else //Pal, Kdf oder Nov
 	{
-		AI_Output (self, other, "DIA_Thekla_Hunger_17_05"); //Как я могу отказать служителю Инноса?
+		AI_Output (self, other, "DIA_Thekla_Hunger_17_05"); //РљР°Рє СЏ РјРѕРіСѓ РѕС‚РєР°Р·Р°С‚СЊ СЃР»СѓР¶РёС‚РµР»СЋ РРЅРЅРѕСЃР°?
 		B_GiveInvItems (self, other, ItFo_XPStew, 1);
 		Thekla_GaveStew = TRUE;
 	};
@@ -134,7 +134,7 @@ instance DIA_Thekla_Arbeit		(C_INFO)
 	condition	= DIA_Thekla_Arbeit_Condition;
 	information	= DIA_Thekla_Arbeit_Info;
 	permanent 	= FALSE;
-	description	= "Я ищу работу.";
+	description	= "РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.";
 };
 
 func int DIA_Thekla_Arbeit_Condition ()
@@ -147,9 +147,9 @@ func int DIA_Thekla_Arbeit_Condition ()
 
 func void DIA_Thekla_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Arbeit_15_00"); //Я ищу работу...
-	AI_Output (self, other, "DIA_Thekla_Arbeit_17_01"); //Ты хочешь работать здесь, на ферме?
-	AI_Output (self, other, "DIA_Thekla_Arbeit_17_02"); //Этот вопрос может решить только Онар. Эта ферма его, как и вся долина.
+	AI_Output (other, self, "DIA_Thekla_Arbeit_15_00"); //РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ...
+	AI_Output (self, other, "DIA_Thekla_Arbeit_17_01"); //РўС‹ С…РѕС‡РµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ, РЅР° С„РµСЂРјРµ?
+	AI_Output (self, other, "DIA_Thekla_Arbeit_17_02"); //Р­С‚РѕС‚ РІРѕРїСЂРѕСЃ РјРѕР¶РµС‚ СЂРµС€РёС‚СЊ С‚РѕР»СЊРєРѕ РћРЅР°СЂ. Р­С‚Р° С„РµСЂРјР° РµРіРѕ, РєР°Рє Рё РІСЃСЏ РґРѕР»РёРЅР°.
 };
 
 // ************************************************************
@@ -163,7 +163,7 @@ instance DIA_Thekla_WannaJoin		(C_INFO)
 	condition	= DIA_Thekla_WannaJoin_Condition;
 	information	= DIA_Thekla_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Вообще-то я планировал присоединиться к наемникам...";
+	description	= "Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РїР»Р°РЅРёСЂРѕРІР°Р» РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј...";
 };
 
 func int DIA_Thekla_WannaJoin_Condition ()
@@ -177,9 +177,9 @@ func int DIA_Thekla_WannaJoin_Condition ()
 
 func void DIA_Thekla_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_WannaJoin_15_00"); //Вообще-то я планировал присоединиться к наемникам...
-	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_01"); //Так ты тоже преступник из колонии?
-	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_02"); //Я могла бы догадаться! Оставь меня в покое! Здесь вашего брата уже и так хватает!
+	AI_Output (other, self, "DIA_Thekla_WannaJoin_15_00"); //Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ РїР»Р°РЅРёСЂРѕРІР°Р» РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј...
+	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_01"); //РўР°Рє С‚С‹ С‚РѕР¶Рµ РїСЂРµСЃС‚СѓРїРЅРёРє РёР· РєРѕР»РѕРЅРёРё?
+	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_02"); //РЇ РјРѕРіР»Р° Р±С‹ РґРѕРіР°РґР°С‚СЊСЃСЏ! РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ! Р—РґРµСЃСЊ РІР°С€РµРіРѕ Р±СЂР°С‚Р° СѓР¶Рµ Рё С‚Р°Рє С…РІР°С‚Р°РµС‚!
 };
 
 // ************************************************************
@@ -193,7 +193,7 @@ instance DIA_Thekla_Schlafen		(C_INFO)
 	condition	= DIA_Thekla_Schlafen_Condition;
 	information	= DIA_Thekla_Schlafen_Info;
 	permanent 	= FALSE;
-	description	= "Где тут можно поспать?";
+	description	= "Р“РґРµ С‚СѓС‚ РјРѕР¶РЅРѕ РїРѕСЃРїР°С‚СЊ?";
 };
 
 func int DIA_Thekla_Schlafen_Condition ()
@@ -206,8 +206,8 @@ func int DIA_Thekla_Schlafen_Condition ()
 
 func void DIA_Thekla_Schlafen_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Schlafen_15_00"); //Где тут можно поспать?
-	AI_Output (self, other, "DIA_Thekla_Schlafen_17_01"); //Даже не думай спать в моей кухне. Найди себе место в сарае.
+	AI_Output (other, self, "DIA_Thekla_Schlafen_15_00"); //Р“РґРµ С‚СѓС‚ РјРѕР¶РЅРѕ РїРѕСЃРїР°С‚СЊ?
+	AI_Output (self, other, "DIA_Thekla_Schlafen_17_01"); //Р”Р°Р¶Рµ РЅРµ РґСѓРјР°Р№ СЃРїР°С‚СЊ РІ РјРѕРµР№ РєСѓС…РЅРµ. РќР°Р№РґРё СЃРµР±Рµ РјРµСЃС‚Рѕ РІ СЃР°СЂР°Рµ.
 };
 		
 // ************************************************************
@@ -221,7 +221,7 @@ instance DIA_Thekla_Problem		(C_INFO)
 	condition	= DIA_Thekla_Problem_Condition;
 	information	= DIA_Thekla_Problem_Info;
 	permanent 	= FALSE;
-	description	= "Почему ты не любишь наемников?";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ Р»СЋР±РёС€СЊ РЅР°РµРјРЅРёРєРѕРІ?";
 };
 
 func int DIA_Thekla_Problem_Condition ()
@@ -235,14 +235,14 @@ func int DIA_Thekla_Problem_Condition ()
 
 func void DIA_Thekla_Problem_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Problem_15_00"); //Почему ты не любишь наемников?
-	AI_Output (self, other, "DIA_Thekla_Problem_17_01"); //Ах, эти кретины действуют мне на нервы! Особенно Сильвио и его жирный приятель Булко.
-	AI_Output (self, other, "DIA_Thekla_Problem_17_02"); //Эти двое сидят вон там, в углу, целыми днями напролет и отравляют мне жизнь.
-	AI_Output (self, other, "DIA_Thekla_Problem_17_03"); //То суп им слишком горячий, то мясо слишком жесткое, ну и все тому подобное...
+	AI_Output (other, self, "DIA_Thekla_Problem_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ Р»СЋР±РёС€СЊ РЅР°РµРјРЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_Thekla_Problem_17_01"); //РђС…, СЌС‚Рё РєСЂРµС‚РёРЅС‹ РґРµР№СЃС‚РІСѓСЋС‚ РјРЅРµ РЅР° РЅРµСЂРІС‹! РћСЃРѕР±РµРЅРЅРѕ РЎРёР»СЊРІРёРѕ Рё РµРіРѕ Р¶РёСЂРЅС‹Р№ РїСЂРёСЏС‚РµР»СЊ Р‘СѓР»РєРѕ.
+	AI_Output (self, other, "DIA_Thekla_Problem_17_02"); //Р­С‚Рё РґРІРѕРµ СЃРёРґСЏС‚ РІРѕРЅ С‚Р°Рј, РІ СѓРіР»Сѓ, С†РµР»С‹РјРё РґРЅСЏРјРё РЅР°РїСЂРѕР»РµС‚ Рё РѕС‚СЂР°РІР»СЏСЋС‚ РјРЅРµ Р¶РёР·РЅСЊ.
+	AI_Output (self, other, "DIA_Thekla_Problem_17_03"); //РўРѕ СЃСѓРї РёРј СЃР»РёС€РєРѕРј РіРѕСЂСЏС‡РёР№, С‚Рѕ РјСЏСЃРѕ СЃР»РёС€РєРѕРј Р¶РµСЃС‚РєРѕРµ, РЅСѓ Рё РІСЃРµ С‚РѕРјСѓ РїРѕРґРѕР±РЅРѕРµ...
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (other, self, "DIA_Thekla_Problem_15_04"); //А почему ты ничего не делаешь с этим?
-		AI_Output (self, other, "DIA_Thekla_Problem_17_05"); //А что я могу сделать, мистер Остряк-Самоучка? Врезать им своей скалкой? Да, с фермерами это проходит, но ведь эти ублюдки недолго думая ответят мечом!
+		AI_Output (other, self, "DIA_Thekla_Problem_15_04"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµС€СЊ СЃ СЌС‚РёРј?
+		AI_Output (self, other, "DIA_Thekla_Problem_17_05"); //Рђ С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ, РјРёСЃС‚РµСЂ РћСЃС‚СЂСЏРє-РЎР°РјРѕСѓС‡РєР°? Р’СЂРµР·Р°С‚СЊ РёРј СЃРІРѕРµР№ СЃРєР°Р»РєРѕР№? Р”Р°, СЃ С„РµСЂРјРµСЂР°РјРё СЌС‚Рѕ РїСЂРѕС…РѕРґРёС‚, РЅРѕ РІРµРґСЊ СЌС‚Рё СѓР±Р»СЋРґРєРё РЅРµРґРѕР»РіРѕ РґСѓРјР°СЏ РѕС‚РІРµС‚СЏС‚ РјРµС‡РѕРј!
 	};
 };
 
@@ -257,7 +257,7 @@ instance DIA_Thekla_Manieren		(C_INFO)
 	condition	= DIA_Thekla_Manieren_Condition;
 	information	= DIA_Thekla_Manieren_Info;
 	permanent 	= FALSE;
-	description	= "Хочешь, я научу этих двоих хорошим манерам?";
+	description	= "РҐРѕС‡РµС€СЊ, СЏ РЅР°СѓС‡Сѓ СЌС‚РёС… РґРІРѕРёС… С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј?";
 };
 
 func int DIA_Thekla_Manieren_Condition ()
@@ -273,10 +273,10 @@ func int DIA_Thekla_Manieren_Condition ()
 
 func void DIA_Thekla_Manieren_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Manieren_15_00"); //Хочешь, я научу этих двоих хорошим манерам?
-	AI_Output (self, other, "DIA_Thekla_Manieren_17_01"); //Тебе лучше не связываться с ними. Как я знаю, у Сильвио магические доспехи. Его нельзя победить.
-	AI_Output (other, self, "DIA_Thekla_Manieren_15_02"); //А что насчет Булко?
-	AI_Output (self, other, "DIA_Thekla_Manieren_17_03"); //Этот парень силен как бык. Пока он легко справлялся со всеми, кто пытался выступить против него или Сильвио.
+	AI_Output (other, self, "DIA_Thekla_Manieren_15_00"); //РҐРѕС‡РµС€СЊ, СЏ РЅР°СѓС‡Сѓ СЌС‚РёС… РґРІРѕРёС… С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј?
+	AI_Output (self, other, "DIA_Thekla_Manieren_17_01"); //РўРµР±Рµ Р»СѓС‡С€Рµ РЅРµ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ РЅРёРјРё. РљР°Рє СЏ Р·РЅР°СЋ, Сѓ РЎРёР»СЊРІРёРѕ РјР°РіРёС‡РµСЃРєРёРµ РґРѕСЃРїРµС…Рё. Р•РіРѕ РЅРµР»СЊР·СЏ РїРѕР±РµРґРёС‚СЊ.
+	AI_Output (other, self, "DIA_Thekla_Manieren_15_02"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ Р‘СѓР»РєРѕ?
+	AI_Output (self, other, "DIA_Thekla_Manieren_17_03"); //Р­С‚РѕС‚ РїР°СЂРµРЅСЊ СЃРёР»РµРЅ РєР°Рє Р±С‹Рє. РџРѕРєР° РѕРЅ Р»РµРіРєРѕ СЃРїСЂР°РІР»СЏР»СЃСЏ СЃРѕ РІСЃРµРјРё, РєС‚Рѕ РїС‹С‚Р°Р»СЃСЏ РІС‹СЃС‚СѓРїРёС‚СЊ РїСЂРѕС‚РёРІ РЅРµРіРѕ РёР»Рё РЎРёР»СЊРІРёРѕ.
 };
 		
 // ************************************************************
@@ -308,18 +308,18 @@ func void DIA_Thekla_AfterFight_Info ()
 {
 	if (Bullco.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_00"); //Ты действительно смог выбить дурь из этого Булко.
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_01"); //Должно быть, ты очень устал, пока молотил эту жирную свинью.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_00"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРјРѕРі РІС‹Р±РёС‚СЊ РґСѓСЂСЊ РёР· СЌС‚РѕРіРѕ Р‘СѓР»РєРѕ.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_01"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚С‹ РѕС‡РµРЅСЊ СѓСЃС‚Р°Р», РїРѕРєР° РјРѕР»РѕС‚РёР» СЌС‚Сѓ Р¶РёСЂРЅСѓСЋ СЃРІРёРЅСЊСЋ.
 	}
 	else //Sylvio oder Bullco gewonnen
 	{
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_02"); //Ну что, получил по полной программе?
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_03"); //Я же тебя предупреждала! Теперь ты понимаешь, что я имела в виду?
-		AI_Output (other, self, "DIA_Thekla_AfterFight_15_04"); //Я рад, что доставил этим тебе удовольствие.
-		AI_Output (self, other, "DIA_Thekla_AfterFight_17_05"); //Не расстраивайся так. Ты далеко не первый, кто пострадал от этой сволочи.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_02"); //РќСѓ С‡С‚Рѕ, РїРѕР»СѓС‡РёР» РїРѕ РїРѕР»РЅРѕР№ РїСЂРѕРіСЂР°РјРјРµ?
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_03"); //РЇ Р¶Рµ С‚РµР±СЏ РїСЂРµРґСѓРїСЂРµР¶РґР°Р»Р°! РўРµРїРµСЂСЊ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, С‡С‚Рѕ СЏ РёРјРµР»Р° РІ РІРёРґСѓ?
+		AI_Output (other, self, "DIA_Thekla_AfterFight_15_04"); //РЇ СЂР°Рґ, С‡С‚Рѕ РґРѕСЃС‚Р°РІРёР» СЌС‚РёРј С‚РµР±Рµ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµ.
+		AI_Output (self, other, "DIA_Thekla_AfterFight_17_05"); //РќРµ СЂР°СЃСЃС‚СЂР°РёРІР°Р№СЃСЏ С‚Р°Рє. РўС‹ РґР°Р»РµРєРѕ РЅРµ РїРµСЂРІС‹Р№, РєС‚Рѕ РїРѕСЃС‚СЂР°РґР°Р» РѕС‚ СЌС‚РѕР№ СЃРІРѕР»РѕС‡Рё.
 	};
 	
-	AI_Output (self, other, "DIA_Thekla_AfterFight_17_06"); //Вот, поешь немного. Это восстановит твои силы.
+	AI_Output (self, other, "DIA_Thekla_AfterFight_17_06"); //Р’РѕС‚, РїРѕРµС€СЊ РЅРµРјРЅРѕРіРѕ. Р­С‚Рѕ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚ С‚РІРѕРё СЃРёР»С‹.
 	B_GiveInvItems (self, other, ItFo_XPStew, 1);	
 	Thekla_GaveStew = TRUE;
 };
@@ -334,7 +334,7 @@ instance DIA_Thekla_SagittaPaket (C_INFO)
 	condition	= DIA_Thekla_SagittaPaket_Condition;
 	information	= DIA_Thekla_SagittaPaket_Info;
 	permanent 	= TRUE;
-	description	= "Вот пакет от Сагитты.";
+	description	= "Р’РѕС‚ РїР°РєРµС‚ РѕС‚ РЎР°РіРёС‚С‚С‹.";
 };
 
 func int DIA_Thekla_SagittaPaket_Condition ()
@@ -349,8 +349,8 @@ func int DIA_Thekla_SagittaPaket_Condition ()
 func void DIA_Thekla_SagittaPaket_Info ()
 {
 	B_GiveInvItems (other, self, ItMi_TheklasPaket, 1);
-	AI_Output (other, self, "DIA_Thekla_SagittaPaket_15_00"); //Вот пакет от Сагитты.
-	AI_Output (self, other, "DIA_Thekla_SagittaPaket_17_01"); //Огромное спасибо. От тебя есть хоть какая-то польза в отличие от других.
+	AI_Output (other, self, "DIA_Thekla_SagittaPaket_15_00"); //Р’РѕС‚ РїР°РєРµС‚ РѕС‚ РЎР°РіРёС‚С‚С‹.
+	AI_Output (self, other, "DIA_Thekla_SagittaPaket_17_01"); //РћРіСЂРѕРјРЅРѕРµ СЃРїР°СЃРёР±Рѕ. РћС‚ С‚РµР±СЏ РµСЃС‚СЊ С…РѕС‚СЊ РєР°РєР°СЏ-С‚Рѕ РїРѕР»СЊР·Р° РІ РѕС‚Р»РёС‡РёРµ РѕС‚ РґСЂСѓРіРёС….
 	MIS_Thekla_Paket = LOG_SUCCESS;
 	B_GivePlayerXP (XP_TheklasPaket);		
 };
@@ -370,7 +370,7 @@ instance DIA_Thekla_PERM		(C_INFO)
 	condition	= DIA_Thekla_PERM_Condition;
 	information	= DIA_Thekla_PERM_Info;
 	permanent	= TRUE;
-	description	= "Ты мне не дашь еще своей похлебки?";
+	description	= "РўС‹ РјРЅРµ РЅРµ РґР°С€СЊ РµС‰Рµ СЃРІРѕРµР№ РїРѕС…Р»РµР±РєРё?";
 };
 func int DIA_Thekla_PERM_Condition()
 {
@@ -382,19 +382,19 @@ func int DIA_Thekla_PERM_Condition()
 
 func void DIA_Thekla_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Thekla_PERM_15_00"); //Ты мне не дашь еще своей похлебки?
+	AI_Output (other, self, "DIA_Thekla_PERM_15_00"); //РўС‹ РјРЅРµ РЅРµ РґР°С€СЊ РµС‰Рµ СЃРІРѕРµР№ РїРѕС…Р»РµР±РєРё?
 	
 	if (MIS_Thekla_Paket == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Thekla_PERM_17_01"); //Она закончилась.
-		AI_Output (other, self, "DIA_Thekla_PERM_15_02"); //Не осталось даже маленькой миски?
-		AI_Output (self, other, "DIA_Thekla_PERM_17_03"); //Нет.
-		AI_Output (other, self, "DIA_Thekla_PERM_15_04"); //А могу облизать горшок, а?
-		AI_Output (self, other, "DIA_Thekla_PERM_17_05"); //Прекрати!
-		AI_Output (self, other, "DIA_Thekla_PERM_17_06"); //Если тебе так понравилась моя похлебка, тебе придется сделать кое-что, чтобы получить ее.
-		AI_Output (other, self, "DIA_Thekla_PERM_15_07"); //Что?
-		AI_Output (self, other, "DIA_Thekla_PERM_17_08"); //Сходи к Сагитте, знахарке, что живет за фермой Секоба, и принеси мне от нее пакет с травой.
-		AI_Output (self, other, "DIA_Thekla_PERM_17_09"); //Если ты принесешь мне эти травы, я сварю похлебку для тебя.
+		AI_Output (self, other, "DIA_Thekla_PERM_17_01"); //РћРЅР° Р·Р°РєРѕРЅС‡РёР»Р°СЃСЊ.
+		AI_Output (other, self, "DIA_Thekla_PERM_15_02"); //РќРµ РѕСЃС‚Р°Р»РѕСЃСЊ РґР°Р¶Рµ РјР°Р»РµРЅСЊРєРѕР№ РјРёСЃРєРё?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_03"); //РќРµС‚.
+		AI_Output (other, self, "DIA_Thekla_PERM_15_04"); //Рђ РјРѕРіСѓ РѕР±Р»РёР·Р°С‚СЊ РіРѕСЂС€РѕРє, Р°?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_05"); //РџСЂРµРєСЂР°С‚Рё!
+		AI_Output (self, other, "DIA_Thekla_PERM_17_06"); //Р•СЃР»Рё С‚РµР±Рµ С‚Р°Рє РїРѕРЅСЂР°РІРёР»Р°СЃСЊ РјРѕСЏ РїРѕС…Р»РµР±РєР°, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ СЃРґРµР»Р°С‚СЊ РєРѕРµ-С‡С‚Рѕ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РµРµ.
+		AI_Output (other, self, "DIA_Thekla_PERM_15_07"); //Р§С‚Рѕ?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_08"); //РЎС…РѕРґРё Рє РЎР°РіРёС‚С‚Рµ, Р·РЅР°С…Р°СЂРєРµ, С‡С‚Рѕ Р¶РёРІРµС‚ Р·Р° С„РµСЂРјРѕР№ РЎРµРєРѕР±Р°, Рё РїСЂРёРЅРµСЃРё РјРЅРµ РѕС‚ РЅРµРµ РїР°РєРµС‚ СЃ С‚СЂР°РІРѕР№.
+		AI_Output (self, other, "DIA_Thekla_PERM_17_09"); //Р•СЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ СЌС‚Рё С‚СЂР°РІС‹, СЏ СЃРІР°СЂСЋ РїРѕС…Р»РµР±РєСѓ РґР»СЏ С‚РµР±СЏ.
 		
 		MIS_Thekla_Paket = LOG_RUNNING;
 		
@@ -402,7 +402,7 @@ func void DIA_Thekla_PERM_Info()
 		
 		Log_CreateTopic (TOPIC_TheklaEintopf,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_TheklaEintopf,LOG_RUNNING);
-		B_LogEntry (TOPIC_TheklaEintopf,"Если я принесу Текле травы от знахарки Саггиты, она сварит еще одну похлебку для меня. Саггита живет за фермой Секоба.");
+		B_LogEntry (TOPIC_TheklaEintopf,"Р•СЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ РўРµРєР»Рµ С‚СЂР°РІС‹ РѕС‚ Р·РЅР°С…Р°СЂРєРё РЎР°РіРіРёС‚С‹, РѕРЅР° СЃРІР°СЂРёС‚ РµС‰Рµ РѕРґРЅСѓ РїРѕС…Р»РµР±РєСѓ РґР»СЏ РјРµРЅСЏ. РЎР°РіРіРёС‚Р° Р¶РёРІРµС‚ Р·Р° С„РµСЂРјРѕР№ РЎРµРєРѕР±Р°.");
 		
 	}
 	else if (MIS_Thekla_Paket == LOG_SUCCESS)
@@ -411,14 +411,14 @@ func void DIA_Thekla_PERM_Info()
 		{
 			if (Thekla_MehrEintopfKap1 == FALSE)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_10"); //Хорошо. Я сжалюсь над тобой. Вот, держи. Не могу смотреть, как ты умираешь от голода у меня на глазах.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_10"); //РҐРѕСЂРѕС€Рѕ. РЇ СЃР¶Р°Р»СЋСЃСЊ РЅР°Рґ С‚РѕР±РѕР№. Р’РѕС‚, РґРµСЂР¶Рё. РќРµ РјРѕРіСѓ СЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє С‚С‹ СѓРјРёСЂР°РµС€СЊ РѕС‚ РіРѕР»РѕРґР° Сѓ РјРµРЅСЏ РЅР° РіР»Р°Р·Р°С….
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap1 = TRUE;
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_11"); //Эй, эй, эй! Не будь таким жадным! Я дам тебе знать, если у меня найдется еще работа для тебя.
-				AI_Output (self, other, "DIA_Thekla_PERM_17_12"); //И ТОГДА ты получишь еще этой похлебки, понятно?
+				AI_Output (self, other, "DIA_Thekla_PERM_17_11"); //Р­Р№, СЌР№, СЌР№! РќРµ Р±СѓРґСЊ С‚Р°РєРёРј Р¶Р°РґРЅС‹Рј! РЇ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РµСЃР»Рё Сѓ РјРµРЅСЏ РЅР°Р№РґРµС‚СЃСЏ РµС‰Рµ СЂР°Р±РѕС‚Р° РґР»СЏ С‚РµР±СЏ.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_12"); //Р РўРћР“Р”Рђ С‚С‹ РїРѕР»СѓС‡РёС€СЊ РµС‰Рµ СЌС‚РѕР№ РїРѕС…Р»РµР±РєРё, РїРѕРЅСЏС‚РЅРѕ?
 			};
 		};
 		
@@ -428,7 +428,7 @@ func void DIA_Thekla_PERM_Info()
 			if (Thekla_MehrEintopfKap3 == FALSE)
 			&& (MIS_RescueBennet == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_13"); //Я слышала, ты помог Беннету выбраться из тюрьмы. Отличная работа, парень.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_13"); //РЇ СЃР»С‹С€Р°Р»Р°, С‚С‹ РїРѕРјРѕРі Р‘РµРЅРЅРµС‚Сѓ РІС‹Р±СЂР°С‚СЊСЃСЏ РёР· С‚СЋСЂСЊРјС‹. РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°, РїР°СЂРµРЅСЊ.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap3 = TRUE;
 			}
@@ -436,12 +436,12 @@ func void DIA_Thekla_PERM_Info()
 			{
 				if (MIS_RescueBennet != LOG_SUCCESS)
 				{
-					AI_Output (self, other, "DIA_Thekla_PERM_17_14"); //Эти ублюдки из ополчения бросили Беннета за решетку.
-					AI_Output (self, other, "DIA_Thekla_PERM_17_15"); //Окажи мне услугу, вызволи его оттуда, хорошо? А тем временем я сварю для тебя очень вкусную похлебку.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_14"); //Р­С‚Рё СѓР±Р»СЋРґРєРё РёР· РѕРїРѕР»С‡РµРЅРёСЏ Р±СЂРѕСЃРёР»Рё Р‘РµРЅРЅРµС‚Р° Р·Р° СЂРµС€РµС‚РєСѓ.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_15"); //РћРєР°Р¶Рё РјРЅРµ СѓСЃР»СѓРіСѓ, РІС‹Р·РІРѕР»Рё РµРіРѕ РѕС‚С‚СѓРґР°, С…РѕСЂРѕС€Рѕ? Рђ С‚РµРј РІСЂРµРјРµРЅРµРј СЏ СЃРІР°СЂСЋ РґР»СЏ С‚РµР±СЏ РѕС‡РµРЅСЊ РІРєСѓСЃРЅСѓСЋ РїРѕС…Р»РµР±РєСѓ.
 				}
 				else
 				{
-					AI_Output (self, other, "DIA_Thekla_PERM_17_16"); //У меня ничего не осталось. Заходи позже.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_16"); //РЈ РјРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ. Р—Р°С…РѕРґРё РїРѕР·Р¶Рµ.
 				};
 			};
 		};
@@ -450,21 +450,21 @@ func void DIA_Thekla_PERM_Info()
 		{
 			if (Thekla_MehrEintopfKap5 == FALSE)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_17"); //Ты что, всегда такой голодный? А что ты делал все это время?
-				AI_Output (other, self, "DIA_Thekla_PERM_15_18"); //Я прикончил нескольких драконов.
-				AI_Output (self, other, "DIA_Thekla_PERM_17_19"); //Ох! Тогда тебе действительно не повредит миска хорошей похлебки.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_17"); //РўС‹ С‡С‚Рѕ, РІСЃРµРіРґР° С‚Р°РєРѕР№ РіРѕР»РѕРґРЅС‹Р№? Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°Р» РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ?
+				AI_Output (other, self, "DIA_Thekla_PERM_15_18"); //РЇ РїСЂРёРєРѕРЅС‡РёР» РЅРµСЃРєРѕР»СЊРєРёС… РґСЂР°РєРѕРЅРѕРІ.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_19"); //РћС…! РўРѕРіРґР° С‚РµР±Рµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅРµ РїРѕРІСЂРµРґРёС‚ РјРёСЃРєР° С…РѕСЂРѕС€РµР№ РїРѕС…Р»РµР±РєРё.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap5 = TRUE;
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_20"); //Все! Похлебка вся закончилась.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_20"); //Р’СЃРµ! РџРѕС…Р»РµР±РєР° РІСЃСЏ Р·Р°РєРѕРЅС‡РёР»Р°СЃСЊ.
 			};
 		};
 	}
 	else //Running oder Failed
 	{
-		AI_Output (self, other, "DIA_Thekla_PERM_17_21"); //Нет трав, нет похлебки - понятно?
+		AI_Output (self, other, "DIA_Thekla_PERM_17_21"); //РќРµС‚ С‚СЂР°РІ, РЅРµС‚ РїРѕС…Р»РµР±РєРё - РїРѕРЅСЏС‚РЅРѕ?
 	};
 };
 

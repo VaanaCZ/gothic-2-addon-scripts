@@ -111,7 +111,7 @@ func int DIA_Aya_KommMit_Condition()
 };
 func void DIA_Aya_KommMit_Info()
 {
-	AI_Output(other, self, "DIA_Lares_GoNow_15_00");  //Хорошо, пошли.
+	AI_Output(other, self, "DIA_Lares_GoNow_15_00");  //РҐРѕСЂРѕС€Рѕ, РїРѕС€Р»Рё.
 
 	var int AyaGoldAmount;
 	AyaGoldAmount = Npc_HasItems(other, ItMi_Gold);
@@ -144,7 +144,7 @@ instance DIA_Aya_WarteHier(C_Info)
 	condition	= DIA_Aya_WarteHier_Condition;
 	information	= DIA_Aya_WarteHier_Info;
 	permanent	= TRUE;
-	description	= "Ich fьrchte, ich muss mich von dir trennen.";
+	description	= "Ich fСЊrchte, ich muss mich von dir trennen.";
 };
 func int DIA_Aya_WarteHier_Condition()
 {
@@ -155,7 +155,7 @@ func int DIA_Aya_WarteHier_Condition()
 };
 func void DIA_Aya_WarteHier_Info()
 {
-	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Боюсь, дальше наши пути расходятся.
+	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Р‘РѕСЋСЃСЊ, РґР°Р»СЊС€Рµ РЅР°С€Рё РїСѓС‚Рё СЂР°СЃС…РѕРґСЏС‚СЃСЏ.
 	B_Say(self, other, "$YESGOOUTOFHERE");
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "Start");

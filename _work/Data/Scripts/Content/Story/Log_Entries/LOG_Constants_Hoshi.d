@@ -1,58 +1,58 @@
 // ***************************
-// LOG_Constants fьr Missionen
+// LOG_Constants fСЊr Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
 
 //-------- Addon Missionen ---------
-const string TOPIC_Addon_RatHunt		= 	"Охота на крыс";
-const string TOPIC_Addon_BringMeat		=	"Мясо для Моргана";
-const string TOPIC_Addon_BanditsTower 	=	"Башня";
-const string TOPIC_Addon_HolOwen		= 	"Дерево для частокола";
-const string TOPIC_Addon_Kompass		=	"Компас Гаретта";
-const string TOPIC_Addon_RoastGrog		=	"Грог для повара";
-const string TOPIC_Addon_BrandonBooze	=	"Выпивка для Брэндона";
-const string TOPIC_Addon_MorganBeach	=	"Северный пляж";
-const string TOPIC_Addon_AngusHank		=	"Ангус и Хэнк";
-const string TOPIC_Addon_SkipsGrog		=	"Запасы Скипа";
-const string TOPIC_Addon_KillJuan		= 	"Убийцы Ангуса и Хэнка";
-const string TOPIC_Addon_ClearCanyon	=	"Охота на бритвозубов";
-const string TOPIC_Addon_ScoutBandits	=	"Разведка среди бандитов";
-const string TOPIC_Addon_MalcomsStunt	=	"Мальком";
+const string TOPIC_Addon_RatHunt		= 	"РћС…РѕС‚Р° РЅР° РєСЂС‹СЃ";
+const string TOPIC_Addon_BringMeat		=	"РњСЏСЃРѕ РґР»СЏ РњРѕСЂРіР°РЅР°";
+const string TOPIC_Addon_BanditsTower 	=	"Р‘Р°С€РЅСЏ";
+const string TOPIC_Addon_HolOwen		= 	"Р”РµСЂРµРІРѕ РґР»СЏ С‡Р°СЃС‚РѕРєРѕР»Р°";
+const string TOPIC_Addon_Kompass		=	"РљРѕРјРїР°СЃ Р“Р°СЂРµС‚С‚Р°";
+const string TOPIC_Addon_RoastGrog		=	"Р“СЂРѕРі РґР»СЏ РїРѕРІР°СЂР°";
+const string TOPIC_Addon_BrandonBooze	=	"Р’С‹РїРёРІРєР° РґР»СЏ Р‘СЂСЌРЅРґРѕРЅР°";
+const string TOPIC_Addon_MorganBeach	=	"РЎРµРІРµСЂРЅС‹Р№ РїР»СЏР¶";
+const string TOPIC_Addon_AngusHank		=	"РђРЅРіСѓСЃ Рё РҐСЌРЅРє";
+const string TOPIC_Addon_SkipsGrog		=	"Р—Р°РїР°СЃС‹ РЎРєРёРїР°";
+const string TOPIC_Addon_KillJuan		= 	"РЈР±РёР№С†С‹ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°";
+const string TOPIC_Addon_ClearCanyon	=	"РћС…РѕС‚Р° РЅР° Р±СЂРёС‚РІРѕР·СѓР±РѕРІ";
+const string TOPIC_Addon_ScoutBandits	=	"Р Р°Р·РІРµРґРєР° СЃСЂРµРґРё Р±Р°РЅРґРёС‚РѕРІ";
+const string TOPIC_Addon_MalcomsStunt	=	"РњР°Р»СЊРєРѕРј";
 
 
-//-------- Addon Hдndler -----------
+//-------- Addon HРґndler -----------
 
-const string Topic_Addon_PIR_Trader  = "Торговля с пиратами";	
+const string Topic_Addon_PIR_Trader  = "РўРѕСЂРіРѕРІР»СЏ СЃ РїРёСЂР°С‚Р°РјРё";	
 
 //-------- Addon Lehrer ------------
-const string Topic_Addon_PIR_Teacher = "Учителя среди пиратов";
+const string Topic_Addon_PIR_Teacher = "РЈС‡РёС‚РµР»СЏ СЃСЂРµРґРё РїРёСЂР°С‚РѕРІ";
 
 
 
 //Inhalte:
 
-const string Log_Text_Addon_ScoutBandits	=	"Бандиты контролируют золотую шахту. Именно поэтому они здесь.";
+const string Log_Text_Addon_ScoutBandits	=	"Р‘Р°РЅРґРёС‚С‹ РєРѕРЅС‚СЂРѕР»РёСЂСѓСЋС‚ Р·РѕР»РѕС‚СѓСЋ С€Р°С…С‚Сѓ. РРјРµРЅРЅРѕ РїРѕСЌС‚РѕРјСѓ РѕРЅРё Р·РґРµСЃСЊ.";
 
 //Teacher
 
-const string Log_Text_Addon_HenryTeach		=	"Генри может научить меня управляться с двуручным оружием и арбалетами.";
-const string Log_Text_Addon_MorganTeach		=	"Морга учит сражаться одноручным оружием.";
-const string Log_Text_Addon_BrandonTeach	=	"Брэндон может помочь мне стать сильнее и ловчее.";
+const string Log_Text_Addon_HenryTeach		=	"Р“РµРЅСЂРё РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СѓРїСЂР°РІР»СЏС‚СЊСЃСЏ СЃ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј Рё Р°СЂР±Р°Р»РµС‚Р°РјРё.";
+const string Log_Text_Addon_MorganTeach		=	"РњРѕСЂРіР° СѓС‡РёС‚ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.";
+const string Log_Text_Addon_BrandonTeach	=	"Р‘СЂСЌРЅРґРѕРЅ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ Рё Р»РѕРІС‡РµРµ.";
 
 //Trader
 
-const string Log_Text_Addon_GarettTrade	=	"Пират Гаретт - торговец. Я могу купить у него все, кроме выпивки.";
+const string Log_Text_Addon_GarettTrade	=	"РџРёСЂР°С‚ Р“Р°СЂРµС‚С‚ - С‚РѕСЂРіРѕРІРµС†. РЇ РјРѕРіСѓ РєСѓРїРёС‚СЊ Сѓ РЅРµРіРѕ РІСЃРµ, РєСЂРѕРјРµ РІС‹РїРёРІРєРё.";
 
-const string Log_Text_Addon_SamuelTrade	=	"Сэмюэль - самогонщик. Он продает любой алкоголь.";
+const string Log_Text_Addon_SamuelTrade	=	"РЎСЌРјСЋСЌР»СЊ - СЃР°РјРѕРіРѕРЅС‰РёРє. РћРЅ РїСЂРѕРґР°РµС‚ Р»СЋР±РѕР№ Р°Р»РєРѕРіРѕР»СЊ.";
 
-//	Sprьche
+//	SprСЊche
 
-const string Log_Text_Addon_TalentRune_Whirlwind	="Ингредиенты для руны 'Смерч': 1 крыло кровавой мухи";
-const string Log_Text_Addon_TalentRune_Icelance		="Ингредиенты для руны 'Ледяное копье': 1 ледяной кварц";
-const string Log_Text_Addon_TalentRune_Geyser		="Ингредиенты для руны 'Гейзер': 1 аквамарин";
-const string Log_Text_Addon_TalentRune_Waterfist	="Ингредиенты для руны 'Кулак воды': 1 аквамарин и 1 горный хрусталь";
-const string Log_Text_Addon_TalentRune_Thunderstorm	="Ингредиенты для руны 'Буря': 1 горный хрусталь и 1 крыло кровавой мухи";
+const string Log_Text_Addon_TalentRune_Whirlwind	="РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ СЂСѓРЅС‹ 'РЎРјРµСЂС‡': 1 РєСЂС‹Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё";
+const string Log_Text_Addon_TalentRune_Icelance		="РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ СЂСѓРЅС‹ 'Р›РµРґСЏРЅРѕРµ РєРѕРїСЊРµ': 1 Р»РµРґСЏРЅРѕР№ РєРІР°СЂС†";
+const string Log_Text_Addon_TalentRune_Geyser		="РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ СЂСѓРЅС‹ 'Р“РµР№Р·РµСЂ': 1 Р°РєРІР°РјР°СЂРёРЅ";
+const string Log_Text_Addon_TalentRune_Waterfist	="РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ СЂСѓРЅС‹ 'РљСѓР»Р°Рє РІРѕРґС‹': 1 Р°РєРІР°РјР°СЂРёРЅ Рё 1 РіРѕСЂРЅС‹Р№ С…СЂСѓСЃС‚Р°Р»СЊ";
+const string Log_Text_Addon_TalentRune_Thunderstorm	="РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ СЂСѓРЅС‹ 'Р‘СѓСЂСЏ': 1 РіРѕСЂРЅС‹Р№ С…СЂСѓСЃС‚Р°Р»СЊ Рё 1 РєСЂС‹Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё";
 
 //##########################################
 //		Gothic 2
@@ -63,10 +63,10 @@ const string Log_Text_Addon_TalentRune_Thunderstorm	="Ингредиенты для руны 'Буря
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
-const string TOPIC_RescueBennet		=	"Беннет в тюрьме.";
-const string Topic_Ship				=	"Мне нужен корабль.";
-const string Topic_Crew				=	"Невозможно плыть без команды."; 
-const string Topic_Captain			=	"Кто будет моим капитаном?"; 	
+const string TOPIC_RescueBennet		=	"Р‘РµРЅРЅРµС‚ РІ С‚СЋСЂСЊРјРµ.";
+const string Topic_Ship				=	"РњРЅРµ РЅСѓР¶РµРЅ РєРѕСЂР°Р±Р»СЊ.";
+const string Topic_Crew				=	"РќРµРІРѕР·РјРѕР¶РЅРѕ РїР»С‹С‚СЊ Р±РµР· РєРѕРјР°РЅРґС‹."; 
+const string Topic_Captain			=	"РљС‚Рѕ Р±СѓРґРµС‚ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј?"; 	
 
 // ------ Kapitel 4 ------
 // ------ Kapitel 5 ------

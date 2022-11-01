@@ -4,7 +4,7 @@
 instance PIR_1390_Addon_InExtremo_DrPymonte (Npc_Default)
 {
 	//-------- primary data --------
-	name 						=	"Др. Примонт";
+	name 						=	"Р”СЂ. РџСЂРёРјРѕРЅС‚";
    	npctype						= 	npctype_main;
    	guild 						=	GIL_NONE;
 	level 						=	4;

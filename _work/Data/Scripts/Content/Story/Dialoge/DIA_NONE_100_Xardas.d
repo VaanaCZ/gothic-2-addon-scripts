@@ -9,7 +9,7 @@ INSTANCE DIA_Xardas_FirstEXIT(C_INFO)
 	condition	= DIA_Xardas_FirstEXIT_Condition;
 	information	= DIA_Xardas_FirstEXIT_Info;
 	permanent	= FALSE;
-	description = "Я немедленно отправляюсь в путь! (КОНЕЦ)";
+	description = "РЇ РЅРµРјРµРґР»РµРЅРЅРѕ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ РІ РїСѓС‚СЊ! (РљРћРќР•Р¦)";
 };
                        
 FUNC INT DIA_Xardas_FirstEXIT_Condition()
@@ -23,13 +23,13 @@ FUNC INT DIA_Xardas_FirstEXIT_Condition()
 
 FUNC VOID DIA_Xardas_FirstEXIT_Info()
 {	
-	AI_Output (other, self,"DIA_Xardas_FirstEXIT_15_00"); //Я немедленно отправляюсь в путь!
-	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_01"); //Хорошо! И еще одно: не говори никому, что разговаривал со мной. И, прежде всего, не говори об этом магам!
-	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_02"); //С тех пор, как я отошел от них, Круг Огня считает меня мертвым - и это очень хорошо.
+	AI_Output (other, self,"DIA_Xardas_FirstEXIT_15_00"); //РЇ РЅРµРјРµРґР»РµРЅРЅРѕ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ РІ РїСѓС‚СЊ!
+	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_01"); //РҐРѕСЂРѕС€Рѕ! Р РµС‰Рµ РѕРґРЅРѕ: РЅРµ РіРѕРІРѕСЂРё РЅРёРєРѕРјСѓ, С‡С‚Рѕ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃРѕ РјРЅРѕР№. Р, РїСЂРµР¶РґРµ РІСЃРµРіРѕ, РЅРµ РіРѕРІРѕСЂРё РѕР± СЌС‚РѕРј РјР°РіР°Рј!
+	AI_Output (self, other,"DIA_Xardas_FirstEXIT_14_02"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РѕС‚РѕС€РµР» РѕС‚ РЅРёС…, РљСЂСѓРі РћРіРЅСЏ СЃС‡РёС‚Р°РµС‚ РјРµРЅСЏ РјРµСЂС‚РІС‹Рј - Рё СЌС‚Рѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ.
 	
 	AI_StopProcessInfos	(self);
 	
-	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muЯ auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
+	B_Kapitelwechsel (1, NEWWORLD_ZEN);	//Joly: muРЇ auf jeden Fall hier kommen. Allein schon wegen XP_AMBIENT!
 	
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -80,48 +80,48 @@ FUNC INT DIA_Xardas_Hello_Condition()
 };
 FUNC VOID DIA_Xardas_Hello_Info()
 {	
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_00"); //Наконец-то! (улыбается) Я и не думал, что нам с тобой доведется встретиться снова.
-	AI_Output (other, self, "DIA_Addon_Xardas_Hello_15_01"); //Я чувствую себя так, будто три недели пролежал под кучей камней.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_02"); //Так оно и было. Ты выжил только благодаря магии твоих доспехов. 
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_03"); //Я уже начал опасаться, что не смогу вытащить тебя из-под развалин храма.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_04"); //Но хватит об этом. Сейчас-то ты здесь.
-	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_05"); //И над нами нависла новая угроза.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_00"); //РќР°РєРѕРЅРµС†-С‚Рѕ! (СѓР»С‹Р±Р°РµС‚СЃСЏ) РЇ Рё РЅРµ РґСѓРјР°Р», С‡С‚Рѕ РЅР°Рј СЃ С‚РѕР±РѕР№ РґРѕРІРµРґРµС‚СЃСЏ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃРЅРѕРІР°.
+	AI_Output (other, self, "DIA_Addon_Xardas_Hello_15_01"); //РЇ С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ С‚Р°Рє, Р±СѓРґС‚Рѕ С‚СЂРё РЅРµРґРµР»Рё РїСЂРѕР»РµР¶Р°Р» РїРѕРґ РєСѓС‡РµР№ РєР°РјРЅРµР№.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_02"); //РўР°Рє РѕРЅРѕ Рё Р±С‹Р»Рѕ. РўС‹ РІС‹Р¶РёР» С‚РѕР»СЊРєРѕ Р±Р»Р°РіРѕРґР°СЂСЏ РјР°РіРёРё С‚РІРѕРёС… РґРѕСЃРїРµС…РѕРІ. 
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_03"); //РЇ СѓР¶Рµ РЅР°С‡Р°Р» РѕРїР°СЃР°С‚СЊСЃСЏ, С‡С‚Рѕ РЅРµ СЃРјРѕРіСѓ РІС‹С‚Р°С‰РёС‚СЊ С‚РµР±СЏ РёР·-РїРѕРґ СЂР°Р·РІР°Р»РёРЅ С…СЂР°РјР°.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_04"); //РќРѕ С…РІР°С‚РёС‚ РѕР± СЌС‚РѕРј. РЎРµР№С‡Р°СЃ-С‚Рѕ С‚С‹ Р·РґРµСЃСЊ.
+	AI_Output (self ,other, "DIA_Addon_Xardas_Hello_14_05"); //Р РЅР°Рґ РЅР°РјРё РЅР°РІРёСЃР»Р° РЅРѕРІР°СЏ СѓРіСЂРѕР·Р°.
 
  	Info_ClearChoices	(DIA_Xardas_Hello);
-	Info_AddChoice	(DIA_Xardas_Hello, "По крайней мере, у нас сейчас достаточно времени. Спящий уничтожен.", DIA_Addon_Xardas_Hello_Dragons );
-	Info_AddChoice	(DIA_Xardas_Hello, "Что это за НОВАЯ угроза, о которой ты говоришь?", DIA_Addon_Xardas_Hello_Man );
+	Info_AddChoice	(DIA_Xardas_Hello, "РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Сѓ РЅР°СЃ СЃРµР№С‡Р°СЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІСЂРµРјРµРЅРё. РЎРїСЏС‰РёР№ СѓРЅРёС‡С‚РѕР¶РµРЅ.", DIA_Addon_Xardas_Hello_Dragons );
+	Info_AddChoice	(DIA_Xardas_Hello, "Р§С‚Рѕ СЌС‚Рѕ Р·Р° РќРћР’РђРЇ СѓРіСЂРѕР·Р°, Рѕ РєРѕС‚РѕСЂРѕР№ С‚С‹ РіРѕРІРѕСЂРёС€СЊ?", DIA_Addon_Xardas_Hello_Man );
 };
 func void DIA_Addon_Xardas_Hello_Man ()
 {
 	PlayVideo ("Intro_ADDON");
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_10"); //Ты должен стать их союзником! Это единственный способ остановить Белиара.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_10"); //РўС‹ РґРѕР»Р¶РµРЅ СЃС‚Р°С‚СЊ РёС… СЃРѕСЋР·РЅРёРєРѕРј! Р­С‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ СЃРїРѕСЃРѕР± РѕСЃС‚Р°РЅРѕРІРёС‚СЊ Р‘РµР»РёР°СЂР°.
 	
 	Addon_zuerst = TRUE;
 };
 func void DIA_Addon_Xardas_Hello_Dragons ()
 {
-	AI_Output (other,self ,"DIA_Xardas_Hello_15_03"); //По крайней мере, у нас сейчас достаточно времени. Я сделал это. Спящий...
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_04"); //...был изгнан. Ты победил его, да, это так - но не в наших силах остановить войну, которая разгорается сейчас.
+	AI_Output (other,self ,"DIA_Xardas_Hello_15_03"); //РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, Сѓ РЅР°СЃ СЃРµР№С‡Р°СЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІСЂРµРјРµРЅРё. РЇ СЃРґРµР»Р°Р» СЌС‚Рѕ. РЎРїСЏС‰РёР№...
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_04"); //...Р±С‹Р» РёР·РіРЅР°РЅ. РўС‹ РїРѕР±РµРґРёР» РµРіРѕ, РґР°, СЌС‚Рѕ С‚Р°Рє - РЅРѕ РЅРµ РІ РЅР°С€РёС… СЃРёР»Р°С… РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РІРѕР№РЅСѓ, РєРѕС‚РѕСЂР°СЏ СЂР°Р·РіРѕСЂР°РµС‚СЃСЏ СЃРµР№С‡Р°СЃ.
 	//AI_Output (other,self ,"DIA_Xardas_Hello_15_05"); //Du redest von den Orks?
 	//AI_Output (self ,other,"DIA_Xardas_Hello_14_06"); //Ich rede von weitaus schlimmeren Kreaturen.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_07"); //Своим последним, яростным воплем, Спящий привел в движение армии тьмы.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_08"); //Это был приказ всем созданиям тьмы. Слово силы, которому все они обязаны повиноваться.
- 	AI_Output (self ,other,"DIA_Xardas_Hello_14_09"); //Его последним приказом было: ИДИТЕ! И они пошли. Все. Даже драконы.
- 	AI_Output (other,self ,"DIA_Xardas_Hello_15_10"); //(изумленно) Драконы!
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_11"); //Это творения древней силы. Я чувствую их присутствие - даже здесь.
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_12"); //И они собрали вокруг себя целую армию из низших существ.
-	AI_Output (other,self ,"DIA_Xardas_Hello_15_13"); //И где эта армия сейчас?
-	AI_Output (self ,other,"DIA_Xardas_Hello_14_14"); //Лагерь этой армии находится недалеко отсюда, в Долине Рудников около Хориниса, и она готовится к атаке.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_07"); //РЎРІРѕРёРј РїРѕСЃР»РµРґРЅРёРј, СЏСЂРѕСЃС‚РЅС‹Рј РІРѕРїР»РµРј, РЎРїСЏС‰РёР№ РїСЂРёРІРµР» РІ РґРІРёР¶РµРЅРёРµ Р°СЂРјРёРё С‚СЊРјС‹.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_08"); //Р­С‚Рѕ Р±С‹Р» РїСЂРёРєР°Р· РІСЃРµРј СЃРѕР·РґР°РЅРёСЏРј С‚СЊРјС‹. РЎР»РѕРІРѕ СЃРёР»С‹, РєРѕС‚РѕСЂРѕРјСѓ РІСЃРµ РѕРЅРё РѕР±СЏР·Р°РЅС‹ РїРѕРІРёРЅРѕРІР°С‚СЊСЃСЏ.
+ 	AI_Output (self ,other,"DIA_Xardas_Hello_14_09"); //Р•РіРѕ РїРѕСЃР»РµРґРЅРёРј РїСЂРёРєР°Р·РѕРј Р±С‹Р»Рѕ: РР”РРўР•! Р РѕРЅРё РїРѕС€Р»Рё. Р’СЃРµ. Р”Р°Р¶Рµ РґСЂР°РєРѕРЅС‹.
+ 	AI_Output (other,self ,"DIA_Xardas_Hello_15_10"); //(РёР·СѓРјР»РµРЅРЅРѕ) Р”СЂР°РєРѕРЅС‹!
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_11"); //Р­С‚Рѕ С‚РІРѕСЂРµРЅРёСЏ РґСЂРµРІРЅРµР№ СЃРёР»С‹. РЇ С‡СѓРІСЃС‚РІСѓСЋ РёС… РїСЂРёСЃСѓС‚СЃС‚РІРёРµ - РґР°Р¶Рµ Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_12"); //Р РѕРЅРё СЃРѕР±СЂР°Р»Рё РІРѕРєСЂСѓРі СЃРµР±СЏ С†РµР»СѓСЋ Р°СЂРјРёСЋ РёР· РЅРёР·С€РёС… СЃСѓС‰РµСЃС‚РІ.
+	AI_Output (other,self ,"DIA_Xardas_Hello_15_13"); //Р РіРґРµ СЌС‚Р° Р°СЂРјРёСЏ СЃРµР№С‡Р°СЃ?
+	AI_Output (self ,other,"DIA_Xardas_Hello_14_14"); //Р›Р°РіРµСЂСЊ СЌС‚РѕР№ Р°СЂРјРёРё РЅР°С…РѕРґРёС‚СЃСЏ РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°, РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РѕРєРѕР»Рѕ РҐРѕСЂРёРЅРёСЃР°, Рё РѕРЅР° РіРѕС‚РѕРІРёС‚СЃСЏ Рє Р°С‚Р°РєРµ.
 		
 	if (Addon_zuerst == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Xardas_Hello_14_15"); //(задумчиво) У нас очень мало времени.
+		AI_Output (self ,other,"DIA_Xardas_Hello_14_15"); //(Р·Р°РґСѓРјС‡РёРІРѕ) РЈ РЅР°СЃ РѕС‡РµРЅСЊ РјР°Р»Рѕ РІСЂРµРјРµРЅРё.
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Addon_Xardas_Hello_Dragons_14_06"); //Но это еще не все. Есть еще кое-что, что угрожает нам. Об этом я узнал лишь недавно.
+		AI_Output (self ,other, "DIA_Addon_Xardas_Hello_Dragons_14_06"); //РќРѕ СЌС‚Рѕ РµС‰Рµ РЅРµ РІСЃРµ. Р•СЃС‚СЊ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ, С‡С‚Рѕ СѓРіСЂРѕР¶Р°РµС‚ РЅР°Рј. РћР± СЌС‚РѕРј СЏ СѓР·РЅР°Р» Р»РёС€СЊ РЅРµРґР°РІРЅРѕ.
 		Info_ClearChoices	(DIA_Xardas_Hello);
-		Info_AddChoice	(DIA_Xardas_Hello, "О какой ДРУГОЙ  угрозе ты говоришь?", DIA_Addon_Xardas_Hello_Man );
+		Info_AddChoice	(DIA_Xardas_Hello, "Рћ РєР°РєРѕР№ Р”Р РЈР“РћР™  СѓРіСЂРѕР·Рµ С‚С‹ РіРѕРІРѕСЂРёС€СЊ?", DIA_Addon_Xardas_Hello_Man );
 	};
 };
 	
@@ -136,7 +136,7 @@ instance DIA_Xardas_AWAY (C_INFO) 		//E1
 	condition	 = 	DIA_Xardas_AWAY_Condition;
 	information	 = 	DIA_Xardas_AWAY_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Тогда давай побыстрее уносить отсюда ноги!";
+	description	 = 	"РўРѕРіРґР° РґР°РІР°Р№ РїРѕР±С‹СЃС‚СЂРµРµ СѓРЅРѕСЃРёС‚СЊ РѕС‚СЃСЋРґР° РЅРѕРіРё!";
 };
 
 func int DIA_Xardas_AWAY_Condition ()
@@ -151,10 +151,10 @@ func int DIA_Xardas_AWAY_Condition ()
 
 func void DIA_Xardas_AWAY_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_AWAY_15_00"); //Тогда давай побыстрее уносить отсюда ноги!
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_01"); //Если мы сбежим сейчас, это всего лишь отсрочит нашу встречу с драконами.
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_02"); //При помощи солдат и магов, живущих здесь, мы можем остановить их до того, как армия тьмы будет полностью сформирована.
-	AI_Output (self, other, "DIA_Xardas_AWAY_14_03"); //У нас не будет лучшего шанса для этого.
+	AI_Output (other, self, "DIA_Xardas_AWAY_15_00"); //РўРѕРіРґР° РґР°РІР°Р№ РїРѕР±С‹СЃС‚СЂРµРµ СѓРЅРѕСЃРёС‚СЊ РѕС‚СЃСЋРґР° РЅРѕРіРё!
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_01"); //Р•СЃР»Рё РјС‹ СЃР±РµР¶РёРј СЃРµР№С‡Р°СЃ, СЌС‚Рѕ РІСЃРµРіРѕ Р»РёС€СЊ РѕС‚СЃСЂРѕС‡РёС‚ РЅР°С€Сѓ РІСЃС‚СЂРµС‡Сѓ СЃ РґСЂР°РєРѕРЅР°РјРё.
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_02"); //РџСЂРё РїРѕРјРѕС‰Рё СЃРѕР»РґР°С‚ Рё РјР°РіРѕРІ, Р¶РёРІСѓС‰РёС… Р·РґРµСЃСЊ, РјС‹ РјРѕР¶РµРј РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РёС… РґРѕ С‚РѕРіРѕ, РєР°Рє Р°СЂРјРёСЏ С‚СЊРјС‹ Р±СѓРґРµС‚ РїРѕР»РЅРѕСЃС‚СЊСЋ СЃС„РѕСЂРјРёСЂРѕРІР°РЅР°.
+	AI_Output (self, other, "DIA_Xardas_AWAY_14_03"); //РЈ РЅР°СЃ РЅРµ Р±СѓРґРµС‚ Р»СѓС‡С€РµРіРѕ С€Р°РЅСЃР° РґР»СЏ СЌС‚РѕРіРѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -168,7 +168,7 @@ instance DIA_Xardas_TODO (C_INFO) 		//E1
 	condition	 = 	DIA_Xardas_TODO_Condition;
 	information	 = 	DIA_Xardas_TODO_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Что мы можем сделать?";
+	description	 = 	"Р§С‚Рѕ РјС‹ РјРѕР¶РµРј СЃРґРµР»Р°С‚СЊ?";
 };
 
 func int DIA_Xardas_TODO_Condition ()
@@ -181,17 +181,17 @@ func int DIA_Xardas_TODO_Condition ()
 
 func void DIA_Xardas_TODO_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_TODO_15_00"); //Что мы можем сделать?
-	AI_Output (self, other, "DIA_Xardas_TODO_14_01"); //На этот раз самим нам не справиться. Только сила Инноса может помочь нам в борьбе против этих драконов.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_02"); //В городе Хоринис, что неподалеку отсюда, остановился отряд паладинов.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_03"); //Они обладают сильным артефактом, который может помочь нам победить этих драконов.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_04"); //Они называют его 'Глаз Инноса'. Ты должен завладеть этим артефактом.
-	AI_Output (self, other, "DIA_Xardas_TODO_14_05"); //Расскажи паладинам о надвигающейся угрозе. Ты ДОЛЖЕН убедить их предводителя поддержать нас!
-	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07"); //А после этого ты должен найти артефакт Белиара.
-	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08"); //Это противоположность Глаза Инноса. Он не должен попасть в руки зла.
+	AI_Output (other, self, "DIA_Xardas_TODO_15_00"); //Р§С‚Рѕ РјС‹ РјРѕР¶РµРј СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Xardas_TODO_14_01"); //РќР° СЌС‚РѕС‚ СЂР°Р· СЃР°РјРёРј РЅР°Рј РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ. РўРѕР»СЊРєРѕ СЃРёР»Р° РРЅРЅРѕСЃР° РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РЅР°Рј РІ Р±РѕСЂСЊР±Рµ РїСЂРѕС‚РёРІ СЌС‚РёС… РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_02"); //Р’ РіРѕСЂРѕРґРµ РҐРѕСЂРёРЅРёСЃ, С‡С‚Рѕ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚СЃСЋРґР°, РѕСЃС‚Р°РЅРѕРІРёР»СЃСЏ РѕС‚СЂСЏРґ РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_03"); //РћРЅРё РѕР±Р»Р°РґР°СЋС‚ СЃРёР»СЊРЅС‹Рј Р°СЂС‚РµС„Р°РєС‚РѕРј, РєРѕС‚РѕСЂС‹Р№ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РЅР°Рј РїРѕР±РµРґРёС‚СЊ СЌС‚РёС… РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_04"); //РћРЅРё РЅР°Р·С‹РІР°СЋС‚ РµРіРѕ 'Р“Р»Р°Р· РРЅРЅРѕСЃР°'. РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РІР»Р°РґРµС‚СЊ СЌС‚РёРј Р°СЂС‚РµС„Р°РєС‚РѕРј.
+	AI_Output (self, other, "DIA_Xardas_TODO_14_05"); //Р Р°СЃСЃРєР°Р¶Рё РїР°Р»Р°РґРёРЅР°Рј Рѕ РЅР°РґРІРёРіР°СЋС‰РµР№СЃСЏ СѓРіСЂРѕР·Рµ. РўС‹ Р”РћР›Р–Р•Рќ СѓР±РµРґРёС‚СЊ РёС… РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РїРѕРґРґРµСЂР¶Р°С‚СЊ РЅР°СЃ!
+	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_07"); //Рђ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ С‚С‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё Р°СЂС‚РµС„Р°РєС‚ Р‘РµР»РёР°СЂР°.
+	AI_Output (self, other, "DIA_Addon_Xardas_Add_14_08"); //Р­С‚Рѕ РїСЂРѕС‚РёРІРѕРїРѕР»РѕР¶РЅРѕСЃС‚СЊ Р“Р»Р°Р·Р° РРЅРЅРѕСЃР°. РћРЅ РЅРµ РґРѕР»Р¶РµРЅ РїРѕРїР°СЃС‚СЊ РІ СЂСѓРєРё Р·Р»Р°.
 	Log_CreateTopic (TOPIC_INNOSEYE, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_INNOSEYE, LOG_RUNNING);
-	B_LogEntry (TOPIC_INNOSEYE,"В городе Хоринис расположился отряд паладинов. Они обладают сильным артефактом: Глазом Инноса. Его сила должна помочь нам избавиться от драконов. Я должен убедить паладинов, что нам нужно объединить наши усилия."); 
+	B_LogEntry (TOPIC_INNOSEYE,"Р’ РіРѕСЂРѕРґРµ РҐРѕСЂРёРЅРёСЃ СЂР°СЃРїРѕР»РѕР¶РёР»СЃСЏ РѕС‚СЂСЏРґ РїР°Р»Р°РґРёРЅРѕРІ. РћРЅРё РѕР±Р»Р°РґР°СЋС‚ СЃРёР»СЊРЅС‹Рј Р°СЂС‚РµС„Р°РєС‚РѕРј: Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°. Р•РіРѕ СЃРёР»Р° РґРѕР»Р¶РЅР° РїРѕРјРѕС‡СЊ РЅР°Рј РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РґСЂР°РєРѕРЅРѕРІ. РЇ РґРѕР»Р¶РµРЅ СѓР±РµРґРёС‚СЊ РїР°Р»Р°РґРёРЅРѕРІ, С‡С‚Рѕ РЅР°Рј РЅСѓР¶РЅРѕ РѕР±СЉРµРґРёРЅРёС‚СЊ РЅР°С€Рё СѓСЃРёР»РёСЏ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ instance DIA_Addon_Xardas_StonePlate		(C_INFO)
 	condition	 = 	DIA_Addon_Xardas_StonePlate_Condition;
 	information	 = 	DIA_Addon_Xardas_StonePlate_Info;
 
-	description	 = 	"Что ты можешь сказать об этой каменной табличке?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕР№ РєР°РјРµРЅРЅРѕР№ С‚Р°Р±Р»РёС‡РєРµ?";
 };
 func int DIA_Addon_Xardas_StonePlate_Condition ()
 {
@@ -215,12 +215,12 @@ func int DIA_Addon_Xardas_StonePlate_Condition ()
 };
 func void DIA_Addon_Xardas_StonePlate_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Xardas_StonePlate_15_00"); //Что ты можешь сказать об этой каменной табличке?
-	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der Hцhlen vor meinem Turm gefunden.
+	AI_Output	(other, self, "DIA_Addon_Xardas_StonePlate_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РѕР± СЌС‚РѕР№ РєР°РјРµРЅРЅРѕР№ С‚Р°Р±Р»РёС‡РєРµ?
+	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_01"); //Ich habe so eine unten in der HС†hlen vor meinem Turm gefunden.
 	//AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_02"); //Sie sind in einer seltsam alten Sprache geschrieben, die ich in dieser Form noch nirgendwo gesehen habe.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //Сначала я подозревал, что это магический артефакт, но потом пришел к выводу, что никакой ценности она не имеет.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //Я не смог полностью расшифровать надписи на табличке, но похоже, они относятся к истории какой-то древней культуры.
-	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_05"); //Если хочешь, можешь забрать табличку себе. Мне она ни к чему.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_03"); //РЎРЅР°С‡Р°Р»Р° СЏ РїРѕРґРѕР·СЂРµРІР°Р», С‡С‚Рѕ СЌС‚Рѕ РјР°РіРёС‡РµСЃРєРёР№ Р°СЂС‚РµС„Р°РєС‚, РЅРѕ РїРѕС‚РѕРј РїСЂРёС€РµР» Рє РІС‹РІРѕРґСѓ, С‡С‚Рѕ РЅРёРєР°РєРѕР№ С†РµРЅРЅРѕСЃС‚Рё РѕРЅР° РЅРµ РёРјРµРµС‚.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_04"); //РЇ РЅРµ СЃРјРѕРі РїРѕР»РЅРѕСЃС‚СЊСЋ СЂР°СЃС€РёС„СЂРѕРІР°С‚СЊ РЅР°РґРїРёСЃРё РЅР° С‚Р°Р±Р»РёС‡РєРµ, РЅРѕ РїРѕС…РѕР¶Рµ, РѕРЅРё РѕС‚РЅРѕСЃСЏС‚СЃСЏ Рє РёСЃС‚РѕСЂРёРё РєР°РєРѕР№-С‚Рѕ РґСЂРµРІРЅРµР№ РєСѓР»СЊС‚СѓСЂС‹.
+	AI_Output	(self, other, "DIA_Addon_Xardas_StonePlate_14_05"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, РјРѕР¶РµС€СЊ Р·Р°Р±СЂР°С‚СЊ С‚Р°Р±Р»РёС‡РєСѓ СЃРµР±Рµ. РњРЅРµ РѕРЅР° РЅРё Рє С‡РµРјСѓ.
 
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -241,7 +241,7 @@ instance DIA_Addon_Xardas_Portal (C_INFO)
 	condition	= DIA_Addon_Xardas_Portal_Condition;
 	information	= DIA_Addon_Xardas_Portal_Info;
 
-	description	= "Маги воды нашли портал, ведущий в неисследованную часть острова...";
+	description	= "РњР°РіРё РІРѕРґС‹ РЅР°С€Р»Рё РїРѕСЂС‚Р°Р», РІРµРґСѓС‰РёР№ РІ РЅРµРёСЃСЃР»РµРґРѕРІР°РЅРЅСѓСЋ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°...";
 };
 
 func int DIA_Addon_Xardas_Portal_Condition ()
@@ -256,10 +256,10 @@ func int DIA_Addon_Xardas_Portal_Condition ()
 
 func void DIA_Addon_Xardas_Portal_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_00"); //Маги воды нашли портал, ведущий в неисследованную часть острова...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01"); //Как интересно...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02"); //Как только ты узнаешь что-нибудь, что действительно сможет нам помочь, дай мне знать!
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_03"); //Где-то там может быть спрятан артефакт Белиара. Ты должен найти его!
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_00"); //РњР°РіРё РІРѕРґС‹ РЅР°С€Р»Рё РїРѕСЂС‚Р°Р», РІРµРґСѓС‰РёР№ РІ РЅРµРёСЃСЃР»РµРґРѕРІР°РЅРЅСѓСЋ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_01"); //РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_02"); //РљР°Рє С‚РѕР»СЊРєРѕ С‚С‹ СѓР·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРјРѕР¶РµС‚ РЅР°Рј РїРѕРјРѕС‡СЊ, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_03"); //Р“РґРµ-С‚Рѕ С‚Р°Рј РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃРїСЂСЏС‚Р°РЅ Р°СЂС‚РµС„Р°РєС‚ Р‘РµР»РёР°СЂР°. РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РµРіРѕ!
 };
 
 // ------------------------------------------------------------
@@ -272,7 +272,7 @@ instance DIA_Addon_Xardas_PortalAgain (C_INFO)
 	condition	= DIA_Addon_Xardas_PortalAgain_Condition;
 	information	= DIA_Addon_Xardas_PortalAgain_Info;
 	permanent 	= TRUE;
-	description	= "Насчет этой неизвестной части острова...";
+	description	= "РќР°СЃС‡РµС‚ СЌС‚РѕР№ РЅРµРёР·РІРµСЃС‚РЅРѕР№ С‡Р°СЃС‚Рё РѕСЃС‚СЂРѕРІР°...";
 };
 
 func int DIA_Addon_Xardas_PortalAgain_Condition ()
@@ -287,8 +287,8 @@ func int DIA_Addon_Xardas_PortalAgain_Condition ()
 
 func void DIA_Addon_Xardas_PortalAgain_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_17"); //Насчет этой неизвестной части острова...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_18"); //Меня не интересуют детали. Возвращайся, если узнаешь что-нибудь действительно полезное.
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_17"); //РќР°СЃС‡РµС‚ СЌС‚РѕР№ РЅРµРёР·РІРµСЃС‚РЅРѕР№ С‡Р°СЃС‚Рё РѕСЃС‚СЂРѕРІР°...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_18"); //РњРµРЅСЏ РЅРµ РёРЅС‚РµСЂРµСЃСѓСЋС‚ РґРµС‚Р°Р»Рё. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РµСЃР»Рё СѓР·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕР»РµР·РЅРѕРµ.
 };
 
 // ------------------------------------------------------------
@@ -301,7 +301,7 @@ instance DIA_Addon_Xardas_AddonSuccess (C_INFO)
 	condition	= DIA_Addon_Xardas_AddonSuccess_Condition;
 	information	= DIA_Addon_Xardas_AddonSuccess_Info;
 
-	description	= "Я исследовал неизвестную часть острова...";
+	description	= "РЇ РёСЃСЃР»РµРґРѕРІР°Р» РЅРµРёР·РІРµСЃС‚РЅСѓСЋ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°...";
 };
 
 func int DIA_Addon_Xardas_AddonSuccess_Condition ()
@@ -315,27 +315,27 @@ func int DIA_Addon_Xardas_AddonSuccess_Condition ()
 
 func void DIA_Addon_Xardas_AddonSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_03"); //Я исследовал неизвестную часть острова...
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_04"); //И что ты нашел?
-	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_05"); //Все кончилось тем, что в мои руки попал Коготь Белиара.
-	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_06"); //Коготь Белиара?! Где он сейчас? Он у тебя с собой?
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_03"); //РЇ РёСЃСЃР»РµРґРѕРІР°Р» РЅРµРёР·РІРµСЃС‚РЅСѓСЋ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°...
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_04"); //Р С‡С‚Рѕ С‚С‹ РЅР°С€РµР»?
+	AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_05"); //Р’СЃРµ РєРѕРЅС‡РёР»РѕСЃСЊ С‚РµРј, С‡С‚Рѕ РІ РјРѕРё СЂСѓРєРё РїРѕРїР°Р» РљРѕРіРѕС‚СЊ Р‘РµР»РёР°СЂР°.
+	AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_06"); //РљРѕРіРѕС‚СЊ Р‘РµР»РёР°СЂР°?! Р“РґРµ РѕРЅ СЃРµР№С‡Р°СЃ? РћРЅ Сѓ С‚РµР±СЏ СЃ СЃРѕР±РѕР№?
 
 	if (C_SCHasBeliarsWeapon())
 	{
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_07"); //Да, вот он.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08"); //(жадно) Как интересно...
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09"); //Это оружие может нам очень помочь. Но оно также и очень опасно.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_10"); //Будь осторожнее! И самое главное, не потеряй Коготь!
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_07"); //Р”Р°, РІРѕС‚ РѕРЅ.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_08"); //(Р¶Р°РґРЅРѕ) РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ...
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_09"); //Р­С‚Рѕ РѕСЂСѓР¶РёРµ РјРѕР¶РµС‚ РЅР°Рј РѕС‡РµРЅСЊ РїРѕРјРѕС‡СЊ. РќРѕ РѕРЅРѕ С‚Р°РєР¶Рµ Рё РѕС‡РµРЅСЊ РѕРїР°СЃРЅРѕ.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_10"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ! Р СЃР°РјРѕРµ РіР»Р°РІРЅРѕРµ, РЅРµ РїРѕС‚РµСЂСЏР№ РљРѕРіРѕС‚СЊ!
 		B_GivePlayerXP (XP_Ambient*3);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_11"); //У меня его больше нет...
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_12"); //Я отдал его магам воды, чтобы они утопили его в море...
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_13"); //(кричит) Ты сошел с ума?! Да ты хотя бы понимаешь, что ты отдал?
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_14"); //Это оружие могло бы сослужить нам огромную службу!
-		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_15"); //Я думаю, что я сделал правильный выбор.
-		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_16"); //(вздыхает) Пути богов неисповедимы...
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_11"); //РЈ РјРµРЅСЏ РµРіРѕ Р±РѕР»СЊС€Рµ РЅРµС‚...
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_12"); //РЇ РѕС‚РґР°Р» РµРіРѕ РјР°РіР°Рј РІРѕРґС‹, С‡С‚РѕР±С‹ РѕРЅРё СѓС‚РѕРїРёР»Рё РµРіРѕ РІ РјРѕСЂРµ...
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_13"); //(РєСЂРёС‡РёС‚) РўС‹ СЃРѕС€РµР» СЃ СѓРјР°?! Р”Р° С‚С‹ С…РѕС‚СЏ Р±С‹ РїРѕРЅРёРјР°РµС€СЊ, С‡С‚Рѕ С‚С‹ РѕС‚РґР°Р»?
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_14"); //Р­С‚Рѕ РѕСЂСѓР¶РёРµ РјРѕРіР»Рѕ Р±С‹ СЃРѕСЃР»СѓР¶РёС‚СЊ РЅР°Рј РѕРіСЂРѕРјРЅСѓСЋ СЃР»СѓР¶Р±Сѓ!
+		AI_Output (other, self, "DIA_Addon_Xardas_AddonSuccess_15_15"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ СЏ СЃРґРµР»Р°Р» РїСЂР°РІРёР»СЊРЅС‹Р№ РІС‹Р±РѕСЂ.
+		AI_Output (self, other, "DIA_Addon_Xardas_AddonSuccess_14_16"); //(РІР·РґС‹С…Р°РµС‚) РџСѓС‚Рё Р±РѕРіРѕРІ РЅРµРёСЃРїРѕРІРµРґРёРјС‹...
 	};
 };
 
@@ -352,7 +352,7 @@ instance DIA_Xardas_WEAPON (C_INFO)		//E1
 	condition	 = 	DIA_Xardas_WEAPON_Condition;
 	information	 = 	DIA_Xardas_WEAPON_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"Мне нужно оружие.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ.";
 };
 
 func int DIA_Xardas_WEAPON_Condition ()
@@ -365,9 +365,9 @@ func int DIA_Xardas_WEAPON_Condition ()
 
 func void DIA_Xardas_WEAPON_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_WEAPON_15_00"); //Мне нужно оружие.
-	AI_Output (self, other, "DIA_Xardas_WEAPON_14_01"); //Я могу дать тебе только то немногое, что у меня есть здесь.
-	AI_Output (self, other, "DIA_Xardas_WEAPON_14_02"); //Посмотри в моей башне. Ты можешь взять все, что покажется тебе полезным.
+	AI_Output (other, self, "DIA_Xardas_WEAPON_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ.
+	AI_Output (self, other, "DIA_Xardas_WEAPON_14_01"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ С‚РѕР»СЊРєРѕ С‚Рѕ РЅРµРјРЅРѕРіРѕРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Xardas_WEAPON_14_02"); //РџРѕСЃРјРѕС‚СЂРё РІ РјРѕРµР№ Р±Р°С€РЅРµ. РўС‹ РјРѕР¶РµС€СЊ РІР·СЏС‚СЊ РІСЃРµ, С‡С‚Рѕ РїРѕРєР°Р¶РµС‚СЃСЏ С‚РµР±Рµ РїРѕР»РµР·РЅС‹Рј.
 };
 
 
@@ -381,7 +381,7 @@ instance DIA_Xardas_ARTEFAKT (C_INFO)	//E2 nach TODO
 	condition	 = 	DIA_Xardas_ARTEFAKT_Condition;
 	information	 = 	DIA_Xardas_ARTEFAKT_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"А что такое этот 'Глаз Инноса'?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚Р°РєРѕРµ СЌС‚РѕС‚ 'Р“Р»Р°Р· РРЅРЅРѕСЃР°'?";
 };
 
 func int DIA_Xardas_ARTEFAKT_Condition ()
@@ -395,10 +395,10 @@ func int DIA_Xardas_ARTEFAKT_Condition ()
 
 func void DIA_Xardas_ARTEFAKT_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_ARTEFAKT_15_00"); //А что такое этот 'Глаз Инноса'?
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_01"); //Это амулет. Легенды гласят, что сам Иннос вложил часть своей силы в этот амулет.
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_02"); //Он восстановит часть твоей потерянной силы и поможет нам победить драконов.
-	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_03"); //Также он обладает и другими скрытыми возможностями. Я расскажу тебе больше, когда этот амулет будет у тебя в руках.
+	AI_Output (other, self, "DIA_Xardas_ARTEFAKT_15_00"); //Рђ С‡С‚Рѕ С‚Р°РєРѕРµ СЌС‚РѕС‚ 'Р“Р»Р°Р· РРЅРЅРѕСЃР°'?
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_01"); //Р­С‚Рѕ Р°РјСѓР»РµС‚. Р›РµРіРµРЅРґС‹ РіР»Р°СЃСЏС‚, С‡С‚Рѕ СЃР°Рј РРЅРЅРѕСЃ РІР»РѕР¶РёР» С‡Р°СЃС‚СЊ СЃРІРѕРµР№ СЃРёР»С‹ РІ СЌС‚РѕС‚ Р°РјСѓР»РµС‚.
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_02"); //РћРЅ РІРѕСЃСЃС‚Р°РЅРѕРІРёС‚ С‡Р°СЃС‚СЊ С‚РІРѕРµР№ РїРѕС‚РµСЂСЏРЅРЅРѕР№ СЃРёР»С‹ Рё РїРѕРјРѕР¶РµС‚ РЅР°Рј РїРѕР±РµРґРёС‚СЊ РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self, other, "DIA_Xardas_ARTEFAKT_14_03"); //РўР°РєР¶Рµ РѕРЅ РѕР±Р»Р°РґР°РµС‚ Рё РґСЂСѓРіРёРјРё СЃРєСЂС‹С‚С‹РјРё РІРѕР·РјРѕР¶РЅРѕСЃС‚СЏРјРё. РЇ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ Р±РѕР»СЊС€Рµ, РєРѕРіРґР° СЌС‚РѕС‚ Р°РјСѓР»РµС‚ Р±СѓРґРµС‚ Сѓ С‚РµР±СЏ РІ СЂСѓРєР°С….
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -411,7 +411,7 @@ instance DIA_Xardas_PALADIN	(C_INFO) //E2 nach TODO
 	condition	 = 	DIA_Xardas_PALADIN_Condition;
 	information	 = 	DIA_Xardas_PALADIN_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"А почему паладины должны отдать мне этот Глаз Инноса?";
+	description	 = 	"Рђ РїРѕС‡РµРјСѓ РїР°Р»Р°РґРёРЅС‹ РґРѕР»Р¶РЅС‹ РѕС‚РґР°С‚СЊ РјРЅРµ СЌС‚РѕС‚ Р“Р»Р°Р· РРЅРЅРѕСЃР°?";
 };
 func int DIA_Xardas_PALADIN_Condition ()
 {	
@@ -423,12 +423,12 @@ func int DIA_Xardas_PALADIN_Condition ()
 };
 func void DIA_Xardas_PALADIN_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_00"); //А почему паладины должны отдать мне этот Глаз Инноса?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_01"); //Потому что ты тот, кому судьбой предназначено носить его.
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_02"); //А откуда тебе это известно?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_03"); //Есть несколько причин полагать это. Вот самая важная из них: ты победил Спящего. Если бы тебе не благоволили боги, ты бы давно уже был мертв.
-	AI_Output (other, self, "DIA_Xardas_PALADIN_15_04"); //Предположим, что ты прав, и мне действительно предначертано носить Глаз Инноса. А откуда паладины узнают, что это правда?
-	AI_Output (self, other, "DIA_Xardas_PALADIN_14_05"); //Глаз сам выбирает того, кто может носить его. Когда ты наденешь его, все сомнения паладинов рассеются.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_00"); //Рђ РїРѕС‡РµРјСѓ РїР°Р»Р°РґРёРЅС‹ РґРѕР»Р¶РЅС‹ РѕС‚РґР°С‚СЊ РјРЅРµ СЌС‚РѕС‚ Р“Р»Р°Р· РРЅРЅРѕСЃР°?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_01"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ С‚С‹ С‚РѕС‚, РєРѕРјСѓ СЃСѓРґСЊР±РѕР№ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРѕ РЅРѕСЃРёС‚СЊ РµРіРѕ.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_02"); //Рђ РѕС‚РєСѓРґР° С‚РµР±Рµ СЌС‚Рѕ РёР·РІРµСЃС‚РЅРѕ?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_03"); //Р•СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРёС‡РёРЅ РїРѕР»Р°РіР°С‚СЊ СЌС‚Рѕ. Р’РѕС‚ СЃР°РјР°СЏ РІР°Р¶РЅР°СЏ РёР· РЅРёС…: С‚С‹ РїРѕР±РµРґРёР» РЎРїСЏС‰РµРіРѕ. Р•СЃР»Рё Р±С‹ С‚РµР±Рµ РЅРµ Р±Р»Р°РіРѕРІРѕР»РёР»Рё Р±РѕРіРё, С‚С‹ Р±С‹ РґР°РІРЅРѕ СѓР¶Рµ Р±С‹Р» РјРµСЂС‚РІ.
+	AI_Output (other, self, "DIA_Xardas_PALADIN_15_04"); //РџСЂРµРґРїРѕР»РѕР¶РёРј, С‡С‚Рѕ С‚С‹ РїСЂР°РІ, Рё РјРЅРµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂРµРґРЅР°С‡РµСЂС‚Р°РЅРѕ РЅРѕСЃРёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°. Рђ РѕС‚РєСѓРґР° РїР°Р»Р°РґРёРЅС‹ СѓР·РЅР°СЋС‚, С‡С‚Рѕ СЌС‚Рѕ РїСЂР°РІРґР°?
+	AI_Output (self, other, "DIA_Xardas_PALADIN_14_05"); //Р“Р»Р°Р· СЃР°Рј РІС‹Р±РёСЂР°РµС‚ С‚РѕРіРѕ, РєС‚Рѕ РјРѕР¶РµС‚ РЅРѕСЃРёС‚СЊ РµРіРѕ. РљРѕРіРґР° С‚С‹ РЅР°РґРµРЅРµС€СЊ РµРіРѕ, РІСЃРµ СЃРѕРјРЅРµРЅРёСЏ РїР°Р»Р°РґРёРЅРѕРІ СЂР°СЃСЃРµСЋС‚СЃСЏ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Khorinis
@@ -440,7 +440,7 @@ instance DIA_Xardas_Khorinis (C_INFO) //E2 nach TODO
 	condition	 = 	DIA_Xardas_Khorinis_Condition;
 	information	 = 	DIA_Xardas_Khorinis_Info;
 	Permanent 	 =  FALSE;
-	description	 = 	"А как мне добраться до города?";
+	description	 = 	"Рђ РєР°Рє РјРЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РіРѕСЂРѕРґР°?";
 };
 func int DIA_Xardas_Khorinis_Condition ()
 {	
@@ -453,9 +453,9 @@ func int DIA_Xardas_Khorinis_Condition ()
 };
 func void DIA_Xardas_Khorinis_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Khorinis_15_00"); //А как мне добраться до города?
-	AI_Output (self, other, "DIA_Xardas_Khorinis_14_01"); //Просто иди по тропинке, ведущей отсюда через горы. Город большой, ты его не пропустишь.
-	AI_Output (self, other, "DIA_Xardas_Khorinis_14_02"); //Но будь осторожен! Путь в город полон опасностей. А ты сейчас далеко не так силен, как был раньше.
+	AI_Output (other, self, "DIA_Xardas_Khorinis_15_00"); //Рђ РєР°Рє РјРЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РіРѕСЂРѕРґР°?
+	AI_Output (self, other, "DIA_Xardas_Khorinis_14_01"); //РџСЂРѕСЃС‚Рѕ РёРґРё РїРѕ С‚СЂРѕРїРёРЅРєРµ, РІРµРґСѓС‰РµР№ РѕС‚СЃСЋРґР° С‡РµСЂРµР· РіРѕСЂС‹. Р“РѕСЂРѕРґ Р±РѕР»СЊС€РѕР№, С‚С‹ РµРіРѕ РЅРµ РїСЂРѕРїСѓСЃС‚РёС€СЊ.
+	AI_Output (self, other, "DIA_Xardas_Khorinis_14_02"); //РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ! РџСѓС‚СЊ РІ РіРѕСЂРѕРґ РїРѕР»РѕРЅ РѕРїР°СЃРЅРѕСЃС‚РµР№. Рђ С‚С‹ СЃРµР№С‡Р°СЃ РґР°Р»РµРєРѕ РЅРµ С‚Р°Рє СЃРёР»РµРЅ, РєР°Рє Р±С‹Р» СЂР°РЅСЊС€Рµ.
 };
 // ************************************************************
 // 			  		Zum zweiten Mal bei Xardas
@@ -468,7 +468,7 @@ instance DIA_Xardas_WhereEx (C_INFO) //BACK AGAIN
 	condition	 = 	DIA_Xardas_WhereEx_Condition;
 	information	 = 	DIA_Xardas_WhereEx_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"А где именно мы сейчас находимся?";
+	description	 = 	"Рђ РіРґРµ РёРјРµРЅРЅРѕ РјС‹ СЃРµР№С‡Р°СЃ РЅР°С…РѕРґРёРјСЃСЏ?";
 };
 
 func int DIA_Xardas_WhereEx_Condition ()
@@ -482,12 +482,12 @@ func int DIA_Xardas_WhereEx_Condition ()
 
 func void DIA_Xardas_WhereEx_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Add_15_00"); //А где именно мы сейчас находимся?
-	AI_Output (self, other, "DIA_Xardas_Add_14_01"); //Как я уже сказал, неподалеку от города Хоринис.
-	AI_Output (self, other, "DIA_Xardas_Add_14_02"); //Я отстроил мою башню здесь.
-	AI_Output (other, self, "DIA_Xardas_Add_15_03"); //Но ведь прошло всего несколько дней, с тех пор как мы были в Долине Рудников...
-	AI_Output (self, other, "DIA_Xardas_Add_14_04"); //Слуги, которых я вызвал для строительства мой башни, проделали потрясающую работу...
-	AI_Output (other, self, "DIA_Xardas_Add_15_05"); //Да, похоже на это.
+	AI_Output (other, self, "DIA_Xardas_Add_15_00"); //Рђ РіРґРµ РёРјРµРЅРЅРѕ РјС‹ СЃРµР№С‡Р°СЃ РЅР°С…РѕРґРёРјСЃСЏ?
+	AI_Output (self, other, "DIA_Xardas_Add_14_01"); //РљР°Рє СЏ СѓР¶Рµ СЃРєР°Р·Р°Р», РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РіРѕСЂРѕРґР° РҐРѕСЂРёРЅРёСЃ.
+	AI_Output (self, other, "DIA_Xardas_Add_14_02"); //РЇ РѕС‚СЃС‚СЂРѕРёР» РјРѕСЋ Р±Р°С€РЅСЋ Р·РґРµСЃСЊ.
+	AI_Output (other, self, "DIA_Xardas_Add_15_03"); //РќРѕ РІРµРґСЊ РїСЂРѕС€Р»Рѕ РІСЃРµРіРѕ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№, СЃ С‚РµС… РїРѕСЂ РєР°Рє РјС‹ Р±С‹Р»Рё РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ...
+	AI_Output (self, other, "DIA_Xardas_Add_14_04"); //РЎР»СѓРіРё, РєРѕС‚РѕСЂС‹С… СЏ РІС‹Р·РІР°Р» РґР»СЏ СЃС‚СЂРѕРёС‚РµР»СЊСЃС‚РІР° РјРѕР№ Р±Р°С€РЅРё, РїСЂРѕРґРµР»Р°Р»Рё РїРѕС‚СЂСЏСЃР°СЋС‰СѓСЋ СЂР°Р±РѕС‚Сѓ...
+	AI_Output (other, self, "DIA_Xardas_Add_15_05"); //Р”Р°, РїРѕС…РѕР¶Рµ РЅР° СЌС‚Рѕ.
 };
 
 instance DIA_Xardas_EQUIPMENT (C_INFO) //BACK AGAIN
@@ -497,7 +497,7 @@ instance DIA_Xardas_EQUIPMENT (C_INFO) //BACK AGAIN
 	condition	 = 	DIA_Xardas_EQUIPMENT_Condition;
 	information	 = 	DIA_Xardas_EQUIPMENT_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"А где я смогу найти снаряжение получше?";
+	description	 = 	"Рђ РіРґРµ СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё СЃРЅР°СЂСЏР¶РµРЅРёРµ РїРѕР»СѓС‡С€Рµ?";
 };
 
 func int DIA_Xardas_EQUIPMENT_Condition ()
@@ -512,10 +512,10 @@ func int DIA_Xardas_EQUIPMENT_Condition ()
 
 func void DIA_Xardas_EQUIPMENT_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_EQUIPMENT_15_00"); //А где я смогу найти снаряжение получше?
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_01"); //Ближайшее место, где ты сможешь раздобыть приличное оружие и доспехи - город Хоринис.
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_02"); //Но внизу, в долине, ты сможешь найти целебные травы, которые помогут тебе, если ты будешь ранен в бою.
-	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_03"); //Видишь озеро справа от моей башни? Оттуда в долину ведет секретный проход.
+	AI_Output (other, self, "DIA_Xardas_EQUIPMENT_15_00"); //Рђ РіРґРµ СЏ СЃРјРѕРіСѓ РЅР°Р№С‚Рё СЃРЅР°СЂСЏР¶РµРЅРёРµ РїРѕР»СѓС‡С€Рµ?
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_01"); //Р‘Р»РёР¶Р°Р№С€РµРµ РјРµСЃС‚Рѕ, РіРґРµ С‚С‹ СЃРјРѕР¶РµС€СЊ СЂР°Р·РґРѕР±С‹С‚СЊ РїСЂРёР»РёС‡РЅРѕРµ РѕСЂСѓР¶РёРµ Рё РґРѕСЃРїРµС…Рё - РіРѕСЂРѕРґ РҐРѕСЂРёРЅРёСЃ.
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_02"); //РќРѕ РІРЅРёР·Сѓ, РІ РґРѕР»РёРЅРµ, С‚С‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё С†РµР»РµР±РЅС‹Рµ С‚СЂР°РІС‹, РєРѕС‚РѕСЂС‹Рµ РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ, РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ СЂР°РЅРµРЅ РІ Р±РѕСЋ.
+	AI_Output (self, other, "DIA_Xardas_EQUIPMENT_14_03"); //Р’РёРґРёС€СЊ РѕР·РµСЂРѕ СЃРїСЂР°РІР° РѕС‚ РјРѕРµР№ Р±Р°С€РЅРё? РћС‚С‚СѓРґР° РІ РґРѕР»РёРЅСѓ РІРµРґРµС‚ СЃРµРєСЂРµС‚РЅС‹Р№ РїСЂРѕС…РѕРґ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ABOUTLESTER
@@ -527,7 +527,7 @@ instance DIA_Xardas_ABOUTLESTER		(C_INFO)
 	condition	 = 	DIA_Xardas_ABOUTLESTER_Condition;
 	information	 = 	DIA_Xardas_ABOUTLESTER_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты уже поговорил с Лестером?";
+	description	 = 	"РўС‹ СѓР¶Рµ РїРѕРіРѕРІРѕСЂРёР» СЃ Р›РµСЃС‚РµСЂРѕРј?";
 };
 func int DIA_Xardas_ABOUTLESTER_Condition ()
 {	
@@ -540,14 +540,14 @@ func int DIA_Xardas_ABOUTLESTER_Condition ()
 };
 func void DIA_Xardas_ABOUTLESTER_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_00"); //Ты уже поговорил с Лестером?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_01"); //Да, я просто засыпал его вопросами. Он многое смог рассказать мне, но он полностью вымотан.
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_02"); //Это почти чудо, что ему удалось выжить. Я отправил его в постель.
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_03"); //Что он рассказал тебе?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_04"); //Боюсь, что ничего хорошего. Он видел не только дракона, но еще и людей в черных плащах с капюшонами.
-	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_05"); //И?
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_06"); //Если эти люди существуют, то их присутствие несет определенную угрозу.
-	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_07"); //И мне это не нравится. Вот, возьми мое кольцо. Оно защитит тебя от магии.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_00"); //РўС‹ СѓР¶Рµ РїРѕРіРѕРІРѕСЂРёР» СЃ Р›РµСЃС‚РµСЂРѕРј?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_01"); //Р”Р°, СЏ РїСЂРѕСЃС‚Рѕ Р·Р°СЃС‹РїР°Р» РµРіРѕ РІРѕРїСЂРѕСЃР°РјРё. РћРЅ РјРЅРѕРіРѕРµ СЃРјРѕРі СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ, РЅРѕ РѕРЅ РїРѕР»РЅРѕСЃС‚СЊСЋ РІС‹РјРѕС‚Р°РЅ.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_02"); //Р­С‚Рѕ РїРѕС‡С‚Рё С‡СѓРґРѕ, С‡С‚Рѕ РµРјСѓ СѓРґР°Р»РѕСЃСЊ РІС‹Р¶РёС‚СЊ. РЇ РѕС‚РїСЂР°РІРёР» РµРіРѕ РІ РїРѕСЃС‚РµР»СЊ.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_03"); //Р§С‚Рѕ РѕРЅ СЂР°СЃСЃРєР°Р·Р°Р» С‚РµР±Рµ?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_04"); //Р‘РѕСЋСЃСЊ, С‡С‚Рѕ РЅРёС‡РµРіРѕ С…РѕСЂРѕС€РµРіРѕ. РћРЅ РІРёРґРµР» РЅРµ С‚РѕР»СЊРєРѕ РґСЂР°РєРѕРЅР°, РЅРѕ РµС‰Рµ Рё Р»СЋРґРµР№ РІ С‡РµСЂРЅС‹С… РїР»Р°С‰Р°С… СЃ РєР°РїСЋС€РѕРЅР°РјРё.
+	AI_Output (other, self, "DIA_Xardas_ABOUTLESTER_15_05"); //Р?
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_06"); //Р•СЃР»Рё СЌС‚Рё Р»СЋРґРё СЃСѓС‰РµСЃС‚РІСѓСЋС‚, С‚Рѕ РёС… РїСЂРёСЃСѓС‚СЃС‚РІРёРµ РЅРµСЃРµС‚ РѕРїСЂРµРґРµР»РµРЅРЅСѓСЋ СѓРіСЂРѕР·Сѓ.
+	AI_Output (self, other, "DIA_Xardas_ABOUTLESTER_14_07"); //Р РјРЅРµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ. Р’РѕС‚, РІРѕР·СЊРјРё РјРѕРµ РєРѕР»СЊС†Рѕ. РћРЅРѕ Р·Р°С‰РёС‚РёС‚ С‚РµР±СЏ РѕС‚ РјР°РіРёРё.
 	
 	B_GiveInvItems (self, other, ItRi_Prot_Mage_01,1);
 	B_GivePlayerXP		(XP_Ambient);
@@ -570,7 +570,7 @@ instance DIA_Xardas_FirstPal		(C_INFO)
 	condition	 = 	DIA_Xardas_FirstPal_Condition;
 	information	 = 	DIA_Xardas_FirstPal_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я был в городе...";
+	description	 = 	"РЇ Р±С‹Р» РІ РіРѕСЂРѕРґРµ...";
 };
 func int DIA_Xardas_FirstPal_Condition ()
 {	
@@ -583,13 +583,13 @@ func int DIA_Xardas_FirstPal_Condition ()
 };
 func void DIA_Xardas_FirstPal_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_FirstPal_15_00"); //Я был в городе...
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_01"); //И? Ты смог поговорить с предводителем паладинов?
-	AI_Output (other, self, "DIA_Xardas_FirstPal_15_02"); //Меня к нему не пропустят...
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_03"); //Чушь! Должен быть способ увидеться с ним.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_04"); //Если все остальное не получится, вступи в монастырь и стань магом.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_05"); //Это, возможно, сомнительная затея с точки зрения морали, но это даст тебе то, что тебе нужно.
-	AI_Output (self, other, "DIA_Xardas_FirstPal_14_06"); //Если ты будешь магом, ему придется встретиться с тобой.
+	AI_Output (other, self, "DIA_Xardas_FirstPal_15_00"); //РЇ Р±С‹Р» РІ РіРѕСЂРѕРґРµ...
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_01"); //Р? РўС‹ СЃРјРѕРі РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РїСЂРµРґРІРѕРґРёС‚РµР»РµРј РїР°Р»Р°РґРёРЅРѕРІ?
+	AI_Output (other, self, "DIA_Xardas_FirstPal_15_02"); //РњРµРЅСЏ Рє РЅРµРјСѓ РЅРµ РїСЂРѕРїСѓСЃС‚СЏС‚...
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_03"); //Р§СѓС€СЊ! Р”РѕР»Р¶РµРЅ Р±С‹С‚СЊ СЃРїРѕСЃРѕР± СѓРІРёРґРµС‚СЊСЃСЏ СЃ РЅРёРј.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_04"); //Р•СЃР»Рё РІСЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ, РІСЃС‚СѓРїРё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ Рё СЃС‚Р°РЅСЊ РјР°РіРѕРј.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_05"); //Р­С‚Рѕ, РІРѕР·РјРѕР¶РЅРѕ, СЃРѕРјРЅРёС‚РµР»СЊРЅР°СЏ Р·Р°С‚РµСЏ СЃ С‚РѕС‡РєРё Р·СЂРµРЅРёСЏ РјРѕСЂР°Р»Рё, РЅРѕ СЌС‚Рѕ РґР°СЃС‚ С‚РµР±Рµ С‚Рѕ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ.
+	AI_Output (self, other, "DIA_Xardas_FirstPal_14_06"); //Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РјР°РіРѕРј, РµРјСѓ РїСЂРёРґРµС‚СЃСЏ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -602,7 +602,7 @@ instance DIA_Xardas_Weiter		(C_INFO)
 	condition	 = 	DIA_Xardas_Weiter_Condition;
 	information	 = 	DIA_Xardas_Weiter_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"И что нам делать дальше?";
+	description	 = 	"Р С‡С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?";
 };
 func int DIA_Xardas_Weiter_Condition ()
 {	
@@ -614,9 +614,9 @@ func int DIA_Xardas_Weiter_Condition ()
 };
 func void DIA_Xardas_Weiter_Info ()
 {
-	AI_Output (other, self, "DIA_Xardas_Weiter_15_00"); //И что нам делать дальше?
-	AI_Output (self, other, "DIA_Xardas_Weiter_14_01"); //Мы должны действовать согласно нашему плану. Другого пути нет.
-	AI_Output (self, other, "DIA_Xardas_Weiter_14_02"); //Ты должен добыть Глаз Инноса, а я буду продолжать искать ответы.
+	AI_Output (other, self, "DIA_Xardas_Weiter_15_00"); //Р С‡С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output (self, other, "DIA_Xardas_Weiter_14_01"); //РњС‹ РґРѕР»Р¶РЅС‹ РґРµР№СЃС‚РІРѕРІР°С‚СЊ СЃРѕРіР»Р°СЃРЅРѕ РЅР°С€РµРјСѓ РїР»Р°РЅСѓ. Р”СЂСѓРіРѕРіРѕ РїСѓС‚Рё РЅРµС‚.
+	AI_Output (self, other, "DIA_Xardas_Weiter_14_02"); //РўС‹ РґРѕР»Р¶РµРЅ РґРѕР±С‹С‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°, Р° СЏ Р±СѓРґСѓ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РёСЃРєР°С‚СЊ РѕС‚РІРµС‚С‹.
 };
 
 INSTANCE DIA_Xardas_KdfSecret (C_INFO)
@@ -626,7 +626,7 @@ INSTANCE DIA_Xardas_KdfSecret (C_INFO)
 	condition	= DIA_Xardas_KdfSecret_Condition;
 	information	= DIA_Xardas_KdfSecret_Info;
 	permanent	= FALSE;
-	description = "Почему Круг Огня не должен знать о тебе?";
+	description = "РџРѕС‡РµРјСѓ РљСЂСѓРі РћРіРЅСЏ РЅРµ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ Рѕ С‚РµР±Рµ?";
 };                       
 
 FUNC INT DIA_Xardas_KdfSecret_Condition()
@@ -639,12 +639,12 @@ FUNC INT DIA_Xardas_KdfSecret_Condition()
  
 FUNC VOID DIA_Xardas_KdfSecret_Info()
 {	
-	AI_Output	(other, self,"DIA_Xardas_KdfSecret_15_00");	//Почему Круг Огня не должен знать о тебе?
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_01");	//Когда-то я был высшим членом Круга. Даже тогда я подозревал, что демоническая магия может быть ключом к этому магическому барьеру.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_02"); //Но мне было ни за что не убедить остальных членов Круга последовать этому пути.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_03"); //Поэтому я покинул Круг, чтобы изучать черную магию.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_04"); //Это преступление, которому в глазах Магов Огня, (язвительно) 'Посвященных Инноса', всегда таких 'Добрых' и 'Добродетельных', никогда не будет оправдания.
-	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_05"); //Они уверены, что я все еще жив, но они понятия не имеют, где искать меня - и это хорошо.
+	AI_Output	(other, self,"DIA_Xardas_KdfSecret_15_00");	//РџРѕС‡РµРјСѓ РљСЂСѓРі РћРіРЅСЏ РЅРµ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ Рѕ С‚РµР±Рµ?
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_01");	//РљРѕРіРґР°-С‚Рѕ СЏ Р±С‹Р» РІС‹СЃС€РёРј С‡Р»РµРЅРѕРј РљСЂСѓРіР°. Р”Р°Р¶Рµ С‚РѕРіРґР° СЏ РїРѕРґРѕР·СЂРµРІР°Р», С‡С‚Рѕ РґРµРјРѕРЅРёС‡РµСЃРєР°СЏ РјР°РіРёСЏ РјРѕР¶РµС‚ Р±С‹С‚СЊ РєР»СЋС‡РѕРј Рє СЌС‚РѕРјСѓ РјР°РіРёС‡РµСЃРєРѕРјСѓ Р±Р°СЂСЊРµСЂСѓ.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_02"); //РќРѕ РјРЅРµ Р±С‹Р»Рѕ РЅРё Р·Р° С‡С‚Рѕ РЅРµ СѓР±РµРґРёС‚СЊ РѕСЃС‚Р°Р»СЊРЅС‹С… С‡Р»РµРЅРѕРІ РљСЂСѓРіР° РїРѕСЃР»РµРґРѕРІР°С‚СЊ СЌС‚РѕРјСѓ РїСѓС‚Рё.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_03"); //РџРѕСЌС‚РѕРјСѓ СЏ РїРѕРєРёРЅСѓР» РљСЂСѓРі, С‡С‚РѕР±С‹ РёР·СѓС‡Р°С‚СЊ С‡РµСЂРЅСѓСЋ РјР°РіРёСЋ.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_04"); //Р­С‚Рѕ РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ, РєРѕС‚РѕСЂРѕРјСѓ РІ РіР»Р°Р·Р°С… РњР°РіРѕРІ РћРіРЅСЏ, (СЏР·РІРёС‚РµР»СЊРЅРѕ) 'РџРѕСЃРІСЏС‰РµРЅРЅС‹С… РРЅРЅРѕСЃР°', РІСЃРµРіРґР° С‚Р°РєРёС… 'Р”РѕР±СЂС‹С…' Рё 'Р”РѕР±СЂРѕРґРµС‚РµР»СЊРЅС‹С…', РЅРёРєРѕРіРґР° РЅРµ Р±СѓРґРµС‚ РѕРїСЂР°РІРґР°РЅРёСЏ.
+	AI_Output	(self, other,"DIA_Xardas_KdfSecret_14_05"); //РћРЅРё СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ СЏ РІСЃРµ РµС‰Рµ Р¶РёРІ, РЅРѕ РѕРЅРё РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋС‚, РіРґРµ РёСЃРєР°С‚СЊ РјРµРЅСЏ - Рё СЌС‚Рѕ С…РѕСЂРѕС€Рѕ.
 };
 
 
@@ -692,7 +692,7 @@ instance DIA_Xardas_BACKFROMOW		(C_INFO)
 	condition	 = 	DIA_Xardas_BACKFROMOW_Condition;
 	information	 = 	DIA_Xardas_BACKFROMOW_Info;
 
-	description	 = 	"Я вернулся из Долины Рудников.";
+	description	 = 	"РЇ РІРµСЂРЅСѓР»СЃСЏ РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ.";
 };
 
 func int DIA_Xardas_BACKFROMOW_Condition ()
@@ -705,11 +705,11 @@ func int DIA_Xardas_BACKFROMOW_Condition ()
 
 func void DIA_Xardas_BACKFROMOW_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_00"); //Я вернулся из Долины Рудников.
-	AI_Output			(self, other, "DIA_Xardas_BACKFROMOW_14_01"); //Давно бы пора. И что ты там видел?
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_02"); //Ты был прав. Там все кишит врагами, даже яблоку упасть негде.
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_03"); //Орки осаждают замок, а драконы опустошают все вокруг.
-	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_04"); //Осталось недолго, прежде чем они нападут на Хоринис, если я не ошибаюсь.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_00"); //РЇ РІРµСЂРЅСѓР»СЃСЏ РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Xardas_BACKFROMOW_14_01"); //Р”Р°РІРЅРѕ Р±С‹ РїРѕСЂР°. Р С‡С‚Рѕ С‚С‹ С‚Р°Рј РІРёРґРµР»?
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_02"); //РўС‹ Р±С‹Р» РїСЂР°РІ. РўР°Рј РІСЃРµ РєРёС€РёС‚ РІСЂР°РіР°РјРё, РґР°Р¶Рµ СЏР±Р»РѕРєСѓ СѓРїР°СЃС‚СЊ РЅРµРіРґРµ.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_03"); //РћСЂРєРё РѕСЃР°Р¶РґР°СЋС‚ Р·Р°РјРѕРє, Р° РґСЂР°РєРѕРЅС‹ РѕРїСѓСЃС‚РѕС€Р°СЋС‚ РІСЃРµ РІРѕРєСЂСѓРі.
+	AI_Output			(other, self, "DIA_Xardas_BACKFROMOW_15_04"); //РћСЃС‚Р°Р»РѕСЃСЊ РЅРµРґРѕР»РіРѕ, РїСЂРµР¶РґРµ С‡РµРј РѕРЅРё РЅР°РїР°РґСѓС‚ РЅР° РҐРѕСЂРёРЅРёСЃ, РµСЃР»Рё СЏ РЅРµ РѕС€РёР±Р°СЋСЃСЊ.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -723,7 +723,7 @@ instance DIA_Xardas_DMTSINDDA		(C_INFO)
 	condition	 = 	DIA_Xardas_DMTSINDDA_Condition;
 	information	 = 	DIA_Xardas_DMTSINDDA_Info;
 
-	description	 = 	"Что, черт возьми, произошло здесь?";
+	description	 = 	"Р§С‚Рѕ, С‡РµСЂС‚ РІРѕР·СЊРјРё, РїСЂРѕРёР·РѕС€Р»Рѕ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Xardas_DMTSINDDA_Condition ()
@@ -740,56 +740,56 @@ func void DIA_Xardas_DMTSINDDA_Info ()
 
  	if (Npc_KnowsInfo(other, DIA_Lester_BACKINTOWN))
 	{
-		AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_00"); //Лестер сказал, что ты хотел видеть меня как можно быстрее.
+		AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_00"); //Р›РµСЃС‚РµСЂ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ С…РѕС‚РµР» РІРёРґРµС‚СЊ РјРµРЅСЏ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ.
 	};
 	
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_01"); //Что, черт возьми, произошло здесь?
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_02"); //Враг узнал, кем ты являешься на самом деле, и планирует завладеть Глазом Инноса.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_03"); //Он распознал эту угрозу. Это заставило его выйти из тени и решиться на открытую атаку.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_04"); //Игра в прятки окончена. Вчера еще никто не знал, какова будет атака врага. Но теперь это становится слишком очевидно.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_15_01"); //Р§С‚Рѕ, С‡РµСЂС‚ РІРѕР·СЊРјРё, РїСЂРѕРёР·РѕС€Р»Рѕ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_02"); //Р’СЂР°Рі СѓР·РЅР°Р», РєРµРј С‚С‹ СЏРІР»СЏРµС€СЊСЃСЏ РЅР° СЃР°РјРѕРј РґРµР»Рµ, Рё РїР»Р°РЅРёСЂСѓРµС‚ Р·Р°РІР»Р°РґРµС‚СЊ Р“Р»Р°Р·РѕРј РРЅРЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_03"); //РћРЅ СЂР°СЃРїРѕР·РЅР°Р» СЌС‚Сѓ СѓРіСЂРѕР·Сѓ. Р­С‚Рѕ Р·Р°СЃС‚Р°РІРёР»Рѕ РµРіРѕ РІС‹Р№С‚Рё РёР· С‚РµРЅРё Рё СЂРµС€РёС‚СЊСЃСЏ РЅР° РѕС‚РєСЂС‹С‚СѓСЋ Р°С‚Р°РєСѓ.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_14_04"); //РРіСЂР° РІ РїСЂСЏС‚РєРё РѕРєРѕРЅС‡РµРЅР°. Р’С‡РµСЂР° РµС‰Рµ РЅРёРєС‚Рѕ РЅРµ Р·РЅР°Р», РєР°РєРѕРІР° Р±СѓРґРµС‚ Р°С‚Р°РєР° РІСЂР°РіР°. РќРѕ С‚РµРїРµСЂСЊ СЌС‚Рѕ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ СЃР»РёС€РєРѕРј РѕС‡РµРІРёРґРЅРѕ.
 
-	B_LogEntry (TOPIC_INNOSEYE, "Врагу теперь известно, что я ищу Глаз Инноса. Мне нужно побыстрее найти его, пока еще не слишком поздно.");
+	B_LogEntry (TOPIC_INNOSEYE, "Р’СЂР°РіСѓ С‚РµРїРµСЂСЊ РёР·РІРµСЃС‚РЅРѕ, С‡С‚Рѕ СЏ РёС‰Сѓ Р“Р»Р°Р· РРЅРЅРѕСЃР°. РњРЅРµ РЅСѓР¶РЅРѕ РїРѕР±С‹СЃС‚СЂРµРµ РЅР°Р№С‚Рё РµРіРѕ, РїРѕРєР° РµС‰Рµ РЅРµ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.");
 	
 	Info_ClearChoices	(DIA_Xardas_DMTSINDDA);
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Меня атаковали маги в черных мантиях.", DIA_Xardas_DMTSINDDA_DMT );
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Я, наконец, добыл доказательство, для лорда Хагена.", DIA_Xardas_DMTSINDDA_Beweis );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "РњРµРЅСЏ Р°С‚Р°РєРѕРІР°Р»Рё РјР°РіРё РІ С‡РµСЂРЅС‹С… РјР°РЅС‚РёСЏС….", DIA_Xardas_DMTSINDDA_DMT );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "РЇ, РЅР°РєРѕРЅРµС†, РґРѕР±С‹Р» РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ, РґР»СЏ Р»РѕСЂРґР° РҐР°РіРµРЅР°.", DIA_Xardas_DMTSINDDA_Beweis );
 
 };
 
 func void DIA_Xardas_DMTSINDDA_DMT ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_15_00"); //Меня атаковали маги в черных мантиях.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_01"); //У врага много обличий. Ищущие - одно из них. Они те, кто подготавливает плацдарм для врага.
- 	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_02"); //Они заняли позиции в стратегических местах, и теперь только ждут возможности захлопнуть ловушку.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_03"); //Держись от них подальше. Они сильные маги, и они попытаются во что бы то ни стало остановить тебя.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_15_00"); //РњРµРЅСЏ Р°С‚Р°РєРѕРІР°Р»Рё РјР°РіРё РІ С‡РµСЂРЅС‹С… РјР°РЅС‚РёСЏС….
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_01"); //РЈ РІСЂР°РіР° РјРЅРѕРіРѕ РѕР±Р»РёС‡РёР№. РС‰СѓС‰РёРµ - РѕРґРЅРѕ РёР· РЅРёС…. РћРЅРё С‚Рµ, РєС‚Рѕ РїРѕРґРіРѕС‚Р°РІР»РёРІР°РµС‚ РїР»Р°С†РґР°СЂРј РґР»СЏ РІСЂР°РіР°.
+ 	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_02"); //РћРЅРё Р·Р°РЅСЏР»Рё РїРѕР·РёС†РёРё РІ СЃС‚СЂР°С‚РµРіРёС‡РµСЃРєРёС… РјРµСЃС‚Р°С…, Рё С‚РµРїРµСЂСЊ С‚РѕР»СЊРєРѕ Р¶РґСѓС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё Р·Р°С…Р»РѕРїРЅСѓС‚СЊ Р»РѕРІСѓС€РєСѓ.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_14_03"); //Р”РµСЂР¶РёСЃСЊ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ. РћРЅРё СЃРёР»СЊРЅС‹Рµ РјР°РіРё, Рё РѕРЅРё РїРѕРїС‹С‚Р°СЋС‚СЃСЏ РІРѕ С‡С‚Рѕ Р±С‹ С‚Рѕ РЅРё СЃС‚Р°Р»Рѕ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ С‚РµР±СЏ.
 	
 	if (hero.guild == GIL_KDF)
 	{
 	Log_CreateTopic (TOPIC_DEMENTOREN, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DEMENTOREN, LOG_RUNNING);
-	B_LogEntry (TOPIC_DEMENTOREN,"Ксардас знает кто такие эти люди в черных рясах. Похоже именно Ищущие  заправляют всем в о вражеских рядах, и они очень опасны."); 
+	B_LogEntry (TOPIC_DEMENTOREN,"РљСЃР°СЂРґР°СЃ Р·РЅР°РµС‚ РєС‚Рѕ С‚Р°РєРёРµ СЌС‚Рё Р»СЋРґРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С…. РџРѕС…РѕР¶Рµ РёРјРµРЅРЅРѕ РС‰СѓС‰РёРµ  Р·Р°РїСЂР°РІР»СЏСЋС‚ РІСЃРµРј РІ Рѕ РІСЂР°Р¶РµСЃРєРёС… СЂСЏРґР°С…, Рё РѕРЅРё РѕС‡РµРЅСЊ РѕРїР°СЃРЅС‹."); 
 	};
 };
 
 func void DIA_Xardas_DMTSINDDA_Beweis ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_00"); //Я, наконец, добыл доказательство, которое требовал от меня лорд Хаген.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_01"); //Что еще за доказательство?
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_02"); //Я получил письмо от Гаронда, предводителя паладинов в Долине Рудников. В нем он просит о подкреплении.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_03"); //Этого должно быть достаточно, чтобы убедить воинственного ветерана. Отлично.
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_00"); //РЇ, РЅР°РєРѕРЅРµС†, РґРѕР±С‹Р» РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ, РєРѕС‚РѕСЂРѕРµ С‚СЂРµР±РѕРІР°Р» РѕС‚ РјРµРЅСЏ Р»РѕСЂРґ РҐР°РіРµРЅ.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_01"); //Р§С‚Рѕ РµС‰Рµ Р·Р° РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕ?
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_Beweis_15_02"); //РЇ РїРѕР»СѓС‡РёР» РїРёСЃСЊРјРѕ РѕС‚ Р“Р°СЂРѕРЅРґР°, РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РїР°Р»Р°РґРёРЅРѕРІ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. Р’ РЅРµРј РѕРЅ РїСЂРѕСЃРёС‚ Рѕ РїРѕРґРєСЂРµРїР»РµРЅРёРё.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_Beweis_14_03"); //Р­С‚РѕРіРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ СѓР±РµРґРёС‚СЊ РІРѕРёРЅСЃС‚РІРµРЅРЅРѕРіРѕ РІРµС‚РµСЂР°РЅР°. РћС‚Р»РёС‡РЅРѕ.
 	
-	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "И каков будет наш следующий шаг?", DIA_Xardas_DMTSINDDA_DMT_WhatToDo );
+	Info_AddChoice	(DIA_Xardas_DMTSINDDA, "Р РєР°РєРѕРІ Р±СѓРґРµС‚ РЅР°С€ СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі?", DIA_Xardas_DMTSINDDA_DMT_WhatToDo );
 	B_GivePlayerXP (XP_Ambient);
 };
 
 func void DIA_Xardas_DMTSINDDA_DMT_WhatToDo ()
 {
-	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_15_00"); //И каков будет наш следующий шаг?
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_01"); //Иди и отнеси Лорду Хагену письмо от Гаронда, и добейся от него, чтобы он позволил тебя взять Глаз Инноса.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02"); //Затем иди в монастырь, и поговори с Пирокаром. Он должен дать тебе Глаз.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03"); //Сейчас нет ничего более важного, чем обеспечить безопасность этого артефакта.
-	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04"); //Иди, пока еще не слишком поздно. Враг также попытается наложить на него свои лапы.
-	B_LogEntry (TOPIC_INNOSEYE, "Глаз находится в монастыре магов огня. Я надеюсь, что лорд Хаген предоставит мне доступ к нему, когда я принесу ему письмо от лорда Гаронда. Верховный маг Пирокар не позволит мне надеть этот амулет без одобрения Хагена.");
+	AI_Output			(other, self, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_15_00"); //Р РєР°РєРѕРІ Р±СѓРґРµС‚ РЅР°С€ СЃР»РµРґСѓСЋС‰РёР№ С€Р°Рі?
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_01"); //РРґРё Рё РѕС‚РЅРµСЃРё Р›РѕСЂРґСѓ РҐР°РіРµРЅСѓ РїРёСЃСЊРјРѕ РѕС‚ Р“Р°СЂРѕРЅРґР°, Рё РґРѕР±РµР№СЃСЏ РѕС‚ РЅРµРіРѕ, С‡С‚РѕР±С‹ РѕРЅ РїРѕР·РІРѕР»РёР» С‚РµР±СЏ РІР·СЏС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_02"); //Р—Р°С‚РµРј РёРґРё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, Рё РїРѕРіРѕРІРѕСЂРё СЃ РџРёСЂРѕРєР°СЂРѕРј. РћРЅ РґРѕР»Р¶РµРЅ РґР°С‚СЊ С‚РµР±Рµ Р“Р»Р°Р·.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_03"); //РЎРµР№С‡Р°СЃ РЅРµС‚ РЅРёС‡РµРіРѕ Р±РѕР»РµРµ РІР°Р¶РЅРѕРіРѕ, С‡РµРј РѕР±РµСЃРїРµС‡РёС‚СЊ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚СЊ СЌС‚РѕРіРѕ Р°СЂС‚РµС„Р°РєС‚Р°.
+	AI_Output			(self, other, "DIA_Xardas_DMTSINDDA_DMT_WhatToDo_14_04"); //РРґРё, РїРѕРєР° РµС‰Рµ РЅРµ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ. Р’СЂР°Рі С‚Р°РєР¶Рµ РїРѕРїС‹С‚Р°РµС‚СЃСЏ РЅР°Р»РѕР¶РёС‚СЊ РЅР° РЅРµРіРѕ СЃРІРѕРё Р»Р°РїС‹.
+	B_LogEntry (TOPIC_INNOSEYE, "Р“Р»Р°Р· РЅР°С…РѕРґРёС‚СЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ РјР°РіРѕРІ РѕРіРЅСЏ. РЇ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р»РѕСЂРґ РҐР°РіРµРЅ РїСЂРµРґРѕСЃС‚Р°РІРёС‚ РјРЅРµ РґРѕСЃС‚СѓРї Рє РЅРµРјСѓ, РєРѕРіРґР° СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ РїРёСЃСЊРјРѕ РѕС‚ Р»РѕСЂРґР° Р“Р°СЂРѕРЅРґР°. Р’РµСЂС…РѕРІРЅС‹Р№ РјР°Рі РџРёСЂРѕРєР°СЂ РЅРµ РїРѕР·РІРѕР»РёС‚ РјРЅРµ РЅР°РґРµС‚СЊ СЌС‚РѕС‚ Р°РјСѓР»РµС‚ Р±РµР· РѕРґРѕР±СЂРµРЅРёСЏ РҐР°РіРµРЅР°.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -802,7 +802,7 @@ instance DIA_Xardas_INNOSEYEBROKEN		(C_INFO)
 	condition	 = 	DIA_Xardas_INNOSEYEBROKEN_Condition;
 	information	 = 	DIA_Xardas_INNOSEYEBROKEN_Info;
 
-	description	 = 	"Глаз Инноса был уничтожен.";
+	description	 = 	"Р“Р»Р°Р· РРЅРЅРѕСЃР° Р±С‹Р» СѓРЅРёС‡С‚РѕР¶РµРЅ.";
 };
 
 func int DIA_Xardas_INNOSEYEBROKEN_Condition ()
@@ -817,26 +817,26 @@ func int DIA_Xardas_INNOSEYEBROKEN_Condition ()
 
 func void DIA_Xardas_INNOSEYEBROKEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_00"); //Глаз Инноса был уничтожен.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_01"); //Что ты говоришь? Уничтожен!
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_02"); //Я нашел его в северных лесах - к сожалению, мне удалось найти только фрагменты.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_03"); //Это был наш единственный шанс противостоять этим драконам. И мы провалили его!
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_00"); //Р“Р»Р°Р· РРЅРЅРѕСЃР° Р±С‹Р» СѓРЅРёС‡С‚РѕР¶РµРЅ.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_01"); //Р§С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ? РЈРЅРёС‡С‚РѕР¶РµРЅ!
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_15_02"); //РЇ РЅР°С€РµР» РµРіРѕ РІ СЃРµРІРµСЂРЅС‹С… Р»РµСЃР°С… - Рє СЃРѕР¶Р°Р»РµРЅРёСЋ, РјРЅРµ СѓРґР°Р»РѕСЃСЊ РЅР°Р№С‚Рё С‚РѕР»СЊРєРѕ С„СЂР°РіРјРµРЅС‚С‹.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_14_03"); //Р­С‚Рѕ Р±С‹Р» РЅР°С€ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ С€Р°РЅСЃ РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ СЌС‚РёРј РґСЂР°РєРѕРЅР°Рј. Р РјС‹ РїСЂРѕРІР°Р»РёР»Рё РµРіРѕ!
 
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 	
 	Info_ClearChoices	(DIA_Xardas_INNOSEYEBROKEN);
-	Info_AddChoice	(DIA_Xardas_INNOSEYEBROKEN, "И что теперь?", DIA_Xardas_INNOSEYEBROKEN_wasnun );
+	Info_AddChoice	(DIA_Xardas_INNOSEYEBROKEN, "Р С‡С‚Рѕ С‚РµРїРµСЂСЊ?", DIA_Xardas_INNOSEYEBROKEN_wasnun );
 
 
 };
 func void DIA_Xardas_INNOSEYEBROKEN_wasnun ()
 {
-	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_wasnun_15_00"); //И что теперь?
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_01"); //Это болезненный удар. Мы должны перестроиться. Я должен уединиться, и все взвесить.
-	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_02"); //А тем временем, ты отправляйся в город и поговори с Ватрасом, Магом Воды. Возможно, он знает, что нужно делать.
+	AI_Output			(other, self, "DIA_Xardas_INNOSEYEBROKEN_wasnun_15_00"); //Р С‡С‚Рѕ С‚РµРїРµСЂСЊ?
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_01"); //Р­С‚Рѕ Р±РѕР»РµР·РЅРµРЅРЅС‹Р№ СѓРґР°СЂ. РњС‹ РґРѕР»Р¶РЅС‹ РїРµСЂРµСЃС‚СЂРѕРёС‚СЊСЃСЏ. РЇ РґРѕР»Р¶РµРЅ СѓРµРґРёРЅРёС‚СЊСЃСЏ, Рё РІСЃРµ РІР·РІРµСЃРёС‚СЊ.
+	AI_Output			(self, other, "DIA_Xardas_INNOSEYEBROKEN_wasnun_14_02"); //Рђ С‚РµРј РІСЂРµРјРµРЅРµРј, С‚С‹ РѕС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РіРѕСЂРѕРґ Рё РїРѕРіРѕРІРѕСЂРё СЃ Р’Р°С‚СЂР°СЃРѕРј, РњР°РіРѕРј Р’РѕРґС‹. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ Р·РЅР°РµС‚, С‡С‚Рѕ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ.
 
-	B_LogEntry (TOPIC_INNOSEYE, "Ксардас остался не очень доволен уничтожением Глаза Инноса. Маг воды Ватрас в городе Хоринис, возможно, наша единственная надежда.");
+	B_LogEntry (TOPIC_INNOSEYE, "РљСЃР°СЂРґР°СЃ РѕСЃС‚Р°Р»СЃСЏ РЅРµ РѕС‡РµРЅСЊ РґРѕРІРѕР»РµРЅ СѓРЅРёС‡С‚РѕР¶РµРЅРёРµРј Р“Р»Р°Р·Р° РРЅРЅРѕСЃР°. РњР°Рі РІРѕРґС‹ Р’Р°С‚СЂР°СЃ РІ РіРѕСЂРѕРґРµ РҐРѕСЂРёРЅРёСЃ, РІРѕР·РјРѕР¶РЅРѕ, РЅР°С€Р° РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ РЅР°РґРµР¶РґР°.");
 
 	MIS_Xardas_GoToVatrasInnoseye = LOG_RUNNING;
 };
@@ -852,7 +852,7 @@ instance DIA_Xardas_RITUALREQUEST		(C_INFO)
 	condition	 = 	DIA_Xardas_RITUALREQUEST_Condition;
 	information	 = 	DIA_Xardas_RITUALREQUEST_Info;
 
-	description	 = 	"Ватрас отправил меня к тебе.";
+	description	 = 	"Р’Р°С‚СЂР°СЃ РѕС‚РїСЂР°РІРёР» РјРµРЅСЏ Рє С‚РµР±Рµ.";
 };
 
 func int DIA_Xardas_RITUALREQUEST_Condition ()
@@ -867,26 +867,26 @@ func int DIA_Xardas_RITUALREQUEST_Condition ()
 
 func void DIA_Xardas_RITUALREQUEST_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_00"); //Ватрас отправил меня к тебе.
-	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_01"); //Хорошо. Что он сказал?
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_02"); //Он сказал, что-то о ритуале обращения в Круге Солнца.
-	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_03"); //(смеется) Вот старый дьявол. Думаю, я знаю, что он затеял. Ты пришел, чтобы призвать меня к нему.
-	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_04"); //Похоже на то. Когда ты отправляешься?
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_00"); //Р’Р°С‚СЂР°СЃ РѕС‚РїСЂР°РІРёР» РјРµРЅСЏ Рє С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_01"); //РҐРѕСЂРѕС€Рѕ. Р§С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р»?
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_02"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ-С‚Рѕ Рѕ СЂРёС‚СѓР°Р»Рµ РѕР±СЂР°С‰РµРЅРёСЏ РІ РљСЂСѓРіРµ РЎРѕР»РЅС†Р°.
+	AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_03"); //(СЃРјРµРµС‚СЃСЏ) Р’РѕС‚ СЃС‚Р°СЂС‹Р№ РґСЊСЏРІРѕР». Р”СѓРјР°СЋ, СЏ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅ Р·Р°С‚РµСЏР». РўС‹ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРёР·РІР°С‚СЊ РјРµРЅСЏ Рє РЅРµРјСѓ.
+	AI_Output			(other, self, "DIA_Xardas_RITUALREQUEST_15_04"); //РџРѕС…РѕР¶Рµ РЅР° С‚Рѕ. РљРѕРіРґР° С‚С‹ РѕС‚РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
 
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_DJG)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_05"); //Не стоит заставлять Ватраса ждать. Я отправляюсь немедленно. А ты должен выполнить свою задачу, а затем присоединиться ко мне опять.
+		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_05"); //РќРµ СЃС‚РѕРёС‚ Р·Р°СЃС‚Р°РІР»СЏС‚СЊ Р’Р°С‚СЂР°СЃР° Р¶РґР°С‚СЊ. РЇ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ РЅРµРјРµРґР»РµРЅРЅРѕ. Рђ С‚С‹ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅРёС‚СЊ СЃРІРѕСЋ Р·Р°РґР°С‡Сѓ, Р° Р·Р°С‚РµРј РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ РєРѕ РјРЅРµ РѕРїСЏС‚СЊ.
 		AI_StopProcessInfos (self);
-		B_LogEntry (TOPIC_INNOSEYE, "Ксардас согласился участвовать в ритуале в Круге Солнца.");
+		B_LogEntry (TOPIC_INNOSEYE, "РљСЃР°СЂРґР°СЃ СЃРѕРіР»Р°СЃРёР»СЃСЏ СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ СЂРёС‚СѓР°Р»Рµ РІ РљСЂСѓРіРµ РЎРѕР»РЅС†Р°.");
 		B_GivePlayerXP (XP_Ambient);
 		Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair");
 		Xardas_GoesToRitualInnosEye = TRUE; 
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_06"); //Я буду помогать в этом ритуале только когда буду уверен, что ты готов к встрече с драконами.
+		AI_Output			(self, other, "DIA_Xardas_RITUALREQUEST_14_06"); //РЇ Р±СѓРґСѓ РїРѕРјРѕРіР°С‚СЊ РІ СЌС‚РѕРј СЂРёС‚СѓР°Р»Рµ С‚РѕР»СЊРєРѕ РєРѕРіРґР° Р±СѓРґСѓ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ РіРѕС‚РѕРІ Рє РІСЃС‚СЂРµС‡Рµ СЃ РґСЂР°РєРѕРЅР°РјРё.
 	};	
 	B_GivePlayerXP (XP_Ambient);
 
@@ -903,7 +903,7 @@ instance DIA_Xardas_WARUMNICHTJETZT		(C_INFO)
 	condition	 = 	DIA_Xardas_WARUMNICHTJETZT_Condition;
 	information	 = 	DIA_Xardas_WARUMNICHTJETZT_Info;
 
-	description	 = 	"Почему бы тебе не отправиться на встречу с Ватрасом ПРЯМО СЕЙЧАС?";
+	description	 = 	"РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РЅР° РІСЃС‚СЂРµС‡Сѓ СЃ Р’Р°С‚СЂР°СЃРѕРј РџР РЇРњРћ РЎР•Р™Р§РђРЎ?";
 };
 
 func int DIA_Xardas_WARUMNICHTJETZT_Condition ()
@@ -919,28 +919,28 @@ func int DIA_Xardas_WARUMNICHTJETZT_Condition ()
 
 func void DIA_Xardas_WARUMNICHTJETZT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_00"); //Почему бы тебе не отправиться на встречу с Ватрасом ПРЯМО СЕЙЧАС?
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_01"); //Иногда я просто не понимаю тебя.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_14_02"); //(раздраженно) Не смей говорить со мной в таком тоне. Если бы не я, твое ни на что не годное тело до сих пор бы гнило в этом храме.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РЅР° РІСЃС‚СЂРµС‡Сѓ СЃ Р’Р°С‚СЂР°СЃРѕРј РџР РЇРњРћ РЎР•Р™Р§РђРЎ?
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_15_01"); //РРЅРѕРіРґР° СЏ РїСЂРѕСЃС‚Рѕ РЅРµ РїРѕРЅРёРјР°СЋ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_14_02"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РќРµ СЃРјРµР№ РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№ РІ С‚Р°РєРѕРј С‚РѕРЅРµ. Р•СЃР»Рё Р±С‹ РЅРµ СЏ, С‚РІРѕРµ РЅРё РЅР° С‡С‚Рѕ РЅРµ РіРѕРґРЅРѕРµ С‚РµР»Рѕ РґРѕ СЃРёС… РїРѕСЂ Р±С‹ РіРЅРёР»Рѕ РІ СЌС‚РѕРј С…СЂР°РјРµ.
 
-	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Не волнуйся! Просто скажи, что мне нужно сделать.", DIA_Xardas_WARUMNICHTJETZT_wastun );
-	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "Тогда, по крайней мере объясни мне, почему ты колеблешься.", DIA_Xardas_WARUMNICHTJETZT_grund );
+	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "РќРµ РІРѕР»РЅСѓР№СЃСЏ! РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.", DIA_Xardas_WARUMNICHTJETZT_wastun );
+	Info_AddChoice	(DIA_Xardas_WARUMNICHTJETZT, "РўРѕРіРґР°, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ РѕР±СЉСЏСЃРЅРё РјРЅРµ, РїРѕС‡РµРјСѓ С‚С‹ РєРѕР»РµР±Р»РµС€СЊСЃСЏ.", DIA_Xardas_WARUMNICHTJETZT_grund );
 };
 func void DIA_Xardas_WARUMNICHTJETZT_grund ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_grund_15_00"); //Тогда, по крайней мере объясни мне, почему ты колеблешься.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_01"); //С тех пор, как я отошел от Магов Огня, я старался держаться от них подальше.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_02"); //И я не собираюсь изменять этой привычке, если только у меня совсем уж не будет выбора.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_03"); //Но прежде, чем я предстану перед укоризненным взором этих магов, я сначала хочу убедиться, что у тебя есть хоть какие-то шансы противостоять драконам.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_04"); //С твоим жалким снаряжением, впрочем, тебе далеко не продвинуться. Возвращайся, когда станешь достаточно силен.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_grund_15_00"); //РўРѕРіРґР°, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ РѕР±СЉСЏСЃРЅРё РјРЅРµ, РїРѕС‡РµРјСѓ С‚С‹ РєРѕР»РµР±Р»РµС€СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_01"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РѕС‚РѕС€РµР» РѕС‚ РњР°РіРѕРІ РћРіРЅСЏ, СЏ СЃС‚Р°СЂР°Р»СЃСЏ РґРµСЂР¶Р°С‚СЊСЃСЏ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_02"); //Р СЏ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ РёР·РјРµРЅСЏС‚СЊ СЌС‚РѕР№ РїСЂРёРІС‹С‡РєРµ, РµСЃР»Рё С‚РѕР»СЊРєРѕ Сѓ РјРµРЅСЏ СЃРѕРІСЃРµРј СѓР¶ РЅРµ Р±СѓРґРµС‚ РІС‹Р±РѕСЂР°.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_03"); //РќРѕ РїСЂРµР¶РґРµ, С‡РµРј СЏ РїСЂРµРґСЃС‚Р°РЅСѓ РїРµСЂРµРґ СѓРєРѕСЂРёР·РЅРµРЅРЅС‹Рј РІР·РѕСЂРѕРј СЌС‚РёС… РјР°РіРѕРІ, СЏ СЃРЅР°С‡Р°Р»Р° С…РѕС‡Сѓ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ С…РѕС‚СЊ РєР°РєРёРµ-С‚Рѕ С€Р°РЅСЃС‹ РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ РґСЂР°РєРѕРЅР°Рј.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_grund_14_04"); //РЎ С‚РІРѕРёРј Р¶Р°Р»РєРёРј СЃРЅР°СЂСЏР¶РµРЅРёРµРј, РІРїСЂРѕС‡РµРј, С‚РµР±Рµ РґР°Р»РµРєРѕ РЅРµ РїСЂРѕРґРІРёРЅСѓС‚СЊСЃСЏ. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° СЃС‚Р°РЅРµС€СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ.
   	AI_StopProcessInfos (self);
 };
 
 func void DIA_Xardas_WARUMNICHTJETZT_wastun  ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_wastun_15_00"); //Не волнуйся! Просто скажи, что мне нужно сделать.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_01"); //Ты все еще слишком слаб, чтобы сражаться с драконами. С этим снаряжением у тебя нет никаких шансов.
-	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_02"); //Не возвращайся ко мне, пока не будешь полностью готов. Вот тогда я пойду, и присоединюсь к Ватрасу.
+	AI_Output			(other, self, "DIA_Xardas_WARUMNICHTJETZT_wastun_15_00"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ! РџСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_01"); //РўС‹ РІСЃРµ РµС‰Рµ СЃР»РёС€РєРѕРј СЃР»Р°Р±, С‡С‚РѕР±С‹ СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЃ РґСЂР°РєРѕРЅР°РјРё. РЎ СЌС‚РёРј СЃРЅР°СЂСЏР¶РµРЅРёРµРј Сѓ С‚РµР±СЏ РЅРµС‚ РЅРёРєР°РєРёС… С€Р°РЅСЃРѕРІ.
+	AI_Output			(self, other, "DIA_Xardas_WARUMNICHTJETZT_wastun_14_02"); //РќРµ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ, РїРѕРєР° РЅРµ Р±СѓРґРµС€СЊ РїРѕР»РЅРѕСЃС‚СЊСЋ РіРѕС‚РѕРІ. Р’РѕС‚ С‚РѕРіРґР° СЏ РїРѕР№РґСѓ, Рё РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє Р’Р°С‚СЂР°СЃСѓ.
  	AI_StopProcessInfos (self);
 };
 
@@ -953,7 +953,7 @@ instance DIA_Xardas_BEREIT		(C_INFO)
 	condition	 = 	DIA_Xardas_BEREIT_Condition;
 	information	 = 	DIA_Xardas_BEREIT_Info;
 
-	description	 = 	"Я готов к сражению с драконами.";
+	description	 = 	"РЇ РіРѕС‚РѕРІ Рє СЃСЂР°Р¶РµРЅРёСЋ СЃ РґСЂР°РєРѕРЅР°РјРё.";
 };
 
 func int DIA_Xardas_BEREIT_Condition ()
@@ -969,10 +969,10 @@ func int DIA_Xardas_BEREIT_Condition ()
 
 func void DIA_Xardas_BEREIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BEREIT_15_00"); //Я готов к сражению с драконами.
-	AI_Output			(self, other, "DIA_Xardas_BEREIT_14_01"); //Тогда не будем терять времени. Я немедленно отправляюсь к Кругу Солнца. А ты выполни свои задачи. Я встречу тебя там.
+	AI_Output			(other, self, "DIA_Xardas_BEREIT_15_00"); //РЇ РіРѕС‚РѕРІ Рє СЃСЂР°Р¶РµРЅРёСЋ СЃ РґСЂР°РєРѕРЅР°РјРё.
+	AI_Output			(self, other, "DIA_Xardas_BEREIT_14_01"); //РўРѕРіРґР° РЅРµ Р±СѓРґРµРј С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё. РЇ РЅРµРјРµРґР»РµРЅРЅРѕ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ Рє РљСЂСѓРіСѓ РЎРѕР»РЅС†Р°. Рђ С‚С‹ РІС‹РїРѕР»РЅРё СЃРІРѕРё Р·Р°РґР°С‡Рё. РЇ РІСЃС‚СЂРµС‡Сѓ С‚РµР±СЏ С‚Р°Рј.
 	AI_StopProcessInfos (self);
-	B_LogEntry (TOPIC_INNOSEYE, "Ксардас согласился участвовать в ритуале в Круге Солнца.");
+	B_LogEntry (TOPIC_INNOSEYE, "РљСЃР°СЂРґР°СЃ СЃРѕРіР»Р°СЃРёР»СЃСЏ СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ СЂРёС‚СѓР°Р»Рµ РІ РљСЂСѓРіРµ РЎРѕР»РЅС†Р°.");
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"RitualInnosEyeRepair"); 
 	Xardas_GoesToRitualInnosEye = TRUE; 
@@ -989,7 +989,7 @@ instance DIA_Xardas_BINGESPANNT		(C_INFO)
 	information	 = 	DIA_Xardas_BINGESPANNT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Этот ритуал обращения сработает?";
+	description	 = 	"Р­С‚РѕС‚ СЂРёС‚СѓР°Р» РѕР±СЂР°С‰РµРЅРёСЏ СЃСЂР°Р±РѕС‚Р°РµС‚?";
 };
 
 func int DIA_Xardas_BINGESPANNT_Condition ()
@@ -1004,8 +1004,8 @@ func int DIA_Xardas_BINGESPANNT_Condition ()
 
 func void DIA_Xardas_BINGESPANNT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_BINGESPANNT_15_00"); //Этот ритуал обращения сработает?
-	AI_Output			(self, other, "DIA_Xardas_BINGESPANNT_14_01"); //Я не совсем уверен. Это зависит от того, что именно собирается сделать Ватрас.
+	AI_Output			(other, self, "DIA_Xardas_BINGESPANNT_15_00"); //Р­С‚РѕС‚ СЂРёС‚СѓР°Р» РѕР±СЂР°С‰РµРЅРёСЏ СЃСЂР°Р±РѕС‚Р°РµС‚?
+	AI_Output			(self, other, "DIA_Xardas_BINGESPANNT_14_01"); //РЇ РЅРµ СЃРѕРІСЃРµРј СѓРІРµСЂРµРЅ. Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ РёРјРµРЅРЅРѕ СЃРѕР±РёСЂР°РµС‚СЃСЏ СЃРґРµР»Р°С‚СЊ Р’Р°С‚СЂР°СЃ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1018,7 +1018,7 @@ instance DIA_Xardas_PYROWILLNICHT		(C_INFO)
 	condition	 = 	DIA_Xardas_PYROWILLNICHT_Condition;
 	information	 = 	DIA_Xardas_PYROWILLNICHT_Info;
 
-	description	 = 	"Пирокар отказывается принять участие в ритуале.";
+	description	 = 	"РџРёСЂРѕРєР°СЂ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ РїСЂРёРЅСЏС‚СЊ СѓС‡Р°СЃС‚РёРµ РІ СЂРёС‚СѓР°Р»Рµ.";
 };
 
 func int DIA_Xardas_PYROWILLNICHT_Condition ()
@@ -1033,27 +1033,27 @@ func int DIA_Xardas_PYROWILLNICHT_Condition ()
 
 func void DIA_Xardas_PYROWILLNICHT_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_00"); //Пирокар отказывается принять участие в ритуале.
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_01"); //Сначала он хочет получить доказательства того, что он может доверять тебе.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //Ах, неужели! Пирокар. Как интересно.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //Этот старый чудак становится совершенно невыносимым. Но я думаю, у меня есть кое-что, что поможет тебе.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //Когда я покидал орден Магов Огня, я взял с собой из монастыря несколько вещей.
-	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich stдndig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
-	//"hier" passt nicht, weil Xardas am Steinkreis stehen kцnnte - Satz ist eh ьberflьssig
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_06"); //Я не хотел, чтобы паладины или Маги Огня перевернули все в моей башне вверх дном, и нашли эти вещи.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //Поэтому я спрятал их в надежном месте, где магам никогда не придет в голову искать их.
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_08"); //И где же?
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_09"); //Некоторые из них лежат в запертом сундуке на ферме Секоба.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_00"); //РџРёСЂРѕРєР°СЂ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ РїСЂРёРЅСЏС‚СЊ СѓС‡Р°СЃС‚РёРµ РІ СЂРёС‚СѓР°Р»Рµ.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_01"); //РЎРЅР°С‡Р°Р»Р° РѕРЅ С…РѕС‡РµС‚ РїРѕР»СѓС‡РёС‚СЊ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР° С‚РѕРіРѕ, С‡С‚Рѕ РѕРЅ РјРѕР¶РµС‚ РґРѕРІРµСЂСЏС‚СЊ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_02"); //РђС…, РЅРµСѓР¶РµР»Рё! РџРёСЂРѕРєР°СЂ. РљР°Рє РёРЅС‚РµСЂРµСЃРЅРѕ.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_03"); //Р­С‚РѕС‚ СЃС‚Р°СЂС‹Р№ С‡СѓРґР°Рє СЃС‚Р°РЅРѕРІРёС‚СЃСЏ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµРІС‹РЅРѕСЃРёРјС‹Рј. РќРѕ СЏ РґСѓРјР°СЋ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ, С‡С‚Рѕ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_04"); //РљРѕРіРґР° СЏ РїРѕРєРёРґР°Р» РѕСЂРґРµРЅ РњР°РіРѕРІ РћРіРЅСЏ, СЏ РІР·СЏР» СЃ СЃРѕР±РѕР№ РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ РЅРµСЃРєРѕР»СЊРєРѕ РІРµС‰РµР№.
+	//AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_05"); //Jetzt, da ich meinen Turm so nahe der Stadt errichtet habe, muss ich stРґndig damit rechnen, dass jemand hierher kommt, um danach zu suchen.
+	//"hier" passt nicht, weil Xardas am Steinkreis stehen kС†nnte - Satz ist eh СЊberflСЊssig
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_06"); //РЇ РЅРµ С…РѕС‚РµР», С‡С‚РѕР±С‹ РїР°Р»Р°РґРёРЅС‹ РёР»Рё РњР°РіРё РћРіРЅСЏ РїРµСЂРµРІРµСЂРЅСѓР»Рё РІСЃРµ РІ РјРѕРµР№ Р±Р°С€РЅРµ РІРІРµСЂС… РґРЅРѕРј, Рё РЅР°С€Р»Рё СЌС‚Рё РІРµС‰Рё.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_07"); //РџРѕСЌС‚РѕРјСѓ СЏ СЃРїСЂСЏС‚Р°Р» РёС… РІ РЅР°РґРµР¶РЅРѕРј РјРµСЃС‚Рµ, РіРґРµ РјР°РіР°Рј РЅРёРєРѕРіРґР° РЅРµ РїСЂРёРґРµС‚ РІ РіРѕР»РѕРІСѓ РёСЃРєР°С‚СЊ РёС….
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_08"); //Р РіРґРµ Р¶Рµ?
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_09"); //РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… Р»РµР¶Р°С‚ РІ Р·Р°РїРµСЂС‚РѕРј СЃСѓРЅРґСѓРєРµ РЅР° С„РµСЂРјРµ РЎРµРєРѕР±Р°.
 	Sekob_RoomFree = TRUE;
-	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_10"); //Ты доверяешь этому Секобу?
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_11"); //Нет. Но его можно купить и он не будет задавать глупых вопросов. К тому же, этот сундук заперт. Вот ключ.
+	AI_Output			(other, self, "DIA_Xardas_PYROWILLNICHT_15_10"); //РўС‹ РґРѕРІРµСЂСЏРµС€СЊ СЌС‚РѕРјСѓ РЎРµРєРѕР±Сѓ?
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_11"); //РќРµС‚. РќРѕ РµРіРѕ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ Рё РѕРЅ РЅРµ Р±СѓРґРµС‚ Р·Р°РґР°РІР°С‚СЊ РіР»СѓРїС‹С… РІРѕРїСЂРѕСЃРѕРІ. Рљ С‚РѕРјСѓ Р¶Рµ, СЌС‚РѕС‚ СЃСѓРЅРґСѓРє Р·Р°РїРµСЂС‚. Р’РѕС‚ РєР»СЋС‡.
 
 	CreateInvItems 		(self, ItKe_CHEST_SEKOB_XARDASBOOK_MIS, 1);					
 	B_GiveInvItems 		(self, other, ItKe_CHEST_SEKOB_XARDASBOOK_MIS,1);
 
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_12"); //Там, среди прочего, есть очень старая книга. Когда Пирокар увидит эту книгу, он поймет, что она от меня.
-	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_13"); //Она больше не нужна мне. Поэтому, пусть она послужит хоть такой цели.
-	B_LogEntry (TOPIC_INNOSEYE, "Ксардас дал мне ключ от сундука на ферме Секоба. Я должен отнести книгу, находящуюся в нем, Пирокару.");
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_12"); //РўР°Рј, СЃСЂРµРґРё РїСЂРѕС‡РµРіРѕ, РµСЃС‚СЊ РѕС‡РµРЅСЊ СЃС‚Р°СЂР°СЏ РєРЅРёРіР°. РљРѕРіРґР° РџРёСЂРѕРєР°СЂ СѓРІРёРґРёС‚ СЌС‚Сѓ РєРЅРёРіСѓ, РѕРЅ РїРѕР№РјРµС‚, С‡С‚Рѕ РѕРЅР° РѕС‚ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Xardas_PYROWILLNICHT_14_13"); //РћРЅР° Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РЅР° РјРЅРµ. РџРѕСЌС‚РѕРјСѓ, РїСѓСЃС‚СЊ РѕРЅР° РїРѕСЃР»СѓР¶РёС‚ С…РѕС‚СЊ С‚Р°РєРѕР№ С†РµР»Рё.
+	B_LogEntry (TOPIC_INNOSEYE, "РљСЃР°СЂРґР°СЃ РґР°Р» РјРЅРµ РєР»СЋС‡ РѕС‚ СЃСѓРЅРґСѓРєР° РЅР° С„РµСЂРјРµ РЎРµРєРѕР±Р°. РЇ РґРѕР»Р¶РµРЅ РѕС‚РЅРµСЃС‚Рё РєРЅРёРіСѓ, РЅР°С…РѕРґСЏС‰СѓСЋСЃСЏ РІ РЅРµРј, РџРёСЂРѕРєР°СЂСѓ.");
 };
 
 
@@ -1081,11 +1081,11 @@ func int DIA_Xardas_RitualInnosEyeRepairImportant_Condition ()
 
 func void DIA_Xardas_RitualInnosEyeRepairImportant_Info ()
 {
-	AI_Output (self, other, "DIA_Xardas_Add_14_06"); //Теперь, когда Глаз Инноса восстановлен, ты должен предстать перед драконами!
-	AI_Output (self, other, "DIA_Xardas_Add_14_07"); //Все они служат Белиару, богу тьмы.
-	AI_Output (self, other, "DIA_Xardas_Add_14_08"); //Но должна быть также земная сила, которая контролирует их. Теперь это стало очевидным для меня.
-	AI_Output (self, other, "DIA_Xardas_Add_14_09"); //Найди источник этой силы.
-	AI_Output (self, other, "DIA_Xardas_Add_14_10"); //А как только ты выяснишь это, сразу же возвращайся ко мне!
+	AI_Output (self, other, "DIA_Xardas_Add_14_06"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° Р“Р»Р°Р· РРЅРЅРѕСЃР° РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅ, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРµРґСЃС‚Р°С‚СЊ РїРµСЂРµРґ РґСЂР°РєРѕРЅР°РјРё!
+	AI_Output (self, other, "DIA_Xardas_Add_14_07"); //Р’СЃРµ РѕРЅРё СЃР»СѓР¶Р°С‚ Р‘РµР»РёР°СЂСѓ, Р±РѕРіСѓ С‚СЊРјС‹.
+	AI_Output (self, other, "DIA_Xardas_Add_14_08"); //РќРѕ РґРѕР»Р¶РЅР° Р±С‹С‚СЊ С‚Р°РєР¶Рµ Р·РµРјРЅР°СЏ СЃРёР»Р°, РєРѕС‚РѕСЂР°СЏ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµС‚ РёС…. РўРµРїРµСЂСЊ СЌС‚Рѕ СЃС‚Р°Р»Рѕ РѕС‡РµРІРёРґРЅС‹Рј РґР»СЏ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Xardas_Add_14_09"); //РќР°Р№РґРё РёСЃС‚РѕС‡РЅРёРє СЌС‚РѕР№ СЃРёР»С‹.
+	AI_Output (self, other, "DIA_Xardas_Add_14_10"); //Рђ РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ РІС‹СЏСЃРЅРёС€СЊ СЌС‚Рѕ, СЃСЂР°Р·Сѓ Р¶Рµ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РєРѕ РјРЅРµ!
 	
 	Info_ClearChoices	(DIA_Xardas_RitualInnosEyeRepairImportant);
 	Info_AddChoice	(DIA_Xardas_RitualInnosEyeRepairImportant, DIALOG_ENDE, DIA_Xardas_RitualInnosEyeRepairImportant_weiter );
@@ -1111,7 +1111,7 @@ instance DIA_Xardas_WASNUN		(C_INFO)
 	information	 = 	DIA_Xardas_WASNUN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Глаз Инноса восстановлен. Что дальше?";
+	description	 = 	"Р“Р»Р°Р· РРЅРЅРѕСЃР° РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅ. Р§С‚Рѕ РґР°Р»СЊС€Рµ?";
 };
 
 func int DIA_Xardas_WASNUN_Condition ()
@@ -1125,16 +1125,16 @@ func int DIA_Xardas_WASNUN_Condition ()
 
 func void DIA_Xardas_WASNUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_WASNUN_15_00"); //Глаз Инноса восстановлен. Что дальше?
-	AI_Output			(self, other, "DIA_Xardas_WASNUN_14_01"); //Не забудь надеть его, когда ты, наконец, предстанешь перед драконами.
+	AI_Output			(other, self, "DIA_Xardas_WASNUN_15_00"); //Р“Р»Р°Р· РРЅРЅРѕСЃР° РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅ. Р§С‚Рѕ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_Xardas_WASNUN_14_01"); //РќРµ Р·Р°Р±СѓРґСЊ РЅР°РґРµС‚СЊ РµРіРѕ, РєРѕРіРґР° С‚С‹, РЅР°РєРѕРЅРµС†, РїСЂРµРґСЃС‚Р°РЅРµС€СЊ РїРµСЂРµРґ РґСЂР°РєРѕРЅР°РјРё.
 
 	if (MIS_ReadyforChapter4 == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_02"); //Не теряй времени. Отправляйся в Долину Рудников и убей этих драконов.
+		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_02"); //РќРµ С‚РµСЂСЏР№ РІСЂРµРјРµРЅРё. РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ Рё СѓР±РµР№ СЌС‚РёС… РґСЂР°РєРѕРЅРѕРІ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_03"); //Иди к Пирокару, и пусть он объяснит тебе, как пользоваться Глазом.
+		AI_Output			(self, other, "DIA_Xardas_WASNUN_14_03"); //РРґРё Рє РџРёСЂРѕРєР°СЂСѓ, Рё РїСѓСЃС‚СЊ РѕРЅ РѕР±СЉСЏСЃРЅРёС‚ С‚РµР±Рµ, РєР°Рє РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ Р“Р»Р°Р·РѕРј.
 	};
 };		
 
@@ -1184,7 +1184,7 @@ instance DIA_Xardas_PERM4		(C_INFO)
 	information	 = 	DIA_Xardas_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Что нового?";
+	description	 = 	"Р§С‚Рѕ РЅРѕРІРѕРіРѕ?";
 };
 
 func int DIA_Xardas_PERM4_Condition ()
@@ -1197,9 +1197,9 @@ func int DIA_Xardas_PERM4_Condition ()
 
 func void DIA_Xardas_PERM4_Info ()
 {
-	AI_Output			(other, self, "DIA_Xardas_PERM4_15_00"); //Что нового?
-	AI_Output			(self, other, "DIA_Xardas_PERM4_14_01"); //Ищущие еще не ушли. Они не остановятся, пока не прикончат тебя.
-	AI_Output			(self, other, "DIA_Xardas_PERM4_14_02"); //Убей драконов в Долине Рудников и выясни, кто стоит за этими нападениями. В противном случае, их сила только вырастет еще больше.
+	AI_Output			(other, self, "DIA_Xardas_PERM4_15_00"); //Р§С‚Рѕ РЅРѕРІРѕРіРѕ?
+	AI_Output			(self, other, "DIA_Xardas_PERM4_14_01"); //РС‰СѓС‰РёРµ РµС‰Рµ РЅРµ СѓС€Р»Рё. РћРЅРё РЅРµ РѕСЃС‚Р°РЅРѕРІСЏС‚СЃСЏ, РїРѕРєР° РЅРµ РїСЂРёРєРѕРЅС‡Р°С‚ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Xardas_PERM4_14_02"); //РЈР±РµР№ РґСЂР°РєРѕРЅРѕРІ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ Рё РІС‹СЏСЃРЅРё, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° СЌС‚РёРјРё РЅР°РїР°РґРµРЅРёСЏРјРё. Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ, РёС… СЃРёР»Р° С‚РѕР»СЊРєРѕ РІС‹СЂР°СЃС‚РµС‚ РµС‰Рµ Р±РѕР»СЊС€Рµ.
 
 };
 

@@ -32,7 +32,7 @@ INSTANCE DIA_DJG_715_Ferros_Hello   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Hello_Condition;
 	information = DIA_DJG_715_Ferros_Hello_Info;
 	permanent   = FALSE;
-	description = "Откуда ты?";
+	description = "РћС‚РєСѓРґР° С‚С‹?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Hello_Condition()
@@ -42,14 +42,14 @@ FUNC INT DIA_DJG_715_Ferros_Hello_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //Откуда ты?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //С материка. Мои люди и я бежали оттуда.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //Там становится все хуже. Орки сжигают за собой все, что горит.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Король потерял контроль над своим королевством.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //РћС‚РєСѓРґР° С‚С‹?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //РЎ РјР°С‚РµСЂРёРєР°. РњРѕРё Р»СЋРґРё Рё СЏ Р±РµР¶Р°Р»Рё РѕС‚С‚СѓРґР°.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //РўР°Рј СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РІСЃРµ С…СѓР¶Рµ. РћСЂРєРё СЃР¶РёРіР°СЋС‚ Р·Р° СЃРѕР±РѕР№ РІСЃРµ, С‡С‚Рѕ РіРѕСЂРёС‚.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //РљРѕСЂРѕР»СЊ РїРѕС‚РµСЂСЏР» РєРѕРЅС‚СЂРѕР»СЊ РЅР°Рґ СЃРІРѕРёРј РєРѕСЂРѕР»РµРІСЃС‚РІРѕРј.
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_04"); //Вы, паладины, провалили все дело, если тебе интересно мое мнение.
+		AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_04"); //Р’С‹, РїР°Р»Р°РґРёРЅС‹, РїСЂРѕРІР°Р»РёР»Рё РІСЃРµ РґРµР»Рѕ, РµСЃР»Рё С‚РµР±Рµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ.
 	};	
 };
 
@@ -63,7 +63,7 @@ INSTANCE DIA_DJG_715_Ferros_Friends   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Friends_Condition;
 	information = DIA_DJG_715_Ferros_Friends_Info;
 	permanent   = FALSE;
-	description = "А где сейчас твои люди?";
+	description = "Рђ РіРґРµ СЃРµР№С‡Р°СЃ С‚РІРѕРё Р»СЋРґРё?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
@@ -76,9 +76,9 @@ FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Friends_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //А где сейчас твои люди?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //Я покинул их.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Они думали, что им дозволено брать все, что им угодно, даже если это не принадлежит им. Я не хочу принимать в этом участия.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Рђ РіРґРµ СЃРµР№С‡Р°СЃ С‚РІРѕРё Р»СЋРґРё?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //РЇ РїРѕРєРёРЅСѓР» РёС….
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //РћРЅРё РґСѓРјР°Р»Рё, С‡С‚Рѕ РёРј РґРѕР·РІРѕР»РµРЅРѕ Р±СЂР°С‚СЊ РІСЃРµ, С‡С‚Рѕ РёРј СѓРіРѕРґРЅРѕ, РґР°Р¶Рµ РµСЃР»Рё СЌС‚Рѕ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚ РёРј. РЇ РЅРµ С…РѕС‡Сѓ РїСЂРёРЅРёРјР°С‚СЊ РІ СЌС‚РѕРј СѓС‡Р°СЃС‚РёСЏ.
 };
 
 //*********************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_DJG_715_Ferros_War   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_War_Condition;
 	information = DIA_DJG_715_Ferros_War_Info;
 	permanent   = FALSE;
-	description = "Что еще ты знаешь о войне?";
+	description = "Р§С‚Рѕ РµС‰Рµ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РІРѕР№РЅРµ?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_War_Condition()
@@ -104,15 +104,15 @@ FUNC INT DIA_DJG_715_Ferros_War_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_War_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Что еще ты знаешь о войне?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Р§С‚Рѕ РµС‰Рµ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РІРѕР№РЅРµ?
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //Ты ведь давно не видел своего короля, а?
+		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //РўС‹ РІРµРґСЊ РґР°РІРЅРѕ РЅРµ РІРёРґРµР» СЃРІРѕРµРіРѕ РєРѕСЂРѕР»СЏ, Р°?
 	};
 	
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Орки окружили столицу. Но пала она уже или нет, я не знаю.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //Последнее, что я слышал, - что король мертв. Но я в это не верю.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //РћСЂРєРё РѕРєСЂСѓР¶РёР»Рё СЃС‚РѕР»РёС†Сѓ. РќРѕ РїР°Р»Р° РѕРЅР° СѓР¶Рµ РёР»Рё РЅРµС‚, СЏ РЅРµ Р·РЅР°СЋ.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //РџРѕСЃР»РµРґРЅРµРµ, С‡С‚Рѕ СЏ СЃР»С‹С€Р°Р», - С‡С‚Рѕ РєРѕСЂРѕР»СЊ РјРµСЂС‚РІ. РќРѕ СЏ РІ СЌС‚Рѕ РЅРµ РІРµСЂСЋ.
 };
 
 //*********************************************************************
@@ -125,7 +125,7 @@ INSTANCE DIA_DJG_715_Ferros_OldCamp   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_OldCamp_Condition;
 	information = DIA_DJG_715_Ferros_OldCamp_Info;
 	permanent   = FALSE;
-	description = "А что ты делаешь здесь, в замке?";
+	description = "Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ, РІ Р·Р°РјРєРµ?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
@@ -135,45 +135,45 @@ FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //А что ты делаешь здесь, в замке?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //Я услышал о драконах и пришел помочь сражаться с ними.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //К несчастью, я потерял свой меч, когда пробирался мимо орков. И вот я застрял здесь.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Без меча я не могу выйти отсюда, а те мечи, что продают здесь, - бесполезный хлам.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ, РІ Р·Р°РјРєРµ?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //РЇ СѓСЃР»С‹С€Р°Р» Рѕ РґСЂР°РєРѕРЅР°С… Рё РїСЂРёС€РµР» РїРѕРјРѕС‡СЊ СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЃ РЅРёРјРё.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //Рљ РЅРµСЃС‡Р°СЃС‚СЊСЋ, СЏ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ РјРµС‡, РєРѕРіРґР° РїСЂРѕР±РёСЂР°Р»СЃСЏ РјРёРјРѕ РѕСЂРєРѕРІ. Р РІРѕС‚ СЏ Р·Р°СЃС‚СЂСЏР» Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Р‘РµР· РјРµС‡Р° СЏ РЅРµ РјРѕРіСѓ РІС‹Р№С‚Рё РѕС‚СЃСЋРґР°, Р° С‚Рµ РјРµС‡Рё, С‡С‚Рѕ РїСЂРѕРґР°СЋС‚ Р·РґРµСЃСЊ, - Р±РµСЃРїРѕР»РµР·РЅС‹Р№ С…Р»Р°Рј.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Я желаю тебе удачи в твоих поисках.",DIA_DJG_715_Ferros_OldCamp_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Что ты дашь мне, если я найду твой меч?",DIA_DJG_715_Ferros_OldCamp_Price);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Я найду твой меч.",DIA_DJG_715_Ferros_OldCamp_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"РЇ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓРґР°С‡Рё РІ С‚РІРѕРёС… РїРѕРёСЃРєР°С….",DIA_DJG_715_Ferros_OldCamp_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Р§С‚Рѕ С‚С‹ РґР°С€СЊ РјРЅРµ, РµСЃР»Рё СЏ РЅР°Р№РґСѓ С‚РІРѕР№ РјРµС‡?",DIA_DJG_715_Ferros_OldCamp_Price);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"РЇ РЅР°Р№РґСѓ С‚РІРѕР№ РјРµС‡.",DIA_DJG_715_Ferros_OldCamp_Yes);
 	Wld_InsertItem		(ItMW_1H_FerrosSword_Mis , "FP_OW_ITEM_08"); 
 	MIS_FerrosSword = LOG_RUNNING; 
 	
 	Log_CreateTopic (TOPIC_FerrosSword, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FerrosSword, LOG_RUNNING);
-	B_LogEntry (TOPIC_FerrosSword,"Ферос потерял свой меч из-за орков. Это было глупостью."); 
+	B_LogEntry (TOPIC_FerrosSword,"Р¤РµСЂРѕСЃ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ РјРµС‡ РёР·-Р·Р° РѕСЂРєРѕРІ. Р­С‚Рѕ Р±С‹Р»Рѕ РіР»СѓРїРѕСЃС‚СЊСЋ."); 
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_No_15_00"); //Я желаю тебе удачи в твоих поисках.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_No_01_01"); //Я все задаю себе вопрос - а зачем я вообще пришел сюда?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_No_15_00"); //РЇ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓРґР°С‡Рё РІ С‚РІРѕРёС… РїРѕРёСЃРєР°С….
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_No_01_01"); //РЇ РІСЃРµ Р·Р°РґР°СЋ СЃРµР±Рµ РІРѕРїСЂРѕСЃ - Р° Р·Р°С‡РµРј СЏ РІРѕРѕР±С‰Рµ РїСЂРёС€РµР» СЃСЋРґР°?
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Price ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Что ты дашь мне, если я найду твой меч?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Боже, я ничего не могу дать. Я потратил все свои деньги на этот меч.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Р§С‚Рѕ С‚С‹ РґР°С€СЊ РјРЅРµ, РµСЃР»Рё СЏ РЅР°Р№РґСѓ С‚РІРѕР№ РјРµС‡?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Р‘РѕР¶Рµ, СЏ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ РґР°С‚СЊ. РЇ РїРѕС‚СЂР°С‚РёР» РІСЃРµ СЃРІРѕРё РґРµРЅСЊРіРё РЅР° СЌС‚РѕС‚ РјРµС‡.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Yes ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Я найду твой меч.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //Это было бы великолепно. Тебе стоит поискать у большого утеса на юге.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Я, вероятно, потерял его там, около палаток орков.
-	B_LogEntry (TOPIC_FerrosSword,"Похоже, Ферос потерял свой меч на высоком утесе на юге, там, где находятся палатки орков."); 
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //РЇ РЅР°Р№РґСѓ С‚РІРѕР№ РјРµС‡.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ Р±С‹ РІРµР»РёРєРѕР»РµРїРЅРѕ. РўРµР±Рµ СЃС‚РѕРёС‚ РїРѕРёСЃРєР°С‚СЊ Сѓ Р±РѕР»СЊС€РѕРіРѕ СѓС‚РµСЃР° РЅР° СЋРіРµ.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //РЇ, РІРµСЂРѕСЏС‚РЅРѕ, РїРѕС‚РµСЂСЏР» РµРіРѕ С‚Р°Рј, РѕРєРѕР»Рѕ РїР°Р»Р°С‚РѕРє РѕСЂРєРѕРІ.
+	B_LogEntry (TOPIC_FerrosSword,"РџРѕС…РѕР¶Рµ, Р¤РµСЂРѕСЃ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ РјРµС‡ РЅР° РІС‹СЃРѕРєРѕРј СѓС‚РµСЃРµ РЅР° СЋРіРµ, С‚Р°Рј, РіРґРµ РЅР°С…РѕРґСЏС‚СЃСЏ РїР°Р»Р°С‚РєРё РѕСЂРєРѕРІ."); 
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
@@ -188,7 +188,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosAnySword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosAnySword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosAnySword_Info;
 	permanent   = FALSE;
-	description = "Возможно, у меня есть для тебя другой меч.";
+	description = "Р’РѕР·РјРѕР¶РЅРѕ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РґСЂСѓРіРѕР№ РјРµС‡.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
@@ -203,7 +203,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Возможно, у меня есть для тебя другой меч.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Р’РѕР·РјРѕР¶РЅРѕ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РґСЂСѓРіРѕР№ РјРµС‡.
 
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
@@ -227,8 +227,8 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Back ()
 
 FUNC VOID B_Ferros_FerrosAnySword_Give ()
 {
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //Это хороший клинок. Превосходной работы.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //Ты уверен, что хочешь отдать его мне просто так?
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //Р­С‚Рѕ С…РѕСЂРѕС€РёР№ РєР»РёРЅРѕРє. РџСЂРµРІРѕСЃС…РѕРґРЅРѕР№ СЂР°Р±РѕС‚С‹.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //РўС‹ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С…РѕС‡РµС€СЊ РѕС‚РґР°С‚СЊ РµРіРѕ РјРЅРµ РїСЂРѕСЃС‚Рѕ С‚Р°Рє?
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade ()
@@ -236,8 +236,8 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade ()
 	B_Ferros_FerrosAnySword_Give ();
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Нет, он нужен мне самому.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Да, забирай.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"РќРµС‚, РѕРЅ РЅСѓР¶РµРЅ РјРЅРµ СЃР°РјРѕРјСѓ.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Р”Р°, Р·Р°Р±РёСЂР°Р№.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Oreblade ()
@@ -245,29 +245,29 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Oreblade ()
 	B_Ferros_FerrosAnySword_Give ();
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Нет, он нужен мне самому.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Да, забирай.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"РќРµС‚, РѕРЅ РЅСѓР¶РµРЅ РјРЅРµ СЃР°РјРѕРјСѓ.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Р”Р°, Р·Р°Р±РёСЂР°Р№.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_Yes);
 };
 
 FUNC VOID B_Ferros_FerrosAnySword_Yes1 ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes_15_00"); //Да, забирай.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes_15_00"); //Р”Р°, Р·Р°Р±РёСЂР°Р№.
 };
 
 FUNC VOID B_Ferros_FerrosAnySword_Yes2 ()
 {
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_00"); //Спасибо. Я твой должник.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //Взамен я покажу тебе парочку трюков, которые позволят тебе лучше использовать силу и ловкость в бою.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_00"); //РЎРїР°СЃРёР±Рѕ. РЇ С‚РІРѕР№ РґРѕР»Р¶РЅРёРє.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //Р’Р·Р°РјРµРЅ СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ РїР°СЂРѕС‡РєСѓ С‚СЂСЋРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РїРѕР·РІРѕР»СЏС‚ С‚РµР±Рµ Р»СѓС‡С€Рµ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРёР»Сѓ Рё Р»РѕРІРєРѕСЃС‚СЊ РІ Р±РѕСЋ.
 
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Ферос может повысить мои силу и ловкость.");
+	B_LogEntry		(TOPIC_Teacher, "Р¤РµСЂРѕСЃ РјРѕР¶РµС‚ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё СЃРёР»Сѓ Рё Р»РѕРІРєРѕСЃС‚СЊ.");
 
 };
 
 FUNC VOID B_Ferros_FerrosAnySword_No ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_15_00");	//Нет, он нужен мне самому.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_01_01");	//Понимаю.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_15_00");	//РќРµС‚, РѕРЅ РЅСѓР¶РµРЅ РјРЅРµ СЃР°РјРѕРјСѓ.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_No_01_01");	//РџРѕРЅРёРјР°СЋ.
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes ()
@@ -316,7 +316,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosHisSword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosHisSword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosHisSword_Info;
 	permanent   = FALSE;
-	description = "Я нашел твой меч.";
+	description = "РЇ РЅР°С€РµР» С‚РІРѕР№ РјРµС‡.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosHisSword_Condition()
@@ -330,7 +330,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosHisSword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosHisSword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosHisSword_15_00"); //Я нашел твой меч.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosHisSword_15_00"); //РЇ РЅР°С€РµР» С‚РІРѕР№ РјРµС‡.
 	B_GiveInvItems (other,self,ItMw_1h_FerrosSword_Mis,1);
 	B_Ferros_FerrosAnySword_Yes2 ();
 	MIS_FerrosSword = LOG_SUCCESS;	
@@ -348,7 +348,7 @@ INSTANCE DIA_Ferros_Teach(C_INFO)
 	condition	= DIA_Ferros_Teach_Condition;
 	information	= DIA_Ferros_Teach_Info;
 	permanent	= TRUE;
-	description = "Покажи мне, как можно улучшить свои способности.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РјРѕР¶РЅРѕ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };                       
 
 FUNC INT DIA_Ferros_Teach_Condition()
@@ -361,15 +361,15 @@ FUNC INT DIA_Ferros_Teach_Condition()
  
 FUNC VOID DIA_Ferros_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Покажи мне, как можно улучшить свои способности.
+	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РјРѕР¶РЅРѕ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_01"); //После всех этих нападений орков я больше этим не занимаюсь. Я рад, что вообще остался жив, парень.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_01"); //РџРѕСЃР»Рµ РІСЃРµС… СЌС‚РёС… РЅР°РїР°РґРµРЅРёР№ РѕСЂРєРѕРІ СЏ Р±РѕР»СЊС€Рµ СЌС‚РёРј РЅРµ Р·Р°РЅРёРјР°СЋСЃСЊ. РЇ СЂР°Рґ, С‡С‚Рѕ РІРѕРѕР±С‰Рµ РѕСЃС‚Р°Р»СЃСЏ Р¶РёРІ, РїР°СЂРµРЅСЊ.
 	}
 	else
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Хороший боец должен уметь напрямую передавать свои способности своему оружию.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //РҐРѕСЂРѕС€РёР№ Р±РѕРµС† РґРѕР»Р¶РµРЅ СѓРјРµС‚СЊ РЅР°РїСЂСЏРјСѓСЋ РїРµСЂРµРґР°РІР°С‚СЊ СЃРІРѕРё СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё СЃРІРѕРµРјСѓ РѕСЂСѓР¶РёСЋ.
 	
 	Info_ClearChoices (DIA_Ferros_Teach);
 	Info_AddChoice		(DIA_Ferros_Teach, DIALOG_BACK, DIA_Ferros_Teach_Back);
@@ -420,7 +420,7 @@ INSTANCE DIA_Ferros_AllDragonsDead   (C_INFO)
 	condition   = DIA_Ferros_AllDragonsDead_Condition;
 	information = DIA_Ferros_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Все драконы мертвы.";
+	description	= "Р’СЃРµ РґСЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.";
 				
 };
 
@@ -434,8 +434,8 @@ FUNC INT DIA_Ferros_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Ferros_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //Все драконы мертвы.
-	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Отлично! Если бы у нас было побольше людей вроде тебя, все, возможно, не зашло бы так далеко.
+	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //Р’СЃРµ РґСЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.
+	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //РћС‚Р»РёС‡РЅРѕ! Р•СЃР»Рё Р±С‹ Сѓ РЅР°СЃ Р±С‹Р»Рѕ РїРѕР±РѕР»СЊС€Рµ Р»СЋРґРµР№ РІСЂРѕРґРµ С‚РµР±СЏ, РІСЃРµ, РІРѕР·РјРѕР¶РЅРѕ, РЅРµ Р·Р°С€Р»Рѕ Р±С‹ С‚Р°Рє РґР°Р»РµРєРѕ.
 };
 
 // ************************************************************

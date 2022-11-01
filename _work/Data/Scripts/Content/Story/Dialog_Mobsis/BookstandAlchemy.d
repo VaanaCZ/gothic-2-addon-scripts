@@ -14,7 +14,7 @@ var int ALchemy_2_permanent;
 var int ALchemy_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebьcher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//AlchemiebСЊcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -33,18 +33,18 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebьcher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Зелья магической силы");
-					Doc_PrintLine	( nDocID,  0, "и ингредиенты"						);
+					Doc_PrintLine	( nDocID,  0, "Р—РµР»СЊСЏ РјР°РіРёС‡РµСЃРєРѕР№ СЃРёР»С‹");
+					Doc_PrintLine	( nDocID,  0, "Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Эссенция маны"						);
-					Doc_PrintLine	( nDocID,  0, "2 огненные крапивы"						);
+					Doc_PrintLine	( nDocID,  0, "Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹"						);
+					Doc_PrintLine	( nDocID,  0, "2 РѕРіРЅРµРЅРЅС‹Рµ РєСЂР°РїРёРІС‹"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Экстракт маны"						);
-					Doc_PrintLine	( nDocID,  0, "2 огненные травы"						);
+					Doc_PrintLine	( nDocID,  0, "Р­РєСЃС‚СЂР°РєС‚ РјР°РЅС‹"						);
+					Doc_PrintLine	( nDocID,  0, "2 РѕРіРЅРµРЅРЅС‹Рµ С‚СЂР°РІС‹"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Эликсир маны"						);
-					Doc_PrintLine	( nDocID,  0, "2 огненных корня"						);
+					Doc_PrintLine	( nDocID,  0, "Р­Р»РёРєСЃРёСЂ РјР°РЅС‹"						);
+					Doc_PrintLine	( nDocID,  0, "2 РѕРіРЅРµРЅРЅС‹С… РєРѕСЂРЅСЏ"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
@@ -52,13 +52,13 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebьcher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Для работы на алхимическом столе необходима мензурка."	); 
+					Doc_PrintLines	( nDocID,  1, "Р”Р»СЏ СЂР°Р±РѕС‚С‹ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ РЅРµРѕР±С…РѕРґРёРјР° РјРµРЅР·СѓСЂРєР°."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Чтобы сварить любое лечебное зелье или зелье, усиливающее магическую силу, необходим особый ингредиент и растение:"			);
-					Doc_PrintLine	( nDocID,  1, "Луговой горец"		);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРІР°СЂРёС‚СЊ Р»СЋР±РѕРµ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ РёР»Рё Р·РµР»СЊРµ, СѓСЃРёР»РёРІР°СЋС‰РµРµ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ, РЅРµРѕР±С…РѕРґРёРј РѕСЃРѕР±С‹Р№ РёРЅРіСЂРµРґРёРµРЅС‚ Рё СЂР°СЃС‚РµРЅРёРµ:"			);
+					Doc_PrintLine	( nDocID,  1, "Р›СѓРіРѕРІРѕР№ РіРѕСЂРµС†"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Чтобы сварить зелье, оказывающее перманентное воздействие на тело или дух, необходимо определенное растение:"						);
-					Doc_PrintLines	( nDocID,  1, "Царский щавель"		);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРІР°СЂРёС‚СЊ Р·РµР»СЊРµ, РѕРєР°Р·С‹РІР°СЋС‰РµРµ РїРµСЂРјР°РЅРµРЅС‚РЅРѕРµ РІРѕР·РґРµР№СЃС‚РІРёРµ РЅР° С‚РµР»Рѕ РёР»Рё РґСѓС…, РЅРµРѕР±С…РѕРґРёРјРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕРµ СЂР°СЃС‚РµРЅРёРµ:"						);
+					Doc_PrintLines	( nDocID,  1, "Р¦Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ"		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_1_permanent == FALSE)
@@ -70,7 +70,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebьcher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebьcher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//AlchemiebСЊcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -89,18 +89,18 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebьcher
 
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Лечебные зелья");
-					Doc_PrintLine	( nDocID,  0, "и ингредиенты"						);
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅС‹Рµ Р·РµР»СЊСЏ");
+					Doc_PrintLine	( nDocID,  0, "Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Лечебная эссенция"						);
-					Doc_PrintLine	( nDocID,  0, "2 лечебные травы"						);
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ"						);
+					Doc_PrintLine	( nDocID,  0, "2 Р»РµС‡РµР±РЅС‹Рµ С‚СЂР°РІС‹"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Лечебный экстракт"						);
-					Doc_PrintLine	( nDocID,  0, "2 лечебных растения"						);
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚"						);
+					Doc_PrintLine	( nDocID,  0, "2 Р»РµС‡РµР±РЅС‹С… СЂР°СЃС‚РµРЅРёСЏ"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Лечебный эликсир"						);
-					Doc_PrintLine	( nDocID,  0, "2 лечебных корня"						);
+					Doc_PrintLine	( nDocID,  0, "Р›РµС‡РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ"						);
+					Doc_PrintLine	( nDocID,  0, "2 Р»РµС‡РµР±РЅС‹С… РєРѕСЂРЅСЏ"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
@@ -108,13 +108,13 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebьcher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Для работы на алхимическом столе необходима мензурка."	); 
+					Doc_PrintLines	( nDocID,  1, "Р”Р»СЏ СЂР°Р±РѕС‚С‹ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ РЅРµРѕР±С…РѕРґРёРјР° РјРµРЅР·СѓСЂРєР°."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Чтобы сварить любое лечебное зелье или зелье, усиливающее магическую силу, необходим особый ингредиент и растение:"			);
-					Doc_PrintLine	( nDocID,  1, "Луговой горец"		);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРІР°СЂРёС‚СЊ Р»СЋР±РѕРµ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ РёР»Рё Р·РµР»СЊРµ, СѓСЃРёР»РёРІР°СЋС‰РµРµ РјР°РіРёС‡РµСЃРєСѓСЋ СЃРёР»Сѓ, РЅРµРѕР±С…РѕРґРёРј РѕСЃРѕР±С‹Р№ РёРЅРіСЂРµРґРёРµРЅС‚ Рё СЂР°СЃС‚РµРЅРёРµ:"			);
+					Doc_PrintLine	( nDocID,  1, "Р›СѓРіРѕРІРѕР№ РіРѕСЂРµС†"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Чтобы сварить зелье, имеющее перманентное действие на тело или дух, необходимо определенное растение:"						);
-					Doc_PrintLines	( nDocID,  1, "Царский щавель"		);
+					Doc_PrintLines	( nDocID,  1, "Р§С‚РѕР±С‹ СЃРІР°СЂРёС‚СЊ Р·РµР»СЊРµ, РёРјРµСЋС‰РµРµ РїРµСЂРјР°РЅРµРЅС‚РЅРѕРµ РґРµР№СЃС‚РІРёРµ РЅР° С‚РµР»Рѕ РёР»Рё РґСѓС…, РЅРµРѕР±С…РѕРґРёРјРѕ РѕРїСЂРµРґРµР»РµРЅРЅРѕРµ СЂР°СЃС‚РµРЅРёРµ:"						);
+					Doc_PrintLines	( nDocID,  1, "Р¦Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ"		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_2_permanent == FALSE)
@@ -126,7 +126,7 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebьcher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebьcher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//AlchemiebСЊcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -144,32 +144,32 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebьcher
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Зелья, дающие перманентные изменения");
-					Doc_PrintLine	( nDocID,  0, "и ингредиенты"						);
+					Doc_PrintLines	( nDocID,  0, "Р—РµР»СЊСЏ, РґР°СЋС‰РёРµ РїРµСЂРјР°РЅРµРЅС‚РЅС‹Рµ РёР·РјРµРЅРµРЅРёСЏ");
+					Doc_PrintLine	( nDocID,  0, "Рё РёРЅРіСЂРµРґРёРµРЅС‚С‹"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Эликсир ловкости"						);
-					Doc_PrintLine	( nDocID,  0, "1 гоблинская ягода"						);
+					Doc_PrintLine	( nDocID,  0, "Р­Р»РёРєСЃРёСЂ Р»РѕРІРєРѕСЃС‚Рё"						);
+					Doc_PrintLine	( nDocID,  0, "1 РіРѕР±Р»РёРЅСЃРєР°СЏ СЏРіРѕРґР°"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Зелье скорости"						);
-					Doc_PrintLines	( nDocID,  0, "1 снеппер-трава - для этого зелья необходим не царский щавель, а луговой горец."						);
+					Doc_PrintLine	( nDocID,  0, "Р—РµР»СЊРµ СЃРєРѕСЂРѕСЃС‚Рё"						);
+					Doc_PrintLines	( nDocID,  0, "1 СЃРЅРµРїРїРµСЂ-С‚СЂР°РІР° - РґР»СЏ СЌС‚РѕРіРѕ Р·РµР»СЊСЏ РЅРµРѕР±С…РѕРґРёРј РЅРµ С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ, Р° Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Эликсир силы"						);
-					Doc_PrintLine	( nDocID,  0, "1 драконий корень"						);
+					Doc_PrintLine	( nDocID,  0, "Р­Р»РёРєСЃРёСЂ СЃРёР»С‹"						);
+					Doc_PrintLine	( nDocID,  0, "1 РґСЂР°РєРѕРЅРёР№ РєРѕСЂРµРЅСЊ"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Эликсир жизни"						);
-					Doc_PrintLine	( nDocID,  0, "1 лечебный корень"						);
+					Doc_PrintLines	( nDocID,  0, "Р­Р»РёРєСЃРёСЂ Р¶РёР·РЅРё"						);
+					Doc_PrintLine	( nDocID,  0, "1 Р»РµС‡РµР±РЅС‹Р№ РєРѕСЂРµРЅСЊ"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Эликсир духа"						);
-					Doc_PrintLine	( nDocID,  0, "1 огненный корень"						);
+					Doc_PrintLines	( nDocID,  0, "Р­Р»РёРєСЃРёСЂ РґСѓС…Р°"						);
+					Doc_PrintLine	( nDocID,  0, "1 РѕРіРЅРµРЅРЅС‹Р№ РєРѕСЂРµРЅСЊ"						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Применение этих рецептов - высшее алхимическое искусство. Все они требуют царского щавеля."); 
+					Doc_PrintLines	( nDocID,  1, "РџСЂРёРјРµРЅРµРЅРёРµ СЌС‚РёС… СЂРµС†РµРїС‚РѕРІ - РІС‹СЃС€РµРµ Р°Р»С…РёРјРёС‡РµСЃРєРѕРµ РёСЃРєСѓСЃСЃС‚РІРѕ. Р’СЃРµ РѕРЅРё С‚СЂРµР±СѓСЋС‚ С†Р°СЂСЃРєРѕРіРѕ С‰Р°РІРµР»СЏ."); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Зелье скорости варить значительно легче, частично потому, что для него не требуется царского щавеля."						);
+					Doc_PrintLines	( nDocID,  1, "Р—РµР»СЊРµ СЃРєРѕСЂРѕСЃС‚Рё РІР°СЂРёС‚СЊ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р»РµРіС‡Рµ, С‡Р°СЃС‚РёС‡РЅРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ РґР»СЏ РЅРµРіРѕ РЅРµ С‚СЂРµР±СѓРµС‚СЃСЏ С†Р°СЂСЃРєРѕРіРѕ С‰Р°РІРµР»СЏ."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					

@@ -31,7 +31,7 @@ INSTANCE DIA_Peck_PICKPOCKET (C_INFO)
 	condition	= DIA_Peck_PICKPOCKET_Condition;
 	information	= DIA_Peck_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Воровать этот ключ рискованно)";
+	description = "(Р’РѕСЂРѕРІР°С‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Peck_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ instance DIA_Peck_HEY		(C_INFO)
 	condition	 = 	DIA_Peck_HEY_Condition;
 	information	 = 	DIA_Peck_HEY_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Эй, ты что делаешь тут?";
+	description	 =  "Р­Р№, С‚С‹ С‡С‚Рѕ РґРµР»Р°РµС€СЊ С‚СѓС‚?";
 };
 func int DIA_Peck_HEY_Condition ()
 {	
@@ -95,8 +95,8 @@ func int DIA_Peck_HEY_Condition ()
 };
 func void DIA_Peck_HEY_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_HEY_15_00"); //Эй, ты что делаешь тут?
-	AI_Output (self, other, "DIA_Peck_HEY_12_01"); //Послушай, я занят. Оставь меня в покое.
+	AI_Output (other, self, "DIA_Peck_HEY_15_00"); //Р­Р№, С‚С‹ С‡С‚Рѕ РґРµР»Р°РµС€СЊ С‚СѓС‚?
+	AI_Output (self, other, "DIA_Peck_HEY_12_01"); //РџРѕСЃР»СѓС€Р°Р№, СЏ Р·Р°РЅСЏС‚. РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -110,7 +110,7 @@ instance DIA_Peck_FOUND_PECK		(C_INFO)
 	condition	 = 	DIA_Peck_FOUND_PECK_Condition;
 	information	 = 	DIA_Peck_FOUND_PECK_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Эй, тебе пора возвращаться назад.";
+	description	 =  "Р­Р№, С‚РµР±Рµ РїРѕСЂР° РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР°Р·Р°Рґ.";
 };
 
 func int DIA_Peck_FOUND_PECK_Condition ()
@@ -123,12 +123,12 @@ func int DIA_Peck_FOUND_PECK_Condition ()
 };
 func void DIA_Peck_FOUND_PECK_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_00"); //Эй, тебе пора возвращаться назад.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_01"); //Что тебе нужно? Ты разве не видишь, я занят?
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_02"); //Мне нужно оружие, так что возвращайся в казармы.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_03"); //Черт, твое оружие может подождать.
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_04"); //Пошли, Андрэ уже тоже ищет тебя.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_05"); //Хммм ... черт. Ладно, я уже иду - но когда будешь докладывать Андрэ, не говори ему, что я был здесь.
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_00"); //Р­Р№, С‚РµР±Рµ РїРѕСЂР° РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР°Р·Р°Рґ.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РўС‹ СЂР°Р·РІРµ РЅРµ РІРёРґРёС€СЊ, СЏ Р·Р°РЅСЏС‚?
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_02"); //РњРЅРµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ, С‚Р°Рє С‡С‚Рѕ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ РІ РєР°Р·Р°СЂРјС‹.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_03"); //Р§РµСЂС‚, С‚РІРѕРµ РѕСЂСѓР¶РёРµ РјРѕР¶РµС‚ РїРѕРґРѕР¶РґР°С‚СЊ.
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_04"); //РџРѕС€Р»Рё, РђРЅРґСЂСЌ СѓР¶Рµ С‚РѕР¶Рµ РёС‰РµС‚ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_05"); //РҐРјРјРј ... С‡РµСЂС‚. Р›Р°РґРЅРѕ, СЏ СѓР¶Рµ РёРґСѓ - РЅРѕ РєРѕРіРґР° Р±СѓРґРµС€СЊ РґРѕРєР»Р°РґС‹РІР°С‚СЊ РђРЅРґСЂСЌ, РЅРµ РіРѕРІРѕСЂРё РµРјСѓ, С‡С‚Рѕ СЏ Р±С‹Р» Р·РґРµСЃСЊ.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "STORAGE");
@@ -144,7 +144,7 @@ instance DIA_Peck_WEAPON		(C_INFO)
 	condition	 = 	DIA_Peck_WEAPON_Condition;
 	information	 = 	DIA_Peck_WEAPON_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Я пришел за оружием.";
+	description	 = 	"РЇ РїСЂРёС€РµР» Р·Р° РѕСЂСѓР¶РёРµРј.";
 };
 //------------------------------------
 var int DIA_Peck_WEAPON_perm;
@@ -161,32 +161,32 @@ func int DIA_Peck_WEAPON_Condition ()
 };
 func void DIA_Peck_WEAPON_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_WEAPON_15_00"); //Я пришел за оружием.
+	AI_Output (other, self, "DIA_Peck_WEAPON_15_00"); //РЇ РїСЂРёС€РµР» Р·Р° РѕСЂСѓР¶РёРµРј.
 	
 	if (MIS_Andre_Peck == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Peck_WEAPON_12_01"); //Сначала сходи к Андрэ и доложи ему.
+		AI_Output (self, other, "DIA_Peck_WEAPON_12_01"); //РЎРЅР°С‡Р°Р»Р° СЃС…РѕРґРё Рє РђРЅРґСЂСЌ Рё РґРѕР»РѕР¶Рё РµРјСѓ.
 	}
 	else	
 	{
 		if (MIS_Andre_Peck == LOG_OBSOLETE)
 		{
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_02"); //Посмотрите, кто пришел. Наш новый друг. И ему нужен меч.
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_03"); //Ты не сказал Андрэ, что я был в Красном Фонаре. Похоже, ты нормальный парень. Вот, держи твой меч.
-			AI_Output (self ,other,"DIA_Peck_Add_12_00"); //Это лучшее, что у меня есть.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_02"); //РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ РїСЂРёС€РµР». РќР°С€ РЅРѕРІС‹Р№ РґСЂСѓРі. Р РµРјСѓ РЅСѓР¶РµРЅ РјРµС‡.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_03"); //РўС‹ РЅРµ СЃРєР°Р·Р°Р» РђРЅРґСЂСЌ, С‡С‚Рѕ СЏ Р±С‹Р» РІ РљСЂР°СЃРЅРѕРј Р¤РѕРЅР°СЂРµ. РџРѕС…РѕР¶Рµ, С‚С‹ РЅРѕСЂРјР°Р»СЊРЅС‹Р№ РїР°СЂРµРЅСЊ. Р’РѕС‚, РґРµСЂР¶Рё С‚РІРѕР№ РјРµС‡.
+			AI_Output (self ,other,"DIA_Peck_Add_12_00"); //Р­С‚Рѕ Р»СѓС‡С€РµРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
 			B_GiveInvItems 		(self, hero	, ItMw_Schwert1, 1); // edles Schwert 35
 	
 		}
-		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt fьr Andre M.F.
+		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt fСЊr Andre M.F.
 		{
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //Я не забуду тебе этого. Кто сказал Андрэ, что я был в Красном Фонаре, а?
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //И теперь ты хочешь получить от меня меч ... хорошо, ты получишь меч. Вот. А теперь пошел к черту!
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //РЇ РЅРµ Р·Р°Р±СѓРґСѓ С‚РµР±Рµ СЌС‚РѕРіРѕ. РљС‚Рѕ СЃРєР°Р·Р°Р» РђРЅРґСЂСЌ, С‡С‚Рѕ СЏ Р±С‹Р» РІ РљСЂР°СЃРЅРѕРј Р¤РѕРЅР°СЂРµ, Р°?
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //Р С‚РµРїРµСЂСЊ С‚С‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РѕС‚ РјРµРЅСЏ РјРµС‡ ... С…РѕСЂРѕС€Рѕ, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РјРµС‡. Р’РѕС‚. Рђ С‚РµРїРµСЂСЊ РїРѕС€РµР» Рє С‡РµСЂС‚Сѓ!
 			
 			B_GiveInvItems (self, hero, ItMw_1h_MISC_Sword,1);// rostiges Schwert
 			
 		};
 		DIA_Peck_WEAPON_perm = TRUE;
-	AI_Output (self, other, "DIA_Peck_WEAPON_12_06"); //Если тебе нужно оружие получше, иди к торговцам на рынке.
+	AI_Output (self, other, "DIA_Peck_WEAPON_12_06"); //Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ РїРѕР»СѓС‡С€Рµ, РёРґРё Рє С‚РѕСЂРіРѕРІС†Р°Рј РЅР° СЂС‹РЅРєРµ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -198,7 +198,7 @@ func void DIA_Peck_WEAPON_Info ()
 
 func void B_Peck_LeckMich()
 {
-	AI_Output (self ,other,"DIA_Peck_Add_12_07"); //Поцелуй мою задницу!
+	AI_Output (self ,other,"DIA_Peck_Add_12_07"); //РџРѕС†РµР»СѓР№ РјРѕСЋ Р·Р°РґРЅРёС†Сѓ!
 };
 
 
@@ -212,7 +212,7 @@ instance DIA_Peck_WEAPON2		(C_INFO)
 	condition	 = 	DIA_Peck_WEAPON2_Condition;
 	information	 = 	DIA_Peck_WEAPON2_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"У тебя нет оружия получше для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РЅРµС‚ РѕСЂСѓР¶РёСЏ РїРѕР»СѓС‡С€Рµ РґР»СЏ РјРµРЅСЏ?";
 };
 //------------------------------------
 var int DIA_Peck_WEAPON2_perm;
@@ -230,21 +230,21 @@ func int DIA_Peck_WEAPON2_Condition ()
 };
 func void DIA_Peck_WEAPON2_Info ()
 {
-	AI_Output (self ,other,"DIA_Peck_Add_15_01"); //У тебя нет оружия получше для меня?
+	AI_Output (self ,other,"DIA_Peck_Add_15_01"); //РЈ С‚РµР±СЏ РЅРµС‚ РѕСЂСѓР¶РёСЏ РїРѕР»СѓС‡С€Рµ РґР»СЏ РјРµРЅСЏ?
 	if (MIS_Andre_Peck == LOG_SUCCESS) //Peck verpetzt
 	{	
-		AI_Output (self ,other,"DIA_Peck_Add_12_06"); //Я не забыл, что ты донес на меня лорду Андрэ.
+		AI_Output (self ,other,"DIA_Peck_Add_12_06"); //РЇ РЅРµ Р·Р°Р±С‹Р», С‡С‚Рѕ С‚С‹ РґРѕРЅРµСЃ РЅР° РјРµРЅСЏ Р»РѕСЂРґСѓ РђРЅРґСЂСЌ.
 		B_Peck_LeckMich();
 	}
 	else if (Kapitel < 3)
 	{
-		AI_Output (self ,other,"DIA_Peck_Add_12_02"); //Пока нет ...
+		AI_Output (self ,other,"DIA_Peck_Add_12_02"); //РџРѕРєР° РЅРµС‚ ...
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Peck_Add_12_03"); //Хорошо, что ты спросил. Нам досталось несколько очень хороших клинков от наемников Онара.
-		AI_Output (self ,other,"DIA_Peck_Add_12_04"); //Они им больше не понадобятся. (грязный смех)
-		AI_Output (self ,other,"DIA_Peck_Add_12_05"); //Вот, возьми.
+		AI_Output (self ,other,"DIA_Peck_Add_12_03"); //РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ СЃРїСЂРѕСЃРёР». РќР°Рј РґРѕСЃС‚Р°Р»РѕСЃСЊ РЅРµСЃРєРѕР»СЊРєРѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РёС… РєР»РёРЅРєРѕРІ РѕС‚ РЅР°РµРјРЅРёРєРѕРІ РћРЅР°СЂР°.
+		AI_Output (self ,other,"DIA_Peck_Add_12_04"); //РћРЅРё РёРј Р±РѕР»СЊС€Рµ РЅРµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ. (РіСЂСЏР·РЅС‹Р№ СЃРјРµС…)
+		AI_Output (self ,other,"DIA_Peck_Add_12_05"); //Р’РѕС‚, РІРѕР·СЊРјРё.
 		B_GiveInvItems (self, other, ItMw_Rubinklinge, 1); //50
 		
 		DIA_Peck_WEAPON2_perm = TRUE;
@@ -261,7 +261,7 @@ instance DIA_Peck_PERM		(C_INFO)
 	condition	 = 	DIA_Peck_PERM_Condition;
 	information	 = 	DIA_Peck_PERM_Info;
 	permanent	 =	TRUE;
-	description	 = 	"С тобой все в порядке?";
+	description	 = 	"РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Peck_PERM_Condition ()
@@ -275,7 +275,7 @@ func int DIA_Peck_PERM_Condition ()
 };
 func void DIA_Peck_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Peck_PERM_15_00"); //С тобой все в порядке?
+	AI_Output			(other, self, "DIA_Peck_PERM_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (MIS_Andre_Peck == LOG_SUCCESS) //Peck verpetzt
 	{	
@@ -283,7 +283,7 @@ func void DIA_Peck_PERM_Info ()
 	}
 	else if (Kapitel != 3)
 	{
-		AI_Output			(self, other, "DIA_Peck_PERM_12_01"); //Да, а с тобой?
+		AI_Output			(self, other, "DIA_Peck_PERM_12_01"); //Р”Р°, Р° СЃ С‚РѕР±РѕР№?
 	}
 	else if (Kapitel == 3)
 	{
@@ -292,24 +292,24 @@ func void DIA_Peck_PERM_Info ()
 			if (hero.guild == GIL_MIL)
 			|| (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_02"); //Не совсем. Меня волнуют эти наемники. Я хочу сказать, они могут попытаться освободить своего дружка из тюрьмы силой.
-				AI_Output			(self, other, "DIA_Peck_PERM_12_03"); //Мне что-то не очень хочется выступать против банды опытных бойцов.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_02"); //РќРµ СЃРѕРІСЃРµРј. РњРµРЅСЏ РІРѕР»РЅСѓСЋС‚ СЌС‚Рё РЅР°РµРјРЅРёРєРё. РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, РѕРЅРё РјРѕРіСѓС‚ РїРѕРїС‹С‚Р°С‚СЊСЃСЏ РѕСЃРІРѕР±РѕРґРёС‚СЊ СЃРІРѕРµРіРѕ РґСЂСѓР¶РєР° РёР· С‚СЋСЂСЊРјС‹ СЃРёР»РѕР№.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_03"); //РњРЅРµ С‡С‚Рѕ-С‚Рѕ РЅРµ РѕС‡РµРЅСЊ С…РѕС‡РµС‚СЃСЏ РІС‹СЃС‚СѓРїР°С‚СЊ РїСЂРѕС‚РёРІ Р±Р°РЅРґС‹ РѕРїС‹С‚РЅС‹С… Р±РѕР№С†РѕРІ.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_04"); //Конечно! Мы готовы ко всему. Маги могут быть уверены, что этому заключенному не удастся сбежать.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_04"); //РљРѕРЅРµС‡РЅРѕ! РњС‹ РіРѕС‚РѕРІС‹ РєРѕ РІСЃРµРјСѓ. РњР°РіРё РјРѕРіСѓС‚ Р±С‹С‚СЊ СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ СЌС‚РѕРјСѓ Р·Р°РєР»СЋС‡РµРЅРЅРѕРјСѓ РЅРµ СѓРґР°СЃС‚СЃСЏ СЃР±РµР¶Р°С‚СЊ.
 			}
 			else //Sld oder DJG
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_05"); //Я знаю, что ты задумал, но у тебя не получится уйти вместе с этим заключенным.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_05"); //РЇ Р·РЅР°СЋ, С‡С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р», РЅРѕ Сѓ С‚РµР±СЏ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ СѓР№С‚Рё РІРјРµСЃС‚Рµ СЃ СЌС‚РёРј Р·Р°РєР»СЋС‡РµРЅРЅС‹Рј.
 			};
 		}	
 		else
 		{
-			AI_Output			(self, other, "DIA_Peck_PERM_12_06"); //Я очень рад, что это дело об убийстве теперь закрыто.
-			AI_Output			(other, self, "DIA_Peck_PERM_15_07"); //Почему?
-			AI_Output			(self, other, "DIA_Peck_PERM_12_08"); //Наемники просто так не отступили бы. Они бы не стали сидеть сложа руки и спокойно наблюдать за тем, как мы повесим одного из них.
-			AI_Output			(self, other, "DIA_Peck_PERM_12_09"); //Они даже могли напасть на город. Я даже думать не хочу от том, к чему это могло привести.
+			AI_Output			(self, other, "DIA_Peck_PERM_12_06"); //РЇ РѕС‡РµРЅСЊ СЂР°Рґ, С‡С‚Рѕ СЌС‚Рѕ РґРµР»Рѕ РѕР± СѓР±РёР№СЃС‚РІРµ С‚РµРїРµСЂСЊ Р·Р°РєСЂС‹С‚Рѕ.
+			AI_Output			(other, self, "DIA_Peck_PERM_15_07"); //РџРѕС‡РµРјСѓ?
+			AI_Output			(self, other, "DIA_Peck_PERM_12_08"); //РќР°РµРјРЅРёРєРё РїСЂРѕСЃС‚Рѕ С‚Р°Рє РЅРµ РѕС‚СЃС‚СѓРїРёР»Рё Р±С‹. РћРЅРё Р±С‹ РЅРµ СЃС‚Р°Р»Рё СЃРёРґРµС‚СЊ СЃР»РѕР¶Р° СЂСѓРєРё Рё СЃРїРѕРєРѕР№РЅРѕ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° С‚РµРј, РєР°Рє РјС‹ РїРѕРІРµСЃРёРј РѕРґРЅРѕРіРѕ РёР· РЅРёС….
+			AI_Output			(self, other, "DIA_Peck_PERM_12_09"); //РћРЅРё РґР°Р¶Рµ РјРѕРіР»Рё РЅР°РїР°СЃС‚СЊ РЅР° РіРѕСЂРѕРґ. РЇ РґР°Р¶Рµ РґСѓРјР°С‚СЊ РЅРµ С…РѕС‡Сѓ РѕС‚ С‚РѕРј, Рє С‡РµРјСѓ СЌС‚Рѕ РјРѕРіР»Рѕ РїСЂРёРІРµСЃС‚Рё.
 		};	
 	};
 };

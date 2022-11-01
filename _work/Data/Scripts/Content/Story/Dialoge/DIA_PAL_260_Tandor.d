@@ -44,15 +44,15 @@ func int DIA_Tandor_Hallo_Condition ()
 };
 func void DIA_Tandor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //Ты пришел через Проход? Это хорошо. Мы уже потеряли там много хороших людей.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //Я хорошо знаю, каково там - я служил в разведотряде некоторое время.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //У тебя есть оружие? Если тебе нужно хорошее оружие, обратись ко мне.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //РўС‹ РїСЂРёС€РµР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ? Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. РњС‹ СѓР¶Рµ РїРѕС‚РµСЂСЏР»Рё С‚Р°Рј РјРЅРѕРіРѕ С…РѕСЂРѕС€РёС… Р»СЋРґРµР№.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //РЇ С…РѕСЂРѕС€Рѕ Р·РЅР°СЋ, РєР°РєРѕРІРѕ С‚Р°Рј - СЏ СЃР»СѓР¶РёР» РІ СЂР°Р·РІРµРґРѕС‚СЂСЏРґРµ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РѕСЂСѓР¶РёРµ? Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ, РѕР±СЂР°С‚РёСЃСЊ РєРѕ РјРЅРµ.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Тандор торгует оружием в замке.");
+	B_LogEntry (TOPIC_Trader_OC,"РўР°РЅРґРѕСЂ С‚РѕСЂРіСѓРµС‚ РѕСЂСѓР¶РёРµРј РІ Р·Р°РјРєРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Spдhtrupp
+//	Info SpРґhtrupp
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Tandor_Trupp		(C_INFO)
 {
@@ -61,7 +61,7 @@ instance DIA_Tandor_Trupp		(C_INFO)
 	condition	 = 	DIA_Tandor_Trupp_Condition;
 	information	 = 	DIA_Tandor_Trupp_Info;
 	permanent 	 =  FALSE;
-	description  =  "Что стало с этим отрядом?";
+	description  =  "Р§С‚Рѕ СЃС‚Р°Р»Рѕ СЃ СЌС‚РёРј РѕС‚СЂСЏРґРѕРј?";
 };
 func int DIA_Tandor_Trupp_Condition ()
 {	
@@ -72,11 +72,11 @@ func int DIA_Tandor_Trupp_Condition ()
 };
 func void DIA_Tandor_Trupp_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //Что стало с этим отрядом?
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_01"); //Мы проводили разведку местности и собирались продвинуться к побережью. Мы разбили лагерь в пещере.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_02"); //Но поздно ночью пришли орки. Они осветили склон факелами и обнаружили нас.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Мы попытались скрыться, но я единственный, кому удалось пробиться к своим...
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Вскоре после этого орки возвели огромный частокол, и нам пришлось отступить в замок.
+	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //Р§С‚Рѕ СЃС‚Р°Р»Рѕ СЃ СЌС‚РёРј РѕС‚СЂСЏРґРѕРј?
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_01"); //РњС‹ РїСЂРѕРІРѕРґРёР»Рё СЂР°Р·РІРµРґРєСѓ РјРµСЃС‚РЅРѕСЃС‚Рё Рё СЃРѕР±РёСЂР°Р»РёСЃСЊ РїСЂРѕРґРІРёРЅСѓС‚СЊСЃСЏ Рє РїРѕР±РµСЂРµР¶СЊСЋ. РњС‹ СЂР°Р·Р±РёР»Рё Р»Р°РіРµСЂСЊ РІ РїРµС‰РµСЂРµ.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_02"); //РќРѕ РїРѕР·РґРЅРѕ РЅРѕС‡СЊСЋ РїСЂРёС€Р»Рё РѕСЂРєРё. РћРЅРё РѕСЃРІРµС‚РёР»Рё СЃРєР»РѕРЅ С„Р°РєРµР»Р°РјРё Рё РѕР±РЅР°СЂСѓР¶РёР»Рё РЅР°СЃ.
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //РњС‹ РїРѕРїС‹С‚Р°Р»РёСЃСЊ СЃРєСЂС‹С‚СЊСЃСЏ, РЅРѕ СЏ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєРѕРјСѓ СѓРґР°Р»РѕСЃСЊ РїСЂРѕР±РёС‚СЊСЃСЏ Рє СЃРІРѕРёРј...
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Р’СЃРєРѕСЂРµ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ РѕСЂРєРё РІРѕР·РІРµР»Рё РѕРіСЂРѕРјРЅС‹Р№ С‡Р°СЃС‚РѕРєРѕР», Рё РЅР°Рј РїСЂРёС€Р»РѕСЃСЊ РѕС‚СЃС‚СѓРїРёС‚СЊ РІ Р·Р°РјРѕРє.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info Trade
@@ -89,7 +89,7 @@ instance DIA_Tandor_Trade		(C_INFO)
 	information	 = 	DIA_Tandor_Trade_Info;
 	permanent 	 =  TRUE;
 	trade		 =	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 func int DIA_Tandor_Trade_Condition ()
 {
@@ -98,7 +98,7 @@ func int DIA_Tandor_Trade_Condition ()
 func void DIA_Tandor_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Tandor_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Tandor_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };		
 ///////////////////////////////////////////////////////////////////////
 //	Info DIA_Tandor_Equipment
@@ -109,7 +109,7 @@ instance DIA_Tandor_Equipment		(C_INFO)
 	nr		 	 =  3;
 	condition	 = 	DIA_Tandor_Equipment_Condition;
 	information	 = 	DIA_Tandor_Equipment_Info;
-	description	 = 	"Меня послал Гаронд - мне нужно снаряжение.";
+	description	 = 	"РњРµРЅСЏ РїРѕСЃР»Р°Р» Р“Р°СЂРѕРЅРґ - РјРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ.";
 };
 
 func int DIA_Tandor_Equipment_Condition ()
@@ -123,57 +123,57 @@ func int DIA_Tandor_Equipment_Condition ()
 };
 func void DIA_Tandor_Equipment_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_15_00"); //Меня послал Гаронд - мне нужно снаряжение.
-	AI_Output (self, other, "DIA_Tandor_Equipment_08_01"); //Для ближнего или дальнего боя?
+	AI_Output (other, self, "DIA_Tandor_Equipment_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р“Р°СЂРѕРЅРґ - РјРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
+	AI_Output (self, other, "DIA_Tandor_Equipment_08_01"); //Р”Р»СЏ Р±Р»РёР¶РЅРµРіРѕ РёР»Рё РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Для ближнего боя.",DIA_Tandor_Equipment_Nah);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Для дальнего боя.",DIA_Tandor_Equipment_Fern);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Р”Р»СЏ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ.",DIA_Tandor_Equipment_Nah);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Р”Р»СЏ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ.",DIA_Tandor_Equipment_Fern);
 };
 FUNC VOID DIA_Tandor_Equipment_Nah()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Nah_15_00"); //Для ближнего боя.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Nah_08_01"); //Одноручное иди двуручное?
+	AI_Output (other, self, "DIA_Tandor_Equipment_Nah_15_00"); //Р”Р»СЏ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Nah_08_01"); //РћРґРЅРѕСЂСѓС‡РЅРѕРµ РёРґРё РґРІСѓСЂСѓС‡РЅРѕРµ?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Одноручное.",DIA_Tandor_Equipment_Ein);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Двуручное.",DIA_Tandor_Equipment_Zwei);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"РћРґРЅРѕСЂСѓС‡РЅРѕРµ.",DIA_Tandor_Equipment_Ein);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Р”РІСѓСЂСѓС‡РЅРѕРµ.",DIA_Tandor_Equipment_Zwei);
 };
 FUNC VOID DIA_Tandor_Equipment_Fern()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Fern_15_00"); //Для дальнего боя.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Fern_08_01"); //Лук или арбалет?
+	AI_Output (other, self, "DIA_Tandor_Equipment_Fern_15_00"); //Р”Р»СЏ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Fern_08_01"); //Р›СѓРє РёР»Рё Р°СЂР±Р°Р»РµС‚?
 	
 	Info_ClearChoices (DIA_Tandor_Equipment);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Лук.",DIA_Tandor_Equipment_Bow);
-	Info_AddChoice 	  (DIA_Tandor_Equipment,"Арбалет.",DIA_Tandor_Equipment_Crossbow);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"Р›СѓРє.",DIA_Tandor_Equipment_Bow);
+	Info_AddChoice 	  (DIA_Tandor_Equipment,"РђСЂР±Р°Р»РµС‚.",DIA_Tandor_Equipment_Crossbow);
 };	
 FUNC VOID DIA_Tandor_Equipment_Ein()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Ein_15_00"); //Одноручное.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Ein_08_01"); //Тогда возьми этот дробитель камней. Это хорошее оружие.
+	AI_Output (other, self, "DIA_Tandor_Equipment_Ein_15_00"); //РћРґРЅРѕСЂСѓС‡РЅРѕРµ.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Ein_08_01"); //РўРѕРіРґР° РІРѕР·СЊРјРё СЌС‚РѕС‚ РґСЂРѕР±РёС‚РµР»СЊ РєР°РјРЅРµР№. Р­С‚Рѕ С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ.
 	B_GiveInvItems (self,other, ItMw_Steinbrecher,1);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Zwei()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Zwei_15_00"); //Двуручное.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Zwei_08_01"); //Тебе понравится этот двуручник.
+	AI_Output (other, self, "DIA_Tandor_Equipment_Zwei_15_00"); //Р”РІСѓСЂСѓС‡РЅРѕРµ.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Zwei_08_01"); //РўРµР±Рµ РїРѕРЅСЂР°РІРёС‚СЃСЏ СЌС‚РѕС‚ РґРІСѓСЂСѓС‡РЅРёРє.
 	B_GiveInvItems (self,other,ItMw_Zweihaender1 ,1);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Bow()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Bow_15_00"); //Лук.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Этот охотничий лук как нельзя лучше подойдет тебе. Я также дам тебе колчан стрел.
+	AI_Output (other, self, "DIA_Tandor_Equipment_Bow_15_00"); //Р›СѓРє.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Р­С‚РѕС‚ РѕС…РѕС‚РЅРёС‡РёР№ Р»СѓРє РєР°Рє РЅРµР»СЊР·СЏ Р»СѓС‡С€Рµ РїРѕРґРѕР№РґРµС‚ С‚РµР±Рµ. РЇ С‚Р°РєР¶Рµ РґР°Рј С‚РµР±Рµ РєРѕР»С‡Р°РЅ СЃС‚СЂРµР».
 	B_GiveInvItems (self,other,ItRw_Bow_L_03 ,1);
 	B_GiveInvItems (self,other, ItRw_Arrow,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
 FUNC VOID DIA_Tandor_Equipment_Crossbow()
 {
-	AI_Output (other, self, "DIA_Tandor_Equipment_Crossbow_15_00"); //Арбалет.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Crossbow_08_01"); //Тогда возьми этот легкий арбалет. И болты к нему в придачу.
+	AI_Output (other, self, "DIA_Tandor_Equipment_Crossbow_15_00"); //РђСЂР±Р°Р»РµС‚.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Crossbow_08_01"); //РўРѕРіРґР° РІРѕР·СЊРјРё СЌС‚РѕС‚ Р»РµРіРєРёР№ Р°СЂР±Р°Р»РµС‚. Р Р±РѕР»С‚С‹ Рє РЅРµРјСѓ РІ РїСЂРёРґР°С‡Сѓ.
 	B_GiveInvItems (self,other, ItRw_Crossbow_L_02,1);
 	B_GiveInvItems (self,other, ItRw_Bolt,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
@@ -256,7 +256,7 @@ instance DIA_Tandor_News		(C_INFO)
 	condition	 = 	DIA_Tandor_News_Condition;
 	information	 = 	DIA_Tandor_News_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Есть какие-нибудь новости?";
+	description	 = 	"Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 
 func int DIA_Tandor_News_Condition ()
@@ -270,16 +270,16 @@ func int DIA_Tandor_News_Condition ()
 
 func void DIA_Tandor_News_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_News_15_00"); //Есть какие-нибудь новости?
+	AI_Output (other, self, "DIA_Tandor_News_15_00"); //Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё?
 
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Tandor_News_08_01"); //Единственная новость за последнее время - то, что вы, охотники на драконов, появились здесь.
+			AI_Output (self, other, "DIA_Tandor_News_08_01"); //Р•РґРёРЅСЃС‚РІРµРЅРЅР°СЏ РЅРѕРІРѕСЃС‚СЊ Р·Р° РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ - С‚Рѕ, С‡С‚Рѕ РІС‹, РѕС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ, РїРѕСЏРІРёР»РёСЃСЊ Р·РґРµСЃСЊ.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Tandor_News_08_02"); //Сюда прибыли охотники на драконов.
-			AI_Output (self, other, "DIA_Tandor_News_08_03"); //Похоже, это крепкие ублюдки. Надеюсь, это действительно так, иначе вряд ли им удастся выжить здесь.
+			AI_Output (self, other, "DIA_Tandor_News_08_02"); //РЎСЋРґР° РїСЂРёР±С‹Р»Рё РѕС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ.
+			AI_Output (self, other, "DIA_Tandor_News_08_03"); //РџРѕС…РѕР¶Рµ, СЌС‚Рѕ РєСЂРµРїРєРёРµ СѓР±Р»СЋРґРєРё. РќР°РґРµСЋСЃСЊ, СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С‚Р°Рє, РёРЅР°С‡Рµ РІСЂСЏРґ Р»Рё РёРј СѓРґР°СЃС‚СЃСЏ РІС‹Р¶РёС‚СЊ Р·РґРµСЃСЊ.
 		};
 };
 //#####################################################################
@@ -326,7 +326,7 @@ instance DIA_Tandor_WASISTLOS		(C_INFO)
 	information	 = 	DIA_Tandor_WASISTLOS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Что-то ты не весел.";
+	description	 = 	"Р§С‚Рѕ-С‚Рѕ С‚С‹ РЅРµ РІРµСЃРµР».";
 };
 
 func int DIA_Tandor_WASISTLOS_Condition ()
@@ -340,15 +340,15 @@ func int DIA_Tandor_WASISTLOS_Condition ()
 
 func void DIA_Tandor_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //Что-то ты не весел.
+	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //Р§С‚Рѕ-С‚Рѕ С‚С‹ РЅРµ РІРµСЃРµР».
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_01"); //Орки валят толпами. Скоро нам всем настанет конец.
+	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_01"); //РћСЂРєРё РІР°Р»СЏС‚ С‚РѕР»РїР°РјРё. РЎРєРѕСЂРѕ РЅР°Рј РІСЃРµРј РЅР°СЃС‚Р°РЅРµС‚ РєРѕРЅРµС†.
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_02"); //Запасы продовольствия кончаются. Мы голодаем.
+	AI_Output			(self, other, "DIA_Tandor_WASISTLOS_08_02"); //Р—Р°РїР°СЃС‹ РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёСЏ РєРѕРЅС‡Р°СЋС‚СЃСЏ. РњС‹ РіРѕР»РѕРґР°РµРј.
 	};
 };
 

@@ -28,7 +28,7 @@ instance DIA_PAL_297_TRESPAS		(C_INFO)
 	condition	 = 	DIA_PAL_297_TRESPAS_Condition;
 	information	 = 	DIA_PAL_297_TRESPAS_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 func int DIA_PAL_297_TRESPAS_Condition ()
 {
@@ -36,15 +36,15 @@ func int DIA_PAL_297_TRESPAS_Condition ()
 };
 func void DIA_PAL_297_TRESPAS_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_297_TRESPAS_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_PAL_297_TRESPAS_15_00"); //РљР°Рє РґРµР»Р°?
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //Здесь очень опасно, так что тебе лучше повернуть назад - мы не хотим, чтобы с тобой что-нибудь произошло.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //Р—РґРµСЃСЊ РѕС‡РµРЅСЊ РѕРїР°СЃРЅРѕ, С‚Р°Рє С‡С‚Рѕ С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРІРµСЂРЅСѓС‚СЊ РЅР°Р·Р°Рґ - РјС‹ РЅРµ С…РѕС‚РёРј, С‡С‚РѕР±С‹ СЃ С‚РѕР±РѕР№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕРёР·РѕС€Р»Рѕ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //Ты очень мужественный, если хочешь войти в Долину. Не забудь взять с собой побольше лечебных зелий.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //РўС‹ РѕС‡РµРЅСЊ РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Р№, РµСЃР»Рё С…РѕС‡РµС€СЊ РІРѕР№С‚Рё РІ Р”РѕР»РёРЅСѓ. РќРµ Р·Р°Р±СѓРґСЊ РІР·СЏС‚СЊ СЃ СЃРѕР±РѕР№ РїРѕР±РѕР»СЊС€Рµ Р»РµС‡РµР±РЅС‹С… Р·РµР»РёР№.
 	};
 };
 
@@ -58,7 +58,7 @@ instance DIA_Addon_PAL_297_Rangerbandits		(C_INFO)
 	condition	 = 	DIA_Addon_PAL_297_Rangerbandits_Condition;
 	information	 = 	DIA_Addon_PAL_297_Rangerbandits_Info;
 
-	description	 = 	"Не было ли здесь недавно бандитов?";
+	description	 = 	"РќРµ Р±С‹Р»Рѕ Р»Рё Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ Р±Р°РЅРґРёС‚РѕРІ?";
 };
 
 func int DIA_Addon_PAL_297_Rangerbandits_Condition ()
@@ -71,9 +71,9 @@ func int DIA_Addon_PAL_297_Rangerbandits_Condition ()
 
 func void DIA_Addon_PAL_297_Rangerbandits_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_PAL_297_Rangerbandits_15_00"); //Не было ли здесь недавно бандитов?
-	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_01"); //Не понимаю, о чем ты говоришь. Пока мы были на страже, не проходил никто. И уж конечно, здесь не было никаких бандитов.
-	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_02"); //Попробуй спросить крестьян. Может, они что-нибудь видели.
+	AI_Output	(other, self, "DIA_Addon_PAL_297_Rangerbandits_15_00"); //РќРµ Р±С‹Р»Рѕ Р»Рё Р·РґРµСЃСЊ РЅРµРґР°РІРЅРѕ Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_01"); //РќРµ РїРѕРЅРёРјР°СЋ, Рѕ С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ. РџРѕРєР° РјС‹ Р±С‹Р»Рё РЅР° СЃС‚СЂР°Р¶Рµ, РЅРµ РїСЂРѕС…РѕРґРёР» РЅРёРєС‚Рѕ. Р СѓР¶ РєРѕРЅРµС‡РЅРѕ, Р·РґРµСЃСЊ РЅРµ Р±С‹Р»Рѕ РЅРёРєР°РєРёС… Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_02"); //РџРѕРїСЂРѕР±СѓР№ СЃРїСЂРѕСЃРёС‚СЊ РєСЂРµСЃС‚СЊСЏРЅ. РњРѕР¶РµС‚, РѕРЅРё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІРёРґРµР»Рё.
 };
  
 

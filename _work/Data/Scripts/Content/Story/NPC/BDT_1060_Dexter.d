@@ -1,7 +1,7 @@
 instance BDT_1060_Dexter (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Δεκρςεπ"; 
+	name 		= "Π”ΠµΠΊΡΡ‚ΠµΡ€"; 
 	guild 		= GIL_BDT;
 	id 			= 1060;
 	voice 		= 9;

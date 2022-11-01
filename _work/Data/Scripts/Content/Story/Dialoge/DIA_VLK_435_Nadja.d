@@ -80,21 +80,21 @@ func void DIA_Nadja_STANDARD_Info ()
 {
 	if (Nadja_LuciaInfo == TRUE)
 	{
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_00"); //Я буду разговаривать с тобой только после того, как ты поговоришь с Бромором.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_00"); //РЇ Р±СѓРґСѓ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ С‚РѕР±РѕР№ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С‚С‹ РїРѕРіРѕРІРѕСЂРёС€СЊ СЃ Р‘СЂРѕРјРѕСЂРѕРј.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Nadja_STANDARD_16_00"); //Эй, я не могу заняться тобой сейчас, детка. Если хочешь развлечься, поговори с Бромором.
+		AI_Output (self, other, "DIA_Nadja_STANDARD_16_00"); //Р­Р№, СЏ РЅРµ РјРѕРіСѓ Р·Р°РЅСЏС‚СЊСЃСЏ С‚РѕР±РѕР№ СЃРµР№С‡Р°СЃ, РґРµС‚РєР°. Р•СЃР»Рё С…РѕС‡РµС€СЊ СЂР°Р·РІР»РµС‡СЊСЃСЏ, РїРѕРіРѕРІРѕСЂРё СЃ Р‘СЂРѕРјРѕСЂРѕРј.
 	};
 	
 	if (SC_HearedAboutMissingPeople == TRUE)
 	&& (SCKnowsMissingPeopleAreInAddonWorld == FALSE)
 	&& (Nadja_LuciaInfo == FALSE) 
 	{
-		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_01"); //Я только хотел задать тебе пару вопросов о пропавших людях.
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_02"); //Я могла бы тебе кое-что рассказать, милый, но не здесь.
-		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_03"); //Тогда пойдем наверх.
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_04"); //Хорошо. Но сначала ты должен договориться с Бромором. Неприятности мне не нужны.
+		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_01"); //РЇ С‚РѕР»СЊРєРѕ С…РѕС‚РµР» Р·Р°РґР°С‚СЊ С‚РµР±Рµ РїР°СЂСѓ РІРѕРїСЂРѕСЃРѕРІ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС….
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_02"); //РЇ РјРѕРіР»Р° Р±С‹ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ, РјРёР»С‹Р№, РЅРѕ РЅРµ Р·РґРµСЃСЊ.
+		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_03"); //РўРѕРіРґР° РїРѕР№РґРµРј РЅР°РІРµСЂС….
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_04"); //РҐРѕСЂРѕС€Рѕ. РќРѕ СЃРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ СЃ Р‘СЂРѕРјРѕСЂРѕРј. РќРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё РјРЅРµ РЅРµ РЅСѓР¶РЅС‹.
 		Nadja_LuciaInfo = TRUE;
 	};	
 	
@@ -124,7 +124,7 @@ func int DIA_Nadja_Danach_Condition ()
 };
 func void DIA_Nadja_Danach_Info ()
 {
-	AI_Output (self, other, "DIA_Nadja_Danach_16_00"); //Заходи в другой раз.
+	AI_Output (self, other, "DIA_Nadja_Danach_16_00"); //Р—Р°С…РѕРґРё РІ РґСЂСѓРіРѕР№ СЂР°Р·.
 	Nadja_Nacht = FALSE;
 	AI_StopProcessInfos (self);
 };
@@ -139,7 +139,7 @@ instance DIA_Nadja_hochgehen		(C_INFO)
 	information	 = 	DIA_Nadja_hochgehen_Info;
 	important	 = 	FALSE;
 	permanent	 = 	TRUE;
-	description	 =	"Пошли наверх.";
+	description	 =	"РџРѕС€Р»Рё РЅР°РІРµСЂС….";
 };
 
 func int DIA_Nadja_hochgehen_Condition ()
@@ -151,8 +151,8 @@ func int DIA_Nadja_hochgehen_Condition ()
 };
 func void DIA_Nadja_hochgehen_Info ()
 {
-	AI_Output (other, self, "DIA_Nadja_hochgehen_15_00"); //Пошли наверх.
-	AI_Output (self, other, "DIA_Nadja_hochgehen_16_01"); //Сегодня тебе выпал счастливый билет, детка. Пойдем.
+	AI_Output (other, self, "DIA_Nadja_hochgehen_15_00"); //РџРѕС€Р»Рё РЅР°РІРµСЂС….
+	AI_Output (self, other, "DIA_Nadja_hochgehen_16_01"); //РЎРµРіРѕРґРЅСЏ С‚РµР±Рµ РІС‹РїР°Р» СЃС‡Р°СЃС‚Р»РёРІС‹Р№ Р±РёР»РµС‚, РґРµС‚РєР°. РџРѕР№РґРµРј.
 	
 	Bromor_Pay = 2;
 	AI_StopProcessInfos (self);
@@ -168,7 +168,7 @@ instance DIA_Addon_Nadja_LuciaInfo		(C_INFO)
 	condition	 = 	DIA_Addon_Nadja_LuciaInfo_Condition;
 	information	 = 	DIA_Addon_Nadja_LuciaInfo_Info;
 
-	description	 = 	"Ну а теперь мы можем поговорить?";
+	description	 = 	"РќСѓ Р° С‚РµРїРµСЂСЊ РјС‹ РјРѕР¶РµРј РїРѕРіРѕРІРѕСЂРёС‚СЊ?";
 };
 func int DIA_Addon_Nadja_LuciaInfo_Condition ()
 {
@@ -182,55 +182,55 @@ func int DIA_Addon_Nadja_LuciaInfo_Condition ()
 var int Nadja_GaveLuciaInfo;
 func void DIA_Addon_Nadja_LuciaInfo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_15_00"); //Ну а теперь мы можем поговорить?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Да, здесь нас не подслушают.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //Бромору не нравится, когда мы разговариваем с гостями во время работы, если ему от этого никакой выгоды.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //Итак, ты хочешь узнать побольше о людях, которые исчезли в порту, не так ли?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //Я не знаю, смогу ли я тебе помочь, но по крайней мере я могу рассказать, что случилось с Люсией.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_15_00"); //РќСѓ Р° С‚РµРїРµСЂСЊ РјС‹ РјРѕР¶РµРј РїРѕРіРѕРІРѕСЂРёС‚СЊ?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Р”Р°, Р·РґРµСЃСЊ РЅР°СЃ РЅРµ РїРѕРґСЃР»СѓС€Р°СЋС‚.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //Р‘СЂРѕРјРѕСЂСѓ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, РєРѕРіРґР° РјС‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµРј СЃ РіРѕСЃС‚СЏРјРё РІРѕ РІСЂРµРјСЏ СЂР°Р±РѕС‚С‹, РµСЃР»Рё РµРјСѓ РѕС‚ СЌС‚РѕРіРѕ РЅРёРєР°РєРѕР№ РІС‹РіРѕРґС‹.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //РС‚Р°Рє, С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ РїРѕР±РѕР»СЊС€Рµ Рѕ Р»СЋРґСЏС…, РєРѕС‚РѕСЂС‹Рµ РёСЃС‡РµР·Р»Рё РІ РїРѕСЂС‚Сѓ, РЅРµ С‚Р°Рє Р»Рё?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //РЇ РЅРµ Р·РЅР°СЋ, СЃРјРѕРіСѓ Р»Рё СЏ С‚РµР±Рµ РїРѕРјРѕС‡СЊ, РЅРѕ РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ СЏ РјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ Р›СЋСЃРёРµР№.
 
 	Nadja_GaveLuciaInfo = TRUE;
 	
 	Info_ClearChoices	(DIA_Addon_Nadja_LuciaInfo);
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "А куда она исчезла?", DIA_Addon_Nadja_LuciaInfo_wo );
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Рассказывай.", DIA_Addon_Nadja_LuciaInfo_lucia );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Рђ РєСѓРґР° РѕРЅР° РёСЃС‡РµР·Р»Р°?", DIA_Addon_Nadja_LuciaInfo_wo );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Р Р°СЃСЃРєР°Р·С‹РІР°Р№.", DIA_Addon_Nadja_LuciaInfo_lucia );
 };
 func void DIA_Addon_Nadja_LuciaInfo_lucia ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_00"); //Рассказывай.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //Никто здесь особо не жалеет, что она исчезла.
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //Почему?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Здесь нет ни одного человека, которого она не пыталась использовать в своих интересах.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_04"); //Она была настоящей сукой!
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_00"); //Р Р°СЃСЃРєР°Р·С‹РІР°Р№.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //РќРёРєС‚Рѕ Р·РґРµСЃСЊ РѕСЃРѕР±Рѕ РЅРµ Р¶Р°Р»РµРµС‚, С‡С‚Рѕ РѕРЅР° РёСЃС‡РµР·Р»Р°.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //РџРѕС‡РµРјСѓ?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Р—РґРµСЃСЊ РЅРµС‚ РЅРё РѕРґРЅРѕРіРѕ С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂРѕРіРѕ РѕРЅР° РЅРµ РїС‹С‚Р°Р»Р°СЃСЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІ СЃРІРѕРёС… РёРЅС‚РµСЂРµСЃР°С….
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_04"); //РћРЅР° Р±С‹Р»Р° РЅР°СЃС‚РѕСЏС‰РµР№ СЃСѓРєРѕР№!
 };
 func void DIA_Addon_Nadja_LuciaInfo_wo ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_wo_15_00"); //А куда она исчезла?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //Она часто встречалась с Элврихом, подмастерьем плотника Торбена из нижней части города.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //Готова поспорить, что она уехала с этим парнем.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_wo_15_00"); //Рђ РєСѓРґР° РѕРЅР° РёСЃС‡РµР·Р»Р°?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //РћРЅР° С‡Р°СЃС‚Рѕ РІСЃС‚СЂРµС‡Р°Р»Р°СЃСЊ СЃ Р­Р»РІСЂРёС…РѕРј, РїРѕРґРјР°СЃС‚РµСЂСЊРµРј РїР»РѕС‚РЅРёРєР° РўРѕСЂР±РµРЅР° РёР· РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //Р“РѕС‚РѕРІР° РїРѕСЃРїРѕСЂРёС‚СЊ, С‡С‚Рѕ РѕРЅР° СѓРµС…Р°Р»Р° СЃ СЌС‚РёРј РїР°СЂРЅРµРј.
 
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Шлюха Люсия исчезла из борделя Бромора прошлой ночью. Возможно, она сбежала вместе с Элврихом, учеником плотника Торбена."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"РЁР»СЋС…Р° Р›СЋСЃРёСЏ РёСЃС‡РµР·Р»Р° РёР· Р±РѕСЂРґРµР»СЏ Р‘СЂРѕРјРѕСЂР° РїСЂРѕС€Р»РѕР№ РЅРѕС‡СЊСЋ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅР° СЃР±РµР¶Р°Р»Р° РІРјРµСЃС‚Рµ СЃ Р­Р»РІСЂРёС…РѕРј, СѓС‡РµРЅРёРєРѕРј РїР»РѕС‚РЅРёРєР° РўРѕСЂР±РµРЅР°."); 
 
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Куда они могли направиться?", DIA_Addon_Nadja_LuciaInfo_Elvrich );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "РљСѓРґР° РѕРЅРё РјРѕРіР»Рё РЅР°РїСЂР°РІРёС‚СЊСЃСЏ?", DIA_Addon_Nadja_LuciaInfo_Elvrich );
 };
 func void DIA_Addon_Nadja_LuciaInfo_Elvrich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_Elvrich_15_00"); //Куда они могли направиться?
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01"); //Если их не сожрали волки, то полагаю, они живут у фермеров.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02"); //А куда им еще деться?
+	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_Elvrich_15_00"); //РљСѓРґР° РѕРЅРё РјРѕРіР»Рё РЅР°РїСЂР°РІРёС‚СЊСЃСЏ?
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01"); //Р•СЃР»Рё РёС… РЅРµ СЃРѕР¶СЂР°Р»Рё РІРѕР»РєРё, С‚Рѕ РїРѕР»Р°РіР°СЋ, РѕРЅРё Р¶РёРІСѓС‚ Сѓ С„РµСЂРјРµСЂРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02"); //Рђ РєСѓРґР° РёРј РµС‰Рµ РґРµС‚СЊСЃСЏ?
 
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Что еще ты знаешь?", DIA_Addon_Nadja_LuciaInfo_sonst );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Р§С‚Рѕ РµС‰Рµ С‚С‹ Р·РЅР°РµС€СЊ?", DIA_Addon_Nadja_LuciaInfo_sonst );
 };
 func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_sonst_15_00"); //Что еще ты знаешь?
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_01"); //Я слышала странные истории о том, как люди исчезают.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_02"); //Но я сомневаюсь, что этим рассказам стоит верить.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //Тебе стоит поговорить с торговцами.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //К сожалению, это все, что я могу рассказать.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //Ну а теперь что будем делать, дорогуша? В конце концов, ты же деньги заплатил.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //Не хочешь позабавиться перед тем, как уедешь?
+	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_sonst_15_00"); //Р§С‚Рѕ РµС‰Рµ С‚С‹ Р·РЅР°РµС€СЊ?
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_01"); //РЇ СЃР»С‹С€Р°Р»Р° СЃС‚СЂР°РЅРЅС‹Рµ РёСЃС‚РѕСЂРёРё Рѕ С‚РѕРј, РєР°Рє Р»СЋРґРё РёСЃС‡РµР·Р°СЋС‚.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_02"); //РќРѕ СЏ СЃРѕРјРЅРµРІР°СЋСЃСЊ, С‡С‚Рѕ СЌС‚РёРј СЂР°СЃСЃРєР°Р·Р°Рј СЃС‚РѕРёС‚ РІРµСЂРёС‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //РўРµР±Рµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕСЂРіРѕРІС†Р°РјРё.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //РќСѓ Р° С‚РµРїРµСЂСЊ С‡С‚Рѕ Р±СѓРґРµРј РґРµР»Р°С‚СЊ, РґРѕСЂРѕРіСѓС€Р°? Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, С‚С‹ Р¶Рµ РґРµРЅСЊРіРё Р·Р°РїР»Р°С‚РёР».
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //РќРµ С…РѕС‡РµС€СЊ РїРѕР·Р°Р±Р°РІРёС‚СЊСЃСЏ РїРµСЂРµРґ С‚РµРј, РєР°Рє СѓРµРґРµС€СЊ?
 
 	Info_ClearChoices (DIA_Addon_Nadja_LuciaInfo);
 	
@@ -241,13 +241,13 @@ func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 		
 		Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,PRINT_Addon_NadjaWait,DIA_Addon_Nadja_WAIT);
 	};
-	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"Спасибо, но мне нужно идти.",DIA_Addon_Nadja_LuciaInfo_weiter);
-	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"Почему бы и нет? ...",DIA_Nadja_Poppen_Start);
+	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"РЎРїР°СЃРёР±Рѕ, РЅРѕ РјРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё.",DIA_Addon_Nadja_LuciaInfo_weiter);
+	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? ...",DIA_Nadja_Poppen_Start);
 };
 func void DIA_Addon_Nadja_LuciaInfo_weiter ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_weiter_15_00"); //Спасибо, но мне нужно идти.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01"); //Очень жаль. Ну что ж, тогда в другой раз.
+	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_weiter_15_00"); //РЎРїР°СЃРёР±Рѕ, РЅРѕ РјРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01"); //РћС‡РµРЅСЊ Р¶Р°Р»СЊ. РќСѓ С‡С‚Рѕ Р¶, С‚РѕРіРґР° РІ РґСЂСѓРіРѕР№ СЂР°Р·.
 	
 	Bromor_Pay = FALSE;
 	Nadja_Nacht = (Nadja_Nacht +1);
@@ -271,7 +271,7 @@ instance DIA_Nadja_Poppen	(C_INFO)
 	condition	 = 	DIA_Nadja_Poppen_Condition;
 	information	 = 	DIA_Nadja_Poppen_Info;
 	permanent	 = 	TRUE;
-	description  = "(развлечься)";
+	description  = "(СЂР°Р·РІР»РµС‡СЊСЃСЏ)";
 };
 
 func int DIA_Nadja_Poppen_Condition ()
@@ -279,7 +279,7 @@ func int DIA_Nadja_Poppen_Condition ()
 	if (Bromor_Pay == 2)
 	&& (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 300) 
 	
-	/* Das ist bцse - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
+	/* Das ist bС†se - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
 	&&  (
 		((Nadja_LuciaInfo != 0) && (Nadja_GaveLuciaInfo == 0))
 		|| (Nadja_GaveLuciaInfo == TRUE)
@@ -292,11 +292,11 @@ func int DIA_Nadja_Poppen_Condition ()
 };
 func void DIA_Nadja_Poppen_Info ()
 {
-	AI_Output (self, other, "DIA_Nadja_Poppen_16_00"); //Следующая пара часов принадлежит только нам.
-	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //Расслабься. Ложись и получай удовольствие.
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_00"); //РЎР»РµРґСѓСЋС‰Р°СЏ РїР°СЂР° С‡Р°СЃРѕРІ РїСЂРёРЅР°РґР»РµР¶РёС‚ С‚РѕР»СЊРєРѕ РЅР°Рј.
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. Р›РѕР¶РёСЃСЊ Рё РїРѕР»СѓС‡Р°Р№ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµ.
 
 	Info_ClearChoices (DIA_Nadja_Poppen);
-	Info_AddChoice (DIA_Nadja_Poppen,"Хорошо ...",DIA_Nadja_Poppen_Start);
+	Info_AddChoice (DIA_Nadja_Poppen,"РҐРѕСЂРѕС€Рѕ ...",DIA_Nadja_Poppen_Start);
 };
 FUNC VOID DIA_Nadja_Poppen_Start()
 {
@@ -343,7 +343,7 @@ instance DIA_Nadja_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Nadja_BUYHERB_Condition;
 	information	 = 	DIA_Nadja_BUYHERB_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Могу я здесь купить травки?";
+	description	 = 	"РњРѕРіСѓ СЏ Р·РґРµСЃСЊ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?";
 };
 func int DIA_Nadja_BUYHERB_Condition ()
 {	
@@ -359,20 +359,20 @@ func void DIA_Nadja_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Nadja_BUYHERB_15_00"); //Могу я здесь купить травки?
+	AI_Output (other, self, "DIA_Nadja_BUYHERB_15_00"); //РњРѕРіСѓ СЏ Р·РґРµСЃСЊ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?
 	
 	if  (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 500) 
 	{	
 		if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 		{
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_01"); //Откуда мне знать? Да и если бы знала, все равно не сказала бы городскому стражнику.
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_01"); //РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ? Р”Р° Рё РµСЃР»Рё Р±С‹ Р·РЅР°Р»Р°, РІСЃРµ СЂР°РІРЅРѕ РЅРµ СЃРєР°Р·Р°Р»Р° Р±С‹ РіРѕСЂРѕРґСЃРєРѕРјСѓ СЃС‚СЂР°Р¶РЅРёРєСѓ.
 			Undercover_Failed = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_02"); //Заплати несколько золотых, и я скажу, где ее достать.
-			AI_Output (other, self, "DIA_Nadja_BUYHERB_15_03"); //Сколько ты хочешь?
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_04"); //50 золотых будет достаточно.
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_02"); //Р—Р°РїР»Р°С‚Рё РЅРµСЃРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚С‹С…, Рё СЏ СЃРєР°Р¶Сѓ, РіРґРµ РµРµ РґРѕСЃС‚Р°С‚СЊ.
+			AI_Output (other, self, "DIA_Nadja_BUYHERB_15_03"); //РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_04"); //50 Р·РѕР»РѕС‚С‹С… Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 			Nadja_Money = TRUE;
 		};
 	}
@@ -391,7 +391,7 @@ instance DIA_Nadja_WANT_HERB		(C_INFO)
 	condition	 = 	DIA_Nadja_WANT_HERB_Condition;
 	information	 = 	DIA_Nadja_WANT_HERB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"А теперь скажи мне, где можно купить травки (заплатить 50 золотых).";
+	description	 = 	"Рђ С‚РµРїРµСЂСЊ СЃРєР°Р¶Рё РјРЅРµ, РіРґРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё (Р·Р°РїР»Р°С‚РёС‚СЊ 50 Р·РѕР»РѕС‚С‹С…).";
 };
 func int DIA_Nadja_WANT_HERB_Condition ()
 {	
@@ -405,16 +405,16 @@ func int DIA_Nadja_WANT_HERB_Condition ()
 func void DIA_Nadja_WANT_HERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
-	AI_Output (other, self, "DIA_Nadja_WANT_HERB_15_00"); //А теперь скажи мне, где можно купить травки.
+	AI_Output (other, self, "DIA_Nadja_WANT_HERB_15_00"); //Рђ С‚РµРїРµСЂСЊ СЃРєР°Р¶Рё РјРЅРµ, РіРґРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё.
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_01"); //Извини, я забыла.
+		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_01"); //РР·РІРёРЅРё, СЏ Р·Р°Р±С‹Р»Р°.
 	}
 	else
 	{
 		B_GiveInvItems	(other, self, ItMi_Gold, 50); 
-		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_02"); //Поговори с Боркой, детка. У него найдется травка для тебя.
+		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_02"); //РџРѕРіРѕРІРѕСЂРё СЃ Р‘РѕСЂРєРѕР№, РґРµС‚РєР°. РЈ РЅРµРіРѕ РЅР°Р№РґРµС‚СЃСЏ С‚СЂР°РІРєР° РґР»СЏ С‚РµР±СЏ.
 		Knows_Borka_Dealer = TRUE;
 	};
 };

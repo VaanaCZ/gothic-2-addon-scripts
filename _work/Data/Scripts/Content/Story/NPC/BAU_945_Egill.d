@@ -3,7 +3,7 @@
 instance BAU_945_Egill (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "›„ËÎÎ";
+	name 		= "–≠–≥–∏–ª–ª";
 	guild 		= GIL_OUT;
 	id 			= 945;
 	voice 		= 8;
@@ -31,8 +31,8 @@ instance BAU_945_Egill (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 40); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 40); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_945;

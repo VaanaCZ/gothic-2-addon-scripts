@@ -2,7 +2,7 @@
 instance VLK_4152_Olav (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "ŒÎ‡‚"; 
+	name 		= "–û–ª–∞–≤"; 
 	guild 		= GIL_MIL;
 	id 			= 4152;
 	voice 		= 4;

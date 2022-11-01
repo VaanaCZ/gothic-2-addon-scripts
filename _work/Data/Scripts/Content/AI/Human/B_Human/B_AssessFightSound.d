@@ -52,21 +52,21 @@ func void B_AssessFightSound ()
 		return;
 	};
 		
-	// ------- Burgzinnenwachen sollen sich nicht zu Tode stürzen, etc. ------
+	// ------- Burgzinnenwachen sollen sich nicht zu Tode stÑŒrzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	&& (Npc_GetHeightToNpc(self, victim) > PERC_DIST_HEIGHT)
 	{
 		return;
 	};
 	
-	// ------ im KLOSTER: wenn Höhenunterschied zu groß -------
+	// ------ im KLOSTER: wenn HÑ†henunterschied zu groÐ¯ -------
 	if (Npc_GetHeightToNpc (self, other) > 500)
 	&& (Npc_GetDistToWP (self, "NW_MONASTERY_PLACE_04") <= 3000)
 	{
 		return;
 	};
 	
-	// ------ FightSound wird NUR bei anderen NSCs (nicht self) berücksichtigt ------
+	// ------ FightSound wird NUR bei anderen NSCs (nicht self) berÑŒcksichtigt ------
 	if (Hlp_GetInstanceID(victim) == Hlp_GetInstanceID(self))
 	|| (Hlp_GetInstanceID(other) == Hlp_GetInstanceID(self))
 	{
@@ -100,14 +100,14 @@ func void B_AssessFightSound ()
 		return;
 	};
 	
-	// ------ Täter UND Opfer BEIDE Monster ------
+	// ------ TÐ´ter UND Opfer BEIDE Monster ------
 	if (other.guild > GIL_SEPERATOR_HUM)
 	&& (victim.guild > GIL_SEPERATOR_HUM)
 	{
 		return;
 	};
 	
-	// ------ Täter Monster (Opfer Human wegen oberer Abfrage) ------
+	// ------ TÐ´ter Monster (Opfer Human wegen oberer Abfrage) ------
 	if (other.guild > GIL_SEPERATOR_HUM)
 	&& (Npc_GetAttitude (self, victim) != ATT_HOSTILE)
 	{
@@ -115,7 +115,7 @@ func void B_AssessFightSound ()
 		return;
 	};
 	
-	// ------ Opfer Monster (Täter Human wegen oberer Abfrage) ------
+	// ------ Opfer Monster (TÐ´ter Human wegen oberer Abfrage) ------
 	if (victim.guild > GIL_SEPERATOR_HUM)
 	&& (Npc_GetAttitude (self, other) != ATT_HOSTILE)
 	&& (!Npc_IsDead(victim))
@@ -147,15 +147,15 @@ func void B_AssessFightSound ()
 	
 	
 	// ---------------------------------------------
-	// IM FOLGENDEN sind Täter und Opfer BEIDE Human
+	// IM FOLGENDEN sind TÐ´ter und Opfer BEIDE Human
 	// ---------------------------------------------
 	
 	// --------------------------- 
 	// WAS ist ein FakeBanditDuel?
 	// ---------------------------
-	// --> Player wird als Bandit ANGESEHEN und kämpf gegen Bandit
-	// ACHTUNG: Player muß nicht nur Banditenrüstung anhaben, 
-	// sondern muß auch vom NPC 'self' als Bandit ANGESEHEN werden
+	// --> Player wird als Bandit ANGESEHEN und kÐ´mpf gegen Bandit
+	// ACHTUNG: Player muÐ¯ nicht nur BanditenrÑŒstung anhaben, 
+	// sondern muÐ¯ auch vom NPC 'self' als Bandit ANGESEHEN werden
 	// (siehe C_PlayerIsFakeBandit)
 	
 	if ( (C_PlayerIsFakeBandit(self,other) == TRUE) || (C_PlayerIsFakeBandit(self,victim) == TRUE) )
@@ -176,7 +176,7 @@ func void B_AssessFightSound ()
 				return;
 			};
 			
-			// ------ FakeBandit-Player ist Täter ------
+			// ------ FakeBandit-Player ist TÐ´ter ------
 			if (self.aivar[AIV_STORYBANDIT_ESTEBAN] == TRUE)
 			&& (victim.aivar[AIV_STORYBANDIT_ESTEBAN] == TRUE)
 			{
@@ -212,7 +212,7 @@ func void B_AssessFightSound ()
 	};
 	
 	// ----------------------------------------------------------------
-	// ------ Wachen kommen zum Töten (helfen other) ------------------
+	// ------ Wachen kommen zum TÑ†ten (helfen other) ------------------
 	// ----------------------------------------------------------------
 	if ( (other.aivar[AIV_ATTACKREASON] == AR_GuardStopsIntruder) 
 	   ||(other.aivar[AIV_ATTACKREASON] == AR_MonsterCloseToGate)
@@ -248,7 +248,7 @@ func void B_AssessFightSound ()
 	   )
 	&& (Npc_GetAttitude(self,other)==ATT_FRIENDLY)
 	{
-		// ------ Pack schlägt sich, Pack verträgt sich -------
+		// ------ Pack schlÐ´gt sich, Pack vertrÐ´gt sich -------
 		if ( (other.guild == GIL_SLD) || (other.guild == GIL_DJG) || (other.guild == GIL_NONE) )
 		&& ( (victim.guild == GIL_SLD) || (victim.guild == GIL_DJG) || (victim.guild == GIL_NONE) )
 		{
@@ -276,7 +276,7 @@ func void B_AssessFightSound ()
 	   )
 	&& (Npc_GetAttitude(self,victim)==ATT_FRIENDLY)
 	{
-		// ------ Pack schlägt sich, Pack verträgt sich -------
+		// ------ Pack schlÐ´gt sich, Pack vertrÐ´gt sich -------
 		if ( (other.guild == GIL_SLD) || (other.guild == GIL_DJG) || (other.guild == GIL_NONE) )
 		&& ( (victim.guild == GIL_SLD) || (victim.guild == GIL_DJG) || (victim.guild == GIL_NONE) )
 		{
@@ -302,7 +302,7 @@ func void B_AssessFightSound ()
 	// ------------------------------------------------------------------
 	if ((other.aivar[AIV_ATTACKREASON] == AR_NONE) || (other.aivar[AIV_ATTACKREASON] == AR_KILL))
 	&& ((victim.aivar[AIV_ATTACKREASON] == AR_NONE) || (victim.aivar[AIV_ATTACKREASON] == AR_KILL))
-	&& (self.guild == GIL_MIL)						//(!) NUR Miliz-Wache schlichtet diese Art Kämpfe
+	&& (self.guild == GIL_MIL)						//(!) NUR Miliz-Wache schlichtet diese Art KÐ´mpfe
 	{
 		// ------ Freund helfen (other) ------
 		if (Npc_GetAttitude(self, other) == ATT_FRIENDLY)
@@ -334,7 +334,7 @@ func void B_AssessFightSound ()
 				B_Attack (self, other, AR_GuardStopsFight, 0);
 				return;
 			}
-			else //beides keine Player -> Auf jeden Fall Täter angreifen!
+			else //beides keine Player -> Auf jeden Fall TÐ´ter angreifen!
 			{
 				B_Attack (self, other, AR_GuardStopsFight, 0);
 				return;
@@ -392,7 +392,7 @@ func void B_AssessFightSound ()
 	
 	// --------------------------------------------------------------------------
 		
-	// ------ NUR in Watchfight gehen, wenn näher als 10m ------ (wichtig z.B. für GIL_OUT)
+	// ------ NUR in Watchfight gehen, wenn nÐ´her als 10m ------ (wichtig z.B. fÑŒr GIL_OUT)
 	if (Npc_GetDistToNpc (self, other) > PERC_DIST_INTERMEDIAT)
 	&& (Npc_GetDistToNpc (self, victim) > PERC_DIST_INTERMEDIAT)
 	{

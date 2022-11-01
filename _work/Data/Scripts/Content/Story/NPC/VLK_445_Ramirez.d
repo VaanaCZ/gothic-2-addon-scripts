@@ -2,7 +2,7 @@
 instance VLK_445_Ramirez (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Рамирез"; 
+	name 		= "Р Р°РјРёСЂРµР·"; 
 	guild 		= GIL_OUT;
 	id 			= 445;
 	voice 		= 14;

@@ -29,7 +29,7 @@ instance DIA_Pal_212_Schiffswache_WERSEIDIHR		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WERSEIDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Кто вы?
-	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Мы эмиссары короля Робара и слуги Инноса. Также нас еще называют паладинами.
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //РљС‚Рѕ РІС‹?
+	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //РњС‹ СЌРјРёСЃСЃР°СЂС‹ РєРѕСЂРѕР»СЏ Р РѕР±Р°СЂР° Рё СЃР»СѓРіРё РРЅРЅРѕСЃР°. РўР°РєР¶Рµ РЅР°СЃ РµС‰Рµ РЅР°Р·С‹РІР°СЋС‚ РїР°Р»Р°РґРёРЅР°РјРё.
 };
 
 
@@ -56,7 +56,7 @@ instance DIA_Pal_212_Schiffswache_WASMACHSTDU2		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
@@ -66,22 +66,22 @@ func int DIA_Pal_212_Schiffswache_WASMACHSTDU2_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //Что вы делаете здесь?
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_15_00"); //Р§С‚Рѕ РІС‹ РґРµР»Р°РµС‚Рµ Р·РґРµСЃСЊ?
 
 	if (MIS_ShipIsFree == FALSE)
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Тебе не попасть на этот корабль. Это все, что тебе нужно знать.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //РўРµР±Рµ РЅРµ РїРѕРїР°СЃС‚СЊ РЅР° СЌС‚РѕС‚ РєРѕСЂР°Р±Р»СЊ. Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Мы стоим здесь на страже. Никто не может взойти на этот корабль. Ты в том числе. Извини.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //РњС‹ СЃС‚РѕРёРј Р·РґРµСЃСЊ РЅР° СЃС‚СЂР°Р¶Рµ. РќРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РІР·РѕР№С‚Рё РЅР° СЌС‚РѕС‚ РєРѕСЂР°Р±Р»СЊ. РўС‹ РІ С‚РѕРј С‡РёСЃР»Рµ. РР·РІРёРЅРё.
 		};
 	}
 	else
 	{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Из-за таких, как ты, мне приходится тратить мое время попусту. Я бы уж лучше отправился с нашими братьями в Долину Рудников.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //РР·-Р·Р° С‚Р°РєРёС…, РєР°Рє С‚С‹, РјРЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ С‚СЂР°С‚РёС‚СЊ РјРѕРµ РІСЂРµРјСЏ РїРѕРїСѓСЃС‚Сѓ. РЇ Р±С‹ СѓР¶ Р»СѓС‡С€Рµ РѕС‚РїСЂР°РІРёР»СЃСЏ СЃ РЅР°С€РёРјРё Р±СЂР°С‚СЊСЏРјРё РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 	};
 	AI_StopProcessInfos (self);
 };

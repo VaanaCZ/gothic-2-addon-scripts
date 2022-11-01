@@ -2,7 +2,7 @@
 INSTANCE NOV_600_Pedro_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Педро";
+	name 		= "РџРµРґСЂРѕ";
 	guild 		= GIL_NONE;
 	id 			= 6000;
 	voice 		= 9;

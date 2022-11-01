@@ -6,7 +6,7 @@ func int C_IsUsedMobMyPossession(var C_NPC slf, var C_NPC oth)
 {
 	// FUNC
 
-	// ------ Persönliches Besitzflag ------
+	// ------ PersÑ†nliches Besitzflag ------
 	if (Npc_IsDetectedMobOwnedByNpc(other, self)) 
 	{
 		return TRUE;

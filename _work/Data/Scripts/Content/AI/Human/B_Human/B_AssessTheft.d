@@ -2,7 +2,7 @@
 // B_AssessTheft
 // -------------
 // wird durch Wahrnehmung PERC_ASSESSTHEFT angesprungen
-// wir von ÜBERALL her aufgerufen (auch aus ZS_Attack)
+// wir von Ð¬BERALL her aufgerufen (auch aus ZS_Attack)
 // Wenn SC/NSC irgendein Item aufhebt in PERC_DIST_INTERMEDIAT
 // ***********************************************************
 
@@ -29,7 +29,7 @@ func void B_AssessTheft ()
 		if (Hlp_IsValidItem(item)) 
 		&& (Npc_OwnedByNpc(item, self))
 		{
-			//weiter (kein Abbruch bei persönlichem Besitz)
+			//weiter (kein Abbruch bei persÑ†nlichem Besitz)
 		}
 		else
 		{
@@ -37,7 +37,7 @@ func void B_AssessTheft ()
 		};		
 	};
 
-	// ------ Item gehörte mir nicht ------
+	// ------ Item gehÑ†rte mir nicht ------
 	if (!C_IsTakenItemMyPossession (self, other, item))
 	{
 		return;

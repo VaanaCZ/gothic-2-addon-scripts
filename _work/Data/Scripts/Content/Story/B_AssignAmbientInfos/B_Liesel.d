@@ -30,7 +30,7 @@ INSTANCE DIA_Liesel_Hallo (C_INFO)
 	condition	= DIA_Liesel_Hallo_Condition;
 	information	= DIA_Liesel_Hallo_Info;
 	permanent	= FALSE;
-	description = "Привет!"; 
+	description = "РџСЂРёРІРµС‚!"; 
 };                       
 FUNC INT DIA_Liesel_Hallo_Condition()
 {
@@ -38,7 +38,7 @@ FUNC INT DIA_Liesel_Hallo_Condition()
 };
 FUNC VOID DIA_Liesel_Hallo_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_Hallo_15_00"); //Здравствуй... (прочищает горло) овечка.
+	AI_Output (other, self,"DIA_Liesel_Hallo_15_00"); //Р—РґСЂР°РІСЃС‚РІСѓР№... (РїСЂРѕС‡РёС‰Р°РµС‚ РіРѕСЂР»Рѕ) РѕРІРµС‡РєР°.
 	B_LieselMaeh ();
 };
 // ************************************************************
@@ -51,7 +51,7 @@ INSTANCE DIA_Liesel_KommMit (C_INFO)
 	condition	= DIA_Liesel_KommMit_Condition;
 	information	= DIA_Liesel_KommMit_Info;
 	permanent	= TRUE;
-	description = "Пойдем со мной!"; 
+	description = "РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№!"; 
 };                       
 FUNC INT DIA_Liesel_KommMit_Condition()
 {
@@ -65,7 +65,7 @@ FUNC INT DIA_Liesel_KommMit_Condition()
  
 FUNC VOID DIA_Liesel_KommMit_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_KommMit_15_00");	//Пойдем со мной!
+	AI_Output (other, self,"DIA_Liesel_KommMit_15_00");	//РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№!
 	B_LieselMaeh ();
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -82,7 +82,7 @@ INSTANCE DIA_Liesel_WarteHier (C_INFO)
 	condition	= DIA_Liesel_WarteHier_Condition;
 	information	= DIA_Liesel_WarteHier_Info;
 	permanent	= TRUE;
-	description = "Подожди здесь!";
+	description = "РџРѕРґРѕР¶РґРё Р·РґРµСЃСЊ!";
 };                       
 FUNC INT DIA_Liesel_WarteHier_Condition()
 {
@@ -95,7 +95,7 @@ FUNC INT DIA_Liesel_WarteHier_Condition()
 };
 FUNC VOID DIA_Liesel_WarteHier_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_WarteHier_15_00");	//Подожди здесь!
+	AI_Output (other, self,"DIA_Liesel_WarteHier_15_00");	//РџРѕРґРѕР¶РґРё Р·РґРµСЃСЊ!
 	B_LieselMaeh ();
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

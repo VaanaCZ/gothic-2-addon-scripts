@@ -2,7 +2,7 @@
 instance VLK_441_Garvell (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Γΰπβελλ"; 
+	name 		= "Π“Π°Ρ€Π²ΠµΠ»Π»"; 
 	guild 		= GIL_VLK;
 	id 			= 441;
 	voice 		= 4;

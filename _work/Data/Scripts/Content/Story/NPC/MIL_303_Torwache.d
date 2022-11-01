@@ -2,7 +2,7 @@
 instance Mil_303_Torwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Стражник у двери";	
+	name 		= "РЎС‚СЂР°Р¶РЅРёРє Сѓ РґРІРµСЂРё";	
 	guild 		= GIL_MIL;
 	id 			= 303;
 	voice 		= 7;

@@ -2,7 +2,7 @@
 // ZS_WatchFight
 // -------------
 // Nicht-Polizei-NSCs(!) beobachten Kampf zwischen zwei Humans
-// (beide NICHT hostile zu self, sonst würden sie angegriffen)
+// (beide NICHT hostile zu self, sonst wÑŒrden sie angegriffen)
 // ***********************************************************
 
 
@@ -30,7 +30,7 @@ func void B_CheerFight ()						//wird nur hier (lokal) benutzt
 	{
 		var int zufall; 	zufall = Hlp_Random (3);
 		
-		// ------ Opfer ist mein Freund, Täter NICHT ------
+		// ------ Opfer ist mein Freund, TÐ´ter NICHT ------
 		if (Npc_GetAttitude (self, victim) == ATT_FRIENDLY)
 		&& (Npc_GetAttitude (self, other) != ATT_FRIENDLY)
 		{
@@ -41,8 +41,8 @@ func void B_CheerFight ()						//wird nur hier (lokal) benutzt
 			AI_PlayAni		(self, "T_WATCHFIGHT_OHNO");
 		}
 		
-		// ------ Täter ist mein Freund, Opfer NICHT ------
-		// ----- Täter und Opfer sind BEIDE Freunde -ODER- beide KEINE Freunde von mir ------
+		// ------ TÐ´ter ist mein Freund, Opfer NICHT ------
+		// ----- TÐ´ter und Opfer sind BEIDE Freunde -ODER- beide KEINE Freunde von mir ------
 		else 
 		{
 			if (zufall == 0) {	B_Say_Overlay	(self, self, "$CHEERFRIEND01");	};
@@ -83,7 +83,7 @@ func void B_AssessDefeat()
 		}
 		// -----------------------------------------------
 		
-		else //Bei AR_NONE gibt's kein Petzen und auch keine Bestürzung!
+		else //Bei AR_NONE gibt's kein Petzen und auch keine BestÑŒrzung!
 		{
 			B_Say (self, other, "$NOTBAD");
 		};
@@ -114,7 +114,7 @@ func void ZS_WatchFight ()
 	// ------ Kommentar zum Kampfbeginn ------
 	if ( (Npc_GetDistToNpc(self,other)<PERC_DIST_INTERMEDIAT) || (Npc_GetDistToNpc(self,victim)<PERC_DIST_INTERMEDIAT) )
 	&& (!Npc_IsInState(other,ZS_Unconscious)) 
-	&& (!Npc_IsInState(victim,ZS_Unconscious)) //ZS_Watchfight kann aufgerufen werden, wenn der ERSTE Schag den Gegner niederstreckt ODER u.U. NOCHMAL aufgerufen werden, wenn eine Combo auf einen bewußtlos werdenden Typen niederprasselt
+	&& (!Npc_IsInState(victim,ZS_Unconscious)) //ZS_Watchfight kann aufgerufen werden, wenn der ERSTE Schag den Gegner niederstreckt ODER u.U. NOCHMAL aufgerufen werden, wenn eine Combo auf einen bewuÐ¯tlos werdenden Typen niederprasselt
 	&& ( (other.guild < GIL_SEPERATOR_HUM) && (victim.guild < GIL_SEPERATOR_HUM) )
 	{
 		if (C_NpcIsToughGuy(self))
@@ -137,7 +137,7 @@ func int ZS_WatchFight_Loop ()
 	// EXIT LOOP IF...
 	
 	// ------ PERC_ASSESSMURDER springt aus Loop ------
-	// wenn nicht vorher die Abfrage unten (Es wird nicht mehr gekämpft) aus der Loop aussteigt
+	// wenn nicht vorher die Abfrage unten (Es wird nicht mehr gekÐ´mpft) aus der Loop aussteigt
 	// dann greift aber im Folge-ZS die Assess-Murder-Wahrnehmung
 	// hier ist nicht klar, ob die AssessMurder Wahrnehmung VOR der besagten Abfrage (unten) behandelt wird
 	
@@ -152,7 +152,7 @@ func int ZS_WatchFight_Loop ()
 		return LOOP_END;
 	};
 	
-	// ------ Es wird nicht mehr gekämpft (alle Fälle ausser Unconscious und Murder) ------
+	// ------ Es wird nicht mehr gekÐ´mpft (alle FÐ´lle ausser Unconscious und Murder) ------
 	if ( !( Npc_IsInState(other, ZS_Attack)  || Npc_IsInState(other, ZS_ReactToDamage)  ) )
 	&& ( !( Npc_IsInState(victim, ZS_Attack) || Npc_IsInState(victim, ZS_ReactToDamage) ) )
 	&& (Npc_GetStateTime (self) > 0) //erst dem angegriffen NSC 1 Sekunde Zeit geben, in ZS_Attack zu kommen
@@ -189,7 +189,7 @@ func int ZS_WatchFight_Loop ()
 		//AI_PlayAni	(self, "T_STAND_2_WATCHFIGHT");
 	};
 		
-	// ------ Wenn ich zu nah dran bin, zurückweichen ------
+	// ------ Wenn ich zu nah dran bin, zurÑŒckweichen ------
 	if (Npc_GetDistToNpc(self, other)  <= WATCHFIGHT_DIST_MIN)
 	|| (Npc_GetDistToNpc(self, victim) <= WATCHFIGHT_DIST_MIN)
 	{
@@ -197,11 +197,11 @@ func int ZS_WatchFight_Loop ()
 		
 		if (Npc_GetDistToNpc(self, other) <= Npc_GetDistToNpc(self, victim))
 		{
-			B_TurnToNpc (self, victim); //zurückweichen vor dem ANDEREN, der weiter weg ist (verdreht)
+			B_TurnToNpc (self, victim); //zurÑŒckweichen vor dem ANDEREN, der weiter weg ist (verdreht)
 		}
 		else
 		{
-			B_TurnToNpc (self, other); //zurückweichen vor dem ANDEREN, der weiter weg ist (verdreht)
+			B_TurnToNpc (self, other); //zurÑŒckweichen vor dem ANDEREN, der weiter weg ist (verdreht)
 		};
 		
 		AI_Dodge		(self);

@@ -2,7 +2,7 @@
 instance Mil_335_Rumbold (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Румболд";	
+	name 		= "Р СѓРјР±РѕР»Рґ";	
 	guild 		= GIL_NONE;	
 	id 			= 335;
 	voice 		= 10;

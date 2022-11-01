@@ -1,7 +1,7 @@
 instance BDT_1098_Addon_Snaf (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "—Ì‡Ù";
+	name 		= "–°–Ω–∞—Ñ";
 	guild 		= GIL_BDT;
 	id 			= 1098;
 	voice 		= 1;

@@ -52,12 +52,12 @@ func void DIA_Addon_Gaan_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Gaan_MeetingIsRunning_One_time == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_00"); //Приятно видеть среди нас новое лицо. Добро пожаловать в 'Кольцо Воды'.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_00"); //РџСЂРёСЏС‚РЅРѕ РІРёРґРµС‚СЊ СЃСЂРµРґРё РЅР°СЃ РЅРѕРІРѕРµ Р»РёС†Рѕ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ 'РљРѕР»СЊС†Рѕ Р’РѕРґС‹'.
 		DIA_Addon_Gaan_MeetingIsRunning_One_time = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_01"); //Тебя хочет видеть Ватрас. Отправляйся к нему.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_01"); //РўРµР±СЏ С…РѕС‡РµС‚ РІРёРґРµС‚СЊ Р’Р°С‚СЂР°СЃ. РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЅРµРјСѓ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -72,7 +72,7 @@ instance DIA_Gaan_HALLO		(C_INFO)
 	condition	 = 	DIA_Gaan_HALLO_Condition;
 	information	 = 	DIA_Gaan_HALLO_Info;
 
-	description	 = 	"У тебя здесь просторно.";
+	description	 = 	"РЈ С‚РµР±СЏ Р·РґРµСЃСЊ РїСЂРѕСЃС‚РѕСЂРЅРѕ.";
 };
 
 func int DIA_Gaan_HALLO_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Gaan_HALLO_Condition ()
 
 func void DIA_Gaan_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_HALLO_15_00"); //У тебя здесь просторно.
-	AI_Output			(self, other, "DIA_Gaan_HALLO_03_01"); //Да, мне здесь нравится. Но если ты пойдешь по вон тому проходу, ты можешь переменить свое мнение.
-	AI_Output			(self, other, "DIA_Gaan_HALLO_03_02"); //Если этот клочок земли произвел впечатление на тебя, значит, ты еще не видел Долины Рудников.
+	AI_Output			(other, self, "DIA_Gaan_HALLO_15_00"); //РЈ С‚РµР±СЏ Р·РґРµСЃСЊ РїСЂРѕСЃС‚РѕСЂРЅРѕ.
+	AI_Output			(self, other, "DIA_Gaan_HALLO_03_01"); //Р”Р°, РјРЅРµ Р·РґРµСЃСЊ РЅСЂР°РІРёС‚СЃСЏ. РќРѕ РµСЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ РїРѕ РІРѕРЅ С‚РѕРјСѓ РїСЂРѕС…РѕРґСѓ, С‚С‹ РјРѕР¶РµС€СЊ РїРµСЂРµРјРµРЅРёС‚СЊ СЃРІРѕРµ РјРЅРµРЅРёРµ.
+	AI_Output			(self, other, "DIA_Gaan_HALLO_03_02"); //Р•СЃР»Рё СЌС‚РѕС‚ РєР»РѕС‡РѕРє Р·РµРјР»Рё РїСЂРѕРёР·РІРµР» РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° С‚РµР±СЏ, Р·РЅР°С‡РёС‚, С‚С‹ РµС‰Рµ РЅРµ РІРёРґРµР» Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ.
 
 };
 
@@ -100,7 +100,7 @@ instance DIA_Gaan_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Gaan_WASMACHSTDU_Condition;
 	information	 = 	DIA_Gaan_WASMACHSTDU_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Gaan_WASMACHSTDU_Condition ()
@@ -115,9 +115,9 @@ func int DIA_Gaan_WASMACHSTDU_Condition ()
 
 func void DIA_Gaan_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WASMACHSTDU_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_01"); //Меня зовут Гаан. Я охотник и работаю на Бенгара, фермера, владеющего этими высокогорными пастбищами.
-	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_02"); //Я провожу большую часть времени на природе, греясь на солнце.
+	AI_Output			(other, self, "DIA_Gaan_WASMACHSTDU_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р“Р°Р°РЅ. РЇ РѕС…РѕС‚РЅРёРє Рё СЂР°Р±РѕС‚Р°СЋ РЅР° Р‘РµРЅРіР°СЂР°, С„РµСЂРјРµСЂР°, РІР»Р°РґРµСЋС‰РµРіРѕ СЌС‚РёРјРё РІС‹СЃРѕРєРѕРіРѕСЂРЅС‹РјРё РїР°СЃС‚Р±РёС‰Р°РјРё.
+	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_02"); //РЇ РїСЂРѕРІРѕР¶Сѓ Р±РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ РІСЂРµРјРµРЅРё РЅР° РїСЂРёСЂРѕРґРµ, РіСЂРµСЏСЃСЊ РЅР° СЃРѕР»РЅС†Рµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -130,7 +130,7 @@ instance DIA_Addon_Gaan_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_Ranger_Condition;
 	information	 = 	DIA_Addon_Gaan_Ranger_Info;
 
-	description	 = 	"Почему у тебя такой подозрительный взгляд?";
+	description	 = 	"РџРѕС‡РµРјСѓ Сѓ С‚РµР±СЏ С‚Р°РєРѕР№ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅС‹Р№ РІР·РіР»СЏРґ?";
 };
 
 func int DIA_Addon_Gaan_Ranger_Condition ()
@@ -145,10 +145,10 @@ func int DIA_Addon_Gaan_Ranger_Condition ()
 
 func void DIA_Addon_Gaan_Ranger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_00"); //Почему у тебя такой подозрительный взгляд?
-	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_01"); //Ты носишь наше аквамариновое кольцо.
-	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_02"); //Ты принадлежишь к Кольцу Воды?
-	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_03"); //Именно так. Приятно видеть в наших рядах нового человека.
+	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_00"); //РџРѕС‡РµРјСѓ Сѓ С‚РµР±СЏ С‚Р°РєРѕР№ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅС‹Р№ РІР·РіР»СЏРґ?
+	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_01"); //РўС‹ РЅРѕСЃРёС€СЊ РЅР°С€Рµ Р°РєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ.
+	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_02"); //РўС‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹?
+	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_03"); //РРјРµРЅРЅРѕ С‚Р°Рє. РџСЂРёСЏС‚РЅРѕ РІРёРґРµС‚СЊ РІ РЅР°С€РёС… СЂСЏРґР°С… РЅРѕРІРѕРіРѕ С‡РµР»РѕРІРµРєР°.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -162,7 +162,7 @@ instance DIA_Addon_Gaan_AufgabeBeimRing		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_AufgabeBeimRing_Condition;
 	information	 = 	DIA_Addon_Gaan_AufgabeBeimRing_Info;
 
-	description	 = 	"В чем заключаются твои обязанности в этом обществе?";
+	description	 = 	"Р’ С‡РµРј Р·Р°РєР»СЋС‡Р°СЋС‚СЃСЏ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РІ СЌС‚РѕРј РѕР±С‰РµСЃС‚РІРµ?";
 };
 
 func int DIA_Addon_Gaan_AufgabeBeimRing_Condition ()
@@ -177,9 +177,9 @@ func int DIA_Addon_Gaan_AufgabeBeimRing_Condition ()
 
 func void DIA_Addon_Gaan_AufgabeBeimRing_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_AufgabeBeimRing_15_00"); //В чем заключаются твои обязанности в этом обществе?
-	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_01"); //Я наблюдаю за проходом и сообщаю, кто приходит и кто уходит.
-	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_02"); //Впрочем, с тех пор как паладины приказали закрыть ворота прохода, людей здесь немного.
+	AI_Output	(other, self, "DIA_Addon_Gaan_AufgabeBeimRing_15_00"); //Р’ С‡РµРј Р·Р°РєР»СЋС‡Р°СЋС‚СЃСЏ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РІ СЌС‚РѕРј РѕР±С‰РµСЃС‚РІРµ?
+	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_01"); //РЇ РЅР°Р±Р»СЋРґР°СЋ Р·Р° РїСЂРѕС…РѕРґРѕРј Рё СЃРѕРѕР±С‰Р°СЋ, РєС‚Рѕ РїСЂРёС…РѕРґРёС‚ Рё РєС‚Рѕ СѓС…РѕРґРёС‚.
+	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_02"); //Р’РїСЂРѕС‡РµРј, СЃ С‚РµС… РїРѕСЂ РєР°Рє РїР°Р»Р°РґРёРЅС‹ РїСЂРёРєР°Р·Р°Р»Рё Р·Р°РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р° РїСЂРѕС…РѕРґР°, Р»СЋРґРµР№ Р·РґРµСЃСЊ РЅРµРјРЅРѕРіРѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ instance DIA_Addon_Gaan_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Gaan_MissingPeople_Info;
 
-	description	 = 	"Ты слышал о пропавших людях?";
+	description	 = 	"РўС‹ СЃР»С‹С€Р°Р» Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?";
 };
 
 func int DIA_Addon_Gaan_MissingPeople_Condition ()
@@ -206,9 +206,9 @@ func int DIA_Addon_Gaan_MissingPeople_Condition ()
 
 func void DIA_Addon_Gaan_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_MissingPeople_15_00"); //Ты слышал о пропавших людях?
-	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_01"); //Конечно, слышал. Именно поэтому нам всем надо быть осторожнее.
-	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_02"); //Но я не знаю ничего такого, что могло бы тебе помочь.
+	AI_Output	(other, self, "DIA_Addon_Gaan_MissingPeople_15_00"); //РўС‹ СЃР»С‹С€Р°Р» Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС…?
+	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_01"); //РљРѕРЅРµС‡РЅРѕ, СЃР»С‹С€Р°Р». РРјРµРЅРЅРѕ РїРѕСЌС‚РѕРјСѓ РЅР°Рј РІСЃРµРј РЅР°РґРѕ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ.
+	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_02"); //РќРѕ СЏ РЅРµ Р·РЅР°СЋ РЅРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ, С‡С‚Рѕ РјРѕРіР»Рѕ Р±С‹ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -221,7 +221,7 @@ instance DIA_Gaan_WALD		(C_INFO)
 	condition	 = 	DIA_Gaan_WALD_Condition;
 	information	 = 	DIA_Gaan_WALD_Info;
 
-	description	 = 	"Что мне нужно знать о Долине Рудников?";
+	description	 = 	"Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?";
 };
 
 func int DIA_Gaan_WALD_Condition ()
@@ -231,12 +231,12 @@ func int DIA_Gaan_WALD_Condition ()
 
 func void DIA_Gaan_WALD_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WALD_15_00"); //Что мне нужно знать о Долине Рудников?
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_01"); //Понятия не имею. Я видел эту долину только мельком. По мне, там слишком опасно.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_02"); //Лучше всего, если ты пойдешь туда по проходу, держаться протоптанной дорожки.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_03"); //Ты можешь пойти либо через большое ущелье, либо по дороге через каменный мост. Первый путь короче и безопаснее.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_04"); //Теперь, когда орки роятся повсюду, нужно быть очень осторожным.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_05"); //Мне совсем не хочется тащить тебя к ведьме-целительнице.
+	AI_Output			(other, self, "DIA_Gaan_WALD_15_00"); //Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РЇ РІРёРґРµР» СЌС‚Сѓ РґРѕР»РёРЅСѓ С‚РѕР»СЊРєРѕ РјРµР»СЊРєРѕРј. РџРѕ РјРЅРµ, С‚Р°Рј СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_02"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ, РµСЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ С‚СѓРґР° РїРѕ РїСЂРѕС…РѕРґСѓ, РґРµСЂР¶Р°С‚СЊСЃСЏ РїСЂРѕС‚РѕРїС‚Р°РЅРЅРѕР№ РґРѕСЂРѕР¶РєРё.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_03"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё Р»РёР±Рѕ С‡РµСЂРµР· Р±РѕР»СЊС€РѕРµ СѓС‰РµР»СЊРµ, Р»РёР±Рѕ РїРѕ РґРѕСЂРѕРіРµ С‡РµСЂРµР· РєР°РјРµРЅРЅС‹Р№ РјРѕСЃС‚. РџРµСЂРІС‹Р№ РїСѓС‚СЊ РєРѕСЂРѕС‡Рµ Рё Р±РµР·РѕРїР°СЃРЅРµРµ.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_04"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РѕСЂРєРё СЂРѕСЏС‚СЃСЏ РїРѕРІСЃСЋРґСѓ, РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РѕС‡РµРЅСЊ РѕСЃС‚РѕСЂРѕР¶РЅС‹Рј.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_05"); //РњРЅРµ СЃРѕРІСЃРµРј РЅРµ С…РѕС‡РµС‚СЃСЏ С‚Р°С‰РёС‚СЊ С‚РµР±СЏ Рє РІРµРґСЊРјРµ-С†РµР»РёС‚РµР»СЊРЅРёС†Рµ.
 
 };
 
@@ -250,7 +250,7 @@ instance DIA_Gaan_SAGITTA		(C_INFO)
 	condition	 = 	DIA_Gaan_SAGITTA_Condition;
 	information	 = 	DIA_Gaan_SAGITTA_Info;
 
-	description	 = 	"Ведьме-целительнице?";
+	description	 = 	"Р’РµРґСЊРјРµ-С†РµР»РёС‚РµР»СЊРЅРёС†Рµ?";
 };
 
 func int DIA_Gaan_SAGITTA_Condition ()
@@ -263,12 +263,12 @@ func int DIA_Gaan_SAGITTA_Condition ()
 
 func void DIA_Gaan_SAGITTA_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_SAGITTA_15_00"); //Ведьме-целительнице?
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_01"); //Ее зовут Сагитта. Она лечит фермеров и других людей, живущих вне города.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_02"); //Очень загадочная женщина.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_03"); //Никому не нравится ходить к ней, и все обожают распускать о ней сплетни.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_04"); //Но, если ты заболеешь, ты нигде не найдешь лучшей помощи, чем у Сагитты, на ее кухне, полной целебных трав.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_05"); //Ты найдешь ее в лесу за фермой Секоба.
+	AI_Output			(other, self, "DIA_Gaan_SAGITTA_15_00"); //Р’РµРґСЊРјРµ-С†РµР»РёС‚РµР»СЊРЅРёС†Рµ?
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_01"); //Р•Рµ Р·РѕРІСѓС‚ РЎР°РіРёС‚С‚Р°. РћРЅР° Р»РµС‡РёС‚ С„РµСЂРјРµСЂРѕРІ Рё РґСЂСѓРіРёС… Р»СЋРґРµР№, Р¶РёРІСѓС‰РёС… РІРЅРµ РіРѕСЂРѕРґР°.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_02"); //РћС‡РµРЅСЊ Р·Р°РіР°РґРѕС‡РЅР°СЏ Р¶РµРЅС‰РёРЅР°.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_03"); //РќРёРєРѕРјСѓ РЅРµ РЅСЂР°РІРёС‚СЃСЏ С…РѕРґРёС‚СЊ Рє РЅРµР№, Рё РІСЃРµ РѕР±РѕР¶Р°СЋС‚ СЂР°СЃРїСѓСЃРєР°С‚СЊ Рѕ РЅРµР№ СЃРїР»РµС‚РЅРё.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_04"); //РќРѕ, РµСЃР»Рё С‚С‹ Р·Р°Р±РѕР»РµРµС€СЊ, С‚С‹ РЅРёРіРґРµ РЅРµ РЅР°Р№РґРµС€СЊ Р»СѓС‡С€РµР№ РїРѕРјРѕС‰Рё, С‡РµРј Сѓ РЎР°РіРёС‚С‚С‹, РЅР° РµРµ РєСѓС…РЅРµ, РїРѕР»РЅРѕР№ С†РµР»РµР±РЅС‹С… С‚СЂР°РІ.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_05"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРµ РІ Р»РµСЃСѓ Р·Р° С„РµСЂРјРѕР№ РЎРµРєРѕР±Р°.
 
 };
 
@@ -282,7 +282,7 @@ instance DIA_Gaan_MONSTER		(C_INFO)
 	condition	 = 	DIA_Gaan_MONSTER_Condition;
 	information	 = 	DIA_Gaan_MONSTER_Info;
 
-	description	 = 	"А как выглядит этот опасный зверь?";
+	description	 = 	"Рђ РєР°Рє РІС‹РіР»СЏРґРёС‚ СЌС‚РѕС‚ РѕРїР°СЃРЅС‹Р№ Р·РІРµСЂСЊ?";
 };
 
 func int DIA_Gaan_MONSTER_Condition ()
@@ -298,9 +298,9 @@ func int DIA_Gaan_MONSTER_Condition ()
 
 func void DIA_Gaan_MONSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_MONSTER_15_00"); //А как выглядит этот опасный зверь?
-	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_01"); //Я точно не знаю. Я только слышал фырканье и скрежет когтей. Но видел, что он может сделать.
-	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_02"); //Даже волки боятся его. Этот зверь как-то оторвал одному волку голову.
+	AI_Output			(other, self, "DIA_Gaan_MONSTER_15_00"); //Рђ РєР°Рє РІС‹РіР»СЏРґРёС‚ СЌС‚РѕС‚ РѕРїР°СЃРЅС‹Р№ Р·РІРµСЂСЊ?
+	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_01"); //РЇ С‚РѕС‡РЅРѕ РЅРµ Р·РЅР°СЋ. РЇ С‚РѕР»СЊРєРѕ СЃР»С‹С€Р°Р» С„С‹СЂРєР°РЅСЊРµ Рё СЃРєСЂРµР¶РµС‚ РєРѕРіС‚РµР№. РќРѕ РІРёРґРµР», С‡С‚Рѕ РѕРЅ РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_02"); //Р”Р°Р¶Рµ РІРѕР»РєРё Р±РѕСЏС‚СЃСЏ РµРіРѕ. Р­С‚РѕС‚ Р·РІРµСЂСЊ РєР°Рє-С‚Рѕ РѕС‚РѕСЂРІР°Р» РѕРґРЅРѕРјСѓ РІРѕР»РєСѓ РіРѕР»РѕРІСѓ.
 
 };
 
@@ -314,7 +314,7 @@ instance DIA_Gaan_WASZAHLSTDU		(C_INFO)
 	condition	 = 	DIA_Gaan_WASZAHLSTDU_Condition;
 	information	 = 	DIA_Gaan_WASZAHLSTDU_Info;
 
-	description	 = 	"Сколько ты заплатишь, если я убью этого зверя для тебя?";
+	description	 = 	"РЎРєРѕР»СЊРєРѕ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ, РµСЃР»Рё СЏ СѓР±СЊСЋ СЌС‚РѕРіРѕ Р·РІРµСЂСЏ РґР»СЏ С‚РµР±СЏ?";
 };
 
 func int DIA_Gaan_WASZAHLSTDU_Condition ()
@@ -330,9 +330,9 @@ func int DIA_Gaan_WASZAHLSTDU_Condition ()
 
 func void DIA_Gaan_WASZAHLSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //Сколько ты заплатишь, если я убью этого зверя для тебя?
-	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //Я бы отдал тому, кто убьет этого зверя, все, что у меня есть.
-	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 Goldmьnzen? 
+	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ, РµСЃР»Рё СЏ СѓР±СЊСЋ СЌС‚РѕРіРѕ Р·РІРµСЂСЏ РґР»СЏ С‚РµР±СЏ?
+	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //РЇ Р±С‹ РѕС‚РґР°Р» С‚РѕРјСѓ, РєС‚Рѕ СѓР±СЊРµС‚ СЌС‚РѕРіРѕ Р·РІРµСЂСЏ, РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
+	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 GoldmСЊnzen? 
 	//Auskommentiert, weil "?" ist auch so gesprochen worden - kommt nicht gut
 	B_Say_Gold   (self,other,30);
 	MIS_Gaan_Deal = LOG_RUNNING;
@@ -348,7 +348,7 @@ instance DIA_Gaan_WOHERMONSTER		(C_INFO)
 	condition	 = 	DIA_Gaan_WOHERMONSTER_Condition;
 	information	 = 	DIA_Gaan_WOHERMONSTER_Info;
 
-	description	 = 	"Откуда пришел этот коварный зверь?";
+	description	 = 	"РћС‚РєСѓРґР° РїСЂРёС€РµР» СЌС‚РѕС‚ РєРѕРІР°СЂРЅС‹Р№ Р·РІРµСЂСЊ?";
 };
 
 func int DIA_Gaan_WOHERMONSTER_Condition ()
@@ -364,9 +364,9 @@ func int DIA_Gaan_WOHERMONSTER_Condition ()
 
 func void DIA_Gaan_WOHERMONSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WOHERMONSTER_15_00"); //Откуда пришел этот коварный зверь?
-	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_01"); //Откуда-то издалека. Может быть, из Долины Рудников. Но я не знаю точно.
-	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_02"); //Я никогда не был в Долине Рудников.
+	AI_Output			(other, self, "DIA_Gaan_WOHERMONSTER_15_00"); //РћС‚РєСѓРґР° РїСЂРёС€РµР» СЌС‚РѕС‚ РєРѕРІР°СЂРЅС‹Р№ Р·РІРµСЂСЊ?
+	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_01"); //РћС‚РєСѓРґР°-С‚Рѕ РёР·РґР°Р»РµРєР°. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ. РќРѕ СЏ РЅРµ Р·РЅР°СЋ С‚РѕС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_02"); //РЇ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
  
 };
 
@@ -394,13 +394,13 @@ func int DIA_Gaan_MONSTERTOT_Condition ()
 
 func void DIA_Gaan_MONSTERTOT_Info ()
 {
-	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_00"); //Этот ужасный зверь мертв, я полагаю.
-	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_01"); //Теперь я опять могу охотиться спокойно.
+	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_00"); //Р­С‚РѕС‚ СѓР¶Р°СЃРЅС‹Р№ Р·РІРµСЂСЊ РјРµСЂС‚РІ, СЏ РїРѕР»Р°РіР°СЋ.
+	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_01"); //РўРµРїРµСЂСЊ СЏ РѕРїСЏС‚СЊ РјРѕРіСѓ РѕС…РѕС‚РёС‚СЊСЃСЏ СЃРїРѕРєРѕР№РЅРѕ.
 	
 
 	if (MIS_Gaan_Deal == LOG_RUNNING)
 		{
-			AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_02");	//Вот деньги, что я обещал тебе.
+			AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_02");	//Р’РѕС‚ РґРµРЅСЊРіРё, С‡С‚Рѕ СЏ РѕР±РµС‰Р°Р» С‚РµР±Рµ.
 
 			CreateInvItems (self, ItMi_Gold, 30);									
 			B_GiveInvItems (self, other, ItMi_Gold, 30);					
@@ -423,7 +423,7 @@ INSTANCE DIA_Gaan_AskTeacher (C_INFO)
 	condition	= DIA_Gaan_AskTeacher_Condition;
 	information	= DIA_Gaan_AskTeacher_Info;
 
-	description = "Ты можешь научить меня охотиться?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?";
 };                       
 
 FUNC INT DIA_Gaan_AskTeacher_Condition()
@@ -433,12 +433,12 @@ FUNC INT DIA_Gaan_AskTeacher_Condition()
 
 FUNC VOID DIA_Gaan_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Gaan_AskTeacher_15_00"); //Ты можешь научить меня охотиться?
-	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_01"); //Нет проблем. За 100 золотых монет я могу показать тебе, как выпотрошить животных, что ты убьешь.
-	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_02"); //Шкуры и другие трофеи можно выгодно продать на рынке.
+	AI_Output(other,self,"DIA_Gaan_AskTeacher_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?
+	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_01"); //РќРµС‚ РїСЂРѕР±Р»РµРј. Р—Р° 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РІС‹РїРѕС‚СЂРѕС€РёС‚СЊ Р¶РёРІРѕС‚РЅС‹С…, С‡С‚Рѕ С‚С‹ СѓР±СЊРµС€СЊ.
+	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_02"); //РЁРєСѓСЂС‹ Рё РґСЂСѓРіРёРµ С‚СЂРѕС„РµРё РјРѕР¶РЅРѕ РІС‹РіРѕРґРЅРѕ РїСЂРѕРґР°С‚СЊ РЅР° СЂС‹РЅРєРµ.
 		
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Гаан может обучить меня добывать трофеи животных.");
+	B_LogEntry		(TOPIC_Teacher, "Р“Р°Р°РЅ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ С‚СЂРѕС„РµРё Р¶РёРІРѕС‚РЅС‹С….");
 };
 
 
@@ -453,7 +453,7 @@ INSTANCE DIA_Gaan_PayTeacher (C_INFO)
 	condition	= DIA_Gaan_PayTeacher_Condition;
 	information	= DIA_Gaan_PayTeacher_Info;
 	permanent	= TRUE;
-	description = "Вот. 100 золотых монет за твой опыт по разделыванию животных. ";
+	description = "Р’РѕС‚. 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° С‚РІРѕР№ РѕРїС‹С‚ РїРѕ СЂР°Р·РґРµР»С‹РІР°РЅРёСЋ Р¶РёРІРѕС‚РЅС‹С…. ";
 };                       
 
 var int DIA_Gaan_PayTeacher_noPerm;
@@ -469,17 +469,17 @@ FUNC INT DIA_Gaan_PayTeacher_Condition()
 
 FUNC VOID DIA_Gaan_PayTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Gaan_PayTeacher_15_00"); //Вот. 100 золотых монет за твой опыт по разделыванию животных.
+	AI_Output(other,self,"DIA_Gaan_PayTeacher_15_00"); //Р’РѕС‚. 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° С‚РІРѕР№ РѕРїС‹С‚ РїРѕ СЂР°Р·РґРµР»С‹РІР°РЅРёСЋ Р¶РёРІРѕС‚РЅС‹С….
 
 	if (B_GiveInvItems (other, self, ItMi_Gold, 100))
 	{
-		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_01"); //Спасибо. Теперь, говори, что ты хочешь.
+		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_01"); //РЎРїР°СЃРёР±Рѕ. РўРµРїРµСЂСЊ, РіРѕРІРѕСЂРё, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ.
 		Gaan_TeachPlayer = TRUE;
 		DIA_Gaan_PayTeacher_noPerm = TRUE;
 	}
 	else	
 	{
-		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_02"); //Обратись ко мне позже, когда у тебя будут деньги.
+		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_02"); //РћР±СЂР°С‚РёСЃСЊ РєРѕ РјРЅРµ РїРѕР·Р¶Рµ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РґРµРЅСЊРіРё.
 	};
 };
 
@@ -494,7 +494,7 @@ instance DIA_Gaan_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gaan_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gaan_TEACHHUNTING_Info;
 	permanent	= TRUE;
-	description	 = 	"Чему ты можешь обучить меня?";
+	description	 = 	"Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 
 func int DIA_Gaan_TEACHHUNTING_Condition ()
@@ -507,7 +507,7 @@ func int DIA_Gaan_TEACHHUNTING_Condition ()
 
 func void DIA_Gaan_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_TEACHHUNTING_15_00"); //Чему ты можешь обучить меня?
+	AI_Output			(other, self, "DIA_Gaan_TEACHHUNTING_15_00"); //Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
@@ -517,39 +517,39 @@ func void DIA_Gaan_TEACHHUNTING_Info ()
 			||((PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE) && (MIS_Gaan_Snapper == LOG_SUCCESS))
 		)
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_01"); //Это зависит от того, что ты уже знаешь.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_01"); //Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ.
 
 			Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Удаление зубов",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Gaan_TEACHHUNTING_Teeth);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Gaan_TEACHHUNTING_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Удаление когтей",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Gaan_TEACHHUNTING_Claws);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РєРѕРіС‚РµР№",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Gaan_TEACHHUNTING_Claws);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Снятие шкур",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Gaan_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("РЎРЅСЏС‚РёРµ С€РєСѓСЂ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Gaan_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Жало кровавой мухи",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Gaan_TEACHHUNTING_BFSting);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Р–Р°Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Gaan_TEACHHUNTING_BFSting);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Крылья кровавой мухи",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Gaan_TEACHHUNTING_BFWing);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("РљСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Gaan_TEACHHUNTING_BFWing);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 			&& (MIS_Gaan_Snapper == LOG_SUCCESS)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Рог драконьего снеппера",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gaan_TEACHHUNTING_DrgSnapperHorn);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Р РѕРі РґСЂР°РєРѕРЅСЊРµРіРѕ СЃРЅРµРїРїРµСЂР°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gaan_TEACHHUNTING_DrgSnapperHorn);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_02"); //Я не могу научить тебя ничему, что ты еще не знаешь. Извини.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_02"); //РЇ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РЅРёС‡РµРјСѓ, С‡С‚Рѕ С‚С‹ РµС‰Рµ РЅРµ Р·РЅР°РµС€СЊ. РР·РІРёРЅРё.
 		};
 };
 
@@ -563,9 +563,9 @@ func void DIA_Gaan_TEACHHUNTING_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_00"); //Звери не любят расставаться со своими когтями. Ножом нужно работать очень точно.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_01"); //Твои руки должны быть слегка скрещены. Затем нужно отрубить когти сильным ударом.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_02"); //Торговцы всегда готовы выложить кругленькую сумму за когти.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_00"); //Р—РІРµСЂРё РЅРµ Р»СЋР±СЏС‚ СЂР°СЃСЃС‚Р°РІР°С‚СЊСЃСЏ СЃРѕ СЃРІРѕРёРјРё РєРѕРіС‚СЏРјРё. РќРѕР¶РѕРј РЅСѓР¶РЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ РѕС‡РµРЅСЊ С‚РѕС‡РЅРѕ.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_01"); //РўРІРѕРё СЂСѓРєРё РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ СЃР»РµРіРєР° СЃРєСЂРµС‰РµРЅС‹. Р—Р°С‚РµРј РЅСѓР¶РЅРѕ РѕС‚СЂСѓР±РёС‚СЊ РєРѕРіС‚Рё СЃРёР»СЊРЅС‹Рј СѓРґР°СЂРѕРј.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_02"); //РўРѕСЂРіРѕРІС†С‹ РІСЃРµРіРґР° РіРѕС‚РѕРІС‹ РІС‹Р»РѕР¶РёС‚СЊ РєСЂСѓРіР»РµРЅСЊРєСѓСЋ СЃСѓРјРјСѓ Р·Р° РєРѕРіС‚Рё.
 		
 		};
 
@@ -579,8 +579,8 @@ func void DIA_Gaan_TEACHHUNTING_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_00"); //Легче всего вырезать зубы животного. Просто проведи своим ножом вокруг зубов во рту животного.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_01"); //Затем нужно отделить их от черепа точным ударом.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_00"); //Р›РµРіС‡Рµ РІСЃРµРіРѕ РІС‹СЂРµР·Р°С‚СЊ Р·СѓР±С‹ Р¶РёРІРѕС‚РЅРѕРіРѕ. РџСЂРѕСЃС‚Рѕ РїСЂРѕРІРµРґРё СЃРІРѕРёРј РЅРѕР¶РѕРј РІРѕРєСЂСѓРі Р·СѓР±РѕРІ РІРѕ СЂС‚Сѓ Р¶РёРІРѕС‚РЅРѕРіРѕ.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_01"); //Р—Р°С‚РµРј РЅСѓР¶РЅРѕ РѕС‚РґРµР»РёС‚СЊ РёС… РѕС‚ С‡РµСЂРµРїР° С‚РѕС‡РЅС‹Рј СѓРґР°СЂРѕРј.
 	
 			
 		};
@@ -594,8 +594,8 @@ func void DIA_Gaan_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_00"); //Лучше снимать шкуру, сделав глубокий разрез в районе задних ног.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_01"); //После этого, ты легко сможешь снять шкуру, стягивая ее с животного.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_00"); //Р›СѓС‡С€Рµ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂСѓ, СЃРґРµР»Р°РІ РіР»СѓР±РѕРєРёР№ СЂР°Р·СЂРµР· РІ СЂР°Р№РѕРЅРµ Р·Р°РґРЅРёС… РЅРѕРі.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_01"); //РџРѕСЃР»Рµ СЌС‚РѕРіРѕ, С‚С‹ Р»РµРіРєРѕ СЃРјРѕР¶РµС€СЊ СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ, СЃС‚СЏРіРёРІР°СЏ РµРµ СЃ Р¶РёРІРѕС‚РЅРѕРіРѕ.
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
@@ -607,21 +607,21 @@ func void DIA_Gaan_TEACHHUNTING_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_00"); //У этих мух есть мягкое место на спине.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_01"); //Если нажать там, жало выдвинется очень далеко, и ты сможешь вырезать его при помощи ножа.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_00"); //РЈ СЌС‚РёС… РјСѓС… РµСЃС‚СЊ РјСЏРіРєРѕРµ РјРµСЃС‚Рѕ РЅР° СЃРїРёРЅРµ.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_01"); //Р•СЃР»Рё РЅР°Р¶Р°С‚СЊ С‚Р°Рј, Р¶Р°Р»Рѕ РІС‹РґРІРёРЅРµС‚СЃСЏ РѕС‡РµРЅСЊ РґР°Р»РµРєРѕ, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РІС‹СЂРµР·Р°С‚СЊ РµРіРѕ РїСЂРё РїРѕРјРѕС‰Рё РЅРѕР¶Р°.
 			
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
 	Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 };
-// ------ Blutfliegenflьgel ------
+// ------ BlutfliegenflСЊgel ------
 func void DIA_Gaan_TEACHHUNTING_BFWing ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_00"); //Лучше всего отделить крылья кровавой мухи, отрубив их ударом острого ножа как можно ближе к телу.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_01"); //Нужно быть очень аккуратным, чтобы не повредить нежную ткань крыльев. Они не будут ничего стоить, если ты повредишь их.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_00"); //Р›СѓС‡С€Рµ РІСЃРµРіРѕ РѕС‚РґРµР»РёС‚СЊ РєСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё, РѕС‚СЂСѓР±РёРІ РёС… СѓРґР°СЂРѕРј РѕСЃС‚СЂРѕРіРѕ РЅРѕР¶Р° РєР°Рє РјРѕР¶РЅРѕ Р±Р»РёР¶Рµ Рє С‚РµР»Сѓ.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_01"); //РќСѓР¶РЅРѕ Р±С‹С‚СЊ РѕС‡РµРЅСЊ Р°РєРєСѓСЂР°С‚РЅС‹Рј, С‡С‚РѕР±С‹ РЅРµ РїРѕРІСЂРµРґРёС‚СЊ РЅРµР¶РЅСѓСЋ С‚РєР°РЅСЊ РєСЂС‹Р»СЊРµРІ. РћРЅРё РЅРµ Р±СѓРґСѓС‚ РЅРёС‡РµРіРѕ СЃС‚РѕРёС‚СЊ, РµСЃР»Рё С‚С‹ РїРѕРІСЂРµРґРёС€СЊ РёС….
 
 		};
 
@@ -633,12 +633,12 @@ func void DIA_Gaan_TEACHHUNTING_DrgSnapperHorn()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00"); //Теперь, когда этот огромный снеппер мертв, я могу показать тебе, как вырезать его рог.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_01"); //Нужно засунуть нож глубоко в лоб этого животного и осторожно выковырнуть рог.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //Если он не отделится от черепа, нужно поддеть его вторым ножом с другой стороны.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° СЌС‚РѕС‚ РѕРіСЂРѕРјРЅС‹Р№ СЃРЅРµРїРїРµСЂ РјРµСЂС‚РІ, СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РІС‹СЂРµР·Р°С‚СЊ РµРіРѕ СЂРѕРі.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_01"); //РќСѓР¶РЅРѕ Р·Р°СЃСѓРЅСѓС‚СЊ РЅРѕР¶ РіР»СѓР±РѕРєРѕ РІ Р»РѕР± СЌС‚РѕРіРѕ Р¶РёРІРѕС‚РЅРѕРіРѕ Рё РѕСЃС‚РѕСЂРѕР¶РЅРѕ РІС‹РєРѕРІС‹СЂРЅСѓС‚СЊ СЂРѕРі.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //Р•СЃР»Рё РѕРЅ РЅРµ РѕС‚РґРµР»РёС‚СЃСЏ РѕС‚ С‡РµСЂРµРїР°, РЅСѓР¶РЅРѕ РїРѕРґРґРµС‚СЊ РµРіРѕ РІС‚РѕСЂС‹Рј РЅРѕР¶РѕРј СЃ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹.
 	
 			
-			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den Fьssen liegt!!
+			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den FСЊssen liegt!!
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
@@ -657,7 +657,7 @@ instance DIA_Gaan_JAGD		(C_INFO)
 	information	 = 	DIA_Gaan_JAGD_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как охота?";
+	description	 = 	"РљР°Рє РѕС…РѕС‚Р°?";
 };
 
 func int DIA_Gaan_JAGD_Condition ()
@@ -667,7 +667,7 @@ func int DIA_Gaan_JAGD_Condition ()
 
 func void B_WasMachtJagd ()
 {
-	AI_Output			(other, self, "DIA_Gaan_JAGD_15_00"); //Как охота?
+	AI_Output			(other, self, "DIA_Gaan_JAGD_15_00"); //РљР°Рє РѕС…РѕС‚Р°?
 };
 
 func void DIA_Gaan_JAGD_Info ()
@@ -676,22 +676,22 @@ func void DIA_Gaan_JAGD_Info ()
 
 	if ((Npc_IsDead(Gaans_Snapper))== FALSE)
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_01"); //Последнее животное, которое мне удалось убить, была большая крыса. Дела идут совсем плохо.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_02"); //Вот уже несколько дней какой-то фыркающий зверь бродит здесь.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_03"); //Он не только убивает все, что движется, он мешает моей работе.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_01"); //РџРѕСЃР»РµРґРЅРµРµ Р¶РёРІРѕС‚РЅРѕРµ, РєРѕС‚РѕСЂРѕРµ РјРЅРµ СѓРґР°Р»РѕСЃСЊ СѓР±РёС‚СЊ, Р±С‹Р»Р° Р±РѕР»СЊС€Р°СЏ РєСЂС‹СЃР°. Р”РµР»Р° РёРґСѓС‚ СЃРѕРІСЃРµРј РїР»РѕС…Рѕ.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_02"); //Р’РѕС‚ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РєР°РєРѕР№-С‚Рѕ С„С‹СЂРєР°СЋС‰РёР№ Р·РІРµСЂСЊ Р±СЂРѕРґРёС‚ Р·РґРµСЃСЊ.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_03"); //РћРЅ РЅРµ С‚РѕР»СЊРєРѕ СѓР±РёРІР°РµС‚ РІСЃРµ, С‡С‚Рѕ РґРІРёР¶РµС‚СЃСЏ, РѕРЅ РјРµС€Р°РµС‚ РјРѕРµР№ СЂР°Р±РѕС‚Рµ.
 			Log_CreateTopic (TOPIC_GaanSchnaubi, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_GaanSchnaubi, LOG_RUNNING);
-			B_LogEntry (TOPIC_GaanSchnaubi,"Этот фыркающий зверь доставляет неприятности охотнику Гаан. Если я не уничтожу этого зверя, он не сможет охотиться."); 
+			B_LogEntry (TOPIC_GaanSchnaubi,"Р­С‚РѕС‚ С„С‹СЂРєР°СЋС‰РёР№ Р·РІРµСЂСЊ РґРѕСЃС‚Р°РІР»СЏРµС‚ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё РѕС…РѕС‚РЅРёРєСѓ Р“Р°Р°РЅ. Р•СЃР»Рё СЏ РЅРµ СѓРЅРёС‡С‚РѕР¶Сѓ СЌС‚РѕРіРѕ Р·РІРµСЂСЏ, РѕРЅ РЅРµ СЃРјРѕР¶РµС‚ РѕС…РѕС‚РёС‚СЊСЃСЏ."); 
 			MIS_Gaan_Snapper = LOG_RUNNING;
 		}
 	else if (Kapitel >= 3)
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_04"); //Дела идут все хуже и хуже. А тем временем, через проход толпами валят эти фыркающие твари.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_05"); //Охотиться становится все сложнее и сложнее.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_04"); //Р”РµР»Р° РёРґСѓС‚ РІСЃРµ С…СѓР¶Рµ Рё С…СѓР¶Рµ. Рђ С‚РµРј РІСЂРµРјРµРЅРµРј, С‡РµСЂРµР· РїСЂРѕС…РѕРґ С‚РѕР»РїР°РјРё РІР°Р»СЏС‚ СЌС‚Рё С„С‹СЂРєР°СЋС‰РёРµ С‚РІР°СЂРё.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_05"); //РћС…РѕС‚РёС‚СЊСЃСЏ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РІСЃРµ СЃР»РѕР¶РЅРµРµ Рё СЃР»РѕР¶РЅРµРµ.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_06"); //Мне не на что жаловаться.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_06"); //РњРЅРµ РЅРµ РЅР° С‡С‚Рѕ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ.
 		};
 };
 

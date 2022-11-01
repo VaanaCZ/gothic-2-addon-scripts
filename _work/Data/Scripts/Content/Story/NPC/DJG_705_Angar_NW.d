@@ -3,7 +3,7 @@
 instance DJG_705_Angar_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¿Ì„‡";
+	name 		= "–ê–Ω–≥–∞—Ä";
 	guild 		= GIL_DJG;
 	id 			= 7050;
 	voice 		= 4;
@@ -30,8 +30,8 @@ instance DJG_705_Angar_NW (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 80); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 80); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_7050;

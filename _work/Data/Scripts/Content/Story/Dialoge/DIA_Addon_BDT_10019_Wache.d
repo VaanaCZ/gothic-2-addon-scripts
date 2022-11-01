@@ -36,32 +36,32 @@ FUNC INT DIA_Addon_10019_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Направляешься в шахту?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//РќР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ С€Р°С…С‚Сѓ?
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
-	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Вообще-то я хотел увидеть Ворона.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
-	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Хорошо.",DIA_Addon_BDT_10019_Wache_Hi_Ja);
+	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ С…РѕС‚РµР» СѓРІРёРґРµС‚СЊ Р’РѕСЂРѕРЅР°.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
+	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"РҐРѕСЂРѕС€Рѕ.",DIA_Addon_BDT_10019_Wache_Hi_Ja);
 };
 FUNC VOID B_Say_Wache_kaputt()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Почему они умерли?
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(злобно смеется) Заработались до смерти.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//РџРѕС‡РµРјСѓ РѕРЅРё СѓРјРµСЂР»Рё?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//(Р·Р»РѕР±РЅРѕ СЃРјРµРµС‚СЃСЏ) Р—Р°СЂР°Р±РѕС‚Р°Р»РёСЃСЊ РґРѕ СЃРјРµСЂС‚Рё.
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//Вообще-то я хотел увидеть Ворона.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//(предупреждая) Эй! Только попробуй войти в храм - и ты погибнешь так же, как эти заключенные.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Давай-ка лучше двигай в шахту.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//Р’РѕРѕР±С‰Рµ-С‚Рѕ СЏ С…РѕС‚РµР» СѓРІРёРґРµС‚СЊ Р’РѕСЂРѕРЅР°.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//(РїСЂРµРґСѓРїСЂРµР¶РґР°СЏ) Р­Р№! РўРѕР»СЊРєРѕ РїРѕРїСЂРѕР±СѓР№ РІРѕР№С‚Рё РІ С…СЂР°Рј - Рё С‚С‹ РїРѕРіРёР±РЅРµС€СЊ С‚Р°Рє Р¶Рµ, РєР°Рє СЌС‚Рё Р·Р°РєР»СЋС‡РµРЅРЅС‹Рµ.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Р”Р°РІР°Р№-РєР° Р»СѓС‡С€Рµ РґРІРёРіР°Р№ РІ С€Р°С…С‚Сѓ.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Ja()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//Хорошо.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Тогда постарайся быть осторожнее, чем эти бедняги.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//РҐРѕСЂРѕС€Рѕ.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//РўРѕРіРґР° РїРѕСЃС‚Р°СЂР°Р№СЃСЏ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ, С‡РµРј СЌС‚Рё Р±РµРґРЅСЏРіРё.
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);

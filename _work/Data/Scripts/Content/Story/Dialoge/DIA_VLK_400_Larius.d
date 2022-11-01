@@ -46,7 +46,7 @@ FUNC INT DIA_Larius_Hello_Condition()
 
 FUNC VOID DIA_Larius_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Что ты делаешь здесь? Если тебе что-то нужно, запишись на прием.
+	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ? Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ, Р·Р°РїРёС€РёСЃСЊ РЅР° РїСЂРёРµРј.
 
 };
 
@@ -61,7 +61,7 @@ INSTANCE DIA_Larius_WhoAreYou(C_INFO)
 	condition	= DIA_Larius_WhoAreYou_Condition;
 	information	= DIA_Larius_WhoAreYou_Info;
 	permanent	= FALSE;
-	description	= "Кто ты?";
+	description	= "РљС‚Рѕ С‚С‹?";
 };                       
 
 FUNC INT DIA_Larius_WhoAreYou_Condition()
@@ -71,12 +71,12 @@ FUNC INT DIA_Larius_WhoAreYou_Condition()
 
 FUNC VOID DIA_Larius_WhoAreYou_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //Кто ты?
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //Я Лариус, губернатор.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Даже если я не кажусь тебе таковым в данный момент, я самый влиятельный человек в этом городе.
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //То есть ты всем здесь заправляешь?
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Я... ну... в настоящий момент мои руки связаны.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Здесь командует этот лорд Хаген, по крайней мере, пока он в городе.
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //РЇ Р›Р°СЂРёСѓСЃ, РіСѓР±РµСЂРЅР°С‚РѕСЂ.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Р”Р°Р¶Рµ РµСЃР»Рё СЏ РЅРµ РєР°Р¶СѓСЃСЊ С‚РµР±Рµ С‚Р°РєРѕРІС‹Рј РІ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚, СЏ СЃР°РјС‹Р№ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ.
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //РўРѕ РµСЃС‚СЊ С‚С‹ РІСЃРµРј Р·РґРµСЃСЊ Р·Р°РїСЂР°РІР»СЏРµС€СЊ?
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //РЇ... РЅСѓ... РІ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ РјРѕРё СЂСѓРєРё СЃРІСЏР·Р°РЅС‹.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Р—РґРµСЃСЊ РєРѕРјР°РЅРґСѓРµС‚ СЌС‚РѕС‚ Р»РѕСЂРґ РҐР°РіРµРЅ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РїРѕРєР° РѕРЅ РІ РіРѕСЂРѕРґРµ.
 		
 };
 
@@ -91,7 +91,7 @@ INSTANCE DIA_Larius_Disturb(C_INFO)
 	condition	= DIA_Larius_Disturb_Condition;
 	information	= DIA_Larius_Disturb_Info;
 	permanent	= TRUE;
-	description	= "Я не хотел помешать.";
+	description	= "РЇ РЅРµ С…РѕС‚РµР» РїРѕРјРµС€Р°С‚СЊ.";
 };                       
 
 FUNC INT DIA_Larius_Disturb_Condition()
@@ -101,8 +101,8 @@ FUNC INT DIA_Larius_Disturb_Condition()
 
 FUNC VOID DIA_Larius_Disturb_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //Я не хотел помешать.
-	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //Но, тем не менее, помешал! Убирайся!
+	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //РЇ РЅРµ С…РѕС‚РµР» РїРѕРјРµС€Р°С‚СЊ.
+	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //РќРѕ, С‚РµРј РЅРµ РјРµРЅРµРµ, РїРѕРјРµС€Р°Р»! РЈР±РёСЂР°Р№СЃСЏ!
 };
 
 // ************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_Larius_DieLage(C_INFO)
 	condition	= DIA_Larius_DieLage_Condition;
 	information	= DIA_Larius_DieLage_Info;
 	permanent	= TRUE;
-	description	= "Как дела?";
+	description	= "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Larius_DieLage_Condition()
@@ -126,8 +126,8 @@ FUNC INT DIA_Larius_DieLage_Condition()
 
 FUNC VOID DIA_Larius_DieLage_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //Тебе до этого какое дело? Пока паладины здесь, лорд Хаген занимается всеми делами, касающимися жизни города.
+	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //РўРµР±Рµ РґРѕ СЌС‚РѕРіРѕ РєР°РєРѕРµ РґРµР»Рѕ? РџРѕРєР° РїР°Р»Р°РґРёРЅС‹ Р·РґРµСЃСЊ, Р»РѕСЂРґ РҐР°РіРµРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ РІСЃРµРјРё РґРµР»Р°РјРё, РєР°СЃР°СЋС‰РёРјРёСЃСЏ Р¶РёР·РЅРё РіРѕСЂРѕРґР°.
 };
 
 
@@ -142,7 +142,7 @@ INSTANCE DIA_Larius_Richterueberfall(C_INFO)
 	condition	= DIA_Larius_Richterueberfall_Condition;
 	information	= DIA_Larius_Richterueberfall_Info;
 
-	description	= "Судья нанял бандитов, чтобы они убили тебя.";
+	description	= "РЎСѓРґСЊСЏ РЅР°РЅСЏР» Р±Р°РЅРґРёС‚РѕРІ, С‡С‚РѕР±С‹ РѕРЅРё СѓР±РёР»Рё С‚РµР±СЏ.";
 };                       
 
 FUNC INT DIA_Larius_Richterueberfall_Condition()
@@ -155,17 +155,17 @@ FUNC INT DIA_Larius_Richterueberfall_Condition()
 
 FUNC VOID DIA_Larius_Richterueberfall_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //Судья нанял бандитов, чтобы они убили тебя. Я могу доказать это.
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //Не пори чепухи, или ты хочешь, чтобы я заковал тебя в кандалы?
+	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //РЎСѓРґСЊСЏ РЅР°РЅСЏР» Р±Р°РЅРґРёС‚РѕРІ, С‡С‚РѕР±С‹ РѕРЅРё СѓР±РёР»Рё С‚РµР±СЏ. РЇ РјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //РќРµ РїРѕСЂРё С‡РµРїСѓС…Рё, РёР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ Р·Р°РєРѕРІР°Р» С‚РµР±СЏ РІ РєР°РЅРґР°Р»С‹?
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //Даже сели ты воин Инноса...
+			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //Р”Р°Р¶Рµ СЃРµР»Рё С‚С‹ РІРѕРёРЅ РРЅРЅРѕСЃР°...
 		};
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //Даже если ты посвященный маг...
+			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //Р”Р°Р¶Рµ РµСЃР»Рё С‚С‹ РїРѕСЃРІСЏС‰РµРЅРЅС‹Р№ РјР°Рі...
 		};
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //Мое слово все еще имеет вес в этом городе. Не смей даже пытаться запятнать светлое имя нашего судьи!
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //РњРѕРµ СЃР»РѕРІРѕ РІСЃРµ РµС‰Рµ РёРјРµРµС‚ РІРµСЃ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ. РќРµ СЃРјРµР№ РґР°Р¶Рµ РїС‹С‚Р°С‚СЊСЃСЏ Р·Р°РїСЏС‚РЅР°С‚СЊ СЃРІРµС‚Р»РѕРµ РёРјСЏ РЅР°С€РµРіРѕ СЃСѓРґСЊРё!
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };

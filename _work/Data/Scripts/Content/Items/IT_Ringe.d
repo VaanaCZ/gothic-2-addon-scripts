@@ -62,7 +62,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо защиты от пламени";
+	description				= "РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹ РѕС‚ РїР»Р°РјРµРЅРё";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire;
@@ -106,7 +106,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо огня";
+	description				= "РљРѕР»СЊС†Рѕ РѕРіРЅСЏ";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire02;
@@ -150,7 +150,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо деревянной кожи";
+	description				= "РљРѕР»СЊС†Рѕ РґРµСЂРµРІСЏРЅРЅРѕР№ РєРѕР¶Рё";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint;
@@ -194,7 +194,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо каменной кожи";
+	description				= "РљРѕР»СЊС†Рѕ РєР°РјРµРЅРЅРѕР№ РєРѕР¶Рё";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint02;
@@ -219,7 +219,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //Hцhle OW//PassNW bei den Orks
+	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //HС†hle OW//PassNW bei den Orks
 {
 	name 					=	NAME_Ring;
 
@@ -238,7 +238,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо железной кожи";
+	description				= "РљРѕР»СЊС†Рѕ Р¶РµР»РµР·РЅРѕР№ РєРѕР¶Рё";
 
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge;
@@ -284,7 +284,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо рудной кожи";
+	description				= "РљРѕР»СЊС†Рѕ СЂСѓРґРЅРѕР№ РєРѕР¶Рё";
 	
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge02;
@@ -330,7 +330,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо силы духа";
+	description				= "РљРѕР»СЊС†Рѕ СЃРёР»С‹ РґСѓС…Р°";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage;
@@ -356,7 +356,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhьtte OW
+	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordhСЊtte OW
 {
 	name 					=	NAME_Ring;
 
@@ -375,7 +375,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо защиты";
+	description				= "РљРѕР»СЊС†Рѕ Р·Р°С‰РёС‚С‹";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage02;
@@ -421,7 +421,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Кольцо непобедимости";
+	description		= "РљРѕР»СЊС†Рѕ РЅРµРїРѕР±РµРґРёРјРѕСЃС‚Рё";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage;
@@ -478,7 +478,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Кольцо неуязвимости";
+	description		= "РљРѕР»СЊС†Рѕ РЅРµСѓСЏР·РІРёРјРѕСЃС‚Рё";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage02;
@@ -535,7 +535,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Кольцо мастерства";
+	description		= "РљРѕР»СЊС†Рѕ РјР°СЃС‚РµСЂСЃС‚РІР°";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Ri_Dex;
@@ -561,7 +561,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW Nдhe Alter DT
+	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW NРґhe Alter DT
 {
 	name 					=	NAME_Ring;
 
@@ -580,7 +580,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо ловкости";
+	description				= "РљРѕР»СЊС†Рѕ Р»РѕРІРєРѕСЃС‚Рё";
 
 	TEXT[2]					= 	NAME_Bonus_Dex;
 	COUNT[2]				= 	Ri_Dex02;
@@ -626,7 +626,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо жизни";
+	description				= "РљРѕР»СЊС†Рѕ Р¶РёР·РЅРё";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp;
@@ -679,7 +679,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо живости";
+	description				= "РљРѕР»СЊС†Рѕ Р¶РёРІРѕСЃС‚Рё";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp02;
@@ -732,7 +732,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо  силы";
+	description				= "РљРѕР»СЊС†Рѕ  СЃРёР»С‹";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= Ri_Strg;
@@ -776,7 +776,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо силы";
+	description				= "РљРѕР»СЊС†Рѕ СЃРёР»С‹";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= Ri_Strg02;
@@ -820,7 +820,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо магии";
+	description				= "РљРѕР»СЊС†Рѕ РјР°РіРёРё";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_Mana;
@@ -876,7 +876,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо астральной силы";
+	description				= "РљРѕР»СЊС†Рѕ Р°СЃС‚СЂР°Р»СЊРЅРѕР№ СЃРёР»С‹";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_Mana02;
@@ -932,7 +932,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо просвещения";
+	description				= "РљРѕР»СЊС†Рѕ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_HpMana_Mana;
@@ -1002,7 +1002,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "Кольцо власти";
+	description				= "РљРѕР»СЊС†Рѕ РІР»Р°СЃС‚Рё";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= 4;

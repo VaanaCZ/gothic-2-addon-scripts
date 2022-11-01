@@ -1,7 +1,7 @@
 INSTANCE KDF_501_Serpentes (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Серпентес";
+	name 		= "РЎРµСЂРїРµРЅС‚РµСЃ";
 	guild 		= GIL_KDF;
 	id 			= 501;
 	voice 		= 10;

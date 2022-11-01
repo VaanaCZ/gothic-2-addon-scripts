@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_9_JOIN(C_INFO)
 	condition	= DIA_PAL_9_JOIN_Condition;
 	information	= DIA_PAL_9_JOIN_Info;
 	permanent	= TRUE;
-	description = "Как мне стать паладином?";
+	description = "РљР°Рє РјРЅРµ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј?";
 };                       
 
 FUNC INT DIA_PAL_9_JOIN_Condition()
@@ -42,9 +42,9 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Как мне стать паладином?
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Паладином может стать только тот, кто доказал свою приверженность служению Инносу или королю!
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Скажем проще: паладинами могут стать только лучшие из лучших. Но тебе до этого еще далеко, мой мальчик!
+	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //РљР°Рє РјРЅРµ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј?
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //РџР°Р»Р°РґРёРЅРѕРј РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ С‚РѕР»СЊРєРѕ С‚РѕС‚, РєС‚Рѕ РґРѕРєР°Р·Р°Р» СЃРІРѕСЋ РїСЂРёРІРµСЂР¶РµРЅРЅРѕСЃС‚СЊ СЃР»СѓР¶РµРЅРёСЋ РРЅРЅРѕСЃСѓ РёР»Рё РєРѕСЂРѕР»СЋ!
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //РЎРєР°Р¶РµРј РїСЂРѕС‰Рµ: РїР°Р»Р°РґРёРЅР°РјРё РјРѕРіСѓС‚ СЃС‚Р°С‚СЊ С‚РѕР»СЊРєРѕ Р»СѓС‡С€РёРµ РёР· Р»СѓС‡С€РёС…. РќРѕ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РµС‰Рµ РґР°Р»РµРєРѕ, РјРѕР№ РјР°Р»СЊС‡РёРє!
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_PAL_9_PEOPLE(C_INFO)
 	condition	= DIA_PAL_9_PEOPLE_Condition;
 	information	= DIA_PAL_9_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Кто командует здесь?";
+	description = "РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_PAL_9_PEOPLE_Condition()
@@ -69,10 +69,10 @@ FUNC INT DIA_PAL_9_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_9_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Кто командует здесь?
-	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Лорд Хаген.
-	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //И?
-	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //И больше никто. Лорд Хаген - верховный командующий всего этого острова.
+	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Р›РѕСЂРґ РҐР°РіРµРЅ.
+	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //Р?
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //Р Р±РѕР»СЊС€Рµ РЅРёРєС‚Рѕ. Р›РѕСЂРґ РҐР°РіРµРЅ - РІРµСЂС…РѕРІРЅС‹Р№ РєРѕРјР°РЅРґСѓСЋС‰РёР№ РІСЃРµРіРѕ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_9_LOCATION(C_INFO)
 	condition	= DIA_PAL_9_LOCATION_Condition;
 	information	= DIA_PAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Зачем паладины прибыли в Хоринис?";
+	description = "Р—Р°С‡РµРј РїР°Р»Р°РґРёРЅС‹ РїСЂРёР±С‹Р»Рё РІ РҐРѕСЂРёРЅРёСЃ?";
 };                       
 
 FUNC INT DIA_PAL_9_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Зачем паладины прибыли в Хоринис?
-	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Это не твое дело, приятель! Тебе достаточно знать, что мы служим Инносу и королю!
+	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Р—Р°С‡РµРј РїР°Р»Р°РґРёРЅС‹ РїСЂРёР±С‹Р»Рё РІ РҐРѕСЂРёРЅРёСЃ?
+	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ, РїСЂРёСЏС‚РµР»СЊ! РўРµР±Рµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РЅР°С‚СЊ, С‡С‚Рѕ РјС‹ СЃР»СѓР¶РёРј РРЅРЅРѕСЃСѓ Рё РєРѕСЂРѕР»СЋ!
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE DIA_PAL_9_STANDARD(C_INFO)
 	condition	= DIA_PAL_9_STANDARD_Condition;
 	information	= DIA_PAL_9_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Что новенького?";
+	description = "Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?";
 };
                        
 func INT DIA_PAL_9_STANDARD_Condition()
@@ -120,7 +120,7 @@ func INT DIA_PAL_9_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_9_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_STANDARD_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_PAL_9_STANDARD_15_00"); //РљР°Рє РґРµР»Р°?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_9_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //Теперь, когда мы знаем, что имеем дело с драконами, наш командующий наверняка скоро что-то предпримет.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РјС‹ Р·РЅР°РµРј, С‡С‚Рѕ РёРјРµРµРј РґРµР»Рѕ СЃ РґСЂР°РєРѕРЅР°РјРё, РЅР°С€ РєРѕРјР°РЅРґСѓСЋС‰РёР№ РЅР°РІРµСЂРЅСЏРєР° СЃРєРѕСЂРѕ С‡С‚Рѕ-С‚Рѕ РїСЂРµРґРїСЂРёРјРµС‚.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Все еще нет никаких известий от нашего отряда в Долине Рудников. Это очень странно.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Р’СЃРµ РµС‰Рµ РЅРµС‚ РЅРёРєР°РєРёС… РёР·РІРµСЃС‚РёР№ РѕС‚ РЅР°С€РµРіРѕ РѕС‚СЂСЏРґР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. Р­С‚Рѕ РѕС‡РµРЅСЊ СЃС‚СЂР°РЅРЅРѕ.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //Слава Инносу! Угроза драконов ликвидирована. Теперь, чтобы спокойно добывать руду, нам нужно только разобраться с орками.
+			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //РЎР»Р°РІР° РРЅРЅРѕСЃСѓ! РЈРіСЂРѕР·Р° РґСЂР°РєРѕРЅРѕРІ Р»РёРєРІРёРґРёСЂРѕРІР°РЅР°. РўРµРїРµСЂСЊ, С‡С‚РѕР±С‹ СЃРїРѕРєРѕР№РЅРѕ РґРѕР±С‹РІР°С‚СЊ СЂСѓРґСѓ, РЅР°Рј РЅСѓР¶РЅРѕ С‚РѕР»СЊРєРѕ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РѕСЂРєР°РјРё.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Если тебе больше нечего сказать, иди отсюда, болван!
+		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Р•СЃР»Рё С‚РµР±Рµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРіРѕ СЃРєР°Р·Р°С‚СЊ, РёРґРё РѕС‚СЃСЋРґР°, Р±РѕР»РІР°РЅ!
 	};
 };
 

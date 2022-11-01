@@ -2,7 +2,7 @@
 instance VLK_468_Canthar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Кантар"; 
+	name 		= "РљР°РЅС‚Р°СЂ"; 
 	guild 		= GIL_NONE;
 	id 			= 468;
 	voice 		= 9;
@@ -26,7 +26,7 @@ instance VLK_468_Canthar (Npc_Default)
 	EquipItem	(self, ItMw_1h_VLK_SWORD); 
 	
 	// ------ Inventory ------
-	//CreateInvItems (self, ItWr_Passierschein, 1);wird jetzt ьber Dialog vergeben, damit nicht mehr im Trade auftaucht 
+	//CreateInvItems (self, ItWr_Passierschein, 1);wird jetzt СЊber Dialog vergeben, damit nicht mehr im Trade auftaucht 
 	CreateInvItems (self, ItMi_Gold, 50);
 		
 	// ------ visuals ------																			

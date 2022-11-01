@@ -7,7 +7,7 @@ instance DIA_Addon_Lares_Patch		(C_INFO)
 	nr		 	= 99;
 	condition	= DIA_Addon_Lares_Patch_Condition;
 	information	= DIA_Addon_Lares_Patch_Info;
-	description	= "(Орнамент - потребовать фрагмент назад)";
+	description	= "(РћСЂРЅР°РјРµРЅС‚ - РїРѕС‚СЂРµР±РѕРІР°С‚СЊ С„СЂР°РіРјРµРЅС‚ РЅР°Р·Р°Рґ)";
 };
 func int DIA_Addon_Lares_Patch_Condition ()
 {
@@ -69,7 +69,7 @@ func int DIA_Addon_Lares_HaltsMaul_Condition ()
 
 func void DIA_Addon_Lares_HaltsMaul_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_HaltsMaul_09_01"); //Увидимся позже, в гавани.
+	AI_Output	(self, other, "DIA_Addon_Lares_HaltsMaul_09_01"); //РЈРІРёРґРёРјСЃСЏ РїРѕР·Р¶Рµ, РІ РіР°РІР°РЅРё.
 	AI_StopProcessInfos (self);
 };
 
@@ -130,64 +130,64 @@ func int DIA_Lares_HALLO_Condition ()
 };
 func void DIA_Lares_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Lares_HALLO_09_00"); //Я, должно быть, сошел с ума! Что ты делаешь здесь?
+	AI_Output (self, other, "DIA_Lares_HALLO_09_00"); //РЇ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, СЃРѕС€РµР» СЃ СѓРјР°! Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 	
 	if (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	{
-		AI_Output (self, other, "DIA_Lares_HALLO_09_01"); //Ты что, ПРИПЛЫЛ сюда?
-		AI_Output (self, other, "DIA_Lares_HALLO_09_02"); //(смеется) Это единственный способ миновать стражу у городских ворот.
+		AI_Output (self, other, "DIA_Lares_HALLO_09_01"); //РўС‹ С‡С‚Рѕ, РџР РРџР›Р«Р› СЃСЋРґР°?
+		AI_Output (self, other, "DIA_Lares_HALLO_09_02"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ СЃРїРѕСЃРѕР± РјРёРЅРѕРІР°С‚СЊ СЃС‚СЂР°Р¶Сѓ Сѓ РіРѕСЂРѕРґСЃРєРёС… РІРѕСЂРѕС‚.
 		B_GivePlayerXP (500); //wer's schafft...	
 	};
 			
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Мы уже встречались раньше?",DIA_Lares_HALLO_NO);
-	Info_AddChoice 		(DIA_Lares_HALLO,"Эй, Ларес, старый пройдоха ...",DIA_Lares_HALLO_YES);
+	Info_AddChoice 		(DIA_Lares_HALLO,"РњС‹ СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ СЂР°РЅСЊС€Рµ?",DIA_Lares_HALLO_NO);
+	Info_AddChoice 		(DIA_Lares_HALLO,"Р­Р№, Р›Р°СЂРµСЃ, СЃС‚Р°СЂС‹Р№ РїСЂРѕР№РґРѕС…Р° ...",DIA_Lares_HALLO_YES);
 };
 FUNC VOID DIA_Lares_HALLO_NO()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_NO_15_00"); //Мы уже встречались раньше?
-	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_01"); //Парень, ты что, не помнишь меня? Мы были вместе в Новом Лагере.
-	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_02"); //Не говоря уже о шахте... Эй, мы знатно повеселились там. Ты помнишь Ли?
+	AI_Output (other, self, "DIA_Lares_HALLO_NO_15_00"); //РњС‹ СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ СЂР°РЅСЊС€Рµ?
+	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_01"); //РџР°СЂРµРЅСЊ, С‚С‹ С‡С‚Рѕ, РЅРµ РїРѕРјРЅРёС€СЊ РјРµРЅСЏ? РњС‹ Р±С‹Р»Рё РІРјРµСЃС‚Рµ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_02"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ С€Р°С…С‚Рµ... Р­Р№, РјС‹ Р·РЅР°С‚РЅРѕ РїРѕРІРµСЃРµР»РёР»РёСЃСЊ С‚Р°Рј. РўС‹ РїРѕРјРЅРёС€СЊ Р›Рё?
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Конечно же, я помню Ли!",DIA_Lares_HALLO_LEE);
-	Info_AddChoice 		(DIA_Lares_HALLO,"Ли?..",DIA_Lares_HALLO_NOIDEA);
+	Info_AddChoice 		(DIA_Lares_HALLO,"РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РїРѕРјРЅСЋ Р›Рё!",DIA_Lares_HALLO_LEE);
+	Info_AddChoice 		(DIA_Lares_HALLO,"Р›Рё?..",DIA_Lares_HALLO_NOIDEA);
 };
 FUNC VOID DIA_Lares_HALLO_YES()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_YES_15_00"); //Эй, Ларес, старый пройдоха! А как ты попал сюда?
-	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_01"); //Я смог выбраться из Долины Рудников вместе с Ли и другими парнями.
-	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_02"); //Ты ведь помнишь Ли?
+	AI_Output (other, self, "DIA_Lares_HALLO_YES_15_00"); //Р­Р№, Р›Р°СЂРµСЃ, СЃС‚Р°СЂС‹Р№ РїСЂРѕР№РґРѕС…Р°! Рђ РєР°Рє С‚С‹ РїРѕРїР°Р» СЃСЋРґР°?
+	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_01"); //РЇ СЃРјРѕРі РІС‹Р±СЂР°С‚СЊСЃСЏ РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ РІРјРµСЃС‚Рµ СЃ Р›Рё Рё РґСЂСѓРіРёРјРё РїР°СЂРЅСЏРјРё.
+	AI_Output (self, other, "DIA_Lares_HALLO_YES_09_02"); //РўС‹ РІРµРґСЊ РїРѕРјРЅРёС€СЊ Р›Рё?
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Конечно же, я помню Ли!",DIA_Lares_HALLO_LEE);
-	Info_AddChoice 		(DIA_Lares_HALLO,"Ли?..",DIA_Lares_HALLO_NOIDEA);
+	Info_AddChoice 		(DIA_Lares_HALLO,"РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РїРѕРјРЅСЋ Р›Рё!",DIA_Lares_HALLO_LEE);
+	Info_AddChoice 		(DIA_Lares_HALLO,"Р›Рё?..",DIA_Lares_HALLO_NOIDEA);
 };
 
 // ------------------------------	
 	func void B_Lares_AboutLee()
 	{
-		AI_Output (self, other, "B_Lares_AboutLee_09_00"); //Я выбрался из колонии вместе с ним. Сразу после того, как Барьер был уничтожен.
-		AI_Output (self, other, "B_Lares_AboutLee_09_01"); //Он и его парни сейчас на ферме лендлорда Онара.
-		AI_Output (self, other, "B_Lares_AboutLee_09_02"); //Он договорился с этим фермером. Ли с парнями защищает ферму, а Онар кормит их за это.
+		AI_Output (self, other, "B_Lares_AboutLee_09_00"); //РЇ РІС‹Р±СЂР°Р»СЃСЏ РёР· РєРѕР»РѕРЅРёРё РІРјРµСЃС‚Рµ СЃ РЅРёРј. РЎСЂР°Р·Сѓ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє Р‘Р°СЂСЊРµСЂ Р±С‹Р» СѓРЅРёС‡С‚РѕР¶РµРЅ.
+		AI_Output (self, other, "B_Lares_AboutLee_09_01"); //РћРЅ Рё РµРіРѕ РїР°СЂРЅРё СЃРµР№С‡Р°СЃ РЅР° С„РµСЂРјРµ Р»РµРЅРґР»РѕСЂРґР° РћРЅР°СЂР°.
+		AI_Output (self, other, "B_Lares_AboutLee_09_02"); //РћРЅ РґРѕРіРѕРІРѕСЂРёР»СЃСЏ СЃ СЌС‚РёРј С„РµСЂРјРµСЂРѕРј. Р›Рё СЃ РїР°СЂРЅСЏРјРё Р·Р°С‰РёС‰Р°РµС‚ С„РµСЂРјСѓ, Р° РћРЅР°СЂ РєРѕСЂРјРёС‚ РёС… Р·Р° СЌС‚Рѕ.
 	};
 // ------------------------------	
 
 FUNC VOID DIA_Lares_HALLO_LEE()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_LEE_15_00"); //Конечно же, я помню Ли!
+	AI_Output (other, self, "DIA_Lares_HALLO_LEE_15_00"); //РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РїРѕРјРЅСЋ Р›Рё!
 	B_Lares_AboutLee();
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 };
 FUNC VOID DIA_Lares_HALLO_NOIDEA()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_NOIDEA_15_00"); //Ли?..
-	AI_Output (self, other, "DIA_Lares_HALLO_NOIDEA_09_01"); //Тебе, похоже, многое пришлось пережить. Ли был предводителем наемником в Новом Лагере.
+	AI_Output (other, self, "DIA_Lares_HALLO_NOIDEA_15_00"); //Р›Рё?..
+	AI_Output (self, other, "DIA_Lares_HALLO_NOIDEA_09_01"); //РўРµР±Рµ, РїРѕС…РѕР¶Рµ, РјРЅРѕРіРѕРµ РїСЂРёС€Р»РѕСЃСЊ РїРµСЂРµР¶РёС‚СЊ. Р›Рё Р±С‹Р» РїСЂРµРґРІРѕРґРёС‚РµР»РµРј РЅР°РµРјРЅРёРєРѕРј РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.
 	B_Lares_AboutLee();
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
@@ -211,7 +211,7 @@ instance DIA_Addon_Lares_Vatras		(C_INFO)
 	condition	= DIA_Addon_Lares_Vatras_Condition;
 	information	= DIA_Addon_Lares_Vatras_Info;
 
-	description	= "Меня послал Ватрас.";
+	description	= "РњРµРЅСЏ РїРѕСЃР»Р°Р» Р’Р°С‚СЂР°СЃ.";
 };
 func int DIA_Addon_Lares_Vatras_Condition ()
 {
@@ -222,10 +222,10 @@ func int DIA_Addon_Lares_Vatras_Condition ()
 };
 func void DIA_Addon_Lares_Vatras_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_Vatras_15_00"); //Меня послал Ватрас. Он сказал, что если мне понадобится помощь, я могу обратиться к тебе.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_01"); //(удивленно) Итак, ты уже повидался с Ватрасом. Должно быть, ты произвел на него впечатление.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_02"); //Иначе он не назвал бы тебе мое имя. Особенно сейчас, когда повсюду пропадают люди.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_03"); //Итак, что тебе нужно?
+	AI_Output	(other, self, "DIA_Addon_Lares_Vatras_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» Р’Р°С‚СЂР°СЃ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµСЃР»Рё РјРЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РїРѕРјРѕС‰СЊ, СЏ РјРѕРіСѓ РѕР±СЂР°С‚РёС‚СЊСЃСЏ Рє С‚РµР±Рµ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_01"); //(СѓРґРёРІР»РµРЅРЅРѕ) РС‚Р°Рє, С‚С‹ СѓР¶Рµ РїРѕРІРёРґР°Р»СЃСЏ СЃ Р’Р°С‚СЂР°СЃРѕРј. Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‚С‹ РїСЂРѕРёР·РІРµР» РЅР° РЅРµРіРѕ РІРїРµС‡Р°С‚Р»РµРЅРёРµ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_02"); //РРЅР°С‡Рµ РѕРЅ РЅРµ РЅР°Р·РІР°Р» Р±С‹ С‚РµР±Рµ РјРѕРµ РёРјСЏ. РћСЃРѕР±РµРЅРЅРѕ СЃРµР№С‡Р°СЃ, РєРѕРіРґР° РїРѕРІСЃСЋРґСѓ РїСЂРѕРїР°РґР°СЋС‚ Р»СЋРґРё.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_03"); //РС‚Р°Рє, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	Lares_RangerHelp = TRUE;
 
 	if (GregLocation == Greg_Farm1)
@@ -249,7 +249,7 @@ instance DIA_Addon_Lares_WhatAreYouGuys		(C_INFO)
 	condition	= DIA_Addon_Lares_WhatAreYouGuys_Condition;
 	information	= DIA_Addon_Lares_WhatAreYouGuys_Info;
 
-	description	 = 	"Что у вас за дела с Ватрасом?";
+	description	 = 	"Р§С‚Рѕ Сѓ РІР°СЃ Р·Р° РґРµР»Р° СЃ Р’Р°С‚СЂР°СЃРѕРј?";
 };
 func int DIA_Addon_Lares_WhatAreYouGuys_Condition ()
 {
@@ -261,18 +261,18 @@ func int DIA_Addon_Lares_WhatAreYouGuys_Condition ()
 };
 func void DIA_Addon_Lares_WhatAreYouGuys_Info ()
 {	
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_00"); //Что у вас за дела с Ватрасом?
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_01"); //Я заключил с магами воды небольшое соглашение. Понимаешь?
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_02"); //Что за соглашение?
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_03"); //Мы на них работаем, а они заботятся о том, чтобы из-за нашего прошлого в колонии у нас не было проблем.
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_04"); //Ты говоришь о 'Кольце Воды'?
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_05"); //Ты слышал о нем?
-	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_06"); //Да, мне сказал Ватрас.
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_07"); //Что ж, ты сам ответил на свой вопрос.
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_00"); //Р§С‚Рѕ Сѓ РІР°СЃ Р·Р° РґРµР»Р° СЃ Р’Р°С‚СЂР°СЃРѕРј?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_01"); //РЇ Р·Р°РєР»СЋС‡РёР» СЃ РјР°РіР°РјРё РІРѕРґС‹ РЅРµР±РѕР»СЊС€РѕРµ СЃРѕРіР»Р°С€РµРЅРёРµ. РџРѕРЅРёРјР°РµС€СЊ?
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_02"); //Р§С‚Рѕ Р·Р° СЃРѕРіР»Р°С€РµРЅРёРµ?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_03"); //РњС‹ РЅР° РЅРёС… СЂР°Р±РѕС‚Р°РµРј, Р° РѕРЅРё Р·Р°Р±РѕС‚СЏС‚СЃСЏ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РёР·-Р·Р° РЅР°С€РµРіРѕ РїСЂРѕС€Р»РѕРіРѕ РІ РєРѕР»РѕРЅРёРё Сѓ РЅР°СЃ РЅРµ Р±С‹Р»Рѕ РїСЂРѕР±Р»РµРј.
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_04"); //РўС‹ РіРѕРІРѕСЂРёС€СЊ Рѕ 'РљРѕР»СЊС†Рµ Р’РѕРґС‹'?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_05"); //РўС‹ СЃР»С‹С€Р°Р» Рѕ РЅРµРј?
+	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_06"); //Р”Р°, РјРЅРµ СЃРєР°Р·Р°Р» Р’Р°С‚СЂР°СЃ.
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_07"); //Р§С‚Рѕ Р¶, С‚С‹ СЃР°Рј РѕС‚РІРµС‚РёР» РЅР° СЃРІРѕР№ РІРѕРїСЂРѕСЃ.
 
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Ларес принадлежит к 'Кольцу Воды'." ); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Р›Р°СЂРµСЃ РїСЂРёРЅР°РґР»РµР¶РёС‚ Рє 'РљРѕР»СЊС†Сѓ Р’РѕРґС‹'." ); 
 };
 // ------------------------------------------------------------
 // Ranger
@@ -284,7 +284,7 @@ instance DIA_Addon_Lares_Ranger		(C_INFO)
 	condition	= DIA_Addon_Lares_Ranger_Condition;
 	information	= DIA_Addon_Lares_Ranger_Info;
 
-	description	= "Расскажи мне о 'Кольце Воды'.";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ 'РљРѕР»СЊС†Рµ Р’РѕРґС‹'.";
 };
 func int DIA_Addon_Lares_Ranger_Condition ()
 {
@@ -296,14 +296,14 @@ func int DIA_Addon_Lares_Ranger_Condition ()
 };
 func void DIA_Addon_Lares_Ranger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_00"); //Расскажи мне о 'Кольце Воды'.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_01"); //Кольцо для магов воды - то же самое, что паладины для магов огня.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_02"); //Но в отличие от паладинов, мы действуем тайно.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_03"); //Кольцо - это могучее оружие в битвах с силами зла, угрожающими Хоринису.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_04"); //Но сила Кольца основывается на том, что имена его членов хранятся в тайне.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_05"); //Поэтому помалкивай об этом!
-	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_06"); //Конечно.
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Члены общества Кольца для магов воды - все равно, что паладины для магов огня. Но братство действует тайно. Его члены не выдают себя, и никто не знает его истинную силу." ); 
+	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ 'РљРѕР»СЊС†Рµ Р’РѕРґС‹'.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_01"); //РљРѕР»СЊС†Рѕ РґР»СЏ РјР°РіРѕРІ РІРѕРґС‹ - С‚Рѕ Р¶Рµ СЃР°РјРѕРµ, С‡С‚Рѕ РїР°Р»Р°РґРёРЅС‹ РґР»СЏ РјР°РіРѕРІ РѕРіРЅСЏ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_02"); //РќРѕ РІ РѕС‚Р»РёС‡РёРµ РѕС‚ РїР°Р»Р°РґРёРЅРѕРІ, РјС‹ РґРµР№СЃС‚РІСѓРµРј С‚Р°Р№РЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_03"); //РљРѕР»СЊС†Рѕ - СЌС‚Рѕ РјРѕРіСѓС‡РµРµ РѕСЂСѓР¶РёРµ РІ Р±РёС‚РІР°С… СЃ СЃРёР»Р°РјРё Р·Р»Р°, СѓРіСЂРѕР¶Р°СЋС‰РёРјРё РҐРѕСЂРёРЅРёСЃСѓ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_04"); //РќРѕ СЃРёР»Р° РљРѕР»СЊС†Р° РѕСЃРЅРѕРІС‹РІР°РµС‚СЃСЏ РЅР° С‚РѕРј, С‡С‚Рѕ РёРјРµРЅР° РµРіРѕ С‡Р»РµРЅРѕРІ С…СЂР°РЅСЏС‚СЃСЏ РІ С‚Р°Р№РЅРµ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_05"); //РџРѕСЌС‚РѕРјСѓ РїРѕРјР°Р»РєРёРІР°Р№ РѕР± СЌС‚РѕРј!
+	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_06"); //РљРѕРЅРµС‡РЅРѕ.
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Р§Р»РµРЅС‹ РѕР±С‰РµСЃС‚РІР° РљРѕР»СЊС†Р° РґР»СЏ РјР°РіРѕРІ РІРѕРґС‹ - РІСЃРµ СЂР°РІРЅРѕ, С‡С‚Рѕ РїР°Р»Р°РґРёРЅС‹ РґР»СЏ РјР°РіРѕРІ РѕРіРЅСЏ. РќРѕ Р±СЂР°С‚СЃС‚РІРѕ РґРµР№СЃС‚РІСѓРµС‚ С‚Р°Р№РЅРѕ. Р•РіРѕ С‡Р»РµРЅС‹ РЅРµ РІС‹РґР°СЋС‚ СЃРµР±СЏ, Рё РЅРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚ РµРіРѕ РёСЃС‚РёРЅРЅСѓСЋ СЃРёР»Сѓ." ); 
 };
 // ------------------------------------------------------------
 // Info WannaBeRanger
@@ -315,7 +315,7 @@ instance DIA_Addon_Lares_WannaBeRanger		(C_INFO)
 	condition	= DIA_Addon_Lares_WannaBeRanger_Condition;
 	information	= DIA_Addon_Lares_WannaBeRanger_Info;
 
-	description	= "Я хочу присоединиться к Кольцу Воды...";
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹...";
 };
 func int DIA_Addon_Lares_WannaBeRanger_Condition ()
 {
@@ -327,44 +327,44 @@ func int DIA_Addon_Lares_WannaBeRanger_Condition ()
 };
 func void DIA_Addon_Lares_WannaBeRanger_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_15_00"); //Я хочу присоединиться к Кольцу Воды...
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_09_01"); //Я не против. Но решение о том, можешь ли ты вступить в наши ряды, должны принять маги.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹...
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_09_01"); //РЇ РЅРµ РїСЂРѕС‚РёРІ. РќРѕ СЂРµС€РµРЅРёРµ Рѕ С‚РѕРј, РјРѕР¶РµС€СЊ Р»Рё С‚С‹ РІСЃС‚СѓРїРёС‚СЊ РІ РЅР°С€Рё СЂСЏРґС‹, РґРѕР»Р¶РЅС‹ РїСЂРёРЅСЏС‚СЊ РјР°РіРё.
 	
 	B_LogEntry (TOPIC_Addon_RingOfWater, LogText_Addon_KDWRight); 
 
 
 	Info_ClearChoices	(DIA_Addon_Lares_WannaBeRanger);
-	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Понимаю.", DIA_Addon_Lares_WannaBeRanger_BACK );
-	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "А что это значит - быть членом вашего общества?", DIA_Addon_Lares_WannaBeRanger_HowIsIt );
-	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Что ты сделал для того, чтобы произвести впечатление на магов воды?", DIA_Addon_Lares_WannaBeRanger_AboutYou );
+	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "РџРѕРЅРёРјР°СЋ.", DIA_Addon_Lares_WannaBeRanger_BACK );
+	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Рђ С‡С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚ - Р±С‹С‚СЊ С‡Р»РµРЅРѕРј РІР°С€РµРіРѕ РѕР±С‰РµСЃС‚РІР°?", DIA_Addon_Lares_WannaBeRanger_HowIsIt );
+	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Р§С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° РјР°РіРѕРІ РІРѕРґС‹?", DIA_Addon_Lares_WannaBeRanger_AboutYou );
 };
 func void DIA_Addon_Lares_WannaBeRanger_BACK ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_BACK_15_00"); //Понимаю.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_BACK_15_00"); //РџРѕРЅРёРјР°СЋ.
 	Info_ClearChoices	(DIA_Addon_Lares_WannaBeRanger);
 };
 func void DIA_Addon_Lares_WannaBeRanger_AboutYou ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_AboutYou_15_00"); //Что ты сделал для того, чтобы произвести впечатление на магов воды?
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_01"); //Я защищал их все то время, пока мы жили за Барьером.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_02"); //(улыбается) И у них есть множество причин быть мне благодарными.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_AboutYou_15_00"); //Р§С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїСЂРѕРёР·РІРµСЃС‚Рё РІРїРµС‡Р°С‚Р»РµРЅРёРµ РЅР° РјР°РіРѕРІ РІРѕРґС‹?
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_01"); //РЇ Р·Р°С‰РёС‰Р°Р» РёС… РІСЃРµ С‚Рѕ РІСЂРµРјСЏ, РїРѕРєР° РјС‹ Р¶РёР»Рё Р·Р° Р‘Р°СЂСЊРµСЂРѕРј.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_AboutYou_09_02"); //(СѓР»С‹Р±Р°РµС‚СЃСЏ) Р Сѓ РЅРёС… РµСЃС‚СЊ РјРЅРѕР¶РµСЃС‚РІРѕ РїСЂРёС‡РёРЅ Р±С‹С‚СЊ РјРЅРµ Р±Р»Р°РіРѕРґР°СЂРЅС‹РјРё.
 };
 func void DIA_Addon_Lares_WannaBeRanger_HowIsIt ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_15_00"); //А что это значит - быть членом вашего общества?
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_01"); //Мы не похожи на остальные сообщества Хориниса, к которым ты можешь присоединиться.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_02"); //Когда ты становишься одним из нас, мы не даем тебе поручения, выполнить которые ты не готов.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_03"); //Единственное, что требуется от тебя с самого начала - молчание.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_04"); //Мы действуем тайно и не хотим, чтобы посторонние знали о наших действиях.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_05"); //Мы будем наблюдать за тобой. Все остальное ты узнаешь со временем.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_15_00"); //Рђ С‡С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚ - Р±С‹С‚СЊ С‡Р»РµРЅРѕРј РІР°С€РµРіРѕ РѕР±С‰РµСЃС‚РІР°?
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_01"); //РњС‹ РЅРµ РїРѕС…РѕР¶Рё РЅР° РѕСЃС‚Р°Р»СЊРЅС‹Рµ СЃРѕРѕР±С‰РµСЃС‚РІР° РҐРѕСЂРёРЅРёСЃР°, Рє РєРѕС‚РѕСЂС‹Рј С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_02"); //РљРѕРіРґР° С‚С‹ СЃС‚Р°РЅРѕРІРёС€СЊСЃСЏ РѕРґРЅРёРј РёР· РЅР°СЃ, РјС‹ РЅРµ РґР°РµРј С‚РµР±Рµ РїРѕСЂСѓС‡РµРЅРёСЏ, РІС‹РїРѕР»РЅРёС‚СЊ РєРѕС‚РѕСЂС‹Рµ С‚С‹ РЅРµ РіРѕС‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_03"); //Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ С‚СЂРµР±СѓРµС‚СЃСЏ РѕС‚ С‚РµР±СЏ СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р° - РјРѕР»С‡Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_04"); //РњС‹ РґРµР№СЃС‚РІСѓРµРј С‚Р°Р№РЅРѕ Рё РЅРµ С…РѕС‚РёРј, С‡С‚РѕР±С‹ РїРѕСЃС‚РѕСЂРѕРЅРЅРёРµ Р·РЅР°Р»Рё Рѕ РЅР°С€РёС… РґРµР№СЃС‚РІРёСЏС….
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_05"); //РњС‹ Р±СѓРґРµРј РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° С‚РѕР±РѕР№. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅРѕРµ С‚С‹ СѓР·РЅР°РµС€СЊ СЃРѕ РІСЂРµРјРµРЅРµРј.
 };
 // ------------------------------------------------------------
 // Info RingBack (Bin jetzt dabei)
 // ------------------------------------------------------------
 func void B_Lares_Geheimtreffen()
 {
-	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_07"); //Скоро в таверне Орлана состоится собрание членов общества.
-	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_08"); //Приходи туда, и ты получишь свое снаряжение.
+	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_07"); //РЎРєРѕСЂРѕ РІ С‚Р°РІРµСЂРЅРµ РћСЂР»Р°РЅР° СЃРѕСЃС‚РѕРёС‚СЃСЏ СЃРѕР±СЂР°РЅРёРµ С‡Р»РµРЅРѕРІ РѕР±С‰РµСЃС‚РІР°.
+	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_08"); //РџСЂРёС…РѕРґРё С‚СѓРґР°, Рё С‚С‹ РїРѕР»СѓС‡РёС€СЊ СЃРІРѕРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
 };
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_RingBack		(C_INFO)
@@ -374,7 +374,7 @@ instance DIA_Addon_Lares_RingBack		(C_INFO)
 	condition	 = 	DIA_Addon_Lares_RingBack_Condition;
 	information	 = 	DIA_Addon_Lares_RingBack_Info;
 
-	description	 = 	"Я стал членом общества Кольца Воды.";
+	description	 = 	"РЇ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РѕР±С‰РµСЃС‚РІР° РљРѕР»СЊС†Р° Р’РѕРґС‹.";
 };
 func int DIA_Addon_Lares_RingBack_Condition ()
 {
@@ -387,31 +387,31 @@ func int DIA_Addon_Lares_RingBack_Condition ()
 };
 func void DIA_Addon_Lares_RingBack_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_00"); //Я стал членом общества Кольца Воды.
+	AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_00"); //РЇ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РѕР±С‰РµСЃС‚РІР° РљРѕР»СЊС†Р° Р’РѕРґС‹.
 	
 	if (Lares_GotRingBack == FALSE) 
 	&& (SC_GotLaresRing == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_01"); //Прекрасно. Я могу получить обратно свое кольцо?
+		AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_01"); //РџСЂРµРєСЂР°СЃРЅРѕ. РЇ РјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ РѕР±СЂР°С‚РЅРѕ СЃРІРѕРµ РєРѕР»СЊС†Рѕ?
 		
 		if (B_GiveInvItems (other, self, ItRi_Ranger_Lares_Addon,1))
 		{
-			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_02"); //Конечно, вот оно.
-			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_03"); //Надеюсь, тебе оно пригодилось. Я рад, что ты стал одним из нас.
+			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_02"); //РљРѕРЅРµС‡РЅРѕ, РІРѕС‚ РѕРЅРѕ.
+			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_03"); //РќР°РґРµСЋСЃСЊ, С‚РµР±Рµ РѕРЅРѕ РїСЂРёРіРѕРґРёР»РѕСЃСЊ. РЇ СЂР°Рґ, С‡С‚Рѕ С‚С‹ СЃС‚Р°Р» РѕРґРЅРёРј РёР· РЅР°СЃ.
 			Lares_GotRingBack = TRUE;
 			B_GivePlayerXP (XP_Ambient);
 		}
 		else
 		{
-			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_04"); //Хм-м... Оно у меня не с собой.
-			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_05"); //Постарайся вернуть его поскорее! Оно мне нужно.
+			AI_Output	(other, self, "DIA_Addon_Lares_RingBack_15_04"); //РҐРј-Рј... РћРЅРѕ Сѓ РјРµРЅСЏ РЅРµ СЃ СЃРѕР±РѕР№.
+			AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_05"); //РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РІРµСЂРЅСѓС‚СЊ РµРіРѕ РїРѕСЃРєРѕСЂРµРµ! РћРЅРѕ РјРЅРµ РЅСѓР¶РЅРѕ.
 		};
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_06"); //Наверное, тебе хочется поскорее получить снаряжение? Слушай меня внимательно.
+	AI_Output	(self, other, "DIA_Addon_Lares_RingBack_09_06"); //РќР°РІРµСЂРЅРѕРµ, С‚РµР±Рµ С…РѕС‡РµС‚СЃСЏ РїРѕСЃРєРѕСЂРµРµ РїРѕР»СѓС‡РёС‚СЊ СЃРЅР°СЂСЏР¶РµРЅРёРµ? РЎР»СѓС€Р°Р№ РјРµРЅСЏ РІРЅРёРјР°С‚РµР»СЊРЅРѕ.
 	B_Lares_Geheimtreffen();
 	
-	B_LogEntry (TOPIC_Addon_RingOfWater, "Ларес пригласил меня на тайную встречу Кольца Воды в таверне Орлана."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater, "Р›Р°СЂРµСЃ РїСЂРёРіР»Р°СЃРёР» РјРµРЅСЏ РЅР° С‚Р°Р№РЅСѓСЋ РІСЃС‚СЂРµС‡Сѓ РљРѕР»СЊС†Р° Р’РѕРґС‹ РІ С‚Р°РІРµСЂРЅРµ РћСЂР»Р°РЅР°."); 
 	
 	MIS_Addon_Lares_ComeToRangerMeeting = LOG_RUNNING;
 };
@@ -425,7 +425,7 @@ instance DIA_Addon_Lares_RingBack2		(C_INFO)
 	condition	= DIA_Addon_Lares_RingBack2_Condition;
 	information	= DIA_Addon_Lares_RingBack2_Info;
 
-	description	= "Вот твое кольцо.";
+	description	= "Р’РѕС‚ С‚РІРѕРµ РєРѕР»СЊС†Рѕ.";
 };
 func int DIA_Addon_Lares_RingBack2_Condition ()
 {
@@ -438,9 +438,9 @@ func int DIA_Addon_Lares_RingBack2_Condition ()
 };
 func void DIA_Addon_Lares_RingBack2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_RingBack2_15_00"); //Вот твое кольцо.
+	AI_Output	(other, self, "DIA_Addon_Lares_RingBack2_15_00"); //Р’РѕС‚ С‚РІРѕРµ РєРѕР»СЊС†Рѕ.
 	B_GiveInvItems (other, self, ItRi_Ranger_Lares_Addon,1);
-	AI_Output	(self, other, "DIA_Addon_Lares_RingBack2_09_01"); //Замечательно. Я боялся, что ты его потерял.
+	AI_Output	(self, other, "DIA_Addon_Lares_RingBack2_09_01"); //Р—Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ. РЇ Р±РѕСЏР»СЃСЏ, С‡С‚Рѕ С‚С‹ РµРіРѕ РїРѕС‚РµСЂСЏР».
 	B_GivePlayerXP (XP_Ambient);
 	Lares_GotRingBack = TRUE;
 };
@@ -470,7 +470,7 @@ func int DIA_Addon_Lares_Geduld_Condition ()
 
 func void DIA_Addon_Lares_Geduld_Info ()
 { 
-	AI_Output	(self, other, "DIA_Addon_Lares_Geduld_09_01"); //Тебе придется немного подождать. Еще не все собрались.
+	AI_Output	(self, other, "DIA_Addon_Lares_Geduld_09_01"); //РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅРµРјРЅРѕРіРѕ РїРѕРґРѕР¶РґР°С‚СЊ. Р•С‰Рµ РЅРµ РІСЃРµ СЃРѕР±СЂР°Р»РёСЃСЊ.
 	AI_StopProcessInfos (self);
 };
 
@@ -497,44 +497,44 @@ func int DIA_Addon_Lares_GetRangerArmor_Condition ()
 };
 func void DIA_Addon_Lares_GetRangerArmor_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_00"); //Итак, мой юный друг, мы собрались здесь, чтобы отпраздновать твое вступление в общество Кольца Воды.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_01"); //Люди, которые сейчас здесь присутствуют, будут присматривать за тобой.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_02"); //Конечно же, здесь не все члены общества, так что будь внимателен.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_03"); //Нам будет известно как о твоих действиях на благо Кольца, так и обо всех проступках.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_04"); //А теперь прими от братства эти доспехи.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_00"); //РС‚Р°Рє, РјРѕР№ СЋРЅС‹Р№ РґСЂСѓРі, РјС‹ СЃРѕР±СЂР°Р»РёСЃСЊ Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РѕС‚РїСЂР°Р·РґРЅРѕРІР°С‚СЊ С‚РІРѕРµ РІСЃС‚СѓРїР»РµРЅРёРµ РІ РѕР±С‰РµСЃС‚РІРѕ РљРѕР»СЊС†Р° Р’РѕРґС‹.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_01"); //Р›СЋРґРё, РєРѕС‚РѕСЂС‹Рµ СЃРµР№С‡Р°СЃ Р·РґРµСЃСЊ РїСЂРёСЃСѓС‚СЃС‚РІСѓСЋС‚, Р±СѓРґСѓС‚ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° С‚РѕР±РѕР№.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_02"); //РљРѕРЅРµС‡РЅРѕ Р¶Рµ, Р·РґРµСЃСЊ РЅРµ РІСЃРµ С‡Р»РµРЅС‹ РѕР±С‰РµСЃС‚РІР°, С‚Р°Рє С‡С‚Рѕ Р±СѓРґСЊ РІРЅРёРјР°С‚РµР»РµРЅ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_03"); //РќР°Рј Р±СѓРґРµС‚ РёР·РІРµСЃС‚РЅРѕ РєР°Рє Рѕ С‚РІРѕРёС… РґРµР№СЃС‚РІРёСЏС… РЅР° Р±Р»Р°РіРѕ РљРѕР»СЊС†Р°, С‚Р°Рє Рё РѕР±Рѕ РІСЃРµС… РїСЂРѕСЃС‚СѓРїРєР°С….
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_04"); //Рђ С‚РµРїРµСЂСЊ РїСЂРёРјРё РѕС‚ Р±СЂР°С‚СЃС‚РІР° СЌС‚Рё РґРѕСЃРїРµС…Рё.
 	CreateInvItem	(hero, ITAR_RANGER_Addon);
 	AI_EquipArmor	(hero, ITAR_RANGER_Addon);	
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_05"); //Носи их с гордостью! Но никогда не надевай их в городе или каком-либо другом населенном месте.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_06"); //Помни: наши имена должны оставаться в тайне. Никто не должен знать, что мы являемся членами общества. 
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_07"); //Болтать о Кольце Воды запрещено. Это наше главное правило. Запомни его.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_08"); //Вопросы есть?
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_05"); //РќРѕСЃРё РёС… СЃ РіРѕСЂРґРѕСЃС‚СЊСЋ! РќРѕ РЅРёРєРѕРіРґР° РЅРµ РЅР°РґРµРІР°Р№ РёС… РІ РіРѕСЂРѕРґРµ РёР»Рё РєР°РєРѕРј-Р»РёР±Рѕ РґСЂСѓРіРѕРј РЅР°СЃРµР»РµРЅРЅРѕРј РјРµСЃС‚Рµ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_06"); //РџРѕРјРЅРё: РЅР°С€Рё РёРјРµРЅР° РґРѕР»Р¶РЅС‹ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РІ С‚Р°Р№РЅРµ. РќРёРєС‚Рѕ РЅРµ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ РјС‹ СЏРІР»СЏРµРјСЃСЏ С‡Р»РµРЅР°РјРё РѕР±С‰РµСЃС‚РІР°. 
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_07"); //Р‘РѕР»С‚Р°С‚СЊ Рѕ РљРѕР»СЊС†Рµ Р’РѕРґС‹ Р·Р°РїСЂРµС‰РµРЅРѕ. Р­С‚Рѕ РЅР°С€Рµ РіР»Р°РІРЅРѕРµ РїСЂР°РІРёР»Рѕ. Р—Р°РїРѕРјРЅРё РµРіРѕ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_08"); //Р’РѕРїСЂРѕСЃС‹ РµСЃС‚СЊ?
 	
 	MIS_Addon_Lares_ComeToRangerMeeting = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
 	
 	Info_ClearChoices	(DIA_Addon_Lares_GetRangerArmor);
-	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "Я должен идти.", DIA_Addon_Lares_GetRangerArmor_end );
-	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "Как вы можете помочь мне?", DIA_Addon_Lares_GetRangerArmor_Learn );
-	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "Что насчет оружия?", DIA_Addon_Lares_GetRangerArmor_weapons );
+	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.", DIA_Addon_Lares_GetRangerArmor_end );
+	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "РљР°Рє РІС‹ РјРѕР¶РµС‚Рµ РїРѕРјРѕС‡СЊ РјРЅРµ?", DIA_Addon_Lares_GetRangerArmor_Learn );
+	Info_AddChoice	(DIA_Addon_Lares_GetRangerArmor, "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЂСѓР¶РёСЏ?", DIA_Addon_Lares_GetRangerArmor_weapons );
 
 };
 func void DIA_Addon_Lares_GetRangerArmor_weapons ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_weapons_15_00"); //Что насчет оружия?
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_01"); //Традиционное оружие членов братства Кольца - боевой посох, однако каждый может использовать то оружие, которое ему нравится.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_02"); //Вот один из наших посохов. Я так и не смог им овладеть, но может быть тебе он пригодится.
+	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_weapons_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЂСѓР¶РёСЏ?
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_01"); //РўСЂР°РґРёС†РёРѕРЅРЅРѕРµ РѕСЂСѓР¶РёРµ С‡Р»РµРЅРѕРІ Р±СЂР°С‚СЃС‚РІР° РљРѕР»СЊС†Р° - Р±РѕРµРІРѕР№ РїРѕСЃРѕС…, РѕРґРЅР°РєРѕ РєР°Р¶РґС‹Р№ РјРѕР¶РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚Рѕ РѕСЂСѓР¶РёРµ, РєРѕС‚РѕСЂРѕРµ РµРјСѓ РЅСЂР°РІРёС‚СЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_02"); //Р’РѕС‚ РѕРґРёРЅ РёР· РЅР°С€РёС… РїРѕСЃРѕС…РѕРІ. РЇ С‚Р°Рє Рё РЅРµ СЃРјРѕРі РёРј РѕРІР»Р°РґРµС‚СЊ, РЅРѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ С‚РµР±Рµ РѕРЅ РїСЂРёРіРѕРґРёС‚СЃСЏ.
 	CreateInvItems (self, ItMw_RangerStaff_Addon, 1);									
 	B_GiveInvItems (self, other, ItMw_RangerStaff_Addon, 1);		
 };
 func void DIA_Addon_Lares_GetRangerArmor_end ()
 {
 	B_MakeRangerReadyToLeaveMeetingALL ();
-	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_end_15_00"); //Я должен идти.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_01"); //Прекрасно, мы не будем тебя задерживать.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_02"); //Отправляйся к Ватрасу и попроси его дать тебе твое первое задание.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_03"); //Братья! Пришло время вернуться к нашей работе.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_04"); //Нападения бандитов все еще продолжаются. Мы должны ликвидировать эту угрозу.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_05"); //Да сохранит Аданос равновесие нашего мира.
+	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_end_15_00"); //РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_01"); //РџСЂРµРєСЂР°СЃРЅРѕ, РјС‹ РЅРµ Р±СѓРґРµРј С‚РµР±СЏ Р·Р°РґРµСЂР¶РёРІР°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_02"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє Р’Р°С‚СЂР°СЃСѓ Рё РїРѕРїСЂРѕСЃРё РµРіРѕ РґР°С‚СЊ С‚РµР±Рµ С‚РІРѕРµ РїРµСЂРІРѕРµ Р·Р°РґР°РЅРёРµ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_03"); //Р‘СЂР°С‚СЊСЏ! РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє РЅР°С€РµР№ СЂР°Р±РѕС‚Рµ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_04"); //РќР°РїР°РґРµРЅРёСЏ Р±Р°РЅРґРёС‚РѕРІ РІСЃРµ РµС‰Рµ РїСЂРѕРґРѕР»Р¶Р°СЋС‚СЃСЏ. РњС‹ РґРѕР»Р¶РЅС‹ Р»РёРєРІРёРґРёСЂРѕРІР°С‚СЊ СЌС‚Сѓ СѓРіСЂРѕР·Сѓ.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_end_09_05"); //Р”Р° СЃРѕС…СЂР°РЅРёС‚ РђРґР°РЅРѕСЃ СЂР°РІРЅРѕРІРµСЃРёРµ РЅР°С€РµРіРѕ РјРёСЂР°.
 	Lares_TakeFirstMissionFromVatras = TRUE;
 
 	Info_ClearChoices	(DIA_Addon_Lares_GetRangerArmor);
@@ -544,35 +544,35 @@ func void DIA_Addon_Lares_GetRangerArmor_weiter ()
 {
 	AI_StopProcessInfos (self);
 	B_RangerMeetingParking ();
-	B_LogEntry (TOPIC_Addon_RingOfWater,"На встрече в таверне Орлана я получил свою броню Кольца Воды. Теперь я должен встретиться с Ватрасом, который даст мне мое первое задание." ); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"РќР° РІСЃС‚СЂРµС‡Рµ РІ С‚Р°РІРµСЂРЅРµ РћСЂР»Р°РЅР° СЏ РїРѕР»СѓС‡РёР» СЃРІРѕСЋ Р±СЂРѕРЅСЋ РљРѕР»СЊС†Р° Р’РѕРґС‹. РўРµРїРµСЂСЊ СЏ РґРѕР»Р¶РµРЅ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р’Р°С‚СЂР°СЃРѕРј, РєРѕС‚РѕСЂС‹Р№ РґР°СЃС‚ РјРЅРµ РјРѕРµ РїРµСЂРІРѕРµ Р·Р°РґР°РЅРёРµ." ); 
 };
 
 func void DIA_Addon_Lares_GetRangerArmor_Learn ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_Learn_15_00"); //Как вы можете помочь мне?
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_01"); //Я могу сделать тебя более ловким.
+	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_Learn_15_00"); //РљР°Рє РІС‹ РјРѕР¶РµС‚Рµ РїРѕРјРѕС‡СЊ РјРЅРµ?
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_01"); //РЇ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ С‚РµР±СЏ Р±РѕР»РµРµ Р»РѕРІРєРёРј.
 
 	if ((Npc_IsDead(SLD_805_Cord))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_02"); //Если тебе нужно улучшить свое мастерство ближнего боя, поговори с Кордом. Он мастер клинка.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_02"); //Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ СѓР»СѓС‡С€РёС‚СЊ СЃРІРѕРµ РјР°СЃС‚РµСЂСЃС‚РІРѕ Р±Р»РёР¶РЅРµРіРѕ Р±РѕСЏ, РїРѕРіРѕРІРѕСЂРё СЃ РљРѕСЂРґРѕРј. РћРЅ РјР°СЃС‚РµСЂ РєР»РёРЅРєР°.
 	};
 	if ((Npc_IsDead(BAU_961_Gaan))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_03"); //Гаан научит тебя правильно разделывать животных.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_03"); //Р“Р°Р°РЅ РЅР°СѓС‡РёС‚ С‚РµР±СЏ РїСЂР°РІРёР»СЊРЅРѕ СЂР°Р·РґРµР»С‹РІР°С‚СЊ Р¶РёРІРѕС‚РЅС‹С….
 	};	
 	if ((Npc_IsDead(Mil_350_Addon_Martin))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_04"); //Мартину есть что рассказать тебе о паладинах.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_04"); //РњР°СЂС‚РёРЅСѓ РµСЃС‚СЊ С‡С‚Рѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Рѕ РїР°Р»Р°РґРёРЅР°С….
 	};	
 	if ((Npc_IsDead(Bau_4300_Addon_Cavalorn))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_05"); //Кавалорн может научить тебя красться, сражаться одноручным оружием и стрелять из лука.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_05"); //РљР°РІР°Р»РѕСЂРЅ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РєСЂР°СЃС‚СЊСЃСЏ, СЃСЂР°Р¶Р°С‚СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј Рё СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР°.
 	};
 	if ((Npc_IsDead(BAU_970_Orlan))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_06"); //У Орлана всегда найдется для тебя теплая комната и мягкая кровать.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_06"); //РЈ РћСЂР»Р°РЅР° РІСЃРµРіРґР° РЅР°Р№РґРµС‚СЃСЏ РґР»СЏ С‚РµР±СЏ С‚РµРїР»Р°СЏ РєРѕРјРЅР°С‚Р° Рё РјСЏРіРєР°СЏ РєСЂРѕРІР°С‚СЊ.
 	};
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_07"); //А во всем, что касается магии, ты можешь положиться на Ватраса.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_07"); //Рђ РІРѕ РІСЃРµРј, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РјР°РіРёРё, С‚С‹ РјРѕР¶РµС€СЊ РїРѕР»РѕР¶РёС‚СЊСЃСЏ РЅР° Р’Р°С‚СЂР°СЃР°.
 };
 
 
@@ -587,28 +587,28 @@ instance DIA_Addon_Lares_Teleportstation		(C_INFO)
 	condition	 = 	DIA_Addon_Lares_Teleportstation_Condition;
 	information	 = 	DIA_Addon_Lares_Teleportstation_Info;
 
-	description	 = 	"Тебе доводилось пользоваться телепортами?";
+	description	 = 	"РўРµР±Рµ РґРѕРІРѕРґРёР»РѕСЃСЊ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ С‚РµР»РµРїРѕСЂС‚Р°РјРё?";
 };
 func int DIA_Addon_Lares_Teleportstation_Condition ()
 {
 	if (MIS_Addon_Lares_Ornament2Saturas == LOG_SUCCESS)//SC war schon bei den Wassermagiern
 	&& (SCUsed_TELEPORTER == TRUE)			//SC hat schon mal einen Teleporter benutzt
-	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> fьr Orlan
+	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> fСЊr Orlan
 	{
 		return TRUE;
 	};
 };
 func void DIA_Addon_Lares_Teleportstation_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_00"); //Тебе доводилось пользоваться телепортами?
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_01"); //Нет, но я о них слышал. Маги воды сами пока не уверены в их надежности.
-	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_02"); //Я уже проходил через телепорт.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_03"); //(смеется) Ну конечно! Ты же вообще ничего не боишься, не так ли?
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_04"); //Ну что ж, если тебе не страшно ими пользоваться, попроси трактирщика Орлана впустить тебя в его пещеру.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_05"); //В ней спрятан один из телепортов магов воды. Пещера находится неподалеку от его таверны.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_06"); //Выходи через восточные городские ворота и иди по дороге прямо. Не промахнешься.
+	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_00"); //РўРµР±Рµ РґРѕРІРѕРґРёР»РѕСЃСЊ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ С‚РµР»РµРїРѕСЂС‚Р°РјРё?
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_01"); //РќРµС‚, РЅРѕ СЏ Рѕ РЅРёС… СЃР»С‹С€Р°Р». РњР°РіРё РІРѕРґС‹ СЃР°РјРё РїРѕРєР° РЅРµ СѓРІРµСЂРµРЅС‹ РІ РёС… РЅР°РґРµР¶РЅРѕСЃС‚Рё.
+	AI_Output	(other, self, "DIA_Addon_Lares_Teleportstation_15_02"); //РЇ СѓР¶Рµ РїСЂРѕС…РѕРґРёР» С‡РµСЂРµР· С‚РµР»РµРїРѕСЂС‚.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_03"); //(СЃРјРµРµС‚СЃСЏ) РќСѓ РєРѕРЅРµС‡РЅРѕ! РўС‹ Р¶Рµ РІРѕРѕР±С‰Рµ РЅРёС‡РµРіРѕ РЅРµ Р±РѕРёС€СЊСЃСЏ, РЅРµ С‚Р°Рє Р»Рё?
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_04"); //РќСѓ С‡С‚Рѕ Р¶, РµСЃР»Рё С‚РµР±Рµ РЅРµ СЃС‚СЂР°С€РЅРѕ РёРјРё РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ, РїРѕРїСЂРѕСЃРё С‚СЂР°РєС‚РёСЂС‰РёРєР° РћСЂР»Р°РЅР° РІРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ РІ РµРіРѕ РїРµС‰РµСЂСѓ.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_05"); //Р’ РЅРµР№ СЃРїСЂСЏС‚Р°РЅ РѕРґРёРЅ РёР· С‚РµР»РµРїРѕСЂС‚РѕРІ РјР°РіРѕРІ РІРѕРґС‹. РџРµС‰РµСЂР° РЅР°С…РѕРґРёС‚СЃСЏ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РµРіРѕ С‚Р°РІРµСЂРЅС‹.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_06"); //Р’С‹С…РѕРґРё С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Рµ РіРѕСЂРѕРґСЃРєРёРµ РІРѕСЂРѕС‚Р° Рё РёРґРё РїРѕ РґРѕСЂРѕРіРµ РїСЂСЏРјРѕ. РќРµ РїСЂРѕРјР°С…РЅРµС€СЊСЃСЏ.
 	
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Ларес рассказал мне, что неподалеку от таверны Орлана спрятан телепорт."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"Р›Р°СЂРµСЃ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С‚Р°РІРµСЂРЅС‹ РћСЂР»Р°РЅР° СЃРїСЂСЏС‚Р°РЅ С‚РµР»РµРїРѕСЂС‚."); 
 	Orlan_Hint_Lares = TRUE;
 };
 
@@ -627,7 +627,7 @@ instance DIA_Addon_Lares_Ornament		(C_INFO)
 	condition	= DIA_Addon_Lares_Ornament_Condition;
 	information	= DIA_Addon_Lares_Ornament_Info;
 
-	description	= "Ватрас просил передать тебе этот орнамент.";
+	description	= "Р’Р°С‚СЂР°СЃ РїСЂРѕСЃРёР» РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ СЌС‚РѕС‚ РѕСЂРЅР°РјРµРЅС‚.";
 };
 func int DIA_Addon_Lares_Ornament_Condition ()
 {
@@ -639,10 +639,10 @@ func int DIA_Addon_Lares_Ornament_Condition ()
 };
 func void DIA_Addon_Lares_Ornament_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Ornament_15_00"); //Ватрас просил передать тебе этот орнамент. Он сказал, что его нужно отнести назад.
+	AI_Output (other, self, "DIA_Addon_Lares_Ornament_15_00"); //Р’Р°С‚СЂР°СЃ РїСЂРѕСЃРёР» РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ СЌС‚РѕС‚ РѕСЂРЅР°РјРµРЅС‚. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµРіРѕ РЅСѓР¶РЅРѕ РѕС‚РЅРµСЃС‚Рё РЅР°Р·Р°Рґ.
 	B_GiveInvItems (other, self, ItMi_Ornament_Addon_Vatras,1);
-	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_01"); //(вздыхает) Ну конечно! Как всегда, работа достается мне. Я так и знал.
-	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_02"); //Теперь мне придется тащиться через пол-острова, чтобы отдать эту штуковину магам воды.
+	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_01"); //(РІР·РґС‹С…Р°РµС‚) РќСѓ РєРѕРЅРµС‡РЅРѕ! РљР°Рє РІСЃРµРіРґР°, СЂР°Р±РѕС‚Р° РґРѕСЃС‚Р°РµС‚СЃСЏ РјРЅРµ. РЇ С‚Р°Рє Рё Р·РЅР°Р».
+	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_02"); //РўРµРїРµСЂСЊ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ С‚Р°С‰РёС‚СЊСЃСЏ С‡РµСЂРµР· РїРѕР»-РѕСЃС‚СЂРѕРІР°, С‡С‚РѕР±С‹ РѕС‚РґР°С‚СЊ СЌС‚Сѓ С€С‚СѓРєРѕРІРёРЅСѓ РјР°РіР°Рј РІРѕРґС‹.
 };
 // ------------------------------------------------------------
 // Ornament BringJob
@@ -654,7 +654,7 @@ instance DIA_Addon_Lares_OrnamentBringJob		(C_INFO)
 	condition	= DIA_Addon_Lares_OrnamentBringJob_Condition;
 	information	= DIA_Addon_Lares_OrnamentBringJob_Info;
 
-	description = "Я могу отнести орнамент!";
+	description = "РЇ РјРѕРіСѓ РѕС‚РЅРµСЃС‚Рё РѕСЂРЅР°РјРµРЅС‚!";
 };
 func int DIA_Addon_Lares_OrnamentBringJob_Condition ()
 {
@@ -666,16 +666,16 @@ func int DIA_Addon_Lares_OrnamentBringJob_Condition ()
 };
 func void DIA_Addon_Lares_OrnamentBringJob_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_OrnamentBringJob_15_00"); //Я могу отнести орнамент!
-	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_01"); //(задумчиво) Хм-м... Нет, лучше я займусь этим сам. Впрочем, ты можешь пойти со мной.
-	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_02"); //Но сейчас я не могу уйти. Я должен наблюдать за гаванью.
+	AI_Output	(other, self, "DIA_Addon_Lares_OrnamentBringJob_15_00"); //РЇ РјРѕРіСѓ РѕС‚РЅРµСЃС‚Рё РѕСЂРЅР°РјРµРЅС‚!
+	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_01"); //(Р·Р°РґСѓРјС‡РёРІРѕ) РҐРј-Рј... РќРµС‚, Р»СѓС‡С€Рµ СЏ Р·Р°Р№РјСѓСЃСЊ СЌС‚РёРј СЃР°Рј. Р’РїСЂРѕС‡РµРј, С‚С‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё СЃРѕ РјРЅРѕР№.
+	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_02"); //РќРѕ СЃРµР№С‡Р°СЃ СЏ РЅРµ РјРѕРіСѓ СѓР№С‚Рё. РЇ РґРѕР»Р¶РµРЅ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РіР°РІР°РЅСЊСЋ.
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Я передал Ларесу орнамент Ватраса. Он хочет отнести его магам воды и просит меня сопровождать его."); 
+	B_LogEntry (TOPIC_Addon_KDW,"РЇ РїРµСЂРµРґР°Р» Р›Р°СЂРµСЃСѓ РѕСЂРЅР°РјРµРЅС‚ Р’Р°С‚СЂР°СЃР°. РћРЅ С…РѕС‡РµС‚ РѕС‚РЅРµСЃС‚Рё РµРіРѕ РјР°РіР°Рј РІРѕРґС‹ Рё РїСЂРѕСЃРёС‚ РјРµРЅСЏ СЃРѕРїСЂРѕРІРѕР¶РґР°С‚СЊ РµРіРѕ."); 
 	
 	MIS_Addon_Lares_Ornament2Saturas = LOG_RUNNING;
 };
 // ------------------------------------------------------------
-// Hol Ablцsung
+// Hol AblС†sung
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_YourMission		(C_INFO)
 {
@@ -684,7 +684,7 @@ instance DIA_Addon_Lares_YourMission		(C_INFO)
 	condition	= DIA_Addon_Lares_YourMission_Condition;
 	information	= DIA_Addon_Lares_YourMission_Info;
 	permanent 	= TRUE;
-	description = "Чем именно ты занимаешься в порту?";
+	description = "Р§РµРј РёРјРµРЅРЅРѕ С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ РІ РїРѕСЂС‚Сѓ?";
 };
 func int DIA_Addon_Lares_YourMission_Condition ()
 {
@@ -696,35 +696,35 @@ func int DIA_Addon_Lares_YourMission_Condition ()
 };
 func void DIA_Addon_Lares_YourMission_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_YourMission_15_00"); //Чем именно ты занимаешься в порту?
+	AI_Output (other, self, "DIA_Addon_Lares_YourMission_15_00"); //Р§РµРј РёРјРµРЅРЅРѕ С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ РІ РїРѕСЂС‚Сѓ?
 	
 	if (!Npc_KnowsInfo (other, DIA_Addon_Lares_WhatAreYouGuys))
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_01"); //Я не могу тебе сказать.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_02"); //Ватрас меня убьет...
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_01"); //РЇ РЅРµ РјРѕРіСѓ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_02"); //Р’Р°С‚СЂР°СЃ РјРµРЅСЏ СѓР±СЊРµС‚...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_03"); //Я делаю то, что делаем мы все. Выполняю задание, которое дали мне маги воды.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_04"); //Некоторые из пропавших людей были рыбаками. Они пропали вместе со своими лодками.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_05"); //Поэтому я нахожусь здесь и наблюдаю за гаванью. Если что-то еще произойдет, я это замечу.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_06"); //Но ты можешь мне помочь.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_07"); //Я дам тебе свое аквамариновое кольцо. Оно показывает, что его обладатель принадлежит к Кольцу Воды.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_03"); //РЇ РґРµР»Р°СЋ С‚Рѕ, С‡С‚Рѕ РґРµР»Р°РµРј РјС‹ РІСЃРµ. Р’С‹РїРѕР»РЅСЏСЋ Р·Р°РґР°РЅРёРµ, РєРѕС‚РѕСЂРѕРµ РґР°Р»Рё РјРЅРµ РјР°РіРё РІРѕРґС‹.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_04"); //РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РїСЂРѕРїР°РІС€РёС… Р»СЋРґРµР№ Р±С‹Р»Рё СЂС‹Р±Р°РєР°РјРё. РћРЅРё РїСЂРѕРїР°Р»Рё РІРјРµСЃС‚Рµ СЃРѕ СЃРІРѕРёРјРё Р»РѕРґРєР°РјРё.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_05"); //РџРѕСЌС‚РѕРјСѓ СЏ РЅР°С…РѕР¶СѓСЃСЊ Р·РґРµСЃСЊ Рё РЅР°Р±Р»СЋРґР°СЋ Р·Р° РіР°РІР°РЅСЊСЋ. Р•СЃР»Рё С‡С‚Рѕ-С‚Рѕ РµС‰Рµ РїСЂРѕРёР·РѕР№РґРµС‚, СЏ СЌС‚Рѕ Р·Р°РјРµС‡Сѓ.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_06"); //РќРѕ С‚С‹ РјРѕР¶РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_07"); //РЇ РґР°Рј С‚РµР±Рµ СЃРІРѕРµ Р°РєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ. РћРЅРѕ РїРѕРєР°Р·С‹РІР°РµС‚, С‡С‚Рѕ РµРіРѕ РѕР±Р»Р°РґР°С‚РµР»СЊ РїСЂРёРЅР°РґР»РµР¶РёС‚ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹.
 		
 		CreateInvItems (self, ItRi_Ranger_Lares_Addon, 1);									
 		B_GiveInvItems (self, other, ItRi_Ranger_Lares_Addon, 1);
 		SC_GotLaresRing = TRUE;		
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_08"); //Если ты будешь носить мое кольцо, то членам братства будет ясно, что ты действуешь от моего имени.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_09"); //Найди кого-нибудь, кто сменит меня, чтобы я смог отнести орнамент.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_10"); //На рынке постоянно дежурит кто-нибудь из наших. Но я не знаю, чья сейчас смена.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_11"); //Тебе лучше поговорить со всеми, кто там стоит. Когда наш человек увидит аквамариновое кольцо, он сам тебе откроется.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_12"); //Скажи ему, что мне нужен кто-то, кто сменит меня в порту.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_08"); //Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РЅРѕСЃРёС‚СЊ РјРѕРµ РєРѕР»СЊС†Рѕ, С‚Рѕ С‡Р»РµРЅР°Рј Р±СЂР°С‚СЃС‚РІР° Р±СѓРґРµС‚ СЏСЃРЅРѕ, С‡С‚Рѕ С‚С‹ РґРµР№СЃС‚РІСѓРµС€СЊ РѕС‚ РјРѕРµРіРѕ РёРјРµРЅРё.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_09"); //РќР°Р№РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ СЃРјРµРЅРёС‚ РјРµРЅСЏ, С‡С‚РѕР±С‹ СЏ СЃРјРѕРі РѕС‚РЅРµСЃС‚Рё РѕСЂРЅР°РјРµРЅС‚.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_10"); //РќР° СЂС‹РЅРєРµ РїРѕСЃС‚РѕСЏРЅРЅРѕ РґРµР¶СѓСЂРёС‚ РєС‚Рѕ-РЅРёР±СѓРґСЊ РёР· РЅР°С€РёС…. РќРѕ СЏ РЅРµ Р·РЅР°СЋ, С‡СЊСЏ СЃРµР№С‡Р°СЃ СЃРјРµРЅР°.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_11"); //РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РІСЃРµРјРё, РєС‚Рѕ С‚Р°Рј СЃС‚РѕРёС‚. РљРѕРіРґР° РЅР°С€ С‡РµР»РѕРІРµРє СѓРІРёРґРёС‚ Р°РєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ, РѕРЅ СЃР°Рј С‚РµР±Рµ РѕС‚РєСЂРѕРµС‚СЃСЏ.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_12"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РµРЅ РєС‚Рѕ-С‚Рѕ, РєС‚Рѕ СЃРјРµРЅРёС‚ РјРµРЅСЏ РІ РїРѕСЂС‚Сѓ.
 
-		B_LogEntry (TOPIC_Addon_RingOfWater,"Ларес дал мне аквамариновое кольцо - тайный знак Кольца Воды. Если я буду его носить, другие члены Кольца Воды смогут мне открыться."); 
+		B_LogEntry (TOPIC_Addon_RingOfWater,"Р›Р°СЂРµСЃ РґР°Р» РјРЅРµ Р°РєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ - С‚Р°Р№РЅС‹Р№ Р·РЅР°Рє РљРѕР»СЊС†Р° Р’РѕРґС‹. Р•СЃР»Рё СЏ Р±СѓРґСѓ РµРіРѕ РЅРѕСЃРёС‚СЊ, РґСЂСѓРіРёРµ С‡Р»РµРЅС‹ РљРѕР»СЊС†Р° Р’РѕРґС‹ СЃРјРѕРіСѓС‚ РјРЅРµ РѕС‚РєСЂС‹С‚СЊСЃСЏ."); 
 
 		Log_CreateTopic (TOPIC_Addon_BringRangerToLares, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_BringRangerToLares, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_BringRangerToLares,"Ларес хочет покинуть гавань. Я должен пройтись по рынку, надев аквамариновое кольцо, и попробовать найти кого-то, кто займет место Лареса."); 
+		B_LogEntry (TOPIC_Addon_BringRangerToLares,"Р›Р°СЂРµСЃ С…РѕС‡РµС‚ РїРѕРєРёРЅСѓС‚СЊ РіР°РІР°РЅСЊ. РЇ РґРѕР»Р¶РµРЅ РїСЂРѕР№С‚РёСЃСЊ РїРѕ СЂС‹РЅРєСѓ, РЅР°РґРµРІ Р°РєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ, Рё РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РЅР°Р№С‚Рё РєРѕРіРѕ-С‚Рѕ, РєС‚Рѕ Р·Р°Р№РјРµС‚ РјРµСЃС‚Рѕ Р›Р°СЂРµСЃР°."); 
 
 		MIS_Lares_BringRangerToMe = LOG_RUNNING;
 	};
@@ -739,7 +739,7 @@ instance DIA_Addon_Lares_BaltramAbloese		(C_INFO)
 	condition	 = 	DIA_Addon_Lares_BaltramAbloese_Condition;
 	information	 = 	DIA_Addon_Lares_BaltramAbloese_Info;
 
-	description	 = 	"Я говорил с Бальтрамом.";
+	description	 = 	"РЇ РіРѕРІРѕСЂРёР» СЃ Р‘Р°Р»СЊС‚СЂР°РјРѕРј.";
 };
 func int DIA_Addon_Lares_BaltramAbloese_Condition ()
 {
@@ -752,19 +752,19 @@ func int DIA_Addon_Lares_BaltramAbloese_Condition ()
 
 func void DIA_Addon_Lares_BaltramAbloese_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_BaltramAbloese_15_00"); //Я говорил с Бальтрамом. Он найдет тебе замену.
-	AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_01"); //Очень хорошо! В таком случае, мы можем отправляться.
+	AI_Output (other, self, "DIA_Addon_Lares_BaltramAbloese_15_00"); //РЇ РіРѕРІРѕСЂРёР» СЃ Р‘Р°Р»СЊС‚СЂР°РјРѕРј. РћРЅ РЅР°Р№РґРµС‚ С‚РµР±Рµ Р·Р°РјРµРЅСѓ.
+	AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, РјС‹ РјРѕР¶РµРј РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ.
 	if (SC_IsRanger == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_02"); //Мое кольцо пока можешь оставить себе.
+		AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_02"); //РњРѕРµ РєРѕР»СЊС†Рѕ РїРѕРєР° РјРѕР¶РµС€СЊ РѕСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ.
 		
 		if (Npc_KnowsInfo (other, DIA_Addon_Lares_WannaBeRanger))
 		{
-			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_03"); //(улыбается) Думаю, оно тебе еще поможет.
+			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_03"); //(СѓР»С‹Р±Р°РµС‚СЃСЏ) Р”СѓРјР°СЋ, РѕРЅРѕ С‚РµР±Рµ РµС‰Рµ РїРѕРјРѕР¶РµС‚.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_04"); //(улыбается) Кто знает, может, ты решишь стать одним из нас...
+			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_04"); //(СѓР»С‹Р±Р°РµС‚СЃСЏ) РљС‚Рѕ Р·РЅР°РµС‚, РјРѕР¶РµС‚, С‚С‹ СЂРµС€РёС€СЊ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ...
 		};
 	};
 	MIS_Lares_BringRangerToMe = LOG_SUCCESS;
@@ -788,7 +788,7 @@ instance DIA_Addon_Lares_PeopleMissing		(C_INFO)
 	condition	= DIA_Addon_Lares_PeopleMissing_Condition;
 	information	= DIA_Addon_Lares_PeopleMissing_Info;
 	permanent 	= TRUE;
-	description	= "Насчет пропавших людей...";
+	description	= "РќР°СЃС‡РµС‚ РїСЂРѕРїР°РІС€РёС… Р»СЋРґРµР№...";
 };
 func int DIA_Addon_Lares_PeopleMissing_Condition ()
 {
@@ -801,23 +801,23 @@ func int DIA_Addon_Lares_PeopleMissing_Condition ()
 };
 func void DIA_Addon_Lares_PeopleMissing_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_15_00"); //Насчет пропавших людей...
+	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_15_00"); //РќР°СЃС‡РµС‚ РїСЂРѕРїР°РІС€РёС… Р»СЋРґРµР№...
 	Info_ClearChoices (DIA_Addon_Lares_PeopleMissing);
 	Info_AddChoice (DIA_Addon_Lares_PeopleMissing, DIALOG_BACK, DIA_Addon_Lares_PeopleMissing_BACK);
 	if (MissingPeopleReturnedHome == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Мне удалось спасти некоторых из похищенных людей.", DIA_Addon_Lares_PeopleMissing_SAVED );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "РњРЅРµ СѓРґР°Р»РѕСЃСЊ СЃРїР°СЃС‚Рё РЅРµРєРѕС‚РѕСЂС‹С… РёР· РїРѕС…РёС‰РµРЅРЅС‹С… Р»СЋРґРµР№.", DIA_Addon_Lares_PeopleMissing_SAVED );
 	}
 	else if (MIS_Lares_BringRangerToMe != 0)
 	&& (SCKnowsMissingPeopleAreInAddonWorld == TRUE)
 	&& (MissingPeopleReturnedHome == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Я знаю, что случилось с пропавшими людьми!", DIA_Addon_Lares_PeopleMissing_Success );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "РЇ Р·РЅР°СЋ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РїСЂРѕРїР°РІС€РёРјРё Р»СЋРґСЊРјРё!", DIA_Addon_Lares_PeopleMissing_Success );
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Разве этим делом не должно заниматься ополчение?", DIA_Addon_Lares_PeopleMissing_MIL );
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Расскажи мне, что тебе известно.", DIA_Addon_Lares_PeopleMissing_TellMe );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Р Р°Р·РІРµ СЌС‚РёРј РґРµР»РѕРј РЅРµ РґРѕР»Р¶РЅРѕ Р·Р°РЅРёРјР°С‚СЊСЃСЏ РѕРїРѕР»С‡РµРЅРёРµ?", DIA_Addon_Lares_PeopleMissing_MIL );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ.", DIA_Addon_Lares_PeopleMissing_TellMe );
 	};
 };
 func void DIA_Addon_Lares_PeopleMissing_BACK()
@@ -826,11 +826,11 @@ func void DIA_Addon_Lares_PeopleMissing_BACK()
 };
 func void DIA_Addon_Lares_PeopleMissing_TellMe()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_TellMe_15_00"); //Расскажи мне, что тебе известно.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_01"); //Первым пропал Вильям, один из городских рыбаков. В один прекрасный день он просто не вернулся из плаванья.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_02"); //Сначала мы подумали, что его вместе с его лодкой просто сожрали морские чудовища.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_03"); //Но через некоторое время начали пропадать другие люди, как горожане, так и жители предместий.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_04"); //Найти пока никого не удалось. Похоже на то, что нам остается только ждать, пока кто-нибудь не наткнется на какую-нибудь улику.
+	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_TellMe_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_01"); //РџРµСЂРІС‹Рј РїСЂРѕРїР°Р» Р’РёР»СЊСЏРј, РѕРґРёРЅ РёР· РіРѕСЂРѕРґСЃРєРёС… СЂС‹Р±Р°РєРѕРІ. Р’ РѕРґРёРЅ РїСЂРµРєСЂР°СЃРЅС‹Р№ РґРµРЅСЊ РѕРЅ РїСЂРѕСЃС‚Рѕ РЅРµ РІРµСЂРЅСѓР»СЃСЏ РёР· РїР»Р°РІР°РЅСЊСЏ.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_02"); //РЎРЅР°С‡Р°Р»Р° РјС‹ РїРѕРґСѓРјР°Р»Рё, С‡С‚Рѕ РµРіРѕ РІРјРµСЃС‚Рµ СЃ РµРіРѕ Р»РѕРґРєРѕР№ РїСЂРѕСЃС‚Рѕ СЃРѕР¶СЂР°Р»Рё РјРѕСЂСЃРєРёРµ С‡СѓРґРѕРІРёС‰Р°.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_03"); //РќРѕ С‡РµСЂРµР· РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅР°С‡Р°Р»Рё РїСЂРѕРїР°РґР°С‚СЊ РґСЂСѓРіРёРµ Р»СЋРґРё, РєР°Рє РіРѕСЂРѕР¶Р°РЅРµ, С‚Р°Рє Рё Р¶РёС‚РµР»Рё РїСЂРµРґРјРµСЃС‚РёР№.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_04"); //РќР°Р№С‚Рё РїРѕРєР° РЅРёРєРѕРіРѕ РЅРµ СѓРґР°Р»РѕСЃСЊ. РџРѕС…РѕР¶Рµ РЅР° С‚Рѕ, С‡С‚Рѕ РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ Р¶РґР°С‚СЊ, РїРѕРєР° РєС‚Рѕ-РЅРёР±СѓРґСЊ РЅРµ РЅР°С‚РєРЅРµС‚СЃСЏ РЅР° РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ СѓР»РёРєСѓ.
 
 		if (SC_HearedAboutMissingPeople == FALSE)
 		{
@@ -847,26 +847,26 @@ func void DIA_Addon_Lares_PeopleMissing_TellMe()
 };
 func void DIA_Addon_Lares_PeopleMissing_MIL()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_MIL_15_00"); //Разве этим делом не должно заниматься ополчение?
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_01"); //На мой взгляд, ополчение здесь довольно бесполезно.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_02"); //Люди пропадали безо всяких следов. Нет, ополчению здесь не справиться.
+	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_MIL_15_00"); //Р Р°Р·РІРµ СЌС‚РёРј РґРµР»РѕРј РЅРµ РґРѕР»Р¶РЅРѕ Р·Р°РЅРёРјР°С‚СЊСЃСЏ РѕРїРѕР»С‡РµРЅРёРµ?
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_01"); //РќР° РјРѕР№ РІР·РіР»СЏРґ, РѕРїРѕР»С‡РµРЅРёРµ Р·РґРµСЃСЊ РґРѕРІРѕР»СЊРЅРѕ Р±РµСЃРїРѕР»РµР·РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_02"); //Р›СЋРґРё РїСЂРѕРїР°РґР°Р»Рё Р±РµР·Рѕ РІСЃСЏРєРёС… СЃР»РµРґРѕРІ. РќРµС‚, РѕРїРѕР»С‡РµРЅРёСЋ Р·РґРµСЃСЊ РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ.
 };
 func void DIA_Addon_Lares_PeopleMissing_Success()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_00"); //Я знаю, что случилось с пропавшими людьми!
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_01"); //(удивленно) Действительно?
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_02"); //Их похитил бывший рудный барон Ворон. 
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_03"); //Ты уверен? В таком случае мы должны освободить их.
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_04"); //Я над этим работаю.
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_05"); //Очень хорошо. И не забывай, если тебе понадобится моя помощь...
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_06"); //...то я знаю, где тебя найти. Все понятно.
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_00"); //РЇ Р·РЅР°СЋ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ РїСЂРѕРїР°РІС€РёРјРё Р»СЋРґСЊРјРё!
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_01"); //(СѓРґРёРІР»РµРЅРЅРѕ) Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ?
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_02"); //РС… РїРѕС…РёС‚РёР» Р±С‹РІС€РёР№ СЂСѓРґРЅС‹Р№ Р±Р°СЂРѕРЅ Р’РѕСЂРѕРЅ. 
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_03"); //РўС‹ СѓРІРµСЂРµРЅ? Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ РјС‹ РґРѕР»Р¶РЅС‹ РѕСЃРІРѕР±РѕРґРёС‚СЊ РёС….
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_04"); //РЇ РЅР°Рґ СЌС‚РёРј СЂР°Р±РѕС‚Р°СЋ.
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_05"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р РЅРµ Р·Р°Р±С‹РІР°Р№, РµСЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РјРѕСЏ РїРѕРјРѕС‰СЊ...
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_06"); //...С‚Рѕ СЏ Р·РЅР°СЋ, РіРґРµ С‚РµР±СЏ РЅР°Р№С‚Рё. Р’СЃРµ РїРѕРЅСЏС‚РЅРѕ.
 	Lares_CanBringScToPlaces = TRUE;
 	Info_ClearChoices (DIA_Addon_Lares_PeopleMissing);
 };
 func void DIA_Addon_Lares_PeopleMissing_SAVED ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_SAVED_15_00"); //Мне удалось спасти некоторых из похищенных людей.
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_SAVED_09_01"); //Я знал, что ты справишься. Теперь я наконец-то смогу заняться своими делами.
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_SAVED_15_00"); //РњРЅРµ СѓРґР°Р»РѕСЃСЊ СЃРїР°СЃС‚Рё РЅРµРєРѕС‚РѕСЂС‹С… РёР· РїРѕС…РёС‰РµРЅРЅС‹С… Р»СЋРґРµР№.
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_SAVED_09_01"); //РЇ Р·РЅР°Р», С‡С‚Рѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ. РўРµРїРµСЂСЊ СЏ РЅР°РєРѕРЅРµС†-С‚Рѕ СЃРјРѕРіСѓ Р·Р°РЅСЏС‚СЊСЃСЏ СЃРІРѕРёРјРё РґРµР»Р°РјРё.
 	B_GivePlayerXP (XP_Ambient);
 	Lares_PeopleMissing_PERM = TRUE;
 	Lares_CanBringScToPlaces = TRUE;
@@ -889,7 +889,7 @@ instance DIA_Addon_Lares_RangerHelp		(C_INFO)
 	condition	= DIA_Addon_Lares_RangerHelp_Condition;
 	information	= DIA_Addon_Lares_RangerHelp_Info;
 	permanent	= TRUE;
-	description	= "Мне нужна твоя помощь.";
+	description	= "РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.";
 };
 func int DIA_Addon_Lares_RangerHelp_Condition ()
 {
@@ -907,57 +907,57 @@ func int DIA_Addon_Lares_RangerHelp_Condition ()
 };
 func void DIA_Addon_Lares_RangerHelp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_RangerHelp_15_00"); //Мне нужна твоя помощь.
-	AI_Output	(self, other, "DIA_Addon_Lares_RangerHelp_09_01"); //Что именно тебе нужно?
+	AI_Output	(other, self, "DIA_Addon_Lares_RangerHelp_15_00"); //РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
+	AI_Output	(self, other, "DIA_Addon_Lares_RangerHelp_09_01"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	
 	Info_ClearChoices	(DIA_Addon_Lares_RangerHelp);
 	Info_AddChoice (DIA_Addon_Lares_RangerHelp, DIALOG_BACK, DIA_Addon_Lares_RangerHelp_nix );
 	
 	if (Npc_IsInState (Moe, ZS_Attack))
 	{
-		Info_AddChoice (DIA_Addon_Lares_RangerHelp, "Этот парень мне надоедает...", DIA_Addon_Lares_RangerHelp_Moe);
+		Info_AddChoice (DIA_Addon_Lares_RangerHelp, "Р­С‚РѕС‚ РїР°СЂРµРЅСЊ РјРЅРµ РЅР°РґРѕРµРґР°РµС‚...", DIA_Addon_Lares_RangerHelp_Moe);
 	};
 		
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_Waffe == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Мне нужно лучшее оружие.", DIA_Addon_Lares_RangerHelp_waffe );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "РњРЅРµ РЅСѓР¶РЅРѕ Р»СѓС‡С€РµРµ РѕСЂСѓР¶РёРµ.", DIA_Addon_Lares_RangerHelp_waffe );
 	};
 
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_ruestung == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Как насчет лучшей брони?", DIA_Addon_Lares_RangerHelp_ruestung );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "РљР°Рє РЅР°СЃС‡РµС‚ Р»СѓС‡С€РµР№ Р±СЂРѕРЅРё?", DIA_Addon_Lares_RangerHelp_ruestung );
 	};
 
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_geld == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Мне нужны деньги.", DIA_Addon_Lares_RangerHelp_geld );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "РњРЅРµ РЅСѓР¶РЅС‹ РґРµРЅСЊРіРё.", DIA_Addon_Lares_RangerHelp_geld );
 	};
 };
 func void DIA_Addon_Lares_RangerHelp_ruestung ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_00"); //Как насчет лучшей брони?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_01"); //Хм-м. Броню продает Маттео. Но он сдерет с тебя за нее три шкуры.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_02"); //Но ты можешь получить доспехи бесплатно, если, конечно, ты не против того, чтобы немного нарушить закон...
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_03"); //Что ты имеешь в виду?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_04"); //Рядом с домом Маттео есть небольшой открытый склад. Но все находящиеся там товары были конфискованы ополчением.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_05"); //Отправляйся на рынок и купи у Зуриса заклинание сна. Оно позволит тебе усыпить охранника.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_06"); //Уверен, что среди вещей Маттео ты найдешь себе достойную броню...
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_00"); //РљР°Рє РЅР°СЃС‡РµС‚ Р»СѓС‡С€РµР№ Р±СЂРѕРЅРё?
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_01"); //РҐРј-Рј. Р‘СЂРѕРЅСЋ РїСЂРѕРґР°РµС‚ РњР°С‚С‚РµРѕ. РќРѕ РѕРЅ СЃРґРµСЂРµС‚ СЃ С‚РµР±СЏ Р·Р° РЅРµРµ С‚СЂРё С€РєСѓСЂС‹.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_02"); //РќРѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃРїРµС…Рё Р±РµСЃРїР»Р°С‚РЅРѕ, РµСЃР»Рё, РєРѕРЅРµС‡РЅРѕ, С‚С‹ РЅРµ РїСЂРѕС‚РёРІ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РЅРµРјРЅРѕРіРѕ РЅР°СЂСѓС€РёС‚СЊ Р·Р°РєРѕРЅ...
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_03"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ?
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_04"); //Р СЏРґРѕРј СЃ РґРѕРјРѕРј РњР°С‚С‚РµРѕ РµСЃС‚СЊ РЅРµР±РѕР»СЊС€РѕР№ РѕС‚РєСЂС‹С‚С‹Р№ СЃРєР»Р°Рґ. РќРѕ РІСЃРµ РЅР°С…РѕРґСЏС‰РёРµСЃСЏ С‚Р°Рј С‚РѕРІР°СЂС‹ Р±С‹Р»Рё РєРѕРЅС„РёСЃРєРѕРІР°РЅС‹ РѕРїРѕР»С‡РµРЅРёРµРј.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_05"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РЅР° СЂС‹РЅРѕРє Рё РєСѓРїРё Сѓ Р—СѓСЂРёСЃР° Р·Р°РєР»РёРЅР°РЅРёРµ СЃРЅР°. РћРЅРѕ РїРѕР·РІРѕР»РёС‚ С‚РµР±Рµ СѓСЃС‹РїРёС‚СЊ РѕС…СЂР°РЅРЅРёРєР°.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_06"); //РЈРІРµСЂРµРЅ, С‡С‚Рѕ СЃСЂРµРґРё РІРµС‰РµР№ РњР°С‚С‚РµРѕ С‚С‹ РЅР°Р№РґРµС€СЊ СЃРµР±Рµ РґРѕСЃС‚РѕР№РЅСѓСЋ Р±СЂРѕРЅСЋ...
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_ruestung = TRUE;
 };
 func void DIA_Addon_Lares_RangerHelp_waffe ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_waffe_15_00"); //Мне нужно лучшее оружие.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_waffe_09_01"); //Боюсь, что тут я тебе помочь не могу. Почему бы тебе не сходить на рынок?
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_waffe_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ Р»СѓС‡С€РµРµ РѕСЂСѓР¶РёРµ.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_waffe_09_01"); //Р‘РѕСЋСЃСЊ, С‡С‚Рѕ С‚СѓС‚ СЏ С‚РµР±Рµ РїРѕРјРѕС‡СЊ РЅРµ РјРѕРіСѓ. РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ СЃС…РѕРґРёС‚СЊ РЅР° СЂС‹РЅРѕРє?
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_Waffe = TRUE;
 };
 func void DIA_Addon_Lares_RangerHelp_geld ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_geld_15_00"); //Мне нужны деньги.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_01"); //А кому они не нужны? Извини, но я сам поиздержался. Впрочем, ростовщик Лемар кое-чем мне обязан.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_02"); //Отправляйся к нему и одолжи столько, сколько тебе нужно. Об остальном я позабочусь. Дом Лемара находится на границе порта и нижнего квартала города.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_geld_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРµРЅСЊРіРё.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_01"); //Рђ РєРѕРјСѓ РѕРЅРё РЅРµ РЅСѓР¶РЅС‹? РР·РІРёРЅРё, РЅРѕ СЏ СЃР°Рј РїРѕРёР·РґРµСЂР¶Р°Р»СЃСЏ. Р’РїСЂРѕС‡РµРј, СЂРѕСЃС‚РѕРІС‰РёРє Р›РµРјР°СЂ РєРѕРµ-С‡РµРј РјРЅРµ РѕР±СЏР·Р°РЅ.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_02"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЅРµРјСѓ Рё РѕРґРѕР»Р¶Рё СЃС‚РѕР»СЊРєРѕ, СЃРєРѕР»СЊРєРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ. РћР± РѕСЃС‚Р°Р»СЊРЅРѕРј СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ. Р”РѕРј Р›РµРјР°СЂР° РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РіСЂР°РЅРёС†Рµ РїРѕСЂС‚Р° Рё РЅРёР¶РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р° РіРѕСЂРѕРґР°.
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_geld = TRUE;
 	RangerHelp_LehmarKohle = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_RangerHelp);
@@ -971,8 +971,8 @@ func void DIA_Addon_Lares_RangerHelp_nix ()
 // ------------------------------------------------------------
 func void DIA_Addon_Lares_RangerHelp_Moe()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Moe_15_00"); //Этот парень мне надоедает...
-	AI_Output (self, other, "DIA_Addon_Lares_Moe_09_01"); //Ничего, это пройдет...
+	AI_Output (other, self, "DIA_Addon_Lares_Moe_15_00"); //Р­С‚РѕС‚ РїР°СЂРµРЅСЊ РјРЅРµ РЅР°РґРѕРµРґР°РµС‚...
+	AI_Output (self, other, "DIA_Addon_Lares_Moe_09_01"); //РќРёС‡РµРіРѕ, СЌС‚Рѕ РїСЂРѕР№РґРµС‚...
 	Info_ClearChoices (DIA_Addon_Lares_RangerHelp);
 	AI_StopProcessInfos (self);
 	other.aivar[AIV_INVINCIBLE] = FALSE;
@@ -1002,7 +1002,7 @@ instance DIA_Lares_Paladine	(C_INFO)
 	condition	 = 	DIA_Lares_Paladine_Condition;
 	information	 = 	DIA_Lares_Paladine_Info;
 	permanent    =  FALSE;
-	description	 = 	"Мне во что бы то ни стало нужно поговорить с паладинами!";
+	description	 = 	"РњРЅРµ РІРѕ С‡С‚Рѕ Р±С‹ С‚Рѕ РЅРё СЃС‚Р°Р»Рѕ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РїР°Р»Р°РґРёРЅР°РјРё!";
 };
 func int DIA_Lares_Paladine_Condition ()
 {	
@@ -1016,18 +1016,18 @@ func int DIA_Lares_Paladine_Condition ()
 };
 func void DIA_Lares_Paladine_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_Paladine_15_00"); //Мне во что бы то ни стало нужно поговорить с паладинами!
-	AI_Output (self, other, "DIA_Lares_Paladine_09_01"); //Что тебе нужно от НИХ?
-	AI_Output (other, self, "DIA_Lares_Paladine_15_02"); //У них есть амулет, Глаз Инноса. Я должен заполучить его.
-	AI_Output (self, other, "DIA_Lares_Paladine_09_03"); //И ты думаешь, они отдадут его тебе? Тебе никогда не попасть в верхний квартал города.
+	AI_Output (other, self, "DIA_Lares_Paladine_15_00"); //РњРЅРµ РІРѕ С‡С‚Рѕ Р±С‹ С‚Рѕ РЅРё СЃС‚Р°Р»Рѕ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РїР°Р»Р°РґРёРЅР°РјРё!
+	AI_Output (self, other, "DIA_Lares_Paladine_09_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РќРРҐ?
+	AI_Output (other, self, "DIA_Lares_Paladine_15_02"); //РЈ РЅРёС… РµСЃС‚СЊ Р°РјСѓР»РµС‚, Р“Р»Р°Р· РРЅРЅРѕСЃР°. РЇ РґРѕР»Р¶РµРЅ Р·Р°РїРѕР»СѓС‡РёС‚СЊ РµРіРѕ.
+	AI_Output (self, other, "DIA_Lares_Paladine_09_03"); //Р С‚С‹ РґСѓРјР°РµС€СЊ, РѕРЅРё РѕС‚РґР°РґСѓС‚ РµРіРѕ С‚РµР±Рµ? РўРµР±Рµ РЅРёРєРѕРіРґР° РЅРµ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р» РіРѕСЂРѕРґР°.
 	if (!Npc_KnowsInfo (other, DIA_Addon_Lares_Vatras))
 	{
-		AI_Output (other, self, "DIA_Lares_Paladine_15_04"); //Я что-нибудь придумаю.
-		AI_Output (self, other, "DIA_Lares_Paladine_09_05"); //Конечно, если ты сможешь снискать уважение горожан или станешь мальчиком на побегушках в ополчении...
+		AI_Output (other, self, "DIA_Lares_Paladine_15_04"); //РЇ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёРґСѓРјР°СЋ.
+		AI_Output (self, other, "DIA_Lares_Paladine_09_05"); //РљРѕРЅРµС‡РЅРѕ, РµСЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ СЃРЅРёСЃРєР°С‚СЊ СѓРІР°Р¶РµРЅРёРµ РіРѕСЂРѕР¶Р°РЅ РёР»Рё СЃС‚Р°РЅРµС€СЊ РјР°Р»СЊС‡РёРєРѕРј РЅР° РїРѕР±РµРіСѓС€РєР°С… РІ РѕРїРѕР»С‡РµРЅРёРё...
 	};
 	
 	//AI_Output (other, self, "DIA_Lares_Alternative_15_00"); //Hab' ich eine Alternative?
-	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du wдre, wьrde ich zu Onars Hof gehen und mit Lee reden.
+	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du wРґre, wСЊrde ich zu Onars Hof gehen und mit Lee reden.
 	//AI_Output (self, other, "DIA_Lares_Alternative_09_02"); //Ich bin mir sicher, wir finden einem Weg, dich ins obere Viertel zu bringen.
 };	
 
@@ -1041,7 +1041,7 @@ instance DIA_Lares_WhyPalHere		(C_INFO)
 	condition	 = 	DIA_Lares_WhyPalHere_Condition;
 	information	 = 	DIA_Lares_WhyPalHere_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ты знаешь, зачем паладины прибыли сюда?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ, Р·Р°С‡РµРј РїР°Р»Р°РґРёРЅС‹ РїСЂРёР±С‹Р»Рё СЃСЋРґР°?";
 };
 func int DIA_Lares_WhyPalHere_Condition ()
 {	
@@ -1058,9 +1058,9 @@ func int DIA_Lares_WhyPalHere_Condition ()
 };
 func void DIA_Lares_WhyPalHere_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_WhyPalHere_15_00"); //Ты знаешь, зачем паладины прибыли сюда?
-	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_01"); //Никто точно не знает этого... Большинство думает, что из-за орков, но мне кажется, причина совсем в другом.
-	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_02"); //Скорее всего, это имеет отношение к старой колонии.
+	AI_Output (other, self, "DIA_Lares_WhyPalHere_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, Р·Р°С‡РµРј РїР°Р»Р°РґРёРЅС‹ РїСЂРёР±С‹Р»Рё СЃСЋРґР°?
+	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_01"); //РќРёРєС‚Рѕ С‚РѕС‡РЅРѕ РЅРµ Р·РЅР°РµС‚ СЌС‚РѕРіРѕ... Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РґСѓРјР°РµС‚, С‡С‚Рѕ РёР·-Р·Р° РѕСЂРєРѕРІ, РЅРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, РїСЂРёС‡РёРЅР° СЃРѕРІСЃРµРј РІ РґСЂСѓРіРѕРј.
+	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_02"); //РЎРєРѕСЂРµРµ РІСЃРµРіРѕ, СЌС‚Рѕ РёРјРµРµС‚ РѕС‚РЅРѕС€РµРЅРёРµ Рє СЃС‚Р°СЂРѕР№ РєРѕР»РѕРЅРёРё.
 };	
 
 // ------------------------------------------------------------
@@ -1073,7 +1073,7 @@ instance DIA_Addon_Lares_Gilde (C_INFO)
 	condition	 = 	DIA_Addon_Lares_Gilde_Condition;
 	information	 = 	DIA_Addon_Lares_Gilde_Info;
 	permanent    =  TRUE;
-	description	 = 	"Ватрас сказал, что ты можешь помочь мне присоединиться к одному из сообществ.";
+	description	 = 	"Р’Р°С‚СЂР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРґРЅРѕРјСѓ РёР· СЃРѕРѕР±С‰РµСЃС‚РІ.";
 };
 func int DIA_Addon_Lares_Gilde_Condition ()
 {	
@@ -1088,67 +1088,67 @@ func int DIA_Addon_Lares_Gilde_Condition ()
 };
 func void DIA_Addon_Lares_Gilde_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_15_00"); //Ватрас сказал, что ты можешь помочь мне присоединиться к одному из сообществ.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_01"); //(смеется) Что, устал быть человеком второго сорта?
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_02"); //Ладно, я все понимаю.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_03"); //Если ты хочешь присоединиться к Ли, я могу использовать свое влияние среди наемников.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_04"); //Уверен, что мы также сможем найти быстрый способ определить тебя в монастырь.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_05"); //Но проще всего, конечно, тебе будет вступить в ряды ополчения.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_06"); //Итак, что ты предпочитаешь?
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_15_00"); //Р’Р°С‚СЂР°СЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРґРЅРѕРјСѓ РёР· СЃРѕРѕР±С‰РµСЃС‚РІ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_01"); //(СЃРјРµРµС‚СЃСЏ) Р§С‚Рѕ, СѓСЃС‚Р°Р» Р±С‹С‚СЊ С‡РµР»РѕРІРµРєРѕРј РІС‚РѕСЂРѕРіРѕ СЃРѕСЂС‚Р°?
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_02"); //Р›Р°РґРЅРѕ, СЏ РІСЃРµ РїРѕРЅРёРјР°СЋ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_03"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р›Рё, СЏ РјРѕРіСѓ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЃРІРѕРµ РІР»РёСЏРЅРёРµ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_04"); //РЈРІРµСЂРµРЅ, С‡С‚Рѕ РјС‹ С‚Р°РєР¶Рµ СЃРјРѕР¶РµРј РЅР°Р№С‚Рё Р±С‹СЃС‚СЂС‹Р№ СЃРїРѕСЃРѕР± РѕРїСЂРµРґРµР»РёС‚СЊ С‚РµР±СЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_05"); //РќРѕ РїСЂРѕС‰Рµ РІСЃРµРіРѕ, РєРѕРЅРµС‡РЅРѕ, С‚РµР±Рµ Р±СѓРґРµС‚ РІСЃС‚СѓРїРёС‚СЊ РІ СЂСЏРґС‹ РѕРїРѕР»С‡РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_06"); //РС‚Р°Рє, С‡С‚Рѕ С‚С‹ РїСЂРµРґРїРѕС‡РёС‚Р°РµС€СЊ?
 		
 	Info_ClearChoices (DIA_Addon_Lares_Gilde);
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Я подумаю насчет этого...", DIA_Addon_Lares_Gilde_BACK);
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Магов огня.", DIA_Addon_Lares_Gilde_KDF );
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Наемников.", DIA_Addon_Lares_Gilde_SLD );	
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Ополчение.", DIA_Addon_Lares_Gilde_MIL );
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "РЇ РїРѕРґСѓРјР°СЋ РЅР°СЃС‡РµС‚ СЌС‚РѕРіРѕ...", DIA_Addon_Lares_Gilde_BACK);
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "РњР°РіРѕРІ РѕРіРЅСЏ.", DIA_Addon_Lares_Gilde_KDF );
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "РќР°РµРјРЅРёРєРѕРІ.", DIA_Addon_Lares_Gilde_SLD );	
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "РћРїРѕР»С‡РµРЅРёРµ.", DIA_Addon_Lares_Gilde_MIL );
 };
 func void DIA_Addon_Lares_Gilde_BACK ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_BACK_15_00"); //Мне нужно подумать...
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_BACK_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРґСѓРјР°С‚СЊ...
 	Info_ClearChoices (DIA_Addon_Lares_Gilde);
 };
 func void DIA_Addon_Lares_Gilde_SLD ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_SLD_15_00"); //Наемников.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_01"); //Я уверен, что Ли тебя примет.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_01"); //Но сначала тебе придется пройти испытание.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_02"); //Отправляйся на ферму Онара и поговори с Кордом.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_02"); //Он поможет тебе.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03"); //Скажи ему, что ты 'под моим крылом'. Он тебя поймет.
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_SLD_15_00"); //РќР°РµРјРЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_01"); //РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ Р›Рё С‚РµР±СЏ РїСЂРёРјРµС‚.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_01"); //РќРѕ СЃРЅР°С‡Р°Р»Р° С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕР№С‚Рё РёСЃРїС‹С‚Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_02"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РЅР° С„РµСЂРјСѓ РћРЅР°СЂР° Рё РїРѕРіРѕРІРѕСЂРё СЃ РљРѕСЂРґРѕРј.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_02"); //РћРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ С‚С‹ 'РїРѕРґ РјРѕРёРј РєСЂС‹Р»РѕРј'. РћРЅ С‚РµР±СЏ РїРѕР№РјРµС‚.
 	RangerHelp_gildeSLD = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpSLD, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpSLD, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Ларес сказал, что наемник Корд может сделать мою жизнь среди наемников проще."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Р›Р°СЂРµСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР°РµРјРЅРёРє РљРѕСЂРґ РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ РјРѕСЋ Р¶РёР·РЅСЊ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ РїСЂРѕС‰Рµ."); 
 	
 	SC_KnowsCordAsRangerFromLares = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
 };
 func void DIA_Addon_Lares_Gilde_MIL ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_MIL_15_00"); //Ополчение.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_01"); //(весело) Я так понимаю, тебе это понравится. Следить за соблюдением законов, в то же время обчищая кошельки горожан.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_02"); //Паладины устроили в гавани склад своих запасов. Их интендант - мой хороший друг.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_03"); //Думаю, он сможет тебе помочь. Его зовут Мартин.
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_MIL_15_00"); //РћРїРѕР»С‡РµРЅРёРµ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_01"); //(РІРµСЃРµР»Рѕ) РЇ С‚Р°Рє РїРѕРЅРёРјР°СЋ, С‚РµР±Рµ СЌС‚Рѕ РїРѕРЅСЂР°РІРёС‚СЃСЏ. РЎР»РµРґРёС‚СЊ Р·Р° СЃРѕР±Р»СЋРґРµРЅРёРµРј Р·Р°РєРѕРЅРѕРІ, РІ С‚Рѕ Р¶Рµ РІСЂРµРјСЏ РѕР±С‡РёС‰Р°СЏ РєРѕС€РµР»СЊРєРё РіРѕСЂРѕР¶Р°РЅ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_02"); //РџР°Р»Р°РґРёРЅС‹ СѓСЃС‚СЂРѕРёР»Рё РІ РіР°РІР°РЅРё СЃРєР»Р°Рґ СЃРІРѕРёС… Р·Р°РїР°СЃРѕРІ. РС… РёРЅС‚РµРЅРґР°РЅС‚ - РјРѕР№ С…РѕСЂРѕС€РёР№ РґСЂСѓРі.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_03"); //Р”СѓРјР°СЋ, РѕРЅ СЃРјРѕР¶РµС‚ С‚РµР±Рµ РїРѕРјРѕС‡СЊ. Р•РіРѕ Р·РѕРІСѓС‚ РњР°СЂС‚РёРЅ.
 
 	Log_CreateTopic (TOPIC_Addon_RangerHelpMIL, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpMIL, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Ларес говорит, что интендант Мартин может помочь мне быстро присоединиться к ополчению. Обычно Мартина можно найти в гавани, где он занимается припасами паладинов."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Р›Р°СЂРµСЃ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РёРЅС‚РµРЅРґР°РЅС‚ РњР°СЂС‚РёРЅ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ Р±С‹СЃС‚СЂРѕ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РѕРїРѕР»С‡РµРЅРёСЋ. РћР±С‹С‡РЅРѕ РњР°СЂС‚РёРЅР° РјРѕР¶РЅРѕ РЅР°Р№С‚Рё РІ РіР°РІР°РЅРё, РіРґРµ РѕРЅ Р·Р°РЅРёРјР°РµС‚СЃСЏ РїСЂРёРїР°СЃР°РјРё РїР°Р»Р°РґРёРЅРѕРІ."); 
 	
 	RangerHelp_gildeMIL = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
 };
 func void DIA_Addon_Lares_Gilde_KDF ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_Gilde_KDF_15_00"); //Магов огня.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_01"); //(смеется) Уверен, Ватрас не предвидел твой выбор. Иначе он бы не послал тебя ко мне.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_02"); //Путь в послушники требует денег.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_03"); //Если ты не заплатишь, тебя просто не пустят в монастырь.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_04"); //Единственный, кто может тут тебе помочь, - это сам Ватрас. Так что поговори с ним.
+	AI_Output (other, self, "DIA_Addon_Lares_Gilde_KDF_15_00"); //РњР°РіРѕРІ РѕРіРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_01"); //(СЃРјРµРµС‚СЃСЏ) РЈРІРµСЂРµРЅ, Р’Р°С‚СЂР°СЃ РЅРµ РїСЂРµРґРІРёРґРµР» С‚РІРѕР№ РІС‹Р±РѕСЂ. РРЅР°С‡Рµ РѕРЅ Р±С‹ РЅРµ РїРѕСЃР»Р°Р» С‚РµР±СЏ РєРѕ РјРЅРµ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_02"); //РџСѓС‚СЊ РІ РїРѕСЃР»СѓС€РЅРёРєРё С‚СЂРµР±СѓРµС‚ РґРµРЅРµРі.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_03"); //Р•СЃР»Рё С‚С‹ РЅРµ Р·Р°РїР»Р°С‚РёС€СЊ, С‚РµР±СЏ РїСЂРѕСЃС‚Рѕ РЅРµ РїСѓСЃС‚СЏС‚ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_04"); //Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ РјРѕР¶РµС‚ С‚СѓС‚ С‚РµР±Рµ РїРѕРјРѕС‡СЊ, - СЌС‚Рѕ СЃР°Рј Р’Р°С‚СЂР°СЃ. РўР°Рє С‡С‚Рѕ РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРј.
 
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Ларес сказал, что Ватрас знает легкий способ попасть в монастырь."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Р›Р°СЂРµСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ Р’Р°С‚СЂР°СЃ Р·РЅР°РµС‚ Р»РµРіРєРёР№ СЃРїРѕСЃРѕР± РїРѕРїР°СЃС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ."); 
 
 	RangerHelp_gildeKDF = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
@@ -1168,7 +1168,7 @@ instance DIA_Lares_AboutSld (C_INFO)
 	condition	 = 	DIA_Lares_AboutSld_Condition;
 	information	 = 	DIA_Lares_AboutSld_Info;
 	permanent    =  TRUE;
-	description	 = 	"Расскажи мне подробнее о наемниках.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ РЅР°РµРјРЅРёРєР°С….";
 };
 func int DIA_Lares_AboutSld_Condition ()
 {	
@@ -1180,14 +1180,14 @@ func int DIA_Lares_AboutSld_Condition ()
 };
 func void DIA_Lares_AboutSld_Info ()
 {
-	AI_Output (other,self,  "DIA_ADDON_Lares_AboutSld_15_00"); //Расскажи мне о Ли и наемниках...
-	AI_Output (self, other, "DIA_ADDON_Lares_AboutSld_09_01"); //Что ты хочешь узнать?
+	AI_Output (other,self,  "DIA_ADDON_Lares_AboutSld_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›Рё Рё РЅР°РµРјРЅРёРєР°С…...
+	AI_Output (self, other, "DIA_ADDON_Lares_AboutSld_09_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 	
 	Info_ClearChoices (DIA_Lares_AboutSld);
 	Info_AddChoice (DIA_Lares_AboutSld, DIALOG_BACK, DIA_Lares_AboutSld_BACK);
-	Info_AddChoice (DIA_Lares_AboutSld, "А почему ТЫ не с Ли и наемниками?", DIA_Lares_AboutSld_WhyNotYou);
-	Info_AddChoice (DIA_Lares_AboutSld, "Расскажи мне подробнее о наемниках.", DIA_Lares_AboutSld_Sld);
-	Info_AddChoice (DIA_Lares_AboutSld, "Как мне найти ферму лендлорда?", DIA_Lares_AboutSld_WayToOnar); 
+	Info_AddChoice (DIA_Lares_AboutSld, "Рђ РїРѕС‡РµРјСѓ РўР« РЅРµ СЃ Р›Рё Рё РЅР°РµРјРЅРёРєР°РјРё?", DIA_Lares_AboutSld_WhyNotYou);
+	Info_AddChoice (DIA_Lares_AboutSld, "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ РЅР°РµРјРЅРёРєР°С….", DIA_Lares_AboutSld_Sld);
+	Info_AddChoice (DIA_Lares_AboutSld, "РљР°Рє РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ Р»РµРЅРґР»РѕСЂРґР°?", DIA_Lares_AboutSld_WayToOnar); 
 };
 func void DIA_Lares_AboutSld_BACK()
 {
@@ -1195,36 +1195,36 @@ func void DIA_Lares_AboutSld_BACK()
 };
 func void DIA_Lares_AboutSld_Sld()
 {	
-	AI_Output (other,self,  "DIA_Lares_AboutSld_15_00"); //Расскажи мне подробнее о наемниках.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_01"); //Ну, если ты так же силен, как был в долине, то у тебя не должно возникнуть проблем с ними.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_02"); //Большинство из них настоящие головорезы, и если ты не сможешь дать им отпор, то далеко ты не продвинешься.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_03"); //(смеется) Если ты проявишь слабость, у тебя не будет шансов присоединиться к ним...
+	AI_Output (other,self,  "DIA_Lares_AboutSld_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ РЅР°РµРјРЅРёРєР°С….
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_01"); //РќСѓ, РµСЃР»Рё С‚С‹ С‚Р°Рє Р¶Рµ СЃРёР»РµРЅ, РєР°Рє Р±С‹Р» РІ РґРѕР»РёРЅРµ, С‚Рѕ Сѓ С‚РµР±СЏ РЅРµ РґРѕР»Р¶РЅРѕ РІРѕР·РЅРёРєРЅСѓС‚СЊ РїСЂРѕР±Р»РµРј СЃ РЅРёРјРё.
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_02"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… РЅР°СЃС‚РѕСЏС‰РёРµ РіРѕР»РѕРІРѕСЂРµР·С‹, Рё РµСЃР»Рё С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РґР°С‚СЊ РёРј РѕС‚РїРѕСЂ, С‚Рѕ РґР°Р»РµРєРѕ С‚С‹ РЅРµ РїСЂРѕРґРІРёРЅРµС€СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_03"); //(СЃРјРµРµС‚СЃСЏ) Р•СЃР»Рё С‚С‹ РїСЂРѕСЏРІРёС€СЊ СЃР»Р°Р±РѕСЃС‚СЊ, Сѓ С‚РµР±СЏ РЅРµ Р±СѓРґРµС‚ С€Р°РЅСЃРѕРІ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅРёРј...
 };	
 func void DIA_Lares_AboutSld_WhyNotYou()
 {
-	AI_Output (other, self, "DIA_Lares_WhyInCity_15_00"); //А почему ТЫ не с Ли и наемниками?
-	AI_Output (self, other, "DIA_Lares_WhyInCity_09_01"); //Я с ними! Просто я сейчас не на ферме.
-	AI_Output (self, other, "DIA_Lares_WhyInCity_09_02"); //Можно сказать, я их аванпост в городе. Мы не хотим, чтобы корабль уплыл без нас.
+	AI_Output (other, self, "DIA_Lares_WhyInCity_15_00"); //Рђ РїРѕС‡РµРјСѓ РўР« РЅРµ СЃ Р›Рё Рё РЅР°РµРјРЅРёРєР°РјРё?
+	AI_Output (self, other, "DIA_Lares_WhyInCity_09_01"); //РЇ СЃ РЅРёРјРё! РџСЂРѕСЃС‚Рѕ СЏ СЃРµР№С‡Р°СЃ РЅРµ РЅР° С„РµСЂРјРµ.
+	AI_Output (self, other, "DIA_Lares_WhyInCity_09_02"); //РњРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ, СЏ РёС… Р°РІР°РЅРїРѕСЃС‚ РІ РіРѕСЂРѕРґРµ. РњС‹ РЅРµ С…РѕС‚РёРј, С‡С‚РѕР±С‹ РєРѕСЂР°Р±Р»СЊ СѓРїР»С‹Р» Р±РµР· РЅР°СЃ.
 	//AI_Output (self, other, "DIA_Lares_WhyInCity_09_03"); //Warum bist DU in die Stadt gekommen?
 	Lares_WorkForLee = TRUE;
 	
-	Info_AddChoice (DIA_Lares_AboutSld, "О каком корабле ты говоришь?", DIA_Lares_AboutSld_Schiff);
+	Info_AddChoice (DIA_Lares_AboutSld, "Рћ РєР°РєРѕРј РєРѕСЂР°Р±Р»Рµ С‚С‹ РіРѕРІРѕСЂРёС€СЊ?", DIA_Lares_AboutSld_Schiff);
 };
 func void DIA_Lares_AboutSld_Schiff()
 {	
-	AI_Output (other,self , "DIA_Lares_Schiff_15_00"); //О каком корабле ты говоришь?
-	AI_Output (self, other, "DIA_Lares_Schiff_09_01"); //Он стоит в гавани порта, за утесами. Ли и часть его людей очень хотят убраться отсюда.
-	AI_Output (self, other, "DIA_Lares_Schiff_09_02"); //Но это может занять некоторое время...
-	AI_Output (other,self , "DIA_Lares_Schiff_15_03"); //Почему?
-	AI_Output (self, other, "DIA_Lares_Schiff_09_04"); //Тебе лучше спросить об этом Ли, если встретишь его... У него есть план.
+	AI_Output (other,self , "DIA_Lares_Schiff_15_00"); //Рћ РєР°РєРѕРј РєРѕСЂР°Р±Р»Рµ С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
+	AI_Output (self, other, "DIA_Lares_Schiff_09_01"); //РћРЅ СЃС‚РѕРёС‚ РІ РіР°РІР°РЅРё РїРѕСЂС‚Р°, Р·Р° СѓС‚РµСЃР°РјРё. Р›Рё Рё С‡Р°СЃС‚СЊ РµРіРѕ Р»СЋРґРµР№ РѕС‡РµРЅСЊ С…РѕС‚СЏС‚ СѓР±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
+	AI_Output (self, other, "DIA_Lares_Schiff_09_02"); //РќРѕ СЌС‚Рѕ РјРѕР¶РµС‚ Р·Р°РЅСЏС‚СЊ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ...
+	AI_Output (other,self , "DIA_Lares_Schiff_15_03"); //РџРѕС‡РµРјСѓ?
+	AI_Output (self, other, "DIA_Lares_Schiff_09_04"); //РўРµР±Рµ Р»СѓС‡С€Рµ СЃРїСЂРѕСЃРёС‚СЊ РѕР± СЌС‚РѕРј Р›Рё, РµСЃР»Рё РІСЃС‚СЂРµС‚РёС€СЊ РµРіРѕ... РЈ РЅРµРіРѕ РµСЃС‚СЊ РїР»Р°РЅ.
 };
 func void DIA_Lares_AboutSld_WayToOnar()
 {
-	AI_Output (other,self, "DIA_Lares_WegZumHof_15_00"); //Как мне найти ферму лендлорда?
-	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //Это довольно просто. Ты выходишь из города через восточные ворота, а затем следуешь по дороге на восток.
-	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_01"); //Если хочешь, я могу тебя проводить.
+	AI_Output (other,self, "DIA_Lares_WegZumHof_15_00"); //РљР°Рє РјРЅРµ РЅР°Р№С‚Рё С„РµСЂРјСѓ Р»РµРЅРґР»РѕСЂРґР°?
+	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ. РўС‹ РІС‹С…РѕРґРёС€СЊ РёР· РіРѕСЂРѕРґР° С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Рµ РІРѕСЂРѕС‚Р°, Р° Р·Р°С‚РµРј СЃР»РµРґСѓРµС€СЊ РїРѕ РґРѕСЂРѕРіРµ РЅР° РІРѕСЃС‚РѕРє.
+	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_01"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, СЏ РјРѕРіСѓ С‚РµР±СЏ РїСЂРѕРІРѕРґРёС‚СЊ.
 	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_01"); //Ich kann dich hinbringen, wenn du willst. Hab sowieso schon zu lange hier rumgehangen.
-	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar fьr gewцhnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schцpft ...
+	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar fСЊr gewС†hnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schС†pft ...
 	Lares_WayToOnar = TRUE;
 };	
 
@@ -1243,7 +1243,7 @@ instance DIA_Lares_GuildOfThieves (C_INFO)
 	condition	 = 	DIA_Lares_GuildOfThieves_Condition;
 	information	 = 	DIA_Lares_GuildOfThieves_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ты знаешь что-нибудь о городской гильдии воров?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РіРѕСЂРѕРґСЃРєРѕР№ РіРёР»СЊРґРёРё РІРѕСЂРѕРІ?";
 };
 func int DIA_Lares_GuildOfThieves_Condition ()
 {	
@@ -1254,10 +1254,10 @@ func int DIA_Lares_GuildOfThieves_Condition ()
 };
 func void DIA_Lares_GuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GuildOfThieves_15_00"); //Ты знаешь что-нибудь о городской гильдии воров?
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_01"); //Ну и вопросы ты задаешь...
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_02"); //Конечно, здесь есть гильдия воров. Как и в любом большом городе.
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_03"); //И каждый более-менее стоящий вор, вероятно, как-то связан с ними.
+	AI_Output (other, self, "DIA_Lares_GuildOfThieves_15_00"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РіРѕСЂРѕРґСЃРєРѕР№ РіРёР»СЊРґРёРё РІРѕСЂРѕРІ?
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_01"); //РќСѓ Рё РІРѕРїСЂРѕСЃС‹ С‚С‹ Р·Р°РґР°РµС€СЊ...
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_02"); //РљРѕРЅРµС‡РЅРѕ, Р·РґРµСЃСЊ РµСЃС‚СЊ РіРёР»СЊРґРёСЏ РІРѕСЂРѕРІ. РљР°Рє Рё РІ Р»СЋР±РѕРј Р±РѕР»СЊС€РѕРј РіРѕСЂРѕРґРµ.
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_03"); //Р РєР°Р¶РґС‹Р№ Р±РѕР»РµРµ-РјРµРЅРµРµ СЃС‚РѕСЏС‰РёР№ РІРѕСЂ, РІРµСЂРѕСЏС‚РЅРѕ, РєР°Рє-С‚Рѕ СЃРІСЏР·Р°РЅ СЃ РЅРёРјРё.
 };	
 // ------------------------------------------------------------
 // Wo finden?
@@ -1269,7 +1269,7 @@ instance DIA_Lares_WhereGuildOfThieves (C_INFO)
 	condition	 = 	DIA_Lares_WhereGuildOfThieves_Condition;
 	information	 = 	DIA_Lares_WhereGuildOfThieves_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ты знаешь, где мне найти гильдию воров?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРЅРµ РЅР°Р№С‚Рё РіРёР»СЊРґРёСЋ РІРѕСЂРѕРІ?";
 };
 func int DIA_Lares_WhereGuildOfThieves_Condition ()
 {	
@@ -1281,13 +1281,13 @@ func int DIA_Lares_WhereGuildOfThieves_Condition ()
 };
 func void DIA_Lares_WhereGuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_WhereGuildOfThieves_15_00"); //Ты знаешь, где мне найти гильдию воров?
-	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_01"); //(смеется) Не обижайся, но даже если бы знал, не сказал бы.
-	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_02"); //Эти люди обычно ОЧЕНЬ жестко реагируют на такие вещи.
-	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_03"); //Если ты собираешься связаться с ними, тебе нужно быть поосторожнее.
+	AI_Output (other, self, "DIA_Lares_WhereGuildOfThieves_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРЅРµ РЅР°Р№С‚Рё РіРёР»СЊРґРёСЋ РІРѕСЂРѕРІ?
+	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_01"); //(СЃРјРµРµС‚СЃСЏ) РќРµ РѕР±РёР¶Р°Р№СЃСЏ, РЅРѕ РґР°Р¶Рµ РµСЃР»Рё Р±С‹ Р·РЅР°Р», РЅРµ СЃРєР°Р·Р°Р» Р±С‹.
+	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_02"); //Р­С‚Рё Р»СЋРґРё РѕР±С‹С‡РЅРѕ РћР§Р•РќР¬ Р¶РµСЃС‚РєРѕ СЂРµР°РіРёСЂСѓСЋС‚ РЅР° С‚Р°РєРёРµ РІРµС‰Рё.
+	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_03"); //Р•СЃР»Рё С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ СЃРІСЏР·Р°С‚СЊСЃСЏ СЃ РЅРёРјРё, С‚РµР±Рµ РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РїРѕРѕСЃС‚РѕСЂРѕР¶РЅРµРµ.
 };
 // ------------------------------------------------------------
-// Meersalz Schlьssel
+// Meersalz SchlСЊssel
 // ------------------------------------------------------------
 instance DIA_Lares_GotKey (C_INFO)
 {
@@ -1296,7 +1296,7 @@ instance DIA_Lares_GotKey (C_INFO)
 	condition	 = 	DIA_Lares_GotKey_Condition;
 	information	 = 	DIA_Lares_GotKey_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я нашел здесь этот ключ. Он весь изъеден морской водой...";
+	description	 = 	"РЇ РЅР°С€РµР» Р·РґРµСЃСЊ СЌС‚РѕС‚ РєР»СЋС‡. РћРЅ РІРµСЃСЊ РёР·СЉРµРґРµРЅ РјРѕСЂСЃРєРѕР№ РІРѕРґРѕР№...";
 };
 func int DIA_Lares_GotKey_Condition ()
 {	
@@ -1309,10 +1309,10 @@ func int DIA_Lares_GotKey_Condition ()
 };
 func void DIA_Lares_GotKey_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GotKey_15_00"); //Я нашел здесь этот ключ. Он весь изъеден морской водой...
-	AI_Output (self, other, "DIA_Lares_GotKey_09_01"); //И?
-	AI_Output (other,self, "DIA_Lares_GotKey_15_02"); //Я думаю, он приведет меня к логову воровской гильдии...
-	AI_Output (self, other, "DIA_Lares_GotKey_09_03"); //Ну, это может быть ключ от канализации.
+	AI_Output (other, self, "DIA_Lares_GotKey_15_00"); //РЇ РЅР°С€РµР» Р·РґРµСЃСЊ СЌС‚РѕС‚ РєР»СЋС‡. РћРЅ РІРµСЃСЊ РёР·СЉРµРґРµРЅ РјРѕСЂСЃРєРѕР№ РІРѕРґРѕР№...
+	AI_Output (self, other, "DIA_Lares_GotKey_09_01"); //Р?
+	AI_Output (other,self, "DIA_Lares_GotKey_15_02"); //РЇ РґСѓРјР°СЋ, РѕРЅ РїСЂРёРІРµРґРµС‚ РјРµРЅСЏ Рє Р»РѕРіРѕРІСѓ РІРѕСЂРѕРІСЃРєРѕР№ РіРёР»СЊРґРёРё...
+	AI_Output (self, other, "DIA_Lares_GotKey_09_03"); //РќСѓ, СЌС‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ РєР»СЋС‡ РѕС‚ РєР°РЅР°Р»РёР·Р°С†РёРё.
 };
 // ------------------------------------------------------------
 // Kanalisation
@@ -1324,7 +1324,7 @@ instance DIA_Lares_Kanalisation (C_INFO)
 	condition	 = 	DIA_Lares_Kanalisation_Condition;
 	information	 = 	DIA_Lares_Kanalisation_Info;
 	permanent    =  FALSE;
-	description	 = 	"Где мне найти канализацию?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєР°РЅР°Р»РёР·Р°С†РёСЋ?";
 };
 func int DIA_Lares_Kanalisation_Condition ()
 {	
@@ -1336,12 +1336,12 @@ func int DIA_Lares_Kanalisation_Condition ()
 };
 func void DIA_Lares_Kanalisation_Info ()
 {
-	AI_Output (other,self, "DIA_Lares_Kanalisation_15_00"); //Где мне найти канализацию?
-	AI_Output (self, other, "DIA_Lares_Kanalisation_09_01"); //Насколько я знаю... канализации обычно выходят в океан.
+	AI_Output (other,self, "DIA_Lares_Kanalisation_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё РєР°РЅР°Р»РёР·Р°С†РёСЋ?
+	AI_Output (self, other, "DIA_Lares_Kanalisation_09_01"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ... РєР°РЅР°Р»РёР·Р°С†РёРё РѕР±С‹С‡РЅРѕ РІС‹С…РѕРґСЏС‚ РІ РѕРєРµР°РЅ.
 };
 
 // ************************************************************
-// 		  			Important fьr andere Gilden
+// 		  			Important fСЊr andere Gilden
 // ************************************************************
 instance DIA_Lares_OtherGuild (C_INFO)
 {
@@ -1368,37 +1368,37 @@ func void DIA_Lares_OtherGuild_Info ()
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_00"); //Теперь ты в ополчении!
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_01"); //(смеется) Со смеху помереть можно - бывший каторжник в ополчении...
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_00"); //РўРµРїРµСЂСЊ С‚С‹ РІ РѕРїРѕР»С‡РµРЅРёРё!
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_01"); //(СЃРјРµРµС‚СЃСЏ) РЎРѕ СЃРјРµС…Сѓ РїРѕРјРµСЂРµС‚СЊ РјРѕР¶РЅРѕ - Р±С‹РІС€РёР№ РєР°С‚РѕСЂР¶РЅРёРє РІ РѕРїРѕР»С‡РµРЅРёРё...
 		}
 		else //GIL_PAL
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_02"); //Так теперь ты один из паладинов короля!
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_02"); //РўР°Рє С‚РµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РїР°Р»Р°РґРёРЅРѕРІ РєРѕСЂРѕР»СЏ!
 		};
 	
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_03"); //(лукаво) Только ты мог провернуть такое...
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_03"); //(Р»СѓРєР°РІРѕ) РўРѕР»СЊРєРѕ С‚С‹ РјРѕРі РїСЂРѕРІРµСЂРЅСѓС‚СЊ С‚Р°РєРѕРµ...
 	
 		if (Lares_WorkForLee == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_04"); //(озабоченно) Ты ведь никому не расскажешь, что я работаю на Ли, правда?
-			AI_Output (other,self , "DIA_Lares_OtherGuild_15_05"); //Ты же знаешь меня...
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_04"); //(РѕР·Р°Р±РѕС‡РµРЅРЅРѕ) РўС‹ РІРµРґСЊ РЅРёРєРѕРјСѓ РЅРµ СЂР°СЃСЃРєР°Р¶РµС€СЊ, С‡С‚Рѕ СЏ СЂР°Р±РѕС‚Р°СЋ РЅР° Р›Рё, РїСЂР°РІРґР°?
+			AI_Output (other,self , "DIA_Lares_OtherGuild_15_05"); //РўС‹ Р¶Рµ Р·РЅР°РµС€СЊ РјРµРЅСЏ...
 		};
 	};
 	
 	if (other.guild == GIL_KDF) 
 	|| (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_06"); //Я не понимаю. Ты поступил в монастырь? Как там тебе?
-		AI_Output (other,self , "DIA_Lares_OtherGuild_15_07"); //По-разному.
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_08"); //Представляю.
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_06"); //РЇ РЅРµ РїРѕРЅРёРјР°СЋ. РўС‹ РїРѕСЃС‚СѓРїРёР» РІ РјРѕРЅР°СЃС‚С‹СЂСЊ? РљР°Рє С‚Р°Рј С‚РµР±Рµ?
+		AI_Output (other,self , "DIA_Lares_OtherGuild_15_07"); //РџРѕ-СЂР°Р·РЅРѕРјСѓ.
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_08"); //РџСЂРµРґСЃС‚Р°РІР»СЏСЋ.
 	};
 		
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	{
-		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehцrt, du bist aufgenommen worden.
-		AI_Output (self, other, "DIA_Addon_Lares_OtherGuild_09_00"); //Я слышал, тебя приняли в ряды наемников Ли?
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_10"); //Поздравляю.
+		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehС†rt, du bist aufgenommen worden.
+		AI_Output (self, other, "DIA_Addon_Lares_OtherGuild_09_00"); //РЇ СЃР»С‹С€Р°Р», С‚РµР±СЏ РїСЂРёРЅСЏР»Рё РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ Р›Рё?
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_10"); //РџРѕР·РґСЂР°РІР»СЏСЋ.
 	};
 };
 
@@ -1416,7 +1416,7 @@ instance DIA_Addon_Lares_Forest (C_INFO)
 	condition	 = 	DIA_Addon_Lares_Forest_Condition;
 	information	 = 	DIA_Addon_Lares_Forest_Info;
 
-	description	 = 	"Ты можешь проводить меня через восточный лес?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРІРѕРґРёС‚СЊ РјРµРЅСЏ С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Р№ Р»РµСЃ?";
 };
 func int DIA_Addon_Lares_Forest_Condition ()
 {	
@@ -1428,12 +1428,12 @@ func int DIA_Addon_Lares_Forest_Condition ()
 
 func void DIA_Addon_Lares_Forest_info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_00"); //Ты можешь проводить меня через восточный лес?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_01"); //Конечно. Но что тебе там нужно?
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_02"); //Нефариус поручил мне найти недостающие орнаменты.
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03"); //Одно из указанных им мест находится как раз в этом лесу.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04"); //Понимаю. Пока тебе идти туда одному было бы слишком опасно.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05"); //Хорошо. Когда ты будешь готов отправляться, скажи.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРІРѕРґРёС‚СЊ РјРµРЅСЏ С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Р№ Р»РµСЃ?
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_01"); //РљРѕРЅРµС‡РЅРѕ. РќРѕ С‡С‚Рѕ С‚РµР±Рµ С‚Р°Рј РЅСѓР¶РЅРѕ?
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_02"); //РќРµС„Р°СЂРёСѓСЃ РїРѕСЂСѓС‡РёР» РјРЅРµ РЅР°Р№С‚Рё РЅРµРґРѕСЃС‚Р°СЋС‰РёРµ РѕСЂРЅР°РјРµРЅС‚С‹.
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03"); //РћРґРЅРѕ РёР· СѓРєР°Р·Р°РЅРЅС‹С… РёРј РјРµСЃС‚ РЅР°С…РѕРґРёС‚СЃСЏ РєР°Рє СЂР°Р· РІ СЌС‚РѕРј Р»РµСЃСѓ.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04"); //РџРѕРЅРёРјР°СЋ. РџРѕРєР° С‚РµР±Рµ РёРґС‚Рё С‚СѓРґР° РѕРґРЅРѕРјСѓ Р±С‹Р»Рѕ Р±С‹ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05"); //РҐРѕСЂРѕС€Рѕ. РљРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ, СЃРєР°Р¶Рё.
 
 	RangerHelp_OrnamentForest = TRUE;
 };
@@ -1449,7 +1449,7 @@ instance DIA_Lares_GoNow (C_INFO)
 	condition	 = 	DIA_Lares_GoNow_Condition;
 	information	 = 	DIA_Lares_GoNow_Info;
 	permanent    =  TRUE;
-	description	 = 	"Хорошо, пошли.";
+	description	 = 	"РҐРѕСЂРѕС€Рѕ, РїРѕС€Р»Рё.";
 };
 func int DIA_Lares_GoNow_Condition ()
 {	
@@ -1469,7 +1469,7 @@ func int DIA_Lares_GoNow_Condition ()
 
 func void DIA_Lares_GoNow_GoingConditions ()
 {	
- 	AI_Output (self, other, "DIA_Lares_GoNow_09_01"); //Пошли... Иди за мной.
+ 	AI_Output (self, other, "DIA_Lares_GoNow_09_01"); //РџРѕС€Р»Рё... РРґРё Р·Р° РјРЅРѕР№.
 	AI_StopProcessInfos (self);
 	
 	Lares_Guide = Wld_GetDay();
@@ -1483,19 +1483,19 @@ func void DIA_Lares_GoNow_GoingConditions ()
 
 func void DIA_Lares_GoNow_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GoNow_15_00"); //Хорошо, пошли.
+	AI_Output (other, self, "DIA_Lares_GoNow_15_00"); //РҐРѕСЂРѕС€Рѕ, РїРѕС€Р»Рё.
 	
 	if (Lares_CanBringScToPlaces == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //Я не могу уйти отсюда, пока мы не узнаем больше о пропавших людях или пока меня кто-нибудь не сменит.
+		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //РЇ РЅРµ РјРѕРіСѓ СѓР№С‚Рё РѕС‚СЃСЋРґР°, РїРѕРєР° РјС‹ РЅРµ СѓР·РЅР°РµРј Р±РѕР»СЊС€Рµ Рѕ РїСЂРѕРїР°РІС€РёС… Р»СЋРґСЏС… РёР»Рё РїРѕРєР° РјРµРЅСЏ РєС‚Рѕ-РЅРёР±СѓРґСЊ РЅРµ СЃРјРµРЅРёС‚.
 	}
-	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen wдhrend RangerMeeting
+	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen wРґhrend RangerMeeting
 	{
 		B_Lares_Geheimtreffen();
 	}
 	else
 	{
-			AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_04"); //Куда?
+			AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_04"); //РљСѓРґР°?
 			
 			
 			Info_ClearChoices	(DIA_Lares_GoNow);
@@ -1503,24 +1503,24 @@ func void DIA_Lares_GoNow_Info ()
 		
 			if (Lares_WayToOnar == TRUE) && (LaresGuide_ZuOnar != LOG_SUCCESS)
 			{
-				Info_AddChoice	(DIA_Lares_GoNow, "На ферму Онара.", DIA_Lares_GoNow_Onar );
+				Info_AddChoice	(DIA_Lares_GoNow, "РќР° С„РµСЂРјСѓ РћРЅР°СЂР°.", DIA_Lares_GoNow_Onar );
 			};
 		
 			if ((MIS_Addon_Lares_Ornament2Saturas == LOG_RUNNING) && (Lares_Angekommen == FALSE))
 			{
-				Info_AddChoice	(DIA_Lares_GoNow, "Давай вернем орнамент Ватраса.", DIA_Lares_GoNow_Maya );
+				Info_AddChoice	(DIA_Lares_GoNow, "Р”Р°РІР°Р№ РІРµСЂРЅРµРј РѕСЂРЅР°РјРµРЅС‚ Р’Р°С‚СЂР°СЃР°.", DIA_Lares_GoNow_Maya );
 			};
 			
 			if ((ORNAMENT_SWITCHED_FOREST == FALSE) && (LaresGuide_OrnamentForest == 0) && (RangerHelp_OrnamentForest == TRUE))
 			{
-				Info_AddChoice	(DIA_Lares_GoNow, "В лес на востоке.", DIA_Lares_GoNow_Forest );
+				Info_AddChoice	(DIA_Lares_GoNow, "Р’ Р»РµСЃ РЅР° РІРѕСЃС‚РѕРєРµ.", DIA_Lares_GoNow_Forest );
 			};
 	};		
 };
 
 func void DIA_Lares_GoNow_Maya ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Maya_15_00"); //Давай вернем орнамент Ватраса.
+	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Maya_15_00"); //Р”Р°РІР°Р№ РІРµСЂРЅРµРј РѕСЂРЅР°РјРµРЅС‚ Р’Р°С‚СЂР°СЃР°.
 	LaresGuide_ZumPortal = 1;
 	Npc_ExchangeRoutine (self, "GUIDEPORTALTEMPEL1");
 	DIA_Lares_GoNow_GoingConditions(); 
@@ -1528,7 +1528,7 @@ func void DIA_Lares_GoNow_Maya ()
 
 func void DIA_Lares_GoNow_Onar ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Onar_15_00"); //На ферму Онара.
+	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Onar_15_00"); //РќР° С„РµСЂРјСѓ РћРЅР°СЂР°.
 	LaresGuide_ZuOnar = TRUE;
 	Npc_ExchangeRoutine (self, "GUIDE");
 	DIA_Lares_GoNow_GoingConditions(); 
@@ -1536,7 +1536,7 @@ func void DIA_Lares_GoNow_Onar ()
 
 func void DIA_Lares_GoNow_Forest ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Forest_15_00"); //В лес на востоке.
+	AI_Output			(other, self, "DIA_Addon_Lares_GoNow_Forest_15_00"); //Р’ Р»РµСЃ РЅР° РІРѕСЃС‚РѕРєРµ.
 	LaresGuide_OrnamentForest = 1;
 	Npc_ExchangeRoutine (self, "GUIDEMEDIUMWALD1");
 	DIA_Lares_GoNow_GoingConditions(); 
@@ -1571,14 +1571,14 @@ func void DIA_Lares_GUIDE_Info ()
 {
 	if Lares_Guide > (Wld_GetDay()-2)
 	{
-		AI_Output (self, other, "DIA_Lares_GUIDE_09_00"); //Пришли.
+		AI_Output (self, other, "DIA_Lares_GUIDE_09_00"); //РџСЂРёС€Р»Рё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lares_GUIDE_09_01"); //Вот ты где. А я уж начал думать, что тебя загрызли волки.
+		AI_Output (self, other, "DIA_Lares_GUIDE_09_01"); //Р’РѕС‚ С‚С‹ РіРґРµ. Рђ СЏ СѓР¶ РЅР°С‡Р°Р» РґСѓРјР°С‚СЊ, С‡С‚Рѕ С‚РµР±СЏ Р·Р°РіСЂС‹Р·Р»Рё РІРѕР»РєРё.
 	};
-	AI_Output (self, other, "DIA_Lares_GUIDE_09_02"); //Что ж, оставшуюся часть пути ты сможешь пройти сам. А мне нужно возвращаться в город...
-	AI_Output (self, other, "DIA_Lares_GUIDE_09_03"); //Просто пойдешь по этой дороге. Но помни - сумей постоять за себя, не нарушай закон и все будет в порядке.
+	AI_Output (self, other, "DIA_Lares_GUIDE_09_02"); //Р§С‚Рѕ Р¶, РѕСЃС‚Р°РІС€СѓСЋСЃСЏ С‡Р°СЃС‚СЊ РїСѓС‚Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РїСЂРѕР№С‚Рё СЃР°Рј. Рђ РјРЅРµ РЅСѓР¶РЅРѕ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РІ РіРѕСЂРѕРґ...
+	AI_Output (self, other, "DIA_Lares_GUIDE_09_03"); //РџСЂРѕСЃС‚Рѕ РїРѕР№РґРµС€СЊ РїРѕ СЌС‚РѕР№ РґРѕСЂРѕРіРµ. РќРѕ РїРѕРјРЅРё - СЃСѓРјРµР№ РїРѕСЃС‚РѕСЏС‚СЊ Р·Р° СЃРµР±СЏ, РЅРµ РЅР°СЂСѓС€Р°Р№ Р·Р°РєРѕРЅ Рё РІСЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.
 	
 	AI_StopProcessInfos (self);
 	
@@ -1613,46 +1613,46 @@ func int DIA_Addon_Lares_ArrivedPortalInter1_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_Info ()
 {
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_00"); //Теперь, когда мы покинули город и нас не могут подслушать, я хочу тебе кое-что рассказать.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_01"); //Орнамент, который ты мне отдал, нужно отнести Сатурасу. Ты же помнишь Сатураса, не так ли?
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_00"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РјС‹ РїРѕРєРёРЅСѓР»Рё РіРѕСЂРѕРґ Рё РЅР°СЃ РЅРµ РјРѕРіСѓС‚ РїРѕРґСЃР»СѓС€Р°С‚СЊ, СЏ С…РѕС‡Сѓ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ СЂР°СЃСЃРєР°Р·Р°С‚СЊ.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_01"); //РћСЂРЅР°РјРµРЅС‚, РєРѕС‚РѕСЂС‹Р№ С‚С‹ РјРЅРµ РѕС‚РґР°Р», РЅСѓР¶РЅРѕ РѕС‚РЅРµСЃС‚Рё РЎР°С‚СѓСЂР°СЃСѓ. РўС‹ Р¶Рµ РїРѕРјРЅРёС€СЊ РЎР°С‚СѓСЂР°СЃР°, РЅРµ С‚Р°Рє Р»Рё?
 	
 	
 	Info_ClearChoices	(DIA_Addon_Lares_ArrivedPortalInter1);
-	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "Конечно.", DIA_Addon_Lares_ArrivedPortalInter1_ja );
-	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "Сатурас? Кто это такой?", DIA_Addon_Lares_ArrivedPortalInter1_wer );
+	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "РљРѕРЅРµС‡РЅРѕ.", DIA_Addon_Lares_ArrivedPortalInter1_ja );
+	Info_AddChoice	(DIA_Addon_Lares_ArrivedPortalInter1, "РЎР°С‚СѓСЂР°СЃ? РљС‚Рѕ СЌС‚Рѕ С‚Р°РєРѕР№?", DIA_Addon_Lares_ArrivedPortalInter1_wer );
 
 	LaresGuide_ZumPortal = 2;
 };
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_teil2 ()
 {
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_00"); //Мы, ребята из бывшего Нового Лагеря, сохранили хорошие отношения с магами воды.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_01"); //Даже Ли готов защищать магов воды от любой опасности, если только это будет в его силах.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_02"); //Чтобы поддерживать связь с магами, я практически постоянно нахожусь в городе, работая вместе с Ватрасом.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_00"); //РњС‹, СЂРµР±СЏС‚Р° РёР· Р±С‹РІС€РµРіРѕ РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ, СЃРѕС…СЂР°РЅРёР»Рё С…РѕСЂРѕС€РёРµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РјР°РіР°РјРё РІРѕРґС‹.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_01"); //Р”Р°Р¶Рµ Р›Рё РіРѕС‚РѕРІ Р·Р°С‰РёС‰Р°С‚СЊ РјР°РіРѕРІ РІРѕРґС‹ РѕС‚ Р»СЋР±РѕР№ РѕРїР°СЃРЅРѕСЃС‚Рё, РµСЃР»Рё С‚РѕР»СЊРєРѕ СЌС‚Рѕ Р±СѓРґРµС‚ РІ РµРіРѕ СЃРёР»Р°С….
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_02"); //Р§С‚РѕР±С‹ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ СЃРІСЏР·СЊ СЃ РјР°РіР°РјРё, СЏ РїСЂР°РєС‚РёС‡РµСЃРєРё РїРѕСЃС‚РѕСЏРЅРЅРѕ РЅР°С…РѕР¶СѓСЃСЊ РІ РіРѕСЂРѕРґРµ, СЂР°Р±РѕС‚Р°СЏ РІРјРµСЃС‚Рµ СЃ Р’Р°С‚СЂР°СЃРѕРј.
 	B_MakeRangerReadyForMeeting (self);
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03"); //А такие доспехи выдают маги воды каждому из нас. Члены общества Кольца Воды носили такую броню еще до войны с орками.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03"); //Рђ С‚Р°РєРёРµ РґРѕСЃРїРµС…Рё РІС‹РґР°СЋС‚ РјР°РіРё РІРѕРґС‹ РєР°Р¶РґРѕРјСѓ РёР· РЅР°СЃ. Р§Р»РµРЅС‹ РѕР±С‰РµСЃС‚РІР° РљРѕР»СЊС†Р° Р’РѕРґС‹ РЅРѕСЃРёР»Рё С‚Р°РєСѓСЋ Р±СЂРѕРЅСЋ РµС‰Рµ РґРѕ РІРѕР№РЅС‹ СЃ РѕСЂРєР°РјРё.
 	
 	if (Cavalorn_RangerHint == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_15_04"); //А как ко всему этому относится Кавалорн? Насколько я знаю, в Новом Лагере он ничем таким не занимался.
-		AI_Output (self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_05"); //Ты прав. Но наше сообщество растет, и даже я не знаю, сколько членов оно сейчас насчитывает.
+		AI_Output (other, self, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_15_04"); //Рђ РєР°Рє РєРѕ РІСЃРµРјСѓ СЌС‚РѕРјСѓ РѕС‚РЅРѕСЃРёС‚СЃСЏ РљР°РІР°Р»РѕСЂРЅ? РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ РѕРЅ РЅРёС‡РµРј С‚Р°РєРёРј РЅРµ Р·Р°РЅРёРјР°Р»СЃСЏ.
+		AI_Output (self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_05"); //РўС‹ РїСЂР°РІ. РќРѕ РЅР°С€Рµ СЃРѕРѕР±С‰РµСЃС‚РІРѕ СЂР°СЃС‚РµС‚, Рё РґР°Р¶Рµ СЏ РЅРµ Р·РЅР°СЋ, СЃРєРѕР»СЊРєРѕ С‡Р»РµРЅРѕРІ РѕРЅРѕ СЃРµР№С‡Р°СЃ РЅР°СЃС‡РёС‚С‹РІР°РµС‚.
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_06"); //Но нам нужно идти. Когда мы отойдем подальше от города, мы сможем поговорить еще.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_06"); //РќРѕ РЅР°Рј РЅСѓР¶РЅРѕ РёРґС‚Рё. РљРѕРіРґР° РјС‹ РѕС‚РѕР№РґРµРј РїРѕРґР°Р»СЊС€Рµ РѕС‚ РіРѕСЂРѕРґР°, РјС‹ СЃРјРѕР¶РµРј РїРѕРіРѕРІРѕСЂРёС‚СЊ РµС‰Рµ.
 	Info_ClearChoices	(DIA_Addon_Lares_ArrivedPortalInter1);
 };
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_wer ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_wer_15_00"); //Сатурас? Кто это такой?
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_01"); //Он был главным у магов воды в Новом Лагере в Долине Рудников, когда Барьер еще не был разрушен.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_02"); //Мы с Ли тогда заключили с магами воды союз.
+	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_wer_15_00"); //РЎР°С‚СѓСЂР°СЃ? РљС‚Рѕ СЌС‚Рѕ С‚Р°РєРѕР№?
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_01"); //РћРЅ Р±С‹Р» РіР»Р°РІРЅС‹Рј Сѓ РјР°РіРѕРІ РІРѕРґС‹ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ, РєРѕРіРґР° Р‘Р°СЂСЊРµСЂ РµС‰Рµ РЅРµ Р±С‹Р» СЂР°Р·СЂСѓС€РµРЅ.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_wer_09_02"); //РњС‹ СЃ Р›Рё С‚РѕРіРґР° Р·Р°РєР»СЋС‡РёР»Рё СЃ РјР°РіР°РјРё РІРѕРґС‹ СЃРѕСЋР·.
 	DIA_Addon_Lares_ArrivedPortalInter1_teil2 ();
 };
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_ja_15_00"); //Конечно. Он был предводителем магов воды в Новом Лагере.
+	AI_Output			(other, self, "DIA_Addon_Lares_ArrivedPortalInter1_ja_15_00"); //РљРѕРЅРµС‡РЅРѕ. РћРЅ Р±С‹Р» РїСЂРµРґРІРѕРґРёС‚РµР»РµРј РјР°РіРѕРІ РІРѕРґС‹ РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ.
 	DIA_Addon_Lares_ArrivedPortalInter1_teil2 ();
 };
 
@@ -1681,14 +1681,14 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_00"); //В чем дело? Почему ты задерживаешься?
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_00"); //Р’ С‡РµРј РґРµР»Рѕ? РџРѕС‡РµРјСѓ С‚С‹ Р·Р°РґРµСЂР¶РёРІР°РµС€СЊСЃСЏ?
 	
 	if (MIS_Addon_Erol_BanditStuff == LOG_RUNNING)
 	&& ((Npc_GetDistToWP(Erol,"NW_TAVERN_TO_FOREST_03")<1000))
 	&& ((Npc_IsDead(Erol))==FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_ArrivedPortalInterWeiter_15_01"); //У этого парня проблемы с бандитами.
-		AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_02"); //Бедняга. К сожалению, сейчас у нас нет на него времени.
+		AI_Output	(other, self, "DIA_Addon_Lares_ArrivedPortalInterWeiter_15_01"); //РЈ СЌС‚РѕРіРѕ РїР°СЂРЅСЏ РїСЂРѕР±Р»РµРјС‹ СЃ Р±Р°РЅРґРёС‚Р°РјРё.
+		AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_02"); //Р‘РµРґРЅСЏРіР°. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, СЃРµР№С‡Р°СЃ Сѓ РЅР°СЃ РЅРµС‚ РЅР° РЅРµРіРѕ РІСЂРµРјРµРЅРё.
 	};
 	
 	LaresGuide_ZumPortal = 3;
@@ -1719,7 +1719,7 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter2_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter2_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter2_09_00"); //Не отвлекай меня.
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter2_09_00"); //РќРµ РѕС‚РІР»РµРєР°Р№ РјРµРЅСЏ.
 	LaresGuide_ZumPortal = 4;
 };
 
@@ -1748,14 +1748,14 @@ func int DIA_Addon_Lares_ArrivedPortalInter2_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter2_Info ()
 {
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_00"); //Маги воды полностью погружены в работу. Они уже несколько недель раскапывают какие-то руины на северо-востоке. Никто не знает, что они пытаются там найти.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_01"); //Все началось с землетрясений, таких, какие бывали в худшие дни Барьера.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_02"); //Из-под земли появились ужасные каменные создания, убивающие каждого, кто подходил к ним ближе, чем на тридцать метров.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_03"); //Маги воды взяли ситуацию в свои руки и уничтожили монстров. А теперь они проводят раскопки, пытаясь найти объяснение этим странным событиям.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_04"); //Но ты скоро сам все увидишь.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_00"); //РњР°РіРё РІРѕРґС‹ РїРѕР»РЅРѕСЃС‚СЊСЋ РїРѕРіСЂСѓР¶РµРЅС‹ РІ СЂР°Р±РѕС‚Сѓ. РћРЅРё СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ СЂР°СЃРєР°РїС‹РІР°СЋС‚ РєР°РєРёРµ-С‚Рѕ СЂСѓРёРЅС‹ РЅР° СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРєРµ. РќРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, С‡С‚Рѕ РѕРЅРё РїС‹С‚Р°СЋС‚СЃСЏ С‚Р°Рј РЅР°Р№С‚Рё.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_01"); //Р’СЃРµ РЅР°С‡Р°Р»РѕСЃСЊ СЃ Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёР№, С‚Р°РєРёС…, РєР°РєРёРµ Р±С‹РІР°Р»Рё РІ С…СѓРґС€РёРµ РґРЅРё Р‘Р°СЂСЊРµСЂР°.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_02"); //РР·-РїРѕРґ Р·РµРјР»Рё РїРѕСЏРІРёР»РёСЃСЊ СѓР¶Р°СЃРЅС‹Рµ РєР°РјРµРЅРЅС‹Рµ СЃРѕР·РґР°РЅРёСЏ, СѓР±РёРІР°СЋС‰РёРµ РєР°Р¶РґРѕРіРѕ, РєС‚Рѕ РїРѕРґС…РѕРґРёР» Рє РЅРёРј Р±Р»РёР¶Рµ, С‡РµРј РЅР° С‚СЂРёРґС†Р°С‚СЊ РјРµС‚СЂРѕРІ.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_03"); //РњР°РіРё РІРѕРґС‹ РІР·СЏР»Рё СЃРёС‚СѓР°С†РёСЋ РІ СЃРІРѕРё СЂСѓРєРё Рё СѓРЅРёС‡С‚РѕР¶РёР»Рё РјРѕРЅСЃС‚СЂРѕРІ. Рђ С‚РµРїРµСЂСЊ РѕРЅРё РїСЂРѕРІРѕРґСЏС‚ СЂР°СЃРєРѕРїРєРё, РїС‹С‚Р°СЏСЃСЊ РЅР°Р№С‚Рё РѕР±СЉСЏСЃРЅРµРЅРёРµ СЌС‚РёРј СЃС‚СЂР°РЅРЅС‹Рј СЃРѕР±С‹С‚РёСЏРј.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_04"); //РќРѕ С‚С‹ СЃРєРѕСЂРѕ СЃР°Рј РІСЃРµ СѓРІРёРґРёС€СЊ.
 
 	LaresGuide_ZumPortal = 5;
-	B_LogEntry (TOPIC_Addon_KDW,"Ларес рассказал мне о раскопках магов воды. Маги занимаются расследованием необычных событий, происходящих в последнее время - странных землетрясений и появления из-под земли загадочных каменных существ."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Р›Р°СЂРµСЃ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ СЂР°СЃРєРѕРїРєР°С… РјР°РіРѕРІ РІРѕРґС‹. РњР°РіРё Р·Р°РЅРёРјР°СЋС‚СЃСЏ СЂР°СЃСЃР»РµРґРѕРІР°РЅРёРµРј РЅРµРѕР±С‹С‡РЅС‹С… СЃРѕР±С‹С‚РёР№, РїСЂРѕРёСЃС…РѕРґСЏС‰РёС… РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ - СЃС‚СЂР°РЅРЅС‹С… Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёР№ Рё РїРѕСЏРІР»РµРЅРёСЏ РёР·-РїРѕРґ Р·РµРјР»Рё Р·Р°РіР°РґРѕС‡РЅС‹С… РєР°РјРµРЅРЅС‹С… СЃСѓС‰РµСЃС‚РІ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1783,7 +1783,7 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter3_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter3_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter3_09_00"); //Ты идешь дальше?
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter3_09_00"); //РўС‹ РёРґРµС€СЊ РґР°Р»СЊС€Рµ?
 	LaresGuide_ZumPortal = 6;
 };
 
@@ -1812,7 +1812,7 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter4_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter4_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter4_09_00"); //Очень хорошо. Здесь может быть опасно.
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter4_09_00"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р—РґРµСЃСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕРїР°СЃРЅРѕ.
 	LaresGuide_ZumPortal = 7;
 };
 
@@ -1840,15 +1840,15 @@ func int DIA_Addon_Lares_ArrivedPortal_Condition ()
 func void DIA_Addon_Lares_ArrivedPortal_Info ()
 {
 	B_MakeRangerReadyToLeaveMeeting (self);
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_00"); //Мы на месте.
- 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_01"); //Возьми орнамент. Маги воды должны быть где-то внизу. Отнеси орнамент им.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_00"); //РњС‹ РЅР° РјРµСЃС‚Рµ.
+ 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_01"); //Р’РѕР·СЊРјРё РѕСЂРЅР°РјРµРЅС‚. РњР°РіРё РІРѕРґС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РіРґРµ-С‚Рѕ РІРЅРёР·Сѓ. РћС‚РЅРµСЃРё РѕСЂРЅР°РјРµРЅС‚ РёРј.
 	B_GiveInvItems (self, other, ItMi_Ornament_Addon_Vatras, 1);					
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_02"); //Если внизу ты встретишь каких-нибудь диких зверей, с которыми не сможешь справиться, беги к Сатурасу.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_03"); //Он с ними разберется. Ну а мне нужно возвращаться.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_04"); //Да, и еще одно. Не стоит бродить по округе с этим орнаментом. Сразу же отправляйся к Сатурасу.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_05"); //До встречи.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_02"); //Р•СЃР»Рё РІРЅРёР·Сѓ С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊ РєР°РєРёС…-РЅРёР±СѓРґСЊ РґРёРєРёС… Р·РІРµСЂРµР№, СЃ РєРѕС‚РѕСЂС‹РјРё РЅРµ СЃРјРѕР¶РµС€СЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ, Р±РµРіРё Рє РЎР°С‚СѓСЂР°СЃСѓ.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_03"); //РћРЅ СЃ РЅРёРјРё СЂР°Р·Р±РµСЂРµС‚СЃСЏ. РќСѓ Р° РјРЅРµ РЅСѓР¶РЅРѕ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_04"); //Р”Р°, Рё РµС‰Рµ РѕРґРЅРѕ. РќРµ СЃС‚РѕРёС‚ Р±СЂРѕРґРёС‚СЊ РїРѕ РѕРєСЂСѓРіРµ СЃ СЌС‚РёРј РѕСЂРЅР°РјРµРЅС‚РѕРј. РЎСЂР°Р·Сѓ Р¶Рµ РѕС‚РїСЂР°РІР»СЏР№СЃСЏ Рє РЎР°С‚СѓСЂР°СЃСѓ.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_05"); //Р”Рѕ РІСЃС‚СЂРµС‡Рё.
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Ларес дал мне этот орнамент. Он хочет, чтобы я передал его магу воды Сатурасу."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Р›Р°СЂРµСЃ РґР°Р» РјРЅРµ СЌС‚РѕС‚ РѕСЂРЅР°РјРµРЅС‚. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРµСЂРµРґР°Р» РµРіРѕ РјР°РіСѓ РІРѕРґС‹ РЎР°С‚СѓСЂР°СЃСѓ."); 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine (self,"START");
@@ -1879,7 +1879,7 @@ func int DIA_Addon_Lares_Albern_Condition ()
 };
 func void DIA_Addon_Lares_Albern_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Lares_Albern_09_00"); //(строго) Прекрати паясничать! Немедленно отнеси орнамент Сатурасу!
+	AI_Output (self, other, "DIA_Addon_Lares_Albern_09_00"); //(СЃС‚СЂРѕРіРѕ) РџСЂРµРєСЂР°С‚Рё РїР°СЏСЃРЅРёС‡Р°С‚СЊ! РќРµРјРµРґР»РµРЅРЅРѕ РѕС‚РЅРµСЃРё РѕСЂРЅР°РјРµРЅС‚ РЎР°С‚СѓСЂР°СЃСѓ!
 	AI_StopProcessInfos (self);
 };
 
@@ -1907,16 +1907,16 @@ func int DIA_Addon_Lares_GOFORESTPRE_Condition ()
 func void DIA_Addon_Lares_GOFORESTPRE_ja ()
 {
 	B_MakeRangerReadyForMeeting (self);
-	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_ja_15_00"); //Да.
-	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_ja_09_01"); //Прекрасно, друг мой. В таком случае, следуй за мной. Здесь может быть небезопасно.
+	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_ja_15_00"); //Р”Р°.
+	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_ja_09_01"); //РџСЂРµРєСЂР°СЃРЅРѕ, РґСЂСѓРі РјРѕР№. Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, СЃР»РµРґСѓР№ Р·Р° РјРЅРѕР№. Р—РґРµСЃСЊ РјРѕР¶РµС‚ Р±С‹С‚СЊ РЅРµР±РµР·РѕРїР°СЃРЅРѕ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"GUIDEMEDIUMWALD2");
 	LaresGuide_OrnamentForest = 2; 
 };
 func void DIA_Addon_Lares_GOFORESTPRE_nein ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_nein_15_00"); //Нет, можешь идти.
-	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_nein_09_01"); //Я так понимаю, проблема решилась сама собой? Ладно, увидимся позже.
+	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_nein_15_00"); //РќРµС‚, РјРѕР¶РµС€СЊ РёРґС‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_nein_09_01"); //РЇ С‚Р°Рє РїРѕРЅРёРјР°СЋ, РїСЂРѕР±Р»РµРјР° СЂРµС€РёР»Р°СЃСЊ СЃР°РјР° СЃРѕР±РѕР№? Р›Р°РґРЅРѕ, СѓРІРёРґРёРјСЃСЏ РїРѕР·Р¶Рµ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"Start");
 	LaresGuide_OrnamentForest = 3; //Joly: Schluss mit Guide
@@ -1926,15 +1926,15 @@ func void DIA_Addon_Lares_GOFORESTPRE_Info ()
 {
 	if (ORNAMENT_SWITCHED_FOREST == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_00"); //Ты все еще хочешь пойти со мной в лес?
+		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_00"); //РўС‹ РІСЃРµ РµС‰Рµ С…РѕС‡РµС€СЊ РїРѕР№С‚Рё СЃРѕ РјРЅРѕР№ РІ Р»РµСЃ?
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_01"); //Ты уже подумал о походе в лес? Ты действительно хочешь туда направиться?
+		AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_09_01"); //РўС‹ СѓР¶Рµ РїРѕРґСѓРјР°Р» Рѕ РїРѕС…РѕРґРµ РІ Р»РµСЃ? РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‡РµС€СЊ С‚СѓРґР° РЅР°РїСЂР°РІРёС‚СЊСЃСЏ?
  	};
 	Info_ClearChoices	(DIA_Addon_Lares_GOFORESTPRE);
-	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "Нет, можешь идти.", DIA_Addon_Lares_GOFORESTPRE_nein );
-	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "Да.", DIA_Addon_Lares_GOFORESTPRE_ja );
+	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "РќРµС‚, РјРѕР¶РµС€СЊ РёРґС‚Рё.", DIA_Addon_Lares_GOFORESTPRE_nein );
+	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "Р”Р°.", DIA_Addon_Lares_GOFORESTPRE_ja );
 };
 
 
@@ -1975,7 +1975,7 @@ func void DIA_Addon_Lares_GOFOREST_Info ()
 	if (ORNAMENT_SWITCHED_FOREST == TRUE)
 	{	
 		B_MakeRangerReadyToLeaveMeeting (self);
-		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_00"); //Ну вот. Дальше ты дойдешь сам. А я отправляюсь обратно.
+		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_00"); //РќСѓ РІРѕС‚. Р”Р°Р»СЊС€Рµ С‚С‹ РґРѕР№РґРµС€СЊ СЃР°Рј. Рђ СЏ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ РѕР±СЂР°С‚РЅРѕ.
 	 	AI_StopProcessInfos (self);
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine (self,"START");
@@ -1983,7 +1983,7 @@ func void DIA_Addon_Lares_GOFOREST_Info ()
  	}
  	else
  	{
-		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_01"); //Поторопись! Я не хочу оставаться здесь дольше, чем необходимо.
+		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_01"); //РџРѕС‚РѕСЂРѕРїРёСЃСЊ! РЇ РЅРµ С…РѕС‡Сѓ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ РґРѕР»СЊС€Рµ, С‡РµРј РЅРµРѕР±С…РѕРґРёРјРѕ.
 	 	AI_StopProcessInfos (self);
  	};
 };
@@ -1999,7 +1999,7 @@ instance DIA_Addon_Lares_PortalInterWEITER		(C_INFO)
 	information	 = 	DIA_Addon_Lares_PortalInterWEITER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Двигаемся дальше.";
+	description	 = 	"Р”РІРёРіР°РµРјСЃСЏ РґР°Р»СЊС€Рµ.";
 };
 
 func int DIA_Addon_Lares_PortalInterWEITER_Condition ()
@@ -2015,22 +2015,22 @@ func void DIA_Addon_Lares_PortalInterWEITER_Info ()
 {
 	if (LaresGuide_ZumPortal == 4)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_00"); //Прекрати болтать.
+		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_00"); //РџСЂРµРєСЂР°С‚Рё Р±РѕР»С‚Р°С‚СЊ.
 	}
 	else if (LaresGuide_ZumPortal == 6)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_01"); //(раздраженно) Да, да.
+		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р”Р°, РґР°.
 	};
 
-	AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_02"); //Двигаемся дальше.
+	AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_02"); //Р”РІРёРіР°РµРјСЃСЏ РґР°Р»СЊС€Рµ.
 	
 	if (LaresGuide_ZumPortal == 7)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_03"); //Отойди немного назад.
+		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_03"); //РћС‚РѕР№РґРё РЅРµРјРЅРѕРіРѕ РЅР°Р·Р°Рґ.
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_04"); //Держись ко мне поближе.
+		AI_Output	(self, other, "DIA_Addon_Lares_PortalInterWEITER_09_04"); //Р”РµСЂР¶РёСЃСЊ РєРѕ РјРЅРµ РїРѕР±Р»РёР¶Рµ.
 	};
 		
 	AI_StopProcessInfos (self);
@@ -2074,7 +2074,7 @@ instance DIA_Lares_DEX		(C_INFO)
 	condition	 = 	DIA_Lares_DEX_Condition;
 	information	 = 	DIA_Lares_DEX_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Ты можешь научить меня чему-нибудь?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 func int DIA_Lares_DEX_Condition ()
 {	
@@ -2082,13 +2082,13 @@ func int DIA_Lares_DEX_Condition ()
 };
 func void DIA_Lares_DEX_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_DEX_15_00"); //Ты можешь научить меня чему-нибудь?
-	AI_Output (self, other, "DIA_Addon_Lares_DEX_Add_09_01"); //Конечно. Я могу помочь тебе стать более сильным и ловким.
+	AI_Output (other, self, "DIA_Lares_DEX_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self, other, "DIA_Addon_Lares_DEX_Add_09_01"); //РљРѕРЅРµС‡РЅРѕ. РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ СЃРёР»СЊРЅС‹Рј Рё Р»РѕРІРєРёРј.
 
 	Lares_TeachDEX = TRUE;
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Ларес может помочь мне повысить мою ловкость и силу.");
+	B_LogEntry (Topic_CityTeacher,"Р›Р°СЂРµСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕСЋ Р»РѕРІРєРѕСЃС‚СЊ Рё СЃРёР»Сѓ.");
 };
 // ------------------------------------------------------------
 // 			  				   TEACH 
@@ -2103,7 +2103,7 @@ instance DIA_Lares_TEACH		(C_INFO)
 	condition	 = 	DIA_Lares_TEACH_Condition;
 	information	 = 	DIA_Lares_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Тренируй меня.";
+	description	 = 	"РўСЂРµРЅРёСЂСѓР№ РјРµРЅСЏ.";
 };
 func int DIA_Lares_TEACH_Condition ()
 {	
@@ -2115,7 +2115,7 @@ func int DIA_Lares_TEACH_Condition ()
 func void DIA_Lares_TEACH_Info ()
 {
 	//AI_Output (other, self, "DIA_Lares_TEACH_15_00"); //Ich will geschickter werden!
-	AI_Output (other,self ,"DIA_Addon_Lares_Teach_15_00"); //Тренируй меня.
+	AI_Output (other,self ,"DIA_Addon_Lares_Teach_15_00"); //РўСЂРµРЅРёСЂСѓР№ РјРµРЅСЏ.
 	
 	Lares_MerkeDEX = other.attribute[ATR_DEXTERITY];
 	Lares_MerkeSTR = other.attribute[ATR_STRENGTH];
@@ -2131,11 +2131,11 @@ func void DIA_Lares_TEACH_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] > Lares_MerkeDEX)
 	{
-		AI_Output (self, other, "DIA_Lares_TEACH_BACK_09_00"); //Ты уже стал более ловким.
+		AI_Output (self, other, "DIA_Lares_TEACH_BACK_09_00"); //РўС‹ СѓР¶Рµ СЃС‚Р°Р» Р±РѕР»РµРµ Р»РѕРІРєРёРј.
 	};
 	if (other.attribute[ATR_STRENGTH] > Lares_MerkeSTR)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_TEACH_BACK_Add_09_00"); //(оценивающе) Очень хорошо. Ты стал сильнее.
+		AI_Output (self, other, "DIA_Addon_Lares_TEACH_BACK_Add_09_00"); //(РѕС†РµРЅРёРІР°СЋС‰Рµ) РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РўС‹ СЃС‚Р°Р» СЃРёР»СЊРЅРµРµ.
 	};
 	
 	Info_ClearChoices (DIA_Lares_TEACH);
@@ -2256,7 +2256,7 @@ INSTANCE DIA_Lares_AnyNews(C_INFO)
 	condition	= DIA_Lares_AnyNews_Condition;
 	information	= DIA_Lares_AnyNews_Info;
 	permanent	= TRUE;
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 FUNC INT DIA_Lares_AnyNews_Condition()
 {
@@ -2267,26 +2267,26 @@ FUNC INT DIA_Lares_AnyNews_Condition()
 };
 FUNC VOID DIA_Lares_AnyNews_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_AnyNews_15_00"); //Есть новости?
+	AI_Output (other,self ,"DIA_Lares_AnyNews_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_01"); //Основные новости связаны с тобой. Беннета отпустили, и он возвращается на ферму.
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_02"); //Иди к нему, я думаю, он хочет отблагодарить тебя лично.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_01"); //РћСЃРЅРѕРІРЅС‹Рµ РЅРѕРІРѕСЃС‚Рё СЃРІСЏР·Р°РЅС‹ СЃ С‚РѕР±РѕР№. Р‘РµРЅРЅРµС‚Р° РѕС‚РїСѓСЃС‚РёР»Рё, Рё РѕРЅ РІРѕР·РІСЂР°С‰Р°РµС‚СЃСЏ РЅР° С„РµСЂРјСѓ.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_02"); //РРґРё Рє РЅРµРјСѓ, СЏ РґСѓРјР°СЋ, РѕРЅ С…РѕС‡РµС‚ РѕС‚Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ Р»РёС‡РЅРѕ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_03"); //Можно сказать и так. Паладины арестовали Беннета, нашего кузнеца.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_03"); //РњРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ Рё С‚Р°Рє. РџР°Р»Р°РґРёРЅС‹ Р°СЂРµСЃС‚РѕРІР°Р»Рё Р‘РµРЅРЅРµС‚Р°, РЅР°С€РµРіРѕ РєСѓР·РЅРµС†Р°.
 		
 		if (MIS_RescueBennet == LOG_RUNNING)
 		{
-			AI_Output (other,self ,"DIA_Lares_AnyNews_15_04"); //Я слышал. Нечистое это дело.
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_05"); //Ну, ты сам все понимаешь.
+			AI_Output (other,self ,"DIA_Lares_AnyNews_15_04"); //РЇ СЃР»С‹С€Р°Р». РќРµС‡РёСЃС‚РѕРµ СЌС‚Рѕ РґРµР»Рѕ.
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_05"); //РќСѓ, С‚С‹ СЃР°Рј РІСЃРµ РїРѕРЅРёРјР°РµС€СЊ.
 		}
 		else
 		{
-			AI_Output (other,self ,"DIA_Lares_AnyNews_15_06"); //Как это случилось?
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_07"); //Беннет пришел в город за покупками. Но вернуться ему было не суждено.
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_08"); //Если хочешь узнать больше, расспроси Ходжеса, он был в городе вместе с Беннетом.
+			AI_Output (other,self ,"DIA_Lares_AnyNews_15_06"); //РљР°Рє СЌС‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_07"); //Р‘РµРЅРЅРµС‚ РїСЂРёС€РµР» РІ РіРѕСЂРѕРґ Р·Р° РїРѕРєСѓРїРєР°РјРё. РќРѕ РІРµСЂРЅСѓС‚СЊСЃСЏ РµРјСѓ Р±С‹Р»Рѕ РЅРµ СЃСѓР¶РґРµРЅРѕ.
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_08"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ, СЂР°СЃСЃРїСЂРѕСЃРё РҐРѕРґР¶РµСЃР°, РѕРЅ Р±С‹Р» РІ РіРѕСЂРѕРґРµ РІРјРµСЃС‚Рµ СЃ Р‘РµРЅРЅРµС‚РѕРј.
 			
 			MIS_RescueBennet = LOG_RUNNING;
 		};
@@ -2294,7 +2294,7 @@ FUNC VOID DIA_Lares_AnyNews_Info()
 };
 
 // ************************************************************
-// 		Hast du was von Bennet gehцrt?			 
+// 		Hast du was von Bennet gehС†rt?			 
 // ************************************************************
 INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 {
@@ -2303,7 +2303,7 @@ INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 	condition	= DIA_Lares_NewsAboutBennet_Condition;
 	information	= DIA_Lares_NewsAboutBennet_Info;
 	permanent	= FALSE;
-	description = "Есть новости о Беннете?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё Рѕ Р‘РµРЅРЅРµС‚Рµ?";
 };                       
 FUNC INT DIA_Lares_NewsAboutBennet_Condition()
 {
@@ -2314,11 +2314,11 @@ FUNC INT DIA_Lares_NewsAboutBennet_Condition()
 };
 FUNC VOID DIA_Lares_NewsAboutBennet_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_00"); //Есть новости о Беннете?
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_01"); //Его увели в казармы и бросили там за решетку.
-	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_02"); //Как нам вызволить его оттуда?
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_03"); //Пока у меня нет никаких идей. Я не могу пробраться в его камеру и поговорить с ним.
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_04"); //Все, что мне остается - это держать ушки на макушке, может, мне удастся что-то узнать.
+	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё Рѕ Р‘РµРЅРЅРµС‚Рµ?
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_01"); //Р•РіРѕ СѓРІРµР»Рё РІ РєР°Р·Р°СЂРјС‹ Рё Р±СЂРѕСЃРёР»Рё С‚Р°Рј Р·Р° СЂРµС€РµС‚РєСѓ.
+	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_02"); //РљР°Рє РЅР°Рј РІС‹Р·РІРѕР»РёС‚СЊ РµРіРѕ РѕС‚С‚СѓРґР°?
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_03"); //РџРѕРєР° Сѓ РјРµРЅСЏ РЅРµС‚ РЅРёРєР°РєРёС… РёРґРµР№. РЇ РЅРµ РјРѕРіСѓ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ РµРіРѕ РєР°РјРµСЂСѓ Рё РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј.
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_04"); //Р’СЃРµ, С‡С‚Рѕ РјРЅРµ РѕСЃС‚Р°РµС‚СЃСЏ - СЌС‚Рѕ РґРµСЂР¶Р°С‚СЊ СѓС€РєРё РЅР° РјР°РєСѓС€РєРµ, РјРѕР¶РµС‚, РјРЅРµ СѓРґР°СЃС‚СЃСЏ С‡С‚Рѕ-С‚Рѕ СѓР·РЅР°С‚СЊ.
 };
 
 //#################################
@@ -2362,7 +2362,7 @@ INSTANCE DIA_Lares_Kap4_PERM(C_INFO)
 	condition	= DIA_Lares_Kap4_PERM_Condition;
 	information	= DIA_Lares_Kap4_PERM_Info;
 	permanent	= TRUE;
-	description = "Почему ты не охотишься на драконов?";
+	description = "РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РѕС…РѕС‚РёС€СЊСЃСЏ РЅР° РґСЂР°РєРѕРЅРѕРІ?";
 };                       
 FUNC INT DIA_Lares_Kap4_PERM_Condition()
 {
@@ -2373,9 +2373,9 @@ FUNC INT DIA_Lares_Kap4_PERM_Condition()
 };
 FUNC VOID DIA_Lares_Kap4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_Kap4_PERM_15_00"); //Почему ты не охотишься на драконов?
-	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_01"); //Это не по мне. Пусть этим занимаются другие.
-	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_02"); //Нет уж, спасибо. Чистый морской воздух - это все, что мне сейчас нужно.
+	AI_Output (other,self ,"DIA_Lares_Kap4_PERM_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РѕС…РѕС‚РёС€СЊСЃСЏ РЅР° РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_01"); //Р­С‚Рѕ РЅРµ РїРѕ РјРЅРµ. РџСѓСЃС‚СЊ СЌС‚РёРј Р·Р°РЅРёРјР°СЋС‚СЃСЏ РґСЂСѓРіРёРµ.
+	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_02"); //РќРµС‚ СѓР¶, СЃРїР°СЃРёР±Рѕ. Р§РёСЃС‚С‹Р№ РјРѕСЂСЃРєРѕР№ РІРѕР·РґСѓС… - СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ РјРЅРµ СЃРµР№С‡Р°СЃ РЅСѓР¶РЅРѕ.
 };
 
 //#################################
@@ -2422,7 +2422,7 @@ instance DIA_Lares_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Lares_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Lares_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ты не хочешь покинуть этот остров?";
+	description	 = 	"РўС‹ РЅРµ С…РѕС‡РµС€СЊ РїРѕРєРёРЅСѓС‚СЊ СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ?";
 };
 func int DIA_Lares_KnowWhereEnemy_Condition ()
 {	
@@ -2434,30 +2434,30 @@ func int DIA_Lares_KnowWhereEnemy_Condition ()
 };
 func void DIA_Lares_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_00"); //Ты не хочешь покинуть этот остров?
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_01"); //Это самое большое мое желание. А что ты задумал?
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_02"); //Я выяснил, где скрывается повелитель драконов. Он на острове, недалеко отсюда.
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_03"); //Я собираюсь избавиться от него раз и навсегда.
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_04"); //Звучит заманчиво. Если я тебе нужен, ты можешь на меня рассчитывать.
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_05"); //Тебе не нужен учитель ловкости или боя одноручным оружием в твоем путешествии?
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_00"); //РўС‹ РЅРµ С…РѕС‡РµС€СЊ РїРѕРєРёРЅСѓС‚СЊ СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ?
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_01"); //Р­С‚Рѕ СЃР°РјРѕРµ Р±РѕР»СЊС€РѕРµ РјРѕРµ Р¶РµР»Р°РЅРёРµ. Рђ С‡С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»?
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_02"); //РЇ РІС‹СЏСЃРЅРёР», РіРґРµ СЃРєСЂС‹РІР°РµС‚СЃСЏ РїРѕРІРµР»РёС‚РµР»СЊ РґСЂР°РєРѕРЅРѕРІ. РћРЅ РЅР° РѕСЃС‚СЂРѕРІРµ, РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°.
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_03"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РЅРµРіРѕ СЂР°Р· Рё РЅР°РІСЃРµРіРґР°.
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_04"); //Р—РІСѓС‡РёС‚ Р·Р°РјР°РЅС‡РёРІРѕ. Р•СЃР»Рё СЏ С‚РµР±Рµ РЅСѓР¶РµРЅ, С‚С‹ РјРѕР¶РµС€СЊ РЅР° РјРµРЅСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_05"); //РўРµР±Рµ РЅРµ РЅСѓР¶РµРЅ СѓС‡РёС‚РµР»СЊ Р»РѕРІРєРѕСЃС‚Рё РёР»Рё Р±РѕСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј РІ С‚РІРѕРµРј РїСѓС‚РµС€РµСЃС‚РІРёРё?
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lares_KnowWhereEnemy_15_06"); //Корабль уже полон, но я вернусь к тебе, если что-то изменится.
+		AI_Output			(other,self , "DIA_Lares_KnowWhereEnemy_15_06"); //РљРѕСЂР°Р±Р»СЊ СѓР¶Рµ РїРѕР»РѕРЅ, РЅРѕ СЏ РІРµСЂРЅСѓСЃСЊ Рє С‚РµР±Рµ, РµСЃР»Рё С‡С‚Рѕ-С‚Рѕ РёР·РјРµРЅРёС‚СЃСЏ.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Lares_KnowWhereEnemy);
-		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"Ты не нужен мне.",DIA_Lares_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"Я знал, что могу положиться на тебя.",DIA_Lares_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"РўС‹ РЅРµ РЅСѓР¶РµРЅ РјРЅРµ.",DIA_Lares_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Lares_KnowWhereEnemy,"РЇ Р·РЅР°Р», С‡С‚Рѕ РјРѕРіСѓ РїРѕР»РѕР¶РёС‚СЊСЃСЏ РЅР° С‚РµР±СЏ.",DIA_Lares_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Lares_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_00"); //Я знал, что могу положиться на тебя.
-	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_01"); //Встретимся у корабля.
-	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_Yes_09_02"); //Ты человек действия - это мне нравится. Увидимся позже.
+	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_00"); //РЇ Р·РЅР°Р», С‡С‚Рѕ РјРѕРіСѓ РїРѕР»РѕР¶РёС‚СЊСЃСЏ РЅР° С‚РµР±СЏ.
+	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_01"); //Р’СЃС‚СЂРµС‚РёРјСЃСЏ Сѓ РєРѕСЂР°Р±Р»СЏ.
+	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_Yes_09_02"); //РўС‹ С‡РµР»РѕРІРµРє РґРµР№СЃС‚РІРёСЏ - СЌС‚Рѕ РјРЅРµ РЅСЂР°РІРёС‚СЃСЏ. РЈРІРёРґРёРјСЃСЏ РїРѕР·Р¶Рµ.
 	
 	Lares_IsOnBoard	 = LOG_SUCCESS;
 	crewmember_Count = (Crewmember_Count +1);
@@ -2476,8 +2476,8 @@ FUNC VOID DIA_Lares_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Lares_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_No_15_00"); //Я ценю твое предложение, но вынужден отказать тебе.
-	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_No_09_01"); //Ты должен понять, что ты хочешь. Если захочешь вернуться к этому вопросу, ты знаешь, где меня найти.
+	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_No_15_00"); //РЇ С†РµРЅСЋ С‚РІРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ, РЅРѕ РІС‹РЅСѓР¶РґРµРЅ РѕС‚РєР°Р·Р°С‚СЊ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_No_09_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРЅСЏС‚СЊ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ. Р•СЃР»Рё Р·Р°С…РѕС‡РµС€СЊ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє СЌС‚РѕРјСѓ РІРѕРїСЂРѕСЃСѓ, С‚С‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РЅР°Р№С‚Рё.
 
 	if (hero.guild == GIL_DJG)
 	{
@@ -2501,7 +2501,7 @@ instance DIA_Lares_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Lares_LeaveMyShip_Condition;
 	information	 = 	DIA_Lares_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Будет лучше, если ты не поплывешь со мной.";
+	description	 = 	"Р‘СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё С‚С‹ РЅРµ РїРѕРїР»С‹РІРµС€СЊ СЃРѕ РјРЅРѕР№.";
 };
 func int DIA_Lares_LeaveMyShip_Condition ()
 {	
@@ -2513,8 +2513,8 @@ func int DIA_Lares_LeaveMyShip_Condition ()
 };
 func void DIA_Lares_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_LeaveMyShip_15_00"); //Будет лучше, если ты не поплывешь со мной.
-	AI_Output			(self, other, "DIA_Lares_LeaveMyShip_09_01"); //Как знаешь, но в будущем думай, что ты обещаешь и кому.
+	AI_Output			(other, self, "DIA_Lares_LeaveMyShip_15_00"); //Р‘СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё С‚С‹ РЅРµ РїРѕРїР»С‹РІРµС€СЊ СЃРѕ РјРЅРѕР№.
+	AI_Output			(self, other, "DIA_Lares_LeaveMyShip_09_01"); //РљР°Рє Р·РЅР°РµС€СЊ, РЅРѕ РІ Р±СѓРґСѓС‰РµРј РґСѓРјР°Р№, С‡С‚Рѕ С‚С‹ РѕР±РµС‰Р°РµС€СЊ Рё РєРѕРјСѓ.
 	
 	if (hero.guild == GIL_DJG)
 	{
@@ -2530,7 +2530,7 @@ func void DIA_Lares_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ьberlegt!
+//	Ich habs mir СЊberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lares_StillNeedYou		(C_INFO)
 {
@@ -2539,7 +2539,7 @@ instance DIA_Lares_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Lares_StillNeedYou_Condition;
 	information	 = 	DIA_Lares_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ты все еще заинтересован в месте на корабле?";
+	description	 = 	"РўС‹ РІСЃРµ РµС‰Рµ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅ РІ РјРµСЃС‚Рµ РЅР° РєРѕСЂР°Р±Р»Рµ?";
 };
 func int DIA_Lares_StillNeedYou_Condition ()
 {	
@@ -2552,12 +2552,12 @@ func int DIA_Lares_StillNeedYou_Condition ()
 };
 func void DIA_Lares_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_StillNeedYou_15_00"); //Ты все еще заинтересован в месте на корабле?
+	AI_Output			(other, self, "DIA_Lares_StillNeedYou_15_00"); //РўС‹ РІСЃРµ РµС‰Рµ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅ РІ РјРµСЃС‚Рµ РЅР° РєРѕСЂР°Р±Р»Рµ?
 	
 	if (Lares_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_01"); //Обычно я не позволяю людям так обращаться со мной, но так как ты - один из нас, на этот раз я тебя прощу.
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_02"); //Встретимся на корабле.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_01"); //РћР±С‹С‡РЅРѕ СЏ РЅРµ РїРѕР·РІРѕР»СЏСЋ Р»СЋРґСЏРј С‚Р°Рє РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃРѕ РјРЅРѕР№, РЅРѕ С‚Р°Рє РєР°Рє С‚С‹ - РѕРґРёРЅ РёР· РЅР°СЃ, РЅР° СЌС‚РѕС‚ СЂР°Р· СЏ С‚РµР±СЏ РїСЂРѕС‰Сѓ.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_02"); //Р’СЃС‚СЂРµС‚РёРјСЃСЏ РЅР° РєРѕСЂР°Р±Р»Рµ.
 		
 		Lares_IsOnBoard	 = LOG_SUCCESS;
 		crewmember_Count = (Crewmember_Count +1);
@@ -2573,8 +2573,8 @@ func void DIA_Lares_StillNeedYou_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_03"); //Не обижайся, но я думаю, ты был прав.
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_04"); //Мне лучше остаться здесь.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_03"); //РќРµ РѕР±РёР¶Р°Р№СЃСЏ, РЅРѕ СЏ РґСѓРјР°СЋ, С‚С‹ Р±С‹Р» РїСЂР°РІ.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_04"); //РњРЅРµ Р»СѓС‡С€Рµ РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ.
 		
 		AI_StopProcessInfos (self);
 	};	

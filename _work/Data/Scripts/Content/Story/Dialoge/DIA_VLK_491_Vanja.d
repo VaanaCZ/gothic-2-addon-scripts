@@ -78,7 +78,7 @@ func int DIA_Vanja_STANDARD_Condition ()
 };
 func void DIA_Vanja_STANDARD_Info ()
 {
-	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Я занята.
+	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //РЇ Р·Р°РЅСЏС‚Р°.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -91,7 +91,7 @@ instance DIA_Vanja_DOPE		(C_INFO)
 	condition	 = 	DIA_Vanja_DOPE_Condition;
 	information	 = 	DIA_Vanja_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Где здесь можно купить травки?";
+	description	 = 	"Р“РґРµ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?";
 };
 
 func int DIA_Vanja_DOPE_Condition ()
@@ -104,9 +104,9 @@ func int DIA_Vanja_DOPE_Condition ()
 };
 func void DIA_Vanja_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Где здесь можно купить травки?
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Понятия не имею. Лучше не связывайся с этой дрянью.
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //К тому же, если ты будешь продолжать расспрашивать о ней, у тебя могут быть большие проблемы...
+	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Р“РґРµ Р·РґРµСЃСЊ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. Р›СѓС‡С€Рµ РЅРµ СЃРІСЏР·С‹РІР°Р№СЃСЏ СЃ СЌС‚РѕР№ РґСЂСЏРЅСЊСЋ.
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Рљ С‚РѕРјСѓ Р¶Рµ, РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЂР°СЃСЃРїСЂР°С€РёРІР°С‚СЊ Рѕ РЅРµР№, Сѓ С‚РµР±СЏ РјРѕРіСѓС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹...
 };
 
 

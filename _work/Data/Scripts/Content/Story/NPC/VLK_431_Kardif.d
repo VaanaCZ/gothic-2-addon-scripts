@@ -2,7 +2,7 @@
 instance VLK_431_Kardif (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= " ‡‰ËÙ"; 
+	name 		= "–ö–∞—Ä–¥–∏—Ñ"; 
 	guild 		= GIL_VLK;
 	id 			= 431;
 	voice 		= 14;
@@ -23,7 +23,7 @@ instance VLK_431_Kardif (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart04, BodyTex_N,ITAR_Smith );	
 	Mdl_SetModelFatness	(self,2);

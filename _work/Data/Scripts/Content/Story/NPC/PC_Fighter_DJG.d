@@ -1,12 +1,12 @@
 
 //******************************************
-//   Gorn in der Oldworld als Drachenjäger
+//   Gorn in der Oldworld als DrachenjÐ´ger
 //******************************************
 
 INSTANCE PC_Fighter_DJG (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãîðí";
+	name 		= "Ð“Ð¾Ñ€Ð½";
 	guild 		= GIL_DJG;
 	id 			= 704;
 	voice 		= 12;

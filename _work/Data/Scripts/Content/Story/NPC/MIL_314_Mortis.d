@@ -2,7 +2,7 @@
 instance Mil_314_Mortis (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Мортис";	
+	name 		= "РњРѕСЂС‚РёСЃ";	
 	guild 		= GIL_MIL;
 	id 			= 314;
 	voice 		= 13;

@@ -31,7 +31,7 @@ instance DIA_Sylvio_Hallo		(C_INFO)
 	condition	= DIA_Sylvio_Hallo_Condition;
 	information	= DIA_Sylvio_Hallo_Info;
 	permanent	= TRUE;
-	description	= "Как дела?";
+	description	= "РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Sylvio_Hallo_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Sylvio_Hallo_Condition ()
 
 func void DIA_Sylvio_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Разве я давал тебе разрешение обратиться ко мне?
+	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Р Р°Р·РІРµ СЏ РґР°РІР°Р» С‚РµР±Рµ СЂР°Р·СЂРµС€РµРЅРёРµ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РєРѕ РјРЅРµ?
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -58,7 +58,7 @@ instance DIA_Sylvio_Thekla		(C_INFO)
 	condition	= DIA_Sylvio_Thekla_Condition;
 	information	= DIA_Sylvio_Thekla_Info;
 	permanent 	= FALSE;
-	description	= "Текла говорит, что у нее проблемы с тобой.";
+	description	= "РўРµРєР»Р° РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Сѓ РЅРµРµ РїСЂРѕР±Р»РµРјС‹ СЃ С‚РѕР±РѕР№.";
 };
 
 func int DIA_Sylvio_Thekla_Condition ()
@@ -71,10 +71,10 @@ func int DIA_Sylvio_Thekla_Condition ()
 
 func void DIA_Sylvio_Thekla_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Текла говорит, что у нее проблемы с тобой.
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Да? И что за проблемы у этой милой леди? И почему она не пришла сама?
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Ты прекрасно знаешь, черт побери...
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(цинично-дружелюбно) Почему бы тебе не обсудить этот вопрос с моим другом Булко?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //РўРµРєР»Р° РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ Сѓ РЅРµРµ РїСЂРѕР±Р»РµРјС‹ СЃ С‚РѕР±РѕР№.
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Р”Р°? Р С‡С‚Рѕ Р·Р° РїСЂРѕР±Р»РµРјС‹ Сѓ СЌС‚РѕР№ РјРёР»РѕР№ Р»РµРґРё? Р РїРѕС‡РµРјСѓ РѕРЅР° РЅРµ РїСЂРёС€Р»Р° СЃР°РјР°?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //РўС‹ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ, С‡РµСЂС‚ РїРѕР±РµСЂРё...
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(С†РёРЅРёС‡РЅРѕ-РґСЂСѓР¶РµР»СЋР±РЅРѕ) РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РѕР±СЃСѓРґРёС‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ СЃ РјРѕРёРј РґСЂСѓРіРѕРј Р‘СѓР»РєРѕ?
 
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -90,7 +90,7 @@ instance DIA_Sylvio_Gossip		(C_INFO)
 	condition	= DIA_Sylvio_Gossip_Condition;
 	information	= DIA_Sylvio_Gossip_Info;
 	permanent	= FALSE;
-	description	= "О тебе многие говорят...";
+	description	= "Рћ С‚РµР±Рµ РјРЅРѕРіРёРµ РіРѕРІРѕСЂСЏС‚...";
 };
 
 func int DIA_Sylvio_Gossip_Condition ()
@@ -100,8 +100,8 @@ func int DIA_Sylvio_Gossip_Condition ()
 
 func void DIA_Sylvio_Gossip_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //О тебе многие говорят...
-	AI_Output (self, other, "DIA_Sylvio_Gossip_09_01"); //Эти многие говорят слишком много.
+	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //Рћ С‚РµР±Рµ РјРЅРѕРіРёРµ РіРѕРІРѕСЂСЏС‚...
+	AI_Output (self, other, "DIA_Sylvio_Gossip_09_01"); //Р­С‚Рё РјРЅРѕРіРёРµ РіРѕРІРѕСЂСЏС‚ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -117,7 +117,7 @@ instance DIA_Sylvio_AboutLee (C_INFO)
 	condition	= DIA_Sylvio_AboutLee_Condition;
 	information	= DIA_Sylvio_AboutLee_Info;
 	permanent	= FALSE;
-	description	= "Что ты думаешь о Ли?";
+	description	= "Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ Р›Рё?";
 };
 
 func int DIA_Sylvio_AboutLee_Condition ()
@@ -127,9 +127,9 @@ func int DIA_Sylvio_AboutLee_Condition ()
 
 func void DIA_Sylvio_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Что ты думаешь о Ли?
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(слегка иронично) Ох, он хороший боец. Я бы не стал вступать в схватку с ним.
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(холодно) Если конечно, ее можно было бы избежать.
+	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ Р›Рё?
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(СЃР»РµРіРєР° РёСЂРѕРЅРёС‡РЅРѕ) РћС…, РѕРЅ С…РѕСЂРѕС€РёР№ Р±РѕРµС†. РЇ Р±С‹ РЅРµ СЃС‚Р°Р» РІСЃС‚СѓРїР°С‚СЊ РІ СЃС…РІР°С‚РєСѓ СЃ РЅРёРј.
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(С…РѕР»РѕРґРЅРѕ) Р•СЃР»Рё РєРѕРЅРµС‡РЅРѕ, РµРµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РёР·Р±РµР¶Р°С‚СЊ.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -167,9 +167,9 @@ func int DIA_Sylvio_MenDefeated_Condition ()
 
 func void DIA_Sylvio_MenDefeated_Info ()
 {
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //Мне кажется, ты имеешь зуб на моих парней!
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Насколько я знаю, ты один из протеже Ли.
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Я предупреждаю тебя! Скоро здесь многое переменится, и тогда мы вернемся к этому разговору!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РёРјРµРµС€СЊ Р·СѓР± РЅР° РјРѕРёС… РїР°СЂРЅРµР№!
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, С‚С‹ РѕРґРёРЅ РёР· РїСЂРѕС‚РµР¶Рµ Р›Рё.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ! РЎРєРѕСЂРѕ Р·РґРµСЃСЊ РјРЅРѕРіРѕРµ РїРµСЂРµРјРµРЅРёС‚СЃСЏ, Рё С‚РѕРіРґР° РјС‹ РІРµСЂРЅРµРјСЃСЏ Рє СЌС‚РѕРјСѓ СЂР°Р·РіРѕРІРѕСЂСѓ!
 	
 	Sylvio_MenDefeated = TRUE;
 	
@@ -186,7 +186,7 @@ instance DIA_Sylvio_Asshole (C_INFO)
 	condition	= DIA_Sylvio_Asshole_Condition;
 	information	= DIA_Sylvio_Asshole_Info;
 	permanent	= FALSE;
-	description	= "Эй, дерьмо...";
+	description	= "Р­Р№, РґРµСЂСЊРјРѕ...";
 };
 
 func int DIA_Sylvio_Asshole_Condition ()
@@ -199,9 +199,9 @@ func int DIA_Sylvio_Asshole_Condition ()
 
 func void DIA_Sylvio_Asshole_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Эй, дерьмо...
-	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //Ты что, действительно думаешь, что я вызову тебя на дуэль?
-	AI_Output (self, other, "DIA_Sylvio_Asshole_09_02"); //Проваливай туда, откуда ты выполз.
+	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Р­Р№, РґРµСЂСЊРјРѕ...
+	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //РўС‹ С‡С‚Рѕ, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ РІС‹Р·РѕРІСѓ С‚РµР±СЏ РЅР° РґСѓСЌР»СЊ?
+	AI_Output (self, other, "DIA_Sylvio_Asshole_09_02"); //РџСЂРѕРІР°Р»РёРІР°Р№ С‚СѓРґР°, РѕС‚РєСѓРґР° С‚С‹ РІС‹РїРѕР»Р·.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	

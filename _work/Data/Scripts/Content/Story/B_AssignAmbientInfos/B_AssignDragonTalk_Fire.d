@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Fire_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Глаз потерял свою силу, и тебе не дожить до следующей зари.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Р“Р»Р°Р· РїРѕС‚РµСЂСЏР» СЃРІРѕСЋ СЃРёР»Сѓ, Рё С‚РµР±Рµ РЅРµ РґРѕР¶РёС‚СЊ РґРѕ СЃР»РµРґСѓСЋС‰РµР№ Р·Р°СЂРё.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -61,16 +61,16 @@ FUNC INT DIA_Dragon_Fire_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Поверить не могу, что еще находятся люди, готовые отдать свою жизнь за то, чтобы просто увидеть живого дракона.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //РџРѕРІРµСЂРёС‚СЊ РЅРµ РјРѕРіСѓ, С‡С‚Рѕ РµС‰Рµ РЅР°С…РѕРґСЏС‚СЃСЏ Р»СЋРґРё, РіРѕС‚РѕРІС‹Рµ РѕС‚РґР°С‚СЊ СЃРІРѕСЋ Р¶РёР·РЅСЊ Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ РїСЂРѕСЃС‚Рѕ СѓРІРёРґРµС‚СЊ Р¶РёРІРѕРіРѕ РґСЂР°РєРѕРЅР°.
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Ты довольно чисто говоришь для такого громоздкого монстра.
+		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //РўС‹ РґРѕРІРѕР»СЊРЅРѕ С‡РёСЃС‚Рѕ РіРѕРІРѕСЂРёС€СЊ РґР»СЏ С‚Р°РєРѕРіРѕ РіСЂРѕРјРѕР·РґРєРѕРіРѕ РјРѕРЅСЃС‚СЂР°.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Я пришел не затем, чтобы увидеть тебя. Боюсь, цели мои несколько более радикальны.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Ты хочешь сказать, что готов вызвать меня на бой?
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ха-ха-ха. Я сломаю твою хлипкую шею.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Не так быстро, дружок. Со мной Глаз Инноса. Ты не можешь сопротивляться моей воле. Отвечай на мои вопросы, иначе тебя ждет невыносимая агония.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(ревет) Ах-х. Тогда задавай свои глупые вопросы, пока еще можешь. Твоя сила долго не продлится.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //РЇ РїСЂРёС€РµР» РЅРµ Р·Р°С‚РµРј, С‡С‚РѕР±С‹ СѓРІРёРґРµС‚СЊ С‚РµР±СЏ. Р‘РѕСЋСЃСЊ, С†РµР»Рё РјРѕРё РЅРµСЃРєРѕР»СЊРєРѕ Р±РѕР»РµРµ СЂР°РґРёРєР°Р»СЊРЅС‹.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РіРѕС‚РѕРІ РІС‹Р·РІР°С‚СЊ РјРµРЅСЏ РЅР° Р±РѕР№?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //РҐР°-С…Р°-С…Р°. РЇ СЃР»РѕРјР°СЋ С‚РІРѕСЋ С…Р»РёРїРєСѓСЋ С€РµСЋ.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //РќРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ, РґСЂСѓР¶РѕРє. РЎРѕ РјРЅРѕР№ Р“Р»Р°Р· РРЅРЅРѕСЃР°. РўС‹ РЅРµ РјРѕР¶РµС€СЊ СЃРѕРїСЂРѕС‚РёРІР»СЏС‚СЊСЃСЏ РјРѕРµР№ РІРѕР»Рµ. РћС‚РІРµС‡Р°Р№ РЅР° РјРѕРё РІРѕРїСЂРѕСЃС‹, РёРЅР°С‡Рµ С‚РµР±СЏ Р¶РґРµС‚ РЅРµРІС‹РЅРѕСЃРёРјР°СЏ Р°РіРѕРЅРёСЏ.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(СЂРµРІРµС‚) РђС…-С…. РўРѕРіРґР° Р·Р°РґР°РІР°Р№ СЃРІРѕРё РіР»СѓРїС‹Рµ РІРѕРїСЂРѕСЃС‹, РїРѕРєР° РµС‰Рµ РјРѕР¶РµС€СЊ. РўРІРѕСЏ СЃРёР»Р° РґРѕР»РіРѕ РЅРµ РїСЂРѕРґР»РёС‚СЃСЏ.
 
 };
 
@@ -84,7 +84,7 @@ instance DIA_Dragon_Fire_WerBistDu		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_WerBistDu_Condition;
 	information	 = 	DIA_Dragon_Fire_WerBistDu_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Dragon_Fire_WerBistDu_Condition ()
@@ -97,9 +97,9 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Меня зовут Феоматар, и это все, что ты узнаешь обо мне.
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Когда меня отпустят чары Глаза, ты сгоришь в огне.
+	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р¤РµРѕРјР°С‚Р°СЂ, Рё СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ С‚С‹ СѓР·РЅР°РµС€СЊ РѕР±Рѕ РјРЅРµ.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //РљРѕРіРґР° РјРµРЅСЏ РѕС‚РїСѓСЃС‚СЏС‚ С‡Р°СЂС‹ Р“Р»Р°Р·Р°, С‚С‹ СЃРіРѕСЂРёС€СЊ РІ РѕРіРЅРµ.
 
 };
 
@@ -112,7 +112,7 @@ instance DIA_Dragon_Fire_HORT		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_HORT_Condition;
 	information	 = 	DIA_Dragon_Fire_HORT_Info;
 
-	description	 = 	"Где твоя сокровищница?";
+	description	 = 	"Р“РґРµ С‚РІРѕСЏ СЃРѕРєСЂРѕРІРёС‰РЅРёС†Р°?";
 };
 
 func int DIA_Dragon_Fire_HORT_Condition ()
@@ -125,9 +125,9 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 
 func void DIA_Dragon_Fire_HORT_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //У каждого дракона есть сокровищница, где он хранит свои сокровища. А где твоя сокровищница?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //В месте, которое будет недоступно для тебя, когда я освобожусь от уз Глаза.
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Я храню свои сокровища высоко в этих горячих утесах, куда практически невозможно добраться такому бескрылому созданию вроде тебя.
+	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //РЈ РєР°Р¶РґРѕРіРѕ РґСЂР°РєРѕРЅР° РµСЃС‚СЊ СЃРѕРєСЂРѕРІРёС‰РЅРёС†Р°, РіРґРµ РѕРЅ С…СЂР°РЅРёС‚ СЃРІРѕРё СЃРѕРєСЂРѕРІРёС‰Р°. Рђ РіРґРµ С‚РІРѕСЏ СЃРѕРєСЂРѕРІРёС‰РЅРёС†Р°?
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //Р’ РјРµСЃС‚Рµ, РєРѕС‚РѕСЂРѕРµ Р±СѓРґРµС‚ РЅРµРґРѕСЃС‚СѓРїРЅРѕ РґР»СЏ С‚РµР±СЏ, РєРѕРіРґР° СЏ РѕСЃРІРѕР±РѕР¶СѓСЃСЊ РѕС‚ СѓР· Р“Р»Р°Р·Р°.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //РЇ С…СЂР°РЅСЋ СЃРІРѕРё СЃРѕРєСЂРѕРІРёС‰Р° РІС‹СЃРѕРєРѕ РІ СЌС‚РёС… РіРѕСЂСЏС‡РёС… СѓС‚РµСЃР°С…, РєСѓРґР° РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµРІРѕР·РјРѕР¶РЅРѕ РґРѕР±СЂР°С‚СЊСЃСЏ С‚Р°РєРѕРјСѓ Р±РµСЃРєСЂС‹Р»РѕРјСѓ СЃРѕР·РґР°РЅРёСЋ РІСЂРѕРґРµ С‚РµР±СЏ.
 
 };
 

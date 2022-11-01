@@ -1,7 +1,7 @@
 // ****************************************************************
 // B_Say_Overlay
 // -------------	
-// Wie B_Say(), aber folgende AI-Befehle werden parallel ausgeführt
+// Wie B_Say(), aber folgende AI-Befehle werden parallel ausgefÑŒhrt
 // d.h. sie warten nicht auf das Ende der OutputUnit
 // ****************************************************************
 

@@ -5,7 +5,7 @@ instance PIR_1392_Addon_InExtremo_ThomasTheForger (Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Томас кузнец";
+	name =					"РўРѕРјР°СЃ РєСѓР·РЅРµС†";
    	npctype	= npctype_main;
    	guild =					GIL_NONE;
 	level =					4;

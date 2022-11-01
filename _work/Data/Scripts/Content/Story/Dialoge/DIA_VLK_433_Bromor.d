@@ -30,7 +30,7 @@ instance DIA_Bromor_GIRLS		(C_INFO)
 	condition	 = 	DIA_Bromor_GIRLS_Condition;
 	information	 = 	DIA_Bromor_GIRLS_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты хозяин этого заведения?";
+	description	 = 	"РўС‹ С…РѕР·СЏРёРЅ СЌС‚РѕРіРѕ Р·Р°РІРµРґРµРЅРёСЏ?";
 };
 
 func int DIA_Bromor_GIRLS_Condition ()
@@ -43,15 +43,15 @@ func int DIA_Bromor_GIRLS_Condition ()
 func void DIA_Bromor_GIRLS_Info ()
 {
 	//ADDON>
-	AI_Output (other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //Ты хозяин этого заведения?
+	AI_Output (other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //РўС‹ С…РѕР·СЏРёРЅ СЌС‚РѕРіРѕ Р·Р°РІРµРґРµРЅРёСЏ?
 	//ADDON<
 
-	//AI_Output (other, self, "DIA_Bromor_GIRLS_15_00"); //Я хочу развлечься.
+	//AI_Output (other, self, "DIA_Bromor_GIRLS_15_00"); //РЇ С…РѕС‡Сѓ СЂР°Р·РІР»РµС‡СЊСЃСЏ.
 	//AI_Output (self, other, "DIA_Bromor_GIRLS_07_01"); //Deshalb bist du ja hergekommen.
 
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Я Бромор. Это мой дом, а это мои девочки. Я люблю моих девочек.
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //А если ты любишь моих девочек тоже, ты должен заплатить за это 50 золотых монет.
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //Смотри только, чтобы никаких проблем.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //РЇ Р‘СЂРѕРјРѕСЂ. Р­С‚Рѕ РјРѕР№ РґРѕРј, Р° СЌС‚Рѕ РјРѕРё РґРµРІРѕС‡РєРё. РЇ Р»СЋР±Р»СЋ РјРѕРёС… РґРµРІРѕС‡РµРє.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //Рђ РµСЃР»Рё С‚С‹ Р»СЋР±РёС€СЊ РјРѕРёС… РґРµРІРѕС‡РµРє С‚РѕР¶Рµ, С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //РЎРјРѕС‚СЂРё С‚РѕР»СЊРєРѕ, С‡С‚РѕР±С‹ РЅРёРєР°РєРёС… РїСЂРѕР±Р»РµРј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Addon_Bromor_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Bromor_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Bromor_MissingPeople_Info;
 
-	description	 = 	"С твоими девочками все в порядке?";
+	description	 = 	"РЎ С‚РІРѕРёРјРё РґРµРІРѕС‡РєР°РјРё РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Addon_Bromor_MissingPeople_Condition ()
@@ -79,15 +79,15 @@ func int DIA_Addon_Bromor_MissingPeople_Condition ()
 
 func void DIA_Addon_Bromor_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //С твоими девочками все в порядке?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //Конечно! Или ты думаешь, что я хочу отправиться в тюрьму?
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(раздраженно) Э-э... Я не спрашиваю об их здоровье. Я имел в виду, они все на месте. Или кого-то нет?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //А-а. Да, одна из моих девочек действительно пропала. Ее зовут Люсия.
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //Я даже обращался к людям из ополчения. Но они не нашли никаких ее следов.
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //РЎ С‚РІРѕРёРјРё РґРµРІРѕС‡РєР°РјРё РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //РљРѕРЅРµС‡РЅРѕ! РР»Рё С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЏ С…РѕС‡Сѓ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ С‚СЋСЂСЊРјСѓ?
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р­-СЌ... РЇ РЅРµ СЃРїСЂР°С€РёРІР°СЋ РѕР± РёС… Р·РґРѕСЂРѕРІСЊРµ. РЇ РёРјРµР» РІ РІРёРґСѓ, РѕРЅРё РІСЃРµ РЅР° РјРµСЃС‚Рµ. РР»Рё РєРѕРіРѕ-С‚Рѕ РЅРµС‚?
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //Рђ-Р°. Р”Р°, РѕРґРЅР° РёР· РјРѕРёС… РґРµРІРѕС‡РµРє РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂРѕРїР°Р»Р°. Р•Рµ Р·РѕРІСѓС‚ Р›СЋСЃРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //РЇ РґР°Р¶Рµ РѕР±СЂР°С‰Р°Р»СЃСЏ Рє Р»СЋРґСЏРј РёР· РѕРїРѕР»С‡РµРЅРёСЏ. РќРѕ РѕРЅРё РЅРµ РЅР°С€Р»Рё РЅРёРєР°РєРёС… РµРµ СЃР»РµРґРѕРІ.
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Шлюха по имени Люсия пропала из борделя в гавани."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"РЁР»СЋС…Р° РїРѕ РёРјРµРЅРё Р›СЋСЃРёСЏ РїСЂРѕРїР°Р»Р° РёР· Р±РѕСЂРґРµР»СЏ РІ РіР°РІР°РЅРё."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -100,7 +100,7 @@ instance DIA_Addon_Bromor_Lucia		(C_INFO)
 	condition	 = 	DIA_Addon_Bromor_Lucia_Condition;
 	information	 = 	DIA_Addon_Bromor_Lucia_Info;
 
-	description	 = 	"Как долго не было Люсии?";
+	description	 = 	"РљР°Рє РґРѕР»РіРѕ РЅРµ Р±С‹Р»Рѕ Р›СЋСЃРёРё?";
 };
 
 func int DIA_Addon_Bromor_Lucia_Condition ()
@@ -115,16 +115,16 @@ func int DIA_Addon_Bromor_Lucia_Condition ()
 
 func void DIA_Addon_Bromor_Lucia_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_Lucia_15_00"); //Как долго не было Люсии?
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_01"); //Несколько дней. Не знаю точно, сколько.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //Полагаю, она сбежала с одним из своих поклонников.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Эта сучка кое-что с собой прихватила. Мое драгоценное золотое блюдо.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Если она попадет ко мне в руки, она поплатится!
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_05"); //Но тебе-то какое до этого дело? Ты что, хочешь надо мной посмеяться?
+	AI_Output	(other, self, "DIA_Addon_Bromor_Lucia_15_00"); //РљР°Рє РґРѕР»РіРѕ РЅРµ Р±С‹Р»Рѕ Р›СЋСЃРёРё?
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_01"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№. РќРµ Р·РЅР°СЋ С‚РѕС‡РЅРѕ, СЃРєРѕР»СЊРєРѕ.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //РџРѕР»Р°РіР°СЋ, РѕРЅР° СЃР±РµР¶Р°Р»Р° СЃ РѕРґРЅРёРј РёР· СЃРІРѕРёС… РїРѕРєР»РѕРЅРЅРёРєРѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Р­С‚Р° СЃСѓС‡РєР° РєРѕРµ-С‡С‚Рѕ СЃ СЃРѕР±РѕР№ РїСЂРёС…РІР°С‚РёР»Р°. РњРѕРµ РґСЂР°РіРѕС†РµРЅРЅРѕРµ Р·РѕР»РѕС‚РѕРµ Р±Р»СЋРґРѕ.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Р•СЃР»Рё РѕРЅР° РїРѕРїР°РґРµС‚ РєРѕ РјРЅРµ РІ СЂСѓРєРё, РѕРЅР° РїРѕРїР»Р°С‚РёС‚СЃСЏ!
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_05"); //РќРѕ С‚РµР±Рµ-С‚Рѕ РєР°РєРѕРµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ? РўС‹ С‡С‚Рѕ, С…РѕС‡РµС€СЊ РЅР°РґРѕ РјРЅРѕР№ РїРѕСЃРјРµСЏС‚СЊСЃСЏ?
 
 	Log_CreateTopic (TOPIC_Addon_BromorsGold, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BromorsGold, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BromorsGold,"Шлюха Люсия украла золотую чашу у своего босса, Бромора. Бромор хочет вернуть эту чашу назад."); 
+	B_LogEntry (TOPIC_Addon_BromorsGold,"РЁР»СЋС…Р° Р›СЋСЃРёСЏ СѓРєСЂР°Р»Р° Р·РѕР»РѕС‚СѓСЋ С‡Р°С€Сѓ Сѓ СЃРІРѕРµРіРѕ Р±РѕСЃСЃР°, Р‘СЂРѕРјРѕСЂР°. Р‘СЂРѕРјРѕСЂ С…РѕС‡РµС‚ РІРµСЂРЅСѓС‚СЊ СЌС‚Сѓ С‡Р°С€Сѓ РЅР°Р·Р°Рґ."); 
 
 	MIS_Bromor_LuciaStoleGold = LOG_RUNNING;
 };
@@ -140,7 +140,7 @@ instance DIA_Addon_Bromor_LuciaGold		(C_INFO)
 	information	 = 	DIA_Addon_Bromor_LuciaGold_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я нашел блюдо, которое украла Люсия.";
+	description	 = 	"РЇ РЅР°С€РµР» Р±Р»СЋРґРѕ, РєРѕС‚РѕСЂРѕРµ СѓРєСЂР°Р»Р° Р›СЋСЃРёСЏ.";
 };
 
 func int DIA_Addon_Bromor_LuciaGold_Condition ()
@@ -155,25 +155,25 @@ func int DIA_Addon_Bromor_LuciaGold_Condition ()
 
 func void DIA_Addon_Bromor_LuciaGold_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_LuciaGold_15_00"); //Я нашел блюдо, которое украла Люсия.
-	AI_Output	(self, other, "DIA_Addon_Bromor_LuciaGold_07_01"); //Прекрасно, буду рад получить его назад.
+	AI_Output	(other, self, "DIA_Addon_Bromor_LuciaGold_15_00"); //РЇ РЅР°С€РµР» Р±Р»СЋРґРѕ, РєРѕС‚РѕСЂРѕРµ СѓРєСЂР°Р»Р° Р›СЋСЃРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Bromor_LuciaGold_07_01"); //РџСЂРµРєСЂР°СЃРЅРѕ, Р±СѓРґСѓ СЂР°Рґ РїРѕР»СѓС‡РёС‚СЊ РµРіРѕ РЅР°Р·Р°Рґ.
 	
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	if (Bromor_Hausverbot == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Как насчет награды?", DIA_Addon_Bromor_LuciaGold_lohn );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "РљР°Рє РЅР°СЃС‡РµС‚ РЅР°РіСЂР°РґС‹?", DIA_Addon_Bromor_LuciaGold_lohn );
 	};
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Вот блюдо.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Р’РѕС‚ Р±Р»СЋРґРѕ.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Тебе не интересно, что случилось с Люсией?", DIA_Addon_Bromor_LuciaGold_lucia );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "РўРµР±Рµ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ Р›СЋСЃРёРµР№?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};
 };
 func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_einfachgeben_15_00"); //Вот блюдо.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_einfachgeben_15_00"); //Р’РѕС‚ Р±Р»СЋРґРѕ.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_einfachgeben_07_01"); //Благодарю. Очень щедро с твоей стороны. Что-нибудь еще?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_einfachgeben_07_01"); //Р‘Р»Р°РіРѕРґР°СЂСЋ. РћС‡РµРЅСЊ С‰РµРґСЂРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹. Р§С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
 	B_GivePlayerXP (XP_Addon_Bromor_LuciaGold);
@@ -182,44 +182,44 @@ func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
 var int DIA_Addon_Bromor_LuciaGold_lucia_OneTime;
 func void DIA_Addon_Bromor_LuciaGold_lucia ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //Тебе не интересно, что случилось с Люсией?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //Нет. А зачем мне знать? Главное, что блюдо у меня.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //Я обходился без Люсии все это время, обойдусь и дальше. Почему я должен пытаться ее вернуть?
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //РўРµР±Рµ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ Р›СЋСЃРёРµР№?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //РќРµС‚. Рђ Р·Р°С‡РµРј РјРЅРµ Р·РЅР°С‚СЊ? Р“Р»Р°РІРЅРѕРµ, С‡С‚Рѕ Р±Р»СЋРґРѕ Сѓ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //РЇ РѕР±С…РѕРґРёР»СЃСЏ Р±РµР· Р›СЋСЃРёРё РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ, РѕР±РѕР№РґСѓСЃСЊ Рё РґР°Р»СЊС€Рµ. РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РїС‹С‚Р°С‚СЊСЃСЏ РµРµ РІРµСЂРЅСѓС‚СЊ?
 	DIA_Addon_Bromor_LuciaGold_lucia_OneTime = TRUE;
 };
 func void DIA_Addon_Bromor_LuciaGold_lohn ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lohn_15_00"); //Как насчет награды?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lohn_07_01"); //Можешь бесплатно провести время с одной из моих девочек. Что скажешь?
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lohn_15_00"); //РљР°Рє РЅР°СЃС‡РµС‚ РЅР°РіСЂР°РґС‹?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lohn_07_01"); //РњРѕР¶РµС€СЊ Р±РµСЃРїР»Р°С‚РЅРѕ РїСЂРѕРІРµСЃС‚Рё РІСЂРµРјСЏ СЃ РѕРґРЅРѕР№ РёР· РјРѕРёС… РґРµРІРѕС‡РµРє. Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ?
 
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Тебе не интересно, что случилось с Люсией?", DIA_Addon_Bromor_LuciaGold_lucia );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "РўРµР±Рµ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃ Р›СЋСЃРёРµР№?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};	
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Этого недостаточно.", DIA_Addon_Bromor_LuciaGold_mehr );
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Согласен. Вот блюдо.", DIA_Addon_Bromor_LuciaGold_geben );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.", DIA_Addon_Bromor_LuciaGold_mehr );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "РЎРѕРіР»Р°СЃРµРЅ. Р’РѕС‚ Р±Р»СЋРґРѕ.", DIA_Addon_Bromor_LuciaGold_geben );
 };
 func void DIA_Addon_Bromor_LuciaGold_mehr ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //Этого недостаточно.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //Соглашайся, или можешь здесь больше не показываться.
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Забудь об этом.", DIA_Addon_Bromor_LuciaGold_nein );
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //РЎРѕРіР»Р°С€Р°Р№СЃСЏ, РёР»Рё РјРѕР¶РµС€СЊ Р·РґРµСЃСЊ Р±РѕР»СЊС€Рµ РЅРµ РїРѕРєР°Р·С‹РІР°С‚СЊСЃСЏ.
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.", DIA_Addon_Bromor_LuciaGold_nein );
 };
 func void DIA_Addon_Bromor_LuciaGold_nein ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_nein_15_00"); //Забудь об этом.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //Тогда убирайся из моего заведения, скотина.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //И не думай, что тебя здесь когда-нибудь обслужат.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_nein_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //РўРѕРіРґР° СѓР±РёСЂР°Р№СЃСЏ РёР· РјРѕРµРіРѕ Р·Р°РІРµРґРµРЅРёСЏ, СЃРєРѕС‚РёРЅР°.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //Р РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ С‚РµР±СЏ Р·РґРµСЃСЊ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РѕР±СЃР»СѓР¶Р°С‚.
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	Bromor_Hausverbot = TRUE;
 	Bromor_Pay = 0;
 };
 func void DIA_Addon_Bromor_LuciaGold_geben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //Согласен. Вот блюдо.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //РЎРѕРіР»Р°СЃРµРЅ. Р’РѕС‚ Р±Р»СЋРґРѕ.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Благодарю. Иди к Наде. Она составит тебе компанию наверху.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Р‘Р»Р°РіРѕРґР°СЂСЋ. РРґРё Рє РќР°РґРµ. РћРЅР° СЃРѕСЃС‚Р°РІРёС‚ С‚РµР±Рµ РєРѕРјРїР°РЅРёСЋ РЅР°РІРµСЂС…Сѓ.
 	Bromor_Pay = 1; 
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
@@ -237,7 +237,7 @@ instance DIA_Bromor_Pay		(C_INFO)
 	condition	 = 	DIA_Bromor_Pay_Condition;
 	information	 = 	DIA_Bromor_Pay_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу развлечься (заплатить 50 золотых).";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЂР°Р·РІР»РµС‡СЊСЃСЏ (Р·Р°РїР»Р°С‚РёС‚СЊ 50 Р·РѕР»РѕС‚С‹С…).";
 };
 
 func int DIA_Bromor_Pay_Condition ()
@@ -255,12 +255,12 @@ func int DIA_Bromor_Pay_Condition ()
 var int DIA_Bromor_Pay_OneTime;
 func void DIA_Bromor_Pay_Info ()
 {
-	AI_Output (other, self, "DIA_Bromor_Pay_15_00"); //Я хочу развлечься.
+	AI_Output (other, self, "DIA_Bromor_Pay_15_00"); //РЇ С…РѕС‡Сѓ СЂР°Р·РІР»РµС‡СЊСЃСЏ.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 50)
 	{
-		AI_Output (self, other, "DIA_Bromor_Pay_07_01"); //Отлично. (ухмыляется) Ты долго не забудешь следующие несколько часов твоей жизни.
-		AI_Output (self, other, "DIA_Bromor_Pay_07_02"); //Иди наверх с Надей. Удачи.
+		AI_Output (self, other, "DIA_Bromor_Pay_07_01"); //РћС‚Р»РёС‡РЅРѕ. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РўС‹ РґРѕР»РіРѕ РЅРµ Р·Р°Р±СѓРґРµС€СЊ СЃР»РµРґСѓСЋС‰РёРµ РЅРµСЃРєРѕР»СЊРєРѕ С‡Р°СЃРѕРІ С‚РІРѕРµР№ Р¶РёР·РЅРё.
+		AI_Output (self, other, "DIA_Bromor_Pay_07_02"); //РРґРё РЅР°РІРµСЂС… СЃ РќР°РґРµР№. РЈРґР°С‡Рё.
 	
 		if (DIA_Bromor_Pay_OneTime == FALSE)
 		{
@@ -271,7 +271,7 @@ func void DIA_Bromor_Pay_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bromor_Pay_07_03"); //Я не выношу, когда кто-нибудь пытается надуть меня. Убирайся отсюда, если не можешь заплатить.
+		AI_Output (self, other, "DIA_Bromor_Pay_07_03"); //РЇ РЅРµ РІС‹РЅРѕС€Сѓ, РєРѕРіРґР° РєС‚Рѕ-РЅРёР±СѓРґСЊ РїС‹С‚Р°РµС‚СЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ. РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°, РµСЃР»Рё РЅРµ РјРѕР¶РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ.
 	};
 	B_NpcClearObsessionByDMT (self);
 };
@@ -285,7 +285,7 @@ instance DIA_Bromor_DOPE		(C_INFO)
 	condition	 = 	DIA_Bromor_DOPE_Condition;
 	information	 = 	DIA_Bromor_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"А могу я рассчитывать на 'особые' услуги, а?";
+	description	 = 	"Рђ РјРѕРіСѓ СЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° 'РѕСЃРѕР±С‹Рµ' СѓСЃР»СѓРіРё, Р°?";
 };
 
 func int DIA_Bromor_DOPE_Condition ()
@@ -299,9 +299,9 @@ func int DIA_Bromor_DOPE_Condition ()
 };
 func void DIA_Bromor_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //А могу я рассчитывать на 'особые' услуги, а?
-	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //Конечно, все мои девочки особенные. (ухмыляется)
-	AI_Output (self, other, "DIA_Bromor_DOPE_07_02"); //Если у тебя есть деньги, ты можешь пойти наверх с Надей.
+	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //Рђ РјРѕРіСѓ СЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° 'РѕСЃРѕР±С‹Рµ' СѓСЃР»СѓРіРё, Р°?
+	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //РљРѕРЅРµС‡РЅРѕ, РІСЃРµ РјРѕРё РґРµРІРѕС‡РєРё РѕСЃРѕР±РµРЅРЅС‹Рµ. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ)
+	AI_Output (self, other, "DIA_Bromor_DOPE_07_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґРµРЅСЊРіРё, С‚С‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё РЅР°РІРµСЂС… СЃ РќР°РґРµР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -314,7 +314,7 @@ instance DIA_Bromor_Obsession		(C_INFO)
 	condition	 = 	DIA_Bromor_Obsession_Condition;
 	information	 = 	DIA_Bromor_Obsession_Info;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Bromor_Obsession_Condition ()
@@ -345,7 +345,7 @@ instance DIA_Bromor_Heilung		(C_INFO)
 	information	 = 	DIA_Bromor_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты одержим.";
+	description	 = 	"РўС‹ РѕРґРµСЂР¶РёРј.";
 };
 
 func int DIA_Bromor_Heilung_Condition ()
@@ -359,8 +359,8 @@ func int DIA_Bromor_Heilung_Condition ()
 
 func void DIA_Bromor_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Bromor_Heilung_15_00"); //Ты одержим.
-	AI_Output			(self, other, "DIA_Bromor_Heilung_07_01"); //Что? О чем это ты? Убирайся отсюда.
+	AI_Output			(other, self, "DIA_Bromor_Heilung_15_00"); //РўС‹ РѕРґРµСЂР¶РёРј.
+	AI_Output			(self, other, "DIA_Bromor_Heilung_07_01"); //Р§С‚Рѕ? Рћ С‡РµРј СЌС‚Рѕ С‚С‹? РЈР±РёСЂР°Р№СЃСЏ РѕС‚СЃСЋРґР°.
 	B_NpcClearObsessionByDMT (self);
 };
 
@@ -375,7 +375,7 @@ INSTANCE DIA_Bromor_PICKPOCKET (C_INFO)
 	condition	= DIA_Bromor_PICKPOCKET_Condition;
 	information	= DIA_Bromor_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Воровать этот ключ рискованно)";
+	description = "(Р’РѕСЂРѕРІР°С‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Bromor_PICKPOCKET_Condition()

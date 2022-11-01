@@ -30,7 +30,7 @@ INSTANCE DIA_Jergan_Hallo   (C_INFO)
 	condition   = DIA_Jergan_Hallo_Condition;
 	information = DIA_Jergan_Hallo_Info;
 	permanent   = FALSE;
-	description = "Что ты здесь делаешь?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };
 
 FUNC INT DIA_Jergan_Hallo_Condition()
@@ -40,8 +40,8 @@ FUNC INT DIA_Jergan_Hallo_Condition()
 
 FUNC VOID DIA_Jergan_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Hallo_15_00");//Что ты здесь делаешь?
-	AI_Output (self, other,"DIA_Jergan_Hallo_13_01");//Я пришел из замка. Меня послали поискать пропавших и разведать эту местность.
+	AI_Output (other, self,"DIA_Jergan_Hallo_15_00");//Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output (self, other,"DIA_Jergan_Hallo_13_01");//РЇ РїСЂРёС€РµР» РёР· Р·Р°РјРєР°. РњРµРЅСЏ РїРѕСЃР»Р°Р»Рё РїРѕРёСЃРєР°С‚СЊ РїСЂРѕРїР°РІС€РёС… Рё СЂР°Р·РІРµРґР°С‚СЊ СЌС‚Сѓ РјРµСЃС‚РЅРѕСЃС‚СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Vermisste
@@ -53,7 +53,7 @@ INSTANCE DIA_Jergan_Vermisste   (C_INFO)
 	condition   = DIA_Jergan_Vermisste_Condition;
 	information = DIA_Jergan_Vermisste_Info;
 	permanent   = FALSE;
-	description = "Пропавших?";
+	description = "РџСЂРѕРїР°РІС€РёС…?";
 };
 
 FUNC INT DIA_Jergan_Vermisste_Condition()
@@ -65,9 +65,9 @@ FUNC INT DIA_Jergan_Vermisste_Condition()
 };
 FUNC VOID DIA_Jergan_Vermisste_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//Пропавших?
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//Некоторые сбежали, когда на нас напали драконы. Большинству из них не удалось выжить - это и неудивительно!
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Но все же, если кому-то удалось выжить, я должен привести их назад.
+	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//РџСЂРѕРїР°РІС€РёС…?
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//РќРµРєРѕС‚РѕСЂС‹Рµ СЃР±РµР¶Р°Р»Рё, РєРѕРіРґР° РЅР° РЅР°СЃ РЅР°РїР°Р»Рё РґСЂР°РєРѕРЅС‹. Р‘РѕР»СЊС€РёРЅСЃС‚РІСѓ РёР· РЅРёС… РЅРµ СѓРґР°Р»РѕСЃСЊ РІС‹Р¶РёС‚СЊ - СЌС‚Рѕ Рё РЅРµСѓРґРёРІРёС‚РµР»СЊРЅРѕ!
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//РќРѕ РІСЃРµ Р¶Рµ, РµСЃР»Рё РєРѕРјСѓ-С‚Рѕ СѓРґР°Р»РѕСЃСЊ РІС‹Р¶РёС‚СЊ, СЏ РґРѕР»Р¶РµРЅ РїСЂРёРІРµСЃС‚Рё РёС… РЅР°Р·Р°Рґ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Burg 
@@ -79,7 +79,7 @@ INSTANCE DIA_Jergan_Burg   (C_INFO)
 	condition   = DIA_Jergan_Burg_Condition;
 	information = DIA_Jergan_Burg_Info;
 	permanent   = FALSE;
-	description = "Ты можешь помочь мне пробраться в замок?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ Р·Р°РјРѕРє?";
 };
 
 FUNC INT DIA_Jergan_Burg_Condition()
@@ -92,13 +92,13 @@ FUNC INT DIA_Jergan_Burg_Condition()
 };
 FUNC VOID DIA_Jergan_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//Ты можешь помочь мне пробраться в замок?
-	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//Конечно, но ты должен оказать мне услугу.
-	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Если тебе удастся добраться до замка, поговори с паладином Ориком. Скажи ему, что его брат погиб здесь, у Прохода.
+	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ Р·Р°РјРѕРє?
+	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//РљРѕРЅРµС‡РЅРѕ, РЅРѕ С‚С‹ РґРѕР»Р¶РµРЅ РѕРєР°Р·Р°С‚СЊ РјРЅРµ СѓСЃР»СѓРіСѓ.
+	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Р•СЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р·Р°РјРєР°, РїРѕРіРѕРІРѕСЂРё СЃ РїР°Р»Р°РґРёРЅРѕРј РћСЂРёРєРѕРј. РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РµРіРѕ Р±СЂР°С‚ РїРѕРіРёР± Р·РґРµСЃСЊ, Сѓ РџСЂРѕС…РѕРґР°.
 	
 	Log_CreateTopic (Topic_OricBruder, LOG_MISSION);
 	Log_SetTopicStatus (Topic_OricBruder,LOG_RUNNING);
-	B_LogEntry (Topic_OricBruder,"Когда я буду в замке, я должен сказать Орику, что его брат погиб в Проходе.");
+	B_LogEntry (Topic_OricBruder,"РљРѕРіРґР° СЏ Р±СѓРґСѓ РІ Р·Р°РјРєРµ, СЏ РґРѕР»Р¶РµРЅ СЃРєР°Р·Р°С‚СЊ РћСЂРёРєСѓ, С‡С‚Рѕ РµРіРѕ Р±СЂР°С‚ РїРѕРіРёР± РІ РџСЂРѕС…РѕРґРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gegend
@@ -110,7 +110,7 @@ INSTANCE DIA_Jergan_Gegend   (C_INFO)
 	condition   = DIA_Jergan_Gegend_Condition;
 	information = DIA_Jergan_Gegend_Info;
 	permanent   = TRUE;
-	description = "Что мне нужно знать об этой местности?";
+	description = "Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?";
 };
 
 FUNC INT DIA_Jergan_Gegend_Condition()
@@ -125,11 +125,11 @@ FUNC VOID DIA_Jergan_Gegend_Info()
 {
 	if (Jergan_Tell == FALSE)
 	{
-		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Что мне нужно знать об этой местности?
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Если ты хочешь выжить, беги от всего, что тебе встретится.
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Эти зеленокожие твари взяли замок в кольцо уже несколько недель назад. К тому же, где-то здесь спрятались драконы.
+		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІС‹Р¶РёС‚СЊ, Р±РµРіРё РѕС‚ РІСЃРµРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РІСЃС‚СЂРµС‚РёС‚СЃСЏ.
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Р­С‚Рё Р·РµР»РµРЅРѕРєРѕР¶РёРµ С‚РІР°СЂРё РІР·СЏР»Рё Р·Р°РјРѕРє РІ РєРѕР»СЊС†Рѕ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ РЅР°Р·Р°Рґ. Рљ С‚РѕРјСѓ Р¶Рµ, РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ СЃРїСЂСЏС‚Р°Р»РёСЃСЊ РґСЂР°РєРѕРЅС‹.
 	};
-	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//Вся Долина Рудников кишит орками. Куда бы ты ни направился, ты рискуешь нарваться на них.
+	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//Р’СЃСЏ Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ РєРёС€РёС‚ РѕСЂРєР°РјРё. РљСѓРґР° Р±С‹ С‚С‹ РЅРё РЅР°РїСЂР°РІРёР»СЃСЏ, С‚С‹ СЂРёСЃРєСѓРµС€СЊ РЅР°СЂРІР°С‚СЊСЃСЏ РЅР° РЅРёС….
 	Jergan_Tell = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -142,7 +142,7 @@ INSTANCE DIA_Jergan_Hilfe   (C_INFO)
 	condition   = DIA_Jergan_Hilfe_Condition;
 	information = DIA_Jergan_Hilfe_Info;
 	permanent   = FALSE;
-	description = "Как мне попасть в замок?";
+	description = "РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє?";
 };
 
 FUNC INT DIA_Jergan_Hilfe_Condition()
@@ -155,11 +155,11 @@ FUNC INT DIA_Jergan_Hilfe_Condition()
 };
 FUNC VOID DIA_Jergan_Hilfe_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//Как мне попасть в замок?
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Прежде всего, забудь о прямой дороге. Но если ты обойдешь замок с другой стороны, возможно, у тебя будет шанс.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Тебе лучше держаться подальше от дорог и использовать реку. Лучше всего, если ты будешь плыть вниз по течению.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Орки установили таран за замком. Ты можешь сделать так - подкрасться к оркам как можно ближе, а затем бежать со всех ног к тарану.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//У тебя может получиться, если ты достаточно быстр.
+	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ Р·Р°РјРѕРє?
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//РџСЂРµР¶РґРµ РІСЃРµРіРѕ, Р·Р°Р±СѓРґСЊ Рѕ РїСЂСЏРјРѕР№ РґРѕСЂРѕРіРµ. РќРѕ РµСЃР»Рё С‚С‹ РѕР±РѕР№РґРµС€СЊ Р·Р°РјРѕРє СЃ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹, РІРѕР·РјРѕР¶РЅРѕ, Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ С€Р°РЅСЃ.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//РўРµР±Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ РґРѕСЂРѕРі Рё РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ СЂРµРєСѓ. Р›СѓС‡С€Рµ РІСЃРµРіРѕ, РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РїР»С‹С‚СЊ РІРЅРёР· РїРѕ С‚РµС‡РµРЅРёСЋ.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//РћСЂРєРё СѓСЃС‚Р°РЅРѕРІРёР»Рё С‚Р°СЂР°РЅ Р·Р° Р·Р°РјРєРѕРј. РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ С‚Р°Рє - РїРѕРґРєСЂР°СЃС‚СЊСЃСЏ Рє РѕСЂРєР°Рј РєР°Рє РјРѕР¶РЅРѕ Р±Р»РёР¶Рµ, Р° Р·Р°С‚РµРј Р±РµР¶Р°С‚СЊ СЃРѕ РІСЃРµС… РЅРѕРі Рє С‚Р°СЂР°РЅСѓ.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//РЈ С‚РµР±СЏ РјРѕР¶РµС‚ РїРѕР»СѓС‡РёС‚СЊСЃСЏ, РµСЃР»Рё С‚С‹ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р±С‹СЃС‚СЂ.
 };
 
 
@@ -174,7 +174,7 @@ INSTANCE DIA_Jergan_Mine   (C_INFO)
 	condition   = DIA_Jergan_Mine_Condition;
 	information = DIA_Jergan_Mine_Info;
 	permanent   = FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 FUNC INT DIA_Jergan_Mine_Condition()
@@ -186,9 +186,9 @@ FUNC INT DIA_Jergan_Mine_Condition()
 };
 FUNC VOID DIA_Jergan_Mine_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Что ты делаешь здесь?
-	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Я разведчик. Моя работа - следить за врагом. Но все эти снепперы совсем не облегчают мне жизнь.
-	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//Хотя, сейчас самое время насобирать трофеев - если, конечно, ты знаешь, что делаешь.
+	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//РЇ СЂР°Р·РІРµРґС‡РёРє. РњРѕСЏ СЂР°Р±РѕС‚Р° - СЃР»РµРґРёС‚СЊ Р·Р° РІСЂР°РіРѕРј. РќРѕ РІСЃРµ СЌС‚Рё СЃРЅРµРїРїРµСЂС‹ СЃРѕРІСЃРµРј РЅРµ РѕР±Р»РµРіС‡Р°СЋС‚ РјРЅРµ Р¶РёР·РЅСЊ.
+	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//РҐРѕС‚СЏ, СЃРµР№С‡Р°СЃ СЃР°РјРѕРµ РІСЂРµРјСЏ РЅР°СЃРѕР±РёСЂР°С‚СЊ С‚СЂРѕС„РµРµРІ - РµСЃР»Рё, РєРѕРЅРµС‡РЅРѕ, С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РґРµР»Р°РµС€СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen
@@ -200,7 +200,7 @@ INSTANCE DIA_Jergan_Claw   (C_INFO)
 	condition   = DIA_Jergan_Claw_Condition;
 	information = DIA_Jergan_Claw_Info;
 	permanent   = FALSE;
-	description = "Ты можешь напучить меня этому?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°РїСѓС‡РёС‚СЊ РјРµРЅСЏ СЌС‚РѕРјСѓ?";
 };
 
 FUNC INT DIA_Jergan_Claw_Condition()
@@ -214,8 +214,8 @@ FUNC INT DIA_Jergan_Claw_Condition()
 };
 FUNC VOID DIA_Jergan_Claw_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Claw_15_00");//Ты можешь напучить меня этому?
-	AI_Output (self, other,"DIA_Jergan_Claw_13_01");//Я могу показать тебе, как отделять когти этих тварей.
+	AI_Output (other, self,"DIA_Jergan_Claw_15_00");//РўС‹ РјРѕР¶РµС€СЊ РЅР°РїСѓС‡РёС‚СЊ РјРµРЅСЏ СЌС‚РѕРјСѓ?
+	AI_Output (self, other,"DIA_Jergan_Claw_13_01");//РЇ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РѕС‚РґРµР»СЏС‚СЊ РєРѕРіС‚Рё СЌС‚РёС… С‚РІР°СЂРµР№.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen lernen
@@ -227,7 +227,7 @@ INSTANCE DIA_Jergan_Teach   (C_INFO)
 	condition   = DIA_Jergan_Teach_Condition;
 	information = DIA_Jergan_Teach_Info;
 	permanent   = TRUE;
-	description = "(Изучить удаление когтей)";
+	description = "(РР·СѓС‡РёС‚СЊ СѓРґР°Р»РµРЅРёРµ РєРѕРіС‚РµР№)";
 };
 FUNC INT DIA_Jergan_Teach_Condition()
 {	
@@ -240,12 +240,12 @@ FUNC INT DIA_Jergan_Teach_Condition()
 };
 FUNC VOID DIA_Jergan_Teach_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Teach_15_00");//Покажи мне, как отделять когти.
+	AI_Output (other, self,"DIA_Jergan_Teach_15_00");//РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє РѕС‚РґРµР»СЏС‚СЊ РєРѕРіС‚Рё.
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 	{
-		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//Когти нужно отрубить одним точным и резким ударом. Тут нельзя колебаться, иначе ты испортишь трофей.
-		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//Таким образом ты можешь отделять не только когти снепперов, но также ящеров и мракорисов.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//РљРѕРіС‚Рё РЅСѓР¶РЅРѕ РѕС‚СЂСѓР±РёС‚СЊ РѕРґРЅРёРј С‚РѕС‡РЅС‹Рј Рё СЂРµР·РєРёРј СѓРґР°СЂРѕРј. РўСѓС‚ РЅРµР»СЊР·СЏ РєРѕР»РµР±Р°С‚СЊСЃСЏ, РёРЅР°С‡Рµ С‚С‹ РёСЃРїРѕСЂС‚РёС€СЊ С‚СЂРѕС„РµР№.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//РўР°РєРёРј РѕР±СЂР°Р·РѕРј С‚С‹ РјРѕР¶РµС€СЊ РѕС‚РґРµР»СЏС‚СЊ РЅРµ С‚РѕР»СЊРєРѕ РєРѕРіС‚Рё СЃРЅРµРїРїРµСЂРѕРІ, РЅРѕ С‚Р°РєР¶Рµ СЏС‰РµСЂРѕРІ Рё РјСЂР°РєРѕСЂРёСЃРѕРІ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -258,7 +258,7 @@ INSTANCE DIA_Jergan_Diego   (C_INFO)
 	condition   = DIA_Jergan_Diego_Condition;
 	information = DIA_Jergan_Diego_Info;
 	permanent   = FALSE;
-	description = "Ты знаешь, куда отправился Диего? ";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, РєСѓРґР° РѕС‚РїСЂР°РІРёР»СЃСЏ Р”РёРµРіРѕ? ";
 };
 
 FUNC INT DIA_Jergan_Diego_Condition()
@@ -272,14 +272,14 @@ FUNC INT DIA_Jergan_Diego_Condition()
 };
 FUNC VOID DIA_Jergan_Diego_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Ты знаешь, куда отправился Диего?
-	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Диего? Он был одним из старателей Сильвестро. Но потом сбежал.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//Я видел его с двумя рыцарями и ящиком, недалеко отсюда.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Видишь старую башню вон там справа? Иди туда, а затем по направлению к замку.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Дорога идет через скалы справа. Вот туда они и пошли.
+	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//РўС‹ Р·РЅР°РµС€СЊ, РєСѓРґР° РѕС‚РїСЂР°РІРёР»СЃСЏ Р”РёРµРіРѕ?
+	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Р”РёРµРіРѕ? РћРЅ Р±С‹Р» РѕРґРЅРёРј РёР· СЃС‚Р°СЂР°С‚РµР»РµР№ РЎРёР»СЊРІРµСЃС‚СЂРѕ. РќРѕ РїРѕС‚РѕРј СЃР±РµР¶Р°Р».
+	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//РЇ РІРёРґРµР» РµРіРѕ СЃ РґРІСѓРјСЏ СЂС‹С†Р°СЂСЏРјРё Рё СЏС‰РёРєРѕРј, РЅРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Р’РёРґРёС€СЊ СЃС‚Р°СЂСѓСЋ Р±Р°С€РЅСЋ РІРѕРЅ С‚Р°Рј СЃРїСЂР°РІР°? РРґРё С‚СѓРґР°, Р° Р·Р°С‚РµРј РїРѕ РЅР°РїСЂР°РІР»РµРЅРёСЋ Рє Р·Р°РјРєСѓ.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Р”РѕСЂРѕРіР° РёРґРµС‚ С‡РµСЂРµР· СЃРєР°Р»С‹ СЃРїСЂР°РІР°. Р’РѕС‚ С‚СѓРґР° РѕРЅРё Рё РїРѕС€Р»Рё.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Rudelfьhrer getцtet
+//	RudelfСЊhrer getС†tet
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Jergan_Leader   (C_INFO)
@@ -303,18 +303,18 @@ FUNC INT DIA_Jergan_Leader_Condition()
 };
 FUNC VOID DIA_Jergan_Leader_Info()
 {
-	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Ты убил вожака стаи. И как - ты забрал когти этого зверя?
+	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//РўС‹ СѓР±РёР» РІРѕР¶Р°РєР° СЃС‚Р°Рё. Р РєР°Рє - С‚С‹ Р·Р°Р±СЂР°Р» РєРѕРіС‚Рё СЌС‚РѕРіРѕ Р·РІРµСЂСЏ?
 	
 	if (Npc_HasItems (other, ItAt_ClawLeader) >= 1)
 	{
-		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//Да.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Они, стоят целое состояние. Есть люди, которые коллекционируют такие вещи.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Если ты найдешь правильного покупателя, то получишь за них целую кучу золота.
+		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//Р”Р°.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//РћРЅРё, СЃС‚РѕСЏС‚ С†РµР»РѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ. Р•СЃС‚СЊ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ РєРѕР»Р»РµРєС†РёРѕРЅРёСЂСѓСЋС‚ С‚Р°РєРёРµ РІРµС‰Рё.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Р•СЃР»Рё С‚С‹ РЅР°Р№РґРµС€СЊ РїСЂР°РІРёР»СЊРЅРѕРіРѕ РїРѕРєСѓРїР°С‚РµР»СЏ, С‚Рѕ РїРѕР»СѓС‡РёС€СЊ Р·Р° РЅРёС… С†РµР»СѓСЋ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р°.
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Jergan_Leader_15_04");//Нет.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_05");//Это ты зря. Я уверен, они стоят целое состояние.
+		AI_Output (other, self,"DIA_Jergan_Leader_15_04");//РќРµС‚.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_05");//Р­С‚Рѕ С‚С‹ Р·СЂСЏ. РЇ СѓРІРµСЂРµРЅ, РѕРЅРё СЃС‚РѕСЏС‚ С†РµР»РѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ.
 	};	
 };
 

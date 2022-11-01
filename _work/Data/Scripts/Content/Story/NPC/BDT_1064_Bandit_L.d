@@ -1,7 +1,7 @@
 instance BDT_1064_Bandit_L (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Стражник"; 
+	name 		= "РЎС‚СЂР°Р¶РЅРёРє"; 
 	guild 		= GIL_BDT;
 	id 			= 1064;
 	voice 		= 4;

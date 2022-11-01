@@ -45,7 +45,7 @@ INSTANCE DIA_Addon_Cavalorn_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Cavalorn_PICKPOCKET_Condition;
 	information	= DIA_Addon_Cavalorn_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть его колчан стрел будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕР»С‡Р°РЅ СЃС‚СЂРµР» Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Addon_Cavalorn_PICKPOCKET_Condition()
@@ -112,12 +112,12 @@ func void DIA_Addon_Cavalorn_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Cavalorn_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_MeetingIsRunning_08_00"); //Добро пожаловать в 'Кольцо', мой друг.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_MeetingIsRunning_08_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ 'РљРѕР»СЊС†Рѕ', РјРѕР№ РґСЂСѓРі.
 		DIA_Addon_Cavalorn_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_08_01"); //Ватрас даст тебе следующее задание.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_08_01"); //Р’Р°С‚СЂР°СЃ РґР°СЃС‚ С‚РµР±Рµ СЃР»РµРґСѓСЋС‰РµРµ Р·Р°РґР°РЅРёРµ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -132,7 +132,7 @@ instance DIA_Addon_Cavalorn_HALLO		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_HALLO_Condition;
 	information	 = 	DIA_Addon_Cavalorn_HALLO_Info;
 
-	description	 = 	"У тебя проблемы?";
+	description	 = 	"РЈ С‚РµР±СЏ РїСЂРѕР±Р»РµРјС‹?";
 };
 
 func int DIA_Addon_Cavalorn_HALLO_Condition ()
@@ -142,66 +142,66 @@ func int DIA_Addon_Cavalorn_HALLO_Condition ()
 
 func void DIA_Addon_Cavalorn_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_15_00"); //Проблемы?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_01"); //(раздраженно) Черт. Я не знаю, где они все прячутся. Убиваешь одного - и вскоре они все возвращаются.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_02"); //(хитро) Погоди минутку. Я тебя знаю. Ты тот парень, что постоянно клянчил у меня стрелы в Долине Рудников.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_15_00"); //РџСЂРѕР±Р»РµРјС‹?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р§РµСЂС‚. РЇ РЅРµ Р·РЅР°СЋ, РіРґРµ РѕРЅРё РІСЃРµ РїСЂСЏС‡СѓС‚СЃСЏ. РЈР±РёРІР°РµС€СЊ РѕРґРЅРѕРіРѕ - Рё РІСЃРєРѕСЂРµ РѕРЅРё РІСЃРµ РІРѕР·РІСЂР°С‰Р°СЋС‚СЃСЏ.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_08_02"); //(С…РёС‚СЂРѕ) РџРѕРіРѕРґРё РјРёРЅСѓС‚РєСѓ. РЇ С‚РµР±СЏ Р·РЅР°СЋ. РўС‹ С‚РѕС‚ РїР°СЂРµРЅСЊ, С‡С‚Рѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ РєР»СЏРЅС‡РёР» Сѓ РјРµРЅСЏ СЃС‚СЂРµР»С‹ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Тебя зовут Кавалорн, верно?", DIA_Addon_Cavalorn_HALLO_Ja );
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Что-то не припоминаю...", DIA_Addon_Cavalorn_HALLO_weissNicht );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "РўРµР±СЏ Р·РѕРІСѓС‚ РљР°РІР°Р»РѕСЂРЅ, РІРµСЂРЅРѕ?", DIA_Addon_Cavalorn_HALLO_Ja );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Р§С‚Рѕ-С‚Рѕ РЅРµ РїСЂРёРїРѕРјРёРЅР°СЋ...", DIA_Addon_Cavalorn_HALLO_weissNicht );
 
 };
 func void DIA_Addon_Cavalorn_HALLO_weissNicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_weissNicht_15_00"); //Что-то не припоминаю...
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01"); //Ну как же. Еще в моей хижине около Старого Лагеря я учил тебя, как стрелять из лука и незаметно передвигаться. Теперь вспоминаешь?
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_weissNicht_15_00"); //Р§С‚Рѕ-С‚Рѕ РЅРµ РїСЂРёРїРѕРјРёРЅР°СЋ...
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_weissNicht_08_01"); //РќСѓ РєР°Рє Р¶Рµ. Р•С‰Рµ РІ РјРѕРµР№ С…РёР¶РёРЅРµ РѕРєРѕР»Рѕ РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ СЏ СѓС‡РёР» С‚РµР±СЏ, РєР°Рє СЃС‚СЂРµР»СЏС‚СЊ РёР· Р»СѓРєР° Рё РЅРµР·Р°РјРµС‚РЅРѕ РїРµСЂРµРґРІРёРіР°С‚СЊСЃСЏ. РўРµРїРµСЂСЊ РІСЃРїРѕРјРёРЅР°РµС€СЊ?
 
 };
 
 func void DIA_Addon_Cavalorn_HALLO_Ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Ja_15_00"); //Тебя зовут Кавалорн, верно?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_01"); //Ага. Вижу, ты все-таки не забыл меня после всего, через что мы прошли в этой клятой колонии.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_02"); //Куда ты направляешься?
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Ja_15_00"); //РўРµР±СЏ Р·РѕРІСѓС‚ РљР°РІР°Р»РѕСЂРЅ, РІРµСЂРЅРѕ?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_01"); //РђРіР°. Р’РёР¶Сѓ, С‚С‹ РІСЃРµ-С‚Р°РєРё РЅРµ Р·Р°Р±С‹Р» РјРµРЅСЏ РїРѕСЃР»Рµ РІСЃРµРіРѕ, С‡РµСЂРµР· С‡С‚Рѕ РјС‹ РїСЂРѕС€Р»Рё РІ СЌС‚РѕР№ РєР»СЏС‚РѕР№ РєРѕР»РѕРЅРёРё.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Ja_08_02"); //РљСѓРґР° С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "У меня нет определенной цели.", DIA_Addon_Cavalorn_HALLO_keinZiel );
-	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Назад в Долину Рудников.", DIA_Addon_Cavalorn_HALLO_Bauern );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "РЈ РјРµРЅСЏ РЅРµС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ С†РµР»Рё.", DIA_Addon_Cavalorn_HALLO_keinZiel );
+	Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "РќР°Р·Р°Рґ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.", DIA_Addon_Cavalorn_HALLO_Bauern );
 
 	if (Mil_310_Stadtwache.aivar[AIV_PASSGATE] == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "В город.", DIA_Addon_Cavalorn_HALLO_Stadt );
+		Info_AddChoice	(DIA_Addon_Cavalorn_HALLO, "Р’ РіРѕСЂРѕРґ.", DIA_Addon_Cavalorn_HALLO_Stadt );
 	};
 };
 func void DIA_Addon_Cavalorn_HALLO_Stadt ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_HALLO_Stadt_15_00"); //В город.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_01"); //(смеется) Ну-ну. В город. Хех.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_02"); //У тебя могут возникнуть сложности со стражей. Они уже не пускают каждого прохожего, весь район кишит бандитами.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_03"); //Несколько дней назад один из бывших заключенных Долины Рудников проходил здесь. Он сказал что постоянно покидает Хоринис и возвращается.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_04"); //Он пошел в долину под белой башней. Должно быть, где-то там есть проход, около водопада.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_05"); //Может быть, тебе стоит с ним поговорить.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_HALLO_Stadt_15_00"); //Р’ РіРѕСЂРѕРґ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_01"); //(СЃРјРµРµС‚СЃСЏ) РќСѓ-РЅСѓ. Р’ РіРѕСЂРѕРґ. РҐРµС….
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_02"); //РЈ С‚РµР±СЏ РјРѕРіСѓС‚ РІРѕР·РЅРёРєРЅСѓС‚СЊ СЃР»РѕР¶РЅРѕСЃС‚Рё СЃРѕ СЃС‚СЂР°Р¶РµР№. РћРЅРё СѓР¶Рµ РЅРµ РїСѓСЃРєР°СЋС‚ РєР°Р¶РґРѕРіРѕ РїСЂРѕС…РѕР¶РµРіРѕ, РІРµСЃСЊ СЂР°Р№РѕРЅ РєРёС€РёС‚ Р±Р°РЅРґРёС‚Р°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_03"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ РѕРґРёРЅ РёР· Р±С‹РІС€РёС… Р·Р°РєР»СЋС‡РµРЅРЅС‹С… Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ РїСЂРѕС…РѕРґРёР» Р·РґРµСЃСЊ. РћРЅ СЃРєР°Р·Р°Р» С‡С‚Рѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ РїРѕРєРёРґР°РµС‚ РҐРѕСЂРёРЅРёСЃ Рё РІРѕР·РІСЂР°С‰Р°РµС‚СЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_04"); //РћРЅ РїРѕС€РµР» РІ РґРѕР»РёРЅСѓ РїРѕРґ Р±РµР»РѕР№ Р±Р°С€РЅРµР№. Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РіРґРµ-С‚Рѕ С‚Р°Рј РµСЃС‚СЊ РїСЂРѕС…РѕРґ, РѕРєРѕР»Рѕ РІРѕРґРѕРїР°РґР°.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HALLO_Stadt_08_05"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ СЃС‚РѕРёС‚ СЃ РЅРёРј РїРѕРіРѕРІРѕСЂРёС‚СЊ.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
 
 func void DIA_Addon_Cavalorn_HALLO_Bauern ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Bauern_15_00"); //Назад в Долину Рудников.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_01"); //(пораженно) Правда? Хм-м. Я бы хотел пойти с тобой, но у меня здесь есть дела, которые я должен закончить.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_02"); //Будешь в Долине Рудников, посмотри, пожалуйста, стоит ли еще моя старая хижина. Я бы хотел туда вернуться когда-нибудь.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_Bauern_15_00"); //РќР°Р·Р°Рґ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_01"); //(РїРѕСЂР°Р¶РµРЅРЅРѕ) РџСЂР°РІРґР°? РҐРј-Рј. РЇ Р±С‹ С…РѕС‚РµР» РїРѕР№С‚Рё СЃ С‚РѕР±РѕР№, РЅРѕ Сѓ РјРµРЅСЏ Р·РґРµСЃСЊ РµСЃС‚СЊ РґРµР»Р°, РєРѕС‚РѕСЂС‹Рµ СЏ РґРѕР»Р¶РµРЅ Р·Р°РєРѕРЅС‡РёС‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_Bauern_08_02"); //Р‘СѓРґРµС€СЊ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ, РїРѕСЃРјРѕС‚СЂРё, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, СЃС‚РѕРёС‚ Р»Рё РµС‰Рµ РјРѕСЏ СЃС‚Р°СЂР°СЏ С…РёР¶РёРЅР°. РЇ Р±С‹ С…РѕС‚РµР» С‚СѓРґР° РІРµСЂРЅСѓС‚СЊСЃСЏ РєРѕРіРґР°-РЅРёР±СѓРґСЊ.
 	
 	MIS_Addon_Cavalorn_TheHut = LOG_RUNNING;	
 	Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_CavalornTheHut,"Кавалорн хочет, чтобы я проверил, цела ли еще его старая хижина в Долине Рудников. Насколько я помню, она находится среди холмов на западе, там, где был Старый Лагерь. Думаю, он там что-то оставил.");
+	B_LogEntry (TOPIC_Addon_CavalornTheHut,"РљР°РІР°Р»РѕСЂРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРѕРІРµСЂРёР», С†РµР»Р° Р»Рё РµС‰Рµ РµРіРѕ СЃС‚Р°СЂР°СЏ С…РёР¶РёРЅР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. РќР°СЃРєРѕР»СЊРєРѕ СЏ РїРѕРјРЅСЋ, РѕРЅР° РЅР°С…РѕРґРёС‚СЃСЏ СЃСЂРµРґРё С…РѕР»РјРѕРІ РЅР° Р·Р°РїР°РґРµ, С‚Р°Рј, РіРґРµ Р±С‹Р» РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ. Р”СѓРјР°СЋ, РѕРЅ С‚Р°Рј С‡С‚Рѕ-С‚Рѕ РѕСЃС‚Р°РІРёР».");
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
 
 func void DIA_Addon_Cavalorn_HALLO_keinZiel ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_keinZiel_15_00"); //У меня нет определенной цели.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_keinZiel_08_01"); //Не хочешь мне говорить, да? Ну ладно.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_HALLO_keinZiel_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РѕРїСЂРµРґРµР»РµРЅРЅРѕР№ С†РµР»Рё.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_HALLO_keinZiel_08_01"); //РќРµ С…РѕС‡РµС€СЊ РјРЅРµ РіРѕРІРѕСЂРёС‚СЊ, РґР°? РќСѓ Р»Р°РґРЅРѕ.
 
 	Info_ClearChoices	(DIA_Addon_Cavalorn_HALLO);
 };
@@ -216,7 +216,7 @@ instance DIA_Addon_Cavalorn_Beutel		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Beutel_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Beutel_Info;
 
-	description	 = 	"Я был в твоей хижине в Долине Рудников.";
+	description	 = 	"РЇ Р±С‹Р» РІ С‚РІРѕРµР№ С…РёР¶РёРЅРµ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.";
 };
 
 func int DIA_Addon_Cavalorn_Beutel_Condition ()
@@ -230,72 +230,72 @@ func int DIA_Addon_Cavalorn_Beutel_Condition ()
 
 func void DIA_Addon_Cavalorn_Beutel_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_00"); //Я был в твоей хижине в Долине Рудников.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_01"); //Так значит, она еще стоит.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_00"); //РЇ Р±С‹Р» РІ С‚РІРѕРµР№ С…РёР¶РёРЅРµ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_01"); //РўР°Рє Р·РЅР°С‡РёС‚, РѕРЅР° РµС‰Рµ СЃС‚РѕРёС‚.
 	if (MIS_Addon_Cavalorn_TheHut == LOG_RUNNING)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_02"); //Да. И я знаю, зачем ты хотел туда вернуться.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_02"); //Р”Р°. Р СЏ Р·РЅР°СЋ, Р·Р°С‡РµРј С‚С‹ С…РѕС‚РµР» С‚СѓРґР° РІРµСЂРЅСѓС‚СЊСЃСЏ.
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_03"); //Ты нашел его?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_04"); //Если ты имеешь в виду мешочек с кусками руды... да, он у меня.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_05"); //Ну ты, хитрый лис, знаешь об этом?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_03"); //РўС‹ РЅР°С€РµР» РµРіРѕ?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_04"); //Р•СЃР»Рё С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РјРµС€РѕС‡РµРє СЃ РєСѓСЃРєР°РјРё СЂСѓРґС‹... РґР°, РѕРЅ Сѓ РјРµРЅСЏ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_05"); //РќСѓ С‚С‹, С…РёС‚СЂС‹Р№ Р»РёСЃ, Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј?
 	if (MIS_Addon_Cavalorn_TheHut == LOG_RUNNING)
 	{
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_06"); //А что еще тебе могло бы понадобиться в этой старой лачуге? Там нет больше ничего.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_Beutel_15_06"); //Рђ С‡С‚Рѕ РµС‰Рµ С‚РµР±Рµ РјРѕРіР»Рѕ Р±С‹ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ РІ СЌС‚РѕР№ СЃС‚Р°СЂРѕР№ Р»Р°С‡СѓРіРµ? РўР°Рј РЅРµС‚ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ.
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_07"); //Он у тебя с собой? Я дам тебе 100 золотых за него.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Beutel_08_07"); //РћРЅ Сѓ С‚РµР±СЏ СЃ СЃРѕР±РѕР№? РЇ РґР°Рј С‚РµР±Рµ 100 Р·РѕР»РѕС‚С‹С… Р·Р° РЅРµРіРѕ.
 	TOPIC_End_CavalornTheHut = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 
 	if (Npc_HasItems (other,ItSe_ADDON_CavalornsBeutel))
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Конечно.", DIA_Addon_Cavalorn_Beutel_ja );
+		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "РљРѕРЅРµС‡РЅРѕ.", DIA_Addon_Cavalorn_Beutel_ja );
 	}
 	else if  (Npc_HasItems (other,ItMi_Nugget))
 	{
-		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Нет, но у меня есть другой кусок руды.", DIA_Addon_Cavalorn_Beutel_jaerz );
+		Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "РќРµС‚, РЅРѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґСЂСѓРіРѕР№ РєСѓСЃРѕРє СЂСѓРґС‹.", DIA_Addon_Cavalorn_Beutel_jaerz );
 	};
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Нет.", DIA_Addon_Cavalorn_Beutel_no );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "РќРµС‚.", DIA_Addon_Cavalorn_Beutel_no );
 };
 func void DIA_Addon_Cavalorn_Beutel_back ()
 {
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_back_08_00"); //Я надеюсь, что он вернется ко мне.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_back_08_00"); //РЇ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РѕРЅ РІРµСЂРЅРµС‚СЃСЏ РєРѕ РјРЅРµ.
 };
 func void DIA_Addon_Cavalorn_Beutel_jaerz ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_jaerz_15_00"); //Нет, но у меня есть другой кусок руды.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_jaerz_08_01"); //Тоже неплохо.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_jaerz_15_00"); //РќРµС‚, РЅРѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґСЂСѓРіРѕР№ РєСѓСЃРѕРє СЂСѓРґС‹.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_jaerz_08_01"); //РўРѕР¶Рµ РЅРµРїР»РѕС…Рѕ.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "А почему ты вообще оттуда ушел?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Рђ РїРѕС‡РµРјСѓ С‚С‹ РІРѕРѕР±С‰Рµ РѕС‚С‚СѓРґР° СѓС€РµР»?", DIA_Addon_Cavalorn_Beutel_why );
 };
 func void DIA_Addon_Cavalorn_Beutel_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_ja_15_00"); //Конечно.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_ja_08_01"); //Ужасно.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_ja_15_00"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_ja_08_01"); //РЈР¶Р°СЃРЅРѕ.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "А почему ты вообще оттуда ушел?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Рђ РїРѕС‡РµРјСѓ С‚С‹ РІРѕРѕР±С‰Рµ РѕС‚С‚СѓРґР° СѓС€РµР»?", DIA_Addon_Cavalorn_Beutel_why );
 };
 
 func void DIA_Addon_Cavalorn_Beutel_no ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_00"); //Нет.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_no_08_01"); //Тогда ПРИНЕСИ его мне. Я собирался сам идти в эту чертову Долину Рудников.
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_02"); //Я почти плачу.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_00"); //РќРµС‚.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_no_08_01"); //РўРѕРіРґР° РџР РРќР•РЎР РµРіРѕ РјРЅРµ. РЇ СЃРѕР±РёСЂР°Р»СЃСЏ СЃР°Рј РёРґС‚Рё РІ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_no_15_02"); //РЇ РїРѕС‡С‚Рё РїР»Р°С‡Сѓ.
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Beutel);
 	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, DIALOG_BACK, DIA_Addon_Cavalorn_Beutel_Back );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "А почему ты вообще оттуда ушел?", DIA_Addon_Cavalorn_Beutel_why );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Beutel, "Рђ РїРѕС‡РµРјСѓ С‚С‹ РІРѕРѕР±С‰Рµ РѕС‚С‚СѓРґР° СѓС€РµР»?", DIA_Addon_Cavalorn_Beutel_why );
 };
 
 func void DIA_Addon_Cavalorn_Beutel_why ()
 {
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_why_15_00"); //А почему ты вообще оттуда ушел?
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_01"); //Я и не думал, что в Хоринисе руда стоит так много.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_02"); //За такой жалкий кусочек руды в колонии ты бы и место, где поспать, себе не выбил.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_03"); //А в портовом городе тебе без лишних сомнений раскроят череп, если узнают, что при тебе есть руда.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Beutel_why_15_00"); //Рђ РїРѕС‡РµРјСѓ С‚С‹ РІРѕРѕР±С‰Рµ РѕС‚С‚СѓРґР° СѓС€РµР»?
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_01"); //РЇ Рё РЅРµ РґСѓРјР°Р», С‡С‚Рѕ РІ РҐРѕСЂРёРЅРёСЃРµ СЂСѓРґР° СЃС‚РѕРёС‚ С‚Р°Рє РјРЅРѕРіРѕ.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_02"); //Р—Р° С‚Р°РєРѕР№ Р¶Р°Р»РєРёР№ РєСѓСЃРѕС‡РµРє СЂСѓРґС‹ РІ РєРѕР»РѕРЅРёРё С‚С‹ Р±С‹ Рё РјРµСЃС‚Рѕ, РіРґРµ РїРѕСЃРїР°С‚СЊ, СЃРµР±Рµ РЅРµ РІС‹Р±РёР».
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Beutel_why_08_03"); //Рђ РІ РїРѕСЂС‚РѕРІРѕРј РіРѕСЂРѕРґРµ С‚РµР±Рµ Р±РµР· Р»РёС€РЅРёС… СЃРѕРјРЅРµРЅРёР№ СЂР°СЃРєСЂРѕСЏС‚ С‡РµСЂРµРї, РµСЃР»Рё СѓР·РЅР°СЋС‚, С‡С‚Рѕ РїСЂРё С‚РµР±Рµ РµСЃС‚СЊ СЂСѓРґР°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -308,7 +308,7 @@ instance DIA_Addon_Cavalorn_ErzGeben		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_ErzGeben_Condition;
 	information	 = 	DIA_Addon_Cavalorn_ErzGeben_Info;
 
-	description	 = 	"Давай мне 100 золотых - и я отдам тебе твою руду.";
+	description	 = 	"Р”Р°РІР°Р№ РјРЅРµ 100 Р·РѕР»РѕС‚С‹С… - Рё СЏ РѕС‚РґР°Рј С‚РµР±Рµ С‚РІРѕСЋ СЂСѓРґСѓ.";
 };
 
 func int DIA_Addon_Cavalorn_ErzGeben_Condition ()
@@ -322,8 +322,8 @@ func int DIA_Addon_Cavalorn_ErzGeben_Condition ()
 
 func void DIA_Addon_Cavalorn_ErzGeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_ErzGeben_15_00"); //Давай мне 100 золотых - и я отдам тебе твою руду.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_01"); //По рукам. Вот деньги.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_ErzGeben_15_00"); //Р”Р°РІР°Р№ РјРЅРµ 100 Р·РѕР»РѕС‚С‹С… - Рё СЏ РѕС‚РґР°Рј С‚РµР±Рµ С‚РІРѕСЋ СЂСѓРґСѓ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_01"); //РџРѕ СЂСѓРєР°Рј. Р’РѕС‚ РґРµРЅСЊРіРё.
 	CreateInvItems (self, ItMi_Gold, 100);									
 	B_GiveInvItems (self, other, ItMi_Gold, 100);		
 
@@ -331,7 +331,7 @@ func void DIA_Addon_Cavalorn_ErzGeben_Info ()
 		{
 			B_GiveInvItems (other, self, ItMi_Nugget,1);
 		};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_02"); //Ты настоящий друг. Спасибо огромное.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ErzGeben_08_02"); //РўС‹ РЅР°СЃС‚РѕСЏС‰РёР№ РґСЂСѓРі. РЎРїР°СЃРёР±Рѕ РѕРіСЂРѕРјРЅРѕРµ.
 	MIS_Addon_Cavalorn_TheHut = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_CavalornsBeutel);
 };
@@ -346,7 +346,7 @@ instance DIA_Addon_Cavalorn_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_WASMACHSTDU_Condition;
 	information	 = 	DIA_Addon_Cavalorn_WASMACHSTDU_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Addon_Cavalorn_WASMACHSTDU_Condition ()
@@ -360,8 +360,8 @@ func int DIA_Addon_Cavalorn_WASMACHSTDU_Condition ()
 
 func void DIA_Addon_Cavalorn_WASMACHSTDU_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_WASMACHSTDU_15_00"); //Что ты здесь делаешь?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_WASMACHSTDU_08_01"); //Сижу на месте. Если бы не эти чертовы бандиты, меня бы здесь не было.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_WASMACHSTDU_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_WASMACHSTDU_08_01"); //РЎРёР¶Сѓ РЅР° РјРµСЃС‚Рµ. Р•СЃР»Рё Р±С‹ РЅРµ СЌС‚Рё С‡РµСЂС‚РѕРІС‹ Р±Р°РЅРґРёС‚С‹, РјРµРЅСЏ Р±С‹ Р·РґРµСЃСЊ РЅРµ Р±С‹Р»Рѕ.
 	
 };
 
@@ -375,7 +375,7 @@ instance DIA_Addon_Cavalorn_Banditen		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Banditen_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Banditen_Info;
 
-	description	 = 	"Что такое с бандитами?";
+	description	 = 	"Р§С‚Рѕ С‚Р°РєРѕРµ СЃ Р±Р°РЅРґРёС‚Р°РјРё?";
 };
 
 func int DIA_Addon_Cavalorn_Banditen_Condition ()
@@ -389,15 +389,15 @@ func int DIA_Addon_Cavalorn_Banditen_Condition ()
 
 func void DIA_Addon_Cavalorn_Banditen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_00"); //Что такое с бандитами?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_01"); //Ты спал хоть раз за последние несколько недель?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_02"); //Э-э...
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_03"); //Я говорю обо всем этом сброде из исправительной колонии, которые чувствуют себя здесь как дома, грабят и убивают всех, кого могут.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_04"); //(вздыхает) Думаю, мне повезло, что они меня не убили. Я отвлекся буквально на секунду - и меня уже оглушили ударом сзади дубинкой по голове.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_00"); //Р§С‚Рѕ С‚Р°РєРѕРµ СЃ Р±Р°РЅРґРёС‚Р°РјРё?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_01"); //РўС‹ СЃРїР°Р» С…РѕС‚СЊ СЂР°Р· Р·Р° РїРѕСЃР»РµРґРЅРёРµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Banditen_15_02"); //Р­-СЌ...
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_03"); //РЇ РіРѕРІРѕСЂСЋ РѕР±Рѕ РІСЃРµРј СЌС‚РѕРј СЃР±СЂРѕРґРµ РёР· РёСЃРїСЂР°РІРёС‚РµР»СЊРЅРѕР№ РєРѕР»РѕРЅРёРё, РєРѕС‚РѕСЂС‹Рµ С‡СѓРІСЃС‚РІСѓСЋС‚ СЃРµР±СЏ Р·РґРµСЃСЊ РєР°Рє РґРѕРјР°, РіСЂР°Р±СЏС‚ Рё СѓР±РёРІР°СЋС‚ РІСЃРµС…, РєРѕРіРѕ РјРѕРіСѓС‚.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_04"); //(РІР·РґС‹С…Р°РµС‚) Р”СѓРјР°СЋ, РјРЅРµ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ РѕРЅРё РјРµРЅСЏ РЅРµ СѓР±РёР»Рё. РЇ РѕС‚РІР»РµРєСЃСЏ Р±СѓРєРІР°Р»СЊРЅРѕ РЅР° СЃРµРєСѓРЅРґСѓ - Рё РјРµРЅСЏ СѓР¶Рµ РѕРіР»СѓС€РёР»Рё СѓРґР°СЂРѕРј СЃР·Р°РґРё РґСѓР±РёРЅРєРѕР№ РїРѕ РіРѕР»РѕРІРµ.
 	
 	if (C_BragoBanditsDead () == FALSE) 
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_05"); //Даже не знаю, как теперь получить свои вещи обратно.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_Banditen_08_05"); //Р”Р°Р¶Рµ РЅРµ Р·РЅР°СЋ, РєР°Рє С‚РµРїРµСЂСЊ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕРё РІРµС‰Рё РѕР±СЂР°С‚РЅРѕ.
 	};
 };
 
@@ -411,7 +411,7 @@ instance DIA_Addon_Cavalorn_ARTEFAKT		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_ARTEFAKT_Condition;
 	information	 = 	DIA_Addon_Cavalorn_ARTEFAKT_Info;
 
-	description	 = 	"Тебя ограбили разбойники?";
+	description	 = 	"РўРµР±СЏ РѕРіСЂР°Р±РёР»Рё СЂР°Р·Р±РѕР№РЅРёРєРё?";
 };
 
 func int DIA_Addon_Cavalorn_ARTEFAKT_Condition ()
@@ -427,10 +427,10 @@ func int DIA_Addon_Cavalorn_ARTEFAKT_Condition ()
 
 func void DIA_Addon_Cavalorn_ARTEFAKT_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_ARTEFAKT_15_00"); //Тебя ограбили разбойники?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_01"); //(в ярости) Да. Они выключили меня и бросили на завтрак гоблинам.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_02"); //Это были очень важные для меня вещи. Письмо и все деньги. Мне просто необходимо вернуть их.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_03"); //Но без компаньона, который мог бы меня прикрыть, я не вернусь туда. Эти трусливые твари...
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_ARTEFAKT_15_00"); //РўРµР±СЏ РѕРіСЂР°Р±РёР»Рё СЂР°Р·Р±РѕР№РЅРёРєРё?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_01"); //(РІ СЏСЂРѕСЃС‚Рё) Р”Р°. РћРЅРё РІС‹РєР»СЋС‡РёР»Рё РјРµРЅСЏ Рё Р±СЂРѕСЃРёР»Рё РЅР° Р·Р°РІС‚СЂР°Рє РіРѕР±Р»РёРЅР°Рј.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_02"); //Р­С‚Рѕ Р±С‹Р»Рё РѕС‡РµРЅСЊ РІР°Р¶РЅС‹Рµ РґР»СЏ РјРµРЅСЏ РІРµС‰Рё. РџРёСЃСЊРјРѕ Рё РІСЃРµ РґРµРЅСЊРіРё. РњРЅРµ РїСЂРѕСЃС‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ РІРµСЂРЅСѓС‚СЊ РёС….
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_ARTEFAKT_08_03"); //РќРѕ Р±РµР· РєРѕРјРїР°РЅСЊРѕРЅР°, РєРѕС‚РѕСЂС‹Р№ РјРѕРі Р±С‹ РјРµРЅСЏ РїСЂРёРєСЂС‹С‚СЊ, СЏ РЅРµ РІРµСЂРЅСѓСЃСЊ С‚СѓРґР°. Р­С‚Рё С‚СЂСѓСЃР»РёРІС‹Рµ С‚РІР°СЂРё...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -443,7 +443,7 @@ instance DIA_Addon_Cavalorn_HELFEN		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_HELFEN_Condition;
 	information	 = 	DIA_Addon_Cavalorn_HELFEN_Info;
 
-	description	 = 	"Могу я помочь тебе с бандитами?";
+	description	 = 	"РњРѕРіСѓ СЏ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃ Р±Р°РЅРґРёС‚Р°РјРё?";
 };
 
 func int DIA_Addon_Cavalorn_HELFEN_Condition ()
@@ -459,24 +459,24 @@ func int DIA_Addon_Cavalorn_HELFEN_Condition ()
 
 func void DIA_Addon_Cavalorn_HELFEN_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_HELFEN_15_00"); //Могу я помочь тебе с бандитами?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_HELFEN_15_00"); //РњРѕРіСѓ СЏ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃ Р±Р°РЅРґРёС‚Р°РјРё?
 
 	if (Npc_HasEquippedArmor(other) == FALSE)
 	&& (hero.guild == GIL_NONE) 
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_01"); //(хитро) Возможно. Но ты выглядишь таким тощим, ты наверняка не держал меча несколько недель.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_01"); //(С…РёС‚СЂРѕ) Р’РѕР·РјРѕР¶РЅРѕ. РќРѕ С‚С‹ РІС‹РіР»СЏРґРёС€СЊ С‚Р°РєРёРј С‚РѕС‰РёРј, С‚С‹ РЅР°РІРµСЂРЅСЏРєР° РЅРµ РґРµСЂР¶Р°Р» РјРµС‡Р° РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_02"); //Ну... У меня нет выбора, так что я принимаю твое предложение. У меня мало времени.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_03"); //Так, слушай. Вниз по этой дороге располагается одна из тех грязных дыр, где прячутся бандиты.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_04"); //Именно те ребята, что там сидят, меня и ограбили.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_05"); //Скажи, когда будешь готов, и мы поймаем преступников.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_02"); //РќСѓ... РЈ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°, С‚Р°Рє С‡С‚Рѕ СЏ РїСЂРёРЅРёРјР°СЋ С‚РІРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ. РЈ РјРµРЅСЏ РјР°Р»Рѕ РІСЂРµРјРµРЅРё.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_03"); //РўР°Рє, СЃР»СѓС€Р°Р№. Р’РЅРёР· РїРѕ СЌС‚РѕР№ РґРѕСЂРѕРіРµ СЂР°СЃРїРѕР»Р°РіР°РµС‚СЃСЏ РѕРґРЅР° РёР· С‚РµС… РіСЂСЏР·РЅС‹С… РґС‹СЂ, РіРґРµ РїСЂСЏС‡СѓС‚СЃСЏ Р±Р°РЅРґРёС‚С‹.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_04"); //РРјРµРЅРЅРѕ С‚Рµ СЂРµР±СЏС‚Р°, С‡С‚Рѕ С‚Р°Рј СЃРёРґСЏС‚, РјРµРЅСЏ Рё РѕРіСЂР°Р±РёР»Рё.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_HELFEN_08_05"); //РЎРєР°Р¶Рё, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ, Рё РјС‹ РїРѕР№РјР°РµРј РїСЂРµСЃС‚СѓРїРЅРёРєРѕРІ.
 	
 	MIS_Addon_Cavalorn_KillBrago = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_KillBrago, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KillBrago, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_KillBrago,"Бандиты украли у Кавалорна что-то ценное. Он хочет, чтобы я помог ему расправиться с ними."); 
+	B_LogEntry (TOPIC_Addon_KillBrago,"Р‘Р°РЅРґРёС‚С‹ СѓРєСЂР°Р»Рё Сѓ РљР°РІР°Р»РѕСЂРЅР° С‡С‚Рѕ-С‚Рѕ С†РµРЅРЅРѕРµ. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРјРѕРі РµРјСѓ СЂР°СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РЅРёРјРё."); 
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 };
@@ -491,7 +491,7 @@ instance DIA_Addon_Cavalorn_AUSRUESTUNG		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_AUSRUESTUNG_Condition;
 	information	 = 	DIA_Addon_Cavalorn_AUSRUESTUNG_Info;
 
-	description	 = 	"Мне нужна экипировка получше.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅР° СЌРєРёРїРёСЂРѕРІРєР° РїРѕР»СѓС‡С€Рµ.";
 };
 
 func int DIA_Addon_Cavalorn_AUSRUESTUNG_Condition ()
@@ -505,22 +505,22 @@ func int DIA_Addon_Cavalorn_AUSRUESTUNG_Condition ()
 
 func void DIA_Addon_Cavalorn_AUSRUESTUNG_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_00"); //Мне нужна экипировка получше.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_00"); //РњРЅРµ РЅСѓР¶РЅР° СЌРєРёРїРёСЂРѕРІРєР° РїРѕР»СѓС‡С€Рµ.
 		
 		if (C_BragoBanditsDead () == FALSE)
 		{
-			AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_01"); //Эти свиньи не оставили мне почти ничего.
+			AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_01"); //Р­С‚Рё СЃРІРёРЅСЊРё РЅРµ РѕСЃС‚Р°РІРёР»Рё РјРЅРµ РїРѕС‡С‚Рё РЅРёС‡РµРіРѕ.
 		};
 		
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_02"); //Я могу дать тебе волчий нож. Этого пока хватит?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_03"); //Ты называешь это ножом?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_02"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РІРѕР»С‡РёР№ РЅРѕР¶. Р­С‚РѕРіРѕ РїРѕРєР° С…РІР°С‚РёС‚?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_03"); //РўС‹ РЅР°Р·С‹РІР°РµС€СЊ СЌС‚Рѕ РЅРѕР¶РѕРј?
 
 	CreateInvItems (self, ItMW_Addon_Knife01, 1);									
 	B_GiveInvItems (self, other, ItMW_Addon_Knife01, 1);					
 	 
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_04"); //А что по поводу лечения?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_05"); //У меня есть еще 2 лечебных зелья. Нужны?
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_06"); //Конечно. Давай сюда.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_04"); //Рђ С‡С‚Рѕ РїРѕ РїРѕРІРѕРґСѓ Р»РµС‡РµРЅРёСЏ?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_AUSRUESTUNG_08_05"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ 2 Р»РµС‡РµР±РЅС‹С… Р·РµР»СЊСЏ. РќСѓР¶РЅС‹?
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_AUSRUESTUNG_15_06"); //РљРѕРЅРµС‡РЅРѕ. Р”Р°РІР°Р№ СЃСЋРґР°.
 	
 	CreateInvItems (self, ItPo_Health_01, 2);									
 	B_GiveInvItems (self, other, ItPo_Health_01, 2);					
@@ -537,7 +537,7 @@ instance DIA_Addon_Cavalorn_LETSKILLBANDITS		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition;
 	information	 = 	DIA_Addon_Cavalorn_LETSKILLBANDITS_Info;
 
-	description	 = 	"Пойдем, разберемся с этими ребятами.";
+	description	 = 	"РџРѕР№РґРµРј, СЂР°Р·Р±РµСЂРµРјСЃСЏ СЃ СЌС‚РёРјРё СЂРµР±СЏС‚Р°РјРё.";
 };
 
 func int DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition ()
@@ -553,9 +553,9 @@ func int DIA_Addon_Cavalorn_LETSKILLBANDITS_Condition ()
 
 func void DIA_Addon_Cavalorn_LETSKILLBANDITS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_LETSKILLBANDITS_15_00"); //Пойдем, разберемся с этими ребятами.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_01"); //Конечно. Следи, чтобы ко мне не подходили сзади, ладно?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_02"); //Теперь их ждет неприятный сюрприз.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_LETSKILLBANDITS_15_00"); //РџРѕР№РґРµРј, СЂР°Р·Р±РµСЂРµРјСЃСЏ СЃ СЌС‚РёРјРё СЂРµР±СЏС‚Р°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_01"); //РљРѕРЅРµС‡РЅРѕ. РЎР»РµРґРё, С‡С‚РѕР±С‹ РєРѕ РјРЅРµ РЅРµ РїРѕРґС…РѕРґРёР»Рё СЃР·Р°РґРё, Р»Р°РґРЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_LETSKILLBANDITS_08_02"); //РўРµРїРµСЂСЊ РёС… Р¶РґРµС‚ РЅРµРїСЂРёСЏС‚РЅС‹Р№ СЃСЋСЂРїСЂРёР·.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KillBandits");
 
@@ -572,23 +572,23 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 	
 	if (MIS_Addon_Cavalorn_Letter2Vatras != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_00"); //И я, наконец, смогу выполнить свое задание. Я и так потерял уже слишком много времени.
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_01"); //Что это за задание?..
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_02"); //(сам себе) Ах, да. Ведь сначала мне еще нужно будет попасть в город, и потом...
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_03"); //(вздыхает) Не знаю, как мне удастся сделать это вовремя.
-		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_04"); //(сухо) А что насчет меня?
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_05"); //(оценивающе) Хм-м. А почему бы и нет... Ты можешь доставить письмо в город.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_00"); //Р СЏ, РЅР°РєРѕРЅРµС†, СЃРјРѕРіСѓ РІС‹РїРѕР»РЅРёС‚СЊ СЃРІРѕРµ Р·Р°РґР°РЅРёРµ. РЇ Рё С‚Р°Рє РїРѕС‚РµСЂСЏР» СѓР¶Рµ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_01"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° Р·Р°РґР°РЅРёРµ?..
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_02"); //(СЃР°Рј СЃРµР±Рµ) РђС…, РґР°. Р’РµРґСЊ СЃРЅР°С‡Р°Р»Р° РјРЅРµ РµС‰Рµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ, Рё РїРѕС‚РѕРј...
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_03"); //(РІР·РґС‹С…Р°РµС‚) РќРµ Р·РЅР°СЋ, РєР°Рє РјРЅРµ СѓРґР°СЃС‚СЃСЏ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ РІРѕРІСЂРµРјСЏ.
+		AI_Output	(other, self, "DIA_Addon_Cavalorn_VatrasBrief_15_04"); //(СЃСѓС…Рѕ) Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РјРµРЅСЏ?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_05"); //(РѕС†РµРЅРёРІР°СЋС‰Рµ) РҐРј-Рј. Рђ РїРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚... РўС‹ РјРѕР¶РµС€СЊ РґРѕСЃС‚Р°РІРёС‚СЊ РїРёСЃСЊРјРѕ РІ РіРѕСЂРѕРґ.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_06"); //Тогда у меня будет слегка больше времени, чтобы позаботиться о своей экипировке.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_06"); //РўРѕРіРґР° Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ СЃР»РµРіРєР° Р±РѕР»СЊС€Рµ РІСЂРµРјРµРЅРё, С‡С‚РѕР±С‹ РїРѕР·Р°Р±РѕС‚РёС‚СЊСЃСЏ Рѕ СЃРІРѕРµР№ СЌРєРёРїРёСЂРѕРІРєРµ.
 
 	if (MIS_Addon_Cavalorn_Letter2Vatras != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_07"); //Письмо должно быть у одного из бандитов в кармане.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_08"); //Отнеси его к Ватрасу, магу воды, в город. Ты найдешь его в храме Аданоса. Он проповедует там весь день.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_09"); //Скажи ему, что мне не удалось.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_10"); //А если он спросит, где я, просто скажи ему, что я уже на пути к месту встречи, ладно?
-		B_LogEntry (TOPIC_Addon_KDW,"В городе Хоринисе живет маг воды Ватрас. Он читает проповеди в храме Аданоса."); 
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_07"); //РџРёСЃСЊРјРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ Сѓ РѕРґРЅРѕРіРѕ РёР· Р±Р°РЅРґРёС‚РѕРІ РІ РєР°СЂРјР°РЅРµ.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_08"); //РћС‚РЅРµСЃРё РµРіРѕ Рє Р’Р°С‚СЂР°СЃСѓ, РјР°РіСѓ РІРѕРґС‹, РІ РіРѕСЂРѕРґ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ С…СЂР°РјРµ РђРґР°РЅРѕСЃР°. РћРЅ РїСЂРѕРїРѕРІРµРґСѓРµС‚ С‚Р°Рј РІРµСЃСЊ РґРµРЅСЊ.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_09"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РјРЅРµ РЅРµ СѓРґР°Р»РѕСЃСЊ.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_10"); //Рђ РµСЃР»Рё РѕРЅ СЃРїСЂРѕСЃРёС‚, РіРґРµ СЏ, РїСЂРѕСЃС‚Рѕ СЃРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ СЏ СѓР¶Рµ РЅР° РїСѓС‚Рё Рє РјРµСЃС‚Сѓ РІСЃС‚СЂРµС‡Рё, Р»Р°РґРЅРѕ?
+		B_LogEntry (TOPIC_Addon_KDW,"Р’ РіРѕСЂРѕРґРµ РҐРѕСЂРёРЅРёСЃРµ Р¶РёРІРµС‚ РјР°Рі РІРѕРґС‹ Р’Р°С‚СЂР°СЃ. РћРЅ С‡РёС‚Р°РµС‚ РїСЂРѕРїРѕРІРµРґРё РІ С…СЂР°РјРµ РђРґР°РЅРѕСЃР°."); 
 	};
 	
 	if (Npc_HasEquippedArmor(other) == FALSE)
@@ -596,8 +596,8 @@ func void B_Addon_Cavalorn_VatrasBrief ()
 	&& (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_11"); //А, да, и еще одно. Для начала купи приличную одежду у какого-нибудь фермера.
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_12"); //Иначе тебя могут принять за бандита. Вот пара монет.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_11"); //Рђ, РґР°, Рё РµС‰Рµ РѕРґРЅРѕ. Р”Р»СЏ РЅР°С‡Р°Р»Р° РєСѓРїРё РїСЂРёР»РёС‡РЅСѓСЋ РѕРґРµР¶РґСѓ Сѓ РєР°РєРѕРіРѕ-РЅРёР±СѓРґСЊ С„РµСЂРјРµСЂР°.
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_VatrasBrief_08_12"); //РРЅР°С‡Рµ С‚РµР±СЏ РјРѕРіСѓС‚ РїСЂРёРЅСЏС‚СЊ Р·Р° Р±Р°РЅРґРёС‚Р°. Р’РѕС‚ РїР°СЂР° РјРѕРЅРµС‚.
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);	
 	};
@@ -643,7 +643,7 @@ func int DIA_Addon_Cavalorn_BragoKilled_Condition ()
 
 func void DIA_Addon_Cavalorn_BragoKilled_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_BragoKilled_08_00"); //Готово. Ха. Им не следовало связываться со мной.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_BragoKilled_08_00"); //Р“РѕС‚РѕРІРѕ. РҐР°. РРј РЅРµ СЃР»РµРґРѕРІР°Р»Рѕ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃРѕ РјРЅРѕР№.
 	
 	B_Addon_Cavalorn_VatrasBrief ();
 	
@@ -659,7 +659,7 @@ instance DIA_Addon_Cavalorn_PCKilledBrago		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_PCKilledBrago_Condition;
 	information	 = 	DIA_Addon_Cavalorn_PCKilledBrago_Info;
 
-	description	 = 	"С бандитами покончено.";
+	description	 = 	"РЎ Р±Р°РЅРґРёС‚Р°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ.";
 };
 
 func int DIA_Addon_Cavalorn_PCKilledBrago_Condition ()
@@ -674,7 +674,7 @@ func int DIA_Addon_Cavalorn_PCKilledBrago_Condition ()
 
 func void DIA_Addon_Cavalorn_PCKilledBrago_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_PCKilledBrago_15_00"); //С бандитами покончено.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_PCKilledBrago_15_00"); //РЎ Р±Р°РЅРґРёС‚Р°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ.
 
 	B_Addon_Cavalorn_VatrasBrief ();
 
@@ -690,7 +690,7 @@ instance DIA_Addon_Cavalorn_JUNGS		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_JUNGS_Condition;
 	information	 = 	DIA_Addon_Cavalorn_JUNGS_Info;
 
-	description	 = 	"Интересные на тебе доспехи.";
+	description	 = 	"РРЅС‚РµСЂРµСЃРЅС‹Рµ РЅР° С‚РµР±Рµ РґРѕСЃРїРµС…Рё.";
 };
 
 func int DIA_Addon_Cavalorn_JUNGS_Condition ()
@@ -703,16 +703,16 @@ func int DIA_Addon_Cavalorn_JUNGS_Condition ()
 
 func void DIA_Addon_Cavalorn_JUNGS_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_JUNGS_15_00"); //Интересные на тебе доспехи. Ты больше не принадлежишь к Теням?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_01"); //Тени? Они не существуют с тех пор, как пал Барьер.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_02"); //Когда мы могли, наконец, уйти из Долины Рудников, незачем было оставаться с ними.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_03"); //Теперь я работаю на магов воды. Я принадлежу к 'Кольцу Воды'.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_JUNGS_15_00"); //РРЅС‚РµСЂРµСЃРЅС‹Рµ РЅР° С‚РµР±Рµ РґРѕСЃРїРµС…Рё. РўС‹ Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє РўРµРЅСЏРј?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_01"); //РўРµРЅРё? РћРЅРё РЅРµ СЃСѓС‰РµСЃС‚РІСѓСЋС‚ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РїР°Р» Р‘Р°СЂСЊРµСЂ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_02"); //РљРѕРіРґР° РјС‹ РјРѕРіР»Рё, РЅР°РєРѕРЅРµС†, СѓР№С‚Рё РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ, РЅРµР·Р°С‡РµРј Р±С‹Р»Рѕ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ СЃ РЅРёРјРё.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_JUNGS_08_03"); //РўРµРїРµСЂСЊ СЏ СЂР°Р±РѕС‚Р°СЋ РЅР° РјР°РіРѕРІ РІРѕРґС‹. РЇ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє 'РљРѕР»СЊС†Сѓ Р’РѕРґС‹'.
 	
 	SC_KnowsRanger = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Кавалорн рассказал мне, что он принадлежит к сообществу, которое называется 'Кольцо Воды'."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"РљР°РІР°Р»РѕСЂРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РѕРЅ РїСЂРёРЅР°РґР»РµР¶РёС‚ Рє СЃРѕРѕР±С‰РµСЃС‚РІСѓ, РєРѕС‚РѕСЂРѕРµ РЅР°Р·С‹РІР°РµС‚СЃСЏ 'РљРѕР»СЊС†Рѕ Р’РѕРґС‹'."); 
 
 	Cavalorn_RangerHint = TRUE;
 };
@@ -727,7 +727,7 @@ instance DIA_Addon_Cavalorn_Ring		(C_INFO)
 	condition	= DIA_Addon_Cavalorn_Ring_Condition;
 	information	= DIA_Addon_Cavalorn_Ring_Info;
 	permanent 	= FALSE;
-	description	= "Расскажи мне о 'Кольце Воды'!";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ 'РљРѕР»СЊС†Рµ Р’РѕРґС‹'!";
 };
 func int DIA_Addon_Cavalorn_Ring_Condition ()
 {
@@ -738,12 +738,12 @@ func int DIA_Addon_Cavalorn_Ring_Condition ()
 };
 func void DIA_Addon_Cavalorn_Ring_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_Ring_15_00"); //Расскажи мне о 'Кольце Воды'!
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_01"); //Мне на самом деле нельзя говорить про него.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_02"); //Все, что я могу сделать, - это отослать тебя к Ватрасу. Он - представитель магов воды в Хоринисе.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_03"); //Лучше тебе поговорить с ним. Скажи, что я тебе рекомендовал.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_04"); //Может быть, он тебя примет в наши ряды. Нам срочно необходимы люди...
-	B_LogEntry (TOPIC_Addon_RingOfWater,"О Кольце Воды мне может рассказать маг воды Ватрас."); 
+	AI_Output (other, self, "DIA_Addon_Cavalorn_Ring_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ 'РљРѕР»СЊС†Рµ Р’РѕРґС‹'!
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_01"); //РњРЅРµ РЅР° СЃР°РјРѕРј РґРµР»Рµ РЅРµР»СЊР·СЏ РіРѕРІРѕСЂРёС‚СЊ РїСЂРѕ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_02"); //Р’СЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ, - СЌС‚Рѕ РѕС‚РѕСЃР»Р°С‚СЊ С‚РµР±СЏ Рє Р’Р°С‚СЂР°СЃСѓ. РћРЅ - РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЊ РјР°РіРѕРІ РІРѕРґС‹ РІ РҐРѕСЂРёРЅРёСЃРµ.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_03"); //Р›СѓС‡С€Рµ С‚РµР±Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј. РЎРєР°Р¶Рё, С‡С‚Рѕ СЏ С‚РµР±Рµ СЂРµРєРѕРјРµРЅРґРѕРІР°Р».
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Ring_08_04"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРЅ С‚РµР±СЏ РїСЂРёРјРµС‚ РІ РЅР°С€Рё СЂСЏРґС‹. РќР°Рј СЃСЂРѕС‡РЅРѕ РЅРµРѕР±С…РѕРґРёРјС‹ Р»СЋРґРё...
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Рћ РљРѕР»СЊС†Рµ Р’РѕРґС‹ РјРЅРµ РјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјР°Рі РІРѕРґС‹ Р’Р°С‚СЂР°СЃ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Gegner
@@ -755,7 +755,7 @@ instance DIA_Addon_Cavalorn_Feinde (C_INFO)
 	condition	= DIA_Addon_Cavalorn_Feinde_Condition;
 	information	= DIA_Addon_Cavalorn_Feinde_Info;
 	permanent 	= FALSE;
-	description	= "Разве ты и твои ребята раньше не были врагами магов воды?";
+	description	= "Р Р°Р·РІРµ С‚С‹ Рё С‚РІРѕРё СЂРµР±СЏС‚Р° СЂР°РЅСЊС€Рµ РЅРµ Р±С‹Р»Рё РІСЂР°РіР°РјРё РјР°РіРѕРІ РІРѕРґС‹?";
 };
 func int DIA_Addon_Cavalorn_Feinde_Condition ()
 {
@@ -766,11 +766,11 @@ func int DIA_Addon_Cavalorn_Feinde_Condition ()
 };
 func void DIA_Addon_Cavalorn_Feinde_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_Feinde_15_00"); //Разве ты и твои ребята раньше не были врагами магов воды?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_01"); //Эти безумные дни закончились. Теперь нет 'Нового Лагеря' или 'Старого Лагеря'.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_02"); //После того как колония прекратила свое существование, каждый остался сам за себя.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_03"); //За большинством из бывших заключенных все еще идет охота.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_04"); //Маги воды сумели разобраться с моим приговором, и теперь я могу передвигаться свободно.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_Feinde_15_00"); //Р Р°Р·РІРµ С‚С‹ Рё С‚РІРѕРё СЂРµР±СЏС‚Р° СЂР°РЅСЊС€Рµ РЅРµ Р±С‹Р»Рё РІСЂР°РіР°РјРё РјР°РіРѕРІ РІРѕРґС‹?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_01"); //Р­С‚Рё Р±РµР·СѓРјРЅС‹Рµ РґРЅРё Р·Р°РєРѕРЅС‡РёР»РёСЃСЊ. РўРµРїРµСЂСЊ РЅРµС‚ 'РќРѕРІРѕРіРѕ Р›Р°РіРµСЂСЏ' РёР»Рё 'РЎС‚Р°СЂРѕРіРѕ Р›Р°РіРµСЂСЏ'.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_02"); //РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє РєРѕР»РѕРЅРёСЏ РїСЂРµРєСЂР°С‚РёР»Р° СЃРІРѕРµ СЃСѓС‰РµСЃС‚РІРѕРІР°РЅРёРµ, РєР°Р¶РґС‹Р№ РѕСЃС‚Р°Р»СЃСЏ СЃР°Рј Р·Р° СЃРµР±СЏ.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_03"); //Р—Р° Р±РѕР»СЊС€РёРЅСЃС‚РІРѕРј РёР· Р±С‹РІС€РёС… Р·Р°РєР»СЋС‡РµРЅРЅС‹С… РІСЃРµ РµС‰Рµ РёРґРµС‚ РѕС…РѕС‚Р°.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_Feinde_08_04"); //РњР°РіРё РІРѕРґС‹ СЃСѓРјРµР»Рё СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РјРѕРёРј РїСЂРёРіРѕРІРѕСЂРѕРј, Рё С‚РµРїРµСЂСЊ СЏ РјРѕРіСѓ РїРµСЂРµРґРІРёРіР°С‚СЊСЃСЏ СЃРІРѕР±РѕРґРЅРѕ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Wo KdW
@@ -782,7 +782,7 @@ instance DIA_Addon_Cavalorn_KdWTask (C_INFO)
 	condition	= DIA_Addon_Cavalorn_KdWTask_Condition;
 	information	= DIA_Addon_Cavalorn_KdWTask_Info;
 	permanent 	= FALSE;
-	description	= "А что, собственно, делают маги воды?";
+	description	= "Рђ С‡С‚Рѕ, СЃРѕР±СЃС‚РІРµРЅРЅРѕ, РґРµР»Р°СЋС‚ РјР°РіРё РІРѕРґС‹?";
 };
 func int DIA_Addon_Cavalorn_KdWTask_Condition ()
 {
@@ -794,10 +794,10 @@ func int DIA_Addon_Cavalorn_KdWTask_Condition ()
 };
 func void DIA_Addon_Cavalorn_KdWTask_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_00"); //А что, собственно, делают маги воды?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_01"); //Они затеяли кое-что серьезное. Это касается неизвестной области на острове.
-	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_02"); //Неизвестной области? Где же она может быть?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_03"); //Я не могу тебе сказать. Поговори с Ватрасом в Хоринисе.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_00"); //Рђ С‡С‚Рѕ, СЃРѕР±СЃС‚РІРµРЅРЅРѕ, РґРµР»Р°СЋС‚ РјР°РіРё РІРѕРґС‹?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_01"); //РћРЅРё Р·Р°С‚РµСЏР»Рё РєРѕРµ-С‡С‚Рѕ СЃРµСЂСЊРµР·РЅРѕРµ. Р­С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РЅРµРёР·РІРµСЃС‚РЅРѕР№ РѕР±Р»Р°СЃС‚Рё РЅР° РѕСЃС‚СЂРѕРІРµ.
+	AI_Output (other, self, "DIA_Addon_Cavalorn_KdWTask_15_02"); //РќРµРёР·РІРµСЃС‚РЅРѕР№ РѕР±Р»Р°СЃС‚Рё? Р“РґРµ Р¶Рµ РѕРЅР° РјРѕР¶РµС‚ Р±С‹С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_KdWTask_08_03"); //РЇ РЅРµ РјРѕРіСѓ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ. РџРѕРіРѕРІРѕСЂРё СЃ Р’Р°С‚СЂР°СЃРѕРј РІ РҐРѕСЂРёРЅРёСЃРµ.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -810,7 +810,7 @@ instance DIA_Addon_Cavalorn_BroughtLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_BroughtLetter_Condition;
 	information	 = 	DIA_Addon_Cavalorn_BroughtLetter_Info;
 
-	description	 = 	"Я передал Ватрасу твое письмо.";
+	description	 = 	"РЇ РїРµСЂРµРґР°Р» Р’Р°С‚СЂР°СЃСѓ С‚РІРѕРµ РїРёСЃСЊРјРѕ.";
 };
 
 func int DIA_Addon_Cavalorn_BroughtLetter_Condition ()
@@ -824,8 +824,8 @@ func int DIA_Addon_Cavalorn_BroughtLetter_Condition ()
 
 func void DIA_Addon_Cavalorn_BroughtLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_BroughtLetter_15_00"); //Я передал Ватрасу твое письмо.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_BroughtLetter_08_01"); //Я и не ожидал другого. Спасибо.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_BroughtLetter_15_00"); //РЇ РїРµСЂРµРґР°Р» Р’Р°С‚СЂР°СЃСѓ С‚РІРѕРµ РїРёСЃСЊРјРѕ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_BroughtLetter_08_01"); //РЇ Рё РЅРµ РѕР¶РёРґР°Р» РґСЂСѓРіРѕРіРѕ. РЎРїР°СЃРёР±Рѕ.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -840,7 +840,7 @@ instance DIA_Addon_Cavalorn_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Ornament_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Ornament_Info;
 
-	description	 = 	"Ты что-то ищешь?";
+	description	 = 	"РўС‹ С‡С‚Рѕ-С‚Рѕ РёС‰РµС€СЊ?";
 };
 
 func int DIA_Addon_Cavalorn_Ornament_Condition ()
@@ -854,27 +854,27 @@ func int DIA_Addon_Cavalorn_Ornament_Condition ()
 
 func void DIA_Addon_Cavalorn_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_00"); //Ты что-то ищешь?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_01"); //А что, так заметно? Да, у меня есть поручение от магов воды, я ищу потерянный орнамент.
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_02"); //Как удобно. У меня то же поручение от Нефариуса.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_00"); //РўС‹ С‡С‚Рѕ-С‚Рѕ РёС‰РµС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_01"); //Рђ С‡С‚Рѕ, С‚Р°Рє Р·Р°РјРµС‚РЅРѕ? Р”Р°, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЂСѓС‡РµРЅРёРµ РѕС‚ РјР°РіРѕРІ РІРѕРґС‹, СЏ РёС‰Сѓ РїРѕС‚РµСЂСЏРЅРЅС‹Р№ РѕСЂРЅР°РјРµРЅС‚.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_02"); //РљР°Рє СѓРґРѕР±РЅРѕ. РЈ РјРµРЅСЏ С‚Рѕ Р¶Рµ РїРѕСЂСѓС‡РµРЅРёРµ РѕС‚ РќРµС„Р°СЂРёСѓСЃР°.
 
 	if (SC_KnowsRanger == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_03"); //Так значит, ты принадлежишь к 'Кольцу Воды'?
+		AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_03"); //РўР°Рє Р·РЅР°С‡РёС‚, С‚С‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє 'РљРѕР»СЊС†Сѓ Р’РѕРґС‹'?
 		if (SC_IsRanger == TRUE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_04"); //Да.
+			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_04"); //Р”Р°.
 		}
 		else
 		{
-			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_05"); //Пока нет, но я работаю над этим.
+			AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_05"); //РџРѕРєР° РЅРµС‚, РЅРѕ СЏ СЂР°Р±РѕС‚Р°СЋ РЅР°Рґ СЌС‚РёРј.
 		};
 	};
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_06"); //Я рад. Значит, мне не придется заниматься этим в одиночку.
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_07"); //Ты уже нашел орнамент?
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_08"); //Я знаю место, где он должен быть.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_09"); //Этот каменный круг похож на то, что описывал Нефариус.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_10"); //Теперь нам надо просто найти механизм, который мы и должны найти.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_06"); //РЇ СЂР°Рґ. Р—РЅР°С‡РёС‚, РјРЅРµ РЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°РЅРёРјР°С‚СЊСЃСЏ СЌС‚РёРј РІ РѕРґРёРЅРѕС‡РєСѓ.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Ornament_15_07"); //РўС‹ СѓР¶Рµ РЅР°С€РµР» РѕСЂРЅР°РјРµРЅС‚?
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_08"); //РЇ Р·РЅР°СЋ РјРµСЃС‚Рѕ, РіРґРµ РѕРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_09"); //Р­С‚РѕС‚ РєР°РјРµРЅРЅС‹Р№ РєСЂСѓРі РїРѕС…РѕР¶ РЅР° С‚Рѕ, С‡С‚Рѕ РѕРїРёСЃС‹РІР°Р» РќРµС„Р°СЂРёСѓСЃ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Ornament_08_10"); //РўРµРїРµСЂСЊ РЅР°Рј РЅР°РґРѕ РїСЂРѕСЃС‚Рѕ РЅР°Р№С‚Рё РјРµС…Р°РЅРёР·Рј, РєРѕС‚РѕСЂС‹Р№ РјС‹ Рё РґРѕР»Р¶РЅС‹ РЅР°Р№С‚Рё.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Triggered
@@ -886,7 +886,7 @@ instance DIA_Addon_Cavalorn_Triggered		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_Triggered_Condition;
 	information	 = 	DIA_Addon_Cavalorn_Triggered_Info;
 
-	description	 = 	"Я включил этот механизм.";
+	description	 = 	"РЇ РІРєР»СЋС‡РёР» СЌС‚РѕС‚ РјРµС…Р°РЅРёР·Рј.";
 };
 
 func int DIA_Addon_Cavalorn_Triggered_Condition ()
@@ -901,26 +901,26 @@ func int DIA_Addon_Cavalorn_Triggered_Condition ()
 
 func void DIA_Addon_Cavalorn_Triggered_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_Triggered_15_00"); //Я пробовал. Но он не работает, ничего не делает.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_01"); //Значит, фермеры Лобарта были правы.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_02"); //Они сказали, что один из них уже крутился здесь, возле камней.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_03"); //Каменный страж появился из ниоткуда и напал на него.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_04"); //Фермеры позвали ополченцев, те оповестили паладинов, которые и уничтожили монстра.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_05"); //Я уже обыскал здесь все. Если орнамент и был здесь, теперь он у паладинов.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_Triggered_15_00"); //РЇ РїСЂРѕР±РѕРІР°Р». РќРѕ РѕРЅ РЅРµ СЂР°Р±РѕС‚Р°РµС‚, РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°РµС‚.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_01"); //Р—РЅР°С‡РёС‚, С„РµСЂРјРµСЂС‹ Р›РѕР±Р°СЂС‚Р° Р±С‹Р»Рё РїСЂР°РІС‹.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_02"); //РћРЅРё СЃРєР°Р·Р°Р»Рё, С‡С‚Рѕ РѕРґРёРЅ РёР· РЅРёС… СѓР¶Рµ РєСЂСѓС‚РёР»СЃСЏ Р·РґРµСЃСЊ, РІРѕР·Р»Рµ РєР°РјРЅРµР№.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_03"); //РљР°РјРµРЅРЅС‹Р№ СЃС‚СЂР°Р¶ РїРѕСЏРІРёР»СЃСЏ РёР· РЅРёРѕС‚РєСѓРґР° Рё РЅР°РїР°Р» РЅР° РЅРµРіРѕ.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_04"); //Р¤РµСЂРјРµСЂС‹ РїРѕР·РІР°Р»Рё РѕРїРѕР»С‡РµРЅС†РµРІ, С‚Рµ РѕРїРѕРІРµСЃС‚РёР»Рё РїР°Р»Р°РґРёРЅРѕРІ, РєРѕС‚РѕСЂС‹Рµ Рё СѓРЅРёС‡С‚РѕР¶РёР»Рё РјРѕРЅСЃС‚СЂР°.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_Triggered_08_05"); //РЇ СѓР¶Рµ РѕР±С‹СЃРєР°Р» Р·РґРµСЃСЊ РІСЃРµ. Р•СЃР»Рё РѕСЂРЅР°РјРµРЅС‚ Рё Р±С‹Р» Р·РґРµСЃСЊ, С‚РµРїРµСЂСЊ РѕРЅ Сѓ РїР°Р»Р°РґРёРЅРѕРІ.
 	
 	Info_ClearChoices	(DIA_Addon_Cavalorn_Triggered);
-	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Кому-то из нас придется подняться в верхнюю часть города.", DIA_Addon_Cavalorn_Triggered_Pal );
-	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "Тогда я пойду и попрошу у них орнамент.", DIA_Addon_Cavalorn_Triggered_OBack );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "РљРѕРјСѓ-С‚Рѕ РёР· РЅР°СЃ РїСЂРёРґРµС‚СЃСЏ РїРѕРґРЅСЏС‚СЊСЃСЏ РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.", DIA_Addon_Cavalorn_Triggered_Pal );
+	Info_AddChoice	(DIA_Addon_Cavalorn_Triggered, "РўРѕРіРґР° СЏ РїРѕР№РґСѓ Рё РїРѕРїСЂРѕС€Сѓ Сѓ РЅРёС… РѕСЂРЅР°РјРµРЅС‚.", DIA_Addon_Cavalorn_Triggered_OBack );
 };
 func void B_Cavalorn_Triggered_Wohin ()
 {
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Wohin_08_00"); //Сейчас я снова иду в город. Встретимся у Ватраса.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Wohin_08_00"); //РЎРµР№С‡Р°СЃ СЏ СЃРЅРѕРІР° РёРґСѓ РІ РіРѕСЂРѕРґ. Р’СЃС‚СЂРµС‚РёРјСЃСЏ Сѓ Р’Р°С‚СЂР°СЃР°.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Stadt");
 	
 	Log_CreateTopic (TOPIC_Addon_Ornament, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Ornament, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Ornament,"Одна из частей орнамента находится у паладинов в верхнем квартале."); 
+	B_LogEntry (TOPIC_Addon_Ornament,"РћРґРЅР° РёР· С‡Р°СЃС‚РµР№ РѕСЂРЅР°РјРµРЅС‚Р° РЅР°С…РѕРґРёС‚СЃСЏ Сѓ РїР°Р»Р°РґРёРЅРѕРІ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ."); 
 
 	MIS_Addon_Cavalorn_GetOrnamentFromPAL = LOG_RUNNING;
 	self.flags = 0;
@@ -933,8 +933,8 @@ func void DIA_Addon_Cavalorn_Triggered_OBack ()
 	Npc_RemoveInvItems	(self, ITAR_RANGER_Addon,	Npc_HasItems (self, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(self, ITAR_Fake_RANGER,	Npc_HasItems (self, ITAR_Fake_RANGER ) );
 	AI_EquipBestArmor (self); 
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_OBack_15_00"); //Тогда я пойду и попрошу у них орнамент.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_OBack_08_01"); //Отлично.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_OBack_15_00"); //РўРѕРіРґР° СЏ РїРѕР№РґСѓ Рё РїРѕРїСЂРѕС€Сѓ Сѓ РЅРёС… РѕСЂРЅР°РјРµРЅС‚.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_OBack_08_01"); //РћС‚Р»РёС‡РЅРѕ.
 	B_Cavalorn_Triggered_Wohin ();
 };
 
@@ -945,8 +945,8 @@ func void DIA_Addon_Cavalorn_Triggered_Pal ()
 	Npc_RemoveInvItems	(self, ITAR_RANGER_Addon,	Npc_HasItems (self, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(self, ITAR_Fake_RANGER,	Npc_HasItems (self, ITAR_Fake_RANGER ) );
 	AI_EquipBestArmor (self); 
-	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_Pal_15_00"); //Кому-то из нас придется подняться в верхнюю часть города.
-	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Pal_08_01"); //У меня нет на это время. Это придется сделать тебе.
+	AI_Output			(other, self, "DIA_Addon_Cavalorn_Triggered_Pal_15_00"); //РљРѕРјСѓ-С‚Рѕ РёР· РЅР°СЃ РїСЂРёРґРµС‚СЃСЏ РїРѕРґРЅСЏС‚СЊСЃСЏ РІ РІРµСЂС…РЅСЋСЋ С‡Р°СЃС‚СЊ РіРѕСЂРѕРґР°.
+	AI_Output			(self, other, "DIA_Addon_Cavalorn_Triggered_Pal_08_01"); //РЈ РјРµРЅСЏ РЅРµС‚ РЅР° СЌС‚Рѕ РІСЂРµРјСЏ. Р­С‚Рѕ РїСЂРёРґРµС‚СЃСЏ СЃРґРµР»Р°С‚СЊ С‚РµР±Рµ.
 	B_Cavalorn_Triggered_Wohin ();
 };
 
@@ -960,7 +960,7 @@ instance DIA_Addon_Cavalorn_GotOrnaFromHagen		(C_INFO)
 	condition	 = 	DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition;
 	information	 = 	DIA_Addon_Cavalorn_GotOrnaFromHagen_Info;
 
-	description	 = 	"Я достал у лорда Хагена пропавший орнамент.";
+	description	 = 	"РЇ РґРѕСЃС‚Р°Р» Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР° РїСЂРѕРїР°РІС€РёР№ РѕСЂРЅР°РјРµРЅС‚.";
 };
 
 func int DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition ()
@@ -973,8 +973,8 @@ func int DIA_Addon_Cavalorn_GotOrnaFromHagen_Condition ()
 
 func void DIA_Addon_Cavalorn_GotOrnaFromHagen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cavalorn_GotOrnaFromHagen_15_00"); //Я достал у лорда Хагена пропавший орнамент.
-	AI_Output	(self, other, "DIA_Addon_Cavalorn_GotOrnaFromHagen_08_01"); //Видишь! Я же говорил, что он у паладинов.
+	AI_Output	(other, self, "DIA_Addon_Cavalorn_GotOrnaFromHagen_15_00"); //РЇ РґРѕСЃС‚Р°Р» Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР° РїСЂРѕРїР°РІС€РёР№ РѕСЂРЅР°РјРµРЅС‚.
+	AI_Output	(self, other, "DIA_Addon_Cavalorn_GotOrnaFromHagen_08_01"); //Р’РёРґРёС€СЊ! РЇ Р¶Рµ РіРѕРІРѕСЂРёР», С‡С‚Рѕ РѕРЅ Сѓ РїР°Р»Р°РґРёРЅРѕРІ.
 	B_GivePlayerXP (XP_Ambient);
 	MIS_Addon_Cavalorn_GetOrnamentFromPAL = LOG_SUCCESS;
 };
@@ -989,7 +989,7 @@ instance DIA_Addon_Cavalorn_WannaLearn (C_INFO)
 	condition	= DIA_Addon_Cavalorn_WannaLearn_Condition;
 	information	= DIA_Addon_Cavalorn_WannaLearn_Info;
 	permanent 	= FALSE;
-	description	= "Ты можешь научить меня чему-нибудь?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 
 func int DIA_Addon_Cavalorn_WannaLearn_Condition ()
@@ -1003,9 +1003,9 @@ func int DIA_Addon_Cavalorn_WannaLearn_Condition ()
 
 func void DIA_Addon_Cavalorn_WannaLearn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_WannaLearn_15_00"); //Ты можешь научить меня кое-чему?
-	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_01"); //Конечно. Ты это прекрасно знаешь. Приятель, ты действительно много потерял.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_02"); //Ты и правда ничего не помнишь, да?
+	AI_Output (other, self, "DIA_Addon_Cavalorn_WannaLearn_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РєРѕРµ-С‡РµРјСѓ?
+	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_01"); //РљРѕРЅРµС‡РЅРѕ. РўС‹ СЌС‚Рѕ РїСЂРµРєСЂР°СЃРЅРѕ Р·РЅР°РµС€СЊ. РџСЂРёСЏС‚РµР»СЊ, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРЅРѕРіРѕ РїРѕС‚РµСЂСЏР».
+	AI_Output (self, other, "DIA_Addon_Cavalorn_WannaLearn_08_02"); //РўС‹ Рё РїСЂР°РІРґР° РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРЅРёС€СЊ, РґР°?
 	
 	Cavalorn_Addon_TeachPlayer = TRUE;
 	Log_CreateTopic (Topic_OutTeacher,LOG_NOTE);
@@ -1026,7 +1026,7 @@ instance DIA_Addon_Cavalorn_TEACH (C_INFO)
 	condition	= DIA_Addon_Cavalorn_TEACH_Condition;
 	information	= DIA_Addon_Cavalorn_TEACH_Info;
 	permanent 	= TRUE;
-	description	= "Я хочу обучиться тому, что ты умеешь.";
+	description	= "РЇ С…РѕС‡Сѓ РѕР±СѓС‡РёС‚СЊСЃСЏ С‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ СѓРјРµРµС€СЊ.";
 };
 
 func int DIA_Addon_Cavalorn_TEACH_Condition ()
@@ -1044,7 +1044,7 @@ func VOID DIA_Addon_Cavalorn_TEACH_Choices ()
 
 	if (Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			{
-				Info_AddChoice		(DIA_Addon_Cavalorn_Teach, B_BuildLearnString("Красться"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Addon_Cavalorn_Teach_Sneak);
+				Info_AddChoice		(DIA_Addon_Cavalorn_Teach, B_BuildLearnString("РљСЂР°СЃС‚СЊСЃСЏ"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Addon_Cavalorn_Teach_Sneak);
 			};
 
 	Info_AddChoice (DIA_Addon_Cavalorn_Teach, B_BuildLearnString(PRINT_LearnBow1, B_GetLearnCostTalent(other, NPC_TALENT_BOW, 1))	 ,DIA_Addon_Cavalorn_Teach_Bow_1);
@@ -1055,8 +1055,8 @@ func VOID DIA_Addon_Cavalorn_TEACH_Choices ()
 };
 func void DIA_Addon_Cavalorn_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Cavalorn_TEACH_15_00"); //Я хочу обучиться тому, что ты умеешь.
-	AI_Output (self, other, "DIA_Addon_Cavalorn_TEACH_08_01"); //Хорошо. Что именно тебя интересует?
+	AI_Output (other, self, "DIA_Addon_Cavalorn_TEACH_15_00"); //РЇ С…РѕС‡Сѓ РѕР±СѓС‡РёС‚СЊСЃСЏ С‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ СѓРјРµРµС€СЊ.
+	AI_Output (self, other, "DIA_Addon_Cavalorn_TEACH_08_01"); //РҐРѕСЂРѕС€Рѕ. Р§С‚Рѕ РёРјРµРЅРЅРѕ С‚РµР±СЏ РёРЅС‚РµСЂРµСЃСѓРµС‚?
 	
 	Addon_Cavalorn_Merke_Bow = other.HitChance[NPC_TALENT_BOW];
 	Addon_Cavalorn_Merke_1h =  other.HitChance[NPC_TALENT_1H];
@@ -1068,7 +1068,7 @@ FUNC VOID DIA_Addon_Cavalorn_Teach_Sneak ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 		{
-			AI_Output			(self, other, "DIA_Addon_Cavalorn_Teach_Sneak_08_00"); //С мягкими подошвами тебе будет легче незаметно подобраться к противнику.
+			AI_Output			(self, other, "DIA_Addon_Cavalorn_Teach_Sneak_08_00"); //РЎ РјСЏРіРєРёРјРё РїРѕРґРѕС€РІР°РјРё С‚РµР±Рµ Р±СѓРґРµС‚ Р»РµРіС‡Рµ РЅРµР·Р°РјРµС‚РЅРѕ РїРѕРґРѕР±СЂР°С‚СЊСЃСЏ Рє РїСЂРѕС‚РёРІРЅРёРєСѓ.
 		};
 
 	DIA_Addon_Cavalorn_TEACH_Choices ();
@@ -1107,7 +1107,7 @@ FUNC VOID DIA_Addon_Cavalorn_Teach_Back ()
 	if (Addon_Cavalorn_Merke_Bow < other.HitChance[NPC_TALENT_BOW])
 	|| (Addon_Cavalorn_Merke_1h  < other.HitChance[NPC_TALENT_1H])
 	{
-		AI_Output (self ,other,"DIA_Addon_Cavalorn_Teach_BACK_08_00"); //Уже лучше. Ты многое позабыл, но мы быстро вернем твои умения.
+		AI_Output (self ,other,"DIA_Addon_Cavalorn_Teach_BACK_08_00"); //РЈР¶Рµ Р»СѓС‡С€Рµ. РўС‹ РјРЅРѕРіРѕРµ РїРѕР·Р°Р±С‹Р», РЅРѕ РјС‹ Р±С‹СЃС‚СЂРѕ РІРµСЂРЅРµРј С‚РІРѕРё СѓРјРµРЅРёСЏ.
 	};
 
 	Info_ClearChoices (DIA_Addon_Cavalorn_Teach);

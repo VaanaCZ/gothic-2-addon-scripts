@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Pardos_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Pardos_NW_Hi_Condition;
 	information = DIA_Addon_Pardos_NW_Hi_Info;
 	permanent   = TRUE;
-	description = "Как идут дела?";
+	description = "РљР°Рє РёРґСѓС‚ РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 {		
@@ -36,9 +36,9 @@ FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//Как идут дела?
-	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(усмехается) Эй, это же мой спаситель. Спасибо. Теперь я, наконец, могу отдохнуть.
-	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//Удачи.
+	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(СѓСЃРјРµС…Р°РµС‚СЃСЏ) Р­Р№, СЌС‚Рѕ Р¶Рµ РјРѕР№ СЃРїР°СЃРёС‚РµР»СЊ. РЎРїР°СЃРёР±Рѕ. РўРµРїРµСЂСЊ СЏ, РЅР°РєРѕРЅРµС†, РјРѕРіСѓ РѕС‚РґРѕС…РЅСѓС‚СЊ.
+	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//РЈРґР°С‡Рё.
 };
 // ************************************************************
 // 			  				PICK POCKET

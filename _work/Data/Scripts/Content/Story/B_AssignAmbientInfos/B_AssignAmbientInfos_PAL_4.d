@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_4_JOIN(C_INFO)
 	condition	= DIA_PAL_4_JOIN_Condition;
 	information	= DIA_PAL_4_JOIN_Info;
 	permanent	= TRUE;
-	description = "Как мне стать паладином?";
+	description = "РљР°Рє РјРЅРµ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј?";
 };                       
 
 FUNC INT DIA_PAL_4_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_PAL_4_JOIN_Condition()
 
 FUNC VOID DIA_PAL_4_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //Как мне стать паладином?
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Если у тебя действительно серьезные намерения, то сначала ты должен поступить в услужение паладинам.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Иди в казармы и поговори с лордом Андрэ. Попробуй вступить в ополчение.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Возможно, там у тебя появится шанс проявить себя.
+	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //РљР°Рє РјРЅРµ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј?
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРµСЂСЊРµР·РЅС‹Рµ РЅР°РјРµСЂРµРЅРёСЏ, С‚Рѕ СЃРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓСЃР»СѓР¶РµРЅРёРµ РїР°Р»Р°РґРёРЅР°Рј.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //РРґРё РІ РєР°Р·Р°СЂРјС‹ Рё РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ. РџРѕРїСЂРѕР±СѓР№ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚Р°Рј Сѓ С‚РµР±СЏ РїРѕСЏРІРёС‚СЃСЏ С€Р°РЅСЃ РїСЂРѕСЏРІРёС‚СЊ СЃРµР±СЏ.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_PAL_4_PEOPLE(C_INFO)
 	condition	= DIA_PAL_4_PEOPLE_Condition;
 	information	= DIA_PAL_4_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Кто командует здесь?";
+	description = "РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_PAL_4_PEOPLE_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_PAL_4_PEOPLE_Condition()
 
 FUNC VOID DIA_PAL_4_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //Кто командует здесь?
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Лорд Хаген - главнокомандующий всеми войсками на этом острове. Он занимает дом губернатора, пока мы расквартированы здесь.
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Но он очень занят. Если тебе что-то нужно, иди в казармы и поговори с лордом Андрэ.
+	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Р›РѕСЂРґ РҐР°РіРµРЅ - РіР»Р°РІРЅРѕРєРѕРјР°РЅРґСѓСЋС‰РёР№ РІСЃРµРјРё РІРѕР№СЃРєР°РјРё РЅР° СЌС‚РѕРј РѕСЃС‚СЂРѕРІРµ. РћРЅ Р·Р°РЅРёРјР°РµС‚ РґРѕРј РіСѓР±РµСЂРЅР°С‚РѕСЂР°, РїРѕРєР° РјС‹ СЂР°СЃРєРІР°СЂС‚РёСЂРѕРІР°РЅС‹ Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //РќРѕ РѕРЅ РѕС‡РµРЅСЊ Р·Р°РЅСЏС‚. Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ, РёРґРё РІ РєР°Р·Р°СЂРјС‹ Рё РїРѕРіРѕРІРѕСЂРё СЃ Р»РѕСЂРґРѕРј РђРЅРґСЂСЌ.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_4_LOCATION(C_INFO)
 	condition	= DIA_PAL_4_LOCATION_Condition;
 	information	= DIA_PAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Что вы, паладины, делаете здесь, в Хоринисе?";
+	description = "Р§С‚Рѕ РІС‹, РїР°Р»Р°РґРёРЅС‹, РґРµР»Р°РµС‚Рµ Р·РґРµСЃСЊ, РІ РҐРѕСЂРёРЅРёСЃРµ?";
 };                       
 
 FUNC INT DIA_PAL_4_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_LOCATION_15_00"); //Что вы, паладины, делаете здесь, в Хоринисе?
-	AI_Output (self, other, "DIA_PAL_4_LOCATION_04_01"); //Я не уполномочен сообщать тебе это.
+	AI_Output (other, self, "DIA_PAL_4_LOCATION_15_00"); //Р§С‚Рѕ РІС‹, РїР°Р»Р°РґРёРЅС‹, РґРµР»Р°РµС‚Рµ Р·РґРµСЃСЊ, РІ РҐРѕСЂРёРЅРёСЃРµ?
+	AI_Output (self, other, "DIA_PAL_4_LOCATION_04_01"); //РЇ РЅРµ СѓРїРѕР»РЅРѕРјРѕС‡РµРЅ СЃРѕРѕР±С‰Р°С‚СЊ С‚РµР±Рµ СЌС‚Рѕ.
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE DIA_PAL_4_STANDARD(C_INFO)
 	condition	= DIA_PAL_4_STANDARD_Condition;
 	information	= DIA_PAL_4_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Что нового?";
+	description = "Р§С‚Рѕ РЅРѕРІРѕРіРѕ?";
 };
                        
 func INT DIA_PAL_4_STANDARD_Condition()
@@ -120,7 +120,7 @@ func INT DIA_PAL_4_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_4_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_STANDARD_15_00"); //Что новенького?
+	AI_Output (other, self, "DIA_PAL_4_STANDARD_15_00"); //Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_4_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //Теперь, когда мы знаем, что имеем дело с драконами, наш командующий наверняка вскоре что-то предпримет.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° РјС‹ Р·РЅР°РµРј, С‡С‚Рѕ РёРјРµРµРј РґРµР»Рѕ СЃ РґСЂР°РєРѕРЅР°РјРё, РЅР°С€ РєРѕРјР°РЅРґСѓСЋС‰РёР№ РЅР°РІРµСЂРЅСЏРєР° РІСЃРєРѕСЂРµ С‡С‚Рѕ-С‚Рѕ РїСЂРµРґРїСЂРёРјРµС‚.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //У на все еще нет никаких новостей от нашего отряда в Долине Рудников. Это тревожный знак.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //РЈ РЅР° РІСЃРµ РµС‰Рµ РЅРµС‚ РЅРёРєР°РєРёС… РЅРѕРІРѕСЃС‚РµР№ РѕС‚ РЅР°С€РµРіРѕ РѕС‚СЂСЏРґР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. Р­С‚Рѕ С‚СЂРµРІРѕР¶РЅС‹Р№ Р·РЅР°Рє.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Слава Инносу! Драконы больше не угрожают нам. Теперь нам осталось только разобраться с орками, чтобы начать спокойно добывать руду.
+			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //РЎР»Р°РІР° РРЅРЅРѕСЃСѓ! Р”СЂР°РєРѕРЅС‹ Р±РѕР»СЊС€Рµ РЅРµ СѓРіСЂРѕР¶Р°СЋС‚ РЅР°Рј. РўРµРїРµСЂСЊ РЅР°Рј РѕСЃС‚Р°Р»РѕСЃСЊ С‚РѕР»СЊРєРѕ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РѕСЂРєР°РјРё, С‡С‚РѕР±С‹ РЅР°С‡Р°С‚СЊ СЃРїРѕРєРѕР№РЅРѕ РґРѕР±С‹РІР°С‚СЊ СЂСѓРґСѓ.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //У меня нет времени на обсуждение слухов, ходящих в городе.
+		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° РѕР±СЃСѓР¶РґРµРЅРёРµ СЃР»СѓС…РѕРІ, С…РѕРґСЏС‰РёС… РІ РіРѕСЂРѕРґРµ.
 	};
 };
 

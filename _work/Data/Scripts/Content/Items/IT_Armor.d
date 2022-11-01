@@ -1,5 +1,5 @@
 // *********************************************************
-// Rьstungs Kosten in Gold
+// RСЊstungs Kosten in Gold
 // -----------------------
 // Alles, was hier mit 0 angegeben ist  
 // a) kann der Spieler NIE bekommen und
@@ -22,7 +22,7 @@ const int VALUE_ITAR_MIL_M		= 2500;
 const int VALUE_ITAR_PAL_M		= 5000;
 const int VALUE_ITAR_PAL_H		= 20000;
 
-// ------ Bauern und Sцldner ------
+// ------ Bauern und SС†ldner ------
 const int VALUE_ITAR_Bau_L		= 80;
 const int VALUE_ITAR_Bau_M		= 100;
 const int VALUE_ITAR_BauBabe_L	= 0;
@@ -42,7 +42,7 @@ const int VALUE_ITAR_Leather_L	= 250;
 const int VALUE_ITAR_BDT_M		= 550;
 const int VALUE_ITAR_BDT_H		= 2100;
 
-// ------ Drachenjдger ------
+// ------ DrachenjРґger ------
 const int VALUE_ITAR_DJG_L		= 3000;
 const int VALUE_ITAR_DJG_M		= 12000;
 const int VALUE_ITAR_DJG_H		= 20000;
@@ -59,12 +59,12 @@ const int VALUE_ITAR_Prisoner	= 10;
 
 
 // ******************
-// 		Rьstungen
+// 		RСЊstungen
 // ******************
 
 INSTANCE ITAR_Governor (C_Item)
 {
-	name 					=	"Дублет губернатора";
+	name 					=	"Р”СѓР±Р»РµС‚ РіСѓР±РµСЂРЅР°С‚РѕСЂР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -104,7 +104,7 @@ INSTANCE ITAR_Governor (C_Item)
 // ******************************************************
 INSTANCE ITAR_JUDGE (C_Item)
 {
-	name 					=	"Мантия судьи";
+	name 					=	"РњР°РЅС‚РёСЏ СЃСѓРґСЊРё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -144,7 +144,7 @@ INSTANCE ITAR_JUDGE (C_Item)
 // ******************************************************
 INSTANCE ITAR_SMITH (C_Item)
 {
-	name 					=	"Одежда кузнеца";
+	name 					=	"РћРґРµР¶РґР° РєСѓР·РЅРµС†Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -184,7 +184,7 @@ INSTANCE ITAR_SMITH (C_Item)
 // ******************************************************
 INSTANCE ITAR_BARKEEPER (C_Item)
 {
-	name 					=	"Одежда горожанина";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -224,7 +224,7 @@ INSTANCE ITAR_BARKEEPER (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_L (C_Item)
 {
-	name 					=	"Одежда горожанина";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -264,7 +264,7 @@ INSTANCE ITAR_VLK_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_M (C_Item)
 {
-	name 					=	"Одежда горожанина";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -304,7 +304,7 @@ INSTANCE ITAR_VLK_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_H (C_Item)
 {
-	name 					=	"Одежда горожанина";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -340,7 +340,7 @@ INSTANCE ITAR_VLK_H (C_Item)
 // ******************************************************
 instance ITAR_VlkBabe_L (C_Item)
 {
-	name 					=	"Одежда горожанина 1";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР° 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -380,7 +380,7 @@ instance ITAR_VlkBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_M (C_Item)
 {
-	name 					=	"Одежда горожанина 2";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР° 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -420,7 +420,7 @@ INSTANCE ITAR_VlkBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_H (C_Item)
 {
-	name 					=	"Одежда горожанина 3";
+	name 					=	"РћРґРµР¶РґР° РіРѕСЂРѕР¶Р°РЅРёРЅР° 3";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -456,7 +456,7 @@ INSTANCE ITAR_VlkBabe_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_MIL_L (C_Item)
 {
-	name 					=	"Легкие доспехи ополчения";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё РѕРїРѕР»С‡РµРЅРёСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -502,7 +502,7 @@ FUNC VOID Equip_ITAR_MIL_L()
 	{
 		MILArmor_Equipped = TRUE;
 		
-		if (MIL01_Equipped == TRUE)//Gьrtel
+		if (MIL01_Equipped == TRUE)//GСЊrtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -531,7 +531,7 @@ FUNC VOID UnEquip_ITAR_MIL_L()
 // ******************************************************
 INSTANCE ITAR_MIL_M (C_Item)
 {
-	name 					=	"Тяжелые доспехи ополчения";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РѕРїРѕР»С‡РµРЅРёСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -602,7 +602,7 @@ FUNC VOID UnEquip_ITAR_MIL_M()
 // ******************************************************
 INSTANCE ITAR_PAL_M (C_Item)
 {
-	name 					=	"Доспехи рыцаря";
+	name 					=	"Р”РѕСЃРїРµС…Рё СЂС‹С†Р°СЂСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -642,7 +642,7 @@ INSTANCE ITAR_PAL_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_PAL_H (C_Item)
 {
-	name 					=	"Доспехи паладина";
+	name 					=	"Р”РѕСЃРїРµС…Рё РїР°Р»Р°РґРёРЅР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -682,7 +682,7 @@ INSTANCE ITAR_PAL_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_L (C_Item)
 {
-	name 					=	"Одежда фермера 1";
+	name 					=	"РћРґРµР¶РґР° С„РµСЂРјРµСЂР° 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -722,7 +722,7 @@ INSTANCE ITAR_BAU_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_M (C_Item)
 {
-	name 					=	"Одежда фермера 2";
+	name 					=	"РћРґРµР¶РґР° С„РµСЂРјРµСЂР° 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -762,7 +762,7 @@ INSTANCE ITAR_BAU_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BauBabe_L (C_Item)
 {
-	name 					=	"Женская фермерская одежда 1";
+	name 					=	"Р–РµРЅСЃРєР°СЏ С„РµСЂРјРµСЂСЃРєР°СЏ РѕРґРµР¶РґР° 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -798,7 +798,7 @@ INSTANCE ITAR_BauBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BauBabe_M (C_Item)
 {
-	name 					=	"Женская фермерская одежда 2" ;
+	name 					=	"Р–РµРЅСЃРєР°СЏ С„РµСЂРјРµСЂСЃРєР°СЏ РѕРґРµР¶РґР° 2" ;
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -834,7 +834,7 @@ INSTANCE ITAR_BauBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_SLD_L (C_Item)
 {
-	name 					=	"Легкие доспехи наемника";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё РЅР°РµРјРЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -910,7 +910,7 @@ FUNC VOID UnEquip_ITAR_SLD_L()
 // ******************************************************
 INSTANCE ITAR_SLD_M (C_Item)
 {
-	name 					=	"Средние доспехи наемника";
+	name 					=	"РЎСЂРµРґРЅРёРµ РґРѕСЃРїРµС…Рё РЅР°РµРјРЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -985,7 +985,7 @@ FUNC VOID UnEquip_ITAR_SLD_M()
 // ******************************************************
 INSTANCE ITAR_SLD_H (C_Item)
 {
-	name 					=	"Тяжелые доспехи наемника";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РЅР°РµРјРЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1056,7 +1056,7 @@ FUNC VOID UnEquip_ITAR_SLD_H()
 // ******************************************************
 INSTANCE ITAR_DJG_Crawler (C_Item)
 {
-	name 					=	"Доспехи из панцирей краулеров";
+	name 					=	"Р”РѕСЃРїРµС…Рё РёР· РїР°РЅС†РёСЂРµР№ РєСЂР°СѓР»РµСЂРѕРІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1131,7 +1131,7 @@ FUNC VOID UnEquip_ITAR_DJG_Crawler()
 // ******************************************************
 INSTANCE ITAR_DJG_L (C_Item)
 {
-	name 					=	"Легкие доспехи охотника на драконов";
+	name 					=	"Р›РµРіРєРёРµ РґРѕСЃРїРµС…Рё РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1171,7 +1171,7 @@ INSTANCE ITAR_DJG_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_M (C_Item)
 {
-	name 					=	"Средние доспехи охотника на драконов";
+	name 					=	"РЎСЂРµРґРЅРёРµ РґРѕСЃРїРµС…Рё РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1211,7 +1211,7 @@ INSTANCE ITAR_DJG_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_H (C_Item)
 {
-	name 					=	"Тяжелые доспехи охотника на драконов";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1251,7 +1251,7 @@ INSTANCE ITAR_DJG_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_BABE (C_Item)
 {
-	name 					=	"Женские доспехи охотника на драконов";
+	name 					=	"Р–РµРЅСЃРєРёРµ РґРѕСЃРїРµС…Рё РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1291,7 +1291,7 @@ INSTANCE ITAR_DJG_BABE (C_Item)
 // ******************************************************
 INSTANCE ITAR_NOV_L (C_Item)
 {
-	name 					=	"Роба послушника";
+	name 					=	"Р РѕР±Р° РїРѕСЃР»СѓС€РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1367,7 +1367,7 @@ FUNC VOID UnEquip_ITAR_NOV_L()
 // ******************************************************
 INSTANCE ITAR_KDF_L (C_Item)
 {
-	name 					=	"Мантия мага огня";
+	name 					=	"РњР°РЅС‚РёСЏ РјР°РіР° РѕРіРЅСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1442,7 +1442,7 @@ FUNC VOID UnEquip_ITAR_KDF_L()
 // ******************************************************
 INSTANCE ITAR_KDF_H (C_Item)
 {
-	name 					=	"Тяжелая огненная мантия";
+	name 					=	"РўСЏР¶РµР»Р°СЏ РѕРіРЅРµРЅРЅР°СЏ РјР°РЅС‚РёСЏ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1517,7 +1517,7 @@ FUNC VOID UnEquip_ITAR_KDF_H()
 // ******************************************************
 INSTANCE ITAR_Leather_L (C_Item)
 {
-	name 					=	"Кожаные доспехи";
+	name 					=	"РљРѕР¶Р°РЅС‹Рµ РґРѕСЃРїРµС…Рё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ FUNC VOID Equip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = TRUE;	
 	
-		if (Leather01_Equipped == TRUE) //Ledergьrtel
+		if (Leather01_Equipped == TRUE) //LedergСЊrtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1575,7 +1575,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = FALSE;	
 	
-		if (Leather01_Equipped == TRUE) //Ledergьrtel
+		if (Leather01_Equipped == TRUE) //LedergСЊrtel
 		{
 			self.protection[PROT_EDGE] 	-= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -1588,7 +1588,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 // ******************************************************
 INSTANCE ITAR_BDT_M (C_Item)
 {
-	name 					=	"Средние доспехи бандита";
+	name 					=	"РЎСЂРµРґРЅРёРµ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1629,7 +1629,7 @@ INSTANCE ITAR_BDT_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BDT_H (C_Item)
 {
-	name 					=	"Тяжелые доспехи бандита";
+	name 					=	"РўСЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚Р°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1670,7 +1670,7 @@ INSTANCE ITAR_BDT_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_XARDAS (C_Item)
 {
-	name 					=	"Мантия черной магии";
+	name 					=	"РњР°РЅС‚РёСЏ С‡РµСЂРЅРѕР№ РјР°РіРёРё";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1706,7 +1706,7 @@ INSTANCE ITAR_XARDAS (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_LESTER (C_Item)
 {
-	name 					=	"Роба Лестера";
+	name 					=	"Р РѕР±Р° Р›РµСЃС‚РµСЂР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1746,7 +1746,7 @@ INSTANCE ITAR_LESTER (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_Diego (C_Item)
 {
-	name 					=	"Доспехи Диего";
+	name 					=	"Р”РѕСЃРїРµС…Рё Р”РёРµРіРѕ";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1786,7 +1786,7 @@ INSTANCE ITAR_Diego (C_Item)
 /******************************************************************************************/
 INSTANCE ITAR_CorAngar (C_Item)
 {
-	name 					=	"Доспехи Ангара";
+	name 					=	"Р”РѕСЃРїРµС…Рё РђРЅРіР°СЂР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1826,7 +1826,7 @@ INSTANCE ITAR_CorAngar (C_Item)
 // ******************************************************
 INSTANCE ITAR_Dementor (C_Item)
 {
-	name 					=	"Мантия тьмы";
+	name 					=	"РњР°РЅС‚РёСЏ С‚СЊРјС‹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1862,7 +1862,7 @@ INSTANCE ITAR_Dementor (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDW_H (C_Item)
 {
-	name 					=	"Мантия мага воды";
+	name 					=	"РњР°РЅС‚РёСЏ РјР°РіР° РІРѕРґС‹";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1902,7 +1902,7 @@ INSTANCE ITAR_KDW_H (C_Item)
 // ******************************************************
 instance ITAR_Prisoner (C_Item)
 {
-	name 					=	"Одежда каторжника";
+	name 					=	"РћРґРµР¶РґР° РєР°С‚РѕСЂР¶РЅРёРєР°";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

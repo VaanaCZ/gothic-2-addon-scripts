@@ -21,13 +21,13 @@ func int C_WantToAttackMurder (var C_NPC slf, var C_NPC oth)
 		return FALSE;
 	};
 	
-	// ------ Täter war Player und ich bin NPCType_Friend ------
+	// ------ TÐ´ter war Player und ich bin NPCType_Friend ------
 	if ( Npc_IsPlayer(oth) && (slf.npctype == NPCTYPE_FRIEND) )
 	{
 		return FALSE;
 	};
 	
-	// ------ Mörder hat guten Grund zu töten ------
+	// ------ MÑ†rder hat guten Grund zu tÑ†ten ------
 	if (C_NpcHasAttackReasonToKill(oth))
 	{
 		return FALSE;

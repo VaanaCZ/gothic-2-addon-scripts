@@ -1,7 +1,7 @@
 instance BDT_1096_Addon_Lennar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Леннар";
+	name 		= "Р›РµРЅРЅР°СЂ";
 	guild 		= GIL_BDT;
 	id 			= 1096;
 	voice 		= 1;

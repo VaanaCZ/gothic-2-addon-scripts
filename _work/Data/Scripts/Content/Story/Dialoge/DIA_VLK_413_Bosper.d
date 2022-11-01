@@ -40,12 +40,12 @@ func int DIA_Bosper_HALLO_Condition ()
 };
 func void DIA_Bosper_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_00"); //Добро пожаловать в мою лавку, чужеземец!
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_01"); //Я Боспер. Я делаю луки и торгую шкурами.
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_02"); //Что привело тебя в Хоринис?
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ РјРѕСЋ Р»Р°РІРєСѓ, С‡СѓР¶РµР·РµРјРµС†!
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_01"); //РЇ Р‘РѕСЃРїРµСЂ. РЇ РґРµР»Р°СЋ Р»СѓРєРё Рё С‚РѕСЂРіСѓСЋ С€РєСѓСЂР°РјРё.
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_02"); //Р§С‚Рѕ РїСЂРёРІРµР»Рѕ С‚РµР±СЏ РІ РҐРѕСЂРёРЅРёСЃ?
 	
 	Log_CreateTopic	(TOPIC_CityTrader,LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader,"Боспер делает луки и торгует шкурами. Его лавка находится у восточных ворот, в нижней части города.");
+	B_LogEntry (TOPIC_CityTrader,"Р‘РѕСЃРїРµСЂ РґРµР»Р°РµС‚ Р»СѓРєРё Рё С‚РѕСЂРіСѓРµС‚ С€РєСѓСЂР°РјРё. Р•РіРѕ Р»Р°РІРєР° РЅР°С…РѕРґРёС‚СЃСЏ Сѓ РІРѕСЃС‚РѕС‡РЅС‹С… РІРѕСЂРѕС‚, РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.");
 };
 
 // ***********************************************************
@@ -58,7 +58,7 @@ instance DIA_Bosper_IntoOV		(C_INFO)
 	condition	= DIA_Bosper_IntoOV_Condition;
 	information = DIA_Bosper_IntoOV_Info;
 	permanent   = FALSE;
-	description = "Мне нужно попасть в верхний квартал...";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»...";
 };
 func int DIA_Bosper_IntoOV_Condition ()
 {	
@@ -70,18 +70,18 @@ func int DIA_Bosper_IntoOV_Condition ()
 };
 func void DIA_Bosper_IntoOV_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_IntoOV_15_00"); //Мне нужно попасть в верхний квартал...
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_01"); //Где живут паладины? Забудь об этом.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_02"); //Тебе нужно быть уважаемым гражданином или, хотя бы, иметь приличную работу.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_03"); //А чужаку вроде тебя ни за что туда не попасть.
+	AI_Output (other, self, "DIA_Bosper_IntoOV_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»...
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_01"); //Р“РґРµ Р¶РёРІСѓС‚ РїР°Р»Р°РґРёРЅС‹? Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_02"); //РўРµР±Рµ РЅСѓР¶РЅРѕ Р±С‹С‚СЊ СѓРІР°Р¶Р°РµРјС‹Рј РіСЂР°Р¶РґР°РЅРёРЅРѕРј РёР»Рё, С…РѕС‚СЏ Р±С‹, РёРјРµС‚СЊ РїСЂРёР»РёС‡РЅСѓСЋ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_03"); //Рђ С‡СѓР¶Р°РєСѓ РІСЂРѕРґРµ С‚РµР±СЏ РЅРё Р·Р° С‡С‚Рѕ С‚СѓРґР° РЅРµ РїРѕРїР°СЃС‚СЊ.
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Bosper_IntoOV_15_04"); //Я это заметил...
+		AI_Output (other, self, "DIA_Bosper_IntoOV_15_04"); //РЇ СЌС‚Рѕ Р·Р°РјРµС‚РёР»...
 	};
 
 	Log_CreateTopic (TOPIC_OV,LOG_MISSION);
 	Log_SetTopicStatus	(TOPIC_OV,LOG_RUNNING);
-	B_LogEntry (TOPIC_OV,"Чтобы попасть в верхний квартал, я либо должен стать уважаемым гражданином, либо получить работу.");
+	B_LogEntry (TOPIC_OV,"Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р», СЏ Р»РёР±Рѕ РґРѕР»Р¶РµРЅ СЃС‚Р°С‚СЊ СѓРІР°Р¶Р°РµРјС‹Рј РіСЂР°Р¶РґР°РЅРёРЅРѕРј, Р»РёР±Рѕ РїРѕР»СѓС‡РёС‚СЊ СЂР°Р±РѕС‚Сѓ.");
 };
 
 // ***********************************************************
@@ -94,7 +94,7 @@ instance DIA_Bosper_SeekWork		(C_INFO)
 	condition	= DIA_Bosper_SeekWork_Condition;
 	information = DIA_Bosper_SeekWork_Info;
 	permanent   = FALSE;
-	description = "Я ищу работу!";
+	description = "РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ!";
 };
 func int DIA_Bosper_SeekWork_Condition ()
 {	
@@ -102,23 +102,23 @@ func int DIA_Bosper_SeekWork_Condition ()
 };
 func void DIA_Bosper_SeekWork_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_SeekWork_15_00"); //Я ищу работу!
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_01"); //Ммм - мне не помешал бы новый ученик.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_02"); //Последний, что у меня был, бросил свою работу пару дней назад.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_03"); //Ты что-нибудь знаешь об охоте, а?
+	AI_Output (other, self, "DIA_Bosper_SeekWork_15_00"); //РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ!
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_01"); //РњРјРј - РјРЅРµ РЅРµ РїРѕРјРµС€Р°Р» Р±С‹ РЅРѕРІС‹Р№ СѓС‡РµРЅРёРє.
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_02"); //РџРѕСЃР»РµРґРЅРёР№, С‡С‚Рѕ Сѓ РјРµРЅСЏ Р±С‹Р», Р±СЂРѕСЃРёР» СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ РїР°СЂСѓ РґРЅРµР№ РЅР°Р·Р°Рґ.
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_03"); //РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ РѕР± РѕС…РѕС‚Рµ, Р°?
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (other, self, "DIA_Bosper_SeekWork_15_04"); //Нуууу...
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_05"); //Я мог бы научить тебя снимать шкуры с животных.
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_06"); //Я буду хорошо платить тебе за каждую шкуру, что ты принесешь мне.
+		AI_Output (other, self, "DIA_Bosper_SeekWork_15_04"); //РќСѓСѓСѓСѓ...
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_05"); //РЇ РјРѕРі Р±С‹ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С….
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_06"); //РЇ Р±СѓРґСѓ С…РѕСЂРѕС€Рѕ РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ Р·Р° РєР°Р¶РґСѓСЋ С€РєСѓСЂСѓ, С‡С‚Рѕ С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Bosper_SeekWork_15_07"); //Я могу дать тебе несколько шкур, если ты это имел в виду.
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_08"); //Превосходно! Приноси мне все шкуры, что тебе удастся добыть - я куплю их у тебя по очень хорошей цене.
+		AI_Output (other, self, "DIA_Bosper_SeekWork_15_07"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ С€РєСѓСЂ, РµСЃР»Рё С‚С‹ СЌС‚Рѕ РёРјРµР» РІ РІРёРґСѓ.
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_08"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ! РџСЂРёРЅРѕСЃРё РјРЅРµ РІСЃРµ С€РєСѓСЂС‹, С‡С‚Рѕ С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ РґРѕР±С‹С‚СЊ - СЏ РєСѓРїР»СЋ РёС… Сѓ С‚РµР±СЏ РїРѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РµР№ С†РµРЅРµ.
 	};
 	
-  B_LogEntry (TOPIC_Lehrling,"Боспер ищет нового ученика. Я могу начать работать у него.");	
+  B_LogEntry (TOPIC_Lehrling,"Р‘РѕСЃРїРµСЂ РёС‰РµС‚ РЅРѕРІРѕРіРѕ СѓС‡РµРЅРёРєР°. РЇ РјРѕРіСѓ РЅР°С‡Р°С‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ Сѓ РЅРµРіРѕ.");	
  
 };
 
@@ -137,7 +137,7 @@ instance DIA_Bosper_LEHRLING		(C_INFO)
 	condition	= DIA_Bosper_LEHRLING_Condition;
 	information = DIA_Bosper_LEHRLING_Info;
 	permanent   = TRUE;
-	description = "Я хочу стать твоим учеником!";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј!";
 };
 func int DIA_Bosper_LEHRLING_Condition ()
 {	
@@ -152,12 +152,12 @@ func void DIA_Bosper_LEHRLING_Info ()
 	var int stimmen;
 	stimmen = 0;
 	
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_15_00"); //Я хочу стать твоим учеником!
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј!
 
 	if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
 		// ------ Bosper ------
-		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_01"); //(ухмыляется) Отлично! Похоже, ты уже знаешь основы.
+		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_01"); //(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РћС‚Р»РёС‡РЅРѕ! РџРѕС…РѕР¶Рµ, С‚С‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РѕСЃРЅРѕРІС‹.
 		stimmen = stimmen + 1;
 		
 		// ------ Harad ------
@@ -166,17 +166,17 @@ func void DIA_Bosper_LEHRLING_Info ()
 			if (MIS_Harad_Orc == LOG_SUCCESS)
 			|| (MIS_HakonBandits == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_02"); //Гарад считает, что ты хороший человек.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_02"); //Р“Р°СЂР°Рґ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ С‚С‹ С…РѕСЂРѕС€РёР№ С‡РµР»РѕРІРµРє.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_03"); //Но Гарад пока не уверен в твоих способностях.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_03"); //РќРѕ Р“Р°СЂР°Рґ РїРѕРєР° РЅРµ СѓРІРµСЂРµРЅ РІ С‚РІРѕРёС… СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЏС….
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_04"); //Но Гарад говорит, что никогда не видел тебя.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_04"); //РќРѕ Р“Р°СЂР°Рґ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С‚РµР±СЏ.
 		};
 		
 		// ------ Thorben ------
@@ -184,17 +184,17 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_05"); //Торбен дает тебе свое благословение. Я не так набожен, как он, но все же это хорошо.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_05"); //РўРѕСЂР±РµРЅ РґР°РµС‚ С‚РµР±Рµ СЃРІРѕРµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ. РЇ РЅРµ С‚Р°Рє РЅР°Р±РѕР¶РµРЅ, РєР°Рє РѕРЅ, РЅРѕ РІСЃРµ Р¶Рµ СЌС‚Рѕ С…РѕСЂРѕС€Рѕ.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_06"); //Торбен даст тебе свое одобрение только с благословения богов.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_06"); //РўРѕСЂР±РµРЅ РґР°СЃС‚ С‚РµР±Рµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ С‚РѕР»СЊРєРѕ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ Р±РѕРіРѕРІ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_07"); //Торбен понятия не имеет, кто ты такой.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_07"); //РўРѕСЂР±РµРЅ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµРµС‚, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№.
 		};
 		
 		// ------ Constantino ------
@@ -202,18 +202,18 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_08"); //Константино говорит, что ты можешь стать учеником кого захочешь.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_08"); //РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РєРѕРіРѕ Р·Р°С…РѕС‡РµС€СЊ.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_09"); //Константино говорит, что ты обвиняешься в преступлении в городе - надеюсь, это какая-нибудь ерунда?
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_10"); //Позаботься, чтобы этот вопрос был улажен.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_09"); //РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ РІ РїСЂРµСЃС‚СѓРїР»РµРЅРёРё РІ РіРѕСЂРѕРґРµ - РЅР°РґРµСЋСЃСЊ, СЌС‚Рѕ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ РµСЂСѓРЅРґР°?
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_10"); //РџРѕР·Р°Р±РѕС‚СЊСЃСЏ, С‡С‚РѕР±С‹ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ Р±С‹Р» СѓР»Р°Р¶РµРЅ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_11"); //Константино никогда даже не слышал о тебе.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_11"); //РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РЅРёРєРѕРіРґР° РґР°Р¶Рµ РЅРµ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ.
 		};
 				
 		// ------ Matteo ------
@@ -221,21 +221,21 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_12"); //Маттео говорит, что ты стоишь столько же, сколько золото равное твоему весу.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_12"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ СЃС‚РѕРёС€СЊ СЃС‚РѕР»СЊРєРѕ Р¶Рµ, СЃРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚Рѕ СЂР°РІРЅРѕРµ С‚РІРѕРµРјСѓ РІРµСЃСѓ.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_13"); //Маттео упомянул о каких-то долгах - я не знаю, что он имеет в виду, но тебе лучше поговорить с ним.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_13"); //РњР°С‚С‚РµРѕ СѓРїРѕРјСЏРЅСѓР» Рѕ РєР°РєРёС…-С‚Рѕ РґРѕР»РіР°С… - СЏ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅ РёРјРµРµС‚ РІ РІРёРґСѓ, РЅРѕ С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРј.
 			}
 			else	
 			{	
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_14"); //Маттео говорит, что еще не говорил с тобой об этом.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_14"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РµС‰Рµ РЅРµ РіРѕРІРѕСЂРёР» СЃ С‚РѕР±РѕР№ РѕР± СЌС‚РѕРј.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_15"); //Маттео говорит, что никогда не видел тебя.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_15"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С‚РµР±СЏ.
 		};		
 
 		// ------ AUSWERTUNG ------
@@ -243,32 +243,32 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_16"); //Это означает, что ты получил одобрение всех мастеров!
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_16"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёР» РѕРґРѕР±СЂРµРЅРёРµ РІСЃРµС… РјР°СЃС‚РµСЂРѕРІ!
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_17"); //Ты получил одобрение четырех мастеров. Этого достаточно, чтобы быть принятым в ученики.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_17"); //РўС‹ РїРѕР»СѓС‡РёР» РѕРґРѕР±СЂРµРЅРёРµ С‡РµС‚С‹СЂРµС… РјР°СЃС‚РµСЂРѕРІ. Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ СѓС‡РµРЅРёРєРё.
 			};
 			
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_18"); //Ты можешь начать работать на меня когда только захочешь.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_18"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°С‡Р°С‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ РєРѕРіРґР° С‚РѕР»СЊРєРѕ Р·Р°С…РѕС‡РµС€СЊ.
 			
 			Info_ClearChoices (DIA_Bosper_LEHRLING);
-			Info_AddChoice (DIA_Bosper_LEHRLING, "Хорошо - я подумаю над этим.", DIA_Bosper_LEHRLING_Later);
-			Info_AddChoice (DIA_Bosper_LEHRLING, "Я готов стать твоим учеником!", DIA_Bosper_LEHRLING_OK);
+			Info_AddChoice (DIA_Bosper_LEHRLING, "РҐРѕСЂРѕС€Рѕ - СЏ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.", DIA_Bosper_LEHRLING_Later);
+			Info_AddChoice (DIA_Bosper_LEHRLING, "РЇ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј!", DIA_Bosper_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_19"); //Тебе нужно получить одобрение хотя бы четырех мастеров. Без этого ты не сможешь стать учеником в нижней части города.
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_20"); //Это означает, что ты должен поговорить со всеми, кто еще сомневается в тебе.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_19"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ С…РѕС‚СЏ Р±С‹ С‡РµС‚С‹СЂРµС… РјР°СЃС‚РµСЂРѕРІ. Р‘РµР· СЌС‚РѕРіРѕ С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_20"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РІСЃРµРјРё, РєС‚Рѕ РµС‰Рµ СЃРѕРјРЅРµРІР°РµС‚СЃСЏ РІ С‚РµР±Рµ.
 		};
 	}
 	else //keine WolfFurs
 	{
-		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_21"); //Прежде чем взять тебя к себе, я должен сначала понять, годен ли ты вообще хоть на что-то.
+		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_21"); //РџСЂРµР¶РґРµ С‡РµРј РІР·СЏС‚СЊ С‚РµР±СЏ Рє СЃРµР±Рµ, СЏ РґРѕР»Р¶РµРЅ СЃРЅР°С‡Р°Р»Р° РїРѕРЅСЏС‚СЊ, РіРѕРґРµРЅ Р»Рё С‚С‹ РІРѕРѕР±С‰Рµ С…РѕС‚СЊ РЅР° С‡С‚Рѕ-С‚Рѕ.
 		
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_LEHRLING_11_22"); //Ты вернул назад мой лук, но это ничего не говорит о твоем таланте охотника.
+			AI_Output (self, other, "DIA_Bosper_LEHRLING_11_22"); //РўС‹ РІРµСЂРЅСѓР» РЅР°Р·Р°Рґ РјРѕР№ Р»СѓРє, РЅРѕ СЌС‚Рѕ РЅРёС‡РµРіРѕ РЅРµ РіРѕРІРѕСЂРёС‚ Рѕ С‚РІРѕРµРј С‚Р°Р»Р°РЅС‚Рµ РѕС…РѕС‚РЅРёРєР°.
 		};
 		Bosper_HintToJob = TRUE;
 	};	
@@ -276,8 +276,8 @@ func void DIA_Bosper_LEHRLING_Info ()
 
 func void DIA_Bosper_LEHRLING_OK()
 {
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //Я готов стать твоим учеником!
-	AI_Output (self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //Ты не пожалеешь об этом! Думаю, мы сработаемся.
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //РЇ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј!
+	AI_Output (self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //РўС‹ РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј! Р”СѓРјР°СЋ, РјС‹ СЃСЂР°Р±РѕС‚Р°РµРјСЃСЏ.
 	
 	Player_IsApprentice = APP_BOSPER;
 	Npc_ExchangeRoutine (Lothar, "START");
@@ -288,15 +288,15 @@ func void DIA_Bosper_LEHRLING_OK()
 	Wld_AssignRoomToGuild ("gritta", GIL_NONE);	// = Bospers Ladem
 	MIS_Apprentice = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_Bonus,"Боспер принял меня в ученики. Теперь я смогу попасть в верхний квартал.");
+	B_LogEntry (Topic_Bonus,"Р‘РѕСЃРїРµСЂ РїСЂРёРЅСЏР» РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё. РўРµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».");
 	
 	Info_ClearChoices (DIA_Bosper_LEHRLING);
 };
 
 func void DIA_Bosper_LEHRLING_Later()
 {
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //Хорошо - я подумаю над этим.
-	AI_Output (self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Смотри, не прими ошибочного решения! Ты лучше всего подходишь именно для моей работы.
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //РҐРѕСЂРѕС€Рѕ - СЏ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
+	AI_Output (self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //РЎРјРѕС‚СЂРё, РЅРµ РїСЂРёРјРё РѕС€РёР±РѕС‡РЅРѕРіРѕ СЂРµС€РµРЅРёСЏ! РўС‹ Р»СѓС‡С€Рµ РІСЃРµРіРѕ РїРѕРґС…РѕРґРёС€СЊ РёРјРµРЅРЅРѕ РґР»СЏ РјРѕРµР№ СЂР°Р±РѕС‚С‹.
 	
 	Info_ClearChoices (DIA_Bosper_LEHRLING);
 };
@@ -312,7 +312,7 @@ instance DIA_Bosper_OtherMasters (C_INFO)
 	condition	= DIA_Bosper_OtherMasters_Condition;
 	information = DIA_Bosper_OtherMasters_Info;
 	permanent   = FALSE;
-	description = "А что если я захочу поступить в ученики к другому мастеру?";
+	description = "Рђ С‡С‚Рѕ РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё Рє РґСЂСѓРіРѕРјСѓ РјР°СЃС‚РµСЂСѓ?";
 };
 func int DIA_Bosper_OtherMasters_Condition ()
 {	
@@ -324,13 +324,13 @@ func int DIA_Bosper_OtherMasters_Condition ()
 };
 func void DIA_Bosper_OtherMasters_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_OtherMasters_15_00"); //А что если я захочу поступить в ученики к другому мастеру?
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_01"); //(раздраженно) Бред!
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_02"); //Гарад и Маттео уже имеют учеников.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_03"); //Алхимик Константино - одинокий волк. У него не было ученика уже многие годы.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_04"); //А что касается Торбена - все знают, что он обанкротился. Он, вероятно, даже не сможет платить тебе.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_05"); //А мне вот, например, очень нужен ученик. И плачу я хорошо.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_06"); //Но не важно, чьим учеником ты хочешь стать - тебе понадобится одобрение всех мастеров из нижней части города...
+	AI_Output (other, self, "DIA_Bosper_OtherMasters_15_00"); //Рђ С‡С‚Рѕ РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё Рє РґСЂСѓРіРѕРјСѓ РјР°СЃС‚РµСЂСѓ?
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р‘СЂРµРґ!
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_02"); //Р“Р°СЂР°Рґ Рё РњР°С‚С‚РµРѕ СѓР¶Рµ РёРјРµСЋС‚ СѓС‡РµРЅРёРєРѕРІ.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_03"); //РђР»С…РёРјРёРє РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ - РѕРґРёРЅРѕРєРёР№ РІРѕР»Рє. РЈ РЅРµРіРѕ РЅРµ Р±С‹Р»Рѕ СѓС‡РµРЅРёРєР° СѓР¶Рµ РјРЅРѕРіРёРµ РіРѕРґС‹.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_04"); //Рђ С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РўРѕСЂР±РµРЅР° - РІСЃРµ Р·РЅР°СЋС‚, С‡С‚Рѕ РѕРЅ РѕР±Р°РЅРєСЂРѕС‚РёР»СЃСЏ. РћРЅ, РІРµСЂРѕСЏС‚РЅРѕ, РґР°Р¶Рµ РЅРµ СЃРјРѕР¶РµС‚ РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_05"); //Рђ РјРЅРµ РІРѕС‚, РЅР°РїСЂРёРјРµСЂ, РѕС‡РµРЅСЊ РЅСѓР¶РµРЅ СѓС‡РµРЅРёРє. Р РїР»Р°С‡Сѓ СЏ С…РѕСЂРѕС€Рѕ.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_06"); //РќРѕ РЅРµ РІР°Р¶РЅРѕ, С‡СЊРёРј СѓС‡РµРЅРёРєРѕРј С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ - С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РѕРґРѕР±СЂРµРЅРёРµ РІСЃРµС… РјР°СЃС‚РµСЂРѕРІ РёР· РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°...
 	
 	
 	
@@ -346,7 +346,7 @@ instance DIA_Bosper_Bartok (C_INFO)
 	condition	= DIA_Bosper_Bartok_Condition;
 	information = DIA_Bosper_Bartok_Info;
 	permanent   = FALSE;
-	description = "А почему твой ученик бросил работу?";
+	description = "Рђ РїРѕС‡РµРјСѓ С‚РІРѕР№ СѓС‡РµРЅРёРє Р±СЂРѕСЃРёР» СЂР°Р±РѕС‚Сѓ?";
 };
 func int DIA_Bosper_Bartok_Condition ()
 {	
@@ -357,11 +357,11 @@ func int DIA_Bosper_Bartok_Condition ()
 };
 func void DIA_Bosper_Bartok_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Bartok_15_00"); //А почему твой ученик бросил работу?
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_01"); //Как он сказал, последнее время охотиться стало слишком опасно.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_02"); //Если тебе это действительно интересно, ты можешь спросить его об этом сам.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_03"); //Его зовут Барток. Он, вероятно, ошивается где-то у таверны Корагона.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_04"); //Пройди через подземный проход у кузницы и окажешься прямо перед ним.
+	AI_Output (other, self, "DIA_Bosper_Bartok_15_00"); //Рђ РїРѕС‡РµРјСѓ С‚РІРѕР№ СѓС‡РµРЅРёРє Р±СЂРѕСЃРёР» СЂР°Р±РѕС‚Сѓ?
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_01"); //РљР°Рє РѕРЅ СЃРєР°Р·Р°Р», РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ СЃС‚Р°Р»Рѕ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_02"); //Р•СЃР»Рё С‚РµР±Рµ СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РёРЅС‚РµСЂРµСЃРЅРѕ, С‚С‹ РјРѕР¶РµС€СЊ СЃРїСЂРѕСЃРёС‚СЊ РµРіРѕ РѕР± СЌС‚РѕРј СЃР°Рј.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_03"); //Р•РіРѕ Р·РѕРІСѓС‚ Р‘Р°СЂС‚РѕРє. РћРЅ, РІРµСЂРѕСЏС‚РЅРѕ, РѕС€РёРІР°РµС‚СЃСЏ РіРґРµ-С‚Рѕ Сѓ С‚Р°РІРµСЂРЅС‹ РљРѕСЂР°РіРѕРЅР°.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_04"); //РџСЂРѕР№РґРё С‡РµСЂРµР· РїРѕРґР·РµРјРЅС‹Р№ РїСЂРѕС…РѕРґ Сѓ РєСѓР·РЅРёС†С‹ Рё РѕРєР°Р¶РµС€СЊСЃСЏ РїСЂСЏРјРѕ РїРµСЂРµРґ РЅРёРј.
 };
 
 // ***********************************************************
@@ -375,7 +375,7 @@ instance DIA_Bosper_ZUSTIMMUNG (C_INFO)
 	condition	= DIA_Bosper_ZUSTIMMUNG_Condition;
 	information = DIA_Bosper_ZUSTIMMUNG_Info;
 	permanent   = TRUE;
-	description = "Я получу твое одобрение на работу с другим мастером?";
+	description = "РЇ РїРѕР»СѓС‡Сѓ С‚РІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ РЅР° СЂР°Р±РѕС‚Сѓ СЃ РґСЂСѓРіРёРј РјР°СЃС‚РµСЂРѕРј?";
 };
 func int DIA_Bosper_ZUSTIMMUNG_Condition ()
 {	
@@ -390,36 +390,36 @@ var int Bosper_Zustimmung_Once;
 
 func void DIA_Bosper_ZUSTIMMUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //Я получу твое одобрение на работу с другим мастером?
+	AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //РЇ РїРѕР»СѓС‡Сѓ С‚РІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ РЅР° СЂР°Р±РѕС‚Сѓ СЃ РґСЂСѓРіРёРј РјР°СЃС‚РµСЂРѕРј?
 	if (MIS_Bosper_Bogen == LOG_SUCCESS)
 	|| (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //(разочарованно) Я надеялся, что ты выберешь меня.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //Но если ты решил так...
-		AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Это означает, что ты проголосуешь за меня?
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //Если никто больше из мастеров не будет возражать - то да.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //(СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅРЅРѕ) РЇ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ С‚С‹ РІС‹Р±РµСЂРµС€СЊ РјРµРЅСЏ.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //РќРѕ РµСЃР»Рё С‚С‹ СЂРµС€РёР» С‚Р°Рє...
+		AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РїСЂРѕРіРѕР»РѕСЃСѓРµС€СЊ Р·Р° РјРµРЅСЏ?
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //Р•СЃР»Рё РЅРёРєС‚Рѕ Р±РѕР»СЊС€Рµ РёР· РјР°СЃС‚РµСЂРѕРІ РЅРµ Р±СѓРґРµС‚ РІРѕР·СЂР°Р¶Р°С‚СЊ - С‚Рѕ РґР°.
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //Ты ведь все же вернул назад мой лук.
+			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //РўС‹ РІРµРґСЊ РІСЃРµ Р¶Рµ РІРµСЂРЅСѓР» РЅР°Р·Р°Рґ РјРѕР№ Р»СѓРє.
 		};
 		if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //Но из тебя бы получился такой хороший охотник!
+			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //РќРѕ РёР· С‚РµР±СЏ Р±С‹ РїРѕР»СѓС‡РёР»СЃСЏ С‚Р°РєРѕР№ С…РѕСЂРѕС€РёР№ РѕС…РѕС‚РЅРёРє!
 		};
 		if Bosper_Zustimmung_Once == FALSE
 		{
 			B_GivePlayerXP (XP_Zustimmung);
 			Bosper_Zustimmung_Once = TRUE;
 		};	
-		B_LogEntry (Topic_Lehrling,"Боспер даст мне свое одобрение, если я захочу стать учеником другого мастера.");
+		B_LogEntry (Topic_Lehrling,"Р‘РѕСЃРїРµСЂ РґР°СЃС‚ РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ, РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР°.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //(вздыхает) Хорошо! Ты получишь мое одобрение - но при одном условии.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Поработай на меня, хотя бы недолго.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //Таким образом, ты сможешь понять, нравится тебе мое ремесло или нет.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //И кто знает - может это тебе так понравится, что ты останешься со мной.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //Если ты достаточно хорош, чтобы стать МОИМ учеником, то ты также подойдешь и другим мастерам.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //(РІР·РґС‹С…Р°РµС‚) РҐРѕСЂРѕС€Рѕ! РўС‹ РїРѕР»СѓС‡РёС€СЊ РјРѕРµ РѕРґРѕР±СЂРµРЅРёРµ - РЅРѕ РїСЂРё РѕРґРЅРѕРј СѓСЃР»РѕРІРёРё.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //РџРѕСЂР°Р±РѕС‚Р°Р№ РЅР° РјРµРЅСЏ, С…РѕС‚СЏ Р±С‹ РЅРµРґРѕР»РіРѕ.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //РўР°РєРёРј РѕР±СЂР°Р·РѕРј, С‚С‹ СЃРјРѕР¶РµС€СЊ РїРѕРЅСЏС‚СЊ, РЅСЂР°РІРёС‚СЃСЏ С‚РµР±Рµ РјРѕРµ СЂРµРјРµСЃР»Рѕ РёР»Рё РЅРµС‚.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //Р РєС‚Рѕ Р·РЅР°РµС‚ - РјРѕР¶РµС‚ СЌС‚Рѕ С‚РµР±Рµ С‚Р°Рє РїРѕРЅСЂР°РІРёС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ СЃРѕ РјРЅРѕР№.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //Р•СЃР»Рё С‚С‹ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С…РѕСЂРѕС€, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РњРћРРњ СѓС‡РµРЅРёРєРѕРј, С‚Рѕ С‚С‹ С‚Р°РєР¶Рµ РїРѕРґРѕР№РґРµС€СЊ Рё РґСЂСѓРіРёРј РјР°СЃС‚РµСЂР°Рј.
 		Bosper_HintToJob = TRUE;
 	};	
 };
@@ -434,7 +434,7 @@ instance DIA_Bosper_Job (C_INFO)
 	condition	= DIA_Bosper_Job_Condition;
 	information = DIA_Bosper_Job_Info;
 	permanent   = FALSE;
-	description = "Что ты хочешь, чтобы я сделал для тебя?";
+	description = "Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СЃРґРµР»Р°Р» РґР»СЏ С‚РµР±СЏ?";
 };
 func int DIA_Bosper_Job_Condition ()
 {	
@@ -445,36 +445,36 @@ func int DIA_Bosper_Job_Condition ()
 };
 func void DIA_Bosper_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Job_15_00"); //Что ты хочешь, чтобы я сделал для тебя?
+	AI_Output (other, self, "DIA_Bosper_Job_15_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ СЃРґРµР»Р°Р» РґР»СЏ С‚РµР±СЏ?
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_01"); //Я научу тебя снимать шкуры с животных, и ты принесешь мне - скажем - полдюжины волчьих шкур.
+		AI_Output (self, other, "DIA_Bosper_Job_11_01"); //РЇ РЅР°СѓС‡Сѓ С‚РµР±СЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С…, Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ - СЃРєР°Р¶РµРј - РїРѕР»РґСЋР¶РёРЅС‹ РІРѕР»С‡СЊРёС… С€РєСѓСЂ.
 		
 		Log_CreateTopic (TOPIC_CityTeacher,LOG_NOTE);
-		B_LogEntry	(TOPIC_CityTeacher,"Боспер может обучить меня снимать шкуры с животных.");
+		B_LogEntry	(TOPIC_CityTeacher,"Р‘РѕСЃРїРµСЂ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С….");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_02"); //Принеси мне полдюжины волчьих шкур.
+		AI_Output (self, other, "DIA_Bosper_Job_11_02"); //РџСЂРёРЅРµСЃРё РјРЅРµ РїРѕР»РґСЋР¶РёРЅС‹ РІРѕР»С‡СЊРёС… С€РєСѓСЂ.
 	};
 	
-	AI_Output (self, other, "DIA_Bosper_Job_11_03"); //Тогда я пойму, что ты освоил это ремесло.
-	AI_Output (self, other, "DIA_Bosper_Job_11_04"); //Если только у тебя не уйдет на это целая вечность, и если шкуры будут в приемлемом состоянии. И тогда я возьму тебя к себе, если ты захочешь.
+	AI_Output (self, other, "DIA_Bosper_Job_11_03"); //РўРѕРіРґР° СЏ РїРѕР№РјСѓ, С‡С‚Рѕ С‚С‹ РѕСЃРІРѕРёР» СЌС‚Рѕ СЂРµРјРµСЃР»Рѕ.
+	AI_Output (self, other, "DIA_Bosper_Job_11_04"); //Р•СЃР»Рё С‚РѕР»СЊРєРѕ Сѓ С‚РµР±СЏ РЅРµ СѓР№РґРµС‚ РЅР° СЌС‚Рѕ С†РµР»Р°СЏ РІРµС‡РЅРѕСЃС‚СЊ, Рё РµСЃР»Рё С€РєСѓСЂС‹ Р±СѓРґСѓС‚ РІ РїСЂРёРµРјР»РµРјРѕРј СЃРѕСЃС‚РѕСЏРЅРёРё. Р С‚РѕРіРґР° СЏ РІРѕР·СЊРјСѓ С‚РµР±СЏ Рє СЃРµР±Рµ, РµСЃР»Рё С‚С‹ Р·Р°С…РѕС‡РµС€СЊ.
 	if (Npc_KnowsInfo(other, DIA_Bosper_OtherMasters))
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_05"); //Или (вздыхает) ты сможешь стать учеником другого мастера - если ты этого действительно хочешь.
+		AI_Output (self, other, "DIA_Bosper_Job_11_05"); //РР»Рё (РІР·РґС‹С…Р°РµС‚) С‚С‹ СЃРјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР° - РµСЃР»Рё С‚С‹ СЌС‚РѕРіРѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‡РµС€СЊ.
 	};
 	
 	MIS_Bosper_WolfFurs = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_BosperWolf,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperWolf,LOG_RUNNING);
-	B_LogEntry (TOPIC_BosperWolf,"Я должен принести Босперу шесть волчьих шкур. Тогда я смогу либо работать на него, либо получу его одобрение на работу с другими мастерами.");
+	B_LogEntry (TOPIC_BosperWolf,"РЇ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё Р‘РѕСЃРїРµСЂСѓ С€РµСЃС‚СЊ РІРѕР»С‡СЊРёС… С€РєСѓСЂ. РўРѕРіРґР° СЏ СЃРјРѕРіСѓ Р»РёР±Рѕ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РЅРµРіРѕ, Р»РёР±Рѕ РїРѕР»СѓС‡Сѓ РµРіРѕ РѕРґРѕР±СЂРµРЅРёРµ РЅР° СЂР°Р±РѕС‚Сѓ СЃ РґСЂСѓРіРёРјРё РјР°СЃС‚РµСЂР°РјРё.");
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		B_LogEntry (TOPIC_BosperWolf,"Я должен попросить его обучить меня снимать шкуры с животных.");
+		B_LogEntry (TOPIC_BosperWolf,"РЇ РґРѕР»Р¶РµРЅ РїРѕРїСЂРѕСЃРёС‚СЊ РµРіРѕ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С….");
 	};
 };
 
@@ -488,7 +488,7 @@ instance DIA_Bosper_BringFur (C_INFO)
 	condition	= DIA_Bosper_BringFur_Condition;
 	information = DIA_Bosper_BringFur_Info;
 	permanent   = TRUE;
-	description = "Насчет волчьих шкур...";
+	description = "РќР°СЃС‡РµС‚ РІРѕР»С‡СЊРёС… С€РєСѓСЂ...";
 };
 func int DIA_Bosper_BringFur_Condition ()
 {	
@@ -499,29 +499,29 @@ func int DIA_Bosper_BringFur_Condition ()
 };
 func void DIA_Bosper_BringFur_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_BringFur_15_00"); //Насчет волчьих шкур...
+	AI_Output (other, self, "DIA_Bosper_BringFur_15_00"); //РќР°СЃС‡РµС‚ РІРѕР»С‡СЊРёС… С€РєСѓСЂ...
 	
 	if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_01"); //Ты уже стал учеником другого мастера. Я буду покупать у тебя шкуры по обычной цене.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_01"); //РўС‹ СѓР¶Рµ СЃС‚Р°Р» СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР°. РЇ Р±СѓРґСѓ РїРѕРєСѓРїР°С‚СЊ Сѓ С‚РµР±СЏ С€РєСѓСЂС‹ РїРѕ РѕР±С‹С‡РЅРѕР№ С†РµРЅРµ.
 		MIS_Bosper_WolfFurs = LOG_OBSOLETE;
 		return;
 	};
 	
 	if (B_GiveInvItems (other, self, ItAt_WolfFur, 6))		
 	{
-		AI_Output (other, self, "DIA_Bosper_BringFur_15_02"); //Я принес их - вот.
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_03"); //Отлично! Я знал, что ты подходишь для этой работы.
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_04"); //Вот деньги, как я и обещал тебе.
+		AI_Output (other, self, "DIA_Bosper_BringFur_15_02"); //РЇ РїСЂРёРЅРµСЃ РёС… - РІРѕС‚.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_03"); //РћС‚Р»РёС‡РЅРѕ! РЇ Р·РЅР°Р», С‡С‚Рѕ С‚С‹ РїРѕРґС…РѕРґРёС€СЊ РґР»СЏ СЌС‚РѕР№ СЂР°Р±РѕС‚С‹.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_04"); //Р’РѕС‚ РґРµРЅСЊРіРё, РєР°Рє СЏ Рё РѕР±РµС‰Р°Р» С‚РµР±Рµ.
 		B_GiveInvItems (self, other, itmi_gold, (Value_WolfFur * 6));
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_05"); //И? Что скажешь? Разве это не лучше, чем корпеть над мечами день напролет или наполнять бутылочки в пыльной каморке?
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_05"); //Р? Р§С‚Рѕ СЃРєР°Р¶РµС€СЊ? Р Р°Р·РІРµ СЌС‚Рѕ РЅРµ Р»СѓС‡С€Рµ, С‡РµРј РєРѕСЂРїРµС‚СЊ РЅР°Рґ РјРµС‡Р°РјРё РґРµРЅСЊ РЅР°РїСЂРѕР»РµС‚ РёР»Рё РЅР°РїРѕР»РЅСЏС‚СЊ Р±СѓС‚С‹Р»РѕС‡РєРё РІ РїС‹Р»СЊРЅРѕР№ РєР°РјРѕСЂРєРµ?
 		
 		MIS_Bosper_WolfFurs = LOG_SUCCESS;
-		B_LogEntry (Topic_Lehrling,"Боспер примет меня в ученики, если другие мастера не будут против.");
+		B_LogEntry (Topic_Lehrling,"Р‘РѕСЃРїРµСЂ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё, РµСЃР»Рё РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° РЅРµ Р±СѓРґСѓС‚ РїСЂРѕС‚РёРІ.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_06"); //Мы договорились на полдюжины - но у тебя еще есть время. Иди и добудь эти шкуры.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_06"); //РњС‹ РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ РЅР° РїРѕР»РґСЋР¶РёРЅС‹ - РЅРѕ Сѓ С‚РµР±СЏ РµС‰Рµ РµСЃС‚СЊ РІСЂРµРјСЏ. РРґРё Рё РґРѕР±СѓРґСЊ СЌС‚Рё С€РєСѓСЂС‹.
 	};
 
 };
@@ -536,7 +536,7 @@ instance DIA_Bosper_TeachFUR (C_INFO)
 	condition	= DIA_Bosper_TeachFUR_Condition;
 	information = DIA_Bosper_TeachFUR_Info;
 	permanent   = TRUE;
-	description = "Научи меня снимать шкуры с животных! (5 LP)";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С…! (5 LP)";
 };
 func int DIA_Bosper_TeachFUR_Condition ()
 {	
@@ -548,16 +548,16 @@ func int DIA_Bosper_TeachFUR_Condition ()
 };
 func void DIA_Bosper_TeachFUR_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_TeachFUR_15_00"); //Научи меня снимать шкуры с животных!
+	AI_Output (other, self, "DIA_Bosper_TeachFUR_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С…!
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 	{
-		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_01"); //Хорошо. Слушай. Это довольно просто.
-		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_02"); //Берешь острый нож и разрезаешь брюхо животного. Затем делаешь несколько небольших надрезов на внутренней стороне ног, и снимаешь шкуру.
+		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_01"); //РҐРѕСЂРѕС€Рѕ. РЎР»СѓС€Р°Р№. Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ.
+		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_02"); //Р‘РµСЂРµС€СЊ РѕСЃС‚СЂС‹Р№ РЅРѕР¶ Рё СЂР°Р·СЂРµР·Р°РµС€СЊ Р±СЂСЋС…Рѕ Р¶РёРІРѕС‚РЅРѕРіРѕ. Р—Р°С‚РµРј РґРµР»Р°РµС€СЊ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµР±РѕР»СЊС€РёС… РЅР°РґСЂРµР·РѕРІ РЅР° РІРЅСѓС‚СЂРµРЅРЅРµР№ СЃС‚РѕСЂРѕРЅРµ РЅРѕРі, Рё СЃРЅРёРјР°РµС€СЊ С€РєСѓСЂСѓ.
 		if (MIS_Bosper_WolfFurs == LOG_RUNNING)
 		{
-			AI_Output (self, other, "DIA_Bosper_TeachFUR_11_03"); //Принеси мне волчьи шкуры, а там посмотрим...
-			B_LogEntry (TOPIC_BosperWolf,"Боспер научил меня снимать шкуры с животных.");
+			AI_Output (self, other, "DIA_Bosper_TeachFUR_11_03"); //РџСЂРёРЅРµСЃРё РјРЅРµ РІРѕР»С‡СЊРё С€РєСѓСЂС‹, Р° С‚Р°Рј РїРѕСЃРјРѕС‚СЂРёРј...
+			B_LogEntry (TOPIC_BosperWolf,"Р‘РѕСЃРїРµСЂ РЅР°СѓС‡РёР» РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ Р¶РёРІРѕС‚РЅС‹С….");
 		};
 	};
 };
@@ -572,7 +572,7 @@ instance DIA_Bosper_Trade		(C_INFO)
 	condition	 = 	DIA_Bosper_Trade_Condition;
 	information	 = 	DIA_Bosper_Trade_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 func int DIA_Bosper_Trade_Condition ()
 {
@@ -585,7 +585,7 @@ func int DIA_Bosper_Trade_Condition ()
 };
 func void DIA_Bosper_Trade_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Bosper_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	if (DIA_Bosper_Trade.trade == TRUE)
 	{
@@ -605,13 +605,13 @@ func void DIA_Bosper_Trade_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_Trade_11_01"); //Ты здесь не для того, чтобы разглядывать мои товары, ты должен принести мне шкуры!
-		AI_Output (self, other, "DIA_Bosper_Trade_11_02"); //Так что берись за дело!
+		AI_Output (self, other, "DIA_Bosper_Trade_11_01"); //РўС‹ Р·РґРµСЃСЊ РЅРµ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СЂР°Р·РіР»СЏРґС‹РІР°С‚СЊ РјРѕРё С‚РѕРІР°СЂС‹, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРµСЃС‚Рё РјРЅРµ С€РєСѓСЂС‹!
+		AI_Output (self, other, "DIA_Bosper_Trade_11_02"); //РўР°Рє С‡С‚Рѕ Р±РµСЂРёСЃСЊ Р·Р° РґРµР»Рѕ!
 	};
 };
 
 // **************************************************************
-// 						Von Bogen gehцrt
+// 						Von Bogen gehС†rt
 // **************************************************************
 instance DIA_Bosper_BogenRunning (C_INFO)
 {
@@ -620,7 +620,7 @@ instance DIA_Bosper_BogenRunning (C_INFO)
 	condition	 = 	DIA_Bosper_BogenRunning_Condition;
 	information	 = 	DIA_Bosper_BogenRunning_Info;
 	permanent	 = 	FALSE;
-	description	 = "Я слышал, что у тебя что-то украли.";
+	description	 = "РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ С‡С‚Рѕ-С‚Рѕ СѓРєСЂР°Р»Рё.";
 };
 func int DIA_Bosper_BogenRunning_Condition ()
 {	
@@ -631,19 +631,19 @@ func int DIA_Bosper_BogenRunning_Condition ()
 };
 func void DIA_Bosper_BogenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_BogenRunning_15_00"); //Я слышал, что у тебя что-то украли.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_01"); //Кто сказал тебе это? Вероятно Барток, да? Ему что, больше нечего было сказать тебе? Ох, ладно.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_02"); //Но если я доберусь до этого ублюдка, никакие молитвы ему не помогут!
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_03"); //Я отлучился из своей лавки всего на минуту. А когда вернулся, я увидел только, как он выходил - с моим луком на плече.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_04"); //Я тут же позвал стражу, но этот подонок побежал к гавани. И они потеряли его там!
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_05"); //Я спустил на них всех собак за это, и стражники обыскали весь портовый квартал. Но ничего не нашли.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_06"); //Бестолочи!
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_07"); //Готов поклясться, что мой лук все еще находится где-то в городе. Я поговорил со стражей у обоих городских ворот, но они не видели, чтобы кто-нибудь выходил из города с луком.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_08"); //Когда я доберусь до этого ублюдка...
+	AI_Output (other, self, "DIA_Bosper_BogenRunning_15_00"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ Сѓ С‚РµР±СЏ С‡С‚Рѕ-С‚Рѕ СѓРєСЂР°Р»Рё.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_01"); //РљС‚Рѕ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ? Р’РµСЂРѕСЏС‚РЅРѕ Р‘Р°СЂС‚РѕРє, РґР°? Р•РјСѓ С‡С‚Рѕ, Р±РѕР»СЊС€Рµ РЅРµС‡РµРіРѕ Р±С‹Р»Рѕ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ? РћС…, Р»Р°РґРЅРѕ.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_02"); //РќРѕ РµСЃР»Рё СЏ РґРѕР±РµСЂСѓСЃСЊ РґРѕ СЌС‚РѕРіРѕ СѓР±Р»СЋРґРєР°, РЅРёРєР°РєРёРµ РјРѕР»РёС‚РІС‹ РµРјСѓ РЅРµ РїРѕРјРѕРіСѓС‚!
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_03"); //РЇ РѕС‚Р»СѓС‡РёР»СЃСЏ РёР· СЃРІРѕРµР№ Р»Р°РІРєРё РІСЃРµРіРѕ РЅР° РјРёРЅСѓС‚Сѓ. Рђ РєРѕРіРґР° РІРµСЂРЅСѓР»СЃСЏ, СЏ СѓРІРёРґРµР» С‚РѕР»СЊРєРѕ, РєР°Рє РѕРЅ РІС‹С…РѕРґРёР» - СЃ РјРѕРёРј Р»СѓРєРѕРј РЅР° РїР»РµС‡Рµ.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_04"); //РЇ С‚СѓС‚ Р¶Рµ РїРѕР·РІР°Р» СЃС‚СЂР°Р¶Сѓ, РЅРѕ СЌС‚РѕС‚ РїРѕРґРѕРЅРѕРє РїРѕР±РµР¶Р°Р» Рє РіР°РІР°РЅРё. Р РѕРЅРё РїРѕС‚РµСЂСЏР»Рё РµРіРѕ С‚Р°Рј!
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_05"); //РЇ СЃРїСѓСЃС‚РёР» РЅР° РЅРёС… РІСЃРµС… СЃРѕР±Р°Рє Р·Р° СЌС‚Рѕ, Рё СЃС‚СЂР°Р¶РЅРёРєРё РѕР±С‹СЃРєР°Р»Рё РІРµСЃСЊ РїРѕСЂС‚РѕРІС‹Р№ РєРІР°СЂС‚Р°Р». РќРѕ РЅРёС‡РµРіРѕ РЅРµ РЅР°С€Р»Рё.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_06"); //Р‘РµСЃС‚РѕР»РѕС‡Рё!
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_07"); //Р“РѕС‚РѕРІ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, С‡С‚Рѕ РјРѕР№ Р»СѓРє РІСЃРµ РµС‰Рµ РЅР°С…РѕРґРёС‚СЃСЏ РіРґРµ-С‚Рѕ РІ РіРѕСЂРѕРґРµ. РЇ РїРѕРіРѕРІРѕСЂРёР» СЃРѕ СЃС‚СЂР°Р¶РµР№ Сѓ РѕР±РѕРёС… РіРѕСЂРѕРґСЃРєРёС… РІРѕСЂРѕС‚, РЅРѕ РѕРЅРё РЅРµ РІРёРґРµР»Рё, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ РІС‹С…РѕРґРёР» РёР· РіРѕСЂРѕРґР° СЃ Р»СѓРєРѕРј.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_08"); //РљРѕРіРґР° СЏ РґРѕР±РµСЂСѓСЃСЊ РґРѕ СЌС‚РѕРіРѕ СѓР±Р»СЋРґРєР°...
 
 	Log_CreateTopic (TOPIC_BosperBogen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperBogen,LOG_RUNNING);
-	B_LogEntry	(TOPIC_BosperBogen,"У Боспера был украден лук. Вор побежал к гавани, и скрылся там. Ополчение обыскало портовый квартал, но они ничего не нашли, хотя лук все еще должен быть в городе.");
+	B_LogEntry	(TOPIC_BosperBogen,"РЈ Р‘РѕСЃРїРµСЂР° Р±С‹Р» СѓРєСЂР°РґРµРЅ Р»СѓРє. Р’РѕСЂ РїРѕР±РµР¶Р°Р» Рє РіР°РІР°РЅРё, Рё СЃРєСЂС‹Р»СЃСЏ С‚Р°Рј. РћРїРѕР»С‡РµРЅРёРµ РѕР±С‹СЃРєР°Р»Рѕ РїРѕСЂС‚РѕРІС‹Р№ РєРІР°СЂС‚Р°Р», РЅРѕ РѕРЅРё РЅРёС‡РµРіРѕ РЅРµ РЅР°С€Р»Рё, С…РѕС‚СЏ Р»СѓРє РІСЃРµ РµС‰Рµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІ РіРѕСЂРѕРґРµ.");
 };
 
 // **************************************************************
@@ -656,7 +656,7 @@ instance DIA_Bosper_BogenSuccess (C_INFO)
 	condition	 = 	DIA_Bosper_BogenSuccess_Condition;
 	information	 = 	DIA_Bosper_BogenSuccess_Info;
 	permanent	 = 	FALSE;
-	description	 = "Я думаю, это твой лук...";
+	description	 = "РЇ РґСѓРјР°СЋ, СЌС‚Рѕ С‚РІРѕР№ Р»СѓРє...";
 };
 func int DIA_Bosper_BogenSuccess_Condition ()
 {	
@@ -667,15 +667,15 @@ func int DIA_Bosper_BogenSuccess_Condition ()
 };
 func void DIA_Bosper_BogenSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_00"); //Я думаю, это твой лук...
+	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_00"); //РЇ РґСѓРјР°СЋ, СЌС‚Рѕ С‚РІРѕР№ Р»СѓРє...
 	
 	B_GiveInvItems (other, self, ItRw_Bow_L_03_MIS,1);
 	
-	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_01"); //Мой лук! Где ты нашел его?
-	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_02"); //В темной дыре, полной крыс.
-	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_03"); //Надеюсь, у тебя не возникло проблем из-за этого...
-	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_04"); //Нет - мне приходилось делать такое и раньше.
-	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_05"); //Хм - но все же спасибо. Я твой должник!
+	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_01"); //РњРѕР№ Р»СѓРє! Р“РґРµ С‚С‹ РЅР°С€РµР» РµРіРѕ?
+	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_02"); //Р’ С‚РµРјРЅРѕР№ РґС‹СЂРµ, РїРѕР»РЅРѕР№ РєСЂС‹СЃ.
+	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_03"); //РќР°РґРµСЋСЃСЊ, Сѓ С‚РµР±СЏ РЅРµ РІРѕР·РЅРёРєР»Рѕ РїСЂРѕР±Р»РµРј РёР·-Р·Р° СЌС‚РѕРіРѕ...
+	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_04"); //РќРµС‚ - РјРЅРµ РїСЂРёС…РѕРґРёР»РѕСЃСЊ РґРµР»Р°С‚СЊ С‚Р°РєРѕРµ Рё СЂР°РЅСЊС€Рµ.
+	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_05"); //РҐРј - РЅРѕ РІСЃРµ Р¶Рµ СЃРїР°СЃРёР±Рѕ. РЇ С‚РІРѕР№ РґРѕР»Р¶РЅРёРє!
 	 
 	MIS_Bosper_Bogen = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Bosper_Bogen);
@@ -696,7 +696,7 @@ instance DIA_Bosper_PERM		(C_INFO)
 	condition	 = 	DIA_Bosper_PERM_Condition;
 	information	 = 	DIA_Bosper_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как обстановка в городе?";
+	description	 = 	"РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР° РІ РіРѕСЂРѕРґРµ?";
 };
 func int DIA_Bosper_PERM_Condition ()
 {
@@ -707,20 +707,20 @@ func int DIA_Bosper_PERM_Condition ()
 };
 func void DIA_Bosper_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_PERM_15_00"); //Как обстановка в городе?
+	AI_Output (other, self, "DIA_Bosper_PERM_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР° РІ РіРѕСЂРѕРґРµ?
 	
 	if (Bosper_Island == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bosper_PERM_11_01"); //Если орки действительно решатся напасть на нас, здесь станет совсем паршиво.
-		AI_Output (self, other, "DIA_Bosper_PERM_11_02"); //В гавани стоит только один корабль - и его охраняют паладины. Я не думаю, что они используют его для спасения горожан.
-		AI_Output (other, self, "DIA_Bosper_PERM_15_03"); //А нет другого способа выбраться отсюда?
-		AI_Output (self, other, "DIA_Bosper_PERM_11_04"); //Нет, никому из нас не покинуть этот остров без корабля.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_01"); //Р•СЃР»Рё РѕСЂРєРё РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЂРµС€Р°С‚СЃСЏ РЅР°РїР°СЃС‚СЊ РЅР° РЅР°СЃ, Р·РґРµСЃСЊ СЃС‚Р°РЅРµС‚ СЃРѕРІСЃРµРј РїР°СЂС€РёРІРѕ.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_02"); //Р’ РіР°РІР°РЅРё СЃС‚РѕРёС‚ С‚РѕР»СЊРєРѕ РѕРґРёРЅ РєРѕСЂР°Р±Р»СЊ - Рё РµРіРѕ РѕС…СЂР°РЅСЏСЋС‚ РїР°Р»Р°РґРёРЅС‹. РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅРё РёСЃРїРѕР»СЊР·СѓСЋС‚ РµРіРѕ РґР»СЏ СЃРїР°СЃРµРЅРёСЏ РіРѕСЂРѕР¶Р°РЅ.
+		AI_Output (other, self, "DIA_Bosper_PERM_15_03"); //Рђ РЅРµС‚ РґСЂСѓРіРѕРіРѕ СЃРїРѕСЃРѕР±Р° РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°?
+		AI_Output (self, other, "DIA_Bosper_PERM_11_04"); //РќРµС‚, РЅРёРєРѕРјСѓ РёР· РЅР°СЃ РЅРµ РїРѕРєРёРЅСѓС‚СЊ СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ Р±РµР· РєРѕСЂР°Р±Р»СЏ.
 		
 		Bosper_Island = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Bosper_PERM_11_05"); //Пока нет никаких новостей. Если хочешь, зайди позже.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_05"); //РџРѕРєР° РЅРµС‚ РЅРёРєР°РєРёС… РЅРѕРІРѕСЃС‚РµР№. Р•СЃР»Рё С…РѕС‡РµС€СЊ, Р·Р°Р№РґРё РїРѕР·Р¶Рµ.
 	};
 };
 
@@ -756,8 +756,8 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_MIL)
 	&& (Bosper_MILKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_00"); //Ты что, вступил в ополчение, да?
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_01"); //Мне, в общем-то, все равно. Лишь бы ты, помимо орков и бандитов, охотился также и на волков. (ухмыляется)
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_00"); //РўС‹ С‡С‚Рѕ, РІСЃС‚СѓРїРёР» РІ РѕРїРѕР»С‡РµРЅРёРµ, РґР°?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_01"); //РњРЅРµ, РІ РѕР±С‰РµРј-С‚Рѕ, РІСЃРµ СЂР°РІРЅРѕ. Р›РёС€СЊ Р±С‹ С‚С‹, РїРѕРјРёРјРѕ РѕСЂРєРѕРІ Рё Р±Р°РЅРґРёС‚РѕРІ, РѕС…РѕС‚РёР»СЃСЏ С‚Р°РєР¶Рµ Рё РЅР° РІРѕР»РєРѕРІ. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ)
 		Bosper_MILKommentar = TRUE;
 	}
 	
@@ -765,8 +765,8 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_PAL)
 	&& (Bosper_PALKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_02"); //Похоже, твоя карьера переживает стремительный взлет. Паладин короля!
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_03"); //Но куда бы ни занесло тебя, прошу, не забывай своего старого учителя...
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_02"); //РџРѕС…РѕР¶Рµ, С‚РІРѕСЏ РєР°СЂСЊРµСЂР° РїРµСЂРµР¶РёРІР°РµС‚ СЃС‚СЂРµРјРёС‚РµР»СЊРЅС‹Р№ РІР·Р»РµС‚. РџР°Р»Р°РґРёРЅ РєРѕСЂРѕР»СЏ!
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_03"); //РќРѕ РєСѓРґР° Р±С‹ РЅРё Р·Р°РЅРµСЃР»Рѕ С‚РµР±СЏ, РїСЂРѕС€Сѓ, РЅРµ Р·Р°Р±С‹РІР°Р№ СЃРІРѕРµРіРѕ СЃС‚Р°СЂРѕРіРѕ СѓС‡РёС‚РµР»СЏ...
 		Bosper_PALKommentar = TRUE;
 	}
 	
@@ -775,7 +775,7 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_KDF)
 	&& (Bosper_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_04"); //Ты постригся в монастырь, да? Надеюсь, они будут отпускать тебя хоть иногда, и ты сможешь приносить мне шкуры...
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_04"); //РўС‹ РїРѕСЃС‚СЂРёРіСЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РґР°? РќР°РґРµСЋСЃСЊ, РѕРЅРё Р±СѓРґСѓС‚ РѕС‚РїСѓСЃРєР°С‚СЊ С‚РµР±СЏ С…РѕС‚СЊ РёРЅРѕРіРґР°, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РїСЂРёРЅРѕСЃРёС‚СЊ РјРЅРµ С€РєСѓСЂС‹...
 		Bosper_INNOSKommentar = TRUE;
 	}
 	
@@ -783,14 +783,14 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (other.guild != GIL_PAL)
 	&& (other.guild != GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_05"); //Где ты болтался так долго?
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_06"); //Мне нужны еще шкуры. Ты принес их?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_05"); //Р“РґРµ С‚С‹ Р±РѕР»С‚Р°Р»СЃСЏ С‚Р°Рє РґРѕР»РіРѕ?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_06"); //РњРЅРµ РЅСѓР¶РЅС‹ РµС‰Рµ С€РєСѓСЂС‹. РўС‹ РїСЂРёРЅРµСЃ РёС…?
 		Bosper_Lehrling_Day = Wld_GetDay();
 	}
 	
 	else
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_07"); //Пришел, наконец...
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_07"); //РџСЂРёС€РµР», РЅР°РєРѕРЅРµС†...
 		Bosper_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -805,7 +805,7 @@ instance DIA_Bosper_Aufgaben (C_INFO)
 	condition	= DIA_Bosper_Aufgaben_Condition;
 	information	= DIA_Bosper_Aufgaben_Info;
 	permanent	= FALSE;
-	description	= "Что должен делать ученик?";
+	description	= "Р§С‚Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СѓС‡РµРЅРёРє?";
 };
 func int DIA_Bosper_Aufgaben_Condition ()
 {
@@ -816,18 +816,18 @@ func int DIA_Bosper_Aufgaben_Condition ()
 };
 func void DIA_Bosper_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Aufgaben_15_00"); //Что должен делать ученик?
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_01"); //Это просто. Приноси мне все шкуры, что сможешь добыть.
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_02"); //Я дам тебе за них более высокую цену, чем любой другой из местных торговцев.
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_03"); //Ну, а в остальное время, тебе не обязательно появляться в моей лавке. Я и один тут неплохо справляюсь.
+	AI_Output (other, self, "DIA_Bosper_Aufgaben_15_00"); //Р§С‚Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СѓС‡РµРЅРёРє?
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_01"); //Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ. РџСЂРёРЅРѕСЃРё РјРЅРµ РІСЃРµ С€РєСѓСЂС‹, С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ РґРѕР±С‹С‚СЊ.
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_02"); //РЇ РґР°Рј С‚РµР±Рµ Р·Р° РЅРёС… Р±РѕР»РµРµ РІС‹СЃРѕРєСѓСЋ С†РµРЅСѓ, С‡РµРј Р»СЋР±РѕР№ РґСЂСѓРіРѕР№ РёР· РјРµСЃС‚РЅС‹С… С‚РѕСЂРіРѕРІС†РµРІ.
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_03"); //РќСѓ, Р° РІ РѕСЃС‚Р°Р»СЊРЅРѕРµ РІСЂРµРјСЏ, С‚РµР±Рµ РЅРµ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ РІ РјРѕРµР№ Р»Р°РІРєРµ. РЇ Рё РѕРґРёРЅ С‚СѓС‚ РЅРµРїР»РѕС…Рѕ СЃРїСЂР°РІР»СЏСЋСЃСЊ.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (other, self, "DIA_Bosper_Aufgaben_15_04"); //А где я буду спать?
-		AI_Output (self, other, "DIA_Bosper_Aufgaben_11_05"); //У меня здесь нет места для тебя. Но ты всегда найдешь свободную койку в отеле на рыночной площади.
+		AI_Output (other, self, "DIA_Bosper_Aufgaben_15_04"); //Рђ РіРґРµ СЏ Р±СѓРґСѓ СЃРїР°С‚СЊ?
+		AI_Output (self, other, "DIA_Bosper_Aufgaben_11_05"); //РЈ РјРµРЅСЏ Р·РґРµСЃСЊ РЅРµС‚ РјРµСЃС‚Р° РґР»СЏ С‚РµР±СЏ. РќРѕ С‚С‹ РІСЃРµРіРґР° РЅР°Р№РґРµС€СЊ СЃРІРѕР±РѕРґРЅСѓСЋ РєРѕР№РєСѓ РІ РѕС‚РµР»Рµ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
 	};
 	
 	Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Боспер готов платить очень хорошую цену за шкуры животных.");
+	B_LogEntry (Topic_Bonus,"Р‘РѕСЃРїРµСЂ РіРѕС‚РѕРІ РїР»Р°С‚РёС‚СЊ РѕС‡РµРЅСЊ С…РѕСЂРѕС€СѓСЋ С†РµРЅСѓ Р·Р° С€РєСѓСЂС‹ Р¶РёРІРѕС‚РЅС‹С….");
 };
 
 // *******************************************************
@@ -844,7 +844,7 @@ instance DIA_Bosper_SellFur (C_INFO)
 	condition	= DIA_Bosper_SellFur_Condition;
 	information	= DIA_Bosper_SellFur_Info;
 	permanent	= TRUE;
-	description	= "Я принес несколько шкур для тебя...";
+	description	= "РЇ РїСЂРёРЅРµСЃ РЅРµСЃРєРѕР»СЊРєРѕ С€РєСѓСЂ РґР»СЏ С‚РµР±СЏ...";
 };
 func int DIA_Bosper_SellFur_Condition ()
 {
@@ -855,7 +855,7 @@ func int DIA_Bosper_SellFur_Condition ()
 };
 func void DIA_Bosper_SellFur_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_SellFur_15_00"); //Я принес несколько шкур для тебя...
+	AI_Output (other, self, "DIA_Bosper_SellFur_15_00"); //РЇ РїСЂРёРЅРµСЃ РЅРµСЃРєРѕР»СЊРєРѕ С€РєСѓСЂ РґР»СЏ С‚РµР±СЏ...
 	
 	if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 	|| (Npc_HasItems(other, ItAt_WolfFur) > 0)
@@ -875,8 +875,8 @@ func void DIA_Bosper_SellFur_Info ()
 		
 		if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_01"); //Овечьи шкуры? Ты ведь не убивал овец фермеров на пастбищах, нет?
-			AI_Output (other, self, "DIA_Bosper_SellFur_15_02"); //Я даже и не думал заниматься этим...
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_01"); //РћРІРµС‡СЊРё С€РєСѓСЂС‹? РўС‹ РІРµРґСЊ РЅРµ СѓР±РёРІР°Р» РѕРІРµС† С„РµСЂРјРµСЂРѕРІ РЅР° РїР°СЃС‚Р±РёС‰Р°С…, РЅРµС‚?
+			AI_Output (other, self, "DIA_Bosper_SellFur_15_02"); //РЇ РґР°Р¶Рµ Рё РЅРµ РґСѓРјР°Р» Р·Р°РЅРёРјР°С‚СЊСЃСЏ СЌС‚РёРј...
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_SheepFur) * Value_SheepFur) );
 			B_GiveInvItems(other, self, ItAt_SheepFur, Npc_HasItems(other, ItAt_SheepFur));
 				
@@ -884,21 +884,21 @@ func void DIA_Bosper_SellFur_Info ()
 		
 		if (Npc_HasItems(other, ItAt_WolfFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_03"); //Волчьи шкуры это хорошо...
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_03"); //Р’РѕР»С‡СЊРё С€РєСѓСЂС‹ СЌС‚Рѕ С…РѕСЂРѕС€Рѕ...
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_WolfFur) * Value_WolfFur) );
 			B_GiveInvItems(other, self, ItAt_WolfFur, Npc_HasItems(other, ItAt_WolfFur));
 		};
 		
 		if (Npc_HasItems(other, ItAt_WargFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_04"); //Шкура варга? Это опасные звери ...
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_04"); //РЁРєСѓСЂР° РІР°СЂРіР°? Р­С‚Рѕ РѕРїР°СЃРЅС‹Рµ Р·РІРµСЂРё ...
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_WargFur) * Value_WargFur) );
 			B_GiveInvItems(other, self, ItAt_WargFur, Npc_HasItems(other, ItAt_WargFur));
 		};
 		
 		if (Npc_HasItems(other, ItAt_ShadowFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_05"); //Ах, и даже шкура мракориса - она дорогого стоит.
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_05"); //РђС…, Рё РґР°Р¶Рµ С€РєСѓСЂР° РјСЂР°РєРѕСЂРёСЃР° - РѕРЅР° РґРѕСЂРѕРіРѕРіРѕ СЃС‚РѕРёС‚.
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_ShadowFur) * Value_ShadowFur) );
 			B_GiveInvItems(other, self, ItAt_ShadowFur, Npc_HasItems(other, ItAt_ShadowFur));
 		};
@@ -908,15 +908,15 @@ func void DIA_Bosper_SellFur_Info ()
 		{
 			if (Bosper_TrollFurSold == FALSE)
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_06"); //А это что за шкура, черт побери?
-				AI_Output (other, self, "DIA_Bosper_SellFur_15_07"); //Я снял ее с тролля.
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_08"); //Это... она стоит целое состояние.
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_06"); //Рђ СЌС‚Рѕ С‡С‚Рѕ Р·Р° С€РєСѓСЂР°, С‡РµСЂС‚ РїРѕР±РµСЂРё?
+				AI_Output (other, self, "DIA_Bosper_SellFur_15_07"); //РЇ СЃРЅСЏР» РµРµ СЃ С‚СЂРѕР»Р»СЏ.
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_08"); //Р­С‚Рѕ... РѕРЅР° СЃС‚РѕРёС‚ С†РµР»РѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ.
 				Bosper_TrollFurSold == TRUE;
 			}
 			else //TRUE
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_09"); //Еще одна шкура огромного тролля... ты что, охотишься на них?
-				AI_Output (other, self, "DIA_Bosper_SellFur_15_10"); //Когда я натыкаюсь на одного из них, я не упускаю такой возможности...
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_09"); //Р•С‰Рµ РѕРґРЅР° С€РєСѓСЂР° РѕРіСЂРѕРјРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ... С‚С‹ С‡С‚Рѕ, РѕС…РѕС‚РёС€СЊСЃСЏ РЅР° РЅРёС…?
+				AI_Output (other, self, "DIA_Bosper_SellFur_15_10"); //РљРѕРіРґР° СЏ РЅР°С‚С‹РєР°СЋСЃСЊ РЅР° РѕРґРЅРѕРіРѕ РёР· РЅРёС…, СЏ РЅРµ СѓРїСѓСЃРєР°СЋ С‚Р°РєРѕР№ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё...
 			};
 			
 			if (Npc_HasItems(other, ItAt_TrollFur) > 0)
@@ -926,17 +926,17 @@ func void DIA_Bosper_SellFur_Info ()
 			};
 			if (Npc_HasItems(other, ItAt_TrollBlackFur) > 0)
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_11"); //И шкура черного тролля, надо же!
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_11"); //Р С€РєСѓСЂР° С‡РµСЂРЅРѕРіРѕ С‚СЂРѕР»Р»СЏ, РЅР°РґРѕ Р¶Рµ!
 				B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_TrollBlackFur) * Value_TrollBlackFur) );
 				B_GiveInvItems(other, self, ItAt_TrollBlackFur, Npc_HasItems(other, ItAt_TrollBlackFur));
 			};
 		};
 		
-		AI_Output (self, other, "DIA_Bosper_SellFur_11_12"); //Отличная работа. Заходи ко мне еще, когда у тебя будут шкуры...
+		AI_Output (self, other, "DIA_Bosper_SellFur_11_12"); //РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°. Р—Р°С…РѕРґРё РєРѕ РјРЅРµ РµС‰Рµ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ С€РєСѓСЂС‹...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_SellFur_11_13"); //Но, знаешь - меня интересуют только шкуры волков, мракорисов и им подобные...
+		AI_Output (self, other, "DIA_Bosper_SellFur_11_13"); //РќРѕ, Р·РЅР°РµС€СЊ - РјРµРЅСЏ РёРЅС‚РµСЂРµСЃСѓСЋС‚ С‚РѕР»СЊРєРѕ С€РєСѓСЂС‹ РІРѕР»РєРѕРІ, РјСЂР°РєРѕСЂРёСЃРѕРІ Рё РёРј РїРѕРґРѕР±РЅС‹Рµ...
 	};
 };
 
@@ -950,7 +950,7 @@ INSTANCE DIA_Bosper_Minenanteil (C_INFO)
 	condition	= DIA_Bosper_Minenanteil_Condition;
 	information	= DIA_Bosper_Minenanteil_Info;
 
-	description = "Я вижу, ты продаешь акции шахт.";
+	description = "РЇ РІРёР¶Сѓ, С‚С‹ РїСЂРѕРґР°РµС€СЊ Р°РєС†РёРё С€Р°С…С‚.";
 };   
                     
 FUNC INT DIA_Bosper_Minenanteil_Condition()
@@ -964,8 +964,8 @@ FUNC INT DIA_Bosper_Minenanteil_Condition()
 
 FUNC VOID DIA_Bosper_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Bosper_Minenanteil_15_00"); //Я вижу, ты продаешь акции шахт.
-	AI_Output (self, other, "DIA_Bosper_Minenanteil_11_01"); //Гм. Я ничего не знаю об этом. Ты можешь забрать их, если хочешь.
+	AI_Output (other, self, "DIA_Bosper_Minenanteil_15_00"); //РЇ РІРёР¶Сѓ, С‚С‹ РїСЂРѕРґР°РµС€СЊ Р°РєС†РёРё С€Р°С…С‚.
+	AI_Output (self, other, "DIA_Bosper_Minenanteil_11_01"); //Р“Рј. РЇ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ РѕР± СЌС‚РѕРј. РўС‹ РјРѕР¶РµС€СЊ Р·Р°Р±СЂР°С‚СЊ РёС…, РµСЃР»Рё С…РѕС‡РµС€СЊ.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

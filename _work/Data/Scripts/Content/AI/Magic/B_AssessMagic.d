@@ -1,22 +1,22 @@
 // ******************************************************************
 // B_AssessMagic
 // -------------
-// Wahrnehmung ist für ALLE NSCs IMMER aktiv
-// auch für den Spieler (s.u.)
+// Wahrnehmung ist fÑŒr ALLE NSCs IMMER aktiv
+// auch fÑŒr den Spieler (s.u.)
 // wir aufgerufen, sobald irgendein Spruch auf einen NSC wirkt
 // setzt den NSC dan in den entsprechenden ZS
-// die meisten Spells führen allerdings zu keinem ZS
-// (sind unten nicht berücksichtigt)
+// die meisten Spells fÑŒhren allerdings zu keinem ZS
+// (sind unten nicht berÑŒcksichtigt)
 // ------------------------------------------------------------------
 // Beachtem: if (Npc_GetLastHitSpellID(self) == SPL_Sleep) funzt nicht,
-// weil Sleep INSTANT wirkt (d.h. sofort SENDCAST zurückliefert)
+// weil Sleep INSTANT wirkt (d.h. sofort SENDCAST zurÑŒckliefert)
 // und beim Aufruf von B_AssessMagic NICHT mehr "Active" ist!
 // ******************************************************************
 
 
 func void B_AssessMagic ()
 {
-	// ------ Bei ALLEN Spells. Damit andere NSCs den Angriff wahrnehmen können ------
+	// ------ Bei ALLEN Spells. Damit andere NSCs den Angriff wahrnehmen kÑ†nnen ------
 	if (Npc_GetLastHitSpellCat(self) == SPELL_BAD)
 	{
 		Npc_SendPassivePerc	(self, PERC_ASSESSFIGHTSOUND, self, other);

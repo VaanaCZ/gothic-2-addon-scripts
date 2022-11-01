@@ -9,7 +9,7 @@ const int	Value_Addon_Joint_01		=  60;
 //---------------------------------------------------------------------
 INSTANCE ItMi_GoldNugget_Addon(C_Item)
 {
-	name 		=	"Золотой самородок";
+	name 		=	"Р—РѕР»РѕС‚РѕР№ СЃР°РјРѕСЂРѕРґРѕРє";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;
@@ -28,11 +28,11 @@ INSTANCE ItMi_GoldNugget_Addon(C_Item)
 	
 };
 //---------------------------------------------------------------------
-//	WeiЯe Perle
+//	WeiРЇe Perle
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_WhitePearl (C_Item)
 {
-	name 				=	"Жемчужина";
+	name 				=	"Р–РµРјС‡СѓР¶РёРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -49,11 +49,11 @@ INSTANCE ItMi_Addon_WhitePearl (C_Item)
 	INV_ZBIAS			= INVCAM_ENTF_MISC_STANDARD;
 };
 //---------------------------------------------------------------------
-//	Grьner Novize
+//	GrСЊner Novize
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Joint_01(C_Item)
 {
-	name 				=	"Зеленый послушник";
+	name 				=	"Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -93,7 +93,7 @@ func void Use_Addon_Joint_01()
 //****************************************************************************
 INSTANCE ItMi_BaltramPaket(C_Item)
 {
-	name 				=	"Пакет для Бальтрама";
+	name 				=	"РџР°РєРµС‚ РґР»СЏ Р‘Р°Р»СЊС‚СЂР°РјР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -105,19 +105,19 @@ INSTANCE ItMi_BaltramPaket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Тяжелый пакет с";
-	TEXT[3]				=	"различными товарами";
-	TEXT[4]				=	"с фермы Акила";
+	TEXT[2]				= 	"РўСЏР¶РµР»С‹Р№ РїР°РєРµС‚ СЃ";
+	TEXT[3]				=	"СЂР°Р·Р»РёС‡РЅС‹РјРё С‚РѕРІР°СЂР°РјРё";
+	TEXT[4]				=	"СЃ С„РµСЂРјС‹ РђРєРёР»Р°";
 	
 };
 
 //****************************************************************************
-//				Baltrams Lieferung fьr Skip
+//				Baltrams Lieferung fСЊr Skip
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 {
-	name 				=	"Пакет для Скипа";
+	name 				=	"РџР°РєРµС‚ РґР»СЏ РЎРєРёРїР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -129,15 +129,15 @@ INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Тяжелый пакет";
-	TEXT[3]				=	"с различными товарами";
-	TEXT[4]				=	"для пирата Скипа";
+	TEXT[2]				= 	"РўСЏР¶РµР»С‹Р№ РїР°РєРµС‚";
+	TEXT[3]				=	"СЃ СЂР°Р·Р»РёС‡РЅС‹РјРё С‚РѕРІР°СЂР°РјРё";
+	TEXT[4]				=	"РґР»СЏ РїРёСЂР°С‚Р° РЎРєРёРїР°";
 	
 };
 /******************************************************************************************/
 INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 {
-	name 				=	"Золотая чаша Бромора";
+	name 				=	"Р—РѕР»РѕС‚Р°СЏ С‡Р°С€Р° Р‘СЂРѕРјРѕСЂР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -148,16 +148,16 @@ INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[2]				= 	"На дне этой чаши ";
-	TEXT[3]				=	"острым предметом нацарапано";
-	TEXT[4]				=	"имя 'Бромор'.";
+	TEXT[2]				= 	"РќР° РґРЅРµ СЌС‚РѕР№ С‡Р°С€Рё ";
+	TEXT[3]				=	"РѕСЃС‚СЂС‹Рј РїСЂРµРґРјРµС‚РѕРј РЅР°С†Р°СЂР°РїР°РЅРѕ";
+	TEXT[4]				=	"РёРјСЏ 'Р‘СЂРѕРјРѕСЂ'.";
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
 };
 
 INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 {
-	name 				=	"Кожаный мешочек Кавалорна";
+	name 				=	"РљРѕР¶Р°РЅС‹Р№ РјРµС€РѕС‡РµРє РљР°РІР°Р»РѕСЂРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -172,9 +172,9 @@ INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"На мешочке прикреплен ярлык";
-	TEXT[2]				= 	"с именем 'Кавалорн'";
-	TEXT[3]				= 	"Внутри находится 1 кусок руды";
+	TEXT[1]				= 	"РќР° РјРµС€РѕС‡РєРµ РїСЂРёРєСЂРµРїР»РµРЅ СЏСЂР»С‹Рє";
+	TEXT[2]				= 	"СЃ РёРјРµРЅРµРј 'РљР°РІР°Р»РѕСЂРЅ'";
+	TEXT[3]				= 	"Р’РЅСѓС‚СЂРё РЅР°С…РѕРґРёС‚СЃСЏ 1 РєСѓСЃРѕРє СЂСѓРґС‹";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -186,7 +186,7 @@ FUNC VOID Use_CavalornsBeutel ()
 		SC_OpenedCavalornsBeutel = TRUE;
 		Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CavalornTheHut,"Я нашел мешочек с куском руды около хижины Кавалорна в Долине рудников. Его, должно быть, забыл там старый пройдоха Кавалорн.");
+		B_LogEntry (TOPIC_Addon_CavalornTheHut,"РЇ РЅР°С€РµР» РјРµС€РѕС‡РµРє СЃ РєСѓСЃРєРѕРј СЂСѓРґС‹ РѕРєРѕР»Рѕ С…РёР¶РёРЅС‹ РљР°РІР°Р»РѕСЂРЅР° РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ. Р•РіРѕ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Р·Р°Р±С‹Р» С‚Р°Рј СЃС‚Р°СЂС‹Р№ РїСЂРѕР№РґРѕС…Р° РљР°РІР°Р»РѕСЂРЅ.");
 };
 
 //**************************************
@@ -194,7 +194,7 @@ FUNC VOID Use_CavalornsBeutel ()
 //**************************************
 instance ItMi_Skull(C_Item)
 {
-	name 				=	"Череп";
+	name 				=	"Р§РµСЂРµРї";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -238,7 +238,7 @@ instance ItMi_Skull(C_Item)
 
 INSTANCE ItMi_IECello(C_Item)
 {
-	name 				=	"Виолончель";
+	name 				=	"Р’РёРѕР»РѕРЅС‡РµР»СЊ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -262,7 +262,7 @@ func void Use_Cello()
 
 INSTANCE ItMi_IECelloBow(C_Item)
 {
-	name 				=	"Виолончельный лук";
+	name 				=	"Р’РёРѕР»РѕРЅС‡РµР»СЊРЅС‹Р№ Р»СѓРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -278,7 +278,7 @@ INSTANCE ItMi_IECelloBow(C_Item)
 
 INSTANCE ItMi_IEDrum(C_Item)
 {
-	name 				=	"Барабан";
+	name 				=	"Р‘Р°СЂР°Р±Р°РЅ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -302,7 +302,7 @@ func void Use_Drum()
 
 INSTANCE ItMi_IEDrumScheit(C_Item)
 {
-	name 				=	"Тромба марина";
+	name 				=	"РўСЂРѕРјР±Р° РјР°СЂРёРЅР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -326,7 +326,7 @@ func void Use_Drumscheit()
 
 INSTANCE ItMi_IEDrumStick(C_Item)
 {
-	name 				=	"Барабанная палочка";
+	name 				=	"Р‘Р°СЂР°Р±Р°РЅРЅР°СЏ РїР°Р»РѕС‡РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -342,7 +342,7 @@ INSTANCE ItMi_IEDrumStick(C_Item)
 
 INSTANCE ItMi_IEDudelBlau(C_Item)
 {
-	name 				=	"Синяя волынка";
+	name 				=	"РЎРёРЅСЏСЏ РІРѕР»С‹РЅРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -366,7 +366,7 @@ func void Use_Dudel()
 
 INSTANCE ItMi_IEDudelGelb(C_Item)
 {
-	name 				=	"Желтая волынка";
+	name 				=	"Р–РµР»С‚Р°СЏ РІРѕР»С‹РЅРєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -388,7 +388,7 @@ INSTANCE ItMi_IEDudelGelb(C_Item)
 
 INSTANCE ItMi_IEHarfe(C_Item)
 {
-	name 				=	"Арфа";
+	name 				=	"РђСЂС„Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -413,7 +413,7 @@ func void Use_Harfe()
 
 INSTANCE ItMi_IELaute(C_Item)
 {
-	name 				=	"Лютня";
+	name 				=	"Р›СЋС‚РЅСЏ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -439,7 +439,7 @@ func void Use_Laute()
 //****************************************************************************
 INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 {
-	name 				=	"Звенящий пакет";
+	name 				=	"Р—РІРµРЅСЏС‰РёР№ РїР°РєРµС‚";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -452,9 +452,9 @@ INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Внутри находятся отмычки";
+	TEXT[2]				= 	"Р’РЅСѓС‚СЂРё РЅР°С…РѕРґСЏС‚СЃСЏ РѕС‚РјС‹С‡РєРё";
 	TEXT[3]				=	"";
-	TEXT[4]				=	"Много отмычек";
+	TEXT[4]				=	"РњРЅРѕРіРѕ РѕС‚РјС‹С‡РµРє";
 	
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	value;
@@ -469,7 +469,7 @@ FUNC VOID Use_LennarPaket()
 	
 instance ItMi_Zeitspalt_Addon(C_Item)
 {
-	name 				=	"Черная руда";
+	name 				=	"Р§РµСЂРЅР°СЏ СЂСѓРґР°";
 
 	mainflag 			=	ITEM_KAT_POTIONS;
 	flags 				=	ITEM_MULTI;
@@ -485,7 +485,7 @@ instance ItMi_Zeitspalt_Addon(C_Item)
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
 	description			= 	name;
-	TEXT[3]				= 	"Эффект неизвестен.";				
+	TEXT[3]				= 	"Р­С„С„РµРєС‚ РЅРµРёР·РІРµСЃС‚РµРЅ.";				
 
 	INV_ZBIAS				= INVCAM_ENTF_MISC_STANDARD;
 };

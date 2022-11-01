@@ -1,7 +1,7 @@
 INSTANCE NOV_601_Igaraz (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Игарац";
+	name 		= "РРіР°СЂР°С†";
 	guild 		= GIL_NOV;
 	id 			= 601;
 	voice 		= 13;

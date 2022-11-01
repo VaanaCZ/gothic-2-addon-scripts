@@ -32,7 +32,7 @@ INSTANCE DIA_Bennet_DI_Hello (C_INFO)
 	information	= DIA_Bennet_DI_Hello_Info;
 	permanent	 = 	TRUE;
 
-	description = "У тебя все в порядке?";
+	description = "РЈ С‚РµР±СЏ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };    
                    
 FUNC INT DIA_Bennet_DI_Hello_Condition()
@@ -45,15 +45,15 @@ FUNC INT DIA_Bennet_DI_Hello_Condition()
 
 FUNC VOID DIA_Bennet_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//У тебя все в порядке?
+	AI_Output	(other ,self,"DIA_Bennet_DI_Hello_15_00");	//РЈ С‚РµР±СЏ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//Кузница на корабле немного проржавела. Морская соль разъедает ее. Здесь будет непросто выковать что-нибудь приличное. Ну, а кроме этого...
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//РљСѓР·РЅРёС†Р° РЅР° РєРѕСЂР°Р±Р»Рµ РЅРµРјРЅРѕРіРѕ РїСЂРѕСЂР¶Р°РІРµР»Р°. РњРѕСЂСЃРєР°СЏ СЃРѕР»СЊ СЂР°Р·СЉРµРґР°РµС‚ РµРµ. Р—РґРµСЃСЊ Р±СѓРґРµС‚ РЅРµРїСЂРѕСЃС‚Рѕ РІС‹РєРѕРІР°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёР»РёС‡РЅРѕРµ. РќСѓ, Р° РєСЂРѕРјРµ СЌС‚РѕРіРѕ...
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//Да. Если только орки не вернутся.
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//Р”Р°. Р•СЃР»Рё С‚РѕР»СЊРєРѕ РѕСЂРєРё РЅРµ РІРµСЂРЅСѓС‚СЃСЏ.
 	};
 };
   
@@ -69,7 +69,7 @@ instance DIA_Bennet_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Какое оружие ты можешь продать мне?";
+	description	 = 	"РљР°РєРѕРµ РѕСЂСѓР¶РёРµ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ?";
 };
 
 func int DIA_Bennet_DI_TRADE_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Bennet_DI_TRADE_Condition ()
 
 func void DIA_Bennet_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Какое оружие ты можешь продать мне?
+	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //РљР°РєРѕРµ РѕСЂСѓР¶РёРµ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Только лучшее. Ты же знаешь.
+	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //РўРѕР»СЊРєРѕ Р»СѓС‡С€РµРµ. РўС‹ Р¶Рµ Р·РЅР°РµС€СЊ.
 };
   
 ///////////////////////////////////////////////////////////////////////
@@ -97,7 +97,7 @@ instance DIA_Bennet_DI_Smith		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_Smith_Condition;
 	information	 = 	DIA_Bennet_DI_Smith_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Ты можешь обучить меня своему мастерству?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРІРѕРµРјСѓ РјР°СЃС‚РµСЂСЃС‚РІСѓ?";
 };
 
 func int DIA_Bennet_DI_Smith_Condition ()
@@ -111,15 +111,15 @@ func int DIA_Bennet_DI_Smith_Condition ()
 
 func void DIA_Bennet_DI_Smith_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //Ты можешь обучить меня своему мастерству?
-	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Это зависит от того, что ты хочешь научиться делать.
+	AI_Output			(other, self, "DIA_Bennet_DI_Smith_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРІРѕРµРјСѓ РјР°СЃС‚РµСЂСЃС‚РІСѓ?
+	AI_Output			(self, other, "DIA_Bennet_DI_Smith_06_01"); //Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ РґРµР»Р°С‚СЊ.
 
 	Info_ClearChoices (DIA_Bennet_DI_Smith);
 	Info_AddChoice	    (DIA_Bennet_DI_Smith, DIALOG_BACK, DIA_Bennet_DI_Smith_BACK);
 	
 	if ( PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice		(DIA_Bennet_DI_Smith, B_BuildLearnString("Научиться кузнечному делу"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Bennet_DI_Smith_Common);
+		Info_AddChoice		(DIA_Bennet_DI_Smith, B_BuildLearnString("РќР°СѓС‡РёС‚СЊСЃСЏ РєСѓР·РЅРµС‡РЅРѕРјСѓ РґРµР»Сѓ"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Bennet_DI_Smith_Common);
 	};
 	if ( PLAYER_TALENT_SMITH[WEAPON_Common] == TRUE)
 	{
@@ -220,7 +220,7 @@ INSTANCE DIA_Bennet_TeachSTR (C_INFO)
 	condition	= DIA_Bennet_TeachSTR_Condition;
 	information	= DIA_Bennet_TeachSTR_Info;
 	permanent	= TRUE;
-	description = "Я хочу стать сильнее.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };                       
 
 FUNC INT DIA_Bennet_TeachSTR_Condition()
@@ -233,8 +233,8 @@ FUNC INT DIA_Bennet_TeachSTR_Condition()
  
 FUNC VOID DIA_Bennet_TeachSTR_Info()
 {	
-	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Я хочу стать сильнее.
-	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //В наше время твердая рука никогда не помешает.
+	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
+	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //Р’ РЅР°С€Рµ РІСЂРµРјСЏ С‚РІРµСЂРґР°СЏ СЂСѓРєР° РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°РµС‚.
 	
 	Info_ClearChoices (DIA_Bennet_TeachSTR);
 	Info_AddChoice		(DIA_Bennet_TeachSTR, DIALOG_BACK, DIA_Bennet_TeachSTR_Back);
@@ -269,7 +269,7 @@ instance DIA_Bennet_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Bennet_DI_DragonEgg_Condition;
 	information	 = 	DIA_Bennet_DI_DragonEgg_Info;
 
-	description	 = 	"У меня есть драконье яйцо.";
+	description	 = 	"РЈ РјРµРЅСЏ РµСЃС‚СЊ РґСЂР°РєРѕРЅСЊРµ СЏР№С†Рѕ.";
 };
 
 func int DIA_Bennet_DI_DragonEgg_Condition ()
@@ -282,10 +282,10 @@ func int DIA_Bennet_DI_DragonEgg_Condition ()
 
 func void DIA_Bennet_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //У меня есть драконье яйцо.
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //И?
-	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Ну. Я подумал...
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Я знаю, о чем ты думаешь. Забудь об этом и оставь яйцо себе. Мне оно не нужно.
+	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґСЂР°РєРѕРЅСЊРµ СЏР№С†Рѕ.
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Р?
+	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //РќСѓ. РЇ РїРѕРґСѓРјР°Р»...
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //РЇ Р·РЅР°СЋ, Рѕ С‡РµРј С‚С‹ РґСѓРјР°РµС€СЊ. Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј Рё РѕСЃС‚Р°РІСЊ СЏР№С†Рѕ СЃРµР±Рµ. РњРЅРµ РѕРЅРѕ РЅРµ РЅСѓР¶РЅРѕ.
 	B_GivePlayerXP (XP_Ambient);
 };
 	
@@ -300,7 +300,7 @@ instance DIA_Bennet_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Bennet_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Мы сделали все, что было нужно сделать.";
+	description	 = 	"РњС‹ СЃРґРµР»Р°Р»Рё РІСЃРµ, С‡С‚Рѕ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.";
 };
 
 func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
@@ -313,8 +313,8 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
 
 func void DIA_Bennet_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Мы сделали все, что было нужно сделать.
-	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Рад слышать это. Мне уже успела надоесть эта старая кузница. Я хочу опять стоять на твердой земле.
+	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //РњС‹ СЃРґРµР»Р°Р»Рё РІСЃРµ, С‡С‚Рѕ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Р Р°Рґ СЃР»С‹С€Р°С‚СЊ СЌС‚Рѕ. РњРЅРµ СѓР¶Рµ СѓСЃРїРµР»Р° РЅР°РґРѕРµСЃС‚СЊ СЌС‚Р° СЃС‚Р°СЂР°СЏ РєСѓР·РЅРёС†Р°. РЇ С…РѕС‡Сѓ РѕРїСЏС‚СЊ СЃС‚РѕСЏС‚СЊ РЅР° С‚РІРµСЂРґРѕР№ Р·РµРјР»Рµ.
 	AI_StopProcessInfos (self);
 };
 

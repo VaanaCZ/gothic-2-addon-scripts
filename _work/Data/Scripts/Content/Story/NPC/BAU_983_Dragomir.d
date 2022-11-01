@@ -1,7 +1,7 @@
 INSTANCE BAU_983_Dragomir (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Äðàãîìèð";
+	name 		= "Ð”Ñ€Ð°Ð³Ð¾Ð¼Ð¸Ñ€";
 	guild 		= GIL_OUT;
 	id 			= 983;
 	voice 		= 12;
@@ -23,7 +23,7 @@ INSTANCE BAU_983_Dragomir (Npc_Default)
 	
 		
 	// ------ visuals ------																			
-	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Tough_Lee_ähnlich, BodyTex_N, ITAR_Leather_L);		
+	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Tough_Lee_Ð´hnlich, BodyTex_N, ITAR_Leather_L);		
 	Mdl_SetModelFatness	(self, 1);
 	Mdl_ApplyOverlayMds	(self, "Humans_Relaxed.mds"); 
 	

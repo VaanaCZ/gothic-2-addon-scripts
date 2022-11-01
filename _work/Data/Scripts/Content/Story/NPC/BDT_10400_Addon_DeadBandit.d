@@ -1,7 +1,7 @@
 instance BDT_10400_Addon_DeadBandit (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Бандит";
+	name 		= "Р‘Р°РЅРґРёС‚";
 	guild 		= GIL_BDT;
 	id 			= 10400;
 	voice 		= 4;

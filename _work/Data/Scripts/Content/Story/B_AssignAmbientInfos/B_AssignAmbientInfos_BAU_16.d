@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_16_JOIN(C_INFO)
 	condition	= DIA_BAU_16_JOIN_Condition;
 	information	= DIA_BAU_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "Расскажи мне подробнее об этих наемниках!";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± СЌС‚РёС… РЅР°РµРјРЅРёРєР°С…!";
 };                       
 
 FUNC INT DIA_BAU_16_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //Расскажи мне подробнее об этих наемниках!
-	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Они слоняются без дела по ферме, дерутся иногда и думают, что это забавно.
+	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± СЌС‚РёС… РЅР°РµРјРЅРёРєР°С…!
+	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //РћРЅРё СЃР»РѕРЅСЏСЋС‚СЃСЏ Р±РµР· РґРµР»Р° РїРѕ С„РµСЂРјРµ, РґРµСЂСѓС‚СЃСЏ РёРЅРѕРіРґР° Рё РґСѓРјР°СЋС‚, С‡С‚Рѕ СЌС‚Рѕ Р·Р°Р±Р°РІРЅРѕ.
 };
 
 // *************************************************************************
@@ -55,7 +55,7 @@ INSTANCE DIA_BAU_16_PEOPLE(C_INFO)
 	condition	= DIA_BAU_16_PEOPLE_Condition;
 	information	= DIA_BAU_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Кто командует здесь?";
+	description = "РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_BAU_16_PEOPLE_Condition()
@@ -65,9 +65,9 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Кто заправляет здесь?
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //Наемники, конечно.
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Онар платит им, но большую часть времени они делают, что им захочется.
+	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //РљС‚Рѕ Р·Р°РїСЂР°РІР»СЏРµС‚ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //РќР°РµРјРЅРёРєРё, РєРѕРЅРµС‡РЅРѕ.
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //РћРЅР°СЂ РїР»Р°С‚РёС‚ РёРј, РЅРѕ Р±РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ РІСЂРµРјРµРЅРё РѕРЅРё РґРµР»Р°СЋС‚, С‡С‚Рѕ РёРј Р·Р°С…РѕС‡РµС‚СЃСЏ.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_BAU_16_LOCATION(C_INFO)
 	condition	= DIA_BAU_16_LOCATION_Condition;
 	information	= DIA_BAU_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Что ты можешь рассказать мне об этом квартале?";
+	description = "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ РѕР± СЌС‚РѕРј РєРІР°СЂС‚Р°Р»Рµ?";
 };                       
 
 FUNC INT DIA_BAU_16_LOCATION_Condition()
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Что ты можешь рассказать интересного об этой местности?
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Здесь есть три фермы. Ферма Онара на востоке, а Секоба на севере долины.
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Отсюда в горы на юго-западе, ведет каменная лестница. Там находится ферма Бенгара.
+	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РѕР± СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё?
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Р—РґРµСЃСЊ РµСЃС‚СЊ С‚СЂРё С„РµСЂРјС‹. Р¤РµСЂРјР° РћРЅР°СЂР° РЅР° РІРѕСЃС‚РѕРєРµ, Р° РЎРµРєРѕР±Р° РЅР° СЃРµРІРµСЂРµ РґРѕР»РёРЅС‹.
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //РћС‚СЃСЋРґР° РІ РіРѕСЂС‹ РЅР° СЋРіРѕ-Р·Р°РїР°РґРµ, РІРµРґРµС‚ РєР°РјРµРЅРЅР°СЏ Р»РµСЃС‚РЅРёС†Р°. РўР°Рј РЅР°С…РѕРґРёС‚СЃСЏ С„РµСЂРјР° Р‘РµРЅРіР°СЂР°.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_16_STANDARD(C_INFO)
 	condition	= DIA_BAU_16_STANDARD_Condition;
 	information	= DIA_BAU_16_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Что нового?";
+	description = "Р§С‚Рѕ РЅРѕРІРѕРіРѕ?";
 };                       
 func INT DIA_BAU_16_STANDARD_Condition()
 {
@@ -111,31 +111,31 @@ func INT DIA_BAU_16_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Что новенького?
+	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Солдаты из города больше не забирают наш скот и урожай! Мы больше не играем в эти игры. Теперь мы способны защитить себя!
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //РЎРѕР»РґР°С‚С‹ РёР· РіРѕСЂРѕРґР° Р±РѕР»СЊС€Рµ РЅРµ Р·Р°Р±РёСЂР°СЋС‚ РЅР°С€ СЃРєРѕС‚ Рё СѓСЂРѕР¶Р°Р№! РњС‹ Р±РѕР»СЊС€Рµ РЅРµ РёРіСЂР°РµРј РІ СЌС‚Рё РёРіСЂС‹. РўРµРїРµСЂСЊ РјС‹ СЃРїРѕСЃРѕР±РЅС‹ Р·Р°С‰РёС‚РёС‚СЊ СЃРµР±СЏ!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Говорят, что в Долине Рудников собирается армия зла. Скоро они будут здесь.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ СЃРѕР±РёСЂР°РµС‚СЃСЏ Р°СЂРјРёСЏ Р·Р»Р°. РЎРєРѕСЂРѕ РѕРЅРё Р±СѓРґСѓС‚ Р·РґРµСЃСЊ.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Я слышала, что в Долине Рудников появились драконы. Но мне не очень-то верится в это.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //РЇ СЃР»С‹С€Р°Р»Р°, С‡С‚Рѕ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РїРѕСЏРІРёР»РёСЃСЊ РґСЂР°РєРѕРЅС‹. РќРѕ РјРЅРµ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ РІРµСЂРёС‚СЃСЏ РІ СЌС‚Рѕ.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //Кое-кто из наемников ушел отсюда. Я даже не знаю, хорошо это или плохо.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //РљРѕРµ-РєС‚Рѕ РёР· РЅР°РµРјРЅРёРєРѕРІ СѓС€РµР» РѕС‚СЃСЋРґР°. РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, С…РѕСЂРѕС€Рѕ СЌС‚Рѕ РёР»Рё РїР»РѕС…Рѕ.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Паладины отправились в Долину Рудников - интересно, зачем?
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //РџР°Р»Р°РґРёРЅС‹ РѕС‚РїСЂР°РІРёР»РёСЃСЊ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ - РёРЅС‚РµСЂРµСЃРЅРѕ, Р·Р°С‡РµРј?
 	};
 };
 

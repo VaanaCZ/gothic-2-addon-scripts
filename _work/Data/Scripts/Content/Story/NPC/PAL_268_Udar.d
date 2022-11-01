@@ -2,7 +2,7 @@
 instance PAL_268_Udar  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Óäàð";
+	name 		= "Ð£Ð´Ð°Ñ€";
 	guild 		= GIL_PAL;
 	id 			= 268;
 	voice 		= 9;

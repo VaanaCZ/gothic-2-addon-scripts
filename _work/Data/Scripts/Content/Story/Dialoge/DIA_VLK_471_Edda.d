@@ -42,9 +42,9 @@ FUNC INT DIA_Edda_Hallo_Condition()
 };
 FUNC VOID DIA_Edda_Hallo_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Что ты варишь?
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Уху. Может, она не особенно вкусная, но, по крайней мере, это горячая еда.
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //Могу налить тебе тарелку, если хочешь.
+	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Р§С‚Рѕ С‚С‹ РІР°СЂРёС€СЊ?
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //РЈС…Сѓ. РњРѕР¶РµС‚, РѕРЅР° РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РІРєСѓСЃРЅР°СЏ, РЅРѕ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЌС‚Рѕ РіРѕСЂСЏС‡Р°СЏ РµРґР°.
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //РњРѕРіСѓ РЅР°Р»РёС‚СЊ С‚РµР±Рµ С‚Р°СЂРµР»РєСѓ, РµСЃР»Рё С…РѕС‡РµС€СЊ.
 };
 
 // ************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_Edda_Stadt(C_INFO)
 	condition	= DIA_Edda_Stadt_Condition;
 	information	= DIA_Edda_Stadt_Info;
 	permanent	= FALSE;
-	description = "Что ты можешь рассказать мне о городе?";
+	description = "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ РіРѕСЂРѕРґРµ?";
 };                       
 
 FUNC INT DIA_Edda_Stadt_Condition()
@@ -66,12 +66,12 @@ FUNC INT DIA_Edda_Stadt_Condition()
 };
 FUNC VOID DIA_Edda_Stadt_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Что ты можешь рассказать мне о городе?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //Большинство горожан опасаются воров. Поэтому лучше не входить в чужие дома.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Но если ты ищешь, где остановиться на ночь, можешь поспать в моей хижине. Там есть еще одна кровать.
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //А ты не боишься воров?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Единственная ценная вещь, что была у меня, уже пропала.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //Кто-то украл мою статую Инноса.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ РіРѕСЂРѕРґРµ?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РіРѕСЂРѕР¶Р°РЅ РѕРїР°СЃР°СЋС‚СЃСЏ РІРѕСЂРѕРІ. РџРѕСЌС‚РѕРјСѓ Р»СѓС‡С€Рµ РЅРµ РІС…РѕРґРёС‚СЊ РІ С‡СѓР¶РёРµ РґРѕРјР°.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //РќРѕ РµСЃР»Рё С‚С‹ РёС‰РµС€СЊ, РіРґРµ РѕСЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ РЅР° РЅРѕС‡СЊ, РјРѕР¶РµС€СЊ РїРѕСЃРїР°С‚СЊ РІ РјРѕРµР№ С…РёР¶РёРЅРµ. РўР°Рј РµСЃС‚СЊ РµС‰Рµ РѕРґРЅР° РєСЂРѕРІР°С‚СЊ.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Рђ С‚С‹ РЅРµ Р±РѕРёС€СЊСЃСЏ РІРѕСЂРѕРІ?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Р•РґРёРЅСЃС‚РІРµРЅРЅР°СЏ С†РµРЅРЅР°СЏ РІРµС‰СЊ, С‡С‚Рѕ Р±С‹Р»Р° Сѓ РјРµРЅСЏ, СѓР¶Рµ РїСЂРѕРїР°Р»Р°.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //РљС‚Рѕ-С‚Рѕ СѓРєСЂР°Р» РјРѕСЋ СЃС‚Р°С‚СѓСЋ РРЅРЅРѕСЃР°.
 	
 	Edda_Schlafplatz = TRUE;
 	Wld_AssignRoomToGuild ("hafen08",	GIL_NONE);
@@ -86,7 +86,7 @@ INSTANCE DIA_Edda_Kochen(C_INFO)
 	condition	= DIA_Edda_Kochen_Condition;
 	information	= DIA_Edda_Kochen_Info;
 	permanent	= FALSE;
-	description = "Ты можешь сварить для меня суп?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ СЃРІР°СЂРёС‚СЊ РґР»СЏ РјРµРЅСЏ СЃСѓРї?";
 };                       
 
 FUNC INT DIA_Edda_Kochen_Condition()
@@ -95,11 +95,11 @@ FUNC INT DIA_Edda_Kochen_Condition()
 };
 FUNC VOID DIA_Edda_Kochen_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //Ты можешь сварить суп для меня?
-	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //Я готовлю для всех. Для тебя тоже, если захочешь. Все, что мне нужно - это чтобы ты принес мне рыбу.
+	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРІР°СЂРёС‚СЊ СЃСѓРї РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //РЇ РіРѕС‚РѕРІР»СЋ РґР»СЏ РІСЃРµС…. Р”Р»СЏ С‚РµР±СЏ С‚РѕР¶Рµ, РµСЃР»Рё Р·Р°С…РѕС‡РµС€СЊ. Р’СЃРµ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ - СЌС‚Рѕ С‡С‚РѕР±С‹ С‚С‹ РїСЂРёРЅРµСЃ РјРЅРµ СЂС‹Р±Сѓ.
 };			
 // ************************************************************
-// 		tдgliche Suppe abholen
+// 		tРґgliche Suppe abholen
 // ************************************************************
 INSTANCE DIA_Edda_Suppe(C_INFO)
 {
@@ -108,7 +108,7 @@ INSTANCE DIA_Edda_Suppe(C_INFO)
 	condition	= DIA_Edda_Suppe_Condition;
 	information	= DIA_Edda_Suppe_Info;
 	permanent	= TRUE;
-	description = "Ты можешь сварить для меня суп?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ СЃРІР°СЂРёС‚СЊ РґР»СЏ РјРµРЅСЏ СЃСѓРї?";
 };                       
 
 FUNC INT DIA_Edda_Suppe_Condition()
@@ -120,29 +120,29 @@ FUNC INT DIA_Edda_Suppe_Condition()
 };
 FUNC VOID DIA_Edda_Suppe_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //Ты можешь сварить для меня суп?
+	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРІР°СЂРёС‚СЊ РґР»СЏ РјРµРЅСЏ СЃСѓРї?
 	
 	if (Wld_GetDay() == 0)
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //С завтрашнего дня ты можешь приходить и получать суп каждый день.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //РЎ Р·Р°РІС‚СЂР°С€РЅРµРіРѕ РґРЅСЏ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёС…РѕРґРёС‚СЊ Рё РїРѕР»СѓС‡Р°С‚СЊ СЃСѓРї РєР°Р¶РґС‹Р№ РґРµРЅСЊ.
 	}
 	else if (Edda_Day != Wld_GetDay())
 	{
 		if B_GiveInvItems (other, self, ItFo_Fish,1)
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //Нет ничего проще. Вот, держи тарелку.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //РќРµС‚ РЅРёС‡РµРіРѕ РїСЂРѕС‰Рµ. Р’РѕС‚, РґРµСЂР¶Рё С‚Р°СЂРµР»РєСѓ.
 			B_GiveInvItems (self, other, ItFo_Fishsoup, 1);
 			Edda_Day = Wld_GetDay ();
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //Принеси мне рыбу, и я сварю тебе вкусный суп.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //РџСЂРёРЅРµСЃРё РјРЅРµ СЂС‹Р±Сѓ, Рё СЏ СЃРІР°СЂСЋ С‚РµР±Рµ РІРєСѓСЃРЅС‹Р№ СЃСѓРї.
 		};
 		
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_03"); //Нет, не сегодня. Приходи завтра.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_03"); //РќРµС‚, РЅРµ СЃРµРіРѕРґРЅСЏ. РџСЂРёС…РѕРґРё Р·Р°РІС‚СЂР°.
 	};
 };			
 // ************************************************************
@@ -155,7 +155,7 @@ INSTANCE DIA_Edda_Statue(C_INFO)
 	condition	= DIA_Edda_Statue_Condition;
 	information	= DIA_Edda_Statue_Info;
 	permanent	= FALSE;
-	description = "Посмотри, я принес статую Инноса для тебя.";
+	description = "РџРѕСЃРјРѕС‚СЂРё, СЏ РїСЂРёРЅРµСЃ СЃС‚Р°С‚СѓСЋ РРЅРЅРѕСЃР° РґР»СЏ С‚РµР±СЏ.";
 };                       
 FUNC INT DIA_Edda_Statue_Condition()
 {	
@@ -167,9 +167,9 @@ FUNC INT DIA_Edda_Statue_Condition()
 };
 FUNC VOID DIA_Edda_Statue_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //Посмотри, я принес статую Инноса для тебя.
-	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //Ох - огромное тебе спасибо. Да не оставит тебя свет Инноса...
-	AI_Output (other ,self,"DIA_Edda_Statue_15_02"); //Не стоит благодарностей.
+	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //РџРѕСЃРјРѕС‚СЂРё, СЏ РїСЂРёРЅРµСЃ СЃС‚Р°С‚СѓСЋ РРЅРЅРѕСЃР° РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //РћС… - РѕРіСЂРѕРјРЅРѕРµ С‚РµР±Рµ СЃРїР°СЃРёР±Рѕ. Р”Р° РЅРµ РѕСЃС‚Р°РІРёС‚ С‚РµР±СЏ СЃРІРµС‚ РРЅРЅРѕСЃР°...
+	AI_Output (other ,self,"DIA_Edda_Statue_15_02"); //РќРµ СЃС‚РѕРёС‚ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚РµР№.
 	
 	B_GiveInvItems (other, self,ItMI_InnosStatue, 1); 
 	B_GivePlayerXP (XP_Edda_Statue);
@@ -186,7 +186,7 @@ INSTANCE DIA_Edda_PICKPOCKET (C_INFO)
 	condition	= DIA_Edda_PICKPOCKET_Condition;
 	information	= DIA_Edda_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть ее статую будет легче легкого)";
+	description = "(РЈРєСЂР°СЃС‚СЊ РµРµ СЃС‚Р°С‚СѓСЋ Р±СѓРґРµС‚ Р»РµРіС‡Рµ Р»РµРіРєРѕРіРѕ)";
 };                       
 
 FUNC INT DIA_Edda_PICKPOCKET_Condition()

@@ -6,7 +6,7 @@ func void B_UseItem (var C_NPC slf, var int itmInstance)
 {
 	//EXIT IF
 	
-	// ------ nicht bei sitzenden Typen --> Dialogh‰nger!!! ------
+	// ------ nicht bei sitzenden Typen --> Dialogh–¥nger!!! ------
 	if (C_BodyStateContains (slf, BS_SIT))
 	{
 		return;

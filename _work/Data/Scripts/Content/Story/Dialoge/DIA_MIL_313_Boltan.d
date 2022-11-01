@@ -8,7 +8,7 @@ INSTANCE DIA_Boltan_EXIT   (C_INFO)
 	condition   = DIA_Boltan_EXIT_Condition;
 	information = DIA_Boltan_EXIT_Info;
 	permanent   = TRUE;
-	description = "Мне нужно идти.";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё.";
 };
 
 FUNC INT DIA_Boltan_EXIT_Condition()
@@ -42,7 +42,7 @@ func int DIA_Boltan_HALLO_Condition ()
 
 func void DIA_Boltan_HALLO_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_00"); //Что тебе нужно?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 
 // ************************************************
@@ -55,7 +55,7 @@ instance DIA_Boltan_ToConvicts		(C_INFO)
 	condition	= DIA_Boltan_ToConvicts_Condition;
 	information = DIA_Boltan_ToConvicts_Info;
 	permanent 	= TRUE;
-	description = "Я хочу увидеть заключенных.";
+	description = "РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р·Р°РєР»СЋС‡РµРЅРЅС‹С….";
 };
 
 func int DIA_Boltan_ToConvicts_Condition ()
@@ -65,7 +65,7 @@ func int DIA_Boltan_ToConvicts_Condition ()
 
 func void DIA_Boltan_ToConvicts_Info ()
 {
-	AI_Output (other, self, "DIA_Boltan_Add_15_01"); //Я хочу увидеть заключенных.
+	AI_Output (other, self, "DIA_Boltan_Add_15_01"); //РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р·Р°РєР»СЋС‡РµРЅРЅС‹С….
 	
 	
 	if (Kapitel == 3) 
@@ -73,11 +73,11 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Да, иди попрощайся со своим приятелем.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Р”Р°, РёРґРё РїРѕРїСЂРѕС‰Р°Р№СЃСЏ СЃРѕ СЃРІРѕРёРј РїСЂРёСЏС‚РµР»РµРј.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //Мы арестовали эту свинью, что убила паладина Лотара.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //РњС‹ Р°СЂРµСЃС‚РѕРІР°Р»Рё СЌС‚Сѓ СЃРІРёРЅСЊСЋ, С‡С‚Рѕ СѓР±РёР»Р° РїР°Р»Р°РґРёРЅР° Р›РѕС‚Р°СЂР°.
 		};
 	}
 	else if (Canthar_Ausgeliefert == FALSE)
@@ -85,21 +85,21 @@ func void DIA_Boltan_ToConvicts_Info ()
 	&& (Rengaru_Ausgeliefert == FALSE)
 	&& (Nagur_Ausgeliefert == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Все камеры сейчас пусты.
+		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Р’СЃРµ РєР°РјРµСЂС‹ СЃРµР№С‡Р°СЃ РїСѓСЃС‚С‹.
 	}
 	else
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //Хорошо, приятель.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //РҐРѕСЂРѕС€Рѕ, РїСЂРёСЏС‚РµР»СЊ.
 		}
 		else if (other.guild == GIL_PAL) || (other.guild == GIL_KDF)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_05"); //Конечно.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_05"); //РљРѕРЅРµС‡РЅРѕ.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //Иди, но не задерживайся там слишком долго, понятно?
+			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //РРґРё, РЅРѕ РЅРµ Р·Р°РґРµСЂР¶РёРІР°Р№СЃСЏ С‚Р°Рј СЃР»РёС€РєРѕРј РґРѕР»РіРѕ, РїРѕРЅСЏС‚РЅРѕ?
 		};
 	};
 };		
@@ -129,9 +129,9 @@ func int DIA_Boltan_HalloBennet_Condition ()
 
 func void DIA_Boltan_HalloBennet_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Ты ведь пришел не затем, чтобы вызволить отсюда своего приятеля, нет?
-	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Забудь об этом! Как только я подниму тревогу, парни будут здесь в мгновение ока!
-	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //И тогда мы сделаем из тебя котлету! (грязный смех)
+	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //РўС‹ РІРµРґСЊ РїСЂРёС€РµР» РЅРµ Р·Р°С‚РµРј, С‡С‚РѕР±С‹ РІС‹Р·РІРѕР»РёС‚СЊ РѕС‚СЃСЋРґР° СЃРІРѕРµРіРѕ РїСЂРёСЏС‚РµР»СЏ, РЅРµС‚?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј! РљР°Рє С‚РѕР»СЊРєРѕ СЏ РїРѕРґРЅРёРјСѓ С‚СЂРµРІРѕРіСѓ, РїР°СЂРЅРё Р±СѓРґСѓС‚ Р·РґРµСЃСЊ РІ РјРіРЅРѕРІРµРЅРёРµ РѕРєР°!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //Р С‚РѕРіРґР° РјС‹ СЃРґРµР»Р°РµРј РёР· С‚РµР±СЏ РєРѕС‚Р»РµС‚Сѓ! (РіСЂСЏР·РЅС‹Р№ СЃРјРµС…)
 };		
 	
 // ************************************************
@@ -159,10 +159,10 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 
 func void DIA_Boltan_HalloCanthar_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Эй, ты тот парень, что написал жалобу на Кантара, тогровца.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Много людей приходило, чтобы похлопотать за него. Уважаемых людей.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Должно быть, произошло какое-то недоразумение. Такое бывает.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //В будущем тебе стоит быть тщательнее выбирать, кого ты хочешь упечь в тюрьму.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Р­Р№, С‚С‹ С‚РѕС‚ РїР°СЂРµРЅСЊ, С‡С‚Рѕ РЅР°РїРёСЃР°Р» Р¶Р°Р»РѕР±Сѓ РЅР° РљР°РЅС‚Р°СЂР°, С‚РѕРіСЂРѕРІС†Р°.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //РњРЅРѕРіРѕ Р»СЋРґРµР№ РїСЂРёС…РѕРґРёР»Рѕ, С‡С‚РѕР±С‹ РїРѕС…Р»РѕРїРѕС‚Р°С‚СЊ Р·Р° РЅРµРіРѕ. РЈРІР°Р¶Р°РµРјС‹С… Р»СЋРґРµР№.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РїСЂРѕРёР·РѕС€Р»Рѕ РєР°РєРѕРµ-С‚Рѕ РЅРµРґРѕСЂР°Р·СѓРјРµРЅРёРµ. РўР°РєРѕРµ Р±С‹РІР°РµС‚.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //Р’ Р±СѓРґСѓС‰РµРј С‚РµР±Рµ СЃС‚РѕРёС‚ Р±С‹С‚СЊ С‚С‰Р°С‚РµР»СЊРЅРµРµ РІС‹Р±РёСЂР°С‚СЊ, РєРѕРіРѕ С‚С‹ С…РѕС‡РµС€СЊ СѓРїРµС‡СЊ РІ С‚СЋСЂСЊРјСѓ.
 };		
 
 

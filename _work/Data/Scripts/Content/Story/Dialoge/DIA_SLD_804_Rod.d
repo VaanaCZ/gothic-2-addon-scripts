@@ -34,7 +34,7 @@ instance DIA_Rod_Hello (C_INFO)
 	condition	= DIA_Rod_Hello_Condition;
 	information	= DIA_Rod_Hello_Info;
 	permanent	= FALSE;
-	description	= "Как дела?"; 
+	description	= "РљР°Рє РґРµР»Р°?"; 
 };                       
 
 FUNC INT DIA_Rod_Hello_Condition()
@@ -44,14 +44,14 @@ FUNC INT DIA_Rod_Hello_Condition()
  
 FUNC VOID DIA_Rod_Hello_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Hello_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_Rod_Hello_15_00"); //РљР°Рє РґРµР»Р°?
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Rod_Hello_06_01"); //Что ТЕБЕ нужно от меня, детка?
+		AI_Output (self, other, "DIA_Rod_Hello_06_01"); //Р§С‚Рѕ РўР•Р‘Р• РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ, РґРµС‚РєР°?
 	
 			if (other.guild == GIL_KDF)
 			{
-				AI_Output (self, other, "DIA_Rod_Hello_06_02"); //Что, для тебя не нашлось места в монастыре?
+				AI_Output (self, other, "DIA_Rod_Hello_06_02"); //Р§С‚Рѕ, РґР»СЏ С‚РµР±СЏ РЅРµ РЅР°С€Р»РѕСЃСЊ РјРµСЃС‚Р° РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
 			};	
 	};
 };
@@ -68,7 +68,7 @@ instance DIA_Rod_WannaLearn (C_INFO)
 	condition	= DIA_Rod_WannaLearn_Condition;
 	information	= DIA_Rod_WannaLearn_Info;
 	permanent	= TRUE;
-	description	= "Ты можешь обучить меня владению двуручным оружием?"; 
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РІР»Р°РґРµРЅРёСЋ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј?"; 
 };                       
 
 FUNC INT DIA_Rod_WannaLearn_Condition()
@@ -81,17 +81,17 @@ FUNC INT DIA_Rod_WannaLearn_Condition()
  
 FUNC VOID DIA_Rod_WannaLearn_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_WannaLearn_15_00"); //Ты можешь обучить меня владению двуручным оружием?
+	AI_Output (other, self, "DIA_Rod_WannaLearn_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РІР»Р°РґРµРЅРёСЋ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј?
 		
 	if (Rod_WetteGewonnen == TRUE)
 	|| (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_01"); //Я неплохой боец, но это не означает, что я хороший учитель.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_02"); //И все же я думаю, я могу показать тебе основы боя двуручным оружием.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_01"); //РЇ РЅРµРїР»РѕС…РѕР№ Р±РѕРµС†, РЅРѕ СЌС‚Рѕ РЅРµ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ СЏ С…РѕСЂРѕС€РёР№ СѓС‡РёС‚РµР»СЊ.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_02"); //Р РІСЃРµ Р¶Рµ СЏ РґСѓРјР°СЋ, СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ РѕСЃРЅРѕРІС‹ Р±РѕСЏ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.
 		
 		if (Npc_HasItems (self, ItMw_2h_Rod) == 0)
 		{
-			AI_Output (self, other, "DIA_Rod_WannaLearn_06_03"); //Да, если ты отдашь мне назад мой меч.
+			AI_Output (self, other, "DIA_Rod_WannaLearn_06_03"); //Р”Р°, РµСЃР»Рё С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ РЅР°Р·Р°Рґ РјРѕР№ РјРµС‡.
 		}
 		else
 		{
@@ -100,8 +100,8 @@ FUNC VOID DIA_Rod_WannaLearn_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //Послушай, мальчик. Чтобы владеть двуручным оружием, нужно обладать недюжинной силой.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //Почему бы тебе не пойти на пастбище и не поиграть в хоровод с овечками?
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //РџРѕСЃР»СѓС€Р°Р№, РјР°Р»СЊС‡РёРє. Р§С‚РѕР±С‹ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј, РЅСѓР¶РЅРѕ РѕР±Р»Р°РґР°С‚СЊ РЅРµРґСЋР¶РёРЅРЅРѕР№ СЃРёР»РѕР№.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //РџРѕС‡РµРјСѓ Р±С‹ С‚РµР±Рµ РЅРµ РїРѕР№С‚Рё РЅР° РїР°СЃС‚Р±РёС‰Рµ Рё РЅРµ РїРѕРёРіСЂР°С‚СЊ РІ С…РѕСЂРѕРІРѕРґ СЃ РѕРІРµС‡РєР°РјРё?
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -119,7 +119,7 @@ INSTANCE DIA_Rod_Teach(C_INFO)
 	condition	= DIA_Rod_Teach_Condition;
 	information	= DIA_Rod_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу научиться лучше владеть двуручным оружием!";
+	description = "РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Р»СѓС‡С€Рµ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј!";
 };                       
 
 FUNC INT DIA_Rod_Teach_Condition()
@@ -132,7 +132,7 @@ FUNC INT DIA_Rod_Teach_Condition()
  
 FUNC VOID DIA_Rod_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //Я хочу научиться лучше владеть двуручным оружием!
+	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //РЇ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ Р»СѓС‡С€Рµ РІР»Р°РґРµС‚СЊ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј!
 
 	Rod_Merke_2h = other.HitChance[NPC_TALENT_2H];
 	
@@ -146,7 +146,7 @@ FUNC VOID DIA_Rod_Teach_Back ()
 {
 	if (Rod_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //Ты уже владеешь им лучше.
+		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //РўС‹ СѓР¶Рµ РІР»Р°РґРµРµС€СЊ РёРј Р»СѓС‡С€Рµ.
 	};
 	
 	Info_ClearChoices (DIA_Rod_Teach);
@@ -183,7 +183,7 @@ instance DIA_Rod_WannaJoin (C_INFO)
 	condition	= DIA_Rod_WannaJoin_Condition;
 	information	= DIA_Rod_WannaJoin_Info;
 	permanent	= TRUE;
-	description	= "Я хочу присоединиться к наемникам!"; 
+	description	= "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!"; 
 };                       
 
 FUNC INT DIA_Rod_WannaJoin_Condition()
@@ -196,32 +196,32 @@ FUNC INT DIA_Rod_WannaJoin_Condition()
  
 FUNC VOID DIA_Rod_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_WannaJoin_15_00"); //Я хочу присоединиться к наемникам!
+	AI_Output (other, self, "DIA_Rod_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!
 	
 	if (Npc_HasItems (self, ItMw_2h_Rod) == 0)
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_01"); //А как насчет того, чтобы сначала вернуть мне мой меч, а?
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_01"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ С‚РѕРіРѕ, С‡С‚РѕР±С‹ СЃРЅР°С‡Р°Р»Р° РІРµСЂРЅСѓС‚СЊ РјРЅРµ РјРѕР№ РјРµС‡, Р°?
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| 		(Rod_WetteGewonnen == TRUE)
 	{
 		if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 		{	
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //Хорошо. Я не держу обиды.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //Ты умеешь сражаться, и только это имеет значение.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //Большинство парней здесь не обращает внимание на мелкие стычки между друзьями. Ты привыкнешь к этому.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //РҐРѕСЂРѕС€Рѕ. РЇ РЅРµ РґРµСЂР¶Сѓ РѕР±РёРґС‹.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //РўС‹ СѓРјРµРµС€СЊ СЃСЂР°Р¶Р°С‚СЊСЃСЏ, Рё С‚РѕР»СЊРєРѕ СЌС‚Рѕ РёРјРµРµС‚ Р·РЅР°С‡РµРЅРёРµ.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РїР°СЂРЅРµР№ Р·РґРµСЃСЊ РЅРµ РѕР±СЂР°С‰Р°РµС‚ РІРЅРёРјР°РЅРёРµ РЅР° РјРµР»РєРёРµ СЃС‚С‹С‡РєРё РјРµР¶РґСѓ РґСЂСѓР·СЊСЏРјРё. РўС‹ РїСЂРёРІС‹РєРЅРµС€СЊ Рє СЌС‚РѕРјСѓ.
 		}
 		else //WetteGewonnen
 		{
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_05"); //Ох, да, у тебя неплохой меч. Остальному ты научишься.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_05"); //РћС…, РґР°, Сѓ С‚РµР±СЏ РЅРµРїР»РѕС…РѕР№ РјРµС‡. РћСЃС‚Р°Р»СЊРЅРѕРјСѓ С‚С‹ РЅР°СѓС‡РёС€СЊСЃСЏ.
 		};
 		
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //Если тебе интересно мое мнение, то я не против.
-		B_LogEntry (TOPIC_SLDRespekt,"Я получу голос Рода, если я захочу присоединиться к наемникам.");
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //Р•СЃР»Рё С‚РµР±Рµ РёРЅС‚РµСЂРµСЃРЅРѕ РјРѕРµ РјРЅРµРЅРёРµ, С‚Рѕ СЏ РЅРµ РїСЂРѕС‚РёРІ.
+		B_LogEntry (TOPIC_SLDRespekt,"РЇ РїРѕР»СѓС‡Сѓ РіРѕР»РѕСЃ Р РѕРґР°, РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //У нас места для слабаков!
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //РЈ РЅР°СЃ РјРµСЃС‚Р° РґР»СЏ СЃР»Р°Р±Р°РєРѕРІ!
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -237,7 +237,7 @@ instance DIA_Rod_Duell (C_INFO)
 	condition	= DIA_Rod_Duell_Condition;
 	information	= DIA_Rod_Duell_Info;
 	permanent	= TRUE;
-	description	= "Похоже, мне нужно поучить тебя хорошим манерам, ты не против?"; 
+	description	= "РџРѕС…РѕР¶Рµ, РјРЅРµ РЅСѓР¶РЅРѕ РїРѕСѓС‡РёС‚СЊ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј, С‚С‹ РЅРµ РїСЂРѕС‚РёРІ?"; 
 };                       
 
 FUNC INT DIA_Rod_Duell_Condition()
@@ -259,14 +259,14 @@ FUNC INT DIA_Rod_Duell_Condition()
  
 FUNC VOID DIA_Rod_Duell_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Duell_15_00"); //Похоже, мне нужно поучить тебя хорошим манерам, ты не против?
+	AI_Output (other, self, "DIA_Rod_Duell_15_00"); //РџРѕС…РѕР¶Рµ, РјРЅРµ РЅСѓР¶РЅРѕ РїРѕСѓС‡РёС‚СЊ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј, С‚С‹ РЅРµ РїСЂРѕС‚РёРІ?
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_NONE)
 	{
-		AI_Output (self, other, "DIA_Rod_Duell_06_01"); //Давай, попробуй!
+		AI_Output (self, other, "DIA_Rod_Duell_06_01"); //Р”Р°РІР°Р№, РїРѕРїСЂРѕР±СѓР№!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_Duell_06_02"); //Ты ничему не учишься!
+		AI_Output (self, other, "DIA_Rod_Duell_06_02"); //РўС‹ РЅРёС‡РµРјСѓ РЅРµ СѓС‡РёС€СЊСЃСЏ!
 	};
 	
 	AI_StopProcessInfos(self);
@@ -284,7 +284,7 @@ instance DIA_Rod_StarkGenug (C_INFO)
 	condition	= DIA_Rod_StarkGenug_Condition;
 	information	= DIA_Rod_StarkGenug_Info;
 	permanent	= FALSE;
-	description	= "Я достаточно силен!"; 
+	description	= "РЇ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ!"; 
 };                       
 
 FUNC INT DIA_Rod_StarkGenug_Condition()
@@ -299,12 +299,12 @@ FUNC INT DIA_Rod_StarkGenug_Condition()
  
 FUNC VOID DIA_Rod_StarkGenug_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_StarkGenug_15_00"); //Я достаточно силен!
-	AI_Output (self, other, "DIA_Rod_StarkGenug_06_01"); //Чушь! Ты даже не смог ПОДНЯТЬ приличный меч вроде моего!
+	AI_Output (other, self, "DIA_Rod_StarkGenug_15_00"); //РЇ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ!
+	AI_Output (self, other, "DIA_Rod_StarkGenug_06_01"); //Р§СѓС€СЊ! РўС‹ РґР°Р¶Рµ РЅРµ СЃРјРѕРі РџРћР”РќРЇРўР¬ РїСЂРёР»РёС‡РЅС‹Р№ РјРµС‡ РІСЂРѕРґРµ РјРѕРµРіРѕ!
 	
 	Log_CreateTopic (Topic_RodWette,LOG_MISSION);
 	Log_SetTopicStatus (Topic_RodWette,LOG_RUNNING);
-	B_LogEntry (Topic_RodWette,"Наемник Род не думает, что я смогу удержать его меч.");
+	B_LogEntry (Topic_RodWette,"РќР°РµРјРЅРёРє Р РѕРґ РЅРµ РґСѓРјР°РµС‚, С‡С‚Рѕ СЏ СЃРјРѕРіСѓ СѓРґРµСЂР¶Р°С‚СЊ РµРіРѕ РјРµС‡.");
 };	
 	
 	
@@ -319,7 +319,7 @@ instance DIA_Rod_BINStarkGenug (C_INFO)
 	condition	= DIA_Rod_BINStarkGenug_Condition;
 	information	= DIA_Rod_BINStarkGenug_Info;
 	permanent	= FALSE;
-	description	= "Я сказал, я достаточно силен!"; 
+	description	= "РЇ СЃРєР°Р·Р°Р», СЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ!"; 
 };                       
 
 FUNC INT DIA_Rod_BINStarkGenug_Condition()
@@ -334,8 +334,8 @@ FUNC INT DIA_Rod_BINStarkGenug_Condition()
  
 FUNC VOID DIA_Rod_BINStarkGenug_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_BINStarkGenug_15_00"); //Я сказал, я достаточно силен!
-	AI_Output (self, other, "DIA_Rod_BINStarkGenug_06_01"); //Охх, ты разбиваешь мое сердце! Рискнешь заключить небольшое пари?
+	AI_Output (other, self, "DIA_Rod_BINStarkGenug_15_00"); //РЇ СЃРєР°Р·Р°Р», СЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»РµРЅ!
+	AI_Output (self, other, "DIA_Rod_BINStarkGenug_06_01"); //РћС…С…, С‚С‹ СЂР°Р·Р±РёРІР°РµС€СЊ РјРѕРµ СЃРµСЂРґС†Рµ! Р РёСЃРєРЅРµС€СЊ Р·Р°РєР»СЋС‡РёС‚СЊ РЅРµР±РѕР»СЊС€РѕРµ РїР°СЂРё?
 };	
 	
 
@@ -353,7 +353,7 @@ instance DIA_Rod_Wette (C_INFO)
 	condition	= DIA_Rod_Wette_Condition;
 	information	= DIA_Rod_Wette_Info;
 	permanent	= TRUE;
-	description	= "Готов поспорить, что смогу удержать твой меч!"; 
+	description	= "Р“РѕС‚РѕРІ РїРѕСЃРїРѕСЂРёС‚СЊ, С‡С‚Рѕ СЃРјРѕРіСѓ СѓРґРµСЂР¶Р°С‚СЊ С‚РІРѕР№ РјРµС‡!"; 
 };                       
 
 FUNC INT DIA_Rod_Wette_Condition()
@@ -370,36 +370,36 @@ FUNC INT DIA_Rod_Wette_Condition()
  
 FUNC VOID DIA_Rod_Wette_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Wette_15_00"); //Готов поспорить, что смогу удержать твой меч!
-	AI_Output (self, other, "DIA_Rod_Wette_06_01"); //Точно? Хмм... (думает) И сколько же мне с тебя взять?
-	AI_Output (self, other, "DIA_Rod_Wette_06_02"); //Ну... ты похож на нищего сосунка. Скажем, это будет 30 монет! У тебя есть хотя бы столько?
+	AI_Output (other, self, "DIA_Rod_Wette_15_00"); //Р“РѕС‚РѕРІ РїРѕСЃРїРѕСЂРёС‚СЊ, С‡С‚Рѕ СЃРјРѕРіСѓ СѓРґРµСЂР¶Р°С‚СЊ С‚РІРѕР№ РјРµС‡!
+	AI_Output (self, other, "DIA_Rod_Wette_06_01"); //РўРѕС‡РЅРѕ? РҐРјРј... (РґСѓРјР°РµС‚) Р СЃРєРѕР»СЊРєРѕ Р¶Рµ РјРЅРµ СЃ С‚РµР±СЏ РІР·СЏС‚СЊ?
+	AI_Output (self, other, "DIA_Rod_Wette_06_02"); //РќСѓ... С‚С‹ РїРѕС…РѕР¶ РЅР° РЅРёС‰РµРіРѕ СЃРѕСЃСѓРЅРєР°. РЎРєР°Р¶РµРј, СЌС‚Рѕ Р±СѓРґРµС‚ 30 РјРѕРЅРµС‚! РЈ С‚РµР±СЏ РµСЃС‚СЊ С…РѕС‚СЏ Р±С‹ СЃС‚РѕР»СЊРєРѕ?
 		
 	Info_ClearChoices (DIA_Rod_Wette);
-	Info_AddChoice (DIA_Rod_Wette, "Нет.", DIA_Rod_Wette_No);
-	Info_AddChoice (DIA_Rod_Wette, "Конечно.", DIA_Rod_Wette_Yes);
+	Info_AddChoice (DIA_Rod_Wette, "РќРµС‚.", DIA_Rod_Wette_No);
+	Info_AddChoice (DIA_Rod_Wette, "РљРѕРЅРµС‡РЅРѕ.", DIA_Rod_Wette_Yes);
 	
-	B_LogEntry (Topic_RodWette,"Род ставит 30 золотых монет на то, что я не смогу удержать его меч.");
+	B_LogEntry (Topic_RodWette,"Р РѕРґ СЃС‚Р°РІРёС‚ 30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ РЅР° С‚Рѕ, С‡С‚Рѕ СЏ РЅРµ СЃРјРѕРіСѓ СѓРґРµСЂР¶Р°С‚СЊ РµРіРѕ РјРµС‡.");
 };
 
 func void DIA_Rod_Wette_No()
 {
-	AI_Output (other, self, "DIA_Rod_Wette_No_15_00"); //Нет.
-	AI_Output (self, other, "DIA_Rod_Wette_No_06_01"); //Ох, тогда проваливай.
+	AI_Output (other, self, "DIA_Rod_Wette_No_15_00"); //РќРµС‚.
+	AI_Output (self, other, "DIA_Rod_Wette_No_06_01"); //РћС…, С‚РѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№.
 	
 	Info_ClearChoices (DIA_Rod_Wette);
 };
 	
 func void DIA_Rod_Wette_Yes()
 {
-	AI_Output (other, self, "DIA_Rod_Wette_Yes_15_00"); //Конечно.
-	AI_Output (self, other, "DIA_Rod_Wette_Yes_06_01"); //Покажи...
+	AI_Output (other, self, "DIA_Rod_Wette_Yes_15_00"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output (self, other, "DIA_Rod_Wette_Yes_06_01"); //РџРѕРєР°Р¶Рё...
 	
 	if (B_GiveInvItems (other,self, itmi_gold, 30))
 	{
 		Rod_WetteAngenommen = TRUE;
 			
-		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_02"); //Вот!
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_03"); //(злорадно) Хорошо, давай посмотрим, насколько ты силен...
+		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_02"); //Р’РѕС‚!
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_03"); //(Р·Р»РѕСЂР°РґРЅРѕ) РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РїРѕСЃРјРѕС‚СЂРёРј, РЅР°СЃРєРѕР»СЊРєРѕ С‚С‹ СЃРёР»РµРЅ...
 		
 		B_GiveInvItems (self, other, ItMw_2h_Rod, 1);
 		
@@ -409,34 +409,34 @@ func void DIA_Rod_Wette_Yes()
 			AI_EquipBestMeleeWeapon	(other);
 			AI_ReadyMeleeWeapon		(other);
 							
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//Так достаточно?!
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//(сбитый с толку) Похоже, ты побил меня.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//Я никак не ожидал от тебя такого. Ты не похож на человека, обладающего такой силой.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//Ну, похоже, я только что потерял 30 золотых монет. Держи.
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//РўР°Рє РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ?!
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//(СЃР±РёС‚С‹Р№ СЃ С‚РѕР»РєСѓ) РџРѕС…РѕР¶Рµ, С‚С‹ РїРѕР±РёР» РјРµРЅСЏ.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//РЇ РЅРёРєР°Рє РЅРµ РѕР¶РёРґР°Р» РѕС‚ С‚РµР±СЏ С‚Р°РєРѕРіРѕ. РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° С‡РµР»РѕРІРµРєР°, РѕР±Р»Р°РґР°СЋС‰РµРіРѕ С‚Р°РєРѕР№ СЃРёР»РѕР№.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//РќСѓ, РїРѕС…РѕР¶Рµ, СЏ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїРѕС‚РµСЂСЏР» 30 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р”РµСЂР¶Рё.
 			B_GiveInvItems (self, other, itmi_gold, 60);
 			Rod_WetteGewonnen = TRUE;
 			B_GivePlayerXP (XP_Rod); 
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //Я не могу поднять это оружие.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//(смеется) Что я и говорил!
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //РЇ РЅРµ РјРѕРіСѓ РїРѕРґРЅСЏС‚СЊ СЌС‚Рѕ РѕСЂСѓР¶РёРµ.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//(СЃРјРµРµС‚СЃСЏ) Р§С‚Рѕ СЏ Рё РіРѕРІРѕСЂРёР»!
 		};
 		
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_10");//А теперь, отдай мне мое оружие назад.
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_10");//Рђ С‚РµРїРµСЂСЊ, РѕС‚РґР°Р№ РјРЅРµ РјРѕРµ РѕСЂСѓР¶РёРµ РЅР°Р·Р°Рґ.
 		
 		Info_ClearChoices (DIA_Rod_Wette);
 		
 		//Npc_RemoveInvItems (other,ItMw_2h_Rod,((Npc_HasItems (other,ItMw_2h_Rod))-1));		//Hoshi: Wilder HAck bitte stehen lassen!
 		// Mike: AAAARGH!!!! genau DAS war der Fehler!!!
 			
-		Info_AddChoice (DIA_Rod_Wette, "Думаю, что нет...", DIA_Rod_Wette_KeepIt);
-		Info_AddChoice (DIA_Rod_Wette, "Вот держи.", DIA_Rod_Wette_GiveBack);
+		Info_AddChoice (DIA_Rod_Wette, "Р”СѓРјР°СЋ, С‡С‚Рѕ РЅРµС‚...", DIA_Rod_Wette_KeepIt);
+		Info_AddChoice (DIA_Rod_Wette, "Р’РѕС‚ РґРµСЂР¶Рё.", DIA_Rod_Wette_GiveBack);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_11"); //И куда же я дел его...
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_12"); //Ха. Возвращайся, когда у тебя будет достаточно золота, чтобы сделать ставку.
+		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_11"); //Р РєСѓРґР° Р¶Рµ СЏ РґРµР» РµРіРѕ...
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_12"); //РҐР°. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°, С‡С‚РѕР±С‹ СЃРґРµР»Р°С‚СЊ СЃС‚Р°РІРєСѓ.
 		
 		Info_ClearChoices (DIA_Rod_Wette);
 	};
@@ -445,9 +445,9 @@ func void DIA_Rod_Wette_Yes()
 func void DIA_Rod_Wette_GiveBack()
 {
 	AI_RemoveWeapon (other);
-	AI_Output (other, self, "DIA_Rod_Wette_GiveBack_15_00"); //Вот, держи.
+	AI_Output (other, self, "DIA_Rod_Wette_GiveBack_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё.
 	Info_ClearChoices (DIA_Rod_Wette);
-	Info_AddChoice (DIA_Rod_Wette, "(Отдать ему оружие)", DIA_Rod_Wette_GiveBack2);
+	Info_AddChoice (DIA_Rod_Wette, "(РћС‚РґР°С‚СЊ РµРјСѓ РѕСЂСѓР¶РёРµ)", DIA_Rod_Wette_GiveBack2);
 };
 
 func void DIA_Rod_Wette_GiveBack2()
@@ -455,17 +455,17 @@ func void DIA_Rod_Wette_GiveBack2()
 	B_GiveInvItems (other, self, ItMw_2h_Rod, 1);		
 	if (Rod_WetteGewonnen == FALSE)
 	{
-		AI_Output (self, other, "DIA_Rod_Wette_GiveBack_06_01"); //Да ты просто подлец после этого!
+		AI_Output (self, other, "DIA_Rod_Wette_GiveBack_06_01"); //Р”Р° С‚С‹ РїСЂРѕСЃС‚Рѕ РїРѕРґР»РµС† РїРѕСЃР»Рµ СЌС‚РѕРіРѕ!
 	};
 	Info_ClearChoices (DIA_Rod_Wette);
 };
 
 func void DIA_Rod_Wette_KeepIt()
 {
-	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_00"); //Думаю, что нет...
-	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //(угрожающе) Что это значит?
-	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Лучше я подержу его у себя немного.
-	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_03"); //Ну, подожди, ублюдок!
+	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_00"); //Р”СѓРјР°СЋ, С‡С‚Рѕ РЅРµС‚...
+	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?
+	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Р›СѓС‡С€Рµ СЏ РїРѕРґРµСЂР¶Сѓ РµРіРѕ Сѓ СЃРµР±СЏ РЅРµРјРЅРѕРіРѕ.
+	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_03"); //РќСѓ, РїРѕРґРѕР¶РґРё, СѓР±Р»СЋРґРѕРє!
 	
 	Info_ClearChoices (DIA_Rod_Wette);
 	AI_StopProcessInfos (self);
@@ -474,7 +474,7 @@ func void DIA_Rod_Wette_KeepIt()
 
 
 // ************************************************************
-// 			  				Schwert zurьck
+// 			  				Schwert zurСЊck
 // ************************************************************
 var int Rod_SchwertXPGiven;
 
@@ -485,7 +485,7 @@ instance DIA_Rod_GiveItBack (C_INFO)
 	condition	= DIA_Rod_GiveItBack_Condition;
 	information	= DIA_Rod_GiveItBack_Info;
 	permanent	= TRUE;
-	description	= "Вот, держи свой меч!"; 
+	description	= "Р’РѕС‚, РґРµСЂР¶Рё СЃРІРѕР№ РјРµС‡!"; 
 };                       
 
 FUNC INT DIA_Rod_GiveItBack_Condition()
@@ -500,8 +500,8 @@ FUNC VOID DIA_Rod_GiveItBack_Info()
 {	
 	B_GiveInvItems (other, self, ItMw_2h_Rod, 1);
 	
-	AI_Output (other, self, "DIA_Rod_GiveItBack_15_00"); //Вот, держи свой меч!
-	AI_Output (self, other, "DIA_Rod_GiveItBack_06_01"); //Вовремя!
+	AI_Output (other, self, "DIA_Rod_GiveItBack_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё СЃРІРѕР№ РјРµС‡!
+	AI_Output (self, other, "DIA_Rod_GiveItBack_06_01"); //Р’РѕРІСЂРµРјСЏ!
 	
 	if (Rod_SchwertXPGiven == FALSE)
 	{
@@ -521,7 +521,7 @@ instance DIA_Rod_PERM (C_INFO)
 	condition	= DIA_Rod_PERM_Condition;
 	information	= DIA_Rod_PERM_Info;
 	permanent	= TRUE;
-	description	= "Как дела?"; 
+	description	= "РљР°Рє РґРµР»Р°?"; 
 };                       
 
 FUNC INT DIA_Rod_PERM_Condition()
@@ -534,7 +534,7 @@ FUNC INT DIA_Rod_PERM_Condition()
  
 FUNC VOID DIA_Rod_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_PERM_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_Rod_PERM_15_00"); //РљР°Рє РґРµР»Р°?
 	
 	if (Kapitel <= 2)	
 	{
@@ -543,28 +543,28 @@ FUNC VOID DIA_Rod_PERM_Info()
 			if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 			&& (Rod_WetteGewonnen == FALSE)
 			{
-				AI_Output (self, other, "DIA_Rod_PERM_06_01"); //Это не твое дело, слабак.
+				AI_Output (self, other, "DIA_Rod_PERM_06_01"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ, СЃР»Р°Р±Р°Рє.
 				Rod_SchwachGesagt = TRUE;
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Rod_PERM_06_02"); //Мне интересно, позволят ли тебе присоединиться к нам.
+				AI_Output (self, other, "DIA_Rod_PERM_06_02"); //РњРЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ, РїРѕР·РІРѕР»СЏС‚ Р»Рё С‚РµР±Рµ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј.
 			};
 		}
 		else if (other.guild == GIL_SLD)
 		|| 		(other.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Rod_PERM_06_03"); //Теперь ты один из нас, малыш. Скоро мы к тебе привыкнем.
+			AI_Output (self, other, "DIA_Rod_PERM_06_03"); //РўРµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ, РјР°Р»С‹С€. РЎРєРѕСЂРѕ РјС‹ Рє С‚РµР±Рµ РїСЂРёРІС‹РєРЅРµРј.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Rod_PERM_06_04"); //Ты не наш человек. Ошивался бы ты лучше в другом месте!
+			AI_Output (self, other, "DIA_Rod_PERM_06_04"); //РўС‹ РЅРµ РЅР°С€ С‡РµР»РѕРІРµРє. РћС€РёРІР°Р»СЃСЏ Р±С‹ С‚С‹ Р»СѓС‡С€Рµ РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ!
 		};
 	}
 
 	if (Kapitel >= 3)
 	{
-		AI_Output (self, other, "DIA_Rod_PERM_06_05"); //Если все эти истории о драконах действительно правда, нам нужно собрать отряд и прикончить этих тварей!
+		AI_Output (self, other, "DIA_Rod_PERM_06_05"); //Р•СЃР»Рё РІСЃРµ СЌС‚Рё РёСЃС‚РѕСЂРёРё Рѕ РґСЂР°РєРѕРЅР°С… РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂР°РІРґР°, РЅР°Рј РЅСѓР¶РЅРѕ СЃРѕР±СЂР°С‚СЊ РѕС‚СЂСЏРґ Рё РїСЂРёРєРѕРЅС‡РёС‚СЊ СЌС‚РёС… С‚РІР°СЂРµР№!
 	};
 
 	//### ab Kap 4 in OW ###

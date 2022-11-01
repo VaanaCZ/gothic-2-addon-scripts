@@ -31,7 +31,7 @@ INSTANCE DIA_Rangar_PICKPOCKET (C_INFO)
 	condition	= DIA_Rangar_PICKPOCKET_Condition;
 	information	= DIA_Rangar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Rangar_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ INSTANCE DIA_Rangar_Hallo   (C_INFO)
 	condition   = DIA_Rangar_Hallo_Condition;
 	information = DIA_Rangar_Hallo_Info;
 	permanent   = FALSE;
-	description = "Эй, ты что делаешь тут?";
+	description = "Р­Р№, С‚С‹ С‡С‚Рѕ РґРµР»Р°РµС€СЊ С‚СѓС‚?";
 };
 
 FUNC INT DIA_Rangar_Hallo_Condition()
@@ -97,10 +97,10 @@ FUNC INT DIA_Rangar_Hallo_Condition()
 
 FUNC VOID DIA_Rangar_Hallo_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Hallo_15_00");//Эй, как дела?
-	AI_Output (self, other, "DIA_Rangar_Hallo_07_01");//Пока у паладинов нет никаких заданий для меня, я могу расслабиться и попить пивка. А что еще делать? (усмехается)
-	AI_Output (other, self, "DIA_Rangar_Hallo_15_02");//Ты работаешь на паладинов?
-	AI_Output (self, other, "DIA_Rangar_Hallo_07_03");//Да, я докладываю им о ситуации в городе. В настоящий момент все спокойно.
+	AI_Output (other, self, "DIA_Rangar_Hallo_15_00");//Р­Р№, РєР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Rangar_Hallo_07_01");//РџРѕРєР° Сѓ РїР°Р»Р°РґРёРЅРѕРІ РЅРµС‚ РЅРёРєР°РєРёС… Р·Р°РґР°РЅРёР№ РґР»СЏ РјРµРЅСЏ, СЏ РјРѕРіСѓ СЂР°СЃСЃР»Р°Р±РёС‚СЊСЃСЏ Рё РїРѕРїРёС‚СЊ РїРёРІРєР°. Рђ С‡С‚Рѕ РµС‰Рµ РґРµР»Р°С‚СЊ? (СѓСЃРјРµС…Р°РµС‚СЃСЏ)
+	AI_Output (other, self, "DIA_Rangar_Hallo_15_02");//РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РїР°Р»Р°РґРёРЅРѕРІ?
+	AI_Output (self, other, "DIA_Rangar_Hallo_07_03");//Р”Р°, СЏ РґРѕРєР»Р°РґС‹РІР°СЋ РёРј Рѕ СЃРёС‚СѓР°С†РёРё РІ РіРѕСЂРѕРґРµ. Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ork
@@ -112,7 +112,7 @@ INSTANCE DIA_Rangar_Ork   (C_INFO)
 	condition   = DIA_Rangar_Ork_Condition;
 	information = DIA_Rangar_Ork_Info;
 	permanent   = FALSE;
-	description = "А как ситуация с орками?";
+	description = "Рђ РєР°Рє СЃРёС‚СѓР°С†РёСЏ СЃ РѕСЂРєР°РјРё?";
 };
 
 FUNC INT DIA_Rangar_Ork_Condition()
@@ -126,9 +126,9 @@ FUNC INT DIA_Rangar_Ork_Condition()
 };
 FUNC VOID DIA_Rangar_Ork_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Ork_15_00");//А как ситуация с орками?
-	AI_Output (self, other, "DIA_Rangar_Ork_07_01");//Нет причин для беспокойства - городская стража и паладины держат ситуацию под контролем.
-	AI_Output (self, other, "DIA_Rangar_Ork_07_02");//Иди спокойно домой и оставь нашу работу нам. Мы отвечаем за город и его граждан. -ИК-
+	AI_Output (other, self, "DIA_Rangar_Ork_15_00");//Рђ РєР°Рє СЃРёС‚СѓР°С†РёСЏ СЃ РѕСЂРєР°РјРё?
+	AI_Output (self, other, "DIA_Rangar_Ork_07_01");//РќРµС‚ РїСЂРёС‡РёРЅ РґР»СЏ Р±РµСЃРїРѕРєРѕР№СЃС‚РІР° - РіРѕСЂРѕРґСЃРєР°СЏ СЃС‚СЂР°Р¶Р° Рё РїР°Р»Р°РґРёРЅС‹ РґРµСЂР¶Р°С‚ СЃРёС‚СѓР°С†РёСЋ РїРѕРґ РєРѕРЅС‚СЂРѕР»РµРј.
+	AI_Output (self, other, "DIA_Rangar_Ork_07_02");//РРґРё СЃРїРѕРєРѕР№РЅРѕ РґРѕРјРѕР№ Рё РѕСЃС‚Р°РІСЊ РЅР°С€Сѓ СЂР°Р±РѕС‚Сѓ РЅР°Рј. РњС‹ РѕС‚РІРµС‡Р°РµРј Р·Р° РіРѕСЂРѕРґ Рё РµРіРѕ РіСЂР°Р¶РґР°РЅ. -РРљ-
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ork
@@ -140,7 +140,7 @@ INSTANCE DIA_Rangar_Bier   (C_INFO)
 	condition   = DIA_Rangar_Bier_Condition;
 	information = DIA_Rangar_Bier_Info;
 	permanent   = TRUE;
-	description = "Хочешь еще пива?";
+	description = "РҐРѕС‡РµС€СЊ РµС‰Рµ РїРёРІР°?";
 };
 
 FUNC INT DIA_Rangar_Bier_Condition()
@@ -154,19 +154,19 @@ FUNC INT DIA_Rangar_Bier_Condition()
 };
 FUNC VOID DIA_Rangar_Bier_Info()
 {
-	AI_Output (other, self, "DIA_Rangar_Bier_15_00");//Хочешь еще пива?
+	AI_Output (other, self, "DIA_Rangar_Bier_15_00");//РҐРѕС‡РµС€СЊ РµС‰Рµ РїРёРІР°?
 	
 	if B_GiveInvItems (other, self, ItFo_Beer, 1)
 	{
 		if (Knows_Paladins == FALSE)
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_01");//Ах, нет ничего лучше, чем холодный эль.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_01");//РђС…, РЅРµС‚ РЅРёС‡РµРіРѕ Р»СѓС‡С€Рµ, С‡РµРј С…РѕР»РѕРґРЅС‹Р№ СЌР»СЊ.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (other, self, "DIA_Rangar_Bier_15_02");//Ты что-то хотел сказать насчет орков...
-			AI_Output (self, other, "DIA_Rangar_Bier_07_03");//Ах, да, точно. Орки не представляют угрозы для города.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_04");//Они застряли в Долине Рудников. А Проход охраняется паладинами.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_05");//Даже мясной жук не просочится там.
+			AI_Output (other, self, "DIA_Rangar_Bier_15_02");//РўС‹ С‡С‚Рѕ-С‚Рѕ С…РѕС‚РµР» СЃРєР°Р·Р°С‚СЊ РЅР°СЃС‡РµС‚ РѕСЂРєРѕРІ...
+			AI_Output (self, other, "DIA_Rangar_Bier_07_03");//РђС…, РґР°, С‚РѕС‡РЅРѕ. РћСЂРєРё РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏСЋС‚ СѓРіСЂРѕР·С‹ РґР»СЏ РіРѕСЂРѕРґР°.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_04");//РћРЅРё Р·Р°СЃС‚СЂСЏР»Рё РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. Рђ РџСЂРѕС…РѕРґ РѕС…СЂР°РЅСЏРµС‚СЃСЏ РїР°Р»Р°РґРёРЅР°РјРё.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_05");//Р”Р°Р¶Рµ РјСЏСЃРЅРѕР№ Р¶СѓРє РЅРµ РїСЂРѕСЃРѕС‡РёС‚СЃСЏ С‚Р°Рј.
 			
 			Knows_Paladins = 1;
 			Info_ClearChoices (DIA_Rangar_Bier);
@@ -174,29 +174,29 @@ FUNC VOID DIA_Rangar_Bier_Info()
 		else if (Knows_Paladins == 1) 
 		&& (Knows_Ork == TRUE)
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_06");//Я бы не отказался еще от одной пинты.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_06");//РЇ Р±С‹ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ РµС‰Рµ РѕС‚ РѕРґРЅРѕР№ РїРёРЅС‚С‹.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (other, self, "DIA_Rangar_Bier_15_07");//Говорят, орков видели у самого города.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_08");//Да, точно, опасный орк около города. Этот орк - настоящий монстр. Он скоро нападет на город.
-			AI_Output (self, other, "DIA_Rangar_Bier_07_09");//Послушай, мы порвем этого орка как тузик тряпку, если он подойдет близко к городу. Понял?
-			AI_Output (other, self, "DIA_Rangar_Bier_15_10");//Понял.
+			AI_Output (other, self, "DIA_Rangar_Bier_15_07");//Р“РѕРІРѕСЂСЏС‚, РѕСЂРєРѕРІ РІРёРґРµР»Рё Сѓ СЃР°РјРѕРіРѕ РіРѕСЂРѕРґР°.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_08");//Р”Р°, С‚РѕС‡РЅРѕ, РѕРїР°СЃРЅС‹Р№ РѕСЂРє РѕРєРѕР»Рѕ РіРѕСЂРѕРґР°. Р­С‚РѕС‚ РѕСЂРє - РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРЅСЃС‚СЂ. РћРЅ СЃРєРѕСЂРѕ РЅР°РїР°РґРµС‚ РЅР° РіРѕСЂРѕРґ.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_09");//РџРѕСЃР»СѓС€Р°Р№, РјС‹ РїРѕСЂРІРµРј СЌС‚РѕРіРѕ РѕСЂРєР° РєР°Рє С‚СѓР·РёРє С‚СЂСЏРїРєСѓ, РµСЃР»Рё РѕРЅ РїРѕРґРѕР№РґРµС‚ Р±Р»РёР·РєРѕ Рє РіРѕСЂРѕРґСѓ. РџРѕРЅСЏР»?
+			AI_Output (other, self, "DIA_Rangar_Bier_15_10");//РџРѕРЅСЏР».
 			Knows_Paladins = 2;
 			Info_ClearChoices (DIA_Rangar_Bier);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Rangar_Bier_07_11");//Горький эль - однозначно лучший.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_11");//Р“РѕСЂСЊРєРёР№ СЌР»СЊ - РѕРґРЅРѕР·РЅР°С‡РЅРѕ Р»СѓС‡С€РёР№.
 			CreateInvItems (self, ItFo_Booze,1);
 			B_UseItem (self, ItFo_Booze);
-			AI_Output (self, other, "DIA_Rangar_Bier_07_12");//Знаешь, нечасто встретишь парня, готового угостить тебя пивом. Ты наш человек.
+			AI_Output (self, other, "DIA_Rangar_Bier_07_12");//Р—РЅР°РµС€СЊ, РЅРµС‡Р°СЃС‚Рѕ РІСЃС‚СЂРµС‚РёС€СЊ РїР°СЂРЅСЏ, РіРѕС‚РѕРІРѕРіРѕ СѓРіРѕСЃС‚РёС‚СЊ С‚РµР±СЏ РїРёРІРѕРј. РўС‹ РЅР°С€ С‡РµР»РѕРІРµРє.
 			Info_ClearChoices (DIA_Rangar_Bier);
 		};
 		
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Rangar_Bier_07_13");//Я хочу еще пива.
+		AI_Output (self, other, "DIA_Rangar_Bier_07_13");//РЇ С…РѕС‡Сѓ РµС‰Рµ РїРёРІР°.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -211,7 +211,7 @@ instance DIA_Addon_Rangar_Erwischt		(C_INFO)
 	condition	 = 	DIA_Addon_Rangar_Erwischt_Condition;
 	information	 = 	DIA_Addon_Rangar_Erwischt_Info;
 
-	description	 = 	"Что ты здесь делаешь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };
 
 var int DIA_Addon_Rangar_Erwischt_OneTime;
@@ -228,10 +228,10 @@ func int DIA_Addon_Rangar_Erwischt_Condition ()
 
 func void DIA_Addon_Rangar_Erwischt_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_00"); //Что ты здесь делаешь?
-	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_01"); //(испуганно) Э-э-э... Я... Это не твое дело! Проваливай!
-	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_02"); //Мартин будет просто счастлив, когда я расскажу, кто копается в вещах, пока его нет.
-	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_03"); //(печально) Делай, что хочешь. Я ухожу отсюда.
+	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р­-СЌ-СЌ... РЇ... Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ! РџСЂРѕРІР°Р»РёРІР°Р№!
+	AI_Output	(other, self, "DIA_Addon_Rangar_Erwischt_15_02"); //РњР°СЂС‚РёРЅ Р±СѓРґРµС‚ РїСЂРѕСЃС‚Рѕ СЃС‡Р°СЃС‚Р»РёРІ, РєРѕРіРґР° СЏ СЂР°СЃСЃРєР°Р¶Сѓ, РєС‚Рѕ РєРѕРїР°РµС‚СЃСЏ РІ РІРµС‰Р°С…, РїРѕРєР° РµРіРѕ РЅРµС‚.
+	AI_Output	(self, other, "DIA_Addon_Rangar_Erwischt_07_03"); //(РїРµС‡Р°Р»СЊРЅРѕ) Р”РµР»Р°Р№, С‡С‚Рѕ С…РѕС‡РµС€СЊ. РЇ СѓС…РѕР¶Сѓ РѕС‚СЃСЋРґР°.
 	B_GivePlayerXP (XP_Addon_Martin_GotRangar);
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -249,7 +249,7 @@ instance DIA_Addon_Rangar_nachhaken		(C_INFO)
 	information	 = 	DIA_Addon_Rangar_nachhaken_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты действительно думаешь, что тебе это сойдет с рук?";
+	description	 = 	"РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРѕР№РґРµС‚ СЃ СЂСѓРє?";
 };
 
 func int DIA_Addon_Rangar_nachhaken_Condition ()
@@ -263,6 +263,6 @@ func int DIA_Addon_Rangar_nachhaken_Condition ()
 
 func void DIA_Addon_Rangar_nachhaken_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Rangar_nachhaken_15_00"); //Ты действительно думаешь, что тебе это сойдет с рук?
-	AI_Output	(self, other, "DIA_Addon_Rangar_nachhaken_07_01"); //(безразлично) Не поднимай столько шума из-за жалкой кучки хлама.
+	AI_Output	(other, self, "DIA_Addon_Rangar_nachhaken_15_00"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ С‚РµР±Рµ СЌС‚Рѕ СЃРѕР№РґРµС‚ СЃ СЂСѓРє?
+	AI_Output	(self, other, "DIA_Addon_Rangar_nachhaken_07_01"); //(Р±РµР·СЂР°Р·Р»РёС‡РЅРѕ) РќРµ РїРѕРґРЅРёРјР°Р№ СЃС‚РѕР»СЊРєРѕ С€СѓРјР° РёР·-Р·Р° Р¶Р°Р»РєРѕР№ РєСѓС‡РєРё С…Р»Р°РјР°.
 };

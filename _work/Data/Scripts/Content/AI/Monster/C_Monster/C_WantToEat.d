@@ -1,8 +1,8 @@
 // ***********************************
 // C_WantToEat
 // -----------
-// ACHTUNG: Fressen heißt nicht Jagen!
-// Jagen geht über C_PredatorFoundPrey
+// ACHTUNG: Fressen heiÐ¯t nicht Jagen!
+// Jagen geht ÑŒber C_PredatorFoundPrey
 // ***********************************
 
 func int C_WantToEat (var C_NPC slf, var C_NPC oth)
@@ -23,7 +23,7 @@ func int C_WantToEat (var C_NPC slf, var C_NPC oth)
 		if (oth.guild == GIL_SHEEP)				{	return TRUE;	};
 		if (oth.guild == GIL_GIANT_RAT)			{	return TRUE;	};
 		if (oth.guild == GIL_MOLERAT) 			{	return TRUE;	};
-		// ------ Geflügel ------
+		// ------ GeflÑŒgel ------
 //		if (oth.guild == GIL_SCAVENGER)			{	return TRUE;	};
 		if (oth.guild == GIL_HARPY)				{	return TRUE;	};
 		// ------ Wild ------
@@ -52,7 +52,7 @@ func int C_WantToEat (var C_NPC slf, var C_NPC oth)
 		if (oth.guild == GIL_SHEEP)				{	return TRUE;	};
 		if (oth.guild == GIL_GIANT_RAT)			{	return TRUE;	};	//auch Artgenossen
 		if (oth.guild == GIL_MOLERAT) 			{	return TRUE;	};
-		// ------ Geflügel ------
+		// ------ GeflÑŒgel ------
 		if (oth.guild == GIL_SCAVENGER)			{	return TRUE;	};
 		if (oth.guild == GIL_HARPY)				{	return TRUE;	};
 		// ------ Wild ------
@@ -71,7 +71,7 @@ func int C_WantToEat (var C_NPC slf, var C_NPC oth)
 		if (oth.guild == GIL_MINECRAWLER)		{	return TRUE;	};
 	};
 	
-	// ------ Feldräuber frisst... ------
+	// ------ FeldrÐ´uber frisst... ------
 	if (slf.guild == GIL_GIANT_BUG)
 	{
 		// ------ Insekten ------
@@ -84,7 +84,7 @@ func int C_WantToEat (var C_NPC slf, var C_NPC oth)
 	// ------ Waran frisst... ------
 	if (slf.guild == GIL_WARAN) // Waren / Feuerwaran
 	{
-		// ------ Geflügel ------
+		// ------ GeflÑŒgel ------
 		if (oth.guild == GIL_SCAVENGER)			{	return TRUE;	};
 		if (oth.guild == GIL_HARPY)				{	return TRUE;	};
 		// ------ Reptilien ------
@@ -153,7 +153,7 @@ func int C_WantToEat (var C_NPC slf, var C_NPC oth)
 		if (oth.guild == GIL_SHEEP)				{	return TRUE;	};
 		if (oth.guild == GIL_GIANT_RAT)			{	return TRUE;	};
 		if (oth.guild == GIL_MOLERAT) 			{	return TRUE;	};
-		// ------ Geflügel ------
+		// ------ GeflÑŒgel ------
 		if (oth.guild == GIL_SCAVENGER)			{	return TRUE;	};
 		if (oth.guild == GIL_HARPY)				{	return TRUE;	};
 		// ------ Wild ------
@@ -177,7 +177,7 @@ func int C_WantToEat (var C_NPC slf, var C_NPC oth)
 		if (oth.guild == GIL_SHEEP)				{	return TRUE;	};
 		if (oth.guild == GIL_GIANT_RAT)			{	return TRUE;	};
 		if (oth.guild == GIL_MOLERAT) 			{	return TRUE;	};
-		// ------ Geflügel ------
+		// ------ GeflÑŒgel ------
 		if (oth.guild == GIL_SCAVENGER)			{	return TRUE;	};
 		if (oth.guild == GIL_HARPY)				{	return TRUE;	};
 		// ------ Wild ------

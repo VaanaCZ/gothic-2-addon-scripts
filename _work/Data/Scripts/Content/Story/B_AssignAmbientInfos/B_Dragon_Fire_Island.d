@@ -51,32 +51,32 @@ FUNC INT DIA_Dragon_Fire_Island_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Стой, человек. Все мои чувства говорят мне, что убийца моей плоти и крови стоит передо мной.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //Да? Кого ты назвал убийцей, ты, порождение ада?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //РЎС‚РѕР№, С‡РµР»РѕРІРµРє. Р’СЃРµ РјРѕРё С‡СѓРІСЃС‚РІР° РіРѕРІРѕСЂСЏС‚ РјРЅРµ, С‡С‚Рѕ СѓР±РёР№С†Р° РјРѕРµР№ РїР»РѕС‚Рё Рё РєСЂРѕРІРё СЃС‚РѕРёС‚ РїРµСЂРµРґРѕ РјРЅРѕР№.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //Р”Р°? РљРѕРіРѕ С‚С‹ РЅР°Р·РІР°Р» СѓР±РёР№С†РµР№, С‚С‹, РїРѕСЂРѕР¶РґРµРЅРёРµ Р°РґР°?
 	
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Тебе недостаточно того, что ты уничтожил почти всех наших отпрысков?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //РўРµР±Рµ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ СѓРЅРёС‡С‚РѕР¶РёР» РїРѕС‡С‚Рё РІСЃРµС… РЅР°С€РёС… РѕС‚РїСЂС‹СЃРєРѕРІ?
 	};
 	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //На твоей совести также мой брат Феоматар, и ты заплатишь за это.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //РќР° С‚РІРѕРµР№ СЃРѕРІРµСЃС‚Рё С‚Р°РєР¶Рµ РјРѕР№ Р±СЂР°С‚ Р¤РµРѕРјР°С‚Р°СЂ, Рё С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ Р·Р° СЌС‚Рѕ.
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //Я также собираюсь добраться до остальных из вашего проклятого племени.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Ах-х. Я с огромным удовольствием сожгу тебя заживо.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //РЇ С‚Р°РєР¶Рµ СЃРѕР±РёСЂР°СЋСЃСЊ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РѕСЃС‚Р°Р»СЊРЅС‹С… РёР· РІР°С€РµРіРѕ РїСЂРѕРєР»СЏС‚РѕРіРѕ РїР»РµРјРµРЅРё.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //РђС…-С…. РЇ СЃ РѕРіСЂРѕРјРЅС‹Рј СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј СЃРѕР¶РіСѓ С‚РµР±СЏ Р·Р°Р¶РёРІРѕ.
 	};
 
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //Хватит попусту сотрясать воздух. Давай перейдем к делу.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_07"); //Ты зашел слишком далеко, жалкий человечишка, но тебе не уйти отсюда живым.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //РҐРІР°С‚РёС‚ РїРѕРїСѓСЃС‚Сѓ СЃРѕС‚СЂСЏСЃР°С‚СЊ РІРѕР·РґСѓС…. Р”Р°РІР°Р№ РїРµСЂРµР№РґРµРј Рє РґРµР»Сѓ.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_07"); //РўС‹ Р·Р°С€РµР» СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ, Р¶Р°Р»РєРёР№ С‡РµР»РѕРІРµС‡РёС€РєР°, РЅРѕ С‚РµР±Рµ РЅРµ СѓР№С‚Рё РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј.
 
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Еще один огненный дракон. Я уже по горло сыт этими тварями. Мне всего лишь нужно перебраться через пропасть, что лежит за этим огненным драконом."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Р•С‰Рµ РѕРґРёРЅ РѕРіРЅРµРЅРЅС‹Р№ РґСЂР°РєРѕРЅ. РЇ СѓР¶Рµ РїРѕ РіРѕСЂР»Рѕ СЃС‹С‚ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё. РњРЅРµ РІСЃРµРіРѕ Р»РёС€СЊ РЅСѓР¶РЅРѕ РїРµСЂРµР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· РїСЂРѕРїР°СЃС‚СЊ, С‡С‚Рѕ Р»РµР¶РёС‚ Р·Р° СЌС‚РёРј РѕРіРЅРµРЅРЅС‹Рј РґСЂР°РєРѕРЅРѕРј."); 
 
 	DragonTalk_Exit_Free  = FALSE;
 	self.flags =  0;

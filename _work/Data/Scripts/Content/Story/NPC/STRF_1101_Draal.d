@@ -2,7 +2,7 @@
 instance STRF_1101_Draal  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Äðààë";
+	name 		= "Ð”Ñ€Ð°Ð°Ð»";
 	guild 		= GIL_STRF;
 	id 			= 1101;
 	voice 		= 3;
@@ -31,8 +31,8 @@ instance STRF_1101_Draal  (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 15); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 15); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_1101;

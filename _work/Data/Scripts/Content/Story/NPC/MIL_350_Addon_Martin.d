@@ -2,7 +2,7 @@
 instance Mil_350_Addon_Martin (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Мартин";	
+	name 		= "РњР°СЂС‚РёРЅ";	
 	guild 		= GIL_NONE;//wegen Rangermeeting
 	id 			= 350;
 	voice 		= 7;

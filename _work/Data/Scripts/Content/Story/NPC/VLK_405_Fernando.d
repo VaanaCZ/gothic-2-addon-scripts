@@ -1,7 +1,7 @@
 instance VLK_405_Fernando (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Фернандо"; 
+	name 		= "Р¤РµСЂРЅР°РЅРґРѕ"; 
 	guild 		= GIL_VLK;
 	id 			= 405;
 	voice 		= 14;

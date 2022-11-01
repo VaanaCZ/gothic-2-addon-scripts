@@ -2,7 +2,7 @@
 PROTOTYPE Mst_Skeleton_Lord	(C_NPC)
 {
 	//----- Monster ----
-	name							=	"Теневой воин";
+	name							=	"РўРµРЅРµРІРѕР№ РІРѕРёРЅ";
 	guild							=	GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETON;
 	level							=	40;
@@ -84,7 +84,7 @@ INSTANCE Skeleton_Lord	(Mst_Skeleton_Lord)
 
 INSTANCE Crypt_Skeleton_Lord	(Mst_Skeleton_Lord)
 {
-	name		=	"Теневой лорд Инубис";
+	name		=	"РўРµРЅРµРІРѕР№ Р»РѕСЂРґ РРЅСѓР±РёСЃ";
 
 	B_SetVisuals_Skeleton_Lord ();
 	
@@ -100,7 +100,7 @@ INSTANCE Crypt_Skeleton_Lord	(Mst_Skeleton_Lord)
 
 INSTANCE Skeleton_Lord_Archol	(Mst_Skeleton_Lord)
 {
-	name			=	"Теневой лорд Архол";
+	name			=	"РўРµРЅРµРІРѕР№ Р»РѕСЂРґ РђСЂС…РѕР»";
 	level			=	60;
 
 	//----- Attribute ----	

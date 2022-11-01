@@ -19,7 +19,7 @@ FUNC VOID DIA_Addon_Franco_EXIT_Info()
 	if (Franco_Exit == FALSE)
 	&& (MIS_HlpLogan == LOG_RUNNING)
 	{
-		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//Не потеряйся, или пойдешь на корм болотным акулам.
+		AI_Output(self,other,"DIA_Addon_Franco_EXIT_08_00");//РќРµ РїРѕС‚РµСЂСЏР№СЃСЏ, РёР»Рё РїРѕР№РґРµС€СЊ РЅР° РєРѕСЂРј Р±РѕР»РѕС‚РЅС‹Рј Р°РєСѓР»Р°Рј.
 		Franco_Exit = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -34,7 +34,7 @@ INSTANCE DIA_Franco_PICKPOCKET (C_INFO)
 	condition	= DIA_Franco_PICKPOCKET_Condition;
 	information	= DIA_Franco_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Пытаться украсть ее амулет очень рискованно)";
+	description = "(РџС‹С‚Р°С‚СЊСЃСЏ СѓРєСЂР°СЃС‚СЊ РµРµ Р°РјСѓР»РµС‚ РѕС‡РµРЅСЊ СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Franco_PICKPOCKET_Condition()
@@ -100,17 +100,17 @@ FUNC VOID DIA_Addon_Franco_HI_Info()
 {	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Если я выполню задания Франко, он впустит меня в лагерь.");
+	B_LogEntry (Topic_Addon_Franco,"Р•СЃР»Рё СЏ РІС‹РїРѕР»РЅСЋ Р·Р°РґР°РЅРёСЏ Р¤СЂР°РЅРєРѕ, РѕРЅ РІРїСѓСЃС‚РёС‚ РјРµРЅСЏ РІ Р»Р°РіРµСЂСЊ.");
 	
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Эй, что ты здесь делаешь? Ты хочешь попасть в лагерь?
-	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//Да, я...
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Меня не интересует, кто ты такой. Меня зовут Франко. Я здесь командую.
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Если ты будешь хорошо работать, я отправлю тебя в лагерь.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Р­Р№, С‡С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ? РўС‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ?
+	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//Р”Р°, СЏ...
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//РњРµРЅСЏ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№. РњРµРЅСЏ Р·РѕРІСѓС‚ Р¤СЂР°РЅРєРѕ. РЇ Р·РґРµСЃСЊ РєРѕРјР°РЅРґСѓСЋ.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ С…РѕСЂРѕС€Рѕ СЂР°Р±РѕС‚Р°С‚СЊ, СЏ РѕС‚РїСЂР°РІР»СЋ С‚РµР±СЏ РІ Р»Р°РіРµСЂСЊ.
 	
 	if (Ramon_News == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Стражник Рамон может тебе сказать, нужны ли в лагере новые люди. Поговори с ним.
-		B_LogEntry (Topic_Addon_Franco,"Я должен спросить Рамона, нужны ли в лагере еще люди.");
+		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//РЎС‚СЂР°Р¶РЅРёРє Р Р°РјРѕРЅ РјРѕР¶РµС‚ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ, РЅСѓР¶РЅС‹ Р»Рё РІ Р»Р°РіРµСЂРµ РЅРѕРІС‹Рµ Р»СЋРґРё. РџРѕРіРѕРІРѕСЂРё СЃ РЅРёРј.
+		B_LogEntry (Topic_Addon_Franco,"РЇ РґРѕР»Р¶РµРЅ СЃРїСЂРѕСЃРёС‚СЊ Р Р°РјРѕРЅР°, РЅСѓР¶РЅС‹ Р»Рё РІ Р»Р°РіРµСЂРµ РµС‰Рµ Р»СЋРґРё.");
 	};
 };
 //---------------------------------------------------------------------
@@ -123,7 +123,7 @@ INSTANCE DIA_Addon_Franco_Hai   (C_INFO)
 	condition   = DIA_Addon_Franco_Hai_Condition;
 	information = DIA_Addon_Franco_Hai_Info;
 	permanent   = FALSE;
-	description = "Торусу нужен новый человек.";
+	description = "РўРѕСЂСѓСЃСѓ РЅСѓР¶РµРЅ РЅРѕРІС‹Р№ С‡РµР»РѕРІРµРє.";
 };
 FUNC INT DIA_Addon_Franco_Hai_Condition()
 {	
@@ -135,15 +135,15 @@ FUNC INT DIA_Addon_Franco_Hai_Condition()
 FUNC VOID DIA_Addon_Franco_Hai_Info()
 {	
 	
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_00");//Торусу нужен новый человек.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Хорошо, я позабочусь об этом.
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_02");//Минуточку, а как же я?
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//Ты еще ничего не сделал.
-	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//Я сделал довольно много, вот только ты об этом не знаешь.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//Ну хорошо. Тебе нужен шанс? Ты его получишь. Тащи свою задницу к Логану. Его замучили болотные акулы.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//Помоги ему расправиться с чудовищами и считай, что ты в лагере.
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_00");//РўРѕСЂСѓСЃСѓ РЅСѓР¶РµРЅ РЅРѕРІС‹Р№ С‡РµР»РѕРІРµРє.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//РҐРѕСЂРѕС€Рѕ, СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± СЌС‚РѕРј.
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_02");//РњРёРЅСѓС‚РѕС‡РєСѓ, Р° РєР°Рє Р¶Рµ СЏ?
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//РўС‹ РµС‰Рµ РЅРёС‡РµРіРѕ РЅРµ СЃРґРµР»Р°Р».
+	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//РЇ СЃРґРµР»Р°Р» РґРѕРІРѕР»СЊРЅРѕ РјРЅРѕРіРѕ, РІРѕС‚ С‚РѕР»СЊРєРѕ С‚С‹ РѕР± СЌС‚РѕРј РЅРµ Р·РЅР°РµС€СЊ.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_05");//РќСѓ С…РѕСЂРѕС€Рѕ. РўРµР±Рµ РЅСѓР¶РµРЅ С€Р°РЅСЃ? РўС‹ РµРіРѕ РїРѕР»СѓС‡РёС€СЊ. РўР°С‰Рё СЃРІРѕСЋ Р·Р°РґРЅРёС†Сѓ Рє Р›РѕРіР°РЅСѓ. Р•РіРѕ Р·Р°РјСѓС‡РёР»Рё Р±РѕР»РѕС‚РЅС‹Рµ Р°РєСѓР»С‹.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_06");//РџРѕРјРѕРіРё РµРјСѓ СЂР°СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ С‡СѓРґРѕРІРёС‰Р°РјРё Рё СЃС‡РёС‚Р°Р№, С‡С‚Рѕ С‚С‹ РІ Р»Р°РіРµСЂРµ.
 	
-	B_LogEntry (Topic_Addon_Franco,"Франко хочет, чтобы я помог Логану.");
+	B_LogEntry (Topic_Addon_Franco,"Р¤СЂР°РЅРєРѕ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРјРѕРі Р›РѕРіР°РЅСѓ.");
 };
 //---------------------------------------------------------------------
 //	Info Logan Wo?
@@ -155,7 +155,7 @@ INSTANCE DIA_Addon_Franco_Wo   (C_INFO)
 	condition   = DIA_Addon_Franco_Wo_Condition;
 	information = DIA_Addon_Franco_Wo_Info;
 	permanent   = FALSE;
-	description = "Где мне найти Логана?";
+	description = "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р›РѕРіР°РЅР°?";
 };
 FUNC INT DIA_Addon_Franco_Wo_Condition()
 {	
@@ -168,8 +168,8 @@ FUNC INT DIA_Addon_Franco_Wo_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Wo_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//Где мне найти Логана?
-	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Если ты стоишь лицом к входу в лагерь, то тебе надо идти налево, вдоль скалы. Чтобы встретиться с Логаном, пройди немного вглубь болота.
+	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р›РѕРіР°РЅР°?
+	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Р•СЃР»Рё С‚С‹ СЃС‚РѕРёС€СЊ Р»РёС†РѕРј Рє РІС…РѕРґСѓ РІ Р»Р°РіРµСЂСЊ, С‚Рѕ С‚РµР±Рµ РЅР°РґРѕ РёРґС‚Рё РЅР°Р»РµРІРѕ, РІРґРѕР»СЊ СЃРєР°Р»С‹. Р§С‚РѕР±С‹ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р›РѕРіР°РЅРѕРј, РїСЂРѕР№РґРё РЅРµРјРЅРѕРіРѕ РІРіР»СѓР±СЊ Р±РѕР»РѕС‚Р°.
 	AI_StopProcessInfos (self);
 };
 //---------------------------------------------------------------------
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Franco_tot   (C_INFO)
 	condition   = DIA_Addon_Franco_tot_Condition;
 	information = DIA_Addon_Franco_tot_Info;
 	permanent   = FALSE;
-	description = "Логан мертв.";
+	description = "Р›РѕРіР°РЅ РјРµСЂС‚РІ.";
 };
 FUNC INT DIA_Addon_Franco_tot_Condition()
 {	
@@ -195,9 +195,9 @@ FUNC INT DIA_Addon_Franco_tot_Condition()
 };
 FUNC VOID DIA_Addon_Franco_tot_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Логан мертв.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Черт! Он был нашим лучшим охотником. Дьявол, опять эти проблемы.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Ну ладно. Но я уже послал в лагерь другого человека.
+	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Р›РѕРіР°РЅ РјРµСЂС‚РІ.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Р§РµСЂС‚! РћРЅ Р±С‹Р» РЅР°С€РёРј Р»СѓС‡С€РёРј РѕС…РѕС‚РЅРёРєРѕРј. Р”СЊСЏРІРѕР», РѕРїСЏС‚СЊ СЌС‚Рё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//РќСѓ Р»Р°РґРЅРѕ. РќРѕ СЏ СѓР¶Рµ РїРѕСЃР»Р°Р» РІ Р»Р°РіРµСЂСЊ РґСЂСѓРіРѕРіРѕ С‡РµР»РѕРІРµРєР°.
 	
 	if (MIS_HlpLogan == LOG_RUNNING)
 	{
@@ -215,7 +215,7 @@ INSTANCE DIA_Addon_Franco_HaiSuccess   (C_INFO)
 	condition   = DIA_Addon_Franco_HaiSuccess_Condition;
 	information = DIA_Addon_Franco_HaiSuccess_Info;
 	permanent   = FALSE;
-	description = "Я помог Логану.";
+	description = "РЇ РїРѕРјРѕРі Р›РѕРіР°РЅСѓ.";
 };
 FUNC INT DIA_Addon_Franco_HaiSuccess_Condition()
 {	
@@ -227,16 +227,16 @@ FUNC INT DIA_Addon_Franco_HaiSuccess_Condition()
 };
 FUNC VOID DIA_Addon_Franco_HaiSuccess_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_00");//Я помог Логану.
+	AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_00");//РЇ РїРѕРјРѕРі Р›РѕРіР°РЅСѓ.
 	
 	if Npc_IsDead (Logan)
 	{
-		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//Но он не выжил.
+		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//РќРѕ РѕРЅ РЅРµ РІС‹Р¶РёР».
 	};
-	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//Итак, ты победил болотных акул. Следовательно, ты полезен... по крайней мере, полезнее, чем большинство местных бездельников.
+	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//РС‚Р°Рє, С‚С‹ РїРѕР±РµРґРёР» Р±РѕР»РѕС‚РЅС‹С… Р°РєСѓР». РЎР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, С‚С‹ РїРѕР»РµР·РµРЅ... РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РїРѕР»РµР·РЅРµРµ, С‡РµРј Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РјРµСЃС‚РЅС‹С… Р±РµР·РґРµР»СЊРЅРёРєРѕРІ.
 	B_GivePlayerXP (XP_Addon_HlpLogan);
 	
-	B_LogEntry (Topic_Addon_Franco,"Одной помощи Логану оказалось недостаточно для того, чтобы попасть в лагерь.");
+	B_LogEntry (Topic_Addon_Franco,"РћРґРЅРѕР№ РїРѕРјРѕС‰Рё Р›РѕРіР°РЅСѓ РѕРєР°Р·Р°Р»РѕСЃСЊ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ.");
 };
 
 //---------------------------------------------------------------------
@@ -249,7 +249,7 @@ INSTANCE DIA_Addon_Franco_Mis2 (C_INFO)
 	condition   = DIA_Addon_Franco_Mis2_Condition;
 	information = DIA_Addon_Franco_Mis2_Info;
 	permanent   = FALSE;
-	description = "Теперь я могу пройти в лагерь?";
+	description = "РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РїСЂРѕР№С‚Рё РІ Р»Р°РіРµСЂСЊ?";
 };
 FUNC INT DIA_Addon_Franco_Mis2_Condition()
 {	
@@ -261,19 +261,19 @@ FUNC INT DIA_Addon_Franco_Mis2_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Mis2_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//Теперь я могу пройти в лагерь?
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Послушай, мне нужно, чтобы ты выполнил еще одно мое поручение.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//Несколько дней назад я послал на болото Эдгора.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//Он должен был добыть для меня древнюю каменную табличку. Но с тех пор его никто не видел.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Узнай, что он делает, и принеси мне эту чертову табличку!
+	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РїСЂРѕР№С‚Рё РІ Р»Р°РіРµСЂСЊ?
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//РџРѕСЃР»СѓС€Р°Р№, РјРЅРµ РЅСѓР¶РЅРѕ, С‡С‚РѕР±С‹ С‚С‹ РІС‹РїРѕР»РЅРёР» РµС‰Рµ РѕРґРЅРѕ РјРѕРµ РїРѕСЂСѓС‡РµРЅРёРµ.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ СЏ РїРѕСЃР»Р°Р» РЅР° Р±РѕР»РѕС‚Рѕ Р­РґРіРѕСЂР°.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//РћРЅ РґРѕР»Р¶РµРЅ Р±С‹Р» РґРѕР±С‹С‚СЊ РґР»СЏ РјРµРЅСЏ РґСЂРµРІРЅСЋСЋ РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ. РќРѕ СЃ С‚РµС… РїРѕСЂ РµРіРѕ РЅРёРєС‚Рѕ РЅРµ РІРёРґРµР».
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//РЈР·РЅР°Р№, С‡С‚Рѕ РѕРЅ РґРµР»Р°РµС‚, Рё РїСЂРёРЅРµСЃРё РјРЅРµ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ С‚Р°Р±Р»РёС‡РєСѓ!
 	
 	MIS_HlpEdgor = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_Stoneplate,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Stoneplate,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Stoneplate,"Франко нужна каменная табличка, которую должен был принести ему Эдгор. Теперь это моя забота.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Р¤СЂР°РЅРєРѕ РЅСѓР¶РЅР° РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°, РєРѕС‚РѕСЂСѓСЋ РґРѕР»Р¶РµРЅ Р±С‹Р» РїСЂРёРЅРµСЃС‚Рё РµРјСѓ Р­РґРіРѕСЂ. РўРµРїРµСЂСЊ СЌС‚Рѕ РјРѕСЏ Р·Р°Р±РѕС‚Р°.");
 	
-	B_LogEntry (Topic_Addon_Franco,"Франко хочет, чтобы я помог Эдгору.");
+	B_LogEntry (Topic_Addon_Franco,"Р¤СЂР°РЅРєРѕ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРјРѕРі Р­РґРіРѕСЂСѓ.");
 };
 
 //---------------------------------------------------------------------
@@ -286,7 +286,7 @@ INSTANCE DIA_Addon_Franco_While   (C_INFO)
 	condition   = DIA_Addon_Franco_While_Condition;
 	information = DIA_Addon_Franco_While_Info;
 	permanent   = FALSE;
-	description = "А что насчет золота?";
+	description = "Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ Р·РѕР»РѕС‚Р°?";
 };
 FUNC INT DIA_Addon_Franco_While_Condition()
 {	
@@ -297,12 +297,12 @@ FUNC INT DIA_Addon_Franco_While_Condition()
 };
 FUNC VOID DIA_Addon_Franco_While_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_While_15_00");//А что насчет золота?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Что?
-	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Что я получу за свою работу на болоте?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(дружелюбно) А, тебе нужно золото? Ну конечно! Сколько ты хочешь? Пятьдесят самородков? Сто? Я дам тебе столько, сколько ты сможешь унести...
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(кричит) Да кто ты такой?! Ты что, хочешь сделать из меня идиота?!
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Шевели своей задницей и делай, что тебе говорят! Иначе ты к золоту и близко не подойдешь!
+	AI_Output (other,self,"DIA_Addon_Franco_While_15_00");//Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ Р·РѕР»РѕС‚Р°?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Р§С‚Рѕ?
+	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ РЅР° Р±РѕР»РѕС‚Рµ?
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(РґСЂСѓР¶РµР»СЋР±РЅРѕ) Рђ, С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РѕР»РѕС‚Рѕ? РќСѓ РєРѕРЅРµС‡РЅРѕ! РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ? РџСЏС‚СЊРґРµСЃСЏС‚ СЃР°РјРѕСЂРѕРґРєРѕРІ? РЎС‚Рѕ? РЇ РґР°Рј С‚РµР±Рµ СЃС‚РѕР»СЊРєРѕ, СЃРєРѕР»СЊРєРѕ С‚С‹ СЃРјРѕР¶РµС€СЊ СѓРЅРµСЃС‚Рё...
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(РєСЂРёС‡РёС‚) Р”Р° РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№?! РўС‹ С‡С‚Рѕ, С…РѕС‡РµС€СЊ СЃРґРµР»Р°С‚СЊ РёР· РјРµРЅСЏ РёРґРёРѕС‚Р°?!
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//РЁРµРІРµР»Рё СЃРІРѕРµР№ Р·Р°РґРЅРёС†РµР№ Рё РґРµР»Р°Р№, С‡С‚Рѕ С‚РµР±Рµ РіРѕРІРѕСЂСЏС‚! РРЅР°С‡Рµ С‚С‹ Рє Р·РѕР»РѕС‚Сѓ Рё Р±Р»РёР·РєРѕ РЅРµ РїРѕРґРѕР№РґРµС€СЊ!
 	AI_StopProcessInfos(self);
 };
 
@@ -316,7 +316,7 @@ INSTANCE DIA_Addon_Franco_WOEDGOR   (C_INFO)
 	condition   = DIA_Addon_Franco_WOEDGOR_Condition;
 	information = DIA_Addon_Franco_WOEDGOR_Info;
 	permanent   = TRUE;
-	description = "И где же мне найти этого Эдгора?";
+	description = "Р РіРґРµ Р¶Рµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ Р­РґРіРѕСЂР°?";
 };
 FUNC INT DIA_Addon_Franco_WOEDGOR_Condition()
 {	
@@ -328,25 +328,25 @@ FUNC INT DIA_Addon_Franco_WOEDGOR_Condition()
 };
 FUNC VOID DIA_Addon_Franco_WOEDGOR_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_15_00"); //(вздыхает) И где же мне найти этого Эдгора?
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Тебе легкий путь или быстрый?
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_15_00"); //(РІР·РґС‹С…Р°РµС‚) Р РіРґРµ Р¶Рµ РјРЅРµ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ Р­РґРіРѕСЂР°?
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //РўРµР±Рµ Р»РµРіРєРёР№ РїСѓС‚СЊ РёР»Рё Р±С‹СЃС‚СЂС‹Р№?
 	
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Я выбираю быстрый путь." ,DIA_Addon_Franco_WOEDGOR_Fast);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Скажи мне легкий путь." ,DIA_Addon_Franco_WOEDGOR_Easy);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "РЇ РІС‹Р±РёСЂР°СЋ Р±С‹СЃС‚СЂС‹Р№ РїСѓС‚СЊ." ,DIA_Addon_Franco_WOEDGOR_Fast);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "РЎРєР°Р¶Рё РјРЅРµ Р»РµРіРєРёР№ РїСѓС‚СЊ." ,DIA_Addon_Franco_WOEDGOR_Easy);
 };
 
 func void B_Addon_Franco_There()
 {
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Здесь везде развалины. Он наверняка сидит где-то там.
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //Думаю, ему хватило ума развести костер. Надеюсь, костер-то ты сможешь найти?
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Р—РґРµСЃСЊ РІРµР·РґРµ СЂР°Р·РІР°Р»РёРЅС‹. РћРЅ РЅР°РІРµСЂРЅСЏРєР° СЃРёРґРёС‚ РіРґРµ-С‚Рѕ С‚Р°Рј.
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //Р”СѓРјР°СЋ, РµРјСѓ С…РІР°С‚РёР»Рѕ СѓРјР° СЂР°Р·РІРµСЃС‚Рё РєРѕСЃС‚РµСЂ. РќР°РґРµСЋСЃСЊ, РєРѕСЃС‚РµСЂ-С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РЅР°Р№С‚Рё?
 };
 
 func void DIA_Addon_Franco_WOEDGOR_Easy()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Скажи мне легкий путь.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Иди по пути, ведущему к главным воротам. Там ты встретишь Санчо.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Оттуда иди налево по деревянной дорожке.
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //РЎРєР°Р¶Рё РјРЅРµ Р»РµРіРєРёР№ РїСѓС‚СЊ.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //РРґРё РїРѕ РїСѓС‚Рё, РІРµРґСѓС‰РµРјСѓ Рє РіР»Р°РІРЅС‹Рј РІРѕСЂРѕС‚Р°Рј. РўР°Рј С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊ РЎР°РЅС‡Рѕ.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //РћС‚С‚СѓРґР° РёРґРё РЅР°Р»РµРІРѕ РїРѕ РґРµСЂРµРІСЏРЅРЅРѕР№ РґРѕСЂРѕР¶РєРµ.
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -354,8 +354,8 @@ func void DIA_Addon_Franco_WOEDGOR_Easy()
 
 func void DIA_Addon_Franco_WOEDGOR_Fast()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //Я выбираю быстрый путь.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //Хорошо. Иди отсюда по диагонали налево. Направляйся вглубь болота, минуя деревянную дорожку.
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //РЇ РІС‹Р±РёСЂР°СЋ Р±С‹СЃС‚СЂС‹Р№ РїСѓС‚СЊ.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //РҐРѕСЂРѕС€Рѕ. РРґРё РѕС‚СЃСЋРґР° РїРѕ РґРёР°РіРѕРЅР°Р»Рё РЅР°Р»РµРІРѕ. РќР°РїСЂР°РІР»СЏР№СЃСЏ РІРіР»СѓР±СЊ Р±РѕР»РѕС‚Р°, РјРёРЅСѓСЏ РґРµСЂРµРІСЏРЅРЅСѓСЋ РґРѕСЂРѕР¶РєСѓ.
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -370,7 +370,7 @@ INSTANCE DIA_Addon_Franco_tafel   (C_INFO)
 	condition   = DIA_Addon_Franco_tafel_Condition;
 	information = DIA_Addon_Franco_tafel_Info;
 	permanent   = FALSE;
-	description = "Вот твоя каменная табличка.";
+	description = "Р’РѕС‚ С‚РІРѕСЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°.";
 };
 FUNC INT DIA_Addon_Franco_tafel_Condition()
 {	
@@ -382,14 +382,14 @@ FUNC INT DIA_Addon_Franco_tafel_Condition()
 };
 FUNC VOID DIA_Addon_Franco_tafel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_tafel_15_00");//Вот твоя каменная табличка.
+	AI_Output (other,self,"DIA_Addon_Franco_tafel_15_00");//Р’РѕС‚ С‚РІРѕСЏ РєР°РјРµРЅРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°.
 	B_GiveInvItems (other, self, ItMi_Addon_Stone_04,1);
 	
-	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Очень хорошо. Ворон будет доволен.
+	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р’РѕСЂРѕРЅ Р±СѓРґРµС‚ РґРѕРІРѕР»РµРЅ.
 	MIS_HlpEdgor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_HlpEdgor);
 	
-	B_LogEntry (Topic_Addon_Franco,"Я принес Франко его каменную табличку.");
+	B_LogEntry (Topic_Addon_Franco,"РЇ РїСЂРёРЅРµСЃ Р¤СЂР°РЅРєРѕ РµРіРѕ РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ.");
 };
 
 //---------------------------------------------------------------------
@@ -402,7 +402,7 @@ INSTANCE DIA_Addon_Franco_JemandAnderen   (C_INFO)
 	condition   = DIA_Addon_Franco_JemandAnderen_Condition;
 	information = DIA_Addon_Franco_JemandAnderen_Info;
 	permanent   = FALSE;
-	description = "Ну что, теперь-то наконец я попаду в лагерь?";
+	description = "РќСѓ С‡С‚Рѕ, С‚РµРїРµСЂСЊ-С‚Рѕ РЅР°РєРѕРЅРµС† СЏ РїРѕРїР°РґСѓ РІ Р»Р°РіРµСЂСЊ?";
 };
 FUNC INT DIA_Addon_Franco_JemandAnderen_Condition()
 {	
@@ -413,11 +413,11 @@ FUNC INT DIA_Addon_Franco_JemandAnderen_Condition()
 };
 FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_JemandAnderen_15_00");//Ну что, теперь-то наконец я попаду в лагерь?
+	AI_Output (other,self,"DIA_Addon_Franco_JemandAnderen_15_00");//РќСѓ С‡С‚Рѕ, С‚РµРїРµСЂСЊ-С‚Рѕ РЅР°РєРѕРЅРµС† СЏ РїРѕРїР°РґСѓ РІ Р»Р°РіРµСЂСЊ?
 	
 	if !Npc_IsDead (Logan)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//Нет, я уже отправил туда Логана. Он был перед тобой в списке.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//РќРµС‚, СЏ СѓР¶Рµ РѕС‚РїСЂР°РІРёР» С‚СѓРґР° Р›РѕРіР°РЅР°. РћРЅ Р±С‹Р» РїРµСЂРµРґ С‚РѕР±РѕР№ РІ СЃРїРёСЃРєРµ.
 		
 		Logan_Inside = TRUE;
 		AI_Teleport (Logan,"BL_INN_CORNER_02");
@@ -425,13 +425,13 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//Нет, я уже послал в лагерь другого человека.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//РќРµС‚, СЏ СѓР¶Рµ РїРѕСЃР»Р°Р» РІ Р»Р°РіРµСЂСЊ РґСЂСѓРіРѕРіРѕ С‡РµР»РѕРІРµРєР°.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//И больше люди в лагере не нужны.
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//К тому же теперь, когда Логана больше здесь нет, я смогу использовать вместо него тебя.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//Р Р±РѕР»СЊС€Рµ Р»СЋРґРё РІ Р»Р°РіРµСЂРµ РЅРµ РЅСѓР¶РЅС‹.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Рљ С‚РѕРјСѓ Р¶Рµ С‚РµРїРµСЂСЊ, РєРѕРіРґР° Р›РѕРіР°РЅР° Р±РѕР»СЊС€Рµ Р·РґРµСЃСЊ РЅРµС‚, СЏ СЃРјРѕРіСѓ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РІРјРµСЃС‚Рѕ РЅРµРіРѕ С‚РµР±СЏ.
 		
-	B_LogEntry (Topic_Addon_Franco,"Франко не пускает меня в лагерь. Думаю, придется с ним разобраться...");
+	B_LogEntry (Topic_Addon_Franco,"Р¤СЂР°РЅРєРѕ РЅРµ РїСѓСЃРєР°РµС‚ РјРµРЅСЏ РІ Р»Р°РіРµСЂСЊ. Р”СѓРјР°СЋ, РїСЂРёРґРµС‚СЃСЏ СЃ РЅРёРј СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ...");
 };
 
 //---------------------------------------------------------------------
@@ -444,7 +444,7 @@ INSTANCE DIA_Addon_Franco_Fight   (C_INFO)
 	condition   = DIA_Addon_Franco_Fight_Condition;
 	information = DIA_Addon_Franco_Fight_Info;
 	permanent   = TRUE;
-	description = "Немедленно впусти меня в лагерь!";
+	description = "РќРµРјРµРґР»РµРЅРЅРѕ РІРїСѓСЃС‚Рё РјРµРЅСЏ РІ Р»Р°РіРµСЂСЊ!";
 };
 FUNC INT DIA_Addon_Franco_Fight_Condition()
 {	
@@ -452,18 +452,18 @@ FUNC INT DIA_Addon_Franco_Fight_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Fight_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_15_00"); //Немедленно впусти меня в лагерь!
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //А что, если я откажусь?
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_15_00"); //РќРµРјРµРґР»РµРЅРЅРѕ РІРїСѓСЃС‚Рё РјРµРЅСЏ РІ Р»Р°РіРµСЂСЊ!
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //Рђ С‡С‚Рѕ, РµСЃР»Рё СЏ РѕС‚РєР°Р¶СѓСЃСЊ?
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
-	Info_AddChoice (DIA_Addon_Franco_Fight, "Ладно, я подожду..." ,DIA_Addon_Franco_Fight_Nothing);
-	Info_AddChoice (DIA_Addon_Franco_Fight, "Тогда ты об этом пожалеешь." ,DIA_Addon_Franco_Fight_Duel);
+	Info_AddChoice (DIA_Addon_Franco_Fight, "Р›Р°РґРЅРѕ, СЏ РїРѕРґРѕР¶РґСѓ..." ,DIA_Addon_Franco_Fight_Nothing);
+	Info_AddChoice (DIA_Addon_Franco_Fight, "РўРѕРіРґР° С‚С‹ РѕР± СЌС‚РѕРј РїРѕР¶Р°Р»РµРµС€СЊ." ,DIA_Addon_Franco_Fight_Duel);
 };
 
 func void DIA_Addon_Franco_Fight_Duel()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //Тогда ты об этом пожалеешь.
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Ты что, мне угрожаешь? ТЫ угрожаешь МНЕ? Придется преподать тебе урок...
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //РўРѕРіРґР° С‚С‹ РѕР± СЌС‚РѕРј РїРѕР¶Р°Р»РµРµС€СЊ.
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //РўС‹ С‡С‚Рѕ, РјРЅРµ СѓРіСЂРѕР¶Р°РµС€СЊ? РўР« СѓРіСЂРѕР¶Р°РµС€СЊ РњРќР•? РџСЂРёРґРµС‚СЃСЏ РїСЂРµРїРѕРґР°С‚СЊ С‚РµР±Рµ СѓСЂРѕРє...
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -471,8 +471,8 @@ func void DIA_Addon_Franco_Fight_Duel()
 
 func void DIA_Addon_Franco_Fight_Nothing()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Ладно, я подожду...
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //Именно так.
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Р›Р°РґРЅРѕ, СЏ РїРѕРґРѕР¶РґСѓ...
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //РРјРµРЅРЅРѕ С‚Р°Рє.
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
@@ -488,7 +488,7 @@ INSTANCE DIA_Addon_Franco_Pig   (C_INFO)
 	condition   = DIA_Addon_Franco_Pig_Condition;
 	information = DIA_Addon_Franco_Pig_Info;
 	permanent   = TRUE;
-	description = "Свинья! Я разделаюсь с тобой!";
+	description = "РЎРІРёРЅСЊСЏ! РЇ СЂР°Р·РґРµР»Р°СЋСЃСЊ СЃ С‚РѕР±РѕР№!";
 };
 FUNC INT DIA_Addon_Franco_Pig_Condition()
 {	
@@ -499,8 +499,8 @@ FUNC INT DIA_Addon_Franco_Pig_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Pig_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Свинья! Я разделаюсь с тобой!
-	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//Ах ты, жалкий ублюдок! Ты посмел угрожать мне? Тебе конец!
+	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//РЎРІРёРЅСЊСЏ! РЇ СЂР°Р·РґРµР»Р°СЋСЃСЊ СЃ С‚РѕР±РѕР№!
+	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//РђС… С‚С‹, Р¶Р°Р»РєРёР№ СѓР±Р»СЋРґРѕРє! РўС‹ РїРѕСЃРјРµР» СѓРіСЂРѕР¶Р°С‚СЊ РјРЅРµ? РўРµР±Рµ РєРѕРЅРµС†!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

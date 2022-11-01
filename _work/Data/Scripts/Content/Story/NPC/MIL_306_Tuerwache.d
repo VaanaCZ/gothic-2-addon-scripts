@@ -2,7 +2,7 @@
 instance Mil_306_Tuerwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Стражник судьи"; 	
+	name 		= "РЎС‚СЂР°Р¶РЅРёРє СЃСѓРґСЊРё"; 	
 	guild 		= GIL_MIL;
 	id 			= 306;
 	voice 		= 7;

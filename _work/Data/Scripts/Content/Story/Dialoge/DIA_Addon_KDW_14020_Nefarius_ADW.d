@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Nefarius_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Nefarius_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wдre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wРґre einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_ADW_PICKPOCKET_Condition()
@@ -94,12 +94,12 @@ func int DIA_Addon_Nefarius_ADWHello_Condition ()
 };
 func void DIA_Addon_Nefarius_ADWHello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //Я очень рад, что ты появился здесь целым и невредимым.
-	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //Как получилось, что вы появились здесь раньше меня?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //Мы путешествовали через загадочные измерения. Кто знает, какой путь достался тебе...
-	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //Использовать портал безопасно?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //Мы сразу же попали сюда. Очевидно, портал работает исправно.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //Конечно! Если что-нибудь пойдет не так, я обязательно тебе сообщу.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_00"); //РЇ РѕС‡РµРЅСЊ СЂР°Рґ, С‡С‚Рѕ С‚С‹ РїРѕСЏРІРёР»СЃСЏ Р·РґРµСЃСЊ С†РµР»С‹Рј Рё РЅРµРІСЂРµРґРёРјС‹Рј.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_01"); //РљР°Рє РїРѕР»СѓС‡РёР»РѕСЃСЊ, С‡С‚Рѕ РІС‹ РїРѕСЏРІРёР»РёСЃСЊ Р·РґРµСЃСЊ СЂР°РЅСЊС€Рµ РјРµРЅСЏ?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_02"); //РњС‹ РїСѓС‚РµС€РµСЃС‚РІРѕРІР°Р»Рё С‡РµСЂРµР· Р·Р°РіР°РґРѕС‡РЅС‹Рµ РёР·РјРµСЂРµРЅРёСЏ. РљС‚Рѕ Р·РЅР°РµС‚, РєР°РєРѕР№ РїСѓС‚СЊ РґРѕСЃС‚Р°Р»СЃСЏ С‚РµР±Рµ...
+	AI_Output	(other, self, "DIA_Addon_Nefarius_ADWHello_15_03"); //РСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РїРѕСЂС‚Р°Р» Р±РµР·РѕРїР°СЃРЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_04"); //РњС‹ СЃСЂР°Р·Сѓ Р¶Рµ РїРѕРїР°Р»Рё СЃСЋРґР°. РћС‡РµРІРёРґРЅРѕ, РїРѕСЂС‚Р°Р» СЂР°Р±РѕС‚Р°РµС‚ РёСЃРїСЂР°РІРЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_ADWHello_05_05"); //РљРѕРЅРµС‡РЅРѕ! Р•СЃР»Рё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕР№РґРµС‚ РЅРµ С‚Р°Рє, СЏ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ С‚РµР±Рµ СЃРѕРѕР±С‰Сѓ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -112,7 +112,7 @@ instance DIA_Addon_Nefarius_Neues		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_Neues_Condition;
 	information	 = 	DIA_Addon_Nefarius_Neues_Info;
 
-	description	 = 	"Чем вы здесь занимаетесь?";
+	description	 = 	"Р§РµРј РІС‹ Р·РґРµСЃСЊ Р·Р°РЅРёРјР°РµС‚РµСЃСЊ?";
 };
 
 func int DIA_Addon_Nefarius_Neues_Condition ()
@@ -125,53 +125,53 @@ func int DIA_Addon_Nefarius_Neues_Condition ()
 
 func void DIA_Addon_Nefarius_Neues_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //Чем вы здесь занимаетесь?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //Я изучаю историю зодчих и пытаюсь выяснить, почему они закрыли портал.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //Похоже, что они хотели скрыть затонувший город от всего остального мира.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //В прошлом здесь случилось что-то ужасное. Ими овладела какая-то злая сила.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Если верить записям, разразилась яростная гражданская война, вскоре за которой последовало разрушение города.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //На объятые пламенем улицы обрушилась вода потопа, принесшего гибель зодчим.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //Те немногие, кто пережил этот ад, решили скрыть эту часть острова, чтобы воспрепятствовать распространению хаоса.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_Neues_15_00"); //Р§РµРј РІС‹ Р·РґРµСЃСЊ Р·Р°РЅРёРјР°РµС‚РµСЃСЊ?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_01"); //РЇ РёР·СѓС‡Р°СЋ РёСЃС‚РѕСЂРёСЋ Р·РѕРґС‡РёС… Рё РїС‹С‚Р°СЋСЃСЊ РІС‹СЏСЃРЅРёС‚СЊ, РїРѕС‡РµРјСѓ РѕРЅРё Р·Р°РєСЂС‹Р»Рё РїРѕСЂС‚Р°Р».
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_02"); //РџРѕС…РѕР¶Рµ, С‡С‚Рѕ РѕРЅРё С…РѕС‚РµР»Рё СЃРєСЂС‹С‚СЊ Р·Р°С‚РѕРЅСѓРІС€РёР№ РіРѕСЂРѕРґ РѕС‚ РІСЃРµРіРѕ РѕСЃС‚Р°Р»СЊРЅРѕРіРѕ РјРёСЂР°.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_03"); //Р’ РїСЂРѕС€Р»РѕРј Р·РґРµСЃСЊ СЃР»СѓС‡РёР»РѕСЃСЊ С‡С‚Рѕ-С‚Рѕ СѓР¶Р°СЃРЅРѕРµ. РРјРё РѕРІР»Р°РґРµР»Р° РєР°РєР°СЏ-С‚Рѕ Р·Р»Р°СЏ СЃРёР»Р°.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_04"); //Р•СЃР»Рё РІРµСЂРёС‚СЊ Р·Р°РїРёСЃСЏРј, СЂР°Р·СЂР°Р·РёР»Р°СЃСЊ СЏСЂРѕСЃС‚РЅР°СЏ РіСЂР°Р¶РґР°РЅСЃРєР°СЏ РІРѕР№РЅР°, РІСЃРєРѕСЂРµ Р·Р° РєРѕС‚РѕСЂРѕР№ РїРѕСЃР»РµРґРѕРІР°Р»Рѕ СЂР°Р·СЂСѓС€РµРЅРёРµ РіРѕСЂРѕРґР°.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_05"); //РќР° РѕР±СЉСЏС‚С‹Рµ РїР»Р°РјРµРЅРµРј СѓР»РёС†С‹ РѕР±СЂСѓС€РёР»Р°СЃСЊ РІРѕРґР° РїРѕС‚РѕРїР°, РїСЂРёРЅРµСЃС€РµРіРѕ РіРёР±РµР»СЊ Р·РѕРґС‡РёРј.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_Neues_05_06"); //РўРµ РЅРµРјРЅРѕРіРёРµ, РєС‚Рѕ РїРµСЂРµР¶РёР» СЌС‚РѕС‚ Р°Рґ, СЂРµС€РёР»Рё СЃРєСЂС‹С‚СЊ СЌС‚Сѓ С‡Р°СЃС‚СЊ РѕСЃС‚СЂРѕРІР°, С‡С‚РѕР±С‹ РІРѕСЃРїСЂРµРїСЏС‚СЃС‚РІРѕРІР°С‚СЊ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅРµРЅРёСЋ С…Р°РѕСЃР°.
 	
 	Info_ClearChoices	(DIA_Addon_Nefarius_Neues);
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Как ты думаешь, что мы найдем здесь?", DIA_Addon_Nefarius_Neues_find );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "А мы, глупцы, вновь открыли портал...", DIA_Addon_Nefarius_Neues_auf );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Но в чем провинились зодчие?", DIA_Addon_Nefarius_Neues_was );
-	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Ты сказал, что здесь был потоп?", DIA_Addon_Nefarius_Neues_flut );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РјС‹ РЅР°Р№РґРµРј Р·РґРµСЃСЊ?", DIA_Addon_Nefarius_Neues_find );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "Рђ РјС‹, РіР»СѓРїС†С‹, РІРЅРѕРІСЊ РѕС‚РєСЂС‹Р»Рё РїРѕСЂС‚Р°Р»...", DIA_Addon_Nefarius_Neues_auf );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "РќРѕ РІ С‡РµРј РїСЂРѕРІРёРЅРёР»РёСЃСЊ Р·РѕРґС‡РёРµ?", DIA_Addon_Nefarius_Neues_was );
+	Info_AddChoice	(DIA_Addon_Nefarius_Neues, "РўС‹ СЃРєР°Р·Р°Р», С‡С‚Рѕ Р·РґРµСЃСЊ Р±С‹Р» РїРѕС‚РѕРї?", DIA_Addon_Nefarius_Neues_flut );
 };
 func void DIA_Addon_Nefarius_Neues_find ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //Как ты думаешь, что мы найдем здесь?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //Пока у меня есть только смутные догадки. Ты должен поговорить с Сатурасом.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //У него есть какие-то определенные мысли на этот счет.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_find_15_00"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РјС‹ РЅР°Р№РґРµРј Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_01"); //РџРѕРєР° Сѓ РјРµРЅСЏ РµСЃС‚СЊ С‚РѕР»СЊРєРѕ СЃРјСѓС‚РЅС‹Рµ РґРѕРіР°РґРєРё. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЎР°С‚СѓСЂР°СЃРѕРј.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_find_05_02"); //РЈ РЅРµРіРѕ РµСЃС‚СЊ РєР°РєРёРµ-С‚Рѕ РѕРїСЂРµРґРµР»РµРЅРЅС‹Рµ РјС‹СЃР»Рё РЅР° СЌС‚РѕС‚ СЃС‡РµС‚.
 	
 	Log_CreateTopic (TOPIC_Addon_Flut, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Flut, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Flut,"Нефариус сказал, что я должен поговорить с Сатурасом о затонувшем городе."); 
+	B_LogEntry (TOPIC_Addon_Flut,"РќРµС„Р°СЂРёСѓСЃ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РЎР°С‚СѓСЂР°СЃРѕРј Рѕ Р·Р°С‚РѕРЅСѓРІС€РµРј РіРѕСЂРѕРґРµ."); 
 
 	
 	NefariusADW_Talk2Saturas = TRUE;
 };
 func void DIA_Addon_Nefarius_Neues_flut ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //Ты сказал, что здесь был потоп?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //Сам Аданос явился зодчим, чтобы остановить безумие.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //Он сравнял город с землей.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_flut_15_00"); //РўС‹ СЃРєР°Р·Р°Р», С‡С‚Рѕ Р·РґРµСЃСЊ Р±С‹Р» РїРѕС‚РѕРї?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_01"); //РЎР°Рј РђРґР°РЅРѕСЃ СЏРІРёР»СЃСЏ Р·РѕРґС‡РёРј, С‡С‚РѕР±С‹ РѕСЃС‚Р°РЅРѕРІРёС‚СЊ Р±РµР·СѓРјРёРµ.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_flut_05_02"); //РћРЅ СЃСЂР°РІРЅСЏР» РіРѕСЂРѕРґ СЃ Р·РµРјР»РµР№.
 };
 func void DIA_Addon_Nefarius_Neues_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //Но в чем провинились зодчие?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //Один из них посвятил себя злу. Это был великий полководец по имени Куарходрон.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //Именно он открыл злу путь в город.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //Его последователи сходили с ума и начинали сражаться с обычными людьми.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //Последовавшие бедствия стали причиной гибели цивилизации.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_was_15_00"); //РќРѕ РІ С‡РµРј РїСЂРѕРІРёРЅРёР»РёСЃСЊ Р·РѕРґС‡РёРµ?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_01"); //РћРґРёРЅ РёР· РЅРёС… РїРѕСЃРІСЏС‚РёР» СЃРµР±СЏ Р·Р»Сѓ. Р­С‚Рѕ Р±С‹Р» РІРµР»РёРєРёР№ РїРѕР»РєРѕРІРѕРґРµС† РїРѕ РёРјРµРЅРё РљСѓР°СЂС…РѕРґСЂРѕРЅ.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_02"); //РРјРµРЅРЅРѕ РѕРЅ РѕС‚РєСЂС‹Р» Р·Р»Сѓ РїСѓС‚СЊ РІ РіРѕСЂРѕРґ.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_03"); //Р•РіРѕ РїРѕСЃР»РµРґРѕРІР°С‚РµР»Рё СЃС…РѕРґРёР»Рё СЃ СѓРјР° Рё РЅР°С‡РёРЅР°Р»Рё СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЃ РѕР±С‹С‡РЅС‹РјРё Р»СЋРґСЊРјРё.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_was_05_04"); //РџРѕСЃР»РµРґРѕРІР°РІС€РёРµ Р±РµРґСЃС‚РІРёСЏ СЃС‚Р°Р»Рё РїСЂРёС‡РёРЅРѕР№ РіРёР±РµР»Рё С†РёРІРёР»РёР·Р°С†РёРё.
 };
 func void DIA_Addon_Nefarius_Neues_auf ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //А мы, глупцы, вновь открыли портал...
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //Поверь, я этому тоже совсем не рад.
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //Но был ли у нас выбор?
-	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Если мы не остановим то, что сейчас здесь происходит, весь Хоринис постигнет судьба этого древнего города.
+	AI_Output			(other, self, "DIA_Addon_Nefarius_Neues_auf_15_00"); //Рђ РјС‹, РіР»СѓРїС†С‹, РІРЅРѕРІСЊ РѕС‚РєСЂС‹Р»Рё РїРѕСЂС‚Р°Р»...
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_01"); //РџРѕРІРµСЂСЊ, СЏ СЌС‚РѕРјСѓ С‚РѕР¶Рµ СЃРѕРІСЃРµРј РЅРµ СЂР°Рґ.
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_02"); //РќРѕ Р±С‹Р» Р»Рё Сѓ РЅР°СЃ РІС‹Р±РѕСЂ?
+	AI_Output			(self, other, "DIA_Addon_Nefarius_Neues_auf_05_03"); //Р•СЃР»Рё РјС‹ РЅРµ РѕСЃС‚Р°РЅРѕРІРёРј С‚Рѕ, С‡С‚Рѕ СЃРµР№С‡Р°СЃ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚, РІРµСЃСЊ РҐРѕСЂРёРЅРёСЃ РїРѕСЃС‚РёРіРЅРµС‚ СЃСѓРґСЊР±Р° СЌС‚РѕРіРѕ РґСЂРµРІРЅРµРіРѕ РіРѕСЂРѕРґР°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -185,7 +185,7 @@ instance DIA_Addon_Nefarius_PermADW		(C_INFO)
 	information	 = 	DIA_Addon_Nefarius_PermADW_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Путешествовать через портал безопасно?";
+	description	 = 	"РџСѓС‚РµС€РµСЃС‚РІРѕРІР°С‚СЊ С‡РµСЂРµР· РїРѕСЂС‚Р°Р» Р±РµР·РѕРїР°СЃРЅРѕ?";
 };
 func int DIA_Addon_Nefarius_PermADW_Condition ()
 {
@@ -193,8 +193,8 @@ func int DIA_Addon_Nefarius_PermADW_Condition ()
 };
 func void DIA_Addon_Nefarius_PermADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //Путешествовать через портал безопасно?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //Пока все указывает на это.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_PermADW_15_00"); //РџСѓС‚РµС€РµСЃС‚РІРѕРІР°С‚СЊ С‡РµСЂРµР· РїРѕСЂС‚Р°Р» Р±РµР·РѕРїР°СЃРЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PermADW_05_01"); //РџРѕРєР° РІСЃРµ СѓРєР°Р·С‹РІР°РµС‚ РЅР° СЌС‚Рѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -207,7 +207,7 @@ instance DIA_Addon_Nefarius_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Nefarius_PreTeach_Condition;
 	information	 = 	DIA_Addon_Nefarius_PreTeach_Info;
 
-	description	 = 	"Ты можешь поделиться со мной своим знанием магии?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РїРѕРґРµР»РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№ СЃРІРѕРёРј Р·РЅР°РЅРёРµРј РјР°РіРёРё?";
 };
 
 func int DIA_Addon_Nefarius_PreTeach_Condition ()
@@ -221,9 +221,9 @@ func int DIA_Addon_Nefarius_PreTeach_Condition ()
 
 func void DIA_Addon_Nefarius_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //Ты можешь поделиться со мной своим знанием магии?
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //Я могу научить тебя делать магические руны, а Кронос продаст тебе их формулы.
-	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //У него всегда с собой его книги рун.
+	AI_Output	(other, self, "DIA_Addon_Nefarius_PreTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРґРµР»РёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№ СЃРІРѕРёРј Р·РЅР°РЅРёРµРј РјР°РіРёРё?
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_01"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РґРµР»Р°С‚СЊ РјР°РіРёС‡РµСЃРєРёРµ СЂСѓРЅС‹, Р° РљСЂРѕРЅРѕСЃ РїСЂРѕРґР°СЃС‚ С‚РµР±Рµ РёС… С„РѕСЂРјСѓР»С‹.
+	AI_Output	(self, other, "DIA_Addon_Nefarius_PreTeach_05_02"); //РЈ РЅРµРіРѕ РІСЃРµРіРґР° СЃ СЃРѕР±РѕР№ РµРіРѕ РєРЅРёРіРё СЂСѓРЅ.
 	
 	Nefarius_Addon_TeachRunes = TRUE;
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -241,7 +241,7 @@ INSTANCE DIA_Addon_Nefarius_ADW_Runen (C_INFO)
 	condition	= DIA_Addon_Nefarius_ADW_Runen_Condition;
 	information	= DIA_Addon_Nefarius_ADW_Runen_Info;
 	permanent	= TRUE;
-	description = "Обучи меня (созданию рун)";
+	description = "РћР±СѓС‡Рё РјРµРЅСЏ (СЃРѕР·РґР°РЅРёСЋ СЂСѓРЅ)";
 };                       
 
 FUNC INT DIA_Addon_Nefarius_ADW_Runen_Condition()
@@ -258,27 +258,27 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_Info()
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 6)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"6-й круг магии",DIA_Addon_Nefarius_ADW_Runen_6);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"6-Р№ РєСЂСѓРі РјР°РіРёРё",DIA_Addon_Nefarius_ADW_Runen_6);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 5)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"5-й круг магии",DIA_Addon_Nefarius_ADW_Runen_5);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"5-Р№ РєСЂСѓРі РјР°РіРёРё",DIA_Addon_Nefarius_ADW_Runen_5);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 4)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"4-й круг магии",DIA_Addon_Nefarius_ADW_Runen_4);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"4-Р№ РєСЂСѓРі РјР°РіРёРё",DIA_Addon_Nefarius_ADW_Runen_4);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 3)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"3-й круг магии",DIA_Addon_Nefarius_ADW_Runen_3);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"3-Р№ РєСЂСѓРі РјР°РіРёРё",DIA_Addon_Nefarius_ADW_Runen_3);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 2)
 	{
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"2-й круг магии",DIA_Addon_Nefarius_ADW_Runen_2);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"2-Р№ РєСЂСѓРі РјР°РіРёРё",DIA_Addon_Nefarius_ADW_Runen_2);
 	};
 	if (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 1)
 	{ 
-		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"1-й круг магии",DIA_Addon_Nefarius_ADW_Runen_1);
+		Info_AddChoice		(DIA_Addon_Nefarius_ADW_Runen,"1-Р№ РєСЂСѓРі РјР°РіРёРё",DIA_Addon_Nefarius_ADW_Runen_1);
 	};
 };
 //**********************************************************
@@ -442,7 +442,7 @@ FUNC VOID DIA_Addon_Nefarius_ADW_Runen_4()
 };
 
 //**********************************************************
-// Fьnfter Kreis 
+// FСЊnfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Addon_Nefarius_ADW_Runen_5()

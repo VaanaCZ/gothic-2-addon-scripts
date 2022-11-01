@@ -32,7 +32,7 @@ INSTANCE DIA_Gorax_PICKPOCKET (C_INFO)
 	condition	= DIA_Gorax_PICKPOCKET_Condition;
 	information	= DIA_Gorax_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Этот ключ будет украсть очень сложно)";
+	description = "(Р­С‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ СѓРєСЂР°СЃС‚СЊ РѕС‡РµРЅСЊ СЃР»РѕР¶РЅРѕ)";
 };                       
 
 FUNC INT DIA_Gorax_PICKPOCKET_Condition()
@@ -94,7 +94,7 @@ func int DIA_Gorax_HELP_Condition ()
 };
 func void DIA_Gorax_HELP_Info ()
 {
-	AI_Output (self, other, "DIA_Gorax_HELP_14_00"); //Могу я чем-нибудь помочь тебе?
+	AI_Output (self, other, "DIA_Gorax_HELP_14_00"); //РњРѕРіСѓ СЏ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GOLD
@@ -106,7 +106,7 @@ instance DIA_Gorax_GOLD		(C_INFO)
 	condition	 = 	DIA_Gorax_GOLD_Condition;
 	information	 = 	DIA_Gorax_GOLD_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я принес целую кучу золота.";
+	description	 = 	"РЇ РїСЂРёРЅРµСЃ С†РµР»СѓСЋ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р°.";
 };
 //-----------------------------------
 var int DIA_Gorax_GOLD_perm;
@@ -122,19 +122,19 @@ func int DIA_Gorax_GOLD_Condition ()
 };
 func void DIA_Gorax_GOLD_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_GOLD_15_00"); //Я принес целую кучу золота.
+	AI_Output (other, self, "DIA_Gorax_GOLD_15_00"); //РЇ РїСЂРёРЅРµСЃ С†РµР»СѓСЋ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р°.
 	
 	if (Npc_HasItems (other, ItMi_Gold) >= Summe_Kloster)
 	{
-		AI_Output (self, other, "DIA_Gorax_GOLD_14_01"); //(в предвкушении) Ах! Приношение Инносу. Это очень хорошо, сын мой.
-		AI_Output (self, other, "DIA_Gorax_GOLD_14_02"); //Я использую твое пожертвование на благо монастыря, как того желает Иннос.
+		AI_Output (self, other, "DIA_Gorax_GOLD_14_01"); //(РІ РїСЂРµРґРІРєСѓС€РµРЅРёРё) РђС…! РџСЂРёРЅРѕС€РµРЅРёРµ РРЅРЅРѕСЃСѓ. Р­С‚Рѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ, СЃС‹РЅ РјРѕР№.
+		AI_Output (self, other, "DIA_Gorax_GOLD_14_02"); //РЇ РёСЃРїРѕР»СЊР·СѓСЋ С‚РІРѕРµ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ РЅР° Р±Р»Р°РіРѕ РјРѕРЅР°СЃС‚С‹СЂСЏ, РєР°Рє С‚РѕРіРѕ Р¶РµР»Р°РµС‚ РРЅРЅРѕСЃ.
 	
 		DIA_Gorax_GOLD_perm = TRUE; //WICHTIG
 		B_GiveInvItems (other, self, ItMi_Gold, Summe_Kloster);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Что ты сделал с этим золотом? Ты потратил его? Уходи и не возвращайся сюда без золота!
+		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Р§С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» СЃ СЌС‚РёРј Р·РѕР»РѕС‚РѕРј? РўС‹ РїРѕС‚СЂР°С‚РёР» РµРіРѕ? РЈС…РѕРґРё Рё РЅРµ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ СЃСЋРґР° Р±РµР· Р·РѕР»РѕС‚Р°!
 	};
 	
 };
@@ -150,7 +150,7 @@ instance DIA_Addon_Gorax_DaronsStatue		(C_INFO)
 	information	 = 	DIA_Addon_Gorax_DaronsStatue_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Вот статуэтка, которую должен был принести в монастырь Дарон.";
+	description	 = 	"Р’РѕС‚ СЃС‚Р°С‚СѓСЌС‚РєР°, РєРѕС‚РѕСЂСѓСЋ РґРѕР»Р¶РµРЅ Р±С‹Р» РїСЂРёРЅРµСЃС‚Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ Р”Р°СЂРѕРЅ.";
 };
 
 func int DIA_Addon_Gorax_DaronsStatue_Condition ()
@@ -165,12 +165,12 @@ func int DIA_Addon_Gorax_DaronsStatue_Condition ()
 
 func void DIA_Addon_Gorax_DaronsStatue_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gorax_DaronsStatue_15_00"); //Вот статуэтка, которую должен был принести в монастырь Дарон.
+	AI_Output	(other, self, "DIA_Addon_Gorax_DaronsStatue_15_00"); //Р’РѕС‚ СЃС‚Р°С‚СѓСЌС‚РєР°, РєРѕС‚РѕСЂСѓСЋ РґРѕР»Р¶РµРЅ Р±С‹Р» РїСЂРёРЅРµСЃС‚Рё РІ РјРѕРЅР°СЃС‚С‹СЂСЊ Р”Р°СЂРѕРЅ.
 	
 	if (Npc_HasItems (other,ItMi_LostInnosStatue_Daron))
 	{
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_01"); //(вздыхает) Поистине удивительно то, что такую драгоценность принес в монастырь неопытный послушник.
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_02"); //Это еще раз доказывает твою устремленность в служении Инносу.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_01"); //(РІР·РґС‹С…Р°РµС‚) РџРѕРёСЃС‚РёРЅРµ СѓРґРёРІРёС‚РµР»СЊРЅРѕ С‚Рѕ, С‡С‚Рѕ С‚Р°РєСѓСЋ РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚СЊ РїСЂРёРЅРµСЃ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РЅРµРѕРїС‹С‚РЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_02"); //Р­С‚Рѕ РµС‰Рµ СЂР°Р· РґРѕРєР°Р·С‹РІР°РµС‚ С‚РІРѕСЋ СѓСЃС‚СЂРµРјР»РµРЅРЅРѕСЃС‚СЊ РІ СЃР»СѓР¶РµРЅРёРё РРЅРЅРѕСЃСѓ.
 		
 		//-----------PATCH M.F.----------------------
 		if B_GiveInvItems (other, self, ItMi_LostInnosStatue_Daron,1)
@@ -179,14 +179,14 @@ func void DIA_Addon_Gorax_DaronsStatue_Info ()
 		};
 		
 		
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_03"); //Я перед тобой в долгу, юный послушник.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_03"); //РЇ РїРµСЂРµРґ С‚РѕР±РѕР№ РІ РґРѕР»РіСѓ, СЋРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє.
 		MIS_Addon_Daron_GetStatue = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Addon_ReturnedLostInnosStatue_Daron);
 		DIA_Gorax_GOLD_perm = TRUE; //WICHTIG
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_04"); //Статуэтку? Я не вижу никакой статуэтки. Принеси ее мне, и тогда я поверю твоему рассказу.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_04"); //РЎС‚Р°С‚СѓСЌС‚РєСѓ? РЇ РЅРµ РІРёР¶Сѓ РЅРёРєР°РєРѕР№ СЃС‚Р°С‚СѓСЌС‚РєРё. РџСЂРёРЅРµСЃРё РµРµ РјРЅРµ, Рё С‚РѕРіРґР° СЏ РїРѕРІРµСЂСЋ С‚РІРѕРµРјСѓ СЂР°СЃСЃРєР°Р·Сѓ.
 	};
 };
 
@@ -199,7 +199,7 @@ instance DIA_Gorax_SLEEP		(C_INFO)
 	nr			 =  4;
 	condition	 = 	DIA_Gorax_SLEEP_Condition;
 	information	 = 	DIA_Gorax_SLEEP_Info;
-	description	 = 	"Я ищу место, где можно было бы поспать.";
+	description	 = 	"РЇ РёС‰Сѓ РјРµСЃС‚Рѕ, РіРґРµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РїРѕСЃРїР°С‚СЊ.";
 };
 func int DIA_Gorax_SLEEP_Condition ()
 {
@@ -211,10 +211,10 @@ func int DIA_Gorax_SLEEP_Condition ()
 };
 func void DIA_Gorax_SLEEP_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_SLEEP_15_00"); //Я ищу место, где можно было бы поспать.
-	AI_Output (self, other, "DIA_Gorax_SLEEP_14_01"); //Есть одна свободная кровать в следующей комнате. Первая дверь направо, рядом с входом. Ты можешь поспать там.
-	AI_Output (self, other, "DIA_Gorax_SLEEP_14_02"); //Ты можешь сложить свои вещи в один из пустых сундуков.
-	AI_Output (self, other, "DIA_Gorax_SLEEP_14_03"); //И помни - тебе нельзя входить в опочивальни магов. Также, без соответствующего разрешения тебе нельзя входить в библиотеку.
+	AI_Output (other, self, "DIA_Gorax_SLEEP_15_00"); //РЇ РёС‰Сѓ РјРµСЃС‚Рѕ, РіРґРµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РїРѕСЃРїР°С‚СЊ.
+	AI_Output (self, other, "DIA_Gorax_SLEEP_14_01"); //Р•СЃС‚СЊ РѕРґРЅР° СЃРІРѕР±РѕРґРЅР°СЏ РєСЂРѕРІР°С‚СЊ РІ СЃР»РµРґСѓСЋС‰РµР№ РєРѕРјРЅР°С‚Рµ. РџРµСЂРІР°СЏ РґРІРµСЂСЊ РЅР°РїСЂР°РІРѕ, СЂСЏРґРѕРј СЃ РІС…РѕРґРѕРј. РўС‹ РјРѕР¶РµС€СЊ РїРѕСЃРїР°С‚СЊ С‚Р°Рј.
+	AI_Output (self, other, "DIA_Gorax_SLEEP_14_02"); //РўС‹ РјРѕР¶РµС€СЊ СЃР»РѕР¶РёС‚СЊ СЃРІРѕРё РІРµС‰Рё РІ РѕРґРёРЅ РёР· РїСѓСЃС‚С‹С… СЃСѓРЅРґСѓРєРѕРІ.
+	AI_Output (self, other, "DIA_Gorax_SLEEP_14_03"); //Р РїРѕРјРЅРё - С‚РµР±Рµ РЅРµР»СЊР·СЏ РІС…РѕРґРёС‚СЊ РІ РѕРїРѕС‡РёРІР°Р»СЊРЅРё РјР°РіРѕРІ. РўР°РєР¶Рµ, Р±РµР· СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РµРіРѕ СЂР°Р·СЂРµС€РµРЅРёСЏ С‚РµР±Рµ РЅРµР»СЊР·СЏ РІС…РѕРґРёС‚СЊ РІ Р±РёР±Р»РёРѕС‚РµРєСѓ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -226,7 +226,7 @@ instance DIA_Gorax_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Gorax_Aufgabe_Condition;
 	information	 = 	DIA_Gorax_Aufgabe_Info;
 	permanent	 =  FALSE;
-	description	 = 	"У тебя есть какое-нибудь задание для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ Р·Р°РґР°РЅРёРµ РґР»СЏ РјРµРЅСЏ?";
 };
 func int DIA_Gorax_Aufgabe_Condition ()
 {
@@ -237,10 +237,10 @@ func int DIA_Gorax_Aufgabe_Condition ()
 };
 func void DIA_Gorax_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_Aufgabe_15_00"); //У тебя есть какое-нибудь задание для меня?
-	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_01"); //Да, послушники хорошо поработали. А тот, кто хорошо работает, должен хорошо питаться.
-	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_02"); //Я дам тебе ключ от кладовой. Ты найдешь там баранью колбасу. Раздай ее послушникам - но раздели ее по справедливости!
-	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_03"); //А когда закончишь с этим, можешь обратиться ко мне опять.
+	AI_Output (other, self, "DIA_Gorax_Aufgabe_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ Р·Р°РґР°РЅРёРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_01"); //Р”Р°, РїРѕСЃР»СѓС€РЅРёРєРё С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р»Рё. Рђ С‚РѕС‚, РєС‚Рѕ С…РѕСЂРѕС€Рѕ СЂР°Р±РѕС‚Р°РµС‚, РґРѕР»Р¶РµРЅ С…РѕСЂРѕС€Рѕ РїРёС‚Р°С‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_02"); //РЇ РґР°Рј С‚РµР±Рµ РєР»СЋС‡ РѕС‚ РєР»Р°РґРѕРІРѕР№. РўС‹ РЅР°Р№РґРµС€СЊ С‚Р°Рј Р±Р°СЂР°РЅСЊСЋ РєРѕР»Р±Р°СЃСѓ. Р Р°Р·РґР°Р№ РµРµ РїРѕСЃР»СѓС€РЅРёРєР°Рј - РЅРѕ СЂР°Р·РґРµР»Рё РµРµ РїРѕ СЃРїСЂР°РІРµРґР»РёРІРѕСЃС‚Рё!
+	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_03"); //Рђ РєРѕРіРґР° Р·Р°РєРѕРЅС‡РёС€СЊ СЃ СЌС‚РёРј, РјРѕР¶РµС€СЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РєРѕ РјРЅРµ РѕРїСЏС‚СЊ.
 	 
 	CreateInvItems (self, ItKe_KlosterStore,1); 
 	B_GiveInvItems (self, other, ItKe_KlosterStore,1);
@@ -248,10 +248,10 @@ func void DIA_Gorax_Aufgabe_Info ()
 	
 	Log_CreateTopic (Topic_GoraxEssen,LOG_MISSION);
 	Log_SetTopicStatus (Topic_GoraxEssen,LOG_RUNNING);
-	B_LogEntry (Topic_GoraxEssen,"Мастер Горакс хочет, чтобы я разделил баранью колбасу из кладовой поровну среди послушников. Кроме меня, в монастыре есть еще тринадцать послушников.");
+	B_LogEntry (Topic_GoraxEssen,"РњР°СЃС‚РµСЂ Р“РѕСЂР°РєСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЂР°Р·РґРµР»РёР» Р±Р°СЂР°РЅСЊСЋ РєРѕР»Р±Р°СЃСѓ РёР· РєР»Р°РґРѕРІРѕР№ РїРѕСЂРѕРІРЅСѓ СЃСЂРµРґРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ. РљСЂРѕРјРµ РјРµРЅСЏ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ РµСЃС‚СЊ РµС‰Рµ С‚СЂРёРЅР°РґС†Р°С‚СЊ РїРѕСЃР»СѓС€РЅРёРєРѕРІ.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Wьrste verteilt
+//	Info WСЊrste verteilt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_Wurst		(C_INFO)
 {
@@ -260,7 +260,7 @@ instance DIA_Gorax_Wurst		(C_INFO)
 	condition	 = 	DIA_Gorax_Wurst_Condition;
 	information	 = 	DIA_Gorax_Wurst_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Я раздал колбасу (завершение задания).";
+	description	 = 	"РЇ СЂР°Р·РґР°Р» РєРѕР»Р±Р°СЃСѓ (Р·Р°РІРµСЂС€РµРЅРёРµ Р·Р°РґР°РЅРёСЏ).";
 };
 func int DIA_Gorax_Wurst_Condition ()
 {
@@ -272,11 +272,11 @@ func int DIA_Gorax_Wurst_Condition ()
 };
 func void DIA_Gorax_Wurst_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_Wurst_15_00"); //Я раздал колбасу.
+	AI_Output (other, self, "DIA_Gorax_Wurst_15_00"); //РЇ СЂР°Р·РґР°Р» РєРѕР»Р±Р°СЃСѓ.
 	
 	if (Wurst_Gegeben >= 13)
 	{
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_01"); //И разделил ее по справедливости. Вот, возьми эти свитки исцеления - и возвращайся к своей работе.
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_01"); //Р СЂР°Р·РґРµР»РёР» РµРµ РїРѕ СЃРїСЂР°РІРµРґР»РёРІРѕСЃС‚Рё. Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рё СЃРІРёС‚РєРё РёСЃС†РµР»РµРЅРёСЏ - Рё РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
 		
 		MIS_GoraxEssen = LOG_SUCCESS; 
 		B_GivePlayerXP (XP_GoraxEssen);
@@ -284,9 +284,9 @@ func void DIA_Gorax_Wurst_Info ()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_02"); //Да? Я думаю, ты недостаточно ответственно относишься к своей работе.
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_03"); //Ты либо съел колбасу сам, либо дал кому-нибудь больше, чем ему причитается.
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_04"); //Послушай, так как ты новичок - и только по этой причине - я на первый раз прощу тебя. Но чтобы больше такого не повторялось, послушник!
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_02"); //Р”Р°? РЇ РґСѓРјР°СЋ, С‚С‹ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕ РѕС‚РЅРѕСЃРёС€СЊСЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_03"); //РўС‹ Р»РёР±Рѕ СЃСЉРµР» РєРѕР»Р±Р°СЃСѓ СЃР°Рј, Р»РёР±Рѕ РґР°Р» РєРѕРјСѓ-РЅРёР±СѓРґСЊ Р±РѕР»СЊС€Рµ, С‡РµРј РµРјСѓ РїСЂРёС‡РёС‚Р°РµС‚СЃСЏ.
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_04"); //РџРѕСЃР»СѓС€Р°Р№, С‚Р°Рє РєР°Рє С‚С‹ РЅРѕРІРёС‡РѕРє - Рё С‚РѕР»СЊРєРѕ РїРѕ СЌС‚РѕР№ РїСЂРёС‡РёРЅРµ - СЏ РЅР° РїРµСЂРІС‹Р№ СЂР°Р· РїСЂРѕС‰Сѓ С‚РµР±СЏ. РќРѕ С‡С‚РѕР±С‹ Р±РѕР»СЊС€Рµ С‚Р°РєРѕРіРѕ РЅРµ РїРѕРІС‚РѕСЂСЏР»РѕСЃСЊ, РїРѕСЃР»СѓС€РЅРёРє!
 		
 		MIS_GoraxEssen = LOG_FAILED; 
 	};
@@ -301,7 +301,7 @@ instance DIA_Gorax_Aufgabe2		(C_INFO)
 	condition	 = 	DIA_Gorax_Aufgabe2_Condition;
 	information	 = 	DIA_Gorax_Aufgabe2_Info;
 	permanent	 =  FALSE;
-	description	 = 	"У тебя есть еще какое-нибудь поручение для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ РїРѕСЂСѓС‡РµРЅРёРµ РґР»СЏ РјРµРЅСЏ?";
 };
 func int DIA_Gorax_Aufgabe2_Condition ()
 {
@@ -314,17 +314,17 @@ func int DIA_Gorax_Aufgabe2_Condition ()
 };
 func void DIA_Gorax_Aufgabe2_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_Aufgabe2_15_00"); //У тебя есть еще какое-нибудь поручение для меня?
-	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_01"); //Да. Как ты знаешь, мы делаем здесь превосходное вино, и часть его продаем.
-	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_02"); //Орлан, хозяин трактира 'Мертвая Гарпия' заказал солидную партию. Мы договорились на сумму в 240 золотых монет.'
-	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_03"); //Отнеси ему эти бутылки - но смотри, чтобы он не обсчитал тебя.
+	AI_Output (other, self, "DIA_Gorax_Aufgabe2_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РµС‰Рµ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ РїРѕСЂСѓС‡РµРЅРёРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_01"); //Р”Р°. РљР°Рє С‚С‹ Р·РЅР°РµС€СЊ, РјС‹ РґРµР»Р°РµРј Р·РґРµСЃСЊ РїСЂРµРІРѕСЃС…РѕРґРЅРѕРµ РІРёРЅРѕ, Рё С‡Р°СЃС‚СЊ РµРіРѕ РїСЂРѕРґР°РµРј.
+	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_02"); //РћСЂР»Р°РЅ, С…РѕР·СЏРёРЅ С‚СЂР°РєС‚РёСЂР° 'РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ' Р·Р°РєР°Р·Р°Р» СЃРѕР»РёРґРЅСѓСЋ РїР°СЂС‚РёСЋ. РњС‹ РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ РЅР° СЃСѓРјРјСѓ РІ 240 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.'
+	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_03"); //РћС‚РЅРµСЃРё РµРјСѓ СЌС‚Рё Р±СѓС‚С‹Р»РєРё - РЅРѕ СЃРјРѕС‚СЂРё, С‡С‚РѕР±С‹ РѕРЅ РЅРµ РѕР±СЃС‡РёС‚Р°Р» С‚РµР±СЏ.
 	 
 	B_GiveInvItems (self, other, ItFo_Wine,12);
 	MIS_GoraxWein = LOG_RUNNING; 
 	
 	Log_CreateTopic (Topic_GoraxWein,LOG_MISSION);
 	Log_SetTopicStatus (Topic_GoraxWein,LOG_RUNNING);
-	B_LogEntry (Topic_GoraxWein,"Мастер Горакс хочет, чтобы я доставил Орлану, хозяину трактира, двенадцать бутылок вина. Они стоят 240 золотых монет.");
+	B_LogEntry (Topic_GoraxWein,"РњР°СЃС‚РµСЂ Р“РѕСЂР°РєСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РґРѕСЃС‚Р°РІРёР» РћСЂР»Р°РЅСѓ, С…РѕР·СЏРёРЅСѓ С‚СЂР°РєС‚РёСЂР°, РґРІРµРЅР°РґС†Р°С‚СЊ Р±СѓС‚С‹Р»РѕРє РІРёРЅР°. РћРЅРё СЃС‚РѕСЏС‚ 240 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Orlan
@@ -336,7 +336,7 @@ instance DIA_Gorax_Orlan		(C_INFO)
 	condition	 = 	DIA_Gorax_Orlan_Condition;
 	information	 = 	DIA_Gorax_Orlan_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Я отнес вино Орлану.";
+	description	 = 	"РЇ РѕС‚РЅРµСЃ РІРёРЅРѕ РћСЂР»Р°РЅСѓ.";
 };
 //----------------------------------
 var int DIA_Gorax_Orlan_permanent;
@@ -354,26 +354,26 @@ func void DIA_Gorax_Orlan_Info ()
 {
 	if (Npc_HasItems (other, ItmI_Gold) >= 100)
 	{
-		AI_Output (other, self, "DIA_Gorax_Orlan_15_00"); //Я отнес вино Орлану.
-		AI_Output (self, other, "DIA_Gorax_Orlan_14_01"); //И? Ты получил 240 золотых монет?
+		AI_Output (other, self, "DIA_Gorax_Orlan_15_00"); //РЇ РѕС‚РЅРµСЃ РІРёРЅРѕ РћСЂР»Р°РЅСѓ.
+		AI_Output (self, other, "DIA_Gorax_Orlan_14_01"); //Р? РўС‹ РїРѕР»СѓС‡РёР» 240 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚?
 	
 		DIA_Gorax_Orlan_permanent = TRUE;
 		Info_ClearChoices (DIA_Gorax_Orlan);
 	
-		Info_AddChoice (DIA_Gorax_Orlan,"Он надул меня! (Отдать 100 монет)",DIA_Gorax_Orlan_100);
-		Info_AddChoice (DIA_Gorax_Orlan,"Я принес золото. (Отдать 240 монет)",DIA_Gorax_Orlan_240);
+		Info_AddChoice (DIA_Gorax_Orlan,"РћРЅ РЅР°РґСѓР» РјРµРЅСЏ! (РћС‚РґР°С‚СЊ 100 РјРѕРЅРµС‚)",DIA_Gorax_Orlan_100);
+		Info_AddChoice (DIA_Gorax_Orlan,"РЇ РїСЂРёРЅРµСЃ Р·РѕР»РѕС‚Рѕ. (РћС‚РґР°С‚СЊ 240 РјРѕРЅРµС‚)",DIA_Gorax_Orlan_240);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Что ты сделал с этим золотом? Ты потратил его? Уходи и не возвращайся сюда без золота!
+		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Р§С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» СЃ СЌС‚РёРј Р·РѕР»РѕС‚РѕРј? РўС‹ РїРѕС‚СЂР°С‚РёР» РµРіРѕ? РЈС…РѕРґРё Рё РЅРµ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ СЃСЋРґР° Р±РµР· Р·РѕР»РѕС‚Р°!
 		
 	};
 };
 FUNC VOID DIA_Gorax_Orlan_100 ()
 {
-	AI_Output (other, self, "DIA_Gorax_Orlan_100_15_00"); //Он надул меня!
-	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_01"); //Ты продал ему вино дешевле? Ох, нет! И почему только я послал ТЕБЯ?!
-	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_02"); //Ты совершенно ни на что не способен! Убирайся с глаз моих!
+	AI_Output (other, self, "DIA_Gorax_Orlan_100_15_00"); //РћРЅ РЅР°РґСѓР» РјРµРЅСЏ!
+	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_01"); //РўС‹ РїСЂРѕРґР°Р» РµРјСѓ РІРёРЅРѕ РґРµС€РµРІР»Рµ? РћС…, РЅРµС‚! Р РїРѕС‡РµРјСѓ С‚РѕР»СЊРєРѕ СЏ РїРѕСЃР»Р°Р» РўР•Р‘РЇ?!
+	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_02"); //РўС‹ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРё РЅР° С‡С‚Рѕ РЅРµ СЃРїРѕСЃРѕР±РµРЅ! РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…!
 	
 	B_GiveInvItems (other, self, ItMI_Gold, 100);
 	
@@ -384,17 +384,17 @@ FUNC VOID DIA_Gorax_Orlan_100 ()
 };
 FUNC VOID DIA_Gorax_Orlan_240 ()
 {
-	AI_Output (other, self, "DIA_Gorax_Orlan_240_15_00"); //Я принес золото.
+	AI_Output (other, self, "DIA_Gorax_Orlan_240_15_00"); //РЇ РїСЂРёРЅРµСЃ Р·РѕР»РѕС‚Рѕ.
 	
 	if B_GiveInvItems (other, self, ItMI_Gold, 240)	
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_01"); //Превосходно. Ты проявляешь некоторые способности. Вот, возьми в качестве вознаграждения свиток исцеления. А теперь иди и займись каким-нибудь делом.
+		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. РўС‹ РїСЂРѕСЏРІР»СЏРµС€СЊ РЅРµРєРѕС‚РѕСЂС‹Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё. Р’РѕС‚, РІРѕР·СЊРјРё РІ РєР°С‡РµСЃС‚РІРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ СЃРІРёС‚РѕРє РёСЃС†РµР»РµРЅРёСЏ. Рђ С‚РµРїРµСЂСЊ РёРґРё Рё Р·Р°Р№РјРёСЃСЊ РєР°РєРёРј-РЅРёР±СѓРґСЊ РґРµР»РѕРј.
 		MIS_GoraxWein = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Goraxwein);			
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_02"); //Но ты уже потратил часть этих денег, да? Ты ничтожество - пошел прочь!
+		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_02"); //РќРѕ С‚С‹ СѓР¶Рµ РїРѕС‚СЂР°С‚РёР» С‡Р°СЃС‚СЊ СЌС‚РёС… РґРµРЅРµРі, РґР°? РўС‹ РЅРёС‡С‚РѕР¶РµСЃС‚РІРѕ - РїРѕС€РµР» РїСЂРѕС‡СЊ!
 		MIS_GoraxWein = LOG_FAILED; 
 		B_GiveInvItems (other, self, ItMI_Gold, Npc_HasItems (other, ItmI_Gold));
 	};
@@ -411,7 +411,7 @@ instance DIA_Gorax_JOB		(C_INFO)
 	condition	 = 	DIA_Gorax_JOB_Condition;
 	information	 = 	DIA_Gorax_JOB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Чем ты занимаешься здесь?";
+	description	 = 	"Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ Р·РґРµСЃСЊ?";
 };
 func int DIA_Gorax_JOB_Condition ()
 {
@@ -419,13 +419,13 @@ func int DIA_Gorax_JOB_Condition ()
 };
 func void DIA_Gorax_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_JOB_15_00"); //Что входит в твои обязанности здесь?
-	AI_Output (self, other, "DIA_Gorax_JOB_14_01"); //Мои обязанности многочисленны и разнообразны. Я не только управляющий, но также и казначей.
-	AI_Output (self, other, "DIA_Gorax_JOB_14_02"); //Кроме того, я заведую винным погребом, а также на моих плечах лежит обеспечение монастыря съестными припасами.
-	AI_Output (self, other, "DIA_Gorax_JOB_14_03"); //Поэтому, если тебе что-нибудь нужно, ты всегда можешь обратиться ко мне и получить все необходимое - за скромное пожертвование, конечно.
+	AI_Output (other, self, "DIA_Gorax_JOB_15_00"); //Р§С‚Рѕ РІС…РѕРґРёС‚ РІ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Gorax_JOB_14_01"); //РњРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё РјРЅРѕРіРѕС‡РёСЃР»РµРЅРЅС‹ Рё СЂР°Р·РЅРѕРѕР±СЂР°Р·РЅС‹. РЇ РЅРµ С‚РѕР»СЊРєРѕ СѓРїСЂР°РІР»СЏСЋС‰РёР№, РЅРѕ С‚Р°РєР¶Рµ Рё РєР°Р·РЅР°С‡РµР№.
+	AI_Output (self, other, "DIA_Gorax_JOB_14_02"); //РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ Р·Р°РІРµРґСѓСЋ РІРёРЅРЅС‹Рј РїРѕРіСЂРµР±РѕРј, Р° С‚Р°РєР¶Рµ РЅР° РјРѕРёС… РїР»РµС‡Р°С… Р»РµР¶РёС‚ РѕР±РµСЃРїРµС‡РµРЅРёРµ РјРѕРЅР°СЃС‚С‹СЂСЏ СЃСЉРµСЃС‚РЅС‹РјРё РїСЂРёРїР°СЃР°РјРё.
+	AI_Output (self, other, "DIA_Gorax_JOB_14_03"); //РџРѕСЌС‚РѕРјСѓ, РµСЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅСѓР¶РЅРѕ, С‚С‹ РІСЃРµРіРґР° РјРѕР¶РµС€СЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РєРѕ РјРЅРµ Рё РїРѕР»СѓС‡РёС‚СЊ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ - Р·Р° СЃРєСЂРѕРјРЅРѕРµ РїРѕР¶РµСЂС‚РІРѕРІР°РЅРёРµ, РєРѕРЅРµС‡РЅРѕ.
 	
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTrader,"Мастер Горакс в монастыре может предоставить мне все, что мне нужно.");
+	B_LogEntry (Topic_KlosterTrader,"РњР°СЃС‚РµСЂ Р“РѕСЂР°РєСЃ РІ РјРѕРЅР°СЃС‚С‹СЂРµ РјРѕР¶РµС‚ РїСЂРµРґРѕСЃС‚Р°РІРёС‚СЊ РјРЅРµ РІСЃРµ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRADE
@@ -438,7 +438,7 @@ instance DIA_Gorax_TRADE		(C_INFO)
 	information	 = 	DIA_Gorax_TRADE_Info;
 	permanent	 = 	TRUE;
 	trade		 =  TRUE;
-	description	 = 	"Мне нужно кое-что...";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅРѕ РєРѕРµ-С‡С‚Рѕ...";
 };
 func int DIA_Gorax_TRADE_Condition ()
 {
@@ -450,10 +450,10 @@ func int DIA_Gorax_TRADE_Condition ()
 func void DIA_Gorax_TRADE_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Gorax_TRADE_15_00"); //Мне нужно кое-что...
+	AI_Output			(other, self, "DIA_Gorax_TRADE_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РєРѕРµ-С‡С‚Рѕ...
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info SLEEP fьr KDF
+//	Info SLEEP fСЊr KDF
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_KDF		(C_INFO)
 {
@@ -462,7 +462,7 @@ instance DIA_Gorax_KDF		(C_INFO)
 	condition	 = 	DIA_Gorax_KDF_Condition;
 	information	 = 	DIA_Gorax_KDF_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Мне нужно место для сна.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅРѕ РјРµСЃС‚Рѕ РґР»СЏ СЃРЅР°.";
 };
 func int DIA_Gorax_KDF_Condition ()
 {
@@ -473,8 +473,8 @@ func int DIA_Gorax_KDF_Condition ()
 };
 func void DIA_Gorax_KDF_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_KDF_15_00"); //Мне нужно место для сна.
-	AI_Output (self, other, "DIA_Gorax_KDF_14_01"); //У нас есть свободная комната справа отсюда. Вот, возьми ключ. Там ты найдешь все, что тебе может понадобиться.
+	AI_Output (other, self, "DIA_Gorax_KDF_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РјРµСЃС‚Рѕ РґР»СЏ СЃРЅР°.
+	AI_Output (self, other, "DIA_Gorax_KDF_14_01"); //РЈ РЅР°СЃ РµСЃС‚СЊ СЃРІРѕР±РѕРґРЅР°СЏ РєРѕРјРЅР°С‚Р° СЃРїСЂР°РІР° РѕС‚СЃСЋРґР°. Р’РѕС‚, РІРѕР·СЊРјРё РєР»СЋС‡. РўР°Рј С‚С‹ РЅР°Р№РґРµС€СЊ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РµС‚ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ.
 	
 	B_GiveInvItems (self, other,ItKe_KDFPlayer,1);
 	Wld_InsertItem (ItPo_Perm_Mana,"FP_ITEM_KDFPLAYER");
@@ -562,33 +562,33 @@ func int DIA_Gorax_KILLPEDRO_Condition ()
 
 func void DIA_Gorax_KILLPEDRO_Info ()
 {
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_00"); //Подожди, наемник. Мне нужно поговорить с тобой.
-	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_15_01"); //Чего ты хочешь?
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_02"); //Монастырю необходимо решить очень деликатную проблему.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_03"); //В настоящий момент, похоже, все не доверяют друг другу. И к тому же, этот случай с Педро, это очень... (сглатывает)
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_04"); //У меня есть поручение для тебя от первосвященников. Ты не являешься членом Братства Огня, и, следовательно, ты единственный, кто может помочь нам в решении этой проблемы.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_05"); //Но я должен предупредить тебя. Если я дам тебе это поручение, ты будешь обязан выполнить его. Когда ты узнаешь, в чем оно заключается, у тебя уже не будет выбора. Ты понимаешь это?
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_00"); //РџРѕРґРѕР¶РґРё, РЅР°РµРјРЅРёРє. РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
+	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_15_01"); //Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_02"); //РњРѕРЅР°СЃС‚С‹СЂСЋ РЅРµРѕР±С…РѕРґРёРјРѕ СЂРµС€РёС‚СЊ РѕС‡РµРЅСЊ РґРµР»РёРєР°С‚РЅСѓСЋ РїСЂРѕР±Р»РµРјСѓ.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_03"); //Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚, РїРѕС…РѕР¶Рµ, РІСЃРµ РЅРµ РґРѕРІРµСЂСЏСЋС‚ РґСЂСѓРі РґСЂСѓРіСѓ. Р Рє С‚РѕРјСѓ Р¶Рµ, СЌС‚РѕС‚ СЃР»СѓС‡Р°Р№ СЃ РџРµРґСЂРѕ, СЌС‚Рѕ РѕС‡РµРЅСЊ... (СЃРіР»Р°С‚С‹РІР°РµС‚)
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_04"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїРѕСЂСѓС‡РµРЅРёРµ РґР»СЏ С‚РµР±СЏ РѕС‚ РїРµСЂРІРѕСЃРІСЏС‰РµРЅРЅРёРєРѕРІ. РўС‹ РЅРµ СЏРІР»СЏРµС€СЊСЃСЏ С‡Р»РµРЅРѕРј Р‘СЂР°С‚СЃС‚РІР° РћРіРЅСЏ, Рё, СЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, С‚С‹ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РЅР°Рј РІ СЂРµС€РµРЅРёРё СЌС‚РѕР№ РїСЂРѕР±Р»РµРјС‹.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_05"); //РќРѕ СЏ РґРѕР»Р¶РµРЅ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ. Р•СЃР»Рё СЏ РґР°Рј С‚РµР±Рµ СЌС‚Рѕ РїРѕСЂСѓС‡РµРЅРёРµ, С‚С‹ Р±СѓРґРµС€СЊ РѕР±СЏР·Р°РЅ РІС‹РїРѕР»РЅРёС‚СЊ РµРіРѕ. РљРѕРіРґР° С‚С‹ СѓР·РЅР°РµС€СЊ, РІ С‡РµРј РѕРЅРѕ Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ, Сѓ С‚РµР±СЏ СѓР¶Рµ РЅРµ Р±СѓРґРµС‚ РІС‹Р±РѕСЂР°. РўС‹ РїРѕРЅРёРјР°РµС€СЊ СЌС‚Рѕ?
 	
 	Info_ClearChoices	(DIA_Gorax_KILLPEDRO);
-	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "Забудь об этом. Это слишком рискованное предприятие для меня.", DIA_Gorax_KILLPEDRO_nein );
-	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "Скажи мне, чего ты хочешь.", DIA_Gorax_KILLPEDRO_ja );
+	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. Р­С‚Рѕ СЃР»РёС€РєРѕРј СЂРёСЃРєРѕРІР°РЅРЅРѕРµ РїСЂРµРґРїСЂРёСЏС‚РёРµ РґР»СЏ РјРµРЅСЏ.", DIA_Gorax_KILLPEDRO_nein );
+	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "РЎРєР°Р¶Рё РјРЅРµ, С‡РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ.", DIA_Gorax_KILLPEDRO_ja );
 };
 func void DIA_Gorax_KILLPEDRO_nein ()
 {
-	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_nein_15_00"); //Забудь об этом. Это слишком рискованное предприятие для меня.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_nein_14_01"); //Хорошо, в таком случае, забудь о том, что я говорил.
+	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_nein_15_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. Р­С‚Рѕ СЃР»РёС€РєРѕРј СЂРёСЃРєРѕРІР°РЅРЅРѕРµ РїСЂРµРґРїСЂРёСЏС‚РёРµ РґР»СЏ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_nein_14_01"); //РҐРѕСЂРѕС€Рѕ, РІ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, Р·Р°Р±СѓРґСЊ Рѕ С‚РѕРј, С‡С‚Рѕ СЏ РіРѕРІРѕСЂРёР».
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Gorax_KILLPEDRO_ja ()
 {
-	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_ja_15_00"); //Скажи мне, чего ты хочешь.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_01"); //Хорошо. Тогда слушай внимательно, дважды повторять я не буду.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_02"); //Серпентес хочет, чтобы ты убил Педро за его предательство.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_03"); //Когда ты выполнишь эту задачу, тебе немедленно будет выдано вознаграждение.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_04"); //Я ничего тебе не говорил. И ты ничего не слышал. Понятно?
+	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_ja_15_00"); //РЎРєР°Р¶Рё РјРЅРµ, С‡РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_01"); //РҐРѕСЂРѕС€Рѕ. РўРѕРіРґР° СЃР»СѓС€Р°Р№ РІРЅРёРјР°С‚РµР»СЊРЅРѕ, РґРІР°Р¶РґС‹ РїРѕРІС‚РѕСЂСЏС‚СЊ СЏ РЅРµ Р±СѓРґСѓ.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_02"); //РЎРµСЂРїРµРЅС‚РµСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚С‹ СѓР±РёР» РџРµРґСЂРѕ Р·Р° РµРіРѕ РїСЂРµРґР°С‚РµР»СЊСЃС‚РІРѕ.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_03"); //РљРѕРіРґР° С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ СЌС‚Сѓ Р·Р°РґР°С‡Сѓ, С‚РµР±Рµ РЅРµРјРµРґР»РµРЅРЅРѕ Р±СѓРґРµС‚ РІС‹РґР°РЅРѕ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_04"); //РЇ РЅРёС‡РµРіРѕ С‚РµР±Рµ РЅРµ РіРѕРІРѕСЂРёР». Р С‚С‹ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Р°Р». РџРѕРЅСЏС‚РЅРѕ?
 
- 	B_LogEntry (TOPIC_TraitorPedro, "Горакс сказал мне, что Серпентес хочет, чтобы я убил предателя Педро, если я повстречаюсь с ним.");
+ 	B_LogEntry (TOPIC_TraitorPedro, "Р“РѕСЂР°РєСЃ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РЎРµСЂРїРµРЅС‚РµСЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СѓР±РёР» РїСЂРµРґР°С‚РµР»СЏ РџРµРґСЂРѕ, РµСЃР»Рё СЏ РїРѕРІСЃС‚СЂРµС‡Р°СЋСЃСЊ СЃ РЅРёРј.");
 	
 	B_GivePlayerXP (XP_Gorax_KILLPEDRO_GotMission);
 	MIS_Gorax_KillPedro = LOG_RUNNING;

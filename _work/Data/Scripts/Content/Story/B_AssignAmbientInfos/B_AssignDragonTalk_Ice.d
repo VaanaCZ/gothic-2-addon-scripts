@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Ice_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Сила Глаза угасла, и твое время вышло.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //РЎРёР»Р° Р“Р»Р°Р·Р° СѓРіР°СЃР»Р°, Рё С‚РІРѕРµ РІСЂРµРјСЏ РІС‹С€Р»Рѕ.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -68,15 +68,15 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Зачем ты потревожил мой сон? Мне что, закопаться еще глубже, чтобы вы, надоедливые мухи, наконец, оставили меня в покое?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Р—Р°С‡РµРј С‚С‹ РїРѕС‚СЂРµРІРѕР¶РёР» РјРѕР№ СЃРѕРЅ? РњРЅРµ С‡С‚Рѕ, Р·Р°РєРѕРїР°С‚СЊСЃСЏ РµС‰Рµ РіР»СѓР±Р¶Рµ, С‡С‚РѕР±С‹ РІС‹, РЅР°РґРѕРµРґР»РёРІС‹Рµ РјСѓС…Рё, РЅР°РєРѕРЅРµС†, РѕСЃС‚Р°РІРёР»Рё РјРµРЅСЏ РІ РїРѕРєРѕРµ?
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Говорящий дракон. Спасибо Глазу Инноса.
+		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Р“РѕРІРѕСЂСЏС‰РёР№ РґСЂР°РєРѕРЅ. РЎРїР°СЃРёР±Рѕ Р“Р»Р°Р·Сѓ РРЅРЅРѕСЃР°.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Вы, люди, забавные существа. Даже если вас всех сдуют ледяные ветра смерти, всегда найдется хотя бы один, кто поднимется из пепла, думая, что ему судьбой предназначено стать героем.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Но скоро все будет кончено. Я лично позабочусь, чтобы никто из вас больше не поднялся.
-	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Молчать! Силой священного Глаза, что дарована мне свыше, я приказываю тебе отвечать на мои вопросы.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ха-ха-ха. Тогда спрашивай. Но твои знания не помогут тебе.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Р’С‹, Р»СЋРґРё, Р·Р°Р±Р°РІРЅС‹Рµ СЃСѓС‰РµСЃС‚РІР°. Р”Р°Р¶Рµ РµСЃР»Рё РІР°СЃ РІСЃРµС… СЃРґСѓСЋС‚ Р»РµРґСЏРЅС‹Рµ РІРµС‚СЂР° СЃРјРµСЂС‚Рё, РІСЃРµРіРґР° РЅР°Р№РґРµС‚СЃСЏ С…РѕС‚СЏ Р±С‹ РѕРґРёРЅ, РєС‚Рѕ РїРѕРґРЅРёРјРµС‚СЃСЏ РёР· РїРµРїР»Р°, РґСѓРјР°СЏ, С‡С‚Рѕ РµРјСѓ СЃСѓРґСЊР±РѕР№ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРѕ СЃС‚Р°С‚СЊ РіРµСЂРѕРµРј.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //РќРѕ СЃРєРѕСЂРѕ РІСЃРµ Р±СѓРґРµС‚ РєРѕРЅС‡РµРЅРѕ. РЇ Р»РёС‡РЅРѕ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РёР· РІР°СЃ Р±РѕР»СЊС€Рµ РЅРµ РїРѕРґРЅСЏР»СЃСЏ.
+	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //РњРѕР»С‡Р°С‚СЊ! РЎРёР»РѕР№ СЃРІСЏС‰РµРЅРЅРѕРіРѕ Р“Р»Р°Р·Р°, С‡С‚Рѕ РґР°СЂРѕРІР°РЅР° РјРЅРµ СЃРІС‹С€Рµ, СЏ РїСЂРёРєР°Р·С‹РІР°СЋ С‚РµР±Рµ РѕС‚РІРµС‡Р°С‚СЊ РЅР° РјРѕРё РІРѕРїСЂРѕСЃС‹.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //РҐР°-С…Р°-С…Р°. РўРѕРіРґР° СЃРїСЂР°С€РёРІР°Р№. РќРѕ С‚РІРѕРё Р·РЅР°РЅРёСЏ РЅРµ РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ.
 
 };
 
@@ -90,7 +90,7 @@ instance DIA_Dragon_Ice_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Ice_WERBISTDU_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Dragon_Ice_WERBISTDU_Condition ()
@@ -103,8 +103,8 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Ice_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Кто ты?
-	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Я Финкрег. Повелитель льда и снега, Страж Конгресса и твоя неминуемая смерть.
+	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //РЇ Р¤РёРЅРєСЂРµРі. РџРѕРІРµР»РёС‚РµР»СЊ Р»СЊРґР° Рё СЃРЅРµРіР°, РЎС‚СЂР°Р¶ РљРѕРЅРіСЂРµСЃСЃР° Рё С‚РІРѕСЏ РЅРµРјРёРЅСѓРµРјР°СЏ СЃРјРµСЂС‚СЊ.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Dragon_Ice_BELIAR		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_BELIAR_Condition;
 	information	 = 	DIA_Dragon_Ice_BELIAR_Info;
 
-	description	 = 	"Какому богу ты служишь?";
+	description	 = 	"РљР°РєРѕРјСѓ Р±РѕРіСѓ С‚С‹ СЃР»СѓР¶РёС€СЊ?";
 };
 
 func int DIA_Dragon_Ice_BELIAR_Condition ()
@@ -130,11 +130,11 @@ func int DIA_Dragon_Ice_BELIAR_Condition ()
 
 func void DIA_Dragon_Ice_BELIAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Какому богу ты служишь?
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Какой проклятый бог мог позволить таким презренным созданиям, как ты, ходить по этой земле?
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Не пытайся понять смысл нашего появления здесь, жалкий герой.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Белиар не только позволил нам появиться здесь - он приказал это.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Воодушевленные его святыми словами, мы не знаем отдыха, пока его воля не воплотится в жизнь.
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //РљР°РєРѕРјСѓ Р±РѕРіСѓ С‚С‹ СЃР»СѓР¶РёС€СЊ?
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //РљР°РєРѕР№ РїСЂРѕРєР»СЏС‚С‹Р№ Р±РѕРі РјРѕРі РїРѕР·РІРѕР»РёС‚СЊ С‚Р°РєРёРј РїСЂРµР·СЂРµРЅРЅС‹Рј СЃРѕР·РґР°РЅРёСЏРј, РєР°Рє С‚С‹, С…РѕРґРёС‚СЊ РїРѕ СЌС‚РѕР№ Р·РµРјР»Рµ?
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //РќРµ РїС‹С‚Р°Р№СЃСЏ РїРѕРЅСЏС‚СЊ СЃРјС‹СЃР» РЅР°С€РµРіРѕ РїРѕСЏРІР»РµРЅРёСЏ Р·РґРµСЃСЊ, Р¶Р°Р»РєРёР№ РіРµСЂРѕР№.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Р‘РµР»РёР°СЂ РЅРµ С‚РѕР»СЊРєРѕ РїРѕР·РІРѕР»РёР» РЅР°Рј РїРѕСЏРІРёС‚СЊСЃСЏ Р·РґРµСЃСЊ - РѕРЅ РїСЂРёРєР°Р·Р°Р» СЌС‚Рѕ.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Р’РѕРѕРґСѓС€РµРІР»РµРЅРЅС‹Рµ РµРіРѕ СЃРІСЏС‚С‹РјРё СЃР»РѕРІР°РјРё, РјС‹ РЅРµ Р·РЅР°РµРј РѕС‚РґС‹С…Р°, РїРѕРєР° РµРіРѕ РІРѕР»СЏ РЅРµ РІРѕРїР»РѕС‚РёС‚СЃСЏ РІ Р¶РёР·РЅСЊ.
 
 };
 

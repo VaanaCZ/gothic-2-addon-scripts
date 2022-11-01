@@ -1,5 +1,5 @@
 // ************************************
-// ZS_Circle für Auge Innos Beschwörung
+// ZS_Circle fÑŒr Auge Innos BeschwÑ†rung
 // ************************************
 
 
@@ -9,12 +9,12 @@ func void ZS_Circle	()
 	
 	B_ResetAll (self);
 	
-	// ------ PercTime überschreiben ------
+	// ------ PercTime ÑŒberschreiben ------
 	Npc_SetPercTime		(self, 0.3);
 	
 	
 	AI_StandUp		(self);				
-	AI_SetWalkmode 	(self,NPC_WALK);			// Walkmode für den Zustand
+	AI_SetWalkmode 	(self,NPC_WALK);			// Walkmode fÑŒr den Zustand
 	AI_GotoWP		(self, self.wp);			// Gehe zum Tagesablaufstart
 	AI_AlignToWP	(self);
 };

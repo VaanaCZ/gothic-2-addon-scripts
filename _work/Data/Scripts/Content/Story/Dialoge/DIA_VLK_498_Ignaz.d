@@ -77,11 +77,11 @@ FUNC INT DIA_Ignaz_Hallo_Condition()
 };
 FUNC VOID DIA_Ignaz_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_00");//Ах - ты заглянул как раз вовремя. Мне нужен ассистент для магического эксперимента.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_01");//Я уверен, что тебе не терпится оказать мне услугу во имя науки.
-	AI_Output (other, self, "DIA_Ignaz_Hallo_15_02");//Полегче, друг мой. Сначала скажи, в чем он заключается.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_03");//Я разработал новое заклинание. Заклинание Забвения.
-	AI_Output (self, other, "DIA_Ignaz_Hallo_14_04");//Я уже придумал, как можно использовать его, но у меня нет времени на проведение одного последнего теста.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_00");//РђС… - С‚С‹ Р·Р°РіР»СЏРЅСѓР» РєР°Рє СЂР°Р· РІРѕРІСЂРµРјСЏ. РњРЅРµ РЅСѓР¶РµРЅ Р°СЃСЃРёСЃС‚РµРЅС‚ РґР»СЏ РјР°РіРёС‡РµСЃРєРѕРіРѕ СЌРєСЃРїРµСЂРёРјРµРЅС‚Р°.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_01");//РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ С‚РµСЂРїРёС‚СЃСЏ РѕРєР°Р·Р°С‚СЊ РјРЅРµ СѓСЃР»СѓРіСѓ РІРѕ РёРјСЏ РЅР°СѓРєРё.
+	AI_Output (other, self, "DIA_Ignaz_Hallo_15_02");//РџРѕР»РµРіС‡Рµ, РґСЂСѓРі РјРѕР№. РЎРЅР°С‡Р°Р»Р° СЃРєР°Р¶Рё, РІ С‡РµРј РѕРЅ Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_03");//РЇ СЂР°Р·СЂР°Р±РѕС‚Р°Р» РЅРѕРІРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ. Р—Р°РєР»РёРЅР°РЅРёРµ Р—Р°Р±РІРµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Ignaz_Hallo_14_04");//РЇ СѓР¶Рµ РїСЂРёРґСѓРјР°Р», РєР°Рє РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРіРѕ, РЅРѕ Сѓ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° РїСЂРѕРІРµРґРµРЅРёРµ РѕРґРЅРѕРіРѕ РїРѕСЃР»РµРґРЅРµРіРѕ С‚РµСЃС‚Р°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lerninhalte Traenke
@@ -93,7 +93,7 @@ INSTANCE DIA_Ignaz_Traenke   (C_INFO)
 	condition   = DIA_Ignaz_Traenke_Condition;
 	information = DIA_Ignaz_Traenke_Info;
 	permanent   = FALSE;
-	description = "И что я получу за то, что помогу тебе?";
+	description = "Р С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° С‚Рѕ, С‡С‚Рѕ РїРѕРјРѕРіСѓ С‚РµР±Рµ?";
 };
 
 FUNC INT DIA_Ignaz_Traenke_Condition()
@@ -105,10 +105,10 @@ FUNC INT DIA_Ignaz_Traenke_Condition()
 };
 FUNC VOID DIA_Ignaz_Traenke_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//И что я получу за то, что помогу тебе?
-	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//Я мог бы обучить тебя искусству приготовления зелий.
-	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//Я знаю рецепты лечебной эссенции и эссенции маны, а также зелья ускорения.
-	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//AuЯerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
+	AI_Output (other, self, "DIA_Ignaz_Traenke_15_00");//Р С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° С‚Рѕ, С‡С‚Рѕ РїРѕРјРѕРіСѓ С‚РµР±Рµ?
+	AI_Output (self, other, "DIA_Ignaz_Traenke_14_01");//РЇ РјРѕРі Р±С‹ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РёСЃРєСѓСЃСЃС‚РІСѓ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№.
+	AI_Output (self, other, "DIA_Ignaz_Traenke_14_02");//РЇ Р·РЅР°СЋ СЂРµС†РµРїС‚С‹ Р»РµС‡РµР±РЅРѕР№ СЌСЃСЃРµРЅС†РёРё Рё СЌСЃСЃРµРЅС†РёРё РјР°РЅС‹, Р° С‚Р°РєР¶Рµ Р·РµР»СЊСЏ СѓСЃРєРѕСЂРµРЅРёСЏ.
+	//AI_Output (self, other, "DIA_Ignaz_Traenke_14_03");//AuРЇerdem kann ich dir beibringen, wie du ein Elixier der Geschicklichkeit herstellst.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -121,7 +121,7 @@ INSTANCE DIA_Ignaz_Experiment   (C_INFO)
 	condition   = DIA_Ignaz_Experiment_Condition;
 	information = DIA_Ignaz_Experiment_Info;
 	permanent   = FALSE;
-	description = "Расскажи мне подробнее об этом эксперименте и самом заклинании.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± СЌС‚РѕРј СЌРєСЃРїРµСЂРёРјРµРЅС‚Рµ Рё СЃР°РјРѕРј Р·Р°РєР»РёРЅР°РЅРёРё.";
 };
 
 FUNC INT DIA_Ignaz_Experiment_Condition()
@@ -130,16 +130,16 @@ FUNC INT DIA_Ignaz_Experiment_Condition()
 };
 FUNC VOID DIA_Ignaz_Experiment_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");//Расскажи мне подробнее об этом эксперименте и самом заклинании.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");//Это заклинание позволяет заставить кого-нибудь забыть некоторые события.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");//Пока, я выяснил только, что оно работает, когда объект этого заклинания находится в ярости - например, если он только что был сбит с ног или ограблен.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");//И даже несмотря на то, что эта неприятность произошла с ним только что, он все забудет.
-	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");//То есть, я должен сбить кого-нибудь с ног и наложить на него это заклинание?
-	//AI_Output (other, self, "DIA_Ignaz_Add_15_00"); //Это имеет смысл, только если жертва ДЕЙСТВИТЕЛЬНО очень зла после драки.
-	//AI_Output (other, self, "DIA_Ignaz_Add_15_01"); //(себе под нос) Здесь, в портовом квартале, люди привычны к дракам. Мне лучше поискать жертву где-нибудь в другом месте...
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");//Да, ты все правильно понимаешь. Но чтобы разозлить кого-нибудь, достаточно просто атаковать - вовсе нет необходимости сбивать его с ног.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");//Только ты должен проделать все это без свидетелей - если неподалеку будут находиться другие люди, у тебя обязательно возникнут проблемы с Лордом Андрэ.
-	AI_Output (self, other, "DIA_Ignaz_Experiment_14_07");//Также не имеет смысла налагать это заклинание на того, кто атакует тебя. Выжди подходящий момент.
+	AI_Output (other, self, "DIA_Ignaz_Experiment_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ РѕР± СЌС‚РѕРј СЌРєСЃРїРµСЂРёРјРµРЅС‚Рµ Рё СЃР°РјРѕРј Р·Р°РєР»РёРЅР°РЅРёРё.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_01");//Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РїРѕР·РІРѕР»СЏРµС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ Р·Р°Р±С‹С‚СЊ РЅРµРєРѕС‚РѕСЂС‹Рµ СЃРѕР±С‹С‚РёСЏ.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_02");//РџРѕРєР°, СЏ РІС‹СЏСЃРЅРёР» С‚РѕР»СЊРєРѕ, С‡С‚Рѕ РѕРЅРѕ СЂР°Р±РѕС‚Р°РµС‚, РєРѕРіРґР° РѕР±СЉРµРєС‚ СЌС‚РѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ РЅР°С…РѕРґРёС‚СЃСЏ РІ СЏСЂРѕСЃС‚Рё - РЅР°РїСЂРёРјРµСЂ, РµСЃР»Рё РѕРЅ С‚РѕР»СЊРєРѕ С‡С‚Рѕ Р±С‹Р» СЃР±РёС‚ СЃ РЅРѕРі РёР»Рё РѕРіСЂР°Р±Р»РµРЅ.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_03");//Р РґР°Р¶Рµ РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚Рѕ, С‡С‚Рѕ СЌС‚Р° РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚СЊ РїСЂРѕРёР·РѕС€Р»Р° СЃ РЅРёРј С‚РѕР»СЊРєРѕ С‡С‚Рѕ, РѕРЅ РІСЃРµ Р·Р°Р±СѓРґРµС‚.
+	AI_Output (other, self, "DIA_Ignaz_Experiment_15_04");//РўРѕ РµСЃС‚СЊ, СЏ РґРѕР»Р¶РµРЅ СЃР±РёС‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ СЃ РЅРѕРі Рё РЅР°Р»РѕР¶РёС‚СЊ РЅР° РЅРµРіРѕ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ?
+	//AI_Output (other, self, "DIA_Ignaz_Add_15_00"); //Р­С‚Рѕ РёРјРµРµС‚ СЃРјС‹СЃР», С‚РѕР»СЊРєРѕ РµСЃР»Рё Р¶РµСЂС‚РІР° Р”Р•Р™РЎРўР’РРўР•Р›Р¬РќРћ РѕС‡РµРЅСЊ Р·Р»Р° РїРѕСЃР»Рµ РґСЂР°РєРё.
+	//AI_Output (other, self, "DIA_Ignaz_Add_15_01"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р—РґРµСЃСЊ, РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ, Р»СЋРґРё РїСЂРёРІС‹С‡РЅС‹ Рє РґСЂР°РєР°Рј. РњРЅРµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ Р¶РµСЂС‚РІСѓ РіРґРµ-РЅРёР±СѓРґСЊ РІ РґСЂСѓРіРѕРј РјРµСЃС‚Рµ...
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_05");//Р”Р°, С‚С‹ РІСЃРµ РїСЂР°РІРёР»СЊРЅРѕ РїРѕРЅРёРјР°РµС€СЊ. РќРѕ С‡С‚РѕР±С‹ СЂР°Р·РѕР·Р»РёС‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїСЂРѕСЃС‚Рѕ Р°С‚Р°РєРѕРІР°С‚СЊ - РІРѕРІСЃРµ РЅРµС‚ РЅРµРѕР±С…РѕРґРёРјРѕСЃС‚Рё СЃР±РёРІР°С‚СЊ РµРіРѕ СЃ РЅРѕРі.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_06");//РўРѕР»СЊРєРѕ С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРѕРґРµР»Р°С‚СЊ РІСЃРµ СЌС‚Рѕ Р±РµР· СЃРІРёРґРµС‚РµР»РµР№ - РµСЃР»Рё РЅРµРїРѕРґР°Р»РµРєСѓ Р±СѓРґСѓС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ РґСЂСѓРіРёРµ Р»СЋРґРё, Сѓ С‚РµР±СЏ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹ СЃ Р›РѕСЂРґРѕРј РђРЅРґСЂСЌ.
+	AI_Output (self, other, "DIA_Ignaz_Experiment_14_07");//РўР°РєР¶Рµ РЅРµ РёРјРµРµС‚ СЃРјС‹СЃР»Р° РЅР°Р»Р°РіР°С‚СЊ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РЅР° С‚РѕРіРѕ, РєС‚Рѕ Р°С‚Р°РєСѓРµС‚ С‚РµР±СЏ. Р’С‹Р¶РґРё РїРѕРґС…РѕРґСЏС‰РёР№ РјРѕРјРµРЅС‚.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info teilnhemen
@@ -151,7 +151,7 @@ INSTANCE DIA_Ignaz_teilnehmen   (C_INFO)
 	condition   = DIA_Ignaz_teilnehmen_Condition;
 	information = DIA_Ignaz_teilnehmen_Info;
 	permanent   = FALSE;
-	description = "Хорошо, я испытаю это заклинание.";
+	description = "РҐРѕСЂРѕС€Рѕ, СЏ РёСЃРїС‹С‚Р°СЋ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ.";
 };
 
 FUNC INT DIA_Ignaz_teilnehmen_Condition()
@@ -163,17 +163,17 @@ FUNC INT DIA_Ignaz_teilnehmen_Condition()
 };
 FUNC VOID DIA_Ignaz_teilnehmen_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_teilnehmen_15_00");//Хорошо, я испытаю это заклинание.
-	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_01");//Тогда возьми этот свиток и найди подходящего подопытного кролика.
-	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_02");//А когда закончишь, возвращайся и расскажи мне как все прошло.
+	AI_Output (other, self, "DIA_Ignaz_teilnehmen_15_00");//РҐРѕСЂРѕС€Рѕ, СЏ РёСЃРїС‹С‚Р°СЋ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ.
+	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_01");//РўРѕРіРґР° РІРѕР·СЊРјРё СЌС‚РѕС‚ СЃРІРёС‚РѕРє Рё РЅР°Р№РґРё РїРѕРґС…РѕРґСЏС‰РµРіРѕ РїРѕРґРѕРїС‹С‚РЅРѕРіРѕ РєСЂРѕР»РёРєР°.
+	AI_Output (self, other, "DIA_Ignaz_teilnehmen_14_02");//Рђ РєРѕРіРґР° Р·Р°РєРѕРЅС‡РёС€СЊ, РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рё СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ РєР°Рє РІСЃРµ РїСЂРѕС€Р»Рѕ.
 	
 	B_GiveInvItems (self, other, ITSC_Charm,1);
 	MIS_Ignaz_Charm = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Ignaz,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Ignaz,LOG_RUNNING);
-	B_LogEntry (TOPIC_Ignaz,"Я должен испытать новое заклинание Игнаца. Это заклинание называется Забвение. Иногда кто-нибудь выходит из себя в результате драки или по другой причине и больше не хочет говорить со мной. Это идеальный момент для использования этого заклинания.");
-	B_LogEntry (TOPIC_Ignaz,"Это идеальная возможность испытать заклинание. Подопытный также забудет доложить о произошедшем властям. Я не думаю, что кто-либо в портовом квартале сильно обидится, если я вырублю его.");
+	B_LogEntry (TOPIC_Ignaz,"РЇ РґРѕР»Р¶РµРЅ РёСЃРїС‹С‚Р°С‚СЊ РЅРѕРІРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ РРіРЅР°С†Р°. Р­С‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РЅР°Р·С‹РІР°РµС‚СЃСЏ Р—Р°Р±РІРµРЅРёРµ. РРЅРѕРіРґР° РєС‚Рѕ-РЅРёР±СѓРґСЊ РІС‹С…РѕРґРёС‚ РёР· СЃРµР±СЏ РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РґСЂР°РєРё РёР»Рё РїРѕ РґСЂСѓРіРѕР№ РїСЂРёС‡РёРЅРµ Рё Р±РѕР»СЊС€Рµ РЅРµ С…РѕС‡РµС‚ РіРѕРІРѕСЂРёС‚СЊ СЃРѕ РјРЅРѕР№. Р­С‚Рѕ РёРґРµР°Р»СЊРЅС‹Р№ РјРѕРјРµРЅС‚ РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ СЌС‚РѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ.");
+	B_LogEntry (TOPIC_Ignaz,"Р­С‚Рѕ РёРґРµР°Р»СЊРЅР°СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РёСЃРїС‹С‚Р°С‚СЊ Р·Р°РєР»РёРЅР°РЅРёРµ. РџРѕРґРѕРїС‹С‚РЅС‹Р№ С‚Р°РєР¶Рµ Р·Р°Р±СѓРґРµС‚ РґРѕР»РѕР¶РёС‚СЊ Рѕ РїСЂРѕРёР·РѕС€РµРґС€РµРј РІР»Р°СЃС‚СЏРј. РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РєС‚Рѕ-Р»РёР±Рѕ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ СЃРёР»СЊРЅРѕ РѕР±РёРґРёС‚СЃСЏ, РµСЃР»Рё СЏ РІС‹СЂСѓР±Р»СЋ РµРіРѕ.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -187,7 +187,7 @@ INSTANCE DIA_Ignaz_Running   (C_INFO)
 	condition   = DIA_Ignaz_Running_Condition;
 	information = DIA_Ignaz_Running_Info;
 	permanent   = FALSE;
-	description = "Насчет эксперимента...";
+	description = "РќР°СЃС‡РµС‚ СЌРєСЃРїРµСЂРёРјРµРЅС‚Р°...";
 };
 
 FUNC INT DIA_Ignaz_Running_Condition()
@@ -200,9 +200,9 @@ FUNC INT DIA_Ignaz_Running_Condition()
 };
 FUNC VOID DIA_Ignaz_Running_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Running_15_00");//Насчет эксперимента...
-	AI_Output (self, other, "DIA_Ignaz_Running_14_01");//У тебя получилось, да? Или ты просто попусту истратил мой свиток?
-	AI_Output (self, other, "DIA_Ignaz_Running_14_02");//Если тебе нужны еще свитки с этим заклинанием, ты можешь купить их у меня.
+	AI_Output (other, self, "DIA_Ignaz_Running_15_00");//РќР°СЃС‡РµС‚ СЌРєСЃРїРµСЂРёРјРµРЅС‚Р°...
+	AI_Output (self, other, "DIA_Ignaz_Running_14_01");//РЈ С‚РµР±СЏ РїРѕР»СѓС‡РёР»РѕСЃСЊ, РґР°? РР»Рё С‚С‹ РїСЂРѕСЃС‚Рѕ РїРѕРїСѓСЃС‚Сѓ РёСЃС‚СЂР°С‚РёР» РјРѕР№ СЃРІРёС‚РѕРє?
+	AI_Output (self, other, "DIA_Ignaz_Running_14_02");//Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅС‹ РµС‰Рµ СЃРІРёС‚РєРё СЃ СЌС‚РёРј Р·Р°РєР»РёРЅР°РЅРёРµРј, С‚С‹ РјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ РёС… Сѓ РјРµРЅСЏ.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -215,7 +215,7 @@ INSTANCE DIA_Ignaz_Danach   (C_INFO)
 	condition   = DIA_Ignaz_Danach_Condition;
 	information = DIA_Ignaz_Danach_Info;
 	permanent   = FALSE;
-	description = "Я использовал свиток.";
+	description = "РЇ РёСЃРїРѕР»СЊР·РѕРІР°Р» СЃРІРёС‚РѕРє.";
 };
 FUNC INT DIA_Ignaz_Danach_Condition()
 {	
@@ -227,20 +227,20 @@ FUNC INT DIA_Ignaz_Danach_Condition()
 };
 FUNC VOID DIA_Ignaz_Danach_Info()
 {
-	AI_Output (other, self, "DIA_Ignaz_Danach_15_00");//Я использовал свиток.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_01");//Отлично, отлично. У тебя все получилось?
-	AI_Output (other, self, "DIA_Ignaz_Danach_15_02");//Да, заклинание сработало.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_03");//Превосходно. Может, с точки зрения науки это и не очень большое достижение, но для меня оно очень много значит!
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_04");//Теперь я могу уделить тебе время и обучить тебя искусству алхимии.
-	AI_Output (self, other, "DIA_Ignaz_Danach_14_05");//Я также могу продать тебе что-нибудь полезное, если ты, конечно, хочешь этого.
+	AI_Output (other, self, "DIA_Ignaz_Danach_15_00");//РЇ РёСЃРїРѕР»СЊР·РѕРІР°Р» СЃРІРёС‚РѕРє.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_01");//РћС‚Р»РёС‡РЅРѕ, РѕС‚Р»РёС‡РЅРѕ. РЈ С‚РµР±СЏ РІСЃРµ РїРѕР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output (other, self, "DIA_Ignaz_Danach_15_02");//Р”Р°, Р·Р°РєР»РёРЅР°РЅРёРµ СЃСЂР°Р±РѕС‚Р°Р»Рѕ.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_03");//РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. РњРѕР¶РµС‚, СЃ С‚РѕС‡РєРё Р·СЂРµРЅРёСЏ РЅР°СѓРєРё СЌС‚Рѕ Рё РЅРµ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РѕРµ РґРѕСЃС‚РёР¶РµРЅРёРµ, РЅРѕ РґР»СЏ РјРµРЅСЏ РѕРЅРѕ РѕС‡РµРЅСЊ РјРЅРѕРіРѕ Р·РЅР°С‡РёС‚!
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_04");//РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ СѓРґРµР»РёС‚СЊ С‚РµР±Рµ РІСЂРµРјСЏ Рё РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.
+	AI_Output (self, other, "DIA_Ignaz_Danach_14_05");//РЇ С‚Р°РєР¶Рµ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕР»РµР·РЅРѕРµ, РµСЃР»Рё С‚С‹, РєРѕРЅРµС‡РЅРѕ, С…РѕС‡РµС€СЊ СЌС‚РѕРіРѕ.
 	
 	Ignaz_TeachAlchemy = TRUE;
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Игнац может показать мне рецепты приготовления зелий. Он живет в портовом квартале.");
+	B_LogEntry (Topic_CityTeacher,"РРіРЅР°С† РјРѕР¶РµС‚ РїРѕРєР°Р·Р°С‚СЊ РјРЅРµ СЂРµС†РµРїС‚С‹ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№. РћРЅ Р¶РёРІРµС‚ РІ РїРѕСЂС‚РѕРІРѕРј РєРІР°СЂС‚Р°Р»Рµ.");
 	MIS_Ignaz_Charm = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MIS_Ignaz_Charm);
 	
-	//PATCH fallls alle Scrolls aufgekauft oder geplьndert wurden
+	//PATCH fallls alle Scrolls aufgekauft oder geplСЊndert wurden
 	CreateInvItems (self,ITSC_Charm		, 3);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -254,7 +254,7 @@ INSTANCE DIA_Ignaz_Trade   (C_INFO)
 	information = DIA_Ignaz_Trade_Info;
 	permanent   = TRUE;
 	trade 		= TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 FUNC INT DIA_Ignaz_Trade_Condition()
 {	
@@ -267,7 +267,7 @@ FUNC INT DIA_Ignaz_Trade_Condition()
 FUNC VOID DIA_Ignaz_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Ignaz_Trade_15_00");//Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Ignaz_Trade_15_00");//РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -280,7 +280,7 @@ INSTANCE DIA_Ignaz_Teach   (C_INFO)
 	condition   = DIA_Ignaz_Teach_Condition;
 	information = DIA_Ignaz_Teach_Info;
 	permanent   = TRUE;
-	description = "Обучи меня искусству алхимии.";
+	description = "РћР±СѓС‡Рё РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.";
 };
 //----------------------------------------
 var int DIA_Ignaz_Teach_permanent;
@@ -298,7 +298,7 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//Обучи меня искусству алхимии.
+	AI_Output (other, self,"DIA_Ignaz_Teach_15_00");//РћР±СѓС‡Рё РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.
 	
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
@@ -311,38 +311,38 @@ FUNC VOID DIA_Ignaz_Teach_Info()
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Зелье ускорения", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)),DIA_Ignaz_Teach_Speed);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Р—РµР»СЊРµ СѓСЃРєРѕСЂРµРЅРёСЏ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Speed)),DIA_Ignaz_Teach_Speed);
 		talente = (talente + 1);
 	};
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Эссенция маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Ignaz_Teach_Mana);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)),DIA_Ignaz_Teach_Mana);
 		talente = (talente + 1);
 	};
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Лечебная эссенция", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
+		Info_AddChoice (DIA_Ignaz_Teach,B_BuildLearnString ("Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)) ,DIA_Ignaz_Teach_Health);
 		talente = (talente + 1);
 	};
 	if (talente > 0)
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //Чтобы приготовить зелье на алхимическом столе, тебе понадобится лабораторная пробирка.
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //Также тебе понадобятся различные растения и другие ингредиенты.
-			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benцtigten Pflanzen dafьr sehr selten sind.
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_01"); //Р§С‚РѕР±С‹ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ Р·РµР»СЊРµ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ, С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ РїСЂРѕР±РёСЂРєР°.
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_02"); //РўР°РєР¶Рµ С‚РµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ СЂР°Р·Р»РёС‡РЅС‹Рµ СЂР°СЃС‚РµРЅРёСЏ Рё РґСЂСѓРіРёРµ РёРЅРіСЂРµРґРёРµРЅС‚С‹.
+			//AI_Output (self, other,"DIA_Ignaz_Teach_14_03"); //Eins noch. Falls du vorhast, das Wissen um Elixiere der Geschicklichkeit zu lernen, solltest du wissen, dass die benС†tigten Pflanzen dafСЊr sehr selten sind.
 			Alchemy_Explain = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //Что ты хочешь узнать?
+			AI_Output (self, other,"DIA_Ignaz_Teach_14_04"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 		};
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //Ты уже знаешь все, чему я мог обучить тебя.
+		AI_Output (self, other,"DIA_Ignaz_Teach_14_05"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РІСЃРµ, С‡РµРјСѓ СЏ РјРѕРі РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ.
 		DIA_Ignaz_Teach_permanent = TRUE;
 	};
 };

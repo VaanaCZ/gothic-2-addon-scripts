@@ -34,7 +34,7 @@ instance DIA_Bengar_HALLO		(C_INFO)
 	condition	 = 	DIA_Bengar_HALLO_Condition;
 	information	 = 	DIA_Bengar_HALLO_Info;
 
-	description	 = 	"Ты здешний фермер?";
+	description	 = 	"РўС‹ Р·РґРµС€РЅРёР№ С„РµСЂРјРµСЂ?";
 };
 
 func int DIA_Bengar_HALLO_Condition ()
@@ -47,9 +47,9 @@ func int DIA_Bengar_HALLO_Condition ()
 
 func void DIA_Bengar_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_HALLO_15_00"); //Ты здешний фермер?
-	AI_Output			(self, other, "DIA_Bengar_HALLO_10_01"); //Можно сказать и так, хотя на самом деле, я простой арендатор.
-	AI_Output			(self, other, "DIA_Bengar_HALLO_10_02"); //Вся земля здесь принадлежит одному крупному землевладельцу.
+	AI_Output			(other, self, "DIA_Bengar_HALLO_15_00"); //РўС‹ Р·РґРµС€РЅРёР№ С„РµСЂРјРµСЂ?
+	AI_Output			(self, other, "DIA_Bengar_HALLO_10_01"); //РњРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ Рё С‚Р°Рє, С…РѕС‚СЏ РЅР° СЃР°РјРѕРј РґРµР»Рµ, СЏ РїСЂРѕСЃС‚РѕР№ Р°СЂРµРЅРґР°С‚РѕСЂ.
+	AI_Output			(self, other, "DIA_Bengar_HALLO_10_02"); //Р’СЃСЏ Р·РµРјР»СЏ Р·РґРµСЃСЊ РїСЂРёРЅР°РґР»РµР¶РёС‚ РѕРґРЅРѕРјСѓ РєСЂСѓРїРЅРѕРјСѓ Р·РµРјР»РµРІР»Р°РґРµР»СЊС†Сѓ.
 
 };
 
@@ -63,7 +63,7 @@ instance DIA_Bengar_WOVONLEBTIHR		(C_INFO)
 	condition	 = 	DIA_Bengar_WOVONLEBTIHR_Condition;
 	information	 = 	DIA_Bengar_WOVONLEBTIHR_Info;
 
-	description	 = 	"Как ты зарабатываешь на жизнь?";
+	description	 = 	"РљР°Рє С‚С‹ Р·Р°СЂР°Р±Р°С‚С‹РІР°РµС€СЊ РЅР° Р¶РёР·РЅСЊ?";
 };
 
 func int DIA_Bengar_WOVONLEBTIHR_Condition ()
@@ -77,9 +77,9 @@ func int DIA_Bengar_WOVONLEBTIHR_Condition ()
 
 func void DIA_Bengar_WOVONLEBTIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_WOVONLEBTIHR_15_00"); //Как ты зарабатываешь на жизнь?
-	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_01"); //В основном охотой и рубкой леса. Ну и, конечно же, мы также выращиваем овец и работаем в поле.
-	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_02"); //Онар навязал мне всех этих работников и мне приходится чем-то занимать их. Всего несколько из них хорошие охотники, понимаешь?
+	AI_Output			(other, self, "DIA_Bengar_WOVONLEBTIHR_15_00"); //РљР°Рє С‚С‹ Р·Р°СЂР°Р±Р°С‚С‹РІР°РµС€СЊ РЅР° Р¶РёР·РЅСЊ?
+	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_01"); //Р’ РѕСЃРЅРѕРІРЅРѕРј РѕС…РѕС‚РѕР№ Рё СЂСѓР±РєРѕР№ Р»РµСЃР°. РќСѓ Рё, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РјС‹ С‚Р°РєР¶Рµ РІС‹СЂР°С‰РёРІР°РµРј РѕРІРµС† Рё СЂР°Р±РѕС‚Р°РµРј РІ РїРѕР»Рµ.
+	AI_Output			(self, other, "DIA_Bengar_WOVONLEBTIHR_10_02"); //РћРЅР°СЂ РЅР°РІСЏР·Р°Р» РјРЅРµ РІСЃРµС… СЌС‚РёС… СЂР°Р±РѕС‚РЅРёРєРѕРІ Рё РјРЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ С‡РµРј-С‚Рѕ Р·Р°РЅРёРјР°С‚СЊ РёС…. Р’СЃРµРіРѕ РЅРµСЃРєРѕР»СЊРєРѕ РёР· РЅРёС… С…РѕСЂРѕС€РёРµ РѕС…РѕС‚РЅРёРєРё, РїРѕРЅРёРјР°РµС€СЊ?
 
 };
 
@@ -94,7 +94,7 @@ instance DIA_Bengar_TAGELOEHNER		(C_INFO)
 	condition	 = 	DIA_Bengar_TAGELOEHNER_Condition;
 	information	 = 	DIA_Bengar_TAGELOEHNER_Info;
 
-	description	 = 	"Ты нанимаешь поденных рабочих?";
+	description	 = 	"РўС‹ РЅР°РЅРёРјР°РµС€СЊ РїРѕРґРµРЅРЅС‹С… СЂР°Р±РѕС‡РёС…?";
 };
 
 func int DIA_Bengar_TAGELOEHNER_Condition ()
@@ -108,9 +108,9 @@ func int DIA_Bengar_TAGELOEHNER_Condition ()
 
 func void DIA_Bengar_TAGELOEHNER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_TAGELOEHNER_15_00"); //Ты нанимаешь поденных рабочих?
-	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_01"); //Онар увольняет работников, которые не нужны на его ферме.
-	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_02"); //Затем он посылает их ко мне. Я кормлю их, а они работают на меня.
+	AI_Output			(other, self, "DIA_Bengar_TAGELOEHNER_15_00"); //РўС‹ РЅР°РЅРёРјР°РµС€СЊ РїРѕРґРµРЅРЅС‹С… СЂР°Р±РѕС‡РёС…?
+	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_01"); //РћРЅР°СЂ СѓРІРѕР»СЊРЅСЏРµС‚ СЂР°Р±РѕС‚РЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РЅРµ РЅСѓР¶РЅС‹ РЅР° РµРіРѕ С„РµСЂРјРµ.
+	AI_Output			(self, other, "DIA_Bengar_TAGELOEHNER_10_02"); //Р—Р°С‚РµРј РѕРЅ РїРѕСЃС‹Р»Р°РµС‚ РёС… РєРѕ РјРЅРµ. РЇ РєРѕСЂРјР»СЋ РёС…, Р° РѕРЅРё СЂР°Р±РѕС‚Р°СЋС‚ РЅР° РјРµРЅСЏ.
 
 };
 
@@ -124,7 +124,7 @@ instance DIA_Addon_Bengar_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Bengar_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Bengar_MissingPeople_Info;
 
-	description	 = 	"Не случалось ли здесь в последнее время что-нибудь необычное?";
+	description	 = 	"РќРµ СЃР»СѓС‡Р°Р»РѕСЃСЊ Р»Рё Р·РґРµСЃСЊ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРµРѕР±С‹С‡РЅРѕРµ?";
 };
 
 func int DIA_Addon_Bengar_MissingPeople_Condition ()
@@ -138,55 +138,55 @@ func int DIA_Addon_Bengar_MissingPeople_Condition ()
 
 func void DIA_Addon_Bengar_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bengar_MissingPeople_15_00"); //Не случалось ли здесь в последнее время что-нибудь необычное?
-	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_01"); //В последние дни происходит много необычных вещей.
-	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_02"); //Но самым необычным было исчезновение Пардоса.
-	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_03"); //Это один из моих рабочих. Понимаешь, он не из тех, кто способен в один прекрасный момент все бросить и сбежать в неизвестном направлении.
+	AI_Output	(other, self, "DIA_Addon_Bengar_MissingPeople_15_00"); //РќРµ СЃР»СѓС‡Р°Р»РѕСЃСЊ Р»Рё Р·РґРµСЃСЊ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРµРѕР±С‹С‡РЅРѕРµ?
+	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_01"); //Р’ РїРѕСЃР»РµРґРЅРёРµ РґРЅРё РїСЂРѕРёСЃС…РѕРґРёС‚ РјРЅРѕРіРѕ РЅРµРѕР±С‹С‡РЅС‹С… РІРµС‰РµР№.
+	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_02"); //РќРѕ СЃР°РјС‹Рј РЅРµРѕР±С‹С‡РЅС‹Рј Р±С‹Р»Рѕ РёСЃС‡РµР·РЅРѕРІРµРЅРёРµ РџР°СЂРґРѕСЃР°.
+	AI_Output	(self, other, "DIA_Addon_Bengar_MissingPeople_10_03"); //Р­С‚Рѕ РѕРґРёРЅ РёР· РјРѕРёС… СЂР°Р±РѕС‡РёС…. РџРѕРЅРёРјР°РµС€СЊ, РѕРЅ РЅРµ РёР· С‚РµС…, РєС‚Рѕ СЃРїРѕСЃРѕР±РµРЅ РІ РѕРґРёРЅ РїСЂРµРєСЂР°СЃРЅС‹Р№ РјРѕРјРµРЅС‚ РІСЃРµ Р±СЂРѕСЃРёС‚СЊ Рё СЃР±РµР¶Р°С‚СЊ РІ РЅРµРёР·РІРµСЃС‚РЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"У фермера Бенгара пропал его работник - Пардос."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"РЈ С„РµСЂРјРµСЂР° Р‘РµРЅРіР°СЂР° РїСЂРѕРїР°Р» РµРіРѕ СЂР°Р±РѕС‚РЅРёРє - РџР°СЂРґРѕСЃ."); 
 
 	MIS_Bengar_BringMissPeopleBack = LOG_RUNNING;
 	B_GivePlayerXP (XP_Ambient);
 
 	Info_ClearChoices	(DIA_Addon_Bengar_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, DIALOG_BACK, DIA_Addon_Bengar_MissingPeople_back );
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Есть какие-нибудь мысли?", DIA_Addon_Bengar_MissingPeople_Hint );
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Может быть, ему просто все надоело.", DIA_Addon_Bengar_MissingPeople_voll );
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Что именно в его исчезновении показалось тебе странным?", DIA_Addon_Bengar_MissingPeople_was );
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РјС‹СЃР»Рё?", DIA_Addon_Bengar_MissingPeople_Hint );
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "РњРѕР¶РµС‚ Р±С‹С‚СЊ, РµРјСѓ РїСЂРѕСЃС‚Рѕ РІСЃРµ РЅР°РґРѕРµР»Рѕ.", DIA_Addon_Bengar_MissingPeople_voll );
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Р§С‚Рѕ РёРјРµРЅРЅРѕ РІ РµРіРѕ РёСЃС‡РµР·РЅРѕРІРµРЅРёРё РїРѕРєР°Р·Р°Р»РѕСЃСЊ С‚РµР±Рµ СЃС‚СЂР°РЅРЅС‹Рј?", DIA_Addon_Bengar_MissingPeople_was );
 };
 func void DIA_Addon_Bengar_MissingPeople_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_00"); //Что именно в его исчезновении показалось тебе странным?
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_01"); //Пардос довольно труслив. Самое большое расстояние, на которое он уходил от фермы - граница дальнего поля.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_02"); //Он трясется от страха даже при виде мясного жука.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_03"); //Я понимаю, выглядят они довольно неприятно, но считать их опасными...
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_04"); //(с отвращением) А еще говорят, кто-то их жрет. Мерзость.
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_05"); //Человек ко всему привыкает.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_00"); //Р§С‚Рѕ РёРјРµРЅРЅРѕ РІ РµРіРѕ РёСЃС‡РµР·РЅРѕРІРµРЅРёРё РїРѕРєР°Р·Р°Р»РѕСЃСЊ С‚РµР±Рµ СЃС‚СЂР°РЅРЅС‹Рј?
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_01"); //РџР°СЂРґРѕСЃ РґРѕРІРѕР»СЊРЅРѕ С‚СЂСѓСЃР»РёРІ. РЎР°РјРѕРµ Р±РѕР»СЊС€РѕРµ СЂР°СЃСЃС‚РѕСЏРЅРёРµ, РЅР° РєРѕС‚РѕСЂРѕРµ РѕРЅ СѓС…РѕРґРёР» РѕС‚ С„РµСЂРјС‹ - РіСЂР°РЅРёС†Р° РґР°Р»СЊРЅРµРіРѕ РїРѕР»СЏ.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_02"); //РћРЅ С‚СЂСЏСЃРµС‚СЃСЏ РѕС‚ СЃС‚СЂР°С…Р° РґР°Р¶Рµ РїСЂРё РІРёРґРµ РјСЏСЃРЅРѕРіРѕ Р¶СѓРєР°.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_03"); //РЇ РїРѕРЅРёРјР°СЋ, РІС‹РіР»СЏРґСЏС‚ РѕРЅРё РґРѕРІРѕР»СЊРЅРѕ РЅРµРїСЂРёСЏС‚РЅРѕ, РЅРѕ СЃС‡РёС‚Р°С‚СЊ РёС… РѕРїР°СЃРЅС‹РјРё...
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_was_10_04"); //(СЃ РѕС‚РІСЂР°С‰РµРЅРёРµРј) Рђ РµС‰Рµ РіРѕРІРѕСЂСЏС‚, РєС‚Рѕ-С‚Рѕ РёС… Р¶СЂРµС‚. РњРµСЂР·РѕСЃС‚СЊ.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_was_15_05"); //Р§РµР»РѕРІРµРє РєРѕ РІСЃРµРјСѓ РїСЂРёРІС‹РєР°РµС‚.
 };
 func void DIA_Addon_Bengar_MissingPeople_voll ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_voll_15_00"); //Может быть, ему просто все надоело.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_01"); //Работа на полях была всей его жизнью. Я не могу даже представить себе, чтобы он ушел работать к другому фермеру.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_02"); //У меня он получал все, что хотел.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_voll_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РµРјСѓ РїСЂРѕСЃС‚Рѕ РІСЃРµ РЅР°РґРѕРµР»Рѕ.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_01"); //Р Р°Р±РѕС‚Р° РЅР° РїРѕР»СЏС… Р±С‹Р»Р° РІСЃРµР№ РµРіРѕ Р¶РёР·РЅСЊСЋ. РЇ РЅРµ РјРѕРіСѓ РґР°Р¶Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ, С‡С‚РѕР±С‹ РѕРЅ СѓС€РµР» СЂР°Р±РѕС‚Р°С‚СЊ Рє РґСЂСѓРіРѕРјСѓ С„РµСЂРјРµСЂСѓ.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_voll_10_02"); //РЈ РјРµРЅСЏ РѕРЅ РїРѕР»СѓС‡Р°Р» РІСЃРµ, С‡С‚Рѕ С…РѕС‚РµР».
 	
 };
 func void DIA_Addon_Bengar_MissingPeople_Hint ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Hint_15_00"); //Есть какие-нибудь мысли?
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_01"); //Думаю, его похитили бандиты. В последнее время они повадились здесь шастать.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_02"); //Однажды я видел, как они тащили в свой лагерь горожанина.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_03"); //Похоже, что они собирались сделать его рабом.
-	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Где находится лагерь бандитов?", DIA_Addon_Bengar_MissingPeople_Lager );
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Hint_15_00"); //Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РјС‹СЃР»Рё?
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_01"); //Р”СѓРјР°СЋ, РµРіРѕ РїРѕС…РёС‚РёР»Рё Р±Р°РЅРґРёС‚С‹. Р’ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕРЅРё РїРѕРІР°РґРёР»РёСЃСЊ Р·РґРµСЃСЊ С€Р°СЃС‚Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_02"); //РћРґРЅР°Р¶РґС‹ СЏ РІРёРґРµР», РєР°Рє РѕРЅРё С‚Р°С‰РёР»Рё РІ СЃРІРѕР№ Р»Р°РіРµСЂСЊ РіРѕСЂРѕР¶Р°РЅРёРЅР°.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Hint_10_03"); //РџРѕС…РѕР¶Рµ, С‡С‚Рѕ РѕРЅРё СЃРѕР±РёСЂР°Р»РёСЃСЊ СЃРґРµР»Р°С‚СЊ РµРіРѕ СЂР°Р±РѕРј.
+	Info_AddChoice	(DIA_Addon_Bengar_MissingPeople, "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ?", DIA_Addon_Bengar_MissingPeople_Lager );
 };
 var int Bengar_ToldAboutRangerBandits;
 func void DIA_Addon_Bengar_MissingPeople_Lager ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Lager_15_00"); //Где находится лагерь бандитов?
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_01"); //Там, где кончаются мои поля, есть лестница, ведущая в небольшую лощину. Там они и обосновались.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_02"); //Я хотел поискать там Пардоса, но с этими парнями мне не справиться.
-	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_03"); //Тебе, кстати, тоже лучше держаться от них подальше. Шутить они не любят.
+	AI_Output			(other, self, "DIA_Addon_Bengar_MissingPeople_Lager_15_00"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_01"); //РўР°Рј, РіРґРµ РєРѕРЅС‡Р°СЋС‚СЃСЏ РјРѕРё РїРѕР»СЏ, РµСЃС‚СЊ Р»РµСЃС‚РЅРёС†Р°, РІРµРґСѓС‰Р°СЏ РІ РЅРµР±РѕР»СЊС€СѓСЋ Р»РѕС‰РёРЅСѓ. РўР°Рј РѕРЅРё Рё РѕР±РѕСЃРЅРѕРІР°Р»РёСЃСЊ.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_02"); //РЇ С…РѕС‚РµР» РїРѕРёСЃРєР°С‚СЊ С‚Р°Рј РџР°СЂРґРѕСЃР°, РЅРѕ СЃ СЌС‚РёРјРё РїР°СЂРЅСЏРјРё РјРЅРµ РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Addon_Bengar_MissingPeople_Lager_10_03"); //РўРµР±Рµ, РєСЃС‚Р°С‚Рё, С‚РѕР¶Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ. РЁСѓС‚РёС‚СЊ РѕРЅРё РЅРµ Р»СЋР±СЏС‚.
 	Bengar_ToldAboutRangerBandits = TRUE;
 };
 func void DIA_Addon_Bengar_MissingPeople_back ()
@@ -203,7 +203,7 @@ instance DIA_Addon_Bengar_ReturnPardos		(C_INFO)
 	condition	 = 	DIA_Addon_Bengar_ReturnPardos_Condition;
 	information	 = 	DIA_Addon_Bengar_ReturnPardos_Info;
 
-	description	 = 	"Пардос вернулся?";
+	description	 = 	"РџР°СЂРґРѕСЃ РІРµСЂРЅСѓР»СЃСЏ?";
 };
 
 func int DIA_Addon_Bengar_ReturnPardos_Condition ()
@@ -218,11 +218,11 @@ func int DIA_Addon_Bengar_ReturnPardos_Condition ()
 
 func void DIA_Addon_Bengar_ReturnPardos_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_00"); //Пардос вернулся?
-	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_01"); //Да, он в доме, отдыхает. Спасибо за все...
-	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_02"); //Не стоит.
-	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_03"); //Я хотел бы наградить тебя, но у меня ничего нет...
-	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_04"); //Забудь об этом.
+	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_00"); //РџР°СЂРґРѕСЃ РІРµСЂРЅСѓР»СЃСЏ?
+	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_01"); //Р”Р°, РѕРЅ РІ РґРѕРјРµ, РѕС‚РґС‹С…Р°РµС‚. РЎРїР°СЃРёР±Рѕ Р·Р° РІСЃРµ...
+	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_02"); //РќРµ СЃС‚РѕРёС‚.
+	AI_Output	(self, other, "DIA_Addon_Bengar_ReturnPardos_10_03"); //РЇ С…РѕС‚РµР» Р±С‹ РЅР°РіСЂР°РґРёС‚СЊ С‚РµР±СЏ, РЅРѕ Сѓ РјРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµС‚...
+	AI_Output	(other, self, "DIA_Addon_Bengar_ReturnPardos_15_04"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 	
 	B_GivePlayerXP (XP_Ambient);
 };	
@@ -237,7 +237,7 @@ instance DIA_Addon_Bengar_FernandosWeapons		(C_INFO)
 	condition	 = 	DIA_Addon_Bengar_FernandosWeapons_Condition;
 	information	 = 	DIA_Addon_Bengar_FernandosWeapons_Info;
 
-	description	 = 	"Когда бандиты здесь проходили, у них было оружие?";
+	description	 = 	"РљРѕРіРґР° Р±Р°РЅРґРёС‚С‹ Р·РґРµСЃСЊ РїСЂРѕС…РѕРґРёР»Рё, Сѓ РЅРёС… Р±С‹Р»Рѕ РѕСЂСѓР¶РёРµ?";
 };
 
 func int DIA_Addon_Bengar_FernandosWeapons_Condition ()
@@ -251,11 +251,11 @@ func int DIA_Addon_Bengar_FernandosWeapons_Condition ()
 
 func void DIA_Addon_Bengar_FernandosWeapons_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_00"); //Когда бандиты здесь проходили, у них было оружие?
-	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_01"); //Что за глупый вопрос? Когда это бандиты ходили без оружия?
-	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_02"); //Я имею в виду, МНОГО оружия. Большой груз.
-	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_03"); //А, понимаю. Да, после того как ты об этом сказал, я вспоминаю, что оружия действительно было много.
-	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_04"); //Часть была в бочках, часть - в мешках, а еще часть они везли на телеге.
+	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_00"); //РљРѕРіРґР° Р±Р°РЅРґРёС‚С‹ Р·РґРµСЃСЊ РїСЂРѕС…РѕРґРёР»Рё, Сѓ РЅРёС… Р±С‹Р»Рѕ РѕСЂСѓР¶РёРµ?
+	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_01"); //Р§С‚Рѕ Р·Р° РіР»СѓРїС‹Р№ РІРѕРїСЂРѕСЃ? РљРѕРіРґР° СЌС‚Рѕ Р±Р°РЅРґРёС‚С‹ С…РѕРґРёР»Рё Р±РµР· РѕСЂСѓР¶РёСЏ?
+	AI_Output	(other, self, "DIA_Addon_Bengar_FernandosWeapons_15_02"); //РЇ РёРјРµСЋ РІ РІРёРґСѓ, РњРќРћР“Рћ РѕСЂСѓР¶РёСЏ. Р‘РѕР»СЊС€РѕР№ РіСЂСѓР·.
+	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_03"); //Рђ, РїРѕРЅРёРјР°СЋ. Р”Р°, РїРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє С‚С‹ РѕР± СЌС‚РѕРј СЃРєР°Р·Р°Р», СЏ РІСЃРїРѕРјРёРЅР°СЋ, С‡С‚Рѕ РѕСЂСѓР¶РёСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р±С‹Р»Рѕ РјРЅРѕРіРѕ.
+	AI_Output	(self, other, "DIA_Addon_Bengar_FernandosWeapons_10_04"); //Р§Р°СЃС‚СЊ Р±С‹Р»Р° РІ Р±РѕС‡РєР°С…, С‡Р°СЃС‚СЊ - РІ РјРµС€РєР°С…, Р° РµС‰Рµ С‡Р°СЃС‚СЊ РѕРЅРё РІРµР·Р»Рё РЅР° С‚РµР»РµРіРµ.
 	 B_GivePlayerXP (XP_Ambient);
 };
 
@@ -269,7 +269,7 @@ instance DIA_Bengar_REBELLIEREN		(C_INFO)
 	condition	 = 	DIA_Bengar_REBELLIEREN_Condition;
 	information	 = 	DIA_Bengar_REBELLIEREN_Info;
 
-	description	 = 	"Что ты думаешь об Онаре?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± РћРЅР°СЂРµ?";
 };
 
 func int DIA_Bengar_REBELLIEREN_Condition ()
@@ -282,12 +282,12 @@ func int DIA_Bengar_REBELLIEREN_Condition ()
 
 func void DIA_Bengar_REBELLIEREN_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_REBELLIEREN_15_00"); //Что ты думаешь об Онаре?
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_01"); //Это жадный ублюдок. Из-за него нас всех повесят.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_02"); //Однажды придут паладины из города и заставят нас, мелких фермеров, расплачиваться за все, что он наделал.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_03"); //Но у меня нет выбора. Ополчение приходит сюда только чтобы собирать налоги, а не затем, чтобы защищать мою ферму.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_04"); //Если я буду проявлять лояльность к городу, я останусь совсем один.
-	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_05"); //А так, Онар хотя бы иногда присылает наемников посмотреть, как мы тут живем.
+	AI_Output (other, self, "DIA_Bengar_REBELLIEREN_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± РћРЅР°СЂРµ?
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_01"); //Р­С‚Рѕ Р¶Р°РґРЅС‹Р№ СѓР±Р»СЋРґРѕРє. РР·-Р·Р° РЅРµРіРѕ РЅР°СЃ РІСЃРµС… РїРѕРІРµСЃСЏС‚.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_02"); //РћРґРЅР°Р¶РґС‹ РїСЂРёРґСѓС‚ РїР°Р»Р°РґРёРЅС‹ РёР· РіРѕСЂРѕРґР° Рё Р·Р°СЃС‚Р°РІСЏС‚ РЅР°СЃ, РјРµР»РєРёС… С„РµСЂРјРµСЂРѕРІ, СЂР°СЃРїР»Р°С‡РёРІР°С‚СЊСЃСЏ Р·Р° РІСЃРµ, С‡С‚Рѕ РѕРЅ РЅР°РґРµР»Р°Р».
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_03"); //РќРѕ Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°. РћРїРѕР»С‡РµРЅРёРµ РїСЂРёС…РѕРґРёС‚ СЃСЋРґР° С‚РѕР»СЊРєРѕ С‡С‚РѕР±С‹ СЃРѕР±РёСЂР°С‚СЊ РЅР°Р»РѕРіРё, Р° РЅРµ Р·Р°С‚РµРј, С‡С‚РѕР±С‹ Р·Р°С‰РёС‰Р°С‚СЊ РјРѕСЋ С„РµСЂРјСѓ.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_04"); //Р•СЃР»Рё СЏ Р±СѓРґСѓ РїСЂРѕСЏРІР»СЏС‚СЊ Р»РѕСЏР»СЊРЅРѕСЃС‚СЊ Рє РіРѕСЂРѕРґСѓ, СЏ РѕСЃС‚Р°РЅСѓСЃСЊ СЃРѕРІСЃРµРј РѕРґРёРЅ.
+	AI_Output (self, other, "DIA_Bengar_REBELLIEREN_10_05"); //Рђ С‚Р°Рє, РћРЅР°СЂ С…РѕС‚СЏ Р±С‹ РёРЅРѕРіРґР° РїСЂРёСЃС‹Р»Р°РµС‚ РЅР°РµРјРЅРёРєРѕРІ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РјС‹ С‚СѓС‚ Р¶РёРІРµРј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -300,7 +300,7 @@ instance DIA_Bengar_PALADINE		(C_INFO)
 	condition	 = 	DIA_Bengar_PALADINE_Condition;
 	information	 = 	DIA_Bengar_PALADINE_Info;
 
-	description	 = 	"А что ты имеешь против королевских войск?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РїСЂРѕС‚РёРІ РєРѕСЂРѕР»РµРІСЃРєРёС… РІРѕР№СЃРє?";
 };
 
 func int DIA_Bengar_PALADINE_Condition ()
@@ -314,11 +314,11 @@ func int DIA_Bengar_PALADINE_Condition ()
 
 func void DIA_Bengar_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PALADINE_15_00"); //А что ты имеешь против королевских войск?
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_01"); //Это очевидно. С тех пор, как паладины прибыли в город, не видно никаких улучшений. Скорее наоборот.
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_02"); //Теперь это чертово ополчение стало появляться у нас даже чаще. Они воруют все, что только могут, а паладины ничего не делают с этим.
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_03"); //Единственные паладины, что я вообще когда-либо видел, это вон те два стражника у Прохода.
-	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_04"); //Они не пошевелятся, даже если ополчение вырежет нас всех.
+	AI_Output			(other, self, "DIA_Bengar_PALADINE_15_00"); //Рђ С‡С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РїСЂРѕС‚РёРІ РєРѕСЂРѕР»РµРІСЃРєРёС… РІРѕР№СЃРє?
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_01"); //Р­С‚Рѕ РѕС‡РµРІРёРґРЅРѕ. РЎ С‚РµС… РїРѕСЂ, РєР°Рє РїР°Р»Р°РґРёРЅС‹ РїСЂРёР±С‹Р»Рё РІ РіРѕСЂРѕРґ, РЅРµ РІРёРґРЅРѕ РЅРёРєР°РєРёС… СѓР»СѓС‡С€РµРЅРёР№. РЎРєРѕСЂРµРµ РЅР°РѕР±РѕСЂРѕС‚.
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_02"); //РўРµРїРµСЂСЊ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РѕРїРѕР»С‡РµРЅРёРµ СЃС‚Р°Р»Рѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ Сѓ РЅР°СЃ РґР°Р¶Рµ С‡Р°С‰Рµ. РћРЅРё РІРѕСЂСѓСЋС‚ РІСЃРµ, С‡С‚Рѕ С‚РѕР»СЊРєРѕ РјРѕРіСѓС‚, Р° РїР°Р»Р°РґРёРЅС‹ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°СЋС‚ СЃ СЌС‚РёРј.
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_03"); //Р•РґРёРЅСЃС‚РІРµРЅРЅС‹Рµ РїР°Р»Р°РґРёРЅС‹, С‡С‚Рѕ СЏ РІРѕРѕР±С‰Рµ РєРѕРіРґР°-Р»РёР±Рѕ РІРёРґРµР», СЌС‚Рѕ РІРѕРЅ С‚Рµ РґРІР° СЃС‚СЂР°Р¶РЅРёРєР° Сѓ РџСЂРѕС…РѕРґР°.
+	AI_Output			(self, other, "DIA_Bengar_PALADINE_10_04"); //РћРЅРё РЅРµ РїРѕС€РµРІРµР»СЏС‚СЃСЏ, РґР°Р¶Рµ РµСЃР»Рё РѕРїРѕР»С‡РµРЅРёРµ РІС‹СЂРµР¶РµС‚ РЅР°СЃ РІСЃРµС….
 
 };
 
@@ -332,7 +332,7 @@ instance DIA_Bengar_PASS		(C_INFO)
 	condition	 = 	DIA_Bengar_PASS_Condition;
 	information	 = 	DIA_Bengar_PASS_Info;
 
-	description	 = 	"У Прохода?";
+	description	 = 	"РЈ РџСЂРѕС…РѕРґР°?";
 };
 
 func int DIA_Bengar_PASS_Condition ()
@@ -345,9 +345,9 @@ func int DIA_Bengar_PASS_Condition ()
 
 func void DIA_Bengar_PASS_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PASS_15_00"); //У Прохода?
-	AI_Output			(self, other, "DIA_Bengar_PASS_10_01"); //Да. Проход в старую Долину Рудников находится у водопада в другом конце этого плоскогорья.
-	AI_Output			(self, other, "DIA_Bengar_PASS_10_02"); //Спроси Малака о нем. Он там бывает пару раз в неделю.
+	AI_Output			(other, self, "DIA_Bengar_PASS_15_00"); //РЈ РџСЂРѕС…РѕРґР°?
+	AI_Output			(self, other, "DIA_Bengar_PASS_10_01"); //Р”Р°. РџСЂРѕС…РѕРґ РІ СЃС‚Р°СЂСѓСЋ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ РІРѕРґРѕРїР°РґР° РІ РґСЂСѓРіРѕРј РєРѕРЅС†Рµ СЌС‚РѕРіРѕ РїР»РѕСЃРєРѕРіРѕСЂСЊСЏ.
+	AI_Output			(self, other, "DIA_Bengar_PASS_10_02"); //РЎРїСЂРѕСЃРё РњР°Р»Р°РєР° Рѕ РЅРµРј. РћРЅ С‚Р°Рј Р±С‹РІР°РµС‚ РїР°СЂСѓ СЂР°Р· РІ РЅРµРґРµР»СЋ.
 
 };
 
@@ -361,7 +361,7 @@ instance DIA_Bengar_MILIZ (C_INFO)
 	condition	= DIA_Bengar_MILIZ_Condition;
 	information	= DIA_Bengar_MILIZ_Info;
 	permanent 	= FALSE;
-	description	= "Я должен решить твою проблему с ополчением.";
+	description	= "РЇ РґРѕР»Р¶РµРЅ СЂРµС€РёС‚СЊ С‚РІРѕСЋ РїСЂРѕР±Р»РµРјСѓ СЃ РѕРїРѕР»С‡РµРЅРёРµРј.";
 };
 
 func int DIA_Bengar_MILIZ_Condition ()
@@ -375,27 +375,27 @@ func int DIA_Bengar_MILIZ_Condition ()
 
 func void DIA_Bengar_MILIZ_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_MILIZ_15_00"); //Я должен решить твою проблему с ополчением.
+	AI_Output (other, self, "DIA_Bengar_MILIZ_15_00"); //РЇ РґРѕР»Р¶РµРЅ СЂРµС€РёС‚СЊ С‚РІРѕСЋ РїСЂРѕР±Р»РµРјСѓ СЃ РѕРїРѕР»С‡РµРЅРёРµРј.
 		
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_01"); //Что?! Я сказал Онару, чтобы он прислал своих НАЕМНИКОВ.
-		AI_Output (other, self, "DIA_Bengar_MILIZ_15_02"); //Это мой шанс проявить себя.
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_03"); //Ужас! Да ты знаешь, что ополчение сделает со мной, если у тебя ничего не получится?
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_01"); //Р§С‚Рѕ?! РЇ СЃРєР°Р·Р°Р» РћРЅР°СЂСѓ, С‡С‚РѕР±С‹ РѕРЅ РїСЂРёСЃР»Р°Р» СЃРІРѕРёС… РќРђР•РњРќРРљРћР’.
+		AI_Output (other, self, "DIA_Bengar_MILIZ_15_02"); //Р­С‚Рѕ РјРѕР№ С€Р°РЅСЃ РїСЂРѕСЏРІРёС‚СЊ СЃРµР±СЏ.
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_03"); //РЈР¶Р°СЃ! Р”Р° С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РѕРїРѕР»С‡РµРЅРёРµ СЃРґРµР»Р°РµС‚ СЃРѕ РјРЅРѕР№, РµСЃР»Рё Сѓ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ?
 	}
 	else //SLD oder DJG
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_04"); //Я уж думал, что никто не придет.
-		AI_Output (self, other, "DIA_Bengar_MILIZ_10_05"); //Я сказал об этом Онару еще пару дней назад. И за что я плачу свою ренту?!
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_04"); //РЇ СѓР¶ РґСѓРјР°Р», С‡С‚Рѕ РЅРёРєС‚Рѕ РЅРµ РїСЂРёРґРµС‚.
+		AI_Output (self, other, "DIA_Bengar_MILIZ_10_05"); //РЇ СЃРєР°Р·Р°Р» РѕР± СЌС‚РѕРј РћРЅР°СЂСѓ РµС‰Рµ РїР°СЂСѓ РґРЅРµР№ РЅР°Р·Р°Рґ. Р Р·Р° С‡С‚Рѕ СЏ РїР»Р°С‡Сѓ СЃРІРѕСЋ СЂРµРЅС‚Сѓ?!
 	};
 	
-	AI_Output (self, other, "DIA_Bengar_MILIZ_10_06"); //Эти ублюдки заявляются сюда каждую неделю и собирают налоги в пользу города.
-	AI_Output (self, other, "DIA_Bengar_MILIZ_10_07"); //Ты как раз вовремя пришел.
-	AI_Output (self, other, "DIA_Bengar_MILIZ_10_08"); //Они могут появиться в любую минуту.
+	AI_Output (self, other, "DIA_Bengar_MILIZ_10_06"); //Р­С‚Рё СѓР±Р»СЋРґРєРё Р·Р°СЏРІР»СЏСЋС‚СЃСЏ СЃСЋРґР° РєР°Р¶РґСѓСЋ РЅРµРґРµР»СЋ Рё СЃРѕР±РёСЂР°СЋС‚ РЅР°Р»РѕРіРё РІ РїРѕР»СЊР·Сѓ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Bengar_MILIZ_10_07"); //РўС‹ РєР°Рє СЂР°Р· РІРѕРІСЂРµРјСЏ РїСЂРёС€РµР».
+	AI_Output (self, other, "DIA_Bengar_MILIZ_10_08"); //РћРЅРё РјРѕРіСѓС‚ РїРѕСЏРІРёС‚СЊСЃСЏ РІ Р»СЋР±СѓСЋ РјРёРЅСѓС‚Сѓ.
 };
 
 // ************************************************************
-// 			  				Selber vorknцpfen
+// 			  				Selber vorknС†pfen
 // ************************************************************
 instance DIA_Bengar_Selber (C_INFO)
 {
@@ -404,7 +404,7 @@ instance DIA_Bengar_Selber (C_INFO)
 	condition	= DIA_Bengar_Selber_Condition;
 	information	= DIA_Bengar_Selber_Info;
 	permanent 	= FALSE;
-	description	= "Почему вы не можете справиться с ополчением сами?";
+	description	= "РџРѕС‡РµРјСѓ РІС‹ РЅРµ РјРѕР¶РµС‚Рµ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РѕРїРѕР»С‡РµРЅРёРµРј СЃР°РјРё?";
 };
 
 func int DIA_Bengar_Selber_Condition ()
@@ -419,8 +419,8 @@ func int DIA_Bengar_Selber_Condition ()
 
 func void DIA_Bengar_Selber_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_Selber_15_00"); //Вас тут так много. Почему вы не можете справиться с ополчением сами?
-	AI_Output (self, other, "DIA_Bengar_Selber_10_01"); //Да, нас много. Но мы не сможем противостоять хорошо обученным бойцам ополчения.
+	AI_Output (other, self, "DIA_Bengar_Selber_15_00"); //Р’Р°СЃ С‚СѓС‚ С‚Р°Рє РјРЅРѕРіРѕ. РџРѕС‡РµРјСѓ РІС‹ РЅРµ РјРѕР¶РµС‚Рµ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РѕРїРѕР»С‡РµРЅРёРµРј СЃР°РјРё?
+	AI_Output (self, other, "DIA_Bengar_Selber_10_01"); //Р”Р°, РЅР°СЃ РјРЅРѕРіРѕ. РќРѕ РјС‹ РЅРµ СЃРјРѕР¶РµРј РїСЂРѕС‚РёРІРѕСЃС‚РѕСЏС‚СЊ С…РѕСЂРѕС€Рѕ РѕР±СѓС‡РµРЅРЅС‹Рј Р±РѕР№С†Р°Рј РѕРїРѕР»С‡РµРЅРёСЏ.
 };		
 
 // ************************************************************
@@ -433,7 +433,7 @@ instance DIA_Bengar_MILIZKLATSCHEN		(C_INFO)
 	condition	= DIA_Bengar_MILIZKLATSCHEN_Condition;
 	information	= DIA_Bengar_MILIZKLATSCHEN_Info;
 	permanent	= FALSE;
-	description	= "Ну и где твое ополчение, я готов разобраться с ними!";
+	description	= "РќСѓ Рё РіРґРµ С‚РІРѕРµ РѕРїРѕР»С‡РµРЅРёРµ, СЏ РіРѕС‚РѕРІ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РЅРёРјРё!";
 };
 
 func int DIA_Bengar_MILIZKLATSCHEN_Condition ()
@@ -449,15 +449,15 @@ func int DIA_Bengar_MILIZKLATSCHEN_Condition ()
 
 func void DIA_Bengar_MILIZKLATSCHEN_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_MILIZKLATSCHEN_15_00"); //Ну и где твое ополчение, я готов разобраться с ними!
-	AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_01"); //Вон, они уже идут. Видишь, я же говорил тебе.
+	AI_Output (other, self, "DIA_Bengar_MILIZKLATSCHEN_15_00"); //РќСѓ Рё РіРґРµ С‚РІРѕРµ РѕРїРѕР»С‡РµРЅРёРµ, СЏ РіРѕС‚РѕРІ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ РЅРёРјРё!
+	AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_01"); //Р’РѕРЅ, РѕРЅРё СѓР¶Рµ РёРґСѓС‚. Р’РёРґРёС€СЊ, СЏ Р¶Рµ РіРѕРІРѕСЂРёР» С‚РµР±Рµ.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_02"); //Только не подведи!
+		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_02"); //РўРѕР»СЊРєРѕ РЅРµ РїРѕРґРІРµРґРё!
 	}
 	else //SLD oder DJG
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_03"); //Удачи тебе! Покажи им, где раки зимуют.
+		AI_Output (self, other, "DIA_Bengar_MILIZKLATSCHEN_10_03"); //РЈРґР°С‡Рё С‚РµР±Рµ! РџРѕРєР°Р¶Рё РёРј, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚.
 	};
 
 	AI_StopProcessInfos (self);
@@ -490,7 +490,7 @@ instance DIA_Bengar_MILIZWEG (C_INFO)
 	condition	= DIA_Bengar_MILIZWEG_Condition;
 	information	= DIA_Bengar_MILIZWEG_Info;
 	permanent	= TRUE;
-	description	= "Твои проблемы с ополчением уже в прошлом.";
+	description	= "РўРІРѕРё РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј СѓР¶Рµ РІ РїСЂРѕС€Р»РѕРј.";
 };
 
 func int DIA_Bengar_MILIZWEG_Condition ()
@@ -508,20 +508,20 @@ func int DIA_Bengar_MILIZWEG_Condition ()
 
 func void DIA_Bengar_MILIZWEG_Info ()
 {
-	AI_Output (other, self, "DIA_Bengar_MILIZWEG_15_00"); //Твои проблемы с ополчением уже в прошлом.
+	AI_Output (other, self, "DIA_Bengar_MILIZWEG_15_00"); //РўРІРѕРё РїСЂРѕР±Р»РµРјС‹ СЃ РѕРїРѕР»С‡РµРЅРёРµРј СѓР¶Рµ РІ РїСЂРѕС€Р»РѕРј.
 	if (Rumbold_Bezahlt == TRUE)
 	&& (Npc_IsDead (Rumbold) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_01"); //Ты с ума сошел? Да ты знаешь, что они сделают со мной, когда ты уйдешь?
-		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_02"); //Они все еще стоят вон там. Скажи им, чтобы они исчезли СОВСЕМ!
+		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_01"); //РўС‹ СЃ СѓРјР° СЃРѕС€РµР»? Р”Р° С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РѕРЅРё СЃРґРµР»Р°СЋС‚ СЃРѕ РјРЅРѕР№, РєРѕРіРґР° С‚С‹ СѓР№РґРµС€СЊ?
+		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_02"); //РћРЅРё РІСЃРµ РµС‰Рµ СЃС‚РѕСЏС‚ РІРѕРЅ С‚Р°Рј. РЎРєР°Р¶Рё РёРј, С‡С‚РѕР±С‹ РѕРЅРё РёСЃС‡РµР·Р»Рё РЎРћР’РЎР•Рњ!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_03"); //Неплохо. Может, хотя бы этот месяц я буду не в убытке. Спасибо.
+		AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_03"); //РќРµРїР»РѕС…Рѕ. РњРѕР¶РµС‚, С…РѕС‚СЏ Р±С‹ СЌС‚РѕС‚ РјРµСЃСЏС† СЏ Р±СѓРґСѓ РЅРµ РІ СѓР±С‹С‚РєРµ. РЎРїР°СЃРёР±Рѕ.
 
 		if (Rumbold_Bezahlt == TRUE)
 		{		
-			AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_04"); //Ты даже готов был заплатить за меня. Это очень благородно с твоей стороны.
+			AI_Output (self, other, "DIA_Bengar_MILIZWEG_10_04"); //РўС‹ РґР°Р¶Рµ РіРѕС‚РѕРІ Р±С‹Р» Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РјРµРЅСЏ. Р­С‚Рѕ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕСЂРѕРґРЅРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹.
 			B_GivePlayerXP (XP_Bengar_MILIZKLATSCHEN + 50);
 		}
 		else
@@ -544,7 +544,7 @@ instance DIA_Bengar_BALTHASAR		(C_INFO)
 	condition	 = 	DIA_Bengar_BALTHASAR_Condition;
 	information	 = 	DIA_Bengar_BALTHASAR_Info;
 
-	description	 = 	"Пастуху Бальтазару запрещено появляться на твоих пастбищах?";
+	description	 = 	"РџР°СЃС‚СѓС…Сѓ Р‘Р°Р»СЊС‚Р°Р·Р°СЂСѓ Р·Р°РїСЂРµС‰РµРЅРѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ РЅР° С‚РІРѕРёС… РїР°СЃС‚Р±РёС‰Р°С…?";
 };
 
 func int DIA_Bengar_BALTHASAR_Condition ()
@@ -560,10 +560,10 @@ func int DIA_Bengar_BALTHASAR_Condition ()
 
 func void DIA_Bengar_BALTHASAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_BALTHASAR_15_00"); //Пастуху Бальтазару запрещено появляться на твоих пастбищах?
-	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_01"); //Ох, да. Это долгая история. Я сказал ему, что Секоб должен платить деньги, если хочет пасти своих овец на моих пастбищах.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_02"); //По правде говоря, это всего лишь отговорка. Я просто на дух не переношу Бальтазара.
-	B_LogEntry (TOPIC_BalthasarsSchafe,"Чтобы убедить Бенгара позволить Бальтазару вернуться на его пастбища, я должен оказать ему услугу. Я уверен, что такая возможность обязательно подвернется."); 
+	AI_Output			(other, self, "DIA_Bengar_BALTHASAR_15_00"); //РџР°СЃС‚СѓС…Сѓ Р‘Р°Р»СЊС‚Р°Р·Р°СЂСѓ Р·Р°РїСЂРµС‰РµРЅРѕ РїРѕСЏРІР»СЏС‚СЊСЃСЏ РЅР° С‚РІРѕРёС… РїР°СЃС‚Р±РёС‰Р°С…?
+	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_01"); //РћС…, РґР°. Р­С‚Рѕ РґРѕР»РіР°СЏ РёСЃС‚РѕСЂРёСЏ. РЇ СЃРєР°Р·Р°Р» РµРјСѓ, С‡С‚Рѕ РЎРµРєРѕР± РґРѕР»Р¶РµРЅ РїР»Р°С‚РёС‚СЊ РґРµРЅСЊРіРё, РµСЃР»Рё С…РѕС‡РµС‚ РїР°СЃС‚Рё СЃРІРѕРёС… РѕРІРµС† РЅР° РјРѕРёС… РїР°СЃС‚Р±РёС‰Р°С….
+	AI_Output			(self, other, "DIA_Bengar_BALTHASAR_10_02"); //РџРѕ РїСЂР°РІРґРµ РіРѕРІРѕСЂСЏ, СЌС‚Рѕ РІСЃРµРіРѕ Р»РёС€СЊ РѕС‚РіРѕРІРѕСЂРєР°. РЇ РїСЂРѕСЃС‚Рѕ РЅР° РґСѓС… РЅРµ РїРµСЂРµРЅРѕС€Сѓ Р‘Р°Р»СЊС‚Р°Р·Р°СЂР°.
+	B_LogEntry (TOPIC_BalthasarsSchafe,"Р§С‚РѕР±С‹ СѓР±РµРґРёС‚СЊ Р‘РµРЅРіР°СЂР° РїРѕР·РІРѕР»РёС‚СЊ Р‘Р°Р»СЊС‚Р°Р·Р°СЂСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР° РµРіРѕ РїР°СЃС‚Р±РёС‰Р°, СЏ РґРѕР»Р¶РµРЅ РѕРєР°Р·Р°С‚СЊ РµРјСѓ СѓСЃР»СѓРіСѓ. РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚Р°РєР°СЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕРґРІРµСЂРЅРµС‚СЃСЏ."); 
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -577,7 +577,7 @@ instance DIA_Bengar_BALTHASARDARFAUFWEIDE		(C_INFO)
 	condition	 = 	DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition;
 	information	 = 	DIA_Bengar_BALTHASARDARFAUFWEIDE_Info;
 
-	description	 = 	"Ополчение ушло, и Бальтазар может опять использовать твои пастбища.";
+	description	 = 	"РћРїРѕР»С‡РµРЅРёРµ СѓС€Р»Рѕ, Рё Р‘Р°Р»СЊС‚Р°Р·Р°СЂ РјРѕР¶РµС‚ РѕРїСЏС‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РІРѕРё РїР°СЃС‚Р±РёС‰Р°.";
 };
 
 func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition ()
@@ -594,11 +594,11 @@ func int DIA_Bengar_BALTHASARDARFAUFWEIDE_Condition ()
 
 func void DIA_Bengar_BALTHASARDARFAUFWEIDE_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00"); //Ополчение ушло, и Бальтазар может опять использовать твои пастбища.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01"); //Почему?
-	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02"); //(угрожающе) Потому что я так сказал.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_03"); //Ммм. Хорошо, как скажешь.
-	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_04"); //только пусть он пасет своих овец где-нибудь за полем.
+	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_00"); //РћРїРѕР»С‡РµРЅРёРµ СѓС€Р»Рѕ, Рё Р‘Р°Р»СЊС‚Р°Р·Р°СЂ РјРѕР¶РµС‚ РѕРїСЏС‚СЊ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РІРѕРё РїР°СЃС‚Р±РёС‰Р°.
+	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_01"); //РџРѕС‡РµРјСѓ?
+	AI_Output			(other, self, "DIA_Bengar_BALTHASARDARFAUFWEIDE_15_02"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РџРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ С‚Р°Рє СЃРєР°Р·Р°Р».
+	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_03"); //РњРјРј. РҐРѕСЂРѕС€Рѕ, РєР°Рє СЃРєР°Р¶РµС€СЊ.
+	AI_Output			(self, other, "DIA_Bengar_BALTHASARDARFAUFWEIDE_10_04"); //С‚РѕР»СЊРєРѕ РїСѓСЃС‚СЊ РѕРЅ РїР°СЃРµС‚ СЃРІРѕРёС… РѕРІРµС† РіРґРµ-РЅРёР±СѓРґСЊ Р·Р° РїРѕР»РµРј.
 
 	MIS_Balthasar_BengarsWeide = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
@@ -616,7 +616,7 @@ instance DIA_Bengar_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Bengar_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Береги себя.";
+	description	 = 	"Р‘РµСЂРµРіРё СЃРµР±СЏ.";
 };
 
 func int DIA_Bengar_PERMKAP1_Condition ()
@@ -630,8 +630,8 @@ func int DIA_Bengar_PERMKAP1_Condition ()
 
 func void DIA_Bengar_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PERMKAP1_15_00"); //Береги себя.
-	AI_Output			(self, other, "DIA_Bengar_PERMKAP1_10_01"); //Ты тоже.
+	AI_Output			(other, self, "DIA_Bengar_PERMKAP1_15_00"); //Р‘РµСЂРµРіРё СЃРµР±СЏ.
+	AI_Output			(self, other, "DIA_Bengar_PERMKAP1_10_01"); //РўС‹ С‚РѕР¶Рµ.
 
 	AI_StopProcessInfos (self);
 };
@@ -681,7 +681,7 @@ instance DIA_Bengar_ALLEIN		(C_INFO)
 	condition	 = 	DIA_Bengar_ALLEIN_Condition;
 	information	 = 	DIA_Bengar_ALLEIN_Info;
 
-	description	 = 	"Как ситуация?";
+	description	 = 	"РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 
 func int DIA_Bengar_ALLEIN_Condition ()
@@ -694,28 +694,28 @@ func int DIA_Bengar_ALLEIN_Condition ()
 
 func void DIA_Bengar_ALLEIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_ALLEIN_15_00"); //Как дела?
+	AI_Output			(other, self, "DIA_Bengar_ALLEIN_15_00"); //РљР°Рє РґРµР»Р°?
 
 	if ((Malak_isAlive_Kap3 == TRUE) && ((Npc_GetDistToWP(Malak,"FARM3")<3000)== FALSE))
 	{
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_01"); //Малак ушел от меня и забрал с собой всех, кто работал на меня. Он сказал, что направляется в горы.
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_02"); //Он больше не мог находиться здесь.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_01"); //РњР°Р»Р°Рє СѓС€РµР» РѕС‚ РјРµРЅСЏ Рё Р·Р°Р±СЂР°Р» СЃ СЃРѕР±РѕР№ РІСЃРµС…, РєС‚Рѕ СЂР°Р±РѕС‚Р°Р» РЅР° РјРµРЅСЏ. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР°РїСЂР°РІР»СЏРµС‚СЃСЏ РІ РіРѕСЂС‹.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_02"); //РћРЅ Р±РѕР»СЊС€Рµ РЅРµ РјРѕРі РЅР°С…РѕРґРёС‚СЊСЃСЏ Р·РґРµСЃСЊ.
 	MIS_GetMalakBack 		= LOG_RUNNING; 
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_03"); //Времена настали суровые. Я даже не знаю, сколько я так смогу продержаться.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_03"); //Р’СЂРµРјРµРЅР° РЅР°СЃС‚Р°Р»Рё СЃСѓСЂРѕРІС‹Рµ. РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, СЃРєРѕР»СЊРєРѕ СЏ С‚Р°Рє СЃРјРѕРіСѓ РїСЂРѕРґРµСЂР¶Р°С‚СЊСЃСЏ.
 	};
 	
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_04"); //Новые орды монстров каждый день приходят через Проход. Скоро они всех нас сожрут.
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_05"); //Если бы только меня защищали хотя бы несколько наемников...
-	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_06"); //Один из них даже был готов работать на меня. Но он передумал, впрочем. Мне кажется, его звали 'Вольф'.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_04"); //РќРѕРІС‹Рµ РѕСЂРґС‹ РјРѕРЅСЃС‚СЂРѕРІ РєР°Р¶РґС‹Р№ РґРµРЅСЊ РїСЂРёС…РѕРґСЏС‚ С‡РµСЂРµР· РџСЂРѕС…РѕРґ. РЎРєРѕСЂРѕ РѕРЅРё РІСЃРµС… РЅР°СЃ СЃРѕР¶СЂСѓС‚.
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_05"); //Р•СЃР»Рё Р±С‹ С‚РѕР»СЊРєРѕ РјРµРЅСЏ Р·Р°С‰РёС‰Р°Р»Рё С…РѕС‚СЏ Р±С‹ РЅРµСЃРєРѕР»СЊРєРѕ РЅР°РµРјРЅРёРєРѕРІ...
+	AI_Output			(self, other, "DIA_Bengar_ALLEIN_10_06"); //РћРґРёРЅ РёР· РЅРёС… РґР°Р¶Рµ Р±С‹Р» РіРѕС‚РѕРІ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ. РќРѕ РѕРЅ РїРµСЂРµРґСѓРјР°Р», РІРїСЂРѕС‡РµРј. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РµРіРѕ Р·РІР°Р»Рё 'Р’РѕР»СЊС„'.
 	MIS_BengarsHelpingSLD 	= LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_BengarALLEIN, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BengarALLEIN, LOG_RUNNING);
-	B_LogEntry (TOPIC_BengarALLEIN,"Бенгар остался один на своей ферме. Малак ушел и увел с собой всех остальных. Бенгар думает, что они направились в горы."); 
-	B_LogEntry (TOPIC_BengarALLEIN,"Теперь его ферма абсолютно беззащитна. Ему нужна помощь. Он говорит что-то о наемнике, которого зовут Вольф. Может быть, я знаю этого парня?!"); 
+	B_LogEntry (TOPIC_BengarALLEIN,"Р‘РµРЅРіР°СЂ РѕСЃС‚Р°Р»СЃСЏ РѕРґРёРЅ РЅР° СЃРІРѕРµР№ С„РµСЂРјРµ. РњР°Р»Р°Рє СѓС€РµР» Рё СѓРІРµР» СЃ СЃРѕР±РѕР№ РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С…. Р‘РµРЅРіР°СЂ РґСѓРјР°РµС‚, С‡С‚Рѕ РѕРЅРё РЅР°РїСЂР°РІРёР»РёСЃСЊ РІ РіРѕСЂС‹."); 
+	B_LogEntry (TOPIC_BengarALLEIN,"РўРµРїРµСЂСЊ РµРіРѕ С„РµСЂРјР° Р°Р±СЃРѕР»СЋС‚РЅРѕ Р±РµР·Р·Р°С‰РёС‚РЅР°. Р•РјСѓ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ. РћРЅ РіРѕРІРѕСЂРёС‚ С‡С‚Рѕ-С‚Рѕ Рѕ РЅР°РµРјРЅРёРєРµ, РєРѕС‚РѕСЂРѕРіРѕ Р·РѕРІСѓС‚ Р’РѕР»СЊС„. РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ Р·РЅР°СЋ СЌС‚РѕРіРѕ РїР°СЂРЅСЏ?!"); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -728,7 +728,7 @@ instance DIA_Bengar_MALAKTOT		(C_INFO)
 	condition	 = 	DIA_Bengar_MALAKTOT_Condition;
 	information	 = 	DIA_Bengar_MALAKTOT_Info;
 
-	description	 = 	"Малак мертв.";
+	description	 = 	"РњР°Р»Р°Рє РјРµСЂС‚РІ.";
 };
 
 func int DIA_Bengar_MALAKTOT_Condition ()
@@ -742,8 +742,8 @@ func int DIA_Bengar_MALAKTOT_Condition ()
 
 func void DIA_Bengar_MALAKTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_MALAKTOT_15_00"); //Малак мертв.
-	AI_Output			(self, other, "DIA_Bengar_MALAKTOT_10_01"); //Теперь все станет еще хуже.
+	AI_Output			(other, self, "DIA_Bengar_MALAKTOT_15_00"); //РњР°Р»Р°Рє РјРµСЂС‚РІ.
+	AI_Output			(self, other, "DIA_Bengar_MALAKTOT_10_01"); //РўРµРїРµСЂСЊ РІСЃРµ СЃС‚Р°РЅРµС‚ РµС‰Рµ С…СѓР¶Рµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -756,7 +756,7 @@ instance DIA_Bengar_SLDDA		(C_INFO)
 	condition	 = 	DIA_Bengar_SLDDA_Condition;
 	information	 = 	DIA_Bengar_SLDDA_Info;
 
-	description	 = 	"Я нашел тебе наемника, как ты и хотел.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РµР±Рµ РЅР°РµРјРЅРёРєР°, РєР°Рє С‚С‹ Рё С…РѕС‚РµР».";
 };
 
 func int DIA_Bengar_SLDDA_Condition ()
@@ -771,9 +771,9 @@ func int DIA_Bengar_SLDDA_Condition ()
 
 func void DIA_Bengar_SLDDA_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_SLDDA_15_00"); //Я нашел тебе наемника, как ты и хотел.
-	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_01"); //У моей фермы еще никогда не было таких защитников. Надеюсь, он сможет помочь нам.
-	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_02"); //Вот, возьми. Я думаю, это тебе пригодится.
+	AI_Output			(other, self, "DIA_Bengar_SLDDA_15_00"); //РЇ РЅР°С€РµР» С‚РµР±Рµ РЅР°РµРјРЅРёРєР°, РєР°Рє С‚С‹ Рё С…РѕС‚РµР».
+	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_01"); //РЈ РјРѕРµР№ С„РµСЂРјС‹ РµС‰Рµ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р»Рѕ С‚Р°РєРёС… Р·Р°С‰РёС‚РЅРёРєРѕРІ. РќР°РґРµСЋСЃСЊ, РѕРЅ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РЅР°Рј.
+	AI_Output			(self, other, "DIA_Bengar_SLDDA_10_02"); //Р’РѕС‚, РІРѕР·СЊРјРё. РЇ РґСѓРјР°СЋ, СЌС‚Рѕ С‚РµР±Рµ РїСЂРёРіРѕРґРёС‚СЃСЏ.
 	CreateInvItems (self, ItMi_Gold, 400);									
 	B_GiveInvItems (self, other, ItMi_Gold, 400);
 	B_GivePlayerXP (XP_BengarsHelpingSLDArrived);
@@ -790,7 +790,7 @@ instance DIA_Bengar_MALAKWIEDERDA		(C_INFO)
 	condition	 = 	DIA_Bengar_MALAKWIEDERDA_Condition;
 	information	 = 	DIA_Bengar_MALAKWIEDERDA_Info;
 
-	description	 = 	"Малак вернулся.";
+	description	 = 	"РњР°Р»Р°Рє РІРµСЂРЅСѓР»СЃСЏ.";
 };
 
 func int DIA_Bengar_MALAKWIEDERDA_Condition ()
@@ -806,8 +806,8 @@ func int DIA_Bengar_MALAKWIEDERDA_Condition ()
 
 func void DIA_Bengar_MALAKWIEDERDA_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_MALAKWIEDERDA_15_00"); //Малак вернулся.
-	AI_Output			(self, other, "DIA_Bengar_MALAKWIEDERDA_10_01"); //Очень хорошо. А я уж боялся, что больше никогда не увижу его.
+	AI_Output			(other, self, "DIA_Bengar_MALAKWIEDERDA_15_00"); //РњР°Р»Р°Рє РІРµСЂРЅСѓР»СЃСЏ.
+	AI_Output			(self, other, "DIA_Bengar_MALAKWIEDERDA_10_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Рђ СЏ СѓР¶ Р±РѕСЏР»СЃСЏ, С‡С‚Рѕ Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ СѓРІРёР¶Сѓ РµРіРѕ.
 	B_GivePlayerXP (XP_GetMalakBack);
 };
 
@@ -822,7 +822,7 @@ instance DIA_Bengar_PERM		(C_INFO)
 	information	 = 	DIA_Bengar_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все будет хорошо.";
+	description	 = 	"Р’СЃРµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ.";
 };
 
 func int DIA_Bengar_PERM_Condition ()
@@ -836,28 +836,28 @@ func int DIA_Bengar_PERM_Condition ()
 
 func void DIA_Bengar_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Bengar_PERM_15_00"); //Все будет в порядке.
+	AI_Output			(other, self, "DIA_Bengar_PERM_15_00"); //Р’СЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.
 
 	if (Npc_GetDistToWP(Malak,"FARM3")<3000)
 	&& ((Npc_IsDead(Malak))==FALSE)
 	{
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_01"); //Малак опять здесь, но ситуация почти не изменилась.
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_02"); //Если только не произойдет чудо, всем нам скоро настанет конец.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_01"); //РњР°Р»Р°Рє РѕРїСЏС‚СЊ Р·РґРµСЃСЊ, РЅРѕ СЃРёС‚СѓР°С†РёСЏ РїРѕС‡С‚Рё РЅРµ РёР·РјРµРЅРёР»Р°СЃСЊ.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_02"); //Р•СЃР»Рё С‚РѕР»СЊРєРѕ РЅРµ РїСЂРѕРёР·РѕР№РґРµС‚ С‡СѓРґРѕ, РІСЃРµРј РЅР°Рј СЃРєРѕСЂРѕ РЅР°СЃС‚Р°РЅРµС‚ РєРѕРЅРµС†.
 	}
 	else if (Npc_KnowsInfo(other, DIA_Bengar_SLDDA))
 		&& ((Npc_IsDead(SLD_Wolf))==FALSE)
 		&& (Npc_GetDistToWP(SLD_Wolf,"FARM3")<3000)
 	{
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_03"); //Вольф странный парень, но я надеюсь, он все же сможет помочь нам.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_03"); //Р’РѕР»СЊС„ СЃС‚СЂР°РЅРЅС‹Р№ РїР°СЂРµРЅСЊ, РЅРѕ СЏ РЅР°РґРµСЋСЃСЊ, РѕРЅ РІСЃРµ Р¶Рµ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РЅР°Рј.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Bengar_PERM_10_04"); //Без Малака этой ферме скоро придет конец. Если ничего не переменится в ближайшее время, боюсь, мне придется бросить ее.
+		AI_Output			(self, other, "DIA_Bengar_PERM_10_04"); //Р‘РµР· РњР°Р»Р°РєР° СЌС‚РѕР№ С„РµСЂРјРµ СЃРєРѕСЂРѕ РїСЂРёРґРµС‚ РєРѕРЅРµС†. Р•СЃР»Рё РЅРёС‡РµРіРѕ РЅРµ РїРµСЂРµРјРµРЅРёС‚СЃСЏ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ, Р±РѕСЋСЃСЊ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р±СЂРѕСЃРёС‚СЊ РµРµ.
 
 		if (Malak_isAlive_Kap3 == TRUE)
 		&& ((Npc_IsDead(Malak))== FALSE)
 		{
-			AI_Output			(self, other, "DIA_Bengar_PERM_10_05"); //Надеюсь, он скоро вернется.
+			AI_Output			(self, other, "DIA_Bengar_PERM_10_05"); //РќР°РґРµСЋСЃСЊ, РѕРЅ СЃРєРѕСЂРѕ РІРµСЂРЅРµС‚СЃСЏ.
 		};
 	};
 	AI_StopProcessInfos (self);

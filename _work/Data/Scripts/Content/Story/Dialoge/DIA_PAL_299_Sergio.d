@@ -19,7 +19,7 @@ FUNC VOID DIA_Sergio_EXIT_Info()
 {
 	if (Npc_GetDistToWP (self,"NW_MONASTERY_CHAPELL_02") <= 1500)  // Nur wenn Sergio in der Kapelle ist M.F.  
 	{
-		AI_Output (self, other,"DIA_Sergio_EXIT_04_00");//Äà îñâåòèò Èííîñ òâîé ïóòü.
+		AI_Output (self, other,"DIA_Sergio_EXIT_04_00");//Ð”Ð° Ð¾ÑÐ²ÐµÑ‚Ð¸Ñ‚ Ð˜Ð½Ð½Ð¾Ñ Ñ‚Ð²Ð¾Ð¹ Ð¿ÑƒÑ‚ÑŒ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -47,7 +47,7 @@ func int DIA_Sergio_WELCOME_Condition ()
 };
 func void DIA_Sergio_WELCOME_Info ()
 {
-	AI_Output (self, other, "DIA_Sergio_WELCOME_04_00"); //Äà ïðåáóäåò ñ òîáîé Èííîñ, ÷åì ÿ ìîãó ïîìî÷ü òåáå?
+	AI_Output (self, other, "DIA_Sergio_WELCOME_04_00"); //Ð”Ð° Ð¿Ñ€ÐµÐ±ÑƒÐ´ÐµÑ‚ Ñ Ñ‚Ð¾Ð±Ð¾Ð¹ Ð˜Ð½Ð½Ð¾Ñ, Ñ‡ÐµÐ¼ Ñ Ð¼Ð¾Ð³Ñƒ Ð¿Ð¾Ð¼Ð¾Ñ‡ÑŒ Ñ‚ÐµÐ±Ðµ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Isgaroth
@@ -72,24 +72,24 @@ func int DIA_Sergio_Isgaroth_Condition ()
 };
 func void DIA_Sergio_Isgaroth_Info ()
 {
-	AI_Output (self, other, "DIA_Sergio_Isgaroth_04_00"); //Òû ìîëèëñÿ çà ìîèõ òîâàðèùåé. ß áëàãîäàðåí òåáå çà ýòî. Ñêàæè ìíå, ÷òî ÿ ìîãó ñäåëàòü äëÿ òåáÿ.
+	AI_Output (self, other, "DIA_Sergio_Isgaroth_04_00"); //Ð¢Ñ‹ Ð¼Ð¾Ð»Ð¸Ð»ÑÑ Ð·Ð° Ð¼Ð¾Ð¸Ñ… Ñ‚Ð¾Ð²Ð°Ñ€Ð¸Ñ‰ÐµÐ¹. Ð¯ Ð±Ð»Ð°Ð³Ð¾Ð´Ð°Ñ€ÐµÐ½ Ñ‚ÐµÐ±Ðµ Ð·Ð° ÑÑ‚Ð¾. Ð¡ÐºÐ°Ð¶Ð¸ Ð¼Ð½Ðµ, Ñ‡Ñ‚Ð¾ Ñ Ð¼Ð¾Ð³Ñƒ ÑÐ´ÐµÐ»Ð°Ñ‚ÑŒ Ð´Ð»Ñ Ñ‚ÐµÐ±Ñ.
 	
 	Info_ClearChoices (DIA_Sergio_Isgaroth);
-	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"Êàê íàñ÷åò íåáîëüøîãî ïîæåðòâîâàíèÿ?",DIA_Sergio_Isgaroth_Spende);
-	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"Òû íå ìîã áû ïîäåëèòüñÿ ñâîèì áîåâûì îïûòîì?",DIA_Sergio_Isgaroth_XP);
+	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"ÐšÐ°Ðº Ð½Ð°ÑÑ‡ÐµÑ‚ Ð½ÐµÐ±Ð¾Ð»ÑŒÑˆÐ¾Ð³Ð¾ Ð¿Ð¾Ð¶ÐµÑ€Ñ‚Ð²Ð¾Ð²Ð°Ð½Ð¸Ñ?",DIA_Sergio_Isgaroth_Spende);
+	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"Ð¢Ñ‹ Ð½Ðµ Ð¼Ð¾Ð³ Ð±Ñ‹ Ð¿Ð¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ ÑÐ²Ð¾Ð¸Ð¼ Ð±Ð¾ÐµÐ²Ñ‹Ð¼ Ð¾Ð¿Ñ‹Ñ‚Ð¾Ð¼?",DIA_Sergio_Isgaroth_XP);
 };	
 FUNC VOID DIA_Sergio_Isgaroth_Spende()
 {
-	AI_Output (other, self, "DIA_Sergio_Isgaroth_Spende_15_00"); //Êàê íàñ÷åò íåáîëüøîãî ïîæåðòâîâàíèÿ?
-	AI_Output (self, other, "DIA_Sergio_Isgaroth_Spende_04_01"); //Ïóñòü ýòî çîëîòî ñîñëóæèò òåáå äîáðóþ ñëóæáó.
+	AI_Output (other, self, "DIA_Sergio_Isgaroth_Spende_15_00"); //ÐšÐ°Ðº Ð½Ð°ÑÑ‡ÐµÑ‚ Ð½ÐµÐ±Ð¾Ð»ÑŒÑˆÐ¾Ð³Ð¾ Ð¿Ð¾Ð¶ÐµÑ€Ñ‚Ð²Ð¾Ð²Ð°Ð½Ð¸Ñ?
+	AI_Output (self, other, "DIA_Sergio_Isgaroth_Spende_04_01"); //ÐŸÑƒÑÑ‚ÑŒ ÑÑ‚Ð¾ Ð·Ð¾Ð»Ð¾Ñ‚Ð¾ ÑÐ¾ÑÐ»ÑƒÐ¶Ð¸Ñ‚ Ñ‚ÐµÐ±Ðµ Ð´Ð¾Ð±Ñ€ÑƒÑŽ ÑÐ»ÑƒÐ¶Ð±Ñƒ.
 	
 	B_GiveInvItems (self,other, ItMi_Gold,100);
 	Info_ClearChoices (DIA_Sergio_Isgaroth);
 };
 FUNC VOID DIA_Sergio_Isgaroth_XP()
 {
-	AI_Output (other, self, "DIA_Sergio_Isgaroth_XP_15_00"); //Òû íå ìîã áû ïîäåëèòüñÿ ñâîèì áîåâûì îïûòîì?
-	AI_Output (self, other, "DIA_Sergio_Isgaroth_XP_04_01"); //Êîãäà òû ñðàæàåøüñÿ, ïîñòàðàéñÿ, ÷òîáû íèêòî íå ìîã àòàêîâàòü òåáÿ ñçàäè.
+	AI_Output (other, self, "DIA_Sergio_Isgaroth_XP_15_00"); //Ð¢Ñ‹ Ð½Ðµ Ð¼Ð¾Ð³ Ð±Ñ‹ Ð¿Ð¾Ð´ÐµÐ»Ð¸Ñ‚ÑŒÑÑ ÑÐ²Ð¾Ð¸Ð¼ Ð±Ð¾ÐµÐ²Ñ‹Ð¼ Ð¾Ð¿Ñ‹Ñ‚Ð¾Ð¼?
+	AI_Output (self, other, "DIA_Sergio_Isgaroth_XP_04_01"); //ÐšÐ¾Ð³Ð´Ð° Ñ‚Ñ‹ ÑÑ€Ð°Ð¶Ð°ÐµÑˆÑŒÑÑ, Ð¿Ð¾ÑÑ‚Ð°Ñ€Ð°Ð¹ÑÑ, Ñ‡Ñ‚Ð¾Ð±Ñ‹ Ð½Ð¸ÐºÑ‚Ð¾ Ð½Ðµ Ð¼Ð¾Ð³ Ð°Ñ‚Ð°ÐºÐ¾Ð²Ð°Ñ‚ÑŒ Ñ‚ÐµÐ±Ñ ÑÐ·Ð°Ð´Ð¸.
 	
 	other.HitChance[NPC_TALENT_2H] = (other.HitChance[NPC_TALENT_2H] + 2);
 	PrintScreen	(PRINT_Learn2H, -1, -1, FONT_ScreenSmall, 2);
@@ -105,7 +105,7 @@ instance DIA_Sergio_Aufgabe		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Sergio_Aufgabe_Condition;
 	information	 = 	DIA_Sergio_Aufgabe_Info;
-	description	 = 	"Ìíå íóæåí äîñòóï â áèáëèîòåêó.";
+	description	 = 	"ÐœÐ½Ðµ Ð½ÑƒÐ¶ÐµÐ½ Ð´Ð¾ÑÑ‚ÑƒÐ¿ Ð² Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÑƒ.";
 };
 func int DIA_Sergio_Aufgabe_Condition ()
 {	
@@ -118,16 +118,16 @@ func int DIA_Sergio_Aufgabe_Condition ()
 };
 func void DIA_Sergio_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Aufgabe_15_00"); //Ìíå íóæåí äîñòóï â áèáëèîòåêó.
-	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_01"); //Íó, ÿ íå ìîãó îáåñïå÷èòü òåáå äîñòóï. Äëÿ ýòîãî òû äîëæåí ñíà÷àëà âûïîëíèòü ñâîè çàäàíèÿ.
-	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_02"); //Íî ÿ ìîãó ïîìî÷ü òåáå. Èäè ê Ìàñòåðó Èñãàðîòó è ïîãîâîðè ñ íèì. ß ñëûøàë, åìó íóæíà ïîìîùü è ñîáèðàëñÿ ñàì ïîìî÷ü åìó, íî ÿ ïîðó÷àþ ýòó çàäà÷ó òåáå.
+	AI_Output (other, self, "DIA_Sergio_Aufgabe_15_00"); //ÐœÐ½Ðµ Ð½ÑƒÐ¶ÐµÐ½ Ð´Ð¾ÑÑ‚ÑƒÐ¿ Ð² Ð±Ð¸Ð±Ð»Ð¸Ð¾Ñ‚ÐµÐºÑƒ.
+	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_01"); //ÐÑƒ, Ñ Ð½Ðµ Ð¼Ð¾Ð³Ñƒ Ð¾Ð±ÐµÑÐ¿ÐµÑ‡Ð¸Ñ‚ÑŒ Ñ‚ÐµÐ±Ðµ Ð´Ð¾ÑÑ‚ÑƒÐ¿. Ð”Ð»Ñ ÑÑ‚Ð¾Ð³Ð¾ Ñ‚Ñ‹ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ½Ð°Ñ‡Ð°Ð»Ð° Ð²Ñ‹Ð¿Ð¾Ð»Ð½Ð¸Ñ‚ÑŒ ÑÐ²Ð¾Ð¸ Ð·Ð°Ð´Ð°Ð½Ð¸Ñ.
+	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_02"); //ÐÐ¾ Ñ Ð¼Ð¾Ð³Ñƒ Ð¿Ð¾Ð¼Ð¾Ñ‡ÑŒ Ñ‚ÐµÐ±Ðµ. Ð˜Ð´Ð¸ Ðº ÐœÐ°ÑÑ‚ÐµÑ€Ñƒ Ð˜ÑÐ³Ð°Ñ€Ð¾Ñ‚Ñƒ Ð¸ Ð¿Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð¸ Ñ Ð½Ð¸Ð¼. Ð¯ ÑÐ»Ñ‹ÑˆÐ°Ð», ÐµÐ¼Ñƒ Ð½ÑƒÐ¶Ð½Ð° Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒ Ð¸ ÑÐ¾Ð±Ð¸Ñ€Ð°Ð»ÑÑ ÑÐ°Ð¼ Ð¿Ð¾Ð¼Ð¾Ñ‡ÑŒ ÐµÐ¼Ñƒ, Ð½Ð¾ Ñ Ð¿Ð¾Ñ€ÑƒÑ‡Ð°ÑŽ ÑÑ‚Ñƒ Ð·Ð°Ð´Ð°Ñ‡Ñƒ Ñ‚ÐµÐ±Ðµ.
 	
 	Sergio_Sends = TRUE;
 	Wld_InsertNpc (BlackWolf,"NW_PATH_TO_MONASTER_AREA_01"); //ist richtig geschrieben! 
 	
 	Log_CreateTopic (Topic_IsgarothWolf,LOG_MISSION);
 	Log_SetTopicStatus	 (Topic_IsgarothWolf,LOG_RUNNING);
-	B_LogEntry (Topic_IsgarothWolf,"Ìàñòåðó Èñãàðîòó íåîáõîäèìà ïîìîùü â ÷àñîâíå. ß äîëæåí íàéòè åãî.");
+	B_LogEntry (Topic_IsgarothWolf,"ÐœÐ°ÑÑ‚ÐµÑ€Ñƒ Ð˜ÑÐ³Ð°Ñ€Ð¾Ñ‚Ñƒ Ð½ÐµÐ¾Ð±Ñ…Ð¾Ð´Ð¸Ð¼Ð° Ð¿Ð¾Ð¼Ð¾Ñ‰ÑŒ Ð² Ñ‡Ð°ÑÐ¾Ð²Ð½Ðµ. Ð¯ Ð´Ð¾Ð»Ð¶ÐµÐ½ Ð½Ð°Ð¹Ñ‚Ð¸ ÐµÐ³Ð¾.");
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -139,7 +139,7 @@ instance DIA_Sergio_WHAT		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Sergio_WHAT_Condition;
 	information	 = 	DIA_Sergio_WHAT_Info;
-	description	 = 	"×òî òû äåëàåøü çäåñü?";
+	description	 = 	"Ð§Ñ‚Ð¾ Ñ‚Ñ‹ Ð´ÐµÐ»Ð°ÐµÑˆÑŒ Ð·Ð´ÐµÑÑŒ?";
 };
 func int DIA_Sergio_WHAT_Condition ()
 {	
@@ -151,11 +151,11 @@ func int DIA_Sergio_WHAT_Condition ()
 };
 func void DIA_Sergio_WHAT_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_WHAT_15_00"); //×òî òû äåëàåøü çäåñü?
-	AI_Output (self, other, "DIA_Sergio_WHAT_04_01"); //ß ìîëþñü Èííîñó, ÷òîáû  îí óêðåïèë ìîþ ðóêó è ìîþ âîëþ.
-	AI_Output (self, other, "DIA_Sergio_WHAT_04_02"); //Òîãäà ÿ áóäó ãîòîâ ê ëþáûì îïàñíîñòÿì è óíè÷òîæó âñåõ åãî âðàãîâ ñ åãî èìåíåì íà óñòàõ.
-	AI_Output (other, self, "DIA_Sergio_WHAT_15_03"); //Êàêèõ âðàãîâ?
-	AI_Output (self, other, "DIA_Sergio_WHAT_04_04"); //Âñåõ òåõ, êòî ïðîòèâèòñÿ âîëå Èííîñà. Íå âàæíî, ÷åëîâåê ýòî èëè âûçâàííîå ñóùåñòâî.
+	AI_Output (other, self, "DIA_Sergio_WHAT_15_00"); //Ð§Ñ‚Ð¾ Ñ‚Ñ‹ Ð´ÐµÐ»Ð°ÐµÑˆÑŒ Ð·Ð´ÐµÑÑŒ?
+	AI_Output (self, other, "DIA_Sergio_WHAT_04_01"); //Ð¯ Ð¼Ð¾Ð»ÑŽÑÑŒ Ð˜Ð½Ð½Ð¾ÑÑƒ, Ñ‡Ñ‚Ð¾Ð±Ñ‹  Ð¾Ð½ ÑƒÐºÑ€ÐµÐ¿Ð¸Ð» Ð¼Ð¾ÑŽ Ñ€ÑƒÐºÑƒ Ð¸ Ð¼Ð¾ÑŽ Ð²Ð¾Ð»ÑŽ.
+	AI_Output (self, other, "DIA_Sergio_WHAT_04_02"); //Ð¢Ð¾Ð³Ð´Ð° Ñ Ð±ÑƒÐ´Ñƒ Ð³Ð¾Ñ‚Ð¾Ð² Ðº Ð»ÑŽÐ±Ñ‹Ð¼ Ð¾Ð¿Ð°ÑÐ½Ð¾ÑÑ‚ÑÐ¼ Ð¸ ÑƒÐ½Ð¸Ñ‡Ñ‚Ð¾Ð¶Ñƒ Ð²ÑÐµÑ… ÐµÐ³Ð¾ Ð²Ñ€Ð°Ð³Ð¾Ð² Ñ ÐµÐ³Ð¾ Ð¸Ð¼ÐµÐ½ÐµÐ¼ Ð½Ð° ÑƒÑÑ‚Ð°Ñ….
+	AI_Output (other, self, "DIA_Sergio_WHAT_15_03"); //ÐšÐ°ÐºÐ¸Ñ… Ð²Ñ€Ð°Ð³Ð¾Ð²?
+	AI_Output (self, other, "DIA_Sergio_WHAT_04_04"); //Ð’ÑÐµÑ… Ñ‚ÐµÑ…, ÐºÑ‚Ð¾ Ð¿Ñ€Ð¾Ñ‚Ð¸Ð²Ð¸Ñ‚ÑÑ Ð²Ð¾Ð»Ðµ Ð˜Ð½Ð½Ð¾ÑÐ°. ÐÐµ Ð²Ð°Ð¶Ð½Ð¾, Ñ‡ÐµÐ»Ð¾Ð²ÐµÐº ÑÑ‚Ð¾ Ð¸Ð»Ð¸ Ð²Ñ‹Ð·Ð²Ð°Ð½Ð½Ð¾Ðµ ÑÑƒÑ‰ÐµÑÑ‚Ð²Ð¾.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Babo
@@ -166,7 +166,7 @@ instance DIA_Sergio_Babo		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Sergio_Babo_Condition;
 	information	 = 	DIA_Sergio_Babo_Info;
-	description	 = 	"Íå ìîã áû òû íåìíîãî ïîòðåíèðîâàòü Áàáî?";
+	description	 = 	"ÐÐµ Ð¼Ð¾Ð³ Ð±Ñ‹ Ñ‚Ñ‹ Ð½ÐµÐ¼Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð‘Ð°Ð±Ð¾?";
 };
 func int DIA_Sergio_Babo_Condition ()
 {	
@@ -179,15 +179,15 @@ func int DIA_Sergio_Babo_Condition ()
 };
 func void DIA_Sergio_Babo_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Babo_15_00"); //Íå ìîã áû òû íåìíîãî ïîòðåíèðîâàòü Áàáî?
-	AI_Output (self, other, "DIA_Sergio_Babo_04_01"); //À ïî÷åìó îí íå ïîïðîñèò ñàì?
-	AI_Output (other, self, "DIA_Sergio_Babo_15_02"); //ß äóìàþ, îí ðîáååò.
-	AI_Output (self, other, "DIA_Sergio_Babo_04_03"); //Ïîíèìàþ. Õîðîøî, åñëè ýòî òàê ìíîãî çíà÷èò äëÿ íåãî, ÿ áóäó òðåíèðîâàòü åãî êàæäîå óòðî â òå÷åíèå äâóõ ÷àñîâ. Ìû áóäåì íà÷èíàòü â 5 óòðà. Ìîæåøü ïåðåäàòü åìó ýòî.
+	AI_Output (other, self, "DIA_Sergio_Babo_15_00"); //ÐÐµ Ð¼Ð¾Ð³ Ð±Ñ‹ Ñ‚Ñ‹ Ð½ÐµÐ¼Ð½Ð¾Ð³Ð¾ Ð¿Ð¾Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ Ð‘Ð°Ð±Ð¾?
+	AI_Output (self, other, "DIA_Sergio_Babo_04_01"); //Ð Ð¿Ð¾Ñ‡ÐµÐ¼Ñƒ Ð¾Ð½ Ð½Ðµ Ð¿Ð¾Ð¿Ñ€Ð¾ÑÐ¸Ñ‚ ÑÐ°Ð¼?
+	AI_Output (other, self, "DIA_Sergio_Babo_15_02"); //Ð¯ Ð´ÑƒÐ¼Ð°ÑŽ, Ð¾Ð½ Ñ€Ð¾Ð±ÐµÐµÑ‚.
+	AI_Output (self, other, "DIA_Sergio_Babo_04_03"); //ÐŸÐ¾Ð½Ð¸Ð¼Ð°ÑŽ. Ð¥Ð¾Ñ€Ð¾ÑˆÐ¾, ÐµÑÐ»Ð¸ ÑÑ‚Ð¾ Ñ‚Ð°Ðº Ð¼Ð½Ð¾Ð³Ð¾ Ð·Ð½Ð°Ñ‡Ð¸Ñ‚ Ð´Ð»Ñ Ð½ÐµÐ³Ð¾, Ñ Ð±ÑƒÐ´Ñƒ Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒ ÐµÐ³Ð¾ ÐºÐ°Ð¶Ð´Ð¾Ðµ ÑƒÑ‚Ñ€Ð¾ Ð² Ñ‚ÐµÑ‡ÐµÐ½Ð¸Ðµ Ð´Ð²ÑƒÑ… Ñ‡Ð°ÑÐ¾Ð². ÐœÑ‹ Ð±ÑƒÐ´ÐµÐ¼ Ð½Ð°Ñ‡Ð¸Ð½Ð°Ñ‚ÑŒ Ð² 5 ÑƒÑ‚Ñ€Ð°. ÐœÐ¾Ð¶ÐµÑˆÑŒ Ð¿ÐµÑ€ÐµÐ´Ð°Ñ‚ÑŒ ÐµÐ¼Ñƒ ÑÑ‚Ð¾.
 	
 	Npc_ExchangeRoutine (self, "TRAIN");
 	B_StartOtherRoutine (Babo,"TRAIN");
 
-	B_LogEntry (Topic_BaboTrain, "Ñåðæèî ñîãëàñèëñÿ òðåíèðîâàòüñÿ ñ Áàáî ïî äâà ÷àñà êàæäîå óòðî."); 
+	B_LogEntry (Topic_BaboTrain, "Ð¡ÐµÑ€Ð¶Ð¸Ð¾ ÑÐ¾Ð³Ð»Ð°ÑÐ¸Ð»ÑÑ Ñ‚Ñ€ÐµÐ½Ð¸Ñ€Ð¾Ð²Ð°Ñ‚ÑŒÑÑ Ñ Ð‘Ð°Ð±Ð¾ Ð¿Ð¾ Ð´Ð²Ð° Ñ‡Ð°ÑÐ° ÐºÐ°Ð¶Ð´Ð¾Ðµ ÑƒÑ‚Ñ€Ð¾."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WHY
@@ -198,7 +198,7 @@ instance DIA_Sergio_WHY		(C_INFO)
 	nr			 =  4;
 	condition	 = 	DIA_Sergio_WHY_Condition;
 	information	 = 	DIA_Sergio_WHY_Info;
-	description	 = 	"Ïî÷åìó òû íå ñ äðóãèìè ïàëàäèíàìè?";
+	description	 = 	"ÐŸÐ¾Ñ‡ÐµÐ¼Ñƒ Ñ‚Ñ‹ Ð½Ðµ Ñ Ð´Ñ€ÑƒÐ³Ð¸Ð¼Ð¸ Ð¿Ð°Ð»Ð°Ð´Ð¸Ð½Ð°Ð¼Ð¸?";
 };
 func int DIA_Sergio_WHY_Condition ()
 {	
@@ -210,9 +210,9 @@ func int DIA_Sergio_WHY_Condition ()
 };
 func void DIA_Sergio_WHY_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_WHY_15_00"); //Ïî÷åìó òû íå ñ äðóãèìè ïàëàäèíàìè?
-	AI_Output (self, other, "DIA_Sergio_WHY_04_01"); //Ìîæåò ïîêàçàòüñÿ íåìíîãî ñòðàííûì, ÷òî ÿ çäåñü, îäíàêî íå íàäî çàáûâàòü, ÷òî ìû, ïàëàäèíû, òàêæå ñëóæèì ìàãàì, òàê êàê îíè ïðîïîâåäóþò âîëþ Èííîñà.
-	AI_Output (self, other, "DIA_Sergio_WHY_04_02"); //Ìû, ïàëàäèíû, - âîèíû Èííîñà. Åãî âîëÿ - çàêîí äëÿ íàñ. Â íàñòîÿùèé ìîìåíò ÿ æäó íîâûõ ïðèêàçîâ îò ìàãîâ.
+	AI_Output (other, self, "DIA_Sergio_WHY_15_00"); //ÐŸÐ¾Ñ‡ÐµÐ¼Ñƒ Ñ‚Ñ‹ Ð½Ðµ Ñ Ð´Ñ€ÑƒÐ³Ð¸Ð¼Ð¸ Ð¿Ð°Ð»Ð°Ð´Ð¸Ð½Ð°Ð¼Ð¸?
+	AI_Output (self, other, "DIA_Sergio_WHY_04_01"); //ÐœÐ¾Ð¶ÐµÑ‚ Ð¿Ð¾ÐºÐ°Ð·Ð°Ñ‚ÑŒÑÑ Ð½ÐµÐ¼Ð½Ð¾Ð³Ð¾ ÑÑ‚Ñ€Ð°Ð½Ð½Ñ‹Ð¼, Ñ‡Ñ‚Ð¾ Ñ Ð·Ð´ÐµÑÑŒ, Ð¾Ð´Ð½Ð°ÐºÐ¾ Ð½Ðµ Ð½Ð°Ð´Ð¾ Ð·Ð°Ð±Ñ‹Ð²Ð°Ñ‚ÑŒ, Ñ‡Ñ‚Ð¾ Ð¼Ñ‹, Ð¿Ð°Ð»Ð°Ð´Ð¸Ð½Ñ‹, Ñ‚Ð°ÐºÐ¶Ðµ ÑÐ»ÑƒÐ¶Ð¸Ð¼ Ð¼Ð°Ð³Ð°Ð¼, Ñ‚Ð°Ðº ÐºÐ°Ðº Ð¾Ð½Ð¸ Ð¿Ñ€Ð¾Ð¿Ð¾Ð²ÐµÐ´ÑƒÑŽÑ‚ Ð²Ð¾Ð»ÑŽ Ð˜Ð½Ð½Ð¾ÑÐ°.
+	AI_Output (self, other, "DIA_Sergio_WHY_04_02"); //ÐœÑ‹, Ð¿Ð°Ð»Ð°Ð´Ð¸Ð½Ñ‹, - Ð²Ð¾Ð¸Ð½Ñ‹ Ð˜Ð½Ð½Ð¾ÑÐ°. Ð•Ð³Ð¾ Ð²Ð¾Ð»Ñ - Ð·Ð°ÐºÐ¾Ð½ Ð´Ð»Ñ Ð½Ð°Ñ. Ð’ Ð½Ð°ÑÑ‚Ð¾ÑÑ‰Ð¸Ð¹ Ð¼Ð¾Ð¼ÐµÐ½Ñ‚ Ñ Ð¶Ð´Ñƒ Ð½Ð¾Ð²Ñ‹Ñ… Ð¿Ñ€Ð¸ÐºÐ°Ð·Ð¾Ð² Ð¾Ñ‚ Ð¼Ð°Ð³Ð¾Ð².
 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -225,7 +225,7 @@ instance DIA_Sergio_ORDERS		(C_INFO)
 	condition	 = 	DIA_Sergio_ORDERS_Condition;
 	information	 = 	DIA_Sergio_ORDERS_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Òû óæå ïîëó÷èë íîâûå ïðèêàçû?";
+	description	 = 	"Ð¢Ñ‹ ÑƒÐ¶Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ð» Ð½Ð¾Ð²Ñ‹Ðµ Ð¿Ñ€Ð¸ÐºÐ°Ð·Ñ‹?";
 };
 func int DIA_Sergio_ORDERS_Condition ()
 {	
@@ -238,8 +238,8 @@ func int DIA_Sergio_ORDERS_Condition ()
 };
 func void DIA_Sergio_ORDERS_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_ORDERS_15_00"); //Òû óæå ïîëó÷èë íîâûå ïðèêàçû?
-	AI_Output (self, other, "DIA_Sergio_ORDERS_04_01"); //Ïîêà íåò, è ó ìåíÿ åñòü âðåìÿ íàéòè ñèëó â ìîëèòâàõ.
+	AI_Output (other, self, "DIA_Sergio_ORDERS_15_00"); //Ð¢Ñ‹ ÑƒÐ¶Ðµ Ð¿Ð¾Ð»ÑƒÑ‡Ð¸Ð» Ð½Ð¾Ð²Ñ‹Ðµ Ð¿Ñ€Ð¸ÐºÐ°Ð·Ñ‹?
+	AI_Output (self, other, "DIA_Sergio_ORDERS_04_01"); //ÐŸÐ¾ÐºÐ° Ð½ÐµÑ‚, Ð¸ Ñƒ Ð¼ÐµÐ½Ñ ÐµÑÑ‚ÑŒ Ð²Ñ€ÐµÐ¼Ñ Ð½Ð°Ð¹Ñ‚Ð¸ ÑÐ¸Ð»Ñƒ Ð² Ð¼Ð¾Ð»Ð¸Ñ‚Ð²Ð°Ñ….
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Guide Start
@@ -251,7 +251,7 @@ instance DIA_Sergio_Start		(C_INFO)
 	condition	 = 	DIA_Sergio_Start_Condition;
 	information	 = 	DIA_Sergio_Start_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Òû äîëæåí ñîïðîâîæäàòü ìåíÿ ê Ïðîõîäó.";
+	description	 = 	"Ð¢Ñ‹ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´Ð°Ñ‚ÑŒ Ð¼ÐµÐ½Ñ Ðº ÐŸÑ€Ð¾Ñ…Ð¾Ð´Ñƒ.";
 };
 func int DIA_Sergio_Start_Condition ()
 {	
@@ -264,8 +264,8 @@ func int DIA_Sergio_Start_Condition ()
 };
 func void DIA_Sergio_Start_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Start_15_00"); //Òû äîëæåí ñîïðîâîæäàòü ìåíÿ ê Ïðîõîäó.
-	AI_Output (self, other, "DIA_Sergio_Start_04_01"); //Õîðîøî, ÿ ñäåëàþ ýòî. ß çíàþ äîðîãó, èäè çà ìíîé.
+	AI_Output (other, self, "DIA_Sergio_Start_15_00"); //Ð¢Ñ‹ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð¶Ð´Ð°Ñ‚ÑŒ Ð¼ÐµÐ½Ñ Ðº ÐŸÑ€Ð¾Ñ…Ð¾Ð´Ñƒ.
+	AI_Output (self, other, "DIA_Sergio_Start_04_01"); //Ð¥Ð¾Ñ€Ð¾ÑˆÐ¾, Ñ ÑÐ´ÐµÐ»Ð°ÑŽ ÑÑ‚Ð¾. Ð¯ Ð·Ð½Ð°ÑŽ Ð´Ð¾Ñ€Ð¾Ð³Ñƒ, Ð¸Ð´Ð¸ Ð·Ð° Ð¼Ð½Ð¾Ð¹.
 	
 	AI_StopProcessInfos (self);
 	
@@ -283,7 +283,7 @@ instance DIA_Sergio_Guide		(C_INFO)
 	condition	 = 	DIA_Sergio_Guide_Condition;
 	information	 = 	DIA_Sergio_Guide_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Êàê äåëà?";
+	description	 = 	"ÐšÐ°Ðº Ð´ÐµÐ»Ð°?";
 };
 func int DIA_Sergio_Guide_Condition ()
 {	
@@ -295,9 +295,9 @@ func int DIA_Sergio_Guide_Condition ()
 };
 func void DIA_Sergio_Guide_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Guide_15_00"); //Êàê äåëà?
-	AI_Output (self, other, "DIA_Sergio_Guide_04_01"); //ß äîëæåí ñîïðîâîäèòü òåáÿ ê Ïðîõîäó. Íî ñàìàÿ îïàñíàÿ ÷àñòü ïóòåøåñòâèÿ òîëüêî íà÷èíàåòñÿ òàì.
-	AI_Output (self, other, "DIA_Sergio_Guide_04_02"); //Íî íå áóäåì òåðÿòü âðåìåíè.
+	AI_Output (other, self, "DIA_Sergio_Guide_15_00"); //ÐšÐ°Ðº Ð´ÐµÐ»Ð°?
+	AI_Output (self, other, "DIA_Sergio_Guide_04_01"); //Ð¯ Ð´Ð¾Ð»Ð¶ÐµÐ½ ÑÐ¾Ð¿Ñ€Ð¾Ð²Ð¾Ð´Ð¸Ñ‚ÑŒ Ñ‚ÐµÐ±Ñ Ðº ÐŸÑ€Ð¾Ñ…Ð¾Ð´Ñƒ. ÐÐ¾ ÑÐ°Ð¼Ð°Ñ Ð¾Ð¿Ð°ÑÐ½Ð°Ñ Ñ‡Ð°ÑÑ‚ÑŒ Ð¿ÑƒÑ‚ÐµÑˆÐµÑÑ‚Ð²Ð¸Ñ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð½Ð°Ñ‡Ð¸Ð½Ð°ÐµÑ‚ÑÑ Ñ‚Ð°Ð¼.
+	AI_Output (self, other, "DIA_Sergio_Guide_04_02"); //ÐÐ¾ Ð½Ðµ Ð±ÑƒÐ´ÐµÐ¼ Ñ‚ÐµÑ€ÑÑ‚ÑŒ Ð²Ñ€ÐµÐ¼ÐµÐ½Ð¸.
 	
 	AI_StopProcessInfos (self);
 	
@@ -324,9 +324,9 @@ func int DIA_Sergio_Ende_Condition ()
 };
 func void DIA_Sergio_Ende_Info ()
 {
-	AI_Output (self, other, "DIA_Sergio_Ende_04_00"); //Ìû ïðèøëè. ×òî áû íè æäàëî òåáÿ â Äîëèíå Ðóäíèêîâ, ÿ íàäåþñü, ÷òî òû íàéäåøü äîðîãó íàçàä.
-	AI_Output (other, self, "DIA_Sergio_Ende_15_01"); //Íå áîéñÿ - ÿ âåðíóñü.
-	AI_Output (self, other, "DIA_Sergio_Ende_04_02"); //Èäè ñ Èííîñîì. Äà íå îñòàâèò îí òåáÿ áåç çàùèòû.
+	AI_Output (self, other, "DIA_Sergio_Ende_04_00"); //ÐœÑ‹ Ð¿Ñ€Ð¸ÑˆÐ»Ð¸. Ð§Ñ‚Ð¾ Ð±Ñ‹ Ð½Ð¸ Ð¶Ð´Ð°Ð»Ð¾ Ñ‚ÐµÐ±Ñ Ð² Ð”Ð¾Ð»Ð¸Ð½Ðµ Ð ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð², Ñ Ð½Ð°Ð´ÐµÑŽÑÑŒ, Ñ‡Ñ‚Ð¾ Ñ‚Ñ‹ Ð½Ð°Ð¹Ð´ÐµÑˆÑŒ Ð´Ð¾Ñ€Ð¾Ð³Ñƒ Ð½Ð°Ð·Ð°Ð´.
+	AI_Output (other, self, "DIA_Sergio_Ende_15_01"); //ÐÐµ Ð±Ð¾Ð¹ÑÑ - Ñ Ð²ÐµÑ€Ð½ÑƒÑÑŒ.
+	AI_Output (self, other, "DIA_Sergio_Ende_04_02"); //Ð˜Ð´Ð¸ Ñ Ð˜Ð½Ð½Ð¾ÑÐ¾Ð¼. Ð”Ð° Ð½Ðµ Ð¾ÑÑ‚Ð°Ð²Ð¸Ñ‚ Ð¾Ð½ Ñ‚ÐµÐ±Ñ Ð±ÐµÐ· Ð·Ð°Ñ‰Ð¸Ñ‚Ñ‹.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE; 
 	AI_StopProcessInfos (self);
@@ -356,11 +356,11 @@ func void DIA_Sergio_Perm_Info ()
 {
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Sergio_Perm_04_00"); //Õâàëà Èííîñó, áðàò. Åñëè òû ïðèøåë óçíàòü ÷òî-íèáóäü îá Îñâÿùåíèè Ìå÷à, ïîãîâîðè ñ Ìàðäóêîì.
+		AI_Output (self, other, "DIA_Sergio_Perm_04_00"); //Ð¥Ð²Ð°Ð»Ð° Ð˜Ð½Ð½Ð¾ÑÑƒ, Ð±Ñ€Ð°Ñ‚. Ð•ÑÐ»Ð¸ Ñ‚Ñ‹ Ð¿Ñ€Ð¸ÑˆÐµÐ» ÑƒÐ·Ð½Ð°Ñ‚ÑŒ Ñ‡Ñ‚Ð¾-Ð½Ð¸Ð±ÑƒÐ´ÑŒ Ð¾Ð± ÐžÑÐ²ÑÑ‰ÐµÐ½Ð¸Ð¸ ÐœÐµÑ‡Ð°, Ð¿Ð¾Ð³Ð¾Ð²Ð¾Ñ€Ð¸ Ñ ÐœÐ°Ñ€Ð´ÑƒÐºÐ¾Ð¼.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sergio_Perm_04_01"); //ß ñëûøàë î òåáå. Òû ïàðåíü ñ ôåðìû, êîòîðûé áûë â Äîëèíå Ðóäíèêîâ. Ìîå ïî÷òåíèå.
+		AI_Output (self, other, "DIA_Sergio_Perm_04_01"); //Ð¯ ÑÐ»Ñ‹ÑˆÐ°Ð» Ð¾ Ñ‚ÐµÐ±Ðµ. Ð¢Ñ‹ Ð¿Ð°Ñ€ÐµÐ½ÑŒ Ñ Ñ„ÐµÑ€Ð¼Ñ‹, ÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ð¹ Ð±Ñ‹Ð» Ð² Ð”Ð¾Ð»Ð¸Ð½Ðµ Ð ÑƒÐ´Ð½Ð¸ÐºÐ¾Ð². ÐœÐ¾Ðµ Ð¿Ð¾Ñ‡Ñ‚ÐµÐ½Ð¸Ðµ.
 	};
 	AI_StopProcessInfos (self);
 	

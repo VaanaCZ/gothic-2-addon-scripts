@@ -44,17 +44,17 @@ FUNC INT DIA_Addon_Telbor_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Telbor_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_00");//Эй, я в порядке.
+	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_00");//Р­Р№, СЏ РІ РїРѕСЂСЏРґРєРµ.
 	
 	if (Sklaven_Flucht == FALSE)
 	{
 		if (Pardos_Geheilt == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//А вот Пардос совсем неважно выглядит.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Рђ РІРѕС‚ РџР°СЂРґРѕСЃ СЃРѕРІСЃРµРј РЅРµРІР°Р¶РЅРѕ РІС‹РіР»СЏРґРёС‚.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_02");//Спасибо за то, что помог Пардосу.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_02");//РЎРїР°СЃРёР±Рѕ Р·Р° С‚Рѕ, С‡С‚Рѕ РїРѕРјРѕРі РџР°СЂРґРѕСЃСѓ.
 			
 			if Telbor_once == FALSE
 			{
@@ -63,7 +63,7 @@ FUNC VOID DIA_Addon_Telbor_Hi_Info()
 			};	
 		};
 	};
-	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_03");//Если тебе что-то нужно, поговори с Патриком. Он у нас старший.
+	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_03");//Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ, РїРѕРіРѕРІРѕСЂРё СЃ РџР°С‚СЂРёРєРѕРј. РћРЅ Сѓ РЅР°СЃ СЃС‚Р°СЂС€РёР№.
 	
 	AI_StopProcessInfos (self);
 };

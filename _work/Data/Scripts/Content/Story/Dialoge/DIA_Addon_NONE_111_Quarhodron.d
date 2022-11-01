@@ -46,23 +46,23 @@ func void DIA_Addon_Quarhodron_Hello_Info ()
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] == TRUE)
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //Почему ты нарушаешь мой покой, страж?
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //Говори, что тебе нужно?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅР°СЂСѓС€Р°РµС€СЊ РјРѕР№ РїРѕРєРѕР№, СЃС‚СЂР°Р¶?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //Р“РѕРІРѕСЂРё, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 		 
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Что находится в храме Аданоса?", DIA_Addon_Quarhodron_Hello_schwert );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Кто-то смог проникнуть в храм Аданоса.", DIA_Addon_Quarhodron_Hello_raven );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Расскажи мне, как попасть в храм Аданоса.", DIA_Addon_Quarhodron_Hello_tempel );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Наша страна содрогается от землетрясений.", DIA_Addon_Quarhodron_Hello_erdbeben );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Р§С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РІ С…СЂР°РјРµ РђРґР°РЅРѕСЃР°?", DIA_Addon_Quarhodron_Hello_schwert );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "РљС‚Рѕ-С‚Рѕ СЃРјРѕРі РїСЂРѕРЅРёРєРЅСѓС‚СЊ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°.", DIA_Addon_Quarhodron_Hello_raven );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, РєР°Рє РїРѕРїР°СЃС‚СЊ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°.", DIA_Addon_Quarhodron_Hello_tempel );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "РќР°С€Р° СЃС‚СЂР°РЅР° СЃРѕРґСЂРѕРіР°РµС‚СЃСЏ РѕС‚ Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёР№.", DIA_Addon_Quarhodron_Hello_erdbeben );
 		DIA_Addon_Quarhodron_Hello_NoPerm = TRUE;
-		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnьtz herum.
+		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnСЊtz herum.
 		SC_TalkedToGhost = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_02"); //Бенгла антани, Осири?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_02"); //Р‘РµРЅРіР»Р° Р°РЅС‚Р°РЅРё, РћСЃРёСЂРё?
 		B_Say (other, self, "$CANTUNDERSTANDTHIS");	
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_03"); //Бенгла антани?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_03"); //Р‘РµРЅРіР»Р° Р°РЅС‚Р°РЅРё?
 		AI_StopProcessInfos (self);
 	};
 };
@@ -73,52 +73,52 @@ func void B_Quarhodron_Hello_KommZumPunkt ()
 	if (DIA_Addon_Quarhodron_Hello_ChoiceCounter >= 3)
 	&& (B_Quarhodron_Hello_KommZumPunkt_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Мудрость древних поистине поразительна.", DIA_Addon_Quarhodron_Hello_frech );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "РњСѓРґСЂРѕСЃС‚СЊ РґСЂРµРІРЅРёС… РїРѕРёСЃС‚РёРЅРµ РїРѕСЂР°Р·РёС‚РµР»СЊРЅР°.", DIA_Addon_Quarhodron_Hello_frech );
 		B_Quarhodron_Hello_KommZumPunkt_OneTime = TRUE;
 	};
 };
 
 func void DIA_Addon_Quarhodron_Hello_erdbeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Наша страна содрогается от землетрясений. Мы должны что-то сделать, иначе весь остров уйдет под воду.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //Мы ничего не можем сделать.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //Гнев Аданоса пал на Яркендар, чтобы покарать потерявших веру.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //РќР°С€Р° СЃС‚СЂР°РЅР° СЃРѕРґСЂРѕРіР°РµС‚СЃСЏ РѕС‚ Р·РµРјР»РµС‚СЂСЏСЃРµРЅРёР№. РњС‹ РґРѕР»Р¶РЅС‹ С‡С‚Рѕ-С‚Рѕ СЃРґРµР»Р°С‚СЊ, РёРЅР°С‡Рµ РІРµСЃСЊ РѕСЃС‚СЂРѕРІ СѓР№РґРµС‚ РїРѕРґ РІРѕРґСѓ.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //РњС‹ РЅРёС‡РµРіРѕ РЅРµ РјРѕР¶РµРј СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //Р“РЅРµРІ РђРґР°РЅРѕСЃР° РїР°Р» РЅР° РЇСЂРєРµРЅРґР°СЂ, С‡С‚РѕР±С‹ РїРѕРєР°СЂР°С‚СЊ РїРѕС‚РµСЂСЏРІС€РёС… РІРµСЂСѓ.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_raven ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //Кто-то смог проникнуть в храм Аданоса.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Вздор! Я лично запечатал дверь. Пройти в храм невозможно.
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_02"); //В самом деле?
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //РљС‚Рѕ-С‚Рѕ СЃРјРѕРі РїСЂРѕРЅРёРєРЅСѓС‚СЊ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Р’Р·РґРѕСЂ! РЇ Р»РёС‡РЅРѕ Р·Р°РїРµС‡Р°С‚Р°Р» РґРІРµСЂСЊ. РџСЂРѕР№С‚Рё РІ С…СЂР°Рј РЅРµРІРѕР·РјРѕР¶РЅРѕ.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_02"); //Р’ СЃР°РјРѕРј РґРµР»Рµ?
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_tempel ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //Расскажи мне, как попасть в храм Аданоса.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //Храм останется закрытым навеки. Так решил совет.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, РєР°Рє РїРѕРїР°СЃС‚СЊ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //РҐСЂР°Рј РѕСЃС‚Р°РЅРµС‚СЃСЏ Р·Р°РєСЂС‹С‚С‹Рј РЅР°РІРµРєРё. РўР°Рє СЂРµС€РёР» СЃРѕРІРµС‚.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_schwert ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Что находится в храме Аданоса?
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //Моя величайшая печаль. Мое величайшее разочарование.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Р§С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РІ С…СЂР°РјРµ РђРґР°РЅРѕСЃР°?
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //РњРѕСЏ РІРµР»РёС‡Р°Р№С€Р°СЏ РїРµС‡Р°Р»СЊ. РњРѕРµ РІРµР»РёС‡Р°Р№С€РµРµ СЂР°Р·РѕС‡Р°СЂРѕРІР°РЅРёРµ.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_frech ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //Мудрость древних поистине поразительна.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //Человек твоего положения не должен так разговаривать.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //Я не могу освободиться от впечатления, что ты не тот, за кого себя выдаешь.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //Если тебе нужна моя помощь, ты должен доказать, что ты говоришь мне правду.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //Ответь на мои вопросы, чтобы я мог убедиться, что не выдаю чужаку наши тайны.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //РњСѓРґСЂРѕСЃС‚СЊ РґСЂРµРІРЅРёС… РїРѕРёСЃС‚РёРЅРµ РїРѕСЂР°Р·РёС‚РµР»СЊРЅР°.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //Р§РµР»РѕРІРµРє С‚РІРѕРµРіРѕ РїРѕР»РѕР¶РµРЅРёСЏ РЅРµ РґРѕР»Р¶РµРЅ С‚Р°Рє СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //РЇ РЅРµ РјРѕРіСѓ РѕСЃРІРѕР±РѕРґРёС‚СЊСЃСЏ РѕС‚ РІРїРµС‡Р°С‚Р»РµРЅРёСЏ, С‡С‚Рѕ С‚С‹ РЅРµ С‚РѕС‚, Р·Р° РєРѕРіРѕ СЃРµР±СЏ РІС‹РґР°РµС€СЊ.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅР° РјРѕСЏ РїРѕРјРѕС‰СЊ, С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ РјРЅРµ РїСЂР°РІРґСѓ.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //РћС‚РІРµС‚СЊ РЅР° РјРѕРё РІРѕРїСЂРѕСЃС‹, С‡С‚РѕР±С‹ СЏ РјРѕРі СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РЅРµ РІС‹РґР°СЋ С‡СѓР¶Р°РєСѓ РЅР°С€Рё С‚Р°Р№РЅС‹.
 	
 	Log_CreateTopic (TOPIC_Addon_Quarhodron, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Quarhodron, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Куарходрон поможет мне только в том случае, если я докажу, что я достоин этого. Он задал мне несколько сложных вопросов. Я должен ответить на них, и только тогда он мне поможет."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"РљСѓР°СЂС…РѕРґСЂРѕРЅ РїРѕРјРѕР¶РµС‚ РјРЅРµ С‚РѕР»СЊРєРѕ РІ С‚РѕРј СЃР»СѓС‡Р°Рµ, РµСЃР»Рё СЏ РґРѕРєР°Р¶Сѓ, С‡С‚Рѕ СЏ РґРѕСЃС‚РѕРёРЅ СЌС‚РѕРіРѕ. РћРЅ Р·Р°РґР°Р» РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ СЃР»РѕР¶РЅС‹С… РІРѕРїСЂРѕСЃРѕРІ. РЇ РґРѕР»Р¶РµРЅ РѕС‚РІРµС‚РёС‚СЊ РЅР° РЅРёС…, Рё С‚РѕР»СЊРєРѕ С‚РѕРіРґР° РѕРЅ РјРЅРµ РїРѕРјРѕР¶РµС‚."); 
 
 	Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
 };
@@ -134,7 +134,7 @@ instance DIA_Addon_Quarhodron_Fragen		(C_INFO)
 	information	 = 	DIA_Addon_Quarhodron_Fragen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Спрашивай!";
+	description	 = 	"РЎРїСЂР°С€РёРІР°Р№!";
 };
 
 func int DIA_Addon_Quarhodron_Fragen_Condition ()
@@ -153,14 +153,14 @@ var int B_Quarhodron_Fragen_ChoicesOneTime;
 
 func void B_Quarhodron_TestFailed ()
 {
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Неправильные ответы выдают твои злые намерения.
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_01"); //Я не стану тебе помогать.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //РќРµРїСЂР°РІРёР»СЊРЅС‹Рµ РѕС‚РІРµС‚С‹ РІС‹РґР°СЋС‚ С‚РІРѕРё Р·Р»С‹Рµ РЅР°РјРµСЂРµРЅРёСЏ.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_01"); //РЇ РЅРµ СЃС‚Р°РЅСѓ С‚РµР±Рµ РїРѕРјРѕРіР°С‚СЊ.
 		AI_StopProcessInfos (self);	
 };
 
 func void B_Quarhodron_Fragen_Choices ()
 {
-	Log_AddEntry  (TOPIC_Addon_Quarhodron," --- ВОПРОСЫ КУАРХОДРОНА ---"); 
+	Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Р’РћРџР РћРЎР« РљРЈРђР РҐРћР”Р РћРќРђ ---"); 
 
 	if (Quarhodrons_NextQuestion == Quarhodron_AlleFragenGestellt)
 	{
@@ -171,8 +171,8 @@ func void B_Quarhodron_Fragen_Choices ()
 		if (Quarhodrons_NextQuestion == 1)
 		&& (Quarhodrons_RichtigeAntworten == 0)
 		{
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //Я тебе не верю.
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Возвращайся, когда решишь сказать мне правду.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //РЇ С‚РµР±Рµ РЅРµ РІРµСЂСЋ.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° СЂРµС€РёС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ РїСЂР°РІРґСѓ.
 			AI_StopProcessInfos (self);
 		}
 		else 
@@ -181,9 +181,9 @@ func void B_Quarhodron_Fragen_Choices ()
 			{
 				if (B_Quarhodron_Fragen_ChoicesOneTime == FALSE)
 				{
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //(задумчиво) Да, сила стражей мертвых могла позволить тебе пробудить меня.
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Если ты действительно страж мертвых, ты сможешь ответить на все мои вопросы.
-					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //Кроме одного...
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //(Р·Р°РґСѓРјС‡РёРІРѕ) Р”Р°, СЃРёР»Р° СЃС‚СЂР°Р¶РµР№ РјРµСЂС‚РІС‹С… РјРѕРіР»Р° РїРѕР·РІРѕР»РёС‚СЊ С‚РµР±Рµ РїСЂРѕР±СѓРґРёС‚СЊ РјРµРЅСЏ.
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Р•СЃР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃС‚СЂР°Р¶ РјРµСЂС‚РІС‹С…, С‚С‹ СЃРјРѕР¶РµС€СЊ РѕС‚РІРµС‚РёС‚СЊ РЅР° РІСЃРµ РјРѕРё РІРѕРїСЂРѕСЃС‹.
+					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //РљСЂРѕРјРµ РѕРґРЅРѕРіРѕ...
 					
 					B_Quarhodron_Fragen_ChoicesOneTime = TRUE;
 				};
@@ -192,38 +192,38 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion == 7)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Кто закрыл портал, чтобы не пропустить зло в наш мир?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Кто закрыл портал и защитил мир от зла? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //РљС‚Рѕ Р·Р°РєСЂС‹Р» РїРѕСЂС‚Р°Р», С‡С‚РѕР±С‹ РЅРµ РїСЂРѕРїСѓСЃС‚РёС‚СЊ Р·Р»Рѕ РІ РЅР°С€ РјРёСЂ?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- РљС‚Рѕ Р·Р°РєСЂС‹Р» РїРѕСЂС‚Р°Р» Рё Р·Р°С‰РёС‚РёР» РјРёСЂ РѕС‚ Р·Р»Р°? ---"); 
 				Quarhodrons_NextQuestion = Quarhodron_AlleFragenGestellt;
 			}
 			else if (Quarhodrons_NextQuestion == 6)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //Кто облегчает страдания раненых и ухаживает за больными?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Кто в Яркендаре ухаживает за больными и облегчает их страдания? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //РљС‚Рѕ РѕР±Р»РµРіС‡Р°РµС‚ СЃС‚СЂР°РґР°РЅРёСЏ СЂР°РЅРµРЅС‹С… Рё СѓС…Р°Р¶РёРІР°РµС‚ Р·Р° Р±РѕР»СЊРЅС‹РјРё?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- РљС‚Рѕ РІ РЇСЂРєРµРЅРґР°СЂРµ СѓС…Р°Р¶РёРІР°РµС‚ Р·Р° Р±РѕР»СЊРЅС‹РјРё Рё РѕР±Р»РµРіС‡Р°РµС‚ РёС… СЃС‚СЂР°РґР°РЅРёСЏ? ---"); 
 				Quarhodrons_NextQuestion = 7;
 			}
 			else if (Quarhodrons_NextQuestion == 5)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_06"); //За кем остается последнее слово в Совете Пяти?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Кто имеет последнее слово в Совете Пяти? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_06"); //Р—Р° РєРµРј РѕСЃС‚Р°РµС‚СЃСЏ РїРѕСЃР»РµРґРЅРµРµ СЃР»РѕРІРѕ РІ РЎРѕРІРµС‚Рµ РџСЏС‚Рё?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- РљС‚Рѕ РёРјРµРµС‚ РїРѕСЃР»РµРґРЅРµРµ СЃР»РѕРІРѕ РІ РЎРѕРІРµС‚Рµ РџСЏС‚Рё? ---"); 
 				Quarhodrons_NextQuestion = 6;
 			}	
 			else if (Quarhodrons_NextQuestion == 4)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Кто привел в наш мир зло?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Кто виновен в несчастьях, постигших жителей Яркендара? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //РљС‚Рѕ РїСЂРёРІРµР» РІ РЅР°С€ РјРёСЂ Р·Р»Рѕ?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- РљС‚Рѕ РІРёРЅРѕРІРµРЅ РІ РЅРµСЃС‡Р°СЃС‚СЊСЏС…, РїРѕСЃС‚РёРіС€РёС… Р¶РёС‚РµР»РµР№ РЇСЂРєРµРЅРґР°СЂР°? ---"); 
 				Quarhodrons_NextQuestion = 5;
 			}
 			else if (Quarhodrons_NextQuestion == 3)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //Кто может отдать мне прямой приказ?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Кто может дать Куарходрону прямой приказ? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //РљС‚Рѕ РјРѕР¶РµС‚ РѕС‚РґР°С‚СЊ РјРЅРµ РїСЂСЏРјРѕР№ РїСЂРёРєР°Р·?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- РљС‚Рѕ РјРѕР¶РµС‚ РґР°С‚СЊ РљСѓР°СЂС…РѕРґСЂРѕРЅСѓ РїСЂСЏРјРѕР№ РїСЂРёРєР°Р·? ---"); 
 				Quarhodrons_NextQuestion = 4;
 			}	
 			else if (Quarhodrons_NextQuestion == 2)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Кто защищает людей Яркендара от нападения врагов?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Кто защищал Яркендар от врагов? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //РљС‚Рѕ Р·Р°С‰РёС‰Р°РµС‚ Р»СЋРґРµР№ РЇСЂРєРµРЅРґР°СЂР° РѕС‚ РЅР°РїР°РґРµРЅРёСЏ РІСЂР°РіРѕРІ?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- РљС‚Рѕ Р·Р°С‰РёС‰Р°Р» РЇСЂРєРµРЅРґР°СЂ РѕС‚ РІСЂР°РіРѕРІ? ---"); 
 				Quarhodrons_NextQuestion = 3;
 			};
 			
@@ -231,18 +231,18 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion >= Quarhodron_AlleFragenGestellt)
 			{
-				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Я не могу знать этого.", DIA_Addon_Quarhodron_Fragen_NoPlan );
+				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "РЇ РЅРµ РјРѕРіСѓ Р·РЅР°С‚СЊ СЌС‚РѕРіРѕ.", DIA_Addon_Quarhodron_Fragen_NoPlan );
 			}
 			else
 			{
-				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Я не знаю.", DIA_Addon_Quarhodron_Fragen_NoPlan );
+				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "РЇ РЅРµ Р·РЅР°СЋ.", DIA_Addon_Quarhodron_Fragen_NoPlan );
 			};
 			
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Ученые.", DIA_Addon_Quarhodron_Fragen_gele );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Стражи мертвых.", DIA_Addon_Quarhodron_Fragen_totenw );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Жрецы.", DIA_Addon_Quarhodron_Fragen_prie );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Воины.", DIA_Addon_Quarhodron_Fragen_warr );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Целители.", DIA_Addon_Quarhodron_Fragen_heiler );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "РЈС‡РµРЅС‹Рµ.", DIA_Addon_Quarhodron_Fragen_gele );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "РЎС‚СЂР°Р¶Рё РјРµСЂС‚РІС‹С….", DIA_Addon_Quarhodron_Fragen_totenw );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Р–СЂРµС†С‹.", DIA_Addon_Quarhodron_Fragen_prie );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Р’РѕРёРЅС‹.", DIA_Addon_Quarhodron_Fragen_warr );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Р¦РµР»РёС‚РµР»Рё.", DIA_Addon_Quarhodron_Fragen_heiler );
 		};
 	};
 };
@@ -252,23 +252,23 @@ func void DIA_Addon_Quarhodron_Fragen_Info ()
 {
 	Quarhodrons_NextQuestion 		= 0;
 	Quarhodrons_RichtigeAntworten 	= 0;
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_Fragen_15_00"); //Спрашивай!
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_Fragen_15_00"); //РЎРїСЂР°С€РёРІР°Р№!
 	
 	if (DIA_Addon_Quarhodron_Fragen_Info_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //Я - Куарходрон. Когда-то я был предводителем армий Яркендара.
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //Ты пробудил меня.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //РЇ - РљСѓР°СЂС…РѕРґСЂРѕРЅ. РљРѕРіРґР°-С‚Рѕ СЏ Р±С‹Р» РїСЂРµРґРІРѕРґРёС‚РµР»РµРј Р°СЂРјРёР№ РЇСЂРєРµРЅРґР°СЂР°.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //РўС‹ РїСЂРѕР±СѓРґРёР» РјРµРЅСЏ.
 		
 		DIA_Addon_Quarhodron_Fragen_Info_OneTime = TRUE;
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_03"); //К какой касте ты принадлежишь?
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_03"); //Рљ РєР°РєРѕР№ РєР°СЃС‚Рµ С‚С‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ?
 
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_warr ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_warr_15_00"); //Воины.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_warr_15_00"); //Р’РѕРёРЅС‹.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 3)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	if (Quarhodrons_NextQuestion == 5)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
@@ -276,21 +276,21 @@ func void DIA_Addon_Quarhodron_Fragen_warr ()
 };
 func void DIA_Addon_Quarhodron_Fragen_prie ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //Жрецы.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //Р–СЂРµС†С‹.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 4)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_gele ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_gele_15_00"); //Ученые.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_gele_15_00"); //РЈС‡РµРЅС‹Рµ.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 6)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_totenw ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_totenw_15_00"); //Стражи мертвых.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_totenw_15_00"); //РЎС‚СЂР°Р¶Рё РјРµСЂС‚РІС‹С….
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	
@@ -298,19 +298,19 @@ func void DIA_Addon_Quarhodron_Fragen_totenw ()
 };
 func void DIA_Addon_Quarhodron_Fragen_heiler ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_heiler_15_00"); //Целители.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_heiler_15_00"); //Р¦РµР»РёС‚РµР»Рё.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 7)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_NoPlan ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_NoPlan_15_00"); //Я не знаю.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_NoPlan_15_00"); //РЇ РЅРµ Р·РЅР°СЋ.
 	
 	if (Quarhodrons_NextQuestion == Quarhodron_AlleFragenGestellt)
 	&& (Quarhodrons_RichtigeAntworten >= 6) 
 	{
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_01"); //Хорошо. Я верю тебе, и поэтому помогу.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_01"); //РҐРѕСЂРѕС€Рѕ. РЇ РІРµСЂСЋ С‚РµР±Рµ, Рё РїРѕСЌС‚РѕРјСѓ РїРѕРјРѕРіСѓ.
 		QuarhodronIstZufrieden = TRUE;
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Fragen);
 	}
@@ -320,7 +320,7 @@ func void DIA_Addon_Quarhodron_Fragen_NoPlan ()
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_02"); //Тогда не трать мое время.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_02"); //РўРѕРіРґР° РЅРµ С‚СЂР°С‚СЊ РјРѕРµ РІСЂРµРјСЏ.
 		AI_StopProcessInfos (self);	
 	};
 };
@@ -335,7 +335,7 @@ instance DIA_Addon_Quarhodron_GibMirKey		(C_INFO)
 	condition	 = 	DIA_Addon_Quarhodron_GibMirKey_Condition;
 	information	 = 	DIA_Addon_Quarhodron_GibMirKey_Info;
 
-	description	 = 	"(потребовать ключ от храма)";
+	description	 = 	"(РїРѕС‚СЂРµР±РѕРІР°С‚СЊ РєР»СЋС‡ РѕС‚ С…СЂР°РјР°)";
 };
 func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 {
@@ -346,27 +346,27 @@ func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 };
 func void DIA_Addon_Quarhodron_GibMirKey_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //Послушай меня! В храм Аданоса смог попасть очень злой человек.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Если ты не поможешь мне попасть в храм немедленно, мы можем опоздать, и тогда всем нам придет конец.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //Этого не может быть. Во всем Яркендаре лишь мы с верховным жрецом Кардимоном знаем, как открыть ворота в храм.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //Ну, значит, твой приятель Кардимон проболтался.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Ворота были открыты. Я видел это своими собственными глазами.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //По твоему голосу я слышу, что ты говоришь правду. Больше я не буду сомневаться в твоих словах.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //Надеюсь.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //Я дам тебе каменную табличку, на которой записаны тайные слова. Произнеси их перед запечатанными воротами храма, и они распахнутся перед тобой.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //РџРѕСЃР»СѓС€Р°Р№ РјРµРЅСЏ! Р’ С…СЂР°Рј РђРґР°РЅРѕСЃР° СЃРјРѕРі РїРѕРїР°СЃС‚СЊ РѕС‡РµРЅСЊ Р·Р»РѕР№ С‡РµР»РѕРІРµРє.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Р•СЃР»Рё С‚С‹ РЅРµ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ С…СЂР°Рј РЅРµРјРµРґР»РµРЅРЅРѕ, РјС‹ РјРѕР¶РµРј РѕРїРѕР·РґР°С‚СЊ, Рё С‚РѕРіРґР° РІСЃРµРј РЅР°Рј РїСЂРёРґРµС‚ РєРѕРЅРµС†.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ. Р’Рѕ РІСЃРµРј РЇСЂРєРµРЅРґР°СЂРµ Р»РёС€СЊ РјС‹ СЃ РІРµСЂС…РѕРІРЅС‹Рј Р¶СЂРµС†РѕРј РљР°СЂРґРёРјРѕРЅРѕРј Р·РЅР°РµРј, РєР°Рє РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р° РІ С…СЂР°Рј.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //РќСѓ, Р·РЅР°С‡РёС‚, С‚РІРѕР№ РїСЂРёСЏС‚РµР»СЊ РљР°СЂРґРёРјРѕРЅ РїСЂРѕР±РѕР»С‚Р°Р»СЃСЏ.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Р’РѕСЂРѕС‚Р° Р±С‹Р»Рё РѕС‚РєСЂС‹С‚С‹. РЇ РІРёРґРµР» СЌС‚Рѕ СЃРІРѕРёРјРё СЃРѕР±СЃС‚РІРµРЅРЅС‹РјРё РіР»Р°Р·Р°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //РџРѕ С‚РІРѕРµРјСѓ РіРѕР»РѕСЃСѓ СЏ СЃР»С‹С€Сѓ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ РїСЂР°РІРґСѓ. Р‘РѕР»СЊС€Рµ СЏ РЅРµ Р±СѓРґСѓ СЃРѕРјРЅРµРІР°С‚СЊСЃСЏ РІ С‚РІРѕРёС… СЃР»РѕРІР°С….
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //РќР°РґРµСЋСЃСЊ.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //РЇ РґР°Рј С‚РµР±Рµ РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ, РЅР° РєРѕС‚РѕСЂРѕР№ Р·Р°РїРёСЃР°РЅС‹ С‚Р°Р№РЅС‹Рµ СЃР»РѕРІР°. РџСЂРѕРёР·РЅРµСЃРё РёС… РїРµСЂРµРґ Р·Р°РїРµС‡Р°С‚Р°РЅРЅС‹РјРё РІРѕСЂРѕС‚Р°РјРё С…СЂР°РјР°, Рё РѕРЅРё СЂР°СЃРїР°С…РЅСѓС‚СЃСЏ РїРµСЂРµРґ С‚РѕР±РѕР№.
 	CreateInvItems (self, ItMi_TempelTorKey, 1);									
 	B_GiveInvItems (self, other, ItMi_TempelTorKey, 1);		
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //(умирает) Мое время подходит к концу. Увы, но больше я ни в чем тебе помочь не смогу.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //(умирает) Помни, залы Аданоса смертельно опасны. Будь осторожнее.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_10"); //Постой! Что находится в этих залах?
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //(умирает) Силы покидают меня. Прощай! Когда-нибудь мы снова встретимся в стране мертвых.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //(СѓРјРёСЂР°РµС‚) РњРѕРµ РІСЂРµРјСЏ РїРѕРґС…РѕРґРёС‚ Рє РєРѕРЅС†Сѓ. РЈРІС‹, РЅРѕ Р±РѕР»СЊС€Рµ СЏ РЅРё РІ С‡РµРј С‚РµР±Рµ РїРѕРјРѕС‡СЊ РЅРµ СЃРјРѕРіСѓ.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //(СѓРјРёСЂР°РµС‚) РџРѕРјРЅРё, Р·Р°Р»С‹ РђРґР°РЅРѕСЃР° СЃРјРµСЂС‚РµР»СЊРЅРѕ РѕРїР°СЃРЅС‹. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_10"); //РџРѕСЃС‚РѕР№! Р§С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РІ СЌС‚РёС… Р·Р°Р»Р°С…?
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //(СѓРјРёСЂР°РµС‚) РЎРёР»С‹ РїРѕРєРёРґР°СЋС‚ РјРµРЅСЏ. РџСЂРѕС‰Р°Р№! РљРѕРіРґР°-РЅРёР±СѓРґСЊ РјС‹ СЃРЅРѕРІР° РІСЃС‚СЂРµС‚РёРјСЃСЏ РІ СЃС‚СЂР°РЅРµ РјРµСЂС‚РІС‹С….
 	AI_StopProcessInfos (self);
 	
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Куарходрон дал мне каменную табличку, которая откроет мне вход в храм Аданоса."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"РљСѓР°СЂС…РѕРґСЂРѕРЅ РґР°Р» РјРЅРµ РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ, РєРѕС‚РѕСЂР°СЏ РѕС‚РєСЂРѕРµС‚ РјРЅРµ РІС…РѕРґ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°."); 
 	
 	Log_CreateTopic (TOPIC_Addon_Kammern, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Kammern, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kammern,"Куарходрон сказал, что я должен быть осторожнее в 'Залах Аданоса'. Я должен выяснить, что он имел в виду, если не хочу попасть в ловушку."); 
+	B_LogEntry (TOPIC_Addon_Kammern,"РљСѓР°СЂС…РѕРґСЂРѕРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ РІ 'Р—Р°Р»Р°С… РђРґР°РЅРѕСЃР°'. РЇ РґРѕР»Р¶РµРЅ РІС‹СЏСЃРЅРёС‚СЊ, С‡С‚Рѕ РѕРЅ РёРјРµР» РІ РІРёРґСѓ, РµСЃР»Рё РЅРµ С…РѕС‡Сѓ РїРѕРїР°СЃС‚СЊ РІ Р»РѕРІСѓС€РєСѓ."); 
 
 	Ghost_SCKnowsHow2GetInAdanosTempel = TRUE;
 };

@@ -32,7 +32,7 @@ INSTANCE DIA_Wambo_PICKPOCKET (C_INFO)
 	condition	= DIA_Wambo_PICKPOCKET_Condition;
 	information	= DIA_Wambo_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Воровать этот ключ рискованно)";
+	description = "(Р’РѕСЂРѕРІР°С‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Wambo_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ INSTANCE DIA_Wambo_Job(C_INFO)
 	condition	= DIA_Wambo_Job_Condition;
 	information	= DIA_Wambo_Job_Info;
 	permanent	= FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Wambo_Job_Condition()
@@ -94,9 +94,9 @@ FUNC INT DIA_Wambo_Job_Condition()
 
 FUNC VOID DIA_Wambo_Job_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Job_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //Я слежу за тем, чтобы никто не входил в дома.
-	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //Лорд Хаген лично отдал этот приказ. И даже не думай нарушить его!
+	AI_Output (other,self ,"DIA_Wambo_Job_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //РЇ СЃР»РµР¶Сѓ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РЅРёРєС‚Рѕ РЅРµ РІС…РѕРґРёР» РІ РґРѕРјР°.
+	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //Р›РѕСЂРґ РҐР°РіРµРЅ Р»РёС‡РЅРѕ РѕС‚РґР°Р» СЌС‚РѕС‚ РїСЂРёРєР°Р·. Р РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№ РЅР°СЂСѓС€РёС‚СЊ РµРіРѕ!
 };
 //*************************************************************
 //		Wie ist die Lage?
@@ -108,7 +108,7 @@ INSTANCE DIA_Wambo_Situation(C_INFO)
 	condition	= DIA_Wambo_Situation_Condition;
 	information	= DIA_Wambo_Situation_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Wambo_Situation_Condition()
@@ -121,8 +121,8 @@ FUNC INT DIA_Wambo_Situation_Condition()
 
 FUNC VOID DIA_Wambo_Situation_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Situation_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //Сейчас все спокойно.
+	AI_Output (other,self ,"DIA_Wambo_Situation_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //РЎРµР№С‡Р°СЃ РІСЃРµ СЃРїРѕРєРѕР№РЅРѕ.
 };
 //*************************************************************
 //		Ramirez
@@ -134,7 +134,7 @@ INSTANCE DIA_Wambo_Ramirez(C_INFO)
 	condition	= DIA_Wambo_Ramirez_Condition;
 	information	= DIA_Wambo_Ramirez_Info;
 	permanent	= FALSE;
-	description = "Я пришел от нашего общего друга, Рамиреза.";
+	description = "РЇ РїСЂРёС€РµР» РѕС‚ РЅР°С€РµРіРѕ РѕР±С‰РµРіРѕ РґСЂСѓРіР°, Р Р°РјРёСЂРµР·Р°.";
 };                       
 
 FUNC INT DIA_Wambo_Ramirez_Condition()
@@ -147,12 +147,12 @@ FUNC INT DIA_Wambo_Ramirez_Condition()
 
 FUNC VOID DIA_Wambo_Ramirez_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_00"); //Я пришел от нашего общего друга, Рамиреза.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Ох? Этот Рамирез тот еще подлец. И он мне не друг. Да, ладно. Ты принес мне что-нибудь?
-	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Это зависит от того, что ты хочешь.
+	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_00"); //РЇ РїСЂРёС€РµР» РѕС‚ РЅР°С€РµРіРѕ РѕР±С‰РµРіРѕ РґСЂСѓРіР°, Р Р°РјРёСЂРµР·Р°.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //РћС…? Р­С‚РѕС‚ Р Р°РјРёСЂРµР· С‚РѕС‚ РµС‰Рµ РїРѕРґР»РµС†. Р РѕРЅ РјРЅРµ РЅРµ РґСЂСѓРі. Р”Р°, Р»Р°РґРЅРѕ. РўС‹ РїСЂРёРЅРµСЃ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ.
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(тихо) Хорошо, поступим так: ты платишь мне 250 золотых монет. И меня не будет здесь всю ночь.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //И, если ты уж такой подозрительный, давай договоримся так: если я появлюсь здесь, то нашу сделку можно будет считать расторгнутой.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(С‚РёС…Рѕ) РҐРѕСЂРѕС€Рѕ, РїРѕСЃС‚СѓРїРёРј С‚Р°Рє: С‚С‹ РїР»Р°С‚РёС€СЊ РјРЅРµ 250 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р РјРµРЅСЏ РЅРµ Р±СѓРґРµС‚ Р·РґРµСЃСЊ РІСЃСЋ РЅРѕС‡СЊ.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Р, РµСЃР»Рё С‚С‹ СѓР¶ С‚Р°РєРѕР№ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅС‹Р№, РґР°РІР°Р№ РґРѕРіРѕРІРѕСЂРёРјСЃСЏ С‚Р°Рє: РµСЃР»Рё СЏ РїРѕСЏРІР»СЋСЃСЊ Р·РґРµСЃСЊ, С‚Рѕ РЅР°С€Сѓ СЃРґРµР»РєСѓ РјРѕР¶РЅРѕ Р±СѓРґРµС‚ СЃС‡РёС‚Р°С‚СЊ СЂР°СЃС‚РѕСЂРіРЅСѓС‚РѕР№.
 };
 //*************************************************************
 //	Deal
@@ -164,7 +164,7 @@ INSTANCE DIA_Wambo_Deal(C_INFO)
 	condition	= DIA_Wambo_Deal_Condition;
 	information	= DIA_Wambo_Deal_Info;
 	permanent	= TRUE;
-	description = "(Заплатить 250 золота)";
+	description = "(Р—Р°РїР»Р°С‚РёС‚СЊ 250 Р·РѕР»РѕС‚Р°)";
 };                       
 //-----------------------------------
 var int DIA_Wambo_Deal_permanent;
@@ -179,12 +179,12 @@ FUNC INT DIA_Wambo_Deal_Condition()
 };
 FUNC VOID DIA_Wambo_Deal_Info()
 {	
-	AI_Output (other,self ,"DIA_Wambo_Deal_15_00"); //У меня есть деньги...
+	AI_Output (other,self ,"DIA_Wambo_Deal_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РґРµРЅСЊРіРё...
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Хорошо, тогда я исчезаю на всю ночь.
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //И помни: если у тебя возникнут проблемы, я не знаю тебя.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //РҐРѕСЂРѕС€Рѕ, С‚РѕРіРґР° СЏ РёСЃС‡РµР·Р°СЋ РЅР° РІСЃСЋ РЅРѕС‡СЊ.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //Р РїРѕРјРЅРё: РµСЃР»Рё Сѓ С‚РµР±СЏ РІРѕР·РЅРёРєРЅСѓС‚ РїСЂРѕР±Р»РµРјС‹, СЏ РЅРµ Р·РЅР°СЋ С‚РµР±СЏ.
 		
 		DIA_Wambo_Deal_permanent = TRUE;
 		AI_StopProcessInfos (self);
@@ -192,8 +192,8 @@ FUNC VOID DIA_Wambo_Deal_Info()
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Wambo_Deal_15_03"); //...но с собой  их не захватил.
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_04"); //Я не выношу, когда кто-нибудь пытается одурачить меня. Так что давай сюда золото.
+		AI_Output (other,self ,"DIA_Wambo_Deal_15_03"); //...РЅРѕ СЃ СЃРѕР±РѕР№  РёС… РЅРµ Р·Р°С…РІР°С‚РёР».
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_04"); //РЇ РЅРµ РІС‹РЅРѕС€Сѓ, РєРѕРіРґР° РєС‚Рѕ-РЅРёР±СѓРґСЊ РїС‹С‚Р°РµС‚СЃСЏ РѕРґСѓСЂР°С‡РёС‚СЊ РјРµРЅСЏ. РўР°Рє С‡С‚Рѕ РґР°РІР°Р№ СЃСЋРґР° Р·РѕР»РѕС‚Рѕ.
 		AI_StopProcessInfos (self);
 	};
 };

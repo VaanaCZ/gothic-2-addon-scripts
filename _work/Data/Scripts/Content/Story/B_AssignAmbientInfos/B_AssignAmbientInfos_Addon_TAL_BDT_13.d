@@ -28,7 +28,7 @@ instance DIA_Addon_TAL_BDT_13_Hi(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Hi_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Hi_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
@@ -38,9 +38,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Как дела?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//Или тебя съест монстр... или тебя съест монстр...
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Это болото станет нам могилой...
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//РР»Рё С‚РµР±СЏ СЃСЉРµСЃС‚ РјРѕРЅСЃС‚СЂ... РёР»Рё С‚РµР±СЏ СЃСЉРµСЃС‚ РјРѕРЅСЃС‚СЂ...
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Р­С‚Рѕ Р±РѕР»РѕС‚Рѕ СЃС‚Р°РЅРµС‚ РЅР°Рј РјРѕРіРёР»РѕР№...
 };
 // *************************************************************************
 // 							Tal
@@ -51,7 +51,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent	= TRUE;
-	description = "Что ты знаешь про эту долину?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РїСЂРѕ СЌС‚Сѓ РґРѕР»РёРЅСѓ?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
@@ -61,9 +61,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Что ты знаешь про эту долину?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Здесь множество вещей, оставшихся с древних времен. Ворон велел нам собирать их все.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Не знаю, зачем они ему нужны, но ни один нормальный человек не будет рисковать собственной жизнью за несколько старых камней...
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РїСЂРѕ СЌС‚Сѓ РґРѕР»РёРЅСѓ?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Р—РґРµСЃСЊ РјРЅРѕР¶РµСЃС‚РІРѕ РІРµС‰РµР№, РѕСЃС‚Р°РІС€РёС…СЃСЏ СЃ РґСЂРµРІРЅРёС… РІСЂРµРјРµРЅ. Р’РѕСЂРѕРЅ РІРµР»РµР» РЅР°Рј СЃРѕР±РёСЂР°С‚СЊ РёС… РІСЃРµ.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//РќРµ Р·РЅР°СЋ, Р·Р°С‡РµРј РѕРЅРё РµРјСѓ РЅСѓР¶РЅС‹, РЅРѕ РЅРё РѕРґРёРЅ РЅРѕСЂРјР°Р»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє РЅРµ Р±СѓРґРµС‚ СЂРёСЃРєРѕРІР°С‚СЊ СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ Р¶РёР·РЅСЊСЋ Р·Р° РЅРµСЃРєРѕР»СЊРєРѕ СЃС‚Р°СЂС‹С… РєР°РјРЅРµР№...
 };
 // *************************************************************************
 // 							News
@@ -74,7 +74,7 @@ instance DIA_Addon_TAL_BDT_13_News(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_News_Condition;
 	information	= DIA_Addon_TAL_BDT_13_News_Info;
 	permanent	= TRUE;
-	description = "Есть какие-нибудь новости?";
+	description = "Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
@@ -84,13 +84,13 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Есть какие-нибудь новости?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Мы действительно довели этих пиратов.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Они привозили нам пленников, но ни разу не получили и монеты. Ничего удивительного, что они разозлились.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РЅРѕРІРѕСЃС‚Рё?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//РњС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґРѕРІРµР»Рё СЌС‚РёС… РїРёСЂР°С‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//РћРЅРё РїСЂРёРІРѕР·РёР»Рё РЅР°Рј РїР»РµРЅРЅРёРєРѕРІ, РЅРѕ РЅРё СЂР°Р·Сѓ РЅРµ РїРѕР»СѓС‡РёР»Рё Рё РјРѕРЅРµС‚С‹. РќРёС‡РµРіРѕ СѓРґРёРІРёС‚РµР»СЊРЅРѕРіРѕ, С‡С‚Рѕ РѕРЅРё СЂР°Р·РѕР·Р»РёР»РёСЃСЊ.
 	
 	if (BDT_13_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//Но что они могут сделать? Напасть на лагерь? (смеется) ХА-ХА.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//РќРѕ С‡С‚Рѕ РѕРЅРё РјРѕРіСѓС‚ СЃРґРµР»Р°С‚СЊ? РќР°РїР°СЃС‚СЊ РЅР° Р»Р°РіРµСЂСЊ? (СЃРјРµРµС‚СЃСЏ) РҐРђ-РҐРђ.
 		BDT_13_einmal = TRUE;
 	};
 };

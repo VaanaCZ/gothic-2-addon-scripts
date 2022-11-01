@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesverдnderung (unwissend zusammengebraut)																		//
+//	Trank der GeistesverРґnderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -18,12 +18,12 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Зелье изменения сознания";
+	description		= 	"Р—РµР»СЊРµ РёР·РјРµРЅРµРЅРёСЏ СЃРѕР·РЅР°РЅРёСЏ";
 	
-	TEXT[2]			=   "Применять с осторожностью!";
+	TEXT[2]			=   "РџСЂРёРјРµРЅСЏС‚СЊ СЃ РѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚СЊСЋ!";
 	
-	TEXT[3]			= 	"Сильно воздействует на сознание и";	
-	TEXT[4]			= 	"может оказать летальное действие";
+	TEXT[3]			= 	"РЎРёР»СЊРЅРѕ РІРѕР·РґРµР№СЃС‚РІСѓРµС‚ РЅР° СЃРѕР·РЅР°РЅРёРµ Рё";	
+	TEXT[4]			= 	"РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊ Р»РµС‚Р°Р»СЊРЅРѕРµ РґРµР№СЃС‚РІРёРµ";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesverдnderung (wissend zusammengebraut)																		//
+//	Trank der GeistesverРґnderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -55,12 +55,12 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Зелье изменения сознания";
+	description		= 	"Р—РµР»СЊРµ РёР·РјРµРЅРµРЅРёСЏ СЃРѕР·РЅР°РЅРёСЏ";
 	
-	TEXT[2]			=   "Применять с осторожностью!";
+	TEXT[2]			=   "РџСЂРёРјРµРЅСЏС‚СЊ СЃ РѕСЃС‚РѕСЂРѕР¶РЅРѕСЃС‚СЊСЋ!";
 	
-	TEXT[3]			= 	"Сильно воздействует на сознание и";	
-	TEXT[4]			= 	"может оказать летальное действие";
+	TEXT[3]			= 	"РЎРёР»СЊРЅРѕ РІРѕР·РґРµР№СЃС‚РІСѓРµС‚ РЅР° СЃРѕР·РЅР°РЅРёРµ Рё";	
+	TEXT[4]			= 	"РјРѕР¶РµС‚ РѕРєР°Р·Р°С‚СЊ Р»РµС‚Р°Р»СЊРЅРѕРµ РґРµР№СЃС‚РІРёРµ";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -93,10 +93,10 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
 
-	description		= 	"Чистое здоровье";
+	description		= 	"Р§РёСЃС‚РѕРµ Р·РґРѕСЂРѕРІСЊРµ";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"Полное восстановление здоровья";
+	TEXT[2]			= 	"РџРѕР»РЅРѕРµ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ Р·РґРѕСЂРѕРІСЊСЏ";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -126,10 +126,10 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	effect			=	"SPELLFX_MANAPOTION"; 
 
 
-	description		= 	"Чистая мана";
+	description		= 	"Р§РёСЃС‚Р°СЏ РјР°РЅР°";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"Полное восстановление маны";
+	TEXT[2]			= 	"РџРѕР»РЅРѕРµ РІРѕСЃСЃС‚Р°РЅРѕРІР»РµРЅРёРµ РјР°РЅС‹";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

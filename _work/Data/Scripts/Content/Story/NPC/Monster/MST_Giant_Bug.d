@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_Bug(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Полевой хищник";
+	name							=	"РџРѕР»РµРІРѕР№ С…РёС‰РЅРёРє";
 	guild							=	GIL_GIANT_BUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GIANT_BUG;
 	level							=	8;
@@ -76,13 +76,13 @@ INSTANCE Giant_Bug	(Mst_Default_Giant_Bug)
 
 
 //**************************************
-//	junge Giant_Bug   (fьr Spielstart) 	
+//	junge Giant_Bug   (fСЊr Spielstart) 	
 //**************************************
 
 INSTANCE YGiant_Bug	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"Молодой полевой хищник";
+	name							=	"РњРѕР»РѕРґРѕР№ РїРѕР»РµРІРѕР№ С…РёС‰РЅРёРє";
 	level							=	2;
 	
 	//----- Attribute ----
@@ -112,7 +112,7 @@ INSTANCE YGiant_Bug	(Mst_Default_Giant_Bug)
 INSTANCE YGiant_Bug_VinoRitual1	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"Молодой полевой хищник";
+	name							=	"РњРѕР»РѕРґРѕР№ РїРѕР»РµРІРѕР№ С…РёС‰РЅРёРє";
 	level							=	4;
 	
 	//----- Attribute ----
@@ -141,7 +141,7 @@ INSTANCE YGiant_Bug_VinoRitual1	(Mst_Default_Giant_Bug)
 INSTANCE YGiant_Bug_VinoRitual2	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"Молодой полевой хищник";
+	name							=	"РњРѕР»РѕРґРѕР№ РїРѕР»РµРІРѕР№ С…РёС‰РЅРёРє";
 	level							=	4;
 	
 	//----- Attribute ----
@@ -168,7 +168,7 @@ INSTANCE YGiant_Bug_VinoRitual2	(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	Lobarts_Giant_Bug s   (fьr Miliz Aufnahmemission) 	
+//	Lobarts_Giant_Bug s   (fСЊr Miliz Aufnahmemission) 	
 //**************************************
 
 INSTANCE Lobarts_Giant_Bug1	(Mst_Default_Giant_Bug)	

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Molerat(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Крысокрот";
+	name							=	"РљСЂС‹СЃРѕРєСЂРѕС‚";
 	guild							=	GIL_MOLERAT;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MOLERAT;
 	level							=	5;

@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Merdarion_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Merdarion_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Merdarion_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wдre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wРґre einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Merdarion_ADW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Merdarion_ADWHello		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_ADWHello_Condition;
 	information	 = 	DIA_Addon_Merdarion_ADWHello_Info;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Addon_Merdarion_ADWHello_Condition ()
@@ -94,68 +94,68 @@ func int DIA_Addon_Merdarion_ADWHello_Condition ()
 
 func void DIA_Addon_Merdarion_ADWHello_Back ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_Back_15_00"); //Я услышал достаточно.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_Back_15_00"); //РЇ СѓСЃР»С‹С€Р°Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 	Info_ClearChoices	(DIA_Addon_Merdarion_ADWHello);
 };
 func void DIA_Addon_Merdarion_ADWHello_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_15_00"); //Как дела?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_01"); //(прислушиваясь) Слушай... Любопытно, да?
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_15_02"); //Хм-м...
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_03"); //Эти телепортационные камни, видимо, не работают, но все еще слышно, как они гудят.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_04"); //Хотя они неактивны, в них еще осталась какая-то энергия.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_01"); //(РїСЂРёСЃР»СѓС€РёРІР°СЏСЃСЊ) РЎР»СѓС€Р°Р№... Р›СЋР±РѕРїС‹С‚РЅРѕ, РґР°?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_15_02"); //РҐРј-Рј...
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_03"); //Р­С‚Рё С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Рµ РєР°РјРЅРё, РІРёРґРёРјРѕ, РЅРµ СЂР°Р±РѕС‚Р°СЋС‚, РЅРѕ РІСЃРµ РµС‰Рµ СЃР»С‹С€РЅРѕ, РєР°Рє РѕРЅРё РіСѓРґСЏС‚.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_04"); //РҐРѕС‚СЏ РѕРЅРё РЅРµР°РєС‚РёРІРЅС‹, РІ РЅРёС… РµС‰Рµ РѕСЃС‚Р°Р»Р°СЃСЊ РєР°РєР°СЏ-С‚Рѕ СЌРЅРµСЂРіРёСЏ.
 
 	Info_ClearChoices	(DIA_Addon_Merdarion_ADWHello);
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Где эти телепорты черпают энергию?", DIA_Addon_Merdarion_ADWHello_reaktor );
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Как ты думаешь, как их можно активировать?", DIA_Addon_Merdarion_ADWHello_was );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Р“РґРµ СЌС‚Рё С‚РµР»РµРїРѕСЂС‚С‹ С‡РµСЂРїР°СЋС‚ СЌРЅРµСЂРіРёСЋ?", DIA_Addon_Merdarion_ADWHello_reaktor );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РєР°Рє РёС… РјРѕР¶РЅРѕ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ?", DIA_Addon_Merdarion_ADWHello_was );
 };
 func void DIA_Addon_Merdarion_ADWHello_was ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_was_15_00"); //Как ты думаешь, как их можно активировать?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_01"); //У меня есть одна идея. Только мне нужно убедиться, что мое подозрение верно.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_02"); //У меня несколько дней назад было ощущение, что я уже видел похожую штуку.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_03"); //Я полагаю, что нам нужно передать им внушительное количество магической энергии, чтобы заставить их снова работать.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_was_15_00"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, РєР°Рє РёС… РјРѕР¶РЅРѕ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_01"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕРґРЅР° РёРґРµСЏ. РўРѕР»СЊРєРѕ РјРЅРµ РЅСѓР¶РЅРѕ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ РјРѕРµ РїРѕРґРѕР·СЂРµРЅРёРµ РІРµСЂРЅРѕ.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_02"); //РЈ РјРµРЅСЏ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ Р±С‹Р»Рѕ РѕС‰СѓС‰РµРЅРёРµ, С‡С‚Рѕ СЏ СѓР¶Рµ РІРёРґРµР» РїРѕС…РѕР¶СѓСЋ С€С‚СѓРєСѓ.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_03"); //РЇ РїРѕР»Р°РіР°СЋ, С‡С‚Рѕ РЅР°Рј РЅСѓР¶РЅРѕ РїРµСЂРµРґР°С‚СЊ РёРј РІРЅСѓС€РёС‚РµР»СЊРЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё, С‡С‚РѕР±С‹ Р·Р°СЃС‚Р°РІРёС‚СЊ РёС… СЃРЅРѕРІР° СЂР°Р±РѕС‚Р°С‚СЊ.
 	
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Где ты видел такие телепортационные камни раньше?", DIA_Addon_Merdarion_ADWHello_wo );
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Что может дать достаточное количество магической энергии?..", DIA_Addon_Merdarion_ADWHello_focus );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Р“РґРµ С‚С‹ РІРёРґРµР» С‚Р°РєРёРµ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Рµ РєР°РјРЅРё СЂР°РЅСЊС€Рµ?", DIA_Addon_Merdarion_ADWHello_wo );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Р§С‚Рѕ РјРѕР¶РµС‚ РґР°С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё?..", DIA_Addon_Merdarion_ADWHello_focus );
 };
 func void DIA_Addon_Merdarion_ADWHello_focus ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_00"); //Что может дать достаточное количество магической энергии?..
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_01"); //Мне приходит в голову только одна идея. Магическая фокусировка.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_02"); //Я имею в виду один из пяти фокусирующих камней, которые были использованы при создании магического Барьера в Долине Рудников.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_03"); //Насколько я знаю, некоторое время назад ты вернул их нам.
-	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_04"); //Да, я помню.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_00"); //Р§С‚Рѕ РјРѕР¶РµС‚ РґР°С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё?..
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_01"); //РњРЅРµ РїСЂРёС…РѕРґРёС‚ РІ РіРѕР»РѕРІСѓ С‚РѕР»СЊРєРѕ РѕРґРЅР° РёРґРµСЏ. РњР°РіРёС‡РµСЃРєР°СЏ С„РѕРєСѓСЃРёСЂРѕРІРєР°.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_02"); //РЇ РёРјРµСЋ РІ РІРёРґСѓ РѕРґРёРЅ РёР· РїСЏС‚Рё С„РѕРєСѓСЃРёСЂСѓСЋС‰РёС… РєР°РјРЅРµР№, РєРѕС‚РѕСЂС‹Рµ Р±С‹Р»Рё РёСЃРїРѕР»СЊР·РѕРІР°РЅС‹ РїСЂРё СЃРѕР·РґР°РЅРёРё РјР°РіРёС‡РµСЃРєРѕРіРѕ Р‘Р°СЂСЊРµСЂР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_03"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅР°Р·Р°Рґ С‚С‹ РІРµСЂРЅСѓР» РёС… РЅР°Рј.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_04"); //Р”Р°, СЏ РїРѕРјРЅСЋ.
 	
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Ты сказал, что тебе нужно убедиться, что твое подозрение верно.", DIA_Addon_Merdarion_ADWHello_focusProof );
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "И где фокусирующие камни сейчас?", DIA_Addon_Merdarion_ADWHello_focusWo );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "РўС‹ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ С‚РІРѕРµ РїРѕРґРѕР·СЂРµРЅРёРµ РІРµСЂРЅРѕ.", DIA_Addon_Merdarion_ADWHello_focusProof );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Р РіРґРµ С„РѕРєСѓСЃРёСЂСѓСЋС‰РёРµ РєР°РјРЅРё СЃРµР№С‡Р°СЃ?", DIA_Addon_Merdarion_ADWHello_focusWo );
 };
 func void DIA_Addon_Merdarion_ADWHello_focusWo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focusWo_15_00"); //И где фокусирующие камни сейчас?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_01"); //Они были доверены мне. Я должен хранить их, пока им не найдется другое использование.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_02"); //Похоже, что время пришло.
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Я услышал достаточно.", DIA_Addon_Merdarion_ADWHello_Back );
+	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focusWo_15_00"); //Р РіРґРµ С„РѕРєСѓСЃРёСЂСѓСЋС‰РёРµ РєР°РјРЅРё СЃРµР№С‡Р°СЃ?
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_01"); //РћРЅРё Р±С‹Р»Рё РґРѕРІРµСЂРµРЅС‹ РјРЅРµ. РЇ РґРѕР»Р¶РµРЅ С…СЂР°РЅРёС‚СЊ РёС…, РїРѕРєР° РёРј РЅРµ РЅР°Р№РґРµС‚СЃСЏ РґСЂСѓРіРѕРµ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёРµ.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_02"); //РџРѕС…РѕР¶Рµ, С‡С‚Рѕ РІСЂРµРјСЏ РїСЂРёС€Р»Рѕ.
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "РЇ СѓСЃР»С‹С€Р°Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.", DIA_Addon_Merdarion_ADWHello_Back );
 };
 func void DIA_Addon_Merdarion_ADWHello_focusProof ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focusProof_15_00"); //Ты сказал, что тебе нужно убедиться, что твое подозрение верно.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_01"); //Магический фокус может быть связан с этими камнями.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_02"); //Но я не знаю где.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focusProof_15_00"); //РўС‹ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ СѓР±РµРґРёС‚СЊСЃСЏ, С‡С‚Рѕ С‚РІРѕРµ РїРѕРґРѕР·СЂРµРЅРёРµ РІРµСЂРЅРѕ.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_01"); //РњР°РіРёС‡РµСЃРєРёР№ С„РѕРєСѓСЃ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃРІСЏР·Р°РЅ СЃ СЌС‚РёРјРё РєР°РјРЅСЏРјРё.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusProof_06_02"); //РќРѕ СЏ РЅРµ Р·РЅР°СЋ РіРґРµ.
 };
 func void DIA_Addon_Merdarion_ADWHello_wo ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_wo_15_00"); //Где ты видел такие телепортационные камни раньше?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_01"); //Ты тоже был в исправительной колонии. Неужели ты никогда их не замечал?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_02"); //Я совершенно уверен, что их все еще можно там найти.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_wo_15_00"); //Р“РґРµ С‚С‹ РІРёРґРµР» С‚Р°РєРёРµ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Рµ РєР°РјРЅРё СЂР°РЅСЊС€Рµ?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_01"); //РўС‹ С‚РѕР¶Рµ Р±С‹Р» РІ РёСЃРїСЂР°РІРёС‚РµР»СЊРЅРѕР№ РєРѕР»РѕРЅРёРё. РќРµСѓР¶РµР»Рё С‚С‹ РЅРёРєРѕРіРґР° РёС… РЅРµ Р·Р°РјРµС‡Р°Р»?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_02"); //РЇ СЃРѕРІРµСЂС€РµРЅРЅРѕ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РёС… РІСЃРµ РµС‰Рµ РјРѕР¶РЅРѕ С‚Р°Рј РЅР°Р№С‚Рё.
 };
 func void DIA_Addon_Merdarion_ADWHello_reaktor ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_reaktor_15_00"); //Что эти камни делают?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_01"); //Зодчие были очень развитой нацией.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_02"); //Они использовали такие свойства магии, которых мы никогда не видели.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_03"); //Сеть телепортационных камней была построена, чтобы зодчие могли быстро перемещаться из одного города в другой.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_04"); //ЭТОТ камень, очевидно, является центральным.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_reaktor_15_00"); //Р§С‚Рѕ СЌС‚Рё РєР°РјРЅРё РґРµР»Р°СЋС‚?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_01"); //Р—РѕРґС‡РёРµ Р±С‹Р»Рё РѕС‡РµРЅСЊ СЂР°Р·РІРёС‚РѕР№ РЅР°С†РёРµР№.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_02"); //РћРЅРё РёСЃРїРѕР»СЊР·РѕРІР°Р»Рё С‚Р°РєРёРµ СЃРІРѕР№СЃС‚РІР° РјР°РіРёРё, РєРѕС‚РѕСЂС‹С… РјС‹ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР»Рё.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_03"); //РЎРµС‚СЊ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹С… РєР°РјРЅРµР№ Р±С‹Р»Р° РїРѕСЃС‚СЂРѕРµРЅР°, С‡С‚РѕР±С‹ Р·РѕРґС‡РёРµ РјРѕРіР»Рё Р±С‹СЃС‚СЂРѕ РїРµСЂРµРјРµС‰Р°С‚СЊСЃСЏ РёР· РѕРґРЅРѕРіРѕ РіРѕСЂРѕРґР° РІ РґСЂСѓРіРѕР№.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_04"); //Р­РўРћРў РєР°РјРµРЅСЊ, РѕС‡РµРІРёРґРЅРѕ, СЏРІР»СЏРµС‚СЃСЏ С†РµРЅС‚СЂР°Р»СЊРЅС‹Рј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -168,7 +168,7 @@ instance DIA_Addon_Merdarion_FokusGeben		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_FokusGeben_Condition;
 	information	 = 	DIA_Addon_Merdarion_FokusGeben_Info;
 
-	description	 = 	"Дай мне фокусирующий камень.";
+	description	 = 	"Р”Р°Р№ РјРЅРµ С„РѕРєСѓСЃРёСЂСѓСЋС‰РёР№ РєР°РјРµРЅСЊ.";
 };
 
 func int DIA_Addon_Merdarion_FokusGeben_Condition ()
@@ -181,15 +181,15 @@ func int DIA_Addon_Merdarion_FokusGeben_Condition ()
 
 func void DIA_Addon_Merdarion_FokusGeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_FokusGeben_15_00"); //Дай мне фокусирующий камень. Я попробую заставить телепортеры работать.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_01"); //Хорошо. Но будь осторожен, слышишь меня?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_02"); //Сатурас снимет с меня голову, если мы их потеряем.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_FokusGeben_15_00"); //Р”Р°Р№ РјРЅРµ С„РѕРєСѓСЃРёСЂСѓСЋС‰РёР№ РєР°РјРµРЅСЊ. РЇ РїРѕРїСЂРѕР±СѓСЋ Р·Р°СЃС‚Р°РІРёС‚СЊ С‚РµР»РµРїРѕСЂС‚РµСЂС‹ СЂР°Р±РѕС‚Р°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_01"); //РҐРѕСЂРѕС€Рѕ. РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, СЃР»С‹С€РёС€СЊ РјРµРЅСЏ?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_02"); //РЎР°С‚СѓСЂР°СЃ СЃРЅРёРјРµС‚ СЃ РјРµРЅСЏ РіРѕР»РѕРІСѓ, РµСЃР»Рё РјС‹ РёС… РїРѕС‚РµСЂСЏРµРј.
 	CreateInvItems (self, ItMi_Focus, 1);									
 	B_GiveInvItems (self, other, ItMi_Focus, 1);			
 	
 	Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_TeleportsADW,"Маг воды Мердарион дал мне один из старых камней фокусировки, которые использовались для создания Барьера вокруг Долины Рудников. С его помощью я могу попробовать активировать какой-нибудь телепорт."); 
+	B_LogEntry (TOPIC_Addon_TeleportsADW,"РњР°Рі РІРѕРґС‹ РњРµСЂРґР°СЂРёРѕРЅ РґР°Р» РјРЅРµ РѕРґРёРЅ РёР· СЃС‚Р°СЂС‹С… РєР°РјРЅРµР№ С„РѕРєСѓСЃРёСЂРѕРІРєРё, РєРѕС‚РѕСЂС‹Рµ РёСЃРїРѕР»СЊР·РѕРІР°Р»РёСЃСЊ РґР»СЏ СЃРѕР·РґР°РЅРёСЏ Р‘Р°СЂСЊРµСЂР° РІРѕРєСЂСѓРі Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ. РЎ РµРіРѕ РїРѕРјРѕС‰СЊСЋ СЏ РјРѕРіСѓ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ С‚РµР»РµРїРѕСЂС‚."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -202,7 +202,7 @@ instance DIA_Addon_Merdarion_FirstFocus		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_FirstFocus_Condition;
 	information	 = 	DIA_Addon_Merdarion_FirstFocus_Info;
 
-	description	 = 	"Я активировал один из телепортационных камней.";
+	description	 = 	"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РѕРґРёРЅ РёР· С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹С… РєР°РјРЅРµР№.";
 };
 
 func int DIA_Addon_Merdarion_FirstFocus_Condition ()
@@ -215,19 +215,19 @@ func int DIA_Addon_Merdarion_FirstFocus_Condition ()
 var int Merdarion_GotFocusCount;
 func void DIA_Addon_Merdarion_FirstFocus_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_FirstFocus_15_00"); //Я активировал один из телепортационных камней.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_01"); //Да, я вижу. Значит, я был прав.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_02"); //Я поговорил с другими об этом.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_03"); //Мы хотим, чтобы ты попытался активировать все остальные телепортационные камни.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_04"); //Если мы сможем быстро перемещаться из одной части города в другую, нам это очень  поможет исследованиях, .
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_05"); //Вот еще один фокусирующий камень.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_FirstFocus_15_00"); //РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РѕРґРёРЅ РёР· С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹С… РєР°РјРЅРµР№.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_01"); //Р”Р°, СЏ РІРёР¶Сѓ. Р—РЅР°С‡РёС‚, СЏ Р±С‹Р» РїСЂР°РІ.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_02"); //РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РґСЂСѓРіРёРјРё РѕР± СЌС‚РѕРј.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_03"); //РњС‹ С…РѕС‚РёРј, С‡С‚РѕР±С‹ С‚С‹ РїРѕРїС‹С‚Р°Р»СЃСЏ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РІСЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Рµ РєР°РјРЅРё.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_04"); //Р•СЃР»Рё РјС‹ СЃРјРѕР¶РµРј Р±С‹СЃС‚СЂРѕ РїРµСЂРµРјРµС‰Р°С‚СЊСЃСЏ РёР· РѕРґРЅРѕР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР° РІ РґСЂСѓРіСѓСЋ, РЅР°Рј СЌС‚Рѕ РѕС‡РµРЅСЊ  РїРѕРјРѕР¶РµС‚ РёСЃСЃР»РµРґРѕРІР°РЅРёСЏС…, .
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_05"); //Р’РѕС‚ РµС‰Рµ РѕРґРёРЅ С„РѕРєСѓСЃРёСЂСѓСЋС‰РёР№ РєР°РјРµРЅСЊ.
 	CreateInvItems (self, ItMi_Focus, 1);									
 	B_GiveInvItems (self, other, ItMi_Focus, 1);		
 	Merdarion_GotFocusCount = 1;
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_06"); //Активируй их все, если сумеешь.
-	AI_Output	(other, self, "DIA_Addon_Merdarion_FirstFocus_15_07"); //Я постараюсь.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_06"); //РђРєС‚РёРІРёСЂСѓР№ РёС… РІСЃРµ, РµСЃР»Рё СЃСѓРјРµРµС€СЊ.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_FirstFocus_15_07"); //РЇ РїРѕСЃС‚Р°СЂР°СЋСЃСЊ.
 	B_GivePlayerXP (XP_Addon_ActivatedTeleportStone);
-	B_LogEntry (TOPIC_Addon_TeleportsADW,"Мердарион дал мне еще один камень фокусировки. Я должен постараться активировать все телепорты. Мердарион будет снабжать меня новыми камнями по мере включения телепортов."); 
+	B_LogEntry (TOPIC_Addon_TeleportsADW,"РњРµСЂРґР°СЂРёРѕРЅ РґР°Р» РјРЅРµ РµС‰Рµ РѕРґРёРЅ РєР°РјРµРЅСЊ С„РѕРєСѓСЃРёСЂРѕРІРєРё. РЇ РґРѕР»Р¶РµРЅ РїРѕСЃС‚Р°СЂР°С‚СЊСЃСЏ Р°РєС‚РёРІРёСЂРѕРІР°С‚СЊ РІСЃРµ С‚РµР»РµРїРѕСЂС‚С‹. РњРµСЂРґР°СЂРёРѕРЅ Р±СѓРґРµС‚ СЃРЅР°Р±Р¶Р°С‚СЊ РјРµРЅСЏ РЅРѕРІС‹РјРё РєР°РјРЅСЏРјРё РїРѕ РјРµСЂРµ РІРєР»СЋС‡РµРЅРёСЏ С‚РµР»РµРїРѕСЂС‚РѕРІ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -241,7 +241,7 @@ instance DIA_Addon_Merdarion_ActivateTeleports		(C_INFO)
 	information	 = 	DIA_Addon_Merdarion_ActivateTeleports_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я активировал еще один телепортационный камень.";
+	description	 = 	"РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РµС‰Рµ РѕРґРёРЅ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Р№ РєР°РјРµРЅСЊ.";
 };
 func int DIA_Addon_Merdarion_ActivateTeleports_Condition ()
 {
@@ -257,33 +257,33 @@ var int DIA_Addon_Merdarion_ActivateTeleports_OneTime;
 
 func void DIA_Addon_Merdarion_ActivateTeleports_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_00"); //Я активировал еще один телепортационный камень.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_00"); //РЇ Р°РєС‚РёРІРёСЂРѕРІР°Р» РµС‰Рµ РѕРґРёРЅ С‚РµР»РµРїРѕСЂС‚Р°С†РёРѕРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
 
 	if (SC_ADW_ActivatedAllTelePortStones == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_01"); //Дай мне следующий фокусирующий камень.
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_02"); //Конечно, пожалуйста.
+		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_01"); //Р”Р°Р№ РјРЅРµ СЃР»РµРґСѓСЋС‰РёР№ С„РѕРєСѓСЃРёСЂСѓСЋС‰РёР№ РєР°РјРµРЅСЊ.
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_02"); //РљРѕРЅРµС‡РЅРѕ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°.
 		CreateInvItems (self, ItMi_Focus, 1);									
 		B_GiveInvItems (self, other, ItMi_Focus, 1);		
 	};
 	
 	if (DIA_Addon_Merdarion_ActivateTeleports_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_03"); //Это было сложно?
-		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_04"); //Как посмотреть. Я бы не отказался от помощи.
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_05"); //Я могу дать тебе немного золота, это поможет?
-		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_06"); //Явно не помешает.
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_07"); //Посмотрим...
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_03"); //Р­С‚Рѕ Р±С‹Р»Рѕ СЃР»РѕР¶РЅРѕ?
+		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_04"); //РљР°Рє РїРѕСЃРјРѕС‚СЂРµС‚СЊ. РЇ Р±С‹ РЅРµ РѕС‚РєР°Р·Р°Р»СЃСЏ РѕС‚ РїРѕРјРѕС‰Рё.
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_05"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°, СЌС‚Рѕ РїРѕРјРѕР¶РµС‚?
+		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_06"); //РЇРІРЅРѕ РЅРµ РїРѕРјРµС€Р°РµС‚.
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_07"); //РџРѕСЃРјРѕС‚СЂРёРј...
 		DIA_Addon_Merdarion_ActivateTeleports_OneTime = TRUE;
 	};
 	
 	if (SC_ADW_ActivatedAllTelePortStones == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_08"); //Ты проделал отличную работу. Мне остается только поздравить тебя.
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_09"); //Теперь они все работают. Впечатляющее зрелище, правда?
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_08"); //РўС‹ РїСЂРѕРґРµР»Р°Р» РѕС‚Р»РёС‡РЅСѓСЋ СЂР°Р±РѕС‚Сѓ. РњРЅРµ РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РїРѕР·РґСЂР°РІРёС‚СЊ С‚РµР±СЏ.
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_09"); //РўРµРїРµСЂСЊ РѕРЅРё РІСЃРµ СЂР°Р±РѕС‚Р°СЋС‚. Р’РїРµС‡Р°С‚Р»СЏСЋС‰РµРµ Р·СЂРµР»РёС‰Рµ, РїСЂР°РІРґР°?
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_10"); //Вот несколько золотых монет.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_10"); //Р’РѕС‚ РЅРµСЃРєРѕР»СЊРєРѕ Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	B_GivePlayerXP (XP_Addon_ActivatedTeleportStone);
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);		
@@ -294,8 +294,8 @@ func void DIA_Addon_Merdarion_ActivateTeleports_Info ()
 	&& (Ghost_SCKnowsHow2GetInAdanosTempel == FALSE)
  	&& (MIS_Saturas_LookingForHousesOfRulers == 0)
  	{
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_11"); //Да, и кстати, пока я не забыл - Сатурас хотел поговорить с тобой.
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_12"); //Ты должен найти его как можно скорее.
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_11"); //Р”Р°, Рё РєСЃС‚Р°С‚Рё, РїРѕРєР° СЏ РЅРµ Р·Р°Р±С‹Р» - РЎР°С‚СѓСЂР°СЃ С…РѕС‚РµР» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_12"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РµРіРѕ РєР°Рє РјРѕР¶РЅРѕ СЃРєРѕСЂРµРµ.
 	};
 };
 
@@ -309,7 +309,7 @@ instance DIA_Addon_Merdarion_ADW_PreTeachMana		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_ADW_PreTeachMana_Condition;
 	information	 = 	DIA_Addon_Merdarion_ADW_PreTeachMana_Info;
 
-	description	 = 	"Ты можешь повысить мои магические способности?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё?";
 };
 func int DIA_Addon_Merdarion_ADW_PreTeachMana_Condition ()
 {
@@ -320,12 +320,12 @@ func int DIA_Addon_Merdarion_ADW_PreTeachMana_Condition ()
 };
 func void DIA_Addon_Merdarion_ADW_PreTeachMana_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADW_PreTeachMana_15_00"); //Ты можешь повысить мои магические способности?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADW_PreTeachMana_06_01"); //Я могу увеличить количество твоей магической энергии.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADW_PreTeachMana_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё?
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADW_PreTeachMana_06_01"); //РЇ РјРѕРіСѓ СѓРІРµР»РёС‡РёС‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ С‚РІРѕРµР№ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё.
 	Merdarion_Addon_TeachMana = TRUE;
 
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
-	B_LogEntry (TOPIC_Addon_KDWTeacher,"Мердарион может увеличить мою магическую энергию."); 
+	B_LogEntry (TOPIC_Addon_KDWTeacher,"РњРµСЂРґР°СЂРёРѕРЅ РјРѕР¶РµС‚ СѓРІРµР»РёС‡РёС‚СЊ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH_MANA
@@ -337,7 +337,7 @@ instance DIA_Addon_Merdarion_ADW_TEACH_MANA		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_ADW_TEACH_MANA_Condition;
 	information	 = 	DIA_Addon_Merdarion_ADW_TEACH_MANA_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу повысить свои магические способности.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 var int Merdarion_ADW_Empty;
 func int DIA_Addon_Merdarion_ADW_TEACH_MANA_Condition ()
@@ -350,7 +350,7 @@ func int DIA_Addon_Merdarion_ADW_TEACH_MANA_Condition ()
 };
 func void DIA_Addon_Merdarion_ADW_TEACH_MANA_Info ()
 {
-		AI_Output (other, self, "DIA_Addon_Merdarion_ADW_TEACH_MANA_15_00"); //Я хочу увеличить мою магическую энергию.
+		AI_Output (other, self, "DIA_Addon_Merdarion_ADW_TEACH_MANA_15_00"); //РЇ С…РѕС‡Сѓ СѓРІРµР»РёС‡РёС‚СЊ РјРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ.
 		
 		Info_ClearChoices   (DIA_Addon_Merdarion_ADW_TEACH_MANA);	
 		Info_AddChoice 		(DIA_Addon_Merdarion_ADW_TEACH_MANA,DIALOG_BACK,DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK);		
@@ -361,8 +361,8 @@ FUNC VOID DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)  
 	{
-		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //То, что ты просишь, выходит за рамки моих способностей.
-		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_01"); //Ты уже знаешь все, чему бы я тебя мог научить.
+		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //РўРѕ, С‡С‚Рѕ С‚С‹ РїСЂРѕСЃРёС€СЊ, РІС‹С…РѕРґРёС‚ Р·Р° СЂР°РјРєРё РјРѕРёС… СЃРїРѕСЃРѕР±РЅРѕСЃС‚РµР№.
+		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_01"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РІСЃРµ, С‡РµРјСѓ Р±С‹ СЏ С‚РµР±СЏ РјРѕРі РЅР°СѓС‡РёС‚СЊ.
 		Merdarion_ADW_Empty = TRUE;
 	};
 	

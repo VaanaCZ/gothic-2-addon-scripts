@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Harpie(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Гарпия";
+	name							=	"Р“Р°СЂРїРёСЏ";
 	guild							=	GIL_HARPY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_HARPY;
 	level							=	18;

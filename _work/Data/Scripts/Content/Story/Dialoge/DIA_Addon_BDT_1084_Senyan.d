@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Senyan_EXIT   (C_INFO)
 	condition   = DIA_Addon_Senyan_EXIT_Condition;
 	information = DIA_Addon_Senyan_EXIT_Info;
 	permanent   = TRUE;
-	description = "Еще увидимся.";
+	description = "Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.";
 };
 FUNC INT DIA_Addon_Senyan_EXIT_Condition()
 {
@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Senyan_EXIT_Info()
 {
 	if (Senyan_Erpressung == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Senyan_EXIT_12_00");//Ты знаешь, что тебе нужно сделать...
+		AI_Output (self, other, "DIA_Addon_Senyan_EXIT_12_00");//РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ...
 	};
 	AI_StopProcessInfos (self);
 };
@@ -60,8 +60,8 @@ func void DIA_Addon_Senyan_PICKPOCKET_BACK()
 //----------------------------------------------------------------------
 FUNC VOID B_Senyan_Attack()
 {
-	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_00");//(насмехаясь) Тогда зачем ты мне еще нужен, тунеядец?
-	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_01");//(зовет) Эй, ребята, посмотрите, кто у нас здесь!
+	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_00");//(РЅР°СЃРјРµС…Р°СЏСЃСЊ) РўРѕРіРґР° Р·Р°С‡РµРј С‚С‹ РјРЅРµ РµС‰Рµ РЅСѓР¶РµРЅ, С‚СѓРЅРµСЏРґРµС†?
+	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_01");//(Р·РѕРІРµС‚) Р­Р№, СЂРµР±СЏС‚Р°, РїРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ!
 	
 	Senyan_Called = TRUE;	
 	Senyan_Erpressung = LOG_OBSOLETE;
@@ -73,16 +73,16 @@ FUNC VOID B_Senyan_Attack()
 //----------------------------------------------------------------------
 FUNC VOID B_Senyan_Erpressung()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_00");//Сколько ты хочешь?
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_01");//(играя обиду) О, нет, не надо, пожалуйста. Я не хочу вымогать у тебя деньги. Я даже и не мечтал об этом.
-	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_02");//Тогда что тебе нужно?
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_03");//Недавно кто-то хотел убрать Эстебана. Но напоролся на телохранителей.
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_04");//Пойди к Эстебану и поговори с ним. Потом возвращайся.
+	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_00");//РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_01");//(РёРіСЂР°СЏ РѕР±РёРґСѓ) Рћ, РЅРµС‚, РЅРµ РЅР°РґРѕ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°. РЇ РЅРµ С…РѕС‡Сѓ РІС‹РјРѕРіР°С‚СЊ Сѓ С‚РµР±СЏ РґРµРЅСЊРіРё. РЇ РґР°Р¶Рµ Рё РЅРµ РјРµС‡С‚Р°Р» РѕР± СЌС‚РѕРј.
+	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_02");//РўРѕРіРґР° С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_03");//РќРµРґР°РІРЅРѕ РєС‚Рѕ-С‚Рѕ С…РѕС‚РµР» СѓР±СЂР°С‚СЊ Р­СЃС‚РµР±Р°РЅР°. РќРѕ РЅР°РїРѕСЂРѕР»СЃСЏ РЅР° С‚РµР»РѕС…СЂР°РЅРёС‚РµР»РµР№.
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_04");//РџРѕР№РґРё Рє Р­СЃС‚РµР±Р°РЅСѓ Рё РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРј. РџРѕС‚РѕРј РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ.
 	
 	AI_StopProcessInfos (self);
 	Log_CreateTopic (Topic_Addon_Senyan,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Senyan,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Senyan,"Сеньян узнал меня. Ему известно, кто я такой. Он хочет использовать меня для каких-то своих целей. Но сначала я должен поговорить с Эстебаном.");
+	B_LogEntry (Topic_Addon_Senyan,"РЎРµРЅСЊСЏРЅ СѓР·РЅР°Р» РјРµРЅСЏ. Р•РјСѓ РёР·РІРµСЃС‚РЅРѕ, РєС‚Рѕ СЏ С‚Р°РєРѕР№. РћРЅ С…РѕС‡РµС‚ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјРµРЅСЏ РґР»СЏ РєР°РєРёС…-С‚Рѕ СЃРІРѕРёС… С†РµР»РµР№. РќРѕ СЃРЅР°С‡Р°Р»Р° СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р­СЃС‚РµР±Р°РЅРѕРј.");
 };
 //----------------------------------------------------------------------
 //	Info Hi
@@ -108,28 +108,28 @@ var int Senyan_Good;
 FUNC VOID DIA_Addon_Senyan_Hi_Info()
 {	
 	
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_00");//А! Кто это у нас здесь?
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_00");//Рђ! РљС‚Рѕ СЌС‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ?
 	B_UseFakeScroll();
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_01");//Ну-ка, ну-ка. Вот ты где. У меня для тебя есть хорошие новости и плохие новости.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_01");//РќСѓ-РєР°, РЅСѓ-РєР°. Р’РѕС‚ С‚С‹ РіРґРµ. РЈ РјРµРЅСЏ РґР»СЏ С‚РµР±СЏ РµСЃС‚СЊ С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё Рё РїР»РѕС…РёРµ РЅРѕРІРѕСЃС‚Рё.
 	
 	Info_ClearChoices (DIA_Addon_BDT_1084_Senyan_Hi);
-	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Сначала - хорошие.",DIA_Addon_BDT_1084_Senyan_Hi_good);
-	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Сначала расскажи мне плохие новости.",DIA_Addon_BDT_1084_Senyan_Hi_bad);
+	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"РЎРЅР°С‡Р°Р»Р° - С…РѕСЂРѕС€РёРµ.",DIA_Addon_BDT_1084_Senyan_Hi_good);
+	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"РЎРЅР°С‡Р°Р»Р° СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ РїР»РѕС…РёРµ РЅРѕРІРѕСЃС‚Рё.",DIA_Addon_BDT_1084_Senyan_Hi_bad);
 };
 FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_good()
 {
 	if (Senyan_Msg == FALSE)
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_00");//Сначала - хорошие.
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_00");//РЎРЅР°С‡Р°Р»Р° - С…РѕСЂРѕС€РёРµ.
 		Senyan_Msg = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_01");//А что за хорошие новости?
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_01");//Рђ С‡С‚Рѕ Р·Р° С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё?
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_02");//Ну, я не знаю, как тебе это удалось, но ты нажил себе парочку влиятельных врагов.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_03");//Можешь считать, что тебе повезло - никто, кроме меня, тебя не узнал.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_04");//А я человек понимающий и дружелюбный.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_02");//РќСѓ, СЏ РЅРµ Р·РЅР°СЋ, РєР°Рє С‚РµР±Рµ СЌС‚Рѕ СѓРґР°Р»РѕСЃСЊ, РЅРѕ С‚С‹ РЅР°Р¶РёР» СЃРµР±Рµ РїР°СЂРѕС‡РєСѓ РІР»РёСЏС‚РµР»СЊРЅС‹С… РІСЂР°РіРѕРІ.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_03");//РњРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ, С‡С‚Рѕ С‚РµР±Рµ РїРѕРІРµР·Р»Рѕ - РЅРёРєС‚Рѕ, РєСЂРѕРјРµ РјРµРЅСЏ, С‚РµР±СЏ РЅРµ СѓР·РЅР°Р».
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_04");//Рђ СЏ С‡РµР»РѕРІРµРє РїРѕРЅРёРјР°СЋС‰РёР№ Рё РґСЂСѓР¶РµР»СЋР±РЅС‹Р№.
 	
 	
 	Senyan_Good = TRUE;
@@ -142,25 +142,25 @@ FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_good()
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"А что там с плохими новостями?",DIA_Addon_BDT_1084_Senyan_Hi_bad);
+		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Рђ С‡С‚Рѕ С‚Р°Рј СЃ РїР»РѕС…РёРјРё РЅРѕРІРѕСЃС‚СЏРјРё?",DIA_Addon_BDT_1084_Senyan_Hi_bad);
 	};
 };
 FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_bad()
 {
 	if (Senyan_Msg == FALSE)
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_00");//Сначала расскажи мне плохие новости.
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_00");//РЎРЅР°С‡Р°Р»Р° СЂР°СЃСЃРєР°Р¶Рё РјРЅРµ РїР»РѕС…РёРµ РЅРѕРІРѕСЃС‚Рё.
 		Senyan_Msg = TRUE;
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_01");//А что там с плохими новостями?
+		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_01");//Рђ С‡С‚Рѕ С‚Р°Рј СЃ РїР»РѕС…РёРјРё РЅРѕРІРѕСЃС‚СЏРјРё?
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_02");//Тебя ищет Ворон. И его охрана. Вообще-то все бандиты ищут тебя...
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_03");//И если они найдут тебя, они убьют тебя.
-	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_04");//Многие уже пытались.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_05");//Значит, ты дерешься не хуже, чем плетешь интриги. Придти в лагерь в таких доспехах, это...
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_06");//...все равно что придти к волкам, будучи овцой. Твоя жизнь висит на волоске, сын риска.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_02");//РўРµР±СЏ РёС‰РµС‚ Р’РѕСЂРѕРЅ. Р РµРіРѕ РѕС…СЂР°РЅР°. Р’РѕРѕР±С‰Рµ-С‚Рѕ РІСЃРµ Р±Р°РЅРґРёС‚С‹ РёС‰СѓС‚ С‚РµР±СЏ...
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_03");//Р РµСЃР»Рё РѕРЅРё РЅР°Р№РґСѓС‚ С‚РµР±СЏ, РѕРЅРё СѓР±СЊСЋС‚ С‚РµР±СЏ.
+	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_04");//РњРЅРѕРіРёРµ СѓР¶Рµ РїС‹С‚Р°Р»РёСЃСЊ.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_05");//Р—РЅР°С‡РёС‚, С‚С‹ РґРµСЂРµС€СЊСЃСЏ РЅРµ С…СѓР¶Рµ, С‡РµРј РїР»РµС‚РµС€СЊ РёРЅС‚СЂРёРіРё. РџСЂРёРґС‚Рё РІ Р»Р°РіРµСЂСЊ РІ С‚Р°РєРёС… РґРѕСЃРїРµС…Р°С…, СЌС‚Рѕ...
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_06");//...РІСЃРµ СЂР°РІРЅРѕ С‡С‚Рѕ РїСЂРёРґС‚Рё Рє РІРѕР»РєР°Рј, Р±СѓРґСѓС‡Рё РѕРІС†РѕР№. РўРІРѕСЏ Р¶РёР·РЅСЊ РІРёСЃРёС‚ РЅР° РІРѕР»РѕСЃРєРµ, СЃС‹РЅ СЂРёСЃРєР°.
 	
 	Senyan_Bad = TRUE;
 	
@@ -172,7 +172,7 @@ FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_bad()
 	}
 	else 
 	{
-		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"А что за хорошие новости?",DIA_Addon_BDT_1084_Senyan_Hi_good);
+		Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Рђ С‡С‚Рѕ Р·Р° С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё?",DIA_Addon_BDT_1084_Senyan_Hi_good);
 	};
 };
 //---------------------------------------------------------------------
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Senyan_unterwegs   (C_INFO)
 	condition   = DIA_Addon_Senyan_unterwegs_Condition;
 	information = DIA_Addon_Senyan_unterwegs_Info;
 	permanent   = TRUE;
-	description	= "По поводу Эстебана...";
+	description	= "РџРѕ РїРѕРІРѕРґСѓ Р­СЃС‚РµР±Р°РЅР°...";
 };
 FUNC INT DIA_Addon_Senyan_unterwegs_Condition()
 {	
@@ -197,10 +197,10 @@ FUNC INT DIA_Addon_Senyan_unterwegs_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_unterwegs_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_00");//По поводу Эстебана...
-	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_01");//Ты уже поговорил с ним?
-	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_02");//Еще нет.
-	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_03");//Тогда тебе следует сделать это поскорее.
+	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_00");//РџРѕ РїРѕРІРѕРґСѓ Р­СЃС‚РµР±Р°РЅР°...
+	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_01");//РўС‹ СѓР¶Рµ РїРѕРіРѕРІРѕСЂРёР» СЃ РЅРёРј?
+	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_02");//Р•С‰Рµ РЅРµС‚.
+	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_03");//РўРѕРіРґР° С‚РµР±Рµ СЃР»РµРґСѓРµС‚ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ РїРѕСЃРєРѕСЂРµРµ.
 };
 //---------------------------------------------------------------------
 //	Info Attentat
@@ -212,7 +212,7 @@ INSTANCE DIA_Addon_Senyan_Attentat   (C_INFO)
 	condition   = DIA_Addon_Senyan_Attentat_Condition;
 	information = DIA_Addon_Senyan_Attentat_Info;
 	permanent   = FALSE;
-	description	= "Я поговорил с Эстебаном.";
+	description	= "РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ Р­СЃС‚РµР±Р°РЅРѕРј.";
 };
 FUNC INT DIA_Addon_Senyan_Attentat_Condition()
 {	
@@ -224,41 +224,41 @@ FUNC INT DIA_Addon_Senyan_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_00");//Я поговорил с Эстебаном.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_01");//И он сказал тебе о нападении?
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_02");//Он сказал мне найти того, кто послал убийцу. Ты что-нибудь знаешь про это?
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_03");//Не больше тебя. Я тоже его ищу. И тут начинается самое интересное.
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_04");//Да?
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_05");//Я хочу, чтобы ты выполнил свое задание. Чтобы ты нашел предателя.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_06");//(холодно) И когда ты его найдешь - ты убьешь его для меня.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_07");//А я заберу награду.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_08");//У меня объявление о твоем розыске - не забывай об этом. Выполняй свою работу и сделай ее хорошо. Сам понимаешь, что может случиться в ином случае.
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_00");//РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ Р­СЃС‚РµР±Р°РЅРѕРј.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_01");//Р РѕРЅ СЃРєР°Р·Р°Р» С‚РµР±Рµ Рѕ РЅР°РїР°РґРµРЅРёРё?
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_02");//РћРЅ СЃРєР°Р·Р°Р» РјРЅРµ РЅР°Р№С‚Рё С‚РѕРіРѕ, РєС‚Рѕ РїРѕСЃР»Р°Р» СѓР±РёР№С†Сѓ. РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ РїСЂРѕ СЌС‚Рѕ?
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_03");//РќРµ Р±РѕР»СЊС€Рµ С‚РµР±СЏ. РЇ С‚РѕР¶Рµ РµРіРѕ РёС‰Сѓ. Р С‚СѓС‚ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃР°РјРѕРµ РёРЅС‚РµСЂРµСЃРЅРѕРµ.
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_04");//Р”Р°?
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_05");//РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РІС‹РїРѕР»РЅРёР» СЃРІРѕРµ Р·Р°РґР°РЅРёРµ. Р§С‚РѕР±С‹ С‚С‹ РЅР°С€РµР» РїСЂРµРґР°С‚РµР»СЏ.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_06");//(С…РѕР»РѕРґРЅРѕ) Р РєРѕРіРґР° С‚С‹ РµРіРѕ РЅР°Р№РґРµС€СЊ - С‚С‹ СѓР±СЊРµС€СЊ РµРіРѕ РґР»СЏ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_07");//Рђ СЏ Р·Р°Р±РµСЂСѓ РЅР°РіСЂР°РґСѓ.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_08");//РЈ РјРµРЅСЏ РѕР±СЉСЏРІР»РµРЅРёРµ Рѕ С‚РІРѕРµРј СЂРѕР·С‹СЃРєРµ - РЅРµ Р·Р°Р±С‹РІР°Р№ РѕР± СЌС‚РѕРј. Р’С‹РїРѕР»РЅСЏР№ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ Рё СЃРґРµР»Р°Р№ РµРµ С…РѕСЂРѕС€Рѕ. РЎР°Рј РїРѕРЅРёРјР°РµС€СЊ, С‡С‚Рѕ РјРѕР¶РµС‚ СЃР»СѓС‡РёС‚СЊСЃСЏ РІ РёРЅРѕРј СЃР»СѓС‡Р°Рµ.
 
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
-	Info_AddChoice (DIA_Addon_Senyan_Attentat,"Не то чтобы у меня был выбор...",DIA_Addon_Senyan_Attentat_JA);
-	Info_AddChoice (DIA_Addon_Senyan_Attentat,"Забудь об этом!",DIA_Addon_Senyan_Attentat_NO);
+	Info_AddChoice (DIA_Addon_Senyan_Attentat,"РќРµ С‚Рѕ С‡С‚РѕР±С‹ Сѓ РјРµРЅСЏ Р±С‹Р» РІС‹Р±РѕСЂ...",DIA_Addon_Senyan_Attentat_JA);
+	Info_AddChoice (DIA_Addon_Senyan_Attentat,"Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!",DIA_Addon_Senyan_Attentat_NO);
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_NO()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_NO_15_00");//Забудь об этом!
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_NO_15_00");//Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј!
 
 	B_Senyan_Attack();
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_JA()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_JA_15_00");//Не то чтобы у меня был выбор...
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_01");//Я знал, что мы сможем договориться.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_02");//(хитро) Когда ты выполнишь свою работу - и выполнишь ее хорошо - и выяснишь, кто виноват, мы убьем тупицу вместе. А теперь иди!
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_JA_15_00");//РќРµ С‚Рѕ С‡С‚РѕР±С‹ Сѓ РјРµРЅСЏ Р±С‹Р» РІС‹Р±РѕСЂ...
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_01");//РЇ Р·РЅР°Р», С‡С‚Рѕ РјС‹ СЃРјРѕР¶РµРј РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_02");//(С…РёС‚СЂРѕ) РљРѕРіРґР° С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ - Рё РІС‹РїРѕР»РЅРёС€СЊ РµРµ С…РѕСЂРѕС€Рѕ - Рё РІС‹СЏСЃРЅРёС€СЊ, РєС‚Рѕ РІРёРЅРѕРІР°С‚, РјС‹ СѓР±СЊРµРј С‚СѓРїРёС†Сѓ РІРјРµСЃС‚Рµ. Рђ С‚РµРїРµСЂСЊ РёРґРё!
 	
 	Senyan_Erpressung = LOG_RUNNING;
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
 	
-	B_LogEntry (Topic_Addon_Senyan,"Сеньян хочет, чтобы я нашел виновного и убил его. После этого я получу свою награду.");
+	B_LogEntry (Topic_Addon_Senyan,"РЎРµРЅСЊСЏРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РЅР°С€РµР» РІРёРЅРѕРІРЅРѕРіРѕ Рё СѓР±РёР» РµРіРѕ. РџРѕСЃР»Рµ СЌС‚РѕРіРѕ СЏ РїРѕР»СѓС‡Сѓ СЃРІРѕСЋ РЅР°РіСЂР°РґСѓ.");
 };
 
 //----------------------------------------------------------------------
-//	Anders Ьberlegt
+//	Anders Р¬berlegt
 //----------------------------------------------------------------------
 INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 {
@@ -267,7 +267,7 @@ INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 	condition   = DIA_Addon_Senyan_ChangePlan_Condition;
 	information = DIA_Addon_Senyan_ChangePlan_Info;
 	permanent   = FALSE;
-	description = "Я передумал. Мы больше не работаем вместе!";
+	description = "РЇ РїРµСЂРµРґСѓРјР°Р». РњС‹ Р±РѕР»СЊС€Рµ РЅРµ СЂР°Р±РѕС‚Р°РµРј РІРјРµСЃС‚Рµ!";
 };
 FUNC INT DIA_Addon_Senyan_ChangePlan_Condition()
 {	
@@ -279,7 +279,7 @@ FUNC INT DIA_Addon_Senyan_ChangePlan_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_ChangePlan_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Senyan_ChangePlan_15_00"); //Я передумал. Мы больше не работаем вместе!
+	AI_Output (other, self, "DIA_Addon_Senyan_ChangePlan_15_00"); //РЇ РїРµСЂРµРґСѓРјР°Р». РњС‹ Р±РѕР»СЊС€Рµ РЅРµ СЂР°Р±РѕС‚Р°РµРј РІРјРµСЃС‚Рµ!
 	B_Senyan_Attack(); 
 			
 	AI_StopProcessInfos (self);
@@ -295,7 +295,7 @@ INSTANCE DIA_Addon_BDT_1084_Senyan_Found   (C_INFO)
 	condition   = DIA_Addon_Senyan_Found_Condition;
 	information = DIA_Addon_Senyan_Found_Info;
 	permanent   = FALSE;
-	description = "Я нашел предателя. Это Фиск.";
+	description = "РЇ РЅР°С€РµР» РїСЂРµРґР°С‚РµР»СЏ. Р­С‚Рѕ Р¤РёСЃРє.";
 };
 FUNC INT DIA_Addon_Senyan_Found_Condition()
 {	
@@ -307,7 +307,7 @@ FUNC INT DIA_Addon_Senyan_Found_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_Found_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Found_15_00");//Я нашел предателя. Это Фиск.
+	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Found_15_00");//РЇ РЅР°С€РµР» РїСЂРµРґР°С‚РµР»СЏ. Р­С‚Рѕ Р¤РёСЃРє.
 	B_Senyan_Attack(); 
 };		
 //----------------------------------------------------------------------
@@ -334,7 +334,7 @@ FUNC INT DIA_Addon_Senyan_derbe_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_derbe_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_derbe_12_00");//(в ярости) Ты не выполнил наше соглашение.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_derbe_12_00");//(РІ СЏСЂРѕСЃС‚Рё) РўС‹ РЅРµ РІС‹РїРѕР»РЅРёР» РЅР°С€Рµ СЃРѕРіР»Р°С€РµРЅРёРµ.
 	
 	B_Senyan_Attack();		
 };

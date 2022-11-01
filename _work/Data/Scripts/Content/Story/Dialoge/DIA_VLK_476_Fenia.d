@@ -20,12 +20,12 @@ FUNC VOID DIA_Fenia_EXIT_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //Приветствую, мистер Паладин.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //РџСЂРёРІРµС‚СЃС‚РІСѓСЋ, РјРёСЃС‚РµСЂ РџР°Р»Р°РґРёРЅ.
 	};
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //Удачной тебе дороги, о, достопочтенный маг.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //РЈРґР°С‡РЅРѕР№ С‚РµР±Рµ РґРѕСЂРѕРіРё, Рѕ, РґРѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅС‹Р№ РјР°Рі.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -90,13 +90,13 @@ FUNC VOID DIA_Fenia_Hallo_Info()
 {
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //Ты выглядишь уставшим. Давно не спал, да?
-			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Слишком давно, я бы сказал.
+			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //РўС‹ РІС‹РіР»СЏРґРёС€СЊ СѓСЃС‚Р°РІС€РёРј. Р”Р°РІРЅРѕ РЅРµ СЃРїР°Р», РґР°?
+			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //РЎР»РёС€РєРѕРј РґР°РІРЅРѕ, СЏ Р±С‹ СЃРєР°Р·Р°Р».
 		};
-	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //Подойди поближе, не робей. У меня ты найдешь все, что тебе нужно!
+	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //РџРѕРґРѕР№РґРё РїРѕР±Р»РёР¶Рµ, РЅРµ СЂРѕР±РµР№. РЈ РјРµРЅСЏ С‚С‹ РЅР°Р№РґРµС€СЊ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ!
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Феня торгует едой по пути в гавань.");
+	B_LogEntry (Topic_CityTrader,"Р¤РµРЅСЏ С‚РѕСЂРіСѓРµС‚ РµРґРѕР№ РїРѕ РїСѓС‚Рё РІ РіР°РІР°РЅСЊ.");
 };
 
 
@@ -111,7 +111,7 @@ instance DIA_Fenia_HANDELN		(C_INFO)
 	information	 = 	DIA_Fenia_HANDELN_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Fenia_HANDELN_Condition ()
@@ -124,7 +124,7 @@ func int DIA_Fenia_HANDELN_Condition ()
 func void DIA_Fenia_HANDELN_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Fenia_HANDELN_15_00"); //Покажи мне свои товары.
+	AI_Output			(other, self, "DIA_Fenia_HANDELN_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -137,7 +137,7 @@ instance DIA_Fenia_Infos		(C_INFO)
 	condition	 = 	DIA_Fenia_Infos_Condition;
 	information	 = 	DIA_Fenia_Infos_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Ты сказала, у тебя есть все, что мне нужно. Это включает информацию?";
+	description	 = 	"РўС‹ СЃРєР°Р·Р°Р»Р°, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РІСЃРµ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ. Р­С‚Рѕ РІРєР»СЋС‡Р°РµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ?";
 };
 
 func int DIA_Fenia_Infos_Condition ()
@@ -149,8 +149,8 @@ func int DIA_Fenia_Infos_Condition ()
 };
 func void DIA_Fenia_Infos_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_15_00"); //Ты сказала, у тебя есть все, что мне нужно. Это включает информацию?
-	AI_Output			(self, other, "DIA_Fenia_Infos_17_01"); //Конечно. Что ты хочешь узнать?
+	AI_Output			(other, self, "DIA_Fenia_Infos_15_00"); //РўС‹ СЃРєР°Р·Р°Р»Р°, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РІСЃРµ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ. Р­С‚Рѕ РІРєР»СЋС‡Р°РµС‚ РёРЅС„РѕСЂРјР°С†РёСЋ?
+	AI_Output			(self, other, "DIA_Fenia_Infos_17_01"); //РљРѕРЅРµС‡РЅРѕ. Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Fenia_MoreTraders (C_INFO)
 	condition	= DIA_Fenia_MoreTraders_Condition;
 	information	= DIA_Fenia_MoreTraders_Info;
 	permanent 	= FALSE;
-	description	= "Есть здесь, в порту, другие торговцы?";
+	description	= "Р•СЃС‚СЊ Р·РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ, РґСЂСѓРіРёРµ С‚РѕСЂРіРѕРІС†С‹?";
 };
 
 func int DIA_Fenia_MoreTraders_Condition ()
@@ -175,9 +175,9 @@ func int DIA_Fenia_MoreTraders_Condition ()
 };
 func void DIA_Fenia_MoreTraders_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Есть здесь, в порту, другие торговцы?
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Если ты пойдешь налево вдоль причала, то увидишь Халвора, моего мужа. Он торгует рыбой.
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //А если пойдешь в другую сторону, там живет Ибрагим, картограф.
+	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Р•СЃС‚СЊ Р·РґРµСЃСЊ, РІ РїРѕСЂС‚Сѓ, РґСЂСѓРіРёРµ С‚РѕСЂРіРѕРІС†С‹?
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Р•СЃР»Рё С‚С‹ РїРѕР№РґРµС€СЊ РЅР°Р»РµРІРѕ РІРґРѕР»СЊ РїСЂРёС‡Р°Р»Р°, С‚Рѕ СѓРІРёРґРёС€СЊ РҐР°Р»РІРѕСЂР°, РјРѕРµРіРѕ РјСѓР¶Р°. РћРЅ С‚РѕСЂРіСѓРµС‚ СЂС‹Р±РѕР№.
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Рђ РµСЃР»Рё РїРѕР№РґРµС€СЊ РІ РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ, С‚Р°Рј Р¶РёРІРµС‚ РР±СЂР°РіРёРј, РєР°СЂС‚РѕРіСЂР°С„.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -190,7 +190,7 @@ instance DIA_Fenia_OV (C_INFO)
 	condition	= DIA_Fenia_OV_Condition;
 	information	= DIA_Fenia_OV_Info;
 	permanent 	= FALSE;
-	description	= "Ты знаешь кого-нибудь из верхнего квартала?";
+	description	= "РўС‹ Р·РЅР°РµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°?";
 };
 
 func int DIA_Fenia_OV_Condition ()
@@ -203,8 +203,8 @@ func int DIA_Fenia_OV_Condition ()
 };
 func void DIA_Fenia_OV_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Ты знаешь кого-нибудь из верхнего квартала?
-	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(смеется) Если бы я кого-нибудь там знала, я бы здесь не стояла, малыш.
+	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //РўС‹ Р·РЅР°РµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°?
+	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(СЃРјРµРµС‚СЃСЏ) Р•СЃР»Рё Р±С‹ СЏ РєРѕРіРѕ-РЅРёР±СѓРґСЊ С‚Р°Рј Р·РЅР°Р»Р°, СЏ Р±С‹ Р·РґРµСЃСЊ РЅРµ СЃС‚РѕСЏР»Р°, РјР°Р»С‹С€.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -217,7 +217,7 @@ instance DIA_Fenia_Interesting (C_INFO)
 	condition	= DIA_Fenia_Interesting_Condition;
 	information	= DIA_Fenia_Interesting_Info;
 	permanent 	= FALSE;
-	description	= "На что интересное стоит обратить внимание в порту?";
+	description	= "РќР° С‡С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ РІ РїРѕСЂС‚Сѓ?";
 };
 
 func int DIA_Fenia_Interesting_Condition ()
@@ -229,11 +229,11 @@ func int DIA_Fenia_Interesting_Condition ()
 };
 func void DIA_Fenia_Interesting_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //На что интересное стоит обратить внимание в порту?
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Ну... Если ты ищешь приключений, иди в кабак Кардифа у причала. Там всегда что-нибудь затевается.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //Ты вряд ли пропустишь его. Парень, стоящий перед входом туда, обязательно привлечет твое внимание к нему.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //Кроме того, в порту стоит большой корабль паладинов. Королевская военная галера. На это действительно стоит посмотреть.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //Ты увидишь ее, если пойдешь влево вдоль причала, а затем пройдешь под большой скалой.
+	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //РќР° С‡С‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕРµ СЃС‚РѕРёС‚ РѕР±СЂР°С‚РёС‚СЊ РІРЅРёРјР°РЅРёРµ РІ РїРѕСЂС‚Сѓ?
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //РќСѓ... Р•СЃР»Рё С‚С‹ РёС‰РµС€СЊ РїСЂРёРєР»СЋС‡РµРЅРёР№, РёРґРё РІ РєР°Р±Р°Рє РљР°СЂРґРёС„Р° Сѓ РїСЂРёС‡Р°Р»Р°. РўР°Рј РІСЃРµРіРґР° С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·Р°С‚РµРІР°РµС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //РўС‹ РІСЂСЏРґ Р»Рё РїСЂРѕРїСѓСЃС‚РёС€СЊ РµРіРѕ. РџР°СЂРµРЅСЊ, СЃС‚РѕСЏС‰РёР№ РїРµСЂРµРґ РІС…РѕРґРѕРј С‚СѓРґР°, РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїСЂРёРІР»РµС‡РµС‚ С‚РІРѕРµ РІРЅРёРјР°РЅРёРµ Рє РЅРµРјСѓ.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РІ РїРѕСЂС‚Сѓ СЃС‚РѕРёС‚ Р±РѕР»СЊС€РѕР№ РєРѕСЂР°Р±Р»СЊ РїР°Р»Р°РґРёРЅРѕРІ. РљРѕСЂРѕР»РµРІСЃРєР°СЏ РІРѕРµРЅРЅР°СЏ РіР°Р»РµСЂР°. РќР° СЌС‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃС‚РѕРёС‚ РїРѕСЃРјРѕС‚СЂРµС‚СЊ.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //РўС‹ СѓРІРёРґРёС€СЊ РµРµ, РµСЃР»Рё РїРѕР№РґРµС€СЊ РІР»РµРІРѕ РІРґРѕР»СЊ РїСЂРёС‡Р°Р»Р°, Р° Р·Р°С‚РµРј РїСЂРѕР№РґРµС€СЊ РїРѕРґ Р±РѕР»СЊС€РѕР№ СЃРєР°Р»РѕР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -246,7 +246,7 @@ instance DIA_Fenia_Aufregend (C_INFO)
 	condition	= DIA_Fenia_Aufregend_Condition;
 	information	= DIA_Fenia_Aufregend_Info;
 	permanent 	= FALSE;
-	description	= "Ничего интересного не было?";
+	description	= "РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ Р±С‹Р»Рѕ?";
 };
 
 func int DIA_Fenia_Aufregend_Condition ()
@@ -258,11 +258,11 @@ func int DIA_Fenia_Aufregend_Condition ()
 };
 func void DIA_Fenia_Aufregend_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Ничего интересного не было?
-	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Было. И совсем недавно.
-	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Здесь пробежал вор. Он, похоже, украл лук где-то в нижней части города.
-	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Конечно, как всегда ополчение прибыло слишком поздно.
-	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Ему удалось сбежать от них - он прыгнул в море и был таков.
+	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РЅРµ Р±С‹Р»Рѕ?
+	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Р‘С‹Р»Рѕ. Р СЃРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ.
+	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Р—РґРµСЃСЊ РїСЂРѕР±РµР¶Р°Р» РІРѕСЂ. РћРЅ, РїРѕС…РѕР¶Рµ, СѓРєСЂР°Р» Р»СѓРє РіРґРµ-С‚Рѕ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //РљРѕРЅРµС‡РЅРѕ, РєР°Рє РІСЃРµРіРґР° РѕРїРѕР»С‡РµРЅРёРµ РїСЂРёР±С‹Р»Рѕ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.
+	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Р•РјСѓ СѓРґР°Р»РѕСЃСЊ СЃР±РµР¶Р°С‚СЊ РѕС‚ РЅРёС… - РѕРЅ РїСЂС‹РіРЅСѓР» РІ РјРѕСЂРµ Рё Р±С‹Р» С‚Р°РєРѕРІ.
 };
 
 

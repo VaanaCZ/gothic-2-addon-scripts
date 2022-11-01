@@ -79,35 +79,35 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	var int randy;
 	randy = Hlp_Random (2);
 	
-	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Эй, не стесняйся, подходи. Отведай холодного пива.
+	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Р­Р№, РЅРµ СЃС‚РµСЃРЅСЏР№СЃСЏ, РїРѕРґС…РѕРґРё. РћС‚РІРµРґР°Р№ С…РѕР»РѕРґРЅРѕРіРѕ РїРёРІР°.
 	
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE) 
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//Лорд Андрэ расщедрился на несколько бочек бесплатного пива.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//Р›РѕСЂРґ РђРЅРґСЂСЌ СЂР°СЃС‰РµРґСЂРёР»СЃСЏ РЅР° РЅРµСЃРєРѕР»СЊРєРѕ Р±РѕС‡РµРє Р±РµСЃРїР»Р°С‚РЅРѕРіРѕ РїРёРІР°.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 0)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Нет ничего лучше, чем кружка холодного пива после работы.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//РќРµС‚ РЅРёС‡РµРіРѕ Р»СѓС‡С€Рµ, С‡РµРј РєСЂСѓР¶РєР° С…РѕР»РѕРґРЅРѕРіРѕ РїРёРІР° РїРѕСЃР»Рµ СЂР°Р±РѕС‚С‹.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 1)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//Паладины со всем разберутся сами. А ты можешь потягивать здесь пиво и наслаждаться жизнью.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//РџР°Р»Р°РґРёРЅС‹ СЃРѕ РІСЃРµРј СЂР°Р·Р±РµСЂСѓС‚СЃСЏ СЃР°РјРё. Рђ С‚С‹ РјРѕР¶РµС€СЊ РїРѕС‚СЏРіРёРІР°С‚СЊ Р·РґРµСЃСЊ РїРёРІРѕ Рё РЅР°СЃР»Р°Р¶РґР°С‚СЊСЃСЏ Р¶РёР·РЅСЊСЋ.
 		
 		B_GiveInvItems (self, other, ItFo_Beer,1);
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 2)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Можно говорить о Хоринисе что угодно, но наше 'Темное паладинское' бесспорно самое лучшее пиво во всей Миртане.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//РњРѕР¶РЅРѕ РіРѕРІРѕСЂРёС‚СЊ Рѕ РҐРѕСЂРёРЅРёСЃРµ С‡С‚Рѕ СѓРіРѕРґРЅРѕ, РЅРѕ РЅР°С€Рµ 'РўРµРјРЅРѕРµ РїР°Р»Р°РґРёРЅСЃРєРѕРµ' Р±РµСЃСЃРїРѕСЂРЅРѕ СЃР°РјРѕРµ Р»СѓС‡С€РµРµ РїРёРІРѕ РІРѕ РІСЃРµР№ РњРёСЂС‚Р°РЅРµ.
 		AI_StopProcessInfos (self);
 	};
 };
 
 /*
-	Wenn du ein Problem hast und es lдsst sich lцsen, dann denk nicht weiter drьber nach.
-	Und wenn du es nicht lцsen kannst, dann brauchst du auch nicht weiter drьber nachzudenken. 
+	Wenn du ein Problem hast und es lРґsst sich lС†sen, dann denk nicht weiter drСЊber nach.
+	Und wenn du es nicht lС†sen kannst, dann brauchst du auch nicht weiter drСЊber nachzudenken. 
 */
 
 

@@ -33,7 +33,7 @@ INSTANCE DIA_Milten_DI_Hello(C_INFO)
 	condition	= DIA_Milten_DI_Hello_Condition;
 	information	= DIA_Milten_DI_Hello_Info;
 
-	description = "Прямо как в старые времена.";
+	description = "РџСЂСЏРјРѕ РєР°Рє РІ СЃС‚Р°СЂС‹Рµ РІСЂРµРјРµРЅР°.";
 
 };                       
 
@@ -47,10 +47,10 @@ FUNC INT DIA_Milten_DI_Hello_Condition()
 
 FUNC VOID DIA_Milten_DI_Hello_Info()
 {	
-		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_00"); //Прямо как в старые времена.
-		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_01"); //Ты сам сказал это. Мне даже интересно, сможешь ли ты выкарабкаться на этот раз.
-		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_02"); //Ты о чем?
-		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_03"); //Удастся ли тебе спасти свою задницу, когда на тебя опять обрушится весь этот ад.
+		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_00"); //РџСЂСЏРјРѕ РєР°Рє РІ СЃС‚Р°СЂС‹Рµ РІСЂРµРјРµРЅР°.
+		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_01"); //РўС‹ СЃР°Рј СЃРєР°Р·Р°Р» СЌС‚Рѕ. РњРЅРµ РґР°Р¶Рµ РёРЅС‚РµСЂРµСЃРЅРѕ, СЃРјРѕР¶РµС€СЊ Р»Рё С‚С‹ РІС‹РєР°СЂР°Р±РєР°С‚СЊСЃСЏ РЅР° СЌС‚РѕС‚ СЂР°Р·.
+		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_02"); //РўС‹ Рѕ С‡РµРј?
+		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_03"); //РЈРґР°СЃС‚СЃСЏ Р»Рё С‚РµР±Рµ СЃРїР°СЃС‚Рё СЃРІРѕСЋ Р·Р°РґРЅРёС†Сѓ, РєРѕРіРґР° РЅР° С‚РµР±СЏ РѕРїСЏС‚СЊ РѕР±СЂСѓС€РёС‚СЃСЏ РІРµСЃСЊ СЌС‚РѕС‚ Р°Рґ.
 	
 };	
  
@@ -66,7 +66,7 @@ instance DIA_Milten_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Есть несколько лишних зелий?";
+	description	 = 	"Р•СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ Р»РёС€РЅРёС… Р·РµР»РёР№?";
 };
 
 func int DIA_Milten_DI_TRADE_Condition ()
@@ -80,7 +80,7 @@ func int DIA_Milten_DI_TRADE_Condition ()
 
 func void DIA_Milten_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_TRADE_15_00"); //Есть несколько лишних зелий?
+	AI_Output			(other, self, "DIA_Milten_DI_TRADE_15_00"); //Р•СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ Р»РёС€РЅРёС… Р·РµР»РёР№?
 	B_GiveTradeInv (self);
 	//Joly: Mc ManaHealth
 	//////////////////////////////////////////////////////////////////////////////////////
@@ -93,7 +93,7 @@ func void DIA_Milten_DI_TRADE_Info ()
 	
 	
 	
-	AI_Output			(self, other, "DIA_Milten_DI_TRADE_03_01"); //Пока есть запас.
+	AI_Output			(self, other, "DIA_Milten_DI_TRADE_03_01"); //РџРѕРєР° РµСЃС‚СЊ Р·Р°РїР°СЃ.
 };
 //*************************************************************
 //Rat!
@@ -106,7 +106,7 @@ INSTANCE DIA_Milten_DI_Rat(C_INFO)
 	condition	= DIA_Milten_DI_Rat_Condition;
 	information	= DIA_Milten_DI_Rat_Info;
 
-	description = "Какой совет ты можешь дать мне?";
+	description = "РљР°РєРѕР№ СЃРѕРІРµС‚ С‚С‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ?";
 
 };                       
 FUNC INT DIA_Milten_DI_Rat_Condition()
@@ -120,35 +120,35 @@ FUNC INT DIA_Milten_DI_Rat_Condition()
 
 FUNC VOID DIA_Milten_DI_Rat_Info()
 {	
-	AI_Output (other,self ,"DIA_Milten_DI_Rat_15_00"); //Можешь дать мне какой-нибудь совет?
-	AI_Output (self ,other,"DIA_Milten_DI_Rat_03_01"); //Ммм. Это большая честь, что ты спрашиваешь у меня совета. Но у меня в голове все это время вертится только одно.
-	AI_Output (self, other, "DIA_Milten_DI_Rat_03_02"); //У тебя есть Глаз Инноса?
+	AI_Output (other,self ,"DIA_Milten_DI_Rat_15_00"); //РњРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РєР°РєРѕР№-РЅРёР±СѓРґСЊ СЃРѕРІРµС‚?
+	AI_Output (self ,other,"DIA_Milten_DI_Rat_03_01"); //РњРјРј. Р­С‚Рѕ Р±РѕР»СЊС€Р°СЏ С‡РµСЃС‚СЊ, С‡С‚Рѕ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ Сѓ РјРµРЅСЏ СЃРѕРІРµС‚Р°. РќРѕ Сѓ РјРµРЅСЏ РІ РіРѕР»РѕРІРµ РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ РІРµСЂС‚РёС‚СЃСЏ С‚РѕР»СЊРєРѕ РѕРґРЅРѕ.
+	AI_Output (self, other, "DIA_Milten_DI_Rat_03_02"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°?
 	
 	Info_ClearChoices	(DIA_Milten_DI_Rat);
 
 	if (SC_InnosEyeVergessen_DI == TRUE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_Rat, "Нет.", DIA_Milten_DI_Rat_nein );
+		Info_AddChoice	(DIA_Milten_DI_Rat, "РќРµС‚.", DIA_Milten_DI_Rat_nein );
 	}
 	else
 	{
-		Info_AddChoice	(DIA_Milten_DI_Rat, "Конечно.", DIA_Milten_DI_Rat_ja );
+		Info_AddChoice	(DIA_Milten_DI_Rat, "РљРѕРЅРµС‡РЅРѕ.", DIA_Milten_DI_Rat_ja );
 	};
 };	
 
 func void DIA_Milten_DI_Rat_nein ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_Rat_nein_15_00"); //Нет.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_01"); //(возмущенно) Ты такой...Что ты будешь делать, если ты встретишься с драконами здесь, на острове?
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_02"); //Ты так и не поумнел? Здесь у нас есть даже алхимический стол, мы могли бы спокойно перезарядить Глаз.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_03"); //А ты о чем думаешь? Мне остается только надеяться, что твоя непредусмотрительность не будет стоить нам жизней.
+	AI_Output			(other, self, "DIA_Milten_DI_Rat_nein_15_00"); //РќРµС‚.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_01"); //(РІРѕР·РјСѓС‰РµРЅРЅРѕ) РўС‹ С‚Р°РєРѕР№...Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ, РµСЃР»Рё С‚С‹ РІСЃС‚СЂРµС‚РёС€СЊСЃСЏ СЃ РґСЂР°РєРѕРЅР°РјРё Р·РґРµСЃСЊ, РЅР° РѕСЃС‚СЂРѕРІРµ?
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_02"); //РўС‹ С‚Р°Рє Рё РЅРµ РїРѕСѓРјРЅРµР»? Р—РґРµСЃСЊ Сѓ РЅР°СЃ РµСЃС‚СЊ РґР°Р¶Рµ Р°Р»С…РёРјРёС‡РµСЃРєРёР№ СЃС‚РѕР», РјС‹ РјРѕРіР»Рё Р±С‹ СЃРїРѕРєРѕР№РЅРѕ РїРµСЂРµР·Р°СЂСЏРґРёС‚СЊ Р“Р»Р°Р·.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_03"); //Рђ С‚С‹ Рѕ С‡РµРј РґСѓРјР°РµС€СЊ? РњРЅРµ РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ С‚РІРѕСЏ РЅРµРїСЂРµРґСѓСЃРјРѕС‚СЂРёС‚РµР»СЊРЅРѕСЃС‚СЊ РЅРµ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ РЅР°Рј Р¶РёР·РЅРµР№.
 	Info_ClearChoices	(DIA_Milten_DI_Rat);
 };
 
 func void DIA_Milten_DI_Rat_ja ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_Rat_ja_15_00"); //Конечно.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_ja_03_01"); //Извини, что я задаю такой глупый вопрос. Я немного нервничаю.
+	AI_Output			(other, self, "DIA_Milten_DI_Rat_ja_15_00"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_ja_03_01"); //РР·РІРёРЅРё, С‡С‚Рѕ СЏ Р·Р°РґР°СЋ С‚Р°РєРѕР№ РіР»СѓРїС‹Р№ РІРѕРїСЂРѕСЃ. РЇ РЅРµРјРЅРѕРіРѕ РЅРµСЂРІРЅРёС‡Р°СЋ.
  	B_GivePlayerXP (XP_Ambient);
  	Info_ClearChoices	(DIA_Milten_DI_Rat);
 
@@ -164,7 +164,7 @@ instance DIA_Milten_DI_PEDROTOT		(C_INFO)
 	condition	 = 	DIA_Milten_DI_PEDROTOT_Condition;
 	information	 = 	DIA_Milten_DI_PEDROTOT_Info;
 
-	description	 = 	"Я нашел Педро.";
+	description	 = 	"РЇ РЅР°С€РµР» РџРµРґСЂРѕ.";
 };
 
 func int DIA_Milten_DI_PEDROTOT_Condition ()
@@ -177,19 +177,19 @@ func int DIA_Milten_DI_PEDROTOT_Condition ()
 
 func void DIA_Milten_DI_PEDROTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_00"); //Я нашел Педро.
-	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_01"); //(удивленно) Что? Где? Здесь, на острове? Черт, но это абсолютно невероятно.
-	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_02"); //Я понятия не имел, что он такой подонок.
+	AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_00"); //РЇ РЅР°С€РµР» РџРµРґСЂРѕ.
+	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_01"); //(СѓРґРёРІР»РµРЅРЅРѕ) Р§С‚Рѕ? Р“РґРµ? Р—РґРµСЃСЊ, РЅР° РѕСЃС‚СЂРѕРІРµ? Р§РµСЂС‚, РЅРѕ СЌС‚Рѕ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРµРІРµСЂРѕСЏС‚РЅРѕ.
+	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_02"); //РЇ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµР», С‡С‚Рѕ РѕРЅ С‚Р°РєРѕР№ РїРѕРґРѕРЅРѕРє.
 	B_GivePlayerXP (XP_Ambient);
 
 	if (Npc_IsDead(Pedro_DI))
 	{
-		AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_03"); //Он мертв.
-		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_04"); //Да? Хорошо. Да упокоится его прах с миром. Хотя я не могу сказать, что мне жаль его, я все же был бы не прочь задать ему парочку вопросов.
+		AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_03"); //РћРЅ РјРµСЂС‚РІ.
+		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_04"); //Р”Р°? РҐРѕСЂРѕС€Рѕ. Р”Р° СѓРїРѕРєРѕРёС‚СЃСЏ РµРіРѕ РїСЂР°С… СЃ РјРёСЂРѕРј. РҐРѕС‚СЏ СЏ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјРЅРµ Р¶Р°Р»СЊ РµРіРѕ, СЏ РІСЃРµ Р¶Рµ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ Р·Р°РґР°С‚СЊ РµРјСѓ РїР°СЂРѕС‡РєСѓ РІРѕРїСЂРѕСЃРѕРІ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_05"); //У меня с ним давние счеты.
+		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_05"); //РЈ РјРµРЅСЏ СЃ РЅРёРј РґР°РІРЅРёРµ СЃС‡РµС‚С‹.
 	};
 };
 
@@ -205,7 +205,7 @@ INSTANCE DIA_Milten_DI_TeachMagic(C_INFO)
 	information	= DIA_Milten_DI_TeachMagic_Info;
 	permanent	 = 	TRUE;
 
-	description = "Я хочу повысить свои магические способности.";
+	description = "РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 
 };                       
 FUNC INT DIA_Milten_DI_TeachMagic_Condition()
@@ -220,22 +220,22 @@ FUNC INT DIA_Milten_DI_TeachMagic_Condition()
 var int DIA_Milten_DI_TeachMagic_OneTime;
 FUNC VOID DIA_Milten_DI_TeachMagic_Info()
 {	
-	AI_Output (other,self ,"DIA_Milten_DI_TeachMagic_15_00"); //Я хочу повысить свои магические способности.
+	AI_Output (other,self ,"DIA_Milten_DI_TeachMagic_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_01"); //Я сделаю все, что смогу.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_01"); //РЇ СЃРґРµР»Р°СЋ РІСЃРµ, С‡С‚Рѕ СЃРјРѕРіСѓ.
 	}
 	else
 	{
 		if (DIA_Milten_DI_TeachMagic_OneTime == FALSE)
 			{
-				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_02"); //Я помогу тебе, но только при условии, что ты позаботишься, чтобы орки оставались там, где они есть сейчас.
+				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_02"); //РЇ РїРѕРјРѕРіСѓ С‚РµР±Рµ, РЅРѕ С‚РѕР»СЊРєРѕ РїСЂРё СѓСЃР»РѕРІРёРё, С‡С‚Рѕ С‚С‹ РїРѕР·Р°Р±РѕС‚РёС€СЊСЃСЏ, С‡С‚РѕР±С‹ РѕСЂРєРё РѕСЃС‚Р°РІР°Р»РёСЃСЊ С‚Р°Рј, РіРґРµ РѕРЅРё РµСЃС‚СЊ СЃРµР№С‡Р°СЃ.
 				DIA_Milten_DI_TeachMagic_OneTime = TRUE;
 			}
 		else
 			{
-				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_03"); //Хорошо. Что ты хочешь?
+				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_03"); //РҐРѕСЂРѕС€Рѕ. Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ?
 			};
 	};
 	
@@ -247,7 +247,7 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Info()
 
 	if (hero.guild == GIL_KDF)
 	{
-	Info_AddChoice	  	(DIA_Milten_DI_TeachMagic, 	"Создание рун", DIA_Milten_DI_TeachMagic_RUNES);
+	Info_AddChoice	  	(DIA_Milten_DI_TeachMagic, 	"РЎРѕР·РґР°РЅРёРµ СЂСѓРЅ", DIA_Milten_DI_TeachMagic_RUNES);
 	};	
 };
 
@@ -256,7 +256,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_1()
 {
 	if (B_TeachAttributePoints (self, other, ATR_MANA_MAX, 1, T_HIGH))
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //Да ведет тебя рука Инноса.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //Р”Р° РІРµРґРµС‚ С‚РµР±СЏ СЂСѓРєР° РРЅРЅРѕСЃР°.
 	};
 
 	Info_ClearChoices 	(DIA_Milten_DI_TeachMagic);
@@ -267,7 +267,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_1()
 
 	if (hero.guild == GIL_KDF)
 	{
-	Info_AddChoice	  	(DIA_Milten_DI_TeachMagic, 	"Создание рун", DIA_Milten_DI_TeachMagic_RUNES);
+	Info_AddChoice	  	(DIA_Milten_DI_TeachMagic, 	"РЎРѕР·РґР°РЅРёРµ СЂСѓРЅ", DIA_Milten_DI_TeachMagic_RUNES);
 	};	
 };
 
@@ -276,7 +276,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_5()
 {
 	if (B_TeachAttributePoints (self, other, ATR_MANA_MAX, 5, T_HIGH))
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //Да осветит Иннос твой путь.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //Р”Р° РѕСЃРІРµС‚РёС‚ РРЅРЅРѕСЃ С‚РІРѕР№ РїСѓС‚СЊ.
 	};
 
 	Info_ClearChoices 	(DIA_Milten_DI_TeachMagic);
@@ -287,7 +287,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_5()
 	
 	if (hero.guild == GIL_KDF)
 	{
-	Info_AddChoice	  	(DIA_Milten_DI_TeachMagic, 	"Создание рун", DIA_Milten_DI_TeachMagic_RUNES);
+	Info_AddChoice	  	(DIA_Milten_DI_TeachMagic, 	"РЎРѕР·РґР°РЅРёРµ СЂСѓРЅ", DIA_Milten_DI_TeachMagic_RUNES);
 	};	
 };
 
@@ -296,27 +296,27 @@ FUNC VOID DIA_Milten_DI_TeachMagic_RUNES ()
 	Info_ClearChoices (DIA_Milten_DI_TeachMagic);
 	Info_AddChoice	  (DIA_Milten_DI_TeachMagic, DIALOG_BACK, DIA_Milten_DI_TeachMagic_BACK);
 	
-	AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00"); //Ох, нет! Я не большой специалист в этом, но мы как-нибудь справимся.
+	AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00"); //РћС…, РЅРµС‚! РЇ РЅРµ Р±РѕР»СЊС€РѕР№ СЃРїРµС†РёР°Р»РёСЃС‚ РІ СЌС‚РѕРј, РЅРѕ РјС‹ РєР°Рє-РЅРёР±СѓРґСЊ СЃРїСЂР°РІРёРјСЃСЏ.
 
 	if (hero.guild == GIL_PAL)
 	{
-		Info_AddChoice	  (DIA_Milten_DI_TeachMagic,"Руны паладинов", DIA_Milten_DI_TeachMagic_Runen_Paladin);
+		Info_AddChoice	  (DIA_Milten_DI_TeachMagic,"Р СѓРЅС‹ РїР°Р»Р°РґРёРЅРѕРІ", DIA_Milten_DI_TeachMagic_Runen_Paladin);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 4)
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," Четвертый круг", DIA_Milten_DI_TeachMagic_Runen_Circle_4);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," Р§РµС‚РІРµСЂС‚С‹Р№ РєСЂСѓРі", DIA_Milten_DI_TeachMagic_Runen_Circle_4);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," Пятый круг", DIA_Milten_DI_TeachMagic_Runen_Circle_5);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," РџСЏС‚С‹Р№ РєСЂСѓРі", DIA_Milten_DI_TeachMagic_Runen_Circle_5);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 6) 
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," Шестой круг", DIA_Milten_DI_TeachMagic_Runen_Circle_6);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," РЁРµСЃС‚РѕР№ РєСЂСѓРі", DIA_Milten_DI_TeachMagic_Runen_Circle_6);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_01"); //Ох. Ты еще не вполне готов. Сначала ты должен изучить высшие круги, а затем я смогу помочь тебе.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_01"); //РћС…. РўС‹ РµС‰Рµ РЅРµ РІРїРѕР»РЅРµ РіРѕС‚РѕРІ. РЎРЅР°С‡Р°Р»Р° С‚С‹ РґРѕР»Р¶РµРЅ РёР·СѓС‡РёС‚СЊ РІС‹СЃС€РёРµ РєСЂСѓРіРё, Р° Р·Р°С‚РµРј СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 	};
 };
 
@@ -334,31 +334,31 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin ()
 	
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Свет", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLight)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("РЎРІРµС‚", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLight)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight);
 	};
 	if	(PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Малое исцеление", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLightHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLightHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("РњР°Р»РѕРµ РёСЃС†РµР»РµРЅРёРµ", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLightHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLightHeal);
 	};
 	if	(PLAYER_TALENT_RUNES [SPL_PalHolyBolt] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Святая стрела", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalHolyBolt)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalHolyBolt);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("РЎРІСЏС‚Р°СЏ СЃС‚СЂРµР»Р°", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalHolyBolt)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalHolyBolt);
 	};
 	if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Среднее исцеление", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalMediumHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalMediumHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("РЎСЂРµРґРЅРµРµ РёСЃС†РµР»РµРЅРёРµ", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalMediumHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalMediumHeal);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalRepelEvil] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Изгнание зла", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalRepelEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalRepelEvil);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("РР·РіРЅР°РЅРёРµ Р·Р»Р°", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalRepelEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalRepelEvil);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalFullHeal] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Большое исцеление", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalFullHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalFullHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Р‘РѕР»СЊС€РѕРµ РёСЃС†РµР»РµРЅРёРµ", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalFullHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalFullHeal);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalDestroyEvil] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Уничтожение зла", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalDestroyEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalDestroyEvil);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ Р·Р»Р°", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalDestroyEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalDestroyEvil);
 	};
 };
 FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight()
@@ -442,7 +442,7 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Circle_4_SPL_LightningFlash()
 	B_TeachPlayerTalentRunes (self, other, SPL_LightningFlash);		
 };
 //**********************************************************
-// Fьnfter Kreis 
+// FСЊnfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Circle_5()
@@ -552,7 +552,7 @@ instance DIA_Milten_DI_DementorObsessionBook		(C_INFO)
 	condition	 = 	DIA_Milten_DI_DementorObsessionBook_Condition;
 	information	 = 	DIA_Milten_DI_DementorObsessionBook_Info;
 
-	description	 = 	"Эта книга, Альманах Одержимых, говорит тебе о чем-то?";
+	description	 = 	"Р­С‚Р° РєРЅРёРіР°, РђР»СЊРјР°РЅР°С… РћРґРµСЂР¶РёРјС‹С…, РіРѕРІРѕСЂРёС‚ С‚РµР±Рµ Рѕ С‡РµРј-С‚Рѕ?";
 };
 
 func int DIA_Milten_DI_DementorObsessionBook_Condition ()
@@ -565,9 +565,9 @@ func int DIA_Milten_DI_DementorObsessionBook_Condition ()
 
 func void DIA_Milten_DI_DementorObsessionBook_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_DementorObsessionBook_15_00"); //Эта книга, Альманах Одержимых, говорит тебе о чем-то?
-	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_01"); //Пирокар эксперт по таким книгам.
-	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_02"); //Извини. Я знаю слишком мало, чтобы сказать что-либо умное об этом.
+	AI_Output			(other, self, "DIA_Milten_DI_DementorObsessionBook_15_00"); //Р­С‚Р° РєРЅРёРіР°, РђР»СЊРјР°РЅР°С… РћРґРµСЂР¶РёРјС‹С…, РіРѕРІРѕСЂРёС‚ С‚РµР±Рµ Рѕ С‡РµРј-С‚Рѕ?
+	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_01"); //РџРёСЂРѕРєР°СЂ СЌРєСЃРїРµСЂС‚ РїРѕ С‚Р°РєРёРј РєРЅРёРіР°Рј.
+	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_02"); //РР·РІРёРЅРё. РЇ Р·РЅР°СЋ СЃР»РёС€РєРѕРј РјР°Р»Рѕ, С‡С‚РѕР±С‹ СЃРєР°Р·Р°С‚СЊ С‡С‚Рѕ-Р»РёР±Рѕ СѓРјРЅРѕРµ РѕР± СЌС‚РѕРј.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -581,7 +581,7 @@ instance DIA_Milten_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Milten_DI_DragonEgg_Condition;
 	information	 = 	DIA_Milten_DI_DragonEgg_Info;
 
-	description	 = 	"Ты имел дело с драконьими яйцами?";
+	description	 = 	"РўС‹ РёРјРµР» РґРµР»Рѕ СЃ РґСЂР°РєРѕРЅСЊРёРјРё СЏР№С†Р°РјРё?";
 };
 
 func int DIA_Milten_DI_DragonEgg_Condition ()
@@ -594,9 +594,9 @@ func int DIA_Milten_DI_DragonEgg_Condition ()
 
 func void DIA_Milten_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_DragonEgg_15_00"); //Ты имел дело с драконьими яйцами?
-	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_01"); //Нет, не совсем. Я слышал, что искусный алхимик как-то смог сварить зелье из них.
-	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_02"); //Но, пожалуйста, не спрашивай меня о рецепте. Я понятия не имею, как оно готовится.
+	AI_Output			(other, self, "DIA_Milten_DI_DragonEgg_15_00"); //РўС‹ РёРјРµР» РґРµР»Рѕ СЃ РґСЂР°РєРѕРЅСЊРёРјРё СЏР№С†Р°РјРё?
+	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_01"); //РќРµС‚, РЅРµ СЃРѕРІСЃРµРј. РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ РёСЃРєСѓСЃРЅС‹Р№ Р°Р»С…РёРјРёРє РєР°Рє-С‚Рѕ СЃРјРѕРі СЃРІР°СЂРёС‚СЊ Р·РµР»СЊРµ РёР· РЅРёС….
+	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_02"); //РќРѕ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ СЃРїСЂР°С€РёРІР°Р№ РјРµРЅСЏ Рѕ СЂРµС†РµРїС‚Рµ. РЇ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РєР°Рє РѕРЅРѕ РіРѕС‚РѕРІРёС‚СЃСЏ.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -612,7 +612,7 @@ INSTANCE DIA_Milten_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_Milten_DI_UndeadDragonDead_Info;
 	permanent	= TRUE;
 
-	description = "Хорошо. Дело сделано!";
+	description = "РҐРѕСЂРѕС€Рѕ. Р”РµР»Рѕ СЃРґРµР»Р°РЅРѕ!";
 
 };
                        
@@ -627,29 +627,29 @@ FUNC INT DIA_Milten_DI_UndeadDragonDead_Condition()
 var int DIA_Milten_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Milten_DI_UndeadDragonDead_Info()
 {	
-		AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_00"); //Хорошо. Дело сделано! Храм теперь лишен своей силы.
+		AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_00"); //РҐРѕСЂРѕС€Рѕ. Р”РµР»Рѕ СЃРґРµР»Р°РЅРѕ! РҐСЂР°Рј С‚РµРїРµСЂСЊ Р»РёС€РµРЅ СЃРІРѕРµР№ СЃРёР»С‹.
 		
 		if (DIA_Milten_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_01"); //Как тебе всегда удается выходись сухим из воды?
-			AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_02"); //Черт меня побери, если я знаю.
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_03"); //(смеется) Мы, когда-нибудь сможем пожить спокойно? Мы, определенно, заслужили это.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_01"); //РљР°Рє С‚РµР±Рµ РІСЃРµРіРґР° СѓРґР°РµС‚СЃСЏ РІС‹С…РѕРґРёСЃСЊ СЃСѓС…РёРј РёР· РІРѕРґС‹?
+			AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_02"); //Р§РµСЂС‚ РјРµРЅСЏ РїРѕР±РµСЂРё, РµСЃР»Рё СЏ Р·РЅР°СЋ.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_03"); //(СЃРјРµРµС‚СЃСЏ) РњС‹, РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃРјРѕР¶РµРј РїРѕР¶РёС‚СЊ СЃРїРѕРєРѕР№РЅРѕ? РњС‹, РѕРїСЂРµРґРµР»РµРЅРЅРѕ, Р·Р°СЃР»СѓР¶РёР»Рё СЌС‚Рѕ.
 			
 			if (hero.guild == GIL_KDF)
 				{
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_04"); //Что ты собираешься делать сейчас?
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_05"); //Я думаю об основании собственной академии, чтобы проповедовать нашу веру. Но из этого может ничего не получиться.
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_06"); //Я никогда не жалел о том, что стал Магом Огня. А как тебе это?
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_07"); //Я даже не знаю.
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_08"); //(смеется) Сухо, как всегда. Эй, парень. Ты только что спас мир. Разве это недостаточная причина для радости?
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_09"); //Ммм. Может быть.
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_04"); //Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ СЃРµР№С‡Р°СЃ?
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_05"); //РЇ РґСѓРјР°СЋ РѕР± РѕСЃРЅРѕРІР°РЅРёРё СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ Р°РєР°РґРµРјРёРё, С‡С‚РѕР±С‹ РїСЂРѕРїРѕРІРµРґРѕРІР°С‚СЊ РЅР°С€Сѓ РІРµСЂСѓ. РќРѕ РёР· СЌС‚РѕРіРѕ РјРѕР¶РµС‚ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЊСЃСЏ.
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_06"); //РЇ РЅРёРєРѕРіРґР° РЅРµ Р¶Р°Р»РµР» Рѕ С‚РѕРј, С‡С‚Рѕ СЃС‚Р°Р» РњР°РіРѕРј РћРіРЅСЏ. Рђ РєР°Рє С‚РµР±Рµ СЌС‚Рѕ?
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_07"); //РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ.
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_08"); //(СЃРјРµРµС‚СЃСЏ) РЎСѓС…Рѕ, РєР°Рє РІСЃРµРіРґР°. Р­Р№, РїР°СЂРµРЅСЊ. РўС‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ СЃРїР°СЃ РјРёСЂ. Р Р°Р·РІРµ СЌС‚Рѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅР°СЏ РїСЂРёС‡РёРЅР° РґР»СЏ СЂР°РґРѕСЃС‚Рё?
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_09"); //РњРјРј. РњРѕР¶РµС‚ Р±С‹С‚СЊ.
 				};		
 
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_10"); //Да ладно, дружище, я думаю, что главное, что тебе сейчас нужно, - немного поспать.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_10"); //Р”Р° Р»Р°РґРЅРѕ, РґСЂСѓР¶РёС‰Рµ, СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РіР»Р°РІРЅРѕРµ, С‡С‚Рѕ С‚РµР±Рµ СЃРµР№С‡Р°СЃ РЅСѓР¶РЅРѕ, - РЅРµРјРЅРѕРіРѕ РїРѕСЃРїР°С‚СЊ.
 			DIA_Milten_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 		
-		AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_11"); //Тебе нужно пойти к капитану и сказать ему, чтобы он поднимал якорь.
+		AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_11"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РїРѕР№С‚Рё Рє РєР°РїРёС‚Р°РЅСѓ Рё СЃРєР°Р·Р°С‚СЊ РµРјСѓ, С‡С‚РѕР±С‹ РѕРЅ РїРѕРґРЅРёРјР°Р» СЏРєРѕСЂСЊ.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");

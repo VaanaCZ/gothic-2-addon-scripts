@@ -2,7 +2,7 @@
 instance BDT_1090_Addon_Raven (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Âîðîí";
+	name 		= "Ð’Ð¾Ñ€Ð¾Ð½";
 	guild 		= GIL_BDT;
 	id 			= 1090;
 	voice 		= 10;
@@ -22,7 +22,7 @@ instance BDT_1090_Addon_Raven (Npc_Default)
 	aivar[AIV_IgnoresArmor] = TRUE;
 	aivar[AIV_EnemyOverride] = TRUE;
 
-	attribute[ATR_MANA_MAX] = 666666; //Joly:für die Waffe
+	attribute[ATR_MANA_MAX] = 666666; //Joly:fÑŒr die Waffe
 
 	// ------ Kampf-Taktik ------
 	fight_tactic		= FAI_HUMAN_MASTER;	
@@ -46,7 +46,7 @@ instance BDT_1090_Addon_Raven (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
 	B_SetFightSkills (self, 90); 
 
 	// ------ TA anmelden ------

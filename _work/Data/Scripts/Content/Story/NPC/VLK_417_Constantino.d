@@ -2,7 +2,7 @@
 instance VLK_417_Constantino (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Константино";	
+	name 		= "РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ";	
 	guild 		= GIL_VLK;
 	id 			= 417;
 	voice 		= 10;
@@ -19,7 +19,7 @@ instance VLK_417_Constantino (Npc_Default)
 	EquipItem (self, itmw_1h_bau_axe);
 	
 	// ------ Inventory ------
-	// Hдndler
+	// HРґndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Psionic.", Face_N_OldBald_Jeremiah, BodyTex_N, ITAR_SMITH);	

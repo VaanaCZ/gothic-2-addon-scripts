@@ -1,7 +1,7 @@
 INSTANCE PIR_1370_Addon_Angus (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ангус";
+	name 		= "РђРЅРіСѓСЃ";
 	guild 		= GIL_PIR;
 	id 			= 1370;
 	voice 		= 6;

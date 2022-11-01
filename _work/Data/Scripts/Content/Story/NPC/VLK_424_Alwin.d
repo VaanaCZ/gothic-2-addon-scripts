@@ -2,7 +2,7 @@
 instance Vlk_424_Alwin (Npc_Default) //Metzger
 {
 	// ------ NSC ------
-	name 		= "Алвин";	
+	name 		= "РђР»РІРёРЅ";	
 	guild 		= GIL_VLK;
 	id 			= 424;
 	voice 		= 12;

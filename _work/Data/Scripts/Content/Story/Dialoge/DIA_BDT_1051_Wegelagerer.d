@@ -42,7 +42,7 @@ INSTANCE DIA_1051_Wegelagerer_Hello   (C_INFO)
 	condition   = DIA_Wegelagerer_Hello_Condition;
 	information = DIA_Wegelagerer_Hello_Info;
 	permanent   = FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 FUNC INT DIA_Wegelagerer_Hello_Condition()
@@ -55,8 +55,8 @@ FUNC INT DIA_Wegelagerer_Hello_Condition()
 
 FUNC VOID DIA_Wegelagerer_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Hello_15_00"); //Что вы делаете здесь?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Hello_07_01"); //Что тебе нужно?
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Hello_15_00"); //Р§С‚Рѕ РІС‹ РґРµР»Р°РµС‚Рµ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Hello_07_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -69,7 +69,7 @@ INSTANCE DIA_1051_Wegelagerer_Novice   (C_INFO)
 	condition   = DIA_Wegelagerer_Novice_Condition;
 	information = DIA_Wegelagerer_Novice_Info;
 	permanent   = FALSE;
-	description = "Я ищу послушника.";
+	description = "РЇ РёС‰Сѓ РїРѕСЃР»СѓС€РЅРёРєР°.";
 };
 
 FUNC INT DIA_Wegelagerer_Novice_Condition()
@@ -84,11 +84,11 @@ FUNC INT DIA_Wegelagerer_Novice_Condition()
 
 FUNC VOID DIA_Wegelagerer_Novice_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Novice_15_00"); //Я ищу послушника.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Novice_07_01"); //Очень интересно. Мы тоже кое-кого ищем.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Novice_15_00"); //РЇ РёС‰Сѓ РїРѕСЃР»СѓС€РЅРёРєР°.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Novice_07_01"); //РћС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ. РњС‹ С‚РѕР¶Рµ РєРѕРµ-РєРѕРіРѕ РёС‰РµРј.
 
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Novice,"Кого вы ищете?",DIA_1051_Wegelagerer_Question_Novice_Who);
+	Info_AddChoice (DIA_1051_Wegelagerer_Novice,"РљРѕРіРѕ РІС‹ РёС‰РµС‚Рµ?",DIA_1051_Wegelagerer_Question_Novice_Who);
 	
 };
 
@@ -102,7 +102,7 @@ INSTANCE DIA_1051_Wegelagerer_Question   (C_INFO)
 	condition   = DIA_Wegelagerer_Question_Condition;
 	information = DIA_Wegelagerer_Question_Info;
 	permanent   = FALSE;
-	description = "Я просто спросил.";
+	description = "РЇ РїСЂРѕСЃС‚Рѕ СЃРїСЂРѕСЃРёР».";
 };
 
 FUNC INT DIA_Wegelagerer_Question_Condition()
@@ -116,34 +116,34 @@ FUNC INT DIA_Wegelagerer_Question_Condition()
 
 FUNC VOID DIA_Wegelagerer_Question_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //Я просто спросил.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //Понятно. Но что ТЫ делаешь здесь?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Ладно. Это наша дорога, и мы не любим, когда кто-то беспокоит нас здесь.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ СЃРїСЂРѕСЃРёР».
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //РџРѕРЅСЏС‚РЅРѕ. РќРѕ С‡С‚Рѕ РўР« РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Р›Р°РґРЅРѕ. Р­С‚Рѕ РЅР°С€Р° РґРѕСЂРѕРіР°, Рё РјС‹ РЅРµ Р»СЋР±РёРј, РєРѕРіРґР° РєС‚Рѕ-С‚Рѕ Р±РµСЃРїРѕРєРѕРёС‚ РЅР°СЃ Р·РґРµСЃСЊ.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
 	if (MIS_Novizenchase == LOG_RUNNING)
 		&& (MIS_SCKnowsInnosEyeIsBroken  == FALSE)
 	{
-		Info_AddChoice (DIA_1051_Wegelagerer_Question,"Я ищу послушника.",DIA_1051_Wegelagerer_Question_Novice);
+		Info_AddChoice (DIA_1051_Wegelagerer_Question,"РЇ РёС‰Сѓ РїРѕСЃР»СѓС€РЅРёРєР°.",DIA_1051_Wegelagerer_Question_Novice);
 	};	
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Это не твое дело.",DIA_1051_Wegelagerer_Question_MyConcern);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Я просто любуюсь природой.",DIA_1051_Wegelagerer_Question_LookAround);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ.",DIA_1051_Wegelagerer_Question_MyConcern);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"РЇ РїСЂРѕСЃС‚Рѕ Р»СЋР±СѓСЋСЃСЊ РїСЂРёСЂРѕРґРѕР№.",DIA_1051_Wegelagerer_Question_LookAround);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_Novice ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_15_00"); //Я ищу послушника.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_07_01"); //Очень интересно. Мы тоже кое-кого ищем.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_15_00"); //РЇ РёС‰Сѓ РїРѕСЃР»СѓС€РЅРёРєР°.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_07_01"); //РћС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ. РњС‹ С‚РѕР¶Рµ РєРѕРµ-РєРѕРіРѕ РёС‰РµРј.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Кого вы ищете?",DIA_1051_Wegelagerer_Question_Novice_Who);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"РљРѕРіРѕ РІС‹ РёС‰РµС‚Рµ?",DIA_1051_Wegelagerer_Question_Novice_Who);
 
 };	
 
 FUNC VOID DIA_1051_Wegelagerer_Question_Novice_Who ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_Who_15_00"); //И кого же?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_Who_07_01"); //Тебя!
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_Who_15_00"); //Р РєРѕРіРѕ Р¶Рµ?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_Who_07_01"); //РўРµР±СЏ!
 	BDT_1051_Wegelagerer_Angriff = TRUE;
 	Npc_SetRefuseTalk (self,40);
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
@@ -152,27 +152,27 @@ FUNC VOID DIA_1051_Wegelagerer_Question_Novice_Who ()
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_15_00"); //Это не ваше дело.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_07_01"); //Что ты хочешь этим сказать? Ты нарываешься на неприятности?
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_15_00"); //Р­С‚Рѕ РЅРµ РІР°С€Рµ РґРµР»Рѕ.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_07_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ? РўС‹ РЅР°СЂС‹РІР°РµС€СЊСЃСЏ РЅР° РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё?
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Нет, ничего. Не надо никаких неприятностей.",DIA_1051_Wegelagerer_Question_MyConcern_No);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Если вам так угодно.",DIA_1051_Wegelagerer_Question_MyConcern_Yes);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"РќРµС‚, РЅРёС‡РµРіРѕ. РќРµ РЅР°РґРѕ РЅРёРєР°РєРёС… РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.",DIA_1051_Wegelagerer_Question_MyConcern_No);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Р•СЃР»Рё РІР°Рј С‚Р°Рє СѓРіРѕРґРЅРѕ.",DIA_1051_Wegelagerer_Question_MyConcern_Yes);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_No ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_No_15_00"); //Нет, ничего. Не надо никаких неприятностей.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_No_07_01"); //Понятно, в штаны наложил. А теперь проваливай.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_No_15_00"); //РќРµС‚, РЅРёС‡РµРіРѕ. РќРµ РЅР°РґРѕ РЅРёРєР°РєРёС… РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚РµР№.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_No_07_01"); //РџРѕРЅСЏС‚РЅРѕ, РІ С€С‚Р°РЅС‹ РЅР°Р»РѕР¶РёР». Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_15_00"); //Если вам так угодно.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //Хо-хо, какой наглец.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //Сейчас мы заткнем твою пасть.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_15_00"); //Р•СЃР»Рё РІР°Рј С‚Р°Рє СѓРіРѕРґРЅРѕ.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //РҐРѕ-С…Рѕ, РєР°РєРѕР№ РЅР°РіР»РµС†.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //РЎРµР№С‡Р°СЃ РјС‹ Р·Р°С‚РєРЅРµРј С‚РІРѕСЋ РїР°СЃС‚СЊ.
 
 	BDT_1051_Wegelagerer_Angriff = TRUE;
 	Npc_SetRefuseTalk (self,40);
@@ -181,8 +181,8 @@ FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 
 FUNC VOID DIA_1051_Wegelagerer_Question_LookAround ()
 {
-	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Я просто любуюсь природой.
-	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //Любуйся дальше, только к нам больше не приставай.
+	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ Р»СЋР±СѓСЋСЃСЊ РїСЂРёСЂРѕРґРѕР№.
+	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //Р›СЋР±СѓР№СЃСЏ РґР°Р»СЊС€Рµ, С‚РѕР»СЊРєРѕ Рє РЅР°Рј Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёСЃС‚Р°РІР°Р№.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
 };
@@ -214,7 +214,7 @@ func int DIA_Wegelagerer_ANGRIFF_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF_07_00"); //Сейчас ты получишь.
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF_07_00"); //РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ.
 
 	AI_StopProcessInfos (self);
 

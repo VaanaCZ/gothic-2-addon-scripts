@@ -31,7 +31,7 @@ instance DIA_Elena_HALLO		(C_INFO)
 	condition	= DIA_Elena_HALLO_Condition;
 	information	= DIA_Elena_HALLO_Info;
 	permanent	= FALSE;
-	description	= "Привет, красавица.";
+	description	= "РџСЂРёРІРµС‚, РєСЂР°СЃР°РІРёС†Р°.";
 };
 
 func int DIA_Elena_HALLO_Condition ()
@@ -41,14 +41,14 @@ func int DIA_Elena_HALLO_Condition ()
 
 func void DIA_Elena_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //Привет, красавица.
+	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //РџСЂРёРІРµС‚, РєСЂР°СЃР°РІРёС†Р°.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Elena_HALLO_16_01"); //Хм. Откуда это ты сбежал?
+		AI_Output (self, other, "DIA_Elena_HALLO_16_01"); //РҐРј. РћС‚РєСѓРґР° СЌС‚Рѕ С‚С‹ СЃР±РµР¶Р°Р»?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Elena_HALLO_16_02"); //Что тебе нужно?
+		AI_Output (self, other, "DIA_Elena_HALLO_16_02"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 	};
 };
 
@@ -63,7 +63,7 @@ instance DIA_Elena_Aufstand		(C_INFO)
 	condition	= DIA_Elena_Aufstand_Condition;
 	information	= DIA_Elena_Aufstand_Info;
 	permanent	= FALSE;
-	description	= "Говорят, что вы восстали против короля?";
+	description	= "Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІС‹ РІРѕСЃСЃС‚Р°Р»Рё РїСЂРѕС‚РёРІ РєРѕСЂРѕР»СЏ?";
 };
 
 func int DIA_Elena_Aufstand_Condition ()
@@ -76,11 +76,11 @@ func int DIA_Elena_Aufstand_Condition ()
 
 func void DIA_Elena_Aufstand_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Говорят, что вы восстали против короля?
-	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Мой отец решил, что пришло время защищать себя самим.
+	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ РІС‹ РІРѕСЃСЃС‚Р°Р»Рё РїСЂРѕС‚РёРІ РєРѕСЂРѕР»СЏ?
+	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //РњРѕР№ РѕС‚РµС† СЂРµС€РёР», С‡С‚Рѕ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ Р·Р°С‰РёС‰Р°С‚СЊ СЃРµР±СЏ СЃР°РјРёРј.
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //Ополчение никогда не помогало нам. Они приходили сюда только, чтобы забрать провизию.
+		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //РћРїРѕР»С‡РµРЅРёРµ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРѕРіР°Р»Рѕ РЅР°Рј. РћРЅРё РїСЂРёС…РѕРґРёР»Рё СЃСЋРґР° С‚РѕР»СЊРєРѕ, С‡С‚РѕР±С‹ Р·Р°Р±СЂР°С‚СЊ РїСЂРѕРІРёР·РёСЋ.
 	};
 };
 
@@ -94,7 +94,7 @@ instance DIA_Elena_Arbeit		(C_INFO)
 	condition	= DIA_Elena_Arbeit_Condition;
 	information	= DIA_Elena_Arbeit_Info;
 	permanent	= FALSE;
-	description	= "Здесь, на ферме, есть какая-нибудь работа?";
+	description	= "Р—РґРµСЃСЊ, РЅР° С„РµСЂРјРµ, РµСЃС‚СЊ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р°?";
 };
 
 func int DIA_Elena_Arbeit_Condition ()
@@ -108,12 +108,12 @@ func int DIA_Elena_Arbeit_Condition ()
 
 func void DIA_Elena_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Здесь, на ферме, есть какая-нибудь работа?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Мой отец хорошо платит всем, кто помогает защищать ферму.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //Тебе это интересно? Ты не похож на человека, привычного к работе в поле.
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Сколько платит твой отец?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //Тебе лучше обсудить этот вопрос с ним.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Я знаю только, что наемникам платят ежедневно.
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Р—РґРµСЃСЊ, РЅР° С„РµСЂРјРµ, РµСЃС‚СЊ РєР°РєР°СЏ-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚Р°?
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //РњРѕР№ РѕС‚РµС† С…РѕСЂРѕС€Рѕ РїР»Р°С‚РёС‚ РІСЃРµРј, РєС‚Рѕ РїРѕРјРѕРіР°РµС‚ Р·Р°С‰РёС‰Р°С‚СЊ С„РµСЂРјСѓ.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //РўРµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ? РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° С‡РµР»РѕРІРµРєР°, РїСЂРёРІС‹С‡РЅРѕРіРѕ Рє СЂР°Р±РѕС‚Рµ РІ РїРѕР»Рµ.
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //РЎРєРѕР»СЊРєРѕ РїР»Р°С‚РёС‚ С‚РІРѕР№ РѕС‚РµС†?
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //РўРµР±Рµ Р»СѓС‡С€Рµ РѕР±СЃСѓРґРёС‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ СЃ РЅРёРј.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //РЇ Р·РЅР°СЋ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ РЅР°РµРјРЅРёРєР°Рј РїР»Р°С‚СЏС‚ РµР¶РµРґРЅРµРІРЅРѕ.
 };
 
 // ************************************************************
@@ -126,7 +126,7 @@ instance DIA_Elena_Regeln		(C_INFO)
 	condition	= DIA_Elena_Regeln_Condition;
 	information	= DIA_Elena_Regeln_Info;
 	permanent	= FALSE;
-	description	= "Здесь есть какие-нибудь правила, которых мне нужно придерживаться?";
+	description	= "Р—РґРµСЃСЊ РµСЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РїСЂР°РІРёР»Р°, РєРѕС‚РѕСЂС‹С… РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ?";
 };
 
 func int DIA_Elena_Regeln_Condition ()
@@ -140,11 +140,11 @@ func int DIA_Elena_Regeln_Condition ()
 
 func void DIA_Elena_Regeln_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //Здесь есть какие-нибудь правила, которых мне нужно придерживаться?
-	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //Не трогай того, что тебе не принадлежит.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //Не суй свой нос в чужие дела.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //А если тебе хочется подраться, дерись с наемниками.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Если ты начнешь драку с фермером, все здесь будут против тебя.
+	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //Р—РґРµСЃСЊ РµСЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РїСЂР°РІРёР»Р°, РєРѕС‚РѕСЂС‹С… РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ?
+	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //РќРµ С‚СЂРѕРіР°Р№ С‚РѕРіРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅРµ РїСЂРёРЅР°РґР»РµР¶РёС‚.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //РќРµ СЃСѓР№ СЃРІРѕР№ РЅРѕСЃ РІ С‡СѓР¶РёРµ РґРµР»Р°.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //Рђ РµСЃР»Рё С‚РµР±Рµ С…РѕС‡РµС‚СЃСЏ РїРѕРґСЂР°С‚СЊСЃСЏ, РґРµСЂРёСЃСЊ СЃ РЅР°РµРјРЅРёРєР°РјРё.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Р•СЃР»Рё С‚С‹ РЅР°С‡РЅРµС€СЊ РґСЂР°РєСѓ СЃ С„РµСЂРјРµСЂРѕРј, РІСЃРµ Р·РґРµСЃСЊ Р±СѓРґСѓС‚ РїСЂРѕС‚РёРІ С‚РµР±СЏ.
 };
 
 
@@ -158,7 +158,7 @@ instance DIA_Elena_AUFGABE		(C_INFO)
 	condition	= DIA_Elena_AUFGABE_Condition;
 	information	= DIA_Elena_AUFGABE_Info;
 	permanent 	= FALSE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Elena_AUFGABE_Condition ()
@@ -171,12 +171,12 @@ func int DIA_Elena_AUFGABE_Condition ()
 
 func void DIA_Elena_AUFGABE_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //А чем ты занимаешься?
-	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //Я продаю то, что мы выращиваем на ферме. Если захочешь купить что-нибудь, дай мне знать.
-	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Но я хочу предупредить тебя. Я не люблю торговаться и не потерплю воровства. Понятно?
+	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Рђ С‡РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //РЇ РїСЂРѕРґР°СЋ С‚Рѕ, С‡С‚Рѕ РјС‹ РІС‹СЂР°С‰РёРІР°РµРј РЅР° С„РµСЂРјРµ. Р•СЃР»Рё Р·Р°С…РѕС‡РµС€СЊ РєСѓРїРёС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ.
+	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //РќРѕ СЏ С…РѕС‡Сѓ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ. РЇ РЅРµ Р»СЋР±Р»СЋ С‚РѕСЂРіРѕРІР°С‚СЊСЃСЏ Рё РЅРµ РїРѕС‚РµСЂРїР»СЋ РІРѕСЂРѕРІСЃС‚РІР°. РџРѕРЅСЏС‚РЅРѕ?
 	
 	Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTrader,"Елена продает товары на ферме Онара.");
+	B_LogEntry (Topic_SoldierTrader,"Р•Р»РµРЅР° РїСЂРѕРґР°РµС‚ С‚РѕРІР°СЂС‹ РЅР° С„РµСЂРјРµ РћРЅР°СЂР°.");
 };
 
 // ************************************************************
@@ -194,7 +194,7 @@ instance DIA_Elena_TRADE		(C_INFO)
 	condition	= DIA_Elena_TRADE_Condition;
 	information	= DIA_Elena_TRADE_Info;
 	permanent	= TRUE;
-	description	= "Покажи мне свои товары!";
+	description	= "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹!";
 	trade		= TRUE;
 };
 
@@ -209,9 +209,9 @@ func int DIA_Elena_TRADE_Condition ()
 
 func void DIA_Elena_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_TRADE_15_00"); //Покажи мне свои товары!
+	AI_Output			(other, self, "DIA_Elena_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹!
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Elena_TRADE_16_01"); //Выбирай.
+	AI_Output			(self, other, "DIA_Elena_TRADE_16_01"); //Р’С‹Р±РёСЂР°Р№.
 };
 
 // ************************************************************
@@ -224,7 +224,7 @@ instance DIA_Elena_PERM		(C_INFO)
 	condition	= DIA_Elena_PERM_Condition;
 	information	= DIA_Elena_PERM_Info;
 	permanent	= TRUE;
-	description	= "Ничего интересного последнее время не было?";
+	description	= "РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РЅРµ Р±С‹Р»Рѕ?";
 };
 
 func int DIA_Elena_PERM_Condition ()
@@ -237,30 +237,30 @@ func int DIA_Elena_PERM_Condition ()
 
 func void DIA_Elena_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //Ничего интересного последнее время не было?
+	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //РќРёС‡РµРіРѕ РёРЅС‚РµСЂРµСЃРЅРѕРіРѕ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РЅРµ Р±С‹Р»Рѕ?
 
 	if (kapitel <= 1)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Несколько дней назад мой отец объявил, что нам больше нельзя ничего продавать городу.
-		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Поэтому я теперь все время на ферме и продаю товары только здесь.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ РјРѕР№ РѕС‚РµС† РѕР±СЉСЏРІРёР», С‡С‚Рѕ РЅР°Рј Р±РѕР»СЊС€Рµ РЅРµР»СЊР·СЏ РЅРёС‡РµРіРѕ РїСЂРѕРґР°РІР°С‚СЊ РіРѕСЂРѕРґСѓ.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //РџРѕСЌС‚РѕРјСѓ СЏ С‚РµРїРµСЂСЊ РІСЃРµ РІСЂРµРјСЏ РЅР° С„РµСЂРјРµ Рё РїСЂРѕРґР°СЋ С‚РѕРІР°СЂС‹ С‚РѕР»СЊРєРѕ Р·РґРµСЃСЊ.
 	
 		Elena_Trade_mit_mir = TRUE;
 	}
 	else if (Kapitel == 2)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Нападения ополчения на соседние фермы происходят все чаще и чаще. Это только вопрос времени, когда мой отец вмешается.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //РќР°РїР°РґРµРЅРёСЏ РѕРїРѕР»С‡РµРЅРёСЏ РЅР° СЃРѕСЃРµРґРЅРёРµ С„РµСЂРјС‹ РїСЂРѕРёСЃС…РѕРґСЏС‚ РІСЃРµ С‡Р°С‰Рµ Рё С‡Р°С‰Рµ. Р­С‚Рѕ С‚РѕР»СЊРєРѕ РІРѕРїСЂРѕСЃ РІСЂРµРјРµРЅРё, РєРѕРіРґР° РјРѕР№ РѕС‚РµС† РІРјРµС€Р°РµС‚СЃСЏ.
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //Жизнь здесь стала такой опасной. Никто не осмеливается далеко отходить от своего поля. Уже давно никто из нас не был в городе.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //Р–РёР·РЅСЊ Р·РґРµСЃСЊ СЃС‚Р°Р»Р° С‚Р°РєРѕР№ РѕРїР°СЃРЅРѕР№. РќРёРєС‚Рѕ РЅРµ РѕСЃРјРµР»РёРІР°РµС‚СЃСЏ РґР°Р»РµРєРѕ РѕС‚С…РѕРґРёС‚СЊ РѕС‚ СЃРІРѕРµРіРѕ РїРѕР»СЏ. РЈР¶Рµ РґР°РІРЅРѕ РЅРёРєС‚Рѕ РёР· РЅР°СЃ РЅРµ Р±С‹Р» РІ РіРѕСЂРѕРґРµ.
 	}
 	else if (kapitel == 4)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //Наемники становятся все более и более нервными. Но с тех пор, как ушел Сильвио со своими парнями, они вроде немного успокоились.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //РќР°РµРјРЅРёРєРё СЃС‚Р°РЅРѕРІСЏС‚СЃСЏ РІСЃРµ Р±РѕР»РµРµ Рё Р±РѕР»РµРµ РЅРµСЂРІРЅС‹РјРё. РќРѕ СЃ С‚РµС… РїРѕСЂ, РєР°Рє СѓС€РµР» РЎРёР»СЊРІРёРѕ СЃРѕ СЃРІРѕРёРјРё РїР°СЂРЅСЏРјРё, РѕРЅРё РІСЂРѕРґРµ РЅРµРјРЅРѕРіРѕ СѓСЃРїРѕРєРѕРёР»РёСЃСЊ.
 	}
 	else //Kapitel 5
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_06"); //Все только и говорят, что о скором нападении орков. Но я не очень-то верю в это. Я думаю, что здесь, на ферме, мы в безопасности.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_06"); //Р’СЃРµ С‚РѕР»СЊРєРѕ Рё РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ Рѕ СЃРєРѕСЂРѕРј РЅР°РїР°РґРµРЅРёРё РѕСЂРєРѕРІ. РќРѕ СЏ РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ РІРµСЂСЋ РІ СЌС‚Рѕ. РЇ РґСѓРјР°СЋ, С‡С‚Рѕ Р·РґРµСЃСЊ, РЅР° С„РµСЂРјРµ, РјС‹ РІ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.
 	};
 };
 
@@ -282,7 +282,7 @@ instance DIA_Elena_MINENANTEIL		(C_INFO)
 	condition	 = 	DIA_Elena_MINENANTEIL_Condition;
 	information	 = 	DIA_Elena_MINENANTEIL_Info;
 
-	description  =  "Ты продаешь акции?";
+	description  =  "РўС‹ РїСЂРѕРґР°РµС€СЊ Р°РєС†РёРё?";
 };
 
 func int DIA_Elena_MINENANTEIL_Condition ()
@@ -297,8 +297,8 @@ func int DIA_Elena_MINENANTEIL_Condition ()
 
 func void DIA_Elena_MINENANTEIL_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //Ты продаешь акции шахт?
-	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //Ну и что? Я сама их купила у другого торговца.
+	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ Р°РєС†РёРё С€Р°С…С‚?
+	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //РќСѓ Рё С‡С‚Рѕ? РЇ СЃР°РјР° РёС… РєСѓРїРёР»Р° Сѓ РґСЂСѓРіРѕРіРѕ С‚РѕСЂРіРѕРІС†Р°.
 	B_GivePlayerXP (XP_Ambient);
 };
 

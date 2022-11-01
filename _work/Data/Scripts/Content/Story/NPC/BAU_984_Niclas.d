@@ -1,7 +1,7 @@
 INSTANCE BAU_984_Niclas (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Никлас";
+	name 		= "РќРёРєР»Р°СЃ";
 	guild 		= GIL_OUT;
 	id 			= 984;
 	voice 		= 03;

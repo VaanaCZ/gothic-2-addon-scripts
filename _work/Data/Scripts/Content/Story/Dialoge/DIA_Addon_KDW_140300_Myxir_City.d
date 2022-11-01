@@ -30,7 +30,7 @@ instance DIA_Addon_Myxir_CITY_HelloCITY		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_HelloCITY_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты останешься в городе?";
+	description	 = 	"РўС‹ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ РІ РіРѕСЂРѕРґРµ?";
 };
 
 func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
@@ -40,19 +40,19 @@ func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
 var int DIA_Addon_Myxir_CITY_HelloCITY_OneTime;
 func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Ты останешься в городе?
-	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Кто-то из нас должен оставаться здесь, когда Ватраса в городе нет.
+	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //РўС‹ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ РІ РіРѕСЂРѕРґРµ?
+	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //РљС‚Рѕ-С‚Рѕ РёР· РЅР°СЃ РґРѕР»Р¶РµРЅ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ, РєРѕРіРґР° Р’Р°С‚СЂР°СЃР° РІ РіРѕСЂРѕРґРµ РЅРµС‚.
 	
 	VatrasAbloeseIstDa = TRUE;
 	
 	if (RavenIsDead == TRUE)
 	&& (DIA_Addon_Myxir_CITY_HelloCITY_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //Я хотел тебе сказать еще одну вещь.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //В Яркендаре ты совершил поистине героический подвиг.
-		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //К сожалению, у меня еще есть незавершенные дела в Хоринисе.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Это так, но я уверен, что ты справишься с ними, Хранитель.
-		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //Увидим.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //РЇ С…РѕС‚РµР» С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ РµС‰Рµ РѕРґРЅСѓ РІРµС‰СЊ.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //Р’ РЇСЂРєРµРЅРґР°СЂРµ С‚С‹ СЃРѕРІРµСЂС€РёР» РїРѕРёСЃС‚РёРЅРµ РіРµСЂРѕРёС‡РµСЃРєРёР№ РїРѕРґРІРёРі.
+		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, Сѓ РјРµРЅСЏ РµС‰Рµ РµСЃС‚СЊ РЅРµР·Р°РІРµСЂС€РµРЅРЅС‹Рµ РґРµР»Р° РІ РҐРѕСЂРёРЅРёСЃРµ.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //Р­С‚Рѕ С‚Р°Рє, РЅРѕ СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ СЃ РЅРёРјРё, РҐСЂР°РЅРёС‚РµР»СЊ.
+		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //РЈРІРёРґРёРј.
 		DIA_Addon_Myxir_CITY_HelloCITY_OneTime = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	};	
@@ -68,7 +68,7 @@ instance DIA_Addon_Myxir_CITY_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Научи меня этому языку.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ СЌС‚РѕРјСѓ СЏР·С‹РєСѓ.";
 };
 
 var int DIA_Addon_Myxir_CITY_Teach_NoPerm;

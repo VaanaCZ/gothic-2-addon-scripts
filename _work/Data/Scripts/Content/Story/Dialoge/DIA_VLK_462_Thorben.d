@@ -78,7 +78,7 @@ FUNC INT DIA_Thorben_angepisst_Condition()
 };
 FUNC VOID DIA_Thorben_angepisst_Info()
 {	
-	AI_Output (self, other,"DIA_Thorben_angepisst_06_00"); //Ты убил мою Гритту. Я никогда не прощу тебя. Прочь с глаз моих, убийца!
+	AI_Output (self, other,"DIA_Thorben_angepisst_06_00"); //РўС‹ СѓР±РёР» РјРѕСЋ Р“СЂРёС‚С‚Сѓ. РЇ РЅРёРєРѕРіРґР° РЅРµ РїСЂРѕС‰Сѓ С‚РµР±СЏ. РџСЂРѕС‡СЊ СЃ РіР»Р°Р· РјРѕРёС…, СѓР±РёР№С†Р°!
 	AI_StopProcessInfos (self);
 };
 
@@ -105,9 +105,9 @@ FUNC INT DIA_Thorben_Hallo_Condition()
 };
 FUNC VOID DIA_Thorben_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_00"); //Ах! Новое лицо. Ты ведь не из Хориниса, да?
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_01"); //Сейчас не лучшее время для путешествий. Бандиты повсюду, работы нет, а теперь еще и фермеры восстали.
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_02"); //Каким ветром тебя сюда занесло?
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_00"); //РђС…! РќРѕРІРѕРµ Р»РёС†Рѕ. РўС‹ РІРµРґСЊ РЅРµ РёР· РҐРѕСЂРёРЅРёСЃР°, РґР°?
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_01"); //РЎРµР№С‡Р°СЃ РЅРµ Р»СѓС‡С€РµРµ РІСЂРµРјСЏ РґР»СЏ РїСѓС‚РµС€РµСЃС‚РІРёР№. Р‘Р°РЅРґРёС‚С‹ РїРѕРІСЃСЋРґСѓ, СЂР°Р±РѕС‚С‹ РЅРµС‚, Р° С‚РµРїРµСЂСЊ РµС‰Рµ Рё С„РµСЂРјРµСЂС‹ РІРѕСЃСЃС‚Р°Р»Рё.
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_02"); //РљР°РєРёРј РІРµС‚СЂРѕРј С‚РµР±СЏ СЃСЋРґР° Р·Р°РЅРµСЃР»Рѕ?
 };
 
 // ************************************************************
@@ -120,7 +120,7 @@ INSTANCE DIA_Thorben_Arbeit(C_INFO)
 	condition	= DIA_Thorben_Arbeit_Condition;
 	information	= DIA_Thorben_Arbeit_Info;
 	permanent	= FALSE;
-	description = "Я ищу работу.";
+	description = "РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.";
 };                       
 FUNC INT DIA_Thorben_Arbeit_Condition()
 {	
@@ -128,17 +128,17 @@ FUNC INT DIA_Thorben_Arbeit_Condition()
 };
 FUNC VOID DIA_Thorben_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Arbeit_15_00"); //Я ищу работу.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_01"); //Ты что-нибудь знаешь о плотницком деле?
-	AI_Output (other, self,"DIA_Thorben_Arbeit_15_02"); //Единственное, что я могу получить из дерева, - это огонь.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_03"); //А что насчет замков?
-	AI_Output (other, self,"DIA_Thorben_Arbeit_15_04"); //Нуууу...
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_05"); //Извини, но я не могу взять тебя, если ты ничего не понимаешь в моем ремесле.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_06"); //И у меня нет денег, чтобы платить ученику.
+	AI_Output (other, self,"DIA_Thorben_Arbeit_15_00"); //РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_01"); //РўС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ Рѕ РїР»РѕС‚РЅРёС†РєРѕРј РґРµР»Рµ?
+	AI_Output (other, self,"DIA_Thorben_Arbeit_15_02"); //Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ РёР· РґРµСЂРµРІР°, - СЌС‚Рѕ РѕРіРѕРЅСЊ.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_03"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ Р·Р°РјРєРѕРІ?
+	AI_Output (other, self,"DIA_Thorben_Arbeit_15_04"); //РќСѓСѓСѓСѓ...
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_05"); //РР·РІРёРЅРё, РЅРѕ СЏ РЅРµ РјРѕРіСѓ РІР·СЏС‚СЊ С‚РµР±СЏ, РµСЃР»Рё С‚С‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕРЅРёРјР°РµС€СЊ РІ РјРѕРµРј СЂРµРјРµСЃР»Рµ.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_06"); //Р Сѓ РјРµРЅСЏ РЅРµС‚ РґРµРЅРµРі, С‡С‚РѕР±С‹ РїР»Р°С‚РёС‚СЊ СѓС‡РµРЅРёРєСѓ.
 	
 	Log_CreateTopic (TOPIC_Lehrling,LOG_MISSION); 
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling, "Торбен не примет меня в ученики.");
+	B_LogEntry (TOPIC_Lehrling, "РўРѕСЂР±РµРЅ РЅРµ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё.");
 };
 
 // ************************************************************
@@ -151,7 +151,7 @@ INSTANCE DIA_Thorben_OtherMasters(C_INFO)
 	condition	= DIA_Thorben_OtherMasters_Condition;
 	information	= DIA_Thorben_OtherMasters_Info;
 	permanent	= FALSE;
-	description = "А что если я поступлю в ученики к одному из других здешних мастеров?";
+	description = "Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РїРѕСЃС‚СѓРїР»СЋ РІ СѓС‡РµРЅРёРєРё Рє РѕРґРЅРѕРјСѓ РёР· РґСЂСѓРіРёС… Р·РґРµС€РЅРёС… РјР°СЃС‚РµСЂРѕРІ?";
 };                       
 FUNC INT DIA_Thorben_OtherMasters_Condition()
 {	
@@ -163,42 +163,42 @@ FUNC INT DIA_Thorben_OtherMasters_Condition()
 };
 FUNC VOID DIA_Thorben_OtherMasters_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_15_00"); //А что если я поступлю в ученики к одному из других здешних мастеров?
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_01"); //Хорошо, я дам свое одобрение.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_02"); //Но тебе нужно сначала получить благословение богов.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_03"); //Скажи, ты верующий человек?
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_15_00"); //Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РїРѕСЃС‚СѓРїР»СЋ РІ СѓС‡РµРЅРёРєРё Рє РѕРґРЅРѕРјСѓ РёР· РґСЂСѓРіРёС… Р·РґРµС€РЅРёС… РјР°СЃС‚РµСЂРѕРІ?
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_01"); //РҐРѕСЂРѕС€Рѕ, СЏ РґР°Рј СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_02"); //РќРѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ СЃРЅР°С‡Р°Р»Р° РїРѕР»СѓС‡РёС‚СЊ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р±РѕРіРѕРІ.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_03"); //РЎРєР°Р¶Рё, С‚С‹ РІРµСЂСѓСЋС‰РёР№ С‡РµР»РѕРІРµРє?
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
 	if (other.guild != GIL_KDF)
 	&& (other.guild != GIL_NOV)
 	&& (other.guild != GIL_PAL)
 	{
-		Info_AddChoice (DIA_Thorben_OtherMasters, "Ну, если ты это имеешь в виду, я регулярно молюсь...", DIA_Thorben_OtherMasters_Naja);
+		Info_AddChoice (DIA_Thorben_OtherMasters, "РќСѓ, РµСЃР»Рё С‚С‹ СЌС‚Рѕ РёРјРµРµС€СЊ РІ РІРёРґСѓ, СЏ СЂРµРіСѓР»СЏСЂРЅРѕ РјРѕР»СЋСЃСЊ...", DIA_Thorben_OtherMasters_Naja);
 	};
-	Info_AddChoice (DIA_Thorben_OtherMasters, "Да. Я образцовый верующий, мастер Торбен.", DIA_Thorben_OtherMasters_Devoutly);
+	Info_AddChoice (DIA_Thorben_OtherMasters, "Р”Р°. РЇ РѕР±СЂР°Р·С†РѕРІС‹Р№ РІРµСЂСѓСЋС‰РёР№, РјР°СЃС‚РµСЂ РўРѕСЂР±РµРЅ.", DIA_Thorben_OtherMasters_Devoutly);
 };
 
 func void B_Thorben_GetBlessings()
 {
-	AI_Output (self, other,"B_Thorben_GetBlessings_06_00"); //Тогда иди к Ватрасу, жрецу Аданоса, пусть он даст тебе благословение.
+	AI_Output (self, other,"B_Thorben_GetBlessings_06_00"); //РўРѕРіРґР° РёРґРё Рє Р’Р°С‚СЂР°СЃСѓ, Р¶СЂРµС†Сѓ РђРґР°РЅРѕСЃР°, РїСѓСЃС‚СЊ РѕРЅ РґР°СЃС‚ С‚РµР±Рµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ.
 	if (other.guild != GIL_KDF)
 	&& (other.guild != GIL_NOV)
 	&& (other.guild != GIL_PAL)
 	{
-		AI_Output (self, other,"B_Thorben_GetBlessings_06_01"); //Он также подскажет тебе, где найти жреца Инноса. Ты должен получить и его благословение.
+		AI_Output (self, other,"B_Thorben_GetBlessings_06_01"); //РћРЅ С‚Р°РєР¶Рµ РїРѕРґСЃРєР°Р¶РµС‚ С‚РµР±Рµ, РіРґРµ РЅР°Р№С‚Рё Р¶СЂРµС†Р° РРЅРЅРѕСЃР°. РўС‹ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ Рё РµРіРѕ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ.
 	};
-	AI_Output (self, other,"B_Thorben_GetBlessings_06_02"); //А когда ты получишь благословение богов, Я проголосую за тебя.
+	AI_Output (self, other,"B_Thorben_GetBlessings_06_02"); //Рђ РєРѕРіРґР° С‚С‹ РїРѕР»СѓС‡РёС€СЊ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р±РѕРіРѕРІ, РЇ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ.
 	
 	MIS_Thorben_GetBlessings = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_Thorben,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Thorben,LOG_RUNNING);
-	B_LogEntry (TOPIC_Thorben,"Торбен даст мне свое одобрение, если жрец Аданоса и жрец Инноса дадут мне свое благословение.");
+	B_LogEntry (TOPIC_Thorben,"РўРѕСЂР±РµРЅ РґР°СЃС‚ РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ, РµСЃР»Рё Р¶СЂРµС† РђРґР°РЅРѕСЃР° Рё Р¶СЂРµС† РРЅРЅРѕСЃР° РґР°РґСѓС‚ РјРЅРµ СЃРІРѕРµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ.");
 };
 
 func void DIA_Thorben_OtherMasters_Devoutly()
 {
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_Devoutly_15_00"); //Да. Я образцовый верующий, мастер Торбен.
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_Devoutly_15_00"); //Р”Р°. РЇ РѕР±СЂР°Р·С†РѕРІС‹Р№ РІРµСЂСѓСЋС‰РёР№, РјР°СЃС‚РµСЂ РўРѕСЂР±РµРЅ.
 	B_Thorben_GetBlessings();
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
@@ -206,10 +206,10 @@ func void DIA_Thorben_OtherMasters_Devoutly()
 
 func void DIA_Thorben_OtherMasters_Naja()
 {
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_Naja_15_00"); //Ну, если ты это имеешь в виду, я регулярно молюсь...
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_01"); //Понимаю!
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_02"); //Человек, который занимается ремеслом без благословения богов, никогда не получит моего одобрения.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_03"); //Проси богов о прощении твоих прегрешений.
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_Naja_15_00"); //РќСѓ, РµСЃР»Рё С‚С‹ СЌС‚Рѕ РёРјРµРµС€СЊ РІ РІРёРґСѓ, СЏ СЂРµРіСѓР»СЏСЂРЅРѕ РјРѕР»СЋСЃСЊ...
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_01"); //РџРѕРЅРёРјР°СЋ!
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_02"); //Р§РµР»РѕРІРµРє, РєРѕС‚РѕСЂС‹Р№ Р·Р°РЅРёРјР°РµС‚СЃСЏ СЂРµРјРµСЃР»РѕРј Р±РµР· Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ Р±РѕРіРѕРІ, РЅРёРєРѕРіРґР° РЅРµ РїРѕР»СѓС‡РёС‚ РјРѕРµРіРѕ РѕРґРѕР±СЂРµРЅРёСЏ.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_03"); //РџСЂРѕСЃРё Р±РѕРіРѕРІ Рѕ РїСЂРѕС‰РµРЅРёРё С‚РІРѕРёС… РїСЂРµРіСЂРµС€РµРЅРёР№.
 	B_Thorben_GetBlessings();
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
@@ -225,7 +225,7 @@ INSTANCE DIA_Thorben_ZUSTIMMUNG(C_INFO)
 	condition	= DIA_Thorben_ZUSTIMMUNG_Condition;
 	information	= DIA_Thorben_ZUSTIMMUNG_Info;
 	permanent	= TRUE;
-	description = "Как насчет одобрения, мастер?";
+	description = "РљР°Рє РЅР°СЃС‡РµС‚ РѕРґРѕР±СЂРµРЅРёСЏ, РјР°СЃС‚РµСЂ?";
 };                       
 FUNC INT DIA_Thorben_ZUSTIMMUNG_Condition()
 {	
@@ -237,43 +237,43 @@ FUNC INT DIA_Thorben_ZUSTIMMUNG_Condition()
 };
 FUNC VOID DIA_Thorben_ZUSTIMMUNG_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_00"); //Как насчет одобрения, мастер?
-	AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_01"); //Ватрас дал тебе благословение?
+	AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_00"); //РљР°Рє РЅР°СЃС‡РµС‚ РѕРґРѕР±СЂРµРЅРёСЏ, РјР°СЃС‚РµСЂ?
+	AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_01"); //Р’Р°С‚СЂР°СЃ РґР°Р» С‚РµР±Рµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ?
 	
 	if (Vatras_Segen == TRUE)
 	{
-		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_02"); //Да.
-		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_03"); //А благословение жреца Инноса ты получил?
+		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_02"); //Р”Р°.
+		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_03"); //Рђ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р¶СЂРµС†Р° РРЅРЅРѕСЃР° С‚С‹ РїРѕР»СѓС‡РёР»?
 		
 		if (Daron_Segen == TRUE)
 		|| (Isgaroth_Segen == TRUE)
 		|| (other.guild == GIL_KDF)
 		{
-			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_04"); //Да, получил.
-			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_05"); //Тогда ты получишь и мое благословение. Не важно, какому пути ты решил следовать, гордись своим ремеслом, мой мальчик!
+			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_04"); //Р”Р°, РїРѕР»СѓС‡РёР».
+			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_05"); //РўРѕРіРґР° С‚С‹ РїРѕР»СѓС‡РёС€СЊ Рё РјРѕРµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ. РќРµ РІР°Р¶РЅРѕ, РєР°РєРѕРјСѓ РїСѓС‚Рё С‚С‹ СЂРµС€РёР» СЃР»РµРґРѕРІР°С‚СЊ, РіРѕСЂРґРёСЃСЊ СЃРІРѕРёРј СЂРµРјРµСЃР»РѕРј, РјРѕР№ РјР°Р»СЊС‡РёРє!
 			
 			MIS_Thorben_GetBlessings = LOG_SUCCESS;
 			B_GivePlayerXP (XP_Zustimmung);
 			
 			Log_CreateTopic (TOPIC_Lehrling,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-			B_LogEntry (TOPIC_Lehrling,"Торбен даст мне свое одобрение, если я захочу стать учеником.");
+			B_LogEntry (TOPIC_Lehrling,"РўРѕСЂР±РµРЅ РґР°СЃС‚ РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ, РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј.");
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_06"); //Нет. Еще нет...
-			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_07"); //Ты знаешь мои условия. Ты можешь заниматься ремеслом только с благословения богов.
+			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_06"); //РќРµС‚. Р•С‰Рµ РЅРµС‚...
+			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_07"); //РўС‹ Р·РЅР°РµС€СЊ РјРѕРё СѓСЃР»РѕРІРёСЏ. РўС‹ РјРѕР¶РµС€СЊ Р·Р°РЅРёРјР°С‚СЊСЃСЏ СЂРµРјРµСЃР»РѕРј С‚РѕР»СЊРєРѕ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ Р±РѕРіРѕРІ.
 		};
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_08"); //Еще нет...
-		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_09"); //Тогда я не понимаю, зачем ты опять пришел ко мне. Ты знаешь мои условия.
+		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_08"); //Р•С‰Рµ РЅРµС‚...
+		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_09"); //РўРѕРіРґР° СЏ РЅРµ РїРѕРЅРёРјР°СЋ, Р·Р°С‡РµРј С‚С‹ РѕРїСЏС‚СЊ РїСЂРёС€РµР» РєРѕ РјРЅРµ. РўС‹ Р·РЅР°РµС€СЊ РјРѕРё СѓСЃР»РѕРІРёСЏ.
 	};
 };
 
 // ************************************************************
-// 		Was weiЯt du ьber Schlцsser?		//E2
+// 		Was weiРЇt du СЊber SchlС†sser?		//E2
 // ************************************************************
 INSTANCE DIA_Thorben_Locksmith(C_INFO)
 {
@@ -282,7 +282,7 @@ INSTANCE DIA_Thorben_Locksmith(C_INFO)
 	condition	= DIA_Thorben_Locksmith_Condition;
 	information	= DIA_Thorben_Locksmith_Info;
 	permanent	= FALSE;
-	description = "Так ты разбираешься в замках?";
+	description = "РўР°Рє С‚С‹ СЂР°Р·Р±РёСЂР°РµС€СЊСЃСЏ РІ Р·Р°РјРєР°С…?";
 };                       
 FUNC INT DIA_Thorben_Locksmith_Condition()
 {	
@@ -293,10 +293,10 @@ FUNC INT DIA_Thorben_Locksmith_Condition()
 };
 FUNC VOID DIA_Thorben_Locksmith_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Locksmith_15_00"); //Так ты разбираешься в замках?
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_01"); //Какой смысл в хорошем сундуке без хорошего замка?
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_02"); //Я делаю свои собственные замки. Так, по крайней мере, я могу быть уверен, что не делаю сундуки, которые ни от чего не защищают.
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_03"); //Плохо сделанный замок легко сломать. А в Хоринисе очень много воров. Особенно в последнее время!
+	AI_Output (other, self,"DIA_Thorben_Locksmith_15_00"); //РўР°Рє С‚С‹ СЂР°Р·Р±РёСЂР°РµС€СЊСЃСЏ РІ Р·Р°РјРєР°С…?
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_01"); //РљР°РєРѕР№ СЃРјС‹СЃР» РІ С…РѕСЂРѕС€РµРј СЃСѓРЅРґСѓРєРµ Р±РµР· С…РѕСЂРѕС€РµРіРѕ Р·Р°РјРєР°?
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_02"); //РЇ РґРµР»Р°СЋ СЃРІРѕРё СЃРѕР±СЃС‚РІРµРЅРЅС‹Рµ Р·Р°РјРєРё. РўР°Рє, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЏ РјРѕРіСѓ Р±С‹С‚СЊ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РЅРµ РґРµР»Р°СЋ СЃСѓРЅРґСѓРєРё, РєРѕС‚РѕСЂС‹Рµ РЅРё РѕС‚ С‡РµРіРѕ РЅРµ Р·Р°С‰РёС‰Р°СЋС‚.
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_03"); //РџР»РѕС…Рѕ СЃРґРµР»Р°РЅРЅС‹Р№ Р·Р°РјРѕРє Р»РµРіРєРѕ СЃР»РѕРјР°С‚СЊ. Рђ РІ РҐРѕСЂРёРЅРёСЃРµ РѕС‡РµРЅСЊ РјРЅРѕРіРѕ РІРѕСЂРѕРІ. РћСЃРѕР±РµРЅРЅРѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ!
 };
 
 // ************************************************************
@@ -309,7 +309,7 @@ INSTANCE DIA_Thorben_Schuldenbuch(C_INFO)
 	condition	= DIA_Thorben_Schuldenbuch_Condition;
 	information	= DIA_Thorben_Schuldenbuch_Info;
 	permanent	= FALSE;
-	description = "У меня есть гроссбух Лемара...";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РіСЂРѕСЃСЃР±СѓС… Р›РµРјР°СЂР°...";
 };                       
 FUNC INT DIA_Thorben_Schuldenbuch_Condition()
 {	
@@ -320,18 +320,18 @@ FUNC INT DIA_Thorben_Schuldenbuch_Condition()
 };
 FUNC VOID DIA_Thorben_Schuldenbuch_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_00"); //У меня есть гроссбух Лемара...
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_01"); //(подозрительно) Где ты взял его?
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_02"); //Тебя должно интересовать не где я взял его, а то, что в нем записано твое имя.
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_03"); //Дай его сюда!
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РіСЂРѕСЃСЃР±СѓС… Р›РµРјР°СЂР°...
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_01"); //(РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ) Р“РґРµ С‚С‹ РІР·СЏР» РµРіРѕ?
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_02"); //РўРµР±СЏ РґРѕР»Р¶РЅРѕ РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ РЅРµ РіРґРµ СЏ РІР·СЏР» РµРіРѕ, Р° С‚Рѕ, С‡С‚Рѕ РІ РЅРµРј Р·Р°РїРёСЃР°РЅРѕ С‚РІРѕРµ РёРјСЏ.
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_03"); //Р”Р°Р№ РµРіРѕ СЃСЋРґР°!
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_04"); //А что ты готов дать за него?
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_05"); //У меня нет денег. Но ты можешь рассчитывать на мою сердечную благодарность.
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_04"); //Рђ С‡С‚Рѕ С‚С‹ РіРѕС‚РѕРІ РґР°С‚СЊ Р·Р° РЅРµРіРѕ?
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_05"); //РЈ РјРµРЅСЏ РЅРµС‚ РґРµРЅРµРі. РќРѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РјРѕСЋ СЃРµСЂРґРµС‡РЅСѓСЋ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚СЊ.
 	B_GivePlayerXP (XP_Schuldenbuch);
 };
 
 // ************************************************************
-// 		Kann ich Schlцsser knacken lernen		//E3
+// 		Kann ich SchlС†sser knacken lernen		//E3
 // ************************************************************
 INSTANCE DIA_Thorben_PleaseTeach(C_INFO)
 {
@@ -340,7 +340,7 @@ INSTANCE DIA_Thorben_PleaseTeach(C_INFO)
 	condition	= DIA_Thorben_PleaseTeach_Condition;
 	information	= DIA_Thorben_PleaseTeach_Info;
 	permanent	= TRUE;
-	description = "Ты можешь научить меня вскрывать замки отмычками?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё РѕС‚РјС‹С‡РєР°РјРё?";
 };                       
 FUNC INT DIA_Thorben_PleaseTeach_Condition()
 {	
@@ -353,56 +353,56 @@ FUNC INT DIA_Thorben_PleaseTeach_Condition()
 };
 FUNC VOID DIA_Thorben_PleaseTeach_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_00"); //Ты можешь научить меня вскрывать замки отмычками?
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё РѕС‚РјС‹С‡РєР°РјРё?
 		
 	if (Npc_HasItems (self, ItWr_Schuldenbuch) > 0)
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_01"); //Если бы не ты, я бы платил Лемару до конца своих дней.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_02"); //Я обучу тебя тому, что ты хочешь знать.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_01"); //Р•СЃР»Рё Р±С‹ РЅРµ С‚С‹, СЏ Р±С‹ РїР»Р°С‚РёР» Р›РµРјР°СЂСѓ РґРѕ РєРѕРЅС†Р° СЃРІРѕРёС… РґРЅРµР№.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_02"); //РЇ РѕР±СѓС‡Сѓ С‚РµР±СЏ С‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else if (Thorben_GotGold == TRUE) //100 Gold bekommen
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_03"); //Ты принес мне 100 золотых монет. Это широкий жест с твоей стороны.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_04"); //Мне очень стыдно, но я вынужден попросить у тебя еще.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_05"); //Если я не отдам долг Лемару в ближайшее время, он натравит на меня своих головорезов.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_06"); //Дай мне еще 100 золотых, и я обучу тебя.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_03"); //РўС‹ РїСЂРёРЅРµСЃ РјРЅРµ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚. Р­С‚Рѕ С€РёСЂРѕРєРёР№ Р¶РµСЃС‚ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_04"); //РњРЅРµ РѕС‡РµРЅСЊ СЃС‚С‹РґРЅРѕ, РЅРѕ СЏ РІС‹РЅСѓР¶РґРµРЅ РїРѕРїСЂРѕСЃРёС‚СЊ Сѓ С‚РµР±СЏ РµС‰Рµ.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_05"); //Р•СЃР»Рё СЏ РЅРµ РѕС‚РґР°Рј РґРѕР»Рі Р›РµРјР°СЂСѓ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ, РѕРЅ РЅР°С‚СЂР°РІРёС‚ РЅР° РјРµРЅСЏ СЃРІРѕРёС… РіРѕР»РѕРІРѕСЂРµР·РѕРІ.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_06"); //Р”Р°Р№ РјРЅРµ РµС‰Рµ 100 Р·РѕР»РѕС‚С‹С…, Рё СЏ РѕР±СѓС‡Сѓ С‚РµР±СЏ.
 
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Сколько ты возьмешь?", DIA_Thorben_PleaseTeach_Later);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Отлично. Вот 100 золотых.", DIA_Thorben_PleaseTeach_Pay100);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "РЎРєРѕР»СЊРєРѕ С‚С‹ РІРѕР·СЊРјРµС€СЊ?", DIA_Thorben_PleaseTeach_Later);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "РћС‚Р»РёС‡РЅРѕ. Р’РѕС‚ 100 Р·РѕР»РѕС‚С‹С….", DIA_Thorben_PleaseTeach_Pay100);
 	}
 	else if (MIS_Matteo_Gold == LOG_SUCCESS) //Grittas Schulden bezahlt
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_07"); //Ты заплатил долг Гритты Маттео. Похоже, ты хороший человек. Я обучу тебя тому, что ты хочешь знать.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_08"); //Однако я не могу сделать это бесплатно. У целая куча долгов, и мне нужны деньги.
-		AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_09"); //Сколько ты возьмешь?
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_10"); //200 золотых монет.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_07"); //РўС‹ Р·Р°РїР»Р°С‚РёР» РґРѕР»Рі Р“СЂРёС‚С‚С‹ РњР°С‚С‚РµРѕ. РџРѕС…РѕР¶Рµ, С‚С‹ С…РѕСЂРѕС€РёР№ С‡РµР»РѕРІРµРє. РЇ РѕР±СѓС‡Сѓ С‚РµР±СЏ С‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_08"); //РћРґРЅР°РєРѕ СЏ РЅРµ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ Р±РµСЃРїР»Р°С‚РЅРѕ. РЈ С†РµР»Р°СЏ РєСѓС‡Р° РґРѕР»РіРѕРІ, Рё РјРЅРµ РЅСѓР¶РЅС‹ РґРµРЅСЊРіРё.
+		AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_09"); //РЎРєРѕР»СЊРєРѕ С‚С‹ РІРѕР·СЊРјРµС€СЊ?
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_10"); //200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 		
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Сколько ты возьмешь?", DIA_Thorben_PleaseTeach_Later);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Отлично. Вот 200 золотых.", DIA_Thorben_PleaseTeach_Pay200);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "РЎРєРѕР»СЊРєРѕ С‚С‹ РІРѕР·СЊРјРµС€СЊ?", DIA_Thorben_PleaseTeach_Later);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "РћС‚Р»РёС‡РЅРѕ. Р’РѕС‚ 200 Р·РѕР»РѕС‚С‹С….", DIA_Thorben_PleaseTeach_Pay200);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_11"); //Хмм... я не знаю, можно ли тебе доверять.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_12"); //Боюсь, ты можешь оказаться одним из этих бездельников, которые приходят в город, только чтобы обчистить сундуки честных людей.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_13"); //Я ничему не буду учить тебя, пока не буду уверен, что ты честный человек.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_11"); //РҐРјРј... СЏ РЅРµ Р·РЅР°СЋ, РјРѕР¶РЅРѕ Р»Рё С‚РµР±Рµ РґРѕРІРµСЂСЏС‚СЊ.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_12"); //Р‘РѕСЋСЃСЊ, С‚С‹ РјРѕР¶РµС€СЊ РѕРєР°Р·Р°С‚СЊСЃСЏ РѕРґРЅРёРј РёР· СЌС‚РёС… Р±РµР·РґРµР»СЊРЅРёРєРѕРІ, РєРѕС‚РѕСЂС‹Рµ РїСЂРёС…РѕРґСЏС‚ РІ РіРѕСЂРѕРґ, С‚РѕР»СЊРєРѕ С‡С‚РѕР±С‹ РѕР±С‡РёСЃС‚РёС‚СЊ СЃСѓРЅРґСѓРєРё С‡РµСЃС‚РЅС‹С… Р»СЋРґРµР№.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_13"); //РЇ РЅРёС‡РµРјСѓ РЅРµ Р±СѓРґСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ, РїРѕРєР° РЅРµ Р±СѓРґСѓ СѓРІРµСЂРµРЅ, С‡С‚Рѕ С‚С‹ С‡РµСЃС‚РЅС‹Р№ С‡РµР»РѕРІРµРє.
 	};
 };
 
 func void DIA_Thorben_PleaseTeach_Pay200()
 {
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay200_15_00"); //Отлично. Вот 200 золотых.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay200_15_00"); //РћС‚Р»РёС‡РЅРѕ. Р’РѕС‚ 200 Р·РѕР»РѕС‚С‹С….
 	
 	if (B_GiveInvItems (other, self, ItMi_Gold, 200))
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_01"); //Эти деньги очень помогут мне. Мы приступим, как только ты будешь готов.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_01"); //Р­С‚Рё РґРµРЅСЊРіРё РѕС‡РµРЅСЊ РїРѕРјРѕРіСѓС‚ РјРЅРµ. РњС‹ РїСЂРёСЃС‚СѓРїРёРј, РєР°Рє С‚РѕР»СЊРєРѕ С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_02"); //У тебя нет 200 монет. А мне нужна вся сумма.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_02"); //РЈ С‚РµР±СЏ РЅРµС‚ 200 РјРѕРЅРµС‚. Рђ РјРЅРµ РЅСѓР¶РЅР° РІСЃСЏ СЃСѓРјРјР°.
 	};
 	
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
@@ -410,16 +410,16 @@ func void DIA_Thorben_PleaseTeach_Pay200()
 
 func void DIA_Thorben_PleaseTeach_Pay100()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay100_15_00"); //Отлично. Вот 100 золотых.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay100_15_00"); //РћС‚Р»РёС‡РЅРѕ. Р’РѕС‚ 100 Р·РѕР»РѕС‚С‹С….
 		
 	if (B_GiveInvItems (other, self, ItMi_Gold, 100))
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_01"); //В таком случае, мы можем начать, когда ты будешь готов.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_01"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, РјС‹ РјРѕР¶РµРј РЅР°С‡Р°С‚СЊ, РєРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_02"); //Эй, у тебя же нет 100 монет.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_02"); //Р­Р№, Сѓ С‚РµР±СЏ Р¶Рµ РЅРµС‚ 100 РјРѕРЅРµС‚.
 	};
 	
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
@@ -427,13 +427,13 @@ func void DIA_Thorben_PleaseTeach_Pay100()
 	
 func void DIA_Thorben_PleaseTeach_Later()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Later_15_00"); //Может быть, позже...
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Later_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ...
 
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
 };
 
 // ************************************************************
-// 		Schlцsser knacken lernen		//E4
+// 		SchlС†sser knacken lernen		//E4
 // ************************************************************
 INSTANCE DIA_Thorben_Teach(C_INFO)
 {
@@ -442,7 +442,7 @@ INSTANCE DIA_Thorben_Teach(C_INFO)
 	condition	= DIA_Thorben_Teach_Condition;
 	information	= DIA_Thorben_Teach_Info;
 	permanent	= TRUE;
-	description = B_BuildLearnString("Научи меня вскрывать замки!", B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1));
+	description = B_BuildLearnString("РќР°СѓС‡Рё РјРµРЅСЏ РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё!", B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1));
 };                       
 FUNC INT DIA_Thorben_Teach_Condition()
 {	
@@ -454,13 +454,13 @@ FUNC INT DIA_Thorben_Teach_Condition()
 };
 FUNC VOID DIA_Thorben_Teach_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Teach_15_00"); //Научи меня вскрывать замки!
+	AI_Output (other, self,"DIA_Thorben_Teach_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РІСЃРєСЂС‹РІР°С‚СЊ Р·Р°РјРєРё!
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK)
 	{
-		AI_Output (self, other,"DIA_Thorben_Teach_06_01"); //Все, что тебе нужно - это отмычка. Если ты будешь осторожно поворачивать ее влево и вправо в замке, ты сможешь вскрыть его.
-		AI_Output (self, other,"DIA_Thorben_Teach_06_02"); //Но если ты будешь вращать отмычку слишком сильно или слишком быстро в неправильном направлении, она сломается.
-		AI_Output (self, other,"DIA_Thorben_Teach_06_03"); //Чем более опытным ты будешь становиться, тем меньше отмычек тебе понадобится. Вот, пожалуй, и все, что тебе нужно знать.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_01"); //Р’СЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ - СЌС‚Рѕ РѕС‚РјС‹С‡РєР°. Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕ РїРѕРІРѕСЂР°С‡РёРІР°С‚СЊ РµРµ РІР»РµРІРѕ Рё РІРїСЂР°РІРѕ РІ Р·Р°РјРєРµ, С‚С‹ СЃРјРѕР¶РµС€СЊ РІСЃРєСЂС‹С‚СЊ РµРіРѕ.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_02"); //РќРѕ РµСЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РІСЂР°С‰Р°С‚СЊ РѕС‚РјС‹С‡РєСѓ СЃР»РёС€РєРѕРј СЃРёР»СЊРЅРѕ РёР»Рё СЃР»РёС€РєРѕРј Р±С‹СЃС‚СЂРѕ РІ РЅРµРїСЂР°РІРёР»СЊРЅРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё, РѕРЅР° СЃР»РѕРјР°РµС‚СЃСЏ.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_03"); //Р§РµРј Р±РѕР»РµРµ РѕРїС‹С‚РЅС‹Рј С‚С‹ Р±СѓРґРµС€СЊ СЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ, С‚РµРј РјРµРЅСЊС€Рµ РѕС‚РјС‹С‡РµРє С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ. Р’РѕС‚, РїРѕР¶Р°Р»СѓР№, Рё РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ.
 	};
 };
 
@@ -474,7 +474,7 @@ INSTANCE DIA_Thorben_TRADE(C_INFO)
 	condition	= DIA_Thorben_TRADE_Condition;
 	information	= DIA_Thorben_TRADE_Info;
 	permanent	= TRUE;
-	description = "Ты можешь продать мне отмычки?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ РѕС‚РјС‹С‡РєРё?";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Thorben_TRADE_Condition()
@@ -486,15 +486,15 @@ FUNC INT DIA_Thorben_TRADE_Condition()
 };
 FUNC VOID DIA_Thorben_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_TRADE_15_00"); //Ты можешь продать мне отмычки?
+	AI_Output (other, self,"DIA_Thorben_TRADE_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ РѕС‚РјС‹С‡РєРё?
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_PICKLOCK) > 0)
 	{
-		AI_Output (self, other,"DIA_Thorben_TRADE_06_01"); //Если еще остались...
+		AI_Output (self, other,"DIA_Thorben_TRADE_06_01"); //Р•СЃР»Рё РµС‰Рµ РѕСЃС‚Р°Р»РёСЃСЊ...
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_TRADE_06_02"); //Хорошо. Но они ничем не помогут тебе, пока ты не научишься пользоваться ими.
+		AI_Output (self, other,"DIA_Thorben_TRADE_06_02"); //РҐРѕСЂРѕС€Рѕ. РќРѕ РѕРЅРё РЅРёС‡РµРј РЅРµ РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ, РїРѕРєР° С‚С‹ РЅРµ РЅР°СѓС‡РёС€СЊСЃСЏ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РёРјРё.
 	};
 	
 	if (Npc_HasItems (self, ITke_Lockpick) == 0) 
@@ -504,7 +504,7 @@ FUNC VOID DIA_Thorben_TRADE_Info()
 		Dietrichgeben = Dietrichgeben +1;
 	};
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Плотник Торбен продает отмычки."); 
+	B_LogEntry (Topic_CityTrader,"РџР»РѕС‚РЅРёРє РўРѕСЂР±РµРЅ РїСЂРѕРґР°РµС‚ РѕС‚РјС‹С‡РєРё."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -517,7 +517,7 @@ instance DIA_Addon_Thorben_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Thorben_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Thorben_MissingPeople_Info;
 
-	description	 = 	"У тебя раньше был ученик?";
+	description	 = 	"РЈ С‚РµР±СЏ СЂР°РЅСЊС€Рµ Р±С‹Р» СѓС‡РµРЅРёРє?";
 };
 
 func int DIA_Addon_Thorben_MissingPeople_Condition ()
@@ -532,23 +532,23 @@ func int DIA_Addon_Thorben_MissingPeople_Condition ()
 
 func void DIA_Addon_Thorben_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_00"); //У тебя раньше был ученик?
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_01"); //Да, и совсем недавно.
-	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_02"); //И что случилось?
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_03"); //Его имя Элврих. Он мой племянник.
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_04"); //Я был им очень доволен, но однажды он просто взял и не пришел на работу.
+	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_00"); //РЈ С‚РµР±СЏ СЂР°РЅСЊС€Рµ Р±С‹Р» СѓС‡РµРЅРёРє?
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_01"); //Р”Р°, Рё СЃРѕРІСЃРµРј РЅРµРґР°РІРЅРѕ.
+	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_02"); //Р С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_03"); //Р•РіРѕ РёРјСЏ Р­Р»РІСЂРёС…. РћРЅ РјРѕР№ РїР»РµРјСЏРЅРЅРёРє.
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_04"); //РЇ Р±С‹Р» РёРј РѕС‡РµРЅСЊ РґРѕРІРѕР»РµРЅ, РЅРѕ РѕРґРЅР°Р¶РґС‹ РѕРЅ РїСЂРѕСЃС‚Рѕ РІР·СЏР» Рё РЅРµ РїСЂРёС€РµР» РЅР° СЂР°Р±РѕС‚Сѓ.
 	
 	MIS_Thorben_BringElvrichBack = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Элврих, ученик плотника Торбена, пропал."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Р­Р»РІСЂРёС…, СѓС‡РµРЅРёРє РїР»РѕС‚РЅРёРєР° РўРѕСЂР±РµРЅР°, РїСЂРѕРїР°Р»."); 
 	
 	Info_ClearChoices	(DIA_Addon_Thorben_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, DIALOG_BACK, DIA_Addon_Thorben_MissingPeople_Back );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Ты не обращался к ополчению?", DIA_Addon_Thorben_MissingPeople_Mil );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Как давно его не было?", DIA_Addon_Thorben_MissingPeople_wann );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "И где же Элврих сейчас?", DIA_Addon_Thorben_MissingPeople_where );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "РўС‹ РЅРµ РѕР±СЂР°С‰Р°Р»СЃСЏ Рє РѕРїРѕР»С‡РµРЅРёСЋ?", DIA_Addon_Thorben_MissingPeople_Mil );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "РљР°Рє РґР°РІРЅРѕ РµРіРѕ РЅРµ Р±С‹Р»Рѕ?", DIA_Addon_Thorben_MissingPeople_wann );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Р РіРґРµ Р¶Рµ Р­Р»РІСЂРёС… СЃРµР№С‡Р°СЃ?", DIA_Addon_Thorben_MissingPeople_where );
 };
 
 func void DIA_Addon_Thorben_MissingPeople_Back ()
@@ -558,23 +558,23 @@ func void DIA_Addon_Thorben_MissingPeople_Back ()
 
 func void DIA_Addon_Thorben_MissingPeople_wann ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_wann_15_00"); //Как давно его не было?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_wann_06_01"); //Около двух недель.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_wann_15_00"); //РљР°Рє РґР°РІРЅРѕ РµРіРѕ РЅРµ Р±С‹Р»Рѕ?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_wann_06_01"); //РћРєРѕР»Рѕ РґРІСѓС… РЅРµРґРµР»СЊ.
 };
 
 func void DIA_Addon_Thorben_MissingPeople_where ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_where_15_00"); //И где же Элврих сейчас?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_01"); //Откуда мне знать? В последнее время он частенько появлялся у этого грязного борделя в порту.
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_02"); //Не удивлюсь, если он и сейчас развлекается в постели с какой-нибудь шлюхой.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_where_15_00"); //Р РіРґРµ Р¶Рµ Р­Р»РІСЂРёС… СЃРµР№С‡Р°СЃ?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_01"); //РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ? Р’ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕРЅ С‡Р°СЃС‚РµРЅСЊРєРѕ РїРѕСЏРІР»СЏР»СЃСЏ Сѓ СЌС‚РѕРіРѕ РіСЂСЏР·РЅРѕРіРѕ Р±РѕСЂРґРµР»СЏ РІ РїРѕСЂС‚Сѓ.
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_02"); //РќРµ СѓРґРёРІР»СЋСЃСЊ, РµСЃР»Рё РѕРЅ Рё СЃРµР№С‡Р°СЃ СЂР°Р·РІР»РµРєР°РµС‚СЃСЏ РІ РїРѕСЃС‚РµР»Рё СЃ РєР°РєРѕР№-РЅРёР±СѓРґСЊ С€Р»СЋС…РѕР№.
 };
 
 func void DIA_Addon_Thorben_MissingPeople_Mil ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_00"); //Ты не обращался к ополчению?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_01"); //Обращался, конечно. Я попросил их поймать этого лентяя и проследить, чтобы он вернулся на работу. Но я уже об этом жалею.
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_02"); //Пусть делает все, что хочет. Рано или поздно он поймет, что без достойной работы в Хоринисе делать нечего.
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_03"); //(цинично) Неужели?
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_00"); //РўС‹ РЅРµ РѕР±СЂР°С‰Р°Р»СЃСЏ Рє РѕРїРѕР»С‡РµРЅРёСЋ?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_01"); //РћР±СЂР°С‰Р°Р»СЃСЏ, РєРѕРЅРµС‡РЅРѕ. РЇ РїРѕРїСЂРѕСЃРёР» РёС… РїРѕР№РјР°С‚СЊ СЌС‚РѕРіРѕ Р»РµРЅС‚СЏСЏ Рё РїСЂРѕСЃР»РµРґРёС‚СЊ, С‡С‚РѕР±С‹ РѕРЅ РІРµСЂРЅСѓР»СЃСЏ РЅР° СЂР°Р±РѕС‚Сѓ. РќРѕ СЏ СѓР¶Рµ РѕР± СЌС‚РѕРј Р¶Р°Р»РµСЋ.
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_02"); //РџСѓСЃС‚СЊ РґРµР»Р°РµС‚ РІСЃРµ, С‡С‚Рѕ С…РѕС‡РµС‚. Р Р°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РѕРЅ РїРѕР№РјРµС‚, С‡С‚Рѕ Р±РµР· РґРѕСЃС‚РѕР№РЅРѕР№ СЂР°Р±РѕС‚С‹ РІ РҐРѕСЂРёРЅРёСЃРµ РґРµР»Р°С‚СЊ РЅРµС‡РµРіРѕ.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_03"); //(С†РёРЅРёС‡РЅРѕ) РќРµСѓР¶РµР»Рё?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -587,7 +587,7 @@ instance DIA_Addon_Thorben_ElvrichIsBack		(C_INFO)
 	condition	 = 	DIA_Addon_Thorben_ElvrichIsBack_Condition;
 	information	 = 	DIA_Addon_Thorben_ElvrichIsBack_Info;
 
-	description	 = 	"Элврих снова будет на тебя работать.";
+	description	 = 	"Р­Р»РІСЂРёС… СЃРЅРѕРІР° Р±СѓРґРµС‚ РЅР° С‚РµР±СЏ СЂР°Р±РѕС‚Р°С‚СЊ.";
 };
 
 func int DIA_Addon_Thorben_ElvrichIsBack_Condition ()
@@ -601,9 +601,9 @@ func int DIA_Addon_Thorben_ElvrichIsBack_Condition ()
 
 func void DIA_Addon_Thorben_ElvrichIsBack_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Thorben_ElvrichIsBack_15_00"); //Элврих снова будет на тебя работать.
-	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_01"); //Будем надеяться, что он больше не будет убегать, как только очередная девка покрутит задницей перед его носом.
-	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_02"); //Возьми это золото в качестве награды за возвращение ученика.
+	AI_Output	(other, self, "DIA_Addon_Thorben_ElvrichIsBack_15_00"); //Р­Р»РІСЂРёС… СЃРЅРѕРІР° Р±СѓРґРµС‚ РЅР° С‚РµР±СЏ СЂР°Р±РѕС‚Р°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_01"); //Р‘СѓРґРµРј РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµС‚ СѓР±РµРіР°С‚СЊ, РєР°Рє С‚РѕР»СЊРєРѕ РѕС‡РµСЂРµРґРЅР°СЏ РґРµРІРєР° РїРѕРєСЂСѓС‚РёС‚ Р·Р°РґРЅРёС†РµР№ РїРµСЂРµРґ РµРіРѕ РЅРѕСЃРѕРј.
+	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_02"); //Р’РѕР·СЊРјРё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ РІ РєР°С‡РµСЃС‚РІРµ РЅР°РіСЂР°РґС‹ Р·Р° РІРѕР·РІСЂР°С‰РµРЅРёРµ СѓС‡РµРЅРёРєР°.
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);
 	MIS_Thorben_BringElvrichBack = LOG_SUCCESS;
@@ -620,7 +620,7 @@ INSTANCE DIA_Thorben_Paladine(C_INFO)
 	condition	= DIA_Thorben_Paladine_Condition;
 	information	= DIA_Thorben_Paladine_Info;
 	permanent	= FALSE;
-	description = "Что ты знаешь о паладинах?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїР°Р»Р°РґРёРЅР°С…?";
 };                       
 FUNC INT DIA_Thorben_Paladine_Condition()
 {	
@@ -631,12 +631,12 @@ FUNC INT DIA_Thorben_Paladine_Condition()
 };
 FUNC VOID DIA_Thorben_Paladine_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Paladine_15_00"); //Что ты знаешь о паладинах?
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_01"); //Немногое. Они прибыли на корабле с материка две недели назад.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_02"); //С тех пор, они заперлись в верхнем квартале города.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_03"); //Никто толком не знает, зачем они прибыли.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_04"); //Многие опасаются нападения орков.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_05"); //А я думаю, что они здесь, чтобы подавить восстание фермеров.
+	AI_Output (other, self,"DIA_Thorben_Paladine_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїР°Р»Р°РґРёРЅР°С…?
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_01"); //РќРµРјРЅРѕРіРѕРµ. РћРЅРё РїСЂРёР±С‹Р»Рё РЅР° РєРѕСЂР°Р±Р»Рµ СЃ РјР°С‚РµСЂРёРєР° РґРІРµ РЅРµРґРµР»Рё РЅР°Р·Р°Рґ.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_02"); //РЎ С‚РµС… РїРѕСЂ, РѕРЅРё Р·Р°РїРµСЂР»РёСЃСЊ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ РіРѕСЂРѕРґР°.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_03"); //РќРёРєС‚Рѕ С‚РѕР»РєРѕРј РЅРµ Р·РЅР°РµС‚, Р·Р°С‡РµРј РѕРЅРё РїСЂРёР±С‹Р»Рё.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_04"); //РњРЅРѕРіРёРµ РѕРїР°СЃР°СЋС‚СЃСЏ РЅР°РїР°РґРµРЅРёСЏ РѕСЂРєРѕРІ.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_05"); //Рђ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅРё Р·РґРµСЃСЊ, С‡С‚РѕР±С‹ РїРѕРґР°РІРёС‚СЊ РІРѕСЃСЃС‚Р°РЅРёРµ С„РµСЂРјРµСЂРѕРІ.
 };
 
 // ************************************************************
@@ -649,7 +649,7 @@ INSTANCE DIA_Thorben_Bauernaufstand(C_INFO)
 	condition	= DIA_Thorben_Bauernaufstand_Condition;
 	information	= DIA_Thorben_Bauernaufstand_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь что-нибудь о восстании фермеров?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РІРѕСЃСЃС‚Р°РЅРёРё С„РµСЂРјРµСЂРѕРІ?";
 };                       
 FUNC INT DIA_Thorben_Bauernaufstand_Condition()
 {	
@@ -662,12 +662,12 @@ FUNC INT DIA_Thorben_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Thorben_Bauernaufstand_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Bauernaufstand_15_00"); //Ты знаешь что-нибудь о восстании фермеров?
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_01"); //Ходят слухи, что лендлорд Онар нанял наемников, чтобы стряхнуть со своей шеи королевские войска.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_02"); //Он, вероятно, устал отдавать весь свой урожай паладинам и ополчению.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_03"); //Ну а в городе после этого стали расти цены на продовольствие.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_04"); //Ферма Онара находится далеко на восток отсюда. Мы не знаем, были там сражения или нет.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_05"); //Если ты хочешь узнать больше, поспрашивай торговцев на рыночной пощади. Они лучше знают обстановку на острове чем я.
+	AI_Output (other, self,"DIA_Thorben_Bauernaufstand_15_00"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РІРѕСЃСЃС‚Р°РЅРёРё С„РµСЂРјРµСЂРѕРІ?
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_01"); //РҐРѕРґСЏС‚ СЃР»СѓС…Рё, С‡С‚Рѕ Р»РµРЅРґР»РѕСЂРґ РћРЅР°СЂ РЅР°РЅСЏР» РЅР°РµРјРЅРёРєРѕРІ, С‡С‚РѕР±С‹ СЃС‚СЂСЏС…РЅСѓС‚СЊ СЃРѕ СЃРІРѕРµР№ С€РµРё РєРѕСЂРѕР»РµРІСЃРєРёРµ РІРѕР№СЃРєР°.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_02"); //РћРЅ, РІРµСЂРѕСЏС‚РЅРѕ, СѓСЃС‚Р°Р» РѕС‚РґР°РІР°С‚СЊ РІРµСЃСЊ СЃРІРѕР№ СѓСЂРѕР¶Р°Р№ РїР°Р»Р°РґРёРЅР°Рј Рё РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_03"); //РќСѓ Р° РІ РіРѕСЂРѕРґРµ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ СЃС‚Р°Р»Рё СЂР°СЃС‚Рё С†РµРЅС‹ РЅР° РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёРµ.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_04"); //Р¤РµСЂРјР° РћРЅР°СЂР° РЅР°С…РѕРґРёС‚СЃСЏ РґР°Р»РµРєРѕ РЅР° РІРѕСЃС‚РѕРє РѕС‚СЃСЋРґР°. РњС‹ РЅРµ Р·РЅР°РµРј, Р±С‹Р»Рё С‚Р°Рј СЃСЂР°Р¶РµРЅРёСЏ РёР»Рё РЅРµС‚.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_05"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ, РїРѕСЃРїСЂР°С€РёРІР°Р№ С‚РѕСЂРіРѕРІС†РµРІ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїРѕС‰Р°РґРё. РћРЅРё Р»СѓС‡С€Рµ Р·РЅР°СЋС‚ РѕР±СЃС‚Р°РЅРѕРІРєСѓ РЅР° РѕСЃС‚СЂРѕРІРµ С‡РµРј СЏ.
 };
 
 // ************************************************************
@@ -680,7 +680,7 @@ INSTANCE DIA_Thorben_Gritta(C_INFO)
 	condition	= DIA_Thorben_Gritta_Condition;
 	information	= DIA_Thorben_Gritta_Info;
 	permanent	= FALSE;
-	description = "Я насчет Гритты...";
+	description = "РЇ РЅР°СЃС‡РµС‚ Р“СЂРёС‚С‚С‹...";
 };                       
 FUNC INT DIA_Thorben_Gritta_Condition()
 {	
@@ -692,21 +692,21 @@ FUNC INT DIA_Thorben_Gritta_Condition()
 };
 FUNC VOID DIA_Thorben_Gritta_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Gritta_15_00"); //Я насчет Гритты...
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_01"); //Моей племянницы? Какое тебе дело до нее? Это насчет долга, да?
-	AI_Output (other, self,"DIA_Thorben_Gritta_15_02"); //Она должна 100 золотых торговцу Маттео.
+	AI_Output (other, self,"DIA_Thorben_Gritta_15_00"); //РЇ РЅР°СЃС‡РµС‚ Р“СЂРёС‚С‚С‹...
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_01"); //РњРѕРµР№ РїР»РµРјСЏРЅРЅРёС†С‹? РљР°РєРѕРµ С‚РµР±Рµ РґРµР»Рѕ РґРѕ РЅРµРµ? Р­С‚Рѕ РЅР°СЃС‡РµС‚ РґРѕР»РіР°, РґР°?
+	AI_Output (other, self,"DIA_Thorben_Gritta_15_02"); //РћРЅР° РґРѕР»Р¶РЅР° 100 Р·РѕР»РѕС‚С‹С… С‚РѕСЂРіРѕРІС†Сѓ РњР°С‚С‚РµРѕ.
 	
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_03"); //Скажи мне, что это не так! С тех пор, как она живет со мной, от нее одни проблемы!
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_04"); //Она задолжала почти всем торговцам города.
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_05"); //Мне пришлось занять 200 золотых у ростовщика Лемара, чтобы расплатиться с ее долгами! И вот теперь опять!
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_03"); //РЎРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ С‚Р°Рє! РЎ С‚РµС… РїРѕСЂ, РєР°Рє РѕРЅР° Р¶РёРІРµС‚ СЃРѕ РјРЅРѕР№, РѕС‚ РЅРµРµ РѕРґРЅРё РїСЂРѕР±Р»РµРјС‹!
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_04"); //РћРЅР° Р·Р°РґРѕР»Р¶Р°Р»Р° РїРѕС‡С‚Рё РІСЃРµРј С‚РѕСЂРіРѕРІС†Р°Рј РіРѕСЂРѕРґР°.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_05"); //РњРЅРµ РїСЂРёС€Р»РѕСЃСЊ Р·Р°РЅСЏС‚СЊ 200 Р·РѕР»РѕС‚С‹С… Сѓ СЂРѕСЃС‚РѕРІС‰РёРєР° Р›РµРјР°СЂР°, С‡С‚РѕР±С‹ СЂР°СЃРїР»Р°С‚РёС‚СЊСЃСЏ СЃ РµРµ РґРѕР»РіР°РјРё! Р РІРѕС‚ С‚РµРїРµСЂСЊ РѕРїСЏС‚СЊ!
 	if (Npc_GetDistToWP(self, "NW_CITY_MERCHANT_SHOP01_FRONT_01") < 500)
 	{
-		AI_Output (self, other,"DIA_Thorben_Gritta_06_06"); //Гритта должна быть в доме.
+		AI_Output (self, other,"DIA_Thorben_Gritta_06_06"); //Р“СЂРёС‚С‚Р° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РІ РґРѕРјРµ.
 	};
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_07"); //Иди, поговори с ней. Но я скажу тебе честно: у нее нет ни ОДНОЙ золотой монеты.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_07"); //РРґРё, РїРѕРіРѕРІРѕСЂРё СЃ РЅРµР№. РќРѕ СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ С‡РµСЃС‚РЅРѕ: Сѓ РЅРµРµ РЅРµС‚ РЅРё РћР”РќРћР™ Р·РѕР»РѕС‚РѕР№ РјРѕРЅРµС‚С‹.
 	if (Npc_HasItems(Gritta, itmi_gold) >= 100)
 	{
-		AI_Output (other, self,"DIA_Thorben_Gritta_15_08"); //Посмотрим...
+		AI_Output (other, self,"DIA_Thorben_Gritta_15_08"); //РџРѕСЃРјРѕС‚СЂРёРј...
 	};
 };
 
@@ -720,7 +720,7 @@ INSTANCE DIA_Thorben_GrittaHatteGold(C_INFO)
 	condition	= DIA_Thorben_GrittaHatteGold_Condition;
 	information	= DIA_Thorben_GrittaHatteGold_Info;
 	permanent	= FALSE;
-	description = "У твоей племянницы было 100 золотых монет.";
+	description = "РЈ С‚РІРѕРµР№ РїР»РµРјСЏРЅРЅРёС†С‹ Р±С‹Р»Рѕ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.";
 };                       
 FUNC INT DIA_Thorben_GrittaHatteGold_Condition()
 {	
@@ -733,23 +733,23 @@ FUNC INT DIA_Thorben_GrittaHatteGold_Condition()
 };
 FUNC VOID DIA_Thorben_GrittaHatteGold_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_15_00"); //У твоей племянницы было 100 золотых монет.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_01"); //ЧТО? Ах она змея - это было МОЕ золото! Она взяла его из моего сундука.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_02"); //Отдай его мне! Я должен сначала заплатить Лемару. Маттео может подождать!
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_15_00"); //РЈ С‚РІРѕРµР№ РїР»РµРјСЏРЅРЅРёС†С‹ Р±С‹Р»Рѕ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_01"); //Р§РўРћ? РђС… РѕРЅР° Р·РјРµСЏ - СЌС‚Рѕ Р±С‹Р»Рѕ РњРћР• Р·РѕР»РѕС‚Рѕ! РћРЅР° РІР·СЏР»Р° РµРіРѕ РёР· РјРѕРµРіРѕ СЃСѓРЅРґСѓРєР°.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_02"); //РћС‚РґР°Р№ РµРіРѕ РјРЅРµ! РЇ РґРѕР»Р¶РµРЅ СЃРЅР°С‡Р°Р»Р° Р·Р°РїР»Р°С‚РёС‚СЊ Р›РµРјР°СЂСѓ. РњР°С‚С‚РµРѕ РјРѕР¶РµС‚ РїРѕРґРѕР¶РґР°С‚СЊ!
 
 	Info_ClearChoices (DIA_Thorben_GrittaHatteGold);
 	if (MIS_Matteo_Gold == LOG_SUCCESS)
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Я уже отдал золото Маттео!", DIA_Thorben_GrittaHatteGold_MatteoHatEs);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "РЇ СѓР¶Рµ РѕС‚РґР°Р» Р·РѕР»РѕС‚Рѕ РњР°С‚С‚РµРѕ!", DIA_Thorben_GrittaHatteGold_MatteoHatEs);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Нет. Маттео получит свои деньги назад.", DIA_Thorben_GrittaHatteGold_MatteoSollHaben);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "РќРµС‚. РњР°С‚С‚РµРѕ РїРѕР»СѓС‡РёС‚ СЃРІРѕРё РґРµРЅСЊРіРё РЅР°Р·Р°Рґ.", DIA_Thorben_GrittaHatteGold_MatteoSollHaben);
 	};
 
 	if (Npc_HasItems(other, itmi_gold) >= 100)
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Вот твое золото.", DIA_Thorben_GrittaHatteGold_HereItIs);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.", DIA_Thorben_GrittaHatteGold_HereItIs);
 	};
 };
 
@@ -757,16 +757,16 @@ func void B_Thorben_DeletePetzCrimeGritta()
 {
 	if (Gritta_GoldGiven == FALSE)
 	{
-		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_00"); //И, насколько я знаю эту гадюку, я уверен, что она побежит прямо к стражникам и обвинит тебя тоже!
-		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_01"); //Я должен уладить этот вопрос.
+		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_00"); //Р, РЅР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ СЌС‚Сѓ РіР°РґСЋРєСѓ, СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РѕРЅР° РїРѕР±РµР¶РёС‚ РїСЂСЏРјРѕ Рє СЃС‚СЂР°Р¶РЅРёРєР°Рј Рё РѕР±РІРёРЅРёС‚ С‚РµР±СЏ С‚РѕР¶Рµ!
+		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_01"); //РЇ РґРѕР»Р¶РµРЅ СѓР»Р°РґРёС‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ.
 		B_DeletePetzCrime (Gritta);
 	};
 };
 
 func void DIA_Thorben_GrittaHatteGold_MatteoHatEs()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_15_00"); //Я уже отдал золото Маттео!
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_06_01"); //Черт! Ну, ладно, долг есть долг. По крайней мере, ты не присвоил это золото. Думаю, мне нужно поблагодарить тебя за это.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_15_00"); //РЇ СѓР¶Рµ РѕС‚РґР°Р» Р·РѕР»РѕС‚Рѕ РњР°С‚С‚РµРѕ!
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_06_01"); //Р§РµСЂС‚! РќСѓ, Р»Р°РґРЅРѕ, РґРѕР»Рі РµСЃС‚СЊ РґРѕР»Рі. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚С‹ РЅРµ РїСЂРёСЃРІРѕРёР» СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ. Р”СѓРјР°СЋ, РјРЅРµ РЅСѓР¶РЅРѕ РїРѕР±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ Р·Р° СЌС‚Рѕ.
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	
@@ -775,9 +775,9 @@ func void DIA_Thorben_GrittaHatteGold_MatteoHatEs()
 
 func void DIA_Thorben_GrittaHatteGold_MatteoSollHaben()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_15_00"); //Нет. Маттео получит свои деньги назад.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_01"); //Ты просто убиваешь меня. Лемар не отличается великодушием, когда дело доходит до долгов.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_02"); //Но, по крайней мере, ты расплатишься с долгами моей племянницы. Думаю, мне нужно поблагодарить тебя за это.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_15_00"); //РќРµС‚. РњР°С‚С‚РµРѕ РїРѕР»СѓС‡РёС‚ СЃРІРѕРё РґРµРЅСЊРіРё РЅР°Р·Р°Рґ.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_01"); //РўС‹ РїСЂРѕСЃС‚Рѕ СѓР±РёРІР°РµС€СЊ РјРµРЅСЏ. Р›РµРјР°СЂ РЅРµ РѕС‚Р»РёС‡Р°РµС‚СЃСЏ РІРµР»РёРєРѕРґСѓС€РёРµРј, РєРѕРіРґР° РґРµР»Рѕ РґРѕС…РѕРґРёС‚ РґРѕ РґРѕР»РіРѕРІ.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_02"); //РќРѕ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚С‹ СЂР°СЃРїР»Р°С‚РёС€СЊСЃСЏ СЃ РґРѕР»РіР°РјРё РјРѕРµР№ РїР»РµРјСЏРЅРЅРёС†С‹. Р”СѓРјР°СЋ, РјРЅРµ РЅСѓР¶РЅРѕ РїРѕР±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ Р·Р° СЌС‚Рѕ.
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	
@@ -786,10 +786,10 @@ func void DIA_Thorben_GrittaHatteGold_MatteoSollHaben()
 
 func void DIA_Thorben_GrittaHatteGold_HereItIs()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_HereItIs_15_00"); //Вот твое золото.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_HereItIs_15_00"); //Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
 	B_GiveInvItems(other, self, itmi_gold, 100);
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_01"); //Спасибо! Теперь, у меня есть хотя бы часть денег, которые я должен Лемару.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_02"); //Не могу поверить, что у нее хватило наглости взять мое золото!
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_01"); //РЎРїР°СЃРёР±Рѕ! РўРµРїРµСЂСЊ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ С…РѕС‚СЏ Р±С‹ С‡Р°СЃС‚СЊ РґРµРЅРµРі, РєРѕС‚РѕСЂС‹Рµ СЏ РґРѕР»Р¶РµРЅ Р›РµРјР°СЂСѓ.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_02"); //РќРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ, С‡С‚Рѕ Сѓ РЅРµРµ С…РІР°С‚РёР»Рѕ РЅР°РіР»РѕСЃС‚Рё РІР·СЏС‚СЊ РјРѕРµ Р·РѕР»РѕС‚Рѕ!
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	

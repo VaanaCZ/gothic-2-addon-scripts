@@ -2,7 +2,7 @@
 instance VLK_422_Salandril (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Саландрил"; 
+	name 		= "РЎР°Р»Р°РЅРґСЂРёР»"; 
 	guild 		= GIL_VLK;
 	id 			= 422;
 	voice 		= 13;

@@ -1,7 +1,7 @@
 instance PAL_2002_Leiche  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Сильвестро";
+	name 		= "РЎРёР»СЊРІРµСЃС‚СЂРѕ";
 	guild 		= GIL_NONE;
 	id 			= 2002;
 	voice 		= 4;

@@ -81,9 +81,9 @@ func int DIA_Jack_GREET_Condition ()
 };
 func void DIA_Jack_GREET_Info ()
 {
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_00"); //Привет, сухопутная крыса, похоже, ты сейчас на мели.
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_01"); //У тебя жабры какие-то бледные.
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_02"); //Не бери в голову, парень. Все, что тебе нужно - это крепкий морской бриз.
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_00"); //РџСЂРёРІРµС‚, СЃСѓС…РѕРїСѓС‚РЅР°СЏ РєСЂС‹СЃР°, РїРѕС…РѕР¶Рµ, С‚С‹ СЃРµР№С‡Р°СЃ РЅР° РјРµР»Рё.
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_01"); //РЈ С‚РµР±СЏ Р¶Р°Р±СЂС‹ РєР°РєРёРµ-С‚Рѕ Р±Р»РµРґРЅС‹Рµ.
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_02"); //РќРµ Р±РµСЂРё РІ РіРѕР»РѕРІСѓ, РїР°СЂРµРЅСЊ. Р’СЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ - СЌС‚Рѕ РєСЂРµРїРєРёР№ РјРѕСЂСЃРєРѕР№ Р±СЂРёР·.
 };
 
 
@@ -97,7 +97,7 @@ instance DIA_Jack_Job		(C_INFO)
 	condition	 = 	DIA_Jack_Job_Condition;
 	information	 = 	DIA_Jack_Job_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Jack_Job_Condition ()
@@ -109,28 +109,28 @@ func int DIA_Jack_Job_Condition ()
 };
 func void DIA_Jack_Job_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_Job_15_00"); //Что ты делаешь здесь?
-	//AI_Output			(self, other, "DIA_Jack_Job_14_01"); //Когда я был еще юношей, я отправился странствовать по морям, и пережил много сильных штормов.
-	//AI_Output			(self, other, "DIA_Jack_Job_14_02"); //Но много лет назад, я осел здесь, и с тех пор работал смотрителем маяка Хориниса.
-	//AI_Output			(self, other, "DIA_Jack_Job_14_03"); //В этом нет ничего сложного. Совсем. Но этот старый маяк стал мне родным домом.
-	//AI_Output			(self, other, "DIA_Jack_Job_14_04"); //Но я так давно уже не был в нем.
-	//AI_Output			(other, self, "DIA_Jack_Job_15_05"); //Почему?
-	AI_Output			(self ,other, "DIA_Jack_Job_14_06"); //С тех пор, как эти подонки захватили мой маяк, я не осмеливаюсь подойти к нему ближе, чем на двадцать футов. Это очень плохие люди.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_07"); //Они преступники из Долины Рудников, понимаешь?
-	AI_Output			(self ,other, "DIA_Jack_Job_14_08"); //По другую сторону гор раздался оглушительный взрыв, а затем они налетели на эту землю как мухи на дерьмо. Теперь они скрываются здесь повсюду - даже на моем маяке.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_09"); //Я думаю, они поджидают корабль, на котором могли бы уплыть.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_10"); //Ха! Пусть плывут куда хотят. Тогда, по крайней мере, они уберутся с моего маяка.
+	AI_Output			(other, self, "DIA_Jack_Job_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	//AI_Output			(self, other, "DIA_Jack_Job_14_01"); //РљРѕРіРґР° СЏ Р±С‹Р» РµС‰Рµ СЋРЅРѕС€РµР№, СЏ РѕС‚РїСЂР°РІРёР»СЃСЏ СЃС‚СЂР°РЅСЃС‚РІРѕРІР°С‚СЊ РїРѕ РјРѕСЂСЏРј, Рё РїРµСЂРµР¶РёР» РјРЅРѕРіРѕ СЃРёР»СЊРЅС‹С… С€С‚РѕСЂРјРѕРІ.
+	//AI_Output			(self, other, "DIA_Jack_Job_14_02"); //РќРѕ РјРЅРѕРіРѕ Р»РµС‚ РЅР°Р·Р°Рґ, СЏ РѕСЃРµР» Р·РґРµСЃСЊ, Рё СЃ С‚РµС… РїРѕСЂ СЂР°Р±РѕС‚Р°Р» СЃРјРѕС‚СЂРёС‚РµР»РµРј РјР°СЏРєР° РҐРѕСЂРёРЅРёСЃР°.
+	//AI_Output			(self, other, "DIA_Jack_Job_14_03"); //Р’ СЌС‚РѕРј РЅРµС‚ РЅРёС‡РµРіРѕ СЃР»РѕР¶РЅРѕРіРѕ. РЎРѕРІСЃРµРј. РќРѕ СЌС‚РѕС‚ СЃС‚Р°СЂС‹Р№ РјР°СЏРє СЃС‚Р°Р» РјРЅРµ СЂРѕРґРЅС‹Рј РґРѕРјРѕРј.
+	//AI_Output			(self, other, "DIA_Jack_Job_14_04"); //РќРѕ СЏ С‚Р°Рє РґР°РІРЅРѕ СѓР¶Рµ РЅРµ Р±С‹Р» РІ РЅРµРј.
+	//AI_Output			(other, self, "DIA_Jack_Job_15_05"); //РџРѕС‡РµРјСѓ?
+	AI_Output			(self ,other, "DIA_Jack_Job_14_06"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЌС‚Рё РїРѕРґРѕРЅРєРё Р·Р°С…РІР°С‚РёР»Рё РјРѕР№ РјР°СЏРє, СЏ РЅРµ РѕСЃРјРµР»РёРІР°СЋСЃСЊ РїРѕРґРѕР№С‚Рё Рє РЅРµРјСѓ Р±Р»РёР¶Рµ, С‡РµРј РЅР° РґРІР°РґС†Р°С‚СЊ С„СѓС‚РѕРІ. Р­С‚Рѕ РѕС‡РµРЅСЊ РїР»РѕС…РёРµ Р»СЋРґРё.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_07"); //РћРЅРё РїСЂРµСЃС‚СѓРїРЅРёРєРё РёР· Р”РѕР»РёРЅС‹ Р СѓРґРЅРёРєРѕРІ, РїРѕРЅРёРјР°РµС€СЊ?
+	AI_Output			(self ,other, "DIA_Jack_Job_14_08"); //РџРѕ РґСЂСѓРіСѓСЋ СЃС‚РѕСЂРѕРЅСѓ РіРѕСЂ СЂР°Р·РґР°Р»СЃСЏ РѕРіР»СѓС€РёС‚РµР»СЊРЅС‹Р№ РІР·СЂС‹РІ, Р° Р·Р°С‚РµРј РѕРЅРё РЅР°Р»РµС‚РµР»Рё РЅР° СЌС‚Сѓ Р·РµРјР»СЋ РєР°Рє РјСѓС…Рё РЅР° РґРµСЂСЊРјРѕ. РўРµРїРµСЂСЊ РѕРЅРё СЃРєСЂС‹РІР°СЋС‚СЃСЏ Р·РґРµСЃСЊ РїРѕРІСЃСЋРґСѓ - РґР°Р¶Рµ РЅР° РјРѕРµРј РјР°СЏРєРµ.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_09"); //РЇ РґСѓРјР°СЋ, РѕРЅРё РїРѕРґР¶РёРґР°СЋС‚ РєРѕСЂР°Р±Р»СЊ, РЅР° РєРѕС‚РѕСЂРѕРј РјРѕРіР»Рё Р±С‹ СѓРїР»С‹С‚СЊ.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_10"); //РҐР°! РџСѓСЃС‚СЊ РїР»С‹РІСѓС‚ РєСѓРґР° С…РѕС‚СЏС‚. РўРѕРіРґР°, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РѕРЅРё СѓР±РµСЂСѓС‚СЃСЏ СЃ РјРѕРµРіРѕ РјР°СЏРєР°.
 	
 	Log_CreateTopic (TOPIC_KillLighthouseBandits, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KillLighthouseBandits, LOG_RUNNING);
-	B_LogEntry (TOPIC_KillLighthouseBandits,"Старый морской волк Джек не может вернуться на свой маяк, так как там засели бандиты."); 
+	B_LogEntry (TOPIC_KillLighthouseBandits,"РЎС‚Р°СЂС‹Р№ РјРѕСЂСЃРєРѕР№ РІРѕР»Рє Р”Р¶РµРє РЅРµ РјРѕР¶РµС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР° СЃРІРѕР№ РјР°СЏРє, С‚Р°Рє РєР°Рє С‚Р°Рј Р·Р°СЃРµР»Рё Р±Р°РЅРґРёС‚С‹."); 
 	
 	MIS_Jack_KillLighthouseBandits = LOG_RUNNING;
 	
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzдhl mir was ьber die Stadt
+//	ErzРґhl mir was СЊber die Stadt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_City		(C_INFO)
 {
@@ -139,7 +139,7 @@ instance DIA_Jack_City		(C_INFO)
 	condition	 = 	DIA_Jack_City_Condition;
 	information	 = 	DIA_Jack_City_Info;
 
-	description	 = 	"Ты часто бываешь в городе?";
+	description	 = 	"РўС‹ С‡Р°СЃС‚Рѕ Р±С‹РІР°РµС€СЊ РІ РіРѕСЂРѕРґРµ?";
 };
 
 func int DIA_Jack_City_Condition ()
@@ -151,14 +151,14 @@ func int DIA_Jack_City_Condition ()
 };
 func void DIA_Jack_City_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_City_15_00"); //Ты часто бываешь в городе?
-	AI_Output			(self ,other, "DIA_Jack_City_14_01"); //Я всегда говорю: город настолько хорош, насколько хорош его порт.
-	AI_Output			(self ,other, "DIA_Jack_City_14_02"); //Порт - это ворота в мир. Здесь все встречаются, и все начинается здесь.
-	AI_Output			(self ,other, "DIA_Jack_City_14_03"); //А когда в порту царит запустение, город неминуемо ждет та же участь.
+	AI_Output			(other, self, "DIA_Jack_City_15_00"); //РўС‹ С‡Р°СЃС‚Рѕ Р±С‹РІР°РµС€СЊ РІ РіРѕСЂРѕРґРµ?
+	AI_Output			(self ,other, "DIA_Jack_City_14_01"); //РЇ РІСЃРµРіРґР° РіРѕРІРѕСЂСЋ: РіРѕСЂРѕРґ РЅР°СЃС‚РѕР»СЊРєРѕ С…РѕСЂРѕС€, РЅР°СЃРєРѕР»СЊРєРѕ С…РѕСЂРѕС€ РµРіРѕ РїРѕСЂС‚.
+	AI_Output			(self ,other, "DIA_Jack_City_14_02"); //РџРѕСЂС‚ - СЌС‚Рѕ РІРѕСЂРѕС‚Р° РІ РјРёСЂ. Р—РґРµСЃСЊ РІСЃРµ РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ, Рё РІСЃРµ РЅР°С‡РёРЅР°РµС‚СЃСЏ Р·РґРµСЃСЊ.
+	AI_Output			(self ,other, "DIA_Jack_City_14_03"); //Рђ РєРѕРіРґР° РІ РїРѕСЂС‚Сѓ С†Р°СЂРёС‚ Р·Р°РїСѓСЃС‚РµРЅРёРµ, РіРѕСЂРѕРґ РЅРµРјРёРЅСѓРµРјРѕ Р¶РґРµС‚ С‚Р° Р¶Рµ СѓС‡Р°СЃС‚СЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzдhl mir was ьber den Hafen
+//	ErzРґhl mir was СЊber den Hafen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_Harbor		(C_INFO)
 {
@@ -168,7 +168,7 @@ instance DIA_Jack_Harbor		(C_INFO)
 	information	 = 	DIA_Jack_Harbor_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"Расскажи мне об этом порте.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј РїРѕСЂС‚Рµ.";
 };
 
 func int DIA_Jack_Harbor_Condition ()
@@ -182,15 +182,15 @@ func int DIA_Jack_Harbor_Condition ()
 };
 func void DIA_Jack_Harbor_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_Harbor_15_00"); //Расскажи мне об этом порте.
-	AI_Output			(self ,other, "DIA_Jack_Harbor_14_01"); //Порт Хориниса сейчас не тот, что был раньше.
-	AI_Output			(self ,other, "DIA_Jack_Harbor_14_02"); //Здесь никого не осталось, кроме праздношатающегося сброда, корабли сюда больше не заходят, и торговля пришла в упадок. Этому порту, похоже, скоро придет конец.
+	AI_Output			(other, self, "DIA_Jack_Harbor_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РѕР± СЌС‚РѕРј РїРѕСЂС‚Рµ.
+	AI_Output			(self ,other, "DIA_Jack_Harbor_14_01"); //РџРѕСЂС‚ РҐРѕСЂРёРЅРёСЃР° СЃРµР№С‡Р°СЃ РЅРµ С‚РѕС‚, С‡С‚Рѕ Р±С‹Р» СЂР°РЅСЊС€Рµ.
+	AI_Output			(self ,other, "DIA_Jack_Harbor_14_02"); //Р—РґРµСЃСЊ РЅРёРєРѕРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ, РєСЂРѕРјРµ РїСЂР°Р·РґРЅРѕС€Р°С‚Р°СЋС‰РµРіРѕСЃСЏ СЃР±СЂРѕРґР°, РєРѕСЂР°Р±Р»Рё СЃСЋРґР° Р±РѕР»СЊС€Рµ РЅРµ Р·Р°С…РѕРґСЏС‚, Рё С‚РѕСЂРіРѕРІР»СЏ РїСЂРёС€Р»Р° РІ СѓРїР°РґРѕРє. Р­С‚РѕРјСѓ РїРѕСЂС‚Сѓ, РїРѕС…РѕР¶Рµ, СЃРєРѕСЂРѕ РїСЂРёРґРµС‚ РєРѕРЅРµС†.
 	
 	Info_ClearChoices (DIA_Jack_Harbor);
 	Info_AddChoice (DIA_Jack_Harbor,DIALOG_BACK,DIA_Jack_Harbor_Back);
-	Info_AddChoice (DIA_Jack_Harbor,"Почему корабли больше не приходят сюда?",DIA_Jack_Harbor_Ships);
-	Info_AddChoice (DIA_Jack_Harbor,"Что ты имеешь в виду под сбродом?",DIA_Jack_Harbor_Rogue);
-	Info_AddChoice (DIA_Jack_Harbor,"Так почему ты не уедешь отсюда?",DIA_Jack_Harbor_Leave);
+	Info_AddChoice (DIA_Jack_Harbor,"РџРѕС‡РµРјСѓ РєРѕСЂР°Р±Р»Рё Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёС…РѕРґСЏС‚ СЃСЋРґР°?",DIA_Jack_Harbor_Ships);
+	Info_AddChoice (DIA_Jack_Harbor,"Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РїРѕРґ СЃР±СЂРѕРґРѕРј?",DIA_Jack_Harbor_Rogue);
+	Info_AddChoice (DIA_Jack_Harbor,"РўР°Рє РїРѕС‡РµРјСѓ С‚С‹ РЅРµ СѓРµРґРµС€СЊ РѕС‚СЃСЋРґР°?",DIA_Jack_Harbor_Leave);
 };
 
 FUNC VOID DIA_Jack_Harbor_Back ()
@@ -200,26 +200,26 @@ FUNC VOID DIA_Jack_Harbor_Back ()
 
 FUNC VOID DIA_Jack_Harbor_Ships ()
 {	
-	AI_Output (other,self ,"DIA_Jack_Harbor_Ships_15_00"); //Почему корабли больше не приходят сюда?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_01"); //Здесь говорят, что когда война будет окончена, все вернется на круги своя. Это все чушь собачья.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_02"); //Уверяю тебя, настоящий матрос всегда первым понимает, что город приходит в упадок.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_03"); //Матрос чувствует это своим нутром. И я говорю тебе, забудь об этом порте, его лучшие дни давно позади.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Ships_15_00"); //РџРѕС‡РµРјСѓ РєРѕСЂР°Р±Р»Рё Р±РѕР»СЊС€Рµ РЅРµ РїСЂРёС…РѕРґСЏС‚ СЃСЋРґР°?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_01"); //Р—РґРµСЃСЊ РіРѕРІРѕСЂСЏС‚, С‡С‚Рѕ РєРѕРіРґР° РІРѕР№РЅР° Р±СѓРґРµС‚ РѕРєРѕРЅС‡РµРЅР°, РІСЃРµ РІРµСЂРЅРµС‚СЃСЏ РЅР° РєСЂСѓРіРё СЃРІРѕСЏ. Р­С‚Рѕ РІСЃРµ С‡СѓС€СЊ СЃРѕР±Р°С‡СЊСЏ.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_02"); //РЈРІРµСЂСЏСЋ С‚РµР±СЏ, РЅР°СЃС‚РѕСЏС‰РёР№ РјР°С‚СЂРѕСЃ РІСЃРµРіРґР° РїРµСЂРІС‹Рј РїРѕРЅРёРјР°РµС‚, С‡С‚Рѕ РіРѕСЂРѕРґ РїСЂРёС…РѕРґРёС‚ РІ СѓРїР°РґРѕРє.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_03"); //РњР°С‚СЂРѕСЃ С‡СѓРІСЃС‚РІСѓРµС‚ СЌС‚Рѕ СЃРІРѕРёРј РЅСѓС‚СЂРѕРј. Р СЏ РіРѕРІРѕСЂСЋ С‚РµР±Рµ, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј РїРѕСЂС‚Рµ, РµРіРѕ Р»СѓС‡С€РёРµ РґРЅРё РґР°РІРЅРѕ РїРѕР·Р°РґРё.
 };
 
 FUNC VOID DIA_Jack_Harbor_Rogue ()
 {
-	AI_Output (other,self ,"DIA_Jack_Harbor_Rogue_15_00"); //Что ты имеешь в виду под сбродом?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_01"); //Посмотри на них, это же сборище лодырей. Большинство из них даже не знает, что такое работа. Они только и делают, что пьют все дни напролет и относят свои последние гроши в бордель.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_02"); //Говорю тебе, держись от них подальше.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Rogue_15_00"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РїРѕРґ СЃР±СЂРѕРґРѕРј?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_01"); //РџРѕСЃРјРѕС‚СЂРё РЅР° РЅРёС…, СЌС‚Рѕ Р¶Рµ СЃР±РѕСЂРёС‰Рµ Р»РѕРґС‹СЂРµР№. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… РґР°Р¶Рµ РЅРµ Р·РЅР°РµС‚, С‡С‚Рѕ С‚Р°РєРѕРµ СЂР°Р±РѕС‚Р°. РћРЅРё С‚РѕР»СЊРєРѕ Рё РґРµР»Р°СЋС‚, С‡С‚Рѕ РїСЊСЋС‚ РІСЃРµ РґРЅРё РЅР°РїСЂРѕР»РµС‚ Рё РѕС‚РЅРѕСЃСЏС‚ СЃРІРѕРё РїРѕСЃР»РµРґРЅРёРµ РіСЂРѕС€Рё РІ Р±РѕСЂРґРµР»СЊ.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_02"); //Р“РѕРІРѕСЂСЋ С‚РµР±Рµ, РґРµСЂР¶РёСЃСЊ РѕС‚ РЅРёС… РїРѕРґР°Р»СЊС€Рµ.
 };
 
 FUNC VOID DIA_Jack_Harbor_Leave ()
 {
-	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_00"); //Так почему ты не уедешь отсюда?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_01"); //Сегодня никто не возьмет на корабль старого морского волка вроде меня.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_02"); //Большинство полагает, что Старый Джек ни на что не годен, и что его старые кости разъедает подагра.
-	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_03"); //И? Они правы?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_04"); //Вздор. Как только я опять почувствую под своими ногами палубу, я дам фору любому из этих нахальных юнцов.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_00"); //РўР°Рє РїРѕС‡РµРјСѓ С‚С‹ РЅРµ СѓРµРґРµС€СЊ РѕС‚СЃСЋРґР°?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_01"); //РЎРµРіРѕРґРЅСЏ РЅРёРєС‚Рѕ РЅРµ РІРѕР·СЊРјРµС‚ РЅР° РєРѕСЂР°Р±Р»СЊ СЃС‚Р°СЂРѕРіРѕ РјРѕСЂСЃРєРѕРіРѕ РІРѕР»РєР° РІСЂРѕРґРµ РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_02"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РїРѕР»Р°РіР°РµС‚, С‡С‚Рѕ РЎС‚Р°СЂС‹Р№ Р”Р¶РµРє РЅРё РЅР° С‡С‚Рѕ РЅРµ РіРѕРґРµРЅ, Рё С‡С‚Рѕ РµРіРѕ СЃС‚Р°СЂС‹Рµ РєРѕСЃС‚Рё СЂР°Р·СЉРµРґР°РµС‚ РїРѕРґР°РіСЂР°.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_03"); //Р? РћРЅРё РїСЂР°РІС‹?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_04"); //Р’Р·РґРѕСЂ. РљР°Рє С‚РѕР»СЊРєРѕ СЏ РѕРїСЏС‚СЊ РїРѕС‡СѓРІСЃС‚РІСѓСЋ РїРѕРґ СЃРІРѕРёРјРё РЅРѕРіР°РјРё РїР°Р»СѓР±Сѓ, СЏ РґР°Рј С„РѕСЂСѓ Р»СЋР±РѕРјСѓ РёР· СЌС‚РёС… РЅР°С…Р°Р»СЊРЅС‹С… СЋРЅС†РѕРІ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Jack_BANDITENWEG		(C_INFO)
 	condition	 = 	DIA_Jack_BANDITENWEG_Condition;
 	information	 = 	DIA_Jack_BANDITENWEG_Info;
 
-	description	 = 	"Бандитов, которые захватили твой маяк, больше нет.";
+	description	 = 	"Р‘Р°РЅРґРёС‚РѕРІ, РєРѕС‚РѕСЂС‹Рµ Р·Р°С…РІР°С‚РёР»Рё С‚РІРѕР№ РјР°СЏРє, Р±РѕР»СЊС€Рµ РЅРµС‚.";
 };
 
 func int DIA_Jack_BANDITENWEG_Condition ()
@@ -248,9 +248,9 @@ func int DIA_Jack_BANDITENWEG_Condition ()
 
 func void DIA_Jack_BANDITENWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BANDITENWEG_15_00"); //Бандитов, которые захватили твой маяк, больше нет.
-	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_01"); //Это правда? Наконец-то я смогу опять вернуться к своей работе.
-	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_02"); //Пойдем со мной к маяку. Оттуда ты сможешь насладиться потрясающим видом на море.
+	AI_Output			(other, self, "DIA_Jack_BANDITENWEG_15_00"); //Р‘Р°РЅРґРёС‚РѕРІ, РєРѕС‚РѕСЂС‹Рµ Р·Р°С…РІР°С‚РёР»Рё С‚РІРѕР№ РјР°СЏРє, Р±РѕР»СЊС€Рµ РЅРµС‚.
+	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_01"); //Р­С‚Рѕ РїСЂР°РІРґР°? РќР°РєРѕРЅРµС†-С‚Рѕ СЏ СЃРјРѕРіСѓ РѕРїСЏС‚СЊ РІРµСЂРЅСѓС‚СЊСЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
+	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_02"); //РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№ Рє РјР°СЏРєСѓ. РћС‚С‚СѓРґР° С‚С‹ СЃРјРѕР¶РµС€СЊ РЅР°СЃР»Р°РґРёС‚СЊСЃСЏ РїРѕС‚СЂСЏСЃР°СЋС‰РёРј РІРёРґРѕРј РЅР° РјРѕСЂРµ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Lighthouse");
 	MIS_Jack_KillLighthouseBandits = LOG_SUCCESS;
@@ -269,7 +269,7 @@ instance DIA_Jack_LIGHTHOUSEFREE		(C_INFO)
 	permanent	 = 	TRUE;
 
 
-	description	 = 	"Мне нравится твой маяк.";
+	description	 = 	"РњРЅРµ РЅСЂР°РІРёС‚СЃСЏ С‚РІРѕР№ РјР°СЏРє.";
 };
 
 func int DIA_Jack_LIGHTHOUSEFREE_Condition ()
@@ -284,8 +284,8 @@ func int DIA_Jack_LIGHTHOUSEFREE_Condition ()
 
 func void DIA_Jack_LIGHTHOUSEFREE_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_LIGHTHOUSEFREE_15_00"); //Мне нравится твой маяк.
-	AI_Output			(self, other, "DIA_Jack_LIGHTHOUSEFREE_14_01"); //Спасибо. Поднимись по лестнице наверх, оттуда открывается такой потрясающий вид. Чувствуй себя здесь как дома.
+	AI_Output			(other, self, "DIA_Jack_LIGHTHOUSEFREE_15_00"); //РњРЅРµ РЅСЂР°РІРёС‚СЃСЏ С‚РІРѕР№ РјР°СЏРє.
+	AI_Output			(self, other, "DIA_Jack_LIGHTHOUSEFREE_14_01"); //РЎРїР°СЃРёР±Рѕ. РџРѕРґРЅРёРјРёСЃСЊ РїРѕ Р»РµСЃС‚РЅРёС†Рµ РЅР°РІРµСЂС…, РѕС‚С‚СѓРґР° РѕС‚РєСЂС‹РІР°РµС‚СЃСЏ С‚Р°РєРѕР№ РїРѕС‚СЂСЏСЃР°СЋС‰РёР№ РІРёРґ. Р§СѓРІСЃС‚РІСѓР№ СЃРµР±СЏ Р·РґРµСЃСЊ РєР°Рє РґРѕРјР°.
 };
 
 
@@ -403,7 +403,7 @@ instance DIA_Jack_BEMYCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jack_BEMYCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты бы не хотел опять выйти в море?";
+	description	 = 	"РўС‹ Р±С‹ РЅРµ С…РѕС‚РµР» РѕРїСЏС‚СЊ РІС‹Р№С‚Рё РІ РјРѕСЂРµ?";
 };
 
 func int DIA_Jack_BEMYCAPTAIN_Condition ()
@@ -419,39 +419,39 @@ func int DIA_Jack_BEMYCAPTAIN_Condition ()
 
 func void DIA_Jack_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_15_00"); //Ты бы не хотел опять выйти в море?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_01"); //Я бы с радостью отдал свою правую руку только за то, чтобы кто-нибудь нанял меня на большую шхуну, хотя бы ненадолго.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_02"); //Но для старого морского волка вроде меня это не так-то легко, приятель. Да и к тому же, кто тогда будет присматривать за маяком?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_15_00"); //РўС‹ Р±С‹ РЅРµ С…РѕС‚РµР» РѕРїСЏС‚СЊ РІС‹Р№С‚Рё РІ РјРѕСЂРµ?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_01"); //РЇ Р±С‹ СЃ СЂР°РґРѕСЃС‚СЊСЋ РѕС‚РґР°Р» СЃРІРѕСЋ РїСЂР°РІСѓСЋ СЂСѓРєСѓ С‚РѕР»СЊРєРѕ Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ РєС‚Рѕ-РЅРёР±СѓРґСЊ РЅР°РЅСЏР» РјРµРЅСЏ РЅР° Р±РѕР»СЊС€СѓСЋ С€С…СѓРЅСѓ, С…РѕС‚СЏ Р±С‹ РЅРµРЅР°РґРѕР»РіРѕ.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_02"); //РќРѕ РґР»СЏ СЃС‚Р°СЂРѕРіРѕ РјРѕСЂСЃРєРѕРіРѕ РІРѕР»РєР° РІСЂРѕРґРµ РјРµРЅСЏ СЌС‚Рѕ РЅРµ С‚Р°Рє-С‚Рѕ Р»РµРіРєРѕ, РїСЂРёСЏС‚РµР»СЊ. Р”Р° Рё Рє С‚РѕРјСѓ Р¶Рµ, РєС‚Рѕ С‚РѕРіРґР° Р±СѓРґРµС‚ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° РјР°СЏРєРѕРј?
 
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Забудь. Это я просто так сказал.", DIA_Jack_BEMYCAPTAIN_no );
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Я нуждаюсь в твоем опыте моряка.", DIA_Jack_BEMYCAPTAIN_seaman );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Р—Р°Р±СѓРґСЊ. Р­С‚Рѕ СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃРєР°Р·Р°Р».", DIA_Jack_BEMYCAPTAIN_no );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "РЇ РЅСѓР¶РґР°СЋСЃСЊ РІ С‚РІРѕРµРј РѕРїС‹С‚Рµ РјРѕСЂСЏРєР°.", DIA_Jack_BEMYCAPTAIN_seaman );
 
 };
 
 func void DIA_Jack_BEMYCAPTAIN_seaman ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_00"); //Я нуждаюсь в твоем опыте моряка.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_01"); //Черт меня побери! Что ты задумал, приятель? Ты же не собираешься захватить королевскую военную галеру, а?
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_02"); //Кто знает?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_03"); //(смеется) Это будет что-то! Ох, черт. Но я не могу вот так взять и бросить свой маяк. Ммм. Что же нам с этим делать?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_00"); //РЇ РЅСѓР¶РґР°СЋСЃСЊ РІ С‚РІРѕРµРј РѕРїС‹С‚Рµ РјРѕСЂСЏРєР°.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_01"); //Р§РµСЂС‚ РјРµРЅСЏ РїРѕР±РµСЂРё! Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р», РїСЂРёСЏС‚РµР»СЊ? РўС‹ Р¶Рµ РЅРµ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ Р·Р°С…РІР°С‚РёС‚СЊ РєРѕСЂРѕР»РµРІСЃРєСѓСЋ РІРѕРµРЅРЅСѓСЋ РіР°Р»РµСЂСѓ, Р°?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_02"); //РљС‚Рѕ Р·РЅР°РµС‚?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_03"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ Р±СѓРґРµС‚ С‡С‚Рѕ-С‚Рѕ! РћС…, С‡РµСЂС‚. РќРѕ СЏ РЅРµ РјРѕРіСѓ РІРѕС‚ С‚Р°Рє РІР·СЏС‚СЊ Рё Р±СЂРѕСЃРёС‚СЊ СЃРІРѕР№ РјР°СЏРє. РњРјРј. Р§С‚Рѕ Р¶Рµ РЅР°Рј СЃ СЌС‚РёРј РґРµР»Р°С‚СЊ?
 	
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                        
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                      
-	B_LogEntry (TOPIC_Captain,"Джек, старый морской волк из гавани, мог бы стать хорошим капитаном. Но сначала я должен найти кого-нибудь, кто посторожит его маяк."); 
+	B_LogEntry (TOPIC_Captain,"Р”Р¶РµРє, СЃС‚Р°СЂС‹Р№ РјРѕСЂСЃРєРѕР№ РІРѕР»Рє РёР· РіР°РІР°РЅРё, РјРѕРі Р±С‹ СЃС‚Р°С‚СЊ С…РѕСЂРѕС€РёРј РєР°РїРёС‚Р°РЅРѕРј. РќРѕ СЃРЅР°С‡Р°Р»Р° СЏ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РїРѕСЃС‚РѕСЂРѕР¶РёС‚ РµРіРѕ РјР°СЏРє."); 
 	
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Забудь. Это я просто так сказал.", DIA_Jack_BEMYCAPTAIN_no );
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "А что если я приведу к тебе кого-нибудь ...?", DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Р—Р°Р±СѓРґСЊ. Р­С‚Рѕ СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃРєР°Р·Р°Р».", DIA_Jack_BEMYCAPTAIN_no );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РїСЂРёРІРµРґСѓ Рє С‚РµР±Рµ РєРѕРіРѕ-РЅРёР±СѓРґСЊ ...?", DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer );
 
 };
 func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_15_00"); //А что если я приведу к тебе кого-нибудь, кто позаботился бы о маяке в твое отсутствие?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_01"); //Неплохая идея, приятель. И у меня есть подходящая кандидатура.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_02"); //У Гарада, кузнеца, есть подмастерье по имени Брайан. Я много раз беседовал с ним.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_03"); //Я бы хотел доверить свой маяк ему. Я думаю, он лучше всего подходит для этого.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_04"); //Иди, поговори с ним. Возможно, нам повезет, и этот парень согласится помочь нам.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_15_00"); //Рђ С‡С‚Рѕ РµСЃР»Рё СЏ РїСЂРёРІРµРґСѓ Рє С‚РµР±Рµ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РїРѕР·Р°Р±РѕС‚РёР»СЃСЏ Р±С‹ Рѕ РјР°СЏРєРµ РІ С‚РІРѕРµ РѕС‚СЃСѓС‚СЃС‚РІРёРµ?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_01"); //РќРµРїР»РѕС…Р°СЏ РёРґРµСЏ, РїСЂРёСЏС‚РµР»СЊ. Р Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїРѕРґС…РѕРґСЏС‰Р°СЏ РєР°РЅРґРёРґР°С‚СѓСЂР°.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_02"); //РЈ Р“Р°СЂР°РґР°, РєСѓР·РЅРµС†Р°, РµСЃС‚СЊ РїРѕРґРјР°СЃС‚РµСЂСЊРµ РїРѕ РёРјРµРЅРё Р‘СЂР°Р№Р°РЅ. РЇ РјРЅРѕРіРѕ СЂР°Р· Р±РµСЃРµРґРѕРІР°Р» СЃ РЅРёРј.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_03"); //РЇ Р±С‹ С…РѕС‚РµР» РґРѕРІРµСЂРёС‚СЊ СЃРІРѕР№ РјР°СЏРє РµРјСѓ. РЇ РґСѓРјР°СЋ, РѕРЅ Р»СѓС‡С€Рµ РІСЃРµРіРѕ РїРѕРґС…РѕРґРёС‚ РґР»СЏ СЌС‚РѕРіРѕ.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_04"); //РРґРё, РїРѕРіРѕРІРѕСЂРё СЃ РЅРёРј. Р’РѕР·РјРѕР¶РЅРѕ, РЅР°Рј РїРѕРІРµР·РµС‚, Рё СЌС‚РѕС‚ РїР°СЂРµРЅСЊ СЃРѕРіР»Р°СЃРёС‚СЃСЏ РїРѕРјРѕС‡СЊ РЅР°Рј.
 	
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
 	MIS_Jack_NewLighthouseOfficer = LOG_RUNNING;
@@ -460,7 +460,7 @@ func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer ()
 
 func void DIA_Jack_BEMYCAPTAIN_no ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_no_15_00"); //Забудь. Это я просто так сказал.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_no_15_00"); //Р—Р°Р±СѓРґСЊ. Р­С‚Рѕ СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃРєР°Р·Р°Р».
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
 };
 
@@ -474,7 +474,7 @@ instance DIA_Jack_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Jack_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Jack_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Насчет Брайана ...";
+	description	 = 	"РќР°СЃС‡РµС‚ Р‘СЂР°Р№Р°РЅР° ...";
 };
 
 func int DIA_Jack_BEMYCAPTAIN2_Condition ()
@@ -490,24 +490,24 @@ func void DIA_Jack_BEMYCAPTAIN2_Info ()
 {
 	if (Npc_IsDead(Brian))
 	{
-			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_00"); //Брайан мертв.
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_01"); //Ох. Ужасные времена. Он был таким хорошим парнем.
+			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_00"); //Р‘СЂР°Р№Р°РЅ РјРµСЂС‚РІ.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_01"); //РћС…. РЈР¶Р°СЃРЅС‹Рµ РІСЂРµРјРµРЅР°. РћРЅ Р±С‹Р» С‚Р°РєРёРј С…РѕСЂРѕС€РёРј РїР°СЂРЅРµРј.
 			MIS_Jack_NewLighthouseOfficer = LOG_OBSOLETE;
 	}
 	else
 	{
-			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_02"); //Брайан позаботится о твоем маяке.
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_03"); //Я надеялся, что ты скажешь это.
+			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_02"); //Р‘СЂР°Р№Р°РЅ РїРѕР·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ С‚РІРѕРµРј РјР°СЏРєРµ.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_03"); //РЇ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ СЌС‚Рѕ.
 			B_GivePlayerXP (XP_Jack_NewLighthouseOfficer);
  
 		
 			if (SCGotCaptain == FALSE)
 			{
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_04"); //Я тебе все еще нужен?
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_04"); //РЇ С‚РµР±Рµ РІСЃРµ РµС‰Рµ РЅСѓР¶РµРЅ?
 			}
 			else
 			{
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_05"); //Посмотрим, выйдет ли из этого парня толк.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_05"); //РџРѕСЃРјРѕС‚СЂРёРј, РІС‹Р№РґРµС‚ Р»Рё РёР· СЌС‚РѕРіРѕ РїР°СЂРЅСЏ С‚РѕР»Рє.
 			AI_StopProcessInfos (self);
 			};
 	};
@@ -523,7 +523,7 @@ instance DIA_Jack_BEMYCAPTAIN3		(C_INFO)
 	condition	 = 	DIA_Jack_BEMYCAPTAIN3_Condition;
 	information	 = 	DIA_Jack_BEMYCAPTAIN3_Info;
 
-	description	 = 	"Будь моим капитаном.";
+	description	 = 	"Р‘СѓРґСЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј.";
 };
 
 func int DIA_Jack_BEMYCAPTAIN3_Condition ()
@@ -538,13 +538,13 @@ func int DIA_Jack_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Jack_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_00"); //Будь моим капитаном.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_01"); //Я переплыл семь морей, приятель, но еще никогда я не был капитаном корабля.
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_02"); //Я ничего не знаю о навигации. Ты должен взять на себя эти обязанности.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_03"); //Я сделаю все, что будет в моих силах.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_04"); //А теперь, покажи мне мой корабль и твою команду. А ты, вообще, знаешь, куда направляешься? Я имею в виду, у тебя есть морская карта?
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_05"); //Подожди меня в порту. А об остальном не волнуйся.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_06"); //Ну, как скажешь.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_00"); //Р‘СѓРґСЊ РјРѕРёРј РєР°РїРёС‚Р°РЅРѕРј.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_01"); //РЇ РїРµСЂРµРїР»С‹Р» СЃРµРјСЊ РјРѕСЂРµР№, РїСЂРёСЏС‚РµР»СЊ, РЅРѕ РµС‰Рµ РЅРёРєРѕРіРґР° СЏ РЅРµ Р±С‹Р» РєР°РїРёС‚Р°РЅРѕРј РєРѕСЂР°Р±Р»СЏ.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_02"); //РЇ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ Рѕ РЅР°РІРёРіР°С†РёРё. РўС‹ РґРѕР»Р¶РµРЅ РІР·СЏС‚СЊ РЅР° СЃРµР±СЏ СЌС‚Рё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_03"); //РЇ СЃРґРµР»Р°СЋ РІСЃРµ, С‡С‚Рѕ Р±СѓРґРµС‚ РІ РјРѕРёС… СЃРёР»Р°С….
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_04"); //Рђ С‚РµРїРµСЂСЊ, РїРѕРєР°Р¶Рё РјРЅРµ РјРѕР№ РєРѕСЂР°Р±Р»СЊ Рё С‚РІРѕСЋ РєРѕРјР°РЅРґСѓ. Рђ С‚С‹, РІРѕРѕР±С‰Рµ, Р·РЅР°РµС€СЊ, РєСѓРґР° РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ? РЇ РёРјРµСЋ РІ РІРёРґСѓ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РјРѕСЂСЃРєР°СЏ РєР°СЂС‚Р°?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_05"); //РџРѕРґРѕР¶РґРё РјРµРЅСЏ РІ РїРѕСЂС‚Сѓ. Рђ РѕР± РѕСЃС‚Р°Р»СЊРЅРѕРј РЅРµ РІРѕР»РЅСѓР№СЃСЏ.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_06"); //РќСѓ, РєР°Рє СЃРєР°Р¶РµС€СЊ.
 	AI_StopProcessInfos (self);
 	SCGotCaptain = TRUE;
 	JackIsCaptain = TRUE;
@@ -565,7 +565,7 @@ instance DIA_Jack_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Jack_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Отлично, старик. Поднять паруса!";
+	description	 = 	"РћС‚Р»РёС‡РЅРѕ, СЃС‚Р°СЂРёРє. РџРѕРґРЅСЏС‚СЊ РїР°СЂСѓСЃР°!";
 };
 
 func int DIA_Jack_LOSFAHREN_Condition ()
@@ -579,21 +579,21 @@ func int DIA_Jack_LOSFAHREN_Condition ()
 
 func void DIA_Jack_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_LOSFAHREN_15_00"); //Отлично, старик. Поднять паруса!
+	AI_Output			(other, self, "DIA_Jack_LOSFAHREN_15_00"); //РћС‚Р»РёС‡РЅРѕ, СЃС‚Р°СЂРёРє. РџРѕРґРЅСЏС‚СЊ РїР°СЂСѓСЃР°!
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_01"); //Все в полном порядке. А теперь покажи мне свою морскую карту.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_02"); //Это будет нелегкое плавание. Но я все же надеюсь, что мы доберемся туда целыми и невредимыми.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_03"); //У тебя действительно есть все, что тебе нужно? Мы не станем возвращаться назад только потому, что ты что-то забыл.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_04"); //Если ты уверен, что у тебя есть все необходимое, иди в капитанскую каюту и вздремни немного. Силы тебе скоро понадобятся.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_01"); //Р’СЃРµ РІ РїРѕР»РЅРѕРј РїРѕСЂСЏРґРєРµ. Рђ С‚РµРїРµСЂСЊ РїРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕСЋ РјРѕСЂСЃРєСѓСЋ РєР°СЂС‚Сѓ.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_02"); //Р­С‚Рѕ Р±СѓРґРµС‚ РЅРµР»РµРіРєРѕРµ РїР»Р°РІР°РЅРёРµ. РќРѕ СЏ РІСЃРµ Р¶Рµ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РјС‹ РґРѕР±РµСЂРµРјСЃСЏ С‚СѓРґР° С†РµР»С‹РјРё Рё РЅРµРІСЂРµРґРёРјС‹РјРё.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_03"); //РЈ С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЃС‚СЊ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РњС‹ РЅРµ СЃС‚Р°РЅРµРј РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР°Р·Р°Рґ С‚РѕР»СЊРєРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ С‡С‚Рѕ-С‚Рѕ Р·Р°Р±С‹Р».
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_04"); //Р•СЃР»Рё С‚С‹ СѓРІРµСЂРµРЅ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РІСЃРµ РЅРµРѕР±С…РѕРґРёРјРѕРµ, РёРґРё РІ РєР°РїРёС‚Р°РЅСЃРєСѓСЋ РєР°СЋС‚Сѓ Рё РІР·РґСЂРµРјРЅРё РЅРµРјРЅРѕРіРѕ. РЎРёР»С‹ С‚РµР±Рµ СЃРєРѕСЂРѕ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ.
 		AI_StopProcessInfos (self);
 		B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_05"); //Полегче, приятель. Я еще даже не видел это корыто. Так не пойдет.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_06"); //Сначала, ты должен укомплектовать команду, не менее чем из 5 человек, получить доступ на корабль и достать морскую карту. В противном случае, забудь об этом.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_05"); //РџРѕР»РµРіС‡Рµ, РїСЂРёСЏС‚РµР»СЊ. РЇ РµС‰Рµ РґР°Р¶Рµ РЅРµ РІРёРґРµР» СЌС‚Рѕ РєРѕСЂС‹С‚Рѕ. РўР°Рє РЅРµ РїРѕР№РґРµС‚.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_06"); //РЎРЅР°С‡Р°Р»Р°, С‚С‹ РґРѕР»Р¶РµРЅ СѓРєРѕРјРїР»РµРєС‚РѕРІР°С‚СЊ РєРѕРјР°РЅРґСѓ, РЅРµ РјРµРЅРµРµ С‡РµРј РёР· 5 С‡РµР»РѕРІРµРє, РїРѕР»СѓС‡РёС‚СЊ РґРѕСЃС‚СѓРї РЅР° РєРѕСЂР°Р±Р»СЊ Рё РґРѕСЃС‚Р°С‚СЊ РјРѕСЂСЃРєСѓСЋ РєР°СЂС‚Сѓ. Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ, Р·Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -610,7 +610,7 @@ instance DIA_Jack_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jack_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"И что дальше?";
+	description	 = 	"Р С‡С‚Рѕ РґР°Р»СЊС€Рµ?";
 };
 
 func int DIA_Jack_PERM5_NOTCAPTAIN_Condition ()
@@ -626,8 +626,8 @@ func int DIA_Jack_PERM5_NOTCAPTAIN_Condition ()
 
 func void DIA_Jack_PERM5_NOTCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_PERM5_NOTCAPTAIN_15_00"); //И что дальше?
-	AI_Output			(self, other, "DIA_Jack_PERM5_NOTCAPTAIN_14_01"); //Я передумал. Я все же решил остаться здесь и охранять свой маяк.
+	AI_Output			(other, self, "DIA_Jack_PERM5_NOTCAPTAIN_15_00"); //Р С‡С‚Рѕ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_Jack_PERM5_NOTCAPTAIN_14_01"); //РЇ РїРµСЂРµРґСѓРјР°Р». РЇ РІСЃРµ Р¶Рµ СЂРµС€РёР» РѕСЃС‚Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ Рё РѕС…СЂР°РЅСЏС‚СЊ СЃРІРѕР№ РјР°СЏРє.
 	
 	AI_StopProcessInfos (self);
 };

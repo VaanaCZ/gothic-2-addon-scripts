@@ -31,7 +31,7 @@ INSTANCE DIA_Fernando_PICKPOCKET (C_INFO)
 	condition	= DIA_Fernando_PICKPOCKET_Condition;
 	information	= DIA_Fernando_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Красть его кошелек рискованно)";
+	description = "(РљСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Fernando_PICKPOCKET_Condition()
@@ -86,7 +86,7 @@ INSTANCE DIA_Fernando_Hello   (C_INFO)
 	condition   = DIA_Fernando_Hello_Condition;
 	information = DIA_Fernando_Hello_Info;
 	permanent   = FALSE;
-	description = "Как торговля?";
+	description = "РљР°Рє С‚РѕСЂРіРѕРІР»СЏ?";
 };
 
 FUNC INT DIA_Fernando_Hello_Condition()
@@ -99,11 +99,11 @@ FUNC INT DIA_Fernando_Hello_Condition()
 
 FUNC VOID DIA_Fernando_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_Fernando_Hello_15_00"); //Как идут дела?
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_01"); //Не сказать, чтобы очень хорошо. Когда Барьер все еще стоял, времена были получше.
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_02"); //Заключенные добывали руду в шахтах, а мои корабли доставляли ее на материк.
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_03"); //А на обратном пути они доставляли пищу и другие товары.
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_04"); //Но сейчас мы отрезаны от материка, и нам приходится рассчитывать только на фермеров в том, что касается припасов.
+	AI_Output (other,self ,"DIA_Fernando_Hello_15_00"); //РљР°Рє РёРґСѓС‚ РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_01"); //РќРµ СЃРєР°Р·Р°С‚СЊ, С‡С‚РѕР±С‹ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РљРѕРіРґР° Р‘Р°СЂСЊРµСЂ РІСЃРµ РµС‰Рµ СЃС‚РѕСЏР», РІСЂРµРјРµРЅР° Р±С‹Р»Рё РїРѕР»СѓС‡С€Рµ.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_02"); //Р—Р°РєР»СЋС‡РµРЅРЅС‹Рµ РґРѕР±С‹РІР°Р»Рё СЂСѓРґСѓ РІ С€Р°С…С‚Р°С…, Р° РјРѕРё РєРѕСЂР°Р±Р»Рё РґРѕСЃС‚Р°РІР»СЏР»Рё РµРµ РЅР° РјР°С‚РµСЂРёРє.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_03"); //Рђ РЅР° РѕР±СЂР°С‚РЅРѕРј РїСѓС‚Рё РѕРЅРё РґРѕСЃС‚Р°РІР»СЏР»Рё РїРёС‰Сѓ Рё РґСЂСѓРіРёРµ С‚РѕРІР°СЂС‹.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_04"); //РќРѕ СЃРµР№С‡Р°СЃ РјС‹ РѕС‚СЂРµР·Р°РЅС‹ РѕС‚ РјР°С‚РµСЂРёРєР°, Рё РЅР°Рј РїСЂРёС…РѕРґРёС‚СЃСЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ С‚РѕР»СЊРєРѕ РЅР° С„РµСЂРјРµСЂРѕРІ РІ С‚РѕРј, С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РїСЂРёРїР°СЃРѕРІ.
 };
 //*********************************************************************
 //	Info Perm
@@ -116,7 +116,7 @@ INSTANCE DIA_Fernando_Perm   (C_INFO)
 	condition   = DIA_Fernando_Perm_Condition;
 	information = DIA_Fernando_Perm_Info;
 	permanent   = TRUE;
-	description = "И чем ты сейчас зарабатываешь на жизнь?";
+	description = "Р С‡РµРј С‚С‹ СЃРµР№С‡Р°СЃ Р·Р°СЂР°Р±Р°С‚С‹РІР°РµС€СЊ РЅР° Р¶РёР·РЅСЊ?";
 };
 
 FUNC INT DIA_Fernando_Perm_Condition()
@@ -130,7 +130,7 @@ FUNC INT DIA_Fernando_Perm_Condition()
 
 FUNC VOID DIA_Fernando_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Fernando_Perm_15_00"); //И чем ты сейчас зарабатываешь на жизнь?
+	AI_Output (other,self ,"DIA_Fernando_Perm_15_00"); //Р С‡РµРј С‚С‹ СЃРµР№С‡Р°СЃ Р·Р°СЂР°Р±Р°С‚С‹РІР°РµС€СЊ РЅР° Р¶РёР·РЅСЊ?
 
 	if (Fernando_ImKnast == TRUE)
 	{
@@ -140,15 +140,15 @@ FUNC VOID DIA_Fernando_Perm_Info()
 	{
 		if (Fernando_HatsZugegeben == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Addon_Fernando_Perm_14_00"); //Пока ничем. Но в любом случае, темными делами я больше не занимаюсь. Это точно.
+			AI_Output (self ,other,"DIA_Addon_Fernando_Perm_14_00"); //РџРѕРєР° РЅРёС‡РµРј. РќРѕ РІ Р»СЋР±РѕРј СЃР»СѓС‡Р°Рµ, С‚РµРјРЅС‹РјРё РґРµР»Р°РјРё СЏ Р±РѕР»СЊС€Рµ РЅРµ Р·Р°РЅРёРјР°СЋСЃСЊ. Р­С‚Рѕ С‚РѕС‡РЅРѕ.
 		}	
 		else if (Npc_KnowsInfo (other,DIA_Fernando_Success) == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Fernando_Perm_14_01"); //Ничем! Сейчас я живу только за счет накопленного ранее. Но если я не смогу найти источник дохода, скоро для меня настанут тяжелые времена.
+			AI_Output (self ,other,"DIA_Fernando_Perm_14_01"); //РќРёС‡РµРј! РЎРµР№С‡Р°СЃ СЏ Р¶РёРІСѓ С‚РѕР»СЊРєРѕ Р·Р° СЃС‡РµС‚ РЅР°РєРѕРїР»РµРЅРЅРѕРіРѕ СЂР°РЅРµРµ. РќРѕ РµСЃР»Рё СЏ РЅРµ СЃРјРѕРіСѓ РЅР°Р№С‚Рё РёСЃС‚РѕС‡РЅРёРє РґРѕС…РѕРґР°, СЃРєРѕСЂРѕ РґР»СЏ РјРµРЅСЏ РЅР°СЃС‚Р°РЅСѓС‚ С‚СЏР¶РµР»С‹Рµ РІСЂРµРјРµРЅР°.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Fernando_Perm_14_02"); //Я разорен. Мне стоило послушать моего отца и держаться подальше от этого горнодобывающего бизнеса.
+			AI_Output (self ,other,"DIA_Fernando_Perm_14_02"); //РЇ СЂР°Р·РѕСЂРµРЅ. РњРЅРµ СЃС‚РѕРёР»Рѕ РїРѕСЃР»СѓС€Р°С‚СЊ РјРѕРµРіРѕ РѕС‚С†Р° Рё РґРµСЂР¶Р°С‚СЊСЃСЏ РїРѕРґР°Р»СЊС€Рµ РѕС‚ СЌС‚РѕРіРѕ РіРѕСЂРЅРѕРґРѕР±С‹РІР°СЋС‰РµРіРѕ Р±РёР·РЅРµСЃР°.
 		};
 	};
 };
@@ -180,26 +180,26 @@ FUNC INT DIA_Fernando_Minental_Condition()
 
 FUNC VOID DIA_Fernando_Minental_Info()
 {
-	AI_Output (self ,other,"DIA_Fernando_Minental_14_00"); //Эй, ты - подожди минутку. Ты ведь направляешься в Долину Рудников, да?
-	AI_Output (other ,self,"DIA_Fernando_Minental_15_01"); //И?
-	AI_Output (self ,other,"DIA_Fernando_Minental_14_02"); //Я хочу предложить тебе сделку. Ты приносишь мне доклад о том, что там происходит с рудой, а за это я дам тебе...
+	AI_Output (self ,other,"DIA_Fernando_Minental_14_00"); //Р­Р№, С‚С‹ - РїРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ. РўС‹ РІРµРґСЊ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, РґР°?
+	AI_Output (other ,self,"DIA_Fernando_Minental_15_01"); //Р?
+	AI_Output (self ,other,"DIA_Fernando_Minental_14_02"); //РЇ С…РѕС‡Сѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ СЃРґРµР»РєСѓ. РўС‹ РїСЂРёРЅРѕСЃРёС€СЊ РјРЅРµ РґРѕРєР»Р°Рґ Рѕ С‚РѕРј, С‡С‚Рѕ С‚Р°Рј РїСЂРѕРёСЃС…РѕРґРёС‚ СЃ СЂСѓРґРѕР№, Р° Р·Р° СЌС‚Рѕ СЏ РґР°Рј С‚РµР±Рµ...
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Fernando_Minental_14_03"); //...рунный камень.
+		AI_Output (self ,other,"DIA_Fernando_Minental_14_03"); //...СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Fernando_Minental_14_04"); //...кольцо, которое повысит твои жизненные силы.
+		AI_Output (self ,other,"DIA_Fernando_Minental_14_04"); //...РєРѕР»СЊС†Рѕ, РєРѕС‚РѕСЂРѕРµ РїРѕРІС‹СЃРёС‚ С‚РІРѕРё Р¶РёР·РЅРµРЅРЅС‹Рµ СЃРёР»С‹.
 	};
-	AI_Output (other ,self,"DIA_Fernando_Minental_15_05"); //Я посмотрю, что можно сделать.
+	AI_Output (other ,self,"DIA_Fernando_Minental_15_05"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 	
 	B_NpcClearObsessionByDMT (self);
 	Npc_ExchangeRoutine (self, "START");
 	
 	Log_CreateTopic (TOPIC_Fernando,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Fernando,LOG_RUNNING);
-	B_LogEntry (TOPIC_Fernando,"Торговец Фернандо хочет знать, как обстоят дела с рудой в Долине рудников.");
+	B_LogEntry (TOPIC_Fernando,"РўРѕСЂРіРѕРІРµС† Р¤РµСЂРЅР°РЅРґРѕ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ, РєР°Рє РѕР±СЃС‚РѕСЏС‚ РґРµР»Р° СЃ СЂСѓРґРѕР№ РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ instance DIA_Addon_Fernando_BanditTrader		(C_INFO)
 	condition	 = 	DIA_Addon_Fernando_BanditTrader_Condition;
 	information	 = 	DIA_Addon_Fernando_BanditTrader_Info;
 
-	description	 = 	"Ты продаешь оружие бандитам.";
+	description	 = 	"РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј.";
 };
 
 func int DIA_Addon_Fernando_BanditTrader_Condition ()
@@ -231,104 +231,104 @@ func int DIA_Addon_Fernando_BanditTrader_Condition ()
 
 func void DIA_Addon_Fernando_BanditTrader_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_00"); //Ты продаешь оружие бандитам.
-	AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_01"); //(недоуменно) Почему это ты так решил?
+	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј.
+	AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_01"); //(РЅРµРґРѕСѓРјРµРЅРЅРѕ) РџРѕС‡РµРјСѓ СЌС‚Рѕ С‚С‹ С‚Р°Рє СЂРµС€РёР»?
 
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Крупный торговец Фернандо признал, что поставлял оружие бандитам."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"РљСЂСѓРїРЅС‹Р№ С‚РѕСЂРіРѕРІРµС† Р¤РµСЂРЅР°РЅРґРѕ РїСЂРёР·РЅР°Р», С‡С‚Рѕ РїРѕСЃС‚Р°РІР»СЏР» РѕСЂСѓР¶РёРµ Р±Р°РЅРґРёС‚Р°Рј."); 
 
 	B_GivePlayerXP (XP_Addon_Fernando_HatsZugegeben);
 	Fernando_HatsZugegeben = TRUE;
 
 	if	((Npc_HasItems (other,ItWr_Addon_BanditTrader))&&(BanditTrader_Lieferung_Gelesen == TRUE))
 	{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_02"); //На списке проданных товаров, который я нашел у бандитов, стоит твоя подпись. 
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_02"); //РќР° СЃРїРёСЃРєРµ РїСЂРѕРґР°РЅРЅС‹С… С‚РѕРІР°СЂРѕРІ, РєРѕС‚РѕСЂС‹Р№ СЏ РЅР°С€РµР» Сѓ Р±Р°РЅРґРёС‚РѕРІ, СЃС‚РѕРёС‚ С‚РІРѕСЏ РїРѕРґРїРёСЃСЊ. 
 	};
 	
 	if (Npc_HasItems (other,ItRi_Addon_BanditTrader))
 	{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_03"); //У бандитов я нашел кольцо гильдии морских торговцев Араксоса. Ты - морской торговец. 
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_03"); //РЈ Р±Р°РЅРґРёС‚РѕРІ СЏ РЅР°С€РµР» РєРѕР»СЊС†Рѕ РіРёР»СЊРґРёРё РјРѕСЂСЃРєРёС… С‚РѕСЂРіРѕРІС†РµРІ РђСЂР°РєСЃРѕСЃР°. РўС‹ - РјРѕСЂСЃРєРѕР№ С‚РѕСЂРіРѕРІРµС†. 
 
 		if	(Npc_HasItems (other,ItMw_Addon_BanditTrader))
 		{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_04"); //А на мечах, которые были у бандитов, стоят твои инициалы.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_04"); //Рђ РЅР° РјРµС‡Р°С…, РєРѕС‚РѕСЂС‹Рµ Р±С‹Р»Рё Сѓ Р±Р°РЅРґРёС‚РѕРІ, СЃС‚РѕСЏС‚ С‚РІРѕРё РёРЅРёС†РёР°Р»С‹.
 		};
 	}
 	else //nur (Npc_HasItems (other,ItMw_Addon_BanditTrader))
 	{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_05"); //На мечах, которые были у бандитов, стоят твои инициалы.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_05"); //РќР° РјРµС‡Р°С…, РєРѕС‚РѕСЂС‹Рµ Р±С‹Р»Рё Сѓ Р±Р°РЅРґРёС‚РѕРІ, СЃС‚РѕСЏС‚ С‚РІРѕРё РёРЅРёС†РёР°Р»С‹.
 	};
 
-	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_06"); //Теперь тебе не отвертеться. Я тебя раскрыл.
+	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_06"); //РўРµРїРµСЂСЊ С‚РµР±Рµ РЅРµ РѕС‚РІРµСЂС‚РµС‚СЊСЃСЏ. РЇ С‚РµР±СЏ СЂР°СЃРєСЂС‹Р».
 
 	if (Fernando_ImKnast == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_07"); //Так это сделал ТЫ! Ты меня выдал! Я заставлю тебя заплатить за это.
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_08"); //Сначала тебе придется отсюда выйти, а я думаю, что вряд ли тебя отпустят в ближайшее время.
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_09"); //(зло) Ничего, мое время еще придет.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_07"); //РўР°Рє СЌС‚Рѕ СЃРґРµР»Р°Р» РўР«! РўС‹ РјРµРЅСЏ РІС‹РґР°Р»! РЇ Р·Р°СЃС‚Р°РІР»СЋ С‚РµР±СЏ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_08"); //РЎРЅР°С‡Р°Р»Р° С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РѕС‚СЃСЋРґР° РІС‹Р№С‚Рё, Р° СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РІСЂСЏРґ Р»Рё С‚РµР±СЏ РѕС‚РїСѓСЃС‚СЏС‚ РІ Р±Р»РёР¶Р°Р№С€РµРµ РІСЂРµРјСЏ.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_09"); //(Р·Р»Рѕ) РќРёС‡РµРіРѕ, РјРѕРµ РІСЂРµРјСЏ РµС‰Рµ РїСЂРёРґРµС‚.
 		B_NpcClearObsessionByDMT (self);
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_10"); //(умоляюще) Я не хотел этого делать! Поверь мне!.
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_11"); //(умоляюще) Сначала я продавал им только еду. Дела у меня шли неважно, и это было для меня единственным выходом.
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_12"); //(умоляюще) Но потом бандиты стали агрессивными и даже угрожали убить меня, если я не продам им оружие.
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_13"); //(умоляюще) Ты не можешь обвинять меня! Я всего лишь жертва обстоятельств.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_10"); //(СѓРјРѕР»СЏСЋС‰Рµ) РЇ РЅРµ С…РѕС‚РµР» СЌС‚РѕРіРѕ РґРµР»Р°С‚СЊ! РџРѕРІРµСЂСЊ РјРЅРµ!.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_11"); //(СѓРјРѕР»СЏСЋС‰Рµ) РЎРЅР°С‡Р°Р»Р° СЏ РїСЂРѕРґР°РІР°Р» РёРј С‚РѕР»СЊРєРѕ РµРґСѓ. Р”РµР»Р° Сѓ РјРµРЅСЏ С€Р»Рё РЅРµРІР°Р¶РЅРѕ, Рё СЌС‚Рѕ Р±С‹Р»Рѕ РґР»СЏ РјРµРЅСЏ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Рј РІС‹С…РѕРґРѕРј.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_12"); //(СѓРјРѕР»СЏСЋС‰Рµ) РќРѕ РїРѕС‚РѕРј Р±Р°РЅРґРёС‚С‹ СЃС‚Р°Р»Рё Р°РіСЂРµСЃСЃРёРІРЅС‹РјРё Рё РґР°Р¶Рµ СѓРіСЂРѕР¶Р°Р»Рё СѓР±РёС‚СЊ РјРµРЅСЏ, РµСЃР»Рё СЏ РЅРµ РїСЂРѕРґР°Рј РёРј РѕСЂСѓР¶РёРµ.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_13"); //(СѓРјРѕР»СЏСЋС‰Рµ) РўС‹ РЅРµ РјРѕР¶РµС€СЊ РѕР±РІРёРЅСЏС‚СЊ РјРµРЅСЏ! РЇ РІСЃРµРіРѕ Р»РёС€СЊ Р¶РµСЂС‚РІР° РѕР±СЃС‚РѕСЏС‚РµР»СЊСЃС‚РІ.
 		
 		if (Fernando_ImKnast == FALSE)//Joly:zur Sicherheit
 		{
 			Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
-			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Сколько ты мне заплатишь, если я тебя отпущу?", DIA_Addon_Fernando_BanditTrader_preis );
-			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "С тобой разберется ополчение.", DIA_Addon_Fernando_BanditTrader_mil );
-			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Я весь дрожу, я весь дрожу!", DIA_Addon_Fernando_BanditTrader_Uptown );
+			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "РЎРєРѕР»СЊРєРѕ С‚С‹ РјРЅРµ Р·Р°РїР»Р°С‚РёС€СЊ, РµСЃР»Рё СЏ С‚РµР±СЏ РѕС‚РїСѓС‰Сѓ?", DIA_Addon_Fernando_BanditTrader_preis );
+			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "РЎ С‚РѕР±РѕР№ СЂР°Р·Р±РµСЂРµС‚СЃСЏ РѕРїРѕР»С‡РµРЅРёРµ.", DIA_Addon_Fernando_BanditTrader_mil );
+			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "РЇ РІРµСЃСЊ РґСЂРѕР¶Сѓ, СЏ РІРµСЃСЊ РґСЂРѕР¶Сѓ!", DIA_Addon_Fernando_BanditTrader_Uptown );
 		};
 	};
 };
 func void DIA_Addon_Fernando_BanditTrader_Uptown ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_00"); //Не пытайся взять меня на жалость. Ты просто отвратительный и жадный торгаш.
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_01"); //За пригоршню золотых ты душу готов продать.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_Uptown_14_02"); //Но у меня множество расходов! Если я не буду платить, меня могут попросту пустить на корм рыбам.
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_00"); //РќРµ РїС‹С‚Р°Р№СЃСЏ РІР·СЏС‚СЊ РјРµРЅСЏ РЅР° Р¶Р°Р»РѕСЃС‚СЊ. РўС‹ РїСЂРѕСЃС‚Рѕ РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅС‹Р№ Рё Р¶Р°РґРЅС‹Р№ С‚РѕСЂРіР°С€.
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_01"); //Р—Р° РїСЂРёРіРѕСЂС€РЅСЋ Р·РѕР»РѕС‚С‹С… С‚С‹ РґСѓС€Сѓ РіРѕС‚РѕРІ РїСЂРѕРґР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_Uptown_14_02"); //РќРѕ Сѓ РјРµРЅСЏ РјРЅРѕР¶РµСЃС‚РІРѕ СЂР°СЃС…РѕРґРѕРІ! Р•СЃР»Рё СЏ РЅРµ Р±СѓРґСѓ РїР»Р°С‚РёС‚СЊ, РјРµРЅСЏ РјРѕРіСѓС‚ РїРѕРїСЂРѕСЃС‚Сѓ РїСѓСЃС‚РёС‚СЊ РЅР° РєРѕСЂРј СЂС‹Р±Р°Рј.
 };
 func void DIA_Addon_Fernando_BanditTrader_mil ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_00"); //С тобой разберется ополчение.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_01"); //Ты не можешь так поступить!
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_02"); //Еще как могу. Сам увидишь.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_03"); //О, Иннос! Я пропал!
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_00"); //РЎ С‚РѕР±РѕР№ СЂР°Р·Р±РµСЂРµС‚СЃСЏ РѕРїРѕР»С‡РµРЅРёРµ.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_01"); //РўС‹ РЅРµ РјРѕР¶РµС€СЊ С‚Р°Рє РїРѕСЃС‚СѓРїРёС‚СЊ!
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_02"); //Р•С‰Рµ РєР°Рє РјРѕРіСѓ. РЎР°Рј СѓРІРёРґРёС€СЊ.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_03"); //Рћ, РРЅРЅРѕСЃ! РЇ РїСЂРѕРїР°Р»!
 	B_NpcClearObsessionByDMT (self);
 };
 func void DIA_Addon_Fernando_BanditTrader_preis ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_preis_15_00"); //Сколько ты мне заплатишь, если я тебя отпущу?
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_01"); //Дела у меня идут неважно. Много я заплатить не смогу.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_02"); //Скажем, 200 золотых и ценное кольцо?
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_03"); //Этого должно хватить. Ну что, ты отдашь мне свои улики?
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_preis_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ РјРЅРµ Р·Р°РїР»Р°С‚РёС€СЊ, РµСЃР»Рё СЏ С‚РµР±СЏ РѕС‚РїСѓС‰Сѓ?
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_01"); //Р”РµР»Р° Сѓ РјРµРЅСЏ РёРґСѓС‚ РЅРµРІР°Р¶РЅРѕ. РњРЅРѕРіРѕ СЏ Р·Р°РїР»Р°С‚РёС‚СЊ РЅРµ СЃРјРѕРіСѓ.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_02"); //РЎРєР°Р¶РµРј, 200 Р·РѕР»РѕС‚С‹С… Рё С†РµРЅРЅРѕРµ РєРѕР»СЊС†Рѕ?
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_03"); //Р­С‚РѕРіРѕ РґРѕР»Р¶РЅРѕ С…РІР°С‚РёС‚СЊ. РќСѓ С‡С‚Рѕ, С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ СЃРІРѕРё СѓР»РёРєРё?
 
 	Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
-	Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Нет, пожалуй, я оставлю их себе.", DIA_Addon_Fernando_BanditTrader_nein );
-	Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Ну хорошо, я согласен.", DIA_Addon_Fernando_BanditTrader_ja );
+	Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "РќРµС‚, РїРѕР¶Р°Р»СѓР№, СЏ РѕСЃС‚Р°РІР»СЋ РёС… СЃРµР±Рµ.", DIA_Addon_Fernando_BanditTrader_nein );
+	Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "РќСѓ С…РѕСЂРѕС€Рѕ, СЏ СЃРѕРіР»Р°СЃРµРЅ.", DIA_Addon_Fernando_BanditTrader_ja );
 };
 func void DIA_Addon_Fernando_BanditTrader_ja ()
 { 
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_ja_15_00"); //Ну хорошо, я согласен.
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_ja_15_00"); //РќСѓ С…РѕСЂРѕС€Рѕ, СЏ СЃРѕРіР»Р°СЃРµРЅ.
 	B_GivePlayerXP (XP_Ambient);
 	Npc_RemoveInvItems	(hero ,ItMw_Addon_BanditTrader, Npc_HasItems (other,ItMw_Addon_BanditTrader));
 	Npc_RemoveInvItem	(hero ,ItRi_Addon_BanditTrader);
 	Npc_RemoveInvItem	(hero ,ItWr_Addon_BanditTrader);
 
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_01"); //Хорошо, вот золото.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_01"); //РҐРѕСЂРѕС€Рѕ, РІРѕС‚ Р·РѕР»РѕС‚Рѕ.
 
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);		
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_02"); //И кольцо. Мы в расчете.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_02"); //Р РєРѕР»СЊС†Рѕ. РњС‹ РІ СЂР°СЃС‡РµС‚Рµ.
 	CreateInvItems (self, ItRi_Prot_Point_01, 1);									
 	B_GiveInvItems (self, other, ItRi_Prot_Point_01, 1);		
 	Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
 };
 func void DIA_Addon_Fernando_BanditTrader_nein ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_nein_15_00"); //Нет, пожалуй, я оставлю их себе.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_nein_14_01"); //Как хочешь. Но предупреждаю: если ты меня выдашь, тебе не поздоровится.
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_nein_15_00"); //РќРµС‚, РїРѕР¶Р°Р»СѓР№, СЏ РѕСЃС‚Р°РІР»СЋ РёС… СЃРµР±Рµ.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_nein_14_01"); //РљР°Рє С…РѕС‡РµС€СЊ. РќРѕ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ: РµСЃР»Рё С‚С‹ РјРµРЅСЏ РІС‹РґР°С€СЊ, С‚РµР±Рµ РЅРµ РїРѕР·РґРѕСЂРѕРІРёС‚СЃСЏ.
 	Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
 };
 //*********************************************************************
@@ -341,7 +341,7 @@ INSTANCE DIA_Fernando_Success   (C_INFO)
 	condition   = DIA_Fernando_Success_Condition;
 	information = DIA_Fernando_Success_Info;
 	permanent   = FALSE;
-	description	= "Я был в Долине Рудников.";
+	description	= "РЇ Р±С‹Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.";
 };
 FUNC INT DIA_Fernando_Success_Condition()
 {
@@ -354,30 +354,30 @@ FUNC INT DIA_Fernando_Success_Condition()
 };
 FUNC VOID DIA_Fernando_Success_Info()
 {
-	AI_Output (other ,self,"DIA_Fernando_Success_15_00"); //Я был в Долине Рудников.
+	AI_Output (other ,self,"DIA_Fernando_Success_15_00"); //РЇ Р±С‹Р» РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
 	
 	if (Fernando_ImKnast == FALSE)
 	{
 		Fernando_Erz = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 		
-		AI_Output (self ,other,"DIA_Fernando_Success_14_01"); //И? Как там обстоят дела?
-		AI_Output (other ,self,"DIA_Fernando_Success_15_02"); //Шахты истощены, там можно добыть всего каких-нибудь несколько ящиков руды. Вряд ли эта овчинка стоит выделки.
-		AI_Output (self ,other,"DIA_Fernando_Success_14_03"); //Этого не может быть! Это означает, что я разорен...
+		AI_Output (self ,other,"DIA_Fernando_Success_14_01"); //Р? РљР°Рє С‚Р°Рј РѕР±СЃС‚РѕСЏС‚ РґРµР»Р°?
+		AI_Output (other ,self,"DIA_Fernando_Success_15_02"); //РЁР°С…С‚С‹ РёСЃС‚РѕС‰РµРЅС‹, С‚Р°Рј РјРѕР¶РЅРѕ РґРѕР±С‹С‚СЊ РІСЃРµРіРѕ РєР°РєРёС…-РЅРёР±СѓРґСЊ РЅРµСЃРєРѕР»СЊРєРѕ СЏС‰РёРєРѕРІ СЂСѓРґС‹. Р’СЂСЏРґ Р»Рё СЌС‚Р° РѕРІС‡РёРЅРєР° СЃС‚РѕРёС‚ РІС‹РґРµР»РєРё.
+		AI_Output (self ,other,"DIA_Fernando_Success_14_03"); //Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ! Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ СЏ СЂР°Р·РѕСЂРµРЅ...
 	
 		if (Fernando_HatsZugegeben == FALSE)
 		{
-			AI_Output (other ,self,"DIA_Fernando_Success_15_04"); //Что насчет нашей сделки?
-			AI_Output (self ,other,"DIA_Fernando_Success_14_05"); //Ах, да, твое вознаграждение...
+			AI_Output (other ,self,"DIA_Fernando_Success_15_04"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РЅР°С€РµР№ СЃРґРµР»РєРё?
+			AI_Output (self ,other,"DIA_Fernando_Success_14_05"); //РђС…, РґР°, С‚РІРѕРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ...
 			
 			if (other.guild == GIL_KDF)
 			{
-				AI_Output (self ,other,"DIA_Fernando_Minental_14_06"); //Вот, держи этот рунный камень.
+				AI_Output (self ,other,"DIA_Fernando_Minental_14_06"); //Р’РѕС‚, РґРµСЂР¶Рё СЌС‚РѕС‚ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
 				B_GiveInvItems (self,other, ItmI_RuneBlank,1);
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Fernando_Minental_14_07"); //Вот твое кольцо.
+				AI_Output (self ,other,"DIA_Fernando_Minental_14_07"); //Р’РѕС‚ С‚РІРѕРµ РєРѕР»СЊС†Рѕ.
 				B_GiveInvItems (self,other, ItRi_Hp_02,1);
 			};
 		};
@@ -386,7 +386,7 @@ FUNC VOID DIA_Fernando_Success_Info()
 	{
 		B_Say (self, other, "$NOTNOW");
 		Log_SetTopicStatus (TOPIC_Fernando, LOG_OBSOLETE);
-		B_LogEntry (TOPIC_Fernando,"Фернандо  больше не нуждается в информации. И денег за нее он мне не заплатит.");
+		B_LogEntry (TOPIC_Fernando,"Р¤РµСЂРЅР°РЅРґРѕ  Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РґР°РµС‚СЃСЏ РІ РёРЅС„РѕСЂРјР°С†РёРё. Р РґРµРЅРµРі Р·Р° РЅРµРµ РѕРЅ РјРЅРµ РЅРµ Р·Р°РїР»Р°С‚РёС‚.");
 	};
 };
 
@@ -400,7 +400,7 @@ instance DIA_Fernando_Obsession		(C_INFO)
 	condition	 = 	DIA_Fernando_Obsession_Condition;
 	information	 = 	DIA_Fernando_Obsession_Info;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Fernando_Obsession_Condition ()
@@ -429,7 +429,7 @@ instance DIA_Fernando_Heilung		(C_INFO)
 	information	 = 	DIA_Fernando_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Да ты одержим!";
+	description	 = 	"Р”Р° С‚С‹ РѕРґРµСЂР¶РёРј!";
 };
 
 func int DIA_Fernando_Heilung_Condition ()
@@ -443,8 +443,8 @@ func int DIA_Fernando_Heilung_Condition ()
 
 func void DIA_Fernando_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Fernando_Heilung_15_00"); //Ты одержим!
-	AI_Output			(self, other, "DIA_Fernando_Heilung_14_01"); //Уходи. Уходи немедленно.
+	AI_Output			(other, self, "DIA_Fernando_Heilung_15_00"); //РўС‹ РѕРґРµСЂР¶РёРј!
+	AI_Output			(self, other, "DIA_Fernando_Heilung_14_01"); //РЈС…РѕРґРё. РЈС…РѕРґРё РЅРµРјРµРґР»РµРЅРЅРѕ.
 	B_NpcClearObsessionByDMT (self);
 };
 

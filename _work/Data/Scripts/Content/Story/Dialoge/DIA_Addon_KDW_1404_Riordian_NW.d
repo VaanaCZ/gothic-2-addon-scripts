@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Riordian_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Riordian_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Riordian_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wдre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wРґre einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Riordian_NW_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ instance DIA_Addon_Riordian_Hallo		(C_INFO)
 	nr			 = 	5;
 	condition	 = 	DIA_Addon_Riordian_Hallo_Condition;
 	information	 = 	DIA_Addon_Riordian_Hallo_Info;
-	description	 = 	"Что ты здесь делаешь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };
 
 func int DIA_Addon_Riordian_Hallo_Condition ()
@@ -93,11 +93,11 @@ func int DIA_Addon_Riordian_Hallo_Condition ()
 
 func void DIA_Addon_Riordian_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Чем ты занимаешься?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Я изучаю культуру древнего народа.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Судя по их записям, они жили здесь в далеком прошлом.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Я точно не знаю, когда именно они возвели эти залы, но уже в то время их цивилизация была достаточно высокоразвитой.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //На другой стороне гор они построили свой город и, по-видимому, воздвигли храм Аданоса.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //РЇ РёР·СѓС‡Р°СЋ РєСѓР»СЊС‚СѓСЂСѓ РґСЂРµРІРЅРµРіРѕ РЅР°СЂРѕРґР°.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //РЎСѓРґСЏ РїРѕ РёС… Р·Р°РїРёСЃСЏРј, РѕРЅРё Р¶РёР»Рё Р·РґРµСЃСЊ РІ РґР°Р»РµРєРѕРј РїСЂРѕС€Р»РѕРј.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //РЇ С‚РѕС‡РЅРѕ РЅРµ Р·РЅР°СЋ, РєРѕРіРґР° РёРјРµРЅРЅРѕ РѕРЅРё РІРѕР·РІРµР»Рё СЌС‚Рё Р·Р°Р»С‹, РЅРѕ СѓР¶Рµ РІ С‚Рѕ РІСЂРµРјСЏ РёС… С†РёРІРёР»РёР·Р°С†РёСЏ Р±С‹Р»Р° РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РІС‹СЃРѕРєРѕСЂР°Р·РІРёС‚РѕР№.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //РќР° РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅРµ РіРѕСЂ РѕРЅРё РїРѕСЃС‚СЂРѕРёР»Рё СЃРІРѕР№ РіРѕСЂРѕРґ Рё, РїРѕ-РІРёРґРёРјРѕРјСѓ, РІРѕР·РґРІРёРіР»Рё С…СЂР°Рј РђРґР°РЅРѕСЃР°.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alter
@@ -108,7 +108,7 @@ instance DIA_Addon_Riordian_Alter		(C_INFO)
 	nr			 = 	6;
 	condition	 = 	DIA_Addon_Riordian_Alter_Condition;
 	information	 = 	DIA_Addon_Riordian_Alter_Info;
-	description	 = 	"Как ты думаешь, сколько лет этому зданию?";
+	description	 = 	"РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, СЃРєРѕР»СЊРєРѕ Р»РµС‚ СЌС‚РѕРјСѓ Р·РґР°РЅРёСЋ?";
 };
 func int DIA_Addon_Riordian_Alter_Condition ()
 {
@@ -119,8 +119,8 @@ func int DIA_Addon_Riordian_Alter_Condition ()
 };
 func void DIA_Addon_Riordian_Alter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Alter_15_00"); //Как ты думаешь, сколько лет этому зданию?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Alter_10_01"); //Не могу сказать точно. Несколько сотен.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Alter_15_00"); //РљР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, СЃРєРѕР»СЊРєРѕ Р»РµС‚ СЌС‚РѕРјСѓ Р·РґР°РЅРёСЋ?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Alter_10_01"); //РќРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РѕС‡РЅРѕ. РќРµСЃРєРѕР»СЊРєРѕ СЃРѕС‚РµРЅ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Atlantis
@@ -131,7 +131,7 @@ instance DIA_Addon_Riordian_Atlantis		(C_INFO)
 	nr			 = 	4;
 	condition	 = 	DIA_Addon_Riordian_Atlantis_Condition;
 	information	 = 	DIA_Addon_Riordian_Atlantis_Info;
-	description	 = 	"Затерянный город на Хоринисе?";
+	description	 = 	"Р—Р°С‚РµСЂСЏРЅРЅС‹Р№ РіРѕСЂРѕРґ РЅР° РҐРѕСЂРёРЅРёСЃРµ?";
 };
 
 func int DIA_Addon_Riordian_Atlantis_Condition ()
@@ -144,14 +144,14 @@ func int DIA_Addon_Riordian_Atlantis_Condition ()
 
 func void DIA_Addon_Riordian_Atlantis_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Затерянный город на Хоринисе?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Да. До последнего времени мы были уверены, что знаем об острове все.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //Мы считали, что весь северо-восток острова - один большой горный массив.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Но мы ошибались.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //За этими горами лежит долина. Там и располагался этот древний город.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(вздыхает) Я бы очень хотел взглянуть на его старинные здания, но они наверняка давно рассыпались в прах...
+	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Р—Р°С‚РµСЂСЏРЅРЅС‹Р№ РіРѕСЂРѕРґ РЅР° РҐРѕСЂРёРЅРёСЃРµ?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Р”Р°. Р”Рѕ РїРѕСЃР»РµРґРЅРµРіРѕ РІСЂРµРјРµРЅРё РјС‹ Р±С‹Р»Рё СѓРІРµСЂРµРЅС‹, С‡С‚Рѕ Р·РЅР°РµРј РѕР± РѕСЃС‚СЂРѕРІРµ РІСЃРµ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //РњС‹ СЃС‡РёС‚Р°Р»Рё, С‡С‚Рѕ РІРµСЃСЊ СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРє РѕСЃС‚СЂРѕРІР° - РѕРґРёРЅ Р±РѕР»СЊС€РѕР№ РіРѕСЂРЅС‹Р№ РјР°СЃСЃРёРІ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //РќРѕ РјС‹ РѕС€РёР±Р°Р»РёСЃСЊ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Р—Р° СЌС‚РёРјРё РіРѕСЂР°РјРё Р»РµР¶РёС‚ РґРѕР»РёРЅР°. РўР°Рј Рё СЂР°СЃРїРѕР»Р°РіР°Р»СЃСЏ СЌС‚РѕС‚ РґСЂРµРІРЅРёР№ РіРѕСЂРѕРґ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(РІР·РґС‹С…Р°РµС‚) РЇ Р±С‹ РѕС‡РµРЅСЊ С…РѕС‚РµР» РІР·РіР»СЏРЅСѓС‚СЊ РЅР° РµРіРѕ СЃС‚Р°СЂРёРЅРЅС‹Рµ Р·РґР°РЅРёСЏ, РЅРѕ РѕРЅРё РЅР°РІРµСЂРЅСЏРєР° РґР°РІРЅРѕ СЂР°СЃСЃС‹РїР°Р»РёСЃСЊ РІ РїСЂР°С…...
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Маги воды считают, что за порталом находится древний затерянный город."); 
+	B_LogEntry (TOPIC_Addon_KDW,"РњР°РіРё РІРѕРґС‹ СЃС‡РёС‚Р°СЋС‚, С‡С‚Рѕ Р·Р° РїРѕСЂС‚Р°Р»РѕРј РЅР°С…РѕРґРёС‚СЃСЏ РґСЂРµРІРЅРёР№ Р·Р°С‚РµСЂСЏРЅРЅС‹Р№ РіРѕСЂРѕРґ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SaturasWantYou
@@ -162,7 +162,7 @@ instance DIA_Addon_Riordian_SaturasWantYou		(C_INFO)
 	nr			 = 	5;
 	condition	 = 	DIA_Addon_Riordian_SaturasWantYou_Condition;
 	information	 = 	DIA_Addon_Riordian_SaturasWantYou_Info;
-	description	 = 	"Сатурас хочет тебя видеть.";
+	description	 = 	"РЎР°С‚СѓСЂР°СЃ С…РѕС‡РµС‚ С‚РµР±СЏ РІРёРґРµС‚СЊ.";
 };
 
 func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
@@ -176,13 +176,13 @@ func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
 
 func void DIA_Addon_Riordian_SaturasWantYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Сатурас хочет тебя видеть.
-	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Ему удалось добиться прогресса в исследованиях? В таком случае я отправляюсь к нему немедленно.
+	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //РЎР°С‚СѓСЂР°СЃ С…РѕС‡РµС‚ С‚РµР±СЏ РІРёРґРµС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Р•РјСѓ СѓРґР°Р»РѕСЃСЊ РґРѕР±РёС‚СЊСЃСЏ РїСЂРѕРіСЂРµСЃСЃР° РІ РёСЃСЃР»РµРґРѕРІР°РЅРёСЏС…? Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ СЏ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ Рє РЅРµРјСѓ РЅРµРјРµРґР»РµРЅРЅРѕ.
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Если ты хочешь узнать об этих строениях больше, поговори с Нефариусом.
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Ты найдешь его в дальней части залов.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ РѕР± СЌС‚РёС… СЃС‚СЂРѕРµРЅРёСЏС… Р±РѕР»СЊС€Рµ, РїРѕРіРѕРІРѕСЂРё СЃ РќРµС„Р°СЂРёСѓСЃРѕРј.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ РґР°Р»СЊРЅРµР№ С‡Р°СЃС‚Рё Р·Р°Р»РѕРІ.
 	};	
 	
 	AI_StopProcessInfos (self);
@@ -204,7 +204,7 @@ instance DIA_Addon_Riordian_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Есть что-нибудь новое?";
+	description	 = 	"Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ?";
 };
 
 func int DIA_Addon_Riordian_Perm_Condition ()
@@ -217,15 +217,15 @@ func int DIA_Addon_Riordian_Perm_Condition ()
 
 func void DIA_Addon_Riordian_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Есть что-нибудь новое?
+	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ?
 	if (Riordian_PermNews == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //Да! Я нашел подтверждение, что эта древняя цивилизация действительно поклонялась Аданосу!
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //Р”Р°! РЇ РЅР°С€РµР» РїРѕРґС‚РІРµСЂР¶РґРµРЅРёРµ, С‡С‚Рѕ СЌС‚Р° РґСЂРµРІРЅСЏСЏ С†РёРІРёР»РёР·Р°С†РёСЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕРєР»РѕРЅСЏР»Р°СЃСЊ РђРґР°РЅРѕСЃСѓ!
 		Riordian_PermNews = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Нет, пока нет. Приходи позже.
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_02"); //РќРµС‚, РїРѕРєР° РЅРµС‚. РџСЂРёС…РѕРґРё РїРѕР·Р¶Рµ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -240,7 +240,7 @@ instance DIA_Addon_Riordian_TeachPre		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_TeachPre_Condition;
 	information	 = 	DIA_Addon_Riordian_TeachPre_Info;
 
-	description	 = 	"Ватрас дал мне этот амулет ищущего огонька...";
+	description	 = 	"Р’Р°С‚СЂР°СЃ РґР°Р» РјРЅРµ СЌС‚РѕС‚ Р°РјСѓР»РµС‚ РёС‰СѓС‰РµРіРѕ РѕРіРѕРЅСЊРєР°...";
 };
 func int DIA_Addon_Riordian_TeachPre_Condition ()
 {
@@ -252,10 +252,10 @@ func int DIA_Addon_Riordian_TeachPre_Condition ()
 };
 func void DIA_Addon_Riordian_TeachPre_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Ватрас дал мне этот амулет ищущего огонька...
-	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Ага! (заинтересованно) Это редкий артефакт... Ты знаешь, что ты можешь обучать своего огонька?
-	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //Ты можешь научить меня этому?
-	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //Да, конечно. Я долгое время занимался этой областью магии.
+	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Р’Р°С‚СЂР°СЃ РґР°Р» РјРЅРµ СЌС‚РѕС‚ Р°РјСѓР»РµС‚ РёС‰СѓС‰РµРіРѕ РѕРіРѕРЅСЊРєР°...
+	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //РђРіР°! (Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅРЅРѕ) Р­С‚Рѕ СЂРµРґРєРёР№ Р°СЂС‚РµС„Р°РєС‚... РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡Р°С‚СЊ СЃРІРѕРµРіРѕ РѕРіРѕРЅСЊРєР°?
+	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЌС‚РѕРјСѓ?
+	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЇ РґРѕР»РіРѕРµ РІСЂРµРјСЏ Р·Р°РЅРёРјР°Р»СЃСЏ СЌС‚РѕР№ РѕР±Р»Р°СЃС‚СЊСЋ РјР°РіРёРё.
 	Riordian_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -272,7 +272,7 @@ instance DIA_Addon_Riordian_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Покажи мне, как тренировать этот блуждающий огонек.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ СЌС‚РѕС‚ Р±Р»СѓР¶РґР°СЋС‰РёР№ РѕРіРѕРЅРµРє.";
 };
 var int DIA_Addon_Riordian_Teach_NoPerm;
 

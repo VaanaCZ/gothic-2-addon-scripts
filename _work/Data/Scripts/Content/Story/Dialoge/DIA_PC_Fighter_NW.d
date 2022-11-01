@@ -31,7 +31,7 @@ INSTANCE DIA_GornNW_Hallo (C_INFO)
 	condition	= DIA_GornNW_Hallo_Condition;
 	information	= DIA_GornNW_Hallo_Info;
 	permanent	= FALSE;
-	description = "С тобой все в порядке?";
+	description = "РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };                       
 FUNC INT DIA_GornNW_Hallo_Condition()
 {
@@ -39,17 +39,17 @@ FUNC INT DIA_GornNW_Hallo_Condition()
 };
 FUNC VOID DIA_GornNW_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_Add_15_00"); //С тобой все в порядке?
+	AI_Output (other,self ,"DIA_GornNW_Add_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	if (MIS_RescueGorn == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //Ты спас меня, парень.
-		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //Я никогда не забуду этого.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //РўС‹ СЃРїР°СЃ РјРµРЅСЏ, РїР°СЂРµРЅСЊ.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //РЇ РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±СѓРґСѓ СЌС‚РѕРіРѕ.
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //Милтен вытащил меня.
-		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //Я никогда не забуду этого.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //РњРёР»С‚РµРЅ РІС‹С‚Р°С‰РёР» РјРµРЅСЏ.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //РЇ РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±СѓРґСѓ СЌС‚РѕРіРѕ.
 	};
 };
 
@@ -64,7 +64,7 @@ INSTANCE DIA_GornNW_WhatNext (C_INFO)
 	condition	= DIA_GornNW_WhatNext_Condition;
 	information	= DIA_GornNW_WhatNext_Info;
 	permanent	= TRUE;
-	description = "Что ты собираешься делать теперь?";
+	description = "Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?";
 };                       
 FUNC INT DIA_GornNW_WhatNext_Condition()
 {
@@ -72,9 +72,9 @@ FUNC INT DIA_GornNW_WhatNext_Condition()
 };
 FUNC VOID DIA_GornNW_WhatNext_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Что ты собираешься делать теперь?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //Сначала я отъемся.
-	AI_Output (other,self ,"DIA_GornNW_Add_15_07"); //А потом?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Кто знает ... Возможно, я опять вернусь в колонию.
-	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //Кто-то ведь должен присматривать за орками - иначе они могут появиться у нас на пороге без всякого предупреждения.
+	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?
+	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //РЎРЅР°С‡Р°Р»Р° СЏ РѕС‚СЉРµРјСЃСЏ.
+	AI_Output (other,self ,"DIA_GornNW_Add_15_07"); //Рђ РїРѕС‚РѕРј?
+	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //РљС‚Рѕ Р·РЅР°РµС‚ ... Р’РѕР·РјРѕР¶РЅРѕ, СЏ РѕРїСЏС‚СЊ РІРµСЂРЅСѓСЃСЊ РІ РєРѕР»РѕРЅРёСЋ.
+	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //РљС‚Рѕ-С‚Рѕ РІРµРґСЊ РґРѕР»Р¶РµРЅ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° РѕСЂРєР°РјРё - РёРЅР°С‡Рµ РѕРЅРё РјРѕРіСѓС‚ РїРѕСЏРІРёС‚СЊСЃСЏ Сѓ РЅР°СЃ РЅР° РїРѕСЂРѕРіРµ Р±РµР· РІСЃСЏРєРѕРіРѕ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёСЏ.
 };

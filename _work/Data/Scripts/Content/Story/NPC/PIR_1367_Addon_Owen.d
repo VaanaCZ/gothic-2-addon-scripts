@@ -1,7 +1,7 @@
 INSTANCE PIR_1367_Addon_Owen (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ξσύν";
+	name 		= "ΠΡƒΡΠ½";
 	guild 		= GIL_PIR;
 	id 			= 1367;
 	voice 		= 13;

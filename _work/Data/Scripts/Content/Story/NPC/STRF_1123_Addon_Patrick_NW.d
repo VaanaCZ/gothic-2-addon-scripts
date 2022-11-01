@@ -1,7 +1,7 @@
 instance STRF_1123_Addon_Patrick_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Патрик"; 
+	name 		= "РџР°С‚СЂРёРє"; 
 	guild 		= GIL_SLD;
 	id 			= 1123;
 	voice 		= 7;

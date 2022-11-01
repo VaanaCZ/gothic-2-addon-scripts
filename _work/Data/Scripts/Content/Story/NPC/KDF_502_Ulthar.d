@@ -1,7 +1,7 @@
 INSTANCE KDF_502_Ulthar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Σλόςΰπ";
+	name 		= "Π£Π»ΡΡ‚Π°Ρ€";
 	guild 		= GIL_KDF;
 	id 			= 502;
 	voice 		= 5;

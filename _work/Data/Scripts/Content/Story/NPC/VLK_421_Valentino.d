@@ -2,7 +2,7 @@
 instance VLK_421_Valentino (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Валентино"; 
+	name 		= "Р’Р°Р»РµРЅС‚РёРЅРѕ"; 
 	guild 		= GIL_VLK;
 	id 			= 421;
 	voice 		= 3;

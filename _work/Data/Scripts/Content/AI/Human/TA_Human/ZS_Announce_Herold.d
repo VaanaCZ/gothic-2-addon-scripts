@@ -1,5 +1,5 @@
 // *********************
-// herold verkündet auf WP
+// herold verkÑŒndet auf WP
 // *********************
 
 func void ZS_Announce_Herold()

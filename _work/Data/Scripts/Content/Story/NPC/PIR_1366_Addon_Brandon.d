@@ -1,7 +1,7 @@
 INSTANCE PIR_1366_Addon_Brandon (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Брэндон";
+	name 		= "Р‘СЂСЌРЅРґРѕРЅ";
 	guild 		= GIL_PIR;
 	id 			= 1366;
 	voice 		= 4;

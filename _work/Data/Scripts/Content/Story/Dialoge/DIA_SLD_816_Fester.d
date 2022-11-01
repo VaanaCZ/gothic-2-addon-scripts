@@ -33,7 +33,7 @@ instance DIA_Fester_Hello (C_INFO)
 	condition	= DIA_Fester_Hello_Condition;
 	information	= DIA_Fester_Hello_Info;
 	permanent	= FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Fester_Hello_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_Fester_Hello_Condition()
  
 FUNC VOID DIA_Fester_Hello_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_Hello_15_00"); //Что ты делаешь здесь?
-	AI_Output (self, other, "DIA_Fester_Hello_08_01"); //Я готовлюсь к бою...
+	AI_Output (other, self, "DIA_Fester_Hello_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Fester_Hello_08_01"); //РЇ РіРѕС‚РѕРІР»СЋСЃСЊ Рє Р±РѕСЋ...
 };
 
 // ************************************************************
@@ -58,7 +58,7 @@ instance DIA_Fester_Auftrag (C_INFO)
 	condition	= DIA_Fester_Auftrag_Condition;
 	information	= DIA_Fester_Auftrag_Info;
 	permanent	= FALSE;
-	description = "Почему?";
+	description = "РџРѕС‡РµРјСѓ?";
 };                       
 
 FUNC INT DIA_Fester_Auftrag_Condition()
@@ -71,16 +71,16 @@ FUNC INT DIA_Fester_Auftrag_Condition()
  
 FUNC VOID DIA_Fester_Auftrag_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_Auftrag_15_00"); //Зачем?
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_01"); //Последнее время у фермеров все больше с полевыми хищниками.
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_02"); //Нескольких крестьян эти твари даже съели.
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_03"); //А этот жирный Онар не видит здесь никакой проблемы. Нам не платят жалование уже неделю.
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_04"); //И в этом есть моя вина. Теперь Ли хочет, чтобы я лично уничтожил гнездо этих тварей.
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_05"); //А остальные наемники уже делают ставки, удастся мне выжить или нет...
+	AI_Output (other, self, "DIA_Fester_Auftrag_15_00"); //Р—Р°С‡РµРј?
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_01"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ Сѓ С„РµСЂРјРµСЂРѕРІ РІСЃРµ Р±РѕР»СЊС€Рµ СЃ РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё.
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_02"); //РќРµСЃРєРѕР»СЊРєРёС… РєСЂРµСЃС‚СЊСЏРЅ СЌС‚Рё С‚РІР°СЂРё РґР°Р¶Рµ СЃСЉРµР»Рё.
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_03"); //Рђ СЌС‚РѕС‚ Р¶РёСЂРЅС‹Р№ РћРЅР°СЂ РЅРµ РІРёРґРёС‚ Р·РґРµСЃСЊ РЅРёРєР°РєРѕР№ РїСЂРѕР±Р»РµРјС‹. РќР°Рј РЅРµ РїР»Р°С‚СЏС‚ Р¶Р°Р»РѕРІР°РЅРёРµ СѓР¶Рµ РЅРµРґРµР»СЋ.
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_04"); //Р РІ СЌС‚РѕРј РµСЃС‚СЊ РјРѕСЏ РІРёРЅР°. РўРµРїРµСЂСЊ Р›Рё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ Р»РёС‡РЅРѕ СѓРЅРёС‡С‚РѕР¶РёР» РіРЅРµР·РґРѕ СЌС‚РёС… С‚РІР°СЂРµР№.
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_05"); //Рђ РѕСЃС‚Р°Р»СЊРЅС‹Рµ РЅР°РµРјРЅРёРєРё СѓР¶Рµ РґРµР»Р°СЋС‚ СЃС‚Р°РІРєРё, СѓРґР°СЃС‚СЃСЏ РјРЅРµ РІС‹Р¶РёС‚СЊ РёР»Рё РЅРµС‚...
 };
 
 // ************************************************************
-// 			  				Du Kдmpfer? 
+// 			  				Du KРґmpfer? 
 // ************************************************************
 
 instance DIA_Fester_YouFight (C_INFO)
@@ -90,7 +90,7 @@ instance DIA_Fester_YouFight (C_INFO)
 	condition	= DIA_Fester_YouFight_Condition;
 	information	= DIA_Fester_YouFight_Info;
 	permanent	= FALSE;
-	description = "Ты хороший боец?";
+	description = "РўС‹ С…РѕСЂРѕС€РёР№ Р±РѕРµС†?";
 };                       
 
 FUNC INT DIA_Fester_YouFight_Condition()
@@ -105,8 +105,8 @@ FUNC INT DIA_Fester_YouFight_Condition()
  
 FUNC VOID DIA_Fester_YouFight_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_YouFight_15_00"); //Ты хороший боец?
-	AI_Output (self, other, "DIA_Fester_YouFight_08_01"); //Я неплохо умею обращаться с мечом, а лук это вообще мой конек! А почему ты спрашиваешь?
+	AI_Output (other, self, "DIA_Fester_YouFight_15_00"); //РўС‹ С…РѕСЂРѕС€РёР№ Р±РѕРµС†?
+	AI_Output (self, other, "DIA_Fester_YouFight_08_01"); //РЇ РЅРµРїР»РѕС…Рѕ СѓРјРµСЋ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ СЃ РјРµС‡РѕРј, Р° Р»СѓРє СЌС‚Рѕ РІРѕРѕР±С‰Рµ РјРѕР№ РєРѕРЅРµРє! Рђ РїРѕС‡РµРјСѓ С‚С‹ СЃРїСЂР°С€РёРІР°РµС€СЊ?
 };
 
 
@@ -121,7 +121,7 @@ instance DIA_Fester_WoNest (C_INFO)
 	condition	= DIA_Fester_WoNest_Condition;
 	information	= DIA_Fester_WoNest_Info;
 	permanent	= FALSE;
-	description = "Где это гнездо?";
+	description = "Р“РґРµ СЌС‚Рѕ РіРЅРµР·РґРѕ?";
 };                       
 
 FUNC INT DIA_Fester_WoNest_Condition()
@@ -135,13 +135,13 @@ FUNC INT DIA_Fester_WoNest_Condition()
  
 FUNC VOID DIA_Fester_WoNest_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_WoNest_15_00"); //Где это гнездо?
-	AI_Output (self, other, "DIA_Fester_WoNest_08_01"); //В центре поля вон там, вон в той большой скале.
+	AI_Output (other, self, "DIA_Fester_WoNest_15_00"); //Р“РґРµ СЌС‚Рѕ РіРЅРµР·РґРѕ?
+	AI_Output (self, other, "DIA_Fester_WoNest_08_01"); //Р’ С†РµРЅС‚СЂРµ РїРѕР»СЏ РІРѕРЅ С‚Р°Рј, РІРѕРЅ РІ С‚РѕР№ Р±РѕР»СЊС€РѕР№ СЃРєР°Р»Рµ.
 };
 
 
 // ************************************************************
-// 			  				Du Kдmpfer? 
+// 			  				Du KРґmpfer? 
 // ************************************************************
 
 var int Fester_Choice;
@@ -155,7 +155,7 @@ instance DIA_Fester_Together (C_INFO)
 	condition	= DIA_Fester_Together_Condition;
 	information	= DIA_Fester_Together_Info;
 	permanent	= FALSE;
-	description = "Мы могли бы  атаковать это гнездо вместе...";
+	description = "РњС‹ РјРѕРіР»Рё Р±С‹  Р°С‚Р°РєРѕРІР°С‚СЊ СЌС‚Рѕ РіРЅРµР·РґРѕ РІРјРµСЃС‚Рµ...";
 };                       
 
 FUNC INT DIA_Fester_Together_Condition()
@@ -169,22 +169,22 @@ FUNC INT DIA_Fester_Together_Condition()
  
 FUNC VOID DIA_Fester_Together_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_Together_15_00"); //Мы могли бы  атаковать это гнездо вместе...
-	AI_Output (self, other, "DIA_Fester_Together_08_01"); //Ты хочешь помочь мне? Почему?
+	AI_Output (other, self, "DIA_Fester_Together_15_00"); //РњС‹ РјРѕРіР»Рё Р±С‹  Р°С‚Р°РєРѕРІР°С‚СЊ СЌС‚Рѕ РіРЅРµР·РґРѕ РІРјРµСЃС‚Рµ...
+	AI_Output (self, other, "DIA_Fester_Together_08_01"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ? РџРѕС‡РµРјСѓ?
 	
 	Info_ClearChoices (DIA_Fester_Together);
-	Info_AddChoice (DIA_Fester_Together, "Я хочу получить за это золото!", DIA_Fester_Together_Gold);
+	Info_AddChoice (DIA_Fester_Together, "РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ Р·Р° СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ!", DIA_Fester_Together_Gold);
 	if (hero.guild == GIL_NONE)
 	{
-		Info_AddChoice (DIA_Fester_Together, "Я хочу присоединиться к вам!", DIA_Fester_Together_Join);
+		Info_AddChoice (DIA_Fester_Together, "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј!", DIA_Fester_Together_Join);
 	};
 };
 
 func void DIA_Fester_Together_Join()
 {
-	AI_Output (other, self, "DIA_Fester_Together_Join_15_00"); //Я хочу присоединиться к вам!
-	AI_Output (self, other, "DIA_Fester_Together_Join_08_01"); //Ох, тогда ладно. Ты хочешь показать, что ты хороший боец...
-	AI_Output (self, other, "DIA_Fester_Together_Join_08_02"); //(лукаво) Хорошо, давай расправимся с этими тварями вместе.
+	AI_Output (other, self, "DIA_Fester_Together_Join_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј!
+	AI_Output (self, other, "DIA_Fester_Together_Join_08_01"); //РћС…, С‚РѕРіРґР° Р»Р°РґРЅРѕ. РўС‹ С…РѕС‡РµС€СЊ РїРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ С…РѕСЂРѕС€РёР№ Р±РѕРµС†...
+	AI_Output (self, other, "DIA_Fester_Together_Join_08_02"); //(Р»СѓРєР°РІРѕ) РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ СЂР°СЃРїСЂР°РІРёРјСЃСЏ СЃ СЌС‚РёРјРё С‚РІР°СЂСЏРјРё РІРјРµСЃС‚Рµ.
 	Fester_Choice = FC_Join;
 	Info_ClearChoices (DIA_Fester_Together);
 };
@@ -192,16 +192,16 @@ func void DIA_Fester_Together_Join()
 func void DIA_Fester_Together_Gold()
 {
 		
-	AI_Output (other, self, "DIA_Fester_Together_Gold_15_00"); //Я хочу получить за это золото!
-	AI_Output (self, other, "DIA_Fester_Together_Gold_08_01"); //(смеется) Ах ты шельмец! Ты хочешь воспользоваться моим положением, ха?
-	AI_Output (self, other, "DIA_Fester_Together_Gold_08_02"); //То есть, либо я заплачу тебе, либо отправлюсь к праотцам?
-	AI_Output (self, other, "DIA_Fester_Together_Gold_08_03"); //Хорошо. Я могу заплатить тебе 50 золотых - это все, что у меня есть.
+	AI_Output (other, self, "DIA_Fester_Together_Gold_15_00"); //РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ Р·Р° СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ!
+	AI_Output (self, other, "DIA_Fester_Together_Gold_08_01"); //(СЃРјРµРµС‚СЃСЏ) РђС… С‚С‹ С€РµР»СЊРјРµС†! РўС‹ С…РѕС‡РµС€СЊ РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјРѕРёРј РїРѕР»РѕР¶РµРЅРёРµРј, С…Р°?
+	AI_Output (self, other, "DIA_Fester_Together_Gold_08_02"); //РўРѕ РµСЃС‚СЊ, Р»РёР±Рѕ СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ, Р»РёР±Рѕ РѕС‚РїСЂР°РІР»СЋСЃСЊ Рє РїСЂР°РѕС‚С†Р°Рј?
+	AI_Output (self, other, "DIA_Fester_Together_Gold_08_03"); //РҐРѕСЂРѕС€Рѕ. РЇ РјРѕРіСѓ Р·Р°РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ 50 Р·РѕР»РѕС‚С‹С… - СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
 	Fester_Choice = FC_Gold;
 	Info_ClearChoices (DIA_Fester_Together);
 };
 
 // ************************************************************
-// 			  				Du Kдmpfer? 
+// 			  				Du KРґmpfer? 
 // ************************************************************
 var int Fester_Losgeh_Day;
 // -----------------------
@@ -213,7 +213,7 @@ instance DIA_Fester_TogetherNOW (C_INFO)
 	condition	= DIA_Fester_TogetherNOW_Condition;
 	information	= DIA_Fester_TogetherNOW_Info;
 	permanent	= TRUE;
-	description = "Давай атаковать гнездо!";
+	description = "Р”Р°РІР°Р№ Р°С‚Р°РєРѕРІР°С‚СЊ РіРЅРµР·РґРѕ!";
 };                       
 
 FUNC INT DIA_Fester_TogetherNOW_Condition()
@@ -228,27 +228,27 @@ FUNC INT DIA_Fester_TogetherNOW_Condition()
  
 FUNC VOID DIA_Fester_TogetherNOW_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_TogetherNOW_15_00"); //Давай атаковать гнездо!
+	AI_Output (other, self, "DIA_Fester_TogetherNOW_15_00"); //Р”Р°РІР°Р№ Р°С‚Р°РєРѕРІР°С‚СЊ РіРЅРµР·РґРѕ!
 	
 	if (Wld_IsTime (20,30,06,00))
 	{
-		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_01"); //В темноте? Нет, нам лучше дождаться рассвета.
+		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_01"); //Р’ С‚РµРјРЅРѕС‚Рµ? РќРµС‚, РЅР°Рј Р»СѓС‡С€Рµ РґРѕР¶РґР°С‚СЊСЃСЏ СЂР°СЃСЃРІРµС‚Р°.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_02"); //Прямо сейчас? А может, тебе сначала раздобыть снаряжение получше?
-		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_03"); //Ты мог бы сходить сначала на ферму...
+		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_02"); //РџСЂСЏРјРѕ СЃРµР№С‡Р°СЃ? Рђ РјРѕР¶РµС‚, С‚РµР±Рµ СЃРЅР°С‡Р°Р»Р° СЂР°Р·РґРѕР±С‹С‚СЊ СЃРЅР°СЂСЏР¶РµРЅРёРµ РїРѕР»СѓС‡С€Рµ?
+		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_03"); //РўС‹ РјРѕРі Р±С‹ СЃС…РѕРґРёС‚СЊ СЃРЅР°С‡Р°Р»Р° РЅР° С„РµСЂРјСѓ...
 		
 		Info_ClearChoices (DIA_Fester_TogetherNOW);
-		Info_AddChoice (DIA_Fester_TogetherNOW, "Хорошо, давай подождем еще немного...", DIA_Fester_TogetherNOW_Later);
-		Info_AddChoice (DIA_Fester_TogetherNOW, "Лучшей возможности, чем сейчас, не будет.", DIA_Fester_TogetherNOW_NOW);
+		Info_AddChoice (DIA_Fester_TogetherNOW, "РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РїРѕРґРѕР¶РґРµРј РµС‰Рµ РЅРµРјРЅРѕРіРѕ...", DIA_Fester_TogetherNOW_Later);
+		Info_AddChoice (DIA_Fester_TogetherNOW, "Р›СѓС‡С€РµР№ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё, С‡РµРј СЃРµР№С‡Р°СЃ, РЅРµ Р±СѓРґРµС‚.", DIA_Fester_TogetherNOW_NOW);
 	};
 };
 
 func void DIA_Fester_TogetherNOW_Now()
 {
-	AI_Output (other, self, "DIA_Fester_TogetherNOW_Now_15_00"); //Лучшей возможности, чем сейчас, не будет.
-	AI_Output (self, other, "DIA_Fester_TogetherNOW_Now_08_01"); //Хорошо, давай посмотрим, на что ты способен.
+	AI_Output (other, self, "DIA_Fester_TogetherNOW_Now_15_00"); //Р›СѓС‡С€РµР№ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё, С‡РµРј СЃРµР№С‡Р°СЃ, РЅРµ Р±СѓРґРµС‚.
+	AI_Output (self, other, "DIA_Fester_TogetherNOW_Now_08_01"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РїРѕСЃРјРѕС‚СЂРёРј, РЅР° С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ.
 	
 	Npc_ExchangeRoutine (self, "GUIDE");
 
@@ -258,7 +258,7 @@ func void DIA_Fester_TogetherNOW_Now()
 	
 	Log_CreateTopic (TOPIC_FesterRauber,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_FesterRauber,LOG_RUNNING);
-	B_LogEntry (TOPIC_FesterRauber,"Я собираюсь атаковать гнездо полевых хищников вместе с Фестером.");
+	B_LogEntry (TOPIC_FesterRauber,"РЇ СЃРѕР±РёСЂР°СЋСЃСЊ Р°С‚Р°РєРѕРІР°С‚СЊ РіРЅРµР·РґРѕ РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ РІРјРµСЃС‚Рµ СЃ Р¤РµСЃС‚РµСЂРѕРј.");
 	
 	Info_ClearChoices (DIA_Fester_TogetherNOW);
 	AI_StopProcessInfos (self); 
@@ -267,8 +267,8 @@ func void DIA_Fester_TogetherNOW_Now()
 func void DIA_Fester_TogetherNOW_Later()
 {
 		
-	AI_Output (other, self, "DIA_Fester_TogetherNOW_Later_15_00"); //Хорошо, давай подождем еще немного...
-	AI_Output (self, other, "DIA_Fester_TogetherNOW_Later_08_01"); //Ты знаешь, где найти меня...
+	AI_Output (other, self, "DIA_Fester_TogetherNOW_Later_15_00"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РїРѕРґРѕР¶РґРµРј РµС‰Рµ РЅРµРјРЅРѕРіРѕ...
+	AI_Output (self, other, "DIA_Fester_TogetherNOW_Later_08_01"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РЅР°Р№С‚Рё РјРµРЅСЏ...
 	Info_ClearChoices (DIA_Fester_TogetherNOW);
 };
 		
@@ -303,15 +303,15 @@ FUNC VOID DIA_Fester_InCave_Info()
 
 	if (Wld_GetDay() > Fester_Losgeh_Day)
 	{
-		AI_Output (self, other, "DIA_Fester_InCave_08_00"); //Где ты шлялся, черт тебя побери?
+		AI_Output (self, other, "DIA_Fester_InCave_08_00"); //Р“РґРµ С‚С‹ С€Р»СЏР»СЃСЏ, С‡РµСЂС‚ С‚РµР±СЏ РїРѕР±РµСЂРё?
 	}
 	else //zeitlich passend
 	{
-		AI_Output (self, other, "DIA_Fester_InCave_08_01"); //Так вот куда они уволокли мертвых фермеров. Какая мерзость.
+		AI_Output (self, other, "DIA_Fester_InCave_08_01"); //РўР°Рє РІРѕС‚ РєСѓРґР° РѕРЅРё СѓРІРѕР»РѕРєР»Рё РјРµСЂС‚РІС‹С… С„РµСЂРјРµСЂРѕРІ. РљР°РєР°СЏ РјРµСЂР·РѕСЃС‚СЊ.
 	};
 
-	AI_Output (self, other, "DIA_Fester_InCave_08_02"); //Похоже, все эти грязные твари уничтожены.
-	AI_Output (self, other, "DIA_Fester_InCave_08_03"); //Пойдем назад!
+	AI_Output (self, other, "DIA_Fester_InCave_08_02"); //РџРѕС…РѕР¶Рµ, РІСЃРµ СЌС‚Рё РіСЂСЏР·РЅС‹Рµ С‚РІР°СЂРё СѓРЅРёС‡С‚РѕР¶РµРЅС‹.
+	AI_Output (self, other, "DIA_Fester_InCave_08_03"); //РџРѕР№РґРµРј РЅР°Р·Р°Рґ!
 	
 	Npc_ExchangeRoutine (self, "START");
 	
@@ -330,7 +330,7 @@ instance DIA_Fester_WasMitAbmachung (C_INFO)
 	condition	= DIA_Fester_WasMitAbmachung_Condition;
 	information	= DIA_Fester_WasMitAbmachung_Info;
 	permanent	= FALSE;
-	description	= "Что насчет нашего соглашения?";
+	description	= "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РЅР°С€РµРіРѕ СЃРѕРіР»Р°С€РµРЅРёСЏ?";
 };                       
 
 FUNC INT DIA_Fester_WasMitAbmachung_Condition()
@@ -343,23 +343,23 @@ FUNC INT DIA_Fester_WasMitAbmachung_Condition()
  
 FUNC VOID DIA_Fester_WasMitAbmachung_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_WasMitAbmachung_15_00"); //Что насчет нашего соглашения?
+	AI_Output (other, self, "DIA_Fester_WasMitAbmachung_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РЅР°С€РµРіРѕ СЃРѕРіР»Р°С€РµРЅРёСЏ?
 	if (Festers_Giant_Bug_Killed == 0)
 	{
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_01"); //Ты шутишь? Ты же вообще ничего не делал.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_01"); //РўС‹ С€СѓС‚РёС€СЊ? РўС‹ Р¶Рµ РІРѕРѕР±С‰Рµ РЅРёС‡РµРіРѕ РЅРµ РґРµР»Р°Р».
 	}
 	else if (Fester_Choice == FC_Join)
 	{
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_02"); //Я мог бы помочь тебе вступить в наши ряды, но я не буду делать этого.
-		AI_Output (other, self, "DIA_Fester_WasMitAbmachung_15_03"); //Почему?
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_04"); //Если я скажу кому-нибудь, что ты помог мне, они дадут мне новое задание.
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_05"); //Ты понимаешь, что такая перспектива меня не воодушевляет?
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_06"); //Тебе не повезло, парень. Но я уверен, ты найдешь кого-нибудь еще, кто поможет тебе.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_02"); //РЇ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІСЃС‚СѓРїРёС‚СЊ РІ РЅР°С€Рё СЂСЏРґС‹, РЅРѕ СЏ РЅРµ Р±СѓРґСѓ РґРµР»Р°С‚СЊ СЌС‚РѕРіРѕ.
+		AI_Output (other, self, "DIA_Fester_WasMitAbmachung_15_03"); //РџРѕС‡РµРјСѓ?
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_04"); //Р•СЃР»Рё СЏ СЃРєР°Р¶Сѓ РєРѕРјСѓ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ С‚С‹ РїРѕРјРѕРі РјРЅРµ, РѕРЅРё РґР°РґСѓС‚ РјРЅРµ РЅРѕРІРѕРµ Р·Р°РґР°РЅРёРµ.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_05"); //РўС‹ РїРѕРЅРёРјР°РµС€СЊ, С‡С‚Рѕ С‚Р°РєР°СЏ РїРµСЂСЃРїРµРєС‚РёРІР° РјРµРЅСЏ РЅРµ РІРѕРѕРґСѓС€РµРІР»СЏРµС‚?
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_06"); //РўРµР±Рµ РЅРµ РїРѕРІРµР·Р»Рѕ, РїР°СЂРµРЅСЊ. РќРѕ СЏ СѓРІРµСЂРµРЅ, С‚С‹ РЅР°Р№РґРµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ, РєС‚Рѕ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ.
 	}
 	else //FC_Gold
 	{
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_07"); //Эй - ты хотел воспользоваться моим положением. А теперь я воспользуюсь твоим.
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_08"); //Попробуй взглянуть на это дело с оптимизмом: ты получил опыт. А это что-то да значит, разве нет?
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_07"); //Р­Р№ - С‚С‹ С…РѕС‚РµР» РІРѕСЃРїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РјРѕРёРј РїРѕР»РѕР¶РµРЅРёРµРј. Рђ С‚РµРїРµСЂСЊ СЏ РІРѕСЃРїРѕР»СЊР·СѓСЋСЃСЊ С‚РІРѕРёРј.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_08"); //РџРѕРїСЂРѕР±СѓР№ РІР·РіР»СЏРЅСѓС‚СЊ РЅР° СЌС‚Рѕ РґРµР»Рѕ СЃ РѕРїС‚РёРјРёР·РјРѕРј: С‚С‹ РїРѕР»СѓС‡РёР» РѕРїС‹С‚. Рђ СЌС‚Рѕ С‡С‚Рѕ-С‚Рѕ РґР° Р·РЅР°С‡РёС‚, СЂР°Р·РІРµ РЅРµС‚?
 	};
 	
 	MIS_Fester_KillBugs = LOG_OBSOLETE;
@@ -388,7 +388,7 @@ instance DIA_Fester_PERMPruegel (C_INFO)
 	condition	= DIA_Fester_PERMPruegel_Condition;
 	information	= DIA_Fester_PERMPruegel_Info;
 	permanent	= TRUE;
-	description	= "Я думаю, тебе не помешает еще одна трепка.";
+	description	= "РЇ РґСѓРјР°СЋ, С‚РµР±Рµ РЅРµ РїРѕРјРµС€Р°РµС‚ РµС‰Рµ РѕРґРЅР° С‚СЂРµРїРєР°.";
 };                       
 
 FUNC INT DIA_Fester_PERMPruegel_Condition()
@@ -403,7 +403,7 @@ FUNC INT DIA_Fester_PERMPruegel_Condition()
  
 FUNC VOID DIA_Fester_PERMPruegel_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_PERMPruegel_15_00"); //Я думаю, тебе не помешает еще одна трепка.
+	AI_Output (other, self, "DIA_Fester_PERMPruegel_15_00"); //РЇ РґСѓРјР°СЋ, С‚РµР±Рµ РЅРµ РїРѕРјРµС€Р°РµС‚ РµС‰Рµ РѕРґРЅР° С‚СЂРµРїРєР°.
 	
 	if (Fester_Duell_Day < Wld_GetDay())
 	{
@@ -418,26 +418,26 @@ FUNC VOID DIA_Fester_PERMPruegel_Info()
 	if (Npc_KnowsInfo (other, DIA_Fester_WasMitAbmachung)) 
 	&& (Fester_FightVerarscht == FALSE)
 	{
-		AI_Output (other, self, "DIA_Fester_PERMPruegel_15_01"); //Мне не нравится, когда меня обманывают.
-		AI_Output (self, other, "DIA_Fester_PERMPruegel_08_02"); //Я весь дрожу, я весь дрожу!
+		AI_Output (other, self, "DIA_Fester_PERMPruegel_15_01"); //РњРЅРµ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, РєРѕРіРґР° РјРµРЅСЏ РѕР±РјР°РЅС‹РІР°СЋС‚.
+		AI_Output (self, other, "DIA_Fester_PERMPruegel_08_02"); //РЇ РІРµСЃСЊ РґСЂРѕР¶Сѓ, СЏ РІРµСЃСЊ РґСЂРѕР¶Сѓ!
 		Fester_FightVerarscht = TRUE;
 	}
 	else if (Npc_KnowsInfo (other, DIA_Jarvis_MissionKO))
 	{
-		AI_Output (other, self, "DIA_Fester_PERMPruegel_15_03"); //Тебе не стоило связываться с Сильвио.
-		AI_Output (self, other, "DIA_Fester_PERMPruegel_08_04"); //Ты один из лизоблюдов Ли, да? Тогда ты ошибся адресом!
+		AI_Output (other, self, "DIA_Fester_PERMPruegel_15_03"); //РўРµР±Рµ РЅРµ СЃС‚РѕРёР»Рѕ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ РЎРёР»СЊРІРёРѕ.
+		AI_Output (self, other, "DIA_Fester_PERMPruegel_08_04"); //РўС‹ РѕРґРёРЅ РёР· Р»РёР·РѕР±Р»СЋРґРѕРІ Р›Рё, РґР°? РўРѕРіРґР° С‚С‹ РѕС€РёР±СЃСЏ Р°РґСЂРµСЃРѕРј!
 		Fester_FightSylvio = TRUE;
 	}
 	else
 	{
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 		{
-			AI_Output (self, other, "DIA_Fester_PERMPruegel_08_05"); //Какого черта тебе от меня надо?
-			AI_Output (other, self, "DIA_Fester_PERMPruegel_15_06"); //Мне очень хочется посмотреть, как ты будешь валяться в грязи!
+			AI_Output (self, other, "DIA_Fester_PERMPruegel_08_05"); //РљР°РєРѕРіРѕ С‡РµСЂС‚Р° С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅР°РґРѕ?
+			AI_Output (other, self, "DIA_Fester_PERMPruegel_15_06"); //РњРЅРµ РѕС‡РµРЅСЊ С…РѕС‡РµС‚СЃСЏ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє С‚С‹ Р±СѓРґРµС€СЊ РІР°Р»СЏС‚СЊСЃСЏ РІ РіСЂСЏР·Рё!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Fester_PERMPruegel_08_07"); //Тебе что мало, да?
+			AI_Output (self, other, "DIA_Fester_PERMPruegel_08_07"); //РўРµР±Рµ С‡С‚Рѕ РјР°Р»Рѕ, РґР°?
 		};
 	};
 	

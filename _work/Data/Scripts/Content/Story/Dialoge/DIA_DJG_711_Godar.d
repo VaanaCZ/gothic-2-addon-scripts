@@ -45,11 +45,11 @@ FUNC INT DIA_Godar_Hello_Condition()
 
 FUNC VOID DIA_Godar_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Godar_Hello_13_00"); //Э-э? Что?
+	AI_Output (self ,other,"DIA_Godar_Hello_13_00"); //Р­-СЌ? Р§С‚Рѕ?
 };
 
 //*********************************************************************
-//	Wo kommt ihr ьberhaupt her? 
+//	Wo kommt ihr СЊberhaupt her? 
 //*********************************************************************
 INSTANCE DIA_Godar_ComeFrom   (C_INFO)
 {
@@ -58,7 +58,7 @@ INSTANCE DIA_Godar_ComeFrom   (C_INFO)
 	condition   = DIA_Godar_ComeFrom_Condition;
 	information = DIA_Godar_ComeFrom_Info;
 	permanent   = FALSE;
-	description	= "Откуда ты?";
+	description	= "РћС‚РєСѓРґР° С‚С‹?";
 };
 
 FUNC INT DIA_Godar_ComeFrom_Condition()
@@ -68,37 +68,37 @@ FUNC INT DIA_Godar_ComeFrom_Condition()
 
 FUNC VOID DIA_Godar_ComeFrom_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_15_00"); //Откуда вы?
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_13_01"); //Мы пришли... э-э, из города.
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_15_00"); //РћС‚РєСѓРґР° РІС‹?
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_13_01"); //РњС‹ РїСЂРёС€Р»Рё... СЌ-СЌ, РёР· РіРѕСЂРѕРґР°.
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Вы бандиты!",DIA_Godar_ComeFrom_Bandits);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Я что-то не видел тебя в городе.",DIA_Godar_ComeFrom_NotCity);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Понятно. Вы из города.",DIA_Godar_ComeFrom_Understand);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Р’С‹ Р±Р°РЅРґРёС‚С‹!",DIA_Godar_ComeFrom_Bandits);
+	Info_AddChoice (DIA_Godar_ComeFrom,"РЇ С‡С‚Рѕ-С‚Рѕ РЅРµ РІРёРґРµР» С‚РµР±СЏ РІ РіРѕСЂРѕРґРµ.",DIA_Godar_ComeFrom_NotCity);
+	Info_AddChoice (DIA_Godar_ComeFrom,"РџРѕРЅСЏС‚РЅРѕ. Р’С‹ РёР· РіРѕСЂРѕРґР°.",DIA_Godar_ComeFrom_Understand);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_15_00"); //Вы бандиты!
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_13_01"); //Поосторожнее! Твой язык не доведет тебя до добра!
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_15_00"); //Р’С‹ Р±Р°РЅРґРёС‚С‹!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_13_01"); //РџРѕРѕСЃС‚РѕСЂРѕР¶РЅРµРµ! РўРІРѕР№ СЏР·С‹Рє РЅРµ РґРѕРІРµРґРµС‚ С‚РµР±СЏ РґРѕ РґРѕР±СЂР°!
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Расслабься. Я не буду сдавать вас.",DIA_Godar_ComeFrom_Bandits_KeepCalm);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Тебе не напугать меня.",DIA_Godar_ComeFrom_Bandits_NoFear);
+	Info_AddChoice (DIA_Godar_ComeFrom,"Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РЇ РЅРµ Р±СѓРґСѓ СЃРґР°РІР°С‚СЊ РІР°СЃ.",DIA_Godar_ComeFrom_Bandits_KeepCalm);
+	Info_AddChoice (DIA_Godar_ComeFrom,"РўРµР±Рµ РЅРµ РЅР°РїСѓРіР°С‚СЊ РјРµРЅСЏ.",DIA_Godar_ComeFrom_Bandits_NoFear);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits_KeepCalm ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_KeepCalm_15_00"); //Расслабься. Я не буду сдавать вас.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_KeepCalm_13_01"); //Надеюсь. Это для твоей же пользы. А то не сносить тебе головы!
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_KeepCalm_15_00"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РЇ РЅРµ Р±СѓРґСѓ СЃРґР°РІР°С‚СЊ РІР°СЃ.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_KeepCalm_13_01"); //РќР°РґРµСЋСЃСЊ. Р­С‚Рѕ РґР»СЏ С‚РІРѕРµР№ Р¶Рµ РїРѕР»СЊР·С‹. Рђ С‚Рѕ РЅРµ СЃРЅРѕСЃРёС‚СЊ С‚РµР±Рµ РіРѕР»РѕРІС‹!
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_Bandits_NoFear ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_NoFear_15_00"); //Тебе не напугать меня.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_NoFear_13_01"); //Ну, это мы еще посмотрим.
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Bandits_NoFear_15_00"); //РўРµР±Рµ РЅРµ РЅР°РїСѓРіР°С‚СЊ РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Bandits_NoFear_13_01"); //РќСѓ, СЌС‚Рѕ РјС‹ РµС‰Рµ РїРѕСЃРјРѕС‚СЂРёРј.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -106,26 +106,26 @@ FUNC VOID DIA_Godar_ComeFrom_Bandits_NoFear ()
 
 FUNC VOID DIA_Godar_ComeFrom_NotCity ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_15_00"); //Я что-то не видел тебя в городе.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_13_01"); //Не выношу людей, которые суют нос не в свое дело. Понял?
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_15_00"); //РЇ С‡С‚Рѕ-С‚Рѕ РЅРµ РІРёРґРµР» С‚РµР±СЏ РІ РіРѕСЂРѕРґРµ.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_13_01"); //РќРµ РІС‹РЅРѕС€Сѓ Р»СЋРґРµР№, РєРѕС‚РѕСЂС‹Рµ СЃСѓСЋС‚ РЅРѕСЃ РЅРµ РІ СЃРІРѕРµ РґРµР»Рѕ. РџРѕРЅСЏР»?
 	
 	Info_ClearChoices (DIA_Godar_ComeFrom);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Нет.",DIA_Godar_ComeFrom_NotCity_CutThroat);
-	Info_AddChoice (DIA_Godar_ComeFrom,"Понял. Вы пришли из города.",DIA_Godar_ComeFrom_NotCity_Forget);
+	Info_AddChoice (DIA_Godar_ComeFrom,"РќРµС‚.",DIA_Godar_ComeFrom_NotCity_CutThroat);
+	Info_AddChoice (DIA_Godar_ComeFrom,"РџРѕРЅСЏР». Р’С‹ РїСЂРёС€Р»Рё РёР· РіРѕСЂРѕРґР°.",DIA_Godar_ComeFrom_NotCity_Forget);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_NotCity_Forget ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_Forget_15_00"); //Понял. Вы пришли из города.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_Forget_13_01"); //Именно.
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_Forget_15_00"); //РџРѕРЅСЏР». Р’С‹ РїСЂРёС€Р»Рё РёР· РіРѕСЂРѕРґР°.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_Forget_13_01"); //РРјРµРЅРЅРѕ.
 
 	Info_ClearChoices (DIA_Godar_ComeFrom);
 };
 
 FUNC VOID DIA_Godar_ComeFrom_NotCity_CutThroat ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_CutThroat_15_00"); //Нет.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_CutThroat_13_01"); //Тогда мне придется объяснить это в деталях...
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_NotCity_CutThroat_15_00"); //РќРµС‚.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_NotCity_CutThroat_13_01"); //РўРѕРіРґР° РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РѕР±СЉСЏСЃРЅРёС‚СЊ СЌС‚Рѕ РІ РґРµС‚Р°Р»СЏС…...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -133,9 +133,9 @@ FUNC VOID DIA_Godar_ComeFrom_NotCity_CutThroat ()
 
 FUNC VOID DIA_Godar_ComeFrom_Understand ()
 {
-	AI_Output (other,self ,"DIA_Godar_ComeFrom_Understand_15_00"); //Понятно. Вы из города.
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_01"); //Видишь! Ты все понимаешь!
-	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_02"); //Вот, глотни!
+	AI_Output (other,self ,"DIA_Godar_ComeFrom_Understand_15_00"); //РџРѕРЅСЏС‚РЅРѕ. Р’С‹ РёР· РіРѕСЂРѕРґР°.
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_01"); //Р’РёРґРёС€СЊ! РўС‹ РІСЃРµ РїРѕРЅРёРјР°РµС€СЊ!
+	AI_Output (self ,other,"DIA_Godar_ComeFrom_Understand_13_02"); //Р’РѕС‚, РіР»РѕС‚РЅРё!
 	
 	CreateInvItems (self,ItFo_Beer,1);
 	B_GiveInvItems (self,other,ItFo_Beer,1);
@@ -153,7 +153,7 @@ INSTANCE DIA_Godar_Plan   (C_INFO)
 	condition   = DIA_Godar_Plan_Condition;
 	information = DIA_Godar_Plan_Info;
 	permanent   = FALSE;
-	description	= "Что ты делаешь здесь?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 FUNC INT DIA_Godar_Plan_Condition()
@@ -163,15 +163,15 @@ FUNC INT DIA_Godar_Plan_Condition()
 
 FUNC VOID DIA_Godar_Plan_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Plan_15_00"); //Что вы делаете здесь?
-	AI_Output (self ,other,"DIA_Godar_Plan_13_01"); //Мы услышали об охоте на драконов. Ну... Мы собрали свои пожитки и пришли сюда.
-	AI_Output (self ,other,"DIA_Godar_Plan_13_02"); //Но, говоря откровенно, мне плевать на драконов. Мне нужно золото.
-	AI_Output (self ,other,"DIA_Godar_Plan_13_03"); //У драконов ведь есть золото, правда?
-	AI_Output (other,self ,"DIA_Godar_Plan_15_04"); //Конечно.
+	AI_Output (other,self ,"DIA_Godar_Plan_15_00"); //Р§С‚Рѕ РІС‹ РґРµР»Р°РµС‚Рµ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Godar_Plan_13_01"); //РњС‹ СѓСЃР»С‹С€Р°Р»Рё РѕР± РѕС…РѕС‚Рµ РЅР° РґСЂР°РєРѕРЅРѕРІ. РќСѓ... РњС‹ СЃРѕР±СЂР°Р»Рё СЃРІРѕРё РїРѕР¶РёС‚РєРё Рё РїСЂРёС€Р»Рё СЃСЋРґР°.
+	AI_Output (self ,other,"DIA_Godar_Plan_13_02"); //РќРѕ, РіРѕРІРѕСЂСЏ РѕС‚РєСЂРѕРІРµРЅРЅРѕ, РјРЅРµ РїР»РµРІР°С‚СЊ РЅР° РґСЂР°РєРѕРЅРѕРІ. РњРЅРµ РЅСѓР¶РЅРѕ Р·РѕР»РѕС‚Рѕ.
+	AI_Output (self ,other,"DIA_Godar_Plan_13_03"); //РЈ РґСЂР°РєРѕРЅРѕРІ РІРµРґСЊ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ, РїСЂР°РІРґР°?
+	AI_Output (other,self ,"DIA_Godar_Plan_15_04"); //РљРѕРЅРµС‡РЅРѕ.
 };
 
 //*********************************************************************
-//	Wisst ihr was ьber die Drachen? 
+//	Wisst ihr was СЊber die Drachen? 
 //*********************************************************************
 INSTANCE DIA_Godar_DragonLore   (C_INFO)
 {
@@ -180,7 +180,7 @@ INSTANCE DIA_Godar_DragonLore   (C_INFO)
 	condition   = DIA_Godar_DragonLore_Condition;
 	information = DIA_Godar_DragonLore_Info;
 	permanent   = FALSE;
-	description	= "Что ты знаешь о драконах?";
+	description	= "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РґСЂР°РєРѕРЅР°С…?";
 };
 
 FUNC INT DIA_Godar_DragonLore_Condition()
@@ -193,9 +193,9 @@ FUNC INT DIA_Godar_DragonLore_Condition()
 
 FUNC VOID DIA_Godar_DragonLore_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_DragonLore_15_00"); //Что ты знаешь о драконах?
-	AI_Output (self ,other,"DIA_Godar_DragonLore_13_01"); //Я знаю о них только из детских сказок.
-	AI_Output (self ,other,"DIA_Godar_DragonLore_13_02"); //Понимаешь, девственницы, золото, огненное дыхание и все такое.
+	AI_Output (other,self ,"DIA_Godar_DragonLore_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РґСЂР°РєРѕРЅР°С…?
+	AI_Output (self ,other,"DIA_Godar_DragonLore_13_01"); //РЇ Р·РЅР°СЋ Рѕ РЅРёС… С‚РѕР»СЊРєРѕ РёР· РґРµС‚СЃРєРёС… СЃРєР°Р·РѕРє.
+	AI_Output (self ,other,"DIA_Godar_DragonLore_13_02"); //РџРѕРЅРёРјР°РµС€СЊ, РґРµРІСЃС‚РІРµРЅРЅРёС†С‹, Р·РѕР»РѕС‚Рѕ, РѕРіРЅРµРЅРЅРѕРµ РґС‹С…Р°РЅРёРµ Рё РІСЃРµ С‚Р°РєРѕРµ.
 };
 
 //*********************************************************************
@@ -208,7 +208,7 @@ INSTANCE DIA_Godar_Destination   (C_INFO)
 	condition   = DIA_Godar_Destination_Condition;
 	information = DIA_Godar_Destination_Info;
 	permanent   = FALSE;
-	description	= "А куда вы собираетесь идти отсюда?";
+	description	= "Рђ РєСѓРґР° РІС‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РёРґС‚Рё РѕС‚СЃСЋРґР°?";
 };
 
 FUNC INT DIA_Godar_Destination_Condition()
@@ -221,14 +221,14 @@ FUNC INT DIA_Godar_Destination_Condition()
 
 FUNC VOID DIA_Godar_Destination_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Destination_15_00"); //А куда вы собираетесь идти отсюда?
-	AI_Output (self ,other,"DIA_Godar_Destination_13_01"); //Понятия не имею. Мы все еще думаем над этим.
+	AI_Output (other,self ,"DIA_Godar_Destination_15_00"); //Рђ РєСѓРґР° РІС‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РёРґС‚Рё РѕС‚СЃСЋРґР°?
+	AI_Output (self ,other,"DIA_Godar_Destination_13_01"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РњС‹ РІСЃРµ РµС‰Рµ РґСѓРјР°РµРј РЅР°Рґ СЌС‚РёРј.
 	
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 		{
-			AI_Output (other,self ,"DIA_Godar_Destination_15_02"); //Вы могли бы пойти в замок.
-			AI_Output (self ,other,"DIA_Godar_Destination_13_03"); //Меня туда силком не затащишь. Нет уж. Только не к паладинам.
-			AI_Output (self ,other,"DIA_Godar_Destination_13_04"); //Я не хочу обратно в тюрьму. Я уже был там, и мне этого хватило.
+			AI_Output (other,self ,"DIA_Godar_Destination_15_02"); //Р’С‹ РјРѕРіР»Рё Р±С‹ РїРѕР№С‚Рё РІ Р·Р°РјРѕРє.
+			AI_Output (self ,other,"DIA_Godar_Destination_13_03"); //РњРµРЅСЏ С‚СѓРґР° СЃРёР»РєРѕРј РЅРµ Р·Р°С‚Р°С‰РёС€СЊ. РќРµС‚ СѓР¶. РўРѕР»СЊРєРѕ РЅРµ Рє РїР°Р»Р°РґРёРЅР°Рј.
+			AI_Output (self ,other,"DIA_Godar_Destination_13_04"); //РЇ РЅРµ С…РѕС‡Сѓ РѕР±СЂР°С‚РЅРѕ РІ С‚СЋСЂСЊРјСѓ. РЇ СѓР¶Рµ Р±С‹Р» С‚Р°Рј, Рё РјРЅРµ СЌС‚РѕРіРѕ С…РІР°С‚РёР»Рѕ.
 		};
 };
 
@@ -242,7 +242,7 @@ INSTANCE DIA_Godar_Orks   (C_INFO)
 	condition   = DIA_Godar_Orks_Condition;
 	information = DIA_Godar_Orks_Info;
 	permanent   = FALSE;
-	description	= "Что насчет орков?";
+	description	= "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЂРєРѕРІ?";
 };
 
 FUNC INT DIA_Godar_Orks_Condition()
@@ -255,11 +255,11 @@ FUNC INT DIA_Godar_Orks_Condition()
 
 FUNC VOID DIA_Godar_Orks_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Orks_15_00"); //Что насчет орков?
-	AI_Output (self ,other,"DIA_Godar_Orks_13_01"); //Ими окружен весь замок.
-	AI_Output (self ,other,"DIA_Godar_Orks_13_02"); //Пытаться пробраться туда - чистое безумие. Если ты хочешь сразиться с орками, то сразу можешь считать себя трупом.
-	AI_Output (self ,other,"DIA_Godar_Orks_13_03"); //Никому не пробиться туда.
-	AI_Output (other,self ,"DIA_Godar_Orks_15_04"); //Ах, действительно.
+	AI_Output (other,self ,"DIA_Godar_Orks_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЂРєРѕРІ?
+	AI_Output (self ,other,"DIA_Godar_Orks_13_01"); //РРјРё РѕРєСЂСѓР¶РµРЅ РІРµСЃСЊ Р·Р°РјРѕРє.
+	AI_Output (self ,other,"DIA_Godar_Orks_13_02"); //РџС‹С‚Р°С‚СЊСЃСЏ РїСЂРѕР±СЂР°С‚СЊСЃСЏ С‚СѓРґР° - С‡РёСЃС‚РѕРµ Р±РµР·СѓРјРёРµ. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃ РѕСЂРєР°РјРё, С‚Рѕ СЃСЂР°Р·Сѓ РјРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ СЃРµР±СЏ С‚СЂСѓРїРѕРј.
+	AI_Output (self ,other,"DIA_Godar_Orks_13_03"); //РќРёРєРѕРјСѓ РЅРµ РїСЂРѕР±РёС‚СЊСЃСЏ С‚СѓРґР°.
+	AI_Output (other,self ,"DIA_Godar_Orks_15_04"); //РђС…, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ.
 };
 
 //*********************************************************************
@@ -272,7 +272,7 @@ INSTANCE DIA_Godar_Prison   (C_INFO)
 	condition   = DIA_Godar_Prison_Condition;
 	information = DIA_Godar_Prison_Info;
 	permanent   = FALSE;
-	description	= "За что ты сидел?";
+	description	= "Р—Р° С‡С‚Рѕ С‚С‹ СЃРёРґРµР»?";
 };
 
 FUNC INT DIA_Godar_Prison_Condition()
@@ -286,33 +286,33 @@ FUNC INT DIA_Godar_Prison_Condition()
 
 FUNC VOID DIA_Godar_Prison_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_15_00"); //За что ты сидел?
+	AI_Output (other,self ,"DIA_Godar_Prison_15_00"); //Р—Р° С‡С‚Рѕ С‚С‹ СЃРёРґРµР»?
 
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Godar_Prison_13_01"); //Так я тебе и сказал! Ха!
-			AI_Output (self ,other,"DIA_Godar_Prison_13_02"); //Вы, маги, заодно с паладинами. Нет, дружок. Забудь об этом.
+			AI_Output (self ,other,"DIA_Godar_Prison_13_01"); //РўР°Рє СЏ С‚РµР±Рµ Рё СЃРєР°Р·Р°Р»! РҐР°!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_02"); //Р’С‹, РјР°РіРё, Р·Р°РѕРґРЅРѕ СЃ РїР°Р»Р°РґРёРЅР°РјРё. РќРµС‚, РґСЂСѓР¶РѕРє. Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј.
 		}
 	else
 		{		
-			AI_Output (self ,other,"DIA_Godar_Prison_13_03"); //Эти свиньи поймали меня за браконьерство. За двух жалких зайцев!
-			AI_Output (self ,other,"DIA_Godar_Prison_13_04"); //Мне дали 10 лет за это!
-			AI_Output (other,self ,"DIA_Godar_Prison_15_05"); //Это все?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_06"); //Ну... Конечно же, я защищался...
-			AI_Output (other,self ,"DIA_Godar_Prison_15_07"); //И?
-			AI_Output (self ,other,"DIA_Godar_Prison_13_08"); //Я тут не причем. Этот парень сам поскользнулся и сломал себе шею. Честно!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_03"); //Р­С‚Рё СЃРІРёРЅСЊРё РїРѕР№РјР°Р»Рё РјРµРЅСЏ Р·Р° Р±СЂР°РєРѕРЅСЊРµСЂСЃС‚РІРѕ. Р—Р° РґРІСѓС… Р¶Р°Р»РєРёС… Р·Р°Р№С†РµРІ!
+			AI_Output (self ,other,"DIA_Godar_Prison_13_04"); //РњРЅРµ РґР°Р»Рё 10 Р»РµС‚ Р·Р° СЌС‚Рѕ!
+			AI_Output (other,self ,"DIA_Godar_Prison_15_05"); //Р­С‚Рѕ РІСЃРµ?
+			AI_Output (self ,other,"DIA_Godar_Prison_13_06"); //РќСѓ... РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ Р·Р°С‰РёС‰Р°Р»СЃСЏ...
+			AI_Output (other,self ,"DIA_Godar_Prison_15_07"); //Р?
+			AI_Output (self ,other,"DIA_Godar_Prison_13_08"); //РЇ С‚СѓС‚ РЅРµ РїСЂРёС‡РµРј. Р­С‚РѕС‚ РїР°СЂРµРЅСЊ СЃР°Рј РїРѕСЃРєРѕР»СЊР·РЅСѓР»СЃСЏ Рё СЃР»РѕРјР°Р» СЃРµР±Рµ С€РµСЋ. Р§РµСЃС‚РЅРѕ!
 			
 			Info_ClearChoices (DIA_Godar_Prison);
-			Info_AddChoice (DIA_Godar_Prison,"Знакомые слова.",DIA_Godar_Prison_Court);
-			Info_AddChoice (DIA_Godar_Prison,"Тебе не следовало попадаться.",DIA_Godar_Prison_Pissoff);
+			Info_AddChoice (DIA_Godar_Prison,"Р—РЅР°РєРѕРјС‹Рµ СЃР»РѕРІР°.",DIA_Godar_Prison_Court);
+			Info_AddChoice (DIA_Godar_Prison,"РўРµР±Рµ РЅРµ СЃР»РµРґРѕРІР°Р»Рѕ РїРѕРїР°РґР°С‚СЊСЃСЏ.",DIA_Godar_Prison_Pissoff);
 		};
 };
 
 FUNC VOID DIA_Godar_Prison_Court ()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_Court_15_00"); //Знакомая история.
-	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_01"); //Ты понимаешь меня? Эти спесивые богачи понятия не имеют, как нам тяжело.
-	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_02"); //Ну, по крайней мере, их это не волнует.
+	AI_Output (other,self ,"DIA_Godar_Prison_Court_15_00"); //Р—РЅР°РєРѕРјР°СЏ РёСЃС‚РѕСЂРёСЏ.
+	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_01"); //РўС‹ РїРѕРЅРёРјР°РµС€СЊ РјРµРЅСЏ? Р­С‚Рё СЃРїРµСЃРёРІС‹Рµ Р±РѕРіР°С‡Рё РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋС‚, РєР°Рє РЅР°Рј С‚СЏР¶РµР»Рѕ.
+	AI_Output (self ,other,"DIA_Godar_Prison_Court_13_02"); //РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РёС… СЌС‚Рѕ РЅРµ РІРѕР»РЅСѓРµС‚.
 	
 	Info_ClearChoices (DIA_Godar_Prison);
 	GodarLikesYou = TRUE;
@@ -320,9 +320,9 @@ FUNC VOID DIA_Godar_Prison_Court ()
 
 FUNC VOID DIA_Godar_Prison_Pissoff ()
 {
-	AI_Output (other,self ,"DIA_Godar_Prison_Pissoff_15_00"); //Тебе не следовало попадаться.
-	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_01"); //(сердито) Ручаюсь, ты никогда не был в тюрьме, так ведь?
-	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_02"); //Сейчас я покажу тебе, что может стать с человеком в тюрьме!
+	AI_Output (other,self ,"DIA_Godar_Prison_Pissoff_15_00"); //РўРµР±Рµ РЅРµ СЃР»РµРґРѕРІР°Р»Рѕ РїРѕРїР°РґР°С‚СЊСЃСЏ.
+	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_01"); //(СЃРµСЂРґРёС‚Рѕ) Р СѓС‡Р°СЋСЃСЊ, С‚С‹ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р» РІ С‚СЋСЂСЊРјРµ, С‚Р°Рє РІРµРґСЊ?
+	AI_Output (self ,other,"DIA_Godar_Prison_Pissoff_13_02"); //РЎРµР№С‡Р°СЃ СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, С‡С‚Рѕ РјРѕР¶РµС‚ СЃС‚Р°С‚СЊ СЃ С‡РµР»РѕРІРµРєРѕРј РІ С‚СЋСЂСЊРјРµ!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -338,7 +338,7 @@ INSTANCE DIA_Godar_Hunting   (C_INFO)
 	condition   = DIA_Godar_Hunting_Condition;
 	information = DIA_Godar_Hunting_Info;
 	permanent   = FALSE;
-	description	= "Ты можешь научить меня охотиться?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?";
 };
 
 FUNC INT DIA_Godar_Hunting_Condition()
@@ -352,16 +352,16 @@ FUNC INT DIA_Godar_Hunting_Condition()
 
 FUNC VOID DIA_Godar_Hunting_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Hunting_15_00"); //Ты можешь научить меня охотиться?
+	AI_Output (other,self ,"DIA_Godar_Hunting_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?
 	if (GodarLikesYou == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_01"); //Ты шутишь? Ни за что!
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_01"); //РўС‹ С€СѓС‚РёС€СЊ? РќРё Р·Р° С‡С‚Рѕ!
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_03"); //Животные - это не только мясо. Ты также можешь продавать их шкуры или когти. Это неплохие деньги.
-		AI_Output (self ,other,"DIA_Godar_Hunting_13_04"); //Дождаться не могу, когда мы доберемся до этого дракона!
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_03"); //Р–РёРІРѕС‚РЅС‹Рµ - СЌС‚Рѕ РЅРµ С‚РѕР»СЊРєРѕ РјСЏСЃРѕ. РўС‹ С‚Р°РєР¶Рµ РјРѕР¶РµС€СЊ РїСЂРѕРґР°РІР°С‚СЊ РёС… С€РєСѓСЂС‹ РёР»Рё РєРѕРіС‚Рё. Р­С‚Рѕ РЅРµРїР»РѕС…РёРµ РґРµРЅСЊРіРё.
+		AI_Output (self ,other,"DIA_Godar_Hunting_13_04"); //Р”РѕР¶РґР°С‚СЊСЃСЏ РЅРµ РјРѕРіСѓ, РєРѕРіРґР° РјС‹ РґРѕР±РµСЂРµРјСЃСЏ РґРѕ СЌС‚РѕРіРѕ РґСЂР°РєРѕРЅР°!
 		
 		Godar_TeachAnimalTrophy = TRUE;
 	};	
@@ -377,7 +377,7 @@ INSTANCE DIA_Godar_Dragonstuff   (C_INFO)
 	condition   = DIA_Godar_Dragonstuff_Condition;
 	information = DIA_Godar_Dragonstuff_Info;
 	permanent   = TRUE;
-	description	= "Расскажи мне, как потрошить дракона.";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, РєР°Рє РїРѕС‚СЂРѕС€РёС‚СЊ РґСЂР°РєРѕРЅР°.";
 };
 var int Godar_TeachDragonStuff;
 FUNC INT DIA_Godar_Dragonstuff_Condition()
@@ -393,20 +393,20 @@ FUNC INT DIA_Godar_Dragonstuff_Condition()
 
 FUNC VOID DIA_Godar_Dragonstuff_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Dragonstuff_15_00"); //Расскажи мне, как потрошить дракона.
+	AI_Output (other,self ,"DIA_Godar_Dragonstuff_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, РєР°Рє РїРѕС‚СЂРѕС€РёС‚СЊ РґСЂР°РєРѕРЅР°.
 	
-	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_01"); //Чтобы ты прибрал все золотишко себе, ха?
+	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_01"); //Р§С‚РѕР±С‹ С‚С‹ РїСЂРёР±СЂР°Р» РІСЃРµ Р·РѕР»РѕС‚РёС€РєРѕ СЃРµР±Рµ, С…Р°?
 	
-	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_02"); //Ладно, хорошо, но то обойдется тебе в 1000 золотых.
+	AI_Output (self,other ,"DIA_Godar_Dragonstuff_13_02"); //Р›Р°РґРЅРѕ, С…РѕСЂРѕС€Рѕ, РЅРѕ С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ 1000 Р·РѕР»РѕС‚С‹С….
 
 	Info_ClearChoices	(DIA_Godar_Dragonstuff);	
-	Info_AddChoice	(DIA_Godar_Dragonstuff, "Мне это не очень интересно.", DIA_Godar_Dragonstuff_nein );
-	Info_AddChoice	(DIA_Godar_Dragonstuff, "Это честно.", DIA_Godar_Dragonstuff_fair );
+	Info_AddChoice	(DIA_Godar_Dragonstuff, "РњРЅРµ СЌС‚Рѕ РЅРµ РѕС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ.", DIA_Godar_Dragonstuff_nein );
+	Info_AddChoice	(DIA_Godar_Dragonstuff, "Р­С‚Рѕ С‡РµСЃС‚РЅРѕ.", DIA_Godar_Dragonstuff_fair );
 
 };
 func void DIA_Godar_Dragonstuff_fair ()
 {
-	AI_Output			(other, self, "DIA_Godar_Dragonstuff_fair_15_00"); //Это честно.
+	AI_Output			(other, self, "DIA_Godar_Dragonstuff_fair_15_00"); //Р­С‚Рѕ С‡РµСЃС‚РЅРѕ.
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,1000))
 		{
@@ -414,15 +414,15 @@ func void DIA_Godar_Dragonstuff_fair ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Godar_Dragonstuff_fair_13_01"); //Без денег не очень. Сначала раздобудь золото.
+			AI_Output			(self, other, "DIA_Godar_Dragonstuff_fair_13_01"); //Р‘РµР· РґРµРЅРµРі РЅРµ РѕС‡РµРЅСЊ. РЎРЅР°С‡Р°Р»Р° СЂР°Р·РґРѕР±СѓРґСЊ Р·РѕР»РѕС‚Рѕ.
 		};
 	Info_ClearChoices	(DIA_Godar_Dragonstuff);	
 };
 
 func void DIA_Godar_Dragonstuff_nein ()
 {
-	AI_Output			(other, self, "DIA_Godar_Dragonstuff_nein_15_00"); //Мне это не очень интересно.
-	AI_Output			(self, other, "DIA_Godar_Dragonstuff_nein_13_01"); //Как знаешь.
+	AI_Output			(other, self, "DIA_Godar_Dragonstuff_nein_15_00"); //РњРЅРµ СЌС‚Рѕ РЅРµ РѕС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ.
+	AI_Output			(self, other, "DIA_Godar_Dragonstuff_nein_13_01"); //РљР°Рє Р·РЅР°РµС€СЊ.
 	Info_ClearChoices	(DIA_Godar_Dragonstuff);	
 
 };
@@ -437,7 +437,7 @@ INSTANCE DIA_Godar_Teach   (C_INFO)
 	condition   = DIA_Godar_Teach_Condition;
 	information = DIA_Godar_Teach_Info;
 	permanent   = TRUE;
-	description	= "Научи меня охотиться.";
+	description	= "РќР°СѓС‡Рё РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ.";
 };
 
 FUNC INT DIA_Godar_Teach_Condition()
@@ -451,7 +451,7 @@ FUNC INT DIA_Godar_Teach_Condition()
 
 FUNC VOID DIA_Godar_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Godar_Teach_15_00"); //Научи меня охотиться.
+	AI_Output (other,self ,"DIA_Godar_Teach_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ.
 	if 	(
 			(Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -465,29 +465,29 @@ FUNC VOID DIA_Godar_Teach_Info()
 		
 			if (Npc_GetTalentSkill (other,NPC_TALENT_SNEAK) == FALSE) 
 			{
-				Info_AddChoice		(DIA_Godar_Teach, B_BuildLearnString("Красться"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Godar_Teach_Thief_Sneak);
+				Info_AddChoice		(DIA_Godar_Teach, B_BuildLearnString("РљСЂР°СЃС‚СЊСЃСЏ"	, B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1))		,DIA_Godar_Teach_Thief_Sneak);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Удаление зубов",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Godar_Teach_TROPHYS_Teeth);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Godar_Teach_TROPHYS_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Жало кровавой мухи",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Godar_Teach_TROPHYS_BFSting);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Р–Р°Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Godar_Teach_TROPHYS_BFSting);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Крылья кровавой мухи",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Godar_Teach_TROPHYS_BFWing);
+				Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("РљСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Godar_Teach_TROPHYS_BFWing);
 			};
 			if (Godar_TeachDragonStuff == TRUE)
 			{
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Удаление чешуи драконов",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Godar_Teach_TROPHYS_DragonScale);
+					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ С‡РµС€СѓРё РґСЂР°РєРѕРЅРѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Godar_Teach_TROPHYS_DragonScale);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("Сбор крови дракона",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)), DIA_Godar_Teach_TROPHYS_DragonBlood);
+					Info_AddChoice	(DIA_Godar_Teach, B_BuildLearnString ("РЎР±РѕСЂ РєСЂРѕРІРё РґСЂР°РєРѕРЅР°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)), DIA_Godar_Teach_TROPHYS_DragonBlood);
 				};
 			};
 		}
@@ -506,7 +506,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Teeth_13_00"); //Зубы лучше всего отделять при помощи хорошего ножа.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Teeth_13_00"); //Р—СѓР±С‹ Р»СѓС‡С€Рµ РІСЃРµРіРѕ РѕС‚РґРµР»СЏС‚СЊ РїСЂРё РїРѕРјРѕС‰Рё С…РѕСЂРѕС€РµРіРѕ РЅРѕР¶Р°.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -515,7 +515,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_BFSting ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFSting_13_00"); //Чтобы изъять жало кровавой мухи, нужно сначала выдавить его из ее тела.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFSting_13_00"); //Р§С‚РѕР±С‹ РёР·СЉСЏС‚СЊ Р¶Р°Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё, РЅСѓР¶РЅРѕ СЃРЅР°С‡Р°Р»Р° РІС‹РґР°РІРёС‚СЊ РµРіРѕ РёР· РµРµ С‚РµР»Р°.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -524,7 +524,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_BFWing ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFWing_13_00"); //Крылья кровавых мух очень нежные. Нужно быть очень аккуратным, когда отрезаешь их.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_BFWing_13_00"); //РљСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІС‹С… РјСѓС… РѕС‡РµРЅСЊ РЅРµР¶РЅС‹Рµ. РќСѓР¶РЅРѕ Р±С‹С‚СЊ РѕС‡РµРЅСЊ Р°РєРєСѓСЂР°С‚РЅС‹Рј, РєРѕРіРґР° РѕС‚СЂРµР·Р°РµС€СЊ РёС….
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -533,7 +533,7 @@ FUNC VOID DIA_Godar_Teach_Thief_Sneak()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Sneak_13_00"); //Чтобы неслышно красться, лучше всего использовать мягкую обувь. Жесткая подошва издает слишком много шума.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_Sneak_13_00"); //Р§С‚РѕР±С‹ РЅРµСЃР»С‹С€РЅРѕ РєСЂР°СЃС‚СЊСЃСЏ, Р»СѓС‡С€Рµ РІСЃРµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РјСЏРіРєСѓСЋ РѕР±СѓРІСЊ. Р–РµСЃС‚РєР°СЏ РїРѕРґРѕС€РІР° РёР·РґР°РµС‚ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ С€СѓРјР°.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -542,7 +542,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonScale_13_00"); //Чтобы оторвать чешую дракона, нужно иметь много сил. Но ты справишься.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonScale_13_00"); //Р§С‚РѕР±С‹ РѕС‚РѕСЂРІР°С‚СЊ С‡РµС€СѓСЋ РґСЂР°РєРѕРЅР°, РЅСѓР¶РЅРѕ РёРјРµС‚СЊ РјРЅРѕРіРѕ СЃРёР». РќРѕ С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -551,7 +551,7 @@ FUNC VOID DIA_Godar_Teach_TROPHYS_DragonBlood()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonBlood_13_00"); //Найди мягкое место на животе дракона. Там легче всего сцедить его кровь.
+			AI_Output			(self, other, "DIA_Godar_TEACHHUNTING_DragonBlood_13_00"); //РќР°Р№РґРё РјСЏРіРєРѕРµ РјРµСЃС‚Рѕ РЅР° Р¶РёРІРѕС‚Рµ РґСЂР°РєРѕРЅР°. РўР°Рј Р»РµРіС‡Рµ РІСЃРµРіРѕ СЃС†РµРґРёС‚СЊ РµРіРѕ РєСЂРѕРІСЊ.
 		};
 	Info_ClearChoices 	(DIA_Godar_Teach);
 };
@@ -568,7 +568,7 @@ INSTANCE DIA_Godar_AllDragonsDead   (C_INFO)
 	condition   = DIA_Godar_AllDragonsDead_Condition;
 	information = DIA_Godar_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Я убил всех драконов.";
+	description	= "РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.";
 				
 };
 
@@ -582,8 +582,8 @@ FUNC INT DIA_Godar_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Godar_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Godar_AllDragonsDead_15_00"); //Я убил всех драконов.
-	AI_Output 	(self ,other,"DIA_Godar_AllDragonsDead_13_01"); //Ну и ладно. Здесь, в долине, мы все равно найдем, чем поживиться.
+	AI_Output	(other,self ,"DIA_Godar_AllDragonsDead_15_00"); //РЇ СѓР±РёР» РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output 	(self ,other,"DIA_Godar_AllDragonsDead_13_01"); //РќСѓ Рё Р»Р°РґРЅРѕ. Р—РґРµСЃСЊ, РІ РґРѕР»РёРЅРµ, РјС‹ РІСЃРµ СЂР°РІРЅРѕ РЅР°Р№РґРµРј, С‡РµРј РїРѕР¶РёРІРёС‚СЊСЃСЏ.
 };
 
 

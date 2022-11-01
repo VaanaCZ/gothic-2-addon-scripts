@@ -4,7 +4,7 @@
 // Hier alle Waffen, die bei mortal-NSCs 
 // oder in die Welt objektiert zu finden sind
 // Alle haben sehr geringen Wert
-// Alle kˆnnen (theoretisch) in Kapitel 1 erlangt werden
+// Alle k—Ünnen (theoretisch) in Kapitel 1 erlangt werden
 // *****************************************************
 
 const int Waffenbonus_01 =  1;
@@ -23,7 +23,7 @@ const int Damage_VLKDolch				= 5;
 const int Condition_VLKDolch			= 5;
 const int Range_VLKDolch				= 50;
 const int Value_VLKDolch				= 5;  
-//Sch¸rhaken - ItMw_1H_Mace_L_01    
+//Sch—århaken - ItMw_1H_Mace_L_01    
 const int Damage_Schuerhaken 			= 5; 
 const int Condition_Schuerhaken			= 5;
 const int Range_Schuerhaken				= 50;
@@ -78,7 +78,7 @@ const int Damage_ShortSword1 			= 20;
 const int Condition_ShortSword1			= 10;
 const int Range_ShortSword1				= 50;
 const int Value_ShortSword1				= 250;
-// Nagelkn¸ppel - f¸r BANDITEN - NEUE INSTANZ 
+// Nagelkn—åppel - f—år BANDITEN - NEUE INSTANZ 
 const int Damage_Nagelknueppel			= 25; 
 const int Condition_Nagelknueppel		= 10;
 const int Range_Nagelknueppel			= 60;
@@ -119,7 +119,7 @@ const int Damage_NovMace				= 30;
 const int Condition_NovMace				= 15;
 const int Range_NovMace					= 130;
 const int Value_NovMace					= 500; 
-//Holzf‰lleraxt (2h) - ItMw_2h_Bau_Axe
+//Holzf–¥lleraxt (2h) - ItMw_2h_Bau_Axe
 const int Damage_Bau2hAxt				= 50; 
 const int Condition_Bau2hAxt			= 50;
 const int Range_Bau2hAxt				= 70;
@@ -139,7 +139,7 @@ const int Damage_MiscAxe				= 40;
 const int Condition_MiscAxe				= 40;
 const int Range_MiscAxe					= 80;
 const int Value_MiscAxe					= 40; 
-//rostiger Zweih‰nder - STANDARDOBJEKTIERUNG - ItMw_2H_Sword_M_01
+//rostiger Zweih–¥nder - STANDARDOBJEKTIERUNG - ItMw_2H_Sword_M_01
 const int Damage_Misc2hSword			= 50; 
 const int Condition_Misc2hSword			= 50;
 const int Range_Misc2hSword				= 100;
@@ -149,23 +149,23 @@ const int Damage_MilSchwert				= 40;
 const int Condition_MilSchwert			= 40;
 const int Range_MilSchwert				= 90;
 const int Value_MilSchwert				= 50; 
-//grobes Kriegsbeil - S÷LDNER - ItMw_1h_Sld_Axe
+//grobes Kriegsbeil - S–¶LDNER - ItMw_1h_Sld_Axe
 const int Damage_Sld1hAxt 				= 40; 
 const int Condition_Sld1hAxt			= 50;
 const int Range_Sld1hAxt				= 70; 
 const int Value_Sld1hAxt				= 40; 
-//grobes Schwert - S÷LDNER - ItMw_1h_Sld_Sword
+//grobes Schwert - S–¶LDNER - ItMw_1h_Sld_Sword
 const int Damage_Sld1hSchwert			= 40; 
 const int Condition_Sld1hSchwert		= 50;
 const int Range_Sld1hSchwert			= 70;
 const int Value_Sld1hSchwert			= 40;
-// ****** folgende Waffen sind eigentlich zu gut f¸r Kapitel 1, NSCs sind aber noch VIEL zu stark ******
-//grobe Kriegsaxt (2h) - S÷LDNER - ItMw_2h_Sld_Axe
+// ****** folgende Waffen sind eigentlich zu gut f—år Kapitel 1, NSCs sind aber noch VIEL zu stark ******
+//grobe Kriegsaxt (2h) - S–¶LDNER - ItMw_2h_Sld_Axe
 const int Damage_Sld2hAxe				= 60; 
 const int Condition_Sld2hAxe			= 70;
 const int Range_Sld2hAxe				= 80;
 const int Value_Sld2hAxe				= 60;
-//grober Zweih‰nder (2h) - S÷LDNER - ItMw_2h_Sld_Sword
+//grober Zweih–¥nder (2h) - S–¶LDNER - ItMw_2h_Sld_Sword
 const int Damage_Sld2hSchwert			= 60;
 	const int Damage_Rod			= 40;
 const int Condition_Sld2hSchwert		= 70;
@@ -198,7 +198,7 @@ const int Damage_PalSchwert 			= 60;
 const int Condition_PalSchwert			= 60;
 const int Range_PalSchwert				= 70;
 const int Value_PalSchwert				= 600;
-//Paladin Zweih‰nder - NUR PALADIN - ItMw_2h_Pal_Sword
+//Paladin Zweih–¥nder - NUR PALADIN - ItMw_2h_Pal_Sword
 const int Damage_PalZweihaender			= 80;
 const int Condition_PalZweihaender		= 80;
 const int Range_PalZweihaender			= 110;
@@ -216,7 +216,7 @@ const int Value_HolyHammer				= 1000;
 // ************************************
 // Ork- und Echsenmenschenwaffen
 // -----------------------------
-// ACHTUNG: Orkwaffen kˆnnen auch schon 
+// ACHTUNG: Orkwaffen k—Ünnen auch schon 
 // in Kapitel 1 erlangt werden!
 // ************************************
 // ------ Orkwaffen ------
@@ -251,7 +251,7 @@ const int Range_Orkschwert			= 100;
 const int Value_Orkschwert			=  25;
 
 // *******************
-// Kapitel 1 - H‰ndler
+// Kapitel 1 - H–¥ndler
 // *******************
 //Kurzschwert - NEUE INSTANZ
 const int Damage_ShortSword3 		= 40; 
@@ -303,12 +303,12 @@ const int Damage_Schiffsaxt 		= 60;
 const int Condition_Schiffsaxt		= 60;
 const int Range_Schiffsaxt			= 70;
 const int Value_Schiffsaxt			= 600;
-//Piratens‰bel - NEUE INSTANZ 
+//Piratens–¥bel - NEUE INSTANZ 
 const int Damage_Piratensaebel 		= 65; 
 const int Condition_Piratensaebel	= 60; 
 const int Range_Piratensaebel		= 70;
 const int Value_Piratensaebel		= 700;
-//grobes Langschwert - NUR bei Sld-H‰ndler - NEUE INSTANZ                        
+//grobes Langschwert - NUR bei Sld-H–¥ndler - NEUE INSTANZ                        
 const int Damage_Schwert	 		= 65; 
 const int Condition_Schwert			= 65; 
 const int Range_Schwert				= 90;
@@ -324,7 +324,7 @@ const int Range_Common1				= 90;
 const int Value_Common1				= 450;
 
 // *******************
-// Kapitel 2 - H‰ndler
+// Kapitel 2 - H–¥ndler
 // *******************
 //RangerStaff	- NEUE INSTANZ //ADDON
 const int Damage_RangerStaff		= 60; 
@@ -336,7 +336,7 @@ const int Damage_Stab01				= 60;
 const int Condition_Stab01			= 30;
 const int Range_Stab01				= 120;
 const int Value_Stab01				= 900;
-//tats‰chlicher Zauber Stab	- NEUE INSTANZ //ADDON
+//tats–¥chlicher Zauber Stab	- NEUE INSTANZ //ADDON
 const int Damage_Stab02				= 55; 
 const int Condition_Stab02			= 25;
 const int Range_Stab02				= 110;
@@ -361,7 +361,7 @@ const int Damage_Stabkeule 			= 70;
 const int Condition_Stabkeule		= 70;
 const int Range_Stabkeule			= 130;
 const int Value_Stabkeule			= 700;
-//leichter Zweih‰nder	- NEUE INSTANZ
+//leichter Zweih–¥nder	- NEUE INSTANZ
 const int Damage_Zweihaender1		= 75; 
 const int Condition_Zweihaender1	= 75;
 const int Range_Zweihaender1		= 110;
@@ -371,7 +371,7 @@ const int Damage_Steinbrecher 		= 80;
 const int Condition_Steinbrecher	= 80;
 const int Range_Steinbrecher		= 50; 
 const int Value_Steinbrecher		= 800;
-//Sch‰delspicker	- NEUE INSTANZ
+//Sch–¥delspicker	- NEUE INSTANZ
 const int Damage_Spicker			= 70; 
 const int Condition_Spicker			= 70;
 const int Range_Spicker				= 60; 
@@ -430,14 +430,14 @@ const int Damage_Special_1H_1		= 60; //+10%
 const int Condition_Special_1H_1	= 40; 
 const int Range_Special_1H_1		= 90;
 const int Value_Special_1H_1		= 750;
-// selbstgeschmiedeter Zweih‰nder - ItMw_2H_Special_01
+// selbstgeschmiedeter Zweih–¥nder - ItMw_2H_Special_01
 const int Damage_Special_2H_1		= 80; //+10%
 const int Condition_Special_2H_1	= 60;  
 const int Range_Special_2H_1		= 100;
 const int Value_Special_2H_1		= 900;
 
 // *******************
-// Kapitel 3 - H‰ndler
+// Kapitel 3 - H–¥ndler
 // *******************
 //Rapier - NEUE INSTANZ
 const int Damage_Rapier 			= 100; //+8%
@@ -464,7 +464,7 @@ const int Damage_Streitkolben 		= 100;
 const int Condition_Streitkolben	= 100; 
 const int Range_Streitkolben		= 60; 
 const int Value_Streitkolben		= 1000;
-//Zweih‰nder - NEUE INSTANZ
+//Zweih–¥nder - NEUE INSTANZ
 const int Damage_Zweihaender2 		= 105; 
 const int Condition_Zweihaender2	= 105; 
 const int Range_Zweihaender2		= 100;
@@ -528,14 +528,14 @@ const int Damage_Special_1H_2		= 100; //+10%
 const int Condition_Special_1H_2	= 80;
 const int Range_Special_1H_2		= 90;
 const int Value_Special_1H_2		= 1200; 
-//selbstgeschmiedeter Zweih‰nder II - ItMw_2H_Special_02
+//selbstgeschmiedeter Zweih–¥nder II - ItMw_2H_Special_02
 const int Damage_Special_2H_2		= 120; //+10%
 const int Condition_Special_2H_2	= 100;
 const int Range_Special_2H_2		= 110;
 const int Value_Special_2H_2		= 1500;
 
 // *******************
-// Kapitel 4 - H‰ndler
+// Kapitel 4 - H–¥ndler
 // *******************
 //schwerer Kriegshammer - NEUE INSTANZ
 const int Damage_Quarhodron			= 120; 
@@ -564,12 +564,12 @@ const int Damage_Folteraxt			= 125;
 const int Condition_Folteraxt		= 125;
 const int Range_Folteraxt			= 80;
 const int Value_Folteraxt			= 1250;
-//Orkschl‰chter - NEUE INSTANZ
+//Orkschl–¥chter - NEUE INSTANZ
 const int Damage_Orkschlaechter	 	= 130; 
 const int Condition_Orkschlaechter	= 130;
 const int Range_Orkschlaechter		= 100;
 const int Value_Orkschlaechter		= 1300;
-//Schwerer Zweih‰nder
+//Schwerer Zweih–¥nder
 const int Damage_Zweihaender4 		= 135; 
 const int Condition_Zweihaender4	= 135; 
 const int Range_Zweihaender4		= 120;
@@ -603,14 +603,14 @@ const int Damage_Special_1H_3		= 140; //+10%
 const int Condition_Special_1H_3	= 120; 
 const int Range_Special_1H_3		= 100;
 const int Value_Special_1H_3		= 1500;
-// selbstgeschmiedeter Zweih‰nder III - ItMw_2H_Special_03
+// selbstgeschmiedeter Zweih–¥nder III - ItMw_2H_Special_03
 const int Damage_Special_2H_3		= 160; //+10%
 const int Condition_Special_2H_3	= 140;
 const int Range_Special_2H_3		= 130;
 const int Value_Special_2H_3		= 1800;
 
 // *******************
-// Kapitel 5 - H‰ndler
+// Kapitel 5 - H–¥ndler
 // *******************
 //Berserkeraxt - NEUE INSTANZ
 const int Damage_Berserkeraxt 		= 200; 
@@ -631,7 +631,7 @@ const int Damage_Special_1H_4		= 160; //+10%
 const int Condition_Special_1H_4	= 140; 
 const int Range_Special_1H_4		= 100; 
 const int Value_Special_1H_4		= 1800;
-//selbstgeschmiedeter Zweih‰nder IV - ItMw_2H_Special_04
+//selbstgeschmiedeter Zweih–¥nder IV - ItMw_2H_Special_04
 const int Damage_Special_2H_4		= 180; //+10%
 const int Condition_Special_2H_4	= 160;
 const int Range_Special_2H_4		= 140;

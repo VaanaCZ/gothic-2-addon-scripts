@@ -5,8 +5,8 @@
 const int SPL_Cost_PalLight			= 10;
 const int SPL_Cost_LIGHT			= 10;
 
-const int SPL_Duration_PalLIGHT		= 5;	//fester Wert wird nur für die IT_Runenverwendet (Zeit in Minuten)
-const int SPL_Duration_LIGHT		= 5;	//fester Wert wird nur für die IT_Runenverwendet (Zeit in Minuten)	
+const int SPL_Duration_PalLIGHT		= 5;	//fester Wert wird nur fÑŒr die IT_Runenverwendet (Zeit in Minuten)
+const int SPL_Duration_LIGHT		= 5;	//fester Wert wird nur fÑŒr die IT_Runenverwendet (Zeit in Minuten)	
 
 
 INSTANCE Spell_Light (C_Spell_Proto)

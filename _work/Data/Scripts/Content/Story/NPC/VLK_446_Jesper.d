@@ -2,7 +2,7 @@
 instance VLK_446_Jesper (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Δζεροεπ"; 
+	name 		= "Π”Π¶ΠµΡΠΏΠµΡ€"; 
 	guild 		= GIL_BDT;
 	id 			= 446;
 	voice 		= 9;

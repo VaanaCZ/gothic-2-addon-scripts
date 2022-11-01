@@ -27,7 +27,7 @@ const int HP_Shellflesh		= 20;
 //---------------------------------------------------------------------
 INSTANCE ItFo_Addon_Shellflesh (C_Item)
 {
-	name 				=	"Мясо моллюска";
+	name 				=	"РњСЏСЃРѕ РјРѕР»Р»СЋСЃРєР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -40,9 +40,9 @@ INSTANCE ItFo_Addon_Shellflesh (C_Item)
 	on_state[0]			=	Use_Shellflesh;
 
 	description			= 	name;
-	TEXT[0]				= 	"Сочное мясо моллюска";
+	TEXT[0]				= 	"РЎРѕС‡РЅРѕРµ РјСЏСЃРѕ РјРѕР»Р»СЋСЃРєР°";
 	TEXT[1]				= 	NAME_Bonus_HP; COUNT[1] = HP_Shellflesh;
-	TEXT[2]				= 	"Можно есть сырым";
+	TEXT[2]				= 	"РњРѕР¶РЅРѕ РµСЃС‚СЊ СЃС‹СЂС‹Рј";
 	TEXT[3]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -55,7 +55,7 @@ INSTANCE ItFo_Addon_Shellflesh (C_Item)
 //-----------------------------
 INSTANCE ItFo_Addon_Rum(C_Item)
 {
-	name 			=	"Ром";
+	name 			=	"Р РѕРј";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -67,7 +67,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	on_state[0]		=	UseRum;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Белый ром";
+	description		= 	"Р‘РµР»С‹Р№ СЂРѕРј";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_Rum;
@@ -88,7 +88,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	
 INSTANCE ItFo_Addon_Grog(C_Item)
 {
-	name 			=	"Грог";
+	name 			=	"Р“СЂРѕРі";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -100,7 +100,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 	on_state[0]		=	UseGrog;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Настоящий грог моряков";
+	description		= 	"РќР°СЃС‚РѕСЏС‰РёР№ РіСЂРѕРі РјРѕСЂСЏРєРѕРІ";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Grog;
@@ -118,11 +118,11 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht fьr 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht fСЊr 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {
-	name 			=	"Молот Лу";
+	name 			=	"РњРѕР»РѕС‚ Р›Сѓ";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -134,9 +134,9 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 	on_state[0]		=	UseLouHammer;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Молот Лу";
+	description		= 	"РњРѕР»РѕС‚ Р›Сѓ";
 	
-	TEXT[1]			= 	"Эффект          ???";				
+	TEXT[1]			= 	"Р­С„С„РµРєС‚          ???";				
 	
 	
 	
@@ -158,7 +158,7 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 //--------------------------------------------------------
 INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 {
-	name 			=	"Двойной молот";
+	name 			=	"Р”РІРѕР№РЅРѕР№ РјРѕР»РѕС‚";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -170,9 +170,9 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	on_state[0]		=	UseSchlafHammer;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Двойной молот";
+	description		= 	"Р”РІРѕР№РЅРѕР№ РјРѕР»РѕС‚";
 	
-	TEXT[1]			= 	"Способно свалить с ног любого...";				
+	TEXT[1]			= 	"РЎРїРѕСЃРѕР±РЅРѕ СЃРІР°Р»РёС‚СЊ СЃ РЅРѕРі Р»СЋР±РѕРіРѕ...";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchlafHammer;
@@ -194,7 +194,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	
 INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 {
-	name 			=	"Быстрая селедка";
+	name 			=	"Р‘С‹СЃС‚СЂР°СЏ СЃРµР»РµРґРєР°";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -206,10 +206,10 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0]		=	UseSchnellerHering;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Выглядит подозрительно!";
+	description		= 	"Р’С‹РіР»СЏРґРёС‚ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ!";
 	
-	TEXT[1]			= 	"Эффект неизвестен.";				
-	TEXT[2]			=	"Возможны побочные эффекты";
+	TEXT[1]			= 	"Р­С„С„РµРєС‚ РЅРµРёР·РІРµСЃС‚РµРЅ.";				
+	TEXT[2]			=	"Р’РѕР·РјРѕР¶РЅС‹ РїРѕР±РѕС‡РЅС‹Рµ СЌС„С„РµРєС‚С‹";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchnellerHering;
@@ -235,7 +235,7 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 {
-	name 				=	"Мешочек с перцем";
+	name 				=	"РњРµС€РѕС‡РµРє СЃ РїРµСЂС†РµРј";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -246,12 +246,12 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 
 	material 			=	MAT_LEATHER;
 		
-	description			= 	"Красный жгучий перец";
+	description			= 	"РљСЂР°СЃРЅС‹Р№ Р¶РіСѓС‡РёР№ РїРµСЂРµС†";
 	
-	TEXT[0]				= 	"с южных островов";
+	TEXT[0]				= 	"СЃ СЋР¶РЅС‹С… РѕСЃС‚СЂРѕРІРѕРІ";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
-	TEXT[3]				= 	"ОСТОРОЖНО, ЖГУЧИЙ!";
+	TEXT[3]				= 	"РћРЎРўРћР РћР–РќРћ, Р–Р“РЈР§РР™!";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -260,7 +260,7 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_FireStew (C_Item)
 {	
-	name 				=	"Пламенная нарезка";
+	name 				=	"РџР»Р°РјРµРЅРЅР°СЏ РЅР°СЂРµР·РєР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -283,14 +283,14 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 		B_RaiseAttribute 	(self,	ATR_STRENGTH,	STR_FireStew);
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS_MAX,	HP_FireStew);
 		
-		PrintScreen ("Повышение силы и здоровья!", -1, 34, FONT_ScreenSmall,2); 
+		PrintScreen ("РџРѕРІС‹С€РµРЅРёРµ СЃРёР»С‹ Рё Р·РґРѕСЂРѕРІСЊСЏ!", -1, 34, FONT_ScreenSmall,2); 
 	};
 //-------------------------------------------------------
 // Fleischsuppe
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Meatsoup (C_Item)
 {	
-	name 				=	"Мясная похлебка";
+	name 				=	"РњСЏСЃРЅР°СЏ РїРѕС…Р»РµР±РєР°";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -302,7 +302,7 @@ INSTANCE ItFo_Addon_Meatsoup (C_Item)
 	scemeName			=	"RICE";
 	on_state[0]			=	Use_MeatSoup;
 
-	description			= 	"Дымящаяся мясная похлебка";
+	description			= 	"Р”С‹РјСЏС‰Р°СЏСЃСЏ РјСЏСЃРЅР°СЏ РїРѕС…Р»РµР±РєР°";
 	TEXT[1]				= 	NAME_Bonus_STR;		COUNT[1]	= STR_MeatSoup;
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_FishSoup;
 

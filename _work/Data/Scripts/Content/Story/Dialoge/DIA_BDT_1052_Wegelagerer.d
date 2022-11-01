@@ -31,7 +31,7 @@ INSTANCE DIA_1052_Wegelagerer_Hello   (C_INFO)
 	condition   = DIA_1052_Wegelagerer_Hello_Condition;
 	information = DIA_1052_Wegelagerer_Hello_Info;
 	permanent   = FALSE;
-	description = "Кто ты?";
+	description = "РљС‚Рѕ С‚С‹?";
 };
 
 FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
@@ -47,10 +47,10 @@ FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
 
 FUNC VOID DIA_1052_Wegelagerer_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Кто ты?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Что это? Допрос?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Мне нечего сказать тебе, но ты, возможно, захочешь поговорить с моим приятелем.
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Но будь осторожен, он не любит чужаков.
+	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //РљС‚Рѕ С‚С‹?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Р§С‚Рѕ СЌС‚Рѕ? Р”РѕРїСЂРѕСЃ?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //РњРЅРµ РЅРµС‡РµРіРѕ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РЅРѕ С‚С‹, РІРѕР·РјРѕР¶РЅРѕ, Р·Р°С…РѕС‡РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РјРѕРёРј РїСЂРёСЏС‚РµР»РµРј.
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //РќРѕ Р±СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, РѕРЅ РЅРµ Р»СЋР±РёС‚ С‡СѓР¶Р°РєРѕРІ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ func int DIA_Wegelagerer_ANGRIFF2_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF2_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //Ладно, приятель. Сейчас ты получишь.
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //Р›Р°РґРЅРѕ, РїСЂРёСЏС‚РµР»СЊ. РЎРµР№С‡Р°СЃ С‚С‹ РїРѕР»СѓС‡РёС€СЊ.
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,40);
 

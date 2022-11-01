@@ -1,7 +1,7 @@
 instance Bau_4300_Addon_Cavalorn (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= " ‡‚‡ÎÓÌ";
+	name 		= "–ö–∞–≤–∞–ª–æ—Ä–Ω";
 	guild 		= GIL_NONE;
 	id 			= 4300;
 	voice 		= 8;
@@ -22,7 +22,7 @@ instance Bau_4300_Addon_Cavalorn (Npc_Default)
 	CreateInvItems (self, ITAR_BAU_L, 1);	
 
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Psionic", Face_B_Cavalorn, BodyTex_B, ITAR_RANGER_ADDON);	 

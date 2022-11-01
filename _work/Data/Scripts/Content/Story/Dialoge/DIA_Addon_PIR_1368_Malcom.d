@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Malcom_EXIT(C_INFO)
 	condition	= DIA_Addon_Malcom_EXIT_Condition;
 	information	= DIA_Addon_Malcom_EXIT_Info;
 	permanent	= TRUE;
-	description = "Я должен идти.";
+	description = "РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.";
 };                       
 FUNC INT DIA_Addon_Malcom_EXIT_Condition()
 {
@@ -16,17 +16,17 @@ FUNC INT DIA_Addon_Malcom_EXIT_Condition()
 };
 func VOID DIA_Addon_Malcom_EXIT_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Malcom_perm_15_00"); //Я должен идти.
+	AI_Output (other, self, "DIA_Addon_Malcom_perm_15_00"); //РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.
 	
 	if (MalcomBotschaft == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Не попадись в когти хищникам. Здесь довольно опасно.
+		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //РќРµ РїРѕРїР°РґРёСЃСЊ РІ РєРѕРіС‚Рё С…РёС‰РЅРёРєР°Рј. Р—РґРµСЃСЊ РґРѕРІРѕР»СЊРЅРѕ РѕРїР°СЃРЅРѕ.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //Эй! Когда доберешься до нашего лагеря, передай от меня кое-что Генри.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Скажи ему, что деревья здесь чертовски твердые.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Ему придется еще подождать.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //Р­Р№! РљРѕРіРґР° РґРѕР±РµСЂРµС€СЊСЃСЏ РґРѕ РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ, РїРµСЂРµРґР°Р№ РѕС‚ РјРµРЅСЏ РєРѕРµ-С‡С‚Рѕ Р“РµРЅСЂРё.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РґРµСЂРµРІСЊСЏ Р·РґРµСЃСЊ С‡РµСЂС‚РѕРІСЃРєРё С‚РІРµСЂРґС‹Рµ.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Р•РјСѓ РїСЂРёРґРµС‚СЃСЏ РµС‰Рµ РїРѕРґРѕР¶РґР°С‚СЊ.
 		MalcomBotschaft = TRUE;
 	};
 	
@@ -92,8 +92,8 @@ func int DIA_Addon_Malcom_Hello_Condition ()
 
 func void DIA_Addon_Malcom_Hello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_01"); //Ты не отсюда, верно?
-	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_02"); //Похоже, ты проделал дальний путь.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_01"); //РўС‹ РЅРµ РѕС‚СЃСЋРґР°, РІРµСЂРЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Malcom_Hello_04_02"); //РџРѕС…РѕР¶Рµ, С‚С‹ РїСЂРѕРґРµР»Р°Р» РґР°Р»СЊРЅРёР№ РїСѓС‚СЊ.
 };
 
 // ************************************************************
@@ -106,7 +106,7 @@ instance DIA_Addon_Malcom_WasMachen		(C_INFO)
 	condition	= DIA_Addon_Malcom_WasMachen_Condition;
 	information	= DIA_Addon_Malcom_WasMachen_Info;
 
-	description	= "Ты занят?";
+	description	= "РўС‹ Р·Р°РЅСЏС‚?";
 };
 func int DIA_Addon_Malcom_WasMachen_Condition ()
 {
@@ -114,20 +114,20 @@ func int DIA_Addon_Malcom_WasMachen_Condition ()
 };
 func void DIA_Addon_Malcom_WasMachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //Ты занят?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //И не спрашивай... Генри хочет, чтобы я срубил все эти деревья.
+	AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_00"); //РўС‹ Р·Р°РЅСЏС‚?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_01"); //Р РЅРµ СЃРїСЂР°С€РёРІР°Р№... Р“РµРЅСЂРё С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СЃСЂСѓР±РёР» РІСЃРµ СЌС‚Рё РґРµСЂРµРІСЊСЏ.
 	if (Henry.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //Генри?
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //Он командует нашей группой.
+		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //Р“РµРЅСЂРё?
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //РћРЅ РєРѕРјР°РЅРґСѓРµС‚ РЅР°С€РµР№ РіСЂСѓРїРїРѕР№.
 	};
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Постоянно стоит у ворот лагеря и разглагольствует.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Говорит, что надо самоотверженно трудиться на благо общества и все такое.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Но сам-то он и пальцем не шевелит.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //РџРѕСЃС‚РѕСЏРЅРЅРѕ СЃС‚РѕРёС‚ Сѓ РІРѕСЂРѕС‚ Р»Р°РіРµСЂСЏ Рё СЂР°Р·РіР»Р°РіРѕР»СЊСЃС‚РІСѓРµС‚.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Р“РѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅР°РґРѕ СЃР°РјРѕРѕС‚РІРµСЂР¶РµРЅРЅРѕ С‚СЂСѓРґРёС‚СЊСЃСЏ РЅР° Р±Р»Р°РіРѕ РѕР±С‰РµСЃС‚РІР° Рё РІСЃРµ С‚Р°РєРѕРµ.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //РќРѕ СЃР°Рј-С‚Рѕ РѕРЅ Рё РїР°Р»СЊС†РµРј РЅРµ С€РµРІРµР»РёС‚.
 };
 
 // ************************************************************
-// 					Holz - Nachricht fьr Henry
+// 					Holz - Nachricht fСЊr Henry
 // ************************************************************
 instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 {
@@ -136,7 +136,7 @@ instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 	condition	 = 	DIA_Addon_Malcom_Entertrupp_Condition;
 	information	 = 	DIA_Addon_Malcom_Entertrupp_Info;
 
-	description	 = 	"Генри - ваш командир?";
+	description	 = 	"Р“РµРЅСЂРё - РІР°С€ РєРѕРјР°РЅРґРёСЂ?";
 };
 func int DIA_Addon_Malcom_Entertrupp_Condition ()
 {
@@ -147,12 +147,12 @@ func int DIA_Addon_Malcom_Entertrupp_Condition ()
 };
 func void DIA_Addon_Malcom_Entertrupp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Генри - ваш командир?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //Да, командир нашего боевого отряда.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //А нашего капитана зовут Грег.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Р“РµРЅСЂРё - РІР°С€ РєРѕРјР°РЅРґРёСЂ?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //Р”Р°, РєРѕРјР°РЅРґРёСЂ РЅР°С€РµРіРѕ Р±РѕРµРІРѕРіРѕ РѕС‚СЂСЏРґР°.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Рђ РЅР°С€РµРіРѕ РєР°РїРёС‚Р°РЅР° Р·РѕРІСѓС‚ Р“СЂРµРі.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Но сейчас его здесь нет.
+		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //РќРѕ СЃРµР№С‡Р°СЃ РµРіРѕ Р·РґРµСЃСЊ РЅРµС‚.
 	};
 };
 
@@ -166,7 +166,7 @@ instance DIA_Addon_Malcom_Lager		(C_INFO)
 	condition	= DIA_Addon_Malcom_Lager_Condition;
 	information	= DIA_Addon_Malcom_Lager_Info;
 
-	description	= "А где находится ваш лагерь?";
+	description	= "Рђ РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РІР°С€ Р»Р°РіРµСЂСЊ?";
 };
 func int DIA_Addon_Malcom_Lager_Condition ()
 {
@@ -177,8 +177,8 @@ func int DIA_Addon_Malcom_Lager_Condition ()
 };
 func void DIA_Addon_Malcom_Lager_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //А где находится ваш лагерь?
-	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_01"); //Продолжай идти по этой дороге на запад.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Довольно скоро ты увидишь Генри.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //Рђ РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ РІР°С€ Р»Р°РіРµСЂСЊ?
+	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_01"); //РџСЂРѕРґРѕР»Р¶Р°Р№ РёРґС‚Рё РїРѕ СЌС‚РѕР№ РґРѕСЂРѕРіРµ РЅР° Р·Р°РїР°Рґ.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Р”РѕРІРѕР»СЊРЅРѕ СЃРєРѕСЂРѕ С‚С‹ СѓРІРёРґРёС€СЊ Р“РµРЅСЂРё.
 };
 

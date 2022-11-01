@@ -41,7 +41,7 @@ instance DIA_Talbin_NW		(C_INFO)
 	condition	 = 	DIA_Talbin_NW_Condition;
 	information	 = 	DIA_Talbin_NW_Info;
 
-	description	 = 	"Этот Проход был не таким уж и страшным, правда?";
+	description	 = 	"Р­С‚РѕС‚ РџСЂРѕС…РѕРґ Р±С‹Р» РЅРµ С‚Р°РєРёРј СѓР¶ Рё СЃС‚СЂР°С€РЅС‹Рј, РїСЂР°РІРґР°?";
 };
 
 func int DIA_Talbin_NW_Condition ()
@@ -51,24 +51,24 @@ func int DIA_Talbin_NW_Condition ()
 
 func void DIA_Talbin_NW_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Этот Проход был не таким уж и страшным, правда?
-	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Спасибо, что спас меня.
-	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Вот. Я нашел этот камень в Проходе. Я думаю, он пригодится тебе.
+	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Р­С‚РѕС‚ РџСЂРѕС…РѕРґ Р±С‹Р» РЅРµ С‚Р°РєРёРј СѓР¶ Рё СЃС‚СЂР°С€РЅС‹Рј, РїСЂР°РІРґР°?
+	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ СЃРїР°СЃ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Р’РѕС‚. РЇ РЅР°С€РµР» СЌС‚РѕС‚ РєР°РјРµРЅСЊ РІ РџСЂРѕС…РѕРґРµ. РЇ РґСѓРјР°СЋ, РѕРЅ РїСЂРёРіРѕРґРёС‚СЃСЏ С‚РµР±Рµ.
 
 	if (hero.guild == GIL_KDF)
 	{
-	AI_Output			(self, other, "DIA_Talbin_NW_07_03"); //Мне кажется, это рунный камень.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_03"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
 	CreateInvItems (self, ItMi_RuneBlank, 1);									
 	B_GiveInvItems (self, other, ItMi_RuneBlank, 1);					
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Talbin_NW_07_04"); //Мне кажется, это кусок руды.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_04"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ РєСѓСЃРѕРє СЂСѓРґС‹.
 	CreateInvItems (self, ItMi_Nugget, 1);									
 	B_GiveInvItems (self, other, ItMi_Nugget, 1);					
 	};
 	
-	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Да защитит тебя Иннос.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Р”Р° Р·Р°С‰РёС‚РёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ.
 
 	AI_StopProcessInfos (self);
 
@@ -89,7 +89,7 @@ instance DIA_Talbin_NW_PERM		(C_INFO)
 	information	 = 	DIA_Talbin_NW_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Talbin_NW_PERM_Condition ()
@@ -102,8 +102,8 @@ func int DIA_Talbin_NW_PERM_Condition ()
 
 func void DIA_Talbin_NW_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //Все в порядке?
-	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //Да, спасибо тебе. А теперь иди. Со мной будет все в порядке.
+	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //Р”Р°, СЃРїР°СЃРёР±Рѕ С‚РµР±Рµ. Рђ С‚РµРїРµСЂСЊ РёРґРё. РЎРѕ РјРЅРѕР№ Р±СѓРґРµС‚ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
 	AI_StopProcessInfos (self);
 };
 

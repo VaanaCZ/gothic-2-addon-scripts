@@ -27,41 +27,41 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentAlchemy,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentAlchemy,"Чтобы сварить зелье, мне нужна пустая мензурка и необходимые для этого зелья ингредиенты. Из этих ингредиентов, я могу приготовить зелье на столе алхимика."); 
+	B_LogEntry (TOPIC_TalentAlchemy,"Р§С‚РѕР±С‹ СЃРІР°СЂРёС‚СЊ Р·РµР»СЊРµ, РјРЅРµ РЅСѓР¶РЅР° РїСѓСЃС‚Р°СЏ РјРµРЅР·СѓСЂРєР° Рё РЅРµРѕР±С…РѕРґРёРјС‹Рµ РґР»СЏ СЌС‚РѕРіРѕ Р·РµР»СЊСЏ РёРЅРіСЂРµРґРёРµРЅС‚С‹. РР· СЌС‚РёС… РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ, СЏ РјРѕРіСѓ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ Р·РµР»СЊРµ РЅР° СЃС‚РѕР»Рµ Р°Р»С…РёРјРёРєР°."); 
 	
 	// ------ Trank brauen lernen ------
 	if (potion == POTION_Health_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_01] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЛЕЧЕБНОЙ ЭССЕНЦИИ': 2 лечебные травы и 1 луговой горец."); };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р›Р•Р§Р•Р‘РќРћР™ Р­РЎРЎР•РќР¦РР': 2 Р»РµС‡РµР±РЅС‹Рµ С‚СЂР°РІС‹ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†."); };
 	
 	if (potion == POTION_Health_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_02] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЛЕЧЕБНОГО ЭКСТРАКТА': 2 лечебных растения и 1 луговой горец.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р›Р•Р§Р•Р‘РќРћР“Рћ Р­РљРЎРўР РђРљРўРђ': 2 Р»РµС‡РµР±РЅС‹С… СЂР°СЃС‚РµРЅРёСЏ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.");  };
 	
 	if (potion == POTION_Health_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Health_03] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЛЕЧЕБНОГО ЭЛИКСИРА': 2 лечебных корня и 1 луговой горец.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р›Р•Р§Р•Р‘РќРћР“Рћ Р­Р›РРљРЎРР Рђ': 2 Р»РµС‡РµР±РЅС‹С… РєРѕСЂРЅСЏ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.");  };
 	
 	if (potion == POTION_Mana_01)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_01] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭССЕНЦИИ МАНЫ': 2 огненных крапивы и 1 луговой горец.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­РЎРЎР•РќР¦РР РњРђРќР«': 2 РѕРіРЅРµРЅРЅС‹С… РєСЂР°РїРёРІС‹ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.");  };
 	
 	if (potion == POTION_Mana_02)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_02] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭКСТРАКТА МАНЫ': 2 огненных травы и 1 луговой горец.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­РљРЎРўР РђРљРўРђ РњРђРќР«': 2 РѕРіРЅРµРЅРЅС‹С… С‚СЂР°РІС‹ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.");  };
 	
 	if (potion == POTION_Mana_03)		{	PLAYER_TALENT_ALCHEMY[POTION_Mana_03] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА МАНЫ': 2 огненных корня и 1 луговой горец");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­Р›РРљРЎРР Рђ РњРђРќР«': 2 РѕРіРЅРµРЅРЅС‹С… РєРѕСЂРЅСЏ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†");  };
 	
 	if (potion == POTION_Speed)			{	PLAYER_TALENT_ALCHEMY[POTION_Speed] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЗЕЛЬЯ УСКОРЕНИЯ': 1 снеппер-трава и 1 луговой горец");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р—Р•Р›Р¬РЇ РЈРЎРљРћР Р•РќРРЇ': 1 СЃРЅРµРїРїРµСЂ-С‚СЂР°РІР° Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†");  };
 	
 	if (potion == POTION_Perm_STR)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА СИЛЫ': 1 драконий корень и 1 царский щавель.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­Р›РРљРЎРР Рђ РЎРР›Р«': 1 РґСЂР°РєРѕРЅРёР№ РєРѕСЂРµРЅСЊ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.");  };
 	
 	if (potion == POTION_Perm_DEX)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ЛОВКОСТИ': 1 гоблинские ягоды и 1 царский щавель.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­Р›РРљРЎРР Рђ Р›РћР’РљРћРЎРўР': 1 РіРѕР±Р»РёРЅСЃРєРёРµ СЏРіРѕРґС‹ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.");  };
 	
 	if (potion == POTION_Perm_Mana)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ДУХА': 1 огненный корень и 1 царский щавель.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­Р›РРљРЎРР Рђ Р”РЈРҐРђ': 1 РѕРіРЅРµРЅРЅС‹Р№ РєРѕСЂРµРЅСЊ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.");  };
 	
 	if (potion == POTION_Perm_Health)	{	PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] 	= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ингредиенты для 'ЭЛИКСИРА ЖИЗНИ': 1 лечебный корень и 1 царский щавель.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ 'Р­Р›РРљРЎРР Рђ Р–РР—РќР': 1 Р»РµС‡РµР±РЅС‹Р№ РєРѕСЂРµРЅСЊ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.");  };
 
 	PrintScreen			(PRINT_LearnAlchemy, -1, -1, FONT_Screen, 2);
 	

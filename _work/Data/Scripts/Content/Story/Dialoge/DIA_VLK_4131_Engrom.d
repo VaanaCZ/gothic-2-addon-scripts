@@ -34,7 +34,7 @@ instance DIA_Engrom_HALLO		(C_INFO)
 	condition	 = 	DIA_Engrom_HALLO_Condition;
 	information	 = 	DIA_Engrom_HALLO_Info;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Engrom_HALLO_Condition ()
@@ -47,11 +47,11 @@ func int DIA_Engrom_HALLO_Condition ()
 
 func void DIA_Engrom_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_HALLO_15_00"); //Как дела?
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_01"); //Паршиво!
-	AI_Output			(other, self, "DIA_Engrom_HALLO_15_02"); //Ммм!
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_03"); //А что еще я могу сказать? Изо дня в день я вижу только эту чертову реку.
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_04"); //Орки шныряют на левом берегу, бандиты - на правом, и каждый день я ем только мясо луркеров. Я уже не могу выносить все это!
+	AI_Output			(other, self, "DIA_Engrom_HALLO_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_01"); //РџР°СЂС€РёРІРѕ!
+	AI_Output			(other, self, "DIA_Engrom_HALLO_15_02"); //РњРјРј!
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_03"); //Рђ С‡С‚Рѕ РµС‰Рµ СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ? РР·Рѕ РґРЅСЏ РІ РґРµРЅСЊ СЏ РІРёР¶Сѓ С‚РѕР»СЊРєРѕ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ СЂРµРєСѓ.
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_04"); //РћСЂРєРё С€РЅС‹СЂСЏСЋС‚ РЅР° Р»РµРІРѕРј Р±РµСЂРµРіСѓ, Р±Р°РЅРґРёС‚С‹ - РЅР° РїСЂР°РІРѕРј, Рё РєР°Р¶РґС‹Р№ РґРµРЅСЊ СЏ РµРј С‚РѕР»СЊРєРѕ РјСЏСЃРѕ Р»СѓСЂРєРµСЂРѕРІ. РЇ СѓР¶Рµ РЅРµ РјРѕРіСѓ РІС‹РЅРѕСЃРёС‚СЊ РІСЃРµ СЌС‚Рѕ!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Engrom_WhatAboutLeaving		(C_INFO)
 	condition	 = 	DIA_Engrom_WhatAboutLeaving_Condition;
 	information	 = 	DIA_Engrom_WhatAboutLeaving_Info;
 
-	description	 = 	"А ты не думал о том, чтобы выбраться отсюда?";
+	description	 = 	"Рђ С‚С‹ РЅРµ РґСѓРјР°Р» Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°?";
 };
 
 func int DIA_Engrom_WhatAboutLeaving_Condition ()
@@ -78,14 +78,14 @@ func int DIA_Engrom_WhatAboutLeaving_Condition ()
 
 func void DIA_Engrom_WhatAboutLeaving_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_00"); //А ты не думал о том, чтобы выбраться отсюда?
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_01"); //Да, конечно. С этим нет никаких проблем.
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_02"); //Сначала мне нужно прорубить себе дорогу через орды орков, поприветствовать всех остальных монстров, которых там тоже немало, а затем прошмыгнуть через Проход!
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_03"); //Что может быть легче!
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_04"); //Я же пришел сюда.
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_05"); //Ты хочешь сказать мне, что ты только что прошел через Проход?
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_06"); //Ну, в общем да!
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_07"); //Значит, тебе повезло. Пока вокруг творится такой бардак, я с места не сдвинусь.
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_00"); //Рђ С‚С‹ РЅРµ РґСѓРјР°Р» Рѕ С‚РѕРј, С‡С‚РѕР±С‹ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°?
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_01"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЎ СЌС‚РёРј РЅРµС‚ РЅРёРєР°РєРёС… РїСЂРѕР±Р»РµРј.
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_02"); //РЎРЅР°С‡Р°Р»Р° РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРѕСЂСѓР±РёС‚СЊ СЃРµР±Рµ РґРѕСЂРѕРіСѓ С‡РµСЂРµР· РѕСЂРґС‹ РѕСЂРєРѕРІ, РїРѕРїСЂРёРІРµС‚СЃС‚РІРѕРІР°С‚СЊ РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С… РјРѕРЅСЃС‚СЂРѕРІ, РєРѕС‚РѕСЂС‹С… С‚Р°Рј С‚РѕР¶Рµ РЅРµРјР°Р»Рѕ, Р° Р·Р°С‚РµРј РїСЂРѕС€РјС‹РіРЅСѓС‚СЊ С‡РµСЂРµР· РџСЂРѕС…РѕРґ!
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_03"); //Р§С‚Рѕ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р»РµРіС‡Рµ!
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_04"); //РЇ Р¶Рµ РїСЂРёС€РµР» СЃСЋРґР°.
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_05"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ С‚С‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїСЂРѕС€РµР» С‡РµСЂРµР· РџСЂРѕС…РѕРґ?
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_06"); //РќСѓ, РІ РѕР±С‰РµРј РґР°!
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_07"); //Р—РЅР°С‡РёС‚, С‚РµР±Рµ РїРѕРІРµР·Р»Рѕ. РџРѕРєР° РІРѕРєСЂСѓРі С‚РІРѕСЂРёС‚СЃСЏ С‚Р°РєРѕР№ Р±Р°СЂРґР°Рє, СЏ СЃ РјРµСЃС‚Р° РЅРµ СЃРґРІРёРЅСѓСЃСЊ.
 
 };
 
@@ -100,7 +100,7 @@ instance DIA_Engrom_Jagd		(C_INFO)
 	information	 = 	DIA_Engrom_Jagd_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как охота?";
+	description	 = 	"РљР°Рє РѕС…РѕС‚Р°?";
 };
 
 func int DIA_Engrom_Jagd_Condition ()
@@ -116,7 +116,7 @@ func void DIA_Engrom_Jagd_Info ()
 {
 	B_WasMachtJagd ();
 	//Joly:AI_Output			(other, self, "DIA_Engrom_Jagd_15_00"); //Schon mal dran gedacht, hier abzuhauen?
-	AI_Output			(self, other, "DIA_Engrom_Jagd_12_01"); //Охота - моя единственная отрада. Но мне бы хотелось хоть иногда видеть нормальную цель, а не этих отвратительных луркеров.
+	AI_Output			(self, other, "DIA_Engrom_Jagd_12_01"); //РћС…РѕС‚Р° - РјРѕСЏ РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ РѕС‚СЂР°РґР°. РќРѕ РјРЅРµ Р±С‹ С…РѕС‚РµР»РѕСЃСЊ С…РѕС‚СЊ РёРЅРѕРіРґР° РІРёРґРµС‚СЊ РЅРѕСЂРјР°Р»СЊРЅСѓСЋ С†РµР»СЊ, Р° РЅРµ СЌС‚РёС… РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅС‹С… Р»СѓСЂРєРµСЂРѕРІ.
 };
 
 //#####################################################################
@@ -198,7 +198,7 @@ instance DIA_Engrom_B_NpcObsessedByDMT		(C_INFO)
 	condition	 = 	DIA_Engrom_B_NpcObsessedByDMT_Condition;
 	information	 = 	DIA_Engrom_B_NpcObsessedByDMT_Info;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Engrom_B_NpcObsessedByDMT_Condition ()
@@ -227,7 +227,7 @@ instance DIA_Engrom_BESSEN		(C_INFO)
 	information	 = 	DIA_Engrom_BESSEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты одержим Злом.";
+	description	 = 	"РўС‹ РѕРґРµСЂР¶РёРј Р—Р»РѕРј.";
 };
 
 func int DIA_Engrom_BESSEN_Condition ()
@@ -242,16 +242,16 @@ func int DIA_Engrom_BESSEN_Condition ()
 
 func void DIA_Engrom_BESSEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_00"); //Ты одержим Злом.
+	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_00"); //РўС‹ РѕРґРµСЂР¶РёРј Р—Р»РѕРј.
 
-	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_01"); //Давай, я помогу тебе.
-	AI_Output			(self, other, "DIA_Engrom_BESSEN_12_02"); //(вопит) Не трогай меня!
+	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_01"); //Р”Р°РІР°Р№, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Engrom_BESSEN_12_02"); //(РІРѕРїРёС‚) РќРµ С‚СЂРѕРіР°Р№ РјРµРЅСЏ!
 
 	B_NpcClearObsessionByDMT (self);
 		
 	Npc_SetTarget 		(self, other);
 	
-	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bцse) Flag nicht zurьckgesetzt wird 
+	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bС†se) Flag nicht zurСЊckgesetzt wird 
 	other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 	AI_StartState 		(self, ZS_Flee, 0, "");	

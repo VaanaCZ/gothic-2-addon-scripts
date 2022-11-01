@@ -3,7 +3,7 @@
 instance BAU_935_Bronko (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Áðîíêî";
+	name 		= "Ð‘Ñ€Ð¾Ð½ÐºÐ¾";
 	guild 		= GIL_NONE;
 	id 			= 935;
 	voice 		= 6;
@@ -35,8 +35,8 @@ instance BAU_935_Bronko (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 30); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 30); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_PreStart_935;

@@ -1,7 +1,7 @@
 instance BDT_10023_Addon_Wache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Охранник рабов";
+	name 		= "РћС…СЂР°РЅРЅРёРє СЂР°Р±РѕРІ";
 	guild 		= GIL_BDT;
 	id 			= 10023;
 	voice 		= 11;

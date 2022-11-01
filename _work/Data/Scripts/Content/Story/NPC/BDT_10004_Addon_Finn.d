@@ -1,7 +1,7 @@
 instance BDT_10004_Addon_Finn (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Финн";
+	name 		= "Р¤РёРЅРЅ";
 	guild 		= GIL_BDT;
 	id 			= 10004;
 	voice 		= 7;

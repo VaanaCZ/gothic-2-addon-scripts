@@ -249,7 +249,7 @@ func void EVT_LEFT_DOWN_01_SKEL_03 ()
 
 
 //****************************
-// 	EVT_KEYMASTER_01 (Spawn des Keymasters dynamisch an 4 möglichen stellen)
+// 	EVT_KEYMASTER_01 (Spawn des Keymasters dynamisch an 4 mÑ†glichen stellen)
 //****************************
 var int EVT_KEYMASTER_01_ANTIEXPLOID;
 func void EVT_KEYMASTER_01 ()

@@ -76,10 +76,10 @@ FUNC INT DIA_Addon_Bill_Hello_Condition()
 };
 func VOID DIA_Addon_Bill_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_Hello_15_00"); //Как у тебя дела?
-	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_01"); //Тебя прислал сюда Генри?
-	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_02"); //Скажи ему, что он получит свое дерево, как только я закончу.
-	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_03"); //А если он не хочет ждать, может придти сюда и помочь мне пилить.
+	AI_Output (other,self ,"DIA_Addon_Bill_Hello_15_00"); //РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_01"); //РўРµР±СЏ РїСЂРёСЃР»Р°Р» СЃСЋРґР° Р“РµРЅСЂРё?
+	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_02"); //РЎРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РѕРЅ РїРѕР»СѓС‡РёС‚ СЃРІРѕРµ РґРµСЂРµРІРѕ, РєР°Рє С‚РѕР»СЊРєРѕ СЏ Р·Р°РєРѕРЅС‡Сѓ.
+	AI_Output (self ,other,"DIA_Addon_Bill_Hello_03_03"); //Рђ РµСЃР»Рё РѕРЅ РЅРµ С…РѕС‡РµС‚ Р¶РґР°С‚СЊ, РјРѕР¶РµС‚ РїСЂРёРґС‚Рё СЃСЋРґР° Рё РїРѕРјРѕС‡СЊ РјРЅРµ РїРёР»РёС‚СЊ.
 	
 	Npc_ExchangeRoutine (self, "START");
 };
@@ -94,7 +94,7 @@ INSTANCE DIA_Addon_Bill_Planks(C_INFO)
 	condition	= DIA_Addon_Bill_Planks_Condition;
 	information	= DIA_Addon_Bill_Planks_Info;
 
-	description = "Для чего нужно все это дерево?";
+	description = "Р”Р»СЏ С‡РµРіРѕ РЅСѓР¶РЅРѕ РІСЃРµ СЌС‚Рѕ РґРµСЂРµРІРѕ?";
 };                       
 FUNC INT DIA_Addon_Bill_Planks_Condition()
 {
@@ -106,13 +106,13 @@ FUNC INT DIA_Addon_Bill_Planks_Condition()
 
 FUNC VOID DIA_Addon_Bill_Planks_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Bill_Planks_15_00"); //Для чего нужно все это дерево?
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_01"); //Для частокола, глупец.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_02"); //Грег решил, что не мешало бы защитить наш лагерь стеной.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_03"); //Впрочем, я думаю, что мы могли бы особо не трудиться.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_04"); //Если бандиты всерьез решили на нас напасть, эта смехотворная ограда нас не защитит.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_05"); //Их с самого начала нужно было гнать отсюда.
-	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_06"); //Если бы я знал, что дойдет до такого, я бы остался в Хоринисе.
+	AI_Output (other, self, "DIA_Addon_Bill_Planks_15_00"); //Р”Р»СЏ С‡РµРіРѕ РЅСѓР¶РЅРѕ РІСЃРµ СЌС‚Рѕ РґРµСЂРµРІРѕ?
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_01"); //Р”Р»СЏ С‡Р°СЃС‚РѕРєРѕР»Р°, РіР»СѓРїРµС†.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_02"); //Р“СЂРµРі СЂРµС€РёР», С‡С‚Рѕ РЅРµ РјРµС€Р°Р»Рѕ Р±С‹ Р·Р°С‰РёС‚РёС‚СЊ РЅР°С€ Р»Р°РіРµСЂСЊ СЃС‚РµРЅРѕР№.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_03"); //Р’РїСЂРѕС‡РµРј, СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РјС‹ РјРѕРіР»Рё Р±С‹ РѕСЃРѕР±Рѕ РЅРµ С‚СЂСѓРґРёС‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_04"); //Р•СЃР»Рё Р±Р°РЅРґРёС‚С‹ РІСЃРµСЂСЊРµР· СЂРµС€РёР»Рё РЅР° РЅР°СЃ РЅР°РїР°СЃС‚СЊ, СЌС‚Р° СЃРјРµС…РѕС‚РІРѕСЂРЅР°СЏ РѕРіСЂР°РґР° РЅР°СЃ РЅРµ Р·Р°С‰РёС‚РёС‚.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_05"); //РС… СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р° РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ РіРЅР°С‚СЊ РѕС‚СЃСЋРґР°.
+	AI_Output (self, other, "DIA_Addon_Bill_Planks_03_06"); //Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р», С‡С‚Рѕ РґРѕР№РґРµС‚ РґРѕ С‚Р°РєРѕРіРѕ, СЏ Р±С‹ РѕСЃС‚Р°Р»СЃСЏ РІ РҐРѕСЂРёРЅРёСЃРµ.
 };
 	
 // ************************************************************
@@ -127,7 +127,7 @@ instance DIA_Addon_Bill_Perm		(C_INFO)
 	condition	= DIA_Addon_Bill_Perm_Condition;
 	information	= DIA_Addon_Bill_Perm_Info;
 	permanent	= TRUE;
-	description	= "Я могу помочь тебе?";
+	description	= "РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?";
 };
 func int DIA_Addon_Bill_Perm_Condition ()
 {
@@ -139,11 +139,11 @@ func int DIA_Addon_Bill_Perm_Condition ()
 };
 func void DIA_Addon_Bill_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bill_Perm_15_00"); //Я могу помочь тебе?
-	AI_Output	(self, other, "DIA_Addon_Bill_Perm_03_01"); //Нет, спасибо, я сам справлюсь.
+	AI_Output	(other, self, "DIA_Addon_Bill_Perm_15_00"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?
+	AI_Output	(self, other, "DIA_Addon_Bill_Perm_03_01"); //РќРµС‚, СЃРїР°СЃРёР±Рѕ, СЏ СЃР°Рј СЃРїСЂР°РІР»СЋСЃСЊ.
 	if (Bill_Perm_Once == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Bill_Perm_03_02"); //Я не так давно присоединился к пиратам, и если я буду сваливать на других свою работу, то мне здесь многого не добиться.
+		AI_Output (self, other, "DIA_Addon_Bill_Perm_03_02"); //РЇ РЅРµ С‚Р°Рє РґР°РІРЅРѕ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РїРёСЂР°С‚Р°Рј, Рё РµСЃР»Рё СЏ Р±СѓРґСѓ СЃРІР°Р»РёРІР°С‚СЊ РЅР° РґСЂСѓРіРёС… СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ, С‚Рѕ РјРЅРµ Р·РґРµСЃСЊ РјРЅРѕРіРѕРіРѕ РЅРµ РґРѕР±РёС‚СЊСЃСЏ.
 		Bill_Perm_Once = TRUE;
 	};
 };
@@ -158,7 +158,7 @@ instance DIA_Addon_Bill_Perm2		(C_INFO)
 	condition	= DIA_Addon_Bill_Perm2_Condition;
 	information	= DIA_Addon_Bill_Perm2_Info;
 	permanent	= TRUE;
-	description	= "Что ты делаешь сейчас?";
+	description	= "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ СЃРµР№С‡Р°СЃ?";
 };
 func int DIA_Addon_Bill_Perm2_Condition ()
 {
@@ -169,12 +169,12 @@ func int DIA_Addon_Bill_Perm2_Condition ()
 };
 func void DIA_Addon_Bill_Perm2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bill_Perm2_15_00"); //Что ты делаешь сейчас?
-	AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_01"); //Я? Я отдыхаю.
+	AI_Output	(other, self, "DIA_Addon_Bill_Perm2_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ СЃРµР№С‡Р°СЃ?
+	AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_01"); //РЇ? РЇ РѕС‚РґС‹С…Р°СЋ.
 	if (!Npc_IsDead(Francis))
 	{
-		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_02"); //(усмехается) Моей работой занимается Фрэнсис.
-		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_03"); //И пилить он будет, пока у него руки не отвалятся.
+		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_02"); //(СѓСЃРјРµС…Р°РµС‚СЃСЏ) РњРѕРµР№ СЂР°Р±РѕС‚РѕР№ Р·Р°РЅРёРјР°РµС‚СЃСЏ Р¤СЂСЌРЅСЃРёСЃ.
+		AI_Output	(self, other, "DIA_Addon_Bill_Perm2_03_03"); //Р РїРёР»РёС‚СЊ РѕРЅ Р±СѓРґРµС‚, РїРѕРєР° Сѓ РЅРµРіРѕ СЂСѓРєРё РЅРµ РѕС‚РІР°Р»СЏС‚СЃСЏ.
 	};
 };
 
@@ -195,7 +195,7 @@ INSTANCE DIA_Addon_Bill_AngusnHank(C_INFO)
 	condition	= DIA_Addon_Bill_AngusnHank_Condition;
 	information	= DIA_Addon_Bill_AngusnHank_Info;
 	permanent	= FALSE;
-	description = "Я ищу Ангуса и Хэнка.";
+	description = "РЇ РёС‰Сѓ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°.";
 };                       
 FUNC INT DIA_Addon_Bill_AngusnHank_Condition()
 {
@@ -207,15 +207,15 @@ FUNC INT DIA_Addon_Bill_AngusnHank_Condition()
 };
 func VOID DIA_Addon_Bill_AngusnHank_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_00"); //Я ищу Ангуса и Хэнка.
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_01"); //(вздыхает) Я не знаю, где они. Должно быть, бандиты их убили.
-	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_02"); //Вы были друзьями, верно?
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_03"); //Все, что я знаю, - это то, что они должны были встретиться с бандитами в какой-то пещере неподалеку отсюда.
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_04"); //Она должна быть где-то на востоке от лагеря. 
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_05"); //Не знаю, где именно она находится. Сам я там ни разу не был.
-	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_06"); //Может быть, тебе стоит поговорить с Аллигатором Джеком. Он любит бродить вокруг лагеря.
+	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_00"); //РЇ РёС‰Сѓ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°.
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_01"); //(РІР·РґС‹С…Р°РµС‚) РЇ РЅРµ Р·РЅР°СЋ, РіРґРµ РѕРЅРё. Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Р±Р°РЅРґРёС‚С‹ РёС… СѓР±РёР»Рё.
+	AI_Output (other,self ,"DIA_Addon_Bill_AngusnHank_15_02"); //Р’С‹ Р±С‹Р»Рё РґСЂСѓР·СЊСЏРјРё, РІРµСЂРЅРѕ?
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_03"); //Р’СЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ, - СЌС‚Рѕ С‚Рѕ, С‡С‚Рѕ РѕРЅРё РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё РІ РєР°РєРѕР№-С‚Рѕ РїРµС‰РµСЂРµ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚СЃСЋРґР°.
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_04"); //РћРЅР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РіРґРµ-С‚Рѕ РЅР° РІРѕСЃС‚РѕРєРµ РѕС‚ Р»Р°РіРµСЂСЏ. 
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_05"); //РќРµ Р·РЅР°СЋ, РіРґРµ РёРјРµРЅРЅРѕ РѕРЅР° РЅР°С…РѕРґРёС‚СЃСЏ. РЎР°Рј СЏ С‚Р°Рј РЅРё СЂР°Р·Сѓ РЅРµ Р±С‹Р».
+	AI_Output (self ,other,"DIA_Addon_Bill_AngusnHank_03_06"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РђР»Р»РёРіР°С‚РѕСЂРѕРј Р”Р¶РµРєРѕРј. РћРЅ Р»СЋР±РёС‚ Р±СЂРѕРґРёС‚СЊ РІРѕРєСЂСѓРі Р»Р°РіРµСЂСЏ.
 
-	B_LogEntry	(TOPIC_Addon_SkipsGrog,"У Ангуса и Хэнка была пещера к востоку от лагеря. О ней должен знать Аллигатор Джек.");
+	B_LogEntry	(TOPIC_Addon_SkipsGrog,"РЈ РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР° Р±С‹Р»Р° РїРµС‰РµСЂР° Рє РІРѕСЃС‚РѕРєСѓ РѕС‚ Р»Р°РіРµСЂСЏ. Рћ РЅРµР№ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РђР»Р»РёРіР°С‚РѕСЂ Р”Р¶РµРє.");
 };
 
 // ------------------------------------------------------------
@@ -228,7 +228,7 @@ INSTANCE DIA_Addon_Bill_FoundFriends(C_INFO)
 	condition	= DIA_Addon_Bill_FoundFriends_Condition;
 	information	= DIA_Addon_Bill_FoundFriends_Info;
 	permanent	= FALSE;
-	description = "Я нашел твоих друзей.";
+	description = "РЇ РЅР°С€РµР» С‚РІРѕРёС… РґСЂСѓР·РµР№.";
 };                       
 FUNC INT DIA_Addon_Bill_FoundFriends_Condition()
 {
@@ -239,26 +239,26 @@ FUNC INT DIA_Addon_Bill_FoundFriends_Condition()
 };
 FUNC VOID DIA_Addon_Bill_FoundFriends_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_00"); //Я нашел твоих друзей.
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_01"); //И? Где они?
-	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_02"); //Они мертвы.
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_03"); //(с ненавистью) Проклятые бандиты! Они убили их!
+	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_00"); //РЇ РЅР°С€РµР» С‚РІРѕРёС… РґСЂСѓР·РµР№.
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_01"); //Р? Р“РґРµ РѕРЅРё?
+	AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_02"); //РћРЅРё РјРµСЂС‚РІС‹.
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_03"); //(СЃ РЅРµРЅР°РІРёСЃС‚СЊСЋ) РџСЂРѕРєР»СЏС‚С‹Рµ Р±Р°РЅРґРёС‚С‹! РћРЅРё СѓР±РёР»Рё РёС…!
 	if (SC_Knows_JuanMurderedAngus == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_06"); //Возможно.
+		AI_Output (other,self ,"DIA_Addon_Bill_FoundFriends_15_06"); //Р’РѕР·РјРѕР¶РЅРѕ.
 	};
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_04"); //Чертовы свиньи! Вы будете гореть в аду.
-	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_05"); //Если бы я только знал имя тех подонков, кто это сделал...
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_04"); //Р§РµСЂС‚РѕРІС‹ СЃРІРёРЅСЊРё! Р’С‹ Р±СѓРґРµС‚Рµ РіРѕСЂРµС‚СЊ РІ Р°РґСѓ.
+	AI_Output (self ,other,"DIA_Addon_Bill_FoundFriends_03_05"); //Р•СЃР»Рё Р±С‹ СЏ С‚РѕР»СЊРєРѕ Р·РЅР°Р» РёРјСЏ С‚РµС… РїРѕРґРѕРЅРєРѕРІ, РєС‚Рѕ СЌС‚Рѕ СЃРґРµР»Р°Р»...
 	
 	MIS_Addon_Bill_SearchAngusMurder = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_KillJuan,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_KillJuan,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Билл был потрясен, когда я сказал ему о смерти Ангуса и Хэнка. Он хочет знать имена их убийц.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"Р‘РёР»Р» Р±С‹Р» РїРѕС‚СЂСЏСЃРµРЅ, РєРѕРіРґР° СЏ СЃРєР°Р·Р°Р» РµРјСѓ Рѕ СЃРјРµСЂС‚Рё РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР°. РћРЅ С…РѕС‡РµС‚ Р·РЅР°С‚СЊ РёРјРµРЅР° РёС… СѓР±РёР№С†.");
 };	
 
 // ------------------------------------------------------------
-// 						Ich kenne den Mцrder
+// 						Ich kenne den MС†rder
 // ------------------------------------------------------------
 instance DIA_Addon_Bill_JuanMurder		(C_INFO)
 {
@@ -267,7 +267,7 @@ instance DIA_Addon_Bill_JuanMurder		(C_INFO)
 	condition	= DIA_Addon_Bill_JuanMurder_Condition;
 	information	= DIA_Addon_Bill_JuanMurder_Info;
 
-	description	= "Я знаю, кто убил Хэнка и Ангуса.";
+	description	= "РЇ Р·РЅР°СЋ, РєС‚Рѕ СѓР±РёР» РҐСЌРЅРєР° Рё РђРЅРіСѓСЃР°.";
 };
 func int DIA_Addon_Bill_JuanMurder_Condition ()
 {
@@ -279,13 +279,13 @@ func int DIA_Addon_Bill_JuanMurder_Condition ()
 };
 func void DIA_Addon_Bill_JuanMurder_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_00"); //Я знаю, кто убил Хэнка и Ангуса.
-	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_01"); //Кто? Кто это сделал?
-	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_02"); //Один из бандитов. Его зовут Хуан.
-	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_03"); //Ты должен прирезать этого гада, ты слышишь меня?
-	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_04"); //Это не должно сойти ему с рук.
+	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_00"); //РЇ Р·РЅР°СЋ, РєС‚Рѕ СѓР±РёР» РҐСЌРЅРєР° Рё РђРЅРіСѓСЃР°.
+	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_01"); //РљС‚Рѕ? РљС‚Рѕ СЌС‚Рѕ СЃРґРµР»Р°Р»?
+	AI_Output (other, self, "DIA_Addon_Bill_JuanMurder_15_02"); //РћРґРёРЅ РёР· Р±Р°РЅРґРёС‚РѕРІ. Р•РіРѕ Р·РѕРІСѓС‚ РҐСѓР°РЅ.
+	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_03"); //РўС‹ РґРѕР»Р¶РµРЅ РїСЂРёСЂРµР·Р°С‚СЊ СЌС‚РѕРіРѕ РіР°РґР°, С‚С‹ СЃР»С‹С€РёС€СЊ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Addon_Bill_JuanMurder_03_04"); //Р­С‚Рѕ РЅРµ РґРѕР»Р¶РЅРѕ СЃРѕР№С‚Рё РµРјСѓ СЃ СЂСѓРє.
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Я должен отомстить за Ангуса и Хэнка и убить Хуана.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"РЇ РґРѕР»Р¶РµРЅ РѕС‚РѕРјСЃС‚РёС‚СЊ Р·Р° РђРЅРіСѓСЃР° Рё РҐСЌРЅРєР° Рё СѓР±РёС‚СЊ РҐСѓР°РЅР°.");
 };
 
 // ------------------------------------------------------------
@@ -298,7 +298,7 @@ INSTANCE DIA_Addon_Bill_KilledEsteban(C_INFO)
 	condition	= DIA_Addon_Bill_KilledEsteban_Condition;
 	information	= DIA_Addon_Bill_KilledEsteban_Info;
 
-	description = "Хуан убит.";
+	description = "РҐСѓР°РЅ СѓР±РёС‚.";
 };                       
 FUNC INT DIA_Addon_Bill_KilledEsteban_Condition()
 {
@@ -310,12 +310,12 @@ FUNC INT DIA_Addon_Bill_KilledEsteban_Condition()
 };
 FUNC VOID DIA_Addon_Bill_KilledEsteban_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_00"); //Хуан убит.
-	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_01"); //Он страдал?
-	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_02"); //Успокойся, сынок!
-	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_03"); //(вздыхает) Ну ладно. По крайней мере, эта свинья мертва.
+	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_00"); //РҐСѓР°РЅ СѓР±РёС‚.
+	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_01"); //РћРЅ СЃС‚СЂР°РґР°Р»?
+	AI_Output (other,self ,"DIA_Addon_Bill_KilledEsteban_15_02"); //РЈСЃРїРѕРєРѕР№СЃСЏ, СЃС‹РЅРѕРє!
+	AI_Output (self ,other,"DIA_Addon_Bill_KilledEsteban_03_03"); //(РІР·РґС‹С…Р°РµС‚) РќСѓ Р»Р°РґРЅРѕ. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, СЌС‚Р° СЃРІРёРЅСЊСЏ РјРµСЂС‚РІР°.
 	
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Хуан мертв. Билл очень рад.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"РҐСѓР°РЅ РјРµСЂС‚РІ. Р‘РёР»Р» РѕС‡РµРЅСЊ СЂР°Рґ.");
 	MIS_Addon_Bill_SearchAngusMurder = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Bill_KillAngusMurder);
 	
@@ -338,7 +338,7 @@ instance DIA_Addon_Bill_Khorinis		(C_INFO)
 	condition	= DIA_Addon_Bill_Khorinis_Condition;
 	information	= DIA_Addon_Bill_Khorinis_Info;
 
-	description	= "Ты из Хориниса?";
+	description	= "РўС‹ РёР· РҐРѕСЂРёРЅРёСЃР°?";
 };
 func int DIA_Addon_Bill_Khorinis_Condition ()
 {
@@ -349,15 +349,15 @@ func int DIA_Addon_Bill_Khorinis_Condition ()
 };
 func void DIA_Addon_Bill_Khorinis_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Bill_Khorinis_15_00"); //Ты из Хориниса?
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_01"); //Да. Я зарабатывал на жизнь карманными кражами и мошенничеством.
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_02"); //Но когда в порт перестали заходить корабли, дела начали становиться все хуже и хуже.
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_03"); //В конце концов мне надоело бегать от ополчения из-за пары корок хлеба.
-	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_04"); //Поэтому я присоединился к Грегу. И вот теперь я застрял здесь.
+	AI_Output (other, self, "DIA_Addon_Bill_Khorinis_15_00"); //РўС‹ РёР· РҐРѕСЂРёРЅРёСЃР°?
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_01"); //Р”Р°. РЇ Р·Р°СЂР°Р±Р°С‚С‹РІР°Р» РЅР° Р¶РёР·РЅСЊ РєР°СЂРјР°РЅРЅС‹РјРё РєСЂР°Р¶Р°РјРё Рё РјРѕС€РµРЅРЅРёС‡РµСЃС‚РІРѕРј.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_02"); //РќРѕ РєРѕРіРґР° РІ РїРѕСЂС‚ РїРµСЂРµСЃС‚Р°Р»Рё Р·Р°С…РѕРґРёС‚СЊ РєРѕСЂР°Р±Р»Рё, РґРµР»Р° РЅР°С‡Р°Р»Рё СЃС‚Р°РЅРѕРІРёС‚СЊСЃСЏ РІСЃРµ С…СѓР¶Рµ Рё С…СѓР¶Рµ.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_03"); //Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ РјРЅРµ РЅР°РґРѕРµР»Рѕ Р±РµРіР°С‚СЊ РѕС‚ РѕРїРѕР»С‡РµРЅРёСЏ РёР·-Р·Р° РїР°СЂС‹ РєРѕСЂРѕРє С…Р»РµР±Р°.
+	AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_04"); //РџРѕСЌС‚РѕРјСѓ СЏ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє Р“СЂРµРіСѓ. Р РІРѕС‚ С‚РµРїРµСЂСЊ СЏ Р·Р°СЃС‚СЂСЏР» Р·РґРµСЃСЊ.
 
 	if (GregIsBAck == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_05"); //(вздыхает) Целый день пилю, чтобы построить никому не нужный частокол.
+		AI_Output (self, other, "DIA_Addon_Bill_Khorinis_03_05"); //(РІР·РґС‹С…Р°РµС‚) Р¦РµР»С‹Р№ РґРµРЅСЊ РїРёР»СЋ, С‡С‚РѕР±С‹ РїРѕСЃС‚СЂРѕРёС‚СЊ РЅРёРєРѕРјСѓ РЅРµ РЅСѓР¶РЅС‹Р№ С‡Р°СЃС‚РѕРєРѕР».
 	};
 };
 
@@ -371,7 +371,7 @@ instance DIA_Addon_Bill_TeachPlayer		(C_INFO)
 	condition	= DIA_Addon_Bill_TeachPlayer_Condition;
 	information	= DIA_Addon_Bill_TeachPlayer_Info;
 	
-	description	= "Ты можешь научить меня чему-нибудь?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 func int DIA_Addon_Bill_TeachPlayer_Condition ()
 {
@@ -382,9 +382,9 @@ func int DIA_Addon_Bill_TeachPlayer_Condition ()
 };
 func void DIA_Addon_Bill_TeachPlayer_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bill_TeachPlayer_15_00"); //Ты можешь меня чему-нибудь научить?
-	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_01"); //Ну, я бы мог показать тебе, как незамеченным воровать чужие кошельки.
-	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_02"); //Но ты должен быть достаточно ловким, иначе ничего не получится.
+	AI_Output	(other, self, "DIA_Addon_Bill_TeachPlayer_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_01"); //РќСѓ, СЏ Р±С‹ РјРѕРі РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє РЅРµР·Р°РјРµС‡РµРЅРЅС‹Рј РІРѕСЂРѕРІР°С‚СЊ С‡СѓР¶РёРµ РєРѕС€РµР»СЊРєРё.
+	AI_Output	(self, other, "DIA_Addon_Bill_TeachPlayer_03_02"); //РќРѕ С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р»РѕРІРєРёРј, РёРЅР°С‡Рµ РЅРёС‡РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ.
 
 	Bill_Addon_TeachPickPocket = TRUE;
 };
@@ -399,7 +399,7 @@ instance DIA_Addon_Bill_LearnTalent		(C_INFO)
 	condition	= DIA_Addon_Bill_LearnTalent_Condition;
 	information	= DIA_Addon_Bill_LearnTalent_Info;
 	permanent 	= TRUE;
-	description	= "Научи меня карманному воровству (10 LP)";
+	description	= "РќР°СѓС‡Рё РјРµРЅСЏ РєР°СЂРјР°РЅРЅРѕРјСѓ РІРѕСЂРѕРІСЃС‚РІСѓ (10 LP)";
 };
 func int DIA_Addon_Bill_LearnTalent_Condition ()
 {
@@ -411,26 +411,26 @@ func int DIA_Addon_Bill_LearnTalent_Condition ()
 };
 func void DIA_Addon_Bill_LearnTalent_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //Обучи меня карманным кражам.
+	AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ РєР°СЂРјР°РЅРЅС‹Рј РєСЂР°Р¶Р°Рј.
 	
-	if (other.attribute[ATR_DEXTERITY] >= 40) //braucht man fьr Francis
+	if (other.attribute[ATR_DEXTERITY] >= 40) //braucht man fСЊr Francis
 	{
 		if (B_TeachThiefTalent (self, other, NPC_TALENT_PICKPOCKET))
 		{
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_01"); //Прежде всего, ты должен заставить жертву почувствовать себя в безопасности.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_02"); //Я, например, подходил к человеку и заводил беседу. Действовало безотказно.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_03"); //Когда человек отвлекся, вытаскивай добычу, но убедись, что жертва ничего не замечает.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_01"); //РџСЂРµР¶РґРµ РІСЃРµРіРѕ, С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°СЃС‚Р°РІРёС‚СЊ Р¶РµСЂС‚РІСѓ РїРѕС‡СѓРІСЃС‚РІРѕРІР°С‚СЊ СЃРµР±СЏ РІ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_02"); //РЇ, РЅР°РїСЂРёРјРµСЂ, РїРѕРґС…РѕРґРёР» Рє С‡РµР»РѕРІРµРєСѓ Рё Р·Р°РІРѕРґРёР» Р±РµСЃРµРґСѓ. Р”РµР№СЃС‚РІРѕРІР°Р»Рѕ Р±РµР·РѕС‚РєР°Р·РЅРѕ.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_03"); //РљРѕРіРґР° С‡РµР»РѕРІРµРє РѕС‚РІР»РµРєСЃСЏ, РІС‹С‚Р°СЃРєРёРІР°Р№ РґРѕР±С‹С‡Сѓ, РЅРѕ СѓР±РµРґРёСЃСЊ, С‡С‚Рѕ Р¶РµСЂС‚РІР° РЅРёС‡РµРіРѕ РЅРµ Р·Р°РјРµС‡Р°РµС‚.
 
-			AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_05"); //Что-нибудь еще?
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_06"); //Продолжай тренировать ловкость. Чем ловчее ты будешь, тем больше ты будешь замечать.
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_07"); //И тем чаще у тебя будет получаться незаметно отнимать у людей вещи!
-			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_08"); //Это все. По крайней мере, в плане теории.
+			AI_Output (other, self, "DIA_Addon_Bill_LearnTalent_15_05"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_06"); //РџСЂРѕРґРѕР»Р¶Р°Р№ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ Р»РѕРІРєРѕСЃС‚СЊ. Р§РµРј Р»РѕРІС‡РµРµ С‚С‹ Р±СѓРґРµС€СЊ, С‚РµРј Р±РѕР»СЊС€Рµ С‚С‹ Р±СѓРґРµС€СЊ Р·Р°РјРµС‡Р°С‚СЊ.
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_07"); //Р С‚РµРј С‡Р°С‰Рµ Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ РїРѕР»СѓС‡Р°С‚СЊСЃСЏ РЅРµР·Р°РјРµС‚РЅРѕ РѕС‚РЅРёРјР°С‚СЊ Сѓ Р»СЋРґРµР№ РІРµС‰Рё!
+			AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_08"); //Р­С‚Рѕ РІСЃРµ. РџРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РІ РїР»Р°РЅРµ С‚РµРѕСЂРёРё.
 		};
 	}
 	else 
 	{
-		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_09"); //Забудь об этом! Ты недостаточно проворен!
-		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_10"); //Ты должен либо стать более ловким, либо найти лучшего учителя.
+		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_09"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј! РўС‹ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїСЂРѕРІРѕСЂРµРЅ!
+		AI_Output (self ,other ,"DIA_Addon_Bill_LearnTalent_03_10"); //РўС‹ РґРѕР»Р¶РµРЅ Р»РёР±Рѕ СЃС‚Р°С‚СЊ Р±РѕР»РµРµ Р»РѕРІРєРёРј, Р»РёР±Рѕ РЅР°Р№С‚Рё Р»СѓС‡С€РµРіРѕ СѓС‡РёС‚РµР»СЏ.
 	};
 };
 

@@ -32,7 +32,7 @@ instance DIA_Haupttorwache_AUFGABE		(C_INFO)
 	information	 = 	DIA_Haupttorwache_AUFGABE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Чем ты занимаешься здесь?";
+	description	 = 	"Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Haupttorwache_AUFGABE_Condition ()
@@ -42,9 +42,9 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Чем ты занимаешься здесь?
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Моя задача проста. Я должен следить, чтобы орки не приближались ближе, чем на 30 футов к воротам.
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Если ты попытаешься поднять решетку, я подниму тревогу. Вот и все.
+	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //РњРѕСЏ Р·Р°РґР°С‡Р° РїСЂРѕСЃС‚Р°. РЇ РґРѕР»Р¶РµРЅ СЃР»РµРґРёС‚СЊ, С‡С‚РѕР±С‹ РѕСЂРєРё РЅРµ РїСЂРёР±Р»РёР¶Р°Р»РёСЃСЊ Р±Р»РёР¶Рµ, С‡РµРј РЅР° 30 С„СѓС‚РѕРІ Рє РІРѕСЂРѕС‚Р°Рј.
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Р•СЃР»Рё С‚С‹ РїРѕРїС‹С‚Р°РµС€СЊСЃСЏ РїРѕРґРЅСЏС‚СЊ СЂРµС€РµС‚РєСѓ, СЏ РїРѕРґРЅРёРјСѓ С‚СЂРµРІРѕРіСѓ. Р’РѕС‚ Рё РІСЃРµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ instance DIA_Haupttorwache_TOROEFFNEN		(C_INFO)
 	information	 = 	DIA_Haupttorwache_TOROEFFNEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Что нужно сделать, чтобы открыть главные ворота?";
+	description	 = 	"Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РѕС‚РєСЂС‹С‚СЊ РіР»Р°РІРЅС‹Рµ РІРѕСЂРѕС‚Р°?";
 };
 
 func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
@@ -70,31 +70,31 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 };
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Что нужно сделать, чтобы открыть главные ворота?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Ради всего святого! Зачем тебе знать это?
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Р§С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РѕС‚РєСЂС‹С‚СЊ РіР»Р°РІРЅС‹Рµ РІРѕСЂРѕС‚Р°?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Р Р°РґРё РІСЃРµРіРѕ СЃРІСЏС‚РѕРіРѕ! Р—Р°С‡РµРј С‚РµР±Рµ Р·РЅР°С‚СЊ СЌС‚Рѕ?
 
 	self.flags = 0;//Joly:zur sicherheit
 
 	Info_ClearChoices	(DIA_Haupttorwache_TOROEFFNEN);
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Я беспокоюсь о безопасности замка.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Да я просто так спросил.", DIA_Haupttorwache_TOROEFFNEN_frage );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "РЇ Р±РµСЃРїРѕРєРѕСЋСЃСЊ Рѕ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё Р·Р°РјРєР°.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Р”Р° СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃРїСЂРѕСЃРёР».", DIA_Haupttorwache_TOROEFFNEN_frage );
 	
 };
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Я беспокоюсь о безопасности замка.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Я тоже, поверь мне.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Я очень добросовестный стражник, и Гаронд даже доверил мне ключ от привратницкой.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(гордо) Это большая ответственность. Я буду бережно хранить его. Я поклялся в этом Гаронду.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Да. Только представь, что кто-нибудь придет и поднимет рычаг, чтобы открыть ворота, а эту ржавую старую решетку вдруг заклинит.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Никто тогда не сможет закрыть эти ворота. Мне даже думать не хочется, что произойдет дальше. Хорошо, что никто не знает, что у меня есть ключ.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //РЇ Р±РµСЃРїРѕРєРѕСЋСЃСЊ Рѕ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё Р·Р°РјРєР°.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //РЇ С‚РѕР¶Рµ, РїРѕРІРµСЂСЊ РјРЅРµ.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //РЇ РѕС‡РµРЅСЊ РґРѕР±СЂРѕСЃРѕРІРµСЃС‚РЅС‹Р№ СЃС‚СЂР°Р¶РЅРёРє, Рё Р“Р°СЂРѕРЅРґ РґР°Р¶Рµ РґРѕРІРµСЂРёР» РјРЅРµ РєР»СЋС‡ РѕС‚ РїСЂРёРІСЂР°С‚РЅРёС†РєРѕР№.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(РіРѕСЂРґРѕ) Р­С‚Рѕ Р±РѕР»СЊС€Р°СЏ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ. РЇ Р±СѓРґСѓ Р±РµСЂРµР¶РЅРѕ С…СЂР°РЅРёС‚СЊ РµРіРѕ. РЇ РїРѕРєР»СЏР»СЃСЏ РІ СЌС‚РѕРј Р“Р°СЂРѕРЅРґСѓ.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Р”Р°. РўРѕР»СЊРєРѕ РїСЂРµРґСЃС‚Р°РІСЊ, С‡С‚Рѕ РєС‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёРґРµС‚ Рё РїРѕРґРЅРёРјРµС‚ СЂС‹С‡Р°Рі, С‡С‚РѕР±С‹ РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°, Р° СЌС‚Сѓ СЂР¶Р°РІСѓСЋ СЃС‚Р°СЂСѓСЋ СЂРµС€РµС‚РєСѓ РІРґСЂСѓРі Р·Р°РєР»РёРЅРёС‚.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //РќРёРєС‚Рѕ С‚РѕРіРґР° РЅРµ СЃРјРѕР¶РµС‚ Р·Р°РєСЂС‹С‚СЊ СЌС‚Рё РІРѕСЂРѕС‚Р°. РњРЅРµ РґР°Р¶Рµ РґСѓРјР°С‚СЊ РЅРµ С…РѕС‡РµС‚СЃСЏ, С‡С‚Рѕ РїСЂРѕРёР·РѕР№РґРµС‚ РґР°Р»СЊС€Рµ. РҐРѕСЂРѕС€Рѕ, С‡С‚Рѕ РЅРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РєР»СЋС‡.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Да я просто так спросил.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //В следующий раз думай, что спрашиваешь. У тебя могут быть большие проблемы из-за этого. Сам знаешь, какие сейчас времена. А теперь уходи. Я занят.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Р”Р° СЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃРїСЂРѕСЃРёР».
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Р’ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р· РґСѓРјР°Р№, С‡С‚Рѕ СЃРїСЂР°С€РёРІР°РµС€СЊ. РЈ С‚РµР±СЏ РјРѕРіСѓС‚ Р±С‹С‚СЊ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹ РёР·-Р·Р° СЌС‚РѕРіРѕ. РЎР°Рј Р·РЅР°РµС€СЊ, РєР°РєРёРµ СЃРµР№С‡Р°СЃ РІСЂРµРјРµРЅР°. Рђ С‚РµРїРµСЂСЊ СѓС…РѕРґРё. РЇ Р·Р°РЅСЏС‚.
 	AI_StopProcessInfos (self);
 };
 
@@ -109,7 +109,7 @@ INSTANCE DIA_Haupttorwache_PICKPOCKET (C_INFO)
 	condition	= DIA_Haupttorwache_PICKPOCKET_Condition;
 	information	= DIA_Haupttorwache_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ легче легкого)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р»РµРіС‡Рµ Р»РµРіРєРѕРіРѕ)";
 };                       
 
 FUNC INT DIA_Haupttorwache_PICKPOCKET_Condition()

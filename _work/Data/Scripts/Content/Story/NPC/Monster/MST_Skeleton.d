@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Skeleton(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Скелет";
+	name							=	"РЎРєРµР»РµС‚";
 	guild							=	GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETON;
 	level							=	30;
@@ -97,7 +97,7 @@ INSTANCE Skeleton			(Mst_Default_Skeleton)
 
 INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 {
-	name							=	"Вызванный скелет";
+	name							=	"Р’С‹Р·РІР°РЅРЅС‹Р№ СЃРєРµР»РµС‚";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -130,7 +130,7 @@ INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 	B_SetVisuals_Lesser_Skeleton();
 
 	EquipItem (self, ItMw_2H_Sword_M_01);
-	//EquipItem (self, ItRw_Sld_Bow); //FIXME Carsten: Bogen schieЯt beim Skelett in Zeitlupe...
+	//EquipItem (self, ItRw_Sld_Bow); //FIXME Carsten: Bogen schieРЇt beim Skelett in Zeitlupe...
 };
 
 //**************
@@ -139,7 +139,7 @@ INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton	(Mst_Default_Skeleton)
 {
-	name							=	"Малый скелет";
+	name							=	"РњР°Р»С‹Р№ СЃРєРµР»РµС‚";
 	
 	level							=	15;
 
@@ -177,7 +177,7 @@ INSTANCE Lesser_Skeleton	(Mst_Default_Skeleton)
 
 INSTANCE Crypt_Skeleton_Room_01			(Mst_Default_Skeleton)
 {
-	name							=	"Страж склепа";
+	name							=	"РЎС‚СЂР°Р¶ СЃРєР»РµРїР°";
 
 	aivar[AIV_EnemyOverride] = TRUE;
 
@@ -189,7 +189,7 @@ INSTANCE Crypt_Skeleton_Room_01			(Mst_Default_Skeleton)
 
 INSTANCE Crypt_Skeleton_Room_02			(Mst_Default_Skeleton)
 {
-	name							=	"Страж склепа";
+	name							=	"РЎС‚СЂР°Р¶ СЃРєР»РµРїР°";
 
 	aivar[AIV_EnemyOverride] = TRUE;
 	
@@ -201,7 +201,7 @@ INSTANCE Crypt_Skeleton_Room_02			(Mst_Default_Skeleton)
 
 INSTANCE Crypt_Skeleton_Room_03			(Mst_Default_Skeleton)
 {
-	name							=	"Страж склепа";
+	name							=	"РЎС‚СЂР°Р¶ СЃРєР»РµРїР°";
 
 	aivar[AIV_EnemyOverride] = TRUE;
 	

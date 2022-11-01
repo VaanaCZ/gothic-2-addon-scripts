@@ -1,7 +1,7 @@
 INSTANCE PIR_1371_Addon_Hank (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "’˝ÌÍ";
+	name 		= "–•—ç–Ω–∫";
 	guild 		= GIL_PIR;
 	id 			= 1371;
 	voice 		= 6;

@@ -76,7 +76,7 @@ FUNC INT DIA_Constantino_Hallo_Condition()
 FUNC VOID DIA_Constantino_Hallo_Info()
 {
 	//ADDON	AI_Output (self, other,"DIA_Constantino_Hallo_10_00"); //Was willst du? Hier gibt es nichts umsonst und ich werde dir auch nichts verkaufen.
-	AI_Output (self, other,"DIA_Addon_Constantino_Hallo_10_00"); //Что тебе нужно? Я не подаю милостыню.
+	AI_Output (self, other,"DIA_Addon_Constantino_Hallo_10_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РЇ РЅРµ РїРѕРґР°СЋ РјРёР»РѕСЃС‚С‹РЅСЋ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -89,7 +89,7 @@ INSTANCE DIA_Constantino_AboutLehrling (C_INFO)
 	condition   = DIA_Constantino_AboutLehrling_Condition;
 	information = DIA_Constantino_AboutLehrling_Info;
 	permanent   = FALSE;
-	description = "Я хочу поступить в ученики.";
+	description = "РЇ С…РѕС‡Сѓ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё.";
 };
 FUNC INT DIA_Constantino_AboutLehrling_Condition()
 {	
@@ -97,8 +97,8 @@ FUNC INT DIA_Constantino_AboutLehrling_Condition()
 };
 FUNC VOID DIA_Constantino_AboutLehrling_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_AboutLehrling_15_00"); //Я хочу поступить в ученики.
-	AI_Output (self, other,"DIA_Constantino_AboutLehrling_10_01"); //Правда? И чьим учеником ты хочешь стать?
+	AI_Output (other, self,"DIA_Constantino_AboutLehrling_15_00"); //РЇ С…РѕС‡Сѓ РїРѕСЃС‚СѓРїРёС‚СЊ РІ СѓС‡РµРЅРёРєРё.
+	AI_Output (self, other,"DIA_Constantino_AboutLehrling_10_01"); //РџСЂР°РІРґР°? Р С‡СЊРёРј СѓС‡РµРЅРёРєРѕРј С‚С‹ С…РѕС‡РµС€СЊ СЃС‚Р°С‚СЊ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ INSTANCE DIA_Constantino_Heilung   (C_INFO)
 	condition   = DIA_Constantino_Heilung_Condition;
 	information = DIA_Constantino_Heilung_Info;
 	permanent   = FALSE;
-	Description = "Мне нужно лечение.";
+	Description = "РњРЅРµ РЅСѓР¶РЅРѕ Р»РµС‡РµРЅРёРµ.";
 };
 FUNC INT DIA_Constantino_Heilung_Condition()
 {	
@@ -119,32 +119,32 @@ FUNC INT DIA_Constantino_Heilung_Condition()
 };
 FUNC VOID DIA_Constantino_Heilung_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_Heilung_15_00"); //Мне нужно лечение.
-	AI_Output (self, other,"DIA_Constantino_Heilung_10_01"); //(коротко) Зачем, ты ранен?
+	AI_Output (other, self,"DIA_Constantino_Heilung_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ Р»РµС‡РµРЅРёРµ.
+	AI_Output (self, other,"DIA_Constantino_Heilung_10_01"); //(РєРѕСЂРѕС‚РєРѕ) Р—Р°С‡РµРј, С‚С‹ СЂР°РЅРµРЅ?
 	
 	Info_ClearChoices (DIA_Constantino_Heilung);
-	Info_AddChoice 	  (DIA_Constantino_Heilung,"В общем-то, нет.",DIA_Constantino_Heilung_Nein);
-	Info_AddChoice 	  (DIA_Constantino_Heilung,"Да.",DIA_Constantino_Heilung_Ja);
+	Info_AddChoice 	  (DIA_Constantino_Heilung,"Р’ РѕР±С‰РµРј-С‚Рѕ, РЅРµС‚.",DIA_Constantino_Heilung_Nein);
+	Info_AddChoice 	  (DIA_Constantino_Heilung,"Р”Р°.",DIA_Constantino_Heilung_Ja);
 	
 };
 FUNC VOID DIA_Constantino_Heilung_Ja()
 {
-	AI_Output (other, self,"DIA_Constantino_Heilung_Ja_15_00"); //Да.
+	AI_Output (other, self,"DIA_Constantino_Heilung_Ja_15_00"); //Р”Р°.
 	
 	if (other.attribute[ATR_HITPOINTS] <  other.attribute[ATR_HITPOINTS_MAX])
 	{
-		AI_Output (self, other,"DIA_Constantino_Heilung_Ja_10_01"); //Тогда иди к Ватрасу, он подлечит тебя. И перестань капать кровью на мой пол!
+		AI_Output (self, other,"DIA_Constantino_Heilung_Ja_10_01"); //РўРѕРіРґР° РёРґРё Рє Р’Р°С‚СЂР°СЃСѓ, РѕРЅ РїРѕРґР»РµС‡РёС‚ С‚РµР±СЏ. Р РїРµСЂРµСЃС‚Р°РЅСЊ РєР°РїР°С‚СЊ РєСЂРѕРІСЊСЋ РЅР° РјРѕР№ РїРѕР»!
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Constantino_Heilung_Ja_10_02"); //У тебя всего лишь пустяковая царапина, а у меня есть дела поважнее, чем болтать с тобой.
+		AI_Output (self, other,"DIA_Constantino_Heilung_Ja_10_02"); //РЈ С‚РµР±СЏ РІСЃРµРіРѕ Р»РёС€СЊ РїСѓСЃС‚СЏРєРѕРІР°СЏ С†Р°СЂР°РїРёРЅР°, Р° Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґРµР»Р° РїРѕРІР°Р¶РЅРµРµ, С‡РµРј Р±РѕР»С‚Р°С‚СЊ СЃ С‚РѕР±РѕР№.
 	};
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Constantino_Heilung_Nein()
 {
-	AI_Output (other, self,"DIA_Constantino_Heilung_Nein_15_00"); //В общем-то, нет.
-	AI_Output (self, other,"DIA_Constantino_Heilung_Nein_10_01"); //Тогда проваливай, а то тебе действительно понадобится медицинская помощь.
+	AI_Output (other, self,"DIA_Constantino_Heilung_Nein_15_00"); //Р’ РѕР±С‰РµРј-С‚Рѕ, РЅРµС‚.
+	AI_Output (self, other,"DIA_Constantino_Heilung_Nein_10_01"); //РўРѕРіРґР° РїСЂРѕРІР°Р»РёРІР°Р№, Р° С‚Рѕ С‚РµР±Рµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РјРµРґРёС†РёРЅСЃРєР°СЏ РїРѕРјРѕС‰СЊ.
 	
 	AI_StopProcessInfos (self);
 };
@@ -159,7 +159,7 @@ instance DIA_Addon_Constantino_LestersKraeuter		(C_INFO)
 	condition	 = 	DIA_Addon_Constantino_LestersKraeuter_Condition;
 	information	 = 	DIA_Addon_Constantino_LestersKraeuter_Info;
 
-	description	 = 	"Ты покупаешь травы?";
+	description	 = 	"РўС‹ РїРѕРєСѓРїР°РµС€СЊ С‚СЂР°РІС‹?";
 };
 
 func int DIA_Addon_Constantino_LestersKraeuter_Condition ()
@@ -173,8 +173,8 @@ func int DIA_Addon_Constantino_LestersKraeuter_Condition ()
 
 func void DIA_Addon_Constantino_LestersKraeuter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Constantino_LestersKraeuter_15_00"); //Ты покупаешь травы?
-	AI_Output	(self, other, "DIA_Addon_Constantino_LestersKraeuter_10_01"); //Ну, если тебе есть, что предложить...
+	AI_Output	(other, self, "DIA_Addon_Constantino_LestersKraeuter_15_00"); //РўС‹ РїРѕРєСѓРїР°РµС€СЊ С‚СЂР°РІС‹?
+	AI_Output	(self, other, "DIA_Addon_Constantino_LestersKraeuter_10_01"); //РќСѓ, РµСЃР»Рё С‚РµР±Рµ РµСЃС‚СЊ, С‡С‚Рѕ РїСЂРµРґР»РѕР¶РёС‚СЊ...
 	B_GivePlayerXP (XP_Ambient);	
 };
 
@@ -188,7 +188,7 @@ INSTANCE DIA_Constantino_Trade   (C_INFO)
 	condition   = DIA_Constantino_Trade_Condition;
 	information = DIA_Constantino_Trade_Info;
 	permanent   = TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		= TRUE;
 };
 FUNC INT DIA_Constantino_Trade_Condition()
@@ -198,12 +198,12 @@ FUNC INT DIA_Constantino_Trade_Condition()
 FUNC VOID DIA_Constantino_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self,"DIA_Constantino_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self,"DIA_Constantino_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	if ( Constantino_Logpatch1 == FALSE)
 	{
 		Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-		B_LogEntry (Topic_CityTrader,"Константино продает алхимические товары."); 
+		B_LogEntry (Topic_CityTrader,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РїСЂРѕРґР°РµС‚ Р°Р»С…РёРјРёС‡РµСЃРєРёРµ С‚РѕРІР°СЂС‹."); 
 		
 		Constantino_Logpatch1 = TRUE;
 	};
@@ -219,7 +219,7 @@ instance DIA_Constantino_BeiDir (C_INFO)
 	condition   = DIA_Constantino_BeiDir_Condition;
 	information = DIA_Constantino_BeiDir_Info;
 	permanent   = FALSE;
-	description = "Я хочу стать твоим учеником.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј.";
 };
 FUNC INT DIA_Constantino_BeiDir_Condition()
 {	
@@ -231,10 +231,10 @@ FUNC INT DIA_Constantino_BeiDir_Condition()
 };
 FUNC VOID DIA_Constantino_BeiDir_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_BeiDir_15_00"); //Я хочу стать твоим учеником.
-	AI_Output (self, other,"DIA_Constantino_BeiDir_10_01"); //МОИМ? Нет! Я уже как-то имел сомнительное удовольствие взять ученика. С меня достаточно.
-	AI_Output (self, other,"DIA_Constantino_BeiDir_10_02"); //Я потратил несколько лет на его обучение, а потом этот идиот взял и отравился.
-	AI_Output (self, other,"DIA_Constantino_BeiDir_10_03"); //Иди лучше попросись в ученики к другому мастеру!
+	AI_Output (other, self,"DIA_Constantino_BeiDir_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј.
+	AI_Output (self, other,"DIA_Constantino_BeiDir_10_01"); //РњРћРРњ? РќРµС‚! РЇ СѓР¶Рµ РєР°Рє-С‚Рѕ РёРјРµР» СЃРѕРјРЅРёС‚РµР»СЊРЅРѕРµ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµ РІР·СЏС‚СЊ СѓС‡РµРЅРёРєР°. РЎ РјРµРЅСЏ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+	AI_Output (self, other,"DIA_Constantino_BeiDir_10_02"); //РЇ РїРѕС‚СЂР°С‚РёР» РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ РЅР° РµРіРѕ РѕР±СѓС‡РµРЅРёРµ, Р° РїРѕС‚РѕРј СЌС‚РѕС‚ РёРґРёРѕС‚ РІР·СЏР» Рё РѕС‚СЂР°РІРёР»СЃСЏ.
+	AI_Output (self, other,"DIA_Constantino_BeiDir_10_03"); //РРґРё Р»СѓС‡С€Рµ РїРѕРїСЂРѕСЃРёСЃСЊ РІ СѓС‡РµРЅРёРєРё Рє РґСЂСѓРіРѕРјСѓ РјР°СЃС‚РµСЂСѓ!
 };
 
 // *******************************************************
@@ -247,7 +247,7 @@ instance DIA_Constantino_ZUSTIMMUNG (C_INFO)
 	condition   = DIA_Constantino_ZUSTIMMUNG_Condition;
 	information = DIA_Constantino_ZUSTIMMUNG_Info;
 	permanent   = TRUE;
-	description = "Я хочу стать учеником одного из других мастеров.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РґСЂСѓРіРёС… РјР°СЃС‚РµСЂРѕРІ.";
 };
 FUNC INT DIA_Constantino_ZUSTIMMUNG_Condition()
 {	
@@ -259,18 +259,18 @@ FUNC INT DIA_Constantino_ZUSTIMMUNG_Condition()
 };
 FUNC VOID DIA_Constantino_ZUSTIMMUNG_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_ZUSTIMMUNG_15_00"); //Я хочу стать учеником одного из других мастеров.
-	AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_01"); //Ты пришел получить мое одобрение?
+	AI_Output (other, self,"DIA_Constantino_ZUSTIMMUNG_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РѕРґРЅРѕРіРѕ РёР· РґСЂСѓРіРёС… РјР°СЃС‚РµСЂРѕРІ.
+	AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_01"); //РўС‹ РїСЂРёС€РµР» РїРѕР»СѓС‡РёС‚СЊ РјРѕРµ РѕРґРѕР±СЂРµРЅРёРµ?
 	if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 	{
-		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_02"); //Хм - что касается моего мнения, ты можешь стать учеником любого мастера.
+		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_02"); //РҐРј - С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РјРѕРµРіРѕ РјРЅРµРЅРёСЏ, С‚С‹ РјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј Р»СЋР±РѕРіРѕ РјР°СЃС‚РµСЂР°.
 		
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_03"); //Ты его не получишь! То, что я слышал о тебе, говорит не в твою пользу.
-		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_04"); //Я не проголосую за то, чтобы преступник вроде тебя занял уважаемое положение в этом городе.
-		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_05"); //Пока ты не уладишь этот вопрос с командующим городской стражей, мой ответ будет - нет!
+		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_03"); //РўС‹ РµРіРѕ РЅРµ РїРѕР»СѓС‡РёС€СЊ! РўРѕ, С‡С‚Рѕ СЏ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ, РіРѕРІРѕСЂРёС‚ РЅРµ РІ С‚РІРѕСЋ РїРѕР»СЊР·Сѓ.
+		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_04"); //РЇ РЅРµ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ РїСЂРµСЃС‚СѓРїРЅРёРє РІСЂРѕРґРµ С‚РµР±СЏ Р·Р°РЅСЏР» СѓРІР°Р¶Р°РµРјРѕРµ РїРѕР»РѕР¶РµРЅРёРµ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ.
+		AI_Output (self, other,"DIA_Constantino_ZUSTIMMUNG_10_05"); //РџРѕРєР° С‚С‹ РЅРµ СѓР»Р°РґРёС€СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶РµР№, РјРѕР№ РѕС‚РІРµС‚ Р±СѓРґРµС‚ - РЅРµС‚!
 		
 	};
 	
@@ -279,7 +279,7 @@ FUNC VOID DIA_Constantino_ZUSTIMMUNG_Info()
 	 
 	 Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	 Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	 B_LogEntry (TOPIC_Lehrling,"Константино даст мне свое одобрение, если я не обвиняюсь ни в одном преступлении в городе.");	
+	 B_LogEntry (TOPIC_Lehrling,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РґР°СЃС‚ РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ, РµСЃР»Рё СЏ РЅРµ РѕР±РІРёРЅСЏСЋСЃСЊ РЅРё РІ РѕРґРЅРѕРј РїСЂРµСЃС‚СѓРїР»РµРЅРёРё РІ РіРѕСЂРѕРґРµ.");	
 	
 	 Constantino_Logpatch2 = TRUE;
 	  	
@@ -287,7 +287,7 @@ FUNC VOID DIA_Constantino_ZUSTIMMUNG_Info()
 };
 
 // *******************************************************
-//						Was muЯ ich tun?		//e3
+//						Was muРЇ ich tun?		//e3
 // *******************************************************
 instance DIA_Constantino_BringHerbs (C_INFO)
 {
@@ -296,7 +296,7 @@ instance DIA_Constantino_BringHerbs (C_INFO)
 	condition   = DIA_Constantino_BringHerbs_Condition;
 	information = DIA_Constantino_BringHerbs_Info;
 	permanent   = FALSE;
-	description = "Что мне нужно сделать, чтобы стать ТВОИМ учеником?";
+	description = "Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РўР’РћРРњ СѓС‡РµРЅРёРєРѕРј?";
 };
 FUNC INT DIA_Constantino_BringHerbs_Condition()
 {	
@@ -308,18 +308,18 @@ FUNC INT DIA_Constantino_BringHerbs_Condition()
 };
 FUNC VOID DIA_Constantino_BringHerbs_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_BringHerbs_15_00"); //Что мне нужно сделать, чтобы стать ТВОИМ учеником?
-	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_01"); //(вздыхает) Я не вынесу, если ЕЩЕ ОДИН дилетант окажется на моей совести.
-	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_02"); //В алхимии используется множество трав. В различных комбинациях они дают самые различные эффекты.
-	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_03"); //Вероятно, о половине этих трав ты даже не слышал.
-	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_04"); //(вздыхает) Вот - это список самых важных растений.
+	AI_Output (other, self,"DIA_Constantino_BringHerbs_15_00"); //Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЃС‚Р°С‚СЊ РўР’РћРРњ СѓС‡РµРЅРёРєРѕРј?
+	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_01"); //(РІР·РґС‹С…Р°РµС‚) РЇ РЅРµ РІС‹РЅРµСЃСѓ, РµСЃР»Рё Р•Р©Р• РћР”РРќ РґРёР»РµС‚Р°РЅС‚ РѕРєР°Р¶РµС‚СЃСЏ РЅР° РјРѕРµР№ СЃРѕРІРµСЃС‚Рё.
+	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_02"); //Р’ Р°Р»С…РёРјРёРё РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ РјРЅРѕР¶РµСЃС‚РІРѕ С‚СЂР°РІ. Р’ СЂР°Р·Р»РёС‡РЅС‹С… РєРѕРјР±РёРЅР°С†РёСЏС… РѕРЅРё РґР°СЋС‚ СЃР°РјС‹Рµ СЂР°Р·Р»РёС‡РЅС‹Рµ СЌС„С„РµРєС‚С‹.
+	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_03"); //Р’РµСЂРѕСЏС‚РЅРѕ, Рѕ РїРѕР»РѕРІРёРЅРµ СЌС‚РёС… С‚СЂР°РІ С‚С‹ РґР°Р¶Рµ РЅРµ СЃР»С‹С€Р°Р».
+	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_04"); //(РІР·РґС‹С…Р°РµС‚) Р’РѕС‚ - СЌС‚Рѕ СЃРїРёСЃРѕРє СЃР°РјС‹С… РІР°Р¶РЅС‹С… СЂР°СЃС‚РµРЅРёР№.
 	B_GiveInvItems (self, other, ItWr_Kraeuterliste, 1);
-	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_05"); //Принеси мне одно растение каждого вида, и, возможно, я переменю свое мнение насчет ученика.
+	AI_Output (self, other,"DIA_Constantino_BringHerbs_10_05"); //РџСЂРёРЅРµСЃРё РјРЅРµ РѕРґРЅРѕ СЂР°СЃС‚РµРЅРёРµ РєР°Р¶РґРѕРіРѕ РІРёРґР°, Рё, РІРѕР·РјРѕР¶РЅРѕ, СЏ РїРµСЂРµРјРµРЅСЋ СЃРІРѕРµ РјРЅРµРЅРёРµ РЅР°СЃС‡РµС‚ СѓС‡РµРЅРёРєР°.
 	
 	MIS_Constantino_BringHerbs = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_ConstantinoPlants,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_ConstantinoPlants,LOG_RUNNING);
-	B_LogEntry (TOPIC_ConstantinoPlants,"Константино хочет получить по одному экземпляру каждого растения, иначе он не примет меня в ученики.");
+	B_LogEntry (TOPIC_ConstantinoPlants,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ С…РѕС‡РµС‚ РїРѕР»СѓС‡РёС‚СЊ РїРѕ РѕРґРЅРѕРјСѓ СЌРєР·РµРјРїР»СЏСЂСѓ РєР°Р¶РґРѕРіРѕ СЂР°СЃС‚РµРЅРёСЏ, РёРЅР°С‡Рµ РѕРЅ РЅРµ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё.");
 	
 };
 
@@ -333,7 +333,7 @@ instance DIA_Constantino_HerbsRunning (C_INFO)
 	condition   = DIA_Constantino_HerbsRunning_Condition;
 	information = DIA_Constantino_HerbsRunning_Info;
 	permanent   = TRUE;
-	description = "Насчет растений...";
+	description = "РќР°СЃС‡РµС‚ СЂР°СЃС‚РµРЅРёР№...";
 };
 FUNC INT DIA_Constantino_HerbsRunning_Condition()
 {	
@@ -344,11 +344,11 @@ FUNC INT DIA_Constantino_HerbsRunning_Condition()
 };
 FUNC VOID DIA_Constantino_HerbsRunning_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_HerbsRunning_15_00"); //Насчет растений...
-	AI_Output (self, other,"DIA_Constantino_HerbsRunning_10_01"); //Если ты не можешь выполнить это задание самостоятельно, из тебя не получится хорошего алхимика!
+	AI_Output (other, self,"DIA_Constantino_HerbsRunning_15_00"); //РќР°СЃС‡РµС‚ СЂР°СЃС‚РµРЅРёР№...
+	AI_Output (self, other,"DIA_Constantino_HerbsRunning_10_01"); //Р•СЃР»Рё С‚С‹ РЅРµ РјРѕР¶РµС€СЊ РІС‹РїРѕР»РЅРёС‚СЊ СЌС‚Рѕ Р·Р°РґР°РЅРёРµ СЃР°РјРѕСЃС‚РѕСЏС‚РµР»СЊРЅРѕ, РёР· С‚РµР±СЏ РЅРµ РїРѕР»СѓС‡РёС‚СЃСЏ С…РѕСЂРѕС€РµРіРѕ Р°Р»С…РёРјРёРєР°!
 	
 	Info_ClearChoices (DIA_Constantino_HerbsRunning);
-	Info_AddChoice (DIA_Constantino_HerbsRunning, "Понимаю.", DIA_Constantino_HerbsRunning_Running);
+	Info_AddChoice (DIA_Constantino_HerbsRunning, "РџРѕРЅРёРјР°СЋ.", DIA_Constantino_HerbsRunning_Running);
 	if (Npc_HasItems (other, ItPl_Mana_Herb_01) > 0)
 	&& (Npc_HasItems (other, ItPl_Mana_Herb_02) > 0)
 	&& (Npc_HasItems (other, ItPl_Mana_Herb_03) > 0)
@@ -361,17 +361,17 @@ FUNC VOID DIA_Constantino_HerbsRunning_Info()
 	&& (Npc_HasItems (other, ItPl_Temp_Herb) > 0)
 	&& (Npc_HasItems (other, ItPl_Perm_Herb) > 0)
 	{
-		Info_AddChoice (DIA_Constantino_HerbsRunning, "Я принес все растения, что ты просил!", DIA_Constantino_HerbsRunning_Success);
+		Info_AddChoice (DIA_Constantino_HerbsRunning, "РЇ РїСЂРёРЅРµСЃ РІСЃРµ СЂР°СЃС‚РµРЅРёСЏ, С‡С‚Рѕ С‚С‹ РїСЂРѕСЃРёР»!", DIA_Constantino_HerbsRunning_Success);
 	};
 };
 
 func void DIA_Constantino_HerbsRunning_Success()
 {
-	AI_Output (other, self,"DIA_Constantino_HerbsRunning_Success_15_00"); //Я принес все растения, что ты просил!
-	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_01"); //Что? Ты пытаешься обмануть меня, да?
+	AI_Output (other, self,"DIA_Constantino_HerbsRunning_Success_15_00"); //РЇ РїСЂРёРЅРµСЃ РІСЃРµ СЂР°СЃС‚РµРЅРёСЏ, С‡С‚Рѕ С‚С‹ РїСЂРѕСЃРёР»!
+	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_01"); //Р§С‚Рѕ? РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ, РґР°?
 
-	//11 Gegenstдnde gegeben (Pflanzen) HACK fьr Screen ADDON
-	AI_PrintScreen ("11 Gegenstдnde gegeben (Pflanzen)", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
+	//11 GegenstРґnde gegeben (Pflanzen) HACK fСЊr Screen ADDON
+	AI_PrintScreen ("11 GegenstРґnde gegeben (Pflanzen)", -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 	
 	Npc_RemoveInvItems (other, ItPl_Mana_Herb_01,1);
 	Npc_RemoveInvItems (other, ItPl_Mana_Herb_02,1);
@@ -397,8 +397,8 @@ func void DIA_Constantino_HerbsRunning_Success()
 	CreateInvItems (self, ItPl_Temp_Herb,1);
 	CreateInvItems (self, ItPl_Perm_Herb,1);
 	
-	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_02"); //Клянусь Аданосом! Они все здесь, у меня перед глазами!
-	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_03"); //Кто знает, может, когда-нибудь из тебя действительно получится приличный алхимик.
+	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_02"); //РљР»СЏРЅСѓСЃСЊ РђРґР°РЅРѕСЃРѕРј! РћРЅРё РІСЃРµ Р·РґРµСЃСЊ, Сѓ РјРµРЅСЏ РїРµСЂРµРґ РіР»Р°Р·Р°РјРё!
+	AI_Output (self, other,"DIA_Constantino_HerbsRunning_Success_10_03"); //РљС‚Рѕ Р·РЅР°РµС‚, РјРѕР¶РµС‚, РєРѕРіРґР°-РЅРёР±СѓРґСЊ РёР· С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕР»СѓС‡РёС‚СЃСЏ РїСЂРёР»РёС‡РЅС‹Р№ Р°Р»С…РёРјРёРє.
 	
 	
 	MIS_Constantino_BringHerbs = LOG_SUCCESS;
@@ -406,14 +406,14 @@ func void DIA_Constantino_HerbsRunning_Success()
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (Topic_Lehrling,"Константино примет меня в ученики, если другие мастера будут не против.");
+	B_LogEntry (Topic_Lehrling,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё, РµСЃР»Рё РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° Р±СѓРґСѓС‚ РЅРµ РїСЂРѕС‚РёРІ.");
 	
 	Info_ClearChoices (DIA_Constantino_HerbsRunning);
 };
 
 func void DIA_Constantino_HerbsRunning_Running()
 {
-	AI_Output (other, self,"DIA_Constantino_HerbsRunning_Running_15_00"); //Понимаю.
+	AI_Output (other, self,"DIA_Constantino_HerbsRunning_Running_15_00"); //РџРѕРЅРёРјР°СЋ.
 	Info_ClearChoices (DIA_Constantino_HerbsRunning);
 };
 
@@ -431,7 +431,7 @@ instance DIA_Constantino_LEHRLING (C_INFO)
 	condition   = DIA_Constantino_LEHRLING_Condition;
 	information = DIA_Constantino_LEHRLING_Info;
 	permanent   = TRUE;
-	description = "Могу я теперь стать твоим учеником?";
+	description = "РњРѕРіСѓ СЏ С‚РµРїРµСЂСЊ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј?";
 };
 FUNC INT DIA_Constantino_LEHRLING_Condition()
 {	
@@ -446,73 +446,73 @@ FUNC VOID DIA_Constantino_LEHRLING_Info()
 	var int stimmen;
 	stimmen = 0;
 	
-	AI_Output (other, self,"DIA_Constantino_LEHRLING_15_00"); //Могу я теперь стать твоим учеником?
+	AI_Output (other, self,"DIA_Constantino_LEHRLING_15_00"); //РњРѕРіСѓ СЏ С‚РµРїРµСЂСЊ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј?
 	
 	if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 	{
 		// ------ Constantino ------
-		AI_Output (self, other,"DIA_Constantino_LEHRLING_10_01"); //Что касается моего мнения - да.
+		AI_Output (self, other,"DIA_Constantino_LEHRLING_10_01"); //Р§С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РјРѕРµРіРѕ РјРЅРµРЅРёСЏ - РґР°.
 		stimmen = stimmen + 1;
 		
 		// ------ Harad ------
 		if (Harad.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_02"); //Гараду важно только, чтобы ты был способен защищать город в случае нападения орков.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_02"); //Р“Р°СЂР°РґСѓ РІР°Р¶РЅРѕ С‚РѕР»СЊРєРѕ, С‡С‚РѕР±С‹ С‚С‹ Р±С‹Р» СЃРїРѕСЃРѕР±РµРЅ Р·Р°С‰РёС‰Р°С‚СЊ РіРѕСЂРѕРґ РІ СЃР»СѓС‡Р°Рµ РЅР°РїР°РґРµРЅРёСЏ РѕСЂРєРѕРІ.
 			if (MIS_Harad_Orc == LOG_SUCCESS)
 			|| (MIS_HakonBandits == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_03"); //И, похоже, ты смог убедить его в этом.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_03"); //Р, РїРѕС…РѕР¶Рµ, С‚С‹ СЃРјРѕРі СѓР±РµРґРёС‚СЊ РµРіРѕ РІ СЌС‚РѕРј.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_04"); //Но он считает, что ты трус.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_04"); //РќРѕ РѕРЅ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ С‚С‹ С‚СЂСѓСЃ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_05"); //Но Гарад утверждает, что никогда тебя не видел.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_05"); //РќРѕ Р“Р°СЂР°Рґ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° С‚РµР±СЏ РЅРµ РІРёРґРµР».
 		};
 		
 		// ------ Bosper ------
 		if (Bosper.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_06"); //Боспер очень неохотно отзывался о твоих способностях.
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_07"); //Я полагаю, что он хотел бы взять тебя в ученики сам.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_06"); //Р‘РѕСЃРїРµСЂ РѕС‡РµРЅСЊ РЅРµРѕС…РѕС‚РЅРѕ РѕС‚Р·С‹РІР°Р»СЃСЏ Рѕ С‚РІРѕРёС… СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЏС….
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_07"); //РЇ РїРѕР»Р°РіР°СЋ, С‡С‚Рѕ РѕРЅ С…РѕС‚РµР» Р±С‹ РІР·СЏС‚СЊ С‚РµР±СЏ РІ СѓС‡РµРЅРёРєРё СЃР°Рј.
 			if (MIS_Bosper_Bogen == LOG_SUCCESS)
 			|| (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_08"); //Но все же, в конце концов, он согласился.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_08"); //РќРѕ РІСЃРµ Р¶Рµ, РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РѕРЅ СЃРѕРіР»Р°СЃРёР»СЃСЏ.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_09"); //Отказывать кому-либо в одобрении по этой причине, определенно, недостойно настоящего мастера!
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_10"); //Но если все другие мастера согласятся, тебе не понадобится его голос.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_09"); //РћС‚РєР°Р·С‹РІР°С‚СЊ РєРѕРјСѓ-Р»РёР±Рѕ РІ РѕРґРѕР±СЂРµРЅРёРё РїРѕ СЌС‚РѕР№ РїСЂРёС‡РёРЅРµ, РѕРїСЂРµРґРµР»РµРЅРЅРѕ, РЅРµРґРѕСЃС‚РѕР№РЅРѕ РЅР°СЃС‚РѕСЏС‰РµРіРѕ РјР°СЃС‚РµСЂР°!
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_10"); //РќРѕ РµСЃР»Рё РІСЃРµ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° СЃРѕРіР»Р°СЃСЏС‚СЃСЏ, С‚РµР±Рµ РЅРµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РµРіРѕ РіРѕР»РѕСЃ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_11"); //И Боспер пока тебя не видел.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_11"); //Р Р‘РѕСЃРїРµСЂ РїРѕРєР° С‚РµР±СЏ РЅРµ РІРёРґРµР».
 		};
 		
 		// ------ Thorben ------
 		if (Thorben.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_12"); //Торбен - очень религиозный человек.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_12"); //РўРѕСЂР±РµРЅ - РѕС‡РµРЅСЊ СЂРµР»РёРіРёРѕР·РЅС‹Р№ С‡РµР»РѕРІРµРє.
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_13"); //Он дал тебе свое благословение. Это хороший знак.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_13"); //РћРЅ РґР°Р» С‚РµР±Рµ СЃРІРѕРµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ. Р­С‚Рѕ С…РѕСЂРѕС€РёР№ Р·РЅР°Рє.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_14"); //Он даст свое одобрение только с благословения богов.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_14"); //РћРЅ РґР°СЃС‚ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ С‚РѕР»СЊРєРѕ СЃ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёСЏ Р±РѕРіРѕРІ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_15"); //Торбен не знает, кто ты такой.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_15"); //РўРѕСЂР±РµРЅ РЅРµ Р·РЅР°РµС‚, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№.
 		};
 				
 		// ------ Matteo ------
@@ -520,21 +520,21 @@ FUNC VOID DIA_Constantino_LEHRLING_Info()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_16"); //Что касается Маттео - он расхваливает тебя на каждом углу.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_16"); //Р§С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РњР°С‚С‚РµРѕ - РѕРЅ СЂР°СЃС…РІР°Р»РёРІР°РµС‚ С‚РµР±СЏ РЅР° РєР°Р¶РґРѕРј СѓРіР»Сѓ.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_17"); //Маттео говорит, что ты что-то должен ему. Если ты хочешь получить его голос, тебе лучше решить с ним эту мелкую проблему.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_17"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ С‡С‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ РµРјСѓ. Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РµРіРѕ РіРѕР»РѕСЃ, С‚РµР±Рµ Р»СѓС‡С€Рµ СЂРµС€РёС‚СЊ СЃ РЅРёРј СЌС‚Сѓ РјРµР»РєСѓСЋ РїСЂРѕР±Р»РµРјСѓ.
 			}
 			else	
 			{	
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_18"); //Маттео говорит, что еще не разговаривал с тобой по этому поводу.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_18"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РµС‰Рµ РЅРµ СЂР°Р·РіРѕРІР°СЂРёРІР°Р» СЃ С‚РѕР±РѕР№ РїРѕ СЌС‚РѕРјСѓ РїРѕРІРѕРґСѓ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_19"); //Маттео говорит, что никогда не видел тебя в своей лавке.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_19"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С‚РµР±СЏ РІ СЃРІРѕРµР№ Р»Р°РІРєРµ.
 		};		
 
 		// ------ AUSWERTUNG ------
@@ -542,37 +542,37 @@ FUNC VOID DIA_Constantino_LEHRLING_Info()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_20"); //Это означает, что ты получил одобрение всех мастеров!
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_20"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёР» РѕРґРѕР±СЂРµРЅРёРµ РІСЃРµС… РјР°СЃС‚РµСЂРѕРІ!
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_21"); //Теперь у тебя есть одобрение четырех мастеров. Этого достаточно, чтобы быть принятым в ученики.
+				AI_Output (self, other,"DIA_Constantino_LEHRLING_10_21"); //РўРµРїРµСЂСЊ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ С‡РµС‚С‹СЂРµС… РјР°СЃС‚РµСЂРѕРІ. Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ СѓС‡РµРЅРёРєРё.
 			};
 			
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_22"); //Ты готов приступить к обучению у меня?
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_22"); //РўС‹ РіРѕС‚РѕРІ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє РѕР±СѓС‡РµРЅРёСЋ Сѓ РјРµРЅСЏ?
 			
 			Info_ClearChoices (DIA_Constantino_LEHRLING);
-			Info_AddChoice (DIA_Constantino_LEHRLING, "Мне нужно сначала подумать.", DIA_Constantino_LEHRLING_Later);
-			Info_AddChoice (DIA_Constantino_LEHRLING, "Да, мастер.", DIA_Constantino_LEHRLING_Yes);
+			Info_AddChoice (DIA_Constantino_LEHRLING, "РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°С‡Р°Р»Р° РїРѕРґСѓРјР°С‚СЊ.", DIA_Constantino_LEHRLING_Later);
+			Info_AddChoice (DIA_Constantino_LEHRLING, "Р”Р°, РјР°СЃС‚РµСЂ.", DIA_Constantino_LEHRLING_Yes);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_23"); //Чтобы стать учеником в нижней части города, тебе нужно получить одобрение, по крайней мере, четырех мастеров.
-			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_24"); //Это означает, что ты должен поговорить со всеми, кто еще не отдал за тебя свой голос.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_23"); //Р§С‚РѕР±С‹ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°, С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‡РµС‚С‹СЂРµС… РјР°СЃС‚РµСЂРѕРІ.
+			AI_Output (self, other,"DIA_Constantino_LEHRLING_10_24"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РІСЃРµРјРё, РєС‚Рѕ РµС‰Рµ РЅРµ РѕС‚РґР°Р» Р·Р° С‚РµР±СЏ СЃРІРѕР№ РіРѕР»РѕСЃ.
 		};
 	}
 	else //CITY CRIME > 0
 	{
-		AI_Output (self, other,"DIA_Constantino_LEHRLING_10_25"); //(сердито) Ни за что! До меня дошли слухи, что ты обвиняешься в преступлении здесь, в Хоринисе!
-		AI_Output (self, other,"DIA_Constantino_LEHRLING_10_26"); //Я не возьму тебя в ученики, пока ты не уладишь этот вопрос с командующим городской стражи.
+		AI_Output (self, other,"DIA_Constantino_LEHRLING_10_25"); //(СЃРµСЂРґРёС‚Рѕ) РќРё Р·Р° С‡С‚Рѕ! Р”Рѕ РјРµРЅСЏ РґРѕС€Р»Рё СЃР»СѓС…Рё, С‡С‚Рѕ С‚С‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ РІ РїСЂРµСЃС‚СѓРїР»РµРЅРёРё Р·РґРµСЃСЊ, РІ РҐРѕСЂРёРЅРёСЃРµ!
+		AI_Output (self, other,"DIA_Constantino_LEHRLING_10_26"); //РЇ РЅРµ РІРѕР·СЊРјСѓ С‚РµР±СЏ РІ СѓС‡РµРЅРёРєРё, РїРѕРєР° С‚С‹ РЅРµ СѓР»Р°РґРёС€СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рё.
 	};
 };
 
 func void DIA_Constantino_LEHRLING_Yes()
 {
-	AI_Output (other, self,"DIA_Constantino_LEHRLING_Yes_15_00"); //Да, мастер.
-	AI_Output (self, other,"DIA_Constantino_LEHRLING_Yes_10_01"); //(вздыхает) Хорошо! Надеюсь, я не пожалею об этом решении.
-	AI_Output (self, other,"DIA_Constantino_LEHRLING_Yes_10_02"); //С этого момента, ты можешь считать себя моим учеником.
+	AI_Output (other, self,"DIA_Constantino_LEHRLING_Yes_15_00"); //Р”Р°, РјР°СЃС‚РµСЂ.
+	AI_Output (self, other,"DIA_Constantino_LEHRLING_Yes_10_01"); //(РІР·РґС‹С…Р°РµС‚) РҐРѕСЂРѕС€Рѕ! РќР°РґРµСЋСЃСЊ, СЏ РЅРµ РїРѕР¶Р°Р»РµСЋ РѕР± СЌС‚РѕРј СЂРµС€РµРЅРёРё.
+	AI_Output (self, other,"DIA_Constantino_LEHRLING_Yes_10_02"); //РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р°, С‚С‹ РјРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ СЃРµР±СЏ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј.
 	Player_IsApprentice = APP_Constantino;
 	Npc_ExchangeRoutine (Lothar, "START");
 	
@@ -583,15 +583,15 @@ func void DIA_Constantino_LEHRLING_Yes()
 	
 	MIS_Apprentice = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_Bonus,"Константино принял меня в ученики. Теперь я смогу попасть в верхний квартал.");
+	B_LogEntry (Topic_Bonus,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РїСЂРёРЅСЏР» РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё. РўРµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».");
 
 	Info_ClearChoices (DIA_Constantino_LEHRLING);
 };
 
 func void DIA_Constantino_LEHRLING_Later()
 {
-	AI_Output (other, self,"DIA_Constantino_LEHRLING_Later_15_00"); //Мне нужно сначала подумать.
-	AI_Output (self, other,"DIA_Constantino_LEHRLING_Later_10_01"); //Хорошо! Если ты не сможешь отдать этому делу свое сердце, тебе лучше выбрать другую профессию.
+	AI_Output (other, self,"DIA_Constantino_LEHRLING_Later_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°С‡Р°Р»Р° РїРѕРґСѓРјР°С‚СЊ.
+	AI_Output (self, other,"DIA_Constantino_LEHRLING_Later_10_01"); //РҐРѕСЂРѕС€Рѕ! Р•СЃР»Рё С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РѕС‚РґР°С‚СЊ СЌС‚РѕРјСѓ РґРµР»Сѓ СЃРІРѕРµ СЃРµСЂРґС†Рµ, С‚РµР±Рµ Р»СѓС‡С€Рµ РІС‹Р±СЂР°С‚СЊ РґСЂСѓРіСѓСЋ РїСЂРѕС„РµСЃСЃРёСЋ.
 	
 	Info_ClearChoices (DIA_Constantino_LEHRLING);
 };
@@ -625,8 +625,8 @@ FUNC VOID DIA_Constantino_AlsLehrling_Info()
 {
 	if (B_GetGreatestPetzCrime (self) > CRIME_NONE)
 	{
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_00"); //(сердито) Я отказываюсь обучать тебя, пока ты обвиняешься в преступлении в городе.
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_01"); //Или к лорду Андрэ и уладь этот вопрос с ним.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_00"); //(СЃРµСЂРґРёС‚Рѕ) РЇ РѕС‚РєР°Р·С‹РІР°СЋСЃСЊ РѕР±СѓС‡Р°С‚СЊ С‚РµР±СЏ, РїРѕРєР° С‚С‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ РІ РїСЂРµСЃС‚СѓРїР»РµРЅРёРё РІ РіРѕСЂРѕРґРµ.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_01"); //РР»Рё Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ Рё СѓР»Р°РґСЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ СЃ РЅРёРј.
 		Constantino_Lehrling_Day = Wld_GetDay();
 		AI_StopProcessInfos(self);
 	}
@@ -635,10 +635,10 @@ FUNC VOID DIA_Constantino_AlsLehrling_Info()
 	&& (Constantino_StartGuild != GIL_MIL)
 	&& (Constantino_MILKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_02"); //Так ты поступил в ополчение? Я уже слышал об этом.
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_03"); //Ты так торопился стать учеником, а затем вот так просто взял и поступил в ополчение? Но я не стану делать тебе скидку на это.
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_04"); //Я ожидаю, что ты будешь строго придерживаться нашего соглашения, и будешь регулярно приносить мне растения и грибы.
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_05"); //Если это слишком тяжело для тебя - работать на двух работах одновременно, тебе просто придется меньше спать!
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_02"); //РўР°Рє С‚С‹ РїРѕСЃС‚СѓРїРёР» РІ РѕРїРѕР»С‡РµРЅРёРµ? РЇ СѓР¶Рµ СЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_03"); //РўС‹ С‚Р°Рє С‚РѕСЂРѕРїРёР»СЃСЏ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј, Р° Р·Р°С‚РµРј РІРѕС‚ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РІР·СЏР» Рё РїРѕСЃС‚СѓРїРёР» РІ РѕРїРѕР»С‡РµРЅРёРµ? РќРѕ СЏ РЅРµ СЃС‚Р°РЅСѓ РґРµР»Р°С‚СЊ С‚РµР±Рµ СЃРєРёРґРєСѓ РЅР° СЌС‚Рѕ.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_04"); //РЇ РѕР¶РёРґР°СЋ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ СЃС‚СЂРѕРіРѕ РїСЂРёРґРµСЂР¶РёРІР°С‚СЊСЃСЏ РЅР°С€РµРіРѕ СЃРѕРіР»Р°С€РµРЅРёСЏ, Рё Р±СѓРґРµС€СЊ СЂРµРіСѓР»СЏСЂРЅРѕ РїСЂРёРЅРѕСЃРёС‚СЊ РјРЅРµ СЂР°СЃС‚РµРЅРёСЏ Рё РіСЂРёР±С‹.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_05"); //Р•СЃР»Рё СЌС‚Рѕ СЃР»РёС€РєРѕРј С‚СЏР¶РµР»Рѕ РґР»СЏ С‚РµР±СЏ - СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РґРІСѓС… СЂР°Р±РѕС‚Р°С… РѕРґРЅРѕРІСЂРµРјРµРЅРЅРѕ, С‚РµР±Рµ РїСЂРѕСЃС‚Рѕ РїСЂРёРґРµС‚СЃСЏ РјРµРЅСЊС€Рµ СЃРїР°С‚СЊ!
 		Constantino_MILKommentar = TRUE;
 		Constantino_Lehrling_Day = Wld_GetDay();
 	}
@@ -649,23 +649,23 @@ FUNC VOID DIA_Constantino_AlsLehrling_Info()
 	&& (Constantino_StartGuild != GIL_PAL)
 	&& (Constantino_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_06"); //Я вижу, ты поступил в услужение к Инносу. Я полагаю, это значит, что с этого времени ты не сможешь уделять много внимания сбору трав для старика.
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_07"); //Но все же, я сочту за большую честь поддерживать тебя на твоем пути.
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_08"); //И если, несмотря на твои новые обязанности, ты найдешь время заниматься алхимией, ты всегда можешь рассчитывать на теплый прием здесь.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_06"); //РЇ РІРёР¶Сѓ, С‚С‹ РїРѕСЃС‚СѓРїРёР» РІ СѓСЃР»СѓР¶РµРЅРёРµ Рє РРЅРЅРѕСЃСѓ. РЇ РїРѕР»Р°РіР°СЋ, СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ СЃ СЌС‚РѕРіРѕ РІСЂРµРјРµРЅРё С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ СѓРґРµР»СЏС‚СЊ РјРЅРѕРіРѕ РІРЅРёРјР°РЅРёСЏ СЃР±РѕСЂСѓ С‚СЂР°РІ РґР»СЏ СЃС‚Р°СЂРёРєР°.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_07"); //РќРѕ РІСЃРµ Р¶Рµ, СЏ СЃРѕС‡С‚Сѓ Р·Р° Р±РѕР»СЊС€СѓСЋ С‡РµСЃС‚СЊ РїРѕРґРґРµСЂР¶РёРІР°С‚СЊ С‚РµР±СЏ РЅР° С‚РІРѕРµРј РїСѓС‚Рё.
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_08"); //Р РµСЃР»Рё, РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚РІРѕРё РЅРѕРІС‹Рµ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё, С‚С‹ РЅР°Р№РґРµС€СЊ РІСЂРµРјСЏ Р·Р°РЅРёРјР°С‚СЊСЃСЏ Р°Р»С…РёРјРёРµР№, С‚С‹ РІСЃРµРіРґР° РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° С‚РµРїР»С‹Р№ РїСЂРёРµРј Р·РґРµСЃСЊ.
 		Constantino_INNOSKommentar = TRUE;
 	}
 	
 	else if (Constantino_Lehrling_Day <= (Wld_GetDay() - 4) )
 	&& (Constantino_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_09"); //Где ты пропадал?
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_10"); //Я ожидаю от моего ученика большего усердия. Это никуда не годится, что ты появляешься здесь раз в месяц!
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_11"); //Ты хотя бы принес мне грибы?
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_09"); //Р“РґРµ С‚С‹ РїСЂРѕРїР°РґР°Р»?
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_10"); //РЇ РѕР¶РёРґР°СЋ РѕС‚ РјРѕРµРіРѕ СѓС‡РµРЅРёРєР° Р±РѕР»СЊС€РµРіРѕ СѓСЃРµСЂРґРёСЏ. Р­С‚Рѕ РЅРёРєСѓРґР° РЅРµ РіРѕРґРёС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РїРѕСЏРІР»СЏРµС€СЊСЃСЏ Р·РґРµСЃСЊ СЂР°Р· РІ РјРµСЃСЏС†!
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_11"); //РўС‹ С…РѕС‚СЏ Р±С‹ РїСЂРёРЅРµСЃ РјРЅРµ РіСЂРёР±С‹?
 		Constantino_Lehrling_Day = Wld_GetDay();
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_12"); //Опять ты...
+		AI_Output (self, other,"DIA_Constantino_AlsLehrling_10_12"); //РћРїСЏС‚СЊ С‚С‹...
 		Constantino_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -680,7 +680,7 @@ instance DIA_Constantino_Aufgaben (C_INFO)
 	condition   = DIA_Constantino_Aufgaben_Condition;
 	information = DIA_Constantino_Aufgaben_Info;
 	permanent   = FALSE;
-	description = "Каковы мои задачи?";
+	description = "РљР°РєРѕРІС‹ РјРѕРё Р·Р°РґР°С‡Рё?";
 };
 FUNC INT DIA_Constantino_Aufgaben_Condition()
 {	
@@ -691,11 +691,11 @@ FUNC INT DIA_Constantino_Aufgaben_Condition()
 };
 FUNC VOID DIA_Constantino_Aufgaben_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_Aufgaben_15_00"); //Каковы мои задачи?
-	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_01"); //Я понимаю, что не могу ожидать от молодого человека, что он будет проводить дни напролет вместе со мной в этой каморке.
-	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_02"); //Время от времени ты должен приносить растения, которые мне необходимы. Взамен, я буду обучать тебя искусству алхимии.
-	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_03"); //Ты можешь покупать у меня пробирки. Но большинство ингредиентов, впрочем, тебе придется добывать самому.
-	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_04"); //И я ожидаю, что ты будешь вести себя как добропорядочный гражданин этого города.
+	AI_Output (other, self,"DIA_Constantino_Aufgaben_15_00"); //РљР°РєРѕРІС‹ РјРѕРё Р·Р°РґР°С‡Рё?
+	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_01"); //РЇ РїРѕРЅРёРјР°СЋ, С‡С‚Рѕ РЅРµ РјРѕРіСѓ РѕР¶РёРґР°С‚СЊ РѕС‚ РјРѕР»РѕРґРѕРіРѕ С‡РµР»РѕРІРµРєР°, С‡С‚Рѕ РѕРЅ Р±СѓРґРµС‚ РїСЂРѕРІРѕРґРёС‚СЊ РґРЅРё РЅР°РїСЂРѕР»РµС‚ РІРјРµСЃС‚Рµ СЃРѕ РјРЅРѕР№ РІ СЌС‚РѕР№ РєР°РјРѕСЂРєРµ.
+	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_02"); //Р’СЂРµРјСЏ РѕС‚ РІСЂРµРјРµРЅРё С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРёРЅРѕСЃРёС‚СЊ СЂР°СЃС‚РµРЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ РјРЅРµ РЅРµРѕР±С…РѕРґРёРјС‹. Р’Р·Р°РјРµРЅ, СЏ Р±СѓРґСѓ РѕР±СѓС‡Р°С‚СЊ С‚РµР±СЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.
+	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_03"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРєСѓРїР°С‚СЊ Сѓ РјРµРЅСЏ РїСЂРѕР±РёСЂРєРё. РќРѕ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ, РІРїСЂРѕС‡РµРј, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РґРѕР±С‹РІР°С‚СЊ СЃР°РјРѕРјСѓ.
+	AI_Output (self, other,"DIA_Constantino_Aufgaben_10_04"); //Р СЏ РѕР¶РёРґР°СЋ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РІРµСЃС‚Рё СЃРµР±СЏ РєР°Рє РґРѕР±СЂРѕРїРѕСЂСЏРґРѕС‡РЅС‹Р№ РіСЂР°Р¶РґР°РЅРёРЅ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°.
 };
 
 // *******************************************************
@@ -708,7 +708,7 @@ instance DIA_Constantino_Mushrooms (C_INFO)
 	condition   = DIA_Constantino_Mushrooms_Condition;
 	information = DIA_Constantino_Mushrooms_Info;
 	permanent   = FALSE;
-	description = "Какие растения я должен приносить?";
+	description = "РљР°РєРёРµ СЂР°СЃС‚РµРЅРёСЏ СЏ РґРѕР»Р¶РµРЅ РїСЂРёРЅРѕСЃРёС‚СЊ?";
 };
 FUNC INT DIA_Constantino_Mushrooms_Condition()
 {	
@@ -719,14 +719,14 @@ FUNC INT DIA_Constantino_Mushrooms_Condition()
 };
 FUNC VOID DIA_Constantino_Mushrooms_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_Mushrooms_15_00"); //Какие растения я должен приносить?
-	AI_Output (self, other,"DIA_Constantino_Mushrooms_10_01"); //Я буду покупать все, что ты принесешь мне - и буду платить за травы обычную цену.
-	AI_Output (self, other,"DIA_Constantino_Mushrooms_10_02"); //Но что касается грибов, для них у меня особая цена.
+	AI_Output (other, self,"DIA_Constantino_Mushrooms_15_00"); //РљР°РєРёРµ СЂР°СЃС‚РµРЅРёСЏ СЏ РґРѕР»Р¶РµРЅ РїСЂРёРЅРѕСЃРёС‚СЊ?
+	AI_Output (self, other,"DIA_Constantino_Mushrooms_10_01"); //РЇ Р±СѓРґСѓ РїРѕРєСѓРїР°С‚СЊ РІСЃРµ, С‡С‚Рѕ С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ - Рё Р±СѓРґСѓ РїР»Р°С‚РёС‚СЊ Р·Р° С‚СЂР°РІС‹ РѕР±С‹С‡РЅСѓСЋ С†РµРЅСѓ.
+	AI_Output (self, other,"DIA_Constantino_Mushrooms_10_02"); //РќРѕ С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РіСЂРёР±РѕРІ, РґР»СЏ РЅРёС… Сѓ РјРµРЅСЏ РѕСЃРѕР±Р°СЏ С†РµРЅР°.
 	
 	MIS_Constantino_Mushrooms = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Я могу продавать грибы Константино по очень хорошей цене.");
+	B_LogEntry (Topic_Bonus,"РЇ РјРѕРіСѓ РїСЂРѕРґР°РІР°С‚СЊ РіСЂРёР±С‹ РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РїРѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РµР№ С†РµРЅРµ.");
 };
 
 // *******************************************************
@@ -740,7 +740,7 @@ instance DIA_Constantino_MushroomsRunning (C_INFO)
 	condition   = DIA_Constantino_MushroomsRunning_Condition;
 	information = DIA_Constantino_MushroomsRunning_Info;
 	permanent   = TRUE;
-	description = "Тебе нужны были грибы...";
+	description = "РўРµР±Рµ РЅСѓР¶РЅС‹ Р±С‹Р»Рё РіСЂРёР±С‹...";
 };
 FUNC INT DIA_Constantino_MushroomsRunning_Condition()
 {	
@@ -751,18 +751,18 @@ FUNC INT DIA_Constantino_MushroomsRunning_Condition()
 };
 FUNC VOID DIA_Constantino_MushroomsRunning_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_15_00"); //Тебе нужны были грибы...
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_15_00"); //РўРµР±Рµ РЅСѓР¶РЅС‹ Р±С‹Р»Рё РіСЂРёР±С‹...
 
 	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
-	Info_AddChoice (DIA_Constantino_MushroomsRunning, "Я собираюсь принести тебе их...", DIA_Constantino_MushroomsRunning_Later);
+	Info_AddChoice (DIA_Constantino_MushroomsRunning, "РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїСЂРёРЅРµСЃС‚Рё С‚РµР±Рµ РёС…...", DIA_Constantino_MushroomsRunning_Later);
 	if (Player_KnowsDunkelpilzBonus == FALSE)
 	{
-		Info_AddChoice (DIA_Constantino_MushroomsRunning, "Почему эти грибы так важны?", DIA_Constantino_MushroomsRunning_Why);
+		Info_AddChoice (DIA_Constantino_MushroomsRunning, "РџРѕС‡РµРјСѓ СЌС‚Рё РіСЂРёР±С‹ С‚Р°Рє РІР°Р¶РЅС‹?", DIA_Constantino_MushroomsRunning_Why);
 	};
 	if (Npc_HasItems (other, ItPl_Mushroom_01) > 0)
 	|| (Npc_HasItems (other, ItPl_Mushroom_02) > 0)
 	{
-		Info_AddChoice (DIA_Constantino_MushroomsRunning, "Я принес несколько ...", DIA_Constantino_MushroomsRunning_Sell);
+		Info_AddChoice (DIA_Constantino_MushroomsRunning, "РЇ РїСЂРёРЅРµСЃ РЅРµСЃРєРѕР»СЊРєРѕ ...", DIA_Constantino_MushroomsRunning_Sell);
 	};
 };
 
@@ -772,8 +772,8 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 	
 	if (Npc_HasItems(other,ItPl_Mushroom_01) > 0)
 	{
-		AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_00"); //Я принес несколько черных грибов...
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Sell_10_01"); //Ах! Это лучшие грибы! Отлично! Вот твое золото!
+		AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_00"); //РЇ РїСЂРёРЅРµСЃ РЅРµСЃРєРѕР»СЊРєРѕ С‡РµСЂРЅС‹С… РіСЂРёР±РѕРІ...
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Sell_10_01"); //РђС…! Р­С‚Рѕ Р»СѓС‡С€РёРµ РіСЂРёР±С‹! РћС‚Р»РёС‡РЅРѕ! Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ!
 		Dunkelpilz_dabei = TRUE;
 		
 		Constantino_DunkelpilzCounter = Constantino_DunkelpilzCounter + Npc_HasItems(other,ItPl_Mushroom_01);
@@ -786,13 +786,13 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 	{
 		if (Dunkelpilz_dabei == TRUE)
 		{
-			AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_02"); //А вот еще другие...
+			AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_02"); //Рђ РІРѕС‚ РµС‰Рµ РґСЂСѓРіРёРµ...
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_03"); //У меня здесь несколько грибов!
+			AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Sell_15_03"); //РЈ РјРµРЅСЏ Р·РґРµСЃСЊ РЅРµСЃРєРѕР»СЊРєРѕ РіСЂРёР±РѕРІ!
 		};
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Sell_10_04"); //Эти не так хороши, как черные грибы, но я все равно возьму их.
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Sell_10_04"); //Р­С‚Рё РЅРµ С‚Р°Рє С…РѕСЂРѕС€Рё, РєР°Рє С‡РµСЂРЅС‹Рµ РіСЂРёР±С‹, РЅРѕ СЏ РІСЃРµ СЂР°РІРЅРѕ РІРѕР·СЊРјСѓ РёС….
 		
 		B_GiveInvItems (self, other, itmi_gold, (Npc_HasItems(other,ItPl_Mushroom_02) * Value_Mushroom_02) );
 		B_GiveInvItems (other, self, ItPl_Mushroom_02, Npc_HasItems (other, ItPl_Mushroom_02));
@@ -803,32 +803,32 @@ func void DIA_Constantino_MushroomsRunning_Sell()
 
 func void DIA_Constantino_MushroomsRunning_Why()
 {
-	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Why_15_00"); //Почему эти грибы так важны?
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Why_15_00"); //РџРѕС‡РµРјСѓ СЌС‚Рё РіСЂРёР±С‹ С‚Р°Рє РІР°Р¶РЅС‹?
 	if (Constantino_DunkelpilzCounter == 0)
 	{
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_01"); //Даже несмотря на то, что ты мой ученик, я не могу сказать тебе все.
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_01"); //Р”Р°Р¶Рµ РЅРµСЃРјРѕС‚СЂСЏ РЅР° С‚Рѕ, С‡С‚Рѕ С‚С‹ РјРѕР№ СѓС‡РµРЅРёРє, СЏ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ РІСЃРµ.
 	}
 	else if (Constantino_DunkelpilzCounter >= 50)
 	{
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_02"); //Хорошо - я все же скажу тебе. Но ты должен сохранить это в тайне.
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_03"); //Черные грибы полны магической энергии. И каждый раз, когда ты съедаешь такой гриб, немного этой энергии аккумулируется твоим телом.
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_04"); //А когда ты съешь достаточное количество этих грибов, твоя магическая энергия возрастет...
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_05"); //Если бы я сказал тебе это ранее, ты бы слопал все эти грибы сам, разве нет?
-		AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Why_15_06"); //(вздыхает) Ох!
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_02"); //РҐРѕСЂРѕС€Рѕ - СЏ РІСЃРµ Р¶Рµ СЃРєР°Р¶Сѓ С‚РµР±Рµ. РќРѕ С‚С‹ РґРѕР»Р¶РµРЅ СЃРѕС…СЂР°РЅРёС‚СЊ СЌС‚Рѕ РІ С‚Р°Р№РЅРµ.
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_03"); //Р§РµСЂРЅС‹Рµ РіСЂРёР±С‹ РїРѕР»РЅС‹ РјР°РіРёС‡РµСЃРєРѕР№ СЌРЅРµСЂРіРёРё. Р РєР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° С‚С‹ СЃСЉРµРґР°РµС€СЊ С‚Р°РєРѕР№ РіСЂРёР±, РЅРµРјРЅРѕРіРѕ СЌС‚РѕР№ СЌРЅРµСЂРіРёРё Р°РєРєСѓРјСѓР»РёСЂСѓРµС‚СЃСЏ С‚РІРѕРёРј С‚РµР»РѕРј.
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_04"); //Рђ РєРѕРіРґР° С‚С‹ СЃСЉРµС€СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ СЌС‚РёС… РіСЂРёР±РѕРІ, С‚РІРѕСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЌРЅРµСЂРіРёСЏ РІРѕР·СЂР°СЃС‚РµС‚...
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_05"); //Р•СЃР»Рё Р±С‹ СЏ СЃРєР°Р·Р°Р» С‚РµР±Рµ СЌС‚Рѕ СЂР°РЅРµРµ, С‚С‹ Р±С‹ СЃР»РѕРїР°Р» РІСЃРµ СЌС‚Рё РіСЂРёР±С‹ СЃР°Рј, СЂР°Р·РІРµ РЅРµС‚?
+		AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Why_15_06"); //(РІР·РґС‹С…Р°РµС‚) РћС…!
 		
 		Player_KnowsDunkelpilzBonus = TRUE;
 		Info_ClearChoices (DIA_Constantino_MushroomsRunning);
 	}
 	else // 1 - 49
 	{
-		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_07"); //Ты уже спрашивал меня об этом. (озорно) Кто знает, может быть однажды я действительно скажу тебе...
+		AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Why_10_07"); //РўС‹ СѓР¶Рµ СЃРїСЂР°С€РёРІР°Р» РјРµРЅСЏ РѕР± СЌС‚РѕРј. (РѕР·РѕСЂРЅРѕ) РљС‚Рѕ Р·РЅР°РµС‚, РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕРґРЅР°Р¶РґС‹ СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРєР°Р¶Сѓ С‚РµР±Рµ...
 	};
 };
 
 func void DIA_Constantino_MushroomsRunning_Later()
 {
-	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Later_15_00"); //Я собираюсь принести тебе их...
-	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Later_10_01"); //Отлично! Принеси мне все, что только найдешь...
+	AI_Output (other, self,"DIA_Constantino_MushroomsRunning_Later_15_00"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ РїСЂРёРЅРµСЃС‚Рё С‚РµР±Рµ РёС…...
+	AI_Output (self, other,"DIA_Constantino_MushroomsRunning_Later_10_01"); //РћС‚Р»РёС‡РЅРѕ! РџСЂРёРЅРµСЃРё РјРЅРµ РІСЃРµ, С‡С‚Рѕ С‚РѕР»СЊРєРѕ РЅР°Р№РґРµС€СЊ...
 	
 	Info_ClearChoices (DIA_Constantino_MushroomsRunning);
 };
@@ -843,7 +843,7 @@ instance DIA_Constantino_Alchemy (C_INFO)
 	condition   = DIA_Constantino_Alchemy_Condition;
 	information = DIA_Constantino_Alchemy_Info;
 	permanent   = FALSE;
-	description = "Обучи меня искусству алхимии!";
+	description = "РћР±СѓС‡Рё РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё!";
 };
 FUNC INT DIA_Constantino_Alchemy_Condition()
 {	
@@ -854,24 +854,24 @@ FUNC INT DIA_Constantino_Alchemy_Condition()
 };
 FUNC VOID DIA_Constantino_Alchemy_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_Alchemy_15_00"); //Обучи меня искусству алхимии!
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_01"); //Хорошо. Сначала основы.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_02"); //Все зелья делаются из растений - они обладают различной силой.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_03"); //Но растения пускают всю свою силу в рост - а алхимия занимается изменением этой силы и направлением ее в нужное русло.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_04"); //Чтобы приготовить зелье на алхимическом столе, тебе понадобится лабораторная пробирка.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_05"); //Ты должен знать правильную формулу и иметь соответствующие ингредиенты.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_06"); //Я могу научить тебя многим таким формулам.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_07"); //Готовить зелья, восстанавливающие твою потерянную силу, и даже зелья, которые воздействуют на твою силу перманентно.
-	AI_Output (self, other,"DIA_Constantino_Alchemy_10_08"); //Но нельзя выучить все сразу.
+	AI_Output (other, self,"DIA_Constantino_Alchemy_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё!
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_01"); //РҐРѕСЂРѕС€Рѕ. РЎРЅР°С‡Р°Р»Р° РѕСЃРЅРѕРІС‹.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_02"); //Р’СЃРµ Р·РµР»СЊСЏ РґРµР»Р°СЋС‚СЃСЏ РёР· СЂР°СЃС‚РµРЅРёР№ - РѕРЅРё РѕР±Р»Р°РґР°СЋС‚ СЂР°Р·Р»РёС‡РЅРѕР№ СЃРёР»РѕР№.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_03"); //РќРѕ СЂР°СЃС‚РµРЅРёСЏ РїСѓСЃРєР°СЋС‚ РІСЃСЋ СЃРІРѕСЋ СЃРёР»Сѓ РІ СЂРѕСЃС‚ - Р° Р°Р»С…РёРјРёСЏ Р·Р°РЅРёРјР°РµС‚СЃСЏ РёР·РјРµРЅРµРЅРёРµРј СЌС‚РѕР№ СЃРёР»С‹ Рё РЅР°РїСЂР°РІР»РµРЅРёРµРј РµРµ РІ РЅСѓР¶РЅРѕРµ СЂСѓСЃР»Рѕ.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_04"); //Р§С‚РѕР±С‹ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ Р·РµР»СЊРµ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ, С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ Р»Р°Р±РѕСЂР°С‚РѕСЂРЅР°СЏ РїСЂРѕР±РёСЂРєР°.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_05"); //РўС‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РїСЂР°РІРёР»СЊРЅСѓСЋ С„РѕСЂРјСѓР»Сѓ Рё РёРјРµС‚СЊ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРµ РёРЅРіСЂРµРґРёРµРЅС‚С‹.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_06"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РјРЅРѕРіРёРј С‚Р°РєРёРј С„РѕСЂРјСѓР»Р°Рј.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_07"); //Р“РѕС‚РѕРІРёС‚СЊ Р·РµР»СЊСЏ, РІРѕСЃСЃС‚Р°РЅР°РІР»РёРІР°СЋС‰РёРµ С‚РІРѕСЋ РїРѕС‚РµСЂСЏРЅРЅСѓСЋ СЃРёР»Сѓ, Рё РґР°Р¶Рµ Р·РµР»СЊСЏ, РєРѕС‚РѕСЂС‹Рµ РІРѕР·РґРµР№СЃС‚РІСѓСЋС‚ РЅР° С‚РІРѕСЋ СЃРёР»Сѓ РїРµСЂРјР°РЅРµРЅС‚РЅРѕ.
+	AI_Output (self, other,"DIA_Constantino_Alchemy_10_08"); //РќРѕ РЅРµР»СЊР·СЏ РІС‹СѓС‡РёС‚СЊ РІСЃРµ СЃСЂР°Р·Сѓ.
 	
 	Constantino_TeachAlchemy = TRUE;
 	
 	Log_CreateTopic (TOPIC_CityTeacher,LOG_NOTE);
-	B_LogEntry (TOPIC_CityTeacher,"Константино может обучить меня искусству алхимии.");
+	B_LogEntry (TOPIC_CityTeacher,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.");
 };
 
 // *******************************************************
-//					fьr Nicht-Lehrlinge	
+//					fСЊr Nicht-Lehrlinge	
 // *******************************************************
 INSTANCE DIA_Constantino_NewRecipes (C_INFO)
 {
@@ -880,7 +880,7 @@ INSTANCE DIA_Constantino_NewRecipes (C_INFO)
 	condition   = DIA_Constantino_NewRecipes_Condition;
 	information = DIA_Constantino_NewRecipes_Info;
 	permanent   = FALSE;
-	description = "Я хочу узнать новые рецепты зелий.";
+	description = "РЇ С…РѕС‡Сѓ СѓР·РЅР°С‚СЊ РЅРѕРІС‹Рµ СЂРµС†РµРїС‚С‹ Р·РµР»РёР№.";
 };
 FUNC INT DIA_Constantino_NewRecipes_Condition()
 {	
@@ -893,15 +893,15 @@ FUNC INT DIA_Constantino_NewRecipes_Condition()
 };
 FUNC VOID DIA_Constantino_NewRecipes_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_NewRecipes_15_00"); //Я хочу узнать новые рецепты зелий.
-	AI_Output (self, other,"DIA_Constantino_NewRecipes_10_01"); //У тебя есть какой-нибудь опыт в алхимии?
-	AI_Output (other, self,"DIA_Constantino_NewRecipes_15_02"); //Да, есть.
-	AI_Output (self, other,"DIA_Constantino_NewRecipes_10_03"); //И ты все еще жив... это неплохой знак.
-	AI_Output (self, other,"DIA_Constantino_NewRecipes_10_04"); //Я думаю, что могу показать тебе несколько рецептов. Но это зависит, конечно же, от того, что ты хочешь узнать.
+	AI_Output (other, self,"DIA_Constantino_NewRecipes_15_00"); //РЇ С…РѕС‡Сѓ СѓР·РЅР°С‚СЊ РЅРѕРІС‹Рµ СЂРµС†РµРїС‚С‹ Р·РµР»РёР№.
+	AI_Output (self, other,"DIA_Constantino_NewRecipes_10_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РѕРїС‹С‚ РІ Р°Р»С…РёРјРёРё?
+	AI_Output (other, self,"DIA_Constantino_NewRecipes_15_02"); //Р”Р°, РµСЃС‚СЊ.
+	AI_Output (self, other,"DIA_Constantino_NewRecipes_10_03"); //Р С‚С‹ РІСЃРµ РµС‰Рµ Р¶РёРІ... СЌС‚Рѕ РЅРµРїР»РѕС…РѕР№ Р·РЅР°Рє.
+	AI_Output (self, other,"DIA_Constantino_NewRecipes_10_04"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ СЂРµС†РµРїС‚РѕРІ. РќРѕ СЌС‚Рѕ Р·Р°РІРёСЃРёС‚, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, РѕС‚ С‚РѕРіРѕ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ.
 	
 	Constantino_TeachAlchemy = TRUE;
 	Log_CreateTopic (TOPIC_CityTeacher,LOG_NOTE);
-	B_LogEntry (TOPIC_CityTeacher,"Константино может обучить меня искусству алхимии.");
+	B_LogEntry (TOPIC_CityTeacher,"РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ Р°Р»С…РёРјРёРё.");
 };
 	
 // *******************************************************
@@ -914,7 +914,7 @@ INSTANCE DIA_Constantino_TEACH (C_INFO)
 	condition   = DIA_Constantino_TEACH_Condition;
 	information = DIA_Constantino_TEACH_Info;
 	permanent   = TRUE;
-	description = "Каким рецептам ты можешь обучить меня?";
+	description = "РљР°РєРёРј СЂРµС†РµРїС‚Р°Рј С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 FUNC INT DIA_Constantino_TEACH_Condition()
 {	
@@ -925,7 +925,7 @@ FUNC INT DIA_Constantino_TEACH_Condition()
 };
 FUNC VOID DIA_Constantino_TEACH_Info()
 {
-	AI_Output (other, self,"DIA_Constantino_TEACH_15_00"); //Каким рецептам ты можешь обучить меня?
+	AI_Output (other, self,"DIA_Constantino_TEACH_15_00"); //РљР°РєРёРј СЂРµС†РµРїС‚Р°Рј С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?
 	
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
@@ -935,46 +935,46 @@ FUNC VOID DIA_Constantino_TEACH_Info()
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == TRUE)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_10_01"); //Извини. Я больше ничему не могу научить тебя.
+		AI_Output (self, other,"DIA_Constantino_TEACH_10_01"); //РР·РІРёРЅРё. РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_10_02"); //Есть несколько - выбирай.
+		AI_Output (self, other,"DIA_Constantino_TEACH_10_02"); //Р•СЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ - РІС‹Р±РёСЂР°Р№.
 		
 		Info_ClearChoices (DIA_Constantino_Teach);
 		Info_AddChoice (DIA_Constantino_Teach, DIALOG_BACK, DIA_Constantino_Teach_BACK);
 	};
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Лечебная эссенция", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Constantino_TEACH_Health01);              
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Constantino_TEACH_Health01);              
 	};                                                                                                                                                                                    
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)                                                                                                                                  
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)                                                                                                                                 
 	{                                                                                                                                                                                     
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Лечебный экстракт", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Constantino_TEACH_Health02);             
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р›РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Constantino_TEACH_Health02);             
 	};                                                                                                                                                                                    
 	if (PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)                                                                                                                                  
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)                                                                                                                                 
 	{                                                                                                                                                                                     
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Лечебный эликсир", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Constantino_TEACH_Health03);             
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р›РµС‡РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Constantino_TEACH_Health03);             
 	};                                                                                                                                                                                    
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE) 
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)                                                                                                                              
 	{                                                                                                                                                                                     
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Эликсир жизни", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Constantino_TEACH_PermHealth);            
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ Р¶РёР·РЅРё", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Constantino_TEACH_PermHealth);            
 	};                                                                                                                                                                                    
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)                                                                                                                                   
 	{                                                                                                                                                                                     
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Эссенция маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Constantino_TEACH_Mana01);                  
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_01)), DIA_Constantino_TEACH_Mana01);                  
 	};                                                                                                                                                                                    
 	if (PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == FALSE)   
 	&& (PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == TRUE)                                                                                                                                                                                                                                                                  
 	{                                                                                                                                                                                     
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Экстракт маны", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), DIA_Constantino_TEACH_Mana02);                 
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р­РєСЃС‚СЂР°РєС‚ РјР°РЅС‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_02)), DIA_Constantino_TEACH_Mana02);                 
 	};                                                                                                                                                                                    
 	if (PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE) 
 	{                                                                                                                                                                                     
-		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Эликсир силы", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), DIA_Constantino_TEACH_PermSTR);               
+		Info_AddChoice (DIA_Constantino_TEACH, B_BuildLearnString ("Р­Р»РёРєСЃРёСЂ СЃРёР»С‹", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), DIA_Constantino_TEACH_PermSTR);               
 	};
 };
 
@@ -986,7 +986,7 @@ func void DIA_Constantino_TEACH_Health01()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Health_01)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_Health01_10_00"); //Ингредиенты для лечебной эссенции - лечебные травы и луговой горец.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Health01_10_00"); //РРЅРіСЂРµРґРёРµРЅС‚С‹ РґР»СЏ Р»РµС‡РµР±РЅРѕР№ СЌСЃСЃРµРЅС†РёРё - Р»РµС‡РµР±РЅС‹Рµ С‚СЂР°РІС‹ Рё Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };
@@ -994,8 +994,8 @@ func void DIA_Constantino_TEACH_Health02()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Health_02)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_Health02_10_00"); //Чтобы приготовить лечебный экстракт, тебе понадобятся лечебные растения и луговой горец.
-		AI_Output (self, other,"DIA_Constantino_TEACH_Health02_10_01"); //Кипятить этот экстракт нужно очень осторожно.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Health02_10_00"); //Р§С‚РѕР±С‹ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ Р»РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚, С‚РµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ Р»РµС‡РµР±РЅС‹Рµ СЂР°СЃС‚РµРЅРёСЏ Рё Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Health02_10_01"); //РљРёРїСЏС‚РёС‚СЊ СЌС‚РѕС‚ СЌРєСЃС‚СЂР°РєС‚ РЅСѓР¶РЅРѕ РѕС‡РµРЅСЊ РѕСЃС‚РѕСЂРѕР¶РЅРѕ.
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };
@@ -1003,8 +1003,8 @@ func void DIA_Constantino_TEACH_Health03()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Health_03)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_Health03_10_00"); //Для создания лечебного эликсира требуется чуть больше опыта.
-		AI_Output (self, other,"DIA_Constantino_TEACH_Health03_10_01"); //Тебе понадобятся лечебные корни и луговой горец. При кипячении этого зелья нужно быть особенно внимательным.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Health03_10_00"); //Р”Р»СЏ СЃРѕР·РґР°РЅРёСЏ Р»РµС‡РµР±РЅРѕРіРѕ СЌР»РёРєСЃРёСЂР° С‚СЂРµР±СѓРµС‚СЃСЏ С‡СѓС‚СЊ Р±РѕР»СЊС€Рµ РѕРїС‹С‚Р°.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Health03_10_01"); //РўРµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ Р»РµС‡РµР±РЅС‹Рµ РєРѕСЂРЅРё Рё Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†. РџСЂРё РєРёРїСЏС‡РµРЅРёРё СЌС‚РѕРіРѕ Р·РµР»СЊСЏ РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РѕСЃРѕР±РµРЅРЅРѕ РІРЅРёРјР°С‚РµР»СЊРЅС‹Рј.
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };
@@ -1012,8 +1012,8 @@ func void DIA_Constantino_TEACH_PermHealth()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_Health)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_PermHealth_10_00"); //Эликсир жизни! Редкое варево. Но не из-за сложности приготовления - это зелье не так уж сложно сделать.
-		AI_Output (self, other,"DIA_Constantino_TEACH_PermHealth_10_01"); //Но в нем используются редкие ингредиенты. Тебе понадобятся лечебные корни и царский щавель.
+		AI_Output (self, other,"DIA_Constantino_TEACH_PermHealth_10_00"); //Р­Р»РёРєСЃРёСЂ Р¶РёР·РЅРё! Р РµРґРєРѕРµ РІР°СЂРµРІРѕ. РќРѕ РЅРµ РёР·-Р·Р° СЃР»РѕР¶РЅРѕСЃС‚Рё РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ - СЌС‚Рѕ Р·РµР»СЊРµ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+		AI_Output (self, other,"DIA_Constantino_TEACH_PermHealth_10_01"); //РќРѕ РІ РЅРµРј РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ СЂРµРґРєРёРµ РёРЅРіСЂРµРґРёРµРЅС‚С‹. РўРµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ Р»РµС‡РµР±РЅС‹Рµ РєРѕСЂРЅРё Рё С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };
@@ -1021,8 +1021,8 @@ func void DIA_Constantino_TEACH_Mana01()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Mana_01)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_Mana01_10_00"); //Эссенция маны - самое простое из магических зелий.
-		AI_Output (self, other,"DIA_Constantino_TEACH_Mana01_10_01"); //Возьми огненную крапиву и луговой горец и вскипяти их на медленном огне.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Mana01_10_00"); //Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹ - СЃР°РјРѕРµ РїСЂРѕСЃС‚РѕРµ РёР· РјР°РіРёС‡РµСЃРєРёС… Р·РµР»РёР№.
+		AI_Output (self, other,"DIA_Constantino_TEACH_Mana01_10_01"); //Р’РѕР·СЊРјРё РѕРіРЅРµРЅРЅСѓСЋ РєСЂР°РїРёРІСѓ Рё Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС† Рё РІСЃРєРёРїСЏС‚Рё РёС… РЅР° РјРµРґР»РµРЅРЅРѕРј РѕРіРЅРµ.
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };
@@ -1030,8 +1030,8 @@ func void DIA_Constantino_TEACH_Mana02()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Mana_02)
 	{
-	 	AI_Output (self, other,"DIA_Constantino_TEACH_Mana02_10_00"); //Так как ты уже умеешь готовить эссенцию маны, если немного потренируешься, то сможешь готовить также и экстракт.
-	 	AI_Output (self, other,"DIA_Constantino_TEACH_Mana02_10_01"); //Единственно, нужно уделить особое внимание процессу выпаривания этого зелья. В качестве ингредиентов для него используются огненная трава и луговой горец.
+	 	AI_Output (self, other,"DIA_Constantino_TEACH_Mana02_10_00"); //РўР°Рє РєР°Рє С‚С‹ СѓР¶Рµ СѓРјРµРµС€СЊ РіРѕС‚РѕРІРёС‚СЊ СЌСЃСЃРµРЅС†РёСЋ РјР°РЅС‹, РµСЃР»Рё РЅРµРјРЅРѕРіРѕ РїРѕС‚СЂРµРЅРёСЂСѓРµС€СЊСЃСЏ, С‚Рѕ СЃРјРѕР¶РµС€СЊ РіРѕС‚РѕРІРёС‚СЊ С‚Р°РєР¶Рµ Рё СЌРєСЃС‚СЂР°РєС‚.
+	 	AI_Output (self, other,"DIA_Constantino_TEACH_Mana02_10_01"); //Р•РґРёРЅСЃС‚РІРµРЅРЅРѕ, РЅСѓР¶РЅРѕ СѓРґРµР»РёС‚СЊ РѕСЃРѕР±РѕРµ РІРЅРёРјР°РЅРёРµ РїСЂРѕС†РµСЃСЃСѓ РІС‹РїР°СЂРёРІР°РЅРёСЏ СЌС‚РѕРіРѕ Р·РµР»СЊСЏ. Р’ РєР°С‡РµСЃС‚РІРµ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ РґР»СЏ РЅРµРіРѕ РёСЃРїРѕР»СЊР·СѓСЋС‚СЃСЏ РѕРіРЅРµРЅРЅР°СЏ С‚СЂР°РІР° Рё Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†.
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };
@@ -1039,8 +1039,8 @@ func void DIA_Constantino_TEACH_PermSTR()
 {
 	if B_TeachPlayerTalentAlchemy (self, other, POTION_Perm_STR)
 	{
-		AI_Output (self, other,"DIA_Constantino_TEACH_PermSTR_10_00"); //Эликсир силы! Превосходное зелье. Для него тебе понадобятся редкий драконий корень и царский щавель.
-		AI_Output (self, other,"DIA_Constantino_TEACH_PermSTR_10_01"); //При кипячении этого зелья следи, чтобы пузырьки не стали слишком большими, иначе тебя будет ждать неприятный сюрприз!
+		AI_Output (self, other,"DIA_Constantino_TEACH_PermSTR_10_00"); //Р­Р»РёРєСЃРёСЂ СЃРёР»С‹! РџСЂРµРІРѕСЃС…РѕРґРЅРѕРµ Р·РµР»СЊРµ. Р”Р»СЏ РЅРµРіРѕ С‚РµР±Рµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ СЂРµРґРєРёР№ РґСЂР°РєРѕРЅРёР№ РєРѕСЂРµРЅСЊ Рё С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.
+		AI_Output (self, other,"DIA_Constantino_TEACH_PermSTR_10_01"); //РџСЂРё РєРёРїСЏС‡РµРЅРёРё СЌС‚РѕРіРѕ Р·РµР»СЊСЏ СЃР»РµРґРё, С‡С‚РѕР±С‹ РїСѓР·С‹СЂСЊРєРё РЅРµ СЃС‚Р°Р»Рё СЃР»РёС€РєРѕРј Р±РѕР»СЊС€РёРјРё, РёРЅР°С‡Рµ С‚РµР±СЏ Р±СѓРґРµС‚ Р¶РґР°С‚СЊ РЅРµРїСЂРёСЏС‚РЅС‹Р№ СЃСЋСЂРїСЂРёР·!
 	};
 	Info_ClearChoices (DIA_Constantino_Teach);
 };

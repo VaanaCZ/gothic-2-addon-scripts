@@ -7,7 +7,7 @@
 instance VLK_444_Jack (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Джек"; 
+	name 		= "Р”Р¶РµРє"; 
 	guild 		= GIL_VLK;
 	id 			= 444;
 	voice 		= 14;

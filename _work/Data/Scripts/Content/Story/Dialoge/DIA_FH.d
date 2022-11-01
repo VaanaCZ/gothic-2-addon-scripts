@@ -24,7 +24,7 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("MINUS-Gesichter gibtÒ‘s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
@@ -78,7 +78,7 @@ INSTANCE DIA_FH_NextFace (C_INFO)
 	condition		= DIA_FH_NextFace_Condition;
 	information		= DIA_FH_NextFace_Info;
 	permanent		= 1;
-	description		= "Ñëåäóþùåå ëèöî";
+	description		= "Ð¡Ð»ÐµÐ´ÑƒÑŽÑ‰ÐµÐµ Ð»Ð¸Ñ†Ð¾";
 };                       
 
 FUNC INT DIA_FH_NextFace_Condition()
@@ -103,7 +103,7 @@ INSTANCE DIA_FH_NextFace10 (C_INFO)
 	condition		= DIA_FH_NextFace10_Condition;
 	information		= DIA_FH_NextFace10_Info;
 	permanent		= 1;
-	description		= "10 ëèö âïåðåä";
+	description		= "10 Ð»Ð¸Ñ† Ð²Ð¿ÐµÑ€ÐµÐ´";
 };                       
 
 FUNC INT DIA_FH_NextFace10_Condition()
@@ -127,7 +127,7 @@ INSTANCE DIA_FH_PreviousFace (C_INFO)
 	condition		= DIA_FH_PreviousFace_Condition;
 	information		= DIA_FH_PreviousFace_Info;
 	permanent		= 1;
-	description		= "Ïðåäûäóùåå ëèöî";
+	description		= "ÐŸÑ€ÐµÐ´Ñ‹Ð´ÑƒÑ‰ÐµÐµ Ð»Ð¸Ñ†Ð¾";
 };                       
 
 FUNC INT DIA_FH_PreviousFace_Condition()
@@ -151,7 +151,7 @@ INSTANCE DIA_FH_PreviousFace10 (C_INFO)
 	condition		= DIA_FH_PreviousFace10_Condition;
 	information		= DIA_FH_PreviousFace10_Info;
 	permanent		= 1;
-	description		= "10 ëèö íàçàä ";
+	description		= "10 Ð»Ð¸Ñ† Ð½Ð°Ð·Ð°Ð´ ";
 };                       
 
 FUNC INT DIA_FH_PreviousFace10_Condition()
@@ -175,7 +175,7 @@ INSTANCE DIA_FH_ResetFace (C_INFO)
 	condition		= DIA_FH_ResetFace_Condition;
 	information		= DIA_FH_ResetFace_Info;
 	permanent		= 1;
-	description		= "Ñáðîñ";
+	description		= "Ð¡Ð±Ñ€Ð¾Ñ";
 };                       
 
 FUNC INT DIA_FH_ResetFace_Condition()
@@ -200,7 +200,7 @@ INSTANCE DIA_FH_WomanFace (C_INFO)
 	condition		= DIA_FH_WomanFace_Condition;
 	information		= DIA_FH_WomanFace_Info;
 	permanent		= 1;
-	description		= "Ïåðåéòè ê æåíñêèì ëèöàì";
+	description		= "ÐŸÐµÑ€ÐµÐ¹Ñ‚Ð¸ Ðº Ð¶ÐµÐ½ÑÐºÐ¸Ð¼ Ð»Ð¸Ñ†Ð°Ð¼";
 };                       
 
 FUNC INT DIA_FH_WomanFace_Condition()
@@ -224,7 +224,7 @@ INSTANCE DIA_FH_Repeat (C_INFO)
 	condition		= DIA_FH_Repeat_Condition;
 	information		= DIA_FH_Repeat_Info;
 	permanent		= 1;
-	description		= "Ïîâòîðèòü";
+	description		= "ÐŸÐ¾Ð²Ñ‚Ð¾Ñ€Ð¸Ñ‚ÑŒ";
 };                       
 
 FUNC INT DIA_FH_Repeat_Condition()
@@ -247,7 +247,7 @@ INSTANCE DIA_FH_Sex (C_INFO)
 	condition		= DIA_FH_Sex_Condition;
 	information		= DIA_FH_Sex_Info;
 	permanent		= 1;
-	description		= "Ïîë";
+	description		= "ÐŸÐ¾Ð»";
 };                       
 
 FUNC INT DIA_FH_Sex_Condition()
@@ -281,7 +281,7 @@ INSTANCE DIA_FH_Choose_HeadMesh (C_INFO)
 	condition		= DIA_FH_Choose_HeadMesh_Condition;
 	information		= DIA_FH_Choose_HeadMesh_Info;
 	permanent		= 1;
-	description		= "Âûáîð ôîðìû ãîëîâû";
+	description		= "Ð’Ñ‹Ð±Ð¾Ñ€ Ñ„Ð¾Ñ€Ð¼Ñ‹ Ð³Ð¾Ð»Ð¾Ð²Ñ‹";
 };                       
 
 FUNC INT DIA_FH_Choose_HeadMesh_Condition()
@@ -293,7 +293,7 @@ FUNC VOID DIA_FH_Choose_HeadMesh_Info()
 {	
 	Info_ClearChoices	(DIA_FH_Choose_HeadMesh);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Íàçàä" 				, DIA_FH_Choose_HeadMesh_7);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "ÐÐ°Ð·Ð°Ð´" 				, DIA_FH_Choose_HeadMesh_7);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Psionic" 	, DIA_FH_Choose_HeadMesh_6);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Thief" 		, DIA_FH_Choose_HeadMesh_5);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Bald" 		, DIA_FH_Choose_HeadMesh_4);

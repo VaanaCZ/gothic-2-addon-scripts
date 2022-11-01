@@ -1,7 +1,7 @@
 INSTANCE NOV_605_Opolos (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ополос";
+	name 		= "РћРїРѕР»РѕСЃ";
 	guild 		= GIL_NOV;
 	id 			= 605;
 	voice 		= 12;

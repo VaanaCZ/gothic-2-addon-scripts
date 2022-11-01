@@ -33,7 +33,7 @@ instance DIA_Oric_HALLO		(C_INFO)
 	condition	 = 	DIA_Oric_HALLO_Condition;
 	information	 = 	DIA_Oric_HALLO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Каковы твои обязанности?";
+	description	 = 	"РљР°РєРѕРІС‹ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё?";
 };
 
 func int DIA_Oric_HALLO_Condition ()
@@ -42,10 +42,10 @@ func int DIA_Oric_HALLO_Condition ()
 };
 func void DIA_Oric_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Oric_HALLO_15_00"); //Каковы твои обязанности?
-	AI_Output (self, other, "DIA_Oric_HALLO_11_01"); //Я офицер-стратег короля, и в настоящее время подчиняюсь достопочтенному командующему Гаронду.
-	AI_Output (self, other, "DIA_Oric_HALLO_11_02"); //Мы последние паладины, оставшиеся здесь, в замке. Все остальные ушли либо пали на поле боя.
-	AI_Output (self, other, "DIA_Oric_HALLO_11_03"); //Это наш долг, чтобы эта экспедиция завершилась успешно. И мы добьемся этого. Клянусь Инносом - мы добьемся этого.
+	AI_Output (other, self, "DIA_Oric_HALLO_15_00"); //РљР°РєРѕРІС‹ С‚РІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё?
+	AI_Output (self, other, "DIA_Oric_HALLO_11_01"); //РЇ РѕС„РёС†РµСЂ-СЃС‚СЂР°С‚РµРі РєРѕСЂРѕР»СЏ, Рё РІ РЅР°СЃС‚РѕСЏС‰РµРµ РІСЂРµРјСЏ РїРѕРґС‡РёРЅСЏСЋСЃСЊ РґРѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅРѕРјСѓ РєРѕРјР°РЅРґСѓСЋС‰РµРјСѓ Р“Р°СЂРѕРЅРґСѓ.
+	AI_Output (self, other, "DIA_Oric_HALLO_11_02"); //РњС‹ РїРѕСЃР»РµРґРЅРёРµ РїР°Р»Р°РґРёРЅС‹, РѕСЃС‚Р°РІС€РёРµСЃСЏ Р·РґРµСЃСЊ, РІ Р·Р°РјРєРµ. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ СѓС€Р»Рё Р»РёР±Рѕ РїР°Р»Рё РЅР° РїРѕР»Рµ Р±РѕСЏ.
+	AI_Output (self, other, "DIA_Oric_HALLO_11_03"); //Р­С‚Рѕ РЅР°С€ РґРѕР»Рі, С‡С‚РѕР±С‹ СЌС‚Р° СЌРєСЃРїРµРґРёС†РёСЏ Р·Р°РІРµСЂС€РёР»Р°СЃСЊ СѓСЃРїРµС€РЅРѕ. Р РјС‹ РґРѕР±СЊРµРјСЃСЏ СЌС‚РѕРіРѕ. РљР»СЏРЅСѓСЃСЊ РРЅРЅРѕСЃРѕРј - РјС‹ РґРѕР±СЊРµРјСЃСЏ СЌС‚РѕРіРѕ.
 
 };
 
@@ -59,7 +59,7 @@ instance DIA_Oric_Bruder		(C_INFO)
 	condition	 = 	DIA_Oric_Bruder_Condition;
 	information	 = 	DIA_Oric_Bruder_Info;
 	permanent	 =  FALSE;
-	description	 = 	"У меня есть известие для тебя.";
+	description	 = 	"РЈ РјРµРЅСЏ РµСЃС‚СЊ РёР·РІРµСЃС‚РёРµ РґР»СЏ С‚РµР±СЏ.";
 };
 
 func int DIA_Oric_Bruder_Condition ()
@@ -72,12 +72,12 @@ func int DIA_Oric_Bruder_Condition ()
 };
 func void DIA_Oric_Bruder_Info ()
 {
-	AI_Output (other, self, "DIA_Oric_Bruder_15_00"); //У меня есть известие для тебя.
-	AI_Output (self, other, "DIA_Oric_Bruder_11_01"); //Что за известие?
-	AI_Output (other, self, "DIA_Oric_Bruder_15_02"); //Твой брат мертв. Он погиб у Прохода.
-	AI_Output (self, other, "DIA_Oric_Bruder_11_03"); //(бормочет)... мой брат...
-	AI_Output (self, other, "DIA_Oric_Bruder_11_04"); //Иннос подвергает меня суровым испытаниям. Но он погиб как его слуга...
-	AI_Output (self, other, "DIA_Oric_Bruder_11_05"); //Эта новость - стрела, пронзившая мое сердце. Я буду искать новые силы в молитвах.
+	AI_Output (other, self, "DIA_Oric_Bruder_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РёР·РІРµСЃС‚РёРµ РґР»СЏ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Oric_Bruder_11_01"); //Р§С‚Рѕ Р·Р° РёР·РІРµСЃС‚РёРµ?
+	AI_Output (other, self, "DIA_Oric_Bruder_15_02"); //РўРІРѕР№ Р±СЂР°С‚ РјРµСЂС‚РІ. РћРЅ РїРѕРіРёР± Сѓ РџСЂРѕС…РѕРґР°.
+	AI_Output (self, other, "DIA_Oric_Bruder_11_03"); //(Р±РѕСЂРјРѕС‡РµС‚)... РјРѕР№ Р±СЂР°С‚...
+	AI_Output (self, other, "DIA_Oric_Bruder_11_04"); //РРЅРЅРѕСЃ РїРѕРґРІРµСЂРіР°РµС‚ РјРµРЅСЏ СЃСѓСЂРѕРІС‹Рј РёСЃРїС‹С‚Р°РЅРёСЏРј. РќРѕ РѕРЅ РїРѕРіРёР± РєР°Рє РµРіРѕ СЃР»СѓРіР°...
+	AI_Output (self, other, "DIA_Oric_Bruder_11_05"); //Р­С‚Р° РЅРѕРІРѕСЃС‚СЊ - СЃС‚СЂРµР»Р°, РїСЂРѕРЅР·РёРІС€Р°СЏ РјРѕРµ СЃРµСЂРґС†Рµ. РЇ Р±СѓРґСѓ РёСЃРєР°С‚СЊ РЅРѕРІС‹Рµ СЃРёР»С‹ РІ РјРѕР»РёС‚РІР°С….
 	OricBruder = TRUE;
 	
 	B_GivePlayerXP (XP_Ambient);
@@ -95,7 +95,7 @@ INSTANCE DIA_Oric_ScoutMine   (C_INFO)
 	condition   = DIA_Oric_ScoutMine_Condition;
 	information = DIA_Oric_ScoutMine_Info;
 	permanent   = FALSE;
-	description = "Я отправляюсь к шахтам.";
+	description = "РЇ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ Рє С€Р°С…С‚Р°Рј.";
 };
 
 FUNC INT DIA_Oric_ScoutMine_Condition()
@@ -113,9 +113,9 @@ FUNC INT DIA_Oric_ScoutMine_Condition()
 
 FUNC VOID DIA_Oric_ScoutMine_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_ScoutMine_15_00"); //Я отправляюсь к шахтам.
-	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_01"); //Будь острожен. Это нелегкая задача. Прежде всего, найди паладинов. Они возглавляют эти три группы.
-	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_02"); //Если тебе нужно больше информации, поговори с Парсивалем.
+	AI_Output (other,self ,"DIA_Oric_ScoutMine_15_00"); //РЇ РѕС‚РїСЂР°РІР»СЏСЋСЃСЊ Рє С€Р°С…С‚Р°Рј.
+	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_01"); //Р‘СѓРґСЊ РѕСЃС‚СЂРѕР¶РµРЅ. Р­С‚Рѕ РЅРµР»РµРіРєР°СЏ Р·Р°РґР°С‡Р°. РџСЂРµР¶РґРµ РІСЃРµРіРѕ, РЅР°Р№РґРё РїР°Р»Р°РґРёРЅРѕРІ. РћРЅРё РІРѕР·РіР»Р°РІР»СЏСЋС‚ СЌС‚Рё С‚СЂРё РіСЂСѓРїРїС‹.
+	AI_Output (self ,other,"DIA_Oric_ScoutMine_11_02"); //Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ РёРЅС„РѕСЂРјР°С†РёРё, РїРѕРіРѕРІРѕСЂРё СЃ РџР°СЂСЃРёРІР°Р»РµРј.
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm
@@ -127,7 +127,7 @@ instance DIA_Oric_Perm		(C_INFO)
 	condition	 = 	DIA_Oric_Perm_Condition;
 	information	 = 	DIA_Oric_Perm_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как ситуация?";
+	description	 = 	"РљР°Рє СЃРёС‚СѓР°С†РёСЏ?";
 };
 
 func int DIA_Oric_Perm_Condition ()
@@ -141,20 +141,20 @@ func int DIA_Oric_Perm_Condition ()
 func void DIA_Oric_Perm_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Oric_Perm_15_00"); //Как обстановка?
+	AI_Output (other, self, "DIA_Oric_Perm_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
 	
 	if (MIS_ScoutMine == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Oric_Perm_11_01"); //Ты должен найти старателей и выяснить, сколько у них руды. А там будет видно, как и когда мы сможем покинуть эту долину.
+		AI_Output (self, other, "DIA_Oric_Perm_11_01"); //РўС‹ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё СЃС‚Р°СЂР°С‚РµР»РµР№ Рё РІС‹СЏСЃРЅРёС‚СЊ, СЃРєРѕР»СЊРєРѕ Сѓ РЅРёС… СЂСѓРґС‹. Рђ С‚Р°Рј Р±СѓРґРµС‚ РІРёРґРЅРѕ, РєР°Рє Рё РєРѕРіРґР° РјС‹ СЃРјРѕР¶РµРј РїРѕРєРёРЅСѓС‚СЊ СЌС‚Сѓ РґРѕР»РёРЅСѓ.
 	}
 	else if (MIS_ScoutMine == LOG_SUCCESS)
  	{
-		AI_Output (self, other, "DIA_Oric_Perm_11_02"); //Ситуация накалилась до предела. Но мы не отступим. Иннос всегда с нами. Он выведет нас из этой долины.
+		AI_Output (self, other, "DIA_Oric_Perm_11_02"); //РЎРёС‚СѓР°С†РёСЏ РЅР°РєР°Р»РёР»Р°СЃСЊ РґРѕ РїСЂРµРґРµР»Р°. РќРѕ РјС‹ РЅРµ РѕС‚СЃС‚СѓРїРёРј. РРЅРЅРѕСЃ РІСЃРµРіРґР° СЃ РЅР°РјРё. РћРЅ РІС‹РІРµРґРµС‚ РЅР°СЃ РёР· СЌС‚РѕР№ РґРѕР»РёРЅС‹.
 	}
 	else //noch nicht angenommen
 	{
-		AI_Output (self, other, "DIA_Oric_Perm_11_03"); //Твое появление здесь вселяет в нас надежду.
-		AI_Output (self, other, "DIA_Oric_Perm_11_04"); //Ты нужен нам. Иди, поговори с Гарондом - он все объяснит тебе.
+		AI_Output (self, other, "DIA_Oric_Perm_11_03"); //РўРІРѕРµ РїРѕСЏРІР»РµРЅРёРµ Р·РґРµСЃСЊ РІСЃРµР»СЏРµС‚ РІ РЅР°СЃ РЅР°РґРµР¶РґСѓ.
+		AI_Output (self, other, "DIA_Oric_Perm_11_04"); //РўС‹ РЅСѓР¶РµРЅ РЅР°Рј. РРґРё, РїРѕРіРѕРІРѕСЂРё СЃ Р“Р°СЂРѕРЅРґРѕРј - РѕРЅ РІСЃРµ РѕР±СЉСЏСЃРЅРёС‚ С‚РµР±Рµ.
 	};
 };
 
@@ -238,7 +238,7 @@ INSTANCE DIA_Oric_IAmBack   (C_INFO)
 	condition   = DIA_Oric_IAmBack_Condition;
 	information = DIA_Oric_IAmBack_Info;
 
-	description = "Я уже вернулся.";
+	description = "РЇ СѓР¶Рµ РІРµСЂРЅСѓР»СЃСЏ.";
 };
 
 FUNC INT DIA_Oric_IAmBack_Condition()
@@ -252,19 +252,19 @@ FUNC INT DIA_Oric_IAmBack_Condition()
 
 FUNC VOID DIA_Oric_IAmBack_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_IAmBack_15_00"); //Я уже вернулся.
-	AI_Output (self ,other,"DIA_Oric_IAmBack_11_01"); //Я уже не надеялся, что мы еще когда-нибудь увидим тебя после того, что произошло, когда ты был здесь несколько дней назад.
+	AI_Output (other,self ,"DIA_Oric_IAmBack_15_00"); //РЇ СѓР¶Рµ РІРµСЂРЅСѓР»СЃСЏ.
+	AI_Output (self ,other,"DIA_Oric_IAmBack_11_01"); //РЇ СѓР¶Рµ РЅРµ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ РјС‹ РµС‰Рµ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СѓРІРёРґРёРј С‚РµР±СЏ РїРѕСЃР»Рµ С‚РѕРіРѕ, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ, РєРѕРіРґР° С‚С‹ Р±С‹Р» Р·РґРµСЃСЊ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ.
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Oric_IAmBack_11_02"); //Я приветствую тебя от имени нашего ордена.
+		AI_Output (self, other, "DIA_Oric_IAmBack_11_02"); //РЇ РїСЂРёРІРµС‚СЃС‚РІСѓСЋ С‚РµР±СЏ РѕС‚ РёРјРµРЅРё РЅР°С€РµРіРѕ РѕСЂРґРµРЅР°.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Oric_IAmBack_11_03"); //Я виду, ты слал магом. Мое почтение.
+		AI_Output (self, other, "DIA_Oric_IAmBack_11_03"); //РЇ РІРёРґСѓ, С‚С‹ СЃР»Р°Р» РјР°РіРѕРј. РњРѕРµ РїРѕС‡С‚РµРЅРёРµ.
 	};
 	
-	AI_Output (self ,other,"DIA_Oric_IAmBack_11_04"); //Возможно, твое появление - добрый знак.
+	AI_Output (self ,other,"DIA_Oric_IAmBack_11_04"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РІРѕРµ РїРѕСЏРІР»РµРЅРёРµ - РґРѕР±СЂС‹Р№ Р·РЅР°Рє.
 };
 
 //***********************************************
@@ -278,7 +278,7 @@ INSTANCE DIA_Oric_CanHelp   (C_INFO)
 	condition   = DIA_Oric_CanHelp_Condition;
 	information = DIA_Oric_CanHelp_Info;
 
-	description = "Могу я чем-нибудь помочь?";
+	description = "РњРѕРіСѓ СЏ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ?";
 };
 
 FUNC INT DIA_Oric_CanHelp_Condition()
@@ -293,47 +293,47 @@ FUNC INT DIA_Oric_CanHelp_Condition()
 
 FUNC VOID DIA_Oric_CanHelp_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_CanHelp_15_00"); //Могу я чем-нибудь помочь?
-	AI_Output (self ,other,"DIA_Oric_CanHelp_11_01"); //В настоящий момент, похоже, мы сделали все, что было возможно.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_11_02"); //Впрочем, есть кое-что. Кое-что очень важное, что ты мог бы сделать для нас за пределами этих стен.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_11_03"); //Мы планируем отрубить змею голову.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_15_00"); //РњРѕРіСѓ СЏ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ?
+	AI_Output (self ,other,"DIA_Oric_CanHelp_11_01"); //Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚, РїРѕС…РѕР¶Рµ, РјС‹ СЃРґРµР»Р°Р»Рё РІСЃРµ, С‡С‚Рѕ Р±С‹Р»Рѕ РІРѕР·РјРѕР¶РЅРѕ.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_11_02"); //Р’РїСЂРѕС‡РµРј, РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ. РљРѕРµ-С‡С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕРµ, С‡С‚Рѕ С‚С‹ РјРѕРі Р±С‹ СЃРґРµР»Р°С‚СЊ РґР»СЏ РЅР°СЃ Р·Р° РїСЂРµРґРµР»Р°РјРё СЌС‚РёС… СЃС‚РµРЅ.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_11_03"); //РњС‹ РїР»Р°РЅРёСЂСѓРµРј РѕС‚СЂСѓР±РёС‚СЊ Р·РјРµСЋ РіРѕР»РѕРІСѓ.
 	
 	Info_ClearChoices (DIA_Oric_CanHelp);
-	Info_AddChoice (DIA_Oric_CanHelp,"Я думаю, тебе лучше поискать кого-нибудь еще. ",DIA_Oric_CanHelp_NotYourMan); 
-	Info_AddChoice (DIA_Oric_CanHelp,"Что ты хочешь этим сказать?",DIA_Oric_CanHelp_WhatYouMean);
+	Info_AddChoice (DIA_Oric_CanHelp,"РЇ РґСѓРјР°СЋ, С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ. ",DIA_Oric_CanHelp_NotYourMan); 
+	Info_AddChoice (DIA_Oric_CanHelp,"Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ?",DIA_Oric_CanHelp_WhatYouMean);
 
 };
 
 FUNC VOID DIA_Oric_CanHelp_NotYourMan ()
 {
-	AI_Output (other,self ,"DIA_Oric_CanHelp_NotYourMan_15_00"); //Я думаю, тебе лучше поискать кого-нибудь еще.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_NotYourMan_11_01"); //Я не могу выделить ни одного человека - ты наша единственная надежда.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_NotYourMan_15_00"); //РЇ РґСѓРјР°СЋ, С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕРёСЃРєР°С‚СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_NotYourMan_11_01"); //РЇ РЅРµ РјРѕРіСѓ РІС‹РґРµР»РёС‚СЊ РЅРё РѕРґРЅРѕРіРѕ С‡РµР»РѕРІРµРєР° - С‚С‹ РЅР°С€Р° РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ РЅР°РґРµР¶РґР°.
 };
 
 FUNC VOID DIA_Oric_CanHelp_WhatYouMean ()
 {
-	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_00"); //Что ты хочешь сказать этим?
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_01"); //Мы знаем одного из их предводителей. Его зовут Хош-Пак.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_02"); //Он один из самых влиятельных шаманов орков.
-	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_03"); //А какова в этом моя роль?
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_04"); //Убей его.
-	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_05"); //Ты шутишь!?
+	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ СЌС‚РёРј?
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_01"); //РњС‹ Р·РЅР°РµРј РѕРґРЅРѕРіРѕ РёР· РёС… РїСЂРµРґРІРѕРґРёС‚РµР»РµР№. Р•РіРѕ Р·РѕРІСѓС‚ РҐРѕС€-РџР°Рє.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_02"); //РћРЅ РѕРґРёРЅ РёР· СЃР°РјС‹С… РІР»РёСЏС‚РµР»СЊРЅС‹С… С€Р°РјР°РЅРѕРІ РѕСЂРєРѕРІ.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_03"); //Рђ РєР°РєРѕРІР° РІ СЌС‚РѕРј РјРѕСЏ СЂРѕР»СЊ?
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_04"); //РЈР±РµР№ РµРіРѕ.
+	AI_Output (other,self ,"DIA_Oric_CanHelp_WhatYouMean_15_05"); //РўС‹ С€СѓС‚РёС€СЊ!?
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_06"); //Ты единственный, кого мы можем выделить для этого дела. Все остальные рыцари нужны здесь.
+		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_06"); //РўС‹ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєРѕРіРѕ РјС‹ РјРѕР¶РµРј РІС‹РґРµР»РёС‚СЊ РґР»СЏ СЌС‚РѕРіРѕ РґРµР»Р°. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ СЂС‹С†Р°СЂРё РЅСѓР¶РЅС‹ Р·РґРµСЃСЊ.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_07"); //Мне нелегко просить тебя об этом, мастер. Но ты как нельзя лучше подходишь для этого задания.
+		AI_Output (self, other, "DIA_Oric_CanHelp_WhatYouMean_11_07"); //РњРЅРµ РЅРµР»РµРіРєРѕ РїСЂРѕСЃРёС‚СЊ С‚РµР±СЏ РѕР± СЌС‚РѕРј, РјР°СЃС‚РµСЂ. РќРѕ С‚С‹ РєР°Рє РЅРµР»СЊР·СЏ Р»СѓС‡С€Рµ РїРѕРґС…РѕРґРёС€СЊ РґР»СЏ СЌС‚РѕРіРѕ Р·Р°РґР°РЅРёСЏ.
 	}
 	else
 	{	
-		AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_08"); //Ты ведь хочешь помочь нам, разве нет? Ну, тогда...
+		AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_08"); //РўС‹ РІРµРґСЊ С…РѕС‡РµС€СЊ РїРѕРјРѕС‡СЊ РЅР°Рј, СЂР°Р·РІРµ РЅРµС‚? РќСѓ, С‚РѕРіРґР°...
 	};
 	
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_09"); //Палатка Хош-Пака находится за осадным кругом, на утесе к югу отсюда.
-	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_10"); //Ее даже видно из этих окон.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_09"); //РџР°Р»Р°С‚РєР° РҐРѕС€-РџР°РєР° РЅР°С…РѕРґРёС‚СЃСЏ Р·Р° РѕСЃР°РґРЅС‹Рј РєСЂСѓРіРѕРј, РЅР° СѓС‚РµСЃРµ Рє СЋРіСѓ РѕС‚СЃСЋРґР°.
+	AI_Output (self ,other,"DIA_Oric_CanHelp_WhatYouMean_11_10"); //Р•Рµ РґР°Р¶Рµ РІРёРґРЅРѕ РёР· СЌС‚РёС… РѕРєРѕРЅ.
 	
 
 	Info_ClearChoices (DIA_Oric_CanHelp);
@@ -341,7 +341,7 @@ FUNC VOID DIA_Oric_CanHelp_WhatYouMean ()
 };
 
 //***********************************************
-//	Ich brauche noch Ausrьstung.
+//	Ich brauche noch AusrСЊstung.
 //***********************************************
 
 INSTANCE DIA_Oric_NeedStuff   (C_INFO)
@@ -351,7 +351,7 @@ INSTANCE DIA_Oric_NeedStuff   (C_INFO)
 	condition   = DIA_Oric_NeedStuff_Condition;
 	information = DIA_Oric_NeedStuff_Info;
 
-	description = "Мне нужно снаряжение.";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ.";
 };
 
 FUNC INT DIA_Oric_NeedStuff_Condition()
@@ -365,21 +365,21 @@ FUNC INT DIA_Oric_NeedStuff_Condition()
 
 FUNC VOID DIA_Oric_NeedStuff_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_15_00"); //Мне нужно снаряжение.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_01"); //У нас мало что осталось, чем мы могли бы поделиться с тобой.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_02"); //Ну, я могу предложить тебе вот это.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_01"); //РЈ РЅР°СЃ РјР°Р»Рѕ С‡С‚Рѕ РѕСЃС‚Р°Р»РѕСЃСЊ, С‡РµРј РјС‹ РјРѕРіР»Рё Р±С‹ РїРѕРґРµР»РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_11_02"); //РќСѓ, СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ РІРѕС‚ СЌС‚Рѕ.
 	
 	Info_ClearChoices (DIA_Oric_NeedStuff);
-	Info_AddChoice (DIA_Oric_NeedStuff,"или 1 эликсира ловкости",DIA_Oric_NeedStuff_Dexterity);
-	Info_AddChoice (DIA_Oric_NeedStuff,"или 1 эликсира силы",DIA_Oric_NeedStuff_Strength);
-	Info_AddChoice (DIA_Oric_NeedStuff,"или 3 эликсира маны",DIA_Oric_NeedStuff_Mana);	
-	Info_AddChoice (DIA_Oric_NeedStuff,"3 лечебных эликсира",DIA_Oric_NeedStuff_Health); 
+	Info_AddChoice (DIA_Oric_NeedStuff,"РёР»Рё 1 СЌР»РёРєСЃРёСЂР° Р»РѕРІРєРѕСЃС‚Рё",DIA_Oric_NeedStuff_Dexterity);
+	Info_AddChoice (DIA_Oric_NeedStuff,"РёР»Рё 1 СЌР»РёРєСЃРёСЂР° СЃРёР»С‹",DIA_Oric_NeedStuff_Strength);
+	Info_AddChoice (DIA_Oric_NeedStuff,"РёР»Рё 3 СЌР»РёРєСЃРёСЂР° РјР°РЅС‹",DIA_Oric_NeedStuff_Mana);	
+	Info_AddChoice (DIA_Oric_NeedStuff,"3 Р»РµС‡РµР±РЅС‹С… СЌР»РёРєСЃРёСЂР°",DIA_Oric_NeedStuff_Health); 
 };
 
 FUNC VOID DIA_Oric_NeedStuff_Health ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Health_15_00"); //Я возьму эти лечебные зелья.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Health_11_01"); //Хороший выбор. Надеюсь, они помогут тебе.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Health_15_00"); //РЇ РІРѕР·СЊРјСѓ СЌС‚Рё Р»РµС‡РµР±РЅС‹Рµ Р·РµР»СЊСЏ.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Health_11_01"); //РҐРѕСЂРѕС€РёР№ РІС‹Р±РѕСЂ. РќР°РґРµСЋСЃСЊ, РѕРЅРё РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ.
 	
 	CreateInvItems (self,ItPo_Health_03,3);
 	B_GiveInvItems (self ,other,ItPo_Health_03,3);
@@ -389,8 +389,8 @@ FUNC VOID DIA_Oric_NeedStuff_Health ()
 
 FUNC VOID DIA_Oric_NeedStuff_Mana ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Mana_15_00"); //Я возьму эти зелья маны.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Mana_11_01"); //Надеюсь, они помогут тебе. Да хранит тебя Иннос.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Mana_15_00"); //РЇ РІРѕР·СЊРјСѓ СЌС‚Рё Р·РµР»СЊСЏ РјР°РЅС‹.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Mana_11_01"); //РќР°РґРµСЋСЃСЊ, РѕРЅРё РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ. Р”Р° С…СЂР°РЅРёС‚ С‚РµР±СЏ РРЅРЅРѕСЃ.
 	
 	CreateInvItems (self,ItPo_Mana_03,3);
 	B_GiveInvItems (self ,other,ItPo_Health_03,3);
@@ -400,8 +400,8 @@ FUNC VOID DIA_Oric_NeedStuff_Mana ()
 
 FUNC VOID DIA_Oric_NeedStuff_Strength ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Strength_15_00"); //Я возьму эликсир силы.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Strength_11_01"); //Вот, он наверняка пригодится тебе. Я желаю тебе удачи.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Strength_15_00"); //РЇ РІРѕР·СЊРјСѓ СЌР»РёРєСЃРёСЂ СЃРёР»С‹.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Strength_11_01"); //Р’РѕС‚, РѕРЅ РЅР°РІРµСЂРЅСЏРєР° РїСЂРёРіРѕРґРёС‚СЃСЏ С‚РµР±Рµ. РЇ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓРґР°С‡Рё.
 
 	CreateInvItems (self,ItPo_Perm_STR,1);
 	B_GiveInvItems (self ,other,ItPo_Perm_STR,1);
@@ -411,8 +411,8 @@ FUNC VOID DIA_Oric_NeedStuff_Strength ()
 
 FUNC VOID DIA_Oric_NeedStuff_Dexterity ()
 {
-	AI_Output (other,self ,"DIA_Oric_NeedStuff_Dexterity_15_00"); //Я возьму эликсир ловкости.
-	AI_Output (self ,other,"DIA_Oric_NeedStuff_Dexterity_11_01"); //Пусть всегда твои стрелы летят точно в цель. Вот, держи.
+	AI_Output (other,self ,"DIA_Oric_NeedStuff_Dexterity_15_00"); //РЇ РІРѕР·СЊРјСѓ СЌР»РёРєСЃРёСЂ Р»РѕРІРєРѕСЃС‚Рё.
+	AI_Output (self ,other,"DIA_Oric_NeedStuff_Dexterity_11_01"); //РџСѓСЃС‚СЊ РІСЃРµРіРґР° С‚РІРѕРё СЃС‚СЂРµР»С‹ Р»РµС‚СЏС‚ С‚РѕС‡РЅРѕ РІ С†РµР»СЊ. Р’РѕС‚, РґРµСЂР¶Рё.
 
 	CreateInvItems (self,ItPo_Perm_DEX,1);
 	B_GiveInvItems (self ,other,ItPo_Perm_DEX,1);
@@ -431,7 +431,7 @@ INSTANCE DIA_Oric_NoMurder   (C_INFO)
 	condition   = DIA_Oric_NoMurder_Condition;
 	information = DIA_Oric_NoMurder_Info;
 
-	description = "Я не буду убивать Хош-Пака таким подлым образом.";
+	description = "РЇ РЅРµ Р±СѓРґСѓ СѓР±РёРІР°С‚СЊ РҐРѕС€-РџР°РєР° С‚Р°РєРёРј РїРѕРґР»С‹Рј РѕР±СЂР°Р·РѕРј.";
 };
 
 FUNC INT DIA_Oric_NoMurder_Condition()
@@ -445,11 +445,11 @@ FUNC INT DIA_Oric_NoMurder_Condition()
 
 FUNC VOID DIA_Oric_NoMurder_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_NoMurder_15_00"); //Я не буду убивать Хош-Пака таким подлым образом.
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_01"); //Ты хотя бы представляешь себе, насколько тяжело наше положение?
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_02"); //Нас осаждают превосходящие силы орков. Наши запасы уже на исходе.
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_03"); //Если мы не сможем доставить эту руду на корабль, орки превратят в руины все наше королевство.
-	AI_Output (self ,other,"DIA_Oric_NoMurder_11_04"); //Все, ради чего мы живем, пойдет прахом.
+	AI_Output (other,self ,"DIA_Oric_NoMurder_15_00"); //РЇ РЅРµ Р±СѓРґСѓ СѓР±РёРІР°С‚СЊ РҐРѕС€-РџР°РєР° С‚Р°РєРёРј РїРѕРґР»С‹Рј РѕР±СЂР°Р·РѕРј.
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_01"); //РўС‹ С…РѕС‚СЏ Р±С‹ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ СЃРµР±Рµ, РЅР°СЃРєРѕР»СЊРєРѕ С‚СЏР¶РµР»Рѕ РЅР°С€Рµ РїРѕР»РѕР¶РµРЅРёРµ?
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_02"); //РќР°СЃ РѕСЃР°Р¶РґР°СЋС‚ РїСЂРµРІРѕСЃС…РѕРґСЏС‰РёРµ СЃРёР»С‹ РѕСЂРєРѕРІ. РќР°С€Рё Р·Р°РїР°СЃС‹ СѓР¶Рµ РЅР° РёСЃС…РѕРґРµ.
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_03"); //Р•СЃР»Рё РјС‹ РЅРµ СЃРјРѕР¶РµРј РґРѕСЃС‚Р°РІРёС‚СЊ СЌС‚Сѓ СЂСѓРґСѓ РЅР° РєРѕСЂР°Р±Р»СЊ, РѕСЂРєРё РїСЂРµРІСЂР°С‚СЏС‚ РІ СЂСѓРёРЅС‹ РІСЃРµ РЅР°С€Рµ РєРѕСЂРѕР»РµРІСЃС‚РІРѕ.
+	AI_Output (self ,other,"DIA_Oric_NoMurder_11_04"); //Р’СЃРµ, СЂР°РґРё С‡РµРіРѕ РјС‹ Р¶РёРІРµРј, РїРѕР№РґРµС‚ РїСЂР°С…РѕРј.
 };
 
 //***********************************************
@@ -463,7 +463,7 @@ INSTANCE DIA_Oric_WillHelp   (C_INFO)
 	condition   = DIA_Oric_WillHelp_Condition;
 	information = DIA_Oric_WillHelp_Info;
 	permanent   = FALSE;
-	description = "Хорошо. Я убью Хош-Пака.";
+	description = "РҐРѕСЂРѕС€Рѕ. РЇ СѓР±СЊСЋ РҐРѕС€-РџР°РєР°.";
 };
 
 FUNC INT DIA_Oric_WillHelp_Condition()
@@ -477,14 +477,14 @@ FUNC INT DIA_Oric_WillHelp_Condition()
 
 FUNC VOID DIA_Oric_WillHelp_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_WillHelp_15_00"); //Хорошо. Я убью Хош-Пака.
-	AI_Output (self ,other,"DIA_Oric_WillHelp_11_01"); //Я рад слышать это.
-	AI_Output (self ,other,"DIA_Oric_WillHelp_11_02"); //Палатка Хош-Пака находится на небольшом утесе. Ты, должно быть, уже видел его раньше.
-	AI_Output (self ,other,"DIA_Oric_WillHelp_11_03"); //Этот утес стоит неподалеку от дороги, ведущей к нашей шахте. В тени огромной горы.
+	AI_Output (other,self ,"DIA_Oric_WillHelp_15_00"); //РҐРѕСЂРѕС€Рѕ. РЇ СѓР±СЊСЋ РҐРѕС€-РџР°РєР°.
+	AI_Output (self ,other,"DIA_Oric_WillHelp_11_01"); //РЇ СЂР°Рґ СЃР»С‹С€Р°С‚СЊ СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_Oric_WillHelp_11_02"); //РџР°Р»Р°С‚РєР° РҐРѕС€-РџР°РєР° РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РЅРµР±РѕР»СЊС€РѕРј СѓС‚РµСЃРµ. РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, СѓР¶Рµ РІРёРґРµР» РµРіРѕ СЂР°РЅСЊС€Рµ.
+	AI_Output (self ,other,"DIA_Oric_WillHelp_11_03"); //Р­С‚РѕС‚ СѓС‚РµСЃ СЃС‚РѕРёС‚ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РґРѕСЂРѕРіРё, РІРµРґСѓС‰РµР№ Рє РЅР°С€РµР№ С€Р°С…С‚Рµ. Р’ С‚РµРЅРё РѕРіСЂРѕРјРЅРѕР№ РіРѕСЂС‹.
 	
 	Log_CreateTopic (TOPIC_KillHoshPak, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KillHoshPak, LOG_RUNNING);
-	B_LogEntry (TOPIC_KillHoshPak,"Орик хочет, чтобы я убил шамана орков Хош-Пака. Его палатка находится на небольшом утесе недалеко от задней части замка."); 
+	B_LogEntry (TOPIC_KillHoshPak,"РћСЂРёРє С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СѓР±РёР» С€Р°РјР°РЅР° РѕСЂРєРѕРІ РҐРѕС€-РџР°РєР°. Р•РіРѕ РїР°Р»Р°С‚РєР° РЅР°С…РѕРґРёС‚СЃСЏ РЅР° РЅРµР±РѕР»СЊС€РѕРј СѓС‚РµСЃРµ РЅРµРґР°Р»РµРєРѕ РѕС‚ Р·Р°РґРЅРµР№ С‡Р°СЃС‚Рё Р·Р°РјРєР°."); 
 
 	MIS_KillHoshPak = LOG_RUNNING;
 };
@@ -500,7 +500,7 @@ INSTANCE DIA_Oric_HoshDead   (C_INFO)
 	condition   = DIA_Oric_HoshDead_Condition;
 	information = DIA_Oric_HoshDead_Info;
 	permanent   = FALSE;
-	description = "Хош-Пак мертв!";
+	description = "РҐРѕС€-РџР°Рє РјРµСЂС‚РІ!";
 };
 
 FUNC INT DIA_Oric_HoshDead_Condition()
@@ -514,9 +514,9 @@ FUNC INT DIA_Oric_HoshDead_Condition()
 
 FUNC VOID DIA_Oric_HoshDead_Info()
 {
-	AI_Output (other,self ,"DIA_Oric_HoshDead_15_00"); //Хош-Пак мертв!
-	AI_Output (self ,other,"DIA_Oric_HoshDead_11_01"); //Отлично, это обязательно посеет хаос в рядах орков. Может быть, у нас все еще есть какие-то шансы.
-	AI_Output (self ,other,"DIA_Oric_HoshDead_11_02"); //Я думаю, это позволит нам получить передышку, по крайней мере, на неделю.
+	AI_Output (other,self ,"DIA_Oric_HoshDead_15_00"); //РҐРѕС€-РџР°Рє РјРµСЂС‚РІ!
+	AI_Output (self ,other,"DIA_Oric_HoshDead_11_01"); //РћС‚Р»РёС‡РЅРѕ, СЌС‚Рѕ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕСЃРµРµС‚ С…Р°РѕСЃ РІ СЂСЏРґР°С… РѕСЂРєРѕРІ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ РЅР°СЃ РІСЃРµ РµС‰Рµ РµСЃС‚СЊ РєР°РєРёРµ-С‚Рѕ С€Р°РЅСЃС‹.
+	AI_Output (self ,other,"DIA_Oric_HoshDead_11_02"); //РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РїРѕР·РІРѕР»РёС‚ РЅР°Рј РїРѕР»СѓС‡РёС‚СЊ РїРµСЂРµРґС‹С€РєСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РЅР° РЅРµРґРµР»СЋ.
 	
 	MIS_KillHoshPak = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KillHosh_Pak);
@@ -536,7 +536,7 @@ INSTANCE DIA_Oric_AnyNews   (C_INFO)
 	information = DIA_Oric_AnyNews_Info;
 	permanent	 = 	TRUE;
 
-	description = "Есть новости?";
+	description = "Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 
 FUNC INT DIA_Oric_AnyNews_Condition()
@@ -551,23 +551,23 @@ FUNC INT DIA_Oric_AnyNews_Condition()
 FUNC VOID DIA_Oric_AnyNews_Info()
 {
 
-	AI_Output (other,self ,"DIA_Oric_AnyNews_15_00"); //Есть новости?
+	AI_Output (other,self ,"DIA_Oric_AnyNews_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (MIS_OCGateOpen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_01"); //Ты имеешь в виду, кроме того, что орки вторглись в замок?
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_01"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ, РєСЂРѕРјРµ С‚РѕРіРѕ, С‡С‚Рѕ РѕСЂРєРё РІС‚РѕСЂРіР»РёСЃСЊ РІ Р·Р°РјРѕРє?
 	}
 	else if (MIS_AllDragonsDead == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_02"); //Да. Ты наш герой. Уничтожить всех драконов разом - это воистину героический подвиг. Я потрясен!
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_02"); //Р”Р°. РўС‹ РЅР°С€ РіРµСЂРѕР№. РЈРЅРёС‡С‚РѕР¶РёС‚СЊ РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ СЂР°Р·РѕРј - СЌС‚Рѕ РІРѕРёСЃС‚РёРЅСѓ РіРµСЂРѕРёС‡РµСЃРєРёР№ РїРѕРґРІРёРі. РЇ РїРѕС‚СЂСЏСЃРµРЅ!
 	}
 	else if (MIS_KillHoshPak == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_03"); //Орки, похоже, выбиты из колеи смертью Хош-Пака.
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_03"); //РћСЂРєРё, РїРѕС…РѕР¶Рµ, РІС‹Р±РёС‚С‹ РёР· РєРѕР»РµРё СЃРјРµСЂС‚СЊСЋ РҐРѕС€-РџР°РєР°.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Oric_AnyNews_11_04"); //Орков становится все больше и больше. Мне это не нравится.
+		AI_Output (self ,other,"DIA_Oric_AnyNews_11_04"); //РћСЂРєРѕРІ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РІСЃРµ Р±РѕР»СЊС€Рµ Рё Р±РѕР»СЊС€Рµ. РњРЅРµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ.
 	};
 };
 
@@ -581,7 +581,7 @@ instance DIA_Oric_DragonPlettBericht		(C_INFO)
 	condition	 = 	DIA_Oric_DragonPlettBericht_Condition;
 	information	 = 	DIA_Oric_DragonPlettBericht_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Мне нужна информация о драконах.";
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ РґСЂР°РєРѕРЅР°С….";
 };
 
 func int DIA_Oric_DragonPlettBericht_Condition ()
@@ -602,15 +602,15 @@ var int Oric_DragonCounter;
 var int Oric_FirstQuestion;
 func void DIA_Oric_DragonPlettBericht_Info ()
 {
-	AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_00"); //Мне нужна информация о драконах.
+	AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_00"); //РњРЅРµ РЅСѓР¶РЅР° РёРЅС„РѕСЂРјР°С†РёСЏ Рѕ РґСЂР°РєРѕРЅР°С….
 	
 	if (MIS_KilledDragons == 1)
 	{
-		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_01"); //Я уже убил одного из них. Ты можешь сказать мне, где нужно искать других?
+		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_01"); //РЇ СѓР¶Рµ СѓР±РёР» РѕРґРЅРѕРіРѕ РёР· РЅРёС…. РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ, РіРґРµ РЅСѓР¶РЅРѕ РёСЃРєР°С‚СЊ РґСЂСѓРіРёС…?
 	}
 	else if (MIS_KilledDragons != 0) 
 	{
-		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_02"); //У меня есть чувство, что я пока нашел не всех драконов. Может, я что-то упустил?
+		AI_Output (other, self, "DIA_Oric_DragonPlettBericht_15_02"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ С‡СѓРІСЃС‚РІРѕ, С‡С‚Рѕ СЏ РїРѕРєР° РЅР°С€РµР» РЅРµ РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ. РњРѕР¶РµС‚, СЏ С‡С‚Рѕ-С‚Рѕ СѓРїСѓСЃС‚РёР»?
 	};
 	
 	if ((Oric_DragonCounter < MIS_KilledDragons) || (Oric_FirstQuestion == FALSE))
@@ -622,30 +622,30 @@ func void DIA_Oric_DragonPlettBericht_Info ()
 		if ((Npc_IsDead(Swampdragon))== FALSE)
 		&& (Oric_SwampdragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_03"); //Несколько дней назад к западу от нашего замка появилось большое болото. Это довольно подозрительно, тебе так не кажется?
-			B_LogEntry (TOPIC_DRACHENJAGD,"Орик дал мне повод к размышлению: За последние несколько дней к западу от замка образовалось большое болото. Он считает это очень подозрительным."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_03"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ Рє Р·Р°РїР°РґСѓ РѕС‚ РЅР°С€РµРіРѕ Р·Р°РјРєР° РїРѕСЏРІРёР»РѕСЃСЊ Р±РѕР»СЊС€РѕРµ Р±РѕР»РѕС‚Рѕ. Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ, С‚РµР±Рµ С‚Р°Рє РЅРµ РєР°Р¶РµС‚СЃСЏ?
+			B_LogEntry (TOPIC_DRACHENJAGD,"РћСЂРёРє РґР°Р» РјРЅРµ РїРѕРІРѕРґ Рє СЂР°Р·РјС‹С€Р»РµРЅРёСЋ: Р—Р° РїРѕСЃР»РµРґРЅРёРµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ Рє Р·Р°РїР°РґСѓ РѕС‚ Р·Р°РјРєР° РѕР±СЂР°Р·РѕРІР°Р»РѕСЃСЊ Р±РѕР»СЊС€РѕРµ Р±РѕР»РѕС‚Рѕ. РћРЅ СЃС‡РёС‚Р°РµС‚ СЌС‚Рѕ РѕС‡РµРЅСЊ РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅС‹Рј."); 
 			Oric_SwampdragonInfo_OneTime = TRUE;
 		}
 		else if ((Npc_IsDead(Rockdragon))==FALSE)
 		&& (Oric_RockdragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_04"); //На юге находится крепость в скалах, далеко за вулканом.
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_05"); //Наши разведчики докладывают, что эта крепость хорошо охраняется. Может быть, один из них скрывается там.
-			B_LogEntry (TOPIC_DRACHENJAGD,"Разведчики паладинов сообщили Орику, что крепость в скалах за вулканом на юге хорошо охраняется. Орик подозревает, что дракон находится там."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_04"); //РќР° СЋРіРµ РЅР°С…РѕРґРёС‚СЃСЏ РєСЂРµРїРѕСЃС‚СЊ РІ СЃРєР°Р»Р°С…, РґР°Р»РµРєРѕ Р·Р° РІСѓР»РєР°РЅРѕРј.
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_05"); //РќР°С€Рё СЂР°Р·РІРµРґС‡РёРєРё РґРѕРєР»Р°РґС‹РІР°СЋС‚, С‡С‚Рѕ СЌС‚Р° РєСЂРµРїРѕСЃС‚СЊ С…РѕСЂРѕС€Рѕ РѕС…СЂР°РЅСЏРµС‚СЃСЏ. РњРѕР¶РµС‚ Р±С‹С‚СЊ, РѕРґРёРЅ РёР· РЅРёС… СЃРєСЂС‹РІР°РµС‚СЃСЏ С‚Р°Рј.
+			B_LogEntry (TOPIC_DRACHENJAGD,"Р Р°Р·РІРµРґС‡РёРєРё РїР°Р»Р°РґРёРЅРѕРІ СЃРѕРѕР±С‰РёР»Рё РћСЂРёРєСѓ, С‡С‚Рѕ РєСЂРµРїРѕСЃС‚СЊ РІ СЃРєР°Р»Р°С… Р·Р° РІСѓР»РєР°РЅРѕРј РЅР° СЋРіРµ С…РѕСЂРѕС€Рѕ РѕС…СЂР°РЅСЏРµС‚СЃСЏ. РћСЂРёРє РїРѕРґРѕР·СЂРµРІР°РµС‚, С‡С‚Рѕ РґСЂР°РєРѕРЅ РЅР°С…РѕРґРёС‚СЃСЏ С‚Р°Рј."); 
 			Oric_RockdragonInfo_OneTime = TRUE;
 		}
 		else if ((Npc_IsDead(FireDragon))==FALSE)
 		&& (Oric_FiredragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_06"); //После прошлого нападения драконов, один из них, по слухам, полетел в направлении вулкана на юге. Тебе стоит поискать его там.
-			B_LogEntry (TOPIC_DRACHENJAGD,"По-видимому, последнего дракона, нападавшего на замок в Долине рудников, видели неподалеку от вулкана."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_06"); //РџРѕСЃР»Рµ РїСЂРѕС€Р»РѕРіРѕ РЅР°РїР°РґРµРЅРёСЏ РґСЂР°РєРѕРЅРѕРІ, РѕРґРёРЅ РёР· РЅРёС…, РїРѕ СЃР»СѓС…Р°Рј, РїРѕР»РµС‚РµР» РІ РЅР°РїСЂР°РІР»РµРЅРёРё РІСѓР»РєР°РЅР° РЅР° СЋРіРµ. РўРµР±Рµ СЃС‚РѕРёС‚ РїРѕРёСЃРєР°С‚СЊ РµРіРѕ С‚Р°Рј.
+			B_LogEntry (TOPIC_DRACHENJAGD,"РџРѕ-РІРёРґРёРјРѕРјСѓ, РїРѕСЃР»РµРґРЅРµРіРѕ РґСЂР°РєРѕРЅР°, РЅР°РїР°РґР°РІС€РµРіРѕ РЅР° Р·Р°РјРѕРє РІ Р”РѕР»РёРЅРµ СЂСѓРґРЅРёРєРѕРІ, РІРёРґРµР»Рё РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РІСѓР»РєР°РЅР°."); 
 			Oric_FiredragonInfo_OneTime = TRUE;
 		}
 		else if ((Npc_IsDead(IceDragon))==FALSE)
 		&& (Oric_IcedragonInfo_OneTime == FALSE)
 		{
-			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_07"); //На западе находится обширная ледяная долина. Я не удивлюсь, если один из драконов скрывается там.
-			B_LogEntry (TOPIC_DRACHENJAGD,"Согласно информации, полученной от Орика, заснеженный район на западе может быть логовом дракона."); 
+			AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_07"); //РќР° Р·Р°РїР°РґРµ РЅР°С…РѕРґРёС‚СЃСЏ РѕР±С€РёСЂРЅР°СЏ Р»РµРґСЏРЅР°СЏ РґРѕР»РёРЅР°. РЇ РЅРµ СѓРґРёРІР»СЋСЃСЊ, РµСЃР»Рё РѕРґРёРЅ РёР· РґСЂР°РєРѕРЅРѕРІ СЃРєСЂС‹РІР°РµС‚СЃСЏ С‚Р°Рј.
+			B_LogEntry (TOPIC_DRACHENJAGD,"РЎРѕРіР»Р°СЃРЅРѕ РёРЅС„РѕСЂРјР°С†РёРё, РїРѕР»СѓС‡РµРЅРЅРѕР№ РѕС‚ РћСЂРёРєР°, Р·Р°СЃРЅРµР¶РµРЅРЅС‹Р№ СЂР°Р№РѕРЅ РЅР° Р·Р°РїР°РґРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ Р»РѕРіРѕРІРѕРј РґСЂР°РєРѕРЅР°."); 
 			Oric_IcedragonInfo_OneTime = TRUE;
 		};
 		Oric_DragonCounter = MIS_KilledDragons;
@@ -653,7 +653,7 @@ func void DIA_Oric_DragonPlettBericht_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_08"); //В настоящий момент мне нечего сказать тебе.
+		AI_Output (self, other, "DIA_Oric_DragonPlettBericht_11_08"); //Р’ РЅР°СЃС‚РѕСЏС‰РёР№ РјРѕРјРµРЅС‚ РјРЅРµ РЅРµС‡РµРіРѕ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ.
 	};
 };
 
@@ -735,7 +735,7 @@ INSTANCE DIA_Oric_PICKPOCKET (C_INFO)
 	condition	= DIA_Oric_PICKPOCKET_Condition;
 	information	= DIA_Oric_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот свиток будет чертовски сложно)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ СЃРІРёС‚РѕРє Р±СѓРґРµС‚ С‡РµСЂС‚РѕРІСЃРєРё СЃР»РѕР¶РЅРѕ)";
 };                       
 
 FUNC INT DIA_Oric_PICKPOCKET_Condition()

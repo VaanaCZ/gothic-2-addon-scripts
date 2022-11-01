@@ -31,7 +31,7 @@ instance DIA_Addon_Cronos_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Hallo_Condition;
 	information	 = 	DIA_Addon_Cronos_Hallo_Info;
 
-	description	 = 	"Я могу тебя побеспокоить?";
+	description	 = 	"РЇ РјРѕРіСѓ С‚РµР±СЏ РїРѕР±РµСЃРїРѕРєРѕРёС‚СЊ?";
 };
 
 func int DIA_Addon_Cronos_Hallo_Condition ()
@@ -41,10 +41,10 @@ func int DIA_Addon_Cronos_Hallo_Condition ()
 
 func void DIA_Addon_Cronos_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //Я могу тебя побеспокоить?
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(удивлено) Это ТЫ? Не думал, что мне еще когда-нибудь доведется увидеть твое лицо.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Ты храбрец, если решил здесь показаться. Некоторое время назад мы были готовы заживо содрать с  тебя кожу.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //К счастью для тебя, с того времени прошло уже несколько недель, так что мы немного успокоились.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //РЇ РјРѕРіСѓ С‚РµР±СЏ РїРѕР±РµСЃРїРѕРєРѕРёС‚СЊ?
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(СѓРґРёРІР»РµРЅРѕ) Р­С‚Рѕ РўР«? РќРµ РґСѓРјР°Р», С‡С‚Рѕ РјРЅРµ РµС‰Рµ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РґРѕРІРµРґРµС‚СЃСЏ СѓРІРёРґРµС‚СЊ С‚РІРѕРµ Р»РёС†Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //РўС‹ С…СЂР°Р±СЂРµС†, РµСЃР»Рё СЂРµС€РёР» Р·РґРµСЃСЊ РїРѕРєР°Р·Р°С‚СЊСЃСЏ. РќРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅР°Р·Р°Рґ РјС‹ Р±С‹Р»Рё РіРѕС‚РѕРІС‹ Р·Р°Р¶РёРІРѕ СЃРѕРґСЂР°С‚СЊ СЃ  С‚РµР±СЏ РєРѕР¶Сѓ.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Рљ СЃС‡Р°СЃС‚СЊСЋ РґР»СЏ С‚РµР±СЏ, СЃ С‚РѕРіРѕ РІСЂРµРјРµРЅРё РїСЂРѕС€Р»Рѕ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ, С‚Р°Рє С‡С‚Рѕ РјС‹ РЅРµРјРЅРѕРіРѕ СѓСЃРїРѕРєРѕРёР»РёСЃСЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -57,7 +57,7 @@ instance DIA_Addon_Cronos_WasMachstdu		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_WasMachstdu_Condition;
 	information	 = 	DIA_Addon_Cronos_WasMachstdu_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Addon_Cronos_WasMachstdu_Condition ()
@@ -70,11 +70,11 @@ func int DIA_Addon_Cronos_WasMachstdu_Condition ()
 
 func void DIA_Addon_Cronos_WasMachstdu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Что ты здесь делаешь?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //Моя задача - выяснить как можно больше об охранниках храма.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Непростая задача, скажу я тебе. Свойства этих каменных стражей мне совершенно незнакомы.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //Они могут стоять, совершенно не подавая признаков жизни, а через секунду уже нападать на тебя, как одержимые.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Я еще не определил силу, которая приводит их в движение, но в одном у меня сомнений нет: природа этой силы магическая.
+	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //РњРѕСЏ Р·Р°РґР°С‡Р° - РІС‹СЏСЃРЅРёС‚СЊ РєР°Рє РјРѕР¶РЅРѕ Р±РѕР»СЊС€Рµ РѕР± РѕС…СЂР°РЅРЅРёРєР°С… С…СЂР°РјР°.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //РќРµРїСЂРѕСЃС‚Р°СЏ Р·Р°РґР°С‡Р°, СЃРєР°Р¶Сѓ СЏ С‚РµР±Рµ. РЎРІРѕР№СЃС‚РІР° СЌС‚РёС… РєР°РјРµРЅРЅС‹С… СЃС‚СЂР°Р¶РµР№ РјРЅРµ СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµР·РЅР°РєРѕРјС‹.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //РћРЅРё РјРѕРіСѓС‚ СЃС‚РѕСЏС‚СЊ, СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµ РїРѕРґР°РІР°СЏ РїСЂРёР·РЅР°РєРѕРІ Р¶РёР·РЅРё, Р° С‡РµСЂРµР· СЃРµРєСѓРЅРґСѓ СѓР¶Рµ РЅР°РїР°РґР°С‚СЊ РЅР° С‚РµР±СЏ, РєР°Рє РѕРґРµСЂР¶РёРјС‹Рµ.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //РЇ РµС‰Рµ РЅРµ РѕРїСЂРµРґРµР»РёР» СЃРёР»Сѓ, РєРѕС‚РѕСЂР°СЏ РїСЂРёРІРѕРґРёС‚ РёС… РІ РґРІРёР¶РµРЅРёРµ, РЅРѕ РІ РѕРґРЅРѕРј Сѓ РјРµРЅСЏ СЃРѕРјРЅРµРЅРёР№ РЅРµС‚: РїСЂРёСЂРѕРґР° СЌС‚РѕР№ СЃРёР»С‹ РјР°РіРёС‡РµСЃРєР°СЏ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Waechter
@@ -86,7 +86,7 @@ instance DIA_Addon_Cronos_Waechter		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Waechter_Condition;
 	information	 = 	DIA_Addon_Cronos_Waechter_Info;
 
-	description	 = 	"Расскажи мне о каменных стражах.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РєР°РјРµРЅРЅС‹С… СЃС‚СЂР°Р¶Р°С….";
 };
 
 func int DIA_Addon_Cronos_Waechter_Condition ()
@@ -99,11 +99,11 @@ func int DIA_Addon_Cronos_Waechter_Condition ()
 
 func void DIA_Addon_Cronos_Waechter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Расскажи мне о каменных стражах.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //Многого я сказать пока не могу. К сожалению, нам пришлось их уничтожить. Теперь они не опасны.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //Когда мы только пришли сюда, они напали на нас.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Лишь объединенными силами нам удалось их победить. Боюсь, за порталом нас ждут новые стражи.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Должен быть способ закрыть источник их силы, чтобы они оставались лишь безжизненными статуями.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РєР°РјРµРЅРЅС‹С… СЃС‚СЂР°Р¶Р°С….
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //РњРЅРѕРіРѕРіРѕ СЏ СЃРєР°Р·Р°С‚СЊ РїРѕРєР° РЅРµ РјРѕРіСѓ. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РЅР°Рј РїСЂРёС€Р»РѕСЃСЊ РёС… СѓРЅРёС‡С‚РѕР¶РёС‚СЊ. РўРµРїРµСЂСЊ РѕРЅРё РЅРµ РѕРїР°СЃРЅС‹.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //РљРѕРіРґР° РјС‹ С‚РѕР»СЊРєРѕ РїСЂРёС€Р»Рё СЃСЋРґР°, РѕРЅРё РЅР°РїР°Р»Рё РЅР° РЅР°СЃ.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Р›РёС€СЊ РѕР±СЉРµРґРёРЅРµРЅРЅС‹РјРё СЃРёР»Р°РјРё РЅР°Рј СѓРґР°Р»РѕСЃСЊ РёС… РїРѕР±РµРґРёС‚СЊ. Р‘РѕСЋСЃСЊ, Р·Р° РїРѕСЂС‚Р°Р»РѕРј РЅР°СЃ Р¶РґСѓС‚ РЅРѕРІС‹Рµ СЃС‚СЂР°Р¶Рё.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Р”РѕР»Р¶РµРЅ Р±С‹С‚СЊ СЃРїРѕСЃРѕР± Р·Р°РєСЂС‹С‚СЊ РёСЃС‚РѕС‡РЅРёРє РёС… СЃРёР»С‹, С‡С‚РѕР±С‹ РѕРЅРё РѕСЃС‚Р°РІР°Р»РёСЃСЊ Р»РёС€СЊ Р±РµР·Р¶РёР·РЅРµРЅРЅС‹РјРё СЃС‚Р°С‚СѓСЏРјРё.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ instance DIA_Addon_Cronos_NW_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Cronos_NW_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Ты можешь продать мне какие-нибудь припасы?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РїСЂРёРїР°СЃС‹?";
 };
 
 func int DIA_Addon_Cronos_NW_Trade_Condition ()
@@ -133,16 +133,16 @@ var int DIA_Addon_Cronos_NW_Trade_OneTime;
 func void DIA_Addon_Cronos_NW_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //Ты можешь продать мне какие-нибудь припасы?
+	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РїСЂРёРїР°СЃС‹?
 
 	if (DIA_Addon_Cronos_NW_Trade_OneTime==FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //Почему бы и нет? Если я правильно помню, мы с тобой уже вели дела.
+		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? Р•СЃР»Рё СЏ РїСЂР°РІРёР»СЊРЅРѕ РїРѕРјРЅСЋ, РјС‹ СЃ С‚РѕР±РѕР№ СѓР¶Рµ РІРµР»Рё РґРµР»Р°.
 		
 		DIA_Addon_Cronos_NW_Trade_OneTime = TRUE;
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_02"); //Итак, что тебе нужно?
+	AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_02"); //РС‚Р°Рє, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 
 	Log_CreateTopic (Topic_OutTrader,LOG_NOTE);
 	B_LogEntry (Topic_OutTrader, LogText_Addon_CronosTrade);

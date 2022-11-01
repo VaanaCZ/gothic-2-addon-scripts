@@ -29,7 +29,7 @@ instance DIA_Addon_SawPirate_Hello(C_INFO)
 	condition	= DIA_Addon_SawPirate_Hello_Condition;
 	information	= DIA_Addon_SawPirate_Hello_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 func INT DIA_Addon_SawPirate_Hello_Condition()
 {
@@ -37,8 +37,8 @@ func INT DIA_Addon_SawPirate_Hello_Condition()
 };
 func VOID DIA_Addon_SawPirate_Hello_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_SawPirate_Hello_15_00"); //Как дела?
-	AI_Output (self,other,"DIA_Addon_SawPirate_Hello_09_01"); //Не приставай ко мне.
+	AI_Output (other,self,"DIA_Addon_SawPirate_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self,other,"DIA_Addon_SawPirate_Hello_09_01"); //РќРµ РїСЂРёСЃС‚Р°РІР°Р№ РєРѕ РјРЅРµ.
 };
 
 // ************************************************************
@@ -56,7 +56,7 @@ instance DIA_Addon_SawPirate_Anheuern(C_INFO)
 	condition	= DIA_Addon_SawPirate_Anheuern_Condition;
 	information	= DIA_Addon_SawPirate_Anheuern_Info;
 	permanent	= FALSE;
-	description = "Ты один из людей Генри?";
+	description = "РўС‹ РѕРґРёРЅ РёР· Р»СЋРґРµР№ Р“РµРЅСЂРё?";
 };                       
 FUNC INT DIA_Addon_SawPirate_Anheuern_Condition()
 {
@@ -67,12 +67,12 @@ FUNC INT DIA_Addon_SawPirate_Anheuern_Condition()
 };
 func VOID DIA_Addon_SawPirate_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_JoinHenry_15_00"); //Ты один из людей Генри?
-	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_01"); //Нет. Просто мне нравится пилить деревья.
-	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_02"); //Что такое? Генри поручил тебе какое-то задание?
-	AI_Output (other,self ,"DIA_Addon_Bones_JoinHenry_15_04"); //Да. Я должен убить нескольких бандитов.
-	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_03"); //Нет. Не-ет! Не смотри на меня так! Я не хочу туда идти.
-	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_04"); //Мне нужно пилить, ты меня слышишь?
+	AI_Output (other,self ,"DIA_Addon_Bones_JoinHenry_15_00"); //РўС‹ РѕРґРёРЅ РёР· Р»СЋРґРµР№ Р“РµРЅСЂРё?
+	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_01"); //РќРµС‚. РџСЂРѕСЃС‚Рѕ РјРЅРµ РЅСЂР°РІРёС‚СЃСЏ РїРёР»РёС‚СЊ РґРµСЂРµРІСЊСЏ.
+	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_02"); //Р§С‚Рѕ С‚Р°РєРѕРµ? Р“РµРЅСЂРё РїРѕСЂСѓС‡РёР» С‚РµР±Рµ РєР°РєРѕРµ-С‚Рѕ Р·Р°РґР°РЅРёРµ?
+	AI_Output (other,self ,"DIA_Addon_Bones_JoinHenry_15_04"); //Р”Р°. РЇ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ РЅРµСЃРєРѕР»СЊРєРёС… Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_03"); //РќРµС‚. РќРµ-РµС‚! РќРµ СЃРјРѕС‚СЂРё РЅР° РјРµРЅСЏ С‚Р°Рє! РЇ РЅРµ С…РѕС‡Сѓ С‚СѓРґР° РёРґС‚Рё.
+	AI_Output (self, other, "DIA_Addon_SawPirate_Anheuern_09_04"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРёР»РёС‚СЊ, С‚С‹ РјРµРЅСЏ СЃР»С‹С€РёС€СЊ?
 };
 // ------------------------------------------------------------
 // 						Komm (wieder) mit!
@@ -86,7 +86,7 @@ instance DIA_Addon_SawPirate_ComeOn(C_INFO)
 	condition	= DIA_Addon_SawPirate_ComeOn_Condition;
 	information	= DIA_Addon_SawPirate_ComeOn_Info;
 	permanent	= TRUE;
-	description	= "Пойдем со мной.";
+	description	= "РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.";
 };
 func int DIA_Addon_SawPirate_ComeOn_Condition ()
 {
@@ -100,20 +100,20 @@ func int DIA_Addon_SawPirate_ComeOn_Condition ()
 };
 func void DIA_Addon_SawPirate_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_SawPirate_ComeOn_15_00"); //Пойдем со мной.
+	AI_Output (other, self, "DIA_Addon_SawPirate_ComeOn_15_00"); //РџРѕР№РґРµРј СЃРѕ РјРЅРѕР№.
 	if (HammerPirate.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_01"); //Зачем я тебе нужен? С тобой уже есть люди...
+		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_01"); //Р—Р°С‡РµРј СЏ С‚РµР±Рµ РЅСѓР¶РµРЅ? РЎ С‚РѕР±РѕР№ СѓР¶Рµ РµСЃС‚СЊ Р»СЋРґРё...
 	}
 	else if (Npc_GetDistToWP (self, "ADW_PIRATECAMP_WAY_08") > 6000)
 	{	
-		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_04"); //Сначала давай подойдем поближе к лагерю.
+		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_04"); //РЎРЅР°С‡Р°Р»Р° РґР°РІР°Р№ РїРѕРґРѕР№РґРµРј РїРѕР±Р»РёР¶Рµ Рє Р»Р°РіРµСЂСЋ.
 		AI_StopProcessInfos (self);
 	}
 	else if (!Npc_IsDead(HammerPirate))
 	&& (SawPirate_ComeOn_Once == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_02"); //(ворчит) Он бы мог позвать и кого-нибудь другого...
+		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_02"); //(РІРѕСЂС‡РёС‚) РћРЅ Р±С‹ РјРѕРі РїРѕР·РІР°С‚СЊ Рё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РґСЂСѓРіРѕРіРѕ...
 		SawPirate_ComeOn_Once = TRUE;
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"FOLLOW");
@@ -121,7 +121,7 @@ func void DIA_Addon_SawPirate_ComeOn_Info ()
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_03"); //Есть!..
+		AI_Output (self ,other,"DIA_Addon_SawPirate_ComeOn_09_03"); //Р•СЃС‚СЊ!..
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"FOLLOW");
 		self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -138,7 +138,7 @@ INSTANCE DIA_Addon_SawPirate_GoHome(C_INFO)
 	condition	= DIA_Addon_SawPirate_GoHome_Condition;
 	information	= DIA_Addon_SawPirate_GoHome_Info;
 	permanent	= TRUE;
-	description = "Ты мне больше не нужен.";
+	description = "РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.";
 };                       
 FUNC INT DIA_Addon_SawPirate_GoHome_Condition()
 {
@@ -150,8 +150,8 @@ FUNC INT DIA_Addon_SawPirate_GoHome_Condition()
 
 FUNC VOID DIA_Addon_SawPirate_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_SawPirate_GoHome_15_00"); //Ты мне больше не нужен.
-	AI_Output (self ,other,"DIA_Addon_SawPirate_GoHome_09_01"); //В таком случае я вернусь к своей работе.
+	AI_Output (other,self ,"DIA_Addon_SawPirate_GoHome_15_00"); //РўС‹ РјРЅРµ Р±РѕР»СЊС€Рµ РЅРµ РЅСѓР¶РµРЅ.
+	AI_Output (self ,other,"DIA_Addon_SawPirate_GoHome_09_01"); //Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ СЏ РІРµСЂРЅСѓСЃСЊ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START"); 
@@ -180,8 +180,8 @@ FUNC INT DIA_Addon_SawPirate_TooFar_Condition()
 
 FUNC VOID DIA_Addon_SawPirate_TooFar_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_SawPirate_TooFar_09_01"); //Мы слишком далеко от лагеря. 
-	AI_Output (self ,other,"DIA_Addon_SawPirate_GoHome_09_02"); //Мне все это не нравится. Я возвращаюсь.
+	AI_Output (self ,other,"DIA_Addon_SawPirate_TooFar_09_01"); //РњС‹ СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ РѕС‚ Р»Р°РіРµСЂСЏ. 
+	AI_Output (self ,other,"DIA_Addon_SawPirate_GoHome_09_02"); //РњРЅРµ РІСЃРµ СЌС‚Рѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ. РЇ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -214,8 +214,8 @@ FUNC INT DIA_Addon_SawPirate_Success_Condition()
 
 FUNC VOID DIA_Addon_SawPirate_Success_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_SawPirate_Success_09_01"); //Знаешь что? Поразмыслив, я решил, что ты просто сволочь!
-	AI_Output (self ,other,"DIA_Addon_SawPirate_Success_09_02"); //Я возвращаюсь в лагерь и надеюсь, что больше тебя никогда не увижу!
+	AI_Output (self ,other,"DIA_Addon_SawPirate_Success_09_01"); //Р—РЅР°РµС€СЊ С‡С‚Рѕ? РџРѕСЂР°Р·РјС‹СЃР»РёРІ, СЏ СЂРµС€РёР», С‡С‚Рѕ С‚С‹ РїСЂРѕСЃС‚Рѕ СЃРІРѕР»РѕС‡СЊ!
+	AI_Output (self ,other,"DIA_Addon_SawPirate_Success_09_02"); //РЇ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ РІ Р»Р°РіРµСЂСЊ Рё РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р±РѕР»СЊС€Рµ С‚РµР±СЏ РЅРёРєРѕРіРґР° РЅРµ СѓРІРёР¶Сѓ!
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");

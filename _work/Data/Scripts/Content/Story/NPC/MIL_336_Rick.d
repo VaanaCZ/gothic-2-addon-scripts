@@ -2,7 +2,7 @@
 instance Mil_336_Rick (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ðèê";	
+	name 		= "Ð Ð¸Ðº";	
 	guild 		= GIL_NONE;  
 	id 			= 336;
 	voice 		= 10;

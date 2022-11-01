@@ -1,7 +1,7 @@
 INSTANCE PIR_1365_Addon_Matt (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Матт";
+	name 		= "РњР°С‚С‚";
 	guild 		= GIL_PIR;
 	id 			= 1365;
 	voice 		= 10;

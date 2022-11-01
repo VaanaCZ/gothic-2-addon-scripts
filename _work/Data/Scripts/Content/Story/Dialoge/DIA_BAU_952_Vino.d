@@ -47,12 +47,12 @@ func int DIA_Vino_HALLO_Condition ()
 };
 func void DIA_Vino_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //Как идет работа?
-	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Так же, как и всегда. Работы много, денег мало, а если нам совсем не повезет, то завтра придут орки и сожгут нашу ферму дотла.
+	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р°?
+	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //РўР°Рє Р¶Рµ, РєР°Рє Рё РІСЃРµРіРґР°. Р Р°Р±РѕС‚С‹ РјРЅРѕРіРѕ, РґРµРЅРµРі РјР°Р»Рѕ, Р° РµСЃР»Рё РЅР°Рј СЃРѕРІСЃРµРј РЅРµ РїРѕРІРµР·РµС‚, С‚Рѕ Р·Р°РІС‚СЂР° РїСЂРёРґСѓС‚ РѕСЂРєРё Рё СЃРѕР¶РіСѓС‚ РЅР°С€Сѓ С„РµСЂРјСѓ РґРѕС‚Р»Р°.
 	
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_HALLO_05_02"); //Королевские паладины заняли весь город. Но я очень сомневаюсь в том, что они поднимут свои задницы и придут сюда, если орки нападут на нас.
+			AI_Output (self, other, "DIA_Vino_HALLO_05_02"); //РљРѕСЂРѕР»РµРІСЃРєРёРµ РїР°Р»Р°РґРёРЅС‹ Р·Р°РЅСЏР»Рё РІРµСЃСЊ РіРѕСЂРѕРґ. РќРѕ СЏ РѕС‡РµРЅСЊ СЃРѕРјРЅРµРІР°СЋСЃСЊ РІ С‚РѕРј, С‡С‚Рѕ РѕРЅРё РїРѕРґРЅРёРјСѓС‚ СЃРІРѕРё Р·Р°РґРЅРёС†С‹ Рё РїСЂРёРґСѓС‚ СЃСЋРґР°, РµСЃР»Рё РѕСЂРєРё РЅР°РїР°РґСѓС‚ РЅР° РЅР°СЃ.
 		};
 };
 
@@ -66,7 +66,7 @@ instance DIA_Vino_SeekWork		(C_INFO)
 	condition	= DIA_Vino_SeekWork_Condition;
 	information	= DIA_Vino_SeekWork_Info;
 	permanent 	= FALSE;
-	description	= "Могу я чем-нибудь помочь? Я ищу работу.";
+	description	= "РњРѕРіСѓ СЏ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ? РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.";
 	
 };
 func int DIA_Vino_SeekWork_Condition ()
@@ -81,42 +81,42 @@ func int DIA_Vino_SeekWork_Condition ()
 };
 func void DIA_Vino_SeekWork_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //Могу я чем-нибудь помочь? Я ищу работу.
+	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //РњРѕРіСѓ СЏ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ? РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //А ты вообще что-нибудь знаешь о полевых работах?
-		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //А что там такого знать-то?
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //Ах! В таком случае... я думаю, мы и сами справимся, спасибо.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //Рђ С‚С‹ РІРѕРѕР±С‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС€СЊ Рѕ РїРѕР»РµРІС‹С… СЂР°Р±РѕС‚Р°С…?
+		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //Рђ С‡С‚Рѕ С‚Р°Рј С‚Р°РєРѕРіРѕ Р·РЅР°С‚СЊ-С‚Рѕ?
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //РђС…! Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ... СЏ РґСѓРјР°СЋ, РјС‹ Рё СЃР°РјРё СЃРїСЂР°РІРёРјСЃСЏ, СЃРїР°СЃРёР±Рѕ.
 		
 		if (!Npc_IsDead(Lobart))
 		{
-			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //Но если ты хочешь работать на Лобарта в качестве поденного рабочего, я могу только предупредить тебя. Он платит людям вроде тебя сущие гроши!
+			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //РќРѕ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° Р›РѕР±Р°СЂС‚Р° РІ РєР°С‡РµСЃС‚РІРµ РїРѕРґРµРЅРЅРѕРіРѕ СЂР°Р±РѕС‡РµРіРѕ, СЏ РјРѕРіСѓ С‚РѕР»СЊРєРѕ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ. РћРЅ РїР»Р°С‚РёС‚ Р»СЋРґСЏРј РІСЂРѕРґРµ С‚РµР±СЏ СЃСѓС‰РёРµ РіСЂРѕС€Рё!
 		
 			if ( (Mob_HasItems("CHEST_LOBART", ITAR_Bau_L) == TRUE) || (Npc_HasItems (lobart, itar_bau_l) > 0) )
 			&& (Lobart_Kleidung_Verkauft == FALSE)
 			&& ( (Npc_KnowsInfo (other, DIA_Lobart_KLEIDUNG)) || (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW)) )
 			{
-				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //Он предложил купить у него чистую одежду дешевле, если я буду помогать на ферме.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Хмм. У меня нет для тебя никакой работы, но ты можешь принести мне и парням что-нибудь выпить.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //Принеси мне бутылку вина, и я скажу Лобарту, что ты очень помог нам (смеется издевательски).
+				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //РћРЅ РїСЂРµРґР»РѕР¶РёР» РєСѓРїРёС‚СЊ Сѓ РЅРµРіРѕ С‡РёСЃС‚СѓСЋ РѕРґРµР¶РґСѓ РґРµС€РµРІР»Рµ, РµСЃР»Рё СЏ Р±СѓРґСѓ РїРѕРјРѕРіР°С‚СЊ РЅР° С„РµСЂРјРµ.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //РҐРјРј. РЈ РјРµРЅСЏ РЅРµС‚ РґР»СЏ С‚РµР±СЏ РЅРёРєР°РєРѕР№ СЂР°Р±РѕС‚С‹, РЅРѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёРЅРµСЃС‚Рё РјРЅРµ Рё РїР°СЂРЅСЏРј С‡С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹РїРёС‚СЊ.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //РџСЂРёРЅРµСЃРё РјРЅРµ Р±СѓС‚С‹Р»РєСѓ РІРёРЅР°, Рё СЏ СЃРєР°Р¶Сѓ Р›РѕР±Р°СЂС‚Сѓ, С‡С‚Рѕ С‚С‹ РѕС‡РµРЅСЊ РїРѕРјРѕРі РЅР°Рј (СЃРјРµРµС‚СЃСЏ РёР·РґРµРІР°С‚РµР»СЊСЃРєРё).
 				
 				MIS_Vino_Wein = LOG_RUNNING;
 				
 				Log_CreateTopic (TOPIC_Vino,LOG_MISSION);
 				Log_SetTopicStatus (TOPIC_Vino,LOG_RUNNING);
-				B_LogEntry (TOPIC_Vino,"Если я принесу Вино бутылку вина, он скажет Лобарту, что я помог ему.");
+				B_LogEntry (TOPIC_Vino,"Р•СЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ Р’РёРЅРѕ Р±СѓС‚С‹Р»РєСѓ РІРёРЅР°, РѕРЅ СЃРєР°Р¶РµС‚ Р›РѕР±Р°СЂС‚Сѓ, С‡С‚Рѕ СЏ РїРѕРјРѕРі РµРјСѓ.");
 				
 			}
 			else
 			{	
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_08"); //Но ты не слышал этого от меня, понятно?
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_08"); //РќРѕ С‚С‹ РЅРµ СЃР»С‹С€Р°Р» СЌС‚РѕРіРѕ РѕС‚ РјРµРЅСЏ, РїРѕРЅСЏС‚РЅРѕ?
 			};
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //Я не думаю, что тебе это понравится. Человек твоего положения вряд ли захочет делать такую грязную работу, что я могу предложить.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµР±Рµ СЌС‚Рѕ РїРѕРЅСЂР°РІРёС‚СЃСЏ. Р§РµР»РѕРІРµРє С‚РІРѕРµРіРѕ РїРѕР»РѕР¶РµРЅРёСЏ РІСЂСЏРґ Р»Рё Р·Р°С…РѕС‡РµС‚ РґРµР»Р°С‚СЊ С‚Р°РєСѓСЋ РіСЂСЏР·РЅСѓСЋ СЂР°Р±РѕС‚Сѓ, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ.
 	};
 };
 
@@ -130,7 +130,7 @@ instance DIA_Vino_BringWine		(C_INFO)
 	condition	= DIA_Vino_BringWine_Condition;
 	information	= DIA_Vino_BringWine_Info;
 	permanent 	= FALSE;
-	description	= "Вот твое вино.";
+	description	= "Р’РѕС‚ С‚РІРѕРµ РІРёРЅРѕ.";
 	
 };
 func int DIA_Vino_BringWine_Condition ()
@@ -144,16 +144,16 @@ func int DIA_Vino_BringWine_Condition ()
 };
 func void DIA_Vino_BringWine_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_BringWine_15_00"); //Вот твое вино.
+	AI_Output (other, self, "DIA_Vino_BringWine_15_00"); //Р’РѕС‚ С‚РІРѕРµ РІРёРЅРѕ.
 	B_GiveInvItems (other,self, itfo_wine, 1);
-	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //Я, пожалуй, не буду спрашивать, где ты взял его, хорошо? (смеется) Кого это волнует?
+	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //РЇ, РїРѕР¶Р°Р»СѓР№, РЅРµ Р±СѓРґСѓ СЃРїСЂР°С€РёРІР°С‚СЊ, РіРґРµ С‚С‹ РІР·СЏР» РµРіРѕ, С…РѕСЂРѕС€Рѕ? (СЃРјРµРµС‚СЃСЏ) РљРѕРіРѕ СЌС‚Рѕ РІРѕР»РЅСѓРµС‚?
 	if (!Npc_IsDead (Lobart))
 	{
-		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //Но все равно, спасибо.
+		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //РќРѕ РІСЃРµ СЂР°РІРЅРѕ, СЃРїР°СЃРёР±Рѕ.
 
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Лобарт услышит только хорошее о тебе.
+			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Р›РѕР±Р°СЂС‚ СѓСЃР»С‹С€РёС‚ С‚РѕР»СЊРєРѕ С…РѕСЂРѕС€РµРµ Рѕ С‚РµР±Рµ.
 		};
 	};
 	
@@ -174,7 +174,7 @@ instance DIA_Vino_ToTheCity (C_INFO)
 	condition	= DIA_Vino_ToTheCity_Condition;
 	information	= DIA_Vino_ToTheCity_Info;
 	permanent 	= FALSE;
-	description	= "Я направляюсь в город.";
+	description	= "РЇ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ РІ РіРѕСЂРѕРґ.";
 };
 
 func int DIA_Vino_ToTheCity_Condition ()
@@ -187,15 +187,15 @@ func int DIA_Vino_ToTheCity_Condition ()
 
 func void DIA_Vino_ToTheCity_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //Я направляюсь в город.
-	AI_Output (self, other, "DIA_Vino_ToTheCity_05_01"); //И?
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //Ты можешь рассказать о городе что-нибудь интересное?
-	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //Нет. Но Малет частенько ходит в город. Возможно, он что-нибудь знает... ну, что-нибудь, что может заинтересовать тебя.
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //РЇ РЅР°РїСЂР°РІР»СЏСЋСЃСЊ РІ РіРѕСЂРѕРґ.
+	AI_Output (self, other, "DIA_Vino_ToTheCity_05_01"); //Р?
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //РўС‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ РіРѕСЂРѕРґРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ?
+	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //РќРµС‚. РќРѕ РњР°Р»РµС‚ С‡Р°СЃС‚РµРЅСЊРєРѕ С…РѕРґРёС‚ РІ РіРѕСЂРѕРґ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р·РЅР°РµС‚... РЅСѓ, С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡С‚Рѕ РјРѕР¶РµС‚ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°С‚СЊ С‚РµР±СЏ.
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//								Gerьchte (PERM)
+//								GerСЊchte (PERM)
 ///////////////////////////////////////////////////////////////////////
 
 // --------------------------
@@ -210,7 +210,7 @@ instance DIA_Vino_PERM (C_INFO)
 	condition	= DIA_Vino_PERM_Condition;
 	information	= DIA_Vino_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Есть какие-нибудь интересные новости?";
+	description	= "Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РЅРѕРІРѕСЃС‚Рё?";
 };
 func int DIA_Vino_PERM_Condition ()
 {
@@ -222,26 +222,26 @@ func int DIA_Vino_PERM_Condition ()
 };
 func void DIA_Vino_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //Есть какие-нибудь интересные новости?
+	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //Р•СЃС‚СЊ РєР°РєРёРµ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅС‹Рµ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (Vino_Gossip_Orks == FALSE)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //Я могу поклясться, что видел орка вон там, на краю леса, два дня назад.
-		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //С тех пор я сплю хотя бы с одним открытым глазом.
+		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //РЇ РјРѕРіСѓ РїРѕРєР»СЏСЃС‚СЊСЃСЏ, С‡С‚Рѕ РІРёРґРµР» РѕСЂРєР° РІРѕРЅ С‚Р°Рј, РЅР° РєСЂР°СЋ Р»РµСЃР°, РґРІР° РґРЅСЏ РЅР°Р·Р°Рґ.
+		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //РЎ С‚РµС… РїРѕСЂ СЏ СЃРїР»СЋ С…РѕС‚СЏ Р±С‹ СЃ РѕРґРЅРёРј РѕС‚РєСЂС‹С‚С‹Рј РіР»Р°Р·РѕРј.
 		Vino_Gossip_Orks = TRUE;
 		Knows_Ork = TRUE;
 	}
 	else if (Vino_Gossip_Bugs == FALSE)
 	&& 		(MIS_AndreHelpLobart == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Эти огромные отвратительные насекомые уже всех достали. Они повсюду. Они сожрут все, что мы вырастили, если мы не сделаем что-нибудь.
-		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //Несколько дней назад я лежал в траве, размышляя о своем, и собирался вздремнуть, когда одна из этих тварей сожрала мой ботинок!
-		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //Ты бы видел, как я улепетывал. С тех пор я не могу спать спокойно.
+		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Р­С‚Рё РѕРіСЂРѕРјРЅС‹Рµ РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅС‹Рµ РЅР°СЃРµРєРѕРјС‹Рµ СѓР¶Рµ РІСЃРµС… РґРѕСЃС‚Р°Р»Рё. РћРЅРё РїРѕРІСЃСЋРґСѓ. РћРЅРё СЃРѕР¶СЂСѓС‚ РІСЃРµ, С‡С‚Рѕ РјС‹ РІС‹СЂР°СЃС‚РёР»Рё, РµСЃР»Рё РјС‹ РЅРµ СЃРґРµР»Р°РµРј С‡С‚Рѕ-РЅРёР±СѓРґСЊ.
+		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //РќРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ СЏ Р»РµР¶Р°Р» РІ С‚СЂР°РІРµ, СЂР°Р·РјС‹С€Р»СЏСЏ Рѕ СЃРІРѕРµРј, Рё СЃРѕР±РёСЂР°Р»СЃСЏ РІР·РґСЂРµРјРЅСѓС‚СЊ, РєРѕРіРґР° РѕРґРЅР° РёР· СЌС‚РёС… С‚РІР°СЂРµР№ СЃРѕР¶СЂР°Р»Р° РјРѕР№ Р±РѕС‚РёРЅРѕРє!
+		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //РўС‹ Р±С‹ РІРёРґРµР», РєР°Рє СЏ СѓР»РµРїРµС‚С‹РІР°Р». РЎ С‚РµС… РїРѕСЂ СЏ РЅРµ РјРѕРіСѓ СЃРїР°С‚СЊ СЃРїРѕРєРѕР№РЅРѕ.
 		Vino_Gossip_Bugs = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //Кроме того, что я уже сказал тебе? Нет.
+		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //РљСЂРѕРјРµ С‚РѕРіРѕ, С‡С‚Рѕ СЏ СѓР¶Рµ СЃРєР°Р·Р°Р» С‚РµР±Рµ? РќРµС‚.
 	};
 };
 
@@ -289,7 +289,7 @@ instance DIA_Vino_DMTAMSTART		(C_INFO)
 	information	 = 	DIA_Vino_DMTAMSTART_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"А как у тебя дела?";
+	description	 = 	"Рђ РєР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?";
 };
 
 func int DIA_Vino_DMTAMSTART_Condition ()
@@ -303,20 +303,20 @@ func int DIA_Vino_DMTAMSTART_Condition ()
 var int DIA_Vino_DMTAMSTART_OneTime;
 func void DIA_Vino_DMTAMSTART_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_DMTAMSTART_15_00"); //А как у тебя дела?
+	AI_Output			(other, self, "DIA_Vino_DMTAMSTART_15_00"); //Рђ РєР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?
 	
 	if (FoundVinosKellerei == TRUE)
 	&& (DIA_Vino_DMTAMSTART_OneTime == FALSE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Дерьмово. Ополчение нашло мой тайный винокуренный заводик.
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //Остается надеяться, что они никогда не узнают, что он принадлежал мне.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Р”РµСЂСЊРјРѕРІРѕ. РћРїРѕР»С‡РµРЅРёРµ РЅР°С€Р»Рѕ РјРѕР№ С‚Р°Р№РЅС‹Р№ РІРёРЅРѕРєСѓСЂРµРЅРЅС‹Р№ Р·Р°РІРѕРґРёРє.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //РћСЃС‚Р°РµС‚СЃСЏ РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ РѕРЅРё РЅРёРєРѕРіРґР° РЅРµ СѓР·РЅР°СЋС‚, С‡С‚Рѕ РѕРЅ РїСЂРёРЅР°РґР»РµР¶Р°Р» РјРЅРµ.
 		B_GivePlayerXP (XP_AmbientKap3);
 		DIA_Vino_DMTAMSTART_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //Эти ублюдки в черных рясах повсюду. Кто-нибудь должен засунуть их капюшоны им в глотку.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //Р­С‚Рё СѓР±Р»СЋРґРєРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… РїРѕРІСЃСЋРґСѓ. РљС‚Рѕ-РЅРёР±СѓРґСЊ РґРѕР»Р¶РµРЅ Р·Р°СЃСѓРЅСѓС‚СЊ РёС… РєР°РїСЋС€РѕРЅС‹ РёРј РІ РіР»РѕС‚РєСѓ.
 	};
 };
 
@@ -332,7 +332,7 @@ instance DIA_Vino_Obesessed		(C_INFO)
 	information	 = 	DIA_Vino_Obesessed_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Что с тобой?";
+	description	 = 	"Р§С‚Рѕ СЃ С‚РѕР±РѕР№?";
 };
 
 func int DIA_Vino_Obesessed_Condition ()
@@ -356,8 +356,8 @@ func void DIA_Vino_Obesessed_Info ()
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //Что с тобой?
-	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //(рычит) Черт, убей их. Иначе они убьют меня.
+	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //Р§С‚Рѕ СЃ С‚РѕР±РѕР№?
+	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //(СЂС‹С‡РёС‚) Р§РµСЂС‚, СѓР±РµР№ РёС…. РРЅР°С‡Рµ РѕРЅРё СѓР±СЊСЋС‚ РјРµРЅСЏ.
 	AI_StopProcessInfos (self);
 	DMT_Vino1.aivar[AIV_EnemyOverride] = FALSE;
 	DMT_Vino2.aivar[AIV_EnemyOverride] = FALSE;
@@ -377,7 +377,7 @@ instance DIA_Vino_Heilung		(C_INFO)
 	information	 = 	DIA_Vino_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты сам не свой.";
+	description	 = 	"РўС‹ СЃР°Рј РЅРµ СЃРІРѕР№.";
 };
 
 func int DIA_Vino_Heilung_Condition ()
@@ -392,17 +392,17 @@ func int DIA_Vino_Heilung_Condition ()
 var int DIA_Vino_Heilung_oneTime;
 func void DIA_Vino_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //Ты сам не свой.
-	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Моя голова... я не могу больше выносить это.
+	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //РўС‹ СЃР°Рј РЅРµ СЃРІРѕР№.
+	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //РњРѕСЏ РіРѕР»РѕРІР°... СЏ РЅРµ РјРѕРіСѓ Р±РѕР»СЊС€Рµ РІС‹РЅРѕСЃРёС‚СЊ СЌС‚Рѕ.
 
 	if (DIA_Vino_Heilung_oneTime == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //Ты должен сходить в монастырь. Пирокар, высший маг Огня, сможет помочь тебе.
-		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //Ты думаешь? Хорошо. Я попытаюсь.
+		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //РўС‹ РґРѕР»Р¶РµРЅ СЃС…РѕРґРёС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РџРёСЂРѕРєР°СЂ, РІС‹СЃС€РёР№ РјР°Рі РћРіРЅСЏ, СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //РўС‹ РґСѓРјР°РµС€СЊ? РҐРѕСЂРѕС€Рѕ. РЇ РїРѕРїС‹С‚Р°СЋСЃСЊ.
 		B_NpcClearObsessionByDMT (self);
 		B_StartOtherRoutine  (Vino,"Kloster"); 
 		
-		B_LogEntry (TOPIC_DEMENTOREN,"Вино одержим. Я отправил его в монастырь на лечение. Надеюсь, он сможет добраться туда живым."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Р’РёРЅРѕ РѕРґРµСЂР¶РёРј. РЇ РѕС‚РїСЂР°РІРёР» РµРіРѕ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РЅР° Р»РµС‡РµРЅРёРµ. РќР°РґРµСЋСЃСЊ, РѕРЅ СЃРјРѕР¶РµС‚ РґРѕР±СЂР°С‚СЊСЃСЏ С‚СѓРґР° Р¶РёРІС‹Рј."); 
 	
 		B_GivePlayerXP (XP_VinoFreeFromDMT);
 		DIA_Vino_Heilung_oneTime = TRUE;
@@ -457,7 +457,7 @@ instance DIA_Vino_PERM4OBSESSED		(C_INFO)
 	information	 = 	DIA_Vino_PERM4OBSESSED_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Как ты?";
+	description	 = 	"РљР°Рє С‚С‹?";
 };
 
 func int DIA_Vino_PERM4OBSESSED_Condition ()
@@ -474,12 +474,12 @@ var int DIA_Vino_PERM4OBSESSED_XP_oneTime;
 
 func void DIA_Vino_PERM4OBSESSED_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //Как ты?
-	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Да, да, все уже хорошо. Я думаю, парни смогут помочь мне. Но я все еще чувствую себя довольно паршиво.
+	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //РљР°Рє С‚С‹?
+	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Р”Р°, РґР°, РІСЃРµ СѓР¶Рµ С…РѕСЂРѕС€Рѕ. РЇ РґСѓРјР°СЋ, РїР°СЂРЅРё СЃРјРѕРіСѓС‚ РїРѕРјРѕС‡СЊ РјРЅРµ. РќРѕ СЏ РІСЃРµ РµС‰Рµ С‡СѓРІСЃС‚РІСѓСЋ СЃРµР±СЏ РґРѕРІРѕР»СЊРЅРѕ РїР°СЂС€РёРІРѕ.
 
 	if (DIA_Vino_PERM4OBSESSED_XP_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_02"); //Но должен признать, их вино - лучшее из того, что я пробовал.
+	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_02"); //РќРѕ РґРѕР»Р¶РµРЅ РїСЂРёР·РЅР°С‚СЊ, РёС… РІРёРЅРѕ - Р»СѓС‡С€РµРµ РёР· С‚РѕРіРѕ, С‡С‚Рѕ СЏ РїСЂРѕР±РѕРІР°Р».
 	B_GivePlayerXP (XP_Ambient);
 	DIA_Vino_PERM4OBSESSED_XP_oneTime = TRUE; 
 	};
@@ -496,7 +496,7 @@ instance DIA_Vino_PERM45UND6		(C_INFO)
 	information	 = 	DIA_Vino_PERM45UND6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Есть новости?";
+	description	 = 	"Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?";
 };
 
 func int DIA_Vino_PERM45UND6_Condition ()
@@ -511,22 +511,22 @@ func int DIA_Vino_PERM45UND6_Condition ()
 
 func void DIA_Vino_PERM45UND6_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //Есть новости?
+	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 
 	if (hero.guild == GIL_PAL)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //Здесь все просто кишит орками.
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Вы, паладины, ведь прикончите их, да?
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //Р—РґРµСЃСЊ РІСЃРµ РїСЂРѕСЃС‚Рѕ РєРёС€РёС‚ РѕСЂРєР°РјРё.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Р’С‹, РїР°Р»Р°РґРёРЅС‹, РІРµРґСЊ РїСЂРёРєРѕРЅС‡РёС‚Рµ РёС…, РґР°?
 	}
 	else	//hero.guild == GIL_DJG
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_03"); //Боюсь, что скоро нам придется покинуть нашу ферму и присоединиться к наемникам на ферме Онара.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_03"); //Р‘РѕСЋСЃСЊ, С‡С‚Рѕ СЃРєРѕСЂРѕ РЅР°Рј РїСЂРёРґРµС‚СЃСЏ РїРѕРєРёРЅСѓС‚СЊ РЅР°С€Сѓ С„РµСЂРјСѓ Рё РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј РЅР° С„РµСЂРјРµ РћРЅР°СЂР°.
 	};
 	
 	if (FoundVinosKellerei == TRUE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //К сожалению, ополчение нашло мой винокуренный заводик. Надеюсь, что они хотя бы меня не поймают.
+		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РѕРїРѕР»С‡РµРЅРёРµ РЅР°С€Р»Рѕ РјРѕР№ РІРёРЅРѕРєСѓСЂРµРЅРЅС‹Р№ Р·Р°РІРѕРґРёРє. РќР°РґРµСЋСЃСЊ, С‡С‚Рѕ РѕРЅРё С…РѕС‚СЏ Р±С‹ РјРµРЅСЏ РЅРµ РїРѕР№РјР°СЋС‚.
 	};
 };
 

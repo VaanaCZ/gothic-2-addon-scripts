@@ -85,7 +85,7 @@ func void DIA_Addon_Elvrich_BanditsThere_Info ()
 	&& (Npc_IsDead(BDT_10309_Addon_RangerBandit_L))	
 	&& (Npc_IsDead(BDT_10310_Addon_RangerBandit_M))	
 	{
-		AI_Output	(self, other, "DIA_Addon_Elvrich_BanditsThere_04_00"); //Слава богам! С бандитами покончено. Ты спас мне жизнь.
+		AI_Output	(self, other, "DIA_Addon_Elvrich_BanditsThere_04_00"); //РЎР»Р°РІР° Р±РѕРіР°Рј! РЎ Р±Р°РЅРґРёС‚Р°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ. РўС‹ СЃРїР°СЃ РјРЅРµ Р¶РёР·РЅСЊ.
 		DIA_Addon_Elvrich_BanditsThere_NoPerm = TRUE;
 		self.aivar[AIV_NoFightParker] = FALSE;
 	}
@@ -106,7 +106,7 @@ instance DIA_Addon_Elvrich_Wer		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_Wer_Condition;
 	information	 = 	DIA_Addon_Elvrich_Wer_Info;
 
-	description	 = 	"Кто ты?";
+	description	 = 	"РљС‚Рѕ С‚С‹?";
 };
 
 func int DIA_Addon_Elvrich_Wer_Condition ()
@@ -116,13 +116,13 @@ func int DIA_Addon_Elvrich_Wer_Condition ()
 
 func void DIA_Addon_Elvrich_Wer_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_00"); //Кто ты такой?
-	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_01"); //Меня зовут Элврих. Я из города.
+	AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_00"); //РљС‚Рѕ С‚С‹ С‚Р°РєРѕР№?
+	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р­Р»РІСЂРёС…. РЇ РёР· РіРѕСЂРѕРґР°.
 	if (MIS_Thorben_BringElvrichBack == LOG_RUNNING)
 	{
-		AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_02"); //Мастер Торбен говорил, что ты пропал.
+		AI_Output (other, self, "DIA_Addon_Elvrich_Wer_15_02"); //РњР°СЃС‚РµСЂ РўРѕСЂР±РµРЅ РіРѕРІРѕСЂРёР», С‡С‚Рѕ С‚С‹ РїСЂРѕРїР°Р».
 	};
-	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_03"); //Эти подонки притащили меня сюда и держали в плену.
+	AI_Output (self, other, "DIA_Addon_Elvrich_Wer_04_03"); //Р­С‚Рё РїРѕРґРѕРЅРєРё РїСЂРёС‚Р°С‰РёР»Рё РјРµРЅСЏ СЃСЋРґР° Рё РґРµСЂР¶Р°Р»Рё РІ РїР»РµРЅСѓ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -135,7 +135,7 @@ instance DIA_Addon_Elvrich_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Elvrich_MissingPeople_Info;
 
-	description	 = 	"В городе пропадали и другие люди.";
+	description	 = 	"Р’ РіРѕСЂРѕРґРµ РїСЂРѕРїР°РґР°Р»Рё Рё РґСЂСѓРіРёРµ Р»СЋРґРё.";
 };
 
 func int DIA_Addon_Elvrich_MissingPeople_Condition ()
@@ -150,8 +150,8 @@ func int DIA_Addon_Elvrich_MissingPeople_Condition ()
 
 func void DIA_Addon_Elvrich_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_MissingPeople_15_00"); //В городе пропадали и другие люди.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_MissingPeople_04_01"); //Не знаю ничего о других людях. Могу рассказать только, что случилось со МНОЙ.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_MissingPeople_15_00"); //Р’ РіРѕСЂРѕРґРµ РїСЂРѕРїР°РґР°Р»Рё Рё РґСЂСѓРіРёРµ Р»СЋРґРё.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_MissingPeople_04_01"); //РќРµ Р·РЅР°СЋ РЅРёС‡РµРіРѕ Рѕ РґСЂСѓРіРёС… Р»СЋРґСЏС…. РњРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ СЃРѕ РњРќРћР™.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -164,7 +164,7 @@ instance DIA_Addon_Elvrich_WhatExactly		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_WhatExactly_Condition;
 	information	 = 	DIA_Addon_Elvrich_WhatExactly_Info;
 
-	description	 = 	"И что же с тобой случилось?";
+	description	 = 	"Р С‡С‚Рѕ Р¶Рµ СЃ С‚РѕР±РѕР№ СЃР»СѓС‡РёР»РѕСЃСЊ?";
 };
 
 func int DIA_Addon_Elvrich_WhatExactly_Condition ()
@@ -177,64 +177,64 @@ func int DIA_Addon_Elvrich_WhatExactly_Condition ()
 
 func void DIA_Addon_Elvrich_WhatExactly_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_WhatExactly_15_00"); //И что же с тобой случилось?
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_01"); //Я шел на свидание. Я должен был встретиться со своей девушкой. 
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_02"); //Ее зовут Люсия. Мы собирались направиться к горам, подальше от города и всех, кто там живет.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_03"); //Я дошел до места, где ждала меня Люсия, и вдруг появились бандиты и схватили нас обоих.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_04"); //Конечно, я сопротивлялся, но их было слишком много. Ты, кстати, их не встречал?
+	AI_Output	(other, self, "DIA_Addon_Elvrich_WhatExactly_15_00"); //Р С‡С‚Рѕ Р¶Рµ СЃ С‚РѕР±РѕР№ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_01"); //РЇ С€РµР» РЅР° СЃРІРёРґР°РЅРёРµ. РЇ РґРѕР»Р¶РµРЅ Р±С‹Р» РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃРѕ СЃРІРѕРµР№ РґРµРІСѓС€РєРѕР№. 
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_02"); //Р•Рµ Р·РѕРІСѓС‚ Р›СЋСЃРёСЏ. РњС‹ СЃРѕР±РёСЂР°Р»РёСЃСЊ РЅР°РїСЂР°РІРёС‚СЊСЃСЏ Рє РіРѕСЂР°Рј, РїРѕРґР°Р»СЊС€Рµ РѕС‚ РіРѕСЂРѕРґР° Рё РІСЃРµС…, РєС‚Рѕ С‚Р°Рј Р¶РёРІРµС‚.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_03"); //РЇ РґРѕС€РµР» РґРѕ РјРµСЃС‚Р°, РіРґРµ Р¶РґР°Р»Р° РјРµРЅСЏ Р›СЋСЃРёСЏ, Рё РІРґСЂСѓРі РїРѕСЏРІРёР»РёСЃСЊ Р±Р°РЅРґРёС‚С‹ Рё СЃС…РІР°С‚РёР»Рё РЅР°СЃ РѕР±РѕРёС….
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhatExactly_04_04"); //РљРѕРЅРµС‡РЅРѕ, СЏ СЃРѕРїСЂРѕС‚РёРІР»СЏР»СЃСЏ, РЅРѕ РёС… Р±С‹Р»Рѕ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ. РўС‹, РєСЃС‚Р°С‚Рё, РёС… РЅРµ РІСЃС‚СЂРµС‡Р°Р»?
 
 	Info_ClearChoices	(DIA_Addon_Elvrich_WhatExactly);
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Что хотели от тебя бандиты?", DIA_Addon_Elvrich_WhatExactly_Want );
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Рассказывай.", DIA_Addon_Elvrich_WhatExactly_lucia );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Р§С‚Рѕ С…РѕС‚РµР»Рё РѕС‚ С‚РµР±СЏ Р±Р°РЅРґРёС‚С‹?", DIA_Addon_Elvrich_WhatExactly_Want );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Р Р°СЃСЃРєР°Р·С‹РІР°Р№.", DIA_Addon_Elvrich_WhatExactly_lucia );
 };
 func void DIA_Addon_Elvrich_WhatExactly_Want ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Want_15_00"); //Что хотели от тебя бандиты?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Want_04_01"); //Несколько раз мне удавалось подслушать их беседы. Из них я понял, что нас собирались продать в рабство.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Want_15_00"); //Р§С‚Рѕ С…РѕС‚РµР»Рё РѕС‚ С‚РµР±СЏ Р±Р°РЅРґРёС‚С‹?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Want_04_01"); //РќРµСЃРєРѕР»СЊРєРѕ СЂР°Р· РјРЅРµ СѓРґР°РІР°Р»РѕСЃСЊ РїРѕРґСЃР»СѓС€Р°С‚СЊ РёС… Р±РµСЃРµРґС‹. РР· РЅРёС… СЏ РїРѕРЅСЏР», С‡С‚Рѕ РЅР°СЃ СЃРѕР±РёСЂР°Р»РёСЃСЊ РїСЂРѕРґР°С‚СЊ РІ СЂР°Р±СЃС‚РІРѕ.
 
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Куда вас собирались увезти?", DIA_Addon_Elvrich_WhatExactly_Pirates );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "РљСѓРґР° РІР°СЃ СЃРѕР±РёСЂР°Р»РёСЃСЊ СѓРІРµР·С‚Рё?", DIA_Addon_Elvrich_WhatExactly_Pirates );
 };
 func void DIA_Addon_Elvrich_WhatExactly_Pirates ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Pirates_15_00"); //Куда вас собирались увезти?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_01"); //Это место находится где-то здесь, на острове. Но похоже, что без корабля туда не добраться.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_02"); //Меня привели на побережье. На нем расположился небольшой пиратский лагерь.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_03"); //Один из бандитов подошел к пиратам и начал переговоры. У них разгорелся яростный спор.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_04"); //Я думаю, что бандит хотел, чтобы пираты куда-то нас перевезли.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_05"); //Но пираты отказались, и бандитам пришлось уйти. С тех пор мы здесь и сидим.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_06"); //По-моему, бандиты просто не знали, что им делать дальше. А потом пришел ты.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Pirates_15_00"); //РљСѓРґР° РІР°СЃ СЃРѕР±РёСЂР°Р»РёСЃСЊ СѓРІРµР·С‚Рё?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_01"); //Р­С‚Рѕ РјРµСЃС‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ, РЅР° РѕСЃС‚СЂРѕРІРµ. РќРѕ РїРѕС…РѕР¶Рµ, С‡С‚Рѕ Р±РµР· РєРѕСЂР°Р±Р»СЏ С‚СѓРґР° РЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_02"); //РњРµРЅСЏ РїСЂРёРІРµР»Рё РЅР° РїРѕР±РµСЂРµР¶СЊРµ. РќР° РЅРµРј СЂР°СЃРїРѕР»РѕР¶РёР»СЃСЏ РЅРµР±РѕР»СЊС€РѕР№ РїРёСЂР°С‚СЃРєРёР№ Р»Р°РіРµСЂСЊ.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_03"); //РћРґРёРЅ РёР· Р±Р°РЅРґРёС‚РѕРІ РїРѕРґРѕС€РµР» Рє РїРёСЂР°С‚Р°Рј Рё РЅР°С‡Р°Р» РїРµСЂРµРіРѕРІРѕСЂС‹. РЈ РЅРёС… СЂР°Р·РіРѕСЂРµР»СЃСЏ СЏСЂРѕСЃС‚РЅС‹Р№ СЃРїРѕСЂ.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_04"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ Р±Р°РЅРґРёС‚ С…РѕС‚РµР», С‡С‚РѕР±С‹ РїРёСЂР°С‚С‹ РєСѓРґР°-С‚Рѕ РЅР°СЃ РїРµСЂРµРІРµР·Р»Рё.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_05"); //РќРѕ РїРёСЂР°С‚С‹ РѕС‚РєР°Р·Р°Р»РёСЃСЊ, Рё Р±Р°РЅРґРёС‚Р°Рј РїСЂРёС€Р»РѕСЃСЊ СѓР№С‚Рё. РЎ С‚РµС… РїРѕСЂ РјС‹ Р·РґРµСЃСЊ Рё СЃРёРґРёРј.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Pirates_04_06"); //РџРѕ-РјРѕРµРјСѓ, Р±Р°РЅРґРёС‚С‹ РїСЂРѕСЃС‚Рѕ РЅРµ Р·РЅР°Р»Рё, С‡С‚Рѕ РёРј РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ. Рђ РїРѕС‚РѕРј РїСЂРёС€РµР» С‚С‹.
 	
 	Elvrich_SCKnowsPirats = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Элврих, ученик плотника из Хориниса Торбена, был похищен бандитами. Похоже, что пираты и бандиты в сговоре."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Р­Р»РІСЂРёС…, СѓС‡РµРЅРёРє РїР»РѕС‚РЅРёРєР° РёР· РҐРѕСЂРёРЅРёСЃР° РўРѕСЂР±РµРЅР°, Р±С‹Р» РїРѕС…РёС‰РµРЅ Р±Р°РЅРґРёС‚Р°РјРё. РџРѕС…РѕР¶Рµ, С‡С‚Рѕ РїРёСЂР°С‚С‹ Рё Р±Р°РЅРґРёС‚С‹ РІ СЃРіРѕРІРѕСЂРµ."); 
 	
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Пираты в Хоринисе?", DIA_Addon_Elvrich_WhatExactly_Here );
-	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Где находится лагерь пиратов?", DIA_Addon_Elvrich_WhatExactly_pirat );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "РџРёСЂР°С‚С‹ РІ РҐРѕСЂРёРЅРёСЃРµ?", DIA_Addon_Elvrich_WhatExactly_Here );
+	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, "Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»Р°РіРµСЂСЊ РїРёСЂР°С‚РѕРІ?", DIA_Addon_Elvrich_WhatExactly_pirat );
 };
 func void DIA_Addon_Elvrich_WhatExactly_Here ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Here_15_00"); //Пираты в Хоринисе?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_01"); //Известно мне о них немного. Честно говоря, я тогда первый раз увидел пиратов.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_02"); //Они стараются оставаться в тени. Практически каждый из них - находящийся в розыске преступник.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_03"); //У пиратов есть суеверие - они боятся виселиц, так что в городе их не встретишь.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_Here_15_00"); //РџРёСЂР°С‚С‹ РІ РҐРѕСЂРёРЅРёСЃРµ?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_01"); //РР·РІРµСЃС‚РЅРѕ РјРЅРµ Рѕ РЅРёС… РЅРµРјРЅРѕРіРѕ. Р§РµСЃС‚РЅРѕ РіРѕРІРѕСЂСЏ, СЏ С‚РѕРіРґР° РїРµСЂРІС‹Р№ СЂР°Р· СѓРІРёРґРµР» РїРёСЂР°С‚РѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_02"); //РћРЅРё СЃС‚Р°СЂР°СЋС‚СЃСЏ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ РІ С‚РµРЅРё. РџСЂР°РєС‚РёС‡РµСЃРєРё РєР°Р¶РґС‹Р№ РёР· РЅРёС… - РЅР°С…РѕРґСЏС‰РёР№СЃСЏ РІ СЂРѕР·С‹СЃРєРµ РїСЂРµСЃС‚СѓРїРЅРёРє.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_Here_04_03"); //РЈ РїРёСЂР°С‚РѕРІ РµСЃС‚СЊ СЃСѓРµРІРµСЂРёРµ - РѕРЅРё Р±РѕСЏС‚СЃСЏ РІРёСЃРµР»РёС†, С‚Р°Рє С‡С‚Рѕ РІ РіРѕСЂРѕРґРµ РёС… РЅРµ РІСЃС‚СЂРµС‚РёС€СЊ.
 };
 func void DIA_Addon_Elvrich_WhatExactly_lucia ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_lucia_15_00"); //Расскажи мне о Люсии.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_lucia_04_01"); //Это девушка из портового района. Очень красивая. Она работала на этого мерзавца Бромора.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_lucia_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р›СЋСЃРёРё.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_lucia_04_01"); //Р­С‚Рѕ РґРµРІСѓС€РєР° РёР· РїРѕСЂС‚РѕРІРѕРіРѕ СЂР°Р№РѕРЅР°. РћС‡РµРЅСЊ РєСЂР°СЃРёРІР°СЏ. РћРЅР° СЂР°Р±РѕС‚Р°Р»Р° РЅР° СЌС‚РѕРіРѕ РјРµСЂР·Р°РІС†Р° Р‘СЂРѕРјРѕСЂР°.
 };
 func void DIA_Addon_Elvrich_WhatExactly_pirat ()
 {
-	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_pirat_15_00"); //Где находится лагерь пиратов?
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_01"); //Недалеко от гавани Хориниса.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_02"); //Если ты встанешь на набережной лицом к морю, то он будет справа.
-	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_03"); //Первый небольшой залив, который встретится тебе на пути, и будет нужным тебе местом.
+	AI_Output			(other, self, "DIA_Addon_Elvrich_WhatExactly_pirat_15_00"); //Р“РґРµ РЅР°С…РѕРґРёС‚СЃСЏ Р»Р°РіРµСЂСЊ РїРёСЂР°С‚РѕРІ?
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_01"); //РќРµРґР°Р»РµРєРѕ РѕС‚ РіР°РІР°РЅРё РҐРѕСЂРёРЅРёСЃР°.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_02"); //Р•СЃР»Рё С‚С‹ РІСЃС‚Р°РЅРµС€СЊ РЅР° РЅР°Р±РµСЂРµР¶РЅРѕР№ Р»РёС†РѕРј Рє РјРѕСЂСЋ, С‚Рѕ РѕРЅ Р±СѓРґРµС‚ СЃРїСЂР°РІР°.
+	AI_Output			(self, other, "DIA_Addon_Elvrich_WhatExactly_pirat_04_03"); //РџРµСЂРІС‹Р№ РЅРµР±РѕР»СЊС€РѕР№ Р·Р°Р»РёРІ, РєРѕС‚РѕСЂС‹Р№ РІСЃС‚СЂРµС‚РёС‚СЃСЏ С‚РµР±Рµ РЅР° РїСѓС‚Рё, Рё Р±СѓРґРµС‚ РЅСѓР¶РЅС‹Рј С‚РµР±Рµ РјРµСЃС‚РѕРј.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Чтобы найти место встречи с пиратами, нужно пойти в порт Хориниса и встать на набережной лицом к морю. Затем нужно спрыгнуть в море и поплыть вдоль берега направо."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Р§С‚РѕР±С‹ РЅР°Р№С‚Рё РјРµСЃС‚Рѕ РІСЃС‚СЂРµС‡Рё СЃ РїРёСЂР°С‚Р°РјРё, РЅСѓР¶РЅРѕ РїРѕР№С‚Рё РІ РїРѕСЂС‚ РҐРѕСЂРёРЅРёСЃР° Рё РІСЃС‚Р°С‚СЊ РЅР° РЅР°Р±РµСЂРµР¶РЅРѕР№ Р»РёС†РѕРј Рє РјРѕСЂСЋ. Р—Р°С‚РµРј РЅСѓР¶РЅРѕ СЃРїСЂС‹РіРЅСѓС‚СЊ РІ РјРѕСЂРµ Рё РїРѕРїР»С‹С‚СЊ РІРґРѕР»СЊ Р±РµСЂРµРіР° РЅР°РїСЂР°РІРѕ."); 
 
 	Info_AddChoice	(DIA_Addon_Elvrich_WhatExactly, DIALOG_BACK, DIA_Addon_Elvrich_WhatExactly_Back );
 };
@@ -253,7 +253,7 @@ instance DIA_Addon_Elvrich_Bromor		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_Bromor_Condition;
 	information	 = 	DIA_Addon_Elvrich_Bromor_Info;
 
-	description	 = 	"Бромор сказал, что Люсия украла у него золотое блюдо...";
+	description	 = 	"Р‘СЂРѕРјРѕСЂ СЃРєР°Р·Р°Р», С‡С‚Рѕ Р›СЋСЃРёСЏ СѓРєСЂР°Р»Р° Сѓ РЅРµРіРѕ Р·РѕР»РѕС‚РѕРµ Р±Р»СЋРґРѕ...";
 };
 
 func int DIA_Addon_Elvrich_Bromor_Condition ()
@@ -267,12 +267,12 @@ func int DIA_Addon_Elvrich_Bromor_Condition ()
 
 func void DIA_Addon_Elvrich_Bromor_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_Bromor_15_00"); //Бромор сказал, что Люсия украла у него золотое блюдо...
-	AI_Output	(self, other, "DIA_Addon_Elvrich_Bromor_04_01"); //Ну, если Люсия что-то и украла у Бромора, у нее отобрали это бандиты.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_Bromor_15_00"); //Р‘СЂРѕРјРѕСЂ СЃРєР°Р·Р°Р», С‡С‚Рѕ Р›СЋСЃРёСЏ СѓРєСЂР°Р»Р° Сѓ РЅРµРіРѕ Р·РѕР»РѕС‚РѕРµ Р±Р»СЋРґРѕ...
+	AI_Output	(self, other, "DIA_Addon_Elvrich_Bromor_04_01"); //РќСѓ, РµСЃР»Рё Р›СЋСЃРёСЏ С‡С‚Рѕ-С‚Рѕ Рё СѓРєСЂР°Р»Р° Сѓ Р‘СЂРѕРјРѕСЂР°, Сѓ РЅРµРµ РѕС‚РѕР±СЂР°Р»Рё СЌС‚Рѕ Р±Р°РЅРґРёС‚С‹.
 
 	Log_CreateTopic (TOPIC_Addon_BromorsGold, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BromorsGold, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BromorsGold,"Золотая чаша Бромора, по всей видимости, находится у бандитов, живущих в лесном лагере к северу от фермы Секоба."); 
+	B_LogEntry (TOPIC_Addon_BromorsGold,"Р—РѕР»РѕС‚Р°СЏ С‡Р°С€Р° Р‘СЂРѕРјРѕСЂР°, РїРѕ РІСЃРµР№ РІРёРґРёРјРѕСЃС‚Рё, РЅР°С…РѕРґРёС‚СЃСЏ Сѓ Р±Р°РЅРґРёС‚РѕРІ, Р¶РёРІСѓС‰РёС… РІ Р»РµСЃРЅРѕРј Р»Р°РіРµСЂРµ Рє СЃРµРІРµСЂСѓ РѕС‚ С„РµСЂРјС‹ РЎРµРєРѕР±Р°."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -285,7 +285,7 @@ instance DIA_Addon_Elvrich_WhereIsLucia		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_WhereIsLucia_Condition;
 	information	 = 	DIA_Addon_Elvrich_WhereIsLucia_Info;
 
-	description	 = 	"Где сейчас Люсия?";
+	description	 = 	"Р“РґРµ СЃРµР№С‡Р°СЃ Р›СЋСЃРёСЏ?";
 };
 
 func int DIA_Addon_Elvrich_WhereIsLucia_Condition ()
@@ -299,14 +299,14 @@ func int DIA_Addon_Elvrich_WhereIsLucia_Condition ()
 
 func void DIA_Addon_Elvrich_WhereIsLucia_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_WhereIsLucia_15_00"); //Где сейчас Люсия?
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_01"); //Мы разделились на большом перекрестке перед фермой Онара.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_02"); //Люсию бандиты утащили в лес за фермой Секоба.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_03"); //Да защитит ее Иннос.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_WhereIsLucia_15_00"); //Р“РґРµ СЃРµР№С‡Р°СЃ Р›СЋСЃРёСЏ?
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_01"); //РњС‹ СЂР°Р·РґРµР»РёР»РёСЃСЊ РЅР° Р±РѕР»СЊС€РѕРј РїРµСЂРµРєСЂРµСЃС‚РєРµ РїРµСЂРµРґ С„РµСЂРјРѕР№ РћРЅР°СЂР°.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_02"); //Р›СЋСЃРёСЋ Р±Р°РЅРґРёС‚С‹ СѓС‚Р°С‰РёР»Рё РІ Р»РµСЃ Р·Р° С„РµСЂРјРѕР№ РЎРµРєРѕР±Р°.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_WhereIsLucia_04_03"); //Р”Р° Р·Р°С‰РёС‚РёС‚ РµРµ РРЅРЅРѕСЃ.
 
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Люсию увели бандиты. Они направились в лес, который находится к северу от фермы Секоба."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Р›СЋСЃРёСЋ СѓРІРµР»Рё Р±Р°РЅРґРёС‚С‹. РћРЅРё РЅР°РїСЂР°РІРёР»РёСЃСЊ РІ Р»РµСЃ, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ Рє СЃРµРІРµСЂСѓ РѕС‚ С„РµСЂРјС‹ РЎРµРєРѕР±Р°."); 
 
 	SC_KnowsLuciaCaughtByBandits = TRUE;
 };
@@ -321,7 +321,7 @@ instance DIA_Addon_Elvrich_FernandosWaffen		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_FernandosWaffen_Condition;
 	information	 = 	DIA_Addon_Elvrich_FernandosWaffen_Info;
 
-	description	 = 	"Бандиты, которые держали тебя в плену, получали груз оружия?";
+	description	 = 	"Р‘Р°РЅРґРёС‚С‹, РєРѕС‚РѕСЂС‹Рµ РґРµСЂР¶Р°Р»Рё С‚РµР±СЏ РІ РїР»РµРЅСѓ, РїРѕР»СѓС‡Р°Р»Рё РіСЂСѓР· РѕСЂСѓР¶РёСЏ?";
 };
 
 func int DIA_Addon_Elvrich_FernandosWaffen_Condition ()
@@ -335,14 +335,14 @@ func int DIA_Addon_Elvrich_FernandosWaffen_Condition ()
 
 func void DIA_Addon_Elvrich_FernandosWaffen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_FernandosWaffen_15_00"); //Бандиты, которые держали тебя в плену, получали груз оружия?
-	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_01"); //О да. Оружия было столько, что они еле его унесли.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_02"); //Все это оружие они утащили в направлении фермы Секоба.
+	AI_Output	(other, self, "DIA_Addon_Elvrich_FernandosWaffen_15_00"); //Р‘Р°РЅРґРёС‚С‹, РєРѕС‚РѕСЂС‹Рµ РґРµСЂР¶Р°Р»Рё С‚РµР±СЏ РІ РїР»РµРЅСѓ, РїРѕР»СѓС‡Р°Р»Рё РіСЂСѓР· РѕСЂСѓР¶РёСЏ?
+	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_01"); //Рћ РґР°. РћСЂСѓР¶РёСЏ Р±С‹Р»Рѕ СЃС‚РѕР»СЊРєРѕ, С‡С‚Рѕ РѕРЅРё РµР»Рµ РµРіРѕ СѓРЅРµСЃР»Рё.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_FernandosWaffen_04_02"); //Р’СЃРµ СЌС‚Рѕ РѕСЂСѓР¶РёРµ РѕРЅРё СѓС‚Р°С‰РёР»Рё РІ РЅР°РїСЂР°РІР»РµРЅРёРё С„РµСЂРјС‹ РЎРµРєРѕР±Р°.
 	B_GivePlayerXP (XP_Ambient);
 
 	Log_CreateTopic (TOPIC_Addon_BanditTrader, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BanditTrader, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditTrader,"След ведет меня в лес, который находится к северу от фермы Секоба. Там разместились бандиты, получившие недавно большую партию оружия."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"РЎР»РµРґ РІРµРґРµС‚ РјРµРЅСЏ РІ Р»РµСЃ, РєРѕС‚РѕСЂС‹Р№ РЅР°С…РѕРґРёС‚СЃСЏ Рє СЃРµРІРµСЂСѓ РѕС‚ С„РµСЂРјС‹ РЎРµРєРѕР±Р°. РўР°Рј СЂР°Р·РјРµСЃС‚РёР»РёСЃСЊ Р±Р°РЅРґРёС‚С‹, РїРѕР»СѓС‡РёРІС€РёРµ РЅРµРґР°РІРЅРѕ Р±РѕР»СЊС€СѓСЋ РїР°СЂС‚РёСЋ РѕСЂСѓР¶РёСЏ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -355,7 +355,7 @@ instance DIA_Addon_Elvrich_LuciaLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Elvrich_LuciaLetter_Condition;
 	information	 = 	DIA_Addon_Elvrich_LuciaLetter_Info;
 
-	description	 = 	"Я нашел письмо от Люсии.";
+	description	 = 	"РЇ РЅР°С€РµР» РїРёСЃСЊРјРѕ РѕС‚ Р›СЋСЃРёРё.";
 };
 
 func int DIA_Addon_Elvrich_LuciaLetter_Condition ()
@@ -369,16 +369,16 @@ func int DIA_Addon_Elvrich_LuciaLetter_Condition ()
 
 func void DIA_Addon_Elvrich_LuciaLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Elvrich_LuciaLetter_15_00"); //Я нашел письмо от Люсии.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_01"); //(возбужденно) Что? Дай его сюда!
+	AI_Output	(other, self, "DIA_Addon_Elvrich_LuciaLetter_15_00"); //РЇ РЅР°С€РµР» РїРёСЃСЊРјРѕ РѕС‚ Р›СЋСЃРёРё.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_01"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) Р§С‚Рѕ? Р”Р°Р№ РµРіРѕ СЃСЋРґР°!
 	B_UseFakeScroll ();
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_02"); //(в отчаянии) Нет! Я не верю! Я просто не могу поверить.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_03"); //(в отчаянии) Она не может меня вот так вот бросить.
-	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_04"); //Забери это письмо! Я не хочу его видеть. Я верю, что когда-нибудь она ко мне вернется.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_02"); //(РІ РѕС‚С‡Р°СЏРЅРёРё) РќРµС‚! РЇ РЅРµ РІРµСЂСЋ! РЇ РїСЂРѕСЃС‚Рѕ РЅРµ РјРѕРіСѓ РїРѕРІРµСЂРёС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_03"); //(РІ РѕС‚С‡Р°СЏРЅРёРё) РћРЅР° РЅРµ РјРѕР¶РµС‚ РјРµРЅСЏ РІРѕС‚ С‚Р°Рє РІРѕС‚ Р±СЂРѕСЃРёС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Elvrich_LuciaLetter_04_04"); //Р—Р°Р±РµСЂРё СЌС‚Рѕ РїРёСЃСЊРјРѕ! РЇ РЅРµ С…РѕС‡Сѓ РµРіРѕ РІРёРґРµС‚СЊ. РЇ РІРµСЂСЋ, С‡С‚Рѕ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РѕРЅР° РєРѕ РјРЅРµ РІРµСЂРЅРµС‚СЃСЏ.
 	
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Элврих не хочет верить, что Люсия ушла с бандитами добровольно. Несмотря на письмо, которое она ему написала, он все еще надеется на ее возвращение."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Р­Р»РІСЂРёС… РЅРµ С…РѕС‡РµС‚ РІРµСЂРёС‚СЊ, С‡С‚Рѕ Р›СЋСЃРёСЏ СѓС€Р»Р° СЃ Р±Р°РЅРґРёС‚Р°РјРё РґРѕР±СЂРѕРІРѕР»СЊРЅРѕ. РќРµСЃРјРѕС‚СЂСЏ РЅР° РїРёСЃСЊРјРѕ, РєРѕС‚РѕСЂРѕРµ РѕРЅР° РµРјСѓ РЅР°РїРёСЃР°Р»Р°, РѕРЅ РІСЃРµ РµС‰Рµ РЅР°РґРµРµС‚СЃСЏ РЅР° РµРµ РІРѕР·РІСЂР°С‰РµРЅРёРµ."); 
 
 	B_GivePlayerXP (XP_Addon_LuciasLetter);
 	MIS_LuciasLetter = LOG_SUCCESS;
@@ -395,7 +395,7 @@ instance DIA_Addon_Elvrich_WasNun		(C_INFO)
 	information	 = 	DIA_Addon_Elvrich_WasNun_Info;
 	permanent	 = 	FALSE;
 
-	description	 = 	"Ты должен вернуться в город!";
+	description	 = 	"РўС‹ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РіРѕСЂРѕРґ!";
 };
 
 func int DIA_Addon_Elvrich_WasNun_Condition ()
@@ -408,16 +408,16 @@ func int DIA_Addon_Elvrich_WasNun_Condition ()
 
 func void DIA_Addon_Elvrich_WasNun_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_00"); //Ты должен вернуться в город!
-	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_01"); //Именно это я и собираюсь сделать! Я возвращаюсь к мастеру Торбену.
-	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_02"); //Ты пойдешь искать бандитов?
-	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_03"); //Думаю, что да...
-	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_04"); //Если найдешь Люсию, отведи ее в город, хорошо?
-	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_05"); //Я посмотрю, что смогу сделать.
+	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ РІРµСЂРЅСѓС‚СЊСЃСЏ РІ РіРѕСЂРѕРґ!
+	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_01"); //РРјРµРЅРЅРѕ СЌС‚Рѕ СЏ Рё СЃРѕР±РёСЂР°СЋСЃСЊ СЃРґРµР»Р°С‚СЊ! РЇ РІРѕР·РІСЂР°С‰Р°СЋСЃСЊ Рє РјР°СЃС‚РµСЂСѓ РўРѕСЂР±РµРЅСѓ.
+	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_02"); //РўС‹ РїРѕР№РґРµС€СЊ РёСЃРєР°С‚СЊ Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_03"); //Р”СѓРјР°СЋ, С‡С‚Рѕ РґР°...
+	AI_Output (self, other, "DIA_Addon_Elvrich_WasNun_04_04"); //Р•СЃР»Рё РЅР°Р№РґРµС€СЊ Р›СЋСЃРёСЋ, РѕС‚РІРµРґРё РµРµ РІ РіРѕСЂРѕРґ, С…РѕСЂРѕС€Рѕ?
+	AI_Output (other, self, "DIA_Addon_Elvrich_WasNun_15_05"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ СЃРјРѕРіСѓ СЃРґРµР»Р°С‚СЊ.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Элврих вернулся к мастеру Торбену."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Р­Р»РІСЂРёС… РІРµСЂРЅСѓР»СЃСЏ Рє РјР°СЃС‚РµСЂСѓ РўРѕСЂР±РµРЅСѓ."); 
 
 	Elvrich_GoesBack2Thorben = TRUE;
 	Npc_ExchangeRoutine	(self,"BACKINTHECITY");
@@ -447,7 +447,7 @@ func int DIA_Addon_Elvrich_PERM_Condition ()
 };
 func void DIA_Addon_Elvrich_PERM_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Elvrich_PERM_04_00"); //Спасибо, что спас меня!
+	AI_Output (self, other, "DIA_Addon_Elvrich_PERM_04_00"); //РЎРїР°СЃРёР±Рѕ, С‡С‚Рѕ СЃРїР°СЃ РјРµРЅСЏ!
 };
 
 

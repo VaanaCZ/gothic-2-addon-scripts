@@ -73,11 +73,11 @@ FUNC INT DIA_Addon_Fisk_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_00");//Эй, если тебе нужен торговец, то ты его нашел.
-	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_01");//Моя лавка находится за домом Эстебана. Если тебе что-нибудь понадобится, заходи.
+	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_00");//Р­Р№, РµСЃР»Рё С‚РµР±Рµ РЅСѓР¶РµРЅ С‚РѕСЂРіРѕРІРµС†, С‚Рѕ С‚С‹ РµРіРѕ РЅР°С€РµР».
+	AI_Output (self, other, "DIA_Addon_Fisk_Hi_12_01");//РњРѕСЏ Р»Р°РІРєР° РЅР°С…РѕРґРёС‚СЃСЏ Р·Р° РґРѕРјРѕРј Р­СЃС‚РµР±Р°РЅР°. Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, Р·Р°С…РѕРґРё.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Фиск продает самые разные товары.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Р¤РёСЃРє РїСЂРѕРґР°РµС‚ СЃР°РјС‹Рµ СЂР°Р·РЅС‹Рµ С‚РѕРІР°СЂС‹.");
 	
 	AI_StopProcessInfos  (self);
 	Npc_ExchangeRoutine  (self,"START");
@@ -108,12 +108,12 @@ FUNC VOID DIA_Addon_Fisk_Trade_Info()
 	B_Say (other,self,"$TRADE_2");
 	B_GiveTradeInv(self);
 	
-	//Bolzen nachfьllen
+	//Bolzen nachfСЊllen
 	if (Npc_HasItems (self, ItRw_Bolt) < 50)
 	{
 		CreateInvItems (self,ItRw_Bolt, (50 - Npc_HasItems (self, ItRw_Bolt))); 
 	};
-	//Pfeile nachfьllen
+	//Pfeile nachfСЊllen
 	if (Npc_HasItems (self, ItRw_Arrow) < 50)
 	{
 		CreateInvItems (self,ItRw_Arrow, (50 - Npc_HasItems (self, ItRw_Arrow))); 
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Fisk_Attentat_Condition()
 FUNC VOID DIA_Addon_Fisk_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_00"); //Слушай, я не имею к этому делу никакого отношения, понятно?
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_01"); //У меня свои заботы. К тому же, я сам стал жертвой злодеяния.
-	AI_Output (other, self, "DIA_Addon_Fisk_Attentat_15_02"); //Каким образом?
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_03"); //За последнюю партию товара я заплатил солидную сумму золотом.
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_04"); //Но товар я так и не получил! Один подонок украл его у меня.
-	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_05"); //Меня обокрали, и это сделал кое-кто из моих же людей!
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_00"); //РЎР»СѓС€Р°Р№, СЏ РЅРµ РёРјРµСЋ Рє СЌС‚РѕРјСѓ РґРµР»Сѓ РЅРёРєР°РєРѕРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ, РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_01"); //РЈ РјРµРЅСЏ СЃРІРѕРё Р·Р°Р±РѕС‚С‹. Рљ С‚РѕРјСѓ Р¶Рµ, СЏ СЃР°Рј СЃС‚Р°Р» Р¶РµСЂС‚РІРѕР№ Р·Р»РѕРґРµСЏРЅРёСЏ.
+	AI_Output (other, self, "DIA_Addon_Fisk_Attentat_15_02"); //РљР°РєРёРј РѕР±СЂР°Р·РѕРј?
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_03"); //Р—Р° РїРѕСЃР»РµРґРЅСЋСЋ РїР°СЂС‚РёСЋ С‚РѕРІР°СЂР° СЏ Р·Р°РїР»Р°С‚РёР» СЃРѕР»РёРґРЅСѓСЋ СЃСѓРјРјСѓ Р·РѕР»РѕС‚РѕРј.
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_04"); //РќРѕ С‚РѕРІР°СЂ СЏ С‚Р°Рє Рё РЅРµ РїРѕР»СѓС‡РёР»! РћРґРёРЅ РїРѕРґРѕРЅРѕРє СѓРєСЂР°Р» РµРіРѕ Сѓ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Attentat_12_05"); //РњРµРЅСЏ РѕР±РѕРєСЂР°Р»Рё, Рё СЌС‚Рѕ СЃРґРµР»Р°Р» РєРѕРµ-РєС‚Рѕ РёР· РјРѕРёС… Р¶Рµ Р»СЋРґРµР№!
 };
 
 //---------------------------------------------------------------------
@@ -159,7 +159,7 @@ instance DIA_Addon_Fisk_Lieferung   (C_INFO)
 	condition   = DIA_Addon_Fisk_Lieferung_Condition;
 	information = DIA_Addon_Fisk_Lieferung_Info;
 	permanent   = FALSE;
-	description	= "Что за товар ты должен был получить?";
+	description	= "Р§С‚Рѕ Р·Р° С‚РѕРІР°СЂ С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РїРѕР»СѓС‡РёС‚СЊ?";
 };
 FUNC INT DIA_Addon_Fisk_Lieferung_Condition()
 {	
@@ -170,17 +170,17 @@ FUNC INT DIA_Addon_Fisk_Lieferung_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Lieferung_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Lieferung_15_00"); //Что за товар ты должен был получить?
-	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_01"); //Пакет с отмычками. Кто-то должен был принести мне его от пиратов.
-	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_02"); //Но парень по имени Хуан украл и отмычки, и золото, которое я заплатил!
-	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_03"); //Этот ублюдок прячется где-то на болоте.
+	AI_Output (other, self, "DIA_Addon_Fisk_Lieferung_15_00"); //Р§С‚Рѕ Р·Р° С‚РѕРІР°СЂ С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹Р» РїРѕР»СѓС‡РёС‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_01"); //РџР°РєРµС‚ СЃ РѕС‚РјС‹С‡РєР°РјРё. РљС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ Р±С‹Р» РїСЂРёРЅРµСЃС‚Рё РјРЅРµ РµРіРѕ РѕС‚ РїРёСЂР°С‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_02"); //РќРѕ РїР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё РҐСѓР°РЅ СѓРєСЂР°Р» Рё РѕС‚РјС‹С‡РєРё, Рё Р·РѕР»РѕС‚Рѕ, РєРѕС‚РѕСЂРѕРµ СЏ Р·Р°РїР»Р°С‚РёР»!
+	AI_Output (self, other, "DIA_Addon_Fisk_Lieferung_12_03"); //Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє РїСЂСЏС‡РµС‚СЃСЏ РіРґРµ-С‚Рѕ РЅР° Р±РѕР»РѕС‚Рµ.
 	
 	MIS_Lennar_Lockpick = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_Addon_Fisk,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Fisk,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_KillJuan,"Парень по имени Хуан заключил сделку с бандитами. Он прячется где-то на болоте.");
-	B_LogEntry (Topic_Addon_Fisk,"Человек по имени Хуан украл посылку (пакет с отмычками) у Фиска. Он прячется где-то на болоте.");
+	B_LogEntry	(TOPIC_Addon_KillJuan,"РџР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё РҐСѓР°РЅ Р·Р°РєР»СЋС‡РёР» СЃРґРµР»РєСѓ СЃ Р±Р°РЅРґРёС‚Р°РјРё. РћРЅ РїСЂСЏС‡РµС‚СЃСЏ РіРґРµ-С‚Рѕ РЅР° Р±РѕР»РѕС‚Рµ.");
+	B_LogEntry (Topic_Addon_Fisk,"Р§РµР»РѕРІРµРє РїРѕ РёРјРµРЅРё РҐСѓР°РЅ СѓРєСЂР°Р» РїРѕСЃС‹Р»РєСѓ (РїР°РєРµС‚ СЃ РѕС‚РјС‹С‡РєР°РјРё) Сѓ Р¤РёСЃРєР°. РћРЅ РїСЂСЏС‡РµС‚СЃСЏ РіРґРµ-С‚Рѕ РЅР° Р±РѕР»РѕС‚Рµ.");
 };
 	
 //---------------------------------------------------------------------
@@ -190,46 +190,46 @@ FUNC VOID DIA_Addon_Fisk_Lieferung_Info()
 	{	
 		if (Npc_IsDead(Juan))
 		{
-			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_00"); //Он мертв.
-			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_01"); //Хорошо, значит, он больше не сможет доставлять мне неприятности!
+			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_00"); //РћРЅ РјРµСЂС‚РІ.
+			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_01"); //РҐРѕСЂРѕС€Рѕ, Р·РЅР°С‡РёС‚, РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ СЃРјРѕР¶РµС‚ РґРѕСЃС‚Р°РІР»СЏС‚СЊ РјРЅРµ РЅРµРїСЂРёСЏС‚РЅРѕСЃС‚Рё!
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_02"); //Он все еще жив...
-			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_03"); //Ты оставил эту тварь в живых?
-			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_04"); //Он был не один...
-			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_05"); //Ну ладно. Я сам разберусь с этими ворами...
+			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_02"); //РћРЅ РІСЃРµ РµС‰Рµ Р¶РёРІ...
+			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_03"); //РўС‹ РѕСЃС‚Р°РІРёР» СЌС‚Сѓ С‚РІР°СЂСЊ РІ Р¶РёРІС‹С…?
+			AI_Output (other, self, "DIA_Addon_Fisk_AboutJuan_15_04"); //РћРЅ Р±С‹Р» РЅРµ РѕРґРёРЅ...
+			AI_Output (self, other, "DIA_Addon_Fisk_AboutJuan_12_05"); //РќСѓ Р»Р°РґРЅРѕ. РЇ СЃР°Рј СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ СЌС‚РёРјРё РІРѕСЂР°РјРё...
 		};
 	};
 //---------------------------------------------------------------------
 	func void B_Addon_Fisk_Belohnung()
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_00"); //Думаю, что тебя это заинтересует...
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_01"); //У меня хорошие отношения с Хуно.
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_02"); //Я поговорю с ним, и он сделает тебе скидку на доспехи.
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_00"); //Р”СѓРјР°СЋ, С‡С‚Рѕ С‚РµР±СЏ СЌС‚Рѕ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚...
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_01"); //РЈ РјРµРЅСЏ С…РѕСЂРѕС€РёРµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РҐСѓРЅРѕ.
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_02"); //РЇ РїРѕРіРѕРІРѕСЂСЋ СЃ РЅРёРј, Рё РѕРЅ СЃРґРµР»Р°РµС‚ С‚РµР±Рµ СЃРєРёРґРєСѓ РЅР° РґРѕСЃРїРµС…Рё.
 		Huno_ArmorCheap = TRUE;
 		
 		if (other.guild  == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_03"); //Да, и возьми вот этот камень. Я когда-то получил его от Корристо.
-			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_04"); //Это единственная вещь, которая сохранилась у меня после путешествия через Барьер. Я думаю, ты найдешь ему применение.
+			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_03"); //Р”Р°, Рё РІРѕР·СЊРјРё РІРѕС‚ СЌС‚РѕС‚ РєР°РјРµРЅСЊ. РЇ РєРѕРіРґР°-С‚Рѕ РїРѕР»СѓС‡РёР» РµРіРѕ РѕС‚ РљРѕСЂСЂРёСЃС‚Рѕ.
+			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_04"); //Р­С‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅР°СЏ РІРµС‰СЊ, РєРѕС‚РѕСЂР°СЏ СЃРѕС…СЂР°РЅРёР»Р°СЃСЊ Сѓ РјРµРЅСЏ РїРѕСЃР»Рµ РїСѓС‚РµС€РµСЃС‚РІРёСЏ С‡РµСЂРµР· Р‘Р°СЂСЊРµСЂ. РЇ РґСѓРјР°СЋ, С‚С‹ РЅР°Р№РґРµС€СЊ РµРјСѓ РїСЂРёРјРµРЅРµРЅРёРµ.
 			B_GiveInvItems (self, other, ItMi_RuneBlank,1);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_05"); //И еще я дам тебе это оружие.
+			AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_05"); //Р РµС‰Рµ СЏ РґР°Рј С‚РµР±Рµ СЌС‚Рѕ РѕСЂСѓР¶РёРµ.
 		
 			if (other.HitChance[NPC_TALENT_2H] > other.HitChance[NPC_TALENT_1H])   
 			{
 				B_GiveInvItems (self, other, ItMw_Streitaxt1,1);
 			}
-			else //1h grцЯer oder beide gleich
+			else //1h grС†РЇer oder beide gleich
 			{
 				B_GiveInvItems (self, other, ItMw_Bartaxt,1);
 			};
 		};
 		
-		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_06"); //Рука руку моет. Старый принцип, который работает и по сей день.
+		AI_Output (self, other, "DIA_Addon_Fisk_Belohnung_12_06"); //Р СѓРєР° СЂСѓРєСѓ РјРѕРµС‚. РЎС‚Р°СЂС‹Р№ РїСЂРёРЅС†РёРї, РєРѕС‚РѕСЂС‹Р№ СЂР°Р±РѕС‚Р°РµС‚ Рё РїРѕ СЃРµР№ РґРµРЅСЊ.
 	};
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Fisk_GivePaket (C_INFO)
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Fisk_GivePaket (C_INFO)
 	condition   = DIA_Addon_Fisk_GivePaket_Condition;
 	information = DIA_Addon_Fisk_GivePaket_Info;
 	permanent   = FALSE;
-	description = "Я принес тебе твой пакет.";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ С‚РІРѕР№ РїР°РєРµС‚.";
 };
 FUNC INT DIA_Addon_Fisk_GivePaket_Condition()
 {	
@@ -251,13 +251,13 @@ FUNC INT DIA_Addon_Fisk_GivePaket_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_GivePaket_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_GivePaket_15_00"); //Я принес тебе твой пакет.
+	AI_Output (other, self, "DIA_Addon_Fisk_GivePaket_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ С‚РІРѕР№ РїР°РєРµС‚.
 	B_GiveInvItems (other, self, ItMi_Addon_Lennar_Paket, 1);
 	
 	MIS_Lennar_Lockpick = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_LennarPaket);
 	
-	AI_Output (self, other, "DIA_Addon_Fisk_GivePaket_12_01"); //Замечательно! (подозрительно) А что с Хуаном?
+	AI_Output (self, other, "DIA_Addon_Fisk_GivePaket_12_01"); //Р—Р°РјРµС‡Р°С‚РµР»СЊРЅРѕ! (РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ) Рђ С‡С‚Рѕ СЃ РҐСѓР°РЅРѕРј?
 	
 	B_Addon_Fisk_AboutJuan();
 	
@@ -274,7 +274,7 @@ instance DIA_Addon_Fisk_PaketOpen (C_INFO)
 	condition   = DIA_Addon_Fisk_PaketOpen_Condition;
 	information = DIA_Addon_Fisk_PaketOpen_Info;
 	permanent   = FALSE;
-	description = "Я открыл твой пакет!";
+	description = "РЇ РѕС‚РєСЂС‹Р» С‚РІРѕР№ РїР°РєРµС‚!";
 };
 FUNC INT DIA_Addon_Fisk_PaketOpen_Condition()
 {	
@@ -286,10 +286,10 @@ FUNC INT DIA_Addon_Fisk_PaketOpen_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_PaketOpen_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_PaketOpen_15_00"); //Я открыл твой пакет!
-	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_01"); //(смеется) Ну конечно! Тебе не терпелось узнать, что внутри, не так ли?
-	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_02"); //Отмычки-то ты хотя бы принес?
-	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_03"); //И что еще более важно, что с Хуаном?
+	AI_Output (other, self, "DIA_Addon_Fisk_PaketOpen_15_00"); //РЇ РѕС‚РєСЂС‹Р» С‚РІРѕР№ РїР°РєРµС‚!
+	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_01"); //(СЃРјРµРµС‚СЃСЏ) РќСѓ РєРѕРЅРµС‡РЅРѕ! РўРµР±Рµ РЅРµ С‚РµСЂРїРµР»РѕСЃСЊ СѓР·РЅР°С‚СЊ, С‡С‚Рѕ РІРЅСѓС‚СЂРё, РЅРµ С‚Р°Рє Р»Рё?
+	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_02"); //РћС‚РјС‹С‡РєРё-С‚Рѕ С‚С‹ С…РѕС‚СЏ Р±С‹ РїСЂРёРЅРµСЃ?
+	AI_Output (self, other, "DIA_Addon_Fisk_PaketOpen_12_03"); //Р С‡С‚Рѕ РµС‰Рµ Р±РѕР»РµРµ РІР°Р¶РЅРѕ, С‡С‚Рѕ СЃ РҐСѓР°РЅРѕРј?
 
 	B_Addon_Fisk_AboutJuan();
 };
@@ -304,7 +304,7 @@ INSTANCE DIA_Addon_Fisk_GivePicks (C_INFO)
 	condition   = DIA_Addon_Fisk_GivePicks_Condition;
 	information = DIA_Addon_Fisk_GivePicks_Info;
 	permanent   = TRUE;
-	description = "Вот твоя дюжина отмычек...";
+	description = "Р’РѕС‚ С‚РІРѕСЏ РґСЋР¶РёРЅР° РѕС‚РјС‹С‡РµРє...";
 };
 FUNC INT DIA_Addon_Fisk_GivePicks_Condition()
 {	
@@ -316,11 +316,11 @@ FUNC INT DIA_Addon_Fisk_GivePicks_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_GivePicks_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_GivePicks_15_00"); //Вот твоя дюжина отмычек...
+	AI_Output (other, self, "DIA_Addon_Fisk_GivePicks_15_00"); //Р’РѕС‚ С‚РІРѕСЏ РґСЋР¶РёРЅР° РѕС‚РјС‹С‡РµРє...
 
 	if (B_GiveInvItems (other, self, itke_lockpick, 12))
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_01"); //Очень хорошо! Покупатели их уже заждались.
+		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_01"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ! РџРѕРєСѓРїР°С‚РµР»Рё РёС… СѓР¶Рµ Р·Р°Р¶РґР°Р»РёСЃСЊ.
 		B_Addon_Fisk_Belohnung();
 		
 		MIS_Lennar_Lockpick = LOG_SUCCESS;
@@ -328,7 +328,7 @@ FUNC VOID DIA_Addon_Fisk_GivePicks_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_02"); //Здесь нет дюжины отмычек! Ты же не пытаешься меня обмануть, верно?
+		AI_Output (self, other, "DIA_Addon_Fisk_GivePicks_12_02"); //Р—РґРµСЃСЊ РЅРµС‚ РґСЋР¶РёРЅС‹ РѕС‚РјС‹С‡РµРє! РўС‹ Р¶Рµ РЅРµ РїС‹С‚Р°РµС€СЊСЃСЏ РјРµРЅСЏ РѕР±РјР°РЅСѓС‚СЊ, РІРµСЂРЅРѕ?
 	};
 };
 
@@ -343,7 +343,7 @@ INSTANCE DIA_Addon_Fisk_Inspektor (C_INFO)
 	condition   = DIA_Addon_Fisk_Inspektor_Condition;
 	information = DIA_Addon_Fisk_Inspektor_Info;
 	permanent   = FALSE;
-	description = "Хуан работал на Эстебана!";
+	description = "РҐСѓР°РЅ СЂР°Р±РѕС‚Р°Р» РЅР° Р­СЃС‚РµР±Р°РЅР°!";
 };
 FUNC INT DIA_Addon_Fisk_Inspektor_Condition()
 {	
@@ -355,42 +355,42 @@ FUNC INT DIA_Addon_Fisk_Inspektor_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Inspektor_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_00"); //Хуан работал на Эстебана!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_01"); //Что?
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_02"); //Не играй со мной в свои игры! Ты знал об этом!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_03"); //(спокойно) Хорошо. Ты прав. Но я надеюсь, что ты понимаешь, почему я тебе об этом не сказал.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_04"); //Каждый в этом лагере знает, что ты тоже работаешь на Эстебана.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_05"); //У меня нет никакого желания быть втянутым в эту историю из-за твоего дурацкого энтузиазма.
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_00"); //РҐСѓР°РЅ СЂР°Р±РѕС‚Р°Р» РЅР° Р­СЃС‚РµР±Р°РЅР°!
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_01"); //Р§С‚Рѕ?
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_15_02"); //РќРµ РёРіСЂР°Р№ СЃРѕ РјРЅРѕР№ РІ СЃРІРѕРё РёРіСЂС‹! РўС‹ Р·РЅР°Р» РѕР± СЌС‚РѕРј!
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_03"); //(СЃРїРѕРєРѕР№РЅРѕ) РҐРѕСЂРѕС€Рѕ. РўС‹ РїСЂР°РІ. РќРѕ СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, РїРѕС‡РµРјСѓ СЏ С‚РµР±Рµ РѕР± СЌС‚РѕРј РЅРµ СЃРєР°Р·Р°Р».
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_04"); //РљР°Р¶РґС‹Р№ РІ СЌС‚РѕРј Р»Р°РіРµСЂРµ Р·РЅР°РµС‚, С‡С‚Рѕ С‚С‹ С‚РѕР¶Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р­СЃС‚РµР±Р°РЅР°.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_12_05"); //РЈ РјРµРЅСЏ РЅРµС‚ РЅРёРєР°РєРѕРіРѕ Р¶РµР»Р°РЅРёСЏ Р±С‹С‚СЊ РІС‚СЏРЅСѓС‚С‹Рј РІ СЌС‚Сѓ РёСЃС‚РѕСЂРёСЋ РёР·-Р·Р° С‚РІРѕРµРіРѕ РґСѓСЂР°С†РєРѕРіРѕ СЌРЅС‚СѓР·РёР°Р·РјР°.
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
-	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"Собственно, я и не работаю на Эстебана.",DIA_Addon_Fisk_Inspektor_AntiEsteban);
-	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"Я не верю тебе!",DIA_Addon_Fisk_Inspektor_DontBelieve);
-	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"Понимаю!",DIA_Addon_Fisk_Inspektor_ISee);
+	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"РЎРѕР±СЃС‚РІРµРЅРЅРѕ, СЏ Рё РЅРµ СЂР°Р±РѕС‚Р°СЋ РЅР° Р­СЃС‚РµР±Р°РЅР°.",DIA_Addon_Fisk_Inspektor_AntiEsteban);
+	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"РЇ РЅРµ РІРµСЂСЋ С‚РµР±Рµ!",DIA_Addon_Fisk_Inspektor_DontBelieve);
+	Info_AddChoice (DIA_Addon_Fisk_Inspektor,"РџРѕРЅРёРјР°СЋ!",DIA_Addon_Fisk_Inspektor_ISee);
 };
 
 func void DIA_Addon_Fisk_Inspektor_ISee()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_ISee_15_00"); //Понимаю!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_ISee_12_01"); //Хорошо! В таком случае, оставим этот вопрос. Я не хочу, чтобы нас подслушали!
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_ISee_15_00"); //РџРѕРЅРёРјР°СЋ!
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_ISee_12_01"); //РҐРѕСЂРѕС€Рѕ! Р’ С‚Р°РєРѕРј СЃР»СѓС‡Р°Рµ, РѕСЃС‚Р°РІРёРј СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ. РЇ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РЅР°СЃ РїРѕРґСЃР»СѓС€Р°Р»Рё!
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
 };
 
 func void DIA_Addon_Fisk_Inspektor_DontBelieve()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_DontBelieve_15_00"); //Я тебе не верю!
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_DontBelieve_12_01"); //Не верь, дело твое! Но предупреждаю тебя, приятель, проговорись ты хоть словом об этом Эстебану - тебе не жить!
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_DontBelieve_15_00"); //РЇ С‚РµР±Рµ РЅРµ РІРµСЂСЋ!
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_DontBelieve_12_01"); //РќРµ РІРµСЂСЊ, РґРµР»Рѕ С‚РІРѕРµ! РќРѕ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ, РїСЂРёСЏС‚РµР»СЊ, РїСЂРѕРіРѕРІРѕСЂРёСЃСЊ С‚С‹ С…РѕС‚СЊ СЃР»РѕРІРѕРј РѕР± СЌС‚РѕРј Р­СЃС‚РµР±Р°РЅСѓ - С‚РµР±Рµ РЅРµ Р¶РёС‚СЊ!
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
 };
 
 func void DIA_Addon_Fisk_Inspektor_AntiEsteban()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_AntiEsteban_15_00"); //Собственно, я и не работаю на Эстебана.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_01"); //Кого ты хочешь тут обмануть, лопух? Не дорос еще до этого.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_02"); //Мой тебе совет: не трать понапрасну время.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_03"); //Когда речь заходит об Эстебане, никому не доверяй. Даже мне.
-	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_04"); //И хватит об этом. Глядишь, подслушают еще.
+	AI_Output (other, self, "DIA_Addon_Fisk_Inspektor_AntiEsteban_15_00"); //РЎРѕР±СЃС‚РІРµРЅРЅРѕ, СЏ Рё РЅРµ СЂР°Р±РѕС‚Р°СЋ РЅР° Р­СЃС‚РµР±Р°РЅР°.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_01"); //РљРѕРіРѕ С‚С‹ С…РѕС‡РµС€СЊ С‚СѓС‚ РѕР±РјР°РЅСѓС‚СЊ, Р»РѕРїСѓС…? РќРµ РґРѕСЂРѕСЃ РµС‰Рµ РґРѕ СЌС‚РѕРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_02"); //РњРѕР№ С‚РµР±Рµ СЃРѕРІРµС‚: РЅРµ С‚СЂР°С‚СЊ РїРѕРЅР°РїСЂР°СЃРЅСѓ РІСЂРµРјСЏ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_03"); //РљРѕРіРґР° СЂРµС‡СЊ Р·Р°С…РѕРґРёС‚ РѕР± Р­СЃС‚РµР±Р°РЅРµ, РЅРёРєРѕРјСѓ РЅРµ РґРѕРІРµСЂСЏР№. Р”Р°Р¶Рµ РјРЅРµ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Inspektor_AntiEsteban_12_04"); //Р С…РІР°С‚РёС‚ РѕР± СЌС‚РѕРј. Р“Р»СЏРґРёС€СЊ, РїРѕРґСЃР»СѓС€Р°СЋС‚ РµС‰Рµ.
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Inspektor);
 };
@@ -405,7 +405,7 @@ INSTANCE DIA_Addon_Fisk_Meeting   (C_INFO)
 	condition   = DIA_Addon_Fisk_Meeting_Condition;
 	information = DIA_Addon_Fisk_Meeting_Info;
 	permanent   = FALSE;
-	description = "Значит, ты спланировал нападение!";
+	description = "Р—РЅР°С‡РёС‚, С‚С‹ СЃРїР»Р°РЅРёСЂРѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ!";
 };
 FUNC INT DIA_Addon_Fisk_Meeting_Condition()
 {	
@@ -418,49 +418,49 @@ FUNC INT DIA_Addon_Fisk_Meeting_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_15_00");//Значит, ты спланировал нападение!
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_01");//Да. Эстебан стоит на моем пути. И это нехорошо.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_02");//Он не позволяет никому из бандитов работать на меня на руднике. Он хочет,  чтобы все работали только на него.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_03");//Так он хочет получать свою долю с каждой сделки и держать весь лагерь за задницу.
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_15_00");//Р—РЅР°С‡РёС‚, С‚С‹ СЃРїР»Р°РЅРёСЂРѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ!
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_01");//Р”Р°. Р­СЃС‚РµР±Р°РЅ СЃС‚РѕРёС‚ РЅР° РјРѕРµРј РїСѓС‚Рё. Р СЌС‚Рѕ РЅРµС…РѕСЂРѕС€Рѕ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_02");//РћРЅ РЅРµ РїРѕР·РІРѕР»СЏРµС‚ РЅРёРєРѕРјСѓ РёР· Р±Р°РЅРґРёС‚РѕРІ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ РЅР° СЂСѓРґРЅРёРєРµ. РћРЅ С…РѕС‡РµС‚,  С‡С‚РѕР±С‹ РІСЃРµ СЂР°Р±РѕС‚Р°Р»Рё С‚РѕР»СЊРєРѕ РЅР° РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_12_03");//РўР°Рє РѕРЅ С…РѕС‡РµС‚ РїРѕР»СѓС‡Р°С‚СЊ СЃРІРѕСЋ РґРѕР»СЋ СЃ РєР°Р¶РґРѕР№ СЃРґРµР»РєРё Рё РґРµСЂР¶Р°С‚СЊ РІРµСЃСЊ Р»Р°РіРµСЂСЊ Р·Р° Р·Р°РґРЅРёС†Сѓ.
 	
 	Info_ClearChoices (DIA_Addon_Fisk_Meeting);
 	
-	Info_AddChoice (DIA_Addon_Fisk_Meeting,"Что ты собираешься делать дальше?",DIA_Addon_Fisk_Meeting_now);
-	Info_AddChoice (DIA_Addon_Fisk_Meeting,"И ты, я полагаю, хочешь сам контролировать лагерь.",DIA_Addon_Fisk_Meeting_You);
+	Info_AddChoice (DIA_Addon_Fisk_Meeting,"Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?",DIA_Addon_Fisk_Meeting_now);
+	Info_AddChoice (DIA_Addon_Fisk_Meeting,"Р С‚С‹, СЏ РїРѕР»Р°РіР°СЋ, С…РѕС‡РµС€СЊ СЃР°Рј РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ Р»Р°РіРµСЂСЊ.",DIA_Addon_Fisk_Meeting_You);
 	if (!Npc_IsDead(Esteban))
 	{
-		Info_AddChoice (DIA_Addon_Fisk_Meeting,"Знаешь, я ведь могу тебя выдать Эстебану.",DIA_Addon_Fisk_Meeting_sell);
+		Info_AddChoice (DIA_Addon_Fisk_Meeting,"Р—РЅР°РµС€СЊ, СЏ РІРµРґСЊ РјРѕРіСѓ С‚РµР±СЏ РІС‹РґР°С‚СЊ Р­СЃС‚РµР±Р°РЅСѓ.",DIA_Addon_Fisk_Meeting_sell);
 	};
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_You()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_You_15_00");//И ты, я полагаю, хочешь сам контролировать лагерь.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_You_12_01");//Нет. Я ведь простой торговец. Я всего лишь хочу, чтобы моему делу никто не мешал.
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_You_15_00");//Р С‚С‹, СЏ РїРѕР»Р°РіР°СЋ, С…РѕС‡РµС€СЊ СЃР°Рј РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_You_12_01");//РќРµС‚. РЇ РІРµРґСЊ РїСЂРѕСЃС‚РѕР№ С‚РѕСЂРіРѕРІРµС†. РЇ РІСЃРµРіРѕ Р»РёС€СЊ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРѕРµРјСѓ РґРµР»Сѓ РЅРёРєС‚Рѕ РЅРµ РјРµС€Р°Р».
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_sell()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_sell_15_00");//Знаешь, я ведь могу тебя выдать Эстебану.
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_01");//И что? Что с того? Думаешь, что он даст все, что тебе нужно? Ха!
-	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_02");//Забудь и выслушай меня. У меня есть идея получше?
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_sell_15_00");//Р—РЅР°РµС€СЊ, СЏ РІРµРґСЊ РјРѕРіСѓ С‚РµР±СЏ РІС‹РґР°С‚СЊ Р­СЃС‚РµР±Р°РЅСѓ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_01");//Р С‡С‚Рѕ? Р§С‚Рѕ СЃ С‚РѕРіРѕ? Р”СѓРјР°РµС€СЊ, С‡С‚Рѕ РѕРЅ РґР°СЃС‚ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РҐР°!
+	AI_Output (self, other, "DIA_Addon_Fisk_Meeting_sell_12_02");//Р—Р°Р±СѓРґСЊ Рё РІС‹СЃР»СѓС€Р°Р№ РјРµРЅСЏ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РёРґРµСЏ РїРѕР»СѓС‡С€Рµ?
 };
 FUNC VOID DIA_Addon_Fisk_Meeting_now()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_00");//Что за идея?
+	AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_00");//Р§С‚Рѕ Р·Р° РёРґРµСЏ?
 	
 	if (!Npc_IsDead (Esteban))
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_01");//Мы уберем Эстебана с нашего пути. А это значит, ты его убьешь и займешь его место.
-		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_02");//Пока с ним его охранники, он для меня недосягаем.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_03");//Тогда мы их выманим. Правдой. 
-		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_04");//Правдой?
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_05");//Ты ведь выполнил свою работу. Ты узнал, что за нападением стоял я.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_06");//Скажи так Эстебану, и он отправит своих ребят сюда, чтобы покончить со мной. Тут-то я их и буду ждать.
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_07");//Когда они уйдут, ты займешься ублюдком, а я - охранниками.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_01");//РњС‹ СѓР±РµСЂРµРј Р­СЃС‚РµР±Р°РЅР° СЃ РЅР°С€РµРіРѕ РїСѓС‚Рё. Рђ СЌС‚Рѕ Р·РЅР°С‡РёС‚, С‚С‹ РµРіРѕ СѓР±СЊРµС€СЊ Рё Р·Р°Р№РјРµС€СЊ РµРіРѕ РјРµСЃС‚Рѕ.
+		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_02");//РџРѕРєР° СЃ РЅРёРј РµРіРѕ РѕС…СЂР°РЅРЅРёРєРё, РѕРЅ РґР»СЏ РјРµРЅСЏ РЅРµРґРѕСЃСЏРіР°РµРј.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_03");//РўРѕРіРґР° РјС‹ РёС… РІС‹РјР°РЅРёРј. РџСЂР°РІРґРѕР№. 
+		AI_Output (other, self, "DIA_Addon_Fisk_Meeting_now_15_04");//РџСЂР°РІРґРѕР№?
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_05");//РўС‹ РІРµРґСЊ РІС‹РїРѕР»РЅРёР» СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ. РўС‹ СѓР·РЅР°Р», С‡С‚Рѕ Р·Р° РЅР°РїР°РґРµРЅРёРµРј СЃС‚РѕСЏР» СЏ.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_06");//РЎРєР°Р¶Рё С‚Р°Рє Р­СЃС‚РµР±Р°РЅСѓ, Рё РѕРЅ РѕС‚РїСЂР°РІРёС‚ СЃРІРѕРёС… СЂРµР±СЏС‚ СЃСЋРґР°, С‡С‚РѕР±С‹ РїРѕРєРѕРЅС‡РёС‚СЊ СЃРѕ РјРЅРѕР№. РўСѓС‚-С‚Рѕ СЏ РёС… Рё Р±СѓРґСѓ Р¶РґР°С‚СЊ.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_07");//РљРѕРіРґР° РѕРЅРё СѓР№РґСѓС‚, С‚С‹ Р·Р°Р№РјРµС€СЊСЃСЏ СѓР±Р»СЋРґРєРѕРј, Р° СЏ - РѕС…СЂР°РЅРЅРёРєР°РјРё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_08"); //Эстебан мертв. Наконец-то я смогу вновь заняться своим делом. 
-		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_09"); //Вот, держи, это для тебя.
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_08"); //Р­СЃС‚РµР±Р°РЅ РјРµСЂС‚РІ. РќР°РєРѕРЅРµС†-С‚Рѕ СЏ СЃРјРѕРіСѓ РІРЅРѕРІСЊ Р·Р°РЅСЏС‚СЊСЃСЏ СЃРІРѕРёРј РґРµР»РѕРј. 
+		AI_Output (self, other, "DIA_Addon_Fisk_Meeting_now_12_09"); //Р’РѕС‚, РґРµСЂР¶Рё, СЌС‚Рѕ РґР»СЏ С‚РµР±СЏ.
 		B_GiveInvItems (self, other, itmi_gold, 500);
 	};
 	
@@ -468,7 +468,7 @@ FUNC VOID DIA_Addon_Fisk_Meeting_now()
 	MIS_Judas = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"AMBUSH");
-	B_LogEntry (Topic_Addon_Esteban, "Нападение на Эстебана заказал Фиск.");
+	B_LogEntry (Topic_Addon_Esteban, "РќР°РїР°РґРµРЅРёРµ РЅР° Р­СЃС‚РµР±Р°РЅР° Р·Р°РєР°Р·Р°Р» Р¤РёСЃРє.");
 };
 //--------------------------------------------------------------------
 //	Info Sieg
@@ -480,7 +480,7 @@ INSTANCE DIA_Addon_Fisk_Sieg   (C_INFO)
 	condition   = DIA_Addon_Fisk_Sieg_Condition;
 	information = DIA_Addon_Fisk_Sieg_Info;
 	permanent   = FALSE;
-	description = "С Эстебаном можно больше не считаться. Он мертв.";
+	description = "РЎ Р­СЃС‚РµР±Р°РЅРѕРј РјРѕР¶РЅРѕ Р±РѕР»СЊС€Рµ РЅРµ СЃС‡РёС‚Р°С‚СЊСЃСЏ. РћРЅ РјРµСЂС‚РІ.";
 };
 FUNC INT DIA_Addon_Fisk_Sieg_Condition()
 {	
@@ -492,10 +492,10 @@ FUNC INT DIA_Addon_Fisk_Sieg_Condition()
 };
 FUNC VOID DIA_Addon_Fisk_Sieg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fisk_Sieg_15_00");//С Эстебаном можно больше не считаться. Он мертв.
-	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_01");//Давненько я этого ждал.
-	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_02");//Я полагаю, у тебя дел невпроворот, да и у меня немало, так что давай расставаться.
-	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_03");//А если вдруг понадобится чего, ты знаешь, где меня искать.
+	AI_Output (other, self, "DIA_Addon_Fisk_Sieg_15_00");//РЎ Р­СЃС‚РµР±Р°РЅРѕРј РјРѕР¶РЅРѕ Р±РѕР»СЊС€Рµ РЅРµ СЃС‡РёС‚Р°С‚СЊСЃСЏ. РћРЅ РјРµСЂС‚РІ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_01");//Р”Р°РІРЅРµРЅСЊРєРѕ СЏ СЌС‚РѕРіРѕ Р¶РґР°Р».
+	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_02");//РЇ РїРѕР»Р°РіР°СЋ, Сѓ С‚РµР±СЏ РґРµР» РЅРµРІРїСЂРѕРІРѕСЂРѕС‚, РґР° Рё Сѓ РјРµРЅСЏ РЅРµРјР°Р»Рѕ, С‚Р°Рє С‡С‚Рѕ РґР°РІР°Р№ СЂР°СЃСЃС‚Р°РІР°С‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Addon_Fisk_Sieg_12_03");//Рђ РµСЃР»Рё РІРґСЂСѓРі РїРѕРЅР°РґРѕР±РёС‚СЃСЏ С‡РµРіРѕ, С‚С‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РёСЃРєР°С‚СЊ.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "START");

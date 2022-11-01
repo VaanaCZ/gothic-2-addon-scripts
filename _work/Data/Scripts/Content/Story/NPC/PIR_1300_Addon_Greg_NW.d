@@ -2,7 +2,7 @@
 instance PIR_1300_Addon_Greg_NW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãðåã";
+	name 		= "Ð“Ñ€ÐµÐ³";
 	guild 		= GIL_NONE;//Joly:kein GIL_PIR, sonst "Chaos in the City"
 	id 			= 1300;
 	voice 		= 1;
@@ -37,8 +37,8 @@ instance PIR_1300_Addon_Greg_NW (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 80); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 80); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_1300;

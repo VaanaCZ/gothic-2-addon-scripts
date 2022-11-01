@@ -4,18 +4,18 @@
 
 func void B_LastWarningVatras ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //Негодяй, что ты сделал? 
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //Орден Воды много раз предупреждал тебя об опасности попасться в сети зла.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //Тем не менее, я узнал, что ты ушел с пути всесохраняющего равновесия.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //Ты убивал и грабил всех и вся. Ты виновен во многих преступлениях.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //Множество невинных людей погибли от ТВОЕЙ руки.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //Теперь ты - союзник сил тьмы.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //РќРµРіРѕРґСЏР№, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р»? 
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //РћСЂРґРµРЅ Р’РѕРґС‹ РјРЅРѕРіРѕ СЂР°Р· РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ РѕР± РѕРїР°СЃРЅРѕСЃС‚Рё РїРѕРїР°СЃС‚СЊСЃСЏ РІ СЃРµС‚Рё Р·Р»Р°.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //РўРµРј РЅРµ РјРµРЅРµРµ, СЏ СѓР·РЅР°Р», С‡С‚Рѕ С‚С‹ СѓС€РµР» СЃ РїСѓС‚Рё РІСЃРµСЃРѕС…СЂР°РЅСЏСЋС‰РµРіРѕ СЂР°РІРЅРѕРІРµСЃРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //РўС‹ СѓР±РёРІР°Р» Рё РіСЂР°Р±РёР» РІСЃРµС… Рё РІСЃСЏ. РўС‹ РІРёРЅРѕРІРµРЅ РІРѕ РјРЅРѕРіРёС… РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏС….
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //РњРЅРѕР¶РµСЃС‚РІРѕ РЅРµРІРёРЅРЅС‹С… Р»СЋРґРµР№ РїРѕРіРёР±Р»Рё РѕС‚ РўР’РћР•Р™ СЂСѓРєРё.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //РўРµРїРµСЂСЊ С‚С‹ - СЃРѕСЋР·РЅРёРє СЃРёР» С‚СЊРјС‹.
 };
 
 func void B_VatrasPissedOff ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Отныне ты не можешь рассчитывать на нашу помощь. 
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //Убирайся. Для меня ты теперь пария.
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //РћС‚РЅС‹РЅРµ С‚С‹ РЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° РЅР°С€Сѓ РїРѕРјРѕС‰СЊ. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //РЈР±РёСЂР°Р№СЃСЏ. Р”Р»СЏ РјРµРЅСЏ С‚С‹ С‚РµРїРµСЂСЊ РїР°СЂРёСЏ.
 	
 	if (Vatras_IsOnBoard == LOG_SUCCESS)
 	{

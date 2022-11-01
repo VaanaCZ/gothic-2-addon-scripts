@@ -29,7 +29,7 @@ INSTANCE DIA_OCPAL_4_PEOPLE(C_INFO)
 	condition	= DIA_OCPAL_4_PEOPLE_Condition;
 	information	= DIA_OCPAL_4_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Кто командует здесь?";
+	description = "РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
@@ -39,8 +39,8 @@ FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
 
 FUNC VOID DIA_OCPAL_4_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //Кто командует здесь?
-	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Командующий Гаронд. Ты найдешь его в самом большом здании замка.
+	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //РљС‚Рѕ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ СЃР°РјРѕРј Р±РѕР»СЊС€РѕРј Р·РґР°РЅРёРё Р·Р°РјРєР°.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_4_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_4_LOCATION_Condition;
 	information	= DIA_OCPAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Что ты можешь рассказать мне о Долине Рудников?";
+	description = "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?";
 };                       
 
 FUNC INT DIA_OCPAL_4_LOCATION_Condition()
@@ -62,9 +62,9 @@ FUNC INT DIA_OCPAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Что ты можешь рассказать мне о Долине Рудников?
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //Насколько я знаю, здесь есть несколько шахт, если они еще не захвачены орками.
-	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //Старатели, работающие в шахтах, - это в основном каторжники, но среди них также есть несколько паладинов.
+	AI_Output (other, self, "DIA_OCPAL_4_LOCATION_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ Рѕ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_01"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, Р·РґРµСЃСЊ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ С€Р°С…С‚, РµСЃР»Рё РѕРЅРё РµС‰Рµ РЅРµ Р·Р°С…РІР°С‡РµРЅС‹ РѕСЂРєР°РјРё.
+	AI_Output (self, other, "DIA_OCPAL_4_LOCATION_04_02"); //РЎС‚Р°СЂР°С‚РµР»Рё, СЂР°Р±РѕС‚Р°СЋС‰РёРµ РІ С€Р°С…С‚Р°С…, - СЌС‚Рѕ РІ РѕСЃРЅРѕРІРЅРѕРј РєР°С‚РѕСЂР¶РЅРёРєРё, РЅРѕ СЃСЂРµРґРё РЅРёС… С‚Р°РєР¶Рµ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РїР°Р»Р°РґРёРЅРѕРІ.
 };
 
 // *************************************************************************
@@ -76,7 +76,7 @@ INSTANCE DIA_OCPAL_4_STANDARD(C_INFO)
 	condition	= DIA_OCPAL_4_STANDARD_Condition;
 	information	= DIA_OCPAL_4_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
                        
 func INT DIA_OCPAL_4_STANDARD_Condition()
@@ -86,30 +86,30 @@ func INT DIA_OCPAL_4_STANDARD_Condition()
 
 FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //РљР°Рє РґРµР»Р°?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //Орки окружили нас! Но мы будем обороняться до последнего человека! И Иннос поможет нам против драконов!
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //РћСЂРєРё РѕРєСЂСѓР¶РёР»Рё РЅР°СЃ! РќРѕ РјС‹ Р±СѓРґРµРј РѕР±РѕСЂРѕРЅСЏС‚СЊСЃСЏ РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ С‡РµР»РѕРІРµРєР°! Р РРЅРЅРѕСЃ РїРѕРјРѕР¶РµС‚ РЅР°Рј РїСЂРѕС‚РёРІ РґСЂР°РєРѕРЅРѕРІ!
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Я думаю, атака орков не заставит себя долго ждать. И где же это чертово подкрепление?
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //РЇ РґСѓРјР°СЋ, Р°С‚Р°РєР° РѕСЂРєРѕРІ РЅРµ Р·Р°СЃС‚Р°РІРёС‚ СЃРµР±СЏ РґРѕР»РіРѕ Р¶РґР°С‚СЊ. Р РіРґРµ Р¶Рµ СЌС‚Рѕ С‡РµСЂС‚РѕРІРѕ РїРѕРґРєСЂРµРїР»РµРЅРёРµ?
 			if (other.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Надеюсь, что ты не думаешь всерьез, что у вас, охотники на драконов, действительно есть шанс против ВСЕХ драконов?
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //РќР°РґРµСЋСЃСЊ, С‡С‚Рѕ С‚С‹ РЅРµ РґСѓРјР°РµС€СЊ РІСЃРµСЂСЊРµР·, С‡С‚Рѕ Сѓ РІР°СЃ, РѕС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ, РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЃС‚СЊ С€Р°РЅСЃ РїСЂРѕС‚РёРІ Р’РЎР•РҐ РґСЂР°РєРѕРЅРѕРІ?
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Эти так называемые охотники на драконов мало на что способны!
+				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_04"); //Р­С‚Рё С‚Р°Рє РЅР°Р·С‹РІР°РµРјС‹Рµ РѕС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ РјР°Р»Рѕ РЅР° С‡С‚Рѕ СЃРїРѕСЃРѕР±РЅС‹!
 			};
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_05"); //Слава Инносу! Эти проклятые твари были уничтожены!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_05"); //РЎР»Р°РІР° РРЅРЅРѕСЃСѓ! Р­С‚Рё РїСЂРѕРєР»СЏС‚С‹Рµ С‚РІР°СЂРё Р±С‹Р»Рё СѓРЅРёС‡С‚РѕР¶РµРЅС‹!
 		};
 	};
 
@@ -117,12 +117,12 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //Гибель драконов, похоже, не произвела особого впечатления на орков. И почему, во имя Инноса, они не уходят? Это какая-то дьявольщина!
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //Р“РёР±РµР»СЊ РґСЂР°РєРѕРЅРѕРІ, РїРѕС…РѕР¶Рµ, РЅРµ РїСЂРѕРёР·РІРµР»Р° РѕСЃРѕР±РѕРіРѕ РІРїРµС‡Р°С‚Р»РµРЅРёСЏ РЅР° РѕСЂРєРѕРІ. Р РїРѕС‡РµРјСѓ, РІРѕ РёРјСЏ РРЅРЅРѕСЃР°, РѕРЅРё РЅРµ СѓС…РѕРґСЏС‚? Р­С‚Рѕ РєР°РєР°СЏ-С‚Рѕ РґСЊСЏРІРѕР»СЊС‰РёРЅР°!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Эти чертовы ворота заклинило. Орки рвутся в замок, и ничто не остановит их.
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_08"); //Кто-то должен сообщить лорду Хагену. Он нужен ЗДЕСЬ и сейчас.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Р­С‚Рё С‡РµСЂС‚РѕРІС‹ РІРѕСЂРѕС‚Р° Р·Р°РєР»РёРЅРёР»Рѕ. РћСЂРєРё СЂРІСѓС‚СЃСЏ РІ Р·Р°РјРѕРє, Рё РЅРёС‡С‚Рѕ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚ РёС….
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_08"); //РљС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ СЃРѕРѕР±С‰РёС‚СЊ Р»РѕСЂРґСѓ РҐР°РіРµРЅСѓ. РћРЅ РЅСѓР¶РµРЅ Р—Р”Р•РЎР¬ Рё СЃРµР№С‡Р°СЃ.
 		};
 	};
 };

@@ -10,8 +10,8 @@
 // Ambient Vobs			(ZTOGGLE RENDERAMBIENTVOBS)
 // Env Mapping			(ZTOGGLE ENVMAP)
 
-// optional vielleicht spдter noch
-// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nцtig auf дlteren Karten und evtl. Performance Gewinn (TEST!)
+// optional vielleicht spРґter noch
+// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nС†tig auf Рґlteren Karten und evtl. Performance Gewinn (TEST!)
 // Wolkenschatten		(TODO):     bisher nur in der INI einstellbar, bringt Performance wenn aus und es regnet
 
 INSTANCE MENU_OPT_EXT(C_MENU_DEF)
@@ -52,7 +52,7 @@ INSTANCE MENU_OPT_EXT(C_MENU_DEF)
 
 INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"РАСШИРЕННАЯ КОНФИГУРАЦИЯ";
+	text[0]		=	"Р РђРЎРЁРР Р•РќРќРђРЇ РљРћРќР¤РР“РЈР РђР¦РРЇ";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -70,8 +70,8 @@ INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_FFT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Волны на воде";
-	text[1]		= 	"Волны на воде вкл/откл"; // Kommentar
+	text[0]		=	"Р’РѕР»РЅС‹ РЅР° РІРѕРґРµ";
+	text[1]		= 	"Р’РѕР»РЅС‹ РЅР° РІРѕРґРµ РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -85,7 +85,7 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*0 + MENU_CHOICE_YPLUS;
@@ -101,8 +101,8 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_WATERFADE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Сглаж. воды";
-	text[1]		= 	"Сглаживание воды вкл/откл"; // Kommentar
+	text[0]		=	"РЎРіР»Р°Р¶. РІРѕРґС‹";
+	text[1]		= 	"РЎРіР»Р°Р¶РёРІР°РЅРёРµ РІРѕРґС‹ РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -116,7 +116,7 @@ instance MENUITEM_EXT_WATERFADE_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*1 + MENU_CHOICE_YPLUS;
@@ -132,8 +132,8 @@ instance MENUITEM_EXT_WATERFADE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_OBJWIND(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Ветер";
-	text[1]		= 	"Движение ветра вкл/откл"; // Kommentar
+	text[0]		=	"Р’РµС‚РµСЂ";
+	text[1]		= 	"Р”РІРёР¶РµРЅРёРµ РІРµС‚СЂР° РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -147,7 +147,7 @@ instance MENUITEM_EXT_OBJWIND_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*2 + MENU_CHOICE_YPLUS;
@@ -179,7 +179,7 @@ instance MENUITEM_EXT_AMBIENTOBJ_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -197,8 +197,8 @@ instance MENUITEM_EXT_AMBIENTOBJ_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_CLOUDSHADOW(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Тени от облаков";
-	text[1]		= 	"Тени от облаков вкл/откл"; // Kommentar
+	text[0]		=	"РўРµРЅРё РѕС‚ РѕР±Р»Р°РєРѕРІ";
+	text[1]		= 	"РўРµРЅРё РѕС‚ РѕР±Р»Р°РєРѕРІ РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3500;	dimy		=	750;
@@ -212,7 +212,7 @@ instance MENUITEM_EXT_CLOUDSHADOW_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*3 + MENU_CHOICE_YPLUS;
@@ -229,8 +229,8 @@ instance MENUITEM_EXT_CLOUDSHADOW_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_AMBIENTPFX(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Фон. эффекты";
-	text[1]		= 	"Фоновые эффекты частиц вкл/откл"; // Kommentar
+	text[0]		=	"Р¤РѕРЅ. СЌС„С„РµРєС‚С‹";
+	text[1]		= 	"Р¤РѕРЅРѕРІС‹Рµ СЌС„С„РµРєС‚С‹ С‡Р°СЃС‚РёС† РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -244,7 +244,7 @@ instance MENUITEM_EXT_AMBIENTPFX_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*4 + MENU_CHOICE_YPLUS;
@@ -261,8 +261,8 @@ instance MENUITEM_EXT_AMBIENTPFX_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_ENVMAP(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Отражения";
-	text[1]		= 	"Отражения вкл/откл"; // Kommentar
+	text[0]		=	"РћС‚СЂР°Р¶РµРЅРёСЏ";
+	text[1]		= 	"РћС‚СЂР°Р¶РµРЅРёСЏ РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	3000;	dimy		=	750;
@@ -276,7 +276,7 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*5 + MENU_CHOICE_YPLUS;
@@ -293,8 +293,8 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_RADIALFOG(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Рад. туман";
-	text[1]		= 	"Радиальный туман вкл/откл"; // Kommentar
+	text[0]		=	"Р Р°Рґ. С‚СѓРјР°РЅ";
+	text[1]		= 	"Р Р°РґРёР°Р»СЊРЅС‹Р№ С‚СѓРјР°РЅ РІРєР»/РѕС‚РєР»"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*6;
 	dimx		=	3000;	dimy		=	750;
@@ -308,7 +308,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;		
-	text[0]		= 	"нет|да";
+	text[0]		= 	"РЅРµС‚|РґР°";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5000;		posy		=	MENU_START_Y + MENU_DY*6 + MENU_CHOICE_YPLUS;
@@ -326,7 +326,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Назад";
+	text[0]		=	"РќР°Р·Р°Рґ";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

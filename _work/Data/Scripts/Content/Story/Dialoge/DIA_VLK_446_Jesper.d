@@ -72,20 +72,20 @@ FUNC INT DIA_Jesper_Hallo_Condition()
 };
 FUNC VOID DIA_Jesper_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Jesper_Hallo_09_00");//Эй, Что ты тут делаешь? Тебе тут не место!
-	AI_Output (self, other,"DIA_Jesper_Hallo_09_01");//Так что выкладывай, что ты делаешь здесь?
+	AI_Output (self, other,"DIA_Jesper_Hallo_09_00");//Р­Р№, Р§С‚Рѕ С‚С‹ С‚СѓС‚ РґРµР»Р°РµС€СЊ? РўРµР±Рµ С‚СѓС‚ РЅРµ РјРµСЃС‚Рѕ!
+	AI_Output (self, other,"DIA_Jesper_Hallo_09_01");//РўР°Рє С‡С‚Рѕ РІС‹РєР»Р°РґС‹РІР°Р№, С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 		
 	Info_ClearChoices (DIA_Jesper_Hallo);
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Я пришел убить тебя.",DIA_Jesper_Hallo_Kill);	
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Я просто прогуливаюсь здесь.",DIA_Jesper_Hallo_NurSo);
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"РЇ РїСЂРёС€РµР» СѓР±РёС‚СЊ С‚РµР±СЏ.",DIA_Jesper_Hallo_Kill);	
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"РЇ РїСЂРѕСЃС‚Рѕ РїСЂРѕРіСѓР»РёРІР°СЋСЃСЊ Р·РґРµСЃСЊ.",DIA_Jesper_Hallo_NurSo);
 		
 	if  (Attila_Key == TRUE)
 	{
-		Info_AddChoice 	  (DIA_Jesper_Hallo,"Аттила дал мне ключ ...",DIA_Jesper_Hallo_Willkommen);
+		Info_AddChoice 	  (DIA_Jesper_Hallo,"РђС‚С‚РёР»Р° РґР°Р» РјРЅРµ РєР»СЋС‡ ...",DIA_Jesper_Hallo_Willkommen);
 	}	
 	else 
 	{
-		Info_AddChoice 	  (DIA_Jesper_Hallo,"Я прикончил Аттилу ...",DIA_Jesper_Hallo_Umgelegt);
+		Info_AddChoice 	  (DIA_Jesper_Hallo,"РЇ РїСЂРёРєРѕРЅС‡РёР» РђС‚С‚РёР»Сѓ ...",DIA_Jesper_Hallo_Umgelegt);
 	};
 	
 	DG_gefunden = TRUE;
@@ -93,8 +93,8 @@ FUNC VOID DIA_Jesper_Hallo_Info()
 };
 FUNC VOID DIA_Jesper_Hallo_Kill()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Kill_15_00");//Я пришел убить тебя.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Kill_09_01");//Чудесная идея. Ты что думаешь, я здесь один? Ах, ладно. Сейчас мы решим этот вопрос.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Kill_15_00");//РЇ РїСЂРёС€РµР» СѓР±РёС‚СЊ С‚РµР±СЏ.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Kill_09_01");//Р§СѓРґРµСЃРЅР°СЏ РёРґРµСЏ. РўС‹ С‡С‚Рѕ РґСѓРјР°РµС€СЊ, СЏ Р·РґРµСЃСЊ РѕРґРёРЅ? РђС…, Р»Р°РґРЅРѕ. РЎРµР№С‡Р°СЃ РјС‹ СЂРµС€РёРј СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ.
 	
 	
 	AI_StopProcessInfos (self);
@@ -103,39 +103,39 @@ FUNC VOID DIA_Jesper_Hallo_Kill()
 };
 FUNC VOID DIA_Jesper_Hallo_NurSo()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_NurSo_15_00");//Я просто прогуливаюсь здесь.
-	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_01");//Здесь не стоит гулять. Это слишком опасно, понятно?
-	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_02");//Так что оставь свое оружие на месте и скажи мне, зачем ты здесь?
+	AI_Output (other, self,"DIA_Jesper_Hallo_NurSo_15_00");//РЇ РїСЂРѕСЃС‚Рѕ РїСЂРѕРіСѓР»РёРІР°СЋСЃСЊ Р·РґРµСЃСЊ.
+	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_01");//Р—РґРµСЃСЊ РЅРµ СЃС‚РѕРёС‚ РіСѓР»СЏС‚СЊ. Р­С‚Рѕ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ, РїРѕРЅСЏС‚РЅРѕ?
+	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_02");//РўР°Рє С‡С‚Рѕ РѕСЃС‚Р°РІСЊ СЃРІРѕРµ РѕСЂСѓР¶РёРµ РЅР° РјРµСЃС‚Рµ Рё СЃРєР°Р¶Рё РјРЅРµ, Р·Р°С‡РµРј С‚С‹ Р·РґРµСЃСЊ?
 };
 FUNC VOID DIA_Jesper_Hallo_Willkommen()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Willkommen_15_00");//Аттила дал мне ключ. Вот почему я здесь. Так что вам нужно от меня?
-	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_01");//Разве ты не хочешь узнать это? Не горячись.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_02");//Иди к Кассии. Тебя ждут.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Willkommen_15_00");//РђС‚С‚РёР»Р° РґР°Р» РјРЅРµ РєР»СЋС‡. Р’РѕС‚ РїРѕС‡РµРјСѓ СЏ Р·РґРµСЃСЊ. РўР°Рє С‡С‚Рѕ РІР°Рј РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?
+	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_01");//Р Р°Р·РІРµ С‚С‹ РЅРµ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ СЌС‚Рѕ? РќРµ РіРѕСЂСЏС‡РёСЃСЊ.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_02");//РРґРё Рє РљР°СЃСЃРёРё. РўРµР±СЏ Р¶РґСѓС‚.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
 };
 FUNC VOID DIA_Jesper_Hallo_Umgelegt()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Umgelegt_15_00");//Я прикончил Аттилу. При нем был ключ от канализации.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_01");//(с недоверием) ТЫ убил Аттилу?! (презрительно) А, ладно, он все равно был никчемным псом.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_02");//Но я хочу предупредить тебя. Если ты нападешь на МЕНЯ, я тебя убью.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Umgelegt_15_00");//РЇ РїСЂРёРєРѕРЅС‡РёР» РђС‚С‚РёР»Сѓ. РџСЂРё РЅРµРј Р±С‹Р» РєР»СЋС‡ РѕС‚ РєР°РЅР°Р»РёР·Р°С†РёРё.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_01");//(СЃ РЅРµРґРѕРІРµСЂРёРµРј) РўР« СѓР±РёР» РђС‚С‚РёР»Сѓ?! (РїСЂРµР·СЂРёС‚РµР»СЊРЅРѕ) Рђ, Р»Р°РґРЅРѕ, РѕРЅ РІСЃРµ СЂР°РІРЅРѕ Р±С‹Р» РЅРёРєС‡РµРјРЅС‹Рј РїСЃРѕРј.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_02");//РќРѕ СЏ С…РѕС‡Сѓ РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ С‚РµР±СЏ. Р•СЃР»Рё С‚С‹ РЅР°РїР°РґРµС€СЊ РЅР° РњР•РќРЇ, СЏ С‚РµР±СЏ СѓР±СЊСЋ.
 	
 	Info_ClearChoices (DIA_Jesper_Hallo);
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Что ты делаешь здесь ...",DIA_Jesper_Hallo_Was);	
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Отведи меня к вашему главарю.",DIA_Jesper_Hallo_Anfuehrer);
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ ...",DIA_Jesper_Hallo_Was);	
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"РћС‚РІРµРґРё РјРµРЅСЏ Рє РІР°С€РµРјСѓ РіР»Р°РІР°СЂСЋ.",DIA_Jesper_Hallo_Anfuehrer);
 };
 FUNC VOID DIA_Jesper_Hallo_Was()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Was_15_00");//Что ты делаешь в этой темной вонючей дыре?
-	AI_Output (self, other,"DIA_Jesper_Hallo_Was_09_01");//(рычит) Я живу здесь. Еще один глупый вопрос, и в твоей шкуре появятся дырки.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Was_15_00");//Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ РІ СЌС‚РѕР№ С‚РµРјРЅРѕР№ РІРѕРЅСЋС‡РµР№ РґС‹СЂРµ?
+	AI_Output (self, other,"DIA_Jesper_Hallo_Was_09_01");//(СЂС‹С‡РёС‚) РЇ Р¶РёРІСѓ Р·РґРµСЃСЊ. Р•С‰Рµ РѕРґРёРЅ РіР»СѓРїС‹Р№ РІРѕРїСЂРѕСЃ, Рё РІ С‚РІРѕРµР№ С€РєСѓСЂРµ РїРѕСЏРІСЏС‚СЃСЏ РґС‹СЂРєРё.
 };
 FUNC VOID DIA_Jesper_Hallo_Anfuehrer()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Anfuehrer_15_00");//Отведи меня к вашему главарю.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_01");//(грязный смех) ХА - к главарю? Я уверен, Кассия захочет поговорить с тобой.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_02");//Иди вперед - и не пытайся провести меня.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Anfuehrer_15_00");//РћС‚РІРµРґРё РјРµРЅСЏ Рє РІР°С€РµРјСѓ РіР»Р°РІР°СЂСЋ.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_01");//(РіСЂСЏР·РЅС‹Р№ СЃРјРµС…) РҐРђ - Рє РіР»Р°РІР°СЂСЋ? РЇ СѓРІРµСЂРµРЅ, РљР°СЃСЃРёСЏ Р·Р°С…РѕС‡РµС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_02");//РРґРё РІРїРµСЂРµРґ - Рё РЅРµ РїС‹С‚Р°Р№СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -149,7 +149,7 @@ INSTANCE DIA_Jesper_Bezahlen   (C_INFO)
 	condition   = DIA_Jesper_Bezahlen_Condition;
 	information = DIA_Jesper_Bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Ты можешь научить меня чему-нибудь?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 FUNC INT DIA_Jesper_Bezahlen_Condition()
 {	
@@ -163,22 +163,22 @@ FUNC INT DIA_Jesper_Bezahlen_Condition()
 };
 FUNC VOID DIA_Jesper_Bezahlen_Info()
 {	
-	AI_Output (other, self, "DIA_Jesper_Bezahlen_15_00");//Ты можешь научить меня чему-нибудь?
+	AI_Output (other, self, "DIA_Jesper_Bezahlen_15_00");//РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
 	
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_01");//Конечно, я покажу, как нужно красться - для тебя бесплатно.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_01");//РљРѕРЅРµС‡РЅРѕ, СЏ РїРѕРєР°Р¶Сѓ, РєР°Рє РЅСѓР¶РЅРѕ РєСЂР°СЃС‚СЊСЃСЏ - РґР»СЏ С‚РµР±СЏ Р±РµСЃРїР»Р°С‚РЅРѕ.
 		Jesper_TeachSneak = TRUE;
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_02");//Ты хочешь узнать, как двигаться, не издавая ни единого звука? Это обойдется тебе в 100 золотых монет.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_02");//РўС‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ, РєР°Рє РґРІРёРіР°С‚СЊСЃСЏ, РЅРµ РёР·РґР°РІР°СЏ РЅРё РµРґРёРЅРѕРіРѕ Р·РІСѓРєР°? Р­С‚Рѕ РѕР±РѕР№РґРµС‚СЃСЏ С‚РµР±Рµ РІ 100 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 		B_Say_Gold (self, other, Jesper_Cost);
 		
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
-		Info_AddChoice (DIA_Jesper_Bezahlen,"Может быть, позже ...(НАЗАД)",DIA_Jesper_Bezahlen_Spaeter);
-		Info_AddChoice (DIA_Jesper_Bezahlen,"Хорошо, я хочу научиться красться (заплатить 100 золотых).",DIA_Jesper_Bezahlen_Okay);
+		Info_AddChoice (DIA_Jesper_Bezahlen,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, РїРѕР·Р¶Рµ ...(РќРђР—РђР”)",DIA_Jesper_Bezahlen_Spaeter);
+		Info_AddChoice (DIA_Jesper_Bezahlen,"РҐРѕСЂРѕС€Рѕ, СЏ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ (Р·Р°РїР»Р°С‚РёС‚СЊ 100 Р·РѕР»РѕС‚С‹С…).",DIA_Jesper_Bezahlen_Okay);
 	};
 };
 FUNC VOID DIA_Jesper_Bezahlen_Spaeter()
@@ -187,18 +187,18 @@ FUNC VOID DIA_Jesper_Bezahlen_Spaeter()
 };
 FUNC VOID DIA_Jesper_Bezahlen_Okay()
 {
-	AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_00");//Хорошо, я хочу научиться красться.
+	AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_00");//РҐРѕСЂРѕС€Рѕ, СЏ С…РѕС‡Сѓ РЅР°СѓС‡РёС‚СЊСЃСЏ РєСЂР°СЃС‚СЊСЃСЏ.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_01");//Вот золото.
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_02");//Скажешь, когда будешь готов.
+		AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_01");//Р’РѕС‚ Р·РѕР»РѕС‚Рѕ.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_02");//РЎРєР°Р¶РµС€СЊ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ.
 		Jesper_TeachSneak = TRUE;
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_03");//Без золота ты не сможешь ничему научиться.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_03");//Р‘РµР· Р·РѕР»РѕС‚Р° С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РЅРёС‡РµРјСѓ РЅР°СѓС‡РёС‚СЊСЃСЏ.
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
 	};
 };
@@ -212,7 +212,7 @@ INSTANCE DIA_Jesper_Schleichen   (C_INFO)
 	condition   = DIA_Jesper_Schleichen_Condition;
 	information = DIA_Jesper_Schleichen_Info;
 	permanent   = TRUE;
-	description = "Научи меня красться.";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ РєСЂР°СЃС‚СЊСЃСЏ.";
 };
 //--------------------------------------
 var int DIA_Jesper_Schleichen_permanent;
@@ -227,18 +227,18 @@ FUNC INT DIA_Jesper_Schleichen_Condition()
 };
 FUNC VOID DIA_Jesper_Schleichen_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Schleichen_15_00");//Научи меня красться.
+	AI_Output (other, self, "DIA_Jesper_Schleichen_15_00");//РќР°СѓС‡Рё РјРµРЅСЏ РєСЂР°СЃС‚СЊСЃСЏ.
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK)
 	{
-		AI_Output (self, other, "DIA_Jesper_Schleichen_09_01");//Умение красться очень важно для любого вора. Особенно, если ты ходишь по чужому дому.
-		AI_Output (self, other, "DIA_Jesper_Schleichen_09_02");//Там нельзя топать, как ты это делаешь сейчас. Большинство людей спит очень чутким сном.
-		AI_Output (self, other, "DIA_Jesper_Schleichen_09_03");//Только когда ты крадешься, никто не услышит тебя, и ты сможешь работать беспрепятственно.
+		AI_Output (self, other, "DIA_Jesper_Schleichen_09_01");//РЈРјРµРЅРёРµ РєСЂР°СЃС‚СЊСЃСЏ РѕС‡РµРЅСЊ РІР°Р¶РЅРѕ РґР»СЏ Р»СЋР±РѕРіРѕ РІРѕСЂР°. РћСЃРѕР±РµРЅРЅРѕ, РµСЃР»Рё С‚С‹ С…РѕРґРёС€СЊ РїРѕ С‡СѓР¶РѕРјСѓ РґРѕРјСѓ.
+		AI_Output (self, other, "DIA_Jesper_Schleichen_09_02");//РўР°Рј РЅРµР»СЊР·СЏ С‚РѕРїР°С‚СЊ, РєР°Рє С‚С‹ СЌС‚Рѕ РґРµР»Р°РµС€СЊ СЃРµР№С‡Р°СЃ. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№ СЃРїРёС‚ РѕС‡РµРЅСЊ С‡СѓС‚РєРёРј СЃРЅРѕРј.
+		AI_Output (self, other, "DIA_Jesper_Schleichen_09_03");//РўРѕР»СЊРєРѕ РєРѕРіРґР° С‚С‹ РєСЂР°РґРµС€СЊСЃСЏ, РЅРёРєС‚Рѕ РЅРµ СѓСЃР»С‹С€РёС‚ С‚РµР±СЏ, Рё С‚С‹ СЃРјРѕР¶РµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ Р±РµСЃРїСЂРµРїСЏС‚СЃС‚РІРµРЅРЅРѕ.
 		DIA_Jesper_Schleichen_permanent = TRUE;
 	};
 };
 //////////////////////////////////////////////////////////////////////
-//	Info Freunde getцtet
+//	Info Freunde getС†tet
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Jesper_Killer   (C_INFO)
 {
@@ -262,20 +262,20 @@ FUNC VOID DIA_Jesper_Killer_Info()
 	if  Npc_IsDead (Cassia)
 	&&  Npc_IsDead (Ramirez)
 	{
-		AI_Output (self, other, "DIA_Jesper_Killer_09_00");//Ты убил моих друзей. Зачем ты сделал это, убийца?
-		AI_Output (self, other, "DIA_Jesper_Killer_09_01");//Я отправлю тебя в царство Белиара.
+		AI_Output (self, other, "DIA_Jesper_Killer_09_00");//РўС‹ СѓР±РёР» РјРѕРёС… РґСЂСѓР·РµР№. Р—Р°С‡РµРј С‚С‹ СЃРґРµР»Р°Р» СЌС‚Рѕ, СѓР±РёР№С†Р°?
+		AI_Output (self, other, "DIA_Jesper_Killer_09_01");//РЇ РѕС‚РїСЂР°РІР»СЋ С‚РµР±СЏ РІ С†Р°СЂСЃС‚РІРѕ Р‘РµР»РёР°СЂР°.
 	}
 	else if Npc_IsDead (Cassia)
 	{
-		AI_Output (self, other, "DIA_Jesper_Killer_09_02");//Убийца! Ты убил Кассию! Но от меня тебе не уйти!
+		AI_Output (self, other, "DIA_Jesper_Killer_09_02");//РЈР±РёР№С†Р°! РўС‹ СѓР±РёР» РљР°СЃСЃРёСЋ! РќРѕ РѕС‚ РјРµРЅСЏ С‚РµР±Рµ РЅРµ СѓР№С‚Рё!
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE,1); 
 	}
 	else if  Npc_IsDead (Ramirez)
 	{
-		AI_Output (self, other, "DIA_Jesper_Killer_09_03");//Я давно работаю с Рамирезом и добыл для него больше золота, чем ты можешь себе представить.
-		AI_Output (self, other, "DIA_Jesper_Killer_09_04");//А ты взял и убил его, грязный пес! Но сейчас пришло время расплаты!
+		AI_Output (self, other, "DIA_Jesper_Killer_09_03");//РЇ РґР°РІРЅРѕ СЂР°Р±РѕС‚Р°СЋ СЃ Р Р°РјРёСЂРµР·РѕРј Рё РґРѕР±С‹Р» РґР»СЏ РЅРµРіРѕ Р±РѕР»СЊС€Рµ Р·РѕР»РѕС‚Р°, С‡РµРј С‚С‹ РјРѕР¶РµС€СЊ СЃРµР±Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ.
+		AI_Output (self, other, "DIA_Jesper_Killer_09_04");//Рђ С‚С‹ РІР·СЏР» Рё СѓР±РёР» РµРіРѕ, РіСЂСЏР·РЅС‹Р№ РїРµСЃ! РќРѕ СЃРµР№С‡Р°СЃ РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ СЂР°СЃРїР»Р°С‚С‹!
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE,1); 
@@ -292,7 +292,7 @@ INSTANCE DIA_Jesper_Bogen   (C_INFO)
 	condition   = DIA_Jesper_Bogen_Condition;
 	information = DIA_Jesper_Bogen_Info;
 	permanent   = FALSE;
-	description = "Скажи, ты ничего не знаешь о луке Боспера?";
+	description = "РЎРєР°Р¶Рё, С‚С‹ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°РµС€СЊ Рѕ Р»СѓРєРµ Р‘РѕСЃРїРµСЂР°?";
 };
 
 FUNC INT DIA_Jesper_Bogen_Condition()
@@ -306,17 +306,17 @@ FUNC INT DIA_Jesper_Bogen_Condition()
 };
 FUNC VOID DIA_Jesper_Bogen_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Bogen_15_00");//Скажи, ты ничего не знаешь о луке Боспера?
-	AI_Output (self, other, "DIA_Jesper_Bogen_09_01");//Ты имеешь в виду лук этого ремесленника? Да, я упаковал его в один из сундуков.
-	AI_Output (self, other, "DIA_Jesper_Bogen_09_02");//Но там полно крыс вокруг. Ты можешь забрать его, если не боишься этих тварей.
-	AI_Output (self, other, "DIA_Jesper_Bogen_09_03");//Ох, да, конечно же, этот сундук заперт. Тебе придется взломать замок. (ухмыляется) Надеюсь, у тебя есть отмычки.
+	AI_Output (other, self, "DIA_Jesper_Bogen_15_00");//РЎРєР°Р¶Рё, С‚С‹ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°РµС€СЊ Рѕ Р»СѓРєРµ Р‘РѕСЃРїРµСЂР°?
+	AI_Output (self, other, "DIA_Jesper_Bogen_09_01");//РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ Р»СѓРє СЌС‚РѕРіРѕ СЂРµРјРµСЃР»РµРЅРЅРёРєР°? Р”Р°, СЏ СѓРїР°РєРѕРІР°Р» РµРіРѕ РІ РѕРґРёРЅ РёР· СЃСѓРЅРґСѓРєРѕРІ.
+	AI_Output (self, other, "DIA_Jesper_Bogen_09_02");//РќРѕ С‚Р°Рј РїРѕР»РЅРѕ РєСЂС‹СЃ РІРѕРєСЂСѓРі. РўС‹ РјРѕР¶РµС€СЊ Р·Р°Р±СЂР°С‚СЊ РµРіРѕ, РµСЃР»Рё РЅРµ Р±РѕРёС€СЊСЃСЏ СЌС‚РёС… С‚РІР°СЂРµР№.
+	AI_Output (self, other, "DIA_Jesper_Bogen_09_03");//РћС…, РґР°, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, СЌС‚РѕС‚ СЃСѓРЅРґСѓРє Р·Р°РїРµСЂС‚. РўРµР±Рµ РїСЂРёРґРµС‚СЃСЏ РІР·Р»РѕРјР°С‚СЊ Р·Р°РјРѕРє. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РќР°РґРµСЋСЃСЊ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РѕС‚РјС‹С‡РєРё.
 	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_01");	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_02");	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_03");
 };
 //////////////////////////////////////////////////////////////////////
-//	Info Tьr
+//	Info TСЊr
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Jesper_Tuer   (C_INFO)
 {
@@ -325,7 +325,7 @@ INSTANCE DIA_Jesper_Tuer   (C_INFO)
 	condition   = DIA_Jesper_Tuer_Condition;
 	information = DIA_Jesper_Tuer_Info;
 	permanent   = FALSE;
-	description = "А что за этой закрытой дверью?";
+	description = "Рђ С‡С‚Рѕ Р·Р° СЌС‚РѕР№ Р·Р°РєСЂС‹С‚РѕР№ РґРІРµСЂСЊСЋ?";
 };
 
 FUNC INT DIA_Jesper_Tuer_Condition()
@@ -338,11 +338,11 @@ FUNC INT DIA_Jesper_Tuer_Condition()
 };
 FUNC VOID DIA_Jesper_Tuer_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Tuer_15_00");//А что за этой закрытой дверью?
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_01");//(ухмыляется) За ней находится сундук - сундук мастера-медвежатника Фингера.
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_02");//Он поставил такой невероятно сложный замок на него, что до сих пор никому не удалось открыть его.
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_03");//К сожалению, он как-то попался - и его засунули за Барьер, где он, вероятно, и умер.
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_04");//Но если ты хочешь попытаться открыть его сундук, вот ключ от этой комнаты.
+	AI_Output (other, self, "DIA_Jesper_Tuer_15_00");//Рђ С‡С‚Рѕ Р·Р° СЌС‚РѕР№ Р·Р°РєСЂС‹С‚РѕР№ РґРІРµСЂСЊСЋ?
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_01");//(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) Р—Р° РЅРµР№ РЅР°С…РѕРґРёС‚СЃСЏ СЃСѓРЅРґСѓРє - СЃСѓРЅРґСѓРє РјР°СЃС‚РµСЂР°-РјРµРґРІРµР¶Р°С‚РЅРёРєР° Р¤РёРЅРіРµСЂР°.
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_02");//РћРЅ РїРѕСЃС‚Р°РІРёР» С‚Р°РєРѕР№ РЅРµРІРµСЂРѕСЏС‚РЅРѕ СЃР»РѕР¶РЅС‹Р№ Р·Р°РјРѕРє РЅР° РЅРµРіРѕ, С‡С‚Рѕ РґРѕ СЃРёС… РїРѕСЂ РЅРёРєРѕРјСѓ РЅРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ РµРіРѕ.
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_03");//Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РѕРЅ РєР°Рє-С‚Рѕ РїРѕРїР°Р»СЃСЏ - Рё РµРіРѕ Р·Р°СЃСѓРЅСѓР»Рё Р·Р° Р‘Р°СЂСЊРµСЂ, РіРґРµ РѕРЅ, РІРµСЂРѕСЏС‚РЅРѕ, Рё СѓРјРµСЂ.
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_04");//РќРѕ РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїС‹С‚Р°С‚СЊСЃСЏ РѕС‚РєСЂС‹С‚СЊ РµРіРѕ СЃСѓРЅРґСѓРє, РІРѕС‚ РєР»СЋС‡ РѕС‚ СЌС‚РѕР№ РєРѕРјРЅР°С‚С‹.
 	
 	B_GiveInvItems (self, other, ItKe_Fingers,1);
 };
@@ -356,7 +356,7 @@ INSTANCE DIA_Jesper_Truhe   (C_INFO)
 	condition   = DIA_Jesper_Truhe_Condition;
 	information = DIA_Jesper_Truhe_Info;
 	permanent   = FALSE;
-	description = "Мне удалось открыть сундук.";
+	description = "РњРЅРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ СЃСѓРЅРґСѓРє.";
 };
 
 FUNC INT DIA_Jesper_Truhe_Condition()
@@ -372,9 +372,9 @@ FUNC INT DIA_Jesper_Truhe_Condition()
 };
 FUNC VOID DIA_Jesper_Truhe_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Truhe_15_00");//Мне удалось открыть сундук.
-	AI_Output (self, other, "DIA_Jesper_Truhe_09_01");//Это невозможно! Похоже, у нас появился новый мастер-медвежатник.
-	AI_Output (self, other, "DIA_Jesper_Truhe_09_02");//Поздравляю!
+	AI_Output (other, self, "DIA_Jesper_Truhe_15_00");//РњРЅРµ СѓРґР°Р»РѕСЃСЊ РѕС‚РєСЂС‹С‚СЊ СЃСѓРЅРґСѓРє.
+	AI_Output (self, other, "DIA_Jesper_Truhe_09_01");//Р­С‚Рѕ РЅРµРІРѕР·РјРѕР¶РЅРѕ! РџРѕС…РѕР¶Рµ, Сѓ РЅР°СЃ РїРѕСЏРІРёР»СЃСЏ РЅРѕРІС‹Р№ РјР°СЃС‚РµСЂ-РјРµРґРІРµР¶Р°С‚РЅРёРє.
+	AI_Output (self, other, "DIA_Jesper_Truhe_09_02");//РџРѕР·РґСЂР°РІР»СЏСЋ!
 	
 	B_GivePlayerXP (XP_JesperTruhe);
 };  

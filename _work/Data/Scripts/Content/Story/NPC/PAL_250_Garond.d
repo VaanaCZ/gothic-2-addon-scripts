@@ -2,7 +2,7 @@
 instance PAL_250_Garond (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Гаронд";
+	name 		= "Р“Р°СЂРѕРЅРґ";
 	guild 		= GIL_PAL;
 	id 			= 250;
 	voice 		= 10;

@@ -1,6 +1,6 @@
 FUNC INT B_GoldMob_Bestimmung()
 {
-	//bin ich mobsi X und habe ich noch Gold ьbrig?
+	//bin ich mobsi X und habe ich noch Gold СЊbrig?
 	if Hlp_StrCmp (Npc_GetNearestWP (self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount)
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount +1);
@@ -153,7 +153,7 @@ INSTANCE PC_Goldhacken_Addon_Hour (C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Ударить несильно."; 
+	description		= "РЈРґР°СЂРёС‚СЊ РЅРµСЃРёР»СЊРЅРѕ."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Hour_Condition ()
@@ -200,7 +200,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 8)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-				PrintScreen ("Добыто 3 золотых самородка!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Р”РѕР±С‹С‚Рѕ 3 Р·РѕР»РѕС‚С‹С… СЃР°РјРѕСЂРѕРґРєР°!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				
 			}
@@ -208,32 +208,32 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 5)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-				PrintScreen ("Добыто 2 золотых самородка!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Р”РѕР±С‹С‚Рѕ 2 Р·РѕР»РѕС‚С‹С… СЃР°РјРѕСЂРѕРґРєР°!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			}
 			else
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-				PrintScreen ("Добыт 1 золотой самородок!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Р”РѕР±С‹С‚ 1 Р·РѕР»РѕС‚РѕР№ СЃР°РјРѕСЂРѕРґРѕРє!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			};
 		}
 		else
 		{
-			PrintScreen ("Золотые осколки разлетаются во все стороны...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Р—РѕР»РѕС‚С‹Рµ РѕСЃРєРѕР»РєРё СЂР°Р·Р»РµС‚Р°СЋС‚СЃСЏ РІРѕ РІСЃРµ СЃС‚РѕСЂРѕРЅС‹...", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("Здесь больше нечего делать.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("Р—РґРµСЃСЊ Р±РѕР»СЊС€Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
 //*******************************************************
-//	Goldhacken Trьmmerschlag
+//	Goldhacken TrСЊmmerschlag
 //*******************************************************
 INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 {
@@ -242,7 +242,7 @@ INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 	condition		= PC_Goldhacken_Addon_TSchlag_Condition;
 	information		= PC_Goldhacken_Addon_TSchlag_Info;
 	permanent		= TRUE;
-	description		= "Ударить изо всех сил."; 
+	description		= "РЈРґР°СЂРёС‚СЊ РёР·Рѕ РІСЃРµС… СЃРёР»."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_TSchlag_Condition ()
@@ -261,7 +261,7 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		
 	if (TruemmerChance < 5)
 	{
-			PrintScreen ("Ничего...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("РќРёС‡РµРіРѕ...", -1, -1, FONT_ScreenSmall, 2);	
 	}
 	else
 	{
@@ -273,19 +273,19 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-			PrintScreen ("Добыто 3 золотых самородка!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Р”РѕР±С‹С‚Рѕ 3 Р·РѕР»РѕС‚С‹С… СЃР°РјРѕСЂРѕРґРєР°!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-			PrintScreen ("Добыто 2 золотых самородка!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Р”РѕР±С‹С‚Рѕ 2 Р·РѕР»РѕС‚С‹С… СЃР°РјРѕСЂРѕРґРєР°!", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-			PrintScreen ("Добыт 1 золотой самородок!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Р”РѕР±С‹С‚ 1 Р·РѕР»РѕС‚РѕР№ СЃР°РјРѕСЂРѕРґРѕРє!", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 	Truemmer_Count = 0;
@@ -302,7 +302,7 @@ INSTANCE PC_Goldhacken_Addon_Chance (C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(проверить свой навык)"; 
+	description		= "(РїСЂРѕРІРµСЂРёС‚СЊ СЃРІРѕР№ РЅР°РІС‹Рє)"; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Chance_Condition ()
@@ -319,34 +319,34 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	
 	if (Hero_HackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("совершенный новичок (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("СЃРѕРІРµСЂС€РµРЅРЅС‹Р№ РЅРѕРІРёС‡РѕРє (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("вполне сносный работник (" , IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("РІРїРѕР»РЅРµ СЃРЅРѕСЃРЅС‹Р№ СЂР°Р±РѕС‚РЅРёРє (" , IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("опытный золотоискатель (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("РѕРїС‹С‚РЅС‹Р№ Р·РѕР»РѕС‚РѕРёСЃРєР°С‚РµР»СЊ (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 75) 
 	{
-		ConcatText = ConcatStrings ("настоящий рудокоп ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("РЅР°СЃС‚РѕСЏС‰РёР№ СЂСѓРґРѕРєРѕРї ( ", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 90) 
 	{
-		ConcatText = ConcatStrings ("чертовски хороший рудокоп ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("С‡РµСЂС‚РѕРІСЃРєРё С…РѕСЂРѕС€РёР№ СЂСѓРґРѕРєРѕРї ( ", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 98) 
 	{
-		ConcatText = ConcatStrings ("великий рудокоп ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("РІРµР»РёРєРёР№ СЂСѓРґРѕРєРѕРї ( ", IntToString (Hero_HackChance));
 	}
 	else
 	{
-		ConcatText = ConcatStrings ("гуру среди рудокопов ( ", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("РіСѓСЂСѓ СЃСЂРµРґРё СЂСѓРґРѕРєРѕРїРѕРІ ( ", IntToString (Hero_HackChance));
 	};
 	
-	ConcatText = ConcatStrings (concatText, " проц.)");
+	ConcatText = ConcatStrings (concatText, " РїСЂРѕС†.)");
 	
 	PrintScreen (concatText, -1, -1, FONT_ScreenSmall,2);
 };

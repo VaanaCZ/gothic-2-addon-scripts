@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Wisp(C_Npc)
 {
 	//----- Monster -----
-	name							=	"Призрачный свет";
+	name							=	"РџСЂРёР·СЂР°С‡РЅС‹Р№ СЃРІРµС‚";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WISP;
 	level							=	4;

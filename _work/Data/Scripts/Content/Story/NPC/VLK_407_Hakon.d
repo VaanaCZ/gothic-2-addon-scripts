@@ -2,7 +2,7 @@
 instance VLK_407_Hakon (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "’‡ÍÓÌ";
+	name 		= "–•–∞–∫–æ–Ω";
 	guild 		= GIL_VLK;
 	id 			= 407;
 	voice 		= 12;
@@ -19,7 +19,7 @@ instance VLK_407_Hakon (Npc_Default)
 	EquipItem			(self, ItMw_ShortSword2);
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart20, BodyTex_N, ITAR_VLK_M);	

@@ -25,7 +25,7 @@ FUNC VOID DIA_BanditGuard_EXIT_Info()
 // ************************************************************
 
 // -----------------------------------------------------------
-	const string Bdt_1064_Checkpoint	= "NW_CASTLEMINE_TOWER_05";	//WP vor TurmTьr
+	const string Bdt_1064_Checkpoint	= "NW_CASTLEMINE_TOWER_05";	//WP vor TurmTСЊr
 // -----------------------------------------------------------
 
 instance DIA_Bdt_1064_BanditGuard_FirstWarn (C_INFO)
@@ -57,7 +57,7 @@ func int DIA_Bdt_1064_BanditGuard_FirstWarn_Condition()
 
 func void DIA_Bdt_1064_BanditGuard_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_00"); //Есть только один способ попасть в наш лагерь живым - через мост.
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_00"); //Р•СЃС‚СЊ С‚РѕР»СЊРєРѕ РѕРґРёРЅ СЃРїРѕСЃРѕР± РїРѕРїР°СЃС‚СЊ РІ РЅР°С€ Р»Р°РіРµСЂСЊ Р¶РёРІС‹Рј - С‡РµСЂРµР· РјРѕСЃС‚.
 		
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Bdt_1064_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Bdt_1064_BanditGuard_SecondWarn_Condition()
 
 func void DIA_Bdt_1064_BanditGuard_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_01");  //Ты хочешь, чтобы я тебя ткнул этой штукой. Еще ОДИН шаг - и я сброшу тебя в обрыв!
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_01");  //РўС‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ С‚РµР±СЏ С‚РєРЅСѓР» СЌС‚РѕР№ С€С‚СѓРєРѕР№. Р•С‰Рµ РћР”РРќ С€Р°Рі - Рё СЏ СЃР±СЂРѕС€Сѓ С‚РµР±СЏ РІ РѕР±СЂС‹РІ!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Bdt_1064_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -130,7 +130,7 @@ func void DIA_Bdt_1064_BanditGuard_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_02"); //Ну, если ты этого хочешь...
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_02"); //РќСѓ, РµСЃР»Рё С‚С‹ СЌС‚РѕРіРѕ С…РѕС‡РµС€СЊ...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
@@ -158,6 +158,6 @@ FUNC INT DIA_BanditGuard_PERM_Condition()
 };
 FUNC VOID DIA_BanditGuard_PERM_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Dexwache_Add_04_03"); //Не бормочи тут на меня!
+	AI_Output (self, other, "DIA_Addon_Dexwache_Add_04_03"); //РќРµ Р±РѕСЂРјРѕС‡Рё С‚СѓС‚ РЅР° РјРµРЅСЏ!
 	AI_StopProcessInfos(self);
 };

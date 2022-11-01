@@ -43,9 +43,9 @@ func int DIA_Tengron_First_Condition ()
 };
 func void DIA_Tengron_First_Info ()
 {
-	AI_Output (self, other, "DIA_Tengron_First_07_00"); //Что ты делаешь здесь?
-	AI_Output (other, self, "DIA_Tengron_First_15_01"); //Я здесь по приказу лорда Хагена.
-	AI_Output (self, other, "DIA_Tengron_First_07_02"); //Тебе абсолютно необходимо добраться до замка и поговорить с командующим Гарондом.
+	AI_Output (self, other, "DIA_Tengron_First_07_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (other, self, "DIA_Tengron_First_15_01"); //РЇ Р·РґРµСЃСЊ РїРѕ РїСЂРёРєР°Р·Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+	AI_Output (self, other, "DIA_Tengron_First_07_02"); //РўРµР±Рµ Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРµРѕР±С…РѕРґРёРјРѕ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р·Р°РјРєР° Рё РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РєРѕРјР°РЅРґСѓСЋС‰РёРј Р“Р°СЂРѕРЅРґРѕРј.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -70,12 +70,12 @@ func int DIA_Tengron_HALLO_Condition ()
 };
 func void DIA_Tengron_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Tengron_HALLO_07_00"); //Да пребудет с тобой Иннос! Ты принес мне новости из замка? Скоро прибудет подкрепление?
+	AI_Output (self, other, "DIA_Tengron_HALLO_07_00"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ! РўС‹ РїСЂРёРЅРµСЃ РјРЅРµ РЅРѕРІРѕСЃС‚Рё РёР· Р·Р°РјРєР°? РЎРєРѕСЂРѕ РїСЂРёР±СѓРґРµС‚ РїРѕРґРєСЂРµРїР»РµРЅРёРµ?
 	
 	if (Npc_IsDead(Fajeth) == FALSE)
 	{
-		AI_Output (other, self, "DIA_Tengron_HALLO_15_01"); //Я пришел не за тем, чтобы принести новости, а чтобы получить их.
-		AI_Output (self, other, "DIA_Tengron_HALLO_07_02"); //Тогда поговори с Фаджетом. Он командует здесь. Но если у тебя будут новости из замка, дай мне знать.
+		AI_Output (other, self, "DIA_Tengron_HALLO_15_01"); //РЇ РїСЂРёС€РµР» РЅРµ Р·Р° С‚РµРј, С‡С‚РѕР±С‹ РїСЂРёРЅРµСЃС‚Рё РЅРѕРІРѕСЃС‚Рё, Р° С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ РёС….
+		AI_Output (self, other, "DIA_Tengron_HALLO_07_02"); //РўРѕРіРґР° РїРѕРіРѕРІРѕСЂРё СЃ Р¤Р°РґР¶РµС‚РѕРј. РћРЅ РєРѕРјР°РЅРґСѓРµС‚ Р·РґРµСЃСЊ. РќРѕ РµСЃР»Рё Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ РЅРѕРІРѕСЃС‚Рё РёР· Р·Р°РјРєР°, РґР°Р№ РјРЅРµ Р·РЅР°С‚СЊ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -88,7 +88,7 @@ instance DIA_Tengron_News		(C_INFO)
 	condition	 = 	DIA_Tengron_News_Condition;
 	information	 = 	DIA_Tengron_News_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Насчет новостей...";
+	description	 = 	"РќР°СЃС‡РµС‚ РЅРѕРІРѕСЃС‚РµР№...";
 };
 
 func int DIA_Tengron_News_Condition ()
@@ -101,36 +101,36 @@ func int DIA_Tengron_News_Condition ()
 
 func void DIA_Tengron_News_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_News_15_00"); //Насчет новостей...
-	AI_Output (self, other, "DIA_Tengron_News_07_01"); //Да, как там, в замке?
-	AI_Output (other, self, "DIA_Tengron_News_15_02"); //Его все еще осаждают орки, и он все также открыт для атак драконов.
-	AI_Output (self, other, "DIA_Tengron_News_07_03"); //Черт, я надеюсь, парни все же продержатся.
-	AI_Output (self, other, "DIA_Tengron_News_07_04"); //Послушай, у меня есть друг в замке. Его зовут Удар. Мы давно знаем друг друга, и через многое прошли рука об руку.
-	AI_Output (self, other, "DIA_Tengron_News_07_05"); //Я хочу, чтобы ты передал ему это кольцо. Пусть он сохранит его ради меня. Скажи ему, я заберу кольцо, когда вернусь.
+	AI_Output (other, self, "DIA_Tengron_News_15_00"); //РќР°СЃС‡РµС‚ РЅРѕРІРѕСЃС‚РµР№...
+	AI_Output (self, other, "DIA_Tengron_News_07_01"); //Р”Р°, РєР°Рє С‚Р°Рј, РІ Р·Р°РјРєРµ?
+	AI_Output (other, self, "DIA_Tengron_News_15_02"); //Р•РіРѕ РІСЃРµ РµС‰Рµ РѕСЃР°Р¶РґР°СЋС‚ РѕСЂРєРё, Рё РѕРЅ РІСЃРµ С‚Р°РєР¶Рµ РѕС‚РєСЂС‹С‚ РґР»СЏ Р°С‚Р°Рє РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output (self, other, "DIA_Tengron_News_07_03"); //Р§РµСЂС‚, СЏ РЅР°РґРµСЋСЃСЊ, РїР°СЂРЅРё РІСЃРµ Р¶Рµ РїСЂРѕРґРµСЂР¶Р°С‚СЃСЏ.
+	AI_Output (self, other, "DIA_Tengron_News_07_04"); //РџРѕСЃР»СѓС€Р°Р№, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґСЂСѓРі РІ Р·Р°РјРєРµ. Р•РіРѕ Р·РѕРІСѓС‚ РЈРґР°СЂ. РњС‹ РґР°РІРЅРѕ Р·РЅР°РµРј РґСЂСѓРі РґСЂСѓРіР°, Рё С‡РµСЂРµР· РјРЅРѕРіРѕРµ РїСЂРѕС€Р»Рё СЂСѓРєР° РѕР± СЂСѓРєСѓ.
+	AI_Output (self, other, "DIA_Tengron_News_07_05"); //РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РїРµСЂРµРґР°Р» РµРјСѓ СЌС‚Рѕ РєРѕР»СЊС†Рѕ. РџСѓСЃС‚СЊ РѕРЅ СЃРѕС…СЂР°РЅРёС‚ РµРіРѕ СЂР°РґРё РјРµРЅСЏ. РЎРєР°Р¶Рё РµРјСѓ, СЏ Р·Р°Р±РµСЂСѓ РєРѕР»СЊС†Рѕ, РєРѕРіРґР° РІРµСЂРЅСѓСЃСЊ.
 	
 	Info_ClearChoices (DIA_Tengron_News);
 	
-	Info_AddChoice (DIA_Tengron_News,"У меня нет времени на это.",DIA_Tengron_News_No);
-	Info_AddChoice (DIA_Tengron_News,"Нет проблем ...",DIA_Tengron_News_Yes);
+	Info_AddChoice (DIA_Tengron_News,"РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.",DIA_Tengron_News_No);
+	Info_AddChoice (DIA_Tengron_News,"РќРµС‚ РїСЂРѕР±Р»РµРј ...",DIA_Tengron_News_Yes);
 };
 FUNC VOID DIA_Tengron_News_No()
 {
-	AI_Output (other, self, "DIA_Tengron_News_No_15_00"); //У меня нет времени на это.
-	AI_Output (self, other, "DIA_Tengron_News_No_07_01"); //Понимаю.
+	AI_Output (other, self, "DIA_Tengron_News_No_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.
+	AI_Output (self, other, "DIA_Tengron_News_No_07_01"); //РџРѕРЅРёРјР°СЋ.
 	
 	Info_ClearChoices (DIA_Tengron_News);
 };
 FUNC VOID DIA_Tengron_News_Yes()
 {
-	AI_Output (other, self, "DIA_Tengron_News_Yes_15_00"); //Нет проблем. Когда я буду в замке, я передам это кольцо Удару.
-	AI_Output (self, other, "DIA_Tengron_News_Yes_07_01"); //Хорошо. Магия этого кольца придаст Удару силу. И не забудь сказать ему, что я потом заберу его.
+	AI_Output (other, self, "DIA_Tengron_News_Yes_15_00"); //РќРµС‚ РїСЂРѕР±Р»РµРј. РљРѕРіРґР° СЏ Р±СѓРґСѓ РІ Р·Р°РјРєРµ, СЏ РїРµСЂРµРґР°Рј СЌС‚Рѕ РєРѕР»СЊС†Рѕ РЈРґР°СЂСѓ.
+	AI_Output (self, other, "DIA_Tengron_News_Yes_07_01"); //РҐРѕСЂРѕС€Рѕ. РњР°РіРёСЏ СЌС‚РѕРіРѕ РєРѕР»СЊС†Р° РїСЂРёРґР°СЃС‚ РЈРґР°СЂСѓ СЃРёР»Сѓ. Р РЅРµ Р·Р°Р±СѓРґСЊ СЃРєР°Р·Р°С‚СЊ РµРјСѓ, С‡С‚Рѕ СЏ РїРѕС‚РѕРј Р·Р°Р±РµСЂСѓ РµРіРѕ.
 	
 	B_GiveInvItems (self,other,ItRi_Tengron,1);
 	Info_ClearChoices (DIA_Tengron_News);
 	
 	Log_CreateTopic (Topic_TengronRing,LOG_MISSION);
 	Log_SetTopicStatus (Topic_TengronRing,LOG_RUNNING);
-	B_LogEntry (Topic_TengronRing,"Тенгрон дал мне кольцо, которое я должен передать Удару в замке.");
+	B_LogEntry (Topic_TengronRing,"РўРµРЅРіСЂРѕРЅ РґР°Р» РјРЅРµ РєРѕР»СЊС†Рѕ, РєРѕС‚РѕСЂРѕРµ СЏ РґРѕР»Р¶РµРЅ РїРµСЂРµРґР°С‚СЊ РЈРґР°СЂСѓ РІ Р·Р°РјРєРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Situation
@@ -142,7 +142,7 @@ instance DIA_Tengron_Situation		(C_INFO)
 	condition	 = 	DIA_Tengron_Situation_Condition;
 	information	 = 	DIA_Tengron_Situation_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как обстановка?";
+	description	 = 	"РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?";
 };
 func int DIA_Tengron_Situation_Condition ()
 {
@@ -153,9 +153,9 @@ func int DIA_Tengron_Situation_Condition ()
 };
 func void DIA_Tengron_Situation_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_Situation_15_00"); //Как обстановка?
-	AI_Output (self, other, "DIA_Tengron_Situation_07_01"); //Мы окружены монстрами, и нам удалось добыть очень мало руды. К тому же, мы потеряли много хороших людей.
-	AI_Output (self, other, "DIA_Tengron_Situation_07_02"); //Я не знаю, сколько мы еще подержимся, но мы не сдадимся просто так!
+	AI_Output (other, self, "DIA_Tengron_Situation_15_00"); //РљР°Рє РѕР±СЃС‚Р°РЅРѕРІРєР°?
+	AI_Output (self, other, "DIA_Tengron_Situation_07_01"); //РњС‹ РѕРєСЂСѓР¶РµРЅС‹ РјРѕРЅСЃС‚СЂР°РјРё, Рё РЅР°Рј СѓРґР°Р»РѕСЃСЊ РґРѕР±С‹С‚СЊ РѕС‡РµРЅСЊ РјР°Р»Рѕ СЂСѓРґС‹. Рљ С‚РѕРјСѓ Р¶Рµ, РјС‹ РїРѕС‚РµСЂСЏР»Рё РјРЅРѕРіРѕ С…РѕСЂРѕС€РёС… Р»СЋРґРµР№.
+	AI_Output (self, other, "DIA_Tengron_Situation_07_02"); //РЇ РЅРµ Р·РЅР°СЋ, СЃРєРѕР»СЊРєРѕ РјС‹ РµС‰Рµ РїРѕРґРµСЂР¶РёРјСЃСЏ, РЅРѕ РјС‹ РЅРµ СЃРґР°РґРёРјСЃСЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info NeedYourHelp
@@ -167,7 +167,7 @@ instance DIA_Tengron_HELP		(C_INFO)
 	condition	 = 	DIA_Tengron_HELP_Condition;
 	information	 = 	DIA_Tengron_HELP_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Мне нужна твоя помощь ..."; 
+	description	 = 	"РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ ..."; 
 };
 func int DIA_Tengron_HELP_Condition ()
 {
@@ -179,9 +179,9 @@ func int DIA_Tengron_HELP_Condition ()
 };
 func void DIA_Tengron_HELP_Info ()
 {
-	AI_Output (other, self, "DIA_Tengron_HELP_15_00"); //Мне нужна твоя помощь. Фаджет хочет, чтобы я перебил снепперов и...
-	AI_Output (self, other, "DIA_Tengron_HELP_07_01"); //Я выполняю приказы ТОЛЬКО Фаджета. И мне дан приказ охранять шахту. Именно этим я и занимаюсь.
-	AI_Output (self, other, "DIA_Tengron_HELP_07_02"); //Может, кто-нибудь еще сможет помочь тебе.
+	AI_Output (other, self, "DIA_Tengron_HELP_15_00"); //РњРЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ. Р¤Р°РґР¶РµС‚ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРµСЂРµР±РёР» СЃРЅРµРїРїРµСЂРѕРІ Рё...
+	AI_Output (self, other, "DIA_Tengron_HELP_07_01"); //РЇ РІС‹РїРѕР»РЅСЏСЋ РїСЂРёРєР°Р·С‹ РўРћР›Р¬РљРћ Р¤Р°РґР¶РµС‚Р°. Р РјРЅРµ РґР°РЅ РїСЂРёРєР°Р· РѕС…СЂР°РЅСЏС‚СЊ С€Р°С…С‚Сѓ. РРјРµРЅРЅРѕ СЌС‚РёРј СЏ Рё Р·Р°РЅРёРјР°СЋСЃСЊ.
+	AI_Output (self, other, "DIA_Tengron_HELP_07_02"); //РњРѕР¶РµС‚, РєС‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
 };
 
 

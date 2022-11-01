@@ -54,17 +54,17 @@ func void DIA_Brutus_AFTER_FIGHT_Info ()
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_00"); //У тебя еще все зубы на месте?
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_01"); //Да, я знаю, ты крутой! Я не хотел бы сразиться с тобой в бою.
+		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_00"); //РЈ С‚РµР±СЏ РµС‰Рµ РІСЃРµ Р·СѓР±С‹ РЅР° РјРµСЃС‚Рµ?
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_01"); //Р”Р°, СЏ Р·РЅР°СЋ, С‚С‹ РєСЂСѓС‚РѕР№! РЇ РЅРµ С…РѕС‚РµР» Р±С‹ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃ С‚РѕР±РѕР№ РІ Р±РѕСЋ.
 	}
 	else if  (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_02"); //Мне кажется, ты мне все ребра переломал.
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_03"); //А я даже не бил тебя в полную силу. Ладно, забудь, мне нравятся парни, способные выдержать несколько моих ударов подряд.
+		AI_Output (other, self, "DIA_Brutus_AFTER_FIGHT_15_02"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РјРЅРµ РІСЃРµ СЂРµР±СЂР° РїРµСЂРµР»РѕРјР°Р».
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_03"); //Рђ СЏ РґР°Р¶Рµ РЅРµ Р±РёР» С‚РµР±СЏ РІ РїРѕР»РЅСѓСЋ СЃРёР»Сѓ. Р›Р°РґРЅРѕ, Р·Р°Р±СѓРґСЊ, РјРЅРµ РЅСЂР°РІСЏС‚СЃСЏ РїР°СЂРЅРё, СЃРїРѕСЃРѕР±РЅС‹Рµ РІС‹РґРµСЂР¶Р°С‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РјРѕРёС… СѓРґР°СЂРѕРІ РїРѕРґСЂСЏРґ.
 		
 		if (Brutus_einmalig == FALSE)
 		{
-			AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_04"); //Вот это зелье поможет тебе встать на ноги. Также оно сотворит чудеса с твоими внутренностями!
+			AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_04"); //Р’РѕС‚ СЌС‚Рѕ Р·РµР»СЊРµ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РІСЃС‚Р°С‚СЊ РЅР° РЅРѕРіРё. РўР°РєР¶Рµ РѕРЅРѕ СЃРѕС‚РІРѕСЂРёС‚ С‡СѓРґРµСЃР° СЃ С‚РІРѕРёРјРё РІРЅСѓС‚СЂРµРЅРЅРѕСЃС‚СЏРјРё!
 		
 			CreateInvItems (self, ItPo_Health_01,1);
 			B_GiveInvItems (self, hero, ItPo_Health_01,1); 
@@ -73,7 +73,7 @@ func void DIA_Brutus_AFTER_FIGHT_Info ()
 	}
 	else //Cancel
 	{
-		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_05"); //Я ничего не имею против хорошей драки. Но когда я начинаю драку, я же ее и заканчиваю.
+		AI_Output (self, other, "DIA_Brutus_AFTER_FIGHT_06_05"); //РЇ РЅРёС‡РµРіРѕ РЅРµ РёРјРµСЋ РїСЂРѕС‚РёРІ С…РѕСЂРѕС€РµР№ РґСЂР°РєРё. РќРѕ РєРѕРіРґР° СЏ РЅР°С‡РёРЅР°СЋ РґСЂР°РєСѓ, СЏ Р¶Рµ РµРµ Рё Р·Р°РєР°РЅС‡РёРІР°СЋ.
 	};
 	// ------ AIVAR resetten ------
 	self.aivar[AIV_LastFightComment] = TRUE;
@@ -87,7 +87,7 @@ instance DIA_Brutus_PRISONER		(C_INFO)
 	nr		     = 	2;
 	condition	 = 	DIA_Brutus_PRISONER_Condition;
 	information	 = 	DIA_Brutus_PRISONER_Info;
-	description	 = 	"Чем ты занимаешься здесь?";
+	description	 = 	"Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Brutus_PRISONER_Condition ()
@@ -100,16 +100,16 @@ func int DIA_Brutus_PRISONER_Condition ()
 };
 func void DIA_Brutus_PRISONER_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_PRISONER_15_00"); //Чем ты занимаешься здесь?
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_01"); //Чем занимаюсь? Я тренирую парней. Я учу их, как накачать стальные мускулы.
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_02"); //Также я присматриваю за заключенными. Я для них как отец родной, черт меня побери.
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_03"); //Но моя настоящая работа - заставлять их говорить. И поверь мне, я знаю способы разговорить кого угодно.
-	AI_Output (other, self, "DIA_Brutus_PRISONER_15_04"); //Звучит ужасно мило...
-	AI_Output (self, other, "DIA_Brutus_PRISONER_06_05"); //Но этим блохастым болванам, что сейчас сидят за решеткой, все равно особенно нечего сказать.
+	AI_Output (other, self, "DIA_Brutus_PRISONER_15_00"); //Р§РµРј С‚С‹ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_01"); //Р§РµРј Р·Р°РЅРёРјР°СЋСЃСЊ? РЇ С‚СЂРµРЅРёСЂСѓСЋ РїР°СЂРЅРµР№. РЇ СѓС‡Сѓ РёС…, РєР°Рє РЅР°РєР°С‡Р°С‚СЊ СЃС‚Р°Р»СЊРЅС‹Рµ РјСѓСЃРєСѓР»С‹.
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_02"); //РўР°РєР¶Рµ СЏ РїСЂРёСЃРјР°С‚СЂРёРІР°СЋ Р·Р° Р·Р°РєР»СЋС‡РµРЅРЅС‹РјРё. РЇ РґР»СЏ РЅРёС… РєР°Рє РѕС‚РµС† СЂРѕРґРЅРѕР№, С‡РµСЂС‚ РјРµРЅСЏ РїРѕР±РµСЂРё.
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_03"); //РќРѕ РјРѕСЏ РЅР°СЃС‚РѕСЏС‰Р°СЏ СЂР°Р±РѕС‚Р° - Р·Р°СЃС‚Р°РІР»СЏС‚СЊ РёС… РіРѕРІРѕСЂРёС‚СЊ. Р РїРѕРІРµСЂСЊ РјРЅРµ, СЏ Р·РЅР°СЋ СЃРїРѕСЃРѕР±С‹ СЂР°Р·РіРѕРІРѕСЂРёС‚СЊ РєРѕРіРѕ СѓРіРѕРґРЅРѕ.
+	AI_Output (other, self, "DIA_Brutus_PRISONER_15_04"); //Р—РІСѓС‡РёС‚ СѓР¶Р°СЃРЅРѕ РјРёР»Рѕ...
+	AI_Output (self, other, "DIA_Brutus_PRISONER_06_05"); //РќРѕ СЌС‚РёРј Р±Р»РѕС…Р°СЃС‚С‹Рј Р±РѕР»РІР°РЅР°Рј, С‡С‚Рѕ СЃРµР№С‡Р°СЃ СЃРёРґСЏС‚ Р·Р° СЂРµС€РµС‚РєРѕР№, РІСЃРµ СЂР°РІРЅРѕ РѕСЃРѕР±РµРЅРЅРѕ РЅРµС‡РµРіРѕ СЃРєР°Р·Р°С‚СЊ.
 	
 	if (MIS_RescueGorn != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Brutus_PRISONER_06_06"); //А к этому Горну меня не подпускают.
+		AI_Output (self, other, "DIA_Brutus_PRISONER_06_06"); //Рђ Рє СЌС‚РѕРјСѓ Р“РѕСЂРЅСѓ РјРµРЅСЏ РЅРµ РїРѕРґРїСѓСЃРєР°СЋС‚.
 		
 		KnowsAboutGorn = TRUE; 
 	};
@@ -126,7 +126,7 @@ instance DIA_Brutus_PERM		(C_INFO)
 	condition	 = 	DIA_Brutus_PERM_Condition;
 	information	 = 	DIA_Brutus_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Есть что-нибудь новенькое?";
+	description	 = 	"Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ?";
 };
 
 func int DIA_Brutus_PERM_Condition ()
@@ -140,8 +140,8 @@ func int DIA_Brutus_PERM_Condition ()
 };
 func void DIA_Brutus_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_PERM_15_00"); //Есть что-нибудь новенькое?
-	AI_Output (self, other, "DIA_Brutus_PERM_06_01"); //Все спокойно. Новых заключенных нет - нет никого, кому нужно было бы помочь подобрать правильные слова. Очень жаль.
+	AI_Output (other, self, "DIA_Brutus_PERM_15_00"); //Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ?
+	AI_Output (self, other, "DIA_Brutus_PERM_06_01"); //Р’СЃРµ СЃРїРѕРєРѕР№РЅРѕ. РќРѕРІС‹С… Р·Р°РєР»СЋС‡РµРЅРЅС‹С… РЅРµС‚ - РЅРµС‚ РЅРёРєРѕРіРѕ, РєРѕРјСѓ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РїРѕРјРѕС‡СЊ РїРѕРґРѕР±СЂР°С‚СЊ РїСЂР°РІРёР»СЊРЅС‹Рµ СЃР»РѕРІР°. РћС‡РµРЅСЊ Р¶Р°Р»СЊ.
 	B_NpcClearObsessionByDMT (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -154,7 +154,7 @@ instance DIA_Brutus_Kasse		(C_INFO)
 	condition	 = 	DIA_Brutus_Kasse_Condition;
 	information	 = 	DIA_Brutus_Kasse_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты не мог бы потренировать меня?";
+	description	 = 	"РўС‹ РЅРµ РјРѕРі Р±С‹ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРµРЅСЏ?";
 };
 
 func int DIA_Brutus_Kasse_Condition ()
@@ -168,20 +168,20 @@ func int DIA_Brutus_Kasse_Condition ()
 };
 func void DIA_Brutus_Kasse_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_00"); //Ты не мог бы потренировать меня?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_01"); //Конечно. Я могу помочь тебе стать сильнее, но это будет не бесплатно.
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_02"); //Сколько ты хочешь?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_03"); //Хммм... ты ведь бегаешь вокруг замка, да? Вот что я предлагаю.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_04"); //Мой помощник, Ден, слинял во время последней атаки орков. Вот подлец!
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_05"); //Но он улизнул не с пустыми руками. Он забрал с собой содержимое нашей кассы.
-	AI_Output (other, self, "DIA_Brutus_Kasse_15_06"); //Что за кассы?
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_07"); //Ну, у нас был сундучок, где мы держали вещи, которые мы... э-э... собрали за все это время.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_08"); //Это была приличная сумма. В сундуке было 200 золотых монет, а также ценные ювелирные изделия.
-	AI_Output (self, other, "DIA_Brutus_Kasse_06_09"); //Если ты вернешь мне это золото, драгоценности можешь оставить себе. И тогда я буду готов обучить тебя.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_00"); //РўС‹ РЅРµ РјРѕРі Р±С‹ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_01"); //РљРѕРЅРµС‡РЅРѕ. РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ, РЅРѕ СЌС‚Рѕ Р±СѓРґРµС‚ РЅРµ Р±РµСЃРїР»Р°С‚РЅРѕ.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_02"); //РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_03"); //РҐРјРјРј... С‚С‹ РІРµРґСЊ Р±РµРіР°РµС€СЊ РІРѕРєСЂСѓРі Р·Р°РјРєР°, РґР°? Р’РѕС‚ С‡С‚Рѕ СЏ РїСЂРµРґР»Р°РіР°СЋ.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_04"); //РњРѕР№ РїРѕРјРѕС‰РЅРёРє, Р”РµРЅ, СЃР»РёРЅСЏР» РІРѕ РІСЂРµРјСЏ РїРѕСЃР»РµРґРЅРµР№ Р°С‚Р°РєРё РѕСЂРєРѕРІ. Р’РѕС‚ РїРѕРґР»РµС†!
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_05"); //РќРѕ РѕРЅ СѓР»РёР·РЅСѓР» РЅРµ СЃ РїСѓСЃС‚С‹РјРё СЂСѓРєР°РјРё. РћРЅ Р·Р°Р±СЂР°Р» СЃ СЃРѕР±РѕР№ СЃРѕРґРµСЂР¶РёРјРѕРµ РЅР°С€РµР№ РєР°СЃСЃС‹.
+	AI_Output (other, self, "DIA_Brutus_Kasse_15_06"); //Р§С‚Рѕ Р·Р° РєР°СЃСЃС‹?
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_07"); //РќСѓ, Сѓ РЅР°СЃ Р±С‹Р» СЃСѓРЅРґСѓС‡РѕРє, РіРґРµ РјС‹ РґРµСЂР¶Р°Р»Рё РІРµС‰Рё, РєРѕС‚РѕСЂС‹Рµ РјС‹... СЌ-СЌ... СЃРѕР±СЂР°Р»Рё Р·Р° РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_08"); //Р­С‚Рѕ Р±С‹Р»Р° РїСЂРёР»РёС‡РЅР°СЏ СЃСѓРјРјР°. Р’ СЃСѓРЅРґСѓРєРµ Р±С‹Р»Рѕ 200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚, Р° С‚Р°РєР¶Рµ С†РµРЅРЅС‹Рµ СЋРІРµР»РёСЂРЅС‹Рµ РёР·РґРµР»РёСЏ.
+	AI_Output (self, other, "DIA_Brutus_Kasse_06_09"); //Р•СЃР»Рё С‚С‹ РІРµСЂРЅРµС€СЊ РјРЅРµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ, РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚Рё РјРѕР¶РµС€СЊ РѕСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ. Р С‚РѕРіРґР° СЏ Р±СѓРґСѓ РіРѕС‚РѕРІ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	
 	Log_CreateTopic (TopicBrutusKasse,LOG_MISSION);
 	Log_SetTopicStatus (TopicBrutusKasse,LOG_RUNNING);
-	B_LogEntry (TopicBrutusKasse,"Партнер Брутуса Ден скрылся с 200 золотыми монетами и кое-какими драгоценностями. Если я верну ему 200 золотых монет, он поможет мне стать сильнее.");
+	B_LogEntry (TopicBrutusKasse,"РџР°СЂС‚РЅРµСЂ Р‘СЂСѓС‚СѓСЃР° Р”РµРЅ СЃРєСЂС‹Р»СЃСЏ СЃ 200 Р·РѕР»РѕС‚С‹РјРё РјРѕРЅРµС‚Р°РјРё Рё РєРѕРµ-РєР°РєРёРјРё РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚СЏРјРё. Р•СЃР»Рё СЏ РІРµСЂРЅСѓ РµРјСѓ 200 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚, РѕРЅ РїРѕРјРѕР¶РµС‚ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo ist Den?
@@ -193,7 +193,7 @@ instance DIA_Brutus_Den		(C_INFO)
 	condition	 = 	DIA_Brutus_Den_Condition;
 	information	 = 	DIA_Brutus_Den_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты знаешь, куда направился этот Ден?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ, РєСѓРґР° РЅР°РїСЂР°РІРёР»СЃСЏ СЌС‚РѕС‚ Р”РµРЅ?";
 };
 
 func int DIA_Brutus_Den_Condition ()
@@ -207,12 +207,12 @@ func int DIA_Brutus_Den_Condition ()
 };
 func void DIA_Brutus_Den_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Den_15_00"); //Ты знаешь, куда направился этот Ден?
-	AI_Output (self, other, "DIA_Brutus_Den_06_01"); //Как можно дальше отсюда, как я понимаю. Я думаю, он мог попытаться пробраться через Проход.
-	AI_Output (other, self, "DIA_Brutus_Den_15_02"); //Спасибо. Исчерпывающая информация.
-	AI_Output (self, other, "DIA_Brutus_Den_06_03"); //А что я еще могу сказать? Я понятия не имею, куда он направился.
+	AI_Output (other, self, "DIA_Brutus_Den_15_00"); //РўС‹ Р·РЅР°РµС€СЊ, РєСѓРґР° РЅР°РїСЂР°РІРёР»СЃСЏ СЌС‚РѕС‚ Р”РµРЅ?
+	AI_Output (self, other, "DIA_Brutus_Den_06_01"); //РљР°Рє РјРѕР¶РЅРѕ РґР°Р»СЊС€Рµ РѕС‚СЃСЋРґР°, РєР°Рє СЏ РїРѕРЅРёРјР°СЋ. РЇ РґСѓРјР°СЋ, РѕРЅ РјРѕРі РїРѕРїС‹С‚Р°С‚СЊСЃСЏ РїСЂРѕР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· РџСЂРѕС…РѕРґ.
+	AI_Output (other, self, "DIA_Brutus_Den_15_02"); //РЎРїР°СЃРёР±Рѕ. РСЃС‡РµСЂРїС‹РІР°СЋС‰Р°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ.
+	AI_Output (self, other, "DIA_Brutus_Den_06_03"); //Рђ С‡С‚Рѕ СЏ РµС‰Рµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ? РЇ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РєСѓРґР° РѕРЅ РЅР°РїСЂР°РІРёР»СЃСЏ.
 	
-	B_LogEntry (TopicBrutusKasse,"Ден попробовал перейти мне дорогу.");
+	B_LogEntry (TopicBrutusKasse,"Р”РµРЅ РїРѕРїСЂРѕР±РѕРІР°Р» РїРµСЂРµР№С‚Рё РјРЅРµ РґРѕСЂРѕРіСѓ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gold
@@ -224,7 +224,7 @@ instance DIA_Brutus_Gold		(C_INFO)
 	condition	 = 	DIA_Brutus_Gold_Condition;
 	information	 = 	DIA_Brutus_Gold_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"У меня есть кое-что для тебя. (дать 200 монет).";
+	description	 = 	"РЈ РјРµРЅСЏ РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ РґР»СЏ С‚РµР±СЏ. (РґР°С‚СЊ 200 РјРѕРЅРµС‚).";
 };
 
 func int DIA_Brutus_Gold_Condition ()
@@ -238,19 +238,19 @@ func int DIA_Brutus_Gold_Condition ()
 };
 func void DIA_Brutus_Gold_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_Gold_15_00"); //У меня есть кое-что для тебя.
+	AI_Output (other, self, "DIA_Brutus_Gold_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РєРѕРµ-С‡С‚Рѕ РґР»СЏ С‚РµР±СЏ.
 	
 	if B_GiveInvItems (other,self,Itmi_Gold,200)
 	{
-		AI_Output (self, other, "DIA_Brutus_Gold_06_01"); //Превосходно. Теперь я могу потренировать тебе, если хочешь.
+		AI_Output (self, other, "DIA_Brutus_Gold_06_01"); //РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊ С‚РµР±Рµ, РµСЃР»Рё С…РѕС‡РµС€СЊ.
 		Brutus_TeachSTR = TRUE;
 		Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-		B_LogEntry		(TOPIC_Teacher_OC, "Брутус может помочь мне стать сильнее.");
+		B_LogEntry		(TOPIC_Teacher_OC, "Р‘СЂСѓС‚СѓСЃ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");
 		B_GivePlayerXP  (XP_Ambient);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Brutus_Gold_06_02"); //Послушай, просто принеси мне 200 монет. Меня не интересует, где ты возьмешь их, только бы это было золото.
+		AI_Output (self, other, "DIA_Brutus_Gold_06_02"); //РџРѕСЃР»СѓС€Р°Р№, РїСЂРѕСЃС‚Рѕ РїСЂРёРЅРµСЃРё РјРЅРµ 200 РјРѕРЅРµС‚. РњРµРЅСЏ РЅРµ РёРЅС‚РµСЂРµСЃСѓРµС‚, РіРґРµ С‚С‹ РІРѕР·СЊРјРµС€СЊ РёС…, С‚РѕР»СЊРєРѕ Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ Р·РѕР»РѕС‚Рѕ.
 	};
 };
 //*******************************************
@@ -263,7 +263,7 @@ INSTANCE DIA_Brutus_Teach(C_INFO)
 	condition	= DIA_Brutus_Teach_Condition;
 	information	= DIA_Brutus_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу стать сильнее.";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };                       
 
 FUNC INT DIA_Brutus_Teach_Condition()
@@ -277,7 +277,7 @@ FUNC INT DIA_Brutus_Teach_Condition()
  
 FUNC VOID DIA_Brutus_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Brutus_Teach_15_00"); //Я хочу стать сильнее.
+	AI_Output (other,self ,"DIA_Brutus_Teach_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 
 	Info_ClearChoices (DIA_Brutus_Teach);
 	Info_AddChoice		(DIA_Brutus_Teach, DIALOG_BACK, DIA_Brutus_Teach_Back);
@@ -353,7 +353,7 @@ instance DIA_Brutus_DUSCHONWIEDER		(C_INFO)
 	condition	 = 	DIA_Brutus_DUSCHONWIEDER_Condition;
 	information	 = 	DIA_Brutus_DUSCHONWIEDER_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Пытал кого-нибудь сегодня?";
+	description	 = 	"РџС‹С‚Р°Р» РєРѕРіРѕ-РЅРёР±СѓРґСЊ СЃРµРіРѕРґРЅСЏ?";
 };
 
 func int DIA_Brutus_DUSCHONWIEDER_Condition ()
@@ -367,8 +367,8 @@ func int DIA_Brutus_DUSCHONWIEDER_Condition ()
 
 func void DIA_Brutus_DUSCHONWIEDER_Info ()
 {
-	AI_Output (other, self, "DIA_Brutus_DUSCHONWIEDER_15_00"); //Пытал кого-нибудь сегодня?
-	AI_Output (self, other, "DIA_Brutus_DUSCHONWIEDER_06_01"); //Ты не видишь, я занят?! Заходи попозже.
+	AI_Output (other, self, "DIA_Brutus_DUSCHONWIEDER_15_00"); //РџС‹С‚Р°Р» РєРѕРіРѕ-РЅРёР±СѓРґСЊ СЃРµРіРѕРґРЅСЏ?
+	AI_Output (self, other, "DIA_Brutus_DUSCHONWIEDER_06_01"); //РўС‹ РЅРµ РІРёРґРёС€СЊ, СЏ Р·Р°РЅСЏС‚?! Р—Р°С…РѕРґРё РїРѕРїРѕР·Р¶Рµ.
 
 	B_NpcClearObsessionByDMT (self);
 };
@@ -419,7 +419,7 @@ instance DIA_Brutus_WARUMNICHTARBBEIT		(C_INFO)
 	condition	 = 	DIA_Brutus_WARUMNICHTARBBEIT_Condition;
 	information	 = 	DIA_Brutus_WARUMNICHTARBBEIT_Info;
 
-	description	 = 	"Почему ты не работаешь?";
+	description	 = 	"РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ?";
 };
 
 func int DIA_Brutus_WARUMNICHTARBBEIT_Condition ()
@@ -434,15 +434,15 @@ func int DIA_Brutus_WARUMNICHTARBBEIT_Condition ()
 
 func void DIA_Brutus_WARUMNICHTARBBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_WARUMNICHTARBBEIT_15_00"); //Почему ты не работаешь?
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_01"); //(огорченно) Это ужасно!
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_02"); //Ты не заглядывал в мою комнату? Эти грязные мясные жуки там повсюду.
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_03"); //Я не знаю, кто жил там раньше, но ноги моей не будет в этом грязном хлеву.
-	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_04"); //Я ненавижу этих тварей. И хватит ржать, как идиот.
+	AI_Output			(other, self, "DIA_Brutus_WARUMNICHTARBBEIT_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ?
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_01"); //(РѕРіРѕСЂС‡РµРЅРЅРѕ) Р­С‚Рѕ СѓР¶Р°СЃРЅРѕ!
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_02"); //РўС‹ РЅРµ Р·Р°РіР»СЏРґС‹РІР°Р» РІ РјРѕСЋ РєРѕРјРЅР°С‚Сѓ? Р­С‚Рё РіСЂСЏР·РЅС‹Рµ РјСЏСЃРЅС‹Рµ Р¶СѓРєРё С‚Р°Рј РїРѕРІСЃСЋРґСѓ.
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_03"); //РЇ РЅРµ Р·РЅР°СЋ, РєС‚Рѕ Р¶РёР» С‚Р°Рј СЂР°РЅСЊС€Рµ, РЅРѕ РЅРѕРіРё РјРѕРµР№ РЅРµ Р±СѓРґРµС‚ РІ СЌС‚РѕРј РіСЂСЏР·РЅРѕРј С…Р»РµРІСѓ.
+	AI_Output			(self, other, "DIA_Brutus_WARUMNICHTARBBEIT_06_04"); //РЇ РЅРµРЅР°РІРёР¶Сѓ СЌС‚РёС… С‚РІР°СЂРµР№. Р С…РІР°С‚РёС‚ СЂР¶Р°С‚СЊ, РєР°Рє РёРґРёРѕС‚.
 
 	Log_CreateTopic (TOPIC_BrutusMeatbugs, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BrutusMeatbugs, LOG_RUNNING);
-	B_LogEntry (TOPIC_BrutusMeatbugs,"Брутус, палач замка, говорит, что от безобидных мясных жуков в его комнате, у него мурашки по коже. А он казался мне таким крепким парнем."); 
+	B_LogEntry (TOPIC_BrutusMeatbugs,"Р‘СЂСѓС‚СѓСЃ, РїР°Р»Р°С‡ Р·Р°РјРєР°, РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕС‚ Р±РµР·РѕР±РёРґРЅС‹С… РјСЏСЃРЅС‹С… Р¶СѓРєРѕРІ РІ РµРіРѕ РєРѕРјРЅР°С‚Рµ, Сѓ РЅРµРіРѕ РјСѓСЂР°С€РєРё РїРѕ РєРѕР¶Рµ. Рђ РѕРЅ РєР°Р·Р°Р»СЃСЏ РјРЅРµ С‚Р°РєРёРј РєСЂРµРїРєРёРј РїР°СЂРЅРµРј."); 
 
 };
 
@@ -457,7 +457,7 @@ instance DIA_Brutus_MEATBUGSWEG		(C_INFO)
 	condition	 = 	DIA_Brutus_MEATBUGSWEG_Condition;
 	information	 = 	DIA_Brutus_MEATBUGSWEG_Info;
 	
-	description	 = 	"С мясными жуками покончено.";
+	description	 = 	"РЎ РјСЏСЃРЅС‹РјРё Р¶СѓРєР°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ.";
 };
 
 func int DIA_Brutus_MEATBUGSWEG_Condition ()
@@ -477,11 +477,11 @@ func int DIA_Brutus_MEATBUGSWEG_Condition ()
 
 func void DIA_Brutus_MEATBUGSWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_00"); //С мясными жуками покончено. Ты можешь продолжать полировать свои орудия для пыток или чем ты там занимался.
-	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_01"); //Ты действительно уверен, что ни одного из этих монстров не осталось?
-	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_02"); //Абсолютно.
-	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_03"); //Хорошо. Вот, возьми это золото в знак моей благодарности.
-	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_04"); //Ах, не заставляй меня плакать.
+	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_00"); //РЎ РјСЏСЃРЅС‹РјРё Р¶СѓРєР°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ. РўС‹ РјРѕР¶РµС€СЊ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РїРѕР»РёСЂРѕРІР°С‚СЊ СЃРІРѕРё РѕСЂСѓРґРёСЏ РґР»СЏ РїС‹С‚РѕРє РёР»Рё С‡РµРј С‚С‹ С‚Р°Рј Р·Р°РЅРёРјР°Р»СЃСЏ.
+	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_01"); //РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РЅРё РѕРґРЅРѕРіРѕ РёР· СЌС‚РёС… РјРѕРЅСЃС‚СЂРѕРІ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ?
+	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_02"); //РђР±СЃРѕР»СЋС‚РЅРѕ.
+	AI_Output			(self, other, "DIA_Brutus_MEATBUGSWEG_06_03"); //РҐРѕСЂРѕС€Рѕ. Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ РІ Р·РЅР°Рє РјРѕРµР№ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚Рё.
+	AI_Output			(other, self, "DIA_Brutus_MEATBUGSWEG_15_04"); //РђС…, РЅРµ Р·Р°СЃС‚Р°РІР»СЏР№ РјРµРЅСЏ РїР»Р°РєР°С‚СЊ.
 
 	TOPIC_END_BrutusMeatbugs = TRUE;
 	
@@ -505,7 +505,7 @@ instance DIA_Brutus_PERM4		(C_INFO)
 	information	 = 	DIA_Brutus_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Brutus_PERM4_Condition ()
@@ -530,17 +530,17 @@ func void DIA_Brutus_PERM4_Info ()
 		}
 		else 
  		{
-			AI_Output			(other, self, "DIA_Brutus_PERM4_15_00"); //Все в порядке?
-			AI_Output			(self, other, "DIA_Brutus_PERM4_06_01"); //(нерешительно) Ты уверен, что со всеми мясными жуками покончено?
-			AI_Output			(other, self, "DIA_Brutus_PERM4_15_02"); //Ах... смотри, вон один сзади тебя.
-			AI_Output			(self, other, "DIA_Brutus_PERM4_06_03"); //(ревет) Чтооо?
+			AI_Output			(other, self, "DIA_Brutus_PERM4_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+			AI_Output			(self, other, "DIA_Brutus_PERM4_06_01"); //(РЅРµСЂРµС€РёС‚РµР»СЊРЅРѕ) РўС‹ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЃРѕ РІСЃРµРјРё РјСЏСЃРЅС‹РјРё Р¶СѓРєР°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ?
+			AI_Output			(other, self, "DIA_Brutus_PERM4_15_02"); //РђС…... СЃРјРѕС‚СЂРё, РІРѕРЅ РѕРґРёРЅ СЃР·Р°РґРё С‚РµР±СЏ.
+			AI_Output			(self, other, "DIA_Brutus_PERM4_06_03"); //(СЂРµРІРµС‚) Р§С‚РѕРѕРѕ?
 		
 			B_NpcClearObsessionByDMT (self);
 			
 			
 			Npc_SetTarget 		(self, other);
 			
-			self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bцse) Flag nicht zurьckgesetzt wird 
+			self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bС†se) Flag nicht zurСЊckgesetzt wird 
 			other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 			AI_StartState 		(self, ZS_Flee, 0, "");
@@ -558,7 +558,7 @@ instance DIA_Brutus_BESSEN		(C_INFO)
 	information	 = 	DIA_Brutus_BESSEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Да ты одержим!";
+	description	 = 	"Р”Р° С‚С‹ РѕРґРµСЂР¶РёРј!";
 };
 
 func int DIA_Brutus_BESSEN_Condition ()
@@ -572,24 +572,24 @@ func int DIA_Brutus_BESSEN_Condition ()
 
 func void DIA_Brutus_BESSEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_00"); //Да ты одержим!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_00"); //Р”Р° С‚С‹ РѕРґРµСЂР¶РёРј!
 
 	if (hero.guild == GIL_KDF)
 		||(hero.guild == GIL_PAL)
 	{
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_01"); //Отправляйся в монастырь, пусть они вылечат тебя.
-	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_02"); //Мне никто не может помочь. Убирайся!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_01"); //РћС‚РїСЂР°РІР»СЏР№СЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РїСѓСЃС‚СЊ РѕРЅРё РІС‹Р»РµС‡Р°С‚ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_02"); //РњРЅРµ РЅРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ. РЈР±РёСЂР°Р№СЃСЏ!
 	B_NpcClearObsessionByDMT (self);
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_03"); //Кто-нибудь должен выбить демонов из твоей головы.
-	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_04"); //(вопит) НЕЕТ!
+	AI_Output			(other, self, "DIA_Brutus_BESSEN_15_03"); //РљС‚Рѕ-РЅРёР±СѓРґСЊ РґРѕР»Р¶РµРЅ РІС‹Р±РёС‚СЊ РґРµРјРѕРЅРѕРІ РёР· С‚РІРѕРµР№ РіРѕР»РѕРІС‹.
+	AI_Output			(self, other, "DIA_Brutus_BESSEN_06_04"); //(РІРѕРїРёС‚) РќР•Р•Рў!
 	B_NpcClearObsessionByDMT (self);
 		
 	Npc_SetTarget 		(self, other);
 	
-	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bцse) Flag nicht zurьckgesetzt wird 
+	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bС†se) Flag nicht zurСЊckgesetzt wird 
 	other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 	AI_StartState 		(self, ZS_Flee, 0, "");	

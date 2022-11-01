@@ -34,7 +34,7 @@ instance DIA_Khaled_Hallo		(C_INFO)
 	condition	= DIA_Khaled_Hallo_Condition;
 	information	= DIA_Khaled_Hallo_Info;
 	permanent	= TRUE;
-	description	= "С тобой все в порядке?";
+	description	= "РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Khaled_Hallo_Condition ()
@@ -47,17 +47,17 @@ func int DIA_Khaled_Hallo_Condition ()
 
 func void DIA_Khaled_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_Hallo_15_00"); //С тобой все в порядке?
+	AI_Output (other, self, "DIA_Khaled_Hallo_15_00"); //РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	if (Npc_KnowsInfo (other, DIA_Lee_WannaJoin))
 	{
-		AI_Output (self, other, "DIA_Khaled_Hallo_11_01"); //Хм - так ты хочешь присоединиться к нам, да? А у тебя есть хотя бы приличное оружие?
+		AI_Output (self, other, "DIA_Khaled_Hallo_11_01"); //РҐРј - С‚Р°Рє С‚С‹ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°Рј, РґР°? Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ С…РѕС‚СЏ Р±С‹ РїСЂРёР»РёС‡РЅРѕРµ РѕСЂСѓР¶РёРµ?
 		Khaled_weiter = TRUE;
 		Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTrader,"Халед - торговец оружием.");
+		B_LogEntry (Topic_SoldierTrader,"РҐР°Р»РµРґ - С‚РѕСЂРіРѕРІРµС† РѕСЂСѓР¶РёРµРј.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Khaled_Hallo_11_02"); //Если у тебя что-то важное, поговори с Ли. А меня оставь в покое.
+		AI_Output (self, other, "DIA_Khaled_Hallo_11_02"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ С‡С‚Рѕ-С‚Рѕ РІР°Р¶РЅРѕРµ, РїРѕРіРѕРІРѕСЂРё СЃ Р›Рё. Рђ РјРµРЅСЏ РѕСЃС‚Р°РІСЊ РІ РїРѕРєРѕРµ.
 		AI_StopProcessInfos (self);
 	};	
 };
@@ -72,7 +72,7 @@ instance DIA_Khaled_TRADE		(C_INFO)
 	condition	= DIA_Khaled_TRADE_Condition;
 	information	= DIA_Khaled_TRADE_Info;
 	permanent	= TRUE;
-	description	= "Какое оружие ты можешь предложить мне?";
+	description	= "РљР°РєРѕРµ РѕСЂСѓР¶РёРµ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?";
 	trade		= TRUE;
 };
 
@@ -86,9 +86,9 @@ func int DIA_Khaled_TRADE_Condition ()
 
 func void DIA_Khaled_TRADE_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_TRADE_15_00"); //Какое оружие ты можешь предложить мне?
+	AI_Output (other, self, "DIA_Khaled_TRADE_15_00"); //РљР°РєРѕРµ РѕСЂСѓР¶РёРµ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?
 	B_GiveTradeInv (self);
-	AI_Output (self, other, "DIA_Khaled_TRADE_11_01"); //Только лучшее. Да ты сам взгляни на него.
+	AI_Output (self, other, "DIA_Khaled_TRADE_11_01"); //РўРѕР»СЊРєРѕ Р»СѓС‡С€РµРµ. Р”Р° С‚С‹ СЃР°Рј РІР·РіР»СЏРЅРё РЅР° РЅРµРіРѕ.
 };
 
 // ************************************************************
@@ -101,7 +101,7 @@ instance DIA_Khaled_WannaJoin		(C_INFO)
 	condition	= DIA_Khaled_WannaJoin_Condition;
 	information	= DIA_Khaled_WannaJoin_Info;
 	permanent	= TRUE;
-	description	= "Ты не возражаешь, если я присоединюсь к вам?";
+	description	= "РўС‹ РЅРµ РІРѕР·СЂР°Р¶Р°РµС€СЊ, РµСЃР»Рё СЏ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє РІР°Рј?";
 };
 
 func int DIA_Khaled_WannaJoin_Condition ()
@@ -115,13 +115,13 @@ func int DIA_Khaled_WannaJoin_Condition ()
 
 func void DIA_Khaled_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_WannaJoin_15_00"); //Ты не возражаешь, если я присоединюсь к вам?
-	AI_Output (self, other, "DIA_Khaled_WannaJoin_11_01"); //Когда ты пройдешь испытание, я проголосую за тебя.
+	AI_Output (other, self, "DIA_Khaled_WannaJoin_15_00"); //РўС‹ РЅРµ РІРѕР·СЂР°Р¶Р°РµС€СЊ, РµСЃР»Рё СЏ РїСЂРёСЃРѕРµРґРёРЅСЋСЃСЊ Рє РІР°Рј?
+	AI_Output (self, other, "DIA_Khaled_WannaJoin_11_01"); //РљРѕРіРґР° С‚С‹ РїСЂРѕР№РґРµС€СЊ РёСЃРїС‹С‚Р°РЅРёРµ, СЏ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ.
 	if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	|| (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Khaled_WannaJoin_15_02"); //Я его уже прошел.
-		AI_Output (self, other, "DIA_Khaled_WannaJoin_11_03"); //Ну, тогда все в порядке.
+		AI_Output (other, self, "DIA_Khaled_WannaJoin_15_02"); //РЇ РµРіРѕ СѓР¶Рµ РїСЂРѕС€РµР».
+		AI_Output (self, other, "DIA_Khaled_WannaJoin_11_03"); //РќСѓ, С‚РѕРіРґР° РІСЃРµ РІ РїРѕСЂСЏРґРєРµ.
 	};
 };
 
@@ -135,7 +135,7 @@ instance DIA_Khaled_Woher		(C_INFO)
 	condition	= DIA_Khaled_Woher_Condition;
 	information	= DIA_Khaled_Woher_Info;
 	permanent	= FALSE;
-	description	= "Как ты оказался среди наемников?";
+	description	= "РљР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ?";
 };
 
 func int DIA_Khaled_Woher_Condition ()
@@ -148,8 +148,8 @@ func int DIA_Khaled_Woher_Condition ()
 
 func void DIA_Khaled_Woher_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_Woher_15_00"); //Как ты оказался среди наемников?
-	AI_Output (self, other, "DIA_Khaled_Woher_11_01"); //Я пришел вместе с Сильвио с юга. Мы состояли в армии наемников, которая сражалась с орками.
+	AI_Output (other, self, "DIA_Khaled_Woher_15_00"); //РљР°Рє С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ?
+	AI_Output (self, other, "DIA_Khaled_Woher_11_01"); //РЇ РїСЂРёС€РµР» РІРјРµСЃС‚Рµ СЃ РЎРёР»СЊРІРёРѕ СЃ СЋРіР°. РњС‹ СЃРѕСЃС‚РѕСЏР»Рё РІ Р°СЂРјРёРё РЅР°РµРјРЅРёРєРѕРІ, РєРѕС‚РѕСЂР°СЏ СЃСЂР°Р¶Р°Р»Р°СЃСЊ СЃ РѕСЂРєР°РјРё.
 };
 
 // ************************************************************
@@ -162,7 +162,7 @@ instance DIA_Khaled_AboutSylvio		(C_INFO)
 	condition	= DIA_Khaled_AboutSylvio_Condition;
 	information	= DIA_Khaled_AboutSylvio_Info;
 	permanent	= FALSE;
-	description	= "Что ты думаешь о Сильвио?";
+	description	= "Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ РЎРёР»СЊРІРёРѕ?";
 };
 
 func int DIA_Khaled_AboutSylvio_Condition ()
@@ -175,8 +175,8 @@ func int DIA_Khaled_AboutSylvio_Condition ()
 
 func void DIA_Khaled_AboutSylvio_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_AboutSylvio_15_00"); //Что ты думаешь о Сильвио?
-	AI_Output (self, other, "DIA_Khaled_AboutSylvio_11_01"); //Это опасный тип! И многие наемники, что пришли с ним, прислушиваются к его мнению. Тебе лучше не связываться с ним.
+	AI_Output (other, self, "DIA_Khaled_AboutSylvio_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ РЎРёР»СЊРІРёРѕ?
+	AI_Output (self, other, "DIA_Khaled_AboutSylvio_11_01"); //Р­С‚Рѕ РѕРїР°СЃРЅС‹Р№ С‚РёРї! Р РјРЅРѕРіРёРµ РЅР°РµРјРЅРёРєРё, С‡С‚Рѕ РїСЂРёС€Р»Рё СЃ РЅРёРј, РїСЂРёСЃР»СѓС€РёРІР°СЋС‚СЃСЏ Рє РµРіРѕ РјРЅРµРЅРёСЋ. РўРµР±Рµ Р»СѓС‡С€Рµ РЅРµ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ РЅРёРј.
 };
 
 // ************************************************************
@@ -189,7 +189,7 @@ instance DIA_Khaled_AboutLee		(C_INFO)
 	condition	= DIA_Khaled_AboutLee_Condition;
 	information	= DIA_Khaled_AboutLee_Info;
 	permanent	= FALSE;
-	description	= "Что ты думаешь о Ли?";
+	description	= "Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ Р›Рё?";
 };
 
 func int DIA_Khaled_AboutLee_Condition ()
@@ -202,11 +202,11 @@ func int DIA_Khaled_AboutLee_Condition ()
 
 func void DIA_Khaled_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Khaled_AboutLee_15_00"); //Что ты думаешь о Ли?
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_01"); //Я думаю, единственное, что по-настоящему интересует Ли - как убраться с этого острова.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_02"); //Он хочет добраться до материка. Похоже, у него там счеты с кем-то...
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_03"); //Но, как бы то ни было, он значительно лучше справляется со своей работой, чем на это способен Сильвио.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_04"); //Кроме того, он хороший лидер. Большую часть времени мы можем делать здесь что хотим.
+	AI_Output (other, self, "DIA_Khaled_AboutLee_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ Рѕ Р›Рё?
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_01"); //РЇ РґСѓРјР°СЋ, РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ РїРѕ-РЅР°СЃС‚РѕСЏС‰РµРјСѓ РёРЅС‚РµСЂРµСЃСѓРµС‚ Р›Рё - РєР°Рє СѓР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°.
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_02"); //РћРЅ С…РѕС‡РµС‚ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ РјР°С‚РµСЂРёРєР°. РџРѕС…РѕР¶Рµ, Сѓ РЅРµРіРѕ С‚Р°Рј СЃС‡РµС‚С‹ СЃ РєРµРј-С‚Рѕ...
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_03"); //РќРѕ, РєР°Рє Р±С‹ С‚Рѕ РЅРё Р±С‹Р»Рѕ, РѕРЅ Р·РЅР°С‡РёС‚РµР»СЊРЅРѕ Р»СѓС‡С€Рµ СЃРїСЂР°РІР»СЏРµС‚СЃСЏ СЃРѕ СЃРІРѕРµР№ СЂР°Р±РѕС‚РѕР№, С‡РµРј РЅР° СЌС‚Рѕ СЃРїРѕСЃРѕР±РµРЅ РЎРёР»СЊРІРёРѕ.
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_04"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РѕРЅ С…РѕСЂРѕС€РёР№ Р»РёРґРµСЂ. Р‘РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ РІСЂРµРјРµРЅРё РјС‹ РјРѕР¶РµРј РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ С‡С‚Рѕ С…РѕС‚РёРј.
 };
 
 

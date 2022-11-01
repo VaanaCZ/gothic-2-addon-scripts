@@ -82,13 +82,13 @@ func void DIA_Fellan_News_Info ()
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_00"); //Ох, ты побил меня. Какой героический поступок!
+		 AI_Output (self, other, "DIA_Fellan_News_06_00"); //РћС…, С‚С‹ РїРѕР±РёР» РјРµРЅСЏ. РљР°РєРѕР№ РіРµСЂРѕРёС‡РµСЃРєРёР№ РїРѕСЃС‚СѓРїРѕРє!
 	
 		 if (MIS_AttackFellan == LOG_RUNNING)
 		 && (FellanGeschlagen == FALSE)
 		 {
-		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Ты прекратишь стучать молотком, или мне задать тебе трепку еще раз?
-		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //Нет, не надо бить меня больше. Я перестану. Но здесь все обрушится, и в этом будешь виноват ты!
+		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //РўС‹ РїСЂРµРєСЂР°С‚РёС€СЊ СЃС‚СѓС‡Р°С‚СЊ РјРѕР»РѕС‚РєРѕРј, РёР»Рё РјРЅРµ Р·Р°РґР°С‚СЊ С‚РµР±Рµ С‚СЂРµРїРєСѓ РµС‰Рµ СЂР°Р·?
+		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //РќРµС‚, РЅРµ РЅР°РґРѕ Р±РёС‚СЊ РјРµРЅСЏ Р±РѕР»СЊС€Рµ. РЇ РїРµСЂРµСЃС‚Р°РЅСѓ. РќРѕ Р·РґРµСЃСЊ РІСЃРµ РѕР±СЂСѓС€РёС‚СЃСЏ, Рё РІ СЌС‚РѕРј Р±СѓРґРµС€СЊ РІРёРЅРѕРІР°С‚ С‚С‹!
 		 	
 		 	FellanGeschlagen = TRUE;
 		 	Npc_ExchangeRoutine (self,"OHNEHAMMER");
@@ -98,11 +98,11 @@ func void DIA_Fellan_News_Info ()
 	}; 
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		AI_Output (self, other, "DIA_Fellan_News_06_03");  //В чем дело? Хочешь еще получить по морде?
+		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Р’ С‡РµРј РґРµР»Рѕ? РҐРѕС‡РµС€СЊ РµС‰Рµ РїРѕР»СѓС‡РёС‚СЊ РїРѕ РјРѕСЂРґРµ?
 	};
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 	{
-		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Что ты за псих? То сражаешься, то убегаешь, то болтаешь - что тебе вообще нужно?
+		 AI_Output (self, other, "DIA_Fellan_News_06_04"); //Р§С‚Рѕ С‚С‹ Р·Р° РїСЃРёС…? РўРѕ СЃСЂР°Р¶Р°РµС€СЊСЃСЏ, С‚Рѕ СѓР±РµРіР°РµС€СЊ, С‚Рѕ Р±РѕР»С‚Р°РµС€СЊ - С‡С‚Рѕ С‚РµР±Рµ РІРѕРѕР±С‰Рµ РЅСѓР¶РЅРѕ?
 	};
 	self.aivar[AIV_LastFightComment] = TRUE;
 };
@@ -117,7 +117,7 @@ instance DIA_Fellan_HALLO		(C_INFO)
 	condition	 = 	DIA_Fellan_HALLO_Condition;
 	information	 = 	DIA_Fellan_HALLO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Зачем ты колотишь молотком?";
+	description	 = 	"Р—Р°С‡РµРј С‚С‹ РєРѕР»РѕС‚РёС€СЊ РјРѕР»РѕС‚РєРѕРј?";
 };
 func int DIA_Fellan_HALLO_Condition ()
 {	
@@ -128,9 +128,9 @@ func int DIA_Fellan_HALLO_Condition ()
 };
 func void DIA_Fellan_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Зачем ты колотишь молотком?
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //Вот уже несколько дней я отчаянно пытаюсь устранить протечки в моем доме.
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Балки крошатся с тех пор, как прошли эти последние дожди. Скоро все это упадет мне на голову!
+	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Р—Р°С‡РµРј С‚С‹ РєРѕР»РѕС‚РёС€СЊ РјРѕР»РѕС‚РєРѕРј?
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //Р’РѕС‚ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ СЏ РѕС‚С‡Р°СЏРЅРЅРѕ РїС‹С‚Р°СЋСЃСЊ СѓСЃС‚СЂР°РЅРёС‚СЊ РїСЂРѕС‚РµС‡РєРё РІ РјРѕРµРј РґРѕРјРµ.
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Р‘Р°Р»РєРё РєСЂРѕС€Р°С‚СЃСЏ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РїСЂРѕС€Р»Рё СЌС‚Рё РїРѕСЃР»РµРґРЅРёРµ РґРѕР¶РґРё. РЎРєРѕСЂРѕ РІСЃРµ СЌС‚Рѕ СѓРїР°РґРµС‚ РјРЅРµ РЅР° РіРѕР»РѕРІСѓ!
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ instance DIA_Fellan_Stop		(C_INFO)
 	condition	 = 	DIA_Fellan_Stop_Condition;
 	information	 = 	DIA_Fellan_Stop_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Ты не мог бы перестать молотить?";
+	description	 = 	"РўС‹ РЅРµ РјРѕРі Р±С‹ РїРµСЂРµСЃС‚Р°С‚СЊ РјРѕР»РѕС‚РёС‚СЊ?";
 };
 
 func int DIA_Fellan_Stop_Condition ()
@@ -156,30 +156,30 @@ func int DIA_Fellan_Stop_Condition ()
 };
 func void DIA_Fellan_Stop_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //Ты не мог бы перестать молотить?
-	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //Нет, я должен закончить работу.
+	AI_Output (other, self, "DIA_Fellan_Stop_15_00"); //РўС‹ РЅРµ РјРѕРі Р±С‹ РїРµСЂРµСЃС‚Р°С‚СЊ РјРѕР»РѕС‚РёС‚СЊ?
+	AI_Output (self, other, "DIA_Fellan_Stop_06_01"); //РќРµС‚, СЏ РґРѕР»Р¶РµРЅ Р·Р°РєРѕРЅС‡РёС‚СЊ СЂР°Р±РѕС‚Сѓ.
 	
 	Info_ClearChoices (DIA_Fellan_Stop);
-	Info_AddChoice (DIA_Fellan_Stop,"Прекрати стучать молотком, или я переломаю тебе все кости.",DIA_Fellan_Stop_Bones);
-	Info_AddChoice (DIA_Fellan_Stop,"Я дам тебе 10 монет, чтобы ты перестал колотить.",DIA_Fellan_Stop_Gold);
-	Info_AddChoice (DIA_Fellan_Stop,"Просто перестань молотить. Хорошо?",DIA_Fellan_Stop_Just);
+	Info_AddChoice (DIA_Fellan_Stop,"РџСЂРµРєСЂР°С‚Рё СЃС‚СѓС‡Р°С‚СЊ РјРѕР»РѕС‚РєРѕРј, РёР»Рё СЏ РїРµСЂРµР»РѕРјР°СЋ С‚РµР±Рµ РІСЃРµ РєРѕСЃС‚Рё.",DIA_Fellan_Stop_Bones);
+	Info_AddChoice (DIA_Fellan_Stop,"РЇ РґР°Рј С‚РµР±Рµ 10 РјРѕРЅРµС‚, С‡С‚РѕР±С‹ С‚С‹ РїРµСЂРµСЃС‚Р°Р» РєРѕР»РѕС‚РёС‚СЊ.",DIA_Fellan_Stop_Gold);
+	Info_AddChoice (DIA_Fellan_Stop,"РџСЂРѕСЃС‚Рѕ РїРµСЂРµСЃС‚Р°РЅСЊ РјРѕР»РѕС‚РёС‚СЊ. РҐРѕСЂРѕС€Рѕ?",DIA_Fellan_Stop_Just);
 };
 FUNC VOID DIA_Fellan_Stop_Bones()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //Прекрати стучать молотком, или я переломаю тебе все кости.
-	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Забудь об этом, или мне придется образумить тебя хорошим ударом молотка по голове.
+	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //РџСЂРµРєСЂР°С‚Рё СЃС‚СѓС‡Р°С‚СЊ РјРѕР»РѕС‚РєРѕРј, РёР»Рё СЏ РїРµСЂРµР»РѕРјР°СЋ С‚РµР±Рµ РІСЃРµ РєРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, РёР»Рё РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РѕР±СЂР°Р·СѓРјРёС‚СЊ С‚РµР±СЏ С…РѕСЂРѕС€РёРј СѓРґР°СЂРѕРј РјРѕР»РѕС‚РєР° РїРѕ РіРѕР»РѕРІРµ.
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Fellan_Stop_Gold()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Я дам тебе 10 монет, чтобы ты перестал колотить.
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Эй... Это очень великодушно с твоей стороны. Но что касается твоего золота, ты можешь...
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //...ну, ты знаешь, куда его засунуть.
+	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //РЇ РґР°Рј С‚РµР±Рµ 10 РјРѕРЅРµС‚, С‡С‚РѕР±С‹ С‚С‹ РїРµСЂРµСЃС‚Р°Р» РєРѕР»РѕС‚РёС‚СЊ.
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Р­Р№... Р­С‚Рѕ РѕС‡РµРЅСЊ РІРµР»РёРєРѕРґСѓС€РЅРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹. РќРѕ С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ С‚РІРѕРµРіРѕ Р·РѕР»РѕС‚Р°, С‚С‹ РјРѕР¶РµС€СЊ...
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //...РЅСѓ, С‚С‹ Р·РЅР°РµС€СЊ, РєСѓРґР° РµРіРѕ Р·Р°СЃСѓРЅСѓС‚СЊ.
 };
 FUNC VOID DIA_Fellan_Stop_Just()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //Просто перестань молотить. Хорошо?
-	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //Не приставай кол мне, ладно?
+	AI_Output (other, self, "DIA_Fellan_Stop_Just_15_00"); //РџСЂРѕСЃС‚Рѕ РїРµСЂРµСЃС‚Р°РЅСЊ РјРѕР»РѕС‚РёС‚СЊ. РҐРѕСЂРѕС€Рѕ?
+	AI_Output (self, other, "DIA_Fellan_Stop_Just_06_01"); //РќРµ РїСЂРёСЃС‚Р°РІР°Р№ РєРѕР» РјРЅРµ, Р»Р°РґРЅРѕ?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alles klar?
@@ -191,7 +191,7 @@ instance DIA_Fellan_klar		(C_INFO)
 	condition	 = 	DIA_Fellan_klar_Condition;
 	information	 = 	DIA_Fellan_klar_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Эээй, с тобой все в порядке?";
+	description	 = 	"Р­СЌСЌР№, СЃ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 func int DIA_Fellan_klar_Condition ()
 {	
@@ -202,15 +202,15 @@ func int DIA_Fellan_klar_Condition ()
 };
 func void DIA_Fellan_klar_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_klar_15_00"); //Эээй, с тобой все в порядке?
+	AI_Output (other, self, "DIA_Fellan_klar_15_00"); //Р­СЌСЌР№, СЃ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (FellanGeschlagen == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Будет в порядке, если я смогу закончить ремонт вовремя.
+		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Р‘СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ, РµСЃР»Рё СЏ СЃРјРѕРіСѓ Р·Р°РєРѕРЅС‡РёС‚СЊ СЂРµРјРѕРЅС‚ РІРѕРІСЂРµРјСЏ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Состояние крыши ухудшается прямо на глазах. В следующий дождь, вода в доме поднимется до пояса. И в этом будешь виноват ты!
+		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //РЎРѕСЃС‚РѕСЏРЅРёРµ РєСЂС‹С€Рё СѓС…СѓРґС€Р°РµС‚СЃСЏ РїСЂСЏРјРѕ РЅР° РіР»Р°Р·Р°С…. Р’ СЃР»РµРґСѓСЋС‰РёР№ РґРѕР¶РґСЊ, РІРѕРґР° РІ РґРѕРјРµ РїРѕРґРЅРёРјРµС‚СЃСЏ РґРѕ РїРѕСЏСЃР°. Р РІ СЌС‚РѕРј Р±СѓРґРµС€СЊ РІРёРЅРѕРІР°С‚ С‚С‹!
 	};
 	AI_StopProcessInfos (self);
 };

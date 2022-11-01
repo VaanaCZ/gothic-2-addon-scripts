@@ -33,7 +33,7 @@ func void ZS_MM_Rtn_DragonRest()
 		AI_AlignToWP(self);
 	};
 	
-	self.aivar[AIV_TAPOSITION] = 0; //für Regeneration;
+	self.aivar[AIV_TAPOSITION] = 0; //fÑŒr Regeneration;
 };
 
 func int ZS_MM_Rtn_DragonRest_Loop ()

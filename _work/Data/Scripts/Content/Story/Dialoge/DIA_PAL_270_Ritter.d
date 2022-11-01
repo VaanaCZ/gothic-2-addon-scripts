@@ -43,17 +43,17 @@ func void DIA_Ritter_OUT_Info ()
 {
 	if (DIA_Ritter_OUT_NoPerm == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Ты пришел из Хориниса, да? Когда все кончится, я тоже вернусь туда.
+		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //РўС‹ РїСЂРёС€РµР» РёР· РҐРѕСЂРёРЅРёСЃР°, РґР°? РљРѕРіРґР° РІСЃРµ РєРѕРЅС‡РёС‚СЃСЏ, СЏ С‚РѕР¶Рµ РІРµСЂРЅСѓСЃСЊ С‚СѓРґР°.
 		DIA_Ritter_OUT_NoPerm = TRUE;
 	};
 	
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //Я очень рад, что мы с вами в одной команде, сэр.
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //РЇ РѕС‡РµРЅСЊ СЂР°Рґ, С‡С‚Рѕ РјС‹ СЃ РІР°РјРё РІ РѕРґРЅРѕР№ РєРѕРјР°РЅРґРµ, СЃСЌСЂ.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_02"); //У нас получится. Мы доставим руду в Хоринис, и нас будут носить на руках!
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_02"); //РЈ РЅР°СЃ РїРѕР»СѓС‡РёС‚СЃСЏ. РњС‹ РґРѕСЃС‚Р°РІРёРј СЂСѓРґСѓ РІ РҐРѕСЂРёРЅРёСЃ, Рё РЅР°СЃ Р±СѓРґСѓС‚ РЅРѕСЃРёС‚СЊ РЅР° СЂСѓРєР°С…!
 		};
 };
 

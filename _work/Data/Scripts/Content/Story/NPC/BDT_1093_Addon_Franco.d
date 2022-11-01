@@ -1,7 +1,7 @@
 instance BDT_1093_Addon_Franco (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Франко";
+	name 		= "Р¤СЂР°РЅРєРѕ";
 	guild 		= GIL_BDT;
 	id 			= 1093;
 	voice 		= 8;

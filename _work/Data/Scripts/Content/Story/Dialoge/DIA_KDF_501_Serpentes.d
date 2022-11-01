@@ -44,17 +44,17 @@ func int DIA_Serpentes_NOTALK_Condition ()
 };
 func void DIA_Serpentes_NOTALK_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_10_00"); //(сварливо) Ты осмеливаешься обращаться ко мне, послушник? Возвращайся к своей работе.
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_10_00"); //(СЃРІР°СЂР»РёРІРѕ) РўС‹ РѕСЃРјРµР»РёРІР°РµС€СЊСЃСЏ РѕР±СЂР°С‰Р°С‚СЊСЃСЏ РєРѕ РјРЅРµ, РїРѕСЃР»СѓС€РЅРёРє? Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє СЃРІРѕРµР№ СЂР°Р±РѕС‚Рµ.
 	
 	Info_ClearChoices (DIA_Serpentes_NOTALK);
-	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"Мне нужно идти (КОНЕЦ)",DIA_Serpentes_NOTALK_EXIT);
-	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"У меня есть еще один вопрос...",DIA_Serpentes_NOTALK_QUESTION);
+	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё (РљРћРќР•Р¦)",DIA_Serpentes_NOTALK_EXIT);
+	Info_AddChoice 	  (DIA_Serpentes_NOTALK,"РЈ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РѕРґРёРЅ РІРѕРїСЂРѕСЃ...",DIA_Serpentes_NOTALK_QUESTION);
 };
 FUNC VOID DIA_Serpentes_NOTALK_QUESTION()
 {
-	AI_Output (other, self, "DIA_Serpentes_NOTALK_QUESTION_15_00"); //У меня есть еще один вопрос...
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_01"); //(в ярости) Похоже, ты не понимаешь. Я решаю, когда говорить с тобой, а когда нет. Что ты о себе вообразил?
-	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_02"); //А теперь возвращайся к работе!
+	AI_Output (other, self, "DIA_Serpentes_NOTALK_QUESTION_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РѕРґРёРЅ РІРѕРїСЂРѕСЃ...
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_01"); //(РІ СЏСЂРѕСЃС‚Рё) РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµ РїРѕРЅРёРјР°РµС€СЊ. РЇ СЂРµС€Р°СЋ, РєРѕРіРґР° РіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№, Р° РєРѕРіРґР° РЅРµС‚. Р§С‚Рѕ С‚С‹ Рѕ СЃРµР±Рµ РІРѕРѕР±СЂР°Р·РёР»?
+	AI_Output (self, other, "DIA_Serpentes_NOTALK_QUESTION_10_02"); //Рђ С‚РµРїРµСЂСЊ РІРѕР·РІСЂР°С‰Р°Р№СЃСЏ Рє СЂР°Р±РѕС‚Рµ!
 	
 	AI_StopProcessInfos (self);
 };
@@ -86,7 +86,7 @@ func int DIA_Serpentes_GOAWAY_Condition ()
 };
 func void DIA_Serpentes_GOAWAY_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_GOAWAY_10_00"); //Твое присутствие здесь говорит не только о недостатке уважения, но также о твоей тупости, послушник!
+	AI_Output (self, other, "DIA_Serpentes_GOAWAY_10_00"); //РўРІРѕРµ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ Р·РґРµСЃСЊ РіРѕРІРѕСЂРёС‚ РЅРµ С‚РѕР»СЊРєРѕ Рѕ РЅРµРґРѕСЃС‚Р°С‚РєРµ СѓРІР°Р¶РµРЅРёСЏ, РЅРѕ С‚Р°РєР¶Рµ Рѕ С‚РІРѕРµР№ С‚СѓРїРѕСЃС‚Рё, РїРѕСЃР»СѓС€РЅРёРє!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -99,7 +99,7 @@ instance DIA_Serpentes_YOURSTORY		(C_INFO)
 	condition	 = 	DIA_Serpentes_YOURSTORY_Condition;
 	information	 = 	DIA_Serpentes_YOURSTORY_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я слышал, что ты прошел Испытание Огнем.";
+	description	 = 	"РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РїСЂРѕС€РµР» РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.";
 };
 func int DIA_Serpentes_YOURSTORY_Condition ()
 {	
@@ -113,11 +113,11 @@ func int DIA_Serpentes_YOURSTORY_Condition ()
 };
 func void DIA_Serpentes_YOURSTORY_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_00"); //Я слышал, что ты прошел Испытание Огнем.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_01"); //Со всей присущей мне скромностью я расскажу тебе об этом. Все остальные, кто пытались пройти это испытание, мертвы.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_02"); //(снисходительно) Тебе не стоит пытаться пройти это испытание. Твой дух слаб. Лучше служи в монастыре, и, возможно, через несколько лет ты будешь выбран.
-	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_03"); //Я хочу пройти это испытание.
-	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_04"); //Если такова воля Инноса, то пройдешь. Но если нет - то ты умрешь.
+	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_00"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚С‹ РїСЂРѕС€РµР» РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_01"); //РЎРѕ РІСЃРµР№ РїСЂРёСЃСѓС‰РµР№ РјРЅРµ СЃРєСЂРѕРјРЅРѕСЃС‚СЊСЋ СЏ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ РѕР± СЌС‚РѕРј. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ, РєС‚Рѕ РїС‹С‚Р°Р»РёСЃСЊ РїСЂРѕР№С‚Рё СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ, РјРµСЂС‚РІС‹.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_02"); //(СЃРЅРёСЃС…РѕРґРёС‚РµР»СЊРЅРѕ) РўРµР±Рµ РЅРµ СЃС‚РѕРёС‚ РїС‹С‚Р°С‚СЊСЃСЏ РїСЂРѕР№С‚Рё СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ. РўРІРѕР№ РґСѓС… СЃР»Р°Р±. Р›СѓС‡С€Рµ СЃР»СѓР¶Рё РІ РјРѕРЅР°СЃС‚С‹СЂРµ, Рё, РІРѕР·РјРѕР¶РЅРѕ, С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚ С‚С‹ Р±СѓРґРµС€СЊ РІС‹Р±СЂР°РЅ.
+	AI_Output (other, self, "DIA_Serpentes_YOURSTORY_15_03"); //РЇ С…РѕС‡Сѓ РїСЂРѕР№С‚Рё СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Serpentes_YOURSTORY_10_04"); //Р•СЃР»Рё С‚Р°РєРѕРІР° РІРѕР»СЏ РРЅРЅРѕСЃР°, С‚Рѕ РїСЂРѕР№РґРµС€СЊ. РќРѕ РµСЃР»Рё РЅРµС‚ - С‚Рѕ С‚С‹ СѓРјСЂРµС€СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEST
@@ -129,7 +129,7 @@ instance DIA_Serpentes_TEST		(C_INFO)
 	condition	 = 	DIA_Serpentes_TEST_Condition;
 	information	 = 	DIA_Serpentes_TEST_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я готов пройти твое испытание, мастер.";
+	description	 = 	"РЇ РіРѕС‚РѕРІ РїСЂРѕР№С‚Рё С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ, РјР°СЃС‚РµСЂ.";
 };
 func int DIA_Serpentes_TEST_Condition ()
 {	
@@ -141,12 +141,12 @@ func int DIA_Serpentes_TEST_Condition ()
 };
 func void DIA_Serpentes_TEST_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_TEST_15_00"); //Я готов пройти твое испытание, мастер.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_01"); //Итак, ты хочешь подвергнуться этому испытанию. Только самые мужественные послушники требуют этого. Но мужество - это не все, что тебе понадобится.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_02"); //Достаточно ли ты умен, чтобы пройти это испытание? А сил у тебя хватит встретить все опасности, что поджидают тебя?
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_03"); //Если нет, ты заплатишь за это своей жизнью.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_04"); //А теперь слушай: В Месте Камней, найди того, кто никогда не был рожден - найди того, кто когда-то был вызван.
-	AI_Output (self, other, "DIA_Serpentes_TEST_10_05"); //Одолей того, кого нельзя одолеть - померься силами с живой скалой, сразись с бессмертным камнем - и уничтожь его.
+	AI_Output (other, self, "DIA_Serpentes_TEST_15_00"); //РЇ РіРѕС‚РѕРІ РїСЂРѕР№С‚Рё С‚РІРѕРµ РёСЃРїС‹С‚Р°РЅРёРµ, РјР°СЃС‚РµСЂ.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_01"); //РС‚Р°Рє, С‚С‹ С…РѕС‡РµС€СЊ РїРѕРґРІРµСЂРіРЅСѓС‚СЊСЃСЏ СЌС‚РѕРјСѓ РёСЃРїС‹С‚Р°РЅРёСЋ. РўРѕР»СЊРєРѕ СЃР°РјС‹Рµ РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Рµ РїРѕСЃР»СѓС€РЅРёРєРё С‚СЂРµР±СѓСЋС‚ СЌС‚РѕРіРѕ. РќРѕ РјСѓР¶РµСЃС‚РІРѕ - СЌС‚Рѕ РЅРµ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_02"); //Р”РѕСЃС‚Р°С‚РѕС‡РЅРѕ Р»Рё С‚С‹ СѓРјРµРЅ, С‡С‚РѕР±С‹ РїСЂРѕР№С‚Рё СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ? Рђ СЃРёР» Сѓ С‚РµР±СЏ С…РІР°С‚РёС‚ РІСЃС‚СЂРµС‚РёС‚СЊ РІСЃРµ РѕРїР°СЃРЅРѕСЃС‚Рё, С‡С‚Рѕ РїРѕРґР¶РёРґР°СЋС‚ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_03"); //Р•СЃР»Рё РЅРµС‚, С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ Р·Р° СЌС‚Рѕ СЃРІРѕРµР№ Р¶РёР·РЅСЊСЋ.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_04"); //Рђ С‚РµРїРµСЂСЊ СЃР»СѓС€Р°Р№: Р’ РњРµСЃС‚Рµ РљР°РјРЅРµР№, РЅР°Р№РґРё С‚РѕРіРѕ, РєС‚Рѕ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р» СЂРѕР¶РґРµРЅ - РЅР°Р№РґРё С‚РѕРіРѕ, РєС‚Рѕ РєРѕРіРґР°-С‚Рѕ Р±С‹Р» РІС‹Р·РІР°РЅ.
+	AI_Output (self, other, "DIA_Serpentes_TEST_10_05"); //РћРґРѕР»РµР№ С‚РѕРіРѕ, РєРѕРіРѕ РЅРµР»СЊР·СЏ РѕРґРѕР»РµС‚СЊ - РїРѕРјРµСЂСЊСЃСЏ СЃРёР»Р°РјРё СЃ Р¶РёРІРѕР№ СЃРєР°Р»РѕР№, СЃСЂР°Р·РёСЃСЊ СЃ Р±РµСЃСЃРјРµСЂС‚РЅС‹Рј РєР°РјРЅРµРј - Рё СѓРЅРёС‡С‚РѕР¶СЊ РµРіРѕ.
 	
 	//----- Der Magische Golem ----
 	Wld_InsertNpc 	(MagicGolem, 			"FP_MAGICGOLEM");
@@ -156,7 +156,7 @@ func void DIA_Serpentes_TEST_Info ()
 	MIS_GOLEM = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_Golem,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Golem,LOG_RUNNING);
-	B_LogEntry (TOPIC_Golem,"Серпентес дал мне испытание. Он хочет, чтобы я 'нашел ему того, кто когда-то был вызван', живую скалу, и победил его.");
+	B_LogEntry (TOPIC_Golem,"РЎРµСЂРїРµРЅС‚РµСЃ РґР°Р» РјРЅРµ РёСЃРїС‹С‚Р°РЅРёРµ. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ 'РЅР°С€РµР» РµРјСѓ С‚РѕРіРѕ, РєС‚Рѕ РєРѕРіРґР°-С‚Рѕ Р±С‹Р» РІС‹Р·РІР°РЅ', Р¶РёРІСѓСЋ СЃРєР°Р»Сѓ, Рё РїРѕР±РµРґРёР» РµРіРѕ.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info NOIDEA
@@ -168,7 +168,7 @@ instance DIA_Serpentes_NOIDEA		(C_INFO)
 	condition	 = 	DIA_Serpentes_NOIDEA_Condition;
 	information	 = 	DIA_Serpentes_NOIDEA_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Что за создание это должно быть?";
+	description	 = 	"Р§С‚Рѕ Р·Р° СЃРѕР·РґР°РЅРёРµ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ?";
 };
 func int DIA_Serpentes_NOIDEA_Condition ()
 {	
@@ -180,9 +180,9 @@ func int DIA_Serpentes_NOIDEA_Condition ()
 };
 func void DIA_Serpentes_NOIDEA_Info ()
 {
-	AI_Output (other, self, "DIA_Serpentes_NOIDEA_15_00"); //Живой скалой?.. Что за создание это должно быть?
-	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_01"); //Я сказал тебе все. (с издевкой) Или это испытание кажется тебе слишком сложным?
-	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_02"); //Теперь ты узнаешь, что означает пройти Испытание Огнем - я больше не буду отвечать на твои вопросы.
+	AI_Output (other, self, "DIA_Serpentes_NOIDEA_15_00"); //Р–РёРІРѕР№ СЃРєР°Р»РѕР№?.. Р§С‚Рѕ Р·Р° СЃРѕР·РґР°РЅРёРµ СЌС‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ?
+	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_01"); //РЇ СЃРєР°Р·Р°Р» С‚РµР±Рµ РІСЃРµ. (СЃ РёР·РґРµРІРєРѕР№) РР»Рё СЌС‚Рѕ РёСЃРїС‹С‚Р°РЅРёРµ РєР°Р¶РµС‚СЃСЏ С‚РµР±Рµ СЃР»РёС€РєРѕРј СЃР»РѕР¶РЅС‹Рј?
+	AI_Output (self, other, "DIA_Serpentes_NOIDEA_10_02"); //РўРµРїРµСЂСЊ С‚С‹ СѓР·РЅР°РµС€СЊ, С‡С‚Рѕ РѕР·РЅР°С‡Р°РµС‚ РїСЂРѕР№С‚Рё РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј - СЏ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓ РѕС‚РІРµС‡Р°С‚СЊ РЅР° С‚РІРѕРё РІРѕРїСЂРѕСЃС‹.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ func int DIA_Serpentes_NOHELP_Condition ()
 };
 func void DIA_Serpentes_NOHELP_Info ()
 {
-	AI_Output (self, other, "DIA_Serpentes_NOHELP_10_00"); //(с презрением) Иди и выполняй свою задачу, послушник!
+	AI_Output (self, other, "DIA_Serpentes_NOHELP_10_00"); //(СЃ РїСЂРµР·СЂРµРЅРёРµРј) РРґРё Рё РІС‹РїРѕР»РЅСЏР№ СЃРІРѕСЋ Р·Р°РґР°С‡Сѓ, РїРѕСЃР»СѓС€РЅРёРє!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -225,7 +225,7 @@ instance DIA_Serpentes_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Serpentes_SUCCESS_Condition;
 	information	 = 	DIA_Serpentes_SUCCESS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я победил голема.";
+	description	 = 	"РЇ РїРѕР±РµРґРёР» РіРѕР»РµРјР°.";
 };
 func int DIA_Serpentes_SUCCESS_Condition ()
 {	
@@ -241,24 +241,24 @@ func void DIA_Serpentes_SUCCESS_Info ()
 	var C_NPC garwig;
 	garwig = Hlp_GetNpc (NOV_608_Garwig);
 	
-	AI_Output (other, self, "DIA_Serpentes_SUCCESS_15_00"); //Я победил голема.
-	AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_01"); //Что? Ты действительно сделал это? Но без Молота Инноса ты никогда бы не смог уничтожить этого голема.
+	AI_Output (other, self, "DIA_Serpentes_SUCCESS_15_00"); //РЇ РїРѕР±РµРґРёР» РіРѕР»РµРјР°.
+	AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_01"); //Р§С‚Рѕ? РўС‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃРґРµР»Р°Р» СЌС‚Рѕ? РќРѕ Р±РµР· РњРѕР»РѕС‚Р° РРЅРЅРѕСЃР° С‚С‹ РЅРёРєРѕРіРґР° Р±С‹ РЅРµ СЃРјРѕРі СѓРЅРёС‡С‚РѕР¶РёС‚СЊ СЌС‚РѕРіРѕ РіРѕР»РµРјР°.
 	
 	if (Npc_IsDead (garwig))
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_02"); //(с триумфом) Но ты выдал себя! Это ты убил Гарвига!
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_03"); //ТЫ ПОНЕСЕШЬ НАКАЗАНИЕ ЗА УБИЙСТВО СЛУГИ ИННОСА!!!
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_02"); //(СЃ С‚СЂРёСѓРјС„РѕРј) РќРѕ С‚С‹ РІС‹РґР°Р» СЃРµР±СЏ! Р­С‚Рѕ С‚С‹ СѓР±РёР» Р“Р°СЂРІРёРіР°!
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_03"); //РўР« РџРћРќР•РЎР•РЁР¬ РќРђРљРђР—РђРќРР• Р—Рђ РЈР‘РР™РЎРўР’Рћ РЎР›РЈР“Р РРќРќРћРЎРђ!!!
 		
 		AI_StopProcessInfos (self);
 		B_Attack  (self, other, AR_HumanMurderedHuman, 0);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_04"); //(с сожалением) Тем не менее, я должен признать, что ты выполнил задание, которое я дал тебе.
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_04"); //(СЃ СЃРѕР¶Р°Р»РµРЅРёРµРј) РўРµРј РЅРµ РјРµРЅРµРµ, СЏ РґРѕР»Р¶РµРЅ РїСЂРёР·РЅР°С‚СЊ, С‡С‚Рѕ С‚С‹ РІС‹РїРѕР»РЅРёР» Р·Р°РґР°РЅРёРµ, РєРѕС‚РѕСЂРѕРµ СЏ РґР°Р» С‚РµР±Рµ.
 	};
 	if (Npc_HasItems (other, Holy_Hammer_Mis) >= 1)
 	{
-		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_05"); //И будет лучше, если я заберу этот молот.
+		AI_Output (self, other, "DIA_Serpentes_SUCCESS_10_05"); //Р Р±СѓРґРµС‚ Р»СѓС‡С€Рµ, РµСЃР»Рё СЏ Р·Р°Р±РµСЂСѓ СЌС‚РѕС‚ РјРѕР»РѕС‚.
 		
 		Npc_RemoveInvItems (other, Holy_Hammer_MIS,1); 
 		Wld_InsertItem (Holy_Hammer_MIS,"FP_HAMMER");
@@ -280,7 +280,7 @@ INSTANCE DIA_Serpentes_PERM   (C_INFO)
 	information = DIA_Serpentes_PERM_Info;
 	permanent   = TRUE;
 
-	description = "Ты хочешь что-то еще сказать мне?";
+	description = "РўС‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-С‚Рѕ РµС‰Рµ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?";
 };
 FUNC INT DIA_Serpentes_PERM_Condition()
 {	
@@ -292,15 +292,15 @@ FUNC INT DIA_Serpentes_PERM_Condition()
 };
 FUNC VOID DIA_Serpentes_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Serpentes_PERM_15_00"); //Ты хочешь что-то еще сказать мне?
+	AI_Output (other, self, "DIA_Serpentes_PERM_15_00"); //РўС‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-С‚Рѕ РµС‰Рµ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Serpentes_PERM_10_01"); //Нет. Пока нет, брат.
+			AI_Output (self, other, "DIA_Serpentes_PERM_10_01"); //РќРµС‚. РџРѕРєР° РЅРµС‚, Р±СЂР°С‚.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Serpentes_PERM_10_02"); //Свободен. Ты знаешь, что тебе нужно делать.
+			AI_Output (self, other, "DIA_Serpentes_PERM_10_02"); //РЎРІРѕР±РѕРґРµРЅ. РўС‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РґРµР»Р°С‚СЊ.
 		};
 	AI_StopProcessInfos (self);
 };
@@ -392,63 +392,63 @@ func int DIA_Serpentes_MinenAnteile_Condition ()
 
 func void DIA_Serpentes_MinenAnteile_Info ()
 {
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_00"); //Не так быстро. У меня есть еще одно задание для тебя.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_00"); //РќРµ С‚Р°Рє Р±С‹СЃС‚СЂРѕ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РµС‰Рµ РѕРґРЅРѕ Р·Р°РґР°РЅРёРµ РґР»СЏ С‚РµР±СЏ.
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_15_01"); //(вздыхает) Что еще?
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_02"); //Теперь, когда ты принадлежишь к Братству Огня, ты также должен выполнять обязанности, сопутствующие твоему положению.
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_03"); //Церковь занимается не только вопросами магии - она также, как ты знаешь, является последней инстанцией в вопросе осуществления правосудия.
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_04"); //Последний случай, с которым нам пришлось иметь дело, открывает бездонную пропасть, и с этим нужно разобраться раз и навсегда.
+		AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_15_01"); //(РІР·РґС‹С…Р°РµС‚) Р§С‚Рѕ РµС‰Рµ?
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_02"); //РўРµРїРµСЂСЊ, РєРѕРіРґР° С‚С‹ РїСЂРёРЅР°РґР»РµР¶РёС€СЊ Рє Р‘СЂР°С‚СЃС‚РІСѓ РћРіРЅСЏ, С‚С‹ С‚Р°РєР¶Рµ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅСЏС‚СЊ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё, СЃРѕРїСѓС‚СЃС‚РІСѓСЋС‰РёРµ С‚РІРѕРµРјСѓ РїРѕР»РѕР¶РµРЅРёСЋ.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_03"); //Р¦РµСЂРєРѕРІСЊ Р·Р°РЅРёРјР°РµС‚СЃСЏ РЅРµ С‚РѕР»СЊРєРѕ РІРѕРїСЂРѕСЃР°РјРё РјР°РіРёРё - РѕРЅР° С‚Р°РєР¶Рµ, РєР°Рє С‚С‹ Р·РЅР°РµС€СЊ, СЏРІР»СЏРµС‚СЃСЏ РїРѕСЃР»РµРґРЅРµР№ РёРЅСЃС‚Р°РЅС†РёРµР№ РІ РІРѕРїСЂРѕСЃРµ РѕСЃСѓС‰РµСЃС‚РІР»РµРЅРёСЏ РїСЂР°РІРѕСЃСѓРґРёСЏ.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_04"); //РџРѕСЃР»РµРґРЅРёР№ СЃР»СѓС‡Р°Р№, СЃ РєРѕС‚РѕСЂС‹Рј РЅР°Рј РїСЂРёС€Р»РѕСЃСЊ РёРјРµС‚СЊ РґРµР»Рѕ, РѕС‚РєСЂС‹РІР°РµС‚ Р±РµР·РґРѕРЅРЅСѓСЋ РїСЂРѕРїР°СЃС‚СЊ, Рё СЃ СЌС‚РёРј РЅСѓР¶РЅРѕ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЂР°Р· Рё РЅР°РІСЃРµРіРґР°.
 		
 		Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "У меня и так уже много заданий. Найди кого-нибудь еще.", DIA_Serpentes_MinenAnteile_nein );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Что ты там придумал?", DIA_Serpentes_MinenAnteile_was );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Разве это не работа ополчения?", DIA_Serpentes_MinenAnteile_miliz );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "РЈ РјРµРЅСЏ Рё С‚Р°Рє СѓР¶Рµ РјРЅРѕРіРѕ Р·Р°РґР°РЅРёР№. РќР°Р№РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.", DIA_Serpentes_MinenAnteile_nein );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Р§С‚Рѕ С‚С‹ С‚Р°Рј РїСЂРёРґСѓРјР°Р»?", DIA_Serpentes_MinenAnteile_was );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Р Р°Р·РІРµ СЌС‚Рѕ РЅРµ СЂР°Р±РѕС‚Р° РѕРїРѕР»С‡РµРЅРёСЏ?", DIA_Serpentes_MinenAnteile_miliz );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_05"); //Наемник вроде тебя мог бы очень помочь нам в этом вопросе.
+		AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_10_05"); //РќР°РµРјРЅРёРє РІСЂРѕРґРµ С‚РµР±СЏ РјРѕРі Р±С‹ РѕС‡РµРЅСЊ РїРѕРјРѕС‡СЊ РЅР°Рј РІ СЌС‚РѕРј РІРѕРїСЂРѕСЃРµ.
 		
 		Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "У меня и так уже много заданий. Найди кого-нибудь еще.", DIA_Serpentes_MinenAnteile_nein );
-		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Кого я должен убить?", DIA_Serpentes_MinenAnteile_KillSLD );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "РЈ РјРµРЅСЏ Рё С‚Р°Рє СѓР¶Рµ РјРЅРѕРіРѕ Р·Р°РґР°РЅРёР№. РќР°Р№РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.", DIA_Serpentes_MinenAnteile_nein );
+		Info_AddChoice	(DIA_Serpentes_MinenAnteile, "РљРѕРіРѕ СЏ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ?", DIA_Serpentes_MinenAnteile_KillSLD );
 	};
 };
 func void DIA_Serpentes_MinenAnteile_miliz ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_miliz_15_00"); //Разве это не работа ополчения?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_miliz_10_01"); //Ополчение отвечает только за город. Это дело может иметь далеко идущие последствия.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_miliz_15_00"); //Р Р°Р·РІРµ СЌС‚Рѕ РЅРµ СЂР°Р±РѕС‚Р° РѕРїРѕР»С‡РµРЅРёСЏ?
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_miliz_10_01"); //РћРїРѕР»С‡РµРЅРёРµ РѕС‚РІРµС‡Р°РµС‚ С‚РѕР»СЊРєРѕ Р·Р° РіРѕСЂРѕРґ. Р­С‚Рѕ РґРµР»Рѕ РјРѕР¶РµС‚ РёРјРµС‚СЊ РґР°Р»РµРєРѕ РёРґСѓС‰РёРµ РїРѕСЃР»РµРґСЃС‚РІРёСЏ.
 
 };
 
 func void DIA_Serpentes_MinenAnteile_nein ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_nein_15_00"); //У меня и так уже много заданий. Найди кого-нибудь еще.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_01"); //(сердито) Это возмутительно. Тебе никогда не достичь высших кругов магии, если ты не желаешь выполнять работу для Братства.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_02"); //Я объявляю тебе выговор. Надеюсь, больше этого не повторится - иначе ты плохо кончишь.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_nein_15_00"); //РЈ РјРµРЅСЏ Рё С‚Р°Рє СѓР¶Рµ РјРЅРѕРіРѕ Р·Р°РґР°РЅРёР№. РќР°Р№РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_01"); //(СЃРµСЂРґРёС‚Рѕ) Р­С‚Рѕ РІРѕР·РјСѓС‚РёС‚РµР»СЊРЅРѕ. РўРµР±Рµ РЅРёРєРѕРіРґР° РЅРµ РґРѕСЃС‚РёС‡СЊ РІС‹СЃС€РёС… РєСЂСѓРіРѕРІ РјР°РіРёРё, РµСЃР»Рё С‚С‹ РЅРµ Р¶РµР»Р°РµС€СЊ РІС‹РїРѕР»РЅСЏС‚СЊ СЂР°Р±РѕС‚Сѓ РґР»СЏ Р‘СЂР°С‚СЃС‚РІР°.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_nein_10_02"); //РЇ РѕР±СЉСЏРІР»СЏСЋ С‚РµР±Рµ РІС‹РіРѕРІРѕСЂ. РќР°РґРµСЋСЃСЊ, Р±РѕР»СЊС€Рµ СЌС‚РѕРіРѕ РЅРµ РїРѕРІС‚РѕСЂРёС‚СЃСЏ - РёРЅР°С‡Рµ С‚С‹ РїР»РѕС…Рѕ РєРѕРЅС‡РёС€СЊ.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Serpentes_MinenAnteile_was ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_15_00"); //Ну что там еще?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_01"); //Кто-то в городе продает фальшивые акции шахт бывшей исправительной колонии.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_02"); //Эти бумаги абсолютно бесполезны и не имеют особого значения. Но все же, они могут посеять волнения и недовольства среди людей, что мы не можем позволить себе в текущей ситуации.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_03"); //Этот мошенник предположительно имеет связи со всеми наиболее влиятельными торговцами в городе и сельской местности, и ему уже удалось продать свои поддельные акции некоторым из них.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_04"); //Найди этого мошенника и приведи его сюда. В такие тяжелые времена мы не потерпим жуликов и грабителей.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_05"); //Это дело должно стать показательным, чтобы другим было неповадно.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_15_00"); //РќСѓ С‡С‚Рѕ С‚Р°Рј РµС‰Рµ?
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_01"); //РљС‚Рѕ-С‚Рѕ РІ РіРѕСЂРѕРґРµ РїСЂРѕРґР°РµС‚ С„Р°Р»СЊС€РёРІС‹Рµ Р°РєС†РёРё С€Р°С…С‚ Р±С‹РІС€РµР№ РёСЃРїСЂР°РІРёС‚РµР»СЊРЅРѕР№ РєРѕР»РѕРЅРёРё.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_02"); //Р­С‚Рё Р±СѓРјР°РіРё Р°Р±СЃРѕР»СЋС‚РЅРѕ Р±РµСЃРїРѕР»РµР·РЅС‹ Рё РЅРµ РёРјРµСЋС‚ РѕСЃРѕР±РѕРіРѕ Р·РЅР°С‡РµРЅРёСЏ. РќРѕ РІСЃРµ Р¶Рµ, РѕРЅРё РјРѕРіСѓС‚ РїРѕСЃРµСЏС‚СЊ РІРѕР»РЅРµРЅРёСЏ Рё РЅРµРґРѕРІРѕР»СЊСЃС‚РІР° СЃСЂРµРґРё Р»СЋРґРµР№, С‡С‚Рѕ РјС‹ РЅРµ РјРѕР¶РµРј РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ РІ С‚РµРєСѓС‰РµР№ СЃРёС‚СѓР°С†РёРё.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_03"); //Р­С‚РѕС‚ РјРѕС€РµРЅРЅРёРє РїСЂРµРґРїРѕР»РѕР¶РёС‚РµР»СЊРЅРѕ РёРјРµРµС‚ СЃРІСЏР·Рё СЃРѕ РІСЃРµРјРё РЅР°РёР±РѕР»РµРµ РІР»РёСЏС‚РµР»СЊРЅС‹РјРё С‚РѕСЂРіРѕРІС†Р°РјРё РІ РіРѕСЂРѕРґРµ Рё СЃРµР»СЊСЃРєРѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё, Рё РµРјСѓ СѓР¶Рµ СѓРґР°Р»РѕСЃСЊ РїСЂРѕРґР°С‚СЊ СЃРІРѕРё РїРѕРґРґРµР»СЊРЅС‹Рµ Р°РєС†РёРё РЅРµРєРѕС‚РѕСЂС‹Рј РёР· РЅРёС….
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_04"); //РќР°Р№РґРё СЌС‚РѕРіРѕ РјРѕС€РµРЅРЅРёРєР° Рё РїСЂРёРІРµРґРё РµРіРѕ СЃСЋРґР°. Р’ С‚Р°РєРёРµ С‚СЏР¶РµР»С‹Рµ РІСЂРµРјРµРЅР° РјС‹ РЅРµ РїРѕС‚РµСЂРїРёРј Р¶СѓР»РёРєРѕРІ Рё РіСЂР°Р±РёС‚РµР»РµР№.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_10_05"); //Р­С‚Рѕ РґРµР»Рѕ РґРѕР»Р¶РЅРѕ СЃС‚Р°С‚СЊ РїРѕРєР°Р·Р°С‚РµР»СЊРЅС‹Рј, С‡С‚РѕР±С‹ РґСЂСѓРіРёРј Р±С‹Р»Рѕ РЅРµРїРѕРІР°РґРЅРѕ.
 	
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Я попробую прояснить этот вопрос.", DIA_Serpentes_MinenAnteile_was_ja );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "РЇ РїРѕРїСЂРѕР±СѓСЋ РїСЂРѕСЏСЃРЅРёС‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ.", DIA_Serpentes_MinenAnteile_was_ja );
 
 };
 func void DIA_Serpentes_MinenAnteile_was_ja ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_00"); //Я попробую прояснить этот вопрос.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_01"); //Еще одно. Когда ты будешь разговаривать с этими торговцами, важно, чтобы они не поняли, что ты ищешь именно эти акции.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_02"); //Я думаю, они захотят продать их, но наверняка откажутся иметь с тобой дело, если поймут, что ты действуешь по поручению Церкви, понимаешь?
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_03"); //Да.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_04"); //Тогда за работу. Я желаю тебе успеха, брат.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_00"); //РЇ РїРѕРїСЂРѕР±СѓСЋ РїСЂРѕСЏСЃРЅРёС‚СЊ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_01"); //Р•С‰Рµ РѕРґРЅРѕ. РљРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃ СЌС‚РёРјРё С‚РѕСЂРіРѕРІС†Р°РјРё, РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ РїРѕРЅСЏР»Рё, С‡С‚Рѕ С‚С‹ РёС‰РµС€СЊ РёРјРµРЅРЅРѕ СЌС‚Рё Р°РєС†РёРё.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_02"); //РЇ РґСѓРјР°СЋ, РѕРЅРё Р·Р°С…РѕС‚СЏС‚ РїСЂРѕРґР°С‚СЊ РёС…, РЅРѕ РЅР°РІРµСЂРЅСЏРєР° РѕС‚РєР°Р¶СѓС‚СЃСЏ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РґРµР»Рѕ, РµСЃР»Рё РїРѕР№РјСѓС‚, С‡С‚Рѕ С‚С‹ РґРµР№СЃС‚РІСѓРµС€СЊ РїРѕ РїРѕСЂСѓС‡РµРЅРёСЋ Р¦РµСЂРєРІРё, РїРѕРЅРёРјР°РµС€СЊ?
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_ja_15_03"); //Р”Р°.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_ja_10_04"); //РўРѕРіРґР° Р·Р° СЂР°Р±РѕС‚Сѓ. РЇ Р¶РµР»Р°СЋ С‚РµР±Рµ СѓСЃРїРµС…Р°, Р±СЂР°С‚.
 	Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
 	
 	MIS_Serpentes_MinenAnteil_KDF = LOG_RUNNING;	
@@ -502,32 +502,32 @@ func void DIA_Serpentes_MinenAnteile_was_ja ()
 
 	Log_CreateTopic (TOPIC_MinenAnteile, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MinenAnteile, LOG_RUNNING);
-	B_LogEntry (TOPIC_MinenAnteile,"Кто-то продает фальшивые акции шахты и обогащается таким незаконным способом. Я должен найти того, кто продает эти акции торговцам. Серпентес хочет заполучить все эти поддельные документы."); 
+	B_LogEntry (TOPIC_MinenAnteile,"РљС‚Рѕ-С‚Рѕ РїСЂРѕРґР°РµС‚ С„Р°Р»СЊС€РёРІС‹Рµ Р°РєС†РёРё С€Р°С…С‚С‹ Рё РѕР±РѕРіР°С‰Р°РµС‚СЃСЏ С‚Р°РєРёРј РЅРµР·Р°РєРѕРЅРЅС‹Рј СЃРїРѕСЃРѕР±РѕРј. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё С‚РѕРіРѕ, РєС‚Рѕ РїСЂРѕРґР°РµС‚ СЌС‚Рё Р°РєС†РёРё С‚РѕСЂРіРѕРІС†Р°Рј. РЎРµСЂРїРµРЅС‚РµСЃ С…РѕС‡РµС‚ Р·Р°РїРѕР»СѓС‡РёС‚СЊ РІСЃРµ СЌС‚Рё РїРѕРґРґРµР»СЊРЅС‹Рµ РґРѕРєСѓРјРµРЅС‚С‹."); 
 };
 
 func void DIA_Serpentes_MinenAnteile_KillSLD ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_Kill_15_00"); //Кого я должен убить?
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_01"); //О, Иннос. Никого, конечно же. Это дело требует изящности, ты, грубый мужлан.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_02"); //Саландрил, алхимик из верхнего квартала, виновен в серьезном преступлении и его нужно наказать за это.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_03"); //Однако он отказывается прибыть в монастырь для суда. Приведи его сюда.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_04"); //Как ты сделаешь это, меня не волнует. Но ты, конечно же, будешь вознагражден.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_Kill_15_00"); //РљРѕРіРѕ СЏ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ?
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_01"); //Рћ, РРЅРЅРѕСЃ. РќРёРєРѕРіРѕ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ. Р­С‚Рѕ РґРµР»Рѕ С‚СЂРµР±СѓРµС‚ РёР·СЏС‰РЅРѕСЃС‚Рё, С‚С‹, РіСЂСѓР±С‹Р№ РјСѓР¶Р»Р°РЅ.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_02"); //РЎР°Р»Р°РЅРґСЂРёР», Р°Р»С…РёРјРёРє РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р°, РІРёРЅРѕРІРµРЅ РІ СЃРµСЂСЊРµР·РЅРѕРј РїСЂРµСЃС‚СѓРїР»РµРЅРёРё Рё РµРіРѕ РЅСѓР¶РЅРѕ РЅР°РєР°Р·Р°С‚СЊ Р·Р° СЌС‚Рѕ.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_03"); //РћРґРЅР°РєРѕ РѕРЅ РѕС‚РєР°Р·С‹РІР°РµС‚СЃСЏ РїСЂРёР±С‹С‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РґР»СЏ СЃСѓРґР°. РџСЂРёРІРµРґРё РµРіРѕ СЃСЋРґР°.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_Kill_10_04"); //РљР°Рє С‚С‹ СЃРґРµР»Р°РµС€СЊ СЌС‚Рѕ, РјРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚. РќРѕ С‚С‹, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, Р±СѓРґРµС€СЊ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅ.
 	
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Разве это не работа ополчения?", DIA_Serpentes_MinenAnteile_miliz );
-	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Нет проблем. Я сделаю это.", DIA_Serpentes_MinenAnteile_was_jaSLD );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "Р Р°Р·РІРµ СЌС‚Рѕ РЅРµ СЂР°Р±РѕС‚Р° РѕРїРѕР»С‡РµРЅРёСЏ?", DIA_Serpentes_MinenAnteile_miliz );
+	Info_AddChoice	(DIA_Serpentes_MinenAnteile, "РќРµС‚ РїСЂРѕР±Р»РµРј. РЇ СЃРґРµР»Р°СЋ СЌС‚Рѕ.", DIA_Serpentes_MinenAnteile_was_jaSLD );
 };
 
 var int MIS_Serpentes_BringSalandril_SLD;
 func void DIA_Serpentes_MinenAnteile_was_jaSLD ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_jaSLD_15_00"); //Нет проблем. Я сделаю это.
-	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_jaSLD_10_01"); //Хорошо. Мы ожидаем услышать от тебя новости через несколько дней.
+	AI_Output			(other, self, "DIA_Serpentes_MinenAnteile_was_jaSLD_15_00"); //РќРµС‚ РїСЂРѕР±Р»РµРј. РЇ СЃРґРµР»Р°СЋ СЌС‚Рѕ.
+	AI_Output			(self, other, "DIA_Serpentes_MinenAnteile_was_jaSLD_10_01"); //РҐРѕСЂРѕС€Рѕ. РњС‹ РѕР¶РёРґР°РµРј СѓСЃР»С‹С€Р°С‚СЊ РѕС‚ С‚РµР±СЏ РЅРѕРІРѕСЃС‚Рё С‡РµСЂРµР· РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№.
 	MIS_Serpentes_BringSalandril_SLD = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Serpentes_MinenAnteile);
 
 	Log_CreateTopic (TOPIC_MinenAnteile, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MinenAnteile, LOG_RUNNING);
-	B_LogEntry (TOPIC_MinenAnteile,"Я должен доставить Саландрила, алхимика из верхней части Хориниса, в монастырь для суда. Мне не особенно интересует, что он там натворил, пока мне хорошо платят за это."); 
+	B_LogEntry (TOPIC_MinenAnteile,"РЇ РґРѕР»Р¶РµРЅ РґРѕСЃС‚Р°РІРёС‚СЊ РЎР°Р»Р°РЅРґСЂРёР»Р°, Р°Р»С…РёРјРёРєР° РёР· РІРµСЂС…РЅРµР№ С‡Р°СЃС‚Рё РҐРѕСЂРёРЅРёСЃР°, РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РґР»СЏ СЃСѓРґР°. РњРЅРµ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РёРЅС‚РµСЂРµСЃСѓРµС‚, С‡С‚Рѕ РѕРЅ С‚Р°Рј РЅР°С‚РІРѕСЂРёР», РїРѕРєР° РјРЅРµ С…РѕСЂРѕС€Рѕ РїР»Р°С‚СЏС‚ Р·Р° СЌС‚Рѕ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -541,7 +541,7 @@ instance DIA_Serpentes_MinenAnteileBringen		(C_INFO)
 	information	 = 	DIA_Serpentes_MinenAnteileBringen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет поддельных акций ...";
+	description	 = 	"РќР°СЃС‡РµС‚ РїРѕРґРґРµР»СЊРЅС‹С… Р°РєС†РёР№ ...";
 };
 
 func int DIA_Serpentes_MinenAnteileBringen_Condition ()
@@ -567,14 +567,14 @@ func void DIA_Serpentes_MinenAnteileBringen_Info ()
 
 		 if (SerpentesMinenAnteilCount == 1)
 			{
-				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_00"); //Я смог найти акции шахт.
+				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_00"); //РЇ СЃРјРѕРі РЅР°Р№С‚Рё Р°РєС†РёРё С€Р°С…С‚.
 				B_GivePlayerXP (XP_BringSerpentesMinenAnteil);
 				B_GiveInvItems (other, self, ItWr_MinenAnteil_Mis,1);
 				SerpentesMinenAnteilCounter = SerpentesMinenAnteilCounter + 1;
 			}
 			else
 			{
-				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_01"); //Я смог найти несколько акций шахт.
+				AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_01"); //РЇ СЃРјРѕРі РЅР°Р№С‚Рё РЅРµСЃРєРѕР»СЊРєРѕ Р°РєС†РёР№ С€Р°С…С‚.
 	
 				B_GiveInvItems (other, self, ItWr_MinenAnteil_Mis,  SerpentesMinenAnteilCount);
 	
@@ -594,20 +594,20 @@ func void DIA_Serpentes_MinenAnteileBringen_Info ()
 
 		if (SerpentesMinenAnteilCounter < SalandrilVerteilteMinenAnteil)
 		{
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_02"); //Очень хорошо. Ты должен изъять из обращения все акции. Это отрава для наших людей. Принеси их все мне.
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_03"); //Вот. Это компенсирует твои расходы.
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_02"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РўС‹ РґРѕР»Р¶РµРЅ РёР·СЉСЏС‚СЊ РёР· РѕР±СЂР°С‰РµРЅРёСЏ РІСЃРµ Р°РєС†РёРё. Р­С‚Рѕ РѕС‚СЂР°РІР° РґР»СЏ РЅР°С€РёС… Р»СЋРґРµР№. РџСЂРёРЅРµСЃРё РёС… РІСЃРµ РјРЅРµ.
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_03"); //Р’РѕС‚. Р­С‚Рѕ РєРѕРјРїРµРЅСЃРёСЂСѓРµС‚ С‚РІРѕРё СЂР°СЃС…РѕРґС‹.
 		}
 		else if (SerpentesMinenAnteilCounter == SalandrilVerteilteMinenAnteil) //Joly:kein Exploid
 		{
-			AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_04"); //Это все акции, как мне кажется.
-			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_05"); //Отлично. Ты заслужил награду.
-			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_06"); //Возьми этот защитный амулет. Он поможет тебе пройти по пути, который еще только ожидает тебя.
+			AI_Output		(other, self, "DIA_Serpentes_MinenAnteileBringen_15_04"); //Р­С‚Рѕ РІСЃРµ Р°РєС†РёРё, РєР°Рє РјРЅРµ РєР°Р¶РµС‚СЃСЏ.
+			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_05"); //РћС‚Р»РёС‡РЅРѕ. РўС‹ Р·Р°СЃР»СѓР¶РёР» РЅР°РіСЂР°РґСѓ.
+			AI_Output		(self, other, "DIA_Serpentes_MinenAnteileBringen_10_06"); //Р’РѕР·СЊРјРё СЌС‚РѕС‚ Р·Р°С‰РёС‚РЅС‹Р№ Р°РјСѓР»РµС‚. РћРЅ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РїСЂРѕР№С‚Рё РїРѕ РїСѓС‚Рё, РєРѕС‚РѕСЂС‹Р№ РµС‰Рµ С‚РѕР»СЊРєРѕ РѕР¶РёРґР°РµС‚ С‚РµР±СЏ.
 			CreateInvItems (self, ItAm_Prot_Mage_01, 1); 
 			B_GiveInvItems (self, other, ItAm_Prot_Mage_01, 1);
 		}
 		else	//Joly: zur Sicherheit!
 		{
-			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_07"); //Это действительно последняя акция, да?
+			AI_Output			(self, other, "DIA_Serpentes_MinenAnteileBringen_10_07"); //Р­С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕСЃР»РµРґРЅСЏСЏ Р°РєС†РёСЏ, РґР°?
 		};
 		
 		SerpentesMinenAnteilGeld	= (SerpentesMinenAnteilCount * SerpentesMinenAnteilOffer);
@@ -626,7 +626,7 @@ instance DIA_Serpentes_GOTSalandril		(C_INFO)
 	condition	 = 	DIA_Serpentes_GOTSalandril_Condition;
 	information	 = 	DIA_Serpentes_GOTSalandril_Info;
 
-	description	 = 	"Я знаю, кто ввел эти акции в обращение.";
+	description	 = 	"РЇ Р·РЅР°СЋ, РєС‚Рѕ РІРІРµР» СЌС‚Рё Р°РєС†РёРё РІ РѕР±СЂР°С‰РµРЅРёРµ.";
 };
 
 func int DIA_Serpentes_GOTSalandril_Condition ()
@@ -640,8 +640,8 @@ func int DIA_Serpentes_GOTSalandril_Condition ()
 
 func void DIA_Serpentes_GOTSalandril_Info ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_GOTSalandril_15_00"); //Я знаю, кто ввел эти акции в обращение. Это Саландрил, алхимик из верхнего квартала города.
-	AI_Output			(self, other, "DIA_Serpentes_GOTSalandril_10_01"); //Тогда приведи его сюда. Нам есть, что обсудить с ним.
+	AI_Output			(other, self, "DIA_Serpentes_GOTSalandril_15_00"); //РЇ Р·РЅР°СЋ, РєС‚Рѕ РІРІРµР» СЌС‚Рё Р°РєС†РёРё РІ РѕР±СЂР°С‰РµРЅРёРµ. Р­С‚Рѕ РЎР°Р»Р°РЅРґСЂРёР», Р°Р»С…РёРјРёРє РёР· РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р° РіРѕСЂРѕРґР°.
+	AI_Output			(self, other, "DIA_Serpentes_GOTSalandril_10_01"); //РўРѕРіРґР° РїСЂРёРІРµРґРё РµРіРѕ СЃСЋРґР°. РќР°Рј РµСЃС‚СЊ, С‡С‚Рѕ РѕР±СЃСѓРґРёС‚СЊ СЃ РЅРёРј.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -656,7 +656,7 @@ instance DIA_Serpentes_SalandrilHERE		(C_INFO)
 	condition	 = 	DIA_Serpentes_SalandrilHERE_Condition;
 	information	 = 	DIA_Serpentes_SalandrilHERE_Info;
 
-	description	 = 	"Саландрил здесь, в монастыре.";
+	description	 = 	"РЎР°Р»Р°РЅРґСЂРёР» Р·РґРµСЃСЊ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ.";
 };
 
 func int DIA_Serpentes_SalandrilHERE_Condition ()
@@ -681,12 +681,12 @@ func int DIA_Serpentes_SalandrilHERE_Condition ()
 
 func void DIA_Serpentes_SalandrilHERE_Info ()
 {
-	AI_Output		(other, self, "DIA_Serpentes_SalandrilHERE_15_00"); //Саландрил здесь, в монастыре.
-	AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_01"); //Отлично. Мы разберемся с ним позже.
+	AI_Output		(other, self, "DIA_Serpentes_SalandrilHERE_15_00"); //РЎР°Р»Р°РЅРґСЂРёР» Р·РґРµСЃСЊ, РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_01"); //РћС‚Р»РёС‡РЅРѕ. РњС‹ СЂР°Р·Р±РµСЂРµРјСЃСЏ СЃ РЅРёРј РїРѕР·Р¶Рµ.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_02"); //Вот твоя награда. И никому ни слова об этом, понятно?
+		AI_Output		(self, other, "DIA_Serpentes_SalandrilHERE_10_02"); //Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°. Р РЅРёРєРѕРјСѓ РЅРё СЃР»РѕРІР° РѕР± СЌС‚РѕРј, РїРѕРЅСЏС‚РЅРѕ?
 		CreateInvItems (self, ItMi_Gold, 400);									
 		B_GiveInvItems (self, other, ItMi_Gold, 400);					
 	};
@@ -705,7 +705,7 @@ instance DIA_Serpentes_SalandrilDEAD		(C_INFO)
 	condition	 = 	DIA_Serpentes_SalandrilDEAD_Condition;
 	information	 = 	DIA_Serpentes_SalandrilDEAD_Info;
 
-	description	 = 	"Саландрил мертв.";
+	description	 = 	"РЎР°Р»Р°РЅРґСЂРёР» РјРµСЂС‚РІ.";
 };
 
 func int DIA_Serpentes_SalandrilDEAD_Condition ()
@@ -725,8 +725,8 @@ func int DIA_Serpentes_SalandrilDEAD_Condition ()
 
 func void DIA_Serpentes_SalandrilDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Serpentes_SalandrilDEAD_15_00"); //Саландрил мертв.
-	AI_Output			(self, other, "DIA_Serpentes_SalandrilDEAD_10_01"); //Что ж, значит, его дела не остались безнаказанными. Да сжалится Иннос над его бедной душой.
+	AI_Output			(other, self, "DIA_Serpentes_SalandrilDEAD_15_00"); //РЎР°Р»Р°РЅРґСЂРёР» РјРµСЂС‚РІ.
+	AI_Output			(self, other, "DIA_Serpentes_SalandrilDEAD_10_01"); //Р§С‚Рѕ Р¶, Р·РЅР°С‡РёС‚, РµРіРѕ РґРµР»Р° РЅРµ РѕСЃС‚Р°Р»РёСЃСЊ Р±РµР·РЅР°РєР°Р·Р°РЅРЅС‹РјРё. Р”Р° СЃР¶Р°Р»РёС‚СЃСЏ РРЅРЅРѕСЃ РЅР°Рґ РµРіРѕ Р±РµРґРЅРѕР№ РґСѓС€РѕР№.
 	TOPIC_END_MinenAnteile = TRUE;
 	B_GivePlayerXP 	(XP_Ambient);
 };

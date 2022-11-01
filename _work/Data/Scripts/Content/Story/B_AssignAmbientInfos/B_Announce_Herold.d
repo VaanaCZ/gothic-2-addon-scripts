@@ -17,69 +17,69 @@ func void B_Announce_Herold ()
 	CreateInvItem		(self,	Fakescroll);
 	AI_UseItemToState	(self,	Fakescroll,	1);
 
-	AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //Слушайте, жители Хориниса! По прямому указанию достопочтимого лорда Хагена, сегодня вступает в силу следующий декрет.
+	AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //РЎР»СѓС€Р°Р№С‚Рµ, Р¶РёС‚РµР»Рё РҐРѕСЂРёРЅРёСЃР°! РџРѕ РїСЂСЏРјРѕРјСѓ СѓРєР°Р·Р°РЅРёСЋ РґРѕСЃС‚РѕРїРѕС‡С‚РёРјРѕРіРѕ Р»РѕСЂРґР° РҐР°РіРµРЅР°, СЃРµРіРѕРґРЅСЏ РІСЃС‚СѓРїР°РµС‚ РІ СЃРёР»Сѓ СЃР»РµРґСѓСЋС‰РёР№ РґРµРєСЂРµС‚.
 	
 	if (Kapitel <= 2)
 	{
 		randy = Hlp_Random (5);
 		if (randy == 0)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_01"); //Учитывая общую ситуацию, леса и пустоши около города следует избегать ради вашей собственной же безопасности.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //Кроме того, любые контакты с восставшими крестьянами в прилежащих землях строжайше запрещены.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_01"); //РЈС‡РёС‚С‹РІР°СЏ РѕР±С‰СѓСЋ СЃРёС‚СѓР°С†РёСЋ, Р»РµСЃР° Рё РїСѓСЃС‚РѕС€Рё РѕРєРѕР»Рѕ РіРѕСЂРѕРґР° СЃР»РµРґСѓРµС‚ РёР·Р±РµРіР°С‚СЊ СЂР°РґРё РІР°С€РµР№ СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ Р¶Рµ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //РљСЂРѕРјРµ С‚РѕРіРѕ, Р»СЋР±С‹Рµ РєРѕРЅС‚Р°РєС‚С‹ СЃ РІРѕСЃСЃС‚Р°РІС€РёРјРё РєСЂРµСЃС‚СЊСЏРЅР°РјРё РІ РїСЂРёР»РµР¶Р°С‰РёС… Р·РµРјР»СЏС… СЃС‚СЂРѕР¶Р°Р№С€Рµ Р·Р°РїСЂРµС‰РµРЅС‹.
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_03"); //С этого момента лорд Андрэ назначается главнокомандующим нашим ополчением.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_04"); //Все граждане этого города, имеющие военные навыки, обязаны вступить в королевское ополчение.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_03"); //РЎ СЌС‚РѕРіРѕ РјРѕРјРµРЅС‚Р° Р»РѕСЂРґ РђРЅРґСЂСЌ РЅР°Р·РЅР°С‡Р°РµС‚СЃСЏ РіР»Р°РІРЅРѕРєРѕРјР°РЅРґСѓСЋС‰РёРј РЅР°С€РёРј РѕРїРѕР»С‡РµРЅРёРµРј.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_04"); //Р’СЃРµ РіСЂР°Р¶РґР°РЅРµ СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°, РёРјРµСЋС‰РёРµ РІРѕРµРЅРЅС‹Рµ РЅР°РІС‹РєРё, РѕР±СЏР·Р°РЅС‹ РІСЃС‚СѓРїРёС‚СЊ РІ РєРѕСЂРѕР»РµРІСЃРєРѕРµ РѕРїРѕР»С‡РµРЅРёРµ.
 		}
 		else if (randy == 2)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_05"); //Меры безопасности по защите верхнего квартала будут еще усилены.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_06"); //Охране у ворот приказано применять закон самым строжайшим образом, чтобы предотвратить несанкционированный доступ к кварталу.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_05"); //РњРµСЂС‹ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё РїРѕ Р·Р°С‰РёС‚Рµ РІРµСЂС…РЅРµРіРѕ РєРІР°СЂС‚Р°Р»Р° Р±СѓРґСѓС‚ РµС‰Рµ СѓСЃРёР»РµРЅС‹.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_06"); //РћС…СЂР°РЅРµ Сѓ РІРѕСЂРѕС‚ РїСЂРёРєР°Р·Р°РЅРѕ РїСЂРёРјРµРЅСЏС‚СЊ Р·Р°РєРѕРЅ СЃР°РјС‹Рј СЃС‚СЂРѕР¶Р°Р№С€РёРј РѕР±СЂР°Р·РѕРј, С‡С‚РѕР±С‹ РїСЂРµРґРѕС‚РІСЂР°С‚РёС‚СЊ РЅРµСЃР°РЅРєС†РёРѕРЅРёСЂРѕРІР°РЅРЅС‹Р№ РґРѕСЃС‚СѓРї Рє РєРІР°СЂС‚Р°Р»Сѓ.
 		}
 		else if (randy == 3)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_07"); //Во всех городах и провинциях королевства объявляется военное положение.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_08"); //Все гражданские судьи должны сложить свои обязанности и передать их королевским паладинам.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //Высокочтимому лорду Андрэ приказано карать любое преступление или акт сопротивления королевской страже самым жестоким образом.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_10"); //Все жители Хориниса, виновные в преступлении, должны немедленно прибыть к лорду Андрэ.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_07"); //Р’Рѕ РІСЃРµС… РіРѕСЂРѕРґР°С… Рё РїСЂРѕРІРёРЅС†РёСЏС… РєРѕСЂРѕР»РµРІСЃС‚РІР° РѕР±СЉСЏРІР»СЏРµС‚СЃСЏ РІРѕРµРЅРЅРѕРµ РїРѕР»РѕР¶РµРЅРёРµ.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_08"); //Р’СЃРµ РіСЂР°Р¶РґР°РЅСЃРєРёРµ СЃСѓРґСЊРё РґРѕР»Р¶РЅС‹ СЃР»РѕР¶РёС‚СЊ СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё Рё РїРµСЂРµРґР°С‚СЊ РёС… РєРѕСЂРѕР»РµРІСЃРєРёРј РїР°Р»Р°РґРёРЅР°Рј.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //Р’С‹СЃРѕРєРѕС‡С‚РёРјРѕРјСѓ Р»РѕСЂРґСѓ РђРЅРґСЂСЌ РїСЂРёРєР°Р·Р°РЅРѕ РєР°СЂР°С‚СЊ Р»СЋР±РѕРµ РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ РёР»Рё Р°РєС‚ СЃРѕРїСЂРѕС‚РёРІР»РµРЅРёСЏ РєРѕСЂРѕР»РµРІСЃРєРѕР№ СЃС‚СЂР°Р¶Рµ СЃР°РјС‹Рј Р¶РµСЃС‚РѕРєРёРј РѕР±СЂР°Р·РѕРј.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_10"); //Р’СЃРµ Р¶РёС‚РµР»Рё РҐРѕСЂРёРЅРёСЃР°, РІРёРЅРѕРІРЅС‹Рµ РІ РїСЂРµСЃС‚СѓРїР»РµРЅРёРё, РґРѕР»Р¶РЅС‹ РЅРµРјРµРґР»РµРЅРЅРѕ РїСЂРёР±С‹С‚СЊ Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ.
 		}
 		else
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_11"); //Учитывая опасность нападения на город орков, все жители города должны соответствующим образом подготовиться.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_12"); //Все должны немедленно приступить к обучению боевым навыкам и должным образом вооружиться.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_11"); //РЈС‡РёС‚С‹РІР°СЏ РѕРїР°СЃРЅРѕСЃС‚СЊ РЅР°РїР°РґРµРЅРёСЏ РЅР° РіРѕСЂРѕРґ РѕСЂРєРѕРІ, РІСЃРµ Р¶РёС‚РµР»Рё РіРѕСЂРѕРґР° РґРѕР»Р¶РЅС‹ СЃРѕРѕС‚РІРµС‚СЃС‚РІСѓСЋС‰РёРј РѕР±СЂР°Р·РѕРј РїРѕРґРіРѕС‚РѕРІРёС‚СЊСЃСЏ.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_12"); //Р’СЃРµ РґРѕР»Р¶РЅС‹ РЅРµРјРµРґР»РµРЅРЅРѕ РїСЂРёСЃС‚СѓРїРёС‚СЊ Рє РѕР±СѓС‡РµРЅРёСЋ Р±РѕРµРІС‹Рј РЅР°РІС‹РєР°Рј Рё РґРѕР»Р¶РЅС‹Рј РѕР±СЂР°Р·РѕРј РІРѕРѕСЂСѓР¶РёС‚СЊСЃСЏ.
 		};
 	}
 	else if (Kapitel == 3)
 	{
 		IF (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_13"); //Кузнец-наемник Беннет, вероломно убивший паладина Лотара, объявляется проклятым от имени Инноса.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_14"); //Он приговорен к смерти через повешение. Приговор будет приведен в исполнение в ближайшие дни.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_13"); //РљСѓР·РЅРµС†-РЅР°РµРјРЅРёРє Р‘РµРЅРЅРµС‚, РІРµСЂРѕР»РѕРјРЅРѕ СѓР±РёРІС€РёР№ РїР°Р»Р°РґРёРЅР° Р›РѕС‚Р°СЂР°, РѕР±СЉСЏРІР»СЏРµС‚СЃСЏ РїСЂРѕРєР»СЏС‚С‹Рј РѕС‚ РёРјРµРЅРё РРЅРЅРѕСЃР°.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_14"); //РћРЅ РїСЂРёРіРѕРІРѕСЂРµРЅ Рє СЃРјРµСЂС‚Рё С‡РµСЂРµР· РїРѕРІРµС€РµРЅРёРµ. РџСЂРёРіРѕРІРѕСЂ Р±СѓРґРµС‚ РїСЂРёРІРµРґРµРЅ РІ РёСЃРїРѕР»РЅРµРЅРёРµ РІ Р±Р»РёР¶Р°Р№С€РёРµ РґРЅРё.
 		}
 		else
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_15"); //С кузнеца Беннета были сняты все обвинения вследствие его невиновности, которая была доказана советником лорда Хагена.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_15"); //РЎ РєСѓР·РЅРµС†Р° Р‘РµРЅРЅРµС‚Р° Р±С‹Р»Рё СЃРЅСЏС‚С‹ РІСЃРµ РѕР±РІРёРЅРµРЅРёСЏ РІСЃР»РµРґСЃС‚РІРёРµ РµРіРѕ РЅРµРІРёРЅРѕРІРЅРѕСЃС‚Рё, РєРѕС‚РѕСЂР°СЏ Р±С‹Р»Р° РґРѕРєР°Р·Р°РЅР° СЃРѕРІРµС‚РЅРёРєРѕРј Р»РѕСЂРґР° РҐР°РіРµРЅР°.
 		};	
 	}
 	else if (Kapitel == 4)
 	{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_16"); //Слухи о появлении драконов в Долине Рудников Хориниса являются ложными.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_17"); //Эти слухи распространяются врагом с целью посеять страх и ужас в душах мужественных жителей Миртаны.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_18"); //Чтобы развеять эти нелепые слухи, в Долину Рудников был отправлен отряд бравых паладинов под командованием человека, хорошо знакомого с этой местностью.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_16"); //РЎР»СѓС…Рё Рѕ РїРѕСЏРІР»РµРЅРёРё РґСЂР°РєРѕРЅРѕРІ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РҐРѕСЂРёРЅРёСЃР° СЏРІР»СЏСЋС‚СЃСЏ Р»РѕР¶РЅС‹РјРё.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_17"); //Р­С‚Рё СЃР»СѓС…Рё СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏСЋС‚СЃСЏ РІСЂР°РіРѕРј СЃ С†РµР»СЊСЋ РїРѕСЃРµСЏС‚СЊ СЃС‚СЂР°С… Рё СѓР¶Р°СЃ РІ РґСѓС€Р°С… РјСѓР¶РµСЃС‚РІРµРЅРЅС‹С… Р¶РёС‚РµР»РµР№ РњРёСЂС‚Р°РЅС‹.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_18"); //Р§С‚РѕР±С‹ СЂР°Р·РІРµСЏС‚СЊ СЌС‚Рё РЅРµР»РµРїС‹Рµ СЃР»СѓС…Рё, РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ Р±С‹Р» РѕС‚РїСЂР°РІР»РµРЅ РѕС‚СЂСЏРґ Р±СЂР°РІС‹С… РїР°Р»Р°РґРёРЅРѕРІ РїРѕРґ РєРѕРјР°РЅРґРѕРІР°РЅРёРµРј С‡РµР»РѕРІРµРєР°, С…РѕСЂРѕС€Рѕ Р·РЅР°РєРѕРјРѕРіРѕ СЃ СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚СЊСЋ.
 	}
 	else	//Kapitel 5
 	{
 		randy = Hlp_Random (2);
 		if (randy == 0)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_19"); //Драконы, угрожавшие спокойствию нашей земли, были уничтожены мужественным воином под командованием лорда Хагена.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_20"); //Скоро король Робар освободит наши земли от орков, и королевство опять станет цветущим и преуспевающим.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_19"); //Р”СЂР°РєРѕРЅС‹, СѓРіСЂРѕР¶Р°РІС€РёРµ СЃРїРѕРєРѕР№СЃС‚РІРёСЋ РЅР°С€РµР№ Р·РµРјР»Рё, Р±С‹Р»Рё СѓРЅРёС‡С‚РѕР¶РµРЅС‹ РјСѓР¶РµСЃС‚РІРµРЅРЅС‹Рј РІРѕРёРЅРѕРј РїРѕРґ РєРѕРјР°РЅРґРѕРІР°РЅРёРµРј Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_20"); //РЎРєРѕСЂРѕ РєРѕСЂРѕР»СЊ Р РѕР±Р°СЂ РѕСЃРІРѕР±РѕРґРёС‚ РЅР°С€Рё Р·РµРјР»Рё РѕС‚ РѕСЂРєРѕРІ, Рё РєРѕСЂРѕР»РµРІСЃС‚РІРѕ РѕРїСЏС‚СЊ СЃС‚Р°РЅРµС‚ С†РІРµС‚СѓС‰РёРј Рё РїСЂРµСѓСЃРїРµРІР°СЋС‰РёРј.
 		}
 		else
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_21"); //Лорд Андрэ назначается верховным командующим города Хориниса. Он вступает в эту должность немедленно.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_22"); //Лорд Хаген объявил, что лично направляется в Долину Рудников, чтобы обеспечить загрузку корабля магической рудой.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_21"); //Р›РѕСЂРґ РђРЅРґСЂСЌ РЅР°Р·РЅР°С‡Р°РµС‚СЃСЏ РІРµСЂС…РѕРІРЅС‹Рј РєРѕРјР°РЅРґСѓСЋС‰РёРј РіРѕСЂРѕРґР° РҐРѕСЂРёРЅРёСЃР°. РћРЅ РІСЃС‚СѓРїР°РµС‚ РІ СЌС‚Сѓ РґРѕР»Р¶РЅРѕСЃС‚СЊ РЅРµРјРµРґР»РµРЅРЅРѕ.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_22"); //Р›РѕСЂРґ РҐР°РіРµРЅ РѕР±СЉСЏРІРёР», С‡С‚Рѕ Р»РёС‡РЅРѕ РЅР°РїСЂР°РІР»СЏРµС‚СЃСЏ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, С‡С‚РѕР±С‹ РѕР±РµСЃРїРµС‡РёС‚СЊ Р·Р°РіСЂСѓР·РєСѓ РєРѕСЂР°Р±Р»СЏ РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґРѕР№.
 		};
 	};
 	AI_UseItemToState	(self,	Fakescroll,	-1);
@@ -88,9 +88,9 @@ func void B_Announce_Herold ()
 
 /* 
 
-			AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //Hцrt Bьrger von Khorinis den BeschluЯ des ehrenwerten Lord Hagen!
-			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //An alle Bьrger von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
-			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //Hцrt ihr Bewohner von Khorinis und vernehmt das kцnigliche Dekret zur Aufrechterhaltung der цffentlichen Ordnung.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //HС†rt BСЊrger von Khorinis den BeschluРЇ des ehrenwerten Lord Hagen!
+			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //An alle BСЊrger von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
+			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //HС†rt ihr Bewohner von Khorinis und vernehmt das kС†nigliche Dekret zur Aufrechterhaltung der С†ffentlichen Ordnung.
 			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //An alle Bewohner von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
 
 
@@ -98,26 +98,26 @@ func void B_Announce_Herold ()
 
 
 Kapitel 3 Spieler kommt aus dem Minental und hat mit Lord Hagen gesprochen
-Hцrt ihr Bьger von Khorinis. Ein Bote der Paladine brachte Kunde aus dem Minental
-Unsere tapferen Paladine halten den Orks wehrhaft stand und erschliessen neue Minen fьr das Kцnigreich!
+HС†rt ihr BСЊger von Khorinis. Ein Bote der Paladine brachte Kunde aus dem Minental
+Unsere tapferen Paladine halten den Orks wehrhaft stand und erschliessen neue Minen fСЊr das KС†nigreich!
 
 Kapitel 3 Bennet ist im Knast
-Hцrt ihr Bьrger von Khorinis
-Der Schmied Bennet, der den ehrenwerten Paladin Lothar heimtьckisch ermordert hat, ist im Namen Innos verurteilt worden. 
+HС†rt ihr BСЊrger von Khorinis
+Der Schmied Bennet, der den ehrenwerten Paladin Lothar heimtСЊckisch ermordert hat, ist im Namen Innos verurteilt worden. 
 Das Urteil lautet Tod durch den Strick.
 
 Kapitel 3 Bennet ist wieder frei
-Hцrt ihr Bьrger,
+HС†rt ihr BСЊrger,
 Der Schmied Bennet wird freigesprochen, da seine Unschuld von einem klugen Berater Lord Hagens bewiesen wurde. 
 So ist es Innos Wille und nach seiner Gerechtigkeit handeln wir. 
  
 Kapitel 5 Start Drachen sind tot
-Hцrt Bьrger von Khorinis
-Die Drachen die das Land bedrohten wurden von tapferen Mдnnern unter dem Befehl von Lord Hagen besiegt.   
-Bald wird auch Kцnig Rohbar das Land von den Orks befreien und das Kцnigreich wird in neuem Glanz aufblьhen!
+HС†rt BСЊrger von Khorinis
+Die Drachen die das Land bedrohten wurden von tapferen MРґnnern unter dem Befehl von Lord Hagen besiegt.   
+Bald wird auch KС†nig Rohbar das Land von den Orks befreien und das KС†nigreich wird in neuem Glanz aufblСЊhen!
 
 
-Kapitel 5 Kurz vor SchluЯ (Spieler war in der Biblothek) 
-Der ehrenwerte Lord Hagen hat verkьndet nun selbst ins Minental zu ziehen um dafьr zu sorgen das sein Schiff mit dem Erz beladen werden kann.  
+Kapitel 5 Kurz vor SchluРЇ (Spieler war in der Biblothek) 
+Der ehrenwerte Lord Hagen hat verkСЊndet nun selbst ins Minental zu ziehen um dafСЊr zu sorgen das sein Schiff mit dem Erz beladen werden kann.  
 
 */

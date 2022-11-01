@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Myxir_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wдre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wРґre einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_ADW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_ADWHello		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_ADWHello_Condition;
 	information	 = 	DIA_Addon_Myxir_ADWHello_Info;
 
-	description	 = 	"Есть новые находки?";
+	description	 = 	"Р•СЃС‚СЊ РЅРѕРІС‹Рµ РЅР°С…РѕРґРєРё?";
 };
 
 func int DIA_Addon_Myxir_ADWHello_Condition ()
@@ -94,31 +94,31 @@ func int DIA_Addon_Myxir_ADWHello_Condition ()
 
 func void DIA_Addon_Myxir_ADWHello_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_00"); //Есть новые находки?
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_01"); //Зодчие просто поражают меня!
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_02"); //Жаль, что все они мертвы, как и их язык.
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_03"); //Даже их могущественные ритуалы и духи предков не могли спасти их.
-	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_04"); //Духи предков?
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_05"); //Зодчие жили в тесной связи с миром духов.
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_06"); //Если я правильно понял, они верили, что их предки поддерживают с ними постоянный контакт.
-	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_07"); //Они регулярно проводили ритуалы, призывающие духов. Духи давали им советы и помогали достичь просвещения.
+	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_00"); //Р•СЃС‚СЊ РЅРѕРІС‹Рµ РЅР°С…РѕРґРєРё?
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_01"); //Р—РѕРґС‡РёРµ РїСЂРѕСЃС‚Рѕ РїРѕСЂР°Р¶Р°СЋС‚ РјРµРЅСЏ!
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_02"); //Р–Р°Р»СЊ, С‡С‚Рѕ РІСЃРµ РѕРЅРё РјРµСЂС‚РІС‹, РєР°Рє Рё РёС… СЏР·С‹Рє.
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_03"); //Р”Р°Р¶Рµ РёС… РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅС‹Рµ СЂРёС‚СѓР°Р»С‹ Рё РґСѓС…Рё РїСЂРµРґРєРѕРІ РЅРµ РјРѕРіР»Рё СЃРїР°СЃС‚Рё РёС….
+	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_04"); //Р”СѓС…Рё РїСЂРµРґРєРѕРІ?
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_05"); //Р—РѕРґС‡РёРµ Р¶РёР»Рё РІ С‚РµСЃРЅРѕР№ СЃРІСЏР·Рё СЃ РјРёСЂРѕРј РґСѓС…РѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_06"); //Р•СЃР»Рё СЏ РїСЂР°РІРёР»СЊРЅРѕ РїРѕРЅСЏР», РѕРЅРё РІРµСЂРёР»Рё, С‡С‚Рѕ РёС… РїСЂРµРґРєРё РїРѕРґРґРµСЂР¶РёРІР°СЋС‚ СЃ РЅРёРјРё РїРѕСЃС‚РѕСЏРЅРЅС‹Р№ РєРѕРЅС‚Р°РєС‚.
+	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_07"); //РћРЅРё СЂРµРіСѓР»СЏСЂРЅРѕ РїСЂРѕРІРѕРґРёР»Рё СЂРёС‚СѓР°Р»С‹, РїСЂРёР·С‹РІР°СЋС‰РёРµ РґСѓС…РѕРІ. Р”СѓС…Рё РґР°РІР°Р»Рё РёРј СЃРѕРІРµС‚С‹ Рё РїРѕРјРѕРіР°Р»Рё РґРѕСЃС‚РёС‡СЊ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ.
 
 	Info_ClearChoices	(DIA_Addon_Myxir_ADWHello);
-	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "Как работали эти ритуалы?", DIA_Addon_Myxir_ADWHello_wie );
-	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "Та нежить, что мне доводилось встречать, была не очень-то разговорчивой.", DIA_Addon_Myxir_ADWHello_Watt );
+	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "РљР°Рє СЂР°Р±РѕС‚Р°Р»Рё СЌС‚Рё СЂРёС‚СѓР°Р»С‹?", DIA_Addon_Myxir_ADWHello_wie );
+	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "РўР° РЅРµР¶РёС‚СЊ, С‡С‚Рѕ РјРЅРµ РґРѕРІРѕРґРёР»РѕСЃСЊ РІСЃС‚СЂРµС‡Р°С‚СЊ, Р±С‹Р»Р° РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ СЂР°Р·РіРѕРІРѕСЂС‡РёРІРѕР№.", DIA_Addon_Myxir_ADWHello_Watt );
 };
 func void DIA_Addon_Myxir_ADWHello_wie ()
 {
-	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_wie_15_00"); //Как работали эти ритуалы?
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_01"); //Стражам мертвых были известны особые заклинания, которые использовались для умиротворения духов.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_02"); //Впрочем, описания, которые я здесь нахожу, большей частью малопонятны. Очень редко мне удается найти четкий ответ на интересующий меня вопрос.
+	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_wie_15_00"); //РљР°Рє СЂР°Р±РѕС‚Р°Р»Рё СЌС‚Рё СЂРёС‚СѓР°Р»С‹?
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_01"); //РЎС‚СЂР°Р¶Р°Рј РјРµСЂС‚РІС‹С… Р±С‹Р»Рё РёР·РІРµСЃС‚РЅС‹ РѕСЃРѕР±С‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ РёСЃРїРѕР»СЊР·РѕРІР°Р»РёСЃСЊ РґР»СЏ СѓРјРёСЂРѕС‚РІРѕСЂРµРЅРёСЏ РґСѓС…РѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_wie_12_02"); //Р’РїСЂРѕС‡РµРј, РѕРїРёСЃР°РЅРёСЏ, РєРѕС‚РѕСЂС‹Рµ СЏ Р·РґРµСЃСЊ РЅР°С…РѕР¶Сѓ, Р±РѕР»СЊС€РµР№ С‡Р°СЃС‚СЊСЋ РјР°Р»РѕРїРѕРЅСЏС‚РЅС‹. РћС‡РµРЅСЊ СЂРµРґРєРѕ РјРЅРµ СѓРґР°РµС‚СЃСЏ РЅР°Р№С‚Рё С‡РµС‚РєРёР№ РѕС‚РІРµС‚ РЅР° РёРЅС‚РµСЂРµСЃСѓСЋС‰РёР№ РјРµРЅСЏ РІРѕРїСЂРѕСЃ.
 };
 func void DIA_Addon_Myxir_ADWHello_Watt ()
 {
-	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_Watt_15_00"); //Та нежить, что мне доводилось встречать, была не очень-то разговорчивой.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_01"); //Но зодчие призывали не злобных бездушных созданий, таких как зомби или скелеты.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_02"); //Им удавалось вызывать духов великих воинов, жрецов и правителей.
-	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_03"); //Я не сомневаюсь, что они на самом деле существовали.
+	AI_Output			(other, self, "DIA_Addon_Myxir_ADWHello_Watt_15_00"); //РўР° РЅРµР¶РёС‚СЊ, С‡С‚Рѕ РјРЅРµ РґРѕРІРѕРґРёР»РѕСЃСЊ РІСЃС‚СЂРµС‡Р°С‚СЊ, Р±С‹Р»Р° РЅРµ РѕС‡РµРЅСЊ-С‚Рѕ СЂР°Р·РіРѕРІРѕСЂС‡РёРІРѕР№.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_01"); //РќРѕ Р·РѕРґС‡РёРµ РїСЂРёР·С‹РІР°Р»Рё РЅРµ Р·Р»РѕР±РЅС‹С… Р±РµР·РґСѓС€РЅС‹С… СЃРѕР·РґР°РЅРёР№, С‚Р°РєРёС… РєР°Рє Р·РѕРјР±Рё РёР»Рё СЃРєРµР»РµС‚С‹.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_02"); //РРј СѓРґР°РІР°Р»РѕСЃСЊ РІС‹Р·С‹РІР°С‚СЊ РґСѓС…РѕРІ РІРµР»РёРєРёС… РІРѕРёРЅРѕРІ, Р¶СЂРµС†РѕРІ Рё РїСЂР°РІРёС‚РµР»РµР№.
+	AI_Output			(self, other, "DIA_Addon_Myxir_ADWHello_Watt_12_03"); //РЇ РЅРµ СЃРѕРјРЅРµРІР°СЋСЃСЊ, С‡С‚Рѕ РѕРЅРё РЅР° СЃР°РјРѕРј РґРµР»Рµ СЃСѓС‰РµСЃС‚РІРѕРІР°Р»Рё.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -132,7 +132,7 @@ instance DIA_Addon_Myxir_PermADW		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_PermADW_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Если я встречу духа, то обязательно тебе сообщу.";
+	description	 = 	"Р•СЃР»Рё СЏ РІСЃС‚СЂРµС‡Сѓ РґСѓС…Р°, С‚Рѕ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ С‚РµР±Рµ СЃРѕРѕР±С‰Сѓ.";
 };
 func int DIA_Addon_Myxir_PermADW_Condition ()
 {
@@ -144,8 +144,8 @@ func int DIA_Addon_Myxir_PermADW_Condition ()
 };
 func void DIA_Addon_Myxir_PermADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_PermADW_15_00"); //Если я встречу духа, то обязательно тебе сообщу.
-	AI_Output	(self, other, "DIA_Addon_Myxir_PermADW_12_01"); //(смеется) Да, я на этом настаиваю.
+	AI_Output	(other, self, "DIA_Addon_Myxir_PermADW_15_00"); //Р•СЃР»Рё СЏ РІСЃС‚СЂРµС‡Сѓ РґСѓС…Р°, С‚Рѕ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ С‚РµР±Рµ СЃРѕРѕР±С‰Сѓ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_PermADW_12_01"); //(СЃРјРµРµС‚СЃСЏ) Р”Р°, СЏ РЅР° СЌС‚РѕРј РЅР°СЃС‚Р°РёРІР°СЋ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GeistTafel
@@ -157,7 +157,7 @@ instance DIA_Addon_Myxir_GeistTafel		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_GeistTafel_Condition;
 	information	 = 	DIA_Addon_Myxir_GeistTafel_Info;
 
-	description	 = 	"Меня послал Сатурас.";
+	description	 = 	"РњРµРЅСЏ РїРѕСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ.";
 };
 
 func int DIA_Addon_Myxir_GeistTafel_Condition ()
@@ -171,63 +171,63 @@ func int DIA_Addon_Myxir_GeistTafel_Condition ()
 
 func void DIA_Addon_Myxir_GeistTafel_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_00"); //Меня послал Сатурас.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_01"); //Ворон проник в храм и закрыл его двери изнутри.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_02"); //Сатурас считает, что он узнал о том, как попасть в храм, у духа!
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_03"); //(пораженно) О, Аданос!
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_04"); //Должно быть, чтобы узнать, как открыть ворота, он призвал верховного жреца Кардимона.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_05"); //Судя по записям, его гробница была в пещерах под крепостью!
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_06"); //Ты должен поступить так же.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_07"); //Но Кардимона тебе вызвать уже не удастся...
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_08"); //На западе долины находится гробница Куарходрона, предводителя воинов.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_09"); //Ты должен отыскать ее... и пробудить Куарходрона.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_10"); //Здесь написано, как тот, кто верит в Аданоса, может вызвать духа.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_11"); //Ты думаешь, что это сработает?
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_12"); //Мне в руки попадалось множество бессмысленных манускриптов.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_13"); //Например, записи И'Бериона, предводителя Братства Спящего.
-	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_14"); //Но автору ЭТИХ записей я верю.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» РЎР°С‚СѓСЂР°СЃ.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_01"); //Р’РѕСЂРѕРЅ РїСЂРѕРЅРёРє РІ С…СЂР°Рј Рё Р·Р°РєСЂС‹Р» РµРіРѕ РґРІРµСЂРё РёР·РЅСѓС‚СЂРё.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_02"); //РЎР°С‚СѓСЂР°СЃ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ РѕРЅ СѓР·РЅР°Р» Рѕ С‚РѕРј, РєР°Рє РїРѕРїР°СЃС‚СЊ РІ С…СЂР°Рј, Сѓ РґСѓС…Р°!
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_03"); //(РїРѕСЂР°Р¶РµРЅРЅРѕ) Рћ, РђРґР°РЅРѕСЃ!
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_04"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ, РєР°Рє РѕС‚РєСЂС‹С‚СЊ РІРѕСЂРѕС‚Р°, РѕРЅ РїСЂРёР·РІР°Р» РІРµСЂС…РѕРІРЅРѕРіРѕ Р¶СЂРµС†Р° РљР°СЂРґРёРјРѕРЅР°.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_05"); //РЎСѓРґСЏ РїРѕ Р·Р°РїРёСЃСЏРј, РµРіРѕ РіСЂРѕР±РЅРёС†Р° Р±С‹Р»Р° РІ РїРµС‰РµСЂР°С… РїРѕРґ РєСЂРµРїРѕСЃС‚СЊСЋ!
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_06"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕСЃС‚СѓРїРёС‚СЊ С‚Р°Рє Р¶Рµ.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_07"); //РќРѕ РљР°СЂРґРёРјРѕРЅР° С‚РµР±Рµ РІС‹Р·РІР°С‚СЊ СѓР¶Рµ РЅРµ СѓРґР°СЃС‚СЃСЏ...
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_08"); //РќР° Р·Р°РїР°РґРµ РґРѕР»РёРЅС‹ РЅР°С…РѕРґРёС‚СЃСЏ РіСЂРѕР±РЅРёС†Р° РљСѓР°СЂС…РѕРґСЂРѕРЅР°, РїСЂРµРґРІРѕРґРёС‚РµР»СЏ РІРѕРёРЅРѕРІ.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_09"); //РўС‹ РґРѕР»Р¶РµРЅ РѕС‚С‹СЃРєР°С‚СЊ РµРµ... Рё РїСЂРѕР±СѓРґРёС‚СЊ РљСѓР°СЂС…РѕРґСЂРѕРЅР°.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_10"); //Р—РґРµСЃСЊ РЅР°РїРёСЃР°РЅРѕ, РєР°Рє С‚РѕС‚, РєС‚Рѕ РІРµСЂРёС‚ РІ РђРґР°РЅРѕСЃР°, РјРѕР¶РµС‚ РІС‹Р·РІР°С‚СЊ РґСѓС…Р°.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_11"); //РўС‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ СЌС‚Рѕ СЃСЂР°Р±РѕС‚Р°РµС‚?
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_12"); //РњРЅРµ РІ СЂСѓРєРё РїРѕРїР°РґР°Р»РѕСЃСЊ РјРЅРѕР¶РµСЃС‚РІРѕ Р±РµСЃСЃРјС‹СЃР»РµРЅРЅС‹С… РјР°РЅСѓСЃРєСЂРёРїС‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_13"); //РќР°РїСЂРёРјРµСЂ, Р·Р°РїРёСЃРё Р'Р‘РµСЂРёРѕРЅР°, РїСЂРµРґРІРѕРґРёС‚РµР»СЏ Р‘СЂР°С‚СЃС‚РІР° РЎРїСЏС‰РµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_14"); //РќРѕ Р°РІС‚РѕСЂСѓ Р­РўРРҐ Р·Р°РїРёСЃРµР№ СЏ РІРµСЂСЋ.
 	
 	MIS_ADDON_Myxir_GeistBeschwoeren = LOG_RUNNING;
 
 	Info_ClearChoices	(DIA_Addon_Myxir_GeistTafel);
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Ты серьезно?", DIA_Addon_Myxir_GeistTafel_geist );
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Почему Куарходрон? Почему не верховный жрец Кардимон?", DIA_Addon_Myxir_GeistTafel_Khardimon );
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Братство Спящего распространяло не одну лишь ложь.", DIA_Addon_Myxir_GeistTafel_psi );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "РўС‹ СЃРµСЂСЊРµР·РЅРѕ?", DIA_Addon_Myxir_GeistTafel_geist );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "РџРѕС‡РµРјСѓ РљСѓР°СЂС…РѕРґСЂРѕРЅ? РџРѕС‡РµРјСѓ РЅРµ РІРµСЂС…РѕРІРЅС‹Р№ Р¶СЂРµС† РљР°СЂРґРёРјРѕРЅ?", DIA_Addon_Myxir_GeistTafel_Khardimon );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏР»Рѕ РЅРµ РѕРґРЅСѓ Р»РёС€СЊ Р»РѕР¶СЊ.", DIA_Addon_Myxir_GeistTafel_psi );
 };
 
 func void DIA_Addon_Myxir_GeistTafel_Khardimon ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_Khardimon_15_00"); //Почему Куарходрон? Почему не верховный жрец Кардимон?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_01"); //Своим ритуалом Ворон осквернил гробницу Кардимона.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_02"); //Так что тебе придется найти другого духа.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_Khardimon_15_00"); //РџРѕС‡РµРјСѓ РљСѓР°СЂС…РѕРґСЂРѕРЅ? РџРѕС‡РµРјСѓ РЅРµ РІРµСЂС…РѕРІРЅС‹Р№ Р¶СЂРµС† РљР°СЂРґРёРјРѕРЅ?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_01"); //РЎРІРѕРёРј СЂРёС‚СѓР°Р»РѕРј Р’РѕСЂРѕРЅ РѕСЃРєРІРµСЂРЅРёР» РіСЂРѕР±РЅРёС†Сѓ РљР°СЂРґРёРјРѕРЅР°.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_02"); //РўР°Рє С‡С‚Рѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅР°Р№С‚Рё РґСЂСѓРіРѕРіРѕ РґСѓС…Р°.
 };
 func void DIA_Addon_Myxir_GeistTafel_psi ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_psi_15_00"); //Братство Спящего распространяло не одну лишь ложь. Спящий на самом деле существовал.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_01"); //Не то, о чем они говорили, заставляло сомневаться в их правдивости, а те слова, которые они использовали.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_02"); //Речи членов Братства были запутанны и непонятны. Их разум был затуманен болотной травой, которую они курили без остановки.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_03"); //А текст на этой табличке написан серьезным и разумным человеком. Это убеждает меня в правдивости его слов.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_psi_15_00"); //Р‘СЂР°С‚СЃС‚РІРѕ РЎРїСЏС‰РµРіРѕ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏР»Рѕ РЅРµ РѕРґРЅСѓ Р»РёС€СЊ Р»РѕР¶СЊ. РЎРїСЏС‰РёР№ РЅР° СЃР°РјРѕРј РґРµР»Рµ СЃСѓС‰РµСЃС‚РІРѕРІР°Р».
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_01"); //РќРµ С‚Рѕ, Рѕ С‡РµРј РѕРЅРё РіРѕРІРѕСЂРёР»Рё, Р·Р°СЃС‚Р°РІР»СЏР»Рѕ СЃРѕРјРЅРµРІР°С‚СЊСЃСЏ РІ РёС… РїСЂР°РІРґРёРІРѕСЃС‚Рё, Р° С‚Рµ СЃР»РѕРІР°, РєРѕС‚РѕСЂС‹Рµ РѕРЅРё РёСЃРїРѕР»СЊР·РѕРІР°Р»Рё.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_02"); //Р РµС‡Рё С‡Р»РµРЅРѕРІ Р‘СЂР°С‚СЃС‚РІР° Р±С‹Р»Рё Р·Р°РїСѓС‚Р°РЅРЅС‹ Рё РЅРµРїРѕРЅСЏС‚РЅС‹. РС… СЂР°Р·СѓРј Р±С‹Р» Р·Р°С‚СѓРјР°РЅРµРЅ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІРѕР№, РєРѕС‚РѕСЂСѓСЋ РѕРЅРё РєСѓСЂРёР»Рё Р±РµР· РѕСЃС‚Р°РЅРѕРІРєРё.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_03"); //Рђ С‚РµРєСЃС‚ РЅР° СЌС‚РѕР№ С‚Р°Р±Р»РёС‡РєРµ РЅР°РїРёСЃР°РЅ СЃРµСЂСЊРµР·РЅС‹Рј Рё СЂР°Р·СѓРјРЅС‹Рј С‡РµР»РѕРІРµРєРѕРј. Р­С‚Рѕ СѓР±РµР¶РґР°РµС‚ РјРµРЅСЏ РІ РїСЂР°РІРґРёРІРѕСЃС‚Рё РµРіРѕ СЃР»РѕРІ.
 };
 func void DIA_Addon_Myxir_GeistTafel_geist ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_geist_15_00"); //Ты серьезно?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_01"); //Мы должны использовать любую возможность.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_02"); //Даже если у нас есть лишь призрачный шанс встретиться с одним из зодчих, мы должны его использовать.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_03"); //В конце концов, Ворону-то это удалось.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_geist_15_00"); //РўС‹ СЃРµСЂСЊРµР·РЅРѕ?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_01"); //РњС‹ РґРѕР»Р¶РЅС‹ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р»СЋР±СѓСЋ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_02"); //Р”Р°Р¶Рµ РµСЃР»Рё Сѓ РЅР°СЃ РµСЃС‚СЊ Р»РёС€СЊ РїСЂРёР·СЂР°С‡РЅС‹Р№ С€Р°РЅСЃ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РѕРґРЅРёРј РёР· Р·РѕРґС‡РёС…, РјС‹ РґРѕР»Р¶РЅС‹ РµРіРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_03"); //Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, Р’РѕСЂРѕРЅСѓ-С‚Рѕ СЌС‚Рѕ СѓРґР°Р»РѕСЃСЊ.
 	
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "И что же мне нужно сделать, чтобы вызвать этого духа?", DIA_Addon_Myxir_GeistTafel_wie );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Р С‡С‚Рѕ Р¶Рµ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РІС‹Р·РІР°С‚СЊ СЌС‚РѕРіРѕ РґСѓС…Р°?", DIA_Addon_Myxir_GeistTafel_wie );
 };
 func void DIA_Addon_Myxir_GeistTafel_wie ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_wie_15_00"); //И что же мне нужно сделать, чтобы вызвать этого духа?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_01"); //Найди гробницу Куарходрона. Она находится на западе долины.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_02"); //Духа вызвать можно при помощи заклинания стражей мертвых. Вот, я записал его .
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_wie_15_00"); //Р С‡С‚Рѕ Р¶Рµ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ, С‡С‚РѕР±С‹ РІС‹Р·РІР°С‚СЊ СЌС‚РѕРіРѕ РґСѓС…Р°?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_01"); //РќР°Р№РґРё РіСЂРѕР±РЅРёС†Сѓ РљСѓР°СЂС…РѕРґСЂРѕРЅР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РЅР° Р·Р°РїР°РґРµ РґРѕР»РёРЅС‹.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_02"); //Р”СѓС…Р° РІС‹Р·РІР°С‚СЊ РјРѕР¶РЅРѕ РїСЂРё РїРѕРјРѕС‰Рё Р·Р°РєР»РёРЅР°РЅРёСЏ СЃС‚СЂР°Р¶РµР№ РјРµСЂС‚РІС‹С…. Р’РѕС‚, СЏ Р·Р°РїРёСЃР°Р» РµРіРѕ .
 	CreateInvItems (self, ItWr_Addon_SUMMONANCIENTGHOST, 1);									
 	B_GiveInvItems (self, other, ItWr_Addon_SUMMONANCIENTGHOST, 1);		
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_03"); //Это все. Теперь тебе нужно лишь отыскать гробницу.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_04"); //Удачи, сын мой!
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_03"); //Р­С‚Рѕ РІСЃРµ. РўРµРїРµСЂСЊ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р»РёС€СЊ РѕС‚С‹СЃРєР°С‚СЊ РіСЂРѕР±РЅРёС†Сѓ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_04"); //РЈРґР°С‡Рё, СЃС‹РЅ РјРѕР№!
 
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Миксир хочет, чтобы я пробудил дух древнего короля воинов Куарходрона и попросил у него совета. Он дал мне бумагу с заклинанием, которое я должен прочитать в гробнице Куарходрона. Она находится на западе."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"РњРёРєСЃРёСЂ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРѕР±СѓРґРёР» РґСѓС… РґСЂРµРІРЅРµРіРѕ РєРѕСЂРѕР»СЏ РІРѕРёРЅРѕРІ РљСѓР°СЂС…РѕРґСЂРѕРЅР° Рё РїРѕРїСЂРѕСЃРёР» Сѓ РЅРµРіРѕ СЃРѕРІРµС‚Р°. РћРЅ РґР°Р» РјРЅРµ Р±СѓРјР°РіСѓ СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј, РєРѕС‚РѕСЂРѕРµ СЏ РґРѕР»Р¶РµРЅ РїСЂРѕС‡РёС‚Р°С‚СЊ РІ РіСЂРѕР±РЅРёС†Рµ РљСѓР°СЂС…РѕРґСЂРѕРЅР°. РћРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РЅР° Р·Р°РїР°РґРµ."); 
 
 	Info_ClearChoices	(DIA_Addon_Myxir_GeistTafel);
 };
@@ -242,7 +242,7 @@ instance DIA_Addon_Myxir_GeistPerm		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_GeistPerm_Condition;
 	information	 = 	DIA_Addon_Myxir_GeistPerm_Info;
 
-	description	 = 	"Расскажи мне еще раз о том, как вызвать дух Куарходрона.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ СЂР°Р· Рѕ С‚РѕРј, РєР°Рє РІС‹Р·РІР°С‚СЊ РґСѓС… РљСѓР°СЂС…РѕРґСЂРѕРЅР°.";
 };
 
 func int DIA_Addon_Myxir_GeistPerm_Condition ()
@@ -255,9 +255,9 @@ func int DIA_Addon_Myxir_GeistPerm_Condition ()
 
 func void DIA_Addon_Myxir_GeistPerm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistPerm_15_00"); //Расскажи мне еще раз о том, как вызвать дух Куарходрона.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_01"); //Найди его гробницу и прочитай в ней заклинание стражей мертвых.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_02"); //Я записал слова. Ты должен просто прочитать их вслух.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistPerm_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РµС‰Рµ СЂР°Р· Рѕ С‚РѕРј, РєР°Рє РІС‹Р·РІР°С‚СЊ РґСѓС… РљСѓР°СЂС…РѕРґСЂРѕРЅР°.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_01"); //РќР°Р№РґРё РµРіРѕ РіСЂРѕР±РЅРёС†Сѓ Рё РїСЂРѕС‡РёС‚Р°Р№ РІ РЅРµР№ Р·Р°РєР»РёРЅР°РЅРёРµ СЃС‚СЂР°Р¶РµР№ РјРµСЂС‚РІС‹С….
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_02"); //РЇ Р·Р°РїРёСЃР°Р» СЃР»РѕРІР°. РўС‹ РґРѕР»Р¶РµРЅ РїСЂРѕСЃС‚Рѕ РїСЂРѕС‡РёС‚Р°С‚СЊ РёС… РІСЃР»СѓС….
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -270,7 +270,7 @@ instance DIA_Addon_Myxir_TalkedToGhost		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_TalkedToGhost_Condition;
 	information	 = 	DIA_Addon_Myxir_TalkedToGhost_Info;
 
-	description	 = 	"Я говорил с Куарходроном.";
+	description	 = 	"РЇ РіРѕРІРѕСЂРёР» СЃ РљСѓР°СЂС…РѕРґСЂРѕРЅРѕРј.";
 };
 func int DIA_Addon_Myxir_TalkedToGhost_Condition ()
 {
@@ -282,10 +282,10 @@ func int DIA_Addon_Myxir_TalkedToGhost_Condition ()
 };
 func void DIA_Addon_Myxir_TalkedToGhost_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_00"); //Я говорил с Куарходроном.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_01"); //(восхищенно) Тебе действительно удалось пробудить его от смертного сна?
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_02"); //Невероятно! Меня все больше и больше восхищают эти зодчие.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_03"); //Кто знает, чего бы они могли добиться, если бы их цивилизация не погибла...
+	AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_00"); //РЇ РіРѕРІРѕСЂРёР» СЃ РљСѓР°СЂС…РѕРґСЂРѕРЅРѕРј.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_01"); //(РІРѕСЃС…РёС‰РµРЅРЅРѕ) РўРµР±Рµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СѓРґР°Р»РѕСЃСЊ РїСЂРѕР±СѓРґРёС‚СЊ РµРіРѕ РѕС‚ СЃРјРµСЂС‚РЅРѕРіРѕ СЃРЅР°?
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_02"); //РќРµРІРµСЂРѕСЏС‚РЅРѕ! РњРµРЅСЏ РІСЃРµ Р±РѕР»СЊС€Рµ Рё Р±РѕР»СЊС€Рµ РІРѕСЃС…РёС‰Р°СЋС‚ СЌС‚Рё Р·РѕРґС‡РёРµ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_03"); //РљС‚Рѕ Р·РЅР°РµС‚, С‡РµРіРѕ Р±С‹ РѕРЅРё РјРѕРіР»Рё РґРѕР±РёС‚СЊСЃСЏ, РµСЃР»Рё Р±С‹ РёС… С†РёРІРёР»РёР·Р°С†РёСЏ РЅРµ РїРѕРіРёР±Р»Р°...
 	MIS_ADDON_Myxir_GeistBeschwoeren = LOG_SUCCESS;
 	
 	B_GivePlayerXP (XP_Addon_Myxir_GeistBeschwoeren);
@@ -293,11 +293,11 @@ func void DIA_Addon_Myxir_TalkedToGhost_Info ()
 	if (Saturas_KnowsHow2GetInTempel == FALSE)
 	&&	(Ghost_SCKnowsHow2GetInAdanosTempel == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_04"); //И что же сказал дух?
-		AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_05"); //Он рассказал мне о том, как попасть в храм Аданоса.
-		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_06"); //Тогда скорее иди к Сатурасу. Его, несомненно, заинтересует то, что ты ему расскажешь.
+		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_04"); //Р С‡С‚Рѕ Р¶Рµ СЃРєР°Р·Р°Р» РґСѓС…?
+		AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_05"); //РћРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ С‚РѕРј, РєР°Рє РїРѕРїР°СЃС‚СЊ РІ С…СЂР°Рј РђРґР°РЅРѕСЃР°.
+		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_06"); //РўРѕРіРґР° СЃРєРѕСЂРµРµ РёРґРё Рє РЎР°С‚СѓСЂР°СЃСѓ. Р•РіРѕ, РЅРµСЃРѕРјРЅРµРЅРЅРѕ, Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚ С‚Рѕ, С‡С‚Рѕ С‚С‹ РµРјСѓ СЂР°СЃСЃРєР°Р¶РµС€СЊ.
 
-		B_LogEntry (TOPIC_Addon_Quarhodron,"Я должен сказать Сатурасу, что пробудил Куарходрона."); 
+		B_LogEntry (TOPIC_Addon_Quarhodron,"РЇ РґРѕР»Р¶РµРЅ СЃРєР°Р·Р°С‚СЊ РЎР°С‚СѓСЂР°СЃСѓ, С‡С‚Рѕ РїСЂРѕР±СѓРґРёР» РљСѓР°СЂС…РѕРґСЂРѕРЅР°."); 
 	};
 };
 
@@ -310,7 +310,7 @@ instance DIA_Addon_Myxir_ADW_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_ADW_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Научи меня этому языку.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ СЌС‚РѕРјСѓ СЏР·С‹РєСѓ.";
 };
 
 var int DIA_Addon_Myxir_ADW_Teach_NoPerm;

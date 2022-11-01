@@ -2,7 +2,7 @@
 // B_Attack
 // --------
 // geht in ZS_Attack, wenn NSC nicht schon in ZS_Attack ist 
-// und setzt Attack Reason (bzw. überschreibt ihn evtl.)
+// und setzt Attack Reason (bzw. ÑŒberschreibt ihn evtl.)
 // ********************************************************
 	
 func void B_Attack (var C_NPC slf, var C_NPC oth, var int attack_reason, var int wait)
@@ -16,7 +16,7 @@ func void B_Attack (var C_NPC slf, var C_NPC oth, var int attack_reason, var int
 	if (attack_reason == AR_SuddenEnemyInferno)
 	{
 		slf.aivar[AIV_EnemyOverride] = FALSE;
-		Npc_SendPassivePerc	(slf, PERC_ASSESSFIGHTSOUND, slf, oth); //EnemyOverride-Aivars von allen anderen Npcs wegschießen!
+		Npc_SendPassivePerc	(slf, PERC_ASSESSFIGHTSOUND, slf, oth); //EnemyOverride-Aivars von allen anderen Npcs wegschieÐ¯en!
 	};
 
 	// ------ wenn aus ZS_Talk B_Attack aufgerufen wird ------
@@ -31,7 +31,7 @@ func void B_Attack (var C_NPC slf, var C_NPC oth, var int attack_reason, var int
 	if (Npc_IsInState (slf, ZS_Attack))
 	&& (Hlp_GetInstanceID(oth) == slf.aivar[AIV_LASTTARGET])		//LASTTARGET ist hier richtig initialisiert, weil NSC HIER im ZS_Attack ist!
 	{
-		// ------ evtl. AttackReason ÄNDERN ------
+		// ------ evtl. AttackReason Ð”NDERN ------
 		if (!C_NpcHasAttackReasonToKill (slf))
 		&& (attack_reason > slf.aivar[AIV_ATTACKREASON]) //wenn neuer Grund wichtiger als vorheriger
 		{
@@ -54,7 +54,7 @@ func void B_Attack (var C_NPC slf, var C_NPC oth, var int attack_reason, var int
 	};
 
 	
-	//MEMORIZE CRIMES				//AR ÄNDERT sich NUR, wenn schwerer als vorheriger (s.o.)
+	//MEMORIZE CRIMES				//AR Ð”NDERT sich NUR, wenn schwerer als vorheriger (s.o.)
 	
 	// ------ CRIME_SHEEPKILLER ------
 	if (slf.aivar[AIV_ATTACKREASON] == AR_SheepKiller)
@@ -98,7 +98,7 @@ func void B_Attack (var C_NPC slf, var C_NPC oth, var int attack_reason, var int
 	
 	//FUNC
 	
-	// ------ AR_KILL ------						//HACK - geht davon aus, daß Spieler auf jeden Fall JETZT stirbt (daher brauchen die Werte später nicht resettet zu werden)
+	// ------ AR_KILL ------						//HACK - geht davon aus, daÐ¯ Spieler auf jeden Fall JETZT stirbt (daher brauchen die Werte spÐ´ter nicht resettet zu werden)
 	if (slf.aivar[AIV_ATTACKREASON] == AR_KILL)
 	{
 		B_SetAttitude (slf, ATT_HOSTILE);
@@ -110,7 +110,7 @@ func void B_Attack (var C_NPC slf, var C_NPC oth, var int attack_reason, var int
 		slf.aivar[AIV_LastFightComment] = FALSE;
 	};
 	
-	if (!Npc_IsInState (slf, ZS_Talk)) //HIER RAUS: führt aus DIA heraus zum Löschen des AI_StopProcessInfo
+	if (!Npc_IsInState (slf, ZS_Talk)) //HIER RAUS: fÑŒhrt aus DIA heraus zum LÑ†schen des AI_StopProcessInfo
 	{
 		Npc_ClearAIQueue(slf); 
 	};

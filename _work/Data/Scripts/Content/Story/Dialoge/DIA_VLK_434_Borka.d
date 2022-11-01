@@ -76,11 +76,11 @@ func int DIA_Borka_PISSOFF_Condition ()
 };
 func void DIA_Borka_PISSOFF_Info ()
 {
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Эй ты! Куда ты идешь? Не важно, какие у тебя планы - они могут подождать.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Ты стоишь перед входом в жемчужину Хориниса - КРАСНЫЙ ФОНАРЬ. Это самый шикарный бордель во всей Миртане, будь я проклят!
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //Моряки из самых дальних уголков света приплывают сюда, чтобы провести несколько незабываемых ночей в Красном Фонаре.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //А теперь и у тебя появился такой шанс - нет, честь - провести ночь с Надей, самым страстным цветком богов!
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //Заходи же, и ты познаешь наслаждение, о котором другие не могут даже и мечтать!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Р­Р№ С‚С‹! РљСѓРґР° С‚С‹ РёРґРµС€СЊ? РќРµ РІР°Р¶РЅРѕ, РєР°РєРёРµ Сѓ С‚РµР±СЏ РїР»Р°РЅС‹ - РѕРЅРё РјРѕРіСѓС‚ РїРѕРґРѕР¶РґР°С‚СЊ.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //РўС‹ СЃС‚РѕРёС€СЊ РїРµСЂРµРґ РІС…РѕРґРѕРј РІ Р¶РµРјС‡СѓР¶РёРЅСѓ РҐРѕСЂРёРЅРёСЃР° - РљР РђРЎРќР«Р™ Р¤РћРќРђР Р¬. Р­С‚Рѕ СЃР°РјС‹Р№ С€РёРєР°СЂРЅС‹Р№ Р±РѕСЂРґРµР»СЊ РІРѕ РІСЃРµР№ РњРёСЂС‚Р°РЅРµ, Р±СѓРґСЊ СЏ РїСЂРѕРєР»СЏС‚!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //РњРѕСЂСЏРєРё РёР· СЃР°РјС‹С… РґР°Р»СЊРЅРёС… СѓРіРѕР»РєРѕРІ СЃРІРµС‚Р° РїСЂРёРїР»С‹РІР°СЋС‚ СЃСЋРґР°, С‡С‚РѕР±С‹ РїСЂРѕРІРµСЃС‚Рё РЅРµСЃРєРѕР»СЊРєРѕ РЅРµР·Р°Р±С‹РІР°РµРјС‹С… РЅРѕС‡РµР№ РІ РљСЂР°СЃРЅРѕРј Р¤РѕРЅР°СЂРµ.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //Рђ С‚РµРїРµСЂСЊ Рё Сѓ С‚РµР±СЏ РїРѕСЏРІРёР»СЃСЏ С‚Р°РєРѕР№ С€Р°РЅСЃ - РЅРµС‚, С‡РµСЃС‚СЊ - РїСЂРѕРІРµСЃС‚Рё РЅРѕС‡СЊ СЃ РќР°РґРµР№, СЃР°РјС‹Рј СЃС‚СЂР°СЃС‚РЅС‹Рј С†РІРµС‚РєРѕРј Р±РѕРіРѕРІ!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //Р—Р°С…РѕРґРё Р¶Рµ, Рё С‚С‹ РїРѕР·РЅР°РµС€СЊ РЅР°СЃР»Р°Р¶РґРµРЅРёРµ, Рѕ РєРѕС‚РѕСЂРѕРј РґСЂСѓРіРёРµ РЅРµ РјРѕРіСѓС‚ РґР°Р¶Рµ Рё РјРµС‡С‚Р°С‚СЊ!
 	
 	AI_StopProcessInfos (self);
 };
@@ -109,8 +109,8 @@ func int DIA_Borka_TROUBLE_Condition ()
 };
 func void DIA_Borka_TROUBLE_Info ()
 {
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Что ты стоишь здесь и колеблешься? Заходи внутрь, познакомься с нашей любвеобильной Надей.
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Это страстное создание ночи придаст твоей жизни новый смысл!
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Р§С‚Рѕ С‚С‹ СЃС‚РѕРёС€СЊ Р·РґРµСЃСЊ Рё РєРѕР»РµР±Р»РµС€СЊСЃСЏ? Р—Р°С…РѕРґРё РІРЅСѓС‚СЂСЊ, РїРѕР·РЅР°РєРѕРјСЊСЃСЏ СЃ РЅР°С€РµР№ Р»СЋР±РІРµРѕР±РёР»СЊРЅРѕР№ РќР°РґРµР№.
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Р­С‚Рѕ СЃС‚СЂР°СЃС‚РЅРѕРµ СЃРѕР·РґР°РЅРёРµ РЅРѕС‡Рё РїСЂРёРґР°СЃС‚ С‚РІРѕРµР№ Р¶РёР·РЅРё РЅРѕРІС‹Р№ СЃРјС‹СЃР»!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ instance DIA_Borka_Smoke		(C_INFO)
 	condition	 = 	DIA_Borka_Smoke_Condition;
 	information	 = 	DIA_Borka_Smoke_Info;
 	permanent	 =  TRUE;
-	description	 =  "Ты не знаешь, где можно купить травки?";
+	description	 =  "РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РіРґРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?";
 };
 
 func int DIA_Borka_Smoke_Condition ()
@@ -136,8 +136,8 @@ func int DIA_Borka_Smoke_Condition ()
 };
 func void DIA_Borka_Smoke_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Ты не знаешь, где можно купить травки?
-	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //Нет, проваливай!
+	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РіРґРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ С‚СЂР°РІРєРё?
+	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //РќРµС‚, РїСЂРѕРІР°Р»РёРІР°Р№!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -150,7 +150,7 @@ instance DIA_Borka_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Borka_BUYHERB_Condition;
 	information	 = 	DIA_Borka_BUYHERB_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Я слышал, ты продаешь травку.";
+	description	 = 	"РЇ СЃР»С‹С€Р°Р», С‚С‹ РїСЂРѕРґР°РµС€СЊ С‚СЂР°РІРєСѓ.";
 };
 func int DIA_Borka_BUYHERB_Condition ()
 {
@@ -166,34 +166,34 @@ func void DIA_Borka_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //Я слышал, ты продаешь травку.
+	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //РЇ СЃР»С‹С€Р°Р», С‚С‹ РїСЂРѕРґР°РµС€СЊ С‚СЂР°РІРєСѓ.
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_01"); //Извините, мистер стражник, сэр. Это, должно быть, какая-то ошибка. Я ничего не знаю ни о какой травке.
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_01"); //РР·РІРёРЅРёС‚Рµ, РјРёСЃС‚РµСЂ СЃС‚СЂР°Р¶РЅРёРє, СЃСЌСЂ. Р­С‚Рѕ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РєР°РєР°СЏ-С‚Рѕ РѕС€РёР±РєР°. РЇ РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ РЅРё Рѕ РєР°РєРѕР№ С‚СЂР°РІРєРµ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //Кто это сказал?
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //РљС‚Рѕ СЌС‚Рѕ СЃРєР°Р·Р°Р»?
 	
 		Info_ClearChoices 	(DIA_Borka_BUYHERB);
-		Info_AddChoice		(DIA_Borka_BUYHERB,"Я думаю, это не важно.",DIA_Borka_BUYHERB_Egal);
-		Info_AddChoice		(DIA_Borka_BUYHERB,"Надя сказала.",DIA_Borka_BUYHERB_Nadja);
+		Info_AddChoice		(DIA_Borka_BUYHERB,"РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅРµ РІР°Р¶РЅРѕ.",DIA_Borka_BUYHERB_Egal);
+		Info_AddChoice		(DIA_Borka_BUYHERB,"РќР°РґСЏ СЃРєР°Р·Р°Р»Р°.",DIA_Borka_BUYHERB_Nadja);
 	};
 };
 FUNC VOID DIA_Borka_BUYHERB_Egal ()
 {
-	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //Я думаю, это не важно.
-	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Я просто хочу знать, кто прислал тебя, чтобы удостовериться, что тебе можно доверять.
+	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //РЇ РґСѓРјР°СЋ, СЌС‚Рѕ РЅРµ РІР°Р¶РЅРѕ.
+	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ Р·РЅР°С‚СЊ, РєС‚Рѕ РїСЂРёСЃР»Р°Р» С‚РµР±СЏ, С‡С‚РѕР±С‹ СѓРґРѕСЃС‚РѕРІРµСЂРёС‚СЊСЃСЏ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ.
 	
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
-	Info_AddChoice		(DIA_Borka_BUYHERB,"Надя сказала.",DIA_Borka_BUYHERB_Nadja);
-	Info_AddChoice		(DIA_Borka_BUYHERB,"Так мы с тобой договоримся или нет?",DIA_Borka_BUYHERB_Deal);
+	Info_AddChoice		(DIA_Borka_BUYHERB,"РќР°РґСЏ СЃРєР°Р·Р°Р»Р°.",DIA_Borka_BUYHERB_Nadja);
+	Info_AddChoice		(DIA_Borka_BUYHERB,"РўР°Рє РјС‹ СЃ С‚РѕР±РѕР№ РґРѕРіРѕРІРѕСЂРёРјСЃСЏ РёР»Рё РЅРµС‚?",DIA_Borka_BUYHERB_Deal);
 };
 FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 {
-	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //Надя сказала.
-	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Ну, эта пташка еще и не такое напоет. Знаешь, тебе не стоит верить всему, что болтает эта девка.
+	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //РќР°РґСЏ СЃРєР°Р·Р°Р»Р°.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //РќСѓ, СЌС‚Р° РїС‚Р°С€РєР° РµС‰Рµ Рё РЅРµ С‚Р°РєРѕРµ РЅР°РїРѕРµС‚. Р—РЅР°РµС€СЊ, С‚РµР±Рµ РЅРµ СЃС‚РѕРёС‚ РІРµСЂРёС‚СЊ РІСЃРµРјСѓ, С‡С‚Рѕ Р±РѕР»С‚Р°РµС‚ СЌС‚Р° РґРµРІРєР°.
 	
 	Nadja_Victim = TRUE; 
 	Undercover_Failed = TRUE;
@@ -201,9 +201,9 @@ FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 };
 FUNC VOID DIA_Borka_BUYHERB_Deal ()
 {
-	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //Так мы с тобой договоримся или нет?
+	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //РўР°Рє РјС‹ СЃ С‚РѕР±РѕР№ РґРѕРіРѕРІРѕСЂРёРјСЃСЏ РёР»Рё РЅРµС‚?
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //... хорошо... договоримся. Ты даешь мне 50 золотых монет, и получаешь свою травку. Никакой торговли.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //... С…РѕСЂРѕС€Рѕ... РґРѕРіРѕРІРѕСЂРёРјСЃСЏ. РўС‹ РґР°РµС€СЊ РјРЅРµ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚, Рё РїРѕР»СѓС‡Р°РµС€СЊ СЃРІРѕСЋ С‚СЂР°РІРєСѓ. РќРёРєР°РєРѕР№ С‚РѕСЂРіРѕРІР»Рё.
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
 	Borka_Deal = TRUE;
 };	
@@ -217,7 +217,7 @@ instance DIA_Borka_SECOND_CHANCE		(C_INFO)
 	condition	 = 	DIA_Borka_SECOND_CHANCE_Condition;
 	information	 = 	DIA_Borka_SECOND_CHANCE_Info;
 	permanent	 =  TRUE;  	
-	description	 = 	"Договорились (заплатить 50 золотых).";
+	description	 = 	"Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ (Р·Р°РїР»Р°С‚РёС‚СЊ 50 Р·РѕР»РѕС‚С‹С…).";
 };
 func int DIA_Borka_SECOND_CHANCE_Condition ()
 {	
@@ -232,11 +232,11 @@ func int DIA_Borka_SECOND_CHANCE_Condition ()
 };
 func void DIA_Borka_SECOND_CHANCE_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //Договорились. Вот твое золото.
+	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ. Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ.
 	B_GiveInvItems (hero, self, ItMi_Gold, 50);
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //Хорошо...
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //РҐРѕСЂРѕС€Рѕ...
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //... вот, держи свежий, смолистый косячок.
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //... РІРѕС‚, РґРµСЂР¶Рё СЃРІРµР¶РёР№, СЃРјРѕР»РёСЃС‚С‹Р№ РєРѕСЃСЏС‡РѕРє.
 	B_GiveInvItems (self, hero, ItMi_Joint, 1);
 	Borka_Deal = 2;
 	AI_StopProcessInfos (self);

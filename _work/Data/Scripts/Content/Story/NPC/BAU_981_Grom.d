@@ -1,7 +1,7 @@
 INSTANCE BAU_981_Grom (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãðîì";
+	name 		= "Ð“Ñ€Ð¾Ð¼";
 	guild 		= GIL_OUT;
 	id 			= 981;
 	voice 		= 08;

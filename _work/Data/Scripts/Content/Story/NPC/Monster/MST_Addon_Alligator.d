@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Addon_Alligator (C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Аллигатор";
+	name							=	"РђР»Р»РёРіР°С‚РѕСЂ";
 	guild							=	GIL_Alligator;
 	aivar[AIV_MM_REAL_ID]			= 	ID_Alligator;
 	level							=	12;

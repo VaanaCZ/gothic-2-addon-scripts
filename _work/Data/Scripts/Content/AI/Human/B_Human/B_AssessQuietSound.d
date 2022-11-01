@@ -2,8 +2,8 @@
 // B_AssessQuietSound
 // ------------------
 // aufgerufen durch Wahrnehmung PERC_ASSESSQUIETSOUND 
-// (Schrittgeräusche des Spielers oder fallengelassenes Item)
-// PERC_DIST_INTERMEDIAT wegen Monster-AI eingestellt, hier verkürzt 
+// (SchrittgerĞ´usche des Spielers oder fallengelassenes Item)
+// PERC_DIST_INTERMEDIAT wegen Monster-AI eingestellt, hier verkÑŒrzt 
 // *****************************************************************
 
 func void B_AssessQuietSound ()
@@ -16,7 +16,7 @@ func void B_AssessQuietSound ()
 		return;
 	};
 	
-	// ------- Burgzinnenwachen sollen sich nicht zu Tode stürzen, etc. ------
+	// ------- Burgzinnenwachen sollen sich nicht zu Tode stÑŒrzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	{
 		return;
@@ -29,7 +29,7 @@ func void B_AssessQuietSound ()
 		return;
 	};
 
-	// ------- Schlafende wecken oder Schritte im Raum hören ------
+	// ------- Schlafende wecken oder Schritte im Raum hÑ†ren ------
 	if (B_AssessEnterRoom())
 	{ 
 		return;

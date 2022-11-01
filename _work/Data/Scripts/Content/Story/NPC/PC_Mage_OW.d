@@ -8,7 +8,7 @@
 INSTANCE PC_Mage_OW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Милтен";
+	name 		= "РњРёР»С‚РµРЅ";
 	guild 		= GIL_KDF;
 	id 			= 2;
 	voice 		= 3;

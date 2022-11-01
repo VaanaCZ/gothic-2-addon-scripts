@@ -33,7 +33,7 @@ instance DIA_Angar_DI_HALLO		(C_INFO)
 	information	 = 	DIA_Angar_DI_HALLO_Info;
 	permanent	 = 	TRUE;
 
-	description 	 =  "Как ты?";
+	description 	 =  "РљР°Рє С‚С‹?";
 };
 
 func int DIA_Angar_DI_HALLO_Condition ()
@@ -46,16 +46,16 @@ func int DIA_Angar_DI_HALLO_Condition ()
 
 func void DIA_Angar_DI_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_HALLO_15_00"); //Как ты?
+	AI_Output			(other, self, "DIA_Angar_DI_HALLO_15_00"); //РљР°Рє С‚С‹?
 
 	if ((Npc_IsDead(UndeadDragon)) == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_01"); //Головные боли стали совсем невыносимыми.
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_02"); //Черт. Это когда-нибудь должно кончиться.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_01"); //Р“РѕР»РѕРІРЅС‹Рµ Р±РѕР»Рё СЃС‚Р°Р»Рё СЃРѕРІСЃРµРј РЅРµРІС‹РЅРѕСЃРёРјС‹РјРё.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_02"); //Р§РµСЂС‚. Р­С‚Рѕ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РґРѕР»Р¶РЅРѕ РєРѕРЅС‡РёС‚СЊСЃСЏ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_03"); //Не волнуйся обо мне. Нужно выбираться отсюда.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_03"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ РѕР±Рѕ РјРЅРµ. РќСѓР¶РЅРѕ РІС‹Р±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
 	};
 
 };
@@ -84,18 +84,18 @@ func int DIA_Angar_DI_ORKS_Condition ()
 
 func void DIA_Angar_DI_ORKS_Info ()
 {
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_00"); //Тебе, черт возьми, лучше поторопиться. Следующая атака орков может стоить нам жизней.
-	AI_Output			(other, self, "DIA_Angar_DI_ORKS_15_01"); //Я делаю, что могу.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_02"); //Этого недостаточно.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_00"); //РўРµР±Рµ, С‡РµСЂС‚ РІРѕР·СЊРјРё, Р»СѓС‡С€Рµ РїРѕС‚РѕСЂРѕРїРёС‚СЊСЃСЏ. РЎР»РµРґСѓСЋС‰Р°СЏ Р°С‚Р°РєР° РѕСЂРєРѕРІ РјРѕР¶РµС‚ СЃС‚РѕРёС‚СЊ РЅР°Рј Р¶РёР·РЅРµР№.
+	AI_Output			(other, self, "DIA_Angar_DI_ORKS_15_01"); //РЇ РґРµР»Р°СЋ, С‡С‚Рѕ РјРѕРіСѓ.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_02"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 
 	Info_ClearChoices	(DIA_Angar_DI_ORKS);
-	Info_AddChoice	(DIA_Angar_DI_ORKS, "Расслабься.", DIA_Angar_DI_ORKS_no );
-	Info_AddChoice	(DIA_Angar_DI_ORKS, "Так помоги мне ...", DIA_Angar_DI_ORKS_follow );
+	Info_AddChoice	(DIA_Angar_DI_ORKS, "Р Р°СЃСЃР»Р°Р±СЊСЃСЏ.", DIA_Angar_DI_ORKS_no );
+	Info_AddChoice	(DIA_Angar_DI_ORKS, "РўР°Рє РїРѕРјРѕРіРё РјРЅРµ ...", DIA_Angar_DI_ORKS_follow );
 };
 func void DIA_Angar_DI_ORKS_follow ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //Так помоги мне и прекрати скулить.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //Хорошо. Но ты пойдешь первым. Вперед!
+	AI_Output			(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //РўР°Рє РїРѕРјРѕРіРё РјРЅРµ Рё РїСЂРµРєСЂР°С‚Рё СЃРєСѓР»РёС‚СЊ.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //РҐРѕСЂРѕС€Рѕ. РќРѕ С‚С‹ РїРѕР№РґРµС€СЊ РїРµСЂРІС‹Рј. Р’РїРµСЂРµРґ!
 	AI_StopProcessInfos (self); 
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"FollowDI");
@@ -104,8 +104,8 @@ func void DIA_Angar_DI_ORKS_follow ()
 
 func void DIA_Angar_DI_ORKS_no ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //Расслабься.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //Тебе легко говорить. А я здесь вот-вот сойду с ума.
+	AI_Output			(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //РўРµР±Рµ Р»РµРіРєРѕ РіРѕРІРѕСЂРёС‚СЊ. Рђ СЏ Р·РґРµСЃСЊ РІРѕС‚-РІРѕС‚ СЃРѕР№РґСѓ СЃ СѓРјР°.
 	AI_StopProcessInfos (self); 
 };
 
@@ -120,7 +120,7 @@ instance DIA_Angar_DI_FOLLOW		(C_INFO)
 	information	 = 	DIA_Angar_DI_FOLLOW_Info;
 	permanent	 = 	TRUE;
 
-	description  =  "Оставайся на месте.";
+	description  =  "РћСЃС‚Р°РІР°Р№СЃСЏ РЅР° РјРµСЃС‚Рµ.";
 
 };
 
@@ -134,12 +134,12 @@ func int DIA_Angar_DI_FOLLOW_Condition ()
 
 func void DIA_Angar_DI_FOLLOW_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_00"); //Оставайся на месте.
+	AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_00"); //РћСЃС‚Р°РІР°Р№СЃСЏ РЅР° РјРµСЃС‚Рµ.
 
 	if (Npc_GetDistToWP(self,"SKELETTE")<4000) 
 		{
-			AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //Об остальном я сам позабочусь.
-			AI_Output			(self ,other, "DIA_Angar_DI_FOLLOW_04_02"); //Удачи.
+			AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //РћР± РѕСЃС‚Р°Р»СЊРЅРѕРј СЏ СЃР°Рј РїРѕР·Р°Р±РѕС‡СѓСЃСЊ.
+			AI_Output			(self ,other, "DIA_Angar_DI_FOLLOW_04_02"); //РЈРґР°С‡Рё.
 			
 			AI_StopProcessInfos (self); 
 			Npc_ExchangeRoutine	(self,"Start");
@@ -148,7 +148,7 @@ func void DIA_Angar_DI_FOLLOW_Info ()
 		}
 	else
 		{	
-			AI_Output			(self, other, "DIA_Angar_DI_FOLLOW_04_03"); //Конечно.
+			AI_Output			(self, other, "DIA_Angar_DI_FOLLOW_04_03"); //РљРѕРЅРµС‡РЅРѕ.
 
 			AI_StopProcessInfos (self); 
 						
@@ -191,7 +191,7 @@ instance DIA_Angar_DI_FOLLOWAGAIN		(C_INFO)
 	information	 = 	DIA_Angar_DI_FOLLOWAGAIN_Info;
 	permanent	 = 	TRUE;
 
-	description  =  "Иди за мной.";
+	description  =  "РРґРё Р·Р° РјРЅРѕР№.";
 
 };
 
@@ -205,8 +205,8 @@ func int DIA_Angar_DI_FOLLOWAGAIN_Condition ()
 
 func void DIA_Angar_DI_FOLLOWAGAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_FOLLOWAGAIN_15_00"); //Иди за мной.
-	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWAGAIN_04_01"); //Ты идешь первым.
+	AI_Output			(other, self, "DIA_Angar_DI_FOLLOWAGAIN_15_00"); //РРґРё Р·Р° РјРЅРѕР№.
+	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWAGAIN_04_01"); //РўС‹ РёРґРµС€СЊ РїРµСЂРІС‹Рј.
 	Angar_DI_Party = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"FollowDI");
@@ -239,7 +239,7 @@ func int DIA_Angar_DI_FOLLOWSTOP_Condition ()
 
 func void DIA_Angar_DI_FOLLOWSTOP_Info ()
 {
-	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWSTOP_04_00"); //Аааа! Это головная боль сведет меня с ума!
+	AI_Output			(self, other, "DIA_Angar_DI_FOLLOWSTOP_04_00"); //РђР°Р°Р°! Р­С‚Рѕ РіРѕР»РѕРІРЅР°СЏ Р±РѕР»СЊ СЃРІРµРґРµС‚ РјРµРЅСЏ СЃ СѓРјР°!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -252,7 +252,7 @@ instance DIA_Angar_DI_UNDEADDRGDEAD		(C_INFO)
 	condition	 = 	DIA_Angar_DI_UNDEADDRGDEAD_Condition;
 	information	 = 	DIA_Angar_DI_UNDEADDRGDEAD_Info;
 	
-	description	 = 	"Все кончено.";
+	description	 = 	"Р’СЃРµ РєРѕРЅС‡РµРЅРѕ.";
 
 };
 
@@ -266,19 +266,19 @@ func int DIA_Angar_DI_UNDEADDRGDEAD_Condition ()
 
 func void DIA_Angar_DI_UNDEADDRGDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //Все кончено.
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //Можем мы, наконец, выбираться отсюда?
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //Да. Враг повержен.
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //Тогда не будем терять времени. Иди к капитану и скажи ему, чтобы он поднимал якорь.
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //Р’СЃРµ РєРѕРЅС‡РµРЅРѕ.
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //РњРѕР¶РµРј РјС‹, РЅР°РєРѕРЅРµС†, РІС‹Р±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°?
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //Р”Р°. Р’СЂР°Рі РїРѕРІРµСЂР¶РµРЅ.
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //РўРѕРіРґР° РЅРµ Р±СѓРґРµРј С‚РµСЂСЏС‚СЊ РІСЂРµРјРµРЅРё. РРґРё Рє РєР°РїРёС‚Р°РЅСѓ Рё СЃРєР°Р¶Рё РµРјСѓ, С‡С‚РѕР±С‹ РѕРЅ РїРѕРґРЅРёРјР°Р» СЏРєРѕСЂСЊ.
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //Надеюсь, больше никого из членов твоей секты не осталось в живых.
-		AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Все может быть. Ищущие были очень сильны. Они даже меня чуть не поработили. Кто знает?
+		AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //РќР°РґРµСЋСЃСЊ, Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРѕ РёР· С‡Р»РµРЅРѕРІ С‚РІРѕРµР№ СЃРµРєС‚С‹ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ РІ Р¶РёРІС‹С….
+		AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Р’СЃРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ. РС‰СѓС‰РёРµ Р±С‹Р»Рё РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹. РћРЅРё РґР°Р¶Рµ РјРµРЅСЏ С‡СѓС‚СЊ РЅРµ РїРѕСЂР°Р±РѕС‚РёР»Рё. РљС‚Рѕ Р·РЅР°РµС‚?
 	};
 
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //Что ты будешь делать дальше?
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Может быть, я осяду где-нибудь и стану фермером. Я устал от сражений.
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ РѕСЃСЏРґСѓ РіРґРµ-РЅРёР±СѓРґСЊ Рё СЃС‚Р°РЅСѓ С„РµСЂРјРµСЂРѕРј. РЇ СѓСЃС‚Р°Р» РѕС‚ СЃСЂР°Р¶РµРЅРёР№.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };
@@ -330,7 +330,7 @@ instance DIA_Angar_DI_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_DI_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_DI_FOUNDAMULETT_Info;
 
-	description	 = 	"Я нашел твой амулет.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РІРѕР№ Р°РјСѓР»РµС‚.";
 };
 
 func int DIA_Angar_DI_FOUNDAMULETT_Condition ()

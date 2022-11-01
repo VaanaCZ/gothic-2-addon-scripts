@@ -7,11 +7,11 @@
 instance VLK_4250_Jorgen (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Éîðãåí";
+	name 		= "Ð™Ð¾Ñ€Ð³ÐµÐ½";
 	guild 		= GIL_NONE;
 	id 			= 4250;
 	voice 		= 7;
-	flags       = NPC_FLAG_IMMORTAL;	//Joly: Immortal Kapitän fürs Schiff im Kapitel 5! Mortal, Optionale Kapitäne: Torlof und Jack!!!!!!!!!						
+	flags       = NPC_FLAG_IMMORTAL;	//Joly: Immortal KapitÐ´n fÑŒrs Schiff im Kapitel 5! Mortal, Optionale KapitÐ´ne: Torlof und Jack!!!!!!!!!						
 	npctype		= NPCTYPE_MAIN;
 	
 	// ------ Attribute ------
@@ -35,7 +35,7 @@ instance VLK_4250_Jorgen (Npc_Default)
 	B_GiveNpcTalents (self);
 	
 	// ------ Kampf-Talente ------																		
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	B_SetFightSkills (self, 70); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_4250;

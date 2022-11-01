@@ -38,7 +38,7 @@ FUNC INT DIA_Addon_PIR_Tom_Hi_Condition()
 FUNC VOID DIA_Addon_PIR_Tom_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_PIR_Tom_Hi_15_00");//Und, wie geht's dir?
-	AI_Output (self, other, "DIA_Addon_PIR_Tom_Hi_11_01");//Die Piraten haben mich aufgenommen. Guck mal, sie haben mir sogar eine ihrer Rüstungen gegeben.
+	AI_Output (self, other, "DIA_Addon_PIR_Tom_Hi_11_01");//Die Piraten haben mich aufgenommen. Guck mal, sie haben mir sogar eine ihrer RÑŒstungen gegeben.
 	AI_Output (self, other, "DIA_Addon_PIR_Tom_Hi_11_02");//Aber ... Moment mal - du bist gar kein Bandit? Ich dachte ...
 	AI_Output (other, self, "DIA_Addon_PIR_Tom_Hi_15_03");//(zwinkert) Pssst ... bleib ruhig. Alles ist gut.
 	

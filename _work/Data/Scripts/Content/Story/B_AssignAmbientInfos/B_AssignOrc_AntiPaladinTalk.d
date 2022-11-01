@@ -7,22 +7,22 @@ func void B_AssignORC_AntiPaladinTalk (var C_NPC Antipaladin)
 {	
 	 	if (AntiPaladinTalkcount == 0)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_01"); //КХРОКГНАР! Хозяин говорить ты паладин теперь! Хозяин прав. Хозяин всегда прав.
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_02"); //Мы, предводители гордой армии орков, теперь сами прийти убить великий паладин.
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_03"); //Хаген и его люди будут уничтожены. Даже ты не смочь помочь им.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_01"); //РљРҐР РћРљР“РќРђР ! РҐРѕР·СЏРёРЅ РіРѕРІРѕСЂРёС‚СЊ С‚С‹ РїР°Р»Р°РґРёРЅ С‚РµРїРµСЂСЊ! РҐРѕР·СЏРёРЅ РїСЂР°РІ. РҐРѕР·СЏРёРЅ РІСЃРµРіРґР° РїСЂР°РІ.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_02"); //РњС‹, РїСЂРµРґРІРѕРґРёС‚РµР»Рё РіРѕСЂРґРѕР№ Р°СЂРјРёРё РѕСЂРєРѕРІ, С‚РµРїРµСЂСЊ СЃР°РјРё РїСЂРёР№С‚Рё СѓР±РёС‚СЊ РІРµР»РёРєРёР№ РїР°Р»Р°РґРёРЅ.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_03"); //РҐР°РіРµРЅ Рё РµРіРѕ Р»СЋРґРё Р±СѓРґСѓС‚ СѓРЅРёС‡С‚РѕР¶РµРЅС‹. Р”Р°Р¶Рµ С‚С‹ РЅРµ СЃРјРѕС‡СЊ РїРѕРјРѕС‡СЊ РёРј.
 			B_GivePlayerXP (XP_Ambient);
 		}
 		else if (AntiPaladinTalkcount == 1)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_04"); //Хозяин говорить предводителям орков, принесите голову великого паладина. Ты умирать от моей руки. КХРОКГНАР!
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_04"); //РҐРѕР·СЏРёРЅ РіРѕРІРѕСЂРёС‚СЊ РїСЂРµРґРІРѕРґРёС‚РµР»СЏРј РѕСЂРєРѕРІ, РїСЂРёРЅРµСЃРёС‚Рµ РіРѕР»РѕРІСѓ РІРµР»РёРєРѕРіРѕ РїР°Р»Р°РґРёРЅР°. РўС‹ СѓРјРёСЂР°С‚СЊ РѕС‚ РјРѕРµР№ СЂСѓРєРё. РљРҐР РћРљР“РќРђР !
 		}
 		else if (AntiPaladinTalkcount == 2)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_05"); //Мы, предводители орков, теперь сами идти убивать тебя, паладин.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_05"); //РњС‹, РїСЂРµРґРІРѕРґРёС‚РµР»Рё РѕСЂРєРѕРІ, С‚РµРїРµСЂСЊ СЃР°РјРё РёРґС‚Рё СѓР±РёРІР°С‚СЊ С‚РµР±СЏ, РїР°Р»Р°РґРёРЅ.
 		}
 		else 
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_06"); //КХРОКГНАР! Мы убивать тебя, паладин.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_06"); //РљРҐР РћРљР“РќРђР ! РњС‹ СѓР±РёРІР°С‚СЊ С‚РµР±СЏ, РїР°Р»Р°РґРёРЅ.
 		};
 		AntiPaladinTalkcount = AntiPaladinTalkcount + 1;
 		TalkedTo_AntiPaladin = TRUE;

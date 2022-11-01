@@ -34,7 +34,7 @@ instance DIA_Rosi_HALLO		(C_INFO)
 	condition	 = 	DIA_Rosi_HALLO_Condition;
 	information	 = 	DIA_Rosi_HALLO_Info;
 
-	description	 = 	"С тобой все в порядке?";
+	description	 = 	"РЎ С‚РѕР±РѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Rosi_HALLO_Condition ()
@@ -44,13 +44,13 @@ func int DIA_Rosi_HALLO_Condition ()
 
 func void DIA_Rosi_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_HALLO_15_00"); //У тебя все в порядке?
-	AI_Output			(self, other, "DIA_Rosi_HALLO_17_01"); //Ну, более-менее. Моя спина болит от постоянной тяжелой работы. А что ты делаешь здесь? У нас нечасто бывают гости.
+	AI_Output			(other, self, "DIA_Rosi_HALLO_15_00"); //РЈ С‚РµР±СЏ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output			(self, other, "DIA_Rosi_HALLO_17_01"); //РќСѓ, Р±РѕР»РµРµ-РјРµРЅРµРµ. РњРѕСЏ СЃРїРёРЅР° Р±РѕР»РёС‚ РѕС‚ РїРѕСЃС‚РѕСЏРЅРЅРѕР№ С‚СЏР¶РµР»РѕР№ СЂР°Р±РѕС‚С‹. Рђ С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ? РЈ РЅР°СЃ РЅРµС‡Р°СЃС‚Рѕ Р±С‹РІР°СЋС‚ РіРѕСЃС‚Рё.
 
 	if ((hero.guild != GIL_MIL))
 	{
-		AI_Output			(self, other, "DIA_Rosi_HALLO_17_02"); //Обычно приходят либо головорезы с гор, либо эти ужасные солдаты ополчения из города.
-		AI_Output			(self, other, "DIA_Rosi_HALLO_17_03"); //Последнее время они наведываются на нашу ферму очень часто. Но ты не похож на одного из них.
+		AI_Output			(self, other, "DIA_Rosi_HALLO_17_02"); //РћР±С‹С‡РЅРѕ РїСЂРёС…РѕРґСЏС‚ Р»РёР±Рѕ РіРѕР»РѕРІРѕСЂРµР·С‹ СЃ РіРѕСЂ, Р»РёР±Рѕ СЌС‚Рё СѓР¶Р°СЃРЅС‹Рµ СЃРѕР»РґР°С‚С‹ РѕРїРѕР»С‡РµРЅРёСЏ РёР· РіРѕСЂРѕРґР°.
+		AI_Output			(self, other, "DIA_Rosi_HALLO_17_03"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ РѕРЅРё РЅР°РІРµРґС‹РІР°СЋС‚СЃСЏ РЅР° РЅР°С€Сѓ С„РµСЂРјСѓ РѕС‡РµРЅСЊ С‡Р°СЃС‚Рѕ. РќРѕ С‚С‹ РЅРµ РїРѕС…РѕР¶ РЅР° РѕРґРЅРѕРіРѕ РёР· РЅРёС….
 	};
 };
 
@@ -65,7 +65,7 @@ instance DIA_Rosi_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Rosi_WASMACHSTDU_Condition;
 	information	 = 	DIA_Rosi_WASMACHSTDU_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Rosi_WASMACHSTDU_Condition ()
@@ -79,20 +79,20 @@ func int DIA_Rosi_WASMACHSTDU_Condition ()
 
 func void DIA_Rosi_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_WASMACHSTDU_15_00"); //Что ты делаешь здесь?
+	AI_Output			(other, self, "DIA_Rosi_WASMACHSTDU_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 
 	if (Npc_IsDead(Sekob)== FALSE)
 	{
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_01"); //Я задаю себе этот вопрос уже несколько лет. Секоб, мой муж, умудрился перессориться со всеми соседями.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_02"); //Он задолжал всем в округе. И еще он ворует продукты из запасов Онара и продает их в городе.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_03"); //Он сколотил целое состояние своими темными делишками.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_04"); //Он заставляет наших работников трудиться до полного изнеможения. За это его все за глаза называют душегубом.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_05"); //Мне не очень приятно называть себя женой Секоба, поверь мне. Иногда мне даже хочется, чтобы Барьер все еще стоял на месте.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_01"); //РЇ Р·Р°РґР°СЋ СЃРµР±Рµ СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ Р»РµС‚. РЎРµРєРѕР±, РјРѕР№ РјСѓР¶, СѓРјСѓРґСЂРёР»СЃСЏ РїРµСЂРµСЃСЃРѕСЂРёС‚СЊСЃСЏ СЃРѕ РІСЃРµРјРё СЃРѕСЃРµРґСЏРјРё.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_02"); //РћРЅ Р·Р°РґРѕР»Р¶Р°Р» РІСЃРµРј РІ РѕРєСЂСѓРіРµ. Р РµС‰Рµ РѕРЅ РІРѕСЂСѓРµС‚ РїСЂРѕРґСѓРєС‚С‹ РёР· Р·Р°РїР°СЃРѕРІ РћРЅР°СЂР° Рё РїСЂРѕРґР°РµС‚ РёС… РІ РіРѕСЂРѕРґРµ.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_03"); //РћРЅ СЃРєРѕР»РѕС‚РёР» С†РµР»РѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ СЃРІРѕРёРјРё С‚РµРјРЅС‹РјРё РґРµР»РёС€РєР°РјРё.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_04"); //РћРЅ Р·Р°СЃС‚Р°РІР»СЏРµС‚ РЅР°С€РёС… СЂР°Р±РѕС‚РЅРёРєРѕРІ С‚СЂСѓРґРёС‚СЊСЃСЏ РґРѕ РїРѕР»РЅРѕРіРѕ РёР·РЅРµРјРѕР¶РµРЅРёСЏ. Р—Р° СЌС‚Рѕ РµРіРѕ РІСЃРµ Р·Р° РіР»Р°Р·Р° РЅР°Р·С‹РІР°СЋС‚ РґСѓС€РµРіСѓР±РѕРј.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_05"); //РњРЅРµ РЅРµ РѕС‡РµРЅСЊ РїСЂРёСЏС‚РЅРѕ РЅР°Р·С‹РІР°С‚СЊ СЃРµР±СЏ Р¶РµРЅРѕР№ РЎРµРєРѕР±Р°, РїРѕРІРµСЂСЊ РјРЅРµ. РРЅРѕРіРґР° РјРЅРµ РґР°Р¶Рµ С…РѕС‡РµС‚СЃСЏ, С‡С‚РѕР±С‹ Р‘Р°СЂСЊРµСЂ РІСЃРµ РµС‰Рµ СЃС‚РѕСЏР» РЅР° РјРµСЃС‚Рµ.
 	};
 
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_06"); //Ты хочешь купить какой-нибудь еды или, возможно, что-то для охоты в лесу?
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_06"); //РўС‹ С…РѕС‡РµС€СЊ РєСѓРїРёС‚СЊ РєР°РєРѕР№-РЅРёР±СѓРґСЊ РµРґС‹ РёР»Рё, РІРѕР·РјРѕР¶РЅРѕ, С‡С‚Рѕ-С‚Рѕ РґР»СЏ РѕС…РѕС‚С‹ РІ Р»РµСЃСѓ?
 	Log_CreateTopic (Topic_OutTrader,LOG_NOTE);
-	B_LogEntry (Topic_OutTrader,"У Рози, на ферме Секоба, можно купить различные товары.");
+	B_LogEntry (Topic_OutTrader,"РЈ Р РѕР·Рё, РЅР° С„РµСЂРјРµ РЎРµРєРѕР±Р°, РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ СЂР°Р·Р»РёС‡РЅС‹Рµ С‚РѕРІР°СЂС‹.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -106,7 +106,7 @@ instance DIA_Rosi_WAREZ		(C_INFO)
 	information	 = 	DIA_Rosi_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Что ты можешь предложить мне?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?";
 };
 
 func int DIA_Rosi_WAREZ_Condition ()
@@ -124,8 +124,8 @@ func int DIA_Rosi_WAREZ_Condition ()
 func void DIA_Rosi_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Rosi_WAREZ_15_00"); //Что ты можешь предложить мне?
-	AI_Output (self, other, "DIA_Rosi_WAREZ_17_01"); //Выбирай.
+	AI_Output (other, self, "DIA_Rosi_WAREZ_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?
+	AI_Output (self, other, "DIA_Rosi_WAREZ_17_01"); //Р’С‹Р±РёСЂР°Р№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -138,7 +138,7 @@ instance DIA_Rosi_BARRIERE		(C_INFO)
 	condition	 = 	DIA_Rosi_BARRIERE_Condition;
 	information	 = 	DIA_Rosi_BARRIERE_Info;
 
-	description	 = 	"Барьер?";
+	description	 = 	"Р‘Р°СЂСЊРµСЂ?";
 };
 
 func int DIA_Rosi_BARRIERE_Condition ()
@@ -152,9 +152,9 @@ func int DIA_Rosi_BARRIERE_Condition ()
 
 func void DIA_Rosi_BARRIERE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_BARRIERE_15_00"); //Барьер?
-	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_01"); //Ну, купол, который закрывал старую Долину Рудников.
-	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_02"); //Многих фермеров и простых работников, совершивших преступление, тогда просто бросали туда, и они никогда не возвращались назад.
+	AI_Output			(other, self, "DIA_Rosi_BARRIERE_15_00"); //Р‘Р°СЂСЊРµСЂ?
+	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_01"); //РќСѓ, РєСѓРїРѕР», РєРѕС‚РѕСЂС‹Р№ Р·Р°РєСЂС‹РІР°Р» СЃС‚Р°СЂСѓСЋ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_02"); //РњРЅРѕРіРёС… С„РµСЂРјРµСЂРѕРІ Рё РїСЂРѕСЃС‚С‹С… СЂР°Р±РѕС‚РЅРёРєРѕРІ, СЃРѕРІРµСЂС€РёРІС€РёС… РїСЂРµСЃС‚СѓРїР»РµРЅРёРµ, С‚РѕРіРґР° РїСЂРѕСЃС‚Рѕ Р±СЂРѕСЃР°Р»Рё С‚СѓРґР°, Рё РѕРЅРё РЅРёРєРѕРіРґР° РЅРµ РІРѕР·РІСЂР°С‰Р°Р»РёСЃСЊ РЅР°Р·Р°Рґ.
 
 };
 
@@ -168,7 +168,7 @@ instance DIA_Rosi_DuInBarriere		(C_INFO)
 	condition	 = 	DIA_Rosi_DuInBarriere_Condition;
 	information	 = 	DIA_Rosi_DuInBarriere_Info;
 
-	description	 = 	"Ты когда-нибудь была за Барьером?";
+	description	 = 	"РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ Р±С‹Р»Р° Р·Р° Р‘Р°СЂСЊРµСЂРѕРј?";
 };
 
 func int DIA_Rosi_DuInBarriere_Condition ()
@@ -181,9 +181,9 @@ func int DIA_Rosi_DuInBarriere_Condition ()
 
 func void DIA_Rosi_DuInBarriere_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_DuInBarriere_15_00"); //Ты когда-нибудь была за Барьером?
-	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_01"); //Нет. Мы только слышали о нем. Бенгар, фермер с высокогорных пастбищ, наверняка сможет рассказать тебе о нем больше.
-	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_02"); //Его ферма находится очень близко от прохода, ведущего в Долину Рудников.
+	AI_Output			(other, self, "DIA_Rosi_DuInBarriere_15_00"); //РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ Р±С‹Р»Р° Р·Р° Р‘Р°СЂСЊРµСЂРѕРј?
+	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_01"); //РќРµС‚. РњС‹ С‚РѕР»СЊРєРѕ СЃР»С‹С€Р°Р»Рё Рѕ РЅРµРј. Р‘РµРЅРіР°СЂ, С„РµСЂРјРµСЂ СЃ РІС‹СЃРѕРєРѕРіРѕСЂРЅС‹С… РїР°СЃС‚Р±РёС‰, РЅР°РІРµСЂРЅСЏРєР° СЃРјРѕР¶РµС‚ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ Рѕ РЅРµРј Р±РѕР»СЊС€Рµ.
+	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_02"); //Р•РіРѕ С„РµСЂРјР° РЅР°С…РѕРґРёС‚СЃСЏ РѕС‡РµРЅСЊ Р±Р»РёР·РєРѕ РѕС‚ РїСЂРѕС…РѕРґР°, РІРµРґСѓС‰РµРіРѕ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ.
 
 };
 
@@ -198,7 +198,7 @@ instance DIA_Rosi_BENGAR		(C_INFO)
 	condition	 = 	DIA_Rosi_BENGAR_Condition;
 	information	 = 	DIA_Rosi_BENGAR_Info;
 
-	description	 = 	"Как мне попасть на ферму Бенгара?";
+	description	 = 	"РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РЅР° С„РµСЂРјСѓ Р‘РµРЅРіР°СЂР°?";
 };
 
 func int DIA_Rosi_BENGAR_Condition ()
@@ -212,9 +212,9 @@ func int DIA_Rosi_BENGAR_Condition ()
 
 func void DIA_Rosi_BENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_BENGAR_15_00"); //Как мне попасть на ферму Бенгара?
-	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_01"); //Спроси Бальтазара. Это наш пастух. Иногда он водит своих овец на пастбища Бенгара.
-	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_02"); //Он расскажет тебе, как добраться туда.
+	AI_Output			(other, self, "DIA_Rosi_BENGAR_15_00"); //РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РЅР° С„РµСЂРјСѓ Р‘РµРЅРіР°СЂР°?
+	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_01"); //РЎРїСЂРѕСЃРё Р‘Р°Р»СЊС‚Р°Р·Р°СЂР°. Р­С‚Рѕ РЅР°С€ РїР°СЃС‚СѓС…. РРЅРѕРіРґР° РѕРЅ РІРѕРґРёС‚ СЃРІРѕРёС… РѕРІРµС† РЅР° РїР°СЃС‚Р±РёС‰Р° Р‘РµРЅРіР°СЂР°.
+	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_02"); //РћРЅ СЂР°СЃСЃРєР°Р¶РµС‚ С‚РµР±Рµ, РєР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ С‚СѓРґР°.
 		
 };
 
@@ -229,7 +229,7 @@ instance DIA_Rosi_Miliz		(C_INFO)
 	condition	 = 	DIA_Rosi_Miliz_Condition;
 	information	 = 	DIA_Rosi_Miliz_Info;
 
-	description	 = 	"А почему ополчение нападает на ваши фермы?";
+	description	 = 	"Рђ РїРѕС‡РµРјСѓ РѕРїРѕР»С‡РµРЅРёРµ РЅР°РїР°РґР°РµС‚ РЅР° РІР°С€Рё С„РµСЂРјС‹?";
 };
 
 func int DIA_Rosi_Miliz_Condition ()
@@ -243,9 +243,9 @@ func int DIA_Rosi_Miliz_Condition ()
 
 func void DIA_Rosi_Miliz_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_Miliz_15_00"); //А почему ополчение нападает на ваши фермы?
-	AI_Output			(self, other, "DIA_Rosi_Miliz_17_01"); //Потому что здесь нет никого, кто не позволит им просто грабить наши фермы, вместо того, чтобы покупать наши продукты.
-	AI_Output			(self, other, "DIA_Rosi_Miliz_17_02"); //Король далеко, и нам остается только работать на Онара, надеясь, что он пришлет помощь, когда она действительно будет нам необходима.
+	AI_Output			(other, self, "DIA_Rosi_Miliz_15_00"); //Рђ РїРѕС‡РµРјСѓ РѕРїРѕР»С‡РµРЅРёРµ РЅР°РїР°РґР°РµС‚ РЅР° РІР°С€Рё С„РµСЂРјС‹?
+	AI_Output			(self, other, "DIA_Rosi_Miliz_17_01"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ Р·РґРµСЃСЊ РЅРµС‚ РЅРёРєРѕРіРѕ, РєС‚Рѕ РЅРµ РїРѕР·РІРѕР»РёС‚ РёРј РїСЂРѕСЃС‚Рѕ РіСЂР°Р±РёС‚СЊ РЅР°С€Рё С„РµСЂРјС‹, РІРјРµСЃС‚Рѕ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕРєСѓРїР°С‚СЊ РЅР°С€Рё РїСЂРѕРґСѓРєС‚С‹.
+	AI_Output			(self, other, "DIA_Rosi_Miliz_17_02"); //РљРѕСЂРѕР»СЊ РґР°Р»РµРєРѕ, Рё РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ С‚РѕР»СЊРєРѕ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РћРЅР°СЂР°, РЅР°РґРµСЏСЃСЊ, С‡С‚Рѕ РѕРЅ РїСЂРёС€Р»РµС‚ РїРѕРјРѕС‰СЊ, РєРѕРіРґР° РѕРЅР° РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р±СѓРґРµС‚ РЅР°Рј РЅРµРѕР±С…РѕРґРёРјР°.
 };
 
 
@@ -259,7 +259,7 @@ instance DIA_Rosi_ONAR		(C_INFO)
 	condition	 = 	DIA_Rosi_ONAR_Condition;
 	information	 = 	DIA_Rosi_ONAR_Info;
 
-	description	 = 	"А на что похожа помощь Онара?";
+	description	 = 	"Рђ РЅР° С‡С‚Рѕ РїРѕС…РѕР¶Р° РїРѕРјРѕС‰СЊ РћРЅР°СЂР°?";
 };
 
 func int DIA_Rosi_ONAR_Condition ()
@@ -272,11 +272,11 @@ func int DIA_Rosi_ONAR_Condition ()
 
 func void DIA_Rosi_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_ONAR_15_00"); //А на что похожа помощь Онара?
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_01"); //Иногда мы заранее узнаем, что ополчение планирует нанести нам визит.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_02"); //Тогда мы посылаем кого-нибудь к лендлорду с просьбой о помощи.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_03"); //И затем обычно вскоре появляются наемники, которым он платит, чтобы те пришли сюда и прогнали ополчение.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_04"); //Но, откровенно говоря, наемники не многим лучше ополчения.
+	AI_Output			(other, self, "DIA_Rosi_ONAR_15_00"); //Рђ РЅР° С‡С‚Рѕ РїРѕС…РѕР¶Р° РїРѕРјРѕС‰СЊ РћРЅР°СЂР°?
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_01"); //РРЅРѕРіРґР° РјС‹ Р·Р°СЂР°РЅРµРµ СѓР·РЅР°РµРј, С‡С‚Рѕ РѕРїРѕР»С‡РµРЅРёРµ РїР»Р°РЅРёСЂСѓРµС‚ РЅР°РЅРµСЃС‚Рё РЅР°Рј РІРёР·РёС‚.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_02"); //РўРѕРіРґР° РјС‹ РїРѕСЃС‹Р»Р°РµРј РєРѕРіРѕ-РЅРёР±СѓРґСЊ Рє Р»РµРЅРґР»РѕСЂРґСѓ СЃ РїСЂРѕСЃСЊР±РѕР№ Рѕ РїРѕРјРѕС‰Рё.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_03"); //Р Р·Р°С‚РµРј РѕР±С‹С‡РЅРѕ РІСЃРєРѕСЂРµ РїРѕСЏРІР»СЏСЋС‚СЃСЏ РЅР°РµРјРЅРёРєРё, РєРѕС‚РѕСЂС‹Рј РѕРЅ РїР»Р°С‚РёС‚, С‡С‚РѕР±С‹ С‚Рµ РїСЂРёС€Р»Рё СЃСЋРґР° Рё РїСЂРѕРіРЅР°Р»Рё РѕРїРѕР»С‡РµРЅРёРµ.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_04"); //РќРѕ, РѕС‚РєСЂРѕРІРµРЅРЅРѕ РіРѕРІРѕСЂСЏ, РЅР°РµРјРЅРёРєРё РЅРµ РјРЅРѕРіРёРј Р»СѓС‡С€Рµ РѕРїРѕР»С‡РµРЅРёСЏ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -289,7 +289,7 @@ instance DIA_Rosi_PERMKAP1		(C_INFO)
 	condition	 = 	DIA_Rosi_PERMKAP1_Condition;
 	information	 = 	DIA_Rosi_PERMKAP1_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Выше нос.";
+	description	 = 	"Р’С‹С€Рµ РЅРѕСЃ.";
 };
 
 func int DIA_Rosi_PERMKAP1_Condition ()
@@ -303,16 +303,16 @@ func int DIA_Rosi_PERMKAP1_Condition ()
 
 func void DIA_Rosi_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_PERMKAP1_15_00"); //Выше нос.
+	AI_Output			(other, self, "DIA_Rosi_PERMKAP1_15_00"); //Р’С‹С€Рµ РЅРѕСЃ.
 
 
 	if ((MIS_bringRosiBackToSekob == LOG_SUCCESS))
 		{
-			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_01"); //Проваливай!
+			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_01"); //РџСЂРѕРІР°Р»РёРІР°Р№!
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_02"); //Береги себя.
+			AI_Output			(self, other, "DIA_Rosi_PERMKAP1_17_02"); //Р‘РµСЂРµРіРё СЃРµР±СЏ.
 		};
 	AI_StopProcessInfos (self);
 };
@@ -430,7 +430,7 @@ instance DIA_Rosi_FLEEFROMSEKOB		(C_INFO)
 	condition	 = 	DIA_Rosi_FLEEFROMSEKOB_Condition;
 	information	 = 	DIA_Rosi_FLEEFROMSEKOB_Info;
 
-	description	 = 	"Что ты делаешь здесь, в глуши?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ, РІ РіР»СѓС€Рё?";
 };
 
 func int DIA_Rosi_FLEEFROMSEKOB_Condition ()
@@ -444,11 +444,11 @@ func int DIA_Rosi_FLEEFROMSEKOB_Condition ()
 
 func void DIA_Rosi_FLEEFROMSEKOB_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_FLEEFROMSEKOB_15_00"); //Что ты делаешь здесь, в глуши?
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_01"); //Я больше не в силах терпеть все это. Секоб начал закатывать истерики по любому поводу.
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_02"); //В конце концов, все перестали с ним разговаривать. Ну и он тоже не говорит ни с кем.
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_03"); //Я должна была бежать оттуда, но теперь я не знаю, куда мне идти.
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_04"); //Ты не мог бы помочь мне?
+	AI_Output			(other, self, "DIA_Rosi_FLEEFROMSEKOB_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ, РІ РіР»СѓС€Рё?
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_01"); //РЇ Р±РѕР»СЊС€Рµ РЅРµ РІ СЃРёР»Р°С… С‚РµСЂРїРµС‚СЊ РІСЃРµ СЌС‚Рѕ. РЎРµРєРѕР± РЅР°С‡Р°Р» Р·Р°РєР°С‚С‹РІР°С‚СЊ РёСЃС‚РµСЂРёРєРё РїРѕ Р»СЋР±РѕРјСѓ РїРѕРІРѕРґСѓ.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_02"); //Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РІСЃРµ РїРµСЂРµСЃС‚Р°Р»Рё СЃ РЅРёРј СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ. РќСѓ Рё РѕРЅ С‚РѕР¶Рµ РЅРµ РіРѕРІРѕСЂРёС‚ РЅРё СЃ РєРµРј.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_03"); //РЇ РґРѕР»Р¶РЅР° Р±С‹Р»Р° Р±РµР¶Р°С‚СЊ РѕС‚С‚СѓРґР°, РЅРѕ С‚РµРїРµСЂСЊ СЏ РЅРµ Р·РЅР°СЋ, РєСѓРґР° РјРЅРµ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_04"); //РўС‹ РЅРµ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ РјРЅРµ?
 	B_GivePlayerXP (XP_Ambient);
 	RosiFoundKap5 = TRUE;
 };
@@ -463,7 +463,7 @@ instance DIA_Rosi_HILFE		(C_INFO)
 	condition	 = 	DIA_Rosi_HILFE_Condition;
 	information	 = 	DIA_Rosi_HILFE_Info;
 
-	description	 = 	"Я выведу тебя отсюда.";
+	description	 = 	"РЇ РІС‹РІРµРґСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°.";
 };
 
 func int DIA_Rosi_HILFE_Condition ()
@@ -477,35 +477,35 @@ func int DIA_Rosi_HILFE_Condition ()
 
 func void DIA_Rosi_HILFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_HILFE_15_00"); //Я выведу тебя отсюда.
+	AI_Output			(other, self, "DIA_Rosi_HILFE_15_00"); //РЇ РІС‹РІРµРґСѓ С‚РµР±СЏ РѕС‚СЃСЋРґР°.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Till.aivar[AIV_PARTYMEMBER] = TRUE;
 	
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_01"); //Я могу отвести тебя в город.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_01"); //РЇ РјРѕРіСѓ РѕС‚РІРµСЃС‚Рё С‚РµР±СЏ РІ РіРѕСЂРѕРґ.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_02"); //Я отведу тебя на ферму лендлорда.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_02"); //РЇ РѕС‚РІРµРґСѓ С‚РµР±СЏ РЅР° С„РµСЂРјСѓ Р»РµРЅРґР»РѕСЂРґР°.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_03"); //Пойдем в монастырь. Тебя хорошо примут там.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_03"); //РџРѕР№РґРµРј РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РўРµР±СЏ С…РѕСЂРѕС€Рѕ РїСЂРёРјСѓС‚ С‚Р°Рј.
 		};	
 		
-		AI_Output			(self, other, "DIA_Rosi_HILFE_17_04"); //Я никогда не забуду, что ты сделал для меня. Я заплачу тебе, конечно же.
+		AI_Output			(self, other, "DIA_Rosi_HILFE_17_04"); //РЇ РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±СѓРґСѓ, С‡С‚Рѕ С‚С‹ СЃРґРµР»Р°Р» РґР»СЏ РјРµРЅСЏ. РЇ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ.
 
 			if (Npc_IsDead(Till))
 			{
-				AI_Output			(self, other, "DIA_Rosi_HILFE_17_05"); //Ты иди вперед. Я пойду за тобой.
+				AI_Output			(self, other, "DIA_Rosi_HILFE_17_05"); //РўС‹ РёРґРё РІРїРµСЂРµРґ. РЇ РїРѕР№РґСѓ Р·Р° С‚РѕР±РѕР№.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Rosi_HILFE_17_06"); //Ты иди вперед. Мы пойдем за тобой.
+				AI_Output			(self, other, "DIA_Rosi_HILFE_17_06"); //РўС‹ РёРґРё РІРїРµСЂРµРґ. РњС‹ РїРѕР№РґРµРј Р·Р° С‚РѕР±РѕР№.
 			};
 		
 		AI_StopProcessInfos (self);	
@@ -528,7 +528,7 @@ func void DIA_Rosi_HILFE_Info ()
 		};	
 		Log_CreateTopic (TOPIC_RosisFlucht, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_RosisFlucht, LOG_RUNNING);
-		B_LogEntry (TOPIC_RosisFlucht,"Рози больше не могла выносить жизнь на ферме Секоба, и сбежала в лес, но заблудилась и теперь не знает, куда идти. Я выведу ее из лесной глуши."); 
+		B_LogEntry (TOPIC_RosisFlucht,"Р РѕР·Рё Р±РѕР»СЊС€Рµ РЅРµ РјРѕРіР»Р° РІС‹РЅРѕСЃРёС‚СЊ Р¶РёР·РЅСЊ РЅР° С„РµСЂРјРµ РЎРµРєРѕР±Р°, Рё СЃР±РµР¶Р°Р»Р° РІ Р»РµСЃ, РЅРѕ Р·Р°Р±Р»СѓРґРёР»Р°СЃСЊ Рё С‚РµРїРµСЂСЊ РЅРµ Р·РЅР°РµС‚, РєСѓРґР° РёРґС‚Рё. РЇ РІС‹РІРµРґСѓ РµРµ РёР· Р»РµСЃРЅРѕР№ РіР»СѓС€Рё."); 
 		MIS_RosisFlucht = LOG_RUNNING;
 };
 
@@ -562,15 +562,15 @@ func int DIA_Rosi_ANGEKOMMEN_Condition ()
 
 func void DIA_Rosi_ANGEKOMMEN_Info ()
 {
-	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_00"); //Дальше я сама найду дорогу.
-	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_01"); //Спасибо. Я даже не знаю, что бы я делала без тебя.
+	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_00"); //Р”Р°Р»СЊС€Рµ СЏ СЃР°РјР° РЅР°Р№РґСѓ РґРѕСЂРѕРіСѓ.
+	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_01"); //РЎРїР°СЃРёР±Рѕ. РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ Р±С‹ СЏ РґРµР»Р°Р»Р° Р±РµР· С‚РµР±СЏ.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Till.aivar[AIV_PARTYMEMBER] = FALSE;
 
 	MIS_bringRosiBackToSekob = LOG_OBSOLETE;
 	MIS_RosisFlucht = LOG_SUCCESS;
-		AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_02"); //Пожалуйста, прими этот скромный дар. Ты заслужил его.
+		AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_02"); //РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РїСЂРёРјРё СЌС‚РѕС‚ СЃРєСЂРѕРјРЅС‹Р№ РґР°СЂ. РўС‹ Р·Р°СЃР»СѓР¶РёР» РµРіРѕ.
 
 		CreateInvItems (Rosi, ItMi_Gold, 650);									
 		B_GiveInvItems (self, other, ItMi_Gold, 450);					
@@ -615,7 +615,7 @@ instance DIA_Rosi_TRAIT		(C_INFO)
 	condition	 = 	DIA_Rosi_TRAIT_Condition;
 	information	 = 	DIA_Rosi_TRAIT_Info;
 
-	description	 = 	"Видишь, теперь ты опять дома.";
+	description	 = 	"Р’РёРґРёС€СЊ, С‚РµРїРµСЂСЊ С‚С‹ РѕРїСЏС‚СЊ РґРѕРјР°.";
 };
 
 func int DIA_Rosi_TRAIT_Condition ()
@@ -629,8 +629,8 @@ func int DIA_Rosi_TRAIT_Condition ()
 
 func void DIA_Rosi_TRAIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_TRAIT_15_00"); //Видишь, теперь ты опять дома.
-	AI_Output			(self, other, "DIA_Rosi_TRAIT_17_01"); //Ты худший кусок дерьма, что я встречала в своей жизни! Ты грязная свинья!
+	AI_Output			(other, self, "DIA_Rosi_TRAIT_15_00"); //Р’РёРґРёС€СЊ, С‚РµРїРµСЂСЊ С‚С‹ РѕРїСЏС‚СЊ РґРѕРјР°.
+	AI_Output			(self, other, "DIA_Rosi_TRAIT_17_01"); //РўС‹ С…СѓРґС€РёР№ РєСѓСЃРѕРє РґРµСЂСЊРјР°, С‡С‚Рѕ СЏ РІСЃС‚СЂРµС‡Р°Р»Р° РІ СЃРІРѕРµР№ Р¶РёР·РЅРё! РўС‹ РіСЂСЏР·РЅР°СЏ СЃРІРёРЅСЊСЏ!
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Till.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -649,7 +649,7 @@ instance DIA_Rosi_MinenAnteil		(C_INFO)
 	condition	 = 	DIA_Rosi_MinenAnteil_Condition;
 	information	 = 	DIA_Rosi_MinenAnteil_Info;
 
-	description	 = 	"А тебе не стыдно продавать поддельные акции?";
+	description	 = 	"Рђ С‚РµР±Рµ РЅРµ СЃС‚С‹РґРЅРѕ РїСЂРѕРґР°РІР°С‚СЊ РїРѕРґРґРµР»СЊРЅС‹Рµ Р°РєС†РёРё?";
 };
 
 func int DIA_Rosi_MinenAnteil_Condition ()
@@ -664,8 +664,8 @@ func int DIA_Rosi_MinenAnteil_Condition ()
 
 func void DIA_Rosi_MinenAnteil_Info ()
 {
-	AI_Output (other, self, "DIA_Rosi_Minenanteil_15_00"); //А тебе не стыдно продавать поддельные акции?
-	AI_Output (self, other, "DIA_Rosi_Minenanteil_17_01"); //Нет. Мне нужно на что-то жить, и, к тому же, я сама их у кого-то купила.
+	AI_Output (other, self, "DIA_Rosi_Minenanteil_15_00"); //Рђ С‚РµР±Рµ РЅРµ СЃС‚С‹РґРЅРѕ РїСЂРѕРґР°РІР°С‚СЊ РїРѕРґРґРµР»СЊРЅС‹Рµ Р°РєС†РёРё?
+	AI_Output (self, other, "DIA_Rosi_Minenanteil_17_01"); //РќРµС‚. РњРЅРµ РЅСѓР¶РЅРѕ РЅР° С‡С‚Рѕ-С‚Рѕ Р¶РёС‚СЊ, Рё, Рє С‚РѕРјСѓ Р¶Рµ, СЏ СЃР°РјР° РёС… Сѓ РєРѕРіРѕ-С‚Рѕ РєСѓРїРёР»Р°.
 	B_GivePlayerXP (XP_Ambient);
 };
 

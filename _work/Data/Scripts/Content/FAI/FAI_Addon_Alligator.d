@@ -116,7 +116,7 @@ INSTANCE FA_MY_FK_FOCUS_43 (C_FightAI)
 	move[0] = MOVE_RUN; // --- STANDARDEINTRAG ---
 };
 
-// ------- Ich habe Gegner NICHT im Fokus (gilt auch für G-Distanz!) -------
+// ------- Ich habe Gegner NICHT im Fokus (gilt auch fÑŒr G-Distanz!) -------
 INSTANCE FA_MY_G_FK_NOFOCUS_43 (C_FightAI)
 {
 	move[0] = MOVE_TURN; // --- STANDARDEINTRAG ---
@@ -124,7 +124,7 @@ INSTANCE FA_MY_G_FK_NOFOCUS_43 (C_FightAI)
 
 
 // ***********************************
-// FAI für Fernkampf
+// FAI fÑŒr Fernkampf
 // ---------------------------
 // (wird bei jeder Entfernung benutzt)
 // ***********************************
@@ -143,7 +143,7 @@ INSTANCE FA_MY_FK_NOFOCUS_FAR_43 (C_FightAI)
 
 
 // ***********************************
-// FAI für Magie
+// FAI fÑŒr Magie
 // ---------------------------
 // (wird bei jeder Entfernung benutzt)
 

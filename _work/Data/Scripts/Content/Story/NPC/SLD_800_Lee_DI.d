@@ -8,7 +8,7 @@
 instance SLD_800_Lee_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ëè";
+	name 		= "Ð›Ð¸";
 	guild 		= GIL_SLD;
 	id 			= 8000;
 	voice 		= 4;
@@ -42,8 +42,8 @@ instance SLD_800_Lee_DI (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_8000;

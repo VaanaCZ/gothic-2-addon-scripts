@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Edgor_EXIT_Info()
 	if Npc_KnowsInfo (other, DIA_Addon_Edgor_MIS2)
 	&& (Edgor_Exiteinmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //Был рад познакомиться...
+		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //Р‘С‹Р» СЂР°Рґ РїРѕР·РЅР°РєРѕРјРёС‚СЊСЃСЏ...
 		Edgor_Exiteinmal = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Edgor_Hi   (C_INFO)
 	condition   = DIA_Addon_Edgor_Hi_Condition;
 	information = DIA_Addon_Edgor_Hi_Info;
 	permanent   = FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Edgor_Hi_Condition()
 {	
@@ -77,12 +77,12 @@ FUNC INT DIA_Addon_Edgor_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Ты хочешь узнать, как у меня дела? Я тебе расскажу, как у меня дела.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Сначала какие-то пираты привезли меня сюда в шторм. Я облевал всю их посудину.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Затем Ворон запер шахту, потому что какие-то идиоты слишком сильно хотят золота.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //А затем Франко стал командиром охотников и убивает всякого, кто против него.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Я бы сказал, что дела идут отвратительно.
+	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //РўС‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ, РєР°Рє Сѓ РјРµРЅСЏ РґРµР»Р°? РЇ С‚РµР±Рµ СЂР°СЃСЃРєР°Р¶Сѓ, РєР°Рє Сѓ РјРµРЅСЏ РґРµР»Р°.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //РЎРЅР°С‡Р°Р»Р° РєР°РєРёРµ-С‚Рѕ РїРёСЂР°С‚С‹ РїСЂРёРІРµР·Р»Рё РјРµРЅСЏ СЃСЋРґР° РІ С€С‚РѕСЂРј. РЇ РѕР±Р»РµРІР°Р» РІСЃСЋ РёС… РїРѕСЃСѓРґРёРЅСѓ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Р—Р°С‚РµРј Р’РѕСЂРѕРЅ Р·Р°РїРµСЂ С€Р°С…С‚Сѓ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РєР°РєРёРµ-С‚Рѕ РёРґРёРѕС‚С‹ СЃР»РёС€РєРѕРј СЃРёР»СЊРЅРѕ С…РѕС‚СЏС‚ Р·РѕР»РѕС‚Р°.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Рђ Р·Р°С‚РµРј Р¤СЂР°РЅРєРѕ СЃС‚Р°Р» РєРѕРјР°РЅРґРёСЂРѕРј РѕС…РѕС‚РЅРёРєРѕРІ Рё СѓР±РёРІР°РµС‚ РІСЃСЏРєРѕРіРѕ, РєС‚Рѕ РїСЂРѕС‚РёРІ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //РЇ Р±С‹ СЃРєР°Р·Р°Р», С‡С‚Рѕ РґРµР»Р° РёРґСѓС‚ РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅРѕ.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -103,7 +103,7 @@ INSTANCE DIA_Addon_Edgor_Franco (C_INFO)
 	condition   = DIA_Addon_Edgor_Franco_Condition;
 	information = DIA_Addon_Edgor_Franco_Info;
 	permanent   = FALSE;
-	description = "Как Франко сделался старшим?";
+	description = "РљР°Рє Р¤СЂР°РЅРєРѕ СЃРґРµР»Р°Р»СЃСЏ СЃС‚Р°СЂС€РёРј?";
 };
 FUNC INT DIA_Addon_Edgor_Franco_Condition()
 {	
@@ -114,9 +114,9 @@ FUNC INT DIA_Addon_Edgor_Franco_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Franco_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //Как Франко сделался старшим?
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //Очень просто. Убил Флетчера, который был командиром до него.
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Флетчер был свой парень. А Франко просто загонял нас.
+	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //РљР°Рє Р¤СЂР°РЅРєРѕ СЃРґРµР»Р°Р»СЃСЏ СЃС‚Р°СЂС€РёРј?
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //РћС‡РµРЅСЊ РїСЂРѕСЃС‚Рѕ. РЈР±РёР» Р¤Р»РµС‚С‡РµСЂР°, РєРѕС‚РѕСЂС‹Р№ Р±С‹Р» РєРѕРјР°РЅРґРёСЂРѕРј РґРѕ РЅРµРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Р¤Р»РµС‚С‡РµСЂ Р±С‹Р» СЃРІРѕР№ РїР°СЂРµРЅСЊ. Рђ Р¤СЂР°РЅРєРѕ РїСЂРѕСЃС‚Рѕ Р·Р°РіРѕРЅСЏР» РЅР°СЃ.
 };	
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Edgor_MIS2   (C_INFO)
 	condition   = DIA_Addon_Edgor_MIS2_Condition;
 	information = DIA_Addon_Edgor_MIS2_Info;
 	permanent   = FALSE;
-	description = "Франко послал меня по поводу этой каменной таблички...";
+	description = "Р¤СЂР°РЅРєРѕ РїРѕСЃР»Р°Р» РјРµРЅСЏ РїРѕ РїРѕРІРѕРґСѓ СЌС‚РѕР№ РєР°РјРµРЅРЅРѕР№ С‚Р°Р±Р»РёС‡РєРё...";
 };
 FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 {	
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_MIS2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Франко послал меня по поводу этой каменной таблички. Ты ее нашел?
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Приятель, я даже не пытался ее искать. Все, что я знаю, - это то, что она должна быть где-то в том старом здании на болоте.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //А мой внутренний голос говорит мне: 'Эдгор, сторонись старых зданий, стоящих на болоте'.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Я не собираюсь рисковать своей шкурой ради этого раздолбая Франко!
+	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Р¤СЂР°РЅРєРѕ РїРѕСЃР»Р°Р» РјРµРЅСЏ РїРѕ РїРѕРІРѕРґСѓ СЌС‚РѕР№ РєР°РјРµРЅРЅРѕР№ С‚Р°Р±Р»РёС‡РєРё. РўС‹ РµРµ РЅР°С€РµР»?
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //РџСЂРёСЏС‚РµР»СЊ, СЏ РґР°Р¶Рµ РЅРµ РїС‹С‚Р°Р»СЃСЏ РµРµ РёСЃРєР°С‚СЊ. Р’СЃРµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ, - СЌС‚Рѕ С‚Рѕ, С‡С‚Рѕ РѕРЅР° РґРѕР»Р¶РЅР° Р±С‹С‚СЊ РіРґРµ-С‚Рѕ РІ С‚РѕРј СЃС‚Р°СЂРѕРј Р·РґР°РЅРёРё РЅР° Р±РѕР»РѕС‚Рµ.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //Рђ РјРѕР№ РІРЅСѓС‚СЂРµРЅРЅРёР№ РіРѕР»РѕСЃ РіРѕРІРѕСЂРёС‚ РјРЅРµ: 'Р­РґРіРѕСЂ, СЃС‚РѕСЂРѕРЅРёСЃСЊ СЃС‚Р°СЂС‹С… Р·РґР°РЅРёР№, СЃС‚РѕСЏС‰РёС… РЅР° Р±РѕР»РѕС‚Рµ'.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ СЂРёСЃРєРѕРІР°С‚СЊ СЃРІРѕРµР№ С€РєСѓСЂРѕР№ СЂР°РґРё СЌС‚РѕРіРѕ СЂР°Р·РґРѕР»Р±Р°СЏ Р¤СЂР°РЅРєРѕ!
 	
-	B_LogEntry (Topic_Addon_Stoneplate,"Эдгор не собирается искать каменную табличку. Он говорит, что она находится в каком-то старом строении на болотах.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Р­РґРіРѕСЂ РЅРµ СЃРѕР±РёСЂР°РµС‚СЃСЏ РёСЃРєР°С‚СЊ РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РѕРЅР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РєР°РєРѕРј-С‚Рѕ СЃС‚Р°СЂРѕРј СЃС‚СЂРѕРµРЅРёРё РЅР° Р±РѕР»РѕС‚Р°С….");
 };
 //---------------------------------------------------------------------
 //	Info Wegbeschreibung
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Edgor_Weg   (C_INFO)
 	condition   = DIA_Addon_Edgor_Weg_Condition;
 	information = DIA_Addon_Edgor_Weg_Info;
 	permanent   = FALSE;
-	description = "А где находится это старое здание?";
+	description = "Рђ РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ СЌС‚Рѕ СЃС‚Р°СЂРѕРµ Р·РґР°РЅРёРµ?";
 };
 FUNC INT DIA_Addon_Edgor_Weg_Condition()
 {	
@@ -169,11 +169,11 @@ FUNC INT DIA_Addon_Edgor_Weg_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //А где находится это старое здание?
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Обойди слева тот большой камень. Через некоторое время увидишь другой большой камень.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Его надо обойти слева... или справа, я уже не помню - это было слишком давно.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Но развалины должны быть на небольшом возвышении. И они совсем заросли растениями.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Может быть, тебе повезет и ты не найдешь их...
+	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Рђ РіРґРµ РЅР°С…РѕРґРёС‚СЃСЏ СЌС‚Рѕ СЃС‚Р°СЂРѕРµ Р·РґР°РЅРёРµ?
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //РћР±РѕР№РґРё СЃР»РµРІР° С‚РѕС‚ Р±РѕР»СЊС€РѕР№ РєР°РјРµРЅСЊ. Р§РµСЂРµР· РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ СѓРІРёРґРёС€СЊ РґСЂСѓРіРѕР№ Р±РѕР»СЊС€РѕР№ РєР°РјРµРЅСЊ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Р•РіРѕ РЅР°РґРѕ РѕР±РѕР№С‚Рё СЃР»РµРІР°... РёР»Рё СЃРїСЂР°РІР°, СЏ СѓР¶Рµ РЅРµ РїРѕРјРЅСЋ - СЌС‚Рѕ Р±С‹Р»Рѕ СЃР»РёС€РєРѕРј РґР°РІРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //РќРѕ СЂР°Р·РІР°Р»РёРЅС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РЅР° РЅРµР±РѕР»СЊС€РѕРј РІРѕР·РІС‹С€РµРЅРёРё. Р РѕРЅРё СЃРѕРІСЃРµРј Р·Р°СЂРѕСЃР»Рё СЂР°СЃС‚РµРЅРёСЏРјРё.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ РїРѕРІРµР·РµС‚ Рё С‚С‹ РЅРµ РЅР°Р№РґРµС€СЊ РёС…...
 };
 //---------------------------------------------------------------------
 //	Info Found
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Edgor_Found   (C_INFO)
 	condition   = DIA_Addon_Edgor_Found_Condition;
 	information = DIA_Addon_Edgor_Found_Info;
 	permanent   = FALSE;
-	description = "Я нашел каменную табличку!";
+	description = "РЇ РЅР°С€РµР» РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ!";
 };
 FUNC INT DIA_Addon_Edgor_Found_Condition()
 {	
@@ -198,9 +198,9 @@ FUNC INT DIA_Addon_Edgor_Found_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Found_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//(радостно) Я нашел каменную табличку!
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(скучно) Правда? Ты смелый парень.
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(скучно) Тогда ты наверняка заработал себе пропуск в лагерь. (зевает)
+	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//(СЂР°РґРѕСЃС‚РЅРѕ) РЇ РЅР°С€РµР» РєР°РјРµРЅРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ!
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(СЃРєСѓС‡РЅРѕ) РџСЂР°РІРґР°? РўС‹ СЃРјРµР»С‹Р№ РїР°СЂРµРЅСЊ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(СЃРєСѓС‡РЅРѕ) РўРѕРіРґР° С‚С‹ РЅР°РІРµСЂРЅСЏРєР° Р·Р°СЂР°Р±РѕС‚Р°Р» СЃРµР±Рµ РїСЂРѕРїСѓСЃРє РІ Р»Р°РіРµСЂСЊ. (Р·РµРІР°РµС‚)
 };
 //---------------------------------------------------------------------
 //	Info Teach
@@ -212,7 +212,7 @@ INSTANCE DIA_Addon_Edgor_Teach   (C_INFO)
 	condition   = DIA_Addon_Edgor_Teach_Condition;
 	information = DIA_Addon_Edgor_Teach_Info;
 	permanent   = FALSE;
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 FUNC INT DIA_Addon_Edgor_Teach_Condition()
 {	
@@ -223,20 +223,20 @@ FUNC INT DIA_Addon_Edgor_Teach_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Можешь научить меня кое-чему?
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//Я многое знаю про кровавых мух. Я ненавижу этих гадкий тварей даже больше, чем я ненавижу Франко!
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Но я знаю, как отрывать от них жала и крылья, от их мертвых тушек. (с оттенком безумия) Да! Отрывать от них...
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Кроме того, я знаю, как выделять секрет из оторванных жал.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Если хочешь, я могу научить тебя всей этой фигне.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Конечно, я ничего не буду делать бесплатно...
+	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//РњРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РєРѕРµ-С‡РµРјСѓ?
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//РЇ РјРЅРѕРіРѕРµ Р·РЅР°СЋ РїСЂРѕ РєСЂРѕРІР°РІС‹С… РјСѓС…. РЇ РЅРµРЅР°РІРёР¶Сѓ СЌС‚РёС… РіР°РґРєРёР№ С‚РІР°СЂРµР№ РґР°Р¶Рµ Р±РѕР»СЊС€Рµ, С‡РµРј СЏ РЅРµРЅР°РІРёР¶Сѓ Р¤СЂР°РЅРєРѕ!
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//РќРѕ СЏ Р·РЅР°СЋ, РєР°Рє РѕС‚СЂС‹РІР°С‚СЊ РѕС‚ РЅРёС… Р¶Р°Р»Р° Рё РєСЂС‹Р»СЊСЏ, РѕС‚ РёС… РјРµСЂС‚РІС‹С… С‚СѓС€РµРє. (СЃ РѕС‚С‚РµРЅРєРѕРј Р±РµР·СѓРјРёСЏ) Р”Р°! РћС‚СЂС‹РІР°С‚СЊ РѕС‚ РЅРёС…...
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ Р·РЅР°СЋ, РєР°Рє РІС‹РґРµР»СЏС‚СЊ СЃРµРєСЂРµС‚ РёР· РѕС‚РѕСЂРІР°РЅРЅС‹С… Р¶Р°Р».
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Р•СЃР»Рё С…РѕС‡РµС€СЊ, СЏ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РІСЃРµР№ СЌС‚РѕР№ С„РёРіРЅРµ.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//РљРѕРЅРµС‡РЅРѕ, СЏ РЅРёС‡РµРіРѕ РЅРµ Р±СѓРґСѓ РґРµР»Р°С‚СЊ Р±РµСЃРїР»Р°С‚РЅРѕ...
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"О кровавых мухах Эдгору известно все.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Рћ РєСЂРѕРІР°РІС‹С… РјСѓС…Р°С… Р­РґРіРѕСЂСѓ РёР·РІРµСЃС‚РЅРѕ РІСЃРµ.");	
 	Edgor_Teach = TRUE;
 };
 FUNC VOID B_Edgor_NotEnoughGold()
 {
-	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Мне нужно золото. Меня интересуют только монеты, не самородки.
+	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//РњРЅРµ РЅСѓР¶РЅРѕ Р·РѕР»РѕС‚Рѕ. РњРµРЅСЏ РёРЅС‚РµСЂРµСЃСѓСЋС‚ С‚РѕР»СЊРєРѕ РјРѕРЅРµС‚С‹, РЅРµ СЃР°РјРѕСЂРѕРґРєРё.
 };
 //---------------------------------------------------------------------
 //	Info Train (Bloodflys)
@@ -248,7 +248,7 @@ INSTANCE DIA_Addon_Edgor_TrainStart   (C_INFO)
 	condition   = DIA_Addon_Edgor_Start_Condition;
 	information = DIA_Addon_Edgor_Start_Info;
 	permanent   = TRUE;
-	description = "Кровавые мухи...";
+	description = "РљСЂРѕРІР°РІС‹Рµ РјСѓС…Рё...";
 };
 FUNC INT DIA_Addon_Edgor_Start_Condition()
 {	
@@ -259,8 +259,8 @@ FUNC INT DIA_Addon_Edgor_Start_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Start_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00");//По поводу кровавых мух...
-	AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01");//Что бы ты хотел узнать?
+	AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00");//РџРѕ РїРѕРІРѕРґСѓ РєСЂРѕРІР°РІС‹С… РјСѓС…...
+	AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01");//Р§С‚Рѕ Р±С‹ С‚С‹ С…РѕС‚РµР» СѓР·РЅР°С‚СЊ?
 	
 	Info_ClearChoices (DIA_Addon_Edgor_TrainStart);
 	Info_AddChoice    (DIA_Addon_Edgor_TrainStart,DIALOG_BACK,DIA_Addon_Edgor_TrainStart_BACK);
@@ -268,15 +268,15 @@ FUNC VOID DIA_Addon_Edgor_Start_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "Жало кровавой мухи (5 LP, 100 золота)",DIA_Addon_Edgor_TrainStart_Sting);
+		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "Р–Р°Р»Рѕ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё (5 LP, 100 Р·РѕР»РѕС‚Р°)",DIA_Addon_Edgor_TrainStart_Sting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Крылья кровавой мухи (5 LP, 100 золота)",DIA_Addon_Edgor_TrainStart_Wing);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "РљСЂС‹Р»СЊСЏ РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё (5 LP, 100 Р·РѕР»РѕС‚Р°)",DIA_Addon_Edgor_TrainStart_Wing);
 	};
 	if (Knows_Bloodfly == FALSE)
 	{
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"Секрет из жала (1,  100 золота)",DIA_Addon_Edgor_TrainStart_GIFT);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"РЎРµРєСЂРµС‚ РёР· Р¶Р°Р»Р° (1,  100 Р·РѕР»РѕС‚Р°)",DIA_Addon_Edgor_TrainStart_GIFT);
 	};
 };	
 FUNC VOID DIA_Addon_Edgor_TrainStart_BACK()
@@ -289,9 +289,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Sting()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00");//Как оторвать жало от мухи?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01");//Переверни дохлую тварь на брюхо и разрежь ее крест-накрест. Схвати внутренности и разрежь ткани вдоль всей спины.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02");//После этого ты сможешь выдернуть жало резким движением.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00");//РљР°Рє РѕС‚РѕСЂРІР°С‚СЊ Р¶Р°Р»Рѕ РѕС‚ РјСѓС…Рё?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01");//РџРµСЂРµРІРµСЂРЅРё РґРѕС…Р»СѓСЋ С‚РІР°СЂСЊ РЅР° Р±СЂСЋС…Рѕ Рё СЂР°Р·СЂРµР¶СЊ РµРµ РєСЂРµСЃС‚-РЅР°РєСЂРµСЃС‚. РЎС…РІР°С‚Рё РІРЅСѓС‚СЂРµРЅРЅРѕСЃС‚Рё Рё СЂР°Р·СЂРµР¶СЊ С‚РєР°РЅРё РІРґРѕР»СЊ РІСЃРµР№ СЃРїРёРЅС‹.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02");//РџРѕСЃР»Рµ СЌС‚РѕРіРѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РІС‹РґРµСЂРЅСѓС‚СЊ Р¶Р°Р»Рѕ СЂРµР·РєРёРј РґРІРёР¶РµРЅРёРµРј.
 		};
 	}
 	else
@@ -306,8 +306,8 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Wing()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//А как отделить крылья?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Схвати их одной рукой. Другой просто отрежь их по внешней стороне кожи.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Рђ РєР°Рє РѕС‚РґРµР»РёС‚СЊ РєСЂС‹Р»СЊСЏ?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//РЎС…РІР°С‚Рё РёС… РѕРґРЅРѕР№ СЂСѓРєРѕР№. Р”СЂСѓРіРѕР№ РїСЂРѕСЃС‚Рѕ РѕС‚СЂРµР¶СЊ РёС… РїРѕ РІРЅРµС€РЅРµР№ СЃС‚РѕСЂРѕРЅРµ РєРѕР¶Рё.
 		};
 	}
 	else
@@ -322,9 +322,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_GIFT()
 	{
 		if (other.lp >= 1)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Как добыть секрет из жала кровавой мухи?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Разрежь верхний слой жала вдоль - тогда лечебный секрет и вытечет.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Это совершенно безопасный способ высосать его из жала -  или использовать его для лечебного зелья.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//РљР°Рє РґРѕР±С‹С‚СЊ СЃРµРєСЂРµС‚ РёР· Р¶Р°Р»Р° РєСЂРѕРІР°РІРѕР№ РјСѓС…Рё?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Р Р°Р·СЂРµР¶СЊ РІРµСЂС…РЅРёР№ СЃР»РѕР№ Р¶Р°Р»Р° РІРґРѕР»СЊ - С‚РѕРіРґР° Р»РµС‡РµР±РЅС‹Р№ СЃРµРєСЂРµС‚ Рё РІС‹С‚РµС‡РµС‚.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Р­С‚Рѕ СЃРѕРІРµСЂС€РµРЅРЅРѕ Р±РµР·РѕРїР°СЃРЅС‹Р№ СЃРїРѕСЃРѕР± РІС‹СЃРѕСЃР°С‚СЊ РµРіРѕ РёР· Р¶Р°Р»Р° -  РёР»Рё РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РµРіРѕ РґР»СЏ Р»РµС‡РµР±РЅРѕРіРѕ Р·РµР»СЊСЏ.
 			
 			other.lp = (other.lp - 1);
 			Knows_Bloodfly = TRUE; 

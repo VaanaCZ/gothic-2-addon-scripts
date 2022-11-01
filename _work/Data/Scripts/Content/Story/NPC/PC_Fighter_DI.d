@@ -8,7 +8,7 @@
 INSTANCE PC_Fighter_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Горн";
+	name 		= "Р“РѕСЂРЅ";
 	guild 		= GIL_DJG;
 	id 			= 23;
 	voice 		= 12;

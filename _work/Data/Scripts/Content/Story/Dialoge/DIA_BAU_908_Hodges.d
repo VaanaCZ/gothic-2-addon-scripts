@@ -56,10 +56,10 @@ func int DIA_Hodges_HALLO_Condition ()
 
 func void DIA_Hodges_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Hodges_HALLO_15_00"); //Привет, я новичок здесь.
-	AI_Output (self, other, "DIA_Hodges_HALLO_03_01"); //Не пойми меня неправильно, но сейчас у меня нет настроения разговаривать - я абсолютно измотан.
-	AI_Output (other, self, "DIA_Hodges_HALLO_15_02"); //Ты ужасно занят, да?
-	AI_Output (self, other, "DIA_Hodges_HALLO_03_03"); //Даже не говори. Беннет делает столько оружия, что едва успеваю полировать его.
+	AI_Output (other, self, "DIA_Hodges_HALLO_15_00"); //РџСЂРёРІРµС‚, СЏ РЅРѕРІРёС‡РѕРє Р·РґРµСЃСЊ.
+	AI_Output (self, other, "DIA_Hodges_HALLO_03_01"); //РќРµ РїРѕР№РјРё РјРµРЅСЏ РЅРµРїСЂР°РІРёР»СЊРЅРѕ, РЅРѕ СЃРµР№С‡Р°СЃ Сѓ РјРµРЅСЏ РЅРµС‚ РЅР°СЃС‚СЂРѕРµРЅРёСЏ СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ - СЏ Р°Р±СЃРѕР»СЋС‚РЅРѕ РёР·РјРѕС‚Р°РЅ.
+	AI_Output (other, self, "DIA_Hodges_HALLO_15_02"); //РўС‹ СѓР¶Р°СЃРЅРѕ Р·Р°РЅСЏС‚, РґР°?
+	AI_Output (self, other, "DIA_Hodges_HALLO_03_03"); //Р”Р°Р¶Рµ РЅРµ РіРѕРІРѕСЂРё. Р‘РµРЅРЅРµС‚ РґРµР»Р°РµС‚ СЃС‚РѕР»СЊРєРѕ РѕСЂСѓР¶РёСЏ, С‡С‚Рѕ РµРґРІР° СѓСЃРїРµРІР°СЋ РїРѕР»РёСЂРѕРІР°С‚СЊ РµРіРѕ.
 };
 
 // ************************************************************
@@ -72,7 +72,7 @@ instance DIA_Hodges_TellAboutFarm	(C_INFO)
 	condition	 = 	DIA_Hodges_TellAboutFarm_Condition;
 	information	 = 	DIA_Hodges_TellAboutFarm_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Что ты можешь рассказать мне об этой ферме?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ РѕР± СЌС‚РѕР№ С„РµСЂРјРµ?";
 };
 
 func int DIA_Hodges_TellAboutFarm_Condition ()
@@ -86,21 +86,21 @@ func int DIA_Hodges_TellAboutFarm_Condition ()
 
 func void DIA_Hodges_TellAboutFarm_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_TellAboutFarm_15_00"); //Что ты можешь рассказать мне об этой ферме?
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_01"); //Это ферма Онара.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_02"); //Это большое здание - его дом. Он освободил одно крыло для наемников.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_03"); //А нам, фермерам, пришлось переселиться в сарай.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_04"); //(торопливо) Но я совсем не против, хорошо ведь, что есть люди, способные защитить ферму.
+	AI_Output (other,self ,"DIA_Hodges_TellAboutFarm_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РјРЅРµ РѕР± СЌС‚РѕР№ С„РµСЂРјРµ?
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_01"); //Р­С‚Рѕ С„РµСЂРјР° РћРЅР°СЂР°.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_02"); //Р­С‚Рѕ Р±РѕР»СЊС€РѕРµ Р·РґР°РЅРёРµ - РµРіРѕ РґРѕРј. РћРЅ РѕСЃРІРѕР±РѕРґРёР» РѕРґРЅРѕ РєСЂС‹Р»Рѕ РґР»СЏ РЅР°РµРјРЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_03"); //Рђ РЅР°Рј, С„РµСЂРјРµСЂР°Рј, РїСЂРёС€Р»РѕСЃСЊ РїРµСЂРµСЃРµР»РёС‚СЊСЃСЏ РІ СЃР°СЂР°Р№.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_04"); //(С‚РѕСЂРѕРїР»РёРІРѕ) РќРѕ СЏ СЃРѕРІСЃРµРј РЅРµ РїСЂРѕС‚РёРІ, С…РѕСЂРѕС€Рѕ РІРµРґСЊ, С‡С‚Рѕ РµСЃС‚СЊ Р»СЋРґРё, СЃРїРѕСЃРѕР±РЅС‹Рµ Р·Р°С‰РёС‚РёС‚СЊ С„РµСЂРјСѓ.
 	
 	if (Npc_GetDistToWP (self, "NW_BIGFARM_SMITH_SHARP") < 500)
 	{
-		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_05"); //Вот это здание - кухня.
+		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_05"); //Р’РѕС‚ СЌС‚Рѕ Р·РґР°РЅРёРµ - РєСѓС…РЅСЏ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_06"); //Перед кухней находится кузница.
+		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_06"); //РџРµСЂРµРґ РєСѓС…РЅРµР№ РЅР°С…РѕРґРёС‚СЃСЏ РєСѓР·РЅРёС†Р°.
 	};
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_07"); //Возможно, тебе повезет и Текла приготовит тебе что-нибудь поесть.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_07"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ РїРѕРІРµР·РµС‚ Рё РўРµРєР»Р° РїСЂРёРіРѕС‚РѕРІРёС‚ С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРµСЃС‚СЊ.
 };
 
 // ************************************************************
@@ -113,7 +113,7 @@ instance DIA_Hodges_AboutSld	(C_INFO)
 	condition	 = 	DIA_Hodges_AboutSld_Condition;
 	information	 = 	DIA_Hodges_AboutSld_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"А что насчет наемников?";
+	description	 = 	"Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РЅР°РµРјРЅРёРєРѕРІ?";
 };
 
 func int DIA_Hodges_AboutSld_Condition ()
@@ -129,11 +129,11 @@ func int DIA_Hodges_AboutSld_Condition ()
 
 func void DIA_Hodges_AboutSld_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_AboutSld_15_00"); //А что насчет наемников?
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_01"); //Онар нанял их, чтобы они не пускали сюда ополчение.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_02"); //Но также они охраняют ферму, наших овец и самих фермеров.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_03"); //Так что даже не думай украсть что-нибудь или пошарить в чужом сундуке.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_04"); //Они только и ждут шанса, чтобы задать тебе трепку.
+	AI_Output (other,self ,"DIA_Hodges_AboutSld_15_00"); //Рђ С‡С‚Рѕ РЅР°СЃС‡РµС‚ РЅР°РµРјРЅРёРєРѕРІ?
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_01"); //РћРЅР°СЂ РЅР°РЅСЏР» РёС…, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ РїСѓСЃРєР°Р»Рё СЃСЋРґР° РѕРїРѕР»С‡РµРЅРёРµ.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_02"); //РќРѕ С‚Р°РєР¶Рµ РѕРЅРё РѕС…СЂР°РЅСЏСЋС‚ С„РµСЂРјСѓ, РЅР°С€РёС… РѕРІРµС† Рё СЃР°РјРёС… С„РµСЂРјРµСЂРѕРІ.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_03"); //РўР°Рє С‡С‚Рѕ РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№ СѓРєСЂР°СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёР»Рё РїРѕС€Р°СЂРёС‚СЊ РІ С‡СѓР¶РѕРј СЃСѓРЅРґСѓРєРµ.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_04"); //РћРЅРё С‚РѕР»СЊРєРѕ Рё Р¶РґСѓС‚ С€Р°РЅСЃР°, С‡С‚РѕР±С‹ Р·Р°РґР°С‚СЊ С‚РµР±Рµ С‚СЂРµРїРєСѓ.
 };
 
 // ************************************************************
@@ -146,7 +146,7 @@ instance DIA_Hodges_TRADE	(C_INFO)
 	condition	= DIA_Hodges_TRADE_Condition;
 	information	= DIA_Hodges_TRADE_Info;
 	permanent 	= TRUE;
-	description	= "Могу я купить оружие у тебя?";
+	description	= "РњРѕРіСѓ СЏ РєСѓРїРёС‚СЊ РѕСЂСѓР¶РёРµ Сѓ С‚РµР±СЏ?";
 	trade		= TRUE;
 };
 
@@ -157,8 +157,8 @@ func int DIA_Hodges_TRADE_Condition ()
 
 func void DIA_Hodges_TRADE_Info ()
 {	
-	AI_Output (other, self ,"DIA_Hodges_TRADE_15_00"); //Могу я купить оружие у тебя?
-	AI_Output (self, other, "DIA_Hodges_TRADE_03_01"); //У меня мало что есть. Мы относим почти все мечи и топоры в дом Онара.
+	AI_Output (other, self ,"DIA_Hodges_TRADE_15_00"); //РњРѕРіСѓ СЏ РєСѓРїРёС‚СЊ РѕСЂСѓР¶РёРµ Сѓ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Hodges_TRADE_03_01"); //РЈ РјРµРЅСЏ РјР°Р»Рѕ С‡С‚Рѕ РµСЃС‚СЊ. РњС‹ РѕС‚РЅРѕСЃРёРј РїРѕС‡С‚Рё РІСЃРµ РјРµС‡Рё Рё С‚РѕРїРѕСЂС‹ РІ РґРѕРј РћРЅР°СЂР°.
 	
 	Npc_RemoveInvItems (self,ItMiSwordblade,Npc_HasItems (self,ItMiSwordblade));
 };
@@ -238,7 +238,7 @@ instance DIA_Hodges_DontWork		(C_INFO)
 	condition	 = 	DIA_Hodges_DontWork_Condition;
 	information	 = 	DIA_Hodges_DontWork_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Почему ты не работаешь?";
+	description	 = 	"РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ?";
 };
 
 func int DIA_Hodges_DontWork_Condition ()
@@ -252,14 +252,14 @@ func int DIA_Hodges_DontWork_Condition ()
 
 func void DIA_Hodges_DontWork_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_DontWork_15_00"); //Почему ты не работаешь?
-	AI_Output (self ,other,"DIA_Hodges_DontWork_03_01"); //Ты еще ничего не слышал? Паладины арестовали Беннета.
+	AI_Output (other,self ,"DIA_Hodges_DontWork_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Hodges_DontWork_03_01"); //РўС‹ РµС‰Рµ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Р°Р»? РџР°Р»Р°РґРёРЅС‹ Р°СЂРµСЃС‚РѕРІР°Р»Рё Р‘РµРЅРЅРµС‚Р°.
 
 	MIS_RescueBennet = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_RESCUEBENNET, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_RESCUEBENNET, LOG_RUNNING);
-	B_LogEntry (TOPIC_RESCUEBENNET,"Кузнец Беннет арестован паладинами в городе."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"РљСѓР·РЅРµС† Р‘РµРЅРЅРµС‚ Р°СЂРµСЃС‚РѕРІР°РЅ РїР°Р»Р°РґРёРЅР°РјРё РІ РіРѕСЂРѕРґРµ."); 
 
 };
 
@@ -273,7 +273,7 @@ instance DIA_Hodges_WhatHappened		(C_INFO)
 	condition	 = 	DIA_Hodges_WhatHappened_Condition;
 	information	 = 	DIA_Hodges_WhatHappened_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Что произошло?";
+	description	 = 	"Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ?";
 };
 
 func int DIA_Hodges_WhatHappened_Condition ()
@@ -287,11 +287,11 @@ func int DIA_Hodges_WhatHappened_Condition ()
 
 func void DIA_Hodges_WhatHappened_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_WhatHappened_15_00"); //Что случилось?
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_01"); //Ну, мы были в городе за покупками, когда неожиданно услышали крик. Кто-то кричал: 'Вот они, держите их!'
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_02"); //Ох, как я испугался! Я бросился бежать. Я бежал так, как будто за мной гнались демоны.
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_03"); //Беннет бежал за мной. Я не знаю, что произошло, но когда я выбрался из города, его со мной уже не было.
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_04"); //Должно быть, он отстал где-то в городе.
+	AI_Output (other,self ,"DIA_Hodges_WhatHappened_15_00"); //Р§С‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ?
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_01"); //РќСѓ, РјС‹ Р±С‹Р»Рё РІ РіРѕСЂРѕРґРµ Р·Р° РїРѕРєСѓРїРєР°РјРё, РєРѕРіРґР° РЅРµРѕР¶РёРґР°РЅРЅРѕ СѓСЃР»С‹С€Р°Р»Рё РєСЂРёРє. РљС‚Рѕ-С‚Рѕ РєСЂРёС‡Р°Р»: 'Р’РѕС‚ РѕРЅРё, РґРµСЂР¶РёС‚Рµ РёС…!'
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_02"); //РћС…, РєР°Рє СЏ РёСЃРїСѓРіР°Р»СЃСЏ! РЇ Р±СЂРѕСЃРёР»СЃСЏ Р±РµР¶Р°С‚СЊ. РЇ Р±РµР¶Р°Р» С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ Р·Р° РјРЅРѕР№ РіРЅР°Р»РёСЃСЊ РґРµРјРѕРЅС‹.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_03"); //Р‘РµРЅРЅРµС‚ Р±РµР¶Р°Р» Р·Р° РјРЅРѕР№. РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ, РЅРѕ РєРѕРіРґР° СЏ РІС‹Р±СЂР°Р»СЃСЏ РёР· РіРѕСЂРѕРґР°, РµРіРѕ СЃРѕ РјРЅРѕР№ СѓР¶Рµ РЅРµ Р±С‹Р»Рѕ.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_04"); //Р”РѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РѕРЅ РѕС‚СЃС‚Р°Р» РіРґРµ-С‚Рѕ РІ РіРѕСЂРѕРґРµ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -304,7 +304,7 @@ instance DIA_Hodges_BennetsCrime			(C_INFO)
 	condition	 = 	DIA_Hodges_BennetsCrime_Condition;
 	information	 = 	DIA_Hodges_BennetsCrime_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Так почему Беннета арестовали?";
+	description	 = 	"РўР°Рє РїРѕС‡РµРјСѓ Р‘РµРЅРЅРµС‚Р° Р°СЂРµСЃС‚РѕРІР°Р»Рё?";
 };
 
 func int DIA_Hodges_BennetsCrime_Condition ()
@@ -318,19 +318,19 @@ func int DIA_Hodges_BennetsCrime_Condition ()
 
 func void DIA_Hodges_BennetsCrime_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_00"); //Так почему Беннета арестовали?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_01"); //Убийство! Беннета подозревают в убийстве паладина. Какая чушь. Я был с ним все это время.
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_02"); //Так почему ты не пойдешь в город и не расскажешь, как все было?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_03"); //Они посадят меня в камеру как его сообщника. Нееет, этого нельзя делать, учитывая ситуацию.
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_04"); //Ситуацию?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_05"); //Понимаешь, Онар и его отношения с городом... Это все может плохо кончиться.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_00"); //РўР°Рє РїРѕС‡РµРјСѓ Р‘РµРЅРЅРµС‚Р° Р°СЂРµСЃС‚РѕРІР°Р»Рё?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_01"); //РЈР±РёР№СЃС‚РІРѕ! Р‘РµРЅРЅРµС‚Р° РїРѕРґРѕР·СЂРµРІР°СЋС‚ РІ СѓР±РёР№СЃС‚РІРµ РїР°Р»Р°РґРёРЅР°. РљР°РєР°СЏ С‡СѓС€СЊ. РЇ Р±С‹Р» СЃ РЅРёРј РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_02"); //РўР°Рє РїРѕС‡РµРјСѓ С‚С‹ РЅРµ РїРѕР№РґРµС€СЊ РІ РіРѕСЂРѕРґ Рё РЅРµ СЂР°СЃСЃРєР°Р¶РµС€СЊ, РєР°Рє РІСЃРµ Р±С‹Р»Рѕ?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_03"); //РћРЅРё РїРѕСЃР°РґСЏС‚ РјРµРЅСЏ РІ РєР°РјРµСЂСѓ РєР°Рє РµРіРѕ СЃРѕРѕР±С‰РЅРёРєР°. РќРµРµРµС‚, СЌС‚РѕРіРѕ РЅРµР»СЊР·СЏ РґРµР»Р°С‚СЊ, СѓС‡РёС‚С‹РІР°СЏ СЃРёС‚СѓР°С†РёСЋ.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_04"); //РЎРёС‚СѓР°С†РёСЋ?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_05"); //РџРѕРЅРёРјР°РµС€СЊ, РћРЅР°СЂ Рё РµРіРѕ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РіРѕСЂРѕРґРѕРј... Р­С‚Рѕ РІСЃРµ РјРѕР¶РµС‚ РїР»РѕС…Рѕ РєРѕРЅС‡РёС‚СЊСЃСЏ.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Говорят, что Беннет убил паладина. Его ученик Ходжес утверждает, что Беннет невиновен, но он не осмеливается входить в город."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Р“РѕРІРѕСЂСЏС‚, С‡С‚Рѕ Р‘РµРЅРЅРµС‚ СѓР±РёР» РїР°Р»Р°РґРёРЅР°. Р•РіРѕ СѓС‡РµРЅРёРє РҐРѕРґР¶РµСЃ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ Р‘РµРЅРЅРµС‚ РЅРµРІРёРЅРѕРІРµРЅ, РЅРѕ РѕРЅ РЅРµ РѕСЃРјРµР»РёРІР°РµС‚СЃСЏ РІС…РѕРґРёС‚СЊ РІ РіРѕСЂРѕРґ."); 
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Wie reagieren die Sцldner?
+//	Wie reagieren die SС†ldner?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hodges_BennetAndSLD			(C_INFO)
 {
@@ -339,7 +339,7 @@ instance DIA_Hodges_BennetAndSLD			(C_INFO)
 	condition	 = 	DIA_Hodges_BennetAndSLD_Condition;
 	information	 = 	DIA_Hodges_BennetAndSLD_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"А как отреагировали наемники на ферме?";
+	description	 = 	"Рђ РєР°Рє РѕС‚СЂРµР°РіРёСЂРѕРІР°Р»Рё РЅР°РµРјРЅРёРєРё РЅР° С„РµСЂРјРµ?";
 };
 
 func int DIA_Hodges_BennetAndSLD_Condition ()
@@ -353,11 +353,11 @@ func int DIA_Hodges_BennetAndSLD_Condition ()
 
 func void DIA_Hodges_BennetAndSLD_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_00"); //А как отреагировали наемники на ферме?
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_01"); //Естественно, я не знаю, что они планируют, но многие из них просто в ярости.
-	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_02"); //Это понятно.
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_03"); //Если бы у них было право решать, они бы атаковали город уже сегодня, чтобы освободить Беннета.
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_04"); //Поговори с Ли, может быть, ты чем-нибудь сможешь помочь.
+	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_00"); //Рђ РєР°Рє РѕС‚СЂРµР°РіРёСЂРѕРІР°Р»Рё РЅР°РµРјРЅРёРєРё РЅР° С„РµСЂРјРµ?
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_01"); //Р•СЃС‚РµСЃС‚РІРµРЅРЅРѕ, СЏ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ РѕРЅРё РїР»Р°РЅРёСЂСѓСЋС‚, РЅРѕ РјРЅРѕРіРёРµ РёР· РЅРёС… РїСЂРѕСЃС‚Рѕ РІ СЏСЂРѕСЃС‚Рё.
+	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_02"); //Р­С‚Рѕ РїРѕРЅСЏС‚РЅРѕ.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_03"); //Р•СЃР»Рё Р±С‹ Сѓ РЅРёС… Р±С‹Р»Рѕ РїСЂР°РІРѕ СЂРµС€Р°С‚СЊ, РѕРЅРё Р±С‹ Р°С‚Р°РєРѕРІР°Р»Рё РіРѕСЂРѕРґ СѓР¶Рµ СЃРµРіРѕРґРЅСЏ, С‡С‚РѕР±С‹ РѕСЃРІРѕР±РѕРґРёС‚СЊ Р‘РµРЅРЅРµС‚Р°.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_04"); //РџРѕРіРѕРІРѕСЂРё СЃ Р›Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ С‡РµРј-РЅРёР±СѓРґСЊ СЃРјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ.
 };
 //##################################################
 //##

@@ -33,7 +33,7 @@ instance DIA_Cipher_Hello (C_INFO)
 	condition	= DIA_Cipher_Hello_Condition;
 	information	= DIA_Cipher_Hello_Info;
 	permanent	= FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Cipher_Hello_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_Cipher_Hello_Condition()
  
 FUNC VOID DIA_Cipher_Hello_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_Hello_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Cipher_Hello_07_01"); //Эй, я тебя откуда-то знаю?
-	AI_Output (other, self, "DIA_Cipher_Hello_15_02"); //Возможно...
-	AI_Output (self, other, "DIA_Cipher_Hello_07_03"); //Я торговал болотной травой в колонии, помнишь?
+	AI_Output (other, self, "DIA_Cipher_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Cipher_Hello_07_01"); //Р­Р№, СЏ С‚РµР±СЏ РѕС‚РєСѓРґР°-С‚Рѕ Р·РЅР°СЋ?
+	AI_Output (other, self, "DIA_Cipher_Hello_15_02"); //Р’РѕР·РјРѕР¶РЅРѕ...
+	AI_Output (self, other, "DIA_Cipher_Hello_07_03"); //РЇ С‚РѕСЂРіРѕРІР°Р» Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІРѕР№ РІ РєРѕР»РѕРЅРёРё, РїРѕРјРЅРёС€СЊ?
 };
 
 // ************************************************************
@@ -60,7 +60,7 @@ instance DIA_Cipher_TradeWhat (C_INFO)
 	condition	= DIA_Cipher_TradeWhat_Condition;
 	information	= DIA_Cipher_TradeWhat_Info;
 	permanent	= FALSE;
-	description = "А чем ты торгуешь сейчас?";
+	description = "Рђ С‡РµРј С‚С‹ С‚РѕСЂРіСѓРµС€СЊ СЃРµР№С‡Р°СЃ?";
 };                       
 
 FUNC INT DIA_Cipher_TradeWhat_Condition()
@@ -73,21 +73,21 @@ FUNC INT DIA_Cipher_TradeWhat_Condition()
  
 FUNC VOID DIA_Cipher_TradeWhat_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_TradeWhat_15_00"); //А чем ты торгуешь сейчас?
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_01"); //Ах, не спрашивай.
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_02"); //Я принес с собой из колонии целый тюк болотной травы.
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_03"); //Многие наемники не прочь иногда покурить травки. Я даже смог сколотить небольшое состояние на этом.
-	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_04"); //Но какой-то ублюдок украл эту траву из моего сундука!
+	AI_Output (other, self, "DIA_Cipher_TradeWhat_15_00"); //Рђ С‡РµРј С‚С‹ С‚РѕСЂРіСѓРµС€СЊ СЃРµР№С‡Р°СЃ?
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_01"); //РђС…, РЅРµ СЃРїСЂР°С€РёРІР°Р№.
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_02"); //РЇ РїСЂРёРЅРµСЃ СЃ СЃРѕР±РѕР№ РёР· РєРѕР»РѕРЅРёРё С†РµР»С‹Р№ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹.
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_03"); //РњРЅРѕРіРёРµ РЅР°РµРјРЅРёРєРё РЅРµ РїСЂРѕС‡СЊ РёРЅРѕРіРґР° РїРѕРєСѓСЂРёС‚СЊ С‚СЂР°РІРєРё. РЇ РґР°Р¶Рµ СЃРјРѕРі СЃРєРѕР»РѕС‚РёС‚СЊ РЅРµР±РѕР»СЊС€РѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ РЅР° СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Cipher_TradeWhat_07_04"); //РќРѕ РєР°РєРѕР№-С‚Рѕ СѓР±Р»СЋРґРѕРє СѓРєСЂР°Р» СЌС‚Сѓ С‚СЂР°РІСѓ РёР· РјРѕРµРіРѕ СЃСѓРЅРґСѓРєР°!
 	
 	Log_CreateTopic (Topic_CipherPaket,LOG_MISSION);
 	Log_SetTopicStatus (Topic_CipherPaket,LOG_RUNNING);
-	B_LogEntry (Topic_CipherPaket, "Наемник Сифер потерял тюк болотной травы.");
+	B_LogEntry (Topic_CipherPaket, "РќР°РµРјРЅРёРє РЎРёС„РµСЂ РїРѕС‚РµСЂСЏР» С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹.");
 	
 	
 	if (!Npc_IsDead (Bodo))
 	{
-		AI_Output (self, other, "DIA_Cipher_TradeWhat_07_05"); //Я почти уверен, что это Бодо. Он спит в той же комнате, что и я, и всегда ухмыляется при встрече, как идиот...
-		B_LogEntry (Topic_CipherPaket, "Он подозревает, что его украл Бодо.");
+		AI_Output (self, other, "DIA_Cipher_TradeWhat_07_05"); //РЇ РїРѕС‡С‚Рё СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЌС‚Рѕ Р‘РѕРґРѕ. РћРЅ СЃРїРёС‚ РІ С‚РѕР№ Р¶Рµ РєРѕРјРЅР°С‚Рµ, С‡С‚Рѕ Рё СЏ, Рё РІСЃРµРіРґР° СѓС…РјС‹Р»СЏРµС‚СЃСЏ РїСЂРё РІСЃС‚СЂРµС‡Рµ, РєР°Рє РёРґРёРѕС‚...
+		B_LogEntry (Topic_CipherPaket, "РћРЅ РїРѕРґРѕР·СЂРµРІР°РµС‚, С‡С‚Рѕ РµРіРѕ СѓРєСЂР°Р» Р‘РѕРґРѕ.");
 	};
 	
 	MIS_Cipher_Paket = LOG_RUNNING;
@@ -104,7 +104,7 @@ instance DIA_Cipher_DoWithThief (C_INFO)
 	condition	= DIA_Cipher_DoWithThief_Condition;
 	information	= DIA_Cipher_DoWithThief_Info;
 	permanent	= FALSE;
-	description = "И что ты собираешься делать с вором?";
+	description = "Р С‡С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ СЃ РІРѕСЂРѕРј?";
 };                       
 
 FUNC INT DIA_Cipher_DoWithThief_Condition()
@@ -117,14 +117,14 @@ FUNC INT DIA_Cipher_DoWithThief_Condition()
  
 FUNC VOID DIA_Cipher_DoWithThief_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_00"); //И что ты собираешься делать с вором?
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_01"); //Когда-нибудь я поймаю его, когда он будет курить мою траву.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_02"); //И тогда, я найду укромное местечко и преподам ему урок, который он не скоро забудет.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_03"); //Если я вырублю его прямо здесь, посреди двора, на глазах у фермеров, я могу поплатиться за это.
-	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_04"); //Это почему?
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_05"); //Вес просто. Мы не можем досаждать фермерам, иначе Ли заставит нас заплатить солидный штраф. Так распорядился Онар.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_06"); //И чем больше свидетелей, тем больший шум поднимется. И штраф будет больше.
-	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_07"); //Так что это нужно будет сделать аккуратно и тихо...
+	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_00"); //Р С‡С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ СЃ РІРѕСЂРѕРј?
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_01"); //РљРѕРіРґР°-РЅРёР±СѓРґСЊ СЏ РїРѕР№РјР°СЋ РµРіРѕ, РєРѕРіРґР° РѕРЅ Р±СѓРґРµС‚ РєСѓСЂРёС‚СЊ РјРѕСЋ С‚СЂР°РІСѓ.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_02"); //Р С‚РѕРіРґР°, СЏ РЅР°Р№РґСѓ СѓРєСЂРѕРјРЅРѕРµ РјРµСЃС‚РµС‡РєРѕ Рё РїСЂРµРїРѕРґР°Рј РµРјСѓ СѓСЂРѕРє, РєРѕС‚РѕСЂС‹Р№ РѕРЅ РЅРµ СЃРєРѕСЂРѕ Р·Р°Р±СѓРґРµС‚.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_03"); //Р•СЃР»Рё СЏ РІС‹СЂСѓР±Р»СЋ РµРіРѕ РїСЂСЏРјРѕ Р·РґРµСЃСЊ, РїРѕСЃСЂРµРґРё РґРІРѕСЂР°, РЅР° РіР»Р°Р·Р°С… Сѓ С„РµСЂРјРµСЂРѕРІ, СЏ РјРѕРіСѓ РїРѕРїР»Р°С‚РёС‚СЊСЃСЏ Р·Р° СЌС‚Рѕ.
+	AI_Output (other, self, "DIA_Cipher_DoWithThief_15_04"); //Р­С‚Рѕ РїРѕС‡РµРјСѓ?
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_05"); //Р’РµСЃ РїСЂРѕСЃС‚Рѕ. РњС‹ РЅРµ РјРѕР¶РµРј РґРѕСЃР°Р¶РґР°С‚СЊ С„РµСЂРјРµСЂР°Рј, РёРЅР°С‡Рµ Р›Рё Р·Р°СЃС‚Р°РІРёС‚ РЅР°СЃ Р·Р°РїР»Р°С‚РёС‚СЊ СЃРѕР»РёРґРЅС‹Р№ С€С‚СЂР°С„. РўР°Рє СЂР°СЃРїРѕСЂСЏРґРёР»СЃСЏ РћРЅР°СЂ.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_06"); //Р С‡РµРј Р±РѕР»СЊС€Рµ СЃРІРёРґРµС‚РµР»РµР№, С‚РµРј Р±РѕР»СЊС€РёР№ С€СѓРј РїРѕРґРЅРёРјРµС‚СЃСЏ. Р С€С‚СЂР°С„ Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ.
+	AI_Output (self, other, "DIA_Cipher_DoWithThief_07_07"); //РўР°Рє С‡С‚Рѕ СЌС‚Рѕ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ СЃРґРµР»Р°С‚СЊ Р°РєРєСѓСЂР°С‚РЅРѕ Рё С‚РёС…Рѕ...
 };
 
 // ************************************************************
@@ -138,7 +138,7 @@ instance DIA_Cipher_WannaJoin (C_INFO)
 	condition	= DIA_Cipher_WannaJoin_Condition;
 	information	= DIA_Cipher_WannaJoin_Info;
 	permanent	= FALSE;
-	description = "Я хочу присоединиться к людям Ли!";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р»СЋРґСЏРј Р›Рё!";
 };                       
 
 FUNC INT DIA_Cipher_WannaJoin_Condition()
@@ -152,14 +152,14 @@ FUNC INT DIA_Cipher_WannaJoin_Condition()
  
 FUNC VOID DIA_Cipher_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_00"); //Я хочу присоединиться к людям Ли!
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_01"); //Людям ЛИ?! Если Ли будет продолжать в том же духе, они скоро перестанут быть его людьми!
-	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_02"); //Почему?
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_03"); //Ли всегда был очень спокойным. И в колонии он вел себя так же.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_04"); //Но последнее время это стало уж слишком. Он хочет просто сидеть здесь и ждать, пока паладины не помрут с голоду.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_05"); //Сильвио думает, что мы должны пошерстить немного на небольших фермах у города.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_06"); //Я думаю, это была бы превосходная смена обстановки.
-	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_07"); //А сейчас большинство из нас просто бьют баклуши здесь. И ты все равно хочешь присоединиться?
+	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє Р»СЋРґСЏРј Р›Рё!
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_01"); //Р›СЋРґСЏРј Р›Р?! Р•СЃР»Рё Р›Рё Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РІ С‚РѕРј Р¶Рµ РґСѓС…Рµ, РѕРЅРё СЃРєРѕСЂРѕ РїРµСЂРµСЃС‚Р°РЅСѓС‚ Р±С‹С‚СЊ РµРіРѕ Р»СЋРґСЊРјРё!
+	AI_Output (other, self, "DIA_Cipher_WannaJoin_15_02"); //РџРѕС‡РµРјСѓ?
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_03"); //Р›Рё РІСЃРµРіРґР° Р±С‹Р» РѕС‡РµРЅСЊ СЃРїРѕРєРѕР№РЅС‹Рј. Р РІ РєРѕР»РѕРЅРёРё РѕРЅ РІРµР» СЃРµР±СЏ С‚Р°Рє Р¶Рµ.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_04"); //РќРѕ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЌС‚Рѕ СЃС‚Р°Р»Рѕ СѓР¶ СЃР»РёС€РєРѕРј. РћРЅ С…РѕС‡РµС‚ РїСЂРѕСЃС‚Рѕ СЃРёРґРµС‚СЊ Р·РґРµСЃСЊ Рё Р¶РґР°С‚СЊ, РїРѕРєР° РїР°Р»Р°РґРёРЅС‹ РЅРµ РїРѕРјСЂСѓС‚ СЃ РіРѕР»РѕРґСѓ.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_05"); //РЎРёР»СЊРІРёРѕ РґСѓРјР°РµС‚, С‡С‚Рѕ РјС‹ РґРѕР»Р¶РЅС‹ РїРѕС€РµСЂСЃС‚РёС‚СЊ РЅРµРјРЅРѕРіРѕ РЅР° РЅРµР±РѕР»СЊС€РёС… С„РµСЂРјР°С… Сѓ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_06"); //РЇ РґСѓРјР°СЋ, СЌС‚Рѕ Р±С‹Р»Р° Р±С‹ РїСЂРµРІРѕСЃС…РѕРґРЅР°СЏ СЃРјРµРЅР° РѕР±СЃС‚Р°РЅРѕРІРєРё.
+	AI_Output (self, other, "DIA_Cipher_WannaJoin_07_07"); //Рђ СЃРµР№С‡Р°СЃ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅР°СЃ РїСЂРѕСЃС‚Рѕ Р±СЊСЋС‚ Р±Р°РєР»СѓС€Рё Р·РґРµСЃСЊ. Р С‚С‹ РІСЃРµ СЂР°РІРЅРѕ С…РѕС‡РµС€СЊ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ?
 };
 
 // ************************************************************
@@ -173,7 +173,7 @@ instance DIA_Cipher_YesJoin (C_INFO)
 	condition	= DIA_Cipher_YesJoin_Condition;
 	information	= DIA_Cipher_YesJoin_Info;
 	permanent	= FALSE;
-	description = "Я все равно хочу стать одним из вас!";
+	description = "РЇ РІСЃРµ СЂР°РІРЅРѕ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ!";
 };                       
 
 FUNC INT DIA_Cipher_YesJoin_Condition()
@@ -187,17 +187,17 @@ FUNC INT DIA_Cipher_YesJoin_Condition()
  
 FUNC VOID DIA_Cipher_YesJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_YesJoin_15_00"); //Я все равно хочу стать одним из вас!
-	AI_Output (self, other, "DIA_Cipher_YesJoin_07_01"); //Ты уже знаешь, что мы голосуем за каждого новобранца?
-	AI_Output (other, self, "DIA_Cipher_YesJoin_15_02"); //На что ты намекаешь?
-	AI_Output (self, other, "DIA_Cipher_YesJoin_07_03"); //Ну, я уже давно ничего не курил. Принеси мне несколько косяков из болотной травы, и ты получишь мой голос.
-	AI_Output (self, other, "DIA_Cipher_YesJoin_07_04"); //Я уверен, тебе удастся что-нибудь найти.
+	AI_Output (other, self, "DIA_Cipher_YesJoin_15_00"); //РЇ РІСЃРµ СЂР°РІРЅРѕ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РІР°СЃ!
+	AI_Output (self, other, "DIA_Cipher_YesJoin_07_01"); //РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РјС‹ РіРѕР»РѕСЃСѓРµРј Р·Р° РєР°Р¶РґРѕРіРѕ РЅРѕРІРѕР±СЂР°РЅС†Р°?
+	AI_Output (other, self, "DIA_Cipher_YesJoin_15_02"); //РќР° С‡С‚Рѕ С‚С‹ РЅР°РјРµРєР°РµС€СЊ?
+	AI_Output (self, other, "DIA_Cipher_YesJoin_07_03"); //РќСѓ, СЏ СѓР¶Рµ РґР°РІРЅРѕ РЅРёС‡РµРіРѕ РЅРµ РєСѓСЂРёР». РџСЂРёРЅРµСЃРё РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ РєРѕСЃСЏРєРѕРІ РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹, Рё С‚С‹ РїРѕР»СѓС‡РёС€СЊ РјРѕР№ РіРѕР»РѕСЃ.
+	AI_Output (self, other, "DIA_Cipher_YesJoin_07_04"); //РЇ СѓРІРµСЂРµРЅ, С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅР°Р№С‚Рё.
 	
 	MIS_Cipher_BringWeed = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_CipherHerb,LOG_MISSION);
 	Log_SetTopicStatus(Topic_CipherHerb,LOG_RUNNING);
-	B_LogEntry (Topic_CipherHerb,"Сифер отдаст свой голос за меня, если я принесу ему несколько косяков болотной травы болотной травы.");
+	B_LogEntry (Topic_CipherHerb,"РЎРёС„РµСЂ РѕС‚РґР°СЃС‚ СЃРІРѕР№ РіРѕР»РѕСЃ Р·Р° РјРµРЅСЏ, РµСЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ РЅРµСЃРєРѕР»СЊРєРѕ РєРѕСЃСЏРєРѕРІ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹.");
 };
 
 // ************************************************************
@@ -211,7 +211,7 @@ instance DIA_Cipher_Joints (C_INFO)
 	condition	= DIA_Cipher_Joints_Condition;
 	information	= DIA_Cipher_Joints_Info;
 	permanent	= TRUE;
-	description = "Насчет болотной травы...";
+	description = "РќР°СЃС‡РµС‚ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹...";
 };                       
 
 FUNC INT DIA_Cipher_Joints_Condition()
@@ -224,60 +224,60 @@ FUNC INT DIA_Cipher_Joints_Condition()
  
 FUNC VOID DIA_Cipher_Joints_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_Joints_15_00"); //Насчет болотной травы...
+	AI_Output (other, self, "DIA_Cipher_Joints_15_00"); //РќР°СЃС‡РµС‚ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹...
 	
 	if (MIS_Cipher_Paket == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Cipher_Joints_07_01"); //Ты принес назад мой тюк! Теперь все будет отлично!
+		AI_Output (self, other, "DIA_Cipher_Joints_07_01"); //РўС‹ РїСЂРёРЅРµСЃ РЅР°Р·Р°Рґ РјРѕР№ С‚СЋРє! РўРµРїРµСЂСЊ РІСЃРµ Р±СѓРґРµС‚ РѕС‚Р»РёС‡РЅРѕ!
 		if (other.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Cipher_Joints_07_02"); //Я обязательно проголосую за тебя...
+			AI_Output (self, other, "DIA_Cipher_Joints_07_02"); //РЇ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ...
 			
-			B_LogEntry (TOPIC_SLDRespekt,"Сифер проголосует за меня, когда я решу присоединиться к наемникам.");
+			B_LogEntry (TOPIC_SLDRespekt,"РЎРёС„РµСЂ РїСЂРѕРіРѕР»РѕСЃСѓРµС‚ Р·Р° РјРµРЅСЏ, РєРѕРіРґР° СЏ СЂРµС€Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј.");
 		};
 		
-		MIS_Cipher_BringWeed = LOG_OBSOLETE; //Cipher ist glьcklich
+		MIS_Cipher_BringWeed = LOG_OBSOLETE; //Cipher ist glСЊcklich
 	}
 	else //normal Running
 	{
 		Info_ClearChoices (DIA_Cipher_Joints);
-		Info_AddChoice (DIA_Cipher_Joints, "Я посмотрю, что можно сделать ...", DIA_Cipher_Joints_Running);
+		Info_AddChoice (DIA_Cipher_Joints, "РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ ...", DIA_Cipher_Joints_Running);
 		if (Npc_HasItems (other, itmi_joint) > 0)
 		{
-			Info_AddChoice (DIA_Cipher_Joints, "Вот несколько косяков для тебя...", DIA_Cipher_Joints_Success);
+			Info_AddChoice (DIA_Cipher_Joints, "Р’РѕС‚ РЅРµСЃРєРѕР»СЊРєРѕ РєРѕСЃСЏРєРѕРІ РґР»СЏ С‚РµР±СЏ...", DIA_Cipher_Joints_Success);
 		};
 	};
 };
 
 func void DIA_Cipher_Joints_Running()
 {
-	AI_Output (other, self, "DIA_Cipher_Joints_Running_15_00"); //Посмотрим, что можно сделать...
+	AI_Output (other, self, "DIA_Cipher_Joints_Running_15_00"); //РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ...
 	Info_ClearChoices (DIA_Cipher_Joints);
 };
 
 func void DIA_Cipher_Joints_Success()
 {
-	AI_Output (other, self, "DIA_Cipher_Joints_Success_15_00"); //Вот несколько косяков для тебя...
+	AI_Output (other, self, "DIA_Cipher_Joints_Success_15_00"); //Р’РѕС‚ РЅРµСЃРєРѕР»СЊРєРѕ РєРѕСЃСЏРєРѕРІ РґР»СЏ С‚РµР±СЏ...
 	
 	if (B_GiveInvItems (other, self, itmi_joint, 10))
 	{
-		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_01"); //Ах! Ты наш человек!
+		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_01"); //РђС…! РўС‹ РЅР°С€ С‡РµР»РѕРІРµРє!
 		if (other.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_02"); //Ты получишь мой голос.
+			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_02"); //РўС‹ РїРѕР»СѓС‡РёС€СЊ РјРѕР№ РіРѕР»РѕСЃ.
 		};
 		MIS_Cipher_BringWeed = LOG_SUCCESS;
-		B_LogEntry (TOPIC_SLDRespekt,"Сифер проголосует за меня, когда я решу присоединиться к наемникам.");
+		B_LogEntry (TOPIC_SLDRespekt,"РЎРёС„РµСЂ РїСЂРѕРіРѕР»РѕСЃСѓРµС‚ Р·Р° РјРµРЅСЏ, РєРѕРіРґР° СЏ СЂРµС€Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј.");
 		B_GivePlayerXP (XP_CipherWeed);
 		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_03"); //Это все? Да я выкурю это за один присест!
-		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_04"); //Мне нужно хотя бы 10 косяков.
+		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_03"); //Р­С‚Рѕ РІСЃРµ? Р”Р° СЏ РІС‹РєСѓСЂСЋ СЌС‚Рѕ Р·Р° РѕРґРёРЅ РїСЂРёСЃРµСЃС‚!
+		AI_Output (self, other, "DIA_Cipher_Joints_Success_07_04"); //РњРЅРµ РЅСѓР¶РЅРѕ С…РѕС‚СЏ Р±С‹ 10 РєРѕСЃСЏРєРѕРІ.
 		if (other.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_05"); //Ладно, ты получишь мой голос.
+			AI_Output (self, other, "DIA_Cipher_Joints_Success_07_05"); //Р›Р°РґРЅРѕ, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РјРѕР№ РіРѕР»РѕСЃ.
 		};
 	};
 
@@ -296,7 +296,7 @@ instance DIA_Cipher_TRADE (C_INFO)
 	condition	= DIA_Cipher_TRADE_Condition;
 	information	= DIA_Cipher_TRADE_Info;
 	permanent	= TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		= TRUE;
 };                       
 
@@ -310,14 +310,14 @@ FUNC INT DIA_Cipher_TRADE_Condition()
  
 FUNC VOID DIA_Cipher_TRADE_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_TRADE_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Cipher_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	if (Npc_HasItems(self, itmi_joint) > 0)
 	{
-		AI_Output (self, other, "DIA_Cipher_TRADE_07_01"); //Конечно. Выбирай.
+		AI_Output (self, other, "DIA_Cipher_TRADE_07_01"); //РљРѕРЅРµС‡РЅРѕ. Р’С‹Р±РёСЂР°Р№.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cipher_TRADE_07_02"); //У меня сейчас нет болотной травы. Ты хочешь что-нибудь еще?
+		AI_Output (self, other, "DIA_Cipher_TRADE_07_02"); //РЈ РјРµРЅСЏ СЃРµР№С‡Р°СЃ РЅРµС‚ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹. РўС‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
 	};
 };
 
@@ -332,7 +332,7 @@ instance DIA_Cipher_DarDieb (C_INFO)
 	condition	= DIA_Cipher_DarDieb_Condition;
 	information	= DIA_Cipher_DarDieb_Info;
 	permanent	= FALSE;
-	description = "Я знаю, кто взял твою траву.";
+	description = "РЇ Р·РЅР°СЋ, РєС‚Рѕ РІР·СЏР» С‚РІРѕСЋ С‚СЂР°РІСѓ.";
 };                       
 
 FUNC INT DIA_Cipher_DarDieb_Condition()
@@ -346,14 +346,14 @@ FUNC INT DIA_Cipher_DarDieb_Condition()
  
 FUNC VOID DIA_Cipher_DarDieb_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_00"); //Я знаю, кто взял твою траву.
-	AI_Output (self, other, "DIA_Cipher_DarDieb_07_01"); //Кто? Это был Бодо?
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_02"); //Нет, это сделал один из наемников - Дар.
-	AI_Output (self, other, "DIA_Cipher_DarDieb_07_03"); //Этот ублюдок! Где он?
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_04"); //Даже если ты найдешь его, это тебе не поможет, у него больше нет этого тюка. Он продал его в Хоринисе.
-	AI_Output (self, other, "DIA_Cipher_DarDieb_07_05"); //ГДЕ ОН?!
-	AI_Output (other, self, "DIA_Cipher_DarDieb_15_06"); //За кухней, на углу...
-	AI_Output (self, other, "DIA_Cipher_DarDieb_07_07"); //Я ПРИКОНЧУ ЕГО!
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_00"); //РЇ Р·РЅР°СЋ, РєС‚Рѕ РІР·СЏР» С‚РІРѕСЋ С‚СЂР°РІСѓ.
+	AI_Output (self, other, "DIA_Cipher_DarDieb_07_01"); //РљС‚Рѕ? Р­С‚Рѕ Р±С‹Р» Р‘РѕРґРѕ?
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_02"); //РќРµС‚, СЌС‚Рѕ СЃРґРµР»Р°Р» РѕРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ - Р”Р°СЂ.
+	AI_Output (self, other, "DIA_Cipher_DarDieb_07_03"); //Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє! Р“РґРµ РѕРЅ?
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_04"); //Р”Р°Р¶Рµ РµСЃР»Рё С‚С‹ РЅР°Р№РґРµС€СЊ РµРіРѕ, СЌС‚Рѕ С‚РµР±Рµ РЅРµ РїРѕРјРѕР¶РµС‚, Сѓ РЅРµРіРѕ Р±РѕР»СЊС€Рµ РЅРµС‚ СЌС‚РѕРіРѕ С‚СЋРєР°. РћРЅ РїСЂРѕРґР°Р» РµРіРѕ РІ РҐРѕСЂРёРЅРёСЃРµ.
+	AI_Output (self, other, "DIA_Cipher_DarDieb_07_05"); //Р“Р”Р• РћРќ?!
+	AI_Output (other, self, "DIA_Cipher_DarDieb_15_06"); //Р—Р° РєСѓС…РЅРµР№, РЅР° СѓРіР»Сѓ...
+	AI_Output (self, other, "DIA_Cipher_DarDieb_07_07"); //РЇ РџР РРљРћРќР§РЈ Р•Р“Рћ!
 	
 	AI_StopProcessInfos(self);
 	other.aivar[AIV_INVINCIBLE] = FALSE;
@@ -371,7 +371,7 @@ instance DIA_Cipher_DarLOST (C_INFO)
 	condition	= DIA_Cipher_DarLOST_Condition;
 	information	= DIA_Cipher_DarLOST_Info;
 	permanent	= FALSE;
-	description = "Ты сделал из Дара отбивную... Теперь тебе лучше?";
+	description = "РўС‹ СЃРґРµР»Р°Р» РёР· Р”Р°СЂР° РѕС‚Р±РёРІРЅСѓСЋ... РўРµРїРµСЂСЊ С‚РµР±Рµ Р»СѓС‡С€Рµ?";
 };                       
 
 FUNC INT DIA_Cipher_DarLOST_Condition()
@@ -384,10 +384,10 @@ FUNC INT DIA_Cipher_DarLOST_Condition()
  
 FUNC VOID DIA_Cipher_DarLOST_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_DarLOST_15_00"); //Ты сделал из Дара отбивную... Теперь тебе лучше?
-	AI_Output (self, other, "DIA_Cipher_DarLOST_07_01"); //(вздыхает) Да, немного лучше.
-	AI_Output (other, self, "DIA_Cipher_DarLOST_15_02"); //Но не для НЕГО, я полагаю...
-	AI_Output (self, other, "DIA_Cipher_DarLOST_07_03"); //Этот мерзкий воришка не должен был лазить в мой сундук!
+	AI_Output (other, self, "DIA_Cipher_DarLOST_15_00"); //РўС‹ СЃРґРµР»Р°Р» РёР· Р”Р°СЂР° РѕС‚Р±РёРІРЅСѓСЋ... РўРµРїРµСЂСЊ С‚РµР±Рµ Р»СѓС‡С€Рµ?
+	AI_Output (self, other, "DIA_Cipher_DarLOST_07_01"); //(РІР·РґС‹С…Р°РµС‚) Р”Р°, РЅРµРјРЅРѕРіРѕ Р»СѓС‡С€Рµ.
+	AI_Output (other, self, "DIA_Cipher_DarLOST_15_02"); //РќРѕ РЅРµ РґР»СЏ РќР•Р“Рћ, СЏ РїРѕР»Р°РіР°СЋ...
+	AI_Output (self, other, "DIA_Cipher_DarLOST_07_03"); //Р­С‚РѕС‚ РјРµСЂР·РєРёР№ РІРѕСЂРёС€РєР° РЅРµ РґРѕР»Р¶РµРЅ Р±С‹Р» Р»Р°Р·РёС‚СЊ РІ РјРѕР№ СЃСѓРЅРґСѓРє!
 	
 	B_GivePlayerXP ((XP_Ambient)*2);
 };
@@ -403,7 +403,7 @@ instance DIA_Cipher_KrautPaket (C_INFO)
 	condition	= DIA_Cipher_KrautPaket_Condition;
 	information	= DIA_Cipher_KrautPaket_Info;
 	permanent	= FALSE;
-	description = "Это случайно не твой тюк болотной травы?";
+	description = "Р­С‚Рѕ СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ С‚РІРѕР№ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?";
 };                       
 
 FUNC INT DIA_Cipher_KrautPaket_Condition()
@@ -417,18 +417,18 @@ FUNC INT DIA_Cipher_KrautPaket_Condition()
  
 FUNC VOID DIA_Cipher_KrautPaket_Info()
 {	
-	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_00"); //Это случайно не твой тюк болотной травы?
+	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_00"); //Р­С‚Рѕ СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ С‚РІРѕР№ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹?
 	B_GiveInvItems (other, self, ItMi_HerbPaket, 1);
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_01"); //Да, мой! Где ты нашел его?
-	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_02"); //Это долгая история...
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_01"); //Р”Р°, РјРѕР№! Р“РґРµ С‚С‹ РЅР°С€РµР» РµРіРѕ?
+	AI_Output (other, self, "DIA_Cipher_KrautPaket_15_02"); //Р­С‚Рѕ РґРѕР»РіР°СЏ РёСЃС‚РѕСЂРёСЏ...
 	
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_03"); //Ладно, это не важно, но теперь я знаю, что ты наш человек.
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_04"); //Эй, возьми это в награду.
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_03"); //Р›Р°РґРЅРѕ, СЌС‚Рѕ РЅРµ РІР°Р¶РЅРѕ, РЅРѕ С‚РµРїРµСЂСЊ СЏ Р·РЅР°СЋ, С‡С‚Рѕ С‚С‹ РЅР°С€ С‡РµР»РѕРІРµРє.
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_04"); //Р­Р№, РІРѕР·СЊРјРё СЌС‚Рѕ РІ РЅР°РіСЂР°РґСѓ.
 	B_GiveInvItems (self, other, itmi_gold, 200);
 	B_GiveInvItems (self, other, itmi_joint, 10);
 	B_GivePlayerXP (XP_Cipher_KrautPaket);
 	
-	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_05"); //Сейчас я скручу пару косячков...
+	AI_Output (self, other, "DIA_Cipher_KrautPaket_07_05"); //РЎРµР№С‡Р°СЃ СЏ СЃРєСЂСѓС‡Сѓ РїР°СЂСѓ РєРѕСЃСЏС‡РєРѕРІ...
 	CreateInvItems (self, itmi_joint, 40);
 	Npc_RemoveInvItems (self, ItMi_HerbPaket, 1);
 	

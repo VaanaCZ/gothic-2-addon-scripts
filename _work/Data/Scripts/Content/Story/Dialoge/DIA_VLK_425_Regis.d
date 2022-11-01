@@ -74,10 +74,10 @@ func int DIA_Regis_Hallo_Condition ()
 };
 func void DIA_Regis_Hallo_Info ()
 {	
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Эй, ты недавно в этом городе, да?
-	AI_Output			(other, self, "DIA_Regis_Hallo_15_01"); //Да, а ты?
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //Я приплыл с материка и вот теперь болтаюсь здесь без дела. У меня почти закончились деньги, поэтому, похоже, мне ничего другого не остается, кроме как поступить в ополчение.
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //Но я не хочу делать этого. Я не хочу, чтобы меня убили орки, когда я буду сражаться за короля.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Р­Р№, С‚С‹ РЅРµРґР°РІРЅРѕ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ, РґР°?
+	AI_Output			(other, self, "DIA_Regis_Hallo_15_01"); //Р”Р°, Р° С‚С‹?
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //РЇ РїСЂРёРїР»С‹Р» СЃ РјР°С‚РµСЂРёРєР° Рё РІРѕС‚ С‚РµРїРµСЂСЊ Р±РѕР»С‚Р°СЋСЃСЊ Р·РґРµСЃСЊ Р±РµР· РґРµР»Р°. РЈ РјРµРЅСЏ РїРѕС‡С‚Рё Р·Р°РєРѕРЅС‡РёР»РёСЃСЊ РґРµРЅСЊРіРё, РїРѕСЌС‚РѕРјСѓ, РїРѕС…РѕР¶Рµ, РјРЅРµ РЅРёС‡РµРіРѕ РґСЂСѓРіРѕРіРѕ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ, РєСЂРѕРјРµ РєР°Рє РїРѕСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //РќРѕ СЏ РЅРµ С…РѕС‡Сѓ РґРµР»Р°С‚СЊ СЌС‚РѕРіРѕ. РЇ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРµРЅСЏ СѓР±РёР»Рё РѕСЂРєРё, РєРѕРіРґР° СЏ Р±СѓРґСѓ СЃСЂР°Р¶Р°С‚СЊСЃСЏ Р·Р° РєРѕСЂРѕР»СЏ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info MILIZ
@@ -89,7 +89,7 @@ instance DIA_Regis_MILIZ		(C_INFO)
 	condition	 = 	DIA_Regis_MILIZ_Condition;
 	information	 = 	DIA_Regis_MILIZ_Info;
 	permanent    =  FALSE;
-	description	 = 	"Что ты можешь рассказать об ополчении?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РѕР± РѕРїРѕР»С‡РµРЅРёРё?";
 };
 func int DIA_Regis_MILIZ_Condition ()
 {	
@@ -100,11 +100,11 @@ func int DIA_Regis_MILIZ_Condition ()
 };
 func void DIA_Regis_MILIZ_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Что ты можешь рассказать об ополчении?
-	AI_Output (self, other, "DIA_Regis_Add_13_01"); //Ими теперь командует один из паладинов. Некий лорд Андрэ.
-	AI_Output (self, other, "DIA_Regis_Add_13_02"); //Он пытается мобилизовать половину города на случай нападения орков.
-	AI_Output (self, other, "DIA_Regis_Add_13_03"); //Но чтобы вступить в ополчение, нужно быть гражданином этого города.
-	AI_Output (self, other, "DIA_Regis_Add_13_04"); //Насколько мне известно, если ты не являешься гражданином города, тебя все равно будут тренировать, но официально не зачислят.
+	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РѕР± РѕРїРѕР»С‡РµРЅРёРё?
+	AI_Output (self, other, "DIA_Regis_Add_13_01"); //РРјРё С‚РµРїРµСЂСЊ РєРѕРјР°РЅРґСѓРµС‚ РѕРґРёРЅ РёР· РїР°Р»Р°РґРёРЅРѕРІ. РќРµРєРёР№ Р»РѕСЂРґ РђРЅРґСЂСЌ.
+	AI_Output (self, other, "DIA_Regis_Add_13_02"); //РћРЅ РїС‹С‚Р°РµС‚СЃСЏ РјРѕР±РёР»РёР·РѕРІР°С‚СЊ РїРѕР»РѕРІРёРЅСѓ РіРѕСЂРѕРґР° РЅР° СЃР»СѓС‡Р°Р№ РЅР°РїР°РґРµРЅРёСЏ РѕСЂРєРѕРІ.
+	AI_Output (self, other, "DIA_Regis_Add_13_03"); //РќРѕ С‡С‚РѕР±С‹ РІСЃС‚СѓРїРёС‚СЊ РІ РѕРїРѕР»С‡РµРЅРёРµ, РЅСѓР¶РЅРѕ Р±С‹С‚СЊ РіСЂР°Р¶РґР°РЅРёРЅРѕРј СЌС‚РѕРіРѕ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Regis_Add_13_04"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РµСЃР»Рё С‚С‹ РЅРµ СЏРІР»СЏРµС€СЊСЃСЏ РіСЂР°Р¶РґР°РЅРёРЅРѕРј РіРѕСЂРѕРґР°, С‚РµР±СЏ РІСЃРµ СЂР°РІРЅРѕ Р±СѓРґСѓС‚ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ, РЅРѕ РѕС„РёС†РёР°Р»СЊРЅРѕ РЅРµ Р·Р°С‡РёСЃР»СЏС‚.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ANDRE
@@ -116,7 +116,7 @@ instance DIA_Regis_ANDRE		(C_INFO)
 	condition	 = 	DIA_Regis_ANDRE_Condition;
 	information	 = 	DIA_Regis_ANDRE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Что еще ты можешь рассказать о лорде Андрэ?";
+	description	 = 	"Р§С‚Рѕ РµС‰Рµ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ Р»РѕСЂРґРµ РђРЅРґСЂСЌ?";
 };
 func int DIA_Regis_ANDRE_Condition ()
 {	
@@ -127,18 +127,18 @@ func int DIA_Regis_ANDRE_Condition ()
 };
 func void DIA_Regis_ANDRE_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Что еще ты можешь рассказать о лорде Андрэ?
-	AI_Output (self, other, "DIA_Regis_Add_13_05"); //Он также занял должность судьи.
-	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Если ты нарушил закон в городе, тебе придется держать ответ перед ним.
-	AI_Output (self, other, "DIA_Regis_Add_13_07"); //Я как-то подрался с одним горожанином.
-	AI_Output (self, other, "DIA_Regis_Add_13_08"); //Он побежал жаловаться к лорду Андрэ.
-	AI_Output (self, other, "DIA_Regis_Add_13_09"); //И этот пустяк обошелся мне в 50 золотых монет.
-	AI_Output (self, other, "DIA_Regis_Add_13_10"); //Хорошо еще, что это случилось ночью, а то были бы другие свидетели.
-	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Чем больше людей жалуется на тебя, тем выше штраф.
+	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Р§С‚Рѕ РµС‰Рµ С‚С‹ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ Рѕ Р»РѕСЂРґРµ РђРЅРґСЂСЌ?
+	AI_Output (self, other, "DIA_Regis_Add_13_05"); //РћРЅ С‚Р°РєР¶Рµ Р·Р°РЅСЏР» РґРѕР»Р¶РЅРѕСЃС‚СЊ СЃСѓРґСЊРё.
+	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Р•СЃР»Рё С‚С‹ РЅР°СЂСѓС€РёР» Р·Р°РєРѕРЅ РІ РіРѕСЂРѕРґРµ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РґРµСЂР¶Р°С‚СЊ РѕС‚РІРµС‚ РїРµСЂРµРґ РЅРёРј.
+	AI_Output (self, other, "DIA_Regis_Add_13_07"); //РЇ РєР°Рє-С‚Рѕ РїРѕРґСЂР°Р»СЃСЏ СЃ РѕРґРЅРёРј РіРѕСЂРѕР¶Р°РЅРёРЅРѕРј.
+	AI_Output (self, other, "DIA_Regis_Add_13_08"); //РћРЅ РїРѕР±РµР¶Р°Р» Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ Рє Р»РѕСЂРґСѓ РђРЅРґСЂСЌ.
+	AI_Output (self, other, "DIA_Regis_Add_13_09"); //Р СЌС‚РѕС‚ РїСѓСЃС‚СЏРє РѕР±РѕС€РµР»СЃСЏ РјРЅРµ РІ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self, other, "DIA_Regis_Add_13_10"); //РҐРѕСЂРѕС€Рѕ РµС‰Рµ, С‡С‚Рѕ СЌС‚Рѕ СЃР»СѓС‡РёР»РѕСЃСЊ РЅРѕС‡СЊСЋ, Р° С‚Рѕ Р±С‹Р»Рё Р±С‹ РґСЂСѓРіРёРµ СЃРІРёРґРµС‚РµР»Рё.
+	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Р§РµРј Р±РѕР»СЊС€Рµ Р»СЋРґРµР№ Р¶Р°Р»СѓРµС‚СЃСЏ РЅР° С‚РµР±СЏ, С‚РµРј РІС‹С€Рµ С€С‚СЂР°С„.
 };
 
 // ****************************************************
-// 					Prьgelei mit Valentino
+// 					PrСЊgelei mit Valentino
 // ****************************************************
 instance DIA_Regis_Valentino (C_INFO)
 {
@@ -147,7 +147,7 @@ instance DIA_Regis_Valentino (C_INFO)
 	condition	 = 	DIA_Regis_Valentino_Condition;
 	information	 = 	DIA_Regis_Valentino_Info;
 	permanent    =  FALSE;
-	description	 = 	"С кем ты дрался?";
+	description	 = 	"РЎ РєРµРј С‚С‹ РґСЂР°Р»СЃСЏ?";
 };
 func int DIA_Regis_Valentino_Condition ()
 {	
@@ -158,9 +158,9 @@ func int DIA_Regis_Valentino_Condition ()
 };
 func void DIA_Regis_Valentino_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_Add_15_12"); //С кем ты дрался?
-	AI_Output (self, other, "DIA_Regis_Add_13_13"); //С парнем по имени Валентино. Он часто ошивается в таверне около храма.
-	AI_Output (self, other, "DIA_Regis_Add_13_14"); //Обычно я довольно мирный. Но ЭТОТ урод просто вывел меня из себя...
+	AI_Output (other, self, "DIA_Regis_Add_15_12"); //РЎ РєРµРј С‚С‹ РґСЂР°Р»СЃСЏ?
+	AI_Output (self, other, "DIA_Regis_Add_13_13"); //РЎ РїР°СЂРЅРµРј РїРѕ РёРјРµРЅРё Р’Р°Р»РµРЅС‚РёРЅРѕ. РћРЅ С‡Р°СЃС‚Рѕ РѕС€РёРІР°РµС‚СЃСЏ РІ С‚Р°РІРµСЂРЅРµ РѕРєРѕР»Рѕ С…СЂР°РјР°.
+	AI_Output (self, other, "DIA_Regis_Add_13_14"); //РћР±С‹С‡РЅРѕ СЏ РґРѕРІРѕР»СЊРЅРѕ РјРёСЂРЅС‹Р№. РќРѕ Р­РўРћРў СѓСЂРѕРґ РїСЂРѕСЃС‚Рѕ РІС‹РІРµР» РјРµРЅСЏ РёР· СЃРµР±СЏ...
 };
 
 // ****************************************************
@@ -173,7 +173,7 @@ instance DIA_Regis_ValDefeat (C_INFO)
 	condition	 = 	DIA_Regis_ValDefeat_Condition;
 	information	 = 	DIA_Regis_ValDefeat_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я встретил этого Валентино...";
+	description	 = 	"РЇ РІСЃС‚СЂРµС‚РёР» СЌС‚РѕРіРѕ Р’Р°Р»РµРЅС‚РёРЅРѕ...";
 };
 func int DIA_Regis_ValDefeat_Condition ()
 {	
@@ -185,16 +185,16 @@ func int DIA_Regis_ValDefeat_Condition ()
 };
 func void DIA_Regis_ValDefeat_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_Add_15_15"); //Я встретил этого Валентино...
-	AI_Output (self, other, "DIA_Regis_Add_13_16"); //И?
-	AI_Output (other, self, "DIA_Regis_Add_15_17"); //Я задал ему хорошую взбучку...
-	AI_Output (self, other, "DIA_Regis_Add_13_18"); //(смеется) Он заслужил это...
+	AI_Output (other, self, "DIA_Regis_Add_15_15"); //РЇ РІСЃС‚СЂРµС‚РёР» СЌС‚РѕРіРѕ Р’Р°Р»РµРЅС‚РёРЅРѕ...
+	AI_Output (self, other, "DIA_Regis_Add_13_16"); //Р?
+	AI_Output (other, self, "DIA_Regis_Add_15_17"); //РЇ Р·Р°РґР°Р» РµРјСѓ С…РѕСЂРѕС€СѓСЋ РІР·Р±СѓС‡РєСѓ...
+	AI_Output (self, other, "DIA_Regis_Add_13_18"); //(СЃРјРµРµС‚СЃСЏ) РћРЅ Р·Р°СЃР»СѓР¶РёР» СЌС‚Рѕ...
 	if (!Npc_IsDead (Valentino))
 	{
-		AI_Output (self, other, "DIA_Regis_Add_13_19"); //Вот - я нашел это кольцо в его кармане, когда наша стычка закончилась.
+		AI_Output (self, other, "DIA_Regis_Add_13_19"); //Р’РѕС‚ - СЏ РЅР°С€РµР» СЌС‚Рѕ РєРѕР»СЊС†Рѕ РІ РµРіРѕ РєР°СЂРјР°РЅРµ, РєРѕРіРґР° РЅР°С€Р° СЃС‚С‹С‡РєР° Р·Р°РєРѕРЅС‡РёР»Р°СЃСЊ.
 		B_GiveInvItems (self, other, ItRi_ValentinosRing, 1);
 		Regis_Ring = TRUE;
-		AI_Output (self, other, "DIA_Regis_Add_13_20"); //(ухмыляется) Ты можешь передать его следующему, кто надает ему тумаков...
+		AI_Output (self, other, "DIA_Regis_Add_13_20"); //(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РўС‹ РјРѕР¶РµС€СЊ РїРµСЂРµРґР°С‚СЊ РµРіРѕ СЃР»РµРґСѓСЋС‰РµРјСѓ, РєС‚Рѕ РЅР°РґР°РµС‚ РµРјСѓ С‚СѓРјР°РєРѕРІ...
 	};
 };
 
@@ -211,7 +211,7 @@ instance DIA_Regis_PERM		(C_INFO)
 	condition	 = 	DIA_Regis_PERM_Condition;
 	information	 = 	DIA_Regis_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Слышал что-нибудь интересное?";
+	description	 = 	"РЎР»С‹С€Р°Р» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ?";
 };
 func int DIA_Regis_PERM_Condition ()
 {
@@ -219,15 +219,15 @@ func int DIA_Regis_PERM_Condition ()
 };
 func void DIA_Regis_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //Слышал что-нибудь интересное?
+	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //РЎР»С‹С€Р°Р» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ?
 	
 	if (Regis_Bogendieb == FALSE)
 	&& (MIS_Bosper_Bogen != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //Можно сказать и так.
-		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Говорят, Боспер, мастер-лучник, был ограблен. Причем самым наглым образом!
-		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Вор вломился в его лавку средь бела дня и схватил лук.
-		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //Боспер побежал за ним, вопя 'Держи вора!' Но вор оказался очень проворным.
+		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //РњРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ Рё С‚Р°Рє.
+		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Р“РѕРІРѕСЂСЏС‚, Р‘РѕСЃРїРµСЂ, РјР°СЃС‚РµСЂ-Р»СѓС‡РЅРёРє, Р±С‹Р» РѕРіСЂР°Р±Р»РµРЅ. РџСЂРёС‡РµРј СЃР°РјС‹Рј РЅР°РіР»С‹Рј РѕР±СЂР°Р·РѕРј!
+		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Р’РѕСЂ РІР»РѕРјРёР»СЃСЏ РІ РµРіРѕ Р»Р°РІРєСѓ СЃСЂРµРґСЊ Р±РµР»Р° РґРЅСЏ Рё СЃС…РІР°С‚РёР» Р»СѓРє.
+		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //Р‘РѕСЃРїРµСЂ РїРѕР±РµР¶Р°Р» Р·Р° РЅРёРј, РІРѕРїСЏ 'Р”РµСЂР¶Рё РІРѕСЂР°!' РќРѕ РІРѕСЂ РѕРєР°Р·Р°Р»СЃСЏ РѕС‡РµРЅСЊ РїСЂРѕРІРѕСЂРЅС‹Рј.
 		
 		
 		MIS_Bosper_Bogen = LOG_RUNNING;
@@ -236,28 +236,28 @@ func void DIA_Regis_PERM_Info ()
 	else if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		 && (Regis_Bogendieb != 2)	
 	{
-		AI_Output (self, other, "DIA_Regis_PERM_13_05"); //А потом какой-то честный человек нашел этот лук и вернул Босперу.
-		AI_Output (self, other, "DIA_Regis_PERM_13_06"); //Это странно - в наше время обычно никому нет дела до других, но этот парень сам зашел к нему и вернул лук.
+		AI_Output (self, other, "DIA_Regis_PERM_13_05"); //Рђ РїРѕС‚РѕРј РєР°РєРѕР№-С‚Рѕ С‡РµСЃС‚РЅС‹Р№ С‡РµР»РѕРІРµРє РЅР°С€РµР» СЌС‚РѕС‚ Р»СѓРє Рё РІРµСЂРЅСѓР» Р‘РѕСЃРїРµСЂСѓ.
+		AI_Output (self, other, "DIA_Regis_PERM_13_06"); //Р­С‚Рѕ СЃС‚СЂР°РЅРЅРѕ - РІ РЅР°С€Рµ РІСЂРµРјСЏ РѕР±С‹С‡РЅРѕ РЅРёРєРѕРјСѓ РЅРµС‚ РґРµР»Р° РґРѕ РґСЂСѓРіРёС…, РЅРѕ СЌС‚РѕС‚ РїР°СЂРµРЅСЊ СЃР°Рј Р·Р°С€РµР» Рє РЅРµРјСѓ Рё РІРµСЂРЅСѓР» Р»СѓРє.
 		Regis_Bogendieb = 2;
 	}
 	else
 	{
 		if (Kapitel != 3)
 		{
-			AI_Output (self, other, "DIA_Regis_PERM_13_07"); //Пока все тихо. Но я думаю, что когда придут орки, мы это заметим...
+			AI_Output (self, other, "DIA_Regis_PERM_13_07"); //РџРѕРєР° РІСЃРµ С‚РёС…Рѕ. РќРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РєРѕРіРґР° РїСЂРёРґСѓС‚ РѕСЂРєРё, РјС‹ СЌС‚Рѕ Р·Р°РјРµС‚РёРј...
 		}
 		else 
 		{
 			if (MIS_RescueBennet == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Выяснилось, что этот наемник невиновен, и им пришлось отпустить его.
-				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Лорд Хаген, должно быть, вне себя от ярости.
+				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Р’С‹СЏСЃРЅРёР»РѕСЃСЊ, С‡С‚Рѕ СЌС‚РѕС‚ РЅР°РµРјРЅРёРє РЅРµРІРёРЅРѕРІРµРЅ, Рё РёРј РїСЂРёС€Р»РѕСЃСЊ РѕС‚РїСѓСЃС‚РёС‚СЊ РµРіРѕ.
+				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Р›РѕСЂРґ РҐР°РіРµРЅ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РІРЅРµ СЃРµР±СЏ РѕС‚ СЏСЂРѕСЃС‚Рё.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //Весь город только и говорит об этом. Ты помнишь Лотара, паладина?
-				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //Может быть.
-				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //Так вот, он мертв. Убит прямо на улице. В этом подозревают наемников, конечно же.
+				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //Р’РµСЃСЊ РіРѕСЂРѕРґ С‚РѕР»СЊРєРѕ Рё РіРѕРІРѕСЂРёС‚ РѕР± СЌС‚РѕРј. РўС‹ РїРѕРјРЅРёС€СЊ Р›РѕС‚Р°СЂР°, РїР°Р»Р°РґРёРЅР°?
+				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ.
+				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //РўР°Рє РІРѕС‚, РѕРЅ РјРµСЂС‚РІ. РЈР±РёС‚ РїСЂСЏРјРѕ РЅР° СѓР»РёС†Рµ. Р’ СЌС‚РѕРј РїРѕРґРѕР·СЂРµРІР°СЋС‚ РЅР°РµРјРЅРёРєРѕРІ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ.
 			};
 		};
 	};
@@ -273,7 +273,7 @@ instance DIA_Regis_Crew		(C_INFO)
 	condition	 = 	DIA_Regis_Crew_Condition;
 	information	 = 	DIA_Regis_Crew_Info;
 	permanent    =  FALSE;
-	description	 = 	"Я пытаюсь собрать команду для морской прогулки.";
+	description	 = 	"РЇ РїС‹С‚Р°СЋСЃСЊ СЃРѕР±СЂР°С‚СЊ РєРѕРјР°РЅРґСѓ РґР»СЏ РјРѕСЂСЃРєРѕР№ РїСЂРѕРіСѓР»РєРё.";
 };
 func int DIA_Regis_Crew_Condition ()
 {	
@@ -284,9 +284,9 @@ func int DIA_Regis_Crew_Condition ()
 };
 func void DIA_Regis_Crew_Info ()
 {
-	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //Я пытаюсь собрать команду для морской прогулки.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //Ничем не могу помочь. Тебе лучше поспрашивать в порту, ну или может в кабаке.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Если здесь еще остались моряки, то, скорее всего, ты найдешь их там.
+	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //РЇ РїС‹С‚Р°СЋСЃСЊ СЃРѕР±СЂР°С‚СЊ РєРѕРјР°РЅРґСѓ РґР»СЏ РјРѕСЂСЃРєРѕР№ РїСЂРѕРіСѓР»РєРё.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //РќРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕСЃРїСЂР°С€РёРІР°С‚СЊ РІ РїРѕСЂС‚Сѓ, РЅСѓ РёР»Рё РјРѕР¶РµС‚ РІ РєР°Р±Р°РєРµ.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Р•СЃР»Рё Р·РґРµСЃСЊ РµС‰Рµ РѕСЃС‚Р°Р»РёСЃСЊ РјРѕСЂСЏРєРё, С‚Рѕ, СЃРєРѕСЂРµРµ РІСЃРµРіРѕ, С‚С‹ РЅР°Р№РґРµС€СЊ РёС… С‚Р°Рј.
 
 };
 

@@ -2,7 +2,7 @@
 instance VLK_440_Bartok (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Барток"; 
+	name 		= "Р‘Р°СЂС‚РѕРє"; 
 	guild 		= GIL_VLK;
 	id 			= 440;
 	voice 		= 4;

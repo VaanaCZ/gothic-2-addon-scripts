@@ -2,7 +2,7 @@
 instance Mil_312_Wulfgar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Вульфгар";	
+	name 		= "Р’СѓР»СЊС„РіР°СЂ";	
 	guild 		= GIL_MIL;
 	id 			= 312;
 	voice 		= 4;

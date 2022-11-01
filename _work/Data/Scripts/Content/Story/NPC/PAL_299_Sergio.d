@@ -1,7 +1,7 @@
 instance PAL_299_Sergio (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ñåðæèî";
+	name 		= "Ð¡ÐµÑ€Ð¶Ð¸Ð¾";
 	guild 		= GIL_PAL;
 	id 			= 299;
 	voice 		= 4;
@@ -20,7 +20,7 @@ instance PAL_299_Sergio (Npc_Default)
 	
 	// ------ Inventory ------
 	B_CreateAmbientInv 	(self);
-	CreateInvItems (self, ITKE_INNOS_MIS,1);//damit er das Tor öffnen kann
+	CreateInvItems (self, ITKE_INNOS_MIS,1);//damit er das Tor Ñ†ffnen kann
 	CreateInvItems (self, ItPo_Health_02,4);
 		
 	// ------ visuals ------																			

@@ -5,12 +5,12 @@
 
 FUNC VOID B_DIA_BDT_10XX_Fluechtling_Stimme7 ()
 {
-	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00"); //Забудь об этом, я не вернусь назад в тюрьму.
+	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј, СЏ РЅРµ РІРµСЂРЅСѓСЃСЊ РЅР°Р·Р°Рґ РІ С‚СЋСЂСЊРјСѓ.
 };
 
 FUNC VOID B_DIA_BDT_10XX_Fluechtling_Stimme6 ()
 {
-	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00"); //Ты же пришел не затем, чтобы вернуть нас назад в тюрьму, правда?
+	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00"); //РўС‹ Р¶Рµ РїСЂРёС€РµР» РЅРµ Р·Р°С‚РµРј, С‡С‚РѕР±С‹ РІРµСЂРЅСѓС‚СЊ РЅР°СЃ РЅР°Р·Р°Рґ РІ С‚СЋСЂСЊРјСѓ, РїСЂР°РІРґР°?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,51 +55,51 @@ func int DIA_BDT_1031_Fluechtling_Tip1_Condition ()
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_07_00"); //Тебе лучше держаться от меня подальше, если не хочешь попасть в тюрьму.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_07_00"); //РўРµР±Рµ Р»СѓС‡С€Рµ РґРµСЂР¶Р°С‚СЊСЃСЏ РѕС‚ РјРµРЅСЏ РїРѕРґР°Р»СЊС€Рµ, РµСЃР»Рё РЅРµ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ С‚СЋСЂСЊРјСѓ.
 	B_GivePlayerXP (XP_AmbientKap3);
 	
 	if (SCFoundMorgahard == FALSE)
 	{
 		Info_ClearChoices	(DIA_BDT_1031_Fluechtling_Tip1);
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Я не собираюсь убивать тебя.", DIA_BDT_1031_Fluechtling_Tip1_frei );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Я пришел арестовать тебя.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Где Моргахард, ваш главарь?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ СѓР±РёРІР°С‚СЊ С‚РµР±СЏ.", DIA_BDT_1031_Fluechtling_Tip1_frei );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "РЇ РїСЂРёС€РµР» Р°СЂРµСЃС‚РѕРІР°С‚СЊ С‚РµР±СЏ.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Р“РґРµ РњРѕСЂРіР°С…Р°СЂРґ, РІР°С€ РіР»Р°РІР°СЂСЊ?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
 	};
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Где Моргахард, ваш главарь?
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //Мы разделились, чтобы нас не поймали слишком быстро. Понятия не имею, где сейчас остальные.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Р“РґРµ РњРѕСЂРіР°С…Р°СЂРґ, РІР°С€ РіР»Р°РІР°СЂСЊ?
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //РњС‹ СЂР°Р·РґРµР»РёР»РёСЃСЊ, С‡С‚РѕР±С‹ РЅР°СЃ РЅРµ РїРѕР№РјР°Р»Рё СЃР»РёС€РєРѕРј Р±С‹СЃС‚СЂРѕ. РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РіРґРµ СЃРµР№С‡Р°СЃ РѕСЃС‚Р°Р»СЊРЅС‹Рµ.
 	
-	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Жаль. Тогда, пожалуй, мне придется доставить тебя к судье.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
+	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Р–Р°Р»СЊ. РўРѕРіРґР°, РїРѕР¶Р°Р»СѓР№, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РґРѕСЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ Рє СЃСѓРґСЊРµ.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
 
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //Жаль. Тогда, пожалуй, мне придется доставить тебя к судье.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Хорошо, хорошо. Я думаю, некоторые из нас направились в таверну. Но ты не слышал этого от меня, хорошо?
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //Р–Р°Р»СЊ. РўРѕРіРґР°, РїРѕР¶Р°Р»СѓР№, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РґРѕСЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ Рє СЃСѓРґСЊРµ.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //РҐРѕСЂРѕС€Рѕ, С…РѕСЂРѕС€Рѕ. РЇ РґСѓРјР°СЋ, РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅР°СЃ РЅР°РїСЂР°РІРёР»РёСЃСЊ РІ С‚Р°РІРµСЂРЅСѓ. РќРѕ С‚С‹ РЅРµ СЃР»С‹С€Р°Р» СЌС‚РѕРіРѕ РѕС‚ РјРµРЅСЏ, С…РѕСЂРѕС€Рѕ?
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Knast ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00"); //Я пришел арестовать тебя.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01"); //Только через мой труп.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00"); //РЇ РїСЂРёС€РµР» Р°СЂРµСЃС‚РѕРІР°С‚СЊ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01"); //РўРѕР»СЊРєРѕ С‡РµСЂРµР· РјРѕР№ С‚СЂСѓРї.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno , 1);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_frei ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00"); //Я не собираюсь убивать тебя.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01"); //Если тебя послал судья, скажи ему, чтобы он отстал от нас.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00"); //РЇ РЅРµ СЃРѕР±РёСЂР°СЋСЃСЊ СѓР±РёРІР°С‚СЊ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01"); //Р•СЃР»Рё С‚РµР±СЏ РїРѕСЃР»Р°Р» СЃСѓРґСЊСЏ, СЃРєР°Р¶Рё РµРјСѓ, С‡С‚РѕР±С‹ РѕРЅ РѕС‚СЃС‚Р°Р» РѕС‚ РЅР°СЃ.
 	
-	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Так в каком преступлении ты обвиняешься?", DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen );
+	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "РўР°Рє РІ РєР°РєРѕРј РїСЂРµСЃС‚СѓРїР»РµРЅРёРё С‚С‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ?", DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen );
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00"); //Так в каком преступлении ты обвиняешься?
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01"); //Это не твое дело.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00"); //РўР°Рє РІ РєР°РєРѕРј РїСЂРµСЃС‚СѓРїР»РµРЅРёРё С‚С‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ?
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ.
 
 };
 
@@ -217,43 +217,43 @@ func int DIA_BDT_1033_Fluechtling_Tip2_Condition ()
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_07_00"); //(испуганно) Что тебе нужно от меня?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_07_00"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?
 	B_GivePlayerXP (XP_AmbientKap3);
 	
 	if (SCFoundMorgahard == FALSE)
 	{
 		Info_ClearChoices	(DIA_BDT_1033_Fluechtling_Tip2);
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Расслабься. Я просто хочу поговорить.", DIA_BDT_1033_Fluechtling_Tip2_frei );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Меня послал судья, чтобы я вернул тебя назад.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Где Моргахард, ваш главарь?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ.", DIA_BDT_1033_Fluechtling_Tip2_frei );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "РњРµРЅСЏ РїРѕСЃР»Р°Р» СЃСѓРґСЊСЏ, С‡С‚РѕР±С‹ СЏ РІРµСЂРЅСѓР» С‚РµР±СЏ РЅР°Р·Р°Рґ.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Р“РґРµ РњРѕСЂРіР°С…Р°СЂРґ, РІР°С€ РіР»Р°РІР°СЂСЊ?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
 	};
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Где Моргахард, ваш главарь?
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //(испуганно) Мне не нужны проблемы. Иди к лендлорду. Он хотел спрятаться среди наемников. А меня оставь в покое.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Р“РґРµ РњРѕСЂРіР°С…Р°СЂРґ, РІР°С€ РіР»Р°РІР°СЂСЊ?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ РїСЂРѕР±Р»РµРјС‹. РРґРё Рє Р»РµРЅРґР»РѕСЂРґСѓ. РћРЅ С…РѕС‚РµР» СЃРїСЂСЏС‚Р°С‚СЊСЃСЏ СЃСЂРµРґРё РЅР°РµРјРЅРёРєРѕРІ. Рђ РјРµРЅСЏ РѕСЃС‚Р°РІСЊ РІ РїРѕРєРѕРµ.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Knast ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00"); //Меня послал судья, чтобы я вернул тебя назад.
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01"); //(вопит) НЕЕТ!
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00"); //РњРµРЅСЏ РїРѕСЃР»Р°Р» СЃСѓРґСЊСЏ, С‡С‚РѕР±С‹ СЏ РІРµСЂРЅСѓР» С‚РµР±СЏ РЅР°Р·Р°Рґ.
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01"); //(РІРѕРїРёС‚) РќР•Р•Рў!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno , 1);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_frei ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //Расслабься. Я просто хочу поговорить.
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //Но я не хочу говорить с тобой. Проваливай!
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ.
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //РќРѕ СЏ РЅРµ С…РѕС‡Сѓ РіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№. РџСЂРѕРІР°Р»РёРІР°Р№!
 	
-	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Ты ведь до смерти испуган, разве нет?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
+	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "РўС‹ РІРµРґСЊ РґРѕ СЃРјРµСЂС‚Рё РёСЃРїСѓРіР°РЅ, СЂР°Р·РІРµ РЅРµС‚?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //Ты ведь напуган до смерти, нет?
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //Тебе легко говорить. Тебя не ждет виселица, если тебя поймают.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //РўС‹ РІРµРґСЊ РЅР°РїСѓРіР°РЅ РґРѕ СЃРјРµСЂС‚Рё, РЅРµС‚?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //РўРµР±Рµ Р»РµРіРєРѕ РіРѕРІРѕСЂРёС‚СЊ. РўРµР±СЏ РЅРµ Р¶РґРµС‚ РІРёСЃРµР»РёС†Р°, РµСЃР»Рё С‚РµР±СЏ РїРѕР№РјР°СЋС‚.
 
 };
 

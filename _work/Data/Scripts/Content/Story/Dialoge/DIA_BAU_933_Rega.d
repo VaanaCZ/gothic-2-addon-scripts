@@ -31,7 +31,7 @@ instance DIA_Rega_HALLO		(C_INFO)
 	condition	 = 	DIA_Rega_HALLO_Condition;
 	information	 = 	DIA_Rega_HALLO_Info;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Rega_HALLO_Condition ()
@@ -41,34 +41,34 @@ func int DIA_Rega_HALLO_Condition ()
 
 func void DIA_Rega_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_HALLO_15_00"); //Как дела?
+	AI_Output			(other, self, "DIA_Rega_HALLO_15_00"); //РљР°Рє РґРµР»Р°?
 	
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Ты из города, да?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //РўС‹ РёР· РіРѕСЂРѕРґР°, РґР°?
 		}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //Ты один из наемников Онара, да?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //РўС‹ РѕРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ РћРЅР°СЂР°, РґР°?
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //Ты маг, да?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //РўС‹ РјР°Рі, РґР°?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //Ты нездешний, да?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //РўС‹ РЅРµР·РґРµС€РЅРёР№, РґР°?
 
 		};
 		
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //На твоем месте, я бы убиралась отсюда побыстрее.
-	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //Почему?
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Это место и раньше-то не было раем, но хотя бы мы жили в мире и спокойствии, пока работали на Секоба.
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Но последнее время жить здесь стало просто невыносимо.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ, СЏ Р±С‹ СѓР±РёСЂР°Р»Р°СЃСЊ РѕС‚СЃСЋРґР° РїРѕР±С‹СЃС‚СЂРµРµ.
+	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //РџРѕС‡РµРјСѓ?
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Р­С‚Рѕ РјРµСЃС‚Рѕ Рё СЂР°РЅСЊС€Рµ-С‚Рѕ РЅРµ Р±С‹Р»Рѕ СЂР°РµРј, РЅРѕ С…РѕС‚СЏ Р±С‹ РјС‹ Р¶РёР»Рё РІ РјРёСЂРµ Рё СЃРїРѕРєРѕР№СЃС‚РІРёРё, РїРѕРєР° СЂР°Р±РѕС‚Р°Р»Рё РЅР° РЎРµРєРѕР±Р°.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //РќРѕ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ Р¶РёС‚СЊ Р·РґРµСЃСЊ СЃС‚Р°Р»Рѕ РїСЂРѕСЃС‚Рѕ РЅРµРІС‹РЅРѕСЃРёРјРѕ.
 	if (Kapitel < 3)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Бандиты повсюду, полевые хищники уничтожают наш урожай, а лендлорд совсем озверел.
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Р‘Р°РЅРґРёС‚С‹ РїРѕРІСЃСЋРґСѓ, РїРѕР»РµРІС‹Рµ С…РёС‰РЅРёРєРё СѓРЅРёС‡С‚РѕР¶Р°СЋС‚ РЅР°С€ СѓСЂРѕР¶Р°Р№, Р° Р»РµРЅРґР»РѕСЂРґ СЃРѕРІСЃРµРј РѕР·РІРµСЂРµР».
 		};
 };
 
@@ -83,7 +83,7 @@ instance DIA_Rega_ONAR		(C_INFO)
 	condition	 = 	DIA_Rega_ONAR_Condition;
 	information	 = 	DIA_Rega_ONAR_Info;
 
-	description	 = 	"Ты боишься лендлорда?";
+	description	 = 	"РўС‹ Р±РѕРёС€СЊСЃСЏ Р»РµРЅРґР»РѕСЂРґР°?";
 };
 
 func int DIA_Rega_ONAR_Condition ()
@@ -98,9 +98,9 @@ func int DIA_Rega_ONAR_Condition ()
 
 func void DIA_Rega_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //Ты боишься лендлорда?
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Конечно. Если лендлорду кто-то не понравится, он посылает своих наемников, и больше этого человека никто не видит.
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //Так что мы предпочитаем помалкивать.
+	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //РўС‹ Р±РѕРёС€СЊСЃСЏ Р»РµРЅРґР»РѕСЂРґР°?
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //РљРѕРЅРµС‡РЅРѕ. Р•СЃР»Рё Р»РµРЅРґР»РѕСЂРґСѓ РєС‚Рѕ-С‚Рѕ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ, РѕРЅ РїРѕСЃС‹Р»Р°РµС‚ СЃРІРѕРёС… РЅР°РµРјРЅРёРєРѕРІ, Рё Р±РѕР»СЊС€Рµ СЌС‚РѕРіРѕ С‡РµР»РѕРІРµРєР° РЅРёРєС‚Рѕ РЅРµ РІРёРґРёС‚.
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //РўР°Рє С‡С‚Рѕ РјС‹ РїСЂРµРґРїРѕС‡РёС‚Р°РµРј РїРѕРјР°Р»РєРёРІР°С‚СЊ.
 
 };
 
@@ -116,7 +116,7 @@ instance DIA_Rega_SLD		(C_INFO)
 	condition	 = 	DIA_Rega_SLD_Condition;
 	information	 = 	DIA_Rega_SLD_Info;
 
-	description	 = 	"Разве наемники не должны уничтожать полевых хищников?";
+	description	 = 	"Р Р°Р·РІРµ РЅР°РµРјРЅРёРєРё РЅРµ РґРѕР»Р¶РЅС‹ СѓРЅРёС‡С‚РѕР¶Р°С‚СЊ РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ?";
 };
 
 func int DIA_Rega_SLD_Condition ()
@@ -131,9 +131,9 @@ func int DIA_Rega_SLD_Condition ()
 
 func void DIA_Rega_SLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Разве наемники не должны уничтожать полевых хищников?
-	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //Я не знаю, за что им там платят, но уж точно не за то, чтобы они помогали простым людям.
-	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //А проблему с полевыми хищниками мелким фермерам, арендующим у него землю, приходится решать самим.
+	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Р Р°Р·РІРµ РЅР°РµРјРЅРёРєРё РЅРµ РґРѕР»Р¶РЅС‹ СѓРЅРёС‡С‚РѕР¶Р°С‚СЊ РїРѕР»РµРІС‹С… С…РёС‰РЅРёРєРѕРІ?
+	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //РЇ РЅРµ Р·РЅР°СЋ, Р·Р° С‡С‚Рѕ РёРј С‚Р°Рј РїР»Р°С‚СЏС‚, РЅРѕ СѓР¶ С‚РѕС‡РЅРѕ РЅРµ Р·Р° С‚Рѕ, С‡С‚РѕР±С‹ РѕРЅРё РїРѕРјРѕРіР°Р»Рё РїСЂРѕСЃС‚С‹Рј Р»СЋРґСЏРј.
+	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //Рђ РїСЂРѕР±Р»РµРјСѓ СЃ РїРѕР»РµРІС‹РјРё С…РёС‰РЅРёРєР°РјРё РјРµР»РєРёРј С„РµСЂРјРµСЂР°Рј, Р°СЂРµРЅРґСѓСЋС‰РёРј Сѓ РЅРµРіРѕ Р·РµРјР»СЋ, РїСЂРёС…РѕРґРёС‚СЃСЏ СЂРµС€Р°С‚СЊ СЃР°РјРёРј.
 
 };
 
@@ -148,7 +148,7 @@ instance DIA_Rega_BANDITEN		(C_INFO)
 	condition	 = 	DIA_Rega_BANDITEN_Condition;
 	information	 = 	DIA_Rega_BANDITEN_Info;
 
-	description	 = 	"Как вы защищаетесь от бандитов?";
+	description	 = 	"РљР°Рє РІС‹ Р·Р°С‰РёС‰Р°РµС‚РµСЃСЊ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ?";
 };
 
 func int DIA_Rega_BANDITEN_Condition ()
@@ -161,8 +161,8 @@ func int DIA_Rega_BANDITEN_Condition ()
 
 func void DIA_Rega_BANDITEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //Как вы защищаетесь от бандитов?
-	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //Мы не защищаемся. Мы бежим. А что еще нам остается?
+	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //РљР°Рє РІС‹ Р·Р°С‰РёС‰Р°РµС‚РµСЃСЊ РѕС‚ Р±Р°РЅРґРёС‚РѕРІ?
+	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //РњС‹ РЅРµ Р·Р°С‰РёС‰Р°РµРјСЃСЏ. РњС‹ Р±РµР¶РёРј. Рђ С‡С‚Рѕ РµС‰Рµ РЅР°Рј РѕСЃС‚Р°РµС‚СЃСЏ?
 
 };
 
@@ -177,7 +177,7 @@ instance DIA_Rega_BRONKO		(C_INFO)
 	condition	 = 	DIA_Rega_BRONKO_Condition;
 	information	 = 	DIA_Rega_BRONKO_Info;
 
-	description	 = 	"(спросить о Бронко)";
+	description	 = 	"(СЃРїСЂРѕСЃРёС‚СЊ Рѕ Р‘СЂРѕРЅРєРѕ)";
 };
 
 func int DIA_Rega_BRONKO_Condition ()
@@ -193,8 +193,8 @@ func int DIA_Rega_BRONKO_Condition ()
 
 func void DIA_Rega_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //А кто этот противный тип вон там?
-	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //Не пойми меня неправильно, но мне не нужны проблемы. Спроси кого-нибудь еще.
+	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Рђ РєС‚Рѕ СЌС‚РѕС‚ РїСЂРѕС‚РёРІРЅС‹Р№ С‚РёРї РІРѕРЅ С‚Р°Рј?
+	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //РќРµ РїРѕР№РјРё РјРµРЅСЏ РЅРµРїСЂР°РІРёР»СЊРЅРѕ, РЅРѕ РјРЅРµ РЅРµ РЅСѓР¶РЅС‹ РїСЂРѕР±Р»РµРјС‹. РЎРїСЂРѕСЃРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
 
 	AI_StopProcessInfos (self);
 };
@@ -211,7 +211,7 @@ instance DIA_Rega_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Rega_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Выше нос.";
+	description	 = 	"Р’С‹С€Рµ РЅРѕСЃ.";
 };
 
 func int DIA_Rega_PERMKAP1_Condition ()
@@ -224,23 +224,23 @@ func int DIA_Rega_PERMKAP1_Condition ()
 
 func void DIA_Rega_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //Выше нос.
+	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //Р’С‹С€Рµ РЅРѕСЃ.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //Тебе легко говорить. Ты ведь живешь в городе.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //РўРµР±Рµ Р»РµРіРєРѕ РіРѕРІРѕСЂРёС‚СЊ. РўС‹ РІРµРґСЊ Р¶РёРІРµС€СЊ РІ РіРѕСЂРѕРґРµ.
 		}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Если бы вы, наемники, не доставляли нам столько проблем, жизнь здесь была бы не такой уж плохой.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Р•СЃР»Рё Р±С‹ РІС‹, РЅР°РµРјРЅРёРєРё, РЅРµ РґРѕСЃС‚Р°РІР»СЏР»Рё РЅР°Рј СЃС‚РѕР»СЊРєРѕ РїСЂРѕР±Р»РµРј, Р¶РёР·РЅСЊ Р·РґРµСЃСЊ Р±С‹Р»Р° Р±С‹ РЅРµ С‚Р°РєРѕР№ СѓР¶ РїР»РѕС…РѕР№.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Магов вокруг становится все меньше и меньше. Надеюсь, ты не последний из них. Вы нужны нам - и сейчас как никогда.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //РњР°РіРѕРІ РІРѕРєСЂСѓРі СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РІСЃРµ РјРµРЅСЊС€Рµ Рё РјРµРЅСЊС€Рµ. РќР°РґРµСЋСЃСЊ, С‚С‹ РЅРµ РїРѕСЃР»РµРґРЅРёР№ РёР· РЅРёС…. Р’С‹ РЅСѓР¶РЅС‹ РЅР°Рј - Рё СЃРµР№С‡Р°СЃ РєР°Рє РЅРёРєРѕРіРґР°.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Это не так-то легко, работая на этого душегуба Секоба.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Р­С‚Рѕ РЅРµ С‚Р°Рє-С‚Рѕ Р»РµРіРєРѕ, СЂР°Р±РѕС‚Р°СЏ РЅР° СЌС‚РѕРіРѕ РґСѓС€РµРіСѓР±Р° РЎРµРєРѕР±Р°.
 		};
 	AI_StopProcessInfos (self);
 };

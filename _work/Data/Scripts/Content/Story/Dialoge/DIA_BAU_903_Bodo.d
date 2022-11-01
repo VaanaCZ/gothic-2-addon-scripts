@@ -29,7 +29,7 @@ INSTANCE DIA_Bodo_Hallo   (C_INFO)
 	condition   = DIA_Bodo_Hallo_Condition;
 	information = DIA_Bodo_Hallo_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Bodo_Hallo_Condition()
 {
@@ -37,30 +37,30 @@ FUNC INT DIA_Bodo_Hallo_Condition()
 };
 FUNC VOID DIA_Bodo_Hallo_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Hallo_15_00"); //Как дела?
+	AI_Output (other, self, "DIA_Bodo_Hallo_15_00"); //РљР°Рє РґРµР»Р°?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //Ополчение достаточно попило нашей крови. Теперь, когда на нашей стороне наемники, они не осмелятся даже показаться здесь.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Король, вероятно, думает, что может позволить себе все. Но мы больше не будем терпеть это!
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //РћРїРѕР»С‡РµРЅРёРµ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РїРѕРїРёР»Рѕ РЅР°С€РµР№ РєСЂРѕРІРё. РўРµРїРµСЂСЊ, РєРѕРіРґР° РЅР° РЅР°С€РµР№ СЃС‚РѕСЂРѕРЅРµ РЅР°РµРјРЅРёРєРё, РѕРЅРё РЅРµ РѕСЃРјРµР»СЏС‚СЃСЏ РґР°Р¶Рµ РїРѕРєР°Р·Р°С‚СЊСЃСЏ Р·РґРµСЃСЊ.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //РљРѕСЂРѕР»СЊ, РІРµСЂРѕСЏС‚РЅРѕ, РґСѓРјР°РµС‚, С‡С‚Рѕ РјРѕР¶РµС‚ РїРѕР·РІРѕР»РёС‚СЊ СЃРµР±Рµ РІСЃРµ. РќРѕ РјС‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґРµРј С‚РµСЂРїРµС‚СЊ СЌС‚Рѕ!
 	};
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_03"); //Хорошо. Если увидишь ополчение, задай им хорошую трепку.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_03"); //РҐРѕСЂРѕС€Рѕ. Р•СЃР»Рё СѓРІРёРґРёС€СЊ РѕРїРѕР»С‡РµРЅРёРµ, Р·Р°РґР°Р№ РёРј С…РѕСЂРѕС€СѓСЋ С‚СЂРµРїРєСѓ.
 	};
 	
 	if (other.guild == GIL_NOV)
 	|| (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_04"); //Хорошо. Да пребудет с тобой Иннос.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_04"); //РҐРѕСЂРѕС€Рѕ. Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ РРЅРЅРѕСЃ.
 	};
 			
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{	
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Королевских солдат не любят на этой ферме.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //Многие здесь, возможно не откажутся поговорить с тобой, но популярность себе ты вряд ли завоюешь.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //РљРѕСЂРѕР»РµРІСЃРєРёС… СЃРѕР»РґР°С‚ РЅРµ Р»СЋР±СЏС‚ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //РњРЅРѕРіРёРµ Р·РґРµСЃСЊ, РІРѕР·РјРѕР¶РЅРѕ РЅРµ РѕС‚РєР°Р¶СѓС‚СЃСЏ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№, РЅРѕ РїРѕРїСѓР»СЏСЂРЅРѕСЃС‚СЊ СЃРµР±Рµ С‚С‹ РІСЂСЏРґ Р»Рё Р·Р°РІРѕСЋРµС€СЊ.
 	};
 };
 
@@ -74,7 +74,7 @@ INSTANCE DIA_Bodo_Bauernaufstand   (C_INFO)
 	condition   = DIA_Bodo_Bauernaufstand_Condition;
 	information = DIA_Bodo_Bauernaufstand_Info;
 	permanent   = FALSE;
-	description = "В городе говорят о восстании фермеров!";
+	description = "Р’ РіРѕСЂРѕРґРµ РіРѕРІРѕСЂСЏС‚ Рѕ РІРѕСЃСЃС‚Р°РЅРёРё С„РµСЂРјРµСЂРѕРІ!";
 };
 FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 {
@@ -82,9 +82,9 @@ FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Bodo_Bauernaufstand_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //В городе говорят о восстании фермеров!
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //Чушь. Мы не делаем ничего такого. Только защищаем то, что заработали тяжелым трудом.
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //Воистину правда, что войны выигрываются на спинах крестьян. Но Онар больше не собирается просто стоять и смотреть, как король пьет нашу кровь.
+	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //Р’ РіРѕСЂРѕРґРµ РіРѕРІРѕСЂСЏС‚ Рѕ РІРѕСЃСЃС‚Р°РЅРёРё С„РµСЂРјРµСЂРѕРІ!
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //Р§СѓС€СЊ. РњС‹ РЅРµ РґРµР»Р°РµРј РЅРёС‡РµРіРѕ С‚Р°РєРѕРіРѕ. РўРѕР»СЊРєРѕ Р·Р°С‰РёС‰Р°РµРј С‚Рѕ, С‡С‚Рѕ Р·Р°СЂР°Р±РѕС‚Р°Р»Рё С‚СЏР¶РµР»С‹Рј С‚СЂСѓРґРѕРј.
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //Р’РѕРёСЃС‚РёРЅСѓ РїСЂР°РІРґР°, С‡С‚Рѕ РІРѕР№РЅС‹ РІС‹РёРіСЂС‹РІР°СЋС‚СЃСЏ РЅР° СЃРїРёРЅР°С… РєСЂРµСЃС‚СЊСЏРЅ. РќРѕ РћРЅР°СЂ Р±РѕР»СЊС€Рµ РЅРµ СЃРѕР±РёСЂР°РµС‚СЃСЏ РїСЂРѕСЃС‚Рѕ СЃС‚РѕСЏС‚СЊ Рё СЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РєРѕСЂРѕР»СЊ РїСЊРµС‚ РЅР°С€Сѓ РєСЂРѕРІСЊ.
 };
 
 // ************************************************************
@@ -97,7 +97,7 @@ INSTANCE DIA_Bodo_Bett   (C_INFO)
 	condition   = DIA_Bodo_Bett_Condition;
 	information = DIA_Bodo_Bett_Info;
 	permanent   = FALSE;
-	description = "Могу я где-нибудь здесь отдохнуть?";
+	description = "РњРѕРіСѓ СЏ РіРґРµ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ РѕС‚РґРѕС…РЅСѓС‚СЊ?";
 };
 FUNC INT DIA_Bodo_Bett_Condition()
 {
@@ -105,9 +105,9 @@ FUNC INT DIA_Bodo_Bett_Condition()
 };
 FUNC VOID DIA_Bodo_Bett_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //Могу я где-нибудь здесь отдохнуть?
-	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Если ты ищешь, где можно поспать, иди в сарай. Но только не приляг по ошибке на кровать наемника.
-	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Онар следит, чтобы они не трогали нас, фермеров, но это не касается чужаков, не работающих на ферме. С ними наемники могут делать все, что пожелают.
+	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //РњРѕРіСѓ СЏ РіРґРµ-РЅРёР±СѓРґСЊ Р·РґРµСЃСЊ РѕС‚РґРѕС…РЅСѓС‚СЊ?
+	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Р•СЃР»Рё С‚С‹ РёС‰РµС€СЊ, РіРґРµ РјРѕР¶РЅРѕ РїРѕСЃРїР°С‚СЊ, РёРґРё РІ СЃР°СЂР°Р№. РќРѕ С‚РѕР»СЊРєРѕ РЅРµ РїСЂРёР»СЏРі РїРѕ РѕС€РёР±РєРµ РЅР° РєСЂРѕРІР°С‚СЊ РЅР°РµРјРЅРёРєР°.
+	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //РћРЅР°СЂ СЃР»РµРґРёС‚, С‡С‚РѕР±С‹ РѕРЅРё РЅРµ С‚СЂРѕРіР°Р»Рё РЅР°СЃ, С„РµСЂРјРµСЂРѕРІ, РЅРѕ СЌС‚Рѕ РЅРµ РєР°СЃР°РµС‚СЃСЏ С‡СѓР¶Р°РєРѕРІ, РЅРµ СЂР°Р±РѕС‚Р°СЋС‰РёС… РЅР° С„РµСЂРјРµ. РЎ РЅРёРјРё РЅР°РµРјРЅРёРєРё РјРѕРіСѓС‚ РґРµР»Р°С‚СЊ РІСЃРµ, С‡С‚Рѕ РїРѕР¶РµР»Р°СЋС‚.
 };
 
 // ************************************************************
@@ -120,7 +120,7 @@ INSTANCE DIA_Bodo_Cipher   (C_INFO)
 	condition   = DIA_Bodo_Cipher_Condition;
 	information = DIA_Bodo_Cipher_Info;
 	permanent   = FALSE;
-	description = "Сифер сказал мне, что кто-то украл у него тюк болотной травы ...";
+	description = "РЎРёС„РµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РєС‚Рѕ-С‚Рѕ СѓРєСЂР°Р» Сѓ РЅРµРіРѕ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹ ...";
 };
 FUNC INT DIA_Bodo_Cipher_Condition()
 {
@@ -132,12 +132,12 @@ FUNC INT DIA_Bodo_Cipher_Condition()
 };
 FUNC VOID DIA_Bodo_Cipher_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Сифер сказал мне, что кто-то украл у него тюк болотной травы ...
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_01"); //И?
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //Он думает, что это сделал ты.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Ох, ВОТ почему этот парень все время так пялится на меня.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //Я стараюсь быть с ним максимально дружелюбным последнее время, потому что, похоже, ему вожжа попала под хвост.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //Но я ничего не могу поделать. Я стараюсь улыбаться ему, а ан в ответ смотрит так, как будто хочет убить меня.
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //РЎРёС„РµСЂ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РєС‚Рѕ-С‚Рѕ СѓРєСЂР°Р» Сѓ РЅРµРіРѕ С‚СЋРє Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹ ...
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_01"); //Р?
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //РћРЅ РґСѓРјР°РµС‚, С‡С‚Рѕ СЌС‚Рѕ СЃРґРµР»Р°Р» С‚С‹.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //РћС…, Р’РћРў РїРѕС‡РµРјСѓ СЌС‚РѕС‚ РїР°СЂРµРЅСЊ РІСЃРµ РІСЂРµРјСЏ С‚Р°Рє РїСЏР»РёС‚СЃСЏ РЅР° РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //РЇ СЃС‚Р°СЂР°СЋСЃСЊ Р±С‹С‚СЊ СЃ РЅРёРј РјР°РєСЃРёРјР°Р»СЊРЅРѕ РґСЂСѓР¶РµР»СЋР±РЅС‹Рј РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ, РїРѕС…РѕР¶Рµ, РµРјСѓ РІРѕР¶Р¶Р° РїРѕРїР°Р»Р° РїРѕРґ С…РІРѕСЃС‚.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //РќРѕ СЏ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ РїРѕРґРµР»Р°С‚СЊ. РЇ СЃС‚Р°СЂР°СЋСЃСЊ СѓР»С‹Р±Р°С‚СЊСЃСЏ РµРјСѓ, Р° Р°РЅ РІ РѕС‚РІРµС‚ СЃРјРѕС‚СЂРёС‚ С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ С…РѕС‡РµС‚ СѓР±РёС‚СЊ РјРµРЅСЏ.
 };
 
 // ************************************************************
@@ -150,7 +150,7 @@ INSTANCE DIA_Bodo_WeedOrElse   (C_INFO)
 	condition   = DIA_Bodo_WeedOrElse_Condition;
 	information = DIA_Bodo_WeedOrElse_Info;
 	permanent   = FALSE;
-	description = "Отдай мне эту траву или ...";
+	description = "РћС‚РґР°Р№ РјРЅРµ СЌС‚Сѓ С‚СЂР°РІСѓ РёР»Рё ...";
 };
 FUNC INT DIA_Bodo_WeedOrElse_Condition()
 {
@@ -162,13 +162,13 @@ FUNC INT DIA_Bodo_WeedOrElse_Condition()
 };
 FUNC VOID DIA_Bodo_WeedOrElse_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_WeedOrElse_15_00"); //Отдай мне эту траву или ...
-	AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_01"); //Послушай, все, что у меня есть - это один косяк из болотной травы. Возьми его и оставь меня в покое.
+	AI_Output (other, self, "DIA_Bodo_WeedOrElse_15_00"); //РћС‚РґР°Р№ РјРЅРµ СЌС‚Сѓ С‚СЂР°РІСѓ РёР»Рё ...
+	AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_01"); //РџРѕСЃР»СѓС€Р°Р№, РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ - СЌС‚Рѕ РѕРґРёРЅ РєРѕСЃСЏРє РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹. Р’РѕР·СЊРјРё РµРіРѕ Рё РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 	B_GiveInvItems (self, other, itmi_joint, 1);
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Ты знаешь, как наемники Онара защищают нас, а?
-		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_03"); //Так что даже не пытайся сделать какую-нибудь глупость!
+		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //РўС‹ Р·РЅР°РµС€СЊ, РєР°Рє РЅР°РµРјРЅРёРєРё РћРЅР°СЂР° Р·Р°С‰РёС‰Р°СЋС‚ РЅР°СЃ, Р°?
+		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_03"); //РўР°Рє С‡С‚Рѕ РґР°Р¶Рµ РЅРµ РїС‹С‚Р°Р№СЃСЏ СЃРґРµР»Р°С‚СЊ РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ РіР»СѓРїРѕСЃС‚СЊ!
 	};
 };
 
@@ -182,7 +182,7 @@ INSTANCE DIA_Bodo_WeedPERM   (C_INFO)
 	condition   = DIA_Bodo_WeedPERM_Condition;
 	information = DIA_Bodo_WeedPERM_Info;
 	permanent   = TRUE;
-	description = "Я не верб ни одному твоему слову. Отдай мне эту траву!";
+	description = "РЇ РЅРµ РІРµСЂР± РЅРё РѕРґРЅРѕРјСѓ С‚РІРѕРµРјСѓ СЃР»РѕРІСѓ. РћС‚РґР°Р№ РјРЅРµ СЌС‚Сѓ С‚СЂР°РІСѓ!";
 };
 FUNC INT DIA_Bodo_WeedPERM_Condition()
 {
@@ -194,8 +194,8 @@ FUNC INT DIA_Bodo_WeedPERM_Condition()
 };
 FUNC VOID DIA_Bodo_WeedPERM_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_WeedPERM_15_00"); //Я не верб ни одному твоему слову. Отдай мне эту траву!
-	AI_Output (self, other, "DIA_Bodo_WeedPERM_12_01"); //У меня ее нет. Честно.
+	AI_Output (other, self, "DIA_Bodo_WeedPERM_15_00"); //РЇ РЅРµ РІРµСЂР± РЅРё РѕРґРЅРѕРјСѓ С‚РІРѕРµРјСѓ СЃР»РѕРІСѓ. РћС‚РґР°Р№ РјРЅРµ СЌС‚Сѓ С‚СЂР°РІСѓ!
+	AI_Output (self, other, "DIA_Bodo_WeedPERM_12_01"); //РЈ РјРµРЅСЏ РµРµ РЅРµС‚. Р§РµСЃС‚РЅРѕ.
 };
 
 

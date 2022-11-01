@@ -41,14 +41,14 @@ func int DIA_Engor_HALLO_Condition ()
 func void DIA_Engor_HALLO_Info ()
 {
 	
- 	AI_Output (self, other, "DIA_Engor_HALLO_13_00"); //А, ты тот парень, которому удалось пройти через Проход?
-	AI_Output (other, self, "DIA_Engor_HALLO_15_01"); //Да.
-	AI_Output (self, other, "DIA_Engor_HALLO_13_02"); //Отлично. Я Энгор - я обеспечиваю эту экспедицию.
-	AI_Output (self, other, "DIA_Engor_HALLO_13_03"); //Только не думай, что можешь получить от меня что-нибудь бесплатно!
-	AI_Output (self, other, "DIA_Engor_HALLO_13_04"); //Но если в твоих карманах позванивает золото, мы всегда договоримся.
+ 	AI_Output (self, other, "DIA_Engor_HALLO_13_00"); //Рђ, С‚С‹ С‚РѕС‚ РїР°СЂРµРЅСЊ, РєРѕС‚РѕСЂРѕРјСѓ СѓРґР°Р»РѕСЃСЊ РїСЂРѕР№С‚Рё С‡РµСЂРµР· РџСЂРѕС…РѕРґ?
+	AI_Output (other, self, "DIA_Engor_HALLO_15_01"); //Р”Р°.
+	AI_Output (self, other, "DIA_Engor_HALLO_13_02"); //РћС‚Р»РёС‡РЅРѕ. РЇ Р­РЅРіРѕСЂ - СЏ РѕР±РµСЃРїРµС‡РёРІР°СЋ СЌС‚Сѓ СЌРєСЃРїРµРґРёС†РёСЋ.
+	AI_Output (self, other, "DIA_Engor_HALLO_13_03"); //РўРѕР»СЊРєРѕ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ РјРѕР¶РµС€СЊ РїРѕР»СѓС‡РёС‚СЊ РѕС‚ РјРµРЅСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р±РµСЃРїР»Р°С‚РЅРѕ!
+	AI_Output (self, other, "DIA_Engor_HALLO_13_04"); //РќРѕ РµСЃР»Рё РІ С‚РІРѕРёС… РєР°СЂРјР°РЅР°С… РїРѕР·РІР°РЅРёРІР°РµС‚ Р·РѕР»РѕС‚Рѕ, РјС‹ РІСЃРµРіРґР° РґРѕРіРѕРІРѕСЂРёРјСЃСЏ.
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
-	B_LogEntry(TOPIC_Trader_OC, "Энгор заведует припасами замка и ведет небольшой бизнес на стороне.");  
+	B_LogEntry(TOPIC_Trader_OC, "Р­РЅРіРѕСЂ Р·Р°РІРµРґСѓРµС‚ РїСЂРёРїР°СЃР°РјРё Р·Р°РјРєР° Рё РІРµРґРµС‚ РЅРµР±РѕР»СЊС€РѕР№ Р±РёР·РЅРµСЃ РЅР° СЃС‚РѕСЂРѕРЅРµ.");  
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Handeln
@@ -61,7 +61,7 @@ instance DIA_Engor_HANDELN		(C_INFO)
 	information	 = 	DIA_Engor_HANDELN_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 
 func int DIA_Engor_HANDELN_Condition ()
@@ -88,7 +88,7 @@ func void DIA_Engor_HANDELN_Info ()
 	CreateInvItems 	(self, ItRw_Arrow, McArrowAmount );
 	//////////////////////////////////////////////////////////////////////////////////////
 
-	AI_Output			(other, self, "DIA_Engor_HANDELN_15_00"); //Покажи мне свои товары.
+	AI_Output			(other, self, "DIA_Engor_HANDELN_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ABOUTPARLAF
@@ -99,7 +99,7 @@ instance DIA_Engor_ABOUTPARLAF		(C_INFO)
 	nr		 	 = 	2;
 	condition	 = 	DIA_Engor_ABOUTPARLAF_Condition;
 	information	 = 	DIA_Engor_ABOUTPARLAF_Info;
-	description	 = 	"Ты распределяешь пайки, как я слышал?";
+	description	 = 	"РўС‹ СЂР°СЃРїСЂРµРґРµР»СЏРµС€СЊ РїР°Р№РєРё, РєР°Рє СЏ СЃР»С‹С€Р°Р»?";
 };
 
 func int DIA_Engor_ABOUTPARLAF_Condition ()
@@ -111,9 +111,9 @@ func int DIA_Engor_ABOUTPARLAF_Condition ()
 };
 func void DIA_Engor_ABOUTPARLAF_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_ABOUTPARLAF_15_00"); //Ты распределяешь пайки, как я слышал?
-	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_01"); //Это так. А что? Мне теперь и тебя кормить придется?
-	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_02"); //Если тебе что-то нужно, тебе придется платить за это - как и всем остальным.
+	AI_Output (other, self, "DIA_Engor_ABOUTPARLAF_15_00"); //РўС‹ СЂР°СЃРїСЂРµРґРµР»СЏРµС€СЊ РїР°Р№РєРё, РєР°Рє СЏ СЃР»С‹С€Р°Р»?
+	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_01"); //Р­С‚Рѕ С‚Р°Рє. Рђ С‡С‚Рѕ? РњРЅРµ С‚РµРїРµСЂСЊ Рё С‚РµР±СЏ РєРѕСЂРјРёС‚СЊ РїСЂРёРґРµС‚СЃСЏ?
+	AI_Output (self, other, "DIA_Engor_ABOUTPARLAF_13_02"); //Р•СЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РЅСѓР¶РЅРѕ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїР»Р°С‚РёС‚СЊ Р·Р° СЌС‚Рѕ - РєР°Рє Рё РІСЃРµРј РѕСЃС‚Р°Р»СЊРЅС‹Рј.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Ruestung
@@ -125,7 +125,7 @@ instance DIA_Engor_Ruestung		(C_INFO)
 	condition	 = 	DIA_Engor_Ruestung_Condition;
 	information	 = 	DIA_Engor_Ruestung_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"У тебя есть что-нибудь интересное для меня?";
+	description	 = 	"РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РґР»СЏ РјРµРЅСЏ?";
 };
 
 func int DIA_Engor_Ruestung_Condition ()
@@ -137,9 +137,9 @@ func int DIA_Engor_Ruestung_Condition ()
 };
 func void DIA_Engor_Ruestung_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_Ruestung_15_00"); //У тебя есть что-нибудь интересное для меня?
-	AI_Output (self, other, "DIA_Engor_Ruestung_13_01"); //Я могу продать тебе хорошие доспехи - тяжелые доспехи ополчения. Если, конечно, тебе это интересно.
-	AI_Output (self, other, "DIA_Engor_Ruestung_13_02"); //Они недешевы, конечно же. Но если у тебя есть золото, ты получишь их.
+	AI_Output (other, self, "DIA_Engor_Ruestung_15_00"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output (self, other, "DIA_Engor_Ruestung_13_01"); //РЇ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё - С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РѕРїРѕР»С‡РµРЅРёСЏ. Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, С‚РµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ.
+	AI_Output (self, other, "DIA_Engor_Ruestung_13_02"); //РћРЅРё РЅРµРґРµС€РµРІС‹, РєРѕРЅРµС‡РЅРѕ Р¶Рµ. РќРѕ РµСЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ Р·РѕР»РѕС‚Рѕ, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РёС….
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info RSkaufen
@@ -151,7 +151,7 @@ instance DIA_Engor_RSkaufen		(C_INFO)
 	condition	 = 	DIA_Engor_RSkaufen_Condition;
 	information	 = 	DIA_Engor_RSkaufen_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Купить тяжелые доспехи ополчения (Защита: Оружие 60, Стрелы 60. Цена: 2500 золота)"; 
+	description	 = 	"РљСѓРїРёС‚СЊ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё РѕРїРѕР»С‡РµРЅРёСЏ (Р—Р°С‰РёС‚Р°: РћСЂСѓР¶РёРµ 60, РЎС‚СЂРµР»С‹ 60. Р¦РµРЅР°: 2500 Р·РѕР»РѕС‚Р°)"; 
 };
 //--------------------------------------
 var int DIA_Engor_RSkaufen_perm;
@@ -169,14 +169,14 @@ func void DIA_Engor_RSkaufen_Info ()
 {
 	if (B_GiveInvItems (other, self, Itmi_Gold,2500))
 	{
-		AI_Output (other, self, "DIA_Engor_RSkaufen_15_00"); //Дай мне доспехи.
-		AI_Output (self, other, "DIA_Engor_RSkaufen_13_01"); //Вот, держи, они надежно защитят тебя - это чертовски хорошие доспехи.
+		AI_Output (other, self, "DIA_Engor_RSkaufen_15_00"); //Р”Р°Р№ РјРЅРµ РґРѕСЃРїРµС…Рё.
+		AI_Output (self, other, "DIA_Engor_RSkaufen_13_01"); //Р’РѕС‚, РґРµСЂР¶Рё, РѕРЅРё РЅР°РґРµР¶РЅРѕ Р·Р°С‰РёС‚СЏС‚ С‚РµР±СЏ - СЌС‚Рѕ С‡РµСЂС‚РѕРІСЃРєРё С…РѕСЂРѕС€РёРµ РґРѕСЃРїРµС…Рё.
 		B_GiveInvItems (self,other, ITAR_MIL_M,1);
 		DIA_Engor_RSkaufen_perm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Engor_RSkaufen_13_02"); //Сначала принеси золото.
+		AI_Output (self, other, "DIA_Engor_RSkaufen_13_02"); //РЎРЅР°С‡Р°Р»Р° РїСЂРёРЅРµСЃРё Р·РѕР»РѕС‚Рѕ.
 	};
 };
 
@@ -189,7 +189,7 @@ instance DIA_Engor_HELP		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Engor_HELP_Condition;
 	information	 = 	DIA_Engor_HELP_Info;
-	description	 = 	"Может, я смогу помочь тебе в твоей работе?";
+	description	 = 	"РњРѕР¶РµС‚, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ С‚РІРѕРµР№ СЂР°Р±РѕС‚Рµ?";
 };
 
 func int DIA_Engor_HELP_Condition ()
@@ -201,36 +201,36 @@ func int DIA_Engor_HELP_Condition ()
 };
 func void DIA_Engor_HELP_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_15_00"); //Может, я смогу помочь тебе в твоей работе?
-	AI_Output (self, other, "DIA_Engor_HELP_13_01"); //Хмм... Конечно, почему нет? Мне не помешала бы помощь.
-	AI_Output (other, self, "DIA_Engor_HELP_15_02"); //Так что нужно сделать?
-	AI_Output (self, other, "DIA_Engor_HELP_13_03"); //Наши запасы продовольствия на исходе. Хуже всего, что у нас почти не осталось мяса.
-	AI_Output (self, other, "DIA_Engor_HELP_13_04"); //Так что если сможешь раздобыть мясо, сырое или приготовленное, окорока или колбасу, я был бы очень благодарен. Ну, как? Ты поможешь нам?
+	AI_Output (other, self, "DIA_Engor_HELP_15_00"); //РњРѕР¶РµС‚, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ С‚РІРѕРµР№ СЂР°Р±РѕС‚Рµ?
+	AI_Output (self, other, "DIA_Engor_HELP_13_01"); //РҐРјРј... РљРѕРЅРµС‡РЅРѕ, РїРѕС‡РµРјСѓ РЅРµС‚? РњРЅРµ РЅРµ РїРѕРјРµС€Р°Р»Р° Р±С‹ РїРѕРјРѕС‰СЊ.
+	AI_Output (other, self, "DIA_Engor_HELP_15_02"); //РўР°Рє С‡С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Engor_HELP_13_03"); //РќР°С€Рё Р·Р°РїР°СЃС‹ РїСЂРѕРґРѕРІРѕР»СЊСЃС‚РІРёСЏ РЅР° РёСЃС…РѕРґРµ. РҐСѓР¶Рµ РІСЃРµРіРѕ, С‡С‚Рѕ Сѓ РЅР°СЃ РїРѕС‡С‚Рё РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ РјСЏСЃР°.
+	AI_Output (self, other, "DIA_Engor_HELP_13_04"); //РўР°Рє С‡С‚Рѕ РµСЃР»Рё СЃРјРѕР¶РµС€СЊ СЂР°Р·РґРѕР±С‹С‚СЊ РјСЏСЃРѕ, СЃС‹СЂРѕРµ РёР»Рё РїСЂРёРіРѕС‚РѕРІР»РµРЅРЅРѕРµ, РѕРєРѕСЂРѕРєР° РёР»Рё РєРѕР»Р±Р°СЃСѓ, СЏ Р±С‹Р» Р±С‹ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕРґР°СЂРµРЅ. РќСѓ, РєР°Рє? РўС‹ РїРѕРјРѕР¶РµС€СЊ РЅР°Рј?
 
 	
 	Info_ClearChoices (DIA_Engor_HELP);
-	Info_AddChoice (DIA_Engor_HELP,"У меня нет времени на это.",DIA_Engor_HELP_NO);
-	Info_AddChoice (DIA_Engor_HELP,"Не волнуйся, я принесу тебе мясо.",DIA_Engor_HELP_YES);
+	Info_AddChoice (DIA_Engor_HELP,"РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.",DIA_Engor_HELP_NO);
+	Info_AddChoice (DIA_Engor_HELP,"РќРµ РІРѕР»РЅСѓР№СЃСЏ, СЏ РїСЂРёРЅРµСЃСѓ С‚РµР±Рµ РјСЏСЃРѕ.",DIA_Engor_HELP_YES);
 	
 	
 };
 FUNC VOID DIA_Engor_HELP_NO()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_NO_15_00"); //У меня нет времени на это.
-	AI_Output (self, other, "DIA_Engor_HELP_NO_13_01"); //Тогда зачем ты тратишь мое время попусту?
+	AI_Output (other, self, "DIA_Engor_HELP_NO_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.
+	AI_Output (self, other, "DIA_Engor_HELP_NO_13_01"); //РўРѕРіРґР° Р·Р°С‡РµРј С‚С‹ С‚СЂР°С‚РёС€СЊ РјРѕРµ РІСЂРµРјСЏ РїРѕРїСѓСЃС‚Сѓ?
 	
 	MIS_Engor_BringMeat = LOG_OBSOLETE; 
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Engor_HELP_YES()
 {
-	AI_Output (other, self, "DIA_Engor_HELP_YES_15_00"); //Не волнуйся, я принесу тебе мясо.
-	AI_Output (self, other, "DIA_Engor_HELP_YES_13_01"); //Две дюжины кусков хватило бы, чтобы накормить все эти голодные рты. Возвращайся, когда у тебя будет это мясо. А мне нужно работать.
+	AI_Output (other, self, "DIA_Engor_HELP_YES_15_00"); //РќРµ РІРѕР»РЅСѓР№СЃСЏ, СЏ РїСЂРёРЅРµСЃСѓ С‚РµР±Рµ РјСЏСЃРѕ.
+	AI_Output (self, other, "DIA_Engor_HELP_YES_13_01"); //Р”РІРµ РґСЋР¶РёРЅС‹ РєСѓСЃРєРѕРІ С…РІР°С‚РёР»Рѕ Р±С‹, С‡С‚РѕР±С‹ РЅР°РєРѕСЂРјРёС‚СЊ РІСЃРµ СЌС‚Рё РіРѕР»РѕРґРЅС‹Рµ СЂС‚С‹. Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ СЌС‚Рѕ РјСЏСЃРѕ. Рђ РјРЅРµ РЅСѓР¶РЅРѕ СЂР°Р±РѕС‚Р°С‚СЊ.
 
 	Log_CreateTopic (TOPIC_BringMeat, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BringMeat, LOG_RUNNING);
-	B_LogEntry  (TOPIC_BringMeat,"Энгору нужно две дюжины кусков мяса, чтобы накормить людей в замке.");
-	B_LogEntry  (TOPIC_BringMeat,"Неважно, что это будет - колбаса, окорок, сырое или жареное мясо. Что угодно, лишь бы это можно было жевать.");  
+	B_LogEntry  (TOPIC_BringMeat,"Р­РЅРіРѕСЂСѓ РЅСѓР¶РЅРѕ РґРІРµ РґСЋР¶РёРЅС‹ РєСѓСЃРєРѕРІ РјСЏСЃР°, С‡С‚РѕР±С‹ РЅР°РєРѕСЂРјРёС‚СЊ Р»СЋРґРµР№ РІ Р·Р°РјРєРµ.");
+	B_LogEntry  (TOPIC_BringMeat,"РќРµРІР°Р¶РЅРѕ, С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ - РєРѕР»Р±Р°СЃР°, РѕРєРѕСЂРѕРє, СЃС‹СЂРѕРµ РёР»Рё Р¶Р°СЂРµРЅРѕРµ РјСЏСЃРѕ. Р§С‚Рѕ СѓРіРѕРґРЅРѕ, Р»РёС€СЊ Р±С‹ СЌС‚Рѕ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р¶РµРІР°С‚СЊ.");  
 
 	
 	MIS_Engor_BringMeat = LOG_RUNNING;  
@@ -246,7 +246,7 @@ instance DIA_Engor_BRINGMEAT		(C_INFO)
 	condition	 = 	DIA_Engor_BRINGMEAT_Condition;
 	information	 = 	DIA_Engor_BRINGMEAT_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Вот, я принес тебе кое-что. (дать мясо).";
+	description	 = 	"Р’РѕС‚, СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ. (РґР°С‚СЊ РјСЏСЃРѕ).";
 };
 
 func int DIA_Engor_BRINGMEAT_Condition ()
@@ -268,7 +268,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	var string ConcatBacon;
 	var string ConcatSausage;
 	
-	AI_Output (other, self, "DIA_Engor_BRINGMEAT_15_00"); //Вот, я принес тебе кое-что.
+	AI_Output (other, self, "DIA_Engor_BRINGMEAT_15_00"); //Р’РѕС‚, СЏ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ.
 	
 // ***** Rohes Fleisch *****
 	if (Npc_HasItems (hero,ItFoMuttonRaw) >= 1) 
@@ -280,7 +280,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 		
 			Meat_Counter = (Meat_Counter + (Meat_Amount - Meat_Counter));
 		}
-		else if (Npc_HasItems (hero, ItFoMuttonRaw) < Meat_Amount) // muss hier stehen, wegen nдchster Zeile
+		else if (Npc_HasItems (hero, ItFoMuttonRaw) < Meat_Amount) // muss hier stehen, wegen nРґchster Zeile
 		&& (Meat_Counter < Meat_Amount) 
 		{
 			Meat_Counter = Meat_Counter + (Npc_HasItems (hero,ItFoMuttonRaw));
@@ -341,7 +341,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 			Npc_RemoveInvItems (other, ItFo_Bacon,(Npc_HasItems (other,ItFo_Bacon)));
 		};
 	};
-	// ***** Wьrste *****	
+	// ***** WСЊrste *****	
 	if (Npc_HasItems (hero,ItFo_Sausage) >= 1) 
 	{
 		if (Npc_HasItems (hero, ItFo_Sausage) >= Meat_Amount) 
@@ -370,7 +370,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	{	
 		var string GesamtFleisch;
 		
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_01"); //Для начала и это неплохо, но мне нужно больше.
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_01"); //Р”Р»СЏ РЅР°С‡Р°Р»Р° Рё СЌС‚Рѕ РЅРµРїР»РѕС…Рѕ, РЅРѕ РјРЅРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ.
 		
 		GesamtFleisch = IntToString (Meat_Counter);
 		GesamtFleisch = ConcatStrings ("Insgesamt Fleisch gegeben: ",GesamtFleisch);
@@ -379,15 +379,15 @@ func void DIA_Engor_BRINGMEAT_Info ()
 	};
 	if (Meat_counter >= Meat_Amount)
 	{
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_02"); //Отлично, ты принес достаточно мяса. Этого хватит на некоторое время.
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_03"); //Но даже не надейся, что я теперь буду давать тебе что-нибудь бесплатно!
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_02"); //РћС‚Р»РёС‡РЅРѕ, С‚С‹ РїСЂРёРЅРµСЃ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјСЏСЃР°. Р­С‚РѕРіРѕ С…РІР°С‚РёС‚ РЅР° РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ.
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_03"); //РќРѕ РґР°Р¶Рµ РЅРµ РЅР°РґРµР№СЃСЏ, С‡С‚Рѕ СЏ С‚РµРїРµСЂСЊ Р±СѓРґСѓ РґР°РІР°С‚СЊ С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Р±РµСЃРїР»Р°С‚РЅРѕ!
 		/*
 		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_04"); //Hm...
-		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_05"); //Na schцn. Du hast mir geholfen, du kriegst was umsonst. Ich gebe dir eine Information. 	
+		AI_Output (self, other, "DIA_Engor_BRINGMEAT_13_05"); //Na schС†n. Du hast mir geholfen, du kriegst was umsonst. Ich gebe dir eine Information. 	
 		*/
 		MIS_Engor_BringMeat = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BringMeat);
-		Log_AddEntry (TOPIC_BringMeat,"Энгор получил свое мясо. Он разделит его между защитниками замка."); 
+		Log_AddEntry (TOPIC_BringMeat,"Р­РЅРіРѕСЂ РїРѕР»СѓС‡РёР» СЃРІРѕРµ РјСЏСЃРѕ. РћРЅ СЂР°Р·РґРµР»РёС‚ РµРіРѕ РјРµР¶РґСѓ Р·Р°С‰РёС‚РЅРёРєР°РјРё Р·Р°РјРєР°."); 
 	};
 };
 
@@ -400,7 +400,7 @@ func void DIA_Engor_BRINGMEAT_Info ()
 //*************************************
 
 ///////////////////////////////////////////////////////////////////////
-//	Wie laufen die Geschдfte?
+//	Wie laufen die GeschРґfte?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Engor_Business		(C_INFO)
 {
@@ -409,7 +409,7 @@ instance DIA_Engor_Business		(C_INFO)
 	condition	 = 	DIA_Engor_Business_Condition;
 	information	 = 	DIA_Engor_Business_Info;
 	permanent	 =	FALSE;	
-	description	 = 	"Как торговля?";
+	description	 = 	"РљР°Рє С‚РѕСЂРіРѕРІР»СЏ?";
 	
 };
 
@@ -423,19 +423,19 @@ func int DIA_Engor_Business_Condition ()
 };
 func void DIA_Engor_Business_Info ()
 {
-	AI_Output (other, self, "DIA_Engor_Business_15_00"); //Как бизнес?
+	AI_Output (other, self, "DIA_Engor_Business_15_00"); //РљР°Рє Р±РёР·РЅРµСЃ?
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 		{
-			AI_Output (self, other, "DIA_Engor_Business_13_01"); //Неважно. Я надеюсь, что хотя бы у этих охотников на драконов есть какое-нибудь золото.
+			AI_Output (self, other, "DIA_Engor_Business_13_01"); //РќРµРІР°Р¶РЅРѕ. РЇ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ С…РѕС‚СЏ Р±С‹ Сѓ СЌС‚РёС… РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ РµСЃС‚СЊ РєР°РєРѕРµ-РЅРёР±СѓРґСЊ Р·РѕР»РѕС‚Рѕ.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Engor_Business_13_02"); //Паршиво! Паладины ничего не покупают.
+			AI_Output (self, other, "DIA_Engor_Business_13_02"); //РџР°СЂС€РёРІРѕ! РџР°Р»Р°РґРёРЅС‹ РЅРёС‡РµРіРѕ РЅРµ РїРѕРєСѓРїР°СЋС‚.
 		};
 
-	AI_Output (self, other, "DIA_Engor_Business_13_03"); //А как насчет тебя? Ты хочешь что-нибудь купить?
+	AI_Output (self, other, "DIA_Engor_Business_13_03"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ С‚РµР±СЏ? РўС‹ С…РѕС‡РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєСѓРїРёС‚СЊ?
 };
 
 
@@ -452,7 +452,7 @@ INSTANCE DIA_Engor_PICKPOCKET (C_INFO)
 	condition	= DIA_Engor_PICKPOCKET_Condition;
 	information	= DIA_Engor_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Красть его карту рискованно)";
+	description = "(РљСЂР°СЃС‚СЊ РµРіРѕ РєР°СЂС‚Сѓ СЂРёСЃРєРѕРІР°РЅРЅРѕ)";
 };                       
 
 FUNC INT DIA_Engor_PICKPOCKET_Condition()

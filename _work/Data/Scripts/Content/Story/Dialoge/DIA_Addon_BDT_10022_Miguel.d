@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Miguel_Hi   (C_INFO)
 	condition   = DIA_Addon_Miguel_Hi_Condition;
 	information = DIA_Addon_Miguel_Hi_Info;
 	permanent   = FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Addon_Miguel_Hi_Condition()
 {		
@@ -72,20 +72,20 @@ FUNC INT DIA_Addon_Miguel_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_00");//Что ты здесь делаешь?
+	AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_00");//Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
 	
 	if Wld_IsTime (06,00,22,00)
 	{
-		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//Ищешь что-нибудь?
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//Растения. Я ищу растения.
+		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//РС‰РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ?
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//Р Р°СЃС‚РµРЅРёСЏ. РЇ РёС‰Сѓ СЂР°СЃС‚РµРЅРёСЏ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//Обычно я ищу растения.
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//РћР±С‹С‡РЅРѕ СЏ РёС‰Сѓ СЂР°СЃС‚РµРЅРёСЏ.
 	};
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Большинство из них можно использовать.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Многие растения имеют лечебные свойства, а из болотной травы получаются отличные косяки.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//До того как я попал за Барьер, я работал алхимиком.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… РјРѕР¶РЅРѕ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//РњРЅРѕРіРёРµ СЂР°СЃС‚РµРЅРёСЏ РёРјРµСЋС‚ Р»РµС‡РµР±РЅС‹Рµ СЃРІРѕР№СЃС‚РІР°, Р° РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹ РїРѕР»СѓС‡Р°СЋС‚СЃСЏ РѕС‚Р»РёС‡РЅС‹Рµ РєРѕСЃСЏРєРё.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Р”Рѕ С‚РѕРіРѕ РєР°Рє СЏ РїРѕРїР°Р» Р·Р° Р‘Р°СЂСЊРµСЂ, СЏ СЂР°Р±РѕС‚Р°Р» Р°Р»С…РёРјРёРєРѕРј.
 };
 //---------------------------------------------------------------------
 //	Info Story
@@ -97,7 +97,7 @@ INSTANCE DIA_Addon_Miguel_Story   (C_INFO)
 	condition   = DIA_Addon_Miguel_Story_Condition;
 	information = DIA_Addon_Miguel_Story_Info;
 	permanent   = FALSE;
-	description = "А почему ты оказался за Барьером?";
+	description = "Рђ РїРѕС‡РµРјСѓ С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·Р° Р‘Р°СЂСЊРµСЂРѕРј?";
 };
 FUNC INT DIA_Addon_Miguel_Story_Condition()
 {	
@@ -108,11 +108,11 @@ FUNC INT DIA_Addon_Miguel_Story_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Story_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//А почему ты оказался за Барьером?
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Я много работал над зельями, воздействующими на разум.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Однажды вечером мой начальник Игнац выпил результат моего 'эксперимента' вместо своего вина.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Это сделало его... э-э... непредсказуемым на некоторое время, и с тех пор он немного не в себе.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(фальшиво) За это маги бросили меня за Барьер. 'Исследования запрещенных знаний,' - вот как они это назвали.
+	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//Рђ РїРѕС‡РµРјСѓ С‚С‹ РѕРєР°Р·Р°Р»СЃСЏ Р·Р° Р‘Р°СЂСЊРµСЂРѕРј?
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//РЇ РјРЅРѕРіРѕ СЂР°Р±РѕС‚Р°Р» РЅР°Рґ Р·РµР»СЊСЏРјРё, РІРѕР·РґРµР№СЃС‚РІСѓСЋС‰РёРјРё РЅР° СЂР°Р·СѓРј.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//РћРґРЅР°Р¶РґС‹ РІРµС‡РµСЂРѕРј РјРѕР№ РЅР°С‡Р°Р»СЊРЅРёРє РРіРЅР°С† РІС‹РїРёР» СЂРµР·СѓР»СЊС‚Р°С‚ РјРѕРµРіРѕ 'СЌРєСЃРїРµСЂРёРјРµРЅС‚Р°' РІРјРµСЃС‚Рѕ СЃРІРѕРµРіРѕ РІРёРЅР°.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Р­С‚Рѕ СЃРґРµР»Р°Р»Рѕ РµРіРѕ... СЌ-СЌ... РЅРµРїСЂРµРґСЃРєР°Р·СѓРµРјС‹Рј РЅР° РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ, Рё СЃ С‚РµС… РїРѕСЂ РѕРЅ РЅРµРјРЅРѕРіРѕ РЅРµ РІ СЃРµР±Рµ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(С„Р°Р»СЊС€РёРІРѕ) Р—Р° СЌС‚Рѕ РјР°РіРё Р±СЂРѕСЃРёР»Рё РјРµРЅСЏ Р·Р° Р‘Р°СЂСЊРµСЂ. 'РСЃСЃР»РµРґРѕРІР°РЅРёСЏ Р·Р°РїСЂРµС‰РµРЅРЅС‹С… Р·РЅР°РЅРёР№,' - РІРѕС‚ РєР°Рє РѕРЅРё СЌС‚Рѕ РЅР°Р·РІР°Р»Рё.
 };
 
 //---------------------------------------------------------------------
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Miguel_Lager   (C_INFO)
 	condition   = DIA_Addon_Miguel_Lager_Condition;
 	information = DIA_Addon_Miguel_Lager_Info;
 	permanent   = FALSE;
-	description = "Расскажи мне про лагерь.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ Р»Р°РіРµСЂСЊ.";
 };
 FUNC INT DIA_Addon_Miguel_Lager_Condition()
 {	
@@ -133,9 +133,9 @@ FUNC INT DIA_Addon_Miguel_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Расскажи мне про лагерь.
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //Я знаю немного. Сам я никогда там не был.
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Только люди Ворона были там с самого начала. Все остальные, те, кто пришел позже, как я, должны ждать, пока им не понадобятся новые люди.
+	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїСЂРѕ Р»Р°РіРµСЂСЊ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //РЇ Р·РЅР°СЋ РЅРµРјРЅРѕРіРѕ. РЎР°Рј СЏ РЅРёРєРѕРіРґР° С‚Р°Рј РЅРµ Р±С‹Р».
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //РўРѕР»СЊРєРѕ Р»СЋРґРё Р’РѕСЂРѕРЅР° Р±С‹Р»Рё С‚Р°Рј СЃ СЃР°РјРѕРіРѕ РЅР°С‡Р°Р»Р°. Р’СЃРµ РѕСЃС‚Р°Р»СЊРЅС‹Рµ, С‚Рµ, РєС‚Рѕ РїСЂРёС€РµР» РїРѕР·Р¶Рµ, РєР°Рє СЏ, РґРѕР»Р¶РЅС‹ Р¶РґР°С‚СЊ, РїРѕРєР° РёРј РЅРµ РїРѕРЅР°РґРѕР±СЏС‚СЃСЏ РЅРѕРІС‹Рµ Р»СЋРґРё.
 };
 
 //-----------------------------------------
@@ -148,7 +148,7 @@ instance DIA_Addon_Miguel_WhereFrom (C_INFO)
 	condition   = DIA_Addon_Miguel_WhereFrom_Condition;
 	information = DIA_Addon_Miguel_WhereFrom_Info;
 	permanent   = FALSE;
-	description = "Откуда ты пришел?";
+	description = "РћС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»?";
 };
 FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 {	
@@ -160,10 +160,10 @@ FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_WhereFrom_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Откуда ты пришел?
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Ну, оттуда же, откуда и ты, я думаю. С пиратами. Через море.
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Мы находимся на острове. Здесь нет другой связи с материком.
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(задумчиво) Верно.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //РћС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»?
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //РќСѓ, РѕС‚С‚СѓРґР° Р¶Рµ, РѕС‚РєСѓРґР° Рё С‚С‹, СЏ РґСѓРјР°СЋ. РЎ РїРёСЂР°С‚Р°РјРё. Р§РµСЂРµР· РјРѕСЂРµ.
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //РњС‹ РЅР°С…РѕРґРёРјСЃСЏ РЅР° РѕСЃС‚СЂРѕРІРµ. Р—РґРµСЃСЊ РЅРµС‚ РґСЂСѓРіРѕР№ СЃРІСЏР·Рё СЃ РјР°С‚РµСЂРёРєРѕРј.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(Р·Р°РґСѓРјС‡РёРІРѕ) Р’РµСЂРЅРѕ.
 };
 
 //-----------------------------------------
@@ -176,7 +176,7 @@ instance DIA_Addon_Miguel_Angefordert (C_INFO)
 	condition   = DIA_Addon_Miguel_Angefordert_Condition;
 	information = DIA_Addon_Miguel_Angefordert_Info;
 	permanent   = FALSE;
-	description = "Когда им бывают нужны новые люди?";
+	description = "РљРѕРіРґР° РёРј Р±С‹РІР°СЋС‚ РЅСѓР¶РЅС‹ РЅРѕРІС‹Рµ Р»СЋРґРё?";
 };
 FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 {	
@@ -187,12 +187,12 @@ FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Angefordert_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //Когда им бывают нужны новые люди?
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Ну, когда они кого-нибудь теряют.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Если рудокопа съедает краулер, утраченного работника заменяют одним из нас.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //Иногда они и сами друг друга убивают. Но в последнее время с этим полегче.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Ворон каким-то образом установил контроль над шахтой, так чтобы все сразу не могли туда попасть.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Но я не знаю, что именно он сделал. Я никогда не был внутри.
+	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //РљРѕРіРґР° РёРј Р±С‹РІР°СЋС‚ РЅСѓР¶РЅС‹ РЅРѕРІС‹Рµ Р»СЋРґРё?
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //РќСѓ, РєРѕРіРґР° РѕРЅРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ С‚РµСЂСЏСЋС‚.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Р•СЃР»Рё СЂСѓРґРѕРєРѕРїР° СЃСЉРµРґР°РµС‚ РєСЂР°СѓР»РµСЂ, СѓС‚СЂР°С‡РµРЅРЅРѕРіРѕ СЂР°Р±РѕС‚РЅРёРєР° Р·Р°РјРµРЅСЏСЋС‚ РѕРґРЅРёРј РёР· РЅР°СЃ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //РРЅРѕРіРґР° РѕРЅРё Рё СЃР°РјРё РґСЂСѓРі РґСЂСѓРіР° СѓР±РёРІР°СЋС‚. РќРѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЃ СЌС‚РёРј РїРѕР»РµРіС‡Рµ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Р’РѕСЂРѕРЅ РєР°РєРёРј-С‚Рѕ РѕР±СЂР°Р·РѕРј СѓСЃС‚Р°РЅРѕРІРёР» РєРѕРЅС‚СЂРѕР»СЊ РЅР°Рґ С€Р°С…С‚РѕР№, С‚Р°Рє С‡С‚РѕР±С‹ РІСЃРµ СЃСЂР°Р·Сѓ РЅРµ РјРѕРіР»Рё С‚СѓРґР° РїРѕРїР°СЃС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //РќРѕ СЏ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ РёРјРµРЅРЅРѕ РѕРЅ СЃРґРµР»Р°Р». РЇ РЅРёРєРѕРіРґР° РЅРµ Р±С‹Р» РІРЅСѓС‚СЂРё.
 };
 
 //---------------------------------------------------------------------
@@ -205,7 +205,7 @@ INSTANCE DIA_Addon_Miguel_Fortuno   (C_INFO)
 	condition   = DIA_Addon_Miguel_Fortuno_Condition;
 	information = DIA_Addon_Miguel_Fortuno_Info;
 	permanent   = FALSE;
-	description = "Насчет Фортуно...";
+	description = "РќР°СЃС‡РµС‚ Р¤РѕСЂС‚СѓРЅРѕ...";
 };
 FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 {	
@@ -216,17 +216,17 @@ FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Fortuno_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//У Фортуно не все в порядке с головой, он мог бы выпить зелье и вернуть себе память.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Фортуно? Это слуга Ворона, да?
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//Он был им. Теперь он просто чурбан. И это ошибка Ворона.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Ворона? Хм, до сих пор я думал о нем лучше. М-м, ну ладно. Но здесь, в болоте, я не могу сварить зелье.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//Я могу сварить зелье. В лагере есть стол алхимика. Мне нужен только рецепт.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Будь осторожен с этим рецептом. Это зелье может быть опасно.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//РЈ Р¤РѕСЂС‚СѓРЅРѕ РЅРµ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ СЃ РіРѕР»РѕРІРѕР№, РѕРЅ РјРѕРі Р±С‹ РІС‹РїРёС‚СЊ Р·РµР»СЊРµ Рё РІРµСЂРЅСѓС‚СЊ СЃРµР±Рµ РїР°РјСЏС‚СЊ.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Р¤РѕСЂС‚СѓРЅРѕ? Р­С‚Рѕ СЃР»СѓРіР° Р’РѕСЂРѕРЅР°, РґР°?
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//РћРЅ Р±С‹Р» РёРј. РўРµРїРµСЂСЊ РѕРЅ РїСЂРѕСЃС‚Рѕ С‡СѓСЂР±Р°РЅ. Р СЌС‚Рѕ РѕС€РёР±РєР° Р’РѕСЂРѕРЅР°.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Р’РѕСЂРѕРЅР°? РҐРј, РґРѕ СЃРёС… РїРѕСЂ СЏ РґСѓРјР°Р» Рѕ РЅРµРј Р»СѓС‡С€Рµ. Рњ-Рј, РЅСѓ Р»Р°РґРЅРѕ. РќРѕ Р·РґРµСЃСЊ, РІ Р±РѕР»РѕС‚Рµ, СЏ РЅРµ РјРѕРіСѓ СЃРІР°СЂРёС‚СЊ Р·РµР»СЊРµ.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//РЇ РјРѕРіСѓ СЃРІР°СЂРёС‚СЊ Р·РµР»СЊРµ. Р’ Р»Р°РіРµСЂРµ РµСЃС‚СЊ СЃС‚РѕР» Р°Р»С…РёРјРёРєР°. РњРЅРµ РЅСѓР¶РµРЅ С‚РѕР»СЊРєРѕ СЂРµС†РµРїС‚.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ СЃ СЌС‚РёРј СЂРµС†РµРїС‚РѕРј. Р­С‚Рѕ Р·РµР»СЊРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ РѕРїР°СЃРЅРѕ.
 	B_GiveInvItems (self, other, ITWr_Addon_MCELIXIER_01,1);
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Если ты как-то не так его сваришь, или возьмешь не тот ингредиент, он может быть смертельным.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//Я буду осторожен.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Р•СЃР»Рё С‚С‹ РєР°Рє-С‚Рѕ РЅРµ С‚Р°Рє РµРіРѕ СЃРІР°СЂРёС€СЊ, РёР»Рё РІРѕР·СЊРјРµС€СЊ РЅРµ С‚РѕС‚ РёРЅРіСЂРµРґРёРµРЅС‚, РѕРЅ РјРѕР¶РµС‚ Р±С‹С‚СЊ СЃРјРµСЂС‚РµР»СЊРЅС‹Рј.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//РЇ Р±СѓРґСѓ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Мигель дал мне рецепт зелья, которое вернет Фортуно память. Но я должен быть уверен во всех ингредиентах, иначе у меня получится смертельный яд.");
+	B_LogEntry (Topic_Addon_Fortuno,"РњРёРіРµР»СЊ РґР°Р» РјРЅРµ СЂРµС†РµРїС‚ Р·РµР»СЊСЏ, РєРѕС‚РѕСЂРѕРµ РІРµСЂРЅРµС‚ Р¤РѕСЂС‚СѓРЅРѕ РїР°РјСЏС‚СЊ. РќРѕ СЏ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓРІРµСЂРµРЅ РІРѕ РІСЃРµС… РёРЅРіСЂРµРґРёРµРЅС‚Р°С…, РёРЅР°С‡Рµ Сѓ РјРµРЅСЏ РїРѕР»СѓС‡РёС‚СЃСЏ СЃРјРµСЂС‚РµР»СЊРЅС‹Р№ СЏРґ.");
 };
 
 //---------------------------------------------------------------------
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Miguel_BRAU   (C_INFO)
 	condition   = DIA_Addon_Miguel_BRAU_Condition;
 	information = DIA_Addon_Miguel_BRAU_Info;
 	permanent   = FALSE;
-	description = "Ты можешь научить меня кое-чему?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РєРѕРµ-С‡РµРјСѓ?";
 };
 FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 {	
@@ -250,12 +250,12 @@ FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_BRAU_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//Ты можешь научить меня кое-чему?
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//У меня нет времени. Мне нужно зарабатывать золото. И пока я не могу попасть в лагерь, я живу, продавая растения.
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Но если тебе нужны зелья, у меня пока еще есть несколько.
+	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РєРѕРµ-С‡РµРјСѓ?
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё. РњРЅРµ РЅСѓР¶РЅРѕ Р·Р°СЂР°Р±Р°С‚С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ. Р РїРѕРєР° СЏ РЅРµ РјРѕРіСѓ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ, СЏ Р¶РёРІСѓ, РїСЂРѕРґР°РІР°СЏ СЂР°СЃС‚РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//РќРѕ РµСЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅС‹ Р·РµР»СЊСЏ, Сѓ РјРµРЅСЏ РїРѕРєР° РµС‰Рµ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"У Мигеля я могу покупать зелья и травы.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"РЈ РњРёРіРµР»СЏ СЏ РјРѕРіСѓ РїРѕРєСѓРїР°С‚СЊ Р·РµР»СЊСЏ Рё С‚СЂР°РІС‹.");
 };
 
 //---------------------------------------------------------------------

@@ -2,7 +2,7 @@
 instance Mil_316_Wambo (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Вамбо";	
+	name 		= "Р’Р°РјР±Рѕ";	
 	guild 		= GIL_MIL;
 	id 			= 316;
 	voice 		= 3;

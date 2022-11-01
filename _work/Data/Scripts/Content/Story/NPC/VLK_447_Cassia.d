@@ -2,7 +2,7 @@
 instance VLK_447_Cassia (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Кассия"; 
+	name 		= "РљР°СЃСЃРёСЏ"; 
 	guild 		= GIL_OUT;
 	id 			= 447;
 	voice 		= 16;

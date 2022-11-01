@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_BDT_10015_Emilio_Hi   (C_INFO)
 	condition   = DIA_Addon_Emilio_Hi_Condition;
 	information = DIA_Addon_Emilio_Hi_Info;
 	permanent   = FALSE;
-	description	= "Ты выглядишь, как рудокоп.";
+	description	= "РўС‹ РІС‹РіР»СЏРґРёС€СЊ, РєР°Рє СЂСѓРґРѕРєРѕРї.";
 };
 FUNC INT DIA_Addon_Emilio_Hi_Condition()
 {	
@@ -71,8 +71,8 @@ FUNC INT DIA_Addon_Emilio_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Hi_15_00");//Ты выглядишь, как рудокоп.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Hi_10_01");//Я и есть рудокоп. Последний раз, когда я был в шахте, я устал как собака.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Hi_15_00");//РўС‹ РІС‹РіР»СЏРґРёС€СЊ, РєР°Рє СЂСѓРґРѕРєРѕРї.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Hi_10_01");//РЇ Рё РµСЃС‚СЊ СЂСѓРґРѕРєРѕРї. РџРѕСЃР»РµРґРЅРёР№ СЂР°Р·, РєРѕРіРґР° СЏ Р±С‹Р» РІ С€Р°С…С‚Рµ, СЏ СѓСЃС‚Р°Р» РєР°Рє СЃРѕР±Р°РєР°.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_BDT_10015_Emilio_Gold   (C_INFO)
 	condition   = DIA_Addon_Emilio_Gold_Condition;
 	information = DIA_Addon_Emilio_Gold_Info;
 	permanent   = FALSE;
-	description	= "Куда девается золото, которое вы добываете?";
+	description	= "РљСѓРґР° РґРµРІР°РµС‚СЃСЏ Р·РѕР»РѕС‚Рѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ РґРѕР±С‹РІР°РµС‚Рµ?";
 };
 FUNC INT DIA_Addon_Emilio_Gold_Condition()
 {	
@@ -104,10 +104,10 @@ FUNC INT DIA_Addon_Emilio_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Gold_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Gold_15_00");//Куда девается золото, которое вы добываете?
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_01");//Торус собирает его и распределяет. Никому не разрешается забирать себе то, что он нашел.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_02");//Каждый получает свою долю - таким образом, не обделены даже стражники и охотники.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_03");//Мне кажется, это хорошая система. С тех пор как ввели это правило, количество смертей уменьшилось, а рудокопы все равно получают больше, чем те, кто не работает в шахте.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Gold_15_00");//РљСѓРґР° РґРµРІР°РµС‚СЃСЏ Р·РѕР»РѕС‚Рѕ, РєРѕС‚РѕСЂРѕРµ РІС‹ РґРѕР±С‹РІР°РµС‚Рµ?
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_01");//РўРѕСЂСѓСЃ СЃРѕР±РёСЂР°РµС‚ РµРіРѕ Рё СЂР°СЃРїСЂРµРґРµР»СЏРµС‚. РќРёРєРѕРјСѓ РЅРµ СЂР°Р·СЂРµС€Р°РµС‚СЃСЏ Р·Р°Р±РёСЂР°С‚СЊ СЃРµР±Рµ С‚Рѕ, С‡С‚Рѕ РѕРЅ РЅР°С€РµР».
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_02");//РљР°Р¶РґС‹Р№ РїРѕР»СѓС‡Р°РµС‚ СЃРІРѕСЋ РґРѕР»СЋ - С‚Р°РєРёРј РѕР±СЂР°Р·РѕРј, РЅРµ РѕР±РґРµР»РµРЅС‹ РґР°Р¶Рµ СЃС‚СЂР°Р¶РЅРёРєРё Рё РѕС…РѕС‚РЅРёРєРё.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_03");//РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЌС‚Рѕ С…РѕСЂРѕС€Р°СЏ СЃРёСЃС‚РµРјР°. РЎ С‚РµС… РїРѕСЂ РєР°Рє РІРІРµР»Рё СЌС‚Рѕ РїСЂР°РІРёР»Рѕ, РєРѕР»РёС‡РµСЃС‚РІРѕ СЃРјРµСЂС‚РµР№ СѓРјРµРЅСЊС€РёР»РѕСЃСЊ, Р° СЂСѓРґРѕРєРѕРїС‹ РІСЃРµ СЂР°РІРЅРѕ РїРѕР»СѓС‡Р°СЋС‚ Р±РѕР»СЊС€Рµ, С‡РµРј С‚Рµ, РєС‚Рѕ РЅРµ СЂР°Р±РѕС‚Р°РµС‚ РІ С€Р°С…С‚Рµ.
 };
 //----------------------------------------------------------------------
 //	Info Stein
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_BDT_10015_Emilio_Stein   (C_INFO)
 	condition   = DIA_Addon_Emilio_Stein_Condition;
 	information = DIA_Addon_Emilio_Stein_Info;
 	permanent   = FALSE;
-	description	= "Что это за система с красными камнями?";
+	description	= "Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃРёСЃС‚РµРјР° СЃ РєСЂР°СЃРЅС‹РјРё РєР°РјРЅСЏРјРё?";
 };
 FUNC INT DIA_Addon_Emilio_Stein_Condition()
 {	
@@ -130,11 +130,11 @@ FUNC INT DIA_Addon_Emilio_Stein_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Stein_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Stein_15_00");//Что это за система с красными камнями?
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_01");//Это придумали Торус и Эстебан.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_02");//Торус заботится о распределении золота, а Эстебан организует работников для шахты.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_03");//Конечно, он не хочет бегать к Торусу каждый раз, когда кто-то идет в шахту.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_04");//Поэтому он и дает работникам одну из таких красных каменных плиток, и Торус тогда точно знает, кого пускать. Это как пропуск.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Stein_15_00");//Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃРёСЃС‚РµРјР° СЃ РєСЂР°СЃРЅС‹РјРё РєР°РјРЅСЏРјРё?
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_01");//Р­С‚Рѕ РїСЂРёРґСѓРјР°Р»Рё РўРѕСЂСѓСЃ Рё Р­СЃС‚РµР±Р°РЅ.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_02");//РўРѕСЂСѓСЃ Р·Р°Р±РѕС‚РёС‚СЃСЏ Рѕ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРё Р·РѕР»РѕС‚Р°, Р° Р­СЃС‚РµР±Р°РЅ РѕСЂРіР°РЅРёР·СѓРµС‚ СЂР°Р±РѕС‚РЅРёРєРѕРІ РґР»СЏ С€Р°С…С‚С‹.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_03");//РљРѕРЅРµС‡РЅРѕ, РѕРЅ РЅРµ С…РѕС‡РµС‚ Р±РµРіР°С‚СЊ Рє РўРѕСЂСѓСЃСѓ РєР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° РєС‚Рѕ-С‚Рѕ РёРґРµС‚ РІ С€Р°С…С‚Сѓ.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_04");//РџРѕСЌС‚РѕРјСѓ РѕРЅ Рё РґР°РµС‚ СЂР°Р±РѕС‚РЅРёРєР°Рј РѕРґРЅСѓ РёР· С‚Р°РєРёС… РєСЂР°СЃРЅС‹С… РєР°РјРµРЅРЅС‹С… РїР»РёС‚РѕРє, Рё РўРѕСЂСѓСЃ С‚РѕРіРґР° С‚РѕС‡РЅРѕ Р·РЅР°РµС‚, РєРѕРіРѕ РїСѓСЃРєР°С‚СЊ. Р­С‚Рѕ РєР°Рє РїСЂРѕРїСѓСЃРє.
 };
 //---------------------------------------------------------------------
 //	Info Attentat 
@@ -148,7 +148,7 @@ INSTANCE DIA_Addon_Emilio_Attentat   (C_INFO)
 	condition   = DIA_Addon_Emilio_Attentat_Condition;
 	information = DIA_Addon_Emilio_Attentat_Info;
 	permanent   = TRUE;
-	description	= "Что тебе известно о нападении?";
+	description	= "Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ РЅР°РїР°РґРµРЅРёРё?";
 };
 FUNC INT DIA_Addon_Emilio_Attentat_Condition()
 {	
@@ -168,15 +168,15 @@ FUNC INT DIA_Addon_Emilio_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Emilio_Attentat_15_00"); //Что тебе известно о нападении?
+	AI_Output (other, self, "DIA_Addon_Emilio_Attentat_15_00"); //Р§С‚Рѕ С‚РµР±Рµ РёР·РІРµСЃС‚РЅРѕ Рѕ РЅР°РїР°РґРµРЅРёРё?
 	if (Emilio_Switch == 0)
 	{
-		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_01"); //(испуганно) Эй, приятель, я не хочу ничего об этом знать!
+		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р­Р№, РїСЂРёСЏС‚РµР»СЊ, СЏ РЅРµ С…РѕС‡Сѓ РЅРёС‡РµРіРѕ РѕР± СЌС‚РѕРј Р·РЅР°С‚СЊ!
 		Emilio_Switch = 1;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_02"); //(испуганно) ВООБЩЕ НИЧЕГО!
+		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_02"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р’РћРћР‘Р©Р• РќРР§Р•Р“Рћ!
 		Emilio_Switch = 0;
 	};
 };
@@ -204,19 +204,19 @@ FUNC VOID DIA_Addon_Emilio_Senyan_Info()
 {	
 	if (Senyan_Called == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_00");//(пытливо) Скажи мне, ПОЧЕМУ Сеньян закричал: 'Посмотрите, кто пришел'?
-		AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_01");//(сухо) Невыплаченные долги.
+		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_00");//(РїС‹С‚Р»РёРІРѕ) РЎРєР°Р¶Рё РјРЅРµ, РџРћР§Р•РњРЈ РЎРµРЅСЊСЏРЅ Р·Р°РєСЂРёС‡Р°Р»: 'РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ РїСЂРёС€РµР»'?
+		AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_01");//(СЃСѓС…Рѕ) РќРµРІС‹РїР»Р°С‡РµРЅРЅС‹Рµ РґРѕР»РіРё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_02"); //Ты убил Сеньяна!
+		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_02"); //РўС‹ СѓР±РёР» РЎРµРЅСЊСЏРЅР°!
 	};
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_03");//А что? Какие-то проблемы?
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_04");//(быстро) Нет, приятель, у меня к тебе по этому поводу никаких претензий.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_05");//Даже наоборот. (фальшиво) Этот ублюдок работал на Эстебана.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_03");//Рђ С‡С‚Рѕ? РљР°РєРёРµ-С‚Рѕ РїСЂРѕР±Р»РµРјС‹?
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_04");//(Р±С‹СЃС‚СЂРѕ) РќРµС‚, РїСЂРёСЏС‚РµР»СЊ, Сѓ РјРµРЅСЏ Рє С‚РµР±Рµ РїРѕ СЌС‚РѕРјСѓ РїРѕРІРѕРґСѓ РЅРёРєР°РєРёС… РїСЂРµС‚РµРЅР·РёР№.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_05");//Р”Р°Р¶Рµ РЅР°РѕР±РѕСЂРѕС‚. (С„Р°Р»СЊС€РёРІРѕ) Р­С‚РѕС‚ СѓР±Р»СЋРґРѕРє СЂР°Р±РѕС‚Р°Р» РЅР° Р­СЃС‚РµР±Р°РЅР°.
 	
 	Senyan_CONTRA = LOG_SUCCESS;
-	B_LogEntry (Topic_Addon_Esteban, "Эмилио не на стороне Эстебана.");
+	B_LogEntry (Topic_Addon_Esteban, "Р­РјРёР»РёРѕ РЅРµ РЅР° СЃС‚РѕСЂРѕРЅРµ Р­СЃС‚РµР±Р°РЅР°.");
 };
 
 //----------------------------------------------------------------------
@@ -229,7 +229,7 @@ INSTANCE DIA_Addon_Emilio_Jetzt   (C_INFO)
 	condition   = DIA_Addon_Emilio_Jetzt_Condition;
 	information = DIA_Addon_Emilio_Jetzt_Info;
 	permanent   = FALSE;
-	description	= "Почему ты сейчас не в шахте?";
+	description	= "РџРѕС‡РµРјСѓ С‚С‹ СЃРµР№С‡Р°СЃ РЅРµ РІ С€Р°С…С‚Рµ?";
 };
 FUNC INT DIA_Addon_Emilio_Jetzt_Condition()
 {	
@@ -240,9 +240,9 @@ FUNC INT DIA_Addon_Emilio_Jetzt_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Jetzt_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_Jetzt_15_00"); //Почему ты сейчас не в шахте?
-	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_01"); //(слегка неуверенно) Я был там достаточно долго и вкалывал, пока не стал валиться с ног от усталости. Теперь мне надо отдохнуть несколько дней.
-	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_02"); //(вздыхая, слегка неуверенно) Прежде, чем я получу следующий красный камень.
+	AI_Output (other, self, "DIA_Addon_Emilio_Jetzt_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ СЃРµР№С‡Р°СЃ РЅРµ РІ С€Р°С…С‚Рµ?
+	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_01"); //(СЃР»РµРіРєР° РЅРµСѓРІРµСЂРµРЅРЅРѕ) РЇ Р±С‹Р» С‚Р°Рј РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РґРѕР»РіРѕ Рё РІРєР°Р»С‹РІР°Р», РїРѕРєР° РЅРµ СЃС‚Р°Р» РІР°Р»РёС‚СЊСЃСЏ СЃ РЅРѕРі РѕС‚ СѓСЃС‚Р°Р»РѕСЃС‚Рё. РўРµРїРµСЂСЊ РјРЅРµ РЅР°РґРѕ РѕС‚РґРѕС…РЅСѓС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№.
+	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_02"); //(РІР·РґС‹С…Р°СЏ, СЃР»РµРіРєР° РЅРµСѓРІРµСЂРµРЅРЅРѕ) РџСЂРµР¶РґРµ, С‡РµРј СЏ РїРѕР»СѓС‡Сѓ СЃР»РµРґСѓСЋС‰РёР№ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ.
 };
 
 //----------------------------------------------------------------------
@@ -255,7 +255,7 @@ INSTANCE DIA_Addon_Emilio_VonEmilio (C_INFO)
 	condition   = DIA_Addon_Emilio_VonEmilio_Condition;
 	information = DIA_Addon_Emilio_VonEmilio_Info;
 	permanent   = FALSE;
-	description	= "Леннар рассказывал мне о тебе...";
+	description	= "Р›РµРЅРЅР°СЂ СЂР°СЃСЃРєР°Р·С‹РІР°Р» РјРЅРµ Рѕ С‚РµР±Рµ...";
 };
 FUNC INT DIA_Addon_Emilio_VonEmilio_Condition()
 {	
@@ -267,20 +267,20 @@ FUNC INT DIA_Addon_Emilio_VonEmilio_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_VonEmilio_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_00"); //Леннар рассказывал мне о тебе...
-	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_01"); //Леннар? Этот парень - идиот. Ты, наверное, заметил.
-	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_02"); //Он сказал, что ты не был в шахте с тех пор, как произошло нападение.
-	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_03"); //(испуганно) Я... ничего не знаю!
+	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_00"); //Р›РµРЅРЅР°СЂ СЂР°СЃСЃРєР°Р·С‹РІР°Р» РјРЅРµ Рѕ С‚РµР±Рµ...
+	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_01"); //Р›РµРЅРЅР°СЂ? Р­С‚РѕС‚ РїР°СЂРµРЅСЊ - РёРґРёРѕС‚. РўС‹, РЅР°РІРµСЂРЅРѕРµ, Р·Р°РјРµС‚РёР».
+	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_02"); //РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ РЅРµ Р±С‹Р» РІ С€Р°С…С‚Рµ СЃ С‚РµС… РїРѕСЂ, РєР°Рє РїСЂРѕРёР·РѕС€Р»Рѕ РЅР°РїР°РґРµРЅРёРµ.
+	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_03"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РЇ... РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ!
 	
 	if (!Npc_IsDead (Senyan))
 	{	
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_04"); //Ты работаешь вместе с Сеньяном!
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_05"); //И вы оба в сговоре с Эстебаном! Я в точности слышал, о чем вы там болтали!
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_06"); //Пока что Эстебан ничем не помог нам. Почему я должен верить его людям?
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_07"); //Оставь меня в покое!
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_04"); //РўС‹ СЂР°Р±РѕС‚Р°РµС€СЊ РІРјРµСЃС‚Рµ СЃ РЎРµРЅСЊСЏРЅРѕРј!
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_05"); //Р РІС‹ РѕР±Р° РІ СЃРіРѕРІРѕСЂРµ СЃ Р­СЃС‚РµР±Р°РЅРѕРј! РЇ РІ С‚РѕС‡РЅРѕСЃС‚Рё СЃР»С‹С€Р°Р», Рѕ С‡РµРј РІС‹ С‚Р°Рј Р±РѕР»С‚Р°Р»Рё!
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_06"); //РџРѕРєР° С‡С‚Рѕ Р­СЃС‚РµР±Р°РЅ РЅРёС‡РµРј РЅРµ РїРѕРјРѕРі РЅР°Рј. РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РІРµСЂРёС‚СЊ РµРіРѕ Р»СЋРґСЏРј?
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_07"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 		AI_StopProcessInfos(self);
 	};
-	B_LogEntry (Topic_Addon_Esteban, "Эмилио думает, что Леннар - идиот.");
+	B_LogEntry (Topic_Addon_Esteban, "Р­РјРёР»РёРѕ РґСѓРјР°РµС‚, С‡С‚Рѕ Р›РµРЅРЅР°СЂ - РёРґРёРѕС‚.");
 };
 //----------------------------------------------------------------------
 //	Info Hilf Mir
@@ -292,7 +292,7 @@ INSTANCE DIA_Addon_Emilio_HilfMir (C_INFO)
 	condition   = DIA_Addon_Emilio_HilfMir_Condition;
 	information = DIA_Addon_Emilio_HilfMir_Info;
 	permanent   = FALSE;
-	description	= "Помоги мне выяснить, кто организовал нападение!";
+	description	= "РџРѕРјРѕРіРё РјРЅРµ РІС‹СЏСЃРЅРёС‚СЊ, РєС‚Рѕ РѕСЂРіР°РЅРёР·РѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ!";
 };
 FUNC INT DIA_Addon_Emilio_HilfMir_Condition()
 {	
@@ -304,15 +304,15 @@ FUNC INT DIA_Addon_Emilio_HilfMir_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_HilfMir_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_00"); //Помоги мне выяснить, кто организовал нападение!
-	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_01"); //Нет! Я не хочу в это ввязываться!
-	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_02"); //Если даже такой идиот, как Леннар, заметил, что ты ведешь себя странно, вряд ли пройдет много времени, прежде чем это заметит Эстебан.
-	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_03"); //(неловко) Я... черт! Я скажу тебе одно имя. И больше ничего.
-	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_04"); //Слушаю.
-	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_05"); //Хуно... поговори с Хуно. Он должен что-то знать об этом деле.
+	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_00"); //РџРѕРјРѕРіРё РјРЅРµ РІС‹СЏСЃРЅРёС‚СЊ, РєС‚Рѕ РѕСЂРіР°РЅРёР·РѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ!
+	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_01"); //РќРµС‚! РЇ РЅРµ С…РѕС‡Сѓ РІ СЌС‚Рѕ РІРІСЏР·С‹РІР°С‚СЊСЃСЏ!
+	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_02"); //Р•СЃР»Рё РґР°Р¶Рµ С‚Р°РєРѕР№ РёРґРёРѕС‚, РєР°Рє Р›РµРЅРЅР°СЂ, Р·Р°РјРµС‚РёР», С‡С‚Рѕ С‚С‹ РІРµРґРµС€СЊ СЃРµР±СЏ СЃС‚СЂР°РЅРЅРѕ, РІСЂСЏРґ Р»Рё РїСЂРѕР№РґРµС‚ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё, РїСЂРµР¶РґРµ С‡РµРј СЌС‚Рѕ Р·Р°РјРµС‚РёС‚ Р­СЃС‚РµР±Р°РЅ.
+	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_03"); //(РЅРµР»РѕРІРєРѕ) РЇ... С‡РµСЂС‚! РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ РѕРґРЅРѕ РёРјСЏ. Р Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ.
+	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_04"); //РЎР»СѓС€Р°СЋ.
+	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_05"); //РҐСѓРЅРѕ... РїРѕРіРѕРІРѕСЂРё СЃ РҐСѓРЅРѕ. РћРЅ РґРѕР»Р¶РµРЅ С‡С‚Рѕ-С‚Рѕ Р·РЅР°С‚СЊ РѕР± СЌС‚РѕРј РґРµР»Рµ.
 	Emilio_TellAll = TRUE;
 	
-	B_LogEntry (Topic_Addon_Esteban, "Эмилио наконец назвал имя: Хуно.");
+	B_LogEntry (Topic_Addon_Esteban, "Р­РјРёР»РёРѕ РЅР°РєРѕРЅРµС† РЅР°Р·РІР°Р» РёРјСЏ: РҐСѓРЅРѕ.");
 };
 
 //----------------------------------------------------------------------
@@ -325,7 +325,7 @@ INSTANCE DIA_Addon_Emilio_GegenEsteban (C_INFO)
 	condition   = DIA_Addon_Emilio_GegenEsteban_Condition;
 	information = DIA_Addon_Emilio_GegenEsteban_Info;
 	permanent   = FALSE;
-	description	= "Что ты имеешь против Эстебана?";
+	description	= "Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РїСЂРѕС‚РёРІ Р­СЃС‚РµР±Р°РЅР°?";
 };
 FUNC INT DIA_Addon_Emilio_GegenEsteban_Condition()
 {	
@@ -336,12 +336,12 @@ FUNC INT DIA_Addon_Emilio_GegenEsteban_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_GegenEsteban_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_GegenEsteban_15_00"); //Что ты имеешь против Эстебана?
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_01"); //Все, о чем эта свинья думает, - это деньги.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_02"); //Каждые несколько дней одного из нас съедает краулер.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_03"); //Но Эстебан даже и не думает послать в шахту несколько бойцов.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_04"); //А все почему? Потому что эти ребята из личной гвардии Ворона и Эстебан до дрожи в коленках боится говорить с ними.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_05"); //Ему проще дать нам всем подохнуть!
+	AI_Output (other, self, "DIA_Addon_Emilio_GegenEsteban_15_00"); //Р§С‚Рѕ С‚С‹ РёРјРµРµС€СЊ РїСЂРѕС‚РёРІ Р­СЃС‚РµР±Р°РЅР°?
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_01"); //Р’СЃРµ, Рѕ С‡РµРј СЌС‚Р° СЃРІРёРЅСЊСЏ РґСѓРјР°РµС‚, - СЌС‚Рѕ РґРµРЅСЊРіРё.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_02"); //РљР°Р¶РґС‹Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РѕРґРЅРѕРіРѕ РёР· РЅР°СЃ СЃСЉРµРґР°РµС‚ РєСЂР°СѓР»РµСЂ.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_03"); //РќРѕ Р­СЃС‚РµР±Р°РЅ РґР°Р¶Рµ Рё РЅРµ РґСѓРјР°РµС‚ РїРѕСЃР»Р°С‚СЊ РІ С€Р°С…С‚Сѓ РЅРµСЃРєРѕР»СЊРєРѕ Р±РѕР№С†РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_04"); //Рђ РІСЃРµ РїРѕС‡РµРјСѓ? РџРѕС‚РѕРјСѓ С‡С‚Рѕ СЌС‚Рё СЂРµР±СЏС‚Р° РёР· Р»РёС‡РЅРѕР№ РіРІР°СЂРґРёРё Р’РѕСЂРѕРЅР° Рё Р­СЃС‚РµР±Р°РЅ РґРѕ РґСЂРѕР¶Рё РІ РєРѕР»РµРЅРєР°С… Р±РѕРёС‚СЃСЏ РіРѕРІРѕСЂРёС‚СЊ СЃ РЅРёРјРё.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_05"); //Р•РјСѓ РїСЂРѕС‰Рµ РґР°С‚СЊ РЅР°Рј РІСЃРµРј РїРѕРґРѕС…РЅСѓС‚СЊ!
 };
 
 //----------------------------------------------------------------------
@@ -370,7 +370,7 @@ FUNC VOID DIA_Addon_Emilio_Mine_Info()
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
 	
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Mine_10_00");//Значит, ты теперь главный. Ладно, тогда я пошел.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Mine_10_00");//Р—РЅР°С‡РёС‚, С‚С‹ С‚РµРїРµСЂСЊ РіР»Р°РІРЅС‹Р№. Р›Р°РґРЅРѕ, С‚РѕРіРґР° СЏ РїРѕС€РµР».
 	
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -390,7 +390,7 @@ INSTANCE DIA_Addon_Emilio_Hacker   (C_INFO)
 	condition   = DIA_Addon_Emilio_Hacker_Condition;
 	information = DIA_Addon_Emilio_Hacker_Info;
 	permanent   = TRUE;
-	Description = "Как дела?"; 
+	Description = "РљР°Рє РґРµР»Р°?"; 
 };
 FUNC INT DIA_Addon_Emilio_Hacker_Condition()
 {	
@@ -401,8 +401,8 @@ FUNC INT DIA_Addon_Emilio_Hacker_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Hacker_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Emilio_Hacker_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Emilio_Hacker_10_01"); //Я просто валюсь с ног.
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Emilio_Hacker_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Emilio_Hacker_10_01"); //РЇ РїСЂРѕСЃС‚Рѕ РІР°Р»СЋСЃСЊ СЃ РЅРѕРі.
 };
 
 

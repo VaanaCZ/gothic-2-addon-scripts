@@ -49,32 +49,32 @@ FUNC INT DIA_Sentenza_Hello_Condition()
  
 FUNC VOID DIA_Sentenza_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sentenza_Hello_09_00");	//И куда это ты собрался?!
+	AI_Output (self ,other,"DIA_Sentenza_Hello_09_00");	//Р РєСѓРґР° СЌС‚Рѕ С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ?!
 	
 	self.aivar[AIV_LastFightComment] = TRUE;
 	Sentenza_SearchDay = B_GetDayPlus();
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "А какое тебе до этого дело?" 			,DIA_Sentenza_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Я просто прогуливаюсь. Вот и все."	,DIA_Sentenza_Hello_JustLooking);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Рђ РєР°РєРѕРµ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ?" 			,DIA_Sentenza_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Sentenza_Hello, "РЇ РїСЂРѕСЃС‚Рѕ РїСЂРѕРіСѓР»РёРІР°СЋСЃСЊ. Р’РѕС‚ Рё РІСЃРµ."	,DIA_Sentenza_Hello_JustLooking);
 };
 
 func void DIA_Sentenza_Hello_JustLooking()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_JustLooking_15_00"); //Я просто прогуливаюсь. Вот и все.
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_01"); //(смеется) Таких как ты, здесь ожидают большие проблемы! Это ты мне заявляешь, что просто прогуливаешься?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_02"); //Ха! Ты идешь на двор! Зачем еще тебе нужно было бы проделывать столь долгий путь?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_03"); //Так что прекращай нести эту чушь. Сейчас я обыщу тебя, и можешь топать дальше.
+	AI_Output (other, self,"DIA_Sentenza_Hello_JustLooking_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ РїСЂРѕРіСѓР»РёРІР°СЋСЃСЊ. Р’РѕС‚ Рё РІСЃРµ.
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_01"); //(СЃРјРµРµС‚СЃСЏ) РўР°РєРёС… РєР°Рє С‚С‹, Р·РґРµСЃСЊ РѕР¶РёРґР°СЋС‚ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹! Р­С‚Рѕ С‚С‹ РјРЅРµ Р·Р°СЏРІР»СЏРµС€СЊ, С‡С‚Рѕ РїСЂРѕСЃС‚Рѕ РїСЂРѕРіСѓР»РёРІР°РµС€СЊСЃСЏ?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_02"); //РҐР°! РўС‹ РёРґРµС€СЊ РЅР° РґРІРѕСЂ! Р—Р°С‡РµРј РµС‰Рµ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РїСЂРѕРґРµР»С‹РІР°С‚СЊ СЃС‚РѕР»СЊ РґРѕР»РіРёР№ РїСѓС‚СЊ?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_03"); //РўР°Рє С‡С‚Рѕ РїСЂРµРєСЂР°С‰Р°Р№ РЅРµСЃС‚Рё СЌС‚Сѓ С‡СѓС€СЊ. РЎРµР№С‡Р°СЃ СЏ РѕР±С‹С‰Сѓ С‚РµР±СЏ, Рё РјРѕР¶РµС€СЊ С‚РѕРїР°С‚СЊ РґР°Р»СЊС€Рµ.
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Не распускай руки!"				,DIA_Sentenza_Hello_HandsOff);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Как хочешь. Можешь обыскать меня!" 			,DIA_Sentenza_Hello_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Hello, "РќРµ СЂР°СЃРїСѓСЃРєР°Р№ СЂСѓРєРё!"				,DIA_Sentenza_Hello_HandsOff);
+	Info_AddChoice		(DIA_Sentenza_Hello, "РљР°Рє С…РѕС‡РµС€СЊ. РњРѕР¶РµС€СЊ РѕР±С‹СЃРєР°С‚СЊ РјРµРЅСЏ!" 			,DIA_Sentenza_Hello_SearchMe);
 };
 
 func void DIA_Sentenza_Hello_NotYourBusiness()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_NotYourBusiness_15_00"); //А какое тебе до этого дело?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_NotYourBusiness_09_01"); //(вздыхает) Значит, мне придется объяснить тебе это в деталях.
+	AI_Output (other, self,"DIA_Sentenza_Hello_NotYourBusiness_15_00"); //Рђ РєР°РєРѕРµ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_NotYourBusiness_09_01"); //(РІР·РґС‹С…Р°РµС‚) Р—РЅР°С‡РёС‚, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РѕР±СЉСЏСЃРЅРёС‚СЊ С‚РµР±Рµ СЌС‚Рѕ РІ РґРµС‚Р°Р»СЏС….
 	
 	AI_StopProcessInfos (self);
 	
@@ -85,32 +85,32 @@ func void DIA_Sentenza_Hello_NotYourBusiness()
 	{
 		var int playerGold; playerGold = Npc_HasItems(other, ItMi_Gold);
 		
-		AI_Output (other, self,"DIA_Sentenza_Hello_SearchMe_15_00"); //Как хочешь. Можешь обыскать меня!
-		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_01"); //Так, посмотрим, что у нас здесь есть...
+		AI_Output (other, self,"DIA_Sentenza_Hello_SearchMe_15_00"); //РљР°Рє С…РѕС‡РµС€СЊ. РњРѕР¶РµС€СЊ РѕР±С‹СЃРєР°С‚СЊ РјРµРЅСЏ!
+		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_01"); //РўР°Рє, РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ РµСЃС‚СЊ...
 		
 		if (playerGold >= 50)
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_02"); //Ах! Золото! Очень опасно носить с собой такое количество золота.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_03"); //Многие из наемников настоящие головорезы. А не такие честные парни, как я.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_02"); //РђС…! Р—РѕР»РѕС‚Рѕ! РћС‡РµРЅСЊ РѕРїР°СЃРЅРѕ РЅРѕСЃРёС‚СЊ СЃ СЃРѕР±РѕР№ С‚Р°РєРѕРµ РєРѕР»РёС‡РµСЃС‚РІРѕ Р·РѕР»РѕС‚Р°.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_03"); //РњРЅРѕРіРёРµ РёР· РЅР°РµРјРЅРёРєРѕРІ РЅР°СЃС‚РѕСЏС‰РёРµ РіРѕР»РѕРІРѕСЂРµР·С‹. Рђ РЅРµ С‚Р°РєРёРµ С‡РµСЃС‚РЅС‹Рµ РїР°СЂРЅРё, РєР°Рє СЏ.
 			B_GiveInvItems (other, self, ItMi_Gold, 50);
 			Sentenza_GoldTaken = TRUE;
 		}
 		else if (playerGold > 0)
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_04"); //Да-а... У тебя не так уж много с собой.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_05"); //Я вернусь к тебе позже.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_04"); //Р”Р°-Р°... РЈ С‚РµР±СЏ РЅРµ С‚Р°Рє СѓР¶ РјРЅРѕРіРѕ СЃ СЃРѕР±РѕР№.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_05"); //РЇ РІРµСЂРЅСѓСЃСЊ Рє С‚РµР±Рµ РїРѕР·Р¶Рµ.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_06"); //У тебя нет с собой золота?
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_07"); //Не похоже, что ты голодаешь. Ты, должно быть, припрятал золотишко где-то, правильно?
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_08"); //Да ты не дурак. Я уверен, что мы еще встретимся. Береги себя.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_09"); //Ты, вероятно, единственный, кто знает, где все твое золото!
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_06"); //РЈ С‚РµР±СЏ РЅРµС‚ СЃ СЃРѕР±РѕР№ Р·РѕР»РѕС‚Р°?
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_07"); //РќРµ РїРѕС…РѕР¶Рµ, С‡С‚Рѕ С‚С‹ РіРѕР»РѕРґР°РµС€СЊ. РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РїСЂРёРїСЂСЏС‚Р°Р» Р·РѕР»РѕС‚РёС€РєРѕ РіРґРµ-С‚Рѕ, РїСЂР°РІРёР»СЊРЅРѕ?
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_08"); //Р”Р° С‚С‹ РЅРµ РґСѓСЂР°Рє. РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РјС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ. Р‘РµСЂРµРіРё СЃРµР±СЏ.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_09"); //РўС‹, РІРµСЂРѕСЏС‚РЅРѕ, РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ Р·РЅР°РµС‚, РіРґРµ РІСЃРµ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ!
 		};
 		
 		Sentenza_Wants50 = TRUE;
 
-		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_10"); //Я хочу получить с тебя всего 50 золотых - это стандартный сбор. Ты должен заплатить его всего один раз. Это ведь честно, правда?
+		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_10"); //РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃ С‚РµР±СЏ РІСЃРµРіРѕ 50 Р·РѕР»РѕС‚С‹С… - СЌС‚Рѕ СЃС‚Р°РЅРґР°СЂС‚РЅС‹Р№ СЃР±РѕСЂ. РўС‹ РґРѕР»Р¶РµРЅ Р·Р°РїР»Р°С‚РёС‚СЊ РµРіРѕ РІСЃРµРіРѕ РѕРґРёРЅ СЂР°Р·. Р­С‚Рѕ РІРµРґСЊ С‡РµСЃС‚РЅРѕ, РїСЂР°РІРґР°?
 	};
 
 func void DIA_Sentenza_Hello_SearchMe()
@@ -121,18 +121,18 @@ func void DIA_Sentenza_Hello_SearchMe()
 
 func void DIA_Sentenza_Hello_HandsOff()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_HandsOff_15_00"); //Не распускай руки!
-	AI_Output (self ,other,"DIA_Sentenza_Hello_HandsOff_09_01"); //(угрожающе) А то что?
+	AI_Output (other, self,"DIA_Sentenza_Hello_HandsOff_15_00"); //РќРµ СЂР°СЃРїСѓСЃРєР°Р№ СЂСѓРєРё!
+	AI_Output (self ,other,"DIA_Sentenza_Hello_HandsOff_09_01"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Рђ С‚Рѕ С‡С‚Рѕ?
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Или ничего. Обыщи меня!"						,DIA_Sentenza_Hello_SearchMe);
-	Info_AddChoice		(DIA_Sentenza_Hello, "А то ты долго не сможешь никого обыскивать!"	,DIA_Sentenza_Hello_OrElse);
+	Info_AddChoice		(DIA_Sentenza_Hello, "РР»Рё РЅРёС‡РµРіРѕ. РћР±С‹С‰Рё РјРµРЅСЏ!"						,DIA_Sentenza_Hello_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Рђ С‚Рѕ С‚С‹ РґРѕР»РіРѕ РЅРµ СЃРјРѕР¶РµС€СЊ РЅРёРєРѕРіРѕ РѕР±С‹СЃРєРёРІР°С‚СЊ!"	,DIA_Sentenza_Hello_OrElse);
 };
 
 func void DIA_Sentenza_Hello_OrElse()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_OrElse_15_00"); //А то ты долго не сможешь никого обыскивать!
-	AI_Output (self ,other,"DIA_Sentenza_Hello_OrElse_09_01"); //Ну, это мы посмотрим!
+	AI_Output (other, self,"DIA_Sentenza_Hello_OrElse_15_00"); //Рђ С‚Рѕ С‚С‹ РґРѕР»РіРѕ РЅРµ СЃРјРѕР¶РµС€СЊ РЅРёРєРѕРіРѕ РѕР±С‹СЃРєРёРІР°С‚СЊ!
+	AI_Output (self ,other,"DIA_Sentenza_Hello_OrElse_09_01"); //РќСѓ, СЌС‚Рѕ РјС‹ РїРѕСЃРјРѕС‚СЂРёРј!
 	
 	AI_StopProcessInfos (self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -165,17 +165,17 @@ FUNC INT DIA_Sentenza_Vzwei_Condition()
 
 FUNC VOID DIA_Sentenza_Vzwei_Info()
 {	
-	AI_Output (self ,other,"DIA_Sentenza_Vzwei_09_00");	//Опять ты! Давай посмотрим, что у тебя есть на этот раз!
+	AI_Output (self ,other,"DIA_Sentenza_Vzwei_09_00");	//РћРїСЏС‚СЊ С‚С‹! Р”Р°РІР°Р№ РїРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РЅР° СЌС‚РѕС‚ СЂР°Р·!
 
 	self.aivar[AIV_LastFightComment] = TRUE;
 	Sentenza_SearchDay = B_GetDayPlus();
 	
 	Info_ClearChoices	(DIA_Sentenza_Vzwei);
-	Info_AddChoice		(DIA_Sentenza_Vzwei, "Убери от меня свои грязные руки!"		,DIA_Sentenza_Vzwei_HandsOff);
+	Info_AddChoice		(DIA_Sentenza_Vzwei, "РЈР±РµСЂРё РѕС‚ РјРµРЅСЏ СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!"		,DIA_Sentenza_Vzwei_HandsOff);
 	
 	
 	
-	Info_AddChoice		(DIA_Sentenza_Vzwei, "Как хочешь. Можешь обыскать меня!" 	,DIA_Sentenza_Vzwei_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Vzwei, "РљР°Рє С…РѕС‡РµС€СЊ. РњРѕР¶РµС€СЊ РѕР±С‹СЃРєР°С‚СЊ РјРµРЅСЏ!" 	,DIA_Sentenza_Vzwei_SearchMe);
 };
 
 func void DIA_Sentenza_Vzwei_SearchMe()
@@ -187,8 +187,8 @@ func void DIA_Sentenza_Vzwei_SearchMe()
 
 func void DIA_Sentenza_Vzwei_HandsOff()
 {
-	AI_Output (other, self,"DIA_Sentenza_Vzwei_HandsOff_15_00"); //Убери от меня свои грязные руки!
-	AI_Output (self ,other,"DIA_Sentenza_Vzwei_HandsOff_09_01"); //(угрожающе) Да? Похоже, у тебя с собой сейчас побольше золотишка!
+	AI_Output (other, self,"DIA_Sentenza_Vzwei_HandsOff_15_00"); //РЈР±РµСЂРё РѕС‚ РјРµРЅСЏ СЃРІРѕРё РіСЂСЏР·РЅС‹Рµ СЂСѓРєРё!
+	AI_Output (self ,other,"DIA_Sentenza_Vzwei_HandsOff_09_01"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р”Р°? РџРѕС…РѕР¶Рµ, Сѓ С‚РµР±СЏ СЃ СЃРѕР±РѕР№ СЃРµР№С‡Р°СЃ РїРѕР±РѕР»СЊС€Рµ Р·РѕР»РѕС‚РёС€РєР°!
 	
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -205,7 +205,7 @@ INSTANCE DIA_Sentenza_WannaJoin (C_INFO)
 	condition	= DIA_Sentenza_WannaJoin_Condition;
 	information	= DIA_Sentenza_WannaJoin_Info;
 	permanent	= FALSE;
-	description	= "Я пришел, чтобы присоединиться к вам!";
+	description	= "РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј!";
 };                       
 
 FUNC INT DIA_Sentenza_WannaJoin_Condition()
@@ -218,9 +218,9 @@ FUNC INT DIA_Sentenza_WannaJoin_Condition()
 
 FUNC VOID DIA_Sentenza_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_WannaJoin_15_00"); //Я пришел, чтобы присоединиться к вам!
-	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_01"); //Похвальное желание.
-	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_02"); //(вскользь) А ты знаешь, что наемники будут голосовать - принять тебя или нет?
+	AI_Output (other, self, "DIA_Sentenza_WannaJoin_15_00"); //РЇ РїСЂРёС€РµР», С‡С‚РѕР±С‹ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РІР°Рј!
+	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_01"); //РџРѕС…РІР°Р»СЊРЅРѕРµ Р¶РµР»Р°РЅРёРµ.
+	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_02"); //(РІСЃРєРѕР»СЊР·СЊ) Рђ С‚С‹ Р·РЅР°РµС€СЊ, С‡С‚Рѕ РЅР°РµРјРЅРёРєРё Р±СѓРґСѓС‚ РіРѕР»РѕСЃРѕРІР°С‚СЊ - РїСЂРёРЅСЏС‚СЊ С‚РµР±СЏ РёР»Рё РЅРµС‚?
 };
 
 // ************************************************************
@@ -234,7 +234,7 @@ INSTANCE DIA_Sentenza_Vote (C_INFO)
 	condition	= DIA_Sentenza_Vote_Condition;
 	information	= DIA_Sentenza_Vote_Info;
 	permanent	= TRUE;
-	description	= "Ты проголосуешь за меня?";
+	description	= "РўС‹ РїСЂРѕРіРѕР»РѕСЃСѓРµС€СЊ Р·Р° РјРµРЅСЏ?";
 };                       
 
 FUNC INT DIA_Sentenza_Vote_Condition()
@@ -248,30 +248,30 @@ FUNC INT DIA_Sentenza_Vote_Condition()
 
 FUNC VOID DIA_Sentenza_Vote_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_Vote_15_00"); //Ты проголосуешь за меня?
+	AI_Output (other, self, "DIA_Sentenza_Vote_15_00"); //РўС‹ РїСЂРѕРіРѕР»РѕСЃСѓРµС€СЊ Р·Р° РјРµРЅСЏ?
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_01"); //Только потому, что ты побил меня? (смеется) Нет.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_01"); //РўРѕР»СЊРєРѕ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ РїРѕР±РёР» РјРµРЅСЏ? (СЃРјРµРµС‚СЃСЏ) РќРµС‚.
 	}
 	else if (Npc_HasItems (self, itmi_gold) >= 50)
 	&& 		( (Sentenza_GoldTaken == TRUE) ||	(Sentenza_GoldGiven == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_02"); //Хотя, почему бы и нет? 50 золотых - это разумная плата за мой голос, тебе так не кажется?
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_02"); //РҐРѕС‚СЏ, РїРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚? 50 Р·РѕР»РѕС‚С‹С… - СЌС‚Рѕ СЂР°Р·СѓРјРЅР°СЏ РїР»Р°С‚Р° Р·Р° РјРѕР№ РіРѕР»РѕСЃ, С‚РµР±Рµ С‚Р°Рє РЅРµ РєР°Р¶РµС‚СЃСЏ?
 		
 		Sentenza_Stimme = TRUE;
-		B_LogEntry (TOPIC_SLDRespekt,"Сентенза не возражает против моего вступления в ряды наемников.");
+		B_LogEntry (TOPIC_SLDRespekt,"РЎРµРЅС‚РµРЅР·Р° РЅРµ РІРѕР·СЂР°Р¶Р°РµС‚ РїСЂРѕС‚РёРІ РјРѕРµРіРѕ РІСЃС‚СѓРїР»РµРЅРёСЏ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ.");
 	}
 	else if (Sentenza_Stimme == TRUE)
 	&& 		(Npc_HasItems (self, itmi_gold) < 50)
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_03"); //После того, как ты забрал мое золото? Вряд ли, мой мальчик.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_03"); //РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С‚С‹ Р·Р°Р±СЂР°Р» РјРѕРµ Р·РѕР»РѕС‚Рѕ? Р’СЂСЏРґ Р»Рё, РјРѕР№ РјР°Р»СЊС‡РёРє.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_04"); //У тебя так ничего не выйдет, парень! Если ты хочешь, чтобы я проголосовал за тебя, ты должен презентовать мне немного золота.
-		AI_Output (other, self, "DIA_Sentenza_Vote_15_05"); //Сколько?
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_06"); //50 монет. Это сбор, который тебе все равно пришлось бы заплатить.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_04"); //РЈ С‚РµР±СЏ С‚Р°Рє РЅРёС‡РµРіРѕ РЅРµ РІС‹Р№РґРµС‚, РїР°СЂРµРЅСЊ! Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ СЏ РїСЂРѕРіРѕР»РѕСЃРѕРІР°Р» Р·Р° С‚РµР±СЏ, С‚С‹ РґРѕР»Р¶РµРЅ РїСЂРµР·РµРЅС‚РѕРІР°С‚СЊ РјРЅРµ РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°.
+		AI_Output (other, self, "DIA_Sentenza_Vote_15_05"); //РЎРєРѕР»СЊРєРѕ?
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_06"); //50 РјРѕРЅРµС‚. Р­С‚Рѕ СЃР±РѕСЂ, РєРѕС‚РѕСЂС‹Р№ С‚РµР±Рµ РІСЃРµ СЂР°РІРЅРѕ РїСЂРёС€Р»РѕСЃСЊ Р±С‹ Р·Р°РїР»Р°С‚РёС‚СЊ.
 		Sentenza_Wants50 = TRUE;
 	};
 };
@@ -289,7 +289,7 @@ INSTANCE DIA_Sentenza_Pay50 (C_INFO)
 	condition	= DIA_Sentenza_Pay50_Condition;
 	information	= DIA_Sentenza_Pay50_Info;
 	permanent	= TRUE;
-	description	= "Вот твои 50 золотых монет.";
+	description	= "Р’РѕС‚ С‚РІРѕРё 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.";
 };                       
 
 FUNC INT DIA_Sentenza_Pay50_Condition()
@@ -304,20 +304,20 @@ FUNC INT DIA_Sentenza_Pay50_Condition()
 
 FUNC VOID DIA_Sentenza_Pay50_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_Pay50_15_00"); //Вот твои 50 золотых монет.
+	AI_Output (other, self, "DIA_Sentenza_Pay50_15_00"); //Р’РѕС‚ С‚РІРѕРё 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
 	if (B_GiveInvItems (other, self, ItMi_Gold, 50))
 	{
-		AI_Output (self, other, "DIA_Sentenza_Pay50_09_01"); //Спасибо, дорогой.
+		AI_Output (self, other, "DIA_Sentenza_Pay50_09_01"); //РЎРїР°СЃРёР±Рѕ, РґРѕСЂРѕРіРѕР№.
 		Sentenza_GoldGiven = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_Pay50_09_02"); //Не пытайся обмануть меня. 50 золотых и ни монетой меньше! Понял?
+		AI_Output (self, other, "DIA_Sentenza_Pay50_09_02"); //РќРµ РїС‹С‚Р°Р№СЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ. 50 Р·РѕР»РѕС‚С‹С… Рё РЅРё РјРѕРЅРµС‚РѕР№ РјРµРЅСЊС€Рµ! РџРѕРЅСЏР»?
 	};
 };
 
 // ************************************************************
-// 			  				Gold zurьckholen
+// 			  				Gold zurСЊckholen
 // ************************************************************
 var int Sentenza_Einmal;
 // ---------------------
@@ -329,7 +329,7 @@ INSTANCE DIA_Sentenza_GoldBack (C_INFO)
 	condition	= DIA_Sentenza_GoldBack_Condition;
 	information	= DIA_Sentenza_GoldBack_Info;
 	permanent	= TRUE;
-	description = "Верни мне мое золото!";
+	description = "Р’РµСЂРЅРё РјРЅРµ РјРѕРµ Р·РѕР»РѕС‚Рѕ!";
 };                       
 
 FUNC INT DIA_Sentenza_GoldBack_Condition()
@@ -346,13 +346,13 @@ FUNC INT DIA_Sentenza_GoldBack_Condition()
  
 FUNC VOID DIA_Sentenza_GoldBack_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_GoldBack_15_00"); //Верни мне мое золото!
+	AI_Output (other, self, "DIA_Sentenza_GoldBack_15_00"); //Р’РµСЂРЅРё РјРЅРµ РјРѕРµ Р·РѕР»РѕС‚Рѕ!
 	if (other.guild == GIL_SLD)
 	&& (Torlof_SentenzaCounted == TRUE)
 	&& (Sentenza_Einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_01"); //После того, как я проголосовал за тебя?
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_02"); //Ах ты, мерзкий попрошайка!
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_01"); //РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЏ РїСЂРѕРіРѕР»РѕСЃРѕРІР°Р» Р·Р° С‚РµР±СЏ?
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_02"); //РђС… С‚С‹, РјРµСЂР·РєРёР№ РїРѕРїСЂРѕС€Р°Р№РєР°!
 		
 		Sentenza_Einmal = TRUE;
 		AI_StopProcessInfos(self);
@@ -360,7 +360,7 @@ FUNC VOID DIA_Sentenza_GoldBack_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_03"); //Расслабься! Я просто пригляжу пока за ним...
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_03"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ! РЇ РїСЂРѕСЃС‚Рѕ РїСЂРёРіР»СЏР¶Сѓ РїРѕРєР° Р·Р° РЅРёРј...
 	};
 };
 
@@ -375,7 +375,7 @@ INSTANCE DIA_Sentenza_AufsMaul (C_INFO)
 	condition	= DIA_Sentenza_AufsMaul_Condition;
 	information	= DIA_Sentenza_AufsMaul_Info;
 	permanent	= FALSE; //FALSE!!!!!!!!!
-	description = "Слушай, а что это у тебя перед головой? Лицо или задница? ";
+	description = "РЎР»СѓС€Р°Р№, Р° С‡С‚Рѕ СЌС‚Рѕ Сѓ С‚РµР±СЏ РїРµСЂРµРґ РіРѕР»РѕРІРѕР№? Р›РёС†Рѕ РёР»Рё Р·Р°РґРЅРёС†Р°? ";
 };                       
 
 FUNC INT DIA_Sentenza_AufsMaul_Condition()
@@ -389,8 +389,8 @@ FUNC INT DIA_Sentenza_AufsMaul_Condition()
  
 FUNC VOID DIA_Sentenza_AufsMaul_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_AufsMaul_15_00"); //Слушай, а что это у тебя перед головой? Лицо или задница?
-	AI_Output (self, other, "DIA_Sentenza_AufsMaul_09_01"); //(зло смеется) Ладно, ты сам этого хотел...
+	AI_Output (other, self, "DIA_Sentenza_AufsMaul_15_00"); //РЎР»СѓС€Р°Р№, Р° С‡С‚Рѕ СЌС‚Рѕ Сѓ С‚РµР±СЏ РїРµСЂРµРґ РіРѕР»РѕРІРѕР№? Р›РёС†Рѕ РёР»Рё Р·Р°РґРЅРёС†Р°?
+	AI_Output (self, other, "DIA_Sentenza_AufsMaul_09_01"); //(Р·Р»Рѕ СЃРјРµРµС‚СЃСЏ) Р›Р°РґРЅРѕ, С‚С‹ СЃР°Рј СЌС‚РѕРіРѕ С…РѕС‚РµР»...
 	
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -407,7 +407,7 @@ INSTANCE DIA_Sentenza_AufsMaulAgain (C_INFO)
 	condition	= DIA_Sentenza_AufsMaulAgain_Condition;
 	information	= DIA_Sentenza_AufsMaulAgain_Info;
 	permanent	= TRUE;
-	description = "Пришло время очередной взбучки!";
+	description = "РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РѕС‡РµСЂРµРґРЅРѕР№ РІР·Р±СѓС‡РєРё!";
 };                       
 
 FUNC INT DIA_Sentenza_AufsMaulAgain_Condition()
@@ -424,8 +424,8 @@ FUNC INT DIA_Sentenza_AufsMaulAgain_Condition()
  
 FUNC VOID DIA_Sentenza_AufsMaulAgain_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_AufsMaulAgain_15_00"); //Пришло время очередной взбучки!
-	AI_Output (self, other, "DIA_Sentenza_AufsMaulAgain_09_01"); //Как скажешь...
+	AI_Output (other, self, "DIA_Sentenza_AufsMaulAgain_15_00"); //РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РѕС‡РµСЂРµРґРЅРѕР№ РІР·Р±СѓС‡РєРё!
+	AI_Output (self, other, "DIA_Sentenza_AufsMaulAgain_09_01"); //РљР°Рє СЃРєР°Р¶РµС€СЊ...
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
 };
@@ -442,7 +442,7 @@ INSTANCE DIA_Sentenza_PERM (C_INFO)
 	condition	= DIA_Sentenza_PERM_Condition;
 	information	= DIA_Sentenza_PERM_Info;
 	permanent	= TRUE;
-	description = "Эй, как дела?";
+	description = "Р­Р№, РєР°Рє РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_Sentenza_PERM_Condition()
@@ -452,12 +452,12 @@ FUNC INT DIA_Sentenza_PERM_Condition()
  
 FUNC VOID DIA_Sentenza_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_PERM_15_00"); //Эй, как дела?
+	AI_Output (other, self, "DIA_Sentenza_PERM_15_00"); //Р­Р№, РєР°Рє РґРµР»Р°?
 	
-	AI_Output (self, other, "DIA_Sentenza_PERM_09_01"); //Мало кто заходит сюда, но до последнего времени все они платили мне сбор.
+	AI_Output (self, other, "DIA_Sentenza_PERM_09_01"); //РњР°Р»Рѕ РєС‚Рѕ Р·Р°С…РѕРґРёС‚ СЃСЋРґР°, РЅРѕ РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ РІСЂРµРјРµРЅРё РІСЃРµ РѕРЅРё РїР»Р°С‚РёР»Рё РјРЅРµ СЃР±РѕСЂ.
 	if (Npc_HasItems (self, itmi_gold) < 50)
 	{
-		AI_Output (self, other, "DIA_Sentenza_PERM_09_02"); //За исключением тебя. (скалится)
+		AI_Output (self, other, "DIA_Sentenza_PERM_09_02"); //Р—Р° РёСЃРєР»СЋС‡РµРЅРёРµРј С‚РµР±СЏ. (СЃРєР°Р»РёС‚СЃСЏ)
 	};
 };
 

@@ -6,7 +6,7 @@ const int	SPL_Cost_IceCube			=	40;
 const int   SPL_FREEZE_DAMAGE		 	=	2;		// IceCube, IceWave
 const int	SPL_TIME_FREEZE				=	19;		// IceCube, IceWave
 
-//Achtung: wenn bei FREEZE (19) die Werte ge‰ndert werden, muﬂ auch die Lebensdauer der PFX angepasst werden
+//Achtung: wenn bei FREEZE (19) die Werte ge–¥ndert werden, mu–Ø auch die Lebensdauer der PFX angepasst werden
 
 INSTANCE Spell_IceCube (C_Spell_Proto)
 {

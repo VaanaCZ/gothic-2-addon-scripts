@@ -6,7 +6,7 @@ FUNC VOID InitPerceptions()
 {
 	// Die Reichweite der aktiven Wahrnehmungen
 	// PERC_ASSESSPLAYER	// Spieler wird wahrgenommen
-	// PERC_ASSESSENEMY		// der nächste NSC, zu dem ich Att_Hostile habe, wird wahrgenommen! (wenn Temp_Att != Gil_Att, wird Temp_att genommen)
+	// PERC_ASSESSENEMY		// der nÐ´chste NSC, zu dem ich Att_Hostile habe, wird wahrgenommen! (wenn Temp_Att != Gil_Att, wird Temp_att genommen)
 
 	// PERC_ASSESSBODY		// JEDER Tote wird wahrgenommen / z.Zt. nur in Monster-AI
 
@@ -15,9 +15,9 @@ FUNC VOID InitPerceptions()
 	// wird durch den senses_range = PERC_DIST_ACTIVE_MAX gesetzt.
 
 	// *** ACHTUNG *** Die Reihenfolge der aktiven Wn bestimmt, welche zuerst gecheckt und (bei Erfolg) aufgerufen wird - der Rest wird IGNORIERT!
-	// Aktive Wahrnehmungen werden NUR über die aktivierten senses getriggert -Humans haben KEIN sense_smell, d.h. ein Aufruf von z.B. B_AssessPlayer beinhaltet schon einen Sichtcheck (etwa 180° vor dem NSC)
+	// Aktive Wahrnehmungen werden NUR ÑŒber die aktivierten senses getriggert -Humans haben KEIN sense_smell, d.h. ein Aufruf von z.B. B_AssessPlayer beinhaltet schon einen Sichtcheck (etwa 180Â° vor dem NSC)
 
-	// *** ACHTUNG *** Passive Wahrnehmungen sind sense-unabhängig (sie gehen immer an alle NSCs, egal ob's gesehen/gehört wird oder nicht)
+	// *** ACHTUNG *** Passive Wahrnehmungen sind sense-unabhÐ´ngig (sie gehen immer an alle NSCs, egal ob's gesehen/gehÑ†rt wird oder nicht)
 
 	// --- KAMPF -----------------------------------------------------------------
 
@@ -26,17 +26,17 @@ FUNC VOID InitPerceptions()
 	Perc_SetRange		(PERC_ASSESSOTHERSDAMAGE, PERC_DIST_INTERMEDIAT			); //wird i.d.R. nur von Monster-AI benutz (einige ZS) und lokal in ZS_WatchFight
 	// wird an alle NSCs gesendet, wenn ein NSC getroffen worden ist
 	Perc_SetRange		(PERC_ASSESSDEFEAT		, WATCHFIGHT_DIST_MAX			); //wird NUR in ZS_WatchFight (lokal) benutzt
-	// wird an alle NSCs gesendet, wenn ein NSC bewußtlos wird
-	Perc_SetRange		(PERC_ASSESSMURDER		, PERC_DIST_ACTIVE_MAX 			); //eigentlich INTERMEDIAT, ist hier größer, weil Mörder direkt hinter mir, aber Opfer 11m entfernt stehen kann
+	// wird an alle NSCs gesendet, wenn ein NSC bewuÐ¯tlos wird
+	Perc_SetRange		(PERC_ASSESSMURDER		, PERC_DIST_ACTIVE_MAX 			); //eigentlich INTERMEDIAT, ist hier grÑ†Ð¯er, weil MÑ†rder direkt hinter mir, aber Opfer 11m entfernt stehen kann
 	// wird an alle NSCs gesendet, wenn ein NSC stirbt
 	Perc_SetRange		(PERC_ASSESSTHREAT		, PERC_DIST_INTERMEDIAT			); //BUG!  Reichweite interessiert hier vermutlich nicht --Mike
 	// wird alle 2 Sekunden an den NSC gesendet, auf den der Spieler zielt (Bogen oder Magie)
 	Perc_SetRange		(PERC_DRAWWEAPON		, PERC_DIST_DIALOG				);
 	// wird an alle NSCs gesendet, wenn der Spieler eine Waffe (oder Spruch) zieht
 
-	// --- HÖREN -----------------------------------------------------------------
+	// --- HÐ¦REN -----------------------------------------------------------------
 
-	Perc_SetRange		(PERC_ASSESSFIGHTSOUND	, 3000							); //wird in fast allen Fällen auf PERC_DIST_INTERMEDIAT verkürzt!
+	Perc_SetRange		(PERC_ASSESSFIGHTSOUND	, 3000							); //wird in fast allen FÐ´llen auf PERC_DIST_INTERMEDIAT verkÑŒrzt!
 	// wird an alle NSCs gesendet, wenn SC oder NSC jemanden mit Waffe trifft
 	Perc_SetRange		(PERC_ASSESSQUIETSOUND	, PERC_DIST_INTERMEDIAT			);
 	// wird einmal pro Sekunde an alle gesendet, wenn der Spieler geht oder rennt (ausser beim Schleichen)
@@ -56,11 +56,11 @@ FUNC VOID InitPerceptions()
 	// --- MAGIER ----------------------------------------------------------------
 
 	Perc_SetRange		(PERC_ASSESSMAGIC		, 9999							); //Reichweite wird nicht vom Programm benutzt!
-	// wird gesendet von VisualFXInst.d - Wahrnehmungs-Sendung hängt am Magie Effekt
-	// Ein NSC, der diese Wahrnehmung bekommt, kann in der AI ZUSÄTZLICH auf Magie reagieren (i.d.R. mit ZS-Wechsel)
+	// wird gesendet von VisualFXInst.d - Wahrnehmungs-Sendung hÐ´ngt am Magie Effekt
+	// Ein NSC, der diese Wahrnehmung bekommt, kann in der AI ZUSÐ”TZLICH auf Magie reagieren (i.d.R. mit ZS-Wechsel)
 	// Sollte in JEDEM Zustand aktiviert sein (ausser ZS_Dead)
 	Perc_SetRange		(PERC_ASSESSSTOPMAGIC	, 9999			 				); //Reichweite wird nicht vom Programm benutzt!
-	// Wird an das / die Opfer gesendet, wenn der Spell aufhört zu wirken
+	// Wird an das / die Opfer gesendet, wenn der Spell aufhÑ†rt zu wirken
 
 	// --- TALK ------------------------------------------------------------------
 
@@ -71,21 +71,21 @@ FUNC VOID InitPerceptions()
 	Perc_SetRange		(PERC_ASSESSWARN		, PERC_DIST_INTERMEDIAT			);
 	// REIN scriptgenerierte Wahrnehmung!
 
-	// --- Türen aufmachen -------------------------------------------------------
+	// --- TÑŒren aufmachen -------------------------------------------------------
 
 	Perc_SetRange		(PERC_MOVEMOB			, PERC_DIST_DIALOG				);
-	// Wenn NSC eine Tür im Weg ist
+	// Wenn NSC eine TÑŒr im Weg ist
 
-	// --- SC verwandelt sich / - zurück ------------------------------------------
+	// --- SC verwandelt sich / - zurÑŒck ------------------------------------------
 	
 	Perc_SetRange		(PERC_ASSESSSURPRISE	, FIGHT_DIST_CANCEL			 	);	// nur in ZS_Attack und ZS_MM_Attack
-	// geht an alle, wenn der SC sich zurückverwandelt
+	// geht an alle, wenn der SC sich zurÑŒckverwandelt
 
 
 		// --- RAUS (wird nicht gebraucht) -------------------------------------------
 
 		Perc_SetRange		(PERC_OBSERVEINTRUDER	, 100							);
-		// geht an alle, wenn SC stehenbleibt (außer aus dem Schleichen heraus)
+		// geht an alle, wenn SC stehenbleibt (auÐ¯er aus dem Schleichen heraus)
 		Perc_SetRange		(PERC_ASSESSREMOVEWEAPON, 100							);
 		// wird an alle NSCs gesendet, wenn der Spieler die Waffe wegsteckt
 		Perc_SetRange		(PERC_CATCHTHIEF		, 100							);
@@ -107,9 +107,9 @@ FUNC VOID InitPerceptions()
 // Normale Wahrnehmung
 // *************************************
 
-func void Perception_Set_Normal ()				//Für Humans
+func void Perception_Set_Normal ()				//FÑŒr Humans
 {
-	// --- Die Senses bei jedem Zustand neu setzen (Weil in ZS_Guide_Player die Senses & Ranges verändert werden) ------
+	// --- Die Senses bei jedem Zustand neu setzen (Weil in ZS_Guide_Player die Senses & Ranges verÐ´ndert werden) ------
 	self.senses			=	SENSE_HEAR | SENSE_SEE;
 	self.senses_range	=	PERC_DIST_ACTIVE_MAX;
 
@@ -141,7 +141,7 @@ func void Perception_Set_Normal ()				//Für Humans
 	Npc_PercEnable  	(self, 	PERC_ASSESSQUIETSOUND	,	B_AssessQuietSound			); //geht in ZS_ObservePlayer
 	Npc_PercEnable  	(self, 	PERC_ASSESSWARN			, 	B_AssessWarn 		 	 	); //geht in ZS_Attack
 	Npc_PercEnable  	(self, 	PERC_ASSESSTALK			,	B_AssessTalk 				); //geht in ZS_Talk
-	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob					); //öffnet Türen, die auf dem Weg liegen
+	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob					); //Ñ†ffnet TÑŒren, die auf dem Weg liegen
 };
 
 
@@ -149,9 +149,9 @@ func void Perception_Set_Normal ()				//Für Humans
 // Minimale Wahrnehmung - sollten IMMER aktiv sein
 // ***********************************************
 
-func void Perception_Set_Minimal ()				//Für Männer und Frauen
+func void Perception_Set_Minimal ()				//FÑŒr MÐ´nner und Frauen
 {
-	// --- Die Senses bei jedem Zustand neu setzen (nur falls in ZS mit Perc_Set_Minimal noch ZUSÄTLZLICH (lokal) aktive Wahrnehmungen angemeldet werden) ------
+	// --- Die Senses bei jedem Zustand neu setzen (nur falls in ZS mit Perc_Set_Minimal noch ZUSÐ”TLZLICH (lokal) aktive Wahrnehmungen angemeldet werden) ------
 	self.senses			=	SENSE_HEAR | SENSE_SEE;
 	self.senses_range	=	PERC_DIST_ACTIVE_MAX;
 
@@ -169,11 +169,11 @@ func void Perception_Set_Minimal ()				//Für Männer und Frauen
 // B_ClearPerceptions
 // ------------------
 // MUSS in allen B_Befehlen, die durch Wahrnehmungen abgesprugen werden
-// ÜBERALL DORT aufgerufen werden, wo ein neuer ZS aufgerufen wird
+// Ð¬BERALL DORT aufgerufen werden, wo ein neuer ZS aufgerufen wird
 // Beachten: auch in B_Befehlen, die wiederum aus diesem B_Befehlen aufgerufen werden
-// müssen alle ZS_Aufrufe mit B_ClearPerceptions versehen werden
+// mÑŒssen alle ZS_Aufrufe mit B_ClearPerceptions versehen werden
 // AUF KEINEN FALL einfach B_ClearPerceptions in jeden B_Befehl, der durch eine Wahrnehmung aufgerufen wird,
-// reinmachen (so daß er IMMER aufgerufen würde) - das würde dazu führen, daß ein B_Befehl, in einem Fall in dem
+// reinmachen (so daÐ¯ er IMMER aufgerufen wÑŒrde) - das wÑŒrde dazu fÑŒhren, daÐ¯ ein B_Befehl, in einem Fall in dem
 // KEIN ZS_Wechsel passiert, dem aktuellen ZS alle Wahrnehmungen plattmacht.
 // ************************************************************************************************************
 

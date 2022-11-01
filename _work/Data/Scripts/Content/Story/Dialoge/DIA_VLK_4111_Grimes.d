@@ -44,8 +44,8 @@ FUNC INT DIA_Grimes_Hallo_Condition()
 }; 
 FUNC VOID DIA_Grimes_Hallo_Info()
 {	
-	AI_Output (self,other,"DIA_Grimes_Hallo_05_00");//Ты? Кто бы мог подумать, что мы опять свидимся!
-	AI_Output (self,other,"DIA_Grimes_Hallo_05_01");//Похоже, мы оба умеем выживать, но, как видишь, я застрял в этой шахте.
+	AI_Output (self,other,"DIA_Grimes_Hallo_05_00");//РўС‹? РљС‚Рѕ Р±С‹ РјРѕРі РїРѕРґСѓРјР°С‚СЊ, С‡С‚Рѕ РјС‹ РѕРїСЏС‚СЊ СЃРІРёРґРёРјСЃСЏ!
+	AI_Output (self,other,"DIA_Grimes_Hallo_05_01");//РџРѕС…РѕР¶Рµ, РјС‹ РѕР±Р° СѓРјРµРµРј РІС‹Р¶РёРІР°С‚СЊ, РЅРѕ, РєР°Рє РІРёРґРёС€СЊ, СЏ Р·Р°СЃС‚СЂСЏР» РІ СЌС‚РѕР№ С€Р°С…С‚Рµ.
 	
 	if (Grimes_First == FALSE)
 	{
@@ -68,7 +68,7 @@ INSTANCE DIA_Grimes_Erz(C_INFO)
 	condition	= DIA_Grimes_Erz_Condition;
 	information	= DIA_Grimes_Erz_Info;
 	permanent	= FALSE;
-	description	= "Сколько руды вам удалось добыть?";
+	description	= "РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ РІР°Рј СѓРґР°Р»РѕСЃСЊ РґРѕР±С‹С‚СЊ?";
 };                       
 
 FUNC INT DIA_Grimes_Erz_Condition()
@@ -81,9 +81,9 @@ FUNC INT DIA_Grimes_Erz_Condition()
 }; 
 FUNC VOID DIA_Grimes_Erz_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Сколько руды вам удалось добыть?
-	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//Несколько ящиков. Но их здесь уже нет.
-	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Паладин Маркос решил отправить руду в замок, так как нас все время атаковали орки.
+	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ РІР°Рј СѓРґР°Р»РѕСЃСЊ РґРѕР±С‹С‚СЊ?
+	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//РќРµСЃРєРѕР»СЊРєРѕ СЏС‰РёРєРѕРІ. РќРѕ РёС… Р·РґРµСЃСЊ СѓР¶Рµ РЅРµС‚.
+	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//РџР°Р»Р°РґРёРЅ РњР°СЂРєРѕСЃ СЂРµС€РёР» РѕС‚РїСЂР°РІРёС‚СЊ СЂСѓРґСѓ РІ Р·Р°РјРѕРє, С‚Р°Рє РєР°Рє РЅР°СЃ РІСЃРµ РІСЂРµРјСЏ Р°С‚Р°РєРѕРІР°Р»Рё РѕСЂРєРё.
 };
 // ************************************************************
 // 			 Weg
@@ -95,7 +95,7 @@ INSTANCE DIA_Grimes_Weg(C_INFO)
 	condition	= DIA_Grimes_Weg_Condition;
 	information	= DIA_Grimes_Weg_Info;
 	permanent	= FALSE;
-	description = "Ты знаешь, в каком направлении пошел Маркос?";
+	description = "РўС‹ Р·РЅР°РµС€СЊ, РІ РєР°РєРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё РїРѕС€РµР» РњР°СЂРєРѕСЃ?";
 };                       
 
 FUNC INT DIA_Grimes_Weg_Condition()
@@ -108,9 +108,9 @@ FUNC INT DIA_Grimes_Weg_Condition()
 }; 
 FUNC VOID DIA_Grimes_Weg_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//Ты знаешь, в каком направлении пошел Маркос?
-	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//Он не пошел прямой дорогой.  Вместо этого он хотел пересечь реку там, где она замерзла.
-	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//Он хотел пойти в обход и подойти к замку с запада.
+	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//РўС‹ Р·РЅР°РµС€СЊ, РІ РєР°РєРѕРј РЅР°РїСЂР°РІР»РµРЅРёРё РїРѕС€РµР» РњР°СЂРєРѕСЃ?
+	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//РћРЅ РЅРµ РїРѕС€РµР» РїСЂСЏРјРѕР№ РґРѕСЂРѕРіРѕР№.  Р’РјРµСЃС‚Рѕ СЌС‚РѕРіРѕ РѕРЅ С…РѕС‚РµР» РїРµСЂРµСЃРµС‡СЊ СЂРµРєСѓ С‚Р°Рј, РіРґРµ РѕРЅР° Р·Р°РјРµСЂР·Р»Р°.
+	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//РћРЅ С…РѕС‚РµР» РїРѕР№С‚Рё РІ РѕР±С…РѕРґ Рё РїРѕРґРѕР№С‚Рё Рє Р·Р°РјРєСѓ СЃ Р·Р°РїР°РґР°.
 };
 // ************************************************************
 // 			  Grimes
@@ -122,7 +122,7 @@ INSTANCE DIA_Grimes_Grimes(C_INFO)
 	condition	= DIA_Grimes_Grimes_Condition;
 	information	= DIA_Grimes_Grimes_Info;
 	permanent	= FALSE;
-	description	= "Ты хочешь покинуть Долину?";
+	description	= "РўС‹ С…РѕС‡РµС€СЊ РїРѕРєРёРЅСѓС‚СЊ Р”РѕР»РёРЅСѓ?";
 };                       
 
 FUNC INT DIA_Grimes_Grimes_Condition()
@@ -134,11 +134,11 @@ FUNC INT DIA_Grimes_Grimes_Condition()
 }; 
 FUNC VOID DIA_Grimes_Grimes_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//Ты хочешь покинуть Долину?
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//Нет, я лучше продолжу добывать руду.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//Я не позволю каким-то оркам остановить меня - я и не такое видал.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//Как тогда, когда мы работали в старой шахте и неожиданно прорвалась вода...
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_04");//Но это старая история.
+	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//РўС‹ С…РѕС‡РµС€СЊ РїРѕРєРёРЅСѓС‚СЊ Р”РѕР»РёРЅСѓ?
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//РќРµС‚, СЏ Р»СѓС‡С€Рµ РїСЂРѕРґРѕР»Р¶Сѓ РґРѕР±С‹РІР°С‚СЊ СЂСѓРґСѓ.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//РЇ РЅРµ РїРѕР·РІРѕР»СЋ РєР°РєРёРј-С‚Рѕ РѕСЂРєР°Рј РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РјРµРЅСЏ - СЏ Рё РЅРµ С‚Р°РєРѕРµ РІРёРґР°Р».
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//РљР°Рє С‚РѕРіРґР°, РєРѕРіРґР° РјС‹ СЂР°Р±РѕС‚Р°Р»Рё РІ СЃС‚Р°СЂРѕР№ С€Р°С…С‚Рµ Рё РЅРµРѕР¶РёРґР°РЅРЅРѕ РїСЂРѕСЂРІР°Р»Р°СЃСЊ РІРѕРґР°...
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_04");//РќРѕ СЌС‚Рѕ СЃС‚Р°СЂР°СЏ РёСЃС‚РѕСЂРёСЏ.
 };
 // ************************************************************
 // 			  Grimes
@@ -150,7 +150,7 @@ INSTANCE DIA_Grimes_PERM(C_INFO)
 	condition	= DIA_Grimes_PERM_Condition;
 	information	= DIA_Grimes_PERM_Info;
 	permanent	= TRUE;
-	description	= "Как твоя работа?";
+	description	= "РљР°Рє С‚РІРѕСЏ СЂР°Р±РѕС‚Р°?";
 };                       
 
 FUNC INT DIA_Grimes_PERM_Condition()
@@ -162,8 +162,8 @@ FUNC INT DIA_Grimes_PERM_Condition()
 }; 
 FUNC VOID DIA_Grimes_PERM_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_PERM_15_00");//Как твоя работа?
-	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Эта скала ужасно твердая - она как будто не хочет отдавать нам руду.
+	AI_Output (other,self,"DIA_Grimes_PERM_15_00");//РљР°Рє С‚РІРѕСЏ СЂР°Р±РѕС‚Р°?
+	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Р­С‚Р° СЃРєР°Р»Р° СѓР¶Р°СЃРЅРѕ С‚РІРµСЂРґР°СЏ - РѕРЅР° РєР°Рє Р±СѓРґС‚Рѕ РЅРµ С…РѕС‡РµС‚ РѕС‚РґР°РІР°С‚СЊ РЅР°Рј СЂСѓРґСѓ.
 };
 
 
@@ -208,12 +208,12 @@ func void DIA_Grimes_PICKPOCKET_BACK()
 
 
 /*
-	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen mьssen.  
+	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen mСЊssen.  
 	Ich habe ihn gefunden. 
-	Er hдlt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
+	Er hРґlt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
 	Innos sei dank...
 	
 	Nein, bisher nicht. 
-	Dann hoffe ich, das er ein Versteck fьr sich und das Erz gefunden hat.
+	Dann hoffe ich, das er ein Versteck fСЊr sich und das Erz gefunden hat.
 */
 

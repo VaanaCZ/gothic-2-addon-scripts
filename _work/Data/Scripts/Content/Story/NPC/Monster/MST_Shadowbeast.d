@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Shadowbeast(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Мракорис";
+	name							=	"РњСЂР°РєРѕСЂРёСЃ";
 	guild							=	GIL_SHADOWBEAST;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHADOWBEAST;
 	level							=	30;

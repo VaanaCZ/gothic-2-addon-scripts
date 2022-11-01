@@ -1,14 +1,14 @@
 INSTANCE NOV_608_Garwig (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãàðâèã";
+	name 		= "Ð“Ð°Ñ€Ð²Ð¸Ð³";
 	guild 		= GIL_NOV;
 	id 			= 608;
 	voice 		= 6;
 	flags       = 0;																	
 	npctype		= NPCTYPE_MAIN;
 	
-	//LEVEL für Sleep- Scroll nötig M.F.
+	//LEVEL fÑŒr Sleep- Scroll nÑ†tig M.F.
 	level		= 1;
 	// ------ Attribute ------
 	attribute[ATR_STRENGTH] 		= 60;

@@ -76,9 +76,9 @@ FUNC INT DIA_Abuyin_Hallo_Condition()
 };
 FUNC VOID DIA_Abuyin_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_00");//(задумчиво) ...Как странно... Мне кажется, что мы с тобой уже встречались, путник...
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_01");//Что ж... велики загадки нашего мира... О, прошу простить мою грубость, сын терпения, я даже не поприветствовал тебя.
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_02");//Добро пожаловать, друг мой, присядь на мой скромный ковер и выкури трубку, наслаждаясь покоем.
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_00");//(Р·Р°РґСѓРјС‡РёРІРѕ) ...РљР°Рє СЃС‚СЂР°РЅРЅРѕ... РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ РјС‹ СЃ С‚РѕР±РѕР№ СѓР¶Рµ РІСЃС‚СЂРµС‡Р°Р»РёСЃСЊ, РїСѓС‚РЅРёРє...
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_01");//Р§С‚Рѕ Р¶... РІРµР»РёРєРё Р·Р°РіР°РґРєРё РЅР°С€РµРіРѕ РјРёСЂР°... Рћ, РїСЂРѕС€Сѓ РїСЂРѕСЃС‚РёС‚СЊ РјРѕСЋ РіСЂСѓР±РѕСЃС‚СЊ, СЃС‹РЅ С‚РµСЂРїРµРЅРёСЏ, СЏ РґР°Р¶Рµ РЅРµ РїРѕРїСЂРёРІРµС‚СЃС‚РІРѕРІР°Р» С‚РµР±СЏ.
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_02");//Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РґСЂСѓРі РјРѕР№, РїСЂРёСЃСЏРґСЊ РЅР° РјРѕР№ СЃРєСЂРѕРјРЅС‹Р№ РєРѕРІРµСЂ Рё РІС‹РєСѓСЂРё С‚СЂСѓР±РєСѓ, РЅР°СЃР»Р°Р¶РґР°СЏСЃСЊ РїРѕРєРѕРµРј.
 };
 // ************************************************************
 // 			  		Wer bist du?
@@ -90,7 +90,7 @@ INSTANCE DIA_Abuyin_du(C_INFO)
 	condition	= DIA_Abuyin_du_Condition;
 	information	= DIA_Abuyin_du_Info;
 	permanent	= FALSE;
-	description	= "Кто ты?";
+	description	= "РљС‚Рѕ С‚С‹?";
 };                       
 FUNC INT DIA_Abuyin_du_Condition()
 {	
@@ -98,8 +98,8 @@ FUNC INT DIA_Abuyin_du_Condition()
 };
 FUNC VOID DIA_Abuyin_du_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_du_15_00");//Кто ты?
-	AI_Output (self, other,"DIA_Abuyin_du_13_01");//Меня зовут Абуин ибн Джадир ибн Омар Халид бен Хаджи аль Шариди. Я пророк и предсказатель, астролог и торговец табаком.
+	AI_Output (other, self,"DIA_Abuyin_du_15_00");//РљС‚Рѕ С‚С‹?
+	AI_Output (self, other,"DIA_Abuyin_du_13_01");//РњРµРЅСЏ Р·РѕРІСѓС‚ РђР±СѓРёРЅ РёР±РЅ Р”Р¶Р°РґРёСЂ РёР±РЅ РћРјР°СЂ РҐР°Р»РёРґ Р±РµРЅ РҐР°РґР¶Рё Р°Р»СЊ РЁР°СЂРёРґРё. РЇ РїСЂРѕСЂРѕРє Рё РїСЂРµРґСЃРєР°Р·Р°С‚РµР»СЊ, Р°СЃС‚СЂРѕР»РѕРі Рё С‚РѕСЂРіРѕРІРµС† С‚Р°Р±Р°РєРѕРј.
 };
 // ************************************************************
 // 			  		Kraut
@@ -111,7 +111,7 @@ INSTANCE DIA_Abuyin_Kraut(C_INFO)
 	condition	= DIA_Abuyin_Kraut_Condition;
 	information	= DIA_Abuyin_Kraut_Info;
 	permanent	= FALSE;
-	description	= "Что за табак ты предлагаешь?";
+	description	= "Р§С‚Рѕ Р·Р° С‚Р°Р±Р°Рє С‚С‹ РїСЂРµРґР»Р°РіР°РµС€СЊ?";
 };                       
 FUNC INT DIA_Abuyin_Kraut_Condition()
 {	
@@ -122,9 +122,9 @@ FUNC INT DIA_Abuyin_Kraut_Condition()
 };
 FUNC VOID DIA_Abuyin_Kraut_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Kraut_15_00");//Что за табак ты предлагаешь?
-	AI_Output (self, other,"DIA_Abuyin_Kraut_13_01");//Мои трубки набиты острым, освежающим яблочным табаком.
-	AI_Output (self, other,"DIA_Abuyin_Kraut_13_02");//Выбирай, что хочешь, Сын Приключений.
+	AI_Output (other, self,"DIA_Abuyin_Kraut_15_00");//Р§С‚Рѕ Р·Р° С‚Р°Р±Р°Рє С‚С‹ РїСЂРµРґР»Р°РіР°РµС€СЊ?
+	AI_Output (self, other,"DIA_Abuyin_Kraut_13_01");//РњРѕРё С‚СЂСѓР±РєРё РЅР°Р±РёС‚С‹ РѕСЃС‚СЂС‹Рј, РѕСЃРІРµР¶Р°СЋС‰РёРј СЏР±Р»РѕС‡РЅС‹Рј С‚Р°Р±Р°РєРѕРј.
+	AI_Output (self, other,"DIA_Abuyin_Kraut_13_02");//Р’С‹Р±РёСЂР°Р№, С‡С‚Рѕ С…РѕС‡РµС€СЊ, РЎС‹РЅ РџСЂРёРєР»СЋС‡РµРЅРёР№.
 };
 // ************************************************************
 // 			  	anderen Tabak?
@@ -136,7 +136,7 @@ INSTANCE DIA_Abuyin_anderen(C_INFO)
 	condition	= DIA_Abuyin_anderen_Condition;
 	information	= DIA_Abuyin_anderen_Info;
 	permanent	= FALSE;
-	description	= "А у тебя есть другой табак?";
+	description	= "Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґСЂСѓРіРѕР№ С‚Р°Р±Р°Рє?";
 };                       
 FUNC INT DIA_Abuyin_anderen_Condition()
 {	
@@ -147,12 +147,12 @@ FUNC INT DIA_Abuyin_anderen_Condition()
 };
 FUNC VOID DIA_Abuyin_anderen_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_anderen_15_00");//А у тебя есть другой табак?
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_01");//Я предлагаю только лучший табак. Эта яблочная смесь - симфония моей родины - южных островов.
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_02");//Но, конечно же, я всегда готов попробовать другой сорт табака - если кто-нибудь сумеет приготовить действительно хороший табак.
-	AI_Output (other, self,"DIA_Abuyin_anderen_15_03");//А как это делается?
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_04");//Возьми за основу яблочный табак. И попробуй добавлять в него различные ингредиенты.
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_05");//Это делается на алхимическом столе, если, конечно ты имеешь навыки в алхимии.
+	AI_Output (other, self,"DIA_Abuyin_anderen_15_00");//Рђ Сѓ С‚РµР±СЏ РµСЃС‚СЊ РґСЂСѓРіРѕР№ С‚Р°Р±Р°Рє?
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_01");//РЇ РїСЂРµРґР»Р°РіР°СЋ С‚РѕР»СЊРєРѕ Р»СѓС‡С€РёР№ С‚Р°Р±Р°Рє. Р­С‚Р° СЏР±Р»РѕС‡РЅР°СЏ СЃРјРµСЃСЊ - СЃРёРјС„РѕРЅРёСЏ РјРѕРµР№ СЂРѕРґРёРЅС‹ - СЋР¶РЅС‹С… РѕСЃС‚СЂРѕРІРѕРІ.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_02");//РќРѕ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РІСЃРµРіРґР° РіРѕС‚РѕРІ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РґСЂСѓРіРѕР№ СЃРѕСЂС‚ С‚Р°Р±Р°РєР° - РµСЃР»Рё РєС‚Рѕ-РЅРёР±СѓРґСЊ СЃСѓРјРµРµС‚ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕСЂРѕС€РёР№ С‚Р°Р±Р°Рє.
+	AI_Output (other, self,"DIA_Abuyin_anderen_15_03");//Рђ РєР°Рє СЌС‚Рѕ РґРµР»Р°РµС‚СЃСЏ?
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_04");//Р’РѕР·СЊРјРё Р·Р° РѕСЃРЅРѕРІСѓ СЏР±Р»РѕС‡РЅС‹Р№ С‚Р°Р±Р°Рє. Р РїРѕРїСЂРѕР±СѓР№ РґРѕР±Р°РІР»СЏС‚СЊ РІ РЅРµРіРѕ СЂР°Р·Р»РёС‡РЅС‹Рµ РёРЅРіСЂРµРґРёРµРЅС‚С‹.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_05");//Р­С‚Рѕ РґРµР»Р°РµС‚СЃСЏ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ, РµСЃР»Рё, РєРѕРЅРµС‡РЅРѕ С‚С‹ РёРјРµРµС€СЊ РЅР°РІС‹РєРё РІ Р°Р»С…РёРјРёРё.
 };
 // ************************************************************
 // 			  	Woher 
@@ -164,7 +164,7 @@ INSTANCE DIA_Abuyin_Woher(C_INFO)
 	condition	= DIA_Abuyin_Woher_Condition;
 	information	= DIA_Abuyin_Woher_Info;
 	permanent	= FALSE;
-	description	= "Где мне взять яблочный табак?";
+	description	= "Р“РґРµ РјРЅРµ РІР·СЏС‚СЊ СЏР±Р»РѕС‡РЅС‹Р№ С‚Р°Р±Р°Рє?";
 };                       
 FUNC INT DIA_Abuyin_Woher_Condition()
 {	
@@ -175,19 +175,19 @@ FUNC INT DIA_Abuyin_Woher_Condition()
 };
 FUNC VOID DIA_Abuyin_Woher_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Woher_15_00");//Где мне взять яблочный табак?
-	AI_Output (self, other,"DIA_Abuyin_Woher_13_01");//Я дам тебе две порции. А там делай с ними, что тебе захочется.
-	AI_Output (self, other,"DIA_Abuyin_Woher_13_02");//Если тебе понадобится еще табак, то направь свои стопы к Зурису, Мастеру Зелий. Он производит это табак и продает его.
+	AI_Output (other, self,"DIA_Abuyin_Woher_15_00");//Р“РґРµ РјРЅРµ РІР·СЏС‚СЊ СЏР±Р»РѕС‡РЅС‹Р№ С‚Р°Р±Р°Рє?
+	AI_Output (self, other,"DIA_Abuyin_Woher_13_01");//РЇ РґР°Рј С‚РµР±Рµ РґРІРµ РїРѕСЂС†РёРё. Рђ С‚Р°Рј РґРµР»Р°Р№ СЃ РЅРёРјРё, С‡С‚Рѕ С‚РµР±Рµ Р·Р°С…РѕС‡РµС‚СЃСЏ.
+	AI_Output (self, other,"DIA_Abuyin_Woher_13_02");//Р•СЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РµС‰Рµ С‚Р°Р±Р°Рє, С‚Рѕ РЅР°РїСЂР°РІСЊ СЃРІРѕРё СЃС‚РѕРїС‹ Рє Р—СѓСЂРёСЃСѓ, РњР°СЃС‚РµСЂСѓ Р—РµР»РёР№. РћРЅ РїСЂРѕРёР·РІРѕРґРёС‚ СЌС‚Рѕ С‚Р°Р±Р°Рє Рё РїСЂРѕРґР°РµС‚ РµРіРѕ.
 	
 	B_GiveInvItems (self, other, ItMi_ApfelTabak,2);
 };
 // ************************************************************
 FUNC VOID B_TabakProbieren()
 {
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_00");//Позволь мне попробовать твой табак.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_00");//РџРѕР·РІРѕР»СЊ РјРЅРµ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ С‚РІРѕР№ С‚Р°Р±Р°Рє.
 	CreateInvItems (self, ItMi_Joint,1);
 	B_UseItem (self, ItMi_Joint);
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_01");//Нет, этот аромат мне не очень нравится. Но, может быть, ты найдешь кого-нибудь, кто оценит его... э-э... утонченность.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_01");//РќРµС‚, СЌС‚РѕС‚ Р°СЂРѕРјР°С‚ РјРЅРµ РЅРµ РѕС‡РµРЅСЊ РЅСЂР°РІРёС‚СЃСЏ. РќРѕ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ РЅР°Р№РґРµС€СЊ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РѕС†РµРЅРёС‚ РµРіРѕ... СЌ-СЌ... СѓС‚РѕРЅС‡РµРЅРЅРѕСЃС‚СЊ.
 };
 // ************************************************************
 // 			  	Mischung 
@@ -199,7 +199,7 @@ INSTANCE DIA_Abuyin_Mischung(C_INFO)
 	condition	= DIA_Abuyin_Mischung_Condition;
 	information	= DIA_Abuyin_Mischung_Info;
 	permanent	= TRUE;
-	description	= "Я принес новый сорт табака...";
+	description	= "РЇ РїСЂРёРЅРµСЃ РЅРѕРІС‹Р№ СЃРѕСЂС‚ С‚Р°Р±Р°РєР°...";
 };                       
 FUNC INT DIA_Abuyin_Mischung_Condition()
 {	
@@ -216,7 +216,7 @@ FUNC INT DIA_Abuyin_Mischung_Condition()
 FUNC VOID DIA_Abuyin_Mischung_Info()
 {	
 	
-	AI_Output (other, self,"DIA_Abuyin_Mischung_15_00");//Я принес новый сорт табака...
+	AI_Output (other, self,"DIA_Abuyin_Mischung_15_00");//РЇ РїСЂРёРЅРµСЃ РЅРѕРІС‹Р№ СЃРѕСЂС‚ С‚Р°Р±Р°РєР°...
 	
 	Info_ClearChoices (DIA_Abuyin_Mischung);
 	Info_AddChoice (DIA_Abuyin_Mischung,DIALOG_BACK,DIA_Abuyin_Mischung_BACK);
@@ -265,15 +265,15 @@ FUNC VOID DIA_Abuyin_Mischung_Super ()
 	
 	B_GiveInvItems (other, self, ItMi_Honigtabak, 1);
 		
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_00");//Давай я попробую твой табак.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_00");//Р”Р°РІР°Р№ СЏ РїРѕРїСЂРѕР±СѓСЋ С‚РІРѕР№ С‚Р°Р±Р°Рє.
 	CreateInvItems (self, ItMi_Joint,1);
 	B_UseItem (self, ItMi_Joint);
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_01");//Это невероятно! В жизни ничего подобного не пробовал!
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_02");//Как ты приготовил его?
-	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_03");//Я смешал обычный табак с медом.
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_04");//Ты хорошо поработал, о, Отец Искусства Смешения. Я с превеликим удовольствием набью им свои презренные трубки.
-	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_05");//Ну, набей.
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_06");//Спасибо тебе, о, Сын Великодушия. Ни одна другая смесь не сравнится с твоим творением. Я готов покупать все, что ты сможешь принести мне.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_01");//Р­С‚Рѕ РЅРµРІРµСЂРѕСЏС‚РЅРѕ! Р’ Р¶РёР·РЅРё РЅРёС‡РµРіРѕ РїРѕРґРѕР±РЅРѕРіРѕ РЅРµ РїСЂРѕР±РѕРІР°Р»!
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_02");//РљР°Рє С‚С‹ РїСЂРёРіРѕС‚РѕРІРёР» РµРіРѕ?
+	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_03");//РЇ СЃРјРµС€Р°Р» РѕР±С‹С‡РЅС‹Р№ С‚Р°Р±Р°Рє СЃ РјРµРґРѕРј.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_04");//РўС‹ С…РѕСЂРѕС€Рѕ РїРѕСЂР°Р±РѕС‚Р°Р», Рѕ, РћС‚РµС† РСЃРєСѓСЃСЃС‚РІР° РЎРјРµС€РµРЅРёСЏ. РЇ СЃ РїСЂРµРІРµР»РёРєРёРј СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј РЅР°Р±СЊСЋ РёРј СЃРІРѕРё РїСЂРµР·СЂРµРЅРЅС‹Рµ С‚СЂСѓР±РєРё.
+	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_05");//РќСѓ, РЅР°Р±РµР№.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_06");//РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ, Рѕ, РЎС‹РЅ Р’РµР»РёРєРѕРґСѓС€РёСЏ. РќРё РѕРґРЅР° РґСЂСѓРіР°СЏ СЃРјРµСЃСЊ РЅРµ СЃСЂР°РІРЅРёС‚СЃСЏ СЃ С‚РІРѕРёРј С‚РІРѕСЂРµРЅРёРµРј. РЇ РіРѕС‚РѕРІ РїРѕРєСѓРїР°С‚СЊ РІСЃРµ, С‡С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ РїСЂРёРЅРµСЃС‚Рё РјРЅРµ.
 	
 	Abuyin_Honigtabak = TRUE;
 	B_GivePlayerXP ((XP_Ambient)*2);
@@ -290,7 +290,7 @@ INSTANCE DIA_Abuyin_Trade(C_INFO)
 	condition	= DIA_Abuyin_Trade_Condition;
 	information	= DIA_Abuyin_Trade_Info;
 	permanent	= TRUE;
-	description	= "Я принес тебе медового табака.";
+	description	= "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РјРµРґРѕРІРѕРіРѕ С‚Р°Р±Р°РєР°.";
 };                       
 FUNC INT DIA_Abuyin_Trade_Condition()
 {	
@@ -306,12 +306,12 @@ FUNC VOID DIA_Abuyin_Trade_Info()
 	
 	Abuyin_Score = (Npc_HasItems (other, Itmi_Honigtabak)* Value_Itmi_Honigtabak);
 	
-	AI_Output (other, self,"DIA_Abuyin_Trade_15_00");//Я принес тебе медового табака.
+	AI_Output (other, self,"DIA_Abuyin_Trade_15_00");//РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РјРµРґРѕРІРѕРіРѕ С‚Р°Р±Р°РєР°.
 	
 	B_GiveInvItems (other, self, ItmI_HonigTabak, Npc_HasItems (other, Itmi_Honigtabak));
 	B_GiveInvItems (self, other, ItmI_Gold, Abuyin_Score);
 	
-	AI_Output (self, other,"DIA_Abuyin_Trade_13_01");//Для меня огромное удовольствие иметь с тобой дело.
+	AI_Output (self, other,"DIA_Abuyin_Trade_13_01");//Р”Р»СЏ РјРµРЅСЏ РѕРіСЂРѕРјРЅРѕРµ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµ РёРјРµС‚СЊ СЃ С‚РѕР±РѕР№ РґРµР»Рѕ.
 };
 // ************************************************************
 // 			  		Herb - KrautPaket
@@ -323,7 +323,7 @@ INSTANCE DIA_Abuyin_Herb(C_INFO)
 	condition	= DIA_Abuyin_Herb_Condition;
 	information	= DIA_Abuyin_Herb_Info;
 	permanent	= FALSE;
-	description	= "Тебя не заинтересует этот тюк травы?";
+	description	= "РўРµР±СЏ РЅРµ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚ СЌС‚РѕС‚ С‚СЋРє С‚СЂР°РІС‹?";
 };                       
 FUNC INT DIA_Abuyin_Herb_Condition()
 {	
@@ -334,11 +334,11 @@ FUNC INT DIA_Abuyin_Herb_Condition()
 };
 FUNC VOID DIA_Abuyin_Herb_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Herb_15_00");//Тебя не заинтересует этот тюк травы?
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_01");//Тюк трав - это не болотная трава, нет? Ох, убери ее, о, Сын Недальновидности.
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_02");//Если городская стража увидит ее у меня, они бросят меня в тюрьму - а тебя будет ждать не лучшая судьба!
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_03");//Если тебе так хочется продать эту траву, послушай моего совета - покинь этот город.
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_04");//Попробуй избавиться от нее где-нибудь за пределами городских стен. А здесь тебя ждет с ней одна головная боль.
+	AI_Output (other, self,"DIA_Abuyin_Herb_15_00");//РўРµР±СЏ РЅРµ Р·Р°РёРЅС‚РµСЂРµСЃСѓРµС‚ СЌС‚РѕС‚ С‚СЋРє С‚СЂР°РІС‹?
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_01");//РўСЋРє С‚СЂР°РІ - СЌС‚Рѕ РЅРµ Р±РѕР»РѕС‚РЅР°СЏ С‚СЂР°РІР°, РЅРµС‚? РћС…, СѓР±РµСЂРё РµРµ, Рѕ, РЎС‹РЅ РќРµРґР°Р»СЊРЅРѕРІРёРґРЅРѕСЃС‚Рё.
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_02");//Р•СЃР»Рё РіРѕСЂРѕРґСЃРєР°СЏ СЃС‚СЂР°Р¶Р° СѓРІРёРґРёС‚ РµРµ Сѓ РјРµРЅСЏ, РѕРЅРё Р±СЂРѕСЃСЏС‚ РјРµРЅСЏ РІ С‚СЋСЂСЊРјСѓ - Р° С‚РµР±СЏ Р±СѓРґРµС‚ Р¶РґР°С‚СЊ РЅРµ Р»СѓС‡С€Р°СЏ СЃСѓРґСЊР±Р°!
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_03");//Р•СЃР»Рё С‚РµР±Рµ С‚Р°Рє С…РѕС‡РµС‚СЃСЏ РїСЂРѕРґР°С‚СЊ СЌС‚Сѓ С‚СЂР°РІСѓ, РїРѕСЃР»СѓС€Р°Р№ РјРѕРµРіРѕ СЃРѕРІРµС‚Р° - РїРѕРєРёРЅСЊ СЌС‚РѕС‚ РіРѕСЂРѕРґ.
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_04");//РџРѕРїСЂРѕР±СѓР№ РёР·Р±Р°РІРёС‚СЊСЃСЏ РѕС‚ РЅРµРµ РіРґРµ-РЅРёР±СѓРґСЊ Р·Р° РїСЂРµРґРµР»Р°РјРё РіРѕСЂРѕРґСЃРєРёС… СЃС‚РµРЅ. Рђ Р·РґРµСЃСЊ С‚РµР±СЏ Р¶РґРµС‚ СЃ РЅРµР№ РѕРґРЅР° РіРѕР»РѕРІРЅР°СЏ Р±РѕР»СЊ.
 };
 // ************************************************************
 // 			  Kannst du mir eine Weissagung geben?
@@ -350,7 +350,7 @@ INSTANCE DIA_Abuyin_Weissagung(C_INFO)
 	condition	= DIA_Abuyin_Weissagung_Condition;
 	information	= DIA_Abuyin_Weissagung_Info;
 	permanent	= FALSE;
-	description	= "Ты можешь сделать пророчество?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung_Condition()
 {	
@@ -362,11 +362,11 @@ FUNC INT DIA_Abuyin_Weissagung_Condition()
 };
 FUNC VOID DIA_Abuyin_Weissagung_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_00");//Ты можешь сделать пророчество?
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_01");//Я к твоим услугам за скромное вознаграждение, о, Отец Щедрости.
-	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_02");//Сколько ты хочешь?
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_03");//За какие-то 25 монет, я рискну заглянуть для тебя в будущее.
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_04");//Но помни - будущее всегда неопределенно. Все, что в моих силах - это уловить лишь крошечные фрагменты времени.
+	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_00");//РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_01");//РЇ Рє С‚РІРѕРёРј СѓСЃР»СѓРіР°Рј Р·Р° СЃРєСЂРѕРјРЅРѕРµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ, Рѕ, РћС‚РµС† Р©РµРґСЂРѕСЃС‚Рё.
+	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_02");//РЎРєРѕР»СЊРєРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_03");//Р—Р° РєР°РєРёРµ-С‚Рѕ 25 РјРѕРЅРµС‚, СЏ СЂРёСЃРєРЅСѓ Р·Р°РіР»СЏРЅСѓС‚СЊ РґР»СЏ С‚РµР±СЏ РІ Р±СѓРґСѓС‰РµРµ.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_04");//РќРѕ РїРѕРјРЅРё - Р±СѓРґСѓС‰РµРµ РІСЃРµРіРґР° РЅРµРѕРїСЂРµРґРµР»РµРЅРЅРѕ. Р’СЃРµ, С‡С‚Рѕ РІ РјРѕРёС… СЃРёР»Р°С… - СЌС‚Рѕ СѓР»РѕРІРёС‚СЊ Р»РёС€СЊ РєСЂРѕС€РµС‡РЅС‹Рµ С„СЂР°РіРјРµРЅС‚С‹ РІСЂРµРјРµРЅРё.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 1
@@ -378,7 +378,7 @@ INSTANCE DIA_Abuyin_Zukunft(C_INFO)
 	condition	= DIA_Abuyin_Zukunft_Condition;
 	information	= DIA_Abuyin_Zukunft_Info;
 	permanent	= TRUE;
-	description	= "Расскажи мне о будущем (заплатить 25 золотых).";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј (Р·Р°РїР»Р°С‚РёС‚СЊ 25 Р·РѕР»РѕС‚С‹С…).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft_permanent;
@@ -394,17 +394,17 @@ FUNC INT DIA_Abuyin_Zukunft_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft_15_00");//Расскажи мне о будущем.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 25)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_01");//Хорошо, о, Жаждущий Знаний. Я сейчас войду в состояние транса. Ты готов?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_01");//РҐРѕСЂРѕС€Рѕ, Рѕ, Р–Р°Р¶РґСѓС‰РёР№ Р—РЅР°РЅРёР№. РЇ СЃРµР№С‡Р°СЃ РІРѕР№РґСѓ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ С‚СЂР°РЅСЃР°. РўС‹ РіРѕС‚РѕРІ?
 		Info_ClearChoices (DIA_Abuyin_Zukunft);
-		Info_AddChoice (DIA_Abuyin_Zukunft,"Я готов!",DIA_Abuyin_Zukunft_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft,"РЇ РіРѕС‚РѕРІ!",DIA_Abuyin_Zukunft_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_02");//О, Отец Монет, я прошу у тебя 25 золотых в обмен на взгляд в туманное будущее.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_02");//Рћ, РћС‚РµС† РњРѕРЅРµС‚, СЏ РїСЂРѕС€Сѓ Сѓ С‚РµР±СЏ 25 Р·РѕР»РѕС‚С‹С… РІ РѕР±РјРµРЅ РЅР° РІР·РіР»СЏРґ РІ С‚СѓРјР°РЅРЅРѕРµ Р±СѓРґСѓС‰РµРµ.
 	};
 
 };
@@ -413,15 +413,15 @@ FUNC VOID DIA_Abuyin_Zukunft_Trance()
 		AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 		Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 		
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_00");//(в трансе) Орки... они охраняют вход... старый туннель... Долина Рудников...
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_01");//(в трансе) Люди в сверкающих доспехах... маг... твой друг с ними... он ждет тебя...
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_02");//(в трансе) Огонь! Нападение... могучего существа... пламя... многие... погибнут...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_00");//(РІ С‚СЂР°РЅСЃРµ) РћСЂРєРё... РѕРЅРё РѕС…СЂР°РЅСЏСЋС‚ РІС…РѕРґ... СЃС‚Р°СЂС‹Р№ С‚СѓРЅРЅРµР»СЊ... Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_01");//(РІ С‚СЂР°РЅСЃРµ) Р›СЋРґРё РІ СЃРІРµСЂРєР°СЋС‰РёС… РґРѕСЃРїРµС…Р°С…... РјР°Рі... С‚РІРѕР№ РґСЂСѓРі СЃ РЅРёРјРё... РѕРЅ Р¶РґРµС‚ С‚РµР±СЏ...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_02");//(РІ С‚СЂР°РЅСЃРµ) РћРіРѕРЅСЊ! РќР°РїР°РґРµРЅРёРµ... РјРѕРіСѓС‡РµРіРѕ СЃСѓС‰РµСЃС‚РІР°... РїР»Р°РјСЏ... РјРЅРѕРіРёРµ... РїРѕРіРёР±РЅСѓС‚...
 		
-		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_00");//(в трансе) ...Что это?.. Город... Руины... Куарходрон из Яркендара...
-		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_01");//(в трансе) ...Он был призван... Куарходрон из Яркендара!
+		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_00");//(РІ С‚СЂР°РЅСЃРµ) ...Р§С‚Рѕ СЌС‚Рѕ?.. Р“РѕСЂРѕРґ... Р СѓРёРЅС‹... РљСѓР°СЂС…РѕРґСЂРѕРЅ РёР· РЇСЂРєРµРЅРґР°СЂР°...
+		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_01");//(РІ С‚СЂР°РЅСЃРµ) ...РћРЅ Р±С‹Р» РїСЂРёР·РІР°РЅ... РљСѓР°СЂС…РѕРґСЂРѕРЅ РёР· РЇСЂРєРµРЅРґР°СЂР°!
 		
 		AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_03");//... Извини - видение кончилось. Больше я ничего не смог увидеть.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_03");//... РР·РІРёРЅРё - РІРёРґРµРЅРёРµ РєРѕРЅС‡РёР»РѕСЃСЊ. Р‘РѕР»СЊС€Рµ СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРі СѓРІРёРґРµС‚СЊ.
 		
 		DIA_Abuyin_Zukunft_permanent = TRUE; 
 		Abuyin_Zukunft = 1;
@@ -439,7 +439,7 @@ INSTANCE DIA_Abuyin_Nochmal(C_INFO)
 	condition	= DIA_Abuyin_Nochmal_Condition;
 	information	= DIA_Abuyin_Nochmal_Info;
 	permanent	= TRUE;
-	description	= "Ты можешь дать мне еще одно пророчество?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РµС‰Рµ РѕРґРЅРѕ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?";
 };                       
 FUNC INT DIA_Abuyin_Nochmal_Condition()
 {	
@@ -450,14 +450,14 @@ FUNC INT DIA_Abuyin_Nochmal_Condition()
 };
 FUNC VOID DIA_Abuyin_Nochmal_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Nochmal_15_00");//Ты можешь дать мне еще одно пророчество?
-	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_01");//О, Сын Загадочного Будущего, сейчас я не в силах приподнять завесу времени.
-	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_02");//Только когда время подаст мне очередной знак, я смогу помочь тебе еще раз.
+	AI_Output (other, self,"DIA_Abuyin_Nochmal_15_00");//РўС‹ РјРѕР¶РµС€СЊ РґР°С‚СЊ РјРЅРµ РµС‰Рµ РѕРґРЅРѕ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?
+	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_01");//Рћ, РЎС‹РЅ Р—Р°РіР°РґРѕС‡РЅРѕРіРѕ Р‘СѓРґСѓС‰РµРіРѕ, СЃРµР№С‡Р°СЃ СЏ РЅРµ РІ СЃРёР»Р°С… РїСЂРёРїРѕРґРЅСЏС‚СЊ Р·Р°РІРµСЃСѓ РІСЂРµРјРµРЅРё.
+	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_02");//РўРѕР»СЊРєРѕ РєРѕРіРґР° РІСЂРµРјСЏ РїРѕРґР°СЃС‚ РјРЅРµ РѕС‡РµСЂРµРґРЅРѕР№ Р·РЅР°Рє, СЏ СЃРјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РµС‰Рµ СЂР°Р·.
 	
 	if (Abuyin_Erzaehlt == FALSE)
 	{
-		AI_Output (other, self,"DIA_Abuyin_Nochmal_15_03");//А когда это будет?
-		AI_Output (self, other,"DIA_Abuyin_Nochmal_13_04");//Когда будущее станет настоящим, и ты продолжишь свой путь.
+		AI_Output (other, self,"DIA_Abuyin_Nochmal_15_03");//Рђ РєРѕРіРґР° СЌС‚Рѕ Р±СѓРґРµС‚?
+		AI_Output (self, other,"DIA_Abuyin_Nochmal_13_04");//РљРѕРіРґР° Р±СѓРґСѓС‰РµРµ СЃС‚Р°РЅРµС‚ РЅР°СЃС‚РѕСЏС‰РёРј, Рё С‚С‹ РїСЂРѕРґРѕР»Р¶РёС€СЊ СЃРІРѕР№ РїСѓС‚СЊ.
 		Abuyin_Erzaehlt = TRUE;
 	};
 };
@@ -472,9 +472,9 @@ FUNC VOID DIA_Abuyin_Nochmal_Info()
 
 FUNC void B_Abuyin_Weissagung ()
 {	
-	AI_Output (other, self,"B_Abuyin_Weissagung_15_00");//Ты можешь сделать пророчество?
-	AI_Output (self, other,"B_Abuyin_Weissagung_13_01");//Да, время ушло вперед, и я могу сделать еще одно пророчество, если у тебя найдется несколько монет.
-	AI_Output (other, self,"B_Abuyin_Weissagung_15_02");//Сколько?
+	AI_Output (other, self,"B_Abuyin_Weissagung_15_00");//РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?
+	AI_Output (self, other,"B_Abuyin_Weissagung_13_01");//Р”Р°, РІСЂРµРјСЏ СѓС€Р»Рѕ РІРїРµСЂРµРґ, Рё СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РµС‰Рµ РѕРґРЅРѕ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ, РµСЃР»Рё Сѓ С‚РµР±СЏ РЅР°Р№РґРµС‚СЃСЏ РЅРµСЃРєРѕР»СЊРєРѕ РјРѕРЅРµС‚.
+	AI_Output (other, self,"B_Abuyin_Weissagung_15_02");//РЎРєРѕР»СЊРєРѕ?
 };
 
 
@@ -488,7 +488,7 @@ INSTANCE DIA_Abuyin_Weissagung2(C_INFO)
 	condition	= DIA_Abuyin_Weissagung2_Condition;
 	information	= DIA_Abuyin_Weissagung2_Info;
 	permanent	= FALSE;
-	description	= "Ты можешь сделать пророчество?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung2_Condition()
 {	
@@ -501,7 +501,7 @@ FUNC INT DIA_Abuyin_Weissagung2_Condition()
 FUNC VOID DIA_Abuyin_Weissagung2_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung2_13_00");//За какие-то 100 монет, я рискну заглянуть для тебя в будущее.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung2_13_00");//Р—Р° РєР°РєРёРµ-С‚Рѕ 100 РјРѕРЅРµС‚, СЏ СЂРёСЃРєРЅСѓ Р·Р°РіР»СЏРЅСѓС‚СЊ РґР»СЏ С‚РµР±СЏ РІ Р±СѓРґСѓС‰РµРµ.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 2
@@ -513,7 +513,7 @@ INSTANCE DIA_Abuyin_Zukunft2(C_INFO)
 	condition	= DIA_Abuyin_Zukunft2_Condition;
 	information	= DIA_Abuyin_Zukunft2_Info;
 	permanent	= TRUE;
-	description	= "Расскажи мне о будущем (заплатить 100 золотых).";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј (Р·Р°РїР»Р°С‚РёС‚СЊ 100 Р·РѕР»РѕС‚С‹С…).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft2_permanent;
@@ -529,18 +529,18 @@ FUNC INT DIA_Abuyin_Zukunft2_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft2_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft2_15_00");//Расскажи мне о будущем.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft2_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 100)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_01");//Хорошо, о, Сын Мужества. Я сейчас войду в состояние транса. Ты готов?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_01");//РҐРѕСЂРѕС€Рѕ, Рѕ, РЎС‹РЅ РњСѓР¶РµСЃС‚РІР°. РЇ СЃРµР№С‡Р°СЃ РІРѕР№РґСѓ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ С‚СЂР°РЅСЃР°. РўС‹ РіРѕС‚РѕРІ?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft2);
-		Info_AddChoice (DIA_Abuyin_Zukunft2,"Я готов!",DIA_Abuyin_Zukunft2_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft2,"РЇ РіРѕС‚РѕРІ!",DIA_Abuyin_Zukunft2_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_02");//О, Отец Монет, я прошу у тебя 100 золотых в обмен на взгляд в туманное будущее.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_02");//Рћ, РћС‚РµС† РњРѕРЅРµС‚, СЏ РїСЂРѕС€Сѓ Сѓ С‚РµР±СЏ 100 Р·РѕР»РѕС‚С‹С… РІ РѕР±РјРµРЅ РЅР° РІР·РіР»СЏРґ РІ С‚СѓРјР°РЅРЅРѕРµ Р±СѓРґСѓС‰РµРµ.
 	};
 
 };	
@@ -549,12 +549,12 @@ FUNC VOID DIA_Abuyin_Zukunft2_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_00");//(в трансе) Наемник... ему нужен ты... ужасное убийство... Глаз...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_01");//(в трансе) Зловещие приспешники... они идут... ищут тебя... страж падет...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_02");//(в трансе) ...но трое должны объединиться... только тогда ты получишь то, что должно принадлежать тебе...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_00");//(РІ С‚СЂР°РЅСЃРµ) РќР°РµРјРЅРёРє... РµРјСѓ РЅСѓР¶РµРЅ С‚С‹... СѓР¶Р°СЃРЅРѕРµ СѓР±РёР№СЃС‚РІРѕ... Р“Р»Р°Р·...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_01");//(РІ С‚СЂР°РЅСЃРµ) Р—Р»РѕРІРµС‰РёРµ РїСЂРёСЃРїРµС€РЅРёРєРё... РѕРЅРё РёРґСѓС‚... РёС‰СѓС‚ С‚РµР±СЏ... СЃС‚СЂР°Р¶ РїР°РґРµС‚...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_02");//(РІ С‚СЂР°РЅСЃРµ) ...РЅРѕ С‚СЂРѕРµ РґРѕР»Р¶РЅС‹ РѕР±СЉРµРґРёРЅРёС‚СЊСЃСЏ... С‚РѕР»СЊРєРѕ С‚РѕРіРґР° С‚С‹ РїРѕР»СѓС‡РёС€СЊ С‚Рѕ, С‡С‚Рѕ РґРѕР»Р¶РЅРѕ РїСЂРёРЅР°РґР»РµР¶Р°С‚СЊ С‚РµР±Рµ...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_03");//Это все. Больше я ничего не смог увидеть.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_03");//Р­С‚Рѕ РІСЃРµ. Р‘РѕР»СЊС€Рµ СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРі СѓРІРёРґРµС‚СЊ.
 	
 	DIA_Abuyin_Zukunft2_permanent = TRUE; 
 	Abuyin_Zukunft = 2;
@@ -581,7 +581,7 @@ INSTANCE DIA_Abuyin_Weissagung3(C_INFO)
 	condition	= DIA_Abuyin_Weissagung3_Condition;
 	information	= DIA_Abuyin_Weissagung3_Info;
 	permanent	= FALSE;
-	description	= "Ты можешь сделать пророчество?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung3_Condition()
 {	
@@ -594,7 +594,7 @@ FUNC INT DIA_Abuyin_Weissagung3_Condition()
 FUNC VOID DIA_Abuyin_Weissagung3_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung3_13_00");//За какие-то 250 монет, я рискну заглянуть для тебя в будущее.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung3_13_00");//Р—Р° РєР°РєРёРµ-С‚Рѕ 250 РјРѕРЅРµС‚, СЏ СЂРёСЃРєРЅСѓ Р·Р°РіР»СЏРЅСѓС‚СЊ РґР»СЏ С‚РµР±СЏ РІ Р±СѓРґСѓС‰РµРµ.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 3
@@ -606,7 +606,7 @@ INSTANCE DIA_Abuyin_Zukunft3(C_INFO)
 	condition	= DIA_Abuyin_Zukunft3_Condition;
 	information	= DIA_Abuyin_Zukunft3_Info;
 	permanent	= TRUE;
-	description	= "Расскажи мне о будущем (заплатить 250 золотых).";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј (Р·Р°РїР»Р°С‚РёС‚СЊ 250 Р·РѕР»РѕС‚С‹С…).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft3_permanent;
@@ -622,18 +622,18 @@ FUNC INT DIA_Abuyin_Zukunft3_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft3_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft3_15_00");//Расскажи мне о будущем.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft3_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 250)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_01");//Хорошо, о, Сын Знаний. Я сейчас войду в состояние транса. Ты готов?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_01");//РҐРѕСЂРѕС€Рѕ, Рѕ, РЎС‹РЅ Р—РЅР°РЅРёР№. РЇ СЃРµР№С‡Р°СЃ РІРѕР№РґСѓ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ С‚СЂР°РЅСЃР°. РўС‹ РіРѕС‚РѕРІ?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft3);
-		Info_AddChoice (DIA_Abuyin_Zukunft3,"Я готов!",DIA_Abuyin_Zukunft3_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft3,"РЇ РіРѕС‚РѕРІ!",DIA_Abuyin_Zukunft3_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_02");//О, Отец Монет, я прошу у тебя 250 золотых в обмен на взгляд в туманное будущее.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_02");//Рћ, РћС‚РµС† РњРѕРЅРµС‚, СЏ РїСЂРѕС€Сѓ Сѓ С‚РµР±СЏ 250 Р·РѕР»РѕС‚С‹С… РІ РѕР±РјРµРЅ РЅР° РІР·РіР»СЏРґ РІ С‚СѓРјР°РЅРЅРѕРµ Р±СѓРґСѓС‰РµРµ.
 	};
 
 };	
@@ -642,12 +642,12 @@ FUNC VOID  DIA_Abuyin_Zukunft3_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_00");//(в трансе) Ты должен пробиться... это суждено только тебе...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_01");//(в трансе) ...сквозь огонь и снег... сквозь лед и пламя...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_02");//(в трансе) Люди в странных доспехах... болото... ящеры... они ждут тебя...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_00");//(РІ С‚СЂР°РЅСЃРµ) РўС‹ РґРѕР»Р¶РµРЅ РїСЂРѕР±РёС‚СЊСЃСЏ... СЌС‚Рѕ СЃСѓР¶РґРµРЅРѕ С‚РѕР»СЊРєРѕ С‚РµР±Рµ...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_01");//(РІ С‚СЂР°РЅСЃРµ) ...СЃРєРІРѕР·СЊ РѕРіРѕРЅСЊ Рё СЃРЅРµРі... СЃРєРІРѕР·СЊ Р»РµРґ Рё РїР»Р°РјСЏ...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_02");//(РІ С‚СЂР°РЅСЃРµ) Р›СЋРґРё РІ СЃС‚СЂР°РЅРЅС‹С… РґРѕСЃРїРµС…Р°С…... Р±РѕР»РѕС‚Рѕ... СЏС‰РµСЂС‹... РѕРЅРё Р¶РґСѓС‚ С‚РµР±СЏ...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_03");//Это все. Больше я ничего не смог увидеть.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_03");//Р­С‚Рѕ РІСЃРµ. Р‘РѕР»СЊС€Рµ СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРі СѓРІРёРґРµС‚СЊ.
 	
 	DIA_Abuyin_Zukunft3_permanent = TRUE; 
 	Abuyin_Zukunft = 3;
@@ -674,7 +674,7 @@ INSTANCE DIA_Abuyin_Weissagung4(C_INFO)
 	condition	= DIA_Abuyin_Weissagung4_Condition;
 	information	= DIA_Abuyin_Weissagung4_Info;
 	permanent	= FALSE;
-	description	= "Ты можешь сделать пророчество?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung4_Condition()
 {	
@@ -687,7 +687,7 @@ FUNC INT DIA_Abuyin_Weissagung4_Condition()
 FUNC VOID DIA_Abuyin_Weissagung4_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung4_13_00");//За какие-то 500 монет, я рискну заглянуть для тебя в будущее.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung4_13_00");//Р—Р° РєР°РєРёРµ-С‚Рѕ 500 РјРѕРЅРµС‚, СЏ СЂРёСЃРєРЅСѓ Р·Р°РіР»СЏРЅСѓС‚СЊ РґР»СЏ С‚РµР±СЏ РІ Р±СѓРґСѓС‰РµРµ.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 4
@@ -699,7 +699,7 @@ INSTANCE DIA_Abuyin_Zukunft4(C_INFO)
 	condition	= DIA_Abuyin_Zukunft4_Condition;
 	information	= DIA_Abuyin_Zukunft4_Info;
 	permanent	= TRUE;
-	description	= "Расскажи мне о будущем (заплатить 500 золотых).";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј (Р·Р°РїР»Р°С‚РёС‚СЊ 500 Р·РѕР»РѕС‚С‹С…).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft4_permanent;
@@ -715,18 +715,18 @@ FUNC INT DIA_Abuyin_Zukunft4_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft4_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft4_15_00");//Расскажи мне о будущем.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft4_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 500)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_01");//Хорошо, о, Сын Знаний. Я сейчас войду в состояние транса. Ты готов?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_01");//РҐРѕСЂРѕС€Рѕ, Рѕ, РЎС‹РЅ Р—РЅР°РЅРёР№. РЇ СЃРµР№С‡Р°СЃ РІРѕР№РґСѓ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ С‚СЂР°РЅСЃР°. РўС‹ РіРѕС‚РѕРІ?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft4);
-		Info_AddChoice (DIA_Abuyin_Zukunft4,"Я готов!",DIA_Abuyin_Zukunft4_Trance);	
+		Info_AddChoice (DIA_Abuyin_Zukunft4,"РЇ РіРѕС‚РѕРІ!",DIA_Abuyin_Zukunft4_Trance);	
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_02");//О, Отец Монет, я прошу у тебя 500 золотых в обмен на взгляд в туманное будущее.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_02");//Рћ, РћС‚РµС† РњРѕРЅРµС‚, СЏ РїСЂРѕС€Сѓ Сѓ С‚РµР±СЏ 500 Р·РѕР»РѕС‚С‹С… РІ РѕР±РјРµРЅ РЅР° РІР·РіР»СЏРґ РІ С‚СѓРјР°РЅРЅРѕРµ Р±СѓРґСѓС‰РµРµ.
 	};
 
 };
@@ -735,12 +735,12 @@ FUNC VOID DIA_Abuyin_Zukunft4_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_00");//(в трансе) Место знаний... другая страна... темное место далеко-далеко...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_01");//(в трансе) Мужественные спутники... ты должен сделать выбор...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_02");//(в трансе) Храм... стоит одиноко в царстве Аданоса... покрытый туманом...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_00");//(РІ С‚СЂР°РЅСЃРµ) РњРµСЃС‚Рѕ Р·РЅР°РЅРёР№... РґСЂСѓРіР°СЏ СЃС‚СЂР°РЅР°... С‚РµРјРЅРѕРµ РјРµСЃС‚Рѕ РґР°Р»РµРєРѕ-РґР°Р»РµРєРѕ...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_01");//(РІ С‚СЂР°РЅСЃРµ) РњСѓР¶РµСЃС‚РІРµРЅРЅС‹Рµ СЃРїСѓС‚РЅРёРєРё... С‚С‹ РґРѕР»Р¶РµРЅ СЃРґРµР»Р°С‚СЊ РІС‹Р±РѕСЂ...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_02");//(РІ С‚СЂР°РЅСЃРµ) РҐСЂР°Рј... СЃС‚РѕРёС‚ РѕРґРёРЅРѕРєРѕ РІ С†Р°СЂСЃС‚РІРµ РђРґР°РЅРѕСЃР°... РїРѕРєСЂС‹С‚С‹Р№ С‚СѓРјР°РЅРѕРј...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_03");//Это все. Больше я ничего не смог увидеть.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_03");//Р­С‚Рѕ РІСЃРµ. Р‘РѕР»СЊС€Рµ СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРі СѓРІРёРґРµС‚СЊ.
 	
 	DIA_Abuyin_Zukunft4_permanent = TRUE; 
 	Abuyin_Zukunft = 4;
@@ -767,7 +767,7 @@ INSTANCE DIA_Abuyin_Weissagung5(C_INFO)
 	condition	= DIA_Abuyin_Weissagung5_Condition;
 	information	= DIA_Abuyin_Weissagung5_Info;
 	permanent	= FALSE;
-	description	= "Ты можешь сделать пророчество?";
+	description	= "РўС‹ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ РїСЂРѕСЂРѕС‡РµСЃС‚РІРѕ?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung5_Condition()
 {	
@@ -780,7 +780,7 @@ FUNC INT DIA_Abuyin_Weissagung5_Condition()
 FUNC VOID DIA_Abuyin_Weissagung5_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung5_13_00");//За какую-то 1000 монет, я рискну заглянуть для тебя в будущее.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung5_13_00");//Р—Р° РєР°РєСѓСЋ-С‚Рѕ 1000 РјРѕРЅРµС‚, СЏ СЂРёСЃРєРЅСѓ Р·Р°РіР»СЏРЅСѓС‚СЊ РґР»СЏ С‚РµР±СЏ РІ Р±СѓРґСѓС‰РµРµ.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 5
@@ -792,7 +792,7 @@ INSTANCE DIA_Abuyin_Zukunft5(C_INFO)
 	condition	= DIA_Abuyin_Zukunft5_Condition;
 	information	= DIA_Abuyin_Zukunft5_Info;
 	permanent	= TRUE;
-	description	= "Расскажи мне о будущем (заплатить 1000 золотых).";
+	description	= "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј (Р·Р°РїР»Р°С‚РёС‚СЊ 1000 Р·РѕР»РѕС‚С‹С…).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft5_permanent;
@@ -808,18 +808,18 @@ FUNC INT DIA_Abuyin_Zukunft5_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft5_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft5_15_00");//Расскажи мне о будущем.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft5_15_00");//Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ Р±СѓРґСѓС‰РµРј.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 1000)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_01");//Хорошо, о, Сын Знаний. Я сейчас войду в состояние транса. Ты готов?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_01");//РҐРѕСЂРѕС€Рѕ, Рѕ, РЎС‹РЅ Р—РЅР°РЅРёР№. РЇ СЃРµР№С‡Р°СЃ РІРѕР№РґСѓ РІ СЃРѕСЃС‚РѕСЏРЅРёРµ С‚СЂР°РЅСЃР°. РўС‹ РіРѕС‚РѕРІ?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft5);
-		Info_AddChoice (DIA_Abuyin_Zukunft5,"Я готов!",DIA_Abuyin_Zukunft5_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft5,"РЇ РіРѕС‚РѕРІ!",DIA_Abuyin_Zukunft5_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_02");//О, Отец Монет, я прошу у тебя 1000 золотых в обмен на взгляд в туманное будущее.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_02");//Рћ, РћС‚РµС† РњРѕРЅРµС‚, СЏ РїСЂРѕС€Сѓ Сѓ С‚РµР±СЏ 1000 Р·РѕР»РѕС‚С‹С… РІ РѕР±РјРµРЅ РЅР° РІР·РіР»СЏРґ РІ С‚СѓРјР°РЅРЅРѕРµ Р±СѓРґСѓС‰РµРµ.
 	};
 
 };
@@ -828,12 +828,12 @@ FUNC VOID DIA_Abuyin_Zukunft5_Trance ()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_00");//(в трансе) Тьма опустилась на землю... зло торжествует...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_01");//(в трансе) Король проиграет войну против орков...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_02");//(в трансе) Ты вернешься, но не найдешь покоя...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_00");//(РІ С‚СЂР°РЅСЃРµ) РўСЊРјР° РѕРїСѓСЃС‚РёР»Р°СЃСЊ РЅР° Р·РµРјР»СЋ... Р·Р»Рѕ С‚РѕСЂР¶РµСЃС‚РІСѓРµС‚...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_01");//(РІ С‚СЂР°РЅСЃРµ) РљРѕСЂРѕР»СЊ РїСЂРѕРёРіСЂР°РµС‚ РІРѕР№РЅСѓ РїСЂРѕС‚РёРІ РѕСЂРєРѕРІ...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_02");//(РІ С‚СЂР°РЅСЃРµ) РўС‹ РІРµСЂРЅРµС€СЊСЃСЏ, РЅРѕ РЅРµ РЅР°Р№РґРµС€СЊ РїРѕРєРѕСЏ...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_03");//Это все. Больше я ничего не смог увидеть.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_03");//Р­С‚Рѕ РІСЃРµ. Р‘РѕР»СЊС€Рµ СЏ РЅРёС‡РµРіРѕ РЅРµ СЃРјРѕРі СѓРІРёРґРµС‚СЊ.
 		
 	DIA_Abuyin_Zukunft5_permanent = TRUE; 
 	Abuyin_Zukunft = 5;

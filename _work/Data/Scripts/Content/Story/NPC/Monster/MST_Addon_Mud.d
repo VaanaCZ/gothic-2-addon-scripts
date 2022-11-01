@@ -6,7 +6,7 @@
 
 prototype Mst_Default_Mud(C_Npc)
 {
-	name							= "“ËÌ‡";
+	name							= "–¢–∏–Ω–∞";
 	guild							= GIL_ZOMBIE;
 	aivar[AIV_MM_REAL_ID]			= ID_ZOMBIE;
 	level							= 0;	// Gothic I

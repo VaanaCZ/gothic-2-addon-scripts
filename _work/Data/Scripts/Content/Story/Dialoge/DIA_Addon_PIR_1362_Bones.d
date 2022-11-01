@@ -60,8 +60,8 @@ func void DIA_Addon_Bones_PICKPOCKET_BACK()
 // ************************************************************
 func void B_Addon_Bones_KeineZeit()
 {
-	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_01"); //Извини, у меня сейчас совсем нет времени.
-	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_02"); //Мне нужно тренироваться.
+	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_01"); //РР·РІРёРЅРё, Сѓ РјРµРЅСЏ СЃРµР№С‡Р°СЃ СЃРѕРІСЃРµРј РЅРµС‚ РІСЂРµРјРµРЅРё.
+	AI_Output (self ,other,"DIA_Addon_Bones_Train_01_02"); //РњРЅРµ РЅСѓР¶РЅРѕ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
 };
 // -------------------------------------------------------------
 INSTANCE DIA_Addon_Bones_Anheuern(C_INFO)
@@ -71,7 +71,7 @@ INSTANCE DIA_Addon_Bones_Anheuern(C_INFO)
 	condition	= DIA_Addon_Bones_Anheuern_Condition;
 	information	= DIA_Addon_Bones_Anheuern_Info;
 
-	description = "Нас ждет каньон.";
+	description = "РќР°СЃ Р¶РґРµС‚ РєР°РЅСЊРѕРЅ.";
 };                       
 FUNC INT DIA_Addon_Bones_Anheuern_Condition()
 {
@@ -82,7 +82,7 @@ FUNC INT DIA_Addon_Bones_Anheuern_Condition()
 };
 FUNC VOID DIA_Addon_Bones_Anheuern_Info()
 {	
-	AI_Output	(other, self, "DIA_Addon_Bones_Anheuern_15_01"); //Нас ждет каньон.
+	AI_Output	(other, self, "DIA_Addon_Bones_Anheuern_15_01"); //РќР°СЃ Р¶РґРµС‚ РєР°РЅСЊРѕРЅ.
 	B_Addon_Bones_KeineZeit();
 };
 
@@ -96,7 +96,7 @@ INSTANCE DIA_Addon_Bones_Hello(C_INFO)
 	condition	= DIA_Addon_Bones_Hello_Condition;
 	information	= DIA_Addon_Bones_Hello_Info;
 	permanent	= FALSE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Addon_Bones_Hello_Condition()
 {
@@ -105,12 +105,12 @@ FUNC INT DIA_Addon_Bones_Hello_Condition()
 
 FUNC VOID DIA_Addon_Bones_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Hello_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Addon_Bones_Hello_01_01"); //Грех жаловаться. Немного скучновато, но зато работать не приходится.
-	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_01"); //Я готовлюсь к новому заданию, которое дал мне Грег.
-	AI_Output (other,self ,"DIA_Addon_Bones_Work_15_02"); //Что это за задание?
-	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_03"); //Я не могу тебе сказать.
-	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_04"); //Не обижайся, приятель, но я тяжело трудился, чтобы получить это задание, и не хочу снова его потерять.
+	AI_Output (other,self ,"DIA_Addon_Bones_Hello_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Addon_Bones_Hello_01_01"); //Р“СЂРµС… Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ. РќРµРјРЅРѕРіРѕ СЃРєСѓС‡РЅРѕРІР°С‚Рѕ, РЅРѕ Р·Р°С‚Рѕ СЂР°Р±РѕС‚Р°С‚СЊ РЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ.
+	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_01"); //РЇ РіРѕС‚РѕРІР»СЋСЃСЊ Рє РЅРѕРІРѕРјСѓ Р·Р°РґР°РЅРёСЋ, РєРѕС‚РѕСЂРѕРµ РґР°Р» РјРЅРµ Р“СЂРµРі.
+	AI_Output (other,self ,"DIA_Addon_Bones_Work_15_02"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° Р·Р°РґР°РЅРёРµ?
+	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_03"); //РЇ РЅРµ РјРѕРіСѓ С‚РµР±Рµ СЃРєР°Р·Р°С‚СЊ.
+	AI_Output (self ,other,"DIA_Addon_Bones_Work_01_04"); //РќРµ РѕР±РёР¶Р°Р№СЃСЏ, РїСЂРёСЏС‚РµР»СЊ, РЅРѕ СЏ С‚СЏР¶РµР»Рѕ С‚СЂСѓРґРёР»СЃСЏ, С‡С‚РѕР±С‹ РїРѕР»СѓС‡РёС‚СЊ СЌС‚Рѕ Р·Р°РґР°РЅРёРµ, Рё РЅРµ С…РѕС‡Сѓ СЃРЅРѕРІР° РµРіРѕ РїРѕС‚РµСЂСЏС‚СЊ.
 	
 	Npc_ExchangeRoutine (self, "START");
 };
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Bones_Train(C_INFO)
 	condition	= DIA_Addon_Bones_Train_Condition;
 	information	= DIA_Addon_Bones_Train_Info;
 	permanent	= FALSE;
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 FUNC INT DIA_Addon_Bones_Train_Condition()
 {
@@ -136,7 +136,7 @@ FUNC INT DIA_Addon_Bones_Train_Condition()
 };
 func VOID DIA_Addon_Bones_Train_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Train_15_00"); //Ты можешь меня чему-нибудь научить?
+	AI_Output (other,self ,"DIA_Addon_Bones_Train_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РЅР°СѓС‡РёС‚СЊ?
 	B_Addon_Bones_KeineZeit();
 };
 
@@ -150,7 +150,7 @@ INSTANCE DIA_Addon_Bones_Teacher(C_INFO)
 	condition	= DIA_Addon_Bones_Teacher_Condition;
 	information	= DIA_Addon_Bones_Teacher_Info;
 	permanent	= FALSE;
-	description = "Кто здесь может научить меня чему-нибудь?";
+	description = "РљС‚Рѕ Р·РґРµСЃСЊ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 FUNC INT DIA_Addon_Bones_Teacher_Condition()
 {
@@ -161,14 +161,14 @@ FUNC INT DIA_Addon_Bones_Teacher_Condition()
 };
 FUNC VOID DIA_Addon_Bones_Teacher_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_00"); //Кто здесь может чему-нибудь меня научить?
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_04"); //Генри и Морган командуют нашими боевыми группами.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_05"); //Они могут научить тебя лучше сражаться.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_07"); //Люди Генри используют двуручное оружие.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_08"); //Морган же предпочитает более быстрые одноручные клинки.
-	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_09"); //А еще?
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_10"); //Знаешь, честно говоря, я больше ничем не интересовался.
-	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_11"); //Но думаю, Аллигатору Джеку или Сэмюэлю найдется, чем с тобой поделиться.
+	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_00"); //РљС‚Рѕ Р·РґРµСЃСЊ РјРѕР¶РµС‚ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РјРµРЅСЏ РЅР°СѓС‡РёС‚СЊ?
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_04"); //Р“РµРЅСЂРё Рё РњРѕСЂРіР°РЅ РєРѕРјР°РЅРґСѓСЋС‚ РЅР°С€РёРјРё Р±РѕРµРІС‹РјРё РіСЂСѓРїРїР°РјРё.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_05"); //РћРЅРё РјРѕРіСѓС‚ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ Р»СѓС‡С€Рµ СЃСЂР°Р¶Р°С‚СЊСЃСЏ.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_07"); //Р›СЋРґРё Р“РµРЅСЂРё РёСЃРїРѕР»СЊР·СѓСЋС‚ РґРІСѓСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_08"); //РњРѕСЂРіР°РЅ Р¶Рµ РїСЂРµРґРїРѕС‡РёС‚Р°РµС‚ Р±РѕР»РµРµ Р±С‹СЃС‚СЂС‹Рµ РѕРґРЅРѕСЂСѓС‡РЅС‹Рµ РєР»РёРЅРєРё.
+	AI_Output (other,self ,"DIA_Addon_Bones_Teacher_15_09"); //Рђ РµС‰Рµ?
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_10"); //Р—РЅР°РµС€СЊ, С‡РµСЃС‚РЅРѕ РіРѕРІРѕСЂСЏ, СЏ Р±РѕР»СЊС€Рµ РЅРёС‡РµРј РЅРµ РёРЅС‚РµСЂРµСЃРѕРІР°Р»СЃСЏ.
+	AI_Output (self ,other,"DIA_Addon_Bones_Teacher_01_11"); //РќРѕ РґСѓРјР°СЋ, РђР»Р»РёРіР°С‚РѕСЂСѓ Р”Р¶РµРєСѓ РёР»Рё РЎСЌРјСЋСЌР»СЋ РЅР°Р№РґРµС‚СЃСЏ, С‡РµРј СЃ С‚РѕР±РѕР№ РїРѕРґРµР»РёС‚СЊСЃСЏ.
 	Knows_HenrysEntertrupp = TRUE;
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
@@ -178,7 +178,7 @@ FUNC VOID DIA_Addon_Bones_Teacher_Info()
 };
 
 // ************************************************************
-// 			  			Was weiЯt du ьber Francis?
+// 			  			Was weiРЇt du СЊber Francis?
 // ************************************************************
 INSTANCE DIA_Addon_Bones_Francis(C_INFO)
 {
@@ -187,7 +187,7 @@ INSTANCE DIA_Addon_Bones_Francis(C_INFO)
 	condition	= DIA_Addon_Bones_Francis_Condition;
 	information	= DIA_Addon_Bones_Francis_Info;
 	permanent	= FALSE;
-	description = "Что ты скажешь о Фрэнсисе?";
+	description = "Р§С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?";
 };                       
 FUNC INT DIA_Addon_Bones_Francis_Condition()
 {
@@ -203,10 +203,10 @@ FUNC INT DIA_Addon_Bones_Francis_Condition()
 
 FUNC VOID DIA_Addon_Bones_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_Francis_15_00"); //Что ты скажешь о Фрэнсисе?
-	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_03"); //Посмотри вокруг. Работает только Генри и его люди.
-	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_04"); //Морган целыми днями либо спит, либо пьет самогон.
-	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_05"); //При Греге такого не бывает. Если ты бездельничаешь, ты получаешь по шее. Вот и все.
+	AI_Output (other,self ,"DIA_Addon_Bones_Francis_15_00"); //Р§С‚Рѕ С‚С‹ СЃРєР°Р¶РµС€СЊ Рѕ Р¤СЂСЌРЅСЃРёСЃРµ?
+	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_03"); //РџРѕСЃРјРѕС‚СЂРё РІРѕРєСЂСѓРі. Р Р°Р±РѕС‚Р°РµС‚ С‚РѕР»СЊРєРѕ Р“РµРЅСЂРё Рё РµРіРѕ Р»СЋРґРё.
+	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_04"); //РњРѕСЂРіР°РЅ С†РµР»С‹РјРё РґРЅСЏРјРё Р»РёР±Рѕ СЃРїРёС‚, Р»РёР±Рѕ РїСЊРµС‚ СЃР°РјРѕРіРѕРЅ.
+	AI_Output (self ,other,"DIA_Addon_Bones_Francis_01_05"); //РџСЂРё Р“СЂРµРіРµ С‚Р°РєРѕРіРѕ РЅРµ Р±С‹РІР°РµС‚. Р•СЃР»Рё С‚С‹ Р±РµР·РґРµР»СЊРЅРёС‡Р°РµС€СЊ, С‚С‹ РїРѕР»СѓС‡Р°РµС€СЊ РїРѕ С€РµРµ. Р’РѕС‚ Рё РІСЃРµ.
 };
 
 //*********************************************************
@@ -219,7 +219,7 @@ instance DIA_Addon_Bones_WantArmor(C_INFO)
 	condition	= DIA_Addon_Bones_WantArmor_Condition;
 	information	= DIA_Addon_Bones_WantArmor_Info;
 	permanent	= TRUE;
-	description = "Отдай мне бандитские доспехи.";
+	description = "РћС‚РґР°Р№ РјРЅРµ Р±Р°РЅРґРёС‚СЃРєРёРµ РґРѕСЃРїРµС…Рё.";
 };                       
 FUNC INT DIA_Addon_Bones_WantArmor_Condition()
 {
@@ -232,19 +232,19 @@ FUNC INT DIA_Addon_Bones_WantArmor_Condition()
 
 FUNC VOID DIA_Addon_Bones_WantArmor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_WantArmor_15_00"); //Отдай мне бандитские доспехи.
-	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_01"); //Я еще не свихнулся. Грег мне голову оторвет.
-	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_02"); //Он сказал мне, что без его приказа я не должен никому их отдавать.
+	AI_Output (other,self ,"DIA_Addon_Bones_WantArmor_15_00"); //РћС‚РґР°Р№ РјРЅРµ Р±Р°РЅРґРёС‚СЃРєРёРµ РґРѕСЃРїРµС…Рё.
+	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_01"); //РЇ РµС‰Рµ РЅРµ СЃРІРёС…РЅСѓР»СЃСЏ. Р“СЂРµРі РјРЅРµ РіРѕР»РѕРІСѓ РѕС‚РѕСЂРІРµС‚.
+	AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_02"); //РћРЅ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р±РµР· РµРіРѕ РїСЂРёРєР°Р·Р° СЏ РЅРµ РґРѕР»Р¶РµРЅ РЅРёРєРѕРјСѓ РёС… РѕС‚РґР°РІР°С‚СЊ.
 	if (GregIsBack == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_03"); //Нет, я не могу дать их тебе. Тем более, когда Грега здесь нет.
+		AI_Output (self ,other,"DIA_Addon_Bones_WantArmor_01_03"); //РќРµС‚, СЏ РЅРµ РјРѕРіСѓ РґР°С‚СЊ РёС… С‚РµР±Рµ. РўРµРј Р±РѕР»РµРµ, РєРѕРіРґР° Р“СЂРµРіР° Р·РґРµСЃСЊ РЅРµС‚.
 	};
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Бонес не отдаст мне доспехи, пока я не получу разрешение Грега."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Р‘РѕРЅРµСЃ РЅРµ РѕС‚РґР°СЃС‚ РјРЅРµ РґРѕСЃРїРµС…Рё, РїРѕРєР° СЏ РЅРµ РїРѕР»СѓС‡Сѓ СЂР°Р·СЂРµС€РµРЅРёРµ Р“СЂРµРіР°."); 
 };
 
 //*********************************************************
-//	Du sollst mir die Rьstung geben.
+//	Du sollst mir die RСЊstung geben.
 //*********************************************************
 instance DIA_Addon_Bones_GiveArmor(C_INFO)
 {
@@ -253,7 +253,7 @@ instance DIA_Addon_Bones_GiveArmor(C_INFO)
 	condition	= DIA_Addon_Bones_GiveArmor_Condition;
 	information	= DIA_Addon_Bones_GiveArmor_Info;
 	permanent	= FALSE;
-	description = "Ты должен отдать мне доспехи бандитов. Приказ Грега.";
+	description = "РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РґР°С‚СЊ РјРЅРµ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚РѕРІ. РџСЂРёРєР°Р· Р“СЂРµРіР°.";
 };                       
 FUNC INT DIA_Addon_Bones_GiveArmor_Condition()
 {
@@ -264,18 +264,18 @@ FUNC INT DIA_Addon_Bones_GiveArmor_Condition()
 };
 func VOID DIA_Addon_Bones_GiveArmor_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_00"); //Ты должен отдать мне доспехи бандитов. Приказ Грега.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_01"); //Приказ Грега? Фу, а я-то думал мне действительно придется идти на это задание.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_02"); //Разведка в лагере бандитов - это просто самоубийство.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_03"); //Пусть уж лучше Грег взвалит на меня какую-нибудь скучную работу...
-	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_04"); //(раздраженно) Доспехи.
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_05"); //Да, конечно, вот они.
+	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РґР°С‚СЊ РјРЅРµ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚РѕРІ. РџСЂРёРєР°Р· Р“СЂРµРіР°.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_01"); //РџСЂРёРєР°Р· Р“СЂРµРіР°? Р¤Сѓ, Р° СЏ-С‚Рѕ РґСѓРјР°Р» РјРЅРµ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂРёРґРµС‚СЃСЏ РёРґС‚Рё РЅР° СЌС‚Рѕ Р·Р°РґР°РЅРёРµ.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_02"); //Р Р°Р·РІРµРґРєР° РІ Р»Р°РіРµСЂРµ Р±Р°РЅРґРёС‚РѕРІ - СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ СЃР°РјРѕСѓР±РёР№СЃС‚РІРѕ.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_03"); //РџСѓСЃС‚СЊ СѓР¶ Р»СѓС‡С€Рµ Р“СЂРµРі РІР·РІР°Р»РёС‚ РЅР° РјРµРЅСЏ РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ СЃРєСѓС‡РЅСѓСЋ СЂР°Р±РѕС‚Сѓ...
+	AI_Output (other,self ,"DIA_Addon_Bones_GiveArmor_15_04"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р”РѕСЃРїРµС…Рё.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_05"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ, РІРѕС‚ РѕРЅРё.
 	B_GiveInvItems (self,other,ItAr_BDT_M,1);
-	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_06"); //Будь осторожнее. С этими бандитами шутки плохи.
+	AI_Output (self ,other,"DIA_Addon_Bones_GiveArmor_01_06"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РЅРµРµ. РЎ СЌС‚РёРјРё Р±Р°РЅРґРёС‚Р°РјРё С€СѓС‚РєРё РїР»РѕС…Рё.
 	self.flags = 0;
 	PIR_1320_Addon_Greg.flags = 0;
 	
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Приказ Грега возымел свое действие. Доспехи у меня!"); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"РџСЂРёРєР°Р· Р“СЂРµРіР° РІРѕР·С‹РјРµР» СЃРІРѕРµ РґРµР№СЃС‚РІРёРµ. Р”РѕСЃРїРµС…Рё Сѓ РјРµРЅСЏ!"); 
 	
 	B_GivePlayerXP (XP_Bones_GetBDTArmor);
 };

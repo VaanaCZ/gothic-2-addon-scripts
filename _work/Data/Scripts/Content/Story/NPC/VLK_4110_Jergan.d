@@ -2,7 +2,7 @@
 instance VLK_4110_Jergan (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Джерган";
+	name 		= "Р”Р¶РµСЂРіР°РЅ";
 	guild 		= GIL_NONE;
 	id 			= 4110;
 	voice 		= 13;

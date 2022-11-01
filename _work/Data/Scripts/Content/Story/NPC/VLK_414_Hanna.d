@@ -2,7 +2,7 @@
 instance VLK_414_Hanna (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ханна";
+	name 		= "РҐР°РЅРЅР°";
 	guild 		= GIL_VLK;
 	id 			= 414;
 	voice 		= 17;

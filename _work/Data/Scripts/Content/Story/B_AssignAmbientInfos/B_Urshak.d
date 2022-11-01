@@ -45,33 +45,33 @@ func int DIA_Urshak_HALLO_Condition ()
 
 func void DIA_Urshak_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_00"); //(агрессивно) КРОТОК ДЖАБАРТ!!!
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_01"); //Стой! Моя знать тебя. Ты друг человек с мягким голосом.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_02"); //Друг убивать злого демона КРУШАКА.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_00"); //(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РљР РћРўРћРљ Р”Р–РђР‘РђР Рў!!!
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_01"); //РЎС‚РѕР№! РњРѕСЏ Р·РЅР°С‚СЊ С‚РµР±СЏ. РўС‹ РґСЂСѓРі С‡РµР»РѕРІРµРє СЃ РјСЏРіРєРёРј РіРѕР»РѕСЃРѕРј.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_02"); //Р”СЂСѓРі СѓР±РёРІР°С‚СЊ Р·Р»РѕРіРѕ РґРµРјРѕРЅР° РљР РЈРЁРђРљРђ.
 	
 	B_GivePlayerXP (XP_UrshakFound);
 	
 	Log_CreateTopic (TOPIC_Urshak, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Urshak, LOG_RUNNING);
-	B_LogEntry (TOPIC_Urshak,"Я нашел своего старого друга-орка - Ур-Шака."); 
+	B_LogEntry (TOPIC_Urshak,"РЇ РЅР°С€РµР» СЃРІРѕРµРіРѕ СЃС‚Р°СЂРѕРіРѕ РґСЂСѓРіР°-РѕСЂРєР° - РЈСЂ-РЁР°РєР°."); 
 
 	Info_ClearChoices	(DIA_Urshak_HALLO);
-	Info_AddChoice	(DIA_Urshak_HALLO, "Что ты делаешь здесь?", DIA_Urshak_HALLO_freund );
-	Info_AddChoice	(DIA_Urshak_HALLO, "Говорящий орк?", DIA_Urshak_HALLO_wer );
+	Info_AddChoice	(DIA_Urshak_HALLO, "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?", DIA_Urshak_HALLO_freund );
+	Info_AddChoice	(DIA_Urshak_HALLO, "Р“РѕРІРѕСЂСЏС‰РёР№ РѕСЂРє?", DIA_Urshak_HALLO_wer );
 };
 func void DIA_Urshak_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //Говорящий орк?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //Твоя забывать Ур-Шак? Это печалить меня.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //Ур-Шак помогать другу много дней раньше получить УЛУ-МУЛУ для ходить в моя деревня. Орки уважать друга, и друг не умирать от руки орков.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Друг потом ходить в храм орков и изгонять злого демона. Много дней раньше. Твоя не помнить?
+	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //Р“РѕРІРѕСЂСЏС‰РёР№ РѕСЂРє?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //РўРІРѕСЏ Р·Р°Р±С‹РІР°С‚СЊ РЈСЂ-РЁР°Рє? Р­С‚Рѕ РїРµС‡Р°Р»РёС‚СЊ РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //РЈСЂ-РЁР°Рє РїРѕРјРѕРіР°С‚СЊ РґСЂСѓРіСѓ РјРЅРѕРіРѕ РґРЅРµР№ СЂР°РЅСЊС€Рµ РїРѕР»СѓС‡РёС‚СЊ РЈР›РЈ-РњРЈР›РЈ РґР»СЏ С…РѕРґРёС‚СЊ РІ РјРѕСЏ РґРµСЂРµРІРЅСЏ. РћСЂРєРё СѓРІР°Р¶Р°С‚СЊ РґСЂСѓРіР°, Рё РґСЂСѓРі РЅРµ СѓРјРёСЂР°С‚СЊ РѕС‚ СЂСѓРєРё РѕСЂРєРѕРІ.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Р”СЂСѓРі РїРѕС‚РѕРј С…РѕРґРёС‚СЊ РІ С…СЂР°Рј РѕСЂРєРѕРІ Рё РёР·РіРѕРЅСЏС‚СЊ Р·Р»РѕРіРѕ РґРµРјРѕРЅР°. РњРЅРѕРіРѕ РґРЅРµР№ СЂР°РЅСЊС€Рµ. РўРІРѕСЏ РЅРµ РїРѕРјРЅРёС‚СЊ?
 
 };
 
 func void DIA_Urshak_HALLO_freund ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //Ты выбрал не лучшее время, чтобы встать у меня на пути. Я чуть не убил тебя. Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ур-Шак смотреть на землю и видеть, что стало с землей и мой народ.
+	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //РўС‹ РІС‹Р±СЂР°Р» РЅРµ Р»СѓС‡С€РµРµ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РІСЃС‚Р°С‚СЊ Сѓ РјРµРЅСЏ РЅР° РїСѓС‚Рё. РЇ С‡СѓС‚СЊ РЅРµ СѓР±РёР» С‚РµР±СЏ. Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //РЈСЂ-РЁР°Рє СЃРјРѕС‚СЂРµС‚СЊ РЅР° Р·РµРјР»СЋ Рё РІРёРґРµС‚СЊ, С‡С‚Рѕ СЃС‚Р°Р»Рѕ СЃ Р·РµРјР»РµР№ Рё РјРѕР№ РЅР°СЂРѕРґ.
 	Info_ClearChoices	(DIA_Urshak_HALLO);
 };
 
@@ -87,7 +87,7 @@ instance DIA_Urshak_WASMACHENORKS		(C_INFO)
 	condition	 = 	DIA_Urshak_WASMACHENORKS_Condition;
 	information	 = 	DIA_Urshak_WASMACHENORKS_Info;
 
-	description	 = 	"Почему орки нападают на людей?";
+	description	 = 	"РџРѕС‡РµРјСѓ РѕСЂРєРё РЅР°РїР°РґР°СЋС‚ РЅР° Р»СЋРґРµР№?";
 };
 
 func int DIA_Urshak_WASMACHENORKS_Condition ()
@@ -101,11 +101,11 @@ func int DIA_Urshak_WASMACHENORKS_Condition ()
 
 func void DIA_Urshak_WASMACHENORKS_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //Почему орки нападают на людей?
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //Ур-Шак всегда говорить народ орков, что люди не зло и с ними надо дружить.
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Но шаман не слушать Ур-Шак. Ур-Шак в немилость у свой народ.
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_03"); //Поэтому Ур-Шак не знать точно о большой план войны против людей.
-	B_LogEntry (TOPIC_Urshak,"Он все еще никак не может заставить свой народ выслушать его. Он все еще изгнанник."); 
+	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //РџРѕС‡РµРјСѓ РѕСЂРєРё РЅР°РїР°РґР°СЋС‚ РЅР° Р»СЋРґРµР№?
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //РЈСЂ-РЁР°Рє РІСЃРµРіРґР° РіРѕРІРѕСЂРёС‚СЊ РЅР°СЂРѕРґ РѕСЂРєРѕРІ, С‡С‚Рѕ Р»СЋРґРё РЅРµ Р·Р»Рѕ Рё СЃ РЅРёРјРё РЅР°РґРѕ РґСЂСѓР¶РёС‚СЊ.
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //РќРѕ С€Р°РјР°РЅ РЅРµ СЃР»СѓС€Р°С‚СЊ РЈСЂ-РЁР°Рє. РЈСЂ-РЁР°Рє РІ РЅРµРјРёР»РѕСЃС‚СЊ Сѓ СЃРІРѕР№ РЅР°СЂРѕРґ.
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_03"); //РџРѕСЌС‚РѕРјСѓ РЈСЂ-РЁР°Рє РЅРµ Р·РЅР°С‚СЊ С‚РѕС‡РЅРѕ Рѕ Р±РѕР»СЊС€РѕР№ РїР»Р°РЅ РІРѕР№РЅС‹ РїСЂРѕС‚РёРІ Р»СЋРґРµР№.
+	B_LogEntry (TOPIC_Urshak,"РћРЅ РІСЃРµ РµС‰Рµ РЅРёРєР°Рє РЅРµ РјРѕР¶РµС‚ Р·Р°СЃС‚Р°РІРёС‚СЊ СЃРІРѕР№ РЅР°СЂРѕРґ РІС‹СЃР»СѓС€Р°С‚СЊ РµРіРѕ. РћРЅ РІСЃРµ РµС‰Рµ РёР·РіРЅР°РЅРЅРёРє."); 
 };
 
 
@@ -119,7 +119,7 @@ instance DIA_Urshak_SOVIELE		(C_INFO)
 	condition	 = 	DIA_Urshak_SOVIELE_Condition;
 	information	 = 	DIA_Urshak_SOVIELE_Info;
 
-	description	 = 	"Почему вас здесь так много?";
+	description	 = 	"РџРѕС‡РµРјСѓ РІР°СЃ Р·РґРµСЃСЊ С‚Р°Рє РјРЅРѕРіРѕ?";
 };
 
 func int DIA_Urshak_SOVIELE_Condition ()
@@ -133,8 +133,8 @@ func int DIA_Urshak_SOVIELE_Condition ()
 
 func void DIA_Urshak_SOVIELE_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //Почему вас здесь так много?
-	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //Орки приходить с гор, но другие приплывать на кораблях и делать большой забор.
+	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //РџРѕС‡РµРјСѓ РІР°СЃ Р·РґРµСЃСЊ С‚Р°Рє РјРЅРѕРіРѕ?
+	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //РћСЂРєРё РїСЂРёС…РѕРґРёС‚СЊ СЃ РіРѕСЂ, РЅРѕ РґСЂСѓРіРёРµ РїСЂРёРїР»С‹РІР°С‚СЊ РЅР° РєРѕСЂР°Р±Р»СЏС… Рё РґРµР»Р°С‚СЊ Р±РѕР»СЊС€РѕР№ Р·Р°Р±РѕСЂ.
 };
 
 
@@ -148,7 +148,7 @@ instance DIA_Urshak_ZAUN		(C_INFO)
 	condition	 = 	DIA_Urshak_ZAUN_Condition;
 	information	 = 	DIA_Urshak_ZAUN_Info;
 
-	description	 = 	"Что скрывается за этим частоколом орков на востоке?";
+	description	 = 	"Р§С‚Рѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ Р·Р° СЌС‚РёРј С‡Р°СЃС‚РѕРєРѕР»РѕРј РѕСЂРєРѕРІ РЅР° РІРѕСЃС‚РѕРєРµ?";
 };
 
 func int DIA_Urshak_ZAUN_Condition ()
@@ -162,9 +162,9 @@ func int DIA_Urshak_ZAUN_Condition ()
 
 func void DIA_Urshak_ZAUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_ZAUN_15_00"); //Что скрывается за этим частоколом орков на востоке?
-	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_01"); //Орки всегда делать большой забор и готовить лагерь к война.
-	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_02"); //Забор хорошо для война. Скрывать сила армия и защищать орков.
+	AI_Output			(other, self, "DIA_Urshak_ZAUN_15_00"); //Р§С‚Рѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ Р·Р° СЌС‚РёРј С‡Р°СЃС‚РѕРєРѕР»РѕРј РѕСЂРєРѕРІ РЅР° РІРѕСЃС‚РѕРєРµ?
+	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_01"); //РћСЂРєРё РІСЃРµРіРґР° РґРµР»Р°С‚СЊ Р±РѕР»СЊС€РѕР№ Р·Р°Р±РѕСЂ Рё РіРѕС‚РѕРІРёС‚СЊ Р»Р°РіРµСЂСЊ Рє РІРѕР№РЅР°.
+	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_02"); //Р—Р°Р±РѕСЂ С…РѕСЂРѕС€Рѕ РґР»СЏ РІРѕР№РЅР°. РЎРєСЂС‹РІР°С‚СЊ СЃРёР»Р° Р°СЂРјРёСЏ Рё Р·Р°С‰РёС‰Р°С‚СЊ РѕСЂРєРѕРІ.
 };
 
 
@@ -179,7 +179,7 @@ instance DIA_Urshak_WASHASTDUVOR		(C_INFO)
 	condition	 = 	DIA_Urshak_WASHASTDUVOR_Condition;
 	information	 = 	DIA_Urshak_WASHASTDUVOR_Info;
 
-	description	 = 	"Что ты планируешь делать дальше?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?";
 };
 
 func int DIA_Urshak_WASHASTDUVOR_Condition ()
@@ -193,32 +193,32 @@ func int DIA_Urshak_WASHASTDUVOR_Condition ()
 
 func void DIA_Urshak_WASHASTDUVOR_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Что вы планируете делать дальше?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //Ур-Шак ждать, пока разведчики орков приводить Ур-Шак к Хош-Пак.
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_02"); //Кто такой Хош-Пак?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //Очень большой шаман. Иметь большое влияние на воинов и делать большие планы для орков.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Р§С‚Рѕ РІС‹ РїР»Р°РЅРёСЂСѓРµС‚Рµ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //РЈСЂ-РЁР°Рє Р¶РґР°С‚СЊ, РїРѕРєР° СЂР°Р·РІРµРґС‡РёРєРё РѕСЂРєРѕРІ РїСЂРёРІРѕРґРёС‚СЊ РЈСЂ-РЁР°Рє Рє РҐРѕС€-РџР°Рє.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_02"); //РљС‚Рѕ С‚Р°РєРѕР№ РҐРѕС€-РџР°Рє?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //РћС‡РµРЅСЊ Р±РѕР»СЊС€РѕР№ С€Р°РјР°РЅ. РРјРµС‚СЊ Р±РѕР»СЊС€РѕРµ РІР»РёСЏРЅРёРµ РЅР° РІРѕРёРЅРѕРІ Рё РґРµР»Р°С‚СЊ Р±РѕР»СЊС€РёРµ РїР»Р°РЅС‹ РґР»СЏ РѕСЂРєРѕРІ.
 
-	B_LogEntry (TOPIC_Urshak,"Ур-Шак хочет встретиться с шаманом орков Хош-Паком и убедить его принять Ур-Шака назад в совет шаманов."); 
+	B_LogEntry (TOPIC_Urshak,"РЈСЂ-РЁР°Рє С…РѕС‡РµС‚ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ С€Р°РјР°РЅРѕРј РѕСЂРєРѕРІ РҐРѕС€-РџР°РєРѕРј Рё СѓР±РµРґРёС‚СЊ РµРіРѕ РїСЂРёРЅСЏС‚СЊ РЈСЂ-РЁР°РєР° РЅР°Р·Р°Рґ РІ СЃРѕРІРµС‚ С€Р°РјР°РЅРѕРІ."); 
 
 	Info_ClearChoices	(DIA_Urshak_WASHASTDUVOR);
 
 	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, DIALOG_BACK, DIA_Urshak_WASHASTDUVOR_weiter );
-	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Где я могу найти этого Хош-Пака?", DIA_Urshak_WASHASTDUVOR_ );
-	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Почему ты тогда не пойдешь к нему?", DIA_Urshak_WASHASTDUVOR_hoshpak );
+	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ РҐРѕС€-РџР°РєР°?", DIA_Urshak_WASHASTDUVOR_ );
+	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "РџРѕС‡РµРјСѓ С‚С‹ С‚РѕРіРґР° РЅРµ РїРѕР№РґРµС€СЊ Рє РЅРµРјСѓ?", DIA_Urshak_WASHASTDUVOR_hoshpak );
 };
 func void DIA_Urshak_WASHASTDUVOR_hoshpak ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //Почему ты тогда не пойдешь к нему?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //Ур-Шак пытаться и пытаться получить опять честь и старое место в совет шаманов.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //Но пока Хош-Пак не слушать Ур-Шак. Орки убивать Ур-Шак если видеть его без разведчиков. Ур-Шак должен говорить с Хош-Пак.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //Может быть, это удаваться сегодня.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //РџРѕС‡РµРјСѓ С‚С‹ С‚РѕРіРґР° РЅРµ РїРѕР№РґРµС€СЊ Рє РЅРµРјСѓ?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //РЈСЂ-РЁР°Рє РїС‹С‚Р°С‚СЊСЃСЏ Рё РїС‹С‚Р°С‚СЊСЃСЏ РїРѕР»СѓС‡РёС‚СЊ РѕРїСЏС‚СЊ С‡РµСЃС‚СЊ Рё СЃС‚Р°СЂРѕРµ РјРµСЃС‚Рѕ РІ СЃРѕРІРµС‚ С€Р°РјР°РЅРѕРІ.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //РќРѕ РїРѕРєР° РҐРѕС€-РџР°Рє РЅРµ СЃР»СѓС€Р°С‚СЊ РЈСЂ-РЁР°Рє. РћСЂРєРё СѓР±РёРІР°С‚СЊ РЈСЂ-РЁР°Рє РµСЃР»Рё РІРёРґРµС‚СЊ РµРіРѕ Р±РµР· СЂР°Р·РІРµРґС‡РёРєРѕРІ. РЈСЂ-РЁР°Рє РґРѕР»Р¶РµРЅ РіРѕРІРѕСЂРёС‚СЊ СЃ РҐРѕС€-РџР°Рє.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЌС‚Рѕ СѓРґР°РІР°С‚СЊСЃСЏ СЃРµРіРѕРґРЅСЏ.
 	
 };
 
 func void DIA_Urshak_WASHASTDUVOR_ ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_Urshak_15_00"); //Где я могу найти этого Хош-Пака?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //Он там где может наблюдать за воины орков у крепости у большой вулкан, чтобы Хош-Пак мочь контролировать воины.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_Urshak_15_00"); //Р“РґРµ СЏ РјРѕРіСѓ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ РҐРѕС€-РџР°РєР°?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //РћРЅ С‚Р°Рј РіРґРµ РјРѕР¶РµС‚ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РІРѕРёРЅС‹ РѕСЂРєРѕРІ Сѓ РєСЂРµРїРѕСЃС‚Рё Сѓ Р±РѕР»СЊС€РѕР№ РІСѓР»РєР°РЅ, С‡С‚РѕР±С‹ РҐРѕС€-РџР°Рє РјРѕС‡СЊ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ РІРѕРёРЅС‹.
 
 };
 
@@ -239,7 +239,7 @@ instance DIA_Urshak_HOSHPAKDEAD		(C_INFO)
 	condition	 = 	DIA_Urshak_HOSHPAKDEAD_Condition;
 	information	 = 	DIA_Urshak_HOSHPAKDEAD_Info;
 
-	description	 = 	"Хош-Пак мертв.";
+	description	 = 	"РҐРѕС€-РџР°Рє РјРµСЂС‚РІ.";
 };
 
 func int DIA_Urshak_HOSHPAKDEAD_Condition ()
@@ -254,15 +254,15 @@ func int DIA_Urshak_HOSHPAKDEAD_Condition ()
 
 func void DIA_Urshak_HOSHPAKDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Хош-Пак мертв.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //Хош-Пак мертв? РУШТАСОК!
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //Мое сердце большая печаль. Ур-Шак никогда не забывать великий орк делать Ур-Шак шаман.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //Я понимаю. Хош-Пак был твоим учителем.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //Ур-Шак теперь должен носить ношу горя, должен дать Хош-Пак последний обряд. Ур-Шак надо идти.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //Друг лучше уходить проход. Слишком опасно здесь.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //Ур-Шак печалиться если человек тоже умирать.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //РҐРѕС€-РџР°Рє РјРµСЂС‚РІ.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //РҐРѕС€-РџР°Рє РјРµСЂС‚РІ? Р РЈРЁРўРђРЎРћРљ!
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //РњРѕРµ СЃРµСЂРґС†Рµ Р±РѕР»СЊС€Р°СЏ РїРµС‡Р°Р»СЊ. РЈСЂ-РЁР°Рє РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±С‹РІР°С‚СЊ РІРµР»РёРєРёР№ РѕСЂРє РґРµР»Р°С‚СЊ РЈСЂ-РЁР°Рє С€Р°РјР°РЅ.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //РЇ РїРѕРЅРёРјР°СЋ. РҐРѕС€-РџР°Рє Р±С‹Р» С‚РІРѕРёРј СѓС‡РёС‚РµР»РµРј.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //РЈСЂ-РЁР°Рє С‚РµРїРµСЂСЊ РґРѕР»Р¶РµРЅ РЅРѕСЃРёС‚СЊ РЅРѕС€Сѓ РіРѕСЂСЏ, РґРѕР»Р¶РµРЅ РґР°С‚СЊ РҐРѕС€-РџР°Рє РїРѕСЃР»РµРґРЅРёР№ РѕР±СЂСЏРґ. РЈСЂ-РЁР°Рє РЅР°РґРѕ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //Р”СЂСѓРі Р»СѓС‡С€Рµ СѓС…РѕРґРёС‚СЊ РїСЂРѕС…РѕРґ. РЎР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //РЈСЂ-РЁР°Рє РїРµС‡Р°Р»РёС‚СЊСЃСЏ РµСЃР»Рё С‡РµР»РѕРІРµРє С‚РѕР¶Рµ СѓРјРёСЂР°С‚СЊ.
 
-	B_LogEntry (TOPIC_Urshak,"Хош-Пак мертв. Мой друг орк направляется в палатку Хош-Пака. Он скорбит по своему наставнику. Я должен отпустить его."); 
+	B_LogEntry (TOPIC_Urshak,"РҐРѕС€-РџР°Рє РјРµСЂС‚РІ. РњРѕР№ РґСЂСѓРі РѕСЂРє РЅР°РїСЂР°РІР»СЏРµС‚СЃСЏ РІ РїР°Р»Р°С‚РєСѓ РҐРѕС€-РџР°РєР°. РћРЅ СЃРєРѕСЂР±РёС‚ РїРѕ СЃРІРѕРµРјСѓ РЅР°СЃС‚Р°РІРЅРёРєСѓ. РЇ РґРѕР»Р¶РµРЅ РѕС‚РїСѓСЃС‚РёС‚СЊ РµРіРѕ."); 
 
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);
@@ -297,7 +297,7 @@ func int DIA_Urshak_GEH_Condition ()
 
 func void DIA_Urshak_GEH_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //Друг лучше уходить проход.
+	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //Р”СЂСѓРі Р»СѓС‡С€Рµ СѓС…РѕРґРёС‚СЊ РїСЂРѕС…РѕРґ.
 	Npc_SetRefuseTalk (self,10);
 	AI_StopProcessInfos (self);
 };
@@ -326,16 +326,16 @@ func int DIA_Urshak_HOSHPAKRACHE_Condition ()
 
 func void DIA_Urshak_HOSHPAKRACHE_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //(агрессивно) КХРОТОК! Я узнавать, что ты быть здесь когда Хош-Пак убивать. Твоя делать большая ошибка, чужак.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //Я вижу, ты занял свое место здесь. Ты обманул меня.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //Твое положение среди твоих людей выше, чем ты это говорил. Теперь ты сам не более чем инструмент в руках дьявола.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Чужак прав. Ур-Шак наполняться только ненависть и месть теперь.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //Ур-Шак видеть большая ошибка доверять злой человек. Ур-Шак сожалеть звать человек другом и помогать ему не быть убит.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Чужак теперь покидать долина и идти проход. Ур-Шак не будет убивать чужак сейчас. Честь шамана говорит Ур-Шак не убивать.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //Следующий раз мы встречаться мы враги. Твоя лучше уходить сейчас.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //(Р°РіСЂРµСЃСЃРёРІРЅРѕ) РљРҐР РћРўРћРљ! РЇ СѓР·РЅР°РІР°С‚СЊ, С‡С‚Рѕ С‚С‹ Р±С‹С‚СЊ Р·РґРµСЃСЊ РєРѕРіРґР° РҐРѕС€-РџР°Рє СѓР±РёРІР°С‚СЊ. РўРІРѕСЏ РґРµР»Р°С‚СЊ Р±РѕР»СЊС€Р°СЏ РѕС€РёР±РєР°, С‡СѓР¶Р°Рє.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //РЇ РІРёР¶Сѓ, С‚С‹ Р·Р°РЅСЏР» СЃРІРѕРµ РјРµСЃС‚Рѕ Р·РґРµСЃСЊ. РўС‹ РѕР±РјР°РЅСѓР» РјРµРЅСЏ.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //РўРІРѕРµ РїРѕР»РѕР¶РµРЅРёРµ СЃСЂРµРґРё С‚РІРѕРёС… Р»СЋРґРµР№ РІС‹С€Рµ, С‡РµРј С‚С‹ СЌС‚Рѕ РіРѕРІРѕСЂРёР». РўРµРїРµСЂСЊ С‚С‹ СЃР°Рј РЅРµ Р±РѕР»РµРµ С‡РµРј РёРЅСЃС‚СЂСѓРјРµРЅС‚ РІ СЂСѓРєР°С… РґСЊСЏРІРѕР»Р°.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Р§СѓР¶Р°Рє РїСЂР°РІ. РЈСЂ-РЁР°Рє РЅР°РїРѕР»РЅСЏС‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РЅРµРЅР°РІРёСЃС‚СЊ Рё РјРµСЃС‚СЊ С‚РµРїРµСЂСЊ.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //РЈСЂ-РЁР°Рє РІРёРґРµС‚СЊ Р±РѕР»СЊС€Р°СЏ РѕС€РёР±РєР° РґРѕРІРµСЂСЏС‚СЊ Р·Р»РѕР№ С‡РµР»РѕРІРµРє. РЈСЂ-РЁР°Рє СЃРѕР¶Р°Р»РµС‚СЊ Р·РІР°С‚СЊ С‡РµР»РѕРІРµРє РґСЂСѓРіРѕРј Рё РїРѕРјРѕРіР°С‚СЊ РµРјСѓ РЅРµ Р±С‹С‚СЊ СѓР±РёС‚.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Р§СѓР¶Р°Рє С‚РµРїРµСЂСЊ РїРѕРєРёРґР°С‚СЊ РґРѕР»РёРЅР° Рё РёРґС‚Рё РїСЂРѕС…РѕРґ. РЈСЂ-РЁР°Рє РЅРµ Р±СѓРґРµС‚ СѓР±РёРІР°С‚СЊ С‡СѓР¶Р°Рє СЃРµР№С‡Р°СЃ. Р§РµСЃС‚СЊ С€Р°РјР°РЅР° РіРѕРІРѕСЂРёС‚ РЈСЂ-РЁР°Рє РЅРµ СѓР±РёРІР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //РЎР»РµРґСѓСЋС‰РёР№ СЂР°Р· РјС‹ РІСЃС‚СЂРµС‡Р°С‚СЊСЃСЏ РјС‹ РІСЂР°РіРё. РўРІРѕСЏ Р»СѓС‡С€Рµ СѓС…РѕРґРёС‚СЊ СЃРµР№С‡Р°СЃ.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
-	B_LogEntry (TOPIC_Urshak,"Ур-Шак был принят назад, в совет шаманов орков. Теперь он на стороне врага и немного напряжен. Лучше мне не вставать у него на пути, пока я не решу все дела с орками. К тому времени, он должен успокоиться."); 
+	B_LogEntry (TOPIC_Urshak,"РЈСЂ-РЁР°Рє Р±С‹Р» РїСЂРёРЅСЏС‚ РЅР°Р·Р°Рґ, РІ СЃРѕРІРµС‚ С€Р°РјР°РЅРѕРІ РѕСЂРєРѕРІ. РўРµРїРµСЂСЊ РѕРЅ РЅР° СЃС‚РѕСЂРѕРЅРµ РІСЂР°РіР° Рё РЅРµРјРЅРѕРіРѕ РЅР°РїСЂСЏР¶РµРЅ. Р›СѓС‡С€Рµ РјРЅРµ РЅРµ РІСЃС‚Р°РІР°С‚СЊ Сѓ РЅРµРіРѕ РЅР° РїСѓС‚Рё, РїРѕРєР° СЏ РЅРµ СЂРµС€Сѓ РІСЃРµ РґРµР»Р° СЃ РѕСЂРєР°РјРё. Рљ С‚РѕРјСѓ РІСЂРµРјРµРЅРё, РѕРЅ РґРѕР»Р¶РµРЅ СѓСЃРїРѕРєРѕРёС‚СЊСЃСЏ."); 
 	B_GivePlayerXP (XP_UrshakBecomesShaman);
 };
 
@@ -363,7 +363,7 @@ func int DIA_Urshak_KEINEWAHL_Condition ()
 
 func void DIA_Urshak_KEINEWAHL_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_KEINEWAHL_18_00"); //Твоя уходить. Моя больше не говорить с чужак.
+	AI_Output			(self, other, "DIA_Urshak_KEINEWAHL_18_00"); //РўРІРѕСЏ СѓС…РѕРґРёС‚СЊ. РњРѕСЏ Р±РѕР»СЊС€Рµ РЅРµ РіРѕРІРѕСЂРёС‚СЊ СЃ С‡СѓР¶Р°Рє.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
 };

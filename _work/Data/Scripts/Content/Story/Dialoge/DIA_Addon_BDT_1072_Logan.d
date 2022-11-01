@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Logan_EXIT   (C_INFO)
 	condition   = DIA_Addon_Logan_EXIT_Condition;
 	information = DIA_Addon_Logan_EXIT_Info;
 	permanent   = TRUE;
-	description = "Я вернусь позже...";
+	description = "РЇ РІРµСЂРЅСѓСЃСЊ РїРѕР·Р¶Рµ...";
 };
 FUNC INT DIA_Addon_Logan_EXIT_Condition()
 {	
@@ -16,13 +16,13 @@ FUNC INT DIA_Addon_Logan_EXIT_Condition()
 };
 FUNC VOID DIA_Addon_Logan_EXIT_Info()
 {		
-	AI_Output (other,self,"DIA_Addon_Logan_EXIT_15_00");//Я вернусь позже...
+	AI_Output (other,self,"DIA_Addon_Logan_EXIT_15_00");//РЇ РІРµСЂРЅСѓСЃСЊ РїРѕР·Р¶Рµ...
 	
 	if ((!MIS_HlpLogan == LOG_RUNNING)
 	|| ( !MIS_HlpLogan == LOG_SUCCESS))
 	&& (Logan_Inside == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Logan_EXIT_10_01");//(ворчливо) Да-а, просто убегаешь. А я останусь здесь и остановлю каждого, кто подойдет слишком близко.
+		AI_Output (self,other,"DIA_Addon_Logan_EXIT_10_01");//(РІРѕСЂС‡Р»РёРІРѕ) Р”Р°-Р°, РїСЂРѕСЃС‚Рѕ СѓР±РµРіР°РµС€СЊ. Рђ СЏ РѕСЃС‚Р°РЅСѓСЃСЊ Р·РґРµСЃСЊ Рё РѕСЃС‚Р°РЅРѕРІР»СЋ РєР°Р¶РґРѕРіРѕ, РєС‚Рѕ РїРѕРґРѕР№РґРµС‚ СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ.
 	};
 	AI_StopProcessInfos (self);
 };	
@@ -87,7 +87,7 @@ FUNC VOID DIA_Addon_Logan_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_1072_Logan_Mine_10_00");//Так значит, ты это сделал, хм... Ладно, хорошо, что ты не забыл про меня.
+	AI_Output (self, other, "DIA_Addon_BDT_1072_Logan_Mine_10_00");//РўР°Рє Р·РЅР°С‡РёС‚, С‚С‹ СЌС‚Рѕ СЃРґРµР»Р°Р», С…Рј... Р›Р°РґРЅРѕ, С…РѕСЂРѕС€Рѕ, С‡С‚Рѕ С‚С‹ РЅРµ Р·Р°Р±С‹Р» РїСЂРѕ РјРµРЅСЏ.
 	
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -105,7 +105,7 @@ INSTANCE DIA_Addon_Logan_How2   (C_INFO)
 	condition   = DIA_Addon_Logan_How2_Condition;
 	information = DIA_Addon_Logan_How2_Info;
 	permanent   = FALSE;
-	description	= "Как у тебя дела?";
+	description	= "РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_Logan_How2_Condition()	
 {
@@ -117,12 +117,12 @@ FUNC INT DIA_Addon_Logan_How2_Condition()
 };
 FUNC VOID DIA_Addon_Logan_How2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_How2_15_00"); //Как у тебя дела?
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_01"); //Ну, по крайней мере я теперь внутри. Люсия варит какой-то гадкий ликер.
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_02"); //Но Эстебан не пускает меня в шахту. Ну никак не хочет. Он дал мне другую работу.
-	AI_Output (other, self, "DIA_Addon_Logan_How2_15_03"); //И? Что он хочет от тебя?
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_04"); //На его жизнь покушались. И он хочет, чтобы я выяснил, кто за этим стоит.
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_05"); //(тихо) Эстебан считает, что в этом замешан Снаф. Мне нужно следить за ним...
+	AI_Output (other, self, "DIA_Addon_Logan_How2_15_00"); //РљР°Рє Сѓ С‚РµР±СЏ РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_01"); //РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ СЏ С‚РµРїРµСЂСЊ РІРЅСѓС‚СЂРё. Р›СЋСЃРёСЏ РІР°СЂРёС‚ РєР°РєРѕР№-С‚Рѕ РіР°РґРєРёР№ Р»РёРєРµСЂ.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_02"); //РќРѕ Р­СЃС‚РµР±Р°РЅ РЅРµ РїСѓСЃРєР°РµС‚ РјРµРЅСЏ РІ С€Р°С…С‚Сѓ. РќСѓ РЅРёРєР°Рє РЅРµ С…РѕС‡РµС‚. РћРЅ РґР°Р» РјРЅРµ РґСЂСѓРіСѓСЋ СЂР°Р±РѕС‚Сѓ.
+	AI_Output (other, self, "DIA_Addon_Logan_How2_15_03"); //Р? Р§С‚Рѕ РѕРЅ С…РѕС‡РµС‚ РѕС‚ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_04"); //РќР° РµРіРѕ Р¶РёР·РЅСЊ РїРѕРєСѓС€Р°Р»РёСЃСЊ. Р РѕРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РІС‹СЏСЃРЅРёР», РєС‚Рѕ Р·Р° СЌС‚РёРј СЃС‚РѕРёС‚.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_05"); //(С‚РёС…Рѕ) Р­СЃС‚РµР±Р°РЅ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ РІ СЌС‚РѕРј Р·Р°РјРµС€Р°РЅ РЎРЅР°С„. РњРЅРµ РЅСѓР¶РЅРѕ СЃР»РµРґРёС‚СЊ Р·Р° РЅРёРј...
 
 };
 //---------------------------------------------------------------------
@@ -148,8 +148,8 @@ FUNC INT DIA_Addon_Logan_Attentat_Condition()
 FUNC VOID DIA_Addon_Logan_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_00");//Ты ищешь того, кто за этим стоит, да?
-	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_01");//Но я ничего про это не знаю. Откуда мне знать? Тогда я еще был на болоте...
+	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_00");//РўС‹ РёС‰РµС€СЊ С‚РѕРіРѕ, РєС‚Рѕ Р·Р° СЌС‚РёРј СЃС‚РѕРёС‚, РґР°?
+	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_01");//РќРѕ СЏ РЅРёС‡РµРіРѕ РїСЂРѕ СЌС‚Рѕ РЅРµ Р·РЅР°СЋ. РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ? РўРѕРіРґР° СЏ РµС‰Рµ Р±С‹Р» РЅР° Р±РѕР»РѕС‚Рµ...
 };
 //---------------------------------------------------------------------
 //	Info HI 
@@ -173,22 +173,22 @@ FUNC INT DIA_Addon_Logan_HI_Condition()
 };
 FUNC VOID DIA_Addon_Logan_HI_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_00");//Смотри-ка, новое лицо.
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_01");//Ты пришел просто постоять рядом или, может быть, все-таки поможешь?
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_00");//РЎРјРѕС‚СЂРё-РєР°, РЅРѕРІРѕРµ Р»РёС†Рѕ.
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_01");//РўС‹ РїСЂРёС€РµР» РїСЂРѕСЃС‚Рѕ РїРѕСЃС‚РѕСЏС‚СЊ СЂСЏРґРѕРј РёР»Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РІСЃРµ-С‚Р°РєРё РїРѕРјРѕР¶РµС€СЊ?
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Franco_HI) 
 	{
-		AI_Output (other, self, "DIA_Addon_Logan_HI_15_02");//Меня послал Франко. Он говорит, что тебе может понадобиться помощь. Так что?
+		AI_Output (other, self, "DIA_Addon_Logan_HI_15_02");//РњРµРЅСЏ РїРѕСЃР»Р°Р» Р¤СЂР°РЅРєРѕ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РµС‚ РїРѕРЅР°РґРѕР±РёС‚СЊСЃСЏ РїРѕРјРѕС‰СЊ. РўР°Рє С‡С‚Рѕ?
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Logan_HI_15_03");//Это зависит от того, в чем тебе нужна помощь?
+		AI_Output (other, self, "DIA_Addon_Logan_HI_15_03");//Р­С‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚ С‚РѕРіРѕ, РІ С‡РµРј С‚РµР±Рµ РЅСѓР¶РЅР° РїРѕРјРѕС‰СЊ?
 	};
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_04");//Болотные акулы начинают подбираться ко мне слишком близко. Самое время прикончить некоторых из них.
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_04");//Р‘РѕР»РѕС‚РЅС‹Рµ Р°РєСѓР»С‹ РЅР°С‡РёРЅР°СЋС‚ РїРѕРґР±РёСЂР°С‚СЊСЃСЏ РєРѕ РјРЅРµ СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ. РЎР°РјРѕРµ РІСЂРµРјСЏ РїСЂРёРєРѕРЅС‡РёС‚СЊ РЅРµРєРѕС‚РѕСЂС‹С… РёР· РЅРёС….
 	
 	Log_CreateTopic (Topic_Addon_Logan,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Logan,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Logan,"Логан хочет, чтобы я отправился с ним на охоту на болотных акул.");
+	B_LogEntry (Topic_Addon_Logan,"Р›РѕРіР°РЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РѕС‚РїСЂР°РІРёР»СЃСЏ СЃ РЅРёРј РЅР° РѕС…РѕС‚Сѓ РЅР° Р±РѕР»РѕС‚РЅС‹С… Р°РєСѓР».");
 };
 //---------------------------------------------------------------------
 //	Info Why
@@ -200,7 +200,7 @@ INSTANCE DIA_Addon_Logan_Why   (C_INFO)
 	condition   = DIA_Addon_Logan_Why_Condition;
 	information = DIA_Addon_Logan_Why_Info;
 	permanent   = FALSE;
-	description	= "Что я получу за помощь?";
+	description	= "Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° РїРѕРјРѕС‰СЊ?";
 };
 FUNC INT DIA_Addon_Logan_Why_Condition()	
 {
@@ -212,16 +212,16 @@ FUNC INT DIA_Addon_Logan_Why_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Why_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_Why_15_00"); //Что я получу за помощь?
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_01"); //(рычит) Франко сгноит тебя здесь, если ты этого не сделаешь.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_02"); //Если ты хочешь попасть в лагерь, тебе придется помогать другим. На одних словах ты далеко не уедешь.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_03"); //А кроме того, я могу показать тебе, как разделывать этих зверюг.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_04"); //Но я не думаю, что Франко пошлет тебя в лагерь просто за то, что мы здесь немного повеселимся с болотными акулами.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_05"); //Здесь есть люди, которые уже долгое время ждут возможности попасть внутрь.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_06"); //И следующим, кто туда попадет, буду я... (рычит)... Лучше бы это было так...
+	AI_Output (other, self, "DIA_Addon_Logan_Why_15_00"); //Р§С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·Р° РїРѕРјРѕС‰СЊ?
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_01"); //(СЂС‹С‡РёС‚) Р¤СЂР°РЅРєРѕ СЃРіРЅРѕРёС‚ С‚РµР±СЏ Р·РґРµСЃСЊ, РµСЃР»Рё С‚С‹ СЌС‚РѕРіРѕ РЅРµ СЃРґРµР»Р°РµС€СЊ.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_02"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ Р»Р°РіРµСЂСЊ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРјРѕРіР°С‚СЊ РґСЂСѓРіРёРј. РќР° РѕРґРЅРёС… СЃР»РѕРІР°С… С‚С‹ РґР°Р»РµРєРѕ РЅРµ СѓРµРґРµС€СЊ.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_03"); //Рђ РєСЂРѕРјРµ С‚РѕРіРѕ, СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, РєР°Рє СЂР°Р·РґРµР»С‹РІР°С‚СЊ СЌС‚РёС… Р·РІРµСЂСЋРі.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_04"); //РќРѕ СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ Р¤СЂР°РЅРєРѕ РїРѕС€Р»РµС‚ С‚РµР±СЏ РІ Р»Р°РіРµСЂСЊ РїСЂРѕСЃС‚Рѕ Р·Р° С‚Рѕ, С‡С‚Рѕ РјС‹ Р·РґРµСЃСЊ РЅРµРјРЅРѕРіРѕ РїРѕРІРµСЃРµР»РёРјСЃСЏ СЃ Р±РѕР»РѕС‚РЅС‹РјРё Р°РєСѓР»Р°РјРё.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_05"); //Р—РґРµСЃСЊ РµСЃС‚СЊ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ СѓР¶Рµ РґРѕР»РіРѕРµ РІСЂРµРјСЏ Р¶РґСѓС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РїРѕРїР°СЃС‚СЊ РІРЅСѓС‚СЂСЊ.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_06"); //Р СЃР»РµРґСѓСЋС‰РёРј, РєС‚Рѕ С‚СѓРґР° РїРѕРїР°РґРµС‚, Р±СѓРґСѓ СЏ... (СЂС‹С‡РёС‚)... Р›СѓС‡С€Рµ Р±С‹ СЌС‚Рѕ Р±С‹Р»Рѕ С‚Р°Рє...
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Логан может научить меня снимать шкуры и выбирать зубы и когти.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Р›РѕРіР°РЅ РјРѕР¶РµС‚ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ Рё РІС‹Р±РёСЂР°С‚СЊ Р·СѓР±С‹ Рё РєРѕРіС‚Рё.");	
 };
 //---------------------------------------------------------------------
 //	Info Lager
@@ -233,7 +233,7 @@ INSTANCE DIA_Addon_Logan_Lager   (C_INFO)
 	condition   = DIA_Addon_Logan_Lager_Condition;
 	information = DIA_Addon_Logan_Lager_Info;
 	permanent   = FALSE;
-	description	= "А что в лагере?";
+	description	= "Рђ С‡С‚Рѕ РІ Р»Р°РіРµСЂРµ?";
 };
 FUNC INT DIA_Addon_Logan_Lager_Condition()	
 {
@@ -245,9 +245,9 @@ FUNC INT DIA_Addon_Logan_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_Lager_15_00");//А что в лагере?
-	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_01");//(ворчливо) Вопрос в том, чего НЕТ в лагере. Там нет болотных акул, там нет болотных кочек... Вообще НЕТ болота.
-	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_02");//Зато там есть выпивка и золото. И насколько я знаю, там даже есть женщина. Понял?
+	AI_Output (other, self, "DIA_Addon_Logan_Lager_15_00");//Рђ С‡С‚Рѕ РІ Р»Р°РіРµСЂРµ?
+	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_01");//(РІРѕСЂС‡Р»РёРІРѕ) Р’РѕРїСЂРѕСЃ РІ С‚РѕРј, С‡РµРіРѕ РќР•Рў РІ Р»Р°РіРµСЂРµ. РўР°Рј РЅРµС‚ Р±РѕР»РѕС‚РЅС‹С… Р°РєСѓР», С‚Р°Рј РЅРµС‚ Р±РѕР»РѕС‚РЅС‹С… РєРѕС‡РµРє... Р’РѕРѕР±С‰Рµ РќР•Рў Р±РѕР»РѕС‚Р°.
+	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_02");//Р—Р°С‚Рѕ С‚Р°Рј РµСЃС‚СЊ РІС‹РїРёРІРєР° Рё Р·РѕР»РѕС‚Рѕ. Р РЅР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, С‚Р°Рј РґР°Р¶Рµ РµСЃС‚СЊ Р¶РµРЅС‰РёРЅР°. РџРѕРЅСЏР»?
 };
 //---------------------------------------------------------------------
 //	Info von Franco geschickt (MISsion) 
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Logan_MIS   (C_INFO)
 	condition   = DIA_Addon_Logan_MIS_Condition;
 	information = DIA_Addon_Logan_MIS_Info;
 	permanent   = FALSE;
-	description	= "Давай разберемся с болотными акулами.";
+	description	= "Р”Р°РІР°Р№ СЂР°Р·Р±РµСЂРµРјСЃСЏ СЃ Р±РѕР»РѕС‚РЅС‹РјРё Р°РєСѓР»Р°РјРё.";
 };
 FUNC INT DIA_Addon_Logan_MIS_Condition()	
 {	
@@ -271,10 +271,10 @@ FUNC INT DIA_Addon_Logan_MIS_Condition()
 FUNC VOID DIA_Addon_Logan_MIS_Info()
 {
 	
-	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_00");//Давай разберемся с болотными акулами.
-	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_01");//(ворчливо) Ты, наконец, понял, как здесь нужно себя вести. Приятно слышать. Тсс... слышишь? Да-а, я их слышу.
-	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_02");//Понятно, и что нам теперь делать?
-	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_03");//Они приближаются. Они хотят закусить человечиной. Ну-ну, мы посмотрим, кто кого съест... Пойдем.
+	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_00");//Р”Р°РІР°Р№ СЂР°Р·Р±РµСЂРµРјСЃСЏ СЃ Р±РѕР»РѕС‚РЅС‹РјРё Р°РєСѓР»Р°РјРё.
+	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_01");//(РІРѕСЂС‡Р»РёРІРѕ) РўС‹, РЅР°РєРѕРЅРµС†, РїРѕРЅСЏР», РєР°Рє Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ СЃРµР±СЏ РІРµСЃС‚Рё. РџСЂРёСЏС‚РЅРѕ СЃР»С‹С€Р°С‚СЊ. РўСЃСЃ... СЃР»С‹С€РёС€СЊ? Р”Р°-Р°, СЏ РёС… СЃР»С‹С€Сѓ.
+	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_02");//РџРѕРЅСЏС‚РЅРѕ, Рё С‡С‚Рѕ РЅР°Рј С‚РµРїРµСЂСЊ РґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_03");//РћРЅРё РїСЂРёР±Р»РёР¶Р°СЋС‚СЃСЏ. РћРЅРё С…РѕС‚СЏС‚ Р·Р°РєСѓСЃРёС‚СЊ С‡РµР»РѕРІРµС‡РёРЅРѕР№. РќСѓ-РЅСѓ, РјС‹ РїРѕСЃРјРѕС‚СЂРёРј, РєС‚Рѕ РєРѕРіРѕ СЃСЉРµСЃС‚... РџРѕР№РґРµРј.
 	
 	Snd_Play ("SWA_Warn");
 	AI_StopProcessInfos (self);
@@ -313,14 +313,14 @@ FUNC INT DIA_Addon_Logan_tot_Condition()
 };
 FUNC VOID DIA_Addon_Logan_tot_Info()
 {	 
-	AI_Output (self, other, "DIA_Addon_Logan_tot_10_00");//Хорошая акула - дохлая акула. Это будет предупреждением ее собратьям!
-	AI_Output (other, self, "DIA_Addon_Logan_tot_15_01");//Отлично, мне нужно сделать еще что-нибудь? Если нет, я пойду...
-	AI_Output (self, other, "DIA_Addon_Logan_tot_10_02");//Иди. И если ты захочешь научиться чему-нибудь еще, ты знаешь, где меня искать.
+	AI_Output (self, other, "DIA_Addon_Logan_tot_10_00");//РҐРѕСЂРѕС€Р°СЏ Р°РєСѓР»Р° - РґРѕС…Р»Р°СЏ Р°РєСѓР»Р°. Р­С‚Рѕ Р±СѓРґРµС‚ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµРј РµРµ СЃРѕР±СЂР°С‚СЊСЏРј!
+	AI_Output (other, self, "DIA_Addon_Logan_tot_15_01");//РћС‚Р»РёС‡РЅРѕ, РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ? Р•СЃР»Рё РЅРµС‚, СЏ РїРѕР№РґСѓ...
+	AI_Output (self, other, "DIA_Addon_Logan_tot_10_02");//РРґРё. Р РµСЃР»Рё С‚С‹ Р·Р°С…РѕС‡РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РµС‰Рµ, С‚С‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРµРЅСЏ РёСЃРєР°С‚СЊ.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	MIS_HlpLogan = LOG_SUCCESS;
 	B_CheckLog ();
-	B_LogEntry (Topic_Addon_Franco,"Я помог Логану. Посмотрим, что скажет на это Франко.");
+	B_LogEntry (Topic_Addon_Franco,"РЇ РїРѕРјРѕРі Р›РѕРіР°РЅСѓ. РџРѕСЃРјРѕС‚СЂРёРј, С‡С‚Рѕ СЃРєР°Р¶РµС‚ РЅР° СЌС‚Рѕ Р¤СЂР°РЅРєРѕ.");
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
@@ -337,7 +337,7 @@ INSTANCE DIA_Addon_Logan_Lern   (C_INFO)
 	condition   = DIA_Addon_Logan_Lern_Condition;
 	information = DIA_Addon_Logan_Lern_Info;
 	permanent   = FALSE;
-	description = "Покажи мне, как разделывать туши животных...";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє СЂР°Р·РґРµР»С‹РІР°С‚СЊ С‚СѓС€Рё Р¶РёРІРѕС‚РЅС‹С…...";
 };
 FUNC INT DIA_Addon_Logan_Lern_Condition()
 {	
@@ -348,9 +348,9 @@ FUNC INT DIA_Addon_Logan_Lern_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Lern_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Logan_Lern_15_00");//Покажи мне, как разделывать туши животных...
-	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_01");//Если ты хочешь научиться разделывать кровавых мух, пойди к Эдгору. Он про них знает буквально все.
-	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_02");//А если тебя интересуют болотные акулы и ящеры, я могу научить тебя снимать шкуру и вынимать зубы.
+	AI_Output (other, self, "DIA_Addon_Logan_Lern_15_00");//РџРѕРєР°Р¶Рё РјРЅРµ, РєР°Рє СЂР°Р·РґРµР»С‹РІР°С‚СЊ С‚СѓС€Рё Р¶РёРІРѕС‚РЅС‹С…...
+	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_01");//Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РЅР°СѓС‡РёС‚СЊСЃСЏ СЂР°Р·РґРµР»С‹РІР°С‚СЊ РєСЂРѕРІР°РІС‹С… РјСѓС…, РїРѕР№РґРё Рє Р­РґРіРѕСЂСѓ. РћРЅ РїСЂРѕ РЅРёС… Р·РЅР°РµС‚ Р±СѓРєРІР°Р»СЊРЅРѕ РІСЃРµ.
+	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_02");//Рђ РµСЃР»Рё С‚РµР±СЏ РёРЅС‚РµСЂРµСЃСѓСЋС‚ Р±РѕР»РѕС‚РЅС‹Рµ Р°РєСѓР»С‹ Рё СЏС‰РµСЂС‹, СЏ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ СЃРЅРёРјР°С‚СЊ С€РєСѓСЂСѓ Рё РІС‹РЅРёРјР°С‚СЊ Р·СѓР±С‹.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Allgemeine Talente
@@ -362,7 +362,7 @@ INSTANCE DIA_Addon_Logan_Allg   (C_INFO)
 	condition   = DIA_Addon_Logan_Allg_Condition;
 	information = DIA_Addon_Logan_Allg_Info;
 	permanent   = TRUE;
-	description = "Я хочу обучиться...";
+	description = "РЇ С…РѕС‡Сѓ РѕР±СѓС‡РёС‚СЊСЃСЏ...";
 };
 FUNC INT DIA_Addon_Logan_Allg_Condition()
 {	
@@ -381,15 +381,15 @@ FUNC VOID DIA_Addon_Logan_Allg_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Удаление зубов",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_Logan_Allg_Teeth);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ Р·СѓР±РѕРІ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_Logan_Allg_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Удаление когтей",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Addon_Logan_Allg_Claws);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РєРѕРіС‚РµР№",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Addon_Logan_Allg_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Снятие шкур",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Addon_Logan_Allg_Fur);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("РЎРЅСЏС‚РёРµ С€РєСѓСЂ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Addon_Logan_Allg_Fur);
 	};
 	
 };
@@ -425,7 +425,7 @@ INSTANCE DIA_Addon_Logan_Hacker   (C_INFO)
 	condition   = DIA_Addon_Logan_Hacker_Condition;
 	information = DIA_Addon_Logan_Hacker_Info;
 	permanent   = TRUE;
-	Description = "Как дела?"; 
+	Description = "РљР°Рє РґРµР»Р°?"; 
 };
 FUNC INT DIA_Addon_Logan_Hacker_Condition()
 {	
@@ -436,13 +436,13 @@ FUNC INT DIA_Addon_Logan_Hacker_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Hacker_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Logan_Hacker_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_01"); //Эй, спасибо тебе, я сделал это! Я в шахте!
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_02"); //Я пока не много знаю про то, как добывать золото, но это придет.
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Logan_Hacker_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_01"); //Р­Р№, СЃРїР°СЃРёР±Рѕ С‚РµР±Рµ, СЏ СЃРґРµР»Р°Р» СЌС‚Рѕ! РЇ РІ С€Р°С…С‚Рµ!
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_02"); //РЇ РїРѕРєР° РЅРµ РјРЅРѕРіРѕ Р·РЅР°СЋ РїСЂРѕ С‚Рѕ, РєР°Рє РґРѕР±С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ, РЅРѕ СЌС‚Рѕ РїСЂРёРґРµС‚.
 	
 	if (Logan_Lohn == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_03"); //Я выучил самую главную вещь. Стой на земле крепко и всегда бей твердо!
+		AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_03"); //РЇ РІС‹СѓС‡РёР» СЃР°РјСѓСЋ РіР»Р°РІРЅСѓСЋ РІРµС‰СЊ. РЎС‚РѕР№ РЅР° Р·РµРјР»Рµ РєСЂРµРїРєРѕ Рё РІСЃРµРіРґР° Р±РµР№ С‚РІРµСЂРґРѕ!
 		B_Upgrade_Hero_HackChance(10); 
 		Logan_Lohn = TRUE;
 	};

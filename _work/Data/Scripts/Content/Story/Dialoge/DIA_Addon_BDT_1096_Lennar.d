@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Lennar_EXIT   (C_INFO)
 	condition   = DIA_Addon_Lennar_EXIT_Condition;
 	information = DIA_Addon_Lennar_EXIT_Info;
 	permanent   = TRUE;
-	description = "Мне нужно идти...";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё...";
 };
 FUNC INT DIA_Addon_Lennar_EXIT_Condition()
 {	
@@ -62,7 +62,7 @@ INSTANCE DIA_Addon_Lennar_Hi   (C_INFO)
 	condition   = DIA_Addon_Lennar_Hi_Condition;
 	information = DIA_Addon_Lennar_Hi_Info;
 	permanent   = FALSE;
-	description	= "Привет.";
+	description	= "РџСЂРёРІРµС‚.";
 };
 FUNC INT DIA_Addon_Lennar_Hi_Condition()
 {	
@@ -70,10 +70,10 @@ FUNC INT DIA_Addon_Lennar_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_00");//Привет.
-	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_01");//Привет. Меня зовут Леннар. Добро пожаловать в лагерь рудокопов.
-	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_02");//Рудокопов? Я думал, это бандитский лагерь...
-	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_03");//Верно, но бандиты здесь только для того, чтобы добывать руду. (пожимает плечами) Так что...
+	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_00");//РџСЂРёРІРµС‚.
+	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_01");//РџСЂРёРІРµС‚. РњРµРЅСЏ Р·РѕРІСѓС‚ Р›РµРЅРЅР°СЂ. Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ РІ Р»Р°РіРµСЂСЊ СЂСѓРґРѕРєРѕРїРѕРІ.
+	AI_Output (other, self, "DIA_Addon_Lennar_Hi_15_02");//Р СѓРґРѕРєРѕРїРѕРІ? РЇ РґСѓРјР°Р», СЌС‚Рѕ Р±Р°РЅРґРёС‚СЃРєРёР№ Р»Р°РіРµСЂСЊ...
+	AI_Output (self, other, "DIA_Addon_Lennar_Hi_01_03");//Р’РµСЂРЅРѕ, РЅРѕ Р±Р°РЅРґРёС‚С‹ Р·РґРµСЃСЊ С‚РѕР»СЊРєРѕ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РґРѕР±С‹РІР°С‚СЊ СЂСѓРґСѓ. (РїРѕР¶РёРјР°РµС‚ РїР»РµС‡Р°РјРё) РўР°Рє С‡С‚Рѕ...
 };
 
 //---------------------------------------------------------------------
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Lennar_Attentat   (C_INFO)
 	condition   = DIA_Addon_Lennar_Attentat_Condition;
 	information = DIA_Addon_Lennar_Attentat_Info;
 	permanent   = FALSE;
-	description	= "Насчет попытки покушения на Эстебана...";
+	description	= "РќР°СЃС‡РµС‚ РїРѕРїС‹С‚РєРё РїРѕРєСѓС€РµРЅРёСЏ РЅР° Р­СЃС‚РµР±Р°РЅР°...";
 };
 FUNC INT DIA_Addon_Lennar_Attentat_Condition()
 {	
@@ -98,16 +98,16 @@ FUNC INT DIA_Addon_Lennar_Attentat_Condition()
 FUNC VOID DIA_Addon_Lennar_Attentat_Info()
 {
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentast auf Esteban
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_00"); //Слушаю?
-	AI_Output (other, self, "DIA_Addon_Lennar_ATTENTAT_15_01"); //У тебя есть предположения насчет того, кто за этим стоит?
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_02"); //Конечно!
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_03"); //(возбужденно) Я уверен, что во всем виноват Эмилио!
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_04"); //(возбужденно) Он всегда рвался в шахту, как ужаленный, и копал до изнеможения.
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_05"); //Но с момента нападения он только и делает, что сидит на скамейке.
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_06"); //Это же очевидно! Чтобы попасть в шахту, он должен получить у Эстебана красную табличку.
-	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_07"); //(шепотом) Думаю, он просто не в силах посмотреть ему в глаза.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_00"); //РЎР»СѓС€Р°СЋ?
+	AI_Output (other, self, "DIA_Addon_Lennar_ATTENTAT_15_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРµРґРїРѕР»РѕР¶РµРЅРёСЏ РЅР°СЃС‡РµС‚ С‚РѕРіРѕ, РєС‚Рѕ Р·Р° СЌС‚РёРј СЃС‚РѕРёС‚?
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_02"); //РљРѕРЅРµС‡РЅРѕ!
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_03"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РІРѕ РІСЃРµРј РІРёРЅРѕРІР°С‚ Р­РјРёР»РёРѕ!
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_04"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) РћРЅ РІСЃРµРіРґР° СЂРІР°Р»СЃСЏ РІ С€Р°С…С‚Сѓ, РєР°Рє СѓР¶Р°Р»РµРЅРЅС‹Р№, Рё РєРѕРїР°Р» РґРѕ РёР·РЅРµРјРѕР¶РµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_05"); //РќРѕ СЃ РјРѕРјРµРЅС‚Р° РЅР°РїР°РґРµРЅРёСЏ РѕРЅ С‚РѕР»СЊРєРѕ Рё РґРµР»Р°РµС‚, С‡С‚Рѕ СЃРёРґРёС‚ РЅР° СЃРєР°РјРµР№РєРµ.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_06"); //Р­С‚Рѕ Р¶Рµ РѕС‡РµРІРёРґРЅРѕ! Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ, РѕРЅ РґРѕР»Р¶РµРЅ РїРѕР»СѓС‡РёС‚СЊ Сѓ Р­СЃС‚РµР±Р°РЅР° РєСЂР°СЃРЅСѓСЋ С‚Р°Р±Р»РёС‡РєСѓ.
+	AI_Output (self, other, "DIA_Addon_Lennar_ATTENTAT_01_07"); //(С€РµРїРѕС‚РѕРј) Р”СѓРјР°СЋ, РѕРЅ РїСЂРѕСЃС‚Рѕ РЅРµ РІ СЃРёР»Р°С… РїРѕСЃРјРѕС‚СЂРµС‚СЊ РµРјСѓ РІ РіР»Р°Р·Р°.
 
-	B_LogEntry (Topic_Addon_Esteban, "Леннар подозревает Эмилио, потому что он больше не ходит к Эстебану.");
+	B_LogEntry (Topic_Addon_Esteban, "Р›РµРЅРЅР°СЂ РїРѕРґРѕР·СЂРµРІР°РµС‚ Р­РјРёР»РёРѕ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ Р±РѕР»СЊС€Рµ РЅРµ С…РѕРґРёС‚ Рє Р­СЃС‚РµР±Р°РЅСѓ.");
 };
 
 //---------------------------------------------------------------------
@@ -120,7 +120,7 @@ INSTANCE DIA_Addon_Lennar_Inspektor (C_INFO)
 	condition   = DIA_Addon_Lennar_Inspektor_Condition;
 	information = DIA_Addon_Lennar_Inspektor_Info;
 	permanent   = FALSE;
-	description	= "Но что получил бы Эмилио от смерти Эстебана?";
+	description	= "РќРѕ С‡С‚Рѕ РїРѕР»СѓС‡РёР» Р±С‹ Р­РјРёР»РёРѕ РѕС‚ СЃРјРµСЂС‚Рё Р­СЃС‚РµР±Р°РЅР°?";
 };
 FUNC INT DIA_Addon_Lennar_Inspektor_Condition()
 {	
@@ -131,9 +131,9 @@ FUNC INT DIA_Addon_Lennar_Inspektor_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Inspektor_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Inspektor_15_00"); //Но что получил бы Эмилио от смерти Эстебана?
-	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_01"); //Откуда мне знать? Может, у него есть приятель, который бы занял место Эстебана.
-	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_02"); //Да, это звучит довольно логично...
+	AI_Output (other, self, "DIA_Addon_Lennar_Inspektor_15_00"); //РќРѕ С‡С‚Рѕ РїРѕР»СѓС‡РёР» Р±С‹ Р­РјРёР»РёРѕ РѕС‚ СЃРјРµСЂС‚Рё Р­СЃС‚РµР±Р°РЅР°?
+	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_01"); //РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ? РњРѕР¶РµС‚, Сѓ РЅРµРіРѕ РµСЃС‚СЊ РїСЂРёСЏС‚РµР»СЊ, РєРѕС‚РѕСЂС‹Р№ Р±С‹ Р·Р°РЅСЏР» РјРµСЃС‚Рѕ Р­СЃС‚РµР±Р°РЅР°.
+	AI_Output (self, other, "DIA_Addon_Lennar_Inspektor_01_02"); //Р”Р°, СЌС‚Рѕ Р·РІСѓС‡РёС‚ РґРѕРІРѕР»СЊРЅРѕ Р»РѕРіРёС‡РЅРѕ...
 };
 
 //----------------------------------------------------------------------
@@ -161,9 +161,9 @@ FUNC VOID DIA_Addon_Lennar_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_00");//У тебя действительно есть для меня красная табличка?
-	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_01");//Отлично! Ну теперь-то я разнесу эту чертову скалу на кусочки! Я уже знаю, где именно буду работать!
-	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_02");//Да, один совет: когда ты работаешь с породой, не бей киркой слишком сильно. Иначе она может застрять в золоте!
+	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_00");//РЈ С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ РєСЂР°СЃРЅР°СЏ С‚Р°Р±Р»РёС‡РєР°?
+	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_01");//РћС‚Р»РёС‡РЅРѕ! РќСѓ С‚РµРїРµСЂСЊ-С‚Рѕ СЏ СЂР°Р·РЅРµСЃСѓ СЌС‚Сѓ С‡РµСЂС‚РѕРІСѓ СЃРєР°Р»Сѓ РЅР° РєСѓСЃРѕС‡РєРё! РЇ СѓР¶Рµ Р·РЅР°СЋ, РіРґРµ РёРјРµРЅРЅРѕ Р±СѓРґСѓ СЂР°Р±РѕС‚Р°С‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Lennar_Mine_01_02");//Р”Р°, РѕРґРёРЅ СЃРѕРІРµС‚: РєРѕРіРґР° С‚С‹ СЂР°Р±РѕС‚Р°РµС€СЊ СЃ РїРѕСЂРѕРґРѕР№, РЅРµ Р±РµР№ РєРёСЂРєРѕР№ СЃР»РёС€РєРѕРј СЃРёР»СЊРЅРѕ. РРЅР°С‡Рµ РѕРЅР° РјРѕР¶РµС‚ Р·Р°СЃС‚СЂСЏС‚СЊ РІ Р·РѕР»РѕС‚Рµ!
 	
 	B_Upgrade_Hero_HackChance(10);
 	
@@ -183,7 +183,7 @@ INSTANCE DIA_Addon_Lennar_Gold   (C_INFO)
 	condition   = DIA_Addon_Lennar_Gold_Condition;
 	information = DIA_Addon_Lennar_Gold_Info;
 	permanent   = FALSE;
-	description = "Ты мне можешь рассказать что-нибудь о добыче золота?";
+	description = "РўС‹ РјРЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РґРѕР±С‹С‡Рµ Р·РѕР»РѕС‚Р°?";
 };
 FUNC INT DIA_Addon_Lennar_Gold_Condition()
 {	
@@ -194,13 +194,13 @@ FUNC INT DIA_Addon_Lennar_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Gold_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_00"); //Ты мне можешь рассказать что-нибудь о добыче золота?
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_01"); //Конечно! Но если я обучу тебя, ты сможешь добывать больше золота.
-	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_02"); //Поэтому я тебя и спрашиваю.
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_03"); //Да. Но если ты сможешь добывать больше золота, то было бы честно, если бы ты поделился им со мной.
-	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_04"); //Ну...
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_05"); //Впрочем, ты можешь заплатить мне мою долю авансом. Скажем...
-	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_06"); //Пятьдесят золотых.
+	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_00"); //РўС‹ РјРЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РґРѕР±С‹С‡Рµ Р·РѕР»РѕС‚Р°?
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_01"); //РљРѕРЅРµС‡РЅРѕ! РќРѕ РµСЃР»Рё СЏ РѕР±СѓС‡Сѓ С‚РµР±СЏ, С‚С‹ СЃРјРѕР¶РµС€СЊ РґРѕР±С‹РІР°С‚СЊ Р±РѕР»СЊС€Рµ Р·РѕР»РѕС‚Р°.
+	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_02"); //РџРѕСЌС‚РѕРјСѓ СЏ С‚РµР±СЏ Рё СЃРїСЂР°С€РёРІР°СЋ.
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_03"); //Р”Р°. РќРѕ РµСЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ РґРѕР±С‹РІР°С‚СЊ Р±РѕР»СЊС€Рµ Р·РѕР»РѕС‚Р°, С‚Рѕ Р±С‹Р»Рѕ Р±С‹ С‡РµСЃС‚РЅРѕ, РµСЃР»Рё Р±С‹ С‚С‹ РїРѕРґРµР»РёР»СЃСЏ РёРј СЃРѕ РјРЅРѕР№.
+	AI_Output (other, self, "DIA_Addon_Lennar_Gold_15_04"); //РќСѓ...
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_05"); //Р’РїСЂРѕС‡РµРј, С‚С‹ РјРѕР¶РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ РјРЅРµ РјРѕСЋ РґРѕР»СЋ Р°РІР°РЅСЃРѕРј. РЎРєР°Р¶РµРј...
+	AI_Output (self, other, "DIA_Addon_Lennar_Gold_01_06"); //РџСЏС‚СЊРґРµСЃСЏС‚ Р·РѕР»РѕС‚С‹С….
 };
 
 //---------------------------------------------------------------------
@@ -215,7 +215,7 @@ INSTANCE DIA_Addon_Lennar_Train   (C_INFO)
 	condition   = DIA_Addon_Lennar_Train_Condition;
 	information = DIA_Addon_Lennar_Train_Info;
 	permanent   = TRUE;
-	description = "Научи меня добывать золото! (50 золотых)";
+	description = "РќР°СѓС‡Рё РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ! (50 Р·РѕР»РѕС‚С‹С…)";
 };
 FUNC INT DIA_Addon_Lennar_Train_Condition()
 {	
@@ -227,20 +227,20 @@ FUNC INT DIA_Addon_Lennar_Train_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Train_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Lennar_Train_15_00"); //Я готов учиться добыче золота!
+	AI_Output (other, self, "DIA_Addon_Lennar_Train_15_00"); //РЇ РіРѕС‚РѕРІ СѓС‡РёС‚СЊСЃСЏ РґРѕР±С‹С‡Рµ Р·РѕР»РѕС‚Р°!
 	
 	if B_GiveInvItems (other, self, itmi_gold, 50)
 	{
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_01"); //Знай: основная работа производится размеренными ударами. Не перенапрягайся, но и не засыпай при работе.
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_02"); //И не стоит бить все время в одно и то же место. Обрабатывай широкую зону породы - это увеличит твои шансы найти самородок большого размера.
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_03"); //Запомни эти приемы: они помогут тебе стать мастером в рудокопном деле.
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_01"); //Р—РЅР°Р№: РѕСЃРЅРѕРІРЅР°СЏ СЂР°Р±РѕС‚Р° РїСЂРѕРёР·РІРѕРґРёС‚СЃСЏ СЂР°Р·РјРµСЂРµРЅРЅС‹РјРё СѓРґР°СЂР°РјРё. РќРµ РїРµСЂРµРЅР°РїСЂСЏРіР°Р№СЃСЏ, РЅРѕ Рё РЅРµ Р·Р°СЃС‹РїР°Р№ РїСЂРё СЂР°Р±РѕС‚Рµ.
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_02"); //Р РЅРµ СЃС‚РѕРёС‚ Р±РёС‚СЊ РІСЃРµ РІСЂРµРјСЏ РІ РѕРґРЅРѕ Рё С‚Рѕ Р¶Рµ РјРµСЃС‚Рѕ. РћР±СЂР°Р±Р°С‚С‹РІР°Р№ С€РёСЂРѕРєСѓСЋ Р·РѕРЅСѓ РїРѕСЂРѕРґС‹ - СЌС‚Рѕ СѓРІРµР»РёС‡РёС‚ С‚РІРѕРё С€Р°РЅСЃС‹ РЅР°Р№С‚Рё СЃР°РјРѕСЂРѕРґРѕРє Р±РѕР»СЊС€РѕРіРѕ СЂР°Р·РјРµСЂР°.
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_03"); //Р—Р°РїРѕРјРЅРё СЌС‚Рё РїСЂРёРµРјС‹: РѕРЅРё РїРѕРјРѕРіСѓС‚ С‚РµР±Рµ СЃС‚Р°С‚СЊ РјР°СЃС‚РµСЂРѕРј РІ СЂСѓРґРѕРєРѕРїРЅРѕРј РґРµР»Рµ.
 		
 		B_Upgrade_Hero_HackChance(10);
 		Lennar_TeachGold = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_04"); //Сначала я хочу получить свою долю!
+		AI_Output (self, other, "DIA_Addon_Lennar_Train_01_04"); //РЎРЅР°С‡Р°Р»Р° СЏ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ СЃРІРѕСЋ РґРѕР»СЋ!
 	};
 };
 //----------------------------------------------------------------------
@@ -253,7 +253,7 @@ INSTANCE DIA_Addon_Lennar_Hacker   (C_INFO)
 	condition   = DIA_Addon_Lennar_Hacker_Condition;
 	information = DIA_Addon_Lennar_Hacker_Info;
 	permanent   = TRUE;
-	Description = "Все в порядке?"; 
+	Description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?"; 
 };
 FUNC INT DIA_Addon_Lennar_Hacker_Condition()
 {	
@@ -264,8 +264,8 @@ FUNC INT DIA_Addon_Lennar_Hacker_Condition()
 };
 FUNC VOID DIA_Addon_Lennar_Hacker_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Lennar_Hacker_15_00"); //Как дела?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Lennar_Hacker_01_01"); //Все спокойно.
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Lennar_Hacker_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Lennar_Hacker_01_01"); //Р’СЃРµ СЃРїРѕРєРѕР№РЅРѕ.
 };
 
 

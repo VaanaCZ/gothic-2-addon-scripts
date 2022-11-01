@@ -36,13 +36,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Магические руны, к которым я имею доступ, подразделяются по кругам. Я не могу использовать заклинание, требующее более высокого круга, нежели изученный мной."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"РњР°РіРёС‡РµСЃРєРёРµ СЂСѓРЅС‹, Рє РєРѕС‚РѕСЂС‹Рј СЏ РёРјРµСЋ РґРѕСЃС‚СѓРї, РїРѕРґСЂР°Р·РґРµР»СЏСЋС‚СЃСЏ РїРѕ РєСЂСѓРіР°Рј. РЇ РЅРµ РјРѕРіСѓ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ Р·Р°РєР»РёРЅР°РЅРёРµ, С‚СЂРµР±СѓСЋС‰РµРµ Р±РѕР»РµРµ РІС‹СЃРѕРєРѕРіРѕ РєСЂСѓРіР°, РЅРµР¶РµР»Рё РёР·СѓС‡РµРЅРЅС‹Р№ РјРЅРѕР№."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)
 	{
 		PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Заклинания 1-го круга: свет, огненная стрела, малая молния, лечение легких ранений и вызов скелета гоблина.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Р—Р°РєР»РёРЅР°РЅРёСЏ 1-РіРѕ РєСЂСѓРіР°: СЃРІРµС‚, РѕРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°, РјР°Р»Р°СЏ РјРѕР»РЅРёСЏ, Р»РµС‡РµРЅРёРµ Р»РµРіРєРёС… СЂР°РЅРµРЅРёР№ Рё РІС‹Р·РѕРІ СЃРєРµР»РµС‚Р° РіРѕР±Р»РёРЅР°.");
 		return TRUE;
 	};
 	
@@ -50,7 +50,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 2)
 	{
 		PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Заклинания 2-го круга: огненный шар, ледяная стрела, вызов волка, кулак ветра и сон.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Р—Р°РєР»РёРЅР°РЅРёСЏ 2-РіРѕ РєСЂСѓРіР°: РѕРіРЅРµРЅРЅС‹Р№ С€Р°СЂ, Р»РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°, РІС‹Р·РѕРІ РІРѕР»РєР°, РєСѓР»Р°Рє РІРµС‚СЂР° Рё СЃРѕРЅ.");
 		return TRUE;
 	};
 	
@@ -58,7 +58,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 3)
 	{
 		PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Заклинания 3-го круга: лечение средних ранений, шаровая молния, малая огненная буря, создание скелета, страх и ледяной блок.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Р—Р°РєР»РёРЅР°РЅРёСЏ 3-РіРѕ РєСЂСѓРіР°: Р»РµС‡РµРЅРёРµ СЃСЂРµРґРЅРёС… СЂР°РЅРµРЅРёР№, С€Р°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ, РјР°Р»Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ, СЃРѕР·РґР°РЅРёРµ СЃРєРµР»РµС‚Р°, СЃС‚СЂР°С… Рё Р»РµРґСЏРЅРѕР№ Р±Р»РѕРє.");
 		return TRUE;
 	};
 	
@@ -66,7 +66,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 4)
 	{
 		PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Заклинания 4-го круга: молния, создание каменного голема, уничтожение нежити и большой огненный шар.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Р—Р°РєР»РёРЅР°РЅРёСЏ 4-РіРѕ РєСЂСѓРіР°: РјРѕР»РЅРёСЏ, СЃРѕР·РґР°РЅРёРµ РєР°РјРµРЅРЅРѕРіРѕ РіРѕР»РµРјР°, СѓРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё Рё Р±РѕР»СЊС€РѕР№ РѕРіРЅРµРЅРЅС‹Р№ С€Р°СЂ.");
 		return TRUE;
 	};
 	
@@ -74,7 +74,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 5)
 	{
 		PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Заклинания 5-го круга: большая огненная буря, ледяная волна, вызов демона и лечение тяжелых ранений.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Р—Р°РєР»РёРЅР°РЅРёСЏ 5-РіРѕ РєСЂСѓРіР°: Р±РѕР»СЊС€Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ, Р»РµРґСЏРЅР°СЏ РІРѕР»РЅР°, РІС‹Р·РѕРІ РґРµРјРѕРЅР° Рё Р»РµС‡РµРЅРёРµ С‚СЏР¶РµР»С‹С… СЂР°РЅРµРЅРёР№.");
 		return TRUE;
 	};
 	
@@ -82,7 +82,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 6)
 	{
 		PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Заклинания 6-го круга: огненный дождь, дыхание смерти, волна смерти, армия тьмы и сморщивание монстра.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"Р—Р°РєР»РёРЅР°РЅРёСЏ 6-РіРѕ РєСЂСѓРіР°: РѕРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ, РґС‹С…Р°РЅРёРµ СЃРјРµСЂС‚Рё, РІРѕР»РЅР° СЃРјРµСЂС‚Рё, Р°СЂРјРёСЏ С‚СЊРјС‹ Рё СЃРјРѕСЂС‰РёРІР°РЅРёРµ РјРѕРЅСЃС‚СЂР°.");
 		return TRUE;
 	};
 };

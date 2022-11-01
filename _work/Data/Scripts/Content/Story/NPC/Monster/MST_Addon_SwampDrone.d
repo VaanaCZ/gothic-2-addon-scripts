@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_SwampDrone(C_Npc)			
 {
 	//----- Monster -----
-	name							= "Болотный дрон";
+	name							= "Р‘РѕР»РѕС‚РЅС‹Р№ РґСЂРѕРЅ";
 	guild							= GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= ID_SWAMPDRONE;
 	level							= 10;

@@ -2,7 +2,7 @@
 instance VLK_434_Borka (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Борка"; 
+	name 		= "Р‘РѕСЂРєР°"; 
 	guild 		= GIL_VLK;
 	id 			= 434;
 	voice 		= 11;

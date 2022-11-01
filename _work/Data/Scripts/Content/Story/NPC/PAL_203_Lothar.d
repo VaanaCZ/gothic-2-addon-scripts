@@ -2,11 +2,11 @@
 instance Pal_203_Lothar (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ëîòàð";
+	name 		= "Ð›Ð¾Ñ‚Ð°Ñ€";
 	guild 		= GIL_PAL;
 	id 			= 203;
 	voice 		= 1;
-	flags       = NPC_FLAG_IMMORTAL;	//Bitte nicht ändern er stirbt zum 3. Kapitel															
+	flags       = NPC_FLAG_IMMORTAL;	//Bitte nicht Ð´ndern er stirbt zum 3. Kapitel															
 	npctype		= NPCTYPE_MAIN;
 	
 	// ------ Attribute ------

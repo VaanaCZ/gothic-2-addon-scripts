@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_IceGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Ледяной голем";
+	name							=	"Р›РµРґСЏРЅРѕР№ РіРѕР»РµРј";
 	guild							=	GIL_ICEGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ICEGOLEM;
 	level							=	45;

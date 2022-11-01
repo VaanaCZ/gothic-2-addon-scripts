@@ -31,7 +31,7 @@ instance DIA_Valentino_HALLO		(C_INFO)
 	condition	= DIA_Valentino_HALLO_Condition;
 	information	= DIA_Valentino_HALLO_Info;
 	permanent 	= FALSE;
-	description	= "Так, и что у нас здесь?";
+	description	= "РўР°Рє, Рё С‡С‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Valentino_HALLO_Condition ()
@@ -41,22 +41,22 @@ func int DIA_Valentino_HALLO_Condition ()
 
 func void DIA_Valentino_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Valentino_HALLO_15_00"); //Так, и что у нас здесь?
+	AI_Output			(other, self, "DIA_Valentino_HALLO_15_00"); //РўР°Рє, Рё С‡С‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ?
 	//AI_Output (other, self, "DIA_Valentino_Add_15_00"); //Hey, wer bist du denn?
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_01"); //Меня зовут Валентино. Я пытаюсь не осквернить этот день, данный мне Инносом, своей работой.
-		AI_Output			(other, self, "DIA_Valentino_HALLO_15_02"); //Придержи язык.
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_03"); //Ох, прошу прощения, я не хотел оскорбить нашего Владыку. Еще раз прошу простить меня.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р’Р°Р»РµРЅС‚РёРЅРѕ. РЇ РїС‹С‚Р°СЋСЃСЊ РЅРµ РѕСЃРєРІРµСЂРЅРёС‚СЊ СЌС‚РѕС‚ РґРµРЅСЊ, РґР°РЅРЅС‹Р№ РјРЅРµ РРЅРЅРѕСЃРѕРј, СЃРІРѕРµР№ СЂР°Р±РѕС‚РѕР№.
+		AI_Output			(other, self, "DIA_Valentino_HALLO_15_02"); //РџСЂРёРґРµСЂР¶Рё СЏР·С‹Рє.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_03"); //РћС…, РїСЂРѕС€Сѓ РїСЂРѕС‰РµРЅРёСЏ, СЏ РЅРµ С…РѕС‚РµР» РѕСЃРєРѕСЂР±РёС‚СЊ РЅР°С€РµРіРѕ Р’Р»Р°РґС‹РєСѓ. Р•С‰Рµ СЂР°Р· РїСЂРѕС€Сѓ РїСЂРѕСЃС‚РёС‚СЊ РјРµРЅСЏ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_04"); //Ты незнаком с хорошими манерами? Это отвратительно!
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_05"); //Повсюду этот грязный сброд. У тебя что, нет работы, которой ты должен заниматься?
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_06"); //Но, я полагаю, никто не хватится такого бездельника как ты, да?
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_07"); //Ну, если бы у тебя было столько же золота, сколько у меня, ты бы уж тоже не работал. Но тебе никогда не стать таким богатым.
-		AI_Output			(other, self, "DIA_Valentino_HALLO_15_08"); //Ты такой забавный.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_04"); //РўС‹ РЅРµР·РЅР°РєРѕРј СЃ С…РѕСЂРѕС€РёРјРё РјР°РЅРµСЂР°РјРё? Р­С‚Рѕ РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅРѕ!
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_05"); //РџРѕРІСЃСЋРґСѓ СЌС‚РѕС‚ РіСЂСЏР·РЅС‹Р№ СЃР±СЂРѕРґ. РЈ С‚РµР±СЏ С‡С‚Рѕ, РЅРµС‚ СЂР°Р±РѕС‚С‹, РєРѕС‚РѕСЂРѕР№ С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°РЅРёРјР°С‚СЊСЃСЏ?
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_06"); //РќРѕ, СЏ РїРѕР»Р°РіР°СЋ, РЅРёРєС‚Рѕ РЅРµ С…РІР°С‚РёС‚СЃСЏ С‚Р°РєРѕРіРѕ Р±РµР·РґРµР»СЊРЅРёРєР° РєР°Рє С‚С‹, РґР°?
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_07"); //РќСѓ, РµСЃР»Рё Р±С‹ Сѓ С‚РµР±СЏ Р±С‹Р»Рѕ СЃС‚РѕР»СЊРєРѕ Р¶Рµ Р·РѕР»РѕС‚Р°, СЃРєРѕР»СЊРєРѕ Сѓ РјРµРЅСЏ, С‚С‹ Р±С‹ СѓР¶ С‚РѕР¶Рµ РЅРµ СЂР°Р±РѕС‚Р°Р». РќРѕ С‚РµР±Рµ РЅРёРєРѕРіРґР° РЅРµ СЃС‚Р°С‚СЊ С‚Р°РєРёРј Р±РѕРіР°С‚С‹Рј.
+		AI_Output			(other, self, "DIA_Valentino_HALLO_15_08"); //РўС‹ С‚Р°РєРѕР№ Р·Р°Р±Р°РІРЅС‹Р№.
 	};
 };
 
@@ -71,7 +71,7 @@ instance DIA_Valentino_WhoAgain		(C_INFO)
 	condition	= DIA_Valentino_WhoAgain_Condition;
 	information	= DIA_Valentino_WhoAgain_Info;
 	permanent 	= FALSE;
-	description	= "Я спросил тебя, кто ты такой!";
+	description	= "РЇ СЃРїСЂРѕСЃРёР» С‚РµР±СЏ, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№!";
 };
 
 func int DIA_Valentino_WhoAgain_Condition ()
@@ -86,11 +86,11 @@ func int DIA_Valentino_WhoAgain_Condition ()
 
 func void DIA_Valentino_WhoAgain_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_01"); //Я спросил тебя, кто ты такой!
+	AI_Output (other, self, "DIA_Valentino_Add_15_01"); //РЇ СЃРїСЂРѕСЃРёР» С‚РµР±СЏ, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№!
 	//AI_Output			(other, self, "DIA_Valentino_HALLO_wasmachstdu_15_00"); //Was macht jemand wie du in der Stadt?
-	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_01"); //Я Валентино Великолепный. Бонвиан и любимчик женщин.
-	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_02"); //Бедный заботами, богатый мудростью и золотом, женщины так и бросаются на меня.
-	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_03"); //Если у тебя есть проблемы, держи их при себе. Мне они не нужны.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_01"); //РЇ Р’Р°Р»РµРЅС‚РёРЅРѕ Р’РµР»РёРєРѕР»РµРїРЅС‹Р№. Р‘РѕРЅРІРёР°РЅ Рё Р»СЋР±РёРјС‡РёРє Р¶РµРЅС‰РёРЅ.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_02"); //Р‘РµРґРЅС‹Р№ Р·Р°Р±РѕС‚Р°РјРё, Р±РѕРіР°С‚С‹Р№ РјСѓРґСЂРѕСЃС‚СЊСЋ Рё Р·РѕР»РѕС‚РѕРј, Р¶РµРЅС‰РёРЅС‹ С‚Р°Рє Рё Р±СЂРѕСЃР°СЋС‚СЃСЏ РЅР° РјРµРЅСЏ.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_wasmachstdu_03_03"); //Р•СЃР»Рё Сѓ С‚РµР±СЏ РµСЃС‚СЊ РїСЂРѕР±Р»РµРјС‹, РґРµСЂР¶Рё РёС… РїСЂРё СЃРµР±Рµ. РњРЅРµ РѕРЅРё РЅРµ РЅСѓР¶РЅС‹.
 };
 
 // ********************************************************
@@ -104,7 +104,7 @@ instance DIA_Valentino_Manieren		(C_INFO)
 	condition	= DIA_Valentino_Manieren_Condition;
 	information	= DIA_Valentino_Manieren_Info;
 	permanent 	= FALSE;
-	description	= "Похоже, мне придется поучить тебя хорошим манерам!";
+	description	= "РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕСѓС‡РёС‚СЊ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!";
 };
 
 func int DIA_Valentino_Manieren_Condition ()
@@ -119,10 +119,10 @@ func int DIA_Valentino_Manieren_Condition ()
 
 func void DIA_Valentino_Manieren_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_02"); //Похоже, мне придется поучить тебя хорошим манерам!
-	//AI_Output			(other, self, "DIA_Valentino_HALLO_klappe_15_00"); //Fьr deine dьnnen Дrmchen hast du 'ne ganz schцn groЯe Klappe!
-	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //Меня это не волнует! Молоти меня, сколько хочешь. А когда я встану завтра утром, я опять буду красавчиком.
-	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_02"); //Но тебе придется жить дальше с этим преступлением до конца своих дней.
+	AI_Output (other, self, "DIA_Valentino_Add_15_02"); //РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕСѓС‡РёС‚СЊ С‚РµР±СЏ С…РѕСЂРѕС€РёРј РјР°РЅРµСЂР°Рј!
+	//AI_Output			(other, self, "DIA_Valentino_HALLO_klappe_15_00"); //FСЊr deine dСЊnnen Р”rmchen hast du 'ne ganz schС†n groРЇe Klappe!
+	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //РњРµРЅСЏ СЌС‚Рѕ РЅРµ РІРѕР»РЅСѓРµС‚! РњРѕР»РѕС‚Рё РјРµРЅСЏ, СЃРєРѕР»СЊРєРѕ С…РѕС‡РµС€СЊ. Рђ РєРѕРіРґР° СЏ РІСЃС‚Р°РЅСѓ Р·Р°РІС‚СЂР° СѓС‚СЂРѕРј, СЏ РѕРїСЏС‚СЊ Р±СѓРґСѓ РєСЂР°СЃР°РІС‡РёРєРѕРј.
+	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_02"); //РќРѕ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ Р¶РёС‚СЊ РґР°Р»СЊС€Рµ СЃ СЌС‚РёРј РїСЂРµСЃС‚СѓРїР»РµРЅРёРµРј РґРѕ РєРѕРЅС†Р° СЃРІРѕРёС… РґРЅРµР№.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -140,7 +140,7 @@ instance DIA_Valentino_WASNUETZLICHES		(C_INFO)
 	condition	= DIA_Valentino_WASNUETZLICHES_Condition;
 	information	= DIA_Valentino_WASNUETZLICHES_Info;
 	permanent	= TRUE;
-	description	= "Ты еще что-нибудь можешь сказать мне?";
+	description	= "РўС‹ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?";
 };
 
 func int DIA_Valentino_WASNUETZLICHES_Condition ()
@@ -153,8 +153,8 @@ func int DIA_Valentino_WASNUETZLICHES_Condition ()
 
 func void DIA_Valentino_WASNUETZLICHES_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_03"); //(спокойно) Ты еще что-нибудь можешь сказать мне?
-	//AI_Output			(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); //Kannst du mir was Nьtzliches ьber die Stadt erzдhlen?
+	AI_Output (other, self, "DIA_Valentino_Add_15_03"); //(СЃРїРѕРєРѕР№РЅРѕ) РўС‹ РµС‰Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ?
+	//AI_Output			(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); //Kannst du mir was NСЊtzliches СЊber die Stadt erzРґhlen?
 	
 	if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
@@ -164,20 +164,20 @@ func void DIA_Valentino_WASNUETZLICHES_Info ()
 	&& (other.guild != GIL_PAL)
 	&& (other.guild != GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_01"); //Стань популярным, никогда ничего никому не обещай, бери то, что можешь, и смотри, чтобы не ввязаться в драку с ополчением.
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_02"); //Или с ревнивым мужем, конечно. Это хуже всего, уж поверь мне.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_01"); //РЎС‚Р°РЅСЊ РїРѕРїСѓР»СЏСЂРЅС‹Рј, РЅРёРєРѕРіРґР° РЅРёС‡РµРіРѕ РЅРёРєРѕРјСѓ РЅРµ РѕР±РµС‰Р°Р№, Р±РµСЂРё С‚Рѕ, С‡С‚Рѕ РјРѕР¶РµС€СЊ, Рё СЃРјРѕС‚СЂРё, С‡С‚РѕР±С‹ РЅРµ РІРІСЏР·Р°С‚СЊСЃСЏ РІ РґСЂР°РєСѓ СЃ РѕРїРѕР»С‡РµРЅРёРµРј.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_02"); //РР»Рё СЃ СЂРµРІРЅРёРІС‹Рј РјСѓР¶РµРј, РєРѕРЅРµС‡РЅРѕ. Р­С‚Рѕ С…СѓР¶Рµ РІСЃРµРіРѕ, СѓР¶ РїРѕРІРµСЂСЊ РјРЅРµ.
 		Valentino_Lo_Perm = TRUE;
 	}
 	else if (Valentino_Hi_Perm == FALSE)
 	&& ( (other.guild == GIL_PAL) || (other.guild == GIL_KDF) )
 	{
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_03"); //Для человека в твоем положении нет ничего невозможного. Ты просто должен знать, когда нужно действовать.
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_04"); //Так что не теряй времени и действуй.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_03"); //Р”Р»СЏ С‡РµР»РѕРІРµРєР° РІ С‚РІРѕРµРј РїРѕР»РѕР¶РµРЅРёРё РЅРµС‚ РЅРёС‡РµРіРѕ РЅРµРІРѕР·РјРѕР¶РЅРѕРіРѕ. РўС‹ РїСЂРѕСЃС‚Рѕ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, РєРѕРіРґР° РЅСѓР¶РЅРѕ РґРµР№СЃС‚РІРѕРІР°С‚СЊ.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_04"); //РўР°Рє С‡С‚Рѕ РЅРµ С‚РµСЂСЏР№ РІСЂРµРјРµРЅРё Рё РґРµР№СЃС‚РІСѓР№.
 		Valentino_Hi_Perm = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Valentino_WASNUETZLICHES_03_05"); //Я сказал тебе все, что тебе нужно знать. Остальное за тобой.
+		AI_Output (self ,other,"DIA_Valentino_WASNUETZLICHES_03_05"); //РЇ СЃРєР°Р·Р°Р» С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ. РћСЃС‚Р°Р»СЊРЅРѕРµ Р·Р° С‚РѕР±РѕР№.
 	};
 };
 
@@ -192,7 +192,7 @@ INSTANCE DIA_Valentino_PICKPOCKET (C_INFO)
 	condition	= DIA_Valentino_PICKPOCKET_Condition;
 	information	= DIA_Valentino_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Valentino_PICKPOCKET_Condition()

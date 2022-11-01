@@ -5,90 +5,90 @@
 func void B_Video()
 {
 	// ------ Intro ------
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_00"); //Один заключенный изменил судьбу сотен.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_01"); //Но он заплатил за это высокую цену...
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_02"); //Он победил Спящего и уничтожил Барьер...
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_03"); //...но, когда остальные заключенные вырвались на свободу, он остался лежать под грудой камней...
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_04"); //Это я отправил его на бой со Спящим.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_05"); //И теперь я вызволю его оттуда.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_06"); //Он слаб, и многое забыл.
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_07"); //Но он жив...
-	AI_Output (self, other, "INTRO_Xardas_Speech_14_08"); //Он вернулся!
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_00"); //РћРґРёРЅ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№ РёР·РјРµРЅРёР» СЃСѓРґСЊР±Сѓ СЃРѕС‚РµРЅ.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_01"); //РќРѕ РѕРЅ Р·Р°РїР»Р°С‚РёР» Р·Р° СЌС‚Рѕ РІС‹СЃРѕРєСѓСЋ С†РµРЅСѓ...
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_02"); //РћРЅ РїРѕР±РµРґРёР» РЎРїСЏС‰РµРіРѕ Рё СѓРЅРёС‡С‚РѕР¶РёР» Р‘Р°СЂСЊРµСЂ...
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_03"); //...РЅРѕ, РєРѕРіРґР° РѕСЃС‚Р°Р»СЊРЅС‹Рµ Р·Р°РєР»СЋС‡РµРЅРЅС‹Рµ РІС‹СЂРІР°Р»РёСЃСЊ РЅР° СЃРІРѕР±РѕРґСѓ, РѕРЅ РѕСЃС‚Р°Р»СЃСЏ Р»РµР¶Р°С‚СЊ РїРѕРґ РіСЂСѓРґРѕР№ РєР°РјРЅРµР№...
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_04"); //Р­С‚Рѕ СЏ РѕС‚РїСЂР°РІРёР» РµРіРѕ РЅР° Р±РѕР№ СЃРѕ РЎРїСЏС‰РёРј.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_05"); //Р С‚РµРїРµСЂСЊ СЏ РІС‹Р·РІРѕР»СЋ РµРіРѕ РѕС‚С‚СѓРґР°.
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_06"); //РћРЅ СЃР»Р°Р±, Рё РјРЅРѕРіРѕРµ Р·Р°Р±С‹Р».
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_07"); //РќРѕ РѕРЅ Р¶РёРІ...
+	AI_Output (self, other, "INTRO_Xardas_Speech_14_08"); //РћРЅ РІРµСЂРЅСѓР»СЃСЏ!
 	
 	// ------ Lagerfeuer ------
-	AI_Output (self, other, "INTRO_DiegoGorn_12_00"); //(у костра) Конечно же, он еще жив. А ты как думал?
-	AI_Output (self, other, "INTRO_DiegoGorn_11_01"); //Будем надеяться...
-	AI_Output (self, other, "INTRO_DiegoGorn_12_02"); //(трясется земля) Ты чувствуешь это?
-	AI_Output (self, other, "INTRO_DiegoGorn_11_03"); //Что?
-	AI_Output (self, other, "INTRO_DiegoGorn_12_04"); //Земля...
+	AI_Output (self, other, "INTRO_DiegoGorn_12_00"); //(Сѓ РєРѕСЃС‚СЂР°) РљРѕРЅРµС‡РЅРѕ Р¶Рµ, РѕРЅ РµС‰Рµ Р¶РёРІ. Рђ С‚С‹ РєР°Рє РґСѓРјР°Р»?
+	AI_Output (self, other, "INTRO_DiegoGorn_11_01"); //Р‘СѓРґРµРј РЅР°РґРµСЏС‚СЊСЃСЏ...
+	AI_Output (self, other, "INTRO_DiegoGorn_12_02"); //(С‚СЂСЏСЃРµС‚СЃСЏ Р·РµРјР»СЏ) РўС‹ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЌС‚Рѕ?
+	AI_Output (self, other, "INTRO_DiegoGorn_11_03"); //Р§С‚Рѕ?
+	AI_Output (self, other, "INTRO_DiegoGorn_12_04"); //Р—РµРјР»СЏ...
 	
 	
 	// ------ Extro ------
-	AI_Output (other, self, "Extro_Tempel_15_01"); //(в изумлении) Ксардас! Что...
-	AI_Output (other, self, "Extro_Tempel_14_02"); //(недовольно) Не сейчас...
-	AI_Output (other, self, "Extro_Tempel_14_03"); //(фанатично) Я готов... выбери меня! Да...
-	AI_Output (other, self, "Extro_Tempel_15_04"); //(себе под нос) Где же он?
+	AI_Output (other, self, "Extro_Tempel_15_01"); //(РІ РёР·СѓРјР»РµРЅРёРё) РљСЃР°СЂРґР°СЃ! Р§С‚Рѕ...
+	AI_Output (other, self, "Extro_Tempel_14_02"); //(РЅРµРґРѕРІРѕР»СЊРЅРѕ) РќРµ СЃРµР№С‡Р°СЃ...
+	AI_Output (other, self, "Extro_Tempel_14_03"); //(С„Р°РЅР°С‚РёС‡РЅРѕ) РЇ РіРѕС‚РѕРІ... РІС‹Р±РµСЂРё РјРµРЅСЏ! Р”Р°...
+	AI_Output (other, self, "Extro_Tempel_15_04"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р“РґРµ Р¶Рµ РѕРЅ?
 	
 	// ------ Outro ------
-	AI_Output (self, other, "OUTRO_Xardas_14_00"); //(цитирует) И человек убил зверя и вошел в царство Белиара...
-	AI_Output (other, self, "OUTRO_Xardas_15_01"); //Ксардас! Что именно произошло в Храме Ирдората?
-	AI_Output (self, other, "OUTRO_Xardas_14_02"); //С помощью Инноса ты уничтожил воплощение Зла.
-	AI_Output (self, other, "OUTRO_Xardas_14_03"); //И я впитал его силу...
-	AI_Output (self, other, "OUTRO_Xardas_14_04"); //С тех пор как Я покинул Круг Огня, это было единственной моей целью.
-	AI_Output (self, other, "OUTRO_Xardas_14_05"); //Чтобы достичь ее, я помог тебе выполнить твое предназначение.
-	AI_Output (self, other, "OUTRO_Xardas_14_06"); //То, что мне не удалось в Храме Спящего, наконец, свершилось.
-	AI_Output (self, other, "OUTRO_Xardas_14_07"); //Белиар выбрал меня.
-	AI_Output (other, self, "OUTRO_Xardas_15_08"); //Так ты теперь повинуешься богу тьмы?
-	AI_Output (self, other, "OUTRO_Xardas_14_09"); //Нет. Я повинуюсь Белиару не больше, чем ты повинуешься Инносу!
-	AI_Output (self, other, "OUTRO_Xardas_14_10"); //Даже боги не знают, какая судьба нас ждет...
-	AI_Output (self, other, "OUTRO_Xardas_14_11"); //И я только начинаю осознавать возможности, которые открываются предо мной...
-	AI_Output (self, other, "OUTRO_Xardas_14_12"); //Но одно можно сказать с определенностью. Мы еще встретимся...
+	AI_Output (self, other, "OUTRO_Xardas_14_00"); //(С†РёС‚РёСЂСѓРµС‚) Р С‡РµР»РѕРІРµРє СѓР±РёР» Р·РІРµСЂСЏ Рё РІРѕС€РµР» РІ С†Р°СЂСЃС‚РІРѕ Р‘РµР»РёР°СЂР°...
+	AI_Output (other, self, "OUTRO_Xardas_15_01"); //РљСЃР°СЂРґР°СЃ! Р§С‚Рѕ РёРјРµРЅРЅРѕ РїСЂРѕРёР·РѕС€Р»Рѕ РІ РҐСЂР°РјРµ РСЂРґРѕСЂР°С‚Р°?
+	AI_Output (self, other, "OUTRO_Xardas_14_02"); //РЎ РїРѕРјРѕС‰СЊСЋ РРЅРЅРѕСЃР° С‚С‹ СѓРЅРёС‡С‚РѕР¶РёР» РІРѕРїР»РѕС‰РµРЅРёРµ Р—Р»Р°.
+	AI_Output (self, other, "OUTRO_Xardas_14_03"); //Р СЏ РІРїРёС‚Р°Р» РµРіРѕ СЃРёР»Сѓ...
+	AI_Output (self, other, "OUTRO_Xardas_14_04"); //РЎ С‚РµС… РїРѕСЂ РєР°Рє РЇ РїРѕРєРёРЅСѓР» РљСЂСѓРі РћРіРЅСЏ, СЌС‚Рѕ Р±С‹Р»Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅРѕР№ РјРѕРµР№ С†РµР»СЊСЋ.
+	AI_Output (self, other, "OUTRO_Xardas_14_05"); //Р§С‚РѕР±С‹ РґРѕСЃС‚РёС‡СЊ РµРµ, СЏ РїРѕРјРѕРі С‚РµР±Рµ РІС‹РїРѕР»РЅРёС‚СЊ С‚РІРѕРµ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅРёРµ.
+	AI_Output (self, other, "OUTRO_Xardas_14_06"); //РўРѕ, С‡С‚Рѕ РјРЅРµ РЅРµ СѓРґР°Р»РѕСЃСЊ РІ РҐСЂР°РјРµ РЎРїСЏС‰РµРіРѕ, РЅР°РєРѕРЅРµС†, СЃРІРµСЂС€РёР»РѕСЃСЊ.
+	AI_Output (self, other, "OUTRO_Xardas_14_07"); //Р‘РµР»РёР°СЂ РІС‹Р±СЂР°Р» РјРµРЅСЏ.
+	AI_Output (other, self, "OUTRO_Xardas_15_08"); //РўР°Рє С‚С‹ С‚РµРїРµСЂСЊ РїРѕРІРёРЅСѓРµС€СЊСЃСЏ Р±РѕРіСѓ С‚СЊРјС‹?
+	AI_Output (self, other, "OUTRO_Xardas_14_09"); //РќРµС‚. РЇ РїРѕРІРёРЅСѓСЋСЃСЊ Р‘РµР»РёР°СЂСѓ РЅРµ Р±РѕР»СЊС€Рµ, С‡РµРј С‚С‹ РїРѕРІРёРЅСѓРµС€СЊСЃСЏ РРЅРЅРѕСЃСѓ!
+	AI_Output (self, other, "OUTRO_Xardas_14_10"); //Р”Р°Р¶Рµ Р±РѕРіРё РЅРµ Р·РЅР°СЋС‚, РєР°РєР°СЏ СЃСѓРґСЊР±Р° РЅР°СЃ Р¶РґРµС‚...
+	AI_Output (self, other, "OUTRO_Xardas_14_11"); //Р СЏ С‚РѕР»СЊРєРѕ РЅР°С‡РёРЅР°СЋ РѕСЃРѕР·РЅР°РІР°С‚СЊ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё, РєРѕС‚РѕСЂС‹Рµ РѕС‚РєСЂС‹РІР°СЋС‚СЃСЏ РїСЂРµРґРѕ РјРЅРѕР№...
+	AI_Output (self, other, "OUTRO_Xardas_14_12"); //РќРѕ РѕРґРЅРѕ РјРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ СЃ РѕРїСЂРµРґРµР»РµРЅРЅРѕСЃС‚СЊСЋ. РњС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ...
 	
-	// ------ Outro Xardas Kapitдn ------
-	AI_Output (self, other, "OUTRO_Xardas_04_00"); //(кричит) До встречи!
+	// ------ Outro Xardas KapitРґn ------
+	AI_Output (self, other, "OUTRO_Xardas_04_00"); //(РєСЂРёС‡РёС‚) Р”Рѕ РІСЃС‚СЂРµС‡Рё!
 	
 	// ------ Drachenangriff ------
-	AI_Output (self, other, "Cutscene_Drachen_04_00"); //(смотрит вдаль, видит что-то) Хммм?
-	AI_Output (self, other, "Cutscene_Drachen_04_01"); //(бормочет) Ох, черт!
-	AI_Output (self, other, "Cutscene_Drachen_04_02"); //(задыхается кашляет)
-	AI_Output (self, other, "Cutscene_Drachen_04_03"); //Аааааа! (разное)
-	AI_Output (self, other, "Cutscene_Drachen_04_04"); //(долгий предсмертный крик, 4 секунды)
+	AI_Output (self, other, "Cutscene_Drachen_04_00"); //(СЃРјРѕС‚СЂРёС‚ РІРґР°Р»СЊ, РІРёРґРёС‚ С‡С‚Рѕ-С‚Рѕ) РҐРјРјРј?
+	AI_Output (self, other, "Cutscene_Drachen_04_01"); //(Р±РѕСЂРјРѕС‡РµС‚) РћС…, С‡РµСЂС‚!
+	AI_Output (self, other, "Cutscene_Drachen_04_02"); //(Р·Р°РґС‹С…Р°РµС‚СЃСЏ РєР°С€Р»СЏРµС‚)
+	AI_Output (self, other, "Cutscene_Drachen_04_03"); //РђР°Р°Р°Р°Р°! (СЂР°Р·РЅРѕРµ)
+	AI_Output (self, other, "Cutscene_Drachen_04_04"); //(РґРѕР»РіРёР№ РїСЂРµРґСЃРјРµСЂС‚РЅС‹Р№ РєСЂРёРє, 4 СЃРµРєСѓРЅРґС‹)
 	
 	// ------ OrkSturm ------
-	AI_Output (self, other, "Cutscene_OrcSturm_04_00"); //Закройте ворота!!! (разное)
-	AI_Output (self, other, "Cutscene_OrcSturm_04_01"); //Остановите их!!! (разное)
-	AI_Output (self, other, "Cutscene_OrcSturm_04_02"); //Аааааа! (разное)
+	AI_Output (self, other, "Cutscene_OrcSturm_04_00"); //Р—Р°РєСЂРѕР№С‚Рµ РІРѕСЂРѕС‚Р°!!! (СЂР°Р·РЅРѕРµ)
+	AI_Output (self, other, "Cutscene_OrcSturm_04_01"); //РћСЃС‚Р°РЅРѕРІРёС‚Рµ РёС…!!! (СЂР°Р·РЅРѕРµ)
+	AI_Output (self, other, "Cutscene_OrcSturm_04_02"); //РђР°Р°Р°Р°Р°! (СЂР°Р·РЅРѕРµ)
 	
 	// ------ Outro Credits ------
-	AI_Output (self, other, "OUTRO_Schiff_12_00"); //Мы перегружены. Мы должны выбросить часть золота за борт.
-	AI_Output (other, self, "OUTRO_Schiff_15_01"); //Руки прочь от этого золота!
-	AI_Output (self, other, "OUTRO_Schiff_12_02"); //Послушай, будет действительно лучше, если мы ...
-	AI_Output (other, self, "OUTRO_Schiff_15_03"); //Я даже и слышать не хочу об этом...
-	AI_Output (self, other, "OUTRO_Schiff_11_04"); //Я слышал, война с орками идет плохо...
-	AI_Output (other, self, "OUTRO_Schiff_15_05"); //И?
-	AI_Output (self, other, "OUTRO_Schiff_11_06"); //Возможно, нам все равно нигде не удастся потратить все это золото...
-	AI_Output (other, self, "OUTRO_Schiff_15_07"); //Это золото останется на борту!
-	AI_Output (self, other, "OUTRO_Schiff_12_08"); //Что толку от этого золота, если мы опрокинемся в самый легкий шторм?
-	AI_Output (other, self, "OUTRO_Schiff_15_09"); //Но я не вижу шторма...
-	AI_Output (self, other, "OUTRO_Schiff_12_10"); //ПОКА нет ...
-	AI_Output (other, self, "OUTRO_Schiff_15_11"); //Расслабься! Все будет в порядке!
+	AI_Output (self, other, "OUTRO_Schiff_12_00"); //РњС‹ РїРµСЂРµРіСЂСѓР¶РµРЅС‹. РњС‹ РґРѕР»Р¶РЅС‹ РІС‹Р±СЂРѕСЃРёС‚СЊ С‡Р°СЃС‚СЊ Р·РѕР»РѕС‚Р° Р·Р° Р±РѕСЂС‚.
+	AI_Output (other, self, "OUTRO_Schiff_15_01"); //Р СѓРєРё РїСЂРѕС‡СЊ РѕС‚ СЌС‚РѕРіРѕ Р·РѕР»РѕС‚Р°!
+	AI_Output (self, other, "OUTRO_Schiff_12_02"); //РџРѕСЃР»СѓС€Р°Р№, Р±СѓРґРµС‚ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р»СѓС‡С€Рµ, РµСЃР»Рё РјС‹ ...
+	AI_Output (other, self, "OUTRO_Schiff_15_03"); //РЇ РґР°Р¶Рµ Рё СЃР»С‹С€Р°С‚СЊ РЅРµ С…РѕС‡Сѓ РѕР± СЌС‚РѕРј...
+	AI_Output (self, other, "OUTRO_Schiff_11_04"); //РЇ СЃР»С‹С€Р°Р», РІРѕР№РЅР° СЃ РѕСЂРєР°РјРё РёРґРµС‚ РїР»РѕС…Рѕ...
+	AI_Output (other, self, "OUTRO_Schiff_15_05"); //Р?
+	AI_Output (self, other, "OUTRO_Schiff_11_06"); //Р’РѕР·РјРѕР¶РЅРѕ, РЅР°Рј РІСЃРµ СЂР°РІРЅРѕ РЅРёРіРґРµ РЅРµ СѓРґР°СЃС‚СЃСЏ РїРѕС‚СЂР°С‚РёС‚СЊ РІСЃРµ СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ...
+	AI_Output (other, self, "OUTRO_Schiff_15_07"); //Р­С‚Рѕ Р·РѕР»РѕС‚Рѕ РѕСЃС‚Р°РЅРµС‚СЃСЏ РЅР° Р±РѕСЂС‚Сѓ!
+	AI_Output (self, other, "OUTRO_Schiff_12_08"); //Р§С‚Рѕ С‚РѕР»РєСѓ РѕС‚ СЌС‚РѕРіРѕ Р·РѕР»РѕС‚Р°, РµСЃР»Рё РјС‹ РѕРїСЂРѕРєРёРЅРµРјСЃСЏ РІ СЃР°РјС‹Р№ Р»РµРіРєРёР№ С€С‚РѕСЂРј?
+	AI_Output (other, self, "OUTRO_Schiff_15_09"); //РќРѕ СЏ РЅРµ РІРёР¶Сѓ С€С‚РѕСЂРјР°...
+	AI_Output (self, other, "OUTRO_Schiff_12_10"); //РџРћРљРђ РЅРµС‚ ...
+	AI_Output (other, self, "OUTRO_Schiff_15_11"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ! Р’СЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ!
 	
 	//ADDON
-	AI_Output	(other, self, "DIA_Addon_AddonIntro_15_00"); //(ошеломлен) ...люди?
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_01"); //(пренебрежительно) Люди слабы.
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_02"); //(пренебрежительно) Они слишком легко поддаются соблазнам зла.
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_03"); //Таким образом они вовлекаются в дела, которые не могут понять и уж тем более не могут контролировать.
-	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_04"); //Твердые в своей вере уже начали сражение с врагом.
+	AI_Output	(other, self, "DIA_Addon_AddonIntro_15_00"); //(РѕС€РµР»РѕРјР»РµРЅ) ...Р»СЋРґРё?
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_01"); //(РїСЂРµРЅРµР±СЂРµР¶РёС‚РµР»СЊРЅРѕ) Р›СЋРґРё СЃР»Р°Р±С‹.
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_02"); //(РїСЂРµРЅРµР±СЂРµР¶РёС‚РµР»СЊРЅРѕ) РћРЅРё СЃР»РёС€РєРѕРј Р»РµРіРєРѕ РїРѕРґРґР°СЋС‚СЃСЏ СЃРѕР±Р»Р°Р·РЅР°Рј Р·Р»Р°.
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_03"); //РўР°РєРёРј РѕР±СЂР°Р·РѕРј РѕРЅРё РІРѕРІР»РµРєР°СЋС‚СЃСЏ РІ РґРµР»Р°, РєРѕС‚РѕСЂС‹Рµ РЅРµ РјРѕРіСѓС‚ РїРѕРЅСЏС‚СЊ Рё СѓР¶ С‚РµРј Р±РѕР»РµРµ РЅРµ РјРѕРіСѓС‚ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_AddonIntro_14_04"); //РўРІРµСЂРґС‹Рµ РІ СЃРІРѕРµР№ РІРµСЂРµ СѓР¶Рµ РЅР°С‡Р°Р»Рё СЃСЂР°Р¶РµРЅРёРµ СЃ РІСЂР°РіРѕРј.
 	
 	//ADDON - NEU
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_00"); //После исчезновения Барьера и уничтожения Спящего, гнев Белиара стал еще страшнее!
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_01"); //Мощнейший артефакт будет возвращен в этот мир, так пишут в древних книгах.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_02"); //(цитируя) 'Когда Бог Тьмы пошлет своих приспешников на поиски...'
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_03"); //Именно это и произошло. 
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_04"); //Этот поиск начался давным-давно!
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_05"); //Во время поисков приспешники Белиара оскверняют древнейшие алтари богов.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_06"); //Приспешники Белиара оскверняют древнейшие алтари богов.
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_07"); //Хранители этих священных реликвий пробудились. И их гнев сотрясает землю!
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_08"); //Каждый сильный маг на этом острове способен ощутить их гнев. 
-	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_09"); //И некоторые из них определенно начали готовиться к встрече с угрозой.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_00"); //РџРѕСЃР»Рµ РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏ Р‘Р°СЂСЊРµСЂР° Рё СѓРЅРёС‡С‚РѕР¶РµРЅРёСЏ РЎРїСЏС‰РµРіРѕ, РіРЅРµРІ Р‘РµР»РёР°СЂР° СЃС‚Р°Р» РµС‰Рµ СЃС‚СЂР°С€РЅРµРµ!
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_01"); //РњРѕС‰РЅРµР№С€РёР№ Р°СЂС‚РµС„Р°РєС‚ Р±СѓРґРµС‚ РІРѕР·РІСЂР°С‰РµРЅ РІ СЌС‚РѕС‚ РјРёСЂ, С‚Р°Рє РїРёС€СѓС‚ РІ РґСЂРµРІРЅРёС… РєРЅРёРіР°С….
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_02"); //(С†РёС‚РёСЂСѓСЏ) 'РљРѕРіРґР° Р‘РѕРі РўСЊРјС‹ РїРѕС€Р»РµС‚ СЃРІРѕРёС… РїСЂРёСЃРїРµС€РЅРёРєРѕРІ РЅР° РїРѕРёСЃРєРё...'
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_03"); //РРјРµРЅРЅРѕ СЌС‚Рѕ Рё РїСЂРѕРёР·РѕС€Р»Рѕ. 
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_04"); //Р­С‚РѕС‚ РїРѕРёСЃРє РЅР°С‡Р°Р»СЃСЏ РґР°РІРЅС‹Рј-РґР°РІРЅРѕ!
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_05"); //Р’Рѕ РІСЂРµРјСЏ РїРѕРёСЃРєРѕРІ РїСЂРёСЃРїРµС€РЅРёРєРё Р‘РµР»РёР°СЂР° РѕСЃРєРІРµСЂРЅСЏСЋС‚ РґСЂРµРІРЅРµР№С€РёРµ Р°Р»С‚Р°СЂРё Р±РѕРіРѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_06"); //РџСЂРёСЃРїРµС€РЅРёРєРё Р‘РµР»РёР°СЂР° РѕСЃРєРІРµСЂРЅСЏСЋС‚ РґСЂРµРІРЅРµР№С€РёРµ Р°Р»С‚Р°СЂРё Р±РѕРіРѕРІ.
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_07"); //РҐСЂР°РЅРёС‚РµР»Рё СЌС‚РёС… СЃРІСЏС‰РµРЅРЅС‹С… СЂРµР»РёРєРІРёР№ РїСЂРѕР±СѓРґРёР»РёСЃСЊ. Р РёС… РіРЅРµРІ СЃРѕС‚СЂСЏСЃР°РµС‚ Р·РµРјР»СЋ!
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_08"); //РљР°Р¶РґС‹Р№ СЃРёР»СЊРЅС‹Р№ РјР°Рі РЅР° СЌС‚РѕРј РѕСЃС‚СЂРѕРІРµ СЃРїРѕСЃРѕР±РµРЅ РѕС‰СѓС‚РёС‚СЊ РёС… РіРЅРµРІ. 
+	AI_Output	(self, other, "DIA_Addon_Xardas_AddonIntro_Add_14_09"); //Р РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… РѕРїСЂРµРґРµР»РµРЅРЅРѕ РЅР°С‡Р°Р»Рё РіРѕС‚РѕРІРёС‚СЊСЃСЏ Рє РІСЃС‚СЂРµС‡Рµ СЃ СѓРіСЂРѕР·РѕР№.
 };

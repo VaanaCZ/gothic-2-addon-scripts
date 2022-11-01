@@ -33,7 +33,7 @@ INSTANCE DIA_Gerold_Hallo (C_INFO)
 	condition	= DIA_Gerold_Hallo_Condition;
 	information	= DIA_Gerold_Hallo_Info;
 	permanent	= FALSE;
-	description = "Что ты охраняешь?";
+	description = "Р§С‚Рѕ С‚С‹ РѕС…СЂР°РЅСЏРµС€СЊ?";
 };                       
 FUNC INT DIA_Gerold_Hallo_Condition()
 {
@@ -44,11 +44,11 @@ FUNC INT DIA_Gerold_Hallo_Condition()
 };
 FUNC VOID DIA_Gerold_Hallo_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Hallo_15_00");//Что ты охраняешь?
-	AI_Output	(self ,other,"DIA_Gerold_Hallo_12_01");//Заключенных.
-	AI_Output	(other,self ,"DIA_Gerold_Hallo_15_02");//А кто там?
-	AI_Output	(self ,other,"DIA_Gerold_Hallo_12_03");//Несколько каторжников и наемник Горн. Серьезный парень - сильный как бык.
-	AI_Output	(self ,other,"DIA_Gerold_Hallo_12_04");//Четыре человека еле затолкали его туда.
+	AI_Output	(other,self ,"DIA_Gerold_Hallo_15_00");//Р§С‚Рѕ С‚С‹ РѕС…СЂР°РЅСЏРµС€СЊ?
+	AI_Output	(self ,other,"DIA_Gerold_Hallo_12_01");//Р—Р°РєР»СЋС‡РµРЅРЅС‹С….
+	AI_Output	(other,self ,"DIA_Gerold_Hallo_15_02");//Рђ РєС‚Рѕ С‚Р°Рј?
+	AI_Output	(self ,other,"DIA_Gerold_Hallo_12_03");//РќРµСЃРєРѕР»СЊРєРѕ РєР°С‚РѕСЂР¶РЅРёРєРѕРІ Рё РЅР°РµРјРЅРёРє Р“РѕСЂРЅ. РЎРµСЂСЊРµР·РЅС‹Р№ РїР°СЂРµРЅСЊ - СЃРёР»СЊРЅС‹Р№ РєР°Рє Р±С‹Рє.
+	AI_Output	(self ,other,"DIA_Gerold_Hallo_12_04");//Р§РµС‚С‹СЂРµ С‡РµР»РѕРІРµРєР° РµР»Рµ Р·Р°С‚РѕР»РєР°Р»Рё РµРіРѕ С‚СѓРґР°.
 };	
 // ************************************************************
 // 	Kerker
@@ -60,7 +60,7 @@ INSTANCE DIA_Gerold_Jail (C_INFO)
 	condition	= DIA_Gerold_Jail_Condition;
 	information	= DIA_Gerold_Jail_Info;
 	permanent	= FALSE;
-	description ="Ты пропустишь меня в темницу?";
+	description ="РўС‹ РїСЂРѕРїСѓСЃС‚РёС€СЊ РјРµРЅСЏ РІ С‚РµРјРЅРёС†Сѓ?";
 };                       
 FUNC INT DIA_Gerold_Jail_Condition()
 {
@@ -73,9 +73,9 @@ FUNC INT DIA_Gerold_Jail_Condition()
 };
 FUNC VOID DIA_Gerold_Jail_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Jail_15_00");//Ты пропустишь меня в темницу?
-	AI_Output	(self ,other,"DIA_Gerold_Jail_12_01");//Нет. НИКТО не может входить в темницу. Это касается ВСЕХ. Тебя, Милтена и всех остальных.
-	AI_Output	(self ,other,"DIA_Gerold_Jail_12_02");//Здесь вам не таверна, куда вы можете входить и выходить когда захотите. Помни об этом.
+	AI_Output	(other,self ,"DIA_Gerold_Jail_15_00");//РўС‹ РїСЂРѕРїСѓСЃС‚РёС€СЊ РјРµРЅСЏ РІ С‚РµРјРЅРёС†Сѓ?
+	AI_Output	(self ,other,"DIA_Gerold_Jail_12_01");//РќРµС‚. РќРРљРўРћ РЅРµ РјРѕР¶РµС‚ РІС…РѕРґРёС‚СЊ РІ С‚РµРјРЅРёС†Сѓ. Р­С‚Рѕ РєР°СЃР°РµС‚СЃСЏ Р’РЎР•РҐ. РўРµР±СЏ, РњРёР»С‚РµРЅР° Рё РІСЃРµС… РѕСЃС‚Р°Р»СЊРЅС‹С….
+	AI_Output	(self ,other,"DIA_Gerold_Jail_12_02");//Р—РґРµСЃСЊ РІР°Рј РЅРµ С‚Р°РІРµСЂРЅР°, РєСѓРґР° РІС‹ РјРѕР¶РµС‚Рµ РІС…РѕРґРёС‚СЊ Рё РІС‹С…РѕРґРёС‚СЊ РєРѕРіРґР° Р·Р°С…РѕС‚РёС‚Рµ. РџРѕРјРЅРё РѕР± СЌС‚РѕРј.
 	
 	KnowsAboutGorn = TRUE;  
 };	
@@ -89,7 +89,7 @@ INSTANCE DIA_Gerold_Ausnahme (C_INFO)
 	condition	= DIA_Gerold_Ausnahme_Condition;
 	information	= DIA_Gerold_Ausnahme_Info;
 	permanent	= FALSE;
-	description ="Ты не мог бы сделать исключение для меня?";
+	description ="РўС‹ РЅРµ РјРѕРі Р±С‹ СЃРґРµР»Р°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ РґР»СЏ РјРµРЅСЏ?";
 };                       
 FUNC INT DIA_Gerold_Ausnahme_Condition()
 {
@@ -102,8 +102,8 @@ FUNC INT DIA_Gerold_Ausnahme_Condition()
 };
 FUNC VOID DIA_Gerold_Ausnahme_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Ausnahme_15_00");//Ты не мог бы сделать исключение для меня?
-	AI_Output	(self ,other,"DIA_Gerold_Ausnahme_12_01");//Нет.
+	AI_Output	(other,self ,"DIA_Gerold_Ausnahme_15_00");//РўС‹ РЅРµ РјРѕРі Р±С‹ СЃРґРµР»Р°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ РґР»СЏ РјРµРЅСЏ?
+	AI_Output	(self ,other,"DIA_Gerold_Ausnahme_12_01");//РќРµС‚.
 };	
 // ************************************************************
 // 	Gold
@@ -115,7 +115,7 @@ INSTANCE DIA_Gerold_Gold (C_INFO)
 	condition	= DIA_Gerold_Gold_Condition;
 	information	= DIA_Gerold_Gold_Info;
 	permanent	= FALSE;
-	description ="А что если я заплачу золотом?";
+	description ="Рђ С‡С‚Рѕ РµСЃР»Рё СЏ Р·Р°РїР»Р°С‡Сѓ Р·РѕР»РѕС‚РѕРј?";
 };                       
 FUNC INT DIA_Gerold_Gold_Condition()
 {
@@ -128,9 +128,9 @@ FUNC INT DIA_Gerold_Gold_Condition()
 };
 FUNC VOID DIA_Gerold_Gold_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Gold_15_00");//А что если я заплачу золотом?
-	AI_Output	(self ,other,"DIA_Gerold_Gold_12_01");//... хм ...
-	AI_Output	(self ,other,"DIA_Gerold_Gold_12_02");//Нет.
+	AI_Output	(other,self ,"DIA_Gerold_Gold_15_00");//Рђ С‡С‚Рѕ РµСЃР»Рё СЏ Р·Р°РїР»Р°С‡Сѓ Р·РѕР»РѕС‚РѕРј?
+	AI_Output	(self ,other,"DIA_Gerold_Gold_12_01");//... С…Рј ...
+	AI_Output	(self ,other,"DIA_Gerold_Gold_12_02");//РќРµС‚.
 };		
 // ************************************************************
 // 	Deal mit Gerold um Brief reinzuschmuggeln
@@ -142,7 +142,7 @@ INSTANCE DIA_Gerold_Deal (C_INFO)
 	condition	= DIA_Gerold_Deal_Condition;
 	information	= DIA_Gerold_Deal_Info;
 	permanent	= FALSE;
-	description ="У меня есть записка для одного из заключенных ...";
+	description ="РЈ РјРµРЅСЏ РµСЃС‚СЊ Р·Р°РїРёСЃРєР° РґР»СЏ РѕРґРЅРѕРіРѕ РёР· Р·Р°РєР»СЋС‡РµРЅРЅС‹С… ...";
 };                       
 
 FUNC INT DIA_Gerold_Deal_Condition()
@@ -159,16 +159,16 @@ FUNC INT DIA_Gerold_Deal_Condition()
  
 FUNC VOID DIA_Gerold_Deal_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Deal_15_00");	//У меня есть записка для одного из заключенных. Ты можешь передать ее?
-	AI_Output	(self ,other,"DIA_Gerold_Deal_12_01");	//Хм ... в принципе, я не вижу препятствий дл этого. Для кого эта записка?
-	AI_Output	(other,self ,"DIA_Gerold_Deal_15_02");	//Для Горна.
-	AI_Output	(self ,other,"DIA_Gerold_Deal_12_03");	//Это очень важный заключенный. Я не думаю, что Гаронд согласится. Но если это для тебя так важно, мы всегда можем договориться.
-	AI_Output	(other,self ,"DIA_Gerold_Deal_15_04");	//Что ты хочешь за это?
-	AI_Output	(self ,other,"DIA_Gerold_Deal_12_05");	//Наши пайки последнее время стали совсем скудные. Я хочу нормальной еды.
-	AI_Output	(self ,other,"DIA_Gerold_Deal_12_06");	//Принеси мне колбасы и буханку свежего хлеба - и немного сладкого меда.
-	AI_Output	(self ,other,"DIA_Gerold_Deal_12_07");	//Бутылку вина, чтобы запить все это ... Да этого должно хватить. Я верю, у тебя получится достать все это. Так что заходи, когда найдешь продукты.
+	AI_Output	(other,self ,"DIA_Gerold_Deal_15_00");	//РЈ РјРµРЅСЏ РµСЃС‚СЊ Р·Р°РїРёСЃРєР° РґР»СЏ РѕРґРЅРѕРіРѕ РёР· Р·Р°РєР»СЋС‡РµРЅРЅС‹С…. РўС‹ РјРѕР¶РµС€СЊ РїРµСЂРµРґР°С‚СЊ РµРµ?
+	AI_Output	(self ,other,"DIA_Gerold_Deal_12_01");	//РҐРј ... РІ РїСЂРёРЅС†РёРїРµ, СЏ РЅРµ РІРёР¶Сѓ РїСЂРµРїСЏС‚СЃС‚РІРёР№ РґР» СЌС‚РѕРіРѕ. Р”Р»СЏ РєРѕРіРѕ СЌС‚Р° Р·Р°РїРёСЃРєР°?
+	AI_Output	(other,self ,"DIA_Gerold_Deal_15_02");	//Р”Р»СЏ Р“РѕСЂРЅР°.
+	AI_Output	(self ,other,"DIA_Gerold_Deal_12_03");	//Р­С‚Рѕ РѕС‡РµРЅСЊ РІР°Р¶РЅС‹Р№ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№. РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ Р“Р°СЂРѕРЅРґ СЃРѕРіР»Р°СЃРёС‚СЃСЏ. РќРѕ РµСЃР»Рё СЌС‚Рѕ РґР»СЏ С‚РµР±СЏ С‚Р°Рє РІР°Р¶РЅРѕ, РјС‹ РІСЃРµРіРґР° РјРѕР¶РµРј РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ.
+	AI_Output	(other,self ,"DIA_Gerold_Deal_15_04");	//Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚Рѕ?
+	AI_Output	(self ,other,"DIA_Gerold_Deal_12_05");	//РќР°С€Рё РїР°Р№РєРё РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЃС‚Р°Р»Рё СЃРѕРІСЃРµРј СЃРєСѓРґРЅС‹Рµ. РЇ С…РѕС‡Сѓ РЅРѕСЂРјР°Р»СЊРЅРѕР№ РµРґС‹.
+	AI_Output	(self ,other,"DIA_Gerold_Deal_12_06");	//РџСЂРёРЅРµСЃРё РјРЅРµ РєРѕР»Р±Р°СЃС‹ Рё Р±СѓС…Р°РЅРєСѓ СЃРІРµР¶РµРіРѕ С…Р»РµР±Р° - Рё РЅРµРјРЅРѕРіРѕ СЃР»Р°РґРєРѕРіРѕ РјРµРґР°.
+	AI_Output	(self ,other,"DIA_Gerold_Deal_12_07");	//Р‘СѓС‚С‹Р»РєСѓ РІРёРЅР°, С‡С‚РѕР±С‹ Р·Р°РїРёС‚СЊ РІСЃРµ СЌС‚Рѕ ... Р”Р° СЌС‚РѕРіРѕ РґРѕР»Р¶РЅРѕ С…РІР°С‚РёС‚СЊ. РЇ РІРµСЂСЋ, Сѓ С‚РµР±СЏ РїРѕР»СѓС‡РёС‚СЃСЏ РґРѕСЃС‚Р°С‚СЊ РІСЃРµ СЌС‚Рѕ. РўР°Рє С‡С‚Рѕ Р·Р°С…РѕРґРё, РєРѕРіРґР° РЅР°Р№РґРµС€СЊ РїСЂРѕРґСѓРєС‚С‹.
 	
-	B_LogEntry (TOPIC_RescueGorn,"Если я принесу Герольду колбасу, хлеб, вино и мед, он передаст записку Горну.");
+	B_LogEntry (TOPIC_RescueGorn,"Р•СЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ Р“РµСЂРѕР»СЊРґСѓ РєРѕР»Р±Р°СЃСѓ, С…Р»РµР±, РІРёРЅРѕ Рё РјРµРґ, РѕРЅ РїРµСЂРµРґР°СЃС‚ Р·Р°РїРёСЃРєСѓ Р“РѕСЂРЅСѓ.");
 };	
 // ************************************************************
 // 	Deal Stuff
@@ -180,7 +180,7 @@ INSTANCE DIA_Gerold_Stuff (C_INFO)
 	condition	= DIA_Gerold_Stuff_Condition;
 	information	= DIA_Gerold_Stuff_Info;
 	permanent	= TRUE;
-	description = "Я принес тебе кое-что ...";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ ...";
 };
 //-----------------------------------                       
 var int DIA_Gerold_Stuff_permanent;
@@ -198,10 +198,10 @@ FUNC INT DIA_Gerold_Stuff_Condition()
  
 FUNC VOID DIA_Gerold_Stuff_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Stuff_15_00");	//Я принес тебе кое-что. Вот еда, как ты и просил.
+	AI_Output	(other,self ,"DIA_Gerold_Stuff_15_00");	//РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ. Р’РѕС‚ РµРґР°, РєР°Рє С‚С‹ Рё РїСЂРѕСЃРёР».
 	
 	
-	//------------------HACK fьr deutliche Anzeige-------------------
+	//------------------HACK fСЊr deutliche Anzeige-------------------
 	
 	if (Npc_HasItems (other, ItFo_Honey) >= 1)
 	&& (Npc_HasItems (other, ItFo_Bread) >= 1)
@@ -225,19 +225,19 @@ FUNC VOID DIA_Gerold_Stuff_Info()
 	{
 	*/
 	
-		AI_Output	(self ,other,"DIA_Gerold_Stuff_12_01");	//Хорошо, дай посмотрю. Записка у тебя с собой?
-		AI_Output   (other,self ,"DIA_Gerold_Stuff_15_02"); //Да, вот. Не забудь, она для Горна.
-		AI_Output 	(self ,other,"DIA_Gerold_Stuff_12_03"); //Заходи завтра, он к этому времени уже получит ее.
+		AI_Output	(self ,other,"DIA_Gerold_Stuff_12_01");	//РҐРѕСЂРѕС€Рѕ, РґР°Р№ РїРѕСЃРјРѕС‚СЂСЋ. Р—Р°РїРёСЃРєР° Сѓ С‚РµР±СЏ СЃ СЃРѕР±РѕР№?
+		AI_Output   (other,self ,"DIA_Gerold_Stuff_15_02"); //Р”Р°, РІРѕС‚. РќРµ Р·Р°Р±СѓРґСЊ, РѕРЅР° РґР»СЏ Р“РѕСЂРЅР°.
+		AI_Output 	(self ,other,"DIA_Gerold_Stuff_12_03"); //Р—Р°С…РѕРґРё Р·Р°РІС‚СЂР°, РѕРЅ Рє СЌС‚РѕРјСѓ РІСЂРµРјРµРЅРё СѓР¶Рµ РїРѕР»СѓС‡РёС‚ РµРµ.
 		
 		B_GiveInvItems (other,self ,ItWr_LetterForGorn_MIS,1); 
 		DayContactGorn = Wld_GetDay();
 		DIA_Gerold_Stuff_permanent = TRUE;
 		
-		B_LogEntry (TOPIC_RescueGorn,"Герольд получил то, что хотел, и передаст записку.");
+		B_LogEntry (TOPIC_RescueGorn,"Р“РµСЂРѕР»СЊРґ РїРѕР»СѓС‡РёР» С‚Рѕ, С‡С‚Рѕ С…РѕС‚РµР», Рё РїРµСЂРµРґР°СЃС‚ Р·Р°РїРёСЃРєСѓ.");
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Gerold_Stuff_12_04"); //Заходи, когда у тебя будет то, что я просил.
+		AI_Output (self ,other,"DIA_Gerold_Stuff_12_04"); //Р—Р°С…РѕРґРё, РєРѕРіРґР° Сѓ С‚РµР±СЏ Р±СѓРґРµС‚ С‚Рѕ, С‡С‚Рѕ СЏ РїСЂРѕСЃРёР».
 	};
 };
 // ************************************************************
@@ -250,7 +250,7 @@ INSTANCE DIA_Gerold_Antwort (C_INFO)
 	condition	= DIA_Gerold_Antwort_Condition;
 	information	= DIA_Gerold_Antwort_Info;
 	permanent	= TRUE;
-	description = "Горн получил записку?";
+	description = "Р“РѕСЂРЅ РїРѕР»СѓС‡РёР» Р·Р°РїРёСЃРєСѓ?";
 };                       
 //-------------------------------------
 var int DIA_Gerold_Antwort_permanent; 
@@ -266,26 +266,26 @@ FUNC INT DIA_Gerold_Antwort_Condition()
 };
 FUNC VOID DIA_Gerold_Antwort_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Antwort_15_00");//Горн получил записку?
+	AI_Output	(other,self ,"DIA_Gerold_Antwort_15_00");//Р“РѕСЂРЅ РїРѕР»СѓС‡РёР» Р·Р°РїРёСЃРєСѓ?
 	
 	if (DayContactGorn < Wld_GetDay() )
 	{
-		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_01");//Да, и я должен передать тебе его слова:
-		AI_Output	(other,self ,"DIA_Gerold_Antwort_15_02");//И?
-		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_03");//Это находится у южных ворот.
-		AI_Output	(other,self ,"DIA_Gerold_Antwort_15_04");//Он сказал что-нибудь еще?
-		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_05");//Нет. Понятия не имею, что это значит. А ты знаешь?
-		AI_Output	(other,self ,"DIA_Gerold_Antwort_15_06");//Возможно. Но тебе не стоит сильно напрягать мозги по этому поводу.
-		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_07");//Да, возможно, ты прав.
+		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_01");//Р”Р°, Рё СЏ РґРѕР»Р¶РµРЅ РїРµСЂРµРґР°С‚СЊ С‚РµР±Рµ РµРіРѕ СЃР»РѕРІР°:
+		AI_Output	(other,self ,"DIA_Gerold_Antwort_15_02");//Р?
+		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_03");//Р­С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚.
+		AI_Output	(other,self ,"DIA_Gerold_Antwort_15_04");//РћРЅ СЃРєР°Р·Р°Р» С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_05");//РќРµС‚. РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, С‡С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚. Рђ С‚С‹ Р·РЅР°РµС€СЊ?
+		AI_Output	(other,self ,"DIA_Gerold_Antwort_15_06");//Р’РѕР·РјРѕР¶РЅРѕ. РќРѕ С‚РµР±Рµ РЅРµ СЃС‚РѕРёС‚ СЃРёР»СЊРЅРѕ РЅР°РїСЂСЏРіР°С‚СЊ РјРѕР·РіРё РїРѕ СЌС‚РѕРјСѓ РїРѕРІРѕРґСѓ.
+		AI_Output	(self ,other,"DIA_Gerold_Antwort_12_07");//Р”Р°, РІРѕР·РјРѕР¶РЅРѕ, С‚С‹ РїСЂР°РІ.
 		
 		
 		GornsTreasure = TRUE;	
 		DIA_Gerold_Antwort_permanent = TRUE;
-		B_LogEntry (TOPIC_RescueGorn,"Горн говорит, что его золото находится у южных ворот.");
+		B_LogEntry (TOPIC_RescueGorn,"Р“РѕСЂРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РµРіРѕ Р·РѕР»РѕС‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚.");
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Gerold_GornsAnswer_12_08");//Нет еще. Зайди попозже.
+		AI_Output	(self ,other,"DIA_Gerold_GornsAnswer_12_08");//РќРµС‚ РµС‰Рµ. Р—Р°Р№РґРё РїРѕРїРѕР·Р¶Рµ.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -301,7 +301,7 @@ INSTANCE DIA_Gerold_SetGornFree (C_INFO)
 	condition	= DIA_Gerold_SetGornFree_Condition;
 	information	= DIA_Gerold_SetGornFree_Info;
 	permanent	= FALSE;
-	description = "Освободи Горна.";
+	description = "РћСЃРІРѕР±РѕРґРё Р“РѕСЂРЅР°.";
 };                       
 
 FUNC INT DIA_Gerold_SetGornFree_Condition()
@@ -315,12 +315,12 @@ FUNC INT DIA_Gerold_SetGornFree_Condition()
  
 FUNC VOID DIA_Gerold_SetGornFree_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_SetGornFree_15_00");//Освободи Горна. Это приказ командующего Гаронда.
-	AI_Output	(self ,other,"DIA_Gerold_SetGornFree_12_01");//Мне уже сообщили об этом. Вот ключ, ты можешь войти туда.
+	AI_Output	(other,self ,"DIA_Gerold_SetGornFree_15_00");//РћСЃРІРѕР±РѕРґРё Р“РѕСЂРЅР°. Р­С‚Рѕ РїСЂРёРєР°Р· РєРѕРјР°РЅРґСѓСЋС‰РµРіРѕ Р“Р°СЂРѕРЅРґР°.
+	AI_Output	(self ,other,"DIA_Gerold_SetGornFree_12_01");//РњРЅРµ СѓР¶Рµ СЃРѕРѕР±С‰РёР»Рё РѕР± СЌС‚РѕРј. Р’РѕС‚ РєР»СЋС‡, С‚С‹ РјРѕР¶РµС€СЊ РІРѕР№С‚Рё С‚СѓРґР°.
 
 	CreateInvItems (self, ItKe_PrisonKey_MIS,1);
 	B_GiveInvItems	(self,other,ItKe_PrisonKey_MIS,1);
-	B_LogEntry (TOPIC_RescueGorn,"Герольд дал мне ключ от тюрьмы.");
+	B_LogEntry (TOPIC_RescueGorn,"Р“РµСЂРѕР»СЊРґ РґР°Р» РјРЅРµ РєР»СЋС‡ РѕС‚ С‚СЋСЂСЊРјС‹.");
 };
 // ************************************************************
 // 	Perm
@@ -332,7 +332,7 @@ INSTANCE DIA_Gerold_Perm (C_INFO)
 	condition	= DIA_Gerold_Perm_Condition;
 	information	= DIA_Gerold_Perm_Info;
 	permanent	= TRUE;
-	description = "Ты когда-нибудь спишь?";
+	description = "РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃРїРёС€СЊ?";
 };                       
 FUNC INT DIA_Gerold_Perm_Condition()
 {
@@ -344,8 +344,8 @@ FUNC INT DIA_Gerold_Perm_Condition()
 };
 FUNC VOID DIA_Gerold_Perm_Info()
 {	
-	AI_Output	(other,self ,"DIA_Gerold_Perm_15_00");//Ты когда-нибудь спишь?
-	AI_Output	(self ,other,"DIA_Gerold_Perm_12_01");//Нет. Сам Иннос дарует мне силу никогда не спать на посту.
+	AI_Output	(other,self ,"DIA_Gerold_Perm_15_00");//РўС‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СЃРїРёС€СЊ?
+	AI_Output	(self ,other,"DIA_Gerold_Perm_12_01");//РќРµС‚. РЎР°Рј РРЅРЅРѕСЃ РґР°СЂСѓРµС‚ РјРЅРµ СЃРёР»Сѓ РЅРёРєРѕРіРґР° РЅРµ СЃРїР°С‚СЊ РЅР° РїРѕСЃС‚Сѓ.
 };	
 //#####################################################################
 //##
@@ -393,7 +393,7 @@ instance DIA_Gerold_KAP4_ALLESRUHIG		(C_INFO)
 	condition	 = 	DIA_Gerold_KAP4_ALLESRUHIG_Condition;
 	information	 = 	DIA_Gerold_KAP4_ALLESRUHIG_Info;
 
-	description	 = 	"Все тихо?";
+	description	 = 	"Р’СЃРµ С‚РёС…Рѕ?";
 };
 
 func int DIA_Gerold_KAP4_ALLESRUHIG_Condition ()
@@ -406,46 +406,46 @@ func int DIA_Gerold_KAP4_ALLESRUHIG_Condition ()
 
 func void DIA_Gerold_KAP4_ALLESRUHIG_Info ()
 {
-	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_15_00"); //Все тихо?
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_12_01"); //Тихо, да.
-	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_15_02"); //Но?
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_12_03"); //У меня пупок уже прилип к позвоночнику. Гаронд опять урезал наши пайки.
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_12_04"); //Если я не найду где-нибудь приличной еды, я пойду и откушу кусок жирной задницы Гаронда.
+	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_15_00"); //Р’СЃРµ С‚РёС…Рѕ?
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_12_01"); //РўРёС…Рѕ, РґР°.
+	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_15_02"); //РќРѕ?
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_12_03"); //РЈ РјРµРЅСЏ РїСѓРїРѕРє СѓР¶Рµ РїСЂРёР»РёРї Рє РїРѕР·РІРѕРЅРѕС‡РЅРёРєСѓ. Р“Р°СЂРѕРЅРґ РѕРїСЏС‚СЊ СѓСЂРµР·Р°Р» РЅР°С€Рё РїР°Р№РєРё.
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_12_04"); //Р•СЃР»Рё СЏ РЅРµ РЅР°Р№РґСѓ РіРґРµ-РЅРёР±СѓРґСЊ РїСЂРёР»РёС‡РЅРѕР№ РµРґС‹, СЏ РїРѕР№РґСѓ Рё РѕС‚РєСѓС€Сѓ РєСѓСЃРѕРє Р¶РёСЂРЅРѕР№ Р·Р°РґРЅРёС†С‹ Р“Р°СЂРѕРЅРґР°.
 
 	Info_ClearChoices	(DIA_Gerold_KAP4_ALLESRUHIG);
-	Info_AddChoice	(DIA_Gerold_KAP4_ALLESRUHIG, "Это не мои проблемы.", DIA_Gerold_KAP4_ALLESRUHIG_Nein );
-	Info_AddChoice	(DIA_Gerold_KAP4_ALLESRUHIG, "Возможно, я могу угостить тебя.", DIA_Gerold_KAP4_ALLESRUHIG_geben );
+	Info_AddChoice	(DIA_Gerold_KAP4_ALLESRUHIG, "Р­С‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹.", DIA_Gerold_KAP4_ALLESRUHIG_Nein );
+	Info_AddChoice	(DIA_Gerold_KAP4_ALLESRUHIG, "Р’РѕР·РјРѕР¶РЅРѕ, СЏ РјРѕРіСѓ СѓРіРѕСЃС‚РёС‚СЊ С‚РµР±СЏ.", DIA_Gerold_KAP4_ALLESRUHIG_geben );
 };
 func void DIA_Gerold_KAP4_ALLESRUHIG_geben ()
 {
-	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_geben_15_00"); //Возможно, я могу угостить тебя.
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_01"); //Ты с ума сошел? Только не здесь! Если кто-нибудь это увидит, у меня сразу появится куча новых друзей, если ты понимаешь, о чем я.
+	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_geben_15_00"); //Р’РѕР·РјРѕР¶РЅРѕ, СЏ РјРѕРіСѓ СѓРіРѕСЃС‚РёС‚СЊ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_01"); //РўС‹ СЃ СѓРјР° СЃРѕС€РµР»? РўРѕР»СЊРєРѕ РЅРµ Р·РґРµСЃСЊ! Р•СЃР»Рё РєС‚Рѕ-РЅРёР±СѓРґСЊ СЌС‚Рѕ СѓРІРёРґРёС‚, Сѓ РјРµРЅСЏ СЃСЂР°Р·Сѓ РїРѕСЏРІРёС‚СЃСЏ РєСѓС‡Р° РЅРѕРІС‹С… РґСЂСѓР·РµР№, РµСЃР»Рё С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ.
 	if 	(Wld_IsTime	(23,10,08,00) == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_02"); //Ты найдешь меня в храме, когда все лягут спать.
+		AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_02"); //РўС‹ РЅР°Р№РґРµС€СЊ РјРµРЅСЏ РІ С…СЂР°РјРµ, РєРѕРіРґР° РІСЃРµ Р»СЏРіСѓС‚ СЃРїР°С‚СЊ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_03"); //Быстрее, пошли в храм, пока остальные не повылезли из своих нор. Я не могу ждать до завтра.
+		AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_03"); //Р‘С‹СЃС‚СЂРµРµ, РїРѕС€Р»Рё РІ С…СЂР°Рј, РїРѕРєР° РѕСЃС‚Р°Р»СЊРЅС‹Рµ РЅРµ РїРѕРІС‹Р»РµР·Р»Рё РёР· СЃРІРѕРёС… РЅРѕСЂ. РЇ РЅРµ РјРѕРіСѓ Р¶РґР°С‚СЊ РґРѕ Р·Р°РІС‚СЂР°.
 	};
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_04"); //Я думаю, в это время в храме никого нет. Я буду ждать тебя там.
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_05"); //Но смотри, чтобы это не оказалась черствая корка хлеба или какой-нибудь сырой кусок мяса, ты понял?
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_04"); //РЇ РґСѓРјР°СЋ, РІ СЌС‚Рѕ РІСЂРµРјСЏ РІ С…СЂР°РјРµ РЅРёРєРѕРіРѕ РЅРµС‚. РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ С‚Р°Рј.
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_geben_12_05"); //РќРѕ СЃРјРѕС‚СЂРё, С‡С‚РѕР±С‹ СЌС‚Рѕ РЅРµ РѕРєР°Р·Р°Р»Р°СЃСЊ С‡РµСЂСЃС‚РІР°СЏ РєРѕСЂРєР° С…Р»РµР±Р° РёР»Рё РєР°РєРѕР№-РЅРёР±СѓРґСЊ СЃС‹СЂРѕР№ РєСѓСЃРѕРє РјСЏСЃР°, С‚С‹ РїРѕРЅСЏР»?
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Food"); 
 
  	Log_CreateTopic (TOPIC_GeroldGiveFood, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GeroldGiveFood, LOG_RUNNING);
-	B_LogEntry (TOPIC_GeroldGiveFood,"Гаронд опять урезал паек. Мне лучше принести Герольду что-нибудь поесть, пока он с голодухи не выкинул какую-нибудь глупость. Я должен встретиться с ним в доме магов, когда все уснут."); 
+	B_LogEntry (TOPIC_GeroldGiveFood,"Р“Р°СЂРѕРЅРґ РѕРїСЏС‚СЊ СѓСЂРµР·Р°Р» РїР°РµРє. РњРЅРµ Р»СѓС‡С€Рµ РїСЂРёРЅРµСЃС‚Рё Р“РµСЂРѕР»СЊРґСѓ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРµСЃС‚СЊ, РїРѕРєР° РѕРЅ СЃ РіРѕР»РѕРґСѓС…Рё РЅРµ РІС‹РєРёРЅСѓР» РєР°РєСѓСЋ-РЅРёР±СѓРґСЊ РіР»СѓРїРѕСЃС‚СЊ. РЇ РґРѕР»Р¶РµРЅ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РЅРёРј РІ РґРѕРјРµ РјР°РіРѕРІ, РєРѕРіРґР° РІСЃРµ СѓСЃРЅСѓС‚."); 
 
 	MIS_GeroldGiveFood = LOG_RUNNING;
 };
 
 func void DIA_Gerold_KAP4_ALLESRUHIG_Nein ()
 {
-	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_Nein_15_00"); //Это не мои проблемы.
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_Nein_12_01"); //Тебе легко говорить. Твою-то пайку Гаронд наверняка не урежет.
-	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_Nein_12_02"); //Даже хотя он и не признает это, он страшно напуган и видит в тебе свое единственное спасение.
+	AI_Output			(other, self, "DIA_Gerold_KAP4_ALLESRUHIG_Nein_15_00"); //Р­С‚Рѕ РЅРµ РјРѕРё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_Nein_12_01"); //РўРµР±Рµ Р»РµРіРєРѕ РіРѕРІРѕСЂРёС‚СЊ. РўРІРѕСЋ-С‚Рѕ РїР°Р№РєСѓ Р“Р°СЂРѕРЅРґ РЅР°РІРµСЂРЅСЏРєР° РЅРµ СѓСЂРµР¶РµС‚.
+	AI_Output			(self, other, "DIA_Gerold_KAP4_ALLESRUHIG_Nein_12_02"); //Р”Р°Р¶Рµ С…РѕС‚СЏ РѕРЅ Рё РЅРµ РїСЂРёР·РЅР°РµС‚ СЌС‚Рѕ, РѕРЅ СЃС‚СЂР°С€РЅРѕ РЅР°РїСѓРіР°РЅ Рё РІРёРґРёС‚ РІ С‚РµР±Рµ СЃРІРѕРµ РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ СЃРїР°СЃРµРЅРёРµ.
 
 	AI_StopProcessInfos (self);
 };
@@ -478,9 +478,9 @@ func void DIA_Gerold_MoreFood ()
 
 	if (Gerold_FoodCounter > 8)
 	{
-		AI_Output			(self, other, "DIA_Gerold_MoreFood_12_00"); //Этого достаточно. Этого достаточно! Теперь я меня некоторое время не будет мучить голод.
-		AI_Output			(self, other, "DIA_Gerold_MoreFood_12_01"); //Вот мое золото. Я все равно ничего не могу на него купить здесь, а тебе оно, может быть, пригодится.
-		AI_Output			(self, other, "DIA_Gerold_MoreFood_12_02"); //А теперь я лучше пойду, пока никто не увидел нас.
+		AI_Output			(self, other, "DIA_Gerold_MoreFood_12_00"); //Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ! РўРµРїРµСЂСЊ СЏ РјРµРЅСЏ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ РЅРµ Р±СѓРґРµС‚ РјСѓС‡РёС‚СЊ РіРѕР»РѕРґ.
+		AI_Output			(self, other, "DIA_Gerold_MoreFood_12_01"); //Р’РѕС‚ РјРѕРµ Р·РѕР»РѕС‚Рѕ. РЇ РІСЃРµ СЂР°РІРЅРѕ РЅРёС‡РµРіРѕ РЅРµ РјРѕРіСѓ РЅР° РЅРµРіРѕ РєСѓРїРёС‚СЊ Р·РґРµСЃСЊ, Р° С‚РµР±Рµ РѕРЅРѕ, РјРѕР¶РµС‚ Р±С‹С‚СЊ, РїСЂРёРіРѕРґРёС‚СЃСЏ.
+		AI_Output			(self, other, "DIA_Gerold_MoreFood_12_02"); //Рђ С‚РµРїРµСЂСЊ СЏ Р»СѓС‡С€Рµ РїРѕР№РґСѓ, РїРѕРєР° РЅРёРєС‚Рѕ РЅРµ СѓРІРёРґРµР» РЅР°СЃ.
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"Start");
 		MIS_GeroldGiveFood = LOG_SUCCESS;
@@ -492,41 +492,41 @@ func void DIA_Gerold_MoreFood ()
 	{
 		if (Gerold_FoodCounter == 0)
 			{
-				Info_AddChoice	(DIA_Gerold_FOOD, "Сейчас у меня ничего нет.", DIA_Gerold_FOOD_nichts );
+				Info_AddChoice	(DIA_Gerold_FOOD, "РЎРµР№С‡Р°СЃ Сѓ РјРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµС‚.", DIA_Gerold_FOOD_nichts );
 			}
 		else
 			{
-				Info_AddChoice	(DIA_Gerold_FOOD, "Это все, что у меня есть.", DIA_Gerold_FOOD_kaese_nichtmehr );
+				Info_AddChoice	(DIA_Gerold_FOOD, "Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.", DIA_Gerold_FOOD_kaese_nichtmehr );
 				if (Gerold_FoodCounter < 5)
 				{
-					AI_Output			(self, other, "DIA_Gerold_MoreFood_12_03"); //Конечно. Давай сюда. А еще у тебя есть?
+					AI_Output			(self, other, "DIA_Gerold_MoreFood_12_03"); //РљРѕРЅРµС‡РЅРѕ. Р”Р°РІР°Р№ СЃСЋРґР°. Рђ РµС‰Рµ Сѓ С‚РµР±СЏ РµСЃС‚СЊ?
 				}
 				else
 				{
-					AI_Output			(self, other, "DIA_Gerold_MoreFood_12_04"); //Да. Еще, еще!
+					AI_Output			(self, other, "DIA_Gerold_MoreFood_12_04"); //Р”Р°. Р•С‰Рµ, РµС‰Рµ!
 				};
 			};
 			
 		if Npc_HasItems (other,ItFo_FishSoup)
 				|| Npc_HasItems (other,ItFo_Stew)
 			{
-			Info_AddChoice	(DIA_Gerold_FOOD, "(Дать суп)", DIA_Gerold_FOOD_Suppe );
+			Info_AddChoice	(DIA_Gerold_FOOD, "(Р”Р°С‚СЊ СЃСѓРї)", DIA_Gerold_FOOD_Suppe );
 			};
 		if Npc_HasItems (other,ItFoMutton)
 			{
-			Info_AddChoice	(DIA_Gerold_FOOD, "(Дать мясо)", DIA_Gerold_FOOD_fleisch );
+			Info_AddChoice	(DIA_Gerold_FOOD, "(Р”Р°С‚СЊ РјСЏСЃРѕ)", DIA_Gerold_FOOD_fleisch );
 			};
 		if Npc_HasItems (other,ItFo_Bacon)
 			{
-			Info_AddChoice	(DIA_Gerold_FOOD, "(Дать окорок)", DIA_Gerold_FOOD_schinken );
+			Info_AddChoice	(DIA_Gerold_FOOD, "(Р”Р°С‚СЊ РѕРєРѕСЂРѕРє)", DIA_Gerold_FOOD_schinken );
 			};
 		if Npc_HasItems (other,ItFo_Cheese)
 			{
-			Info_AddChoice	(DIA_Gerold_FOOD, "Дать сыр)", DIA_Gerold_FOOD_kaese );
+			Info_AddChoice	(DIA_Gerold_FOOD, "Р”Р°С‚СЊ СЃС‹СЂ)", DIA_Gerold_FOOD_kaese );
 			};
 		if Npc_HasItems (other,ItFo_Sausage)
 			{
-			Info_AddChoice	(DIA_Gerold_FOOD, "Дать колбасу)", DIA_Gerold_FOOD_Wurst );
+			Info_AddChoice	(DIA_Gerold_FOOD, "Р”Р°С‚СЊ РєРѕР»Р±Р°СЃСѓ)", DIA_Gerold_FOOD_Wurst );
 			};
 			Gerold_FoodCounter = (Gerold_FoodCounter +1);
 	};
@@ -534,15 +534,15 @@ func void DIA_Gerold_MoreFood ()
 
 func void DIA_Gerold_FOOD_Info ()
 {
-	AI_Output			(self, other, "DIA_Gerold_FOOD_12_00"); //Вот ты где. И как? У тебя есть что-нибудь поесть?
+	AI_Output			(self, other, "DIA_Gerold_FOOD_12_00"); //Р’РѕС‚ С‚С‹ РіРґРµ. Р РєР°Рє? РЈ С‚РµР±СЏ РµСЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРµСЃС‚СЊ?
 
 	DIA_Gerold_MoreFood ();
 };
 
 func void DIA_Gerold_FOOD_nichts ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_nichts_15_00"); //Сейчас у меня ничего нет.
-	AI_Output			(self, other, "DIA_Gerold_FOOD_nichts_12_01"); //Сначала наобещаешь с три короба, а затем хочешь обмануть меня?
+	AI_Output			(other, self, "DIA_Gerold_FOOD_nichts_15_00"); //РЎРµР№С‡Р°СЃ Сѓ РјРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµС‚.
+	AI_Output			(self, other, "DIA_Gerold_FOOD_nichts_12_01"); //РЎРЅР°С‡Р°Р»Р° РЅР°РѕР±РµС‰Р°РµС€СЊ СЃ С‚СЂРё РєРѕСЂРѕР±Р°, Р° Р·Р°С‚РµРј С…РѕС‡РµС€СЊ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ?
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -554,11 +554,11 @@ func void DIA_Gerold_FOOD_nichts ()
 
 func void DIA_Gerold_FOOD_kaese_nichtmehr ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_kaese_nichtmehr_15_00"); //Это все, что у меня есть.
-	AI_Output			(self, other, "DIA_Gerold_FOOD_kaese_nichtmehr_12_01"); //И я, по-твоему, поверю в это? Ладно, это все же лучше, чем ничего. Вот, возьми немного золота за это.
+	AI_Output			(other, self, "DIA_Gerold_FOOD_kaese_nichtmehr_15_00"); //Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
+	AI_Output			(self, other, "DIA_Gerold_FOOD_kaese_nichtmehr_12_01"); //Р СЏ, РїРѕ-С‚РІРѕРµРјСѓ, РїРѕРІРµСЂСЋ РІ СЌС‚Рѕ? Р›Р°РґРЅРѕ, СЌС‚Рѕ РІСЃРµ Р¶Рµ Р»СѓС‡С€Рµ, С‡РµРј РЅРёС‡РµРіРѕ. Р’РѕС‚, РІРѕР·СЊРјРё РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р° Р·Р° СЌС‚Рѕ.
 	CreateInvItems 		(self, ItMi_Gold, 50);									
 	B_GiveInvItems 		(self, other, ItMi_Gold, 50);					
-	AI_Output			(self, other, "DIA_Gerold_FOOD_kaese_nichtmehr_12_02"); //Хорошо. А теперь мне нужно возвращаться на мой пост.
+	AI_Output			(self, other, "DIA_Gerold_FOOD_kaese_nichtmehr_12_02"); //РҐРѕСЂРѕС€Рѕ. Рђ С‚РµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅРѕ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР° РјРѕР№ РїРѕСЃС‚.
 	AI_StopProcessInfos (self);
 	
 	var int XP_GeroldGiveFoodLow;
@@ -582,35 +582,35 @@ func void DIA_Gerold_FOOD_kaese_nichtmehr ()
 
 func void DIA_Gerold_FOOD_kaese ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_kaese_15_00"); //Как насчет сочного куска сыра?
+	AI_Output			(other, self, "DIA_Gerold_FOOD_kaese_15_00"); //РљР°Рє РЅР°СЃС‡РµС‚ СЃРѕС‡РЅРѕРіРѕ РєСѓСЃРєР° СЃС‹СЂР°?
 	B_GiveInvItems (other,self , ItFo_Cheese, 1);	
 	DIA_Gerold_MoreFood ();
 };
 
 func void DIA_Gerold_FOOD_Wurst ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_Wurst_15_00"); //Кусок колбасы?
+	AI_Output			(other, self, "DIA_Gerold_FOOD_Wurst_15_00"); //РљСѓСЃРѕРє РєРѕР»Р±Р°СЃС‹?
 	B_GiveInvItems (other,self , ItFo_Sausage, 1);	
 	DIA_Gerold_MoreFood ();
 };
 
 func void DIA_Gerold_FOOD_schinken ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_schinken_15_00"); //Я могу дать тебе этот окорок.
+	AI_Output			(other, self, "DIA_Gerold_FOOD_schinken_15_00"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ СЌС‚РѕС‚ РѕРєРѕСЂРѕРє.
 	B_GiveInvItems (other,self , ItFo_Bacon, 1);	
 	DIA_Gerold_MoreFood ();
 };
 
 func void DIA_Gerold_FOOD_fleisch ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_fleisch_15_00"); //Кусок мяса?
+	AI_Output			(other, self, "DIA_Gerold_FOOD_fleisch_15_00"); //РљСѓСЃРѕРє РјСЏСЃР°?
 	B_GiveInvItems (other,self , ItFoMutton, 1);	
 	DIA_Gerold_MoreFood ();
 };
 
 func void DIA_Gerold_FOOD_Suppe ()
 {
-	AI_Output			(other, self, "DIA_Gerold_FOOD_Suppe_15_00"); //Хороший суп еще никому не повредил, тебе так не кажется?
+	AI_Output			(other, self, "DIA_Gerold_FOOD_Suppe_15_00"); //РҐРѕСЂРѕС€РёР№ СЃСѓРї РµС‰Рµ РЅРёРєРѕРјСѓ РЅРµ РїРѕРІСЂРµРґРёР», С‚РµР±Рµ С‚Р°Рє РЅРµ РєР°Р¶РµС‚СЃСЏ?
 
 	if (B_GiveInvItems (other, self, ItFo_FishSoup,1))
 		{
@@ -633,7 +633,7 @@ instance DIA_Gerold_PERM4		(C_INFO)
 	information	 = 	DIA_Gerold_PERM4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Все еще голоден?";
+	description	 = 	"Р’СЃРµ РµС‰Рµ РіРѕР»РѕРґРµРЅ?";
 };
 
 func int DIA_Gerold_PERM4_Condition ()
@@ -646,29 +646,29 @@ func int DIA_Gerold_PERM4_Condition ()
 
 func void DIA_Gerold_PERM4_Info ()
 {
-	AI_Output			(other, self, "DIA_Gerold_PERM4_15_00"); //Все еще голоден?
+	AI_Output			(other, self, "DIA_Gerold_PERM4_15_00"); //Р’СЃРµ РµС‰Рµ РіРѕР»РѕРґРµРЅ?
 	
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Gerold_PERM4_12_01"); //Если орки атакуют нас опять, даже полный желудок не поможет мне.
+	AI_Output			(self, other, "DIA_Gerold_PERM4_12_01"); //Р•СЃР»Рё РѕСЂРєРё Р°С‚Р°РєСѓСЋС‚ РЅР°СЃ РѕРїСЏС‚СЊ, РґР°Р¶Рµ РїРѕР»РЅС‹Р№ Р¶РµР»СѓРґРѕРє РЅРµ РїРѕРјРѕР¶РµС‚ РјРЅРµ.
 	}
 	else if (MIS_GeroldGiveFood == LOG_SUCCESS)
 	{
-	AI_Output			(self, other, "DIA_Gerold_PERM4_12_02"); //Ты, должно быть, шутишь. В меня больше не лезет. Спасибо еще раз.
+	AI_Output			(self, other, "DIA_Gerold_PERM4_12_02"); //РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С€СѓС‚РёС€СЊ. Р’ РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРµ Р»РµР·РµС‚. РЎРїР°СЃРёР±Рѕ РµС‰Рµ СЂР°Р·.
 	}
 	else if (MIS_GeroldGiveFood == LOG_OBSOLETE)
 	{
-	AI_Output			(self, other, "DIA_Gerold_PERM4_12_03"); //Да. Но все же, спасибо за помощь.
+	AI_Output			(self, other, "DIA_Gerold_PERM4_12_03"); //Р”Р°. РќРѕ РІСЃРµ Р¶Рµ, СЃРїР°СЃРёР±Рѕ Р·Р° РїРѕРјРѕС‰СЊ.
 	}
 	else
 	{
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Gerold_PERM4_12_04"); //Все в порядке, Мастер.
+			AI_Output			(self, other, "DIA_Gerold_PERM4_12_04"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ, РњР°СЃС‚РµСЂ.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Gerold_PERM4_12_05"); //Проваливай!
+			AI_Output			(self, other, "DIA_Gerold_PERM4_12_05"); //РџСЂРѕРІР°Р»РёРІР°Р№!
 		};
 	};
 	AI_StopProcessInfos (self);

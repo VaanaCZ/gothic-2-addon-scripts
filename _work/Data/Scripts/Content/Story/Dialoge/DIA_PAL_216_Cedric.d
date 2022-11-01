@@ -42,7 +42,7 @@ func int DIA_Cedric_Hallo_Condition ()
 };
 func void DIA_Cedric_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Я Седрик, мастер меча и паладин короля.
+	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //РЇ РЎРµРґСЂРёРє, РјР°СЃС‚РµСЂ РјРµС‡Р° Рё РїР°Р»Р°РґРёРЅ РєРѕСЂРѕР»СЏ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Cedric_CanTeach		(C_INFO)
 	condition	 = 	DIA_Cedric_CanTeach_Condition;
 	information	 = 	DIA_Cedric_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ты можешь обучить меня?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 func int DIA_Cedric_CanTeach_Condition ()
 {	
@@ -66,17 +66,17 @@ func int DIA_Cedric_CanTeach_Condition ()
 };
 func void DIA_Cedric_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //Ты можешь обучить меня?
+	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Я могу научить тебя сражаться одноручным оружием.
+		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.
 		Cedric_Teach1H = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Паладин Седрик может обучить меня искусству сражения одноручным оружием.");
+		B_LogEntry (TOPIC_CityTeacher,"РџР°Р»Р°РґРёРЅ РЎРµРґСЂРёРє РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ СЃСЂР°Р¶РµРЅРёСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cedric_CanTeach_12_02"); //Я тренирую только паладинов.
+		AI_Output (self, other, "DIA_Cedric_CanTeach_12_02"); //РЇ С‚СЂРµРЅРёСЂСѓСЋ С‚РѕР»СЊРєРѕ РїР°Р»Р°РґРёРЅРѕРІ.
 	};
 	
 };
@@ -90,7 +90,7 @@ INSTANCE DIA_Cedric_Teach(C_INFO)
 	condition	= DIA_Cedric_Teach_Condition;
 	information	= DIA_Cedric_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу потренироваться.";
+	description = "РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.";
 };                       
 //----------------------------------
 var int DIA_Cedric_Teach_permanent;
@@ -106,11 +106,11 @@ FUNC INT DIA_Cedric_Teach_Condition()
  
 FUNC VOID DIA_Cedric_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Cedric_Teach_15_00"); //Я хочу потренироваться.
+	AI_Output (other,self ,"DIA_Cedric_Teach_15_00"); //РЇ С…РѕС‡Сѓ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ.
 	
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Ты уже владеешь мечом лучше меня. Мне нечему учить тебя.
+		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //РўС‹ СѓР¶Рµ РІР»Р°РґРµРµС€СЊ РјРµС‡РѕРј Р»СѓС‡С€Рµ РјРµРЅСЏ. РњРЅРµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	}
 	else
 	{

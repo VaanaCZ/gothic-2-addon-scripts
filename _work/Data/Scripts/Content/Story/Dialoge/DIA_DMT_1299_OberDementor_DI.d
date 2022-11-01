@@ -17,47 +17,47 @@ func int DIA_Schwarzmagier_HELLO_Condition ()
 var int SC_KnowsMadPsi;		
 func void DIA_Schwarzmagier_HELLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_00"); //Что ж, ничтожный червь, ты действительно осмелился дойти до ворот хозяина.
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_01"); //Это ты здесь всем заправляешь?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_02"); //Я страж Чертогов Ирдората. Величайшего источника власти Белиара на земле. Божественная сила повелителя течет через мои руки.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_03"); //Одно мое слово, и ты погрузишься в вечное безумие.
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_04"); //Понятно. Похоже, мне придется избавиться еще от одной пешки.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_00"); //Р§С‚Рѕ Р¶, РЅРёС‡С‚РѕР¶РЅС‹Р№ С‡РµСЂРІСЊ, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РѕСЃРјРµР»РёР»СЃСЏ РґРѕР№С‚Рё РґРѕ РІРѕСЂРѕС‚ С…РѕР·СЏРёРЅР°.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_01"); //Р­С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РІСЃРµРј Р·Р°РїСЂР°РІР»СЏРµС€СЊ?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_02"); //РЇ СЃС‚СЂР°Р¶ Р§РµСЂС‚РѕРіРѕРІ РСЂРґРѕСЂР°С‚Р°. Р’РµР»РёС‡Р°Р№С€РµРіРѕ РёСЃС‚РѕС‡РЅРёРєР° РІР»Р°СЃС‚Рё Р‘РµР»РёР°СЂР° РЅР° Р·РµРјР»Рµ. Р‘РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ СЃРёР»Р° РїРѕРІРµР»РёС‚РµР»СЏ С‚РµС‡РµС‚ С‡РµСЂРµР· РјРѕРё СЂСѓРєРё.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_09_03"); //РћРґРЅРѕ РјРѕРµ СЃР»РѕРІРѕ, Рё С‚С‹ РїРѕРіСЂСѓР·РёС€СЊСЃСЏ РІ РІРµС‡РЅРѕРµ Р±РµР·СѓРјРёРµ.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_15_04"); //РџРѕРЅСЏС‚РЅРѕ. РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РёР·Р±Р°РІРёС‚СЊСЃСЏ РµС‰Рµ РѕС‚ РѕРґРЅРѕР№ РїРµС€РєРё.
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Я у последних врат. Черный маг, похоже, ключ к ним."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"РЇ Сѓ РїРѕСЃР»РµРґРЅРёС… РІСЂР°С‚. Р§РµСЂРЅС‹Р№ РјР°Рі, РїРѕС…РѕР¶Рµ, РєР»СЋС‡ Рє РЅРёРј."); 
 
 	Info_ClearChoices	(DIA_Schwarzmagier_HELLO);
 	
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Отведи меня к своему хозяину.", DIA_Schwarzmagier_HELLO_meister );
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "И сколько еще тебе подобных мне придется убить?", DIA_Schwarzmagier_HELLO_dmt );
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "А что скрывается за тем огромным порталом, вон там?", DIA_Schwarzmagier_HELLO_hinterTor );
-	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Кто твой хозяин?", DIA_Schwarzmagier_HELLO_wer );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "РћС‚РІРµРґРё РјРµРЅСЏ Рє СЃРІРѕРµРјСѓ С…РѕР·СЏРёРЅСѓ.", DIA_Schwarzmagier_HELLO_meister );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Р СЃРєРѕР»СЊРєРѕ РµС‰Рµ С‚РµР±Рµ РїРѕРґРѕР±РЅС‹С… РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СѓР±РёС‚СЊ?", DIA_Schwarzmagier_HELLO_dmt );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Рђ С‡С‚Рѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ Р·Р° С‚РµРј РѕРіСЂРѕРјРЅС‹Рј РїРѕСЂС‚Р°Р»РѕРј, РІРѕРЅ С‚Р°Рј?", DIA_Schwarzmagier_HELLO_hinterTor );
+	Info_AddChoice	(DIA_Schwarzmagier_HELLO, "РљС‚Рѕ С‚РІРѕР№ С…РѕР·СЏРёРЅ?", DIA_Schwarzmagier_HELLO_wer );
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		Info_AddChoice	(DIA_Schwarzmagier_HELLO, "Ты был последователем Спящего.", DIA_Schwarzmagier_HELLO_schlaefer );
+		Info_AddChoice	(DIA_Schwarzmagier_HELLO, "РўС‹ Р±С‹Р» РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµРј РЎРїСЏС‰РµРіРѕ.", DIA_Schwarzmagier_HELLO_schlaefer );
 	};
 };
 func void DIA_Schwarzmagier_HELLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_00"); //Кто твой хозяин?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_01"); //Он странник между мирами. Его божественная мудрость просвещает нас.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_02"); //Он Избранный Белиара. Он тот, кто освободит королевство от презренных последователей Инноса.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_03"); //Он несет смерть всем, кто сомневается в его величии.
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_04"); //Знакомые слова.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_00"); //РљС‚Рѕ С‚РІРѕР№ С…РѕР·СЏРёРЅ?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_01"); //РћРЅ СЃС‚СЂР°РЅРЅРёРє РјРµР¶РґСѓ РјРёСЂР°РјРё. Р•РіРѕ Р±РѕР¶РµСЃС‚РІРµРЅРЅР°СЏ РјСѓРґСЂРѕСЃС‚СЊ РїСЂРѕСЃРІРµС‰Р°РµС‚ РЅР°СЃ.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_02"); //РћРЅ РР·Р±СЂР°РЅРЅС‹Р№ Р‘РµР»РёР°СЂР°. РћРЅ С‚РѕС‚, РєС‚Рѕ РѕСЃРІРѕР±РѕРґРёС‚ РєРѕСЂРѕР»РµРІСЃС‚РІРѕ РѕС‚ РїСЂРµР·СЂРµРЅРЅС‹С… РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№ РРЅРЅРѕСЃР°.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_wer_09_03"); //РћРЅ РЅРµСЃРµС‚ СЃРјРµСЂС‚СЊ РІСЃРµРј, РєС‚Рѕ СЃРѕРјРЅРµРІР°РµС‚СЃСЏ РІ РµРіРѕ РІРµР»РёС‡РёРё.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_wer_15_04"); //Р—РЅР°РєРѕРјС‹Рµ СЃР»РѕРІР°.
 
 };
 
 func void DIA_Schwarzmagier_HELLO_hinterTor ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_hinterTor_15_00"); //А что скрывается за тем огромным порталом, вон там?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_hinterTor_09_01"); //(смеется) Покои моего повелителя останутся недоступными для тебя. Я не дам тебе возможности открыть эти врата.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_hinterTor_15_00"); //Рђ С‡С‚Рѕ СЃРєСЂС‹РІР°РµС‚СЃСЏ Р·Р° С‚РµРј РѕРіСЂРѕРјРЅС‹Рј РїРѕСЂС‚Р°Р»РѕРј, РІРѕРЅ С‚Р°Рј?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_hinterTor_09_01"); //(СЃРјРµРµС‚СЃСЏ) РџРѕРєРѕРё РјРѕРµРіРѕ РїРѕРІРµР»РёС‚РµР»СЏ РѕСЃС‚Р°РЅСѓС‚СЃСЏ РЅРµРґРѕСЃС‚СѓРїРЅС‹РјРё РґР»СЏ С‚РµР±СЏ. РЇ РЅРµ РґР°Рј С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РѕС‚РєСЂС‹С‚СЊ СЌС‚Рё РІСЂР°С‚Р°.
 
 };
 func void DIA_Schwarzmagier_HELLO_schlaefer ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_schlaefer_15_00"); //Ты был последователем Спящего.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_01"); //Это было в далеком прошлом. Повелитель открыл нам глаза. Теперь никто не остановит нас.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_02"); //Повелитель показал нам единственно возможный путь борьбы с вами, неверующими.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_schlaefer_15_00"); //РўС‹ Р±С‹Р» РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµРј РЎРїСЏС‰РµРіРѕ.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ РІ РґР°Р»РµРєРѕРј РїСЂРѕС€Р»РѕРј. РџРѕРІРµР»РёС‚РµР»СЊ РѕС‚РєСЂС‹Р» РЅР°Рј РіР»Р°Р·Р°. РўРµРїРµСЂСЊ РЅРёРєС‚Рѕ РЅРµ РѕСЃС‚Р°РЅРѕРІРёС‚ РЅР°СЃ.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_schlaefer_09_02"); //РџРѕРІРµР»РёС‚РµР»СЊ РїРѕРєР°Р·Р°Р» РЅР°Рј РµРґРёРЅСЃС‚РІРµРЅРЅРѕ РІРѕР·РјРѕР¶РЅС‹Р№ РїСѓС‚СЊ Р±РѕСЂСЊР±С‹ СЃ РІР°РјРё, РЅРµРІРµСЂСѓСЋС‰РёРјРё.
 
 	TOPIC_END_DEMENTOREN = TRUE;
 	B_GivePlayerXP (XP_Ambient);
@@ -65,11 +65,11 @@ func void DIA_Schwarzmagier_HELLO_schlaefer ()
 
 func void DIA_Schwarzmagier_HELLO_dmt ()
 {
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_00"); //И сколько еще тебе подобных мне придется убить?
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_01"); //Нас много. Ты даже не представляешь, как многочисленны те, кто ждет прихода этой свободы.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_02"); //Их вопль прокатится по всей земле, когда мы вступим в этот мир.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_03"); //Чтобы освободить его от варваров, называющих себя Стражами Огня. Наш сбор здесь, в этом храме, будет недолгим.
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_04"); //Да.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_00"); //Р СЃРєРѕР»СЊРєРѕ РµС‰Рµ С‚РµР±Рµ РїРѕРґРѕР±РЅС‹С… РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СѓР±РёС‚СЊ?
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_01"); //РќР°СЃ РјРЅРѕРіРѕ. РўС‹ РґР°Р¶Рµ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, РєР°Рє РјРЅРѕРіРѕС‡РёСЃР»РµРЅРЅС‹ С‚Рµ, РєС‚Рѕ Р¶РґРµС‚ РїСЂРёС…РѕРґР° СЌС‚РѕР№ СЃРІРѕР±РѕРґС‹.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_02"); //РС… РІРѕРїР»СЊ РїСЂРѕРєР°С‚РёС‚СЃСЏ РїРѕ РІСЃРµР№ Р·РµРјР»Рµ, РєРѕРіРґР° РјС‹ РІСЃС‚СѓРїРёРј РІ СЌС‚РѕС‚ РјРёСЂ.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_dmt_09_03"); //Р§С‚РѕР±С‹ РѕСЃРІРѕР±РѕРґРёС‚СЊ РµРіРѕ РѕС‚ РІР°СЂРІР°СЂРѕРІ, РЅР°Р·С‹РІР°СЋС‰РёС… СЃРµР±СЏ РЎС‚СЂР°Р¶Р°РјРё РћРіРЅСЏ. РќР°С€ СЃР±РѕСЂ Р·РґРµСЃСЊ, РІ СЌС‚РѕРј С…СЂР°РјРµ, Р±СѓРґРµС‚ РЅРµРґРѕР»РіРёРј.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_dmt_15_04"); //Р”Р°.
 };
 
 func void DIA_Schwarzmagier_HELLO_meister ()
@@ -79,12 +79,12 @@ func void DIA_Schwarzmagier_HELLO_meister ()
 	Wld_PlayEffect("FX_EarthQuake",  self, self, 0, 0, 0, FALSE );
 	Wld_PlayEffect("SFX_Circle",  self, self, 0, 0, 0, FALSE );
 	AI_PlayAni (self,"T_PRACTICEMAGIC5");	
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_00"); //(угрожающе) Хватит болтовни! Я уничтожу тебя.
-	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_01"); //Твой взор потухнет, и твой дух растает во тьме.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РҐРІР°С‚РёС‚ Р±РѕР»С‚РѕРІРЅРё! РЇ СѓРЅРёС‡С‚РѕР¶Сѓ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Schwarzmagier_HELLO_meister_09_01"); //РўРІРѕР№ РІР·РѕСЂ РїРѕС‚СѓС…РЅРµС‚, Рё С‚РІРѕР№ РґСѓС… СЂР°СЃС‚Р°РµС‚ РІРѕ С‚СЊРјРµ.
 
 	if (Npc_HasItems (other,ItAm_Prot_BlackEye_Mis))
 	{
-	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_meister_15_02"); //(себе под нос) Без этого амулета вызова душ у меня бы были большие проблемы сейчас.
+	AI_Output			(other, self, "DIA_Schwarzmagier_HELLO_meister_15_02"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) Р‘РµР· СЌС‚РѕРіРѕ Р°РјСѓР»РµС‚Р° РІС‹Р·РѕРІР° РґСѓС€ Сѓ РјРµРЅСЏ Р±С‹ Р±С‹Р»Рё Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹ СЃРµР№С‡Р°СЃ.
 	}
 	else
 	{

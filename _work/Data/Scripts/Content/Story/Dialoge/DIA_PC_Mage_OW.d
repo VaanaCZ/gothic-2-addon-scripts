@@ -45,62 +45,62 @@ FUNC INT DIA_MiltenOW_Hello_Condition()
 };
 FUNC VOID DIA_MiltenOW_Hello_Info()
 {	
-	AI_Output	(self ,other,"DIA_MiltenOW_Hello_03_00");//Посмотрите, кто вернулся! Наш герой из-за Барьера!
+	AI_Output	(self ,other,"DIA_MiltenOW_Hello_03_00");//РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ РІРµСЂРЅСѓР»СЃСЏ! РќР°С€ РіРµСЂРѕР№ РёР·-Р·Р° Р‘Р°СЂСЊРµСЂР°!
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Рад видеть тебя, Милтен.",DIA_MiltenOW_Hello_YES);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Я знаю тебя?",DIA_MiltenOW_Hello_NO);
+	Info_AddChoice (DIA_MiltenOW_Hello,"Р Р°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ, РњРёР»С‚РµРЅ.",DIA_MiltenOW_Hello_YES);
+	Info_AddChoice (DIA_MiltenOW_Hello,"РЇ Р·РЅР°СЋ С‚РµР±СЏ?",DIA_MiltenOW_Hello_NO);
 };
 	// ------------------------------------
 	func void B_Milten_GornDiegoLester()
 	{
-		AI_Output 	(self ,other,"DIA_MiltenOW_Hello_NO_03_02"); //Ты помнишь Горна, Диего и Лестера?
+		AI_Output 	(self ,other,"DIA_MiltenOW_Hello_NO_03_02"); //РўС‹ РїРѕРјРЅРёС€СЊ Р“РѕСЂРЅР°, Р”РёРµРіРѕ Рё Р›РµСЃС‚РµСЂР°?
 	};
 	// ------------------------------------
 
 FUNC VOID DIA_MiltenOW_Hello_YES()
 {
-	AI_Output	(other,self ,"DIA_MiltenOW_Hello_YES_15_00");//Рад видеть тебя, Милтен. Ты все еще здесь или здесь опять?
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_01");//Опять. После того как Барьер рухнул, я вступил в монастырь Магов Огня.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_02");//Но когда стало ясно, что паладины хотят отправиться сюда, мой опыт и знание этих мест оказались весьма полезными.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_03");//Поэтому было решено доверить мне эту священную миссию обеспечения магической поддержки экспедиции.
+	AI_Output	(other,self ,"DIA_MiltenOW_Hello_YES_15_00");//Р Р°Рґ РІРёРґРµС‚СЊ С‚РµР±СЏ, РњРёР»С‚РµРЅ. РўС‹ РІСЃРµ РµС‰Рµ Р·РґРµСЃСЊ РёР»Рё Р·РґРµСЃСЊ РѕРїСЏС‚СЊ?
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_01");//РћРїСЏС‚СЊ. РџРѕСЃР»Рµ С‚РѕРіРѕ РєР°Рє Р‘Р°СЂСЊРµСЂ СЂСѓС…РЅСѓР», СЏ РІСЃС‚СѓРїРёР» РІ РјРѕРЅР°СЃС‚С‹СЂСЊ РњР°РіРѕРІ РћРіРЅСЏ.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_02");//РќРѕ РєРѕРіРґР° СЃС‚Р°Р»Рѕ СЏСЃРЅРѕ, С‡С‚Рѕ РїР°Р»Р°РґРёРЅС‹ С…РѕС‚СЏС‚ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ СЃСЋРґР°, РјРѕР№ РѕРїС‹С‚ Рё Р·РЅР°РЅРёРµ СЌС‚РёС… РјРµСЃС‚ РѕРєР°Р·Р°Р»РёСЃСЊ РІРµСЃСЊРјР° РїРѕР»РµР·РЅС‹РјРё.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_03");//РџРѕСЌС‚РѕРјСѓ Р±С‹Р»Рѕ СЂРµС€РµРЅРѕ РґРѕРІРµСЂРёС‚СЊ РјРЅРµ СЌС‚Сѓ СЃРІСЏС‰РµРЅРЅСѓСЋ РјРёСЃСЃРёСЋ РѕР±РµСЃРїРµС‡РµРЅРёСЏ РјР°РіРёС‡РµСЃРєРѕР№ РїРѕРґРґРµСЂР¶РєРё СЌРєСЃРїРµРґРёС†РёРё.
 	B_Milten_GornDiegoLester();
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Конечно же, я помню парней.",DIA_MiltenOW_Hello_Friends);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Эти имена ни о чем мне не говорят.",DIA_MiltenOW_Hello_Forget);
+	Info_AddChoice (DIA_MiltenOW_Hello,"РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РїРѕРјРЅСЋ РїР°СЂРЅРµР№.",DIA_MiltenOW_Hello_Friends);
+	Info_AddChoice (DIA_MiltenOW_Hello,"Р­С‚Рё РёРјРµРЅР° РЅРё Рѕ С‡РµРј РјРЅРµ РЅРµ РіРѕРІРѕСЂСЏС‚.",DIA_MiltenOW_Hello_Forget);
 };
 FUNC VOID DIA_MiltenOW_Hello_NO()
 {
-	AI_Output	(other,self ,"DIA_MiltenOW_Hello_NO_15_00");//Я должен знать их?
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_NO_03_01");//Ты через многое прошел, да?
+	AI_Output	(other,self ,"DIA_MiltenOW_Hello_NO_15_00");//РЇ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ РёС…?
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_NO_03_01");//РўС‹ С‡РµСЂРµР· РјРЅРѕРіРѕРµ РїСЂРѕС€РµР», РґР°?
 	B_Milten_GornDiegoLester();
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Как здесь обстоят дела?",DIA_MiltenOW_Hello_Friends);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Эти имена ни о чем мне не говорят.",DIA_MiltenOW_Hello_Forget);
+	Info_AddChoice (DIA_MiltenOW_Hello,"РљР°Рє Р·РґРµСЃСЊ РѕР±СЃС‚РѕСЏС‚ РґРµР»Р°?",DIA_MiltenOW_Hello_Friends);
+	Info_AddChoice (DIA_MiltenOW_Hello,"Р­С‚Рё РёРјРµРЅР° РЅРё Рѕ С‡РµРј РјРЅРµ РЅРµ РіРѕРІРѕСЂСЏС‚.",DIA_MiltenOW_Hello_Forget);
 };
 FUNC VOID DIA_MiltenOW_Hello_Friends()
 {
-	AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_00");//Конечно же, я помню парней.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_01");//Ну, Горн и Диего не ушли далеко. Их подобрали паладины здесь, в долине.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_02");//Лестер исчез, впрочем - и я понятия не имею, где он сейчас ошивается.
+	AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_00");//РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ РїРѕРјРЅСЋ РїР°СЂРЅРµР№.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_01");//РќСѓ, Р“РѕСЂРЅ Рё Р”РёРµРіРѕ РЅРµ СѓС€Р»Рё РґР°Р»РµРєРѕ. РС… РїРѕРґРѕР±СЂР°Р»Рё РїР°Р»Р°РґРёРЅС‹ Р·РґРµСЃСЊ, РІ РґРѕР»РёРЅРµ.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_02");//Р›РµСЃС‚РµСЂ РёСЃС‡РµР·, РІРїСЂРѕС‡РµРј - Рё СЏ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РіРґРµ РѕРЅ СЃРµР№С‡Р°СЃ РѕС€РёРІР°РµС‚СЃСЏ.
 	
 	if (Npc_KnowsInfo (other, DIA_Lester_Hello)) 
 	{
-		AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_03");//Я встретил Лестера - он теперь с Ксардасом.
-		AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_04");//Ну, хоть какие-то хорошие новости.
+		AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_03");//РЇ РІСЃС‚СЂРµС‚РёР» Р›РµСЃС‚РµСЂР° - РѕРЅ С‚РµРїРµСЂСЊ СЃ РљСЃР°СЂРґР°СЃРѕРј.
+		AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_04");//РќСѓ, С…РѕС‚СЊ РєР°РєРёРµ-С‚Рѕ С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё.
 	};
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_05");//Ну, а у меня нет ничего хорошего.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_05");//РќСѓ, Р° Сѓ РјРµРЅСЏ РЅРµС‚ РЅРёС‡РµРіРѕ С…РѕСЂРѕС€РµРіРѕ.
 	
 	Knows_Diego = TRUE;
 	Info_ClearChoices (DIA_MiltenOW_Hello);
 };
 FUNC VOID DIA_MiltenOW_Hello_Forget()
 {
-	AI_Output (other,self ,"DIA_MiltenOW_Hello_Forget_15_00");//Эти имена ни о чем мне не говорят.
-	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_01");//Ты многое забыл, да? Что ж, оставим прошлое в покое и посвятим себя делам нынешних дней.
-	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_02");//Хотя у меня и нет приятных новостей.
+	AI_Output (other,self ,"DIA_MiltenOW_Hello_Forget_15_00");//Р­С‚Рё РёРјРµРЅР° РЅРё Рѕ С‡РµРј РјРЅРµ РЅРµ РіРѕРІРѕСЂСЏС‚.
+	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_01");//РўС‹ РјРЅРѕРіРѕРµ Р·Р°Р±С‹Р», РґР°? Р§С‚Рѕ Р¶, РѕСЃС‚Р°РІРёРј РїСЂРѕС€Р»РѕРµ РІ РїРѕРєРѕРµ Рё РїРѕСЃРІСЏС‚РёРј СЃРµР±СЏ РґРµР»Р°Рј РЅС‹РЅРµС€РЅРёС… РґРЅРµР№.
+	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_02");//РҐРѕС‚СЏ Сѓ РјРµРЅСЏ Рё РЅРµС‚ РїСЂРёСЏС‚РЅС‹С… РЅРѕРІРѕСЃС‚РµР№.
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
 };
@@ -114,7 +114,7 @@ INSTANCE DIA_MiltenOW_Bericht(C_INFO)
 	condition	= DIA_MiltenOW_Bericht_Condition;
 	information	= DIA_MiltenOW_Bericht_Info;
 	permanent	= FALSE;
-	description = "Как здесь обстоят дела?";
+	description = "РљР°Рє Р·РґРµСЃСЊ РѕР±СЃС‚РѕСЏС‚ РґРµР»Р°?";
 };                       
 
 FUNC INT DIA_MiltenOW_Bericht_Condition()
@@ -126,12 +126,12 @@ FUNC INT DIA_MiltenOW_Bericht_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Bericht_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Bericht_15_00");//Как здесь обстоят дела?
-	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_01");//Паладины пришли сюда, чтобы добывать магическую руду.
-	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_02");//Но из-за всех этих нападений драконов и орков я сомневаюсь, что паладины уйдут отсюда с рудой.
-	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_03");//Нет, клянусь Инносом - я чувствую присутствие чего-то темного... какого-то зла, оно разрастается здесь. Что-то, темное поднимается от этой долины.
-	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_04");//Мы заплатили высокую цену за уничтожение Спящего. Разрушение Барьера погубило и это место.
-	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_05");//Мы можем считать себя счастливчиками, если нам удастся пережить все это.
+	AI_Output (other,self ,"DIA_MiltenOW_Bericht_15_00");//РљР°Рє Р·РґРµСЃСЊ РѕР±СЃС‚РѕСЏС‚ РґРµР»Р°?
+	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_01");//РџР°Р»Р°РґРёРЅС‹ РїСЂРёС€Р»Рё СЃСЋРґР°, С‡С‚РѕР±С‹ РґРѕР±С‹РІР°С‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРґСѓ.
+	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_02");//РќРѕ РёР·-Р·Р° РІСЃРµС… СЌС‚РёС… РЅР°РїР°РґРµРЅРёР№ РґСЂР°РєРѕРЅРѕРІ Рё РѕСЂРєРѕРІ СЏ СЃРѕРјРЅРµРІР°СЋСЃСЊ, С‡С‚Рѕ РїР°Р»Р°РґРёРЅС‹ СѓР№РґСѓС‚ РѕС‚СЃСЋРґР° СЃ СЂСѓРґРѕР№.
+	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_03");//РќРµС‚, РєР»СЏРЅСѓСЃСЊ РРЅРЅРѕСЃРѕРј - СЏ С‡СѓРІСЃС‚РІСѓСЋ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ С‡РµРіРѕ-С‚Рѕ С‚РµРјРЅРѕРіРѕ... РєР°РєРѕРіРѕ-С‚Рѕ Р·Р»Р°, РѕРЅРѕ СЂР°Р·СЂР°СЃС‚Р°РµС‚СЃСЏ Р·РґРµСЃСЊ. Р§С‚Рѕ-С‚Рѕ, С‚РµРјРЅРѕРµ РїРѕРґРЅРёРјР°РµС‚СЃСЏ РѕС‚ СЌС‚РѕР№ РґРѕР»РёРЅС‹.
+	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_04");//РњС‹ Р·Р°РїР»Р°С‚РёР»Рё РІС‹СЃРѕРєСѓСЋ С†РµРЅСѓ Р·Р° СѓРЅРёС‡С‚РѕР¶РµРЅРёРµ РЎРїСЏС‰РµРіРѕ. Р Р°Р·СЂСѓС€РµРЅРёРµ Р‘Р°СЂСЊРµСЂР° РїРѕРіСѓР±РёР»Рѕ Рё СЌС‚Рѕ РјРµСЃС‚Рѕ.
+	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_05");//РњС‹ РјРѕР¶РµРј СЃС‡РёС‚Р°С‚СЊ СЃРµР±СЏ СЃС‡Р°СЃС‚Р»РёРІС‡РёРєР°РјРё, РµСЃР»Рё РЅР°Рј СѓРґР°СЃС‚СЃСЏ РїРµСЂРµР¶РёС‚СЊ РІСЃРµ СЌС‚Рѕ.
 };
 // ************************************************************
 // 		Erz		  
@@ -143,7 +143,7 @@ INSTANCE DIA_MiltenOW_Erz(C_INFO)
 	condition	= DIA_MiltenOW_Erz_Condition;
 	information	= DIA_MiltenOW_Erz_Info;
 	permanent	= FALSE;
-	description = "Сколько руды удалось добыть?";
+	description = "РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РґРѕР±С‹С‚СЊ?";
 };                       
 
 FUNC INT DIA_MiltenOW_Erz_Condition()
@@ -155,14 +155,14 @@ FUNC INT DIA_MiltenOW_Erz_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Erz_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Erz_15_00");//Сколько руды удалось добыть?
-	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_01");//Сколько руды?.. Ни одного ящика! У нас уже давно нет вестей от старателей.
-	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_02");//Я не удивлюсь, если они все давно мертвы. А нас атакуют драконы и осаждают орки!
-	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_03");//Эта экспедиция обернулась полным провалом.
+	AI_Output (other,self ,"DIA_MiltenOW_Erz_15_00");//РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РґРѕР±С‹С‚СЊ?
+	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_01");//РЎРєРѕР»СЊРєРѕ СЂСѓРґС‹?.. РќРё РѕРґРЅРѕРіРѕ СЏС‰РёРєР°! РЈ РЅР°СЃ СѓР¶Рµ РґР°РІРЅРѕ РЅРµС‚ РІРµСЃС‚РµР№ РѕС‚ СЃС‚Р°СЂР°С‚РµР»РµР№.
+	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_02");//РЇ РЅРµ СѓРґРёРІР»СЋСЃСЊ, РµСЃР»Рё РѕРЅРё РІСЃРµ РґР°РІРЅРѕ РјРµСЂС‚РІС‹. Рђ РЅР°СЃ Р°С‚Р°РєСѓСЋС‚ РґСЂР°РєРѕРЅС‹ Рё РѕСЃР°Р¶РґР°СЋС‚ РѕСЂРєРё!
+	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_03");//Р­С‚Р° СЌРєСЃРїРµРґРёС†РёСЏ РѕР±РµСЂРЅСѓР»Р°СЃСЊ РїРѕР»РЅС‹Рј РїСЂРѕРІР°Р»РѕРј.
 	
 };
 /*	
-	Diesen Blick kenne ich, den hattest Du auch kurz bevor Du in den Schlдfertempel gegangen bist.
+	Diesen Blick kenne ich, den hattest Du auch kurz bevor Du in den SchlРґfertempel gegangen bist.
 */
 // ************************************************************
 // 		Wo sind Gorn und Diego?	  				  
@@ -174,7 +174,7 @@ INSTANCE DIA_MiltenOW_Wo(C_INFO)
 	condition	= DIA_MiltenOW_Wo_Condition;
 	information	= DIA_MiltenOW_Wo_Info;
 	permanent	= FALSE;
-	description = "А где сейчас Горн и Диего?";
+	description = "Рђ РіРґРµ СЃРµР№С‡Р°СЃ Р“РѕСЂРЅ Рё Р”РёРµРіРѕ?";
 };                       
 
 FUNC INT DIA_MiltenOW_Wo_Condition()
@@ -187,9 +187,9 @@ FUNC INT DIA_MiltenOW_Wo_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Wo_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Wo_Forget_15_00");//А где сейчас Горн и Диего?
-	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_01");//Ну, Горн сидит здесь, в темнице, за то, что сопротивлялся аресту.
-	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_02");//Диего прикрепили к отряду старателей. Спроси паладина Парсиваля, он отправлял этот отряд.
+	AI_Output (other,self ,"DIA_MiltenOW_Wo_Forget_15_00");//Рђ РіРґРµ СЃРµР№С‡Р°СЃ Р“РѕСЂРЅ Рё Р”РёРµРіРѕ?
+	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_01");//РќСѓ, Р“РѕСЂРЅ СЃРёРґРёС‚ Р·РґРµСЃСЊ, РІ С‚РµРјРЅРёС†Рµ, Р·Р° С‚Рѕ, С‡С‚Рѕ СЃРѕРїСЂРѕС‚РёРІР»СЏР»СЃСЏ Р°СЂРµСЃС‚Сѓ.
+	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_02");//Р”РёРµРіРѕ РїСЂРёРєСЂРµРїРёР»Рё Рє РѕС‚СЂСЏРґСѓ СЃС‚Р°СЂР°С‚РµР»РµР№. РЎРїСЂРѕСЃРё РїР°Р»Р°РґРёРЅР° РџР°СЂСЃРёРІР°Р»СЏ, РѕРЅ РѕС‚РїСЂР°РІР»СЏР» СЌС‚РѕС‚ РѕС‚СЂСЏРґ.
 	
 	KnowsAboutGorn = TRUE; 
 	SearchForDiego = LOG_RUNNING; 
@@ -204,7 +204,7 @@ INSTANCE DIA_MiltenOW_Gorn(C_INFO)
 	condition	= DIA_MiltenOW_Gorn_Condition;
 	information	= DIA_MiltenOW_Gorn_Info;
 	permanent	= FALSE;
-	description = "Пойдем, освободим Горна!";
+	description = "РџРѕР№РґРµРј, РѕСЃРІРѕР±РѕРґРёРј Р“РѕСЂРЅР°!";
 };                       
 
 FUNC INT DIA_MiltenOW_Gorn_Condition()
@@ -217,18 +217,18 @@ FUNC INT DIA_MiltenOW_Gorn_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Gorn_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_00");//Пойдем, освободим Горна!
-	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_01");//Ну... проблема заключается в том, что Горн - осужденный заключенный.
-	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_02");//Но если нам повезет, Гаронд согласится на сделку и мы сможем купить Горну свободу.
-	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_03");//Да, может быть...
-	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_04");//Держи меня в курсе.
+	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_00");//РџРѕР№РґРµРј, РѕСЃРІРѕР±РѕРґРёРј Р“РѕСЂРЅР°!
+	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_01");//РќСѓ... РїСЂРѕР±Р»РµРјР° Р·Р°РєР»СЋС‡Р°РµС‚СЃСЏ РІ С‚РѕРј, С‡С‚Рѕ Р“РѕСЂРЅ - РѕСЃСѓР¶РґРµРЅРЅС‹Р№ Р·Р°РєР»СЋС‡РµРЅРЅС‹Р№.
+	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_02");//РќРѕ РµСЃР»Рё РЅР°Рј РїРѕРІРµР·РµС‚, Р“Р°СЂРѕРЅРґ СЃРѕРіР»Р°СЃРёС‚СЃСЏ РЅР° СЃРґРµР»РєСѓ Рё РјС‹ СЃРјРѕР¶РµРј РєСѓРїРёС‚СЊ Р“РѕСЂРЅСѓ СЃРІРѕР±РѕРґСѓ.
+	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_03");//Р”Р°, РјРѕР¶РµС‚ Р±С‹С‚СЊ...
+	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_04");//Р”РµСЂР¶Рё РјРµРЅСЏ РІ РєСѓСЂСЃРµ.
 	
 	Log_CreateTopic (TOPIC_RescueGorn,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_RescueGorn,LOG_RUNNING);
-	B_LogEntry (TOPIC_RescueGorn,"Командующий Гаронд посадил Горна в тюрьму. Возможно, с ним можно договориться и нам удастся вытащить беднягу.");
+	B_LogEntry (TOPIC_RescueGorn,"РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ РїРѕСЃР°РґРёР» Р“РѕСЂРЅР° РІ С‚СЋСЂСЊРјСѓ. Р’РѕР·РјРѕР¶РЅРѕ, СЃ РЅРёРј РјРѕР¶РЅРѕ РґРѕРіРѕРІРѕСЂРёС‚СЊСЃСЏ Рё РЅР°Рј СѓРґР°СЃС‚СЃСЏ РІС‹С‚Р°С‰РёС‚СЊ Р±РµРґРЅСЏРіСѓ.");
 };
 // ************************************************************
-// 		Garond will tausend Goldstьcke			  
+// 		Garond will tausend GoldstСЊcke			  
 // ************************************************************
 INSTANCE DIA_MiltenOW_Preis(C_INFO)
 {
@@ -237,7 +237,7 @@ INSTANCE DIA_MiltenOW_Preis(C_INFO)
 	condition	= DIA_MiltenOW_Preis_Condition;
 	information	= DIA_MiltenOW_Preis_Info;
 	permanent	= FALSE;
-	description = "Гаронд хочет 1000 золотых монет за Горна.";
+	description = "Р“Р°СЂРѕРЅРґ С…РѕС‡РµС‚ 1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° Р“РѕСЂРЅР°.";
 };                       
 
 FUNC INT DIA_MiltenOW_Preis_Condition()
@@ -250,11 +250,11 @@ FUNC INT DIA_MiltenOW_Preis_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Preis_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Preis_15_00");//Гаронд хочет 1000 золотых монет за Горна.
-	AI_Output (self ,other,"DIA_MiltenOW_Preis_03_01");//Немаленькая сумма. Я могу пожертвовать 250 монет.
+	AI_Output (other,self ,"DIA_MiltenOW_Preis_15_00");//Р“Р°СЂРѕРЅРґ С…РѕС‡РµС‚ 1000 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚ Р·Р° Р“РѕСЂРЅР°.
+	AI_Output (self ,other,"DIA_MiltenOW_Preis_03_01");//РќРµРјР°Р»РµРЅСЊРєР°СЏ СЃСѓРјРјР°. РЇ РјРѕРіСѓ РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 250 РјРѕРЅРµС‚.
 	
 	B_GiveInvItems (self, other, Itmi_gold, 250);
-	B_LogEntry (TOPIC_RescueGorn,"Милтен дал мне 250 золота, чтобы я заплатил за освобождение Горна.");
+	B_LogEntry (TOPIC_RescueGorn,"РњРёР»С‚РµРЅ РґР°Р» РјРЅРµ 250 Р·РѕР»РѕС‚Р°, С‡С‚РѕР±С‹ СЏ Р·Р°РїР»Р°С‚РёР» Р·Р° РѕСЃРІРѕР±РѕР¶РґРµРЅРёРµ Р“РѕСЂРЅР°.");
 
 };
 // ************************************************************
@@ -267,7 +267,7 @@ INSTANCE DIA_MiltenOW_Mehr(C_INFO)
 	condition	= DIA_MiltenOW_Mehr_Condition;
 	information	= DIA_MiltenOW_Mehr_Info;
 	permanent	= FALSE;
-	description = "Мне нужно больше золота, чтобы купить свободу Горна.";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ Р·РѕР»РѕС‚Р°, С‡С‚РѕР±С‹ РєСѓРїРёС‚СЊ СЃРІРѕР±РѕРґСѓ Р“РѕСЂРЅР°.";
 };                       
 
 FUNC INT DIA_MiltenOW_Mehr_Condition()
@@ -282,16 +282,16 @@ FUNC INT DIA_MiltenOW_Mehr_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Mehr_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Mehr_15_00");//Мне нужно больше золота, чтобы купить свободу Горна.
-	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_01");//Добыть еще золота... Хм, Диего мог бы помочь, но его здесь нет.
-	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_02");//Может, Горн припрятал где-нибудь золото для себя. Нужно выяснить это.
-	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_03");//Я напишу ему записку - вот, попробуй передать ее в темницу.
+	AI_Output (other,self ,"DIA_MiltenOW_Mehr_15_00");//РњРЅРµ РЅСѓР¶РЅРѕ Р±РѕР»СЊС€Рµ Р·РѕР»РѕС‚Р°, С‡С‚РѕР±С‹ РєСѓРїРёС‚СЊ СЃРІРѕР±РѕРґСѓ Р“РѕСЂРЅР°.
+	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_01");//Р”РѕР±С‹С‚СЊ РµС‰Рµ Р·РѕР»РѕС‚Р°... РҐРј, Р”РёРµРіРѕ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ, РЅРѕ РµРіРѕ Р·РґРµСЃСЊ РЅРµС‚.
+	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_02");//РњРѕР¶РµС‚, Р“РѕСЂРЅ РїСЂРёРїСЂСЏС‚Р°Р» РіРґРµ-РЅРёР±СѓРґСЊ Р·РѕР»РѕС‚Рѕ РґР»СЏ СЃРµР±СЏ. РќСѓР¶РЅРѕ РІС‹СЏСЃРЅРёС‚СЊ СЌС‚Рѕ.
+	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_03");//РЇ РЅР°РїРёС€Сѓ РµРјСѓ Р·Р°РїРёСЃРєСѓ - РІРѕС‚, РїРѕРїСЂРѕР±СѓР№ РїРµСЂРµРґР°С‚СЊ РµРµ РІ С‚РµРјРЅРёС†Сѓ.
 	
 	B_GiveInvItems(self,other,ItWr_LetterForGorn_MIS,1);	 
-	B_LogEntry (TOPIC_RescueGorn,"Милтен дал мне записку для Горна. Если я смогу пробраться в тюрьму, возможно, Горн сможет сообщить, не припрятал ли он где-нибудь немного золота.");
+	B_LogEntry (TOPIC_RescueGorn,"РњРёР»С‚РµРЅ РґР°Р» РјРЅРµ Р·Р°РїРёСЃРєСѓ РґР»СЏ Р“РѕСЂРЅР°. Р•СЃР»Рё СЏ СЃРјРѕРіСѓ РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ С‚СЋСЂСЊРјСѓ, РІРѕР·РјРѕР¶РЅРѕ, Р“РѕСЂРЅ СЃРјРѕР¶РµС‚ СЃРѕРѕР±С‰РёС‚СЊ, РЅРµ РїСЂРёРїСЂСЏС‚Р°Р» Р»Рё РѕРЅ РіРґРµ-РЅРёР±СѓРґСЊ РЅРµРјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°.");
 };
 // ************************************************************
-// 		Ausrьstung				  
+// 		AusrСЊstung				  
 // ************************************************************
 INSTANCE DIA_MiltenOW_Equipment(C_INFO)
 {
@@ -300,7 +300,7 @@ INSTANCE DIA_MiltenOW_Equipment(C_INFO)
 	condition	= DIA_MiltenOW_Equipment_Condition;
 	information	= DIA_MiltenOW_Equipment_Info;
 	permanent	= FALSE;
-	description = "Ты можешь обеспечить меня снаряжением?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РѕР±РµСЃРїРµС‡РёС‚СЊ РјРµРЅСЏ СЃРЅР°СЂСЏР¶РµРЅРёРµРј?";
 };                       
 
 FUNC INT DIA_MiltenOW_Equipment_Condition()
@@ -313,12 +313,12 @@ FUNC INT DIA_MiltenOW_Equipment_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Equipment_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Equipmentt_15_00");//Ты можешь обеспечить меня снаряжением? Гаронд попросил меня отправиться в шахты.
-	AI_Output (self ,other,"DIA_MiltenOW_Equipment_03_01");//И где я, по-твоему, возьму его? Единственное, что я могу тебе дать, - это ценный рунный камень.
-	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die Schlцsser nicht цffnen.  
+	AI_Output (other,self ,"DIA_MiltenOW_Equipmentt_15_00");//РўС‹ РјРѕР¶РµС€СЊ РѕР±РµСЃРїРµС‡РёС‚СЊ РјРµРЅСЏ СЃРЅР°СЂСЏР¶РµРЅРёРµРј? Р“Р°СЂРѕРЅРґ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ С€Р°С…С‚С‹.
+	AI_Output (self ,other,"DIA_MiltenOW_Equipment_03_01");//Р РіРґРµ СЏ, РїРѕ-С‚РІРѕРµРјСѓ, РІРѕР·СЊРјСѓ РµРіРѕ? Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ С‚РµР±Рµ РґР°С‚СЊ, - СЌС‚Рѕ С†РµРЅРЅС‹Р№ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
+	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die SchlС†sser nicht С†ffnen.  
 	
 	B_GiveInvItems (self,other, ItMI_RuneBlank,1);
-	//Schlьssel auf FP inserten
+	//SchlСЊssel auf FP inserten
 };	
 
 //***********************
@@ -333,7 +333,7 @@ INSTANCE DIA_MiltenOW_Versteck (C_INFO)
 	information	= DIA_MiltenOW_Versteck_Info;
 	permanent	= FALSE;
 	IMPORTANT 	= FALSE;
-	description = "Я получил ответ от Горна ..."; 
+	description = "РЇ РїРѕР»СѓС‡РёР» РѕС‚РІРµС‚ РѕС‚ Р“РѕСЂРЅР° ..."; 
 }; 
 
 FUNC INT DIA_MiltenOW_Versteck_Condition()
@@ -349,13 +349,13 @@ FUNC INT DIA_MiltenOW_Versteck_Condition()
  
 FUNC VOID DIA_MiltenOW_Versteck_Info()
 {
-	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_00"); //Я получил ответ от Горна. Он говорит, что его золото находится у южных ворот.
-	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_01"); //(с горечью) Бывших южных ворот, ты хочешь сказать. Дракон превратил их в развалины.
-	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_02"); //Как мне добраться туда?
-	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_03"); //Это неподалеку от тарана орков. Южные ворота были справа от него.
-	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_04"); //Это будет непросто - так что постарайся сделать все побыстрее и не привлекая внимания врага.
+	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_00"); //РЇ РїРѕР»СѓС‡РёР» РѕС‚РІРµС‚ РѕС‚ Р“РѕСЂРЅР°. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РµРіРѕ Р·РѕР»РѕС‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ СЋР¶РЅС‹С… РІРѕСЂРѕС‚.
+	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_01"); //(СЃ РіРѕСЂРµС‡СЊСЋ) Р‘С‹РІС€РёС… СЋР¶РЅС‹С… РІРѕСЂРѕС‚, С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ. Р”СЂР°РєРѕРЅ РїСЂРµРІСЂР°С‚РёР» РёС… РІ СЂР°Р·РІР°Р»РёРЅС‹.
+	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_02"); //РљР°Рє РјРЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ С‚СѓРґР°?
+	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_03"); //Р­С‚Рѕ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С‚Р°СЂР°РЅР° РѕСЂРєРѕРІ. Р®Р¶РЅС‹Рµ РІРѕСЂРѕС‚Р° Р±С‹Р»Рё СЃРїСЂР°РІР° РѕС‚ РЅРµРіРѕ.
+	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_04"); //Р­С‚Рѕ Р±СѓРґРµС‚ РЅРµРїСЂРѕСЃС‚Рѕ - С‚Р°Рє С‡С‚Рѕ РїРѕСЃС‚Р°СЂР°Р№СЃСЏ СЃРґРµР»Р°С‚СЊ РІСЃРµ РїРѕР±С‹СЃС‚СЂРµРµ Рё РЅРµ РїСЂРёРІР»РµРєР°СЏ РІРЅРёРјР°РЅРёСЏ РІСЂР°РіР°.
 	
-	B_LogEntry (TOPIC_RescueGorn,"Бывшие южные ворота находятся справа от тарана орков. Золото Горна спрятано где-то там.");
+	B_LogEntry (TOPIC_RescueGorn,"Р‘С‹РІС€РёРµ СЋР¶РЅС‹Рµ РІРѕСЂРѕС‚Р° РЅР°С…РѕРґСЏС‚СЃСЏ СЃРїСЂР°РІР° РѕС‚ С‚Р°СЂР°РЅР° РѕСЂРєРѕРІ. Р—РѕР»РѕС‚Рѕ Р“РѕСЂРЅР° СЃРїСЂСЏС‚Р°РЅРѕ РіРґРµ-С‚Рѕ С‚Р°Рј.");
 };
 // ************************************************************
 // 		Gorn ist frei		  
@@ -367,7 +367,7 @@ INSTANCE DIA_MiltenOW_Frei(C_INFO)
 	condition	= DIA_MiltenOW_Frei_Condition;
 	information	= DIA_MiltenOW_Frei_Info;
 	permanent	= FALSE;
-	description = "Я освободил Горна.";
+	description = "РЇ РѕСЃРІРѕР±РѕРґРёР» Р“РѕСЂРЅР°.";
 };                       
 
 FUNC INT DIA_MiltenOW_Frei_Condition()
@@ -380,8 +380,8 @@ FUNC INT DIA_MiltenOW_Frei_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Frei_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Frei_15_00");//Я освободил Горна.
-	AI_Output (self ,other,"DIA_MiltenOW_Frei_03_01");//Хорошо. Теперь мы можем подумать о том, что делать дальше.
+	AI_Output (other,self ,"DIA_MiltenOW_Frei_15_00");//РЇ РѕСЃРІРѕР±РѕРґРёР» Р“РѕСЂРЅР°.
+	AI_Output (self ,other,"DIA_MiltenOW_Frei_03_01");//РҐРѕСЂРѕС€Рѕ. РўРµРїРµСЂСЊ РјС‹ РјРѕР¶РµРј РїРѕРґСѓРјР°С‚СЊ Рѕ С‚РѕРј, С‡С‚Рѕ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ.
 };
 // ************************************************************
 // 		Lehren
@@ -393,7 +393,7 @@ INSTANCE DIA_MiltenOW_Lehren(C_INFO)
 	condition	= DIA_MiltenOW_Lehren_Condition;
 	information	= DIA_MiltenOW_Lehren_Info;
 	permanent	= FALSE;
-	description = "Ты можешь научить меня чему-нибудь?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };                       
 
 FUNC INT DIA_MiltenOW_Lehren_Condition()
@@ -406,9 +406,9 @@ FUNC INT DIA_MiltenOW_Lehren_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Lehren_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Lehren_15_00");//Ты можешь научить меня чему-нибудь?
-	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_01");//Я могу обучить тебя магии из второго круга, или я могу помочь повысить твою магическую энергию.
-	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_02");//Если ты готов повысить свою энергию, я могу обучить тебя.
+	AI_Output (other,self ,"DIA_MiltenOW_Lehren_15_00");//РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
+	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_01");//РЇ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РјР°РіРёРё РёР· РІС‚РѕСЂРѕРіРѕ РєСЂСѓРіР°, РёР»Рё СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ РїРѕРІС‹СЃРёС‚СЊ С‚РІРѕСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ.
+	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_02");//Р•СЃР»Рё С‚С‹ РіРѕС‚РѕРІ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕСЋ СЌРЅРµСЂРіРёСЋ, СЏ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ.
 };	
 
 // ************************************************************
@@ -421,7 +421,7 @@ INSTANCE DIA_MiltenOW_TeachCircle2(C_INFO)
 	condition	= DIA_MiltenOW_TeachCircle2_Condition;
 	information	= DIA_MiltenOW_TeachCircle2_Info;
 	permanent	= TRUE;
-	description = "Обучи меня второму кругу магии!";
+	description = "РћР±СѓС‡Рё РјРµРЅСЏ РІС‚РѕСЂРѕРјСѓ РєСЂСѓРіСѓ РјР°РіРёРё!";
 };                       
 
 FUNC INT DIA_MiltenOW_TeachCircle2_Condition()
@@ -435,15 +435,15 @@ FUNC INT DIA_MiltenOW_TeachCircle2_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_TeachCircle2_Info()
 {	
-	AI_Output (other, self, "DIA_Milten_Add_15_00"); //Обучи меня второму кругу магии!
-	AI_Output (self, other, "DIA_Milten_Add_03_01"); //Это обычно привилегия учителей нашего ордена.
-	AI_Output (self, other, "DIA_Milten_Add_03_02"); //Но я думаю, что в твоем случае мы можем сделать исключение...
+	AI_Output (other, self, "DIA_Milten_Add_15_00"); //РћР±СѓС‡Рё РјРµРЅСЏ РІС‚РѕСЂРѕРјСѓ РєСЂСѓРіСѓ РјР°РіРёРё!
+	AI_Output (self, other, "DIA_Milten_Add_03_01"); //Р­С‚Рѕ РѕР±С‹С‡РЅРѕ РїСЂРёРІРёР»РµРіРёСЏ СѓС‡РёС‚РµР»РµР№ РЅР°С€РµРіРѕ РѕСЂРґРµРЅР°.
+	AI_Output (self, other, "DIA_Milten_Add_03_02"); //РќРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РІ С‚РІРѕРµРј СЃР»СѓС‡Р°Рµ РјС‹ РјРѕР¶РµРј СЃРґРµР»Р°С‚СЊ РёСЃРєР»СЋС‡РµРЅРёРµ...
 	
 	if (B_TeachMagicCircle (self, other, 2))
 	{
-		AI_Output (self, other, "DIA_Milten_Add_03_03"); //Я не уверен, что помню все эти официальные и торжественные слова...
-		AI_Output (self, other, "DIA_Milten_Add_03_04"); //Войди во второй круг. Э-э... он покажет тебе направление, но твои дела формируют путь..
-		AI_Output (self, other, "DIA_Milten_Add_03_05"); //Я думаю, ты понимаешь, о чем все это...
+		AI_Output (self, other, "DIA_Milten_Add_03_03"); //РЇ РЅРµ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РїРѕРјРЅСЋ РІСЃРµ СЌС‚Рё РѕС„РёС†РёР°Р»СЊРЅС‹Рµ Рё С‚РѕСЂР¶РµСЃС‚РІРµРЅРЅС‹Рµ СЃР»РѕРІР°...
+		AI_Output (self, other, "DIA_Milten_Add_03_04"); //Р’РѕР№РґРё РІРѕ РІС‚РѕСЂРѕР№ РєСЂСѓРі. Р­-СЌ... РѕРЅ РїРѕРєР°Р¶РµС‚ С‚РµР±Рµ РЅР°РїСЂР°РІР»РµРЅРёРµ, РЅРѕ С‚РІРѕРё РґРµР»Р° С„РѕСЂРјРёСЂСѓСЋС‚ РїСѓС‚СЊ..
+		AI_Output (self, other, "DIA_Milten_Add_03_05"); //РЇ РґСѓРјР°СЋ, С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј РІСЃРµ СЌС‚Рѕ...
 	};
 };
 
@@ -458,7 +458,7 @@ INSTANCE DIA_MiltenOW_Teach(C_INFO)
 	condition	= DIA_MiltenOW_Teach_Condition;
 	information	= DIA_MiltenOW_Teach_Info;
 	permanent	= TRUE;
-	description = "Я хочу изучить новые заклинания.";
+	description = "РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ РЅРѕРІС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ.";
 };                       
 
 FUNC INT DIA_MiltenOW_Teach_Condition()
@@ -472,7 +472,7 @@ FUNC INT DIA_MiltenOW_Teach_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Teach_15_00");//Я хочу изучить новые заклинания.
+	AI_Output (other,self ,"DIA_MiltenOW_Teach_15_00");//РЇ С…РѕС‡Сѓ РёР·СѓС‡РёС‚СЊ РЅРѕРІС‹Рµ Р·Р°РєР»РёРЅР°РЅРёСЏ.
 	
 	if  (Npc_GetTalentSkill (other, NPC_TALENT_MAGE) >= 2)
 	{
@@ -494,7 +494,7 @@ FUNC VOID DIA_MiltenOW_Teach_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_MiltenOW_Teach_03_01");//Ты все еще не достиг второго круга магии. Я ничему не могу научить тебя.
+		AI_Output (self ,other,"DIA_MiltenOW_Teach_03_01");//РўС‹ РІСЃРµ РµС‰Рµ РЅРµ РґРѕСЃС‚РёРі РІС‚РѕСЂРѕРіРѕ РєСЂСѓРіР° РјР°РіРёРё. РЇ РЅРёС‡РµРјСѓ РЅРµ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 };	
 FUNC VOID DIA_MiltenOW_Teach_BACK()
@@ -523,7 +523,7 @@ instance DIA_MiltenOW_Mana		(C_INFO)
 	condition	 = 	DIA_MiltenOW_Mana_Condition;
 	information	 = 	DIA_MiltenOW_Mana_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу повысить мои магические способности.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 func int DIA_MiltenOW_Mana_Condition ()
 {	
@@ -536,7 +536,7 @@ func int DIA_MiltenOW_Mana_Condition ()
 };
 func void DIA_MiltenOW_Mana_Info ()
 {
-	AI_Output (other, self, "DIA_MiltenOW_Mana_15_00"); //Я хочу повысить мои магические способности.
+	AI_Output (other, self, "DIA_MiltenOW_Mana_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
 	Info_ClearChoices   (DIA_MiltenOW_Mana);
 	Info_AddChoice 		(DIA_MiltenOW_Mana, DIALOG_BACK, DIA_MiltenOW_Mana_BACK);
@@ -548,7 +548,7 @@ func void DIA_MiltenOW_Mana_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_MiltenOW_Mana_03_00"); //Твоя магическая энергия велика. Слишком велика, чтобы я мог увеличить ее.
+		AI_Output (self, other, "DIA_MiltenOW_Mana_03_00"); //РўРІРѕСЏ РјР°РіРёС‡РµСЃРєР°СЏ СЌРЅРµСЂРіРёСЏ РІРµР»РёРєР°. РЎР»РёС€РєРѕРј РІРµР»РёРєР°, С‡С‚РѕР±С‹ СЏ РјРѕРі СѓРІРµР»РёС‡РёС‚СЊ РµРµ.
 	};
 	Info_ClearChoices (DIA_MiltenOW_Mana);
 };
@@ -585,7 +585,7 @@ INSTANCE DIA_MiltenOW_Perm(C_INFO)
 	condition	= DIA_MiltenOW_Perm_Condition;
 	information	= DIA_MiltenOW_Perm_Info;
 	permanent	= TRUE;
-	description = "А какие у тебя здесь обязанности?";
+	description = "Рђ РєР°РєРёРµ Сѓ С‚РµР±СЏ Р·РґРµСЃСЊ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё?";
 };                       
 FUNC INT DIA_MiltenOW_Perm_Condition()
 {	
@@ -597,9 +597,9 @@ FUNC INT DIA_MiltenOW_Perm_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Perm_15_00");//А какие у тебя здесь обязанности?
-	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_01");//Изначально, я должен был проверять магическую руду. Но она здесь редко попадала мне в руки.
-	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_02");//И теперь я сосредоточился  на изучении алхимии.
+	AI_Output (other,self ,"DIA_MiltenOW_Perm_15_00");//Рђ РєР°РєРёРµ Сѓ С‚РµР±СЏ Р·РґРµСЃСЊ РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё?
+	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_01");//РР·РЅР°С‡Р°Р»СЊРЅРѕ, СЏ РґРѕР»Р¶РµРЅ Р±С‹Р» РїСЂРѕРІРµСЂСЏС‚СЊ РјР°РіРёС‡РµСЃРєСѓСЋ СЂСѓРґСѓ. РќРѕ РѕРЅР° Р·РґРµСЃСЊ СЂРµРґРєРѕ РїРѕРїР°РґР°Р»Р° РјРЅРµ РІ СЂСѓРєРё.
+	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_02");//Р С‚РµРїРµСЂСЊ СЏ СЃРѕСЃСЂРµРґРѕС‚РѕС‡РёР»СЃСЏ  РЅР° РёР·СѓС‡РµРЅРёРё Р°Р»С…РёРјРёРё.
 };
 // ************************************************************
 // 		Perm 2
@@ -611,7 +611,7 @@ INSTANCE DIA_MiltenOW_Plan(C_INFO)
 	condition	= DIA_MiltenOW_Plan_Condition;
 	information	= DIA_MiltenOW_Plan_Info;
 	permanent	= TRUE;
-	description = "Что ты планируешь делать дальше?";
+	description = "Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?";
 };                       
 FUNC INT DIA_MiltenOW_Plan_Condition()
 {	
@@ -623,12 +623,12 @@ FUNC INT DIA_MiltenOW_Plan_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Plan_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_00");//Что ты планируешь делать дальше?
-	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_01");//Я вернусь. Подожду еще немного, и теперь, когда Горн свободен, я могу отправиться в путь вместе с ним.
-	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_02");//Крайне важно, чтобы Пирокар узнал о ситуации здесь.
-	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_03");//Ну, если ты так считаешь.
-	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_04");//Я надеюсь, что лорд Хаген поймет, какая угроза исходит от этой долины. Не хочется думать, что произойдет, если орки пройдут через Проход.
-	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_05");//Ну, тогда удачного путешествия.
+	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_00");//Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_01");//РЇ РІРµСЂРЅСѓСЃСЊ. РџРѕРґРѕР¶РґСѓ РµС‰Рµ РЅРµРјРЅРѕРіРѕ, Рё С‚РµРїРµСЂСЊ, РєРѕРіРґР° Р“РѕСЂРЅ СЃРІРѕР±РѕРґРµРЅ, СЏ РјРѕРіСѓ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ РїСѓС‚СЊ РІРјРµСЃС‚Рµ СЃ РЅРёРј.
+	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_02");//РљСЂР°Р№РЅРµ РІР°Р¶РЅРѕ, С‡С‚РѕР±С‹ РџРёСЂРѕРєР°СЂ СѓР·РЅР°Р» Рѕ СЃРёС‚СѓР°С†РёРё Р·РґРµСЃСЊ.
+	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_03");//РќСѓ, РµСЃР»Рё С‚С‹ С‚Р°Рє СЃС‡РёС‚Р°РµС€СЊ.
+	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_04");//РЇ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ Р»РѕСЂРґ РҐР°РіРµРЅ РїРѕР№РјРµС‚, РєР°РєР°СЏ СѓРіСЂРѕР·Р° РёСЃС…РѕРґРёС‚ РѕС‚ СЌС‚РѕР№ РґРѕР»РёРЅС‹. РќРµ С…РѕС‡РµС‚СЃСЏ РґСѓРјР°С‚СЊ, С‡С‚Рѕ РїСЂРѕРёР·РѕР№РґРµС‚, РµСЃР»Рё РѕСЂРєРё РїСЂРѕР№РґСѓС‚ С‡РµСЂРµР· РџСЂРѕС…РѕРґ.
+	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_05");//РќСѓ, С‚РѕРіРґР° СѓРґР°С‡РЅРѕРіРѕ РїСѓС‚РµС€РµСЃС‚РІРёСЏ.
 };
 // ************************************************************
 // 			  				PICK POCKET
@@ -641,7 +641,7 @@ INSTANCE DIA_MiltenOW_PICKPOCKET (C_INFO)
 	condition	= DIA_MiltenOW_PICKPOCKET_Condition;
 	information	= DIA_MiltenOW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Это зелье украсть будет сложно)";
+	description = "(Р­С‚Рѕ Р·РµР»СЊРµ СѓРєСЂР°СЃС‚СЊ Р±СѓРґРµС‚ СЃР»РѕР¶РЅРѕ)";
 };                       
 
 FUNC INT DIA_MiltenOW_PICKPOCKET_Condition()

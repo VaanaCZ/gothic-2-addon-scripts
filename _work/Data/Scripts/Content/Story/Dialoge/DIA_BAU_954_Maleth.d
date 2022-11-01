@@ -8,7 +8,7 @@ INSTANCE DIA_Maleth_EXIT   (C_INFO)
 	condition   = DIA_Maleth_EXIT_Condition;
 	information = DIA_Maleth_EXIT_Info;
 	permanent   = TRUE;
-	description = "Мне нужно идти!";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё!";
 };
 FUNC INT DIA_Maleth_EXIT_Condition()
 {
@@ -52,34 +52,34 @@ func int DIA_Maleth_Hallo_Condition ()
 
 func void DIA_Maleth_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Maleth_Hallo_08_00"); //Привет, чужеземец!
+	AI_Output (self, other, "DIA_Maleth_Hallo_08_00"); //РџСЂРёРІРµС‚, С‡СѓР¶РµР·РµРјРµС†!
 
 	if (hero.guild == GIL_NONE)
 		{
 		
 			if (Npc_GetDistToWP(self,"NW_FARM1_PATH_CITY_SHEEP_09") < 500)
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_01"); //Я видел, как ты спустился с гор.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_01"); //РЇ РІРёРґРµР», РєР°Рє С‚С‹ СЃРїСѓСЃС‚РёР»СЃСЏ СЃ РіРѕСЂ.
 			};
-			AI_Output (self, other, "DIA_Maleth_Hallo_08_02"); //Тебе повезло, что ты не пришел три недели назад.
-			AI_Output (self, other, "DIA_Maleth_Hallo_08_03"); //Мы бы приняли тебя за беглого каторжника. А с ними у нас разговор короткий!
+			AI_Output (self, other, "DIA_Maleth_Hallo_08_02"); //РўРµР±Рµ РїРѕРІРµР·Р»Рѕ, С‡С‚Рѕ С‚С‹ РЅРµ РїСЂРёС€РµР» С‚СЂРё РЅРµРґРµР»Рё РЅР°Р·Р°Рґ.
+			AI_Output (self, other, "DIA_Maleth_Hallo_08_03"); //РњС‹ Р±С‹ РїСЂРёРЅСЏР»Рё С‚РµР±СЏ Р·Р° Р±РµРіР»РѕРіРѕ РєР°С‚РѕСЂР¶РЅРёРєР°. Рђ СЃ РЅРёРјРё Сѓ РЅР°СЃ СЂР°Р·РіРѕРІРѕСЂ РєРѕСЂРѕС‚РєРёР№!
 			
 			if (Npc_HasEquippedArmor(other) == FALSE) 
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_04"); //Ты выглядишь абсолютно измотанным.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_04"); //РўС‹ РІС‹РіР»СЏРґРёС€СЊ Р°Р±СЃРѕР»СЋС‚РЅРѕ РёР·РјРѕС‚Р°РЅРЅС‹Рј.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_05"); //Ты выглядел абсолютно измотанным, когда первый раз появился здесь.
-				AI_Output (self, other, "DIA_Maleth_Hallo_08_06"); //Ну а теперь ты похож на человека!
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_05"); //РўС‹ РІС‹РіР»СЏРґРµР» Р°Р±СЃРѕР»СЋС‚РЅРѕ РёР·РјРѕС‚Р°РЅРЅС‹Рј, РєРѕРіРґР° РїРµСЂРІС‹Р№ СЂР°Р· РїРѕСЏРІРёР»СЃСЏ Р·РґРµСЃСЊ.
+				AI_Output (self, other, "DIA_Maleth_Hallo_08_06"); //РќСѓ Р° С‚РµРїРµСЂСЊ С‚С‹ РїРѕС…РѕР¶ РЅР° С‡РµР»РѕРІРµРєР°!
 			};
 		};
 
-	AI_Output (self, other, "DIA_Maleth_Hallo_08_07"); //(недоверчиво) Что тебе нужно здесь?
+	AI_Output (self, other, "DIA_Maleth_Hallo_08_07"); //(РЅРµРґРѕРІРµСЂС‡РёРІРѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Banditen Ьberfall
+//	Banditen Р¬berfall
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Maleth_BANDITS		(C_INFO) //E1
 {
@@ -88,7 +88,7 @@ instance DIA_Maleth_BANDITS		(C_INFO) //E1
 	condition	= DIA_Maleth_BANDITS_Condition;
 	information	= DIA_Maleth_BANDITS_Info;
 	permanent   = FALSE;
-	description	= "На меня напали бандиты в горах.";
+	description	= "РќР° РјРµРЅСЏ РЅР°РїР°Р»Рё Р±Р°РЅРґРёС‚С‹ РІ РіРѕСЂР°С….";
 };
 
 func int DIA_Maleth_BANDITS_Condition ()
@@ -102,9 +102,9 @@ func int DIA_Maleth_BANDITS_Condition ()
 
 func void DIA_Maleth_BANDITS_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BANDITS_15_00"); //На меня напали бандиты в горах.
-	AI_Output (self, other, "DIA_Maleth_BANDITS_08_01"); //Вот мерзкое отродье! Это, вероятно, те же ублюдки, что увели у нас овцу прошлой ночью!
-	AI_Output (self, other, "DIA_Maleth_BANDITS_08_02"); //Тебе еще очень повезло. Редко кому удается уйти от них живым.
+	AI_Output (other, self, "DIA_Maleth_BANDITS_15_00"); //РќР° РјРµРЅСЏ РЅР°РїР°Р»Рё Р±Р°РЅРґРёС‚С‹ РІ РіРѕСЂР°С….
+	AI_Output (self, other, "DIA_Maleth_BANDITS_08_01"); //Р’РѕС‚ РјРµСЂР·РєРѕРµ РѕС‚СЂРѕРґСЊРµ! Р­С‚Рѕ, РІРµСЂРѕСЏС‚РЅРѕ, С‚Рµ Р¶Рµ СѓР±Р»СЋРґРєРё, С‡С‚Рѕ СѓРІРµР»Рё Сѓ РЅР°СЃ РѕРІС†Сѓ РїСЂРѕС€Р»РѕР№ РЅРѕС‡СЊСЋ!
+	AI_Output (self, other, "DIA_Maleth_BANDITS_08_02"); //РўРµР±Рµ РµС‰Рµ РѕС‡РµРЅСЊ РїРѕРІРµР·Р»Рѕ. Р РµРґРєРѕ РєРѕРјСѓ СѓРґР°РµС‚СЃСЏ СѓР№С‚Рё РѕС‚ РЅРёС… Р¶РёРІС‹Рј.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ instance DIA_Maleth_BanditsDEAD	(C_INFO) //E2
 	condition	= DIA_Maleth_BanditsDEAD_Condition;
 	information	= DIA_Maleth_BanditsDEAD_Info;
 	permanent   = FALSE;
-	description	= "Эти бандиты больше не будут беспокоить вас...";
+	description	= "Р­С‚Рё Р±Р°РЅРґРёС‚С‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ Р±РµСЃРїРѕРєРѕРёС‚СЊ РІР°СЃ...";
 };
 
 func int DIA_Maleth_BanditsDEAD_Condition ()
@@ -133,15 +133,15 @@ func int DIA_Maleth_BanditsDEAD_Condition ()
 
 func void DIA_Maleth_BanditsDEAD_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_00"); //Эти бандиты больше не будут беспокоить вас...
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_01"); //Почему? Они мертвы?
-	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_02"); //Они не на того напали...
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_03"); //Слава Инносу! Вот - здесь немного, но я хочу, чтобы ты принял это!
+	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_00"); //Р­С‚Рё Р±Р°РЅРґРёС‚С‹ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓС‚ Р±РµСЃРїРѕРєРѕРёС‚СЊ РІР°СЃ...
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_01"); //РџРѕС‡РµРјСѓ? РћРЅРё РјРµСЂС‚РІС‹?
+	AI_Output (other, self, "DIA_Maleth_BanditsDEAD_15_02"); //РћРЅРё РЅРµ РЅР° С‚РѕРіРѕ РЅР°РїР°Р»Рё...
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_03"); //РЎР»Р°РІР° РРЅРЅРѕСЃСѓ! Р’РѕС‚ - Р·РґРµСЃСЊ РЅРµРјРЅРѕРіРѕ, РЅРѕ СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РїСЂРёРЅСЏР» СЌС‚Рѕ!
 	B_GiveInvItems (self, other, ItFo_Wine, 3);
 	
 	MIS_Maleth_Bandits = LOG_SUCCESS;
 	B_GivePlayerXP (XP_MalethKillBandits);
-	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_04"); //Я расскажу остальным об этом!
+	AI_Output (self, other, "DIA_Maleth_BanditsDEAD_08_04"); //РЇ СЂР°СЃСЃРєР°Р¶Сѓ РѕСЃС‚Р°Р»СЊРЅС‹Рј РѕР± СЌС‚РѕРј!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -154,7 +154,7 @@ instance DIA_Maleth_BanditsALIVE (C_INFO) //E2
 	condition	= DIA_Maleth_BanditsALIVE_Condition;
 	information	= DIA_Maleth_BanditsALIVE_Info;
 	permanent   = FALSE;
-	description	= "Я знаю, где прячутся эти бандиты...";
+	description	= "РЇ Р·РЅР°СЋ, РіРґРµ РїСЂСЏС‡СѓС‚СЃСЏ СЌС‚Рё Р±Р°РЅРґРёС‚С‹...";
 };
 
 func int DIA_Maleth_BanditsALIVE_Condition ()
@@ -173,15 +173,15 @@ func int DIA_Maleth_BanditsALIVE_Condition ()
 
 func void DIA_Maleth_BanditsALIVE_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_BanditsALIVE_15_00"); //Я знаю, где прячутся эти бандиты...
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_01"); //Ты хочешь напасть на них? Я в такие игры не играю! Это слишком опасно!
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_02"); //Кроме того, мне нужно присматривать за овцами!
-	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_03"); //Но если ты думаешь, что можешь избавить нас от этих подонков, все на этой ферме будут очень благодарны тебе.
+	AI_Output (other, self, "DIA_Maleth_BanditsALIVE_15_00"); //РЇ Р·РЅР°СЋ, РіРґРµ РїСЂСЏС‡СѓС‚СЃСЏ СЌС‚Рё Р±Р°РЅРґРёС‚С‹...
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_01"); //РўС‹ С…РѕС‡РµС€СЊ РЅР°РїР°СЃС‚СЊ РЅР° РЅРёС…? РЇ РІ С‚Р°РєРёРµ РёРіСЂС‹ РЅРµ РёРіСЂР°СЋ! Р­С‚Рѕ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ!
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_02"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РјРЅРµ РЅСѓР¶РЅРѕ РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° РѕРІС†Р°РјРё!
+	AI_Output (self, other, "DIA_Maleth_BanditsALIVE_08_03"); //РќРѕ РµСЃР»Рё С‚С‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ РјРѕР¶РµС€СЊ РёР·Р±Р°РІРёС‚СЊ РЅР°СЃ РѕС‚ СЌС‚РёС… РїРѕРґРѕРЅРєРѕРІ, РІСЃРµ РЅР° СЌС‚РѕР№ С„РµСЂРјРµ Р±СѓРґСѓС‚ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕРґР°СЂРЅС‹ С‚РµР±Рµ.
 	MIS_Maleth_Bandits = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Maleth,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Maleth,LOG_RUNNING);
-	B_LogEntry (TOPIC_Maleth,"Если я уничтожу бандитов, поселившихся на полпути от башни Ксардаса к ферме Лобарта, все обитатели фермы будут очень благодарны мне.");
+	B_LogEntry (TOPIC_Maleth,"Р•СЃР»Рё СЏ СѓРЅРёС‡С‚РѕР¶Сѓ Р±Р°РЅРґРёС‚РѕРІ, РїРѕСЃРµР»РёРІС€РёС…СЃСЏ РЅР° РїРѕР»РїСѓС‚Рё РѕС‚ Р±Р°С€РЅРё РљСЃР°СЂРґР°СЃР° Рє С„РµСЂРјРµ Р›РѕР±Р°СЂС‚Р°, РІСЃРµ РѕР±РёС‚Р°С‚РµР»Рё С„РµСЂРјС‹ Р±СѓРґСѓС‚ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕРґР°СЂРЅС‹ РјРЅРµ.");
 	
 };
 
@@ -196,7 +196,7 @@ instance DIA_Maleth_ToTheCity (C_INFO) //E1
 	condition	= DIA_Maleth_ToTheCity_Condition;
 	information	= DIA_Maleth_ToTheCity_Info;
 	permanent   = FALSE;
-	description	= "Я иду в город.";
+	description	= "РЇ РёРґСѓ РІ РіРѕСЂРѕРґ.";
 };
 
 func int DIA_Maleth_ToTheCity_Condition ()
@@ -211,41 +211,41 @@ func int DIA_Maleth_ToTheCity_Condition ()
 
 func void DIA_Maleth_ToTheCity_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_00"); //Я иду в город.
+	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_00"); //РЇ РёРґСѓ РІ РіРѕСЂРѕРґ.
 	
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_01"); //Учитывая то, как ты выглядишь, тебе придется подкупить стражу, чтобы попасть в город.
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_02"); //И ты должен знать, что они хотят услышать.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_01"); //РЈС‡РёС‚С‹РІР°СЏ С‚Рѕ, РєР°Рє С‚С‹ РІС‹РіР»СЏРґРёС€СЊ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРґРєСѓРїРёС‚СЊ СЃС‚СЂР°Р¶Сѓ, С‡С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ.
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_02"); //Р С‚С‹ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ, С‡С‚Рѕ РѕРЅРё С…РѕС‚СЏС‚ СѓСЃР»С‹С€Р°С‚СЊ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_03"); //Они могут впустить тебя - если ты скажешь им то, что они хотят услышать...
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_03"); //РћРЅРё РјРѕРіСѓС‚ РІРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ - РµСЃР»Рё С‚С‹ СЃРєР°Р¶РµС€СЊ РёРј С‚Рѕ, С‡С‚Рѕ РѕРЅРё С…РѕС‚СЏС‚ СѓСЃР»С‹С€Р°С‚СЊ...
 	};
 	
-	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_04"); //И что это?
-	AI_Output (self, other, "DIA_Maleth_ToTheCity_08_05"); //Ну, например, что ты с фермы Лобарта и идешь к городскому кузнецу.
+	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_04"); //Р С‡С‚Рѕ СЌС‚Рѕ?
+	AI_Output (self, other, "DIA_Maleth_ToTheCity_08_05"); //РќСѓ, РЅР°РїСЂРёРјРµСЂ, С‡С‚Рѕ С‚С‹ СЃ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р° Рё РёРґРµС€СЊ Рє РіРѕСЂРѕРґСЃРєРѕРјСѓ РєСѓР·РЅРµС†Сѓ.
 	
 	Log_CreateTopic (TOPIC_City,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_City,LOG_RUNNING);
-	B_LogEntry (TOPIC_City,"Чтобы попасть в город, я могу сказать стражникам у ворот, что я иду с фермы Лобарта и хочу повидать кузнеца.");
+	B_LogEntry (TOPIC_City,"Р§С‚РѕР±С‹ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ, СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ СЃС‚СЂР°Р¶РЅРёРєР°Рј Сѓ РІРѕСЂРѕС‚, С‡С‚Рѕ СЏ РёРґСѓ СЃ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р° Рё С…РѕС‡Сѓ РїРѕРІРёРґР°С‚СЊ РєСѓР·РЅРµС†Р°.");
 	
 	
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_06"); //Но это тебе не поможет. Ты не похож на фермера.
-		B_LogEntry (TOPIC_City,"Конечно, я должен быть похож на фермера.");
+		AI_Output (self, other, "DIA_Maleth_ToTheCity_08_06"); //РќРѕ СЌС‚Рѕ С‚РµР±Рµ РЅРµ РїРѕРјРѕР¶РµС‚. РўС‹ РЅРµ РїРѕС…РѕР¶ РЅР° С„РµСЂРјРµСЂР°.
+		B_LogEntry (TOPIC_City,"РљРѕРЅРµС‡РЅРѕ, СЏ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РїРѕС…РѕР¶ РЅР° С„РµСЂРјРµСЂР°.");
 		
 	};
 	
-	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_07"); //Понятно.
+	AI_Output (other, self, "DIA_Maleth_ToTheCity_15_07"); //РџРѕРЅСЏС‚РЅРѕ.
 };
 	
 	
 	
 
 ///////////////////////////////////////////////////////////////////////
-//	Bessere Ausrьstung
+//	Bessere AusrСЊstung
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Maleth_Equipment		(C_INFO)
 {
@@ -254,7 +254,7 @@ instance DIA_Maleth_Equipment		(C_INFO)
 	condition	= DIA_Maleth_Equipment_Condition;
 	information	= DIA_Maleth_Equipment_Info;
 	permanent   = FALSE;
-	description	= "Мне нужно снаряжение!";
+	description	= "РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ!";
 };
 
 func int DIA_Maleth_Equipment_Condition ()
@@ -269,12 +269,12 @@ func int DIA_Maleth_Equipment_Condition ()
 
 func void DIA_Maleth_Equipment_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_Equipment_15_00"); //Мне нужно снаряжение!
-	AI_Output (self, other, "DIA_Maleth_Equipment_08_01"); //Могу представить. Но я честно скажу тебе: у нас нет ничего, чем мы могли бы поделиться!
+	AI_Output (other, self, "DIA_Maleth_Equipment_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ СЃРЅР°СЂСЏР¶РµРЅРёРµ!
+	AI_Output (self, other, "DIA_Maleth_Equipment_08_01"); //РњРѕРіСѓ РїСЂРµРґСЃС‚Р°РІРёС‚СЊ. РќРѕ СЏ С‡РµСЃС‚РЅРѕ СЃРєР°Р¶Сѓ С‚РµР±Рµ: Сѓ РЅР°СЃ РЅРµС‚ РЅРёС‡РµРіРѕ, С‡РµРј РјС‹ РјРѕРіР»Рё Р±С‹ РїРѕРґРµР»РёС‚СЊСЃСЏ!
 	if (!Npc_IsDead(Lobart))
 	{
-		AI_Output (self, other, "DIA_Maleth_Equipment_08_02"); //Хотя, если ты можешь заплатить, Лобарт продаст тебе кое-что.
-		AI_Output (self, other, "DIA_Maleth_Equipment_08_03"); //Ну, или ты можешь пойти к нему и спросить, нет ли у него какой-нибудь работы.
+		AI_Output (self, other, "DIA_Maleth_Equipment_08_02"); //РҐРѕС‚СЏ, РµСЃР»Рё С‚С‹ РјРѕР¶РµС€СЊ Р·Р°РїР»Р°С‚РёС‚СЊ, Р›РѕР±Р°СЂС‚ РїСЂРѕРґР°СЃС‚ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ.
+		AI_Output (self, other, "DIA_Maleth_Equipment_08_03"); //РќСѓ, РёР»Рё С‚С‹ РјРѕР¶РµС€СЊ РїРѕР№С‚Рё Рє РЅРµРјСѓ Рё СЃРїСЂРѕСЃРёС‚СЊ, РЅРµС‚ Р»Рё Сѓ РЅРµРіРѕ РєР°РєРѕР№-РЅРёР±СѓРґСЊ СЂР°Р±РѕС‚С‹.
 	};
 };
 
@@ -289,7 +289,7 @@ instance DIA_Maleth_LOBART		(C_INFO)
 	condition	= DIA_Maleth_LOBART_Condition;
 	information	= DIA_Maleth_LOBART_Info;
 	permanent   = FALSE;
-	description	= "Где мне найти Лобарта?";
+	description	= "Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р›РѕР±Р°СЂС‚Р°?";
 };
 
 func int DIA_Maleth_LOBART_Condition ()
@@ -304,9 +304,9 @@ func int DIA_Maleth_LOBART_Condition ()
 
 func void DIA_Maleth_LOBART_Info ()
 {
-	AI_Output (other, self, "DIA_Maleth_LOBART_15_00"); //Где мне найти Лобарта?
-	AI_Output (self, other, "DIA_Maleth_LOBART_08_01"); //На ферме, конечно же! Это ведь его ферма!
-	AI_Output (self, other, "DIA_Maleth_LOBART_08_02"); //И не пытайся надуть его! Он избил и вышвырнул с фермы уже много бездельников.
+	AI_Output (other, self, "DIA_Maleth_LOBART_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё Р›РѕР±Р°СЂС‚Р°?
+	AI_Output (self, other, "DIA_Maleth_LOBART_08_01"); //РќР° С„РµСЂРјРµ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ! Р­С‚Рѕ РІРµРґСЊ РµРіРѕ С„РµСЂРјР°!
+	AI_Output (self, other, "DIA_Maleth_LOBART_08_02"); //Р РЅРµ РїС‹С‚Р°Р№СЃСЏ РЅР°РґСѓС‚СЊ РµРіРѕ! РћРЅ РёР·Р±РёР» Рё РІС‹С€РІС‹СЂРЅСѓР» СЃ С„РµСЂРјС‹ СѓР¶Рµ РјРЅРѕРіРѕ Р±РµР·РґРµР»СЊРЅРёРєРѕРІ.
 };
 
 
@@ -355,7 +355,7 @@ instance DIA_Maleth_PROBLEME		(C_INFO)
 	condition	 = 	DIA_Maleth_PROBLEME_Condition;
 	information	 = 	DIA_Maleth_PROBLEME_Info;
 
-	description	 = 	"Ничего нового в последнее время?";
+	description	 = 	"РќРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?";
 };
 
 func int DIA_Maleth_PROBLEME_Condition ()
@@ -368,78 +368,78 @@ func int DIA_Maleth_PROBLEME_Condition ()
 
 func void DIA_Maleth_PROBLEME_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_15_00"); //Ничего нового в последнее время?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_01"); //Просто иди по дороге в город.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_02"); //Если ты увидишь человека в черной рясе, ты поймешь, что нового.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_15_00"); //РќРёС‡РµРіРѕ РЅРѕРІРѕРіРѕ РІ РїРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_01"); //РџСЂРѕСЃС‚Рѕ РёРґРё РїРѕ РґРѕСЂРѕРіРµ РІ РіРѕСЂРѕРґ.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_08_02"); //Р•СЃР»Рё С‚С‹ СѓРІРёРґРёС€СЊ С‡РµР»РѕРІРµРєР° РІ С‡РµСЂРЅРѕР№ СЂСЏСЃРµ, С‚С‹ РїРѕР№РјРµС€СЊ, С‡С‚Рѕ РЅРѕРІРѕРіРѕ.
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 	Info_AddChoice	(DIA_Maleth_PROBLEME, DIALOG_BACK, DIA_Maleth_PROBLEME_Back );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Как твои овцы?", DIA_Maleth_PROBLEME_schafe );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Люди в черных рясах к вам еще не наведывались?", DIA_Maleth_PROBLEME_beidir );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "РљР°Рє С‚РІРѕРё РѕРІС†С‹?", DIA_Maleth_PROBLEME_schafe );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Р›СЋРґРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… Рє РІР°Рј РµС‰Рµ РЅРµ РЅР°РІРµРґС‹РІР°Р»РёСЃСЊ?", DIA_Maleth_PROBLEME_beidir );
 	
 };
 func void DIA_Maleth_PROBLEME_beidir ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_beidir_15_00"); //Люди в черных рясах к вам еще не наведывались?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_beidir_08_01"); //Да. Они были здесь несколько дней назад. Они выглядят так, как будто восстали из ада.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_beidir_15_00"); //Р›СЋРґРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С… Рє РІР°Рј РµС‰Рµ РЅРµ РЅР°РІРµРґС‹РІР°Р»РёСЃСЊ?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_beidir_08_01"); //Р”Р°. РћРЅРё Р±С‹Р»Рё Р·РґРµСЃСЊ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ. РћРЅРё РІС‹РіР»СЏРґСЏС‚ С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ РІРѕСЃСЃС‚Р°Р»Рё РёР· Р°РґР°.
 
 };
 
 func void DIA_Maleth_PROBLEME_schafe ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_15_00"); //Как твои овцы?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_08_01"); //(зло) Как будто это тебя интересует. У тебя свои проблемы.
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Мои проблемы? Да что ты знаешь об этом?", DIA_Maleth_PROBLEME_schafe_probleme );
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_15_00"); //РљР°Рє С‚РІРѕРё РѕРІС†С‹?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_08_01"); //(Р·Р»Рѕ) РљР°Рє Р±СѓРґС‚Рѕ СЌС‚Рѕ С‚РµР±СЏ РёРЅС‚РµСЂРµСЃСѓРµС‚. РЈ С‚РµР±СЏ СЃРІРѕРё РїСЂРѕР±Р»РµРјС‹.
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "РњРѕРё РїСЂРѕР±Р»РµРјС‹? Р”Р° С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј?", DIA_Maleth_PROBLEME_schafe_probleme );
 
 };
 func void DIA_Maleth_PROBLEME_schafe_probleme ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_15_00"); //Мои проблемы? Да что ты знаешь об этом?
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_15_00"); //РњРѕРё РїСЂРѕР±Р»РµРјС‹? Р”Р° С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РѕРј?
 	
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_01"); //(резко) Ты служишь в городской страже или нет? Тогда сделай что-нибудь с этими ублюдками в черных рясах.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_01"); //(СЂРµР·РєРѕ) РўС‹ СЃР»СѓР¶РёС€СЊ РІ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶Рµ РёР»Рё РЅРµС‚? РўРѕРіРґР° СЃРґРµР»Р°Р№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃ СЌС‚РёРјРё СѓР±Р»СЋРґРєР°РјРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С….
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_02"); //(зло) Вы, грязные наемники, думаете только об одном: как переложить деньги других людей в свои карманы.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_02"); //(Р·Р»Рѕ) Р’С‹, РіСЂСЏР·РЅС‹Рµ РЅР°РµРјРЅРёРєРё, РґСѓРјР°РµС‚Рµ С‚РѕР»СЊРєРѕ РѕР± РѕРґРЅРѕРј: РєР°Рє РїРµСЂРµР»РѕР¶РёС‚СЊ РґРµРЅСЊРіРё РґСЂСѓРіРёС… Р»СЋРґРµР№ РІ СЃРІРѕРё РєР°СЂРјР°РЅС‹.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_03"); //Вы, могущественные маги из монастыря, должны что-нибудь сделать с этими парнями в черных рясах.
+			AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_08_03"); //Р’С‹, РјРѕРіСѓС‰РµСЃС‚РІРµРЅРЅС‹Рµ РјР°РіРё РёР· РјРѕРЅР°СЃС‚С‹СЂСЏ, РґРѕР»Р¶РЅС‹ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ СЃ СЌС‚РёРјРё РїР°СЂРЅСЏРјРё РІ С‡РµСЂРЅС‹С… СЂСЏСЃР°С….
 		};
 
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 	Info_AddChoice	(DIA_Maleth_PROBLEME, DIALOG_BACK, DIA_Maleth_PROBLEME_Back );
-	Info_AddChoice	(DIA_Maleth_PROBLEME, "Эй, полегче на поворотах, приятель.", DIA_Maleth_PROBLEME_schafe_probleme_drohen );
+	Info_AddChoice	(DIA_Maleth_PROBLEME, "Р­Р№, РїРѕР»РµРіС‡Рµ РЅР° РїРѕРІРѕСЂРѕС‚Р°С…, РїСЂРёСЏС‚РµР»СЊ.", DIA_Maleth_PROBLEME_schafe_probleme_drohen );
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			Info_AddChoice	(DIA_Maleth_PROBLEME, "В чем твоя проблема?", DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag );
+			Info_AddChoice	(DIA_Maleth_PROBLEME, "Р’ С‡РµРј С‚РІРѕСЏ РїСЂРѕР±Р»РµРјР°?", DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag );
 		};
 };
 
 func void DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_00"); //Что у тебя за проблемы?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_01"); //Всему виной это самодельное пойло, что Вино всучил мне несколько недель назад.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_02"); //Я ничего не помню. Я знаю только, что мой посох с тех пор пропал.
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_03"); //И из-за этого ты так шумишь?
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_04"); //Тебе легко говорить, это же не твой посох пропал.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_00"); //Р§С‚Рѕ Сѓ С‚РµР±СЏ Р·Р° РїСЂРѕР±Р»РµРјС‹?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_01"); //Р’СЃРµРјСѓ РІРёРЅРѕР№ СЌС‚Рѕ СЃР°РјРѕРґРµР»СЊРЅРѕРµ РїРѕР№Р»Рѕ, С‡С‚Рѕ Р’РёРЅРѕ РІСЃСѓС‡РёР» РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ РЅРµРґРµР»СЊ РЅР°Р·Р°Рґ.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_02"); //РЇ РЅРёС‡РµРіРѕ РЅРµ РїРѕРјРЅСЋ. РЇ Р·РЅР°СЋ С‚РѕР»СЊРєРѕ, С‡С‚Рѕ РјРѕР№ РїРѕСЃРѕС… СЃ С‚РµС… РїРѕСЂ РїСЂРѕРїР°Р».
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_15_03"); //Р РёР·-Р·Р° СЌС‚РѕРіРѕ С‚С‹ С‚Р°Рє С€СѓРјРёС€СЊ?
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_geldher_auftrag_08_04"); //РўРµР±Рµ Р»РµРіРєРѕ РіРѕРІРѕСЂРёС‚СЊ, СЌС‚Рѕ Р¶Рµ РЅРµ С‚РІРѕР№ РїРѕСЃРѕС… РїСЂРѕРїР°Р».
 	
 	Log_CreateTopic (TOPIC_MalethsGehstock, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_MalethsGehstock, LOG_RUNNING);
-	B_LogEntry (TOPIC_MalethsGehstock,"Малет напился в стельку и потерял свой посох. Насколько я знаю его, он никогда не уходил далеко от фермы Лобарта. Возможно, я найду ее где-нибудь неподалеку."); 
+	B_LogEntry (TOPIC_MalethsGehstock,"РњР°Р»РµС‚ РЅР°РїРёР»СЃСЏ РІ СЃС‚РµР»СЊРєСѓ Рё РїРѕС‚РµСЂСЏР» СЃРІРѕР№ РїРѕСЃРѕС…. РќР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ РµРіРѕ, РѕРЅ РЅРёРєРѕРіРґР° РЅРµ СѓС…РѕРґРёР» РґР°Р»РµРєРѕ РѕС‚ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°. Р’РѕР·РјРѕР¶РЅРѕ, СЏ РЅР°Р№РґСѓ РµРµ РіРґРµ-РЅРёР±СѓРґСЊ РЅРµРїРѕРґР°Р»РµРєСѓ."); 
 
 	Info_ClearChoices	(DIA_Maleth_PROBLEME);
 };
 
 func void DIA_Maleth_PROBLEME_schafe_probleme_drohen ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_15_00"); //Эй, полегче на поворотах, приятель.
-	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_08_01"); //Ты только и можешь, что болтать. Лучше всего тебе уйти.
+	AI_Output			(other, self, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_15_00"); //Р­Р№, РїРѕР»РµРіС‡Рµ РЅР° РїРѕРІРѕСЂРѕС‚Р°С…, РїСЂРёСЏС‚РµР»СЊ.
+	AI_Output			(self, other, "DIA_Maleth_PROBLEME_schafe_probleme_drohen_08_01"); //РўС‹ С‚РѕР»СЊРєРѕ Рё РјРѕР¶РµС€СЊ, С‡С‚Рѕ Р±РѕР»С‚Р°С‚СЊ. Р›СѓС‡С€Рµ РІСЃРµРіРѕ С‚РµР±Рµ СѓР№С‚Рё.
 };
 
 func void DIA_Maleth_PROBLEME_Back ()
@@ -457,7 +457,7 @@ instance DIA_Maleth_GEHSTOCK		(C_INFO)
 	condition	 = 	DIA_Maleth_GEHSTOCK_Condition;
 	information	 = 	DIA_Maleth_GEHSTOCK_Info;
 
-	description	 = 	"Я думаю, это твой посох.";
+	description	 = 	"РЇ РґСѓРјР°СЋ, СЌС‚Рѕ С‚РІРѕР№ РїРѕСЃРѕС….";
 };
 
 func int DIA_Maleth_GEHSTOCK_Condition ()
@@ -471,28 +471,28 @@ func int DIA_Maleth_GEHSTOCK_Condition ()
 
 func void DIA_Maleth_GEHSTOCK_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_00"); //Я думаю, это твой посох.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_01"); //Это невероятно! Я...
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_02"); //Минуточку. Сначала заплати за него.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_03"); //Но... у меня почти ничего нет.
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_04"); //Тогда придумай что-нибудь еще.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_05"); //Хорошо. Как насчет этого? Вчера я видел, как мимо пробежали бандиты с несколькими мешками золота.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_06"); //Если я скажу тебе, где они прячут свои сокровища, я получу мой посох назад?
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_00"); //РЇ РґСѓРјР°СЋ, СЌС‚Рѕ С‚РІРѕР№ РїРѕСЃРѕС….
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_01"); //Р­С‚Рѕ РЅРµРІРµСЂРѕСЏС‚РЅРѕ! РЇ...
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_02"); //РњРёРЅСѓС‚РѕС‡РєСѓ. РЎРЅР°С‡Р°Р»Р° Р·Р°РїР»Р°С‚Рё Р·Р° РЅРµРіРѕ.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_03"); //РќРѕ... Сѓ РјРµРЅСЏ РїРѕС‡С‚Рё РЅРёС‡РµРіРѕ РЅРµС‚.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_15_04"); //РўРѕРіРґР° РїСЂРёРґСѓРјР°Р№ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_05"); //РҐРѕСЂРѕС€Рѕ. РљР°Рє РЅР°СЃС‡РµС‚ СЌС‚РѕРіРѕ? Р’С‡РµСЂР° СЏ РІРёРґРµР», РєР°Рє РјРёРјРѕ РїСЂРѕР±РµР¶Р°Р»Рё Р±Р°РЅРґРёС‚С‹ СЃ РЅРµСЃРєРѕР»СЊРєРёРјРё РјРµС€РєР°РјРё Р·РѕР»РѕС‚Р°.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_08_06"); //Р•СЃР»Рё СЏ СЃРєР°Р¶Сѓ С‚РµР±Рµ, РіРґРµ РѕРЅРё РїСЂСЏС‡СѓС‚ СЃРІРѕРё СЃРѕРєСЂРѕРІРёС‰Р°, СЏ РїРѕР»СѓС‡Сѓ РјРѕР№ РїРѕСЃРѕС… РЅР°Р·Р°Рґ?
 	TOPIC_END_MalethsGehstock = TRUE;
 	B_GivePlayerXP (XP_FoundMalethsGehstock);
 
 	Info_ClearChoices	(DIA_Maleth_GEHSTOCK);
-	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "Извини, мне это не интересно. Я хочу получить золото от тебя.", DIA_Maleth_GEHSTOCK_gold );
-	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "Хорошо.", DIA_Maleth_GEHSTOCK_ok );
+	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "РР·РІРёРЅРё, РјРЅРµ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ. РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ Р·РѕР»РѕС‚Рѕ РѕС‚ С‚РµР±СЏ.", DIA_Maleth_GEHSTOCK_gold );
+	Info_AddChoice	(DIA_Maleth_GEHSTOCK, "РҐРѕСЂРѕС€Рѕ.", DIA_Maleth_GEHSTOCK_ok );
 };
 func void DIA_Maleth_GEHSTOCK_ok ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_ok_15_00"); //Хорошо.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_ok_15_00"); //РҐРѕСЂРѕС€Рѕ.
 	B_GiveInvItems 		(other, self, ItMw_MalethsGehstock_MIS,1);
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_01"); //Ладно. Просто иди на запад, вон к тому лесу. Там ты увидишь ущелье.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_02"); //В пещере внизу ты наверняка найдешь что-нибудь.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_01"); //Р›Р°РґРЅРѕ. РџСЂРѕСЃС‚Рѕ РёРґРё РЅР° Р·Р°РїР°Рґ, РІРѕРЅ Рє С‚РѕРјСѓ Р»РµСЃСѓ. РўР°Рј С‚С‹ СѓРІРёРґРёС€СЊ СѓС‰РµР»СЊРµ.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_ok_08_02"); //Р’ РїРµС‰РµСЂРµ РІРЅРёР·Сѓ С‚С‹ РЅР°РІРµСЂРЅСЏРєР° РЅР°Р№РґРµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ.
 
-	B_LogEntry (TOPIC_MalethsGehstock,"Малет рассказал мне, что в лесу, к западу от фермы Лобарта, находится большой лагерь бандитов."); 
+	B_LogEntry (TOPIC_MalethsGehstock,"РњР°Р»РµС‚ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РІ Р»РµСЃСѓ, Рє Р·Р°РїР°РґСѓ РѕС‚ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°, РЅР°С…РѕРґРёС‚СЃСЏ Р±РѕР»СЊС€РѕР№ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ."); 
 	CreateInvItems 		(BDT_1024_MalethsBandit, ItMi_MalethsBanditGold,1);
 	Info_ClearChoices	(DIA_Maleth_GEHSTOCK);
 	AI_StopProcessInfos (self);
@@ -500,8 +500,8 @@ func void DIA_Maleth_GEHSTOCK_ok ()
 
 func void DIA_Maleth_GEHSTOCK_gold ()
 {
-	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_gold_15_00"); //Извини, мне это не интересно. Я хочу получить золото от тебя.
-	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_gold_08_01"); //Вот все, что у меня есть. Этого должно быть достаточно.
+	AI_Output			(other, self, "DIA_Maleth_GEHSTOCK_gold_15_00"); //РР·РІРёРЅРё, РјРЅРµ СЌС‚Рѕ РЅРµ РёРЅС‚РµСЂРµСЃРЅРѕ. РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ Р·РѕР»РѕС‚Рѕ РѕС‚ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Maleth_GEHSTOCK_gold_08_01"); //Р’РѕС‚ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ. Р­С‚РѕРіРѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
 	CreateInvItems 		(self, Itmi_Gold, 35);
 	B_GiveInvItems 		(self, other, Itmi_Gold,35);
 	B_GiveInvItems 		(other, self, ItMw_MalethsGehstock_MIS,1);
@@ -519,7 +519,7 @@ instance DIA_Maleth_PERM3		(C_INFO)
 	information	 = 	DIA_Maleth_PERM3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Смотри, не перетрудись.";
+	description	 = 	"РЎРјРѕС‚СЂРё, РЅРµ РїРµСЂРµС‚СЂСѓРґРёСЃСЊ.";
 };
 
 func int DIA_Maleth_PERM3_Condition ()
@@ -533,8 +533,8 @@ func int DIA_Maleth_PERM3_Condition ()
 
 func void DIA_Maleth_PERM3_Info ()
 {
-	AI_Output			(other, self, "DIA_Maleth_PERM3_15_00"); //Смотри, не перетрудись.
-	AI_Output			(self, other, "DIA_Maleth_PERM3_08_01"); //(сердито) Проваливай.
+	AI_Output			(other, self, "DIA_Maleth_PERM3_15_00"); //РЎРјРѕС‚СЂРё, РЅРµ РїРµСЂРµС‚СЂСѓРґРёСЃСЊ.
+	AI_Output			(self, other, "DIA_Maleth_PERM3_08_01"); //(СЃРµСЂРґРёС‚Рѕ) РџСЂРѕРІР°Р»РёРІР°Р№.
 	AI_StopProcessInfos (self);
 };
 

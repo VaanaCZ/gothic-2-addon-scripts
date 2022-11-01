@@ -3,10 +3,10 @@
 INSTANCE FH (NPC_DEFAULT)
 {
 	//-------- primary data --------
-	name			= "Ïîìîùíèê";
+	name			= "ÐŸÐ¾Ð¼Ð¾Ñ‰Ð½Ð¸Ðº";
 	Npctype			= NPCTYPE_FRIEND;
 	guild			= GIL_NONE;
-	level			= 999;			// real 15, aber 999 damit er nicht vor dem Brückegolem flieht!
+	level			= 999;			// real 15, aber 999 damit er nicht vor dem BrÑŒckegolem flieht!
 	voice			= 5;
 	id				= 1311;
 	flags			= 0;

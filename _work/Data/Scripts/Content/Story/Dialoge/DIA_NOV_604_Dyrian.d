@@ -43,7 +43,7 @@ FUNC INT DIA_Dyrian_Hello_Condition()
 };
 FUNC VOID DIA_Dyrian_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_Hello_13_00"); //(печально) Что тебе нужно?
+	AI_Output (self ,other,"DIA_Dyrian_Hello_13_00"); //(РїРµС‡Р°Р»СЊРЅРѕ) Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
 };
 // *************************************************************************
 // 							Wurst verteilen
@@ -55,7 +55,7 @@ INSTANCE DIA_Dyrian_Wurst(C_INFO)
 	condition	= DIA_Dyrian_Wurst_Condition;
 	information	= DIA_Dyrian_Wurst_Info;
 	permanent	= FALSE;
-	description = "Я занимаюсь распределением колбасы.";
+	description = "РЇ Р·Р°РЅРёРјР°СЋСЃСЊ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј РєРѕР»Р±Р°СЃС‹.";
 };                       
 
 FUNC INT DIA_Dyrian_Wurst_Condition()
@@ -71,8 +71,8 @@ FUNC INT DIA_Dyrian_Wurst_Condition()
 
 FUNC VOID DIA_Dyrian_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Dyrian_Wurst_15_00"); //Я занимаюсь распределением колбасы.
-	AI_Output (self, other, "DIA_Dyrian_Wurst_13_01"); //Спасибо. Надеюсь, это не последняя колбаса, что я получу здесь.
+	AI_Output (other, self, "DIA_Dyrian_Wurst_15_00"); //РЇ Р·Р°РЅРёРјР°СЋСЃСЊ СЂР°СЃРїСЂРµРґРµР»РµРЅРёРµРј РєРѕР»Р±Р°СЃС‹.
+	AI_Output (self, other, "DIA_Dyrian_Wurst_13_01"); //РЎРїР°СЃРёР±Рѕ. РќР°РґРµСЋСЃСЊ, СЌС‚Рѕ РЅРµ РїРѕСЃР»РµРґРЅСЏСЏ РєРѕР»Р±Р°СЃР°, С‡С‚Рѕ СЏ РїРѕР»СѓС‡Сѓ Р·РґРµСЃСЊ.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -96,7 +96,7 @@ INSTANCE DIA_Dyrian_Job   (C_INFO)
 	condition   = DIA_Dyrian_Job_Condition;
 	information = DIA_Dyrian_Job_Info;
 	permanent   = FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Dyrian_Job_Condition()
 {	
@@ -110,9 +110,9 @@ FUNC INT DIA_Dyrian_Job_Condition()
 };
 FUNC VOID DIA_Dyrian_Job_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Job_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_Dyrian_Job_13_01"); //Я грешен. Я нарушил правила поведения в монастыре.
-	AI_Output (self ,other,"DIA_Dyrian_Job_13_02"); //Теперь я жду решения Высшего Совета. Не знаю, оставят ли меня в монастыре.
+	AI_Output (other,self ,"DIA_Dyrian_Job_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Dyrian_Job_13_01"); //РЇ РіСЂРµС€РµРЅ. РЇ РЅР°СЂСѓС€РёР» РїСЂР°РІРёР»Р° РїРѕРІРµРґРµРЅРёСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output (self ,other,"DIA_Dyrian_Job_13_02"); //РўРµРїРµСЂСЊ СЏ Р¶РґСѓ СЂРµС€РµРЅРёСЏ Р’С‹СЃС€РµРіРѕ РЎРѕРІРµС‚Р°. РќРµ Р·РЅР°СЋ, РѕСЃС‚Р°РІСЏС‚ Р»Рё РјРµРЅСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 };
 //**************************************************************************
 //	Wieso sollst Du das Kloster denn verlassen?
@@ -125,7 +125,7 @@ INSTANCE DIA_Dyrian_WhatDone   (C_INFO)
 	condition   = DIA_Dyrian_WhatDone_Condition;
 	information = DIA_Dyrian_WhatDone_Info;
 	permanent   = FALSE;
-	description = "Расскажи мне, что произошло.";
+	description = "Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ.";
 };
 FUNC INT DIA_Dyrian_WhatDone_Condition()
 {
@@ -139,11 +139,11 @@ FUNC INT DIA_Dyrian_WhatDone_Condition()
 };
 FUNC VOID DIA_Dyrian_WhatDone_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_WhatDone_15_00"); //Расскажи мне, что произошло.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_01"); //Я взял книгу в комнате одного из магов, когда подметал там, чтобы почитать ее на досуге.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_02"); //Мастер Хиглас, конечно же, сразу заметил пропажу и спросил меня об этой книге.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_03"); //Из страха быть наказанным, я солгал. А затем он застал меня в моей келье, когда я читал эту книгу.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_04"); //Он очень разозлился и сообщил об этом Высшему Совету. Теперь они решают, могу ли я остаться в монастыре.
+	AI_Output (other,self ,"DIA_Dyrian_WhatDone_15_00"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ, С‡С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_01"); //РЇ РІР·СЏР» РєРЅРёРіСѓ РІ РєРѕРјРЅР°С‚Рµ РѕРґРЅРѕРіРѕ РёР· РјР°РіРѕРІ, РєРѕРіРґР° РїРѕРґРјРµС‚Р°Р» С‚Р°Рј, С‡С‚РѕР±С‹ РїРѕС‡РёС‚Р°С‚СЊ РµРµ РЅР° РґРѕСЃСѓРіРµ.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_02"); //РњР°СЃС‚РµСЂ РҐРёРіР»Р°СЃ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, СЃСЂР°Р·Сѓ Р·Р°РјРµС‚РёР» РїСЂРѕРїР°Р¶Сѓ Рё СЃРїСЂРѕСЃРёР» РјРµРЅСЏ РѕР± СЌС‚РѕР№ РєРЅРёРіРµ.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_03"); //РР· СЃС‚СЂР°С…Р° Р±С‹С‚СЊ РЅР°РєР°Р·Р°РЅРЅС‹Рј, СЏ СЃРѕР»РіР°Р». Рђ Р·Р°С‚РµРј РѕРЅ Р·Р°СЃС‚Р°Р» РјРµРЅСЏ РІ РјРѕРµР№ РєРµР»СЊРµ, РєРѕРіРґР° СЏ С‡РёС‚Р°Р» СЌС‚Сѓ РєРЅРёРіСѓ.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_04"); //РћРЅ РѕС‡РµРЅСЊ СЂР°Р·РѕР·Р»РёР»СЃСЏ Рё СЃРѕРѕР±С‰РёР» РѕР± СЌС‚РѕРј Р’С‹СЃС€РµРјСѓ РЎРѕРІРµС‚Сѓ. РўРµРїРµСЂСЊ РѕРЅРё СЂРµС€Р°СЋС‚, РјРѕРіСѓ Р»Рё СЏ РѕСЃС‚Р°С‚СЊСЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 };
 
 //**************************************************************************
@@ -156,7 +156,7 @@ INSTANCE DIA_Dyrian_CanHelp   (C_INFO)
 	condition   = DIA_Dyrian_CanHelp_Condition;
 	information = DIA_Dyrian_CanHelp_Info;
 	permanent   = TRUE;
-	description = "Я могу тебе чем-нибудь помочь?";
+	description = "РЇ РјРѕРіСѓ С‚РµР±Рµ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ?";
 };
 FUNC INT DIA_Dyrian_CanHelp_Condition()
 {	
@@ -170,11 +170,11 @@ FUNC INT DIA_Dyrian_CanHelp_Condition()
 };
 FUNC VOID DIA_Dyrian_CanHelp_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_CanHelp_15_00"); //Я могу тебе чем-нибудь помочь?
-	AI_Output (self ,other,"DIA_Dyrian_CanHelp_13_01"); //Нет, моя судьба зависит теперь только от милости Инноса и магов.
+	AI_Output (other,self ,"DIA_Dyrian_CanHelp_15_00"); //РЇ РјРѕРіСѓ С‚РµР±Рµ С‡РµРј-РЅРёР±СѓРґСЊ РїРѕРјРѕС‡СЊ?
+	AI_Output (self ,other,"DIA_Dyrian_CanHelp_13_01"); //РќРµС‚, РјРѕСЏ СЃСѓРґСЊР±Р° Р·Р°РІРёСЃРёС‚ С‚РµРїРµСЂСЊ С‚РѕР»СЊРєРѕ РѕС‚ РјРёР»РѕСЃС‚Рё РРЅРЅРѕСЃР° Рё РјР°РіРѕРІ.
 };
 //**************************************************************************
-//	SC hat die Prьfung des Feuers angenommen und mit Hyglas gesprochen
+//	SC hat die PrСЊfung des Feuers angenommen und mit Hyglas gesprochen
 //**************************************************************************
 INSTANCE DIA_Dyrian_Scroll   (C_INFO)
 {
@@ -196,50 +196,50 @@ FUNC INT DIA_Dyrian_Scroll_Condition()
 };
 FUNC VOID DIA_Dyrian_Scroll_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_00"); //Эй, ты действительно потребовал Испытания Огнем?
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_15_01"); //Да. И я намерен пройти его.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_02"); //Хорошо - возможно, я могу помочь тебе в этом. Я могу дать тебе свиток с очень сильным заклинанием. Заклинанием СОН. Ну, как?
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_00"); //Р­Р№, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїРѕС‚СЂРµР±РѕРІР°Р» РСЃРїС‹С‚Р°РЅРёСЏ РћРіРЅРµРј?
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_15_01"); //Р”Р°. Р СЏ РЅР°РјРµСЂРµРЅ РїСЂРѕР№С‚Рё РµРіРѕ.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_02"); //РҐРѕСЂРѕС€Рѕ - РІРѕР·РјРѕР¶РЅРѕ, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РІ СЌС‚РѕРј. РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ СЃРІРёС‚РѕРє СЃ РѕС‡РµРЅСЊ СЃРёР»СЊРЅС‹Рј Р·Р°РєР»РёРЅР°РЅРёРµРј. Р—Р°РєР»РёРЅР°РЅРёРµРј РЎРћРќ. РќСѓ, РєР°Рє?
 
 	Info_ClearChoices (DIA_Dyrian_Scroll);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Нет, мне не нужна твоя помощь.",DIA_Dyrian_Scroll_No);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Что ты хочешь за это?",DIA_Dyrian_Scroll_How);
-	Info_AddChoice (DIA_Dyrian_Scroll,"И что мне делать с ним?",DIA_Dyrian_Scroll_What);
+	Info_AddChoice (DIA_Dyrian_Scroll,"РќРµС‚, РјРЅРµ РЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.",DIA_Dyrian_Scroll_No);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚Рѕ?",DIA_Dyrian_Scroll_How);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Р С‡С‚Рѕ РјРЅРµ РґРµР»Р°С‚СЊ СЃ РЅРёРј?",DIA_Dyrian_Scroll_What);
 };
 FUNC VOID DIA_Dyrian_Scroll_What ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_00"); //И что мне делать с ним?
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_01"); //При помощи этого заклинания ты можешь погружать людей в магический сон на короткое время. Но только если их воля слабее твоей.
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_02"); //Это моет быть очень полезным, если кто-то стоит у тебя на пути...
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_03"); //А как я узнаю, чья воля сильнее?
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_04"); //Не стоит даже и пытаться испытывать это заклинание на магах. Но большинство послушников погрузить в сон тебе удастся.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_00"); //Р С‡С‚Рѕ РјРЅРµ РґРµР»Р°С‚СЊ СЃ РЅРёРј?
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_01"); //РџСЂРё РїРѕРјРѕС‰Рё СЌС‚РѕРіРѕ Р·Р°РєР»РёРЅР°РЅРёСЏ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРіСЂСѓР¶Р°С‚СЊ Р»СЋРґРµР№ РІ РјР°РіРёС‡РµСЃРєРёР№ СЃРѕРЅ РЅР° РєРѕСЂРѕС‚РєРѕРµ РІСЂРµРјСЏ. РќРѕ С‚РѕР»СЊРєРѕ РµСЃР»Рё РёС… РІРѕР»СЏ СЃР»Р°Р±РµРµ С‚РІРѕРµР№.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_02"); //Р­С‚Рѕ РјРѕРµС‚ Р±С‹С‚СЊ РѕС‡РµРЅСЊ РїРѕР»РµР·РЅС‹Рј, РµСЃР»Рё РєС‚Рѕ-С‚Рѕ СЃС‚РѕРёС‚ Сѓ С‚РµР±СЏ РЅР° РїСѓС‚Рё...
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_03"); //Рђ РєР°Рє СЏ СѓР·РЅР°СЋ, С‡СЊСЏ РІРѕР»СЏ СЃРёР»СЊРЅРµРµ?
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_04"); //РќРµ СЃС‚РѕРёС‚ РґР°Р¶Рµ Рё РїС‹С‚Р°С‚СЊСЃСЏ РёСЃРїС‹С‚С‹РІР°С‚СЊ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ РЅР° РјР°РіР°С…. РќРѕ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РїРѕСЃР»СѓС€РЅРёРєРѕРІ РїРѕРіСЂСѓР·РёС‚СЊ РІ СЃРѕРЅ С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ.
 };
 FUNC VOID DIA_Dyrian_Scroll_No ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_No_15_00"); //Нет, мне не нужна твоя помощь.
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_No_13_01"); //Ты можешь обратиться ко мне в любое время, если передумаешь.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_No_15_00"); //РќРµС‚, РјРЅРµ РЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_No_13_01"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СЂР°С‚РёС‚СЊСЃСЏ РєРѕ РјРЅРµ РІ Р»СЋР±РѕРµ РІСЂРµРјСЏ, РµСЃР»Рё РїРµСЂРµРґСѓРјР°РµС€СЊ.
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 };
 FUNC VOID DIA_Dyrian_Scroll_How ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_How_15_00"); //Что ты хочешь за него?
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_01"); //У каждого вновь посвященного мага есть право на одно желание.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_02"); //И если ты действительно пройдешь Испытание Огнем, ты можешь пожелать, чтобы я остался в монастыре.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_How_15_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° РЅРµРіРѕ?
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_01"); //РЈ РєР°Р¶РґРѕРіРѕ РІРЅРѕРІСЊ РїРѕСЃРІСЏС‰РµРЅРЅРѕРіРѕ РјР°РіР° РµСЃС‚СЊ РїСЂР°РІРѕ РЅР° РѕРґРЅРѕ Р¶РµР»Р°РЅРёРµ.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_02"); //Р РµСЃР»Рё С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РїСЂРѕР№РґРµС€СЊ РСЃРїС‹С‚Р°РЅРёРµ РћРіРЅРµРј, С‚С‹ РјРѕР¶РµС€СЊ РїРѕР¶РµР»Р°С‚СЊ, С‡С‚РѕР±С‹ СЏ РѕСЃС‚Р°Р»СЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 	
 	Info_ClearChoices (DIA_Dyrian_Scroll);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Нет, мне не нужна твоя помощь.",DIA_Dyrian_Scroll_No);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Хорошо, давай мне этот свиток.",DIA_Dyrian_Scroll_Yes);
+	Info_AddChoice (DIA_Dyrian_Scroll,"РќРµС‚, РјРЅРµ РЅРµ РЅСѓР¶РЅР° С‚РІРѕСЏ РїРѕРјРѕС‰СЊ.",DIA_Dyrian_Scroll_No);
+	Info_AddChoice (DIA_Dyrian_Scroll,"РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ СЌС‚РѕС‚ СЃРІРёС‚РѕРє.",DIA_Dyrian_Scroll_Yes);
 	
 };
 FUNC VOID DIA_Dyrian_Scroll_Yes ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_Yes_15_00"); //Хорошо, давай мне этот свиток.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_Yes_13_01"); //Удачи тебе в этом испытании. Да поможет тебе Иннос.
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_Yes_15_00"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ СЌС‚РѕС‚ СЃРІРёС‚РѕРє.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_Yes_13_01"); //РЈРґР°С‡Рё С‚РµР±Рµ РІ СЌС‚РѕРј РёСЃРїС‹С‚Р°РЅРёРё. Р”Р° РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РРЅРЅРѕСЃ.
 	
 	B_GiveInvItems (self,other,ItSc_Sleep,1);
 	MIS_HelpDyrian = LOG_RUNNING;
 	Log_CreateTopic (Topic_DyrianDrin,LOG_MISSION);
 	Log_SetTopicStatus (Topic_DyrianDrin,LOG_RUNNING);
-	B_LogEntry (Topic_DyrianDrin,"Дуриан дал мне свиток с заклинанием Сон. Взамен, он хочет, чтобы если я стану магом, я замолвил за него словечко и он остался в монастыре.");
+	B_LogEntry (Topic_DyrianDrin,"Р”СѓСЂРёР°РЅ РґР°Р» РјРЅРµ СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј РЎРѕРЅ. Р’Р·Р°РјРµРЅ, РѕРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ РµСЃР»Рё СЏ СЃС‚Р°РЅСѓ РјР°РіРѕРј, СЏ Р·Р°РјРѕР»РІРёР» Р·Р° РЅРµРіРѕ СЃР»РѕРІРµС‡РєРѕ Рё РѕРЅ РѕСЃС‚Р°Р»СЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.");
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 	
 };
@@ -253,7 +253,7 @@ INSTANCE DIA_Dyrian_Doch   (C_INFO)
 	condition   = DIA_Dyrian_Doch_Condition;
 	information = DIA_Dyrian_Doch_Info;
 	permanent   = TRUE;
-	description = "Я передумал. Давай мне это заклинание сна.";
+	description = "РЇ РїРµСЂРµРґСѓРјР°Р». Р”Р°РІР°Р№ РјРЅРµ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ СЃРЅР°.";
 };
 FUNC INT DIA_Dyrian_Doch_Condition()
 {	
@@ -266,8 +266,8 @@ FUNC INT DIA_Dyrian_Doch_Condition()
 };
 FUNC VOID DIA_Dyrian_Doch_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Doch_15_00"); //Я передумал. Давай мне это заклинание сна.
-	AI_Output (self ,other,"DIA_Dyrian_Doch_13_01"); //Хорошо, если ты пройдешь испытание, то замолвишь за меня словечко, и меня оставят в монастыре.
+	AI_Output (other,self ,"DIA_Dyrian_Doch_15_00"); //РЇ РїРµСЂРµРґСѓРјР°Р». Р”Р°РІР°Р№ РјРЅРµ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ СЃРЅР°.
+	AI_Output (self ,other,"DIA_Dyrian_Doch_13_01"); //РҐРѕСЂРѕС€Рѕ, РµСЃР»Рё С‚С‹ РїСЂРѕР№РґРµС€СЊ РёСЃРїС‹С‚Р°РЅРёРµ, С‚Рѕ Р·Р°РјРѕР»РІРёС€СЊ Р·Р° РјРµРЅСЏ СЃР»РѕРІРµС‡РєРѕ, Рё РјРµРЅСЏ РѕСЃС‚Р°РІСЏС‚ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 	
 	B_GiveInvItems (self,other,ItSc_Sleep,1);
 	MIS_HelpDyrian = LOG_RUNNING;
@@ -295,20 +295,20 @@ FUNC INT DIA_Dyrian_HelloAgain_Condition()
 };
 FUNC VOID DIA_Dyrian_HelloAgain_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_00"); //(радостно) Спасибо! Ты спас меня!
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_01"); //(испуганно) Ох - прошу простить меня, Мастер. Я не хотел показаться невежливым.
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_02"); //(с уважением) Я благодарю тебя за то, что мне позволено остаться в монастыре. Моя жизнь теперь переменится...
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_00"); //(СЂР°РґРѕСЃС‚РЅРѕ) РЎРїР°СЃРёР±Рѕ! РўС‹ СЃРїР°СЃ РјРµРЅСЏ!
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РћС… - РїСЂРѕС€Сѓ РїСЂРѕСЃС‚РёС‚СЊ РјРµРЅСЏ, РњР°СЃС‚РµСЂ. РЇ РЅРµ С…РѕС‚РµР» РїРѕРєР°Р·Р°С‚СЊСЃСЏ РЅРµРІРµР¶Р»РёРІС‹Рј.
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_02"); //(СЃ СѓРІР°Р¶РµРЅРёРµРј) РЇ Р±Р»Р°РіРѕРґР°СЂСЋ С‚РµР±СЏ Р·Р° С‚Рѕ, С‡С‚Рѕ РјРЅРµ РїРѕР·РІРѕР»РµРЅРѕ РѕСЃС‚Р°С‚СЊСЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂРµ. РњРѕСЏ Р¶РёР·РЅСЊ С‚РµРїРµСЂСЊ РїРµСЂРµРјРµРЅРёС‚СЃСЏ...
 	
 	B_GivePlayerXP (XP_Ambient); 	
 	AI_StopProcessInfos (self); 
 };
 
 //*****************************************************************************
-//			Wie gehts? //Info fьr Magier Success 
+//			Wie gehts? //Info fСЊr Magier Success 
 //*****************************************************************************
 func void B_Dyrian_PlayerHowIsIt()
 {
-	AI_Output (other,self ,"DIA_Dyrian_HowIsIt_15_00"); //Как дела?
+	AI_Output (other,self ,"DIA_Dyrian_HowIsIt_15_00"); //РљР°Рє РґРµР»Р°?
 };
 
 INSTANCE DIA_Dyrian_HowIsIt   (C_INFO)
@@ -318,7 +318,7 @@ INSTANCE DIA_Dyrian_HowIsIt   (C_INFO)
 	condition   = DIA_Dyrian_HowIsIt_Condition;
 	information = DIA_Dyrian_HowIsIt_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Dyrian_HowIsIt_Condition()
 {
@@ -330,12 +330,12 @@ FUNC INT DIA_Dyrian_HowIsIt_Condition()
 FUNC VOID DIA_Dyrian_HowIsIt_Info()
 {
 	B_Dyrian_PlayerHowIsIt();
-	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_01"); //Хорошо. Мне очень нравится моя работа, Мастер.
+	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_01"); //РҐРѕСЂРѕС€Рѕ. РњРЅРµ РѕС‡РµРЅСЊ РЅСЂР°РІРёС‚СЃСЏ РјРѕСЏ СЂР°Р±РѕС‚Р°, РњР°СЃС‚РµСЂ.
 	
 	AI_StopProcessInfos (self);	
 };
 //*****************************************************************************
-//			Wie gehts? //Info fьr alle anderen 
+//			Wie gehts? //Info fСЊr alle anderen 
 //*****************************************************************************
 INSTANCE DIA_Dyrian_other   (C_INFO)
 {
@@ -344,7 +344,7 @@ INSTANCE DIA_Dyrian_other   (C_INFO)
 	condition   = DIA_Dyrian_other_Condition;
 	information = DIA_Dyrian_other_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Dyrian_other_Condition()
 {
@@ -359,7 +359,7 @@ FUNC INT DIA_Dyrian_other_Condition()
 FUNC VOID DIA_Dyrian_other_Info()
 {
 	B_Dyrian_PlayerHowIsIt();
-	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_02"); //Я благодарен Инносу за то, что могу жить в монастыре.
+	AI_Output (self ,other,"DIA_Dyrian_HowIsIt_13_02"); //РЇ Р±Р»Р°РіРѕРґР°СЂРµРЅ РРЅРЅРѕСЃСѓ Р·Р° С‚Рѕ, С‡С‚Рѕ РјРѕРіСѓ Р¶РёС‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 	
 	AI_StopProcessInfos (self);	
 };
@@ -373,7 +373,7 @@ INSTANCE DIA_Dyrian_Kneipe   (C_INFO)
 	condition   = DIA_Dyrian_Kneipe_Condition;
 	information = DIA_Dyrian_Kneipe_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Dyrian_Kneipe_Condition()
 {
@@ -385,22 +385,22 @@ FUNC INT DIA_Dyrian_Kneipe_Condition()
 };
 FUNC VOID DIA_Dyrian_Kneipe_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Kneipe_15_00"); //Как дела?
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_01"); //Ты еще спрашиваешь? Я так надеялся на тебя, а ты бросил меня в беде.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_02"); //Теперь мне ничего не остается, кроме как заливать свое горе вином. И в этом виноват ты!
+	AI_Output (other,self ,"DIA_Dyrian_Kneipe_15_00"); //РљР°Рє РґРµР»Р°?
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_01"); //РўС‹ РµС‰Рµ СЃРїСЂР°С€РёРІР°РµС€СЊ? РЇ С‚Р°Рє РЅР°РґРµСЏР»СЃСЏ РЅР° С‚РµР±СЏ, Р° С‚С‹ Р±СЂРѕСЃРёР» РјРµРЅСЏ РІ Р±РµРґРµ.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_13_02"); //РўРµРїРµСЂСЊ РјРЅРµ РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ, РєСЂРѕРјРµ РєР°Рє Р·Р°Р»РёРІР°С‚СЊ СЃРІРѕРµ РіРѕСЂРµ РІРёРЅРѕРј. Р РІ СЌС‚РѕРј РІРёРЅРѕРІР°С‚ С‚С‹!
 	
 	Info_ClearChoices (DIA_Dyrian_Kneipe);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"Вот, держи 5 золотых.",DIA_Dyrian_Kneipe_Gold);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"Я могу все объяснить.",DIA_Dyrian_Kneipe_CanExplain);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"Следи за своими словами.",DIA_Dyrian_Kneipe_ShutUp);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"Р’РѕС‚, РґРµСЂР¶Рё 5 Р·РѕР»РѕС‚С‹С….",DIA_Dyrian_Kneipe_Gold);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"РЇ РјРѕРіСѓ РІСЃРµ РѕР±СЉСЏСЃРЅРёС‚СЊ.",DIA_Dyrian_Kneipe_CanExplain);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"РЎР»РµРґРё Р·Р° СЃРІРѕРёРјРё СЃР»РѕРІР°РјРё.",DIA_Dyrian_Kneipe_ShutUp);
 		
 };
 
 FUNC VOID DIA_Dyrian_Kneipe_Gold ()
 {
-	AI_Output	(other,self ,"DIA_Dyrian_Kneipe_Gold_15_00"); //Вот, держи 5 золотых.
-	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_01"); //(нервно) 5 золотых? Ты даешь мне 5 золотых в качестве компенсации за то, что лишил меня смысла моей жизни?
-	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_02"); //Я возьму все твое золото!
+	AI_Output	(other,self ,"DIA_Dyrian_Kneipe_Gold_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё 5 Р·РѕР»РѕС‚С‹С….
+	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_01"); //(РЅРµСЂРІРЅРѕ) 5 Р·РѕР»РѕС‚С‹С…? РўС‹ РґР°РµС€СЊ РјРЅРµ 5 Р·РѕР»РѕС‚С‹С… РІ РєР°С‡РµСЃС‚РІРµ РєРѕРјРїРµРЅСЃР°С†РёРё Р·Р° С‚Рѕ, С‡С‚Рѕ Р»РёС€РёР» РјРµРЅСЏ СЃРјС‹СЃР»Р° РјРѕРµР№ Р¶РёР·РЅРё?
+	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_02"); //РЇ РІРѕР·СЊРјСѓ РІСЃРµ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 0); 
@@ -408,19 +408,19 @@ FUNC VOID DIA_Dyrian_Kneipe_Gold ()
 
 FUNC VOID DIA_Dyrian_Kneipe_CanExplain ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Kneipe_CanExplain_15_00"); //Я могу все объяснить.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_01"); //Мне не нужны твои объяснения.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_02"); //Ты лжешь каждый раз, когда открываешь свой поганый рот. А теперь оставь меня.
+	AI_Output (other,self ,"DIA_Dyrian_Kneipe_CanExplain_15_00"); //РЇ РјРѕРіСѓ РІСЃРµ РѕР±СЉСЏСЃРЅРёС‚СЊ.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_01"); //РњРЅРµ РЅРµ РЅСѓР¶РЅС‹ С‚РІРѕРё РѕР±СЉСЏСЃРЅРµРЅРёСЏ.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_02"); //РўС‹ Р»Р¶РµС€СЊ РєР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° РѕС‚РєСЂС‹РІР°РµС€СЊ СЃРІРѕР№ РїРѕРіР°РЅС‹Р№ СЂРѕС‚. Рђ С‚РµРїРµСЂСЊ РѕСЃС‚Р°РІСЊ РјРµРЅСЏ.
 	
 	AI_StopProcessInfos (self);
 };
 
 FUNC VOID DIA_Dyrian_Kneipe_ShutUp ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Kneipe_ShutUp_15_00"); //Следи за своими словами.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_01"); //Да, давай, угрожай мне! Это все равно тебе не поможет.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_02"); //Я всем расскажу, какой ты вероломный ублюдок! Вот только прикончу эту бутылку...
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_03"); //А теперь убирайся с глаз моих, ты мне противен!
+	AI_Output (other,self ,"DIA_Dyrian_Kneipe_ShutUp_15_00"); //РЎР»РµРґРё Р·Р° СЃРІРѕРёРјРё СЃР»РѕРІР°РјРё.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_01"); //Р”Р°, РґР°РІР°Р№, СѓРіСЂРѕР¶Р°Р№ РјРЅРµ! Р­С‚Рѕ РІСЃРµ СЂР°РІРЅРѕ С‚РµР±Рµ РЅРµ РїРѕРјРѕР¶РµС‚.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_02"); //РЇ РІСЃРµРј СЂР°СЃСЃРєР°Р¶Сѓ, РєР°РєРѕР№ С‚С‹ РІРµСЂРѕР»РѕРјРЅС‹Р№ СѓР±Р»СЋРґРѕРє! Р’РѕС‚ С‚РѕР»СЊРєРѕ РїСЂРёРєРѕРЅС‡Сѓ СЌС‚Сѓ Р±СѓС‚С‹Р»РєСѓ...
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_03"); //Рђ С‚РµРїРµСЂСЊ СѓР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…, С‚С‹ РјРЅРµ РїСЂРѕС‚РёРІРµРЅ!
 
 	AI_StopProcessInfos (self);
 };
@@ -434,7 +434,7 @@ INSTANCE DIA_Dyrian_nachher   (C_INFO)
 	condition   = DIA_Dyrian_nachher_Condition;
 	information = DIA_Dyrian_nachher_Info;
 	permanent   = TRUE;
-	description = "Что новенького?";
+	description = "Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?";
 };
 FUNC INT DIA_Dyrian_nachher_Condition()
 {
@@ -446,8 +446,8 @@ FUNC INT DIA_Dyrian_nachher_Condition()
 };
 FUNC VOID DIA_Dyrian_nachher_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_nachher_15_00"); //Что с тобой?
-	AI_Output (self ,other,"DIA_Dyrian_nachher_13_01"); //Ах, оставь меня в покое! Я даже знать тебя не хочу!
+	AI_Output (other,self ,"DIA_Dyrian_nachher_15_00"); //Р§С‚Рѕ СЃ С‚РѕР±РѕР№?
+	AI_Output (self ,other,"DIA_Dyrian_nachher_13_01"); //РђС…, РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ! РЇ РґР°Р¶Рµ Р·РЅР°С‚СЊ С‚РµР±СЏ РЅРµ С…РѕС‡Сѓ!
 	AI_StopProcessInfos (self);	
 };
  

@@ -4,7 +4,7 @@
 //****************************************************************************
 INSTANCE ItSe_ErzFisch (C_Item)
 {	
-	name 				=	"Рыба-шар";
+	name 				=	"Р С‹Р±Р°-С€Р°СЂ";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -17,7 +17,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 	on_state[0]			=	Use_ErzFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"В этой рыбе что-то спрятано.";		
+	TEXT[2]				= 	"Р’ СЌС‚РѕР№ СЂС‹Р±Рµ С‡С‚Рѕ-С‚Рѕ СЃРїСЂСЏС‚Р°РЅРѕ.";		
 	
 };
 
@@ -31,7 +31,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_GoldFisch (C_Item)
 {	
-	name 				=	"Тяжелая рыба";
+	name 				=	"РўСЏР¶РµР»Р°СЏ СЂС‹Р±Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -44,7 +44,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 	on_state[0]			=	Use_GoldFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"В этой рыбе что-то спрятано.";		
+	TEXT[2]				= 	"Р’ СЌС‚РѕР№ СЂС‹Р±Рµ С‡С‚Рѕ-С‚Рѕ СЃРїСЂСЏС‚Р°РЅРѕ.";		
 	
 };
 
@@ -58,7 +58,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_Ringfisch (C_Item)
 {	
-	name 				=	"Маленькая рыбка";
+	name 				=	"РњР°Р»РµРЅСЊРєР°СЏ СЂС‹Р±РєР°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -71,7 +71,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 	on_state[0]			=	Use_Ringfisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"В этой рыбе что-то спрятано.";		
+	TEXT[2]				= 	"Р’ СЌС‚РѕР№ СЂС‹Р±Рµ С‡С‚Рѕ-С‚Рѕ СЃРїСЂСЏС‚Р°РЅРѕ.";		
 	
 };
 
@@ -85,7 +85,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 //****************************************************************************
 INSTANCE ItSe_LockpickFisch (C_Item)
 {	
-	name 				=	"Легкая рыба";
+	name 				=	"Р›РµРіРєР°СЏ СЂС‹Р±Р°";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -98,7 +98,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 	on_state[0]			=	Use_LockpickFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"В этой рыбе что-то спрятано.";		
+	TEXT[2]				= 	"Р’ СЌС‚РѕР№ СЂС‹Р±Рµ С‡С‚Рѕ-С‚Рѕ СЃРїСЂСЏС‚Р°РЅРѕ.";		
 	
 };
 
@@ -116,7 +116,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 //------------- 25 Gold -----------------------
 INSTANCE ItSe_GoldPocket25	(C_Item)
 {
-	name 				=	"Кожаный кошелек";
+	name 				=	"РљРѕР¶Р°РЅС‹Р№ РєРѕС€РµР»РµРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -128,11 +128,11 @@ INSTANCE ItSe_GoldPocket25	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket25;
 	
-	description			= 	"Кожаный мешочек.";
+	description			= 	"РљРѕР¶Р°РЅС‹Р№ РјРµС€РѕС‡РµРє.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Внутри позванивает несколько монет.";
+	TEXT[2]				= 	"Р’РЅСѓС‚СЂРё РїРѕР·РІР°РЅРёРІР°РµС‚ РЅРµСЃРєРѕР»СЊРєРѕ РјРѕРЅРµС‚.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -145,7 +145,7 @@ FUNC VOID GoldPocket25 ()
 //------------- 50 Gold -----------------------
 INSTANCE ItSe_GoldPocket50	(C_Item)
 {
-	name 				=	"Кожаный кошелек";
+	name 				=	"РљРѕР¶Р°РЅС‹Р№ РєРѕС€РµР»РµРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -157,11 +157,11 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket50;
 	
-	description			= 	"Кожаный мешочек.";
+	description			= 	"РљРѕР¶Р°РЅС‹Р№ РјРµС€РѕС‡РµРє.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Этот кошелек полон монет.";
+	TEXT[2]				= 	"Р­С‚РѕС‚ РєРѕС€РµР»РµРє РїРѕР»РѕРЅ РјРѕРЅРµС‚.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -174,7 +174,7 @@ FUNC VOID GoldPocket50 ()
 //------------- 100 Gold -----------------------
 INSTANCE ItSe_GoldPocket100	(C_Item)
 {
-	name 				=	"Кожаный кошелек";
+	name 				=	"РљРѕР¶Р°РЅС‹Р№ РєРѕС€РµР»РµРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -186,12 +186,12 @@ INSTANCE ItSe_GoldPocket100	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   GoldPocket100;
 	
-	description			= 	"Кожаный мешочек.";
+	description			= 	"РљРѕР¶Р°РЅС‹Р№ РјРµС€РѕС‡РµРє.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Тяжелый мешочек,";
-	TEXT[3]				= 	"полный золотых монет.";
+	TEXT[2]				= 	"РўСЏР¶РµР»С‹Р№ РјРµС€РѕС‡РµРє,";
+	TEXT[3]				= 	"РїРѕР»РЅС‹Р№ Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -203,7 +203,7 @@ FUNC VOID GoldPocket100 ()
 //------------- Hannas Beutel -----------------------
 INSTANCE ItSe_HannasBeutel	(C_Item)
 {
-	name 				=	"Кожаный кошелек";
+	name 				=	"РљРѕР¶Р°РЅС‹Р№ РєРѕС€РµР»РµРє";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -215,11 +215,11 @@ INSTANCE ItSe_HannasBeutel	(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   HannasBeutel;
 	
-	description			= 	"Кожаный мешочек.";
+	description			= 	"РљРѕР¶Р°РЅС‹Р№ РјРµС€РѕС‡РµРє.";
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Его дала мне Ханна.";
+	TEXT[2]				= 	"Р•РіРѕ РґР°Р»Р° РјРЅРµ РҐР°РЅРЅР°.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

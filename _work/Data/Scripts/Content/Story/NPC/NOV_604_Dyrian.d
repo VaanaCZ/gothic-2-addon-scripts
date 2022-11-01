@@ -1,7 +1,7 @@
 INSTANCE NOV_604_Dyrian (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Дуриан";
+	name 		= "Р”СѓСЂРёР°РЅ";
 	guild 		= GIL_NOV;
 	id 			= 604;
 	voice 		= 13;

@@ -20,14 +20,14 @@ FUNC VOID DIA_Addon_Saturas_EXIT_Info()
 {
 	if (MIS_Addon_Saturas_BringRiordian2Me == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_01"); //Ну, раз никаким другим образом тебя нельзя уговорить оставить в покое других магов, придется дать тебе задание.
-		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_02"); //Доложи Риордиану, что я его жду.
-		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_03"); //Ты найдешь его в задней части хранилища.
+		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_01"); //РќСѓ, СЂР°Р· РЅРёРєР°РєРёРј РґСЂСѓРіРёРј РѕР±СЂР°Р·РѕРј С‚РµР±СЏ РЅРµР»СЊР·СЏ СѓРіРѕРІРѕСЂРёС‚СЊ РѕСЃС‚Р°РІРёС‚СЊ РІ РїРѕРєРѕРµ РґСЂСѓРіРёС… РјР°РіРѕРІ, РїСЂРёРґРµС‚СЃСЏ РґР°С‚СЊ С‚РµР±Рµ Р·Р°РґР°РЅРёРµ.
+		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_02"); //Р”РѕР»РѕР¶Рё Р РёРѕСЂРґРёР°РЅСѓ, С‡С‚Рѕ СЏ РµРіРѕ Р¶РґСѓ.
+		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_03"); //РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ РІ Р·Р°РґРЅРµР№ С‡Р°СЃС‚Рё С…СЂР°РЅРёР»РёС‰Р°.
 		MIS_Addon_Saturas_BringRiordian2Me = LOG_RUNNING;
 	
 		Log_CreateTopic (TOPIC_Addon_HolRiordian, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_HolRiordian, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_HolRiordian,"Сатурас хочет, чтобы я прислал к нему мага Риордана. Он должен быть в дальней части здания."); 
+		B_LogEntry (TOPIC_Addon_HolRiordian,"РЎР°С‚СѓСЂР°СЃ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїСЂРёСЃР»Р°Р» Рє РЅРµРјСѓ РјР°РіР° Р РёРѕСЂРґР°РЅР°. РћРЅ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІ РґР°Р»СЊРЅРµР№ С‡Р°СЃС‚Рё Р·РґР°РЅРёСЏ."); 
 	};
 	
 	AI_StopProcessInfos (self);
@@ -43,7 +43,7 @@ instance DIA_Addon_Saturas_Nefarius		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Nefarius_Condition;
 	information	 = 	DIA_Addon_Saturas_Nefarius_Info;
  
- 	description	 = 	"Я взялся помочь Нефариусу и найти потерянные части орнамента. ";
+ 	description	 = 	"РЇ РІР·СЏР»СЃСЏ РїРѕРјРѕС‡СЊ РќРµС„Р°СЂРёСѓСЃСѓ Рё РЅР°Р№С‚Рё РїРѕС‚РµСЂСЏРЅРЅС‹Рµ С‡Р°СЃС‚Рё РѕСЂРЅР°РјРµРЅС‚Р°. ";
 };
 
 func int DIA_Addon_Saturas_Nefarius_Condition ()
@@ -55,25 +55,25 @@ func int DIA_Addon_Saturas_Nefarius_Condition ()
 };
 func void DIA_Addon_Saturas_Nefarius_Info ()
 {
-	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_00"); //Я взялся помочь Нефариусу и найти потерянные части орнамента. 
-	AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_01"); //Что? Быть того не может! Ты опять вмешиваешься?
-	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_02"); //Не надо беспокоиться. Все доставлю как есть. 
+	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_00"); //РЇ РІР·СЏР»СЃСЏ РїРѕРјРѕС‡СЊ РќРµС„Р°СЂРёСѓСЃСѓ Рё РЅР°Р№С‚Рё РїРѕС‚РµСЂСЏРЅРЅС‹Рµ С‡Р°СЃС‚Рё РѕСЂРЅР°РјРµРЅС‚Р°. 
+	AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_01"); //Р§С‚Рѕ? Р‘С‹С‚СЊ С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚! РўС‹ РѕРїСЏС‚СЊ РІРјРµС€РёРІР°РµС€СЊСЃСЏ?
+	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_02"); //РќРµ РЅР°РґРѕ Р±РµСЃРїРѕРєРѕРёС‚СЊСЃСЏ. Р’СЃРµ РґРѕСЃС‚Р°РІР»СЋ РєР°Рє РµСЃС‚СЊ. 
 	
 	if (ORNAMENT_SWITCHED_FOREST == FALSE)
 	&& (Npc_HasItems (other,ItWr_Map_NewWorld_Ornaments_Addon))
 	{
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_03"); //(вздыхает) Ты хоть знаешь, что ты ищешь?
-		AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_04"); //Ну, Нефариус дал мне эту карту...
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_05"); //Покажи ее мне!
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_03"); //(РІР·РґС‹С…Р°РµС‚) РўС‹ С…РѕС‚СЊ Р·РЅР°РµС€СЊ, С‡С‚Рѕ С‚С‹ РёС‰РµС€СЊ?
+		AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_04"); //РќСѓ, РќРµС„Р°СЂРёСѓСЃ РґР°Р» РјРЅРµ СЌС‚Сѓ РєР°СЂС‚Сѓ...
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_05"); //РџРѕРєР°Р¶Рё РµРµ РјРЅРµ!
 		B_UseFakeScroll ();
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_06"); //Хм. В большом лесу чрезвычайно опасно. Не следует направляться туда одному.
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_07"); //Найди кого-нибудь в Хоринисе, кто бы мог пойти с тобой. 
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_08"); //Не то чтобы я о тебе волнуюсь, но монстры могут съесть орнамент вместе с тобой.
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_09"); //Вот твоя карта...
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_06"); //РҐРј. Р’ Р±РѕР»СЊС€РѕРј Р»РµСЃСѓ С‡СЂРµР·РІС‹С‡Р°Р№РЅРѕ РѕРїР°СЃРЅРѕ. РќРµ СЃР»РµРґСѓРµС‚ РЅР°РїСЂР°РІР»СЏС‚СЊСЃСЏ С‚СѓРґР° РѕРґРЅРѕРјСѓ.
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_07"); //РќР°Р№РґРё РєРѕРіРѕ-РЅРёР±СѓРґСЊ РІ РҐРѕСЂРёРЅРёСЃРµ, РєС‚Рѕ Р±С‹ РјРѕРі РїРѕР№С‚Рё СЃ С‚РѕР±РѕР№. 
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_08"); //РќРµ С‚Рѕ С‡С‚РѕР±С‹ СЏ Рѕ С‚РµР±Рµ РІРѕР»РЅСѓСЋСЃСЊ, РЅРѕ РјРѕРЅСЃС‚СЂС‹ РјРѕРіСѓС‚ СЃСЉРµСЃС‚СЊ РѕСЂРЅР°РјРµРЅС‚ РІРјРµСЃС‚Рµ СЃ С‚РѕР±РѕР№.
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_09"); //Р’РѕС‚ С‚РІРѕСЏ РєР°СЂС‚Р°...
 
 		Log_CreateTopic (TOPIC_Addon_Ornament, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_Ornament, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_Ornament,"Сатурас посоветовал мне не отправляться на поиски части орнамента, которая находится в лесу, в одиночку. Я должен найти в Хоринисе кого-нибудь, кто пойдет со мной."); 
+		B_LogEntry (TOPIC_Addon_Ornament,"РЎР°С‚СѓСЂР°СЃ РїРѕСЃРѕРІРµС‚РѕРІР°Р» РјРЅРµ РЅРµ РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РЅР° РїРѕРёСЃРєРё С‡Р°СЃС‚Рё РѕСЂРЅР°РјРµРЅС‚Р°, РєРѕС‚РѕСЂР°СЏ РЅР°С…РѕРґРёС‚СЃСЏ РІ Р»РµСЃСѓ, РІ РѕРґРёРЅРѕС‡РєСѓ. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РІ РҐРѕСЂРёРЅРёСЃРµ РєРѕРіРѕ-РЅРёР±СѓРґСЊ, РєС‚Рѕ РїРѕР№РґРµС‚ СЃРѕ РјРЅРѕР№."); 
 	};
 };
  
@@ -98,62 +98,62 @@ func int DIA_Addon_Saturas_Hallo_Condition ()
 		return TRUE;
 	};
 };
-func void DIA_Addon_Saturas_Hallo_weiЯtdu ()
+func void DIA_Addon_Saturas_Hallo_weiРЇtdu ()
 {
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiЯtdu_14_00"); //Ты хоть имеешь представление о том, что ты наделал?
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiЯtdu_14_01"); //Ты настолько сильно пошатнул базовую структуру магического естества, что в Хоринисе все чуть не оглохли.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiЯtdu_14_02"); //Скажи спасибо, что Барьера больше нет.
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_weiЯtdu_15_03"); //Что же ты жалуешься, старче? Все ведь сработало как надо.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiЯtdu_14_04"); //(высокомерно) Следите за языком, юноша!
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiЯtdu_14_05"); //(раздраженно) Что, во имя всех стихий, тебе здесь нужно? 
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiРЇtdu_14_00"); //РўС‹ С…РѕС‚СЊ РёРјРµРµС€СЊ РїСЂРµРґСЃС‚Р°РІР»РµРЅРёРµ Рѕ С‚РѕРј, С‡С‚Рѕ С‚С‹ РЅР°РґРµР»Р°Р»?
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiРЇtdu_14_01"); //РўС‹ РЅР°СЃС‚РѕР»СЊРєРѕ СЃРёР»СЊРЅРѕ РїРѕС€Р°С‚РЅСѓР» Р±Р°Р·РѕРІСѓСЋ СЃС‚СЂСѓРєС‚СѓСЂСѓ РјР°РіРёС‡РµСЃРєРѕРіРѕ РµСЃС‚РµСЃС‚РІР°, С‡С‚Рѕ РІ РҐРѕСЂРёРЅРёСЃРµ РІСЃРµ С‡СѓС‚СЊ РЅРµ РѕРіР»РѕС…Р»Рё.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiРЇtdu_14_02"); //РЎРєР°Р¶Рё СЃРїР°СЃРёР±Рѕ, С‡С‚Рѕ Р‘Р°СЂСЊРµСЂР° Р±РѕР»СЊС€Рµ РЅРµС‚.
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_weiРЇtdu_15_03"); //Р§С‚Рѕ Р¶Рµ С‚С‹ Р¶Р°Р»СѓРµС€СЊСЃСЏ, СЃС‚Р°СЂС‡Рµ? Р’СЃРµ РІРµРґСЊ СЃСЂР°Р±РѕС‚Р°Р»Рѕ РєР°Рє РЅР°РґРѕ.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiРЇtdu_14_04"); //(РІС‹СЃРѕРєРѕРјРµСЂРЅРѕ) РЎР»РµРґРёС‚Рµ Р·Р° СЏР·С‹РєРѕРј, СЋРЅРѕС€Р°!
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiРЇtdu_14_05"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р§С‚Рѕ, РІРѕ РёРјСЏ РІСЃРµС… СЃС‚РёС…РёР№, С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ? 
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
 
 };
 
 func void DIA_Addon_Saturas_Hallo_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_00"); //Ты спятил? Вон!
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_01"); //Под сводами этого места слишком опасно для начинающего искателя приключений.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_02"); //(раздраженно) Но постой, разве я тебя не знаю? Ну, конечно! Проклятый ублюдок...
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_03"); //(раздраженно) Не думаешь ли ты, что я забыл, как ты предал нас тогда в Новом Лагере? 
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_00"); //РўС‹ СЃРїСЏС‚РёР»? Р’РѕРЅ!
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_01"); //РџРѕРґ СЃРІРѕРґР°РјРё СЌС‚РѕРіРѕ РјРµСЃС‚Р° СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ РґР»СЏ РЅР°С‡РёРЅР°СЋС‰РµРіРѕ РёСЃРєР°С‚РµР»СЏ РїСЂРёРєР»СЋС‡РµРЅРёР№.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_02"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РќРѕ РїРѕСЃС‚РѕР№, СЂР°Р·РІРµ СЏ С‚РµР±СЏ РЅРµ Р·РЅР°СЋ? РќСѓ, РєРѕРЅРµС‡РЅРѕ! РџСЂРѕРєР»СЏС‚С‹Р№ СѓР±Р»СЋРґРѕРє...
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_03"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РќРµ РґСѓРјР°РµС€СЊ Р»Рё С‚С‹, С‡С‚Рѕ СЏ Р·Р°Р±С‹Р», РєР°Рє С‚С‹ РїСЂРµРґР°Р» РЅР°СЃ С‚РѕРіРґР° РІ РќРѕРІРѕРј Р›Р°РіРµСЂРµ? 
 
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "(смущенно) Я...", DIA_Addon_Saturas_Hallo_Video ); 
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "(СЃРјСѓС‰РµРЅРЅРѕ) РЇ...", DIA_Addon_Saturas_Hallo_Video ); 
 };
 
 func void DIA_Addon_Saturas_Hallo_Video ()
 {
 	PlayVideo ("oreheap.bik");
-	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_00"); //(раздраженно) Ты каким-то образом высосал всю магическую энергию из нашей горы руды, а потом просто исчез!
-	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_01"); //(раздраженно) И зачем только тебе это понадобилось!
+	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_00"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РўС‹ РєР°РєРёРј-С‚Рѕ РѕР±СЂР°Р·РѕРј РІС‹СЃРѕСЃР°Р» РІСЃСЋ РјР°РіРёС‡РµСЃРєСѓСЋ СЌРЅРµСЂРіРёСЋ РёР· РЅР°С€РµР№ РіРѕСЂС‹ СЂСѓРґС‹, Р° РїРѕС‚РѕРј РїСЂРѕСЃС‚Рѕ РёСЃС‡РµР·!
+	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р Р·Р°С‡РµРј С‚РѕР»СЊРєРѕ С‚РµР±Рµ СЌС‚Рѕ РїРѕРЅР°РґРѕР±РёР»РѕСЃСЊ!
 
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Мне очень жаль. Я не понимал, что делаю.", DIA_Addon_Saturas_Hallo_sorry );
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Ваш план все равно не сработал бы.", DIA_Addon_Saturas_Hallo_Spott );
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Это было необходимо.", DIA_Addon_Saturas_Hallo_notwendig );
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "РњРЅРµ РѕС‡РµРЅСЊ Р¶Р°Р»СЊ. РЇ РЅРµ РїРѕРЅРёРјР°Р», С‡С‚Рѕ РґРµР»Р°СЋ.", DIA_Addon_Saturas_Hallo_sorry );
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Р’Р°С€ РїР»Р°РЅ РІСЃРµ СЂР°РІРЅРѕ РЅРµ СЃСЂР°Р±РѕС‚Р°Р» Р±С‹.", DIA_Addon_Saturas_Hallo_Spott );
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Р­С‚Рѕ Р±С‹Р»Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ.", DIA_Addon_Saturas_Hallo_notwendig );
 };
 
 func void DIA_Addon_Saturas_Hallo_notwendig ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //Такова жизнь. Без мощи накопленной вами руды, я бы не смог одолеть Спящего.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(злится) Что за бред ты несешь?! Спящий? Одолеть Спящего?!
-	DIA_Addon_Saturas_Hallo_weiЯtdu ();
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //РўР°РєРѕРІР° Р¶РёР·РЅСЊ. Р‘РµР· РјРѕС‰Рё РЅР°РєРѕРїР»РµРЅРЅРѕР№ РІР°РјРё СЂСѓРґС‹, СЏ Р±С‹ РЅРµ СЃРјРѕРі РѕРґРѕР»РµС‚СЊ РЎРїСЏС‰РµРіРѕ.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(Р·Р»РёС‚СЃСЏ) Р§С‚Рѕ Р·Р° Р±СЂРµРґ С‚С‹ РЅРµСЃРµС€СЊ?! РЎРїСЏС‰РёР№? РћРґРѕР»РµС‚СЊ РЎРїСЏС‰РµРіРѕ?!
+	DIA_Addon_Saturas_Hallo_weiРЇtdu ();
 };
 
 func void DIA_Addon_Saturas_Hallo_Spott ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_00"); //Ваш план не сработал бы, как ни крути. Хе-хе, взорвать гору руды, чтобы убрать Барьер... Смех, да и только. 
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_01"); //Все, на что бы вас хватило тогда, так это взлететь на воздух вместе с вашим лагерем и его жителями в придачу. 
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(гневно) Это заходит уже слишком далеко! Кто дал тебе право судить нас и наши намерения? 
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //Если бы я не исповедовал путь ненасилия, мой мальчик... Считай, тебе повезло.
-	DIA_Addon_Saturas_Hallo_weiЯtdu ();
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_00"); //Р’Р°С€ РїР»Р°РЅ РЅРµ СЃСЂР°Р±РѕС‚Р°Р» Р±С‹, РєР°Рє РЅРё РєСЂСѓС‚Рё. РҐРµ-С…Рµ, РІР·РѕСЂРІР°С‚СЊ РіРѕСЂСѓ СЂСѓРґС‹, С‡С‚РѕР±С‹ СѓР±СЂР°С‚СЊ Р‘Р°СЂСЊРµСЂ... РЎРјРµС…, РґР° Рё С‚РѕР»СЊРєРѕ. 
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_01"); //Р’СЃРµ, РЅР° С‡С‚Рѕ Р±С‹ РІР°СЃ С…РІР°С‚РёР»Рѕ С‚РѕРіРґР°, С‚Р°Рє СЌС‚Рѕ РІР·Р»РµС‚РµС‚СЊ РЅР° РІРѕР·РґСѓС… РІРјРµСЃС‚Рµ СЃ РІР°С€РёРј Р»Р°РіРµСЂРµРј Рё РµРіРѕ Р¶РёС‚РµР»СЏРјРё РІ РїСЂРёРґР°С‡Сѓ. 
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(РіРЅРµРІРЅРѕ) Р­С‚Рѕ Р·Р°С…РѕРґРёС‚ СѓР¶Рµ СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ! РљС‚Рѕ РґР°Р» С‚РµР±Рµ РїСЂР°РІРѕ СЃСѓРґРёС‚СЊ РЅР°СЃ Рё РЅР°С€Рё РЅР°РјРµСЂРµРЅРёСЏ? 
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //Р•СЃР»Рё Р±С‹ СЏ РЅРµ РёСЃРїРѕРІРµРґРѕРІР°Р» РїСѓС‚СЊ РЅРµРЅР°СЃРёР»РёСЏ, РјРѕР№ РјР°Р»СЊС‡РёРє... РЎС‡РёС‚Р°Р№, С‚РµР±Рµ РїРѕРІРµР·Р»Рѕ.
+	DIA_Addon_Saturas_Hallo_weiРЇtdu ();
 };
 
 func void DIA_Addon_Saturas_Hallo_sorry ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //Мне правда очень жаль. Я не ведал, что творил.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //О, и ты, наивный, полагаешь, что теперь об этом можно забыть?
-	DIA_Addon_Saturas_Hallo_weiЯtdu ();
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //РњРЅРµ РїСЂР°РІРґР° РѕС‡РµРЅСЊ Р¶Р°Р»СЊ. РЇ РЅРµ РІРµРґР°Р», С‡С‚Рѕ С‚РІРѕСЂРёР».
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //Рћ, Рё С‚С‹, РЅР°РёРІРЅС‹Р№, РїРѕР»Р°РіР°РµС€СЊ, С‡С‚Рѕ С‚РµРїРµСЂСЊ РѕР± СЌС‚РѕРј РјРѕР¶РЅРѕ Р·Р°Р±С‹С‚СЊ?
+	DIA_Addon_Saturas_Hallo_weiРЇtdu ();
 };
 
 
@@ -168,7 +168,7 @@ instance DIA_Addon_Saturas_keineAhnung		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_keineAhnung_Condition;
 	information	 = 	DIA_Addon_Saturas_keineAhnung_Info;
 
-	description	 = 	"Совершенно не представляю.";
+	description	 = 	"РЎРѕРІРµСЂС€РµРЅРЅРѕ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏСЋ.";
 };
 
 func int DIA_Addon_Saturas_keineAhnung_Condition ()
@@ -181,13 +181,13 @@ func int DIA_Addon_Saturas_keineAhnung_Condition ()
 
 func void DIA_Addon_Saturas_keineAhnung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_keineAhnung_15_00"); //Понятия не имею. Просто заглянул. Нельзя? 
-	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_01"); //Ты тратишь мое драгоценное время. Уходи прочь с моих глаз. 
-	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_02"); //(бормочет) Я разберусь с тобой позже.
+	AI_Output	(other, self, "DIA_Addon_Saturas_keineAhnung_15_00"); //РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ. РџСЂРѕСЃС‚Рѕ Р·Р°РіР»СЏРЅСѓР». РќРµР»СЊР·СЏ? 
+	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_01"); //РўС‹ С‚СЂР°С‚РёС€СЊ РјРѕРµ РґСЂР°РіРѕС†РµРЅРЅРѕРµ РІСЂРµРјСЏ. РЈС…РѕРґРё РїСЂРѕС‡СЊ СЃ РјРѕРёС… РіР»Р°Р·. 
+	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_02"); //(Р±РѕСЂРјРѕС‡РµС‚) РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ С‚РѕР±РѕР№ РїРѕР·Р¶Рµ.
 	
 	Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_KDW,"Я нашел магов воды на месте раскопок. Мне нужно выяснить, чем они там занимаются. Сатурас пока ничего мне не говорит. Он все никак не может забыть ту историю в колонии."); 
+	B_LogEntry (TOPIC_Addon_KDW,"РЇ РЅР°С€РµР» РјР°РіРѕРІ РІРѕРґС‹ РЅР° РјРµСЃС‚Рµ СЂР°СЃРєРѕРїРѕРє. РњРЅРµ РЅСѓР¶РЅРѕ РІС‹СЏСЃРЅРёС‚СЊ, С‡РµРј РѕРЅРё С‚Р°Рј Р·Р°РЅРёРјР°СЋС‚СЃСЏ. РЎР°С‚СѓСЂР°СЃ РїРѕРєР° РЅРёС‡РµРіРѕ РјРЅРµ РЅРµ РіРѕРІРѕСЂРёС‚. РћРЅ РІСЃРµ РЅРёРєР°Рє РЅРµ РјРѕР¶РµС‚ Р·Р°Р±С‹С‚СЊ С‚Сѓ РёСЃС‚РѕСЂРёСЋ РІ РєРѕР»РѕРЅРёРё."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -218,7 +218,7 @@ func int DIA_Addon_Saturas_raus_Condition ()
 
 func void DIA_Addon_Saturas_raus_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_raus_14_00"); //Прочь, пока с тобой ничего не случилось.
+	AI_Output	(self, other, "DIA_Addon_Saturas_raus_14_00"); //РџСЂРѕС‡СЊ, РїРѕРєР° СЃ С‚РѕР±РѕР№ РЅРёС‡РµРіРѕ РЅРµ СЃР»СѓС‡РёР»РѕСЃСЊ.
 	AI_StopProcessInfos (self);
 };
 
@@ -232,7 +232,7 @@ instance DIA_Addon_Saturas_Lares		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Lares_Condition;
 	information	 = 	DIA_Addon_Saturas_Lares_Info;
 
-	description	 = 	"Я пришел сюда с Ларесом.";
+	description	 = 	"РЇ РїСЂРёС€РµР» СЃСЋРґР° СЃ Р›Р°СЂРµСЃРѕРј.";
 };
 
 func int DIA_Addon_Saturas_Lares_Condition ()
@@ -245,10 +245,10 @@ func int DIA_Addon_Saturas_Lares_Condition ()
 
 func void DIA_Addon_Saturas_Lares_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_00"); //Я пришел сюда с Ларесом.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_01"); //(заинтересованно) Ларес? Правда? Где он?
-	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_02"); //Я один. Ларес вернулся в город.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_03"); //Что? И он отправил тебя к нам одного? О чем он думал?
+	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_00"); //РЇ РїСЂРёС€РµР» СЃСЋРґР° СЃ Р›Р°СЂРµСЃРѕРј.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_01"); //(Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅРЅРѕ) Р›Р°СЂРµСЃ? РџСЂР°РІРґР°? Р“РґРµ РѕРЅ?
+	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_02"); //РЇ РѕРґРёРЅ. Р›Р°СЂРµСЃ РІРµСЂРЅСѓР»СЃСЏ РІ РіРѕСЂРѕРґ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_03"); //Р§С‚Рѕ? Р РѕРЅ РѕС‚РїСЂР°РІРёР» С‚РµР±СЏ Рє РЅР°Рј РѕРґРЅРѕРіРѕ? Рћ С‡РµРј РѕРЅ РґСѓРјР°Р»?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ instance DIA_Addon_Saturas_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Ornament_Condition;
 	information	 = 	DIA_Addon_Saturas_Ornament_Info;
 
-	description	 = 	"Вот то, что вам нужно. Орнамент.";
+	description	 = 	"Р’РѕС‚ С‚Рѕ, С‡С‚Рѕ РІР°Рј РЅСѓР¶РЅРѕ. РћСЂРЅР°РјРµРЅС‚.";
 };
 
 func int DIA_Addon_Saturas_Ornament_Condition ()
@@ -277,23 +277,23 @@ func int DIA_Addon_Saturas_Ornament_Condition ()
 
 func void DIA_Addon_Saturas_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_00"); //Вот то, что вам нужно. Орнамент.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_00"); //Р’РѕС‚ С‚Рѕ, С‡С‚Рѕ РІР°Рј РЅСѓР¶РЅРѕ. РћСЂРЅР°РјРµРЅС‚.
 	B_GiveInvItems (other, self, ItMi_Ornament_Addon_Vatras,1);
-	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_ADD_14_00"); //Во имя сути всего сущего, что это все должно значить? 
+	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_ADD_14_00"); //Р’Рѕ РёРјСЏ СЃСѓС‚Рё РІСЃРµРіРѕ СЃСѓС‰РµРіРѕ, С‡С‚Рѕ СЌС‚Рѕ РІСЃРµ РґРѕР»Р¶РЅРѕ Р·РЅР°С‡РёС‚СЊ? 
 
 	if (Lares_Angekommen == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_01"); //Кто дал тебе это? Только не говори, что Ларес просто вручил это тебе.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_01"); //РљС‚Рѕ РґР°Р» С‚РµР±Рµ СЌС‚Рѕ? РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё, С‡С‚Рѕ Р›Р°СЂРµСЃ РїСЂРѕСЃС‚Рѕ РІСЂСѓС‡РёР» СЌС‚Рѕ С‚РµР±Рµ.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_02"); //Ну, хватит уже, старче. Я ведь принес это вам, чего уж боле?
-	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_03"); //Конечно. Меня просто волнует, что ты опять приложил к этому свои подлые руки.
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_04"); //Почему ты все еще так кипятишься из-за той руды?
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_05"); //Ведь я тогда уже работал на вас. На меня можно было положиться.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(вздыхает) И к чему это нас привело, ответь? Хм-м, даже не думай, что я тебе доверяю...
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_02"); //РќСѓ, С…РІР°С‚РёС‚ СѓР¶Рµ, СЃС‚Р°СЂС‡Рµ. РЇ РІРµРґСЊ РїСЂРёРЅРµСЃ СЌС‚Рѕ РІР°Рј, С‡РµРіРѕ СѓР¶ Р±РѕР»Рµ?
+	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_03"); //РљРѕРЅРµС‡РЅРѕ. РњРµРЅСЏ РїСЂРѕСЃС‚Рѕ РІРѕР»РЅСѓРµС‚, С‡С‚Рѕ С‚С‹ РѕРїСЏС‚СЊ РїСЂРёР»РѕР¶РёР» Рє СЌС‚РѕРјСѓ СЃРІРѕРё РїРѕРґР»С‹Рµ СЂСѓРєРё.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_04"); //РџРѕС‡РµРјСѓ С‚С‹ РІСЃРµ РµС‰Рµ С‚Р°Рє РєРёРїСЏС‚РёС€СЊСЃСЏ РёР·-Р·Р° С‚РѕР№ СЂСѓРґС‹?
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_05"); //Р’РµРґСЊ СЏ С‚РѕРіРґР° СѓР¶Рµ СЂР°Р±РѕС‚Р°Р» РЅР° РІР°СЃ. РќР° РјРµРЅСЏ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РїРѕР»РѕР¶РёС‚СЊСЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(РІР·РґС‹С…Р°РµС‚) Р Рє С‡РµРјСѓ СЌС‚Рѕ РЅР°СЃ РїСЂРёРІРµР»Рѕ, РѕС‚РІРµС‚СЊ? РҐРј-Рј, РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЏ С‚РµР±Рµ РґРѕРІРµСЂСЏСЋ...
 	MIS_Addon_Lares_Ornament2Saturas = LOG_SUCCESS;
 
-	//Joly: Monster auffьllen, die bei Lares gestцrt haben
+	//Joly: Monster auffСЊllen, die bei Lares gestС†rt haben
 	Wld_InsertNpc 	(Bloodfly, 	"FP_ROAM_NW_TROLLAREA_RUINS_07");
 	Wld_InsertNpc 	(Giant_Bug, 	"FP_ROAM_NW_TROLLAREA_RUINS_03");
 	Wld_InsertNpc 	(Lurker, 		"NW_TROLLAREA_RIVERSIDE_01");
@@ -325,7 +325,7 @@ instance DIA_Addon_Saturas_geheimbund		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_geheimbund_Condition;
 	information	 = 	DIA_Addon_Saturas_geheimbund_Info;
 
-	description	 = 	"Я желаю стать членом Кольца Воды.";
+	description	 = 	"РЇ Р¶РµР»Р°СЋ СЃС‚Р°С‚СЊ С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹.";
 };
 
 func int DIA_Addon_Saturas_geheimbund_Condition ()
@@ -340,23 +340,23 @@ func int DIA_Addon_Saturas_geheimbund_Condition ()
 
 func void DIA_Addon_Saturas_geheimbund_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_00"); //Я желаю стать членом Кольца Воды.
+	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_00"); //РЇ Р¶РµР»Р°СЋ СЃС‚Р°С‚СЊ С‡Р»РµРЅРѕРј РљРѕР»СЊС†Р° Р’РѕРґС‹.
 
 	if (Lares_Angekommen == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_01"); //(яростно) ЧТО? Как ты узнал об этом? Кто?.. ЛАРЕС... Я убью его!
-		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_02"); //Он нарушил наше главное правило. О Кольце Воды говорить запрещено!
+		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_01"); //(СЏСЂРѕСЃС‚РЅРѕ) Р§РўРћ? РљР°Рє С‚С‹ СѓР·РЅР°Р» РѕР± СЌС‚РѕРј? РљС‚Рѕ?.. Р›РђР Р•РЎ... РЇ СѓР±СЊСЋ РµРіРѕ!
+		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_02"); //РћРЅ РЅР°СЂСѓС€РёР» РЅР°С€Рµ РіР»Р°РІРЅРѕРµ РїСЂР°РІРёР»Рѕ. Рћ РљРѕР»СЊС†Рµ Р’РѕРґС‹ РіРѕРІРѕСЂРёС‚СЊ Р·Р°РїСЂРµС‰РµРЅРѕ!
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_03"); //(совершенно разбито) Не знаю, что мне следовало бы сказать. Просто я доверяю тебе, пока ты у меня на глазах.
-	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_04"); //О Кольце мне сказал Ватрас.
-	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_05"); //(смиренно) Что? Ватрас? (саркастически) Отлично! Из всех магов воды, которые есть на острове, ты встречаешься именно с тем, который тебя НЕ ЗНАЕТ.
-	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_06"); //Предупреждаю, в этот раз не делай глупостей.
-	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_07"); //(сухо) Постараюсь...
+	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_03"); //(СЃРѕРІРµСЂС€РµРЅРЅРѕ СЂР°Р·Р±РёС‚Рѕ) РќРµ Р·РЅР°СЋ, С‡С‚Рѕ РјРЅРµ СЃР»РµРґРѕРІР°Р»Рѕ Р±С‹ СЃРєР°Р·Р°С‚СЊ. РџСЂРѕСЃС‚Рѕ СЏ РґРѕРІРµСЂСЏСЋ С‚РµР±Рµ, РїРѕРєР° С‚С‹ Сѓ РјРµРЅСЏ РЅР° РіР»Р°Р·Р°С….
+	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_04"); //Рћ РљРѕР»СЊС†Рµ РјРЅРµ СЃРєР°Р·Р°Р» Р’Р°С‚СЂР°СЃ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_05"); //(СЃРјРёСЂРµРЅРЅРѕ) Р§С‚Рѕ? Р’Р°С‚СЂР°СЃ? (СЃР°СЂРєР°СЃС‚РёС‡РµСЃРєРё) РћС‚Р»РёС‡РЅРѕ! РР· РІСЃРµС… РјР°РіРѕРІ РІРѕРґС‹, РєРѕС‚РѕСЂС‹Рµ РµСЃС‚СЊ РЅР° РѕСЃС‚СЂРѕРІРµ, С‚С‹ РІСЃС‚СЂРµС‡Р°РµС€СЊСЃСЏ РёРјРµРЅРЅРѕ СЃ С‚РµРј, РєРѕС‚РѕСЂС‹Р№ С‚РµР±СЏ РќР• Р—РќРђР•Рў.
+	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_06"); //РџСЂРµРґСѓРїСЂРµР¶РґР°СЋ, РІ СЌС‚РѕС‚ СЂР°Р· РЅРµ РґРµР»Р°Р№ РіР»СѓРїРѕСЃС‚РµР№.
+	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_07"); //(СЃСѓС…Рѕ) РџРѕСЃС‚Р°СЂР°СЋСЃСЊ...
 	
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Сатурас не готов приять меня в Кольцо Воды. Он сказал, что это принять решение должен Ватрас."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"РЎР°С‚СѓСЂР°СЃ РЅРµ РіРѕС‚РѕРІ РїСЂРёСЏС‚СЊ РјРµРЅСЏ РІ РљРѕР»СЊС†Рѕ Р’РѕРґС‹. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЌС‚Рѕ РїСЂРёРЅСЏС‚СЊ СЂРµС€РµРЅРёРµ РґРѕР»Р¶РµРЅ Р’Р°С‚СЂР°СЃ."); 
 
 };
 
@@ -370,7 +370,7 @@ instance DIA_Addon_Saturas_wasmachstdu		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_wasmachstdu_Condition;
 	information	 = 	DIA_Addon_Saturas_wasmachstdu_Info;
 
-	description	 = 	"Что ты здесь делаешь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?";
 };
 
 func int DIA_Addon_Saturas_wasmachstdu_Condition ()
@@ -383,11 +383,11 @@ func int DIA_Addon_Saturas_wasmachstdu_Condition ()
 
 func void DIA_Addon_Saturas_wasmachstdu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_wasmachstdu_15_00"); //Что ты здесь делаешь?
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_01"); //(почтительно) В этих чертогах сокрыты древние тайны. Загадочные тайны.
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_02"); //По надписям и фрескам видно, что это очень древняя культура.
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_03"); //Все надписи, которые ты видишь сделаны на совершенно неизвестном нам языке.
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_04"); //Мы только начинаем изучать его и расшифровали лишь малую часть.
+	AI_Output	(other, self, "DIA_Addon_Saturas_wasmachstdu_15_00"); //Р§С‚Рѕ С‚С‹ Р·РґРµСЃСЊ РґРµР»Р°РµС€СЊ?
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_01"); //(РїРѕС‡С‚РёС‚РµР»СЊРЅРѕ) Р’ СЌС‚РёС… С‡РµСЂС‚РѕРіР°С… СЃРѕРєСЂС‹С‚С‹ РґСЂРµРІРЅРёРµ С‚Р°Р№РЅС‹. Р—Р°РіР°РґРѕС‡РЅС‹Рµ С‚Р°Р№РЅС‹.
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_02"); //РџРѕ РЅР°РґРїРёСЃСЏРј Рё С„СЂРµСЃРєР°Рј РІРёРґРЅРѕ, С‡С‚Рѕ СЌС‚Рѕ РѕС‡РµРЅСЊ РґСЂРµРІРЅСЏСЏ РєСѓР»СЊС‚СѓСЂР°.
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_03"); //Р’СЃРµ РЅР°РґРїРёСЃРё, РєРѕС‚РѕСЂС‹Рµ С‚С‹ РІРёРґРёС€СЊ СЃРґРµР»Р°РЅС‹ РЅР° СЃРѕРІРµСЂС€РµРЅРЅРѕ РЅРµРёР·РІРµСЃС‚РЅРѕРј РЅР°Рј СЏР·С‹РєРµ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_04"); //РњС‹ С‚РѕР»СЊРєРѕ РЅР°С‡РёРЅР°РµРј РёР·СѓС‡Р°С‚СЊ РµРіРѕ Рё СЂР°СЃС€РёС„СЂРѕРІР°Р»Рё Р»РёС€СЊ РјР°Р»СѓСЋ С‡Р°СЃС‚СЊ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -400,7 +400,7 @@ instance DIA_Addon_Saturas_Erdbeben		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Erdbeben_Condition;
 	information	 = 	DIA_Addon_Saturas_Erdbeben_Info;
 
-	description	 = 	"Что это за странные подземные толчки?";
+	description	 = 	"Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃС‚СЂР°РЅРЅС‹Рµ РїРѕРґР·РµРјРЅС‹Рµ С‚РѕР»С‡РєРё?";
 };
 
 func int DIA_Addon_Saturas_Erdbeben_Condition ()
@@ -415,11 +415,11 @@ func int DIA_Addon_Saturas_Erdbeben_Condition ()
 
 func void DIA_Addon_Saturas_Erdbeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Erdbeben_15_00"); //Что это за странные подземные толчки?
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_01"); //Это одна из загадок, которую я  сам пытаюсь разрешить.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_02"); //Что-то тревожит структуру магии где-то под этими горами.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_03"); //Очевидно, кто-то пытается всеми своими силами разрушить могучую магию.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_04"); //Боюсь, это произойдет до того, как весь остров будет содрогаться от этих толчков.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Erdbeben_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° СЃС‚СЂР°РЅРЅС‹Рµ РїРѕРґР·РµРјРЅС‹Рµ С‚РѕР»С‡РєРё?
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_01"); //Р­С‚Рѕ РѕРґРЅР° РёР· Р·Р°РіР°РґРѕРє, РєРѕС‚РѕСЂСѓСЋ СЏ  СЃР°Рј РїС‹С‚Р°СЋСЃСЊ СЂР°Р·СЂРµС€РёС‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_02"); //Р§С‚Рѕ-С‚Рѕ С‚СЂРµРІРѕР¶РёС‚ СЃС‚СЂСѓРєС‚СѓСЂСѓ РјР°РіРёРё РіРґРµ-С‚Рѕ РїРѕРґ СЌС‚РёРјРё РіРѕСЂР°РјРё.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_03"); //РћС‡РµРІРёРґРЅРѕ, РєС‚Рѕ-С‚Рѕ РїС‹С‚Р°РµС‚СЃСЏ РІСЃРµРјРё СЃРІРѕРёРјРё СЃРёР»Р°РјРё СЂР°Р·СЂСѓС€РёС‚СЊ РјРѕРіСѓС‡СѓСЋ РјР°РіРёСЋ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_04"); //Р‘РѕСЋСЃСЊ, СЌС‚Рѕ РїСЂРѕРёР·РѕР№РґРµС‚ РґРѕ С‚РѕРіРѕ, РєР°Рє РІРµСЃСЊ РѕСЃС‚СЂРѕРІ Р±СѓРґРµС‚ СЃРѕРґСЂРѕРіР°С‚СЊСЃСЏ РѕС‚ СЌС‚РёС… С‚РѕР»С‡РєРѕРІ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WhatsOrnament
@@ -431,7 +431,7 @@ instance DIA_Addon_Saturas_WhatsOrnament		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_WhatsOrnament_Condition;
 	information	 = 	DIA_Addon_Saturas_WhatsOrnament_Info;
 
-	description	 = 	"Почему для тебя так важен этот орнамент?";
+	description	 = 	"РџРѕС‡РµРјСѓ РґР»СЏ С‚РµР±СЏ С‚Р°Рє РІР°Р¶РµРЅ СЌС‚РѕС‚ РѕСЂРЅР°РјРµРЅС‚?";
 };
 
 func int DIA_Addon_Saturas_WhatsOrnament_Condition ()
@@ -446,9 +446,9 @@ func int DIA_Addon_Saturas_WhatsOrnament_Condition ()
 
 func void DIA_Addon_Saturas_WhatsOrnament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_WhatsOrnament_15_00"); //Почему для тебя так важен этот орнамент?
-	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_01"); //(раздраженно) Это ключ к порталу.
-	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_02"); //Больше я ничего тебе не скажу.
+	AI_Output	(other, self, "DIA_Addon_Saturas_WhatsOrnament_15_00"); //РџРѕС‡РµРјСѓ РґР»СЏ С‚РµР±СЏ С‚Р°Рє РІР°Р¶РµРЅ СЌС‚РѕС‚ РѕСЂРЅР°РјРµРЅС‚?
+	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р­С‚Рѕ РєР»СЋС‡ Рє РїРѕСЂС‚Р°Р»Сѓ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_02"); //Р‘РѕР»СЊС€Рµ СЏ РЅРёС‡РµРіРѕ С‚РµР±Рµ РЅРµ СЃРєР°Р¶Сѓ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ScRanger
@@ -461,7 +461,7 @@ instance DIA_Addon_Saturas_ScRanger		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_ScRanger_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я стал членом общества Кольца Воды.";
+	description	 = 	"РЇ СЃС‚Р°Р» С‡Р»РµРЅРѕРј РѕР±С‰РµСЃС‚РІР° РљРѕР»СЊС†Р° Р’РѕРґС‹.";
 };
 
 func int DIA_Addon_Saturas_ScRanger_Condition ()
@@ -475,41 +475,41 @@ func int DIA_Addon_Saturas_ScRanger_Condition ()
 
 func void DIA_Addon_Saturas_ScRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_ScRanger_15_00"); //Теперь я принадлежу к Кольцу Воды.
+	AI_Output	(other, self, "DIA_Addon_Saturas_ScRanger_15_00"); //РўРµРїРµСЂСЊ СЏ РїСЂРёРЅР°РґР»РµР¶Сѓ Рє РљРѕР»СЊС†Сѓ Р’РѕРґС‹.
 	var C_Item itm; 
 	itm = Npc_GetEquippedArmor(other);
 		
 	if 	(
-		((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE))	//-> Der SC IST Ranger! SC trдgt eigenen (nicht Lares') Ring
-		|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)							//-> Der SC IST Ranger! Nur als Ranger hat er diese Rьstung bekommen.
+		((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE))	//-> Der SC IST Ranger! SC trРґgt eigenen (nicht Lares') Ring
+		|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)							//-> Der SC IST Ranger! Nur als Ranger hat er diese RСЊstung bekommen.
 		)
 		{
 			if (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_01"); //Я вижу, ты носишь доспехи наших детей.
+				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_01"); //РЇ РІРёР¶Сѓ, С‚С‹ РЅРѕСЃРёС€СЊ РґРѕСЃРїРµС…Рё РЅР°С€РёС… РґРµС‚РµР№.
 			}
 			else 
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_02"); //Я вижу, на тебе наш тайный знак. Аквамариновое кольцо.
+				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_02"); //РЇ РІРёР¶Сѓ, РЅР° С‚РµР±Рµ РЅР°С€ С‚Р°Р№РЅС‹Р№ Р·РЅР°Рє. РђРєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ.
 			};
 			
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_03"); //А еще по твоим глазам я вижу, что ты говоришь правду.
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_04"); //(бормоча) Хорошо. Я приму тебя в наши ряды.
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_05"); //Но помни, что это налагает на тебя большую ответственность.
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_06"); //И я надеюсь, что ты будешь поступать по справедливости. Ради собственного же блага.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_03"); //Рђ РµС‰Рµ РїРѕ С‚РІРѕРёРј РіР»Р°Р·Р°Рј СЏ РІРёР¶Сѓ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ РїСЂР°РІРґСѓ.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_04"); //(Р±РѕСЂРјРѕС‡Р°) РҐРѕСЂРѕС€Рѕ. РЇ РїСЂРёРјСѓ С‚РµР±СЏ РІ РЅР°С€Рё СЂСЏРґС‹.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_05"); //РќРѕ РїРѕРјРЅРё, С‡С‚Рѕ СЌС‚Рѕ РЅР°Р»Р°РіР°РµС‚ РЅР° С‚РµР±СЏ Р±РѕР»СЊС€СѓСЋ РѕС‚РІРµС‚СЃС‚РІРµРЅРЅРѕСЃС‚СЊ.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_06"); //Р СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РїРѕСЃС‚СѓРїР°С‚СЊ РїРѕ СЃРїСЂР°РІРµРґР»РёРІРѕСЃС‚Рё. Р Р°РґРё СЃРѕР±СЃС‚РІРµРЅРЅРѕРіРѕ Р¶Рµ Р±Р»Р°РіР°.
 			SaturasKnows_SC_IsRanger = TRUE;
-			B_LogEntry (TOPIC_Addon_RingOfWater,"Сатурас согласился с моим вступлением в Кольцо Воды."); 
+			B_LogEntry (TOPIC_Addon_RingOfWater,"РЎР°С‚СѓСЂР°СЃ СЃРѕРіР»Р°СЃРёР»СЃСЏ СЃ РјРѕРёРј РІСЃС‚СѓРїР»РµРЅРёРµРј РІ РљРѕР»СЊС†Рѕ Р’РѕРґС‹."); 
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_07"); //А как я могу сказать, что теперь ты один из нас?
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_07"); //Рђ РєР°Рє СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚РµРїРµСЂСЊ С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ?
 	
 			if (RangerRingIsLaresRing == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_08"); //Аквамариновое кольцо, которое ты носишь, принадлежит Ларесу. Я вижу.
+				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_08"); //РђРєРІР°РјР°СЂРёРЅРѕРІРѕРµ РєРѕР»СЊС†Рѕ, РєРѕС‚РѕСЂРѕРµ С‚С‹ РЅРѕСЃРёС€СЊ, РїСЂРёРЅР°РґР»РµР¶РёС‚ Р›Р°СЂРµСЃСѓ. РЇ РІРёР¶Сѓ.
 			};
 
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_09"); // Ты пытаешься меня провести? Я не ожидал ничего другого.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_09"); // РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РјРµРЅСЏ РїСЂРѕРІРµСЃС‚Рё? РЇ РЅРµ РѕР¶РёРґР°Р» РЅРёС‡РµРіРѕ РґСЂСѓРіРѕРіРѕ.
 			AI_StopProcessInfos (self);		
 		};
 };
@@ -525,7 +525,7 @@ instance DIA_Addon_Saturas_OpenPortal		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_OpenPortal_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Дай мне кольцо. Я открою портал.";
+	description	 = 	"Р”Р°Р№ РјРЅРµ РєРѕР»СЊС†Рѕ. РЇ РѕС‚РєСЂРѕСЋ РїРѕСЂС‚Р°Р».";
 };
 var int DIA_Addon_Saturas_OpenPortal_NoPerm;
 func int DIA_Addon_Saturas_OpenPortal_Condition ()
@@ -539,18 +539,18 @@ func int DIA_Addon_Saturas_OpenPortal_Condition ()
 
 func void DIA_Addon_Saturas_OpenPortal_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_00"); //Дай мне кольцо. Я открою портал.
+	AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_00"); //Р”Р°Р№ РјРЅРµ РєРѕР»СЊС†Рѕ. РЇ РѕС‚РєСЂРѕСЋ РїРѕСЂС‚Р°Р».
 
 	if (SaturasKnows_SC_IsRanger == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_01"); //(лукаво) Хорошо! Как один из наших новых детей, ты должен быть удостоен этой чести.
-		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_02"); //Однако я по-прежнему жду вестей от Ватраса. Мы никуда не пойдем, пока не дождемся их.
+		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_01"); //(Р»СѓРєР°РІРѕ) РҐРѕСЂРѕС€Рѕ! РљР°Рє РѕРґРёРЅ РёР· РЅР°С€РёС… РЅРѕРІС‹С… РґРµС‚РµР№, С‚С‹ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ СѓРґРѕСЃС‚РѕРµРЅ СЌС‚РѕР№ С‡РµСЃС‚Рё.
+		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_02"); //РћРґРЅР°РєРѕ СЏ РїРѕ-РїСЂРµР¶РЅРµРјСѓ Р¶РґСѓ РІРµСЃС‚РµР№ РѕС‚ Р’Р°С‚СЂР°СЃР°. РњС‹ РЅРёРєСѓРґР° РЅРµ РїРѕР№РґРµРј, РїРѕРєР° РЅРµ РґРѕР¶РґРµРјСЃСЏ РёС….
 	
 		
 		if (RangerMeetingRunning == LOG_SUCCESS)
 		&& ((Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven)) || (Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven_opened))) 
 		{	
-			AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_03"); //У МЕНЯ есть для тебя послание от Ватраса.
+			AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_03"); //РЈ РњР•РќРЇ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РїРѕСЃР»Р°РЅРёРµ РѕС‚ Р’Р°С‚СЂР°СЃР°.
 	
 			B_GiveInvItems (other, self, ItWr_Vatras2Saturas_FindRaven,(Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven)));
 			B_GiveInvItems (other, self, ItWr_Vatras2Saturas_FindRaven_opened,(Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven_opened)));
@@ -558,25 +558,25 @@ func void DIA_Addon_Saturas_OpenPortal_Info ()
 			B_UseFakeScroll ();
 			if (Vatras2Saturas_FindRaven_Open == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_04"); //(раздраженно) Вижу. И, конечно же, ты не удержался и наверняка вскрыл его?
-				AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_05"); //Ну, э-э...
-				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_06"); //(грозно) Надеюсь, мое и так хрупкое доверие к тебе не пошатнется окончательно. Ради твоего же блага.
+				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_04"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р’РёР¶Сѓ. Р, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, С‚С‹ РЅРµ СѓРґРµСЂР¶Р°Р»СЃСЏ Рё РЅР°РІРµСЂРЅСЏРєР° РІСЃРєСЂС‹Р» РµРіРѕ?
+				AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_05"); //РќСѓ, СЌ-СЌ...
+				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_06"); //(РіСЂРѕР·РЅРѕ) РќР°РґРµСЋСЃСЊ, РјРѕРµ Рё С‚Р°Рє С…СЂСѓРїРєРѕРµ РґРѕРІРµСЂРёРµ Рє С‚РµР±Рµ РЅРµ РїРѕС€Р°С‚РЅРµС‚СЃСЏ РѕРєРѕРЅС‡Р°С‚РµР»СЊРЅРѕ. Р Р°РґРё С‚РІРѕРµРіРѕ Р¶Рµ Р±Р»Р°РіР°.
 			}
 			else
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_07"); //(удивленно) Интересно. Хорошо.
+				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_07"); //(СѓРґРёРІР»РµРЅРЅРѕ) РРЅС‚РµСЂРµСЃРЅРѕ. РҐРѕСЂРѕС€Рѕ.
 				B_GivePlayerXP (XP_Ambient);
 			};		
 			
-			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_08"); //Вот, возьми кольцо. Мы встретимся у портала и подождем тебя.
+			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_08"); //Р’РѕС‚, РІРѕР·СЊРјРё РєРѕР»СЊС†Рѕ. РњС‹ РІСЃС‚СЂРµС‚РёРјСЃСЏ Сѓ РїРѕСЂС‚Р°Р»Р° Рё РїРѕРґРѕР¶РґРµРј С‚РµР±СЏ.
 		
 			CreateInvItems (self, ItMi_PortalRing_Addon, 1);									
 			B_GiveInvItems (self, other, ItMi_PortalRing_Addon, 1);
 		
-			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_09"); //Если Нефариус прав, портал откроется, как только в него вставят кольцо.
+			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_09"); //Р•СЃР»Рё РќРµС„Р°СЂРёСѓСЃ РїСЂР°РІ, РїРѕСЂС‚Р°Р» РѕС‚РєСЂРѕРµС‚СЃСЏ, РєР°Рє С‚РѕР»СЊРєРѕ РІ РЅРµРіРѕ РІСЃС‚Р°РІСЏС‚ РєРѕР»СЊС†Рѕ.
 			
 			DIA_Addon_Saturas_OpenPortal_NoPerm = TRUE;
-			B_LogEntry (TOPIC_Addon_Ornament,"Сатурас дал мне украшенное кольцо. Я должен открыть портал, вставив кольцо в механизм, а затем пройти через портал."); 
+			B_LogEntry (TOPIC_Addon_Ornament,"РЎР°С‚СѓСЂР°СЃ РґР°Р» РјРЅРµ СѓРєСЂР°С€РµРЅРЅРѕРµ РєРѕР»СЊС†Рѕ. РЇ РґРѕР»Р¶РµРЅ РѕС‚РєСЂС‹С‚СЊ РїРѕСЂС‚Р°Р», РІСЃС‚Р°РІРёРІ РєРѕР»СЊС†Рѕ РІ РјРµС…Р°РЅРёР·Рј, Р° Р·Р°С‚РµРј РїСЂРѕР№С‚Рё С‡РµСЂРµР· РїРѕСЂС‚Р°Р»."); 
 
 			AI_StopProcessInfos (self);		
 			Npc_ExchangeRoutine	(self,"OpenPortal");
@@ -593,9 +593,9 @@ func void DIA_Addon_Saturas_OpenPortal_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_10"); //Пока Ватрас не дал мне знать, что тебе можно доверять полностью, кольцо побудет у меня.
+		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_10"); //РџРѕРєР° Р’Р°С‚СЂР°СЃ РЅРµ РґР°Р» РјРЅРµ Р·РЅР°С‚СЊ, С‡С‚Рѕ С‚РµР±Рµ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ РїРѕР»РЅРѕСЃС‚СЊСЋ, РєРѕР»СЊС†Рѕ РїРѕР±СѓРґРµС‚ Сѓ РјРµРЅСЏ.
 		Saturas_WillVertrauensBeweis = TRUE;
-		B_LogEntry (TOPIC_Addon_Ornament,"Сатурас не даст мне кольцо, пока он не получит от Ватраса знак, свидетельствующий о том, что мне можно доверять."); 
+		B_LogEntry (TOPIC_Addon_Ornament,"РЎР°С‚СѓСЂР°СЃ РЅРµ РґР°СЃС‚ РјРЅРµ РєРѕР»СЊС†Рѕ, РїРѕРєР° РѕРЅ РЅРµ РїРѕР»СѓС‡РёС‚ РѕС‚ Р’Р°С‚СЂР°СЃР° Р·РЅР°Рє, СЃРІРёРґРµС‚РµР»СЊСЃС‚РІСѓСЋС‰РёР№ Рѕ С‚РѕРј, С‡С‚Рѕ РјРЅРµ РјРѕР¶РЅРѕ РґРѕРІРµСЂСЏС‚СЊ."); 
 		AI_StopProcessInfos (self);		
 	};
 };
@@ -611,7 +611,7 @@ instance DIA_Addon_Saturas_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты можешь научить меня чему-нибудь из области магии?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ РёР· РѕР±Р»Р°СЃС‚Рё РјР°РіРёРё?";
 };
 
 func int DIA_Addon_Saturas_PERM_Condition ()
@@ -624,7 +624,7 @@ func int DIA_Addon_Saturas_PERM_Condition ()
 
 func void DIA_Addon_Saturas_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_PERM_15_00"); //Ты можешь немного поучить меня магии?
-	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_01"); //Чтобы ты опять натворил дел?
-	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_02"); //Нет. У меня нет времени в бирюльки играть.
+	AI_Output	(other, self, "DIA_Addon_Saturas_PERM_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅРµРјРЅРѕРіРѕ РїРѕСѓС‡РёС‚СЊ РјРµРЅСЏ РјР°РіРёРё?
+	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_01"); //Р§С‚РѕР±С‹ С‚С‹ РѕРїСЏС‚СЊ РЅР°С‚РІРѕСЂРёР» РґРµР»?
+	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_02"); //РќРµС‚. РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РІ Р±РёСЂСЋР»СЊРєРё РёРіСЂР°С‚СЊ.
 };

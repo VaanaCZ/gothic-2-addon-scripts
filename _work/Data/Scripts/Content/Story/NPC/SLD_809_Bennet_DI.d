@@ -9,7 +9,7 @@
 instance SLD_809_Bennet_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¡ÂÌÌÂÚ";
+	name 		= "–ë–µ–Ω–Ω–µ—Ç";
 	guild 		= GIL_SLD;
 	id 			= 8090;
 	voice 		= 6;
@@ -43,8 +43,8 @@ instance SLD_809_Bennet_DI (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 40); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh–¥ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 40); //Grenzen f—år Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_8090;

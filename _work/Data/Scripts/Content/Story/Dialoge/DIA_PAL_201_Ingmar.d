@@ -53,18 +53,18 @@ func void DIA_Ingmar_Hallo_Info ()
 	if (EnterOW_Kapitel2 == FALSE)
 	&& (LordHagen.aivar[AIV_TalkedToPlayer] == TRUE)
 	{ 
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_00"); //Согласно полученным мной сообщениям, Долина Рудников - опасное место.
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_01"); //Позаботься о своем снаряжении, прежде чем отправляться туда.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_00"); //РЎРѕРіР»Р°СЃРЅРѕ РїРѕР»СѓС‡РµРЅРЅС‹Рј РјРЅРѕР№ СЃРѕРѕР±С‰РµРЅРёСЏРј, Р”РѕР»РёРЅР° Р СѓРґРЅРёРєРѕРІ - РѕРїР°СЃРЅРѕРµ РјРµСЃС‚Рѕ.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_01"); //РџРѕР·Р°Р±РѕС‚СЊСЃСЏ Рѕ СЃРІРѕРµРј СЃРЅР°СЂСЏР¶РµРЅРёРё, РїСЂРµР¶РґРµ С‡РµРј РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ С‚СѓРґР°.
 	}
 	else if (MIS_OLDWORLD == LOG_SUCCESS)
 	&& 		(LordHagen.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_02"); //Обстановка в Долине Рудников очень тревожит меня. Но мы разработаем план, чтобы преодолеть все опасности и вытащить наших парней оттуда вместе с рудой.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_02"); //РћР±СЃС‚Р°РЅРѕРІРєР° РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ РѕС‡РµРЅСЊ С‚СЂРµРІРѕР¶РёС‚ РјРµРЅСЏ. РќРѕ РјС‹ СЂР°Р·СЂР°Р±РѕС‚Р°РµРј РїР»Р°РЅ, С‡С‚РѕР±С‹ РїСЂРµРѕРґРѕР»РµС‚СЊ РІСЃРµ РѕРїР°СЃРЅРѕСЃС‚Рё Рё РІС‹С‚Р°С‰РёС‚СЊ РЅР°С€РёС… РїР°СЂРЅРµР№ РѕС‚С‚СѓРґР° РІРјРµСЃС‚Рµ СЃ СЂСѓРґРѕР№.
 		DIA_Ingmar_Hallo_permanent = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_03"); //Я думал, ты пришел поговорить с лордом Хагеном. Так иди же к нему.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_03"); //РЇ РґСѓРјР°Р», С‚С‹ РїСЂРёС€РµР» РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј. РўР°Рє РёРґРё Р¶Рµ Рє РЅРµРјСѓ.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ instance DIA_Ingmar_Krieg		(C_INFO)
 	condition	 = 	DIA_Ingmar_Krieg_Condition;
 	information	 = 	DIA_Ingmar_Krieg_Info;
 	permanent    =  FALSE;
-	description	 =  "Как дела на материке?";
+	description	 =  "РљР°Рє РґРµР»Р° РЅР° РјР°С‚РµСЂРёРєРµ?";
 };
 func int DIA_Ingmar_Krieg_Condition ()
 {	
@@ -88,10 +88,10 @@ func int DIA_Ingmar_Krieg_Condition ()
 };
 func void DIA_Ingmar_Krieg_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_Krieg_15_00"); //Как дела на материке?
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_01"); //Война еще не выиграна, хотя королевские войска уже теснят орков.
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_02"); //Но мелкие отряды орков появляются то здесь, то там, пытаясь рассредоточить нашу армию.
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_03"); //Они сражаются без мужества и без веры, и поэтому в конце концов мы обязательно победим.
+	AI_Output (other, self, "DIA_Ingmar_Krieg_15_00"); //РљР°Рє РґРµР»Р° РЅР° РјР°С‚РµСЂРёРєРµ?
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_01"); //Р’РѕР№РЅР° РµС‰Рµ РЅРµ РІС‹РёРіСЂР°РЅР°, С…РѕС‚СЏ РєРѕСЂРѕР»РµРІСЃРєРёРµ РІРѕР№СЃРєР° СѓР¶Рµ С‚РµСЃРЅСЏС‚ РѕСЂРєРѕРІ.
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_02"); //РќРѕ РјРµР»РєРёРµ РѕС‚СЂСЏРґС‹ РѕСЂРєРѕРІ РїРѕСЏРІР»СЏСЋС‚СЃСЏ С‚Рѕ Р·РґРµСЃСЊ, С‚Рѕ С‚Р°Рј, РїС‹С‚Р°СЏСЃСЊ СЂР°СЃСЃСЂРµРґРѕС‚РѕС‡РёС‚СЊ РЅР°С€Сѓ Р°СЂРјРёСЋ.
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_03"); //РћРЅРё СЃСЂР°Р¶Р°СЋС‚СЃСЏ Р±РµР· РјСѓР¶РµСЃС‚РІР° Рё Р±РµР· РІРµСЂС‹, Рё РїРѕСЌС‚РѕРјСѓ РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ РјС‹ РѕР±СЏР·Р°С‚РµР»СЊРЅРѕ РїРѕР±РµРґРёРј.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -104,7 +104,7 @@ instance DIA_Ingmar_CanTeach		(C_INFO)
 	condition	 = 	DIA_Ingmar_CanTeach_Condition;
 	information	 = 	DIA_Ingmar_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Ты можешь обучить меня?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 
 func int DIA_Ingmar_CanTeach_Condition ()
@@ -116,17 +116,17 @@ func int DIA_Ingmar_CanTeach_Condition ()
 };
 func void DIA_Ingmar_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_CanTeach_15_00"); //Ты можешь научить меня чему-нибудь?
+	AI_Output (other, self, "DIA_Ingmar_CanTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_01"); //Я могу научить тебя как стать сильнее, чтобы ты мог эффективнее действовать своим оружием.
+		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_01"); //РЇ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ РєР°Рє СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ, С‡С‚РѕР±С‹ С‚С‹ РјРѕРі СЌС„С„РµРєС‚РёРІРЅРµРµ РґРµР№СЃС‚РІРѕРІР°С‚СЊ СЃРІРѕРёРј РѕСЂСѓР¶РёРµРј.
 			Ingmar_TeachSTR = TRUE;
-			B_LogEntry (TOPIC_CityTeacher,"Паладин Ингмар может помочь мне стать сильнее.");
+			B_LogEntry (TOPIC_CityTeacher,"РџР°Р»Р°РґРёРЅ РРЅРіРјР°СЂ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_02"); //Я обучаю только последователей нашего ордена.
+		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_02"); //РЇ РѕР±СѓС‡Р°СЋ С‚РѕР»СЊРєРѕ РїРѕСЃР»РµРґРѕРІР°С‚РµР»РµР№ РЅР°С€РµРіРѕ РѕСЂРґРµРЅР°.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -139,7 +139,7 @@ instance DIA_Ingmar_Teach		(C_INFO)
 	condition	 = 	DIA_Ingmar_Teach_Condition;
 	information	 = 	DIA_Ingmar_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу стать сильнее.";
+	description	 = 	"РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.";
 };
 func int DIA_Ingmar_Teach_Condition ()
 {	
@@ -150,7 +150,7 @@ func int DIA_Ingmar_Teach_Condition ()
 };
 func void DIA_Ingmar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_Teach_15_00"); //Я хочу стать сильнее.
+	AI_Output (other, self, "DIA_Ingmar_Teach_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.
 	
 	
 	Info_ClearChoices   (DIA_Ingmar_Teach);
@@ -163,7 +163,7 @@ func void DIA_Ingmar_Teach_BACK()
 {
 	if (other.attribute [ATR_STRENGTH] >= T_MAX)
 	{
-		AI_Output (self, other, "DIA_Ingmar_Teach_06_00"); //Ты и так силен как тролль. Мне нечему учить тебя.
+		AI_Output (self, other, "DIA_Ingmar_Teach_06_00"); //РўС‹ Рё С‚Р°Рє СЃРёР»РµРЅ РєР°Рє С‚СЂРѕР»Р»СЊ. РњРЅРµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 	};
 	Info_ClearChoices (DIA_Ingmar_TEACH);
 };
@@ -271,7 +271,7 @@ instance DIA_Ingmar_ORKELITE		(C_INFO)
 	condition	 = 	DIA_Ingmar_ORKELITE_Condition;
 	information	 = 	DIA_Ingmar_ORKELITE_Info;
 
-	description	 = 	"Орки готовят массированное наступление.";
+	description	 = 	"РћСЂРєРё РіРѕС‚РѕРІСЏС‚ РјР°СЃСЃРёСЂРѕРІР°РЅРЅРѕРµ РЅР°СЃС‚СѓРїР»РµРЅРёРµ.";
 };
 
 func int DIA_Ingmar_ORKELITE_Condition ()
@@ -286,56 +286,56 @@ func int DIA_Ingmar_ORKELITE_Condition ()
 func void DIA_Ingmar_ORKELITE_Info ()
 {
 
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_00"); //Орки готовят массированное наступление.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_01"); //Да ну? Что ж, это очень интересно. А откуда тебе это известно?
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_00"); //РћСЂРєРё РіРѕС‚РѕРІСЏС‚ РјР°СЃСЃРёСЂРѕРІР°РЅРЅРѕРµ РЅР°СЃС‚СѓРїР»РµРЅРёРµ.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_01"); //Р”Р° РЅСѓ? Р§С‚Рѕ Р¶, СЌС‚Рѕ РѕС‡РµРЅСЊ РёРЅС‚РµСЂРµСЃРЅРѕ. Рђ РѕС‚РєСѓРґР° С‚РµР±Рµ СЌС‚Рѕ РёР·РІРµСЃС‚РЅРѕ?
 
 	if (TalkedTo_AntiPaladin == TRUE)
 	{
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_02"); //Я говорил с ними.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_02"); //РЇ РіРѕРІРѕСЂРёР» СЃ РЅРёРјРё.
 	};
 
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_03"); //Их лидеры появились в этой местности.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_04"); //Ммм. Это не похоже на типичную стратегию орков.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_03"); //РС… Р»РёРґРµСЂС‹ РїРѕСЏРІРёР»РёСЃСЊ РІ СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_04"); //РњРјРј. Р­С‚Рѕ РЅРµ РїРѕС…РѕР¶Рµ РЅР° С‚РёРїРёС‡РЅСѓСЋ СЃС‚СЂР°С‚РµРіРёСЋ РѕСЂРєРѕРІ.
 
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Тебе нужно найти способ избавить нас от них.", DIA_Ingmar_ORKELITE_loswerden );
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Что нам делать теперь?", DIA_Ingmar_ORKELITE_wasTun );
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Что это значит?", DIA_Ingmar_ORKELITE_wieso );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "РўРµР±Рµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± РёР·Р±Р°РІРёС‚СЊ РЅР°СЃ РѕС‚ РЅРёС….", DIA_Ingmar_ORKELITE_loswerden );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Р§С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?", DIA_Ingmar_ORKELITE_wasTun );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?", DIA_Ingmar_ORKELITE_wieso );
 
 	Log_CreateTopic (TOPIC_OrcElite, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcElite, LOG_RUNNING);
-	B_LogEntry (TOPIC_OrcElite,"Ингмар был очень заинтересован историей об элитных воинах орков."); 
+	B_LogEntry (TOPIC_OrcElite,"РРЅРіРјР°СЂ Р±С‹Р» РѕС‡РµРЅСЊ Р·Р°РёРЅС‚РµСЂРµСЃРѕРІР°РЅ РёСЃС‚РѕСЂРёРµР№ РѕР± СЌР»РёС‚РЅС‹С… РІРѕРёРЅР°С… РѕСЂРєРѕРІ."); 
 
 	MIS_KillOrkOberst = LOG_RUNNING;
 };
 func void DIA_Ingmar_ORKELITE_loswerden ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_loswerden_15_00"); //Тебе нужно найти способ избавить нас от них.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_loswerden_06_01"); //Было бы неплохо, если бы у нас была более подробная информация. Я пошлю кого-нибудь разведать окрестности.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_loswerden_15_00"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё СЃРїРѕСЃРѕР± РёР·Р±Р°РІРёС‚СЊ РЅР°СЃ РѕС‚ РЅРёС….
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_loswerden_06_01"); //Р‘С‹Р»Рѕ Р±С‹ РЅРµРїР»РѕС…Рѕ, РµСЃР»Рё Р±С‹ Сѓ РЅР°СЃ Р±С‹Р»Р° Р±РѕР»РµРµ РїРѕРґСЂРѕР±РЅР°СЏ РёРЅС„РѕСЂРјР°С†РёСЏ. РЇ РїРѕС€Р»СЋ РєРѕРіРѕ-РЅРёР±СѓРґСЊ СЂР°Р·РІРµРґР°С‚СЊ РѕРєСЂРµСЃС‚РЅРѕСЃС‚Рё.
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
 };
 
 func void DIA_Ingmar_ORKELITE_wieso ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wieso_15_00"); //Что это значит?
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_01"); //Если то, что ты говоришь, правда, это означает, что они надеются ослабить нас изнутри, нанеся удар своими лучшими воинами.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_02"); //Обычно каждую орду орков возглавляет один предводитель. Крайне редко можно встретить двоих или больше вместе.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_03"); //На это есть причина. Их лидеры - ядро их атакующей стратегии, и обычно окружены простыми воинами-орками.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_04"); //Поэтому очень трудно подобраться к кому-нибудь из них, не пробившись через орду не менее чем из 30 воинов.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wieso_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_01"); //Р•СЃР»Рё С‚Рѕ, С‡С‚Рѕ С‚С‹ РіРѕРІРѕСЂРёС€СЊ, РїСЂР°РІРґР°, СЌС‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ РѕРЅРё РЅР°РґРµСЋС‚СЃСЏ РѕСЃР»Р°Р±РёС‚СЊ РЅР°СЃ РёР·РЅСѓС‚СЂРё, РЅР°РЅРµСЃСЏ СѓРґР°СЂ СЃРІРѕРёРјРё Р»СѓС‡С€РёРјРё РІРѕРёРЅР°РјРё.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_02"); //РћР±С‹С‡РЅРѕ РєР°Р¶РґСѓСЋ РѕСЂРґСѓ РѕСЂРєРѕРІ РІРѕР·РіР»Р°РІР»СЏРµС‚ РѕРґРёРЅ РїСЂРµРґРІРѕРґРёС‚РµР»СЊ. РљСЂР°Р№РЅРµ СЂРµРґРєРѕ РјРѕР¶РЅРѕ РІСЃС‚СЂРµС‚РёС‚СЊ РґРІРѕРёС… РёР»Рё Р±РѕР»СЊС€Рµ РІРјРµСЃС‚Рµ.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_03"); //РќР° СЌС‚Рѕ РµСЃС‚СЊ РїСЂРёС‡РёРЅР°. РС… Р»РёРґРµСЂС‹ - СЏРґСЂРѕ РёС… Р°С‚Р°РєСѓСЋС‰РµР№ СЃС‚СЂР°С‚РµРіРёРё, Рё РѕР±С‹С‡РЅРѕ РѕРєСЂСѓР¶РµРЅС‹ РїСЂРѕСЃС‚С‹РјРё РІРѕРёРЅР°РјРё-РѕСЂРєР°РјРё.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_04"); //РџРѕСЌС‚РѕРјСѓ РѕС‡РµРЅСЊ С‚СЂСѓРґРЅРѕ РїРѕРґРѕР±СЂР°С‚СЊСЃСЏ Рє РєРѕРјСѓ-РЅРёР±СѓРґСЊ РёР· РЅРёС…, РЅРµ РїСЂРѕР±РёРІС€РёСЃСЊ С‡РµСЂРµР· РѕСЂРґСѓ РЅРµ РјРµРЅРµРµ С‡РµРј РёР· 30 РІРѕРёРЅРѕРІ.
 	
-	B_LogEntry (TOPIC_OrcElite,"Ингмар сказал, что-то о главе предводителей орков."); 
+	B_LogEntry (TOPIC_OrcElite,"РРЅРіРјР°СЂ СЃРєР°Р·Р°Р», С‡С‚Рѕ-С‚Рѕ Рѕ РіР»Р°РІРµ РїСЂРµРґРІРѕРґРёС‚РµР»РµР№ РѕСЂРєРѕРІ."); 
 };
 
 func void DIA_Ingmar_ORKELITE_wasTun ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wasTun_15_00"); //Что нам делать теперь?
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_01"); //Когда они встречаются в таком количестве, это обычно диверсионная группа, возглавляемая старшим по званию.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_02"); //Этот высокопоставленный предводитель устраивает себе штаб-квартиру в одной из пещер, откуда направляет свои войска в бой.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_03"); //Если бы мы смогли добраться до этого военачальника орков, мы получили бы решающее преимущество.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_04"); //Военачальник орков обычно предпочитает находиться в непосредственной близости от своих врагов. Я бы посоветовал поискать его пещеру где-нибудь неподалеку от города.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_05"); //Несколько орков было замечено у фермы Лобарта. Может быть, тебе попробовать начать поиски именно оттуда?
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wasTun_15_00"); //Р§С‚Рѕ РЅР°Рј РґРµР»Р°С‚СЊ С‚РµРїРµСЂСЊ?
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_01"); //РљРѕРіРґР° РѕРЅРё РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ РІ С‚Р°РєРѕРј РєРѕР»РёС‡РµСЃС‚РІРµ, СЌС‚Рѕ РѕР±С‹С‡РЅРѕ РґРёРІРµСЂСЃРёРѕРЅРЅР°СЏ РіСЂСѓРїРїР°, РІРѕР·РіР»Р°РІР»СЏРµРјР°СЏ СЃС‚Р°СЂС€РёРј РїРѕ Р·РІР°РЅРёСЋ.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_02"); //Р­С‚РѕС‚ РІС‹СЃРѕРєРѕРїРѕСЃС‚Р°РІР»РµРЅРЅС‹Р№ РїСЂРµРґРІРѕРґРёС‚РµР»СЊ СѓСЃС‚СЂР°РёРІР°РµС‚ СЃРµР±Рµ С€С‚Р°Р±-РєРІР°СЂС‚РёСЂСѓ РІ РѕРґРЅРѕР№ РёР· РїРµС‰РµСЂ, РѕС‚РєСѓРґР° РЅР°РїСЂР°РІР»СЏРµС‚ СЃРІРѕРё РІРѕР№СЃРєР° РІ Р±РѕР№.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_03"); //Р•СЃР»Рё Р±С‹ РјС‹ СЃРјРѕРіР»Рё РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЌС‚РѕРіРѕ РІРѕРµРЅР°С‡Р°Р»СЊРЅРёРєР° РѕСЂРєРѕРІ, РјС‹ РїРѕР»СѓС‡РёР»Рё Р±С‹ СЂРµС€Р°СЋС‰РµРµ РїСЂРµРёРјСѓС‰РµСЃС‚РІРѕ.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_04"); //Р’РѕРµРЅР°С‡Р°Р»СЊРЅРёРє РѕСЂРєРѕРІ РѕР±С‹С‡РЅРѕ РїСЂРµРґРїРѕС‡РёС‚Р°РµС‚ РЅР°С…РѕРґРёС‚СЊСЃСЏ РІ РЅРµРїРѕСЃСЂРµРґСЃС‚РІРµРЅРЅРѕР№ Р±Р»РёР·РѕСЃС‚Рё РѕС‚ СЃРІРѕРёС… РІСЂР°РіРѕРІ. РЇ Р±С‹ РїРѕСЃРѕРІРµС‚РѕРІР°Р» РїРѕРёСЃРєР°С‚СЊ РµРіРѕ РїРµС‰РµСЂСѓ РіРґРµ-РЅРёР±СѓРґСЊ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РіРѕСЂРѕРґР°.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_05"); //РќРµСЃРєРѕР»СЊРєРѕ РѕСЂРєРѕРІ Р±С‹Р»Рѕ Р·Р°РјРµС‡РµРЅРѕ Сѓ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°. РњРѕР¶РµС‚ Р±С‹С‚СЊ, С‚РµР±Рµ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РЅР°С‡Р°С‚СЊ РїРѕРёСЃРєРё РёРјРµРЅРЅРѕ РѕС‚С‚СѓРґР°?
 
-	B_LogEntry (TOPIC_OrcElite,"Согласно Ингмару, я должен найти полковника орков в пещере где-то неподалеку от фермы Лобарта. Ингмар хочет, чтобы я нашел и убил его."); 
+	B_LogEntry (TOPIC_OrcElite,"РЎРѕРіР»Р°СЃРЅРѕ РРЅРіРјР°СЂСѓ, СЏ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РїРѕР»РєРѕРІРЅРёРєР° РѕСЂРєРѕРІ РІ РїРµС‰РµСЂРµ РіРґРµ-С‚Рѕ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ С„РµСЂРјС‹ Р›РѕР±Р°СЂС‚Р°. РРЅРіРјР°СЂ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РЅР°С€РµР» Рё СѓР±РёР» РµРіРѕ."); 
 	
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
 };
@@ -351,7 +351,7 @@ instance DIA_Ingmar_HAUPTQUARTIER		(C_INFO)
 	condition	 = 	DIA_Ingmar_HAUPTQUARTIER_Condition;
 	information	 = 	DIA_Ingmar_HAUPTQUARTIER_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Я смог найти штаб-квартиру орков.";
+	description	 = 	"РЇ СЃРјРѕРі РЅР°Р№С‚Рё С€С‚Р°Р±-РєРІР°СЂС‚РёСЂСѓ РѕСЂРєРѕРІ.";
 };
 
 func int DIA_Ingmar_HAUPTQUARTIER_Condition ()
@@ -365,10 +365,10 @@ func int DIA_Ingmar_HAUPTQUARTIER_Condition ()
 
 func void DIA_Ingmar_HAUPTQUARTIER_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_HAUPTQUARTIER_15_00"); //Я смог найти штаб-квартиру орков. Их военачальник пал.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_01"); //Это отличные новости. Теперь орки некоторое время будут пребывать в растерянности.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_02"); //Это неплохо. Если бы у нас было побольше рыцарей вроде тебя, за исход грядущей битвы можно было бы не волноваться.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_03"); //Вот. Возьми это золото. Надеюсь, оно поможет тебе купить хорошее снаряжение.
+	AI_Output (other, self, "DIA_Ingmar_HAUPTQUARTIER_15_00"); //РЇ СЃРјРѕРі РЅР°Р№С‚Рё С€С‚Р°Р±-РєРІР°СЂС‚РёСЂСѓ РѕСЂРєРѕРІ. РС… РІРѕРµРЅР°С‡Р°Р»СЊРЅРёРє РїР°Р».
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_01"); //Р­С‚Рѕ РѕС‚Р»РёС‡РЅС‹Рµ РЅРѕРІРѕСЃС‚Рё. РўРµРїРµСЂСЊ РѕСЂРєРё РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ Р±СѓРґСѓС‚ РїСЂРµР±С‹РІР°С‚СЊ РІ СЂР°СЃС‚РµСЂСЏРЅРЅРѕСЃС‚Рё.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_02"); //Р­С‚Рѕ РЅРµРїР»РѕС…Рѕ. Р•СЃР»Рё Р±С‹ Сѓ РЅР°СЃ Р±С‹Р»Рѕ РїРѕР±РѕР»СЊС€Рµ СЂС‹С†Р°СЂРµР№ РІСЂРѕРґРµ С‚РµР±СЏ, Р·Р° РёСЃС…РѕРґ РіСЂСЏРґСѓС‰РµР№ Р±РёС‚РІС‹ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ Р±С‹ РЅРµ РІРѕР»РЅРѕРІР°С‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_03"); //Р’РѕС‚. Р’РѕР·СЊРјРё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ. РќР°РґРµСЋСЃСЊ, РѕРЅРѕ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РєСѓРїРёС‚СЊ С…РѕСЂРѕС€РµРµ СЃРЅР°СЂСЏР¶РµРЅРёРµ.
 
 	B_GivePlayerXP (XP_KilledOrkOberst);
 	CreateInvItems (self, ItMi_Gold, 300);									
@@ -457,7 +457,7 @@ INSTANCE DIA_Ingmar_PICKPOCKET (C_INFO)
 	condition	= DIA_Ingmar_PICKPOCKET_Condition;
 	information	= DIA_Ingmar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот свиток практически невозможно)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ СЃРІРёС‚РѕРє РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµРІРѕР·РјРѕР¶РЅРѕ)";
 };                       
 
 FUNC INT DIA_Ingmar_PICKPOCKET_Condition()

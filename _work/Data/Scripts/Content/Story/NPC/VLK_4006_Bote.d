@@ -2,7 +2,7 @@
 instance VLK_4006_Bote (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Мальчик на побегушках"; 
+	name 		= "РњР°Р»СЊС‡РёРє РЅР° РїРѕР±РµРіСѓС€РєР°С…"; 
 	guild 		= GIL_VLK;
 	id 			= 4006;
 	voice 		= 6;

@@ -41,7 +41,7 @@ func int DIA_Harad_Hallo_Condition ()
 };
 func void DIA_Harad_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Harad_Hallo_12_00"); //(раздраженно) Что ты хочешь?
+	AI_Output (self, other, "DIA_Harad_Hallo_12_00"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ?
 };
 
 // *****************************************************
@@ -54,7 +54,7 @@ instance DIA_Harad_Arbeit		(C_INFO)
 	condition	= DIA_Harad_Arbeit_Condition;
 	information	= DIA_Harad_Arbeit_Info;
 	permanent   = FALSE;
-	description = "Я ищу работу!";
+	description = "РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ!";
 };
 func int DIA_Harad_Arbeit_Condition ()
 {
@@ -62,21 +62,21 @@ func int DIA_Harad_Arbeit_Condition ()
 };
 func void DIA_Harad_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Arbeit_15_00"); //Я ищу работу!
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_01"); //Хм - мне не помешал бы новый ученик.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_02"); //Брайан скоро закончит свое обучение, а затем покинет город.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_03"); //А ты на что-нибудь годишься?
-	AI_Output (other, self, "DIA_Harad_Arbeit_15_04"); //Если ты имеешь в виду, знаю ли я работу кузнеца ...
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_05"); //Нет. Я о другом.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_06"); //Рано или поздно, придут орки и возьмут город в кольцо. И тогда в расчет будут приниматься только мужчины, способные защищать город.
+	AI_Output (other, self, "DIA_Harad_Arbeit_15_00"); //РЇ РёС‰Сѓ СЂР°Р±РѕС‚Сѓ!
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_01"); //РҐРј - РјРЅРµ РЅРµ РїРѕРјРµС€Р°Р» Р±С‹ РЅРѕРІС‹Р№ СѓС‡РµРЅРёРє.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_02"); //Р‘СЂР°Р№Р°РЅ СЃРєРѕСЂРѕ Р·Р°РєРѕРЅС‡РёС‚ СЃРІРѕРµ РѕР±СѓС‡РµРЅРёРµ, Р° Р·Р°С‚РµРј РїРѕРєРёРЅРµС‚ РіРѕСЂРѕРґ.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_03"); //Рђ С‚С‹ РЅР° С‡С‚Рѕ-РЅРёР±СѓРґСЊ РіРѕРґРёС€СЊСЃСЏ?
+	AI_Output (other, self, "DIA_Harad_Arbeit_15_04"); //Р•СЃР»Рё С‚С‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ, Р·РЅР°СЋ Р»Рё СЏ СЂР°Р±РѕС‚Сѓ РєСѓР·РЅРµС†Р° ...
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_05"); //РќРµС‚. РЇ Рѕ РґСЂСѓРіРѕРј.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_06"); //Р Р°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ, РїСЂРёРґСѓС‚ РѕСЂРєРё Рё РІРѕР·СЊРјСѓС‚ РіРѕСЂРѕРґ РІ РєРѕР»СЊС†Рѕ. Р С‚РѕРіРґР° РІ СЂР°СЃС‡РµС‚ Р±СѓРґСѓС‚ РїСЂРёРЅРёРјР°С‚СЊСЃСЏ С‚РѕР»СЊРєРѕ РјСѓР¶С‡РёРЅС‹, СЃРїРѕСЃРѕР±РЅС‹Рµ Р·Р°С‰РёС‰Р°С‚СЊ РіРѕСЂРѕРґ.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Harad_Arbeit_12_07"); //А я не хочу, чтобы мой ученик опозорил мое имя, сбежав из города вместе с женщинами и никчемными бездельниками, вместо того, чтобы держать оборону вместе с другими мужчинами.
+		AI_Output (self, other, "DIA_Harad_Arbeit_12_07"); //Рђ СЏ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРѕР№ СѓС‡РµРЅРёРє РѕРїРѕР·РѕСЂРёР» РјРѕРµ РёРјСЏ, СЃР±РµР¶Р°РІ РёР· РіРѕСЂРѕРґР° РІРјРµСЃС‚Рµ СЃ Р¶РµРЅС‰РёРЅР°РјРё Рё РЅРёРєС‡РµРјРЅС‹РјРё Р±РµР·РґРµР»СЊРЅРёРєР°РјРё, РІРјРµСЃС‚Рѕ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РґРµСЂР¶Р°С‚СЊ РѕР±РѕСЂРѕРЅСѓ РІРјРµСЃС‚Рµ СЃ РґСЂСѓРіРёРјРё РјСѓР¶С‡РёРЅР°РјРё.
 	};
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling,"Если я смогу убедить Гарада, что я хоть на что-нибудь гожусь,  он примет меня в ученики.");
+	B_LogEntry (TOPIC_Lehrling,"Р•СЃР»Рё СЏ СЃРјРѕРіСѓ СѓР±РµРґРёС‚СЊ Р“Р°СЂР°РґР°, С‡С‚Рѕ СЏ С…РѕС‚СЊ РЅР° С‡С‚Рѕ-РЅРёР±СѓРґСЊ РіРѕР¶СѓСЃСЊ,  РѕРЅ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё.");
 };
 
 // *****************************************************
@@ -89,7 +89,7 @@ instance DIA_Harad_Taugenichts (C_INFO)
 	condition	= DIA_Harad_Taugenichts_Condition;
 	information	= DIA_Harad_Taugenichts_Info;
 	permanent   = FALSE;
-	description = "Я не никчемный!";
+	description = "РЇ РЅРµ РЅРёРєС‡РµРјРЅС‹Р№!";
 };
 func int DIA_Harad_Taugenichts_Condition ()
 {
@@ -100,18 +100,18 @@ func int DIA_Harad_Taugenichts_Condition ()
 };
 func void DIA_Harad_Taugenichts_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Taugenichts_15_00"); //Я не никчемный!
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_01"); //Это громкие слова! А ты можешь подтвердить их такими же громкими делами?
-	AI_Output (other, self, "DIA_Harad_Taugenichts_15_02"); //На что ты намекаешь?
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_03"); //Принеси мне оружие орков.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_04"); //Орков недавно видели около города. Я думаю, тебе не придется искать их слишком долго.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_05"); //Если тебе удастся завалить одного из них, я возьму тебя в ученики.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_06"); //Если, конечно, другие мастера будут согласны.
+	AI_Output (other, self, "DIA_Harad_Taugenichts_15_00"); //РЇ РЅРµ РЅРёРєС‡РµРјРЅС‹Р№!
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_01"); //Р­С‚Рѕ РіСЂРѕРјРєРёРµ СЃР»РѕРІР°! Рђ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРґС‚РІРµСЂРґРёС‚СЊ РёС… С‚Р°РєРёРјРё Р¶Рµ РіСЂРѕРјРєРёРјРё РґРµР»Р°РјРё?
+	AI_Output (other, self, "DIA_Harad_Taugenichts_15_02"); //РќР° С‡С‚Рѕ С‚С‹ РЅР°РјРµРєР°РµС€СЊ?
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_03"); //РџСЂРёРЅРµСЃРё РјРЅРµ РѕСЂСѓР¶РёРµ РѕСЂРєРѕРІ.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_04"); //РћСЂРєРѕРІ РЅРµРґР°РІРЅРѕ РІРёРґРµР»Рё РѕРєРѕР»Рѕ РіРѕСЂРѕРґР°. РЇ РґСѓРјР°СЋ, С‚РµР±Рµ РЅРµ РїСЂРёРґРµС‚СЃСЏ РёСЃРєР°С‚СЊ РёС… СЃР»РёС€РєРѕРј РґРѕР»РіРѕ.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_05"); //Р•СЃР»Рё С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ Р·Р°РІР°Р»РёС‚СЊ РѕРґРЅРѕРіРѕ РёР· РЅРёС…, СЏ РІРѕР·СЊРјСѓ С‚РµР±СЏ РІ СѓС‡РµРЅРёРєРё.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_06"); //Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° Р±СѓРґСѓС‚ СЃРѕРіР»Р°СЃРЅС‹.
 	
 	MIS_Harad_Orc = LOG_RUNNING;
 	Log_CreateTopic(TOPIC_HaradOrk,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HaradOrk,LOG_RUNNING);
-	B_LogEntry (TOPIC_HaradOrk,"Неподалеку от города видели орка. Кузнец Гарад хочет, чтобы я убил его. Оружие орка послужит достаточным доказательством.");
+	B_LogEntry (TOPIC_HaradOrk,"РќРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РіРѕСЂРѕРґР° РІРёРґРµР»Рё РѕСЂРєР°. РљСѓР·РЅРµС† Р“Р°СЂР°Рґ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ СѓР±РёР» РµРіРѕ. РћСЂСѓР¶РёРµ РѕСЂРєР° РїРѕСЃР»СѓР¶РёС‚ РґРѕСЃС‚Р°С‚РѕС‡РЅС‹Рј РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІРѕРј.");
 };
 
 // *****************************************************
@@ -124,7 +124,7 @@ instance DIA_Harad_OrcRunning (C_INFO)
 	condition	= DIA_Harad_OrcRunning_Condition;
 	information	= DIA_Harad_OrcRunning_Info;
 	permanent   = FALSE;
-	description = "Давай еще поговорим об этих орках ...";
+	description = "Р”Р°РІР°Р№ РµС‰Рµ РїРѕРіРѕРІРѕСЂРёРј РѕР± СЌС‚РёС… РѕСЂРєР°С… ...";
 };
 func int DIA_Harad_OrcRunning_Condition ()
 {
@@ -136,26 +136,26 @@ func int DIA_Harad_OrcRunning_Condition ()
 };
 func void DIA_Harad_OrcRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_15_00"); //Давай еще поговорим об этих орках ...
-	AI_Output (self, other, "DIA_Harad_OrcRunning_12_01"); //(отрывисто) Что?
+	AI_Output (other, self, "DIA_Harad_OrcRunning_15_00"); //Р”Р°РІР°Р№ РµС‰Рµ РїРѕРіРѕРІРѕСЂРёРј РѕР± СЌС‚РёС… РѕСЂРєР°С… ...
+	AI_Output (self, other, "DIA_Harad_OrcRunning_12_01"); //(РѕС‚СЂС‹РІРёСЃС‚Рѕ) Р§С‚Рѕ?
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);	
-	Info_AddChoice (DIA_Harad_OrcRunning, "Можешь считать своего орка мертвым!", DIA_Harad_OrcRunning_Done);
-	Info_AddChoice (DIA_Harad_OrcRunning, "Орк это очень серьезный противник ... ...", DIA_Harad_OrcRunning_TooHard);
+	Info_AddChoice (DIA_Harad_OrcRunning, "РњРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ СЃРІРѕРµРіРѕ РѕСЂРєР° РјРµСЂС‚РІС‹Рј!", DIA_Harad_OrcRunning_Done);
+	Info_AddChoice (DIA_Harad_OrcRunning, "РћСЂРє СЌС‚Рѕ РѕС‡РµРЅСЊ СЃРµСЂСЊРµР·РЅС‹Р№ РїСЂРѕС‚РёРІРЅРёРє ... ...", DIA_Harad_OrcRunning_TooHard);
 
 	//AI_Output (self, other, "DIA_Harad_OrcRunning_12_02"); //Ah, ich verstehe schon. Du hast Wichtigeres zu tun. Schon in Ordnung, die Sache hat sich erledigt.
 };
 
 func void DIA_Harad_OrcRunning_TooHard()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_00"); //Но орк это очень серьезный противник ...
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_01"); //Хм - судя по тому, как ты выглядишь, возможно ты прав. У тебя слишком мало мяса на костях. Но это можно поправить.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_02"); //Том не менее, ты должен доказать мне, что у тебя хватит мужества сражаться, если это будет необходимо.
-	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_03"); //А нет ли для меня противника немного поменьше?
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_04"); //Хм - (задумчиво) Хакон, торговец оружием на рыночной площади, сказал мне, что на него напали бандиты несколько дней назад.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_05"); //Эти ублюдки, по слухам, устроили себе логово где-то за восточными воротами.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_06"); //Эти трусливые шакалы не должны быть так уж сильны.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_07"); //Убей этих ублюдков! Всех! Тогда я пойму, что ты не опозоришь наш город.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_00"); //РќРѕ РѕСЂРє СЌС‚Рѕ РѕС‡РµРЅСЊ СЃРµСЂСЊРµР·РЅС‹Р№ РїСЂРѕС‚РёРІРЅРёРє ...
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_01"); //РҐРј - СЃСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє С‚С‹ РІС‹РіР»СЏРґРёС€СЊ, РІРѕР·РјРѕР¶РЅРѕ С‚С‹ РїСЂР°РІ. РЈ С‚РµР±СЏ СЃР»РёС€РєРѕРј РјР°Р»Рѕ РјСЏСЃР° РЅР° РєРѕСЃС‚СЏС…. РќРѕ СЌС‚Рѕ РјРѕР¶РЅРѕ РїРѕРїСЂР°РІРёС‚СЊ.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_02"); //РўРѕРј РЅРµ РјРµРЅРµРµ, С‚С‹ РґРѕР»Р¶РµРЅ РґРѕРєР°Р·Р°С‚СЊ РјРЅРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ С…РІР°С‚РёС‚ РјСѓР¶РµСЃС‚РІР° СЃСЂР°Р¶Р°С‚СЊСЃСЏ, РµСЃР»Рё СЌС‚Рѕ Р±СѓРґРµС‚ РЅРµРѕР±С…РѕРґРёРјРѕ.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_03"); //Рђ РЅРµС‚ Р»Рё РґР»СЏ РјРµРЅСЏ РїСЂРѕС‚РёРІРЅРёРєР° РЅРµРјРЅРѕРіРѕ РїРѕРјРµРЅСЊС€Рµ?
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_04"); //РҐРј - (Р·Р°РґСѓРјС‡РёРІРѕ) РҐР°РєРѕРЅ, С‚РѕСЂРіРѕРІРµС† РѕСЂСѓР¶РёРµРј РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё, СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РЅР° РЅРµРіРѕ РЅР°РїР°Р»Рё Р±Р°РЅРґРёС‚С‹ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№ РЅР°Р·Р°Рґ.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_05"); //Р­С‚Рё СѓР±Р»СЋРґРєРё, РїРѕ СЃР»СѓС…Р°Рј, СѓСЃС‚СЂРѕРёР»Рё СЃРµР±Рµ Р»РѕРіРѕРІРѕ РіРґРµ-С‚Рѕ Р·Р° РІРѕСЃС‚РѕС‡РЅС‹РјРё РІРѕСЂРѕС‚Р°РјРё.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_06"); //Р­С‚Рё С‚СЂСѓСЃР»РёРІС‹Рµ С€Р°РєР°Р»С‹ РЅРµ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ С‚Р°Рє СѓР¶ СЃРёР»СЊРЅС‹.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_07"); //РЈР±РµР№ СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ! Р’СЃРµС…! РўРѕРіРґР° СЏ РїРѕР№РјСѓ, С‡С‚Рѕ С‚С‹ РЅРµ РѕРїРѕР·РѕСЂРёС€СЊ РЅР°С€ РіРѕСЂРѕРґ.
 	
 	Harad_HakonMission = TRUE;
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
@@ -163,11 +163,11 @@ func void DIA_Harad_OrcRunning_TooHard()
 	
 	if (MIS_HakonBandits != LOG_RUNNING)
 	{
-		B_LogEntry (TOPIC_Lehrling, "Гарад сказал мне, что бандиты ограбили торговца Хакона недалеко от города. Если я смогу убить их, это убедит его, что я хоть на что-то гожусь. Я должен поговорить с Хаконом. Возможно, он знает, где скрываются эти бандиты.");
+		B_LogEntry (TOPIC_Lehrling, "Р“Р°СЂР°Рґ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РѕРіСЂР°Р±РёР»Рё С‚РѕСЂРіРѕРІС†Р° РҐР°РєРѕРЅР° РЅРµРґР°Р»РµРєРѕ РѕС‚ РіРѕСЂРѕРґР°. Р•СЃР»Рё СЏ СЃРјРѕРіСѓ СѓР±РёС‚СЊ РёС…, СЌС‚Рѕ СѓР±РµРґРёС‚ РµРіРѕ, С‡С‚Рѕ СЏ С…РѕС‚СЊ РЅР° С‡С‚Рѕ-С‚Рѕ РіРѕР¶СѓСЃСЊ. РЇ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РҐР°РєРѕРЅРѕРј. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ Р·РЅР°РµС‚, РіРґРµ СЃРєСЂС‹РІР°СЋС‚СЃСЏ СЌС‚Рё Р±Р°РЅРґРёС‚С‹.");
 	}
 	else
 	{
-		B_LogEntry (TOPIC_Lehrling, "Гарад сказал мне, что бандиты ограбили торговца Хакона недалеко от города. Если я смогу убить их, это убедит его, что я хоть на что-то гожусь.");
+		B_LogEntry (TOPIC_Lehrling, "Р“Р°СЂР°Рґ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р±Р°РЅРґРёС‚С‹ РѕРіСЂР°Р±РёР»Рё С‚РѕСЂРіРѕРІС†Р° РҐР°РєРѕРЅР° РЅРµРґР°Р»РµРєРѕ РѕС‚ РіРѕСЂРѕРґР°. Р•СЃР»Рё СЏ СЃРјРѕРіСѓ СѓР±РёС‚СЊ РёС…, СЌС‚Рѕ СѓР±РµРґРёС‚ РµРіРѕ, С‡С‚Рѕ СЏ С…РѕС‚СЊ РЅР° С‡С‚Рѕ-С‚Рѕ РіРѕР¶СѓСЃСЊ.");
 	};
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);
@@ -175,8 +175,8 @@ func void DIA_Harad_OrcRunning_TooHard()
 
 func void DIA_Harad_OrcRunning_Done()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_Done_15_00"); //Можешь считать своего орка мертвым!
-	AI_Output (self, other, "DIA_Harad_OrcRunning_Done_12_01"); //Хорошо! Тогда не трать слова попусту. Пусть твои дела сами говорят за себя.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_Done_15_00"); //РњРѕР¶РµС€СЊ СЃС‡РёС‚Р°С‚СЊ СЃРІРѕРµРіРѕ РѕСЂРєР° РјРµСЂС‚РІС‹Рј!
+	AI_Output (self, other, "DIA_Harad_OrcRunning_Done_12_01"); //РҐРѕСЂРѕС€Рѕ! РўРѕРіРґР° РЅРµ С‚СЂР°С‚СЊ СЃР»РѕРІР° РїРѕРїСѓСЃС‚Сѓ. РџСѓСЃС‚СЊ С‚РІРѕРё РґРµР»Р° СЃР°РјРё РіРѕРІРѕСЂСЏС‚ Р·Р° СЃРµР±СЏ.
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);
 };
@@ -191,7 +191,7 @@ instance DIA_Harad_OrcSuccess (C_INFO)
 	condition	= DIA_Harad_OrcSuccess_Condition;
 	information	= DIA_Harad_OrcSuccess_Info;
 	permanent   = FALSE;
-	description = "Я принес тебе оружие орков, как ты хотел.";
+	description = "РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РѕСЂСѓР¶РёРµ РѕСЂРєРѕРІ, РєР°Рє С‚С‹ С…РѕС‚РµР».";
 };
 func int DIA_Harad_OrcSuccess_Condition ()
 {
@@ -209,8 +209,8 @@ func int DIA_Harad_OrcSuccess_Condition ()
 };
 func void DIA_Harad_OrcSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_OrcSuccess_15_00"); //Я принес тебе оружие орков, как ты хотел.
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_01"); //Покажи ...
+	AI_Output (other, self, "DIA_Harad_OrcSuccess_15_00"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ РѕСЂСѓР¶РёРµ РѕСЂРєРѕРІ, РєР°Рє С‚С‹ С…РѕС‚РµР».
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_01"); //РџРѕРєР°Р¶Рё ...
 	
 		if (Npc_HasItems(other, ItMw_2H_OrcAxe_01) > 0)
 		{
@@ -235,29 +235,29 @@ func void DIA_Harad_OrcSuccess_Info ()
 	
 	if (Harad_HakonMission == TRUE)
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_02"); //Ты ВСЕ ЖЕ сделал это?! Ты настоящий мужчина!
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_02"); //РўС‹ Р’РЎР• Р–Р• СЃРґРµР»Р°Р» СЌС‚Рѕ?! РўС‹ РЅР°СЃС‚РѕСЏС‰РёР№ РјСѓР¶С‡РёРЅР°!
 	};
 	
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_03"); //Давно уже не держал я подобного оружия в своих руках - с тех пор как был солдатом во время Войны с Орками.
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_04"); //Да уж, суровые то были времена, скажу я тебе.
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_03"); //Р”Р°РІРЅРѕ СѓР¶Рµ РЅРµ РґРµСЂР¶Р°Р» СЏ РїРѕРґРѕР±РЅРѕРіРѕ РѕСЂСѓР¶РёСЏ РІ СЃРІРѕРёС… СЂСѓРєР°С… - СЃ С‚РµС… РїРѕСЂ РєР°Рє Р±С‹Р» СЃРѕР»РґР°С‚РѕРј РІРѕ РІСЂРµРјСЏ Р’РѕР№РЅС‹ СЃ РћСЂРєР°РјРё.
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_04"); //Р”Р° СѓР¶, СЃСѓСЂРѕРІС‹Рµ С‚Рѕ Р±С‹Р»Рё РІСЂРµРјРµРЅР°, СЃРєР°Р¶Сѓ СЏ С‚РµР±Рµ.
 	
 	if (Player_IsApprentice == APP_Harad)
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_05"); //Я знал, что из тебя получится хороший ученик. Отличная работа!
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_05"); //РЇ Р·РЅР°Р», С‡С‚Рѕ РёР· С‚РµР±СЏ РїРѕР»СѓС‡РёС‚СЃСЏ С…РѕСЂРѕС€РёР№ СѓС‡РµРЅРёРє. РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°!
 	}
 	else if (Player_IsApprentice == APP_NONE) 
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_06"); //Я не думал, что тебе удастся это. Я поражен.
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_06"); //РЇ РЅРµ РґСѓРјР°Р», С‡С‚Рѕ С‚РµР±Рµ СѓРґР°СЃС‚СЃСЏ СЌС‚Рѕ. РЇ РїРѕСЂР°Р¶РµРЅ.
 	}
 	else //anderer Weg
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_07"); //Жаль, только, что ты выбрал другое ремесло.
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_08"); //Ты бы очень пригодился мне.
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_07"); //Р–Р°Р»СЊ, С‚РѕР»СЊРєРѕ, С‡С‚Рѕ С‚С‹ РІС‹Р±СЂР°Р» РґСЂСѓРіРѕРµ СЂРµРјРµСЃР»Рѕ.
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_08"); //РўС‹ Р±С‹ РѕС‡РµРЅСЊ РїСЂРёРіРѕРґРёР»СЃСЏ РјРЅРµ.
 	};
 	
 	MIS_Harad_Orc = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Harad_Orc);
-	B_LogEntry (Topic_Lehrling,"Гарад примет меня в ученики, если я смогу получить одобрение других мастеров.");
+	B_LogEntry (Topic_Lehrling,"Р“Р°СЂР°Рґ РїСЂРёРјРµС‚ РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё, РµСЃР»Рё СЏ СЃРјРѕРіСѓ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ РґСЂСѓРіРёС… РјР°СЃС‚РµСЂРѕРІ.");
 };
 
 // *****************************************************
@@ -273,7 +273,7 @@ instance DIA_Harad_LEHRLING (C_INFO)
 	condition	= DIA_Harad_LEHRLING_Condition;
 	information	= DIA_Harad_LEHRLING_Info;
 	permanent   = TRUE;
-	description = "Когда я могу стать твоим учеником?";
+	description = "РљРѕРіРґР° СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј?";
 };
 func int DIA_Harad_LEHRLING_Condition ()
 {
@@ -288,7 +288,7 @@ func void DIA_Harad_LEHRLING_Info ()
 	var int stimmen;
 	stimmen = 0;
 	
-	AI_Output (other, self, "DIA_Harad_LEHRLING_15_00"); //Когда я могу стать твоим учеником?
+	AI_Output (other, self, "DIA_Harad_LEHRLING_15_00"); //РљРѕРіРґР° СЏ РјРѕРіСѓ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј?
 	
 	if (MIS_Harad_Orc == LOG_SUCCESS)
 	|| ( (MIS_HakonBandits == LOG_SUCCESS) && (Harad_HakonMission == TRUE) )
@@ -296,62 +296,62 @@ func void DIA_Harad_LEHRLING_Info ()
 		// ------ Harad ------
 		if (MIS_Harad_Orc == LOG_SUCCESS)
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_01"); //Нам здесь совсем не помешал бы человек, способный прикончить орка.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_01"); //РќР°Рј Р·РґРµСЃСЊ СЃРѕРІСЃРµРј РЅРµ РїРѕРјРµС€Р°Р» Р±С‹ С‡РµР»РѕРІРµРє, СЃРїРѕСЃРѕР±РЅС‹Р№ РїСЂРёРєРѕРЅС‡РёС‚СЊ РѕСЂРєР°.
 			
 			if (MIS_HakonBandits == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_02"); //Кроме того, Хакон рассказал мне, как ты решил проблему с бандитами. Ты настоящий мужчина!
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_02"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РҐР°РєРѕРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, РєР°Рє С‚С‹ СЂРµС€РёР» РїСЂРѕР±Р»РµРјСѓ СЃ Р±Р°РЅРґРёС‚Р°РјРё. РўС‹ РЅР°СЃС‚РѕСЏС‰РёР№ РјСѓР¶С‡РёРЅР°!
 			};
 		}
 		else //HakonBandits SUCCESS
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_03"); //Ты не убил орка, но Хакон рассказал мне, как ты решил проблему с бандитами. Это хорошо!
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_03"); //РўС‹ РЅРµ СѓР±РёР» РѕСЂРєР°, РЅРѕ РҐР°РєРѕРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, РєР°Рє С‚С‹ СЂРµС€РёР» РїСЂРѕР±Р»РµРјСѓ СЃ Р±Р°РЅРґРёС‚Р°РјРё. Р­С‚Рѕ С…РѕСЂРѕС€Рѕ!
 		};
 		
-		AI_Output (self, other,"DIA_Harad_LEHRLING_12_04"); //Что касается моего мнения, то ты можешь приступать к работе хоть сейчас.
+		AI_Output (self, other,"DIA_Harad_LEHRLING_12_04"); //Р§С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РјРѕРµРіРѕ РјРЅРµРЅРёСЏ, С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёСЃС‚СѓРїР°С‚СЊ Рє СЂР°Р±РѕС‚Рµ С…РѕС‚СЊ СЃРµР№С‡Р°СЃ.
 				
 		stimmen = stimmen + 1;
 		
-		AI_Output (self, other,"DIA_Harad_LEHRLING_12_05"); //А другие мастера ...
+		AI_Output (self, other,"DIA_Harad_LEHRLING_12_05"); //Рђ РґСЂСѓРіРёРµ РјР°СЃС‚РµСЂР° ...
 		
 		// ------ Thorben ------
 		if (Thorben.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_06"); //Торбен дал тебе свое благословение.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_06"); //РўРѕСЂР±РµРЅ РґР°Р» С‚РµР±Рµ СЃРІРѕРµ Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_07"); //Старый добрый Торбен хочет, чтобы ты получил благословение богов. Я думаю, это хорошая идея.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_07"); //РЎС‚Р°СЂС‹Р№ РґРѕР±СЂС‹Р№ РўРѕСЂР±РµРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚С‹ РїРѕР»СѓС‡РёР» Р±Р»Р°РіРѕСЃР»РѕРІРµРЅРёРµ Р±РѕРіРѕРІ. РЇ РґСѓРјР°СЋ, СЌС‚Рѕ С…РѕСЂРѕС€Р°СЏ РёРґРµСЏ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_08"); //Торбен говорит, что никогда не видел тебя.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_08"); //РўРѕСЂР±РµРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С‚РµР±СЏ.
 		};
 		
 		// ------ Bosper ------
 		if (Bosper.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_09"); //Боспер пытался оговорить меня от идеи взять тебя в ученики. Он хочет, чтобы ты стал ЕГО учеником.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_09"); //Р‘РѕСЃРїРµСЂ РїС‹С‚Р°Р»СЃСЏ РѕРіРѕРІРѕСЂРёС‚СЊ РјРµРЅСЏ РѕС‚ РёРґРµРё РІР·СЏС‚СЊ С‚РµР±СЏ РІ СѓС‡РµРЅРёРєРё. РћРЅ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ С‚С‹ СЃС‚Р°Р» Р•Р“Рћ СѓС‡РµРЅРёРєРѕРј.
 			if (MIS_Bosper_Bogen == LOG_SUCCESS)
 			|| (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_10"); //Я имел краткий, но напряженный разговор с ним по этому вопросу.
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_11"); //В конце концов, он согласился.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_10"); //РЇ РёРјРµР» РєСЂР°С‚РєРёР№, РЅРѕ РЅР°РїСЂСЏР¶РµРЅРЅС‹Р№ СЂР°Р·РіРѕРІРѕСЂ СЃ РЅРёРј РїРѕ СЌС‚РѕРјСѓ РІРѕРїСЂРѕСЃСѓ.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_11"); //Р’ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ, РѕРЅ СЃРѕРіР»Р°СЃРёР»СЃСЏ.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_12"); //Он попросил меня, чтобы я дал тебе возможность хотя бы попробовать себя в его ремесле.
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_13"); //Попробуй - ты можешь принять решение чуть позже. Если, конечно, тебе нужен его голос.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_12"); //РћРЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ, С‡С‚РѕР±С‹ СЏ РґР°Р» С‚РµР±Рµ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ С…РѕС‚СЏ Р±С‹ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРµР±СЏ РІ РµРіРѕ СЂРµРјРµСЃР»Рµ.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_13"); //РџРѕРїСЂРѕР±СѓР№ - С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёРЅСЏС‚СЊ СЂРµС€РµРЅРёРµ С‡СѓС‚СЊ РїРѕР·Р¶Рµ. Р•СЃР»Рё, РєРѕРЅРµС‡РЅРѕ, С‚РµР±Рµ РЅСѓР¶РµРЅ РµРіРѕ РіРѕР»РѕСЃ.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_14"); //Боспер пока не знает, кто ты такой.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_14"); //Р‘РѕСЃРїРµСЂ РїРѕРєР° РЅРµ Р·РЅР°РµС‚, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№.
 		};
 		
 		// ------ Constantino ------
@@ -359,18 +359,18 @@ func void DIA_Harad_LEHRLING_Info ()
 		{
 			if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_15"); //Как всегда, Константино ничего не волнует. Он сказал, что с его точки зрения, ты можешь стать моим учеником в любой момент.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_15"); //РљР°Рє РІСЃРµРіРґР°, РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РЅРёС‡РµРіРѕ РЅРµ РІРѕР»РЅСѓРµС‚. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЃ РµРіРѕ С‚РѕС‡РєРё Р·СЂРµРЅРёСЏ, С‚С‹ РјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј РІ Р»СЋР±РѕР№ РјРѕРјРµРЅС‚.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_16"); //Константино говорит, что ты обвиняешься в преступлении в городе - это правда?
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_17"); //Если это так, то тебе нужно уладить эту проблему как можно быстрее!
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_16"); //РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РѕР±РІРёРЅСЏРµС€СЊСЃСЏ РІ РїСЂРµСЃС‚СѓРїР»РµРЅРёРё РІ РіРѕСЂРѕРґРµ - СЌС‚Рѕ РїСЂР°РІРґР°?
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_17"); //Р•СЃР»Рё СЌС‚Рѕ С‚Р°Рє, С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ СѓР»Р°РґРёС‚СЊ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ РєР°Рє РјРѕР¶РЅРѕ Р±С‹СЃС‚СЂРµРµ!
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_18"); //Константино никогда не слышал о тебе.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_18"); //РљРѕРЅСЃС‚Р°РЅС‚РёРЅРѕ РЅРёРєРѕРіРґР° РЅРµ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ.
 		};
 		
 		// ------ Matteo ------
@@ -378,21 +378,21 @@ func void DIA_Harad_LEHRLING_Info ()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_19"); //Маттео говорит, что ты вернул ему его золото. Мне кажется, ты благородный молодой человек.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_19"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РІРµСЂРЅСѓР» РµРјСѓ РµРіРѕ Р·РѕР»РѕС‚Рѕ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ Р±Р»Р°РіРѕСЂРѕРґРЅС‹Р№ РјРѕР»РѕРґРѕР№ С‡РµР»РѕРІРµРє.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_20"); //Маттео говорит, что ты ему что-то должен. Я не знаю, что у вас там за дела, но ты должен урегулировать эту проблему.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_20"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ РµРјСѓ С‡С‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ. РЇ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ Сѓ РІР°СЃ С‚Р°Рј Р·Р° РґРµР»Р°, РЅРѕ С‚С‹ РґРѕР»Р¶РµРЅ СѓСЂРµРіСѓР»РёСЂРѕРІР°С‚СЊ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ.
 			}
 			else	
 			{	
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_21"); //Маттео говорит, что никогда не говорил об этом с тобой.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_21"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РіРѕРІРѕСЂРёР» РѕР± СЌС‚РѕРј СЃ С‚РѕР±РѕР№.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_22"); //Маттео говорит, что никогда не видел тебя в своей лавке.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_22"); //РњР°С‚С‚РµРѕ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» С‚РµР±СЏ РІ СЃРІРѕРµР№ Р»Р°РІРєРµ.
 		};		
 
 		// ------ AUSWERTUNG ------
@@ -400,45 +400,45 @@ func void DIA_Harad_LEHRLING_Info ()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_23"); //Это означает, что ты получил одобрение всех мастеров!
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_23"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёР» РѕРґРѕР±СЂРµРЅРёРµ РІСЃРµС… РјР°СЃС‚РµСЂРѕРІ!
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_24"); //Это означает, что ты получил одобрение четырех мастеров. Этого достаточно, чтобы быть принятым в ученики.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_24"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РїРѕР»СѓС‡РёР» РѕРґРѕР±СЂРµРЅРёРµ С‡РµС‚С‹СЂРµС… РјР°СЃС‚РµСЂРѕРІ. Р­С‚РѕРіРѕ РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РїСЂРёРЅСЏС‚С‹Рј РІ СѓС‡РµРЅРёРєРё.
 			};
 			
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_25"); //Ты готов стать моим учеником?
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_25"); //РўС‹ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ РјРѕРёРј СѓС‡РµРЅРёРєРѕРј?
 			
 			Info_ClearChoices (DIA_Harad_LEHRLING);
-			Info_AddChoice (DIA_Harad_LEHRLING, "Хорошо - я подумаю над этим.", DIA_Harad_LEHRLING_Later);
-			Info_AddChoice (DIA_Harad_LEHRLING, "Я готов стать твоим учеником!", DIA_Harad_LEHRLING_OK);
+			Info_AddChoice (DIA_Harad_LEHRLING, "РҐРѕСЂРѕС€Рѕ - СЏ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.", DIA_Harad_LEHRLING_Later);
+			Info_AddChoice (DIA_Harad_LEHRLING, "РЇ РіРѕС‚РѕРІ СЃС‚Р°С‚СЊ С‚РІРѕРёРј СѓС‡РµРЅРёРєРѕРј!", DIA_Harad_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_26"); //Тебе нужно получить одобрение, по крайней мере, четырех  мастеров. Иначе ты не сможешь стать учеником в нижней части города.
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_27"); //Поэтому ты должен поговорить со всеми мастерами, которые еще не уверены в тебе.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_26"); //РўРµР±Рµ РЅСѓР¶РЅРѕ РїРѕР»СѓС‡РёС‚СЊ РѕРґРѕР±СЂРµРЅРёРµ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‡РµС‚С‹СЂРµС…  РјР°СЃС‚РµСЂРѕРІ. РРЅР°С‡Рµ С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_27"); //РџРѕСЌС‚РѕРјСѓ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РІСЃРµРјРё РјР°СЃС‚РµСЂР°РјРё, РєРѕС‚РѕСЂС‹Рµ РµС‰Рµ РЅРµ СѓРІРµСЂРµРЅС‹ РІ С‚РµР±Рµ.
 		};
 	}
-	else //Mission nicht erfьllt
+	else //Mission nicht erfСЊllt
 	{
-		AI_Output (self, other,"DIA_Harad_LEHRLING_12_28"); //Не раньше, чем докажешь мне, что хоть на что-то годен.
+		AI_Output (self, other,"DIA_Harad_LEHRLING_12_28"); //РќРµ СЂР°РЅСЊС€Рµ, С‡РµРј РґРѕРєР°Р¶РµС€СЊ РјРЅРµ, С‡С‚Рѕ С…РѕС‚СЊ РЅР° С‡С‚Рѕ-С‚Рѕ РіРѕРґРµРЅ.
 	};
 };
 
 func void DIA_Harad_LEHRLING_OK()
 {
-	AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_00"); //Я готов!
-	AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_01"); //Отлично! Я научу тебя ковать хорошие мечи.
+	AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_00"); //РЇ РіРѕС‚РѕРІ!
+	AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_01"); //РћС‚Р»РёС‡РЅРѕ! РЇ РЅР°СѓС‡Сѓ С‚РµР±СЏ РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёРµ РјРµС‡Рё.
 	
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_02"); //Я уже умею это!
-		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_03"); //Что ж. Тем лучше!
+		AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_02"); //РЇ СѓР¶Рµ СѓРјРµСЋ СЌС‚Рѕ!
+		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_03"); //Р§С‚Рѕ Р¶. РўРµРј Р»СѓС‡С€Рµ!
 	};
 	
 	if (other.attribute[ATR_STRENGTH] < (T_MED-30))
 	{
-		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_04"); //Кроме того, пришло время стать немного сильнее. Ты чахнешь прямо у меня на глазах!
+		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_04"); //РљСЂРѕРјРµ С‚РѕРіРѕ, РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ СЃС‚Р°С‚СЊ РЅРµРјРЅРѕРіРѕ СЃРёР»СЊРЅРµРµ. РўС‹ С‡Р°С…РЅРµС€СЊ РїСЂСЏРјРѕ Сѓ РјРµРЅСЏ РЅР° РіР»Р°Р·Р°С…!
 	};
 	Player_IsApprentice = APP_Harad;
 	Npc_ExchangeRoutine (Lothar, "START");
@@ -448,21 +448,21 @@ func void DIA_Harad_LEHRLING_OK()
 	Harad_Lehrling_Day = Wld_GetDay();
 	Wld_AssignRoomToGuild ("schmied", GIL_NONE);
 	MIS_Apprentice = LOG_SUCCESS;
-	B_LogEntry (Topic_Bonus,"Гарад принял меня в ученики. Теперь я смогу попасть в верхний квартал.");
-	B_LogEntry (Topic_Bonus,"Гарад будет покупать оружие, выкованное мной, по хорошей цене.");
+	B_LogEntry (Topic_Bonus,"Р“Р°СЂР°Рґ РїСЂРёРЅСЏР» РјРµРЅСЏ РІ СѓС‡РµРЅРёРєРё. РўРµРїРµСЂСЊ СЏ СЃРјРѕРіСѓ РїРѕРїР°СЃС‚СЊ РІ РІРµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р».");
+	B_LogEntry (Topic_Bonus,"Р“Р°СЂР°Рґ Р±СѓРґРµС‚ РїРѕРєСѓРїР°С‚СЊ РѕСЂСѓР¶РёРµ, РІС‹РєРѕРІР°РЅРЅРѕРµ РјРЅРѕР№, РїРѕ С…РѕСЂРѕС€РµР№ С†РµРЅРµ.");
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_CityTeacher, "Гарад может обучить меня кузнечному делу. Также он может помочь мне стать сильнее.");
+	B_LogEntry (Topic_CityTeacher, "Р“Р°СЂР°Рґ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РєСѓР·РЅРµС‡РЅРѕРјСѓ РґРµР»Сѓ. РўР°РєР¶Рµ РѕРЅ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ.");
 	Info_ClearChoices (DIA_Harad_LEHRLING);
 };
 
 func void DIA_Harad_LEHRLING_Later()
 {
-	AI_Output (other, self, "DIA_Harad_LEHRLING_Later_15_00"); //Хорошо - я подумаю над этим.
+	AI_Output (other, self, "DIA_Harad_LEHRLING_Later_15_00"); //РҐРѕСЂРѕС€Рѕ - СЏ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
 	if (!Npc_IsDead (Brian))
 	{
-		AI_Output (self, other, "DIA_Harad_LEHRLING_Later_12_01"); //Как знаешь. Брайан все равно еще поработает здесь некоторое время.
+		AI_Output (self, other, "DIA_Harad_LEHRLING_Later_12_01"); //РљР°Рє Р·РЅР°РµС€СЊ. Р‘СЂР°Р№Р°РЅ РІСЃРµ СЂР°РІРЅРѕ РµС‰Рµ РїРѕСЂР°Р±РѕС‚Р°РµС‚ Р·РґРµСЃСЊ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ.
 	};
 	Info_ClearChoices (DIA_Harad_LEHRLING);
 };
@@ -477,7 +477,7 @@ instance DIA_Harad_Zustimmung		(C_INFO)
 	condition	 = 	DIA_Harad_Zustimmung_Condition;
 	information	 = 	DIA_Harad_Zustimmung_Info;
 	permanent    =  TRUE;
-	description	 = 	"Могу я стать учеником другого мастера?";
+	description	 = 	"РњРѕРіСѓ СЏ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР°?";
 };
 
 func int DIA_Harad_Zustimmung_Condition ()
@@ -495,33 +495,33 @@ var int DIA_Harad_Zustimmung_Permanent;
 
 func void DIA_Harad_Zustimmung_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Zustimmung_15_00"); //Могу я стать учеником другого мастера?
+	AI_Output (other, self, "DIA_Harad_Zustimmung_15_00"); //РњРѕРіСѓ СЏ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР°?
 	
 	if (MIS_Harad_Orc == LOG_SUCCESS)
 	|| ( (MIS_HakonBandits == LOG_SUCCESS) && (Harad_HakonMission == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_01"); //Ты хороший человек.
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_01"); //РўС‹ С…РѕСЂРѕС€РёР№ С‡РµР»РѕРІРµРє.
 		if (MIS_HakonBandits == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Harad_Zustimmung_12_02"); //Хакон рассказал мне, как ты разделался с бандитами.
+			AI_Output (self, other, "DIA_Harad_Zustimmung_12_02"); //РҐР°РєРѕРЅ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, РєР°Рє С‚С‹ СЂР°Р·РґРµР»Р°Р»СЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё.
 		};
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_03"); //Я дам тебе свое одобрение.
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_03"); //РЇ РґР°Рј С‚РµР±Рµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ.
 		
 		if (DIA_Harad_Zustimmung_Permanent == FALSE)
 		{
 			B_GivePlayerXP (XP_Zustimmung);
 			DIA_Harad_Zustimmung_Permanent = TRUE;
 		};
-		B_LogEntry (Topic_Lehrling,"Гарад даст мне свое одобрение, если я захочу стать учеником другого мастера.");
+		B_LogEntry (Topic_Lehrling,"Р“Р°СЂР°Рґ РґР°СЃС‚ РјРЅРµ СЃРІРѕРµ РѕРґРѕР±СЂРµРЅРёРµ, РµСЃР»Рё СЏ Р·Р°С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СѓС‡РµРЅРёРєРѕРј РґСЂСѓРіРѕРіРѕ РјР°СЃС‚РµСЂР°.");
 		
 		if (!Npc_IsDead(Brian))
 		{
-			AI_Output (self, other, "DIA_Harad_Zustimmung_12_04"); //Брайан еще поработает здесь некоторое время. И я уверен, что рано или поздно найдется крепкий парень, способный заменить его.
+			AI_Output (self, other, "DIA_Harad_Zustimmung_12_04"); //Р‘СЂР°Р№Р°РЅ РµС‰Рµ РїРѕСЂР°Р±РѕС‚Р°РµС‚ Р·РґРµСЃСЊ РЅРµРєРѕС‚РѕСЂРѕРµ РІСЂРµРјСЏ. Р СЏ СѓРІРµСЂРµРЅ, С‡С‚Рѕ СЂР°РЅРѕ РёР»Рё РїРѕР·РґРЅРѕ РЅР°Р№РґРµС‚СЃСЏ РєСЂРµРїРєРёР№ РїР°СЂРµРЅСЊ, СЃРїРѕСЃРѕР±РЅС‹Р№ Р·Р°РјРµРЅРёС‚СЊ РµРіРѕ.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_05"); //Другие мастера могут дать свое согласие на это. Но я дам сое одобрение только после того, как ты докажешь, что хоть на что-то годен!
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_05"); //Р”СЂСѓРіРёРµ РјР°СЃС‚РµСЂР° РјРѕРіСѓС‚ РґР°С‚СЊ СЃРІРѕРµ СЃРѕРіР»Р°СЃРёРµ РЅР° СЌС‚Рѕ. РќРѕ СЏ РґР°Рј СЃРѕРµ РѕРґРѕР±СЂРµРЅРёРµ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє С‚С‹ РґРѕРєР°Р¶РµС€СЊ, С‡С‚Рѕ С…РѕС‚СЊ РЅР° С‡С‚Рѕ-С‚Рѕ РіРѕРґРµРЅ!
 	};
 };
 
@@ -557,9 +557,9 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_MIL)
 	&& (Harad_MILKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_00"); //Ты теперь служишь в ополчении? Я горжусь тобой!
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_01"); //Пока ты служишь в армии, естественно я не могу рассчитывать, что ты будешь выполнять еще и свои обязанности ученика.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_02"); //Но если тебе что-нибудь понадобится, можешь заходить ко мне, когда захочешь.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_00"); //РўС‹ С‚РµРїРµСЂСЊ СЃР»СѓР¶РёС€СЊ РІ РѕРїРѕР»С‡РµРЅРёРё? РЇ РіРѕСЂР¶СѓСЃСЊ С‚РѕР±РѕР№!
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_01"); //РџРѕРєР° С‚С‹ СЃР»СѓР¶РёС€СЊ РІ Р°СЂРјРёРё, РµСЃС‚РµСЃС‚РІРµРЅРЅРѕ СЏ РЅРµ РјРѕРіСѓ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ, С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РІС‹РїРѕР»РЅСЏС‚СЊ РµС‰Рµ Рё СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё СѓС‡РµРЅРёРєР°.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_02"); //РќРѕ РµСЃР»Рё С‚РµР±Рµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ, РјРѕР¶РµС€СЊ Р·Р°С…РѕРґРёС‚СЊ РєРѕ РјРЅРµ, РєРѕРіРґР° Р·Р°С…РѕС‡РµС€СЊ.
 		Harad_MILKommentar = TRUE;
 	}
 	
@@ -567,8 +567,8 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_PAL)
 	&& (Harad_PALKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_03"); //Тебе удалось стать паладином!
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_04"); //Я рад, что когда-то взял тебя в ученики. Даже хотя ты и не проводил много времени за наковальней.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_03"); //РўРµР±Рµ СѓРґР°Р»РѕСЃСЊ СЃС‚Р°С‚СЊ РїР°Р»Р°РґРёРЅРѕРј!
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_04"); //РЇ СЂР°Рґ, С‡С‚Рѕ РєРѕРіРґР°-С‚Рѕ РІР·СЏР» С‚РµР±СЏ РІ СѓС‡РµРЅРёРєРё. Р”Р°Р¶Рµ С…РѕС‚СЏ С‚С‹ Рё РЅРµ РїСЂРѕРІРѕРґРёР» РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё Р·Р° РЅР°РєРѕРІР°Р»СЊРЅРµР№.
 		
 		Harad_PALKommentar = TRUE;
 	}
@@ -578,9 +578,9 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_KDF)
 	&& (Harad_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_05"); //Так ты постригся в монастырь. Я бы предпочел, чтобы ты оставался в городе. Нам нужны сильные люди.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_06"); //Но если ты решил следовать пути Инноса, то так тому и быть.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_07"); //Если тебе будет что-нибудь нужно от меня, я всегда буду рад помочь.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_05"); //РўР°Рє С‚С‹ РїРѕСЃС‚СЂРёРіСЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ. РЇ Р±С‹ РїСЂРµРґРїРѕС‡РµР», С‡С‚РѕР±С‹ С‚С‹ РѕСЃС‚Р°РІР°Р»СЃСЏ РІ РіРѕСЂРѕРґРµ. РќР°Рј РЅСѓР¶РЅС‹ СЃРёР»СЊРЅС‹Рµ Р»СЋРґРё.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_06"); //РќРѕ РµСЃР»Рё С‚С‹ СЂРµС€РёР» СЃР»РµРґРѕРІР°С‚СЊ РїСѓС‚Рё РРЅРЅРѕСЃР°, С‚Рѕ С‚Р°Рє С‚РѕРјСѓ Рё Р±С‹С‚СЊ.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_07"); //Р•СЃР»Рё С‚РµР±Рµ Р±СѓРґРµС‚ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ, СЏ РІСЃРµРіРґР° Р±СѓРґСѓ СЂР°Рґ РїРѕРјРѕС‡СЊ.
 		Harad_INNOSKommentar = TRUE;
 	}
 	
@@ -589,13 +589,13 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_PALKommentar == FALSE)
 	&& (Harad_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_08"); //Давненько тебя не было видно здесь. Где ты был все это время, хм?
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_08"); //Р”Р°РІРЅРµРЅСЊРєРѕ С‚РµР±СЏ РЅРµ Р±С‹Р»Рѕ РІРёРґРЅРѕ Р·РґРµСЃСЊ. Р“РґРµ С‚С‹ Р±С‹Р» РІСЃРµ СЌС‚Рѕ РІСЂРµРјСЏ, С…Рј?
 		Harad_Lehrling_Day = Wld_GetDay();
 	}
 	
 	else
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_09"); //Опять ты ...
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_09"); //РћРїСЏС‚СЊ С‚С‹ ...
 		Harad_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -610,7 +610,7 @@ instance DIA_Harad_Waffen (C_INFO)
 	condition	 = 	DIA_Harad_Waffen_Condition;
 	information	 = 	DIA_Harad_Waffen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ты продаешь оружие?";
+	description	 = 	"РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ?";
 };
 func int DIA_Harad_Waffen_Condition ()
 {	
@@ -621,9 +621,9 @@ func int DIA_Harad_Waffen_Condition ()
 };
 func void DIA_Harad_Waffen_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Waffen_15_00"); //Ты продаешь оружие?
-	AI_Output (self, other, "DIA_Harad_Waffen_12_01"); //Забудь об этом. Все, что я делаю, уходит паладинам или ополчению.
-	AI_Output (self ,other, "DIA_Harad_Add_12_00"); //У меня заказ на 100 мечей от лорда Хагена. Он хочет вооружить городскую стражу.
+	AI_Output (other, self, "DIA_Harad_Waffen_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ РѕСЂСѓР¶РёРµ?
+	AI_Output (self, other, "DIA_Harad_Waffen_12_01"); //Р—Р°Р±СѓРґСЊ РѕР± СЌС‚РѕРј. Р’СЃРµ, С‡С‚Рѕ СЏ РґРµР»Р°СЋ, СѓС…РѕРґРёС‚ РїР°Р»Р°РґРёРЅР°Рј РёР»Рё РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output (self ,other, "DIA_Harad_Add_12_00"); //РЈ РјРµРЅСЏ Р·Р°РєР°Р· РЅР° 100 РјРµС‡РµР№ РѕС‚ Р»РѕСЂРґР° РҐР°РіРµРЅР°. РћРЅ С…РѕС‡РµС‚ РІРѕРѕСЂСѓР¶РёС‚СЊ РіРѕСЂРѕРґСЃРєСѓСЋ СЃС‚СЂР°Р¶Сѓ.
 };
 
 // *****************************************************
@@ -636,7 +636,7 @@ instance DIA_Harad_Aufgaben	(C_INFO)
 	condition	 = 	DIA_Harad_Aufgaben_Condition;
 	information	 = 	DIA_Harad_Aufgaben_Info;
 	permanent    =  FALSE;
-	description	 = 	"Что должен делать ученик?";
+	description	 = 	"Р§С‚Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СѓС‡РµРЅРёРє?";
 };
 
 func int DIA_Harad_Aufgaben_Condition ()
@@ -648,13 +648,13 @@ func int DIA_Harad_Aufgaben_Condition ()
 };
 func void DIA_Harad_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Aufgaben_15_00"); //Что должен делать ученик?
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_01"); //Три вещи. Попробуй угадать.
-	AI_Output (other, self, "DIA_Harad_Aufgaben_15_02"); //Ковать, ковать и ковать?
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_03"); //Ты не так уж бестолков, как кажешься. Я плачу за каждый меч. Если ты не работаешь, то и денег не получаешь. Это просто.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_05"); //Кроме того, я научу тебя всему, что нужно знать для изготовления обычных мечей.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_06"); //Изготовление магических мечей - работа для опытного кузнеца. Тебе до этого еще далеко ...
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_07"); //Если тебе нужно место для сна, ты можешь прилечь где-нибудь в моем доме. Все понятно?
+	AI_Output (other, self, "DIA_Harad_Aufgaben_15_00"); //Р§С‚Рѕ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ СѓС‡РµРЅРёРє?
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_01"); //РўСЂРё РІРµС‰Рё. РџРѕРїСЂРѕР±СѓР№ СѓРіР°РґР°С‚СЊ.
+	AI_Output (other, self, "DIA_Harad_Aufgaben_15_02"); //РљРѕРІР°С‚СЊ, РєРѕРІР°С‚СЊ Рё РєРѕРІР°С‚СЊ?
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_03"); //РўС‹ РЅРµ С‚Р°Рє СѓР¶ Р±РµСЃС‚РѕР»РєРѕРІ, РєР°Рє РєР°Р¶РµС€СЊСЃСЏ. РЇ РїР»Р°С‡Сѓ Р·Р° РєР°Р¶РґС‹Р№ РјРµС‡. Р•СЃР»Рё С‚С‹ РЅРµ СЂР°Р±РѕС‚Р°РµС€СЊ, С‚Рѕ Рё РґРµРЅРµРі РЅРµ РїРѕР»СѓС‡Р°РµС€СЊ. Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_05"); //РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ РЅР°СѓС‡Сѓ С‚РµР±СЏ РІСЃРµРјСѓ, С‡С‚Рѕ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ РґР»СЏ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РѕР±С‹С‡РЅС‹С… РјРµС‡РµР№.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_06"); //РР·РіРѕС‚РѕРІР»РµРЅРёРµ РјР°РіРёС‡РµСЃРєРёС… РјРµС‡РµР№ - СЂР°Р±РѕС‚Р° РґР»СЏ РѕРїС‹С‚РЅРѕРіРѕ РєСѓР·РЅРµС†Р°. РўРµР±Рµ РґРѕ СЌС‚РѕРіРѕ РµС‰Рµ РґР°Р»РµРєРѕ ...
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_07"); //Р•СЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ РјРµСЃС‚Рѕ РґР»СЏ СЃРЅР°, С‚С‹ РјРѕР¶РµС€СЊ РїСЂРёР»РµС‡СЊ РіРґРµ-РЅРёР±СѓРґСЊ РІ РјРѕРµРј РґРѕРјРµ. Р’СЃРµ РїРѕРЅСЏС‚РЅРѕ?
 };
 
 // ************************************************************
@@ -667,7 +667,7 @@ instance DIA_Harad_SellBlades (C_INFO)
 	condition	 = DIA_Harad_SellBlades_Condition;
 	information	 = DIA_Harad_SellBlades_Info;
 	permanent    = TRUE;
-	description	 = "Я хочу продать оружие, выкованное мной.";
+	description	 = "РЇ С…РѕС‡Сѓ РїСЂРѕРґР°С‚СЊ РѕСЂСѓР¶РёРµ, РІС‹РєРѕРІР°РЅРЅРѕРµ РјРЅРѕР№.";
 };
 func int DIA_Harad_SellBlades_Condition ()
 {	
@@ -678,7 +678,7 @@ func int DIA_Harad_SellBlades_Condition ()
 };
 func void DIA_Harad_SellBlades_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_SellBlades_15_00"); //Я хочу продать оружие, выкованное мной.
+	AI_Output (other, self, "DIA_Harad_SellBlades_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРѕРґР°С‚СЊ РѕСЂСѓР¶РёРµ, РІС‹РєРѕРІР°РЅРЅРѕРµ РјРЅРѕР№.
 	
 	var C_ITEM equipWeap; equipWeap = Npc_GetEquippedMeleeWeapon(other);
 	
@@ -703,16 +703,16 @@ func void DIA_Harad_SellBlades_Info ()
 		|| (Hlp_IsItem(equipWeap, ItMw_Rubinklinge) == TRUE)
 		|| (Hlp_IsItem(equipWeap, ItMw_ElBastardo) == TRUE)  
 		{
-			AI_Output (self, other, "DIA_Harad_SellBlades_12_01"); //Все, что у тебя есть - это меч, висящий на поясе. Ты лучше оставь его себе.
+			AI_Output (self, other, "DIA_Harad_SellBlades_12_01"); //Р’СЃРµ, С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ - СЌС‚Рѕ РјРµС‡, РІРёСЃСЏС‰РёР№ РЅР° РїРѕСЏСЃРµ. РўС‹ Р»СѓС‡С€Рµ РѕСЃС‚Р°РІСЊ РµРіРѕ СЃРµР±Рµ.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Harad_SellBlades_12_04"); //Тогда сделай его! Я принимаю только обычные мечи.
+			AI_Output (self, other, "DIA_Harad_SellBlades_12_04"); //РўРѕРіРґР° СЃРґРµР»Р°Р№ РµРіРѕ! РЇ РїСЂРёРЅРёРјР°СЋ С‚РѕР»СЊРєРѕ РѕР±С‹С‡РЅС‹Рµ РјРµС‡Рё.
 		};
 	}
 	else //(gesamt >= 1) - die verbeliebenden Klingen verkaufen ------
 	{
-		AI_Output (self, other, "DIA_Harad_SellBlades_12_02"); //Хорошо - давай сюда.
+		AI_Output (self, other, "DIA_Harad_SellBlades_12_02"); //РҐРѕСЂРѕС€Рѕ - РґР°РІР°Р№ СЃСЋРґР°.
 		
 		Npc_RemoveInvItems (other, ItMw_1H_Common_01, anzahl_common);
 		Npc_RemoveInvItems (other, ItMw_Schwert1, anzahl_Schwert1);
@@ -721,10 +721,10 @@ func void DIA_Harad_SellBlades_Info ()
 		Npc_RemoveInvItems (other, ItMw_ElBastardo, anzahl_ElBastardo);
 		
 				var string concatText;
-				concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben);		// "x Gegenstдnde gegeben"
+				concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben);		// "x GegenstРґnde gegeben"
 				AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 				
-		AI_Output (self, other, "DIA_Harad_SellBlades_12_03"); //Отлично. Держи, что заработал.
+		AI_Output (self, other, "DIA_Harad_SellBlades_12_03"); //РћС‚Р»РёС‡РЅРѕ. Р”РµСЂР¶Рё, С‡С‚Рѕ Р·Р°СЂР°Р±РѕС‚Р°Р».
 		var int lohn;
 		lohn 	= (anzahl_common * Value_Common1)
 				+ (anzahl_schwert1 * Value_Schwert1)
@@ -743,8 +743,8 @@ func void DIA_Harad_SellBlades_Info ()
 // ************************************************************
 func void B_Harad_TeachSmith()
 {
-	AI_Output (self, other, "DIA_Harad_TeachCommon_12_01"); //Это довольно просто, парень. Берешь кусок сырой стали, и держишь его над огнем, пока он не раскалится.
-	AI_Output (self, other, "DIA_Harad_TeachCommon_12_02"); //Потом придаешь клинку форму на наковальне.
+	AI_Output (self, other, "DIA_Harad_TeachCommon_12_01"); //Р­С‚Рѕ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ, РїР°СЂРµРЅСЊ. Р‘РµСЂРµС€СЊ РєСѓСЃРѕРє СЃС‹СЂРѕР№ СЃС‚Р°Р»Рё, Рё РґРµСЂР¶РёС€СЊ РµРіРѕ РЅР°Рґ РѕРіРЅРµРј, РїРѕРєР° РѕРЅ РЅРµ СЂР°СЃРєР°Р»РёС‚СЃСЏ.
+	AI_Output (self, other, "DIA_Harad_TeachCommon_12_02"); //РџРѕС‚РѕРј РїСЂРёРґР°РµС€СЊ РєР»РёРЅРєСѓ С„РѕСЂРјСѓ РЅР° РЅР°РєРѕРІР°Р»СЊРЅРµ.
 };
 // ------------------------------------------------------------
 func void B_HaradSmithChoices()
@@ -773,7 +773,7 @@ func void B_HaradSmithChoices()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice	(DIA_Harad_TeachSmith, B_BuildLearnString("Научиться ковать."	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Harad_TeachSmith_Common);
+		Info_AddChoice	(DIA_Harad_TeachSmith, B_BuildLearnString("РќР°СѓС‡РёС‚СЊСЃСЏ РєРѕРІР°С‚СЊ."	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Harad_TeachSmith_Common);
 	};
 };
 // ------------------------------------------------------------
@@ -784,7 +784,7 @@ instance DIA_Harad_TeachSmith (C_INFO)
 	condition	 = 	DIA_Harad_TeachSmith_Condition;
 	information	 = 	DIA_Harad_TeachSmith_Info;
 	permanent    =  TRUE;
-	description	 = 	"Научи меня ковать хорошие мечи!";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёРµ РјРµС‡Рё!";
 };
 
 func int DIA_Harad_TeachSmith_Condition ()
@@ -803,7 +803,7 @@ func int DIA_Harad_TeachSmith_Condition ()
 };
 func void DIA_Harad_TeachSmith_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_TeachCommon_15_00"); //Научи меня ковать хорошие мечи!
+	AI_Output (other, self, "DIA_Harad_TeachCommon_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ РєРѕРІР°С‚СЊ С…РѕСЂРѕС€РёРµ РјРµС‡Рё!
 	
 	B_HaradSmithChoices();
 };
@@ -816,7 +816,7 @@ func void DIA_Harad_TeachSmith_Common()
 	if B_TeachPlayerTalentSmith (self, other, WEAPON_Common)
 	{
 		B_Harad_TeachSmith();
-		AI_Output (self, other, "DIA_Harad_TeachCommon_12_03"); //Твой первый меч конечно не станет произведением искусства, но всему остальному ты научишься чуть позже.
+		AI_Output (self, other, "DIA_Harad_TeachCommon_12_03"); //РўРІРѕР№ РїРµСЂРІС‹Р№ РјРµС‡ РєРѕРЅРµС‡РЅРѕ РЅРµ СЃС‚Р°РЅРµС‚ РїСЂРѕРёР·РІРµРґРµРЅРёРµРј РёСЃРєСѓСЃСЃС‚РІР°, РЅРѕ РІСЃРµРјСѓ РѕСЃС‚Р°Р»СЊРЅРѕРјСѓ С‚С‹ РЅР°СѓС‡РёС€СЊСЃСЏ С‡СѓС‚СЊ РїРѕР·Р¶Рµ.
 	};
 	
 	B_HaradSmithChoices();
@@ -872,7 +872,7 @@ INSTANCE DIA_Harad_TeachSTR (C_INFO)
 	condition	= DIA_Harad_TeachSTR_Condition;
 	information	= DIA_Harad_TeachSTR_Info;
 	permanent	= 1;
-	description = "Я хочу стать сильнее!";
+	description = "РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ!";
 };                       
 
 FUNC INT DIA_Harad_TeachSTR_Condition()
@@ -885,7 +885,7 @@ FUNC INT DIA_Harad_TeachSTR_Condition()
 
 FUNC VOID DIA_Harad_TeachSTR_Info()
 {	
-	AI_Output (other, self, "DIA_Harad_TeachSTR_15_00"); //Я хочу стать сильнее!
+	AI_Output (other, self, "DIA_Harad_TeachSTR_15_00"); //РЇ С…РѕС‡Сѓ СЃС‚Р°С‚СЊ СЃРёР»СЊРЅРµРµ!
 	
 	Harad_Merke_STR = other.attribute[ATR_STRENGTH];
 	
@@ -899,12 +899,12 @@ func void DIA_Harad_TeachSTR_BACK()
 {
 	if (Harad_Merke_STR < other.attribute[ATR_STRENGTH])
 	{
-		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_01"); //Ты уже нарастил немного мускулов.
+		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_01"); //РўС‹ СѓР¶Рµ РЅР°СЂР°СЃС‚РёР» РЅРµРјРЅРѕРіРѕ РјСѓСЃРєСѓР»РѕРІ.
 	};
 
 	if (other.attribute[ATR_STRENGTH] < T_MED)
 	{
-		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_02"); //Возвращайся, если хочешь поучиться еще.
+		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_02"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РµСЃР»Рё С…РѕС‡РµС€СЊ РїРѕСѓС‡РёС‚СЊСЃСЏ РµС‰Рµ.
 	};
 	
 	Info_ClearChoices	(DIA_Harad_TeachSTR);
@@ -920,7 +920,7 @@ func void DIA_Harad_TeachSTR_1()
 	Info_AddChoice		(DIA_Harad_TeachSTR, B_BuildLearnString(PRINT_LearnSTR5			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_Harad_TeachSTR_5);
 };
 
-// ------ 5 Stдrke ------
+// ------ 5 StРґrke ------
 func void DIA_Harad_TeachSTR_5()
 {
 	B_TeachAttributePoints (self, other, ATR_STRENGTH, 5, T_MED);
@@ -950,7 +950,7 @@ instance DIA_Harad_ImmerNoch (C_INFO)
 	condition	 = 	DIA_Harad_ImmerNoch_Condition;
 	information	 = 	DIA_Harad_ImmerNoch_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ты все еще работаешь на паладинов?";
+	description	 = 	"РўС‹ РІСЃРµ РµС‰Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РїР°Р»Р°РґРёРЅРѕРІ?";
 };
 func int DIA_Harad_ImmerNoch_Condition ()
 {	
@@ -962,11 +962,11 @@ func int DIA_Harad_ImmerNoch_Condition ()
 
 func void DIA_Harad_ImmerNoch_Info ()
 {
-	AI_Output (other, self,"DIA_Harad_Add_15_01"); //Ты все еще работаешь на паладинов?
-	AI_Output (self ,other,"DIA_Harad_Add_12_02"); //Я закончил заказ лорда Хагена.
-	AI_Output (self ,other,"DIA_Harad_Add_12_03"); //Теперь я делаю доля него мечи из магической руды - но на этот раз за плату.
-	AI_Output (self ,other,"DIA_Harad_Add_12_04"); //Но теперь у меня также есть время, чтобы делать оружие для торговцев на рыночной площади.
-	AI_Output (self ,other,"DIA_Harad_Add_12_05"); //Так что если ты ищешь хороший меч, обратись к ним.
+	AI_Output (other, self,"DIA_Harad_Add_15_01"); //РўС‹ РІСЃРµ РµС‰Рµ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° РїР°Р»Р°РґРёРЅРѕРІ?
+	AI_Output (self ,other,"DIA_Harad_Add_12_02"); //РЇ Р·Р°РєРѕРЅС‡РёР» Р·Р°РєР°Р· Р»РѕСЂРґР° РҐР°РіРµРЅР°.
+	AI_Output (self ,other,"DIA_Harad_Add_12_03"); //РўРµРїРµСЂСЊ СЏ РґРµР»Р°СЋ РґРѕР»СЏ РЅРµРіРѕ РјРµС‡Рё РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹ - РЅРѕ РЅР° СЌС‚РѕС‚ СЂР°Р· Р·Р° РїР»Р°С‚Сѓ.
+	AI_Output (self ,other,"DIA_Harad_Add_12_04"); //РќРѕ С‚РµРїРµСЂСЊ Сѓ РјРµРЅСЏ С‚Р°РєР¶Рµ РµСЃС‚СЊ РІСЂРµРјСЏ, С‡С‚РѕР±С‹ РґРµР»Р°С‚СЊ РѕСЂСѓР¶РёРµ РґР»СЏ С‚РѕСЂРіРѕРІС†РµРІ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.
+	AI_Output (self ,other,"DIA_Harad_Add_12_05"); //РўР°Рє С‡С‚Рѕ РµСЃР»Рё С‚С‹ РёС‰РµС€СЊ С…РѕСЂРѕС€РёР№ РјРµС‡, РѕР±СЂР°С‚РёСЃСЊ Рє РЅРёРј.
 };
 
 // *****************************************************
@@ -979,7 +979,7 @@ instance DIA_Harad_AboutErzklingen (C_INFO)
 	condition	 = 	DIA_Harad_AboutErzklingen_Condition;
 	information	 = 	DIA_Harad_AboutErzklingen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Расскажи мне о мечах из магической руды!";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјРµС‡Р°С… РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹!";
 };
 func int DIA_Harad_AboutErzklingen_Condition ()
 {	
@@ -991,14 +991,14 @@ func int DIA_Harad_AboutErzklingen_Condition ()
 
 func void DIA_Harad_AboutErzklingen_Info ()
 {
-	AI_Output (other, self,"DIA_Harad_Add_15_06"); //Расскажи мне о мечах из магической руды!
-	AI_Output (self, other, "DIA_Harad_Waffen_12_02"); //Создание магического меча - очень сложный и дорогой процесс, но в результате получается очень удобный и практически не тупящийся меч.
-	AI_Output (self, other, "DIA_Harad_Waffen_12_03"); //Это очень хороший меч, но все его достоинства раскрываются только в руках паладина.
-	AI_Output (self, other, "DIA_Harad_Waffen_12_04"); //Меч паладина освящается самим Инносом. В результате, он становится зачарованным оружием, наносящим огромный урон врагу!
+	AI_Output (other, self,"DIA_Harad_Add_15_06"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ Рѕ РјРµС‡Р°С… РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹!
+	AI_Output (self, other, "DIA_Harad_Waffen_12_02"); //РЎРѕР·РґР°РЅРёРµ РјР°РіРёС‡РµСЃРєРѕРіРѕ РјРµС‡Р° - РѕС‡РµРЅСЊ СЃР»РѕР¶РЅС‹Р№ Рё РґРѕСЂРѕРіРѕР№ РїСЂРѕС†РµСЃСЃ, РЅРѕ РІ СЂРµР·СѓР»СЊС‚Р°С‚Рµ РїРѕР»СѓС‡Р°РµС‚СЃСЏ РѕС‡РµРЅСЊ СѓРґРѕР±РЅС‹Р№ Рё РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµ С‚СѓРїСЏС‰РёР№СЃСЏ РјРµС‡.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_03"); //Р­С‚Рѕ РѕС‡РµРЅСЊ С…РѕСЂРѕС€РёР№ РјРµС‡, РЅРѕ РІСЃРµ РµРіРѕ РґРѕСЃС‚РѕРёРЅСЃС‚РІР° СЂР°СЃРєСЂС‹РІР°СЋС‚СЃСЏ С‚РѕР»СЊРєРѕ РІ СЂСѓРєР°С… РїР°Р»Р°РґРёРЅР°.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_04"); //РњРµС‡ РїР°Р»Р°РґРёРЅР° РѕСЃРІСЏС‰Р°РµС‚СЃСЏ СЃР°РјРёРј РРЅРЅРѕСЃРѕРј. Р’ СЂРµР·СѓР»СЊС‚Р°С‚Рµ, РѕРЅ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ Р·Р°С‡Р°СЂРѕРІР°РЅРЅС‹Рј РѕСЂСѓР¶РёРµРј, РЅР°РЅРѕСЃСЏС‰РёРј РѕРіСЂРѕРјРЅС‹Р№ СѓСЂРѕРЅ РІСЂР°РіСѓ!
 };
 
 // *****************************************************
-// 					Ich mцchte eine Erzklinge kaufen
+// 					Ich mС†chte eine Erzklinge kaufen
 // *****************************************************
 instance DIA_Harad_Erzklingen (C_INFO)
 {
@@ -1007,7 +1007,7 @@ instance DIA_Harad_Erzklingen (C_INFO)
 	condition	 = 	DIA_Harad_Erzklingen_Condition;
 	information	 = 	DIA_Harad_Erzklingen_Info;
 	permanent    =  TRUE;
-	description	 = 	"Я хочу купить меч из магической руды.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РјРµС‡ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹.";
 };
 func int DIA_Harad_Erzklingen_Condition ()
 {	
@@ -1026,21 +1026,21 @@ var int OreBladeBought;
 
 func void DIA_Harad_Erzklingen_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Erzklingen_15_00"); //Я хочу купить меч из магической руды.
+	AI_Output (other, self, "DIA_Harad_Erzklingen_15_00"); //РЇ С…РѕС‡Сѓ РєСѓРїРёС‚СЊ РјРµС‡ РёР· РјР°РіРёС‡РµСЃРєРѕР№ СЂСѓРґС‹.
 	if (hero.guild != GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_01"); //Я подаю магические мечи только паладинам. И только по одному в одни руки.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_01"); //РЇ РїРѕРґР°СЋ РјР°РіРёС‡РµСЃРєРёРµ РјРµС‡Рё С‚РѕР»СЊРєРѕ РїР°Р»Р°РґРёРЅР°Рј. Р С‚РѕР»СЊРєРѕ РїРѕ РѕРґРЅРѕРјСѓ РІ РѕРґРЅРё СЂСѓРєРё.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_02"); //Вы, паладины, можете считать себя счастливчиками, что вам дозволено владеть такими превосходными мечами.
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_03"); //Согласно декрету лорда Хагена, я могу продать тебе только одно магическое оружие.
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_04"); //Так, что я могу предложить тебе?
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_02"); //Р’С‹, РїР°Р»Р°РґРёРЅС‹, РјРѕР¶РµС‚Рµ СЃС‡РёС‚Р°С‚СЊ СЃРµР±СЏ СЃС‡Р°СЃС‚Р»РёРІС‡РёРєР°РјРё, С‡С‚Рѕ РІР°Рј РґРѕР·РІРѕР»РµРЅРѕ РІР»Р°РґРµС‚СЊ С‚Р°РєРёРјРё РїСЂРµРІРѕСЃС…РѕРґРЅС‹РјРё РјРµС‡Р°РјРё.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_03"); //РЎРѕРіР»Р°СЃРЅРѕ РґРµРєСЂРµС‚Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР°, СЏ РјРѕРіСѓ РїСЂРѕРґР°С‚СЊ С‚РµР±Рµ С‚РѕР»СЊРєРѕ РѕРґРЅРѕ РјР°РіРёС‡РµСЃРєРѕРµ РѕСЂСѓР¶РёРµ.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_04"); //РўР°Рє, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ?
 		
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Двуручный меч (2000 золота)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Одноручный меч (2000 золота)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡ (2000 Р·РѕР»РѕС‚Р°)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"РћРґРЅРѕСЂСѓС‡РЅС‹Р№ РјРµС‡ (2000 Р·РѕР»РѕС‚Р°)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
@@ -1051,12 +1051,12 @@ FUNC VOID DIA_Harad_Erzklingen_Back()
 
 FUNC void B_Harad_NotEnoughGold ()
 {
-	AI_Output (self ,other,"B_Harad_NotEnoughGold_12_00"); //У тебя недостаточно золота.
+	AI_Output (self ,other,"B_Harad_NotEnoughGold_12_00"); //РЈ С‚РµР±СЏ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°.
 };
 
 FUNC VOID B_Harad_HaveFunWithYourSword ()
 {
-	AI_Output (self,other,"B_Harad_HaveGunWithYourSword_12_00"); //Береги свое новое оружие. Оно стоит целое состояние.
+	AI_Output (self,other,"B_Harad_HaveGunWithYourSword_12_00"); //Р‘РµСЂРµРіРё СЃРІРѕРµ РЅРѕРІРѕРµ РѕСЂСѓР¶РёРµ. РћРЅРѕ СЃС‚РѕРёС‚ С†РµР»РѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ.
 	
 	OreBladeBought = TRUE;
 	
@@ -1065,7 +1065,7 @@ FUNC VOID B_Harad_HaveFunWithYourSword ()
 
 FUNC VOID DIA_Harad_Erzklingen_2h()
 {
-	AI_Output (other,self ,"DIA_Harad_Erzklingen_2h_15_00"); //Я возьму двуручный меч!
+	AI_Output (other,self ,"DIA_Harad_Erzklingen_2h_15_00"); //РЇ РІРѕР·СЊРјСѓ РґРІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡!
 	
 	if (Npc_HasItems (other,ItMi_Gold) >= Value_Blessed_2H_1)
 	{
@@ -1080,14 +1080,14 @@ FUNC VOID DIA_Harad_Erzklingen_2h()
 		B_Harad_NotEnoughGold ();
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Двуручный меч (2000 золота)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Одноручный меч (2000 золота)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡ (2000 Р·РѕР»РѕС‚Р°)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"РћРґРЅРѕСЂСѓС‡РЅС‹Р№ РјРµС‡ (2000 Р·РѕР»РѕС‚Р°)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
 FUNC VOID DIA_Harad_Erzklingen_1h()
 {
-	AI_Output (other,self ,"DIA_Harad_Erzklingen_1h_15_00"); //Я возьму одноручный меч!
+	AI_Output (other,self ,"DIA_Harad_Erzklingen_1h_15_00"); //РЇ РІРѕР·СЊРјСѓ РѕРґРЅРѕСЂСѓС‡РЅС‹Р№ РјРµС‡!
 	
 	if (Npc_HasItems (other,ItMi_Gold) >= Value_Blessed_1H_1)
 	{
@@ -1102,8 +1102,8 @@ FUNC VOID DIA_Harad_Erzklingen_1h()
 		B_Harad_NotEnoughGold ();
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Двуручный меч (2000 золота)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Одноручный меч (2000 золота)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Р”РІСѓСЂСѓС‡РЅС‹Р№ РјРµС‡ (2000 Р·РѕР»РѕС‚Р°)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"РћРґРЅРѕСЂСѓС‡РЅС‹Р№ РјРµС‡ (2000 Р·РѕР»РѕС‚Р°)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
@@ -1116,7 +1116,7 @@ FUNC VOID DIA_Harad_Erzklingen_1h()
 //############################
 
 //*********************************************************************
-//	Kannst du auch Schmuckstьcke reparieren?
+//	Kannst du auch SchmuckstСЊcke reparieren?
 //*********************************************************************
 instance DIA_Harad_RepairNecklace		(C_INFO)
 {
@@ -1125,7 +1125,7 @@ instance DIA_Harad_RepairNecklace		(C_INFO)
 	condition	 = 	DIA_Harad_RepairNecklace_Condition;
 	information	 = 	DIA_Harad_RepairNecklace_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты можешь ремонтировать ювелирные изделия?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ СЂРµРјРѕРЅС‚РёСЂРѕРІР°С‚СЊ СЋРІРµР»РёСЂРЅС‹Рµ РёР·РґРµР»РёСЏ?";
 };
 
 func int DIA_Harad_RepairNecklace_Condition ()
@@ -1140,10 +1140,10 @@ func int DIA_Harad_RepairNecklace_Condition ()
 
 func void DIA_Harad_RepairNecklace_Info ()
 {
-	AI_Output (other,self ,"DIA_Harad_RepairNecklace_15_00"); //Ты можешь синить драгоценности?
-	AI_Output (self	,other,"DIA_Harad_RepairNecklace_12_01"); //Я оружейник, а не ювелир. Пожалуй, здесь в городе ты не найдешь никого, кто мог бы помочь тебе.
-	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_02"); //Сейчас мало у кого водятся деньги, и давно уже никому не удавалось разбогатеть здесь.
-	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_03"); //Большинство радо хотя бы тому, что им хватает на хлеб.
+	AI_Output (other,self ,"DIA_Harad_RepairNecklace_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРёРЅРёС‚СЊ РґСЂР°РіРѕС†РµРЅРЅРѕСЃС‚Рё?
+	AI_Output (self	,other,"DIA_Harad_RepairNecklace_12_01"); //РЇ РѕСЂСѓР¶РµР№РЅРёРє, Р° РЅРµ СЋРІРµР»РёСЂ. РџРѕР¶Р°Р»СѓР№, Р·РґРµСЃСЊ РІ РіРѕСЂРѕРґРµ С‚С‹ РЅРµ РЅР°Р№РґРµС€СЊ РЅРёРєРѕРіРѕ, РєС‚Рѕ РјРѕРі Р±С‹ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_02"); //РЎРµР№С‡Р°СЃ РјР°Р»Рѕ Сѓ РєРѕРіРѕ РІРѕРґСЏС‚СЃСЏ РґРµРЅСЊРіРё, Рё РґР°РІРЅРѕ СѓР¶Рµ РЅРёРєРѕРјСѓ РЅРµ СѓРґР°РІР°Р»РѕСЃСЊ СЂР°Р·Р±РѕРіР°С‚РµС‚СЊ Р·РґРµСЃСЊ.
+	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_03"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ СЂР°РґРѕ С…РѕС‚СЏ Р±С‹ С‚РѕРјСѓ, С‡С‚Рѕ РёРј С…РІР°С‚Р°РµС‚ РЅР° С…Р»РµР±.
 	
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE; 	
 };
@@ -1158,7 +1158,7 @@ instance DIA_Harad_Goldsmith		(C_INFO)
 	condition	 = 	DIA_Harad_Goldsmith_Condition;
 	information	 = 	DIA_Harad_Goldsmith_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Где мне найти ювелира?";
+	description	 = 	"Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЋРІРµР»РёСЂР°?";
 };
 
 func int DIA_Harad_Goldsmith_Condition ()
@@ -1171,9 +1171,9 @@ func int DIA_Harad_Goldsmith_Condition ()
 
 func void DIA_Harad_Goldsmith_Info ()
 {
-	AI_Output (other,self ,"DIA_Harad_Goldsmith_15_00"); //Где мне найти ювелира?
-	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_01"); //Я слышал, что у наемников на ферме Онара есть хороший кузнец.
-	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_02"); //Может, тебе стоит поспрашивать там.
+	AI_Output (other,self ,"DIA_Harad_Goldsmith_15_00"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЋРІРµР»РёСЂР°?
+	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_01"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ Сѓ РЅР°РµРјРЅРёРєРѕРІ РЅР° С„РµСЂРјРµ РћРЅР°СЂР° РµСЃС‚СЊ С…РѕСЂРѕС€РёР№ РєСѓР·РЅРµС†.
+	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_02"); //РњРѕР¶РµС‚, С‚РµР±Рµ СЃС‚РѕРёС‚ РїРѕСЃРїСЂР°С€РёРІР°С‚СЊ С‚Р°Рј.
 };
 
 

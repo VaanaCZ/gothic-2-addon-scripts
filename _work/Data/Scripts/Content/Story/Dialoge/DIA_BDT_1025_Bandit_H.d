@@ -41,12 +41,12 @@ func int DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Condition ()
 
 func void DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Info ()
 {
-	AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_00"); //Эй ты, кретин! Ты пришел сюда случайно не за овцой, а?
+	AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_00"); //Р­Р№ С‚С‹, РєСЂРµС‚РёРЅ! РўС‹ РїСЂРёС€РµР» СЃСЋРґР° СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ Р·Р° РѕРІС†РѕР№, Р°?
 
 	if (MIS_Akil_SchafDiebe == 0)
 	{
-		AI_Output			(other, self, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_15_01"); //Овцой? Какой овцой?
-		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //Это хорошо. А теперь проваливай. Здесь тебе нечего делать.
+		AI_Output			(other, self, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_15_01"); //РћРІС†РѕР№? РљР°РєРѕР№ РѕРІС†РѕР№?
+		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№. Р—РґРµСЃСЊ С‚РµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ.
 	};
 };
 
@@ -72,7 +72,7 @@ func int DIA_NAME_BANDIT_SchafKlau_Condition ()
 
 func void DIA_NAME_BANDIT_SchafKlau_Info ()
 {
-	AI_Output			(self, other, "DIA_NAME_BANDIT_SchafKlau_09_00"); //Эй! Я с тобой говорю.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_SchafKlau_09_00"); //Р­Р№! РЇ СЃ С‚РѕР±РѕР№ РіРѕРІРѕСЂСЋ.
 	
 	Info_AddChoice	(DIA_NAME_BANDIT_SchafKlau, DIALOG_ENDE, DIA_NAME_BANDIT_SchafKlau_weiter );
 
@@ -96,7 +96,7 @@ instance DIA_NAME_BANDIT_RUECKDASSCHAFRAUS		(C_INFO)
 	information	 = 	DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Вы украли овцу у фермера Акила.";
+	description	 = 	"Р’С‹ СѓРєСЂР°Р»Рё РѕРІС†Сѓ Сѓ С„РµСЂРјРµСЂР° РђРєРёР»Р°.";
 };
 
 func int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Condition ()
@@ -110,18 +110,18 @@ func int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Condition ()
 var int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_NoPerm;
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_15_00"); //Вы украли овцу у фермера Акила.
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_09_01"); //И что? Что ты будешь делать?
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_15_00"); //Р’С‹ СѓРєСЂР°Р»Рё РѕРІС†Сѓ Сѓ С„РµСЂРјРµСЂР° РђРєРёР»Р°.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_09_01"); //Р С‡С‚Рѕ? Р§С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ РґРµР»Р°С‚СЊ?
 	
 	Info_ClearChoices	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS);
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Ничего. И зачем мне эта тупая овца?", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Отдай мне эту овцу, или в глаз получишь.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "РќРёС‡РµРіРѕ. Р Р·Р°С‡РµРј РјРЅРµ СЌС‚Р° С‚СѓРїР°СЏ РѕРІС†Р°?", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "РћС‚РґР°Р№ РјРЅРµ СЌС‚Сѓ РѕРІС†Сѓ, РёР»Рё РІ РіР»Р°Р· РїРѕР»СѓС‡РёС€СЊ.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
 
 };
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //Отдай мне эту овцу, или в глаз получишь.
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //Тогда берегись, приятель. Сейчас тебе придется несладко.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //РћС‚РґР°Р№ РјРЅРµ СЌС‚Сѓ РѕРІС†Сѓ, РёР»Рё РІ РіР»Р°Р· РїРѕР»СѓС‡РёС€СЊ.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //РўРѕРіРґР° Р±РµСЂРµРіРёСЃСЊ, РїСЂРёСЏС‚РµР»СЊ. РЎРµР№С‡Р°СЃ С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РЅРµСЃР»Р°РґРєРѕ.
 
 	AI_StopProcessInfos (self);
 	DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_NoPerm = TRUE;
@@ -133,8 +133,8 @@ func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //Ничего. И зачем мне эта тупая овца?
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //Тогда не играй меня на нервах. Проваливай!
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //РќРёС‡РµРіРѕ. Р Р·Р°С‡РµРј РјРЅРµ СЌС‚Р° С‚СѓРїР°СЏ РѕРІС†Р°?
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //РўРѕРіРґР° РЅРµ РёРіСЂР°Р№ РјРµРЅСЏ РЅР° РЅРµСЂРІР°С…. РџСЂРѕРІР°Р»РёРІР°Р№!
 	hero.aivar[AIV_LastDistToWP] 	= Npc_GetDistToWP (hero,"NW_FOREST_CAVE1_IN_01");
 	AI_StopProcessInfos (self);
 };

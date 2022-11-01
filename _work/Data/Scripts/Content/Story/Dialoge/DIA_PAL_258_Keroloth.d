@@ -48,8 +48,8 @@ FUNC INT DIA_Keroloth_HELLO_Condition()
  
 FUNC VOID DIA_Keroloth_HELLO_Info()
 {	
-	AI_Output	(other ,self,"DIA_Keroloth_HELLO_15_00"); //Ты тренируешь людей?
-	AI_Output	(self ,other,"DIA_Keroloth_HELLO_07_01"); //Да. Когда эти орки или, что еще хуже, драконы, нападут опять, нам понадобится каждый меч.
+	AI_Output	(other ,self,"DIA_Keroloth_HELLO_15_00"); //РўС‹ С‚СЂРµРЅРёСЂСѓРµС€СЊ Р»СЋРґРµР№?
+	AI_Output	(self ,other,"DIA_Keroloth_HELLO_07_01"); //Р”Р°. РљРѕРіРґР° СЌС‚Рё РѕСЂРєРё РёР»Рё, С‡С‚Рѕ РµС‰Рµ С…СѓР¶Рµ, РґСЂР°РєРѕРЅС‹, РЅР°РїР°РґСѓС‚ РѕРїСЏС‚СЊ, РЅР°Рј РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РєР°Р¶РґС‹Р№ РјРµС‡.
 };
 //***********************************************
 //	Kannst DU mir was beibringen
@@ -62,7 +62,7 @@ INSTANCE DIA_Keroloth_WantTeach(C_INFO)
 	condition	= DIA_Keroloth_WantTeach_Condition;
 	information	= DIA_Keroloth_WantTeach_Info;
 	permanent	= FALSE;
-	description = "Ты можешь обучить и меня?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ Рё РјРµРЅСЏ?";
 };                       
 
 FUNC INT DIA_Keroloth_WantTeach_Condition()
@@ -75,17 +75,17 @@ FUNC INT DIA_Keroloth_WantTeach_Condition()
  
 FUNC VOID DIA_Keroloth_WantTeach_Info()
 {	
-	AI_Output 	(other,self ,"DIA_Keroloth_WantTeach_15_00"); //Ты можешь обучить и меня?
-	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_01"); //Конечно. Я тренирую всех.
-	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_02"); //Но кроме таланта тебе понадобится хорошее оружие, если ты хочешь выжить здесь.
-	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_03"); //Обратись к рыцарю Тандору. Он снарядит тебя.
+	AI_Output 	(other,self ,"DIA_Keroloth_WantTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ Рё РјРµРЅСЏ?
+	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_01"); //РљРѕРЅРµС‡РЅРѕ. РЇ С‚СЂРµРЅРёСЂСѓСЋ РІСЃРµС….
+	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_02"); //РќРѕ РєСЂРѕРјРµ С‚Р°Р»Р°РЅС‚Р° С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ, РµСЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РІС‹Р¶РёС‚СЊ Р·РґРµСЃСЊ.
+	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_03"); //РћР±СЂР°С‚РёСЃСЊ Рє СЂС‹С†Р°СЂСЋ РўР°РЅРґРѕСЂСѓ. РћРЅ СЃРЅР°СЂСЏРґРёС‚ С‚РµР±СЏ.
 		
 	Keroloth_TeachPlayer = TRUE;
 	Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Teacher_OC,"Керолот тренирует мечников в замке.");
+	B_LogEntry (TOPIC_Teacher_OC,"РљРµСЂРѕР»РѕС‚ С‚СЂРµРЅРёСЂСѓРµС‚ РјРµС‡РЅРёРєРѕРІ РІ Р·Р°РјРєРµ.");
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Тандор продает оружие в замке.");
+	B_LogEntry (TOPIC_Trader_OC,"РўР°РЅРґРѕСЂ РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ РІ Р·Р°РјРєРµ.");
 };
 //***********************************************
 //	Kampflehrer EINHAND
@@ -98,7 +98,7 @@ INSTANCE DIA_Keroloth_Teacher(C_INFO)
 	condition	= DIA_Keroloth_Teacher_Condition;
 	information	= DIA_Keroloth_Teacher_Info;
 	permanent	= TRUE;
-	description = "(Изучить бой одноручным оружием)";
+	description = "(РР·СѓС‡РёС‚СЊ Р±РѕР№ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј)";
 };                       
 
 FUNC INT DIA_Keroloth_Teacher_Condition()
@@ -112,7 +112,7 @@ FUNC INT DIA_Keroloth_Teacher_Condition()
  
 FUNC VOID DIA_Keroloth_Teacher_Info()
 {	
-	AI_Output 	(other,self ,"DIA_Keroloth_Teacher_15_00"); //Я хочу тренироваться!
+	AI_Output 	(other,self ,"DIA_Keroloth_Teacher_15_00"); //РЇ С…РѕС‡Сѓ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ!
 	
 	Info_ClearChoices 	(DIA_Keroloth_Teacher);
 	Info_AddChoice 		(DIA_Keroloth_Teacher,DIALOG_BACK,DIA_Keroloth_Teacher_Back);
@@ -127,12 +127,12 @@ FUNC VOID DIA_Keroloth_Teacher_Back ()
 
 FUNC VOID B_Keroloth_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Keroloth_TeachNoMore1_07_00"); //Ты очень хорош. Мне больше нечему учить тебя.
+	AI_Output(self,other,"B_Keroloth_TeachNoMore1_07_00"); //РўС‹ РѕС‡РµРЅСЊ С…РѕСЂРѕС€. РњРЅРµ Р±РѕР»СЊС€Рµ РЅРµС‡РµРјСѓ СѓС‡РёС‚СЊ С‚РµР±СЏ.
 };
 
 FUNC VOID B_Keroloth_TeachNoMore2 ()
 {
-	AI_Output(self,other,"B_Keroloth_TeachNoMore2_07_00"); //Только очень опытный мечник сможет помочь тебе теперь.
+	AI_Output(self,other,"B_Keroloth_TeachNoMore2_07_00"); //РўРѕР»СЊРєРѕ РѕС‡РµРЅСЊ РѕРїС‹С‚РЅС‹Р№ РјРµС‡РЅРёРє СЃРјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ С‚РµР±Рµ С‚РµРїРµСЂСЊ.
 };
 
 FUNC VOID DIA_Keroloth_Teacher_1H_1 ()
@@ -176,7 +176,7 @@ INSTANCE DIA_Keroloth_Teach(C_INFO)
 	condition	= DIA_Keroloth_Teach_Condition;
 	information	= DIA_Keroloth_Teach_Info;
 	permanent	= TRUE;
-	description = "(Изучить бой двуручным оружием)";
+	description = "(РР·СѓС‡РёС‚СЊ Р±РѕР№ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј)";
 };                       
 //----------------------------------
 var int DIA_Keroloth_Teach_permanent;
@@ -194,7 +194,7 @@ FUNC INT DIA_Keroloth_Teach_Condition()
  
 FUNC VOID DIA_Keroloth_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Keroloth_Teach_15_00"); //Начнем.
+	AI_Output (other,self ,"DIA_Keroloth_Teach_15_00"); //РќР°С‡РЅРµРј.
 	
 	Info_ClearChoices 	(DIA_Keroloth_Teach);
 	Info_AddChoice 		(DIA_Keroloth_Teach,	DIALOG_BACK		,DIA_Keroloth_Teach_Back);
@@ -243,7 +243,7 @@ INSTANCE DIA_Keroloth_Udar(C_INFO)
 	condition	= DIA_Keroloth_Udar_Condition;
 	information	= DIA_Keroloth_Udar_Info;
 	permanent	= FALSE;
-	description = "Что насчет дальнего боя?";
+	description = "Р§С‚Рѕ РЅР°СЃС‡РµС‚ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ?";
 };                       
 
 FUNC INT DIA_Keroloth_Udar_Condition()
@@ -257,14 +257,14 @@ FUNC INT DIA_Keroloth_Udar_Condition()
  
 FUNC VOID DIA_Keroloth_Udar_Info()
 {	
-	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_00"); //Что насчет дальнего боя?
-	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_01"); //Что насчет него?
-	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_02"); //Ты можешь обучить меня ему?
-	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_03"); //Нет, но ты можешь попросить Удара. Он хороший - нет, он ЛУЧШИЙ арбалетчик, насколько я знаю.
+	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РґР°Р»СЊРЅРµРіРѕ Р±РѕСЏ?
+	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_01"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РЅРµРіРѕ?
+	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_02"); //РўС‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РµРјСѓ?
+	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_03"); //РќРµС‚, РЅРѕ С‚С‹ РјРѕР¶РµС€СЊ РїРѕРїСЂРѕСЃРёС‚СЊ РЈРґР°СЂР°. РћРЅ С…РѕСЂРѕС€РёР№ - РЅРµС‚, РѕРЅ Р›РЈР§РЁРР™ Р°СЂР±Р°Р»РµС‚С‡РёРє, РЅР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ.
 	
 	
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Удар, из замка Долины рудников, знает все об арбалетах.");
+	B_LogEntry		(TOPIC_Teacher_OC, "РЈРґР°СЂ, РёР· Р·Р°РјРєР° Р”РѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ, Р·РЅР°РµС‚ РІСЃРµ РѕР± Р°СЂР±Р°Р»РµС‚Р°С….");
 };
 //#####################################################################
 //##
@@ -343,7 +343,7 @@ instance DIA_Keroloth_KAP4_HELLO		(C_INFO)
 	condition	 = 	DIA_Keroloth_KAP4_HELLO_Condition;
 	information	 = 	DIA_Keroloth_KAP4_HELLO_Info;
 
-	description	 = 	"У тебя такой расстроенный вид.";
+	description	 = 	"РЈ С‚РµР±СЏ С‚Р°РєРѕР№ СЂР°СЃСЃС‚СЂРѕРµРЅРЅС‹Р№ РІРёРґ.";
 };
 
 func int DIA_Keroloth_KAP4_HELLO_Condition ()
@@ -356,14 +356,14 @@ func int DIA_Keroloth_KAP4_HELLO_Condition ()
 
 func void DIA_Keroloth_KAP4_HELLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_15_00"); //У тебя такой расстроенный вид.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_01"); //(возбужденно) Будь они прокляты. Мой тебе совет: глаз не спускай со своих вещей.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_02"); //Чуть отвернешься, и все - вещички уже увели. Вот подонки!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_15_00"); //РЈ С‚РµР±СЏ С‚Р°РєРѕР№ СЂР°СЃСЃС‚СЂРѕРµРЅРЅС‹Р№ РІРёРґ.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_01"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) Р‘СѓРґСЊ РѕРЅРё РїСЂРѕРєР»СЏС‚С‹. РњРѕР№ С‚РµР±Рµ СЃРѕРІРµС‚: РіР»Р°Р· РЅРµ СЃРїСѓСЃРєР°Р№ СЃРѕ СЃРІРѕРёС… РІРµС‰РµР№.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_02"); //Р§СѓС‚СЊ РѕС‚РІРµСЂРЅРµС€СЊСЃСЏ, Рё РІСЃРµ - РІРµС‰РёС‡РєРё СѓР¶Рµ СѓРІРµР»Рё. Р’РѕС‚ РїРѕРґРѕРЅРєРё!
 
 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, DIALOG_BACK, DIA_Keroloth_KAP4_HELLO_ende );
-	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Паладин не должен так просто выходить из себя.", DIA_Keroloth_KAP4_HELLO_ruhig );
- 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "У тебя что-то украли?", DIA_Keroloth_KAP4_HELLO_bestohlen );
-	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Что за подонки?", DIA_Keroloth_KAP4_HELLO_pack );
+	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "РџР°Р»Р°РґРёРЅ РЅРµ РґРѕР»Р¶РµРЅ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РІС‹С…РѕРґРёС‚СЊ РёР· СЃРµР±СЏ.", DIA_Keroloth_KAP4_HELLO_ruhig );
+ 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "РЈ С‚РµР±СЏ С‡С‚Рѕ-С‚Рѕ СѓРєСЂР°Р»Рё?", DIA_Keroloth_KAP4_HELLO_bestohlen );
+	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Р§С‚Рѕ Р·Р° РїРѕРґРѕРЅРєРё?", DIA_Keroloth_KAP4_HELLO_pack );
 
 
 };
@@ -374,23 +374,23 @@ func void DIA_Keroloth_KAP4_HELLO_ende ()
 
 func void DIA_Keroloth_KAP4_HELLO_bestohlen ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_15_00"); //У тебя что-то украли?
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_01"); //Нет. Они положили 20 золотых в мой карман. Конечно же, меня обокрали, ты, идиот!
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_02"); //Ничего, когда я доберусь до этой сволочи...
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_15_00"); //РЈ С‚РµР±СЏ С‡С‚Рѕ-С‚Рѕ СѓРєСЂР°Р»Рё?
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_01"); //РќРµС‚. РћРЅРё РїРѕР»РѕР¶РёР»Рё 20 Р·РѕР»РѕС‚С‹С… РІ РјРѕР№ РєР°СЂРјР°РЅ. РљРѕРЅРµС‡РЅРѕ Р¶Рµ, РјРµРЅСЏ РѕР±РѕРєСЂР°Р»Рё, С‚С‹, РёРґРёРѕС‚!
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_02"); //РќРёС‡РµРіРѕ, РєРѕРіРґР° СЏ РґРѕР±РµСЂСѓСЃСЊ РґРѕ СЌС‚РѕР№ СЃРІРѕР»РѕС‡Рё...
 
-	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Так что у тебя пропало?", DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt );
+	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "РўР°Рє С‡С‚Рѕ Сѓ С‚РµР±СЏ РїСЂРѕРїР°Р»Рѕ?", DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt );
 };
 func void DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_00"); //Так что у тебя пропало?
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_01"); //Мой кошелек, со всеми моими сбережениями.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_02"); //Его украли!
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_03"); //Он где-нибудь всплывет.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_04"); //Когда я доберусь до него...
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_00"); //РўР°Рє С‡С‚Рѕ Сѓ С‚РµР±СЏ РїСЂРѕРїР°Р»Рѕ?
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_01"); //РњРѕР№ РєРѕС€РµР»РµРє, СЃРѕ РІСЃРµРјРё РјРѕРёРјРё СЃР±РµСЂРµР¶РµРЅРёСЏРјРё.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_02"); //Р•РіРѕ СѓРєСЂР°Р»Рё!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_03"); //РћРЅ РіРґРµ-РЅРёР±СѓРґСЊ РІСЃРїР»С‹РІРµС‚.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_04"); //РљРѕРіРґР° СЏ РґРѕР±РµСЂСѓСЃСЊ РґРѕ РЅРµРіРѕ...
 
 	Log_CreateTopic (TOPIC_KerolothsGeldbeutel, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KerolothsGeldbeutel, LOG_RUNNING);
-	B_LogEntry (TOPIC_KerolothsGeldbeutel,"Паладин Керолот потерял свой кошелек. Он утверждает, что его украли охотники на драконов."); 
+	B_LogEntry (TOPIC_KerolothsGeldbeutel,"РџР°Р»Р°РґРёРЅ РљРµСЂРѕР»РѕС‚ РїРѕС‚РµСЂСЏР» СЃРІРѕР№ РєРѕС€РµР»РµРє. РћРЅ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ РµРіРѕ СѓРєСЂР°Р»Рё РѕС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ."); 
 
 
 	Info_ClearChoices	(DIA_Keroloth_KAP4_HELLO);
@@ -398,24 +398,24 @@ func void DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt ()
 
 func void DIA_Keroloth_KAP4_HELLO_pack ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_pack_15_00"); //Что за подонки?
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_pack_15_00"); //Р§С‚Рѕ Р·Р° РїРѕРґРѕРЅРєРё?
 	
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_01"); //Вы, оборванцы, охотники на драконов, конечно. Кто еще?
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_01"); //Р’С‹, РѕР±РѕСЂРІР°РЅС†С‹, РѕС…РѕС‚РЅРёРєРё РЅР° РґСЂР°РєРѕРЅРѕРІ, РєРѕРЅРµС‡РЅРѕ. РљС‚Рѕ РµС‰Рµ?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_02"); //Этот сброд, называющий себя охотниками на драконов, конечно. А кого еще, как ты думаешь, я могу иметь в виду?
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_02"); //Р­С‚РѕС‚ СЃР±СЂРѕРґ, РЅР°Р·С‹РІР°СЋС‰РёР№ СЃРµР±СЏ РѕС…РѕС‚РЅРёРєР°РјРё РЅР° РґСЂР°РєРѕРЅРѕРІ, РєРѕРЅРµС‡РЅРѕ. Рђ РєРѕРіРѕ РµС‰Рµ, РєР°Рє С‚С‹ РґСѓРјР°РµС€СЊ, СЏ РјРѕРіСѓ РёРјРµС‚СЊ РІ РІРёРґСѓ?
 		};
 		
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_03"); //(себе под нос) Нужно быть бдительным, это я тебе говорю.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_03"); //(СЃРµР±Рµ РїРѕРґ РЅРѕСЃ) РќСѓР¶РЅРѕ Р±С‹С‚СЊ Р±РґРёС‚РµР»СЊРЅС‹Рј, СЌС‚Рѕ СЏ С‚РµР±Рµ РіРѕРІРѕСЂСЋ.
 };
 
 func void DIA_Keroloth_KAP4_HELLO_ruhig ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_ruhig_15_00"); //Успокойся! Паладин не должен так просто выходить из себя.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_ruhig_07_01"); //Но я не хочу успокаиваться. Это были все мои сбережения, черт!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_ruhig_15_00"); //РЈСЃРїРѕРєРѕР№СЃСЏ! РџР°Р»Р°РґРёРЅ РЅРµ РґРѕР»Р¶РµРЅ С‚Р°Рє РїСЂРѕСЃС‚Рѕ РІС‹С…РѕРґРёС‚СЊ РёР· СЃРµР±СЏ.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_ruhig_07_01"); //РќРѕ СЏ РЅРµ С…РѕС‡Сѓ СѓСЃРїРѕРєР°РёРІР°С‚СЊСЃСЏ. Р­С‚Рѕ Р±С‹Р»Рё РІСЃРµ РјРѕРё СЃР±РµСЂРµР¶РµРЅРёСЏ, С‡РµСЂС‚!
 };
 
 
@@ -429,7 +429,7 @@ instance DIA_Keroloth_KAP4_GELDGEFUNDEN		(C_INFO)
 	condition	 = 	DIA_Keroloth_KAP4_GELDGEFUNDEN_Condition;
 	information	 = 	DIA_Keroloth_KAP4_GELDGEFUNDEN_Info;
 
-	description	 = 	"Я думаю, я нашел твой кошелек.";
+	description	 = 	"РЇ РґСѓРјР°СЋ, СЏ РЅР°С€РµР» С‚РІРѕР№ РєРѕС€РµР»РµРє.";
 };
 
 func int DIA_Keroloth_KAP4_GELDGEFUNDEN_Condition ()
@@ -446,51 +446,51 @@ func int DIA_Keroloth_KAP4_GELDGEFUNDEN_Condition ()
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_15_00"); //Я думаю, я нашел твой кошелек.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_15_00"); //РЇ РґСѓРјР°СЋ, СЏ РЅР°С€РµР» С‚РІРѕР№ РєРѕС€РµР»РµРє.
 	TOPIC_END_KerolothsGeldbeutel = TRUE;
 	B_GivePlayerXP (XP_KerolothsGeldbeutel);
 	if (B_GiveInvItems (other, self, ItMi_KerolothsGeldbeutelLeer_MIS,1))
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_01"); //Кошелек пуст. Какая свинья сделала это?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_01"); //РљРѕС€РµР»РµРє РїСѓСЃС‚. РљР°РєР°СЏ СЃРІРёРЅСЊСЏ СЃРґРµР»Р°Р»Р° СЌС‚Рѕ?
 	
 		Keroloths_BeutelLeer = TRUE;
 	};
 	if (B_GiveInvItems (other, self, ItMi_KerolothsGeldbeutel_MIS,1))
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_02"); //Что? Где? Какой ублюдок сделал это?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_02"); //Р§С‚Рѕ? Р“РґРµ? РљР°РєРѕР№ СѓР±Р»СЋРґРѕРє СЃРґРµР»Р°Р» СЌС‚Рѕ?
 	};
 	
 	if (hero.guild == GIL_DJG)
 	{
-		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Минутку. А как насчет награды?", DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn );
+		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "РњРёРЅСѓС‚РєСѓ. Рђ РєР°Рє РЅР°СЃС‡РµС‚ РЅР°РіСЂР°РґС‹?", DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn );
 	};
 
-	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Он был вон там, у кузницы.", DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede );
-	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Я подозреваю одного охотника на драконов.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
-	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Откуда мне знать?", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung);
+	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "РћРЅ Р±С‹Р» РІРѕРЅ С‚Р°Рј, Сѓ РєСѓР·РЅРёС†С‹.", DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede );
+	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "РЇ РїРѕРґРѕР·СЂРµРІР°СЋ РѕРґРЅРѕРіРѕ РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
+	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ?", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung);
 };
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_15_00"); //Откуда мне знать?
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_15_00"); //РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ?
 
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_01"); //Ты пытаешься надуть меня? Это ведь был ты, признайся.
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_01"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РЅР°РґСѓС‚СЊ РјРµРЅСЏ? Р­С‚Рѕ РІРµРґСЊ Р±С‹Р» С‚С‹, РїСЂРёР·РЅР°Р№СЃСЏ.
 		
 		Info_ClearChoices	(DIA_Keroloth_KAP4_GELDGEFUNDEN);
-		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Я подозреваю одного охотника на драконов.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
-		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Поцелуй мою задницу.", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich );
+		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "РЇ РїРѕРґРѕР·СЂРµРІР°СЋ РѕРґРЅРѕРіРѕ РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
+		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "РџРѕС†РµР»СѓР№ РјРѕСЋ Р·Р°РґРЅРёС†Сѓ.", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_02"); //Я еще это выясню.
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_02"); //РЇ РµС‰Рµ СЌС‚Рѕ РІС‹СЏСЃРЅСЋ.
 		AI_StopProcessInfos (self);
 	};
 };
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_kannstmich_15_00"); //Поцелуй мою задницу.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_kannstmich_07_01"); //Я покажу тебе, как воровать  честных людей!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_kannstmich_15_00"); //РџРѕС†РµР»СѓР№ РјРѕСЋ Р·Р°РґРЅРёС†Сѓ.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_kannstmich_07_01"); //РЇ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ, РєР°Рє РІРѕСЂРѕРІР°С‚СЊ  С‡РµСЃС‚РЅС‹С… Р»СЋРґРµР№!
 
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_NONE, 1);	
@@ -498,17 +498,17 @@ func void DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich ()
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_15_00"); //Я подозреваю одного охотника на драконов.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_15_00"); //РЇ РїРѕРґРѕР·СЂРµРІР°СЋ РѕРґРЅРѕРіРѕ РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ.
 		
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_01"); //(зло) Я знал это.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_01"); //(Р·Р»Рѕ) РЇ Р·РЅР°Р» СЌС‚Рѕ.
 	
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_02"); //(рычит) Их вообще не стоило пускать в замок.
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_02"); //(СЂС‹С‡РёС‚) РС… РІРѕРѕР±С‰Рµ РЅРµ СЃС‚РѕРёР»Рѕ РїСѓСЃРєР°С‚СЊ РІ Р·Р°РјРѕРє.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_03"); //Ну, подожди, я покажу этой свинье...
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_03"); //РќСѓ, РїРѕРґРѕР¶РґРё, СЏ РїРѕРєР°Р¶Сѓ СЌС‚РѕР№ СЃРІРёРЅСЊРµ...
 		};
 
 	AI_StopProcessInfos	(self);
@@ -533,23 +533,23 @@ func void DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG ()
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_15_00"); //Эээ. Он был вон там, у кузницы.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_07_01"); //Где? У кузницы? Он, должно быть, выпал там из кармана какого-нибудь охотника на драконов. Только не говори мне, что это не так.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_15_00"); //Р­СЌСЌ. РћРЅ Р±С‹Р» РІРѕРЅ С‚Р°Рј, Сѓ РєСѓР·РЅРёС†С‹.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_07_01"); //Р“РґРµ? РЈ РєСѓР·РЅРёС†С‹? РћРЅ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, РІС‹РїР°Р» С‚Р°Рј РёР· РєР°СЂРјР°РЅР° РєР°РєРѕРіРѕ-РЅРёР±СѓРґСЊ РѕС…РѕС‚РЅРёРєР° РЅР° РґСЂР°РєРѕРЅРѕРІ. РўРѕР»СЊРєРѕ РЅРµ РіРѕРІРѕСЂРё РјРЅРµ, С‡С‚Рѕ СЌС‚Рѕ РЅРµ С‚Р°Рє.
 };
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_15_00"); //Минутку. А как насчет награды?
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_15_00"); //РњРёРЅСѓС‚РєСѓ. Рђ РєР°Рє РЅР°СЃС‡РµС‚ РЅР°РіСЂР°РґС‹?
 	
  	if (Keroloths_BeutelLeer == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_01"); //Это была последняя капля. Ты, похоже, давно не получал по морде, а?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_01"); //Р­С‚Рѕ Р±С‹Р»Р° РїРѕСЃР»РµРґРЅСЏСЏ РєР°РїР»СЏ. РўС‹, РїРѕС…РѕР¶Рµ, РґР°РІРЅРѕ РЅРµ РїРѕР»СѓС‡Р°Р» РїРѕ РјРѕСЂРґРµ, Р°?
 		AI_StopProcessInfos	(self);
 		B_Attack (self, other, AR_NONE, 1);	
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_02"); //А-аа. Хорошо. Вот несколько монет. А теперь скажи мне, кто сделал это?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_02"); //Рђ-Р°Р°. РҐРѕСЂРѕС€Рѕ. Р’РѕС‚ РЅРµСЃРєРѕР»СЊРєРѕ РјРѕРЅРµС‚. Рђ С‚РµРїРµСЂСЊ СЃРєР°Р¶Рё РјРЅРµ, РєС‚Рѕ СЃРґРµР»Р°Р» СЌС‚Рѕ?
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);					
 		Keroloth_HasPayed = TRUE;
@@ -567,7 +567,7 @@ instance DIA_Keroloth_KAP4_BELOHNUNG		(C_INFO)
 	information	 = 	DIA_Keroloth_KAP4_BELOHNUNG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я хочу получить честные комиссионные за эту находку.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ С‡РµСЃС‚РЅС‹Рµ РєРѕРјРёСЃСЃРёРѕРЅРЅС‹Рµ Р·Р° СЌС‚Сѓ РЅР°С…РѕРґРєСѓ.";
 };
 
 func int DIA_Keroloth_KAP4_BELOHNUNG_Condition ()
@@ -582,17 +582,17 @@ func int DIA_Keroloth_KAP4_BELOHNUNG_Condition ()
 
 func void DIA_Keroloth_KAP4_BELOHNUNG_Info ()
 {
- 	AI_Output			(other, self, "DIA_Keroloth_KAP4_BELOHNUNG_15_00"); //Я хочу получить честные комиссионные за эту находку.
+ 	AI_Output			(other, self, "DIA_Keroloth_KAP4_BELOHNUNG_15_00"); //РЇ С…РѕС‡Сѓ РїРѕР»СѓС‡РёС‚СЊ С‡РµСЃС‚РЅС‹Рµ РєРѕРјРёСЃСЃРёРѕРЅРЅС‹Рµ Р·Р° СЌС‚Сѓ РЅР°С…РѕРґРєСѓ.
 
 	if ((Keroloths_BeutelLeer == TRUE) || (hero.guild == GIL_DJG))
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_01"); //Да, а рискуешь получить удар в челюсть!
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_01"); //Р”Р°, Р° СЂРёСЃРєСѓРµС€СЊ РїРѕР»СѓС‡РёС‚СЊ СѓРґР°СЂ РІ С‡РµР»СЋСЃС‚СЊ!
 		AI_StopProcessInfos	(self);
 		B_Attack (self, other, AR_NONE, 1);	
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_02"); //Это все, что тебе нужно? Вот пара монет. А теперь проваливай.
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_02"); //Р­С‚Рѕ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ? Р’РѕС‚ РїР°СЂР° РјРѕРЅРµС‚. Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№.
 		
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);					
@@ -612,7 +612,7 @@ instance DIA_Keroloth_KAP4_ENTSPANNDICH		(C_INFO)
 	information	 = 	DIA_Keroloth_KAP4_ENTSPANNDICH_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Расслабься.";
+	description	 = 	"Р Р°СЃСЃР»Р°Р±СЊСЃСЏ.";
 };
 
 func int DIA_Keroloth_KAP4_ENTSPANNDICH_Condition ()
@@ -627,23 +627,23 @@ func int DIA_Keroloth_KAP4_ENTSPANNDICH_Condition ()
 
 func void DIA_Keroloth_KAP4_ENTSPANNDICH_Info ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_00"); //Расслабься.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_00"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ.
 	
 	if (hero.guild == GIL_KDF)
 	{
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_01"); //Да, мастер. Я попытаюсь.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_01"); //Р”Р°, РјР°СЃС‚РµСЂ. РЇ РїРѕРїС‹С‚Р°СЋСЃСЊ.
 	}
 	else if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_02"); //Я не могу доказать это, но мне кажется, что ты предатель, который открыл ворота.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_03"); //Ты заплатишь за это!
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_02"); //РЇ РЅРµ РјРѕРіСѓ РґРѕРєР°Р·Р°С‚СЊ СЌС‚Рѕ, РЅРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РїСЂРµРґР°С‚РµР»СЊ, РєРѕС‚РѕСЂС‹Р№ РѕС‚РєСЂС‹Р» РІРѕСЂРѕС‚Р°.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_03"); //РўС‹ Р·Р°РїР»Р°С‚РёС€СЊ Р·Р° СЌС‚Рѕ!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);	
 	}
 	else 
 	{
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_04"); //Ты ведь получил свой кошелек назад, разве нет?
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_05"); //Не провоцируй меня! Проваливай!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_04"); //РўС‹ РІРµРґСЊ РїРѕР»СѓС‡РёР» СЃРІРѕР№ РєРѕС€РµР»РµРє РЅР°Р·Р°Рґ, СЂР°Р·РІРµ РЅРµС‚?
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_05"); //РќРµ РїСЂРѕРІРѕС†РёСЂСѓР№ РјРµРЅСЏ! РџСЂРѕРІР°Р»РёРІР°Р№!
 	AI_StopProcessInfos (self);
 	};
 };

@@ -2,7 +2,7 @@
 instance VLK_420_Coragon (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= " Ó‡„ÓÌ"; 
+	name 		= "–ö–æ—Ä–∞–≥–æ–Ω"; 
 	guild 		= GIL_VLK;
 	id 			= 420;
 	voice 		= 9;
@@ -20,7 +20,7 @@ instance VLK_420_Coragon (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	//H‰ndler
+	//H–¥ndler
 
 		
 	// ------ visuals ------																			

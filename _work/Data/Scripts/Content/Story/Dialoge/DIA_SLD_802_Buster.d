@@ -42,7 +42,7 @@ INSTANCE DIA_Buster_Hello (C_INFO)
 
 FUNC INT DIA_Buster_Hello_Condition()
 {
-	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal geprьgelt
+	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal geprСЊgelt
 	&& ((hero.guild != GIL_SLD) && (hero.guild != GIL_DJG))
 	{
 		return TRUE;
@@ -51,44 +51,44 @@ FUNC INT DIA_Buster_Hello_Condition()
  
 FUNC VOID DIA_Buster_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Buster_Hello_13_00");	//Посмотрите, кто у нас здесь?! Я тебя случайно не знаю?
+	AI_Output (self ,other,"DIA_Buster_Hello_13_00");	//РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ?! РЇ С‚РµР±СЏ СЃР»СѓС‡Р°Р№РЅРѕ РЅРµ Р·РЅР°СЋ?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Как скажешь. Я хочу увидеть лендлорда." 	,DIA_Buster_Hello_GoingToFarm);
-	Info_AddChoice		(DIA_Buster_Hello, "А кто спрашивает?"									,DIA_Buster_Hello_WhoAreYou);
+	Info_AddChoice		(DIA_Buster_Hello, "РљР°Рє СЃРєР°Р¶РµС€СЊ. РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р»РµРЅРґР»РѕСЂРґР°." 	,DIA_Buster_Hello_GoingToFarm);
+	Info_AddChoice		(DIA_Buster_Hello, "Рђ РєС‚Рѕ СЃРїСЂР°С€РёРІР°РµС‚?"									,DIA_Buster_Hello_WhoAreYou);
 };
 
 func void DIA_Buster_Hello_WhoAreYou()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_WhoAreYou_15_00"); //А кто спрашивает?
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_01"); //Я Бастер, один из наемников Ли!
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_02"); //И тебе лучше быть повежливее со мной, а не то мне придется поучить тебя манерам!
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_03"); //Ладно, что тебе нужно здесь?
+	AI_Output (other,self ,"DIA_Buster_Hello_WhoAreYou_15_00"); //Рђ РєС‚Рѕ СЃРїСЂР°С€РёРІР°РµС‚?
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_01"); //РЇ Р‘Р°СЃС‚РµСЂ, РѕРґРёРЅ РёР· РЅР°РµРјРЅРёРєРѕРІ Р›Рё!
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_02"); //Р С‚РµР±Рµ Р»СѓС‡С€Рµ Р±С‹С‚СЊ РїРѕРІРµР¶Р»РёРІРµРµ СЃРѕ РјРЅРѕР№, Р° РЅРµ С‚Рѕ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕСѓС‡РёС‚СЊ С‚РµР±СЏ РјР°РЅРµСЂР°Рј!
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_03"); //Р›Р°РґРЅРѕ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Это не твое дело."								,DIA_Buster_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Buster_Hello, "Я знаю Ли!"											,DIA_Buster_Hello_IKnowLee);
-	Info_AddChoice		(DIA_Buster_Hello, "Я хочу увидеть лендлорда." 	,DIA_Buster_Hello_GoingToFarm);
+	Info_AddChoice		(DIA_Buster_Hello, "Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ."								,DIA_Buster_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Buster_Hello, "РЇ Р·РЅР°СЋ Р›Рё!"											,DIA_Buster_Hello_IKnowLee);
+	Info_AddChoice		(DIA_Buster_Hello, "РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р»РµРЅРґР»РѕСЂРґР°." 	,DIA_Buster_Hello_GoingToFarm);
 };
 
 func void DIA_Buster_Hello_IKnowLee()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_IKnowLee_15_00"); //Я знаю Ли!
-	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_01"); //Все знают Ли! Это ни чего не значит, приятель. Сейчас, ты разговариваешь со МНОЙ!
-	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_02"); //Итак, куда ты направляешься?
+	AI_Output (other,self ,"DIA_Buster_Hello_IKnowLee_15_00"); //РЇ Р·РЅР°СЋ Р›Рё!
+	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_01"); //Р’СЃРµ Р·РЅР°СЋС‚ Р›Рё! Р­С‚Рѕ РЅРё С‡РµРіРѕ РЅРµ Р·РЅР°С‡РёС‚, РїСЂРёСЏС‚РµР»СЊ. РЎРµР№С‡Р°СЃ, С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС€СЊ СЃРѕ РњРќРћР™!
+	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_02"); //РС‚Р°Рє, РєСѓРґР° С‚С‹ РЅР°РїСЂР°РІР»СЏРµС€СЊСЃСЏ?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Это не твое дело."								,DIA_Buster_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Buster_Hello, "Я хочу увидеть лендлорда." 	,DIA_Buster_Hello_GoingToFarm);
+	Info_AddChoice		(DIA_Buster_Hello, "Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ."								,DIA_Buster_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Buster_Hello, "РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р»РµРЅРґР»РѕСЂРґР°." 	,DIA_Buster_Hello_GoingToFarm);
 };
 
 func void DIA_Buster_Hello_NotYourBusiness()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_NotYourBusiness_15_00"); //Это не твое дело.
-	AI_Output (self ,other,"DIA_Buster_Hello_NotYourBusiness_13_01"); //Я никому не позволю так разговаривать со мной, ты, грязный червь! По-моему, ты заслуживаешь хорошей взбучки.
+	AI_Output (other,self ,"DIA_Buster_Hello_NotYourBusiness_15_00"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ.
+	AI_Output (self ,other,"DIA_Buster_Hello_NotYourBusiness_13_01"); //РЇ РЅРёРєРѕРјСѓ РЅРµ РїРѕР·РІРѕР»СЋ С‚Р°Рє СЂР°Р·РіРѕРІР°СЂРёРІР°С‚СЊ СЃРѕ РјРЅРѕР№, С‚С‹, РіСЂСЏР·РЅС‹Р№ С‡РµСЂРІСЊ! РџРѕ-РјРѕРµРјСѓ, С‚С‹ Р·Р°СЃР»СѓР¶РёРІР°РµС€СЊ С…РѕСЂРѕС€РµР№ РІР·Р±СѓС‡РєРё.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -96,48 +96,48 @@ func void DIA_Buster_Hello_NotYourBusiness()
 
 func void DIA_Buster_Hello_GoingToFarm()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_GoingToFarm_15_00"); //Как скажешь. Я хочу увидеть лендлорда.
-	AI_Output (self ,other,"DIA_Buster_Hello_GoingToFarm_13_01"); //Да?.. Хм - ты не кажешься мне таким уж опасным.
+	AI_Output (other,self ,"DIA_Buster_Hello_GoingToFarm_15_00"); //РљР°Рє СЃРєР°Р¶РµС€СЊ. РЇ С…РѕС‡Сѓ СѓРІРёРґРµС‚СЊ Р»РµРЅРґР»РѕСЂРґР°.
+	AI_Output (self ,other,"DIA_Buster_Hello_GoingToFarm_13_01"); //Р”Р°?.. РҐРј - С‚С‹ РЅРµ РєР°Р¶РµС€СЊСЃСЏ РјРЅРµ С‚Р°РєРёРј СѓР¶ РѕРїР°СЃРЅС‹Рј.
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Хочешь проверить?"								,DIA_Buster_Hello_WannaTestIt);
-	Info_AddChoice		(DIA_Buster_Hello, "Я тоже убил парочку другую тварей."	,DIA_Buster_Hello_SlewBeasts);
-	Info_AddChoice		(DIA_Buster_Hello, "Тебе правильно кажется." 									,DIA_Buster_Hello_ImNoDanger);
+	Info_AddChoice		(DIA_Buster_Hello, "РҐРѕС‡РµС€СЊ РїСЂРѕРІРµСЂРёС‚СЊ?"								,DIA_Buster_Hello_WannaTestIt);
+	Info_AddChoice		(DIA_Buster_Hello, "РЇ С‚РѕР¶Рµ СѓР±РёР» РїР°СЂРѕС‡РєСѓ РґСЂСѓРіСѓСЋ С‚РІР°СЂРµР№."	,DIA_Buster_Hello_SlewBeasts);
+	Info_AddChoice		(DIA_Buster_Hello, "РўРµР±Рµ РїСЂР°РІРёР»СЊРЅРѕ РєР°Р¶РµС‚СЃСЏ." 									,DIA_Buster_Hello_ImNoDanger);
 };
 
 func void DIA_Buster_Hello_ImNoDanger()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_ImNoDanger_15_00"); //Тебе правильно кажется.
-	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_01"); //(самодовольно) Да, за долгие годы я научился распознавать такие вещи, приятель.
-	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_02"); //Нам постоянно приходится сражаться с орками. Или со стражниками из города. Они такие настырные. (смеется)
+	AI_Output (other,self ,"DIA_Buster_Hello_ImNoDanger_15_00"); //РўРµР±Рµ РїСЂР°РІРёР»СЊРЅРѕ РєР°Р¶РµС‚СЃСЏ.
+	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_01"); //(СЃР°РјРѕРґРѕРІРѕР»СЊРЅРѕ) Р”Р°, Р·Р° РґРѕР»РіРёРµ РіРѕРґС‹ СЏ РЅР°СѓС‡РёР»СЃСЏ СЂР°СЃРїРѕР·РЅР°РІР°С‚СЊ С‚Р°РєРёРµ РІРµС‰Рё, РїСЂРёСЏС‚РµР»СЊ.
+	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_02"); //РќР°Рј РїРѕСЃС‚РѕСЏРЅРЅРѕ РїСЂРёС…РѕРґРёС‚СЃСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ СЃ РѕСЂРєР°РјРё. РР»Рё СЃРѕ СЃС‚СЂР°Р¶РЅРёРєР°РјРё РёР· РіРѕСЂРѕРґР°. РћРЅРё С‚Р°РєРёРµ РЅР°СЃС‚С‹СЂРЅС‹Рµ. (СЃРјРµРµС‚СЃСЏ)
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Ты имеешь в виду НАСТОЯЩИХ орков? Этих больших тварей?"						,DIA_Buster_Hello_RealOrcs);
-	Info_AddChoice		(DIA_Buster_Hello, "И?"												,DIA_Buster_Hello_SoWhat);
-	Info_AddChoice		(DIA_Buster_Hello, "Потрясающе." 										,DIA_Buster_Hello_Impressive);
+	Info_AddChoice		(DIA_Buster_Hello, "РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РќРђРЎРўРћРЇР©РРҐ РѕСЂРєРѕРІ? Р­С‚РёС… Р±РѕР»СЊС€РёС… С‚РІР°СЂРµР№?"						,DIA_Buster_Hello_RealOrcs);
+	Info_AddChoice		(DIA_Buster_Hello, "Р?"												,DIA_Buster_Hello_SoWhat);
+	Info_AddChoice		(DIA_Buster_Hello, "РџРѕС‚СЂСЏСЃР°СЋС‰Рµ." 										,DIA_Buster_Hello_Impressive);
 };
 
 func void DIA_Buster_Hello_SlewBeasts()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_SlewBeasts_15_00"); //Я тоже убил парочку другую тварей.
-	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_01"); //Ха! (смеется) Ты, наверное, прихлопнул несколько долгоносиков на поле и выгнал парочку крыс из их нор.
-	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_02"); //А мы здесь имеем дело с орками! Да, и с этими коварными городскими стражниками. (иронический смех)
+	AI_Output (other,self ,"DIA_Buster_Hello_SlewBeasts_15_00"); //РЇ С‚РѕР¶Рµ СѓР±РёР» РїР°СЂРѕС‡РєСѓ РґСЂСѓРіСѓСЋ С‚РІР°СЂРµР№.
+	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_01"); //РҐР°! (СЃРјРµРµС‚СЃСЏ) РўС‹, РЅР°РІРµСЂРЅРѕРµ, РїСЂРёС…Р»РѕРїРЅСѓР» РЅРµСЃРєРѕР»СЊРєРѕ РґРѕР»РіРѕРЅРѕСЃРёРєРѕРІ РЅР° РїРѕР»Рµ Рё РІС‹РіРЅР°Р» РїР°СЂРѕС‡РєСѓ РєСЂС‹СЃ РёР· РёС… РЅРѕСЂ.
+	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_02"); //Рђ РјС‹ Р·РґРµСЃСЊ РёРјРµРµРј РґРµР»Рѕ СЃ РѕСЂРєР°РјРё! Р”Р°, Рё СЃ СЌС‚РёРјРё РєРѕРІР°СЂРЅС‹РјРё РіРѕСЂРѕРґСЃРєРёРјРё СЃС‚СЂР°Р¶РЅРёРєР°РјРё. (РёСЂРѕРЅРёС‡РµСЃРєРёР№ СЃРјРµС…)
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Ты имеешь в виду НАСТОЯЩИХ орков? Этих больших тварей?"						,DIA_Buster_Hello_RealOrcs);
-	Info_AddChoice		(DIA_Buster_Hello, "И?"												,DIA_Buster_Hello_SoWhat);
-	Info_AddChoice		(DIA_Buster_Hello, "Потрясающе." 										,DIA_Buster_Hello_Impressive);
+	Info_AddChoice		(DIA_Buster_Hello, "РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РќРђРЎРўРћРЇР©РРҐ РѕСЂРєРѕРІ? Р­С‚РёС… Р±РѕР»СЊС€РёС… С‚РІР°СЂРµР№?"						,DIA_Buster_Hello_RealOrcs);
+	Info_AddChoice		(DIA_Buster_Hello, "Р?"												,DIA_Buster_Hello_SoWhat);
+	Info_AddChoice		(DIA_Buster_Hello, "РџРѕС‚СЂСЏСЃР°СЋС‰Рµ." 										,DIA_Buster_Hello_Impressive);
 };
 
 func void DIA_Buster_Hello_WannaTestIt()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_00"); //Хочешь проверить?
-	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_01"); //Надо же! Я напал не на того парня, да?
-	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_02"); //Можно сказать и так.
-	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_03"); //Тогда давай, покажи мне, на что ты годен.
+	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_00"); //РҐРѕС‡РµС€СЊ РїСЂРѕРІРµСЂРёС‚СЊ?
+	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_01"); //РќР°РґРѕ Р¶Рµ! РЇ РЅР°РїР°Р» РЅРµ РЅР° С‚РѕРіРѕ РїР°СЂРЅСЏ, РґР°?
+	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_02"); //РњРѕР¶РЅРѕ СЃРєР°Р·Р°С‚СЊ Рё С‚Р°Рє.
+	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_03"); //РўРѕРіРґР° РґР°РІР°Р№, РїРѕРєР°Р¶Рё РјРЅРµ, РЅР° С‡С‚Рѕ С‚С‹ РіРѕРґРµРЅ.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -145,29 +145,29 @@ func void DIA_Buster_Hello_WannaTestIt()
 
 func void DIA_Buster_Hello_Impressive()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_Impressive_15_00"); //Потрясающе.
-	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_01"); //(смеется) Это наша работа, парень! Мы даже делаем свое собственное оружие и доспехи!
-	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_02"); //Мы каждый день ходим рука об руку со смертью. Но деревенщине вроде тебя этого не понять.
+	AI_Output (other,self ,"DIA_Buster_Hello_Impressive_15_00"); //РџРѕС‚СЂСЏСЃР°СЋС‰Рµ.
+	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_01"); //(СЃРјРµРµС‚СЃСЏ) Р­С‚Рѕ РЅР°С€Р° СЂР°Р±РѕС‚Р°, РїР°СЂРµРЅСЊ! РњС‹ РґР°Р¶Рµ РґРµР»Р°РµРј СЃРІРѕРµ СЃРѕР±СЃС‚РІРµРЅРЅРѕРµ РѕСЂСѓР¶РёРµ Рё РґРѕСЃРїРµС…Рё!
+	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_02"); //РњС‹ РєР°Р¶РґС‹Р№ РґРµРЅСЊ С…РѕРґРёРј СЂСѓРєР° РѕР± СЂСѓРєСѓ СЃРѕ СЃРјРµСЂС‚СЊСЋ. РќРѕ РґРµСЂРµРІРµРЅС‰РёРЅРµ РІСЂРѕРґРµ С‚РµР±СЏ СЌС‚РѕРіРѕ РЅРµ РїРѕРЅСЏС‚СЊ.
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Похоже, мне придется показать тебе, что я знаю об этом!"	,DIA_Buster_Hello_LetMeShowYou);
-	Info_AddChoice		(DIA_Buster_Hello, "Как скажешь."									,DIA_Buster_Hello_IfYouSaySo);
+	Info_AddChoice		(DIA_Buster_Hello, "РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ РѕР± СЌС‚РѕРј!"	,DIA_Buster_Hello_LetMeShowYou);
+	Info_AddChoice		(DIA_Buster_Hello, "РљР°Рє СЃРєР°Р¶РµС€СЊ."									,DIA_Buster_Hello_IfYouSaySo);
 };
 
 func void DIA_Buster_Hello_IfYouSaySo()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_IfYouSaySo_15_00"); //Как скажешь.
-	AI_Output (self ,other,"DIA_Buster_Hello_IfYouSaySo_13_01"); //(со скучающим хрюканьем) Проходи, зануда!
+	AI_Output (other,self ,"DIA_Buster_Hello_IfYouSaySo_15_00"); //РљР°Рє СЃРєР°Р¶РµС€СЊ.
+	AI_Output (self ,other,"DIA_Buster_Hello_IfYouSaySo_13_01"); //(СЃРѕ СЃРєСѓС‡Р°СЋС‰РёРј С…СЂСЋРєР°РЅСЊРµРј) РџСЂРѕС…РѕРґРё, Р·Р°РЅСѓРґР°!
 
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Buster_Hello_LetMeShowYou()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_LetMeShowYou_15_00"); //Похоже, мне придется показать тебе, что я знаю об этом!
-	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_01"); //Ты что, строишь из себя буйного крестьянина, да?
-	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_02"); //Хорошо, давай, покажи, на что ты способен.
+	AI_Output (other,self ,"DIA_Buster_Hello_LetMeShowYou_15_00"); //РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ СЏ Р·РЅР°СЋ РѕР± СЌС‚РѕРј!
+	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_01"); //РўС‹ С‡С‚Рѕ, СЃС‚СЂРѕРёС€СЊ РёР· СЃРµР±СЏ Р±СѓР№РЅРѕРіРѕ РєСЂРµСЃС‚СЊСЏРЅРёРЅР°, РґР°?
+	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_02"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№, РїРѕРєР°Р¶Рё, РЅР° С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -175,34 +175,34 @@ func void DIA_Buster_Hello_LetMeShowYou()
 
 func void DIA_Buster_Hello_SoWhat()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_SoWhat_15_00"); //И?
-	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_01"); //(фыркает) Как будто ты понимаешь, о чем я говорю. Ты думаешь, что ты крут, да?
-	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_02"); //(сердито) Похоже, пришло время преподнести тебе урок!
+	AI_Output (other,self ,"DIA_Buster_Hello_SoWhat_15_00"); //Р?
+	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_01"); //(С„С‹СЂРєР°РµС‚) РљР°Рє Р±СѓРґС‚Рѕ С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ РіРѕРІРѕСЂСЋ. РўС‹ РґСѓРјР°РµС€СЊ, С‡С‚Рѕ С‚С‹ РєСЂСѓС‚, РґР°?
+	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_02"); //(СЃРµСЂРґРёС‚Рѕ) РџРѕС…РѕР¶Рµ, РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РїСЂРµРїРѕРґРЅРµСЃС‚Рё С‚РµР±Рµ СѓСЂРѕРє!
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Всегда готов!"						,DIA_Buster_Hello_Whenever);
-	Info_AddChoice		(DIA_Buster_Hello, "Я просто шучу..."			,DIA_Buster_Hello_JustJoking);
+	Info_AddChoice		(DIA_Buster_Hello, "Р’СЃРµРіРґР° РіРѕС‚РѕРІ!"						,DIA_Buster_Hello_Whenever);
+	Info_AddChoice		(DIA_Buster_Hello, "РЇ РїСЂРѕСЃС‚Рѕ С€СѓС‡Сѓ..."			,DIA_Buster_Hello_JustJoking);
 };
 
 func void DIA_Buster_Hello_RealOrcs()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_00"); //Ты имеешь в виду НАСТОЯЩИХ орков? Этих больших тварей?
-	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_01"); //(вздыхает) Я имею в виду... Минутку! Ты что, издеваешься надо мной?
-	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_02"); //(улыбаясь) Даже и не думал.
-	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_03"); //Ах ты червь навозный! (агрессивно) Ты сам напрашиваешься, да?
-	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_04"); //Тогда давай, покажи, на что ты способен, герой!
+	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_00"); //РўС‹ РёРјРµРµС€СЊ РІ РІРёРґСѓ РќРђРЎРўРћРЇР©РРҐ РѕСЂРєРѕРІ? Р­С‚РёС… Р±РѕР»СЊС€РёС… С‚РІР°СЂРµР№?
+	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_01"); //(РІР·РґС‹С…Р°РµС‚) РЇ РёРјРµСЋ РІ РІРёРґСѓ... РњРёРЅСѓС‚РєСѓ! РўС‹ С‡С‚Рѕ, РёР·РґРµРІР°РµС€СЊСЃСЏ РЅР°РґРѕ РјРЅРѕР№?
+	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_02"); //(СѓР»С‹Р±Р°СЏСЃСЊ) Р”Р°Р¶Рµ Рё РЅРµ РґСѓРјР°Р».
+	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_03"); //РђС… С‚С‹ С‡РµСЂРІСЊ РЅР°РІРѕР·РЅС‹Р№! (Р°РіСЂРµСЃСЃРёРІРЅРѕ) РўС‹ СЃР°Рј РЅР°РїСЂР°С€РёРІР°РµС€СЊСЃСЏ, РґР°?
+	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_04"); //РўРѕРіРґР° РґР°РІР°Р№, РїРѕРєР°Р¶Рё, РЅР° С‡С‚Рѕ С‚С‹ СЃРїРѕСЃРѕР±РµРЅ, РіРµСЂРѕР№!
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Всегда готов!"						,DIA_Buster_Hello_Whenever);
-	Info_AddChoice		(DIA_Buster_Hello, "Я просто шучу..."			,DIA_Buster_Hello_JustJoking);
+	Info_AddChoice		(DIA_Buster_Hello, "Р’СЃРµРіРґР° РіРѕС‚РѕРІ!"						,DIA_Buster_Hello_Whenever);
+	Info_AddChoice		(DIA_Buster_Hello, "РЇ РїСЂРѕСЃС‚Рѕ С€СѓС‡Сѓ..."			,DIA_Buster_Hello_JustJoking);
 };
 
 func void DIA_Buster_Hello_Whenever()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_Whenever_15_00"); //Всегда готов!
-	AI_Output (self ,other,"DIA_Buster_Hello_Whenever_13_01"); //Тогда иди сюда, приятель!
+	AI_Output (other,self ,"DIA_Buster_Hello_Whenever_15_00"); //Р’СЃРµРіРґР° РіРѕС‚РѕРІ!
+	AI_Output (self ,other,"DIA_Buster_Hello_Whenever_13_01"); //РўРѕРіРґР° РёРґРё СЃСЋРґР°, РїСЂРёСЏС‚РµР»СЊ!
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -210,8 +210,8 @@ func void DIA_Buster_Hello_Whenever()
 
 func void DIA_Buster_Hello_JustJoking()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_JustJoking_15_00"); //Я просто шучу...
-	AI_Output (self ,other,"DIA_Buster_Hello_JustJoking_13_01"); //Поосторожнее с такими шутками! А теперь проваливай!
+	AI_Output (other,self ,"DIA_Buster_Hello_JustJoking_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ С€СѓС‡Сѓ...
+	AI_Output (self ,other,"DIA_Buster_Hello_JustJoking_13_01"); //РџРѕРѕСЃС‚РѕСЂРѕР¶РЅРµРµ СЃ С‚Р°РєРёРјРё С€СѓС‚РєР°РјРё! Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -243,7 +243,7 @@ FUNC INT DIA_Buster_FightNone_Condition()
 
 func void DIA_Buster_FightNone_Info()
 {
-	AI_Output (self, other,"DIA_Buster_FightNone_13_00"); //Что тебе нужно, слизняк?
+	AI_Output (self, other,"DIA_Buster_FightNone_13_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ, СЃР»РёР·РЅСЏРє?
 };
 
 
@@ -258,7 +258,7 @@ INSTANCE DIA_Buster_Duell (C_INFO)
 	condition	= DIA_Buster_Duell_Condition;
 	information	= DIA_Buster_Duell_Info;
 	permanent	= TRUE;
-	description = "Я вызываю тебя на дуэль!";
+	description = "РЇ РІС‹Р·С‹РІР°СЋ С‚РµР±СЏ РЅР° РґСѓСЌР»СЊ!";
 };                       
 
 FUNC INT DIA_Buster_Duell_Condition()
@@ -271,17 +271,17 @@ FUNC INT DIA_Buster_Duell_Condition()
  
 FUNC VOID DIA_Buster_Duell_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_Duell_15_00"); //Я вызываю тебя на дуэль!
+	AI_Output (other, self,"DIA_Buster_Duell_15_00"); //РЇ РІС‹Р·С‹РІР°СЋ С‚РµР±СЏ РЅР° РґСѓСЌР»СЊ!
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_NONE)
 	{
-		AI_Output (self, other,"DIA_Buster_Duell_13_01"); //Ах-ах! Тебе все неймется, да? Ладно, иди сюда!
+		AI_Output (self, other,"DIA_Buster_Duell_13_01"); //РђС…-Р°С…! РўРµР±Рµ РІСЃРµ РЅРµР№РјРµС‚СЃСЏ, РґР°? Р›Р°РґРЅРѕ, РёРґРё СЃСЋРґР°!
 	}
 	else //WON oder CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_Duell_13_02"); //Ты хочешь попробовать еще раз? Ну, ты зануда, ладно, иди сюда!
+		AI_Output (self, other,"DIA_Buster_Duell_13_02"); //РўС‹ С…РѕС‡РµС€СЊ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РµС‰Рµ СЂР°Р·? РќСѓ, С‚С‹ Р·Р°РЅСѓРґР°, Р»Р°РґРЅРѕ, РёРґРё СЃСЋРґР°!
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 		{
-			AI_Output (self, other,"DIA_Buster_Duell_13_03"); //Только больше не убегай!
+			AI_Output (self, other,"DIA_Buster_Duell_13_03"); //РўРѕР»СЊРєРѕ Р±РѕР»СЊС€Рµ РЅРµ СѓР±РµРіР°Р№!
 		};
 	};
 	
@@ -300,7 +300,7 @@ INSTANCE DIA_Buster_WannaJoin (C_INFO)
 	condition	= DIA_Buster_WannaJoin_Condition;
 	information	= DIA_Buster_WannaJoin_Info;
 	permanent	= TRUE;
-	description = "Я хочу присоединиться к наемникам!";
+	description = "РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!";
 };                       
 
 FUNC INT DIA_Buster_WannaJoin_Condition()
@@ -314,36 +314,36 @@ FUNC INT DIA_Buster_WannaJoin_Condition()
  
 FUNC VOID DIA_Buster_WannaJoin_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_WannaJoin_15_00"); //Я хочу присоединиться к наемникам!
+	AI_Output (other, self,"DIA_Buster_WannaJoin_15_00"); //РЇ С…РѕС‡Сѓ РїСЂРёСЃРѕРµРґРёРЅРёС‚СЊСЃСЏ Рє РЅР°РµРјРЅРёРєР°Рј!
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	|| (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 		{
-			AI_Output (self, other,"DIA_Buster_WannaJoin_13_01"); //У парня с таким ударом как у тебя, не должно возникнуть с этим особых проблем.
+			AI_Output (self, other,"DIA_Buster_WannaJoin_13_01"); //РЈ РїР°СЂРЅСЏ СЃ С‚Р°РєРёРј СѓРґР°СЂРѕРј РєР°Рє Сѓ С‚РµР±СЏ, РЅРµ РґРѕР»Р¶РЅРѕ РІРѕР·РЅРёРєРЅСѓС‚СЊ СЃ СЌС‚РёРј РѕСЃРѕР±С‹С… РїСЂРѕР±Р»РµРј.
 		}
 		else //FIGHT_WON
 		{
-			AI_Output (self, other,"DIA_Buster_WannaJoin_13_02"); //Ты не особенно хороший боец, но и трусом тебя назвать нельзя.
+			AI_Output (self, other,"DIA_Buster_WannaJoin_13_02"); //РўС‹ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ С…РѕСЂРѕС€РёР№ Р±РѕРµС†, РЅРѕ Рё С‚СЂСѓСЃРѕРј С‚РµР±СЏ РЅР°Р·РІР°С‚СЊ РЅРµР»СЊР·СЏ.
 		};
-		AI_Output (self, other,"DIA_Buster_WannaJoin_13_03"); //Мой голос не много значит, так как я здесь не очень давно, но если Ли спросит, я проголосую за тебя.
+		AI_Output (self, other,"DIA_Buster_WannaJoin_13_03"); //РњРѕР№ РіРѕР»РѕСЃ РЅРµ РјРЅРѕРіРѕ Р·РЅР°С‡РёС‚, С‚Р°Рє РєР°Рє СЏ Р·РґРµСЃСЊ РЅРµ РѕС‡РµРЅСЊ РґР°РІРЅРѕ, РЅРѕ РµСЃР»Рё Р›Рё СЃРїСЂРѕСЃРёС‚, СЏ РїСЂРѕРіРѕР»РѕСЃСѓСЋ Р·Р° С‚РµР±СЏ.
 		Buster_Duell = TRUE;
 		Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
-		B_LogEntry (TOPIC_SLDRespekt,"С тех пор, как я победил Бастера, он не имеет ничего против моего вступления в ряды наемников.");
+		B_LogEntry (TOPIC_SLDRespekt,"РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РїРѕР±РµРґРёР» Р‘Р°СЃС‚РµСЂР°, РѕРЅ РЅРµ РёРјРµРµС‚ РЅРёС‡РµРіРѕ РїСЂРѕС‚РёРІ РјРѕРµРіРѕ РІСЃС‚СѓРїР»РµРЅРёСЏ РІ СЂСЏРґС‹ РЅР°РµРјРЅРёРєРѕРІ.");
 	}
 	else //FIGHT_NONE oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_WannaJoin_13_04"); //Ты? Я не помню, чтобы таких трусов как ты когда-либо принимали в наемники...
+		AI_Output (self, other,"DIA_Buster_WannaJoin_13_04"); //РўС‹? РЇ РЅРµ РїРѕРјРЅСЋ, С‡С‚РѕР±С‹ С‚Р°РєРёС… С‚СЂСѓСЃРѕРІ РєР°Рє С‚С‹ РєРѕРіРґР°-Р»РёР±Рѕ РїСЂРёРЅРёРјР°Р»Рё РІ РЅР°РµРјРЅРёРєРё...
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 		{
-			AI_Output (self, other,"DIA_Buster_WannaJoin_13_05"); //Ты убегаешь от дуэли - таким как ты здесь нечего делать!
+			AI_Output (self, other,"DIA_Buster_WannaJoin_13_05"); //РўС‹ СѓР±РµРіР°РµС€СЊ РѕС‚ РґСѓСЌР»Рё - С‚Р°РєРёРј РєР°Рє С‚С‹ Р·РґРµСЃСЊ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ!
 		};
 	};
 };
 
 // ************************************************************
-// 		  				 Mehr ьber Sцldner		
+// 		  				 Mehr СЊber SС†ldner		
 // ************************************************************
 var int Buster_SentenzaTip;
 
@@ -354,7 +354,7 @@ INSTANCE DIA_Buster_OtherSld (C_INFO)
 	condition	= DIA_Buster_OtherSld_Condition;
 	information	= DIA_Buster_OtherSld_Info;
 	permanent	= FALSE;
-	description = "Я хочу узнать больше о наемниках и этой местности.";
+	description = "РЇ С…РѕС‡Сѓ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ Рѕ РЅР°РµРјРЅРёРєР°С… Рё СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё.";
 };                       
 
 FUNC INT DIA_Buster_OtherSld_Condition()
@@ -367,15 +367,15 @@ FUNC INT DIA_Buster_OtherSld_Condition()
  
 FUNC VOID DIA_Buster_OtherSld_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_OtherSld_15_00"); //Я хочу узнать больше о наемниках и этой местности.
-	AI_Output (self, other,"DIA_Buster_OtherSld_13_01"); //О местности я мало что могу сказать. Тебе лучше поспрашивать фермеров.
-	AI_Output (self, other,"DIA_Buster_OtherSld_13_02"); //А что касается наемников - то правила у нас просты: если можешь постоять за себя - добро пожаловать к нам.
+	AI_Output (other, self,"DIA_Buster_OtherSld_15_00"); //РЇ С…РѕС‡Сѓ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ Рѕ РЅР°РµРјРЅРёРєР°С… Рё СЌС‚РѕР№ РјРµСЃС‚РЅРѕСЃС‚Рё.
+	AI_Output (self, other,"DIA_Buster_OtherSld_13_01"); //Рћ РјРµСЃС‚РЅРѕСЃС‚Рё СЏ РјР°Р»Рѕ С‡С‚Рѕ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ. РўРµР±Рµ Р»СѓС‡С€Рµ РїРѕСЃРїСЂР°С€РёРІР°С‚СЊ С„РµСЂРјРµСЂРѕРІ.
+	AI_Output (self, other,"DIA_Buster_OtherSld_13_02"); //Рђ С‡С‚Рѕ РєР°СЃР°РµС‚СЃСЏ РЅР°РµРјРЅРёРєРѕРІ - С‚Рѕ РїСЂР°РІРёР»Р° Сѓ РЅР°СЃ РїСЂРѕСЃС‚С‹: РµСЃР»Рё РјРѕР¶РµС€СЊ РїРѕСЃС‚РѕСЏС‚СЊ Р·Р° СЃРµР±СЏ - РґРѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ Рє РЅР°Рј.
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_03"); //Я думаю, ты достоин стать одним из нас.
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_04"); //Но не стоит обольщаться. Тебе просто повезло во время нашего последнего боя.
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_05"); //На этой ферме полно парней, которые будут получше меня...
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_06"); //Сентенза, например. Он охраняет вход на ферму. Тебе лучше не связываться с ним.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_03"); //РЇ РґСѓРјР°СЋ, С‚С‹ РґРѕСЃС‚РѕРёРЅ СЃС‚Р°С‚СЊ РѕРґРЅРёРј РёР· РЅР°СЃ.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_04"); //РќРѕ РЅРµ СЃС‚РѕРёС‚ РѕР±РѕР»СЊС‰Р°С‚СЊСЃСЏ. РўРµР±Рµ РїСЂРѕСЃС‚Рѕ РїРѕРІРµР·Р»Рѕ РІРѕ РІСЂРµРјСЏ РЅР°С€РµРіРѕ РїРѕСЃР»РµРґРЅРµРіРѕ Р±РѕСЏ.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_05"); //РќР° СЌС‚РѕР№ С„РµСЂРјРµ РїРѕР»РЅРѕ РїР°СЂРЅРµР№, РєРѕС‚РѕСЂС‹Рµ Р±СѓРґСѓС‚ РїРѕР»СѓС‡С€Рµ РјРµРЅСЏ...
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_06"); //РЎРµРЅС‚РµРЅР·Р°, РЅР°РїСЂРёРјРµСЂ. РћРЅ РѕС…СЂР°РЅСЏРµС‚ РІС…РѕРґ РЅР° С„РµСЂРјСѓ. РўРµР±Рµ Р»СѓС‡С€Рµ РЅРµ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ РЅРёРј.
 		Buster_SentenzaTip = TRUE;
 	}
 	else if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
@@ -384,7 +384,7 @@ FUNC VOID DIA_Buster_OtherSld_Info()
 	}
 	else  //FIGHT_NONE oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_07"); //Но зачем я говорю тебе все это, слизняк?!
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_07"); //РќРѕ Р·Р°С‡РµРј СЏ РіРѕРІРѕСЂСЋ С‚РµР±Рµ РІСЃРµ СЌС‚Рѕ, СЃР»РёР·РЅСЏРє?!
 		AI_StopProcessInfos (self);		
 	};
 };
@@ -402,7 +402,7 @@ INSTANCE DIA_Buster_AboutSentenza (C_INFO)
 	condition	= DIA_Buster_AboutSentenza_Condition;
 	information	= DIA_Buster_AboutSentenza_Info;
 	permanent	= FALSE;
-	description = "Что там насчет Сентензы?";
+	description = "Р§С‚Рѕ С‚Р°Рј РЅР°СЃС‡РµС‚ РЎРµРЅС‚РµРЅР·С‹?";
 };                       
 
 FUNC INT DIA_Buster_AboutSentenza_Condition()
@@ -415,23 +415,23 @@ FUNC INT DIA_Buster_AboutSentenza_Condition()
  
 FUNC VOID DIA_Buster_AboutSentenza_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_00"); //Что там насчет Сентензы?
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_01"); //Он попытается вытрясти из тебя золото, когда ты будешь входить на ферму - он делает это со всеми.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_02"); //На твоем месте, я бы заплатил. Я сам так и сделал, когда пришел туда первый раз. И что хорошо, он проголосовал за меня после этого.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_03"); //Услуга за услугу, как он сказал. Я потерял при этом все свое золото, но его все равно было немного. А потом я даже порадовался этому.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_04"); //Я видел, как он избивал парня, который решил НЕ платить ему.
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_05"); //Спасибо за совет.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_06"); //Пожалуйста. Он много для тебя значит?
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_00"); //Р§С‚Рѕ С‚Р°Рј РЅР°СЃС‡РµС‚ РЎРµРЅС‚РµРЅР·С‹?
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_01"); //РћРЅ РїРѕРїС‹С‚Р°РµС‚СЃСЏ РІС‹С‚СЂСЏСЃС‚Рё РёР· С‚РµР±СЏ Р·РѕР»РѕС‚Рѕ, РєРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ РІС…РѕРґРёС‚СЊ РЅР° С„РµСЂРјСѓ - РѕРЅ РґРµР»Р°РµС‚ СЌС‚Рѕ СЃРѕ РІСЃРµРјРё.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_02"); //РќР° С‚РІРѕРµРј РјРµСЃС‚Рµ, СЏ Р±С‹ Р·Р°РїР»Р°С‚РёР». РЇ СЃР°Рј С‚Р°Рє Рё СЃРґРµР»Р°Р», РєРѕРіРґР° РїСЂРёС€РµР» С‚СѓРґР° РїРµСЂРІС‹Р№ СЂР°Р·. Р С‡С‚Рѕ С…РѕСЂРѕС€Рѕ, РѕРЅ РїСЂРѕРіРѕР»РѕСЃРѕРІР°Р» Р·Р° РјРµРЅСЏ РїРѕСЃР»Рµ СЌС‚РѕРіРѕ.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_03"); //РЈСЃР»СѓРіР° Р·Р° СѓСЃР»СѓРіСѓ, РєР°Рє РѕРЅ СЃРєР°Р·Р°Р». РЇ РїРѕС‚РµСЂСЏР» РїСЂРё СЌС‚РѕРј РІСЃРµ СЃРІРѕРµ Р·РѕР»РѕС‚Рѕ, РЅРѕ РµРіРѕ РІСЃРµ СЂР°РІРЅРѕ Р±С‹Р»Рѕ РЅРµРјРЅРѕРіРѕ. Рђ РїРѕС‚РѕРј СЏ РґР°Р¶Рµ РїРѕСЂР°РґРѕРІР°Р»СЃСЏ СЌС‚РѕРјСѓ.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_04"); //РЇ РІРёРґРµР», РєР°Рє РѕРЅ РёР·Р±РёРІР°Р» РїР°СЂРЅСЏ, РєРѕС‚РѕСЂС‹Р№ СЂРµС€РёР» РќР• РїР»Р°С‚РёС‚СЊ РµРјСѓ.
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_05"); //РЎРїР°СЃРёР±Рѕ Р·Р° СЃРѕРІРµС‚.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_06"); //РџРѕР¶Р°Р»СѓР№СЃС‚Р°. РћРЅ РјРЅРѕРіРѕ РґР»СЏ С‚РµР±СЏ Р·РЅР°С‡РёС‚?
 
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
-	Info_AddChoice (DIA_Buster_AboutSentenza, "Нет.", DIA_Buster_AboutSentenza_No);
-	Info_AddChoice (DIA_Buster_AboutSentenza, "Да, вот держи - 5 золотых монет.", DIA_Buster_AboutSentenza_Give);
+	Info_AddChoice (DIA_Buster_AboutSentenza, "РќРµС‚.", DIA_Buster_AboutSentenza_No);
+	Info_AddChoice (DIA_Buster_AboutSentenza, "Р”Р°, РІРѕС‚ РґРµСЂР¶Рё - 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.", DIA_Buster_AboutSentenza_Give);
 };
 
 func void DIA_Buster_AboutSentenza_Give()
 {
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_Give_15_00"); //Да, вот держи - 5 золотых монет.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_Give_13_01"); //Спасибо. Похоже, все не так уж плохо. Я не забуду твоей доброты.
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_Give_15_00"); //Р”Р°, РІРѕС‚ РґРµСЂР¶Рё - 5 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_Give_13_01"); //РЎРїР°СЃРёР±Рѕ. РџРѕС…РѕР¶Рµ, РІСЃРµ РЅРµ С‚Р°Рє СѓР¶ РїР»РѕС…Рѕ. РЇ РЅРµ Р·Р°Р±СѓРґСѓ С‚РІРѕРµР№ РґРѕР±СЂРѕС‚С‹.
 	Buster_GoldZumBrennen = TRUE;
 	Buster_Bonus = 50;
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
@@ -439,8 +439,8 @@ func void DIA_Buster_AboutSentenza_Give()
 
 func void DIA_Buster_AboutSentenza_No()
 {
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_No_15_00"); //Нет.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_No_13_01"); //Я так и думал.
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_No_15_00"); //РќРµС‚.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_No_13_01"); //РЇ С‚Р°Рє Рё РґСѓРјР°Р».
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
 };
 
@@ -455,7 +455,7 @@ INSTANCE DIA_Buster_LeeLeader (C_INFO)
 	condition	= DIA_Buster_LeeLeader_Condition;
 	information	= DIA_Buster_LeeLeader_Info;
 	permanent	= FALSE;
-	description = "Наемников возглавляет Ли, да?";
+	description = "РќР°РµРјРЅРёРєРѕРІ РІРѕР·РіР»Р°РІР»СЏРµС‚ Р›Рё, РґР°?";
 };                       
 
 FUNC INT DIA_Buster_LeeLeader_Condition()
@@ -468,12 +468,12 @@ FUNC INT DIA_Buster_LeeLeader_Condition()
  
 FUNC VOID DIA_Buster_LeeLeader_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_00"); //Наемников возглавляет Ли, да?
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_01"); //Правильно - эй, теперь я вспомнил, где видел тебя! Ты тоже был в колонии.
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_02"); //(вздыхает) Как и я.
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_03"); //Я не видел тебя, когда все рвануло. И незадолго перед этим тоже.
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_04"); //У меня были другие проблемы.
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_05"); //Тогда ты многое пропустил - с тех пор многое изменилось.
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_00"); //РќР°РµРјРЅРёРєРѕРІ РІРѕР·РіР»Р°РІР»СЏРµС‚ Р›Рё, РґР°?
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_01"); //РџСЂР°РІРёР»СЊРЅРѕ - СЌР№, С‚РµРїРµСЂСЊ СЏ РІСЃРїРѕРјРЅРёР», РіРґРµ РІРёРґРµР» С‚РµР±СЏ! РўС‹ С‚РѕР¶Рµ Р±С‹Р» РІ РєРѕР»РѕРЅРёРё.
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_02"); //(РІР·РґС‹С…Р°РµС‚) РљР°Рє Рё СЏ.
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_03"); //РЇ РЅРµ РІРёРґРµР» С‚РµР±СЏ, РєРѕРіРґР° РІСЃРµ СЂРІР°РЅСѓР»Рѕ. Р РЅРµР·Р°РґРѕР»РіРѕ РїРµСЂРµРґ СЌС‚РёРј С‚РѕР¶Рµ.
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_04"); //РЈ РјРµРЅСЏ Р±С‹Р»Рё РґСЂСѓРіРёРµ РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_05"); //РўРѕРіРґР° С‚С‹ РјРЅРѕРіРѕРµ РїСЂРѕРїСѓСЃС‚РёР» - СЃ С‚РµС… РїРѕСЂ РјРЅРѕРіРѕРµ РёР·РјРµРЅРёР»РѕСЃСЊ.
 };
 
 
@@ -488,7 +488,7 @@ INSTANCE DIA_Buster_WhatHappened (C_INFO)
 	condition	= DIA_Buster_WhatHappened_Condition;
 	information	= DIA_Buster_WhatHappened_Info;
 	permanent	= FALSE;
-	description = "Что стало с наемниками из колонии?";
+	description = "Р§С‚Рѕ СЃС‚Р°Р»Рѕ СЃ РЅР°РµРјРЅРёРєР°РјРё РёР· РєРѕР»РѕРЅРёРё?";
 };                       
 
 FUNC INT DIA_Buster_WhatHappened_Condition()
@@ -502,11 +502,11 @@ FUNC INT DIA_Buster_WhatHappened_Condition()
  
 FUNC VOID DIA_Buster_WhatHappened_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_WhatHappened_15_00"); //Что стало с наемниками из колонии?
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_01"); //После того, как Барьера не стало, Ли вывел нас из колонии. Он сказал, что нам ничего  не страшно, если мы будем держаться вместе. И он был прав.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_02"); //Вскоре мы нашли здесь себе тепленькое местечко. Лендлорд платит нам, чтобы мы не пускали ополчение из города.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_03"); //Хотя большинство из нас готово делать это даже бесплатно.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_04"); //Онар кормит нас всех, и мы можем спокойно ждать, когда подвернется возможность убраться с этого проклятого острова.
+	AI_Output (other, self,"DIA_Buster_WhatHappened_15_00"); //Р§С‚Рѕ СЃС‚Р°Р»Рѕ СЃ РЅР°РµРјРЅРёРєР°РјРё РёР· РєРѕР»РѕРЅРёРё?
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_01"); //РџРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє Р‘Р°СЂСЊРµСЂР° РЅРµ СЃС‚Р°Р»Рѕ, Р›Рё РІС‹РІРµР» РЅР°СЃ РёР· РєРѕР»РѕРЅРёРё. РћРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅР°Рј РЅРёС‡РµРіРѕ  РЅРµ СЃС‚СЂР°С€РЅРѕ, РµСЃР»Рё РјС‹ Р±СѓРґРµРј РґРµСЂР¶Р°С‚СЊСЃСЏ РІРјРµСЃС‚Рµ. Р РѕРЅ Р±С‹Р» РїСЂР°РІ.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_02"); //Р’СЃРєРѕСЂРµ РјС‹ РЅР°С€Р»Рё Р·РґРµСЃСЊ СЃРµР±Рµ С‚РµРїР»РµРЅСЊРєРѕРµ РјРµСЃС‚РµС‡РєРѕ. Р›РµРЅРґР»РѕСЂРґ РїР»Р°С‚РёС‚ РЅР°Рј, С‡С‚РѕР±С‹ РјС‹ РЅРµ РїСѓСЃРєР°Р»Рё РѕРїРѕР»С‡РµРЅРёРµ РёР· РіРѕСЂРѕРґР°.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_03"); //РҐРѕС‚СЏ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅР°СЃ РіРѕС‚РѕРІРѕ РґРµР»Р°С‚СЊ СЌС‚Рѕ РґР°Р¶Рµ Р±РµСЃРїР»Р°С‚РЅРѕ.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_04"); //РћРЅР°СЂ РєРѕСЂРјРёС‚ РЅР°СЃ РІСЃРµС…, Рё РјС‹ РјРѕР¶РµРј СЃРїРѕРєРѕР№РЅРѕ Р¶РґР°С‚СЊ, РєРѕРіРґР° РїРѕРґРІРµСЂРЅРµС‚СЃСЏ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ СѓР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕРіРѕ РїСЂРѕРєР»СЏС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°.
 };
 
 
@@ -520,7 +520,7 @@ INSTANCE DIA_Buster_Teach (C_INFO)
 	condition	= DIA_Buster_Teach_Condition;
 	information	= DIA_Buster_Teach_Info;
 	permanent	= TRUE;
-	description = "Ты можешь научить меня сражаться?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?";
 };                       
 
 FUNC INT DIA_Buster_Teach_Condition()
@@ -532,20 +532,20 @@ FUNC INT DIA_Buster_Teach_Condition()
 };
 FUNC VOID DIA_Buster_Teach_Info()
 {	
-	AI_Output (other, self, "DIA_Buster_Teach_15_00"); //Ты можешь научить меня сражаться?
+	AI_Output (other, self, "DIA_Buster_Teach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?
 	if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Buster_Teach_13_01"); //Да, я могу показать тебе парочку приемов...
+		AI_Output (self, other, "DIA_Buster_Teach_13_01"); //Р”Р°, СЏ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ РїР°СЂРѕС‡РєСѓ РїСЂРёРµРјРѕРІ...
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Buster_Teach_13_02"); //Ты не так уж глуп, как кажешься. Хорошо, я научу тебя тому, что знаю сам. Тогда, может быть, у тебя появятся шансы против меня...
+		AI_Output (self, other, "DIA_Buster_Teach_13_02"); //РўС‹ РЅРµ С‚Р°Рє СѓР¶ РіР»СѓРї, РєР°Рє РєР°Р¶РµС€СЊСЃСЏ. РҐРѕСЂРѕС€Рѕ, СЏ РЅР°СѓС‡Сѓ С‚РµР±СЏ С‚РѕРјСѓ, С‡С‚Рѕ Р·РЅР°СЋ СЃР°Рј. РўРѕРіРґР°, РјРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ С‚РµР±СЏ РїРѕСЏРІСЏС‚СЃСЏ С€Р°РЅСЃС‹ РїСЂРѕС‚РёРІ РјРµРЅСЏ...
 	};
 	
 	if (BusterLOG == FALSE)
 	{
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTeacher,"Бастер может обучить меня искусству владения одноручным оружием.");
+		B_LogEntry (Topic_SoldierTeacher,"Р‘Р°СЃС‚РµСЂ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ РІР»Р°РґРµРЅРёСЏ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 		BusterLOG = TRUE;
 	};
 	Info_ClearChoices 	(DIA_Buster_Teach);
@@ -641,57 +641,57 @@ func void B_DIA_Buster_SHADOWBEASTS_OK ()
 
 func void DIA_Buster_SHADOWBEASTS_Info ()
 {
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_00"); //Эй, приятель!
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_01"); //Что тебе нужно?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_02"); //Последнее время я все думаю, как можно заработать денег в этой дыре.
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_03"); //И?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_04"); //Мне кажется, я знаю, как это можно сделать.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_05"); //Торговец из города готов выложить круглую сумму за определенный товар.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_00"); //Р­Р№, РїСЂРёСЏС‚РµР»СЊ!
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_02"); //РџРѕСЃР»РµРґРЅРµРµ РІСЂРµРјСЏ СЏ РІСЃРµ РґСѓРјР°СЋ, РєР°Рє РјРѕР¶РЅРѕ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РґРµРЅРµРі РІ СЌС‚РѕР№ РґС‹СЂРµ.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_03"); //Р?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_04"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, СЏ Р·РЅР°СЋ, РєР°Рє СЌС‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_05"); //РўРѕСЂРіРѕРІРµС† РёР· РіРѕСЂРѕРґР° РіРѕС‚РѕРІ РІС‹Р»РѕР¶РёС‚СЊ РєСЂСѓРіР»СѓСЋ СЃСѓРјРјСѓ Р·Р° РѕРїСЂРµРґРµР»РµРЅРЅС‹Р№ С‚РѕРІР°СЂ.
 
 	Info_ClearChoices	(DIA_Buster_SHADOWBEASTS);
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Кто этот торговец, о котором ты говоришь?", DIA_Buster_SHADOWBEASTS_wer );
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Что ты там придумал?", DIA_Buster_SHADOWBEASTS_was );
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Зачем ты говоришь мне все это?", DIA_Buster_SHADOWBEASTS_ich );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "РљС‚Рѕ СЌС‚РѕС‚ С‚РѕСЂРіРѕРІРµС†, Рѕ РєРѕС‚РѕСЂРѕРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ?", DIA_Buster_SHADOWBEASTS_wer );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Р§С‚Рѕ С‚С‹ С‚Р°Рј РїСЂРёРґСѓРјР°Р»?", DIA_Buster_SHADOWBEASTS_was );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Р—Р°С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ РјРЅРµ РІСЃРµ СЌС‚Рѕ?", DIA_Buster_SHADOWBEASTS_ich );
 
 };
 func void DIA_Buster_SHADOWBEASTS_ich ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_00"); //Зачем ты говоришь мне все это?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_01"); //Сам я не могу это сделать. Я должен оставаться здесь и присматривать за этими чертовыми баранами.
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_02"); //Ты хочешь сказать, за фермерами.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_03"); //Ну, я так и сказал.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_00"); //Р—Р°С‡РµРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ РјРЅРµ РІСЃРµ СЌС‚Рѕ?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_01"); //РЎР°Рј СЏ РЅРµ РјРѕРіСѓ СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ. РЇ РґРѕР»Р¶РµРЅ РѕСЃС‚Р°РІР°С‚СЊСЃСЏ Р·РґРµСЃСЊ Рё РїСЂРёСЃРјР°С‚СЂРёРІР°С‚СЊ Р·Р° СЌС‚РёРјРё С‡РµСЂС‚РѕРІС‹РјРё Р±Р°СЂР°РЅР°РјРё.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_02"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, Р·Р° С„РµСЂРјРµСЂР°РјРё.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_03"); //РќСѓ, СЏ С‚Р°Рє Рё СЃРєР°Р·Р°Р».
 
 };
 func void DIA_Buster_SHADOWBEASTS_was ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_15_00"); //Что ты там придумал?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_01"); //Этот торговец утверждает, что может очень выгодно продать рога мракорисов.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_02"); //Кто-то должен сходить в лес и поохотиться на этих тварей. Вот для этого ты и нужен.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_15_00"); //Р§С‚Рѕ С‚С‹ С‚Р°Рј РїСЂРёРґСѓРјР°Р»?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_01"); //Р­С‚РѕС‚ С‚РѕСЂРіРѕРІРµС† СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ РјРѕР¶РµС‚ РѕС‡РµРЅСЊ РІС‹РіРѕРґРЅРѕ РїСЂРѕРґР°С‚СЊ СЂРѕРіР° РјСЂР°РєРѕСЂРёСЃРѕРІ.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_02"); //РљС‚Рѕ-С‚Рѕ РґРѕР»Р¶РµРЅ СЃС…РѕРґРёС‚СЊ РІ Р»РµСЃ Рё РїРѕРѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° СЌС‚РёС… С‚РІР°СЂРµР№. Р’РѕС‚ РґР»СЏ СЌС‚РѕРіРѕ С‚С‹ Рё РЅСѓР¶РµРЅ.
 
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Сколько на этом можно заработать?", DIA_Buster_SHADOWBEASTS_was_wieviel );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "РЎРєРѕР»СЊРєРѕ РЅР° СЌС‚РѕРј РјРѕР¶РЅРѕ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ?", DIA_Buster_SHADOWBEASTS_was_wieviel );
 };
 func void DIA_Buster_SHADOWBEASTS_was_wieviel ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_00"); //Сколько на этом можно заработать?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_01"); //Целую кучу денег! Этого хватит нам обоим.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_00"); //РЎРєРѕР»СЊРєРѕ РЅР° СЌС‚РѕРј РјРѕР¶РЅРѕ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_01"); //Р¦РµР»СѓСЋ РєСѓС‡Сѓ РґРµРЅРµРі! Р­С‚РѕРіРѕ С…РІР°С‚РёС‚ РЅР°Рј РѕР±РѕРёРј.
 	if (Buster_GoldZumBrennen == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_02"); //А помня о том золоте, что ты дал мне, я сделаю для тебя особую цену.
+		AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_02"); //Рђ РїРѕРјРЅСЏ Рѕ С‚РѕРј Р·РѕР»РѕС‚Рµ, С‡С‚Рѕ С‚С‹ РґР°Р» РјРЅРµ, СЏ СЃРґРµР»Р°СЋ РґР»СЏ С‚РµР±СЏ РѕСЃРѕР±СѓСЋ С†РµРЅСѓ.
 	};
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_03"); //Звучит заманчиво! Я дам тебе знать, когда добуду эти рога.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_03"); //Р—РІСѓС‡РёС‚ Р·Р°РјР°РЅС‡РёРІРѕ! РЇ РґР°Рј С‚РµР±Рµ Р·РЅР°С‚СЊ, РєРѕРіРґР° РґРѕР±СѓРґСѓ СЌС‚Рё СЂРѕРіР°.
 	MIS_Buster_KillShadowbeasts_DJG = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Buster_KillShadowbeasts, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Buster_KillShadowbeasts, LOG_RUNNING);
-	B_LogEntry (TOPIC_Buster_KillShadowbeasts,"Бастер даст хорошую цену за каждый рог мракориса, что я принесу ему."); 
+	B_LogEntry (TOPIC_Buster_KillShadowbeasts,"Р‘Р°СЃС‚РµСЂ РґР°СЃС‚ С…РѕСЂРѕС€СѓСЋ С†РµРЅСѓ Р·Р° РєР°Р¶РґС‹Р№ СЂРѕРі РјСЂР°РєРѕСЂРёСЃР°, С‡С‚Рѕ СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ."); 
 
 	Info_ClearChoices	(DIA_Buster_SHADOWBEASTS);
 };
 func void DIA_Buster_SHADOWBEASTS_wer ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_wer_15_00"); //Кто этот торговец, о котором ты говоришь?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_01"); //Так не пойдет, приятель. Я что, по-твоему, дурак - раскрывать свои источники? Ты что, хочешь обмануть меня?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_02"); //Либо ты будешь иметь дело со МНОЙ, или можешь забыть об этом, понятно?
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_wer_15_00"); //РљС‚Рѕ СЌС‚РѕС‚ С‚РѕСЂРіРѕРІРµС†, Рѕ РєРѕС‚РѕСЂРѕРј С‚С‹ РіРѕРІРѕСЂРёС€СЊ?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_01"); //РўР°Рє РЅРµ РїРѕР№РґРµС‚, РїСЂРёСЏС‚РµР»СЊ. РЇ С‡С‚Рѕ, РїРѕ-С‚РІРѕРµРјСѓ, РґСѓСЂР°Рє - СЂР°СЃРєСЂС‹РІР°С‚СЊ СЃРІРѕРё РёСЃС‚РѕС‡РЅРёРєРё? РўС‹ С‡С‚Рѕ, С…РѕС‡РµС€СЊ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_02"); //Р›РёР±Рѕ С‚С‹ Р±СѓРґРµС€СЊ РёРјРµС‚СЊ РґРµР»Рѕ СЃРѕ РњРќРћР™, РёР»Рё РјРѕР¶РµС€СЊ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј, РїРѕРЅСЏС‚РЅРѕ?
 
 };
 
@@ -706,7 +706,7 @@ instance DIA_Buster_BringTrophyShadowbeast		(C_INFO)
 	information	 = 	DIA_Buster_BringTrophyShadowbeast_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет рогов мракорисов ...";
+	description	 = 	"РќР°СЃС‡РµС‚ СЂРѕРіРѕРІ РјСЂР°РєРѕСЂРёСЃРѕРІ ...";
 };
 
 func int DIA_Buster_BringTrophyShadowbeast_Condition ()
@@ -725,20 +725,20 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 {
 	if ((Kapitel >= 5))
 	{
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_00"); //Мой торговец из города передал прощальный привет.
-		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_15_01"); //Что это значит?
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_02"); //Он мертв. Можешь оставить эти рога себе. Теперь я все равно не знаю, что с ними делать.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_00"); //РњРѕР№ С‚РѕСЂРіРѕРІРµС† РёР· РіРѕСЂРѕРґР° РїРµСЂРµРґР°Р» РїСЂРѕС‰Р°Р»СЊРЅС‹Р№ РїСЂРёРІРµС‚.
+		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_15_01"); //Р§С‚Рѕ СЌС‚Рѕ Р·РЅР°С‡РёС‚?
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_02"); //РћРЅ РјРµСЂС‚РІ. РњРѕР¶РµС€СЊ РѕСЃС‚Р°РІРёС‚СЊ СЌС‚Рё СЂРѕРіР° СЃРµР±Рµ. РўРµРїРµСЂСЊ СЏ РІСЃРµ СЂР°РІРЅРѕ РЅРµ Р·РЅР°СЋ, С‡С‚Рѕ СЃ РЅРёРјРё РґРµР»Р°С‚СЊ.
 		MIS_Buster_KillShadowbeasts_DJG = LOG_SUCCESS; //Joly: Feierabend ab Kapitel 5!!!!!!!
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_15_03"); //А как нужно потрошить мракориса?
-		AI_Output			(self, other, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_13_04"); //Ты этого не знаешь? Ох, парень, я думал о тебе лучше.
+		AI_Output			(other, self, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_15_03"); //Рђ РєР°Рє РЅСѓР¶РЅРѕ РїРѕС‚СЂРѕС€РёС‚СЊ РјСЂР°РєРѕСЂРёСЃР°?
+		AI_Output			(self, other, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_13_04"); //РўС‹ СЌС‚РѕРіРѕ РЅРµ Р·РЅР°РµС€СЊ? РћС…, РїР°СЂРµРЅСЊ, СЏ РґСѓРјР°Р» Рѕ С‚РµР±Рµ Р»СѓС‡С€Рµ.
 	
 		Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
-		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, "Я вернусь к тебе с рогами.", DIA_Buster_BringTrophyShadowbeast_back );
-		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, B_BuildLearnString ("Научи меня.",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Buster_BringTrophyShadowbeast_teach );
+		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, "РЇ РІРµСЂРЅСѓСЃСЊ Рє С‚РµР±Рµ СЃ СЂРѕРіР°РјРё.", DIA_Buster_BringTrophyShadowbeast_back );
+		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, B_BuildLearnString ("РќР°СѓС‡Рё РјРµРЅСЏ.",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Buster_BringTrophyShadowbeast_teach );
 	}
 	else 
 	{
@@ -755,14 +755,14 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 	
 		if (BusterTrophyShadowbeastCount == 1)
 			{
-				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_05"); //Я принес тебе рог мракориса.
+				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_05"); //РЇ РїСЂРёРЅРµСЃ С‚РµР±Рµ СЂРѕРі РјСЂР°РєРѕСЂРёСЃР°.
 				B_GivePlayerXP (XP_BringBusterTrophyShadowbeast);
 				B_GiveInvItems (other, self, ItAt_ShadowHorn,1);
 				BusterTrophyShadowbeastCounter = BusterTrophyShadowbeastCounter + 1;
 			}
 			else
 			{
-				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_06"); //Я принес рога мракорисов для твоего торговца.
+				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_06"); //РЇ РїСЂРёРЅРµСЃ СЂРѕРіР° РјСЂР°РєРѕСЂРёСЃРѕРІ РґР»СЏ С‚РІРѕРµРіРѕ С‚РѕСЂРіРѕРІС†Р°.
 	
 				B_GiveInvItems (other, self, ItAt_ShadowHorn,  BusterTrophyShadowbeastCount);
 	
@@ -772,8 +772,8 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 				B_GivePlayerXP (XP_BringBusterTrophyShadowbeasts);
 			};
 	
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_07"); //Отлично. Давай сюда. И принеси еще, если сможешь. Кто знает, как долго торговцу будут интересны эти рога.
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_08"); //Вот твоя доля.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_07"); //РћС‚Р»РёС‡РЅРѕ. Р”Р°РІР°Р№ СЃСЋРґР°. Р РїСЂРёРЅРµСЃРё РµС‰Рµ, РµСЃР»Рё СЃРјРѕР¶РµС€СЊ. РљС‚Рѕ Р·РЅР°РµС‚, РєР°Рє РґРѕР»РіРѕ С‚РѕСЂРіРѕРІС†Сѓ Р±СѓРґСѓС‚ РёРЅС‚РµСЂРµСЃРЅС‹ СЌС‚Рё СЂРѕРіР°.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_08"); //Р’РѕС‚ С‚РІРѕСЏ РґРѕР»СЏ.
 	
 		BusterTrophyShadowbeastGeld	= (BusterTrophyShadowbeastCount * BustersBusterTrophyShadowbeastOffer);
 	
@@ -784,22 +784,22 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 };
 func void DIA_Buster_BringTrophyShadowbeast_teach ()
 {
-	AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_teach_15_00"); //Научи меня.
+	AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_teach_15_00"); //РќР°СѓС‡Рё РјРµРЅСЏ.
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_01"); //Ладно, слушай. Убиваешь мракориса, и как можно крепче берешь его рог правой рукой.
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_02"); //Затем приставляешь нож к его лбу и делаешь глубокий разрез вокруг рога.
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_03"); //Ну, а потом просто поддеваешь рог ножом, используя его как рычаг, и кладешь рог себе в карман.
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_04"); //И приносишь его мне. Я думаю, у тебя получится.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_01"); //Р›Р°РґРЅРѕ, СЃР»СѓС€Р°Р№. РЈР±РёРІР°РµС€СЊ РјСЂР°РєРѕСЂРёСЃР°, Рё РєР°Рє РјРѕР¶РЅРѕ РєСЂРµРїС‡Рµ Р±РµСЂРµС€СЊ РµРіРѕ СЂРѕРі РїСЂР°РІРѕР№ СЂСѓРєРѕР№.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_02"); //Р—Р°С‚РµРј РїСЂРёСЃС‚Р°РІР»СЏРµС€СЊ РЅРѕР¶ Рє РµРіРѕ Р»Р±Сѓ Рё РґРµР»Р°РµС€СЊ РіР»СѓР±РѕРєРёР№ СЂР°Р·СЂРµР· РІРѕРєСЂСѓРі СЂРѕРіР°.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_03"); //РќСѓ, Р° РїРѕС‚РѕРј РїСЂРѕСЃС‚Рѕ РїРѕРґРґРµРІР°РµС€СЊ СЂРѕРі РЅРѕР¶РѕРј, РёСЃРїРѕР»СЊР·СѓСЏ РµРіРѕ РєР°Рє СЂС‹С‡Р°Рі, Рё РєР»Р°РґРµС€СЊ СЂРѕРі СЃРµР±Рµ РІ РєР°СЂРјР°РЅ.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_04"); //Р РїСЂРёРЅРѕСЃРёС€СЊ РµРіРѕ РјРЅРµ. РЇ РґСѓРјР°СЋ, Сѓ С‚РµР±СЏ РїРѕР»СѓС‡РёС‚СЃСЏ.
 		};		
 	Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
 };
 
 func void DIA_Buster_BringTrophyShadowbeast_back ()
 {
-		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_back_15_00"); //Я вернусь к тебе с рогами.
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_back_13_01"); //Надеюсь.
+		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_back_15_00"); //РЇ РІРµСЂРЅСѓСЃСЊ Рє С‚РµР±Рµ СЃ СЂРѕРіР°РјРё.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_back_13_01"); //РќР°РґРµСЋСЃСЊ.
 		Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
 };
 
@@ -848,7 +848,7 @@ INSTANCE DIA_Buster_Perm4 (C_INFO)
 	condition	= DIA_Buster_Perm4_Condition;
 	information	= DIA_Buster_Perm4_Info;
 	permanent	= TRUE;
-	description = "Что ты думаешь об охотников на драконов?";
+	description = "Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ?";
 };                       
 
 FUNC INT DIA_Buster_Perm4_Condition()
@@ -861,9 +861,9 @@ FUNC INT DIA_Buster_Perm4_Condition()
  
 FUNC VOID DIA_Buster_Perm4_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_Perm4_15_00"); //Что ты думаешь об охотников на драконов?
-	AI_Output (self, other,"DIA_Buster_Perm4_13_01"); //Эти парни могут заработать целую кучу золота - если не сыграют в ящик.
-	AI_Output (self, other,"DIA_Buster_Perm4_13_02"); //А я предпочитаю остаться с Ли.
+	AI_Output (other, self,"DIA_Buster_Perm4_15_00"); //Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output (self, other,"DIA_Buster_Perm4_13_01"); //Р­С‚Рё РїР°СЂРЅРё РјРѕРіСѓС‚ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ С†РµР»СѓСЋ РєСѓС‡Сѓ Р·РѕР»РѕС‚Р° - РµСЃР»Рё РЅРµ СЃС‹РіСЂР°СЋС‚ РІ СЏС‰РёРє.
+	AI_Output (self, other,"DIA_Buster_Perm4_13_02"); //Рђ СЏ РїСЂРµРґРїРѕС‡РёС‚Р°СЋ РѕСЃС‚Р°С‚СЊСЃСЏ СЃ Р›Рё.
 };
 
 //#####################################################################

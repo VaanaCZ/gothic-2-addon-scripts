@@ -78,10 +78,10 @@ FUNC INT DIA_Addon_Esteban_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_00");//Так ты тот самый парень, что с боем пробился в лагерь.
-	AI_Output (other, self, "DIA_Addon_Esteban_Hi_15_01");//Слухи быстро распространяются...
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_02");//Франко был крепким орешком. Никто не хотел связываться с ним. Никто - кроме тебя.
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_03");//Просто чтобы сразу прояснить ситуацию - если ты затеешь то же со мной, я убью тебя.
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_00");//РўР°Рє С‚С‹ С‚РѕС‚ СЃР°РјС‹Р№ РїР°СЂРµРЅСЊ, С‡С‚Рѕ СЃ Р±РѕРµРј РїСЂРѕР±РёР»СЃСЏ РІ Р»Р°РіРµСЂСЊ.
+	AI_Output (other, self, "DIA_Addon_Esteban_Hi_15_01");//РЎР»СѓС…Рё Р±С‹СЃС‚СЂРѕ СЂР°СЃРїСЂРѕСЃС‚СЂР°РЅСЏСЋС‚СЃСЏ...
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_02");//Р¤СЂР°РЅРєРѕ Р±С‹Р» РєСЂРµРїРєРёРј РѕСЂРµС€РєРѕРј. РќРёРєС‚Рѕ РЅРµ С…РѕС‚РµР» СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ РЅРёРј. РќРёРєС‚Рѕ - РєСЂРѕРјРµ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_03");//РџСЂРѕСЃС‚Рѕ С‡С‚РѕР±С‹ СЃСЂР°Р·Сѓ РїСЂРѕСЏСЃРЅРёС‚СЊ СЃРёС‚СѓР°С†РёСЋ - РµСЃР»Рё С‚С‹ Р·Р°С‚РµРµС€СЊ С‚Рѕ Р¶Рµ СЃРѕ РјРЅРѕР№, СЏ СѓР±СЊСЋ С‚РµР±СЏ.
 };
 //--------------------------------------------------------------------
 //	Info Mine
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_Esteban_Mine   (C_INFO)
 	condition   = DIA_Addon_Esteban_Mine_Condition;
 	information = DIA_Addon_Esteban_Mine_Info;
 	permanent   = FALSE;
-	description = "Я хочу попасть в шахту!";
+	description = "РЇ С…РѕС‡Сѓ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ!";
 };
 FUNC INT DIA_Addon_Esteban_Mine_Condition()
 {	
@@ -104,10 +104,10 @@ FUNC INT DIA_Addon_Esteban_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Mine_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Mine_15_00");//Я хочу попасть в шахту!
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_01");//(ухмыляясь) Естественно. Тогда ты пришел в правильное место к правильному человеку.
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_02");//Потому что каждый, кто копает в шахте, оставляет себе изрядную долю золота.
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_03");//А я выдаю красные камни, один из которых тебе будет нужен, чтобы Торус впустил тебя.
+	AI_Output (other, self, "DIA_Addon_Esteban_Mine_15_00");//РЇ С…РѕС‡Сѓ РїРѕРїР°СЃС‚СЊ РІ С€Р°С…С‚Сѓ!
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_01");//(СѓС…РјС‹Р»СЏСЏСЃСЊ) Р•СЃС‚РµСЃС‚РІРµРЅРЅРѕ. РўРѕРіРґР° С‚С‹ РїСЂРёС€РµР» РІ РїСЂР°РІРёР»СЊРЅРѕРµ РјРµСЃС‚Рѕ Рє РїСЂР°РІРёР»СЊРЅРѕРјСѓ С‡РµР»РѕРІРµРєСѓ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_02");//РџРѕС‚РѕРјСѓ С‡С‚Рѕ РєР°Р¶РґС‹Р№, РєС‚Рѕ РєРѕРїР°РµС‚ РІ С€Р°С…С‚Рµ, РѕСЃС‚Р°РІР»СЏРµС‚ СЃРµР±Рµ РёР·СЂСЏРґРЅСѓСЋ РґРѕР»СЋ Р·РѕР»РѕС‚Р°.
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_03");//Рђ СЏ РІС‹РґР°СЋ РєСЂР°СЃРЅС‹Рµ РєР°РјРЅРё, РѕРґРёРЅ РёР· РєРѕС‚РѕСЂС‹С… С‚РµР±Рµ Р±СѓРґРµС‚ РЅСѓР¶РµРЅ, С‡С‚РѕР±С‹ РўРѕСЂСѓСЃ РІРїСѓСЃС‚РёР» С‚РµР±СЏ.
 };
 //--------------------------------------------------------------------
 //	Info Rot
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_Esteban_Rot   (C_INFO)
 	condition   = DIA_Addon_Esteban_Rot_Condition;
 	information = DIA_Addon_Esteban_Rot_Info;
 	permanent   = FALSE;
-	description = "Дай мне один из этих красных камней.";
+	description = "Р”Р°Р№ РјРЅРµ РѕРґРёРЅ РёР· СЌС‚РёС… РєСЂР°СЃРЅС‹С… РєР°РјРЅРµР№.";
 };
 FUNC INT DIA_Addon_Esteban_Rot_Condition()
 {	
@@ -130,20 +130,20 @@ FUNC INT DIA_Addon_Esteban_Rot_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Rot_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Rot_15_00");//Дай мне один из этих красных камней.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_01");//Хорошо, но это не бесплатно.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_02");//Обычно я прошу часть того золота, что рудокоп получает за работу.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_03");//(оценивающе) Много ли ты знаешь о том, как добывать золото?
+	AI_Output (other, self, "DIA_Addon_Esteban_Rot_15_00");//Р”Р°Р№ РјРЅРµ РѕРґРёРЅ РёР· СЌС‚РёС… РєСЂР°СЃРЅС‹С… РєР°РјРЅРµР№.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_01");//РҐРѕСЂРѕС€Рѕ, РЅРѕ СЌС‚Рѕ РЅРµ Р±РµСЃРїР»Р°С‚РЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_02");//РћР±С‹С‡РЅРѕ СЏ РїСЂРѕС€Сѓ С‡Р°СЃС‚СЊ С‚РѕРіРѕ Р·РѕР»РѕС‚Р°, С‡С‚Рѕ СЂСѓРґРѕРєРѕРї РїРѕР»СѓС‡Р°РµС‚ Р·Р° СЂР°Р±РѕС‚Сѓ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_03");//(РѕС†РµРЅРёРІР°СЋС‰Рµ) РњРЅРѕРіРѕ Р»Рё С‚С‹ Р·РЅР°РµС€СЊ Рѕ С‚РѕРј, РєР°Рє РґРѕР±С‹РІР°С‚СЊ Р·РѕР»РѕС‚Рѕ?
 	if (Hero_HackChance > 25) 
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_04");//Ты, наверное, наработал несколько приемов, верно?
+		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_04");//РўС‹, РЅР°РІРµСЂРЅРѕРµ, РЅР°СЂР°Р±РѕС‚Р°Р» РЅРµСЃРєРѕР»СЊРєРѕ РїСЂРёРµРјРѕРІ, РІРµСЂРЅРѕ?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_05");//Кажется, ты об этом ничего не знаешь.
+		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_05");//РљР°Р¶РµС‚СЃСЏ, С‚С‹ РѕР± СЌС‚РѕРј РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°РµС€СЊ.
 	};
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_06");//(фальшиво) Если я и дам тебе красный камень, то не потому, что ты такой хороший рудокоп.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_07");//Нет, у меня есть для тебя другая работа...
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_06");//(С„Р°Р»СЊС€РёРІРѕ) Р•СЃР»Рё СЏ Рё РґР°Рј С‚РµР±Рµ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ, С‚Рѕ РЅРµ РїРѕС‚РѕРјСѓ, С‡С‚Рѕ С‚С‹ С‚Р°РєРѕР№ С…РѕСЂРѕС€РёР№ СЂСѓРґРѕРєРѕРї.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_07");//РќРµС‚, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РґР»СЏ С‚РµР±СЏ РґСЂСѓРіР°СЏ СЂР°Р±РѕС‚Р°...
 	
 };
 //--------------------------------------------------------------------
@@ -156,7 +156,7 @@ INSTANCE DIA_Addon_Esteban_MIS   (C_INFO)
 	condition   = DIA_Addon_Esteban_MIS_Condition;
 	information = DIA_Addon_Esteban_MIS_Info;
 	permanent   = FALSE;
-	description = "Какая работа?";
+	description = "РљР°РєР°СЏ СЂР°Р±РѕС‚Р°?";
 };
 FUNC INT DIA_Addon_Esteban_MIS_Condition()
 {	
@@ -167,29 +167,29 @@ FUNC INT DIA_Addon_Esteban_MIS_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_MIS_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_00");//Какая работа?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_01");//Один из бандитов хотел меня убить. Но вместо этого мои охранники убили ЕГО.
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_02");//Он хотел занять твое место?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_03");//Он был просто дурень! Безмозглый убийца. Самому ему бы никогда в голову не пришло напасть на меня.
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_04");//Он выполнял чье-то задание - кто-то послал его сделать это...
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_05");//Так что же, мне нужно найти того, кто стоит за всем этим?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_06");//Тот, кто послал убийцу, заплатит за это. Найди его - и я дам тебе пропуск в шахту.
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_00");//РљР°РєР°СЏ СЂР°Р±РѕС‚Р°?
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_01");//РћРґРёРЅ РёР· Р±Р°РЅРґРёС‚РѕРІ С…РѕС‚РµР» РјРµРЅСЏ СѓР±РёС‚СЊ. РќРѕ РІРјРµСЃС‚Рѕ СЌС‚РѕРіРѕ РјРѕРё РѕС…СЂР°РЅРЅРёРєРё СѓР±РёР»Рё Р•Р“Рћ.
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_02");//РћРЅ С…РѕС‚РµР» Р·Р°РЅСЏС‚СЊ С‚РІРѕРµ РјРµСЃС‚Рѕ?
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_03");//РћРЅ Р±С‹Р» РїСЂРѕСЃС‚Рѕ РґСѓСЂРµРЅСЊ! Р‘РµР·РјРѕР·РіР»С‹Р№ СѓР±РёР№С†Р°. РЎР°РјРѕРјСѓ РµРјСѓ Р±С‹ РЅРёРєРѕРіРґР° РІ РіРѕР»РѕРІСѓ РЅРµ РїСЂРёС€Р»Рѕ РЅР°РїР°СЃС‚СЊ РЅР° РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_04");//РћРЅ РІС‹РїРѕР»РЅСЏР» С‡СЊРµ-С‚Рѕ Р·Р°РґР°РЅРёРµ - РєС‚Рѕ-С‚Рѕ РїРѕСЃР»Р°Р» РµРіРѕ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ...
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_05");//РўР°Рє С‡С‚Рѕ Р¶Рµ, РјРЅРµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё С‚РѕРіРѕ, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° РІСЃРµРј СЌС‚РёРј?
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_06");//РўРѕС‚, РєС‚Рѕ РїРѕСЃР»Р°Р» СѓР±РёР№С†Сѓ, Р·Р°РїР»Р°С‚РёС‚ Р·Р° СЌС‚Рѕ. РќР°Р№РґРё РµРіРѕ - Рё СЏ РґР°Рј С‚РµР±Рµ РїСЂРѕРїСѓСЃРє РІ С€Р°С…С‚Сѓ.
 	
 	if !Npc_IsDead (Senyan)
 	&&  Npc_KnowsInfo (other,DIA_Addon_BDT_1084_Senyan_Hi)
 	{
-		AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_07");//Сеньян послал меня к тебе по этому делу.
-		AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_08");//Сеньян? Он тоже работает на меня. Я сказал ему, чтобы он смотрел в оба.
+		AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_07");//РЎРµРЅСЊСЏРЅ РїРѕСЃР»Р°Р» РјРµРЅСЏ Рє С‚РµР±Рµ РїРѕ СЌС‚РѕРјСѓ РґРµР»Сѓ.
+		AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_08");//РЎРµРЅСЊСЏРЅ? РћРЅ С‚РѕР¶Рµ СЂР°Р±РѕС‚Р°РµС‚ РЅР° РјРµРЅСЏ. РЇ СЃРєР°Р·Р°Р» РµРјСѓ, С‡С‚РѕР±С‹ РѕРЅ СЃРјРѕС‚СЂРµР» РІ РѕР±Р°.
 	};
 	
 	MIS_Judas = LOG_RUNNING;
 	Log_CreateTopic (Topic_Addon_Esteban,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Esteban,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Esteban, "На жизнь Эстебана было совершено покушение. Я должен выяснить, кто за этим стоит.");
+	B_LogEntry (Topic_Addon_Esteban, "РќР° Р¶РёР·РЅСЊ Р­СЃС‚РµР±Р°РЅР° Р±С‹Р»Рѕ СЃРѕРІРµСЂС€РµРЅРѕ РїРѕРєСѓС€РµРЅРёРµ. РЇ РґРѕР»Р¶РµРЅ РІС‹СЏСЃРЅРёС‚СЊ, РєС‚Рѕ Р·Р° СЌС‚РёРј СЃС‚РѕРёС‚.");
 
 };
 //--------------------------------------------------------------------
-//	Info Attentдter (Kerl)
+//	Info AttentРґter (Kerl)
 //--------------------------------------------------------------------
 INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 {
@@ -198,7 +198,7 @@ INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 	condition   = DIA_Addon_Esteban_Kerl_Condition;
 	information = DIA_Addon_Esteban_Kerl_Info;
 	permanent   = FALSE;
-	description = "И что мне нужно сделать?";
+	description = "Р С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?";
 };
 FUNC INT DIA_Addon_Esteban_Kerl_Condition()
 {	
@@ -209,12 +209,12 @@ FUNC INT DIA_Addon_Esteban_Kerl_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Kerl_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Kerl_15_00");//И что мне нужно сделать?
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_01");//Все в лагере знают об этом знают. Поэтому ты играешь в открытую.
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_02");//Постарайся выяснить, кто на моей стороне, а кто - против, и не дай ребятам себя обдурить!
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_03");//Поговори со Снафом. Этот жирный повар много знает.
+	AI_Output (other, self, "DIA_Addon_Esteban_Kerl_15_00");//Р С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_01");//Р’СЃРµ РІ Р»Р°РіРµСЂРµ Р·РЅР°СЋС‚ РѕР± СЌС‚РѕРј Р·РЅР°СЋС‚. РџРѕСЌС‚РѕРјСѓ С‚С‹ РёРіСЂР°РµС€СЊ РІ РѕС‚РєСЂС‹С‚СѓСЋ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_02");//РџРѕСЃС‚Р°СЂР°Р№СЃСЏ РІС‹СЏСЃРЅРёС‚СЊ, РєС‚Рѕ РЅР° РјРѕРµР№ СЃС‚РѕСЂРѕРЅРµ, Р° РєС‚Рѕ - РїСЂРѕС‚РёРІ, Рё РЅРµ РґР°Р№ СЂРµР±СЏС‚Р°Рј СЃРµР±СЏ РѕР±РґСѓСЂРёС‚СЊ!
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_03");//РџРѕРіРѕРІРѕСЂРё СЃРѕ РЎРЅР°С„РѕРј. Р­С‚РѕС‚ Р¶РёСЂРЅС‹Р№ РїРѕРІР°СЂ РјРЅРѕРіРѕ Р·РЅР°РµС‚.
 	
-	B_LogEntry (Topic_Addon_Esteban, "Чтобы найти виновного, я должен поговорить с людьми в лагере и выяснить, на чьей они стороне. Снаф может мне помочь - ему многое известно.");
+	B_LogEntry (Topic_Addon_Esteban, "Р§С‚РѕР±С‹ РЅР°Р№С‚Рё РІРёРЅРѕРІРЅРѕРіРѕ, СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р»СЋРґСЊРјРё РІ Р»Р°РіРµСЂРµ Рё РІС‹СЏСЃРЅРёС‚СЊ, РЅР° С‡СЊРµР№ РѕРЅРё СЃС‚РѕСЂРѕРЅРµ. РЎРЅР°С„ РјРѕР¶РµС‚ РјРЅРµ РїРѕРјРѕС‡СЊ - РµРјСѓ РјРЅРѕРіРѕРµ РёР·РІРµСЃС‚РЅРѕ.");
 };
 //--------------------------------------------------------------------
 //	Info Armor 
@@ -226,7 +226,7 @@ INSTANCE DIA_Addon_Esteban_Armor   (C_INFO)
 	condition   = DIA_Addon_Esteban_Armor_Condition;
 	information = DIA_Addon_Esteban_Armor_Info;
 	permanent   = FALSE;
-	description = "Мне нужны доспехи получше.";
+	description = "РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ.";
 };
 FUNC INT DIA_Addon_Esteban_Armor_Condition()
 {	
@@ -237,11 +237,11 @@ FUNC INT DIA_Addon_Esteban_Armor_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Armor_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Armor_15_00"); //Мне нужны доспехи получше.
-	AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_01"); //Зачем? У тебя уже есть доспехи, пока что вполне можешь обойтись ими!
+	AI_Output (other, self, "DIA_Addon_Esteban_Armor_15_00"); //РњРЅРµ РЅСѓР¶РЅС‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_01"); //Р—Р°С‡РµРј? РЈ С‚РµР±СЏ СѓР¶Рµ РµСЃС‚СЊ РґРѕСЃРїРµС…Рё, РїРѕРєР° С‡С‚Рѕ РІРїРѕР»РЅРµ РјРѕР¶РµС€СЊ РѕР±РѕР№С‚РёСЃСЊ РёРјРё!
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_02"); //Если ты выполнишь мое задание, мы поговорим об этом...
+		AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_02"); //Р•СЃР»Рё С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ РјРѕРµ Р·Р°РґР°РЅРёРµ, РјС‹ РїРѕРіРѕРІРѕСЂРёРј РѕР± СЌС‚РѕРј...
 	};
 };
 //--------------------------------------------------------------------
@@ -254,7 +254,7 @@ INSTANCE DIA_Addon_Esteban_Auftrag   (C_INFO)
 	condition   = DIA_Addon_Esteban_Auftrag_Condition;
 	information = DIA_Addon_Esteban_Auftrag_Info;
 	permanent   = TRUE;
-	description = "По поводу задания...";
+	description = "РџРѕ РїРѕРІРѕРґСѓ Р·Р°РґР°РЅРёСЏ...";
 };
 FUNC INT DIA_Addon_Esteban_Auftrag_Condition()
 {	
@@ -267,25 +267,25 @@ FUNC INT DIA_Addon_Esteban_Auftrag_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Auftrag_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_00");//По поводу задания...
-	AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_01");//Послушай, у меня есть и другие дела.
+	AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_00");//РџРѕ РїРѕРІРѕРґСѓ Р·Р°РґР°РЅРёСЏ...
+	AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_01");//РџРѕСЃР»СѓС€Р°Р№, Сѓ РјРµРЅСЏ РµСЃС‚СЊ Рё РґСЂСѓРіРёРµ РґРµР»Р°.
 	
 	if (MIS_Judas == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_02");//Я думал, тебе будет интересно, кто организовал нападение...
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_03");//И кто же это? Скажи мне его имя - и мои ребята свернут ему шею...
-		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_04");//Его организовал торговец Фиск. В данный момент он сидит в баре, пьет и ничего не подозревает...
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_05");//ХА! Отличная работа, сынок. Мои охранники займутся им.
+		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_02");//РЇ РґСѓРјР°Р», С‚РµР±Рµ Р±СѓРґРµС‚ РёРЅС‚РµСЂРµСЃРЅРѕ, РєС‚Рѕ РѕСЂРіР°РЅРёР·РѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ...
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_03");//Р РєС‚Рѕ Р¶Рµ СЌС‚Рѕ? РЎРєР°Р¶Рё РјРЅРµ РµРіРѕ РёРјСЏ - Рё РјРѕРё СЂРµР±СЏС‚Р° СЃРІРµСЂРЅСѓС‚ РµРјСѓ С€РµСЋ...
+		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_04");//Р•РіРѕ РѕСЂРіР°РЅРёР·РѕРІР°Р» С‚РѕСЂРіРѕРІРµС† Р¤РёСЃРє. Р’ РґР°РЅРЅС‹Р№ РјРѕРјРµРЅС‚ РѕРЅ СЃРёРґРёС‚ РІ Р±Р°СЂРµ, РїСЊРµС‚ Рё РЅРёС‡РµРіРѕ РЅРµ РїРѕРґРѕР·СЂРµРІР°РµС‚...
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_05");//РҐРђ! РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°, СЃС‹РЅРѕРє. РњРѕРё РѕС…СЂР°РЅРЅРёРєРё Р·Р°Р№РјСѓС‚СЃСЏ РёРј.
 		
 		AI_TurnToNpc (self, Wache_01);
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_06");//Вы слышали, что он сказал, ребята. Пойдите и схватите Фиска.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_06");//Р’С‹ СЃР»С‹С€Р°Р»Рё, С‡С‚Рѕ РѕРЅ СЃРєР°Р·Р°Р», СЂРµР±СЏС‚Р°. РџРѕР№РґРёС‚Рµ Рё СЃС…РІР°С‚РёС‚Рµ Р¤РёСЃРєР°.
 		AI_TurnToNpc (self, other);
 		
 		Bodyguard_Killer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_07");//Возвращайся, когда ты выяснишь, кто стоит за нападением.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_07");//Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° С‚С‹ РІС‹СЏСЃРЅРёС€СЊ, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° РЅР°РїР°РґРµРЅРёРµРј.
 		AI_StopProcessInfos(self);
 	};
 };	
@@ -299,7 +299,7 @@ INSTANCE DIA_Addon_Esteban_Away   (C_INFO)
 	condition   = DIA_Addon_Esteban_Away_Condition;
 	information = DIA_Addon_Esteban_Away_Info;
 	permanent   = FALSE;
-	description = "И что теперь будет?";
+	description = "Р С‡С‚Рѕ С‚РµРїРµСЂСЊ Р±СѓРґРµС‚?";
 };
 FUNC INT DIA_Addon_Esteban_Away_Condition()
 {	
@@ -310,10 +310,10 @@ FUNC INT DIA_Addon_Esteban_Away_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Away_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Away_15_00");//И что теперь будет?
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_01");//Что теперь будет? Я скажу тебе, что будет.
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_02");//Фиск умрет мучительной смертью. И весь лагерь будет знать, за что.
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_03");//Это послужит им всем предупреждением.
+	AI_Output (other, self, "DIA_Addon_Esteban_Away_15_00");//Р С‡С‚Рѕ С‚РµРїРµСЂСЊ Р±СѓРґРµС‚?
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_01");//Р§С‚Рѕ С‚РµРїРµСЂСЊ Р±СѓРґРµС‚? РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ, С‡С‚Рѕ Р±СѓРґРµС‚.
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_02");//Р¤РёСЃРє СѓРјСЂРµС‚ РјСѓС‡РёС‚РµР»СЊРЅРѕР№ СЃРјРµСЂС‚СЊСЋ. Р РІРµСЃСЊ Р»Р°РіРµСЂСЊ Р±СѓРґРµС‚ Р·РЅР°С‚СЊ, Р·Р° С‡С‚Рѕ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_03");//Р­С‚Рѕ РїРѕСЃР»СѓР¶РёС‚ РёРј РІСЃРµРј РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµРј.
 	
 	B_StartotherRoutine (Wache_01,"AMBUSH");
 	B_StartotherRoutine (Wache_02,"AMBUSH");
@@ -328,7 +328,7 @@ INSTANCE DIA_Addon_Esteban_Stone   (C_INFO)
 	condition   = DIA_Addon_Esteban_Stone_Condition;
 	information = DIA_Addon_Esteban_Stone_Info;
 	permanent   = FALSE;
-	description = "Могу я теперь получить красный камень?";
+	description = "РњРѕРіСѓ СЏ С‚РµРїРµСЂСЊ РїРѕР»СѓС‡РёС‚СЊ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ?";
 };
 FUNC INT DIA_Addon_Esteban_Stone_Condition()
 {	
@@ -340,9 +340,9 @@ FUNC INT DIA_Addon_Esteban_Stone_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Stone_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Stone_15_00");//Могу я теперь получить красный камень?
-	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_01");//Ты хорошо справился с работой. Тебе нечего делать в шахте.
-	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_02");//Я могу использовать тебя с большей выгодой. Ты останешься в лагере и будешь продолжать работать на меня.
+	AI_Output (other, self, "DIA_Addon_Esteban_Stone_15_00");//РњРѕРіСѓ СЏ С‚РµРїРµСЂСЊ РїРѕР»СѓС‡РёС‚СЊ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ?
+	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_01");//РўС‹ С…РѕСЂРѕС€Рѕ СЃРїСЂР°РІРёР»СЃСЏ СЃ СЂР°Р±РѕС‚РѕР№. РўРµР±Рµ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ РІ С€Р°С…С‚Рµ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_02");//РЇ РјРѕРіСѓ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ С‚РµР±СЏ СЃ Р±РѕР»СЊС€РµР№ РІС‹РіРѕРґРѕР№. РўС‹ РѕСЃС‚Р°РЅРµС€СЊСЃСЏ РІ Р»Р°РіРµСЂРµ Рё Р±СѓРґРµС€СЊ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ.
 };		
 //--------------------------------------------------------------------
 //	Info nicht arbeiten
@@ -354,7 +354,7 @@ INSTANCE DIA_Addon_Esteban_not   (C_INFO)
 	condition   = DIA_Addon_Esteban_not_Condition;
 	information = DIA_Addon_Esteban_not_Info;
 	permanent   = FALSE;
-	description = "Я подумаю об этом.";
+	description = "РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј.";
 };
 FUNC INT DIA_Addon_Esteban_not_Condition()
 {	
@@ -365,9 +365,9 @@ FUNC INT DIA_Addon_Esteban_not_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_not_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_not_15_00");//Я подумаю об этом.
-	AI_Output (self, other, "DIA_Addon_Esteban_not_07_01");//Ты забыл, с кем ты разговариваешь. Я здесь главный, и тебе придется делать то, что я скажу.
-	AI_Output (self, other, "DIA_Addon_Esteban_not_07_02");//А я сказал, что ты будешь работать на меня, а не на кого-нибудь еще. Это понятно?
+	AI_Output (other, self, "DIA_Addon_Esteban_not_15_00");//РЇ РїРѕРґСѓРјР°СЋ РѕР± СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Addon_Esteban_not_07_01");//РўС‹ Р·Р°Р±С‹Р», СЃ РєРµРј С‚С‹ СЂР°Р·РіРѕРІР°СЂРёРІР°РµС€СЊ. РЇ Р·РґРµСЃСЊ РіР»Р°РІРЅС‹Р№, Рё С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РґРµР»Р°С‚СЊ С‚Рѕ, С‡С‚Рѕ СЏ СЃРєР°Р¶Сѓ.
+	AI_Output (self, other, "DIA_Addon_Esteban_not_07_02");//Рђ СЏ СЃРєР°Р·Р°Р», С‡С‚Рѕ С‚С‹ Р±СѓРґРµС€СЊ СЂР°Р±РѕС‚Р°С‚СЊ РЅР° РјРµРЅСЏ, Р° РЅРµ РЅР° РєРѕРіРѕ-РЅРёР±СѓРґСЊ РµС‰Рµ. Р­С‚Рѕ РїРѕРЅСЏС‚РЅРѕ?
 };
 //--------------------------------------------------------------------
 //	Info Leibwache weg (fight)
@@ -379,7 +379,7 @@ INSTANCE DIA_Addon_Esteban_fight   (C_INFO)
 	condition   = DIA_Addon_Esteban_fight_Condition;
 	information = DIA_Addon_Esteban_fight_Info;
 	permanent   = FALSE;
-	description = "Ты хочешь одурачить меня?";
+	description = "РўС‹ С…РѕС‡РµС€СЊ РѕРґСѓСЂР°С‡РёС‚СЊ РјРµРЅСЏ?";
 };
 FUNC INT DIA_Addon_Esteban_fight_Condition()
 {	
@@ -390,12 +390,12 @@ FUNC INT DIA_Addon_Esteban_fight_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_fight_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_00");//Ты хочешь одурачить меня? И речи не было о том, чтобы я на тебя работал.
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_01");//Не каждый получает такое предложение. Но если тебе оно не нравится, ты можешь свободно покинуть лагерь...
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_02");//А может быть, ты сдержишь слово и дашь мне красный камень?
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_03");//Эй! Еще одно слово - и моим охранникам придется применить силу.
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_04");//(ухмыляясь) Каким охранникам?..
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_05");//Что?.. А, понятно, ты хочешь обвести меня... Ну, погоди...
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_00");//РўС‹ С…РѕС‡РµС€СЊ РѕРґСѓСЂР°С‡РёС‚СЊ РјРµРЅСЏ? Р СЂРµС‡Рё РЅРµ Р±С‹Р»Рѕ Рѕ С‚РѕРј, С‡С‚РѕР±С‹ СЏ РЅР° С‚РµР±СЏ СЂР°Р±РѕС‚Р°Р».
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_01");//РќРµ РєР°Р¶РґС‹Р№ РїРѕР»СѓС‡Р°РµС‚ С‚Р°РєРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ. РќРѕ РµСЃР»Рё С‚РµР±Рµ РѕРЅРѕ РЅРµ РЅСЂР°РІРёС‚СЃСЏ, С‚С‹ РјРѕР¶РµС€СЊ СЃРІРѕР±РѕРґРЅРѕ РїРѕРєРёРЅСѓС‚СЊ Р»Р°РіРµСЂСЊ...
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_02");//Рђ РјРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ СЃРґРµСЂР¶РёС€СЊ СЃР»РѕРІРѕ Рё РґР°С€СЊ РјРЅРµ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ?
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_03");//Р­Р№! Р•С‰Рµ РѕРґРЅРѕ СЃР»РѕРІРѕ - Рё РјРѕРёРј РѕС…СЂР°РЅРЅРёРєР°Рј РїСЂРёРґРµС‚СЃСЏ РїСЂРёРјРµРЅРёС‚СЊ СЃРёР»Сѓ.
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_04");//(СѓС…РјС‹Р»СЏСЏСЃСЊ) РљР°РєРёРј РѕС…СЂР°РЅРЅРёРєР°Рј?..
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_05");//Р§С‚Рѕ?.. Рђ, РїРѕРЅСЏС‚РЅРѕ, С‚С‹ С…РѕС‡РµС€СЊ РѕР±РІРµСЃС‚Рё РјРµРЅСЏ... РќСѓ, РїРѕРіРѕРґРё...
 	
 	Bodyguard_Killer = FALSE;
 	
@@ -415,7 +415,7 @@ INSTANCE DIA_Addon_Esteban_Duell   (C_INFO)
 	condition   = DIA_Addon_Esteban_Duell_Condition;
 	information = DIA_Addon_Esteban_Duell_Info;
 	permanent   = FALSE;
-	description = "Давай сюда камень СЕЙЧАС ЖЕ, или я заберу его сам!";
+	description = "Р”Р°РІР°Р№ СЃСЋРґР° РєР°РјРµРЅСЊ РЎР•Р™Р§РђРЎ Р–Р•, РёР»Рё СЏ Р·Р°Р±РµСЂСѓ РµРіРѕ СЃР°Рј!";
 };
 FUNC INT DIA_Addon_Esteban_Duell_Condition()
 {	
@@ -427,8 +427,8 @@ FUNC INT DIA_Addon_Esteban_Duell_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Duell_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Esteban_Duell_15_00"); //Давай сюда камень СЕЙЧАС ЖЕ, или я заберу его сам!
-	AI_Output (self,other,"DIA_Addon_Esteban_Duell_07_01"); //О, у тебя есть последнее желание. Как мило. Я сделаю тебе одолжение и избавлю тебя от твоей тупости!
+	AI_Output (other,self,"DIA_Addon_Esteban_Duell_15_00"); //Р”Р°РІР°Р№ СЃСЋРґР° РєР°РјРµРЅСЊ РЎР•Р™Р§РђРЎ Р–Р•, РёР»Рё СЏ Р·Р°Р±РµСЂСѓ РµРіРѕ СЃР°Рј!
+	AI_Output (self,other,"DIA_Addon_Esteban_Duell_07_01"); //Рћ, Сѓ С‚РµР±СЏ РµСЃС‚СЊ РїРѕСЃР»РµРґРЅРµРµ Р¶РµР»Р°РЅРёРµ. РљР°Рє РјРёР»Рѕ. РЇ СЃРґРµР»Р°СЋ С‚РµР±Рµ РѕРґРѕР»Р¶РµРЅРёРµ Рё РёР·Р±Р°РІР»СЋ С‚РµР±СЏ РѕС‚ С‚РІРѕРµР№ С‚СѓРїРѕСЃС‚Рё!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

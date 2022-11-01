@@ -30,7 +30,7 @@ instance DIA_Albrecht_Hagen		(C_INFO)
 	condition	 = 	DIA_Albrecht_Hagen_Condition;
 	information	 = 	DIA_Albrecht_Hagen_Info;
 	permanent    =  FALSE;
-	description	 =  "Мне нужно поговорить с лордом Хагеном!";
+	description	 =  "РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј!";
 };
 
 func int DIA_Albrecht_Hagen_Condition ()
@@ -42,9 +42,9 @@ func int DIA_Albrecht_Hagen_Condition ()
 };
 func void DIA_Albrecht_Hagen_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Hagen_15_00"); //Мне нужно поговорить с лордом Хагеном!
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //Он в главном зале, иди прямо, не ошибешься.
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Не знаю, что тебе нужно от него, но будь краток - он занятой человек!
+	AI_Output (other, self, "DIA_Albrecht_Hagen_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ Р»РѕСЂРґРѕРј РҐР°РіРµРЅРѕРј!
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //РћРЅ РІ РіР»Р°РІРЅРѕРј Р·Р°Р»Рµ, РёРґРё РїСЂСЏРјРѕ, РЅРµ РѕС€РёР±РµС€СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //РќРµ Р·РЅР°СЋ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РЅРµРіРѕ, РЅРѕ Р±СѓРґСЊ РєСЂР°С‚РѕРє - РѕРЅ Р·Р°РЅСЏС‚РѕР№ С‡РµР»РѕРІРµРє!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -56,7 +56,7 @@ instance DIA_Albrecht_Hallo		(C_INFO)
 	condition	 = 	DIA_Albrecht_Hallo_Condition;
 	information	 = 	DIA_Albrecht_Hallo_Info;
 	permanent    =  FALSE;
-	description	 =  "Каково это, быть паладином?";
+	description	 =  "РљР°РєРѕРІРѕ СЌС‚Рѕ, Р±С‹С‚СЊ РїР°Р»Р°РґРёРЅРѕРј?";
 };
 
 func int DIA_Albrecht_Hallo_Condition ()
@@ -65,9 +65,9 @@ func int DIA_Albrecht_Hallo_Condition ()
 };
 func void DIA_Albrecht_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //Каково это, быть паладином?
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //Паладины - воины Инноса. Они живут ради того, чтобы служить ему, и сражаются в его честь.
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //Взамен все мы наделены даром магии. Магии рун, которые даруются в знак признания наших заслуг.
+	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //РљР°РєРѕРІРѕ СЌС‚Рѕ, Р±С‹С‚СЊ РїР°Р»Р°РґРёРЅРѕРј?
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //РџР°Р»Р°РґРёРЅС‹ - РІРѕРёРЅС‹ РРЅРЅРѕСЃР°. РћРЅРё Р¶РёРІСѓС‚ СЂР°РґРё С‚РѕРіРѕ, С‡С‚РѕР±С‹ СЃР»СѓР¶РёС‚СЊ РµРјСѓ, Рё СЃСЂР°Р¶Р°СЋС‚СЃСЏ РІ РµРіРѕ С‡РµСЃС‚СЊ.
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //Р’Р·Р°РјРµРЅ РІСЃРµ РјС‹ РЅР°РґРµР»РµРЅС‹ РґР°СЂРѕРј РјР°РіРёРё. РњР°РіРёРё СЂСѓРЅ, РєРѕС‚РѕСЂС‹Рµ РґР°СЂСѓСЋС‚СЃСЏ РІ Р·РЅР°Рє РїСЂРёР·РЅР°РЅРёСЏ РЅР°С€РёС… Р·Р°СЃР»СѓРі.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -79,7 +79,7 @@ instance DIA_Albrecht_CanTeach		(C_INFO)
 	condition	 = 	DIA_Albrecht_CanTeach_Condition;
 	information	 = 	DIA_Albrecht_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Ты можешь научить меня чему-нибудь?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?";
 };
 
 func int DIA_Albrecht_CanTeach_Condition ()
@@ -91,18 +91,18 @@ func int DIA_Albrecht_CanTeach_Condition ()
 };
 func void DIA_Albrecht_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_CanTeach_15_00"); //Ты можешь научить меня чему-нибудь?
+	AI_Output (other, self, "DIA_Albrecht_CanTeach_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ С‡РµРјСѓ-РЅРёР±СѓРґСЊ?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Если ты докажешь, что достоин этого, я награжу тебя магическими рунами паладинов.
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //Кроме того, я могу научить тебя, как повысить свои магические способности.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Р•СЃР»Рё С‚С‹ РґРѕРєР°Р¶РµС€СЊ, С‡С‚Рѕ РґРѕСЃС‚РѕРёРЅ СЌС‚РѕРіРѕ, СЏ РЅР°РіСЂР°Р¶Сѓ С‚РµР±СЏ РјР°РіРёС‡РµСЃРєРёРјРё СЂСѓРЅР°РјРё РїР°Р»Р°РґРёРЅРѕРІ.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ, РєР°Рє РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 		Albrecht_TeachMANA = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Паладин Альбрехт может помочь мне повысить мои магические способности.");
+		B_LogEntry (TOPIC_CityTeacher,"РџР°Р»Р°РґРёРЅ РђР»СЊР±СЂРµС…С‚ РјРѕР¶РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РїРѕРІС‹СЃРёС‚СЊ РјРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.");
 	}
 	else
 	{	
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_03"); //Я обучаю только паладинов.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_03"); //РЇ РѕР±СѓС‡Р°СЋ С‚РѕР»СЊРєРѕ РїР°Р»Р°РґРёРЅРѕРІ.
 	};
 };
 
@@ -116,7 +116,7 @@ instance DIA_Albrecht_TEACHPalRunes		(C_INFO)
 	condition	 = 	DIA_Albrecht_TEACHPalRunes_Condition;
 	information	 = 	DIA_Albrecht_TEACHPalRunes_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я достоин получить руну?";
+	description	 = 	"РЇ РґРѕСЃС‚РѕРёРЅ РїРѕР»СѓС‡РёС‚СЊ СЂСѓРЅСѓ?";
 };
 func int DIA_Albrecht_TEACHPalRunes_Condition ()
 {	
@@ -127,14 +127,14 @@ func int DIA_Albrecht_TEACHPalRunes_Condition ()
 };
 func void DIA_Albrecht_TEACHPalRunes_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_TEACHPalRunes_15_00"); //Я достоин получить руну?
+	AI_Output (other, self, "DIA_Albrecht_TEACHPalRunes_15_00"); //РЇ РґРѕСЃС‚РѕРёРЅ РїРѕР»СѓС‡РёС‚СЊ СЂСѓРЅСѓ?
 	
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
 		
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //В знак признания твоего ранга я награждаю тебя Руной Света. Это символ истины и правосудия.
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_02"); //Освещай путь тем, кто следует пути Инноса.
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //Остальные руны ты должен заслужить. Приходи, когда сочтешь, что достоин их.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Р’ Р·РЅР°Рє РїСЂРёР·РЅР°РЅРёСЏ С‚РІРѕРµРіРѕ СЂР°РЅРіР° СЏ РЅР°РіСЂР°Р¶РґР°СЋ С‚РµР±СЏ Р СѓРЅРѕР№ РЎРІРµС‚Р°. Р­С‚Рѕ СЃРёРјРІРѕР» РёСЃС‚РёРЅС‹ Рё РїСЂР°РІРѕСЃСѓРґРёСЏ.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_02"); //РћСЃРІРµС‰Р°Р№ РїСѓС‚СЊ С‚РµРј, РєС‚Рѕ СЃР»РµРґСѓРµС‚ РїСѓС‚Рё РРЅРЅРѕСЃР°.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //РћСЃС‚Р°Р»СЊРЅС‹Рµ СЂСѓРЅС‹ С‚С‹ РґРѕР»Р¶РµРЅ Р·Р°СЃР»СѓР¶РёС‚СЊ. РџСЂРёС…РѕРґРё, РєРѕРіРґР° СЃРѕС‡С‚РµС€СЊ, С‡С‚Рѕ РґРѕСЃС‚РѕРёРЅ РёС….
 	
 		PLAYER_TALENT_RUNES [SPL_PalLight] = TRUE;
 	
@@ -143,13 +143,13 @@ func void DIA_Albrecht_TEACHPalRunes_Info ()
 	}
 	else
 	{
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_04"); //Какой путь ты выбираешь?
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_05"); //Путь исцеления или путь битвы?
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_04"); //РљР°РєРѕР№ РїСѓС‚СЊ С‚С‹ РІС‹Р±РёСЂР°РµС€СЊ?
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_05"); //РџСѓС‚СЊ РёСЃС†РµР»РµРЅРёСЏ РёР»Рё РїСѓС‚СЊ Р±РёС‚РІС‹?
 		
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Я выбираю путь исцеления.",DIA_Albrecht_TEACHPalRunes_Heal);
-		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Я выбираю путь битвы.",DIA_Albrecht_TEACHPalRunes_Combat);
+		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"РЇ РІС‹Р±РёСЂР°СЋ РїСѓС‚СЊ РёСЃС†РµР»РµРЅРёСЏ.",DIA_Albrecht_TEACHPalRunes_Heal);
+		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"РЇ РІС‹Р±РёСЂР°СЋ РїСѓС‚СЊ Р±РёС‚РІС‹.",DIA_Albrecht_TEACHPalRunes_Combat);
 	};	
 };
 
@@ -160,25 +160,25 @@ FUNC VOID DIA_Albrecht_TEACHPalRunes_BACK()
 
 FUNC VOID B_Albrecht_YouAreNotWorthy ()
 {
-	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //Ты пока недостоин получить следующее заклинание этого пути.
+	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //РўС‹ РїРѕРєР° РЅРµРґРѕСЃС‚РѕРёРЅ РїРѕР»СѓС‡РёС‚СЊ СЃР»РµРґСѓСЋС‰РµРµ Р·Р°РєР»РёРЅР°РЅРёРµ СЌС‚РѕРіРѕ РїСѓС‚Рё.
 };
 
 FUNC VOID DIA_Albrecht_TEACHPalRunes_Heal()
 {
-	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Heal_15_00"); //Я выбираю путь исцеления.
+	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Heal_15_00"); //РЇ РІС‹Р±РёСЂР°СЋ РїСѓС‚СЊ РёСЃС†РµР»РµРЅРёСЏ.
 	if  (PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	&&	(MIS_ReadyforChapter4 == TRUE)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Лечение легких ранений", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalLightHeal);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Р›РµС‡РµРЅРёРµ Р»РµРіРєРёС… СЂР°РЅРµРЅРёР№", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalLightHeal);
 	}
 	else if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	&&	(Kapitel >= 5)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Лечение средних ранений", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalMediumHeal);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Р›РµС‡РµРЅРёРµ СЃСЂРµРґРЅРёС… СЂР°РЅРµРЅРёР№", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalMediumHeal);
 	}
 	else
 	{
@@ -188,21 +188,21 @@ FUNC VOID DIA_Albrecht_TEACHPalRunes_Heal()
 
 FUNC VOID DIA_Albrecht_TEACHPalRunes_Combat()
 {
-	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Combat_15_00"); //Я выбираю путь битвы.
+	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Combat_15_00"); //РЇ РІС‹Р±РёСЂР°СЋ РїСѓС‚СЊ Р±РёС‚РІС‹.
 	
 	if	(PLAYER_TALENT_RUNES [SPL_PalHolyBolt] == FALSE)
 	&&	(MIS_ReadyforChapter4 == TRUE)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Святая стрела", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalHolyBolt);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("РЎРІСЏС‚Р°СЏ СЃС‚СЂРµР»Р°", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalHolyBolt);
 	}
 	else if (PLAYER_TALENT_RUNES [SPL_PalRepelEvil] == FALSE)
 	&&	(Kapitel >= 5)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Изгнание зла", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalRepelEvil);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("РР·РіРЅР°РЅРёРµ Р·Р»Р°", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalRepelEvil);
 	}
 	else
 	{
@@ -292,7 +292,7 @@ instance DIA_Albrecht_Teach		(C_INFO)
 	condition	 = 	DIA_Albrecht_Teach_Condition;
 	information	 = 	DIA_Albrecht_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Я хочу повысить свои магические способности.";
+	description	 = 	"РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.";
 };
 func int DIA_Albrecht_Teach_Condition ()
 {	
@@ -303,7 +303,7 @@ func int DIA_Albrecht_Teach_Condition ()
 };
 func void DIA_Albrecht_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Teach_15_00"); //Я хочу повысить свои магические способности.
+	AI_Output (other, self, "DIA_Albrecht_Teach_15_00"); //РЇ С…РѕС‡Сѓ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
 	
 	
 	Info_ClearChoices   (DIA_Albrecht_Teach);
@@ -316,7 +316,7 @@ func void DIA_Albrecht_Teach_BACK()
 {
 	if (other.attribute [ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_Albrecht_Teach_03_00"); //Если ты хочешь повысить свои магические способности еще больше, тебе придется поискать другого учителя.
+		AI_Output (self, other, "DIA_Albrecht_Teach_03_00"); //Р•СЃР»Рё С‚С‹ С…РѕС‡РµС€СЊ РїРѕРІС‹СЃРёС‚СЊ СЃРІРѕРё РјР°РіРёС‡РµСЃРєРёРµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё РµС‰Рµ Р±РѕР»СЊС€Рµ, С‚РµР±Рµ РїСЂРёРґРµС‚СЃСЏ РїРѕРёСЃРєР°С‚СЊ РґСЂСѓРіРѕРіРѕ СѓС‡РёС‚РµР»СЏ.
 	};
 	Info_ClearChoices (DIA_Albrecht_TEACH);
 };

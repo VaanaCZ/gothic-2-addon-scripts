@@ -2,7 +2,7 @@
 instance VLK_412_Harad (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ãàðàä";
+	name 		= "Ð“Ð°Ñ€Ð°Ð´";
 	guild 		= GIL_VLK;
 	id 			= 412;
 	voice 		= 12;
@@ -19,7 +19,7 @@ instance VLK_412_Harad (Npc_Default)
 	EquipItem			(self, ItMw_1H_Mace_L_04);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÐ´ndler
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBald", Face_N_NormalBart20, BodyTex_N, ITAR_Smith);	
 	Mdl_SetModelFatness	(self, 2);

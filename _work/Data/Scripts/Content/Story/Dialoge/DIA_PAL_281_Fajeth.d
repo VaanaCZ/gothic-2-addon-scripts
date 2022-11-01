@@ -37,11 +37,11 @@ FUNC VOID DIA_Fajeth_EXIT_Info()
 };
 
 /* 
-	Seit einiger Zeit suchen wir in diesem verfluchten Gebiet eine Stelle, die noch erzhaltiges Gestein enthдlt, 
-	nicht stдndig von Orkpatroullien heimgesucht wird, wo die dauernden Drachenangriffe ausbleiben!
-	Wir sind vцllig verdreckt und ausgehungert, haben unzдhlige Kдmpfe ausgetragen 
-	und haben endlich hier den Funken einer Hoffnung gefunden bei diesem dreckigen Loch in der Erde dort drьben unseren praktisch unmцglichen Auftrag zu erledigen.
-	Und da kommt einer wie du daher und besitzt die Frechheit uns zu sagen, wir seien ьberfдllig! Entweder bist du vцllig verrьckt oder einfach nur unverschдmt!
+	Seit einiger Zeit suchen wir in diesem verfluchten Gebiet eine Stelle, die noch erzhaltiges Gestein enthРґlt, 
+	nicht stРґndig von Orkpatroullien heimgesucht wird, wo die dauernden Drachenangriffe ausbleiben!
+	Wir sind vС†llig verdreckt und ausgehungert, haben unzРґhlige KРґmpfe ausgetragen 
+	und haben endlich hier den Funken einer Hoffnung gefunden bei diesem dreckigen Loch in der Erde dort drСЊben unseren praktisch unmС†glichen Auftrag zu erledigen.
+	Und da kommt einer wie du daher und besitzt die Frechheit uns zu sagen, wir seien СЊberfРґllig! Entweder bist du vС†llig verrСЊckt oder einfach nur unverschРґmt!
 */
 ///////////////////////////////////////////////////////////////////////	
 //	Info First
@@ -64,9 +64,9 @@ func int DIA_Fajeth_First_Condition ()
 };
 func void DIA_Fajeth_First_Info ()
 {
-	AI_Output (self, other, "DIA_Fajeth_First_12_00"); //Кто ты такой и что ты делаешь здесь?
-	AI_Output (other, self, "DIA_Fajeth_First_15_01"); //Я пришел по приказу лорда Хагена ...
-	AI_Output (self, other, "DIA_Fajeth_First_12_02"); //Тогда тебе нужно попытаться добраться до замка. Командующий Гаронд там. Он главнокомандующий этой экспедицией.
+	AI_Output (self, other, "DIA_Fajeth_First_12_00"); //РљС‚Рѕ С‚С‹ С‚Р°РєРѕР№ Рё С‡С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (other, self, "DIA_Fajeth_First_15_01"); //РЇ РїСЂРёС€РµР» РїРѕ РїСЂРёРєР°Р·Сѓ Р»РѕСЂРґР° РҐР°РіРµРЅР° ...
+	AI_Output (self, other, "DIA_Fajeth_First_12_02"); //РўРѕРіРґР° С‚РµР±Рµ РЅСѓР¶РЅРѕ РїРѕРїС‹С‚Р°С‚СЊСЃСЏ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р·Р°РјРєР°. РљРѕРјР°РЅРґСѓСЋС‰РёР№ Р“Р°СЂРѕРЅРґ С‚Р°Рј. РћРЅ РіР»Р°РІРЅРѕРєРѕРјР°РЅРґСѓСЋС‰РёР№ СЌС‚РѕР№ СЌРєСЃРїРµРґРёС†РёРµР№.
 	
 	AI_StopProcessInfos (self);
 };
@@ -92,62 +92,62 @@ func int DIA_Fajeth_Hallo_Condition ()
 };
 func void DIA_Fajeth_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Fajeth_Hallo_12_00"); //Откуда ты пришел?
-	AI_Output (other, self, "DIA_Fajeth_Hallo_15_01"); //Я пришел по приказу Гаронда ...
-	AI_Output (self, other, "DIA_Fajeth_Hallo_12_02"); //Очень хорошо. Мне очень нужны новые люди.
-	AI_Output (other, self, "DIA_Fajeth_Hallo_15_03"); //Я здесь не для того, чтобы помогать тебе.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_12_04"); //Нет? Тогда зачем ты пришел?
-	AI_Output (other, self, "DIA_Fajeth_Hallo_15_05"); //В мою задачу входит выяснить, сколько руды добыто к настоящему моменту.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_12_00"); //РћС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР»?
+	AI_Output (other, self, "DIA_Fajeth_Hallo_15_01"); //РЇ РїСЂРёС€РµР» РїРѕ РїСЂРёРєР°Р·Сѓ Р“Р°СЂРѕРЅРґР° ...
+	AI_Output (self, other, "DIA_Fajeth_Hallo_12_02"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. РњРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РЅС‹ РЅРѕРІС‹Рµ Р»СЋРґРё.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_15_03"); //РЇ Р·РґРµСЃСЊ РЅРµ РґР»СЏ С‚РѕРіРѕ, С‡С‚РѕР±С‹ РїРѕРјРѕРіР°С‚СЊ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_12_04"); //РќРµС‚? РўРѕРіРґР° Р·Р°С‡РµРј С‚С‹ РїСЂРёС€РµР»?
+	AI_Output (other, self, "DIA_Fajeth_Hallo_15_05"); //Р’ РјРѕСЋ Р·Р°РґР°С‡Сѓ РІС…РѕРґРёС‚ РІС‹СЏСЃРЅРёС‚СЊ, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ РґРѕР±С‹С‚Рѕ Рє РЅР°СЃС‚РѕСЏС‰РµРјСѓ РјРѕРјРµРЅС‚Сѓ.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_06"); //О, достопочтенный маг. Твое присутствие вселяет в меня и моих людей уверенность.
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_07"); //Мы были бы очень благодарны, если бы ты смог использовать данную тебе Инносом силу, чтобы помочь нам.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_06"); //Рћ, РґРѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅС‹Р№ РјР°Рі. РўРІРѕРµ РїСЂРёСЃСѓС‚СЃС‚РІРёРµ РІСЃРµР»СЏРµС‚ РІ РјРµРЅСЏ Рё РјРѕРёС… Р»СЋРґРµР№ СѓРІРµСЂРµРЅРЅРѕСЃС‚СЊ.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_07"); //РњС‹ Р±С‹Р»Рё Р±С‹ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕРґР°СЂРЅС‹, РµСЃР»Рё Р±С‹ С‚С‹ СЃРјРѕРі РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ РґР°РЅРЅСѓСЋ С‚РµР±Рµ РРЅРЅРѕСЃРѕРј СЃРёР»Сѓ, С‡С‚РѕР±С‹ РїРѕРјРѕС‡СЊ РЅР°Рј.
 		
 		
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Что я могу сделать для тебя?",DIA_Fajeth_Hallo_Tun);	
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Мое задание важнее.",DIA_Fajeth_Hallo_KDFNein);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?",DIA_Fajeth_Hallo_Tun);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"РњРѕРµ Р·Р°РґР°РЅРёРµ РІР°Р¶РЅРµРµ.",DIA_Fajeth_Hallo_KDFNein);	
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_08"); //Моя задача - принимать все меры, которые я сочту необходимыми для добычи руды и для ее защиты.
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_09"); //Это включает и реквизицию людей. Ты служишь Инносу - следовательно, ты обязан выполнять мои приказы.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_08"); //РњРѕСЏ Р·Р°РґР°С‡Р° - РїСЂРёРЅРёРјР°С‚СЊ РІСЃРµ РјРµСЂС‹, РєРѕС‚РѕСЂС‹Рµ СЏ СЃРѕС‡С‚Сѓ РЅРµРѕР±С…РѕРґРёРјС‹РјРё РґР»СЏ РґРѕР±С‹С‡Рё СЂСѓРґС‹ Рё РґР»СЏ РµРµ Р·Р°С‰РёС‚С‹.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_09"); //Р­С‚Рѕ РІРєР»СЋС‡Р°РµС‚ Рё СЂРµРєРІРёР·РёС†РёСЋ Р»СЋРґРµР№. РўС‹ СЃР»СѓР¶РёС€СЊ РРЅРЅРѕСЃСѓ - СЃР»РµРґРѕРІР°С‚РµР»СЊРЅРѕ, С‚С‹ РѕР±СЏР·Р°РЅ РІС‹РїРѕР»РЅСЏС‚СЊ РјРѕРё РїСЂРёРєР°Р·С‹.
 		
 		
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Что я могу сделать для тебя?",DIA_Fajeth_Hallo_Tun);	
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"У меня уже есть приказ. От Гаронда.",DIA_Fajeth_Hallo_MILNein);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?",DIA_Fajeth_Hallo_Tun);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"РЈ РјРµРЅСЏ СѓР¶Рµ РµСЃС‚СЊ РїСЂРёРєР°Р·. РћС‚ Р“Р°СЂРѕРЅРґР°.",DIA_Fajeth_Hallo_MILNein);	
 	}
 	else //GIL_SLD
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_10"); //Послушай - я не знаю, зачем Гаронд прислал мне наемника - но, должно быть, у него были на то причины.
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_11"); //Но прежде чем я отправлю тебя назад, ты должен выполнить одно задание для меня.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_10"); //РџРѕСЃР»СѓС€Р°Р№ - СЏ РЅРµ Р·РЅР°СЋ, Р·Р°С‡РµРј Р“Р°СЂРѕРЅРґ РїСЂРёСЃР»Р°Р» РјРЅРµ РЅР°РµРјРЅРёРєР° - РЅРѕ, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, Сѓ РЅРµРіРѕ Р±С‹Р»Рё РЅР° С‚Рѕ РїСЂРёС‡РёРЅС‹.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_11"); //РќРѕ РїСЂРµР¶РґРµ С‡РµРј СЏ РѕС‚РїСЂР°РІР»СЋ С‚РµР±СЏ РЅР°Р·Р°Рґ, С‚С‹ РґРѕР»Р¶РµРЅ РІС‹РїРѕР»РЅРёС‚СЊ РѕРґРЅРѕ Р·Р°РґР°РЅРёРµ РґР»СЏ РјРµРЅСЏ.
 		
 		
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"У всего есть своя цена.",DIA_Fajeth_Hallo_SLDJa);	
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Нет,  меня нет времени ...",DIA_Fajeth_Hallo_SLDNein);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"РЈ РІСЃРµРіРѕ РµСЃС‚СЊ СЃРІРѕСЏ С†РµРЅР°.",DIA_Fajeth_Hallo_SLDJa);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"РќРµС‚,  РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё ...",DIA_Fajeth_Hallo_SLDNein);	
 	};
 }; 
 FUNC VOID DIA_Fajeth_Hallo_Tun () //Mission
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_Tun_15_00"); //Что я могу сделать для тебя?
-	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_01"); //Вот уже несколько дней, орда снепперов бродит вокруг нашего лагеря. Похоже, они просто выжидают подходящей возможности для нападения.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_02"); //Я не знаю, чего они ждут - но пока они здесь, в лагере не будет спокойствия.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_Tun_15_00"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_01"); //Р’РѕС‚ СѓР¶Рµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№, РѕСЂРґР° СЃРЅРµРїРїРµСЂРѕРІ Р±СЂРѕРґРёС‚ РІРѕРєСЂСѓРі РЅР°С€РµРіРѕ Р»Р°РіРµСЂСЏ. РџРѕС…РѕР¶Рµ, РѕРЅРё РїСЂРѕСЃС‚Рѕ РІС‹Р¶РёРґР°СЋС‚ РїРѕРґС…РѕРґСЏС‰РµР№ РІРѕР·РјРѕР¶РЅРѕСЃС‚Рё РґР»СЏ РЅР°РїР°РґРµРЅРёСЏ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_02"); //РЇ РЅРµ Р·РЅР°СЋ, С‡РµРіРѕ РѕРЅРё Р¶РґСѓС‚ - РЅРѕ РїРѕРєР° РѕРЅРё Р·РґРµСЃСЊ, РІ Р»Р°РіРµСЂРµ РЅРµ Р±СѓРґРµС‚ СЃРїРѕРєРѕР№СЃС‚РІРёСЏ.
 
 	if ((Npc_IsDead(Fed)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_03"); //Фед, помимо всего прочего, напуган ими до смерти - и сводит с ума остальных каторжников.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_03"); //Р¤РµРґ, РїРѕРјРёРјРѕ РІСЃРµРіРѕ РїСЂРѕС‡РµРіРѕ, РЅР°РїСѓРіР°РЅ РёРјРё РґРѕ СЃРјРµСЂС‚Рё - Рё СЃРІРѕРґРёС‚ СЃ СѓРјР° РѕСЃС‚Р°Р»СЊРЅС‹С… РєР°С‚РѕСЂР¶РЅРёРєРѕРІ.
 	};
 
 	if ((Npc_IsDead(Bilgot)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_04"); //И кого мне послать? Билгота? Ха - он тоже слабак.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_04"); //Р РєРѕРіРѕ РјРЅРµ РїРѕСЃР»Р°С‚СЊ? Р‘РёР»РіРѕС‚Р°? РҐР° - РѕРЅ С‚РѕР¶Рµ СЃР»Р°Р±Р°Рє.
 	};
 
 	if ((Npc_IsDead(Tengron)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_05"); //Тенгрона? Конечно, он умеет сражаться, но он не обладает хитростью охотника.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_05"); //РўРµРЅРіСЂРѕРЅР°? РљРѕРЅРµС‡РЅРѕ, РѕРЅ СѓРјРµРµС‚ СЃСЂР°Р¶Р°С‚СЊСЃСЏ, РЅРѕ РѕРЅ РЅРµ РѕР±Р»Р°РґР°РµС‚ С…РёС‚СЂРѕСЃС‚СЊСЋ РѕС…РѕС‚РЅРёРєР°.
 	};
-	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_06"); //Ты единственный, кто может сделать это. Я хочу, чтобы ты выследил этих чертовых тварей и убил их.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_06"); //РўС‹ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ РјРѕР¶РµС‚ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РІС‹СЃР»РµРґРёР» СЌС‚РёС… С‡РµСЂС‚РѕРІС‹С… С‚РІР°СЂРµР№ Рё СѓР±РёР» РёС….
 	
 	Wld_InsertNpc	(NewMine_Snapper7,"OW_PATH_333");	//Joly: Zur Sicherheit, falls keine mehr da sind.
 	Wld_InsertNpc	(NewMine_Snapper8,"OW_PATH_333");
@@ -156,7 +156,7 @@ FUNC VOID DIA_Fajeth_Hallo_Tun () //Mission
 	MIS_Fajeth_Kill_Snapper = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_FajethKillSnapper,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_FajethKillSnapper,LOG_RUNNING);
-	B_LogEntry (TOPIC_FajethKillSnapper,"Фаджет научил меня, как охотиться на снепперов, которые бродят толпами вокруг замка.");
+	B_LogEntry (TOPIC_FajethKillSnapper,"Р¤Р°РґР¶РµС‚ РЅР°СѓС‡РёР» РјРµРЅСЏ, РєР°Рє РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° СЃРЅРµРїРїРµСЂРѕРІ, РєРѕС‚РѕСЂС‹Рµ Р±СЂРѕРґСЏС‚ С‚РѕР»РїР°РјРё РІРѕРєСЂСѓРі Р·Р°РјРєР°.");
 	
 	Info_ClearChoices (DIA_Fajeth_Hallo);
 	
@@ -166,33 +166,33 @@ FUNC VOID DIA_Fajeth_Hallo_Tun () //Mission
 };
 FUNC VOID DIA_Fajeth_Hallo_KDFNein ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_KDFNein_15_00"); //Мое задание важнее. Я не могу помочь тебе.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_KDFNein_12_01"); //Конечно, о, достопочтенный. Я сообщу тебе все, что ты желаешь знать.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_KDFNein_15_00"); //РњРѕРµ Р·Р°РґР°РЅРёРµ РІР°Р¶РЅРµРµ. РЇ РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_KDFNein_12_01"); //РљРѕРЅРµС‡РЅРѕ, Рѕ, РґРѕСЃС‚РѕРїРѕС‡С‚РµРЅРЅС‹Р№. РЇ СЃРѕРѕР±С‰Сѓ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ С‚С‹ Р¶РµР»Р°РµС€СЊ Р·РЅР°С‚СЊ.
 	MIS_Fajeth_Kill_Snapper = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Fajeth_Hallo);
 };
 FUNC VOID DIA_Fajeth_Hallo_MILNein ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_MILNein_15_00"); //У меня уже есть приказ. От Гаронда.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_01"); //И ты выполнишь его. Но только после того, как я отпущу тебя.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_02"); //Единственное, что я хочу слышать от тебя -это 'Что я могу сделать?' Понятно?
+	AI_Output (other, self, "DIA_Fajeth_Hallo_MILNein_15_00"); //РЈ РјРµРЅСЏ СѓР¶Рµ РµСЃС‚СЊ РїСЂРёРєР°Р·. РћС‚ Р“Р°СЂРѕРЅРґР°.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_01"); //Р С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ РµРіРѕ. РќРѕ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЏ РѕС‚РїСѓС‰Сѓ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_02"); //Р•РґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ СЏ С…РѕС‡Сѓ СЃР»С‹С€Р°С‚СЊ РѕС‚ С‚РµР±СЏ -СЌС‚Рѕ 'Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ?' РџРѕРЅСЏС‚РЅРѕ?
 };
 FUNC VOID DIA_Fajeth_Hallo_SLDJa ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDJa_15_00"); //У всего есть своя цена. Если ты заплатишь мне, возможно, я и соглашусь.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_01"); //Я не привык вести дела с наемниками. Я ненавижу торговаться, чтобы снизить цену.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_02"); //Но в знак проявления моей доброй воли, я заплачу тебе 100 золотых, если ты выполнишь эту работу для меня.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_03"); //Ну как, по рукам?
+	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDJa_15_00"); //РЈ РІСЃРµРіРѕ РµСЃС‚СЊ СЃРІРѕСЏ С†РµРЅР°. Р•СЃР»Рё С‚С‹ Р·Р°РїР»Р°С‚РёС€СЊ РјРЅРµ, РІРѕР·РјРѕР¶РЅРѕ, СЏ Рё СЃРѕРіР»Р°С€СѓСЃСЊ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_01"); //РЇ РЅРµ РїСЂРёРІС‹Рє РІРµСЃС‚Рё РґРµР»Р° СЃ РЅР°РµРјРЅРёРєР°РјРё. РЇ РЅРµРЅР°РІРёР¶Сѓ С‚РѕСЂРіРѕРІР°С‚СЊСЃСЏ, С‡С‚РѕР±С‹ СЃРЅРёР·РёС‚СЊ С†РµРЅСѓ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_02"); //РќРѕ РІ Р·РЅР°Рє РїСЂРѕСЏРІР»РµРЅРёСЏ РјРѕРµР№ РґРѕР±СЂРѕР№ РІРѕР»Рё, СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 100 Р·РѕР»РѕС‚С‹С…, РµСЃР»Рё С‚С‹ РІС‹РїРѕР»РЅРёС€СЊ СЌС‚Сѓ СЂР°Р±РѕС‚Сѓ РґР»СЏ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_03"); //РќСѓ РєР°Рє, РїРѕ СЂСѓРєР°Рј?
 	Fajeth_Pay = TRUE;
 	Info_ClearChoices (DIA_Fajeth_Hallo);
-	Info_AddChoice 	  (DIA_Fajeth_Hallo,"Что я могу сделать для тебя?",DIA_Fajeth_Hallo_Tun);	
-	Info_AddChoice 	  (DIA_Fajeth_Hallo,"Нет,  меня нет времени ...",DIA_Fajeth_Hallo_SLDNein);	
+	Info_AddChoice 	  (DIA_Fajeth_Hallo,"Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?",DIA_Fajeth_Hallo_Tun);	
+	Info_AddChoice 	  (DIA_Fajeth_Hallo,"РќРµС‚,  РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё ...",DIA_Fajeth_Hallo_SLDNein);	
 };
 FUNC VOID DIA_Fajeth_Hallo_SLDNein ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDNein_15_00"); //Нет,  меня нет времени на то, чтобы решать твои проблемы.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_01"); //Ты готов так легко отказаться от легких денег? Не ожидал такого от наемника.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_02"); //Так как ты не хочешь помочь нам, задавай свои вопросы и проваливай.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDNein_15_00"); //РќРµС‚,  РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° С‚Рѕ, С‡С‚РѕР±С‹ СЂРµС€Р°С‚СЊ С‚РІРѕРё РїСЂРѕР±Р»РµРјС‹.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_01"); //РўС‹ РіРѕС‚РѕРІ С‚Р°Рє Р»РµРіРєРѕ РѕС‚РєР°Р·Р°С‚СЊСЃСЏ РѕС‚ Р»РµРіРєРёС… РґРµРЅРµРі? РќРµ РѕР¶РёРґР°Р» С‚Р°РєРѕРіРѕ РѕС‚ РЅР°РµРјРЅРёРєР°.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_02"); //РўР°Рє РєР°Рє С‚С‹ РЅРµ С…РѕС‡РµС€СЊ РїРѕРјРѕС‡СЊ РЅР°Рј, Р·Р°РґР°РІР°Р№ СЃРІРѕРё РІРѕРїСЂРѕСЃС‹ Рё РїСЂРѕРІР°Р»РёРІР°Р№.
 	MIS_Fajeth_Kill_Snapper = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Fajeth_Hallo);
 };
@@ -206,7 +206,7 @@ instance DIA_Fajeth_Leader		(C_INFO)
 	condition	 = 	DIA_Fajeth_Leader_Condition;
 	information	 = 	DIA_Fajeth_Leader_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Я убил вожака стаи.";
+	description	 =  "РЇ СѓР±РёР» РІРѕР¶Р°РєР° СЃС‚Р°Рё.";
 };
 func int DIA_Fajeth_Leader_Condition ()
 {
@@ -219,12 +219,12 @@ func int DIA_Fajeth_Leader_Condition ()
 };
 func void DIA_Fajeth_Leader_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Leader_15_00"); //Я убил вожака стаи.
-	AI_Output (self, other, "DIA_Fajeth_Leader_12_01"); //Хорошо. Без вожака, они будут не так опасны. Я не думаю, что теперь они решатся напасть на нас.
+	AI_Output (other, self, "DIA_Fajeth_Leader_15_00"); //РЇ СѓР±РёР» РІРѕР¶Р°РєР° СЃС‚Р°Рё.
+	AI_Output (self, other, "DIA_Fajeth_Leader_12_01"); //РҐРѕСЂРѕС€Рѕ. Р‘РµР· РІРѕР¶Р°РєР°, РѕРЅРё Р±СѓРґСѓС‚ РЅРµ С‚Р°Рє РѕРїР°СЃРЅС‹. РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµРїРµСЂСЊ РѕРЅРё СЂРµС€Р°С‚СЃСЏ РЅР°РїР°СЃС‚СЊ РЅР° РЅР°СЃ.
 	
 	if (Fajeth_Pay == TRUE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Leader_12_02"); //Вот твое золото - как договаривались.
+		AI_Output (self, other, "DIA_Fajeth_Leader_12_02"); //Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ - РєР°Рє РґРѕРіРѕРІР°СЂРёРІР°Р»РёСЃСЊ.
 		B_GiveInvItems (self, other, ItMi_Gold,100); 
 	};
 	
@@ -244,7 +244,7 @@ instance DIA_Fajeth_SNAPPER_KILLED		(C_INFO)
 	condition	 = 	DIA_Fajeth_SNAPPER_KILLED_Condition;
 	information	 = 	DIA_Fajeth_SNAPPER_KILLED_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Со снепперами покончено.";
+	description	 = 	"РЎРѕ СЃРЅРµРїРїРµСЂР°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ.";
 };
 
 func int DIA_Fajeth_SNAPPER_KILLED_Condition ()
@@ -258,12 +258,12 @@ func int DIA_Fajeth_SNAPPER_KILLED_Condition ()
 func void DIA_Fajeth_SNAPPER_KILLED_Info ()
 {
  		
-	AI_Output (hero, self, "DIA_Fajeth_SNAPPER_KILLED_15_00"); //Со снепперами покончено.
-	AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_01"); //Отлична работа. А с остальными зверями мы сами разберемся.
+	AI_Output (hero, self, "DIA_Fajeth_SNAPPER_KILLED_15_00"); //РЎРѕ СЃРЅРµРїРїРµСЂР°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ.
+	AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_01"); //РћС‚Р»РёС‡РЅР° СЂР°Р±РѕС‚Р°. Рђ СЃ РѕСЃС‚Р°Р»СЊРЅС‹РјРё Р·РІРµСЂСЏРјРё РјС‹ СЃР°РјРё СЂР°Р·Р±РµСЂРµРјСЃСЏ.
 	
 	if (Fajeth_Pay == TRUE)
 	{
-		AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_02"); //Ты заработал свое золото - вот 100 монет, как и договаривались.
+		AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_02"); //РўС‹ Р·Р°СЂР°Р±РѕС‚Р°Р» СЃРІРѕРµ Р·РѕР»РѕС‚Рѕ - РІРѕС‚ 100 РјРѕРЅРµС‚, РєР°Рє Рё РґРѕРіРѕРІР°СЂРёРІР°Р»РёСЃСЊ.
 		B_GiveInvItems (self, other, ItmI_Gold,100); 
 	};					
 	Fajeth.flags = 0;
@@ -280,7 +280,7 @@ instance DIA_Fajeth_Running		(C_INFO)
 	condition	 = 	DIA_Fajeth_Running_Condition;
 	information	 = 	DIA_Fajeth_Running_Info;
 	permanent	 =  TRUE;
-	description  =  "Как настроение у твоих людей?";
+	description  =  "РљР°Рє РЅР°СЃС‚СЂРѕРµРЅРёРµ Сѓ С‚РІРѕРёС… Р»СЋРґРµР№?";
 };
 
 func int DIA_Fajeth_Running_Condition ()
@@ -292,9 +292,9 @@ func int DIA_Fajeth_Running_Condition ()
 };
 func void DIA_Fajeth_Running_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Running_15_00"); //Как настроение у твоих людей?
-	AI_Output (self, other, "DIA_Fajeth_Running_12_01"); //Ты хочешь узнать, каково настроение моих людей? Да они еле могут работать от страха!
-	AI_Output (self, other, "DIA_Fajeth_Running_12_02"); //Разберись с этими снепперами, или кто-нибудь сорвется!
+	AI_Output (other, self, "DIA_Fajeth_Running_15_00"); //РљР°Рє РЅР°СЃС‚СЂРѕРµРЅРёРµ Сѓ С‚РІРѕРёС… Р»СЋРґРµР№?
+	AI_Output (self, other, "DIA_Fajeth_Running_12_01"); //РўС‹ С…РѕС‡РµС€СЊ СѓР·РЅР°С‚СЊ, РєР°РєРѕРІРѕ РЅР°СЃС‚СЂРѕРµРЅРёРµ РјРѕРёС… Р»СЋРґРµР№? Р”Р° РѕРЅРё РµР»Рµ РјРѕРіСѓС‚ СЂР°Р±РѕС‚Р°С‚СЊ РѕС‚ СЃС‚СЂР°С…Р°!
+	AI_Output (self, other, "DIA_Fajeth_Running_12_02"); //Р Р°Р·Р±РµСЂРёСЃСЊ СЃ СЌС‚РёРјРё СЃРЅРµРїРїРµСЂР°РјРё, РёР»Рё РєС‚Рѕ-РЅРёР±СѓРґСЊ СЃРѕСЂРІРµС‚СЃСЏ!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Belohnung
@@ -306,7 +306,7 @@ instance DIA_Fajeth_BELOHNUNG		(C_INFO)
 	condition	 = 	DIA_Fajeth_BELOHNUNG_Condition;
 	information	 = 	DIA_Fajeth_BELOHNUNG_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Скажи мне, сколько руды удалось вам добыть.";
+	description	 = 	"РЎРєР°Р¶Рё РјРЅРµ, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РІР°Рј РґРѕР±С‹С‚СЊ.";
 };
 
 func int DIA_Fajeth_BELOHNUNG_Condition ()
@@ -320,16 +320,16 @@ func int DIA_Fajeth_BELOHNUNG_Condition ()
 
 func void DIA_Fajeth_BELOHNUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_00"); //Скажи мне, сколько руды удалось вам добыть.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_01"); //Доложи Гаронду, что мы смогли добыть только ДВА ящика руды.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_02"); //Из-за постоянных нападений на нас мы потеряли очень много людей.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_03"); //Если Гаронд сможет прислать подкрепление, мы сможем добывать больше руды.
-	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_04"); //Понятно. Я так и передам ему.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_05"); //Хорошо. Мы надеемся на тебя. И будем удерживать наши позиции до последнего.
+	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_00"); //РЎРєР°Р¶Рё РјРЅРµ, СЃРєРѕР»СЊРєРѕ СЂСѓРґС‹ СѓРґР°Р»РѕСЃСЊ РІР°Рј РґРѕР±С‹С‚СЊ.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_01"); //Р”РѕР»РѕР¶Рё Р“Р°СЂРѕРЅРґСѓ, С‡С‚Рѕ РјС‹ СЃРјРѕРіР»Рё РґРѕР±С‹С‚СЊ С‚РѕР»СЊРєРѕ Р”Р’Рђ СЏС‰РёРєР° СЂСѓРґС‹.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_02"); //РР·-Р·Р° РїРѕСЃС‚РѕСЏРЅРЅС‹С… РЅР°РїР°РґРµРЅРёР№ РЅР° РЅР°СЃ РјС‹ РїРѕС‚РµСЂСЏР»Рё РѕС‡РµРЅСЊ РјРЅРѕРіРѕ Р»СЋРґРµР№.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_03"); //Р•СЃР»Рё Р“Р°СЂРѕРЅРґ СЃРјРѕР¶РµС‚ РїСЂРёСЃР»Р°С‚СЊ РїРѕРґРєСЂРµРїР»РµРЅРёРµ, РјС‹ СЃРјРѕР¶РµРј РґРѕР±С‹РІР°С‚СЊ Р±РѕР»СЊС€Рµ СЂСѓРґС‹.
+	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_04"); //РџРѕРЅСЏС‚РЅРѕ. РЇ С‚Р°Рє Рё РїРµСЂРµРґР°Рј РµРјСѓ.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_05"); //РҐРѕСЂРѕС€Рѕ. РњС‹ РЅР°РґРµРµРјСЃСЏ РЅР° С‚РµР±СЏ. Р Р±СѓРґРµРј СѓРґРµСЂР¶РёРІР°С‚СЊ РЅР°С€Рё РїРѕР·РёС†РёРё РґРѕ РїРѕСЃР»РµРґРЅРµРіРѕ.
 	
 	Fajeth_Ore = TRUE;
 	
-	B_LogEntry (TOPIC_ScoutMine,"Старатели Фаджета смогли добыть ДВА ящика руды.");
+	B_LogEntry (TOPIC_ScoutMine,"РЎС‚Р°СЂР°С‚РµР»Рё Р¤Р°РґР¶РµС‚Р° СЃРјРѕРіР»Рё РґРѕР±С‹С‚СЊ Р”Р’Рђ СЏС‰РёРєР° СЂСѓРґС‹.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -343,7 +343,7 @@ instance DIA_Fajeth_Perm2		(C_INFO)
 	condition	 = 	DIA_Fajeth_Perm2_Condition;
 	information	 = 	DIA_Fajeth_Perm2_Info;
 	permanent	 =  TRUE;
-	description  =  "Как идет добыча руды?";
+	description  =  "РљР°Рє РёРґРµС‚ РґРѕР±С‹С‡Р° СЂСѓРґС‹?";
 };
 
 func int DIA_Fajeth_Perm2_Condition ()
@@ -356,15 +356,15 @@ func int DIA_Fajeth_Perm2_Condition ()
 };
 func void DIA_Fajeth_Perm2_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Perm2_15_00"); //Как идет добыча руды?
-	AI_Output (self, other, "DIA_Fajeth_Perm2_12_01"); //Плохо. Прогресса почти нет.
-	AI_Output (self, other, "DIA_Fajeth_Perm2_12_02"); //Когда мы прибыли сюда, сначала все шло хорошо - но теперь мои парни не добывают почти ничего кроме обломков. Ничего стоящего.
-	AI_Output (self, other, "DIA_Fajeth_Perm2_12_03"); //Но мы не отступим - по крайней мере, пока я командую здесь.
+	AI_Output (other, self, "DIA_Fajeth_Perm2_15_00"); //РљР°Рє РёРґРµС‚ РґРѕР±С‹С‡Р° СЂСѓРґС‹?
+	AI_Output (self, other, "DIA_Fajeth_Perm2_12_01"); //РџР»РѕС…Рѕ. РџСЂРѕРіСЂРµСЃСЃР° РїРѕС‡С‚Рё РЅРµС‚.
+	AI_Output (self, other, "DIA_Fajeth_Perm2_12_02"); //РљРѕРіРґР° РјС‹ РїСЂРёР±С‹Р»Рё СЃСЋРґР°, СЃРЅР°С‡Р°Р»Р° РІСЃРµ С€Р»Рѕ С…РѕСЂРѕС€Рѕ - РЅРѕ С‚РµРїРµСЂСЊ РјРѕРё РїР°СЂРЅРё РЅРµ РґРѕР±С‹РІР°СЋС‚ РїРѕС‡С‚Рё РЅРёС‡РµРіРѕ РєСЂРѕРјРµ РѕР±Р»РѕРјРєРѕРІ. РќРёС‡РµРіРѕ СЃС‚РѕСЏС‰РµРіРѕ.
+	AI_Output (self, other, "DIA_Fajeth_Perm2_12_03"); //РќРѕ РјС‹ РЅРµ РѕС‚СЃС‚СѓРїРёРј - РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, РїРѕРєР° СЏ РєРѕРјР°РЅРґСѓСЋ Р·РґРµСЃСЊ.
 };
 //#####################################################################
 //##
 //##
-//##							KAPITEL 3 und hцher
+//##							KAPITEL 3 und hС†her
 //##
 //##
 //#####################################################################
@@ -379,7 +379,7 @@ instance DIA_Fajeth_ERZABBAU		(C_INFO)
 	condition	 = 	DIA_Fajeth_ERZABBAU_Condition;
 	information	 = 	DIA_Fajeth_ERZABBAU_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Как идет добыча руды?";
+	description	 = 	"РљР°Рє РёРґРµС‚ РґРѕР±С‹С‡Р° СЂСѓРґС‹?";
 };
 
 func int DIA_Fajeth_ERZABBAU_Condition ()
@@ -393,17 +393,17 @@ func int DIA_Fajeth_ERZABBAU_Condition ()
 
 func void DIA_Fajeth_ERZABBAU_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_ERZABBAU_15_00"); //Как идет добыча руды?
+	AI_Output (other, self, "DIA_Fajeth_ERZABBAU_15_00"); //РљР°Рє РёРґРµС‚ РґРѕР±С‹С‡Р° СЂСѓРґС‹?
 	
 	if (MIS_AllDragonsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_01"); //Здесь стало спокойнее. С чего бы это?
-		AI_Output (other, self, "DIA_Fajeth_ERZABBAU_15_02"); //Драконы мертвы.
-		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_03"); //Ох, тогда я надеюсь, что подкрепления ждать недолго. Я все время теряю своих людей.
+		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_01"); //Р—РґРµСЃСЊ СЃС‚Р°Р»Рѕ СЃРїРѕРєРѕР№РЅРµРµ. РЎ С‡РµРіРѕ Р±С‹ СЌС‚Рѕ?
+		AI_Output (other, self, "DIA_Fajeth_ERZABBAU_15_02"); //Р”СЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.
+		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_03"); //РћС…, С‚РѕРіРґР° СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РїРѕРґРєСЂРµРїР»РµРЅРёСЏ Р¶РґР°С‚СЊ РЅРµРґРѕР»РіРѕ. РЇ РІСЃРµ РІСЂРµРјСЏ С‚РµСЂСЏСЋ СЃРІРѕРёС… Р»СЋРґРµР№.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_04"); //Да ты сам это видишь...
+		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_04"); //Р”Р° С‚С‹ СЃР°Рј СЌС‚Рѕ РІРёРґРёС€СЊ...
 	};
 };
 

@@ -32,7 +32,7 @@ instance DIA_GornDJG_STARTCAMP		(C_INFO)
 	condition	 = 	DIA_GornDJG_STARTCAMP_Condition;
 	information	 = 	DIA_GornDJG_STARTCAMP_Info;
 
-	description	 = 	"Я вижу, ты присоединился к охотникам на драконов.";
+	description	 = 	"РЇ РІРёР¶Сѓ, С‚С‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РѕС…РѕС‚РЅРёРєР°Рј РЅР° РґСЂР°РєРѕРЅРѕРІ.";
 };
 
 func int DIA_GornDJG_STARTCAMP_Condition ()
@@ -45,28 +45,28 @@ func int DIA_GornDJG_STARTCAMP_Condition ()
 
 func void DIA_GornDJG_STARTCAMP_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //Я вижу, ты присоединился к охотникам на драконов.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //Я пошел за Сильвио в Долину Рудников, потому что я знаю эту местность как свои пять пальцев, и я хотел сам понять, что здесь происходит.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //Я скажу тебе вот что. Здесь определенно что-то не так. В жизни никогда не видел столько орков в одном месте.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //Я не удивлюсь, если Гаронд и паладины из замка давно сбежали или уже все перебиты.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //РЇ РІРёР¶Сѓ, С‚С‹ РїСЂРёСЃРѕРµРґРёРЅРёР»СЃСЏ Рє РѕС…РѕС‚РЅРёРєР°Рј РЅР° РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //РЇ РїРѕС€РµР» Р·Р° РЎРёР»СЊРІРёРѕ РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ Р·РЅР°СЋ СЌС‚Сѓ РјРµСЃС‚РЅРѕСЃС‚СЊ РєР°Рє СЃРІРѕРё РїСЏС‚СЊ РїР°Р»СЊС†РµРІ, Рё СЏ С…РѕС‚РµР» СЃР°Рј РїРѕРЅСЏС‚СЊ, С‡С‚Рѕ Р·РґРµСЃСЊ РїСЂРѕРёСЃС…РѕРґРёС‚.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ РІРѕС‚ С‡С‚Рѕ. Р—РґРµСЃСЊ РѕРїСЂРµРґРµР»РµРЅРЅРѕ С‡С‚Рѕ-С‚Рѕ РЅРµ С‚Р°Рє. Р’ Р¶РёР·РЅРё РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР» СЃС‚РѕР»СЊРєРѕ РѕСЂРєРѕРІ РІ РѕРґРЅРѕРј РјРµСЃС‚Рµ.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //РЇ РЅРµ СѓРґРёРІР»СЋСЃСЊ, РµСЃР»Рё Р“Р°СЂРѕРЅРґ Рё РїР°Р»Р°РґРёРЅС‹ РёР· Р·Р°РјРєР° РґР°РІРЅРѕ СЃР±РµР¶Р°Р»Рё РёР»Рё СѓР¶Рµ РІСЃРµ РїРµСЂРµР±РёС‚С‹.
 
-	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Еще увидимся.", DIA_GornDJG_STARTCAMP_By );
-	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Что ты планируешь делать дальше?", DIA_GornDJG_STARTCAMP_Wohin );
+	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.", DIA_GornDJG_STARTCAMP_By );
+	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?", DIA_GornDJG_STARTCAMP_Wohin );
 
 
 };
 func void DIA_GornDJG_STARTCAMP_Wohin ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Что ты планируешь делать дальше?
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //Я сначала пойду с парнями в Долину Рудников, а потом свалю.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //Мне просто очень хочется выяснить, что планируют орки.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Р§С‚Рѕ С‚С‹ РїР»Р°РЅРёСЂСѓРµС€СЊ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //РЇ СЃРЅР°С‡Р°Р»Р° РїРѕР№РґСѓ СЃ РїР°СЂРЅСЏРјРё РІ Р”РѕР»РёРЅСѓ Р СѓРґРЅРёРєРѕРІ, Р° РїРѕС‚РѕРј СЃРІР°Р»СЋ.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //РњРЅРµ РїСЂРѕСЃС‚Рѕ РѕС‡РµРЅСЊ С…РѕС‡РµС‚СЃСЏ РІС‹СЏСЃРЅРёС‚СЊ, С‡С‚Рѕ РїР»Р°РЅРёСЂСѓСЋС‚ РѕСЂРєРё.
 
 };
 
 func void DIA_GornDJG_STARTCAMP_By ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //Еще увидимся.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //Будь осторожен.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ.
 	AI_StopProcessInfos	(self);
 };
 
@@ -80,7 +80,7 @@ instance DIA_GornDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_GornDJG_HALLO_Condition;
 	information	 = 	DIA_GornDJG_HALLO_Info;
 
-	description	 = 	"Так вот ты куда забился!";
+	description	 = 	"РўР°Рє РІРѕС‚ С‚С‹ РєСѓРґР° Р·Р°Р±РёР»СЃСЏ!";
 };
 
 func int DIA_GornDJG_HALLO_Condition ()
@@ -93,8 +93,8 @@ func int DIA_GornDJG_HALLO_Condition ()
 
 func void DIA_GornDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_HALLO_15_00"); //Так вот ты куда забился!
-	AI_Output			(self, other, "DIA_GornDJG_HALLO_12_01"); //Ты тоже не особенно похож на самоубийцу.
+	AI_Output			(other, self, "DIA_GornDJG_HALLO_15_00"); //РўР°Рє РІРѕС‚ С‚С‹ РєСѓРґР° Р·Р°Р±РёР»СЃСЏ!
+	AI_Output			(self, other, "DIA_GornDJG_HALLO_12_01"); //РўС‹ С‚РѕР¶Рµ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ РїРѕС…РѕР¶ РЅР° СЃР°РјРѕСѓР±РёР№С†Сѓ.
 
 };
 
@@ -107,7 +107,7 @@ instance DIA_GornDJG_WHATSUP		(C_INFO)
 	condition	 = 	DIA_GornDJG_WHATSUP_Condition;
 	information	 = 	DIA_GornDJG_WHATSUP_Info;
 
-	description	 = 	"Что-нибудь выяснил?";
+	description	 = 	"Р§С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹СЏСЃРЅРёР»?";
 };
 
 func int DIA_GornDJG_WHATSUP_Condition ()
@@ -120,30 +120,30 @@ func int DIA_GornDJG_WHATSUP_Condition ()
 
 func void DIA_GornDJG_WHATSUP_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Что-нибудь выяснил?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_12_01"); //Я все еще выжидаю. Мне кажется, там, наверху, в этих руинах на скале, может что-то быть. Ночью там виден свет и доносятся крики.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РІС‹СЏСЃРЅРёР»?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_12_01"); //РЇ РІСЃРµ РµС‰Рµ РІС‹Р¶РёРґР°СЋ. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚Р°Рј, РЅР°РІРµСЂС…Сѓ, РІ СЌС‚РёС… СЂСѓРёРЅР°С… РЅР° СЃРєР°Р»Рµ, РјРѕР¶РµС‚ С‡С‚Рѕ-С‚Рѕ Р±С‹С‚СЊ. РќРѕС‡СЊСЋ С‚Р°Рј РІРёРґРµРЅ СЃРІРµС‚ Рё РґРѕРЅРѕСЃСЏС‚СЃСЏ РєСЂРёРєРё.
 
 	Info_ClearChoices	(DIA_GornDJG_WHATSUP);
-	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Может, это Лестер?", DIA_GornDJG_WHATSUP_Lester );
-	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Дракон?", DIA_GornDJG_WHATSUP_A_Dragon );
+	Info_AddChoice		(DIA_GornDJG_WHATSUP, "РњРѕР¶РµС‚, СЌС‚Рѕ Р›РµСЃС‚РµСЂ?", DIA_GornDJG_WHATSUP_Lester );
+	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Р”СЂР°РєРѕРЅ?", DIA_GornDJG_WHATSUP_A_Dragon );
 	
-	B_LogEntry (TOPIC_Dragonhunter,"Горн находится у подножья плоскогорья, ведущего к старой крепости в скалах. Отсюда он может наблюдать за плоскогорьем и барьером орков."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Р“РѕСЂРЅ РЅР°С…РѕРґРёС‚СЃСЏ Сѓ РїРѕРґРЅРѕР¶СЊСЏ РїР»РѕСЃРєРѕРіРѕСЂСЊСЏ, РІРµРґСѓС‰РµРіРѕ Рє СЃС‚Р°СЂРѕР№ РєСЂРµРїРѕСЃС‚Рё РІ СЃРєР°Р»Р°С…. РћС‚СЃСЋРґР° РѕРЅ РјРѕР¶РµС‚ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РїР»РѕСЃРєРѕРіРѕСЂСЊРµРј Рё Р±Р°СЂСЊРµСЂРѕРј РѕСЂРєРѕРІ."); 
 };
 func void DIA_GornDJG_WHATSUP_Lester ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Может, это Лестер, который вернулся в свои старые руины на скале?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //Может. Но, насколько я знаю, Лестер больше не живет там.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //РњРѕР¶РµС‚, СЌС‚Рѕ Р›РµСЃС‚РµСЂ, РєРѕС‚РѕСЂС‹Р№ РІРµСЂРЅСѓР»СЃСЏ РІ СЃРІРѕРё СЃС‚Р°СЂС‹Рµ СЂСѓРёРЅС‹ РЅР° СЃРєР°Р»Рµ?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //РњРѕР¶РµС‚. РќРѕ, РЅР°СЃРєРѕР»СЊРєРѕ СЏ Р·РЅР°СЋ, Р›РµСЃС‚РµСЂ Р±РѕР»СЊС€Рµ РЅРµ Р¶РёРІРµС‚ С‚Р°Рј.
 };
 
 func void DIA_GornDJG_WHATSUP_A_Dragon ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //Дракон?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Весьма вероятно. Плоскогорье, находящееся там, охраняется лучше, чем королевская сокровищница. Ох, а это единственный путь в крепость.
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //Как будто одного дракона недостаточно. Но, похоже, они окружают себя свитой из монстров.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //Р”СЂР°РєРѕРЅ?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Р’РµСЃСЊРјР° РІРµСЂРѕСЏС‚РЅРѕ. РџР»РѕСЃРєРѕРіРѕСЂСЊРµ, РЅР°С…РѕРґСЏС‰РµРµСЃСЏ С‚Р°Рј, РѕС…СЂР°РЅСЏРµС‚СЃСЏ Р»СѓС‡С€Рµ, С‡РµРј РєРѕСЂРѕР»РµРІСЃРєР°СЏ СЃРѕРєСЂРѕРІРёС‰РЅРёС†Р°. РћС…, Р° СЌС‚Рѕ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№ РїСѓС‚СЊ РІ РєСЂРµРїРѕСЃС‚СЊ.
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //РљР°Рє Р±СѓРґС‚Рѕ РѕРґРЅРѕРіРѕ РґСЂР°РєРѕРЅР° РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РќРѕ, РїРѕС…РѕР¶Рµ, РѕРЅРё РѕРєСЂСѓР¶Р°СЋС‚ СЃРµР±СЏ СЃРІРёС‚РѕР№ РёР· РјРѕРЅСЃС‚СЂРѕРІ.
 
 	GornDJG_WhatMonsters = TRUE;
 
-	B_LogEntry (TOPIC_Dragonhunter,"Согласно информации, полученной от Горна, в старой крепости в скалах находится дракон."); 
+	B_LogEntry (TOPIC_Dragonhunter,"РЎРѕРіР»Р°СЃРЅРѕ РёРЅС„РѕСЂРјР°С†РёРё, РїРѕР»СѓС‡РµРЅРЅРѕР№ РѕС‚ Р“РѕСЂРЅР°, РІ СЃС‚Р°СЂРѕР№ РєСЂРµРїРѕСЃС‚Рё РІ СЃРєР°Р»Р°С… РЅР°С…РѕРґРёС‚СЃСЏ РґСЂР°РєРѕРЅ."); 
 	
 	Info_ClearChoices	(DIA_GornDJG_WHATSUP);
 };
@@ -157,7 +157,7 @@ instance DIA_GornDJG_WHATMONSTERS		(C_INFO)
 	condition	 = 	DIA_GornDJG_WHATMONSTERS_Condition;
 	information	 = 	DIA_GornDJG_WHATMONSTERS_Info;
 
-	description	 = 	"А что это за монстры?";
+	description	 = 	"Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° РјРѕРЅСЃС‚СЂС‹?";
 };
 
 func int DIA_GornDJG_WHATMONSTERS_Condition ()
@@ -170,9 +170,9 @@ func int DIA_GornDJG_WHATMONSTERS_Condition ()
 
 func void DIA_GornDJG_WHATMONSTERS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //А что это за монстры?
-	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //Я не смог хорошо разглядеть их, но они ходят на двух ногах и у них чешуйчатая кожа. Они обшаривают скалы как снепперы, унюхавшие добычу.
-	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //Я хорошо слышу здесь внизу, как они сопят и фыркают там. Мне кажется, они заняли все плоскогорье там.
+	AI_Output			(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //Рђ С‡С‚Рѕ СЌС‚Рѕ Р·Р° РјРѕРЅСЃС‚СЂС‹?
+	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //РЇ РЅРµ СЃРјРѕРі С…РѕСЂРѕС€Рѕ СЂР°Р·РіР»СЏРґРµС‚СЊ РёС…, РЅРѕ РѕРЅРё С…РѕРґСЏС‚ РЅР° РґРІСѓС… РЅРѕРіР°С… Рё Сѓ РЅРёС… С‡РµС€СѓР№С‡Р°С‚Р°СЏ РєРѕР¶Р°. РћРЅРё РѕР±С€Р°СЂРёРІР°СЋС‚ СЃРєР°Р»С‹ РєР°Рє СЃРЅРµРїРїРµСЂС‹, СѓРЅСЋС…Р°РІС€РёРµ РґРѕР±С‹С‡Сѓ.
+	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //РЇ С…РѕСЂРѕС€Рѕ СЃР»С‹С€Сѓ Р·РґРµСЃСЊ РІРЅРёР·Сѓ, РєР°Рє РѕРЅРё СЃРѕРїСЏС‚ Рё С„С‹СЂРєР°СЋС‚ С‚Р°Рј. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РѕРЅРё Р·Р°РЅСЏР»Рё РІСЃРµ РїР»РѕСЃРєРѕРіРѕСЂСЊРµ С‚Р°Рј.
 
 };
 
@@ -186,7 +186,7 @@ instance DIA_GornDJG_WAHTABOUTORCS		(C_INFO)
 	condition	 = 	DIA_GornDJG_WAHTABOUTORCS_Condition;
 	information	 = 	DIA_GornDJG_WAHTABOUTORCS_Info;
 
-	description	 = 	"Что насчет орков?";
+	description	 = 	"Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЂРєРѕРІ?";
 };
 
 func int DIA_GornDJG_WAHTABOUTORCS_Condition ()
@@ -199,11 +199,11 @@ func int DIA_GornDJG_WAHTABOUTORCS_Condition ()
 
 func void DIA_GornDJG_WAHTABOUTORCS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //Что насчет орков?
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //Я понаблюдал за ними немного. Баррикада, которую они выстроили там, наверняка что-то скрывает. Я подозреваю, что за ней могут оказаться просто полчища орков.
-	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //Ты хочешь сказать, даже БОЛЬШЕ, чем их есть сейчас?
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //Я не удивлюсь, если однажды вечером они разберут свой частокол и запрудят всю долину. Не нравится мне это все.
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Если это случится, мне нужно будет вернуться и предупредить Ли. Он все равно хочет убраться с этого острова. А тогда мешкать уже будет нельзя.
+	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //Р§С‚Рѕ РЅР°СЃС‡РµС‚ РѕСЂРєРѕРІ?
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //РЇ РїРѕРЅР°Р±Р»СЋРґР°Р» Р·Р° РЅРёРјРё РЅРµРјРЅРѕРіРѕ. Р‘Р°СЂСЂРёРєР°РґР°, РєРѕС‚РѕСЂСѓСЋ РѕРЅРё РІС‹СЃС‚СЂРѕРёР»Рё С‚Р°Рј, РЅР°РІРµСЂРЅСЏРєР° С‡С‚Рѕ-С‚Рѕ СЃРєСЂС‹РІР°РµС‚. РЇ РїРѕРґРѕР·СЂРµРІР°СЋ, С‡С‚Рѕ Р·Р° РЅРµР№ РјРѕРіСѓС‚ РѕРєР°Р·Р°С‚СЊСЃСЏ РїСЂРѕСЃС‚Рѕ РїРѕР»С‡РёС‰Р° РѕСЂРєРѕРІ.
+	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, РґР°Р¶Рµ Р‘РћР›Р¬РЁР•, С‡РµРј РёС… РµСЃС‚СЊ СЃРµР№С‡Р°СЃ?
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //РЇ РЅРµ СѓРґРёРІР»СЋСЃСЊ, РµСЃР»Рё РѕРґРЅР°Р¶РґС‹ РІРµС‡РµСЂРѕРј РѕРЅРё СЂР°Р·Р±РµСЂСѓС‚ СЃРІРѕР№ С‡Р°СЃС‚РѕРєРѕР» Рё Р·Р°РїСЂСѓРґСЏС‚ РІСЃСЋ РґРѕР»РёРЅСѓ. РќРµ РЅСЂР°РІРёС‚СЃСЏ РјРЅРµ СЌС‚Рѕ РІСЃРµ.
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Р•СЃР»Рё СЌС‚Рѕ СЃР»СѓС‡РёС‚СЃСЏ, РјРЅРµ РЅСѓР¶РЅРѕ Р±СѓРґРµС‚ РІРµСЂРЅСѓС‚СЊСЃСЏ Рё РїСЂРµРґСѓРїСЂРµРґРёС‚СЊ Р›Рё. РћРЅ РІСЃРµ СЂР°РІРЅРѕ С…РѕС‡РµС‚ СѓР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°. Рђ С‚РѕРіРґР° РјРµС€РєР°С‚СЊ СѓР¶Рµ Р±СѓРґРµС‚ РЅРµР»СЊР·СЏ.
 
 };
 
@@ -216,7 +216,7 @@ instance DIA_GornDJG_HELPKILLDRACONIANS		(C_INFO)
 	condition	 = 	DIA_GornDJG_HELPKILLDRACONIANS_Condition;
 	information	 = 	DIA_GornDJG_HELPKILLDRACONIANS_Info;
 
-	description	 = 	"Ты поможешь мне пробиться в эту крепость?";
+	description	 = 	"РўС‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РїСЂРѕР±РёС‚СЊСЃСЏ РІ СЌС‚Сѓ РєСЂРµРїРѕСЃС‚СЊ?";
 };
 
 func int DIA_GornDJG_HELPKILLDRACONIANS_Condition ()
@@ -233,20 +233,20 @@ func int DIA_GornDJG_HELPKILLDRACONIANS_Condition ()
 
 func void DIA_GornDJG_HELPKILLDRACONIANS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //Ты поможешь мне пробиться в эту крепость?
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //Я даже не знаю. Боюсь, орки как назло начнут атаку, как только я отвернусь.
-	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //Это паранойя!
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Ничем не могу помочь. Я никогда не прощу себе, если опоздаю, понимаешь? Но с другой стороны ...
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //Ладно! Зачем я вообще тогда здесь? Пошли на это плоскогорье и пробьем себе дорогу к крепости.
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //Небольшая разминка не  помешает. Кроме того, я хочу разглядеть поближе монстров, что бродят там.
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Дай мне знать, когда будешь готов!
+	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //РўС‹ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РїСЂРѕР±РёС‚СЊСЃСЏ РІ СЌС‚Сѓ РєСЂРµРїРѕСЃС‚СЊ?
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ. Р‘РѕСЋСЃСЊ, РѕСЂРєРё РєР°Рє РЅР°Р·Р»Рѕ РЅР°С‡РЅСѓС‚ Р°С‚Р°РєСѓ, РєР°Рє С‚РѕР»СЊРєРѕ СЏ РѕС‚РІРµСЂРЅСѓСЃСЊ.
+	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //Р­С‚Рѕ РїР°СЂР°РЅРѕР№СЏ!
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //РќРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ. РЇ РЅРёРєРѕРіРґР° РЅРµ РїСЂРѕС‰Сѓ СЃРµР±Рµ, РµСЃР»Рё РѕРїРѕР·РґР°СЋ, РїРѕРЅРёРјР°РµС€СЊ? РќРѕ СЃ РґСЂСѓРіРѕР№ СЃС‚РѕСЂРѕРЅС‹ ...
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //Р›Р°РґРЅРѕ! Р—Р°С‡РµРј СЏ РІРѕРѕР±С‰Рµ С‚РѕРіРґР° Р·РґРµСЃСЊ? РџРѕС€Р»Рё РЅР° СЌС‚Рѕ РїР»РѕСЃРєРѕРіРѕСЂСЊРµ Рё РїСЂРѕР±СЊРµРј СЃРµР±Рµ РґРѕСЂРѕРіСѓ Рє РєСЂРµРїРѕСЃС‚Рё.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //РќРµР±РѕР»СЊС€Р°СЏ СЂР°Р·РјРёРЅРєР° РЅРµ  РїРѕРјРµС€Р°РµС‚. РљСЂРѕРјРµ С‚РѕРіРѕ, СЏ С…РѕС‡Сѓ СЂР°Р·РіР»СЏРґРµС‚СЊ РїРѕР±Р»РёР¶Рµ РјРѕРЅСЃС‚СЂРѕРІ, С‡С‚Рѕ Р±СЂРѕРґСЏС‚ С‚Р°Рј.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Р”Р°Р№ РјРЅРµ Р·РЅР°С‚СЊ, РєРѕРіРґР° Р±СѓРґРµС€СЊ РіРѕС‚РѕРІ!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Горн хочет помочь мне добраться через плоскогорье до крепости в скалах."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Р“РѕСЂРЅ С…РѕС‡РµС‚ РїРѕРјРѕС‡СЊ РјРЅРµ РґРѕР±СЂР°С‚СЊСЃСЏ С‡РµСЂРµР· РїР»РѕСЃРєРѕРіРѕСЂСЊРµ РґРѕ РєСЂРµРїРѕСЃС‚Рё РІ СЃРєР°Р»Р°С…."); 
 
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info LosGehtґs
+//	Info LosGehtТ‘s
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornDJG_LOSGEHTS		(C_INFO)
 {
@@ -254,7 +254,7 @@ instance DIA_GornDJG_LOSGEHTS		(C_INFO)
 	condition	 = 	DIA_GornDJG_LOSGEHTS_Condition;
 	information	 = 	DIA_GornDJG_LOSGEHTS_Info;
 
-	description	 = 	"Пошли в атаку!";
+	description	 = 	"РџРѕС€Р»Рё РІ Р°С‚Р°РєСѓ!";
 };
 
 func int DIA_GornDJG_LOSGEHTS_Condition ()
@@ -267,8 +267,8 @@ if (Npc_KnowsInfo(other, DIA_GornDJG_HELPKILLDRACONIANS))
 
 func void DIA_GornDJG_LOSGEHTS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Пошли в атаку!
-	AI_Output			(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Как в старые времена, да? Но я хочу, чтобы ты знал: Это мой бой. На этот раз, я пойду первым!
+	AI_Output			(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //РџРѕС€Р»Рё РІ Р°С‚Р°РєСѓ!
+	AI_Output			(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //РљР°Рє РІ СЃС‚Р°СЂС‹Рµ РІСЂРµРјРµРЅР°, РґР°? РќРѕ СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ Р·РЅР°Р»: Р­С‚Рѕ РјРѕР№ Р±РѕР№. РќР° СЌС‚РѕС‚ СЂР°Р·, СЏ РїРѕР№РґСѓ РїРµСЂРІС‹Рј!
 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -299,11 +299,11 @@ func int DIA_GornDJG_BISHIERHIN_Condition ()
 
 func void DIA_GornDJG_BISHIERHIN_Info ()
 {
-	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //Это было детской забавой. Ну а теперь, дружище, с остальным ты справишься сам. Задай им жару! А я пойду назад и буду наблюдать за орками.
-	AI_Output			(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //Нет проблем. Еще увидимся!
-	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //Я тоже надеюсь на это!
+	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //Р­С‚Рѕ Р±С‹Р»Рѕ РґРµС‚СЃРєРѕР№ Р·Р°Р±Р°РІРѕР№. РќСѓ Р° С‚РµРїРµСЂСЊ, РґСЂСѓР¶РёС‰Рµ, СЃ РѕСЃС‚Р°Р»СЊРЅС‹Рј С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ СЃР°Рј. Р—Р°РґР°Р№ РёРј Р¶Р°СЂСѓ! Рђ СЏ РїРѕР№РґСѓ РЅР°Р·Р°Рґ Рё Р±СѓРґСѓ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РѕСЂРєР°РјРё.
+	AI_Output			(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //РќРµС‚ РїСЂРѕР±Р»РµРј. Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ!
+	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //РЇ С‚РѕР¶Рµ РЅР°РґРµСЋСЃСЊ РЅР° СЌС‚Рѕ!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Горн вернулся на свой сторожевой пост. Он будет продолжать наблюдать за орками."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Р“РѕСЂРЅ РІРµСЂРЅСѓР»СЃСЏ РЅР° СЃРІРѕР№ СЃС‚РѕСЂРѕР¶РµРІРѕР№ РїРѕСЃС‚. РћРЅ Р±СѓРґРµС‚ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ РЅР°Р±Р»СЋРґР°С‚СЊ Р·Р° РѕСЂРєР°РјРё."); 
 
 	B_GivePlayerXP (XP_GornDJGPlateauClear);
  	
@@ -322,7 +322,7 @@ instance DIA_GornDJG_DRAGONDEAD		(C_INFO)
 	condition	 = 	DIA_GornDJG_DRAGONDEAD_Condition;
 	information	 = 	DIA_GornDJG_DRAGONDEAD_Info;
 
-	description	 = 	"Каменный дракон мертв!";	
+	description	 = 	"РљР°РјРµРЅРЅС‹Р№ РґСЂР°РєРѕРЅ РјРµСЂС‚РІ!";	
 };
 
 func int DIA_GornDJG_DRAGONDEAD_Condition ()
@@ -339,14 +339,14 @@ func int DIA_GornDJG_DRAGONDEAD_Condition ()
 
 func void DIA_GornDJG_DRAGONDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //Каменный дракон мертв!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //Я больше не слышу воплей! Ты был в этой крепости в скалах?
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_02"); //Да!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Ха ха!  Я так и думал. Где бы ты ни появился, там камня на камне не остается.
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Что ты собираешься делать дальше?
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //Я побуду здесь еще немного, а затем вернусь к Ли. Может, мы там еще встретимся!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //Меня уже тошнит от этих мест. Пришло время убираться с этого острова.
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //Еще увидимся!
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //РљР°РјРµРЅРЅС‹Р№ РґСЂР°РєРѕРЅ РјРµСЂС‚РІ!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //РЇ Р±РѕР»СЊС€Рµ РЅРµ СЃР»С‹С€Сѓ РІРѕРїР»РµР№! РўС‹ Р±С‹Р» РІ СЌС‚РѕР№ РєСЂРµРїРѕСЃС‚Рё РІ СЃРєР°Р»Р°С…?
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_02"); //Р”Р°!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //РҐР° С…Р°!  РЇ С‚Р°Рє Рё РґСѓРјР°Р». Р“РґРµ Р±С‹ С‚С‹ РЅРё РїРѕСЏРІРёР»СЃСЏ, С‚Р°Рј РєР°РјРЅСЏ РЅР° РєР°РјРЅРµ РЅРµ РѕСЃС‚Р°РµС‚СЃСЏ.
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Р§С‚Рѕ С‚С‹ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ?
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //РЇ РїРѕР±СѓРґСѓ Р·РґРµСЃСЊ РµС‰Рµ РЅРµРјРЅРѕРіРѕ, Р° Р·Р°С‚РµРј РІРµСЂРЅСѓСЃСЊ Рє Р›Рё. РњРѕР¶РµС‚, РјС‹ С‚Р°Рј РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //РњРµРЅСЏ СѓР¶Рµ С‚РѕС€РЅРёС‚ РѕС‚ СЌС‚РёС… РјРµСЃС‚. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ СѓР±РёСЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°.
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ!
 	B_GivePlayerXP (XP_Ambient);
 };
 

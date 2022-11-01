@@ -32,7 +32,7 @@ instance DIA_Rethon_HALLO		(C_INFO)
 	condition	 = 	DIA_Rethon_HALLO_Condition;
 	information	 = 	DIA_Rethon_HALLO_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Rethon_HALLO_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Rethon_HALLO_Condition ()
 
 func void DIA_Rethon_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_HALLO_15_00"); //Что ты делаешь здесь?
-	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //Готовлюсь к сражению, что же еще?
+	AI_Output			(other, self, "DIA_Rethon_HALLO_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //Р“РѕС‚РѕРІР»СЋСЃСЊ Рє СЃСЂР°Р¶РµРЅРёСЋ, С‡С‚Рѕ Р¶Рµ РµС‰Рµ?
 };
 
 
@@ -57,7 +57,7 @@ instance DIA_Rethon_KAMPF		(C_INFO)
 	condition	 = 	DIA_Rethon_KAMPF_Condition;
 	information	 = 	DIA_Rethon_KAMPF_Info;
 
-	description	 = 	"С кем ты собрался сражаться?";
+	description	 = 	"РЎ РєРµРј С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?";
 };
 
 func int DIA_Rethon_KAMPF_Condition ()
@@ -70,9 +70,9 @@ func int DIA_Rethon_KAMPF_Condition ()
 
 func void DIA_Rethon_KAMPF_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //С кем ты собрался сражаться?
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //Я хочу вызвать на бой паладинов и показать этим жирным лентяям, где раки зимуют.
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //Идиот. С драконами, конечно же. А ты что подумал?
+	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //РЎ РєРµРј С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //РЇ С…РѕС‡Сѓ РІС‹Р·РІР°С‚СЊ РЅР° Р±РѕР№ РїР°Р»Р°РґРёРЅРѕРІ Рё РїРѕРєР°Р·Р°С‚СЊ СЌС‚РёРј Р¶РёСЂРЅС‹Рј Р»РµРЅС‚СЏСЏРј, РіРґРµ СЂР°РєРё Р·РёРјСѓСЋС‚.
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //РРґРёРѕС‚. РЎ РґСЂР°РєРѕРЅР°РјРё, РєРѕРЅРµС‡РЅРѕ Р¶Рµ. Рђ С‚С‹ С‡С‚Рѕ РїРѕРґСѓРјР°Р»?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ instance DIA_Rethon_PALADINE		(C_INFO)
 	condition	 = 	DIA_Rethon_PALADINE_Condition;
 	information	 = 	DIA_Rethon_PALADINE_Info;
 
-	description	 = 	"Паладины не против того, что вы здесь?";
+	description	 = 	"РџР°Р»Р°РґРёРЅС‹ РЅРµ РїСЂРѕС‚РёРІ С‚РѕРіРѕ, С‡С‚Рѕ РІС‹ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Rethon_PALADINE_Condition ()
@@ -98,11 +98,11 @@ func int DIA_Rethon_PALADINE_Condition ()
 
 func void DIA_Rethon_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Паладины не против того, что вы здесь?
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Чушь. У них совсем другие проблемы. Большинство из них рады, что вообще живы.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Боевой дух у них ни к черту. Это начало их конца.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Я хочу сказать, ты только посмотри на эти их старые зазубренные клинки, которые они постоянно чинят.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Любой разумный воин давно бы сбежал отсюда.
+	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //РџР°Р»Р°РґРёРЅС‹ РЅРµ РїСЂРѕС‚РёРІ С‚РѕРіРѕ, С‡С‚Рѕ РІС‹ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Р§СѓС€СЊ. РЈ РЅРёС… СЃРѕРІСЃРµРј РґСЂСѓРіРёРµ РїСЂРѕР±Р»РµРјС‹. Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… СЂР°РґС‹, С‡С‚Рѕ РІРѕРѕР±С‰Рµ Р¶РёРІС‹.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Р‘РѕРµРІРѕР№ РґСѓС… Сѓ РЅРёС… РЅРё Рє С‡РµСЂС‚Сѓ. Р­С‚Рѕ РЅР°С‡Р°Р»Рѕ РёС… РєРѕРЅС†Р°.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, С‚С‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРё РЅР° СЌС‚Рё РёС… СЃС‚Р°СЂС‹Рµ Р·Р°Р·СѓР±СЂРµРЅРЅС‹Рµ РєР»РёРЅРєРё, РєРѕС‚РѕСЂС‹Рµ РѕРЅРё РїРѕСЃС‚РѕСЏРЅРЅРѕ С‡РёРЅСЏС‚.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Р›СЋР±РѕР№ СЂР°Р·СѓРјРЅС‹Р№ РІРѕРёРЅ РґР°РІРЅРѕ Р±С‹ СЃР±РµР¶Р°Р» РѕС‚СЃСЋРґР°.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Rethon_WOGRUPPE		(C_INFO)
 	condition	 = 	DIA_Rethon_WOGRUPPE_Condition;
 	information	 = 	DIA_Rethon_WOGRUPPE_Info;
 
-	description	 = 	"Ты отстал от своей группы?";
+	description	 = 	"РўС‹ РѕС‚СЃС‚Р°Р» РѕС‚ СЃРІРѕРµР№ РіСЂСѓРїРїС‹?";
 };
 
 func int DIA_Rethon_WOGRUPPE_Condition ()
@@ -130,9 +130,9 @@ func int DIA_Rethon_WOGRUPPE_Condition ()
 
 func void DIA_Rethon_WOGRUPPE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //Ты отстал от своей группы?
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //Моей группы? У меня нет группы. Я охотник за трофеями.
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Если я вернусь домой без трофея, никто не поймет, зачем я ходил сюда. Поэтому я не хочу ни с кем делиться.
+	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //РўС‹ РѕС‚СЃС‚Р°Р» РѕС‚ СЃРІРѕРµР№ РіСЂСѓРїРїС‹?
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //РњРѕРµР№ РіСЂСѓРїРїС‹? РЈ РјРµРЅСЏ РЅРµС‚ РіСЂСѓРїРїС‹. РЇ РѕС…РѕС‚РЅРёРє Р·Р° С‚СЂРѕС„РµСЏРјРё.
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Р•СЃР»Рё СЏ РІРµСЂРЅСѓСЃСЊ РґРѕРјРѕР№ Р±РµР· С‚СЂРѕС„РµСЏ, РЅРёРєС‚Рѕ РЅРµ РїРѕР№РјРµС‚, Р·Р°С‡РµРј СЏ С…РѕРґРёР» СЃСЋРґР°. РџРѕСЌС‚РѕРјСѓ СЏ РЅРµ С…РѕС‡Сѓ РЅРё СЃ РєРµРј РґРµР»РёС‚СЊСЃСЏ.
 };
 
 
@@ -146,7 +146,7 @@ instance DIA_Rethon_DRACHENGESEHEN		(C_INFO)
 	condition	 = 	DIA_Rethon_DRACHENGESEHEN_Condition;
 	information	 = 	DIA_Rethon_DRACHENGESEHEN_Info;
 
-	description	 = 	"Ты уже видел дракона?";
+	description	 = 	"РўС‹ СѓР¶Рµ РІРёРґРµР» РґСЂР°РєРѕРЅР°?";
 };
 
 func int DIA_Rethon_DRACHENGESEHEN_Condition ()
@@ -159,8 +159,8 @@ func int DIA_Rethon_DRACHENGESEHEN_Condition ()
 
 func void DIA_Rethon_DRACHENGESEHEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //Ты уже видел дракона?
-	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Нет. Я хочу привести свое оружие в порядок, прежде чем отправлюсь охотиться на него.
+	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //РўС‹ СѓР¶Рµ РІРёРґРµР» РґСЂР°РєРѕРЅР°?
+	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //РќРµС‚. РЇ С…РѕС‡Сѓ РїСЂРёРІРµСЃС‚Рё СЃРІРѕРµ РѕСЂСѓР¶РёРµ РІ РїРѕСЂСЏРґРѕРє, РїСЂРµР¶РґРµ С‡РµРј РѕС‚РїСЂР°РІР»СЋСЃСЊ РѕС…РѕС‚РёС‚СЊСЃСЏ РЅР° РЅРµРіРѕ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -173,7 +173,7 @@ instance DIA_Rethon_ANGST		(C_INFO)
 	condition	 = 	DIA_Rethon_ANGST_Condition;
 	information	 = 	DIA_Rethon_ANGST_Info;
 
-	description	 = 	"А ты не боишься, что кто-нибудь может тебя опередить?";
+	description	 = 	"Рђ С‚С‹ РЅРµ Р±РѕРёС€СЊСЃСЏ, С‡С‚Рѕ РєС‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС‚ С‚РµР±СЏ РѕРїРµСЂРµРґРёС‚СЊ?";
 };
 
 func int DIA_Rethon_ANGST_Condition ()
@@ -186,31 +186,31 @@ func int DIA_Rethon_ANGST_Condition ()
 
 func void DIA_Rethon_ANGST_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_15_00"); //А ты не боишься, что кто-нибудь может тебя опередить?
+	AI_Output			(other, self, "DIA_Rethon_ANGST_15_00"); //Рђ С‚С‹ РЅРµ Р±РѕРёС€СЊСЃСЏ, С‡С‚Рѕ РєС‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС‚ С‚РµР±СЏ РѕРїРµСЂРµРґРёС‚СЊ?
 
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_01"); //Что? Кто? Сильвио?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_01"); //Р§С‚Рѕ? РљС‚Рѕ? РЎРёР»СЊРІРёРѕ?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //Твой босс действительно думает, что ему здесь что-то светит, ха?
-			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //Я не из людей Сильвио. Я работаю сам на себя.
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //Ох. Это хорошо. Забудь о том, что я говорил.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //РўРІРѕР№ Р±РѕСЃСЃ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РґСѓРјР°РµС‚, С‡С‚Рѕ РµРјСѓ Р·РґРµСЃСЊ С‡С‚Рѕ-С‚Рѕ СЃРІРµС‚РёС‚, С…Р°?
+			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //РЇ РЅРµ РёР· Р»СЋРґРµР№ РЎРёР»СЊРІРёРѕ. РЇ СЂР°Р±РѕС‚Р°СЋ СЃР°Рј РЅР° СЃРµР±СЏ.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //РћС…. Р­С‚Рѕ С…РѕСЂРѕС€Рѕ. Р—Р°Р±СѓРґСЊ Рѕ С‚РѕРј, С‡С‚Рѕ СЏ РіРѕРІРѕСЂРёР».
 		};
 
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //Ты видел этих жалких трусов, что он привел с собой?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //Сильвио должен радоваться, если ему удастся выбраться отсюда живым.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //РўС‹ РІРёРґРµР» СЌС‚РёС… Р¶Р°Р»РєРёС… С‚СЂСѓСЃРѕРІ, С‡С‚Рѕ РѕРЅ РїСЂРёРІРµР» СЃ СЃРѕР±РѕР№?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //РЎРёР»СЊРІРёРѕ РґРѕР»Р¶РµРЅ СЂР°РґРѕРІР°С‚СЊСЃСЏ, РµСЃР»Рё РµРјСѓ СѓРґР°СЃС‚СЃСЏ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј.
 
 	if (Npc_IsDead(DJG_Sylvio))
 	{
-	AI_Output			(other, self, "DIA_Rethon_ANGST_15_07"); //Не удастся. Он мертв.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_08"); //Я рад.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_15_07"); //РќРµ СѓРґР°СЃС‚СЃСЏ. РћРЅ РјРµСЂС‚РІ.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_08"); //РЇ СЂР°Рґ.
 	}
 	else
 	{
 	Info_AddChoice	(DIA_Rethon_ANGST, DIALOG_BACK, DIA_Rethon_ANGST_weiter );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Похоже, ты не особенно-то любишь его.", DIA_Rethon_ANGST_sylviomoegen );
-	Info_AddChoice	(DIA_Rethon_ANGST, "И где сейчас Сильвио?", DIA_Rethon_ANGST_woSylvio );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Сильвио был здесь?", DIA_Rethon_ANGST_sylviohier );
+	Info_AddChoice	(DIA_Rethon_ANGST, "РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ-С‚Рѕ Р»СЋР±РёС€СЊ РµРіРѕ.", DIA_Rethon_ANGST_sylviomoegen );
+	Info_AddChoice	(DIA_Rethon_ANGST, "Р РіРґРµ СЃРµР№С‡Р°СЃ РЎРёР»СЊРІРёРѕ?", DIA_Rethon_ANGST_woSylvio );
+	Info_AddChoice	(DIA_Rethon_ANGST, "РЎРёР»СЊРІРёРѕ Р±С‹Р» Р·РґРµСЃСЊ?", DIA_Rethon_ANGST_sylviohier );
 	};
 };
 
@@ -221,30 +221,30 @@ func void DIA_Rethon_ANGST_weiter ()
 
 func void DIA_Rethon_ANGST_sylviohier ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //Сильвио был здесь?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //Здесь, в замке, ты хочешь сказать? Да, был. Но очень недолго.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Он поболтал с несколькими парнями здесь, а затем опять исчез.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //РЎРёР»СЊРІРёРѕ Р±С‹Р» Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //Р—РґРµСЃСЊ, РІ Р·Р°РјРєРµ, С‚С‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ? Р”Р°, Р±С‹Р». РќРѕ РѕС‡РµРЅСЊ РЅРµРґРѕР»РіРѕ.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //РћРЅ РїРѕР±РѕР»С‚Р°Р» СЃ РЅРµСЃРєРѕР»СЊРєРёРјРё РїР°СЂРЅСЏРјРё Р·РґРµСЃСЊ, Р° Р·Р°С‚РµРј РѕРїСЏС‚СЊ РёСЃС‡РµР·.
 
 };
 
 func void DIA_Rethon_ANGST_sylviomoegen ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //Похоже, ты не особенно-то любишь его.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Что ты хочешь этим сказать - любишь? Было бы лучше, если бы я его вообще не знал.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //У Сильвио нет друзей. Ему нужны люди, которые идут за ним и не задают вопросов.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //Это не по мне. Я работаю один.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµ РѕСЃРѕР±РµРЅРЅРѕ-С‚Рѕ Р»СЋР±РёС€СЊ РµРіРѕ.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ СЌС‚РёРј СЃРєР°Р·Р°С‚СЊ - Р»СЋР±РёС€СЊ? Р‘С‹Р»Рѕ Р±С‹ Р»СѓС‡С€Рµ, РµСЃР»Рё Р±С‹ СЏ РµРіРѕ РІРѕРѕР±С‰Рµ РЅРµ Р·РЅР°Р».
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //РЈ РЎРёР»СЊРІРёРѕ РЅРµС‚ РґСЂСѓР·РµР№. Р•РјСѓ РЅСѓР¶РЅС‹ Р»СЋРґРё, РєРѕС‚РѕСЂС‹Рµ РёРґСѓС‚ Р·Р° РЅРёРј Рё РЅРµ Р·Р°РґР°СЋС‚ РІРѕРїСЂРѕСЃРѕРІ.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //Р­С‚Рѕ РЅРµ РїРѕ РјРЅРµ. РЇ СЂР°Р±РѕС‚Р°СЋ РѕРґРёРЅ.
 
 
 };
 
 func void DIA_Rethon_ANGST_woSylvio ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //И где сейчас Сильвио?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Паладины говорили, что-то о ледяном драконе на западе. Он, по слухам, самый опасный и сильный из всех драконов.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //Ты бы видел блеск в глазах Сильвио, когда он услышал об этом. Даже гадать не нужно, куда он пошел.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //Р РіРґРµ СЃРµР№С‡Р°СЃ РЎРёР»СЊРІРёРѕ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //РџР°Р»Р°РґРёРЅС‹ РіРѕРІРѕСЂРёР»Рё, С‡С‚Рѕ-С‚Рѕ Рѕ Р»РµРґСЏРЅРѕРј РґСЂР°РєРѕРЅРµ РЅР° Р·Р°РїР°РґРµ. РћРЅ, РїРѕ СЃР»СѓС…Р°Рј, СЃР°РјС‹Р№ РѕРїР°СЃРЅС‹Р№ Рё СЃРёР»СЊРЅС‹Р№ РёР· РІСЃРµС… РґСЂР°РєРѕРЅРѕРІ.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //РўС‹ Р±С‹ РІРёРґРµР» Р±Р»РµСЃРє РІ РіР»Р°Р·Р°С… РЎРёР»СЊРІРёРѕ, РєРѕРіРґР° РѕРЅ СѓСЃР»С‹С€Р°Р» РѕР± СЌС‚РѕРј. Р”Р°Р¶Рµ РіР°РґР°С‚СЊ РЅРµ РЅСѓР¶РЅРѕ, РєСѓРґР° РѕРЅ РїРѕС€РµР».
 
-	B_LogEntry (TOPIC_DRACHENJAGD,"Охотник на драконов Ретон бормотал что-то о ледяном драконе."); 
-	B_LogEntry (TOPIC_Dragonhunter,"Сильвио был в замке, а затем отправился на поиски ледяного дракона.");
+	B_LogEntry (TOPIC_DRACHENJAGD,"РћС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ Р РµС‚РѕРЅ Р±РѕСЂРјРѕС‚Р°Р» С‡С‚Рѕ-С‚Рѕ Рѕ Р»РµРґСЏРЅРѕРј РґСЂР°РєРѕРЅРµ."); 
+	B_LogEntry (TOPIC_Dragonhunter,"РЎРёР»СЊРІРёРѕ Р±С‹Р» РІ Р·Р°РјРєРµ, Р° Р·Р°С‚РµРј РѕС‚РїСЂР°РІРёР»СЃСЏ РЅР° РїРѕРёСЃРєРё Р»РµРґСЏРЅРѕРіРѕ РґСЂР°РєРѕРЅР°.");
 
 };
 
@@ -260,7 +260,7 @@ instance DIA_Rethon_MEINEWAFFE		(C_INFO)
 	condition	 = 	DIA_Rethon_MEINEWAFFE_Condition;
 	information	 = 	DIA_Rethon_MEINEWAFFE_Info;
 
-	description	 = 	"Ты можешь помочь мне улучшить мое оружие?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ СѓР»СѓС‡С€РёС‚СЊ РјРѕРµ РѕСЂСѓР¶РёРµ?";
 };
 
 func int DIA_Rethon_MEINEWAFFE_Condition ()
@@ -273,9 +273,9 @@ func int DIA_Rethon_MEINEWAFFE_Condition ()
 
 func void DIA_Rethon_MEINEWAFFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //Ты можешь помочь мне улучшить мое оружие?
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //Улучшить? Лучше купи что-нибудь новое и выброси этот хлам, что ты носишь с собой.
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //Возможно, у меня найдется что-нибудь для тебя. Тебе это интересно?
+	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРјРѕС‡СЊ РјРЅРµ СѓР»СѓС‡С€РёС‚СЊ РјРѕРµ РѕСЂСѓР¶РёРµ?
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //РЈР»СѓС‡С€РёС‚СЊ? Р›СѓС‡С€Рµ РєСѓРїРё С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРѕРµ Рё РІС‹Р±СЂРѕСЃРё СЌС‚РѕС‚ С…Р»Р°Рј, С‡С‚Рѕ С‚С‹ РЅРѕСЃРёС€СЊ СЃ СЃРѕР±РѕР№.
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //Р’РѕР·РјРѕР¶РЅРѕ, Сѓ РјРµРЅСЏ РЅР°Р№РґРµС‚СЃСЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РґР»СЏ С‚РµР±СЏ. РўРµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -290,7 +290,7 @@ instance DIA_Rethon_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 	
-	description	 = 	"Что ты можешь продать мне?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ?";
 };
 
 func int DIA_Rethon_TRADE_Condition ()
@@ -303,20 +303,20 @@ func int DIA_Rethon_TRADE_Condition ()
 
 func void DIA_Rethon_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_TRADE_15_00"); //Что ты можешь продать мне?
+	AI_Output			(other, self, "DIA_Rethon_TRADE_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРѕРґР°С‚СЊ РјРЅРµ?
 	B_GiveTradeInv (self);
 
 	if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //Ох, как низко я опустился! Теперь я даже продаю мое оружие паладину!
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //РћС…, РєР°Рє РЅРёР·РєРѕ СЏ РѕРїСѓСЃС‚РёР»СЃСЏ! РўРµРїРµСЂСЊ СЏ РґР°Р¶Рµ РїСЂРѕРґР°СЋ РјРѕРµ РѕСЂСѓР¶РёРµ РїР°Р»Р°РґРёРЅСѓ!
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //У меня мало что есть для мага, но все же ты можешь взглянуть.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //РЈ РјРµРЅСЏ РјР°Р»Рѕ С‡С‚Рѕ РµСЃС‚СЊ РґР»СЏ РјР°РіР°, РЅРѕ РІСЃРµ Р¶Рµ С‚С‹ РјРѕР¶РµС€СЊ РІР·РіР»СЏРЅСѓС‚СЊ.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_03"); //Думаю, у меня есть именно то, что тебе нужно, приятель.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_03"); //Р”СѓРјР°СЋ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РёРјРµРЅРЅРѕ С‚Рѕ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ, РїСЂРёСЏС‚РµР»СЊ.
 		};
 };
 

@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Wache_01_Hi   (C_INFO)
 	condition   = DIA_Addon_Wache_01_Hi_Condition;
 	information = DIA_Addon_Wache_01_Hi_Info;
 	permanent   = TRUE;
-	description = "Все в порядке?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 {	
@@ -71,8 +71,8 @@ FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_01_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//Все в порядке?
-	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//Только коснись Эстебана - и я порублю тебя на кусочки.
+	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//РўРѕР»СЊРєРѕ РєРѕСЃРЅРёСЃСЊ Р­СЃС‚РµР±Р°РЅР° - Рё СЏ РїРѕСЂСѓР±Р»СЋ С‚РµР±СЏ РЅР° РєСѓСЃРѕС‡РєРё.
 	
 	AI_StopProcessInfos (self);
 };

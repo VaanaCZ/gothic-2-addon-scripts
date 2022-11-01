@@ -43,7 +43,7 @@ func int DIA_Hakon_Sperre_Condition ()
 };
 func void DIA_Hakon_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Hakon_Sperre_12_00"); //Проваливай, каторжник! Кантар рассказал мне, какой ты грязный ублюдок!
+	AI_Output (self, other, "DIA_Hakon_Sperre_12_00"); //РџСЂРѕРІР°Р»РёРІР°Р№, РєР°С‚РѕСЂР¶РЅРёРє! РљР°РЅС‚Р°СЂ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, РєР°РєРѕР№ С‚С‹ РіСЂСЏР·РЅС‹Р№ СѓР±Р»СЋРґРѕРє!
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -68,11 +68,11 @@ func int DIA_Hakon_Hallo_Condition ()
 };
 func void DIA_Hakon_Hallo_Info ()
 {
-	AI_Output (self ,other,"DIA_Hakon_Add_12_00"); //Я Хакон, торговец оружием.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_01"); //В наши дни каждый должен носить оружие. Особенно, когда выходишь за городские стены.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_00"); //РЇ РҐР°РєРѕРЅ, С‚РѕСЂРіРѕРІРµС† РѕСЂСѓР¶РёРµРј.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_01"); //Р’ РЅР°С€Рё РґРЅРё РєР°Р¶РґС‹Р№ РґРѕР»Р¶РµРЅ РЅРѕСЃРёС‚СЊ РѕСЂСѓР¶РёРµ. РћСЃРѕР±РµРЅРЅРѕ, РєРѕРіРґР° РІС‹С…РѕРґРёС€СЊ Р·Р° РіРѕСЂРѕРґСЃРєРёРµ СЃС‚РµРЅС‹.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Хакон торгует оружием на рыночной площади.");
+	B_LogEntry (Topic_CityTrader,"РҐР°РєРѕРЅ С‚РѕСЂРіСѓРµС‚ РѕСЂСѓР¶РёРµРј РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WAREZ
@@ -85,7 +85,7 @@ instance DIA_Hakon_Trade		(C_INFO)
 	information	 = 	DIA_Hakon_Trade_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Покажи мне свои товары.";
+	description	 = 	"РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 };
 func int DIA_Hakon_Trade_Condition ()
 {	
@@ -94,12 +94,12 @@ func int DIA_Hakon_Trade_Condition ()
 func void DIA_Hakon_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Hakon_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Hakon_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	if (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self,other,"DIA_Hakon_Trade_12_01"); //Для меня большая честь, что представитель святой церкви проявил интерес к моим товарам.
+		AI_Output (self,other,"DIA_Hakon_Trade_12_01"); //Р”Р»СЏ РјРµРЅСЏ Р±РѕР»СЊС€Р°СЏ С‡РµСЃС‚СЊ, С‡С‚Рѕ РїСЂРµРґСЃС‚Р°РІРёС‚РµР»СЊ СЃРІСЏС‚РѕР№ С†РµСЂРєРІРё РїСЂРѕСЏРІРёР» РёРЅС‚РµСЂРµСЃ Рє РјРѕРёРј С‚РѕРІР°СЂР°Рј.
 	};
 };
 
@@ -113,7 +113,7 @@ instance DIA_Addon_Hakon_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Hakon_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Hakon_MissingPeople_Info;
 
-	description	 = 	"Что ты знаешь об исчезновениях людей?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏС… Р»СЋРґРµР№?";
 };
 
 func int DIA_Addon_Hakon_MissingPeople_Condition ()
@@ -126,19 +126,19 @@ func int DIA_Addon_Hakon_MissingPeople_Condition ()
 
 func void DIA_Addon_Hakon_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Hakon_MissingPeople_15_00"); //Что ты знаешь об исчезновениях людей?
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_01"); //Я вижу множество людей, проходящих через восточные ворота.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_02"); //Некоторых из приходящих в город я раньше никогда не видел, а некоторые из уходящих больше не возвращаются.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_03"); //Но недавно случилось нечто действительно странное.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_04"); //В город пришел один человек... Вроде бы его звали Джо. Он что-то болтал о том, что скоро он разбогатеет.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_05"); //Он утверждал, что нашел способ пробраться в одну из городских башен, где хранится оружие ополчения.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_06"); //С тех пор я его не видел. Хотя раньше я встречался с ним каждый день.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_07"); //Я рассказал об этом ополчению.
-	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_08"); //Но лорд Андре сказал, что не понимает, о чем я говорю. Он даже не знал, что это за парень.
+	AI_Output	(other, self, "DIA_Addon_Hakon_MissingPeople_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± РёСЃС‡РµР·РЅРѕРІРµРЅРёСЏС… Р»СЋРґРµР№?
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_01"); //РЇ РІРёР¶Сѓ РјРЅРѕР¶РµСЃС‚РІРѕ Р»СЋРґРµР№, РїСЂРѕС…РѕРґСЏС‰РёС… С‡РµСЂРµР· РІРѕСЃС‚РѕС‡РЅС‹Рµ РІРѕСЂРѕС‚Р°.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_02"); //РќРµРєРѕС‚РѕСЂС‹С… РёР· РїСЂРёС…РѕРґСЏС‰РёС… РІ РіРѕСЂРѕРґ СЏ СЂР°РЅСЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ РІРёРґРµР», Р° РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· СѓС…РѕРґСЏС‰РёС… Р±РѕР»СЊС€Рµ РЅРµ РІРѕР·РІСЂР°С‰Р°СЋС‚СЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_03"); //РќРѕ РЅРµРґР°РІРЅРѕ СЃР»СѓС‡РёР»РѕСЃСЊ РЅРµС‡С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ СЃС‚СЂР°РЅРЅРѕРµ.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_04"); //Р’ РіРѕСЂРѕРґ РїСЂРёС€РµР» РѕРґРёРЅ С‡РµР»РѕРІРµРє... Р’СЂРѕРґРµ Р±С‹ РµРіРѕ Р·РІР°Р»Рё Р”Р¶Рѕ. РћРЅ С‡С‚Рѕ-С‚Рѕ Р±РѕР»С‚Р°Р» Рѕ С‚РѕРј, С‡С‚Рѕ СЃРєРѕСЂРѕ РѕРЅ СЂР°Р·Р±РѕРіР°С‚РµРµС‚.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_05"); //РћРЅ СѓС‚РІРµСЂР¶РґР°Р», С‡С‚Рѕ РЅР°С€РµР» СЃРїРѕСЃРѕР± РїСЂРѕР±СЂР°С‚СЊСЃСЏ РІ РѕРґРЅСѓ РёР· РіРѕСЂРѕРґСЃРєРёС… Р±Р°С€РµРЅ, РіРґРµ С…СЂР°РЅРёС‚СЃСЏ РѕСЂСѓР¶РёРµ РѕРїРѕР»С‡РµРЅРёСЏ.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_06"); //РЎ С‚РµС… РїРѕСЂ СЏ РµРіРѕ РЅРµ РІРёРґРµР». РҐРѕС‚СЏ СЂР°РЅСЊС€Рµ СЏ РІСЃС‚СЂРµС‡Р°Р»СЃСЏ СЃ РЅРёРј РєР°Р¶РґС‹Р№ РґРµРЅСЊ.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_07"); //РЇ СЂР°СЃСЃРєР°Р·Р°Р» РѕР± СЌС‚РѕРј РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output	(self, other, "DIA_Addon_Hakon_MissingPeople_12_08"); //РќРѕ Р»РѕСЂРґ РђРЅРґСЂРµ СЃРєР°Р·Р°Р», С‡С‚Рѕ РЅРµ РїРѕРЅРёРјР°РµС‚, Рѕ С‡РµРј СЏ РіРѕРІРѕСЂСЋ. РћРЅ РґР°Р¶Рµ РЅРµ Р·РЅР°Р», С‡С‚Рѕ СЌС‚Рѕ Р·Р° РїР°СЂРµРЅСЊ.
 
 	Log_CreateTopic (TOPIC_Addon_Joe, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Joe, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Joe,"Хакон, торговец из Хориниса, говорит, что человек по имени Джо бесследно исчез. Хакон утверждает, что Джо знает, как проникнуть в одну из башен города, где ополчение хранит оружие."); 
+	B_LogEntry (TOPIC_Addon_Joe,"РҐР°РєРѕРЅ, С‚РѕСЂРіРѕРІРµС† РёР· РҐРѕСЂРёРЅРёСЃР°, РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‡РµР»РѕРІРµРє РїРѕ РёРјРµРЅРё Р”Р¶Рѕ Р±РµСЃСЃР»РµРґРЅРѕ РёСЃС‡РµР·. РҐР°РєРѕРЅ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ Р”Р¶Рѕ Р·РЅР°РµС‚, РєР°Рє РїСЂРѕРЅРёРєРЅСѓС‚СЊ РІ РѕРґРЅСѓ РёР· Р±Р°С€РµРЅ РіРѕСЂРѕРґР°, РіРґРµ РѕРїРѕР»С‡РµРЅРёРµ С…СЂР°РЅРёС‚ РѕСЂСѓР¶РёРµ."); 
 
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -153,7 +153,7 @@ instance DIA_Hakon_OutOfTown		(C_INFO)
 	condition	 = 	DIA_Hakon_OutOfTown_Condition;
 	information	 = 	DIA_Hakon_OutOfTown_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Расскажи мне подробнее о местности вокруг города.";
+	description	 = 	"Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ РјРµСЃС‚РЅРѕСЃС‚Рё РІРѕРєСЂСѓРі РіРѕСЂРѕРґР°.";
 };
 func int DIA_Hakon_OutOfTown_Condition ()
 {	
@@ -161,11 +161,11 @@ func int DIA_Hakon_OutOfTown_Condition ()
 };
 func void DIA_Hakon_OutOfTown_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_02"); //Расскажи мне подробнее о местности вокруг города.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_03"); //Сейчас там стало очень опасно.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_04"); //Из-за бандитов, с одной стороны, и из-за нашествия диких зверей с другой.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_05"); //Даже зверям, похоже, нечего есть в эти смутные времена.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_06"); //Они стали подходить совсем близко к городу, чего раньше не было.
+	AI_Output (other, self,"DIA_Hakon_Add_15_02"); //Р Р°СЃСЃРєР°Р¶Рё РјРЅРµ РїРѕРґСЂРѕР±РЅРµРµ Рѕ РјРµСЃС‚РЅРѕСЃС‚Рё РІРѕРєСЂСѓРі РіРѕСЂРѕРґР°.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_03"); //РЎРµР№С‡Р°СЃ С‚Р°Рј СЃС‚Р°Р»Рѕ РѕС‡РµРЅСЊ РѕРїР°СЃРЅРѕ.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_04"); //РР·-Р·Р° Р±Р°РЅРґРёС‚РѕРІ, СЃ РѕРґРЅРѕР№ СЃС‚РѕСЂРѕРЅС‹, Рё РёР·-Р·Р° РЅР°С€РµСЃС‚РІРёСЏ РґРёРєРёС… Р·РІРµСЂРµР№ СЃ РґСЂСѓРіРѕР№.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_05"); //Р”Р°Р¶Рµ Р·РІРµСЂСЏРј, РїРѕС…РѕР¶Рµ, РЅРµС‡РµРіРѕ РµСЃС‚СЊ РІ СЌС‚Рё СЃРјСѓС‚РЅС‹Рµ РІСЂРµРјРµРЅР°.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_06"); //РћРЅРё СЃС‚Р°Р»Рё РїРѕРґС…РѕРґРёС‚СЊ СЃРѕРІСЃРµРј Р±Р»РёР·РєРѕ Рє РіРѕСЂРѕРґСѓ, С‡РµРіРѕ СЂР°РЅСЊС€Рµ РЅРµ Р±С‹Р»Рѕ.
 };
 
 // ********************************************************
@@ -178,7 +178,7 @@ instance DIA_Hakon_Paladine		(C_INFO)
 	condition	 = 	DIA_Hakon_Paladine_Condition;
 	information	 = 	DIA_Hakon_Paladine_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты знаешь что-нибудь о паладинах?";
+	description	 = 	"РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїР°Р»Р°РґРёРЅР°С…?";
 };
 func int DIA_Hakon_Paladine_Condition ()
 {	
@@ -186,11 +186,11 @@ func int DIA_Hakon_Paladine_Condition ()
 };
 func void DIA_Hakon_Paladine_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_07"); //Ты знаешь что-нибудь о паладинах?
-	AI_Output (self ,other,"DIA_Hakon_Add_12_08"); //Да! Они разорили меня!
-	AI_Output (self ,other,"DIA_Hakon_Add_12_09"); //Теперь все, что можно купить в этом городе - это короткий меч, и то в лучшем случае.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_10"); //Они забрали себе все, что длиннее фута с половиной.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_11"); //(с сарказмом) А взамен, теперь я могу бесплатно жить в отеле - ха!
+	AI_Output (other, self,"DIA_Hakon_Add_15_07"); //РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ Рѕ РїР°Р»Р°РґРёРЅР°С…?
+	AI_Output (self ,other,"DIA_Hakon_Add_12_08"); //Р”Р°! РћРЅРё СЂР°Р·РѕСЂРёР»Рё РјРµРЅСЏ!
+	AI_Output (self ,other,"DIA_Hakon_Add_12_09"); //РўРµРїРµСЂСЊ РІСЃРµ, С‡С‚Рѕ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ - СЌС‚Рѕ РєРѕСЂРѕС‚РєРёР№ РјРµС‡, Рё С‚Рѕ РІ Р»СѓС‡С€РµРј СЃР»СѓС‡Р°Рµ.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_10"); //РћРЅРё Р·Р°Р±СЂР°Р»Рё СЃРµР±Рµ РІСЃРµ, С‡С‚Рѕ РґР»РёРЅРЅРµРµ С„СѓС‚Р° СЃ РїРѕР»РѕРІРёРЅРѕР№.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_11"); //(СЃ СЃР°СЂРєР°Р·РјРѕРј) Рђ РІР·Р°РјРµРЅ, С‚РµРїРµСЂСЊ СЏ РјРѕРіСѓ Р±РµСЃРїР»Р°С‚РЅРѕ Р¶РёС‚СЊ РІ РѕС‚РµР»Рµ - С…Р°!
 };
 
 // ********************************************************
@@ -203,7 +203,7 @@ instance DIA_Hakon_WoWaffen		(C_INFO)
 	condition	 = 	DIA_Hakon_WoWaffen_Condition;
 	information	 = 	DIA_Hakon_WoWaffen_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Где ты берешь оружие?";
+	description	 = 	"Р“РґРµ С‚С‹ Р±РµСЂРµС€СЊ РѕСЂСѓР¶РёРµ?";
 };
 func int DIA_Hakon_WoWaffen_Condition ()
 {	
@@ -214,18 +214,18 @@ func int DIA_Hakon_WoWaffen_Condition ()
 };
 func void DIA_Hakon_WoWaffen_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_12"); //Где ты берешь оружие?
+	AI_Output (other, self,"DIA_Hakon_Add_15_12"); //Р“РґРµ С‚С‹ Р±РµСЂРµС€СЊ РѕСЂСѓР¶РёРµ?
 	if (Npc_KnowsInfo (other, DIA_Hakon_HaradBandits))
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_13"); //Нигде! Раньше моим поставщиком был Гарад.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_13"); //РќРёРіРґРµ! Р Р°РЅСЊС€Рµ РјРѕРёРј РїРѕСЃС‚Р°РІС‰РёРєРѕРј Р±С‹Р» Р“Р°СЂР°Рґ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_14"); //Раньше моим поставщиком был кузнец Гарад.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_14"); //Р Р°РЅСЊС€Рµ РјРѕРёРј РїРѕСЃС‚Р°РІС‰РёРєРѕРј Р±С‹Р» РєСѓР·РЅРµС† Р“Р°СЂР°Рґ.
 	};
-	AI_Output (self ,other,"DIA_Hakon_Add_12_15"); //А теперь все, что он делает, забирают паладины.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_16"); //Он работает на этих парней днем и ночью как безумный, без какой-либо оплаты. Он думает, что это его долг.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_17"); //Все, что я могу предложить тебе сейчас - это остатки ...
+	AI_Output (self ,other,"DIA_Hakon_Add_12_15"); //Рђ С‚РµРїРµСЂСЊ РІСЃРµ, С‡С‚Рѕ РѕРЅ РґРµР»Р°РµС‚, Р·Р°Р±РёСЂР°СЋС‚ РїР°Р»Р°РґРёРЅС‹.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_16"); //РћРЅ СЂР°Р±РѕС‚Р°РµС‚ РЅР° СЌС‚РёС… РїР°СЂРЅРµР№ РґРЅРµРј Рё РЅРѕС‡СЊСЋ РєР°Рє Р±РµР·СѓРјРЅС‹Р№, Р±РµР· РєР°РєРѕР№-Р»РёР±Рѕ РѕРїР»Р°С‚С‹. РћРЅ РґСѓРјР°РµС‚, С‡С‚Рѕ СЌС‚Рѕ РµРіРѕ РґРѕР»Рі.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_17"); //Р’СЃРµ, С‡С‚Рѕ СЏ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ С‚РµР±Рµ СЃРµР№С‡Р°СЃ - СЌС‚Рѕ РѕСЃС‚Р°С‚РєРё ...
 };
 
 // ********************************************************
@@ -238,7 +238,7 @@ instance DIA_Hakon_HaradBandits		(C_INFO)
 	condition	 = 	DIA_Hakon_HaradBandits_Condition;
 	information	 = 	DIA_Hakon_HaradBandits_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Гарад рассказал мне о нападении бандитов ...";
+	description	 = 	"Р“Р°СЂР°Рґ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ РЅР°РїР°РґРµРЅРёРё Р±Р°РЅРґРёС‚РѕРІ ...";
 };
 func int DIA_Hakon_HaradBandits_Condition ()
 {
@@ -249,10 +249,10 @@ func int DIA_Hakon_HaradBandits_Condition ()
 };
 func void DIA_Hakon_HaradBandits_Info ()
 {
-	AI_Output (other, self,"DIA_Hakon_Add_15_18"); //Гарад рассказал мне о нападении бандитов ...
-	AI_Output (self ,other,"DIA_Hakon_Add_12_19"); //Ох? И?
-	AI_Output (other, self,"DIA_Hakon_Add_15_20"); //Он проголосует за меня при поступлении в ученики, если я уничтожу этих бандитов.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_21"); //(смеется) Старый добрый Гарад. Возможно, он так хочет сказать мне 'извини', за то, что не может сейчас делать оружие для меня.
+	AI_Output (other, self,"DIA_Hakon_Add_15_18"); //Р“Р°СЂР°Рґ СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ Рѕ РЅР°РїР°РґРµРЅРёРё Р±Р°РЅРґРёС‚РѕРІ ...
+	AI_Output (self ,other,"DIA_Hakon_Add_12_19"); //РћС…? Р?
+	AI_Output (other, self,"DIA_Hakon_Add_15_20"); //РћРЅ РїСЂРѕРіРѕР»РѕСЃСѓРµС‚ Р·Р° РјРµРЅСЏ РїСЂРё РїРѕСЃС‚СѓРїР»РµРЅРёРё РІ СѓС‡РµРЅРёРєРё, РµСЃР»Рё СЏ СѓРЅРёС‡С‚РѕР¶Сѓ СЌС‚РёС… Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_21"); //(СЃРјРµРµС‚СЃСЏ) РЎС‚Р°СЂС‹Р№ РґРѕР±СЂС‹Р№ Р“Р°СЂР°Рґ. Р’РѕР·РјРѕР¶РЅРѕ, РѕРЅ С‚Р°Рє С…РѕС‡РµС‚ СЃРєР°Р·Р°С‚СЊ РјРЅРµ 'РёР·РІРёРЅРё', Р·Р° С‚Рѕ, С‡С‚Рѕ РЅРµ РјРѕР¶РµС‚ СЃРµР№С‡Р°СЃ РґРµР»Р°С‚СЊ РѕСЂСѓР¶РёРµ РґР»СЏ РјРµРЅСЏ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -265,7 +265,7 @@ instance DIA_Hakon_Banditen		(C_INFO)
 	condition	 = 	DIA_Hakon_Banditen_Condition;
 	information	 = 	DIA_Hakon_Banditen_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Что ты знаешь об этих бандитах?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РёС… Р±Р°РЅРґРёС‚Р°С…?";
 };
 func int DIA_Hakon_Banditen_Condition ()
 {
@@ -277,16 +277,16 @@ func int DIA_Hakon_Banditen_Condition ()
 };
 func void DIA_Hakon_Banditen_Info ()
 {
-	AI_Output (other, self, "DIA_Hakon_Banditen_15_00"); //Что ты знаешь об этих бандитах?
-	AI_Output (self, other, "DIA_Hakon_Banditen_12_01"); //Что я знаю о них? Они ограбили меня на пути в город!
-	AI_Output (self, other, "DIA_Hakon_Banditen_12_02"); //И не только меня. Они давно уже здесь разбойничают.
-	AI_Output (self, other, "DIA_Hakon_Banditen_12_03"); //Ополчение пыталось выследить их, но безуспешно.
+	AI_Output (other, self, "DIA_Hakon_Banditen_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ РѕР± СЌС‚РёС… Р±Р°РЅРґРёС‚Р°С…?
+	AI_Output (self, other, "DIA_Hakon_Banditen_12_01"); //Р§С‚Рѕ СЏ Р·РЅР°СЋ Рѕ РЅРёС…? РћРЅРё РѕРіСЂР°Р±РёР»Рё РјРµРЅСЏ РЅР° РїСѓС‚Рё РІ РіРѕСЂРѕРґ!
+	AI_Output (self, other, "DIA_Hakon_Banditen_12_02"); //Р РЅРµ С‚РѕР»СЊРєРѕ РјРµРЅСЏ. РћРЅРё РґР°РІРЅРѕ СѓР¶Рµ Р·РґРµСЃСЊ СЂР°Р·Р±РѕР№РЅРёС‡Р°СЋС‚.
+	AI_Output (self, other, "DIA_Hakon_Banditen_12_03"); //РћРїРѕР»С‡РµРЅРёРµ РїС‹С‚Р°Р»РѕСЃСЊ РІС‹СЃР»РµРґРёС‚СЊ РёС…, РЅРѕ Р±РµР·СѓСЃРїРµС€РЅРѕ.
 
 	MIS_HakonBandits = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_HakonBanditen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HakonBanditen,LOG_RUNNING);
-	B_LogEntry(TOPIC_HakonBanditen,"Хакон, торговец оружием, был ограблен бандитами неподалеку от города." );
+	B_LogEntry(TOPIC_HakonBanditen,"РҐР°РєРѕРЅ, С‚РѕСЂРіРѕРІРµС† РѕСЂСѓР¶РёРµРј, Р±С‹Р» РѕРіСЂР°Р±Р»РµРЅ Р±Р°РЅРґРёС‚Р°РјРё РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РіРѕСЂРѕРґР°." );
 };
 
 
@@ -300,7 +300,7 @@ instance DIA_Hakon_Wieviel		(C_INFO)
 	condition	 = 	DIA_Hakon_Wieviel_Condition;
 	information	 = 	DIA_Hakon_Wieviel_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я разберусь с этим ...";
+	description	 = 	"РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ СЌС‚РёРј ...";
 };
 func int DIA_Hakon_Wieviel_Condition ()
 {
@@ -311,19 +311,19 @@ func int DIA_Hakon_Wieviel_Condition ()
 };
 func void DIA_Hakon_Wieviel_Info ()
 {
-	AI_Output (other, self, "DIA_Hakon_Banditen_Ehre_15_00"); //Я разберусь с этим ...
-	AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_01"); //Что, ТЫ хочешь расправиться с бандитами? В одиночку? Ты, наверное хороший боец?
-	AI_Output (other, self, "DIA_Hakon_Banditen_Kohle_15_00"); //Сколько ты готов дать за это?
+	AI_Output (other, self, "DIA_Hakon_Banditen_Ehre_15_00"); //РЇ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ СЌС‚РёРј ...
+	AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_01"); //Р§С‚Рѕ, РўР« С…РѕС‡РµС€СЊ СЂР°СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё? Р’ РѕРґРёРЅРѕС‡РєСѓ? РўС‹, РЅР°РІРµСЂРЅРѕРµ С…РѕСЂРѕС€РёР№ Р±РѕРµС†?
+	AI_Output (other, self, "DIA_Hakon_Banditen_Kohle_15_00"); //РЎРєРѕР»СЊРєРѕ С‚С‹ РіРѕС‚РѕРІ РґР°С‚СЊ Р·Р° СЌС‚Рѕ?
 	
 	if (Npc_KnowsInfo (other, DIA_Hakon_HaradBandits))
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_25"); //(лукаво) Ты ведь хочешь быть на хорошем счету у Гарада, да?
-		AI_Output (self ,other,"DIA_Hakon_Add_12_26"); //Я не думаю, что должен платить тебе за это ...
+		AI_Output (self ,other,"DIA_Hakon_Add_12_25"); //(Р»СѓРєР°РІРѕ) РўС‹ РІРµРґСЊ С…РѕС‡РµС€СЊ Р±С‹С‚СЊ РЅР° С…РѕСЂРѕС€РµРј СЃС‡РµС‚Сѓ Сѓ Р“Р°СЂР°РґР°, РґР°?
+		AI_Output (self ,other,"DIA_Hakon_Add_12_26"); //РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ РґРѕР»Р¶РµРЅ РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ Р·Р° СЌС‚Рѕ ...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Hakon_Banditen_Ehre_12_01"); //Но это опасное дело.
-		AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_02"); //Ладно, мне это тоже нужно. Я заплачу тебе 100 золотых, если ты уничтожишь этих бандитов.
+		AI_Output (self, other, "DIA_Hakon_Banditen_Ehre_12_01"); //РќРѕ СЌС‚Рѕ РѕРїР°СЃРЅРѕРµ РґРµР»Рѕ.
+		AI_Output (self, other, "DIA_Hakon_Banditen_Kohle_12_02"); //Р›Р°РґРЅРѕ, РјРЅРµ СЌС‚Рѕ С‚РѕР¶Рµ РЅСѓР¶РЅРѕ. РЇ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ 100 Р·РѕР»РѕС‚С‹С…, РµСЃР»Рё С‚С‹ СѓРЅРёС‡С‚РѕР¶РёС€СЊ СЌС‚РёС… Р±Р°РЅРґРёС‚РѕРІ.
 		MIS_HakonBanditsPay = TRUE;
 	};
 	
@@ -340,7 +340,7 @@ instance DIA_Hakon_Miliz		(C_INFO)
 	condition	 = 	DIA_Hakon_Miliz_Condition;
 	information	 = 	DIA_Hakon_Miliz_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ты не знаешь, кто в ополчении занимался их поиском?";
+	description	 = 	"РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РєС‚Рѕ РІ РѕРїРѕР»С‡РµРЅРёРё Р·Р°РЅРёРјР°Р»СЃСЏ РёС… РїРѕРёСЃРєРѕРј?";
 };
 
 func int DIA_Hakon_Miliz_Condition ()
@@ -353,12 +353,12 @@ func int DIA_Hakon_Miliz_Condition ()
 func void DIA_Hakon_Miliz_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Hakon_Miliz_15_00"); //Ты не знаешь, кто в ополчении занимался их поиском?
-	AI_Output (self, other, "DIA_Hakon_Miliz_12_01"); //Парень по имени Пабло. Он, и еще несколько парней ходили на поиски этих бандитов. Но они не нашли их.
-	AI_Output (other, self, "DIA_Hakon_Miliz_15_02"); //Ты знаешь, где мне найти Пабло?
-	AI_Output (self, other, "DIA_Hakon_Miliz_12_03"); //Он патрулирует город. Ты найдешь его либо на рыночной пощади, либо в нижней части города.
+	AI_Output (other, self, "DIA_Hakon_Miliz_15_00"); //РўС‹ РЅРµ Р·РЅР°РµС€СЊ, РєС‚Рѕ РІ РѕРїРѕР»С‡РµРЅРёРё Р·Р°РЅРёРјР°Р»СЃСЏ РёС… РїРѕРёСЃРєРѕРј?
+	AI_Output (self, other, "DIA_Hakon_Miliz_12_01"); //РџР°СЂРµРЅСЊ РїРѕ РёРјРµРЅРё РџР°Р±Р»Рѕ. РћРЅ, Рё РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РїР°СЂРЅРµР№ С…РѕРґРёР»Рё РЅР° РїРѕРёСЃРєРё СЌС‚РёС… Р±Р°РЅРґРёС‚РѕРІ. РќРѕ РѕРЅРё РЅРµ РЅР°С€Р»Рё РёС….
+	AI_Output (other, self, "DIA_Hakon_Miliz_15_02"); //РўС‹ Р·РЅР°РµС€СЊ, РіРґРµ РјРЅРµ РЅР°Р№С‚Рё РџР°Р±Р»Рѕ?
+	AI_Output (self, other, "DIA_Hakon_Miliz_12_03"); //РћРЅ РїР°С‚СЂСѓР»РёСЂСѓРµС‚ РіРѕСЂРѕРґ. РўС‹ РЅР°Р№РґРµС€СЊ РµРіРѕ Р»РёР±Рѕ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїРѕС‰Р°РґРё, Р»РёР±Рѕ РІ РЅРёР¶РЅРµР№ С‡Р°СЃС‚Рё РіРѕСЂРѕРґР°.
 	
-	B_LogEntry(TOPIC_HakonBanditen,"Пабло, городской стражник, занимался бесплодными поисками бандитов." );
+	B_LogEntry(TOPIC_HakonBanditen,"РџР°Р±Р»Рѕ, РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶РЅРёРє, Р·Р°РЅРёРјР°Р»СЃСЏ Р±РµСЃРїР»РѕРґРЅС‹РјРё РїРѕРёСЃРєР°РјРё Р±Р°РЅРґРёС‚РѕРІ." );
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo
@@ -370,7 +370,7 @@ instance DIA_Hakon_Wo		(C_INFO)
 	condition	 = 	DIA_Hakon_Wo_Condition;
 	information	 = 	DIA_Hakon_Wo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Где они напали на тебя?";
+	description	 = 	"Р“РґРµ РѕРЅРё РЅР°РїР°Р»Рё РЅР° С‚РµР±СЏ?";
 };
 
 func int DIA_Hakon_Wo_Condition ()
@@ -382,9 +382,9 @@ func int DIA_Hakon_Wo_Condition ()
 };
 func void DIA_Hakon_Wo_Info ()
 {
-	AI_Output (other, self, "DIA_Hakon_Wo_15_00"); //Где они напали на тебя?
-	AI_Output (self, other, "DIA_Hakon_Wo_12_01"); //Около фермы Акила. Выйдешь из вот этих городских ворот и иди по дороге направо.
-	AI_Output (self, other, "DIA_Hakon_Wo_12_02"); //Вскоре ты увидишь каменную лестницу. Эти ублюдки пришли оттуда. Ручаюсь, у них там логово где-то в лесу.
+	AI_Output (other, self, "DIA_Hakon_Wo_15_00"); //Р“РґРµ РѕРЅРё РЅР°РїР°Р»Рё РЅР° С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Hakon_Wo_12_01"); //РћРєРѕР»Рѕ С„РµСЂРјС‹ РђРєРёР»Р°. Р’С‹Р№РґРµС€СЊ РёР· РІРѕС‚ СЌС‚РёС… РіРѕСЂРѕРґСЃРєРёС… РІРѕСЂРѕС‚ Рё РёРґРё РїРѕ РґРѕСЂРѕРіРµ РЅР°РїСЂР°РІРѕ.
+	AI_Output (self, other, "DIA_Hakon_Wo_12_02"); //Р’СЃРєРѕСЂРµ С‚С‹ СѓРІРёРґРёС€СЊ РєР°РјРµРЅРЅСѓСЋ Р»РµСЃС‚РЅРёС†Сѓ. Р­С‚Рё СѓР±Р»СЋРґРєРё РїСЂРёС€Р»Рё РѕС‚С‚СѓРґР°. Р СѓС‡Р°СЋСЃСЊ, Сѓ РЅРёС… С‚Р°Рј Р»РѕРіРѕРІРѕ РіРґРµ-С‚Рѕ РІ Р»РµСЃСѓ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Miliz
@@ -396,7 +396,7 @@ instance DIA_Hakon_Success		(C_INFO)
 	condition	 = 	DIA_Hakon_Success_Condition;
 	information	 = 	DIA_Hakon_Success_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Я расправился с бандитами.";
+	description	 = 	"РЇ СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё.";
 };
 
 func int DIA_Hakon_Success_Condition ()
@@ -413,20 +413,20 @@ func int DIA_Hakon_Success_Condition ()
 func void DIA_Hakon_Success_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Hakon_Success_15_00"); //Я расправился с бандитами.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_27"); //Правда? Кто-нибудь может подтвердить это. У тебя есть доказательства?
-	AI_Output (other, self,"DIA_Hakon_Add_15_28"); //(вздыхает) Мне что, вернуться назад и отрезать им головы?
-	AI_Output (self ,other,"DIA_Hakon_Add_12_29"); //(поспешно) Нет - я не думаю, что это необходимо. Я верю тебе.
-	AI_Output (self, other, "DIA_Hakon_Success_12_01"); //Ты оказал очень большую услугу всем торговцам в городе.
+	AI_Output (other, self, "DIA_Hakon_Success_15_00"); //РЇ СЂР°СЃРїСЂР°РІРёР»СЃСЏ СЃ Р±Р°РЅРґРёС‚Р°РјРё.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_27"); //РџСЂР°РІРґР°? РљС‚Рѕ-РЅРёР±СѓРґСЊ РјРѕР¶РµС‚ РїРѕРґС‚РІРµСЂРґРёС‚СЊ СЌС‚Рѕ. РЈ С‚РµР±СЏ РµСЃС‚СЊ РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІР°?
+	AI_Output (other, self,"DIA_Hakon_Add_15_28"); //(РІР·РґС‹С…Р°РµС‚) РњРЅРµ С‡С‚Рѕ, РІРµСЂРЅСѓС‚СЊСЃСЏ РЅР°Р·Р°Рґ Рё РѕС‚СЂРµР·Р°С‚СЊ РёРј РіРѕР»РѕРІС‹?
+	AI_Output (self ,other,"DIA_Hakon_Add_12_29"); //(РїРѕСЃРїРµС€РЅРѕ) РќРµС‚ - СЏ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ СЌС‚Рѕ РЅРµРѕР±С…РѕРґРёРјРѕ. РЇ РІРµСЂСЋ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Hakon_Success_12_01"); //РўС‹ РѕРєР°Р·Р°Р» РѕС‡РµРЅСЊ Р±РѕР»СЊС€СѓСЋ СѓСЃР»СѓРіСѓ РІСЃРµРј С‚РѕСЂРіРѕРІС†Р°Рј РІ РіРѕСЂРѕРґРµ.
 	
 	if (Npc_KnowsInfo (other, DIA_Hakon_HaradBandits))
 	{
-		AI_Output (self ,other,"DIA_Hakon_Add_12_30"); //Гарад будет доволен - я надеюсь.
+		AI_Output (self ,other,"DIA_Hakon_Add_12_30"); //Р“Р°СЂР°Рґ Р±СѓРґРµС‚ РґРѕРІРѕР»РµРЅ - СЏ РЅР°РґРµСЋСЃСЊ.
 	};
 		
 	if (MIS_HakonBanditsPay == TRUE)
 	{	
-		AI_Output (self, other, "DIA_Hakon_Success_12_02"); //Вот деньги, как я и обещал.
+		AI_Output (self, other, "DIA_Hakon_Success_12_02"); //Р’РѕС‚ РґРµРЅСЊРіРё, РєР°Рє СЏ Рё РѕР±РµС‰Р°Р».
 		B_GiveInvItems (self, other, ItMi_Gold,100);
 	};
 	MIS_HakonBandits = LOG_SUCCESS;
@@ -444,7 +444,7 @@ INSTANCE DIA_Hakon_Minenanteil (C_INFO)
 	condition	= DIA_Hakon_Minenanteil_Condition;
 	information	= DIA_Hakon_Minenanteil_Info;
 	permanent	= FALSE;
-	description = "Где ты взял эти акции, что ты продаешь здесь?";
+	description = "Р“РґРµ С‚С‹ РІР·СЏР» СЌС‚Рё Р°РєС†РёРё, С‡С‚Рѕ С‚С‹ РїСЂРѕРґР°РµС€СЊ Р·РґРµСЃСЊ?";
 };   
                     
 FUNC INT DIA_Hakon_Minenanteil_Condition()
@@ -458,8 +458,8 @@ FUNC INT DIA_Hakon_Minenanteil_Condition()
 
 FUNC VOID DIA_Hakon_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Hakon_Minenanteil_15_00"); //Где ты взял эти акции, что ты продаешь здесь?
-	AI_Output (self, other, "DIA_Hakon_Minenanteil_12_01"); //Извини, но я не могу сказать тебе этого. Это слишком опасно для меня.
+	AI_Output (other, self, "DIA_Hakon_Minenanteil_15_00"); //Р“РґРµ С‚С‹ РІР·СЏР» СЌС‚Рё Р°РєС†РёРё, С‡С‚Рѕ С‚С‹ РїСЂРѕРґР°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Hakon_Minenanteil_12_01"); //РР·РІРёРЅРё, РЅРѕ СЏ РЅРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ СЌС‚РѕРіРѕ. Р­С‚Рѕ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅРѕ РґР»СЏ РјРµРЅСЏ.
 	B_GivePlayerXP (XP_Ambient);
 };	
 
@@ -528,7 +528,7 @@ FUNC INT DIA_Hakon_Kapitel2_Condition()
  
 FUNC VOID DIA_Hakon_Kapitel2_Info()
 {	
-	AI_Output (self ,other,"DIA_Hakon_Add_12_22"); //Опять ты!
-	AI_Output (self ,other,"DIA_Hakon_Add_12_23"); //Гарад, наконец, закончил эту свою чертову работу для паладинов.
-	AI_Output (self ,other,"DIA_Hakon_Add_12_24"); //Это означает, что я теперь могу предложить новое оружие. Тебе это интересно?
+	AI_Output (self ,other,"DIA_Hakon_Add_12_22"); //РћРїСЏС‚СЊ С‚С‹!
+	AI_Output (self ,other,"DIA_Hakon_Add_12_23"); //Р“Р°СЂР°Рґ, РЅР°РєРѕРЅРµС†, Р·Р°РєРѕРЅС‡РёР» СЌС‚Сѓ СЃРІРѕСЋ С‡РµСЂС‚РѕРІСѓ СЂР°Р±РѕС‚Сѓ РґР»СЏ РїР°Р»Р°РґРёРЅРѕРІ.
+	AI_Output (self ,other,"DIA_Hakon_Add_12_24"); //Р­С‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ СЏ С‚РµРїРµСЂСЊ РјРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ РЅРѕРІРѕРµ РѕСЂСѓР¶РёРµ. РўРµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ?
 };

@@ -5,7 +5,7 @@
 prototype Mst_Addon_Stoneguardian	(C_NPC)
 {
 	//----- Monster ----
-	name							= " ‡ÏÂÌÌ˚È ˜‡ÒÓ‚ÓÈ";
+	name							= "–ö–∞–º–µ–Ω–Ω—ã–π —á–∞—Å–æ–≤–æ–π";
 	guild							= GIL_STONEGUARDIAN;
 	aivar[AIV_MM_REAL_ID]			= ID_STONEGUARDIAN;
 	level							= 18;
@@ -68,7 +68,7 @@ func void B_SetVisuals_Stoneguardian()
 };
 
 //**************************************************************
-//	Beschworener Steinw‰chter	
+//	Beschworener Steinw–¥chter	
 //**************************************************************
 
 INSTANCE Summoned_Guardian	(Mst_Addon_Stoneguardian)
@@ -100,7 +100,7 @@ INSTANCE Summoned_Guardian	(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	Steinw‰chter	
+//	Steinw–¥chter	
 //**************************************************************
 
 
@@ -129,7 +129,7 @@ INSTANCE Stoneguardian_MineDead4	(Mst_Addon_Stoneguardian)
 	B_SetVisuals_Stoneguardian ();
 };
 //**************************************************************
-//	Steinw‰chter	
+//	Steinw–¥chter	
 //**************************************************************
 
 INSTANCE Stoneguardian_Dead1	(Mst_Addon_Stoneguardian)
@@ -153,7 +153,7 @@ INSTANCE Stoneguardian_MerdarionsSchluessel	(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	OrnamentSteinw‰chter	
+//	OrnamentSteinw–¥chter	
 //**************************************************************
 
 INSTANCE Stoneguardian_Ornament	(Mst_Addon_Stoneguardian)
@@ -163,7 +163,7 @@ INSTANCE Stoneguardian_Ornament	(Mst_Addon_Stoneguardian)
 };
 
 //**************************************************************
-//	im Geb‰ude der Heiler	
+//	im Geb–¥ude der Heiler	
 //**************************************************************
 
 INSTANCE Stoneguardian_Heiler	(Mst_Addon_Stoneguardian)
@@ -202,7 +202,7 @@ INSTANCE Stoneguardian_Sani06(Mst_Addon_Stoneguardian)
 	aivar[AIV_EnemyOverride] = TRUE;
 };
 //**************************************************************
-//	im Geb‰ude der Heiler	
+//	im Geb–¥ude der Heiler	
 //**************************************************************
 
 INSTANCE Stoneguardian_NailedPortalADW1	(Mst_Addon_Stoneguardian)

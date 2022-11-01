@@ -2,7 +2,7 @@
 instance VLK_4143_HaupttorWache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Стражник у главных ворот"; 
+	name 		= "РЎС‚СЂР°Р¶РЅРёРє Сѓ РіР»Р°РІРЅС‹С… РІРѕСЂРѕС‚"; 
 	guild 		= GIL_VLK;
 	id 			= 4143;
 	voice 		= 13;
@@ -31,8 +31,8 @@ instance VLK_4143_HaupttorWache (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhдngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 30); //Grenzen fьr Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhРґngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 30); //Grenzen fСЊr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_4143;

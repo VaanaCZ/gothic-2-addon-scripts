@@ -2,7 +2,7 @@
 instance VLK_400_Larius (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Лариус";
+	name 		= "Р›Р°СЂРёСѓСЃ";
 	guild 		= GIL_VLK;
 	id 			= 400;
 	voice 		= 1;

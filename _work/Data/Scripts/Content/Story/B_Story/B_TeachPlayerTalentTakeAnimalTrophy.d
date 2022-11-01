@@ -27,34 +27,34 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentAnimalTrophy,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"Теперь я могу:");
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"РўРµРїРµСЂСЊ СЏ РјРѕРіСѓ:");
 	
-	// ------ Kцrperteil nehmen lernen ------
+	// ------ KС†rperteil nehmen lernen ------
 	
 	if (trophy == TROPHY_Teeth) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Teeth] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вынимать клыки из мертвых животных.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹РЅРёРјР°С‚СЊ РєР»С‹РєРё РёР· РјРµСЂС‚РІС‹С… Р¶РёРІРѕС‚РЅС‹С….");};
 	if (trophy == TROPHY_Claws) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Claws] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вынимать когти из мертвых животных.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹РЅРёРјР°С‚СЊ РєРѕРіС‚Рё РёР· РјРµСЂС‚РІС‹С… Р¶РёРІРѕС‚РЅС‹С….");};
 	if (trophy == TROPHY_Fur) 				{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] 				= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...снимать шкуры с мертвых животных.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ РјРµСЂС‚РІС‹С… Р¶РёРІРѕС‚РЅС‹С….");};
 	if (trophy == TROPHY_ReptileSkin) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ReptileSkin] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...снимать шкуры с рептилий.");}; //ADDON
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...СЃРЅРёРјР°С‚СЊ С€РєСѓСЂС‹ СЃ СЂРµРїС‚РёР»РёР№.");}; //ADDON
 	if (trophy == TROPHY_Heart) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Heart] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вынимать сердца из мертвых големов и демонов.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹РЅРёРјР°С‚СЊ СЃРµСЂРґС†Р° РёР· РјРµСЂС‚РІС‹С… РіРѕР»РµРјРѕРІ Рё РґРµРјРѕРЅРѕРІ.");};
 	if (trophy == TROPHY_ShadowHorn) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_ShadowHorn] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вырезать рог у мертвых мракорисов.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹СЂРµР·Р°С‚СЊ СЂРѕРі Сѓ РјРµСЂС‚РІС‹С… РјСЂР°РєРѕСЂРёСЃРѕРІ.");};
 	if (trophy == TROPHY_FireTongue) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_FireTongue] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вынимать язык у мертвых огненных ящеров.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹РЅРёРјР°С‚СЊ СЏР·С‹Рє Сѓ РјРµСЂС‚РІС‹С… РѕРіРЅРµРЅРЅС‹С… СЏС‰РµСЂРѕРІ.");};
 	if (trophy == TROPHY_BFWing) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFWing] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вырезать крылья у мертвых кровавых мух.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹СЂРµР·Р°С‚СЊ РєСЂС‹Р»СЊСЏ Сѓ РјРµСЂС‚РІС‹С… РєСЂРѕРІР°РІС‹С… РјСѓС….");};
 	if (trophy == TROPHY_BFSting) 			{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_BFSting] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вынимать жало у мертвых кровавых мух.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹РЅРёРјР°С‚СЊ Р¶Р°Р»Рѕ Сѓ РјРµСЂС‚РІС‹С… РєСЂРѕРІР°РІС‹С… РјСѓС….");};
 	if (trophy == TROPHY_Mandibles) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Mandibles] 		= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вырезать мандибулы у мертвых животных.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹СЂРµР·Р°С‚СЊ РјР°РЅРґРёР±СѓР»С‹ Сѓ РјРµСЂС‚РІС‹С… Р¶РёРІРѕС‚РЅС‹С….");};
 	if (trophy == TROPHY_CrawlerPlate) 		{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_CrawlerPlate] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...снимать панцири с мертвых краулеров.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...СЃРЅРёРјР°С‚СЊ РїР°РЅС†РёСЂРё СЃ РјРµСЂС‚РІС‹С… РєСЂР°СѓР»РµСЂРѕРІ.");};
 	if (trophy == TROPHY_DrgSnapperHorn)	{	PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DrgSnapperHorn] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentAnimalTrophy,"...вырезать рога у мертвых драконих снепперов.");};
+	B_LogEntry (TOPIC_TalentAnimalTrophy,"...РІС‹СЂРµР·Р°С‚СЊ СЂРѕРіР° Сѓ РјРµСЂС‚РІС‹С… РґСЂР°РєРѕРЅРёС… СЃРЅРµРїРїРµСЂРѕРІ.");};
 	if (trophy == TROPHY_DragonScale) 		{	
 												PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DragonScale] 		= TRUE;	
 												CreateInvItems (Swampdragon, ItAt_DragonScale, 12);	
@@ -62,7 +62,7 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 												CreateInvItems (Firedragon, ItAt_DragonScale, 12);	
 												CreateInvItems (Icedragon, 	ItAt_DragonScale, 12);
 												
-												B_LogEntry (TOPIC_TalentAnimalTrophy,"... снимать чешую с мертвых драконов.");	
+												B_LogEntry (TOPIC_TalentAnimalTrophy,"... СЃРЅРёРјР°С‚СЊ С‡РµС€СѓСЋ СЃ РјРµСЂС‚РІС‹С… РґСЂР°РєРѕРЅРѕРІ.");	
 											};
 	if (trophy == TROPHY_DragonBlood)		{	
 												PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_DragonBlood] 		= TRUE;	
@@ -71,12 +71,12 @@ func int B_TeachPlayerTalentTakeAnimalTrophy (var C_NPC slf, var C_NPC oth, var 
 												CreateInvItems (Firedragon, ItAt_DragonBlood, 2);	
 												CreateInvItems (Icedragon, ItAt_DragonBlood, 2);	
 											
-												B_LogEntry (TOPIC_TalentAnimalTrophy,"... собирать кровь из мертвых драконов.");
+												B_LogEntry (TOPIC_TalentAnimalTrophy,"... СЃРѕР±РёСЂР°С‚СЊ РєСЂРѕРІСЊ РёР· РјРµСЂС‚РІС‹С… РґСЂР°РєРѕРЅРѕРІ.");
 											};
 
 	PrintScreen			(PRINT_LearnTakeAnimalTrophy, -1, -1, FONT_Screen, 2);
 	
-	// ------ bei jedem Kцrperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
+	// ------ bei jedem KС†rperteil: TakeAnimalTrophy-Talent lernen (programmvariable, wird nur zur Ausgabe in StatusScreen benutzt) ------
 	Npc_SetTalentSkill 	(oth, NPC_TALENT_TAKEANIMALTROPHY, 1);
 	return TRUE;
 };

@@ -50,7 +50,7 @@ INSTANCE DIA_Gerbrandt_PICKPOCKET (C_INFO)
 	condition	= DIA_Gerbrandt_PICKPOCKET_Condition;
 	information	= DIA_Gerbrandt_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть его кошелек будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };                       
 
 FUNC INT DIA_Gerbrandt_PICKPOCKET_Condition()
@@ -105,7 +105,7 @@ INSTANCE DIA_Gerbrandt_Hello(C_INFO)
 	condition	= DIA_Gerbrandt_Hello_Condition;
 	information	= DIA_Gerbrandt_Hello_Info;
 	permanent	= FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };                       
 
 FUNC INT DIA_Gerbrandt_Hello_Condition()
@@ -120,66 +120,66 @@ FUNC INT DIA_Gerbrandt_Hello_Condition()
 
 FUNC VOID DIA_Gerbrandt_Hello_Info()
 {	
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_15_00"); //Что ты делаешь здесь?
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_01"); //А ты кто такой? Похоже, ты недавно здесь и понятия не имеешь, с кем имеешь дело.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_02"); //Меня зовут Гербрандт. А для тебя я мистер Гербрандт. Понял?
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_01"); //Рђ С‚С‹ РєС‚Рѕ С‚Р°РєРѕР№? РџРѕС…РѕР¶Рµ, С‚С‹ РЅРµРґР°РІРЅРѕ Р·РґРµСЃСЊ Рё РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµРµС€СЊ, СЃ РєРµРј РёРјРµРµС€СЊ РґРµР»Рѕ.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_02"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р“РµСЂР±СЂР°РЅРґС‚. Рђ РґР»СЏ С‚РµР±СЏ СЏ РјРёСЃС‚РµСЂ Р“РµСЂР±СЂР°РЅРґС‚. РџРѕРЅСЏР»?
 	
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Я понял, Гербрандт.",DIA_Gerbrandt_Hello_No);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Я понял, мистер Гербрандт.",DIA_Gerbrandt_Hello_Yes);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"РЇ РїРѕРЅСЏР», Р“РµСЂР±СЂР°РЅРґС‚.",DIA_Gerbrandt_Hello_No);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"РЇ РїРѕРЅСЏР», РјРёСЃС‚РµСЂ Р“РµСЂР±СЂР°РЅРґС‚.",DIA_Gerbrandt_Hello_Yes);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_No()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_No_15_00"); //Я понял, Гербрандт.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_01"); //Попридержи язык! Тебе лучше проявлять уважение ко мне, иначе у тебя будут большие проблемы...
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_02"); //Здесь я вершу закон. Тому, кто создает проблемы, придется держать ответ передо мной. И лучше ему сразу бежать из города со всех ног, потому что после того, как я разберусь с ним, он пожалеет, что попался мне на глаза!
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_03"); //Большинство людей в порту работает на меня. И если ты ищешь работу, тебе лучше побеспокоиться, чтобы мои воспоминания о тебе были приятными.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_No_15_00"); //РЇ РїРѕРЅСЏР», Р“РµСЂР±СЂР°РЅРґС‚.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_01"); //РџРѕРїСЂРёРґРµСЂР¶Рё СЏР·С‹Рє! РўРµР±Рµ Р»СѓС‡С€Рµ РїСЂРѕСЏРІР»СЏС‚СЊ СѓРІР°Р¶РµРЅРёРµ РєРѕ РјРЅРµ, РёРЅР°С‡Рµ Сѓ С‚РµР±СЏ Р±СѓРґСѓС‚ Р±РѕР»СЊС€РёРµ РїСЂРѕР±Р»РµРјС‹...
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_02"); //Р—РґРµСЃСЊ СЏ РІРµСЂС€Сѓ Р·Р°РєРѕРЅ. РўРѕРјСѓ, РєС‚Рѕ СЃРѕР·РґР°РµС‚ РїСЂРѕР±Р»РµРјС‹, РїСЂРёРґРµС‚СЃСЏ РґРµСЂР¶Р°С‚СЊ РѕС‚РІРµС‚ РїРµСЂРµРґРѕ РјРЅРѕР№. Р Р»СѓС‡С€Рµ РµРјСѓ СЃСЂР°Р·Сѓ Р±РµР¶Р°С‚СЊ РёР· РіРѕСЂРѕРґР° СЃРѕ РІСЃРµС… РЅРѕРі, РїРѕС‚РѕРјСѓ С‡С‚Рѕ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє СЏ СЂР°Р·Р±РµСЂСѓСЃСЊ СЃ РЅРёРј, РѕРЅ РїРѕР¶Р°Р»РµРµС‚, С‡С‚Рѕ РїРѕРїР°Р»СЃСЏ РјРЅРµ РЅР° РіР»Р°Р·Р°!
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_03"); //Р‘РѕР»СЊС€РёРЅСЃС‚РІРѕ Р»СЋРґРµР№ РІ РїРѕСЂС‚Сѓ СЂР°Р±РѕС‚Р°РµС‚ РЅР° РјРµРЅСЏ. Р РµСЃР»Рё С‚С‹ РёС‰РµС€СЊ СЂР°Р±РѕС‚Сѓ, С‚РµР±Рµ Р»СѓС‡С€Рµ РїРѕР±РµСЃРїРѕРєРѕРёС‚СЊСЃСЏ, С‡С‚РѕР±С‹ РјРѕРё РІРѕСЃРїРѕРјРёРЅР°РЅРёСЏ Рѕ С‚РµР±Рµ Р±С‹Р»Рё РїСЂРёСЏС‚РЅС‹РјРё.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_Yes()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_15_00"); //Я понял, мистер Гербрандт.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_01"); //Ну, по крайней мере, тебе не потребовалось много времени, чтобы понять, куда здесь ветер дует.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_02"); //Как только бизнес опять пойдет в гору, у меня наверняка найдется работа для такого смышленого паренька, как ты.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_03"); //Из тебя бы получился отличный кладовщик.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_04"); //Ты умеешь читать?
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_15_00"); //РЇ РїРѕРЅСЏР», РјРёСЃС‚РµСЂ Р“РµСЂР±СЂР°РЅРґС‚.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_01"); //РќСѓ, РїРѕ РєСЂР°Р№РЅРµР№ РјРµСЂРµ, С‚РµР±Рµ РЅРµ РїРѕС‚СЂРµР±РѕРІР°Р»РѕСЃСЊ РјРЅРѕРіРѕ РІСЂРµРјРµРЅРё, С‡С‚РѕР±С‹ РїРѕРЅСЏС‚СЊ, РєСѓРґР° Р·РґРµСЃСЊ РІРµС‚РµСЂ РґСѓРµС‚.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_02"); //РљР°Рє С‚РѕР»СЊРєРѕ Р±РёР·РЅРµСЃ РѕРїСЏС‚СЊ РїРѕР№РґРµС‚ РІ РіРѕСЂСѓ, Сѓ РјРµРЅСЏ РЅР°РІРµСЂРЅСЏРєР° РЅР°Р№РґРµС‚СЃСЏ СЂР°Р±РѕС‚Р° РґР»СЏ С‚Р°РєРѕРіРѕ СЃРјС‹С€Р»РµРЅРѕРіРѕ РїР°СЂРµРЅСЊРєР°, РєР°Рє С‚С‹.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_03"); //РР· С‚РµР±СЏ Р±С‹ РїРѕР»СѓС‡РёР»СЃСЏ РѕС‚Р»РёС‡РЅС‹Р№ РєР»Р°РґРѕРІС‰РёРє.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_04"); //РўС‹ СѓРјРµРµС€СЊ С‡РёС‚Р°С‚СЊ?
 	
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Нет.",DIA_Gerbrandt_Hello_Yes_No);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Мне не нужна работа.",DIA_Gerbrandt_Hello_NoJob);
-	Info_AddChoice (DIA_Gerbrandt_Hello,"Конечно.",DIA_Gerbrandt_Hello_Yes_Yes);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"РќРµС‚.",DIA_Gerbrandt_Hello_Yes_No);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"РњРЅРµ РЅРµ РЅСѓР¶РЅР° СЂР°Р±РѕС‚Р°.",DIA_Gerbrandt_Hello_NoJob);
+	Info_AddChoice (DIA_Gerbrandt_Hello,"РљРѕРЅРµС‡РЅРѕ.",DIA_Gerbrandt_Hello_Yes_Yes);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_Yes_No()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_No_15_00"); //Нет.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_01"); //Ничего, по крайне мере, ты сможешь переложить несколько мешков с места на место.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_02"); //И если я буду доволен тобой, возможно, я даже предложу тебе постоянное место. Здесь всегда много работы.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_03"); //Что ж, тогда я жду тебя у себя, как только к пристани пришвартуется первый торговый корабль.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_No_15_00"); //РќРµС‚.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_01"); //РќРёС‡РµРіРѕ, РїРѕ РєСЂР°Р№РЅРµ РјРµСЂРµ, С‚С‹ СЃРјРѕР¶РµС€СЊ РїРµСЂРµР»РѕР¶РёС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РјРµС€РєРѕРІ СЃ РјРµСЃС‚Р° РЅР° РјРµСЃС‚Рѕ.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_02"); //Р РµСЃР»Рё СЏ Р±СѓРґСѓ РґРѕРІРѕР»РµРЅ С‚РѕР±РѕР№, РІРѕР·РјРѕР¶РЅРѕ, СЏ РґР°Р¶Рµ РїСЂРµРґР»РѕР¶Сѓ С‚РµР±Рµ РїРѕСЃС‚РѕСЏРЅРЅРѕРµ РјРµСЃС‚Рѕ. Р—РґРµСЃСЊ РІСЃРµРіРґР° РјРЅРѕРіРѕ СЂР°Р±РѕС‚С‹.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_03"); //Р§С‚Рѕ Р¶, С‚РѕРіРґР° СЏ Р¶РґСѓ С‚РµР±СЏ Сѓ СЃРµР±СЏ, РєР°Рє С‚РѕР»СЊРєРѕ Рє РїСЂРёСЃС‚Р°РЅРё РїСЂРёС€РІР°СЂС‚СѓРµС‚СЃСЏ РїРµСЂРІС‹Р№ С‚РѕСЂРіРѕРІС‹Р№ РєРѕСЂР°Р±Р»СЊ.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_NoJob ()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_NoJob_15_00"); //Мне не нужна работа.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_01"); //Ты думаешь, ты ужасно крут. Смотри, никто не может получить работу здесь без моего одобрения.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_02"); //И если ты продолжишь оскорблять меня, ты можешь сразу искать себе соломенный тюфяк с клопами, потому что это будет все, что ты сможешь себе позволить.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_03"); //Еще придет время, когда ты будешь умолять меня дать тебе работу.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_NoJob_15_00"); //РњРЅРµ РЅРµ РЅСѓР¶РЅР° СЂР°Р±РѕС‚Р°.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_01"); //РўС‹ РґСѓРјР°РµС€СЊ, С‚С‹ СѓР¶Р°СЃРЅРѕ РєСЂСѓС‚. РЎРјРѕС‚СЂРё, РЅРёРєС‚Рѕ РЅРµ РјРѕР¶РµС‚ РїРѕР»СѓС‡РёС‚СЊ СЂР°Р±РѕС‚Сѓ Р·РґРµСЃСЊ Р±РµР· РјРѕРµРіРѕ РѕРґРѕР±СЂРµРЅРёСЏ.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_02"); //Р РµСЃР»Рё С‚С‹ РїСЂРѕРґРѕР»Р¶РёС€СЊ РѕСЃРєРѕСЂР±Р»СЏС‚СЊ РјРµРЅСЏ, С‚С‹ РјРѕР¶РµС€СЊ СЃСЂР°Р·Сѓ РёСЃРєР°С‚СЊ СЃРµР±Рµ СЃРѕР»РѕРјРµРЅРЅС‹Р№ С‚СЋС„СЏРє СЃ РєР»РѕРїР°РјРё, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЌС‚Рѕ Р±СѓРґРµС‚ РІСЃРµ, С‡С‚Рѕ С‚С‹ СЃРјРѕР¶РµС€СЊ СЃРµР±Рµ РїРѕР·РІРѕР»РёС‚СЊ.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_03"); //Р•С‰Рµ РїСЂРёРґРµС‚ РІСЂРµРјСЏ, РєРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ СѓРјРѕР»СЏС‚СЊ РјРµРЅСЏ РґР°С‚СЊ С‚РµР±Рµ СЂР°Р±РѕС‚Сѓ.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_Yes_Yes ()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //Конечно.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Отлично. В наши времена тяжело найти обученных работников.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //Как насчет твоих рекомендаций?
-	AI_Output (other,self,"DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //Рекомендаций?
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //Хорошо, я запомню твое лицо. Когда торговля возобновится опять, приходи ко мне. Тогда я дам тебе работу.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //РљРѕРЅРµС‡РЅРѕ.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //РћС‚Р»РёС‡РЅРѕ. Р’ РЅР°С€Рё РІСЂРµРјРµРЅР° С‚СЏР¶РµР»Рѕ РЅР°Р№С‚Рё РѕР±СѓС‡РµРЅРЅС‹С… СЂР°Р±РѕС‚РЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //РљР°Рє РЅР°СЃС‡РµС‚ С‚РІРѕРёС… СЂРµРєРѕРјРµРЅРґР°С†РёР№?
+	AI_Output (other,self,"DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //Р РµРєРѕРјРµРЅРґР°С†РёР№?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°РїРѕРјРЅСЋ С‚РІРѕРµ Р»РёС†Рѕ. РљРѕРіРґР° С‚РѕСЂРіРѕРІР»СЏ РІРѕР·РѕР±РЅРѕРІРёС‚СЃСЏ РѕРїСЏС‚СЊ, РїСЂРёС…РѕРґРё РєРѕ РјРЅРµ. РўРѕРіРґР° СЏ РґР°Рј С‚РµР±Рµ СЂР°Р±РѕС‚Сѓ.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
@@ -190,9 +190,9 @@ FUNC VOID DIA_Gerbrandt_Hello_Yes_Yes ()
 
 FUNC VOID B_GErbrandt_PissOff ()
 {
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_00"); //Что это все значит - ты издеваешься надо мной?
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_01"); //Ты и твой приятель Диего уже и так дел натворили.
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_02"); //Оставь меня в покое!
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_00"); //Р§С‚Рѕ СЌС‚Рѕ РІСЃРµ Р·РЅР°С‡РёС‚ - С‚С‹ РёР·РґРµРІР°РµС€СЊСЃСЏ РЅР°РґРѕ РјРЅРѕР№?
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_01"); //РўС‹ Рё С‚РІРѕР№ РїСЂРёСЏС‚РµР»СЊ Р”РёРµРіРѕ СѓР¶Рµ Рё С‚Р°Рє РґРµР» РЅР°С‚РІРѕСЂРёР»Рё.
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_02"); //РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ!
 	
 	//Patch m.f. Wenn diego kommt und er wird gefragt, geht er nicht los, weil losgehen steht in exit info und durch diesen Ai_Stop wird das umgangen
 	if (DIEGO_COMING != TRUE) //NICHT, wenn Diego kommt
@@ -208,7 +208,7 @@ INSTANCE DIA_Gerbrandt_Perm(C_INFO)
 	condition	= DIA_Gerbrandt_Perm_Condition;
 	information	= DIA_Gerbrandt_Perm_Info;
 	permanent	= TRUE;
-	description	= "Есть что-нибудь новенькое?";
+	description	= "Р•СЃС‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РЅРѕРІРµРЅСЊРєРѕРµ?";
 };                       
 
 FUNC INT DIA_Gerbrandt_Perm_Condition()
@@ -221,19 +221,19 @@ FUNC INT DIA_Gerbrandt_Perm_Condition()
 
 FUNC VOID DIA_Gerbrandt_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Perm_15_00"); //Есть новости?
+	AI_Output (other,self ,"DIA_Gerbrandt_Perm_15_00"); //Р•СЃС‚СЊ РЅРѕРІРѕСЃС‚Рё?
 	
 	if (Kapitel <= 2)
 	{
 		if (hero.guild != GIL_KDF)
 		&& (hero.guild != GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_01"); //Людям вроде тебя нечего делать здесь. Здесь живут порядочные члены общества, а не какие-нибудь бродяги и проходимцы.
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_02"); //Если тебе когда-нибудь удастся стать богатым и уважаемым, возможно, тебе будут более рады здесь.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_01"); //Р›СЋРґСЏРј РІСЂРѕРґРµ С‚РµР±СЏ РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ. Р—РґРµСЃСЊ Р¶РёРІСѓС‚ РїРѕСЂСЏРґРѕС‡РЅС‹Рµ С‡Р»РµРЅС‹ РѕР±С‰РµСЃС‚РІР°, Р° РЅРµ РєР°РєРёРµ-РЅРёР±СѓРґСЊ Р±СЂРѕРґСЏРіРё Рё РїСЂРѕС…РѕРґРёРјС†С‹.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_02"); //Р•СЃР»Рё С‚РµР±Рµ РєРѕРіРґР°-РЅРёР±СѓРґСЊ СѓРґР°СЃС‚СЃСЏ СЃС‚Р°С‚СЊ Р±РѕРіР°С‚С‹Рј Рё СѓРІР°Р¶Р°РµРјС‹Рј, РІРѕР·РјРѕР¶РЅРѕ, С‚РµР±Рµ Р±СѓРґСѓС‚ Р±РѕР»РµРµ СЂР°РґС‹ Р·РґРµСЃСЊ.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_03"); //Мне не на что жаловаться, о, благородный рыцарь.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_03"); //РњРЅРµ РЅРµ РЅР° С‡С‚Рѕ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ, Рѕ, Р±Р»Р°РіРѕСЂРѕРґРЅС‹Р№ СЂС‹С†Р°СЂСЊ.
 		};
 	}
 	else if (Kapitel >= 3)
@@ -243,12 +243,12 @@ FUNC VOID DIA_Gerbrandt_Perm_Info()
 			if (hero.guild != GIL_KDF)
 			&& (hero.guild != GIL_PAL)
 			{
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_04"); //Много я видал таких людей как ты - вы просто не знаете своего места.
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_05"); //Мне стоит поговорить с губернатором об усилении мер безопасности в верхнем квартале.
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_04"); //РњРЅРѕРіРѕ СЏ РІРёРґР°Р» С‚Р°РєРёС… Р»СЋРґРµР№ РєР°Рє С‚С‹ - РІС‹ РїСЂРѕСЃС‚Рѕ РЅРµ Р·РЅР°РµС‚Рµ СЃРІРѕРµРіРѕ РјРµСЃС‚Р°.
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_05"); //РњРЅРµ СЃС‚РѕРёС‚ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РіСѓР±РµСЂРЅР°С‚РѕСЂРѕРј РѕР± СѓСЃРёР»РµРЅРёРё РјРµСЂ Р±РµР·РѕРїР°СЃРЅРѕСЃС‚Рё РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ.
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_06"); //Это никого не касается кроме меня. Я занят!
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_06"); //Р­С‚Рѕ РЅРёРєРѕРіРѕ РЅРµ РєР°СЃР°РµС‚СЃСЏ РєСЂРѕРјРµ РјРµРЅСЏ. РЇ Р·Р°РЅСЏС‚!
 			};
 		}
 		else
@@ -271,7 +271,7 @@ INSTANCE DIA_Gerbrandt_GreetingsFromDiego(C_INFO)
 	condition	= DIA_Gerbrandt_GreetingsFromDiego_Condition;
 	information	= DIA_Gerbrandt_GreetingsFromDiego_Info;
 	permanent	= FALSE;
-	description	= "Диего передает тебе привет.";
+	description	= "Р”РёРµРіРѕ РїРµСЂРµРґР°РµС‚ С‚РµР±Рµ РїСЂРёРІРµС‚.";
 };                       
 
 FUNC INT DIA_Gerbrandt_GreetingsFromDiego_Condition()
@@ -286,20 +286,20 @@ FUNC INT DIA_Gerbrandt_GreetingsFromDiego_Condition()
 
 FUNC VOID DIA_Gerbrandt_GreetingsFromDiego_Info()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Диего передает тебе привет.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(испуганно) Что? Кто? Какой Диего?
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_02"); //Он попросил меня вручить тебе это письмо.
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Р”РёРµРіРѕ РїРµСЂРµРґР°РµС‚ С‚РµР±Рµ РїСЂРёРІРµС‚.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) Р§С‚Рѕ? РљС‚Рѕ? РљР°РєРѕР№ Р”РёРµРіРѕ?
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_02"); //РћРЅ РїРѕРїСЂРѕСЃРёР» РјРµРЅСЏ РІСЂСѓС‡РёС‚СЊ С‚РµР±Рµ СЌС‚Рѕ РїРёСЃСЊРјРѕ.
 	
 	B_GiveInvItems (other,self,ItWr_DiegosLetter_MIS,1);
 	B_UseFakeScroll ();
 	
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(возбужденно) Этого не может быть. Нет. Мне конец!
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(в страхе) Он что, уже в городе?
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_05"); //Кто?
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Диего, конечно же!
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Да, я должен скоро встретиться с ним.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(в отчаянии, про себя) Это конец! Все пропало!
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_09"); //У меня нет времени, мне нужно уходить отсюда. Быстро. Если он найдет меня здесь, мне конец!
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(РІРѕР·Р±СѓР¶РґРµРЅРЅРѕ) Р­С‚РѕРіРѕ РЅРµ РјРѕР¶РµС‚ Р±С‹С‚СЊ. РќРµС‚. РњРЅРµ РєРѕРЅРµС†!
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(РІ СЃС‚СЂР°С…Рµ) РћРЅ С‡С‚Рѕ, СѓР¶Рµ РІ РіРѕСЂРѕРґРµ?
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_05"); //РљС‚Рѕ?
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Р”РёРµРіРѕ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ!
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Р”Р°, СЏ РґРѕР»Р¶РµРЅ СЃРєРѕСЂРѕ РІСЃС‚СЂРµС‚РёС‚СЊСЃСЏ СЃ РЅРёРј.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(РІ РѕС‚С‡Р°СЏРЅРёРё, РїСЂРѕ СЃРµР±СЏ) Р­С‚Рѕ РєРѕРЅРµС†! Р’СЃРµ РїСЂРѕРїР°Р»Рѕ!
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_09"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё, РјРЅРµ РЅСѓР¶РЅРѕ СѓС…РѕРґРёС‚СЊ РѕС‚СЃСЋРґР°. Р‘С‹СЃС‚СЂРѕ. Р•СЃР»Рё РѕРЅ РЅР°Р№РґРµС‚ РјРµРЅСЏ Р·РґРµСЃСЊ, РјРЅРµ РєРѕРЅРµС†!
 	
 	MIS_DiegosResidence = LOG_SUCCESS;
 	

@@ -36,25 +36,25 @@ FUNC INT DIA_1061_Wache_Hallo_Condition()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//Стой! Тебе сюда нельзя.
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Я хочу поговорить с вашим главарем.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(иронично) Ох, понимаю, ты хочешь поговорить с моим боссом. Что ж, тогда КОНЕЧНО ЖЕ, я позволю тебе пройти.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(смертельно серьезно) Но только если ты назовешь его имя. А если нет, мне придется убить тебя! Хорошо?
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//РЎС‚РѕР№! РўРµР±Рµ СЃСЋРґР° РЅРµР»СЊР·СЏ.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//РЇ С…РѕС‡Сѓ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РІР°С€РёРј РіР»Р°РІР°СЂРµРј.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(РёСЂРѕРЅРёС‡РЅРѕ) РћС…, РїРѕРЅРёРјР°СЋ, С‚С‹ С…РѕС‡РµС€СЊ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃ РјРѕРёРј Р±РѕСЃСЃРѕРј. Р§С‚Рѕ Р¶, С‚РѕРіРґР° РљРћРќР•Р§РќРћ Р–Р•, СЏ РїРѕР·РІРѕР»СЋ С‚РµР±Рµ РїСЂРѕР№С‚Рё.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(СЃРјРµСЂС‚РµР»СЊРЅРѕ СЃРµСЂСЊРµР·РЅРѕ) РќРѕ С‚РѕР»СЊРєРѕ РµСЃР»Рё С‚С‹ РЅР°Р·РѕРІРµС€СЊ РµРіРѕ РёРјСЏ. Рђ РµСЃР»Рё РЅРµС‚, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ СѓР±РёС‚СЊ С‚РµР±СЏ! РҐРѕСЂРѕС€Рѕ?
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
-	Info_AddChoice (DIA_1061_Wache_Hallo,"Ли.",DIA_1061_Wache_Hallo_Lee);
+	Info_AddChoice (DIA_1061_Wache_Hallo,"Р›Рё.",DIA_1061_Wache_Hallo_Lee);
 	if (Bdt13_Dexter_verraten == TRUE) 
 	|| (Ranger_SCKnowsDexter == TRUE)//ADDON
 	{
-		Info_AddChoice (DIA_1061_Wache_Hallo,"Декстер.",DIA_1061_Wache_Hallo_Dexter);
+		Info_AddChoice (DIA_1061_Wache_Hallo,"Р”РµРєСЃС‚РµСЂ.",DIA_1061_Wache_Hallo_Dexter);
 	};
-	Info_AddChoice (DIA_1061_Wache_Hallo,"Диего.",DIA_1061_Wache_Hallo_Diego);
-	Info_AddChoice (DIA_1061_Wache_Hallo,"Понятия не имею.",DIA_1061_Wache_Hallo_Ahnung);
+	Info_AddChoice (DIA_1061_Wache_Hallo,"Р”РёРµРіРѕ.",DIA_1061_Wache_Hallo_Diego);
+	Info_AddChoice (DIA_1061_Wache_Hallo,"РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ.",DIA_1061_Wache_Hallo_Ahnung);
 };
 FUNC VOID DIA_1061_Wache_Hallo_Lee()
 {
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_Lee_15_00");//Ли.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Lee_01_01");//Ну, что тут сказать? Ты только что подписал себе приговор, парень!
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_Lee_15_00");//Р›Рё.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Lee_01_01");//РќСѓ, С‡С‚Рѕ С‚СѓС‚ СЃРєР°Р·Р°С‚СЊ? РўС‹ С‚РѕР»СЊРєРѕ С‡С‚Рѕ РїРѕРґРїРёСЃР°Р» СЃРµР±Рµ РїСЂРёРіРѕРІРѕСЂ, РїР°СЂРµРЅСЊ!
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -62,10 +62,10 @@ FUNC VOID DIA_1061_Wache_Hallo_Lee()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 {
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Декстер.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Ну... похоже, ты действительно знаешь нашего босса. Хорошо, я позволю тебе пройти. Но предупреждаю тебя.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Если ты подойдешь к кому-нибудь слишком близко, ты не выйдешь оттуда живым!
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Так что вдохни поглубже и держи свой меч в ножнах. Ты найдешь Декстера в доме.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Р”РµРєСЃС‚РµСЂ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//РќСѓ... РїРѕС…РѕР¶Рµ, С‚С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ Р·РЅР°РµС€СЊ РЅР°С€РµРіРѕ Р±РѕСЃСЃР°. РҐРѕСЂРѕС€Рѕ, СЏ РїРѕР·РІРѕР»СЋ С‚РµР±Рµ РїСЂРѕР№С‚Рё. РќРѕ РїСЂРµРґСѓРїСЂРµР¶РґР°СЋ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Р•СЃР»Рё С‚С‹ РїРѕРґРѕР№РґРµС€СЊ Рє РєРѕРјСѓ-РЅРёР±СѓРґСЊ СЃР»РёС€РєРѕРј Р±Р»РёР·РєРѕ, С‚С‹ РЅРµ РІС‹Р№РґРµС€СЊ РѕС‚С‚СѓРґР° Р¶РёРІС‹Рј!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//РўР°Рє С‡С‚Рѕ РІРґРѕС…РЅРё РїРѕРіР»СѓР±Р¶Рµ Рё РґРµСЂР¶Рё СЃРІРѕР№ РјРµС‡ РІ РЅРѕР¶РЅР°С…. РўС‹ РЅР°Р№РґРµС€СЊ Р”РµРєСЃС‚РµСЂР° РІ РґРѕРјРµ.
 	
 	Knows_Dexter = TRUE;
 	BanditGuard.aivar[AIV_PASSGATE] = TRUE;
@@ -74,10 +74,10 @@ FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Diego()
 {
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Диего.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Правильно!
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//Нет, это была шутка. Ты понятия не имеешь, кто наш босс.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Так что не вижу причин оставлять тебя в живых.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Р”РёРµРіРѕ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//РџСЂР°РІРёР»СЊРЅРѕ!
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//РќРµС‚, СЌС‚Рѕ Р±С‹Р»Р° С€СѓС‚РєР°. РўС‹ РїРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµРµС€СЊ, РєС‚Рѕ РЅР°С€ Р±РѕСЃСЃ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//РўР°Рє С‡С‚Рѕ РЅРµ РІРёР¶Сѓ РїСЂРёС‡РёРЅ РѕСЃС‚Р°РІР»СЏС‚СЊ С‚РµР±СЏ РІ Р¶РёРІС‹С….
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -85,8 +85,8 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Ahnung()
 {
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//Понятия не имею.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//Тогда ты умрешь в неведении.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//РўРѕРіРґР° С‚С‹ СѓРјСЂРµС€СЊ РІ РЅРµРІРµРґРµРЅРёРё.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -114,7 +114,7 @@ FUNC INT DIA_1061_Wache_Perm_Condition()
 };
 FUNC VOID DIA_1061_Wache_Perm_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Помни: держи себя в руках, и, может быть, ты уйдешь отсюда живым.
+	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//РџРѕРјРЅРё: РґРµСЂР¶Рё СЃРµР±СЏ РІ СЂСѓРєР°С…, Рё, РјРѕР¶РµС‚ Р±С‹С‚СЊ, С‚С‹ СѓР№РґРµС€СЊ РѕС‚СЃСЋРґР° Р¶РёРІС‹Рј.
 	AI_StopProcessInfos (self);
 };
 	 

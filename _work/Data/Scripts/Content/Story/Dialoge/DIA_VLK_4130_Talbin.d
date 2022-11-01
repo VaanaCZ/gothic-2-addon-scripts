@@ -48,10 +48,10 @@ func int DIA_Talbin_HALLO_Condition ()
 
 func void DIA_Talbin_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Talbin_HALLO_07_00"); //Стой! Ни шагу дальше!
-	AI_Output			(other, self, "DIA_Talbin_HALLO_15_01"); //Ох! Нет проблем!
-	AI_Output			(self, other, "DIA_Talbin_HALLO_07_02"); //Эх! Еще один маленький ягненок, ха? Сначала я принял тебя за одного из этих ублюдков, что постоянно шляются здесь.
-	AI_Output			(self, other, "DIA_Talbin_HALLO_07_03"); //Но теперь я вижу, что ты не один из них. Ты выглядишь слишком беззащитным!
+	AI_Output			(self, other, "DIA_Talbin_HALLO_07_00"); //РЎС‚РѕР№! РќРё С€Р°РіСѓ РґР°Р»СЊС€Рµ!
+	AI_Output			(other, self, "DIA_Talbin_HALLO_15_01"); //РћС…! РќРµС‚ РїСЂРѕР±Р»РµРј!
+	AI_Output			(self, other, "DIA_Talbin_HALLO_07_02"); //Р­С…! Р•С‰Рµ РѕРґРёРЅ РјР°Р»РµРЅСЊРєРёР№ СЏРіРЅРµРЅРѕРє, С…Р°? РЎРЅР°С‡Р°Р»Р° СЏ РїСЂРёРЅСЏР» С‚РµР±СЏ Р·Р° РѕРґРЅРѕРіРѕ РёР· СЌС‚РёС… СѓР±Р»СЋРґРєРѕРІ, С‡С‚Рѕ РїРѕСЃС‚РѕСЏРЅРЅРѕ С€Р»СЏСЋС‚СЃСЏ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_Talbin_HALLO_07_03"); //РќРѕ С‚РµРїРµСЂСЊ СЏ РІРёР¶Сѓ, С‡С‚Рѕ С‚С‹ РЅРµ РѕРґРёРЅ РёР· РЅРёС…. РўС‹ РІС‹РіР»СЏРґРёС€СЊ СЃР»РёС€РєРѕРј Р±РµР·Р·Р°С‰РёС‚РЅС‹Рј!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Talbin_WASMACHTIHR		(C_INFO)
 	condition	 = 	DIA_Talbin_WASMACHTIHR_Condition;
 	information	 = 	DIA_Talbin_WASMACHTIHR_Info;
 
-	description	 = 	"А ты похож на охотника, который не знает, куда девать свободное время.";
+	description	 = 	"Рђ С‚С‹ РїРѕС…РѕР¶ РЅР° РѕС…РѕС‚РЅРёРєР°, РєРѕС‚РѕСЂС‹Р№ РЅРµ Р·РЅР°РµС‚, РєСѓРґР° РґРµРІР°С‚СЊ СЃРІРѕР±РѕРґРЅРѕРµ РІСЂРµРјСЏ.";
 };
 
 func int DIA_Talbin_WASMACHTIHR_Condition ()
@@ -77,21 +77,21 @@ func int DIA_Talbin_WASMACHTIHR_Condition ()
 
 func void DIA_Talbin_WASMACHTIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_15_00"); //А ты похож на охотника, который не знает, куда девать свободное время.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_01"); //Ха-ха! Да - ты угадал. Но что мне еще делать - я не могу вернуться через Проход!
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_02"); //Поэтому я остаюсь здесь и занимаюсь тем, что умею лучше всего.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_15_00"); //Рђ С‚С‹ РїРѕС…РѕР¶ РЅР° РѕС…РѕС‚РЅРёРєР°, РєРѕС‚РѕСЂС‹Р№ РЅРµ Р·РЅР°РµС‚, РєСѓРґР° РґРµРІР°С‚СЊ СЃРІРѕР±РѕРґРЅРѕРµ РІСЂРµРјСЏ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_01"); //РҐР°-С…Р°! Р”Р° - С‚С‹ СѓРіР°РґР°Р». РќРѕ С‡С‚Рѕ РјРЅРµ РµС‰Рµ РґРµР»Р°С‚СЊ - СЏ РЅРµ РјРѕРіСѓ РІРµСЂРЅСѓС‚СЊСЃСЏ С‡РµСЂРµР· РџСЂРѕС…РѕРґ!
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_02"); //РџРѕСЌС‚РѕРјСѓ СЏ РѕСЃС‚Р°СЋСЃСЊ Р·РґРµСЃСЊ Рё Р·Р°РЅРёРјР°СЋСЃСЊ С‚РµРј, С‡С‚Рѕ СѓРјРµСЋ Р»СѓС‡С€Рµ РІСЃРµРіРѕ.
 
 	if ((Npc_IsDead(Engrom)) == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_03"); //Мне жаль, впрочем, моего приятеля Энгрома.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_03"); //РњРЅРµ Р¶Р°Р»СЊ, РІРїСЂРѕС‡РµРј, РјРѕРµРіРѕ РїСЂРёСЏС‚РµР»СЏ Р­РЅРіСЂРѕРјР°.
 	};
 
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_04"); //Садись ближе к моему костру. Погрейся немного.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_04"); //РЎР°РґРёСЃСЊ Р±Р»РёР¶Рµ Рє РјРѕРµРјСѓ РєРѕСЃС‚СЂСѓ. РџРѕРіСЂРµР№СЃСЏ РЅРµРјРЅРѕРіРѕ.
 	
 	Info_ClearChoices	(DIA_Talbin_WASMACHTIHR);
 	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, DIALOG_BACK, DIA_Talbin_WASMACHTIHR_back );
-	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "Но мне кажется, ты комфортно чувствуешь себя здесь.", DIA_Talbin_WASMACHTIHR_gut );
-	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "Ты бывший каторжник из-за Барьера?", DIA_Talbin_WASMACHTIHR_strf );
+	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "РќРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РєРѕРјС„РѕСЂС‚РЅРѕ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЃРµР±СЏ Р·РґРµСЃСЊ.", DIA_Talbin_WASMACHTIHR_gut );
+	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "РўС‹ Р±С‹РІС€РёР№ РєР°С‚РѕСЂР¶РЅРёРє РёР·-Р·Р° Р‘Р°СЂСЊРµСЂР°?", DIA_Talbin_WASMACHTIHR_strf );
 
 };
 func void DIA_Talbin_WASMACHTIHR_back ()
@@ -101,20 +101,20 @@ func void DIA_Talbin_WASMACHTIHR_back ()
 
 func void DIA_Talbin_WASMACHTIHR_strf ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_00"); //Ты бывший каторжник из-за Барьера?
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_01"); //Нет, нет! С чего ты взял? Я просто хотел подзаработать здесь.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_02"); //Кто-то сказал мне, что здесь лучшие охотничьи угодья на острове.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_03"); //Райские угодья, если ты понимаешь, что я имею в виду.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_04"); //Но единственное, что можно заработать здесь после того, как появились эти чертовы орки, - это удар топором, если зайдешь слишком далеко!
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_05"); //И я позволил этим идиотам обмануть меня.
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_06"); //Я знаю этих шутников!
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_00"); //РўС‹ Р±С‹РІС€РёР№ РєР°С‚РѕСЂР¶РЅРёРє РёР·-Р·Р° Р‘Р°СЂСЊРµСЂР°?
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_01"); //РќРµС‚, РЅРµС‚! РЎ С‡РµРіРѕ С‚С‹ РІР·СЏР»? РЇ РїСЂРѕСЃС‚Рѕ С…РѕС‚РµР» РїРѕРґР·Р°СЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_02"); //РљС‚Рѕ-С‚Рѕ СЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ Р·РґРµСЃСЊ Р»СѓС‡С€РёРµ РѕС…РѕС‚РЅРёС‡СЊРё СѓРіРѕРґСЊСЏ РЅР° РѕСЃС‚СЂРѕРІРµ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_03"); //Р Р°Р№СЃРєРёРµ СѓРіРѕРґСЊСЏ, РµСЃР»Рё С‚С‹ РїРѕРЅРёРјР°РµС€СЊ, С‡С‚Рѕ СЏ РёРјРµСЋ РІ РІРёРґСѓ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_04"); //РќРѕ РµРґРёРЅСЃС‚РІРµРЅРЅРѕРµ, С‡С‚Рѕ РјРѕР¶РЅРѕ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ Р·РґРµСЃСЊ РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє РїРѕСЏРІРёР»РёСЃСЊ СЌС‚Рё С‡РµСЂС‚РѕРІС‹ РѕСЂРєРё, - СЌС‚Рѕ СѓРґР°СЂ С‚РѕРїРѕСЂРѕРј, РµСЃР»Рё Р·Р°Р№РґРµС€СЊ СЃР»РёС€РєРѕРј РґР°Р»РµРєРѕ!
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_05"); //Р СЏ РїРѕР·РІРѕР»РёР» СЌС‚РёРј РёРґРёРѕС‚Р°Рј РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_06"); //РЇ Р·РЅР°СЋ СЌС‚РёС… С€СѓС‚РЅРёРєРѕРІ!
 };
 
 func void DIA_Talbin_WASMACHTIHR_gut ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_gut_15_00"); //Но мне кажется, ты комфортно чувствуешь себя здесь.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_01"); //О да! Я думаю, мне не на что жаловаться. Несмотря на этих чертовых орков, район у реки наименее опасен.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_02"); //Похоже, они не осмеливаются приближаться к воде. Ммм. Хотя, возможно, это просто совпадение.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_gut_15_00"); //РќРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚С‹ РєРѕРјС„РѕСЂС‚РЅРѕ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЃРµР±СЏ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_01"); //Рћ РґР°! РЇ РґСѓРјР°СЋ, РјРЅРµ РЅРµ РЅР° С‡С‚Рѕ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ. РќРµСЃРјРѕС‚СЂСЏ РЅР° СЌС‚РёС… С‡РµСЂС‚РѕРІС‹С… РѕСЂРєРѕРІ, СЂР°Р№РѕРЅ Сѓ СЂРµРєРё РЅР°РёРјРµРЅРµРµ РѕРїР°СЃРµРЅ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_02"); //РџРѕС…РѕР¶Рµ, РѕРЅРё РЅРµ РѕСЃРјРµР»РёРІР°СЋС‚СЃСЏ РїСЂРёР±Р»РёР¶Р°С‚СЊСЃСЏ Рє РІРѕРґРµ. РњРјРј. РҐРѕС‚СЏ, РІРѕР·РјРѕР¶РЅРѕ, СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ СЃРѕРІРїР°РґРµРЅРёРµ.
 };
 
 
@@ -128,7 +128,7 @@ instance DIA_Talbin_SORRYFORENGROM		(C_INFO)
 	condition	 = 	DIA_Talbin_SORRYFORENGROM_Condition;
 	information	 = 	DIA_Talbin_SORRYFORENGROM_Info;
 
-	description	 = 	"Почему тебе жаль Энгрома?";
+	description	 = 	"РџРѕС‡РµРјСѓ С‚РµР±Рµ Р¶Р°Р»СЊ Р­РЅРіСЂРѕРјР°?";
 };
 
 func int DIA_Talbin_SORRYFORENGROM_Condition ()
@@ -145,9 +145,9 @@ func int DIA_Talbin_SORRYFORENGROM_Condition ()
 
 func void DIA_Talbin_SORRYFORENGROM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_SORRYFORENGROM_15_00"); //Почему тебе жаль Энгрома?
-	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_01"); //Потому что он просто пошел за мной, не задавая вопросов.
-	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_02"); //И вот мы попали в эту передрягу. Жадность никогда не доводит до добра.
+	AI_Output			(other, self, "DIA_Talbin_SORRYFORENGROM_15_00"); //РџРѕС‡РµРјСѓ С‚РµР±Рµ Р¶Р°Р»СЊ Р­РЅРіСЂРѕРјР°?
+	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_01"); //РџРѕС‚РѕРјСѓ С‡С‚Рѕ РѕРЅ РїСЂРѕСЃС‚Рѕ РїРѕС€РµР» Р·Р° РјРЅРѕР№, РЅРµ Р·Р°РґР°РІР°СЏ РІРѕРїСЂРѕСЃРѕРІ.
+	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_02"); //Р РІРѕС‚ РјС‹ РїРѕРїР°Р»Рё РІ СЌС‚Сѓ РїРµСЂРµРґСЂСЏРіСѓ. Р–Р°РґРЅРѕСЃС‚СЊ РЅРёРєРѕРіРґР° РЅРµ РґРѕРІРѕРґРёС‚ РґРѕ РґРѕР±СЂР°.
 };
 
 
@@ -161,7 +161,7 @@ instance DIA_Talbin_WASJAGDIHR		(C_INFO)
 	condition	 = 	DIA_Talbin_WASJAGDIHR_Condition;
 	information	 = 	DIA_Talbin_WASJAGDIHR_Info;
 
-	description	 = 	"А на кого ты охотишься у реки?";
+	description	 = 	"Рђ РЅР° РєРѕРіРѕ С‚С‹ РѕС…РѕС‚РёС€СЊСЃСЏ Сѓ СЂРµРєРё?";
 };
 
 func int DIA_Talbin_WASJAGDIHR_Condition ()
@@ -176,10 +176,10 @@ func int DIA_Talbin_WASJAGDIHR_Condition ()
 
 func void DIA_Talbin_WASJAGDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASJAGDIHR_15_00"); //А на кого ты охотишься у реки?
-	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_01"); //Что за вопрос! Просто пройди вдоль реки, и ты поймешь, на кого я охочусь. На луркеров, конечно же!
-	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_02"); //Этих тварей нелегко завалить, но их мясо очень вкусное.
-	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_03"); //Иногда также я натыкаюсь на падальщиков. Я не привередливый, и от них нос тоже не ворочу!
+	AI_Output			(other, self, "DIA_Talbin_WASJAGDIHR_15_00"); //Рђ РЅР° РєРѕРіРѕ С‚С‹ РѕС…РѕС‚РёС€СЊСЃСЏ Сѓ СЂРµРєРё?
+	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_01"); //Р§С‚Рѕ Р·Р° РІРѕРїСЂРѕСЃ! РџСЂРѕСЃС‚Рѕ РїСЂРѕР№РґРё РІРґРѕР»СЊ СЂРµРєРё, Рё С‚С‹ РїРѕР№РјРµС€СЊ, РЅР° РєРѕРіРѕ СЏ РѕС…РѕС‡СѓСЃСЊ. РќР° Р»СѓСЂРєРµСЂРѕРІ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ!
+	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_02"); //Р­С‚РёС… С‚РІР°СЂРµР№ РЅРµР»РµРіРєРѕ Р·Р°РІР°Р»РёС‚СЊ, РЅРѕ РёС… РјСЏСЃРѕ РѕС‡РµРЅСЊ РІРєСѓСЃРЅРѕРµ.
+	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_03"); //РРЅРѕРіРґР° С‚Р°РєР¶Рµ СЏ РЅР°С‚С‹РєР°СЋСЃСЊ РЅР° РїР°РґР°Р»СЊС‰РёРєРѕРІ. РЇ РЅРµ РїСЂРёРІРµСЂРµРґР»РёРІС‹Р№, Рё РѕС‚ РЅРёС… РЅРѕСЃ С‚РѕР¶Рµ РЅРµ РІРѕСЂРѕС‡Сѓ!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ instance DIA_Talbin_ENGROMANGRY		(C_INFO)
 	condition	 = 	DIA_Talbin_ENGROMANGRY_Condition;
 	information	 = 	DIA_Talbin_ENGROMANGRY_Info;
 
-	description	 = 	"Мне кажется, твой приятель какой-то напряженный!";
+	description	 = 	"РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚РІРѕР№ РїСЂРёСЏС‚РµР»СЊ РєР°РєРѕР№-С‚Рѕ РЅР°РїСЂСЏР¶РµРЅРЅС‹Р№!";
 };
 
 func int DIA_Talbin_ENGROMANGRY_Condition ()
@@ -212,9 +212,9 @@ func int DIA_Talbin_ENGROMANGRY_Condition ()
 
 func void DIA_Talbin_ENGROMANGRY_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_ENGROMANGRY_15_00"); //Мне кажется, твой приятель какой-то напряженный!
-	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_01"); //Брось. Не провоцируй его, или он меня прикончит. Сейчас я ничем не могу помочь ему.
-	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_02"); //Но я что-нибудь придумаю!
+	AI_Output			(other, self, "DIA_Talbin_ENGROMANGRY_15_00"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, С‚РІРѕР№ РїСЂРёСЏС‚РµР»СЊ РєР°РєРѕР№-С‚Рѕ РЅР°РїСЂСЏР¶РµРЅРЅС‹Р№!
+	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_01"); //Р‘СЂРѕСЃСЊ. РќРµ РїСЂРѕРІРѕС†РёСЂСѓР№ РµРіРѕ, РёР»Рё РѕРЅ РјРµРЅСЏ РїСЂРёРєРѕРЅС‡РёС‚. РЎРµР№С‡Р°СЃ СЏ РЅРёС‡РµРј РЅРµ РјРѕРіСѓ РїРѕРјРѕС‡СЊ РµРјСѓ.
+	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_02"); //РќРѕ СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРёРґСѓРјР°СЋ!
 };
 
 
@@ -229,7 +229,7 @@ INSTANCE DIA_Talbin_AskTeacher (C_INFO)
 	condition	= DIA_Talbin_AskTeacher_Condition;
 	information	= DIA_Talbin_AskTeacher_Info;
 
-	description = "Ты можешь научить меня охотиться?";
+	description = "РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?";
 };                       
 
 FUNC INT DIA_Talbin_AskTeacher_Condition()
@@ -244,14 +244,14 @@ FUNC INT DIA_Talbin_AskTeacher_Condition()
 
 FUNC VOID DIA_Talbin_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_00"); //Ты можешь научить меня охотиться?
-	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_01"); //Понимаю! Это и тебя увлекло. Хорошо. Но не бесплатно!
-	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_02"); //Что ты хочешь за это?
-	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_03"); //У тебя ничего нет поесть кроме мяса луркеров? Может быть, кусок сыра? Да, кусок сыра. Жизнь бы отдал за этот кусок...
-	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_04"); //Я посмотрю, что можно сделать.
+	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ РѕС…РѕС‚РёС‚СЊСЃСЏ?
+	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_01"); //РџРѕРЅРёРјР°СЋ! Р­С‚Рѕ Рё С‚РµР±СЏ СѓРІР»РµРєР»Рѕ. РҐРѕСЂРѕС€Рѕ. РќРѕ РЅРµ Р±РµСЃРїР»Р°С‚РЅРѕ!
+	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚Рѕ?
+	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_03"); //РЈ С‚РµР±СЏ РЅРёС‡РµРіРѕ РЅРµС‚ РїРѕРµСЃС‚СЊ РєСЂРѕРјРµ РјСЏСЃР° Р»СѓСЂРєРµСЂРѕРІ? РњРѕР¶РµС‚ Р±С‹С‚СЊ, РєСѓСЃРѕРє СЃС‹СЂР°? Р”Р°, РєСѓСЃРѕРє СЃС‹СЂР°. Р–РёР·РЅСЊ Р±С‹ РѕС‚РґР°Р» Р·Р° СЌС‚РѕС‚ РєСѓСЃРѕРє...
+	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_04"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 		
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Талбин может обучить меня добывать трофеи животных.");
+	B_LogEntry		(TOPIC_Teacher, "РўР°Р»Р±РёРЅ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РґРѕР±С‹РІР°С‚СЊ С‚СЂРѕС„РµРё Р¶РёРІРѕС‚РЅС‹С….");
 };
 
 
@@ -266,7 +266,7 @@ INSTANCE DIA_Talbin_PayTeacher (C_INFO)
 	condition	= DIA_Talbin_PayTeacher_Condition;
 	information	= DIA_Talbin_PayTeacher_Info;
 	permanent	= TRUE;
-	description = "Вот твой сыр. Ты обучишь меня теперь?";
+	description = "Р’РѕС‚ С‚РІРѕР№ СЃС‹СЂ. РўС‹ РѕР±СѓС‡РёС€СЊ РјРµРЅСЏ С‚РµРїРµСЂСЊ?";
 };                       
 
 var int DIA_Talbin_PayTeacher_noPerm;
@@ -288,15 +288,15 @@ FUNC VOID DIA_Talbin_PayTeacher_Info()
 {
 	if (B_GiveInvItems (other, self, itfo_Cheese, 1))
 	{
-		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_00"); //Вот твой сыр. Ты обучишь меня теперь?
-		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_01"); //У тебя действительно есть сыр? Ох, давненько я не ел ничего подобного. Спасибо. Ээ, а что насчет... Ах, да, конечно!
+		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_00"); //Р’РѕС‚ С‚РІРѕР№ СЃС‹СЂ. РўС‹ РѕР±СѓС‡РёС€СЊ РјРµРЅСЏ С‚РµРїРµСЂСЊ?
+		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_01"); //РЈ С‚РµР±СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РµСЃС‚СЊ СЃС‹СЂ? РћС…, РґР°РІРЅРµРЅСЊРєРѕ СЏ РЅРµ РµР» РЅРёС‡РµРіРѕ РїРѕРґРѕР±РЅРѕРіРѕ. РЎРїР°СЃРёР±Рѕ. Р­СЌ, Р° С‡С‚Рѕ РЅР°СЃС‡РµС‚... РђС…, РґР°, РєРѕРЅРµС‡РЅРѕ!
 		Talbin_TeachAnimalTrophy = TRUE;
 		DIA_Talbin_PayTeacher_noPerm = TRUE;
 	}
-	else	//SC hat keinen Kдse
+	else	//SC hat keinen KРґse
 	{
-		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_02"); //У меня сейчас нет сыра!
-		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_03"); //Это было бы слишком хорошо, чтобы быть правдой. Ладно, скажешь, когда раздобудешь его!
+		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_02"); //РЈ РјРµРЅСЏ СЃРµР№С‡Р°СЃ РЅРµС‚ СЃС‹СЂР°!
+		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_03"); //Р­С‚Рѕ Р±С‹Р»Рѕ Р±С‹ СЃР»РёС€РєРѕРј С…РѕСЂРѕС€Рѕ, С‡С‚РѕР±С‹ Р±С‹С‚СЊ РїСЂР°РІРґРѕР№. Р›Р°РґРЅРѕ, СЃРєР°Р¶РµС€СЊ, РєРѕРіРґР° СЂР°Р·РґРѕР±СѓРґРµС€СЊ РµРіРѕ!
 	};
 };
 
@@ -311,7 +311,7 @@ instance DIA_Talbin_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Talbin_TEACHHUNTING_Condition;
 	information	 = 	DIA_Talbin_TEACHHUNTING_Info;
 	permanent	= TRUE;
-	description	 = 	"Чему ты можешь обучить меня?";
+	description	 = 	"Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?";
 };
 
 func int DIA_Talbin_TEACHHUNTING_Condition ()
@@ -326,7 +326,7 @@ func int DIA_Talbin_TEACHHUNTING_Condition ()
 
 func void DIA_Talbin_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_TEACHHUNTING_15_00"); //Чему ты можешь обучить меня?
+	AI_Output			(other, self, "DIA_Talbin_TEACHHUNTING_15_00"); //Р§РµРјСѓ С‚С‹ РјРѕР¶РµС€СЊ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ?
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
@@ -334,32 +334,32 @@ func void DIA_Talbin_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			)
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_01"); //А что ты хочешь знать?
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_01"); //Рђ С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ?
 		
 
 			Info_AddChoice		(DIA_Talbin_TEACHHUNTING, DIALOG_BACK, DIA_Talbin_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Удаление когтей",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Talbin_TEACHHUNTING_Claws);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ РєРѕРіС‚РµР№",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Talbin_TEACHHUNTING_Claws);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Снятие шкур",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Talbin_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("РЎРЅСЏС‚РёРµ С€РєСѓСЂ",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Talbin_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Рог мракориса",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Talbin_TEACHHUNTING_ShadowHorn);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Р РѕРі РјСЂР°РєРѕСЂРёСЃР°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Talbin_TEACHHUNTING_ShadowHorn);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Удаление сердца",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Talbin_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("РЈРґР°Р»РµРЅРёРµ СЃРµСЂРґС†Р°",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Talbin_TEACHHUNTING_Heart);
 			};
 
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_02"); //Я разочарую тебя. Ты уже знаешь все, чему я могу научить. Но все же, спасибо за сыр!
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_02"); //РЇ СЂР°Р·РѕС‡Р°СЂСѓСЋ С‚РµР±СЏ. РўС‹ СѓР¶Рµ Р·РЅР°РµС€СЊ РІСЃРµ, С‡РµРјСѓ СЏ РјРѕРіСѓ РЅР°СѓС‡РёС‚СЊ. РќРѕ РІСЃРµ Р¶Рµ, СЃРїР°СЃРёР±Рѕ Р·Р° СЃС‹СЂ!
 		};
 };
 
@@ -373,8 +373,8 @@ func void DIA_Talbin_TEACHHUNTING_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_00"); //Отрезать когти - это просто. Берешь коготь за основание и прижимаешь его к земле.
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_01"); //Затем берешь нож и аккуратно отрезаешь коготь.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_00"); //РћС‚СЂРµР·Р°С‚СЊ РєРѕРіС‚Рё - СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ. Р‘РµСЂРµС€СЊ РєРѕРіРѕС‚СЊ Р·Р° РѕСЃРЅРѕРІР°РЅРёРµ Рё РїСЂРёР¶РёРјР°РµС€СЊ РµРіРѕ Рє Р·РµРјР»Рµ.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_01"); //Р—Р°С‚РµРј Р±РµСЂРµС€СЊ РЅРѕР¶ Рё Р°РєРєСѓСЂР°С‚РЅРѕ РѕС‚СЂРµР·Р°РµС€СЊ РєРѕРіРѕС‚СЊ.
 		};
 
 		Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
@@ -385,8 +385,8 @@ func void DIA_Talbin_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_00"); //Проще всего снять шкуру с луркера, сделав разрез вдоль всего живота...
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_01"); //...затем тянешь за задние ноги и стягиваешь шкуру с зада наперед.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_00"); //РџСЂРѕС‰Рµ РІСЃРµРіРѕ СЃРЅСЏС‚СЊ С€РєСѓСЂСѓ СЃ Р»СѓСЂРєРµСЂР°, СЃРґРµР»Р°РІ СЂР°Р·СЂРµР· РІРґРѕР»СЊ РІСЃРµРіРѕ Р¶РёРІРѕС‚Р°...
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_01"); //...Р·Р°С‚РµРј С‚СЏРЅРµС€СЊ Р·Р° Р·Р°РґРЅРёРµ РЅРѕРіРё Рё СЃС‚СЏРіРёРІР°РµС€СЊ С€РєСѓСЂСѓ СЃ Р·Р°РґР° РЅР°РїРµСЂРµРґ.
 		};
 	Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
 };
@@ -395,7 +395,7 @@ func void DIA_Talbin_TEACHHUNTING_Shadowhorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_ShadowHorn_07_00"); //Рога мракорисов очень твердые, и из них делают статуи и инструменты.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_ShadowHorn_07_00"); //Р РѕРіР° РјСЂР°РєРѕСЂРёСЃРѕРІ РѕС‡РµРЅСЊ С‚РІРµСЂРґС‹Рµ, Рё РёР· РЅРёС… РґРµР»Р°СЋС‚ СЃС‚Р°С‚СѓРё Рё РёРЅСЃС‚СЂСѓРјРµРЅС‚С‹.
 		};
 	Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
 };
@@ -403,7 +403,7 @@ func void DIA_Talbin_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Heart_07_00"); //Сердца магических существ очень редки, и их очень тяжело добыть. Будь осторожен, когда пытаешься сделать это, особенно в случае големов.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Heart_07_00"); //РЎРµСЂРґС†Р° РјР°РіРёС‡РµСЃРєРёС… СЃСѓС‰РµСЃС‚РІ РѕС‡РµРЅСЊ СЂРµРґРєРё, Рё РёС… РѕС‡РµРЅСЊ С‚СЏР¶РµР»Рѕ РґРѕР±С‹С‚СЊ. Р‘СѓРґСЊ РѕСЃС‚РѕСЂРѕР¶РµРЅ, РєРѕРіРґР° РїС‹С‚Р°РµС€СЊСЃСЏ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ, РѕСЃРѕР±РµРЅРЅРѕ РІ СЃР»СѓС‡Р°Рµ РіРѕР»РµРјРѕРІ.
 		};
 	Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
 };
@@ -488,7 +488,7 @@ instance DIA_Talbin_KAP4_WASNEUES		(C_INFO)
 	condition	 = 	DIA_Talbin_KAP4_WASNEUES_Condition;
 	information	 = 	DIA_Talbin_KAP4_WASNEUES_Info;
 
-	description  =  "Здесь никто не проходил?";
+	description  =  "Р—РґРµСЃСЊ РЅРёРєС‚Рѕ РЅРµ РїСЂРѕС…РѕРґРёР»?";
 };
 
 func int DIA_Talbin_KAP4_WASNEUES_Condition ()
@@ -503,8 +503,8 @@ func int DIA_Talbin_KAP4_WASNEUES_Condition ()
 
 func void DIA_Talbin_KAP4_WASNEUES_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_KAP4_WASNEUES_15_00"); //Здесь никто не проходил?
-	AI_Output			(self, other, "DIA_Talbin_KAP4_WASNEUES_07_01"); //Походил. Недавно здесь были очень забавные парни! Они расхаживали в расфуфыренных доспехах, и у них был очень важный и напыщенный вид.
+	AI_Output			(other, self, "DIA_Talbin_KAP4_WASNEUES_15_00"); //Р—РґРµСЃСЊ РЅРёРєС‚Рѕ РЅРµ РїСЂРѕС…РѕРґРёР»?
+	AI_Output			(self, other, "DIA_Talbin_KAP4_WASNEUES_07_01"); //РџРѕС…РѕРґРёР». РќРµРґР°РІРЅРѕ Р·РґРµСЃСЊ Р±С‹Р»Рё РѕС‡РµРЅСЊ Р·Р°Р±Р°РІРЅС‹Рµ РїР°СЂРЅРё! РћРЅРё СЂР°СЃС…Р°Р¶РёРІР°Р»Рё РІ СЂР°СЃС„СѓС„С‹СЂРµРЅРЅС‹С… РґРѕСЃРїРµС…Р°С…, Рё Сѓ РЅРёС… Р±С‹Р» РѕС‡РµРЅСЊ РІР°Р¶РЅС‹Р№ Рё РЅР°РїС‹С‰РµРЅРЅС‹Р№ РІРёРґ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -517,7 +517,7 @@ instance DIA_Talbin_KAP4_WASWOLLTENDJG		(C_INFO)
 	condition	 = 	DIA_Talbin_KAP4_WASWOLLTENDJG_Condition;
 	information	 = 	DIA_Talbin_KAP4_WASWOLLTENDJG_Info;
 
-	description	 = 	"А что этим 'забавным парням' было нужно здесь?";
+	description	 = 	"Рђ С‡С‚Рѕ СЌС‚РёРј 'Р·Р°Р±Р°РІРЅС‹Рј РїР°СЂРЅСЏРј' Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Talbin_KAP4_WASWOLLTENDJG_Condition ()
@@ -533,13 +533,13 @@ if 	(Npc_KnowsInfo(other, DIA_Talbin_KAP4_WASNEUES))
 
 func void DIA_Talbin_KAP4_WASWOLLTENDJG_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_KAP4_WASWOLLTENDJG_15_00"); //А что этим 'забавным парням' было нужно здесь?
-	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_01"); //Они спрашивали меня насчет провизии и снаряжения. Я и так-то еле концы с концами свожу!
-	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_02"); //Они болтали что-то о том, что собираются убить дракона. Одному богу ведомо, откуда они взялись такие, но они не вызвали у меня особого доверия!
+	AI_Output			(other, self, "DIA_Talbin_KAP4_WASWOLLTENDJG_15_00"); //Рђ С‡С‚Рѕ СЌС‚РёРј 'Р·Р°Р±Р°РІРЅС‹Рј РїР°СЂРЅСЏРј' Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ Р·РґРµСЃСЊ?
+	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_01"); //РћРЅРё СЃРїСЂР°С€РёРІР°Р»Рё РјРµРЅСЏ РЅР°СЃС‡РµС‚ РїСЂРѕРІРёР·РёРё Рё СЃРЅР°СЂСЏР¶РµРЅРёСЏ. РЇ Рё С‚Р°Рє-С‚Рѕ РµР»Рµ РєРѕРЅС†С‹ СЃ РєРѕРЅС†Р°РјРё СЃРІРѕР¶Сѓ!
+	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_02"); //РћРЅРё Р±РѕР»С‚Р°Р»Рё С‡С‚Рѕ-С‚Рѕ Рѕ С‚РѕРј, С‡С‚Рѕ СЃРѕР±РёСЂР°СЋС‚СЃСЏ СѓР±РёС‚СЊ РґСЂР°РєРѕРЅР°. РћРґРЅРѕРјСѓ Р±РѕРіСѓ РІРµРґРѕРјРѕ, РѕС‚РєСѓРґР° РѕРЅРё РІР·СЏР»РёСЃСЊ С‚Р°РєРёРµ, РЅРѕ РѕРЅРё РЅРµ РІС‹Р·РІР°Р»Рё Сѓ РјРµРЅСЏ РѕСЃРѕР±РѕРіРѕ РґРѕРІРµСЂРёСЏ!
 
 	if (Kapitel == 4)
 	{
-		B_LogEntry (TOPIC_Dragonhunter,"Несколько охотников на драконов остановились на охотничьих угодьях Талбина."); 
+		B_LogEntry (TOPIC_Dragonhunter,"РќРµСЃРєРѕР»СЊРєРѕ РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ РѕСЃС‚Р°РЅРѕРІРёР»РёСЃСЊ РЅР° РѕС…РѕС‚РЅРёС‡СЊРёС… СѓРіРѕРґСЊСЏС… РўР°Р»Р±РёРЅР°."); 
 	};
 };
 
@@ -555,7 +555,7 @@ instance DIA_Talbin_WOENGROM		(C_INFO)
 	condition	 = 	DIA_Talbin_WOENGROM_Condition;
 	information	 = 	DIA_Talbin_WOENGROM_Info;
 
-	description	 = 	"Ты сейчас один?";
+	description	 = 	"РўС‹ СЃРµР№С‡Р°СЃ РѕРґРёРЅ?";
 };
 
 func int DIA_Talbin_WOENGROM_Condition ()
@@ -572,16 +572,16 @@ func int DIA_Talbin_WOENGROM_Condition ()
 
 func void DIA_Talbin_WOENGROM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_00"); //Ты сейчас один?
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_01"); //Да. Мой приятель Энгром ушел. Вчера он сказал, что ему было видение - кто-то очень ласково говорил с ним.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_02"); //Я ничего не слышал. Я подумал про себя, что он просто дошел до точки...
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_03"); //...а затем он неожиданно исчез. Понятия не имею, куда он направился.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_04"); //Если ты где-нибудь увидишь Энгрома, скажи ему, что он все еще должен мне шкуру луркера.
+	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_00"); //РўС‹ СЃРµР№С‡Р°СЃ РѕРґРёРЅ?
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_01"); //Р”Р°. РњРѕР№ РїСЂРёСЏС‚РµР»СЊ Р­РЅРіСЂРѕРј СѓС€РµР». Р’С‡РµСЂР° РѕРЅ СЃРєР°Р·Р°Р», С‡С‚Рѕ РµРјСѓ Р±С‹Р»Рѕ РІРёРґРµРЅРёРµ - РєС‚Рѕ-С‚Рѕ РѕС‡РµРЅСЊ Р»Р°СЃРєРѕРІРѕ РіРѕРІРѕСЂРёР» СЃ РЅРёРј.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_02"); //РЇ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Р°Р». РЇ РїРѕРґСѓРјР°Р» РїСЂРѕ СЃРµР±СЏ, С‡С‚Рѕ РѕРЅ РїСЂРѕСЃС‚Рѕ РґРѕС€РµР» РґРѕ С‚РѕС‡РєРё...
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_03"); //...Р° Р·Р°С‚РµРј РѕРЅ РЅРµРѕР¶РёРґР°РЅРЅРѕ РёСЃС‡РµР·. РџРѕРЅСЏС‚РёСЏ РЅРµ РёРјРµСЋ, РєСѓРґР° РѕРЅ РЅР°РїСЂР°РІРёР»СЃСЏ.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_04"); //Р•СЃР»Рё С‚С‹ РіРґРµ-РЅРёР±СѓРґСЊ СѓРІРёРґРёС€СЊ Р­РЅРіСЂРѕРјР°, СЃРєР°Р¶Рё РµРјСѓ, С‡С‚Рѕ РѕРЅ РІСЃРµ РµС‰Рµ РґРѕР»Р¶РµРЅ РјРЅРµ С€РєСѓСЂСѓ Р»СѓСЂРєРµСЂР°.
 
 	if (Npc_KnowsInfo(other, DIA_Engrom_WhatAboutLeaving))
 		{
-	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_05"); //Но у меня было впечатление, что он не собирался уходить отсюда, пока орки все еще в долине.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_06"); //Я же сказал: у него крыша поехала.
+	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_05"); //РќРѕ Сѓ РјРµРЅСЏ Р±С‹Р»Рѕ РІРїРµС‡Р°С‚Р»РµРЅРёРµ, С‡С‚Рѕ РѕРЅ РЅРµ СЃРѕР±РёСЂР°Р»СЃСЏ СѓС…РѕРґРёС‚СЊ РѕС‚СЃСЋРґР°, РїРѕРєР° РѕСЂРєРё РІСЃРµ РµС‰Рµ РІ РґРѕР»РёРЅРµ.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_06"); //РЇ Р¶Рµ СЃРєР°Р·Р°Р»: Сѓ РЅРµРіРѕ РєСЂС‹С€Р° РїРѕРµС…Р°Р»Р°.
 		};
 	MIS_Tabin_LookForEngrom = LOG_RUNNING;
 };
@@ -596,7 +596,7 @@ instance DIA_Talbin_FOUNDENGROM		(C_INFO)
 	condition	 = 	DIA_Talbin_FOUNDENGROM_Condition;
 	information	 = 	DIA_Talbin_FOUNDENGROM_Info;
 
-	description	 = 	"Я нашел твоего приятеля Энгрома.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РІРѕРµРіРѕ РїСЂРёСЏС‚РµР»СЏ Р­РЅРіСЂРѕРјР°.";
 };
 
 func int DIA_Talbin_FOUNDENGROM_Condition ()
@@ -613,37 +613,37 @@ func int DIA_Talbin_FOUNDENGROM_Condition ()
 
 func void DIA_Talbin_FOUNDENGROM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_00"); //Я нашел твоего приятеля Энгрома.
-	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_01"); //Да? Где он?
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_00"); //РЇ РЅР°С€РµР» С‚РІРѕРµРіРѕ РїСЂРёСЏС‚РµР»СЏ Р­РЅРіСЂРѕРјР°.
+	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_01"); //Р”Р°? Р“РґРµ РѕРЅ?
 
 
 	if (Npc_IsDead(Engrom))
 	{
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_02"); //Он мертв.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_02"); //РћРЅ РјРµСЂС‚РІ.
 	}
 	else	
 	{
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_03"); //Я не думаю, что ты когда-нибудь его увидишь.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_03"); //РЇ РЅРµ РґСѓРјР°СЋ, С‡С‚Рѕ С‚С‹ РєРѕРіРґР°-РЅРёР±СѓРґСЊ РµРіРѕ СѓРІРёРґРёС€СЊ.
 	};
 
 	if (B_GiveInvItems (other, self, ItAt_TalbinsLurkerSkin,1))
 	{
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_04"); //Вот. Я нашел при нем эту шкуру луркера.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_04"); //Р’РѕС‚. РЇ РЅР°С€РµР» РїСЂРё РЅРµРј СЌС‚Сѓ С€РєСѓСЂСѓ Р»СѓСЂРєРµСЂР°.
 	};	
 
 	if (hero.guild ==GIL_KDF)
 	{
-		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_05"); //Ищущие овладели им.
-		AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_06"); //Ищущие? Кто это такие?
-		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_07"); //Приспешники преисподней. Это они командуют орками.
+		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_05"); //РС‰СѓС‰РёРµ РѕРІР»Р°РґРµР»Рё РёРј.
+		AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_06"); //РС‰СѓС‰РёРµ? РљС‚Рѕ СЌС‚Рѕ С‚Р°РєРёРµ?
+		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_07"); //РџСЂРёСЃРїРµС€РЅРёРєРё РїСЂРµРёСЃРїРѕРґРЅРµР№. Р­С‚Рѕ РѕРЅРё РєРѕРјР°РЅРґСѓСЋС‚ РѕСЂРєР°РјРё.
 	};	
 
-	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_08"); //О, Иннос. Мне нужно выбираться отсюда, даже если я при этом найду свою смерть. Сейчас или никогда!
+	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_08"); //Рћ, РРЅРЅРѕСЃ. РњРЅРµ РЅСѓР¶РЅРѕ РІС‹Р±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°, РґР°Р¶Рµ РµСЃР»Рё СЏ РїСЂРё СЌС‚РѕРј РЅР°Р№РґСѓ СЃРІРѕСЋ СЃРјРµСЂС‚СЊ. РЎРµР№С‡Р°СЃ РёР»Рё РЅРёРєРѕРіРґР°!
 	AI_StopProcessInfos (self);	
 
 	Log_CreateTopic (TOPIC_Talbin_Runs, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Talbin_Runs, LOG_RUNNING);
-	B_LogEntry (TOPIC_Talbin_Runs,"Талбин, охотник из Долины рудников, бежал через проход, как будто за ним по пятам гнался рой кровавых мух. Я думаю, он направился в Хоринис."); 
+	B_LogEntry (TOPIC_Talbin_Runs,"РўР°Р»Р±РёРЅ, РѕС…РѕС‚РЅРёРє РёР· Р”РѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ, Р±РµР¶Р°Р» С‡РµСЂРµР· РїСЂРѕС…РѕРґ, РєР°Рє Р±СѓРґС‚Рѕ Р·Р° РЅРёРј РїРѕ РїСЏС‚Р°Рј РіРЅР°Р»СЃСЏ СЂРѕР№ РєСЂРѕРІР°РІС‹С… РјСѓС…. РЇ РґСѓРјР°СЋ, РѕРЅ РЅР°РїСЂР°РІРёР»СЃСЏ РІ РҐРѕСЂРёРЅРёСЃ."); 
 
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"FleePass");
@@ -663,7 +663,7 @@ instance DIA_Talbin_WOHIN		(C_INFO)
 	information	 = 	DIA_Talbin_WOHIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Куда ты собрался? ";
+	description	 = 	"РљСѓРґР° С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ? ";
 };
 
 func int DIA_Talbin_WOHIN_Condition ()
@@ -678,20 +678,20 @@ func int DIA_Talbin_WOHIN_Condition ()
 
 func void DIA_Talbin_WOHIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_15_00"); //Куда ты собрался?
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_15_00"); //РљСѓРґР° С‚С‹ СЃРѕР±СЂР°Р»СЃСЏ?
 
 		if (Npc_GetDistToWP(self,"START")<1000) 
 		{
-			AI_Output			(self, other, "DIA_Talbin_WOHIN_07_01"); //Доведи меня до Прохода. Пожалуйста!!
+			AI_Output			(self, other, "DIA_Talbin_WOHIN_07_01"); //Р”РѕРІРµРґРё РјРµРЅСЏ РґРѕ РџСЂРѕС…РѕРґР°. РџРѕР¶Р°Р»СѓР№СЃС‚Р°!!
 		
 			Info_ClearChoices	(DIA_Talbin_WOHIN);
-			Info_AddChoice	(DIA_Talbin_WOHIN, "У меня нет времени на тебя.", DIA_Talbin_WOHIN_ );
-			Info_AddChoice	(DIA_Talbin_WOHIN, "Просто иди вперед.", DIA_Talbin_WOHIN_durch );
-			Info_AddChoice	(DIA_Talbin_WOHIN, "Хорошо.", DIA_Talbin_WOHIN_ok );
+			Info_AddChoice	(DIA_Talbin_WOHIN, "РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° С‚РµР±СЏ.", DIA_Talbin_WOHIN_ );
+			Info_AddChoice	(DIA_Talbin_WOHIN, "РџСЂРѕСЃС‚Рѕ РёРґРё РІРїРµСЂРµРґ.", DIA_Talbin_WOHIN_durch );
+			Info_AddChoice	(DIA_Talbin_WOHIN, "РҐРѕСЂРѕС€Рѕ.", DIA_Talbin_WOHIN_ok );
 		}
 		else
 		{
-		AI_Output			(self, other, "DIA_Talbin_WOHIN_07_02"); //Я должен выбраться отсюда, через Проход!
+		AI_Output			(self, other, "DIA_Talbin_WOHIN_07_02"); //РЇ РґРѕР»Р¶РµРЅ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°, С‡РµСЂРµР· РџСЂРѕС…РѕРґ!
 		AI_StopProcessInfos (self);
 		};
 
@@ -699,8 +699,8 @@ func void DIA_Talbin_WOHIN_Info ()
 };
 func void DIA_Talbin_WOHIN_ok ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_ok_15_00"); //Хорошо.
-	AI_Output			(self, other, "DIA_Talbin_WOHIN_ok_07_01"); //Спасибо. Я просто пойду за тобой.
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_ok_15_00"); //РҐРѕСЂРѕС€Рѕ.
+	AI_Output			(self, other, "DIA_Talbin_WOHIN_ok_07_01"); //РЎРїР°СЃРёР±Рѕ. РЇ РїСЂРѕСЃС‚Рѕ РїРѕР№РґСѓ Р·Р° С‚РѕР±РѕР№.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"IntoPass");
 	Talbin_FollowsThroughPass = LOG_RUNNING;
@@ -710,15 +710,15 @@ func void DIA_Talbin_WOHIN_ok ()
 
 func void DIA_Talbin_WOHIN_durch ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_durch_15_00"); //Просто иди вперед.
-	AI_Output			(self, other, "DIA_Talbin_WOHIN_durch_07_01"); //Там так темно. Я бы ни за что не пошел бы туда один.
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_durch_15_00"); //РџСЂРѕСЃС‚Рѕ РёРґРё РІРїРµСЂРµРґ.
+	AI_Output			(self, other, "DIA_Talbin_WOHIN_durch_07_01"); //РўР°Рј С‚Р°Рє С‚РµРјРЅРѕ. РЇ Р±С‹ РЅРё Р·Р° С‡С‚Рѕ РЅРµ РїРѕС€РµР» Р±С‹ С‚СѓРґР° РѕРґРёРЅ.
 
 };
 
 func void DIA_Talbin_WOHIN_ ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_schwein_15_00"); //У меня нет времени на тебя.
-	AI_Output			(self, other, "DIA_Talbin_WOHIN_schwein_07_01"); //Ты оставляешь меня здесь умирать?! Ты будешь гореть в аду за это!
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_schwein_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Talbin_WOHIN_schwein_07_01"); //РўС‹ РѕСЃС‚Р°РІР»СЏРµС€СЊ РјРµРЅСЏ Р·РґРµСЃСЊ СѓРјРёСЂР°С‚СЊ?! РўС‹ Р±СѓРґРµС€СЊ РіРѕСЂРµС‚СЊ РІ Р°РґСѓ Р·Р° СЌС‚Рѕ!
 	Talbin_FollowsThroughPass = LOG_OBSOLETE;
 	AI_StopProcessInfos (self);
 };
@@ -734,7 +734,7 @@ instance DIA_Talbin_VERSCHWINDE		(C_INFO)
 	information	 = 	DIA_Talbin_VERSCHWINDE_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Эй.";
+	description	 = 	"Р­Р№.";
 };
 
 func int DIA_Talbin_VERSCHWINDE_Condition ()
@@ -747,8 +747,8 @@ func int DIA_Talbin_VERSCHWINDE_Condition ()
 
 func void DIA_Talbin_VERSCHWINDE_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_VERSCHWINDE_15_00"); //Эй.
-	AI_Output			(self, other, "DIA_Talbin_VERSCHWINDE_07_01"); //Проваливай. Я справлюсь и без тебя, дерьмо!
+	AI_Output			(other, self, "DIA_Talbin_VERSCHWINDE_15_00"); //Р­Р№.
+	AI_Output			(self, other, "DIA_Talbin_VERSCHWINDE_07_01"); //РџСЂРѕРІР°Р»РёРІР°Р№. РЇ СЃРїСЂР°РІР»СЋСЃСЊ Рё Р±РµР· С‚РµР±СЏ, РґРµСЂСЊРјРѕ!
 	AI_StopProcessInfos (self);
 };
 

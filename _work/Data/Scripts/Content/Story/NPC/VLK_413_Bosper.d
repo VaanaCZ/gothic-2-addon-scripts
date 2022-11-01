@@ -2,7 +2,7 @@
 instance VLK_413_Bosper (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¡ÓÒÔÂ";
+	name 		= "–ë–æ—Å–ø–µ—Ä";
 	guild 		= GIL_VLK;
 	id 			= 413;
 	voice 		= 11;
@@ -20,7 +20,7 @@ instance VLK_413_Bosper (Npc_Default)
 	EquipItem			(self, ItRw_SLD_Bow);
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 
 		
 	// ------ visuals ------																			

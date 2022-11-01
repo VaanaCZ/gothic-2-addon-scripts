@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Myxir_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wдre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wРґre einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Hallo_Condition;
 	information	 = 	DIA_Addon_Myxir_Hallo_Info;
 
-	description	 = 	"Все в порядке?";
+	description	 = 	"Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 
 func int DIA_Addon_Myxir_Hallo_Condition ()
@@ -94,8 +94,8 @@ func int DIA_Addon_Myxir_Hallo_Condition ()
 
 func void DIA_Addon_Myxir_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Все в порядке?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Заявиться сюда было с твоей стороны очень смелым поступком.
+	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
+	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Р—Р°СЏРІРёС‚СЊСЃСЏ СЃСЋРґР° Р±С‹Р»Рѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹ РѕС‡РµРЅСЊ СЃРјРµР»С‹Рј РїРѕСЃС‚СѓРїРєРѕРј.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WasMachstDu
@@ -107,7 +107,7 @@ instance DIA_Addon_Myxir_WasMachstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WasMachstDu_Condition;
 	information	 = 	DIA_Addon_Myxir_WasMachstDu_Info;
 
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 
 func int DIA_Addon_Myxir_WasMachstDu_Condition ()
@@ -120,11 +120,11 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition ()
 
 func void DIA_Addon_Myxir_WasMachstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Чем ты здесь занимаешься?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Я изучаю язык зодчих.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Язык - это ключ к тому, чтобы понять этих людей.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Каждый из нас должен выучить этот язык, иначе экспедиция закончится, даже не начавшись.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Зодчие выбивали свои тексты на каменных табличках. К сожалению, многие из них давно разбиты или украдены.
+	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Р§РµРј С‚С‹ Р·РґРµСЃСЊ Р·Р°РЅРёРјР°РµС€СЊСЃСЏ?
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //РЇ РёР·СѓС‡Р°СЋ СЏР·С‹Рє Р·РѕРґС‡РёС….
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //РЇР·С‹Рє - СЌС‚Рѕ РєР»СЋС‡ Рє С‚РѕРјСѓ, С‡С‚РѕР±С‹ РїРѕРЅСЏС‚СЊ СЌС‚РёС… Р»СЋРґРµР№.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //РљР°Р¶РґС‹Р№ РёР· РЅР°СЃ РґРѕР»Р¶РµРЅ РІС‹СѓС‡РёС‚СЊ СЌС‚РѕС‚ СЏР·С‹Рє, РёРЅР°С‡Рµ СЌРєСЃРїРµРґРёС†РёСЏ Р·Р°РєРѕРЅС‡РёС‚СЃСЏ, РґР°Р¶Рµ РЅРµ РЅР°С‡Р°РІС€РёСЃСЊ.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Р—РѕРґС‡РёРµ РІС‹Р±РёРІР°Р»Рё СЃРІРѕРё С‚РµРєСЃС‚С‹ РЅР° РєР°РјРµРЅРЅС‹С… С‚Р°Р±Р»РёС‡РєР°С…. Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РјРЅРѕРіРёРµ РёР· РЅРёС… РґР°РІРЅРѕ СЂР°Р·Р±РёС‚С‹ РёР»Рё СѓРєСЂР°РґРµРЅС‹.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Steintafeln
@@ -136,7 +136,7 @@ instance DIA_Addon_Myxir_Steintafeln		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Steintafeln_Condition;
 	information	 = 	DIA_Addon_Myxir_Steintafeln_Info;
 
-	description	 = 	"Что же можно узнать из этих табличек?";
+	description	 = 	"Р§С‚Рѕ Р¶Рµ РјРѕР¶РЅРѕ СѓР·РЅР°С‚СЊ РёР· СЌС‚РёС… С‚Р°Р±Р»РёС‡РµРє?";
 };
 
 func int DIA_Addon_Myxir_Steintafeln_Condition ()
@@ -148,15 +148,15 @@ func int DIA_Addon_Myxir_Steintafeln_Condition ()
 };
 func void DIA_Addon_Myxir_Steintafeln_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Что же можно узнать из этих табличек?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //На них записаны знания древнего народа.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Некоторые из них волшебным образом увеличивают магические или боевые способности.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Для тех, кто способен их прочесть, они являются настоящим сокровищем.
+	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Р§С‚Рѕ Р¶Рµ РјРѕР¶РЅРѕ СѓР·РЅР°С‚СЊ РёР· СЌС‚РёС… С‚Р°Р±Р»РёС‡РµРє?
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //РќР° РЅРёС… Р·Р°РїРёСЃР°РЅС‹ Р·РЅР°РЅРёСЏ РґСЂРµРІРЅРµРіРѕ РЅР°СЂРѕРґР°.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… РІРѕР»С€РµР±РЅС‹Рј РѕР±СЂР°Р·РѕРј СѓРІРµР»РёС‡РёРІР°СЋС‚ РјР°РіРёС‡РµСЃРєРёРµ РёР»Рё Р±РѕРµРІС‹Рµ СЃРїРѕСЃРѕР±РЅРѕСЃС‚Рё.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Р”Р»СЏ С‚РµС…, РєС‚Рѕ СЃРїРѕСЃРѕР±РµРЅ РёС… РїСЂРѕС‡РµСЃС‚СЊ, РѕРЅРё СЏРІР»СЏСЋС‚СЃСЏ РЅР°СЃС‚РѕСЏС‰РёРј СЃРѕРєСЂРѕРІРёС‰РµРј.
 
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Stoneplates,"На каменных табличках записаны древние знания зодчих. Некоторые из них могут волшебным образом увеличить познания в области сражений или магии. Однако их нужно еще суметь прочитать."); 
+	B_LogEntry (TOPIC_Addon_Stoneplates,"РќР° РєР°РјРµРЅРЅС‹С… С‚Р°Р±Р»РёС‡РєР°С… Р·Р°РїРёСЃР°РЅС‹ РґСЂРµРІРЅРёРµ Р·РЅР°РЅРёСЏ Р·РѕРґС‡РёС…. РќРµРєРѕС‚РѕСЂС‹Рµ РёР· РЅРёС… РјРѕРіСѓС‚ РІРѕР»С€РµР±РЅС‹Рј РѕР±СЂР°Р·РѕРј СѓРІРµР»РёС‡РёС‚СЊ РїРѕР·РЅР°РЅРёСЏ РІ РѕР±Р»Р°СЃС‚Рё СЃСЂР°Р¶РµРЅРёР№ РёР»Рё РјР°РіРёРё. РћРґРЅР°РєРѕ РёС… РЅСѓР¶РЅРѕ РµС‰Рµ СЃСѓРјРµС‚СЊ РїСЂРѕС‡РёС‚Р°С‚СЊ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WillYouTeachMe
@@ -168,7 +168,7 @@ instance DIA_Addon_Myxir_WillYouTeachMe		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WillYouTeachMe_Condition;
 	information	 = 	DIA_Addon_Myxir_WillYouTeachMe_Info;
 
-	description	 = 	"Ты можешь научить меня языку зодчих?";
+	description	 = 	"РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЏР·С‹РєСѓ Р·РѕРґС‡РёС…?";
 };
 
 func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
@@ -181,8 +181,8 @@ func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
 
 func void DIA_Addon_Myxir_WillYouTeachMe_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //Ты можешь научить меня языку зодчих?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Конечно, почему нет? Я с радостью поделюсь с тобой своими знаниями.
+	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РЅР°СѓС‡РёС‚СЊ РјРµРЅСЏ СЏР·С‹РєСѓ Р·РѕРґС‡РёС…?
+	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //РљРѕРЅРµС‡РЅРѕ, РїРѕС‡РµРјСѓ РЅРµС‚? РЇ СЃ СЂР°РґРѕСЃС‚СЊСЋ РїРѕРґРµР»СЋСЃСЊ СЃ С‚РѕР±РѕР№ СЃРІРѕРёРјРё Р·РЅР°РЅРёСЏРјРё.
 	Myxir_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
@@ -204,7 +204,7 @@ instance DIA_Addon_Myxir_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Научи меня этому языку.";
+	description	 = 	"РќР°СѓС‡Рё РјРµРЅСЏ СЌС‚РѕРјСѓ СЏР·С‹РєСѓ.";
 };
 
 var int DIA_Addon_Myxir_Teach_NoPerm;

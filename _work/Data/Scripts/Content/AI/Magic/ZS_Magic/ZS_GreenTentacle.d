@@ -31,10 +31,10 @@ func void B_StopGreententacle()
 	}
 	else
 	{
-		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-Attitüde hostile ist 
+		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-AttitÑŒde hostile ist 
 	};
 	
-	// nach Aufruf dieses Befehles wird die Loop über return LOOP_END beendet
+	// nach Aufruf dieses Befehles wird die Loop ÑŒber return LOOP_END beendet
 };
 
 // **************
@@ -130,7 +130,7 @@ func int B_StopGreententacle()
 	
 	Npc_SetTarget 		(self, other);
 	
-	// nach Aufruf dieses Befehles wird die Loop über return LOOP_END beendet (weiter im TA)
+	// nach Aufruf dieses Befehles wird die Loop ÑŒber return LOOP_END beendet (weiter im TA)
 };		
 
 
@@ -140,7 +140,7 @@ func int B_StopGreententacle()
 
 func void ZS_Greententacle ()
 {
-	// der ZS_MagicSleep beendet sich selbst im loop, daher ist keine perception PERC_ASSESSSTOPMAGIC nötig, und darf
+	// der ZS_MagicSleep beendet sich selbst im loop, daher ist keine perception PERC_ASSESSSTOPMAGIC nÑ†tig, und darf
 	// auch nicht gesetzt werden, ansonsten wird der diesen zustand aktivierende effekt wenn er beendet ist (z.B. weil
 	// der partikeleffekt stirbt) ein assessstopmagic senden, und dadurch illegalerweise vorzeitig den zustand beenden
 	// mit anderen worten: der pfx triggert diesen zustand, und der zustand beendet sich selbst

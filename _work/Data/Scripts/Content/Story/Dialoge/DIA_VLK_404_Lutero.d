@@ -54,12 +54,12 @@ FUNC INT DIA_Lutero_Hallo_Condition()
 };
 FUNC VOID DIA_Lutero_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Меня зовут Лютеро. Я торгую практически всем.
-	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Какие товары ты предлагаешь?
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Ну, в основном редкие и необычные вещи. Я готов удовлетворить даже самые причудливые прихоти моих клиентов.
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р›СЋС‚РµСЂРѕ. РЇ С‚РѕСЂРіСѓСЋ РїСЂР°РєС‚РёС‡РµСЃРєРё РІСЃРµРј.
+	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //РљР°РєРёРµ С‚РѕРІР°СЂС‹ С‚С‹ РїСЂРµРґР»Р°РіР°РµС€СЊ?
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //РќСѓ, РІ РѕСЃРЅРѕРІРЅРѕРј СЂРµРґРєРёРµ Рё РЅРµРѕР±С‹С‡РЅС‹Рµ РІРµС‰Рё. РЇ РіРѕС‚РѕРІ СѓРґРѕРІР»РµС‚РІРѕСЂРёС‚СЊ РґР°Р¶Рµ СЃР°РјС‹Рµ РїСЂРёС‡СѓРґР»РёРІС‹Рµ РїСЂРёС…РѕС‚Рё РјРѕРёС… РєР»РёРµРЅС‚РѕРІ.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Лютеро торгует необычными и редкими предметами в верхнем квартале."); 
+	B_LogEntry (TOPIC_CityTrader, "Р›СЋС‚РµСЂРѕ С‚РѕСЂРіСѓРµС‚ РЅРµРѕР±С‹С‡РЅС‹РјРё Рё СЂРµРґРєРёРјРё РїСЂРµРґРјРµС‚Р°РјРё РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ."); 
 };
 //************************************************************
 //	GetLost
@@ -87,11 +87,11 @@ FUNC VOID DIA_Lutero_GetLost_Info()
 {	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //Проваливай отсюда! Тебе что, нечего делать? Тогда найди себе работу - только где-нибудь еще!
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //РџСЂРѕРІР°Р»РёРІР°Р№ РѕС‚СЃСЋРґР°! РўРµР±Рµ С‡С‚Рѕ, РЅРµС‡РµРіРѕ РґРµР»Р°С‚СЊ? РўРѕРіРґР° РЅР°Р№РґРё СЃРµР±Рµ СЂР°Р±РѕС‚Сѓ - С‚РѕР»СЊРєРѕ РіРґРµ-РЅРёР±СѓРґСЊ РµС‰Рµ!
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Что тебе нужно, послушник? Разве ты не должен быть в монастыре?
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ, РїРѕСЃР»СѓС€РЅРёРє? Р Р°Р·РІРµ С‚С‹ РЅРµ РґРѕР»Р¶РµРЅ Р±С‹С‚СЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
 	};
 	AI_StopProcessInfos (self);
 };
@@ -105,7 +105,7 @@ INSTANCE DIA_Lutero_Snapper(C_INFO)
 	condition	= DIA_Lutero_Snapper_Condition;
 	information	= DIA_Lutero_Snapper_Info;
 	permanent	= FALSE;
-	description = "Ты ищешь что-нибудь конкретное?";
+	description = "РўС‹ РёС‰РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєРѕРЅРєСЂРµС‚РЅРѕРµ?";
 };                       
 
 FUNC INT DIA_Lutero_Snapper_Condition()
@@ -118,26 +118,26 @@ FUNC INT DIA_Lutero_Snapper_Condition()
 };
 FUNC VOID DIA_Lutero_Snapper_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Ты ищешь что-нибудь конкретное?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Да, для одного из моих клиентов мне нужны когти снеппера.
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Но не просто обычные когти. Это должно быть что-то особенное - когти очень большого зверя, убившего много людей, например.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Где мне найти снепперов?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //На этом острове они встречаются повсеместно, но большинство из них живет в Долине Рудников.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //А что я с этого получу?
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //РўС‹ РёС‰РµС€СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РєРѕРЅРєСЂРµС‚РЅРѕРµ?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Р”Р°, РґР»СЏ РѕРґРЅРѕРіРѕ РёР· РјРѕРёС… РєР»РёРµРЅС‚РѕРІ РјРЅРµ РЅСѓР¶РЅС‹ РєРѕРіС‚Рё СЃРЅРµРїРїРµСЂР°.
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //РќРѕ РЅРµ РїСЂРѕСЃС‚Рѕ РѕР±С‹С‡РЅС‹Рµ РєРѕРіС‚Рё. Р­С‚Рѕ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ С‡С‚Рѕ-С‚Рѕ РѕСЃРѕР±РµРЅРЅРѕРµ - РєРѕРіС‚Рё РѕС‡РµРЅСЊ Р±РѕР»СЊС€РѕРіРѕ Р·РІРµСЂСЏ, СѓР±РёРІС€РµРіРѕ РјРЅРѕРіРѕ Р»СЋРґРµР№, РЅР°РїСЂРёРјРµСЂ.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Р“РґРµ РјРЅРµ РЅР°Р№С‚Рё СЃРЅРµРїРїРµСЂРѕРІ?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //РќР° СЌС‚РѕРј РѕСЃС‚СЂРѕРІРµ РѕРЅРё РІСЃС‚СЂРµС‡Р°СЋС‚СЃСЏ РїРѕРІСЃРµРјРµСЃС‚РЅРѕ, РЅРѕ Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РёР· РЅРёС… Р¶РёРІРµС‚ РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Рђ С‡С‚Рѕ СЏ СЃ СЌС‚РѕРіРѕ РїРѕР»СѓС‡Сѓ?
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_06"); //Я могу дать тебе рунный камень.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_06"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Я могу дать тебе кольцо неуязвимости.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РєРѕР»СЊС†Рѕ РЅРµСѓСЏР·РІРёРјРѕСЃС‚Рё.
 	};
-	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Я посмотрю, что можно сделать.
+	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 	
 	Log_CreateTopic (Topic_Lutero,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lutero,LOG_RUNNING);
-	B_LogEntry (Topic_Lutero,"Торговец Лютеро ищет когти необычайно сильного снеппера.");
+	B_LogEntry (Topic_Lutero,"РўРѕСЂРіРѕРІРµС† Р›СЋС‚РµСЂРѕ РёС‰РµС‚ РєРѕРіС‚Рё РЅРµРѕР±С‹С‡Р°Р№РЅРѕ СЃРёР»СЊРЅРѕРіРѕ СЃРЅРµРїРїРµСЂР°.");
 	
 	Lutero_Krallen = LOG_RUNNING;
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Lutero_Kralle(C_INFO)
 	condition	= DIA_Lutero_Kralle_Condition;
 	information	= DIA_Lutero_Kralle_Info;
 	permanent	= FALSE;
-	description = "У меня есть особенные когти снеппера для тебя.";
+	description = "РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕСЃРѕР±РµРЅРЅС‹Рµ РєРѕРіС‚Рё СЃРЅРµРїРїРµСЂР° РґР»СЏ С‚РµР±СЏ.";
 };                       
 
 FUNC INT DIA_Lutero_Kralle_Condition()
@@ -164,22 +164,22 @@ FUNC INT DIA_Lutero_Kralle_Condition()
 };
 FUNC VOID DIA_Lutero_Kralle_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //У меня есть особенные когти снеппера для тебя.
+	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РѕСЃРѕР±РµРЅРЅС‹Рµ РєРѕРіС‚Рё СЃРЅРµРїРїРµСЂР° РґР»СЏ С‚РµР±СЏ.
 	Lutero_Krallen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Мой клиент будет счастлив услышать это.
+	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //РњРѕР№ РєР»РёРµРЅС‚ Р±СѓРґРµС‚ СЃС‡Р°СЃС‚Р»РёРІ СѓСЃР»С‹С€Р°С‚СЊ СЌС‚Рѕ.
 	B_GiveInvItems (other, self, ItAt_ClawLeader,1);
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //У меня нет этого рунного камня с собой. Но я знаю, где его можно найти.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //По пути от города к таверне, ты пойдешь под мостом.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Там, в пещере, мой друг спрятал в сундуке рунный камень. Вот ключ.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //РЈ РјРµРЅСЏ РЅРµС‚ СЌС‚РѕРіРѕ СЂСѓРЅРЅРѕРіРѕ РєР°РјРЅСЏ СЃ СЃРѕР±РѕР№. РќРѕ СЏ Р·РЅР°СЋ, РіРґРµ РµРіРѕ РјРѕР¶РЅРѕ РЅР°Р№С‚Рё.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //РџРѕ РїСѓС‚Рё РѕС‚ РіРѕСЂРѕРґР° Рє С‚Р°РІРµСЂРЅРµ, С‚С‹ РїРѕР№РґРµС€СЊ РїРѕРґ РјРѕСЃС‚РѕРј.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //РўР°Рј, РІ РїРµС‰РµСЂРµ, РјРѕР№ РґСЂСѓРі СЃРїСЂСЏС‚Р°Р» РІ СЃСѓРЅРґСѓРєРµ СЂСѓРЅРЅС‹Р№ РєР°РјРµРЅСЊ. Р’РѕС‚ РєР»СЋС‡.
 		B_GiveInvItems (self, other, ITKE_RUNE_MIS,1); 
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_05"); //Вот кольцо, как я и обещал тебе.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_05"); //Р’РѕС‚ РєРѕР»СЊС†Рѕ, РєР°Рє СЏ Рё РѕР±РµС‰Р°Р» С‚РµР±Рµ.
 		B_GiveInvItems (self, other, ItRi_Prot_Total_01,1);
 	};
 };
@@ -193,7 +193,7 @@ INSTANCE DIA_Lutero_Trade(C_INFO)
 	condition	= DIA_Lutero_Trade_Condition;
 	information	= DIA_Lutero_Trade_Info;
 	permanent	= TRUE;
-	description = "Покажи мне свои товары.";
+	description = "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Lutero_Trade_Condition()
@@ -206,7 +206,7 @@ FUNC INT DIA_Lutero_Trade_Condition()
 FUNC VOID DIA_Lutero_Trade_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Lutero_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other ,self,"DIA_Lutero_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 };
 
 

@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10029_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10029_Buddler_Hi_Condition;
 	information = DIA_Addon_10029_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };
 FUNC INT DIA_Addon_10029_Buddler_Hi_Condition()
 {	
@@ -36,15 +36,15 @@ FUNC INT DIA_Addon_10029_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10029_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10029_Buddler_Hi_15_00");//Как дела?
+	AI_Output (other, self, "DIA_Addon_BDT_10029_Buddler_Hi_15_00");//РљР°Рє РґРµР»Р°?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_01");//Пока рабы работают, я и пальцем не пошевельну.
+		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_01");//РџРѕРєР° СЂР°Р±С‹ СЂР°Р±РѕС‚Р°СЋС‚, СЏ Рё РїР°Р»СЊС†РµРј РЅРµ РїРѕС€РµРІРµР»СЊРЅСѓ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_02");//Мне нужно покопать немного, чтобы снова войти в ритм.
+		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_02");//РњРЅРµ РЅСѓР¶РЅРѕ РїРѕРєРѕРїР°С‚СЊ РЅРµРјРЅРѕРіРѕ, С‡С‚РѕР±С‹ СЃРЅРѕРІР° РІРѕР№С‚Рё РІ СЂРёС‚Рј.
 		AI_StopProcessInfos(self);
 	};
 };
@@ -67,8 +67,8 @@ FUNC INT DIA_Addon_10029_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10029_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//Ноги, главное - это ноги.
-	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//Сила и импульс - все идет от ног.
+	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//РќРѕРіРё, РіР»Р°РІРЅРѕРµ - СЌС‚Рѕ РЅРѕРіРё.
+	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//РЎРёР»Р° Рё РёРјРїСѓР»СЊСЃ - РІСЃРµ РёРґРµС‚ РѕС‚ РЅРѕРі.
 	
 	B_Upgrade_Hero_HackChance(5);
 	

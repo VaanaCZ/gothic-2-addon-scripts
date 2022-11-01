@@ -45,13 +45,13 @@ FUNC VOID DIA_Babo_Hello_Info()
 {
 	
 	
-	AI_Output (self ,other,"DIA_Babo_Hello_03_00"); //(испуганно) Привет, ты тоже новичок здесь, да?
-	AI_Output (other,self ,"DIA_Babo_Hello_15_01"); //Да. Ты давно здесь?
-	AI_Output (self ,other,"DIA_Babo_Hello_03_02"); //Четыре недели. Тебе уже выдали боевой посох?
-	AI_Output (other,self ,"DIA_Babo_Hello_15_03"); //Пока нет.
-	AI_Output (self ,other,"DIA_Babo_Hello_03_04"); //Тогда возьми вот этот. Мы, послушники всегда ходим с посохом, чтобы показать, что мы способны защитить себя. Ты умеешь сражаться?
-	AI_Output (other,self ,"DIA_Babo_Hello_15_05"); //Ну, мне случалось пользоваться оружием...
-	AI_Output (self ,other,"DIA_Babo_Hello_03_06"); //Если хочешь, я могу обучить тебя кое-чему. Но у меня есть просьба...
+	AI_Output (self ,other,"DIA_Babo_Hello_03_00"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РџСЂРёРІРµС‚, С‚С‹ С‚РѕР¶Рµ РЅРѕРІРёС‡РѕРє Р·РґРµСЃСЊ, РґР°?
+	AI_Output (other,self ,"DIA_Babo_Hello_15_01"); //Р”Р°. РўС‹ РґР°РІРЅРѕ Р·РґРµСЃСЊ?
+	AI_Output (self ,other,"DIA_Babo_Hello_03_02"); //Р§РµС‚С‹СЂРµ РЅРµРґРµР»Рё. РўРµР±Рµ СѓР¶Рµ РІС‹РґР°Р»Рё Р±РѕРµРІРѕР№ РїРѕСЃРѕС…?
+	AI_Output (other,self ,"DIA_Babo_Hello_15_03"); //РџРѕРєР° РЅРµС‚.
+	AI_Output (self ,other,"DIA_Babo_Hello_03_04"); //РўРѕРіРґР° РІРѕР·СЊРјРё РІРѕС‚ СЌС‚РѕС‚. РњС‹, РїРѕСЃР»СѓС€РЅРёРєРё РІСЃРµРіРґР° С…РѕРґРёРј СЃ РїРѕСЃРѕС…РѕРј, С‡С‚РѕР±С‹ РїРѕРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјС‹ СЃРїРѕСЃРѕР±РЅС‹ Р·Р°С‰РёС‚РёС‚СЊ СЃРµР±СЏ. РўС‹ СѓРјРµРµС€СЊ СЃСЂР°Р¶Р°С‚СЊСЃСЏ?
+	AI_Output (other,self ,"DIA_Babo_Hello_15_05"); //РќСѓ, РјРЅРµ СЃР»СѓС‡Р°Р»РѕСЃСЊ РїРѕР»СЊР·РѕРІР°С‚СЊСЃСЏ РѕСЂСѓР¶РёРµРј...
+	AI_Output (self ,other,"DIA_Babo_Hello_03_06"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, СЏ РјРѕРіСѓ РѕР±СѓС‡РёС‚СЊ С‚РµР±СЏ РєРѕРµ-С‡РµРјСѓ. РќРѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРѕСЃСЊР±Р°...
 
 	B_GiveInvItems (self,other,ITMW_1h_NOV_Mace,1);
 	AI_EquipBestMeleeWeapon (self);
@@ -67,7 +67,7 @@ INSTANCE DIA_Babo_Anliegen   (C_INFO)
 	condition   = DIA_Babo_Anliegen_Condition;
 	information = DIA_Babo_Anliegen_Info;
 	permanent   = FALSE;
-	description	= "Что за просьба?";
+	description	= "Р§С‚Рѕ Р·Р° РїСЂРѕСЃСЊР±Р°?";
 };
 FUNC INT DIA_Babo_Anliegen_Condition()
 {
@@ -79,14 +79,14 @@ FUNC INT DIA_Babo_Anliegen_Condition()
 };
 FUNC VOID DIA_Babo_Anliegen_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Anliegen_15_00"); //Что за просьба?
-	AI_Output (self ,other,"DIA_Babo_Anliegen_03_01"); //Ну, один из паладинов, Сержио, сейчас живет в монастыре.
-	AI_Output (self ,other,"DIA_Babo_Anliegen_03_02"); //Если ты сможешь убедить его дать мне несколько уроков, тогда я потренирую тебя.
-	AI_Output (other,self ,"DIA_Babo_Anliegen_15_03"); //Я посмотрю, что можно сделать.
+	AI_Output (other,self ,"DIA_Babo_Anliegen_15_00"); //Р§С‚Рѕ Р·Р° РїСЂРѕСЃСЊР±Р°?
+	AI_Output (self ,other,"DIA_Babo_Anliegen_03_01"); //РќСѓ, РѕРґРёРЅ РёР· РїР°Р»Р°РґРёРЅРѕРІ, РЎРµСЂР¶РёРѕ, СЃРµР№С‡Р°СЃ Р¶РёРІРµС‚ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
+	AI_Output (self ,other,"DIA_Babo_Anliegen_03_02"); //Р•СЃР»Рё С‚С‹ СЃРјРѕР¶РµС€СЊ СѓР±РµРґРёС‚СЊ РµРіРѕ РґР°С‚СЊ РјРЅРµ РЅРµСЃРєРѕР»СЊРєРѕ СѓСЂРѕРєРѕРІ, С‚РѕРіРґР° СЏ РїРѕС‚СЂРµРЅРёСЂСѓСЋ С‚РµР±СЏ.
+	AI_Output (other,self ,"DIA_Babo_Anliegen_15_03"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
 	
 	Log_CreateTopic (Topic_BaboTrain,LOG_MISSION);
 	Log_SetTopicStatus (Topic_BaboTrain,LOG_RUNNING);
-	B_LogEntry (Topic_BaboTrain,"Если я смогу убедить паладина Сержио немного потренироваться с Бабо, он научит меня искусству обращения с двуручным оружием.");
+	B_LogEntry (Topic_BaboTrain,"Р•СЃР»Рё СЏ СЃРјРѕРіСѓ СѓР±РµРґРёС‚СЊ РїР°Р»Р°РґРёРЅР° РЎРµСЂР¶РёРѕ РЅРµРјРЅРѕРіРѕ РїРѕС‚СЂРµРЅРёСЂРѕРІР°С‚СЊСЃСЏ СЃ Р‘Р°Р±Рѕ, РѕРЅ РЅР°СѓС‡РёС‚ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ РѕР±СЂР°С‰РµРЅРёСЏ СЃ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 	
 };
 //***********************************************************************
@@ -99,7 +99,7 @@ INSTANCE DIA_Babo_Sergio   (C_INFO)
 	condition   = DIA_Babo_Sergio_Condition;
 	information = DIA_Babo_Sergio_Info;
 	permanent   = FALSE;
-	description	= "Я поговорил с Сержио.";
+	description	= "РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РЎРµСЂР¶РёРѕ.";
 };
 FUNC INT DIA_Babo_Sergio_Condition()
 {
@@ -113,16 +113,16 @@ FUNC INT DIA_Babo_Sergio_Condition()
 };
 FUNC VOID DIA_Babo_Sergio_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Sergio_15_00"); //Я поговорил с Сержио. Он будет тренировать тебя по два часа каждое утро, с пяти часов.
-	AI_Output (self ,other,"DIA_Babo_Sergio_03_01"); //Спасибо! Какая честь для меня!
-	AI_Output (self ,other,"DIA_Babo_Sergio_03_02"); //Если хочешь, я также могу показать тебе несколько секретов боевого искусства.
+	AI_Output (other,self ,"DIA_Babo_Sergio_15_00"); //РЇ РїРѕРіРѕРІРѕСЂРёР» СЃ РЎРµСЂР¶РёРѕ. РћРЅ Р±СѓРґРµС‚ С‚СЂРµРЅРёСЂРѕРІР°С‚СЊ С‚РµР±СЏ РїРѕ РґРІР° С‡Р°СЃР° РєР°Р¶РґРѕРµ СѓС‚СЂРѕ, СЃ РїСЏС‚Рё С‡Р°СЃРѕРІ.
+	AI_Output (self ,other,"DIA_Babo_Sergio_03_01"); //РЎРїР°СЃРёР±Рѕ! РљР°РєР°СЏ С‡РµСЃС‚СЊ РґР»СЏ РјРµРЅСЏ!
+	AI_Output (self ,other,"DIA_Babo_Sergio_03_02"); //Р•СЃР»Рё С…РѕС‡РµС€СЊ, СЏ С‚Р°РєР¶Рµ РјРѕРіСѓ РїРѕРєР°Р·Р°С‚СЊ С‚РµР±Рµ РЅРµСЃРєРѕР»СЊРєРѕ СЃРµРєСЂРµС‚РѕРІ Р±РѕРµРІРѕРіРѕ РёСЃРєСѓСЃСЃС‚РІР°.
 	
 	Babo_TeachPlayer = TRUE;	
 	Babo_Training = TRUE;
 	B_GivePlayerXP ((XP_Ambient)*2);
 	
 	Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTeacher,"Бабо может обучить меня искусству обращения с двуручным оружием.");
+	B_LogEntry (Topic_KlosterTeacher,"Р‘Р°Р±Рѕ РјРѕР¶РµС‚ РѕР±СѓС‡РёС‚СЊ РјРµРЅСЏ РёСЃРєСѓСЃСЃС‚РІСѓ РѕР±СЂР°С‰РµРЅРёСЏ СЃ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј.");
 };
 //***************************************************************************************
 //			Ich will trainieren
@@ -134,7 +134,7 @@ INSTANCE DIA_Babo_Teach(C_INFO)
 	condition	= DIA_Babo_Teach_Condition;
 	information	= DIA_Babo_Teach_Info;
 	permanent	= TRUE;
-	description = "Я готов к обучению.";
+	description = "РЇ РіРѕС‚РѕРІ Рє РѕР±СѓС‡РµРЅРёСЋ.";
 };                       
 //----------------------------------
 var int DIA_Babo_Teach_permanent;
@@ -157,7 +157,7 @@ FUNC VOID DIA_Babo_Teach_Info()
 {	
 	babo_merk2h = other.HitChance [NPC_TALENT_2H]; 
 	
-	AI_Output (other,self ,"DIA_Babo_Teach_15_00"); //Я готов к обучению.
+	AI_Output (other,self ,"DIA_Babo_Teach_15_00"); //РЇ РіРѕС‚РѕРІ Рє РѕР±СѓС‡РµРЅРёСЋ.
 	
 	Info_ClearChoices 	(DIA_Babo_Teach);
 	Info_AddChoice 		(DIA_Babo_Teach,	DIALOG_BACK		,DIA_Babo_Teach_Back);
@@ -169,7 +169,7 @@ FUNC VOID DIA_Babo_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 75)
 	{
-		AI_Output (self,other,"DIA_DIA_Babo_Teach_Back_03_00"); //Ты знаешь больше о двуручном оружии, чем я мог бы научить тебя.
+		AI_Output (self,other,"DIA_DIA_Babo_Teach_Back_03_00"); //РўС‹ Р·РЅР°РµС€СЊ Р±РѕР»СЊС€Рµ Рѕ РґРІСѓСЂСѓС‡РЅРѕРј РѕСЂСѓР¶РёРё, С‡РµРј СЏ РјРѕРі Р±С‹ РЅР°СѓС‡РёС‚СЊ С‚РµР±СЏ.
 		
 		DIA_Babo_Teach_permanent = TRUE;
 	};
@@ -184,19 +184,19 @@ FUNC VOID DIA_Babo_Teach_2H_1 ()
 	{
 		if (Babo_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_00"); //Сражайся за Инноса. Иннос - наша жизнь, и твоя вера придаст тебе силы.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_00"); //РЎСЂР°Р¶Р°Р№СЃСЏ Р·Р° РРЅРЅРѕСЃР°. РРЅРЅРѕСЃ - РЅР°С€Р° Р¶РёР·РЅСЊ, Рё С‚РІРѕСЏ РІРµСЂР° РїСЂРёРґР°СЃС‚ С‚РµР±Рµ СЃРёР»С‹.
 		};
 		if (Babo_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_01"); //Слуга Инноса никогда не провоцирует противника - он удивляет его!
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_01"); //РЎР»СѓРіР° РРЅРЅРѕСЃР° РЅРёРєРѕРіРґР° РЅРµ РїСЂРѕРІРѕС†РёСЂСѓРµС‚ РїСЂРѕС‚РёРІРЅРёРєР° - РѕРЅ СѓРґРёРІР»СЏРµС‚ РµРіРѕ!
 		};
 		if (Babo_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_02"); //Куда бы ты ни шел - всегда бери с собой свой посох.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_02"); //РљСѓРґР° Р±С‹ С‚С‹ РЅРё С€РµР» - РІСЃРµРіРґР° Р±РµСЂРё СЃ СЃРѕР±РѕР№ СЃРІРѕР№ РїРѕСЃРѕС….
 		};
 		if (Babo_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_03"); //Слуга Инноса всегда готов к бою. Если у тебя нет никакой магии, твой посох - твой самый важный элемент обороны.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_03"); //РЎР»СѓРіР° РРЅРЅРѕСЃР° РІСЃРµРіРґР° РіРѕС‚РѕРІ Рє Р±РѕСЋ. Р•СЃР»Рё Сѓ С‚РµР±СЏ РЅРµС‚ РЅРёРєР°РєРѕР№ РјР°РіРёРё, С‚РІРѕР№ РїРѕСЃРѕС… - С‚РІРѕР№ СЃР°РјС‹Р№ РІР°Р¶РЅС‹Р№ СЌР»РµРјРµРЅС‚ РѕР±РѕСЂРѕРЅС‹.
 		};
 		
 		Babo_Labercount = Babo_Labercount +1;
@@ -219,19 +219,19 @@ FUNC VOID DIA_Babo_Teach_2H_5 ()
 	{
 		if (Babo_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_00"); //Слуга Инноса сражается не только своим посохом, но также и своим сердцем.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_00"); //РЎР»СѓРіР° РРЅРЅРѕСЃР° СЃСЂР°Р¶Р°РµС‚СЃСЏ РЅРµ С‚РѕР»СЊРєРѕ СЃРІРѕРёРј РїРѕСЃРѕС…РѕРј, РЅРѕ С‚Р°РєР¶Рµ Рё СЃРІРѕРёРј СЃРµСЂРґС†РµРј.
 		};
 		if (Babo_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_01"); //Ты должен понимать, до какого предела ты можешь отступить.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїРѕРЅРёРјР°С‚СЊ, РґРѕ РєР°РєРѕРіРѕ РїСЂРµРґРµР»Р° С‚С‹ РјРѕР¶РµС€СЊ РѕС‚СЃС‚СѓРїРёС‚СЊ.
 		};
 		if (Babo_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_02"); //Помни, ты хорошо сражаешься, когда ты контролируешь противника и не даешь ему шанса контролировать себя.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_02"); //РџРѕРјРЅРё, С‚С‹ С…РѕСЂРѕС€Рѕ СЃСЂР°Р¶Р°РµС€СЊСЃСЏ, РєРѕРіРґР° С‚С‹ РєРѕРЅС‚СЂРѕР»РёСЂСѓРµС€СЊ РїСЂРѕС‚РёРІРЅРёРєР° Рё РЅРµ РґР°РµС€СЊ РµРјСѓ С€Р°РЅСЃР° РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ СЃРµР±СЏ.
 		};
 		if (Babo_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_03"); //Когда ты бросаешь бой, ты только теряешь.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_03"); //РљРѕРіРґР° С‚С‹ Р±СЂРѕСЃР°РµС€СЊ Р±РѕР№, С‚С‹ С‚РѕР»СЊРєРѕ С‚РµСЂСЏРµС€СЊ.
 		};
 		
 		Babo_Labercount = Babo_Labercount +1;
@@ -256,7 +256,7 @@ INSTANCE DIA_Babo_Wurst(C_INFO)
 	condition	= DIA_Babo_Wurst_Condition;
 	information	= DIA_Babo_Wurst_Info;
 	permanent	= FALSE;
-	description = "Вот, держи колбасу.";
+	description = "Р’РѕС‚, РґРµСЂР¶Рё РєРѕР»Р±Р°СЃСѓ.";
 };                       
 
 FUNC INT DIA_Babo_Wurst_Condition()
@@ -271,11 +271,11 @@ FUNC INT DIA_Babo_Wurst_Condition()
 };
 FUNC VOID DIA_Babo_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Babo_Wurst_15_00"); //Вот, держи колбасу.
-	AI_Output (self, other, "DIA_Babo_Wurst_03_01"); //Ох, баранья колбаса, отлично! Какой потрясающий вкус - дай мне еще одну колбаску!
-	AI_Output (other, self, "DIA_Babo_Wurst_15_02"); //Тогда у меня не хватит колбасы для других.
-	AI_Output (self, other, "DIA_Babo_Wurst_03_03"); //У тебя все равно на одну колбаску больше, чем нужно. Ну, на ту, что предназначена для тебя. Мы же друзья. Что мы будем делить какую-то колбасу?
-	AI_Output (self, other, "DIA_Babo_Wurst_03_04"); //Ну же, я дам тебе за нее свиток 'Огненная стрела'.
+	AI_Output (other, self, "DIA_Babo_Wurst_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё РєРѕР»Р±Р°СЃСѓ.
+	AI_Output (self, other, "DIA_Babo_Wurst_03_01"); //РћС…, Р±Р°СЂР°РЅСЊСЏ РєРѕР»Р±Р°СЃР°, РѕС‚Р»РёС‡РЅРѕ! РљР°РєРѕР№ РїРѕС‚СЂСЏСЃР°СЋС‰РёР№ РІРєСѓСЃ - РґР°Р№ РјРЅРµ РµС‰Рµ РѕРґРЅСѓ РєРѕР»Р±Р°СЃРєСѓ!
+	AI_Output (other, self, "DIA_Babo_Wurst_15_02"); //РўРѕРіРґР° Сѓ РјРµРЅСЏ РЅРµ С…РІР°С‚РёС‚ РєРѕР»Р±Р°СЃС‹ РґР»СЏ РґСЂСѓРіРёС….
+	AI_Output (self, other, "DIA_Babo_Wurst_03_03"); //РЈ С‚РµР±СЏ РІСЃРµ СЂР°РІРЅРѕ РЅР° РѕРґРЅСѓ РєРѕР»Р±Р°СЃРєСѓ Р±РѕР»СЊС€Рµ, С‡РµРј РЅСѓР¶РЅРѕ. РќСѓ, РЅР° С‚Сѓ, С‡С‚Рѕ РїСЂРµРґРЅР°Р·РЅР°С‡РµРЅР° РґР»СЏ С‚РµР±СЏ. РњС‹ Р¶Рµ РґСЂСѓР·СЊСЏ. Р§С‚Рѕ РјС‹ Р±СѓРґРµРј РґРµР»РёС‚СЊ РєР°РєСѓСЋ-С‚Рѕ РєРѕР»Р±Р°СЃСѓ?
+	AI_Output (self, other, "DIA_Babo_Wurst_03_04"); //РќСѓ Р¶Рµ, СЏ РґР°Рј С‚РµР±Рµ Р·Р° РЅРµРµ СЃРІРёС‚РѕРє 'РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°'.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -290,13 +290,13 @@ FUNC VOID DIA_Babo_Wurst_Info()
 	AI_PrintScreen	(NovizeText, -1, YPOS_GOLDGIVEN, FONT_ScreenSmall, 2);
 	
 	Info_ClearChoices (DIA_Babo_Wurst);
-	Info_AddChoice (DIA_Babo_Wurst,"Хорошо, держи еще одну колбасу.",DIA_Babo_Wurst_JA);
-	Info_AddChoice (DIA_Babo_Wurst,"Нет, я не сделаю этого.",DIA_Babo_Wurst_NEIN);
+	Info_AddChoice (DIA_Babo_Wurst,"РҐРѕСЂРѕС€Рѕ, РґРµСЂР¶Рё РµС‰Рµ РѕРґРЅСѓ РєРѕР»Р±Р°СЃСѓ.",DIA_Babo_Wurst_JA);
+	Info_AddChoice (DIA_Babo_Wurst,"РќРµС‚, СЏ РЅРµ СЃРґРµР»Р°СЋ СЌС‚РѕРіРѕ.",DIA_Babo_Wurst_NEIN);
 };
 FUNC VOID DIA_Babo_Wurst_JA()
 {
-	AI_Output (other, self, "DIA_Babo_Wurst_JA_15_00"); //Хорошо, держи еще одну колбасу.
-	AI_Output (self, other, "DIA_Babo_Wurst_JA_03_01"); //Отлично. Вот твой свиток.
+	AI_Output (other, self, "DIA_Babo_Wurst_JA_15_00"); //РҐРѕСЂРѕС€Рѕ, РґРµСЂР¶Рё РµС‰Рµ РѕРґРЅСѓ РєРѕР»Р±Р°СЃСѓ.
+	AI_Output (self, other, "DIA_Babo_Wurst_JA_03_01"); //РћС‚Р»РёС‡РЅРѕ. Р’РѕС‚ С‚РІРѕР№ СЃРІРёС‚РѕРє.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	B_GiveInvItems (self, other, ItSC_Firebolt, 1);
@@ -305,8 +305,8 @@ FUNC VOID DIA_Babo_Wurst_JA()
 };
 FUNC VOID DIA_Babo_Wurst_NEIN()
 {
-	AI_Output (other, self, "DIA_Babo_Wurst_NEIN_15_00"); //Нет, я не сделаю этого.
-	AI_Output (self, other, "DIA_Babo_Wurst_NEIN_03_01"); //Слушай, ты что, один из тех людей, что очень щепетильно относятся ко всему, а?
+	AI_Output (other, self, "DIA_Babo_Wurst_NEIN_15_00"); //РќРµС‚, СЏ РЅРµ СЃРґРµР»Р°СЋ СЌС‚РѕРіРѕ.
+	AI_Output (self, other, "DIA_Babo_Wurst_NEIN_03_01"); //РЎР»СѓС€Р°Р№, С‚С‹ С‡С‚Рѕ, РѕРґРёРЅ РёР· С‚РµС… Р»СЋРґРµР№, С‡С‚Рѕ РѕС‡РµРЅСЊ С‰РµРїРµС‚РёР»СЊРЅРѕ РѕС‚РЅРѕСЃСЏС‚СЃСЏ РєРѕ РІСЃРµРјСѓ, Р°?
 	Info_ClearChoices (DIA_Babo_Wurst);
 };
 //***********************************************************************
@@ -320,7 +320,7 @@ INSTANCE DIA_Babo_YouAndAgon   (C_INFO)
 	condition   = DIA_Babo_YouAndAgon_Condition;
 	information = DIA_Babo_YouAndAgon_Info;
 	permanent   = FALSE;
-	description	= "Что произошло между тобой и Агоном?";
+	description	= "Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РјРµР¶РґСѓ С‚РѕР±РѕР№ Рё РђРіРѕРЅРѕРј?";
 };
 
 FUNC INT DIA_Babo_YouAndAgon_Condition()
@@ -334,11 +334,11 @@ FUNC INT DIA_Babo_YouAndAgon_Condition()
 
 FUNC VOID DIA_Babo_YouAndAgon_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_YouAndAgon_15_00"); //Что произошло между тобой и Агоном?
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_01"); //Ох, мы поспорили о том, как нужно ухаживать за огненной крапивой.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_02"); //Агон поливал ее так, что корни бедного растения почти совсем сгнили.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_03"); //А когда они сгнили совсем, он обвинил в этом меня.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_04"); //Теперь меня постоянно заставляют подметать двор в наказание.
+	AI_Output (other,self ,"DIA_Babo_YouAndAgon_15_00"); //Р§С‚Рѕ РїСЂРѕРёР·РѕС€Р»Рѕ РјРµР¶РґСѓ С‚РѕР±РѕР№ Рё РђРіРѕРЅРѕРј?
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_01"); //РћС…, РјС‹ РїРѕСЃРїРѕСЂРёР»Рё Рѕ С‚РѕРј, РєР°Рє РЅСѓР¶РЅРѕ СѓС…Р°Р¶РёРІР°С‚СЊ Р·Р° РѕРіРЅРµРЅРЅРѕР№ РєСЂР°РїРёРІРѕР№.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_02"); //РђРіРѕРЅ РїРѕР»РёРІР°Р» РµРµ С‚Р°Рє, С‡С‚Рѕ РєРѕСЂРЅРё Р±РµРґРЅРѕРіРѕ СЂР°СЃС‚РµРЅРёСЏ РїРѕС‡С‚Рё СЃРѕРІСЃРµРј СЃРіРЅРёР»Рё.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_03"); //Рђ РєРѕРіРґР° РѕРЅРё СЃРіРЅРёР»Рё СЃРѕРІСЃРµРј, РѕРЅ РѕР±РІРёРЅРёР» РІ СЌС‚РѕРј РјРµРЅСЏ.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_04"); //РўРµРїРµСЂСЊ РјРµРЅСЏ РїРѕСЃС‚РѕСЏРЅРЅРѕ Р·Р°СЃС‚Р°РІР»СЏСЋС‚ РїРѕРґРјРµС‚Р°С‚СЊ РґРІРѕСЂ РІ РЅР°РєР°Р·Р°РЅРёРµ.
 };
 //***********************************************************************
 //	Warum hat Agon das getan?
@@ -350,7 +350,7 @@ INSTANCE DIA_Babo_WhyDidAgon  (C_INFO)
 	condition   = DIA_Babo_WhyDidAgon_Condition;
 	information = DIA_Babo_WhyDidAgon_Info;
 	permanent   = FALSE;
-	description	= "Зачем Агон сделал это?";
+	description	= "Р—Р°С‡РµРј РђРіРѕРЅ СЃРґРµР»Р°Р» СЌС‚Рѕ?";
 };
 FUNC INT DIA_Babo_WhyDidAgon_Condition()
 {
@@ -362,8 +362,8 @@ FUNC INT DIA_Babo_WhyDidAgon_Condition()
 };
 FUNC VOID DIA_Babo_WhyDidAgon_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_WhyDidAgon_15_00"); //Зачем Агон сделал это?
-	AI_Output (self ,other,"DIA_Babo_WhyDidAgon_03_01"); //Тебе лучше самому спросить его об этом. Я думаю, он просто не выносит, когда кто-то оказывается лучше его.
+	AI_Output (other,self ,"DIA_Babo_WhyDidAgon_15_00"); //Р—Р°С‡РµРј РђРіРѕРЅ СЃРґРµР»Р°Р» СЌС‚Рѕ?
+	AI_Output (self ,other,"DIA_Babo_WhyDidAgon_03_01"); //РўРµР±Рµ Р»СѓС‡С€Рµ СЃР°РјРѕРјСѓ СЃРїСЂРѕСЃРёС‚СЊ РµРіРѕ РѕР± СЌС‚РѕРј. РЇ РґСѓРјР°СЋ, РѕРЅ РїСЂРѕСЃС‚Рѕ РЅРµ РІС‹РЅРѕСЃРёС‚, РєРѕРіРґР° РєС‚Рѕ-С‚Рѕ РѕРєР°Р·С‹РІР°РµС‚СЃСЏ Р»СѓС‡С€Рµ РµРіРѕ.
 };
 //***********************************************************************
 //	Du hast wohl Ahnung von Pflanzen?
@@ -375,7 +375,7 @@ INSTANCE DIA_Babo_PlantLore  (C_INFO)
 	condition   = DIA_Babo_PlantLore_Condition;
 	information = DIA_Babo_PlantLore_Info;
 	permanent   = FALSE;
-	description	= "Похоже ты хорошо разбираешься в растениях?";
+	description	= "РџРѕС…РѕР¶Рµ С‚С‹ С…РѕСЂРѕС€Рѕ СЂР°Р·Р±РёСЂР°РµС€СЊСЃСЏ РІ СЂР°СЃС‚РµРЅРёСЏС…?";
 };
 FUNC INT DIA_Babo_PlantLore_Condition()
 {
@@ -387,14 +387,14 @@ FUNC INT DIA_Babo_PlantLore_Condition()
 };
 FUNC VOID DIA_Babo_PlantLore_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_PlantLore_15_00"); //Похоже ты хорошо разбираешься в растениях?
-	AI_Output (self ,other,"DIA_Babo_PlantLore_03_01"); //У нас в семье была делянка, где мы выращивали различные травы, и я научился кое-чему у дедушки.
-	AI_Output (self ,other,"DIA_Babo_PlantLore_03_02"); //Я бы так хотел опять работать в саду.
+	AI_Output (other,self ,"DIA_Babo_PlantLore_15_00"); //РџРѕС…РѕР¶Рµ С‚С‹ С…РѕСЂРѕС€Рѕ СЂР°Р·Р±РёСЂР°РµС€СЊСЃСЏ РІ СЂР°СЃС‚РµРЅРёСЏС…?
+	AI_Output (self ,other,"DIA_Babo_PlantLore_03_01"); //РЈ РЅР°СЃ РІ СЃРµРјСЊРµ Р±С‹Р»Р° РґРµР»СЏРЅРєР°, РіРґРµ РјС‹ РІС‹СЂР°С‰РёРІР°Р»Рё СЂР°Р·Р»РёС‡РЅС‹Рµ С‚СЂР°РІС‹, Рё СЏ РЅР°СѓС‡РёР»СЃСЏ РєРѕРµ-С‡РµРјСѓ Сѓ РґРµРґСѓС€РєРё.
+	AI_Output (self ,other,"DIA_Babo_PlantLore_03_02"); //РЇ Р±С‹ С‚Р°Рє С…РѕС‚РµР» РѕРїСЏС‚СЊ СЂР°Р±РѕС‚Р°С‚СЊ РІ СЃР°РґСѓ.
 	
 	MIS_HelpBabo = LOG_RUNNING;
 	Log_CreateTopic (Topic_BaboGaertner,LOG_MISSION);
 	Log_SetTopicStatus (Topic_BaboGaertner,LOG_RUNNING);
-	B_LogEntry (Topic_BaboGaertner,"Бабо предпочел бы пропалывать травы, чем подметать двор.");
+	B_LogEntry (Topic_BaboGaertner,"Р‘Р°Р±Рѕ РїСЂРµРґРїРѕС‡РµР» Р±С‹ РїСЂРѕРїР°Р»С‹РІР°С‚СЊ С‚СЂР°РІС‹, С‡РµРј РїРѕРґРјРµС‚Р°С‚СЊ РґРІРѕСЂ.");
 };
 //***********************************************************************
 //	Fegen
@@ -406,7 +406,7 @@ INSTANCE DIA_Babo_Fegen  (C_INFO)
 	condition   = DIA_Babo_Fegen_Condition;
 	information = DIA_Babo_Fegen_Info;
 	permanent   = FALSE;
-	description	= "Я должен подметать кельи послушников.";
+	description	= "РЇ РґРѕР»Р¶РµРЅ РїРѕРґРјРµС‚Р°С‚СЊ РєРµР»СЊРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ.";
 };
 FUNC INT DIA_Babo_Fegen_Condition()
 {
@@ -417,12 +417,12 @@ FUNC INT DIA_Babo_Fegen_Condition()
 };
 FUNC VOID DIA_Babo_Fegen_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Fegen_15_00"); //Я должен подметать кельи послушников.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_01"); //Ты взвалил на себя слишком много работы. Знаешь что - я помогу тебе. Тебе ни за что не справиться одному.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_02"); //Но мне очень нужен свиток с заклинанием 'Кулак Ветра'. Знаешь, мне повезло, и мне было позволено прочесть книгу о нем.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_03"); //И теперь, естественно, я хочу испытать это заклинание. Так что если ты принесешь мне этот свиток, я помогу тебе.
+	AI_Output (other,self ,"DIA_Babo_Fegen_15_00"); //РЇ РґРѕР»Р¶РµРЅ РїРѕРґРјРµС‚Р°С‚СЊ РєРµР»СЊРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_01"); //РўС‹ РІР·РІР°Р»РёР» РЅР° СЃРµР±СЏ СЃР»РёС€РєРѕРј РјРЅРѕРіРѕ СЂР°Р±РѕС‚С‹. Р—РЅР°РµС€СЊ С‡С‚Рѕ - СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ. РўРµР±Рµ РЅРё Р·Р° С‡С‚Рѕ РЅРµ СЃРїСЂР°РІРёС‚СЊСЃСЏ РѕРґРЅРѕРјСѓ.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_02"); //РќРѕ РјРЅРµ РѕС‡РµРЅСЊ РЅСѓР¶РµРЅ СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј 'РљСѓР»Р°Рє Р’РµС‚СЂР°'. Р—РЅР°РµС€СЊ, РјРЅРµ РїРѕРІРµР·Р»Рѕ, Рё РјРЅРµ Р±С‹Р»Рѕ РїРѕР·РІРѕР»РµРЅРѕ РїСЂРѕС‡РµСЃС‚СЊ РєРЅРёРіСѓ Рѕ РЅРµРј.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_03"); //Р С‚РµРїРµСЂСЊ, РµСЃС‚РµСЃС‚РІРµРЅРЅРѕ, СЏ С…РѕС‡Сѓ РёСЃРїС‹С‚Р°С‚СЊ СЌС‚Рѕ Р·Р°РєР»РёРЅР°РЅРёРµ. РўР°Рє С‡С‚Рѕ РµСЃР»Рё С‚С‹ РїСЂРёРЅРµСЃРµС€СЊ РјРЅРµ СЌС‚РѕС‚ СЃРІРёС‚РѕРє, СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ.
 	
-	B_LogEntry 	(Topic_ParlanFegen,"Бабо поможет мне подмести кельи послушников, если я принесу ему свиток с заклинанием Кулак ветра.");
+	B_LogEntry 	(Topic_ParlanFegen,"Р‘Р°Р±Рѕ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРґРјРµСЃС‚Рё РєРµР»СЊРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ, РµСЃР»Рё СЏ РїСЂРёРЅРµСЃСѓ РµРјСѓ СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј РљСѓР»Р°Рє РІРµС‚СЂР°.");
 };
 //***********************************************************************
 //	Windfaust abgeben
@@ -434,7 +434,7 @@ INSTANCE DIA_Babo_Windfaust  (C_INFO)
 	condition   = DIA_Babo_Windfaust_Condition;
 	information = DIA_Babo_Windfaust_Info;
 	permanent   = TRUE;
-	description	= "Насчет свитка с заклинанием... (ОТДАТЬ КУЛАК ВЕТРА)";
+	description	= "РќР°СЃС‡РµС‚ СЃРІРёС‚РєР° СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј... (РћРўР”РђРўР¬ РљРЈР›РђРљ Р’Р•РўР Рђ)";
 };
 //---------------------------------
 var int DIA_Babo_Windfaust_permanent;
@@ -450,13 +450,13 @@ FUNC INT DIA_Babo_Windfaust_Condition()
 };
 FUNC VOID DIA_Babo_Windfaust_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Windfaust_15_00"); //Насчет свитка...
-	AI_Output (self ,other,"DIA_Babo_Windfaust_03_01"); //У тебя есть свиток 'Кулак Ветра' для меня?
+	AI_Output (other,self ,"DIA_Babo_Windfaust_15_00"); //РќР°СЃС‡РµС‚ СЃРІРёС‚РєР°...
+	AI_Output (self ,other,"DIA_Babo_Windfaust_03_01"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ СЃРІРёС‚РѕРє 'РљСѓР»Р°Рє Р’РµС‚СЂР°' РґР»СЏ РјРµРЅСЏ?
 	
 	if B_GiveInvItems (other, self, ItSc_Windfist,1)
 	{ 
-		AI_Output (other,self ,"DIA_Babo_Windfaust_15_02"); //Вот свиток, который ты хотел получить.
-		AI_Output (self ,other,"DIA_Babo_Windfaust_03_03"); //Отлично. Тогда я помогу тебе подметать кельи.
+		AI_Output (other,self ,"DIA_Babo_Windfaust_15_02"); //Р’РѕС‚ СЃРІРёС‚РѕРє, РєРѕС‚РѕСЂС‹Р№ С‚С‹ С…РѕС‚РµР» РїРѕР»СѓС‡РёС‚СЊ.
+		AI_Output (self ,other,"DIA_Babo_Windfaust_03_03"); //РћС‚Р»РёС‡РЅРѕ. РўРѕРіРґР° СЏ РїРѕРјРѕРіСѓ С‚РµР±Рµ РїРѕРґРјРµС‚Р°С‚СЊ РєРµР»СЊРё.
 		
 		NOV_Helfer = (NOV_Helfer +1);
 		DIA_Babo_Windfaust_permanent = TRUE; 
@@ -464,13 +464,13 @@ FUNC VOID DIA_Babo_Windfaust_Info()
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine (self,"FEGEN");
 		
-		B_LogEntry 	(Topic_ParlanFegen,"Бабо поможет мне подмести кельи послушников.");
+		B_LogEntry 	(Topic_ParlanFegen,"Р‘Р°Р±Рѕ РїРѕРјРѕР¶РµС‚ РјРЅРµ РїРѕРґРјРµСЃС‚Рё РєРµР»СЊРё РїРѕСЃР»СѓС€РЅРёРєРѕРІ.");
 		
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Babo_Windfaust_15_04"); //Нет, пока нет.
-		AI_Output (self ,other,"DIA_Babo_Windfaust_03_05"); //Ничего, я подожду.
+		AI_Output (other,self ,"DIA_Babo_Windfaust_15_04"); //РќРµС‚, РїРѕРєР° РЅРµС‚.
+		AI_Output (self ,other,"DIA_Babo_Windfaust_03_05"); //РќРёС‡РµРіРѕ, СЏ РїРѕРґРѕР¶РґСѓ.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -486,7 +486,7 @@ INSTANCE DIA_Babo_Life   (C_INFO)
 	condition   = DIA_Babo_Life_Condition;
 	information = DIA_Babo_Life_Info;
 	permanent   = TRUE;
-	description	= "Как жизнь в монастыре?";
+	description	= "РљР°Рє Р¶РёР·РЅСЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?";
 };
 FUNC INT DIA_Babo_Life_Condition()
 {
@@ -497,19 +497,19 @@ FUNC INT DIA_Babo_Life_Condition()
 };
 FUNC VOID DIA_Babo_Life_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Life_15_00"); //Как жизнь в монастыре?
-	AI_Output (self ,other,"DIA_Babo_Life_03_01"); //Не хочу жаловаться, но я никогда не думал, что здесь такие жесткие правила. Если ты не нарушаешь правила, тебя наказывают.
-	AI_Output (self ,other,"DIA_Babo_Life_03_02"); //Конечно, многие послушники хотят изучать учения Инноса в библиотеке, чтобы подготовиться стать избранными.
-	AI_Output (self ,other,"DIA_Babo_Life_03_03"); //Но я думаю, что лучшая подготовка к испытанию магией - это тщательно выполнять нашу работу.
+	AI_Output (other,self ,"DIA_Babo_Life_15_00"); //РљР°Рє Р¶РёР·РЅСЊ РІ РјРѕРЅР°СЃС‚С‹СЂРµ?
+	AI_Output (self ,other,"DIA_Babo_Life_03_01"); //РќРµ С…РѕС‡Сѓ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ, РЅРѕ СЏ РЅРёРєРѕРіРґР° РЅРµ РґСѓРјР°Р», С‡С‚Рѕ Р·РґРµСЃСЊ С‚Р°РєРёРµ Р¶РµСЃС‚РєРёРµ РїСЂР°РІРёР»Р°. Р•СЃР»Рё С‚С‹ РЅРµ РЅР°СЂСѓС€Р°РµС€СЊ РїСЂР°РІРёР»Р°, С‚РµР±СЏ РЅР°РєР°Р·С‹РІР°СЋС‚.
+	AI_Output (self ,other,"DIA_Babo_Life_03_02"); //РљРѕРЅРµС‡РЅРѕ, РјРЅРѕРіРёРµ РїРѕСЃР»СѓС€РЅРёРєРё С…РѕС‚СЏС‚ РёР·СѓС‡Р°С‚СЊ СѓС‡РµРЅРёСЏ РРЅРЅРѕСЃР° РІ Р±РёР±Р»РёРѕС‚РµРєРµ, С‡С‚РѕР±С‹ РїРѕРґРіРѕС‚РѕРІРёС‚СЊСЃСЏ СЃС‚Р°С‚СЊ РёР·Р±СЂР°РЅРЅС‹РјРё.
+	AI_Output (self ,other,"DIA_Babo_Life_03_03"); //РќРѕ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ Р»СѓС‡С€Р°СЏ РїРѕРґРіРѕС‚РѕРІРєР° Рє РёСЃРїС‹С‚Р°РЅРёСЋ РјР°РіРёРµР№ - СЌС‚Рѕ С‚С‰Р°С‚РµР»СЊРЅРѕ РІС‹РїРѕР»РЅСЏС‚СЊ РЅР°С€Сѓ СЂР°Р±РѕС‚Сѓ.
 	
 	if (Npc_KnowsInfo (other,DIA_Igaranz_Choosen) == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Babo_Life_15_04"); //Что ты там говорил об избранных, и что за испытание?
-		AI_Output (self ,other,"DIA_Babo_Life_03_05"); //Поговори с братом Игарацем. Он больше знает об этом.
+		AI_Output (other,self ,"DIA_Babo_Life_15_04"); //Р§С‚Рѕ С‚С‹ С‚Р°Рј РіРѕРІРѕСЂРёР» РѕР± РёР·Р±СЂР°РЅРЅС‹С…, Рё С‡С‚Рѕ Р·Р° РёСЃРїС‹С‚Р°РЅРёРµ?
+		AI_Output (self ,other,"DIA_Babo_Life_03_05"); //РџРѕРіРѕРІРѕСЂРё СЃ Р±СЂР°С‚РѕРј РРіР°СЂР°С†РµРј. РћРЅ Р±РѕР»СЊС€Рµ Р·РЅР°РµС‚ РѕР± СЌС‚РѕРј.
 	};
 };
 //*********************************************************************
-//		Sc hat Babo den Gдrtnerposten verschafft (Kap. 2)
+//		Sc hat Babo den GРґrtnerposten verschafft (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Babo_HowIsIt   (C_INFO)
 {
@@ -518,7 +518,7 @@ INSTANCE DIA_Babo_HowIsIt   (C_INFO)
 	condition   = DIA_Babo_HowIsIt_Condition;
 	information = DIA_Babo_HowIsIt_Info;
 	permanent   = TRUE;
-	description	= "Как ты?";
+	description	= "РљР°Рє С‚С‹?";
 };
 FUNC INT DIA_Babo_HowIsIt_Condition()
 {
@@ -533,12 +533,12 @@ var int Babo_XPgiven;
 //--------------------
 FUNC VOID DIA_Babo_HowIsIt_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_HowIsIt_15_00"); //Как дела?
+	AI_Output (other,self ,"DIA_Babo_HowIsIt_15_00"); //РљР°Рє РґРµР»Р°?
 	
 	if (MIS_HelpBabo == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_01"); //(робко) Я благодарю магов за данные мне поручения.
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_02"); //Мне нравится работать в саду, и я надеюсь, что маги довольны мной, Мастер.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_01"); //(СЂРѕР±РєРѕ) РЇ Р±Р»Р°РіРѕРґР°СЂСЋ РјР°РіРѕРІ Р·Р° РґР°РЅРЅС‹Рµ РјРЅРµ РїРѕСЂСѓС‡РµРЅРёСЏ.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_02"); //РњРЅРµ РЅСЂР°РІРёС‚СЃСЏ СЂР°Р±РѕС‚Р°С‚СЊ РІ СЃР°РґСѓ, Рё СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ РјР°РіРё РґРѕРІРѕР»СЊРЅС‹ РјРЅРѕР№, РњР°СЃС‚РµСЂ.
 		
 		if (Babo_XPgiven == FALSE)
 		{
@@ -548,8 +548,8 @@ FUNC VOID DIA_Babo_HowIsIt_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_03"); //(испуганно) Х... х... хорошо, Мастер.
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_04"); //Я, я усердно работаю и пытаюсь не разочаровать магов.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_03"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РҐ... С…... С…РѕСЂРѕС€Рѕ, РњР°СЃС‚РµСЂ.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_04"); //РЇ, СЏ СѓСЃРµСЂРґРЅРѕ СЂР°Р±РѕС‚Р°СЋ Рё РїС‹С‚Р°СЋСЃСЊ РЅРµ СЂР°Р·РѕС‡Р°СЂРѕРІР°С‚СЊ РјР°РіРѕРІ.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -622,7 +622,7 @@ INSTANCE DIA_Babo_Kap3_Hello   (C_INFO)
 	condition   = DIA_Babo_Kap3_Hello_Condition;
 	information = DIA_Babo_Kap3_Hello_Info;
 	permanent   = FALSE;
-	description = "Что ты делаешь здесь?";
+	description = "Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 FUNC INT DIA_Babo_Kap3_Hello_Condition()
 {
@@ -633,15 +633,15 @@ FUNC INT DIA_Babo_Kap3_Hello_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Hello_15_00"); //Что ты делаешь здесь?
+	AI_Output (other,self ,"DIA_Babo_Kap3_Hello_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_01"); //(застенчиво) Я пытаюсь выполнить задания, данные мне, так, чтобы маги монастыря остались довольны.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_01"); //(Р·Р°СЃС‚РµРЅС‡РёРІРѕ) РЇ РїС‹С‚Р°СЋСЃСЊ РІС‹РїРѕР»РЅРёС‚СЊ Р·Р°РґР°РЅРёСЏ, РґР°РЅРЅС‹Рµ РјРЅРµ, С‚Р°Рє, С‡С‚РѕР±С‹ РјР°РіРё РјРѕРЅР°СЃС‚С‹СЂСЏ РѕСЃС‚Р°Р»РёСЃСЊ РґРѕРІРѕР»СЊРЅС‹.
 	}	
 	else
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_02"); //Я не должен говорить с тобой. Вряд ли это послужит мне на пользу, если заметят, что я говорю с чужаком.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_02"); //РЇ РЅРµ РґРѕР»Р¶РµРЅ РіРѕРІРѕСЂРёС‚СЊ СЃ С‚РѕР±РѕР№. Р’СЂСЏРґ Р»Рё СЌС‚Рѕ РїРѕСЃР»СѓР¶РёС‚ РјРЅРµ РЅР° РїРѕР»СЊР·Сѓ, РµСЃР»Рё Р·Р°РјРµС‚СЏС‚, С‡С‚Рѕ СЏ РіРѕРІРѕСЂСЋ СЃ С‡СѓР¶Р°РєРѕРј.
 	}; 
 };
 
@@ -656,7 +656,7 @@ INSTANCE DIA_Babo_Kap3_KeepTheFaith   (C_INFO)
 	condition   = DIA_Babo_Kap3_KeepTheFaith_Condition;
 	information = DIA_Babo_Kap3_KeepTheFaith_Info;
 	permanent   = FALSE;
-	description = "Ты не должен терять веры.";
+	description = "РўС‹ РЅРµ РґРѕР»Р¶РµРЅ С‚РµСЂСЏС‚СЊ РІРµСЂС‹.";
 };
 FUNC INT DIA_Babo_Kap3_KeepTheFaith_Condition()
 {
@@ -669,16 +669,16 @@ FUNC INT DIA_Babo_Kap3_KeepTheFaith_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_KeepTheFaith_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_00"); //Ты не должен терять веры.
-	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_01"); //(застигнутый врасплох) Нет... Я хочу сказать, это больше не повторится. Клянусь!
-	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_02"); //Мы все проходим через суровые испытания.
-	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_03"); //Да, Мастер. Я буду всегда помнить это. Спасибо.
+	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_00"); //РўС‹ РЅРµ РґРѕР»Р¶РµРЅ С‚РµСЂСЏС‚СЊ РІРµСЂС‹.
+	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_01"); //(Р·Р°СЃС‚РёРіРЅСѓС‚С‹Р№ РІСЂР°СЃРїР»РѕС…) РќРµС‚... РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, СЌС‚Рѕ Р±РѕР»СЊС€Рµ РЅРµ РїРѕРІС‚РѕСЂРёС‚СЃСЏ. РљР»СЏРЅСѓСЃСЊ!
+	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_02"); //РњС‹ РІСЃРµ РїСЂРѕС…РѕРґРёРј С‡РµСЂРµР· СЃСѓСЂРѕРІС‹Рµ РёСЃРїС‹С‚Р°РЅРёСЏ.
+	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_03"); //Р”Р°, РњР°СЃС‚РµСЂ. РЇ Р±СѓРґСѓ РІСЃРµРіРґР° РїРѕРјРЅРёС‚СЊ СЌС‚Рѕ. РЎРїР°СЃРёР±Рѕ.
 	
 	B_GivePlayerXP (XP_Ambient); 
 };
 
 //*********************************************
-//	Das klingt aber nicht sehr glьcklich.
+//	Das klingt aber nicht sehr glСЊcklich.
 //*********************************************
 
 INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)
@@ -688,7 +688,7 @@ INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)
 	condition   = DIA_Babo_Kap3_Unhappy_Condition;
 	information = DIA_Babo_Kap3_Unhappy_Info;
 	permanent   = FALSE;
-	description = "Ты не выглядишь особенно веселым.";
+	description = "РўС‹ РЅРµ РІС‹РіР»СЏРґРёС€СЊ РѕСЃРѕР±РµРЅРЅРѕ РІРµСЃРµР»С‹Рј.";
 };
 FUNC INT DIA_Babo_Kap3_Unhappy_Condition()
 {
@@ -701,102 +701,102 @@ FUNC INT DIA_Babo_Kap3_Unhappy_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Unhappy_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_15_00"); //Ты не выглядишь особенно веселым.
-	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_01"); //(застигнутый врасплох) Эээ... я хочу сказать, со мной все в порядке, правда.
-	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_02"); //Только... Ох, я не хочу жаловаться.
+	AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_15_00"); //РўС‹ РЅРµ РІС‹РіР»СЏРґРёС€СЊ РѕСЃРѕР±РµРЅРЅРѕ РІРµСЃРµР»С‹Рј.
+	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_01"); //(Р·Р°СЃС‚РёРіРЅСѓС‚С‹Р№ РІСЂР°СЃРїР»РѕС…) Р­СЌСЌ... СЏ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, СЃРѕ РјРЅРѕР№ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ, РїСЂР°РІРґР°.
+	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_02"); //РўРѕР»СЊРєРѕ... РћС…, СЏ РЅРµ С…РѕС‡Сѓ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ.
 
 	Info_ClearChoices	(DIA_Babo_Kap3_Unhappy);
-	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Тогда прекрати хныкать.",DIA_Babo_Kap3_Unhappy_Lament); 
-	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Да ладно, мне-то ты можешь сказать.",DIA_Babo_Kap3_Unhappy_TellMe);
+	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"РўРѕРіРґР° РїСЂРµРєСЂР°С‚Рё С…РЅС‹РєР°С‚СЊ.",DIA_Babo_Kap3_Unhappy_Lament); 
+	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Р”Р° Р»Р°РґРЅРѕ, РјРЅРµ-С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ.",DIA_Babo_Kap3_Unhappy_TellMe);
 };
 
 	FUNC VOID DIA_Babo_Kap3_Unhappy_Lament ()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_00"); //Тогда прекрати хныкать.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_01"); //(испуганно) Я... Я... пожалуйста, не говори магам.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_02"); //Я не хочу, чтобы меня опять наказали.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_03"); //Я подумаю над этим.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_00"); //РўРѕРіРґР° РїСЂРµРєСЂР°С‚Рё С…РЅС‹РєР°С‚СЊ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_01"); //(РёСЃРїСѓРіР°РЅРЅРѕ) РЇ... РЇ... РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ РіРѕРІРѕСЂРё РјР°РіР°Рј.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_02"); //РЇ РЅРµ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РјРµРЅСЏ РѕРїСЏС‚СЊ РЅР°РєР°Р·Р°Р»Рё.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_03"); //РЇ РїРѕРґСѓРјР°СЋ РЅР°Рґ СЌС‚РёРј.
 		
 		Info_ClearChoices	(DIA_Babo_Kap3_Unhappy);
 	};
 	
 	FUNC VOID DIA_Babo_Kap3_Unhappy_TellMe ()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_00"); //Да ладно, мне-то ты можешь сказать.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_01"); //А ты правда не скажешь магам?
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_02"); //Я похож на того, кто сразу бежит докладывать?
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_03"); //Ну, хорошо. У меня проблемы с одним из послушников. Он шантажирует меня.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_04"); //Давай, выкладывай.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_05"); //Игарац, так зовут этого послушника, нашел мои личные записи.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_06"); //Он угрожает передать их магам, если я не буду делать то, что он говорит.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_00"); //Р”Р° Р»Р°РґРЅРѕ, РјРЅРµ-С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_01"); //Рђ С‚С‹ РїСЂР°РІРґР° РЅРµ СЃРєР°Р¶РµС€СЊ РјР°РіР°Рј?
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_02"); //РЇ РїРѕС…РѕР¶ РЅР° С‚РѕРіРѕ, РєС‚Рѕ СЃСЂР°Р·Сѓ Р±РµР¶РёС‚ РґРѕРєР»Р°РґС‹РІР°С‚СЊ?
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_03"); //РќСѓ, С…РѕСЂРѕС€Рѕ. РЈ РјРµРЅСЏ РїСЂРѕР±Р»РµРјС‹ СЃ РѕРґРЅРёРј РёР· РїРѕСЃР»СѓС€РЅРёРєРѕРІ. РћРЅ С€Р°РЅС‚Р°Р¶РёСЂСѓРµС‚ РјРµРЅСЏ.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_04"); //Р”Р°РІР°Р№, РІС‹РєР»Р°РґС‹РІР°Р№.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_05"); //РРіР°СЂР°С†, С‚Р°Рє Р·РѕРІСѓС‚ СЌС‚РѕРіРѕ РїРѕСЃР»СѓС€РЅРёРєР°, РЅР°С€РµР» РјРѕРё Р»РёС‡РЅС‹Рµ Р·Р°РїРёСЃРё.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_06"); //РћРЅ СѓРіСЂРѕР¶Р°РµС‚ РїРµСЂРµРґР°С‚СЊ РёС… РјР°РіР°Рј, РµСЃР»Рё СЏ РЅРµ Р±СѓРґСѓ РґРµР»Р°С‚СЊ С‚Рѕ, С‡С‚Рѕ РѕРЅ РіРѕРІРѕСЂРёС‚.
 		
 		MIS_BabosDocs = LOG_RUNNING; 
 		
 		Log_CreateTopic (Topic_BabosDocs,LOG_MISSION);
 		Log_SetTopicStatus (Topic_BabosDocs,LOG_RUNNING);
-		B_LogEntry (Topic_BabosDocs,"Игарац шантажирует послушника Бабо какими-то документами.");
+		B_LogEntry (Topic_BabosDocs,"РРіР°СЂР°С† С€Р°РЅС‚Р°Р¶РёСЂСѓРµС‚ РїРѕСЃР»СѓС€РЅРёРєР° Р‘Р°Р±Рѕ РєР°РєРёРјРё-С‚Рѕ РґРѕРєСѓРјРµРЅС‚Р°РјРё.");
 		
 		Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Я думаю, что мне не стоит влезать в эти дрязги.",DIA_Babo_Kap3_Unhappy_Privat);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Что ты должен делать для него?",DIA_Babo_Kap3_Unhappy_ShouldDo);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Что это были за записи?",DIA_Babo_Kap3_Unhappy_Documents); 
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Может быть, я могу помочь тебе?",DIA_Babo_Kap3_Unhappy_CanHelpYou);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"РЇ РґСѓРјР°СЋ, С‡С‚Рѕ РјРЅРµ РЅРµ СЃС‚РѕРёС‚ РІР»РµР·Р°С‚СЊ РІ СЌС‚Рё РґСЂСЏР·РіРё.",DIA_Babo_Kap3_Unhappy_Privat);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Р§С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ РґР»СЏ РЅРµРіРѕ?",DIA_Babo_Kap3_Unhappy_ShouldDo);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рё Р·Р° Р·Р°РїРёСЃРё?",DIA_Babo_Kap3_Unhappy_Documents); 
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?",DIA_Babo_Kap3_Unhappy_CanHelpYou);
 	};
 
 		FUNC VOID DIA_Babo_Kap3_Unhappy_Privat ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_00"); //Я думаю, что мне не стоит влезать в эти дрязги.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Privat_03_01"); //Я понимаю, тебе не нужны проблемы. Я сам с этим как-нибудь разберусь.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_02"); //Я верю, ты справишься.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_00"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ РјРЅРµ РЅРµ СЃС‚РѕРёС‚ РІР»РµР·Р°С‚СЊ РІ СЌС‚Рё РґСЂСЏР·РіРё.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Privat_03_01"); //РЇ РїРѕРЅРёРјР°СЋ, С‚РµР±Рµ РЅРµ РЅСѓР¶РЅС‹ РїСЂРѕР±Р»РµРјС‹. РЇ СЃР°Рј СЃ СЌС‚РёРј РєР°Рє-РЅРёР±СѓРґСЊ СЂР°Р·Р±РµСЂСѓСЃСЊ.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_02"); //РЇ РІРµСЂСЋ, С‚С‹ СЃРїСЂР°РІРёС€СЊСЃСЏ.
 		
 			Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_ShouldDo ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_ShouldDo_15_00"); //Что ты должен делать для него?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_01"); //Мне так стыдно говорить. Это все не понравится Инносу.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_02"); //Мне даже думать не хочется, что будет, если все раскроется.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_ShouldDo_15_00"); //Р§С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ РґРµР»Р°С‚СЊ РґР»СЏ РЅРµРіРѕ?
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_01"); //РњРЅРµ С‚Р°Рє СЃС‚С‹РґРЅРѕ РіРѕРІРѕСЂРёС‚СЊ. Р­С‚Рѕ РІСЃРµ РЅРµ РїРѕРЅСЂР°РІРёС‚СЃСЏ РРЅРЅРѕСЃСѓ.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_02"); //РњРЅРµ РґР°Р¶Рµ РґСѓРјР°С‚СЊ РЅРµ С…РѕС‡РµС‚СЃСЏ, С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё РІСЃРµ СЂР°СЃРєСЂРѕРµС‚СЃСЏ.
 		
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_Documents ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_00"); //Что это были за записи?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_01"); //(неуверенно) Это никого не касается. Это мое личное дело.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_02"); //Да ладно, говори.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_03"); //Они... это... абсолютно нормальные записи. Ничего особенного.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_04"); //Я больше не буду спрашивать.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_00"); //Р§С‚Рѕ СЌС‚Рѕ Р±С‹Р»Рё Р·Р° Р·Р°РїРёСЃРё?
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_01"); //(РЅРµСѓРІРµСЂРµРЅРЅРѕ) Р­С‚Рѕ РЅРёРєРѕРіРѕ РЅРµ РєР°СЃР°РµС‚СЃСЏ. Р­С‚Рѕ РјРѕРµ Р»РёС‡РЅРѕРµ РґРµР»Рѕ.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_02"); //Р”Р° Р»Р°РґРЅРѕ, РіРѕРІРѕСЂРё.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_03"); //РћРЅРё... СЌС‚Рѕ... Р°Р±СЃРѕР»СЋС‚РЅРѕ РЅРѕСЂРјР°Р»СЊРЅС‹Рµ Р·Р°РїРёСЃРё. РќРёС‡РµРіРѕ РѕСЃРѕР±РµРЅРЅРѕРіРѕ.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_04"); //РЇ Р±РѕР»СЊС€Рµ РЅРµ Р±СѓРґСѓ СЃРїСЂР°С€РёРІР°С‚СЊ.
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_CanHelpYou ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_00"); //Может быть, я могу помочь тебе?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_01"); //Ты сделаешь это?
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_02"); //Ну... возможно... это зависит от...
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_03"); //(поспешно) Конечно же, я заплачу тебе за это.
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_04"); //Сколько?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_05"); //Ну, у меня не так много денег, но я мог бы дать тебе свиток с заклинанием. У меня есть лечебное заклинание.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ?
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_01"); //РўС‹ СЃРґРµР»Р°РµС€СЊ СЌС‚Рѕ?
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_02"); //РќСѓ... РІРѕР·РјРѕР¶РЅРѕ... СЌС‚Рѕ Р·Р°РІРёСЃРёС‚ РѕС‚...
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_03"); //(РїРѕСЃРїРµС€РЅРѕ) РљРѕРЅРµС‡РЅРѕ Р¶Рµ, СЏ Р·Р°РїР»Р°С‡Сѓ С‚РµР±Рµ Р·Р° СЌС‚Рѕ.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_04"); //РЎРєРѕР»СЊРєРѕ?
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_05"); //РќСѓ, Сѓ РјРµРЅСЏ РЅРµ С‚Р°Рє РјРЅРѕРіРѕ РґРµРЅРµРі, РЅРѕ СЏ РјРѕРі Р±С‹ РґР°С‚СЊ С‚РµР±Рµ СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј. РЈ РјРµРЅСЏ РµСЃС‚СЊ Р»РµС‡РµР±РЅРѕРµ Р·Р°РєР»РёРЅР°РЅРёРµ.
 			
 			Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
-			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Я лучше не буду связываться с этим.",DIA_Babo_Kap3_Unhappy_No);
-			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Я попробую.",DIA_Babo_Kap3_Unhappy_Yes);
+			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"РЇ Р»СѓС‡С€Рµ РЅРµ Р±СѓРґСѓ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ СЌС‚РёРј.",DIA_Babo_Kap3_Unhappy_No);
+			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"РЇ РїРѕРїСЂРѕР±СѓСЋ.",DIA_Babo_Kap3_Unhappy_Yes);
 		};
 
 			FUNC VOID DIA_Babo_Kap3_Unhappy_No ()
 			{
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_No_15_00"); //Я лучше не буду связываться с этим.
-				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_No_03_01"); //Тогда у меня нет выбора, мне придется выпутываться самому.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_No_15_00"); //РЇ Р»СѓС‡С€Рµ РЅРµ Р±СѓРґСѓ СЃРІСЏР·С‹РІР°С‚СЊСЃСЏ СЃ СЌС‚РёРј.
+				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_No_03_01"); //РўРѕРіРґР° Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РІС‹РїСѓС‚С‹РІР°С‚СЊСЃСЏ СЃР°РјРѕРјСѓ.
 			
 				Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 			};
 			
 			FUNC VOID DIA_Babo_Kap3_Unhappy_Yes ()
 			{
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_00"); //Я посмотрю, что можно сделать.
-				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_01"); //(счастливо) Правда?! Я знаю, у тебя получится. Я верю!
-				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_02"); //Тебе нужно только выяснить, где Игарац держит свои вещи. Затем ты выкрадешь их у него, и все будет в порядке.
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_03"); //Расслабься. Продолжай работать. А я позабочусь об остальном.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_00"); //РЇ РїРѕСЃРјРѕС‚СЂСЋ, С‡С‚Рѕ РјРѕР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_01"); //(СЃС‡Р°СЃС‚Р»РёРІРѕ) РџСЂР°РІРґР°?! РЇ Р·РЅР°СЋ, Сѓ С‚РµР±СЏ РїРѕР»СѓС‡РёС‚СЃСЏ. РЇ РІРµСЂСЋ!
+				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_02"); //РўРµР±Рµ РЅСѓР¶РЅРѕ С‚РѕР»СЊРєРѕ РІС‹СЏСЃРЅРёС‚СЊ, РіРґРµ РРіР°СЂР°С† РґРµСЂР¶РёС‚ СЃРІРѕРё РІРµС‰Рё. Р—Р°С‚РµРј С‚С‹ РІС‹РєСЂР°РґРµС€СЊ РёС… Сѓ РЅРµРіРѕ, Рё РІСЃРµ Р±СѓРґРµС‚ РІ РїРѕСЂСЏРґРєРµ.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_03"); //Р Р°СЃСЃР»Р°Р±СЊСЃСЏ. РџСЂРѕРґРѕР»Р¶Р°Р№ СЂР°Р±РѕС‚Р°С‚СЊ. Рђ СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ РѕР± РѕСЃС‚Р°Р»СЊРЅРѕРј.
 				
 				Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 			};
@@ -812,7 +812,7 @@ INSTANCE DIA_Babo_Kap3_HaveYourDocs   (C_INFO)
 	condition   = DIA_Babo_Kap3_HaveYourDocs_Condition;
 	information = DIA_Babo_Kap3_HaveYourDocs_Info;
 	permanent   = FALSE;
-	description = "Я нашел твои записки.";
+	description = "РЇ РЅР°С€РµР» С‚РІРѕРё Р·Р°РїРёСЃРєРё.";
 };
 FUNC INT DIA_Babo_Kap3_HaveYourDocs_Condition()
 {
@@ -826,42 +826,42 @@ FUNC INT DIA_Babo_Kap3_HaveYourDocs_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_00"); //Я нашел твои записки.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_01"); //Правда? Спасибо, ты спас меня. Я даже не знаю, как благодарить тебя.
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_02"); //Да, да, просто успокойся.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_03"); //(нервно) Это действительно мои? Ты уверен? Покажи мне.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_00"); //РЇ РЅР°С€РµР» С‚РІРѕРё Р·Р°РїРёСЃРєРё.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_01"); //РџСЂР°РІРґР°? РЎРїР°СЃРёР±Рѕ, С‚С‹ СЃРїР°СЃ РјРµРЅСЏ. РЇ РґР°Р¶Рµ РЅРµ Р·РЅР°СЋ, РєР°Рє Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_02"); //Р”Р°, РґР°, РїСЂРѕСЃС‚Рѕ СѓСЃРїРѕРєРѕР№СЃСЏ.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_03"); //(РЅРµСЂРІРЅРѕ) Р­С‚Рѕ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РјРѕРё? РўС‹ СѓРІРµСЂРµРЅ? РџРѕРєР°Р¶Рё РјРЅРµ.
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Я подержу их пока у себя .",DIA_Babo_Kap3_HaveYourDocs_KeepThem);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"РЇ РїРѕРґРµСЂР¶Сѓ РёС… РїРѕРєР° Сѓ СЃРµР±СЏ .",DIA_Babo_Kap3_HaveYourDocs_KeepThem);
 	
 	if (BaboSDocsOpen == TRUE)
 	{
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Теперь, учитывая все обстоятельства, цена выросла.",DIA_Babo_Kap3_HaveYourDocs_IWantMore);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"РўРµРїРµСЂСЊ, СѓС‡РёС‚С‹РІР°СЏ РІСЃРµ РѕР±СЃС‚РѕСЏС‚РµР»СЊСЃС‚РІР°, С†РµРЅР° РІС‹СЂРѕСЃР»Р°.",DIA_Babo_Kap3_HaveYourDocs_IWantMore);
 	};
 	
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Вот, держи.",DIA_Babo_Kap3_HaveYourDocs_HereTheyAre);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Р’РѕС‚, РґРµСЂР¶Рё.",DIA_Babo_Kap3_HaveYourDocs_HereTheyAre);
 };
 
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_15_00"); //Я подержу их пока у себя .
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_03_01"); //(ошеломленно) Что?! Что это все значит? Что ты задумал?
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_15_00"); //РЇ РїРѕРґРµСЂР¶Сѓ РёС… РїРѕРєР° Сѓ СЃРµР±СЏ .
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_03_01"); //(РѕС€РµР»РѕРјР»РµРЅРЅРѕ) Р§С‚Рѕ?! Р§С‚Рѕ СЌС‚Рѕ РІСЃРµ Р·РЅР°С‡РёС‚? Р§С‚Рѕ С‚С‹ Р·Р°РґСѓРјР°Р»?
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Просто шучу.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Это мое дело.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"РџСЂРѕСЃС‚Рѕ С€СѓС‡Сѓ.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Р­С‚Рѕ РјРѕРµ РґРµР»Рѕ.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern);
 	
 	if (Igaraz_IsPartner == LOG_SUCCESS)
 	{
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Игарац и я теперь партнеры.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"РРіР°СЂР°С† Рё СЏ С‚РµРїРµСЂСЊ РїР°СЂС‚РЅРµСЂС‹.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner);
 	};
 };
 
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_00"); //Просто шучу.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_01"); //(кисло) Ха-ха, но мне что-то не смешно. Где же они?
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_02"); //Здесь.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_00"); //РџСЂРѕСЃС‚Рѕ С€СѓС‡Сѓ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_01"); //(РєРёСЃР»Рѕ) РҐР°-С…Р°, РЅРѕ РјРЅРµ С‡С‚Рѕ-С‚Рѕ РЅРµ СЃРјРµС€РЅРѕ. Р“РґРµ Р¶Рµ РѕРЅРё?
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_02"); //Р—РґРµСЃСЊ.
 		
 		if (Npc_HasItems (other,ItWr_BabosDocs_MIS) >= 1)
 		{
@@ -875,8 +875,8 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 		
 		B_UseFakeScroll ();
 		
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_03"); //Я не хотел обидеть тебя, но я просто очень переживаю.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_04"); //Все хорошо. Наслаждайся своими записками.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_03"); //РЇ РЅРµ С…РѕС‚РµР» РѕР±РёРґРµС‚СЊ С‚РµР±СЏ, РЅРѕ СЏ РїСЂРѕСЃС‚Рѕ РѕС‡РµРЅСЊ РїРµСЂРµР¶РёРІР°СЋ.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_04"); //Р’СЃРµ С…РѕСЂРѕС€Рѕ. РќР°СЃР»Р°Р¶РґР°Р№СЃСЏ СЃРІРѕРёРјРё Р·Р°РїРёСЃРєР°РјРё.
 		
 		MIS_BabosDocs = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BabosDocs);
@@ -886,26 +886,26 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 	
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_00"); //Это мое дело.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_03_01"); //Эти записи принадлежат мне. Ты не имеешь права забирать их себе.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_02"); //Еще увидимся.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_00"); //Р­С‚Рѕ РјРѕРµ РґРµР»Рѕ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_03_01"); //Р­С‚Рё Р·Р°РїРёСЃРё РїСЂРёРЅР°РґР»РµР¶Р°С‚ РјРЅРµ. РўС‹ РЅРµ РёРјРµРµС€СЊ РїСЂР°РІР° Р·Р°Р±РёСЂР°С‚СЊ РёС… СЃРµР±Рµ.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_02"); //Р•С‰Рµ СѓРІРёРґРёРјСЃСЏ.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 	};
 	
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_00"); //Игарац и я теперь партнеры.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_01"); //(ошеломленно) Что? Ты не можешь поступить со мной так.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_02"); //А я думаю, что могу. Я придержу у себя эти бумаги, пусть все пока останется так, как есть.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_03"); //Я должен обговорить финансовую часть с Игарацем.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_04"); //А ты пока занимайся своими растениями.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_05"); //Ты свинья. Презренная жадная свинья. Иннос покарает тебя.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_00"); //РРіР°СЂР°С† Рё СЏ С‚РµРїРµСЂСЊ РїР°СЂС‚РЅРµСЂС‹.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_01"); //(РѕС€РµР»РѕРјР»РµРЅРЅРѕ) Р§С‚Рѕ? РўС‹ РЅРµ РјРѕР¶РµС€СЊ РїРѕСЃС‚СѓРїРёС‚СЊ СЃРѕ РјРЅРѕР№ С‚Р°Рє.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_02"); //Рђ СЏ РґСѓРјР°СЋ, С‡С‚Рѕ РјРѕРіСѓ. РЇ РїСЂРёРґРµСЂР¶Сѓ Сѓ СЃРµР±СЏ СЌС‚Рё Р±СѓРјР°РіРё, РїСѓСЃС‚СЊ РІСЃРµ РїРѕРєР° РѕСЃС‚Р°РЅРµС‚СЃСЏ С‚Р°Рє, РєР°Рє РµСЃС‚СЊ.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_03"); //РЇ РґРѕР»Р¶РµРЅ РѕР±РіРѕРІРѕСЂРёС‚СЊ С„РёРЅР°РЅСЃРѕРІСѓСЋ С‡Р°СЃС‚СЊ СЃ РРіР°СЂР°С†РµРј.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_04"); //Рђ С‚С‹ РїРѕРєР° Р·Р°РЅРёРјР°Р№СЃСЏ СЃРІРѕРёРјРё СЂР°СЃС‚РµРЅРёСЏРјРё.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_05"); //РўС‹ СЃРІРёРЅСЊСЏ. РџСЂРµР·СЂРµРЅРЅР°СЏ Р¶Р°РґРЅР°СЏ СЃРІРёРЅСЊСЏ. РРЅРЅРѕСЃ РїРѕРєР°СЂР°РµС‚ С‚РµР±СЏ.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,Dialog_Ende,DIA_Babo_Kap3_HaveYourDocs_End);
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Придержи язык.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm);
-		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Тебе что, нечем заняться?",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_NothingToDo);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"РџСЂРёРґРµСЂР¶Рё СЏР·С‹Рє.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm);
+		Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"РўРµР±Рµ С‡С‚Рѕ, РЅРµС‡РµРј Р·Р°РЅСЏС‚СЊСЃСЏ?",DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_NothingToDo);
 	};
 	
 		FUNC VOID DIA_Babo_Kap3_HaveYourDocs_End ()
@@ -915,44 +915,44 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 		
 		FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_15_00"); //Придержи язык.
-			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_03_01"); //Я буду вежлив как всегда.
+			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_15_00"); //РџСЂРёРґРµСЂР¶Рё СЏР·С‹Рє.
+			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_KeepCalm_03_01"); //РЇ Р±СѓРґСѓ РІРµР¶Р»РёРІ РєР°Рє РІСЃРµРіРґР°.
 			
 			AI_StopProcessInfos (self); 
 		};
 						
 		FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_NothingToDo ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_15_00"); //Тебе что, нечем заняться?
-			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_03_01"); //Я все понимаю, но, поверь мне, ты пожалеешь об этом.
+			AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_15_00"); //РўРµР±Рµ С‡С‚Рѕ, РЅРµС‡РµРј Р·Р°РЅСЏС‚СЊСЃСЏ?
+			AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_NothingToDo_03_01"); //РЇ РІСЃРµ РїРѕРЅРёРјР°СЋ, РЅРѕ, РїРѕРІРµСЂСЊ РјРЅРµ, С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 			
 			AI_StopProcessInfos (self); 
 		};
 
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_00"); //Теперь, учитывая все обстоятельства, цена выросла.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_01"); //Ту не лучше остальных. Чего ты хочешь?
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_02"); //А что у тебя есть?
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_03"); //Я могу дать тебе 121 золотую монету - это все, что у меня есть.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_00"); //РўРµРїРµСЂСЊ, СѓС‡РёС‚С‹РІР°СЏ РІСЃРµ РѕР±СЃС‚РѕСЏС‚РµР»СЊСЃС‚РІР°, С†РµРЅР° РІС‹СЂРѕСЃР»Р°.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_01"); //РўСѓ РЅРµ Р»СѓС‡С€Рµ РѕСЃС‚Р°Р»СЊРЅС‹С…. Р§РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_02"); //Рђ С‡С‚Рѕ Сѓ С‚РµР±СЏ РµСЃС‚СЊ?
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_03"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ 121 Р·РѕР»РѕС‚СѓСЋ РјРѕРЅРµС‚Сѓ - СЌС‚Рѕ РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ РµСЃС‚СЊ.
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Этого недостаточно.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough);
-	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Договорились.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough);
+	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough);
 };
 
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_15_00"); //Этого недостаточно.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01"); //Но у меня нет больше денег. Если бы я знал об этом раньше, ноги бы моей не было в монастыре.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_15_00"); //Р­С‚РѕРіРѕ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01"); //РќРѕ Сѓ РјРµРЅСЏ РЅРµС‚ Р±РѕР»СЊС€Рµ РґРµРЅРµРі. Р•СЃР»Рё Р±С‹ СЏ Р·РЅР°Р» РѕР± СЌС‚РѕРј СЂР°РЅСЊС€Рµ, РЅРѕРіРё Р±С‹ РјРѕРµР№ РЅРµ Р±С‹Р»Рѕ РІ РјРѕРЅР°СЃС‚С‹СЂРµ.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 	};
 	
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_15_00"); //Договорились.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_03_01"); //Вот деньги, и свиток.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_15_00"); //Р”РѕРіРѕРІРѕСЂРёР»РёСЃСЊ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_ThatsEnough_03_01"); //Р’РѕС‚ РґРµРЅСЊРіРё, Рё СЃРІРёС‚РѕРє.
 		
 		CreateInvItems (self ,ItSc_MediumHeal,1);
 		CreateInvItems (self ,ItMi_Gold,121);
@@ -967,7 +967,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_HereTheyAre()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_00"); //Вот, держи.
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_00"); //Р’РѕС‚, РґРµСЂР¶Рё.
 	
 	if (Npc_HasItems (other,ItWr_BabosDocs_MIS) >= 1)
 	{
@@ -980,11 +980,11 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_HereTheyAre()
 	};
 	
 	B_UseFakeScroll ();
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_01"); //Да, все на месте.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_02"); //Ты читал их?
-	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_03"); //Это имеет какое-то значение?
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_04"); //Нет, когда они у меня в руках.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_05"); //Теперь я надеюсь, что смогу опять спать спокойно.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_01"); //Р”Р°, РІСЃРµ РЅР° РјРµСЃС‚Рµ.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_02"); //РўС‹ С‡РёС‚Р°Р» РёС…?
+	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_03"); //Р­С‚Рѕ РёРјРµРµС‚ РєР°РєРѕРµ-С‚Рѕ Р·РЅР°С‡РµРЅРёРµ?
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_04"); //РќРµС‚, РєРѕРіРґР° РѕРЅРё Сѓ РјРµРЅСЏ РІ СЂСѓРєР°С….
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_05"); //РўРµРїРµСЂСЊ СЏ РЅР°РґРµСЋСЃСЊ, С‡С‚Рѕ СЃРјРѕРіСѓ РѕРїСЏС‚СЊ СЃРїР°С‚СЊ СЃРїРѕРєРѕР№РЅРѕ.
 	
 	CreateInvItems (self ,ItSc_MediumHeal,1);
 	B_GiveInvItems (self,other,ItSc_MediumHeal,1);
@@ -1006,7 +1006,7 @@ INSTANCE DIA_Babo_Kap3_Perm   (C_INFO)
 	condition   = DIA_Babo_Kap3_Perm_Condition;
 	information = DIA_Babo_Kap3_Perm_Info;
 	permanent   = TRUE;
-	description = "Ты доволен своей работой?";
+	description = "РўС‹ РґРѕРІРѕР»РµРЅ СЃРІРѕРµР№ СЂР°Р±РѕС‚РѕР№?";
 };
 FUNC INT DIA_Babo_Kap3_Perm_Condition()
 {
@@ -1017,18 +1017,18 @@ FUNC INT DIA_Babo_Kap3_Perm_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_00"); //Ты доволен своей работой?
+	AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_00"); //РўС‹ РґРѕРІРѕР»РµРЅ СЃРІРѕРµР№ СЂР°Р±РѕС‚РѕР№?
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_01"); //(неубедительно) Да, конечно. Моя вера в мудрость и силу Инноса придает мне силы.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_02"); //(уклончиво) Я не хочу показаться невежливым, но у меня много дел сегодня.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_03"); //Можешь продолжать.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_04"); //(облегченно) Спасибо.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_01"); //(РЅРµСѓР±РµРґРёС‚РµР»СЊРЅРѕ) Р”Р°, РєРѕРЅРµС‡РЅРѕ. РњРѕСЏ РІРµСЂР° РІ РјСѓРґСЂРѕСЃС‚СЊ Рё СЃРёР»Сѓ РРЅРЅРѕСЃР° РїСЂРёРґР°РµС‚ РјРЅРµ СЃРёР»С‹.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_02"); //(СѓРєР»РѕРЅС‡РёРІРѕ) РЇ РЅРµ С…РѕС‡Сѓ РїРѕРєР°Р·Р°С‚СЊСЃСЏ РЅРµРІРµР¶Р»РёРІС‹Рј, РЅРѕ Сѓ РјРµРЅСЏ РјРЅРѕРіРѕ РґРµР» СЃРµРіРѕРґРЅСЏ.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_03"); //РњРѕР¶РµС€СЊ РїСЂРѕРґРѕР»Р¶Р°С‚СЊ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_04"); //(РѕР±Р»РµРіС‡РµРЅРЅРѕ) РЎРїР°СЃРёР±Рѕ.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_05"); //Все хорошо, но мне нужно возвращаться к работе, иначе мне ни за что не закончить ее сегодня.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_06"); //Я не хочу опять трудиться до полуночи, чтобы выполнить свою работу и не быть наказанным.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_05"); //Р’СЃРµ С…РѕСЂРѕС€Рѕ, РЅРѕ РјРЅРµ РЅСѓР¶РЅРѕ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ Рє СЂР°Р±РѕС‚Рµ, РёРЅР°С‡Рµ РјРЅРµ РЅРё Р·Р° С‡С‚Рѕ РЅРµ Р·Р°РєРѕРЅС‡РёС‚СЊ РµРµ СЃРµРіРѕРґРЅСЏ.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_06"); //РЇ РЅРµ С…РѕС‡Сѓ РѕРїСЏС‚СЊ С‚СЂСѓРґРёС‚СЊСЃСЏ РґРѕ РїРѕР»СѓРЅРѕС‡Рё, С‡С‚РѕР±С‹ РІС‹РїРѕР»РЅРёС‚СЊ СЃРІРѕСЋ СЂР°Р±РѕС‚Сѓ Рё РЅРµ Р±С‹С‚СЊ РЅР°РєР°Р·Р°РЅРЅС‹Рј.
 	};
 	
 	AI_StopProcessInfos (self); 

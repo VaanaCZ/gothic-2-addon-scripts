@@ -30,7 +30,7 @@ instance DIA_Mil_309_Stadtwache_Hallo		(C_INFO)
 	condition	 = 	DIA_Mil_309_Stadtwache_Hallo_Condition;
 	information	 = 	DIA_Mil_309_Stadtwache_Hallo_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Что новенького?";
+	description	 = 	"Р§С‚Рѕ РЅРѕРІРµРЅСЊРєРѕРіРѕ?";
 };
 func int DIA_Mil_309_Stadtwache_Hallo_Condition ()
 {
@@ -38,40 +38,40 @@ func int DIA_Mil_309_Stadtwache_Hallo_Condition ()
 };
 func void DIA_Mil_309_Stadtwache_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Mil_309_Stadtwache_Hallo_15_00"); //В чем дело?
+	AI_Output (other, self, "DIA_Mil_309_Stadtwache_Hallo_15_00"); //Р’ С‡РµРј РґРµР»Рѕ?
 	if (hero.guild == GIL_MIL)
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_01"); //Все в порядке. Но мы должны быть настороже.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_01"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ. РќРѕ РјС‹ РґРѕР»Р¶РЅС‹ Р±С‹С‚СЊ РЅР°СЃС‚РѕСЂРѕР¶Рµ.
 	}
 	else if (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&& (MIl_309_News < 1)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //Послушай. Мы не можем пропустить тебя в город.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Но я дам тебе совет, и совершенно бесплатно.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Держись подальше от этого леса впереди - там бродят полчища ужасных монстров.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //РџРѕСЃР»СѓС€Р°Р№. РњС‹ РЅРµ РјРѕР¶РµРј РїСЂРѕРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ РІ РіРѕСЂРѕРґ.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //РќРѕ СЏ РґР°Рј С‚РµР±Рµ СЃРѕРІРµС‚, Рё СЃРѕРІРµСЂС€РµРЅРЅРѕ Р±РµСЃРїР»Р°С‚РЅРѕ.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Р”РµСЂР¶РёСЃСЊ РїРѕРґР°Р»СЊС€Рµ РѕС‚ СЌС‚РѕРіРѕ Р»РµСЃР° РІРїРµСЂРµРґРё - С‚Р°Рј Р±СЂРѕРґСЏС‚ РїРѕР»С‡РёС‰Р° СѓР¶Р°СЃРЅС‹С… РјРѕРЅСЃС‚СЂРѕРІ.
 		
 		MIl_309_News = 1;
 	}
 	else if  (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&&		 (MIl_309_News == 1)
 	{	
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Возвращайся туда, откуда выполз, подонок!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ С‚СѓРґР°, РѕС‚РєСѓРґР° РІС‹РїРѕР»Р·, РїРѕРґРѕРЅРѕРє!
 	};
 	
 	if  (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&&  (MIl_309_News < 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Послушай, ты имеешь право находиться в городе. Но это не означает, что ты можешь делать здесь все, что тебе заблагорассудится.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Если ты не придерживаешься общепринятых правил, ты потеряешь свои права здесь!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //РџРѕСЃР»СѓС€Р°Р№, С‚С‹ РёРјРµРµС€СЊ РїСЂР°РІРѕ РЅР°С…РѕРґРёС‚СЊСЃСЏ РІ РіРѕСЂРѕРґРµ. РќРѕ СЌС‚Рѕ РЅРµ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РґРµР»Р°С‚СЊ Р·РґРµСЃСЊ РІСЃРµ, С‡С‚Рѕ С‚РµР±Рµ Р·Р°Р±Р»Р°РіРѕСЂР°СЃСЃСѓРґРёС‚СЃСЏ.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Р•СЃР»Рё С‚С‹ РЅРµ РїСЂРёРґРµСЂР¶РёРІР°РµС€СЊСЃСЏ РѕР±С‰РµРїСЂРёРЅСЏС‚С‹С… РїСЂР°РІРёР», С‚С‹ РїРѕС‚РµСЂСЏРµС€СЊ СЃРІРѕРё РїСЂР°РІР° Р·РґРµСЃСЊ!
 		
 		MIl_309_News = 2;
 	}
 	else if (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&& 		(MIl_309_News == 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_08"); //Давай - проходи!
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_08"); //Р”Р°РІР°Р№ - РїСЂРѕС…РѕРґРё!
 	};
 	
 	

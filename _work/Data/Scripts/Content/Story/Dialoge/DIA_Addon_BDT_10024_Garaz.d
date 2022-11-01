@@ -71,9 +71,9 @@ FUNC INT DIA_Addon_Garaz_Probleme_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Probleme_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//Подожди минутку.
-	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//Есть какие-то проблемы?
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//Краулеры. Множество краулеров. Мы напоролись на гнездо.
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ.
+	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//Р•СЃС‚СЊ РєР°РєРёРµ-С‚Рѕ РїСЂРѕР±Р»РµРјС‹?
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//РљСЂР°СѓР»РµСЂС‹. РњРЅРѕР¶РµСЃС‚РІРѕ РєСЂР°СѓР»РµСЂРѕРІ. РњС‹ РЅР°РїРѕСЂРѕР»РёСЃСЊ РЅР° РіРЅРµР·РґРѕ.
 };
 //---------------------------------------------------------------------
 //	Info Hi
@@ -85,7 +85,7 @@ INSTANCE DIA_Addon_Garaz_Hi   (C_INFO)
 	condition   = DIA_Addon_Garaz_Hi_Condition;
 	information = DIA_Addon_Garaz_Hi_Info;
 	permanent   = FALSE;
-	description = "Почему мы не можем на них напасть?";
+	description = "РџРѕС‡РµРјСѓ РјС‹ РЅРµ РјРѕР¶РµРј РЅР° РЅРёС… РЅР°РїР°СЃС‚СЊ?";
 };
 FUNC INT DIA_Addon_Garaz_Hi_Condition()
 {	
@@ -97,13 +97,13 @@ FUNC INT DIA_Addon_Garaz_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//Почему мы не можем на них напасть?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//Я тоже спрашивал об этом. Но у охранников есть 'более важные дела'.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Бладвин поручил мне разобраться с этой проблемой.
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Я полагаю, ты не собираешься с ними драться.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//А зачем? Чтобы мы смогли добраться до золота в пещере?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Бладвин все равно заберет большую часть себе. И я не хочу рисковать собственной головой за свою ничтожную долю.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Если ТЫ хочешь сразиться с краулерами - даже не думай, что я тебя остановлю. Только не надо выманивать их сюда, ладно?
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//РџРѕС‡РµРјСѓ РјС‹ РЅРµ РјРѕР¶РµРј РЅР° РЅРёС… РЅР°РїР°СЃС‚СЊ?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//РЇ С‚РѕР¶Рµ СЃРїСЂР°С€РёРІР°Р» РѕР± СЌС‚РѕРј. РќРѕ Сѓ РѕС…СЂР°РЅРЅРёРєРѕРІ РµСЃС‚СЊ 'Р±РѕР»РµРµ РІР°Р¶РЅС‹Рµ РґРµР»Р°'.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Р‘Р»Р°РґРІРёРЅ РїРѕСЂСѓС‡РёР» РјРЅРµ СЂР°Р·РѕР±СЂР°С‚СЊСЃСЏ СЃ СЌС‚РѕР№ РїСЂРѕР±Р»РµРјРѕР№.
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//РЇ РїРѕР»Р°РіР°СЋ, С‚С‹ РЅРµ СЃРѕР±РёСЂР°РµС€СЊСЃСЏ СЃ РЅРёРјРё РґСЂР°С‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//Рђ Р·Р°С‡РµРј? Р§С‚РѕР±С‹ РјС‹ СЃРјРѕРіР»Рё РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ Р·РѕР»РѕС‚Р° РІ РїРµС‰РµСЂРµ?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Р‘Р»Р°РґРІРёРЅ РІСЃРµ СЂР°РІРЅРѕ Р·Р°Р±РµСЂРµС‚ Р±РѕР»СЊС€СѓСЋ С‡Р°СЃС‚СЊ СЃРµР±Рµ. Р СЏ РЅРµ С…РѕС‡Сѓ СЂРёСЃРєРѕРІР°С‚СЊ СЃРѕР±СЃС‚РІРµРЅРЅРѕР№ РіРѕР»РѕРІРѕР№ Р·Р° СЃРІРѕСЋ РЅРёС‡С‚РѕР¶РЅСѓСЋ РґРѕР»СЋ.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Р•СЃР»Рё РўР« С…РѕС‡РµС€СЊ СЃСЂР°Р·РёС‚СЊСЃСЏ СЃ РєСЂР°СѓР»РµСЂР°РјРё - РґР°Р¶Рµ РЅРµ РґСѓРјР°Р№, С‡С‚Рѕ СЏ С‚РµР±СЏ РѕСЃС‚Р°РЅРѕРІР»СЋ. РўРѕР»СЊРєРѕ РЅРµ РЅР°РґРѕ РІС‹РјР°РЅРёРІР°С‚СЊ РёС… СЃСЋРґР°, Р»Р°РґРЅРѕ?
 	
 };
 //---------------------------------------------------------------------
@@ -116,7 +116,7 @@ INSTANCE DIA_Addon_Garaz_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_Garaz_Bloodwyn_Condition;
 	information = DIA_Addon_Garaz_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Ты мне можешь рассказать что-нибудь про Бладвина?";
+	description = "РўС‹ РјРЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕ Р‘Р»Р°РґРІРёРЅР°?";
 };
 FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 {	
@@ -129,15 +129,15 @@ FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Bloodwyn_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Ты мне можешь рассказать что-нибудь про Бладвина?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Могу. Он - жадный до золота ублюдок. Он проверяет каждую жилу и каждый самородок.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//Он не может отвлечься от своей жажды золота. А нас он ни во что не ставит.
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//Что еще?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Он думает, что он - лучший и терпеть не может, если у кого-то больше денег, чем у него. Пожалуйста - я не встану у него на пути.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Просто не стой у него на пути и не провоцируй его, если не хочешь, чтобы он впал в ярость и перестал себя контролировать...
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//РўС‹ РјРЅРµ РјРѕР¶РµС€СЊ СЂР°СЃСЃРєР°Р·Р°С‚СЊ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РїСЂРѕ Р‘Р»Р°РґРІРёРЅР°?
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//РњРѕРіСѓ. РћРЅ - Р¶Р°РґРЅС‹Р№ РґРѕ Р·РѕР»РѕС‚Р° СѓР±Р»СЋРґРѕРє. РћРЅ РїСЂРѕРІРµСЂСЏРµС‚ РєР°Р¶РґСѓСЋ Р¶РёР»Сѓ Рё РєР°Р¶РґС‹Р№ СЃР°РјРѕСЂРѕРґРѕРє.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//РћРЅ РЅРµ РјРѕР¶РµС‚ РѕС‚РІР»РµС‡СЊСЃСЏ РѕС‚ СЃРІРѕРµР№ Р¶Р°Р¶РґС‹ Р·РѕР»РѕС‚Р°. Рђ РЅР°СЃ РѕРЅ РЅРё РІРѕ С‡С‚Рѕ РЅРµ СЃС‚Р°РІРёС‚.
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//Р§С‚Рѕ РµС‰Рµ?
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//РћРЅ РґСѓРјР°РµС‚, С‡С‚Рѕ РѕРЅ - Р»СѓС‡С€РёР№ Рё С‚РµСЂРїРµС‚СЊ РЅРµ РјРѕР¶РµС‚, РµСЃР»Рё Сѓ РєРѕРіРѕ-С‚Рѕ Р±РѕР»СЊС€Рµ РґРµРЅРµРі, С‡РµРј Сѓ РЅРµРіРѕ. РџРѕР¶Р°Р»СѓР№СЃС‚Р° - СЏ РЅРµ РІСЃС‚Р°РЅСѓ Сѓ РЅРµРіРѕ РЅР° РїСѓС‚Рё.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//РџСЂРѕСЃС‚Рѕ РЅРµ СЃС‚РѕР№ Сѓ РЅРµРіРѕ РЅР° РїСѓС‚Рё Рё РЅРµ РїСЂРѕРІРѕС†РёСЂСѓР№ РµРіРѕ, РµСЃР»Рё РЅРµ С…РѕС‡РµС€СЊ, С‡С‚РѕР±С‹ РѕРЅ РІРїР°Р» РІ СЏСЂРѕСЃС‚СЊ Рё РїРµСЂРµСЃС‚Р°Р» СЃРµР±СЏ РєРѕРЅС‚СЂРѕР»РёСЂРѕРІР°С‚СЊ...
 	
-	B_LogEntry (Topic_Addon_Tempel,"Если Бладвин узнает, что в шахте была открыта новая золотая жила, он наверняка покинет храм.");
-	B_LogEntry (Topic_Addon_Tempel,"Когда Бладвин рассержен, он теряет над собой контроль. Это может мне помочь."); 
+	B_LogEntry (Topic_Addon_Tempel,"Р•СЃР»Рё Р‘Р»Р°РґРІРёРЅ СѓР·РЅР°РµС‚, С‡С‚Рѕ РІ С€Р°С…С‚Рµ Р±С‹Р»Р° РѕС‚РєСЂС‹С‚Р° РЅРѕРІР°СЏ Р·РѕР»РѕС‚Р°СЏ Р¶РёР»Р°, РѕРЅ РЅР°РІРµСЂРЅСЏРєР° РїРѕРєРёРЅРµС‚ С…СЂР°Рј.");
+	B_LogEntry (Topic_Addon_Tempel,"РљРѕРіРґР° Р‘Р»Р°РґРІРёРЅ СЂР°СЃСЃРµСЂР¶РµРЅ, РѕРЅ С‚РµСЂСЏРµС‚ РЅР°Рґ СЃРѕР±РѕР№ РєРѕРЅС‚СЂРѕР»СЊ. Р­С‚Рѕ РјРѕР¶РµС‚ РјРЅРµ РїРѕРјРѕС‡СЊ."); 
 };
 //---------------------------------------------------------------------
 //	Info Sieg
@@ -149,7 +149,7 @@ INSTANCE DIA_Addon_Garaz_Sieg   (C_INFO)
 	condition   = DIA_Addon_Garaz_Sieg_Condition;
 	information = DIA_Addon_Garaz_Sieg_Info;
 	permanent   = FALSE;
-	description	= "Краулеров больше нет.";
+	description	= "РљСЂР°СѓР»РµСЂРѕРІ Р±РѕР»СЊС€Рµ РЅРµС‚.";
 };
 FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 {	
@@ -161,9 +161,9 @@ FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Sieg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//Ну, готово. С краулерами покончено.
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Бладвин уже идет сюда. Ты ведь этого хотел?
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//Я хочу сказать, что ты перебил краулеров, чтобы Бладвин пришел сюда, да? Тогда, что бы ты ни планировал, делай это СЕЙЧАС.
+	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//РќСѓ, РіРѕС‚РѕРІРѕ. РЎ РєСЂР°СѓР»РµСЂР°РјРё РїРѕРєРѕРЅС‡РµРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Р‘Р»Р°РґРІРёРЅ СѓР¶Рµ РёРґРµС‚ СЃСЋРґР°. РўС‹ РІРµРґСЊ СЌС‚РѕРіРѕ С…РѕС‚РµР»?
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ С‚С‹ РїРµСЂРµР±РёР» РєСЂР°СѓР»РµСЂРѕРІ, С‡С‚РѕР±С‹ Р‘Р»Р°РґРІРёРЅ РїСЂРёС€РµР» СЃСЋРґР°, РґР°? РўРѕРіРґР°, С‡С‚Рѕ Р±С‹ С‚С‹ РЅРё РїР»Р°РЅРёСЂРѕРІР°Р», РґРµР»Р°Р№ СЌС‚Рѕ РЎР•Р™Р§РђРЎ.
 	
 	B_StartOtherRoutine (Bloodwyn,"GOLD");	
 	
@@ -190,8 +190,8 @@ FUNC INT DIA_Addon_Garaz_Blood_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Blood_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//Ты показал этому лодырю! Отличная работа.
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Я пойду осмотрю пещеру.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//РўС‹ РїРѕРєР°Р·Р°Р» СЌС‚РѕРјСѓ Р»РѕРґС‹СЂСЋ! РћС‚Р»РёС‡РЅР°СЏ СЂР°Р±РѕС‚Р°.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//РЇ РїРѕР№РґСѓ РѕСЃРјРѕС‚СЂСЋ РїРµС‰РµСЂСѓ.
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos  (self);
@@ -220,9 +220,9 @@ FUNC INT DIA_Addon_Garaz_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Gold_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//Ух ты, приятель, здесь явно много золота.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Чтобы добраться до этих самородков, нам понадобится лестница.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Но после падения Барьера никто не пользуется лестницами... очень жаль...
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//РЈС… С‚С‹, РїСЂРёСЏС‚РµР»СЊ, Р·РґРµСЃСЊ СЏРІРЅРѕ РјРЅРѕРіРѕ Р·РѕР»РѕС‚Р°.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Р§С‚РѕР±С‹ РґРѕР±СЂР°С‚СЊСЃСЏ РґРѕ СЌС‚РёС… СЃР°РјРѕСЂРѕРґРєРѕРІ, РЅР°Рј РїРѕРЅР°РґРѕР±РёС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//РќРѕ РїРѕСЃР»Рµ РїР°РґРµРЅРёСЏ Р‘Р°СЂСЊРµСЂР° РЅРёРєС‚Рѕ РЅРµ РїРѕР»СЊР·СѓРµС‚СЃСЏ Р»РµСЃС‚РЅРёС†Р°РјРё... РѕС‡РµРЅСЊ Р¶Р°Р»СЊ...
 };
 
 

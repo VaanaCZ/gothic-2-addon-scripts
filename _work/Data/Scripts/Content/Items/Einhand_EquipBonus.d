@@ -1,8 +1,8 @@
 /*
-	Equip Funktionen für Einhand Waffen 
+	Equip Funktionen fÑŒr Einhand Waffen 
 	Talent Bonus 
 */
-//const für Talentboni stehen in Tuning Melee Weaposn
+//const fÑŒr Talentboni stehen in Tuning Melee Weaposn
 
 //----------------------------1----------------------------------
 FUNC VOID Equip_1H_01()

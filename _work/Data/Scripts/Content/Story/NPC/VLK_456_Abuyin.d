@@ -2,7 +2,7 @@
 instance VLK_456_Abuyin (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "¿·ÛËÌ"; 
+	name 		= "–ê–±—É–∏–Ω"; 
 	guild 		= GIL_VLK;
 	id 			= 456;
 	voice 		= 13;

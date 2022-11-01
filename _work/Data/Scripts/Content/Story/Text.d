@@ -2,149 +2,149 @@
 // Mobsi-Fokusnamen
 // *****************************************************************************************
 
-CONST STRING MOBNAME_CRATE			= "Ящик";					//Kisten
-CONST STRING MOBNAME_CHEST			= "Сундук";					//Truhen
-CONST STRING MOBNAME_BED			= "Кровать";					//Betten
-CONST STRING MOBNAME_DOOR			= "Дверь";					//Tьren
+CONST STRING MOBNAME_CRATE			= "РЇС‰РёРє";					//Kisten
+CONST STRING MOBNAME_CHEST			= "РЎСѓРЅРґСѓРє";					//Truhen
+CONST STRING MOBNAME_BED			= "РљСЂРѕРІР°С‚СЊ";					//Betten
+CONST STRING MOBNAME_DOOR			= "Р”РІРµСЂСЊ";					//TСЊren
 CONST STRING MOBNAME_CAMPFIRE		= "";						//Lagerfeuer
 CONST STRING MOBNAME_TORCH			= "";						//Fackel
 CONST STRING MOBNAME_TORCHHOLDER	= "";						//Fackelhalter
 CONST STRING MOBNAME_BARBQ_SCAV		= "";						//Scavebger	am Spiess
 CONST STRING MOBNAME_BARBQ_SHEEP	= "";						//Schafe am	Spiess
 CONST STRING MOBNAME_BENCH			= "";						//Bank
-CONST STRING MOBNAME_ANVIL			= "Наковальня";					//Amboss
-CONST STRING MOBNAME_BUCKET			= "Ведро для воды";			//Wassereimer
-CONST STRING MOBNAME_FORGE			= "Кузнечный горн";			//Schmiede
-CONST STRING MOBNAME_GRINDSTONE		= "Точильный камень";			//Schleifstein
-CONST STRING MOBNAME_WHEEL			= "Ворот";					//Winde
-CONST STRING MOBNAME_LAB			= "Стол алхимика";			//Alchemietisch
-CONST STRING MOBNAME_BOOKSTAND		= "Книжный стенд";			//Buchstдnder
-CONST STRING MOBNAME_BOOKSBOARD		= "Книжный стенд";			//Kommode mit Buch
-CONST STRING MOBNAME_CHAIR			= "";						//Stьhle
-CONST STRING MOBNAME_CAULDRON		= "Котел";					//Kochkessel
+CONST STRING MOBNAME_ANVIL			= "РќР°РєРѕРІР°Р»СЊРЅСЏ";					//Amboss
+CONST STRING MOBNAME_BUCKET			= "Р’РµРґСЂРѕ РґР»СЏ РІРѕРґС‹";			//Wassereimer
+CONST STRING MOBNAME_FORGE			= "РљСѓР·РЅРµС‡РЅС‹Р№ РіРѕСЂРЅ";			//Schmiede
+CONST STRING MOBNAME_GRINDSTONE		= "РўРѕС‡РёР»СЊРЅС‹Р№ РєР°РјРµРЅСЊ";			//Schleifstein
+CONST STRING MOBNAME_WHEEL			= "Р’РѕСЂРѕС‚";					//Winde
+CONST STRING MOBNAME_LAB			= "РЎС‚РѕР» Р°Р»С…РёРјРёРєР°";			//Alchemietisch
+CONST STRING MOBNAME_BOOKSTAND		= "РљРЅРёР¶РЅС‹Р№ СЃС‚РµРЅРґ";			//BuchstРґnder
+CONST STRING MOBNAME_BOOKSBOARD		= "РљРЅРёР¶РЅС‹Р№ СЃС‚РµРЅРґ";			//Kommode mit Buch
+CONST STRING MOBNAME_CHAIR			= "";						//StСЊhle
+CONST STRING MOBNAME_CAULDRON		= "РљРѕС‚РµР»";					//Kochkessel
 CONST STRING MOBNAME_SEAT			= "";						//Sessel
 CONST STRING MOBNAME_THRONE			= "";						//Thron
-CONST STRING MOBNAME_PAN			= "Сковорода";					//Lagerfeuer mit Pfanne
+CONST STRING MOBNAME_PAN			= "РЎРєРѕРІРѕСЂРѕРґР°";					//Lagerfeuer mit Pfanne
 CONST STRING MOBNAME_REPAIR			= "";						//Repair Mobsi
-CONST STRING MOBNAME_WATERPIPE		= "Кальян";			//Blubber
-CONST STRING MOBNAME_SWITCH			= "Выключатель";				//alle Schalter
-CONST STRING MOBNAME_ORE			= "Кусок руды";				//Erzmobsi
+CONST STRING MOBNAME_WATERPIPE		= "РљР°Р»СЊСЏРЅ";			//Blubber
+CONST STRING MOBNAME_SWITCH			= "Р’С‹РєР»СЋС‡Р°С‚РµР»СЊ";				//alle Schalter
+CONST STRING MOBNAME_ORE			= "РљСѓСЃРѕРє СЂСѓРґС‹";				//Erzmobsi
 CONST STRING MOBNAME_WINEMAKER		= "";						//Weinstampfe
 CONST STRING MOBNAME_ORCDRUM		= "";						//Orkische Kriegstrommel
-CONST STRING MOBNAME_STOVE			= "Плита";					//HerdMobsi
-CONST STRING MOBNAME_INNOS			= "Статуя Инноса";			//Innos	Staue
-CONST STRING MOBNAME_RUNEMAKER		= "Рунный стол";				//Runentisch
-CONST STRING MOBNAME_SAW			= "Пила";				//Sдgemobsi
-CONST STRING MOBNAME_ARMCHAIR		= "Кресло";
-CONST STRING MOBNAME_LIBRARYLEVER	= "Лампа";
+CONST STRING MOBNAME_STOVE			= "РџР»РёС‚Р°";					//HerdMobsi
+CONST STRING MOBNAME_INNOS			= "РЎС‚Р°С‚СѓСЏ РРЅРЅРѕСЃР°";			//Innos	Staue
+CONST STRING MOBNAME_RUNEMAKER		= "Р СѓРЅРЅС‹Р№ СЃС‚РѕР»";				//Runentisch
+CONST STRING MOBNAME_SAW			= "РџРёР»Р°";				//SРґgemobsi
+CONST STRING MOBNAME_ARMCHAIR		= "РљСЂРµСЃР»Рѕ";
+CONST STRING MOBNAME_LIBRARYLEVER	= "Р›Р°РјРїР°";
 CONST STRING MOBNAME_SECRETSWITCH	= "";
-CONST STRING MOBNAME_BIBLIOTHEK		= "Библиотека";
-CONST STRING MOBNAME_VORRATSKAMMER	= "Кладовка";
-CONST STRING MOBNAME_SCHATZKAMMER	= "Сокровищница";
-CONST STRING MOBNAME_IGARAZ			= "Сундук Игараца";
-const string MOBNAME_ALMANACH		= "Альманах";
+CONST STRING MOBNAME_BIBLIOTHEK		= "Р‘РёР±Р»РёРѕС‚РµРєР°";
+CONST STRING MOBNAME_VORRATSKAMMER	= "РљР»Р°РґРѕРІРєР°";
+CONST STRING MOBNAME_SCHATZKAMMER	= "РЎРѕРєСЂРѕРІРёС‰РЅРёС†Р°";
+CONST STRING MOBNAME_IGARAZ			= "РЎСѓРЅРґСѓРє РРіР°СЂР°С†Р°";
+const string MOBNAME_ALMANACH		= "РђР»СЊРјР°РЅР°С…";
 //Wegweiser
-CONST STRING MOBNAME_CITY			= "Хоринис";
-CONST STRING MOBNAME_TAVERN			= "Таверна";
-CONST STRING MOBNAME_GR_PEASANT		= "Лендлорд";
-CONST STRING MOBNAME_MONASTERY		= "К монастырю";
-CONST STRING MOBNAME_PASSOW			= "Проход";
-CONST STRING MOBNAME_CITY2			= "Таверна";//
-CONST STRING MOBNAME_LIGHTHOUSE		= "Маяк";
-CONST STRING MOBNAME_MONASTERY2		= "Таверна";//
-CONST STRING MOBNAME_PRISON			= "Колония";
-CONST STRING MOBNAME_GR_PEASANT2	= "Таверна";//
-CONST STRING MOBNAME_INCITY01		= "Порт";
-CONST STRING MOBNAME_INCITY02		= "Рыночная площадь";
-CONST STRING MOBNAME_INCITY03		= "Верхний квартал";
-CONST STRING MOBNAME_INCITY04		= "Торговый район";
-CONST STRING MOBNAME_INCITY05		= "Храмовая площадь";
+CONST STRING MOBNAME_CITY			= "РҐРѕСЂРёРЅРёСЃ";
+CONST STRING MOBNAME_TAVERN			= "РўР°РІРµСЂРЅР°";
+CONST STRING MOBNAME_GR_PEASANT		= "Р›РµРЅРґР»РѕСЂРґ";
+CONST STRING MOBNAME_MONASTERY		= "Рљ РјРѕРЅР°СЃС‚С‹СЂСЋ";
+CONST STRING MOBNAME_PASSOW			= "РџСЂРѕС…РѕРґ";
+CONST STRING MOBNAME_CITY2			= "РўР°РІРµСЂРЅР°";//
+CONST STRING MOBNAME_LIGHTHOUSE		= "РњР°СЏРє";
+CONST STRING MOBNAME_MONASTERY2		= "РўР°РІРµСЂРЅР°";//
+CONST STRING MOBNAME_PRISON			= "РљРѕР»РѕРЅРёСЏ";
+CONST STRING MOBNAME_GR_PEASANT2	= "РўР°РІРµСЂРЅР°";//
+CONST STRING MOBNAME_INCITY01		= "РџРѕСЂС‚";
+CONST STRING MOBNAME_INCITY02		= "Р С‹РЅРѕС‡РЅР°СЏ РїР»РѕС‰Р°РґСЊ";
+CONST STRING MOBNAME_INCITY03		= "Р’РµСЂС…РЅРёР№ РєРІР°СЂС‚Р°Р»";
+CONST STRING MOBNAME_INCITY04		= "РўРѕСЂРіРѕРІС‹Р№ СЂР°Р№РѕРЅ";
+CONST STRING MOBNAME_INCITY05		= "РҐСЂР°РјРѕРІР°СЏ РїР»РѕС‰Р°РґСЊ";
 
 
 //Ladenschilder
-CONST STRING MOBNAME_BOW_01			= "Смертоносная стрела";
-CONST STRING MOBNAME_MIX_01			= "Магазин Маттео";
-CONST STRING MOBNAME_MIX_02			= "Скользкий скат";
-CONST STRING MOBNAME_SMITH_01		= "Горячая наковальня";
-CONST STRING MOBNAME_BAR_01			= "Таверна 'Деревянная нога'";
-CONST STRING MOBNAME_BAR_02			= "Таверна 'Жирный теленок'";
-CONST STRING MOBNAME_Hotel_01		= "Трактир 'Спящий толстосум'";
-CONST STRING MOBNAME_Hotel_02		= "Красная лампа";
-CONST STRING MOBNAME_TAVERN_01		= "Мертвая Гарпия";
-CONST STRING MOBNAME_SALANDRIL		= "Зелья Саландрила";
+CONST STRING MOBNAME_BOW_01			= "РЎРјРµСЂС‚РѕРЅРѕСЃРЅР°СЏ СЃС‚СЂРµР»Р°";
+CONST STRING MOBNAME_MIX_01			= "РњР°РіР°Р·РёРЅ РњР°С‚С‚РµРѕ";
+CONST STRING MOBNAME_MIX_02			= "РЎРєРѕР»СЊР·РєРёР№ СЃРєР°С‚";
+CONST STRING MOBNAME_SMITH_01		= "Р“РѕСЂСЏС‡Р°СЏ РЅР°РєРѕРІР°Р»СЊРЅСЏ";
+CONST STRING MOBNAME_BAR_01			= "РўР°РІРµСЂРЅР° 'Р”РµСЂРµРІСЏРЅРЅР°СЏ РЅРѕРіР°'";
+CONST STRING MOBNAME_BAR_02			= "РўР°РІРµСЂРЅР° 'Р–РёСЂРЅС‹Р№ С‚РµР»РµРЅРѕРє'";
+CONST STRING MOBNAME_Hotel_01		= "РўСЂР°РєС‚РёСЂ 'РЎРїСЏС‰РёР№ С‚РѕР»СЃС‚РѕСЃСѓРј'";
+CONST STRING MOBNAME_Hotel_02		= "РљСЂР°СЃРЅР°СЏ Р»Р°РјРїР°";
+CONST STRING MOBNAME_TAVERN_01		= "РњРµСЂС‚РІР°СЏ Р“Р°СЂРїРёСЏ";
+CONST STRING MOBNAME_SALANDRIL		= "Р—РµР»СЊСЏ РЎР°Р»Р°РЅРґСЂРёР»Р°";
 
 
 //Grabsteine TEAM
-CONST STRING MOBNAME_GRAVETEAM_01	 = "Сноэльк - 'Смотри-ка, выключатель'";
-CONST STRING MOBNAME_GRAVETEAM_02	 = "Оэльк - 'НЕЕЕЕЕТ'";
-CONST STRING MOBNAME_GRAVETEAM_03	 = "Ходжес - 'Все будет хорошо'";
-CONST STRING MOBNAME_GRAVETEAM_04	 = "Хош - 'Что за черт'";
-CONST STRING MOBNAME_GRAVETEAM_05	 = "Чейз - 'Зачем все это?'";
-CONST STRING MOBNAME_GRAVETEAM_06	 = "Бьорн - 'Мы выступаем!'";
-CONST STRING MOBNAME_GRAVETEAM_07	 = "Михаэль - 'Вот немного посплю...'";
-CONST STRING MOBNAME_GRAVETEAM_08	 = "Кайро - 'Секундочку!'";
-CONST STRING MOBNAME_GRAVETEAM_09	 = "Дядюшка Кранкл - 'Наконец, он нашел человека-скорпиона'";
-CONST STRING MOBNAME_GRAVETEAM_10	 = "НикоДЕ - 'Привет, мир!'";
-CONST STRING MOBNAME_GRAVETEAM_11	 = "Саша - 'Игрок не знает, зачем он идет туда...'";
-CONST STRING MOBNAME_GRAVETEAM_12	 = "Андрэ - 'Эти паруса обвисают быстро или медленно?'";
-CONST STRING MOBNAME_GRAVETEAM_13	 = "Михай - 'Да, я покажу тебе кое-что...'";
-CONST STRING MOBNAME_GRAVETEAM_14	 = "Уве - 'Какой у тебя уровень?'";
+CONST STRING MOBNAME_GRAVETEAM_01	 = "РЎРЅРѕСЌР»СЊРє - 'РЎРјРѕС‚СЂРё-РєР°, РІС‹РєР»СЋС‡Р°С‚РµР»СЊ'";
+CONST STRING MOBNAME_GRAVETEAM_02	 = "РћСЌР»СЊРє - 'РќР•Р•Р•Р•Р•Рў'";
+CONST STRING MOBNAME_GRAVETEAM_03	 = "РҐРѕРґР¶РµСЃ - 'Р’СЃРµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ'";
+CONST STRING MOBNAME_GRAVETEAM_04	 = "РҐРѕС€ - 'Р§С‚Рѕ Р·Р° С‡РµСЂС‚'";
+CONST STRING MOBNAME_GRAVETEAM_05	 = "Р§РµР№Р· - 'Р—Р°С‡РµРј РІСЃРµ СЌС‚Рѕ?'";
+CONST STRING MOBNAME_GRAVETEAM_06	 = "Р‘СЊРѕСЂРЅ - 'РњС‹ РІС‹СЃС‚СѓРїР°РµРј!'";
+CONST STRING MOBNAME_GRAVETEAM_07	 = "РњРёС…Р°СЌР»СЊ - 'Р’РѕС‚ РЅРµРјРЅРѕРіРѕ РїРѕСЃРїР»СЋ...'";
+CONST STRING MOBNAME_GRAVETEAM_08	 = "РљР°Р№СЂРѕ - 'РЎРµРєСѓРЅРґРѕС‡РєСѓ!'";
+CONST STRING MOBNAME_GRAVETEAM_09	 = "Р”СЏРґСЋС€РєР° РљСЂР°РЅРєР» - 'РќР°РєРѕРЅРµС†, РѕРЅ РЅР°С€РµР» С‡РµР»РѕРІРµРєР°-СЃРєРѕСЂРїРёРѕРЅР°'";
+CONST STRING MOBNAME_GRAVETEAM_10	 = "РќРёРєРѕР”Р• - 'РџСЂРёРІРµС‚, РјРёСЂ!'";
+CONST STRING MOBNAME_GRAVETEAM_11	 = "РЎР°С€Р° - 'РРіСЂРѕРє РЅРµ Р·РЅР°РµС‚, Р·Р°С‡РµРј РѕРЅ РёРґРµС‚ С‚СѓРґР°...'";
+CONST STRING MOBNAME_GRAVETEAM_12	 = "РђРЅРґСЂСЌ - 'Р­С‚Рё РїР°СЂСѓСЃР° РѕР±РІРёСЃР°СЋС‚ Р±С‹СЃС‚СЂРѕ РёР»Рё РјРµРґР»РµРЅРЅРѕ?'";
+CONST STRING MOBNAME_GRAVETEAM_13	 = "РњРёС…Р°Р№ - 'Р”Р°, СЏ РїРѕРєР°Р¶Сѓ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ...'";
+CONST STRING MOBNAME_GRAVETEAM_14	 = "РЈРІРµ - 'РљР°РєРѕР№ Сѓ С‚РµР±СЏ СѓСЂРѕРІРµРЅСЊ?'";
 
 
 //Grabsteine
-CONST STRING MOBNAME_GRAVE_01	 = "Барон Генрих фон Стал 551 - 589 'Пришел, увидел, упал в обморок'";
-CONST STRING MOBNAME_GRAVE_02	 = "Бертран 465 - 480 'Я всегда любил есть поганки'";
-CONST STRING MOBNAME_GRAVE_03	 = "Изольда 525 - 550";
-CONST STRING MOBNAME_GRAVE_04	 = "Неизвестный";
-CONST STRING MOBNAME_GRAVE_05	 = "Декс Кантионис 325 - 431 'Я уже неделю ничего не ел'";
-CONST STRING MOBNAME_GRAVE_06	 = "Утар Лайтбрингер 205 - 532";
-CONST STRING MOBNAME_GRAVE_07	 = "Жасмин 510 - 546";
-CONST STRING MOBNAME_GRAVE_08	 = "Онурб 634 - 579 - ' Этлемеркегму красный'";
-CONST STRING MOBNAME_GRAVE_09	 = "Неизвестный солдат";
-CONST STRING MOBNAME_GRAVE_10	 = "Грозный карлик 2894-3787 - 'Все это чушь! Верь мне...'";
-CONST STRING MOBNAME_GRAVE_11	 = "Теодор 220 - 310 - 'Спи спокойно'";
-CONST STRING MOBNAME_GRAVE_12	 = "Вераним Садеа 390 - 'Преисподняя была вся в его распоряжении'";
-CONST STRING MOBNAME_GRAVE_13	 = "Серано Укара 234 - 298 'Страж башни'";
-CONST STRING MOBNAME_GRAVE_14	 = "Виктимо Сорн 456 - 512 'Только Феникс смог остановить его'";
-CONST STRING MOBNAME_GRAVE_15	 = " +432 'Его звали Геристун, он вышел из моря'";
-CONST STRING MOBNAME_GRAVE_16	 = "Эрнесто Ортой 350 - 410 'Я всегда буду с вами'";
-CONST STRING MOBNAME_GRAVE_17	 = "Артаг Амашрог 730 - 756";
-CONST STRING MOBNAME_GRAVE_18	 = "Иотар 721 - 762";
-CONST STRING MOBNAME_GRAVE_19	 = "Мидос 757 - 759";
-CONST STRING MOBNAME_GRAVE_20	 = "Оскар Сорн 703 - 736";
-CONST STRING MOBNAME_GRAVE_21	 = "Марта Укара 732 - 771";
-CONST STRING MOBNAME_GRAVE_22	 = "Вилфилд  Укара 722 - 764";
-CONST STRING MOBNAME_GRAVE_23	 = "Викторус Стал 741 - 755";
-CONST STRING MOBNAME_GRAVE_24	 = "Себ 725 - 773";
-CONST STRING MOBNAME_GRAVE_25	 = "Неизвестный";
-CONST STRING MOBNAME_GRAVE_26	 = "Март Мулго 721 - 779";
-CONST STRING MOBNAME_GRAVE_27	 = "Захра 713 - 752";
-CONST STRING MOBNAME_GRAVE_28	 = "Барон Симбус Карский 120 - 212";
-CONST STRING MOBNAME_GRAVE_29	 = "Граф Аниеб Валдфридский 117 - 212";
-CONST STRING MOBNAME_GRAVE_30	 = "Граф Лазарь Сьегбургский 156 - 212";
-CONST STRING MOBNAME_GRAVE_31	 = "Мечник Асуб Укара 145 - 212";
-CONST STRING MOBNAME_GRAVE_32	 = "Мечник Дьетмар Укара 112 - 212";
-CONST STRING MOBNAME_GRAVE_33	 = "Почетный страж Утар Серанис 178 - 212";
+CONST STRING MOBNAME_GRAVE_01	 = "Р‘Р°СЂРѕРЅ Р“РµРЅСЂРёС… С„РѕРЅ РЎС‚Р°Р» 551 - 589 'РџСЂРёС€РµР», СѓРІРёРґРµР», СѓРїР°Р» РІ РѕР±РјРѕСЂРѕРє'";
+CONST STRING MOBNAME_GRAVE_02	 = "Р‘РµСЂС‚СЂР°РЅ 465 - 480 'РЇ РІСЃРµРіРґР° Р»СЋР±РёР» РµСЃС‚СЊ РїРѕРіР°РЅРєРё'";
+CONST STRING MOBNAME_GRAVE_03	 = "РР·РѕР»СЊРґР° 525 - 550";
+CONST STRING MOBNAME_GRAVE_04	 = "РќРµРёР·РІРµСЃС‚РЅС‹Р№";
+CONST STRING MOBNAME_GRAVE_05	 = "Р”РµРєСЃ РљР°РЅС‚РёРѕРЅРёСЃ 325 - 431 'РЇ СѓР¶Рµ РЅРµРґРµР»СЋ РЅРёС‡РµРіРѕ РЅРµ РµР»'";
+CONST STRING MOBNAME_GRAVE_06	 = "РЈС‚Р°СЂ Р›Р°Р№С‚Р±СЂРёРЅРіРµСЂ 205 - 532";
+CONST STRING MOBNAME_GRAVE_07	 = "Р–Р°СЃРјРёРЅ 510 - 546";
+CONST STRING MOBNAME_GRAVE_08	 = "РћРЅСѓСЂР± 634 - 579 - ' Р­С‚Р»РµРјРµСЂРєРµРіРјСѓ РєСЂР°СЃРЅС‹Р№'";
+CONST STRING MOBNAME_GRAVE_09	 = "РќРµРёР·РІРµСЃС‚РЅС‹Р№ СЃРѕР»РґР°С‚";
+CONST STRING MOBNAME_GRAVE_10	 = "Р“СЂРѕР·РЅС‹Р№ РєР°СЂР»РёРє 2894-3787 - 'Р’СЃРµ СЌС‚Рѕ С‡СѓС€СЊ! Р’РµСЂСЊ РјРЅРµ...'";
+CONST STRING MOBNAME_GRAVE_11	 = "РўРµРѕРґРѕСЂ 220 - 310 - 'РЎРїРё СЃРїРѕРєРѕР№РЅРѕ'";
+CONST STRING MOBNAME_GRAVE_12	 = "Р’РµСЂР°РЅРёРј РЎР°РґРµР° 390 - 'РџСЂРµРёСЃРїРѕРґРЅСЏСЏ Р±С‹Р»Р° РІСЃСЏ РІ РµРіРѕ СЂР°СЃРїРѕСЂСЏР¶РµРЅРёРё'";
+CONST STRING MOBNAME_GRAVE_13	 = "РЎРµСЂР°РЅРѕ РЈРєР°СЂР° 234 - 298 'РЎС‚СЂР°Р¶ Р±Р°С€РЅРё'";
+CONST STRING MOBNAME_GRAVE_14	 = "Р’РёРєС‚РёРјРѕ РЎРѕСЂРЅ 456 - 512 'РўРѕР»СЊРєРѕ Р¤РµРЅРёРєСЃ СЃРјРѕРі РѕСЃС‚Р°РЅРѕРІРёС‚СЊ РµРіРѕ'";
+CONST STRING MOBNAME_GRAVE_15	 = " +432 'Р•РіРѕ Р·РІР°Р»Рё Р“РµСЂРёСЃС‚СѓРЅ, РѕРЅ РІС‹С€РµР» РёР· РјРѕСЂСЏ'";
+CONST STRING MOBNAME_GRAVE_16	 = "Р­СЂРЅРµСЃС‚Рѕ РћСЂС‚РѕР№ 350 - 410 'РЇ РІСЃРµРіРґР° Р±СѓРґСѓ СЃ РІР°РјРё'";
+CONST STRING MOBNAME_GRAVE_17	 = "РђСЂС‚Р°Рі РђРјР°С€СЂРѕРі 730 - 756";
+CONST STRING MOBNAME_GRAVE_18	 = "РРѕС‚Р°СЂ 721 - 762";
+CONST STRING MOBNAME_GRAVE_19	 = "РњРёРґРѕСЃ 757 - 759";
+CONST STRING MOBNAME_GRAVE_20	 = "РћСЃРєР°СЂ РЎРѕСЂРЅ 703 - 736";
+CONST STRING MOBNAME_GRAVE_21	 = "РњР°СЂС‚Р° РЈРєР°СЂР° 732 - 771";
+CONST STRING MOBNAME_GRAVE_22	 = "Р’РёР»С„РёР»Рґ  РЈРєР°СЂР° 722 - 764";
+CONST STRING MOBNAME_GRAVE_23	 = "Р’РёРєС‚РѕСЂСѓСЃ РЎС‚Р°Р» 741 - 755";
+CONST STRING MOBNAME_GRAVE_24	 = "РЎРµР± 725 - 773";
+CONST STRING MOBNAME_GRAVE_25	 = "РќРµРёР·РІРµСЃС‚РЅС‹Р№";
+CONST STRING MOBNAME_GRAVE_26	 = "РњР°СЂС‚ РњСѓР»РіРѕ 721 - 779";
+CONST STRING MOBNAME_GRAVE_27	 = "Р—Р°С…СЂР° 713 - 752";
+CONST STRING MOBNAME_GRAVE_28	 = "Р‘Р°СЂРѕРЅ РЎРёРјР±СѓСЃ РљР°СЂСЃРєРёР№ 120 - 212";
+CONST STRING MOBNAME_GRAVE_29	 = "Р“СЂР°С„ РђРЅРёРµР± Р’Р°Р»РґС„СЂРёРґСЃРєРёР№ 117 - 212";
+CONST STRING MOBNAME_GRAVE_30	 = "Р“СЂР°С„ Р›Р°Р·Р°СЂСЊ РЎСЊРµРіР±СѓСЂРіСЃРєРёР№ 156 - 212";
+CONST STRING MOBNAME_GRAVE_31	 = "РњРµС‡РЅРёРє РђСЃСѓР± РЈРєР°СЂР° 145 - 212";
+CONST STRING MOBNAME_GRAVE_32	 = "РњРµС‡РЅРёРє Р”СЊРµС‚РјР°СЂ РЈРєР°СЂР° 112 - 212";
+CONST STRING MOBNAME_GRAVE_33	 = "РџРѕС‡РµС‚РЅС‹Р№ СЃС‚СЂР°Р¶ РЈС‚Р°СЂ РЎРµСЂР°РЅРёСЃ 178 - 212";
 
 
 //ADDON>
 
-const string MOBNAME_ADDON_SOCKEL				= "Пьедестал";
-const string MOBNAME_ADDON_FORTUNO				= "Сундук Фортуно"; 
-const string MOBNAME_ADDON_IDOL					= "Статуя Белиара"; 
-const string MOBNAME_ADDON_GOLD					= "Золотой самородок";
-CONST STRING MOBNAME_ADDON_STONEBOOK			= "Пюпитр";
-const string MOBNAME_ADDON_ORNAMENT				= "Устройство в форме кольца";
-const string MOBNAME_ADDON_ORNAMENTSWITCH		= "Переключатель";
-const string MOBNAME_ADDON_WACKELBAUM			= "Шатающееся дерево";
-const string NAME_ADDON_TengronsRing			= "Кольцо Тенгрона.";
-const string NAME_ADDON_CASSIASBELOHNUNGSRING	= "Кольцо жизненной силы";
+const string MOBNAME_ADDON_SOCKEL				= "РџСЊРµРґРµСЃС‚Р°Р»";
+const string MOBNAME_ADDON_FORTUNO				= "РЎСѓРЅРґСѓРє Р¤РѕСЂС‚СѓРЅРѕ"; 
+const string MOBNAME_ADDON_IDOL					= "РЎС‚Р°С‚СѓСЏ Р‘РµР»РёР°СЂР°"; 
+const string MOBNAME_ADDON_GOLD					= "Р—РѕР»РѕС‚РѕР№ СЃР°РјРѕСЂРѕРґРѕРє";
+CONST STRING MOBNAME_ADDON_STONEBOOK			= "РџСЋРїРёС‚СЂ";
+const string MOBNAME_ADDON_ORNAMENT				= "РЈСЃС‚СЂРѕР№СЃС‚РІРѕ РІ С„РѕСЂРјРµ РєРѕР»СЊС†Р°";
+const string MOBNAME_ADDON_ORNAMENTSWITCH		= "РџРµСЂРµРєР»СЋС‡Р°С‚РµР»СЊ";
+const string MOBNAME_ADDON_WACKELBAUM			= "РЁР°С‚Р°СЋС‰РµРµСЃСЏ РґРµСЂРµРІРѕ";
+const string NAME_ADDON_TengronsRing			= "РљРѕР»СЊС†Рѕ РўРµРЅРіСЂРѕРЅР°.";
+const string NAME_ADDON_CASSIASBELOHNUNGSRING	= "РљРѕР»СЊС†Рѕ Р¶РёР·РЅРµРЅРЅРѕР№ СЃРёР»С‹";
 
-const string MOBNAME_ADDON_TELEPORT_01 = "К порталу храма";
-const string MOBNAME_ADDON_TELEPORT_02 = "В лагерь бандитов";
-const string MOBNAME_ADDON_TELEPORT_03 = "В болота";
-const string MOBNAME_ADDON_TELEPORT_04 = "В долину";
-const string MOBNAME_ADDON_TELEPORT_05 = "В каньон";
+const string MOBNAME_ADDON_TELEPORT_01 = "Рљ РїРѕСЂС‚Р°Р»Сѓ С…СЂР°РјР°";
+const string MOBNAME_ADDON_TELEPORT_02 = "Р’ Р»Р°РіРµСЂСЊ Р±Р°РЅРґРёС‚РѕРІ";
+const string MOBNAME_ADDON_TELEPORT_03 = "Р’ Р±РѕР»РѕС‚Р°";
+const string MOBNAME_ADDON_TELEPORT_04 = "Р’ РґРѕР»РёРЅСѓ";
+const string MOBNAME_ADDON_TELEPORT_05 = "Р’ РєР°РЅСЊРѕРЅ";
 
 //ADDON<
 
@@ -156,69 +156,69 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 // - Charakterblatt	(Text der Spielergilde)
 // - Debuganzeige (Taste "G")
 
-	"Нет гильдии"		,
-	"Паладин"		,
-	"Ополчение"			,
-	"Гражданин"		,
-	"Маг"		,
-	"Послушник"		,
-	"Охотник на драконов"	,
-	"Наемник"		,
-	"Фермер"			,
-	"Бандит"		,
-	"Каторжник"		,
-	"Ищущий"		,
+	"РќРµС‚ РіРёР»СЊРґРёРё"		,
+	"РџР°Р»Р°РґРёРЅ"		,
+	"РћРїРѕР»С‡РµРЅРёРµ"			,
+	"Р“СЂР°Р¶РґР°РЅРёРЅ"		,
+	"РњР°Рі"		,
+	"РџРѕСЃР»СѓС€РЅРёРє"		,
+	"РћС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ"	,
+	"РќР°РµРјРЅРёРє"		,
+	"Р¤РµСЂРјРµСЂ"			,
+	"Р‘Р°РЅРґРёС‚"		,
+	"РљР°С‚РѕСЂР¶РЅРёРє"		,
+	"РС‰СѓС‰РёР№"		,
 	"Land Dweller"	,
-	"Пират"			, //Addon
-	"Маг воды"	, //Addon
+	"РџРёСЂР°С‚"			, //Addon
+	"РњР°Рі РІРѕРґС‹"	, //Addon
 	"D"				,
 	""				, //16 - Gil_Seperator_Hum
-	"Мясной жук"	,
-	"Овца"			,
-	"Гоблин"		,
-	"Скелет гоблина",
-	"М. скелет гоблина",
-	"Падальщик"		,
-	"Гигантская крыса"	,
-	"Полевой хищник"	,
-	"Кровавая муха"	,
-	"Ящер"			,
-	"Волк"			,
-	"М. волк"		,
-	"Краулер"	,
-	"Луркер"		,
-	"Скелет"		,
-	"М. скелет"	,
-	"Скелет-маг",
-	"Зомби"		,
-	"Снеппер"		,
-	"Мракорис",
-	"Скелет-монстр",
-	"Гарпия"		,
-	"Каменный голем"	,
-	"Огненный голем"	,
-	"Ледяной голем"		,
-	"М. голем"		, //beschworener Golem
-	"Демон"			,
-	"М. демон"		,
-	"Тролль"			,
-	"Болотная акула"		,
-	"Дракон"		,
-	"Крысокрот"		,
-	"Аллигатор"		, //Addon
-	"Болотный голем"	, //Addon
-	"Стражник"		, //Addon
-	"Каменная пума"		, //Addon
+	"РњСЏСЃРЅРѕР№ Р¶СѓРє"	,
+	"РћРІС†Р°"			,
+	"Р“РѕР±Р»РёРЅ"		,
+	"РЎРєРµР»РµС‚ РіРѕР±Р»РёРЅР°",
+	"Рњ. СЃРєРµР»РµС‚ РіРѕР±Р»РёРЅР°",
+	"РџР°РґР°Р»СЊС‰РёРє"		,
+	"Р“РёРіР°РЅС‚СЃРєР°СЏ РєСЂС‹СЃР°"	,
+	"РџРѕР»РµРІРѕР№ С…РёС‰РЅРёРє"	,
+	"РљСЂРѕРІР°РІР°СЏ РјСѓС…Р°"	,
+	"РЇС‰РµСЂ"			,
+	"Р’РѕР»Рє"			,
+	"Рњ. РІРѕР»Рє"		,
+	"РљСЂР°СѓР»РµСЂ"	,
+	"Р›СѓСЂРєРµСЂ"		,
+	"РЎРєРµР»РµС‚"		,
+	"Рњ. СЃРєРµР»РµС‚"	,
+	"РЎРєРµР»РµС‚-РјР°Рі",
+	"Р—РѕРјР±Рё"		,
+	"РЎРЅРµРїРїРµСЂ"		,
+	"РњСЂР°РєРѕСЂРёСЃ",
+	"РЎРєРµР»РµС‚-РјРѕРЅСЃС‚СЂ",
+	"Р“Р°СЂРїРёСЏ"		,
+	"РљР°РјРµРЅРЅС‹Р№ РіРѕР»РµРј"	,
+	"РћРіРЅРµРЅРЅС‹Р№ РіРѕР»РµРј"	,
+	"Р›РµРґСЏРЅРѕР№ РіРѕР»РµРј"		,
+	"Рњ. РіРѕР»РµРј"		, //beschworener Golem
+	"Р”РµРјРѕРЅ"			,
+	"Рњ. РґРµРјРѕРЅ"		,
+	"РўСЂРѕР»Р»СЊ"			,
+	"Р‘РѕР»РѕС‚РЅР°СЏ Р°РєСѓР»Р°"		,
+	"Р”СЂР°РєРѕРЅ"		,
+	"РљСЂС‹СЃРѕРєСЂРѕС‚"		,
+	"РђР»Р»РёРіР°С‚РѕСЂ"		, //Addon
+	"Р‘РѕР»РѕС‚РЅС‹Р№ РіРѕР»РµРј"	, //Addon
+	"РЎС‚СЂР°Р¶РЅРёРє"		, //Addon
+	"РљР°РјРµРЅРЅР°СЏ РїСѓРјР°"		, //Addon
 	"A"				, //Addon
-	"Стражник"		, //Addon
-	"Зомби"		, //Addon
+	"РЎС‚СЂР°Р¶РЅРёРє"		, //Addon
+	"Р—РѕРјР±Рё"		, //Addon
 	""				,
 	""				,
 	""				, //58 - Gil_Seperator_Orc
-	"Орк"			,
-	"Орк"			,
-	"Орк-нежить"	,
-	"Дракониан"		,
+	"РћСЂРє"			,
+	"РћСЂРє"			,
+	"РћСЂРє-РЅРµР¶РёС‚СЊ"	,
+	"Р”СЂР°РєРѕРЅРёР°РЅ"		,
 	"X"				,
 	"Y"				,
 	"Z"				
@@ -235,93 +235,93 @@ CONST STRING TXT_GUILDS	[GIL_MAX] =	{
 const string TXT_SPELLS[MAX_SPELL] =
 {
 	// Paladin-Runen
-	"Святой свет",			// 0	SPL_PalLight
-	"Малое исцеление",		// 1	SPL_PalLightHeal
-	"Святая стрела",			// 2	SPL_PalHolyBolt
-	"Среднее исцеление",		// 3	SPL_PalMediumHeal
-	"Изгнание зла",			// 4	SPL_PalRepelEvil
-	"Большое исцеление",		// 5	SPL_PalFullHeal
-	"Уничтожение зла",			// 6	SPL_PalDestroyEvil
+	"РЎРІСЏС‚РѕР№ СЃРІРµС‚",			// 0	SPL_PalLight
+	"РњР°Р»РѕРµ РёСЃС†РµР»РµРЅРёРµ",		// 1	SPL_PalLightHeal
+	"РЎРІСЏС‚Р°СЏ СЃС‚СЂРµР»Р°",			// 2	SPL_PalHolyBolt
+	"РЎСЂРµРґРЅРµРµ РёСЃС†РµР»РµРЅРёРµ",		// 3	SPL_PalMediumHeal
+	"РР·РіРЅР°РЅРёРµ Р·Р»Р°",			// 4	SPL_PalRepelEvil
+	"Р‘РѕР»СЊС€РѕРµ РёСЃС†РµР»РµРЅРёРµ",		// 5	SPL_PalFullHeal
+	"РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ Р·Р»Р°",			// 6	SPL_PalDestroyEvil
 
 	// Teleport-Runen
-	"Телепорт",					// 7	SPL_PalTeleportSecret
-	"В порт",			// 8	SPL_TeleportSeaport
-	"В монастырь",				// 9	SPL_TeleportMonastery
-	"К лендлорду",			// 10	SPL_TeleportFarm
-	"К Ксардасу",				// 11	SPL_TeleportXardas
-	"К проходу Хориниса",		// 12	SPL_TeleportPassNW
-	"К проходу долины рудников",		// 13	SPL_TeleportPassOW
-	"В замок",					// 14	SPL_TeleportOC
-	"К старой демонической башне",	// 15	SPL_TeleportOWDemonTower
-	"К таверне",				// 16	SPL_TeleportTaverne
+	"РўРµР»РµРїРѕСЂС‚",					// 7	SPL_PalTeleportSecret
+	"Р’ РїРѕСЂС‚",			// 8	SPL_TeleportSeaport
+	"Р’ РјРѕРЅР°СЃС‚С‹СЂСЊ",				// 9	SPL_TeleportMonastery
+	"Рљ Р»РµРЅРґР»РѕСЂРґСѓ",			// 10	SPL_TeleportFarm
+	"Рљ РљСЃР°СЂРґР°СЃСѓ",				// 11	SPL_TeleportXardas
+	"Рљ РїСЂРѕС…РѕРґСѓ РҐРѕСЂРёРЅРёСЃР°",		// 12	SPL_TeleportPassNW
+	"Рљ РїСЂРѕС…РѕРґСѓ РґРѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ",		// 13	SPL_TeleportPassOW
+	"Р’ Р·Р°РјРѕРє",					// 14	SPL_TeleportOC
+	"Рљ СЃС‚Р°СЂРѕР№ РґРµРјРѕРЅРёС‡РµСЃРєРѕР№ Р±Р°С€РЅРµ",	// 15	SPL_TeleportOWDemonTower
+	"Рљ С‚Р°РІРµСЂРЅРµ",				// 16	SPL_TeleportTaverne
 	"TXT_SPL_TELEPORT_3",		// 17	SPL_Teleport_3
 
 	// Kreis 1
-	"Свет",					// 18	SPL_Light
-	"Огненная стрела",				// 19	SPL_Firebolt
+	"РЎРІРµС‚",					// 18	SPL_Light
+	"РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°",				// 19	SPL_Firebolt
 
 	// Kreis 2
-	"Ледяная стрела",					// 20	SPL_Icebolt
+	"Р›РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°",					// 20	SPL_Icebolt
 
 	// Kreis 1
-	"Лечение легких ранений",	// 21	SPL_LightHeal
-	"Скелет гоблина",			// 22	SPL_SummonGoblinSkeleton
+	"Р›РµС‡РµРЅРёРµ Р»РµРіРєРёС… СЂР°РЅРµРЅРёР№",	// 21	SPL_LightHeal
+	"РЎРєРµР»РµС‚ РіРѕР±Р»РёРЅР°",			// 22	SPL_SummonGoblinSkeleton
 
 	// Kreis 2
-	"Огненный шар",				// 23	SPL_InstantFireball
+	"РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ",				// 23	SPL_InstantFireball
 
 	// Kreis 1
-	"Малая молния",					// 24	SPL_Zap
+	"РњР°Р»Р°СЏ РјРѕР»РЅРёСЏ",					// 24	SPL_Zap
 
 	// Kreis 2
-	"Вызов волка",				// 25	SPL_SummonWolf
-	"Кулак ветра",				// 26	SPL_WindFist
-	"Сон",					// 27	SPL_Sleep
+	"Р’С‹Р·РѕРІ РІРѕР»РєР°",				// 25	SPL_SummonWolf
+	"РљСѓР»Р°Рє РІРµС‚СЂР°",				// 26	SPL_WindFist
+	"РЎРѕРЅ",					// 27	SPL_Sleep
 
 	// Kreis 3
-	"Лечение средних ранений",	// 28	SPL_MediumHeal
-	"Молния",				// 29	SPL_LightningFlash
-	"Большой огненный шар",		// 30	SPL_ChargeFireball
-	"Скелет",					// 31	SPL_SummonSkeleton
-	"Страх",					// 32	SPL_Fear
-	"Ледяной блок",					// 33	SPL_IceCube
-	"Шаровая молния",				// 34	SPL_ChargeZap
+	"Р›РµС‡РµРЅРёРµ СЃСЂРµРґРЅРёС… СЂР°РЅРµРЅРёР№",	// 28	SPL_MediumHeal
+	"РњРѕР»РЅРёСЏ",				// 29	SPL_LightningFlash
+	"Р‘РѕР»СЊС€РѕР№ РѕРіРЅРµРЅРЅС‹Р№ С€Р°СЂ",		// 30	SPL_ChargeFireball
+	"РЎРєРµР»РµС‚",					// 31	SPL_SummonSkeleton
+	"РЎС‚СЂР°С…",					// 32	SPL_Fear
+	"Р›РµРґСЏРЅРѕР№ Р±Р»РѕРє",					// 33	SPL_IceCube
+	"РЁР°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ",				// 34	SPL_ChargeZap
 
 	// Kreis 4
-	"Создание голема",			// 35	SPL_SummonGolem
-	"Уничтожение нежити",		// 36	SPL_DestroyUndead
-	"Большая огненная буря",		// 37	SPL_Pyrokinesis
+	"РЎРѕР·РґР°РЅРёРµ РіРѕР»РµРјР°",			// 35	SPL_SummonGolem
+	"РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё",		// 36	SPL_DestroyUndead
+	"Р‘РѕР»СЊС€Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ",		// 37	SPL_Pyrokinesis
 
 	// Kreis 5
-	"Малая огненная буря",		// 38	SPL_Firestorm
-	"Ледяная волна",					// 39	SPL_IceWave
-	"Демон",					// 40	SPL_SummonDemon
-	"Полное исцеление",				// 41	SPL_FullHeal
+	"РњР°Р»Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ",		// 38	SPL_Firestorm
+	"Р›РµРґСЏРЅР°СЏ РІРѕР»РЅР°",					// 39	SPL_IceWave
+	"Р”РµРјРѕРЅ",					// 40	SPL_SummonDemon
+	"РџРѕР»РЅРѕРµ РёСЃС†РµР»РµРЅРёРµ",				// 41	SPL_FullHeal
 
 	// Kreis 6
-	"Огненный дождь",				// 42	SPL_Firerain
-	"Дыхание смерти",				// 43	SPL_BreathOfDeath
-	"Масс-уничтожение",			// 44	SPL_MassDeath
-	"Армия тьмы",		// 45	SPL_ArmyOfDarkness
-	"Сморщивание",				// 46	SPL_Shrink
+	"РћРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ",				// 42	SPL_Firerain
+	"Р”С‹С…Р°РЅРёРµ СЃРјРµСЂС‚Рё",				// 43	SPL_BreathOfDeath
+	"РњР°СЃСЃ-СѓРЅРёС‡С‚РѕР¶РµРЅРёРµ",			// 44	SPL_MassDeath
+	"РђСЂРјРёСЏ С‚СЊРјС‹",		// 45	SPL_ArmyOfDarkness
+	"РЎРјРѕСЂС‰РёРІР°РЅРёРµ",				// 46	SPL_Shrink
 
 	// Scrolls
-	"Овца",					// 47	SPL_TrfSheep
-	"Падальщик",				// 48	SPL_TrfScavenger
-	"Гигантская крыса",				// 49	SPL_TrfGiantRat
-	"Полевой хищник",				// 50	SPL_TrfGiantBug
-	"Волк",						// 51	SPL_TrfWolf
-	"Ящер",					// 52	SPL_TrfWaran
-	"Снеппер",					// 53	SPL_TrfSnapper
-	"Варг",						// 54	SPL_TrfWarg
-	"Огненный ящер",				// 55	SPL_TrfFireWaran
-	"Луркер",					// 56	SPL_TrfLurker
-	"Мракорис",				// 57	SPL_TrfShadowbeast
-	"Драконий снеппер",			// 58	SPL_TrfDragonSnapper
-	"Забвение"	,				// 59	SPL_Charm
+	"РћРІС†Р°",					// 47	SPL_TrfSheep
+	"РџР°РґР°Р»СЊС‰РёРє",				// 48	SPL_TrfScavenger
+	"Р“РёРіР°РЅС‚СЃРєР°СЏ РєСЂС‹СЃР°",				// 49	SPL_TrfGiantRat
+	"РџРѕР»РµРІРѕР№ С…РёС‰РЅРёРє",				// 50	SPL_TrfGiantBug
+	"Р’РѕР»Рє",						// 51	SPL_TrfWolf
+	"РЇС‰РµСЂ",					// 52	SPL_TrfWaran
+	"РЎРЅРµРїРїРµСЂ",					// 53	SPL_TrfSnapper
+	"Р’Р°СЂРі",						// 54	SPL_TrfWarg
+	"РћРіРЅРµРЅРЅС‹Р№ СЏС‰РµСЂ",				// 55	SPL_TrfFireWaran
+	"Р›СѓСЂРєРµСЂ",					// 56	SPL_TrfLurker
+	"РњСЂР°РєРѕСЂРёСЃ",				// 57	SPL_TrfShadowbeast
+	"Р”СЂР°РєРѕРЅРёР№ СЃРЅРµРїРїРµСЂ",			// 58	SPL_TrfDragonSnapper
+	"Р—Р°Р±РІРµРЅРёРµ"	,				// 59	SPL_Charm
 
 	// Kreis 5
-	"Святая стрела",			// 60	SPL_MasterOfDisaster
+	"РЎРІСЏС‚Р°СЏ СЃС‚СЂРµР»Р°",			// 60	SPL_MasterOfDisaster
 
 	// ???
 	"TXT_SPL_DEATHBOLT",		// 61	SPL_Deathbolt
@@ -335,28 +335,28 @@ const string TXT_SPELLS[MAX_SPELL] =
   	"TXT_SPL_RESERVED_69",		// 69	SPL_Reserved_69
   
   	// Magick (Wasser)
- 	"Буря",					// 70	SPL_Thunderstorm
-	"Смерч",					// 71	SPL_Whirlwind
-	"Кулак воды",				// 72	SPL_WaterFist
-	"Ледяное копье",					// 73	SPL_IceLance
-	"Надувание людей",		// 74	SPL_Inflate
-	"Гейзер",					// 75	SPL_Geyser
-	"Водопад",				// 76	SPL_Waterwall
+ 	"Р‘СѓСЂСЏ",					// 70	SPL_Thunderstorm
+	"РЎРјРµСЂС‡",					// 71	SPL_Whirlwind
+	"РљСѓР»Р°Рє РІРѕРґС‹",				// 72	SPL_WaterFist
+	"Р›РµРґСЏРЅРѕРµ РєРѕРїСЊРµ",					// 73	SPL_IceLance
+	"РќР°РґСѓРІР°РЅРёРµ Р»СЋРґРµР№",		// 74	SPL_Inflate
+	"Р“РµР№Р·РµСЂ",					// 75	SPL_Geyser
+	"Р’РѕРґРѕРїР°Рґ",				// 76	SPL_Waterwall
 	"TXT_SPL_RESERVED_77",		// 77	SPL_Reserved_77
 	"TXT_SPL_RESERVED_78",		// 78	SPL_Reserved_78
 	"TXT_SPL_RESERVED_79",		// 79	SPL_Reserved_79
 
 	// Magick (Maya)
-	"Нашествие насекомых",			// 80	SPL_Plague
-	"Рой насекомых",			// 81	SPL_Swarm
-	"Корень-ловушка",			// 82	SPL_GreenTentacle
-	"Землетрясение",					// 83	SPL_Earthquake
-	"Создание стража",		// 84	SPL_SummonGodzilla
-	"Гнев Белиара",			// 85	SPL_Energyball
-	"Кража энергии",			// 86	SPL_SuckEnergy
-	"Крик смерти",			// 87	SPL_Skull
-	"Создание зомби",		// 88	SPL_SummonZombie
-	"Вызов тины",			// 89	SPL_SummonMud
+	"РќР°С€РµСЃС‚РІРёРµ РЅР°СЃРµРєРѕРјС‹С…",			// 80	SPL_Plague
+	"Р РѕР№ РЅР°СЃРµРєРѕРјС‹С…",			// 81	SPL_Swarm
+	"РљРѕСЂРµРЅСЊ-Р»РѕРІСѓС€РєР°",			// 82	SPL_GreenTentacle
+	"Р—РµРјР»РµС‚СЂСЏСЃРµРЅРёРµ",					// 83	SPL_Earthquake
+	"РЎРѕР·РґР°РЅРёРµ СЃС‚СЂР°Р¶Р°",		// 84	SPL_SummonGodzilla
+	"Р“РЅРµРІ Р‘РµР»РёР°СЂР°",			// 85	SPL_Energyball
+	"РљСЂР°Р¶Р° СЌРЅРµСЂРіРёРё",			// 86	SPL_SuckEnergy
+	"РљСЂРёРє СЃРјРµСЂС‚Рё",			// 87	SPL_Skull
+	"РЎРѕР·РґР°РЅРёРµ Р·РѕРјР±Рё",		// 88	SPL_SummonZombie
+	"Р’С‹Р·РѕРІ С‚РёРЅС‹",			// 89	SPL_SummonMud
 
 	// ...
 	"TXT_SPL_RESERVED_90",		// 90	SPL_Reserved_90
@@ -377,93 +377,93 @@ const string TXT_SPELLS[MAX_SPELL] =
 //
 
 // Paladin Runen
-const string NAME_SPL_PalLight				= "Святой свет";
-const string NAME_SPL_PalLightHeal			= "Малое исцеление";
-const string NAME_SPL_PalHolyBolt			= "Святая стрела";
-const string NAME_SPL_PalMediumHeal			= "Среднее исцеление";
-const string NAME_SPL_PalRepelEvil			= "Изгнание зла";
-const string NAME_SPL_PalFullHeal			= "Большое исцеление";
-const string NAME_SPL_PalDestroyEvil		= "Уничтожение зла";
+const string NAME_SPL_PalLight				= "РЎРІСЏС‚РѕР№ СЃРІРµС‚";
+const string NAME_SPL_PalLightHeal			= "РњР°Р»РѕРµ РёСЃС†РµР»РµРЅРёРµ";
+const string NAME_SPL_PalHolyBolt			= "РЎРІСЏС‚Р°СЏ СЃС‚СЂРµР»Р°";
+const string NAME_SPL_PalMediumHeal			= "РЎСЂРµРґРЅРµРµ РёСЃС†РµР»РµРЅРёРµ";
+const string NAME_SPL_PalRepelEvil			= "РР·РіРЅР°РЅРёРµ Р·Р»Р°";
+const string NAME_SPL_PalFullHeal			= "Р‘РѕР»СЊС€РѕРµ РёСЃС†РµР»РµРЅРёРµ";
+const string NAME_SPL_PalDestroyEvil		= "РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ Р·Р»Р°";
 
 // Teleport	Runen
-const string NAME_SPL_PalTeleportSecret		= "Телепорт";
-const string NAME_SPL_TeleportSeaport		= "Телепорт в порт";
-const string NAME_SPL_TeleportMonastery		= "Телепорт в монастырь";
-const string NAME_SPL_TeleportFarm			= "Телепорт к лендлорду";
-const string NAME_SPL_TeleportXardas		= "Телепорт к Ксардасу";
-const string NAME_SPL_TeleportPassNW		= "Телепорт к Проходу Хориниса";
-const string NAME_SPL_TeleportPassOW		= "Телепорт к Проходу долины рудников";
-const string NAME_SPL_TeleportOC			= "Телепорт в замок";
-const string NAME_SPL_TeleportOWDemonTower	= "Телепорт в древнюю демоническую башню";
-const string NAME_SPL_TeleportTaverne		= "Телепорт к таверне";
+const string NAME_SPL_PalTeleportSecret		= "РўРµР»РµРїРѕСЂС‚";
+const string NAME_SPL_TeleportSeaport		= "РўРµР»РµРїРѕСЂС‚ РІ РїРѕСЂС‚";
+const string NAME_SPL_TeleportMonastery		= "РўРµР»РµРїРѕСЂС‚ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ";
+const string NAME_SPL_TeleportFarm			= "РўРµР»РµРїРѕСЂС‚ Рє Р»РµРЅРґР»РѕСЂРґСѓ";
+const string NAME_SPL_TeleportXardas		= "РўРµР»РµРїРѕСЂС‚ Рє РљСЃР°СЂРґР°СЃСѓ";
+const string NAME_SPL_TeleportPassNW		= "РўРµР»РµРїРѕСЂС‚ Рє РџСЂРѕС…РѕРґСѓ РҐРѕСЂРёРЅРёСЃР°";
+const string NAME_SPL_TeleportPassOW		= "РўРµР»РµРїРѕСЂС‚ Рє РџСЂРѕС…РѕРґСѓ РґРѕР»РёРЅС‹ СЂСѓРґРЅРёРєРѕРІ";
+const string NAME_SPL_TeleportOC			= "РўРµР»РµРїРѕСЂС‚ РІ Р·Р°РјРѕРє";
+const string NAME_SPL_TeleportOWDemonTower	= "РўРµР»РµРїРѕСЂС‚ РІ РґСЂРµРІРЅСЋСЋ РґРµРјРѕРЅРёС‡РµСЃРєСѓСЋ Р±Р°С€РЅСЋ";
+const string NAME_SPL_TeleportTaverne		= "РўРµР»РµРїРѕСЂС‚ Рє С‚Р°РІРµСЂРЅРµ";
 const string NAME_SPL_Teleport_3			= "NAME_SPL_TELEPORT_3";
 
 // Kreis 1
-const string NAME_SPL_LIGHT					= "Свет";
-const string NAME_SPL_Firebolt				= "Огненная стрела";
+const string NAME_SPL_LIGHT					= "РЎРІРµС‚";
+const string NAME_SPL_Firebolt				= "РћРіРЅРµРЅРЅР°СЏ СЃС‚СЂРµР»Р°";
 
 // Kreis 2
-const string NAME_SPL_Icebolt				= "Ледяная стрела";
+const string NAME_SPL_Icebolt				= "Р›РµРґСЏРЅР°СЏ СЃС‚СЂРµР»Р°";
 
 // Kreis 1
-const string NAME_SPL_LightHeal				= "Лечение легких ранений";
-const string NAME_SPL_SummonGoblinSkeleton	= "Создание скелета гоблина";
+const string NAME_SPL_LightHeal				= "Р›РµС‡РµРЅРёРµ Р»РµРіРєРёС… СЂР°РЅРµРЅРёР№";
+const string NAME_SPL_SummonGoblinSkeleton	= "РЎРѕР·РґР°РЅРёРµ СЃРєРµР»РµС‚Р° РіРѕР±Р»РёРЅР°";
 
 // Kreis 2
-const string NAME_SPL_InstantFireball		= "Огненный шар";
+const string NAME_SPL_InstantFireball		= "РћРіРЅРµРЅРЅС‹Р№ С€Р°СЂ";
 
 // Kreis 1
-const string NAME_SPL_Zap					= "Малая молния";
+const string NAME_SPL_Zap					= "РњР°Р»Р°СЏ РјРѕР»РЅРёСЏ";
 
 // Kreis 2
-const string NAME_SPL_SummonWolf			= "Вызов волка";
-const string NAME_SPL_WINDFIST				= "Кулак ветра";
-const string NAME_SPL_Sleep					= "Сон";
+const string NAME_SPL_SummonWolf			= "Р’С‹Р·РѕРІ РІРѕР»РєР°";
+const string NAME_SPL_WINDFIST				= "РљСѓР»Р°Рє РІРµС‚СЂР°";
+const string NAME_SPL_Sleep					= "РЎРѕРЅ";
 
 // Kreis 3
-const string NAME_SPL_MediumHeal			= "Лечение средних ранений";
-const string NAME_SPL_Firestorm				= "Малая огненная буря";
-const string NAME_SPL_SummonSkeleton		= "Создание скелета";
-const string NAME_SPL_Fear					= "Страх";
-const string NAME_SPL_IceCube				= "Ледяной блок";
-const string NAME_SPL_ChargeZap				= "Шаровая молния";
+const string NAME_SPL_MediumHeal			= "Р›РµС‡РµРЅРёРµ СЃСЂРµРґРЅРёС… СЂР°РЅРµРЅРёР№";
+const string NAME_SPL_Firestorm				= "РњР°Р»Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ";
+const string NAME_SPL_SummonSkeleton		= "РЎРѕР·РґР°РЅРёРµ СЃРєРµР»РµС‚Р°";
+const string NAME_SPL_Fear					= "РЎС‚СЂР°С…";
+const string NAME_SPL_IceCube				= "Р›РµРґСЏРЅРѕР№ Р±Р»РѕРє";
+const string NAME_SPL_ChargeZap				= "РЁР°СЂРѕРІР°СЏ РјРѕР»РЅРёСЏ";
 
 // Kreis 4
-const string NAME_SPL_LightningFlash		= "Молния";
-const string NAME_SPL_SummonGolem			= "Пробуждение голема";
-const string NAME_SPL_DestroyUndead			= "Уничтожение нежити";
-const string NAME_SPL_ChargeFireball		= "Большой огненный шар";
+const string NAME_SPL_LightningFlash		= "РњРѕР»РЅРёСЏ";
+const string NAME_SPL_SummonGolem			= "РџСЂРѕР±СѓР¶РґРµРЅРёРµ РіРѕР»РµРјР°";
+const string NAME_SPL_DestroyUndead			= "РЈРЅРёС‡С‚РѕР¶РµРЅРёРµ РЅРµР¶РёС‚Рё";
+const string NAME_SPL_ChargeFireball		= "Р‘РѕР»СЊС€РѕР№ РѕРіРЅРµРЅРЅС‹Р№ С€Р°СЂ";
 
 // Kreis 5
-const string NAME_SPL_Pyrokinesis			= "Большая огненная буря";
-const string NAME_SPL_IceWave				= "Ледяная волна";
-const string NAME_SPL_SummonDemon			= "Вызов демона";
-const string NAME_SPL_FullHeal				= "Лечение тяжелых ранений";
+const string NAME_SPL_Pyrokinesis			= "Р‘РѕР»СЊС€Р°СЏ РѕРіРЅРµРЅРЅР°СЏ Р±СѓСЂСЏ";
+const string NAME_SPL_IceWave				= "Р›РµРґСЏРЅР°СЏ РІРѕР»РЅР°";
+const string NAME_SPL_SummonDemon			= "Р’С‹Р·РѕРІ РґРµРјРѕРЅР°";
+const string NAME_SPL_FullHeal				= "Р›РµС‡РµРЅРёРµ С‚СЏР¶РµР»С‹С… СЂР°РЅРµРЅРёР№";
 
 // Kreis 6
-const string NAME_SPL_Firerain				= "Огненный дождь";
-const string NAME_SPL_BreathOfDeath			= "Дыхание смерти";
-const string NAME_SPL_MassDeath				= "Волна смерти";
-const string NAME_SPL_ArmyOfDarkness		= "Армия тьмы";
-const string NAME_SPL_Shrink				= "Сморщивание монстра";
+const string NAME_SPL_Firerain				= "РћРіРЅРµРЅРЅС‹Р№ РґРѕР¶РґСЊ";
+const string NAME_SPL_BreathOfDeath			= "Р”С‹С…Р°РЅРёРµ СЃРјРµСЂС‚Рё";
+const string NAME_SPL_MassDeath				= "Р’РѕР»РЅР° СЃРјРµСЂС‚Рё";
+const string NAME_SPL_ArmyOfDarkness		= "РђСЂРјРёСЏ С‚СЊРјС‹";
+const string NAME_SPL_Shrink				= "РЎРјРѕСЂС‰РёРІР°РЅРёРµ РјРѕРЅСЃС‚СЂР°";
 
 // Scrolls
-const string NAME_SPL_TrfSheep				= "Превращение в овцу";
-const string NAME_SPL_TrfScavenger			= "Превращение в падальщика";
-const string NAME_SPL_TrfGiantRat			= "Превращение в гигантскую крысу";
-const string NAME_SPL_TrfGiantBug			= "Превращение в полевого хищника";
-const string NAME_SPL_TrfWolf				= "Превращение в волка";
-const string NAME_SPL_TrfWaran				= "Превращение в ящера";
-const string NAME_SPL_TrfSnapper			= "Превращение в снеппера";
-const string NAME_SPL_TrfWarg				= "Превращение в варга";
-const string NAME_SPL_TrfFireWaran			= "Превращение в огненного ящера";
-const string NAME_SPL_TrfLurker				= "Превращение в луркера";
-const string NAME_SPL_TrfShadowbeast		= "Превращение в мракориса";
-const string NAME_SPL_TrfDragonSnapper		= "Превращение в драконьего снеппера";
-const string NAME_SPL_Charm					= "Забвение";
+const string NAME_SPL_TrfSheep				= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РѕРІС†Сѓ";
+const string NAME_SPL_TrfScavenger			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РїР°РґР°Р»СЊС‰РёРєР°";
+const string NAME_SPL_TrfGiantRat			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РіРёРіР°РЅС‚СЃРєСѓСЋ РєСЂС‹СЃСѓ";
+const string NAME_SPL_TrfGiantBug			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РїРѕР»РµРІРѕРіРѕ С…РёС‰РЅРёРєР°";
+const string NAME_SPL_TrfWolf				= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РІРѕР»РєР°";
+const string NAME_SPL_TrfWaran				= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ СЏС‰РµСЂР°";
+const string NAME_SPL_TrfSnapper			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ СЃРЅРµРїРїРµСЂР°";
+const string NAME_SPL_TrfWarg				= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РІР°СЂРіР°";
+const string NAME_SPL_TrfFireWaran			= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РѕРіРЅРµРЅРЅРѕРіРѕ СЏС‰РµСЂР°";
+const string NAME_SPL_TrfLurker				= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ Р»СѓСЂРєРµСЂР°";
+const string NAME_SPL_TrfShadowbeast		= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РјСЂР°РєРѕСЂРёСЃР°";
+const string NAME_SPL_TrfDragonSnapper		= "РџСЂРµРІСЂР°С‰РµРЅРёРµ РІ РґСЂР°РєРѕРЅСЊРµРіРѕ СЃРЅРµРїРїРµСЂР°";
+const string NAME_SPL_Charm					= "Р—Р°Р±РІРµРЅРёРµ";
 
 // Kreis 5
-const string NAME_SPL_MasterOfDisaster		= "Святая стрела";
+const string NAME_SPL_MasterOfDisaster		= "РЎРІСЏС‚Р°СЏ СЃС‚СЂРµР»Р°";
 
 // ???
 const string NAME_SPL_Deathbolt				= "NAME_SPL_DEATHBOLT";
@@ -477,28 +477,28 @@ const string NAME_SPL_Reserved_68			= "NAME_SPL_RESERVED_68";
 const string NAME_SPL_Reserved_69			= "NAME_SPL_RESERVED_69";
 
 // Magick (Wasser)
-const string NAME_SPL_Thunderstorm			= "Буря";
-const string NAME_SPL_Whirlwind				= "Смерч";
-const string NAME_SPL_WaterFist				= "Кулак воды";
-const string NAME_SPL_IceLance				= "Ледяное копье";
-const string NAME_SPL_Inflate				= "Надувание людей";
-const string NAME_SPL_Geyser				= "Гейзер";
-const string NAME_SPL_Waterwall				= "Водопад";
+const string NAME_SPL_Thunderstorm			= "Р‘СѓСЂСЏ";
+const string NAME_SPL_Whirlwind				= "РЎРјРµСЂС‡";
+const string NAME_SPL_WaterFist				= "РљСѓР»Р°Рє РІРѕРґС‹";
+const string NAME_SPL_IceLance				= "Р›РµРґСЏРЅРѕРµ РєРѕРїСЊРµ";
+const string NAME_SPL_Inflate				= "РќР°РґСѓРІР°РЅРёРµ Р»СЋРґРµР№";
+const string NAME_SPL_Geyser				= "Р“РµР№Р·РµСЂ";
+const string NAME_SPL_Waterwall				= "Р’РѕРґРѕРїР°Рґ";
 const string NAME_SPL_Reserved_77			= "NAME_SPL_RESERVED_77";
 const string NAME_SPL_Reserved_78			= "NAME_SPL_RESERVED_78";
 const string NAME_SPL_Reserved_79			= "NAME_SPL_RESERVED_79";
 
 // Magick (Maya)
-const string NAME_SPL_Plague				= "Нашествие насекомых";
-const string NAME_SPL_Swarm					= "Рой насекомых";
-const string NAME_SPL_GreenTentacle			= "Корень-ловушка";
-const string NAME_SPL_Earthquake			= "Землетрясение";
-const string NAME_SPL_SummonGuardian		= "Создание стража";
-const string NAME_SPL_BeliarsRage			= "Гнев Белиара";
-const string NAME_SPL_SuckEnergy			= "Кража энергии";
-const string NAME_SPL_Skull					= "Крик смерти";
-const string NAME_SPL_SummonZombie			= "Создание зомби";
-const string NAME_SPL_SummonMud				= "Вызов тины";
+const string NAME_SPL_Plague				= "РќР°С€РµСЃС‚РІРёРµ РЅР°СЃРµРєРѕРјС‹С…";
+const string NAME_SPL_Swarm					= "Р РѕР№ РЅР°СЃРµРєРѕРјС‹С…";
+const string NAME_SPL_GreenTentacle			= "РљРѕСЂРµРЅСЊ-Р»РѕРІСѓС€РєР°";
+const string NAME_SPL_Earthquake			= "Р—РµРјР»РµС‚СЂСЏСЃРµРЅРёРµ";
+const string NAME_SPL_SummonGuardian		= "РЎРѕР·РґР°РЅРёРµ СЃС‚СЂР°Р¶Р°";
+const string NAME_SPL_BeliarsRage			= "Р“РЅРµРІ Р‘РµР»РёР°СЂР°";
+const string NAME_SPL_SuckEnergy			= "РљСЂР°Р¶Р° СЌРЅРµСЂРіРёРё";
+const string NAME_SPL_Skull					= "РљСЂРёРє СЃРјРµСЂС‚Рё";
+const string NAME_SPL_SummonZombie			= "РЎРѕР·РґР°РЅРёРµ Р·РѕРјР±Рё";
+const string NAME_SPL_SummonMud				= "Р’С‹Р·РѕРІ С‚РёРЅС‹";
 
 // ...
 const string NAME_SPL_Reserved_90			= "NAME_SPL_RESERVED_90";
@@ -520,24 +520,24 @@ const string NAME_SPL_Reserved_99			= "NAME_SPL_RESERVED_99";
 CONST STRING TXT_TALENTS [NPC_TALENT_MAX] =
 {
 	"",							//NPC_TALENT_UNKNOWN			= 0;
-	"Одноручное",				//NPC_TALENT_1H					= 1;
-	"Двуручное",				//NPC_TALENT_2H					= 2;
-	"Лук",					//NPC_TALENT_BOW				= 3;
-	"Арбалет",					//NPC_TALENT_CROSSBOW			= 4;
-	"Отмычки",			//NPC_TALENT_PICKLOCK			= 5;	//wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht	mehr 2)
+	"РћРґРЅРѕСЂСѓС‡РЅРѕРµ",				//NPC_TALENT_1H					= 1;
+	"Р”РІСѓСЂСѓС‡РЅРѕРµ",				//NPC_TALENT_2H					= 2;
+	"Р›СѓРє",					//NPC_TALENT_BOW				= 3;
+	"РђСЂР±Р°Р»РµС‚",					//NPC_TALENT_CROSSBOW			= 4;
+	"РћС‚РјС‹С‡РєРё",			//NPC_TALENT_PICKLOCK			= 5;	//wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht	mehr 2)
 	"",							//altes	Pickpocket aus Gothic 1	- NICHT	benutzen! Bleibt als Relikt	im Code	= 6;
-	"Магия",					//NPC_TALENT_MAGE				= 7;	// Magiekreis
-	"Красться",				//NPC_TALENT_SNEAK				= 8;
+	"РњР°РіРёСЏ",					//NPC_TALENT_MAGE				= 7;	// Magiekreis
+	"РљСЂР°СЃС‚СЊСЃСЏ",				//NPC_TALENT_SNEAK				= 8;
 	"",							//raus //NPC_TALENT_REGENERATE	= 9;
 	"",							//raus //NPC_TALENT_FIREMASTER	= 10;
-	"Акробатика",				//NPC_TALENT_ACROBAT			= 11;
-	"Карманник",			//NPC_TALENT_PICKPOCKET			= 12;	//NEUES	Pickpocket
-	"Ковка оружия",				//NPC_TALENT_SMITH				= 13;
-	"Создание рун",			//NPC_TALENT_RUNES				= 14;
-	"Алхимия",					//NPC_TALENT_ALCHEMY			= 15;
-	"Снятие шкур",			//NPC_TALENT_TAKEANIMALTROPHY	= 16;
-	"Иностранные языки",		//NPC_TALENT_FOREIGNLANGUAGE	= 17;
-	"Способности блуждающего огонька",		//NPC_TALENT_WISPDETECTOR		= 18;
+	"РђРєСЂРѕР±Р°С‚РёРєР°",				//NPC_TALENT_ACROBAT			= 11;
+	"РљР°СЂРјР°РЅРЅРёРє",			//NPC_TALENT_PICKPOCKET			= 12;	//NEUES	Pickpocket
+	"РљРѕРІРєР° РѕСЂСѓР¶РёСЏ",				//NPC_TALENT_SMITH				= 13;
+	"РЎРѕР·РґР°РЅРёРµ СЂСѓРЅ",			//NPC_TALENT_RUNES				= 14;
+	"РђР»С…РёРјРёСЏ",					//NPC_TALENT_ALCHEMY			= 15;
+	"РЎРЅСЏС‚РёРµ С€РєСѓСЂ",			//NPC_TALENT_TAKEANIMALTROPHY	= 16;
+	"РРЅРѕСЃС‚СЂР°РЅРЅС‹Рµ СЏР·С‹РєРё",		//NPC_TALENT_FOREIGNLANGUAGE	= 17;
+	"РЎРїРѕСЃРѕР±РЅРѕСЃС‚Рё Р±Р»СѓР¶РґР°СЋС‰РµРіРѕ РѕРіРѕРЅСЊРєР°",		//NPC_TALENT_WISPDETECTOR		= 18;
 	"",							//NPC_TALENT_C					= 19;
 	"",							//NPC_TALENT_D					= 20;
 	""							//NPC_TALENT_E					= 21;
@@ -547,27 +547,27 @@ CONST STRING TXT_TALENTS [NPC_TALENT_MAX] =
 CONST STRING TXT_TALENTS_SKILLS	[NPC_TALENT_MAX] =
 {
 	"",															//NPC_TALENT_UNKNOWN			= 0;
-	"Новичок|Боец|Мастер",									//NPC_TALENT_1H					= 1;
-	"Новичок|Боец|Мастер",									//NPC_TALENT_2H					= 2;
-	"Новичок|Стрелок|Мастер",									//NPC_TALENT_BOW				= 3;
-	"Новичок|Стрелок|Мастер",									//NPC_TALENT_CROSSBOW			= 4;
-	"-|Изучено|-",												//NPC_TALENT_PICKLOCK			= 5;	//wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht	mehr 2)
+	"РќРѕРІРёС‡РѕРє|Р‘РѕРµС†|РњР°СЃС‚РµСЂ",									//NPC_TALENT_1H					= 1;
+	"РќРѕРІРёС‡РѕРє|Р‘РѕРµС†|РњР°СЃС‚РµСЂ",									//NPC_TALENT_2H					= 2;
+	"РќРѕРІРёС‡РѕРє|РЎС‚СЂРµР»РѕРє|РњР°СЃС‚РµСЂ",									//NPC_TALENT_BOW				= 3;
+	"РќРѕРІРёС‡РѕРє|РЎС‚СЂРµР»РѕРє|РњР°СЃС‚РµСЂ",									//NPC_TALENT_CROSSBOW			= 4;
+	"-|РР·СѓС‡РµРЅРѕ|-",												//NPC_TALENT_PICKLOCK			= 5;	//wird jetzt per DEX geregelt UND es gibt nur noch Level 0 und 1 (nicht	mehr 2)
 	"0|1|2",													//altes	Pickpocket aus Gothic 1	- NICHT	benutzen! Bleibt als Relikt	im Code	= 6;
 	"0|1|2|3|4|5|6",											//NPC_TALENT_MAGE				= 7;	// Magiekreis
-	"-|Изучено",												//NPC_TALENT_SNEAK				= 8;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_SNEAK				= 8;
 	"-|-",														//raus //NPC_TALENT_REGENERATE	= 9;
 	"-|-",														//raus //NPC_TALENT_FIREMASTER	= 10;
-	"-|Изучено",												//NPC_TALENT_ACROBAT			= 11;
-	"-|Изучено",												//NPC_TALENT_PICKPOCKET			= 12;	//NEUES	Pickpocket
-	"-|Изучено",												//NPC_TALENT_SMITH				= 13;
-	"-|Изучено",												//NPC_TALENT_RUNES				= 14;
-	"-|Изучено",												//NPC_TALENT_ALCHEMY			= 15;
-	"-|Изучено",												//NPC_TALENT_TAKEANIMALTROPHY	= 16;
-	"-|Изучено",												//NPC_TALENT_FOREIGNLANGUAGE	= 17;	//ADDON
-	"-|Изучено",												//NPC_TALENT_WISPDETECTOR		= 18;
-	"-|Изучено",												//NPC_TALENT_C					= 19;
-	"-|Изучено",												//NPC_TALENT_D					= 20;
-	"-|Изучено"													//NPC_TALENT_E					= 21;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_ACROBAT			= 11;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_PICKPOCKET			= 12;	//NEUES	Pickpocket
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_SMITH				= 13;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_RUNES				= 14;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_ALCHEMY			= 15;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_TAKEANIMALTROPHY	= 16;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_FOREIGNLANGUAGE	= 17;	//ADDON
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_WISPDETECTOR		= 18;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_C					= 19;
+	"-|РР·СѓС‡РµРЅРѕ",												//NPC_TALENT_D					= 20;
+	"-|РР·СѓС‡РµРЅРѕ"													//NPC_TALENT_E					= 21;
 };
 
 
@@ -577,14 +577,14 @@ CONST STRING TXT_TALENTS_SKILLS	[NPC_TALENT_MAX] =
 
 CONST STRING TXT_INV_CAT [INV_CAT_MAX] = {
 	"",
-	"Оружие",
-	"Доспехи",
-	"Магия",
-	"Артефакты",
-	"Еда",
-	"Зелья",
-	"Документы",
-	"Разное"
+	"РћСЂСѓР¶РёРµ",
+	"Р”РѕСЃРїРµС…Рё",
+	"РњР°РіРёСЏ",
+	"РђСЂС‚РµС„Р°РєС‚С‹",
+	"Р•РґР°",
+	"Р—РµР»СЊСЏ",
+	"Р”РѕРєСѓРјРµРЅС‚С‹",
+	"Р Р°Р·РЅРѕРµ"
 };
 
 
@@ -592,301 +592,301 @@ CONST STRING TXT_INV_CAT [INV_CAT_MAX] = {
 // Fokusnamen der Ambient-NSCs
 // ***************************************************************************************
 
-CONST STRING NAME_Paladin		= "Паладин";
-CONST STRING NAME_Miliz			= "Городской стражник";
-CONST STRING NAME_Torwache		= "Стражник у ворот";
-CONST STRING NAME_Tuerwache		= "Стражник у двери";
-CONST STRING NAME_Stadtwache	= "Городской стражник";
-CONST STRING NAME_Arbeiter		= "Рабочий";
-CONST STRING NAME_Ritter		= "Рыцарь";
-CONST STRING NAME_Wache			= "Стражник";
-const string NAME_Buerger		= "Гражданин";
-const string NAME_Buergerin		= "Гражданка";
-const string NAME_Magd			= "Служанка";
-const string NAME_Magier		= "Маг";
-CONST STRING NAME_Novize		= "Послушник";
-const string NAME_Drachenjaeger	= "Охотник на драконов";
-const string NAME_ToterDrachenjaeger = "Мертвый охотник на драконов";
-CONST STRING NAME_Soeldner		= "Наемник";
-CONST STRING NAME_Bauer			= "Крестьянин";
-CONST STRING NAME_Baeuerin		= "Крестьянка";
-const string NAME_Bandit		= "Бандит";
-const string NAME_Halsabschneider	= "Головорез";
-const string NAME_Straefling	= "Каторжник";
-const string NAME_Waffenknecht	= "Воин";
-const string NAME_Dementor		= "Ищущий";
-const string NAME_ToterNovize	= "Мертвый послушник";
-const string NAME_Antipaldin	= "Предводитель орков";
-const string NAME_Schiffswache	= "Корабельный стражник";
-const string NAME_Fluechtling	= "Беглец";
+CONST STRING NAME_Paladin		= "РџР°Р»Р°РґРёРЅ";
+CONST STRING NAME_Miliz			= "Р“РѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶РЅРёРє";
+CONST STRING NAME_Torwache		= "РЎС‚СЂР°Р¶РЅРёРє Сѓ РІРѕСЂРѕС‚";
+CONST STRING NAME_Tuerwache		= "РЎС‚СЂР°Р¶РЅРёРє Сѓ РґРІРµСЂРё";
+CONST STRING NAME_Stadtwache	= "Р“РѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶РЅРёРє";
+CONST STRING NAME_Arbeiter		= "Р Р°Р±РѕС‡РёР№";
+CONST STRING NAME_Ritter		= "Р С‹С†Р°СЂСЊ";
+CONST STRING NAME_Wache			= "РЎС‚СЂР°Р¶РЅРёРє";
+const string NAME_Buerger		= "Р“СЂР°Р¶РґР°РЅРёРЅ";
+const string NAME_Buergerin		= "Р“СЂР°Р¶РґР°РЅРєР°";
+const string NAME_Magd			= "РЎР»СѓР¶Р°РЅРєР°";
+const string NAME_Magier		= "РњР°Рі";
+CONST STRING NAME_Novize		= "РџРѕСЃР»СѓС€РЅРёРє";
+const string NAME_Drachenjaeger	= "РћС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ";
+const string NAME_ToterDrachenjaeger = "РњРµСЂС‚РІС‹Р№ РѕС…РѕС‚РЅРёРє РЅР° РґСЂР°РєРѕРЅРѕРІ";
+CONST STRING NAME_Soeldner		= "РќР°РµРјРЅРёРє";
+CONST STRING NAME_Bauer			= "РљСЂРµСЃС‚СЊСЏРЅРёРЅ";
+CONST STRING NAME_Baeuerin		= "РљСЂРµСЃС‚СЊСЏРЅРєР°";
+const string NAME_Bandit		= "Р‘Р°РЅРґРёС‚";
+const string NAME_Halsabschneider	= "Р“РѕР»РѕРІРѕСЂРµР·";
+const string NAME_Straefling	= "РљР°С‚РѕСЂР¶РЅРёРє";
+const string NAME_Waffenknecht	= "Р’РѕРёРЅ";
+const string NAME_Dementor		= "РС‰СѓС‰РёР№";
+const string NAME_ToterNovize	= "РњРµСЂС‚РІС‹Р№ РїРѕСЃР»СѓС€РЅРёРє";
+const string NAME_Antipaldin	= "РџСЂРµРґРІРѕРґРёС‚РµР»СЊ РѕСЂРєРѕРІ";
+const string NAME_Schiffswache	= "РљРѕСЂР°Р±РµР»СЊРЅС‹Р№ СЃС‚СЂР°Р¶РЅРёРє";
+const string NAME_Fluechtling	= "Р‘РµРіР»РµС†";
 
 
 //**************************************************
 //		Addon
 //**************************************************
 
-const string NAME_Addon_Pirat			= "Пират"; //_addon_ ?
-const string NAME_Addon_Guard			= "Стражник";
-const string NAME_Addon_Esteban_Guard	= "Телохранитель";
-const string NAME_Addon_Sklave			= "Раб";
-const string NAME_Addon_Buddler			= "Рудокоп";
-const string NAME_ADDON_SCAVENGERGL		= "Луговой падальщик";
+const string NAME_Addon_Pirat			= "РџРёСЂР°С‚"; //_addon_ ?
+const string NAME_Addon_Guard			= "РЎС‚СЂР°Р¶РЅРёРє";
+const string NAME_Addon_Esteban_Guard	= "РўРµР»РѕС…СЂР°РЅРёС‚РµР»СЊ";
+const string NAME_Addon_Sklave			= "Р Р°Р±";
+const string NAME_Addon_Buddler			= "Р СѓРґРѕРєРѕРї";
+const string NAME_ADDON_SCAVENGERGL		= "Р›СѓРіРѕРІРѕР№ РїР°РґР°Р»СЊС‰РёРє";
 
-const string NAME_Addon_Summoned_Guardian	=	"Вызванный каменный часовой";
-const string NAME_Addon_Summoned_Zombie		=	"Вызванный зомби";	
-const string NAME_ADDON_BELIARSWEAPON 		= 	"Коготь Белиара";
+const string NAME_Addon_Summoned_Guardian	=	"Р’С‹Р·РІР°РЅРЅС‹Р№ РєР°РјРµРЅРЅС‹Р№ С‡Р°СЃРѕРІРѕР№";
+const string NAME_Addon_Summoned_Zombie		=	"Р’С‹Р·РІР°РЅРЅС‹Р№ Р·РѕРјР±Рё";	
+const string NAME_ADDON_BELIARSWEAPON 		= 	"РљРѕРіРѕС‚СЊ Р‘РµР»РёР°СЂР°";
 
-const string NAME_Addon_Undead_Mud		=	"Тина-нежить";	
-const string NAME_Addon_Summoned_Mud	=	"Вызванная тина";	
+const string NAME_Addon_Undead_Mud		=	"РўРёРЅР°-РЅРµР¶РёС‚СЊ";	
+const string NAME_Addon_Summoned_Mud	=	"Р’С‹Р·РІР°РЅРЅР°СЏ С‚РёРЅР°";	
 
 // *************************************************************
 // DIALOG OPTIONEN
 // *************************************************************
 
-CONST STRING DIALOG_ENDE		= "КОНЕЦ";
-CONST STRING DIALOG_BACK		= "НАЗАД";
-const string DIALOG_TRADE		= "(Купить)";
-const string DIALOG_PICKPOCKET	= "(Украсть)";
+CONST STRING DIALOG_ENDE		= "РљРћРќР•Р¦";
+CONST STRING DIALOG_BACK		= "РќРђР—РђР”";
+const string DIALOG_TRADE		= "(РљСѓРїРёС‚СЊ)";
+const string DIALOG_PICKPOCKET	= "(РЈРєСЂР°СЃС‚СЊ)";
 
 
 // *************************************************************
 // FOKUSNAMEN DER ITEMS
 // *************************************************************
 
-const string NAME_Ring			= "Кольцо";
-const string NAME_Amulett		= "Амулет";
-const string NAME_Trank			= "Зелье";
-const string NAME_Rune			= "Руна";
-const string NAME_Spruchrolle	= "Свиток";
-const string NAME_Key			= "Ключ";
+const string NAME_Ring			= "РљРѕР»СЊС†Рѕ";
+const string NAME_Amulett		= "РђРјСѓР»РµС‚";
+const string NAME_Trank			= "Р—РµР»СЊРµ";
+const string NAME_Rune			= "Р СѓРЅР°";
+const string NAME_Spruchrolle	= "РЎРІРёС‚РѕРє";
+const string NAME_Key			= "РљР»СЋС‡";
 
-const string NAME_Addon_Belt			= "Пояс";
-const string NAME_Addon_BeltMage		= "Кушак";
+const string NAME_Addon_Belt			= "РџРѕСЏСЃ";
+const string NAME_Addon_BeltMage		= "РљСѓС€Р°Рє";
 
-const string NAME_Addon_BeArSLD			= "Вместе с доспехами наемника +";
-const string NAME_Addon_BeArMIL			= "Вместе с доспехами ополчения +";
-const string NAME_Addon_BeArKDF			= "Вместе с мантией мага +";
-const string NAME_Addon_BeArNOV			= "Вместе с  робой послушника +";
-const string NAME_Addon_BeArMC			= "Вместе с доспехами из брони краулеров +";
-const string NAME_Addon_BeArLeather		= "Вместе с кожаными доспехами +";
+const string NAME_Addon_BeArSLD			= "Р’РјРµСЃС‚Рµ СЃ РґРѕСЃРїРµС…Р°РјРё РЅР°РµРјРЅРёРєР° +";
+const string NAME_Addon_BeArMIL			= "Р’РјРµСЃС‚Рµ СЃ РґРѕСЃРїРµС…Р°РјРё РѕРїРѕР»С‡РµРЅРёСЏ +";
+const string NAME_Addon_BeArKDF			= "Р’РјРµСЃС‚Рµ СЃ РјР°РЅС‚РёРµР№ РјР°РіР° +";
+const string NAME_Addon_BeArNOV			= "Р’РјРµСЃС‚Рµ СЃ  СЂРѕР±РѕР№ РїРѕСЃР»СѓС€РЅРёРєР° +";
+const string NAME_Addon_BeArMC			= "Р’РјРµСЃС‚Рµ СЃ РґРѕСЃРїРµС…Р°РјРё РёР· Р±СЂРѕРЅРё РєСЂР°СѓР»РµСЂРѕРІ +";
+const string NAME_Addon_BeArLeather		= "Р’РјРµСЃС‚Рµ СЃ РєРѕР¶Р°РЅС‹РјРё РґРѕСЃРїРµС…Р°РјРё +";
 
-const string PRINT_Addon_BDTArmor		= "Тот, кто носит эти доспехи, принадлежит к бандитам.";
+const string PRINT_Addon_BDTArmor		= "РўРѕС‚, РєС‚Рѕ РЅРѕСЃРёС‚ СЌС‚Рё РґРѕСЃРїРµС…Рё, РїСЂРёРЅР°РґР»РµР¶РёС‚ Рє Р±Р°РЅРґРёС‚Р°Рј.";
 
-const string PRINT_Addon_KUMU_01		= "Мы - три брата из одной касты.";//Texte fьr kumulative Amulette
-const string PRINT_Addon_KUMU_02		= "Вместе мы сильнее.";
+const string PRINT_Addon_KUMU_01		= "РњС‹ - С‚СЂРё Р±СЂР°С‚Р° РёР· РѕРґРЅРѕР№ РєР°СЃС‚С‹.";//Texte fСЊr kumulative Amulette
+const string PRINT_Addon_KUMU_02		= "Р’РјРµСЃС‚Рµ РјС‹ СЃРёР»СЊРЅРµРµ.";
 
-const string PRINT_Addon_NadjaWait		= "Подожди. Насчет травы...";
+const string PRINT_Addon_NadjaWait		= "РџРѕРґРѕР¶РґРё. РќР°СЃС‡РµС‚ С‚СЂР°РІС‹...";
 // *************************************************************
 // INVENTAR
 // *************************************************************
 
-const string NAME_Currency					= "Золото:";
-const string PRINT_Trade_Not_Enough_Gold	= "У вас недостаточно золота для покупки этого предмета.";
+const string NAME_Currency					= "Р—РѕР»РѕС‚Рѕ:";
+const string PRINT_Trade_Not_Enough_Gold	= "РЈ РІР°СЃ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р° РґР»СЏ РїРѕРєСѓРїРєРё СЌС‚РѕРіРѕ РїСЂРµРґРјРµС‚Р°.";
 
 // *************************************************************
-// TEXTE FЬR ITEM-BESCHREIBUNGEN IM	INV.
+// TEXTE FР¬R ITEM-BESCHREIBUNGEN IM	INV.
 // *************************************************************
 
-const string NAME_Value			= "Цена:";
+const string NAME_Value			= "Р¦РµРЅР°:";
 
-const string NAME_Mag_Circle	= "Круг:";
-const string NAME_Manakosten	= "Расход маны:";
-const string NAME_MinManakosten = "Расход маны (мин):";
-const string NAME_ManakostenMax	= "Расход маны (макс):";
-const string NAME_ManaPerSec	= "Маны в секунду";
-const string NAME_Duration		= "Длительность (мин)";
-const string NAME_Sec_Duration	= "Длительность (сек)";
+const string NAME_Mag_Circle	= "РљСЂСѓРі:";
+const string NAME_Manakosten	= "Р Р°СЃС…РѕРґ РјР°РЅС‹:";
+const string NAME_MinManakosten = "Р Р°СЃС…РѕРґ РјР°РЅС‹ (РјРёРЅ):";
+const string NAME_ManakostenMax	= "Р Р°СЃС…РѕРґ РјР°РЅС‹ (РјР°РєСЃ):";
+const string NAME_ManaPerSec	= "РњР°РЅС‹ РІ СЃРµРєСѓРЅРґСѓ";
+const string NAME_Duration		= "Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ (РјРёРЅ)";
+const string NAME_Sec_Duration	= "Р”Р»РёС‚РµР»СЊРЅРѕСЃС‚СЊ (СЃРµРє)";
 
-const string NAME_Mana_needed	= "Необходимо маны:";
-const string NAME_Str_needed	= "Необходима сила:";
-const string NAME_Dex_needed	= "Необходима ловкость:";
+const string NAME_Mana_needed	= "РќРµРѕР±С…РѕРґРёРјРѕ РјР°РЅС‹:";
+const string NAME_Str_needed	= "РќРµРѕР±С…РѕРґРёРјР° СЃРёР»Р°:";
+const string NAME_Dex_needed	= "РќРµРѕР±С…РѕРґРёРјР° Р»РѕРІРєРѕСЃС‚СЊ:";
 
 const string NAME_Spell_Load	= "Boostable spell";
 const string NAME_Spell_Invest	= "Sustainable spell";
 
-const string NAME_Dam_Edge		= "Урон оружием";
-const string NAME_Dam_Point		= "Урон стрелами";
-const string NAME_Dam_Fire		= "Урон огнем";
-const string NAME_Dam_Magic		= "Урон магией";
-const string NAME_Dam_Fly		= "Урон ветром";
+const string NAME_Dam_Edge		= "РЈСЂРѕРЅ РѕСЂСѓР¶РёРµРј";
+const string NAME_Dam_Point		= "РЈСЂРѕРЅ СЃС‚СЂРµР»Р°РјРё";
+const string NAME_Dam_Fire		= "РЈСЂРѕРЅ РѕРіРЅРµРј";
+const string NAME_Dam_Magic		= "РЈСЂРѕРЅ РјР°РіРёРµР№";
+const string NAME_Dam_Fly		= "РЈСЂРѕРЅ РІРµС‚СЂРѕРј";
 
-const string NAME_Damage		= "Урон";
-const string NAME_Damage_Max	= "Максимальный урон";
-const string NAME_PerMana		= " (на ед. маны)";
-const string NAME_DamagePerSec	= "Урон в секунду";
+const string NAME_Damage		= "РЈСЂРѕРЅ";
+const string NAME_Damage_Max	= "РњР°РєСЃРёРјР°Р»СЊРЅС‹Р№ СѓСЂРѕРЅ";
+const string NAME_PerMana		= " (РЅР° РµРґ. РјР°РЅС‹)";
+const string NAME_DamagePerSec	= "РЈСЂРѕРЅ РІ СЃРµРєСѓРЅРґСѓ";
 
-const string NAME_Prot_Edge		= "Защита от оружия:";
-const string NAME_Prot_Point	= "Защита от стрел:";
-const string NAME_Prot_Fire		= "Защита от огня:";
-const string NAME_Prot_Magic	= "Защита от магии:";
+const string NAME_Prot_Edge		= "Р—Р°С‰РёС‚Р° РѕС‚ РѕСЂСѓР¶РёСЏ:";
+const string NAME_Prot_Point	= "Р—Р°С‰РёС‚Р° РѕС‚ СЃС‚СЂРµР»:";
+const string NAME_Prot_Fire		= "Р—Р°С‰РёС‚Р° РѕС‚ РѕРіРЅСЏ:";
+const string NAME_Prot_Magic	= "Р—Р°С‰РёС‚Р° РѕС‚ РјР°РіРёРё:";
 
-const string NAME_Bonus_HP		= "Прибавка к здоровью:";
-const string NAME_Bonus_Mana	= "Прибавка к мане:";
+const string NAME_Bonus_HP		= "РџСЂРёР±Р°РІРєР° Рє Р·РґРѕСЂРѕРІСЊСЋ:";
+const string NAME_Bonus_Mana	= "РџСЂРёР±Р°РІРєР° Рє РјР°РЅРµ:";
 
 
-const string NAME_Bonus_HpMax	= "Прибавка к макс. здоровью:";
-const string NAME_Bonus_ManaMax	= "Прибавка к макс. мане:";
+const string NAME_Bonus_HpMax	= "РџСЂРёР±Р°РІРєР° Рє РјР°РєСЃ. Р·РґРѕСЂРѕРІСЊСЋ:";
+const string NAME_Bonus_ManaMax	= "РџСЂРёР±Р°РІРєР° Рє РјР°РєСЃ. РјР°РЅРµ:";
 
-const string NAME_Bonus_Dex		= "Прибавка к ловкости:";
-const string NAME_Bonus_Str		= "Прибавка к силе:";
+const string NAME_Bonus_Dex		= "РџСЂРёР±Р°РІРєР° Рє Р»РѕРІРєРѕСЃС‚Рё:";
+const string NAME_Bonus_Str		= "РџСЂРёР±Р°РІРєР° Рє СЃРёР»Рµ:";
 
-const string NAME_OneHanded		= "Одноручное оружие";
-const string NAME_TwoHanded		= "Двуручное оружие";
+const string NAME_OneHanded		= "РћРґРЅРѕСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ";
+const string NAME_TwoHanded		= "Р”РІСѓСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ";
 
-const string NAME_HealingPerMana = "Лечение на ед. маны";
-const string NAME_HealingPerCast = "Лечение:";
+const string NAME_HealingPerMana = "Р›РµС‡РµРЅРёРµ РЅР° РµРґ. РјР°РЅС‹";
+const string NAME_HealingPerCast = "Р›РµС‡РµРЅРёРµ:";
 
-const string NAME_Addon_NostalgieBonus = "Бонус ностальгии:";
+const string NAME_Addon_NostalgieBonus = "Р‘РѕРЅСѓСЃ РЅРѕСЃС‚Р°Р»СЊРіРёРё:";
 
-const string NAME_Addon_NeedsAllMana	= "Использует всю ману";
-const string NAME_Addon_SpellDontKill	= "Заклинание не убивает";	
-const string NAME_Addon_Damage_Min		= "Урон (мин)";	
+const string NAME_Addon_NeedsAllMana	= "РСЃРїРѕР»СЊР·СѓРµС‚ РІСЃСЋ РјР°РЅСѓ";
+const string NAME_Addon_SpellDontKill	= "Р—Р°РєР»РёРЅР°РЅРёРµ РЅРµ СѓР±РёРІР°РµС‚";	
+const string NAME_Addon_Damage_Min		= "РЈСЂРѕРЅ (РјРёРЅ)";	
 
 //ADDON
-const string NAME_ADDON_WISPSKILL_FF 		= "Дальнобойное оружие и боеприпасы";
-const string NAME_ADDON_WISPSKILL_NONE  	= "Золото, ключи и утварь";
-const string NAME_ADDON_WISPSKILL_RUNE 		= "Руны и свитки";
-const string NAME_ADDON_WISPSKILL_MAGIC 	= "Кольца и амулеты";
-const string NAME_ADDON_WISPSKILL_FOOD 		= "Еда и растения";
-const string NAME_ADDON_WISPSKILL_POTIONS 	= "Зелья и магия";
+const string NAME_ADDON_WISPSKILL_FF 		= "Р”Р°Р»СЊРЅРѕР±РѕР№РЅРѕРµ РѕСЂСѓР¶РёРµ Рё Р±РѕРµРїСЂРёРїР°СЃС‹";
+const string NAME_ADDON_WISPSKILL_NONE  	= "Р—РѕР»РѕС‚Рѕ, РєР»СЋС‡Рё Рё СѓС‚РІР°СЂСЊ";
+const string NAME_ADDON_WISPSKILL_RUNE 		= "Р СѓРЅС‹ Рё СЃРІРёС‚РєРё";
+const string NAME_ADDON_WISPSKILL_MAGIC 	= "РљРѕР»СЊС†Р° Рё Р°РјСѓР»РµС‚С‹";
+const string NAME_ADDON_WISPSKILL_FOOD 		= "Р•РґР° Рё СЂР°СЃС‚РµРЅРёСЏ";
+const string NAME_ADDON_WISPSKILL_POTIONS 	= "Р—РµР»СЊСЏ Рё РјР°РіРёСЏ";
 
-const string NAME_ADDON_LEARNLANGUAGE_1 	= "Изучить язык крестьян";
-const string NAME_ADDON_LEARNLANGUAGE_2 	= "Изучить язык воинов";
-const string NAME_ADDON_LEARNLANGUAGE_3 	= "Изучить язык жрецов";
+const string NAME_ADDON_LEARNLANGUAGE_1 	= "РР·СѓС‡РёС‚СЊ СЏР·С‹Рє РєСЂРµСЃС‚СЊСЏРЅ";
+const string NAME_ADDON_LEARNLANGUAGE_2 	= "РР·СѓС‡РёС‚СЊ СЏР·С‹Рє РІРѕРёРЅРѕРІ";
+const string NAME_ADDON_LEARNLANGUAGE_3 	= "РР·СѓС‡РёС‚СЊ СЏР·С‹Рє Р¶СЂРµС†РѕРІ";
 
-const string NAME_ADDON_MALUS_2H					= "Владение двуручным оружием - ухудшение";
-const string NAME_ADDON_MALUS_1H					= "Владение одноручным оружием - ухудшение";
-const string NAME_ADDON_BONUS_1H					= "Владение одноручным оружием - улучшение";
-const string NAME_ADDON_BONUS_2H					= "Владение двуручным оружием - улучшение";
-const string NAME_ADDON_ONEHANDED_BELIAR			= "Шанс дополнительного урона"; 
-const string NAME_ADDON_TWOHANDED_BELIAR			= "Шанс дополнительного урона"; 
+const string NAME_ADDON_MALUS_2H					= "Р’Р»Р°РґРµРЅРёРµ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј - СѓС…СѓРґС€РµРЅРёРµ";
+const string NAME_ADDON_MALUS_1H					= "Р’Р»Р°РґРµРЅРёРµ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј - СѓС…СѓРґС€РµРЅРёРµ";
+const string NAME_ADDON_BONUS_1H					= "Р’Р»Р°РґРµРЅРёРµ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј - СѓР»СѓС‡С€РµРЅРёРµ";
+const string NAME_ADDON_BONUS_2H					= "Р’Р»Р°РґРµРЅРёРµ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј - СѓР»СѓС‡С€РµРЅРёРµ";
+const string NAME_ADDON_ONEHANDED_BELIAR			= "РЁР°РЅСЃ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ СѓСЂРѕРЅР°"; 
+const string NAME_ADDON_TWOHANDED_BELIAR			= "РЁР°РЅСЃ РґРѕРїРѕР»РЅРёС‚РµР»СЊРЅРѕРіРѕ СѓСЂРѕРЅР°"; 
 
-const string NAME_ADDON_UPGRATEBELIARSWEAPON		= "Улучшить 'Коготь Белиара'";
-const string NAME_ADDON_BETEN						= "Помолиться";
+const string NAME_ADDON_UPGRATEBELIARSWEAPON		= "РЈР»СѓС‡С€РёС‚СЊ 'РљРѕРіРѕС‚СЊ Р‘РµР»РёР°СЂР°'";
+const string NAME_ADDON_BETEN						= "РџРѕРјРѕР»РёС‚СЊСЃСЏ";
 
-const string NAME_ADDON_PRAYIDOL_GIVENOTHING			= "Я хочу помолиться и ничего не пожертвовать.";
-const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT1			= "Я хочу помолиться и пожертвовать 1 единицу здоровья.";
-const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT2			= "Я хочу помолиться и пожертвовать 2 единицы здоровья.";
-const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT3			= "Я хочу помолиться и пожертвовать 3 единицы здоровья.";
-const string NAME_ADDON_PRAYIDOL_GIVEMANA				= "Я хочу помолиться и пожертвовать 1 единицу маны.";
+const string NAME_ADDON_PRAYIDOL_GIVENOTHING			= "РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РЅРёС‡РµРіРѕ РЅРµ РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ.";
+const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT1			= "РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 1 РµРґРёРЅРёС†Сѓ Р·РґРѕСЂРѕРІСЊСЏ.";
+const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT2			= "РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 2 РµРґРёРЅРёС†С‹ Р·РґРѕСЂРѕРІСЊСЏ.";
+const string NAME_ADDON_PRAYIDOL_GIVEHITPOINT3			= "РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 3 РµРґРёРЅРёС†С‹ Р·РґРѕСЂРѕРІСЊСЏ.";
+const string NAME_ADDON_PRAYIDOL_GIVEMANA				= "РЇ С…РѕС‡Сѓ РїРѕРјРѕР»РёС‚СЊСЃСЏ Рё РїРѕР¶РµСЂС‚РІРѕРІР°С‚СЊ 1 РµРґРёРЅРёС†Сѓ РјР°РЅС‹.";
 							
 
 // *************************************************************
-// NAMEN FЬR Produktionsitems
+// NAMEN FР¬R Produktionsitems
 // *************************************************************
-const string NAME_ItMw_1H_Common_01	 = "Меч"; //(40/30)
-const string NAME_ItMw_1H_Special_01 = "Длинный рудный меч";
-const string NAME_ItMw_2H_Special_01 = "Двуручный рудный меч";
-const string NAME_ItMw_1H_Special_02 = "Полуторный рудный меч";
-const string NAME_ItMw_2H_Special_02 = "Тяжелый двуручный рудный меч";
-const string NAME_ItMw_1H_Special_03 = "Боевой клинок орков";
-const string NAME_ItMw_2H_Special_03 = "Тяжелый рудный боевой клинок орков";
-const string NAME_ItMw_1H_Special_04 = "Рудный клинок 'Убийца драконов'";
-const string NAME_ItMw_2H_Special_04 = "Большой рудный клинок 'Убийца драконов'";
+const string NAME_ItMw_1H_Common_01	 = "РњРµС‡"; //(40/30)
+const string NAME_ItMw_1H_Special_01 = "Р”Р»РёРЅРЅС‹Р№ СЂСѓРґРЅС‹Р№ РјРµС‡";
+const string NAME_ItMw_2H_Special_01 = "Р”РІСѓСЂСѓС‡РЅС‹Р№ СЂСѓРґРЅС‹Р№ РјРµС‡";
+const string NAME_ItMw_1H_Special_02 = "РџРѕР»СѓС‚РѕСЂРЅС‹Р№ СЂСѓРґРЅС‹Р№ РјРµС‡";
+const string NAME_ItMw_2H_Special_02 = "РўСЏР¶РµР»С‹Р№ РґРІСѓСЂСѓС‡РЅС‹Р№ СЂСѓРґРЅС‹Р№ РјРµС‡";
+const string NAME_ItMw_1H_Special_03 = "Р‘РѕРµРІРѕР№ РєР»РёРЅРѕРє РѕСЂРєРѕРІ";
+const string NAME_ItMw_2H_Special_03 = "РўСЏР¶РµР»С‹Р№ СЂСѓРґРЅС‹Р№ Р±РѕРµРІРѕР№ РєР»РёРЅРѕРє РѕСЂРєРѕРІ";
+const string NAME_ItMw_1H_Special_04 = "Р СѓРґРЅС‹Р№ РєР»РёРЅРѕРє 'РЈР±РёР№С†Р° РґСЂР°РєРѕРЅРѕРІ'";
+const string NAME_ItMw_2H_Special_04 = "Р‘РѕР»СЊС€РѕР№ СЂСѓРґРЅС‹Р№ РєР»РёРЅРѕРє 'РЈР±РёР№С†Р° РґСЂР°РєРѕРЅРѕРІ'";
 
-const string NAME_Addon_Harad_01 = "Изысканный меч"; //ItMw_Schwert1 (60/50)
-const string NAME_Addon_Harad_02 = "Изысканный длинный меч"; //ItMw_Schwert4 (80/70)
-const string NAME_Addon_Harad_03 = "Рубиновый клинок"; //ItMw_Rubinklinge (100/90)
-const string NAME_Addon_Harad_04 = "Эль-бастардо"; //ItMw_ElBastardo (120/110)
-
-
-// *************************************************************
-// PrintScreen Texte fьr B_GiveInvItems
-// *************************************************************
-
-const string PRINT_Addon_gegeben			= " отдано";
-const string PRINT_GoldGegeben				= " золота отдано";
-const string PRINT_ItemGegeben				= " предмет отдан";
-const string PRINT_ItemsGegeben				= " предметов отдано";
-
-const string PRINT_Addon_erhalten			= " получено";
-const string PRINT_GoldErhalten				= " золота получено";
-const string PRINT_ItemErhalten				= " предмет получен";
-const string PRINT_ItemsErhalten			= " предметов получено";
-const string PRINT_Addon_RuneGiven			= "Белиар дарует вам еще одно заклинание";	
+const string NAME_Addon_Harad_01 = "РР·С‹СЃРєР°РЅРЅС‹Р№ РјРµС‡"; //ItMw_Schwert1 (60/50)
+const string NAME_Addon_Harad_02 = "РР·С‹СЃРєР°РЅРЅС‹Р№ РґР»РёРЅРЅС‹Р№ РјРµС‡"; //ItMw_Schwert4 (80/70)
+const string NAME_Addon_Harad_03 = "Р СѓР±РёРЅРѕРІС‹Р№ РєР»РёРЅРѕРє"; //ItMw_Rubinklinge (100/90)
+const string NAME_Addon_Harad_04 = "Р­Р»СЊ-Р±Р°СЃС‚Р°СЂРґРѕ"; //ItMw_ElBastardo (120/110)
 
 
 // *************************************************************
-// PrintScreen Texte fьr Steigerung	(Lernen)
+// PrintScreen Texte fСЊr B_GiveInvItems
+// *************************************************************
+
+const string PRINT_Addon_gegeben			= " РѕС‚РґР°РЅРѕ";
+const string PRINT_GoldGegeben				= " Р·РѕР»РѕС‚Р° РѕС‚РґР°РЅРѕ";
+const string PRINT_ItemGegeben				= " РїСЂРµРґРјРµС‚ РѕС‚РґР°РЅ";
+const string PRINT_ItemsGegeben				= " РїСЂРµРґРјРµС‚РѕРІ РѕС‚РґР°РЅРѕ";
+
+const string PRINT_Addon_erhalten			= " РїРѕР»СѓС‡РµРЅРѕ";
+const string PRINT_GoldErhalten				= " Р·РѕР»РѕС‚Р° РїРѕР»СѓС‡РµРЅРѕ";
+const string PRINT_ItemErhalten				= " РїСЂРµРґРјРµС‚ РїРѕР»СѓС‡РµРЅ";
+const string PRINT_ItemsErhalten			= " РїСЂРµРґРјРµС‚РѕРІ РїРѕР»СѓС‡РµРЅРѕ";
+const string PRINT_Addon_RuneGiven			= "Р‘РµР»РёР°СЂ РґР°СЂСѓРµС‚ РІР°Рј РµС‰Рµ РѕРґРЅРѕ Р·Р°РєР»РёРЅР°РЅРёРµ";	
+
+
+// *************************************************************
+// PrintScreen Texte fСЊr Steigerung	(Lernen)
 // *************************************************************
 
 // ------ B_BuildLearnString ------
-const string PRINT_Kosten					= ". Цена:";
+const string PRINT_Kosten					= ". Р¦РµРЅР°:";
 const string PRINT_LP						= " LP";
 
-// ------ Zu wenig LP /	techerMAX ьberschritten	------
-const string PRINT_NotEnoughLP				= "Недостаточно единиц опыта!";
-const string PRINT_NoLearnOverPersonalMAX	= "Максимум этого учителя - ";
+// ------ Zu wenig LP /	techerMAX СЊberschritten	------
+const string PRINT_NotEnoughLP				= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РµРґРёРЅРёС† РѕРїС‹С‚Р°!";
+const string PRINT_NoLearnOverPersonalMAX	= "РњР°РєСЃРёРјСѓРј СЌС‚РѕРіРѕ СѓС‡РёС‚РµР»СЏ - ";
 
 // ------ Attribute	------------------------------------------------------------------------------
-const string PRINT_LearnSTR					= "Сила + ";
-const string PRINT_LearnDEX					= "Ловкость + ";
-const string PRINT_LearnMANA_MAX			= "Мана + ";
-const string PRINT_Learnhitpoints_MAX		= "Здоровье + ";
-const string PRINT_LearnLP					= "Единицы опыта + ";
+const string PRINT_LearnSTR					= "РЎРёР»Р° + ";
+const string PRINT_LearnDEX					= "Р›РѕРІРєРѕСЃС‚СЊ + ";
+const string PRINT_LearnMANA_MAX			= "РњР°РЅР° + ";
+const string PRINT_Learnhitpoints_MAX		= "Р—РґРѕСЂРѕРІСЊРµ + ";
+const string PRINT_LearnLP					= "Р•РґРёРЅРёС†С‹ РѕРїС‹С‚Р° + ";
 
 // ------ Kreise der Magie -----------------------------------------------------------------------
-const string PRINT_LearnCircle_1			= "Изучено: 1-й круг магии";
-const string PRINT_LearnCircle_2			= "Изучено: 2-й круг магии";
-const string PRINT_LearnCircle_3			= "Изучено: 3-й круг магии";
-const string PRINT_LearnCircle_4			= "Изучено: 4-й круг магии";
-const string PRINT_LearnCircle_5			= "Изучено: 5-й круг магии";
-const string PRINT_LearnCircle_6			= "Изучено: 6-й круг магии";
+const string PRINT_LearnCircle_1			= "РР·СѓС‡РµРЅРѕ: 1-Р№ РєСЂСѓРі РјР°РіРёРё";
+const string PRINT_LearnCircle_2			= "РР·СѓС‡РµРЅРѕ: 2-Р№ РєСЂСѓРі РјР°РіРёРё";
+const string PRINT_LearnCircle_3			= "РР·СѓС‡РµРЅРѕ: 3-Р№ РєСЂСѓРі РјР°РіРёРё";
+const string PRINT_LearnCircle_4			= "РР·СѓС‡РµРЅРѕ: 4-Р№ РєСЂСѓРі РјР°РіРёРё";
+const string PRINT_LearnCircle_5			= "РР·СѓС‡РµРЅРѕ: 5-Р№ РєСЂСѓРі РјР°РіРёРё";
+const string PRINT_LearnCircle_6			= "РР·СѓС‡РµРЅРѕ: 6-Р№ РєСЂСѓРі РјР°РіРёРё";
 
 // ------ 1H -------------------------------------------------------------------------------------
-const string PRINT_Learn1H					= "Улучшено: Сражение одноручным оружием";
-const string PRINT_Learn1H_and_2H			= "Улучшено: Сражение одноручным и двуручным оружием"; //ADDON geдndert M.F. 
+const string PRINT_Learn1H					= "РЈР»СѓС‡С€РµРЅРѕ: РЎСЂР°Р¶РµРЅРёРµ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј";
+const string PRINT_Learn1H_and_2H			= "РЈР»СѓС‡С€РµРЅРѕ: РЎСЂР°Р¶РµРЅРёРµ РѕРґРЅРѕСЂСѓС‡РЅС‹Рј Рё РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј"; //ADDON geРґndert M.F. 
 // ------ 2H -------------------------------------------------------------------------------------
-const string PRINT_Learn2H					= "Улучшено: Сражение двуручным оружием";
-const string PRINT_Learn2H_and_1H			= "Улучшено: Сражение двуручным и одноручным оружием";//ADDON geдndert M.F. 
+const string PRINT_Learn2H					= "РЈР»СѓС‡С€РµРЅРѕ: РЎСЂР°Р¶РµРЅРёРµ РґРІСѓСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј";
+const string PRINT_Learn2H_and_1H			= "РЈР»СѓС‡С€РµРЅРѕ: РЎСЂР°Р¶РµРЅРёРµ РґРІСѓСЂСѓС‡РЅС‹Рј Рё РѕРґРЅРѕСЂСѓС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј";//ADDON geРґndert M.F. 
 // ------ Bow ------------------------------------------------------------------------------------
-const string PRINT_LearnBow					= "Улучшено: Меткость стрельбы из лука";
-const string PRINT_LearnBow_and_Crossbow	= "Улучшено: Меткость стрельбы из лука и арбалета";
+const string PRINT_LearnBow					= "РЈР»СѓС‡С€РµРЅРѕ: РњРµС‚РєРѕСЃС‚СЊ СЃС‚СЂРµР»СЊР±С‹ РёР· Р»СѓРєР°";
+const string PRINT_LearnBow_and_Crossbow	= "РЈР»СѓС‡С€РµРЅРѕ: РњРµС‚РєРѕСЃС‚СЊ СЃС‚СЂРµР»СЊР±С‹ РёР· Р»СѓРєР° Рё Р°СЂР±Р°Р»РµС‚Р°";
 // ------ Crossbow -------------------------------------------------------------------------------
-const string PRINT_LearnCrossbow			= "Улучшено: Меткость стрельбы из арбалета";
-const string PRINT_LearnCrossbow_and_Bow	= "Улучшено: Меткость стрельбы из арбалета и лука";
+const string PRINT_LearnCrossbow			= "РЈР»СѓС‡С€РµРЅРѕ: РњРµС‚РєРѕСЃС‚СЊ СЃС‚СЂРµР»СЊР±С‹ РёР· Р°СЂР±Р°Р»РµС‚Р°";
+const string PRINT_LearnCrossbow_and_Bow	= "РЈР»СѓС‡С€РµРЅРѕ: РњРµС‚РєРѕСЃС‚СЊ СЃС‚СЂРµР»СЊР±С‹ РёР· Р°СЂР±Р°Р»РµС‚Р° Рё Р»СѓРєР°";
 
 // ------ Diebestalente	--------------------------------------------------------------------------
-const string PRINT_LearnPicklock			= "Изучено: Владение отмычками";
-const string PRINT_LearnSneak				= "Изучено: Искусство красться";
-const string PRINT_LearnAcrobat				= "Изучено: Акробатика";
-const string PRINT_Addon_AcrobatBonus		= "Улучшение акробатики!";
-const string PRINT_LearnPickpocket			= "Изучено: Искусство карманного воровства";
-const string PRINT_Beliarshitpoints_MAX		= "Здоровье -";
+const string PRINT_LearnPicklock			= "РР·СѓС‡РµРЅРѕ: Р’Р»Р°РґРµРЅРёРµ РѕС‚РјС‹С‡РєР°РјРё";
+const string PRINT_LearnSneak				= "РР·СѓС‡РµРЅРѕ: РСЃРєСѓСЃСЃС‚РІРѕ РєСЂР°СЃС‚СЊСЃСЏ";
+const string PRINT_LearnAcrobat				= "РР·СѓС‡РµРЅРѕ: РђРєСЂРѕР±Р°С‚РёРєР°";
+const string PRINT_Addon_AcrobatBonus		= "РЈР»СѓС‡С€РµРЅРёРµ Р°РєСЂРѕР±Р°С‚РёРєРё!";
+const string PRINT_LearnPickpocket			= "РР·СѓС‡РµРЅРѕ: РСЃРєСѓСЃСЃС‚РІРѕ РєР°СЂРјР°РЅРЅРѕРіРѕ РІРѕСЂРѕРІСЃС‚РІР°";
+const string PRINT_Beliarshitpoints_MAX		= "Р—РґРѕСЂРѕРІСЊРµ -";
 
 // ------ Player Talents -------------------------------------------------------------------------
-const string PRINT_LearnSmith				= "Изучено: Искусство изготовления оружия";
-const string PRINT_LearnRunes				= "Изучено: Искусство создания рун";
-const string PRINT_LearnAlchemy				= "Изучено: Искусство приготовления зелий";
-const string PRINT_LearnAlchemyInnosEye		= "Изучено: Как заряжать Глаз Инноса";
-const string PRINT_LearnTakeAnimalTrophy	= "Изучено: Трофеи животных";
-const string PRINT_LearnForeignLanguage		= "Изучено: Язык зодчих";//ADDON
-const string PRINT_LearnWispDetector		= "Ваш блуждающий огонек обучился новым способностям";//ADDON
-const string PRINT_LearnPalTeleportSecret	= "Изучено: Создание руны-телепорта";
+const string PRINT_LearnSmith				= "РР·СѓС‡РµРЅРѕ: РСЃРєСѓСЃСЃС‚РІРѕ РёР·РіРѕС‚РѕРІР»РµРЅРёСЏ РѕСЂСѓР¶РёСЏ";
+const string PRINT_LearnRunes				= "РР·СѓС‡РµРЅРѕ: РСЃРєСѓСЃСЃС‚РІРѕ СЃРѕР·РґР°РЅРёСЏ СЂСѓРЅ";
+const string PRINT_LearnAlchemy				= "РР·СѓС‡РµРЅРѕ: РСЃРєСѓСЃСЃС‚РІРѕ РїСЂРёРіРѕС‚РѕРІР»РµРЅРёСЏ Р·РµР»РёР№";
+const string PRINT_LearnAlchemyInnosEye		= "РР·СѓС‡РµРЅРѕ: РљР°Рє Р·Р°СЂСЏР¶Р°С‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°";
+const string PRINT_LearnTakeAnimalTrophy	= "РР·СѓС‡РµРЅРѕ: РўСЂРѕС„РµРё Р¶РёРІРѕС‚РЅС‹С…";
+const string PRINT_LearnForeignLanguage		= "РР·СѓС‡РµРЅРѕ: РЇР·С‹Рє Р·РѕРґС‡РёС…";//ADDON
+const string PRINT_LearnWispDetector		= "Р’Р°С€ Р±Р»СѓР¶РґР°СЋС‰РёР№ РѕРіРѕРЅРµРє РѕР±СѓС‡РёР»СЃСЏ РЅРѕРІС‹Рј СЃРїРѕСЃРѕР±РЅРѕСЃС‚СЏРј";//ADDON
+const string PRINT_LearnPalTeleportSecret	= "РР·СѓС‡РµРЅРѕ: РЎРѕР·РґР°РЅРёРµ СЂСѓРЅС‹-С‚РµР»РµРїРѕСЂС‚Р°";
 
-const string PRINT_NotEnoughLearnPoints		= "Недостаточно единиц опыта!";
+const string PRINT_NotEnoughLearnPoints		= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РµРґРёРЅРёС† РѕРїС‹С‚Р°!";
 
 //-------- Lern	Konstanten der Descriptions	---------------------------------------------------
-const string PRINT_LearnSTR1				= "Сила + 1";
-const string PRINT_LearnSTR5				= "Сила + 5";
+const string PRINT_LearnSTR1				= "РЎРёР»Р° + 1";
+const string PRINT_LearnSTR5				= "РЎРёР»Р° + 5";
 
-const string PRINT_LearnDEX1				= "Ловкость + 1";
-const string PRINT_LearnDEX5				= "Ловкость + 5";
+const string PRINT_LearnDEX1				= "Р›РѕРІРєРѕСЃС‚СЊ + 1";
+const string PRINT_LearnDEX5				= "Р›РѕРІРєРѕСЃС‚СЊ + 5";
 
-const string PRINT_LearnMANA1				= "Мана + 1";
-const string PRINT_LearnMANA5				= "Мана + 5";
+const string PRINT_LearnMANA1				= "РњР°РЅР° + 1";
+const string PRINT_LearnMANA5				= "РњР°РЅР° + 5";
 
-const string PRINT_Learn1h1					= "Одноручное оружие + 1";
-const string PRINT_Learn1h5					= "Одноручное оружие + 5";
+const string PRINT_Learn1h1					= "РћРґРЅРѕСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ + 1";
+const string PRINT_Learn1h5					= "РћРґРЅРѕСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ + 5";
 
-const string PRINT_Learn2h1					= "Двуручное оружие + 1";
-const string PRINT_Learn2h5					= "Двуручное оружие + 5";
+const string PRINT_Learn2h1					= "Р”РІСѓСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ + 1";
+const string PRINT_Learn2h5					= "Р”РІСѓСЂСѓС‡РЅРѕРµ РѕСЂСѓР¶РёРµ + 5";
 
-const string PRINT_LearnBow1				= "Лук + 1";
-const string PRINT_LearnBow5				= "Лук + 5";
+const string PRINT_LearnBow1				= "Р›СѓРє + 1";
+const string PRINT_LearnBow5				= "Р›СѓРє + 5";
 
-const string PRINT_LearnCrossBow1			= "Арбалет + 1";
-const string PRINT_LearnCrossBow5			= "Арбалет + 5";
+const string PRINT_LearnCrossBow1			= "РђСЂР±Р°Р»РµС‚ + 1";
+const string PRINT_LearnCrossBow5			= "РђСЂР±Р°Р»РµС‚ + 5";
 
 
 
@@ -894,57 +894,57 @@ const string PRINT_LearnCrossBow5			= "Арбалет + 5";
 // Konstanten aus Dialog_Mobsi Skripten
 // ************************************
 
-const string PRINT_SleepOver				= "Вы хорошо выспались и отдохнули!";
-const string PRINT_SleepOverObsessed		= "Кошмары помешали вам отдохнуть!";
-const string PRINT_SmithSuccess				= "Оружие готово!";
-const string PRINT_RuneSuccess				= "Руна создана!";
-const string PRINT_AlchemySuccess			= "Зелье готово!";
-const string PRINT_AlchemySuccessInnoseye	= "Глаз Инноса пульсирует энергией!";
-const string PRINT_ProdItemsMissing			= "Недостаточно ингредиентов!";
-const string PRINT_TabakSuccess				= "Создан новый табак!";
-const string PRINT_JointSuccess				= "Косяк из болотной травы готов!";
-const string PRINT_Addon_Joint_01_Success	= "Зеленый послушник готов!"; //ADDON
-const string PRINT_NoInnosTears				= "Вам не хватает 'Слез Инноса'.";
-const string PRINT_Addon_GuildNeeded		= "Вы не состоите в гильдии.";
-const string PRINT_Addon_GuildNeeded_NOV	= "Вы пока еще не маг.";
+const string PRINT_SleepOver				= "Р’С‹ С…РѕСЂРѕС€Рѕ РІС‹СЃРїР°Р»РёСЃСЊ Рё РѕС‚РґРѕС…РЅСѓР»Рё!";
+const string PRINT_SleepOverObsessed		= "РљРѕС€РјР°СЂС‹ РїРѕРјРµС€Р°Р»Рё РІР°Рј РѕС‚РґРѕС…РЅСѓС‚СЊ!";
+const string PRINT_SmithSuccess				= "РћСЂСѓР¶РёРµ РіРѕС‚РѕРІРѕ!";
+const string PRINT_RuneSuccess				= "Р СѓРЅР° СЃРѕР·РґР°РЅР°!";
+const string PRINT_AlchemySuccess			= "Р—РµР»СЊРµ РіРѕС‚РѕРІРѕ!";
+const string PRINT_AlchemySuccessInnoseye	= "Р“Р»Р°Р· РРЅРЅРѕСЃР° РїСѓР»СЊСЃРёСЂСѓРµС‚ СЌРЅРµСЂРіРёРµР№!";
+const string PRINT_ProdItemsMissing			= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РёРЅРіСЂРµРґРёРµРЅС‚РѕРІ!";
+const string PRINT_TabakSuccess				= "РЎРѕР·РґР°РЅ РЅРѕРІС‹Р№ С‚Р°Р±Р°Рє!";
+const string PRINT_JointSuccess				= "РљРѕСЃСЏРє РёР· Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІС‹ РіРѕС‚РѕРІ!";
+const string PRINT_Addon_Joint_01_Success	= "Р—РµР»РµРЅС‹Р№ РїРѕСЃР»СѓС€РЅРёРє РіРѕС‚РѕРІ!"; //ADDON
+const string PRINT_NoInnosTears				= "Р’Р°Рј РЅРµ С…РІР°С‚Р°РµС‚ 'РЎР»РµР· РРЅРЅРѕСЃР°'.";
+const string PRINT_Addon_GuildNeeded		= "Р’С‹ РЅРµ СЃРѕСЃС‚РѕРёС‚Рµ РІ РіРёР»СЊРґРёРё.";
+const string PRINT_Addon_GuildNeeded_NOV	= "Р’С‹ РїРѕРєР° РµС‰Рµ РЅРµ РјР°Рі.";
 
 // ************************************
 //B_RefuseAction
 // ************************************
-const string PRINT_KeyMissing				= "Мне нужен подходящий ключ.";
-const string PRINT_PicklockMissing			= "Мне нужна отмычка.";
-const string PRINT_Picklock_or_KeyMissing	= "Мне нужен либо ключ, либо отмычка.";
-const string PRINT_NeverOpen				= "Это мне никогда не открыть.";
-const string PRINT_Toofar_Away				= "Слишком далеко.";
-const string PRINT_WrongSide				= "Не с той стороны.";
-const string PRINT_MissingItem				= "У меня нет нужного предмета.";
-const string PRINT_AnotherUser				= "Уже используется.";
-const string PRINT_NoPicklockTalent			= "У меня нет нужного навыка.";
+const string PRINT_KeyMissing				= "РњРЅРµ РЅСѓР¶РµРЅ РїРѕРґС…РѕРґСЏС‰РёР№ РєР»СЋС‡.";
+const string PRINT_PicklockMissing			= "РњРЅРµ РЅСѓР¶РЅР° РѕС‚РјС‹С‡РєР°.";
+const string PRINT_Picklock_or_KeyMissing	= "РњРЅРµ РЅСѓР¶РµРЅ Р»РёР±Рѕ РєР»СЋС‡, Р»РёР±Рѕ РѕС‚РјС‹С‡РєР°.";
+const string PRINT_NeverOpen				= "Р­С‚Рѕ РјРЅРµ РЅРёРєРѕРіРґР° РЅРµ РѕС‚РєСЂС‹С‚СЊ.";
+const string PRINT_Toofar_Away				= "РЎР»РёС€РєРѕРј РґР°Р»РµРєРѕ.";
+const string PRINT_WrongSide				= "РќРµ СЃ С‚РѕР№ СЃС‚РѕСЂРѕРЅС‹.";
+const string PRINT_MissingItem				= "РЈ РјРµРЅСЏ РЅРµС‚ РЅСѓР¶РЅРѕРіРѕ РїСЂРµРґРјРµС‚Р°.";
+const string PRINT_AnotherUser				= "РЈР¶Рµ РёСЃРїРѕР»СЊР·СѓРµС‚СЃСЏ.";
+const string PRINT_NoPicklockTalent			= "РЈ РјРµРЅСЏ РЅРµС‚ РЅСѓР¶РЅРѕРіРѕ РЅР°РІС‹РєР°.";
 
-const string PRINT_NOTHINGTOGET				= "Из этого не выйдет ничего хорошего...";
-const string PRINT_NOTHINGTOGET02			= "Там ничего нет...";
-const string PRINT_NOTHINGTOGET03			= "Нечего взять...";
+const string PRINT_NOTHINGTOGET				= "РР· СЌС‚РѕРіРѕ РЅРµ РІС‹Р№РґРµС‚ РЅРёС‡РµРіРѕ С…РѕСЂРѕС€РµРіРѕ...";
+const string PRINT_NOTHINGTOGET02			= "РўР°Рј РЅРёС‡РµРіРѕ РЅРµС‚...";
+const string PRINT_NOTHINGTOGET03			= "РќРµС‡РµРіРѕ РІР·СЏС‚СЊ...";
 
 // *************************************
-// StringKonstanten	fьr	Beten
+// StringKonstanten	fСЊr	Beten
 // *************************************
 
-const string PRINT_BlessSTR					= "Иннос слышит тебя и дарует: Сила + ";
-const string PRINT_BlessDEX					= "Иннос слышит тебя и дарует: Ловкость + ";
-const string PRINT_BlessMANA_MAX			= "Иннос слышит тебя и дарует: Мана + ";
-const string PRINT_BlessHitpoints_MAX		= "Иннос слышит тебя и дарует: Здоровье + ";
-const string PRINT_BlessMANA				= "Иннос слышит тебя и очищает твой дух.";
-const string PRINT_BlessHitpoints			= "Иннос слышит тебя и дарует тебе исцеление.";
-const string Print_BlessMana_Hit			= "Иннос слышит тебя, и ты чувствуешь себя так, как будто родился заново.";
-const string Print_BlessNone				= "Иннос благодарит тебя за твои молитвы.";
-const string Print_NotEnoughGold			= "Недостаточно золота.";
-const string Bless_Sword					= "Освятить меч (5000 золота)";
-const string Bless_Sword2					= "Освятить меч (Слезы Инноса)";
+const string PRINT_BlessSTR					= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ Рё РґР°СЂСѓРµС‚: РЎРёР»Р° + ";
+const string PRINT_BlessDEX					= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ Рё РґР°СЂСѓРµС‚: Р›РѕРІРєРѕСЃС‚СЊ + ";
+const string PRINT_BlessMANA_MAX			= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ Рё РґР°СЂСѓРµС‚: РњР°РЅР° + ";
+const string PRINT_BlessHitpoints_MAX		= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ Рё РґР°СЂСѓРµС‚: Р—РґРѕСЂРѕРІСЊРµ + ";
+const string PRINT_BlessMANA				= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ Рё РѕС‡РёС‰Р°РµС‚ С‚РІРѕР№ РґСѓС….";
+const string PRINT_BlessHitpoints			= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ Рё РґР°СЂСѓРµС‚ С‚РµР±Рµ РёСЃС†РµР»РµРЅРёРµ.";
+const string Print_BlessMana_Hit			= "РРЅРЅРѕСЃ СЃР»С‹С€РёС‚ С‚РµР±СЏ, Рё С‚С‹ С‡СѓРІСЃС‚РІСѓРµС€СЊ СЃРµР±СЏ С‚Р°Рє, РєР°Рє Р±СѓРґС‚Рѕ СЂРѕРґРёР»СЃСЏ Р·Р°РЅРѕРІРѕ.";
+const string Print_BlessNone				= "РРЅРЅРѕСЃ Р±Р»Р°РіРѕРґР°СЂРёС‚ С‚РµР±СЏ Р·Р° С‚РІРѕРё РјРѕР»РёС‚РІС‹.";
+const string Print_NotEnoughGold			= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РѕР»РѕС‚Р°.";
+const string Bless_Sword					= "РћСЃРІСЏС‚РёС‚СЊ РјРµС‡ (5000 Р·РѕР»РѕС‚Р°)";
+const string Bless_Sword2					= "РћСЃРІСЏС‚РёС‚СЊ РјРµС‡ (РЎР»РµР·С‹ РРЅРЅРѕСЃР°)";
 
-const string Pray_Paladin1					= "... Иннос, распростри свою длань над слугами своими ..." ;
-const string Pray_Paladin2					= "... благослови их своим огнем и даруй им силу ..." ;
-const string Pray_Paladin3					= "... чтобы они мужественно сражались с твоим именем на устах ...";
-const string Pray_Paladin4					= "... до победы или смерти, согласно воле твоей.";
+const string Pray_Paladin1					= "... РРЅРЅРѕСЃ, СЂР°СЃРїСЂРѕСЃС‚СЂРё СЃРІРѕСЋ РґР»Р°РЅСЊ РЅР°Рґ СЃР»СѓРіР°РјРё СЃРІРѕРёРјРё ..." ;
+const string Pray_Paladin2					= "... Р±Р»Р°РіРѕСЃР»РѕРІРё РёС… СЃРІРѕРёРј РѕРіРЅРµРј Рё РґР°СЂСѓР№ РёРј СЃРёР»Сѓ ..." ;
+const string Pray_Paladin3					= "... С‡С‚РѕР±С‹ РѕРЅРё РјСѓР¶РµСЃС‚РІРµРЅРЅРѕ СЃСЂР°Р¶Р°Р»РёСЃСЊ СЃ С‚РІРѕРёРј РёРјРµРЅРµРј РЅР° СѓСЃС‚Р°С… ...";
+const string Pray_Paladin4					= "... РґРѕ РїРѕР±РµРґС‹ РёР»Рё СЃРјРµСЂС‚Рё, СЃРѕРіР»Р°СЃРЅРѕ РІРѕР»Рµ С‚РІРѕРµР№.";
 
 // ***************************************************************************************
 // PrintScreen Texte Story
@@ -953,108 +953,108 @@ const string Pray_Paladin4					= "... до победы или смерти, согласно воле твоей.
 //--- Addon ------------------------------
 
 //---------- Dialoge Banditenlager -----------------
-const string DIALOG_ADDON_ATTENTAT_DESCRIPTION 		= "Что ты знаешь о попытке покушения на Эстебана?";
-const string DIALOG_ADDON_ATTENTAT_PRO 				= "Я хочу убить этих предателей.";
-const string DIALOG_ADDON_ATTENTAT_CONTRA 			= "Я ищу этих парней, чтобы выступить против Эстебана.";
+const string DIALOG_ADDON_ATTENTAT_DESCRIPTION 		= "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РїРѕРїС‹С‚РєРµ РїРѕРєСѓС€РµРЅРёСЏ РЅР° Р­СЃС‚РµР±Р°РЅР°?";
+const string DIALOG_ADDON_ATTENTAT_PRO 				= "РЇ С…РѕС‡Сѓ СѓР±РёС‚СЊ СЌС‚РёС… РїСЂРµРґР°С‚РµР»РµР№.";
+const string DIALOG_ADDON_ATTENTAT_CONTRA 			= "РЇ РёС‰Сѓ СЌС‚РёС… РїР°СЂРЅРµР№, С‡С‚РѕР±С‹ РІС‹СЃС‚СѓРїРёС‚СЊ РїСЂРѕС‚РёРІ Р­СЃС‚РµР±Р°РЅР°.";
 
-const string DIALOG_ADDON_MINE_DESCRIPTION			= "Ты нужен в шахте. (Дать красный камень)";
-const string DIALOG_ADDON_GOLD_DESCRIPTION			= "Что мне нужно знать о добыче золота?";
-const string PRINT_ADDON_KNOWSBF					= "Изучено - яд из жала";	
-const string PRINT_ADDON_HACKCHANCE					= "Улучшен навык рудокопа! (+";		
-const string PRINT_ADDON_STUNTBONUS					= "Бонус акробатики";
-const string PRINT_ADDON_EXPLOITBONUS				= "Минус за безрассудство";	
+const string DIALOG_ADDON_MINE_DESCRIPTION			= "РўС‹ РЅСѓР¶РµРЅ РІ С€Р°С…С‚Рµ. (Р”Р°С‚СЊ РєСЂР°СЃРЅС‹Р№ РєР°РјРµРЅСЊ)";
+const string DIALOG_ADDON_GOLD_DESCRIPTION			= "Р§С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ Р·РЅР°С‚СЊ Рѕ РґРѕР±С‹С‡Рµ Р·РѕР»РѕС‚Р°?";
+const string PRINT_ADDON_KNOWSBF					= "РР·СѓС‡РµРЅРѕ - СЏРґ РёР· Р¶Р°Р»Р°";	
+const string PRINT_ADDON_HACKCHANCE					= "РЈР»СѓС‡С€РµРЅ РЅР°РІС‹Рє СЂСѓРґРѕРєРѕРїР°! (+";		
+const string PRINT_ADDON_STUNTBONUS					= "Р‘РѕРЅСѓСЃ Р°РєСЂРѕР±Р°С‚РёРєРё";
+const string PRINT_ADDON_EXPLOITBONUS				= "РњРёРЅСѓСЃ Р·Р° Р±РµР·СЂР°СЃСЃСѓРґСЃС‚РІРѕ";	
 	
 	
-const string PRINT_ADDON_ENOUGHTALK					= "Хватит болтать. Давай сражаться.";	
+const string PRINT_ADDON_ENOUGHTALK					= "РҐРІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. Р”Р°РІР°Р№ СЃСЂР°Р¶Р°С‚СЊСЃСЏ.";	
 // ------ allgemeine ------
-const string PRINT_FullyHealed					= "Полностью исцелен.";
-const string PRINT_Eat1							= "Вы чувствуете себя освеженным.";
-const string PRINT_Eat2							= "Сочная и свежая пища.";
-const string PRINT_Eat3							= "Вы чувствуете, как силы наполняют вас!";
+const string PRINT_FullyHealed					= "РџРѕР»РЅРѕСЃС‚СЊСЋ РёСЃС†РµР»РµРЅ.";
+const string PRINT_Eat1							= "Р’С‹ С‡СѓРІСЃС‚РІСѓРµС‚Рµ СЃРµР±СЏ РѕСЃРІРµР¶РµРЅРЅС‹Рј.";
+const string PRINT_Eat2							= "РЎРѕС‡РЅР°СЏ Рё СЃРІРµР¶Р°СЏ РїРёС‰Р°.";
+const string PRINT_Eat3							= "Р’С‹ С‡СѓРІСЃС‚РІСѓРµС‚Рµ, РєР°Рє СЃРёР»С‹ РЅР°РїРѕР»РЅСЏСЋС‚ РІР°СЃ!";
 
-const string Print_ReadAstronomy				= "Чувство божественного просвещения наполняет вас.";
+const string Print_ReadAstronomy				= "Р§СѓРІСЃС‚РІРѕ Р±РѕР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ РїСЂРѕСЃРІРµС‰РµРЅРёСЏ РЅР°РїРѕР»РЅСЏРµС‚ РІР°СЃ.";
 
 // ------ spezielle	-------
-const string PRINT_GornsTreasure				= "Получено 100 золота.";
-const string PRINT_KerolothsGeldBeutel			= "Получено 300 золота.";
-const string PRINT_MalethBanditsGold			= "Получено 300 золота.";
-const string Print_DiegosTreasure				= "Получено 2000 золота.";
-const string PRINT_IrdorathBookDoesntOpen		= "Эту книгу невозможно открыть.";
-const string PRINT_IrdorathBookHiddenKey		= "В переплете этой книги спрятан ключ!";
-const string PRINT_FishLetter					= "В этой рыбе спрятана записка.";
-const string Print_InnoseyeGiven				= "Глаз Инноса отдан";
-const STRING Print_InnosEyeGet					= "Получен Глаз Инноса";
+const string PRINT_GornsTreasure				= "РџРѕР»СѓС‡РµРЅРѕ 100 Р·РѕР»РѕС‚Р°.";
+const string PRINT_KerolothsGeldBeutel			= "РџРѕР»СѓС‡РµРЅРѕ 300 Р·РѕР»РѕС‚Р°.";
+const string PRINT_MalethBanditsGold			= "РџРѕР»СѓС‡РµРЅРѕ 300 Р·РѕР»РѕС‚Р°.";
+const string Print_DiegosTreasure				= "РџРѕР»СѓС‡РµРЅРѕ 2000 Р·РѕР»РѕС‚Р°.";
+const string PRINT_IrdorathBookDoesntOpen		= "Р­С‚Сѓ РєРЅРёРіСѓ РЅРµРІРѕР·РјРѕР¶РЅРѕ РѕС‚РєСЂС‹С‚СЊ.";
+const string PRINT_IrdorathBookHiddenKey		= "Р’ РїРµСЂРµРїР»РµС‚Рµ СЌС‚РѕР№ РєРЅРёРіРё СЃРїСЂСЏС‚Р°РЅ РєР»СЋС‡!";
+const string PRINT_FishLetter					= "Р’ СЌС‚РѕР№ СЂС‹Р±Рµ СЃРїСЂСЏС‚Р°РЅР° Р·Р°РїРёСЃРєР°.";
+const string Print_InnoseyeGiven				= "Р“Р»Р°Р· РРЅРЅРѕСЃР° РѕС‚РґР°РЅ";
+const STRING Print_InnosEyeGet					= "РџРѕР»СѓС‡РµРЅ Р“Р»Р°Р· РРЅРЅРѕСЃР°";
 
-const string PRINT_GotFourItems					= "Получено 4 предмета";
-const string PRINT_OrcEliteRingEquip			= "Вы чувствуете слабость.";
-const string PRINT_SCIsObsessed					= "Вы чувствуете удушье!";
-const string PRINT_ClearSCObsession				= "Вы чувствуете себя освобожденным!";
-const string PRINT_NumberLeft					= " осталось";
-const string PRINT_NovizenLeft					= " послушников осталось";
+const string PRINT_GotFourItems					= "РџРѕР»СѓС‡РµРЅРѕ 4 РїСЂРµРґРјРµС‚Р°";
+const string PRINT_OrcEliteRingEquip			= "Р’С‹ С‡СѓРІСЃС‚РІСѓРµС‚Рµ СЃР»Р°Р±РѕСЃС‚СЊ.";
+const string PRINT_SCIsObsessed					= "Р’С‹ С‡СѓРІСЃС‚РІСѓРµС‚Рµ СѓРґСѓС€СЊРµ!";
+const string PRINT_ClearSCObsession				= "Р’С‹ С‡СѓРІСЃС‚РІСѓРµС‚Рµ СЃРµР±СЏ РѕСЃРІРѕР±РѕР¶РґРµРЅРЅС‹Рј!";
+const string PRINT_NumberLeft					= " РѕСЃС‚Р°Р»РѕСЃСЊ";
+const string PRINT_NovizenLeft					= " РїРѕСЃР»СѓС€РЅРёРєРѕРІ РѕСЃС‚Р°Р»РѕСЃСЊ";
 
 //------ Addon-----
-const string PRINT_Addon_CanyonRazorsLeft				= "  бритвозубов осталось";
+const string PRINT_Addon_CanyonRazorsLeft				= "  Р±СЂРёС‚РІРѕР·СѓР±РѕРІ РѕСЃС‚Р°Р»РѕСЃСЊ";
 //-----------------
 
-const string PRINT_DragKillCount				= "Враг повержен. На этот раз я не буду гнить под камнями. Пришло время возвращаться на корабль.";
+const string PRINT_DragKillCount				= "Р’СЂР°Рі РїРѕРІРµСЂР¶РµРЅ. РќР° СЌС‚РѕС‚ СЂР°Р· СЏ РЅРµ Р±СѓРґСѓ РіРЅРёС‚СЊ РїРѕРґ РєР°РјРЅСЏРјРё. РџСЂРёС€Р»Рѕ РІСЂРµРјСЏ РІРѕР·РІСЂР°С‰Р°С‚СЊСЃСЏ РЅР° РєРѕСЂР°Р±Р»СЊ.";
 
 // ------ Smith	Weapon ------
-const string PRINT_Smith_1H_Special_01			= " (1 кусок руды)";
-const string PRINT_Smith_2H_Special_01			= " (2 куска руды)";
-const string PRINT_Smith_1H_Special_02			= " (2 куска руды)";
-const string PRINT_Smith_2H_Special_02			= " (3 куска руды)";
-const string PRINT_Smith_1H_Special_03			= " (3 куска руды)";
-const string PRINT_Smith_2H_Special_03			= " (4 куска руды)";
-const string PRINT_Smith_1H_Special_04			= " (4 куска руды, 5 ед. драконьей крови)";
-const string PRINT_Smith_2H_Special_04			= " (5 кусков руды, 5 ед. драконьей крови)";
+const string PRINT_Smith_1H_Special_01			= " (1 РєСѓСЃРѕРє СЂСѓРґС‹)";
+const string PRINT_Smith_2H_Special_01			= " (2 РєСѓСЃРєР° СЂСѓРґС‹)";
+const string PRINT_Smith_1H_Special_02			= " (2 РєСѓСЃРєР° СЂСѓРґС‹)";
+const string PRINT_Smith_2H_Special_02			= " (3 РєСѓСЃРєР° СЂСѓРґС‹)";
+const string PRINT_Smith_1H_Special_03			= " (3 РєСѓСЃРєР° СЂСѓРґС‹)";
+const string PRINT_Smith_2H_Special_03			= " (4 РєСѓСЃРєР° СЂСѓРґС‹)";
+const string PRINT_Smith_1H_Special_04			= " (4 РєСѓСЃРєР° СЂСѓРґС‹, 5 РµРґ. РґСЂР°РєРѕРЅСЊРµР№ РєСЂРѕРІРё)";
+const string PRINT_Smith_2H_Special_04			= " (5 РєСѓСЃРєРѕРІ СЂСѓРґС‹, 5 РµРґ. РґСЂР°РєРѕРЅСЊРµР№ РєСЂРѕРІРё)";
 
 
-const string NAME_MageScroll			= "Свиток";
+const string NAME_MageScroll			= "РЎРІРёС‚РѕРє";
 
 
 
 //----------- Items	in Items finden	--------------------
 
-const string PRINT_FoundRing					= "Найдено кольцо";
-const string PRINT_FoundAmulett					= "Найден амулет";
-const string PRINT_FoundScroll					= "Найден свиток с заклинанием";
-const string PRINT_FoundPotion					= "Найдено зелье";
-const string PRINT_FoundMap						= "Найдена карта";
+const string PRINT_FoundRing					= "РќР°Р№РґРµРЅРѕ РєРѕР»СЊС†Рѕ";
+const string PRINT_FoundAmulett					= "РќР°Р№РґРµРЅ Р°РјСѓР»РµС‚";
+const string PRINT_FoundScroll					= "РќР°Р№РґРµРЅ СЃРІРёС‚РѕРє СЃ Р·Р°РєР»РёРЅР°РЅРёРµРј";
+const string PRINT_FoundPotion					= "РќР°Р№РґРµРЅРѕ Р·РµР»СЊРµ";
+const string PRINT_FoundMap						= "РќР°Р№РґРµРЅР° РєР°СЂС‚Р°";
 
-const string PRINT_FoundGold10					= "Найдено 10 золота";
-const string PRINT_FoundGold25					= "Найдено 25 золота";
-const string PRINT_FoundGold50					= "Найдено 50 золота";
-const string PRINT_FoundGold100					= "Найдено 100 золота";
-const string PRINT_FoundRuneBlank				= "Найдена руна";
-const string PRINT_FoundOreNugget				= "Найден кусок руды";
-const string PRINT_FoundLockpick				= "Найдена отмычка";
-const string PRINT_HannasBeutel					= "Маленький ключик и несколько отмычек ...";
-const string PRINT_GotPlants					= "Найдены травы";
+const string PRINT_FoundGold10					= "РќР°Р№РґРµРЅРѕ 10 Р·РѕР»РѕС‚Р°";
+const string PRINT_FoundGold25					= "РќР°Р№РґРµРЅРѕ 25 Р·РѕР»РѕС‚Р°";
+const string PRINT_FoundGold50					= "РќР°Р№РґРµРЅРѕ 50 Р·РѕР»РѕС‚Р°";
+const string PRINT_FoundGold100					= "РќР°Р№РґРµРЅРѕ 100 Р·РѕР»РѕС‚Р°";
+const string PRINT_FoundRuneBlank				= "РќР°Р№РґРµРЅР° СЂСѓРЅР°";
+const string PRINT_FoundOreNugget				= "РќР°Р№РґРµРЅ РєСѓСЃРѕРє СЂСѓРґС‹";
+const string PRINT_FoundLockpick				= "РќР°Р№РґРµРЅР° РѕС‚РјС‹С‡РєР°";
+const string PRINT_HannasBeutel					= "РњР°Р»РµРЅСЊРєРёР№ РєР»СЋС‡РёРє Рё РЅРµСЃРєРѕР»СЊРєРѕ РѕС‚РјС‹С‡РµРє ...";
+const string PRINT_GotPlants					= "РќР°Р№РґРµРЅС‹ С‚СЂР°РІС‹";
 
 //-------------
-const string PRINT_NoSweeping					= "Чтобы подмести все эти комнаты потребуется вечность!";
+const string PRINT_NoSweeping					= "Р§С‚РѕР±С‹ РїРѕРґРјРµСЃС‚Рё РІСЃРµ СЌС‚Рё РєРѕРјРЅР°С‚С‹ РїРѕС‚СЂРµР±СѓРµС‚СЃСЏ РІРµС‡РЅРѕСЃС‚СЊ!";
 
-const string PRINT_Mandibles					= "Этот секрет не дает никакого эффекта.";
-const string PRINT_Bloodfly						= "На вкус горький и ядовитый.";
+const string PRINT_Mandibles					= "Р­С‚РѕС‚ СЃРµРєСЂРµС‚ РЅРµ РґР°РµС‚ РЅРёРєР°РєРѕРіРѕ СЌС„С„РµРєС‚Р°.";
+const string PRINT_Bloodfly						= "РќР° РІРєСѓСЃ РіРѕСЂСЊРєРёР№ Рё СЏРґРѕРІРёС‚С‹Р№.";
 // ***************************************************************************************
 // Abuyin Patchwork
 // ***************************************************************************************
-const string PRINT_PILZ 	= "Грибной табак";
-const string PRINT_DOPPEL 	= "Двойное яблоко";
-const string PRINT_HONIG	= "Медовый табак";
-const string PRINT_KRAUT 	= "Травяной табак";
+const string PRINT_PILZ 	= "Р“СЂРёР±РЅРѕР№ С‚Р°Р±Р°Рє";
+const string PRINT_DOPPEL 	= "Р”РІРѕР№РЅРѕРµ СЏР±Р»РѕРєРѕ";
+const string PRINT_HONIG	= "РњРµРґРѕРІС‹Р№ С‚Р°Р±Р°Рє";
+const string PRINT_KRAUT 	= "РўСЂР°РІСЏРЅРѕР№ С‚Р°Р±Р°Рє";
 
 // ***************************************************************************************
 // sonstige	PrintScreen	Texte
 // ***************************************************************************************
 
-const string PRINT_XPGained				= "Опыт + ";			// bei jedem Erfahrungsgewinn
-const string PRINT_LevelUp				= "Повышение уровня!";		// beim	Stufenaufstieg
-const string PRINT_NewLogEntry			= "Новая запись в дневнике";
-const string PRINT_TeleportTooFarAway	= "Слишком далеко";
-const string PRINT_BiffsAnteil	= "Доля Биффа: ";
-const string PRINT_BiffGold		= " золота";
-const string PRINT_Addon_SCIsWearingRangerRing = "Теперь вы носите знак 'Кольца Воды'";
+const string PRINT_XPGained				= "РћРїС‹С‚ + ";			// bei jedem Erfahrungsgewinn
+const string PRINT_LevelUp				= "РџРѕРІС‹С€РµРЅРёРµ СѓСЂРѕРІРЅСЏ!";		// beim	Stufenaufstieg
+const string PRINT_NewLogEntry			= "РќРѕРІР°СЏ Р·Р°РїРёСЃСЊ РІ РґРЅРµРІРЅРёРєРµ";
+const string PRINT_TeleportTooFarAway	= "РЎР»РёС€РєРѕРј РґР°Р»РµРєРѕ";
+const string PRINT_BiffsAnteil	= "Р”РѕР»СЏ Р‘РёС„С„Р°: ";
+const string PRINT_BiffGold		= " Р·РѕР»РѕС‚Р°";
+const string PRINT_Addon_SCIsWearingRangerRing = "РўРµРїРµСЂСЊ РІС‹ РЅРѕСЃРёС‚Рµ Р·РЅР°Рє 'РљРѕР»СЊС†Р° Р’РѕРґС‹'";
 
 // ***************************************************************************************
 // variable	Item Inventory Texte
@@ -1062,29 +1062,29 @@ const string PRINT_Addon_SCIsWearingRangerRing = "Теперь вы носите знак 'Кольца 
 
 var	string TEXT_Innoseye_Setting;
 
-const string TEXT_Innoseye_Setting_Broken	= "Оправа этого амулета повреждена.";
-const string TEXT_Innoseye_Setting_Repaired	= "Оправа этого амулета в целости и сохранности.";
-const string TEXT_Innoseye_Gem		= "Драгоценный камень тускл и безжизнен.";
+const string TEXT_Innoseye_Setting_Broken	= "РћРїСЂР°РІР° СЌС‚РѕРіРѕ Р°РјСѓР»РµС‚Р° РїРѕРІСЂРµР¶РґРµРЅР°.";
+const string TEXT_Innoseye_Setting_Repaired	= "РћРїСЂР°РІР° СЌС‚РѕРіРѕ Р°РјСѓР»РµС‚Р° РІ С†РµР»РѕСЃС‚Рё Рё СЃРѕС…СЂР°РЅРЅРѕСЃС‚Рё.";
+const string TEXT_Innoseye_Gem		= "Р”СЂР°РіРѕС†РµРЅРЅС‹Р№ РєР°РјРµРЅСЊ С‚СѓСЃРєР» Рё Р±РµР·Р¶РёР·РЅРµРЅ.";
 
 // ***************************************************************************************
 // Diebtstahl Text Konstanten
 // ***************************************************************************************
-const string Pickpocket_20	=	"(Нет ничего проще, чем украсть его кошелек.)";
-const string Pickpocket_40	=	"(Украсть его кошелек будет довольно просто.)";
-const string Pickpocket_60	=	"(Пытаться украсть его кошелек довольно рискованно.)";
-const string Pickpocket_80	=	"(Украсть его кошелек будет довольно трудно.)";
-const string Pickpocket_100	=	"(Украсть его кошелек будет чертовски трудно.)";
-const string Pickpocket_120	=	"(Украсть его кошелек практически невозможно.)";
+const string Pickpocket_20	=	"(РќРµС‚ РЅРёС‡РµРіРѕ РїСЂРѕС‰Рµ, С‡РµРј СѓРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє.)";
+const string Pickpocket_40	=	"(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ.)";
+const string Pickpocket_60	=	"(РџС‹С‚Р°С‚СЊСЃСЏ СѓРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє РґРѕРІРѕР»СЊРЅРѕ СЂРёСЃРєРѕРІР°РЅРЅРѕ.)";
+const string Pickpocket_80	=	"(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ РґРѕРІРѕР»СЊРЅРѕ С‚СЂСѓРґРЅРѕ.)";
+const string Pickpocket_100	=	"(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ С‡РµСЂС‚РѕРІСЃРєРё С‚СЂСѓРґРЅРѕ.)";
+const string Pickpocket_120	=	"(РЈРєСЂР°СЃС‚СЊ РµРіРѕ РєРѕС€РµР»РµРє РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµРІРѕР·РјРѕР¶РЅРѕ.)";
 
-const string Pickpocket_20_Female	=	"(Нет ничего проще, чем украсть ее кошелек.)";
-const string Pickpocket_40_Female	=	"(Украсть ее кошелек будет довольно просто.)";
-const string Pickpocket_60_Female	=	"(Пытаться украсть ее кошелек довольно рискованно.)";
-const string Pickpocket_80_Female	=	"(Украсть ее кошелек будет довольно трудно.)";
-const string Pickpocket_100_Female	=	"(Украсть ее кошелек будет чертовски трудно.)";
-const string Pickpocket_120_Female	=	"(Украсть ее кошелек практически невозможно.)";
+const string Pickpocket_20_Female	=	"(РќРµС‚ РЅРёС‡РµРіРѕ РїСЂРѕС‰Рµ, С‡РµРј СѓРєСЂР°СЃС‚СЊ РµРµ РєРѕС€РµР»РµРє.)";
+const string Pickpocket_40_Female	=	"(РЈРєСЂР°СЃС‚СЊ РµРµ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ РґРѕРІРѕР»СЊРЅРѕ РїСЂРѕСЃС‚Рѕ.)";
+const string Pickpocket_60_Female	=	"(РџС‹С‚Р°С‚СЊСЃСЏ СѓРєСЂР°СЃС‚СЊ РµРµ РєРѕС€РµР»РµРє РґРѕРІРѕР»СЊРЅРѕ СЂРёСЃРєРѕРІР°РЅРЅРѕ.)";
+const string Pickpocket_80_Female	=	"(РЈРєСЂР°СЃС‚СЊ РµРµ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ РґРѕРІРѕР»СЊРЅРѕ С‚СЂСѓРґРЅРѕ.)";
+const string Pickpocket_100_Female	=	"(РЈРєСЂР°СЃС‚СЊ РµРµ РєРѕС€РµР»РµРє Р±СѓРґРµС‚ С‡РµСЂС‚РѕРІСЃРєРё С‚СЂСѓРґРЅРѕ.)";
+const string Pickpocket_120_Female	=	"(РЈРєСЂР°СЃС‚СЊ РµРµ РєРѕС€РµР»РµРє РїСЂР°РєС‚РёС‡РµСЃРєРё РЅРµРІРѕР·РјРѕР¶РЅРѕ.)";
 
 // ****************************************************************************************
-// Relative	Y-Koordinaten fьr die Bildschirmausgabe	(in	% der aktuellen	Bildhцhe, von oben)
+// Relative	Y-Koordinaten fСЊr die Bildschirmausgabe	(in	% der aktuellen	BildhС†he, von oben)
 // ****************************************************************************************
 
 const int YPOS_GoldGiven		= 34;
@@ -1102,63 +1102,63 @@ const int YPOS_XPGAINED			= 55;
 // ******************************
 
 // ------ G_PickLock ------
-const string PRINT_PICKLOCK_SUCCESS	= "Похоже, я на верном пути.";
-const string PRINT_PICKLOCK_UNLOCK	= "Замок открыт.";
-const string PRINT_PICKLOCK_FAILURE	= "Черт ... Попробуем еще раз.";
-const string PRINT_PICKLOCK_BROKEN	= "Отмычка сломалась.";
+const string PRINT_PICKLOCK_SUCCESS	= "РџРѕС…РѕР¶Рµ, СЏ РЅР° РІРµСЂРЅРѕРј РїСѓС‚Рё.";
+const string PRINT_PICKLOCK_UNLOCK	= "Р—Р°РјРѕРє РѕС‚РєСЂС‹С‚.";
+const string PRINT_PICKLOCK_FAILURE	= "Р§РµСЂС‚ ... РџРѕРїСЂРѕР±СѓРµРј РµС‰Рµ СЂР°Р·.";
+const string PRINT_PICKLOCK_BROKEN	= "РћС‚РјС‹С‡РєР° СЃР»РѕРјР°Р»Р°СЃСЊ.";
 
 // ------ G_CanNotUse ------
-const string PRINT_HITPOINTS_MISSING		= "Недостаточно здоровья.";
-const string PRINT_HITPOINTS_MAX_MISSING	= "максимум здоровья маловат...";
-const string PRINT_MANA_MISSING				= "Недостаточно маны.";
-const string PRINT_MANA_MAX_MISSING			= "Максимум маны маловат...";
-const string PRINT_STRENGTH_MISSING			= "Недостаточно силы.";
-const string PRINT_DEXTERITY_MISSING		= "Недостаточно ловкости.";
+const string PRINT_HITPOINTS_MISSING		= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р·РґРѕСЂРѕРІСЊСЏ.";
+const string PRINT_HITPOINTS_MAX_MISSING	= "РјР°РєСЃРёРјСѓРј Р·РґРѕСЂРѕРІСЊСЏ РјР°Р»РѕРІР°С‚...";
+const string PRINT_MANA_MISSING				= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ РјР°РЅС‹.";
+const string PRINT_MANA_MAX_MISSING			= "РњР°РєСЃРёРјСѓРј РјР°РЅС‹ РјР°Р»РѕРІР°С‚...";
+const string PRINT_STRENGTH_MISSING			= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ СЃРёР»С‹.";
+const string PRINT_DEXTERITY_MISSING		= "РќРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ Р»РѕРІРєРѕСЃС‚Рё.";
 
 // ------ G_CanNotCast ------
-const string PRINT_MAGCIRCLES_MISSING		= "Слишком низкий магический круг для использования этой руны.";
+const string PRINT_MAGCIRCLES_MISSING		= "РЎР»РёС€РєРѕРј РЅРёР·РєРёР№ РјР°РіРёС‡РµСЃРєРёР№ РєСЂСѓРі РґР»СЏ РёСЃРїРѕР»СЊР·РѕРІР°РЅРёСЏ СЌС‚РѕР№ СЂСѓРЅС‹.";
 
 //ADDON
-const string PRINT_ADDON_BELIARSCOURSE_MISSING		= "Это оружие нельзя использовать";
+const string PRINT_ADDON_BELIARSCOURSE_MISSING		= "Р­С‚Рѕ РѕСЂСѓР¶РёРµ РЅРµР»СЊР·СЏ РёСЃРїРѕР»СЊР·РѕРІР°С‚СЊ";
 
 
 // ************************************
 // Vom Programm	ausgelagerte Konstanten
 // ------------------------------------
-// NAMEN NICHT ДNDERN!
+// NAMEN NICHT Р”NDERN!
 // ************************************
 
-// Bidschrimausgabe	zum	Thema SchloЯ цffnen/knacken
-const string _STR_MESSAGE_INTERACT_NO_KEY	= "Нет отмычки или подходящего ключа.";
+// Bidschrimausgabe	zum	Thema SchloРЇ С†ffnen/knacken
+const string _STR_MESSAGE_INTERACT_NO_KEY	= "РќРµС‚ РѕС‚РјС‹С‡РєРё РёР»Рё РїРѕРґС…РѕРґСЏС‰РµРіРѕ РєР»СЋС‡Р°.";
 
-// Bidschrimausgabe	fьrs Tausch-Fenster
-const string _STR_MESSAGE_TRADE_FAILURE		= "Ваши товары недостаточно ценные."	;
+// Bidschrimausgabe	fСЊrs Tausch-Fenster
+const string _STR_MESSAGE_TRADE_FAILURE		= "Р’Р°С€Рё С‚РѕРІР°СЂС‹ РЅРµРґРѕСЃС‚Р°С‚РѕС‡РЅРѕ С†РµРЅРЅС‹Рµ."	;
 
 // Trade-Manager
-const string STR_INFO_TRADE_ACCEPT						= "Принять"			;
-const string STR_INFO_TRADE_RESET						= "Отклонить"			;
-const string STR_INFO_TRADE_EXIT						= "НАЗАД"				;
+const string STR_INFO_TRADE_ACCEPT						= "РџСЂРёРЅСЏС‚СЊ"			;
+const string STR_INFO_TRADE_RESET						= "РћС‚РєР»РѕРЅРёС‚СЊ"			;
+const string STR_INFO_TRADE_EXIT						= "РќРђР—РђР”"				;
 
 // Menuetext-Konstanten	(max 60	Zeichen)
-const string MENU_TEXT_NEEDS_APPLY		= "Нажмите ENTER для активации!";
-const string MENU_TEXT_NEEDS_RESTART	= "Некоторые настройки вступят в силу только после рестарта.";
+const string MENU_TEXT_NEEDS_APPLY		= "РќР°Р¶РјРёС‚Рµ ENTER РґР»СЏ Р°РєС‚РёРІР°С†РёРё!";
+const string MENU_TEXT_NEEDS_RESTART	= "РќРµРєРѕС‚РѕСЂС‹Рµ РЅР°СЃС‚СЂРѕР№РєРё РІСЃС‚СѓРїСЏС‚ РІ СЃРёР»Сѓ С‚РѕР»СЊРєРѕ РїРѕСЃР»Рµ СЂРµСЃС‚Р°СЂС‚Р°.";
 
 
 // ****************
 // B_Kapitelwechsel
 // ****************
 
-const string KapWechsel_1			= "Часть 1"					;
-const string KapWechsel_1_Text		= "Угроза"				;
-const string KapWechsel_2			= "Часть 2"					;
-const string KapWechsel_2_Text		= "Возвращение в колонию"		;
-const string KapWechsel_3			= "Часть 3"					;
-const string KapWechsel_3_Text		= "Глаз Инноса"				;
-const string KapWechsel_4			= "Часть 4"					;
-const string KapWechsel_4_Text		= "Охота на драконов"					;
-const string KapWechsel_5			= "Часть 5"					;
-const string KapWechsel_5_Text		= "Отплытие"		;
-const string KapWechsel_6			= "Часть 6"					;
-const string KapWechsel_6_Text		= "Чертоги Ирдората"		;
+const string KapWechsel_1			= "Р§Р°СЃС‚СЊ 1"					;
+const string KapWechsel_1_Text		= "РЈРіСЂРѕР·Р°"				;
+const string KapWechsel_2			= "Р§Р°СЃС‚СЊ 2"					;
+const string KapWechsel_2_Text		= "Р’РѕР·РІСЂР°С‰РµРЅРёРµ РІ РєРѕР»РѕРЅРёСЋ"		;
+const string KapWechsel_3			= "Р§Р°СЃС‚СЊ 3"					;
+const string KapWechsel_3_Text		= "Р“Р»Р°Р· РРЅРЅРѕСЃР°"				;
+const string KapWechsel_4			= "Р§Р°СЃС‚СЊ 4"					;
+const string KapWechsel_4_Text		= "РћС…РѕС‚Р° РЅР° РґСЂР°РєРѕРЅРѕРІ"					;
+const string KapWechsel_5			= "Р§Р°СЃС‚СЊ 5"					;
+const string KapWechsel_5_Text		= "РћС‚РїР»С‹С‚РёРµ"		;
+const string KapWechsel_6			= "Р§Р°СЃС‚СЊ 6"					;
+const string KapWechsel_6_Text		= "Р§РµСЂС‚РѕРіРё РСЂРґРѕСЂР°С‚Р°"		;
 
 //-----Written Texte----------

@@ -82,11 +82,11 @@ FUNC VOID DIA_Addon_Huno_Abwimmeln_Info()
 {	
 	if (Huno_MEGA_Angepisst == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_00"); //Какого черта тебе здесь нужно? Проваливай!
+		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_00"); //РљР°РєРѕРіРѕ С‡РµСЂС‚Р° С‚РµР±Рµ Р·РґРµСЃСЊ РЅСѓР¶РЅРѕ? РџСЂРѕРІР°Р»РёРІР°Р№!
 	}
 	else //schickt dich in die Kneipe
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_01"); //Чего же ты ждешь? Ну-ка, двинул в таверну!
+		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_01"); //Р§РµРіРѕ Р¶Рµ С‚С‹ Р¶РґРµС€СЊ? РќСѓ-РєР°, РґРІРёРЅСѓР» РІ С‚Р°РІРµСЂРЅСѓ!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -103,7 +103,7 @@ instance DIA_Addon_Huno_Hi   (C_INFO)
 	condition   = DIA_Addon_Huno_Hi_Condition;
 	information = DIA_Addon_Huno_Hi_Info;
 	permanent   = FALSE;
-	description = "Я гляжу, ты в своем деле собаку съел.";
+	description = "РЇ РіР»СЏР¶Сѓ, С‚С‹ РІ СЃРІРѕРµРј РґРµР»Рµ СЃРѕР±Р°РєСѓ СЃСЉРµР».";
 };
 FUNC INT DIA_Addon_Huno_Hi_Condition()
 {	
@@ -111,24 +111,24 @@ FUNC INT DIA_Addon_Huno_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_00");//Я гляжу, ты в своем деле собаку съел.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_01");//И не одну. Сталь принес? 
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_02");//Сталь? Кажется, ты меня с кем-то спутал...
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_03");//Хм... Мы нигде раньше не пересекались?
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_00");//РЇ РіР»СЏР¶Сѓ, С‚С‹ РІ СЃРІРѕРµРј РґРµР»Рµ СЃРѕР±Р°РєСѓ СЃСЉРµР».
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_01");//Р РЅРµ РѕРґРЅСѓ. РЎС‚Р°Р»СЊ РїСЂРёРЅРµСЃ? 
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_02");//РЎС‚Р°Р»СЊ? РљР°Р¶РµС‚СЃСЏ, С‚С‹ РјРµРЅСЏ СЃ РєРµРј-С‚Рѕ СЃРїСѓС‚Р°Р»...
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_03");//РҐРј... РњС‹ РЅРёРіРґРµ СЂР°РЅСЊС€Рµ РЅРµ РїРµСЂРµСЃРµРєР°Р»РёСЃСЊ?
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
-	Info_AddChoice (DIA_Addon_Huno_Hi,"Ну да. В Старом Лагере.",DIA_Addon_Huno_Hi_JA);
-	Info_AddChoice (DIA_Addon_Huno_Hi,"Я думаю, нет. Нет, не пересекались.",DIA_Addon_Huno_Hi_NO);
+	Info_AddChoice (DIA_Addon_Huno_Hi,"РќСѓ РґР°. Р’ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.",DIA_Addon_Huno_Hi_JA);
+	Info_AddChoice (DIA_Addon_Huno_Hi,"РЇ РґСѓРјР°СЋ, РЅРµС‚. РќРµС‚, РЅРµ РїРµСЂРµСЃРµРєР°Р»РёСЃСЊ.",DIA_Addon_Huno_Hi_NO);
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Хуно продает изделия из металла.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"РҐСѓРЅРѕ РїСЂРѕРґР°РµС‚ РёР·РґРµР»РёСЏ РёР· РјРµС‚Р°Р»Р»Р°.");
 };
 FUNC VOID DIA_Addon_Huno_Hi_JA()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_00");//Ну да. В Старом Лагере.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_01");//Старый Лагерь... да... ты тот любопытный паренек... Я думал, ты помер.
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_02");//Все так думают. Еще есть выжившие?
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_03");//Немного. Некоторые последовали за Вороном, как я. Для многих других Старый Лагерь стал братской могилой. 
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_00");//РќСѓ РґР°. Р’ РЎС‚Р°СЂРѕРј Р›Р°РіРµСЂРµ.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_01");//РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ... РґР°... С‚С‹ С‚РѕС‚ Р»СЋР±РѕРїС‹С‚РЅС‹Р№ РїР°СЂРµРЅРµРє... РЇ РґСѓРјР°Р», С‚С‹ РїРѕРјРµСЂ.
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_02");//Р’СЃРµ С‚Р°Рє РґСѓРјР°СЋС‚. Р•С‰Рµ РµСЃС‚СЊ РІС‹Р¶РёРІС€РёРµ?
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_03");//РќРµРјРЅРѕРіРѕ. РќРµРєРѕС‚РѕСЂС‹Рµ РїРѕСЃР»РµРґРѕРІР°Р»Рё Р·Р° Р’РѕСЂРѕРЅРѕРј, РєР°Рє СЏ. Р”Р»СЏ РјРЅРѕРіРёС… РґСЂСѓРіРёС… РЎС‚Р°СЂС‹Р№ Р›Р°РіРµСЂСЊ СЃС‚Р°Р» Р±СЂР°С‚СЃРєРѕР№ РјРѕРіРёР»РѕР№. 
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 	
@@ -136,8 +136,8 @@ FUNC VOID DIA_Addon_Huno_Hi_JA()
 };
 FUNC VOID DIA_Addon_Huno_Hi_NO()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_NO_15_00");//Я думаю, нет. Нет, не пересекались.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_NO_06_01");//Хм... Память у меня дырявая... Ну да ладно.
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_NO_15_00");//РЇ РґСѓРјР°СЋ, РЅРµС‚. РќРµС‚, РЅРµ РїРµСЂРµСЃРµРєР°Р»РёСЃСЊ.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_NO_06_01");//РҐРј... РџР°РјСЏС‚СЊ Сѓ РјРµРЅСЏ РґС‹СЂСЏРІР°СЏ... РќСѓ РґР° Р»Р°РґРЅРѕ.
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Huno_Blitz   (C_INFO)
 	condition   = DIA_Addon_Huno_Blitz_Condition;
 	information = DIA_Addon_Huno_Blitz_Info;
 	permanent   = FALSE;
-	description = "Скажи, как ты спасся?";
+	description = "РЎРєР°Р¶Рё, РєР°Рє С‚С‹ СЃРїР°СЃСЃСЏ?";
 };
 FUNC INT DIA_Addon_Huno_Blitz_Condition()
 {	
@@ -163,14 +163,14 @@ FUNC INT DIA_Addon_Huno_Blitz_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Blitz_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_00");//Скажи, как ты спасся?
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_01");//Ну, как только Барьера не стало, случился приличный переполох.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_02");//Кто-то прятался, кто-то бежал, а кто-то грабил все подряд.
-	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_03");//А ты что делал?
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_04");//Я только собирался покинуть лагерь, как случилась эта яркая вспышка, и мои глаза чуть не выпрыгнули от боли.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_05");//Что же ты думаешь? В меня угодило этой чертовой молнией! До сих пор кажется, что я слышу этот треск.
+	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_00");//РЎРєР°Р¶Рё, РєР°Рє С‚С‹ СЃРїР°СЃСЃСЏ?
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_01");//РќСѓ, РєР°Рє С‚РѕР»СЊРєРѕ Р‘Р°СЂСЊРµСЂР° РЅРµ СЃС‚Р°Р»Рѕ, СЃР»СѓС‡РёР»СЃСЏ РїСЂРёР»РёС‡РЅС‹Р№ РїРµСЂРµРїРѕР»РѕС….
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_02");//РљС‚Рѕ-С‚Рѕ РїСЂСЏС‚Р°Р»СЃСЏ, РєС‚Рѕ-С‚Рѕ Р±РµР¶Р°Р», Р° РєС‚Рѕ-С‚Рѕ РіСЂР°Р±РёР» РІСЃРµ РїРѕРґСЂСЏРґ.
+	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_03");//Рђ С‚С‹ С‡С‚Рѕ РґРµР»Р°Р»?
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_04");//РЇ С‚РѕР»СЊРєРѕ СЃРѕР±РёСЂР°Р»СЃСЏ РїРѕРєРёРЅСѓС‚СЊ Р»Р°РіРµСЂСЊ, РєР°Рє СЃР»СѓС‡РёР»Р°СЃСЊ СЌС‚Р° СЏСЂРєР°СЏ РІСЃРїС‹С€РєР°, Рё РјРѕРё РіР»Р°Р·Р° С‡СѓС‚СЊ РЅРµ РІС‹РїСЂС‹РіРЅСѓР»Рё РѕС‚ Р±РѕР»Рё.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_05");//Р§С‚Рѕ Р¶Рµ С‚С‹ РґСѓРјР°РµС€СЊ? Р’ РјРµРЅСЏ СѓРіРѕРґРёР»Рѕ СЌС‚РѕР№ С‡РµСЂС‚РѕРІРѕР№ РјРѕР»РЅРёРµР№! Р”Рѕ СЃРёС… РїРѕСЂ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ СЏ СЃР»С‹С€Сѓ СЌС‚РѕС‚ С‚СЂРµСЃРє.
 	//AI_Output (self, other, "DIA_Blitz_06_07");//BLITZ
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_06");//Позже мне сказали, что меня нашел Торус. Он-то и забрал меня с собой.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_06");//РџРѕР·Р¶Рµ РјРЅРµ СЃРєР°Р·Р°Р»Рё, С‡С‚Рѕ РјРµРЅСЏ РЅР°С€РµР» РўРѕСЂСѓСЃ. РћРЅ-С‚Рѕ Рё Р·Р°Р±СЂР°Р» РјРµРЅСЏ СЃ СЃРѕР±РѕР№.
 };
 //----------------------------------------------------------------------
 //	Info Armor
@@ -184,7 +184,7 @@ INSTANCE DIA_Addon_Huno_Armor   (C_INFO)
 	condition   = DIA_Addon_Huno_Armor_Condition;
 	information = DIA_Addon_Huno_Armor_Info;
 	permanent   = TRUE;
-	description = "Мне бы доспехи получше.";
+	description = "РњРЅРµ Р±С‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ.";
 };
 FUNC INT DIA_Addon_Huno_Armor_Condition()
 {	
@@ -199,24 +199,24 @@ FUNC VOID DIA_Addon_Huno_Armor_Info()
 {	
 	Info_ClearChoices (DIA_Addon_Huno_Armor);
 	
-	AI_Output (other, self, "DIA_Addon_Huno_Armor_15_00"); //Мне бы доспехи получше.
+	AI_Output (other, self, "DIA_Addon_Huno_Armor_15_00"); //РњРЅРµ Р±С‹ РґРѕСЃРїРµС…Рё РїРѕР»СѓС‡С€Рµ.
 	if (Huno_ArmorCheap == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_01"); //Могу предложить эти. Дорого? Не меня вини, а Эстебана. 
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_02"); //Проклятый шакал дерет свою долю с каждых доспехов, что я продаю.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_01"); //РњРѕРіСѓ РїСЂРµРґР»РѕР¶РёС‚СЊ СЌС‚Рё. Р”РѕСЂРѕРіРѕ? РќРµ РјРµРЅСЏ РІРёРЅРё, Р° Р­СЃС‚РµР±Р°РЅР°. 
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_02"); //РџСЂРѕРєР»СЏС‚С‹Р№ С€Р°РєР°Р» РґРµСЂРµС‚ СЃРІРѕСЋ РґРѕР»СЋ СЃ РєР°Р¶РґС‹С… РґРѕСЃРїРµС…РѕРІ, С‡С‚Рѕ СЏ РїСЂРѕРґР°СЋ.
 		
 		BDT_Armor_H_Value = 2100;
 		Info_AddChoice (DIA_Addon_Huno_Armor, DIALOG_BACK, DIA_Addon_Huno_Armor_BACK);
-		Info_AddChoice (DIA_Addon_Huno_Armor, "Купить тяжелые доспехи бандита (Защита: оружие 45, стрелы 45. Цена: 2100 золотых)", DIA_Addon_Huno_Armor_BUY);
+		Info_AddChoice (DIA_Addon_Huno_Armor, "РљСѓРїРёС‚СЊ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚Р° (Р—Р°С‰РёС‚Р°: РѕСЂСѓР¶РёРµ 45, СЃС‚СЂРµР»С‹ 45. Р¦РµРЅР°: 2100 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Huno_Armor_BUY);
 	}
 	else //CHEAP
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_Armor_15_03"); //Фиск сказал, что я могу рассчитывать на скидку?
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_04"); //Фиск, говоришь? Хм, ну, я ему и в самом деле должен. Ладно, будет тебе скидка.
+		AI_Output (other, self, "DIA_Addon_Huno_Armor_15_03"); //Р¤РёСЃРє СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РјРѕРіСѓ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ РЅР° СЃРєРёРґРєСѓ?
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_04"); //Р¤РёСЃРє, РіРѕРІРѕСЂРёС€СЊ? РҐРј, РЅСѓ, СЏ РµРјСѓ Рё РІ СЃР°РјРѕРј РґРµР»Рµ РґРѕР»Р¶РµРЅ. Р›Р°РґРЅРѕ, Р±СѓРґРµС‚ С‚РµР±Рµ СЃРєРёРґРєР°.
 				
 		BDT_Armor_H_Value = 1400;
 		Info_AddChoice (DIA_Addon_Huno_Armor, DIALOG_BACK, DIA_Addon_Huno_Armor_BACK);
-		Info_AddChoice (DIA_Addon_Huno_Armor, "Купить тяжелые доспехи бандита (Защита: оружие 45, стрелы 45. Цена: 1400 золотых)", DIA_Addon_Huno_Armor_BUY);
+		Info_AddChoice (DIA_Addon_Huno_Armor, "РљСѓРїРёС‚СЊ С‚СЏР¶РµР»С‹Рµ РґРѕСЃРїРµС…Рё Р±Р°РЅРґРёС‚Р° (Р—Р°С‰РёС‚Р°: РѕСЂСѓР¶РёРµ 45, СЃС‚СЂРµР»С‹ 45. Р¦РµРЅР°: 1400 Р·РѕР»РѕС‚С‹С…)", DIA_Addon_Huno_Armor_BUY);
 	};
 };
 func void DIA_Addon_Huno_Armor_Back()
@@ -225,17 +225,17 @@ func void DIA_Addon_Huno_Armor_Back()
 };
 func void DIA_Addon_Huno_Armor_Buy()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Armor_Buy_15_00"); //Хорошо, я беру доспехи.
+	AI_Output (other, self, "DIA_Addon_Huno_Armor_Buy_15_00"); //РҐРѕСЂРѕС€Рѕ, СЏ Р±РµСЂСѓ РґРѕСЃРїРµС…Рё.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, BDT_Armor_H_Value)
 	{	
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_01"); //Отлично.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_01"); //РћС‚Р»РёС‡РЅРѕ.
 		
 		B_GiveInvItems (self, other,ITAR_BDT_H,1);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_02"); //Без золота даже не рассчитывай.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_02"); //Р‘РµР· Р·РѕР»РѕС‚Р° РґР°Р¶Рµ РЅРµ СЂР°СЃСЃС‡РёС‚С‹РІР°Р№.
 	};
 	
 	if (BDT_Armor_H_Value < 2100) //nur, wenn billliger!
@@ -256,7 +256,7 @@ INSTANCE DIA_Addon_Huno_Attentat   (C_INFO)
 	condition   = DIA_Addon_Huno_Attentat_Condition;
 	information = DIA_Addon_Huno_Attentat_Info;
 	permanent   = FALSE;
-	description = "Насчет попытки покушения на Эстебана...";
+	description = "РќР°СЃС‡РµС‚ РїРѕРїС‹С‚РєРё РїРѕРєСѓС€РµРЅРёСЏ РЅР° Р­СЃС‚РµР±Р°РЅР°...";
 };
 FUNC INT DIA_Addon_Huno_Attentat_Condition()
 {	
@@ -268,16 +268,16 @@ FUNC INT DIA_Addon_Huno_Attentat_Condition()
 FUNC VOID DIA_Addon_Huno_Attentat_Info()
 {	
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentast auf Esteban
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_00"); //(подозрительно) Что тебе от меня нужно?
-	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_01"); //Ничего особенного. Просто подумал, а вдруг ты знаешь, кто стоит за нападением.
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_02"); //А с чего ты взял, что я должен знать?
-	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_03"); //Ну, скажем, интуиция.
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_04"); //Я ничего об этом не знаю и знать не хочу!
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_00"); //(РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ) Р§С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ?
+	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_01"); //РќРёС‡РµРіРѕ РѕСЃРѕР±РµРЅРЅРѕРіРѕ. РџСЂРѕСЃС‚Рѕ РїРѕРґСѓРјР°Р», Р° РІРґСЂСѓРі С‚С‹ Р·РЅР°РµС€СЊ, РєС‚Рѕ СЃС‚РѕРёС‚ Р·Р° РЅР°РїР°РґРµРЅРёРµРј.
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_02"); //Рђ СЃ С‡РµРіРѕ С‚С‹ РІР·СЏР», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ Р·РЅР°С‚СЊ?
+	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_03"); //РќСѓ, СЃРєР°Р¶РµРј, РёРЅС‚СѓРёС†РёСЏ.
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_04"); //РЇ РЅРёС‡РµРіРѕ РѕР± СЌС‚РѕРј РЅРµ Р·РЅР°СЋ Рё Р·РЅР°С‚СЊ РЅРµ С…РѕС‡Сѓ!
 };
 
 
 //----------------------------------------------------------------------
-//	Paar Dinge gehцrt
+//	Paar Dinge gehС†rt
 //----------------------------------------------------------------------
 var int Huno_nochmal;
 var int Huno_SomeThings_PERM;
@@ -286,7 +286,7 @@ var int Huno_Counter;
 
 	func void B_Addon_Huno_Stress()
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Stress_06_00"); //(вздыхает) А теперь послушай меня. Двигал бы ты свою задницу отсюда, пока я ее не порвал.
+		AI_Output (self, other, "DIA_Addon_Huno_Stress_06_00"); //(РІР·РґС‹С…Р°РµС‚) Рђ С‚РµРїРµСЂСЊ РїРѕСЃР»СѓС€Р°Р№ РјРµРЅСЏ. Р”РІРёРіР°Р» Р±С‹ С‚С‹ СЃРІРѕСЋ Р·Р°РґРЅРёС†Сѓ РѕС‚СЃСЋРґР°, РїРѕРєР° СЏ РµРµ РЅРµ РїРѕСЂРІР°Р».
 		Huno_Angepisst = TRUE;
 	};
 
@@ -297,7 +297,7 @@ INSTANCE DIA_Addon_Huno_SomeThings (C_INFO)
 	condition   = DIA_Addon_Huno_SomeThings_Condition;
 	information = DIA_Addon_Huno_SomeThings_Info;
 	permanent   = TRUE;
-	description = "Я слышал о тебе пару-тройку слухов.";
+	description = "РЇ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ РїР°СЂСѓ-С‚СЂРѕР№РєСѓ СЃР»СѓС…РѕРІ.";
 };
 FUNC INT DIA_Addon_Huno_SomeThings_Condition()
 {	
@@ -310,62 +310,62 @@ FUNC INT DIA_Addon_Huno_SomeThings_Condition()
 };
 FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_00"); //Я слышал о тебе пару-тройку слухов.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_00"); //РЇ СЃР»С‹С€Р°Р» Рѕ С‚РµР±Рµ РїР°СЂСѓ-С‚СЂРѕР№РєСѓ СЃР»СѓС…РѕРІ.
 	
 	if (Huno_nochmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_01"); //Ну?
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_01"); //РќСѓ?
 		Huno_nochmal = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_02"); //Опять? (угрожающе) Надеюсь, оно того стоит?
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_02"); //РћРїСЏС‚СЊ? (СѓРіСЂРѕР¶Р°СЋС‰Рµ) РќР°РґРµСЋСЃСЊ, РѕРЅРѕ С‚РѕРіРѕ СЃС‚РѕРёС‚?
 	};
 	
 	Huno_Counter = 0;
 
 	if (Finn_TellAll == TRUE) 		
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_03"); //Я слышал, что тебя не было на месте во время нападения!
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_04"); //(подозрительно) Что еще?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_03"); //РЇ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚РµР±СЏ РЅРµ Р±С‹Р»Рѕ РЅР° РјРµСЃС‚Рµ РІРѕ РІСЂРµРјСЏ РЅР°РїР°РґРµРЅРёСЏ!
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_04"); //(РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ) Р§С‚Рѕ РµС‰Рµ?
 		Huno_Counter = Huno_Counter + 1;
 	};
 	
 	if (Paul_TellAll == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_05"); //Пол утверждает, что ты ненавидишь Эстебана.
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_06"); //(подозрительно) Продолжай...
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_05"); //РџРѕР» СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ С‚С‹ РЅРµРЅР°РІРёРґРёС€СЊ Р­СЃС‚РµР±Р°РЅР°.
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_06"); //(РїРѕРґРѕР·СЂРёС‚РµР»СЊРЅРѕ) РџСЂРѕРґРѕР»Р¶Р°Р№...
 		Huno_Counter = Huno_Counter + 1;
 	};
 	
 	if (Emilio_TellAll == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_07"); //Эмилио сболтнул твое имя! Ты знаешь что-то о нападении, только не хочешь говорить!
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_08"); //(спокойно) Значит, ты болтал со стариком Эмилио?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_07"); //Р­РјРёР»РёРѕ СЃР±РѕР»С‚РЅСѓР» С‚РІРѕРµ РёРјСЏ! РўС‹ Р·РЅР°РµС€СЊ С‡С‚Рѕ-С‚Рѕ Рѕ РЅР°РїР°РґРµРЅРёРё, С‚РѕР»СЊРєРѕ РЅРµ С…РѕС‡РµС€СЊ РіРѕРІРѕСЂРёС‚СЊ!
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_08"); //(СЃРїРѕРєРѕР№РЅРѕ) Р—РЅР°С‡РёС‚, С‚С‹ Р±РѕР»С‚Р°Р» СЃРѕ СЃС‚Р°СЂРёРєРѕРј Р­РјРёР»РёРѕ?
 		
 		if (Huno_Counter > 0)
 		{
-			AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_09"); //Он далеко не единственный, кто подозревает тебя!
+			AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_09"); //РћРЅ РґР°Р»РµРєРѕ РЅРµ РµРґРёРЅСЃС‚РІРµРЅРЅС‹Р№, РєС‚Рѕ РїРѕРґРѕР·СЂРµРІР°РµС‚ С‚РµР±СЏ!
 			AI_PlayAni(self, "T_SEARCH");
-			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_10"); //А это что еще значит?
+			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_10"); //Рђ СЌС‚Рѕ С‡С‚Рѕ РµС‰Рµ Р·РЅР°С‡РёС‚?
 			
 			Huno_SomeThings_PERM = TRUE;
 			Info_ClearChoices (DIA_Addon_Huno_SomeThings);
-			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Я хочу встать на твою сторону, Хуно!", DIA_Addon_Huno_SomeThings_Contra);
-			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Если ты организовал нападение, ты за это поплатишься!", DIA_Addon_Huno_SomeThings_Pro);
+			Info_AddChoice (DIA_Addon_Huno_SomeThings, "РЇ С…РѕС‡Сѓ РІСЃС‚Р°С‚СЊ РЅР° С‚РІРѕСЋ СЃС‚РѕСЂРѕРЅСѓ, РҐСѓРЅРѕ!", DIA_Addon_Huno_SomeThings_Contra);
+			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Р•СЃР»Рё С‚С‹ РѕСЂРіР°РЅРёР·РѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ, С‚С‹ Р·Р° СЌС‚Рѕ РїРѕРїР»Р°С‚РёС€СЊСЃСЏ!", DIA_Addon_Huno_SomeThings_Pro);
 			
-			B_LogEntry (Topic_Addon_Esteban, "Похоже, я взял Хуно за задницу.");
+			B_LogEntry (Topic_Addon_Esteban, "РџРѕС…РѕР¶Рµ, СЏ РІР·СЏР» РҐСѓРЅРѕ Р·Р° Р·Р°РґРЅРёС†Сѓ.");
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_11"); //(угрожающе) Может, мне тоже стоит с ним поболтать? Уверен, что смогу переубедить старика.
+			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_11"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РњРѕР¶РµС‚, РјРЅРµ С‚РѕР¶Рµ СЃС‚РѕРёС‚ СЃ РЅРёРј РїРѕР±РѕР»С‚Р°С‚СЊ? РЈРІРµСЂРµРЅ, С‡С‚Рѕ СЃРјРѕРіСѓ РїРµСЂРµСѓР±РµРґРёС‚СЊ СЃС‚Р°СЂРёРєР°.
 			B_Addon_Huno_Stress();
 			AI_StopProcessInfos (self);
 		};
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_12"); //Ну, собственно, это все...
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_12"); //РќСѓ, СЃРѕР±СЃС‚РІРµРЅРЅРѕ, СЌС‚Рѕ РІСЃРµ...
 		B_Addon_Huno_Stress();
 		AI_StopProcessInfos (self);
 	};
@@ -373,9 +373,9 @@ FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 
 func void DIA_Addon_Huno_SomeThings_Pro()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Pro_15_00"); //Если ты организовал нападение, ты за это поплатишься!
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_01"); //(раздраженно) Ты в самом деле такой идиот, или только кажешься? Думаешь, что сможешь подлизаться к Эстебану? 
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_02"); //Пошел вон отсюда!
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Pro_15_00"); //Р•СЃР»Рё С‚С‹ РѕСЂРіР°РЅРёР·РѕРІР°Р» РЅР°РїР°РґРµРЅРёРµ, С‚С‹ Р·Р° СЌС‚Рѕ РїРѕРїР»Р°С‚РёС€СЊСЃСЏ!
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_01"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) РўС‹ РІ СЃР°РјРѕРј РґРµР»Рµ С‚Р°РєРѕР№ РёРґРёРѕС‚, РёР»Рё С‚РѕР»СЊРєРѕ РєР°Р¶РµС€СЊСЃСЏ? Р”СѓРјР°РµС€СЊ, С‡С‚Рѕ СЃРјРѕР¶РµС€СЊ РїРѕРґР»РёР·Р°С‚СЊСЃСЏ Рє Р­СЃС‚РµР±Р°РЅСѓ? 
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_02"); //РџРѕС€РµР» РІРѕРЅ РѕС‚СЃСЋРґР°!
 	Huno_MEGA_Angepisst = TRUE;
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
 	AI_StopProcessInfos (self);
@@ -383,49 +383,49 @@ func void DIA_Addon_Huno_SomeThings_Pro()
 	
 func void DIA_Addon_Huno_SomeThings_Contra()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_00"); //Я хочу встать на твою сторону, Хуно!
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_01"); //Против Эстебана? Ну что ж, докажи. 
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_02"); //Я заждался партии стали от пиратов.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_03"); //Я подозреваю, что Эстебан приложил к этому руку. Хочет продать мне ее втридорога.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_04"); //Конечно, он не один в этом участвовал. Пара бандитов на болоте также в этом замешаны. Эстебан им платит.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_05"); //Откуда ты знаешь?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_06"); //Что у трезвого вора на уме, у пьяного бандита - на языке...
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_07"); //А как звать этого пьяного бандита?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_08"); //Его имя тебя не касается. Но вот кто тебе в самом деле нужен, так это Хуан. Я не видел его в лагере довольно долго.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_09"); //Глянь на болоте. Он скорее всего там.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_00"); //РЇ С…РѕС‡Сѓ РІСЃС‚Р°С‚СЊ РЅР° С‚РІРѕСЋ СЃС‚РѕСЂРѕРЅСѓ, РҐСѓРЅРѕ!
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_01"); //РџСЂРѕС‚РёРІ Р­СЃС‚РµР±Р°РЅР°? РќСѓ С‡С‚Рѕ Р¶, РґРѕРєР°Р¶Рё. 
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_02"); //РЇ Р·Р°Р¶РґР°Р»СЃСЏ РїР°СЂС‚РёРё СЃС‚Р°Р»Рё РѕС‚ РїРёСЂР°С‚РѕРІ.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_03"); //РЇ РїРѕРґРѕР·СЂРµРІР°СЋ, С‡С‚Рѕ Р­СЃС‚РµР±Р°РЅ РїСЂРёР»РѕР¶РёР» Рє СЌС‚РѕРјСѓ СЂСѓРєСѓ. РҐРѕС‡РµС‚ РїСЂРѕРґР°С‚СЊ РјРЅРµ РµРµ РІС‚СЂРёРґРѕСЂРѕРіР°.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_04"); //РљРѕРЅРµС‡РЅРѕ, РѕРЅ РЅРµ РѕРґРёРЅ РІ СЌС‚РѕРј СѓС‡Р°СЃС‚РІРѕРІР°Р». РџР°СЂР° Р±Р°РЅРґРёС‚РѕРІ РЅР° Р±РѕР»РѕС‚Рµ С‚Р°РєР¶Рµ РІ СЌС‚РѕРј Р·Р°РјРµС€Р°РЅС‹. Р­СЃС‚РµР±Р°РЅ РёРј РїР»Р°С‚РёС‚.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_05"); //РћС‚РєСѓРґР° С‚С‹ Р·РЅР°РµС€СЊ?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_06"); //Р§С‚Рѕ Сѓ С‚СЂРµР·РІРѕРіРѕ РІРѕСЂР° РЅР° СѓРјРµ, Сѓ РїСЊСЏРЅРѕРіРѕ Р±Р°РЅРґРёС‚Р° - РЅР° СЏР·С‹РєРµ...
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_07"); //Рђ РєР°Рє Р·РІР°С‚СЊ СЌС‚РѕРіРѕ РїСЊСЏРЅРѕРіРѕ Р±Р°РЅРґРёС‚Р°?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_08"); //Р•РіРѕ РёРјСЏ С‚РµР±СЏ РЅРµ РєР°СЃР°РµС‚СЃСЏ. РќРѕ РІРѕС‚ РєС‚Рѕ С‚РµР±Рµ РІ СЃР°РјРѕРј РґРµР»Рµ РЅСѓР¶РµРЅ, С‚Р°Рє СЌС‚Рѕ РҐСѓР°РЅ. РЇ РЅРµ РІРёРґРµР» РµРіРѕ РІ Р»Р°РіРµСЂРµ РґРѕРІРѕР»СЊРЅРѕ РґРѕР»РіРѕ.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_09"); //Р“Р»СЏРЅСЊ РЅР° Р±РѕР»РѕС‚Рµ. РћРЅ СЃРєРѕСЂРµРµ РІСЃРµРіРѕ С‚Р°Рј.
 	
 	MIS_Huno_Stahl = LOG_RUNNING;
 	Huno_Angepisst = FALSE;
 	
 	Log_CreateTopic (Topic_Addon_Huno,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Huno,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Huno,"Хуно ждет посылку со сталью, которую ему должны были доставить от пиратов. Он думает, что ее украл для Эстебана человек по имени Хуан. Он прячется на болотах.");
+	B_LogEntry (Topic_Addon_Huno,"РҐСѓРЅРѕ Р¶РґРµС‚ РїРѕСЃС‹Р»РєСѓ СЃРѕ СЃС‚Р°Р»СЊСЋ, РєРѕС‚РѕСЂСѓСЋ РµРјСѓ РґРѕР»Р¶РЅС‹ Р±С‹Р»Рё РґРѕСЃС‚Р°РІРёС‚СЊ РѕС‚ РїРёСЂР°С‚РѕРІ. РћРЅ РґСѓРјР°РµС‚, С‡С‚Рѕ РµРµ СѓРєСЂР°Р» РґР»СЏ Р­СЃС‚РµР±Р°РЅР° С‡РµР»РѕРІРµРє РїРѕ РёРјРµРЅРё РҐСѓР°РЅ. РћРЅ РїСЂСЏС‡РµС‚СЃСЏ РЅР° Р±РѕР»РѕС‚Р°С….");
 	
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
-	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Скажи мне сначала, кто стоял за атакой!", DIA_Addon_Huno_SomeThings_TellMeNow);
-	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Хорошо, я займусь этим.", DIA_Addon_Huno_SomeThings_Mission);
+	Info_AddChoice (DIA_Addon_Huno_SomeThings, "РЎРєР°Р¶Рё РјРЅРµ СЃРЅР°С‡Р°Р»Р°, РєС‚Рѕ СЃС‚РѕСЏР» Р·Р° Р°С‚Р°РєРѕР№!", DIA_Addon_Huno_SomeThings_TellMeNow);
+	Info_AddChoice (DIA_Addon_Huno_SomeThings, "РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°Р№РјСѓСЃСЊ СЌС‚РёРј.", DIA_Addon_Huno_SomeThings_Mission);
 };
 
 func void DIA_Addon_Huno_SomeThings_Mission()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Mission_15_00"); //Хорошо, я займусь этим.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Mission_06_01"); //Хорошо. Посмотрим, стоит ли тебе доверять.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Mission_15_00"); //РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°Р№РјСѓСЃСЊ СЌС‚РёРј.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Mission_06_01"); //РҐРѕСЂРѕС€Рѕ. РџРѕСЃРјРѕС‚СЂРёРј, СЃС‚РѕРёС‚ Р»Рё С‚РµР±Рµ РґРѕРІРµСЂСЏС‚СЊ.
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
 	AI_StopProcessInfos (self);
 };
 func void DIA_Addon_Huno_SomeThings_TellMeNow()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_00"); //Скажи мне сначала, кто стоял за атакой!
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_01"); //Нет. Ты хороший парень, конечно, но я тебе не доверяю.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_02"); //Слушай, либо ты мне говоришь, кто это был, либо мне придется доложить нашему общему другу - Эстебану.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_03"); //Выбирай.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_04"); //(вздыхает) Ладно. Я организую встречу. Но только так, как я этого хочу, понял?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_05"); //Иди в таверну и поговори с хозяином. Он скажет, что делать дальше.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_00"); //РЎРєР°Р¶Рё РјРЅРµ СЃРЅР°С‡Р°Р»Р°, РєС‚Рѕ СЃС‚РѕСЏР» Р·Р° Р°С‚Р°РєРѕР№!
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_01"); //РќРµС‚. РўС‹ С…РѕСЂРѕС€РёР№ РїР°СЂРµРЅСЊ, РєРѕРЅРµС‡РЅРѕ, РЅРѕ СЏ С‚РµР±Рµ РЅРµ РґРѕРІРµСЂСЏСЋ.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_02"); //РЎР»СѓС€Р°Р№, Р»РёР±Рѕ С‚С‹ РјРЅРµ РіРѕРІРѕСЂРёС€СЊ, РєС‚Рѕ СЌС‚Рѕ Р±С‹Р», Р»РёР±Рѕ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РґРѕР»РѕР¶РёС‚СЊ РЅР°С€РµРјСѓ РѕР±С‰РµРјСѓ РґСЂСѓРіСѓ - Р­СЃС‚РµР±Р°РЅСѓ.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_03"); //Р’С‹Р±РёСЂР°Р№.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_04"); //(РІР·РґС‹С…Р°РµС‚) Р›Р°РґРЅРѕ. РЇ РѕСЂРіР°РЅРёР·СѓСЋ РІСЃС‚СЂРµС‡Сѓ. РќРѕ С‚РѕР»СЊРєРѕ С‚Р°Рє, РєР°Рє СЏ СЌС‚РѕРіРѕ С…РѕС‡Сѓ, РїРѕРЅСЏР»?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_05"); //РРґРё РІ С‚Р°РІРµСЂРЅСѓ Рё РїРѕРіРѕРІРѕСЂРё СЃ С…РѕР·СЏРёРЅРѕРј. РћРЅ СЃРєР°Р¶РµС‚, С‡С‚Рѕ РґРµР»Р°С‚СЊ РґР°Р»СЊС€Рµ.
 	Huno_zuSnaf = TRUE;
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
 	AI_StopProcessInfos (self);
 	
-	B_LogEntry (Topic_Addon_Esteban, "Хуно сказал, что я должен поговорить со Снафом.");
+	B_LogEntry (Topic_Addon_Esteban, "РҐСѓРЅРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РЎРЅР°С„РѕРј.");
 };
 
 //----------------------------------------------------------------------
@@ -438,7 +438,7 @@ INSTANCE DIA_Addon_Huno_Paket   (C_INFO)
 	condition   = DIA_Addon_Huno_Paket_Condition;
 	information = DIA_Addon_Huno_Paket_Info;
 	permanent   = FALSE;
-	description = "Вот твоя сталь.";
+	description = "Р’РѕС‚ С‚РІРѕСЏ СЃС‚Р°Р»СЊ.";
 };
 FUNC INT DIA_Addon_Huno_Paket_Condition()
 {	
@@ -450,26 +450,26 @@ FUNC INT DIA_Addon_Huno_Paket_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Paket_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_00");//Вот твоя сталь.
+	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_00");//Р’РѕС‚ С‚РІРѕСЏ СЃС‚Р°Р»СЊ.
 	B_GiveInvItems (other, self, ItMi_Addon_Steel_Paket,1);
-	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_01"); //А Хуан? Он там был?
-	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_02"); //Был, как же еще.
-	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_03"); //Я так и знал. Крыса Эстебан стоял за всем этим.
+	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_01"); //Рђ РҐСѓР°РЅ? РћРЅ С‚Р°Рј Р±С‹Р»?
+	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_02"); //Р‘С‹Р», РєР°Рє Р¶Рµ РµС‰Рµ.
+	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_03"); //РЇ С‚Р°Рє Рё Р·РЅР°Р». РљСЂС‹СЃР° Р­СЃС‚РµР±Р°РЅ СЃС‚РѕСЏР» Р·Р° РІСЃРµРј СЌС‚РёРј.
 	
 	if (Huno_zuSnaf == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_04"); //А ты неплох. Надо сказать, я не ожидал.
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_05"); //Вот, возьми это. Небольшая награда.
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_04"); //Рђ С‚С‹ РЅРµРїР»РѕС…. РќР°РґРѕ СЃРєР°Р·Р°С‚СЊ, СЏ РЅРµ РѕР¶РёРґР°Р».
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_05"); //Р’РѕС‚, РІРѕР·СЊРјРё СЌС‚Рѕ. РќРµР±РѕР»СЊС€Р°СЏ РЅР°РіСЂР°РґР°.
 		B_GiveInvItems (self, other, itmi_gold, 200);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_Paket_15_06"); //А теперь давай поговорим о нашем договоре.
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_07"); //Нужный тебе человек ждет тебя в таверне. Поговори с хозяином.
+		AI_Output (other, self, "DIA_Addon_Huno_Paket_15_06"); //Рђ С‚РµРїРµСЂСЊ РґР°РІР°Р№ РїРѕРіРѕРІРѕСЂРёРј Рѕ РЅР°С€РµРј РґРѕРіРѕРІРѕСЂРµ.
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_07"); //РќСѓР¶РЅС‹Р№ С‚РµР±Рµ С‡РµР»РѕРІРµРє Р¶РґРµС‚ С‚РµР±СЏ РІ С‚Р°РІРµСЂРЅРµ. РџРѕРіРѕРІРѕСЂРё СЃ С…РѕР·СЏРёРЅРѕРј.
 		Huno_zuSnaf = TRUE;
 	};
 	
-	B_LogEntry (Topic_Addon_Esteban, "Хуно сказал, что я должен поговорить со Снафом.");
+	B_LogEntry (Topic_Addon_Esteban, "РҐСѓРЅРѕ СЃРєР°Р·Р°Р», С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РїРѕРіРѕРІРѕСЂРёС‚СЊ СЃРѕ РЎРЅР°С„РѕРј.");
 	MIS_Huno_Stahl = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_HunoStahl);
 };

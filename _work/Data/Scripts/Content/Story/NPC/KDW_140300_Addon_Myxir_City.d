@@ -1,7 +1,7 @@
 INSTANCE KDW_140300_Addon_Myxir_CITY (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Миксир";
+	name 		= "РњРёРєСЃРёСЂ";
 	guild 		= GIL_KDW; 
 	id 			= 140300;
 	voice 		= 12;

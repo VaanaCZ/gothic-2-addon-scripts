@@ -2,7 +2,7 @@
 instance VLK_408_Jora (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Äæîðà";
+	name 		= "Ð”Ð¶Ð¾Ñ€Ð°";
 	guild 		= GIL_VLK;
 	id 			= 408;
 	voice 		= 8;
@@ -19,7 +19,7 @@ instance VLK_408_Jora (Npc_Default)
 	EquipItem (self, ItMw_AlriksSword_Mis); //WICHTIG
 	
 	// ------ Inventory ------
-	// Händler
+	// HÐ´ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Normal02, BodyTex_N, ITAR_VLK_M);	

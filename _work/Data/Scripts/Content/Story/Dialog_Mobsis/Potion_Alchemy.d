@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benцtigtes Item dafьr: ItMi_Flask
+// benС†tigtes Item dafСЊr: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Trдnke herstellen  Dialoge 
+//TrРґnke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -67,7 +67,7 @@ INSTANCE PC_Booze_Start (C_Info)
 	condition		= PC_Booze_Start_Condition;
 	information		= PC_Booze_Start_Info;
 	permanent		= TRUE;
-	description		= "Перегнать алкоголь"; 
+	description		= "РџРµСЂРµРіРЅР°С‚СЊ Р°Р»РєРѕРіРѕР»СЊ"; 
 };
 
 FUNC INT PC_Booze_Start_Condition ()
@@ -119,7 +119,7 @@ INSTANCE PC_Booze_Lou (C_Info)
 	condition		= PC_Booze_Lou_Condition;
 	information		= PC_Booze_Lou_Info;
 	permanent		= TRUE;
-	description		= "Попробовать сделать 'Молот Лу'"; 
+	description		= "РџРѕРїСЂРѕР±РѕРІР°С‚СЊ СЃРґРµР»Р°С‚СЊ 'РњРѕР»РѕС‚ Р›Сѓ'"; 
 };
 
 FUNC INT PC_Booze_Lou_Condition ()
@@ -162,7 +162,7 @@ INSTANCE PC_Booze_Schlaf (C_Info)
 	condition		= PC_Booze_Schlaf_Condition;
 	information		= PC_Booze_Schlaf_Info;
 	permanent		= TRUE;
-	description		= "Молот Лу с двойным ромом"; 
+	description		= "РњРѕР»РѕС‚ Р›Сѓ СЃ РґРІРѕР№РЅС‹Рј СЂРѕРјРѕРј"; 
 };
 
 FUNC INT PC_Booze_Schlaf_Condition ()
@@ -206,7 +206,7 @@ INSTANCE PC_Booze_SchnellerHering (C_Info)
 	condition		= PC_Booze_SchnellerHering_Condition;
 	information		= PC_Booze_SchnellerHering_Info;
 	permanent		= TRUE;
-	description		= "Сделать 'Быструю селедку'"; 
+	description		= "РЎРґРµР»Р°С‚СЊ 'Р‘С‹СЃС‚СЂСѓСЋ СЃРµР»РµРґРєСѓ'"; 
 };
 
 FUNC INT PC_Booze_SchnellerHering_Condition ()
@@ -249,7 +249,7 @@ INSTANCE PC_Charge_InnosEye (C_INFO)
 	condition		= PC_Charge_InnosEye_Condition;
 	information		= PC_Charge_InnosEye_Info;
 	permanent		= TRUE;
-	description		= "Зарядить Глаз Инноса"; 
+	description		= "Р—Р°СЂСЏРґРёС‚СЊ Р“Р»Р°Р· РРЅРЅРѕСЃР°"; 
 };
 FUNC INT PC_Charge_InnosEye_Condition()
 {	
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Trдnke 
+//Mana TrРґnke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -307,7 +307,7 @@ INSTANCE PC_Mana_Start (C_Info)
 	condition		= PC_Mana_Start_Condition;
 	information		= PC_Mana_Start_Info;
 	permanent		= TRUE;
-	description		= "Изготовить зелье маны"; 
+	description		= "РР·РіРѕС‚РѕРІРёС‚СЊ Р·РµР»СЊРµ РјР°РЅС‹"; 
 };
 
 FUNC INT PC_Mana_Start_Condition ()
@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Эссенция маны (2 огненных крапивы и 1 луговой горец)"; 
+	description		= "Р­СЃСЃРµРЅС†РёСЏ РјР°РЅС‹ (2 РѕРіРЅРµРЅРЅС‹С… РєСЂР°РїРёРІС‹ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -398,7 +398,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Экстракт маны (2 огненных травы и 1 луговой горец) "; 
+	description		= "Р­РєСЃС‚СЂР°РєС‚ РјР°РЅС‹ (2 РѕРіРЅРµРЅРЅС‹С… С‚СЂР°РІС‹ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†) "; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -436,7 +436,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Эликсир маны (2 огненных корня и 1 луговой горец)"; 
+	description		= "Р­Р»РёРєСЃРёСЂ РјР°РЅС‹ (2 РѕРіРЅРµРЅРЅС‹С… РєРѕСЂРЅСЏ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -475,7 +475,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Чистая мана (3 эссенции маны, 1 луговой горец)"; 
+	description		= "Р§РёСЃС‚Р°СЏ РјР°РЅР° (3 СЌСЃСЃРµРЅС†РёРё РјР°РЅС‹, 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltrдnke 
+//HeiltrРґnke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -518,7 +518,7 @@ INSTANCE PC_Health_Start (C_Info)
 	condition		= PC_Health_Start_Condition;
 	information		= PC_Health_Start_Info;
 	permanent		= TRUE;
-	description		= "Изготовить лечебное зелье"; 
+	description		= "РР·РіРѕС‚РѕРІРёС‚СЊ Р»РµС‡РµР±РЅРѕРµ Р·РµР»СЊРµ"; 
 };
 
 FUNC INT PC_Health_Start_Condition ()
@@ -569,7 +569,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Лечебная эссенция (2 лечебные травы и 1 луговой горец)"; 
+	description		= "Р›РµС‡РµР±РЅР°СЏ СЌСЃСЃРµРЅС†РёСЏ (2 Р»РµС‡РµР±РЅС‹Рµ С‚СЂР°РІС‹ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -609,7 +609,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Лечебный экстракт (2 лечебных растения и 1 луговой горец)"; 
+	description		= "Р›РµС‡РµР±РЅС‹Р№ СЌРєСЃС‚СЂР°РєС‚ (2 Р»РµС‡РµР±РЅС‹С… СЂР°СЃС‚РµРЅРёСЏ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -648,7 +648,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Лечебный эликсир (2 лечебных корня и 1 луговой горец)"; 
+	description		= "Р›РµС‡РµР±РЅС‹Р№ СЌР»РёРєСЃРёСЂ (2 Р»РµС‡РµР±РЅС‹С… РєРѕСЂРЅСЏ Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -686,7 +686,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Чистое здоровье (3 лечебные эссенции, 1 луговой горец)"; 
+	description		= "Р§РёСЃС‚РѕРµ Р·РґРѕСЂРѕРІСЊРµ (3 Р»РµС‡РµР±РЅС‹Рµ СЌСЃСЃРµРЅС†РёРё, 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Trдnke 
+//Spezielle TrРґnke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -728,7 +728,7 @@ INSTANCE PC_Special_Start (C_Info)
 	condition		= PC_Special_Start_Condition;
 	information		= PC_Special_Start_Info;
 	permanent		= TRUE;
-	description		= "Изготовить особое зелье"; 
+	description		= "РР·РіРѕС‚РѕРІРёС‚СЊ РѕСЃРѕР±РѕРµ Р·РµР»СЊРµ"; 
 };
 
 FUNC INT PC_Special_Start_Condition ()
@@ -779,7 +779,7 @@ INSTANCE PC_ItPo_Addon_Geist (C_INFO)
 	condition		= PC_ItPo_Addon_Geist_Condition;
 	information		= PC_ItPo_Addon_Geist_Info;
 	permanent		= TRUE;
-	description		= "Эликсир изменения сознания"; 
+	description		= "Р­Р»РёРєСЃРёСЂ РёР·РјРµРЅРµРЅРёСЏ СЃРѕР·РЅР°РЅРёСЏ"; 
 };
 
 FUNC INT PC_ItPo_Addon_Geist_Condition()
@@ -829,7 +829,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Эликсир жизни (1 лечебный корень и 1 царский щавель)"; 
+	description		= "Р­Р»РёРєСЃРёСЂ Р¶РёР·РЅРё (1 Р»РµС‡РµР±РЅС‹Р№ РєРѕСЂРµРЅСЊ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -868,7 +868,7 @@ INSTANCE PC_ItPo_Perm_Mana (C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Эликсир духа (1 огненный корень и 1 царский щавель)"; 
+	description		= "Р­Р»РёРєСЃРёСЂ РґСѓС…Р° (1 РѕРіРЅРµРЅРЅС‹Р№ РєРѕСЂРµРЅСЊ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Mana_Condition()
@@ -907,7 +907,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Эликсир ловкости (1 гоблинские ягоды и 1 царский щавель.)"; 
+	description		= "Р­Р»РёРєСЃРёСЂ Р»РѕРІРєРѕСЃС‚Рё (1 РіРѕР±Р»РёРЅСЃРєРёРµ СЏРіРѕРґС‹ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -946,7 +946,7 @@ INSTANCE PC_ItPo_Strg (C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Эликсир силы (1 драконий корень и 1 царский щавель.)"; 
+	description		= "Р­Р»РёРєСЃРёСЂ СЃРёР»С‹ (1 РґСЂР°РєРѕРЅРёР№ РєРѕСЂРµРЅСЊ Рё 1 С†Р°СЂСЃРєРёР№ С‰Р°РІРµР»СЊ.)"; 
 };
 
 FUNC INT PC_ItPo_Strg_Condition()
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Зелье ускорения (1 снеппер-трава и 1 луговой горец)"; 
+	description		= "Р—РµР»СЊРµ СѓСЃРєРѕСЂРµРЅРёСЏ (1 СЃРЅРµРїРїРµСЂ-С‚СЂР°РІР° Рё 1 Р»СѓРіРѕРІРѕР№ РіРѕСЂРµС†)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1028,7 +1028,7 @@ INSTANCE PC_Tabak_Start (C_Info)
 	condition		= PC_Tabak_Start_Condition;
 	information		= PC_Tabak_Start_Info;
 	permanent		= TRUE;
-	description		= "Смешать табак или свернуть косяк"; 
+	description		= "РЎРјРµС€Р°С‚СЊ С‚Р°Р±Р°Рє РёР»Рё СЃРІРµСЂРЅСѓС‚СЊ РєРѕСЃСЏРє"; 
 };
 
 FUNC INT PC_Tabak_Start_Condition ()
@@ -1081,7 +1081,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Обработать болотную траву (1 косяк)"; 
+	description		= "РћР±СЂР°Р±РѕС‚Р°С‚СЊ Р±РѕР»РѕС‚РЅСѓСЋ С‚СЂР°РІСѓ (1 РєРѕСЃСЏРє)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Grьnen Novizen herstellen
+//	GrСЊnen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1119,7 +1119,7 @@ INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 	condition		= PC_ItMi_Addon_Joint_01_Condition;
 	information		= PC_ItMi_Addon_Joint_01_Info;
 	permanent		= TRUE;
-	description		= "Изготовить 'Зеленого послушника' (1 косяк)"; 
+	description		= "РР·РіРѕС‚РѕРІРёС‚СЊ 'Р—РµР»РµРЅРѕРіРѕ РїРѕСЃР»СѓС€РЅРёРєР°' (1 РєРѕСЃСЏРє)"; 
 };
 
 FUNC INT PC_ItMi_Addon_Joint_01_Condition()
@@ -1159,7 +1159,7 @@ INSTANCE PC_ItMi_Tabak (C_INFO)
 	condition		= PC_ItMi_Tabak_Condition;
 	information		= PC_ItMi_Tabak_Info;
 	permanent		= TRUE;
-	description		= "Смешать табак ..."; 
+	description		= "РЎРјРµС€Р°С‚СЊ С‚Р°Р±Р°Рє ..."; 
 };
 
 FUNC INT PC_ItMi_Tabak_Condition()
@@ -1182,15 +1182,15 @@ FUNC VOID PC_ItMi_Tabak_Info ()
 	
 	if (Npc_HasItems (hero, ItFo_Honey) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"... с медом",PC_ItMi_Tabak_Honey);
+		Info_AddChoice 	(PC_ItMi_Tabak,"... СЃ РјРµРґРѕРј",PC_ItMi_Tabak_Honey);
 	};
 	if (Npc_HasItems (hero, ItPl_SwampHerb) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"... с болотной травой",PC_ItMi_Tabak_Swampherb);
+		Info_AddChoice 	(PC_ItMi_Tabak,"... СЃ Р±РѕР»РѕС‚РЅРѕР№ С‚СЂР°РІРѕР№",PC_ItMi_Tabak_Swampherb);
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"... с черным грибом",PC_ItMi_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_ItMi_Tabak,"... СЃ С‡РµСЂРЅС‹Рј РіСЂРёР±РѕРј",PC_ItMi_Tabak_Mushroom_01);
 	};
 	
 };
@@ -1228,7 +1228,7 @@ INSTANCE PC_ItPo_MegaDrink (C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Зелье из драконьих яиц (10 драконьих яиц, 1 черный жемчуг, 1 сера)"; 
+	description		= "Р—РµР»СЊРµ РёР· РґСЂР°РєРѕРЅСЊРёС… СЏРёС† (10 РґСЂР°РєРѕРЅСЊРёС… СЏРёС†, 1 С‡РµСЂРЅС‹Р№ Р¶РµРјС‡СѓРі, 1 СЃРµСЂР°)"; 
 };
 
 FUNC INT PC_ItPo_MegaDrink_Condition()

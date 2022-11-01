@@ -2,7 +2,7 @@
 instance VLK_436_Sonja (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Соня";	
+	name 		= "РЎРѕРЅСЏ";	
 	guild 		= GIL_VLK;
 	id 			= 436;
 	voice 		= 16;

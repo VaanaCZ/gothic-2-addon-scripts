@@ -1,7 +1,7 @@
 INSTANCE KDW_14040_Addon_Riordian_ADW (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Риордиан";
+	name 		= "Р РёРѕСЂРґРёР°РЅ";
 	guild 		= GIL_KDW; 
 	id 			= 14040;
 	voice 		= 10;

@@ -1,7 +1,7 @@
 INSTANCE PIR_1355_Addon_Skip (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ñêèï";
+	name 		= "Ð¡ÐºÐ¸Ð¿";
 	guild 		= GIL_PIR;
 	id 			= 1355;
 	voice 		= 8;

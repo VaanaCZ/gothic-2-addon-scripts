@@ -2,7 +2,7 @@
 instance SLD_841_Engardo (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Эндарго"; 
+	name 		= "Р­РЅРґР°СЂРіРѕ"; 
 	guild 		= GIL_BDT;
 	id 			= 841;
 	voice 		= 13;

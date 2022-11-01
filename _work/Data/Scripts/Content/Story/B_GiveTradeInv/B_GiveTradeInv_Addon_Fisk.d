@@ -27,7 +27,7 @@ FUNC VOID B_GiveTradeInv_Addon_Fisk (var C_NPC slf)
 		CreateInvItems (slf,ItPl_Temp_Herb, 3); 
 		CreateInvItems (slf,ItPl_Beet, 3); 
 		
-		//Tr‰nke
+		//Tr–¥nke
 		CreateInvItems (slf,ItPo_Mana_01 	, 5); 
 		CreateInvItems (slf,ItPo_Health_01	, 5);
 		
@@ -74,7 +74,7 @@ FUNC VOID B_GiveTradeInv_Addon_Fisk (var C_NPC slf)
 		CreateInvItems (slf,ItPl_Temp_Herb, 3); 
 		CreateInvItems (slf,ItPl_Beet, 3); 
 		
-		//Tr‰nke
+		//Tr–¥nke
 		CreateInvItems (slf,ItPo_Mana_01 	, 5); 
 		CreateInvItems (slf,ItPo_Health_01	, 5);
 		
@@ -111,7 +111,7 @@ FUNC VOID B_GiveTradeInv_Addon_Fisk (var C_NPC slf)
 		
 		CreateInvItems (slf,ItPl_Temp_Herb, 3); 
 		CreateInvItems (slf,ItPl_Beet, 3); 
-		//Tr‰nke
+		//Tr–¥nke
 		CreateInvItems (slf,ItPo_Mana_01 	, 5); 
 		CreateInvItems (slf,ItPo_Health_01	, 5);
 		
@@ -149,7 +149,7 @@ FUNC VOID B_GiveTradeInv_Addon_Fisk (var C_NPC slf)
 		
 		CreateInvItems (slf,ItPl_Temp_Herb, 3); 
 		
-		//Tr‰nke
+		//Tr–¥nke
 		CreateInvItems (slf,ItPo_Mana_01 	, 5); 
 		CreateInvItems (slf,ItPo_Health_01	, 5);
 		
@@ -187,7 +187,7 @@ FUNC VOID B_GiveTradeInv_Addon_Fisk (var C_NPC slf)
 		
 		CreateInvItems (slf,ItPl_Temp_Herb, 3); 
 		
-		//Tr‰nke
+		//Tr–¥nke
 		CreateInvItems (slf,ItPo_Mana_01 	, 5); 
 		CreateInvItems (slf,ItPo_Health_01	, 5);
 		

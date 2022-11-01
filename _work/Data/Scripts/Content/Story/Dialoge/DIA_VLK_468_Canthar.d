@@ -47,7 +47,7 @@ INSTANCE DIA_Canthar_EXIT(C_INFO)
 	condition	= DIA_Canthar_EXIT_Condition;
 	information	= DIA_Canthar_EXIT_Info;
 	permanent	= TRUE;
-	description = "Мне нужно идти!";
+	description = "РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё!";
 };                       
 
 FUNC INT DIA_Canthar_EXIT_Condition()
@@ -57,8 +57,8 @@ FUNC INT DIA_Canthar_EXIT_Condition()
  
 FUNC VOID DIA_Canthar_EXIT_Info()
 {
-	AI_Output (other, self,"DIA_Canthar_EXIT_15_00"); //Мне нужно идти!
-	AI_Output (self, other,"DIA_Canthar_EXIT_09_01"); //Как знаешь.
+	AI_Output (other, self,"DIA_Canthar_EXIT_15_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё!
+	AI_Output (self, other,"DIA_Canthar_EXIT_09_01"); //РљР°Рє Р·РЅР°РµС€СЊ.
 	AI_StopProcessInfos	(self);
 };
 // ************************************************************
@@ -90,31 +90,31 @@ FUNC VOID DIA_Canthar_PersonalCRIMES_Info()
 	// ------ Spieler hat mich besiegt ------
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_00"); //Это было очень глупо с твоей стороны атаковать меня.
+		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_00"); //Р­С‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРЅСЊ РіР»СѓРїРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹ Р°С‚Р°РєРѕРІР°С‚СЊ РјРµРЅСЏ.
 	}
 		
 	// ------ ich habe Spieler besiegt ODER keiner wurde besiegt ------
 	else // FIGHT_WON oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_01"); //(насмешливо) Ты думал, что так просто сможешь справиться со мной?
+		AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_01"); //(РЅР°СЃРјРµС€Р»РёРІРѕ) РўС‹ РґСѓРјР°Р», С‡С‚Рѕ С‚Р°Рє РїСЂРѕСЃС‚Рѕ СЃРјРѕР¶РµС€СЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃРѕ РјРЅРѕР№?
 	};
 	
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_02"); //Либо ты сейчас извинишься, либо я позабочусь, чтобы ты горько пожалел о том, что сделал!
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_15_03"); //А что именно ты имел в виду?
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_09_02"); //Р›РёР±Рѕ С‚С‹ СЃРµР№С‡Р°СЃ РёР·РІРёРЅРёС€СЊСЃСЏ, Р»РёР±Рѕ СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ С‚С‹ РіРѕСЂСЊРєРѕ РїРѕР¶Р°Р»РµР» Рѕ С‚РѕРј, С‡С‚Рѕ СЃРґРµР»Р°Р»!
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_15_03"); //Рђ С‡С‚Рѕ РёРјРµРЅРЅРѕ С‚С‹ РёРјРµР» РІ РІРёРґСѓ?
 	B_Say_Gold(self,other, 100);
 	
 	Info_ClearChoices	(DIA_Canthar_PersonalCRIMES);
-	Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "У меня нет столько!"	,DIA_Canthar_PersonalCRIMES_NotEnough);
+	Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ!"	,DIA_Canthar_PersonalCRIMES_NotEnough);
 	if (Npc_HasItems (other, itmi_gold) >= 100)
 	{
-		Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "Вот твое золото - давай забудем об этом!",DIA_Canthar_PersonalCRIMES_Pay);
+		Info_AddChoice		(DIA_Canthar_PersonalCRIMES, "Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ - РґР°РІР°Р№ Р·Р°Р±СѓРґРµРј РѕР± СЌС‚РѕРј!",DIA_Canthar_PersonalCRIMES_Pay);
 	};
 };
 
 func void DIA_Canthar_PersonalCRIMES_Pay()
 {
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_Pay_15_00"); //Вот твое золото - давай забудем об этом!
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_Pay_09_01"); //Очень разумно с твоей стороны!
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_Pay_15_00"); //Р’РѕС‚ С‚РІРѕРµ Р·РѕР»РѕС‚Рѕ - РґР°РІР°Р№ Р·Р°Р±СѓРґРµРј РѕР± СЌС‚РѕРј!
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_Pay_09_01"); //РћС‡РµРЅСЊ СЂР°Р·СѓРјРЅРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹!
 	
 	// ------ AIVARs resetten! ------
 	self.aivar[AIV_LastFightComment] = TRUE;
@@ -124,8 +124,8 @@ func void DIA_Canthar_PersonalCRIMES_Pay()
 
 func void DIA_Canthar_PersonalCRIMES_NotEnough()
 {
-	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_NotEnough_15_00"); //У меня нет столько!
-	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_NotEnough_09_01"); //Тогда зачем ты попусту тратишь мое время?
+	AI_Output (other, self,"DIA_Canthar_PersonalCRIMES_NotEnough_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ СЃС‚РѕР»СЊРєРѕ!
+	AI_Output (self, other,"DIA_Canthar_PersonalCRIMES_NotEnough_09_01"); //РўРѕРіРґР° Р·Р°С‡РµРј С‚С‹ РїРѕРїСѓСЃС‚Сѓ С‚СЂР°С‚РёС€СЊ РјРѕРµ РІСЂРµРјСЏ?
 	
 	AI_StopProcessInfos(self);
 };
@@ -157,15 +157,15 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 {	
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 	
-	// ------ OHNE Rьstung ------
+	// ------ OHNE RСЊstung ------
 	if (Npc_HasEquippedArmor(other) == FALSE) 
 	{
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //Посмотрите, кто у нас здесь!
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_01"); //Ты ведь идешь в город - я не прав?
-		AI_Output	(other, self,"DIA_Canthar_Hallo_15_02"); //Может быть.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_03"); //Хм! (фыркает) ты похож на беглеца! Все беглецы направляются в город.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_04"); //Возможно, ты даже беглый каторжник из колонии.
-		AI_Output	(self, other,"DIA_Canthar_Hallo_09_05"); //(торопливо) Меня не волнует, откуда ты пришел. Но мне кажется, у меня есть интересное предложение для тебя...
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_00"); //РџРѕСЃРјРѕС‚СЂРёС‚Рµ, РєС‚Рѕ Сѓ РЅР°СЃ Р·РґРµСЃСЊ!
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_01"); //РўС‹ РІРµРґСЊ РёРґРµС€СЊ РІ РіРѕСЂРѕРґ - СЏ РЅРµ РїСЂР°РІ?
+		AI_Output	(other, self,"DIA_Canthar_Hallo_15_02"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_03"); //РҐРј! (С„С‹СЂРєР°РµС‚) С‚С‹ РїРѕС…РѕР¶ РЅР° Р±РµРіР»РµС†Р°! Р’СЃРµ Р±РµРіР»РµС†С‹ РЅР°РїСЂР°РІР»СЏСЋС‚СЃСЏ РІ РіРѕСЂРѕРґ.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_04"); //Р’РѕР·РјРѕР¶РЅРѕ, С‚С‹ РґР°Р¶Рµ Р±РµРіР»С‹Р№ РєР°С‚РѕСЂР¶РЅРёРє РёР· РєРѕР»РѕРЅРёРё.
+		AI_Output	(self, other,"DIA_Canthar_Hallo_09_05"); //(С‚РѕСЂРѕРїР»РёРІРѕ) РњРµРЅСЏ РЅРµ РІРѕР»РЅСѓРµС‚, РѕС‚РєСѓРґР° С‚С‹ РїСЂРёС€РµР». РќРѕ РјРЅРµ РєР°Р¶РµС‚СЃСЏ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ РґР»СЏ С‚РµР±СЏ...
 		
 		Canthar_GotMe = TRUE;
 	}
@@ -174,33 +174,33 @@ FUNC VOID DIA_Canthar_Hallo_Info()
 	else if (Hlp_IsItem (itm, ItAr_Bau_L)) 
 	|| 		(Hlp_IsItem (itm, ItAr_Bau_M))
 	{
-		AI_Output (self, other,"DIA_Canthar_HelloArmor_09_06");	//Как идет работа, крестьянин?
+		AI_Output (self, other,"DIA_Canthar_HelloArmor_09_06");	//РљР°Рє РёРґРµС‚ СЂР°Р±РѕС‚Р°, РєСЂРµСЃС‚СЊСЏРЅРёРЅ?
 			
 		Info_ClearChoices	(DIA_Canthar_Hallo);
-		Info_AddChoice		(DIA_Canthar_Hallo, "Я похож на фермера?" 	,DIA_Canthar_Hallo_NoBauer);
-		Info_AddChoice		(DIA_Canthar_Hallo, "Мне не на что жаловаться."		,DIA_Canthar_Hallo_Bauer);
+		Info_AddChoice		(DIA_Canthar_Hallo, "РЇ РїРѕС…РѕР¶ РЅР° С„РµСЂРјРµСЂР°?" 	,DIA_Canthar_Hallo_NoBauer);
+		Info_AddChoice		(DIA_Canthar_Hallo, "РњРЅРµ РЅРµ РЅР° С‡С‚Рѕ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ."		,DIA_Canthar_Hallo_Bauer);
 	}
 	
-	// ------ alle anderen Rьstungen (hцchst unwahrscheinlich) ------
+	// ------ alle anderen RСЊstungen (hС†chst unwahrscheinlich) ------
 	else 
 	{
-		AI_Output (self, other,"DIA_Canthar_Hallo_09_07"); //Что я могу сделать для тебя?
+		AI_Output (self, other,"DIA_Canthar_Hallo_09_07"); //Р§С‚Рѕ СЏ РјРѕРіСѓ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 	};
 };
 
 func void DIA_Canthar_Hallo_Bauer()
 {
-	AI_Output	(other, self,"DIA_Canthar_Hallo_Bauer_15_00");	//Мне не на что жаловаться.
-	AI_Output	(self, other,"DIA_Canthar_Hallo_Bauer_09_01");	//Могу я что-нибудь сделать для тебя?
+	AI_Output	(other, self,"DIA_Canthar_Hallo_Bauer_15_00");	//РњРЅРµ РЅРµ РЅР° С‡С‚Рѕ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ.
+	AI_Output	(self, other,"DIA_Canthar_Hallo_Bauer_09_01");	//РњРѕРіСѓ СЏ С‡С‚Рѕ-РЅРёР±СѓРґСЊ СЃРґРµР»Р°С‚СЊ РґР»СЏ С‚РµР±СЏ?
 
 	Info_ClearChoices	(DIA_Canthar_Hallo);
 };
 
 func void DIA_Canthar_Hallo_NoBauer()
 {
-	AI_Output	(other, self,"DIA_Canthar_Hallo_NoBauer_15_00"); //Я похож на фермера?
-	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_01"); //Ты выглядишь как фермер. Но говоришь совсем не так, как они!
-	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_02"); //(в раздумьях) Если я ни в чем не ошибаюсь, у меня есть интересное предложение для тебя...
+	AI_Output	(other, self,"DIA_Canthar_Hallo_NoBauer_15_00"); //РЇ РїРѕС…РѕР¶ РЅР° С„РµСЂРјРµСЂР°?
+	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_01"); //РўС‹ РІС‹РіР»СЏРґРёС€СЊ РєР°Рє С„РµСЂРјРµСЂ. РќРѕ РіРѕРІРѕСЂРёС€СЊ СЃРѕРІСЃРµРј РЅРµ С‚Р°Рє, РєР°Рє РѕРЅРё!
+	AI_Output	(self, other,"DIA_Canthar_Hallo_NoBauer_09_02"); //(РІ СЂР°Р·РґСѓРјСЊСЏС…) Р•СЃР»Рё СЏ РЅРё РІ С‡РµРј РЅРµ РѕС€РёР±Р°СЋСЃСЊ, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РёРЅС‚РµСЂРµСЃРЅРѕРµ РїСЂРµРґР»РѕР¶РµРЅРёРµ РґР»СЏ С‚РµР±СЏ...
 	
 	Canthar_GotMe = TRUE;
 	
@@ -219,7 +219,7 @@ INSTANCE DIA_Canthar_WhatOffer (C_INFO)
 	condition	= DIA_Canthar_WhatOffer_Condition;
 	information	= DIA_Canthar_WhatOffer_Info;
 	permanent	= FALSE;
-	description	= "Что ты можешь предложить мне?";
+	description	= "Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?";
 };                       
 
 FUNC INT DIA_Canthar_WhatOffer_Condition()
@@ -232,90 +232,90 @@ FUNC INT DIA_Canthar_WhatOffer_Condition()
  
 FUNC VOID DIA_Canthar_WhatOffer_Info()
 {	
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_15_00"); //Что ты можешь предложить мне?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_15_00"); //Р§С‚Рѕ С‚С‹ РјРѕР¶РµС€СЊ РїСЂРµРґР»РѕР¶РёС‚СЊ РјРЅРµ?
 	
 	if (Canthar_GotME == TRUE)
 	{
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{	
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_01"); //Судя по тому, как ты выглядишь, стража никогда не пустит тебя в город.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_01"); //РЎСѓРґСЏ РїРѕ С‚РѕРјСѓ, РєР°Рє С‚С‹ РІС‹РіР»СЏРґРёС€СЊ, СЃС‚СЂР°Р¶Р° РЅРёРєРѕРіРґР° РЅРµ РїСѓСЃС‚РёС‚ С‚РµР±СЏ РІ РіРѕСЂРѕРґ.
 		}
 		else
 		{
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_02"); //(иронично) Если ты будешь говорить так же 'убедительно' со стражей у ворот, как говоришь со мной, они никогда не пустят тебя в город.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_02"); //(РёСЂРѕРЅРёС‡РЅРѕ) Р•СЃР»Рё С‚С‹ Р±СѓРґРµС€СЊ РіРѕРІРѕСЂРёС‚СЊ С‚Р°Рє Р¶Рµ 'СѓР±РµРґРёС‚РµР»СЊРЅРѕ' СЃРѕ СЃС‚СЂР°Р¶РµР№ Сѓ РІРѕСЂРѕС‚, РєР°Рє РіРѕРІРѕСЂРёС€СЊ СЃРѕ РјРЅРѕР№, РѕРЅРё РЅРёРєРѕРіРґР° РЅРµ РїСѓСЃС‚СЏС‚ С‚РµР±СЏ РІ РіРѕСЂРѕРґ.
 		};
 		
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_03"); //Я могу помочь тебе попасть в город.
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_04"); //У меня есть вот этот клочок бумаги. С королевской печатью и подписью губернатора. Пропуск.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_03"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_04"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РІРѕС‚ СЌС‚РѕС‚ РєР»РѕС‡РѕРє Р±СѓРјР°РіРё. РЎ РєРѕСЂРѕР»РµРІСЃРєРѕР№ РїРµС‡Р°С‚СЊСЋ Рё РїРѕРґРїРёСЃСЊСЋ РіСѓР±РµСЂРЅР°С‚РѕСЂР°. РџСЂРѕРїСѓСЃРє.
 				
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		{	
-			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_05"); //С этим пропуском в кармане ты сможешь спокойно войти в город, и страже придется пропустить тебя.
+			AI_Output (self, other,"DIA_Canthar_WhatOffer_09_05"); //РЎ СЌС‚РёРј РїСЂРѕРїСѓСЃРєРѕРј РІ РєР°СЂРјР°РЅРµ С‚С‹ СЃРјРѕР¶РµС€СЊ СЃРїРѕРєРѕР№РЅРѕ РІРѕР№С‚Рё РІ РіРѕСЂРѕРґ, Рё СЃС‚СЂР°Р¶Рµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕРїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ.
 		};
 		
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_06"); //Тебе это интересно?
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_06"); //РўРµР±Рµ СЌС‚Рѕ РёРЅС‚РµСЂРµСЃРЅРѕ?
 		
 		Info_ClearChoices	(DIA_Canthar_WhatOffer);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Нет! Оставь эту бумагу себе!",DIA_Canthar_WhatOffer_No);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Что ты хочешь за этот пропуск?",DIA_Canthar_WhatOffer_Price);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "А как ТЫ попадешь в город?" 			,DIA_Canthar_WhatOffer_HowYouIn);
-		Info_AddChoice		(DIA_Canthar_WhatOffer, "Это похоже на подвох..."	,DIA_Canthar_WhatOffer_Strings);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "РќРµС‚! РћСЃС‚Р°РІСЊ СЌС‚Сѓ Р±СѓРјР°РіСѓ СЃРµР±Рµ!",DIA_Canthar_WhatOffer_No);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚РѕС‚ РїСЂРѕРїСѓСЃРє?",DIA_Canthar_WhatOffer_Price);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Рђ РєР°Рє РўР« РїРѕРїР°РґРµС€СЊ РІ РіРѕСЂРѕРґ?" 			,DIA_Canthar_WhatOffer_HowYouIn);
+		Info_AddChoice		(DIA_Canthar_WhatOffer, "Р­С‚Рѕ РїРѕС…РѕР¶Рµ РЅР° РїРѕРґРІРѕС…..."	,DIA_Canthar_WhatOffer_Strings);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_07"); //Я бродячий торговец. Я торгую всем.
+		AI_Output (self, other,"DIA_Canthar_WhatOffer_09_07"); //РЇ Р±СЂРѕРґСЏС‡РёР№ С‚РѕСЂРіРѕРІРµС†. РЇ С‚РѕСЂРіСѓСЋ РІСЃРµРј.
 	};
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Кантар торгует различным оружием."); 
+	B_LogEntry (Topic_CityTrader,"РљР°РЅС‚Р°СЂ С‚РѕСЂРіСѓРµС‚ СЂР°Р·Р»РёС‡РЅС‹Рј РѕСЂСѓР¶РёРµРј."); 
 };
 
 func void DIA_Canthar_WhatOffer_Strings()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Strings_15_00"); //Это похоже на подвох...
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Strings_09_01"); //Нет! Никакого подвоха. Ты просто окажешь мне услугу.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Strings_15_00"); //Р­С‚Рѕ РїРѕС…РѕР¶Рµ РЅР° РїРѕРґРІРѕС…...
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Strings_09_01"); //РќРµС‚! РќРёРєР°РєРѕРіРѕ РїРѕРґРІРѕС…Р°. РўС‹ РїСЂРѕСЃС‚Рѕ РѕРєР°Р¶РµС€СЊ РјРЅРµ СѓСЃР»СѓРіСѓ.
 };
 
 func void DIA_Canthar_WhatOffer_HowYouIn()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_HowYouIn_15_00");  //А как ТЫ попадешь в город?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_HowYouIn_09_01"); //Стража знает меня. Я просто скажу им, что потерял мой пропуск.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_HowYouIn_15_00");  //Рђ РєР°Рє РўР« РїРѕРїР°РґРµС€СЊ РІ РіРѕСЂРѕРґ?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_HowYouIn_09_01"); //РЎС‚СЂР°Р¶Р° Р·РЅР°РµС‚ РјРµРЅСЏ. РЇ РїСЂРѕСЃС‚Рѕ СЃРєР°Р¶Сѓ РёРј, С‡С‚Рѕ РїРѕС‚РµСЂСЏР» РјРѕР№ РїСЂРѕРїСѓСЃРє.
 };
 
 func void DIA_Canthar_WhatOffer_Price()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_00"); //Что ты хочешь за этот пропуск?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_01"); //(удовлетворенно) Я ЗНАЛ, что не ошибся в тебе!
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_02"); //Послушай. Ты получишь от меня пропуск. Прямо сейчас!
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_03"); //Просто так?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_04"); //Да. НО: если я встречу тебя в городе, ты будешь должен оказать мне услугу.
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_05"); //Ну что, договорились?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_00"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·Р° СЌС‚РѕС‚ РїСЂРѕРїСѓСЃРє?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_01"); //(СѓРґРѕРІР»РµС‚РІРѕСЂРµРЅРЅРѕ) РЇ Р—РќРђР›, С‡С‚Рѕ РЅРµ РѕС€РёР±СЃСЏ РІ С‚РµР±Рµ!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_02"); //РџРѕСЃР»СѓС€Р°Р№. РўС‹ РїРѕР»СѓС‡РёС€СЊ РѕС‚ РјРµРЅСЏ РїСЂРѕРїСѓСЃРє. РџСЂСЏРјРѕ СЃРµР№С‡Р°СЃ!
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Price_15_03"); //РџСЂРѕСЃС‚Рѕ С‚Р°Рє?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_04"); //Р”Р°. РќРћ: РµСЃР»Рё СЏ РІСЃС‚СЂРµС‡Сѓ С‚РµР±СЏ РІ РіРѕСЂРѕРґРµ, С‚С‹ Р±СѓРґРµС€СЊ РґРѕР»Р¶РµРЅ РѕРєР°Р·Р°С‚СЊ РјРЅРµ СѓСЃР»СѓРіСѓ.
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Price_09_05"); //РќСѓ С‡С‚Рѕ, РґРѕРіРѕРІРѕСЂРёР»РёСЃСЊ?
 		
-	Info_AddChoice (DIA_Canthar_WhatOffer, "Конечно. Давай сюда эту бумагу.",DIA_Canthar_WhatOffer_Ok);
+	Info_AddChoice (DIA_Canthar_WhatOffer, "РљРѕРЅРµС‡РЅРѕ. Р”Р°РІР°Р№ СЃСЋРґР° СЌС‚Сѓ Р±СѓРјР°РіСѓ.",DIA_Canthar_WhatOffer_Ok);
 };
 
 func void DIA_Canthar_WhatOffer_Ok()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_Ok_15_00"); //Конечно. Давай сюда эту бумагу.
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_01"); //Держи. Но обращайся с ней аккуратно, она очень ценная.
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_Ok_15_00"); //РљРѕРЅРµС‡РЅРѕ. Р”Р°РІР°Р№ СЃСЋРґР° СЌС‚Сѓ Р±СѓРјР°РіСѓ.
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_01"); //Р”РµСЂР¶Рё. РќРѕ РѕР±СЂР°С‰Р°Р№СЃСЏ СЃ РЅРµР№ Р°РєРєСѓСЂР°С‚РЅРѕ, РѕРЅР° РѕС‡РµРЅСЊ С†РµРЅРЅР°СЏ.
 	CreateInvItems (self,ItWr_Passierschein, 1);
 	B_GiveInvItems (self, other, ItWr_Passierschein, 1);
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_02"); //И еще одно: даже и не думай нарушить свое слово!
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_03"); //Я торговец и имею очень большое влияние в городе - просто так это тебе с рук не сойдет, уж поверь мне!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_02"); //Р РµС‰Рµ РѕРґРЅРѕ: РґР°Р¶Рµ Рё РЅРµ РґСѓРјР°Р№ РЅР°СЂСѓС€РёС‚СЊ СЃРІРѕРµ СЃР»РѕРІРѕ!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_Ok_09_03"); //РЇ С‚РѕСЂРіРѕРІРµС† Рё РёРјРµСЋ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РѕРµ РІР»РёСЏРЅРёРµ РІ РіРѕСЂРѕРґРµ - РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЌС‚Рѕ С‚РµР±Рµ СЃ СЂСѓРє РЅРµ СЃРѕР№РґРµС‚, СѓР¶ РїРѕРІРµСЂСЊ РјРЅРµ!
 	
 	Canthar_Gefallen = TRUE;	
 	Info_ClearChoices	(DIA_Canthar_WhatOffer);
 	
 	Log_CreateTopic (TOPIC_City,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_City,LOG_RUNNING);
-	B_LogEntry (TOPIC_City,"Я получил пропуск у торговца Кантара, который позволит мне попасть в город. Взамен, я должен оказать ему услугу в следующий раз, когда увижу его в городе.");
+	B_LogEntry (TOPIC_City,"РЇ РїРѕР»СѓС‡РёР» РїСЂРѕРїСѓСЃРє Сѓ С‚РѕСЂРіРѕРІС†Р° РљР°РЅС‚Р°СЂР°, РєРѕС‚РѕСЂС‹Р№ РїРѕР·РІРѕР»РёС‚ РјРЅРµ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ. Р’Р·Р°РјРµРЅ, СЏ РґРѕР»Р¶РµРЅ РѕРєР°Р·Р°С‚СЊ РµРјСѓ СѓСЃР»СѓРіСѓ РІ СЃР»РµРґСѓСЋС‰РёР№ СЂР°Р·, РєРѕРіРґР° СѓРІРёР¶Сѓ РµРіРѕ РІ РіРѕСЂРѕРґРµ.");
 
 };
 
 func void DIA_Canthar_WhatOffer_No()
 {
-	AI_Output (other, self,"DIA_Canthar_WhatOffer_No_15_00"); //Нет! Оставь эту бумагу себе!
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_01"); //Хм. Похоже, я недооценил тебя, а?
-	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_02"); //Ладно. Тебе нужно что-нибудь еще? Может тебе показать мои товары?
+	AI_Output (other, self,"DIA_Canthar_WhatOffer_No_15_00"); //РќРµС‚! РћСЃС‚Р°РІСЊ СЌС‚Сѓ Р±СѓРјР°РіСѓ СЃРµР±Рµ!
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_01"); //РҐРј. РџРѕС…РѕР¶Рµ, СЏ РЅРµРґРѕРѕС†РµРЅРёР» С‚РµР±СЏ, Р°?
+	AI_Output (self, other,"DIA_Canthar_WhatOffer_No_09_02"); //Р›Р°РґРЅРѕ. РўРµР±Рµ РЅСѓР¶РЅРѕ С‡С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ? РњРѕР¶РµС‚ С‚РµР±Рµ РїРѕРєР°Р·Р°С‚СЊ РјРѕРё С‚РѕРІР°СЂС‹?
 	
 	Info_ClearChoices	(DIA_Canthar_WhatOffer);
 };
@@ -332,7 +332,7 @@ instance DIA_Canthar_TRADE		(C_INFO)
 	condition	= DIA_Canthar_TRADE_Condition;
 	information	= DIA_Canthar_TRADE_Info;
 	permanent	= TRUE;
-	description	= "Покажи мне свои товары!";
+	description	= "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹!";
 	trade		= TRUE;
 };
 
@@ -346,11 +346,11 @@ func int DIA_Canthar_TRADE_Condition ()
 
 func void DIA_Canthar_TRADE_Info ()
 {
-	AI_Output (other, self, "DIA_Canthar_TRADE_15_00"); //Покажи мне свои товары!
+	AI_Output (other, self, "DIA_Canthar_TRADE_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹!
 	
 	B_GiveTradeInv (self);
 	
-	AI_Output (self, other, "DIA_Canthar_TRADE_09_01"); //Выбирай.
+	AI_Output (self, other, "DIA_Canthar_TRADE_09_01"); //Р’С‹Р±РёСЂР°Р№.
 	
 	
 };
@@ -366,7 +366,7 @@ func void DIA_Canthar_TRADE_Info ()
 // ###########################################
 /*
 		-->
-		Aber ein Hдndler namnes Canthar hat das erzдhlt. 
+		Aber ein HРґndler namnes Canthar hat das erzРґhlt. 
 	*/
 
 ///////////////////////////////////////////////////////////////////////
@@ -395,44 +395,44 @@ func void DIA_Canthar_PAYPRICEINCITY_Info ()
 {
 	if (Canthar_Gefallen == TRUE)
 	{
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_00"); //За тобой должок. И пришло время вернуть его.
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_00"); //Р—Р° С‚РѕР±РѕР№ РґРѕР»Р¶РѕРє. Р РїСЂРёС€Р»Рѕ РІСЂРµРјСЏ РІРµСЂРЅСѓС‚СЊ РµРіРѕ.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_01"); //Эй, ты, у меня есть предложение для тебя.
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_01"); //Р­Р№, С‚С‹, Сѓ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРµРґР»РѕР¶РµРЅРёРµ РґР»СЏ С‚РµР±СЏ.
 	};
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_02"); //Что ты хочешь?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_03"); //Я хочу вернуть мой старый прилавок на рыночной площади. Сара увела его у меня.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_04"); //И я хочу, чтобы она вернула мне этот прилавок назад.
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_05"); //А моя роль в этом какая?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_06"); //Я дам тебе письмо, которое ты должен подложить в ее карман.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_07"); //Затем ты пойдешь к Андрэ и скажешь ему, что Сара продает оружие Онару.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_08"); //Ее посадят в тюрьму, ты получишь награду, а я свой прилавок.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_09"); //У тебя есть два дня на выполнение этого.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_02"); //Р§С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_03"); //РЇ С…РѕС‡Сѓ РІРµСЂРЅСѓС‚СЊ РјРѕР№ СЃС‚Р°СЂС‹Р№ РїСЂРёР»Р°РІРѕРє РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё. РЎР°СЂР° СѓРІРµР»Р° РµРіРѕ Сѓ РјРµРЅСЏ.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_04"); //Р СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ РѕРЅР° РІРµСЂРЅСѓР»Р° РјРЅРµ СЌС‚РѕС‚ РїСЂРёР»Р°РІРѕРє РЅР°Р·Р°Рґ.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_05"); //Рђ РјРѕСЏ СЂРѕР»СЊ РІ СЌС‚РѕРј РєР°РєР°СЏ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_06"); //РЇ РґР°Рј С‚РµР±Рµ РїРёСЃСЊРјРѕ, РєРѕС‚РѕСЂРѕРµ С‚С‹ РґРѕР»Р¶РµРЅ РїРѕРґР»РѕР¶РёС‚СЊ РІ РµРµ РєР°СЂРјР°РЅ.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_07"); //Р—Р°С‚РµРј С‚С‹ РїРѕР№РґРµС€СЊ Рє РђРЅРґСЂСЌ Рё СЃРєР°Р¶РµС€СЊ РµРјСѓ, С‡С‚Рѕ РЎР°СЂР° РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ РћРЅР°СЂСѓ.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_08"); //Р•Рµ РїРѕСЃР°РґСЏС‚ РІ С‚СЋСЂСЊРјСѓ, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РЅР°РіСЂР°РґСѓ, Р° СЏ СЃРІРѕР№ РїСЂРёР»Р°РІРѕРє.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_09"); //РЈ С‚РµР±СЏ РµСЃС‚СЊ РґРІР° РґРЅСЏ РЅР° РІС‹РїРѕР»РЅРµРЅРёРµ СЌС‚РѕРіРѕ.
 	
 	if (Canthar_Gefallen == FALSE)
 	{
-		AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_10"); //А что мне с этого будет?
-		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_11"); //Когда я верну себе прилавок, ты получишь оружие от меня - очень хорошее оружие.
+		AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_15_10"); //Рђ С‡С‚Рѕ РјРЅРµ СЃ СЌС‚РѕРіРѕ Р±СѓРґРµС‚?
+		AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_09_11"); //РљРѕРіРґР° СЏ РІРµСЂРЅСѓ СЃРµР±Рµ РїСЂРёР»Р°РІРѕРє, С‚С‹ РїРѕР»СѓС‡РёС€СЊ РѕСЂСѓР¶РёРµ РѕС‚ РјРµРЅСЏ - РѕС‡РµРЅСЊ С…РѕСЂРѕС€РµРµ РѕСЂСѓР¶РёРµ.
 	};
 	
 	Info_ClearChoices (DIA_Canthar_PAYPRICEINCITY);
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Нет, я не буду участвовать в этом.", DIA_Canthar_PAYPRICEINCITY_Nein );
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Хорошо, я сделаю это.", DIA_Canthar_PAYPRICEINCITY_Ok );
-	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "А что будет, если я откажусь?", DIA_Canthar_PAYPRICEINCITY_If );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "РќРµС‚, СЏ РЅРµ Р±СѓРґСѓ СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ СЌС‚РѕРј.", DIA_Canthar_PAYPRICEINCITY_Nein );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "РҐРѕСЂРѕС€Рѕ, СЏ СЃРґРµР»Р°СЋ СЌС‚Рѕ.", DIA_Canthar_PAYPRICEINCITY_Ok );
+	Info_AddChoice	(DIA_Canthar_PAYPRICEINCITY, "Рђ С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё СЏ РѕС‚РєР°Р¶СѓСЃСЊ?", DIA_Canthar_PAYPRICEINCITY_If );
 };
 
 func void DIA_Canthar_PAYPRICEINCITY_if ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_if_15_00"); //А что будет, если я откажусь?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_01"); //Это будет очень глупо с твоей стороны. Понимаешь, я знаю, что ты беглый каторжник.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_02"); //Если об этом прознают остальные, это нанесет значительный урон твоей репутации в городе...
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_if_15_00"); //Рђ С‡С‚Рѕ Р±СѓРґРµС‚, РµСЃР»Рё СЏ РѕС‚РєР°Р¶СѓСЃСЊ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_01"); //Р­С‚Рѕ Р±СѓРґРµС‚ РѕС‡РµРЅСЊ РіР»СѓРїРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹. РџРѕРЅРёРјР°РµС€СЊ, СЏ Р·РЅР°СЋ, С‡С‚Рѕ С‚С‹ Р±РµРіР»С‹Р№ РєР°С‚РѕСЂР¶РЅРёРє.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_if_09_02"); //Р•СЃР»Рё РѕР± СЌС‚РѕРј РїСЂРѕР·РЅР°СЋС‚ РѕСЃС‚Р°Р»СЊРЅС‹Рµ, СЌС‚Рѕ РЅР°РЅРµСЃРµС‚ Р·РЅР°С‡РёС‚РµР»СЊРЅС‹Р№ СѓСЂРѕРЅ С‚РІРѕРµР№ СЂРµРїСѓС‚Р°С†РёРё РІ РіРѕСЂРѕРґРµ...
 };
 
 func void DIA_Canthar_PAYPRICEINCITY_Nein ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Nein_15_00"); //Нет, я не буду участвовать в этом.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Nein_09_01"); //Это было неверное решение, мой мальчик. Но мы еще поговорим.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Nein_15_00"); //РќРµС‚, СЏ РЅРµ Р±СѓРґСѓ СѓС‡Р°СЃС‚РІРѕРІР°С‚СЊ РІ СЌС‚РѕРј.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Nein_09_01"); //Р­С‚Рѕ Р±С‹Р»Рѕ РЅРµРІРµСЂРЅРѕРµ СЂРµС€РµРЅРёРµ, РјРѕР№ РјР°Р»СЊС‡РёРє. РќРѕ РјС‹ РµС‰Рµ РїРѕРіРѕРІРѕСЂРёРј.
 	
 	MIS_Canthars_KomproBrief = LOG_OBSOLETE;
 	B_CheckLog ();
@@ -442,15 +442,15 @@ func void DIA_Canthar_PAYPRICEINCITY_Nein ()
 
 func void DIA_Canthar_PAYPRICEINCITY_Ok ()
 {
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_00"); //Хорошо, похоже, у меня нет выбора.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_01"); //Ты сообразительный парень. Вот, держи письмо.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_00"); //РҐРѕСЂРѕС€Рѕ, РїРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_01"); //РўС‹ СЃРѕРѕР±СЂР°Р·РёС‚РµР»СЊРЅС‹Р№ РїР°СЂРµРЅСЊ. Р’РѕС‚, РґРµСЂР¶Рё РїРёСЃСЊРјРѕ.
 	
 	CreateInvItems (self, ItWr_Canthars_KomproBrief_MIS, 1);
 	B_GiveInvItems (self, other, ItWr_Canthars_KomproBrief_MIS, 1);
 	
-	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_02"); //А как я подложу ей это письмо?
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_03"); //Пусть она покажет тебе свои товары - а пока она будет делать это, ты подложишь ей письмо.
-	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_04"); //И помни, я очень влиятельный человек, так что не пытайся провести меня.
+	AI_Output (other, self, "DIA_Canthar_PAYPRICEINCITY_Ok_15_02"); //Рђ РєР°Рє СЏ РїРѕРґР»РѕР¶Сѓ РµР№ СЌС‚Рѕ РїРёСЃСЊРјРѕ?
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_03"); //РџСѓСЃС‚СЊ РѕРЅР° РїРѕРєР°Р¶РµС‚ С‚РµР±Рµ СЃРІРѕРё С‚РѕРІР°СЂС‹ - Р° РїРѕРєР° РѕРЅР° Р±СѓРґРµС‚ РґРµР»Р°С‚СЊ СЌС‚Рѕ, С‚С‹ РїРѕРґР»РѕР¶РёС€СЊ РµР№ РїРёСЃСЊРјРѕ.
+	AI_Output (self, other, "DIA_Canthar_PAYPRICEINCITY_Ok_09_04"); //Р РїРѕРјРЅРё, СЏ РѕС‡РµРЅСЊ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє, С‚Р°Рє С‡С‚Рѕ РЅРµ РїС‹С‚Р°Р№СЃСЏ РїСЂРѕРІРµСЃС‚Рё РјРµРЅСЏ.
 	
 	MIS_Canthars_KomproBrief = LOG_RUNNING;
 	MIS_Canthars_KomproBrief_Day = Wld_GetDay(); 
@@ -460,13 +460,13 @@ func void DIA_Canthar_PAYPRICEINCITY_Ok ()
 	
 	if (Canthar_Gefallen == TRUE)
 	{
-		B_LogEntry (TOPIC_Canthar,"Кантар хочет, чтобы я оказал ему услугу, как обещал.");
+		B_LogEntry (TOPIC_Canthar,"РљР°РЅС‚Р°СЂ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РѕРєР°Р·Р°Р» РµРјСѓ СѓСЃР»СѓРіСѓ, РєР°Рє РѕР±РµС‰Р°Р».");
 	}
 	else
 	{
-		B_LogEntry (TOPIC_Canthar,"Кантар пообещал дать мне оружие, взамен на оказанную ему услугу.");
+		B_LogEntry (TOPIC_Canthar,"РљР°РЅС‚Р°СЂ РїРѕРѕР±РµС‰Р°Р» РґР°С‚СЊ РјРЅРµ РѕСЂСѓР¶РёРµ, РІР·Р°РјРµРЅ РЅР° РѕРєР°Р·Р°РЅРЅСѓСЋ РµРјСѓ СѓСЃР»СѓРіСѓ.");
 	};
-	B_LogEntry (TOPIC_Canthar,"Я должен подложить письмо  торговке Саре, которое даст повод подозревать ее в том, что она продает оружие Онару. Затем я должен пойти к лорду Андре и настучать на нее.");
+	B_LogEntry (TOPIC_Canthar,"РЇ РґРѕР»Р¶РµРЅ РїРѕРґР»РѕР¶РёС‚СЊ РїРёСЃСЊРјРѕ  С‚РѕСЂРіРѕРІРєРµ РЎР°СЂРµ, РєРѕС‚РѕСЂРѕРµ РґР°СЃС‚ РїРѕРІРѕРґ РїРѕРґРѕР·СЂРµРІР°С‚СЊ РµРµ РІ С‚РѕРј, С‡С‚Рѕ РѕРЅР° РїСЂРѕРґР°РµС‚ РѕСЂСѓР¶РёРµ РћРЅР°СЂСѓ. Р—Р°С‚РµРј СЏ РґРѕР»Р¶РµРЅ РїРѕР№С‚Рё Рє Р»РѕСЂРґСѓ РђРЅРґСЂРµ Рё РЅР°СЃС‚СѓС‡Р°С‚СЊ РЅР° РЅРµРµ.");
 	
 	Info_ClearChoices (DIA_Canthar_PAYPRICEINCITY);
 	
@@ -481,7 +481,7 @@ instance DIA_Canthar_SARAHERLEDIGT		(C_INFO)
 	condition	 = 	DIA_Canthar_SARAHERLEDIGT_Condition;
 	information	 = 	DIA_Canthar_SARAHERLEDIGT_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Насчет Сары ...";
+	description	 = 	"РќР°СЃС‡РµС‚ РЎР°СЂС‹ ...";
 };
 func int DIA_Canthar_SARAHERLEDIGT_Condition ()
 {
@@ -496,19 +496,19 @@ func void DIA_Canthar_SARAHERLEDIGT_Info ()
 	{
 		if (MIS_Canthars_KomproBrief_Day <= (Wld_GetDay()+ 2))
 		{
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_00"); //У тебя нет работы для меня?
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_01"); //Сначала подложи письмо Саре, а затем сходи к Андрэ и обвини ее.
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_02"); //Сделай же это. И не пытайся обмануть меня, ты пожалеешь об этом.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_00"); //РЈ С‚РµР±СЏ РЅРµС‚ СЂР°Р±РѕС‚С‹ РґР»СЏ РјРµРЅСЏ?
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_01"); //РЎРЅР°С‡Р°Р»Р° РїРѕРґР»РѕР¶Рё РїРёСЃСЊРјРѕ РЎР°СЂРµ, Р° Р·Р°С‚РµРј СЃС…РѕРґРё Рє РђРЅРґСЂСЌ Рё РѕР±РІРёРЅРё РµРµ.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_02"); //РЎРґРµР»Р°Р№ Р¶Рµ СЌС‚Рѕ. Р РЅРµ РїС‹С‚Р°Р№СЃСЏ РѕР±РјР°РЅСѓС‚СЊ РјРµРЅСЏ, С‚С‹ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 		}
 		else  
 		{
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_03"); //Ты попусту тратишь свое драгоценное время. За дело!
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_03"); //РўС‹ РїРѕРїСѓСЃС‚Сѓ С‚СЂР°С‚РёС€СЊ СЃРІРѕРµ РґСЂР°РіРѕС†РµРЅРЅРѕРµ РІСЂРµРјСЏ. Р—Р° РґРµР»Рѕ!
 		};
 	}
 	else
 	{
-			AI_Output (other, self, "DIA_Canthar_SARAHERLEDIGT_15_04"); //Сара мертва.
-			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_05"); //Правда? Превосходно. Значит, ты выполнил свою часть нашей маленькой сделки.
+			AI_Output (other, self, "DIA_Canthar_SARAHERLEDIGT_15_04"); //РЎР°СЂР° РјРµСЂС‚РІР°.
+			AI_Output (self, other, "DIA_Canthar_SARAHERLEDIGT_09_05"); //РџСЂР°РІРґР°? РџСЂРµРІРѕСЃС…РѕРґРЅРѕ. Р—РЅР°С‡РёС‚, С‚С‹ РІС‹РїРѕР»РЅРёР» СЃРІРѕСЋ С‡Р°СЃС‚СЊ РЅР°С€РµР№ РјР°Р»РµРЅСЊРєРѕР№ СЃРґРµР»РєРё.
 			
 			MIS_Canthars_KomproBrief = LOG_SUCCESS;
 			B_GivePlayerXP (XP_Ambient);
@@ -526,7 +526,7 @@ instance DIA_Canthar_Success		(C_INFO)
 	condition	 = 	DIA_Canthar_Success_Condition;
 	information	 = 	DIA_Canthar_Success_Info;
 	permanent	 =  FALSE;
-	description	 = "Насчет Сары ...";
+	description	 = "РќР°СЃС‡РµС‚ РЎР°СЂС‹ ...";
 };
 func int DIA_Canthar_Success_Condition ()
 {
@@ -538,8 +538,8 @@ func int DIA_Canthar_Success_Condition ()
 };
 func void DIA_Canthar_Success_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Success_09_00"); //Отлично. Сара отправилась туда, где ей самое место.
-	AI_Output (self, other, "DIA_Canthar_Success_09_01"); //Я забрал ее товары, так что, если тебе нужно оружие, заходи ко мне.
+	AI_Output (self, other, "DIA_Canthar_Success_09_00"); //РћС‚Р»РёС‡РЅРѕ. РЎР°СЂР° РѕС‚РїСЂР°РІРёР»Р°СЃСЊ С‚СѓРґР°, РіРґРµ РµР№ СЃР°РјРѕРµ РјРµСЃС‚Рѕ.
+	AI_Output (self, other, "DIA_Canthar_Success_09_01"); //РЇ Р·Р°Р±СЂР°Р» РµРµ С‚РѕРІР°СЂС‹, С‚Р°Рє С‡С‚Рѕ, РµСЃР»Рё С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ, Р·Р°С…РѕРґРё РєРѕ РјРЅРµ.
 	
 	if (Kapitel == 1)
 	{
@@ -561,8 +561,8 @@ func void DIA_Canthar_Success_Info ()
 	
 	if (Canthar_Gefallen == FALSE)
 	{
-		AI_Output (other, self, "DIA_Canthar_Success_15_02"); //Ты собирался дать мне оружие.
-		AI_Output (self, other, "DIA_Canthar_Success_09_03"); //Правильно. Вот, это оружие - произведение оружейного искусства.
+		AI_Output (other, self, "DIA_Canthar_Success_15_02"); //РўС‹ СЃРѕР±РёСЂР°Р»СЃСЏ РґР°С‚СЊ РјРЅРµ РѕСЂСѓР¶РёРµ.
+		AI_Output (self, other, "DIA_Canthar_Success_09_03"); //РџСЂР°РІРёР»СЊРЅРѕ. Р’РѕС‚, СЌС‚Рѕ РѕСЂСѓР¶РёРµ - РїСЂРѕРёР·РІРµРґРµРЅРёРµ РѕСЂСѓР¶РµР№РЅРѕРіРѕ РёСЃРєСѓСЃСЃС‚РІР°.
 				
 		B_GiveInvItems (self, other, ItMW_Schiffsaxt,1);
 	};
@@ -597,25 +597,25 @@ func int DIA_Canthar_Again_Condition ()
 };
 func void DIA_Canthar_Again_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Again_09_00"); //Ох, опять ты.
+	AI_Output (self, other, "DIA_Canthar_Again_09_00"); //РћС…, РѕРїСЏС‚СЊ С‚С‹.
 	
 	if (MIS_Canthars_KomproBrief  == LOG_FAILED)
 	{
-		AI_Output (other,self , "DIA_Canthar_Again_15_01"); //Почему ты не в тюрьме?
-		AI_Output (self,other, "DIA_Canthar_Again_09_02"); //Меня отпустили. Как я уже говорил тебе - я очень влиятельный человек в этом городе.
+		AI_Output (other,self , "DIA_Canthar_Again_15_01"); //РџРѕС‡РµРјСѓ С‚С‹ РЅРµ РІ С‚СЋСЂСЊРјРµ?
+		AI_Output (self,other, "DIA_Canthar_Again_09_02"); //РњРµРЅСЏ РѕС‚РїСѓСЃС‚РёР»Рё. РљР°Рє СЏ СѓР¶Рµ РіРѕРІРѕСЂРёР» С‚РµР±Рµ - СЏ РѕС‡РµРЅСЊ РІР»РёСЏС‚РµР»СЊРЅС‹Р№ С‡РµР»РѕРІРµРє РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ.
 	}
 	else if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Canthar_Again_09_03"); //Кстати, я разделался с Сарой сам. Ты можешь забыть об этом деле с письмом.
+		AI_Output (self, other, "DIA_Canthar_Again_09_03"); //РљСЃС‚Р°С‚Рё, СЏ СЂР°Р·РґРµР»Р°Р»СЃСЏ СЃ РЎР°СЂРѕР№ СЃР°Рј. РўС‹ РјРѕР¶РµС€СЊ Р·Р°Р±С‹С‚СЊ РѕР± СЌС‚РѕРј РґРµР»Рµ СЃ РїРёСЃСЊРјРѕРј.
 		
 	}
 	else if (MIS_Canthars_KomproBrief == LOG_OBSOLETE)
 	{
-		AI_Output (self, other, "DIA_Canthar_Again_09_04"); //Разве я не предупреждал тебя? Было бы лучше, если бы ты делал то, что я говорю.
+		AI_Output (self, other, "DIA_Canthar_Again_09_04"); //Р Р°Р·РІРµ СЏ РЅРµ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ? Р‘С‹Р»Рѕ Р±С‹ Р»СѓС‡С€Рµ, РµСЃР»Рё Р±С‹ С‚С‹ РґРµР»Р°Р» С‚Рѕ, С‡С‚Рѕ СЏ РіРѕРІРѕСЂСЋ.
 	};
-	AI_Output (self, other, "DIA_Canthar_Again_09_05"); //Теперь все торговцы узнали, что ты беглый каторжник.
-	AI_Output (self, other, "DIA_Canthar_Again_09_06"); //Какая жалость - теперь ты не сможешь купить на рыночной площади даже куска хлеба.
-	AI_Output (self, other, "DIA_Canthar_Again_09_07"); //Я могу, конечно же, уладить эту проблему для тебя, это будет стоить, скажем...
+	AI_Output (self, other, "DIA_Canthar_Again_09_05"); //РўРµРїРµСЂСЊ РІСЃРµ С‚РѕСЂРіРѕРІС†С‹ СѓР·РЅР°Р»Рё, С‡С‚Рѕ С‚С‹ Р±РµРіР»С‹Р№ РєР°С‚РѕСЂР¶РЅРёРє.
+	AI_Output (self, other, "DIA_Canthar_Again_09_06"); //РљР°РєР°СЏ Р¶Р°Р»РѕСЃС‚СЊ - С‚РµРїРµСЂСЊ С‚С‹ РЅРµ СЃРјРѕР¶РµС€СЊ РєСѓРїРёС‚СЊ РЅР° СЂС‹РЅРѕС‡РЅРѕР№ РїР»РѕС‰Р°РґРё РґР°Р¶Рµ РєСѓСЃРєР° С…Р»РµР±Р°.
+	AI_Output (self, other, "DIA_Canthar_Again_09_07"); //РЇ РјРѕРіСѓ, РєРѕРЅРµС‡РЅРѕ Р¶Рµ, СѓР»Р°РґРёС‚СЊ СЌС‚Сѓ РїСЂРѕР±Р»РµРјСѓ РґР»СЏ С‚РµР±СЏ, СЌС‚Рѕ Р±СѓРґРµС‚ СЃС‚РѕРёС‚СЊ, СЃРєР°Р¶РµРј...
 	B_Say_Gold 	(self, other, Canthar_Gold);
 	
 	AI_StopProcessInfos (self);
@@ -646,24 +646,24 @@ func int DIA_Canthar_Pay_Condition ()
 };
 func void DIA_Canthar_Pay_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_Pay_09_00"); //Ты готов заплатить?
+	AI_Output (self, other, "DIA_Canthar_Pay_09_00"); //РўС‹ РіРѕС‚РѕРІ Р·Р°РїР»Р°С‚РёС‚СЊ?
 	
 	Info_ClearChoices (DIA_Canthar_Pay);
 	
 	if (Npc_HasItems (other, ItmI_Gold) >= Canthar_Gold)
 	{
-		Info_AddChoice (DIA_Canthar_Pay,"Хорошо, я заплачу ...",DIA_Canthar_Pay_Ja);
+		Info_AddChoice (DIA_Canthar_Pay,"РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°РїР»Р°С‡Сѓ ...",DIA_Canthar_Pay_Ja);
 	};
-	Info_AddChoice (DIA_Canthar_Pay,"У меня нет с собой столько денег...",DIA_Canthar_Pay_Nein);
-	Info_AddChoice (DIA_Canthar_Pay,"Сколько там нужно?",DIA_Canthar_Pay_Wieviel);
+	Info_AddChoice (DIA_Canthar_Pay,"РЈ РјРµРЅСЏ РЅРµС‚ СЃ СЃРѕР±РѕР№ СЃС‚РѕР»СЊРєРѕ РґРµРЅРµРі...",DIA_Canthar_Pay_Nein);
+	Info_AddChoice (DIA_Canthar_Pay,"РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?",DIA_Canthar_Pay_Wieviel);
 };
 
 
 FUNC VOID DIA_Canthar_Pay_Ja()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Ja_15_00"); //Хорошо, я заплачу, ты не оставляешь мне выбора.
+	AI_Output (other, self, "DIA_Canthar_Pay_Ja_15_00"); //РҐРѕСЂРѕС€Рѕ, СЏ Р·Р°РїР»Р°С‡Сѓ, С‚С‹ РЅРµ РѕСЃС‚Р°РІР»СЏРµС€СЊ РјРЅРµ РІС‹Р±РѕСЂР°.
 	B_GiveInvItems (other, self, Itmi_Gold,Canthar_Gold);
-	AI_Output (self, other, "DIA_Canthar_Pay_Ja_09_01"); //(ухмыляется) Хорошо. А теперь я позабочусь, чтобы твоя репутация среди торговцев выросла опять.
+	AI_Output (self, other, "DIA_Canthar_Pay_Ja_09_01"); //(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РҐРѕСЂРѕС€Рѕ. Рђ С‚РµРїРµСЂСЊ СЏ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ С‚РІРѕСЏ СЂРµРїСѓС‚Р°С†РёСЏ СЃСЂРµРґРё С‚РѕСЂРіРѕРІС†РµРІ РІС‹СЂРѕСЃР»Р° РѕРїСЏС‚СЊ.
 	
 	Canthar_Sperre = FALSE;
 	Canthar_Pay = TRUE; 
@@ -671,14 +671,14 @@ FUNC VOID DIA_Canthar_Pay_Ja()
 };
 FUNC VOID DIA_Canthar_Pay_Nein()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Nein_15_00"); //У меня нет с собой столько денег...
-	AI_Output (self, other, "DIA_Canthar_Pay_Nein_09_01"); //Тогда добудь их.
+	AI_Output (other, self, "DIA_Canthar_Pay_Nein_15_00"); //РЈ РјРµРЅСЏ РЅРµС‚ СЃ СЃРѕР±РѕР№ СЃС‚РѕР»СЊРєРѕ РґРµРЅРµРі...
+	AI_Output (self, other, "DIA_Canthar_Pay_Nein_09_01"); //РўРѕРіРґР° РґРѕР±СѓРґСЊ РёС….
 	Info_ClearChoices (DIA_Canthar_Pay);
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Canthar_Pay_Wieviel()
 {
-	AI_Output (other, self, "DIA_Canthar_Pay_Wieviel_15_00"); //Сколько там нужно?
+	AI_Output (other, self, "DIA_Canthar_Pay_Wieviel_15_00"); //РЎРєРѕР»СЊРєРѕ С‚Р°Рј РЅСѓР¶РЅРѕ?
 	B_Say_Gold 	(self, other, Canthar_Gold);
 	
 };
@@ -705,8 +705,8 @@ func int DIA_Canthar_CANTHARANGEPISST_Condition ()
 };
 func void DIA_Canthar_CANTHARANGEPISST_Info ()
 {
-	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_00"); //Я предупреждал тебя, но ты не слушал. Мы обсудим этот вопрос позже.
-	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_01"); //А теперь проваливай, я хочу отдохнуть.
+	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_00"); //РЇ РїСЂРµРґСѓРїСЂРµР¶РґР°Р» С‚РµР±СЏ, РЅРѕ С‚С‹ РЅРµ СЃР»СѓС€Р°Р». РњС‹ РѕР±СЃСѓРґРёРј СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ РїРѕР·Р¶Рµ.
+	AI_Output (self, other, "DIA_Canthar_CANTHARANGEPISST_09_01"); //Рђ С‚РµРїРµСЂСЊ РїСЂРѕРІР°Р»РёРІР°Р№, СЏ С…РѕС‡Сѓ РѕС‚РґРѕС…РЅСѓС‚СЊ.
 	
 	AI_StopProcessInfos (self);	
 };
@@ -720,7 +720,7 @@ instance DIA_Canthar_MinenAnteil		(C_INFO)
 	condition	 = 	DIA_Canthar_MinenAnteil_Condition;
 	information	 = 	DIA_Canthar_MinenAnteil_Info;
 
-	description	 = 	"Ты продаешь поддельные акции!";
+	description	 = 	"РўС‹ РїСЂРѕРґР°РµС€СЊ РїРѕРґРґРµР»СЊРЅС‹Рµ Р°РєС†РёРё!";
 };
 
 func int DIA_Canthar_MinenAnteil_Condition ()
@@ -735,8 +735,8 @@ func int DIA_Canthar_MinenAnteil_Condition ()
 
 func void DIA_Canthar_MinenAnteil_Info ()
 {
-	AI_Output (other, self, "DIA_Canthar_Minenanteil_15_00"); //Ты продаешь поддельные акции!
-	AI_Output (self, other, "DIA_Canthar_Minenanteil_09_01"); //Да? И что?! Если не я, так другой.
+	AI_Output (other, self, "DIA_Canthar_Minenanteil_15_00"); //РўС‹ РїСЂРѕРґР°РµС€СЊ РїРѕРґРґРµР»СЊРЅС‹Рµ Р°РєС†РёРё!
+	AI_Output (self, other, "DIA_Canthar_Minenanteil_09_01"); //Р”Р°? Р С‡С‚Рѕ?! Р•СЃР»Рё РЅРµ СЏ, С‚Р°Рє РґСЂСѓРіРѕР№.
 	B_GivePlayerXP (XP_Ambient);
 };
 

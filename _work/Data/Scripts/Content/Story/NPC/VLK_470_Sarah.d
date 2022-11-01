@@ -2,7 +2,7 @@
 instance VLK_470_Sarah (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ñàðà";	
+	name 		= "Ð¡Ð°Ñ€Ð°";	
 	guild 		= GIL_VLK;
 	id 			= 470;
 	voice 		= 16;
@@ -19,7 +19,7 @@ instance VLK_470_Sarah (Npc_Default)
 	EquipItem (self, ItMw_1h_Vlk_Sword);
 		
 	// ------ Inventory ------
-	// Händler
+	// HÐ´ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, FEMALE, "Hum_Head_Babe", FaceBabe_N_Blondie, BodyTexBabe_N, ITAR_VlkBabe_L);	

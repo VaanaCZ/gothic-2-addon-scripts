@@ -66,7 +66,7 @@ instance DIA_Rengaru_Hauab		(C_INFO)
 	condition	 = 	DIA_Rengaru_Hauab_Condition;
 	information	 = 	DIA_Rengaru_Hauab_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Что ты делаешь здесь?";
+	description	 = 	"Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?";
 };
 func int DIA_Rengaru_Hauab_Condition ()
 {	
@@ -78,8 +78,8 @@ func int DIA_Rengaru_Hauab_Condition ()
 };
 func void DIA_Rengaru_Hauab_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_Hauab_15_00"); //Что ты делаешь здесь?
-	AI_Output (self, other, "DIA_Rengaru_Hauab_07_01"); //Я не понимаю, какое тебе до этого дело. Проваливай!
+	AI_Output (other, self, "DIA_Rengaru_Hauab_15_00"); //Р§С‚Рѕ С‚С‹ РґРµР»Р°РµС€СЊ Р·РґРµСЃСЊ?
+	AI_Output (self, other, "DIA_Rengaru_Hauab_07_01"); //РЇ РЅРµ РїРѕРЅРёРјР°СЋ, РєР°РєРѕРµ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ. РџСЂРѕРІР°Р»РёРІР°Р№!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -92,7 +92,7 @@ instance DIA_Rengaru_HALLODIEB		(C_INFO)
 	condition	 = 	DIA_Rengaru_HALLODIEB_Condition;
 	information	 = 	DIA_Rengaru_HALLODIEB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Джора говорит, что ты украл у него деньги...";
+	description	 = 	"Р”Р¶РѕСЂР° РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ СѓРєСЂР°Р» Сѓ РЅРµРіРѕ РґРµРЅСЊРіРё...";
 };
 func int DIA_Rengaru_HALLODIEB_Condition ()
 {
@@ -104,8 +104,8 @@ func int DIA_Rengaru_HALLODIEB_Condition ()
 
 func void DIA_Rengaru_HALLODIEB_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_HALLODIEB_15_00"); //Джора говорит, что ты украл у него деньги...
-	AI_Output (self, other, "DIA_Rengaru_HALLODIEB_07_01"); //Черт! Я сваливаю отсюда!
+	AI_Output (other, self, "DIA_Rengaru_HALLODIEB_15_00"); //Р”Р¶РѕСЂР° РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ СѓРєСЂР°Р» Сѓ РЅРµРіРѕ РґРµРЅСЊРіРё...
+	AI_Output (self, other, "DIA_Rengaru_HALLODIEB_07_01"); //Р§РµСЂС‚! РЇ СЃРІР°Р»РёРІР°СЋ РѕС‚СЃСЋРґР°!
 
 	AI_StopProcessInfos (self);
 
@@ -121,7 +121,7 @@ instance DIA_Rengaru_GOTYOU		(C_INFO)
 	condition	 = 	DIA_Rengaru_GOTYOU_Condition;
 	information	 = 	DIA_Rengaru_GOTYOU_Info;
 	permanent	 =  FALSE;	
-	description	 = 	"Поймал!";
+	description	 = 	"РџРѕР№РјР°Р»!";
 };
 
 func int DIA_Rengaru_GOTYOU_Condition ()
@@ -136,32 +136,32 @@ func void DIA_Rengaru_GOTYOU_Info ()
 {
 	B_GivePlayerXP (XP_RengaruGotThief);
 	
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_00"); //Поймал!
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_07_01"); //Что тебе нужно от меня?
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_02"); //Ты украл кошелек у Джоры средь бела дня, и он даже видел, как ты сделал это.
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_03"); //Поэтому я пришел сказать тебе, что ты грязный вор и что...
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_00"); //РџРѕР№РјР°Р»!
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_07_01"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ РѕС‚ РјРµРЅСЏ?
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_02"); //РўС‹ СѓРєСЂР°Р» РєРѕС€РµР»РµРє Сѓ Р”Р¶РѕСЂС‹ СЃСЂРµРґСЊ Р±РµР»Р° РґРЅСЏ, Рё РѕРЅ РґР°Р¶Рµ РІРёРґРµР», РєР°Рє С‚С‹ СЃРґРµР»Р°Р» СЌС‚Рѕ.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_03"); //РџРѕСЌС‚РѕРјСѓ СЏ РїСЂРёС€РµР» СЃРєР°Р·Р°С‚СЊ С‚РµР±Рµ, С‡С‚Рѕ С‚С‹ РіСЂСЏР·РЅС‹Р№ РІРѕСЂ Рё С‡С‚Рѕ...
 	
 	Info_ClearChoices (DIA_Rengaru_GOTYOU); 
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...Я заслуживаю долю от награбленного.", DIA_Rengaru_GOTYOU_Anteil );
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...тебе лучше вернуть золото Джоры. И немедленно.", DIA_Rengaru_GOTYOU_YouThief );
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...и теперь ты расскажешь мне, кто ты такой.", DIA_Rengaru_GOTYOU_WhoAreYou );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...РЇ Р·Р°СЃР»СѓР¶РёРІР°СЋ РґРѕР»СЋ РѕС‚ РЅР°РіСЂР°Р±Р»РµРЅРЅРѕРіРѕ.", DIA_Rengaru_GOTYOU_Anteil );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...С‚РµР±Рµ Р»СѓС‡С€Рµ РІРµСЂРЅСѓС‚СЊ Р·РѕР»РѕС‚Рѕ Р”Р¶РѕСЂС‹. Р РЅРµРјРµРґР»РµРЅРЅРѕ.", DIA_Rengaru_GOTYOU_YouThief );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...Рё С‚РµРїРµСЂСЊ С‚С‹ СЂР°СЃСЃРєР°Р¶РµС€СЊ РјРЅРµ, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№.", DIA_Rengaru_GOTYOU_WhoAreYou );
 };
 func void DIA_Rengaru_GOTYOU_YouThief ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_YouThief_15_00"); //...тебе лучше вернуть золото Джоры. И немедленно.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_YouThief_15_00"); //...С‚РµР±Рµ Р»СѓС‡С€Рµ РІРµСЂРЅСѓС‚СЊ Р·РѕР»РѕС‚Рѕ Р”Р¶РѕСЂС‹. Р РЅРµРјРµРґР»РµРЅРЅРѕ.
 
 	if (Npc_HasItems (self, Itmi_Gold) >= 1)
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_01"); //Вот золото, парень! Но теперь отпусти меня. Я больше никогда не буду заниматься этим.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_01"); //Р’РѕС‚ Р·РѕР»РѕС‚Рѕ, РїР°СЂРµРЅСЊ! РќРѕ С‚РµРїРµСЂСЊ РѕС‚РїСѓСЃС‚Рё РјРµРЅСЏ. РЇ Р±РѕР»СЊС€Рµ РЅРёРєРѕРіРґР° РЅРµ Р±СѓРґСѓ Р·Р°РЅРёРјР°С‚СЊСЃСЏ СЌС‚РёРј.
 		B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self, ItMi_Gold));
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_02"); //У меня уже нет этого золота.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_02"); //РЈ РјРµРЅСЏ СѓР¶Рµ РЅРµС‚ СЌС‚РѕРіРѕ Р·РѕР»РѕС‚Р°.
 		
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)    
 		{
-			AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_03"); //Но зачем я говорю тебе это? Ведь это ты меня обокрал!
+			AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_03"); //РќРѕ Р·Р°С‡РµРј СЏ РіРѕРІРѕСЂСЋ С‚РµР±Рµ СЌС‚Рѕ? Р’РµРґСЊ СЌС‚Рѕ С‚С‹ РјРµРЅСЏ РѕР±РѕРєСЂР°Р»!
 		};
 	};	
 	Info_ClearChoices	(DIA_Rengaru_GOTYOU);
@@ -169,61 +169,61 @@ func void DIA_Rengaru_GOTYOU_YouThief ()
 
 func void DIA_Rengaru_GOTYOU_Anteil ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_15_00"); //...Я заслуживаю долю от награбленного.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_15_00"); //...РЇ Р·Р°СЃР»СѓР¶РёРІР°СЋ РґРѕР»СЋ РѕС‚ РЅР°РіСЂР°Р±Р»РµРЅРЅРѕРіРѕ.
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)    
 	&& (Npc_HasItems (self, ItMi_Gold) < 1)
 	{ 
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_07_01"); //Ты уже забрал все, что у меня было, после того, как вырубил меня! Пусти!
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_07_01"); //РўС‹ СѓР¶Рµ Р·Р°Р±СЂР°Р» РІСЃРµ, С‡С‚Рѕ Сѓ РјРµРЅСЏ Р±С‹Р»Рѕ, РїРѕСЃР»Рµ С‚РѕРіРѕ, РєР°Рє РІС‹СЂСѓР±РёР» РјРµРЅСЏ! РџСѓСЃС‚Рё!
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else
 	{	//HACK MF. self/other - falsch gesprochen, kein Ersatz...
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_15_02"); //Хорошо, похоже, у меня нет выбора. Давай, разделим пополам.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_15_02"); //РҐРѕСЂРѕС€Рѕ, РїРѕС…РѕР¶Рµ, Сѓ РјРµРЅСЏ РЅРµС‚ РІС‹Р±РѕСЂР°. Р”Р°РІР°Р№, СЂР°Р·РґРµР»РёРј РїРѕРїРѕР»Р°Рј.
 		
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
-		Info_AddChoice		(DIA_Rengaru_GOTYOU, "Нет, ты отдашь мне все!", DIA_Rengaru_GOTYOU_Anteil_alles );
-		Info_AddChoice		(DIA_Rengaru_GOTYOU, "Хорошо, давай мне половину тогда.", DIA_Rengaru_GOTYOU_Anteil_GehtKlar );
+		Info_AddChoice		(DIA_Rengaru_GOTYOU, "РќРµС‚, С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ РІСЃРµ!", DIA_Rengaru_GOTYOU_Anteil_alles );
+		Info_AddChoice		(DIA_Rengaru_GOTYOU, "РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ РїРѕР»РѕРІРёРЅСѓ С‚РѕРіРґР°.", DIA_Rengaru_GOTYOU_Anteil_GehtKlar );
 	};
 };
 func void DIA_Rengaru_GOTYOU_Anteil_alles ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_alles_15_00"); //Нет, ты отдашь мне все!
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_alles_15_00"); //РќРµС‚, С‚С‹ РѕС‚РґР°С€СЊ РјРЅРµ РІСЃРµ!
 	
 	if (Npc_HasItems (self, Itmi_Gold) >= 2)
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_02"); //Ты просто грабишь меня. Ладно, возьми это золото. А теперь оставь меня в покое.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_02"); //РўС‹ РїСЂРѕСЃС‚Рѕ РіСЂР°Р±РёС€СЊ РјРµРЅСЏ. Р›Р°РґРЅРѕ, РІРѕР·СЊРјРё СЌС‚Рѕ Р·РѕР»РѕС‚Рѕ. Рђ С‚РµРїРµСЂСЊ РѕСЃС‚Р°РІСЊ РјРµРЅСЏ РІ РїРѕРєРѕРµ.
 		B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self, ItMi_Gold) );
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_03"); //Я бы отдал тебе золото, но у меня больше ничего нет.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_03"); //РЇ Р±С‹ РѕС‚РґР°Р» С‚РµР±Рµ Р·РѕР»РѕС‚Рѕ, РЅРѕ Сѓ РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµС‚.
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	};
 };
 
 func void DIA_Rengaru_GOTYOU_Anteil_GehtKlar ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_15_00"); //Хорошо, давай мне половину тогда.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_15_00"); //РҐРѕСЂРѕС€Рѕ, РґР°РІР°Р№ РјРЅРµ РїРѕР»РѕРІРёРЅСѓ С‚РѕРіРґР°.
 	
 	if B_GiveInvItems (self, other, ItMi_Gold, (Npc_HasItems (self, ItMi_Gold))/2 )
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_01"); //Вот твоя половина! А теперь отпусти меня!
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_01"); //Р’РѕС‚ С‚РІРѕСЏ РїРѕР»РѕРІРёРЅР°! Рђ С‚РµРїРµСЂСЊ РѕС‚РїСѓСЃС‚Рё РјРµРЅСЏ!
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_02"); //Я был бы не прочь отдать тебе половину, но у меня больше ничего нет.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_02"); //РЇ Р±С‹Р» Р±С‹ РЅРµ РїСЂРѕС‡СЊ РѕС‚РґР°С‚СЊ С‚РµР±Рµ РїРѕР»РѕРІРёРЅСѓ, РЅРѕ Сѓ РјРµРЅСЏ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµС‚.
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	};
 };
 func void DIA_Rengaru_GOTYOU_WhoAreYou ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_00"); //...и теперь ты расскажешь мне, кто ты такой.
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_01"); //Я просто бедный человек, пытающийся свести концы с концами.
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_02"); //Что мне еще делать? Я не могу найти работу в городе...
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_03"); //...хорошо, я понимаю. Хватит хныкать.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_00"); //...Рё С‚РµРїРµСЂСЊ С‚С‹ СЂР°СЃСЃРєР°Р¶РµС€СЊ РјРЅРµ, РєС‚Рѕ С‚С‹ С‚Р°РєРѕР№.
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_01"); //РЇ РїСЂРѕСЃС‚Рѕ Р±РµРґРЅС‹Р№ С‡РµР»РѕРІРµРє, РїС‹С‚Р°СЋС‰РёР№СЃСЏ СЃРІРµСЃС‚Рё РєРѕРЅС†С‹ СЃ РєРѕРЅС†Р°РјРё.
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_02"); //Р§С‚Рѕ РјРЅРµ РµС‰Рµ РґРµР»Р°С‚СЊ? РЇ РЅРµ РјРѕРіСѓ РЅР°Р№С‚Рё СЂР°Р±РѕС‚Сѓ РІ РіРѕСЂРѕРґРµ...
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_03"); //...С…РѕСЂРѕС€Рѕ, СЏ РїРѕРЅРёРјР°СЋ. РҐРІР°С‚РёС‚ С…РЅС‹РєР°С‚СЊ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info InKnast
@@ -235,7 +235,7 @@ instance DIA_Rengaru_INKNAST		(C_INFO)
 	condition	 = 	DIA_Rengaru_INKNAST_Condition;
 	information	 = 	DIA_Rengaru_INKNAST_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Я должен сдать тебя ополчению.";
+	description	 = 	"РЇ РґРѕР»Р¶РµРЅ СЃРґР°С‚СЊ С‚РµР±СЏ РѕРїРѕР»С‡РµРЅРёСЋ.";
 };
 
 func int DIA_Rengaru_INKNAST_Condition ()
@@ -248,17 +248,17 @@ func int DIA_Rengaru_INKNAST_Condition ()
 
 func void DIA_Rengaru_INKNAST_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_15_00"); //Я должен сдать тебя ополчению.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_07_01"); //Что еще тебе нужно? У меня ничего не осталось! Отпусти меня, а?!
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_15_00"); //РЇ РґРѕР»Р¶РµРЅ СЃРґР°С‚СЊ С‚РµР±СЏ РѕРїРѕР»С‡РµРЅРёСЋ.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_07_01"); //Р§С‚Рѕ РµС‰Рµ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РЈ РјРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ! РћС‚РїСѓСЃС‚Рё РјРµРЅСЏ, Р°?!
 	
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Почему я должен отпустить тебя?", DIA_Rengaru_INKNAST_keinKnast );
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Я позабочусь, чтобы тебя посадили за решетку.", DIA_Rengaru_INKNAST_Knast );
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Проваливай! И чтобы больше я тебя здесь не видел!", DIA_Rengaru_INKNAST_HauAb );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РѕС‚РїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ?", DIA_Rengaru_INKNAST_keinKnast );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ С‚РµР±СЏ РїРѕСЃР°РґРёР»Рё Р·Р° СЂРµС€РµС‚РєСѓ.", DIA_Rengaru_INKNAST_Knast );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "РџСЂРѕРІР°Р»РёРІР°Р№! Р С‡С‚РѕР±С‹ Р±РѕР»СЊС€Рµ СЏ С‚РµР±СЏ Р·РґРµСЃСЊ РЅРµ РІРёРґРµР»!", DIA_Rengaru_INKNAST_HauAb );
 };
 func void DIA_Rengaru_INKNAST_HauAb ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_HauAb_15_00"); //Проваливай! И чтобы больше я тебя здесь не видел!
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_HauAb_07_01"); //Ты не пожалеешь об этом! Спасибо, парень!
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_HauAb_15_00"); //РџСЂРѕРІР°Р»РёРІР°Р№! Р С‡С‚РѕР±С‹ Р±РѕР»СЊС€Рµ СЏ С‚РµР±СЏ Р·РґРµСЃСЊ РЅРµ РІРёРґРµР»!
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_HauAb_07_01"); //РўС‹ РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј! РЎРїР°СЃРёР±Рѕ, РїР°СЂРµРЅСЊ!
 	
 	Npc_ExchangeRoutine	(self,"Start"); 	
 	AI_StopProcessInfos (self);
@@ -267,9 +267,9 @@ func void DIA_Rengaru_INKNAST_HauAb ()
 };
 func void DIA_Rengaru_INKNAST_Knast ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_Knast_15_00"); //Я позабочусь, чтобы тебя посадили за решетку.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_01"); //(устало) Я уже устал от этого всего. Если тебе кажется, что ты должен это сделать, поступай как знаешь.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_02"); //(предупреждающе) Но берегись: мои друзья это дело так не оставят...
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_Knast_15_00"); //РЇ РїРѕР·Р°Р±РѕС‡СѓСЃСЊ, С‡С‚РѕР±С‹ С‚РµР±СЏ РїРѕСЃР°РґРёР»Рё Р·Р° СЂРµС€РµС‚РєСѓ.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_01"); //(СѓСЃС‚Р°Р»Рѕ) РЇ СѓР¶Рµ СѓСЃС‚Р°Р» РѕС‚ СЌС‚РѕРіРѕ РІСЃРµРіРѕ. Р•СЃР»Рё С‚РµР±Рµ РєР°Р¶РµС‚СЃСЏ, С‡С‚Рѕ С‚С‹ РґРѕР»Р¶РµРЅ СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ, РїРѕСЃС‚СѓРїР°Р№ РєР°Рє Р·РЅР°РµС€СЊ.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_02"); //(РїСЂРµРґСѓРїСЂРµР¶РґР°СЋС‰Рµ) РќРѕ Р±РµСЂРµРіРёСЃСЊ: РјРѕРё РґСЂСѓР·СЊСЏ СЌС‚Рѕ РґРµР»Рѕ С‚Р°Рє РЅРµ РѕСЃС‚Р°РІСЏС‚...
 
 	
 	Rengaru_InKnast		= TRUE; 	
@@ -279,9 +279,9 @@ func void DIA_Rengaru_INKNAST_Knast ()
 
 func void DIA_Rengaru_INKNAST_keinKnast ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_keinKnast_15_00"); //Почему я должен отпустить тебя?
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_01"); //В городе никогда не помешают связи с нужными людьми - и хорошие отношения с ними.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_02"); //Я мог бы замолвить словечко за тебя. Я не могу и не хочу говорить больше. Решать тебе.
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_keinKnast_15_00"); //РџРѕС‡РµРјСѓ СЏ РґРѕР»Р¶РµРЅ РѕС‚РїСѓСЃС‚РёС‚СЊ С‚РµР±СЏ?
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_01"); //Р’ РіРѕСЂРѕРґРµ РЅРёРєРѕРіРґР° РЅРµ РїРѕРјРµС€Р°СЋС‚ СЃРІСЏР·Рё СЃ РЅСѓР¶РЅС‹РјРё Р»СЋРґСЊРјРё - Рё С…РѕСЂРѕС€РёРµ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РЅРёРјРё.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_02"); //РЇ РјРѕРі Р±С‹ Р·Р°РјРѕР»РІРёС‚СЊ СЃР»РѕРІРµС‡РєРѕ Р·Р° С‚РµР±СЏ. РЇ РЅРµ РјРѕРіСѓ Рё РЅРµ С…РѕС‡Сѓ РіРѕРІРѕСЂРёС‚СЊ Р±РѕР»СЊС€Рµ. Р РµС€Р°С‚СЊ С‚РµР±Рµ.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info LastInfoKap1
@@ -293,7 +293,7 @@ instance DIA_Rengaru_LastInfoKap1		(C_INFO)
 	condition	 = 	DIA_Rengaru_LastInfoKap1_Condition;
 	information	 = 	DIA_Rengaru_LastInfoKap1_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"Как дела? У тебя все в порядке?";
+	description	 = 	"РљР°Рє РґРµР»Р°? РЈ С‚РµР±СЏ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 };
 func int DIA_Rengaru_LastInfoKap1_Condition ()
 {
@@ -305,15 +305,15 @@ func int DIA_Rengaru_LastInfoKap1_Condition ()
 
 func void DIA_Rengaru_LastInfoKap1_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_LastInfoKap1_15_00"); //Как дела? У тебя все в порядке?
+	AI_Output (other, self, "DIA_Rengaru_LastInfoKap1_15_00"); //РљР°Рє РґРµР»Р°? РЈ С‚РµР±СЏ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ?
 	
 	if (Rengaru_InKnast	== TRUE)
 	{
-		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_01"); //Давай, давай, дразнись. Когда-нибудь, ты поплатишься за это. Клянусь!
+		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_01"); //Р”Р°РІР°Р№, РґР°РІР°Р№, РґСЂР°Р·РЅРёСЃСЊ. РљРѕРіРґР°-РЅРёР±СѓРґСЊ, С‚С‹ РїРѕРїР»Р°С‚РёС€СЊСЃСЏ Р·Р° СЌС‚Рѕ. РљР»СЏРЅСѓСЃСЊ!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_02"); //Что еще тебе нужно? Я больше ничего не украл, честно!
+		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_02"); //Р§С‚Рѕ РµС‰Рµ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РЇ Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ СѓРєСЂР°Р», С‡РµСЃС‚РЅРѕ!
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -326,7 +326,7 @@ INSTANCE DIA_Rengaru_Zeichen   (C_INFO)
 	condition   = DIA_Rengaru_Zeichen_Condition;
 	information = DIA_Rengaru_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Показать сигнал воров)";
+	description = "(РџРѕРєР°Р·Р°С‚СЊ СЃРёРіРЅР°Р» РІРѕСЂРѕРІ)";
 };
 
 FUNC INT DIA_Rengaru_Zeichen_Condition()
@@ -342,10 +342,10 @@ FUNC VOID DIA_Rengaru_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
 	
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_00");//Эй, ты один из нас.
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_01");//Я скажу тебе кое-что. Если ты намереваешься залезть в чей-нибудь карман в городе, будь особенно осторожен с торговцами!
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_02");//Они очень бдительны и глаз не спускают со своих вещей. Но я могу дать тебе совет.
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_03");//Попробуй взять нужный тебе предмет одной рукой, размахивая при этом другой. Это отвлечет их.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_00");//Р­Р№, С‚С‹ РѕРґРёРЅ РёР· РЅР°СЃ.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_01");//РЇ СЃРєР°Р¶Сѓ С‚РµР±Рµ РєРѕРµ-С‡С‚Рѕ. Р•СЃР»Рё С‚С‹ РЅР°РјРµСЂРµРІР°РµС€СЊСЃСЏ Р·Р°Р»РµР·С‚СЊ РІ С‡РµР№-РЅРёР±СѓРґСЊ РєР°СЂРјР°РЅ РІ РіРѕСЂРѕРґРµ, Р±СѓРґСЊ РѕСЃРѕР±РµРЅРЅРѕ РѕСЃС‚РѕСЂРѕР¶РµРЅ СЃ С‚РѕСЂРіРѕРІС†Р°РјРё!
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_02");//РћРЅРё РѕС‡РµРЅСЊ Р±РґРёС‚РµР»СЊРЅС‹ Рё РіР»Р°Р· РЅРµ СЃРїСѓСЃРєР°СЋС‚ СЃРѕ СЃРІРѕРёС… РІРµС‰РµР№. РќРѕ СЏ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ СЃРѕРІРµС‚.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_03");//РџРѕРїСЂРѕР±СѓР№ РІР·СЏС‚СЊ РЅСѓР¶РЅС‹Р№ С‚РµР±Рµ РїСЂРµРґРјРµС‚ РѕРґРЅРѕР№ СЂСѓРєРѕР№, СЂР°Р·РјР°С…РёРІР°СЏ РїСЂРё СЌС‚РѕРј РґСЂСѓРіРѕР№. Р­С‚Рѕ РѕС‚РІР»РµС‡РµС‚ РёС….
 	
 	B_RaiseAttribute(other, ATR_DEXTERITY, 1);
 	Snd_Play ("LEVELUP"); 

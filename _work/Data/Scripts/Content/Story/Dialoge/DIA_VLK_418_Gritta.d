@@ -78,8 +78,8 @@ FUNC INT DIA_Gritta_Hello_Condition()
 };
 FUNC VOID DIA_Gritta_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Gritta_Hello_16_00"); //Что тебе нужно, чужеземец? Если ты пришел просить милостыню, я вынуждена разочаровать тебя. Я бедная вдова.
-	AI_Output (self ,other,"DIA_Gritta_Hello_16_01"); //Меня зовут Гритта. С тех пор, как умер мой муж, я слежу за домом моего дяди, Торбена.
+	AI_Output (self ,other,"DIA_Gritta_Hello_16_00"); //Р§С‚Рѕ С‚РµР±Рµ РЅСѓР¶РЅРѕ, С‡СѓР¶РµР·РµРјРµС†? Р•СЃР»Рё С‚С‹ РїСЂРёС€РµР» РїСЂРѕСЃРёС‚СЊ РјРёР»РѕСЃС‚С‹РЅСЋ, СЏ РІС‹РЅСѓР¶РґРµРЅР° СЂР°Р·РѕС‡Р°СЂРѕРІР°С‚СЊ С‚РµР±СЏ. РЇ Р±РµРґРЅР°СЏ РІРґРѕРІР°.
+	AI_Output (self ,other,"DIA_Gritta_Hello_16_01"); //РњРµРЅСЏ Р·РѕРІСѓС‚ Р“СЂРёС‚С‚Р°. РЎ С‚РµС… РїРѕСЂ, РєР°Рє СѓРјРµСЂ РјРѕР№ РјСѓР¶, СЏ СЃР»РµР¶Сѓ Р·Р° РґРѕРјРѕРј РјРѕРµРіРѕ РґСЏРґРё, РўРѕСЂР±РµРЅР°.
 };
 //*************************************************************
 //			Matteo will sein Geld
@@ -91,7 +91,7 @@ INSTANCE DIA_Gritta_WantsMoney(C_INFO)
 	condition	= DIA_Gritta_WantsMoney_Condition;
 	information	= DIA_Gritta_WantsMoney_Info;
 	permanent	= FALSE;
-	description = "Меня прислал Маттео. Он говорит, что ты задолжала ему.";
+	description = "РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РњР°С‚С‚РµРѕ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ Р·Р°РґРѕР»Р¶Р°Р»Р° РµРјСѓ.";
 };                       
 FUNC INT DIA_Gritta_WantsMoney_Condition()
 {
@@ -106,63 +106,63 @@ var int Gritta_Threatened;
 //------------------------------------
 FUNC VOID DIA_Gritta_WantsMoney_Info()
 {	
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_15_00"); //Меня прислал Маттео. Он говорит, что ты задолжала ему.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_01"); //Он хочет получить деньги? За что? То, что он мне прислал, ни на что не годится. Ткань отвратительная, а швы расползаются прямо на глазах.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_02"); //А ты выдел, какого они цвета? Это не тот цвет, что я заказывала. Это надувательство!
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_03"); //Послушай, если бы мой муж был жив, он бы не посмел заявлять такое. Ох, мой бедный муж...
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_15_00"); //РњРµРЅСЏ РїСЂРёСЃР»Р°Р» РњР°С‚С‚РµРѕ. РћРЅ РіРѕРІРѕСЂРёС‚, С‡С‚Рѕ С‚С‹ Р·Р°РґРѕР»Р¶Р°Р»Р° РµРјСѓ.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_01"); //РћРЅ С…РѕС‡РµС‚ РїРѕР»СѓС‡РёС‚СЊ РґРµРЅСЊРіРё? Р—Р° С‡С‚Рѕ? РўРѕ, С‡С‚Рѕ РѕРЅ РјРЅРµ РїСЂРёСЃР»Р°Р», РЅРё РЅР° С‡С‚Рѕ РЅРµ РіРѕРґРёС‚СЃСЏ. РўРєР°РЅСЊ РѕС‚РІСЂР°С‚РёС‚РµР»СЊРЅР°СЏ, Р° С€РІС‹ СЂР°СЃРїРѕР»Р·Р°СЋС‚СЃСЏ РїСЂСЏРјРѕ РЅР° РіР»Р°Р·Р°С….
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_02"); //Рђ С‚С‹ РІС‹РґРµР», РєР°РєРѕРіРѕ РѕРЅРё С†РІРµС‚Р°? Р­С‚Рѕ РЅРµ С‚РѕС‚ С†РІРµС‚, С‡С‚Рѕ СЏ Р·Р°РєР°Р·С‹РІР°Р»Р°. Р­С‚Рѕ РЅР°РґСѓРІР°С‚РµР»СЊСЃС‚РІРѕ!
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_16_03"); //РџРѕСЃР»СѓС€Р°Р№, РµСЃР»Рё Р±С‹ РјРѕР№ РјСѓР¶ Р±С‹Р» Р¶РёРІ, РѕРЅ Р±С‹ РЅРµ РїРѕСЃРјРµР» Р·Р°СЏРІР»СЏС‚СЊ С‚Р°РєРѕРµ. РћС…, РјРѕР№ Р±РµРґРЅС‹Р№ РјСѓР¶...
 
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Хватит. Где золото?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Продолжить ...",DIA_Gritta_WantsMoney_Continue01);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РҐРІР°С‚РёС‚. Р“РґРµ Р·РѕР»РѕС‚Рѕ?",DIA_Gritta_WantsMoney_WhereMoney);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РџСЂРѕРґРѕР»Р¶РёС‚СЊ ...",DIA_Gritta_WantsMoney_Continue01);
 };
 FUNC VOID DIA_Gritta_WantsMoney_Continue01 ()
 {
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue01_16_00"); //...он был таким хорошим человеком. Красивый, работящий, настоящий джентльмен. У нас было все. Богатство, счастье...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_01"); //...иногда нас даже приглашали в высший свет. На торжества, где можно было похвастаться нарядом и прической...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_02"); //...на званые обеды... Тогда все было совсем по-другому. Тогда никто бы не осмелился унижать бедную вдову такими...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue01_16_00"); //...РѕРЅ Р±С‹Р» С‚Р°РєРёРј С…РѕСЂРѕС€РёРј С‡РµР»РѕРІРµРєРѕРј. РљСЂР°СЃРёРІС‹Р№, СЂР°Р±РѕС‚СЏС‰РёР№, РЅР°СЃС‚РѕСЏС‰РёР№ РґР¶РµРЅС‚Р»СЊРјРµРЅ. РЈ РЅР°СЃ Р±С‹Р»Рѕ РІСЃРµ. Р‘РѕРіР°С‚СЃС‚РІРѕ, СЃС‡Р°СЃС‚СЊРµ...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_01"); //...РёРЅРѕРіРґР° РЅР°СЃ РґР°Р¶Рµ РїСЂРёРіР»Р°С€Р°Р»Рё РІ РІС‹СЃС€РёР№ СЃРІРµС‚. РќР° С‚РѕСЂР¶РµСЃС‚РІР°, РіРґРµ РјРѕР¶РЅРѕ Р±С‹Р»Рѕ РїРѕС…РІР°СЃС‚Р°С‚СЊСЃСЏ РЅР°СЂСЏРґРѕРј Рё РїСЂРёС‡РµСЃРєРѕР№...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue01_16_02"); //...РЅР° Р·РІР°РЅС‹Рµ РѕР±РµРґС‹... РўРѕРіРґР° РІСЃРµ Р±С‹Р»Рѕ СЃРѕРІСЃРµРј РїРѕ-РґСЂСѓРіРѕРјСѓ. РўРѕРіРґР° РЅРёРєС‚Рѕ Р±С‹ РЅРµ РѕСЃРјРµР»РёР»СЃСЏ СѓРЅРёР¶Р°С‚СЊ Р±РµРґРЅСѓСЋ РІРґРѕРІСѓ С‚Р°РєРёРјРё...
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Хватит. Где золото?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Продолжить ...",DIA_Gritta_WantsMoney_Continue02);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РҐРІР°С‚РёС‚. Р“РґРµ Р·РѕР»РѕС‚Рѕ?",DIA_Gritta_WantsMoney_WhereMoney);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РџСЂРѕРґРѕР»Р¶РёС‚СЊ ...",DIA_Gritta_WantsMoney_Continue02);
 };
 FUNC VOID DIA_Gritta_WantsMoney_Continue02 ()
 {
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue02_16_00"); //...нелепыми заявлениями. А что мне теперь делать? Моя пенсия еле позволяет сводить концы с концами, а жизнь становится все труднее и труднее. Да ты сам это можешь видеть...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_01"); //...людям приходится экономить и потуже затягивать пояса. Уже много недель ни один корабль не заходил в город. Мой муж был капитаном торгового корабля - на самом деле, он даже владел этим кораблем...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_02"); //...из своих долгих плаваний он всегда привозил мне подарки - изысканные ткани с материка, дорогие специи из южных стран...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue02_16_00"); //...РЅРµР»РµРїС‹РјРё Р·Р°СЏРІР»РµРЅРёСЏРјРё. Рђ С‡С‚Рѕ РјРЅРµ С‚РµРїРµСЂСЊ РґРµР»Р°С‚СЊ? РњРѕСЏ РїРµРЅСЃРёСЏ РµР»Рµ РїРѕР·РІРѕР»СЏРµС‚ СЃРІРѕРґРёС‚СЊ РєРѕРЅС†С‹ СЃ РєРѕРЅС†Р°РјРё, Р° Р¶РёР·РЅСЊ СЃС‚Р°РЅРѕРІРёС‚СЃСЏ РІСЃРµ С‚СЂСѓРґРЅРµРµ Рё С‚СЂСѓРґРЅРµРµ. Р”Р° С‚С‹ СЃР°Рј СЌС‚Рѕ РјРѕР¶РµС€СЊ РІРёРґРµС‚СЊ...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_01"); //...Р»СЋРґСЏРј РїСЂРёС…РѕРґРёС‚СЃСЏ СЌРєРѕРЅРѕРјРёС‚СЊ Рё РїРѕС‚СѓР¶Рµ Р·Р°С‚СЏРіРёРІР°С‚СЊ РїРѕСЏСЃР°. РЈР¶Рµ РјРЅРѕРіРѕ РЅРµРґРµР»СЊ РЅРё РѕРґРёРЅ РєРѕСЂР°Р±Р»СЊ РЅРµ Р·Р°С…РѕРґРёР» РІ РіРѕСЂРѕРґ. РњРѕР№ РјСѓР¶ Р±С‹Р» РєР°РїРёС‚Р°РЅРѕРј С‚РѕСЂРіРѕРІРѕРіРѕ РєРѕСЂР°Р±Р»СЏ - РЅР° СЃР°РјРѕРј РґРµР»Рµ, РѕРЅ РґР°Р¶Рµ РІР»Р°РґРµР» СЌС‚РёРј РєРѕСЂР°Р±Р»РµРј...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue02_16_02"); //...РёР· СЃРІРѕРёС… РґРѕР»РіРёС… РїР»Р°РІР°РЅРёР№ РѕРЅ РІСЃРµРіРґР° РїСЂРёРІРѕР·РёР» РјРЅРµ РїРѕРґР°СЂРєРё - РёР·С‹СЃРєР°РЅРЅС‹Рµ С‚РєР°РЅРё СЃ РјР°С‚РµСЂРёРєР°, РґРѕСЂРѕРіРёРµ СЃРїРµС†РёРё РёР· СЋР¶РЅС‹С… СЃС‚СЂР°РЅ...
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Хватит. Где золото?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Продолжить ...",DIA_Gritta_WantsMoney_Continue03);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РҐРІР°С‚РёС‚. Р“РґРµ Р·РѕР»РѕС‚Рѕ?",DIA_Gritta_WantsMoney_WhereMoney);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РџСЂРѕРґРѕР»Р¶РёС‚СЊ ...",DIA_Gritta_WantsMoney_Continue03);
 };
 FUNC VOID DIA_Gritta_WantsMoney_Continue03 ()
 {
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue03_16_00"); //...большинство даже не слышали о таких вещах. Но однажды, я получила известие, что Гритта затонула - так назывался этот корабль, мой муж назвал его так из...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue03_16_01"); //...любви ко мне. Я плакала и молилась, чтобы моему мужу удалось выжить в этой катастрофе. Я надеялась, я ждала новостей о нем, но все мои молитвы были тщетными...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_02"); //...да смилостивится Иннос над его душой. Пусть он спит спокойно. С тех пор мне приходится жить вот в этих скромных условиях. А теперь этот бездушный, бессердечный Маттео...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_03"); //...хочет отнять у меня последние сбережения. Пожалуйста, сжалься над бедной женщиной. Если бы мой муж был жив, Маттео не посмел бы сделать это. Ох, мой бедный муж...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_continue03_16_00"); //...Р±РѕР»СЊС€РёРЅСЃС‚РІРѕ РґР°Р¶Рµ РЅРµ СЃР»С‹С€Р°Р»Рё Рѕ С‚Р°РєРёС… РІРµС‰Р°С…. РќРѕ РѕРґРЅР°Р¶РґС‹, СЏ РїРѕР»СѓС‡РёР»Р° РёР·РІРµСЃС‚РёРµ, С‡С‚Рѕ Р“СЂРёС‚С‚Р° Р·Р°С‚РѕРЅСѓР»Р° - С‚Р°Рє РЅР°Р·С‹РІР°Р»СЃСЏ СЌС‚РѕС‚ РєРѕСЂР°Р±Р»СЊ, РјРѕР№ РјСѓР¶ РЅР°Р·РІР°Р» РµРіРѕ С‚Р°Рє РёР·...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue03_16_01"); //...Р»СЋР±РІРё РєРѕ РјРЅРµ. РЇ РїР»Р°РєР°Р»Р° Рё РјРѕР»РёР»Р°СЃСЊ, С‡С‚РѕР±С‹ РјРѕРµРјСѓ РјСѓР¶Сѓ СѓРґР°Р»РѕСЃСЊ РІС‹Р¶РёС‚СЊ РІ СЌС‚РѕР№ РєР°С‚Р°СЃС‚СЂРѕС„Рµ. РЇ РЅР°РґРµСЏР»Р°СЃСЊ, СЏ Р¶РґР°Р»Р° РЅРѕРІРѕСЃС‚РµР№ Рѕ РЅРµРј, РЅРѕ РІСЃРµ РјРѕРё РјРѕР»РёС‚РІС‹ Р±С‹Р»Рё С‚С‰РµС‚РЅС‹РјРё...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_02"); //...РґР° СЃРјРёР»РѕСЃС‚РёРІРёС‚СЃСЏ РРЅРЅРѕСЃ РЅР°Рґ РµРіРѕ РґСѓС€РѕР№. РџСѓСЃС‚СЊ РѕРЅ СЃРїРёС‚ СЃРїРѕРєРѕР№РЅРѕ. РЎ С‚РµС… РїРѕСЂ РјРЅРµ РїСЂРёС…РѕРґРёС‚СЃСЏ Р¶РёС‚СЊ РІРѕС‚ РІ СЌС‚РёС… СЃРєСЂРѕРјРЅС‹С… СѓСЃР»РѕРІРёСЏС…. Рђ С‚РµРїРµСЂСЊ СЌС‚РѕС‚ Р±РµР·РґСѓС€РЅС‹Р№, Р±РµСЃСЃРµСЂРґРµС‡РЅС‹Р№ РњР°С‚С‚РµРѕ...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_Continue04_16_03"); //...С…РѕС‡РµС‚ РѕС‚РЅСЏС‚СЊ Сѓ РјРµРЅСЏ РїРѕСЃР»РµРґРЅРёРµ СЃР±РµСЂРµР¶РµРЅРёСЏ. РџРѕР¶Р°Р»СѓР№СЃС‚Р°, СЃР¶Р°Р»СЊСЃСЏ РЅР°Рґ Р±РµРґРЅРѕР№ Р¶РµРЅС‰РёРЅРѕР№. Р•СЃР»Рё Р±С‹ РјРѕР№ РјСѓР¶ Р±С‹Р» Р¶РёРІ, РњР°С‚С‚РµРѕ РЅРµ РїРѕСЃРјРµР» Р±С‹ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ. РћС…, РјРѕР№ Р±РµРґРЅС‹Р№ РјСѓР¶...
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Хватит. Где золото?",DIA_Gritta_WantsMoney_WhereMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Продолжить ...",DIA_Gritta_WantsMoney_Continue01);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РҐРІР°С‚РёС‚. Р“РґРµ Р·РѕР»РѕС‚Рѕ?",DIA_Gritta_WantsMoney_WhereMoney);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РџСЂРѕРґРѕР»Р¶РёС‚СЊ ...",DIA_Gritta_WantsMoney_Continue01);
 };
 FUNC VOID DIA_Gritta_WantsMoney_WhereMoney ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_WhereMoney_15_00"); //Хватит. Где золото?
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_WhereMoney_16_01"); //(вызывающе) Но у меня нет золота, я бедная вдова!
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_WhereMoney_15_00"); //РҐРІР°С‚РёС‚. Р“РґРµ Р·РѕР»РѕС‚Рѕ?
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_WhereMoney_16_01"); //(РІС‹Р·С‹РІР°СЋС‰Рµ) РќРѕ Сѓ РјРµРЅСЏ РЅРµС‚ Р·РѕР»РѕС‚Р°, СЏ Р±РµРґРЅР°СЏ РІРґРѕРІР°!
 	
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Выкладывай деньги, или мне придется проучить тебя!",DIA_Gritta_WantsMoney_BeatUp);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Похоже, мне придется продать твои вещи ...",DIA_Gritta_WantsMoney_EnoughStuff);
-	Info_AddChoice (DIA_Gritta_WantsMoney,"Я собираюсь заплатить эту сумму за тебя.",DIA_Gritta_WantsMoney_IWillPay);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"Р’С‹РєР»Р°РґС‹РІР°Р№ РґРµРЅСЊРіРё, РёР»Рё РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕСѓС‡РёС‚СЊ С‚РµР±СЏ!",DIA_Gritta_WantsMoney_BeatUp);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РџРѕС…РѕР¶Рµ, РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕРґР°С‚СЊ С‚РІРѕРё РІРµС‰Рё ...",DIA_Gritta_WantsMoney_EnoughStuff);
+	Info_AddChoice (DIA_Gritta_WantsMoney,"РЇ СЃРѕР±РёСЂР°СЋСЃСЊ Р·Р°РїР»Р°С‚РёС‚СЊ СЌС‚Сѓ СЃСѓРјРјСѓ Р·Р° С‚РµР±СЏ.",DIA_Gritta_WantsMoney_IWillPay);
 };
 FUNC VOID DIA_Gritta_WantsMoney_EnoughStuff ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_00"); //Тогда мы просто продадим некоторые из твоих тряпок. Я уверен, что в твоем сундуке их целая груда...
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_01"); //Как ты смеешь, деревенщина! Ладно, вот, возьми золото.
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_00"); //РўРѕРіРґР° РјС‹ РїСЂРѕСЃС‚Рѕ РїСЂРѕРґР°РґРёРј РЅРµРєРѕС‚РѕСЂС‹Рµ РёР· С‚РІРѕРёС… С‚СЂСЏРїРѕРє. РЇ СѓРІРµСЂРµРЅ, С‡С‚Рѕ РІ С‚РІРѕРµРј СЃСѓРЅРґСѓРєРµ РёС… С†РµР»Р°СЏ РіСЂСѓРґР°...
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_01"); //РљР°Рє С‚С‹ СЃРјРµРµС€СЊ, РґРµСЂРµРІРµРЅС‰РёРЅР°! Р›Р°РґРЅРѕ, РІРѕС‚, РІРѕР·СЊРјРё Р·РѕР»РѕС‚Рѕ.
 	B_GiveInvItems (self,other,ItMi_Gold, 100); 
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_02"); //(ухмыляется) Видишь, это было не так уж сложно.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_03"); //(раздраженно) А теперь, пожалуйста, покинь мой дом.
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_EnoughStuff_15_02"); //(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) Р’РёРґРёС€СЊ, СЌС‚Рѕ Р±С‹Р»Рѕ РЅРµ С‚Р°Рє СѓР¶ СЃР»РѕР¶РЅРѕ.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_EnoughStuff_16_03"); //(СЂР°Р·РґСЂР°Р¶РµРЅРЅРѕ) Рђ С‚РµРїРµСЂСЊ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°, РїРѕРєРёРЅСЊ РјРѕР№ РґРѕРј.
 	
 	Gritta_GoldGiven = TRUE;
 	
@@ -170,18 +170,18 @@ FUNC VOID DIA_Gritta_WantsMoney_EnoughStuff ()
 };
 func VOID DIA_Gritta_WantsMoney_IWillPay ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_00"); //Я собираюсь заплатить эту сумму за тебя.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_01"); //Ты сделаешь это ради меня? Ох, я знала, что ты не такой жадный как этот Маттео!
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_02"); //Да, да, не стоит благодарностей.
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_03"); //Возвращайся, когда вернешь деньги Маттео - я хочу отблагодарить тебя.
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_00"); //РЇ СЃРѕР±РёСЂР°СЋСЃСЊ Р·Р°РїР»Р°С‚РёС‚СЊ СЌС‚Сѓ СЃСѓРјРјСѓ Р·Р° С‚РµР±СЏ.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_01"); //РўС‹ СЃРґРµР»Р°РµС€СЊ СЌС‚Рѕ СЂР°РґРё РјРµРЅСЏ? РћС…, СЏ Р·РЅР°Р»Р°, С‡С‚Рѕ С‚С‹ РЅРµ С‚Р°РєРѕР№ Р¶Р°РґРЅС‹Р№ РєР°Рє СЌС‚РѕС‚ РњР°С‚С‚РµРѕ!
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_IWillPay_15_02"); //Р”Р°, РґР°, РЅРµ СЃС‚РѕРёС‚ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚РµР№.
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_IWillPay_16_03"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° РІРµСЂРЅРµС€СЊ РґРµРЅСЊРіРё РњР°С‚С‚РµРѕ - СЏ С…РѕС‡Сѓ РѕС‚Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ.
 	Info_ClearChoices (DIA_Gritta_WantsMoney);
 	
 	Gritta_WantPay = TRUE;
 };
 FUNC VOID DIA_Gritta_WantsMoney_BeatUp ()
 {
-	AI_Output (other,self ,"DIA_Gritta_WantsMoney_BeatUp_15_00"); //(угрожающе) Выкладывай деньги, или мне придется проучить тебя!
-	AI_Output (self ,other,"DIA_Gritta_WantsMoney_BeatUp_16_01"); //(вызывающе) Да ты просто обычный бандит. Давай, доставая свое оружие, и я позову стражу!
+	AI_Output (other,self ,"DIA_Gritta_WantsMoney_BeatUp_15_00"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) Р’С‹РєР»Р°РґС‹РІР°Р№ РґРµРЅСЊРіРё, РёР»Рё РјРЅРµ РїСЂРёРґРµС‚СЃСЏ РїСЂРѕСѓС‡РёС‚СЊ С‚РµР±СЏ!
+	AI_Output (self ,other,"DIA_Gritta_WantsMoney_BeatUp_16_01"); //(РІС‹Р·С‹РІР°СЋС‰Рµ) Р”Р° С‚С‹ РїСЂРѕСЃС‚Рѕ РѕР±С‹С‡РЅС‹Р№ Р±Р°РЅРґРёС‚. Р”Р°РІР°Р№, РґРѕСЃС‚Р°РІР°СЏ СЃРІРѕРµ РѕСЂСѓР¶РёРµ, Рё СЏ РїРѕР·РѕРІСѓ СЃС‚СЂР°Р¶Сѓ!
 	
 	Gritta_Threatened = TRUE;
 	
@@ -212,10 +212,10 @@ func int DIA_Gritta_WINE_Condition ()
 };
 func void DIA_Gritta_WINE_Info ()
 {
-	AI_Output (self, other, "DIA_Gritta_WINE_16_00"); //Это было очень благородно с твоей стороны заплатить за меня. Я хочу отблагодарить тебя.
-	AI_Output (self, other, "DIA_Gritta_WINE_16_01"); //Вот бутылка вина, которую мой муж, да упокоит Иннос его душу, привез с южных островов.
-	AI_Output (self, other, "DIA_Gritta_WINE_16_02"); //Также я расскажу о тебе всем! Наконец-то в городе появился человек, чья добродетель...
-	AI_Output (other, self, "DIA_Gritta_WINE_15_03"); //Да-да, не стоит благодарностей.
+	AI_Output (self, other, "DIA_Gritta_WINE_16_00"); //Р­С‚Рѕ Р±С‹Р»Рѕ РѕС‡РµРЅСЊ Р±Р»Р°РіРѕСЂРѕРґРЅРѕ СЃ С‚РІРѕРµР№ СЃС‚РѕСЂРѕРЅС‹ Р·Р°РїР»Р°С‚РёС‚СЊ Р·Р° РјРµРЅСЏ. РЇ С…РѕС‡Сѓ РѕС‚Р±Р»Р°РіРѕРґР°СЂРёС‚СЊ С‚РµР±СЏ.
+	AI_Output (self, other, "DIA_Gritta_WINE_16_01"); //Р’РѕС‚ Р±СѓС‚С‹Р»РєР° РІРёРЅР°, РєРѕС‚РѕСЂСѓСЋ РјРѕР№ РјСѓР¶, РґР° СѓРїРѕРєРѕРёС‚ РРЅРЅРѕСЃ РµРіРѕ РґСѓС€Сѓ, РїСЂРёРІРµР· СЃ СЋР¶РЅС‹С… РѕСЃС‚СЂРѕРІРѕРІ.
+	AI_Output (self, other, "DIA_Gritta_WINE_16_02"); //РўР°РєР¶Рµ СЏ СЂР°СЃСЃРєР°Р¶Сѓ Рѕ С‚РµР±Рµ РІСЃРµРј! РќР°РєРѕРЅРµС†-С‚Рѕ РІ РіРѕСЂРѕРґРµ РїРѕСЏРІРёР»СЃСЏ С‡РµР»РѕРІРµРє, С‡СЊСЏ РґРѕР±СЂРѕРґРµС‚РµР»СЊ...
+	AI_Output (other, self, "DIA_Gritta_WINE_15_03"); //Р”Р°-РґР°, РЅРµ СЃС‚РѕРёС‚ Р±Р»Р°РіРѕРґР°СЂРЅРѕСЃС‚РµР№.
 
 	B_GivePlayerXP 		(XP_PayForGritta);
 	B_GiveInvItems 		(self, other, Itfo_Wine, 1);
@@ -248,21 +248,21 @@ func void DIA_Gritta_PERM_Info ()
 	if (Npc_KnowsInfo (other, DIA_Gritta_WINE))
 	&& (Npc_HasItems (self, itmi_gold) >= 100)
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_00"); //Пока в городе есть такие люди как ты, меня не оставляет надежда, что все еще будет хорошо.
+		AI_Output (self, other, "DIA_Gritta_PERM_16_00"); //РџРѕРєР° РІ РіРѕСЂРѕРґРµ РµСЃС‚СЊ С‚Р°РєРёРµ Р»СЋРґРё РєР°Рє С‚С‹, РјРµРЅСЏ РЅРµ РѕСЃС‚Р°РІР»СЏРµС‚ РЅР°РґРµР¶РґР°, С‡С‚Рѕ РІСЃРµ РµС‰Рµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ.
 	}
 	else if (Gritta_WantPay == TRUE)
 	&&		(Npc_HasItems (self, itmi_gold) >= 100)
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_01"); //Возвращайся, когда уладишь вопрос с Маттео.
+		AI_Output (self, other, "DIA_Gritta_PERM_16_01"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ, РєРѕРіРґР° СѓР»Р°РґРёС€СЊ РІРѕРїСЂРѕСЃ СЃ РњР°С‚С‚РµРѕ.
 	}
 	else if (Gritta_Threatened == TRUE)
 	&&		(Npc_HasItems (self, itmi_gold) >= 100)
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_02"); //Что ты уставился на меня как идиот? Ты все равно не осмелишься ударить меня!
+		AI_Output (self, other, "DIA_Gritta_PERM_16_02"); //Р§С‚Рѕ С‚С‹ СѓСЃС‚Р°РІРёР»СЃСЏ РЅР° РјРµРЅСЏ РєР°Рє РёРґРёРѕС‚? РўС‹ РІСЃРµ СЂР°РІРЅРѕ РЅРµ РѕСЃРјРµР»РёС€СЊСЃСЏ СѓРґР°СЂРёС‚СЊ РјРµРЅСЏ!
 	}
 	else //Gritta_GoldGiven oder niedergeschlagen
 	{
-		AI_Output (self, other, "DIA_Gritta_PERM_16_03"); //Что еще тебе нужно? Ты получил мое золото! Убирайся!
+		AI_Output (self, other, "DIA_Gritta_PERM_16_03"); //Р§С‚Рѕ РµС‰Рµ С‚РµР±Рµ РЅСѓР¶РЅРѕ? РўС‹ РїРѕР»СѓС‡РёР» РјРѕРµ Р·РѕР»РѕС‚Рѕ! РЈР±РёСЂР°Р№СЃСЏ!
 	};
 	
 	AI_StopProcessInfos (self); 
@@ -314,7 +314,7 @@ INSTANCE DIA_Gritta_Perm3U4U5(C_INFO)
 	condition	= DIA_Gritta_Perm3U4U5_Condition;
 	information	= DIA_Gritta_Perm3U4U5_Info;
 	permanent	= TRUE;
-	description = "Как дела?";
+	description = "РљР°Рє РґРµР»Р°?";
 };                       
 FUNC INT DIA_Gritta_Perm3U4U5_Condition()
 {
@@ -322,35 +322,35 @@ FUNC INT DIA_Gritta_Perm3U4U5_Condition()
 };
 FUNC VOID DIA_Gritta_Perm3U4U5_Info()
 {	
-	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_15_00"); //Как дела?
+	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_15_00"); //РљР°Рє РґРµР»Р°?
 	
 	if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_01"); //Все здесь катится в тартарары. Куда не взглянешь, везде одни преступления и насилие. Только представь, недавно убили даже паладина!
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_01"); //Р’СЃРµ Р·РґРµСЃСЊ РєР°С‚РёС‚СЃСЏ РІ С‚Р°СЂС‚Р°СЂР°СЂС‹. РљСѓРґР° РЅРµ РІР·РіР»СЏРЅРµС€СЊ, РІРµР·РґРµ РѕРґРЅРё РїСЂРµСЃС‚СѓРїР»РµРЅРёСЏ Рё РЅР°СЃРёР»РёРµ. РўРѕР»СЊРєРѕ РїСЂРµРґСЃС‚Р°РІСЊ, РЅРµРґР°РІРЅРѕ СѓР±РёР»Рё РґР°Р¶Рµ РїР°Р»Р°РґРёРЅР°!
 			
 			Info_ClearChoices (DIA_Gritta_Perm3U4U5);
 			Info_AddChoice (DIA_Gritta_Perm3U4U5,DIALOG_BACK,DIA_Gritta_Perm3U4U5_BACK);
-			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Эта война - ради вас. Такое случается.",DIA_Gritta_Perm3U4U5_War);
-			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Все будет хорошо.",DIA_Gritta_Perm3U4U5_TurnsGood);
-			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Что ты слышала?",DIA_Gritta_Perm3U4U5_Rumors);
+			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Р­С‚Р° РІРѕР№РЅР° - СЂР°РґРё РІР°СЃ. РўР°РєРѕРµ СЃР»СѓС‡Р°РµС‚СЃСЏ.",DIA_Gritta_Perm3U4U5_War);
+			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Р’СЃРµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ.",DIA_Gritta_Perm3U4U5_TurnsGood);
+			Info_AddChoice (DIA_Gritta_Perm3U4U5,"Р§С‚Рѕ С‚С‹ СЃР»С‹С€Р°Р»Р°?",DIA_Gritta_Perm3U4U5_Rumors);
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_02"); //Ох, я так взволнована. Лорд Хаген освободил этого наемника.
-			AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_15_03"); //А какое это имеет отношение к тебе?
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_04"); //Да ты сам подумай. Ты веришь, что наемники сидели бы, сложа руки, когда их товарища собирались повесить?
-			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_05"); //Они бы попытались освободить его, и пролилось бы много крови. Но, слава Инносу, все разрешилось удачно.
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_02"); //РћС…, СЏ С‚Р°Рє РІР·РІРѕР»РЅРѕРІР°РЅР°. Р›РѕСЂРґ РҐР°РіРµРЅ РѕСЃРІРѕР±РѕРґРёР» СЌС‚РѕРіРѕ РЅР°РµРјРЅРёРєР°.
+			AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_15_03"); //Рђ РєР°РєРѕРµ СЌС‚Рѕ РёРјРµРµС‚ РѕС‚РЅРѕС€РµРЅРёРµ Рє С‚РµР±Рµ?
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_04"); //Р”Р° С‚С‹ СЃР°Рј РїРѕРґСѓРјР°Р№. РўС‹ РІРµСЂРёС€СЊ, С‡С‚Рѕ РЅР°РµРјРЅРёРєРё СЃРёРґРµР»Рё Р±С‹, СЃР»РѕР¶Р° СЂСѓРєРё, РєРѕРіРґР° РёС… С‚РѕРІР°СЂРёС‰Р° СЃРѕР±РёСЂР°Р»РёСЃСЊ РїРѕРІРµСЃРёС‚СЊ?
+			AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_05"); //РћРЅРё Р±С‹ РїРѕРїС‹С‚Р°Р»РёСЃСЊ РѕСЃРІРѕР±РѕРґРёС‚СЊ РµРіРѕ, Рё РїСЂРѕР»РёР»РѕСЃСЊ Р±С‹ РјРЅРѕРіРѕ РєСЂРѕРІРё. РќРѕ, СЃР»Р°РІР° РРЅРЅРѕСЃСѓ, РІСЃРµ СЂР°Р·СЂРµС€РёР»РѕСЃСЊ СѓРґР°С‡РЅРѕ.
 		};	
 	}
 	else if (Kapitel == 5)	
 	{
-		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_06"); //Паладины к чему-то готовятся. Похоже, они собираются уходить из города.
+		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_06"); //РџР°Р»Р°РґРёРЅС‹ Рє С‡РµРјСѓ-С‚Рѕ РіРѕС‚РѕРІСЏС‚СЃСЏ. РџРѕС…РѕР¶Рµ, РѕРЅРё СЃРѕР±РёСЂР°СЋС‚СЃСЏ СѓС…РѕРґРёС‚СЊ РёР· РіРѕСЂРѕРґР°.
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_07"); //Все как всегда, но я не хочу жаловаться.
+		AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_16_07"); //Р’СЃРµ РєР°Рє РІСЃРµРіРґР°, РЅРѕ СЏ РЅРµ С…РѕС‡Сѓ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ.
 	};
 };
 
@@ -361,15 +361,15 @@ FUNC VOID DIA_Gritta_Perm3U4U5_BACK ()
 
 FUNC VOID DIA_Gritta_Perm3U4U5_War ()
 {
-	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_War_15_00"); //Эта война - ради вас. Такое случается.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_01"); //Да, всему виной эта ужасная война. Все страдают от нее. Не знаю даже, как им удается сводить концы с концами.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_02"); //Иногда я спрашиваю себя, что мы сделали, чтобы заслужить такое наказание от Инноса.
+	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_War_15_00"); //Р­С‚Р° РІРѕР№РЅР° - СЂР°РґРё РІР°СЃ. РўР°РєРѕРµ СЃР»СѓС‡Р°РµС‚СЃСЏ.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_01"); //Р”Р°, РІСЃРµРјСѓ РІРёРЅРѕР№ СЌС‚Р° СѓР¶Р°СЃРЅР°СЏ РІРѕР№РЅР°. Р’СЃРµ СЃС‚СЂР°РґР°СЋС‚ РѕС‚ РЅРµРµ. РќРµ Р·РЅР°СЋ РґР°Р¶Рµ, РєР°Рє РёРј СѓРґР°РµС‚СЃСЏ СЃРІРѕРґРёС‚СЊ РєРѕРЅС†С‹ СЃ РєРѕРЅС†Р°РјРё.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_War_16_02"); //РРЅРѕРіРґР° СЏ СЃРїСЂР°С€РёРІР°СЋ СЃРµР±СЏ, С‡С‚Рѕ РјС‹ СЃРґРµР»Р°Р»Рё, С‡С‚РѕР±С‹ Р·Р°СЃР»СѓР¶РёС‚СЊ С‚Р°РєРѕРµ РЅР°РєР°Р·Р°РЅРёРµ РѕС‚ РРЅРЅРѕСЃР°.
 };
 
 FUNC VOID DIA_Gritta_Perm3U4U5_TurnsGood ()
 {
-	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_TurnsGood_15_00"); //Все будет хорошо.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_TurnsGood_16_01"); //Ты пытаешься подбодрить меня. Это мило.
+	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_TurnsGood_15_00"); //Р’СЃРµ Р±СѓРґРµС‚ С…РѕСЂРѕС€Рѕ.
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_TurnsGood_16_01"); //РўС‹ РїС‹С‚Р°РµС€СЊСЃСЏ РїРѕРґР±РѕРґСЂРёС‚СЊ РјРµРЅСЏ. Р­С‚Рѕ РјРёР»Рѕ.
 	
 	if (GrittaXP_Once == FALSE)
 	{
@@ -380,9 +380,9 @@ FUNC VOID DIA_Gritta_Perm3U4U5_TurnsGood ()
 
 FUNC VOID DIA_Gritta_Perm3U4U5_Rumors ()
 {
-	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_Rumors_15_00"); //Что ты слышала?
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_01"); //Только то, что говорят на улицах.
-	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_02"); //Я слышала, что убийцу уже поймали, но я не знаю, правда это или нет.
+	AI_Output (other,self ,"DIA_Gritta_Perm3U4U5_Rumors_15_00"); //Р§С‚Рѕ С‚С‹ СЃР»С‹С€Р°Р»Р°?
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_01"); //РўРѕР»СЊРєРѕ С‚Рѕ, С‡С‚Рѕ РіРѕРІРѕСЂСЏС‚ РЅР° СѓР»РёС†Р°С….
+	AI_Output (self ,other,"DIA_Gritta_Perm3U4U5_Rumors_16_02"); //РЇ СЃР»С‹С€Р°Р»Р°, С‡С‚Рѕ СѓР±РёР№С†Сѓ СѓР¶Рµ РїРѕР№РјР°Р»Рё, РЅРѕ СЏ РЅРµ Р·РЅР°СЋ, РїСЂР°РІРґР° СЌС‚Рѕ РёР»Рё РЅРµС‚.
 };
 
 

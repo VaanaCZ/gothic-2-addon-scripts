@@ -20,7 +20,7 @@ INSTANCE MENU_LEAVE_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		= "Вы действительно хотите выйти?";   		
+	text[0]		= "Р’С‹ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ С…РѕС‚РёС‚Рµ РІС‹Р№С‚Рё?";   		
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=    0;		posy		= 3400;
@@ -33,8 +33,8 @@ INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Да";
-	text[1]		= "Да, я вернусь!"; // Kommentar
+	text[0]		= "Р”Р°";
+	text[1]		= "Р”Р°, СЏ РІРµСЂРЅСѓСЃСЊ!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 4400;	
@@ -49,8 +49,8 @@ INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Нет";
-	text[1]		= "Нет, я хочу продолжить игру."; // Kommentar
+	text[0]		= "РќРµС‚";
+	text[1]		= "РќРµС‚, СЏ С…РѕС‡Сѓ РїСЂРѕРґРѕР»Р¶РёС‚СЊ РёРіСЂСѓ."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 5000;	

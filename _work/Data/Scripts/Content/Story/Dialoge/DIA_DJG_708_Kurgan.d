@@ -42,11 +42,11 @@ func int DIA_Kurgan_HELLO_Condition ()
 
 func void DIA_Kurgan_HELLO_Info ()
 {
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_00"); //Эй, ты! Смотри, куда идешь!
-	AI_Output			(other,self , "DIA_Kurgan_HELLO_15_01"); //Что ты этим хочешь сказать?
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_02"); //Я хочу сказать, что пребывание здесь может не очень хорошо сказаться на твоем здоровье. Это место просто кишит орками и монстрами.
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_03"); //Не говоря уже о драконах. Это просто дружеское предупреждение.
-	B_LogEntry (TOPIC_Dragonhunter,"У входа в Долину рудников мне встретилась группа охотников на драконов. Эти парни хорошо вооружены, но, боюсь, это не произведет особого впечатления на драконов.");
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_00"); //Р­Р№, С‚С‹! РЎРјРѕС‚СЂРё, РєСѓРґР° РёРґРµС€СЊ!
+	AI_Output			(other,self , "DIA_Kurgan_HELLO_15_01"); //Р§С‚Рѕ С‚С‹ СЌС‚РёРј С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ?
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_02"); //РЇ С…РѕС‡Сѓ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РїСЂРµР±С‹РІР°РЅРёРµ Р·РґРµСЃСЊ РјРѕР¶РµС‚ РЅРµ РѕС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ СЃРєР°Р·Р°С‚СЊСЃСЏ РЅР° С‚РІРѕРµРј Р·РґРѕСЂРѕРІСЊРµ. Р­С‚Рѕ РјРµСЃС‚Рѕ РїСЂРѕСЃС‚Рѕ РєРёС€РёС‚ РѕСЂРєР°РјРё Рё РјРѕРЅСЃС‚СЂР°РјРё.
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_03"); //РќРµ РіРѕРІРѕСЂСЏ СѓР¶Рµ Рѕ РґСЂР°РєРѕРЅР°С…. Р­С‚Рѕ РїСЂРѕСЃС‚Рѕ РґСЂСѓР¶РµСЃРєРѕРµ РїСЂРµРґСѓРїСЂРµР¶РґРµРЅРёРµ.
+	B_LogEntry (TOPIC_Dragonhunter,"РЈ РІС…РѕРґР° РІ Р”РѕР»РёРЅСѓ СЂСѓРґРЅРёРєРѕРІ РјРЅРµ РІСЃС‚СЂРµС‚РёР»Р°СЃСЊ РіСЂСѓРїРїР° РѕС…РѕС‚РЅРёРєРѕРІ РЅР° РґСЂР°РєРѕРЅРѕРІ. Р­С‚Рё РїР°СЂРЅРё С…РѕСЂРѕС€Рѕ РІРѕРѕСЂСѓР¶РµРЅС‹, РЅРѕ, Р±РѕСЋСЃСЊ, СЌС‚Рѕ РЅРµ РїСЂРѕРёР·РІРµРґРµС‚ РѕСЃРѕР±РѕРіРѕ РІРїРµС‡Р°С‚Р»РµРЅРёСЏ РЅР° РґСЂР°РєРѕРЅРѕРІ.");
 };
 
 //**************************************************************************
@@ -58,7 +58,7 @@ instance DIA_Kurgan_ELSE		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_ELSE_Condition;
 	information	= 	DIA_Kurgan_ELSE_Info;
-	description	= 	"Ты можешь сказать мне что-нибудь, чего я еще не знаю?";
+	description	= 	"РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡РµРіРѕ СЏ РµС‰Рµ РЅРµ Р·РЅР°СЋ?";
 
 };
 
@@ -69,15 +69,15 @@ func int DIA_Kurgan_ELSE_Condition ()
 
 func void DIA_Kurgan_ELSE_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_ELSE_15_00"); //Ты можешь сказать мне что-нибудь, чего я еще не знаю?
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_01"); //Я могу дать тебе добрый совет, причем бесплатно.
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_02"); //Нам здесь не нужны трусы, которые падают в обморок, как только почувствуют даже слабый запах дракона.
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_03"); //Возвращайся домой, это работа для настоящих мужчин.
+	AI_Output			(other,self , "DIA_Kurgan_ELSE_15_00"); //РўС‹ РјРѕР¶РµС€СЊ СЃРєР°Р·Р°С‚СЊ РјРЅРµ С‡С‚Рѕ-РЅРёР±СѓРґСЊ, С‡РµРіРѕ СЏ РµС‰Рµ РЅРµ Р·РЅР°СЋ?
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_01"); //РЇ РјРѕРіСѓ РґР°С‚СЊ С‚РµР±Рµ РґРѕР±СЂС‹Р№ СЃРѕРІРµС‚, РїСЂРёС‡РµРј Р±РµСЃРїР»Р°С‚РЅРѕ.
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_02"); //РќР°Рј Р·РґРµСЃСЊ РЅРµ РЅСѓР¶РЅС‹ С‚СЂСѓСЃС‹, РєРѕС‚РѕСЂС‹Рµ РїР°РґР°СЋС‚ РІ РѕР±РјРѕСЂРѕРє, РєР°Рє С‚РѕР»СЊРєРѕ РїРѕС‡СѓРІСЃС‚РІСѓСЋС‚ РґР°Р¶Рµ СЃР»Р°Р±С‹Р№ Р·Р°РїР°С… РґСЂР°РєРѕРЅР°.
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_03"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РґРѕРјРѕР№, СЌС‚Рѕ СЂР°Р±РѕС‚Р° РґР»СЏ РЅР°СЃС‚РѕСЏС‰РёС… РјСѓР¶С‡РёРЅ.
 	
 };
 
 //**************************************************************************
-//	Bist du hier der Anfьhrer?
+//	Bist du hier der AnfСЊhrer?
 //**************************************************************************
 
 instance DIA_Kurgan_Leader		(C_INFO)
@@ -85,7 +85,7 @@ instance DIA_Kurgan_Leader		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_Leader_Condition;
 	information	= 	DIA_Kurgan_Leader_Info;
-	description	= 	"Ты что здесь, за главного?";
+	description	= 	"РўС‹ С‡С‚Рѕ Р·РґРµСЃСЊ, Р·Р° РіР»Р°РІРЅРѕРіРѕ?";
 
 };
 
@@ -96,15 +96,15 @@ func int DIA_Kurgan_Leader_Condition ()
 
 func void DIA_Kurgan_Leader_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_Leader_15_00"); //Ты что здесь, за главного?
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_01"); //Я что, похож на главного? Конечно нет. Нам здесь не нужны важничающие кретины, раздающие приказы.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_02"); //Когда Сильвио попытался вести себя как командир, мы показали ему и его парням, что мы думаем об этом.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_03"); //Произошла небольшая стычка. И в конце концов им пришлось убраться.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_04"); //Надеюсь, Сильвио найдет свой конец в кастрюле какого-нибудь орка.
+	AI_Output			(other,self , "DIA_Kurgan_Leader_15_00"); //РўС‹ С‡С‚Рѕ Р·РґРµСЃСЊ, Р·Р° РіР»Р°РІРЅРѕРіРѕ?
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_01"); //РЇ С‡С‚Рѕ, РїРѕС…РѕР¶ РЅР° РіР»Р°РІРЅРѕРіРѕ? РљРѕРЅРµС‡РЅРѕ РЅРµС‚. РќР°Рј Р·РґРµСЃСЊ РЅРµ РЅСѓР¶РЅС‹ РІР°Р¶РЅРёС‡Р°СЋС‰РёРµ РєСЂРµС‚РёРЅС‹, СЂР°Р·РґР°СЋС‰РёРµ РїСЂРёРєР°Р·С‹.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_02"); //РљРѕРіРґР° РЎРёР»СЊРІРёРѕ РїРѕРїС‹С‚Р°Р»СЃСЏ РІРµСЃС‚Рё СЃРµР±СЏ РєР°Рє РєРѕРјР°РЅРґРёСЂ, РјС‹ РїРѕРєР°Р·Р°Р»Рё РµРјСѓ Рё РµРіРѕ РїР°СЂРЅСЏРј, С‡С‚Рѕ РјС‹ РґСѓРјР°РµРј РѕР± СЌС‚РѕРј.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_03"); //РџСЂРѕРёР·РѕС€Р»Р° РЅРµР±РѕР»СЊС€Р°СЏ СЃС‚С‹С‡РєР°. Р РІ РєРѕРЅС†Рµ РєРѕРЅС†РѕРІ РёРј РїСЂРёС€Р»РѕСЃСЊ СѓР±СЂР°С‚СЊСЃСЏ.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_04"); //РќР°РґРµСЋСЃСЊ, РЎРёР»СЊРІРёРѕ РЅР°Р№РґРµС‚ СЃРІРѕР№ РєРѕРЅРµС† РІ РєР°СЃС‚СЂСЋР»Рµ РєР°РєРѕРіРѕ-РЅРёР±СѓРґСЊ РѕСЂРєР°.
 };
 
 //**************************************************************************
-//	Wolltet ihr nicht ein paar Drachen tцten?
+//	Wolltet ihr nicht ein paar Drachen tС†ten?
 //**************************************************************************
 
 instance DIA_Kurgan_KillDragon		(C_INFO)
@@ -112,7 +112,7 @@ instance DIA_Kurgan_KillDragon		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_KillDragon_Condition;
 	information	= 	DIA_Kurgan_KillDragon_Info;
-	description	= 	"Так вы хотите убить драконов?";
+	description	= 	"РўР°Рє РІС‹ С…РѕС‚РёС‚Рµ СѓР±РёС‚СЊ РґСЂР°РєРѕРЅРѕРІ?";
 
 };
 
@@ -126,27 +126,27 @@ func int DIA_Kurgan_KillDragon_Condition ()
 var int Kurgan_KillDragon_Day;
 func void DIA_Kurgan_KillDragon_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_00"); //(издеваясь) Так вы хотите убить драконов?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_01"); //Надо же, какой догадливый. А ты хоть знаешь, как можно завалить дракона?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_02"); //Ты думаешь, он будет спокойно сидеть на месте, когда ты будешь рубить его голову?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_03"); //Такие дела требуют тщательного планирования и решительных действий.
-	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_04"); //Понимаю. И как вы собираетесь справиться с драконами?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_05"); //Сначала мы должны выяснить, где они скрываются.
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_06"); //Только тогда можно будет подумать о лучшем способе атаковать их.
+	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_00"); //(РёР·РґРµРІР°СЏСЃСЊ) РўР°Рє РІС‹ С…РѕС‚РёС‚Рµ СѓР±РёС‚СЊ РґСЂР°РєРѕРЅРѕРІ?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_01"); //РќР°РґРѕ Р¶Рµ, РєР°РєРѕР№ РґРѕРіР°РґР»РёРІС‹Р№. Рђ С‚С‹ С…РѕС‚СЊ Р·РЅР°РµС€СЊ, РєР°Рє РјРѕР¶РЅРѕ Р·Р°РІР°Р»РёС‚СЊ РґСЂР°РєРѕРЅР°?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_02"); //РўС‹ РґСѓРјР°РµС€СЊ, РѕРЅ Р±СѓРґРµС‚ СЃРїРѕРєРѕР№РЅРѕ СЃРёРґРµС‚СЊ РЅР° РјРµСЃС‚Рµ, РєРѕРіРґР° С‚С‹ Р±СѓРґРµС€СЊ СЂСѓР±РёС‚СЊ РµРіРѕ РіРѕР»РѕРІСѓ?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_03"); //РўР°РєРёРµ РґРµР»Р° С‚СЂРµР±СѓСЋС‚ С‚С‰Р°С‚РµР»СЊРЅРѕРіРѕ РїР»Р°РЅРёСЂРѕРІР°РЅРёСЏ Рё СЂРµС€РёС‚РµР»СЊРЅС‹С… РґРµР№СЃС‚РІРёР№.
+	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_04"); //РџРѕРЅРёРјР°СЋ. Р РєР°Рє РІС‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ СЃРїСЂР°РІРёС‚СЊСЃСЏ СЃ РґСЂР°РєРѕРЅР°РјРё?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_05"); //РЎРЅР°С‡Р°Р»Р° РјС‹ РґРѕР»Р¶РЅС‹ РІС‹СЏСЃРЅРёС‚СЊ, РіРґРµ РѕРЅРё СЃРєСЂС‹РІР°СЋС‚СЃСЏ.
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_06"); //РўРѕР»СЊРєРѕ С‚РѕРіРґР° РјРѕР¶РЅРѕ Р±СѓРґРµС‚ РїРѕРґСѓРјР°С‚СЊ Рѕ Р»СѓС‡С€РµРј СЃРїРѕСЃРѕР±Рµ Р°С‚Р°РєРѕРІР°С‚СЊ РёС….
 
 	
 	Kurgan_KillDragon_Day = Wld_GetDay(); 
 
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "К сожалению, мне нужно идти.", DIA_Kurgan_KillDragon_weg );
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "Как вы собираетесь пройти мимо орков?"					, DIA_Kurgan_KillDragon_orks );
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "Мне кажется, вы не способны найти даже слепую овцу.", DIA_Kurgan_KillDragon_spott );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "Рљ СЃРѕР¶Р°Р»РµРЅРёСЋ, РјРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё.", DIA_Kurgan_KillDragon_weg );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "РљР°Рє РІС‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РїСЂРѕР№С‚Рё РјРёРјРѕ РѕСЂРєРѕРІ?"					, DIA_Kurgan_KillDragon_orks );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РІС‹ РЅРµ СЃРїРѕСЃРѕР±РЅС‹ РЅР°Р№С‚Рё РґР°Р¶Рµ СЃР»РµРїСѓСЋ РѕРІС†Сѓ.", DIA_Kurgan_KillDragon_spott );
 
 
 };
 func void DIA_Kurgan_KillDragon_spott ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //Мне кажется, вы не способны найти даже слепую овцу.
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //Что? Ты хочешь схлопотать по своей тупой физиономии?
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РІС‹ РЅРµ СЃРїРѕСЃРѕР±РЅС‹ РЅР°Р№С‚Рё РґР°Р¶Рµ СЃР»РµРїСѓСЋ РѕРІС†Сѓ.
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //Р§С‚Рѕ? РўС‹ С…РѕС‡РµС€СЊ СЃС…Р»РѕРїРѕС‚Р°С‚СЊ РїРѕ СЃРІРѕРµР№ С‚СѓРїРѕР№ С„РёР·РёРѕРЅРѕРјРёРё?
 	AI_StopProcessInfos (self);
 
 	B_Attack (self, other, AR_NONE, 1);	
@@ -154,15 +154,15 @@ func void DIA_Kurgan_KillDragon_spott ()
 
 func void DIA_Kurgan_KillDragon_orks ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //Как вы собираетесь пройти мимо орков?
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //Мы рассмотрим этот вопрос позже.
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //РљР°Рє РІС‹ СЃРѕР±РёСЂР°РµС‚РµСЃСЊ РїСЂРѕР№С‚Рё РјРёРјРѕ РѕСЂРєРѕРІ?
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //РњС‹ СЂР°СЃСЃРјРѕС‚СЂРёРј СЌС‚РѕС‚ РІРѕРїСЂРѕСЃ РїРѕР·Р¶Рµ.
 
 };
 
 func void DIA_Kurgan_KillDragon_weg ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //Мне бы очень хотелось посмотреть, как вы будете делать это, но, к сожалению, мне нужно идти.
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Возвращайся назад, через проход. В противном случае ты рискуешь лишиться руки или ноги.
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //РњРЅРµ Р±С‹ РѕС‡РµРЅСЊ С…РѕС‚РµР»РѕСЃСЊ РїРѕСЃРјРѕС‚СЂРµС‚СЊ, РєР°Рє РІС‹ Р±СѓРґРµС‚Рµ РґРµР»Р°С‚СЊ СЌС‚Рѕ, РЅРѕ, Рє СЃРѕР¶Р°Р»РµРЅРёСЋ, РјРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РЅР°Р·Р°Рґ, С‡РµСЂРµР· РїСЂРѕС…РѕРґ. Р’ РїСЂРѕС‚РёРІРЅРѕРј СЃР»СѓС‡Р°Рµ С‚С‹ СЂРёСЃРєСѓРµС€СЊ Р»РёС€РёС‚СЊСЃСЏ СЂСѓРєРё РёР»Рё РЅРѕРіРё.
 
 	AI_StopProcessInfos (self);
 };
@@ -177,7 +177,7 @@ instance DIA_Kurgan_SEENDRAGON		(C_INFO)
 	information	 = 	DIA_Kurgan_SEENDRAGON_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ты еще не видел дракона?";
+	description	 = 	"РўС‹ РµС‰Рµ РЅРµ РІРёРґРµР» РґСЂР°РєРѕРЅР°?";
 };
 
 func int DIA_Kurgan_SEENDRAGON_Condition ()
@@ -190,8 +190,8 @@ func int DIA_Kurgan_SEENDRAGON_Condition ()
 
 func void DIA_Kurgan_SEENDRAGON_Info ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //Ты еще не видел дракона?
-	AI_Output			(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //Пока нет. Но эта тварь не может скрываться вечно.
+	AI_Output			(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //РўС‹ РµС‰Рµ РЅРµ РІРёРґРµР» РґСЂР°РєРѕРЅР°?
+	AI_Output			(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //РџРѕРєР° РЅРµС‚. РќРѕ СЌС‚Р° С‚РІР°СЂСЊ РЅРµ РјРѕР¶РµС‚ СЃРєСЂС‹РІР°С‚СЊСЃСЏ РІРµС‡РЅРѕ.
 };
 
 //*********************************************************************
@@ -204,7 +204,7 @@ INSTANCE DIA_Kurgan_AllDragonsDead   (C_INFO)
 	condition   = DIA_Kurgan_AllDragonsDead_Condition;
 	information = DIA_Kurgan_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Драконы мертвы.";
+	description	= "Р”СЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.";
 				
 };
 
@@ -218,10 +218,10 @@ FUNC INT DIA_Kurgan_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Kurgan_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Kurgan_AllDragonsDead_15_00"); //Драконы мертвы.
-	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_01"); //Ха! И кто, интересно, убил их? Паладины?
-	AI_Output 	(other,self ,"DIA_Kurgan_AllDragonsDead_15_02"); //Я.
-	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_03"); //(смеется) Ха. Ты даже сам в это не веришь. Хватит нести чушь.
+	AI_Output	(other,self ,"DIA_Kurgan_AllDragonsDead_15_00"); //Р”СЂР°РєРѕРЅС‹ РјРµСЂС‚РІС‹.
+	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_01"); //РҐР°! Р РєС‚Рѕ, РёРЅС‚РµСЂРµСЃРЅРѕ, СѓР±РёР» РёС…? РџР°Р»Р°РґРёРЅС‹?
+	AI_Output 	(other,self ,"DIA_Kurgan_AllDragonsDead_15_02"); //РЇ.
+	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_03"); //(СЃРјРµРµС‚СЃСЏ) РҐР°. РўС‹ РґР°Р¶Рµ СЃР°Рј РІ СЌС‚Рѕ РЅРµ РІРµСЂРёС€СЊ. РҐРІР°С‚РёС‚ РЅРµСЃС‚Рё С‡СѓС€СЊ.
 };
 
 

@@ -50,20 +50,20 @@ func void DIA_Engardo_HALLO_Info ()
 	Akils_SLDStillthere = TRUE;
 	if (Chance == FALSE)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Эй, мужик, ты что, заблудился? Возвращайся на свое поле и дергай репу.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Р­Р№, РјСѓР¶РёРє, С‚С‹ С‡С‚Рѕ, Р·Р°Р±Р»СѓРґРёР»СЃСЏ? Р’РѕР·РІСЂР°С‰Р°Р№СЃСЏ РЅР° СЃРІРѕРµ РїРѕР»Рµ Рё РґРµСЂРіР°Р№ СЂРµРїСѓ.
 		Chance = 1;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 1) 
 	{	
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //Ты оказался не в том месте не в то время...
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //...так что, если хочешь жить, лучше топай отсюда. Понял?
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //РўС‹ РѕРєР°Р·Р°Р»СЃСЏ РЅРµ РІ С‚РѕРј РјРµСЃС‚Рµ РЅРµ РІ С‚Рѕ РІСЂРµРјСЏ...
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //...С‚Р°Рє С‡С‚Рѕ, РµСЃР»Рё С…РѕС‡РµС€СЊ Р¶РёС‚СЊ, Р»СѓС‡С€Рµ С‚РѕРїР°Р№ РѕС‚СЃСЋРґР°. РџРѕРЅСЏР»?
 		Chance = 2;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 2)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //У тебя что, со слухом не все в порядке, или тебе очень хочется умереть? (грубо) Ладно - все равно уже слишком поздно.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //РЈ С‚РµР±СЏ С‡С‚Рѕ, СЃРѕ СЃР»СѓС…РѕРј РЅРµ РІСЃРµ РІ РїРѕСЂСЏРґРєРµ, РёР»Рё С‚РµР±Рµ РѕС‡РµРЅСЊ С…РѕС‡РµС‚СЃСЏ СѓРјРµСЂРµС‚СЊ? (РіСЂСѓР±Рѕ) Р›Р°РґРЅРѕ - РІСЃРµ СЂР°РІРЅРѕ СѓР¶Рµ СЃР»РёС€РєРѕРј РїРѕР·РґРЅРѕ.
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_SuddenEnemyInferno, 1);

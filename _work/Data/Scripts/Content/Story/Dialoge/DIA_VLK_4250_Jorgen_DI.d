@@ -31,7 +31,7 @@ INSTANCE DIA_Jorgen_DI_Hallo   (C_INFO)
 	information = DIA_Jorgen_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Все в порядке?";
+	description = "Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?";
 
 };
 
@@ -45,15 +45,15 @@ FUNC INT DIA_Jorgen_DI_Hallo_Condition()
 
 FUNC VOID DIA_Jorgen_DI_Hallo_Info()
 {
-	AI_Output (other,self ,"DIA_Jorgen_DI_Hallo_15_00"); //Все в порядке?
+	AI_Output (other,self ,"DIA_Jorgen_DI_Hallo_15_00"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //Конечно - пока эти монстры не приближаются к нам...
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //РљРѕРЅРµС‡РЅРѕ - РїРѕРєР° СЌС‚Рё РјРѕРЅСЃС‚СЂС‹ РЅРµ РїСЂРёР±Р»РёР¶Р°СЋС‚СЃСЏ Рє РЅР°Рј...
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //Нам не пережить следующую атаку орков. Так что поторопись - нужно убираться отсюда.
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //РќР°Рј РЅРµ РїРµСЂРµР¶РёС‚СЊ СЃР»РµРґСѓСЋС‰СѓСЋ Р°С‚Р°РєСѓ РѕСЂРєРѕРІ. РўР°Рє С‡С‚Рѕ РїРѕС‚РѕСЂРѕРїРёСЃСЊ - РЅСѓР¶РЅРѕ СѓР±РёСЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°.
 		B_StartOtherRoutine	(Jorgen_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ instance DIA_Jorgen_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jorgen_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Врагу настал конец.";
+	description = 	"Р’СЂР°РіСѓ РЅР°СЃС‚Р°Р» РєРѕРЅРµС†.";
 
 };
 
@@ -83,18 +83,18 @@ func int DIA_Jorgen_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //Врагу настал конец.
-	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //Это хорошие новости. Надеюсь, нам больше ничего не нужно на этом острове?
+	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //Р’СЂР°РіСѓ РЅР°СЃС‚Р°Р» РєРѕРЅРµС†.
+	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //Р­С‚Рѕ С…РѕСЂРѕС€РёРµ РЅРѕРІРѕСЃС‚Рё. РќР°РґРµСЋСЃСЊ, РЅР°Рј Р±РѕР»СЊС€Рµ РЅРёС‡РµРіРѕ РЅРµ РЅСѓР¶РЅРѕ РЅР° СЌС‚РѕРј РѕСЃС‚СЂРѕРІРµ?
 
 	Info_ClearChoices	(DIA_Jorgen_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Подожди минутку.", DIA_Jorgen_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Все, мы можем отправляться в путь.", DIA_Jorgen_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ.", DIA_Jorgen_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Р’СЃРµ, РјС‹ РјРѕР¶РµРј РѕС‚РїСЂР°РІР»СЏС‚СЊСЃСЏ РІ РїСѓС‚СЊ.", DIA_Jorgen_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Jorgen_DI_UndeadDragonDead_moment_15_00"); //Подожди минутку. Я забыл сделать кое-что.
-	AI_Output			(self, other, "DIA_Jorgen_DI_UndeadDragonDead_moment_07_01"); //Хорошо. Но поторопись.
+	AI_Output			(other, self, "DIA_Jorgen_DI_UndeadDragonDead_moment_15_00"); //РџРѕРґРѕР¶РґРё РјРёРЅСѓС‚РєСѓ. РЇ Р·Р°Р±С‹Р» СЃРґРµР»Р°С‚СЊ РєРѕРµ-С‡С‚Рѕ.
+	AI_Output			(self, other, "DIA_Jorgen_DI_UndeadDragonDead_moment_07_01"); //РҐРѕСЂРѕС€Рѕ. РќРѕ РїРѕС‚РѕСЂРѕРїРёСЃСЊ.
 	AI_StopProcessInfos (self);
 };
 

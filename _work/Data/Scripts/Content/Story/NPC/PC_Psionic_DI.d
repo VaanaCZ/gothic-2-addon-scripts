@@ -8,7 +8,7 @@
 INSTANCE PC_Psionic_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Лестер";
+	name 		= "Р›РµСЃС‚РµСЂ";
 	guild 		= GIL_NONE;
 	id 			= 24;
 	voice 		= 13;

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_OrcShaman(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Орк-шаман";
+	name							=	"РћСЂРє-С€Р°РјР°РЅ";
 	guild							=	GIL_ORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_ORCSHAMAN;
 	voice							=	18;
@@ -89,7 +89,7 @@ INSTANCE OrcShaman_Sit (Mst_Default_OrcShaman)
 
 INSTANCE OrcShaman_Hosh_Pak (Mst_Default_OrcShaman)
 {
-	name							=	"Хош-Пак";
+	name							=	"РҐРѕС€-РџР°Рє";
 
 	// ------ visuals ------
 	B_SetVisuals_OrcShaman();
@@ -108,7 +108,7 @@ INSTANCE OrcShaman_Hosh_Pak (Mst_Default_OrcShaman)
 
 INSTANCE OrcShaman_Sit_CanyonLibraryKey (Mst_Default_OrcShaman)
 {
-	name							=	"Главарь орды";
+	name							=	"Р“Р»Р°РІР°СЂСЊ РѕСЂРґС‹";
 	// ------ visuals ------
 	B_SetVisuals_OrcShaman();
 	

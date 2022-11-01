@@ -1,7 +1,7 @@
 INSTANCE KDF_506_Neoras (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Неорас";
+	name 		= "РќРµРѕСЂР°СЃ";
 	guild 		= GIL_KDF;
 	id 			= 506;
 	voice 		= 1;

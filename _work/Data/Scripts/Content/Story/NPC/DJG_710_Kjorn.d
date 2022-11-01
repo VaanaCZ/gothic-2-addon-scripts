@@ -3,7 +3,7 @@
 instance DJG_710_Kjorn (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Êéîðí"; 
+	name 		= "ÐšÐ¹Ð¾Ñ€Ð½"; 
 	guild 		= GIL_DJG;
 	id 			= 710;
 	voice 		= 6;
@@ -32,8 +32,8 @@ instance DJG_710_Kjorn (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 65); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 65); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_PreStart_710;

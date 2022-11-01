@@ -20,7 +20,7 @@ FUNC VOID DIA_Pedro_DI_EXIT_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Verrдter
+//	Info VerrРґter
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pedro_DI_YOU		(C_INFO)
 {
@@ -29,7 +29,7 @@ instance DIA_Pedro_DI_YOU		(C_INFO)
 	condition	 = 	DIA_Pedro_DI_YOU_Condition;
 	information	 = 	DIA_Pedro_DI_YOU_Info;
 	
-	description	 = 	"Предатель!";
+	description	 = 	"РџСЂРµРґР°С‚РµР»СЊ!";
 	
 };
 func int DIA_Pedro_DI_YOU_Condition ()
@@ -39,49 +39,49 @@ func int DIA_Pedro_DI_YOU_Condition ()
 
 func void DIA_Pedro_DI_YOU_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //Предатель! Наконец-то я нашел тебя.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //РџСЂРµРґР°С‚РµР»СЊ! РќР°РєРѕРЅРµС†-С‚Рѕ СЏ РЅР°С€РµР» С‚РµР±СЏ.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_01"); //Ты можешь не надеяться, что я пощажу тебя, потому что я паладин.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_01"); //РўС‹ РјРѕР¶РµС€СЊ РЅРµ РЅР°РґРµСЏС‚СЊСЃСЏ, С‡С‚Рѕ СЏ РїРѕС‰Р°Р¶Сѓ С‚РµР±СЏ, РїРѕС‚РѕРјСѓ С‡С‚Рѕ СЏ РїР°Р»Р°РґРёРЅ.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Многие из нас, наемников, продали свою душу Белиару, и зачастую я чувствую вину, когда убиваю их. Но для тебя, подлая свинья, я сделаю исключение!
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //РњРЅРѕРіРёРµ РёР· РЅР°СЃ, РЅР°РµРјРЅРёРєРѕРІ, РїСЂРѕРґР°Р»Рё СЃРІРѕСЋ РґСѓС€Сѓ Р‘РµР»РёР°СЂСѓ, Рё Р·Р°С‡Р°СЃС‚СѓСЋ СЏ С‡СѓРІСЃС‚РІСѓСЋ РІРёРЅСѓ, РєРѕРіРґР° СѓР±РёРІР°СЋ РёС…. РќРѕ РґР»СЏ С‚РµР±СЏ, РїРѕРґР»Р°СЏ СЃРІРёРЅСЊСЏ, СЏ СЃРґРµР»Р°СЋ РёСЃРєР»СЋС‡РµРЅРёРµ!
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //Из всех бездушных ублюдков, что я встречал в своей жизни, ты худший. Ты позор для нашего ордена.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //РР· РІСЃРµС… Р±РµР·РґСѓС€РЅС‹С… СѓР±Р»СЋРґРєРѕРІ, С‡С‚Рѕ СЏ РІСЃС‚СЂРµС‡Р°Р» РІ СЃРІРѕРµР№ Р¶РёР·РЅРё, С‚С‹ С…СѓРґС€РёР№. РўС‹ РїРѕР·РѕСЂ РґР»СЏ РЅР°С€РµРіРѕ РѕСЂРґРµРЅР°.
 		};
 
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //Я должен убить тебя на месте.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //Подожди. Умоляю. На меня наложили заклинание. Я никогда бы не предал монастырь по своей воле.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //Ты не представляешь, через что я прошел за последние несколько дней. Они поместили этот голос в мою голову. Я не смог защититься от него.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //Полковник орков допрашивал меня несколько дней. Он постоянно бил меня. Пощади. Я не виновен. Ты должен поверить мне.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //РЇ РґРѕР»Р¶РµРЅ СѓР±РёС‚СЊ С‚РµР±СЏ РЅР° РјРµСЃС‚Рµ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //РџРѕРґРѕР¶РґРё. РЈРјРѕР»СЏСЋ. РќР° РјРµРЅСЏ РЅР°Р»РѕР¶РёР»Рё Р·Р°РєР»РёРЅР°РЅРёРµ. РЇ РЅРёРєРѕРіРґР° Р±С‹ РЅРµ РїСЂРµРґР°Р» РјРѕРЅР°СЃС‚С‹СЂСЊ РїРѕ СЃРІРѕРµР№ РІРѕР»Рµ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //РўС‹ РЅРµ РїСЂРµРґСЃС‚Р°РІР»СЏРµС€СЊ, С‡РµСЂРµР· С‡С‚Рѕ СЏ РїСЂРѕС€РµР» Р·Р° РїРѕСЃР»РµРґРЅРёРµ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№. РћРЅРё РїРѕРјРµСЃС‚РёР»Рё СЌС‚РѕС‚ РіРѕР»РѕСЃ РІ РјРѕСЋ РіРѕР»РѕРІСѓ. РЇ РЅРµ СЃРјРѕРі Р·Р°С‰РёС‚РёС‚СЊСЃСЏ РѕС‚ РЅРµРіРѕ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //РџРѕР»РєРѕРІРЅРёРє РѕСЂРєРѕРІ РґРѕРїСЂР°С€РёРІР°Р» РјРµРЅСЏ РЅРµСЃРєРѕР»СЊРєРѕ РґРЅРµР№. РћРЅ РїРѕСЃС‚РѕСЏРЅРЅРѕ Р±РёР» РјРµРЅСЏ. РџРѕС‰Р°РґРё. РЇ РЅРµ РІРёРЅРѕРІРµРЅ. РўС‹ РґРѕР»Р¶РµРЅ РїРѕРІРµСЂРёС‚СЊ РјРЅРµ.
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Рассказывай, что ты знаешь.", DIA_Pedro_DI_YOU_verschon );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "И слышать ничего не хочу. Я убью тебя.", DIA_Pedro_DI_YOU_tot );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Назови хотя бы одну причину, по которой я должен поверить тебе.", DIA_Pedro_DI_YOU_grund );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Р Р°СЃСЃРєР°Р·С‹РІР°Р№, С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ.", DIA_Pedro_DI_YOU_verschon );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Р СЃР»С‹С€Р°С‚СЊ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡Сѓ. РЇ СѓР±СЊСЋ С‚РµР±СЏ.", DIA_Pedro_DI_YOU_tot );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "РќР°Р·РѕРІРё С…РѕС‚СЏ Р±С‹ РѕРґРЅСѓ РїСЂРёС‡РёРЅСѓ, РїРѕ РєРѕС‚РѕСЂРѕР№ СЏ РґРѕР»Р¶РµРЅ РїРѕРІРµСЂРёС‚СЊ С‚РµР±Рµ.", DIA_Pedro_DI_YOU_grund );
 	if (MIS_Gorax_KillPedro == LOG_RUNNING)
 	{
-		Info_AddChoice	(DIA_Pedro_DI_YOU, "Серпентес дал мне приказ убить тебя.", DIA_Pedro_DI_YOU_Serpentes );
+		Info_AddChoice	(DIA_Pedro_DI_YOU, "РЎРµСЂРїРµРЅС‚РµСЃ РґР°Р» РјРЅРµ РїСЂРёРєР°Р· СѓР±РёС‚СЊ С‚РµР±СЏ.", DIA_Pedro_DI_YOU_Serpentes );
 	};
 };
 
 func void DIA_Pedro_DI_YOU_grund ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //Назови хотя бы одну причину, по которой я должен поверить тебе.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(умоляюще) Оставь меня в живых. Я могу рассказать кое-что, что поможет тебе выбраться отсюда. Ты должен выслушать меня.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //РќР°Р·РѕРІРё С…РѕС‚СЏ Р±С‹ РѕРґРЅСѓ РїСЂРёС‡РёРЅСѓ, РїРѕ РєРѕС‚РѕСЂРѕР№ СЏ РґРѕР»Р¶РµРЅ РїРѕРІРµСЂРёС‚СЊ С‚РµР±Рµ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(СѓРјРѕР»СЏСЋС‰Рµ) РћСЃС‚Р°РІСЊ РјРµРЅСЏ РІ Р¶РёРІС‹С…. РЇ РјРѕРіСѓ СЂР°СЃСЃРєР°Р·Р°С‚СЊ РєРѕРµ-С‡С‚Рѕ, С‡С‚Рѕ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ РІС‹Р±СЂР°С‚СЊСЃСЏ РѕС‚СЃСЋРґР°. РўС‹ РґРѕР»Р¶РµРЅ РІС‹СЃР»СѓС€Р°С‚СЊ РјРµРЅСЏ.
 
 };
 var int PedroDI_Flee;
 func void DIA_Pedro_DI_YOU_tot ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_tot_15_00"); //И слышать ничего не хочу. Я убью тебя.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_tot_09_01"); //Умоляю всеми богами...
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_tot_15_00"); //Р СЃР»С‹С€Р°С‚СЊ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡Сѓ. РЇ СѓР±СЊСЋ С‚РµР±СЏ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_tot_09_01"); //РЈРјРѕР»СЏСЋ РІСЃРµРјРё Р±РѕРіР°РјРё...
 
 	AI_StopProcessInfos (self);
 
@@ -92,30 +92,30 @@ func void DIA_Pedro_DI_YOU_tot ()
 
 func void DIA_Pedro_DI_YOU_Serpentes ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Серпентес дал мне приказ убить тебя. Это вопрос принципа. И я сделаю то, что мне приказано.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(умоляюще) Пожалуйста, нет. Ты не можешь сделать это. Я могу очень пригодиться тебе. Ты увидишь это.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //РЎРµСЂРїРµРЅС‚РµСЃ РґР°Р» РјРЅРµ РїСЂРёРєР°Р· СѓР±РёС‚СЊ С‚РµР±СЏ. Р­С‚Рѕ РІРѕРїСЂРѕСЃ РїСЂРёРЅС†РёРїР°. Р СЏ СЃРґРµР»Р°СЋ С‚Рѕ, С‡С‚Рѕ РјРЅРµ РїСЂРёРєР°Р·Р°РЅРѕ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(СѓРјРѕР»СЏСЋС‰Рµ) РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµС‚. РўС‹ РЅРµ РјРѕР¶РµС€СЊ СЃРґРµР»Р°С‚СЊ СЌС‚Рѕ. РЇ РјРѕРіСѓ РѕС‡РµРЅСЊ РїСЂРёРіРѕРґРёС‚СЊСЃСЏ С‚РµР±Рµ. РўС‹ СѓРІРёРґРёС€СЊ СЌС‚Рѕ.
 
 	B_GivePlayerXP (XP_Pedro_SerpentesMission);
-	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heiЯen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
+	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heiРЇen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
 
 };
 
 func void DIA_Pedro_DI_YOU_verschon ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //Рассказывай, что ты знаешь.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(облегченно) Да, конечно. Я расскажу тебе все, что ты хочешь знать. Но при одном условии. Ты должен забрать меня с этого проклятого острова, слышишь?
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //Р Р°СЃСЃРєР°Р·С‹РІР°Р№, С‡С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(РѕР±Р»РµРіС‡РµРЅРЅРѕ) Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЇ СЂР°СЃСЃРєР°Р¶Сѓ С‚РµР±Рµ РІСЃРµ, С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ Р·РЅР°С‚СЊ. РќРѕ РїСЂРё РѕРґРЅРѕРј СѓСЃР»РѕРІРёРё. РўС‹ РґРѕР»Р¶РµРЅ Р·Р°Р±СЂР°С‚СЊ РјРµРЅСЏ СЃ СЌС‚РѕРіРѕ РїСЂРѕРєР»СЏС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°, СЃР»С‹С€РёС€СЊ?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "И слышать ничего не хочу. Я убью тебя.", DIA_Pedro_DI_YOU_tot );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Хорошо. Иди за мной, я отведу тебя на корабль.", DIA_Pedro_DI_YOU_FollowShip );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Р СЃР»С‹С€Р°С‚СЊ РЅРёС‡РµРіРѕ РЅРµ С…РѕС‡Сѓ. РЇ СѓР±СЊСЋ С‚РµР±СЏ.", DIA_Pedro_DI_YOU_tot );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "РҐРѕСЂРѕС€Рѕ. РРґРё Р·Р° РјРЅРѕР№, СЏ РѕС‚РІРµРґСѓ С‚РµР±СЏ РЅР° РєРѕСЂР°Р±Р»СЊ.", DIA_Pedro_DI_YOU_FollowShip );
 
 };
 
 var int MIS_Pedro_DI_FollowShip;
 func void DIA_Pedro_DI_YOU_FollowShip ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_FollowShip_15_00"); //Хорошо. Иди за мной, я отведу тебя на корабль.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_FollowShip_09_01"); //Спасибо. Ты не пожалеешь об этом.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_FollowShip_15_00"); //РҐРѕСЂРѕС€Рѕ. РРґРё Р·Р° РјРЅРѕР№, СЏ РѕС‚РІРµРґСѓ С‚РµР±СЏ РЅР° РєРѕСЂР°Р±Р»СЊ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_FollowShip_09_01"); //РЎРїР°СЃРёР±Рѕ. РўС‹ РЅРµ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"FollowShip");
@@ -134,7 +134,7 @@ instance DIA_Pedro_DI_ArrivedAtShip		(C_INFO)
 	condition	 = 	DIA_Pedro_DI_ArrivedAtShip_Condition;
 	information	 = 	DIA_Pedro_DI_ArrivedAtShip_Info;
 
-	description	= "Пришли!";	
+	description	= "РџСЂРёС€Р»Рё!";	
 };
 
 func int DIA_Pedro_DI_ArrivedAtShip_Condition ()
@@ -148,62 +148,62 @@ func int DIA_Pedro_DI_ArrivedAtShip_Condition ()
 
 func void DIA_Pedro_DI_ArrivedAtShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_00"); //Пришли!
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //Потрясающий корабль у тебя. Ты настоящий генерал.
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //Хватит болтать. Рассказывай, что я должен узнать?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Да, конечно. С чего мне начать?
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_00"); //РџСЂРёС€Р»Рё!
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //РџРѕС‚СЂСЏСЃР°СЋС‰РёР№ РєРѕСЂР°Р±Р»СЊ Сѓ С‚РµР±СЏ. РўС‹ РЅР°СЃС‚РѕСЏС‰РёР№ РіРµРЅРµСЂР°Р».
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //РҐРІР°С‚РёС‚ Р±РѕР»С‚Р°С‚СЊ. Р Р°СЃСЃРєР°Р·С‹РІР°Р№, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ СѓР·РЅР°С‚СЊ?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Р”Р°, РєРѕРЅРµС‡РЅРѕ. РЎ С‡РµРіРѕ РјРЅРµ РЅР°С‡Р°С‚СЊ?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_ArrivedAtShip);
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Я услышал достаточно.", DIA_Pedro_DI_ArrivedAtShip_Back );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Как мне попасть внутрь этого острова?", DIA_Pedro_DI_ArrivedAtShip_Innere );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "А какие еще монстры населяют этот остров?", DIA_Pedro_DI_ArrivedAtShip_Monster );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Что там насчет этого полковника орков?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "РЇ СѓСЃР»С‹С€Р°Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ.", DIA_Pedro_DI_ArrivedAtShip_Back );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІРЅСѓС‚СЂСЊ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°?", DIA_Pedro_DI_ArrivedAtShip_Innere );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Рђ РєР°РєРёРµ РµС‰Рµ РјРѕРЅСЃС‚СЂС‹ РЅР°СЃРµР»СЏСЋС‚ СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ?", DIA_Pedro_DI_ArrivedAtShip_Monster );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Р§С‚Рѕ С‚Р°Рј РЅР°СЃС‡РµС‚ СЌС‚РѕРіРѕ РїРѕР»РєРѕРІРЅРёРєР° РѕСЂРєРѕРІ?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
 
 
 };
 func void DIA_Pedro_DI_ArrivedAtShip_OrkOberst ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //Что там насчет этого полковника орков?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //Он отнял у меня последний лучик надежды когда-либо увидеть мою родную землю.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //С тех пор, как я прибыл сюда, он допрашивал меня о стратегическом размещении паладинов на Хоринисе.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //Конечно, я не мог рассказать ему много. Откуда мне знать об этом, черт возьми? Я послушник Огня.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //Р§С‚Рѕ С‚Р°Рј РЅР°СЃС‡РµС‚ СЌС‚РѕРіРѕ РїРѕР»РєРѕРІРЅРёРєР° РѕСЂРєРѕРІ?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //РћРЅ РѕС‚РЅСЏР» Сѓ РјРµРЅСЏ РїРѕСЃР»РµРґРЅРёР№ Р»СѓС‡РёРє РЅР°РґРµР¶РґС‹ РєРѕРіРґР°-Р»РёР±Рѕ СѓРІРёРґРµС‚СЊ РјРѕСЋ СЂРѕРґРЅСѓСЋ Р·РµРјР»СЋ.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //РЎ С‚РµС… РїРѕСЂ, РєР°Рє СЏ РїСЂРёР±С‹Р» СЃСЋРґР°, РѕРЅ РґРѕРїСЂР°С€РёРІР°Р» РјРµРЅСЏ Рѕ СЃС‚СЂР°С‚РµРіРёС‡РµСЃРєРѕРј СЂР°Р·РјРµС‰РµРЅРёРё РїР°Р»Р°РґРёРЅРѕРІ РЅР° РҐРѕСЂРёРЅРёСЃРµ.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //РљРѕРЅРµС‡РЅРѕ, СЏ РЅРµ РјРѕРі СЂР°СЃСЃРєР°Р·Р°С‚СЊ РµРјСѓ РјРЅРѕРіРѕ. РћС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ РѕР± СЌС‚РѕРј, С‡РµСЂС‚ РІРѕР·СЊРјРё? РЇ РїРѕСЃР»СѓС€РЅРёРє РћРіРЅСЏ.
 	
 	if ((Npc_IsDead(OrkElite_AntiPaladinOrkOberst_DI)))
 	{
-		Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Полковник орков мертв.", DIA_Pedro_DI_ArrivedAtShip_OberstTot );
+		Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "РџРѕР»РєРѕРІРЅРёРє РѕСЂРєРѕРІ РјРµСЂС‚РІ.", DIA_Pedro_DI_ArrivedAtShip_OberstTot );
 	};
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Monster ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //А какие еще монстры населяют этот остров?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //Днем можно часто увидеть людей-ящеров, идущих к берегу. Обычно они несут с собой очень большие яйца.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //Мне было плохо видно из моей камеры, но я думаю, они готовятся покинуть остров.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //Рђ РєР°РєРёРµ РµС‰Рµ РјРѕРЅСЃС‚СЂС‹ РЅР°СЃРµР»СЏСЋС‚ СЌС‚РѕС‚ РѕСЃС‚СЂРѕРІ?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //Р”РЅРµРј РјРѕР¶РЅРѕ С‡Р°СЃС‚Рѕ СѓРІРёРґРµС‚СЊ Р»СЋРґРµР№-СЏС‰РµСЂРѕРІ, РёРґСѓС‰РёС… Рє Р±РµСЂРµРіСѓ. РћР±С‹С‡РЅРѕ РѕРЅРё РЅРµСЃСѓС‚ СЃ СЃРѕР±РѕР№ РѕС‡РµРЅСЊ Р±РѕР»СЊС€РёРµ СЏР№С†Р°.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //РњРЅРµ Р±С‹Р»Рѕ РїР»РѕС…Рѕ РІРёРґРЅРѕ РёР· РјРѕРµР№ РєР°РјРµСЂС‹, РЅРѕ СЏ РґСѓРјР°СЋ, РѕРЅРё РіРѕС‚РѕРІСЏС‚СЃСЏ РїРѕРєРёРЅСѓС‚СЊ РѕСЃС‚СЂРѕРІ.
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Innere ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //Как мне попасть внутрь этого острова?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //В тронном зале полковника орков есть секретный проход.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Меня тащили через него каждый раз, когда хотели допросить. Я видел, как он работает.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Один из шаманов запускал механизм, поворачивая факелы, висящие на стенах этого холла.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //М-м-м. Мне кажется, он сначала поворачивал левый факел, а затем правый, но я точно не помню.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //И тогда внезапно открывался секретный проход, ведущий глубоко в горы.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //Где кончается этот проход, я не знаю.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //РљР°Рє РјРЅРµ РїРѕРїР°СЃС‚СЊ РІРЅСѓС‚СЂСЊ СЌС‚РѕРіРѕ РѕСЃС‚СЂРѕРІР°?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //Р’ С‚СЂРѕРЅРЅРѕРј Р·Р°Р»Рµ РїРѕР»РєРѕРІРЅРёРєР° РѕСЂРєРѕРІ РµСЃС‚СЊ СЃРµРєСЂРµС‚РЅС‹Р№ РїСЂРѕС…РѕРґ.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //РњРµРЅСЏ С‚Р°С‰РёР»Рё С‡РµСЂРµР· РЅРµРіРѕ РєР°Р¶РґС‹Р№ СЂР°Р·, РєРѕРіРґР° С…РѕС‚РµР»Рё РґРѕРїСЂРѕСЃРёС‚СЊ. РЇ РІРёРґРµР», РєР°Рє РѕРЅ СЂР°Р±РѕС‚Р°РµС‚.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //РћРґРёРЅ РёР· С€Р°РјР°РЅРѕРІ Р·Р°РїСѓСЃРєР°Р» РјРµС…Р°РЅРёР·Рј, РїРѕРІРѕСЂР°С‡РёРІР°СЏ С„Р°РєРµР»С‹, РІРёСЃСЏС‰РёРµ РЅР° СЃС‚РµРЅР°С… СЌС‚РѕРіРѕ С…РѕР»Р»Р°.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Рњ-Рј-Рј. РњРЅРµ РєР°Р¶РµС‚СЃСЏ, РѕРЅ СЃРЅР°С‡Р°Р»Р° РїРѕРІРѕСЂР°С‡РёРІР°Р» Р»РµРІС‹Р№ С„Р°РєРµР», Р° Р·Р°С‚РµРј РїСЂР°РІС‹Р№, РЅРѕ СЏ С‚РѕС‡РЅРѕ РЅРµ РїРѕРјРЅСЋ.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //Р С‚РѕРіРґР° РІРЅРµР·Р°РїРЅРѕ РѕС‚РєСЂС‹РІР°Р»СЃСЏ СЃРµРєСЂРµС‚РЅС‹Р№ РїСЂРѕС…РѕРґ, РІРµРґСѓС‰РёР№ РіР»СѓР±РѕРєРѕ РІ РіРѕСЂС‹.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //Р“РґРµ РєРѕРЅС‡Р°РµС‚СЃСЏ СЌС‚РѕС‚ РїСЂРѕС…РѕРґ, СЏ РЅРµ Р·РЅР°СЋ.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_OberstTot ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_15_00"); //Полковник орков мертв.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //Мертв? Хвала Инносу. Я никогда не забуду его ужасное лицо.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_15_00"); //РџРѕР»РєРѕРІРЅРёРє РѕСЂРєРѕРІ РјРµСЂС‚РІ.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //РњРµСЂС‚РІ? РҐРІР°Р»Р° РРЅРЅРѕСЃСѓ. РЇ РЅРёРєРѕРіРґР° РЅРµ Р·Р°Р±СѓРґСѓ РµРіРѕ СѓР¶Р°СЃРЅРѕРµ Р»РёС†Рѕ.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Back ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //Я услышал достаточно. Иди, найди себе место на моем корабле. А мне еще кое-что нужно сделать.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //Да пребудет с тобой сила Инноса. Я буду молиться за тебя.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //РЇ СѓСЃР»С‹С€Р°Р» РґРѕСЃС‚Р°С‚РѕС‡РЅРѕ. РРґРё, РЅР°Р№РґРё СЃРµР±Рµ РјРµСЃС‚Рѕ РЅР° РјРѕРµРј РєРѕСЂР°Р±Р»Рµ. Рђ РјРЅРµ РµС‰Рµ РєРѕРµ-С‡С‚Рѕ РЅСѓР¶РЅРѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //Р”Р° РїСЂРµР±СѓРґРµС‚ СЃ С‚РѕР±РѕР№ СЃРёР»Р° РРЅРЅРѕСЃР°. РЇ Р±СѓРґСѓ РјРѕР»РёС‚СЊСЃСЏ Р·Р° С‚РµР±СЏ.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ship");
@@ -222,7 +222,7 @@ instance DIA_Pedro_DI_PERM		(C_INFO)
 	information	 = 	DIA_Pedro_DI_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Устал?";
+	description	 = 	"РЈСЃС‚Р°Р»?";
 };
 var int PedroDI_TalkNomore;
 func int DIA_Pedro_DI_PERM_Condition ()
@@ -235,23 +235,23 @@ func int DIA_Pedro_DI_PERM_Condition ()
 };
 func void DIA_Pedro_DI_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //Устал?
+	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //РЈСЃС‚Р°Р»?
 
 	if (Npc_GetDistToWP(self,"SHIP_DECK_05")<1000) 
 	{	
 		if (PedroDI_Flee == LOG_RUNNING)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_01"); //Хочешь, я принесу тебе подушку?
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_02"); //Пощади меня, пожалуйста. Я буду сидеть здесь очень тихо и не издам ни звука.
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_03"); //М-м-м.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_01"); //РҐРѕС‡РµС€СЊ, СЏ РїСЂРёРЅРµСЃСѓ С‚РµР±Рµ РїРѕРґСѓС€РєСѓ?
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_02"); //РџРѕС‰Р°РґРё РјРµРЅСЏ, РїРѕР¶Р°Р»СѓР№СЃС‚Р°. РЇ Р±СѓРґСѓ СЃРёРґРµС‚СЊ Р·РґРµСЃСЊ РѕС‡РµРЅСЊ С‚РёС…Рѕ Рё РЅРµ РёР·РґР°Рј РЅРё Р·РІСѓРєР°.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_03"); //Рњ-Рј-Рј.
 			B_GivePlayerXP (XP_Ambient);
 			PedroDI_Flee = LOG_SUCCESS;
 		}
 		else if (Npc_IsDead(Dragon_Undead))
 		{
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //Я полностью измотан.
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //Поспи немного. Скоро мы опять выйдем в море.
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //Спасибо. Я уже чуть не падаю. Спокойной ночи.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //РЇ РїРѕР»РЅРѕСЃС‚СЊСЋ РёР·РјРѕС‚Р°РЅ.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //РџРѕСЃРїРё РЅРµРјРЅРѕРіРѕ. РЎРєРѕСЂРѕ РјС‹ РѕРїСЏС‚СЊ РІС‹Р№РґРµРј РІ РјРѕСЂРµ.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //РЎРїР°СЃРёР±Рѕ. РЇ СѓР¶Рµ С‡СѓС‚СЊ РЅРµ РїР°РґР°СЋ. РЎРїРѕРєРѕР№РЅРѕР№ РЅРѕС‡Рё.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"SleepShip");
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -259,13 +259,13 @@ func void DIA_Pedro_DI_PERM_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_07"); //Все в порядке. Спасибо.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_07"); //Р’СЃРµ РІ РїРѕСЂСЏРґРєРµ. РЎРїР°СЃРёР±Рѕ.
 			AI_StopProcessInfos (self);
 		};
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_08"); //Пожалуйста, не убивай меня!
+		AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_08"); //РџРѕР¶Р°Р»СѓР№СЃС‚Р°, РЅРµ СѓР±РёРІР°Р№ РјРµРЅСЏ!
 		AI_StopProcessInfos (self);
 	};
 };

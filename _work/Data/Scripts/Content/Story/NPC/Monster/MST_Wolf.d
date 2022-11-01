@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Wolf(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Волк";
+	name							=	"Р’РѕР»Рє";
 	guild							=	GIL_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WOLF;
 	level							=	6;
@@ -85,7 +85,7 @@ INSTANCE Wolf	(Mst_Default_Wolf)
 
 INSTANCE Summoned_Wolf	(Mst_Default_Wolf)
 {
-	name							=	"Вызванный волк";
+	name							=	"Р’С‹Р·РІР°РЅРЅС‹Р№ РІРѕР»Рє";
 	guild							=	GIL_SUMMONED_WOLF;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_WOLF;
 	level							=	0; //10
@@ -121,7 +121,7 @@ INSTANCE Summoned_Wolf	(Mst_Default_Wolf)
 INSTANCE YWolf	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"Молодой волк";
+	name							=	"РњРѕР»РѕРґРѕР№ РІРѕР»Рє";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	10;
 	attribute	[ATR_DEXTERITY]		=	10;
@@ -146,13 +146,13 @@ INSTANCE YWolf	(Mst_Default_Wolf)
 
 
 //************
-//	Missions Wцlfe fьr Pepe: YWolf    	
+//	Missions WС†lfe fСЊr Pepe: YWolf    	
 //************
 
 
 INSTANCE PEPES_YWolf1	(Mst_Default_Wolf)
 {
-	name							=	"Молодой волк";
+	name							=	"РњРѕР»РѕРґРѕР№ РІРѕР»Рє";
 	level							=	3;
 	
 	//----- Attribute ----
@@ -177,7 +177,7 @@ INSTANCE PEPES_YWolf1	(Mst_Default_Wolf)
 INSTANCE PEPES_YWolf2	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"Молодой волк";
+	name							=	"РњРѕР»РѕРґРѕР№ РІРѕР»Рє";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	15;
@@ -200,7 +200,7 @@ INSTANCE PEPES_YWolf2	(Mst_Default_Wolf)
 INSTANCE PEPES_YWolf3	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"Молодой волк";
+	name							=	"РњРѕР»РѕРґРѕР№ РІРѕР»Рє";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	15;
@@ -223,7 +223,7 @@ INSTANCE PEPES_YWolf3	(Mst_Default_Wolf)
 INSTANCE PEPES_YWolf4	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"Молодой волк";
+	name							=	"РњРѕР»РѕРґРѕР№ РІРѕР»Рє";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	15;

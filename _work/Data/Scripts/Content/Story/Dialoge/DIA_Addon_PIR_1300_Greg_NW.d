@@ -53,29 +53,29 @@ func int DIA_Addon_Greg_NW_Hallo_Condition ()
 func void DIA_Addon_Greg_NW_Hallo_Info ()
 {
 
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_00"); //Пст! Эй, ты! Подойди-ка сюда.
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_Hallo_15_01"); //В чем дело?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_02"); //Ты идешь в город? У тебя там дела?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_03"); //Послушай, ты выглядишь сообразительным парнем. Уверен, ты в жизни далеко пойдешь.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_04"); //Ты не дурак, я вижу это по твоим глазам.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_05"); //Наверняка ты хочешь заработать пригоршню золотых монет, не так ли?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_00"); //РџСЃС‚! Р­Р№, С‚С‹! РџРѕРґРѕР№РґРё-РєР° СЃСЋРґР°.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_Hallo_15_01"); //Р’ С‡РµРј РґРµР»Рѕ?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_02"); //РўС‹ РёРґРµС€СЊ РІ РіРѕСЂРѕРґ? РЈ С‚РµР±СЏ С‚Р°Рј РґРµР»Р°?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_03"); //РџРѕСЃР»СѓС€Р°Р№, С‚С‹ РІС‹РіР»СЏРґРёС€СЊ СЃРѕРѕР±СЂР°Р·РёС‚РµР»СЊРЅС‹Рј РїР°СЂРЅРµРј. РЈРІРµСЂРµРЅ, С‚С‹ РІ Р¶РёР·РЅРё РґР°Р»РµРєРѕ РїРѕР№РґРµС€СЊ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_04"); //РўС‹ РЅРµ РґСѓСЂР°Рє, СЏ РІРёР¶Сѓ СЌС‚Рѕ РїРѕ С‚РІРѕРёРј РіР»Р°Р·Р°Рј.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_05"); //РќР°РІРµСЂРЅСЏРєР° С‚С‹ С…РѕС‡РµС€СЊ Р·Р°СЂР°Р±РѕС‚Р°С‚СЊ РїСЂРёРіРѕСЂС€РЅСЋ Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚, РЅРµ С‚Р°Рє Р»Рё?
 
 	PlayerTalkedToGregNW	= TRUE;
 	SC_MeetsGregTime = 1; //Joly: erste Mal getroffen.
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Hallo);
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Я должен идти.", DIA_Addon_Greg_NW_Hallo_weg );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Довольно болтать. Говори, чего ты хочешь.", DIA_Addon_Greg_NW_Hallo_schleim );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Не похоже, чтобы у тебя водились деньги.", DIA_Addon_Greg_NW_Hallo_vorsicht );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Ты от кого-то прячешься?", DIA_Addon_Greg_NW_Hallo_hide );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Почему бы и нет?", DIA_Addon_Greg_NW_Hallo_ja );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "РЇ РґРѕР»Р¶РµРЅ РёРґС‚Рё.", DIA_Addon_Greg_NW_Hallo_weg );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Р”РѕРІРѕР»СЊРЅРѕ Р±РѕР»С‚Р°С‚СЊ. Р“РѕРІРѕСЂРё, С‡РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ.", DIA_Addon_Greg_NW_Hallo_schleim );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "РќРµ РїРѕС…РѕР¶Рµ, С‡С‚РѕР±С‹ Сѓ С‚РµР±СЏ РІРѕРґРёР»РёСЃСЊ РґРµРЅСЊРіРё.", DIA_Addon_Greg_NW_Hallo_vorsicht );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "РўС‹ РѕС‚ РєРѕРіРѕ-С‚Рѕ РїСЂСЏС‡РµС€СЊСЃСЏ?", DIA_Addon_Greg_NW_Hallo_hide );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚?", DIA_Addon_Greg_NW_Hallo_ja );
 
 };
 
 func void DIA_Addon_Greg_NW_Hallo_weg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_weg_15_00"); //Мне надо идти.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_weg_01_01"); //Итак, ты отказываешься мне помогать, верно? Хорошо, я это запомню. Мы еще встретимся!
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_weg_15_00"); //РњРЅРµ РЅР°РґРѕ РёРґС‚Рё.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_weg_01_01"); //РС‚Р°Рє, С‚С‹ РѕС‚РєР°Р·С‹РІР°РµС€СЊСЃСЏ РјРЅРµ РїРѕРјРѕРіР°С‚СЊ, РІРµСЂРЅРѕ? РҐРѕСЂРѕС€Рѕ, СЏ СЌС‚Рѕ Р·Р°РїРѕРјРЅСЋ. РњС‹ РµС‰Рµ РІСЃС‚СЂРµС‚РёРјСЃСЏ!
 
 	AI_StopProcessInfos (self);
 	MIS_Addon_Greg_BringMeToTheCity = LOG_FAILED;
@@ -83,44 +83,44 @@ func void DIA_Addon_Greg_NW_Hallo_weg ()
 
 func void DIA_Addon_Greg_NW_Hallo_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_ja_15_00"); //Почему бы и нет?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_01"); //Ты должен простить невежественного старого моряка! Я чужой в ваших краях и не знаю местных законов.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_02"); //Поэтому мне пришлось на своей шкуре испытать, как стражники встречают в этом городе простых путников.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_03"); //И вот теперь мне нужно попасть в город, а я не знаю, как это сделать.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_04"); //В городе у меня чрезвычайно важное дело. Мой клиент не потерпит задержки даже на день!
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_05"); //Ты же поможешь мне пройти мимо стражников, правда?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_ja_15_00"); //РџРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_01"); //РўС‹ РґРѕР»Р¶РµРЅ РїСЂРѕСЃС‚РёС‚СЊ РЅРµРІРµР¶РµСЃС‚РІРµРЅРЅРѕРіРѕ СЃС‚Р°СЂРѕРіРѕ РјРѕСЂСЏРєР°! РЇ С‡СѓР¶РѕР№ РІ РІР°С€РёС… РєСЂР°СЏС… Рё РЅРµ Р·РЅР°СЋ РјРµСЃС‚РЅС‹С… Р·Р°РєРѕРЅРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_02"); //РџРѕСЌС‚РѕРјСѓ РјРЅРµ РїСЂРёС€Р»РѕСЃСЊ РЅР° СЃРІРѕРµР№ С€РєСѓСЂРµ РёСЃРїС‹С‚Р°С‚СЊ, РєР°Рє СЃС‚СЂР°Р¶РЅРёРєРё РІСЃС‚СЂРµС‡Р°СЋС‚ РІ СЌС‚РѕРј РіРѕСЂРѕРґРµ РїСЂРѕСЃС‚С‹С… РїСѓС‚РЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_03"); //Р РІРѕС‚ С‚РµРїРµСЂСЊ РјРЅРµ РЅСѓР¶РЅРѕ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ, Р° СЏ РЅРµ Р·РЅР°СЋ, РєР°Рє СЌС‚Рѕ СЃРґРµР»Р°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_04"); //Р’ РіРѕСЂРѕРґРµ Сѓ РјРµРЅСЏ С‡СЂРµР·РІС‹С‡Р°Р№РЅРѕ РІР°Р¶РЅРѕРµ РґРµР»Рѕ. РњРѕР№ РєР»РёРµРЅС‚ РЅРµ РїРѕС‚РµСЂРїРёС‚ Р·Р°РґРµСЂР¶РєРё РґР°Р¶Рµ РЅР° РґРµРЅСЊ!
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_05"); //РўС‹ Р¶Рµ РїРѕРјРѕР¶РµС€СЊ РјРЅРµ РїСЂРѕР№С‚Рё РјРёРјРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРІ, РїСЂР°РІРґР°?
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Hallo);
 	
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Странный человек с повязкой на глазу хочет, чтобы я помог ему попасть в город. Я должен найти для него способ пройти мимо стражников."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"РЎС‚СЂР°РЅРЅС‹Р№ С‡РµР»РѕРІРµРє СЃ РїРѕРІСЏР·РєРѕР№ РЅР° РіР»Р°Р·Сѓ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РїРѕРјРѕРі РµРјСѓ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РґР»СЏ РЅРµРіРѕ СЃРїРѕСЃРѕР± РїСЂРѕР№С‚Рё РјРёРјРѕ СЃС‚СЂР°Р¶РЅРёРєРѕРІ."); 
 	
 	MIS_Addon_Greg_BringMeToTheCity = LOG_RUNNING;
 };
 
 func void DIA_Addon_Greg_NW_Hallo_vorsicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_vorsicht_15_00"); //Не похоже, чтобы у тебя водились деньги.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_01"); //Ну, конечно, я не вращаюсь, подобно тебе, в высших кругах общества.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_02"); //Но ты же не откажешься увеличить свое состояние на небольшую сумму, которую я мог бы тебе дать?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_03"); //Ну, что скажешь? Я могу на тебя рассчитывать?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_vorsicht_15_00"); //РќРµ РїРѕС…РѕР¶Рµ, С‡С‚РѕР±С‹ Сѓ С‚РµР±СЏ РІРѕРґРёР»РёСЃСЊ РґРµРЅСЊРіРё.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_01"); //РќСѓ, РєРѕРЅРµС‡РЅРѕ, СЏ РЅРµ РІСЂР°С‰Р°СЋСЃСЊ, РїРѕРґРѕР±РЅРѕ С‚РµР±Рµ, РІ РІС‹СЃС€РёС… РєСЂСѓРіР°С… РѕР±С‰РµСЃС‚РІР°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_02"); //РќРѕ С‚С‹ Р¶Рµ РЅРµ РѕС‚РєР°Р¶РµС€СЊСЃСЏ СѓРІРµР»РёС‡РёС‚СЊ СЃРІРѕРµ СЃРѕСЃС‚РѕСЏРЅРёРµ РЅР° РЅРµР±РѕР»СЊС€СѓСЋ СЃСѓРјРјСѓ, РєРѕС‚РѕСЂСѓСЋ СЏ РјРѕРі Р±С‹ С‚РµР±Рµ РґР°С‚СЊ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_03"); //РќСѓ, С‡С‚Рѕ СЃРєР°Р¶РµС€СЊ? РЇ РјРѕРіСѓ РЅР° С‚РµР±СЏ СЂР°СЃСЃС‡РёС‚С‹РІР°С‚СЊ?
 
 };
 
 func void DIA_Addon_Greg_NW_Hallo_schleim ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_schleim_15_00"); //Довольно болтать. Говори, чего ты хочешь.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_01"); //Вот видишь, это именно то, что я имею в виду.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_02"); //Одни красивые слова никуда тебя не приведут.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_03"); //Я знал, что имею дело с настоящим деловым человеком.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_04"); //И уж наверняка этот деловой человек не откажется от небольшого вознаграждения?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_schleim_15_00"); //Р”РѕРІРѕР»СЊРЅРѕ Р±РѕР»С‚Р°С‚СЊ. Р“РѕРІРѕСЂРё, С‡РµРіРѕ С‚С‹ С…РѕС‡РµС€СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_01"); //Р’РѕС‚ РІРёРґРёС€СЊ, СЌС‚Рѕ РёРјРµРЅРЅРѕ С‚Рѕ, С‡С‚Рѕ СЏ РёРјРµСЋ РІ РІРёРґСѓ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_02"); //РћРґРЅРё РєСЂР°СЃРёРІС‹Рµ СЃР»РѕРІР° РЅРёРєСѓРґР° С‚РµР±СЏ РЅРµ РїСЂРёРІРµРґСѓС‚.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_03"); //РЇ Р·РЅР°Р», С‡С‚Рѕ РёРјРµСЋ РґРµР»Рѕ СЃ РЅР°СЃС‚РѕСЏС‰РёРј РґРµР»РѕРІС‹Рј С‡РµР»РѕРІРµРєРѕРј.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_04"); //Р СѓР¶ РЅР°РІРµСЂРЅСЏРєР° СЌС‚РѕС‚ РґРµР»РѕРІРѕР№ С‡РµР»РѕРІРµРє РЅРµ РѕС‚РєР°Р¶РµС‚СЃСЏ РѕС‚ РЅРµР±РѕР»СЊС€РѕРіРѕ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ?
 };
 
 func void DIA_Addon_Greg_NW_Hallo_hide ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_hide_15_00"); //Ты от кого-то прячешься?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_01"); //Нет, конечно нет! Что за абсурд?! Мне просто нравится стоять среди деревьев - так мне ветер не дует в лицо.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_02"); //Но давай лучше поговорим о тебе. Ты берешь работу?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_hide_15_00"); //РўС‹ РѕС‚ РєРѕРіРѕ-С‚Рѕ РїСЂСЏС‡РµС€СЊСЃСЏ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_01"); //РќРµС‚, РєРѕРЅРµС‡РЅРѕ РЅРµС‚! Р§С‚Рѕ Р·Р° Р°Р±СЃСѓСЂРґ?! РњРЅРµ РїСЂРѕСЃС‚Рѕ РЅСЂР°РІРёС‚СЃСЏ СЃС‚РѕСЏС‚СЊ СЃСЂРµРґРё РґРµСЂРµРІСЊРµРІ - С‚Р°Рє РјРЅРµ РІРµС‚РµСЂ РЅРµ РґСѓРµС‚ РІ Р»РёС†Рѕ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_02"); //РќРѕ РґР°РІР°Р№ Р»СѓС‡С€Рµ РїРѕРіРѕРІРѕСЂРёРј Рѕ С‚РµР±Рµ. РўС‹ Р±РµСЂРµС€СЊ СЂР°Р±РѕС‚Сѓ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ instance DIA_Addon_Greg_NW_Stadtwachen		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_Stadtwachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Насчет городских стражников...";
+	description	 = 	"РќР°СЃС‡РµС‚ РіРѕСЂРѕРґСЃРєРёС… СЃС‚СЂР°Р¶РЅРёРєРѕРІ...";
 };
 
 func int DIA_Addon_Greg_NW_Stadtwachen_Condition ()
@@ -152,38 +152,38 @@ VAR int DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino;
 
 func void DIA_Addon_Greg_NW_Stadtwachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_Stadtwachen_15_00"); //Насчет городских стражников...
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Stadtwachen_01_01"); //Да? У тебя есть мысль?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_Stadtwachen_15_00"); //РќР°СЃС‡РµС‚ РіРѕСЂРѕРґСЃРєРёС… СЃС‚СЂР°Р¶РЅРёРєРѕРІ...
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Stadtwachen_01_01"); //Р”Р°? РЈ С‚РµР±СЏ РµСЃС‚СЊ РјС‹СЃР»СЊ?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Stadtwachen);
-	Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Я должен еще подумать.", DIA_Addon_Greg_NW_Stadtwachen_nochnicht );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "РЇ РґРѕР»Р¶РµРЅ РµС‰Рµ РїРѕРґСѓРјР°С‚СЊ.", DIA_Addon_Greg_NW_Stadtwachen_nochnicht );
 
 	if (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_geld == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Ты не думал о подкупе?", DIA_Addon_Greg_NW_Stadtwachen_geld );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "РўС‹ РЅРµ РґСѓРјР°Р» Рѕ РїРѕРґРєСѓРїРµ?", DIA_Addon_Greg_NW_Stadtwachen_geld );
 	};
 
 	if (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_Schein == FALSE)
 	&& (Npc_HasItems (other,ItWr_Passierschein))
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "У меня есть пропуск в город.", DIA_Addon_Greg_NW_Stadtwachen_Schein );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "РЈ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРѕРїСѓСЃРє РІ РіРѕСЂРѕРґ.", DIA_Addon_Greg_NW_Stadtwachen_Schein );
 	};
 	
 	if (MIS_Addon_Lester_PickForConstantino != 0)
 	&& (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Ты можешь попасть в город, сказав, что ты сборщик трав.", DIA_Addon_Greg_NW_Stadtwachen_constantino );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "РўС‹ РјРѕР¶РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ, СЃРєР°Р·Р°РІ, С‡С‚Рѕ С‚С‹ СЃР±РѕСЂС‰РёРє С‚СЂР°РІ.", DIA_Addon_Greg_NW_Stadtwachen_constantino );
 	};
 
 	IF	((Npc_HasItems (other,ItAr_BAU_L)) || (Npc_HasItems (other,ItAr_BAU_M)))
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Они пропустят тебя, если на тебе будет одежда крестьянина.", DIA_Addon_Greg_NW_Stadtwachen_klamotten );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "РћРЅРё РїСЂРѕРїСѓСЃС‚СЏС‚ С‚РµР±СЏ, РµСЃР»Рё РЅР° С‚РµР±Рµ Р±СѓРґРµС‚ РѕРґРµР¶РґР° РєСЂРµСЃС‚СЊСЏРЅРёРЅР°.", DIA_Addon_Greg_NW_Stadtwachen_klamotten );
 	};
 };
 
 func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_00"); //Они пропустят тебя, если на тебе будет одежда крестьянина.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_00"); //РћРЅРё РїСЂРѕРїСѓСЃС‚СЏС‚ С‚РµР±СЏ, РµСЃР»Рё РЅР° С‚РµР±Рµ Р±СѓРґРµС‚ РѕРґРµР¶РґР° РєСЂРµСЃС‚СЊСЏРЅРёРЅР°.
 
 	if (Npc_HasItems (other,ItAr_BAU_L))
 	{
@@ -194,8 +194,8 @@ func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 		B_GiveInvItems 		(other, self, ITAR_BAU_M,1);
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_01"); //Это как раз то, что мне нужно! Я знал, что могу на тебя положиться, приятель.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_02"); //Если я буду одет как местный деревенский мужлан, никто не будет обращать на меня внимания.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_01"); //Р­С‚Рѕ РєР°Рє СЂР°Р· С‚Рѕ, С‡С‚Рѕ РјРЅРµ РЅСѓР¶РЅРѕ! РЇ Р·РЅР°Р», С‡С‚Рѕ РјРѕРіСѓ РЅР° С‚РµР±СЏ РїРѕР»РѕР¶РёС‚СЊСЃСЏ, РїСЂРёСЏС‚РµР»СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_02"); //Р•СЃР»Рё СЏ Р±СѓРґСѓ РѕРґРµС‚ РєР°Рє РјРµСЃС‚РЅС‹Р№ РґРµСЂРµРІРµРЅСЃРєРёР№ РјСѓР¶Р»Р°РЅ, РЅРёРєС‚Рѕ РЅРµ Р±СѓРґРµС‚ РѕР±СЂР°С‰Р°С‚СЊ РЅР° РјРµРЅСЏ РІРЅРёРјР°РЅРёСЏ.
 
 	if (Npc_HasItems (self,ItAr_BAU_L))
 	{
@@ -206,47 +206,47 @@ func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 		AI_EquipArmor 		(self,ITAR_BAU_M);
 	};
 	
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_03"); //Отлично! Вот твоя награда.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_03"); //РћС‚Р»РёС‡РЅРѕ! Р’РѕС‚ С‚РІРѕСЏ РЅР°РіСЂР°РґР°.
 	
 	CreateInvItems (self, ItMi_Gold, 50);									
 	B_GiveInvItems (self, other, ItMi_Gold, 50);	
 	B_GivePlayerXP (XP_Greg_NW_GiveBauArmor);				
 	
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_04"); //Что? Жалкие 50 золотых монет? Ты, должно быть, шутишь.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_05"); //Золото - это не самое важное на свете, друг мой. Возьми пока то, что я тебе предлагаю.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_06"); //У меня есть предчувствие, что мы скоро встретимся снова.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_07"); //И кто знает, может быть, у меня будет возможность отплатить тебе услугой за услугу. Береги себя!
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_04"); //Р§С‚Рѕ? Р–Р°Р»РєРёРµ 50 Р·РѕР»РѕС‚С‹С… РјРѕРЅРµС‚? РўС‹, РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ, С€СѓС‚РёС€СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_05"); //Р—РѕР»РѕС‚Рѕ - СЌС‚Рѕ РЅРµ СЃР°РјРѕРµ РІР°Р¶РЅРѕРµ РЅР° СЃРІРµС‚Рµ, РґСЂСѓРі РјРѕР№. Р’РѕР·СЊРјРё РїРѕРєР° С‚Рѕ, С‡С‚Рѕ СЏ С‚РµР±Рµ РїСЂРµРґР»Р°РіР°СЋ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_06"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРµРґС‡СѓРІСЃС‚РІРёРµ, С‡С‚Рѕ РјС‹ СЃРєРѕСЂРѕ РІСЃС‚СЂРµС‚РёРјСЃСЏ СЃРЅРѕРІР°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_07"); //Р РєС‚Рѕ Р·РЅР°РµС‚, РјРѕР¶РµС‚ Р±С‹С‚СЊ, Сѓ РјРµРЅСЏ Р±СѓРґРµС‚ РІРѕР·РјРѕР¶РЅРѕСЃС‚СЊ РѕС‚РїР»Р°С‚РёС‚СЊ С‚РµР±Рµ СѓСЃР»СѓРіРѕР№ Р·Р° СѓСЃР»СѓРіСѓ. Р‘РµСЂРµРіРё СЃРµР±СЏ!
 	AI_StopProcessInfos (self);
 
 	Npc_ExchangeRoutine	(self,"Markt");
 
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Я дал ему одежду крестьянина. В ней он может пройти в город."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"РЇ РґР°Р» РµРјСѓ РѕРґРµР¶РґСѓ РєСЂРµСЃС‚СЊСЏРЅРёРЅР°. Р’ РЅРµР№ РѕРЅ РјРѕР¶РµС‚ РїСЂРѕР№С‚Рё РІ РіРѕСЂРѕРґ."); 
 
 	MIS_Addon_Greg_BringMeToTheCity = LOG_SUCCESS;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_15_00"); //Я должен еще подумать.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_01_01"); //Хорошо. Но поспеши, у меня мало времени.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_15_00"); //РЇ РґРѕР»Р¶РµРЅ РµС‰Рµ РїРѕРґСѓРјР°С‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_01_01"); //РҐРѕСЂРѕС€Рѕ. РќРѕ РїРѕСЃРїРµС€Рё, Сѓ РјРµРЅСЏ РјР°Р»Рѕ РІСЂРµРјРµРЅРё.
 	AI_StopProcessInfos (self);
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_Schein ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_Schein_15_00"); //У меня есть пропуск в город.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_01"); //(саркастически) Ага. Ты хочешь сказать, что я должен выдать себя за горожанина?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_02"); //Посмотри на меня, мальчик! В это не поверит даже последний идиот.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_Schein_15_00"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРѕРїСѓСЃРє РІ РіРѕСЂРѕРґ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_01"); //(СЃР°СЂРєР°СЃС‚РёС‡РµСЃРєРё) РђРіР°. РўС‹ С…РѕС‡РµС€СЊ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ СЏ РґРѕР»Р¶РµРЅ РІС‹РґР°С‚СЊ СЃРµР±СЏ Р·Р° РіРѕСЂРѕР¶Р°РЅРёРЅР°?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_02"); //РџРѕСЃРјРѕС‚СЂРё РЅР° РјРµРЅСЏ, РјР°Р»СЊС‡РёРє! Р’ СЌС‚Рѕ РЅРµ РїРѕРІРµСЂРёС‚ РґР°Р¶Рµ РїРѕСЃР»РµРґРЅРёР№ РёРґРёРѕС‚.
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_Schein = TRUE;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_constantino ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_constantino_15_00"); //Ты можешь попасть в город, сказав, что ты сборщик трав.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_constantino_01_01"); //Что? Я что, похож на человека, который собирает в лесах цветочки?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_constantino_15_00"); //РўС‹ РјРѕР¶РµС€СЊ РїРѕРїР°СЃС‚СЊ РІ РіРѕСЂРѕРґ, СЃРєР°Р·Р°РІ, С‡С‚Рѕ С‚С‹ СЃР±РѕСЂС‰РёРє С‚СЂР°РІ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_constantino_01_01"); //Р§С‚Рѕ? РЇ С‡С‚Рѕ, РїРѕС…РѕР¶ РЅР° С‡РµР»РѕРІРµРєР°, РєРѕС‚РѕСЂС‹Р№ СЃРѕР±РёСЂР°РµС‚ РІ Р»РµСЃР°С… С†РІРµС‚РѕС‡РєРё?
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino = TRUE;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_geld ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_geld_15_00"); //Ты не думал о подкупе?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_geld_01_01"); //Если бы я мог подкупить стражников, я был бы уже в городе.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_geld_15_00"); //РўС‹ РЅРµ РґСѓРјР°Р» Рѕ РїРѕРґРєСѓРїРµ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_geld_01_01"); //Р•СЃР»Рё Р±С‹ СЏ РјРѕРі РїРѕРґРєСѓРїРёС‚СЊ СЃС‚СЂР°Р¶РЅРёРєРѕРІ, СЏ Р±С‹Р» Р±С‹ СѓР¶Рµ РІ РіРѕСЂРѕРґРµ.
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_geld = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -260,7 +260,7 @@ instance DIA_Addon_Greg_NW_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Еще кое-что...";
+	description	 = 	"Р•С‰Рµ РєРѕРµ-С‡С‚Рѕ...";
 };
 func int DIA_Addon_Greg_NW_PERM_Condition ()
 {
@@ -272,9 +272,9 @@ func int DIA_Addon_Greg_NW_PERM_Condition ()
 };
 func void DIA_Addon_Greg_NW_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_PERM_15_00"); //Еще кое-что...
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_01"); //Послушай, сынок. У меня есть неотложные дела.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_02"); //Мы поговорим попозже. Понятно?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_PERM_15_00"); //Р•С‰Рµ РєРѕРµ-С‡С‚Рѕ...
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_01"); //РџРѕСЃР»СѓС€Р°Р№, СЃС‹РЅРѕРє. РЈ РјРµРЅСЏ РµСЃС‚СЊ РЅРµРѕС‚Р»РѕР¶РЅС‹Рµ РґРµР»Р°.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_02"); //РњС‹ РїРѕРіРѕРІРѕСЂРёРј РїРѕРїРѕР·Р¶Рµ. РџРѕРЅСЏС‚РЅРѕ?
 	AI_StopProcessInfos (self);
 };
 
@@ -308,24 +308,24 @@ func int DIA_Addon_Greg_NW_MeetGregSecondTime_Condition ()
 
 func void DIA_Addon_Greg_NW_MeetGregSecondTime_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_00"); //Вы только посмотрите!
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_00"); //Р’С‹ С‚РѕР»СЊРєРѕ РїРѕСЃРјРѕС‚СЂРёС‚Рµ!
 
 	if (MIS_Addon_Greg_BringMeToTheCity == LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_01"); //Мальчик-фермер.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_01"); //РњР°Р»СЊС‡РёРє-С„РµСЂРјРµСЂ.
 	}
 	else if (MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_02"); //Паренек, который так грубо отказался мне помочь. Итак, мы встретились снова...
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_02"); //РџР°СЂРµРЅРµРє, РєРѕС‚РѕСЂС‹Р№ С‚Р°Рє РіСЂСѓР±Рѕ РѕС‚РєР°Р·Р°Р»СЃСЏ РјРЅРµ РїРѕРјРѕС‡СЊ. РС‚Р°Рє, РјС‹ РІСЃС‚СЂРµС‚РёР»РёСЃСЊ СЃРЅРѕРІР°...
 	}
 	else if (MIS_Addon_Greg_BringMeToTheCity == LOG_RUNNING)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_03"); //(зло) Я думал, что ты хочешь мне помочь! А ты просто сбежал.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_04"); //Ты думал, я так там и застряну, верно?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_05"); //Что ж, это очередной раз доказывает, что никто не поможет тебе, кроме тебя самого. Но на этот раз ты от меня просто так не уйдешь.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_03"); //(Р·Р»Рѕ) РЇ РґСѓРјР°Р», С‡С‚Рѕ С‚С‹ С…РѕС‡РµС€СЊ РјРЅРµ РїРѕРјРѕС‡СЊ! Рђ С‚С‹ РїСЂРѕСЃС‚Рѕ СЃР±РµР¶Р°Р».
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_04"); //РўС‹ РґСѓРјР°Р», СЏ С‚Р°Рє С‚Р°Рј Рё Р·Р°СЃС‚СЂСЏРЅСѓ, РІРµСЂРЅРѕ?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_05"); //Р§С‚Рѕ Р¶, СЌС‚Рѕ РѕС‡РµСЂРµРґРЅРѕР№ СЂР°Р· РґРѕРєР°Р·С‹РІР°РµС‚, С‡С‚Рѕ РЅРёРєС‚Рѕ РЅРµ РїРѕРјРѕР¶РµС‚ С‚РµР±Рµ, РєСЂРѕРјРµ С‚РµР±СЏ СЃР°РјРѕРіРѕ. РќРѕ РЅР° СЌС‚РѕС‚ СЂР°Р· С‚С‹ РѕС‚ РјРµРЅСЏ РїСЂРѕСЃС‚Рѕ С‚Р°Рє РЅРµ СѓР№РґРµС€СЊ.
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_06"); //Ты как раз вовремя.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_06"); //РўС‹ РєР°Рє СЂР°Р· РІРѕРІСЂРµРјСЏ.
 	SC_SawGregInTaverne = TRUE;
 };
 
@@ -339,7 +339,7 @@ instance DIA_Addon_Greg_NW_wer		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_wer_Condition;
 	information	 = 	DIA_Addon_Greg_NW_wer_Info;
 
-	description	 = 	"А кто ты вообще такой?";
+	description	 = 	"Рђ РєС‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ С‚Р°РєРѕР№?";
 };
 
 func int DIA_Addon_Greg_NW_wer_Condition ()
@@ -352,9 +352,9 @@ func int DIA_Addon_Greg_NW_wer_Condition ()
 
 func void DIA_Addon_Greg_NW_wer_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_wer_15_00"); //А кто ты вообще такой?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_01"); //Это не твое дело.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_02"); //Если бы я хотел тебе представиться, я бы, наверное, это уже сделал, не так ли?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_wer_15_00"); //Рђ РєС‚Рѕ С‚С‹ РІРѕРѕР±С‰Рµ С‚Р°РєРѕР№?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_01"); //Р­С‚Рѕ РЅРµ С‚РІРѕРµ РґРµР»Рѕ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_02"); //Р•СЃР»Рё Р±С‹ СЏ С…РѕС‚РµР» С‚РµР±Рµ РїСЂРµРґСЃС‚Р°РІРёС‚СЊСЃСЏ, СЏ Р±С‹, РЅР°РІРµСЂРЅРѕРµ, СЌС‚Рѕ СѓР¶Рµ СЃРґРµР»Р°Р», РЅРµ С‚Р°Рє Р»Рё?
 
 	
 };
@@ -369,7 +369,7 @@ instance DIA_Addon_Greg_NW_was		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_was_Condition;
 	information	 = 	DIA_Addon_Greg_NW_was_Info;
 
-	description	 = 	"Итак, что тебе от меня надо?";
+	description	 = 	"РС‚Р°Рє, С‡С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅР°РґРѕ?";
 };
 
 func int DIA_Addon_Greg_NW_was_Condition ()
@@ -382,75 +382,75 @@ func int DIA_Addon_Greg_NW_was_Condition ()
 
 func VOID B_Greg_Search_Dexter ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_00"); //Мне нужно найти одного человека. В городе его нет, и где его искать, тоже никто не знает.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_01"); //Он тощий, волосы у него черные, и он носит доспехи красного цвета.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_02"); //Насколько мне известно, он был заключенным в колонии. А имя его вроде бы начинается с буквы 'Д'.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_00"); //РњРЅРµ РЅСѓР¶РЅРѕ РЅР°Р№С‚Рё РѕРґРЅРѕРіРѕ С‡РµР»РѕРІРµРєР°. Р’ РіРѕСЂРѕРґРµ РµРіРѕ РЅРµС‚, Рё РіРґРµ РµРіРѕ РёСЃРєР°С‚СЊ, С‚РѕР¶Рµ РЅРёРєС‚Рѕ РЅРµ Р·РЅР°РµС‚.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_01"); //РћРЅ С‚РѕС‰РёР№, РІРѕР»РѕСЃС‹ Сѓ РЅРµРіРѕ С‡РµСЂРЅС‹Рµ, Рё РѕРЅ РЅРѕСЃРёС‚ РґРѕСЃРїРµС…Рё РєСЂР°СЃРЅРѕРіРѕ С†РІРµС‚Р°.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_02"); //РќР°СЃРєРѕР»СЊРєРѕ РјРЅРµ РёР·РІРµСЃС‚РЅРѕ, РѕРЅ Р±С‹Р» Р·Р°РєР»СЋС‡РµРЅРЅС‹Рј РІ РєРѕР»РѕРЅРёРё. Рђ РёРјСЏ РµРіРѕ РІСЂРѕРґРµ Р±С‹ РЅР°С‡РёРЅР°РµС‚СЃСЏ СЃ Р±СѓРєРІС‹ 'Р”'.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Человек с повязкой на глазу ищет кого-то, чье имя начинается на букву 'Д'."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Р§РµР»РѕРІРµРє СЃ РїРѕРІСЏР·РєРѕР№ РЅР° РіР»Р°Р·Сѓ РёС‰РµС‚ РєРѕРіРѕ-С‚Рѕ, С‡СЊРµ РёРјСЏ РЅР°С‡РёРЅР°РµС‚СЃСЏ РЅР° Р±СѓРєРІСѓ 'Р”'."); 
 
 	SC_KnowsGregsSearchsDexter = TRUE;
 };
 
 func void DIA_Addon_Greg_NW_was_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_00"); //Что тебе от меня нужно?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_00"); //Р§С‚Рѕ С‚РµР±Рµ РѕС‚ РјРµРЅСЏ РЅСѓР¶РЅРѕ?
 
 	if (MIS_Addon_Greg_BringMeToTheCity != 0)
 	{
-		AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_01"); //У тебя все еще проблемы с городской стражей?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_was_01_02"); //(угрожающе) Сейчас у ТЕБЯ начнутся проблемы, придурок.
+		AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_01"); //РЈ С‚РµР±СЏ РІСЃРµ РµС‰Рµ РїСЂРѕР±Р»РµРјС‹ СЃ РіРѕСЂРѕРґСЃРєРѕР№ СЃС‚СЂР°Р¶РµР№?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_was_01_02"); //(СѓРіСЂРѕР¶Р°СЋС‰Рµ) РЎРµР№С‡Р°СЃ Сѓ РўР•Р‘РЇ РЅР°С‡РЅСѓС‚СЃСЏ РїСЂРѕР±Р»РµРјС‹, РїСЂРёРґСѓСЂРѕРє.
 	};	
 
 	B_Greg_Search_Dexter ();
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Ты говоришь о Диего?", DIA_Addon_Greg_NW_was_Diego );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "РўС‹ РіРѕРІРѕСЂРёС€СЊ Рѕ Р”РёРµРіРѕ?", DIA_Addon_Greg_NW_was_Diego );
 
 	if (Bdt13_Dexter_verraten == TRUE) 
 	|| (Ranger_SCKnowsDexter == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_was, "Тебе нужен Декстер?", DIA_Addon_Greg_NW_was_Dexter );
+		Info_AddChoice	(DIA_Addon_Greg_NW_was, "РўРµР±Рµ РЅСѓР¶РµРЅ Р”РµРєСЃС‚РµСЂ?", DIA_Addon_Greg_NW_was_Dexter );
 	};
 	
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Не знаю никого, кто подходит под это описание.", DIA_Addon_Greg_NW_was_no );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "РќРµ Р·РЅР°СЋ РЅРёРєРѕРіРѕ, РєС‚Рѕ РїРѕРґС…РѕРґРёС‚ РїРѕРґ СЌС‚Рѕ РѕРїРёСЃР°РЅРёРµ.", DIA_Addon_Greg_NW_was_no );
 };
 
 func void DIA_Addon_Greg_NW_was_GregUnsicher ()
 {
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_00"); //Может быть, и так. Я не помню, как его зовут...
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_01"); //Мне нужно увидеть его, чтобы узнать.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_00"); //РњРѕР¶РµС‚ Р±С‹С‚СЊ, Рё С‚Р°Рє. РЇ РЅРµ РїРѕРјРЅСЋ, РєР°Рє РµРіРѕ Р·РѕРІСѓС‚...
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_01"); //РњРЅРµ РЅСѓР¶РЅРѕ СѓРІРёРґРµС‚СЊ РµРіРѕ, С‡С‚РѕР±С‹ СѓР·РЅР°С‚СЊ.
 };
 
 func void DIA_Addon_Greg_NW_was_UnNun ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_UnNun_15_00"); //Что-нибудь еще?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_01"); //Да, господин болтун. Есть кое-что еще.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_02"); //Мне нужно оружие. Мне нужна провизия. Золото мне тоже не помешает.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_UnNun_15_00"); //Р§С‚Рѕ-РЅРёР±СѓРґСЊ РµС‰Рµ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_01"); //Р”Р°, РіРѕСЃРїРѕРґРёРЅ Р±РѕР»С‚СѓРЅ. Р•СЃС‚СЊ РєРѕРµ-С‡С‚Рѕ РµС‰Рµ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_02"); //РњРЅРµ РЅСѓР¶РЅРѕ РѕСЂСѓР¶РёРµ. РњРЅРµ РЅСѓР¶РЅР° РїСЂРѕРІРёР·РёСЏ. Р—РѕР»РѕС‚Рѕ РјРЅРµ С‚РѕР¶Рµ РЅРµ РїРѕРјРµС€Р°РµС‚.
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Я не могу тебе помочь.", DIA_Addon_Greg_NW_was_NoHelp );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Провизия? Ты в таверне!", DIA_Addon_Greg_NW_was_Orlan );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Оружие? Оружие можно купить у наемников.", DIA_Addon_Greg_NW_was_SLD );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Вот тебе 10 золотых.", DIA_Addon_Greg_NW_was_HierGold );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "А ты не мог купить оружие в городе?", DIA_Addon_Greg_NW_was_Waffenhaendler );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Золото? Всем нам нужно золото.", DIA_Addon_Greg_NW_was_Gold );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "РЇ РЅРµ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.", DIA_Addon_Greg_NW_was_NoHelp );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "РџСЂРѕРІРёР·РёСЏ? РўС‹ РІ С‚Р°РІРµСЂРЅРµ!", DIA_Addon_Greg_NW_was_Orlan );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "РћСЂСѓР¶РёРµ? РћСЂСѓР¶РёРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ Сѓ РЅР°РµРјРЅРёРєРѕРІ.", DIA_Addon_Greg_NW_was_SLD );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Р’РѕС‚ С‚РµР±Рµ 10 Р·РѕР»РѕС‚С‹С….", DIA_Addon_Greg_NW_was_HierGold );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Рђ С‚С‹ РЅРµ РјРѕРі РєСѓРїРёС‚СЊ РѕСЂСѓР¶РёРµ РІ РіРѕСЂРѕРґРµ?", DIA_Addon_Greg_NW_was_Waffenhaendler );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Р—РѕР»РѕС‚Рѕ? Р’СЃРµРј РЅР°Рј РЅСѓР¶РЅРѕ Р·РѕР»РѕС‚Рѕ.", DIA_Addon_Greg_NW_was_Gold );
 };
 
 func void DIA_Addon_Greg_NW_was_NoHelp ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_NoHelp_15_00"); //Я не могу тебе помочь.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_01"); //(зло) Нет, ты не ХОЧЕШЬ мне помочь.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_NoHelp_15_00"); //РЇ РЅРµ РјРѕРіСѓ С‚РµР±Рµ РїРѕРјРѕС‡СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_01"); //(Р·Р»Рѕ) РќРµС‚, С‚С‹ РЅРµ РҐРћР§Р•РЁР¬ РјРЅРµ РїРѕРјРѕС‡СЊ.
 	
 	if ((MIS_Addon_Greg_BringMeToTheCity == LOG_RUNNING) || (MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED))
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_02"); //Второй раз ты отказываешься выполнить мою просьбу.
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_03"); //Мой тебе совет: постарайся сделать так, чтобы я тебя больше не видел.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_02"); //Р’С‚РѕСЂРѕР№ СЂР°Р· С‚С‹ РѕС‚РєР°Р·С‹РІР°РµС€СЊСЃСЏ РІС‹РїРѕР»РЅРёС‚СЊ РјРѕСЋ РїСЂРѕСЃСЊР±Сѓ.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_03"); //РњРѕР№ С‚РµР±Рµ СЃРѕРІРµС‚: РїРѕСЃС‚Р°СЂР°Р№СЃСЏ СЃРґРµР»Р°С‚СЊ С‚Р°Рє, С‡С‚РѕР±С‹ СЏ С‚РµР±СЏ Р±РѕР»СЊС€Рµ РЅРµ РІРёРґРµР».
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_04"); //Я запомню это, будь уверен.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_04"); //РЇ Р·Р°РїРѕРјРЅСЋ СЌС‚Рѕ, Р±СѓРґСЊ СѓРІРµСЂРµРЅ.
 	};	
 	
 	MIS_Addon_Greg_RakeCave = LOG_OBSOLETE;
@@ -463,29 +463,29 @@ func void DIA_Addon_Greg_NW_was_NoHelp ()
 
 func void DIA_Addon_Greg_NW_was_Gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_00"); //Золото? Всем нам нужно золото.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_01"); //Возможно. Но что бы ты сделал, если бы оно у тебя было? Уверен, ты спустил бы его по кабакам и борделям.
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_02"); //А у тебя, конечно, есть мысли получше...
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_03"); //Да ты бы залез от страха под камень, если бы узнал, кто я такой.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_04"); //Так что прекрати болтать, или я отрежу твой неугомонный язык.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_00"); //Р—РѕР»РѕС‚Рѕ? Р’СЃРµРј РЅР°Рј РЅСѓР¶РЅРѕ Р·РѕР»РѕС‚Рѕ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_01"); //Р’РѕР·РјРѕР¶РЅРѕ. РќРѕ С‡С‚Рѕ Р±С‹ С‚С‹ СЃРґРµР»Р°Р», РµСЃР»Рё Р±С‹ РѕРЅРѕ Сѓ С‚РµР±СЏ Р±С‹Р»Рѕ? РЈРІРµСЂРµРЅ, С‚С‹ СЃРїСѓСЃС‚РёР» Р±С‹ РµРіРѕ РїРѕ РєР°Р±Р°РєР°Рј Рё Р±РѕСЂРґРµР»СЏРј.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_02"); //Рђ Сѓ С‚РµР±СЏ, РєРѕРЅРµС‡РЅРѕ, РµСЃС‚СЊ РјС‹СЃР»Рё РїРѕР»СѓС‡С€Рµ...
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_03"); //Р”Р° С‚С‹ Р±С‹ Р·Р°Р»РµР· РѕС‚ СЃС‚СЂР°С…Р° РїРѕРґ РєР°РјРµРЅСЊ, РµСЃР»Рё Р±С‹ СѓР·РЅР°Р», РєС‚Рѕ СЏ С‚Р°РєРѕР№.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_04"); //РўР°Рє С‡С‚Рѕ РїСЂРµРєСЂР°С‚Рё Р±РѕР»С‚Р°С‚СЊ, РёР»Рё СЏ РѕС‚СЂРµР¶Сѓ С‚РІРѕР№ РЅРµСѓРіРѕРјРѕРЅРЅС‹Р№ СЏР·С‹Рє.
 };
 
 func void DIA_Addon_Greg_NW_was_Waffenhaendler ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Waffenhaendler_15_00"); //А ты не мог купить оружие в городе?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Waffenhaendler_01_01"); //Ты шутишь? Городские торговцы продают один хлам!
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Waffenhaendler_15_00"); //Рђ С‚С‹ РЅРµ РјРѕРі РєСѓРїРёС‚СЊ РѕСЂСѓР¶РёРµ РІ РіРѕСЂРѕРґРµ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Waffenhaendler_01_01"); //РўС‹ С€СѓС‚РёС€СЊ? Р“РѕСЂРѕРґСЃРєРёРµ С‚РѕСЂРіРѕРІС†С‹ РїСЂРѕРґР°СЋС‚ РѕРґРёРЅ С…Р»Р°Рј!
 };
 
 func void DIA_Addon_Greg_NW_was_HierGold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_HierGold_15_00"); //Вот тебе 10 золотых.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_01"); //(смеется) Можешь оставить себе свои жалкие сбережения. У меня есть мысль получше.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_02"); //Неподалеку отсюда есть пещера. Это одно из тех мест, где я когда-то зарыл свои сокровища.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_03"); //Пещера для меня слишком опасна. Я хочу, чтобы ты мне помог.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_HierGold_15_00"); //Р’РѕС‚ С‚РµР±Рµ 10 Р·РѕР»РѕС‚С‹С….
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_01"); //(СЃРјРµРµС‚СЃСЏ) РњРѕР¶РµС€СЊ РѕСЃС‚Р°РІРёС‚СЊ СЃРµР±Рµ СЃРІРѕРё Р¶Р°Р»РєРёРµ СЃР±РµСЂРµР¶РµРЅРёСЏ. РЈ РјРµРЅСЏ РµСЃС‚СЊ РјС‹СЃР»СЊ РїРѕР»СѓС‡С€Рµ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_02"); //РќРµРїРѕРґР°Р»РµРєСѓ РѕС‚СЃСЋРґР° РµСЃС‚СЊ РїРµС‰РµСЂР°. Р­С‚Рѕ РѕРґРЅРѕ РёР· С‚РµС… РјРµСЃС‚, РіРґРµ СЏ РєРѕРіРґР°-С‚Рѕ Р·Р°СЂС‹Р» СЃРІРѕРё СЃРѕРєСЂРѕРІРёС‰Р°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_03"); //РџРµС‰РµСЂР° РґР»СЏ РјРµРЅСЏ СЃР»РёС€РєРѕРј РѕРїР°СЃРЅР°. РЇ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РјРЅРµ РїРѕРјРѕРі.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Я предложил человеку с повязкой на глазу золото, но он отказался. Я должен пойти с ним в его пещеру."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"РЇ РїСЂРµРґР»РѕР¶РёР» С‡РµР»РѕРІРµРєСѓ СЃ РїРѕРІСЏР·РєРѕР№ РЅР° РіР»Р°Р·Сѓ Р·РѕР»РѕС‚Рѕ, РЅРѕ РѕРЅ РѕС‚РєР°Р·Р°Р»СЃСЏ. РЇ РґРѕР»Р¶РµРЅ РїРѕР№С‚Рё СЃ РЅРёРј РІ РµРіРѕ РїРµС‰РµСЂСѓ."); 
 
 	MIS_Addon_Greg_RakeCave = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
@@ -493,34 +493,34 @@ func void DIA_Addon_Greg_NW_was_HierGold ()
 
 func void DIA_Addon_Greg_NW_was_SLD ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_SLD_15_00"); //Оружие? Оружие можно купить у наемников.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_01"); //Интересно. Я уже слышал, что толстяк Онар нанял ребят для охраны.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_02"); //Неплохо для сухопутной крысы.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_03"); //Да, идея хорошая. Думаю, я действительно нанесу им визит.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_SLD_15_00"); //РћСЂСѓР¶РёРµ? РћСЂСѓР¶РёРµ РјРѕР¶РЅРѕ РєСѓРїРёС‚СЊ Сѓ РЅР°РµРјРЅРёРєРѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_01"); //РРЅС‚РµСЂРµСЃРЅРѕ. РЇ СѓР¶Рµ СЃР»С‹С€Р°Р», С‡С‚Рѕ С‚РѕР»СЃС‚СЏРє РћРЅР°СЂ РЅР°РЅСЏР» СЂРµР±СЏС‚ РґР»СЏ РѕС…СЂР°РЅС‹.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_02"); //РќРµРїР»РѕС…Рѕ РґР»СЏ СЃСѓС…РѕРїСѓС‚РЅРѕР№ РєСЂС‹СЃС‹.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_03"); //Р”Р°, РёРґРµСЏ С…РѕСЂРѕС€Р°СЏ. Р”СѓРјР°СЋ, СЏ РґРµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ РЅР°РЅРµСЃСѓ РёРј РІРёР·РёС‚.
 };
 func void DIA_Addon_Greg_NW_was_Orlan ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Orlan_15_00"); //Провизия? Ты в таверне!
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Orlan_01_01"); //Дурак-трактирщик не даст тебе ни крошки, пока ты ему не заплатишь.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Orlan_15_00"); //РџСЂРѕРІРёР·РёСЏ? РўС‹ РІ С‚Р°РІРµСЂРЅРµ!
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Orlan_01_01"); //Р”СѓСЂР°Рє-С‚СЂР°РєС‚РёСЂС‰РёРє РЅРµ РґР°СЃС‚ С‚РµР±Рµ РЅРё РєСЂРѕС€РєРё, РїРѕРєР° С‚С‹ РµРјСѓ РЅРµ Р·Р°РїР»Р°С‚РёС€СЊ.
 };
 
 func void DIA_Addon_Greg_NW_was_no ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_no_15_00"); //Не знаю никого, кто подходит под это описание.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_no_01_01"); //Я так и знал.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_no_15_00"); //РќРµ Р·РЅР°СЋ РЅРёРєРѕРіРѕ, РєС‚Рѕ РїРѕРґС…РѕРґРёС‚ РїРѕРґ СЌС‚Рѕ РѕРїРёСЃР°РЅРёРµ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_no_01_01"); //РЇ С‚Р°Рє Рё Р·РЅР°Р».
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
 
 func void DIA_Addon_Greg_NW_was_Diego ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Diego_15_00"); //Ты говоришь о Диего?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Diego_15_00"); //РўС‹ РіРѕРІРѕСЂРёС€СЊ Рѕ Р”РёРµРіРѕ?
 	DIA_Addon_Greg_NW_was_GregUnsicher ();
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
 
 func void DIA_Addon_Greg_NW_was_Dexter ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Dexter_15_00"); //Тебе нужен Декстер?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Dexter_15_00"); //РўРµР±Рµ РЅСѓР¶РµРЅ Р”РµРєСЃС‚РµСЂ?
 	DIA_Addon_Greg_NW_was_GregUnsicher ();
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
@@ -535,7 +535,7 @@ instance DIA_Addon_Greg_NW_RakeCaveLos		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_RakeCaveLos_Condition;
 	information	 = 	DIA_Addon_Greg_NW_RakeCaveLos_Info;
 
-	description	 = 	"Пойдем в твою пещеру.";
+	description	 = 	"РџРѕР№РґРµРј РІ С‚РІРѕСЋ РїРµС‰РµСЂСѓ.";
 };
 
 func int DIA_Addon_Greg_NW_RakeCaveLos_Condition ()
@@ -550,8 +550,8 @@ func int DIA_Addon_Greg_NW_RakeCaveLos_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCaveLos_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveLos_15_00"); //Пойдем в твою пещеру.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveLos_01_01"); //Следуй за мной.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveLos_15_00"); //РџРѕР№РґРµРј РІ С‚РІРѕСЋ РїРµС‰РµСЂСѓ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveLos_01_01"); //РЎР»РµРґСѓР№ Р·Р° РјРЅРѕР№.
 	AI_StopProcessInfos (self);
 	AI_UseMob			(self,"BENCH",-1);
 	Npc_ExchangeRoutine	(self,"RakeCave");
@@ -562,7 +562,7 @@ func void DIA_Addon_Greg_NW_RakeCaveLos_Info ()
 ///////////////////////////////////////////////////////////////////////
 	func void B_Greg_GoNow()
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_03"); //Ну и чего ты ждешь? Иди внутрь и забирай вещи.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_03"); //РќСѓ Рё С‡РµРіРѕ С‚С‹ Р¶РґРµС€СЊ? РРґРё РІРЅСѓС‚СЂСЊ Рё Р·Р°Р±РёСЂР°Р№ РІРµС‰Рё.
 	};
 // --------------------------------------------------------------------
 
@@ -589,17 +589,17 @@ func int DIA_Addon_Greg_NW_RakeCaveThere_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCaveThere_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_00"); //Ну что, приятель, вот и пещера.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_01"); //Вот тебе кирка.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_00"); //РќСѓ С‡С‚Рѕ, РїСЂРёСЏС‚РµР»СЊ, РІРѕС‚ Рё РїРµС‰РµСЂР°.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_01"); //Р’РѕС‚ С‚РµР±Рµ РєРёСЂРєР°.
 	B_GiveInvItems (self, other, itmw_2h_Axe_L_01, 1); //Spitzhacke	
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_02"); //Я закопал свои вещи где-то внутри. Место отмечено крестом.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_02"); //РЇ Р·Р°РєРѕРїР°Р» СЃРІРѕРё РІРµС‰Рё РіРґРµ-С‚Рѕ РІРЅСѓС‚СЂРё. РњРµСЃС‚Рѕ РѕС‚РјРµС‡РµРЅРѕ РєСЂРµСЃС‚РѕРј.
 	B_Greg_GoNow();
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveThere_15_04"); //А как же ты?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_05"); //Кто-то же должен защищать тыл. А теперь - иди внутрь.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveThere_15_04"); //Рђ РєР°Рє Р¶Рµ С‚С‹?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_05"); //РљС‚Рѕ-С‚Рѕ Р¶Рµ РґРѕР»Р¶РµРЅ Р·Р°С‰РёС‰Р°С‚СЊ С‚С‹Р». Рђ С‚РµРїРµСЂСЊ - РёРґРё РІРЅСѓС‚СЂСЊ.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Этот парень хочет, чтобы я достал из пещеры его вещи. Он закопал их, а место пометил крестом. Для работы он дал мне кирку."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Р­С‚РѕС‚ РїР°СЂРµРЅСЊ С…РѕС‡РµС‚, С‡С‚РѕР±С‹ СЏ РґРѕСЃС‚Р°Р» РёР· РїРµС‰РµСЂС‹ РµРіРѕ РІРµС‰Рё. РћРЅ Р·Р°РєРѕРїР°Р» РёС…, Р° РјРµСЃС‚Рѕ РїРѕРјРµС‚РёР» РєСЂРµСЃС‚РѕРј. Р”Р»СЏ СЂР°Р±РѕС‚С‹ РѕРЅ РґР°Р» РјРЅРµ РєРёСЂРєСѓ."); 
 
 	MIS_Addon_Greg_RakeCave_Day = Wld_GetDay(); 
 };
@@ -630,24 +630,24 @@ func int DIA_Addon_Greg_NW_RakeCavePlundered_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCavePlundered_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_01_00"); //Что ты там так долго делал? Нашел то, что я тебя просил?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_01_00"); //Р§С‚Рѕ С‚С‹ С‚Р°Рј С‚Р°Рє РґРѕР»РіРѕ РґРµР»Р°Р»? РќР°С€РµР» С‚Рѕ, С‡С‚Рѕ СЏ С‚РµР±СЏ РїСЂРѕСЃРёР»?
 	
 	if (RAKEPLACE[Greg_FirstSecret] == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "Да, я выкопал кошелек с золотом.", DIA_Addon_Greg_NW_RakeCavePlundered_gold );
+		Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "Р”Р°, СЏ РІС‹РєРѕРїР°Р» РєРѕС€РµР»РµРє СЃ Р·РѕР»РѕС‚РѕРј.", DIA_Addon_Greg_NW_RakeCavePlundered_gold );
 	};
-	Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "Нет.", DIA_Addon_Greg_NW_RakeCavePlundered_No );
+	Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "РќРµС‚.", DIA_Addon_Greg_NW_RakeCavePlundered_No );
 };
 func void DIA_Addon_Greg_NW_RakeCavePlundered_No ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_00"); //Нет.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_00"); //РќРµС‚.
 	if (RAKEPLACE[Greg_FirstSecret] == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_01"); //Испытываешь мое терпение, сынок?
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_02"); //Э-э... там ничего не было.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_01"); //РСЃРїС‹С‚С‹РІР°РµС€СЊ РјРѕРµ С‚РµСЂРїРµРЅРёРµ, СЃС‹РЅРѕРє?
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_02"); //Р­-СЌ... С‚Р°Рј РЅРёС‡РµРіРѕ РЅРµ Р±С‹Р»Рѕ.
 	};	
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_03"); //Тысяча чертей! Я так и знал! Меня опять опередили.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_04"); //Ну ладно. Мне нужно идти. Увидимся.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_03"); //РўС‹СЃСЏС‡Р° С‡РµСЂС‚РµР№! РЇ С‚Р°Рє Рё Р·РЅР°Р»! РњРµРЅСЏ РѕРїСЏС‚СЊ РѕРїРµСЂРµРґРёР»Рё.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_04"); //РќСѓ Р»Р°РґРЅРѕ. РњРЅРµ РЅСѓР¶РЅРѕ РёРґС‚Рё. РЈРІРёРґРёРјСЃСЏ.
 	AI_StopProcessInfos (self);
 	GregLocation = Greg_Bigcross;
 	Npc_ExchangeRoutine	(self,"Bigcross");
@@ -656,40 +656,40 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_No ()
 var int B_Greg_RakePlaceBriefing_OneTime;
 func void B_Greg_RakePlaceBriefing ()
 {
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_00"); //Так, посмотрим... На озере с двумя водопадами есть небольшой островок.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_01"); //На верхних пастбищах есть еще два места, где я закопал сокровища.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_02"); //Одно - за находящейся там фермой, а второе - рядом с входом в проход, у водопада.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_03"); //От верхних пастбищ к полям Онара ведет лестница.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_04"); //В долине, в которую она спускается, есть еще один тайник.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_00"); //РўР°Рє, РїРѕСЃРјРѕС‚СЂРёРј... РќР° РѕР·РµСЂРµ СЃ РґРІСѓРјСЏ РІРѕРґРѕРїР°РґР°РјРё РµСЃС‚СЊ РЅРµР±РѕР»СЊС€РѕР№ РѕСЃС‚СЂРѕРІРѕРє.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_01"); //РќР° РІРµСЂС…РЅРёС… РїР°СЃС‚Р±РёС‰Р°С… РµСЃС‚СЊ РµС‰Рµ РґРІР° РјРµСЃС‚Р°, РіРґРµ СЏ Р·Р°РєРѕРїР°Р» СЃРѕРєСЂРѕРІРёС‰Р°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_02"); //РћРґРЅРѕ - Р·Р° РЅР°С…РѕРґСЏС‰РµР№СЃСЏ С‚Р°Рј С„РµСЂРјРѕР№, Р° РІС‚РѕСЂРѕРµ - СЂСЏРґРѕРј СЃ РІС…РѕРґРѕРј РІ РїСЂРѕС…РѕРґ, Сѓ РІРѕРґРѕРїР°РґР°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_03"); //РћС‚ РІРµСЂС…РЅРёС… РїР°СЃС‚Р±РёС‰ Рє РїРѕР»СЏРј РћРЅР°СЂР° РІРµРґРµС‚ Р»РµСЃС‚РЅРёС†Р°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_04"); //Р’ РґРѕР»РёРЅРµ, РІ РєРѕС‚РѕСЂСѓСЋ РѕРЅР° СЃРїСѓСЃРєР°РµС‚СЃСЏ, РµСЃС‚СЊ РµС‰Рµ РѕРґРёРЅ С‚Р°Р№РЅРёРє.
 
 	if (B_Greg_RakePlaceBriefing_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_Addon_Greg_NW,"Человек рассказал мне, что есть несколько мест, где он закопал свои вещи: 1) На маленьком острове на озере с двумя водопадами. 2) На верхнем пастбище за фермой. 3) У водопадов неподалеку от ворот прохода. 4) В низине под лестницей, ведущей от верхних пастбищ к полям землевладельца. Я должен найти все его закопанные вещи. Он будет ждать меня у перекрестка на полях.");
+		B_LogEntry (TOPIC_Addon_Greg_NW,"Р§РµР»РѕРІРµРє СЂР°СЃСЃРєР°Р·Р°Р» РјРЅРµ, С‡С‚Рѕ РµСЃС‚СЊ РЅРµСЃРєРѕР»СЊРєРѕ РјРµСЃС‚, РіРґРµ РѕРЅ Р·Р°РєРѕРїР°Р» СЃРІРѕРё РІРµС‰Рё: 1) РќР° РјР°Р»РµРЅСЊРєРѕРј РѕСЃС‚СЂРѕРІРµ РЅР° РѕР·РµСЂРµ СЃ РґРІСѓРјСЏ РІРѕРґРѕРїР°РґР°РјРё. 2) РќР° РІРµСЂС…РЅРµРј РїР°СЃС‚Р±РёС‰Рµ Р·Р° С„РµСЂРјРѕР№. 3) РЈ РІРѕРґРѕРїР°РґРѕРІ РЅРµРїРѕРґР°Р»РµРєСѓ РѕС‚ РІРѕСЂРѕС‚ РїСЂРѕС…РѕРґР°. 4) Р’ РЅРёР·РёРЅРµ РїРѕРґ Р»РµСЃС‚РЅРёС†РµР№, РІРµРґСѓС‰РµР№ РѕС‚ РІРµСЂС…РЅРёС… РїР°СЃС‚Р±РёС‰ Рє РїРѕР»СЏРј Р·РµРјР»РµРІР»Р°РґРµР»СЊС†Р°. РЇ РґРѕР»Р¶РµРЅ РЅР°Р№С‚Рё РІСЃРµ РµРіРѕ Р·Р°РєРѕРїР°РЅРЅС‹Рµ РІРµС‰Рё. РћРЅ Р±СѓРґРµС‚ Р¶РґР°С‚СЊ РјРµРЅСЏ Сѓ РїРµСЂРµРєСЂРµСЃС‚РєР° РЅР° РїРѕР»СЏС….");
 		B_Greg_RakePlaceBriefing_OneTime = TRUE;
 	};
 };                                                                                             
                                                                                                
 func void DIA_Addon_Greg_NW_RakeCavePlundered_gold ()                                          
 {                                                                                              
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_00"); //Да, я выкопал кошелек с золотом.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_01"); //(жадно) Давай его сюда.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_00"); //Р”Р°, СЏ РІС‹РєРѕРїР°Р» РєРѕС€РµР»РµРє СЃ Р·РѕР»РѕС‚РѕРј.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_01"); //(Р¶Р°РґРЅРѕ) Р”Р°РІР°Р№ РµРіРѕ СЃСЋРґР°.
 
 	if ((Npc_HasItems (other,ItSe_GoldPocket25))||(Npc_HasItems (other,ItMi_Gold)>= 25))
 		{	
 			if (B_GiveInvItems (other, self, ItSe_GoldPocket25,1))
 				{
-					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02"); //Держи.
+					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02"); //Р”РµСЂР¶Рё.
 				}
 			else if (B_GiveInvItems (other, self, ItMi_Gold,25))
 				{
-					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_03"); //Я его открыл, внутри было 25 золотых. Вот они.
+					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_03"); //РЇ РµРіРѕ РѕС‚РєСЂС‹Р», РІРЅСѓС‚СЂРё Р±С‹Р»Рѕ 25 Р·РѕР»РѕС‚С‹С…. Р’РѕС‚ РѕРЅРё.
 				};
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_04"); //Очень хорошо.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_05"); //От тебя, оказывается, может быть хоть какой-то толк.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_06"); //Ладно, слушай внимательно. Есть еще несколько мест, где я закопал свои вещи. И я хочу, чтобы ты мне их принес.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_04"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_05"); //РћС‚ С‚РµР±СЏ, РѕРєР°Р·С‹РІР°РµС‚СЃСЏ, РјРѕР¶РµС‚ Р±С‹С‚СЊ С…РѕС‚СЊ РєР°РєРѕР№-С‚Рѕ С‚РѕР»Рє.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_06"); //Р›Р°РґРЅРѕ, СЃР»СѓС€Р°Р№ РІРЅРёРјР°С‚РµР»СЊРЅРѕ. Р•СЃС‚СЊ РµС‰Рµ РЅРµСЃРєРѕР»СЊРєРѕ РјРµСЃС‚, РіРґРµ СЏ Р·Р°РєРѕРїР°Р» СЃРІРѕРё РІРµС‰Рё. Р СЏ С…РѕС‡Сѓ, С‡С‚РѕР±С‹ С‚С‹ РјРЅРµ РёС… РїСЂРёРЅРµСЃ.
 			B_Greg_RakePlaceBriefing ();
 			Greg_SuchWeiter = TRUE;
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_07"); //Я буду ждать тебя у перекрестка на полях Онара. Не подведи меня - ты об этом пожалеешь.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_07"); //РЇ Р±СѓРґСѓ Р¶РґР°С‚СЊ С‚РµР±СЏ Сѓ РїРµСЂРµРєСЂРµСЃС‚РєР° РЅР° РїРѕР»СЏС… РћРЅР°СЂР°. РќРµ РїРѕРґРІРµРґРё РјРµРЅСЏ - С‚С‹ РѕР± СЌС‚РѕРј РїРѕР¶Р°Р»РµРµС€СЊ.
 			AI_StopProcessInfos (self);
 			GregLocation = Greg_Bigcross;
 			Npc_ExchangeRoutine	(self,"Bigcross");
@@ -697,8 +697,8 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_gold ()
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_08"); //У меня уже ничего нет.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_09"); //Дерьмо собачье! Мне что, заставить тебя отдать мои вещи силой?
+			AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_08"); //РЈ РјРµРЅСЏ СѓР¶Рµ РЅРёС‡РµРіРѕ РЅРµС‚.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_09"); //Р”РµСЂСЊРјРѕ СЃРѕР±Р°С‡СЊРµ! РњРЅРµ С‡С‚Рѕ, Р·Р°СЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ РѕС‚РґР°С‚СЊ РјРѕРё РІРµС‰Рё СЃРёР»РѕР№?
 			AI_StopProcessInfos (self);
 			MIS_Addon_Greg_RakeCave = LOG_FAILED;//Joly:SC hat Greg angeschissen.
 			GregLocation = Greg_Bigcross;
@@ -749,7 +749,7 @@ instance DIA_Addon_Greg_NW_WhereTreasures		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_WhereTreasures_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Повтори, где ты зарыл свои вещи?";
+	description	 = 	"РџРѕРІС‚РѕСЂРё, РіРґРµ С‚С‹ Р·Р°СЂС‹Р» СЃРІРѕРё РІРµС‰Рё?";
 };
 
 func int DIA_Addon_Greg_NW_WhereTreasures_Condition ()
@@ -763,7 +763,7 @@ func int DIA_Addon_Greg_NW_WhereTreasures_Condition ()
 
 func void DIA_Addon_Greg_NW_WhereTreasures_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhereTreasures_15_00"); //Повтори, где ты зарыл свои вещи?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhereTreasures_15_00"); //РџРѕРІС‚РѕСЂРё, РіРґРµ С‚С‹ Р·Р°СЂС‹Р» СЃРІРѕРё РІРµС‰Рё?
 	B_Greg_RakePlaceBriefing ();
 };
 
@@ -778,7 +778,7 @@ instance DIA_Addon_Greg_NW_PermTaverne		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_PermTaverne_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Еще кое-что...";
+	description	 = 	"Р•С‰Рµ РєРѕРµ-С‡С‚Рѕ...";
 };
 
 func int DIA_Addon_Greg_NW_PermTaverne_Condition ()
@@ -799,20 +799,20 @@ func int DIA_Addon_Greg_NW_PermTaverne_Condition ()
 
 func void DIA_Addon_Greg_NW_PermTaverne_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_PermTaverne_15_00"); //Еще кое-что...
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_PermTaverne_15_00"); //Р•С‰Рµ РєРѕРµ-С‡С‚Рѕ...
 
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_01"); //Сначала принеси мне все мои вещи. Потом мы поговорим.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_01"); //РЎРЅР°С‡Р°Р»Р° РїСЂРёРЅРµСЃРё РјРЅРµ РІСЃРµ РјРѕРё РІРµС‰Рё. РџРѕС‚РѕРј РјС‹ РїРѕРіРѕРІРѕСЂРёРј.
 	}
 	else if (MIS_Addon_Greg_RakeCave == LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_02"); //Конечно, я благодарен, что ты мне помог. Но это не делает нас друзьями. Понимаешь, о чем я?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_02"); //РљРѕРЅРµС‡РЅРѕ, СЏ Р±Р»Р°РіРѕРґР°СЂРµРЅ, С‡С‚Рѕ С‚С‹ РјРЅРµ РїРѕРјРѕРі. РќРѕ СЌС‚Рѕ РЅРµ РґРµР»Р°РµС‚ РЅР°СЃ РґСЂСѓР·СЊСЏРјРё. РџРѕРЅРёРјР°РµС€СЊ, Рѕ С‡РµРј СЏ?
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_03"); //Мы и так слишком долго болтаем.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_03"); //РњС‹ Рё С‚Р°Рє СЃР»РёС€РєРѕРј РґРѕР»РіРѕ Р±РѕР»С‚Р°РµРј.
 	};
 };
 
@@ -835,7 +835,7 @@ instance DIA_Addon_Greg_NW_Bigcross		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_Bigcross_Condition;
 	information	 = 	DIA_Addon_Greg_NW_Bigcross_Info;
 
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 
 func int DIA_Addon_Greg_NW_Bigcross_Condition ()
@@ -851,26 +851,26 @@ func void DIA_Addon_Greg_NW_Bigcross_Info ()
 {
 	if ((MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED)||(MIS_Addon_Greg_RakeCave == LOG_FAILED))
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_00"); //Это же наш господин Ненадежность!
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_00"); //Р­С‚Рѕ Р¶Рµ РЅР°С€ РіРѕСЃРїРѕРґРёРЅ РќРµРЅР°РґРµР¶РЅРѕСЃС‚СЊ!
 	};
 
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_01"); //Как дела?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_02"); //Так себе. От наемников оказалось мало пользы.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_03"); //Я ожидал, что они - храбрые ребята.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_04"); //Но на поверку оказалось, что это всего лишь болтливые хвастуны.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_01"); //РљР°Рє РґРµР»Р°?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_02"); //РўР°Рє СЃРµР±Рµ. РћС‚ РЅР°РµРјРЅРёРєРѕРІ РѕРєР°Р·Р°Р»РѕСЃСЊ РјР°Р»Рѕ РїРѕР»СЊР·С‹.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_03"); //РЇ РѕР¶РёРґР°Р», С‡С‚Рѕ РѕРЅРё - С…СЂР°Р±СЂС‹Рµ СЂРµР±СЏС‚Р°.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_04"); //РќРѕ РЅР° РїРѕРІРµСЂРєСѓ РѕРєР°Р·Р°Р»РѕСЃСЊ, С‡С‚Рѕ СЌС‚Рѕ РІСЃРµРіРѕ Р»РёС€СЊ Р±РѕР»С‚Р»РёРІС‹Рµ С…РІР°СЃС‚СѓРЅС‹.
 	
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_05"); //Ну что, ты нашел мои вещи?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_05"); //РќСѓ С‡С‚Рѕ, С‚С‹ РЅР°С€РµР» РјРѕРё РІРµС‰Рё?
 		if (RAKEPLACE[1]==FALSE)
 		|| (RAKEPLACE[2]==FALSE)
 		|| (RAKEPLACE[3]==FALSE)
 		|| (RAKEPLACE[4]==FALSE)
 		|| (RAKEPLACE[5]==FALSE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_06"); //Нет, еще не все.
-			AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_07"); //Так поторопись! Не так уж это и сложно.
+			AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_06"); //РќРµС‚, РµС‰Рµ РЅРµ РІСЃРµ.
+			AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_07"); //РўР°Рє РїРѕС‚РѕСЂРѕРїРёСЃСЊ! РќРµ С‚Р°Рє СѓР¶ СЌС‚Рѕ Рё СЃР»РѕР¶РЅРѕ.
 		};
 	};	
 };
@@ -885,7 +885,7 @@ instance DIA_Addon_Greg_NW_WhatWantFromSLD		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_WhatWantFromSLD_Condition;
 	information	 = 	DIA_Addon_Greg_NW_WhatWantFromSLD_Info;
 
-	description	 = 	"Что тебе было нужно от наемников?";
+	description	 = 	"Р§С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ РѕС‚ РЅР°РµРјРЅРёРєРѕРІ?";
 };
 
 func int DIA_Addon_Greg_NW_WhatWantFromSLD_Condition ()
@@ -900,7 +900,7 @@ func int DIA_Addon_Greg_NW_WhatWantFromSLD_Condition ()
 
 func void DIA_Addon_Greg_NW_WhatWantFromSLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhatWantFromSLD_15_00"); //Что тебе было нужно от наемников?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhatWantFromSLD_15_00"); //Р§С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ РѕС‚ РЅР°РµРјРЅРёРєРѕРІ?
 	
 	if (SC_KnowsGregsSearchsDexter == FALSE)
 	{
@@ -908,8 +908,8 @@ func void DIA_Addon_Greg_NW_WhatWantFromSLD_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_01"); //Я тебе уже говорил. Я ищу человека в красной броне.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_02"); //Но эти кретины даже не поняли, о ком я говорю.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_01"); //РЇ С‚РµР±Рµ СѓР¶Рµ РіРѕРІРѕСЂРёР». РЇ РёС‰Сѓ С‡РµР»РѕРІРµРєР° РІ РєСЂР°СЃРЅРѕР№ Р±СЂРѕРЅРµ.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_02"); //РќРѕ СЌС‚Рё РєСЂРµС‚РёРЅС‹ РґР°Р¶Рµ РЅРµ РїРѕРЅСЏР»Рё, Рѕ РєРѕРј СЏ РіРѕРІРѕСЂСЋ.
 	};	
 };
 
@@ -923,7 +923,7 @@ instance DIA_Addon_Greg_NW_DexterFound		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_DexterFound_Condition;
 	information	 = 	DIA_Addon_Greg_NW_DexterFound_Info;
 
-	description	 = 	"Я думаю, что тебе нужен человек по имени Декстер.";
+	description	 = 	"РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РµРЅ С‡РµР»РѕРІРµРє РїРѕ РёРјРµРЅРё Р”РµРєСЃС‚РµСЂ.";
 };
 
 func int DIA_Addon_Greg_NW_DexterFound_Condition ()
@@ -938,38 +938,38 @@ func int DIA_Addon_Greg_NW_DexterFound_Condition ()
 
 func void DIA_Addon_Greg_NW_DexterFound_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_DexterFound_15_00"); //Я думаю, что тебе нужен человек по имени Декстер.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_DexterFound_01_01"); //Черт возьми, откуда мне знать его имя?!
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_DexterFound_15_00"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ С‚РµР±Рµ РЅСѓР¶РµРЅ С‡РµР»РѕРІРµРє РїРѕ РёРјРµРЅРё Р”РµРєСЃС‚РµСЂ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_DexterFound_01_01"); //Р§РµСЂС‚ РІРѕР·СЊРјРё, РѕС‚РєСѓРґР° РјРЅРµ Р·РЅР°С‚СЊ РµРіРѕ РёРјСЏ?!
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Я просто предположил.", DIA_Addon_Greg_NW_DexterFound_weg );
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Я могу помочь тебе его найти.", DIA_Addon_Greg_NW_DexterFound_together );
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Думаю, я могу помочь тебе его найти.", DIA_Addon_Greg_NW_DexterFound_wo );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "РЇ РїСЂРѕСЃС‚Рѕ РїСЂРµРґРїРѕР»РѕР¶РёР».", DIA_Addon_Greg_NW_DexterFound_weg );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РµРіРѕ РЅР°Р№С‚Рё.", DIA_Addon_Greg_NW_DexterFound_together );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Р”СѓРјР°СЋ, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РµРіРѕ РЅР°Р№С‚Рё.", DIA_Addon_Greg_NW_DexterFound_wo );
 };
 func void DIA_Addon_Greg_NW_DexterFound_weg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_weg_15_00"); //Я просто предположил.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_weg_15_00"); //РЇ РїСЂРѕСЃС‚Рѕ РїСЂРµРґРїРѕР»РѕР¶РёР».
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
 };
 
 func void DIA_Addon_Greg_NW_DexterFound_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_00"); //Думаю, я могу помочь тебе его найти.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_01"); //Действительно? И где же он сейчас?
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_02"); //Недалеко отсюда.
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_03"); //Похоже, он стал главарем шайки бандитов.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_04"); //Ха! Да, похоже, это он.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_05"); //Я знал, что этот трус прячется где-то здесь.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_06"); //Теперь все, что мне осталось сделать, - обыскать все убежища и тайные укрытия в округе.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_07"); //Я найду этого ублюдка, и твоя помощь мне не нужна.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_00"); //Р”СѓРјР°СЋ, СЏ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РµРіРѕ РЅР°Р№С‚Рё.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_01"); //Р”РµР№СЃС‚РІРёС‚РµР»СЊРЅРѕ? Р РіРґРµ Р¶Рµ РѕРЅ СЃРµР№С‡Р°СЃ?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_02"); //РќРµРґР°Р»РµРєРѕ РѕС‚СЃСЋРґР°.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_03"); //РџРѕС…РѕР¶Рµ, РѕРЅ СЃС‚Р°Р» РіР»Р°РІР°СЂРµРј С€Р°Р№РєРё Р±Р°РЅРґРёС‚РѕРІ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_04"); //РҐР°! Р”Р°, РїРѕС…РѕР¶Рµ, СЌС‚Рѕ РѕРЅ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_05"); //РЇ Р·РЅР°Р», С‡С‚Рѕ СЌС‚РѕС‚ С‚СЂСѓСЃ РїСЂСЏС‡РµС‚СЃСЏ РіРґРµ-С‚Рѕ Р·РґРµСЃСЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_06"); //РўРµРїРµСЂСЊ РІСЃРµ, С‡С‚Рѕ РјРЅРµ РѕСЃС‚Р°Р»РѕСЃСЊ СЃРґРµР»Р°С‚СЊ, - РѕР±С‹СЃРєР°С‚СЊ РІСЃРµ СѓР±РµР¶РёС‰Р° Рё С‚Р°Р№РЅС‹Рµ СѓРєСЂС‹С‚РёСЏ РІ РѕРєСЂСѓРіРµ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_07"); //РЇ РЅР°Р№РґСѓ СЌС‚РѕРіРѕ СѓР±Р»СЋРґРєР°, Рё С‚РІРѕСЏ РїРѕРјРѕС‰СЊ РјРЅРµ РЅРµ РЅСѓР¶РЅР°.
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
 	B_GivePlayerXP (XP_Ambient);
 };
 
 func void DIA_Addon_Greg_NW_DexterFound_together ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_together_15_00"); //Я могу помочь тебе его найти.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_together_01_01"); //Нет, я пойду один. У меня с ним свои личные счеты.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_together_15_00"); //РЇ РјРѕРіСѓ РїРѕРјРѕС‡СЊ С‚РµР±Рµ РµРіРѕ РЅР°Р№С‚Рё.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_together_01_01"); //РќРµС‚, СЏ РїРѕР№РґСѓ РѕРґРёРЅ. РЈ РјРµРЅСЏ СЃ РЅРёРј СЃРІРѕРё Р»РёС‡РЅС‹Рµ СЃС‡РµС‚С‹.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1003,9 +1003,9 @@ func int DIA_Addon_Greg_NW_CaughtDexter_Condition ()
 
 func void DIA_Addon_Greg_NW_CaughtDexter_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_00"); //(громко) Ну и где эта свинья?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter_15_01"); //Кто, главарь? Прямо здесь.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_02"); //Тогда прочь с моей дороги!
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_00"); //(РіСЂРѕРјРєРѕ) РќСѓ Рё РіРґРµ СЌС‚Р° СЃРІРёРЅСЊСЏ?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter_15_01"); //РљС‚Рѕ, РіР»Р°РІР°СЂСЊ? РџСЂСЏРјРѕ Р·РґРµСЃСЊ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_02"); //РўРѕРіРґР° РїСЂРѕС‡СЊ СЃ РјРѕРµР№ РґРѕСЂРѕРіРё!
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"DexterHouseRun");
 };
@@ -1034,9 +1034,9 @@ func int DIA_Addon_Greg_NW_WodennNu_Condition ()
 
 func void DIA_Addon_Greg_NW_WodennNu_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_00"); //И куда же он делся?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WodennNu_15_01"); //Был здесь.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_02"); //Ну так пойди и отыщи его!
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_00"); //Р РєСѓРґР° Р¶Рµ РѕРЅ РґРµР»СЃСЏ?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WodennNu_15_01"); //Р‘С‹Р» Р·РґРµСЃСЊ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_02"); //РќСѓ С‚Р°Рє РїРѕР№РґРё Рё РѕС‚С‹С‰Рё РµРіРѕ!
 	AI_StopProcessInfos (self);
 };
 
@@ -1063,9 +1063,9 @@ func int DIA_Addon_Greg_NW_CaughtDexter2_Condition ()
 
 func void DIA_Addon_Greg_NW_CaughtDexter2_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_00"); //Ага. Значит, Декстер свое получил?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter2_15_01"); //Похоже, он мертв.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_02"); //Не могу сказать, что мне его жалко. Проверь, что у него было с собой.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_00"); //РђРіР°. Р—РЅР°С‡РёС‚, Р”РµРєСЃС‚РµСЂ СЃРІРѕРµ РїРѕР»СѓС‡РёР»?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter2_15_01"); //РџРѕС…РѕР¶Рµ, РѕРЅ РјРµСЂС‚РІ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_02"); //РќРµ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ, С‡С‚Рѕ РјРЅРµ РµРіРѕ Р¶Р°Р»РєРѕ. РџСЂРѕРІРµСЂСЊ, С‡С‚Рѕ Сѓ РЅРµРіРѕ Р±С‹Р»Рѕ СЃ СЃРѕР±РѕР№.
 	Npc_ExchangeRoutine	(self,"DexterHouseWalk");
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -1080,7 +1080,7 @@ instance DIA_Addon_Greg_NW_RavensLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_RavensLetter_Condition;
 	information	 = 	DIA_Addon_Greg_NW_RavensLetter_Info;
 
-	description	 = 	"Я нашел только это письмо.";
+	description	 = 	"РЇ РЅР°С€РµР» С‚РѕР»СЊРєРѕ СЌС‚Рѕ РїРёСЃСЊРјРѕ.";
 };
 
 func int DIA_Addon_Greg_NW_RavensLetter_Condition ()
@@ -1096,24 +1096,24 @@ func int DIA_Addon_Greg_NW_RavensLetter_Condition ()
 
 func void DIA_Addon_Greg_NW_RavensLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00"); //Я нашел только это письмо.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01"); //Покажи.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00"); //РЇ РЅР°С€РµР» С‚РѕР»СЊРєРѕ СЌС‚Рѕ РїРёСЃСЊРјРѕ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01"); //РџРѕРєР°Р¶Рё.
 	B_UseFakeScroll ();
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_02"); //Черт возьми! Это мне совсем не поможет.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03"); //Нельзя было его просто так убивать.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_04"); //Скажи, ты, случайно, не знаешь, как попасть за горный хребет на северо-востоке Хориниса?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_02"); //Р§РµСЂС‚ РІРѕР·СЊРјРё! Р­С‚Рѕ РјРЅРµ СЃРѕРІСЃРµРј РЅРµ РїРѕРјРѕР¶РµС‚.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03"); //РќРµР»СЊР·СЏ Р±С‹Р»Рѕ РµРіРѕ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СѓР±РёРІР°С‚СЊ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_04"); //РЎРєР°Р¶Рё, С‚С‹, СЃР»СѓС‡Р°Р№РЅРѕ, РЅРµ Р·РЅР°РµС€СЊ, РєР°Рє РїРѕРїР°СЃС‚СЊ Р·Р° РіРѕСЂРЅС‹Р№ С…СЂРµР±РµС‚ РЅР° СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕРєРµ РҐРѕСЂРёРЅРёСЃР°?
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	&& (Saturas_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_05"); //Возможно, через портал, который обнаружили маги воды.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_06"); //Что это за бред?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_07"); //Маги воды... А мысли получше у тебя есть?
+		AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_05"); //Р’РѕР·РјРѕР¶РЅРѕ, С‡РµСЂРµР· РїРѕСЂС‚Р°Р», РєРѕС‚РѕСЂС‹Р№ РѕР±РЅР°СЂСѓР¶РёР»Рё РјР°РіРё РІРѕРґС‹.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_06"); //Р§С‚Рѕ СЌС‚Рѕ Р·Р° Р±СЂРµРґ?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_07"); //РњР°РіРё РІРѕРґС‹... Рђ РјС‹СЃР»Рё РїРѕР»СѓС‡С€Рµ Сѓ С‚РµР±СЏ РµСЃС‚СЊ?
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_08"); //Нет.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_09"); //(вздыхает) Значит, я здесь застрял.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_10"); //На Декстера у меня была последняя надежда.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_08"); //РќРµС‚.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_09"); //(РІР·РґС‹С…Р°РµС‚) Р—РЅР°С‡РёС‚, СЏ Р·РґРµСЃСЊ Р·Р°СЃС‚СЂСЏР».
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_10"); //РќР° Р”РµРєСЃС‚РµСЂР° Сѓ РјРµРЅСЏ Р±С‹Р»Р° РїРѕСЃР»РµРґРЅСЏСЏ РЅР°РґРµР¶РґР°.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1126,7 +1126,7 @@ instance DIA_Addon_Greg_NW_WasWillstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_WasWillstDu_Condition;
 	information	 = 	DIA_Addon_Greg_NW_WasWillstDu_Info;
 
-	description	 = 	"А что тебе было нужно от Декстера?";
+	description	 = 	"Рђ С‡С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ РѕС‚ Р”РµРєСЃС‚РµСЂР°?";
 };
 
 func int DIA_Addon_Greg_NW_WasWillstDu_Condition ()
@@ -1140,33 +1140,33 @@ func int DIA_Addon_Greg_NW_WasWillstDu_Condition ()
 
 func void DIA_Addon_Greg_NW_WasWillstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WasWillstDu_15_00"); //А что тебе было нужно от Декстера?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_01"); //Я приплыл сюда из-за северо-восточных гор. И я хочу туда вернуться.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_02"); //Я надеялся, что это ублюдок расскажет мне, как добраться туда без корабля.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WasWillstDu_15_00"); //Рђ С‡С‚Рѕ С‚РµР±Рµ Р±С‹Р»Рѕ РЅСѓР¶РЅРѕ РѕС‚ Р”РµРєСЃС‚РµСЂР°?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_01"); //РЇ РїСЂРёРїР»С‹Р» СЃСЋРґР° РёР·-Р·Р° СЃРµРІРµСЂРѕ-РІРѕСЃС‚РѕС‡РЅС‹С… РіРѕСЂ. Р СЏ С…РѕС‡Сѓ С‚СѓРґР° РІРµСЂРЅСѓС‚СЊСЃСЏ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_02"); //РЇ РЅР°РґРµСЏР»СЃСЏ, С‡С‚Рѕ СЌС‚Рѕ СѓР±Р»СЋРґРѕРє СЂР°СЃСЃРєР°Р¶РµС‚ РјРЅРµ, РєР°Рє РґРѕР±СЂР°С‚СЊСЃСЏ С‚СѓРґР° Р±РµР· РєРѕСЂР°Р±Р»СЏ.
 
 	Npc_ExchangeRoutine	(self,"DexterThrone");	
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_WasWillstDu);
-	Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "А что находится за этими горами?", DIA_Addon_Greg_NW_WasWillstDu_da );
+	Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "Рђ С‡С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ Р·Р° СЌС‚РёРјРё РіРѕСЂР°РјРё?", DIA_Addon_Greg_NW_WasWillstDu_da );
 	
 	if (Skip_NW.aivar[AIV_TalkedToPlayer]==TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "Недалеко от города я встретил пирата по имени Скип.", DIA_Addon_Greg_NW_WasWillstDu_Skip );
+		Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "РќРµРґР°Р»РµРєРѕ РѕС‚ РіРѕСЂРѕРґР° СЏ РІСЃС‚СЂРµС‚РёР» РїРёСЂР°С‚Р° РїРѕ РёРјРµРЅРё РЎРєРёРї.", DIA_Addon_Greg_NW_WasWillstDu_Skip );
 	};
 };
 
 func void DIA_Addon_Greg_NW_WasWillstDu_da ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_da_15_00"); //А что находится за этими горами?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_01"); //Э-э, тебе даже не стоит пытаться туда попасть.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_02"); //Земли там суровые. Такому человеку, как ты, долго там не протянуть.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_da_15_00"); //Рђ С‡С‚Рѕ РЅР°С…РѕРґРёС‚СЃСЏ Р·Р° СЌС‚РёРјРё РіРѕСЂР°РјРё?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_01"); //Р­-СЌ, С‚РµР±Рµ РґР°Р¶Рµ РЅРµ СЃС‚РѕРёС‚ РїС‹С‚Р°С‚СЊСЃСЏ С‚СѓРґР° РїРѕРїР°СЃС‚СЊ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_02"); //Р—РµРјР»Рё С‚Р°Рј СЃСѓСЂРѕРІС‹Рµ. РўР°РєРѕРјСѓ С‡РµР»РѕРІРµРєСѓ, РєР°Рє С‚С‹, РґРѕР»РіРѕ С‚Р°Рј РЅРµ РїСЂРѕС‚СЏРЅСѓС‚СЊ.
 };
 
 func void DIA_Addon_Greg_NW_WasWillstDu_Skip ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_Skip_15_00"); //Недалеко от города я встретил пирата по имени Скип.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_01"); //А, этот идиот. Я ждал его три дня, почему он не появился раньше?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_02"); //Ничего, я ему еще покажу, что к чему.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_Skip_15_00"); //РќРµРґР°Р»РµРєРѕ РѕС‚ РіРѕСЂРѕРґР° СЏ РІСЃС‚СЂРµС‚РёР» РїРёСЂР°С‚Р° РїРѕ РёРјРµРЅРё РЎРєРёРї.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_01"); //Рђ, СЌС‚РѕС‚ РёРґРёРѕС‚. РЇ Р¶РґР°Р» РµРіРѕ С‚СЂРё РґРЅСЏ, РїРѕС‡РµРјСѓ РѕРЅ РЅРµ РїРѕСЏРІРёР»СЃСЏ СЂР°РЅСЊС€Рµ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_02"); //РќРёС‡РµРіРѕ, СЏ РµРјСѓ РµС‰Рµ РїРѕРєР°Р¶Сѓ, С‡С‚Рѕ Рє С‡РµРјСѓ.
 	SC_KnowsConnectionSkipGreg = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -1182,7 +1182,7 @@ instance DIA_Addon_Greg_NW_FoundTreasure		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_FoundTreasure_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Я нашел все закопанные вещи.";
+	description	 = 	"РЇ РЅР°С€РµР» РІСЃРµ Р·Р°РєРѕРїР°РЅРЅС‹Рµ РІРµС‰Рё.";
 };
 
 func int DIA_Addon_Greg_NW_FoundTreasure_Condition ()
@@ -1201,47 +1201,47 @@ func int DIA_Addon_Greg_NW_FoundTreasure_Condition ()
 
 func void DIA_Addon_Greg_NW_FoundTreasure_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_FoundTreasure_15_00"); //Я нашел все закопанные вещи.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01"); //Тогда у тебя должно быть около ста золотых, золотая чаша, серебряное блюдо и амулет. Давай их сюда.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_FoundTreasure_15_00"); //РЇ РЅР°С€РµР» РІСЃРµ Р·Р°РєРѕРїР°РЅРЅС‹Рµ РІРµС‰Рё.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01"); //РўРѕРіРґР° Сѓ С‚РµР±СЏ РґРѕР»Р¶РЅРѕ Р±С‹С‚СЊ РѕРєРѕР»Рѕ СЃС‚Р° Р·РѕР»РѕС‚С‹С…, Р·РѕР»РѕС‚Р°СЏ С‡Р°С€Р°, СЃРµСЂРµР±СЂСЏРЅРѕРµ Р±Р»СЋРґРѕ Рё Р°РјСѓР»РµС‚. Р”Р°РІР°Р№ РёС… СЃСЋРґР°.
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_FoundTreasure);	
-	Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "У меня с собой их нет.", DIA_Addon_Greg_NW_FoundTreasure_not );
+	Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ РёС… РЅРµС‚.", DIA_Addon_Greg_NW_FoundTreasure_not );
 
 	if ((Npc_HasItems (other,ItSe_GoldPocket100)) || (Npc_HasItems (other,itmi_gold)>= 100))
 	&& (Npc_HasItems (other,ItMi_GoldCup))
 	&& (Npc_HasItems (other,ItMi_SilverChalice))
 	&& (Npc_HasItems (other,ItAm_Prot_Point_01))
 		{
-			Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Вот твои вещи.", DIA_Addon_Greg_NW_FoundTreasure_ja );
+			Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Р’РѕС‚ С‚РІРѕРё РІРµС‰Рё.", DIA_Addon_Greg_NW_FoundTreasure_ja );
 		};
 };
 func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_00"); //Вот твои вещи.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_00"); //Р’РѕС‚ С‚РІРѕРё РІРµС‰Рё.
 
 	if (B_GiveInvItems (other, self, ItSe_GoldPocket100,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_01"); //Кошелек со ста золотыми.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_01"); //РљРѕС€РµР»РµРє СЃРѕ СЃС‚Р° Р·РѕР»РѕС‚С‹РјРё.
 	}	
 	else if (B_GiveInvItems (other, self, ItMi_gold,100))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_02"); //100 золотых.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_02"); //100 Р·РѕР»РѕС‚С‹С….
 	};
 
 	if (B_GiveInvItems (other, self, ItMi_GoldCup,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_03"); //Золотая чаша.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_03"); //Р—РѕР»РѕС‚Р°СЏ С‡Р°С€Р°.
 	};
 	if (B_GiveInvItems (other, self, ItMi_SilverChalice,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_04"); //Серебряное блюдо.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_04"); //РЎРµСЂРµР±СЂСЏРЅРѕРµ Р±Р»СЋРґРѕ.
 	};
 	if (B_GiveInvItems (other, self, ItAm_Prot_Point_01,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_05"); //И амулет.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_05"); //Р Р°РјСѓР»РµС‚.
 	};
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_06"); //Очень хорошо. Вижу, тебе хватило ума не присваивать себе мои вещи.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_07"); //Вот твоя доля.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_06"); //РћС‡РµРЅСЊ С…РѕСЂРѕС€Рѕ. Р’РёР¶Сѓ, С‚РµР±Рµ С…РІР°С‚РёР»Рѕ СѓРјР° РЅРµ РїСЂРёСЃРІР°РёРІР°С‚СЊ СЃРµР±Рµ РјРѕРё РІРµС‰Рё.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_07"); //Р’РѕС‚ С‚РІРѕСЏ РґРѕР»СЏ.
 
 	B_GiveInvItems (self, other, ItMi_gold,30);
 	
@@ -1253,8 +1253,8 @@ func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 
 func void DIA_Addon_Greg_NW_FoundTreasure_not ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_not_15_00"); //У меня с собой их нет.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_not_01_01"); //Тогда поторопить и принеси их мне, пока я не рассердился.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_not_15_00"); //РЈ РјРµРЅСЏ СЃ СЃРѕР±РѕР№ РёС… РЅРµС‚.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_not_01_01"); //РўРѕРіРґР° РїРѕС‚РѕСЂРѕРїРёС‚СЊ Рё РїСЂРёРЅРµСЃРё РёС… РјРЅРµ, РїРѕРєР° СЏ РЅРµ СЂР°СЃСЃРµСЂРґРёР»СЃСЏ.
 	AI_StopProcessInfos (self);
 };
 

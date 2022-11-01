@@ -74,7 +74,7 @@ FUNC INT DIA_Addon_Snaf_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Snaf_Hi_01_00"); //Хочешь жрать или болтать?
+	AI_Output (self, other, "DIA_Addon_Snaf_Hi_01_00"); //РҐРѕС‡РµС€СЊ Р¶СЂР°С‚СЊ РёР»Рё Р±РѕР»С‚Р°С‚СЊ?
 };
 //---------------------------------------------------------------------
 //	Was gibt's denn leckeres?
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Snaf_Cook (C_INFO)
 	condition   = DIA_Addon_Snaf_Cook_Condition;
 	information = DIA_Addon_Snaf_Cook_Info;
 	permanent   = FALSE;
-	description = "А что у вас в меню, сэр?";
+	description = "Рђ С‡С‚Рѕ Сѓ РІР°СЃ РІ РјРµРЅСЋ, СЃСЌСЂ?";
 };
 FUNC INT DIA_Addon_Snaf_Cook_Condition()
 {	
@@ -94,42 +94,42 @@ FUNC INT DIA_Addon_Snaf_Cook_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Cook_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_15_00"); //А что у вас в меню, сэр?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_01_01"); //Советовал бы попробовать наше новое блюдо, умник. Оно называется 'Пламенная нарезка в соусе 'Плавленые зубы'.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_15_00"); //Рђ С‡С‚Рѕ Сѓ РІР°СЃ РІ РјРµРЅСЋ, СЃСЌСЂ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_01_01"); //РЎРѕРІРµС‚РѕРІР°Р» Р±С‹ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РЅР°С€Рµ РЅРѕРІРѕРµ Р±Р»СЋРґРѕ, СѓРјРЅРёРє. РћРЅРѕ РЅР°Р·С‹РІР°РµС‚СЃСЏ 'РџР»Р°РјРµРЅРЅР°СЏ РЅР°СЂРµР·РєР° РІ СЃРѕСѓСЃРµ 'РџР»Р°РІР»РµРЅС‹Рµ Р·СѓР±С‹'.
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Cook);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"Пламенная нарезка?",DIA_Addon_Snaf_Cook_FEUER);	
-	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"А что за соус такой - 'Плавленые зубы'?",DIA_Addon_Snaf_Cook_HAMMER);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"РџР»Р°РјРµРЅРЅР°СЏ РЅР°СЂРµР·РєР°?",DIA_Addon_Snaf_Cook_FEUER);	
+	Info_AddChoice 	  (DIA_Addon_Snaf_Cook,"Рђ С‡С‚Рѕ Р·Р° СЃРѕСѓСЃ С‚Р°РєРѕР№ - 'РџР»Р°РІР»РµРЅС‹Рµ Р·СѓР±С‹'?",DIA_Addon_Snaf_Cook_HAMMER);
 };
 //---------------------------------------------------------------------
 FUNC VOID DIA_Addon_Snaf_Cook_FEUER()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//Пламенная нарезка?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//Это хрустящее, слегка поджаренное мясо с маринованными корешками огненной травы. 
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//Но ты не волнуйся. Все ингредиенты уже в наличии.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_FEUER_15_00");//РџР»Р°РјРµРЅРЅР°СЏ РЅР°СЂРµР·РєР°?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_01");//Р­С‚Рѕ С…СЂСѓСЃС‚СЏС‰РµРµ, СЃР»РµРіРєР° РїРѕРґР¶Р°СЂРµРЅРЅРѕРµ РјСЏСЃРѕ СЃ РјР°СЂРёРЅРѕРІР°РЅРЅС‹РјРё РєРѕСЂРµС€РєР°РјРё РѕРіРЅРµРЅРЅРѕР№ С‚СЂР°РІС‹. 
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_FEUER_01_02");//РќРѕ С‚С‹ РЅРµ РІРѕР»РЅСѓР№СЃСЏ. Р’СЃРµ РёРЅРіСЂРµРґРёРµРЅС‚С‹ СѓР¶Рµ РІ РЅР°Р»РёС‡РёРё.
 };
 FUNC VOID DIA_Addon_Snaf_Cook_HAMMER()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_15_00");//А что за соус такой - 'Плавленые зубы'?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//Соус, приготовленный из такого крепкого пойла, что зубы плавятся. Достал рецепт у парнишки по имени Лу.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//Ты достаешь нужные ингредиенты, гонишь горилку на алхимических инструментах, и я тебе делаю соус. Ну как?
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_15_00");//Рђ С‡С‚Рѕ Р·Р° СЃРѕСѓСЃ С‚Р°РєРѕР№ - 'РџР»Р°РІР»РµРЅС‹Рµ Р·СѓР±С‹'?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_01");//РЎРѕСѓСЃ, РїСЂРёРіРѕС‚РѕРІР»РµРЅРЅС‹Р№ РёР· С‚Р°РєРѕРіРѕ РєСЂРµРїРєРѕРіРѕ РїРѕР№Р»Р°, С‡С‚Рѕ Р·СѓР±С‹ РїР»Р°РІСЏС‚СЃСЏ. Р”РѕСЃС‚Р°Р» СЂРµС†РµРїС‚ Сѓ РїР°СЂРЅРёС€РєРё РїРѕ РёРјРµРЅРё Р›Сѓ.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_01_02");//РўС‹ РґРѕСЃС‚Р°РµС€СЊ РЅСѓР¶РЅС‹Рµ РёРЅРіСЂРµРґРёРµРЅС‚С‹, РіРѕРЅРёС€СЊ РіРѕСЂРёР»РєСѓ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРёС… РёРЅСЃС‚СЂСѓРјРµРЅС‚Р°С…, Рё СЏ С‚РµР±Рµ РґРµР»Р°СЋ СЃРѕСѓСЃ. РќСѓ РєР°Рє?
 	
-	Info_AddChoice (DIA_Addon_Snaf_Cook,"У меня нет времени на это.",DIA_Addon_Snaf_Cook_NO);
-	Info_AddChoice (DIA_Addon_Snaf_Cook,"Собственно, почему бы и нет?",DIA_Addon_Snaf_Cook_YES);
+	Info_AddChoice (DIA_Addon_Snaf_Cook,"РЈ РјРµРЅСЏ РЅРµС‚ РІСЂРµРјРµРЅРё РЅР° СЌС‚Рѕ.",DIA_Addon_Snaf_Cook_NO);
+	Info_AddChoice (DIA_Addon_Snaf_Cook,"РЎРѕР±СЃС‚РІРµРЅРЅРѕ, РїРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚?",DIA_Addon_Snaf_Cook_YES);
 	
 };
 FUNC VOID DIA_Addon_Snaf_Cook_NO ()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_NO_15_00");//Все, конечно, хорошо, но мне не до этого.
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_NO_01_01");//Ну, дело твое.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_NO_15_00");//Р’СЃРµ, РєРѕРЅРµС‡РЅРѕ, С…РѕСЂРѕС€Рѕ, РЅРѕ РјРЅРµ РЅРµ РґРѕ СЌС‚РѕРіРѕ.
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_NO_01_01");//РќСѓ, РґРµР»Рѕ С‚РІРѕРµ.
 	
 	MIS_SnafHammer = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Addon_Snaf_Cook);
 };
 FUNC VOID DIA_Addon_Snaf_Cook_YES()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_YES_15_00");//Собственно, почему бы и нет?
-	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_YES_01_01");//Отлично. Вот рецепт.
+	AI_Output (other, self, "DIA_Addon_Snaf_Cook_HAMMER_YES_15_00");//РЎРѕР±СЃС‚РІРµРЅРЅРѕ, РїРѕС‡РµРјСѓ Р±С‹ Рё РЅРµС‚?
+	AI_Output (self, other, "DIA_Addon_Snaf_Cook_HAMMER_YES_01_01");//РћС‚Р»РёС‡РЅРѕ. Р’РѕС‚ СЂРµС†РµРїС‚.
 	
 	B_GiveInvItems (self, other,ItWr_Addon_Lou_Rezept,1);
 	MIS_SnafHammer = LOG_RUNNING;
@@ -137,7 +137,7 @@ FUNC VOID DIA_Addon_Snaf_Cook_YES()
 	
 	Log_CreateTopic (Topic_Addon_Hammer,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Hammer,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Hammer,"Снафу нужен ингредиент для соуса. Он дал мне рецепт напитка 'Молот', который я могу приготовить на алхимическом столе.");
+	B_LogEntry (Topic_Addon_Hammer,"РЎРЅР°С„Сѓ РЅСѓР¶РµРЅ РёРЅРіСЂРµРґРёРµРЅС‚ РґР»СЏ СЃРѕСѓСЃР°. РћРЅ РґР°Р» РјРЅРµ СЂРµС†РµРїС‚ РЅР°РїРёС‚РєР° 'РњРѕР»РѕС‚', РєРѕС‚РѕСЂС‹Р№ СЏ РјРѕРіСѓ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ РЅР° Р°Р»С…РёРјРёС‡РµСЃРєРѕРј СЃС‚РѕР»Рµ.");
 };
 //---------------------------------------------------------------------
 //	Info Booze
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Snaf_Booze   (C_INFO)
 	condition   = DIA_Addon_Snaf_Booze_Condition;
 	information = DIA_Addon_Snaf_Booze_Info;
 	permanent   = FALSE;
-	description = "Вот твой самогон, приятель.";
+	description = "Р’РѕС‚ С‚РІРѕР№ СЃР°РјРѕРіРѕРЅ, РїСЂРёСЏС‚РµР»СЊ.";
 };
 FUNC INT DIA_Addon_Snaf_Booze_Condition()
 {	
@@ -163,14 +163,14 @@ FUNC INT DIA_Addon_Snaf_Booze_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Booze_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Booze_15_00");//Вот твой самогон, приятель.
+	AI_Output (other, self, "DIA_Addon_Snaf_Booze_15_00");//Р’РѕС‚ С‚РІРѕР№ СЃР°РјРѕРіРѕРЅ, РїСЂРёСЏС‚РµР»СЊ.
 
 	//PATCH N.B.
 	B_GiveInvItems (other, self, ItFo_Addon_LousHammer, 1);
 
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_01");//Прекрасно. Позволь мне приготовить соус.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//Вот, готово. Можешь попробовать прямо сейчас. Силушки-то в ручонках прибавится, спору нет.
-	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//А еще, если тебе понадобится моя помощь... Теперь вся информация для тебя - бесплатно.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_01");//РџСЂРµРєСЂР°СЃРЅРѕ. РџРѕР·РІРѕР»СЊ РјРЅРµ РїСЂРёРіРѕС‚РѕРІРёС‚СЊ СЃРѕСѓСЃ.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_02");//Р’РѕС‚, РіРѕС‚РѕРІРѕ. РњРѕР¶РµС€СЊ РїРѕРїСЂРѕР±РѕРІР°С‚СЊ РїСЂСЏРјРѕ СЃРµР№С‡Р°СЃ. РЎРёР»СѓС€РєРё-С‚Рѕ РІ СЂСѓС‡РѕРЅРєР°С… РїСЂРёР±Р°РІРёС‚СЃСЏ, СЃРїРѕСЂСѓ РЅРµС‚.
+	AI_Output (self, other, "DIA_Addon_Snaf_Booze_01_03");//Рђ РµС‰Рµ, РµСЃР»Рё С‚РµР±Рµ РїРѕРЅР°РґРѕР±РёС‚СЃСЏ РјРѕСЏ РїРѕРјРѕС‰СЊ... РўРµРїРµСЂСЊ РІСЃСЏ РёРЅС„РѕСЂРјР°С†РёСЏ РґР»СЏ С‚РµР±СЏ - Р±РµСЃРїР»Р°С‚РЅРѕ.
 	Snaf_Tip_Kosten = 0;
 	B_GiveInvItems (self, other, ItFo_Addon_FireStew,1);
 	MIS_SnafHammer = LOG_SUCCESS;
@@ -187,7 +187,7 @@ INSTANCE DIA_Addon_Snaf_Attentat   (C_INFO)
 	condition   = DIA_Addon_Snaf_Attentat_Condition;
 	information = DIA_Addon_Snaf_Attentat_Info;
 	permanent   = FALSE;
-	description = "Что ты знаешь о нападении?";
+	description = "Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЅР°РїР°РґРµРЅРёРё?";
 };
 FUNC INT DIA_Addon_Snaf_Attentat_Condition()
 {	
@@ -198,34 +198,34 @@ FUNC INT DIA_Addon_Snaf_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Что ты знаешь о нападении?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_01"); //Ты говоришь про нападение на Эстебана?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //Ну, ты меня понимаешь, хозяин таверны слышит все, но не утверждает, что все, что он слышал, - правда.
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_15_00"); //Р§С‚Рѕ С‚С‹ Р·РЅР°РµС€СЊ Рѕ РЅР°РїР°РґРµРЅРёРё?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_01"); //РўС‹ РіРѕРІРѕСЂРёС€СЊ РїСЂРѕ РЅР°РїР°РґРµРЅРёРµ РЅР° Р­СЃС‚РµР±Р°РЅР°?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_01_02"); //РќСѓ, С‚С‹ РјРµРЅСЏ РїРѕРЅРёРјР°РµС€СЊ, С…РѕР·СЏРёРЅ С‚Р°РІРµСЂРЅС‹ СЃР»С‹С€РёС‚ РІСЃРµ, РЅРѕ РЅРµ СѓС‚РІРµСЂР¶РґР°РµС‚, С‡С‚Рѕ РІСЃРµ, С‡С‚Рѕ РѕРЅ СЃР»С‹С€Р°Р», - РїСЂР°РІРґР°.
 	
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Скажи хоть, к кому я могу с этим обратиться.",DIA_Addon_Snaf_Attentat_GoWhere);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"А что ты бы сделал, будь ты на моем месте?",DIA_Addon_Snaf_Attentat_YouBeingMe);
-	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Значит, все же тебе что-то известно?",DIA_Addon_Snaf_Attentat_Something);	
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"РЎРєР°Р¶Рё С…РѕС‚СЊ, Рє РєРѕРјСѓ СЏ РјРѕРіСѓ СЃ СЌС‚РёРј РѕР±СЂР°С‚РёС‚СЊСЃСЏ.",DIA_Addon_Snaf_Attentat_GoWhere);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Рђ С‡С‚Рѕ С‚С‹ Р±С‹ СЃРґРµР»Р°Р», Р±СѓРґСЊ С‚С‹ РЅР° РјРѕРµРј РјРµСЃС‚Рµ?",DIA_Addon_Snaf_Attentat_YouBeingMe);
+	Info_AddChoice 	  (DIA_Addon_Snaf_Attentat,"Р—РЅР°С‡РёС‚, РІСЃРµ Р¶Рµ С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РёР·РІРµСЃС‚РЅРѕ?",DIA_Addon_Snaf_Attentat_Something);	
 };
 	
 func void DIA_Addon_Snaf_Attentat_Something()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Значит, все же тебе что-то известно?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //Ну, я этого не говорил.
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_Something_15_00"); //Р—РЅР°С‡РёС‚, РІСЃРµ Р¶Рµ С‚РµР±Рµ С‡С‚Рѕ-С‚Рѕ РёР·РІРµСЃС‚РЅРѕ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_Something_01_01"); //РќСѓ, СЏ СЌС‚РѕРіРѕ РЅРµ РіРѕРІРѕСЂРёР».
 };
 func void DIA_Addon_Snaf_Attentat_GoWhere()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_GoWhere_15_00"); //Скажи хоть, к кому я могу с этим обратиться.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_GoWhere_01_01"); //Какое тебе до этого дело, друг? Брось ты все это.
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_GoWhere_15_00"); //РЎРєР°Р¶Рё С…РѕС‚СЊ, Рє РєРѕРјСѓ СЏ РјРѕРіСѓ СЃ СЌС‚РёРј РѕР±СЂР°С‚РёС‚СЊСЃСЏ.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_GoWhere_01_01"); //РљР°РєРѕРµ С‚РµР±Рµ РґРѕ СЌС‚РѕРіРѕ РґРµР»Рѕ, РґСЂСѓРі? Р‘СЂРѕСЃСЊ С‚С‹ РІСЃРµ СЌС‚Рѕ.
 };
 func void DIA_Addon_Snaf_Attentat_YouBeingMe()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //А что ты бы сделал, будь ты на моем месте?
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //Я бы задумался над тем, что я знаю о человеке, который стоял за нападением. 
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Во-первых, вероятнее всего это разбойник, и это означает, что он здесь, в лагере.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Во-вторых, он наверняка за тобой наблюдает.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //И в-третьих, пока он считает, что ты на стороне Эстебана, он ни за что не раскроет себя тебе.
-	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //Самое время задать вопрос: каковы твои шансы найти этого человека?
+	AI_Output (other, self, "DIA_Addon_Snaf_Attentat_YouBeingMe_15_00"); //Рђ С‡С‚Рѕ С‚С‹ Р±С‹ СЃРґРµР»Р°Р», Р±СѓРґСЊ С‚С‹ РЅР° РјРѕРµРј РјРµСЃС‚Рµ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_01"); //РЇ Р±С‹ Р·Р°РґСѓРјР°Р»СЃСЏ РЅР°Рґ С‚РµРј, С‡С‚Рѕ СЏ Р·РЅР°СЋ Рѕ С‡РµР»РѕРІРµРєРµ, РєРѕС‚РѕСЂС‹Р№ СЃС‚РѕСЏР» Р·Р° РЅР°РїР°РґРµРЅРёРµРј. 
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_02"); //Р’Рѕ-РїРµСЂРІС‹С…, РІРµСЂРѕСЏС‚РЅРµРµ РІСЃРµРіРѕ СЌС‚Рѕ СЂР°Р·Р±РѕР№РЅРёРє, Рё СЌС‚Рѕ РѕР·РЅР°С‡Р°РµС‚, С‡С‚Рѕ РѕРЅ Р·РґРµСЃСЊ, РІ Р»Р°РіРµСЂРµ.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_03"); //Р’Рѕ-РІС‚РѕСЂС‹С…, РѕРЅ РЅР°РІРµСЂРЅСЏРєР° Р·Р° С‚РѕР±РѕР№ РЅР°Р±Р»СЋРґР°РµС‚.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_04"); //Р РІ-С‚СЂРµС‚СЊРёС…, РїРѕРєР° РѕРЅ СЃС‡РёС‚Р°РµС‚, С‡С‚Рѕ С‚С‹ РЅР° СЃС‚РѕСЂРѕРЅРµ Р­СЃС‚РµР±Р°РЅР°, РѕРЅ РЅРё Р·Р° С‡С‚Рѕ РЅРµ СЂР°СЃРєСЂРѕРµС‚ СЃРµР±СЏ С‚РµР±Рµ.
+	AI_Output (self, other, "DIA_Addon_Snaf_Attentat_YouBeingMe_01_05"); //РЎР°РјРѕРµ РІСЂРµРјСЏ Р·Р°РґР°С‚СЊ РІРѕРїСЂРѕСЃ: РєР°РєРѕРІС‹ С‚РІРѕРё С€Р°РЅСЃС‹ РЅР°Р№С‚Рё СЌС‚РѕРіРѕ С‡РµР»РѕРІРµРєР°?
 
 	Info_ClearChoices (DIA_Addon_Snaf_Attentat);
 };
@@ -240,7 +240,7 @@ instance DIA_Addon_Snaf_Abrechnung   (C_INFO)
 	condition   = DIA_Addon_Snaf_Abrechnung_Condition;
 	information = DIA_Addon_Snaf_Abrechnung_Info;
 	permanent   = TRUE;
-	description = "Ну и каковы же?";
+	description = "РќСѓ Рё РєР°РєРѕРІС‹ Р¶Рµ?";
 };
 FUNC INT DIA_Addon_Snaf_Abrechnung_Condition()
 {	
@@ -253,42 +253,42 @@ FUNC INT DIA_Addon_Snaf_Abrechnung_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Abrechnung_15_00"); //Ну и каковы же?
-	AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_01"); //Хм...
+	AI_Output (other, self, "DIA_Addon_Snaf_Abrechnung_15_00"); //РќСѓ Рё РєР°РєРѕРІС‹ Р¶Рµ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_01"); //РҐРј...
 	
 	if (Senyan_Erpressung == LOG_RUNNING) 
 	&& (!Npc_IsDead (Senyan))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //Невысоки, я бы сказал. Некоторые уже заметили, что у тебя общие дела с Сеньяном. 
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //Тебе нужно срочно исправить это и порвать с ним, иначе не видать тебе человека, что стоял за нападением.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_02"); //РќРµРІС‹СЃРѕРєРё, СЏ Р±С‹ СЃРєР°Р·Р°Р». РќРµРєРѕС‚РѕСЂС‹Рµ СѓР¶Рµ Р·Р°РјРµС‚РёР»Рё, С‡С‚Рѕ Сѓ С‚РµР±СЏ РѕР±С‰РёРµ РґРµР»Р° СЃ РЎРµРЅСЊСЏРЅРѕРј. 
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_03"); //РўРµР±Рµ РЅСѓР¶РЅРѕ СЃСЂРѕС‡РЅРѕ РёСЃРїСЂР°РІРёС‚СЊ СЌС‚Рѕ Рё РїРѕСЂРІР°С‚СЊ СЃ РЅРёРј, РёРЅР°С‡Рµ РЅРµ РІРёРґР°С‚СЊ С‚РµР±Рµ С‡РµР»РѕРІРµРєР°, С‡С‚Рѕ СЃС‚РѕСЏР» Р·Р° РЅР°РїР°РґРµРЅРёРµРј.
 		
 		if (Snaf_Tip_Senyan == FALSE)
 		{
-			B_LogEntry (Topic_Addon_Senyan,"Я должен порвать отношения с Сеньяном. Нападать на него напрямую было бы глупо, поэтому я должен сначала с ним поговорить.");
+			B_LogEntry (Topic_Addon_Senyan,"РЇ РґРѕР»Р¶РµРЅ РїРѕСЂРІР°С‚СЊ РѕС‚РЅРѕС€РµРЅРёСЏ СЃ РЎРµРЅСЊСЏРЅРѕРј. РќР°РїР°РґР°С‚СЊ РЅР° РЅРµРіРѕ РЅР°РїСЂСЏРјСѓСЋ Р±С‹Р»Рѕ Р±С‹ РіР»СѓРїРѕ, РїРѕСЌС‚РѕРјСѓ СЏ РґРѕР»Р¶РµРЅ СЃРЅР°С‡Р°Р»Р° СЃ РЅРёРј РїРѕРіРѕРІРѕСЂРёС‚СЊ.");
 			Snaf_Tip_Senyan = TRUE;
 		};
 	}
 	else if (Npc_IsDead(Senyan))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_04"); //Ты прибил одного из парней Эстебана. Я полагаю, тот, кого ты ищешь, будет больше тебе доверять, когда ты его встретишь. 
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_05"); //Но он вряд ли так просто раскроется. Тебе нужно узнать больше. 
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_04"); //РўС‹ РїСЂРёР±РёР» РѕРґРЅРѕРіРѕ РёР· РїР°СЂРЅРµР№ Р­СЃС‚РµР±Р°РЅР°. РЇ РїРѕР»Р°РіР°СЋ, С‚РѕС‚, РєРѕРіРѕ С‚С‹ РёС‰РµС€СЊ, Р±СѓРґРµС‚ Р±РѕР»СЊС€Рµ С‚РµР±Рµ РґРѕРІРµСЂСЏС‚СЊ, РєРѕРіРґР° С‚С‹ РµРіРѕ РІСЃС‚СЂРµС‚РёС€СЊ. 
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_05"); //РќРѕ РѕРЅ РІСЂСЏРґ Р»Рё С‚Р°Рє РїСЂРѕСЃС‚Рѕ СЂР°СЃРєСЂРѕРµС‚СЃСЏ. РўРµР±Рµ РЅСѓР¶РЅРѕ СѓР·РЅР°С‚СЊ Р±РѕР»СЊС€Рµ. 
 	}
 	else if (Finn_Petzt == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Финн заметно взволнован с тех пор, как ты с ним поговорил.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //И все здесь знают, что он хорошо ладит с Эстебаном.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //Это значит, что ты сказал ему что-то, чего он явно не хотел слышать.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //Это наверняка понравится тому, кого ты ищешь.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //Хотя вполне возможно, что он бросится к Эстебану с этой информацией. (ухмыляется) Ну, хотя ты сам все прекрасно понимаешь. 
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_06"); //Р¤РёРЅРЅ Р·Р°РјРµС‚РЅРѕ РІР·РІРѕР»РЅРѕРІР°РЅ СЃ С‚РµС… РїРѕСЂ, РєР°Рє С‚С‹ СЃ РЅРёРј РїРѕРіРѕРІРѕСЂРёР».
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_07"); //Р РІСЃРµ Р·РґРµСЃСЊ Р·РЅР°СЋС‚, С‡С‚Рѕ РѕРЅ С…РѕСЂРѕС€Рѕ Р»Р°РґРёС‚ СЃ Р­СЃС‚РµР±Р°РЅРѕРј.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_08"); //Р­С‚Рѕ Р·РЅР°С‡РёС‚, С‡С‚Рѕ С‚С‹ СЃРєР°Р·Р°Р» РµРјСѓ С‡С‚Рѕ-С‚Рѕ, С‡РµРіРѕ РѕРЅ СЏРІРЅРѕ РЅРµ С…РѕС‚РµР» СЃР»С‹С€Р°С‚СЊ.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_09"); //Р­С‚Рѕ РЅР°РІРµСЂРЅСЏРєР° РїРѕРЅСЂР°РІРёС‚СЃСЏ С‚РѕРјСѓ, РєРѕРіРѕ С‚С‹ РёС‰РµС€СЊ.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_10"); //РҐРѕС‚СЏ РІРїРѕР»РЅРµ РІРѕР·РјРѕР¶РЅРѕ, С‡С‚Рѕ РѕРЅ Р±СЂРѕСЃРёС‚СЃСЏ Рє Р­СЃС‚РµР±Р°РЅСѓ СЃ СЌС‚РѕР№ РёРЅС„РѕСЂРјР°С†РёРµР№. (СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РќСѓ, С…РѕС‚СЏ С‚С‹ СЃР°Рј РІСЃРµ РїСЂРµРєСЂР°СЃРЅРѕ РїРѕРЅРёРјР°РµС€СЊ. 
 	}
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //Говорят, ты сболтнул Финну, что работаешь на Эстебана.
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //Не знаю, чего ты там задумал, но теперь человек, которого ты ищешь, наверняка станет осторожней.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_11"); //Р“РѕРІРѕСЂСЏС‚, С‚С‹ СЃР±РѕР»С‚РЅСѓР» Р¤РёРЅРЅСѓ, С‡С‚Рѕ СЂР°Р±РѕС‚Р°РµС€СЊ РЅР° Р­СЃС‚РµР±Р°РЅР°.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_12"); //РќРµ Р·РЅР°СЋ, С‡РµРіРѕ С‚С‹ С‚Р°Рј Р·Р°РґСѓРјР°Р», РЅРѕ С‚РµРїРµСЂСЊ С‡РµР»РѕРІРµРє, РєРѕС‚РѕСЂРѕРіРѕ С‚С‹ РёС‰РµС€СЊ, РЅР°РІРµСЂРЅСЏРєР° СЃС‚Р°РЅРµС‚ РѕСЃС‚РѕСЂРѕР¶РЅРµР№.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_13"); //Ну, хотя вряд ли можно говорить об этом с уверенностью.
+		AI_Output (self, other, "DIA_Addon_Snaf_Abrechnung_01_13"); //РќСѓ, С…РѕС‚СЏ РІСЂСЏРґ Р»Рё РјРѕР¶РЅРѕ РіРѕРІРѕСЂРёС‚СЊ РѕР± СЌС‚РѕРј СЃ СѓРІРµСЂРµРЅРЅРѕСЃС‚СЊСЋ.
 	};
 	
 	//------------------- Abschied ----------------------------------
@@ -296,15 +296,15 @@ FUNC VOID DIA_Addon_Snaf_Abrechnung_Info()
 	{
 		if (Snaf_Einmal == FALSE)
 		{
-			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14"); //Спасибо тебе.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(резко) Эй! Ты от меня ничего не слышал, ясно?!
+			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_14"); //РЎРїР°СЃРёР±Рѕ С‚РµР±Рµ.
+			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_15"); //(СЂРµР·РєРѕ) Р­Р№! РўС‹ РѕС‚ РјРµРЅСЏ РЅРёС‡РµРіРѕ РЅРµ СЃР»С‹С€Р°Р», СЏСЃРЅРѕ?!
 			
 			Snaf_Einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_16"); //Само собой.
-			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_17"); //Вот именно.
+			AI_Output (other, self, "DIA_Addon_Snaf_Abschied_15_16"); //РЎР°РјРѕ СЃРѕР±РѕР№.
+			AI_Output (self, other, "DIA_Addon_Snaf_Abschied_01_17"); //Р’РѕС‚ РёРјРµРЅРЅРѕ.
 		};
 	};
 };
@@ -319,7 +319,7 @@ instance DIA_Addon_Snaf_HOCH (C_INFO)
 	condition   = DIA_Addon_Snaf_HOCH_Condition;
 	information = DIA_Addon_Snaf_HOCH_Info;
 	permanent   = FALSE;
-	description = "Я от Хуно.";
+	description = "РЇ РѕС‚ РҐСѓРЅРѕ.";
 };
 FUNC INT DIA_Addon_Snaf_HOCH_Condition()
 {	
@@ -330,9 +330,9 @@ FUNC INT DIA_Addon_Snaf_HOCH_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_HOCH_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_HOCH_15_00"); //Я от Хуно.
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Гляжу, ты нашел того, кого искал.
-	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //Поднимись наверх, тебя там ждут.
+	AI_Output (other, self, "DIA_Addon_Snaf_HOCH_15_00"); //РЇ РѕС‚ РҐСѓРЅРѕ.
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_01"); //Р“Р»СЏР¶Сѓ, С‚С‹ РЅР°С€РµР» С‚РѕРіРѕ, РєРѕРіРѕ РёСЃРєР°Р».
+	AI_Output (self, other, "DIA_Addon_Snaf_HOCH_01_02"); //РџРѕРґРЅРёРјРёСЃСЊ РЅР°РІРµСЂС…, С‚РµР±СЏ С‚Р°Рј Р¶РґСѓС‚.
 		
 	AI_StopProcessInfos (self);
 	AI_Teleport (Fisk,"BL_INN_UP_06");
@@ -353,7 +353,7 @@ instance DIA_Addon_Snaf_People (C_INFO)
 	condition   = DIA_Addon_Snaf_People_Condition;
 	information = DIA_Addon_Snaf_People_Info;
 	permanent   = TRUE;
-	description = "Что местные думают об Эстебане?";
+	description = "Р§С‚Рѕ РјРµСЃС‚РЅС‹Рµ РґСѓРјР°СЋС‚ РѕР± Р­СЃС‚РµР±Р°РЅРµ?";
 };
 FUNC INT DIA_Addon_Snaf_People_Condition()
 {	
@@ -366,14 +366,14 @@ FUNC INT DIA_Addon_Snaf_People_Condition()
 FUNC VOID DIA_Addon_Snaf_People_Info()
 {
 	
-	AI_Output (other, self, "DIA_Addon_Snaf_People_15_00"); //Что местные думают об Эстебане?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_01_01"); //Тебе следует быть более точным в своих вопросах...
+	AI_Output (other, self, "DIA_Addon_Snaf_People_15_00"); //Р§С‚Рѕ РјРµСЃС‚РЅС‹Рµ РґСѓРјР°СЋС‚ РѕР± Р­СЃС‚РµР±Р°РЅРµ?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_01_01"); //РўРµР±Рµ СЃР»РµРґСѓРµС‚ Р±С‹С‚СЊ Р±РѕР»РµРµ С‚РѕС‡РЅС‹Рј РІ СЃРІРѕРёС… РІРѕРїСЂРѕСЃР°С…...
 	if (Kosten_Einmal == FALSE)
 	&& (MIS_SnafHammer != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //Информация стоит денег, приятель...
-		AI_Output (other, self, "DIA_Addon_Snaf_People_15_03"); //Ну, и сколько же она стоит?
-		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //Десятка вполне сойдет.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_02"); //РРЅС„РѕСЂРјР°С†РёСЏ СЃС‚РѕРёС‚ РґРµРЅРµРі, РїСЂРёСЏС‚РµР»СЊ...
+		AI_Output (other, self, "DIA_Addon_Snaf_People_15_03"); //РќСѓ, Рё СЃРєРѕР»СЊРєРѕ Р¶Рµ РѕРЅР° СЃС‚РѕРёС‚?
+		AI_Output (self, other, "DIA_Addon_Snaf_People_01_04"); //Р”РµСЃСЏС‚РєР° РІРїРѕР»РЅРµ СЃРѕР№РґРµС‚.
 		
 		Snaf_Tip_Kosten = 10;
 		Kosten_Einmal = TRUE;
@@ -381,21 +381,21 @@ FUNC VOID DIA_Addon_Snaf_People_Info()
 	
 	Info_ClearChoices (DIA_Addon_Snaf_People);
 	Info_AddChoice (DIA_Addon_Snaf_People, DIALOG_BACK, DIA_Addon_Snaf_People_BACK);
-	Info_AddChoice (DIA_Addon_Snaf_People, "Поль", DIA_Addon_Snaf_People_Paul);
+	Info_AddChoice (DIA_Addon_Snaf_People, "РџРѕР»СЊ", DIA_Addon_Snaf_People_Paul);
 	Info_AddChoice (DIA_Addon_Snaf_People, "Huno", DIA_Addon_Snaf_People_Huno);
-	Info_AddChoice (DIA_Addon_Snaf_People, "Фиск", DIA_Addon_Snaf_People_Fisk);
-	Info_AddChoice (DIA_Addon_Snaf_People, "Эмилио", DIA_Addon_Snaf_People_Emilio);
+	Info_AddChoice (DIA_Addon_Snaf_People, "Р¤РёСЃРє", DIA_Addon_Snaf_People_Fisk);
+	Info_AddChoice (DIA_Addon_Snaf_People, "Р­РјРёР»РёРѕ", DIA_Addon_Snaf_People_Emilio);
 	if (!Npc_IsDead (Senyan))
 	{
-		Info_AddChoice (DIA_Addon_Snaf_People, "Сеньян", DIA_Addon_Snaf_People_Senyan);
+		Info_AddChoice (DIA_Addon_Snaf_People, "РЎРµРЅСЊСЏРЅ", DIA_Addon_Snaf_People_Senyan);
 	};
-	Info_AddChoice (DIA_Addon_Snaf_People, "Леннар", DIA_Addon_Snaf_People_Lennar);
-	Info_AddChoice (DIA_Addon_Snaf_People, "Финн", DIA_Addon_Snaf_People_Finn);
+	Info_AddChoice (DIA_Addon_Snaf_People, "Р›РµРЅРЅР°СЂ", DIA_Addon_Snaf_People_Lennar);
+	Info_AddChoice (DIA_Addon_Snaf_People, "Р¤РёРЅРЅ", DIA_Addon_Snaf_People_Finn);
 };
 // --------------------------------------------
 	func void B_Addon_Snaf_NotEnough()
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_NotEnough_01_00"); //Да у тебя золота не хватает, парень!
+		AI_Output (self, other, "DIA_Addon_Snaf_NotEnough_01_00"); //Р”Р° Сѓ С‚РµР±СЏ Р·РѕР»РѕС‚Р° РЅРµ С…РІР°С‚Р°РµС‚, РїР°СЂРµРЅСЊ!
 	};
 
 FUNC VOID DIA_Addon_Snaf_People_BACK()
@@ -404,10 +404,10 @@ FUNC VOID DIA_Addon_Snaf_People_BACK()
 };
 FUNC VOID DIA_Addon_Snaf_People_Paul()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Paul_15_00"); //А что Пол?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Paul_15_00"); //Рђ С‡С‚Рѕ РџРѕР»?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //Не думаю, что он без ума от Эстебана. Из-за того, что он работает на Хуно, в шахту ему никогда не попасть.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Paul_01_01"); //РќРµ РґСѓРјР°СЋ, С‡С‚Рѕ РѕРЅ Р±РµР· СѓРјР° РѕС‚ Р­СЃС‚РµР±Р°РЅР°. РР·-Р·Р° С‚РѕРіРѕ, С‡С‚Рѕ РѕРЅ СЂР°Р±РѕС‚Р°РµС‚ РЅР° РҐСѓРЅРѕ, РІ С€Р°С…С‚Сѓ РµРјСѓ РЅРёРєРѕРіРґР° РЅРµ РїРѕРїР°СЃС‚СЊ.
 	}
 	else
 	{
@@ -416,17 +416,17 @@ FUNC VOID DIA_Addon_Snaf_People_Paul()
 };
 FUNC VOID DIA_Addon_Snaf_People_Huno()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Что Хуно думает об Эстебане?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //А, Хуно! Я про него почти ничего не знаю.
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(ухмыляется) Конечно, денег я за это с тебя не возьму.
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Huno_15_00"); //Р§С‚Рѕ РҐСѓРЅРѕ РґСѓРјР°РµС‚ РѕР± Р­СЃС‚РµР±Р°РЅРµ?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_01"); //Рђ, РҐСѓРЅРѕ! РЇ РїСЂРѕ РЅРµРіРѕ РїРѕС‡С‚Рё РЅРёС‡РµРіРѕ РЅРµ Р·РЅР°СЋ.
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Huno_01_02"); //(СѓС…РјС‹Р»СЏРµС‚СЃСЏ) РљРѕРЅРµС‡РЅРѕ, РґРµРЅРµРі СЏ Р·Р° СЌС‚Рѕ СЃ С‚РµР±СЏ РЅРµ РІРѕР·СЊРјСѓ.
 };
 FUNC VOID DIA_Addon_Snaf_People_Fisk()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Fisk_15_00"); //А Фиск?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Fisk_15_00"); //Рђ Р¤РёСЃРє?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Фиск есть Фиск. От платит долю Эстебану и перепродает добро, которое он, в основном, получает от пиратов.
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //По мне, так он вряд ли питает добрые чувства к Эстебану. 
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_01"); //Р¤РёСЃРє РµСЃС‚СЊ Р¤РёСЃРє. РћС‚ РїР»Р°С‚РёС‚ РґРѕР»СЋ Р­СЃС‚РµР±Р°РЅСѓ Рё РїРµСЂРµРїСЂРѕРґР°РµС‚ РґРѕР±СЂРѕ, РєРѕС‚РѕСЂРѕРµ РѕРЅ, РІ РѕСЃРЅРѕРІРЅРѕРј, РїРѕР»СѓС‡Р°РµС‚ РѕС‚ РїРёСЂР°С‚РѕРІ.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Fisk_01_02"); //РџРѕ РјРЅРµ, С‚Р°Рє РѕРЅ РІСЂСЏРґ Р»Рё РїРёС‚Р°РµС‚ РґРѕР±СЂС‹Рµ С‡СѓРІСЃС‚РІР° Рє Р­СЃС‚РµР±Р°РЅСѓ. 
 	}
 	else
 	{
@@ -435,10 +435,10 @@ FUNC VOID DIA_Addon_Snaf_People_Fisk()
 };
 FUNC VOID DIA_Addon_Snaf_People_Emilio()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Emilio_15_00"); //Как Эмилио относится к Эстебану?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Emilio_15_00"); //РљР°Рє Р­РјРёР»РёРѕ РѕС‚РЅРѕСЃРёС‚СЃСЏ Рє Р­СЃС‚РµР±Р°РЅСѓ?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Emilio_01_01"); //Ну, свечку за его душу он вряд ли когда-нибудь поставит, это точно.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Emilio_01_01"); //РќСѓ, СЃРІРµС‡РєСѓ Р·Р° РµРіРѕ РґСѓС€Сѓ РѕРЅ РІСЂСЏРґ Р»Рё РєРѕРіРґР°-РЅРёР±СѓРґСЊ РїРѕСЃС‚Р°РІРёС‚, СЌС‚Рѕ С‚РѕС‡РЅРѕ.
 	}
 	else
 	{
@@ -447,10 +447,10 @@ FUNC VOID DIA_Addon_Snaf_People_Emilio()
 };
 FUNC VOID DIA_Addon_Snaf_People_Senyan()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Senyan_15_00"); //А Сеньян?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Senyan_15_00"); //Рђ РЎРµРЅСЊСЏРЅ?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //Сеньян - один из ребят Эстебана. Довольно давно работает на него.  
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Senyan_01_01"); //РЎРµРЅСЊСЏРЅ - РѕРґРёРЅ РёР· СЂРµР±СЏС‚ Р­СЃС‚РµР±Р°РЅР°. Р”РѕРІРѕР»СЊРЅРѕ РґР°РІРЅРѕ СЂР°Р±РѕС‚Р°РµС‚ РЅР° РЅРµРіРѕ.  
 	}
 	else
 	{
@@ -459,17 +459,17 @@ FUNC VOID DIA_Addon_Snaf_People_Senyan()
 };
 FUNC VOID DIA_Addon_Snaf_People_Lennar()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //Какого мнения об Эстебане Леннар?
-	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //Насколько я могу сказать, он не имеет никакого мнения об Эстебане.
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Lennar_15_00"); //РљР°РєРѕРіРѕ РјРЅРµРЅРёСЏ РѕР± Р­СЃС‚РµР±Р°РЅРµ Р›РµРЅРЅР°СЂ?
+	AI_Output (self, other, "DIA_Addon_Snaf_People_Lennar_01_01"); //РќР°СЃРєРѕР»СЊРєРѕ СЏ РјРѕРіСѓ СЃРєР°Р·Р°С‚СЊ, РѕРЅ РЅРµ РёРјРµРµС‚ РЅРёРєР°РєРѕРіРѕ РјРЅРµРЅРёСЏ РѕР± Р­СЃС‚РµР±Р°РЅРµ.
 };
 
 func VOID DIA_Addon_Snaf_People_Finn()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_People_Finn_15_00"); //А что с Финном?
+	AI_Output (other, self, "DIA_Addon_Snaf_People_Finn_15_00"); //Рђ С‡С‚Рѕ СЃ Р¤РёРЅРЅРѕРј?
 	if (B_GiveInvItems(other, self, ItMi_Gold, Snaf_Tip_Kosten))
 	{
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //Отличный рудокоп. Он золото носом чует.
-		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Эстебан высоко его за это ценит. Так что они друг с другом отлично ладят. 
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_01"); //РћС‚Р»РёС‡РЅС‹Р№ СЂСѓРґРѕРєРѕРї. РћРЅ Р·РѕР»РѕС‚Рѕ РЅРѕСЃРѕРј С‡СѓРµС‚.
+		AI_Output (self, other, "DIA_Addon_Snaf_People_Finn_01_02"); //Р­СЃС‚РµР±Р°РЅ РІС‹СЃРѕРєРѕ РµРіРѕ Р·Р° СЌС‚Рѕ С†РµРЅРёС‚. РўР°Рє С‡С‚Рѕ РѕРЅРё РґСЂСѓРі СЃ РґСЂСѓРіРѕРј РѕС‚Р»РёС‡РЅРѕ Р»Р°РґСЏС‚. 
 	}
 	else
 	{
@@ -487,7 +487,7 @@ instance DIA_Addon_Snaf_Himself (C_INFO)
 	condition   = DIA_Addon_Snaf_Himself_Condition;
 	information = DIA_Addon_Snaf_Himself_Info;
 	permanent   = FALSE;
-	description = "А ты? Что ты думаешь об Эстебане?";
+	description = "Рђ С‚С‹? Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± Р­СЃС‚РµР±Р°РЅРµ?";
 };
 FUNC INT DIA_Addon_Snaf_Himself_Condition()
 {	
@@ -499,8 +499,8 @@ FUNC INT DIA_Addon_Snaf_Himself_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_Himself_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //А ты? Что ты думаешь об Эстебане?
-	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //Я думаю, что нам не стоит о нем трепаться, а то мало ли...
+	AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_00"); //Рђ С‚С‹? Р§С‚Рѕ С‚С‹ РґСѓРјР°РµС€СЊ РѕР± Р­СЃС‚РµР±Р°РЅРµ?
+	AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_01"); //РЇ РґСѓРјР°СЋ, С‡С‚Рѕ РЅР°Рј РЅРµ СЃС‚РѕРёС‚ Рѕ РЅРµРј С‚СЂРµРїР°С‚СЊСЃСЏ, Р° С‚Рѕ РјР°Р»Рѕ Р»Рё...
 	//AI_Output (other, self, "DIA_Addon_Snaf_Himself_15_02"); //Und?
 	//AI_Output (self, other, "DIA_Addon_Snaf_Himself_01_03"); //Ende der Geschichte. //wav fehlt
 };
@@ -515,7 +515,7 @@ instance DIA_Addon_Snaf_PERM (C_INFO)
 	condition   = DIA_Addon_Snaf_PERM_Condition;
 	information = DIA_Addon_Snaf_PERM_Info;
 	permanent   = TRUE;
-	description = "Как работается?";
+	description = "РљР°Рє СЂР°Р±РѕС‚Р°РµС‚СЃСЏ?";
 };
 FUNC INT DIA_Addon_Snaf_PERM_Condition()
 {	
@@ -526,8 +526,8 @@ FUNC INT DIA_Addon_Snaf_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Snaf_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //Как работается?
-	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Лучше некуда! Смерть Эстебана для меня - праздник.
+	AI_Output (other, self, "DIA_Addon_Snaf_PERM_15_00"); //РљР°Рє СЂР°Р±РѕС‚Р°РµС‚СЃСЏ?
+	AI_Output (self, other, "DIA_Addon_Snaf_PERM_01_01"); //Р›СѓС‡С€Рµ РЅРµРєСѓРґР°! РЎРјРµСЂС‚СЊ Р­СЃС‚РµР±Р°РЅР° РґР»СЏ РјРµРЅСЏ - РїСЂР°Р·РґРЅРёРє.
 };
 
 

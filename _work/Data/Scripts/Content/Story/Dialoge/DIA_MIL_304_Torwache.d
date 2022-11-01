@@ -28,7 +28,7 @@ instance DIA_Mil_304_Torwache_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Condition;
 	information	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"Как дела?";
+	description	 = 	"РљР°Рє РґРµР»Р°?";
 };
 func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 {	
@@ -39,15 +39,15 @@ func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 };
 func void DIA_Mil_304_Torwache_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Как дела?
+	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //РљР°Рє РґРµР»Р°?
 	if (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Мне не на что жаловаться. Я выполняю свои обязанности, как того желает Иннос.
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //РњРЅРµ РЅРµ РЅР° С‡С‚Рѕ Р¶Р°Р»РѕРІР°С‚СЊСЃСЏ. РЇ РІС‹РїРѕР»РЅСЏСЋ СЃРІРѕРё РѕР±СЏР·Р°РЅРЅРѕСЃС‚Рё, РєР°Рє С‚РѕРіРѕ Р¶РµР»Р°РµС‚ РРЅРЅРѕСЃ.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Эй, хватит нести чушь вроде 'как поживаешь'. Убирайся с глаз моих, понятно?
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Р­Р№, С…РІР°С‚РёС‚ РЅРµСЃС‚Рё С‡СѓС€СЊ РІСЂРѕРґРµ 'РєР°Рє РїРѕР¶РёРІР°РµС€СЊ'. РЈР±РёСЂР°Р№СЃСЏ СЃ РіР»Р°Р· РјРѕРёС…, РїРѕРЅСЏС‚РЅРѕ?
 	};
 	 
 	AI_StopProcessInfos (self);

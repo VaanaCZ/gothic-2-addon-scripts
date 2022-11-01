@@ -2,7 +2,7 @@
 instance Pal_200_Hagen (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Лорд Хаген";
+	name 		= "Р›РѕСЂРґ РҐР°РіРµРЅ";
 	guild 		= GIL_PAL;
 	id 			= 200;
 	voice 		= 4;

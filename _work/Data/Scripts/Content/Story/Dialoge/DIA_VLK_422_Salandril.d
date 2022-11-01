@@ -34,7 +34,7 @@ INSTANCE DIA_Salandril_PICKPOCKET (C_INFO)
 	condition	= DIA_Salandril_PICKPOCKET_Condition;
 	information	= DIA_Salandril_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Украсть этот ключ будет легко)";
+	description = "(РЈРєСЂР°СЃС‚СЊ СЌС‚РѕС‚ РєР»СЋС‡ Р±СѓРґРµС‚ Р»РµРіРєРѕ)";
 };
 //----------------------------------------                       
 var int DIA_Salandril_PICKPOCKET_perm;
@@ -103,11 +103,11 @@ func int DIA_Salandril_Hallo_Condition ()
 };
 func void DIA_Salandril_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //Добро пожаловать, путник. Ищешь хорошее зелье?
-	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //У меня большой выбор и умеренные цены. Мои зелья лучше, чем та отрава, что продает Зурис.
+	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //Р”РѕР±СЂРѕ РїРѕР¶Р°Р»РѕРІР°С‚СЊ, РїСѓС‚РЅРёРє. РС‰РµС€СЊ С…РѕСЂРѕС€РµРµ Р·РµР»СЊРµ?
+	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //РЈ РјРµРЅСЏ Р±РѕР»СЊС€РѕР№ РІС‹Р±РѕСЂ Рё СѓРјРµСЂРµРЅРЅС‹Рµ С†РµРЅС‹. РњРѕРё Р·РµР»СЊСЏ Р»СѓС‡С€Рµ, С‡РµРј С‚Р° РѕС‚СЂР°РІР°, С‡С‚Рѕ РїСЂРѕРґР°РµС‚ Р—СѓСЂРёСЃ.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Саландрил торгует зельями. Его лавка находится в верхнем квартале."); 
+	B_LogEntry (TOPIC_CityTrader, "РЎР°Р»Р°РЅРґСЂРёР» С‚РѕСЂРіСѓРµС‚ Р·РµР»СЊСЏРјРё. Р•РіРѕ Р»Р°РІРєР° РЅР°С…РѕРґРёС‚СЃСЏ РІ РІРµСЂС…РЅРµРј РєРІР°СЂС‚Р°Р»Рµ."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trank
@@ -132,8 +132,8 @@ func int DIA_Salandril_Trank_Condition ()
 };
 func void DIA_Salandril_Trank_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //Я слышал, ты был с паладинами в Долине Рудников. Я восхищен.
-	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //Тебе стоит задержаться и взглянуть на мои товары. Вот, например, сейчас у меня есть совершенно особенное зелье. Только для тебя.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //РЇ СЃР»С‹С€Р°Р», С‚С‹ Р±С‹Р» СЃ РїР°Р»Р°РґРёРЅР°РјРё РІ Р”РѕР»РёРЅРµ Р СѓРґРЅРёРєРѕРІ. РЇ РІРѕСЃС…РёС‰РµРЅ.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //РўРµР±Рµ СЃС‚РѕРёС‚ Р·Р°РґРµСЂР¶Р°С‚СЊСЃСЏ Рё РІР·РіР»СЏРЅСѓС‚СЊ РЅР° РјРѕРё С‚РѕРІР°СЂС‹. Р’РѕС‚, РЅР°РїСЂРёРјРµСЂ, СЃРµР№С‡Р°СЃ Сѓ РјРµРЅСЏ РµСЃС‚СЊ СЃРѕРІРµСЂС€РµРЅРЅРѕ РѕСЃРѕР±РµРЅРЅРѕРµ Р·РµР»СЊРµ. РўРѕР»СЊРєРѕ РґР»СЏ С‚РµР±СЏ.
 	
 	CreateInvItems (self,ItPo_Perm_DEX,1);
 };
@@ -147,7 +147,7 @@ instance DIA_Salandril_Trade		(C_INFO)
 	condition	 = 	DIA_Salandril_Trade_Condition;
 	information	 = 	DIA_Salandril_Trade_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Покажи мне свои товары.";
+	description	 =  "РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.";
 	trade		 =  TRUE;
 };
 
@@ -161,11 +161,11 @@ func int DIA_Salandril_Trade_Condition ()
 func void DIA_Salandril_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Salandril_Trade_15_00"); //Покажи мне свои товары.
+	AI_Output (other, self, "DIA_Salandril_Trade_15_00"); //РџРѕРєР°Р¶Рё РјРЅРµ СЃРІРѕРё С‚РѕРІР°СЂС‹.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //С удовольствием, преподобный брат.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //РЎ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј, РїСЂРµРїРѕРґРѕР±РЅС‹Р№ Р±СЂР°С‚.
 		if (MIS_Serpentes_MinenAnteil_KDF == LOG_RUNNING)
 		{
 			SC_KnowsProspektorSalandril = TRUE;
@@ -173,7 +173,7 @@ func void DIA_Salandril_Trade_Info ()
 	};
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_02"); //С удовольствием, о, благородный воин.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_02"); //РЎ СѓРґРѕРІРѕР»СЊСЃС‚РІРёРµРј, Рѕ, Р±Р»Р°РіРѕСЂРѕРґРЅС‹Р№ РІРѕРёРЅ.
 	};
 };
 
@@ -222,7 +222,7 @@ instance DIA_Salandril_KLOSTER		(C_INFO)
 	condition	 = 	DIA_Salandril_KLOSTER_Condition;
 	information	 = 	DIA_Salandril_KLOSTER_Info;
 
-	description	 = 	"Ты должен отправиться в монастырь, чтобы предстать перед судом.";
+	description	 = 	"РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, С‡С‚РѕР±С‹ РїСЂРµРґСЃС‚Р°С‚СЊ РїРµСЂРµРґ СЃСѓРґРѕРј.";
 };
 
 func int DIA_Salandril_KLOSTER_Condition ()
@@ -235,19 +235,19 @@ func int DIA_Salandril_KLOSTER_Condition ()
 
 func void DIA_Salandril_KLOSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //Ты должен отправиться в монастырь, чтобы предстать перед судом.
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //Что? У тебя крыша поехала? Черта с два! У этих жалких магов нет никаких доказательств против меня.
+	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //РўС‹ РґРѕР»Р¶РµРЅ РѕС‚РїСЂР°РІРёС‚СЊСЃСЏ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, С‡С‚РѕР±С‹ РїСЂРµРґСЃС‚Р°С‚СЊ РїРµСЂРµРґ СЃСѓРґРѕРј.
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //Р§С‚Рѕ? РЈ С‚РµР±СЏ РєСЂС‹С€Р° РїРѕРµС…Р°Р»Р°? Р§РµСЂС‚Р° СЃ РґРІР°! РЈ СЌС‚РёС… Р¶Р°Р»РєРёС… РјР°РіРѕРІ РЅРµС‚ РЅРёРєР°РєРёС… РґРѕРєР°Р·Р°С‚РµР»СЊСЃС‚РІ РїСЂРѕС‚РёРІ РјРµРЅСЏ.
 
 	if (hero.guild == GIL_KDF)
 	&& (SC_KnowsProspektorSalandril == TRUE)		
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //А как насчет этих фальшивых акций, которыми ты наводнил всю страну? На них твоя подпись. Ты виновен.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //Рђ РєР°Рє РЅР°СЃС‡РµС‚ СЌС‚РёС… С„Р°Р»СЊС€РёРІС‹С… Р°РєС†РёР№, РєРѕС‚РѕСЂС‹РјРё С‚С‹ РЅР°РІРѕРґРЅРёР» РІСЃСЋ СЃС‚СЂР°РЅСѓ? РќР° РЅРёС… С‚РІРѕСЏ РїРѕРґРїРёСЃСЊ. РўС‹ РІРёРЅРѕРІРµРЅ.
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //У меня есть приказ, и я выполню его. Так что, либо ты пойдешь сам, либо мне придется заставить тебя.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //РЈ РјРµРЅСЏ РµСЃС‚СЊ РїСЂРёРєР°Р·, Рё СЏ РІС‹РїРѕР»РЅСЋ РµРіРѕ. РўР°Рє С‡С‚Рѕ, Р»РёР±Рѕ С‚С‹ РїРѕР№РґРµС€СЊ СЃР°Рј, Р»РёР±Рѕ РјРЅРµ РїСЂРёРґРµС‚СЃСЏ Р·Р°СЃС‚Р°РІРёС‚СЊ С‚РµР±СЏ.
 	};
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //Что? Да я протащу тебя через весь город за шиворот, как паршивого щенка, и вышвырну за ворота.
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //Р§С‚Рѕ? Р”Р° СЏ РїСЂРѕС‚Р°С‰Сѓ С‚РµР±СЏ С‡РµСЂРµР· РІРµСЃСЊ РіРѕСЂРѕРґ Р·Р° С€РёРІРѕСЂРѕС‚, РєР°Рє РїР°СЂС€РёРІРѕРіРѕ С‰РµРЅРєР°, Рё РІС‹С€РІС‹СЂРЅСѓ Р·Р° РІРѕСЂРѕС‚Р°.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };
@@ -262,7 +262,7 @@ instance DIA_Salandril_GehinsKloster		(C_INFO)
 	condition	 = 	DIA_Salandril_GehinsKloster_Condition;
 	information	 = 	DIA_Salandril_GehinsKloster_Info;
 
-	description	 = 	"Так ты пойдешь в монастырь, или тебя еще раз проучить?..";
+	description	 = 	"РўР°Рє С‚С‹ РїРѕР№РґРµС€СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РёР»Рё С‚РµР±СЏ РµС‰Рµ СЂР°Р· РїСЂРѕСѓС‡РёС‚СЊ?..";
 };
 
 func int DIA_Salandril_GehinsKloster_Condition ()
@@ -277,8 +277,8 @@ func int DIA_Salandril_GehinsKloster_Condition ()
 
 func void DIA_Salandril_GehinsKloster_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //Так ты пойдешь в монастырь, или тебя еще раз проучить?..
-	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //Ты еще пожалеешь об этом. Да, черт тебя побери, я пойду в этот монастырь, но тебе это просто так с рук не сойдет.
+	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //РўР°Рє С‚С‹ РїРѕР№РґРµС€СЊ РІ РјРѕРЅР°СЃС‚С‹СЂСЊ, РёР»Рё С‚РµР±СЏ РµС‰Рµ СЂР°Р· РїСЂРѕСѓС‡РёС‚СЊ?..
+	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //РўС‹ РµС‰Рµ РїРѕР¶Р°Р»РµРµС€СЊ РѕР± СЌС‚РѕРј. Р”Р°, С‡РµСЂС‚ С‚РµР±СЏ РїРѕР±РµСЂРё, СЏ РїРѕР№РґСѓ РІ СЌС‚РѕС‚ РјРѕРЅР°СЃС‚С‹СЂСЊ, РЅРѕ С‚РµР±Рµ СЌС‚Рѕ РїСЂРѕСЃС‚Рѕ С‚Р°Рє СЃ СЂСѓРє РЅРµ СЃРѕР№РґРµС‚.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KlosterUrteil");
 	MIS_Serpentes_BringSalandril_SLD = LOG_SUCCESS;

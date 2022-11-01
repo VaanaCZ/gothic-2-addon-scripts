@@ -3,7 +3,7 @@
 // ------------------
 // wird durch PERC_DRAWWEAPON 
 // und durch B_AssessPlayer aufgerufen
-// Reichweite ist über Wahrnehmung eingestellt (PERC_DIST_DIALOG)
+// Reichweite ist ÑŒber Wahrnehmung eingestellt (PERC_DIST_DIALOG)
 // ***************************************************************
 
 func int B_AssessDrawWeapon()
@@ -16,7 +16,7 @@ func int B_AssessDrawWeapon()
 		return FALSE;
 	};	
 
-	// ------ DISTANZ zu Täter größer als PERC_DIST_DIALOG ------
+	// ------ DISTANZ zu TÐ´ter grÑ†Ð¯er als PERC_DIST_DIALOG ------
 	if (Npc_GetDistToNpc(self, other) > PERC_DIST_DIALOG)
 	{
 		return FALSE;

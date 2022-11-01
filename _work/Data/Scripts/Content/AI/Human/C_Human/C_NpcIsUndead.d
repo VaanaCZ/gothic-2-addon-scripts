@@ -1,7 +1,7 @@
 // ******************************************************************
 // C_NpcIsUndead
 // -------------
-// checkt ob der übergebene NSC ein untoter ist
+// checkt ob der ÑŒbergebene NSC ein untoter ist
 // ******************************************************************
 
 func int C_NpcIsUndead(var C_NPC slf)

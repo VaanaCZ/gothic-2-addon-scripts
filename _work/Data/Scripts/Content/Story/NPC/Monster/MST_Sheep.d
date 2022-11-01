@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Sheep(C_Npc)			
 {
 	//----- Maonster ----
-	name							=	"Œ‚ˆ‡";
+	name							=	"–û–≤—Ü–∞";
 	guild							=	GIL_SHEEP;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHEEP;
 	level							=	1;
@@ -36,7 +36,7 @@ PROTOTYPE Mst_Default_Sheep(C_Npc)
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----
-	//fight_tactic					= FAI_Giant_Rat;//Schafe k‰mpfen nicht!!
+	//fight_tactic					= FAI_Giant_Rat;//Schafe k–¥mpfen nicht!!
 
 	//----- Senses & Ranges ----
 	senses			= 	SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
@@ -101,9 +101,9 @@ INSTANCE Hammel	(Mst_Default_Sheep)
 
 INSTANCE Follow_Sheep	(Mst_Default_Sheep)
 {
-	name						= "¡ÂÚÒË";
+	name						= "–ë–µ—Ç—Å–∏";
 	
-	aivar[AIV_ToughGuy] = TRUE; //Liesel knn getˆtet werden, ohne daﬂ jemand sich anpiﬂt!
+	aivar[AIV_ToughGuy] = TRUE; //Liesel knn get—Ütet werden, ohne da–Ø jemand sich anpi–Øt!
 		
 	B_SetVisuals_Sheep();
 	Npc_SetToFistMode(self);
@@ -118,7 +118,7 @@ INSTANCE Follow_Sheep	(Mst_Default_Sheep)
 
 INSTANCE Follow_Sheep_AKIL	(Mst_Default_Sheep)
 {
-	name						= "Œ‚ˆ‡";
+	name						= "–û–≤—Ü–∞";
 	
 	aivar[AIV_ToughGuy] = TRUE;
 	

@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Telbor_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Telbor_NW_Hi_Condition;
 	information = DIA_Addon_Telbor_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "Вернулся к работе на поле?";
+	description = "Р’РµСЂРЅСѓР»СЃСЏ Рє СЂР°Р±РѕС‚Рµ РЅР° РїРѕР»Рµ?";
 };
 FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 {		
@@ -72,13 +72,13 @@ FUNC INT DIA_Addon_Telbor_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Telbor_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//Вернулся к работе на поле?
-	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//Эй, ты же парень, который спас мне жизнь! Да, я снова тружусь.
+	AI_Output (other, self, "DIA_Addon_Telbor_NW_Hi_15_00");//Р’РµСЂРЅСѓР»СЃСЏ Рє СЂР°Р±РѕС‚Рµ РЅР° РїРѕР»Рµ?
+	AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_01");//Р­Р№, С‚С‹ Р¶Рµ РїР°СЂРµРЅСЊ, РєРѕС‚РѕСЂС‹Р№ СЃРїР°СЃ РјРЅРµ Р¶РёР·РЅСЊ! Р”Р°, СЏ СЃРЅРѕРІР° С‚СЂСѓР¶СѓСЃСЊ.
 	
 	if !Npc_IsDead (Egill)
 	&& !Npc_IsDead (Ehnim)
 	{
-		AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_02");//Особенно тяжело приходится с этими чокнутыми братьями. Черт, даже с бандитами было проще...
+		AI_Output (self, other, "DIA_Addon_Telbor_NW_Hi_12_02");//РћСЃРѕР±РµРЅРЅРѕ С‚СЏР¶РµР»Рѕ РїСЂРёС…РѕРґРёС‚СЃСЏ СЃ СЌС‚РёРјРё С‡РѕРєРЅСѓС‚С‹РјРё Р±СЂР°С‚СЊСЏРјРё. Р§РµСЂС‚, РґР°Р¶Рµ СЃ Р±Р°РЅРґРёС‚Р°РјРё Р±С‹Р»Рѕ РїСЂРѕС‰Рµ...
 	};
 };
 

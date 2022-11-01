@@ -8,7 +8,7 @@
 instance SLD_811_Wolf_DI (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Âóëüô";
+	name 		= "Ð’ÑƒÐ»ÑŒÑ„";
 	guild 		= GIL_SLD;
 	id 			= 8110;
 	voice 		= 8;
@@ -43,8 +43,8 @@ instance SLD_811_Wolf_DI (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 50); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 50); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_8110;

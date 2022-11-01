@@ -2,7 +2,7 @@
 instance VLK_4301_Addon_Farim (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ôàðèì"; 
+	name 		= "Ð¤Ð°Ñ€Ð¸Ð¼"; 
 	guild 		= GIL_VLK;
 	id 			= 4301;
 	voice 		= 11;
@@ -19,7 +19,7 @@ instance VLK_4301_Addon_Farim (Npc_Default)
 	fight_tactic	= FAI_HUMAN_NORMAL;	
 	
 	// ------ Equippte Waffen ------																
-	CreateInvItems (self, ItMi_Aquamarine, 1);	//Joly: für Mission							
+	CreateInvItems (self, ItMi_Aquamarine, 1);	//Joly: fÑŒr Mission							
 	EquipItem	(self, ItMw_1h_Bau_Mace); 
 	
 	

@@ -1,7 +1,7 @@
 instance Vlk_2001_Syra (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Ñèðà";
+	name 		= "Ð¡Ð¸Ñ€Ð°";
 	guild 		= GIL_VLK;
 	id 			= 2001;
 	voice 		= 16;
@@ -30,8 +30,8 @@ instance Vlk_2001_Syra (Npc_Default)
 		// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 50); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÐ´ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 50); //Grenzen fÑŒr Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_2001;

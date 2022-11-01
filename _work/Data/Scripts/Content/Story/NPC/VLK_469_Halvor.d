@@ -1,7 +1,7 @@
 instance VLK_469_Halvor (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "’‡Î‚Ó"; 
+	name 		= "–•–∞–ª–≤–æ—Ä"; 
 	guild 		= GIL_VLK;
 	id 			= 469;
 	voice 		= 6;
@@ -21,7 +21,7 @@ instance VLK_469_Halvor (Npc_Default)
 	EquipItem	(self, ItMw_1H_Mace_L_03); 
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H–¥ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_NormalBart11, BodyTex_N,ITAR_Vlk_M);	

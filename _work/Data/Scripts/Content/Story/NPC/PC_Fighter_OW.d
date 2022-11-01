@@ -5,7 +5,7 @@
 INSTANCE PC_Fighter_OW (Npc_Default)	
 {
 	// ------ NSC ------
-	name 		= "Горн";
+	name 		= "Р“РѕСЂРЅ";
 	guild 		= GIL_NONE;
 	id 			= 3;
 	voice 		= 12;
