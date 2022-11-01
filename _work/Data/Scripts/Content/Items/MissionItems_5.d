@@ -1,5 +1,5 @@
  //**********************************************************************************
-//	ItWr_XardasLetterToOpenBook_MIS  an den SC um die HALLEN von Irdorath zu ˆffnen!
+//	ItWr_XardasLetterToOpenBook_MIS  an den SC um die HALLEN von Irdorath zu √∂ffnen!
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_XardasLetterToOpenBook_MIS		(C_Item)
@@ -29,18 +29,18 @@ func void Use_XardasLetterToOpenBook ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Podejrzewa≥em, øe ürÛd≥em z≥a w GÛrniczej Dolinie by≥ jeden ze smokÛw."					);
-					Doc_PrintLines	( nDocID,  0, "Myli≥em siÍ."					);
-					Doc_PrintLines	( nDocID,  0, "Jeúli wszystko przebieg≥o zgodnie z moim"					);
+					Doc_PrintLines	( nDocID,  0, "Podejrzewa≈Çem, ≈ºe ≈∫r√≥d≈Çem z≈Ça w G√≥rniczej Dolinie by≈Ç jeden ze smok√≥w."					);
+					Doc_PrintLines	( nDocID,  0, "Myli≈Çem siƒô."					);
+					Doc_PrintLines	( nDocID,  0, "Je≈õli wszystko przebieg≈Ço zgodnie z moim"					);
 					Doc_PrintLines	( nDocID,  0, "planem, szukasz teraz zapewne Dworu Irdorath."					);
-					Doc_PrintLines	( nDocID,  0, "Ksiπøka, ktÛrπ da≥eú Pyrokarowi, zawiera wszystkie potrzebne Ci wskazÛwki."					);
-					Doc_PrintLines	( nDocID,  0, "Powinienem by≥ siÍ domyúliÊ, dlaczego Poszukiwacze tak bardzo"					);
-					Doc_PrintLines	( nDocID,  0, "chcieli jπ zdobyÊ."					);
-					Doc_PrintLines	( nDocID,  0, "Musisz jπ odzyskaÊ!"					);
-					Doc_PrintLines	( nDocID,  0, "Otworzysz jπ s≥owami 'XARAK BENDARDO'. Tylko nie mÛw o tym nikomu!"					);
-					Doc_PrintLines	( nDocID,  0, "MuszÍ zajπÊ siÍ teraz waøniejszymi sprawami."					);
-					Doc_PrintLines	( nDocID,  0, "Odtπd jesteú zdany jedynie na siebie. Tylko Ty moøesz pokonaÊ ürÛd≥o z≥a."					);
-					Doc_PrintLines	( nDocID,  0, "Jeszcze siÍ spotkamy!"					);
+					Doc_PrintLines	( nDocID,  0, "KsiƒÖ≈ºka, kt√≥rƒÖ da≈Çe≈õ Pyrokarowi, zawiera wszystkie potrzebne Ci wskaz√≥wki."					);
+					Doc_PrintLines	( nDocID,  0, "Powinienem by≈Ç siƒô domy≈õliƒá, dlaczego Poszukiwacze tak bardzo"					);
+					Doc_PrintLines	( nDocID,  0, "chcieli jƒÖ zdobyƒá."					);
+					Doc_PrintLines	( nDocID,  0, "Musisz jƒÖ odzyskaƒá!"					);
+					Doc_PrintLines	( nDocID,  0, "Otworzysz jƒÖ s≈Çowami 'XARAK BENDARDO'. Tylko nie m√≥w o tym nikomu!"					);
+					Doc_PrintLines	( nDocID,  0, "Muszƒô zajƒÖƒá siƒô teraz wa≈ºniejszymi sprawami."					);
+					Doc_PrintLines	( nDocID,  0, "OdtƒÖd jeste≈õ zdany jedynie na siebie. Tylko Ty mo≈ºesz pokonaƒá ≈∫r√≥d≈Ço z≈Ça."					);
+					Doc_PrintLines	( nDocID,  0, "Jeszcze siƒô spotkamy!"					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
@@ -49,7 +49,7 @@ func void Use_XardasLetterToOpenBook ()
 
 	if(MIS_Xardas_SCCanOpenIrdorathBook == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"W swoim liúcie Xardas poinformowa≥ mnie, jakie s≥owa otwierajπ ksiÍgÍ DW”R IRDORATH."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"W swoim li≈õcie Xardas poinformowa≈Ç mnie, jakie s≈Çowa otwierajƒÖ ksiƒôgƒô DW√ìR IRDORATH."); 
 	};
 
 	MIS_Xardas_SCCanOpenIrdorathBook  = TRUE;	//Joly:  Spieler kann nun das Buch im Kloster lesen und findet so die geheime Bibliothek!
@@ -57,7 +57,7 @@ func void Use_XardasLetterToOpenBook ()
 
 
 //**********************************************************************************
-//	ItKe_MonastarySecretLibrary_Mis 		Schl¸ssel zur geheimen Bibliothek
+//	ItKe_MonastarySecretLibrary_Mis 		Schl√ºssel zur geheimen Bibliothek
 //**********************************************************************************
 
 INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
@@ -74,7 +74,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 	description			= 	name;
 	
-	TEXT[0]				= 	"z ksiÍgi 'DwÛr Irdorath'";
+	TEXT[0]				= 	"z ksiƒôgi 'Dw√≥r Irdorath'";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -84,7 +84,7 @@ INSTANCE ItKe_MonastarySecretLibrary_Mis (C_Item)
 
 INSTANCE ItWr_HallsofIrdorath_Mis (C_ITEM) 
 {	
-	name 					=	"DwÛr Irdorath";
+	name 					=	"Dw√≥r Irdorath";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -118,7 +118,7 @@ FUNC VOID Use_HallsofIrdorath ()
 			B_GivePlayerXP (XP_HallsofIrdorathIsOpen);
 			ItWr_HallsofIrdorathIsOpen = TRUE;
 			
-			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Uda≥o mi siÍ otworzyÊ ksiÍgÍ Xardasa. Znalaz≥em w niej tajemniczπ wiadomoúÊ i dziwny klucz. Kto wie, co jeszcze kryje siÍ w klasztornych podziemiach."); 
+			B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Uda≈Ço mi siƒô otworzyƒá ksiƒôgƒô Xardasa. Znalaz≈Çem w niej tajemniczƒÖ wiadomo≈õƒá i dziwny klucz. Kto wie, co jeszcze kryje siƒô w klasztornych podziemiach."); 
 		}
 		else
 		{
@@ -136,7 +136,7 @@ FUNC VOID Use_HallsofIrdorath ()
 
 INSTANCE ItWr_HallsofIrdorath_Open_Mis (C_ITEM) 
 {	
-	name 					=	"DwÛr Irdorath";
+	name 					=	"Dw√≥r Irdorath";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -157,7 +157,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 {   	 
 	if (ItWr_SCReadsHallsofIrdorath == FALSE)
 	{
-		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Przeczyta≥em ksiÍgÍ Xardasa. Jest w niej wzmianka o tajnej bibliotece, ktÛra zapewne znajduje siÍ w podziemiach klasztoru."); 
+		B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Przeczyta≈Çem ksiƒôgƒô Xardasa. Jest w niej wzmianka o tajnej bibliotece, kt√≥ra zapewne znajduje siƒô w podziemiach klasztoru."); 
 	};
 	
 	ItWr_SCReadsHallsofIrdorath = TRUE;
@@ -177,19 +177,19 @@ FUNC VOID Use_HallsofIrdorath_Open ()
  					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "...tak oto ukry≥em wejúcie do biblioteki za zamaskowanymi drzwiami, by uchroniÊ moje zapiski ze úwiπtyÒ Beliara.");
-					Doc_PrintLines	( nDocID,  0, "Gdyby dowiedzieli siÍ o nich moi bracia, mogliby je pochopnie zniszczyÊ.");		
+					Doc_PrintLines	( nDocID,  0, "...tak oto ukry≈Çem wej≈õcie do biblioteki za zamaskowanymi drzwiami, by uchroniƒá moje zapiski ze ≈õwiƒÖty≈Ñ Beliara.");
+					Doc_PrintLines	( nDocID,  0, "Gdyby dowiedzieli siƒô o nich moi bracia, mogliby je pochopnie zniszczyƒá.");		
 					
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);										
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Teraz zaú wiedzπ tylko, øe úwiπtynie te niegdyú istnia≥y."	);
+					Doc_PrintLines	( nDocID,  1, "Teraz za≈õ wiedzƒÖ tylko, ≈ºe ≈õwiƒÖtynie te niegdy≈õ istnia≈Çy."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Na wszelki wypadek zostawi≥em kilka s≥ug na straøy biblioteki.");
+					Doc_PrintLines	( nDocID,  1, "Na wszelki wypadek zostawi≈Çem kilka s≈Çug na stra≈ºy biblioteki.");
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
 					Doc_PrintLine	( nDocID,  1, ""					);
@@ -206,7 +206,7 @@ FUNC VOID Use_HallsofIrdorath_Open ()
 
 INSTANCE ItWr_XardasSeamapBook_Mis (C_ITEM) 
 {	
-	name 					=	"Zakurzona ksiÍga";
+	name 					=	"Zakurzona ksiƒôga";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;
@@ -240,45 +240,45 @@ FUNC VOID Use_XardasSeamapBook_Mis ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages 
  					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);										
-					Doc_PrintLines	( nDocID,  0, "...Jestem pewien, øe ta budowla to DwÛr Irdorath. Znajduje siÍ on na niewielkiej wyspie, ca≥kiem blisko przystani w Khorinis. Nie ma wπtpliwoúci, øe Beliara interesuje ruda z kopalÒ...");
+					Doc_PrintLines	( nDocID,  0, "...Jestem pewien, ≈ºe ta budowla to Dw√≥r Irdorath. Znajduje siƒô on na niewielkiej wyspie, ca≈Çkiem blisko przystani w Khorinis. Nie ma wƒÖtpliwo≈õci, ≈ºe Beliara interesuje ruda z kopal≈Ñ...");
 					Doc_PrintLines	( nDocID,  0, "");		
 	
 					if (hero.guild == GIL_PAL)
 					{
-						Doc_PrintLines	( nDocID,  0, "...Im sπ potÍøniejsi, tym bardziej przydatni bÍdπ dla niego jako oøywieÒczy s≥udzy. Pokonanie tych upad≥ych paladynÛw to nie≥atwe zadanie. Jeden z nich wpad≥ w moje rÍce. Mam tylko nadziejÍ, øe pozostali nie dowiedzπ siÍ o nim...");		
+						Doc_PrintLines	( nDocID,  0, "...Im sƒÖ potƒô≈ºniejsi, tym bardziej przydatni bƒôdƒÖ dla niego jako o≈ºywie≈Ñczy s≈Çudzy. Pokonanie tych upad≈Çych paladyn√≥w to nie≈Çatwe zadanie. Jeden z nich wpad≈Ç w moje rƒôce. Mam tylko nadziejƒô, ≈ºe pozostali nie dowiedzƒÖ siƒô o nim...");		
 						
 						//2.Seite
-						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "...Upad≥y paladyn nie reaguje na øadne bodüce. Jego zbrojÍ i inne przedmioty schowa≥em w tylnej komorze. Drzwi moøna otworzyÊ tylko od wewnπtrz, wiÍc stworzy≥em na tÍ okazjÍ specjalnπ runÍ teleportacji. Instrukcje sπ w almanachu, by mÛg≥ je znaleüÊ Wybraniec..."	);
+						Doc_PrintLines	( nDocID,  1, "...Upad≈Çy paladyn nie reaguje na ≈ºadne bod≈∫ce. Jego zbrojƒô i inne przedmioty schowa≈Çem w tylnej komorze. Drzwi mo≈ºna otworzyƒá tylko od wewnƒÖtrz, wiƒôc stworzy≈Çem na tƒô okazjƒô specjalnƒÖ runƒô teleportacji. Instrukcje sƒÖ w almanachu, by m√≥g≈Ç je znale≈∫ƒá Wybraniec..."	);
 					};
 					
 					if (hero.guild == GIL_KDF)
 					{
-						Doc_PrintLines	( nDocID,  0, "...Znaki sπ jasne! Gdy przybÍdzie Wybrany, przyda siÍ mu kaøda pomoc. Beliar i tak jest juø zbyt silny. Zgromadzi≥em tu na wszelki wypadek kilka przydatnych artefaktÛw. Podejrzewam, øe Wybraniec bÍdzie jednym z nas,");
+						Doc_PrintLines	( nDocID,  0, "...Znaki sƒÖ jasne! Gdy przybƒôdzie Wybrany, przyda siƒô mu ka≈ºda pomoc. Beliar i tak jest ju≈º zbyt silny. Zgromadzi≈Çem tu na wszelki wypadek kilka przydatnych artefakt√≥w. Podejrzewam, ≈ºe Wybraniec bƒôdzie jednym z nas,");
 						
 						//2.Seite
-						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "dlatego spisa≥em dla niego instrukcje w almanachu."					);
+						Doc_PrintLines	( nDocID,  1, "dlatego spisa≈Çem dla niego instrukcje w almanachu."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "...Nie mam juø z≥udzeÒ. Jesteúmy bezbronni wobec wyrokÛw losu. Gdy Beliar odpowiednio uroúnie w si≥Í, sprÛbuje przejπÊ w≥adzÍ nad ca≥ym úwiatem. MuszÍ znaleüÊ WybraÒca!"); 
+						Doc_PrintLines	( nDocID,  1, "...Nie mam ju≈º z≈Çudze≈Ñ. Jeste≈õmy bezbronni wobec wyrok√≥w losu. Gdy Beliar odpowiednio uro≈õnie w si≈Çƒô, spr√≥buje przejƒÖƒá w≈Çadzƒô nad ca≈Çym ≈õwiatem. Muszƒô znale≈∫ƒá Wybra≈Ñca!"); 
 					};
 					
 					if (hero.guild == GIL_DJG)
 					{
-						Doc_PrintLines	( nDocID,  0, "...Wybuchnie wojna, ktÛra zadecyduje o losach úwiata. Chyba jestem jedynym, ktÛry potrafi odczytaÊ znaki. Pozostali po prostu je ignorujπ. Wybraniec nadejdzie, a jego przyjúcie bÍdzie oznaczaÊ poczπtek wojny. Odwieczna rywalizacja moøe zostaÊ rozstrzygniÍta.");
+						Doc_PrintLines	( nDocID,  0, "...Wybuchnie wojna, kt√≥ra zadecyduje o losach ≈õwiata. Chyba jestem jedynym, kt√≥ry potrafi odczytaƒá znaki. Pozostali po prostu je ignorujƒÖ. Wybraniec nadejdzie, a jego przyj≈õcie bƒôdzie oznaczaƒá poczƒÖtek wojny. Odwieczna rywalizacja mo≈ºe zostaƒá rozstrzygniƒôta.");
 						
 						//2.Seite
-						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 						Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 						Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
-						Doc_PrintLines	( nDocID,  1, "Nie bÍdÍ sta≥ bezczynnie, pozwalajπc innym decydowaÊ o losach úwiata."					);
+						Doc_PrintLines	( nDocID,  1, "Nie bƒôdƒô sta≈Ç bezczynnie, pozwalajƒÖc innym decydowaƒá o losach ≈õwiata."					);
 						Doc_PrintLine	( nDocID,  1, ""					);
-						Doc_PrintLines	( nDocID,  1, "...Ze staroøytnych pism dowiedzia≥em siÍ, jak stworzyÊ legendarnπ broÒ pradawnych Smoczych MistrzÛw. Nie wiem jednak, gdzie szukaÊ potrzebnych sk≥adnikÛw. Na wszelki wypadek zapisa≥em wszystko w almanachu. Kto wie, moøe przyjdzie nam walczyÊ takøe ze smokami."); 
+						Doc_PrintLines	( nDocID,  1, "...Ze staro≈ºytnych pism dowiedzia≈Çem siƒô, jak stworzyƒá legendarnƒÖ bro≈Ñ pradawnych Smoczych Mistrz√≥w. Nie wiem jednak, gdzie szukaƒá potrzebnych sk≈Çadnik√≥w. Na wszelki wypadek zapisa≈Çem wszystko w almanachu. Kto wie, mo≈ºe przyjdzie nam walczyƒá tak≈ºe ze smokami."); 
 					};					
 					
 					Doc_Show		( nDocID );
@@ -304,7 +304,7 @@ INSTANCE ItWr_UseLampIdiot_Mis	(C_Item)
 	on_state[0]			=   UseItWr_UseLampIdiot_Mis;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"z ksiÍgi 'DwÛr Irdorath'";
+	TEXT[0]				=	"z ksiƒôgi 'Dw√≥r Irdorath'";
 };
 func void UseItWr_UseLampIdiot_Mis ()
 {   
@@ -321,7 +321,7 @@ func void UseItWr_UseLampIdiot_Mis ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "               Lampa rzuca úwiat≥o"						);
+					Doc_PrintLine	(nDocID,  0, "               Lampa rzuca ≈õwiat≈Ço"						);
 					Doc_PrintLine	(nDocID,  0, "               na podziemne korytarze"						);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -386,7 +386,7 @@ FUNC VOID Use_Seamap_Irdorath ()
 	{
 		Log_CreateTopic (TOPIC_SHIP, LOG_MISSION);                                                                   
 	    Log_SetTopicStatus(TOPIC_SHIP, LOG_RUNNING);                                                                 
-	    B_LogEntry (TOPIC_SHIP,"Wyglπda na to, øe muszÍ siÍ dostaÊ na wyspÍ nieprzyjaciela. BÍdÍ potrzebowa≥ statku, za≥ogi i kapitana.");
+	    B_LogEntry (TOPIC_SHIP,"WyglƒÖda na to, ≈ºe muszƒô siƒô dostaƒá na wyspƒô nieprzyjaciela. Bƒôdƒô potrzebowa≈Ç statku, za≈Çogi i kapitana.");
 		B_GivePlayerXP (XP_SCKnowsWayToIrdorath);
 	};
 
@@ -394,13 +394,13 @@ FUNC VOID Use_Seamap_Irdorath ()
 };
 
 //**********************************************************************
-//	Gef‰lschter Brief von Lee zum benutzen des Schiffes
+//	Gef√§lschter Brief von Lee zum benutzen des Schiffes
 //**********************************************************************
 
 
 INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 {
-	name 				=	"Akt okrÍtowy";
+	name 				=	"Akt okrƒôtowy";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -412,14 +412,14 @@ INSTANCE ITWr_ForgedShipLetter_MIS	(C_Item)
 	on_state[0]			=   UseITWr_ForgedShipLetter_MIS;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[3]				=	"Upowaønienie";
-	TEXT[4]				=   "do korzystania z okrÍtu paladynÛw.";
+	TEXT[3]				=	"Upowa≈ºnienie";
+	TEXT[4]				=   "do korzystania z okrƒôtu paladyn√≥w.";
 };
 func void UseITWr_ForgedShipLetter_MIS ()
 {   
 		var int nDocID;
 		
-//Joly:VORSICHT : Dieser Brief ist ein ERMƒCHTIGUNGSSCHREIBEN f¸r das Schiff und kann von LEE oder dem Richter stammen. NICHT zwangsl‰ufig von Lord Hagen oder gef‰lscht!!!!!!!!!
+//Joly:VORSICHT : Dieser Brief ist ein ERM√ÑCHTIGUNGSSCHREIBEN f√ºr das Schiff und kann von LEE oder dem Richter stammen. NICHT zwangsl√§ufig von Lord Hagen oder gef√§lscht!!!!!!!!!
 
 		nDocID = 	Doc_Create		();
 					Doc_SetPages	(nDocID,  1);
@@ -427,20 +427,20 @@ func void UseITWr_ForgedShipLetter_MIS ()
 					Doc_SetFont		(nDocID, -1, FONT_BookHeadline);
 					Doc_SetMargins	(nDocID, -1, 50, 50, 50, 50, 1);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, " Upowaønienie"							);
+					Doc_PrintLine	(nDocID,  0, " Upowa≈ºnienie"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
 					Doc_PrintLine	(nDocID,  0, " Ten dokument uprawnia jego"					);
 					Doc_PrintLine	(nDocID,  0, " posiadacza do swobodnego wykorzystania"		);
-					Doc_PrintLine	(nDocID,  0, " krÛlewskiej galery wojennej Lorda Hagena"		);
+					Doc_PrintLine	(nDocID,  0, " kr√≥lewskiej galery wojennej Lorda Hagena"		);
 					Doc_PrintLine	(nDocID,  0, " przez czas nieograniczony."			);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "     krÛlewska pieczÍÊ"							);
+					Doc_PrintLine	(nDocID,  0, "     kr√≥lewska pieczƒôƒá"							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -451,7 +451,7 @@ func void UseITWr_ForgedShipLetter_MIS ()
 
 INSTANCE ITKE_OC_MAINGATE_MIS(C_Item)
 {
-	name 				=	"Klucz do wieøy straønika g≥Ûwnej bramy";
+	name 				=	"Klucz do wie≈ºy stra≈ºnika g≈Ç√≥wnej bramy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -465,9 +465,9 @@ INSTANCE ITKE_OC_MAINGATE_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
-INSTANCE ITKE_SHIP_LEVELCHANGE_MIS(C_Item)	//Joly: f¸hrt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
+INSTANCE ITKE_SHIP_LEVELCHANGE_MIS(C_Item)	//Joly: f√ºhrt zum Levelchange Kapitel 6!!!!!!!!!!!!!!!!!!!!!!
 {
-	name 				=	"Klucz do kajuty kapitaÒskiej";
+	name 				=	"Klucz do kajuty kapita≈Ñskiej";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -498,7 +498,7 @@ INSTANCE ItPo_PotionOfDeath_01_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"£zy Innosa";
+	description		= 	"≈Åzy Innosa";
 	
 	TEXT[1]			= 	"???";				
 	COUNT[1]		= 	Mana_Essenz;
@@ -562,9 +562,9 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"£zy Innosa";
+	description		= 	"≈Åzy Innosa";
 	TEXT[1]			= 	"Ta mikstura zapewnia Magom Ognia specjalne moce,";
-	Text[2]			=   "jeúli uøyje jej ktoú inny, umrze.";
+	Text[2]			=   "je≈õli u≈ºyje jej kto≈õ inny, umrze.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -577,7 +577,7 @@ INSTANCE ItPo_PotionOfDeath_02_Mis(C_Item)
 
 INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 {
-	name 			=	"åwiÍta Aura Innosa";
+	name 			=	"≈öwiƒôta Aura Innosa";
 
 	mainflag 		=	ITEM_KAT_MAGIC;
 	flags 			=	ITEM_AMULET;
@@ -594,10 +594,10 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "åwiÍta aura Innosa.";
+	description		= "≈öwiƒôta aura Innosa.";
 	
 	TEXT[2]			= "Ten amulet chroni swego posiadacza";
-	TEXT[3]			= "przed wszelkimi obraøeniami.";
+	TEXT[3]			= "przed wszelkimi obra≈ºeniami.";
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
 	
@@ -630,7 +630,7 @@ INSTANCE  ItAm_AmulettOfDeath_Mis(C_Item)
 	};
 	
 /******************************************************************************************/
-//	Heiltrank f¸r Randolph																	//
+//	Heiltrank f√ºr Randolph																	//
 /******************************************************************************************/
 INSTANCE ItPo_HealRandolph_MIS(C_Item)
 {
@@ -649,7 +649,7 @@ INSTANCE ItPo_HealRandolph_MIS(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Leczenie z na≥ogu";
+	description		= 	"Leczenie z na≈Çogu";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;

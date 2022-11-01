@@ -31,7 +31,7 @@ instance DIA_Babera_HALLO		(C_INFO)
 	condition	 = 	DIA_Babera_HALLO_Condition;
 	information	 = 	DIA_Babera_HALLO_Info;
 
-	description	 = 	"Witaj, œlicznotko.";
+	description	 = 	"Witaj, Å›licznotko.";
 };
 
 func int DIA_Babera_HALLO_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Babera_HALLO_Condition ()
 
 func void DIA_Babera_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Witaj, œlicznotko.
-	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //Nie zagaduj mnie, ch³opcze. Mów, czego chcesz. Jestem zajêta.
+	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Witaj, Å›licznotko.
+	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //Nie zagaduj mnie, chÅ‚opcze. MÃ³w, czego chcesz. Jestem zajÄ™ta.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -69,31 +69,31 @@ func int DIA_Babera_WIESIEHTSAUS_Condition ()
 func void DIA_Babera_WIESIEHTSAUS_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Jak idzie praca?
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Popatrz na te wielkie pola, które musimy jeszcze obrobiæ, to zrozumiesz, jak idzie.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Chcesz siê naj¹æ do pracy w polu?
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Popatrz na te wielkie pola, ktÃ³re musimy jeszcze obrobiÄ‡, to zrozumiesz, jak idzie.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Chcesz siÄ™ najÄ…Ä‡ do pracy w polu?
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 
 	if (hero.guild == GIL_NONE)
 		{
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Nie. Tak naprawdê to chcê zostaæ najemnikiem.", DIA_Babera_WIESIEHTSAUS_Nein );
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Mo¿e.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Nie. Tak naprawdÄ™ to chcÄ™ zostaÄ‡ najemnikiem.", DIA_Babera_WIESIEHTSAUS_Nein );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "MoÅ¼e.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
 		};
 };
 func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Mo¿e.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //W takim razie powinieneœ poszukaæ naszego farmera, Sekoba. By³ kiedyœ poganiaczem niewolników. Mo¿e on coœ ci znajdzie.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Rzecz jasna, mo¿esz te¿ spróbowaæ w gospodarstwie Onara, na koñcu tamtej d³ugiej drogi.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Ale uwa¿aj na najemników. Nie przepadaj¹ za obcymi.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //MoÅ¼e.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //W takim razie powinieneÅ› poszukaÄ‡ naszego farmera, Sekoba. ByÅ‚ kiedyÅ› poganiaczem niewolnikÃ³w. MoÅ¼e on coÅ› ci znajdzie.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Rzecz jasna, moÅ¼esz teÅ¼ sprÃ³bowaÄ‡ w gospodarstwie Onara, na koÅ„cu tamtej dÅ‚ugiej drogi.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Ale uwaÅ¼aj na najemnikÃ³w. Nie przepadajÄ… za obcymi.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
 
 func void DIA_Babera_WIESIEHTSAUS_Nein ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Nie. Tak naprawdê to chcê zostaæ najemnikiem.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //A wiêc jesteœ w niew³aœciwym miejscu. Najemników mo¿na zazwyczaj znaleŸæ w gospodarstwie Onara.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Nie. Tak naprawdÄ™ to chcÄ™ zostaÄ‡ najemnikiem.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //A wiÄ™c jesteÅ› w niewÅ‚aÅ›ciwym miejscu. NajemnikÃ³w moÅ¼na zazwyczaj znaleÅºÄ‡ w gospodarstwie Onara.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
@@ -124,20 +124,20 @@ func int DIA_Babera_BRONKO_Condition ()
 
 func void DIA_Babera_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //S³uchaj, ten paskudny koleœ, który tam stoi...
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //SÅ‚uchaj, ten paskudny koleÅ›, ktÃ³ry tam stoi...
 	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //To Bronko. A co?
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //To ten twój farmer?
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //Tak ci powiedzia³? Sekob jest naszym farmerem. Bronko to obibok i leñ. Ale jest silny jak wó³.
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Dlatego nikt nie protestuje, kiedy siê obija.
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //To ten twÃ³j farmer?
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //Tak ci powiedziaÅ‚? Sekob jest naszym farmerem. Bronko to obibok i leÅ„. Ale jest silny jak wÃ³Å‚.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Dlatego nikt nie protestuje, kiedy siÄ™ obija.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //Nie boi siê nikogo oprócz was, najemników.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //Nie boi siÄ™ nikogo oprÃ³cz was, najemnikÃ³w.
 
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Tylko najemnicy potrafi¹ zmusiæ go do pracy. Boi siê ich.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Tylko najemnicy potrafiÄ… zmusiÄ‡ go do pracy. Boi siÄ™ ich.
 
 		};
 	Babera_BronkoKeinBauer = TRUE;
@@ -169,9 +169,9 @@ func int DIA_Babera_Rosi_Condition ()
 func void DIA_Babera_Rosi_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //Gdzie jest Rosi?
-	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Nie mog³a ju¿ tu wytrzymaæ i posz³a na pó³noc, do lasu.
-	B_LogEntry (TOPIC_RosisFlucht,"Rosi uciek³a z farmy Sekoba. Babera twierdzi, ¿e pobieg³a na pó³noc, w stronê lasów."); 
-	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi uciek³a z farmy Sekoba. Babera twierdzi, ¿e pobieg³a na pó³noc, w stronê lasów."); 
+	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Nie mogÅ‚a juÅ¼ tu wytrzymaÄ‡ i poszÅ‚a na pÃ³Å‚noc, do lasu.
+	B_LogEntry (TOPIC_RosisFlucht,"Rosi uciekÅ‚a z farmy Sekoba. Babera twierdzi, Å¼e pobiegÅ‚a na pÃ³Å‚noc, w stronÄ™ lasÃ³w."); 
+	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi uciekÅ‚a z farmy Sekoba. Babera twierdzi, Å¼e pobiegÅ‚a na pÃ³Å‚noc, w stronÄ™ lasÃ³w."); 
 };
 
 
@@ -186,7 +186,7 @@ instance DIA_Babera_DUSTOERST		(C_INFO)
 	information	 = 	DIA_Babera_DUSTOERST_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Coœ jeszcze?";
+	description	 = 	"CoÅ› jeszcze?";
 };
 
 func int DIA_Babera_DUSTOERST_Condition ()
@@ -200,7 +200,7 @@ func int DIA_Babera_DUSTOERST_Condition ()
 func void DIA_Babera_DUSTOERST_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //A poza tym?
-	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //Jestem zajêta.
+	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //Jestem zajÄ™ta.
 	AI_StopProcessInfos (self);
 };
 

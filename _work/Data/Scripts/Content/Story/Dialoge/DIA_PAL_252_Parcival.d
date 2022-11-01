@@ -24,7 +24,7 @@ FUNC VOID DIA_Parcival_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Sch¸rfer
+//	Info Sch√ºrfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Schurfer		(C_INFO)
 {
@@ -33,7 +33,7 @@ instance DIA_Parcival_Schurfer		(C_INFO)
 	condition	 = 	DIA_Parcival_Schurfer_Condition;
 	information	 = 	DIA_Parcival_Schurfer_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Co moøesz mi powiedzieÊ na temat kretÛw?";
+	description	 =	"Co mo≈ºesz mi powiedzieƒá na temat kret√≥w?";
 };
 func int DIA_Parcival_Schurfer_Condition ()	
 {	
@@ -44,20 +44,20 @@ func int DIA_Parcival_Schurfer_Condition ()
 };
 func void DIA_Parcival_Schurfer_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Co moøesz mi powiedzieÊ na temat kretÛw?
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //Zebra≥em trzy grupy.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //Marcos, Fajeth i Silvestro to paladyni nimi dowodzπcy.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Grupa Marcosa skierowa≥a siÍ do starej kopalni, prowadzona przez starego kopacza - Grimesa.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //Dwie pozosta≥e grupy wyruszy≥y razem.
-	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Jergan, jeden ze zwiadowcÛw, doniÛs≥ mi, øe rozbili obÛz niedaleko wielkiej wieøy.
+	AI_Output (other, self, "DIA_Parcival_Schurfer_15_00"); //Co mo≈ºesz mi powiedzieƒá na temat kret√≥w?
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_01"); //Zebra≈Çem trzy grupy.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_02"); //Marcos, Fajeth i Silvestro to paladyni nimi dowodzƒÖcy.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_03"); //Grupa Marcosa skierowa≈Ça siƒô do starej kopalni, prowadzona przez starego kopacza - Grimesa.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_04"); //Dwie pozosta≈Çe grupy wyruszy≈Çy razem.
+	AI_Output (self, other, "DIA_Parcival_Schurfer_13_05"); //Jergan, jeden ze zwiadowc√≥w, doni√≥s≈Ç mi, ≈ºe rozbili ob√≥z niedaleko wielkiej wie≈ºy.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Ekipami gÛrnikÛw dowodzπ trzej paladyni: Marcos, Fajeth i Silvestro.");
-	B_LogEntry (TOPIC_ScoutMine,"Grupa Marcosa uda≥a siÍ w stronÍ starej kopalni. Ich zwiadowcπ jest kopacz Grimes."); 
-	B_LogEntry (TOPIC_ScoutMine,"Pozosta≥e dwie grupy wyruszy≥y razem. Podobno za≥oøy≥y obÛz w pobliøu wielkiej wieøy."); 
+	B_LogEntry (TOPIC_ScoutMine,"Ekipami g√≥rnik√≥w dowodzƒÖ trzej paladyni: Marcos, Fajeth i Silvestro.");
+	B_LogEntry (TOPIC_ScoutMine,"Grupa Marcosa uda≈Ça siƒô w stronƒô starej kopalni. Ich zwiadowcƒÖ jest kopacz Grimes."); 
+	B_LogEntry (TOPIC_ScoutMine,"Pozosta≈Çe dwie grupy wyruszy≈Çy razem. Podobno za≈Ço≈ºy≈Çy ob√≥z w pobli≈ºu wielkiej wie≈ºy."); 
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Sch¸rfer
+//	Info Sch√ºrfer
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Parcival_Diego		(C_INFO)
 {
@@ -66,7 +66,7 @@ instance DIA_Parcival_Diego		(C_INFO)
 	condition	 = 	DIA_Parcival_Diego_Condition;
 	information	 = 	DIA_Parcival_Diego_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Z ktÛrπ grupπ kretÛw poszed≥ Diego?";
+	description	 =	"Z kt√≥rƒÖ grupƒÖ kret√≥w poszed≈Ç Diego?";
 };
 func int DIA_Parcival_Diego_Condition ()	
 {	
@@ -78,10 +78,10 @@ func int DIA_Parcival_Diego_Condition ()
 };
 func void DIA_Parcival_Diego_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //Z ktÛrπ grupπ kretÛw poszed≥ Diego?
+	AI_Output (other, self, "DIA_Parcival_Diego_15_00"); //Z kt√≥rƒÖ grupƒÖ kret√≥w poszed≈Ç Diego?
 	AI_Output (self, other, "DIA_Parcival_Diego_13_01"); //Diego - ten skazaniec? Jest w grupie paladyna Silvestra.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Diego wyruszy≥ z ekipπ prowadzonπ przez paladyna Silvestra."); 
+	B_LogEntry (TOPIC_ScoutMine,"Diego wyruszy≈Ç z ekipƒÖ prowadzonƒÖ przez paladyna Silvestra."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Weg
@@ -93,7 +93,7 @@ instance DIA_Parcival_Weg		(C_INFO)
 	condition	 = 	DIA_Parcival_Weg_Condition;
 	information	 = 	DIA_Parcival_Weg_Info;
 	permanent 	 =  FALSE;
-	description	 =	"Czy wiesz, jak mogÍ siÍ dostaÊ na teren wydobycia?";
+	description	 =	"Czy wiesz, jak mogƒô siƒô dostaƒá na teren wydobycia?";
 };
 func int DIA_Parcival_Weg_Condition ()	
 {	
@@ -104,11 +104,11 @@ func int DIA_Parcival_Weg_Condition ()
 };
 func void DIA_Parcival_Weg_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //Wiesz, jak mogÍ dostaÊ siÍ na teren wydobycia?
-	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Nie ma øadnej bezpiecznej úcieøki prowadzπcej do doliny. Droga g≥Ûwnym szlakiem wydaje siÍ jednak ma≥o rozsπdna.
-	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Trzymaj siÍ z dala od lasÛw i unikaj orkÛw. Niech Innos ciÍ prowadzi.
+	AI_Output (other, self, "DIA_Parcival_Weg_15_00"); //Wiesz, jak mogƒô dostaƒá siƒô na teren wydobycia?
+	AI_Output (self, other, "DIA_Parcival_Weg_13_01"); //Nie ma ≈ºadnej bezpiecznej ≈õcie≈ºki prowadzƒÖcej do doliny. Droga g≈Ç√≥wnym szlakiem wydaje siƒô jednak ma≈Ço rozsƒÖdna.
+	AI_Output (self, other, "DIA_Parcival_Weg_13_02"); //Trzymaj siƒô z dala od las√≥w i unikaj ork√≥w. Niech Innos ciƒô prowadzi.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Chyba lepiej bÍdzie, jeúli wybiorÍ innπ drogÍ niø ekipy gÛrnicze. W lasach aø roi siÍ od orkÛw."); 
+	B_LogEntry (TOPIC_ScoutMine,"Chyba lepiej bƒôdzie, je≈õli wybiorƒô innƒÖ drogƒô ni≈º ekipy g√≥rnicze. W lasach a≈º roi siƒô od ork√≥w."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -120,7 +120,7 @@ instance DIA_Parcival_DRAGON		(C_INFO)
 	nr			 =  2;
 	condition	 = 	DIA_Parcival_DRAGON_Condition;
 	information	 = 	DIA_Parcival_DRAGON_Info;
-	description	 =	"Jak wyglπda sytuacja?";
+	description	 =	"Jak wyglƒÖda sytuacja?";
 };
 func int DIA_Parcival_DRAGON_Condition ()	
 {
@@ -128,10 +128,10 @@ func int DIA_Parcival_DRAGON_Condition ()
 };
 func void DIA_Parcival_DRAGON_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Jak wyglπda sytuacja?
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //ObÛz jest otoczony przez orkÛw. Nieüle siÍ okopali.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Bardziej alarmujπce sπ jednak ataki smokÛw. Zniszczy≥y juø ca≥y zewnÍtrzny pierúcieÒ.
-	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //Kolejny atak smokÛw przyniesie ze sobπ jeszcze dotkliwsze straty.
+	AI_Output (other, self, "DIA_Parcival_DRAGON_15_00"); //Jak wyglƒÖda sytuacja?
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_01"); //Ob√≥z jest otoczony przez ork√≥w. Nie≈∫le siƒô okopali.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_02"); //Bardziej alarmujƒÖce sƒÖ jednak ataki smok√≥w. Zniszczy≈Çy ju≈º ca≈Çy zewnƒôtrzny pier≈õcie≈Ñ.
+	AI_Output (self, other, "DIA_Parcival_DRAGON_13_03"); //Kolejny atak smok√≥w przyniesie ze sobƒÖ jeszcze dotkliwsze straty.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info DRAGONS
@@ -142,7 +142,7 @@ instance DIA_Parcival_DRAGONS		(C_INFO)
 	nr		 	 = 	2;
 	condition	 = 	DIA_Parcival_DRAGONS_Condition;
 	information	 = 	DIA_Parcival_DRAGONS_Info;
-	description	 = 	"Ile jest tych smokÛw?";
+	description	 = 	"Ile jest tych smok√≥w?";
 };
 
 func int DIA_Parcival_DRAGONS_Condition ()
@@ -155,10 +155,10 @@ func int DIA_Parcival_DRAGONS_Condition ()
 };
 func void DIA_Parcival_DRAGONS_Info ()
 {
-	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Ile jest tych smokÛw?
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //Nie wiemy dok≥adnie, ale pewne jest, øe wiÍcej niø jeden.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //To jednak nie wszystko. Ca≥a GÛrnicza Dolina jest pe≥na bestii, wspomagajπcych smoki.
-	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Nie oszukujmy siÍ - bez posi≥kÛw z zewnπtrz, nasze szanse na przeøycie sπ nik≥e.
+	AI_Output (other, self, "DIA_Parcival_DRAGONS_15_00"); //Ile jest tych smok√≥w?
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_01"); //Nie wiemy dok≈Çadnie, ale pewne jest, ≈ºe wiƒôcej ni≈º jeden.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_02"); //To jednak nie wszystko. Ca≈Ça G√≥rnicza Dolina jest pe≈Çna bestii, wspomagajƒÖcych smoki.
+	AI_Output (self, other, "DIA_Parcival_DRAGONS_13_03"); //Nie oszukujmy siƒô - bez posi≈Çk√≥w z zewnƒÖtrz, nasze szanse na prze≈ºycie sƒÖ nik≈Çe.
 	 
 	AI_StopProcessInfos (self); 
 };
@@ -196,21 +196,21 @@ func void DIA_Parcival_BRAVE_Info ()
 		
 		if randy == 0
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //Na razie panuje wzglÍdny spokÛj. Ale ta sytuacja moøe siÍ bardzo szybko zmieniÊ.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_00"); //Na razie panuje wzglƒôdny spok√≥j. Ale ta sytuacja mo≈ºe siƒô bardzo szybko zmieniƒá.
 		};
 		if randy == 1
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //BÍdziemy stawiaÊ opÛr tak d≥ugo, jak starczy nam si≥.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_01"); //Bƒôdziemy stawiaƒá op√≥r tak d≈Çugo, jak starczy nam si≈Ç.
 		};
 		if randy == 2
 		{
-			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Innos nas poprowadzi. Jego úwiat≥oúÊ ogrzewa nasze serca.
+			AI_Output			(self, other, "DIA_Parcival_BRAVE_13_02"); //Innos nas poprowadzi. Jego ≈õwiat≈Ço≈õƒá ogrzewa nasze serca.
 		};
 	
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Hej, nie masz nic lepszego do roboty, niø zawracanie mi g≥owy? Wynoú siÍ!
+	AI_Output			(self, other, "DIA_Parcival_BRAVE_13_03"); //Hej, nie masz nic lepszego do roboty, ni≈º zawracanie mi g≈Çowy? Wyno≈õ siƒô!
 	B_GivePlayerXP (XP_Ambient);
 	};
 	
@@ -262,7 +262,7 @@ instance DIA_Parcival_ALLESKLAR		(C_INFO)
 	information	 = 	DIA_Parcival_ALLESKLAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Wszystko w porzπdku?";
+	description	 = 	"Wszystko w porzƒÖdku?";
 };
 
 func int DIA_Parcival_ALLESKLAR_Condition ()
@@ -277,7 +277,7 @@ func int DIA_Parcival_ALLESKLAR_Condition ()
 var int DIA_Parcival_ALLESKLAR_NervCounter;
 func void DIA_Parcival_ALLESKLAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_ALLESKLAR_15_00"); //Wszystko w porzπdku?
+	AI_Output			(other, self, "DIA_Parcival_ALLESKLAR_15_00"); //Wszystko w porzƒÖdku?
 
 	if (DIA_Parcival_ALLESKLAR_NervCounter == 0)
 	{
@@ -285,11 +285,11 @@ func void DIA_Parcival_ALLESKLAR_Info ()
 	}	
 	else if (DIA_Parcival_ALLESKLAR_NervCounter == 1)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Do diab≥a, tak.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_02"); //Do diab≈Ça, tak.
 	}	
 	else if (Parcival_BRAVE_LaberCount > 6)
 	{
-		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //Ach. Rozumiem, co masz na myúli. Nie, przyjacielu, nie tym razem.
+		AI_Output			(self, other, "DIA_Parcival_ALLESKLAR_13_03"); //Ach. Rozumiem, co masz na my≈õli. Nie, przyjacielu, nie tym razem.
 	}
 	else
 	{
@@ -344,7 +344,7 @@ instance DIA_Parcival_AnyNews		(C_INFO)
 	condition	 = 	DIA_Parcival_AnyNews_Condition;
 	information	 = 	DIA_Parcival_AnyNews_Info;
 
-	description  =	"Czy sta≥o siÍ coú waønego?";		
+	description  =	"Czy sta≈Ço siƒô co≈õ wa≈ºnego?";		
 };
 
 func int DIA_Parcival_AnyNews_Condition ()
@@ -357,58 +357,58 @@ func int DIA_Parcival_AnyNews_Condition ()
 };
 func void DIA_Parcival_AnyNews_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Czy sta≥o siÍ coú waønego?
+	AI_Output	(other,self ,"DIA_Parcival_AnyNews_15_00"); //Czy sta≈Ço siƒô co≈õ wa≈ºnego?
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Naleøysz do tych szumowin, ktÛre nazywajπ siÍ ≥owcami smokÛw?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //NaprawdÍ, spodziewa≥em siÍ po tobie troszkÍ wiÍcej godnoúci, ty zaú przy≥πczasz siÍ do takich ludzi.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_01"); //Nale≈ºysz do tych szumowin, kt√≥re nazywajƒÖ siƒô ≈Çowcami smok√≥w?
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_02"); //Naprawdƒô, spodziewa≈Çem siƒô po tobie troszkƒô wiƒôcej godno≈õci, ty za≈õ przy≈ÇƒÖczasz siƒô do takich ludzi.
 	
 	}
 	else
 	{
 		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_03"); //Jestem zmartwiony, bardzo zmartwiony.
 		AI_Output 	(other,self ,"DIA_Parcival_AnyNews_15_04"); //Dlaczego?
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Ostatnio pojawili siÍ tu ci ludzie. Chcπ, øeby ich nazywaÊ ≥owcami smokÛw.
-		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //Jeúli o mnie chodzi, to sπ to tylko przestÍpcy i obiboki.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_05"); //Ostatnio pojawili siƒô tu ci ludzie. ChcƒÖ, ≈ºeby ich nazywaƒá ≈Çowcami smok√≥w.
+		AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_06"); //Je≈õli o mnie chodzi, to sƒÖ to tylko przestƒôpcy i obiboki.
 	};
-	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //Gdyby to zaleøa≥o ode mnie, wywali≥bym ich z zamku. Niech orkowie dobiorπ im siÍ do skÛry.
+	AI_Output 	(self ,other,"DIA_Parcival_AnyNews_13_07"); //Gdyby to zale≈ºa≈Ço ode mnie, wywali≈Çbym ich z zamku. Niech orkowie dobiorƒÖ im siƒô do sk√≥ry.
 
 	Info_ClearChoices (DIA_Parcival_AnyNews);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Ale oni, w przeciwieÒstwie do Lorda Hagena, sπ tutaj.",DIA_Parcival_AnyNews_LordHagen); 
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Powinieneú daÊ im szansÍ.",DIA_Parcival_AnyNews_Chance);
-	Info_AddChoice	(DIA_Parcival_AnyNews,"Nie sπdzisz, øe trochÍ przesadzasz?",DIA_Parcival_AnyNews_Overact);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Ale oni, w przeciwie≈Ñstwie do Lorda Hagena, sƒÖ tutaj.",DIA_Parcival_AnyNews_LordHagen); 
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Powiniene≈õ daƒá im szansƒô.",DIA_Parcival_AnyNews_Chance);
+	Info_AddChoice	(DIA_Parcival_AnyNews,"Nie sƒÖdzisz, ≈ºe trochƒô przesadzasz?",DIA_Parcival_AnyNews_Overact);
 	
 };
 
 FUNC VOID DIA_Parcival_AnyNews_LordHagen ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Ale oni, w przeciwieÒstwie do Lorda Hagena, sπ tutaj.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_LordHagen_15_00"); //Ale oni, w przeciwie≈Ñstwie do Lorda Hagena, sƒÖ tutaj.
 	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_01"); //Tak, mamy tylko ich.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Innos poddaje nas straszliwej prÛbie.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_LordHagen_13_02"); //Innos poddaje nas straszliwej pr√≥bie.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Chance ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //Powinieneú daÊ im szansÍ.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //Dostali jπ. Niestety.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Garond jest przekonany, øe bÍdπ mogli nam pomÛc.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Ja jednak nie spuszczam z nich oka. Mamy dostateczne duøo k≥opotÛw z orkami. Nie potrzebujemy dodatkowych zmartwieÒ.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Chance_15_00"); //Powiniene≈õ daƒá im szansƒô.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_01"); //Dostali jƒÖ. Niestety.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_02"); //Garond jest przekonany, ≈ºe bƒôdƒÖ mogli nam pom√≥c.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Chance_13_03"); //Ja jednak nie spuszczam z nich oka. Mamy dostateczne du≈ºo k≈Çopot√≥w z orkami. Nie potrzebujemy dodatkowych zmartwie≈Ñ.
 	
 	Info_ClearChoices (DIA_Parcival_AnyNews);  
 };
 
 FUNC VOID DIA_Parcival_AnyNews_Overact ()
 {
-	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Nie sπdzisz, øe trochÍ przesadzasz?
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //Zdecydowanie nie. Brakuje nam ludzi, ktÛrzy mogliby stanowiÊ inspirujπcy przyk≥ad.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //WojownikÛw, ktÛrzy rozpaliliby ogieÒ Innosa w sercach walczπcych.
-	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //Tymczasem, mamy tylko grupkÍ szumowin, os≥abiajπcπ morale øo≥nierzy.
+	AI_Output (other,self ,"DIA_Parcival_AnyNews_Overact_15_00"); //Nie sƒÖdzisz, ≈ºe trochƒô przesadzasz?
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_01"); //Zdecydowanie nie. Brakuje nam ludzi, kt√≥rzy mogliby stanowiƒá inspirujƒÖcy przyk≈Çad.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_02"); //Wojownik√≥w, kt√≥rzy rozpaliliby ogie≈Ñ Innosa w sercach walczƒÖcych.
+	AI_Output (self ,other,"DIA_Parcival_AnyNews_Overact_13_03"); //Tymczasem, mamy tylko grupkƒô szumowin, os≈ÇabiajƒÖcƒÖ morale ≈ºo≈Çnierzy.
 };
  
 ///////////////////////////////////////////////////////////////////////
-//	Ich muss mit dir ¸ber Jan reden
+//	Ich muss mit dir √ºber Jan reden
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_Jan		(C_INFO)
@@ -418,7 +418,7 @@ instance DIA_Parcival_Jan		(C_INFO)
 	condition	 = 	DIA_Parcival_Jan_Condition;
 	information	 = 	DIA_Parcival_Jan_Info;
 	permanent	 = 	FALSE;
-	description  =	"MuszÍ porozmawiaÊ z tobπ o Janie.";		
+	description  =	"Muszƒô porozmawiaƒá z tobƒÖ o Janie.";		
 };
 
 func int DIA_Parcival_Jan_Condition ()
@@ -431,16 +431,16 @@ func int DIA_Parcival_Jan_Condition ()
 };
 func void DIA_Parcival_Jan_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //MuszÍ porozmawiaÊ z tobπ o Janie.
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_00"); //Muszƒô porozmawiaƒá z tobƒÖ o Janie.
 	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_01"); //Jan. Kto to taki?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //£owca smokÛw. Jest kowalem.
-	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //Ach tak, pamiÍtam. O co chodzi?
-	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Chcia≥by pracowaÊ w kuüni.
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_02"); //≈Åowca smok√≥w. Jest kowalem.
+	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_03"); //Ach tak, pamiƒôtam. O co chodzi?
+	AI_Output	(other,self ,"DIA_Parcival_Jan_15_04"); //Chcia≈Çby pracowaƒá w ku≈∫ni.
 	AI_Output 	(self ,other,"DIA_Parcival_Jan_13_05"); //To wykluczone. Nie jest jednym z nas, nie ufam mu.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Kannst du das mit Jan noch mal ¸berdenken?
+//	Kannst du das mit Jan noch mal √ºberdenken?
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_ThinkAgain		(C_INFO)
@@ -450,7 +450,7 @@ instance DIA_Parcival_ThinkAgain		(C_INFO)
 	condition	 = 	DIA_Parcival_ThinkAgain_Condition;
 	information	 = 	DIA_Parcival_ThinkAgain_Info;
 	permanent	 = 	TRUE;
-	description  =	"ProszÍ, rozwaø jeszcze sprawÍ Jana.";		
+	description  =	"Proszƒô, rozwa≈º jeszcze sprawƒô Jana.";		
 };
 
 func int DIA_Parcival_ThinkAgain_Condition ()
@@ -463,12 +463,12 @@ func int DIA_Parcival_ThinkAgain_Condition ()
 };
 func void DIA_Parcival_ThinkAgain_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //ProszÍ, rozwaø jeszcze sprawÍ Jana.
+	AI_Output	(other,self ,"DIA_Parcival_ThinkAgain_15_00"); //Proszƒô, rozwa≈º jeszcze sprawƒô Jana.
 	AI_Output 	(self ,other,"DIA_Parcival_ThinkAgain_13_01"); //Moja decyzja jest ostateczna.
 }; 
  
 ///////////////////////////////////////////////////////////////////////
-//	Garond will, dass Jan die Schmiede ¸bernimmt.
+//	Garond will, dass Jan die Schmiede √ºbernimmt.
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Parcival_TalkedGarond		(C_INFO)
@@ -478,7 +478,7 @@ instance DIA_Parcival_TalkedGarond		(C_INFO)
 	condition	 = 	DIA_Parcival_TalkedGarond_Condition;
 	information	 = 	DIA_Parcival_TalkedGarond_Info;
 
-	description  =	"Garond chce, by Jan przejπ≥ kuüniÍ.";		
+	description  =	"Garond chce, by Jan przejƒÖ≈Ç ku≈∫niƒô.";		
 };
 
 func int DIA_Parcival_TalkedGarond_Condition ()
@@ -492,9 +492,9 @@ func int DIA_Parcival_TalkedGarond_Condition ()
 };
 func void DIA_Parcival_TalkedGarond_Info ()
 {
-	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Garond chce, by Jan przejπ≥ kuüniÍ.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //Hmmm. Skoro tak, to niech jπ sobie bierze.
-	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //Mimo to uwaøam, øe ufanie Janowi to wielki b≥πd.
+	AI_Output	(other,self ,"DIA_Parcival_TalkedGarond_15_00"); //Garond chce, by Jan przejƒÖ≈Ç ku≈∫niƒô.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_01"); //Hmmm. Skoro tak, to niech jƒÖ sobie bierze.
+	AI_Output 	(self ,other,"DIA_Parcival_TalkedGarond_13_02"); //Mimo to uwa≈ºam, ≈ºe ufanie Janowi to wielki b≈ÇƒÖd.
 };  
 
 ///////////////////////////////////////////////////////////////////////
@@ -508,7 +508,7 @@ instance DIA_Parcival_PERMKAP4		(C_INFO)
 	information	 = 	DIA_Parcival_PERMKAP4_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Coú jeszcze?";
+	description	 = 	"Co≈õ jeszcze?";
 };
 
 func int DIA_Parcival_PERMKAP4_Condition ()
@@ -522,7 +522,7 @@ func int DIA_Parcival_PERMKAP4_Condition ()
 
 func void DIA_Parcival_PERMKAP4_Info ()
 {
-	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //Coú jeszcze?
+	AI_Output			(other, self, "DIA_Parcival_PERMKAP4_15_00"); //Co≈õ jeszcze?
 	AI_Output			(self, other, "DIA_Parcival_PERMKAP4_13_01"); //Ach, zostaw mnie w spokoju.
 
 };
@@ -584,8 +584,8 @@ func int DIA_Parcival_VERRAETER_Condition ()
 func void DIA_Parcival_VERRAETER_Info ()
 {
 	
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //Zdrajca! Wiem dobrze, øe to TY otworzy≥eú bramÍ.
-	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Zap≥acisz mi za to.
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_00"); //Zdrajca! Wiem dobrze, ≈ºe to TY otworzy≈Çe≈õ bramƒô.
+	AI_Output			(self, other, "DIA_Parcival_VERRAETER_13_01"); //Zap≈Çacisz mi za to.
 	
 	Npc_SetRefuseTalk (self,30);
 	AI_StopProcessInfos (self);

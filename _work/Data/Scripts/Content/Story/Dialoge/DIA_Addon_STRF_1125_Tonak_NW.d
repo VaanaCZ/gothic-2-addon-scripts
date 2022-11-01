@@ -37,12 +37,12 @@ FUNC INT DIA_Addon_Tonak_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Tonak_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Tonak_NW_Hi_15_00");//Wracasz do pracy na polu?
-	AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_01");//Mój wybawca, niech mnie kule bij¹! Tak, wracam zmagaæ siê z codziennym trudem.
+	AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_01");//MÃ³j wybawca, niech mnie kule bijÄ…! Tak, wracam zmagaÄ‡ siÄ™ z codziennym trudem.
 	
 	if !Npc_IsDead (Egill)
 	&& !Npc_IsDead (Ehnim)
 	{
-		AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_02");//I z tymi dwoma kopniêtymi braæmi. Nawet bandyci nie byli tak denerwuj¹cy.
+		AI_Output (self, other, "DIA_Addon_Tonak_NW_Hi_03_02");//I z tymi dwoma kopniÄ™tymi braÄ‡mi. Nawet bandyci nie byli tak denerwujÄ…cy.
 	};
 };
 // ************************************************************

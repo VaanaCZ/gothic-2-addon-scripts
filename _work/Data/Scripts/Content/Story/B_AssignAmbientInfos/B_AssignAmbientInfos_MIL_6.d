@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_6_JOIN(C_INFO)
 	condition	= DIA_MIL_6_JOIN_Condition;
 	information	= DIA_MIL_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Co powinienem zrobiæ, aby wst¹piæ do stra¿y?";
+	description = "Co powinienem zrobiÄ‡, aby wstÄ…piÄ‡ do straÅ¼y?";
 };                       
 
 FUNC INT DIA_MIL_6_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_MIL_6_JOIN_Condition()
 
 FUNC VOID DIA_MIL_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00"); //Co powinienem zrobiæ, ¿eby siê zaci¹gn¹æ do stra¿y?
-	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Porozmawiaj z Lordem Andre. Od kiedy paladyni przybyli do miasta, to w³aœnie on nadzoruje dzia³ania stra¿y.
+	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00"); //Co powinienem zrobiÄ‡, Å¼eby siÄ™ zaciÄ…gnÄ…Ä‡ do straÅ¼y?
+	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Porozmawiaj z Lordem Andre. Od kiedy paladyni przybyli do miasta, to wÅ‚aÅ›nie on nadzoruje dziaÅ‚ania straÅ¼y.
 	if (C_NpcIsInQuarter (self) != Q_KASERNE)
 	{
 		AI_Output (self, other, "DIA_MIL_6_JOIN_06_02"); //Znajdziesz go w koszarach. Praktycznie z nich nie wychodzi.
@@ -59,7 +59,7 @@ instance DIA_Addon_MIL_6_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_MIL_6_MissingPeople_Condition;
 	information	 = 	DIA_Addon_MIL_6_MissingPeople_Info;
 	permanent	= TRUE;
-	description	 = 	"S³ysza³em, ¿e zniknêli jacyœ ludzie.";
+	description	 = 	"SÅ‚yszaÅ‚em, Å¼e zniknÄ™li jacyÅ› ludzie.";
 };
 
 func int DIA_Addon_MIL_6_MissingPeople_Condition ()
@@ -73,10 +73,10 @@ func int DIA_Addon_MIL_6_MissingPeople_Condition ()
 
 func void DIA_Addon_MIL_6_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_MIL_6_MissingPeople_15_00"); //S³ysza³em, ¿e zniknêli jacyœ ludzie.
-	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_01"); //Rzeczywiœcie - ostatnio czêsto mamy doniesienia o zaginiêciach.
-	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_02"); //Nie potrafiê tego wyjaœniæ, choæ bym chcia³.
-	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_03"); //Mo¿emy tylko mieæ oczy i uszy szeroko otwarte.
+	AI_Output	(other, self, "DIA_Addon_MIL_6_MissingPeople_15_00"); //SÅ‚yszaÅ‚em, Å¼e zniknÄ™li jacyÅ› ludzie.
+	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_01"); //RzeczywiÅ›cie - ostatnio czÄ™sto mamy doniesienia o zaginiÄ™ciach.
+	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_02"); //Nie potrafiÄ™ tego wyjaÅ›niÄ‡, choÄ‡ bym chciaÅ‚.
+	AI_Output	(self, other, "DIA_Addon_MIL_6_MissingPeople_06_03"); //MoÅ¼emy tylko mieÄ‡ oczy i uszy szeroko otwarte.
 };
 
 // *************************************************************************
@@ -102,9 +102,9 @@ FUNC INT DIA_MIL_6_PEOPLE_Condition()
 FUNC VOID DIA_MIL_6_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_6_PEOPLE_15_00"); //Opowiedz mi o tych paladynach.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Zaraz po przybyciu do Khorinis udali siê do górnego miasta.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Od tego czasu nikt poza obywatelami miasta, i oczywiœcie stra¿¹, nie ma tam wstêpu.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Kilku paladynów stacjonuje przy statku, w porcie. Ale nie nale¿¹ do specjalnie rozmownych.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Zaraz po przybyciu do Khorinis udali siÄ™ do gÃ³rnego miasta.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Od tego czasu nikt poza obywatelami miasta, i oczywiÅ›cie straÅ¼Ä…, nie ma tam wstÄ™pu.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Kilku paladynÃ³w stacjonuje przy statku, w porcie. Ale nie naleÅ¼Ä… do specjalnie rozmownych.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co powinienem wiedzieæ o tym mieœcie?";
+	description = "Co powinienem wiedzieÄ‡ o tym mieÅ›cie?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()
@@ -126,11 +126,11 @@ FUNC INT DIA_MIL_6_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Co powinienem wiedzieæ o tym mieœcie?
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //Kontrolê nad miastem przejêli paladyni. Stra¿ bezpoœrednio im podlega.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Lord Andre, dowódca stra¿y, pe³ni tak¿e funkcjê sêdziego.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //Jeœli zdarzy ci siê z³amaæ prawo, bêdziesz siê musia³ przed nim wyt³umaczyæ.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Jednak nie martw siê, jest cz³owiekiem ugodowym. Przewa¿nie nak³ada jedynie grzywnê.
+	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Co powinienem wiedzieÄ‡ o tym mieÅ›cie?
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //KontrolÄ™ nad miastem przejÄ™li paladyni. StraÅ¼ bezpoÅ›rednio im podlega.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Lord Andre, dowÃ³dca straÅ¼y, peÅ‚ni takÅ¼e funkcjÄ™ sÄ™dziego.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //JeÅ›li zdarzy ci siÄ™ zÅ‚amaÄ‡ prawo, bÄ™dziesz siÄ™ musiaÅ‚ przed nim wytÅ‚umaczyÄ‡.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Jednak nie martw siÄ™, jest czÅ‚owiekiem ugodowym. PrzewaÅ¼nie nakÅ‚ada jedynie grzywnÄ™.
 	
 };
 
@@ -151,34 +151,34 @@ func INT DIA_MIL_6_STANDARD_Condition()
 };
 FUNC VOID DIA_MIL_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //W mieœcie coraz wiêcej szumowin.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //Wszêdzie coraz wiêcej z³odziei. Lord Andre podejrzewa nawet, ¿e ca³e to zamieszanie jest sprawk¹ gangu.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //Niedawno przetrz¹snêliœmy dok³adnie ca³¹ dzielnicê portow¹, ale niczego nie znaleŸliœmy.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //W mieÅ›cie coraz wiÄ™cej szumowin.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //WszÄ™dzie coraz wiÄ™cej zÅ‚odziei. Lord Andre podejrzewa nawet, Å¼e caÅ‚e to zamieszanie jest sprawkÄ… gangu.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //Niedawno przetrzÄ…snÄ™liÅ›my dokÅ‚adnie caÅ‚Ä… dzielnicÄ™ portowÄ…, ale niczego nie znaleÅºliÅ›my.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_04"); //Wygl¹da na to, ¿e problem bandytów mamy ju¿ z g³owy. Ataki sta³y siê ostatnimi czasy rzadkoœci¹.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_04"); //WyglÄ…da na to, Å¼e problem bandytÃ³w mamy juÅ¼ z gÅ‚owy. Ataki staÅ‚y siÄ™ ostatnimi czasy rzadkoÅ›ciÄ….
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //Z dnia na dzieñ jest coraz gorzej, wszystko przez te szumowiny wrêcz zalewaj¹ce miasto. Ostatniej nocy œledzi³em pewnego typka w czarnych szatach, zd¹¿aj¹cego ku górnemu miastu.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Od pocz¹tku wyda³ mi siê podejrzany. Œledzi³em go a¿ pod dom gubernatora. Tam znikn¹³. Mówiê ci, dziwna to by³a postaæ.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //Z dnia na dzieÅ„ jest coraz gorzej, wszystko przez te szumowiny wrÄ™cz zalewajÄ…ce miasto. Ostatniej nocy Å›ledziÅ‚em pewnego typka w czarnych szatach, zdÄ…Å¼ajÄ…cego ku gÃ³rnemu miastu.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Od poczÄ…tku wydaÅ‚ mi siÄ™ podejrzany. ÅšledziÅ‚em go aÅ¼ pod dom gubernatora. Tam zniknÄ…Å‚. MÃ³wiÄ™ ci, dziwna to byÅ‚a postaÄ‡.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_07"); //S³ysza³em, ¿e Lord Hagen zatrudni³ najemników, by zajêli siê smokami. Mnie to odpowiada, nie chcia³bym sam zmierzyæ siê z tymi bestiami.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_07"); //SÅ‚yszaÅ‚em, Å¼e Lord Hagen zatrudniÅ‚ najemnikÃ³w, by zajÄ™li siÄ™ smokami. Mnie to odpowiada, nie chciaÅ‚bym sam zmierzyÄ‡ siÄ™ z tymi bestiami.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_08"); //Mówi siê, ¿e smoki zosta³y pokonane. Ponoæ Lord Hagen zbiera si³y, by ostatecznie wygnaæ je tak¿e z Górniczej Doliny.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_08"); //MÃ³wi siÄ™, Å¼e smoki zostaÅ‚y pokonane. PonoÄ‡ Lord Hagen zbiera siÅ‚y, by ostatecznie wygnaÄ‡ je takÅ¼e z GÃ³rniczej Doliny.
 	};
 };
 

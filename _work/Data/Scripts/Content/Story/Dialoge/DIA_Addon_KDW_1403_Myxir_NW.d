@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Myxir_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_NW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_Hallo_Condition;
 	information	 = 	DIA_Addon_Myxir_Hallo_Info;
 
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Addon_Myxir_Hallo_Condition ()
@@ -94,8 +94,8 @@ func int DIA_Addon_Myxir_Hallo_Condition ()
 
 func void DIA_Addon_Myxir_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Wszystko w porz¹dku?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Masz du¿o odwagi, pokazuj¹c siê tu.
+	AI_Output	(other, self, "DIA_Addon_Myxir_Hallo_15_00"); //Wszystko w porzÄ…dku?
+	AI_Output	(self, other, "DIA_Addon_Myxir_Hallo_12_01"); //Masz duÅ¼o odwagi, pokazujÄ…c siÄ™ tu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WasMachstDu
@@ -121,10 +121,10 @@ func int DIA_Addon_Myxir_WasMachstDu_Condition ()
 func void DIA_Addon_Myxir_WasMachstDu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_WasMachstDu_15_00"); //Co tu robisz?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //Uczê siê jêzyka budowniczych.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //Jêzyk jest kluczem do wiedzy tego staro¿ytnego ludu.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //Ka¿dy z nas musi siê go nauczyæ, inaczej ta ekspedycja dobiegnie koñca, zanim siê zacznie.
-	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Budowniczowie u¿ywali kamiennych tabliczek do przekazywania swojej wiedzy. Niestety, wiele z nich zniszczono lub skradziono dawno temu.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_01"); //UczÄ™ siÄ™ jÄ™zyka budowniczych.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_02"); //JÄ™zyk jest kluczem do wiedzy tego staroÅ¼ytnego ludu.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_03"); //KaÅ¼dy z nas musi siÄ™ go nauczyÄ‡, inaczej ta ekspedycja dobiegnie koÅ„ca, zanim siÄ™ zacznie.
+	AI_Output	(self, other, "DIA_Addon_Myxir_WasMachstDu_12_04"); //Budowniczowie uÅ¼ywali kamiennych tabliczek do przekazywania swojej wiedzy. Niestety, wiele z nich zniszczono lub skradziono dawno temu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Steintafeln
@@ -149,14 +149,14 @@ func int DIA_Addon_Myxir_Steintafeln_Condition ()
 func void DIA_Addon_Myxir_Steintafeln_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_Steintafeln_15_00"); //Co zapisano na tych kamiennych tablicach?
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //Zawieraj¹ w sobie ca³¹ wiedzê staro¿ytnych.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //Niektórzy z nich za pomoc¹ zaklêæ zwiêkszali sw¹ znajomoœæ magii i walki.
-	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Dla kogoœ, kto potrafi odczytaæ tablice, to prawdziwy skarb.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_01"); //ZawierajÄ… w sobie caÅ‚Ä… wiedzÄ™ staroÅ¼ytnych.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_02"); //NiektÃ³rzy z nich za pomocÄ… zaklÄ™Ä‡ zwiÄ™kszali swÄ… znajomoÅ›Ä‡ magii i walki.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Steintafeln_12_03"); //Dla kogoÅ›, kto potrafi odczytaÄ‡ tablice, to prawdziwy skarb.
 
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Stoneplates,"Na kamiennych tablicach spisano wiedzê staro¿ytnego ludu budowniczych. Dziêki niektórym z tych tablic mo¿na zwiêkszyæ swoje umiejêtnoœci bojowe i znajomoœæ magii, ale trzeba je umieæ odczytaæ."); 
+	B_LogEntry (TOPIC_Addon_Stoneplates,"Na kamiennych tablicach spisano wiedzÄ™ staroÅ¼ytnego ludu budowniczych. DziÄ™ki niektÃ³rym z tych tablic moÅ¼na zwiÄ™kszyÄ‡ swoje umiejÄ™tnoÅ›ci bojowe i znajomoÅ›Ä‡ magii, ale trzeba je umieÄ‡ odczytaÄ‡."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WillYouTeachMe
@@ -168,7 +168,7 @@ instance DIA_Addon_Myxir_WillYouTeachMe		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_WillYouTeachMe_Condition;
 	information	 = 	DIA_Addon_Myxir_WillYouTeachMe_Info;
 
-	description	 = 	"Mo¿esz mnie nauczyæ czytania w tym dawnym jêzyku?";
+	description	 = 	"MoÅ¼esz mnie nauczyÄ‡ czytania w tym dawnym jÄ™zyku?";
 };
 
 func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
@@ -181,8 +181,8 @@ func int DIA_Addon_Myxir_WillYouTeachMe_Condition ()
 
 func void DIA_Addon_Myxir_WillYouTeachMe_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //Mo¿esz mnie nauczyæ czytania w tym dawnym jêzyku?
-	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Czemu nie? Przeka¿ê ci moj¹ wiedzê.
+	AI_Output	(other, self, "DIA_Addon_Myxir_WillYouTeachMe_15_00"); //MoÅ¼esz mnie nauczyÄ‡ czytania w tym dawnym jÄ™zyku?
+	AI_Output	(self, other, "DIA_Addon_Myxir_WillYouTeachMe_12_01"); //Czemu nie? PrzekaÅ¼Ä™ ci mojÄ… wiedzÄ™.
 	Myxir_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
@@ -204,7 +204,7 @@ instance DIA_Addon_Myxir_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Naucz mnie tego dziwnego jêzyka.";
+	description	 = 	"Naucz mnie tego dziwnego jÄ™zyka.";
 };
 
 var int DIA_Addon_Myxir_Teach_NoPerm;

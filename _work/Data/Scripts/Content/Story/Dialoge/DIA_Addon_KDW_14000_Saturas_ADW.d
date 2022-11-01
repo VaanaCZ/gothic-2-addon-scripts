@@ -18,7 +18,7 @@ FUNC INT DIA_Addon_Saturas_ADW_EXIT_Condition()
 FUNC VOID DIA_Addon_Saturas_ADW_EXIT_Info()
 {
 	AI_StopProcessInfos (self);
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADW_EXIT_14_00"); //Niech ciê chroni Adanos.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADW_EXIT_14_00"); //Niech ciÄ™ chroni Adanos.
 };
  // ************************************************************
 // 			  				PICK POCKET
@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Saturas_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Saturas_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Saturas_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Saturas_ADW_PICKPOCKET_Condition()
@@ -93,119 +93,119 @@ func int DIA_Addon_Saturas_ADWStart_Condition ()
 };
 func void DIA_Addon_Saturas_ADWStart_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_00"); //Dziêki Adanosowi. Nareszcie jesteœ. Myœleliœmy, ¿e ju¿ siê nie poka¿esz.
-	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_01"); //Co? Sk¹d siê tu wziêliœcie?
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_02"); //Przeszed³eœ przez portal, a my za tob¹. Wkrótce potem przybyliœmy tutaj.
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_03"); //Jesteœmy tu ju¿ od kilku dni.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_00"); //DziÄ™ki Adanosowi. Nareszcie jesteÅ›. MyÅ›leliÅ›my, Å¼e juÅ¼ siÄ™ nie pokaÅ¼esz.
+	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_01"); //Co? SkÄ…d siÄ™ tu wziÄ™liÅ›cie?
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_02"); //PrzeszedÅ‚eÅ› przez portal, a my za tobÄ…. WkrÃ³tce potem przybyliÅ›my tutaj.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_03"); //JesteÅ›my tu juÅ¼ od kilku dni.
 	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_04"); //KILKU DNI?
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_05"); //Kiedy nie mogliœmy ciê nigdzie znaleŸæ, Nefarius próbowa³ ustaliæ, co siê mog³o staæ. Bez rezultatów.
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_06"); //No dobrze. W koñcu jesteœ i mo¿esz rozpocz¹æ pracê.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_05"); //Kiedy nie mogliÅ›my ciÄ™ nigdzie znaleÅºÄ‡, Nefarius prÃ³bowaÅ‚ ustaliÄ‡, co siÄ™ mogÅ‚o staÄ‡. Bez rezultatÃ³w.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_06"); //No dobrze. W koÅ„cu jesteÅ› i moÅ¼esz rozpoczÄ…Ä‡ pracÄ™.
 
 	Wld_InsertNpc (Giant_Rat ,"ADW_PORTALTEMPEL_11");
 	Wld_InsertNpc (Giant_Rat ,"ADW_PORTALTEMPEL_11");
 
 	Info_ClearChoices	(DIA_Addon_Saturas_ADWStart);
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co dzia³o siê w miêdzyczasie?", DIA_Addon_Saturas_ADWStart_was );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co dziaÅ‚o siÄ™ w miÄ™dzyczasie?", DIA_Addon_Saturas_ADWStart_was );
 };
 func void DIA_Addon_Saturas_ADWStart_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_was_15_00"); //Co dzia³o siê w miêdzyczasie?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_01"); //Doszliœmy do wielu wniosków.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_02"); //Trzêsienia ziemi s¹ coraz silniejsze. Znajdujemy siê blisko epicentrum.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_03"); //Twórcy tych starych budowli za³o¿yli tu kiedyœ miasto, które uda³o nam siê odkryæ.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_04"); //Jednak z jakiegoœ powodu ich cywilizacja zosta³a zniszczona.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_05"); //Mo¿emy siê jedynie domyœlaæ dlaczego.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_was_15_00"); //Co dziaÅ‚o siÄ™ w miÄ™dzyczasie?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_01"); //DoszliÅ›my do wielu wnioskÃ³w.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_02"); //TrzÄ™sienia ziemi sÄ… coraz silniejsze. Znajdujemy siÄ™ blisko epicentrum.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_03"); //TwÃ³rcy tych starych budowli zaÅ‚oÅ¼yli tu kiedyÅ› miasto, ktÃ³re udaÅ‚o nam siÄ™ odkryÄ‡.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_04"); //Jednak z jakiegoÅ› powodu ich cywilizacja zostaÅ‚a zniszczona.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_05"); //MoÅ¼emy siÄ™ jedynie domyÅ›laÄ‡ dlaczego.
 
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Odkry³eœ jakieœ œlady zaginionych ludzi?", DIA_Addon_Saturas_ADWStart_missingPeople );
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co siê dzieje z Krukiem?", DIA_Addon_Saturas_ADWStart_Raven );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "OdkryÅ‚eÅ› jakieÅ› Å›lady zaginionych ludzi?", DIA_Addon_Saturas_ADWStart_missingPeople );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co siÄ™ dzieje z Krukiem?", DIA_Addon_Saturas_ADWStart_Raven );
 };
 func void DIA_Addon_Saturas_ADWStart_Raven ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_Raven_15_00"); //Co siê dzieje z Krukiem?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_01"); //W liœcie Kruk pisa³ o œwi¹tyni i o tym, ¿e spróbuje dostaæ siê do œrodka.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_02"); //Jesteœmy pewni, ¿e chodzi o œwi¹tyniê Adanosa, któr¹ Kruk bêdzie próbowa³ zbezczeœciæ.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_03"); //Trzêsienia ziemi s¹ bez w¹tpienia wynikiem rzucania bezbo¿nych czarów, maj¹cych prze³amaæ potê¿ne zaklêcie.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_04"); //Bramy œwi¹tyni s¹ zamkniête magi¹, a to zaklêcie o¿ywia kamiennych stra¿ników.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_05"); //Œwi¹tynia siê broni. Musimy powstrzymaæ Kruka, zanim dostanie siê do sanktuarium.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_Raven_15_00"); //Co siÄ™ dzieje z Krukiem?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_01"); //W liÅ›cie Kruk pisaÅ‚ o Å›wiÄ…tyni i o tym, Å¼e sprÃ³buje dostaÄ‡ siÄ™ do Å›rodka.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_02"); //JesteÅ›my pewni, Å¼e chodzi o Å›wiÄ…tyniÄ™ Adanosa, ktÃ³rÄ… Kruk bÄ™dzie prÃ³bowaÅ‚ zbezczeÅ›ciÄ‡.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_03"); //TrzÄ™sienia ziemi sÄ… bez wÄ…tpienia wynikiem rzucania bezboÅ¼nych czarÃ³w, majÄ…cych przeÅ‚amaÄ‡ potÄ™Å¼ne zaklÄ™cie.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_04"); //Bramy Å›wiÄ…tyni sÄ… zamkniÄ™te magiÄ…, a to zaklÄ™cie oÅ¼ywia kamiennych straÅ¼nikÃ³w.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_05"); //ÅšwiÄ…tynia siÄ™ broni. Musimy powstrzymaÄ‡ Kruka, zanim dostanie siÄ™ do sanktuarium.
 	
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co zrobimy póŸniej?", DIA_Addon_Saturas_ADWStart_wastun );
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Kruk jest by³ym magnatem, a nie magiem. ", DIA_Addon_Saturas_ADWStart_RavenOnlyBaron );
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co Kruk chce zrobiæ w œwi¹tyni?", DIA_Addon_Saturas_ADWStart_RavenAim );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co zrobimy pÃ³Åºniej?", DIA_Addon_Saturas_ADWStart_wastun );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Kruk jest byÅ‚ym magnatem, a nie magiem. ", DIA_Addon_Saturas_ADWStart_RavenOnlyBaron );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Co Kruk chce zrobiÄ‡ w Å›wiÄ…tyni?", DIA_Addon_Saturas_ADWStart_RavenAim );
 };
 func void DIA_Addon_Saturas_ADWStart_RavenAim ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenAim_15_00"); //Co Kruk chce zrobiæ w œwi¹tyni?
-	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_01"); //Wir wissen es nicht. Es muss etwas sehr Wertvolles oder Mächtiges in dem Tempel sein.
-	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_02"); //Aber wir können davon ausgehen, dass er nichts Gutes im Schilde führt.
-	AI_Output (self, other, "DIA_Addon_Bodo_14_01"); //Wiemy tylko, ¿e chodzi mu o potê¿ny artefakt, zwi¹zany z Adanosem i Beliarem.
-	AI_Output (self, other, "DIA_Addon_Bodo_14_02"); //Na pewno nie ma dobrych zamiarów...
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenAim_15_00"); //Co Kruk chce zrobiÄ‡ w Å›wiÄ…tyni?
+	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_01"); //Wir wissen es nicht. Es muss etwas sehr Wertvolles oder MÃ¤chtiges in dem Tempel sein.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_02"); //Aber wir kÃ¶nnen davon ausgehen, dass er nichts Gutes im Schilde fÃ¼hrt.
+	AI_Output (self, other, "DIA_Addon_Bodo_14_01"); //Wiemy tylko, Å¼e chodzi mu o potÄ™Å¼ny artefakt, zwiÄ…zany z Adanosem i Beliarem.
+	AI_Output (self, other, "DIA_Addon_Bodo_14_02"); //Na pewno nie ma dobrych zamiarÃ³w...
 };
 func void DIA_Addon_Saturas_ADWStart_RavenOnlyBaron ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_15_00"); //Kruk jest by³ym magnatem, a nie magiem. Jak móg³by przygotowaæ taki czar?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_01"); //Mo¿e to nie on. Mo¿e jakiœ mag renegat, który wype³nia jego rozkazy.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_02"); //Tak czy inaczej, MUSIMY zapobiec z³u.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_15_00"); //Kruk jest byÅ‚ym magnatem, a nie magiem. Jak mÃ³gÅ‚by przygotowaÄ‡ taki czar?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_01"); //MoÅ¼e to nie on. MoÅ¼e jakiÅ› mag renegat, ktÃ³ry wypeÅ‚nia jego rozkazy.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_02"); //Tak czy inaczej, MUSIMY zapobiec zÅ‚u.
 };
 func void DIA_Addon_Saturas_ADWStart_missingPeople ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_missingPeople_15_00"); //Odkry³eœ jakieœ œlady zaginionych ludzi?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_missingPeople_14_01"); //Zaledwie wczoraj, w ruinach na wschodzie, znaleŸliœmy zw³oki rybaka.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_missingPeople_14_02"); //Wygl¹da na to, ¿e pochodzi³ z Khorinis. Powinieneœ zobaczyæ cia³o.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_missingPeople_15_00"); //OdkryÅ‚eÅ› jakieÅ› Å›lady zaginionych ludzi?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_missingPeople_14_01"); //Zaledwie wczoraj, w ruinach na wschodzie, znaleÅºliÅ›my zwÅ‚oki rybaka.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_missingPeople_14_02"); //WyglÄ…da na to, Å¼e pochodziÅ‚ z Khorinis. PowinieneÅ› zobaczyÄ‡ ciaÅ‚o.
 	Saturas_AboutWilliam = TRUE;
 
 	B_LogEntry (TOPIC_Addon_MissingPeople,LogText_Addon_WilliamLeiche); 
 };
 func void DIA_Addon_Saturas_ADWStart_wastun ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun_15_00"); //Co zrobimy póŸniej?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_01"); //Zostaniemy tutaj i bêdziemy dalej badali tê pradawn¹ cywilizacjê.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_02"); //Stare zwoje budowniczych zawieraj¹ mnóstwo tajemnic, które musimy odkryæ – jeœli chcemy zrozumieæ, co sta³o siê w przesz³oœci.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_03"); //A teraz musisz coœ dla nas zrobiæ...
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun_15_00"); //Co zrobimy pÃ³Åºniej?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_01"); //Zostaniemy tutaj i bÄ™dziemy dalej badali tÄ™ pradawnÄ… cywilizacjÄ™.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_02"); //Stare zwoje budowniczych zawierajÄ… mnÃ³stwo tajemnic, ktÃ³re musimy odkryÄ‡ â€“ jeÅ›li chcemy zrozumieÄ‡, co staÅ‚o siÄ™ w przeszÅ‚oÅ›ci.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_03"); //A teraz musisz coÅ› dla nas zrobiÄ‡...
 	
 	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "O co chodzi?", DIA_Addon_Saturas_ADWStart_wastun2 );
 };
 func void DIA_Addon_Saturas_ADWStart_wastun2 ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_00"); //O co chodzi?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_01"); //Musisz znaleŸæ Kruka i powstrzymaæ go przed bezczeszczeniem œwi¹tyni Adanosa.
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_02"); //Mam go zabiæ?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_03"); //Jeœli to jedyny sposób, by go powstrzymaæ, to... TAK! W imiê Adanosa!
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_04"); //Zbierz wszystkie zapiski i relikty budowniczych, które zdo³asz znaleŸæ, i przynieœ je do nas.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_05"); //Musimy dowiedzieæ siê wiêcej na temat tych ludzi i tego, co ich spotka³o.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_06"); //Kiedy przejrzymy zamiary Kruka, bêdziemy mogli mu przeszkodziæ.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_07"); //Musisz te¿ znaleŸæ sposób na uwolnienie niewolników.
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_08"); //To wszystko? Zrobiê to z zamkniêtymi oczami.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_09"); //Wiem, ¿e to nie³atwe zadanie. Zrozum, to twoja szansa na odzyskanie mojego zaufania.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_01"); //Musisz znaleÅºÄ‡ Kruka i powstrzymaÄ‡ go przed bezczeszczeniem Å›wiÄ…tyni Adanosa.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_02"); //Mam go zabiÄ‡?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_03"); //JeÅ›li to jedyny sposÃ³b, by go powstrzymaÄ‡, to... TAK! W imiÄ™ Adanosa!
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_04"); //Zbierz wszystkie zapiski i relikty budowniczych, ktÃ³re zdoÅ‚asz znaleÅºÄ‡, i przynieÅ› je do nas.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_05"); //Musimy dowiedzieÄ‡ siÄ™ wiÄ™cej na temat tych ludzi i tego, co ich spotkaÅ‚o.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_06"); //Kiedy przejrzymy zamiary Kruka, bÄ™dziemy mogli mu przeszkodziÄ‡.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_07"); //Musisz teÅ¼ znaleÅºÄ‡ sposÃ³b na uwolnienie niewolnikÃ³w.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_08"); //To wszystko? ZrobiÄ™ to z zamkniÄ™tymi oczami.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_09"); //Wiem, Å¼e to nieÅ‚atwe zadanie. Zrozum, to twoja szansa na odzyskanie mojego zaufania.
 	
 	MIS_ADDON_Saturas_GoToRaven = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Kruk bezczeœci œwi¹tyniê Adanosa. Muszê go powstrzymaæ, nawet jeœli oznacza to jego zabicie."); 
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Kruk bezczeÅ›ci Å›wiÄ…tyniÄ™ Adanosa. MuszÄ™ go powstrzymaÄ‡, nawet jeÅ›li oznacza to jego zabicie."); 
 
 	Log_CreateTopic (TOPIC_Addon_Sklaven, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Sklaven, LOG_RUNNING);
-	Log_AddEntry (TOPIC_Addon_Sklaven,"Saturas chce, ¿ebym uwolni³ niewolników."); 
+	Log_AddEntry (TOPIC_Addon_Sklaven,"Saturas chce, Å¼ebym uwolniÅ‚ niewolnikÃ³w."); 
 
 	Log_CreateTopic (TOPIC_Addon_Relicts, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Relicts, LOG_RUNNING);
-	Log_AddEntry (TOPIC_Addon_Relicts,"Saturas chce, ¿ebym przyniós³ mu ka¿d¹ rzecz, która pozwoli mu poznaæ bli¿ej prastar¹ kulturê budowniczych."); 
+	Log_AddEntry (TOPIC_Addon_Relicts,"Saturas chce, Å¼ebym przyniÃ³sÅ‚ mu kaÅ¼dÄ… rzecz, ktÃ³ra pozwoli mu poznaÄ‡ bliÅ¼ej prastarÄ… kulturÄ™ budowniczych."); 
 	
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "W takim razie ruszam w drogê.", DIA_Addon_Saturas_ADWStart_back );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "W takim razie ruszam w drogÄ™.", DIA_Addon_Saturas_ADWStart_back );
 };
 func void DIA_Addon_Saturas_ADWStart_back ()
 {
-	AI_Output (other, self, "DIA_Addon_Saturas_ADWStart_back_15_00"); //W takim razie ruszam w drogê.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_01"); //Jeszcze jedno... Krukowi towarzyszy wielu bandytów.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_02"); //Podczas twojej nieobecnoœci przyjêliœmy kolejnego cz³onka Wodnego Krêgu.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_03"); //Wys³aliœmy go na bagna. Nie wróci³.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_04"); //S¹dzimy, ¿e bandyci atakuj¹ ka¿dego, kto nie wygl¹da jak oni.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_05"); //Za³atw sobie ich zbrojê.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_06"); //Bêdziesz móg³ podejœæ bli¿ej ich obozu, nie ryzykuj¹c, ¿e ciê zaatakuj¹.
+	AI_Output (other, self, "DIA_Addon_Saturas_ADWStart_back_15_00"); //W takim razie ruszam w drogÄ™.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_01"); //Jeszcze jedno... Krukowi towarzyszy wielu bandytÃ³w.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_02"); //Podczas twojej nieobecnoÅ›ci przyjÄ™liÅ›my kolejnego czÅ‚onka Wodnego KrÄ™gu.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_03"); //WysÅ‚aliÅ›my go na bagna. Nie wrÃ³ciÅ‚.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_04"); //SÄ…dzimy, Å¼e bandyci atakujÄ… kaÅ¼dego, kto nie wyglÄ…da jak oni.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_05"); //ZaÅ‚atw sobie ich zbrojÄ™.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_06"); //BÄ™dziesz mÃ³gÅ‚ podejÅ›Ä‡ bliÅ¼ej ich obozu, nie ryzykujÄ…c, Å¼e ciÄ™ zaatakujÄ….
 
 	Log_CreateTopic (TOPIC_Addon_BDTRuestung, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BDTRuestung, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Bandyci strzelaj¹ do wszystkich, którzy nie wygl¹daj¹ jak oni. Bêdê potrzebowaæ zbroi bandytów, jeœli chcê siê do nich zbli¿yæ."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Bandyci strzelajÄ… do wszystkich, ktÃ³rzy nie wyglÄ…dajÄ… jak oni. BÄ™dÄ™ potrzebowaÄ‡ zbroi bandytÃ³w, jeÅ›li chcÄ™ siÄ™ do nich zbliÅ¼yÄ‡."); 
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -221,7 +221,7 @@ instance DIA_Addon_Saturas_PoorRanger		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_PoorRanger_Condition;
 	information	 = 	DIA_Addon_Saturas_PoorRanger_Info;
 
-	description	 = 	"Którego to nieszczêœnika wys³a³eœ na bagna?";
+	description	 = 	"KtÃ³rego to nieszczÄ™Å›nika wysÅ‚aÅ‚eÅ› na bagna?";
 };
 
 func int DIA_Addon_Saturas_PoorRanger_Condition ()
@@ -231,13 +231,13 @@ func int DIA_Addon_Saturas_PoorRanger_Condition ()
 
 func void DIA_Addon_Saturas_PoorRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_PoorRanger_15_00"); //Którego to nieszczêœnika wys³a³eœ na bagna?
-	AI_Output	(self, other, "DIA_Addon_Saturas_PoorRanger_14_01"); //Nazywa³ siê Lance.
-	AI_Output	(self, other, "DIA_Addon_Saturas_PoorRanger_14_02"); //Chyba nie zaszed³ daleko.
+	AI_Output	(other, self, "DIA_Addon_Saturas_PoorRanger_15_00"); //KtÃ³rego to nieszczÄ™Å›nika wysÅ‚aÅ‚eÅ› na bagna?
+	AI_Output	(self, other, "DIA_Addon_Saturas_PoorRanger_14_01"); //NazywaÅ‚ siÄ™ Lance.
+	AI_Output	(self, other, "DIA_Addon_Saturas_PoorRanger_14_02"); //Chyba nie zaszedÅ‚ daleko.
 	
 	Log_CreateTopic (TOPIC_Addon_Lance, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lance, LOG_RUNNING);
-	Log_AddEntry (TOPIC_Addon_Lance,"Saturas wys³a³ na bagna cz³owieka imieniem Lance. Boi siê jednak, ¿e nie zaszed³ daleko."); 
+	Log_AddEntry (TOPIC_Addon_Lance,"Saturas wysÅ‚aÅ‚ na bagna czÅ‚owieka imieniem Lance. Boi siÄ™ jednak, Å¼e nie zaszedÅ‚ daleko."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -250,7 +250,7 @@ instance DIA_Addon_Saturas_Piraten		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Piraten_Condition;
 	information	 = 	DIA_Addon_Saturas_Piraten_Info;
 
-	description	 = 	"Gdzie znajdê pasuj¹c¹ na mnie zbrojê bandytów?";
+	description	 = 	"Gdzie znajdÄ™ pasujÄ…cÄ… na mnie zbrojÄ™ bandytÃ³w?";
 };
 
 func int DIA_Addon_Saturas_Piraten_Condition ()
@@ -264,13 +264,13 @@ func int DIA_Addon_Saturas_Piraten_Condition ()
 
 func void DIA_Addon_Saturas_Piraten_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Piraten_15_00"); //Gdzie znajdê pasuj¹c¹ na mnie zbrojê bandytów?
-	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_01"); //Na zachodzie jest obóz piratów.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_02"); //Z tego, co wiem, utrzymuj¹ kontakty z bandytami.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_03"); //Nie s¹dzê, ¿eby ciê zaatakowali.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_04"); //Mo¿e uda ci siê znaleŸæ u nich jak¹œ pomoc...
+	AI_Output	(other, self, "DIA_Addon_Saturas_Piraten_15_00"); //Gdzie znajdÄ™ pasujÄ…cÄ… na mnie zbrojÄ™ bandytÃ³w?
+	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_01"); //Na zachodzie jest obÃ³z piratÃ³w.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_02"); //Z tego, co wiem, utrzymujÄ… kontakty z bandytami.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_03"); //Nie sÄ…dzÄ™, Å¼eby ciÄ™ zaatakowali.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Piraten_14_04"); //MoÅ¼e uda ci siÄ™ znaleÅºÄ‡ u nich jakÄ…Å› pomoc...
 
-	B_LogEntry (TOPIC_Addon_BDTRuestung,"Saturas uwa¿a, ¿e piraci mog¹ pomóc mi zdobyæ zbrojê bandytów."); 
+	B_LogEntry (TOPIC_Addon_BDTRuestung,"Saturas uwaÅ¼a, Å¼e piraci mogÄ… pomÃ³c mi zdobyÄ‡ zbrojÄ™ bandytÃ³w."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -283,7 +283,7 @@ instance DIA_Addon_Saturas_LanceLeiche		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_LanceLeiche_Condition;
 	information	 = 	DIA_Addon_Saturas_LanceLeiche_Info;
 
-	description	 = 	"Znalaz³em cia³o Lance'a.";
+	description	 = 	"ZnalazÅ‚em ciaÅ‚o Lance'a.";
 };
 
 func int DIA_Addon_Saturas_LanceLeiche_Condition ()
@@ -297,9 +297,9 @@ func int DIA_Addon_Saturas_LanceLeiche_Condition ()
 
 func void DIA_Addon_Saturas_LanceLeiche_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_LanceLeiche_15_00"); //Znalaz³em cia³o Lance'a.
-	AI_Output	(self, other, "DIA_Addon_Saturas_LanceLeiche_14_01"); //Oby jego dusza dost¹pi³a królestwa Adanosa.
-	AI_Output	(self, other, "DIA_Addon_Saturas_LanceLeiche_14_02"); //Uwa¿aj na siebie, synu. Nie chcê op³akiwaæ kolejnej straty.
+	AI_Output	(other, self, "DIA_Addon_Saturas_LanceLeiche_15_00"); //ZnalazÅ‚em ciaÅ‚o Lance'a.
+	AI_Output	(self, other, "DIA_Addon_Saturas_LanceLeiche_14_01"); //Oby jego dusza dostÄ…piÅ‚a krÃ³lestwa Adanosa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_LanceLeiche_14_02"); //UwaÅ¼aj na siebie, synu. Nie chcÄ™ opÅ‚akiwaÄ‡ kolejnej straty.
 	
 	TOPIC_End_Lance = TRUE;
 	B_GivePlayerXP (XP_Addon_LanceLeiche);
@@ -315,7 +315,7 @@ instance DIA_Addon_Saturas_LanceRing		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_LanceRing_Condition;
 	information	 = 	DIA_Addon_Saturas_LanceRing_Info;
 
-	description	 = 	"Mam akwamarynowy pierœcieñ Lance'a.";
+	description	 = 	"Mam akwamarynowy pierÅ›cieÅ„ Lance'a.";
 };
 
 func int DIA_Addon_Saturas_LanceRing_Condition ()
@@ -329,8 +329,8 @@ func int DIA_Addon_Saturas_LanceRing_Condition ()
 
 func void DIA_Addon_Saturas_LanceRing_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_LanceRing_15_00"); //Mam akwamarynowy pierœcieñ Lance'a.
-	AI_Output	(self, other, "DIA_Addon_Saturas_LanceRing_14_01"); //Najlepiej oddaj mi go, zanim wpadnie w niepowo³ane rêce.
+	AI_Output	(other, self, "DIA_Addon_Saturas_LanceRing_15_00"); //Mam akwamarynowy pierÅ›cieÅ„ Lance'a.
+	AI_Output	(self, other, "DIA_Addon_Saturas_LanceRing_14_01"); //Najlepiej oddaj mi go, zanim wpadnie w niepowoÅ‚ane rÄ™ce.
 	B_GiveInvItems (other, self, ItRi_LanceRing, 1);		
 	B_GivePlayerXP (XP_Addon_LanceRing);
 };
@@ -345,7 +345,7 @@ instance DIA_Addon_Saturas_Tokens		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_Tokens_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jeœli chodzi o relikty...";
+	description	 = 	"JeÅ›li chodzi o relikty...";
 };
 
 func int DIA_Addon_Saturas_Tokens_Condition ()
@@ -368,15 +368,15 @@ var int Saturas_SCFound_ItMi_Addon_Stone_05;
 
 func void DIA_Addon_Saturas_Tokens_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_00"); //Jeœli chodzi o relikty...
+	AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_00"); //JeÅ›li chodzi o relikty...
 	
 	if (DIA_Addon_Saturas_Tokens_OneTime == FALSE)
 	&& ((C_ScHasMagicStonePlate ())
 	|| (Npc_HasItems (other,ItWr_StonePlateCommon_Addon)))
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_01"); //Wydaje mi siê, ¿e mam tu coœ dla ciebie.
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_02"); //Mamy ju¿ podobne kamienne tablice. Te ju¿ nam siê nie przydadz¹.
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_03"); //Tam musi byæ coœ wiêcej.
+		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_01"); //Wydaje mi siÄ™, Å¼e mam tu coÅ› dla ciebie.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_02"); //Mamy juÅ¼ podobne kamienne tablice. Te juÅ¼ nam siÄ™ nie przydadzÄ….
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_03"); //Tam musi byÄ‡ coÅ› wiÄ™cej.
 		DIA_Addon_Saturas_Tokens_OneTime = TRUE;
 	};
 	
@@ -390,31 +390,31 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 	|| ((Npc_HasItems (other,ItMi_Addon_Stone_04)) && (Saturas_SCFound_ItMi_Addon_Stone_04 == FALSE))
 	|| ((Npc_HasItems (other,ItMi_Addon_Stone_05)) && (Saturas_SCFound_ItMi_Addon_Stone_05 == FALSE))
 	{	
-		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_04"); //A to mo¿ecie wykorzystaæ?
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_05"); //Wygl¹da nieŸle. Gdzie to znalaz³eœ?
+		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_04"); //A to moÅ¼ecie wykorzystaÄ‡?
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_05"); //WyglÄ…da nieÅºle. Gdzie to znalazÅ‚eÅ›?
               
- 		B_LogEntry (TOPIC_Addon_Relicts,"Saturas otrzyma³ ode mnie nastêpuj¹ce relikty:"); 
+ 		B_LogEntry (TOPIC_Addon_Relicts,"Saturas otrzymaÅ‚ ode mnie nastÄ™pujÄ…ce relikty:"); 
                                
 		if ((Npc_HasItems (other,ItMi_Addon_Stone_01)) && (Saturas_SCFound_ItMi_Addon_Stone_01 == FALSE))
 			{
 				B_GiveInvItems (other, self, ItMi_Addon_Stone_01, 1);
 				Saturas_SCFound_ItMi_Addon_Stone_01 = TRUE;
 				BroughtToken = (BroughtToken + 1);
-				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_06"); //Bandyci u¿ywaj¹ tych tabliczek jako waluty.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_07"); //Na tablicach jest symbol Quarhodrona, wielkiego wojownika i dowódcy.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_08"); //Jego syn – Rademes – doprowadzi³ do zag³ady ca³ego miasta.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_09"); //Phi. Za³o¿ê siê, ¿e bandyci nie maj¹ pojêcia, co wpad³o im w rêce.
-				Log_AddEntry (TOPIC_Addon_Relicts,"- Czerwon¹ kamienn¹ tablicê, któr¹ bandyci u¿ywali jako walutê. Jest na niej znak wielkiego wodza Quarhodrona."); 
+				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_06"); //Bandyci uÅ¼ywajÄ… tych tabliczek jako waluty.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_07"); //Na tablicach jest symbol Quarhodrona, wielkiego wojownika i dowÃ³dcy.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_08"); //Jego syn â€“ Rademes â€“ doprowadziÅ‚ do zagÅ‚ady caÅ‚ego miasta.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_09"); //Phi. ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e bandyci nie majÄ… pojÄ™cia, co wpadÅ‚o im w rÄ™ce.
+				Log_AddEntry (TOPIC_Addon_Relicts,"- CzerwonÄ… kamiennÄ… tablicÄ™, ktÃ³rÄ… bandyci uÅ¼ywali jako walutÄ™. Jest na niej znak wielkiego wodza Quarhodrona."); 
 			};		
 		if ((Npc_HasItems (other,ItMi_Addon_Stone_02)) && (Saturas_SCFound_ItMi_Addon_Stone_02 == FALSE))
 			{
 				B_GiveInvItems (other, self, ItMi_Addon_Stone_02, 1);
 				Saturas_SCFound_ItMi_Addon_Stone_02 = TRUE;
 				BroughtToken = (BroughtToken + 1);
-				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_10"); //Tê tabliczkê znalaz³em w budynku na po³udniu.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_11"); //Ach! Tablica stra¿ników umar³ych. Przywo³uje duchy zmar³ych.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_12"); //Zwi¹zki pomiêdzy budowniczymi i ich przodkami by³y bardzo silne.
-				Log_AddEntry (TOPIC_Addon_Relicts,"- Fioletow¹ kamienn¹ tablicê z posiad³oœci stra¿ników umar³ych na po³udniu."); 
+				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_10"); //TÄ™ tabliczkÄ™ znalazÅ‚em w budynku na poÅ‚udniu.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_11"); //Ach! Tablica straÅ¼nikÃ³w umarÅ‚ych. PrzywoÅ‚uje duchy zmarÅ‚ych.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_12"); //ZwiÄ…zki pomiÄ™dzy budowniczymi i ich przodkami byÅ‚y bardzo silne.
+				Log_AddEntry (TOPIC_Addon_Relicts,"- FioletowÄ… kamiennÄ… tablicÄ™ z posiadÅ‚oÅ›ci straÅ¼nikÃ³w umarÅ‚ych na poÅ‚udniu."); 
 			};	
 
 		if ((Npc_HasItems (other,ItMi_Addon_Stone_03)) && (Saturas_SCFound_ItMi_Addon_Stone_03 == FALSE))
@@ -422,32 +422,32 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 				B_GiveInvItems (other, self, ItMi_Addon_Stone_03,1);
 				Saturas_SCFound_ItMi_Addon_Stone_03 = TRUE;
 				BroughtToken = (BroughtToken + 1);
-				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_13"); //Znalaz³em tê tabliczkê w budynku na po³udniowym zachodzie.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_14"); //Z tego, co na niej napisano, wynika, ¿e by³ to dom kap³anów miasta.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_15"); //Najwy¿szy kap³an nazywa³ siê KHARDIMON. Nie wiemy wiele wiêcej na jego temat.
-				Log_AddEntry (TOPIC_Addon_Relicts,"- Niebiesk¹ kamienn¹ tablicê z domostwa kap³anów na po³udniowym zachodzie."); 
+				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_13"); //ZnalazÅ‚em tÄ™ tabliczkÄ™ w budynku na poÅ‚udniowym zachodzie.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_14"); //Z tego, co na niej napisano, wynika, Å¼e byÅ‚ to dom kapÅ‚anÃ³w miasta.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_15"); //NajwyÅ¼szy kapÅ‚an nazywaÅ‚ siÄ™ KHARDIMON. Nie wiemy wiele wiÄ™cej na jego temat.
+				Log_AddEntry (TOPIC_Addon_Relicts,"- NiebieskÄ… kamiennÄ… tablicÄ™ z domostwa kapÅ‚anÃ³w na poÅ‚udniowym zachodzie."); 
 			};		 
 		if ((Npc_HasItems (other,ItMi_Addon_Stone_04)) && (Saturas_SCFound_ItMi_Addon_Stone_04 == FALSE))
 			{
 				B_GiveInvItems (other, self, ItMi_Addon_Stone_04,1);
 				Saturas_SCFound_ItMi_Addon_Stone_04 = TRUE;
 				BroughtToken = (BroughtToken + 1);
-				AI_Output (other, self, "DIA_Addon_Saturas_Tokens_15_15"); //Ta tabliczka le¿a³a w budynku niedaleko wielkiego bagna.
-				AI_Output (self, other, "DIA_Addon_Saturas_Tokens_14_16"); //Na pewno by³ to dom uzdrowicieli.
-				AI_Output (self, other, "DIA_Addon_Saturas_Tokens_14_17"); //Nie wiemy o nich zbyt wiele. Wygl¹da na to, ¿e zniknêli pierwsi.
-				Log_AddEntry (TOPIC_Addon_Relicts,"- Zielon¹ kamienn¹ tablicê z domu uzdrowicieli w po³udniowej czêœci bagna."); 
+				AI_Output (other, self, "DIA_Addon_Saturas_Tokens_15_15"); //Ta tabliczka leÅ¼aÅ‚a w budynku niedaleko wielkiego bagna.
+				AI_Output (self, other, "DIA_Addon_Saturas_Tokens_14_16"); //Na pewno byÅ‚ to dom uzdrowicieli.
+				AI_Output (self, other, "DIA_Addon_Saturas_Tokens_14_17"); //Nie wiemy o nich zbyt wiele. WyglÄ…da na to, Å¼e zniknÄ™li pierwsi.
+				Log_AddEntry (TOPIC_Addon_Relicts,"- ZielonÄ… kamiennÄ… tablicÄ™ z domu uzdrowicieli w poÅ‚udniowej czÄ™Å›ci bagna."); 
 			};		 
 		if ((Npc_HasItems (other,ItMi_Addon_Stone_05)) && (Saturas_SCFound_ItMi_Addon_Stone_05 == FALSE))
 			{
 				B_GiveInvItems (other, self, ItMi_Addon_Stone_05, 1);
 				Saturas_SCFound_ItMi_Addon_Stone_05 = TRUE;
 				BroughtToken = (BroughtToken + 1);
-				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_18"); //Ta czêœæ le¿a³a w wielkim budynku w kanionie.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_19"); //To by³a biblioteka tego pradawnego ludu.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_20"); //NajwyraŸniej jest to tablica uczonych.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_80"); //Wiêkszoœæ pism, które znaleŸliœmy, jest autorstwa przywódcy Kasty Uczonych.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_81"); //Co dziwne, nie zostawi³ swojego imienia na ¿adnym z pism...
-				Log_AddEntry (TOPIC_Addon_Relicts,"- ¯ó³t¹ kamienn¹ tablicê z biblioteki uczonych na pó³nocy."); 
+				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_18"); //Ta czÄ™Å›Ä‡ leÅ¼aÅ‚a w wielkim budynku w kanionie.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_19"); //To byÅ‚a biblioteka tego pradawnego ludu.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_20"); //NajwyraÅºniej jest to tablica uczonych.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_80"); //WiÄ™kszoÅ›Ä‡ pism, ktÃ³re znaleÅºliÅ›my, jest autorstwa przywÃ³dcy Kasty Uczonych.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_81"); //Co dziwne, nie zostawiÅ‚ swojego imienia na Å¼adnym z pism...
+				Log_AddEntry (TOPIC_Addon_Relicts,"- Å»Ã³Å‚tÄ… kamiennÄ… tablicÄ™ z biblioteki uczonych na pÃ³Å‚nocy."); 
 		};		 
 			
 			if (SC_Knows_WeaponInAdanosTempel == TRUE)
@@ -463,14 +463,14 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 		{
 			if (Ghost_SCKnowsHow2GetInAdanosTempel == FALSE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_21"); //Bardzo dobrze. Mamy coraz wyraŸniejszy obraz miasta, ale jeszcze nie wiemy wszystkiego.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_21"); //Bardzo dobrze. Mamy coraz wyraÅºniejszy obraz miasta, ale jeszcze nie wiemy wszystkiego.
 			};
 			
-			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_22"); //Na tym terenie musi byæ ukrytych piêæ takich kamiennych tablic.
-			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_23"); //ZnajdŸ je i przynieœ do mnie.
+			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_22"); //Na tym terenie musi byÄ‡ ukrytych piÄ™Ä‡ takich kamiennych tablic.
+			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_23"); //ZnajdÅº je i przynieÅ› do mnie.
 		};
 		
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_24"); //WeŸ to z³oto jako swe wynagrodzenie.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_24"); //WeÅº to zÅ‚oto jako swe wynagrodzenie.
 
 		var int Kohle;
 		Kohle = (200 * BroughtToken);
@@ -483,20 +483,20 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 	
 	if (Saturas_BroughtTokenAmount == 5)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_25"); //Mamy ju¿ wszystkie potrzebne relikty.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_25"); //Mamy juÅ¼ wszystkie potrzebne relikty.
 	
 		if (Ghost_SCKnowsHow2GetInAdanosTempel == FALSE)
 		{
-			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_26"); //Odda³eœ nam wielk¹ przys³ugê. Dziêkujemy.
-			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_27"); //To pozwoli nam wykonaæ decyduj¹cy krok w naszych badaniach.
+			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_26"); //OddaÅ‚eÅ› nam wielkÄ… przysÅ‚ugÄ™. DziÄ™kujemy.
+			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_27"); //To pozwoli nam wykonaÄ‡ decydujÄ…cy krok w naszych badaniach.
 		};
 		MIS_Saturas_LookingForHousesOfRulers = LOG_SUCCESS;
 		Saturas_SCBroughtAllToken = TRUE;
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_28"); //Zobaczymy, co uda mi siê znaleŸæ.
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_29"); //Dobrze. Tylko siê poœpiesz. Czas ucieka.
+		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_28"); //Zobaczymy, co uda mi siÄ™ znaleÅºÄ‡.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_29"); //Dobrze. Tylko siÄ™ poÅ›piesz. Czas ucieka.
 	};
 };
 
@@ -526,33 +526,33 @@ func int DIA_Addon_Saturas_StonePlateHint_Condition ()
 
 func void DIA_Addon_Saturas_StonePlateHint_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_00"); //Dobrze, ¿e jesteœ. Mamy nowe informacje, które chcemy ci przekazaæ.
-	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_15_01"); //Zamieniam siê w s³uch.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_02"); //Zaginione miasto nosi³o nazwê Jarkendar. Mia³o 5 w³adców, którzy wspólnie nim rz¹dzili.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_03"); //Ka¿dy z w³adców mia³ posiad³oœæ, w której mieszka³ i gdzie trzyma³ swoje dobra.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_04"); //Wydaje siê konieczne, abyœ w czasie poszukiwañ reliktów tej zaginionej cywilizacji stara³ siê równie¿ odnaleŸæ ich domostwa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_00"); //Dobrze, Å¼e jesteÅ›. Mamy nowe informacje, ktÃ³re chcemy ci przekazaÄ‡.
+	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_15_01"); //Zamieniam siÄ™ w sÅ‚uch.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_02"); //Zaginione miasto nosiÅ‚o nazwÄ™ Jarkendar. MiaÅ‚o 5 wÅ‚adcÃ³w, ktÃ³rzy wspÃ³lnie nim rzÄ…dzili.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_03"); //KaÅ¼dy z wÅ‚adcÃ³w miaÅ‚ posiadÅ‚oÅ›Ä‡, w ktÃ³rej mieszkaÅ‚ i gdzie trzymaÅ‚ swoje dobra.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_04"); //Wydaje siÄ™ konieczne, abyÅ› w czasie poszukiwaÅ„ reliktÃ³w tej zaginionej cywilizacji staraÅ‚ siÄ™ rÃ³wnieÅ¼ odnaleÅºÄ‡ ich domostwa.
 	
 	MIS_Saturas_LookingForHousesOfRulers = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Addon_Saturas_StonePlateHint);
-	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "A jeœli ¿adna z nich ju¿ nie istnieje?", DIA_Addon_Saturas_StonePlateHint_unter );
-	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "Gdzie powinienem ich szukaæ?", DIA_Addon_Saturas_StonePlateHint_wo );
+	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "A jeÅ›li Å¼adna z nich juÅ¼ nie istnieje?", DIA_Addon_Saturas_StonePlateHint_unter );
+	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "Gdzie powinienem ich szukaÄ‡?", DIA_Addon_Saturas_StonePlateHint_wo );
 };
 func void DIA_Addon_Saturas_StonePlateHint_wo ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_wo_15_00"); //Gdzie powinienem ich szukaæ?
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_01"); //Riordian prowadzi³ badania nad uk³adem budynków Jarkendaru.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_02"); //Powie ci, gdzie s¹ te posiad³oœci.
+	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_wo_15_00"); //Gdzie powinienem ich szukaÄ‡?
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_01"); //Riordian prowadziÅ‚ badania nad ukÅ‚adem budynkÃ³w Jarkendaru.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_02"); //Powie ci, gdzie sÄ… te posiadÅ‚oÅ›ci.
 
 	Log_CreateTopic (TOPIC_Addon_HousesOfRulers, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_HousesOfRulers, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Saturas chce, ¿ebym poszuka³ czegoœ u¿ytecznego w posiad³oœciach budowniczych. Riordian powie mi, gdzie je znaleŸæ."); 
+	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Saturas chce, Å¼ebym poszukaÅ‚ czegoÅ› uÅ¼ytecznego w posiadÅ‚oÅ›ciach budowniczych. Riordian powie mi, gdzie je znaleÅºÄ‡."); 
 };
 func void DIA_Addon_Saturas_StonePlateHint_unter ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_unter_15_00"); //A jeœli ¿adna z tych posiad³oœci ju¿ nie istnieje?
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_01"); //Jeœli nie uda ci siê znaleŸæ tych domów, to znaczy, ¿e najprawdopodobniej zosta³y zniszczone w czasie upadku miasta.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_02"); //Ale jeœli wci¹¿ istniej¹, to mog¹ okazaæ siê bezcenne dla naszych badañ.
+	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_unter_15_00"); //A jeÅ›li Å¼adna z tych posiadÅ‚oÅ›ci juÅ¼ nie istnieje?
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_01"); //JeÅ›li nie uda ci siÄ™ znaleÅºÄ‡ tych domÃ³w, to znaczy, Å¼e najprawdopodobniej zostaÅ‚y zniszczone w czasie upadku miasta.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_02"); //Ale jeÅ›li wciÄ…Å¼ istniejÄ…, to mogÄ… okazaÄ‡ siÄ™ bezcenne dla naszych badaÅ„.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -565,7 +565,7 @@ instance DIA_Addon_Saturas_SCBroughtAllToken		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_SCBroughtAllToken_Condition;
 	information	 = 	DIA_Addon_Saturas_SCBroughtAllToken_Info;
 
-	description	 = 	"Po co potrzebujesz tych piêciu kamiennych tabliczek?";
+	description	 = 	"Po co potrzebujesz tych piÄ™ciu kamiennych tabliczek?";
 };
 
 func int DIA_Addon_Saturas_SCBroughtAllToken_Condition ()
@@ -580,11 +580,11 @@ func int DIA_Addon_Saturas_SCBroughtAllToken_Condition ()
 
 func void DIA_Addon_Saturas_SCBroughtAllToken_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_SCBroughtAllToken_15_00"); //Po co potrzebujesz tych piêciu kamiennych tabliczek?
-	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_01"); //Zapiski, które znaleŸliœmy w ruinach, s¹ niepe³ne.
-	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_02"); //Ale pisma budowniczych wspominaj¹ o piêciu w³adcach rz¹dz¹cych miastem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_03"); //Ka¿dy z nich mia³ jedn¹ z tablic, symbol swojej w³adzy.
-	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_04"); //S¹dzê, ¿e dziêki tym tablicom znajdziemy odpowiedzi na moje pytania.
+	AI_Output	(other, self, "DIA_Addon_Saturas_SCBroughtAllToken_15_00"); //Po co potrzebujesz tych piÄ™ciu kamiennych tabliczek?
+	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_01"); //Zapiski, ktÃ³re znaleÅºliÅ›my w ruinach, sÄ… niepeÅ‚ne.
+	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_02"); //Ale pisma budowniczych wspominajÄ… o piÄ™ciu wÅ‚adcach rzÄ…dzÄ…cych miastem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_03"); //KaÅ¼dy z nich miaÅ‚ jednÄ… z tablic, symbol swojej wÅ‚adzy.
+	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_04"); //SÄ…dzÄ™, Å¼e dziÄ™ki tym tablicom znajdziemy odpowiedzi na moje pytania.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -597,7 +597,7 @@ instance DIA_Addon_Saturas_Flut		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Flut_Condition;
 	information	 = 	DIA_Addon_Saturas_Flut_Info;
 
-	description	 = 	"Nefarius opowiedzia³ mi o potopie...";
+	description	 = 	"Nefarius opowiedziaÅ‚ mi o potopie...";
 };
 
 func int DIA_Addon_Saturas_Flut_Condition ()
@@ -611,10 +611,10 @@ func int DIA_Addon_Saturas_Flut_Condition ()
 
 func void DIA_Addon_Saturas_Flut_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Flut_15_00"); //Nefarius opowiedzia³ mi o potopie...
-	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_02"); //Przekazy g³osz¹, ¿e Adanos zst¹pi³ z nieba, aby ukaraæ niewierz¹cych i wygnaæ ich do królestwa umar³ych.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_03"); //W œwiêtym gniewie kaza³ falom morskim zalaæ budowniczych tego miasta i zmyæ ich z powierzchni.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_04"); //Bagno na wschodzie jest pozosta³oœci¹ po tych wydarzeniach.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Flut_15_00"); //Nefarius opowiedziaÅ‚ mi o potopie...
+	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_02"); //Przekazy gÅ‚oszÄ…, Å¼e Adanos zstÄ…piÅ‚ z nieba, aby ukaraÄ‡ niewierzÄ…cych i wygnaÄ‡ ich do krÃ³lestwa umarÅ‚ych.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_03"); //W Å›wiÄ™tym gniewie kazaÅ‚ falom morskim zalaÄ‡ budowniczych tego miasta i zmyÄ‡ ich z powierzchni.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_04"); //Bagno na wschodzie jest pozostaÅ‚oÅ›ciÄ… po tych wydarzeniach.
 
 	TOPIC_END_Flut = TRUE;
 	B_GivePlayerXP (XP_Ambient);
@@ -630,7 +630,7 @@ instance DIA_Addon_Saturas_AdanosZorn		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_AdanosZorn_Condition;
 	information	 = 	DIA_Addon_Saturas_AdanosZorn_Info;
 
-	description	 = 	"Dlaczego Adanos tak siê rozgniewa³?";
+	description	 = 	"Dlaczego Adanos tak siÄ™ rozgniewaÅ‚?";
 };
 func int DIA_Addon_Saturas_AdanosZorn_Condition ()
 {
@@ -642,13 +642,13 @@ func int DIA_Addon_Saturas_AdanosZorn_Condition ()
 };
 func void DIA_Addon_Saturas_AdanosZorn_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_AdanosZorn_15_00"); //Dlaczego Adanos tak siê rozgniewa³?
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_01"); //Œwi¹tynia w tym mieœcie by³a kiedyœ wielkim, jasnym budynkiem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_02"); //Wszyscy j¹ podziwiali i modlili siê do naszego boga – Adanosa.
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_03"); //Rademes, syn dowódcy Quarhodrona, zbezczeœci³ œwi¹tyniê.
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_04"); //Jeden po drugim budowniczowie schodzili na œcie¿kê z³a.
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_05"); //Adanos nie móg³ im wybaczyæ i kraj zosta³ dotkniêty jego zemst¹.
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_06"); //Dlatego tak wa¿ne jest, abyœmy powstrzymali Kruka. Ma zamiar dostaæ siê do œwi¹tyni...
+	AI_Output	(other, self, "DIA_Addon_Saturas_AdanosZorn_15_00"); //Dlaczego Adanos tak siÄ™ rozgniewaÅ‚?
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_01"); //ÅšwiÄ…tynia w tym mieÅ›cie byÅ‚a kiedyÅ› wielkim, jasnym budynkiem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_02"); //Wszyscy jÄ… podziwiali i modlili siÄ™ do naszego boga â€“ Adanosa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_03"); //Rademes, syn dowÃ³dcy Quarhodrona, zbezczeÅ›ciÅ‚ Å›wiÄ…tyniÄ™.
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_04"); //Jeden po drugim budowniczowie schodzili na Å›cieÅ¼kÄ™ zÅ‚a.
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_05"); //Adanos nie mÃ³gÅ‚ im wybaczyÄ‡ i kraj zostaÅ‚ dotkniÄ™ty jego zemstÄ….
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_06"); //Dlatego tak waÅ¼ne jest, abyÅ›my powstrzymali Kruka. Ma zamiar dostaÄ‡ siÄ™ do Å›wiÄ…tyni...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -662,7 +662,7 @@ instance DIA_Addon_Saturas_RavenInfos		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_RavenInfos_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jeœli chodzi o Kruka...";
+	description	 = 	"JeÅ›li chodzi o Kruka...";
 };
 var int DIA_Addon_Saturas_RavenInfos_OneTime1;
 var int DIA_Addon_Saturas_RavenInfos_OneTime2;
@@ -682,7 +682,7 @@ func int DIA_Addon_Saturas_RavenInfos_Condition ()
 };
 func void DIA_Addon_Saturas_RavenInfos_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_00"); //Jeœli chodzi o Kruka...
+	AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_00"); //JeÅ›li chodzi o Kruka...
 	
 	var int RavenNeuigkeit;
 	RavenNeuigkeit = 0;
@@ -692,10 +692,10 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	&& (DIA_Addon_Saturas_RavenInfos_OneTime1 == FALSE)
 	&& (RavenIsInTempel == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_01"); //By³em w obozie bandytów. Kruk jest ich przywódc¹.
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_02"); //Aby siê do niego zbli¿yæ, muszê siê pozbyæ niektórych bandytów.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_03"); //Dobrze. Powodzenia. Ale nie zapomnij, ¿e musisz siê spieszyæ.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_04"); //Kruk nie mo¿e zrealizowaæ swoich planów.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_01"); //ByÅ‚em w obozie bandytÃ³w. Kruk jest ich przywÃ³dcÄ….
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_02"); //Aby siÄ™ do niego zbliÅ¼yÄ‡, muszÄ™ siÄ™ pozbyÄ‡ niektÃ³rych bandytÃ³w.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_03"); //Dobrze. Powodzenia. Ale nie zapomnij, Å¼e musisz siÄ™ spieszyÄ‡.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_04"); //Kruk nie moÅ¼e zrealizowaÄ‡ swoich planÃ³w.
 		DIA_Addon_Saturas_RavenInfos_OneTime1 = TRUE;
 		RavenNeuigkeit = (RavenNeuigkeit + 1);
 	};
@@ -703,9 +703,9 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	if (SC_KnowsRavensGoldmine == TRUE) 
 	&& (DIA_Addon_Saturas_RavenInfos_OneTime2 == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_05"); //Ma kopalniê z³ota i ka¿e w niej pracowaæ swoim wiêŸniom.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_06"); //To podobne do niego. Musisz uwolniæ wiêŸniów.
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_07"); //Oczywiœcie. Pracujê nad tym.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_05"); //Ma kopalniÄ™ zÅ‚ota i kaÅ¼e w niej pracowaÄ‡ swoim wiÄ™Åºniom.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_06"); //To podobne do niego. Musisz uwolniÄ‡ wiÄ™ÅºniÃ³w.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_07"); //OczywiÅ›cie. PracujÄ™ nad tym.
 		DIA_Addon_Saturas_RavenInfos_OneTime2 = TRUE;
 		RavenNeuigkeit = (RavenNeuigkeit + 1);
 	};	
@@ -713,13 +713,13 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	if (SC_KnowsFortunoInfos == TRUE)
 	&& (DIA_Addon_Saturas_RavenInfos_OneTime3 == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_08"); //Jeden z bandytów twierdzi, ¿e zna plany Kruka.
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_09"); //Nazywa siê Fortuno. Mówi, ¿e Kruk chce siê dostaæ do œwi¹tyni, aby zdobyæ potê¿ny artefakt.
-		AI_Output	(self, other, "DIA_Addon_Bodo_14_03"); //I co? Wie coœ wiêcej na temat tego artefaktu?
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_11"); //Powiedzia³ mi tylko, ¿e Kruk kaza³ rozkopaæ grób jednego z kap³anów Adanosa.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_12"); //Mo¿liwe, ¿e w tym grobie jest klucz do œwi¹tyni. Powinieneœ siê tam rozejrzeæ.
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_13"); //Kruk kaza³ wiêŸniom rozkopaæ grobowiec.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_14"); //To niedobrze. Musisz siê pospieszyæ i pozbyæ Kruka.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_08"); //Jeden z bandytÃ³w twierdzi, Å¼e zna plany Kruka.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_09"); //Nazywa siÄ™ Fortuno. MÃ³wi, Å¼e Kruk chce siÄ™ dostaÄ‡ do Å›wiÄ…tyni, aby zdobyÄ‡ potÄ™Å¼ny artefakt.
+		AI_Output	(self, other, "DIA_Addon_Bodo_14_03"); //I co? Wie coÅ› wiÄ™cej na temat tego artefaktu?
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_11"); //PowiedziaÅ‚ mi tylko, Å¼e Kruk kazaÅ‚ rozkopaÄ‡ grÃ³b jednego z kapÅ‚anÃ³w Adanosa.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_12"); //MoÅ¼liwe, Å¼e w tym grobie jest klucz do Å›wiÄ…tyni. PowinieneÅ› siÄ™ tam rozejrzeÄ‡.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_13"); //Kruk kazaÅ‚ wiÄ™Åºniom rozkopaÄ‡ grobowiec.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_14"); //To niedobrze. Musisz siÄ™ pospieszyÄ‡ i pozbyÄ‡ Kruka.
 		Addon_Saturas_Fortuno = TRUE;
 		
 		DIA_Addon_Saturas_RavenInfos_OneTime3 = TRUE;
@@ -729,10 +729,10 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	if (RavenIsInTempel == TRUE)
 	&& (DIA_Addon_Saturas_RavenInfos_OneTime4 == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_15"); //Wtargn¹³em do siedziby Kruka.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_15"); //WtargnÄ…Å‚em do siedziby Kruka.
 		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_16"); //Co z nim?
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_17"); //Przyby³em za póŸno. Na moich oczach znikn¹³ w œwi¹tyni Adanosa.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_18"); //Co? To TRAGEDIA! Dlaczego nie wyruszy³eœ za nim?!
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_17"); //PrzybyÅ‚em za pÃ³Åºno. Na moich oczach zniknÄ…Å‚ w Å›wiÄ…tyni Adanosa.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_18"); //Co? To TRAGEDIA! Dlaczego nie wyruszyÅ‚eÅ› za nim?!
 
 		DIA_Addon_Saturas_RavenInfos_OneTime4 = TRUE;
 		MIS_ADDON_Saturas_GoToRaven = LOG_SUCCESS;
@@ -747,9 +747,9 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_19"); //Przynosisz jakieœ wieœci?
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_19"); //Przynosisz jakieÅ› wieÅ›ci?
 		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_20"); //Nie tym razem.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_21"); //Dam ci radê – nie lekcewa¿ Kruka. Rozumiesz?
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_21"); //Dam ci radÄ™ â€“ nie lekcewaÅ¼ Kruka. Rozumiesz?
 	};
 };
 
@@ -763,7 +763,7 @@ instance DIA_Addon_Saturas_TuerZu		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_TuerZu_Condition;
 	information	 = 	DIA_Addon_Saturas_TuerZu_Info;
 
-	description	 = 	"Nie mog³em iœæ za nim!";
+	description	 = 	"Nie mogÅ‚em iÅ›Ä‡ za nim!";
 };
 
 func int DIA_Addon_Saturas_TuerZu_Condition ()
@@ -777,33 +777,33 @@ func int DIA_Addon_Saturas_TuerZu_Condition ()
 
 func void DIA_Addon_Saturas_TuerZu_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_00"); //Nie mog³em iœæ za nim. Zablokowa³ bramê od wewn¹trz.
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_02"); //Muszê pomyœleæ...
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_03"); //Ciekawe, jak Kruk dosta³ siê do œwi¹tyni...
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_04"); //Co zrobi³, zanim przeszed³ przez portal?
-	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_05"); //Wypowiedzia³ zaklêcie przy bramie.
+	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_00"); //Nie mogÅ‚em iÅ›Ä‡ za nim. ZablokowaÅ‚ bramÄ™ od wewnÄ…trz.
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_02"); //MuszÄ™ pomyÅ›leÄ‡...
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_03"); //Ciekawe, jak Kruk dostaÅ‚ siÄ™ do Å›wiÄ…tyni...
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_04"); //Co zrobiÅ‚, zanim przeszedÅ‚ przez portal?
+	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_05"); //WypowiedziaÅ‚ zaklÄ™cie przy bramie.
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_06"); //A przedtem?
-	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_07"); //Otworzy³ grób.
+	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_07"); //OtworzyÅ‚ grÃ³b.
 
 	if (Addon_Saturas_Fortuno == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_09"); //Ju¿ ci mówi³em...
-		AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_10"); //Dok³adnie!
+		AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_09"); //JuÅ¼ ci mÃ³wiÅ‚em...
+		AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_10"); //DokÅ‚adnie!
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_08"); //Wiem, ¿e musia³ odprawiæ jakiœ rytua³...
+		AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_08"); //Wiem, Å¼e musiaÅ‚ odprawiÄ‡ jakiÅ› rytuaÅ‚...
 	};
 
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_11"); //Rytua³...
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_12"); //Tak! W³aœnie to!
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_13"); //Obawiam siê, ¿e Kruk zyska³ moc stra¿ników umar³ych.
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_14"); //Zdoby³ wiedzê na temat œwi¹tyni od ducha!
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_15"); //Musisz udaæ siê do Myxira i mu o tym opowiedzieæ.
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_11"); //RytuaÅ‚...
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_12"); //Tak! WÅ‚aÅ›nie to!
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_13"); //Obawiam siÄ™, Å¼e Kruk zyskaÅ‚ moc straÅ¼nikÃ³w umarÅ‚ych.
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_14"); //ZdobyÅ‚ wiedzÄ™ na temat Å›wiÄ…tyni od ducha!
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_15"); //Musisz udaÄ‡ siÄ™ do Myxira i mu o tym opowiedzieÄ‡.
 	
 	Log_CreateTopic (TOPIC_Addon_Quarhodron, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Quarhodron, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Kruk posiad³ moc Stra¿nika Umar³ych i od ducha zdoby³ informacje o œwi¹tyni Adanosa. Powinienem przekazaæ te wiadomoœci Myxirowi.");  
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Kruk posiadÅ‚ moc StraÅ¼nika UmarÅ‚ych i od ducha zdobyÅ‚ informacje o Å›wiÄ…tyni Adanosa. Powinienem przekazaÄ‡ te wiadomoÅ›ci Myxirowi.");  
 	
 	Saturas_RiesenPlan = TRUE;	
 };
@@ -818,7 +818,7 @@ instance DIA_Addon_Saturas_GhostQuestions		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_GhostQuestions_Condition;
 	information	 = 	DIA_Addon_Saturas_GhostQuestions_Info;
 
-	description	 = 	"Rozmawia³em z Quarhodronem.";
+	description	 = 	"RozmawiaÅ‚em z Quarhodronem.";
 };
 func int DIA_Addon_Saturas_GhostQuestions_Condition ()
 {
@@ -831,16 +831,16 @@ func int DIA_Addon_Saturas_GhostQuestions_Condition ()
 };
 func void DIA_Addon_Saturas_GhostQuestions_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_00"); //Rozmawia³em z Quarhodronem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_01"); //I co powiedzia³?
-	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_02"); //¯e pomo¿e mi tylko wtedy, jeœli odpowiem mu na kilka pytañ.
+	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_00"); //RozmawiaÅ‚em z Quarhodronem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_01"); //I co powiedziaÅ‚?
+	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_02"); //Å»e pomoÅ¼e mi tylko wtedy, jeÅ›li odpowiem mu na kilka pytaÅ„.
 	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_03"); //W czym problem?
-	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_04"); //Nie jestem pewien, co mam mu powiedzieæ.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_05"); //Hm... wiemy, ¿e uczeni z tego miasta zbudowali na pó³nocy bibliotekê.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_06"); //Bardzo dok³adnie spisywali wszystkie wydarzenia przesz³oœci.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_07"); //Mo¿e tam znajdziesz odpowiedzi na pytania Quarhodrona.
+	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_04"); //Nie jestem pewien, co mam mu powiedzieÄ‡.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_05"); //Hm... wiemy, Å¼e uczeni z tego miasta zbudowali na pÃ³Å‚nocy bibliotekÄ™.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_06"); //Bardzo dokÅ‚adnie spisywali wszystkie wydarzenia przeszÅ‚oÅ›ci.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_07"); //MoÅ¼e tam znajdziesz odpowiedzi na pytania Quarhodrona.
 
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Saturas s¹dzi, ¿e odpowiedzi na pytania Quarhodrona mogê znaleŸæ w bibliotece uczonych. Le¿y ona daleko na pó³nocy."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Saturas sÄ…dzi, Å¼e odpowiedzi na pytania Quarhodrona mogÄ™ znaleÅºÄ‡ w bibliotece uczonych. LeÅ¼y ona daleko na pÃ³Å‚nocy."); 
 
 };
 
@@ -854,7 +854,7 @@ instance DIA_Addon_Saturas_TalkedToGhost		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_TalkedToGhost_Condition;
 	information	 = 	DIA_Addon_Saturas_TalkedToGhost_Info;
 
-	description	 = 	"Problem z bram¹ u wejœcia do œwi¹tyni zosta³ rozwi¹zany.";
+	description	 = 	"Problem z bramÄ… u wejÅ›cia do Å›wiÄ…tyni zostaÅ‚ rozwiÄ…zany.";
 };
 
 func int DIA_Addon_Saturas_TalkedToGhost_Condition ()
@@ -868,52 +868,52 @@ func int DIA_Addon_Saturas_TalkedToGhost_Condition ()
 
 func void DIA_Addon_Saturas_TalkedToGhost_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_00"); //Problem z bram¹ u wejœcia do œwi¹tyni zosta³ rozwi¹zany.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_01"); //Duch przemówi³?
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_00"); //Problem z bramÄ… u wejÅ›cia do Å›wiÄ…tyni zostaÅ‚ rozwiÄ…zany.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_01"); //Duch przemÃ³wiÅ‚?
 	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_02"); //Tak.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_03"); //Wiesz, jak dostaæ siê do œwi¹tyni?
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_04"); //Tak. Zdradzi³ te¿, co siê w niej znajduje.
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_05"); //Mówi³ o potê¿nym mieczu oraz o komnatach Adanosa.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_06"); //Na Adanosa! Jak mogliœmy byæ tak krótkowzroczni?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_07"); //Wskazówki w tych dokumentach...
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_08"); //Tym mieczem mo¿e byæ jedynie Szpon Beliara.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_09"); //Musimy jak najszybciej przejœæ przez komnaty i zdobyæ tê broñ.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_03"); //Wiesz, jak dostaÄ‡ siÄ™ do Å›wiÄ…tyni?
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_04"); //Tak. ZdradziÅ‚ teÅ¼, co siÄ™ w niej znajduje.
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_05"); //MÃ³wiÅ‚ o potÄ™Å¼nym mieczu oraz o komnatach Adanosa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_06"); //Na Adanosa! Jak mogliÅ›my byÄ‡ tak krÃ³tkowzroczni?
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_07"); //WskazÃ³wki w tych dokumentach...
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_08"); //Tym mieczem moÅ¼e byÄ‡ jedynie Szpon Beliara.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_09"); //Musimy jak najszybciej przejÅ›Ä‡ przez komnaty i zdobyÄ‡ tÄ™ broÅ„.
 	
 	Info_ClearChoices	(DIA_Addon_Saturas_TalkedToGhost);
 	Info_AddChoice		(DIA_Addon_Saturas_TalkedToGhost, "Co to za Szpon Beliara?", DIA_Addon_Saturas_TalkedToGhost_wasistdas );
-	Info_AddChoice		(DIA_Addon_Saturas_TalkedToGhost, "Czym s¹ komnaty Adanosa?", DIA_Addon_Saturas_TalkedToGhost_kammern );
+	Info_AddChoice		(DIA_Addon_Saturas_TalkedToGhost, "Czym sÄ… komnaty Adanosa?", DIA_Addon_Saturas_TalkedToGhost_kammern );
 };
 func void DIA_Addon_Saturas_TalkedToGhost_wasistdas ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_15_00"); //Co to za Szpon Beliara?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_01"); //To wcielenie z³a. Beliar stworzy³ ten miecz w³asnorêcznie.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_02"); //Ka¿dy, kto nim w³ada, posiada potê¿ne narzêdzie zniszczenia.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_03"); //Im silniejszy jest w³aœciciel broni, tym wiêksza moc Szpona.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_04"); //Jedynie ktoœ wielkiego ducha i silnej wiary mo¿e oprzeæ siê jego mocy.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_05"); //To jasne, dlaczego budowniczowie odciêli od œwiata tê dolinê.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_06"); //Przynieœli to narzêdzie z³a do swojego miasta i ulegli jego czarowi.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_07"); //Chciwoœæ sprawi³a, ¿e ci aroganccy g³upcy pozabijali siê nawzajem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_08"); //Na tym siê nie skoñczy³o. Gniew Adanosa przetoczy³ siê po ca³ym kraju i wszystko zatopi³o morze.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_09"); //W rzeczy samej, twórcy portalu dobrze zrobili, ukrywaj¹c te rzeczy przed reszt¹ œwiata.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_10"); //Có¿ za tragiczny koniec tak wspania³ej kultury.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_11"); //Teraz rozumiesz donios³oœæ swojej misji?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_12"); //Kruk jest silnym wojownikiem zaœlepionym rz¹dz¹ w³adzy.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_13"); //W jego rêku Szpon stanie siê narzêdziem zniszczenia.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_14"); //Nie wolno mu dostaæ tej broni. Inaczej czeka nas zag³ada.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_01"); //To wcielenie zÅ‚a. Beliar stworzyÅ‚ ten miecz wÅ‚asnorÄ™cznie.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_02"); //KaÅ¼dy, kto nim wÅ‚ada, posiada potÄ™Å¼ne narzÄ™dzie zniszczenia.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_03"); //Im silniejszy jest wÅ‚aÅ›ciciel broni, tym wiÄ™ksza moc Szpona.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_04"); //Jedynie ktoÅ› wielkiego ducha i silnej wiary moÅ¼e oprzeÄ‡ siÄ™ jego mocy.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_05"); //To jasne, dlaczego budowniczowie odciÄ™li od Å›wiata tÄ™ dolinÄ™.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_06"); //PrzynieÅ›li to narzÄ™dzie zÅ‚a do swojego miasta i ulegli jego czarowi.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_07"); //ChciwoÅ›Ä‡ sprawiÅ‚a, Å¼e ci aroganccy gÅ‚upcy pozabijali siÄ™ nawzajem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_08"); //Na tym siÄ™ nie skoÅ„czyÅ‚o. Gniew Adanosa przetoczyÅ‚ siÄ™ po caÅ‚ym kraju i wszystko zatopiÅ‚o morze.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_09"); //W rzeczy samej, twÃ³rcy portalu dobrze zrobili, ukrywajÄ…c te rzeczy przed resztÄ… Å›wiata.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_10"); //CÃ³Å¼ za tragiczny koniec tak wspaniaÅ‚ej kultury.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_11"); //Teraz rozumiesz doniosÅ‚oÅ›Ä‡ swojej misji?
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_12"); //Kruk jest silnym wojownikiem zaÅ›lepionym rzÄ…dzÄ… wÅ‚adzy.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_13"); //W jego rÄ™ku Szpon stanie siÄ™ narzÄ™dziem zniszczenia.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_14"); //Nie wolno mu dostaÄ‡ tej broni. Inaczej czeka nas zagÅ‚ada.
 
 	Log_CreateTopic (TOPIC_Addon_Klaue, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Klaue, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Klaue,"W œwi¹tyni Adanosa znajduje siê potê¿na broñ, Szpon Beliara. Nie mo¿na dopuœciæ, by wpad³a w rêce Kruka."); 
+	B_LogEntry (TOPIC_Addon_Klaue,"W Å›wiÄ…tyni Adanosa znajduje siÄ™ potÄ™Å¼na broÅ„, Szpon Beliara. Nie moÅ¼na dopuÅ›ciÄ‡, by wpadÅ‚a w rÄ™ce Kruka."); 
 
 };
 func void DIA_Addon_Saturas_TalkedToGhost_kammern ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_kammern_15_00"); //Czym s¹ komnaty Adanosa?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_01"); //Wiem, ¿e brama ma tylko przeszkadzaæ w wejœciu do œwi¹tyni.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_02"); //Jednak w œrodku s¹ trzy komnaty, które powinny zatrzymaæ ka¿dego intruza.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_03"); //Kluczem do nich s¹ kolorowe relikty budowniczych.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_04"); //Jeœli zdobêdziemy wszystkie relikty i rozwi¹¿emy ich zagadki, bêdziemy mogli dostaæ siê do sanktuarium œwi¹tyni.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_05"); //Nie wiem, czy Kruk rozszyfrowa³ sekrety œwi¹tyni. Jeœli tak zrobi³, to mamy du¿y problem.
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_kammern_15_00"); //Czym sÄ… komnaty Adanosa?
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_01"); //Wiem, Å¼e brama ma tylko przeszkadzaÄ‡ w wejÅ›ciu do Å›wiÄ…tyni.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_02"); //Jednak w Å›rodku sÄ… trzy komnaty, ktÃ³re powinny zatrzymaÄ‡ kaÅ¼dego intruza.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_03"); //Kluczem do nich sÄ… kolorowe relikty budowniczych.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_04"); //JeÅ›li zdobÄ™dziemy wszystkie relikty i rozwiÄ…Å¼emy ich zagadki, bÄ™dziemy mogli dostaÄ‡ siÄ™ do sanktuarium Å›wiÄ…tyni.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_05"); //Nie wiem, czy Kruk rozszyfrowaÅ‚ sekrety Å›wiÄ…tyni. JeÅ›li tak zrobiÅ‚, to mamy duÅ¼y problem.
 	
 	Log_CreateTopic (TOPIC_Addon_Kammern, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Kammern, LOG_RUNNING);
@@ -936,7 +936,7 @@ instance DIA_Addon_Saturas_RelictsBack		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_RelictsBack_Condition;
 	information	 = 	DIA_Addon_Saturas_RelictsBack_Info;
 
-	description	 = 	"Co dok³adnie powinienem zrobiæ z reliktami w œwi¹tyni?";
+	description	 = 	"Co dokÅ‚adnie powinienem zrobiÄ‡ z reliktami w Å›wiÄ…tyni?";
 };
 
 func int DIA_Addon_Saturas_RelictsBack_Condition ()
@@ -951,10 +951,10 @@ func int DIA_Addon_Saturas_RelictsBack_Condition ()
 
 func void DIA_Addon_Saturas_RelictsBack_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_RelictsBack_15_00"); //Co dok³adnie powinienem zrobiæ z reliktami w œwi¹tyni?
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_03"); //Nie wiemy wiele na ten temat. Ale miejmy nadziejê, ¿e rozpoznasz ich znaczenie, kiedy dostaniesz siê do œwi¹tyni.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_05"); //Naprawdê bardzo mi przykro, ¿e nie mogê bardziej ci pomóc. Teraz wszystko zale¿y od ciebie.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_06"); //WeŸ relikty i natychmiast idŸ do œwi¹tyni.
+	AI_Output	(other, self, "DIA_Addon_Saturas_RelictsBack_15_00"); //Co dokÅ‚adnie powinienem zrobiÄ‡ z reliktami w Å›wiÄ…tyni?
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_03"); //Nie wiemy wiele na ten temat. Ale miejmy nadziejÄ™, Å¼e rozpoznasz ich znaczenie, kiedy dostaniesz siÄ™ do Å›wiÄ…tyni.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_05"); //NaprawdÄ™ bardzo mi przykro, Å¼e nie mogÄ™ bardziej ci pomÃ³c. Teraz wszystko zaleÅ¼y od ciebie.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_06"); //WeÅº relikty i natychmiast idÅº do Å›wiÄ…tyni.
 
 	CreateInvItems (hero, ItMi_Addon_Stone_01, 1);
 	CreateInvItems (hero, ItMi_Addon_Stone_02, 1);
@@ -963,10 +963,10 @@ func void DIA_Addon_Saturas_RelictsBack_Info ()
 	CreateInvItems (hero, ItMi_Addon_Stone_05, 1);
 	AI_PrintScreen	(PRINT_ItemsErhalten, -1, YPOS_ItemTaken, FONT_ScreenSmall, 2);
 
-	B_LogEntry (TOPIC_Addon_Kammern,"Saturas wysy³a mnie do œwi¹tyni Adanosa z piêcioma reliktami budowniczych. Muszê przedostaæ siê przez komnaty i zatrzymaæ Kruka."); 
+	B_LogEntry (TOPIC_Addon_Kammern,"Saturas wysyÅ‚a mnie do Å›wiÄ…tyni Adanosa z piÄ™cioma reliktami budowniczych. MuszÄ™ przedostaÄ‡ siÄ™ przez komnaty i zatrzymaÄ‡ Kruka."); 
 
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_07"); //Niech Adanos zmi³uje siê nad nami i ma nas w swej opiece.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_08"); //Mo¿e nie jest jeszcze za póŸno.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_07"); //Niech Adanos zmiÅ‚uje siÄ™ nad nami i ma nas w swej opiece.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_08"); //MoÅ¼e nie jest jeszcze za pÃ³Åºno.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -990,23 +990,23 @@ func int DIA_Addon_Saturas_RavensDead_Condition ()
 };
 func void DIA_Addon_Saturas_RavensDead_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_00"); //Trzêsienia ziemi usta³y, a ty wci¹¿ ¿yjesz.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_01"); //Twoja misja powiod³a siê?
-	AI_Output	(other, self, "DIA_Addon_Saturas_RavensDead_15_02"); //Tak. Kruk nie ¿yje.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_03"); //A wiêc wszystko siê skoñczy³o. Dziêki Adanosowi!
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_04"); //Dobrze zrobi³eœ, mój synu. Jesteœmy twoimi d³u¿nikami.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_05"); //Odebra³eœ s³ugom z³a potê¿n¹ broñ i przywróci³eœ równowagê w tej czêœci œwiata.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_06"); //Kiedy trzêsienia ziemi usta³y, ustaliliœmy, co trzeba zrobiæ w nastêpnej kolejnoœci.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_07"); //Zdob¹dŸ Szpon Beliara. Ta broñ jest tobie przeznaczona.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_08"); //W twoich rêkach powinna staæ siê naszym potê¿nym sprzymierzeñcem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_09"); //U¿ywaj jej m¹drze, synu. Niech Adanos ci pomo¿e.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_11"); //My zostaniemy tutaj i postaramy siê, aby œwi¹tynia odzyska³a dawny blask.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_12"); //Tylko Myxir wyruszy³ do Khorinis, aby wesprzeæ Vatrasa.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_13"); //Vatras zbyt d³ugo by³ sam w mieœcie.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_00"); //TrzÄ™sienia ziemi ustaÅ‚y, a ty wciÄ…Å¼ Å¼yjesz.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_01"); //Twoja misja powiodÅ‚a siÄ™?
+	AI_Output	(other, self, "DIA_Addon_Saturas_RavensDead_15_02"); //Tak. Kruk nie Å¼yje.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_03"); //A wiÄ™c wszystko siÄ™ skoÅ„czyÅ‚o. DziÄ™ki Adanosowi!
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_04"); //Dobrze zrobiÅ‚eÅ›, mÃ³j synu. JesteÅ›my twoimi dÅ‚uÅ¼nikami.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_05"); //OdebraÅ‚eÅ› sÅ‚ugom zÅ‚a potÄ™Å¼nÄ… broÅ„ i przywrÃ³ciÅ‚eÅ› rÃ³wnowagÄ™ w tej czÄ™Å›ci Å›wiata.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_06"); //Kiedy trzÄ™sienia ziemi ustaÅ‚y, ustaliliÅ›my, co trzeba zrobiÄ‡ w nastÄ™pnej kolejnoÅ›ci.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_07"); //ZdobÄ…dÅº Szpon Beliara. Ta broÅ„ jest tobie przeznaczona.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_08"); //W twoich rÄ™kach powinna staÄ‡ siÄ™ naszym potÄ™Å¼nym sprzymierzeÅ„cem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_09"); //UÅ¼ywaj jej mÄ…drze, synu. Niech Adanos ci pomoÅ¼e.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_11"); //My zostaniemy tutaj i postaramy siÄ™, aby Å›wiÄ…tynia odzyskaÅ‚a dawny blask.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_12"); //Tylko Myxir wyruszyÅ‚ do Khorinis, aby wesprzeÄ‡ Vatrasa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_13"); //Vatras zbyt dÅ‚ugo byÅ‚ sam w mieÅ›cie.
 
 	Log_CreateTopic (TOPIC_Addon_VatrasAbloesung, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_VatrasAbloesung, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Myxir uda³ siê do miasta portowego, aby pomóc Vatrasowi."); 
+	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Myxir udaÅ‚ siÄ™ do miasta portowego, aby pomÃ³c Vatrasowi."); 
 
 	B_GivePlayerXP (XP_Addon_Saturas_RavensDead);
 };
@@ -1021,7 +1021,7 @@ instance DIA_Addon_Saturas_FreedMissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_FreedMissingPeople_Condition;
 	information	 = 	DIA_Addon_Saturas_FreedMissingPeople_Info;
 
-	description	 = 	"Uwolni³em wiêŸniów.";
+	description	 = 	"UwolniÅ‚em wiÄ™ÅºniÃ³w.";
 };
 
 func int DIA_Addon_Saturas_FreedMissingPeople_Condition ()
@@ -1034,8 +1034,8 @@ func int DIA_Addon_Saturas_FreedMissingPeople_Condition ()
 
 func void DIA_Addon_Saturas_FreedMissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_FreedMissingPeople_15_00"); //Uwolni³em wiêŸniów.
-	AI_Output	(self, other, "DIA_Addon_Saturas_FreedMissingPeople_14_01"); //Bardzo dobrze. Oby szczêœliwie dotarli do swej ojczyzny.
+	AI_Output	(other, self, "DIA_Addon_Saturas_FreedMissingPeople_15_00"); //UwolniÅ‚em wiÄ™ÅºniÃ³w.
+	AI_Output	(self, other, "DIA_Addon_Saturas_FreedMissingPeople_14_01"); //Bardzo dobrze. Oby szczÄ™Å›liwie dotarli do swej ojczyzny.
 	B_GivePlayerXP (XP_Addon_Saturas_FreedMissingPeople);
 };
 
@@ -1049,7 +1049,7 @@ instance DIA_Addon_Saturas_BeliarsWeapon		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_BeliarsWeapon_Condition;
 	information	 = 	DIA_Addon_Saturas_BeliarsWeapon_Info;
 
-	description	 = 	"Zabra³em Szpon Beliara.";
+	description	 = 	"ZabraÅ‚em Szpon Beliara.";
 };
 
 func int DIA_Addon_Saturas_BeliarsWeapon_Condition ()
@@ -1064,58 +1064,58 @@ func int DIA_Addon_Saturas_BeliarsWeapon_Condition ()
 func void DIA_Addon_Saturas_BeliarsWeapon_Info ()
 {
 	AI_UnequipWeapons (hero);
-	AI_Output	(other, self, "DIA_Addon_Saturas_BeliarsWeapon_15_00"); //Zabra³em Szpon Beliara.
+	AI_Output	(other, self, "DIA_Addon_Saturas_BeliarsWeapon_15_00"); //ZabraÅ‚em Szpon Beliara.
 	
 	if (Npc_HasItems (hero,ItMw_BeliarWeapon_Raven))
 	&& (SC_FailedToEquipBeliarsWeapon == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_BeliarsWeapon_15_01"); //Ale nie mogê go u¿yæ.
+		AI_Output	(other, self, "DIA_Addon_Saturas_BeliarsWeapon_15_01"); //Ale nie mogÄ™ go uÅ¼yÄ‡.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_02"); //Szpon Beliara to wyj¹tkowa broñ.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_03"); //Ma swoj¹ duszê i w³asn¹ wolê.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_04"); //Ty, w³aœciciel tej potê¿nej broni, jesteœ jej panem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_05"); //Broñ jest teraz czêœci¹ ciebie i dostosuje siê do twoich umiejêtnoœci.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_06"); //Ale nie zrobi tego z w³asnej woli.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_07"); //Jedynie sam BELIAR mo¿e zmusiæ j¹, by ci s³u¿y³a.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_02"); //Szpon Beliara to wyjÄ…tkowa broÅ„.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_03"); //Ma swojÄ… duszÄ™ i wÅ‚asnÄ… wolÄ™.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_04"); //Ty, wÅ‚aÅ›ciciel tej potÄ™Å¼nej broni, jesteÅ› jej panem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_05"); //BroÅ„ jest teraz czÄ™Å›ciÄ… ciebie i dostosuje siÄ™ do twoich umiejÄ™tnoÅ›ci.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_06"); //Ale nie zrobi tego z wÅ‚asnej woli.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_07"); //Jedynie sam BELIAR moÅ¼e zmusiÄ‡ jÄ…, by ci sÅ‚uÅ¼yÅ‚a.
 	
 	Info_ClearChoices	(DIA_Addon_Saturas_BeliarsWeapon);
-	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Dlaczego Beliar mia³by mi pomóc?", DIA_Addon_Saturas_BeliarsWeapon_besser );
-	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Co mogê zrobiæ z t¹ broni¹?", DIA_Addon_Saturas_BeliarsWeapon_wastun );
+	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Dlaczego Beliar miaÅ‚by mi pomÃ³c?", DIA_Addon_Saturas_BeliarsWeapon_besser );
+	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Co mogÄ™ zrobiÄ‡ z tÄ… broniÄ…?", DIA_Addon_Saturas_BeliarsWeapon_wastun );
 };
 func void DIA_Addon_Saturas_BeliarsWeapon_wastun ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_wastun_15_00"); //Co mogê zrobiæ z t¹ broni¹?
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_01"); //To zale¿y od ciebie. Zdoby³eœ j¹ i jesteœ teraz jej panem.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_02"); //Mogê ci jednak s³u¿yæ rad¹.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_03"); //Albo przeka¿esz j¹ MNIE, a ja upewniê siê, ¿e nie spowoduje wiêcej szkód...
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_04"); //...albo przyswoisz sobie jej moc i bêdziesz u¿ywaæ miecza do walki.
-	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Nie móg³byœ przechowaæ broni?", DIA_Addon_Saturas_BeliarsWeapon_geben );
+	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_wastun_15_00"); //Co mogÄ™ zrobiÄ‡ z tÄ… broniÄ…?
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_01"); //To zaleÅ¼y od ciebie. ZdobyÅ‚eÅ› jÄ… i jesteÅ› teraz jej panem.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_02"); //MogÄ™ ci jednak sÅ‚uÅ¼yÄ‡ radÄ….
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_03"); //Albo przekaÅ¼esz jÄ… MNIE, a ja upewniÄ™ siÄ™, Å¼e nie spowoduje wiÄ™cej szkÃ³d...
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_04"); //...albo przyswoisz sobie jej moc i bÄ™dziesz uÅ¼ywaÄ‡ miecza do walki.
+	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Nie mÃ³gÅ‚byÅ› przechowaÄ‡ broni?", DIA_Addon_Saturas_BeliarsWeapon_geben );
 };
 
 func void DIA_Addon_Saturas_BeliarsWeapon_geben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_geben_15_00"); //Nie móg³byœ przechowaæ broni?
-	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_01"); //Du bist der Bezwinger des Bösen. Deine Entscheidungen bestimmen das Geschick dieser Welt.
-	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_02"); //Wenn du dich dazu entschließt, die Klaue aus der Hand zu geben, ist dein Schicksal nicht mehr an sie gebunden.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_03"); //Jeœli mi j¹ oddasz, sprawiê, ¿e nie bêdzie mo¿na jej u¿yæ. Nigdy wiêcej nie zostanie wykorzystana do z³ych celów.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_04"); //Wiêc dok³adnie przemyœl, co zrobiæ.
+	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_geben_15_00"); //Nie mÃ³gÅ‚byÅ› przechowaÄ‡ broni?
+	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_01"); //Du bist der Bezwinger des BÃ¶sen. Deine Entscheidungen bestimmen das Geschick dieser Welt.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_02"); //Wenn du dich dazu entschlieÃŸt, die Klaue aus der Hand zu geben, ist dein Schicksal nicht mehr an sie gebunden.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_03"); //JeÅ›li mi jÄ… oddasz, sprawiÄ™, Å¼e nie bÄ™dzie moÅ¼na jej uÅ¼yÄ‡. Nigdy wiÄ™cej nie zostanie wykorzystana do zÅ‚ych celÃ³w.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_04"); //WiÄ™c dokÅ‚adnie przemyÅ›l, co zrobiÄ‡.
 
 	Log_CreateTopic (TOPIC_Addon_Klaue, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Klaue, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Klaue,"Mogê przekazaæ Szpon Beliara Saturasowi albo zatrzymaæ go dla siebie."); 
+	B_LogEntry (TOPIC_Addon_Klaue,"MogÄ™ przekazaÄ‡ Szpon Beliara Saturasowi albo zatrzymaÄ‡ go dla siebie."); 
 };
 
 func void DIA_Addon_Saturas_BeliarsWeapon_besser ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_besser_15_00"); //Dlaczego Beliar mia³by mi pomóc?
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_01"); //Tylko modlitwa mo¿e go przekonaæ.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_02"); //Ale uwa¿aj. Beliar jest nikczemny.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_03"); //Jeœli go rozwœcieczysz, odczujesz na sobie jego furiê.
+	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_besser_15_00"); //Dlaczego Beliar miaÅ‚by mi pomÃ³c?
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_01"); //Tylko modlitwa moÅ¼e go przekonaÄ‡.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_02"); //Ale uwaÅ¼aj. Beliar jest nikczemny.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_03"); //JeÅ›li go rozwÅ›cieczysz, odczujesz na sobie jego furiÄ™.
 	
 	Log_CreateTopic (TOPIC_Addon_Klaue, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Klaue, LOG_RUNNING);
-	Log_AddEntry  (TOPIC_Addon_Klaue,"Aby podporz¹dkowaæ Szpon Beliara swojej woli, muszê pomodliæ siê do Beliara.");
+	Log_AddEntry  (TOPIC_Addon_Klaue,"Aby podporzÄ…dkowaÄ‡ Szpon Beliara swojej woli, muszÄ™ pomodliÄ‡ siÄ™ do Beliara.");
 
 	B_Say 	  	(other,self,"$VERSTEHE");
 };
@@ -1145,15 +1145,15 @@ var int DIA_Addon_Saturas_PermENDE_ADDON_OneTime;
 func void DIA_Addon_Saturas_PermENDE_ADDON_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_PermENDE_ADDON_15_00"); //Co teraz zrobisz?
-	AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_01"); //Zostaniemy tutaj i postaramy siê, ¿eby œwi¹tynia odzyska³a sw¹ dawn¹ œwietnoœæ.
-	AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_02"); //Te stare mury zbyt d³ugo sta³y w ruinie.
+	AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_01"); //Zostaniemy tutaj i postaramy siÄ™, Å¼eby Å›wiÄ…tynia odzyskaÅ‚a swÄ… dawnÄ… Å›wietnoÅ›Ä‡.
+	AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_02"); //Te stare mury zbyt dÅ‚ugo staÅ‚y w ruinie.
 	if (DIA_Addon_Saturas_PermENDE_ADDON_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_03"); //A jeœli chodzi o ciebie, mój synu...
-		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_04"); //Jestem bardzo szczêœliwy, widz¹c, ¿e myli³em siê co do ciebie. Jesteœ Stra¿nikiem Równowagi. Nie ma co do tego w¹tpliwoœci.
-		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_05"); //Bez twojej si³y i odwagi wyspê Khorinis czeka³aby zag³ada. Dziêkujemy ci. Chwa³a twemu mêstwu.
-		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_06"); //Skoncentruj siê na pozosta³ych czekaj¹cych ciê zadaniach i przywróæ temu œwiatu równowagê i pokój.
-		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_07"); //IdŸ i wype³nij swoje przeznaczenie, Stra¿niku. Bêd¹ ci towarzyszyæ nasze modlitwy.
+		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_03"); //A jeÅ›li chodzi o ciebie, mÃ³j synu...
+		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_04"); //Jestem bardzo szczÄ™Å›liwy, widzÄ…c, Å¼e myliÅ‚em siÄ™ co do ciebie. JesteÅ› StraÅ¼nikiem RÃ³wnowagi. Nie ma co do tego wÄ…tpliwoÅ›ci.
+		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_05"); //Bez twojej siÅ‚y i odwagi wyspÄ™ Khorinis czekaÅ‚aby zagÅ‚ada. DziÄ™kujemy ci. ChwaÅ‚a twemu mÄ™stwu.
+		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_06"); //Skoncentruj siÄ™ na pozostaÅ‚ych czekajÄ…cych ciÄ™ zadaniach i przywrÃ³Ä‡ temu Å›wiatu rÃ³wnowagÄ™ i pokÃ³j.
+		AI_Output	(self, other, "DIA_Addon_Saturas_PermENDE_ADDON_14_07"); //IdÅº i wypeÅ‚nij swoje przeznaczenie, StraÅ¼niku. BÄ™dÄ… ci towarzyszyÄ‡ nasze modlitwy.
 		DIA_Addon_Saturas_PermENDE_ADDON_OneTime = TRUE;
 	};
 };
@@ -1168,7 +1168,7 @@ instance DIA_Addon_Saturas_BeliarWeapGeben		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_BeliarWeapGeben_Condition;
 	information	 = 	DIA_Addon_Saturas_BeliarWeapGeben_Info;
 
-	description	 = 	"WeŸ Szpon Beliara i zniszcz go.";
+	description	 = 	"WeÅº Szpon Beliara i zniszcz go.";
 };
 
 func int DIA_Addon_Saturas_BeliarWeapGeben_Condition ()
@@ -1183,12 +1183,12 @@ func int DIA_Addon_Saturas_BeliarWeapGeben_Condition ()
 
 func void DIA_Addon_Saturas_BeliarWeapGeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_BeliarWeapGeben_15_00"); //WeŸ Szpon Beliara i zniszcz go.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_01"); //Jak sobie ¿yczysz, synu. Oddaj mi broñ.
+	AI_Output	(other, self, "DIA_Addon_Saturas_BeliarWeapGeben_15_00"); //WeÅº Szpon Beliara i zniszcz go.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_01"); //Jak sobie Å¼yczysz, synu. Oddaj mi broÅ„.
 	B_ClearBeliarsWeapon ();
 	AI_PrintScreen (PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);	// "1 Gegenstand gegeben"	
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_02"); //Nie wyrz¹dzi ju¿ nikomu krzywdy, gdy zatopiê j¹ w morskich odmêtach.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_03"); //Na jej stra¿y staæ bêdzie m¹droœæ Adanosa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_02"); //Nie wyrzÄ…dzi juÅ¼ nikomu krzywdy, gdy zatopiÄ™ jÄ… w morskich odmÄ™tach.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_03"); //Na jej straÅ¼y staÄ‡ bÄ™dzie mÄ…droÅ›Ä‡ Adanosa.
 	TOPIC_END_Klaue = TRUE;
 	B_GivePlayerXP (XP_Addon_BeliarsWeaponAbgegeben);
 	Saturas_KlaueInsMeer = TRUE;
@@ -1204,7 +1204,7 @@ instance DIA_Addon_Saturas_ADW_PreTeachCircle		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_ADW_PreTeachCircle_Condition;
 	information	 = 	DIA_Addon_Saturas_ADW_PreTeachCircle_Info;
 
-	description	 = 	"Mo¿esz mnie nauczyæ krêgów magii?";
+	description	 = 	"MoÅ¼esz mnie nauczyÄ‡ krÄ™gÃ³w magii?";
 };
 
 func int DIA_Addon_Saturas_ADW_PreTeachCircle_Condition ()
@@ -1218,14 +1218,14 @@ func int DIA_Addon_Saturas_ADW_PreTeachCircle_Condition ()
 
 func void DIA_Addon_Saturas_ADW_PreTeachCircle_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_00"); //Mo¿esz mnie nauczyæ krêgów magii?
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_01"); //Jesteœ magiem ognia. Co powie na to Pyrokar?
-	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_02"); //Nie musi o tym wiedzieæ.
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_03"); //Widzê, ¿e myœlisz o tym powa¿nie. Spe³niê twoj¹ proœbê.
+	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_00"); //MoÅ¼esz mnie nauczyÄ‡ krÄ™gÃ³w magii?
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_01"); //JesteÅ› magiem ognia. Co powie na to Pyrokar?
+	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_02"); //Nie musi o tym wiedzieÄ‡.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_03"); //WidzÄ™, Å¼e myÅ›lisz o tym powaÅ¼nie. SpeÅ‚niÄ™ twojÄ… proÅ›bÄ™.
 
 	if ((RavenIsDead == FALSE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_04"); //Jeœli odniosê wra¿enie, ¿e wykorzystasz sw¹ wiedzê, aby czyniæ z³o, nie bêdziesz móg³ wiêcej na mnie liczyæ.
+		AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_04"); //JeÅ›li odniosÄ™ wraÅ¼enie, Å¼e wykorzystasz swÄ… wiedzÄ™, aby czyniÄ‡ zÅ‚o, nie bÄ™dziesz mÃ³gÅ‚ wiÄ™cej na mnie liczyÄ‡.
 		AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_05"); //Lepiej mnie nie rozczaruj.
 	};
 	Saturas_Addon_TeachCircle = TRUE;
@@ -1244,7 +1244,7 @@ instance DIA_Addon_Saturas_ADW_CIRCLE		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_ADW_CIRCLE_Condition;
 	information	 = 	DIA_Addon_Saturas_ADW_CIRCLE_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chcê dowiedzieæ siê wiêcej o wy¿szych krêgach magii.";
+	description	 = 	"ChcÄ™ dowiedzieÄ‡ siÄ™ wiÄ™cej o wyÅ¼szych krÄ™gach magii.";
 };
 var int DIA_Addon_Saturas_ADW_CIRCLE_NoPerm;
 func int DIA_Addon_Saturas_ADW_CIRCLE_Condition ()
@@ -1259,15 +1259,15 @@ func int DIA_Addon_Saturas_ADW_CIRCLE_Condition ()
 };
 func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Saturas_ADW_CIRCLE_15_00"); //Chcê dowiedzieæ siê wiêcej o wy¿szych krêgach magii.
+	AI_Output (other, self, "DIA_Addon_Saturas_ADW_CIRCLE_15_00"); //ChcÄ™ dowiedzieÄ‡ siÄ™ wiÄ™cej o wyÅ¼szych krÄ™gach magii.
 	
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 1)
 	&& (Kapitel >= 2)
 	{
 		if B_TeachMagicCircle (self,other, 2)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_01"); //Tak, jesteœ gotów na dalsz¹ naukê.
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_02"); //Wst¹p do drugiego krêgu magii. Niech Adanos obdarzy ciê m¹droœci¹, byœ roztropnie u¿ywa³ swych nowych mocy.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_01"); //Tak, jesteÅ› gotÃ³w na dalszÄ… naukÄ™.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_02"); //WstÄ…p do drugiego krÄ™gu magii. Niech Adanos obdarzy ciÄ™ mÄ…droÅ›ciÄ…, byÅ› roztropnie uÅ¼ywaÅ‚ swych nowych mocy.
 		};                                                                                                                     
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 2)
@@ -1275,8 +1275,8 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	{
 		if B_TeachMagicCircle (self,other, 3)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_03"); //Tak, nasta³ ku temu czas. Wst¹p do trzeciego krêgu magii.
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_04"); //Twoja wiedza pozwoli ci rzucaæ nowe, potê¿ne zaklêcia. U¿ywaj ich roztropnie.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_03"); //Tak, nastaÅ‚ ku temu czas. WstÄ…p do trzeciego krÄ™gu magii.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_04"); //Twoja wiedza pozwoli ci rzucaÄ‡ nowe, potÄ™Å¼ne zaklÄ™cia. UÅ¼ywaj ich roztropnie.
 		};                                                             
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 3)
@@ -1284,8 +1284,8 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	{
 		if B_TeachMagicCircle (self,other, 4)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_05"); //Nadszed³ ju¿ czas. Jesteœ gotów wst¹piæ do czwartego krêgu magii.
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_06"); //Twoje s³owa i gesty maj¹ teraz wielk¹ moc. Zawsze rozs¹dnie i uwa¿nie dobieraj nowe zaklêcia.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_05"); //NadszedÅ‚ juÅ¼ czas. JesteÅ› gotÃ³w wstÄ…piÄ‡ do czwartego krÄ™gu magii.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_06"); //Twoje sÅ‚owa i gesty majÄ… teraz wielkÄ… moc. Zawsze rozsÄ…dnie i uwaÅ¼nie dobieraj nowe zaklÄ™cia.
 		};
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 4)
@@ -1293,20 +1293,20 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	{
 		if B_TeachMagicCircle (self,other, 5)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_07"); //Masz przywilej wst¹pienia do pi¹tego krêgu magii.
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_08"); //Zaklêcia, których siê teraz nauczysz, maj¹ niszczycielsk¹ si³ê.
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_09"); //B¹dŸ œwiadom swej wielkiej mocy i nie popadaj w samouwielbienie.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_07"); //Masz przywilej wstÄ…pienia do piÄ…tego krÄ™gu magii.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_08"); //ZaklÄ™cia, ktÃ³rych siÄ™ teraz nauczysz, majÄ… niszczycielskÄ… siÅ‚Ä™.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_09"); //BÄ…dÅº Å›wiadom swej wielkiej mocy i nie popadaj w samouwielbienie.
 		};
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 5)
 	{
-		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_10"); //To zadanie nie nale¿y ju¿ do mnie.
-		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_11"); //Aby poznaæ szósty i ostatni kr¹g zaklêæ, musisz odwiedziæ klasztor, Magu Ognia.
+		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_10"); //To zadanie nie naleÅ¼y juÅ¼ do mnie.
+		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_11"); //Aby poznaÄ‡ szÃ³sty i ostatni krÄ…g zaklÄ™Ä‡, musisz odwiedziÄ‡ klasztor, Magu Ognia.
 		DIA_Addon_Saturas_ADW_CIRCLE_NoPerm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_12"); //Jest zbyt wczeœnie. Wróæ póŸniej.
+		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_12"); //Jest zbyt wczeÅ›nie. WrÃ³Ä‡ pÃ³Åºniej.
 	};
 };
 

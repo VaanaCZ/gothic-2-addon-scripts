@@ -67,7 +67,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	on_state[0]		=	UseRum;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Bia≥y rum";
+	description		= 	"Bia≈Çy rum";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_Rum;
@@ -118,11 +118,11 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht f¸r 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht f√ºr 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {
-	name 			=	"M≥ot Lou";
+	name 			=	"M≈Çot Lou";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -134,7 +134,7 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 	on_state[0]		=	UseLouHammer;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"M≥ot Lou";
+	description		= 	"M≈Çot Lou";
 	
 	TEXT[1]			= 	"Efekt           ???";				
 	
@@ -158,7 +158,7 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 //--------------------------------------------------------
 INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 {
-	name 			=	"PodwÛjny M≥ot";
+	name 			=	"Podw√≥jny M≈Çot";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -170,7 +170,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	on_state[0]		=	UseSchlafHammer;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"PodwÛjny M≥ot";
+	description		= 	"Podw√≥jny M≈Çot";
 	
 	TEXT[1]			= 	"Pokona nawet najtwardszego pijaka...";				
 
@@ -194,7 +194,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	
 INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 {
-	name 			=	"Szybki úledü";
+	name 			=	"Szybki ≈õled≈∫";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -206,10 +206,10 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0]		=	UseSchnellerHering;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Szybki úledü";
+	description		= 	"Szybki ≈õled≈∫";
 	
-	TEXT[1]			= 	"Wyglπda groünie!";				
-	TEXT[2]			=	"Efekty nieznane. Bardzo moøliwe efekty uboczne!";
+	TEXT[1]			= 	"WyglƒÖda gro≈∫nie!";				
+	TEXT[2]			=	"Efekty nieznane. Bardzo mo≈ºliwe efekty uboczne!";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchnellerHering;
@@ -248,10 +248,10 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 		
 	description			= 	"Ziarna czerwonego pieprzu";
 	
-	TEXT[0]				= 	"z Wysp Po≥udniowych.";
+	TEXT[0]				= 	"z Wysp Po≈Çudniowych.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
-	TEXT[3]				= 	"UWAGA ñ OSTRE!";
+	TEXT[3]				= 	"UWAGA ‚Äì OSTRE!";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -283,7 +283,7 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 		B_RaiseAttribute 	(self,	ATR_STRENGTH,	STR_FireStew);
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS_MAX,	HP_FireStew);
 		
-		PrintScreen ("Si≥a i øywotnoúÊ zwiÍkszone!", -1, 34, FONT_ScreenSmall,2); 
+		PrintScreen ("Si≈Ça i ≈ºywotno≈õƒá zwiƒôkszone!", -1, 34, FONT_ScreenSmall,2); 
 	};
 //-------------------------------------------------------
 // Fleischsuppe
@@ -302,7 +302,7 @@ INSTANCE ItFo_Addon_Meatsoup (C_Item)
 	scemeName			=	"RICE";
 	on_state[0]			=	Use_MeatSoup;
 
-	description			= 	"Parujπcy gulasz";
+	description			= 	"ParujƒÖcy gulasz";
 	TEXT[1]				= 	NAME_Bonus_STR;		COUNT[1]	= STR_MeatSoup;
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_FishSoup;
 

@@ -76,13 +76,13 @@ INSTANCE Giant_Bug	(Mst_Default_Giant_Bug)
 
 
 //**************************************
-//	junge Giant_Bug   (für Spielstart) 	
+//	junge Giant_Bug   (fÃ¼r Spielstart) 	
 //**************************************
 
 INSTANCE YGiant_Bug	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"M³oda polna bestia";
+	name							=	"MÅ‚oda polna bestia";
 	level							=	2;
 	
 	//----- Attribute ----
@@ -112,7 +112,7 @@ INSTANCE YGiant_Bug	(Mst_Default_Giant_Bug)
 INSTANCE YGiant_Bug_VinoRitual1	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"M³oda polna bestia";
+	name							=	"MÅ‚oda polna bestia";
 	level							=	4;
 	
 	//----- Attribute ----
@@ -141,7 +141,7 @@ INSTANCE YGiant_Bug_VinoRitual1	(Mst_Default_Giant_Bug)
 INSTANCE YGiant_Bug_VinoRitual2	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"M³oda polna bestia";
+	name							=	"MÅ‚oda polna bestia";
 	level							=	4;
 	
 	//----- Attribute ----
@@ -168,7 +168,7 @@ INSTANCE YGiant_Bug_VinoRitual2	(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	Lobarts_Giant_Bug s   (für Miliz Aufnahmemission) 	
+//	Lobarts_Giant_Bug s   (fÃ¼r Miliz Aufnahmemission) 	
 //**************************************
 
 INSTANCE Lobarts_Giant_Bug1	(Mst_Default_Giant_Bug)	

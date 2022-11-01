@@ -40,49 +40,49 @@ func int DIA_Landstreicher_HALLO_Condition ()
 
 func void DIA_Landstreicher_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_00"); //Co tu siê dzieje?
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_15_01"); //Co masz na myœli?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_02"); //Jesteœ ju¿ drug¹ osob¹, która przebiega têdy, jakby j¹ goni³o stado krwiopijców.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_00"); //Co tu siÄ™ dzieje?
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_15_01"); //Co masz na myÅ›li?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_02"); //JesteÅ› juÅ¼ drugÄ… osobÄ…, ktÃ³ra przebiega tÄ™dy, jakby jÄ… goniÅ‚o stado krwiopijcÃ³w.
 	
 	Info_ClearChoices	(DIA_Landstreicher_HALLO);
 		
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Muszê ruszaæ w drogê.", DIA_Landstreicher_HALLO_weg );
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "A dok¹d pobieg³ mój poprzednik?", DIA_Landstreicher_HALLO_wo );
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Kim by³ ten cz³owiek?", DIA_Landstreicher_HALLO_wer );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "MuszÄ™ ruszaÄ‡ w drogÄ™.", DIA_Landstreicher_HALLO_weg );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "A dokÄ…d pobiegÅ‚ mÃ³j poprzednik?", DIA_Landstreicher_HALLO_wo );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "Kim byÅ‚ ten czÅ‚owiek?", DIA_Landstreicher_HALLO_wer );
 
 };
 func void DIA_Landstreicher_HALLO_wo ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wo_15_00"); //A dok¹d pobieg³ mój poprzednik?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wo_09_01"); //Na górê.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wo_15_00"); //A dokÄ…d pobiegÅ‚ mÃ³j poprzednik?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wo_09_01"); //Na gÃ³rÄ™.
 };
 
 func void DIA_Landstreicher_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Kim by³ ten cz³owiek?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_01"); //Wygl¹da³ jak jeden z tych nowicjuszy z pobliskiego klasztoru.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Mów sobie co chcesz, ale ci kolesie na pewno nie maj¹ do koñca po kolei w g³owach.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Kim byÅ‚ ten czÅ‚owiek?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_01"); //WyglÄ…daÅ‚ jak jeden z tych nowicjuszy z pobliskiego klasztoru.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //MÃ³w sobie co chcesz, ale ci kolesie na pewno nie majÄ… do koÅ„ca po kolei w gÅ‚owach.
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_03"); //Popatrz tylko na te ich kretyñskie ciuchy. Gdyby ktoœ mnie kiedyœ zobaczy³ w czymœ takim, chyba bym siê spali³ ze wstydu.
-		Info_AddChoice	(DIA_Landstreicher_HALLO, "Uwa¿aj, co mówisz.", DIA_Landstreicher_HALLO_wer_vorsicht );
+		AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_03"); //Popatrz tylko na te ich kretyÅ„skie ciuchy. Gdyby ktoÅ› mnie kiedyÅ› zobaczyÅ‚ w czymÅ› takim, chyba bym siÄ™ spaliÅ‚ ze wstydu.
+		Info_AddChoice	(DIA_Landstreicher_HALLO, "UwaÅ¼aj, co mÃ³wisz.", DIA_Landstreicher_HALLO_wer_vorsicht );
 	};
 };
 func void DIA_Landstreicher_HALLO_wer_vorsicht ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_15_00"); //Uwa¿aj, co mówisz. Sam kiedyœ by³em nowicjuszem w klasztorze.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_01"); //Biedaku. Tak, to z pewnoœci¹ t³umaczy kilka spraw.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_02"); //Bez obrazy. Ruszaj dalej w swoj¹ drogê. Jesteœ zajêty, nie chcê ciê zatrzymywaæ.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_15_00"); //UwaÅ¼aj, co mÃ³wisz. Sam kiedyÅ› byÅ‚em nowicjuszem w klasztorze.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_01"); //Biedaku. Tak, to z pewnoÅ›ciÄ… tÅ‚umaczy kilka spraw.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_02"); //Bez obrazy. Ruszaj dalej w swojÄ… drogÄ™. JesteÅ› zajÄ™ty, nie chcÄ™ ciÄ™ zatrzymywaÄ‡.
 
-	Info_AddChoice		(DIA_Landstreicher_HALLO, "Ktoœ powinien ciê nauczyæ dobrych manier.", DIA_Landstreicher_HALLO_wer_vorsicht_Manieren );
+	Info_AddChoice		(DIA_Landstreicher_HALLO, "KtoÅ› powinien ciÄ™ nauczyÄ‡ dobrych manier.", DIA_Landstreicher_HALLO_wer_vorsicht_Manieren );
 
 };
 func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_15_00"); //Ktoœ powinien ciê nauczyæ dobrych manier.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //No, nie obra¿aj siê tak ³atwo. Zreszt¹ dobrze, jeœli koniecznie chcesz bójki, to proszê bardzo.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_02"); //Poka¿ mi na co ciê staæ, nowicjuszu.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_15_00"); //KtoÅ› powinien ciÄ™ nauczyÄ‡ dobrych manier.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //No, nie obraÅ¼aj siÄ™ tak Å‚atwo. ZresztÄ… dobrze, jeÅ›li koniecznie chcesz bÃ³jki, to proszÄ™ bardzo.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_02"); //PokaÅ¼ mi na co ciÄ™ staÄ‡, nowicjuszu.
 
 	AI_StopProcessInfos (self); 
 	B_Attack (self, other, AR_NONE, 1);
@@ -92,7 +92,7 @@ func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 
 func void DIA_Landstreicher_HALLO_weg ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_weg_15_00"); //Muszê ruszaæ w drogê.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_weg_15_00"); //MuszÄ™ ruszaÄ‡ w drogÄ™.
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_weg_09_01"); //Jasne. Nie ma sprawy.
 
 	AI_StopProcessInfos (self);
@@ -124,11 +124,11 @@ func void DIA_Landstreicher_WASMACHSTDU_Info ()
 	
 		if (Npc_KnowsInfo(other, DIA_Landstreicher_HALLO))
 		{
-			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //Zadajesz cholernie du¿o pytañ.
+			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //Zadajesz cholernie duÅ¼o pytaÅ„.
 		};
 
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Powiedz mi tylko, jak siê nazywasz, a zdradzê ci wszystkie swoje sekrety.
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Czemu nie przestaniesz wsadzaæ nosa w nie swoje sprawy?
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Powiedz mi tylko, jak siÄ™ nazywasz, a zdradzÄ™ ci wszystkie swoje sekrety.
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Czemu nie przestaniesz wsadzaÄ‡ nosa w nie swoje sprawy?
 
 	AI_StopProcessInfos (self);
 };

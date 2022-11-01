@@ -20,7 +20,7 @@ instance VLK_416_Matteo (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 	
 
 		

@@ -48,12 +48,12 @@ func void DIA_Ulf_Hallo_Info ()
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_01"); //Staram siê jak najlepiej wykonaæ zadania zlecone mi przez klasztor.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_01"); //Staram siÄ™ jak najlepiej wykonaÄ‡ zadania zlecone mi przez klasztor.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_02"); //Jestem nowicjuszem w klasztorze. Wykonujê zlecenia magów i pladynów.
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_03"); //W³aœnie dostarczy³em trzem karczmarzom w mieœcie wino z klasztoru.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_02"); //Jestem nowicjuszem w klasztorze. WykonujÄ™ zlecenia magÃ³w i pladynÃ³w.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_03"); //WÅ‚aÅ›nie dostarczyÅ‚em trzem karczmarzom w mieÅ›cie wino z klasztoru.
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -66,7 +66,7 @@ instance DIA_Ulf_Wirte		(C_INFO)
 	condition	 = 	DIA_Ulf_Wirte_Condition;
 	information	 = 	DIA_Ulf_Wirte_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kim s¹ w³aœciciele trzech knajp?";
+	description	 = 	"Kim sÄ… wÅ‚aÅ›ciciele trzech knajp?";
 };
 
 func int DIA_Ulf_Wirte_Condition ()
@@ -80,9 +80,9 @@ func int DIA_Ulf_Wirte_Condition ()
 };
 func void DIA_Ulf_Wirte_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Wirte_15_00"); //Kim s¹ ci trzej karczmarze?
-	AI_Output (self, other, "DIA_Ulf_Wirte_03_01"); //Jednym z nich jest ten mi³y cz³owiek za barem.
-	AI_Output (self, other, "DIA_Ulf_Wirte_03_02"); //Drugim jest Caragon, prowadz¹cy tawernê na placu œwi¹tynnym, trzecim zaœ Kardif, w³aœciciel knajpy w dzielnicy portowej.
+	AI_Output (other, self, "DIA_Ulf_Wirte_15_00"); //Kim sÄ… ci trzej karczmarze?
+	AI_Output (self, other, "DIA_Ulf_Wirte_03_01"); //Jednym z nich jest ten miÅ‚y czÅ‚owiek za barem.
+	AI_Output (self, other, "DIA_Ulf_Wirte_03_02"); //Drugim jest Caragon, prowadzÄ…cy tawernÄ™ na placu Å›wiÄ…tynnym, trzecim zaÅ› Kardif, wÅ‚aÅ›ciciel knajpy w dzielnicy portowej.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Kloster
@@ -94,7 +94,7 @@ instance DIA_Ulf_Kloster		(C_INFO)
 	condition	 = 	DIA_Ulf_Kloster_Condition;
 	information	 = 	DIA_Ulf_Kloster_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Co mo¿esz mi powiedzieæ o klasztorze?";
+	description	 = 	"Co moÅ¼esz mi powiedzieÄ‡ o klasztorze?";
 };
 
 func int DIA_Ulf_Kloster_Condition ()
@@ -108,9 +108,9 @@ func int DIA_Ulf_Kloster_Condition ()
 };
 func void DIA_Ulf_Kloster_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Kloster_15_00"); //Co mo¿esz mi powiedzieæ o klasztorze?
-	AI_Output (self, other, "DIA_Ulf_Kloster_03_01"); //My, nowicjusze, poszukujemy oœwiecenia w modlitwie do Innosa, pod nadzorem magów przyswajamy te¿ podstawy wiary.
-	AI_Output (self, other, "DIA_Ulf_Kloster_03_02"); //S³u¿ymy im, by oni mogli s³u¿yæ Innosowi. No i przygotowujemy siê do zjednoczenia z Ogniem.
+	AI_Output (other, self, "DIA_Ulf_Kloster_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o klasztorze?
+	AI_Output (self, other, "DIA_Ulf_Kloster_03_01"); //My, nowicjusze, poszukujemy oÅ›wiecenia w modlitwie do Innosa, pod nadzorem magÃ³w przyswajamy teÅ¼ podstawy wiary.
+	AI_Output (self, other, "DIA_Ulf_Kloster_03_02"); //SÅ‚uÅ¼ymy im, by oni mogli sÅ‚uÅ¼yÄ‡ Innosowi. No i przygotowujemy siÄ™ do zjednoczenia z Ogniem.
 };
 ///////////////////////////////////////////////////////////////////////
 //	bring mich zum Kloster
@@ -138,11 +138,11 @@ func int DIA_Ulf_Bringen_Condition ()
 func void DIA_Ulf_Bringen_Info ()
 {
 	AI_Output (other, self, "DIA_Ulf_Bringen_15_00"); //Zabierz mnie do klasztoru.
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_01"); //Nie ma szans. Nie wiesz chyba, z iloma stworzeniami musia³em sobie poradziæ, zanim tutaj dotar³em.
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_02"); //Kiedy pomyœlê o tych wszystkich krwiopijcach, wilkach i goblinach, to siê cieszê, ¿e nie muszê siê st¹d ruszaæ.
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_03"); //Poza tym i tak nie wszed³byœ do klasztoru.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_01"); //Nie ma szans. Nie wiesz chyba, z iloma stworzeniami musiaÅ‚em sobie poradziÄ‡, zanim tutaj dotarÅ‚em.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_02"); //Kiedy pomyÅ›lÄ™ o tych wszystkich krwiopijcach, wilkach i goblinach, to siÄ™ cieszÄ™, Å¼e nie muszÄ™ siÄ™ stÄ…d ruszaÄ‡.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_03"); //Poza tym i tak nie wszedÅ‚byÅ› do klasztoru.
 	AI_Output (other, self, "DIA_Ulf_Bringen_15_04"); //Dlaczego?
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_05"); //Wejœæ tam mog¹ jedynie magowie, paladyni i nowicjusze.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_05"); //WejÅ›Ä‡ tam mogÄ… jedynie magowie, paladyni i nowicjusze.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Kloster
@@ -154,7 +154,7 @@ instance DIA_Ulf_Aufnahme		(C_INFO)
 	condition	 = 	DIA_Ulf_Aufnahme_Condition;
 	information	 = 	DIA_Ulf_Aufnahme_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak mogê zostaæ nowicjuszem?";
+	description	 = 	"Jak mogÄ™ zostaÄ‡ nowicjuszem?";
 };
 
 func int DIA_Ulf_Aufnahme_Condition ()
@@ -167,15 +167,15 @@ func int DIA_Ulf_Aufnahme_Condition ()
 };
 func void DIA_Ulf_Aufnahme_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_00"); //Jak mogê zostaæ nowicjuszem?
-	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_01"); //Kiedy cz³owiek czuje g³êbok¹ wewnêtrzn¹ potrzebê...
-	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_02"); //Hej - powiedz mi tylko, jakie muszê spe³niæ warunki!
-	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_03"); //Potrzebujesz darów. Owcy i...
+	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_00"); //Jak mogÄ™ zostaÄ‡ nowicjuszem?
+	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_01"); //Kiedy czÅ‚owiek czuje gÅ‚Ä™bokÄ… wewnÄ™trznÄ… potrzebÄ™...
+	AI_Output (other, self, "DIA_Ulf_Aufnahme_15_02"); //Hej - powiedz mi tylko, jakie muszÄ™ speÅ‚niÄ‡ warunki!
+	AI_Output (self, other, "DIA_Ulf_Aufnahme_03_03"); //Potrzebujesz darÃ³w. Owcy i...
 	B_Say_Gold (self, other, Summe_Kloster);
 	
 	Log_CreateTopic (Topic_Kloster,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Kloster,LOG_RUNNING);
-	B_LogEntry (Topic_Kloster,"Aby zostaæ nowicjuszem w klasztorze Innosa, bêdê potrzebowa³ owcy i 1000 sztuk z³ota.");
+	B_LogEntry (Topic_Kloster,"Aby zostaÄ‡ nowicjuszem w klasztorze Innosa, bÄ™dÄ™ potrzebowaÅ‚ owcy i 1000 sztuk zÅ‚ota.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gold
@@ -187,7 +187,7 @@ instance DIA_Ulf_Gold		(C_INFO)
 	condition	 = 	DIA_Ulf_Gold_Condition;
 	information	 = 	DIA_Ulf_Gold_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Sk¹d mam wzi¹æ tyle z³ota?";
+	description	 = 	"SkÄ…d mam wziÄ…Ä‡ tyle zÅ‚ota?";
 };
 
 func int DIA_Ulf_Gold_Condition ()
@@ -200,8 +200,8 @@ func int DIA_Ulf_Gold_Condition ()
 };
 func void DIA_Ulf_Gold_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Gold_15_00"); //Sk¹d mam wzi¹æ tyle z³ota?
-	AI_Output (self, other, "DIA_Ulf_Gold_03_01"); //Jak mniemam, nie znasz nikogo, kto by za ciebie zap³aci³. Zatem bêdziesz je musia³ zarobiæ.
+	AI_Output (other, self, "DIA_Ulf_Gold_15_00"); //SkÄ…d mam wziÄ…Ä‡ tyle zÅ‚ota?
+	AI_Output (self, other, "DIA_Ulf_Gold_03_01"); //Jak mniemam, nie znasz nikogo, kto by za ciebie zapÅ‚aciÅ‚. Zatem bÄ™dziesz je musiaÅ‚ zarobiÄ‡.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Schaf
@@ -213,7 +213,7 @@ instance DIA_Ulf_Schaf		(C_INFO)
 	condition	 = 	DIA_Ulf_Schaf_Condition;
 	information	 = 	DIA_Ulf_Schaf_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Sk¹d mogê wzi¹æ owcê?";
+	description	 = 	"SkÄ…d mogÄ™ wziÄ…Ä‡ owcÄ™?";
 };
 
 func int DIA_Ulf_Schaf_Condition ()
@@ -226,10 +226,10 @@ func int DIA_Ulf_Schaf_Condition ()
 };
 func void DIA_Ulf_Schaf_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Schaf_15_00"); //Sk¹d mogê wzi¹æ owcê?
-	AI_Output (self, other, "DIA_Ulf_Schaf_03_01"); //Od farmerów, oczywiœcie. Nie dostaniesz jej jednak za darmo.
+	AI_Output (other, self, "DIA_Ulf_Schaf_15_00"); //SkÄ…d mogÄ™ wziÄ…Ä‡ owcÄ™?
+	AI_Output (self, other, "DIA_Ulf_Schaf_03_01"); //Od farmerÃ³w, oczywiÅ›cie. Nie dostaniesz jej jednak za darmo.
 	
-	B_LogEntry (Topic_Kloster,"Owcê mogê zdobyæ u farmerów.");
+	B_LogEntry (Topic_Kloster,"OwcÄ™ mogÄ™ zdobyÄ‡ u farmerÃ³w.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Suche
@@ -254,13 +254,13 @@ func int DIA_Ulf_Suche_Condition ()
 };
 func void DIA_Ulf_Suche_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Suche_03_00"); //Hej, nie zgadniesz, co siê sta³o.
-	AI_Output (other, self, "DIA_Ulf_Suche_15_01"); //Zosta³eœ wybrañcem.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_02"); //Dok³adnie. W³aœnie mia³em napiæ siê zimnego piwa, kiedy zjawi³ siê Daron i oznajmi³, ¿e zosta³em wybrañcem.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_03"); //Kto by pomyœla³? Niezbadana jest wola Innosa. Co ciê tu sprowadza?
-	AI_Output (other, self, "DIA_Ulf_Suche_15_04"); //Za¿¹da³em Próby Ognia.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_05"); //Niemo¿liwe?! Cz³owieku, nie brak ci odwagi. Czy to oznacza, ¿e ty równie¿ poszukujesz 'tego, co wierny znajdzie na koñcu œcie¿ki'?
-	AI_Output (other, self, "DIA_Ulf_Suche_15_06"); //Na to wygl¹da.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_00"); //Hej, nie zgadniesz, co siÄ™ staÅ‚o.
+	AI_Output (other, self, "DIA_Ulf_Suche_15_01"); //ZostaÅ‚eÅ› wybraÅ„cem.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_02"); //DokÅ‚adnie. WÅ‚aÅ›nie miaÅ‚em napiÄ‡ siÄ™ zimnego piwa, kiedy zjawiÅ‚ siÄ™ Daron i oznajmiÅ‚, Å¼e zostaÅ‚em wybraÅ„cem.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_03"); //Kto by pomyÅ›laÅ‚? Niezbadana jest wola Innosa. Co ciÄ™ tu sprowadza?
+	AI_Output (other, self, "DIA_Ulf_Suche_15_04"); //ZaÅ¼Ä…daÅ‚em PrÃ³by Ognia.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_05"); //NiemoÅ¼liwe?! CzÅ‚owieku, nie brak ci odwagi. Czy to oznacza, Å¼e ty rÃ³wnieÅ¼ poszukujesz 'tego, co wierny znajdzie na koÅ„cu Å›cieÅ¼ki'?
+	AI_Output (other, self, "DIA_Ulf_Suche_15_06"); //Na to wyglÄ…da.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Rausgefunden
@@ -272,7 +272,7 @@ instance DIA_Ulf_Rausgefunden		(C_INFO)
 	condition	 = 	DIA_Ulf_Rausgefunden_Condition;
 	information	 = 	DIA_Ulf_Rausgefunden_Info;
 	permanent	 = 	FALSE;
-	description  = "I co, znalaz³eœ ju¿ coœ?";
+	description  = "I co, znalazÅ‚eÅ› juÅ¼ coÅ›?";
 };
 func int DIA_Ulf_Rausgefunden_Condition ()
 {	
@@ -285,10 +285,10 @@ func int DIA_Ulf_Rausgefunden_Condition ()
 };
 func void DIA_Ulf_Rausgefunden_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Rausgefunden_15_00"); //I co, znalaz³eœ ju¿ coœ?
-	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_01"); //Có¿, œledzi³em Agona - ale w pewnym momencie znikn¹³ mi z oczu.
-	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_02"); //Czekaj... Co oni tam jeszcze mówili? Pod¹¿aj za znakami Innosa. Nie rozumiem tylko tej czêœci o œcie¿kach...
-	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_03"); //Có¿ wiêc mi pozostaje, ci¹gle szukam.
+	AI_Output (other, self, "DIA_Ulf_Rausgefunden_15_00"); //I co, znalazÅ‚eÅ› juÅ¼ coÅ›?
+	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_01"); //CÃ³Å¼, Å›ledziÅ‚em Agona - ale w pewnym momencie zniknÄ…Å‚ mi z oczu.
+	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_02"); //Czekaj... Co oni tam jeszcze mÃ³wili? PodÄ…Å¼aj za znakami Innosa. Nie rozumiem tylko tej czÄ™Å›ci o Å›cieÅ¼kach...
+	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_03"); //CÃ³Å¼ wiÄ™c mi pozostaje, ciÄ…gle szukam.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "FOLLOW");
@@ -304,7 +304,7 @@ instance DIA_Ulf_Folgen		(C_INFO)
 	condition	 = 	DIA_Ulf_Folgen_Condition;
 	information	 = 	DIA_Ulf_Folgen_Info;
 	permanent	 = 	FALSE;
-	description  = "Hej, czy ty mnie œledzisz?";
+	description  = "Hej, czy ty mnie Å›ledzisz?";
 };
 func int DIA_Ulf_Folgen_Condition ()
 {	
@@ -317,7 +317,7 @@ func int DIA_Ulf_Folgen_Condition ()
 };
 func void DIA_Ulf_Folgen_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Folgen_15_00"); //Hej, czy ty mnie œledzisz?
+	AI_Output (other, self, "DIA_Ulf_Folgen_15_00"); //Hej, czy ty mnie Å›ledzisz?
 	AI_Output (self, other, "DIA_Ulf_Folgen_03_01"); //Nonsens. Zmierzam po prostu w tym samym kierunku.
 	
 	AI_StopProcessInfos (self);
@@ -332,7 +332,7 @@ instance DIA_Ulf_Stop		(C_INFO)
 	condition	 = 	DIA_Ulf_Stop_Condition;
 	information	 = 	DIA_Ulf_Stop_Info;
 	permanent	 = 	FALSE;
-	description  = "Przestañ za mn¹ ³aziæ.";
+	description  = "PrzestaÅ„ za mnÄ… Å‚aziÄ‡.";
 };
 func int DIA_Ulf_Stop_Condition ()
 {	
@@ -345,8 +345,8 @@ func int DIA_Ulf_Stop_Condition ()
 };
 func void DIA_Ulf_Stop_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Stop_15_00"); //Przestañ za mn¹ ³aziæ.
-	AI_Output (self, other, "DIA_Ulf_Stop_03_01"); //Nie ³a¿ê za tob¹. Ale proszê, jeœli to ma ciê uspokoiæ, pójdê inn¹ œcie¿k¹.
+	AI_Output (other, self, "DIA_Ulf_Stop_15_00"); //PrzestaÅ„ za mnÄ… Å‚aziÄ‡.
+	AI_Output (self, other, "DIA_Ulf_Stop_03_01"); //Nie Å‚aÅ¼Ä™ za tobÄ…. Ale proszÄ™, jeÅ›li to ma ciÄ™ uspokoiÄ‡, pÃ³jdÄ™ innÄ… Å›cieÅ¼kÄ….
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "SUCHE");
@@ -374,41 +374,41 @@ func int DIA_Ulf_Abrechnung_Condition ()
 };
 func void DIA_Ulf_Abrechnung_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_00"); //Wiêc znowu siê spotykamy. Ostatnio sporo rozmyœla³em. Odczuwam siln¹ chêæ zostania magiem.
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_15_01"); //Cz³owieku - nie rób tego...
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_02"); //Nie mam wyboru. ¯ycie nowicjusza - to nie dla mnie.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_03"); //Muszê zostaæ magiem. Wtedy wszystko zacznie siê uk³adaæ. Teraz zaœ odbiorê to, co mi siê nale¿y.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_04"); //Masz jakieœ ostatnie ¿yczenie?
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_00"); //WiÄ™c znowu siÄ™ spotykamy. Ostatnio sporo rozmyÅ›laÅ‚em. Odczuwam silnÄ… chÄ™Ä‡ zostania magiem.
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_15_01"); //CzÅ‚owieku - nie rÃ³b tego...
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_02"); //Nie mam wyboru. Å»ycie nowicjusza - to nie dla mnie.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_03"); //MuszÄ™ zostaÄ‡ magiem. Wtedy wszystko zacznie siÄ™ ukÅ‚adaÄ‡. Teraz zaÅ› odbiorÄ™ to, co mi siÄ™ naleÅ¼y.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_04"); //Masz jakieÅ› ostatnie Å¼yczenie?
 	
 	Info_ClearChoices (DIA_Ulf_Abrechnung);
-	Info_AddChoice (DIA_Ulf_Abrechnung,"Daj spokój, nie chcê ciê zabijaæ.",DIA_Ulf_Abrechnung_Lass);
-	Info_AddChoice (DIA_Ulf_Abrechnung,"Koniec gadania - muszê wracaæ do klasztoru.",DIA_Ulf_Abrechnung_Schnell);
-	Info_AddChoice (DIA_Ulf_Abrechnung,"Masz coœ do palenia?",DIA_Ulf_Abrechnung_Rauch);
+	Info_AddChoice (DIA_Ulf_Abrechnung,"Daj spokÃ³j, nie chcÄ™ ciÄ™ zabijaÄ‡.",DIA_Ulf_Abrechnung_Lass);
+	Info_AddChoice (DIA_Ulf_Abrechnung,"Koniec gadania - muszÄ™ wracaÄ‡ do klasztoru.",DIA_Ulf_Abrechnung_Schnell);
+	Info_AddChoice (DIA_Ulf_Abrechnung,"Masz coÅ› do palenia?",DIA_Ulf_Abrechnung_Rauch);
 };
 FUNC VOID DIA_Ulf_Abrechnung_Lass()
 {
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_Lass_15_00"); //Daj spokój, nie chcê ciê zabijaæ.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Lass_03_01"); //Gadaj zdrów. Zdajesz sobie chyba sprawê z tego, ¿e nie masz ze mn¹ szans.
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_Lass_15_00"); //Daj spokÃ³j, nie chcÄ™ ciÄ™ zabijaÄ‡.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Lass_03_01"); //Gadaj zdrÃ³w. Zdajesz sobie chyba sprawÄ™ z tego, Å¼e nie masz ze mnÄ… szans.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);
 };
 FUNC VOID DIA_Ulf_Abrechnung_Schnell()
 {
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_Schnell_15_00"); //Koniec gadania - muszê wracaæ do klasztoru.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Schnell_03_01"); //Nigdzie nie pójdziesz!
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_Schnell_15_00"); //Koniec gadania - muszÄ™ wracaÄ‡ do klasztoru.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Schnell_03_01"); //Nigdzie nie pÃ³jdziesz!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);
 };
 FUNC VOID DIA_Ulf_Abrechnung_Rauch()
 {
-	AI_Output (other, self, "DIA_Ulf_Abrechnung_Rauch_15_00"); //Masz coœ do palenia?
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_01"); //Masz szczêœcie. Tak siê sk³ada, ¿e akurat mam coœ przy sobie.
+	AI_Output (other, self, "DIA_Ulf_Abrechnung_Rauch_15_00"); //Masz coÅ› do palenia?
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_01"); //Masz szczÄ™Å›cie. Tak siÄ™ skÅ‚ada, Å¼e akurat mam coÅ› przy sobie.
 	
 	B_GiveInvItems (self, other, ITmi_Joint,1);
 	B_UseItem (other, itmI_Joint);
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_02"); //Miejmy to ju¿ za sob¹.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Rauch_03_02"); //Miejmy to juÅ¼ za sobÄ….
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);
@@ -438,8 +438,8 @@ func int DIA_Ulf_Troll_Condition ()
 };
 func void DIA_Ulf_Troll_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Troll_03_00"); //Hej, jesteœ pewien, ¿e idziemy we w³aœciwym kierunku? Podobno gdzieœ tam mieszka troll.
-	AI_Output (self, other, "DIA_Ulf_Troll_03_01"); //Chyba lepiej udaæ siê w innym kierunku.
+	AI_Output (self, other, "DIA_Ulf_Troll_03_00"); //Hej, jesteÅ› pewien, Å¼e idziemy we wÅ‚aÅ›ciwym kierunku? Podobno gdzieÅ› tam mieszka troll.
+	AI_Output (self, other, "DIA_Ulf_Troll_03_01"); //Chyba lepiej udaÄ‡ siÄ™ w innym kierunku.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"WAIT");

@@ -19,7 +19,7 @@ instance VLK_470_Sarah (Npc_Default)
 	EquipItem (self, ItMw_1h_Vlk_Sword);
 		
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, FEMALE, "Hum_Head_Babe", FaceBabe_N_Blondie, BodyTexBabe_N, ITAR_VlkBabe_L);	

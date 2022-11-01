@@ -46,16 +46,16 @@ func void DIA_Addon_Quarhodron_Hello_Info ()
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_2] == TRUE)
 	|| (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_3] == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //Dlaczego zak³ócasz mój spokój, stra¿niku?
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_00"); //Dlaczego zakÅ‚Ã³casz mÃ³j spokÃ³j, straÅ¼niku?
 		AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_11_01"); //Powiedz mi, z czym do mnie przychodzisz?
 		 
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Co znajduje siê w œwi¹tyni Adanosa?", DIA_Addon_Quarhodron_Hello_schwert );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Ktoœ dosta³ siê do œwi¹tyni Adanosa.", DIA_Addon_Quarhodron_Hello_raven );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Pozwól mi wejœæ do œwi¹tyni Adanosa.", DIA_Addon_Quarhodron_Hello_tempel );
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Kraj rozdzieraj¹ trzêsienia ziemi. ", DIA_Addon_Quarhodron_Hello_erdbeben );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Co znajduje siÄ™ w Å›wiÄ…tyni Adanosa?", DIA_Addon_Quarhodron_Hello_schwert );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "KtoÅ› dostaÅ‚ siÄ™ do Å›wiÄ…tyni Adanosa.", DIA_Addon_Quarhodron_Hello_raven );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "PozwÃ³l mi wejÅ›Ä‡ do Å›wiÄ…tyni Adanosa.", DIA_Addon_Quarhodron_Hello_tempel );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Kraj rozdzierajÄ… trzÄ™sienia ziemi. ", DIA_Addon_Quarhodron_Hello_erdbeben );
 		DIA_Addon_Quarhodron_Hello_NoPerm = TRUE;
-		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnütz herum.
+		Npc_RemoveInvItems 	(hero, ItWr_Addon_SUMMONANCIENTGHOST,1); //Joly: sonst gammelt das ding unnÃ¼tz herum.
 		SC_TalkedToGhost = TRUE;
 	}
 	else
@@ -73,52 +73,52 @@ func void B_Quarhodron_Hello_KommZumPunkt ()
 	if (DIA_Addon_Quarhodron_Hello_ChoiceCounter >= 3)
 	&& (B_Quarhodron_Hello_KommZumPunkt_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Wielka m¹droœæ staro¿ytnych musi ciê przyt³aczaæ.", DIA_Addon_Quarhodron_Hello_frech );
+		Info_AddChoice	(DIA_Addon_Quarhodron_Hello, "Wielka mÄ…droÅ›Ä‡ staroÅ¼ytnych musi ciÄ™ przytÅ‚aczaÄ‡.", DIA_Addon_Quarhodron_Hello_frech );
 		B_Quarhodron_Hello_KommZumPunkt_OneTime = TRUE;
 	};
 };
 
 func void DIA_Addon_Quarhodron_Hello_erdbeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Kraj rozdzieraj¹ trzêsienia ziemi. Jeœli czegoœ nie zrobimy, ca³a wyspa zostanie zatopiona.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //Nic ju¿ nie mo¿emy zrobiæ.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //Na Jarkendar spad³ gniew Adanosa, który zniszczy wszystkich niewiernych.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_erdbeben_15_00"); //Kraj rozdzierajÄ… trzÄ™sienia ziemi. JeÅ›li czegoÅ› nie zrobimy, caÅ‚a wyspa zostanie zatopiona.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_01"); //Nic juÅ¼ nie moÅ¼emy zrobiÄ‡.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_erdbeben_11_02"); //Na Jarkendar spadÅ‚ gniew Adanosa, ktÃ³ry zniszczy wszystkich niewiernych.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_raven ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //Ktoœ dosta³ siê do œwi¹tyni Adanosa.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //Niemo¿liwe. Sam zablokowa³em bramê. Nie mo¿na jej sforsowaæ.
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_02"); //Czy¿by?
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_00"); //KtoÅ› dostaÅ‚ siÄ™ do Å›wiÄ…tyni Adanosa.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_raven_11_01"); //NiemoÅ¼liwe. Sam zablokowaÅ‚em bramÄ™. Nie moÅ¼na jej sforsowaÄ‡.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_raven_15_02"); //CzyÅ¼by?
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_tempel ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //Pozwól mi wejœæ do œwi¹tyni Adanosa.
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //Œwi¹tynia ma pozostaæ zamkniêta na ca³¹ wiecznoœæ. Tak zdecydowa³a rada.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_tempel_15_00"); //PozwÃ³l mi wejÅ›Ä‡ do Å›wiÄ…tyni Adanosa.
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_tempel_11_01"); //ÅšwiÄ…tynia ma pozostaÄ‡ zamkniÄ™ta na caÅ‚Ä… wiecznoÅ›Ä‡. Tak zdecydowaÅ‚a rada.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_schwert ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Co znajduje siê w œwi¹tyni Adanosa?
-	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //Moje najwiêksze nieszczêœcie, moje najwiêksze rozczarowanie.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Hello_schwert_15_00"); //Co znajduje siÄ™ w Å›wiÄ…tyni Adanosa?
+	AI_Output			(self, other, "DIA_Addon_Quarhodron_Hello_schwert_11_01"); //Moje najwiÄ™ksze nieszczÄ™Å›cie, moje najwiÄ™ksze rozczarowanie.
 	DIA_Addon_Quarhodron_Hello_ChoiceCounter = (DIA_Addon_Quarhodron_Hello_ChoiceCounter + 1);
 	B_Quarhodron_Hello_KommZumPunkt ();
 };
 func void DIA_Addon_Quarhodron_Hello_frech ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //Wielka m¹droœæ staro¿ytnych musi ciê przyt³aczaæ.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //Cz³owiek twojej pozycji nie mo¿e siê tak do mnie zwracaæ.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //Nie mogê oprzeæ siê wra¿eniu, ¿e nie jesteœ tym, za kogo siê podajesz.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //Jeœli naprawdê potrzebujesz mej pomocy, bêdziesz musia³ udowodniæ swe intencje.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //Odpowiedz na moje pytania, abym mia³ pewnoœæ, ¿e nie wyjawiê tajemnic obcemu.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_Hello_frech_15_00"); //Wielka mÄ…droÅ›Ä‡ staroÅ¼ytnych musi ciÄ™ przytÅ‚aczaÄ‡.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_01"); //CzÅ‚owiek twojej pozycji nie moÅ¼e siÄ™ tak do mnie zwracaÄ‡.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_02"); //Nie mogÄ™ oprzeÄ‡ siÄ™ wraÅ¼eniu, Å¼e nie jesteÅ› tym, za kogo siÄ™ podajesz.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_03"); //JeÅ›li naprawdÄ™ potrzebujesz mej pomocy, bÄ™dziesz musiaÅ‚ udowodniÄ‡ swe intencje.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Hello_frech_11_04"); //Odpowiedz na moje pytania, abym miaÅ‚ pewnoÅ›Ä‡, Å¼e nie wyjawiÄ™ tajemnic obcemu.
 	
 	Log_CreateTopic (TOPIC_Addon_Quarhodron, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Quarhodron, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron pomo¿e mi tylko pod warunkiem, ¿e udowodniê swoj¹ wartoœæ. Zada³ mi kilka trudnych pytañ. Muszê na nie odpowiedzieæ!"); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron pomoÅ¼e mi tylko pod warunkiem, Å¼e udowodniÄ™ swojÄ… wartoÅ›Ä‡. ZadaÅ‚ mi kilka trudnych pytaÅ„. MuszÄ™ na nie odpowiedzieÄ‡!"); 
 
 	Info_ClearChoices	(DIA_Addon_Quarhodron_Hello);
 };
@@ -153,8 +153,8 @@ var int B_Quarhodron_Fragen_ChoicesOneTime;
 
 func void B_Quarhodron_TestFailed ()
 {
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Twoje odpowiedzi s¹ tak z³e, jak twoje intencje.
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_01"); //Nie pomogê ci.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_00"); //Twoje odpowiedzi sÄ… tak zÅ‚e, jak twoje intencje.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_TestFailed_11_01"); //Nie pomogÄ™ ci.
 		AI_StopProcessInfos (self);	
 };
 
@@ -171,8 +171,8 @@ func void B_Quarhodron_Fragen_Choices ()
 		if (Quarhodrons_NextQuestion == 1)
 		&& (Quarhodrons_RichtigeAntworten == 0)
 		{
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //Nie wierzê ci.
-			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Lepiej wróæ, kiedy zdecydujesz siê mówiæ prawdê.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_00"); //Nie wierzÄ™ ci.
+			AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_01"); //Lepiej wrÃ³Ä‡, kiedy zdecydujesz siÄ™ mÃ³wiÄ‡ prawdÄ™.
 			AI_StopProcessInfos (self);
 		}
 		else 
@@ -181,9 +181,9 @@ func void B_Quarhodron_Fragen_Choices ()
 			{
 				if (B_Quarhodron_Fragen_ChoicesOneTime == FALSE)
 				{
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //Zdolnoœci stra¿nika umar³ych pozwoli³y ci mnie obudziæ, to prawda.
-					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //Jeœli naprawdê jesteœ tym, za kogo siê podajesz, zdo³asz odpowiedzieæ na wszystkie moje pytania.
-					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //Za wyj¹tkiem jednego...
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_02"); //ZdolnoÅ›ci straÅ¼nika umarÅ‚ych pozwoliÅ‚y ci mnie obudziÄ‡, to prawda.
+					AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_03"); //JeÅ›li naprawdÄ™ jesteÅ› tym, za kogo siÄ™ podajesz, zdoÅ‚asz odpowiedzieÄ‡ na wszystkie moje pytania.
+					AI_Output (self, other, "DIA_Addon_Quarhodron_Add_11_00"); //Za wyjÄ…tkiem jednego...
 					
 					B_Quarhodron_Fragen_ChoicesOneTime = TRUE;
 				};
@@ -192,38 +192,38 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion == 7)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Kto zamkn¹³ portal, by uchroniæ ludzi przed z³em?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto zamkn¹³ portal, by uchroniæ ludzi przed z³em? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_04"); //Kto zamknÄ…Å‚ portal, by uchroniÄ‡ ludzi przed zÅ‚em?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto zamknÄ…Å‚ portal, by uchroniÄ‡ ludzi przed zÅ‚em? ---"); 
 				Quarhodrons_NextQuestion = Quarhodron_AlleFragenGestellt;
 			}
 			else if (Quarhodrons_NextQuestion == 6)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //Kto ³agodzi cierpienia i opiekuje siê chorymi?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto ³agodzi cierpienia i opiekuje siê chorymi? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_05"); //Kto Å‚agodzi cierpienia i opiekuje siÄ™ chorymi?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto Å‚agodzi cierpienia i opiekuje siÄ™ chorymi? ---"); 
 				Quarhodrons_NextQuestion = 7;
 			}
 			else if (Quarhodrons_NextQuestion == 5)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_06"); //Kto ma decyduj¹cy g³os w radzie piêciu?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto ma decyduj¹cy g³os w radzie piêciu? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_06"); //Kto ma decydujÄ…cy gÅ‚os w radzie piÄ™ciu?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto ma decydujÄ…cy gÅ‚os w radzie piÄ™ciu? ---"); 
 				Quarhodrons_NextQuestion = 6;
 			}	
 			else if (Quarhodrons_NextQuestion == 4)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Kto jest odpowiedzialny za z³o, które na nas spad³o?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto jest odpowiedzialny za z³o, które na nas spad³o? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_07"); //Kto jest odpowiedzialny za zÅ‚o, ktÃ³re na nas spadÅ‚o?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto jest odpowiedzialny za zÅ‚o, ktÃ³re na nas spadÅ‚o? ---"); 
 				Quarhodrons_NextQuestion = 5;
 			}
 			else if (Quarhodrons_NextQuestion == 3)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //Kto mo¿e wydaæ mi bezpoœredni rozkaz?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto mo¿e wydaæ mi bezpoœredni rozkaz? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_08"); //Kto moÅ¼e wydaÄ‡ mi bezpoÅ›redni rozkaz?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto moÅ¼e wydaÄ‡ mi bezpoÅ›redni rozkaz? ---"); 
 				Quarhodrons_NextQuestion = 4;
 			}	
 			else if (Quarhodrons_NextQuestion == 2)
 			{
-				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Kto niegdyœ broni³ mieszkañców Jarkendaru przed wrogimi atakami?
-				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto niegdyœ broni³ mieszkañców Jarkendaru przed wrogimi atakami? ---"); 
+				AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_Choices_11_09"); //Kto niegdyÅ› broniÅ‚ mieszkaÅ„cÃ³w Jarkendaru przed wrogimi atakami?
+				Log_AddEntry  (TOPIC_Addon_Quarhodron," --- Kto niegdyÅ› broniÅ‚ mieszkaÅ„cÃ³w Jarkendaru przed wrogimi atakami? ---"); 
 				Quarhodrons_NextQuestion = 3;
 			};
 			
@@ -231,7 +231,7 @@ func void B_Quarhodron_Fragen_Choices ()
 			
 			if (Quarhodrons_NextQuestion >= Quarhodron_AlleFragenGestellt)
 			{
-				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Sk¹d mam to wiedzieæ?", DIA_Addon_Quarhodron_Fragen_NoPlan );
+				Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "SkÄ…d mam to wiedzieÄ‡?", DIA_Addon_Quarhodron_Fragen_NoPlan );
 			}
 			else
 			{
@@ -239,9 +239,9 @@ func void B_Quarhodron_Fragen_Choices ()
 			};
 			
 			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Uczeni.", DIA_Addon_Quarhodron_Fragen_gele );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Stra¿nicy Umar³ych.", DIA_Addon_Quarhodron_Fragen_totenw );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Kap³ani.", DIA_Addon_Quarhodron_Fragen_prie );
-			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Kasta Wojowników.", DIA_Addon_Quarhodron_Fragen_warr );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "StraÅ¼nicy UmarÅ‚ych.", DIA_Addon_Quarhodron_Fragen_totenw );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "KapÅ‚ani.", DIA_Addon_Quarhodron_Fragen_prie );
+			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Kasta WojownikÃ³w.", DIA_Addon_Quarhodron_Fragen_warr );
 			Info_AddChoice	(DIA_Addon_Quarhodron_Fragen, "Uzdrowiciele.", DIA_Addon_Quarhodron_Fragen_heiler );
 		};
 	};
@@ -256,19 +256,19 @@ func void DIA_Addon_Quarhodron_Fragen_Info ()
 	
 	if (DIA_Addon_Quarhodron_Fragen_Info_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //Jestem Quarhodron, dawny genera³ Jarkendaru.
-		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //Przebudzi³eœ mnie.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_01"); //Jestem Quarhodron, dawny generaÅ‚ Jarkendaru.
+		AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_02"); //PrzebudziÅ‚eÅ› mnie.
 		
 		DIA_Addon_Quarhodron_Fragen_Info_OneTime = TRUE;
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_03"); //Do której kasty nale¿ysz?
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_Fragen_11_03"); //Do ktÃ³rej kasty naleÅ¼ysz?
 
 	B_Quarhodron_Fragen_Choices ();
 };
 func void DIA_Addon_Quarhodron_Fragen_warr ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_warr_15_00"); //Kasta wojowników.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_warr_15_00"); //Kasta wojownikÃ³w.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 3)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	if (Quarhodrons_NextQuestion == 5)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
@@ -276,7 +276,7 @@ func void DIA_Addon_Quarhodron_Fragen_warr ()
 };
 func void DIA_Addon_Quarhodron_Fragen_prie ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //Kap³ani.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_prie_15_00"); //KapÅ‚ani.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	if (Quarhodrons_NextQuestion == 4)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	B_Quarhodron_Fragen_Choices ();
@@ -290,7 +290,7 @@ func void DIA_Addon_Quarhodron_Fragen_gele ()
 };
 func void DIA_Addon_Quarhodron_Fragen_totenw ()
 {
-	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_totenw_15_00"); //Stra¿nicy umar³ych.
+	AI_Output			(other, self, "DIA_Addon_Quarhodron_Fragen_totenw_15_00"); //StraÅ¼nicy umarÅ‚ych.
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_RichtigeAntworten = (Quarhodrons_RichtigeAntworten + 1);};
 	if (Quarhodrons_NextQuestion == 0)	{Quarhodrons_NextQuestion = 1;};
 	
@@ -310,7 +310,7 @@ func void DIA_Addon_Quarhodron_Fragen_NoPlan ()
 	if (Quarhodrons_NextQuestion == Quarhodron_AlleFragenGestellt)
 	&& (Quarhodrons_RichtigeAntworten >= 6) 
 	{
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_01"); //Dobrze. Ufam ci i udzielê pomocy.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_01"); //Dobrze. Ufam ci i udzielÄ™ pomocy.
 		QuarhodronIstZufrieden = TRUE;
 		Info_ClearChoices	(DIA_Addon_Quarhodron_Fragen);
 	}
@@ -320,7 +320,7 @@ func void DIA_Addon_Quarhodron_Fragen_NoPlan ()
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_02"); //Wiêc nie marnuj mego czasu.
+		AI_Output			(self, other, "DIA_Addon_Quarhodron_Fragen_NoPlan_11_02"); //WiÄ™c nie marnuj mego czasu.
 		AI_StopProcessInfos (self);	
 	};
 };
@@ -335,7 +335,7 @@ instance DIA_Addon_Quarhodron_GibMirKey		(C_INFO)
 	condition	 = 	DIA_Addon_Quarhodron_GibMirKey_Condition;
 	information	 = 	DIA_Addon_Quarhodron_GibMirKey_Info;
 
-	description	 = 	"(Za¿¹daj klucza od œwi¹tyni)";
+	description	 = 	"(ZaÅ¼Ä…daj klucza od Å›wiÄ…tyni)";
 };
 func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 {
@@ -346,27 +346,27 @@ func int DIA_Addon_Quarhodron_GibMirKey_Condition ()
 };
 func void DIA_Addon_Quarhodron_GibMirKey_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //Jakiœ parszywy drañ dosta³ siê do œwi¹tyni Adanosa!
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //Jeœli natychmiast nie wpuœcisz mnie do œwi¹tyni, rozpêta siê tu piek³o.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //Niemo¿liwe! Najwy¿szy kap³an Khardimon i ja jesteœmy jedynymi w Jarkendarze, którzy wiedz¹, jak otworzyæ portal w œwi¹tyni Adanosa.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //Có¿. Wygl¹da na to, ¿e ten Khardimon siê wygada³.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Powtarzam, brama zosta³a otwarta. Widzia³em to na w³asne oczy.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //Dobrze. S³yszê prawdê w twoim g³osie. Nie bêdê ju¿ w¹tpiæ w twe s³owa.
-	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //Mam nadziejê.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //WeŸ zatem s³owo, które otworzy ci przejœcie. Zapisane jest na tej kamiennej tablicy. Wypowiedz je przy zamkniêtej bramie œwi¹tyni, a stanie ona otworem.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_00"); //JakiÅ› parszywy draÅ„ dostaÅ‚ siÄ™ do Å›wiÄ…tyni Adanosa!
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_01"); //JeÅ›li natychmiast nie wpuÅ›cisz mnie do Å›wiÄ…tyni, rozpÄ™ta siÄ™ tu piekÅ‚o.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_02"); //NiemoÅ¼liwe! NajwyÅ¼szy kapÅ‚an Khardimon i ja jesteÅ›my jedynymi w Jarkendarze, ktÃ³rzy wiedzÄ…, jak otworzyÄ‡ portal w Å›wiÄ…tyni Adanosa.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_03"); //CÃ³Å¼. WyglÄ…da na to, Å¼e ten Khardimon siÄ™ wygadaÅ‚.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_04"); //Powtarzam, brama zostaÅ‚a otwarta. WidziaÅ‚em to na wÅ‚asne oczy.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_05"); //Dobrze. SÅ‚yszÄ™ prawdÄ™ w twoim gÅ‚osie. Nie bÄ™dÄ™ juÅ¼ wÄ…tpiÄ‡ w twe sÅ‚owa.
+	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_06"); //Mam nadziejÄ™.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_07"); //WeÅº zatem sÅ‚owo, ktÃ³re otworzy ci przejÅ›cie. Zapisane jest na tej kamiennej tablicy. Wypowiedz je przy zamkniÄ™tej bramie Å›wiÄ…tyni, a stanie ona otworem.
 	CreateInvItems (self, ItMi_TempelTorKey, 1);									
 	B_GiveInvItems (self, other, ItMi_TempelTorKey, 1);		
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //Mój czas dobiega koñca. Nie mogê ci wiêcej pomóc.
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //Ale strze¿ siê. Pamiêtaj o komnatach Adanosa. Albo spotka ciê pewna œmieræ....
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_08"); //MÃ³j czas dobiega koÅ„ca. Nie mogÄ™ ci wiÄ™cej pomÃ³c.
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_09"); //Ale strzeÅ¼ siÄ™. PamiÄ™taj o komnatach Adanosa. Albo spotka ciÄ™ pewna Å›mierÄ‡....
 	AI_Output	(other, self, "DIA_Addon_Quarhodron_GibMirKey_15_10"); //Zaczekaj. O co chodzi z tymi komnatami?
-	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //Gasn¹ me si³y. ¯egnaj. Spotkamy siê ponownie w krainie umar³ych...
+	AI_Output	(self, other, "DIA_Addon_Quarhodron_GibMirKey_11_11"); //GasnÄ… me siÅ‚y. Å»egnaj. Spotkamy siÄ™ ponownie w krainie umarÅ‚ych...
 	AI_StopProcessInfos (self);
 	
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron da³ mi kamienn¹ tablicê, która otwiera przejœcie do œwi¹tyni Adanosa."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Quarhodron daÅ‚ mi kamiennÄ… tablicÄ™, ktÃ³ra otwiera przejÅ›cie do Å›wiÄ…tyni Adanosa."); 
 	
 	Log_CreateTopic (TOPIC_Addon_Kammern, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Kammern, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kammern,"Quarhodron wspomnia³ o 'Komnatach Adanosa' i ostrzeg³, bym mia³ siê na bacznoœci. Jeœli nie chcê zgin¹æ w œwi¹tyni Adanosa, muszê siê dowiedzieæ, o co mu chodzi³o."); 
+	B_LogEntry (TOPIC_Addon_Kammern,"Quarhodron wspomniaÅ‚ o 'Komnatach Adanosa' i ostrzegÅ‚, bym miaÅ‚ siÄ™ na bacznoÅ›ci. JeÅ›li nie chcÄ™ zginÄ…Ä‡ w Å›wiÄ…tyni Adanosa, muszÄ™ siÄ™ dowiedzieÄ‡, o co mu chodziÅ‚o."); 
 
 	Ghost_SCKnowsHow2GetInAdanosTempel = TRUE;
 };

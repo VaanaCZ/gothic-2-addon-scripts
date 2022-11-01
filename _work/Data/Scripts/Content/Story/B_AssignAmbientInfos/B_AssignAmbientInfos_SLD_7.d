@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_7_JOIN(C_INFO)
 	condition	= DIA_SLD_7_JOIN_Condition;
 	information	= DIA_SLD_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Chcê siê do was przy³¹czyæ!";
+	description = "ChcÄ™ siÄ™ do was przyÅ‚Ä…czyÄ‡!";
 };                       
 
 FUNC INT DIA_SLD_7_JOIN_Condition()
@@ -42,18 +42,18 @@ FUNC INT DIA_SLD_7_JOIN_Condition()
 
 FUNC VOID DIA_SLD_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //Chcê siê do was przy³¹czyæ.
+	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //ChcÄ™ siÄ™ do was przyÅ‚Ä…czyÄ‡.
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_01"); //S³ysza³em, ¿e da³eœ siê stra¿y we znaki. Przyda³byœ siê nam.
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_01"); //SÅ‚yszaÅ‚em, Å¼e daÅ‚eÅ› siÄ™ straÅ¼y we znaki. PrzydaÅ‚byÅ› siÄ™ nam.
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_02"); //Œci¹ganie czynszu od farmerów nie jest raczej trudnym zadaniem, ale skoro Onar chce ci za to p³aciæ, to ja nie bêdê siê wtr¹ca³.
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_02"); //ÅšciÄ…ganie czynszu od farmerÃ³w nie jest raczej trudnym zadaniem, ale skoro Onar chce ci za to pÅ‚aciÄ‡, to ja nie bÄ™dÄ™ siÄ™ wtrÄ…caÅ‚.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_03"); //Ty? Niech no tylko Torlof podda ciê próbie, a stracisz ten zapa³, miêczaku.
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_03"); //Ty? Niech no tylko Torlof podda ciÄ™ prÃ³bie, a stracisz ten zapaÅ‚, miÄ™czaku.
 	};
 };
 
@@ -77,10 +77,10 @@ FUNC INT DIA_SLD_7_PEOPLE_Condition()
 FUNC VOID DIA_SLD_7_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Kto tu dowodzi?
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Naszym szefem jest Lee, a Torlof jego praw¹ rêk¹. Wiêkszoœæ ludzi liczy siê z jego zdaniem, poniewa¿ dowodzi³ nimi jeszcze za czasów kolonii.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //Jest jeszcze Sylvio. Zjawi³ siê tu, wraz z grupk¹ swoich ludzi, po przybyciu Lee.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //On i jego banda stanowi¹ niewielk¹ czêœæ wszystkich najemników - ale sprawiaj¹ du¿o k³opotów. Ci kolesie prowadz¹ w³asn¹ grê.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //Sylvio to brudny sukinsyn. Uwa¿aj, kiedy go spotkasz.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Naszym szefem jest Lee, a Torlof jego prawÄ… rÄ™kÄ…. WiÄ™kszoÅ›Ä‡ ludzi liczy siÄ™ z jego zdaniem, poniewaÅ¼ dowodziÅ‚ nimi jeszcze za czasÃ³w kolonii.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //Jest jeszcze Sylvio. ZjawiÅ‚ siÄ™ tu, wraz z grupkÄ… swoich ludzi, po przybyciu Lee.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //On i jego banda stanowiÄ… niewielkÄ… czÄ™Å›Ä‡ wszystkich najemnikÃ³w - ale sprawiajÄ… duÅ¼o kÅ‚opotÃ³w. Ci kolesie prowadzÄ… wÅ‚asnÄ… grÄ™.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //Sylvio to brudny sukinsyn. UwaÅ¼aj, kiedy go spotkasz.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_SLD_7_LOCATION(C_INFO)
 	condition	= DIA_SLD_7_LOCATION_Condition;
 	information	= DIA_SLD_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Powiedz mi coœ o farmie.";
+	description = "Powiedz mi coÅ› o farmie.";
 };                       
 
 FUNC INT DIA_SLD_7_LOCATION_Condition()
@@ -102,12 +102,12 @@ FUNC INT DIA_SLD_7_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Powiedz mi coœ o farmie.
-	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Na rozkaz Onara pilnujemy jego w³asnoœci.
+	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Powiedz mi coÅ› o farmie.
+	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Na rozkaz Onara pilnujemy jego wÅ‚asnoÅ›ci.
 	if (other.guild != GIL_SLD)
 	&& (other.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Nie myœl nawet o tym, ¿eby coœ zwêdziæ, niech ci te¿ nie przyjdzie do g³owy wdawaæ siê w bójki z ch³opami. No chyba ¿e chcesz mieæ z nami do czynienia, jasne?
+		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Nie myÅ›l nawet o tym, Å¼eby coÅ› zwÄ™dziÄ‡, niech ci teÅ¼ nie przyjdzie do gÅ‚owy wdawaÄ‡ siÄ™ w bÃ³jki z chÅ‚opami. No chyba Å¼e chcesz mieÄ‡ z nami do czynienia, jasne?
 	};
 };
 
@@ -128,7 +128,7 @@ func INT DIA_SLD_7_STANDARD_Condition()
 };
 FUNC VOID DIA_SLD_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_SLD_7_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel <= 2)
 	{
@@ -136,23 +136,23 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_01"); //Od kiedy siê do nas przy³¹czy³eœ, na farmie zapanowa³ spokój - ¿adnej stra¿y.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_01"); //Od kiedy siÄ™ do nas przyÅ‚Ä…czyÅ‚eÅ›, na farmie zapanowaÅ‚ spokÃ³j - Å¼adnej straÅ¼y.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_02"); //U nas, nic ciekawego. Ale popytaj w mieœcie. Zdaje siê, ¿e maj¹ problemy z dostawami ¿ywnoœci.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_02"); //U nas, nic ciekawego. Ale popytaj w mieÅ›cie. Zdaje siÄ™, Å¼e majÄ… problemy z dostawami Å¼ywnoÅ›ci.
 			};
 		}
 		else
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //W Górniczej Dolinie rozbestwi³y siê smoki! Nie chcia³bym znaleŸæ siê teraz na miejscu paladynów.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //Domyœlam siê, ¿e Król porz¹dnie skopie ty³ek Lordowi Hagenowi, gdy ten, z powodu smoków, wróci z pustymi rêkami.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //W GÃ³rniczej Dolinie rozbestwiÅ‚y siÄ™ smoki! Nie chciaÅ‚bym znaleÅºÄ‡ siÄ™ teraz na miejscu paladynÃ³w.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //DomyÅ›lam siÄ™, Å¼e KrÃ³l porzÄ…dnie skopie tyÅ‚ek Lordowi Hagenowi, gdy ten, z powodu smokÃ³w, wrÃ³ci z pustymi rÄ™kami.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //Czy wy, paladyni, nie moglibyœcie zaj¹æ siê smokami? Zreszt¹, walka to coœ dla prawdziwych facetów.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //Czy wy, paladyni, nie moglibyÅ›cie zajÄ…Ä‡ siÄ™ smokami? ZresztÄ…, walka to coÅ› dla prawdziwych facetÃ³w.
 			};
 		};	
 	};
@@ -164,12 +164,12 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //Sposób, w jaki rozwi¹za³eœ sprawê Benneta, godny jest pochwa³y. Sylvio pewnie zzielenia³ z wœciek³oœci. Wola³by chyba najechaæ na miasto i roznieœæ je w py³.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //Zawsze próbuje poni¿yæ i oœmieszyæ Lee, a Bennet dostarczy³ mu dobrego pretekstu.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //SposÃ³b, w jaki rozwiÄ…zaÅ‚eÅ› sprawÄ™ Benneta, godny jest pochwaÅ‚y. Sylvio pewnie zzieleniaÅ‚ z wÅ›ciekÅ‚oÅ›ci. WolaÅ‚by chyba najechaÄ‡ na miasto i roznieÅ›Ä‡ je w pyÅ‚.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //Zawsze prÃ³buje poniÅ¼yÄ‡ i oÅ›mieszyÄ‡ Lee, a Bennet dostarczyÅ‚ mu dobrego pretekstu.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Nie wiem, dlaczego pomog³eœ Bennetowi, ale uwierz mi, miasto na tym skorzysta.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Nie wiem, dlaczego pomogÅ‚eÅ› Bennetowi, ale uwierz mi, miasto na tym skorzysta.
 			};
 		}
 		else
@@ -177,11 +177,11 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //Ta sprawa z Bennetem to nic dobrego. Mo¿e, mimo wszystko, powinniœmy pos³uchaæ Sylvia i zaatakowaæ miasto.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //Ta sprawa z Bennetem to nic dobrego. MoÅ¼e, mimo wszystko, powinniÅ›my posÅ‚uchaÄ‡ Sylvia i zaatakowaÄ‡ miasto.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_10"); //Jakie masz plany w stosunku do Benneta? No có¿, w³aœciwie to wolê nie wiedzieæ, sam siê wkrótce przekonasz, do czego to wszystko prowadzi.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_10"); //Jakie masz plany w stosunku do Benneta? No cÃ³Å¼, wÅ‚aÅ›ciwie to wolÄ™ nie wiedzieÄ‡, sam siÄ™ wkrÃ³tce przekonasz, do czego to wszystko prowadzi.
 			};
 		};		
 	};
@@ -190,19 +190,19 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_11"); //Myœla³em, ¿e tak jak Sylvio, te¿ zmierzasz w kierunku doliny.
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_12"); //Nikt z nas by nie ¿a³owa³, gdyby Sylvio zosta³ w dolinie. NA ZAWSZE.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_11"); //MyÅ›laÅ‚em, Å¼e tak jak Sylvio, teÅ¼ zmierzasz w kierunku doliny.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_12"); //Nikt z nas by nie Å¼aÅ‚owaÅ‚, gdyby Sylvio zostaÅ‚ w dolinie. NA ZAWSZE.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //Masz du¿o odwagi, ¿eby tu siê pokazywaæ.
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Ale nic mnie to nie obchodzi, póki nie chcesz œci¹gaæ podatków.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //Masz duÅ¼o odwagi, Å¼eby tu siÄ™ pokazywaÄ‡.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Ale nic mnie to nie obchodzi, pÃ³ki nie chcesz Å›ciÄ…gaÄ‡ podatkÃ³w.
 		};
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Do diab³a, d³u¿ej tego nie zniosê. Owce, pastwiska, drzewa. Drzewa, owce i pastwiska. Chcê siê st¹d w koñcu wydostaæ.
+		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Do diabÅ‚a, dÅ‚uÅ¼ej tego nie zniosÄ™. Owce, pastwiska, drzewa. Drzewa, owce i pastwiska. ChcÄ™ siÄ™ stÄ…d w koÅ„cu wydostaÄ‡.
 	};
 };
 

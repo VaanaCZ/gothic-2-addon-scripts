@@ -75,10 +75,10 @@ FUNC INT DIA_Addon_Skinner_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Po co mnie obudzi³eœ? Za³o¿ê siê, ¿e nawet nie wiesz....
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Nie, nie odpowiadaj. Za póŸno na wymówki.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//Masz teraz dwie mo¿liwoœci. Walczyæ ze mn¹ i moj¹ Betty... albo spróbowaæ ucieczki.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//Ja na twoim miejscu próbowa³bym uciekaæ...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Po co mnie obudziÅ‚eÅ›? ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e nawet nie wiesz....
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Nie, nie odpowiadaj. Za pÃ³Åºno na wymÃ³wki.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//Masz teraz dwie moÅ¼liwoÅ›ci. WalczyÄ‡ ze mnÄ… i mojÄ… Betty... albo sprÃ³bowaÄ‡ ucieczki.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//Ja na twoim miejscu prÃ³bowaÅ‚bym uciekaÄ‡...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_Skinner_Attentat   (C_INFO)
 	condition   = DIA_Addon_Skinner_Attentat_Condition;
 	information = DIA_Addon_Skinner_Attentat_Info;
 	permanent   = FALSE;
-	description = "A co do próby zabójstwa...";
+	description = "A co do prÃ³by zabÃ³jstwa...";
 };
 FUNC INT DIA_Addon_Skinner_Attentat_Condition()
 {	
@@ -104,17 +104,17 @@ FUNC INT DIA_Addon_Skinner_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_Attentat_15_00");//A co do próby zabójstwa...
+	AI_Output (other, self, "DIA_Addon_Skinner_Attentat_15_00");//A co do prÃ³by zabÃ³jstwa...
 	AI_Output (self, other, "DIA_Addon_Skinner_Attentat_08_01");//Czego ode mnie chcesz?
 	
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);
 	
-	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Chcê siê pozbyæ Estebana.",DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
-	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Zabijê zdrajcê.",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
+	Info_AddChoice (DIA_Addon_Skinner_Attentat,"ChcÄ™ siÄ™ pozbyÄ‡ Estebana.",DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
+	Info_AddChoice (DIA_Addon_Skinner_Attentat,"ZabijÄ™ zdrajcÄ™.",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00");//Chcê siê pozbyæ Estebana.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_15_00");//ChcÄ™ siÄ™ pozbyÄ‡ Estebana.
 	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA_08_01");//Znakomicie.
 	
 	Judas_Counter = (Judas_Counter + 1);
@@ -123,7 +123,7 @@ FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_PRO()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//Zabijê zdrajcê.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//ZabijÄ™ zdrajcÄ™.
 	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01");//Cholera.
 	
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);

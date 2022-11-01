@@ -12,13 +12,13 @@ func void B_MM_AssessBody()
 		return;
 	};
 	
-	// ------- Monster sollen sich zu Tode st¸rzen, etc. ------
+	// ------- Monster sollen sich zu Tode st√ºrzen, etc. ------
 	if (Npc_GetHeightToNpc(self, other) > PERC_DIST_HEIGHT)
 	{
 		return;
 	};
 	
-	// ------ Meine Priorit‰t ist nicht fressen, sondern k‰mpfen ------
+	// ------ Meine Priorit√§t ist nicht fressen, sondern k√§mpfen ------
 	if (self.aivar[AIV_MM_PRIORITY] == PRIO_ATTACK)
 	{
 		return;
@@ -37,7 +37,7 @@ func void B_MM_AssessBody()
 		
 		if (Npc_GetDistToNpc(stoerenfried,other) <= (FIGHT_DIST_MONSTER_ATTACKRANGE)) //other ist hier = BODY
 		{
-			return; 		//erst FUNC ausf¸hren (zum Body gehen) wenn Gegner weit genug von Body weg
+			return; 		//erst FUNC ausf√ºhren (zum Body gehen) wenn Gegner weit genug von Body weg
 		};
 	};
 	

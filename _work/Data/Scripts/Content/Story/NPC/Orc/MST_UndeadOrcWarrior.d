@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_UndeadOrcWarrior (C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Ork-oøywieniec";
+	name							=	"Ork-o≈ºywieniec";
 	guild							=	GIL_UNDEADORC;
 	aivar[AIV_MM_REAL_ID]			= 	ID_UNDEADORCWARRIOR;
 	level							=	40;

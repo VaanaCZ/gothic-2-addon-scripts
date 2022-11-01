@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Swampshark(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"W¹¿ b³otny";
+	name							=	"WÄ…Å¼ bÅ‚otny";
 	guild							=	GIL_SWAMPSHARK;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SWAMPSHARK;
 	level							=	24;

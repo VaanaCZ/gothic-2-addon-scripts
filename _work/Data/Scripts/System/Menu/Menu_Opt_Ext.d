@@ -10,8 +10,8 @@
 // Ambient Vobs			(ZTOGGLE RENDERAMBIENTVOBS)
 // Env Mapping			(ZTOGGLE ENVMAP)
 
-// optional vielleicht später noch
-// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nötig auf älteren Karten und evtl. Performance Gewinn (TEST!)
+// optional vielleicht spÃ¤ter noch
+// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nÃ¶tig auf Ã¤lteren Karten und evtl. Performance Gewinn (TEST!)
 // Wolkenschatten		(TODO):     bisher nur in der INI einstellbar, bringt Performance wenn aus und es regnet
 
 INSTANCE MENU_OPT_EXT(C_MENU_DEF)
@@ -71,7 +71,7 @@ INSTANCE MENUITEM_EXT_FFT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Fale";
-	text[1]		= 	"W³¹czenie/wy³¹czenie wyœwietlania fal"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie wyÅ›wietlania fal"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	4600;	dimy		=	750;
@@ -101,8 +101,8 @@ instance MENUITEM_EXT_FFT_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_WATERFADE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"PrzeŸroczystoœæ wody";
-	text[1]		= 	"W³¹czenie/wy³¹czenie przeŸroczystoœci tafli wody"; // Kommentar
+	text[0]		=	"PrzeÅºroczystoÅ›Ä‡ wody";
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie przeÅºroczystoÅ›ci tafli wody"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	4600;	dimy		=	750;
@@ -133,7 +133,7 @@ INSTANCE MENUITEM_EXT_OBJWIND(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Wiatr";
-	text[1]		= 	"W³¹czenie/wy³¹czenie wp³ywu wiatru na obiekty"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie wpÅ‚ywu wiatru na obiekty"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	4600;	dimy		=	750;
@@ -198,7 +198,7 @@ INSTANCE MENUITEM_EXT_CLOUDSHADOW(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Cienie chmur";
-	text[1]		= 	"W³¹czenie/wy³¹czenie cieni chmur"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie cieni chmur"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	4600;	dimy		=	750;
@@ -229,8 +229,8 @@ instance MENUITEM_EXT_CLOUDSHADOW_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_AMBIENTPFX(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"DŸwiêki otoczenia";
-	text[1]		= 	"W³¹czenie/wy³¹czenie dodatkowych efektów dŸwiêkowych"; // Kommentar
+	text[0]		=	"DÅºwiÄ™ki otoczenia";
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie dodatkowych efektÃ³w dÅºwiÄ™kowych"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	4600;	dimy		=	750;
@@ -262,7 +262,7 @@ INSTANCE MENUITEM_EXT_ENVMAP(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Odbicia";
-	text[1]		= 	"W³¹czenie/wy³¹czenie wyœwietlania odbiæ"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie wyÅ›wietlania odbiÄ‡"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	4600;	dimy		=	750;
@@ -293,8 +293,8 @@ instance MENUITEM_EXT_ENVMAP_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_RADIALFOG(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Mg³a";
-	text[1]		= 	"W³¹czenie/wy³¹czenie mg³y"; // Kommentar
+	text[0]		=	"MgÅ‚a";
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie mgÅ‚y"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_DY*6;
 	dimx		=	4600;	dimy		=	750;
@@ -326,7 +326,7 @@ instance MENUITEM_EXT_RADIALFOG_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_EXT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wróæ";
+	text[0]		=	"WrÃ³Ä‡";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_DY;

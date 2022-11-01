@@ -4,18 +4,18 @@
 
 func void B_LastWarningVatras ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //Co uczyni³eœ, nieszczêœniku? 
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //W zakonie wody wiele razy ostrzegaliœmy ciê, byœ wyrzek³ siê z³a.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //Dosz³y mnie jednak s³uchy, ¿e opuœci³eœ œcie¿kê wszystkich, którzy podtrzymuj¹ równowagê.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //Wêdrowa³eœ, morduj¹c i ³upi¹c. Masz na sumieniu straszliwe zbrodnie.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //Z twojej rêki zginê³a niezliczona liczba niewinnych ludzi!
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //A teraz sprzymierzy³eœ siê z si³ami ciemnoœci.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //Co uczyniÅ‚eÅ›, nieszczÄ™Å›niku? 
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //W zakonie wody wiele razy ostrzegaliÅ›my ciÄ™, byÅ› wyrzekÅ‚ siÄ™ zÅ‚a.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //DoszÅ‚y mnie jednak sÅ‚uchy, Å¼e opuÅ›ciÅ‚eÅ› Å›cieÅ¼kÄ™ wszystkich, ktÃ³rzy podtrzymujÄ… rÃ³wnowagÄ™.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //WÄ™drowaÅ‚eÅ›, mordujÄ…c i Å‚upiÄ…c. Masz na sumieniu straszliwe zbrodnie.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //Z twojej rÄ™ki zginÄ™Å‚a niezliczona liczba niewinnych ludzi!
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //A teraz sprzymierzyÅ‚eÅ› siÄ™ z siÅ‚ami ciemnoÅ›ci.
 };
 
 func void B_VatrasPissedOff ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Odt¹d nie mo¿esz liczyæ na moje poparcie. 
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //OdejdŸ. Dla mnie jesteœ teraz wyrzutkiem.
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //OdtÄ…d nie moÅ¼esz liczyÄ‡ na moje poparcie. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //OdejdÅº. Dla mnie jesteÅ› teraz wyrzutkiem.
 	
 	if (Vatras_IsOnBoard == LOG_SUCCESS)
 	{

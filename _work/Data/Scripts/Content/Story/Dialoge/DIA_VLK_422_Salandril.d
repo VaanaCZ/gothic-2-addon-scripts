@@ -34,7 +34,7 @@ INSTANCE DIA_Salandril_PICKPOCKET (C_INFO)
 	condition	= DIA_Salandril_PICKPOCKET_Condition;
 	information	= DIA_Salandril_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego klucza bêdzie doœæ ³atwa)";
+	description = "(KradzieÅ¼ tego klucza bÄ™dzie doÅ›Ä‡ Å‚atwa)";
 };
 //----------------------------------------                       
 var int DIA_Salandril_PICKPOCKET_perm;
@@ -103,11 +103,11 @@ func int DIA_Salandril_Hallo_Condition ()
 };
 func void DIA_Salandril_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //Witaj, wêdrowcze. Szukasz doskona³ej mikstury?
-	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //Mam œwietny wybór po rozs¹dnych cenach. A moje mikstury s¹ o wiele lepsze od tych, które stara siê sprzedawaæ Zuris.
+	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //Witaj, wÄ™drowcze. Szukasz doskonaÅ‚ej mikstury?
+	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //Mam Å›wietny wybÃ³r po rozsÄ…dnych cenach. A moje mikstury sÄ… o wiele lepsze od tych, ktÃ³re stara siÄ™ sprzedawaÄ‡ Zuris.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Salandril sprzedaje mikstury. Jego sklep znajduje siê w górnym mieœcie."); 
+	B_LogEntry (TOPIC_CityTrader, "Salandril sprzedaje mikstury. Jego sklep znajduje siÄ™ w gÃ³rnym mieÅ›cie."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trank
@@ -132,8 +132,8 @@ func int DIA_Salandril_Trank_Condition ()
 };
 func void DIA_Salandril_Trank_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //S³ysza³em, ¿e by³eœ z paladynami w Górniczej Dolinie. Jestem pod wra¿eniem.
-	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //Nie œpiesz siê i spokojnie obejrzyj mój towar. Dobrze siê sk³ada, bo akurat mam coœ wyj¹tkowego na sprzeda¿.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //SÅ‚yszaÅ‚em, Å¼e byÅ‚eÅ› z paladynami w GÃ³rniczej Dolinie. Jestem pod wraÅ¼eniem.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //Nie Å›piesz siÄ™ i spokojnie obejrzyj mÃ³j towar. Dobrze siÄ™ skÅ‚ada, bo akurat mam coÅ› wyjÄ…tkowego na sprzedaÅ¼.
 	
 	CreateInvItems (self,ItPo_Perm_DEX,1);
 };
@@ -147,7 +147,7 @@ instance DIA_Salandril_Trade		(C_INFO)
 	condition	 = 	DIA_Salandril_Trade_Condition;
 	information	 = 	DIA_Salandril_Trade_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Poka¿ mi swoje towary.";
+	description	 =  "PokaÅ¼ mi swoje towary.";
 	trade		 =  TRUE;
 };
 
@@ -161,11 +161,11 @@ func int DIA_Salandril_Trade_Condition ()
 func void DIA_Salandril_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Salandril_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other, self, "DIA_Salandril_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //Z przyjemnoœci¹, czcigodny Bracie.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //Z przyjemnoÅ›ciÄ…, czcigodny Bracie.
 		if (MIS_Serpentes_MinenAnteil_KDF == LOG_RUNNING)
 		{
 			SC_KnowsProspektorSalandril = TRUE;
@@ -173,7 +173,7 @@ func void DIA_Salandril_Trade_Info ()
 	};
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_02"); //Z przyjemnoœci¹, szlachetny Panie.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_02"); //Z przyjemnoÅ›ciÄ…, szlachetny Panie.
 	};
 };
 
@@ -222,7 +222,7 @@ instance DIA_Salandril_KLOSTER		(C_INFO)
 	condition	 = 	DIA_Salandril_KLOSTER_Condition;
 	information	 = 	DIA_Salandril_KLOSTER_Info;
 
-	description	 = 	"Masz udaæ siê do klasztoru, w którym zostaniesz os¹dzony!";
+	description	 = 	"Masz udaÄ‡ siÄ™ do klasztoru, w ktÃ³rym zostaniesz osÄ…dzony!";
 };
 
 func int DIA_Salandril_KLOSTER_Condition ()
@@ -235,19 +235,19 @@ func int DIA_Salandril_KLOSTER_Condition ()
 
 func void DIA_Salandril_KLOSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //Masz udaæ siê do klasztoru, w którym zostaniesz os¹dzony!
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //Co? Nie ma mowy! Ci nêdzni magowie nie maj¹ nawet cienia dowodu przeciwko mnie!
+	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //Masz udaÄ‡ siÄ™ do klasztoru, w ktÃ³rym zostaniesz osÄ…dzony!
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //Co? Nie ma mowy! Ci nÄ™dzni magowie nie majÄ… nawet cienia dowodu przeciwko mnie!
 
 	if (hero.guild == GIL_KDF)
 	&& (SC_KnowsProspektorSalandril == TRUE)		
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //A co z tymi fa³szywymi udzia³ami w kopalni, które mo¿na wszêdzie kupiæ? Widnieje na nich twój podpis. Jesteœ winny!
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //A co z tymi faÅ‚szywymi udziaÅ‚ami w kopalni, ktÃ³re moÅ¼na wszÄ™dzie kupiÄ‡? Widnieje na nich twÃ³j podpis. JesteÅ› winny!
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Mam rozkazy do wykonania i albo ze mn¹ pójdziesz, albo ciê do tego zmuszê.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Mam rozkazy do wykonania i albo ze mnÄ… pÃ³jdziesz, albo ciÄ™ do tego zmuszÄ™.
 	};
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //CO? Przeci¹gnê ciê przez ca³e miasto i poka¿ê, jak nale¿y siê do mnie zwracaæ!
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //CO? PrzeciÄ…gnÄ™ ciÄ™ przez caÅ‚e miasto i pokaÅ¼Ä™, jak naleÅ¼y siÄ™ do mnie zwracaÄ‡!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };
@@ -262,7 +262,7 @@ instance DIA_Salandril_GehinsKloster		(C_INFO)
 	condition	 = 	DIA_Salandril_GehinsKloster_Condition;
 	information	 = 	DIA_Salandril_GehinsKloster_Info;
 
-	description	 = 	"No, to teraz pójdziesz do klasztoru, czy bêdziemy siê dalej bawiæ?";
+	description	 = 	"No, to teraz pÃ³jdziesz do klasztoru, czy bÄ™dziemy siÄ™ dalej bawiÄ‡?";
 };
 
 func int DIA_Salandril_GehinsKloster_Condition ()
@@ -277,8 +277,8 @@ func int DIA_Salandril_GehinsKloster_Condition ()
 
 func void DIA_Salandril_GehinsKloster_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //No, to teraz pójdziesz do klasztoru, czy bêdziemy siê dalej bawiæ?
-	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //Bêdziesz tego ¿a³owa³! Cholera! Pójdê do tego twojego klasztoru, ale nie myœl, ¿e ujdzie ci to na sucho.
+	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //No, to teraz pÃ³jdziesz do klasztoru, czy bÄ™dziemy siÄ™ dalej bawiÄ‡?
+	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //BÄ™dziesz tego Å¼aÅ‚owaÅ‚! Cholera! PÃ³jdÄ™ do tego twojego klasztoru, ale nie myÅ›l, Å¼e ujdzie ci to na sucho.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KlosterUrteil");
 	MIS_Serpentes_BringSalandril_SLD = LOG_SUCCESS;

@@ -31,7 +31,7 @@ instance DIA_Wulfgar_Hallo		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Hallo_Condition;
 	information	 = 	DIA_Wulfgar_Hallo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak tam na s³u¿bie?";
+	description	 = 	"Jak tam na sÅ‚uÅ¼bie?";
 };
 
 func int DIA_Wulfgar_Hallo_Condition ()
@@ -41,9 +41,9 @@ func int DIA_Wulfgar_Hallo_Condition ()
 
 func void DIA_Wulfgar_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Jak tam na s³u¿bie?
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //Ci ch³opcy machaj¹ mieczami jak cepem.
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //Ale kiedy z nimi skoñczê, wszyscy, jak jeden m¹¿, bêd¹ twardzi jak ska³a.
+	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Jak tam na sÅ‚uÅ¼bie?
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //Ci chÅ‚opcy machajÄ… mieczami jak cepem.
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //Ale kiedy z nimi skoÅ„czÄ™, wszyscy, jak jeden mÄ…Å¼, bÄ™dÄ… twardzi jak skaÅ‚a.
 };
 
 // *************************************************
@@ -56,7 +56,7 @@ instance DIA_Wulfgar_WannaJoin		(C_INFO)
 	condition	 = 	DIA_Wulfgar_WannaJoin_Condition;
 	information	 = 	DIA_Wulfgar_WannaJoin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Chcê wst¹piæ do stra¿y.";
+	description	 = 	"ChcÄ™ wstÄ…piÄ‡ do straÅ¼y.";
 };
 
 func int DIA_Wulfgar_WannaJoin_Condition ()
@@ -70,18 +70,18 @@ func int DIA_Wulfgar_WannaJoin_Condition ()
 
 func void DIA_Wulfgar_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //Chcê wst¹piæ do stra¿y.
-	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //Czy jesteœ obywatelem miasta?
+	AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_00"); //ChcÄ™ wstÄ…piÄ‡ do straÅ¼y.
+	AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_01"); //Czy jesteÅ› obywatelem miasta?
 	if (Player_IsApprentice == APP_NONE)
 	{
 		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_02"); //Nie.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //W takim razie Lord Andre ciê nie przyjmie.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Oczywiœcie, mo¿esz z nim porozmawiaæ - ale w¹tpiê, by zrobi³ dla ciebie wyj¹tek.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //W takim razie Lord Andre ciÄ™ nie przyjmie.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //OczywiÅ›cie, moÅ¼esz z nim porozmawiaÄ‡ - ale wÄ…tpiÄ™, by zrobiÅ‚ dla ciebie wyjÄ…tek.
 	}
 	else
 	{
 		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_05"); //Tak.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //Porozmawiaj wiêc z Lordem Andre. To on jest odpowiedzialny za rekrutacjê.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //Porozmawiaj wiÄ™c z Lordem Andre. To on jest odpowiedzialny za rekrutacjÄ™.
 	};
 };
 
@@ -95,7 +95,7 @@ instance DIA_Wulfgar_AboutMiliz		(C_INFO)
 	condition	 = 	DIA_Wulfgar_AboutMiliz_Condition;
 	information	 = 	DIA_Wulfgar_AboutMiliz_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jak siê maj¹ sprawy w stra¿y?";
+	description	 = 	"Jak siÄ™ majÄ… sprawy w straÅ¼y?";
 };
 
 func int DIA_Wulfgar_AboutMiliz_Condition ()
@@ -109,12 +109,12 @@ func int DIA_Wulfgar_AboutMiliz_Condition ()
 
 func void DIA_Wulfgar_AboutMiliz_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Jak siê maj¹ sprawy w stra¿y?
+	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Jak siÄ™ majÄ… sprawy w straÅ¼y?
 	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //Naszym kapitanem jest obecnie Lord Andre.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Swego czasu stra¿ odpowiada³a przed gubernatorem. Ten cz³owiek nie mia³ pojêcia, co siê tutaj naprawdê dzieje.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Lord Andre, dla odmiany, wie, co robi. Potrafi odpowiednio zadbaæ o swoich ludzi.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Wszyscy, którzy zaczynaj¹ tu pracê, dostaj¹ przyzwoit¹ zbrojê i porz¹dn¹ broñ.
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //A jeœli ktoœ dobrze pracuje, mo¿e zawsze liczyæ na premiê. Za ka¿dego z³apanego przestêpcê czeka wysoka nagroda.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //Swego czasu straÅ¼ odpowiadaÅ‚a przed gubernatorem. Ten czÅ‚owiek nie miaÅ‚ pojÄ™cia, co siÄ™ tutaj naprawdÄ™ dzieje.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Lord Andre, dla odmiany, wie, co robi. Potrafi odpowiednio zadbaÄ‡ o swoich ludzi.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Wszyscy, ktÃ³rzy zaczynajÄ… tu pracÄ™, dostajÄ… przyzwoitÄ… zbrojÄ™ i porzÄ…dnÄ… broÅ„.
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_05"); //A jeÅ›li ktoÅ› dobrze pracuje, moÅ¼e zawsze liczyÄ‡ na premiÄ™. Za kaÅ¼dego zÅ‚apanego przestÄ™pcÄ™ czeka wysoka nagroda.
 };
 
 // *************************************************
@@ -127,7 +127,7 @@ instance DIA_Wulfgar_CanYouTrain		(C_INFO)
 	condition	 = 	DIA_Wulfgar_CanYouTrain_Condition;
 	information	 = 	DIA_Wulfgar_CanYouTrain_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Czy mo¿esz mnie trenowaæ w walce mieczem?";
+	description	 = 	"Czy moÅ¼esz mnie trenowaÄ‡ w walce mieczem?";
 };
 
 func int DIA_Wulfgar_CanYouTrain_Condition ()
@@ -141,21 +141,21 @@ func int DIA_Wulfgar_CanYouTrain_Condition ()
 
 func void DIA_Wulfgar_CanYouTrain_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //Mo¿esz mnie trenowaæ w walce mieczem?
-	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre nakaza³, byœmy trenowali wszystkich, którzy s³u¿¹ sprawie miasta.
+	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //MoÅ¼esz mnie trenowaÄ‡ w walce mieczem?
+	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre nakazaÅ‚, byÅ›my trenowali wszystkich, ktÃ³rzy sÅ‚uÅ¼Ä… sprawie miasta.
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //Jest jednak pewien wyj¹tek - najemnicy. Wynocha.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_02"); //Jest jednak pewien wyjÄ…tek - najemnicy. Wynocha.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //Dotyczy to jednak tylko treningu bojowego. Wszystkie pozosta³e formy szkolenia s¹ zarezerwowane dla stra¿y.
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //Wiesz chocia¿, jak trzymaæ broñ, któr¹ walczysz?
-		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Tak mi siê wydaje...
-		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //W porz¹dku, zaczniemy, kiedy bêdziesz chcia³.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //Dotyczy to jednak tylko treningu bojowego. Wszystkie pozostaÅ‚e formy szkolenia sÄ… zarezerwowane dla straÅ¼y.
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //Wiesz chociaÅ¼, jak trzymaÄ‡ broÅ„, ktÃ³rÄ… walczysz?
+		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Tak mi siÄ™ wydaje...
+		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //W porzÄ…dku, zaczniemy, kiedy bÄ™dziesz chciaÅ‚.
 		Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-		B_LogEntry (Topic_CityTeacher, "Wulfgar, stra¿nik miejski, mo¿e mnie nauczyæ walki orê¿em jedno- i dwurêcznym.");
+		B_LogEntry (Topic_CityTeacher, "Wulfgar, straÅ¼nik miejski, moÅ¼e mnie nauczyÄ‡ walki orÄ™Å¼em jedno- i dwurÄ™cznym.");
 		Wulfgar_Teach1H = TRUE;	
 	};
 };
@@ -170,7 +170,7 @@ instance DIA_Wulfgar_Advantage		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Advantage_Condition;
 	information	 = 	DIA_Wulfgar_Advantage_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Opowiedz mi proszê o ró¿nicach miêdzy broni¹ jednorêczn¹ i dwurêczn¹.";
+	description	 = 	"Opowiedz mi proszÄ™ o rÃ³Å¼nicach miÄ™dzy broniÄ… jednorÄ™cznÄ… i dwurÄ™cznÄ….";
 };
 
 func int DIA_Wulfgar_Advantage_Condition ()
@@ -184,9 +184,9 @@ func int DIA_Wulfgar_Advantage_Condition ()
 
 func void DIA_Wulfgar_Advantage_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Opowiedz mi proszê o ró¿nicach miêdzy broni¹ jednorêczn¹ i dwurêczn¹.
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //To proste. U¿ywaj¹c broni jednorêcznej, jesteœ szybszy, to zaœ mo¿e stanowiæ o twej przewadze w walce.
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Broñ dwurêczna spowalnia twoje ruchy i dlatego nale¿y u¿ywaæ jej bardzo rozwa¿nie. Jednak przy trafieniu zadaje znacznie wiêksze obra¿enia.
+	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Opowiedz mi proszÄ™ o rÃ³Å¼nicach miÄ™dzy broniÄ… jednorÄ™cznÄ… i dwurÄ™cznÄ….
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //To proste. UÅ¼ywajÄ…c broni jednorÄ™cznej, jesteÅ› szybszy, to zaÅ› moÅ¼e stanowiÄ‡ o twej przewadze w walce.
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //BroÅ„ dwurÄ™czna spowalnia twoje ruchy i dlatego naleÅ¼y uÅ¼ywaÄ‡ jej bardzo rozwaÅ¼nie. Jednak przy trafieniu zadaje znacznie wiÄ™ksze obraÅ¼enia.
 };
 
 // *************************************************
@@ -199,7 +199,7 @@ instance DIA_Wulfgar_HowToBegin	(C_INFO)
 	condition	 = 	DIA_Wulfgar_HowToBegin_Condition;
 	information	 = 	DIA_Wulfgar_HowToBegin_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Od czego powinienem zacz¹æ? Od broni jedno- czy dwurêcznych?";
+	description	 = 	"Od czego powinienem zaczÄ…Ä‡? Od broni jedno- czy dwurÄ™cznych?";
 };
 
 func int DIA_Wulfgar_HowToBegin_Condition ()
@@ -213,13 +213,13 @@ func int DIA_Wulfgar_HowToBegin_Condition ()
 
 func void DIA_Wulfgar_HowToBegin_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //Od czego powinienem zacz¹æ? Od broni jedno- czy dwurêcznych?
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //To ju¿ zale¿y od ciebie.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //Jeœli specjalizujesz siê w jednym rodzaju broni, drugiego uczysz siê automatycznie w tym samym czasie.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Na przyk³ad, jeœli œwietnie walczysz mieczem jednorêcznym, zaœ jeœli chodzi o dwurêczny - dopiero zaczynasz naukê...
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...Wtedy twoja umiejêtnoœæ walki mieczem dwurêcznym bêdzie zwiêksza³a siê za ka¿dym razem, gdy u¿yjesz miecza jednorêcznego.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //W takim przypadku, trening jest bardziej wyczerpuj¹cy.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //Tylko zacznij, a wkrótce przekonasz siê, co mia³em na myœli.
+	AI_Output (other, self, "DIA_Wulfgar_HowToBegin_15_00"); //Od czego powinienem zaczÄ…Ä‡? Od broni jedno- czy dwurÄ™cznych?
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //To juÅ¼ zaleÅ¼y od ciebie.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //JeÅ›li specjalizujesz siÄ™ w jednym rodzaju broni, drugiego uczysz siÄ™ automatycznie w tym samym czasie.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Na przykÅ‚ad, jeÅ›li Å›wietnie walczysz mieczem jednorÄ™cznym, zaÅ› jeÅ›li chodzi o dwurÄ™czny - dopiero zaczynasz naukÄ™...
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...Wtedy twoja umiejÄ™tnoÅ›Ä‡ walki mieczem dwurÄ™cznym bÄ™dzie zwiÄ™kszaÅ‚a siÄ™ za kaÅ¼dym razem, gdy uÅ¼yjesz miecza jednorÄ™cznego.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //W takim przypadku, trening jest bardziej wyczerpujÄ…cy.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //Tylko zacznij, a wkrÃ³tce przekonasz siÄ™, co miaÅ‚em na myÅ›li.
 };
 
 // *************************************************
@@ -251,13 +251,13 @@ FUNC VOID DIA_Wulfgar_Teach_Info()
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //Nie trenujê najemników!
+		AI_Output (self, other, "DIA_Wulfgar_Add_04_00"); //Nie trenujÄ™ najemnikÃ³w!
 	}
 	else
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //Oczywiœcie, wielebny.
+			AI_Output (self, other, "DIA_Wulfgar_Add_04_01"); //OczywiÅ›cie, wielebny.
 		};
 		
 		Info_ClearChoices 	(DIA_Wulfgar_Teach);
@@ -348,11 +348,11 @@ FUNC INT DIA_Wulfgar_AlsMil_Condition()
  
 FUNC VOID DIA_Wulfgar_AlsMil_Info()
 {	
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //Mówisz wiêc, ¿e Lord Andre przyj¹³ ciê na s³u¿bê!
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Mam nadziejê, ¿e bêdziesz tu przychodzi³ i trenowa³ regularnie.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga bêdzie twoim nauczycielem kusznictwa, natomiast Mortis poka¿e ci, jak zwiêkszyæ si³ê.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Jednak najwa¿niejszym aspektem treningu jest porz¹dne nauczenie siê machania mieczem.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Jeszcze bêdzie z ciebie niez³y wojownik, masz moje s³owo!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //MÃ³wisz wiÄ™c, Å¼e Lord Andre przyjÄ…Å‚ ciÄ™ na sÅ‚uÅ¼bÄ™!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Mam nadziejÄ™, Å¼e bÄ™dziesz tu przychodziÅ‚ i trenowaÅ‚ regularnie.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga bÄ™dzie twoim nauczycielem kusznictwa, natomiast Mortis pokaÅ¼e ci, jak zwiÄ™kszyÄ‡ siÅ‚Ä™.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Jednak najwaÅ¼niejszym aspektem treningu jest porzÄ…dne nauczenie siÄ™ machania mieczem.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Jeszcze bÄ™dzie z ciebie niezÅ‚y wojownik, masz moje sÅ‚owo!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -378,9 +378,9 @@ func int DIA_Wulfgar_Bonus_Condition ()
 };
 func void DIA_Wulfgar_Bonus_Info ()
 {
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Tak wczeœnie na nogach. Z regu³y o tej porze nikt mnie nie odwiedza. No, ale skoro ju¿ tu jesteœ, to mo¿e warto ciê czegoœ nauczyæ.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //S³uchaj wiêc uwa¿nie. Mo¿esz wyprowadziæ swych przeciwników w pole, unikaj¹c ich ciosów i atakuj¹c w odpowiednim momencie.
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Pamiêtaj o tym podczas kolejnej walki.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Tak wczeÅ›nie na nogach. Z reguÅ‚y o tej porze nikt mnie nie odwiedza. No, ale skoro juÅ¼ tu jesteÅ›, to moÅ¼e warto ciÄ™ czegoÅ› nauczyÄ‡.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //SÅ‚uchaj wiÄ™c uwaÅ¼nie. MoÅ¼esz wyprowadziÄ‡ swych przeciwnikÃ³w w pole, unikajÄ…c ich ciosÃ³w i atakujÄ…c w odpowiednim momencie.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //PamiÄ™taj o tym podczas kolejnej walki.
 	
 	B_RaiseFightTalent (other, NPC_TALENT_1H, 2);
 };

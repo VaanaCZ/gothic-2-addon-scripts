@@ -77,11 +77,11 @@ FUNC INT DIA_Addon_10008_Bandit_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//NIE budŸ go!
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//NIE budÅº go!
 	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Co?!
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Dla swojego dobra trzymaj siê z daleka od Skinnera.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Ten koleœ jest nieprzewidywalny. Niedawno zabi³ goœcia, który go obudzi³.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Niech œpi. Tak bêdzie najlepiej dla nas wszystkich.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Dla swojego dobra trzymaj siÄ™ z daleka od Skinnera.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Ten koleÅ› jest nieprzewidywalny. Niedawno zabiÅ‚ goÅ›cia, ktÃ³ry go obudziÅ‚.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Niech Å›pi. Tak bÄ™dzie najlepiej dla nas wszystkich.
 };
 //--------------------------------------------------------------------
 //	Info soup
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_10008_Bandit_soup   (C_INFO)
 	condition   = DIA_Addon_10008_Bandit_soup_Condition;
 	information = DIA_Addon_10008_Bandit_soup_Info;
 	permanent   = FALSE;
-	description = "Jesteœ kopaczem?";
+	description = "JesteÅ› kopaczem?";
 };
 FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 {	
@@ -101,15 +101,15 @@ FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_soup_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//Jesteœ kopaczem?
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//To przez te spodnie? Nie, noszê je, bo s¹ wygodne.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Gotujê gulasz. Masz, spróbuj, nabierzesz si³.
+	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//JesteÅ› kopaczem?
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//To przez te spodnie? Nie, noszÄ™ je, bo sÄ… wygodne.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//GotujÄ™ gulasz. Masz, sprÃ³buj, nabierzesz siÅ‚.
 	B_GiveInvItems (self, other, ItFo_Addon_Meatsoup,1);
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Trzeba zawsze æwiczyæ, ¿eby nabraæ si³ - na zewn¹trz czyha wiele niebezpieczeñstw.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Jeœli chcesz, mogê ci pomóc nabraæ si³.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Trzeba zawsze Ä‡wiczyÄ‡, Å¼eby nabraÄ‡ siÅ‚ - na zewnÄ…trz czyha wiele niebezpieczeÅ„stw.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//JeÅ›li chcesz, mogÄ™ ci pomÃ³c nabraÄ‡ siÅ‚.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Bandyta przy kotle mo¿e pomóc mi odzyskaæ si³y.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Bandyta przy kotle moÅ¼e pomÃ³c mi odzyskaÄ‡ siÅ‚y.");	
 };
 //*******************************************
 //	TechPlayer
@@ -122,7 +122,7 @@ INSTANCE DIA_Addon_10008_Bandit_Teach(C_INFO)
 	condition	= DIA_Addon_10008_Bandit_Teach_Condition;
 	information	= DIA_Addon_10008_Bandit_Teach_Info;
 	permanent	= TRUE;
-	description = "Chcê byæ silniejszy.";
+	description = "ChcÄ™ byÄ‡ silniejszy.";
 };                       
 
 FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
@@ -134,7 +134,7 @@ FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Chcê byæ silniejszy.
+	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //ChcÄ™ byÄ‡ silniejszy.
 
 	Info_ClearChoices 	(DIA_Addon_10008_Bandit_Teach);
 	Info_AddChoice		(DIA_Addon_10008_Bandit_Teach, DIALOG_BACK, DIA_Addon_10008_Bandit_Teach_Back);

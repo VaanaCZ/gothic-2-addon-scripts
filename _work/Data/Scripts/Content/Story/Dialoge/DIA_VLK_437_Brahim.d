@@ -6,7 +6,7 @@ FUNC VOID B_BrahimNewMaps ()
 {
 	if (Brahim_ShowedMaps == TRUE)
 	{
-		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //PrzyjdŸ do mnie póŸniej. Na pewno bêdê mia³ dla ciebie coœ nowego.
+		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //PrzyjdÅº do mnie pÃ³Åºniej. Na pewno bÄ™dÄ™ miaÅ‚ dla ciebie coÅ› nowego.
 	};
 };
 INSTANCE DIA_Brahim_EXIT   (C_INFO)
@@ -87,9 +87,9 @@ func int DIA_Brahim_GREET_Condition ()
 func void DIA_Brahim_GREET_Info ()
 {
 	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //Co tutaj robisz?
-	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Nazywam siê Brahim. Zajmujê siê kreœleniem i sprzeda¿¹ map.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Skoro jesteœ tu od niedawna, to mo¿e potrzebujesz planu miasta.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Nie jest drogi - a na pewno bardzo ci siê przyda, zanim poznasz okolicê.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Nazywam siÄ™ Brahim. ZajmujÄ™ siÄ™ kreÅ›leniem i sprzedaÅ¼Ä… map.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Skoro jesteÅ› tu od niedawna, to moÅ¼e potrzebujesz planu miasta.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Nie jest drogi - a na pewno bardzo ci siÄ™ przyda, zanim poznasz okolicÄ™.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Brahim sprzedaje mapy w dzielnicy portowej.");
@@ -105,7 +105,7 @@ instance DIA_Addon_Brahim_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Brahim_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Brahim_MissingPeople_Info;
 
-	description	 = 	"To prawda, ¿e mieszkañcy miasta znikaj¹ bez œladu?";
+	description	 = 	"To prawda, Å¼e mieszkaÅ„cy miasta znikajÄ… bez Å›ladu?";
 };
 
 func int DIA_Addon_Brahim_MissingPeople_Condition ()
@@ -119,10 +119,10 @@ func int DIA_Addon_Brahim_MissingPeople_Condition ()
 
 func void DIA_Addon_Brahim_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //To prawda, ¿e mieszkañcy miasta znikaj¹ bez œladu?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Taa, obi³o mi siê o uszy. Nie wiem jednak, czy to prawda.
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Rozejrzyj siê po okolicy - chcia³byœ tu spêdziæ ca³e ¿ycie?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Nic dziwnego, ¿e ludzie siê wynosz¹.
+	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //To prawda, Å¼e mieszkaÅ„cy miasta znikajÄ… bez Å›ladu?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Taa, obiÅ‚o mi siÄ™ o uszy. Nie wiem jednak, czy to prawda.
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Rozejrzyj siÄ™ po okolicy - chciaÅ‚byÅ› tu spÄ™dziÄ‡ caÅ‚e Å¼ycie?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Nic dziwnego, Å¼e ludzie siÄ™ wynoszÄ….
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -162,7 +162,7 @@ instance DIA_Brahim_BUY		(C_INFO)
 	information	 = 	DIA_Brahim_BUY_Info;
 	permanent 	 =  TRUE;
 	trade 		 =  TRUE;
-	description	 = 	"Poka¿ mi swoje mapy.";
+	description	 = 	"PokaÅ¼ mi swoje mapy.";
 };
 
 func int DIA_Brahim_BUY_Condition ()
@@ -175,7 +175,7 @@ func int DIA_Brahim_BUY_Condition ()
 func void DIA_Brahim_BUY_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Brahim_BUY_15_00"); //Poka¿ mi swoje mapy.
+	AI_Output (other, self, "DIA_Brahim_BUY_15_00"); //PokaÅ¼ mi swoje mapy.
 	
 	if (hero.guild == GIL_KDF)
 	{
@@ -183,7 +183,7 @@ func void DIA_Brahim_BUY_Info ()
 	};
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Dobre mapy to podstawa, szczególnie dla ludzi, którzy przybyli z kontynentu, panie Paladynie.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Dobre mapy to podstawa, szczegÃ³lnie dla ludzi, ktÃ³rzy przybyli z kontynentu, panie Paladynie.
 	};
 	Brahim_ShowedMaps = TRUE;
 };
@@ -250,13 +250,13 @@ FUNC INT DIA_Brahim_Kap3_First_EXIT_Condition()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Info()
 {
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //Wiedzia³em, ¿e to ciê zainteresuje.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //WiedziaÅ‚em, Å¼e to ciÄ™ zainteresuje.
 	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //Co to jest?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_02"); //Có¿, ta stara mapa, któr¹ w³aœnie kupi³eœ?
-	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Znam takich jak ty. Nie przepuœcicie ¿adnej szansy na znalezienie bogactwa.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_02"); //CÃ³Å¼, ta stara mapa, ktÃ³rÄ… wÅ‚aÅ›nie kupiÅ‚eÅ›?
+	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Znam takich jak ty. Nie przepuÅ›cicie Å¼adnej szansy na znalezienie bogactwa.
 	Info_ClearChoices (DIA_Brahim_Kap3_First_EXIT);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,DIALOG_BACK,DIA_Brahim_Kap3_First_EXIT_BACK);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Sk¹d siê wzi¹³ ten dokument?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"SkÄ…d siÄ™ wziÄ…Å‚ ten dokument?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Co to za dokument?",DIA_Brahim_Kap3_First_EXIT_Content);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Dlaczego nie zatrzymasz jej dla siebie?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
 };
@@ -268,23 +268,23 @@ FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_WhereGetIt ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //Sk¹d masz tê mapê?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Znalaz³em j¹ w stercie staroci, które niedawno kupi³em.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Sprzedawca musia³ j¹ przeoczyæ.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //SkÄ…d masz tÄ™ mapÄ™?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //ZnalazÅ‚em jÄ… w stercie staroci, ktÃ³re niedawno kupiÅ‚em.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Sprzedawca musiaÅ‚ jÄ… przeoczyÄ‡.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Content ()
 {
 	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //Co to za mapa?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //Wygl¹da na to, ¿e pokazuje, jak dotrzeæ do skarbu.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //A ty wygl¹dasz mi na osobê, która doœæ powa¿nie traktuje takie rzeczy.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //WyglÄ…da na to, Å¼e pokazuje, jak dotrzeÄ‡ do skarbu.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //A ty wyglÄ…dasz mi na osobÄ™, ktÃ³ra doÅ›Ä‡ powaÅ¼nie traktuje takie rzeczy.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_KeepIt()
 {
 	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Dlaczego nie zatrzymasz jej dla siebie?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Jestem ju¿ stary i czasy, kiedy wypuszcza³em siê na dalekie wêdrówki, dawno mam ju¿ za sob¹.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //Zostawiam to m³odszym.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Jestem juÅ¼ stary i czasy, kiedy wypuszczaÅ‚em siÄ™ na dalekie wÄ™drÃ³wki, dawno mam juÅ¼ za sobÄ….
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //Zostawiam to mÅ‚odszym.
 };
 
 

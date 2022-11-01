@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Wache_02_Hi   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Hi_Condition;
 	information = DIA_Addon_Wache_02_Hi_Info;
 	permanent   = FALSE;
-	description = "Wszystko w porz¹dku?";
+	description = "Wszystko w porzÄ…dku?";
 };
 FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 {	
@@ -71,8 +71,8 @@ FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Wszystko w porz¹dku?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Czekaj chwilê - czy ja ciê sk¹dœ nie znam?
+	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Wszystko w porzÄ…dku?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Czekaj chwilÄ™ - czy ja ciÄ™ skÄ…dÅ› nie znam?
 	B_UseFakeScroll ();
 	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Hmm... Nie. To nie ty. Spadaj.
 };
@@ -86,7 +86,7 @@ INSTANCE DIA_Addon_Wache_02_Attentat   (C_INFO)
 	condition   = DIA_Addon_Wache_02_Attentat_Condition;
 	information = DIA_Addon_Wache_02_Attentat_Info;
 	permanent   = FALSE;
-	description = "Co wiesz o próbie zabójstwa?";
+	description = "Co wiesz o prÃ³bie zabÃ³jstwa?";
 };
 FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 {	
@@ -98,9 +98,9 @@ FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Co wiesz o próbie zabójstwa?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Co o tym wiem? To ja po³ama³em kolesiowi nogi.
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//I to samo zrobiê ka¿demu, kto bêdzie próbowa³ bruŸdziæ Estebanowi...
+	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Co wiesz o prÃ³bie zabÃ³jstwa?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Co o tym wiem? To ja poÅ‚amaÅ‚em kolesiowi nogi.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//I to samo zrobiÄ™ kaÅ¼demu, kto bÄ™dzie prÃ³bowaÅ‚ bruÅºdziÄ‡ Estebanowi...
 };
 //--------------------------------------------------------------------
 //	Info perm
@@ -112,7 +112,7 @@ INSTANCE DIA_Addon_Wache_02_perm   (C_INFO)
 	condition   = DIA_Addon_Wache_02_perm_Condition;
 	information = DIA_Addon_Wache_02_perm_Info;
 	permanent   = TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_Wache_02_perm_Condition()
 {	
@@ -123,12 +123,12 @@ FUNC INT DIA_Addon_Wache_02_perm_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_perm_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Co s³ychaæ?
-	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//Spokój.
+	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Co sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//SpokÃ³j.
 	
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//ZnajdŸ zdrajcê - my siê nim zajmiemy...
+		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//ZnajdÅº zdrajcÄ™ - my siÄ™ nim zajmiemy...
 	};
 };
 

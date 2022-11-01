@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_12_JOIN(C_INFO)
 	condition	= DIA_PAL_12_JOIN_Condition;
 	information	= DIA_PAL_12_JOIN_Info;
 	permanent	= TRUE;
-	description = "Chcia³bym zostaæ paladynem!";
+	description = "ChciaÅ‚bym zostaÄ‡ paladynem!";
 };                       
 
 FUNC INT DIA_PAL_12_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_PAL_12_JOIN_Condition()
 
 FUNC VOID DIA_PAL_12_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_JOIN_15_00"); //Chcia³bym zostaæ paladynem!
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_01"); //Ty? Nie rozœmieszaj mnie! Nie nale¿ysz nawet do stra¿y miejskiej.
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_02"); //Gdybym nie widzia³, jaki z ciebie prostak, pewnie pomyœla³bym, ¿e chcesz mnie obraziæ.
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_03"); //Tylko najlepsi z najlepszych poddanych Króla i s³ug Innosa mog¹ zostaæ paladynami.
+	AI_Output (other, self, "DIA_PAL_12_JOIN_15_00"); //ChciaÅ‚bym zostaÄ‡ paladynem!
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_01"); //Ty? Nie rozÅ›mieszaj mnie! Nie naleÅ¼ysz nawet do straÅ¼y miejskiej.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_02"); //Gdybym nie widziaÅ‚, jaki z ciebie prostak, pewnie pomyÅ›laÅ‚bym, Å¼e chcesz mnie obraziÄ‡.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_03"); //Tylko najlepsi z najlepszych poddanych KrÃ³la i sÅ‚ug Innosa mogÄ… zostaÄ‡ paladynami.
 };
 
 // *************************************************************************
@@ -71,8 +71,8 @@ FUNC INT DIA_PAL_12_PEOPLE_Condition()
 FUNC VOID DIA_PAL_12_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_12_PEOPLE_15_00"); //Kto tu dowodzi?
-	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //Wielmo¿ny Lord Hagen. Jednak sprawami plebsu zajmuje siê Lord Andre.
-	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Znajdziesz go w koszarach. Mo¿e bêdziesz mia³ szczêœcie i Lord Andre poœwiêci ci kilka minut swego cennego czasu.
+	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //WielmoÅ¼ny Lord Hagen. Jednak sprawami plebsu zajmuje siÄ™ Lord Andre.
+	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Znajdziesz go w koszarach. MoÅ¼e bÄ™dziesz miaÅ‚ szczÄ™Å›cie i Lord Andre poÅ›wiÄ™ci ci kilka minut swego cennego czasu.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_12_LOCATION(C_INFO)
 	condition	= DIA_PAL_12_LOCATION_Condition;
 	information	= DIA_PAL_12_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co paladyni robi¹ tutaj, w Khorinis?";
+	description = "Co paladyni robiÄ… tutaj, w Khorinis?";
 };                       
 
 FUNC INT DIA_PAL_12_LOCATION_Condition()
@@ -97,10 +97,10 @@ FUNC INT DIA_PAL_12_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_12_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_LOCATION_15_00"); //Co robi¹ w Khorinis paladyni?
-	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_01"); //Ludzie zadaj¹cy takie pytania trafiaj¹ na szubienicê szybciej, ni¿ to zauwa¿¹.
-	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Jeœli jest coœ, na co Lord Andre nie mo¿e sobie pozwoliæ, to przejêcie planów naszej misji przez szpiegów.
-	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_03"); //Uwa¿aj wiêc lepiej na to, o co pytasz.
+	AI_Output (other, self, "DIA_PAL_12_LOCATION_15_00"); //Co robiÄ… w Khorinis paladyni?
+	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_01"); //Ludzie zadajÄ…cy takie pytania trafiajÄ… na szubienicÄ™ szybciej, niÅ¼ to zauwaÅ¼Ä….
+	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //JeÅ›li jest coÅ›, na co Lord Andre nie moÅ¼e sobie pozwoliÄ‡, to przejÄ™cie planÃ³w naszej misji przez szpiegÃ³w.
+	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_03"); //UwaÅ¼aj wiÄ™c lepiej na to, o co pytasz.
 };
 
 // *************************************************************************
@@ -122,7 +122,7 @@ func INT DIA_PAL_12_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_12_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_12_STANDARD_15_00"); //Jak siê maj¹ sprawy?
+	AI_Output (other, self, "DIA_PAL_12_STANDARD_15_00"); //Jak siÄ™ majÄ… sprawy?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -131,22 +131,22 @@ FUNC VOID DIA_PAL_12_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_01"); //Teraz, kiedy wiemy, ¿e musimy zmierzyæ siê ze smokami, jestem pewien, ¿e nasz dowódca wkrótce podejmie s³uszn¹ decyzjê.
+				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_01"); //Teraz, kiedy wiemy, Å¼e musimy zmierzyÄ‡ siÄ™ ze smokami, jestem pewien, Å¼e nasz dowÃ³dca wkrÃ³tce podejmie sÅ‚usznÄ… decyzjÄ™.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_02"); //Wci¹¿ nie mamy ¿adnych informacji od oddzia³ów stacjonuj¹cych w Górniczej Dolinie. To bardzo niepokoj¹ce.
+				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_02"); //WciÄ…Å¼ nie mamy Å¼adnych informacji od oddziaÅ‚Ã³w stacjonujÄ…cych w GÃ³rniczej Dolinie. To bardzo niepokojÄ…ce.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Innosowi niech bêd¹ dziêki! Zagro¿enie ze strony smoków zosta³o za¿egnane. Teraz od rudy dziel¹ nas ju¿ tylko orkowie.
+			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Innosowi niech bÄ™dÄ… dziÄ™ki! ZagroÅ¼enie ze strony smokÃ³w zostaÅ‚o zaÅ¼egnane. Teraz od rudy dzielÄ… nas juÅ¼ tylko orkowie.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_12_STANDARD_12_04"); //Chyba nie myœlisz, ¿e odpowiem na to pytanie!
+		AI_Output (self, other, "DIA_PAL_12_STANDARD_12_04"); //Chyba nie myÅ›lisz, Å¼e odpowiem na to pytanie!
 	};
 };
 

@@ -42,11 +42,11 @@ func int DIA_Kurgan_HELLO_Condition ()
 
 func void DIA_Kurgan_HELLO_Info ()
 {
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_00"); //Hej! Tacy jak ty powinni uwa¿aæ, gdzie ³a¿¹.
-	AI_Output			(other,self , "DIA_Kurgan_HELLO_15_01"); //Co chcesz przez to powiedzieæ?
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_02"); //A to, ¿e tutejszy klimat niespecjalnie sprzyja zdrowiu. Tu siê a¿ roi od orków i przeró¿nych potworów.
-	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_03"); //Nie wspominaj¹c ju¿ o smokach. Potraktuj to jako przyjacielsk¹ radê i lepiej st¹d zniknij.
-	B_LogEntry (TOPIC_Dragonhunter,"Na skraju Górniczej Doliny spotka³em grupê ³owców smoków. S¹ dobrze uzbrojeni, ale nie s¹dzê, aby zrobi³o to jakieœ wra¿enie na smokach.");
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_00"); //Hej! Tacy jak ty powinni uwaÅ¼aÄ‡, gdzie Å‚aÅ¼Ä….
+	AI_Output			(other,self , "DIA_Kurgan_HELLO_15_01"); //Co chcesz przez to powiedzieÄ‡?
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_02"); //A to, Å¼e tutejszy klimat niespecjalnie sprzyja zdrowiu. Tu siÄ™ aÅ¼ roi od orkÃ³w i przerÃ³Å¼nych potworÃ³w.
+	AI_Output			(self ,other, "DIA_Kurgan_HELLO_01_03"); //Nie wspominajÄ…c juÅ¼ o smokach. Potraktuj to jako przyjacielskÄ… radÄ™ i lepiej stÄ…d zniknij.
+	B_LogEntry (TOPIC_Dragonhunter,"Na skraju GÃ³rniczej Doliny spotkaÅ‚em grupÄ™ Å‚owcÃ³w smokÃ³w. SÄ… dobrze uzbrojeni, ale nie sÄ…dzÄ™, aby zrobiÅ‚o to jakieÅ› wraÅ¼enie na smokach.");
 };
 
 //**************************************************************************
@@ -58,7 +58,7 @@ instance DIA_Kurgan_ELSE		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_ELSE_Condition;
 	information	= 	DIA_Kurgan_ELSE_Info;
-	description	= 	"Czy mo¿esz mi powiedzieæ coœ, czego jeszcze bym nie wiedzia³?";
+	description	= 	"Czy moÅ¼esz mi powiedzieÄ‡ coÅ›, czego jeszcze bym nie wiedziaÅ‚?";
 
 };
 
@@ -69,15 +69,15 @@ func int DIA_Kurgan_ELSE_Condition ()
 
 func void DIA_Kurgan_ELSE_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_ELSE_15_00"); //Czy mo¿esz mi powiedzieæ coœ, czego jeszcze bym nie wiedzia³?
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_01"); //Mogê ci daæ dobr¹ radê, i to w dodatku za darmo.
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_02"); //Niepotrzebny nam tutaj miêczak mdlej¹cy po us³yszeniu najcichszego smoczego b¹ka.
-	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_03"); //IdŸ do domu, to jest robota dla prawdziwych mê¿czyzn.
+	AI_Output			(other,self , "DIA_Kurgan_ELSE_15_00"); //Czy moÅ¼esz mi powiedzieÄ‡ coÅ›, czego jeszcze bym nie wiedziaÅ‚?
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_01"); //MogÄ™ ci daÄ‡ dobrÄ… radÄ™, i to w dodatku za darmo.
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_02"); //Niepotrzebny nam tutaj miÄ™czak mdlejÄ…cy po usÅ‚yszeniu najcichszego smoczego bÄ…ka.
+	AI_Output			(self ,other, "DIA_Kurgan_ELSE_01_03"); //IdÅº do domu, to jest robota dla prawdziwych mÄ™Å¼czyzn.
 	
 };
 
 //**************************************************************************
-//	Bist du hier der Anführer?
+//	Bist du hier der AnfÃ¼hrer?
 //**************************************************************************
 
 instance DIA_Kurgan_Leader		(C_INFO)
@@ -85,7 +85,7 @@ instance DIA_Kurgan_Leader		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_Leader_Condition;
 	information	= 	DIA_Kurgan_Leader_Info;
-	description	= 	"Czy to ty jesteœ tutaj szefem?";
+	description	= 	"Czy to ty jesteÅ› tutaj szefem?";
 
 };
 
@@ -96,15 +96,15 @@ func int DIA_Kurgan_Leader_Condition ()
 
 func void DIA_Kurgan_Leader_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_Leader_15_00"); //Czy to ty jesteœ tutaj szefem?
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_01"); //A czy wygl¹dam na szefa? Na pewno nie. Nie potrzebujemy ¿adnych zarozumia³ych wypierdków, którzy mówiliby nam, co mamy robiæ.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_02"); //Kiedy Sylvio próbowa³ odgrywaæ rolê szefa, bardzo szybko pokazaliœmy jemu i jego kole¿kom, co na ten temat s¹dzimy.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_03"); //W koñcu opuœcili nasze towarzystwo.
-	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_04"); //Mam nadziejê, ¿e Sylvio skoñczy³ w zupie jakiegoœ orka.
+	AI_Output			(other,self , "DIA_Kurgan_Leader_15_00"); //Czy to ty jesteÅ› tutaj szefem?
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_01"); //A czy wyglÄ…dam na szefa? Na pewno nie. Nie potrzebujemy Å¼adnych zarozumiaÅ‚ych wypierdkÃ³w, ktÃ³rzy mÃ³wiliby nam, co mamy robiÄ‡.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_02"); //Kiedy Sylvio prÃ³bowaÅ‚ odgrywaÄ‡ rolÄ™ szefa, bardzo szybko pokazaliÅ›my jemu i jego koleÅ¼kom, co na ten temat sÄ…dzimy.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_03"); //W koÅ„cu opuÅ›cili nasze towarzystwo.
+	AI_Output			(self ,other, "DIA_Kurgan_Leader_01_04"); //Mam nadziejÄ™, Å¼e Sylvio skoÅ„czyÅ‚ w zupie jakiegoÅ› orka.
 };
 
 //**************************************************************************
-//	Wolltet ihr nicht ein paar Drachen töten?
+//	Wolltet ihr nicht ein paar Drachen tÃ¶ten?
 //**************************************************************************
 
 instance DIA_Kurgan_KillDragon		(C_INFO)
@@ -112,7 +112,7 @@ instance DIA_Kurgan_KillDragon		(C_INFO)
 	npc		 	= 	DJG_708_Kurgan;
 	condition	= 	DIA_Kurgan_KillDragon_Condition;
 	information	= 	DIA_Kurgan_KillDragon_Info;
-	description	= 	"A wiêc chcesz zabijaæ smoki?";
+	description	= 	"A wiÄ™c chcesz zabijaÄ‡ smoki?";
 
 };
 
@@ -126,27 +126,27 @@ func int DIA_Kurgan_KillDragon_Condition ()
 var int Kurgan_KillDragon_Day;
 func void DIA_Kurgan_KillDragon_Info ()
 {
-	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_00"); //A wiêc chcesz zabijaæ smoki?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_01"); //M¹drala. S¹dzisz, ¿e to takie ³atwe?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_02"); //Pewnie myœlisz, ¿e taka bestia usi¹dzie sobie cichutko i zaczeka, a¿ obetniesz jej g³owê?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_03"); //Zabijanie smoków wymaga ogromnego doœwiadczenia i zdolnoœci planowania.
-	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_04"); //Rozumiem. A jak dok³adnie przebiega takie polowanie?
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_05"); //Najpierw musimy znaleŸæ smoki.
-	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_06"); //Dopiero gdy wiemy, gdzie siê znajduj¹, mo¿emy zastanowiæ siê nad najlepszymi metodami ataku.
+	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_00"); //A wiÄ™c chcesz zabijaÄ‡ smoki?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_01"); //MÄ…drala. SÄ…dzisz, Å¼e to takie Å‚atwe?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_02"); //Pewnie myÅ›lisz, Å¼e taka bestia usiÄ…dzie sobie cichutko i zaczeka, aÅ¼ obetniesz jej gÅ‚owÄ™?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_03"); //Zabijanie smokÃ³w wymaga ogromnego doÅ›wiadczenia i zdolnoÅ›ci planowania.
+	AI_Output			(other,self , "DIA_Kurgan_KillDragon_15_04"); //Rozumiem. A jak dokÅ‚adnie przebiega takie polowanie?
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_05"); //Najpierw musimy znaleÅºÄ‡ smoki.
+	AI_Output			(self ,other, "DIA_Kurgan_KillDragon_01_06"); //Dopiero gdy wiemy, gdzie siÄ™ znajdujÄ…, moÅ¼emy zastanowiÄ‡ siÄ™ nad najlepszymi metodami ataku.
 
 	
 	Kurgan_KillDragon_Day = Wld_GetDay(); 
 
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "Z wielk¹ chêci¹ bym popatrzy³, ale muszê ruszaæ w dalsz¹ drogê.", DIA_Kurgan_KillDragon_weg );
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "Jak zamierzasz przejœæ obok orków?"					, DIA_Kurgan_KillDragon_orks );
-	Info_AddChoice	(DIA_Kurgan_KillDragon, "Ty pewnie nie potrafisz znaleŸæ nawet œlepej owcy.", DIA_Kurgan_KillDragon_spott );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "Z wielkÄ… chÄ™ciÄ… bym popatrzyÅ‚, ale muszÄ™ ruszaÄ‡ w dalszÄ… drogÄ™.", DIA_Kurgan_KillDragon_weg );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "Jak zamierzasz przejÅ›Ä‡ obok orkÃ³w?"					, DIA_Kurgan_KillDragon_orks );
+	Info_AddChoice	(DIA_Kurgan_KillDragon, "Ty pewnie nie potrafisz znaleÅºÄ‡ nawet Å›lepej owcy.", DIA_Kurgan_KillDragon_spott );
 
 
 };
 func void DIA_Kurgan_KillDragon_spott ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //Ty pewnie nie potrafisz znaleŸæ nawet œlepej owcy.
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //Co? Czy chcesz, ¿ebym ci przy³o¿y³ w tê twoj¹ kretyñsk¹ buŸkê?
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_spott_15_00"); //Ty pewnie nie potrafisz znaleÅºÄ‡ nawet Å›lepej owcy.
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_spott_01_01"); //Co? Czy chcesz, Å¼ebym ci przyÅ‚oÅ¼yÅ‚ w tÄ™ twojÄ… kretyÅ„skÄ… buÅºkÄ™?
 	AI_StopProcessInfos (self);
 
 	B_Attack (self, other, AR_NONE, 1);	
@@ -154,15 +154,15 @@ func void DIA_Kurgan_KillDragon_spott ()
 
 func void DIA_Kurgan_KillDragon_orks ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //Jak zamierzasz przejœæ obok orków?
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //Takimi szczegó³ami bêdziemy siê zajmowaæ póŸniej.
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_orks_15_00"); //Jak zamierzasz przejÅ›Ä‡ obok orkÃ³w?
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_orks_01_01"); //Takimi szczegÃ³Å‚ami bÄ™dziemy siÄ™ zajmowaÄ‡ pÃ³Åºniej.
 
 };
 
 func void DIA_Kurgan_KillDragon_weg ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //Z wielk¹ chêci¹ bym popatrzy³, ale muszê ruszaæ w dalsz¹ drogê.
-	AI_Output			(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Lepiej zawróæ, jeœli nie chcesz straciæ rêki lub nogi.
+	AI_Output			(other, self, "DIA_Kurgan_KillDragon_weg_15_00"); //Z wielkÄ… chÄ™ciÄ… bym popatrzyÅ‚, ale muszÄ™ ruszaÄ‡ w dalszÄ… drogÄ™.
+	AI_Output			(self, other, "DIA_Kurgan_KillDragon_weg_01_01"); //Lepiej zawrÃ³Ä‡, jeÅ›li nie chcesz straciÄ‡ rÄ™ki lub nogi.
 
 	AI_StopProcessInfos (self);
 };
@@ -177,7 +177,7 @@ instance DIA_Kurgan_SEENDRAGON		(C_INFO)
 	information	 = 	DIA_Kurgan_SEENDRAGON_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Widzia³eœ ju¿ kiedyœ smoka?";
+	description	 = 	"WidziaÅ‚eÅ› juÅ¼ kiedyÅ› smoka?";
 };
 
 func int DIA_Kurgan_SEENDRAGON_Condition ()
@@ -190,8 +190,8 @@ func int DIA_Kurgan_SEENDRAGON_Condition ()
 
 func void DIA_Kurgan_SEENDRAGON_Info ()
 {
-	AI_Output			(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //Widzia³eœ ju¿ kiedyœ smoka?
-	AI_Output			(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //Nie, ale te bestie nie mog¹ siê wiecznie ukrywaæ.
+	AI_Output			(other, self, "DIA_Kurgan_SEENDRAGON_15_00"); //WidziaÅ‚eÅ› juÅ¼ kiedyÅ› smoka?
+	AI_Output			(self, other, "DIA_Kurgan_SEENDRAGON_01_01"); //Nie, ale te bestie nie mogÄ… siÄ™ wiecznie ukrywaÄ‡.
 };
 
 //*********************************************************************
@@ -204,7 +204,7 @@ INSTANCE DIA_Kurgan_AllDragonsDead   (C_INFO)
 	condition   = DIA_Kurgan_AllDragonsDead_Condition;
 	information = DIA_Kurgan_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Wszystkie smoki nie ¿yj¹.";
+	description	= "Wszystkie smoki nie Å¼yjÄ….";
 				
 };
 
@@ -218,10 +218,10 @@ FUNC INT DIA_Kurgan_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Kurgan_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Kurgan_AllDragonsDead_15_00"); //Smoki nie ¿yj¹.
-	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_01"); //Ha, kto je niby zabi³? Paladyni?
+	AI_Output	(other,self ,"DIA_Kurgan_AllDragonsDead_15_00"); //Smoki nie Å¼yjÄ….
+	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_01"); //Ha, kto je niby zabiÅ‚? Paladyni?
 	AI_Output 	(other,self ,"DIA_Kurgan_AllDragonsDead_15_02"); //Ja.
-	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_03"); //Ha-ha. Jasne, oczywiœcie. Daj spokój, kogo próbujesz nabieraæ?
+	AI_Output 	(self ,other,"DIA_Kurgan_AllDragonsDead_01_03"); //Ha-ha. Jasne, oczywiÅ›cie. Daj spokÃ³j, kogo prÃ³bujesz nabieraÄ‡?
 };
 
 

@@ -18,7 +18,7 @@ const int	Value_Water		=	10;		const int	HP_Water		=	8;
 const int	Value_Beer		=	20;		const int	HP_Beer			=	3;	const int	Mana_Beer		=	1;
 const int	Value_Booze		=	15;		const int	HP_Booze		=	4;	const int	Mana_Booze		=	1;
 const int	Value_Wine		=	20;		const int	HP_Wine			=	2;	const int	Mana_Wine		=	1;
-const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge‰ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
+const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge√§ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
 
 
 
@@ -30,7 +30,7 @@ const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	
 
 INSTANCE ItFo_Apple (C_Item)
 {	
-	name 				=	"Jab≥ko";
+	name 				=	"Jab≈Çko";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -46,8 +46,8 @@ INSTANCE ItFo_Apple (C_Item)
 	TEXT[1]				= 	NAME_Bonus_HP;		
 	COUNT[1]			= 	HP_Apple;
 	
-	TEXT[3]				=    "åwieøe jab≥ko,";
-	TEXT[4]				=    "soczyste i poøywne.";
+	TEXT[3]				=    "≈öwie≈ºe jab≈Çko,";
+	TEXT[4]				=    "soczyste i po≈ºywne.";
 	TEXT[5]				= 	NAME_Value;		
 	COUNT[5]			= 	Value_Apple;
 
@@ -190,7 +190,7 @@ INSTANCE ItFo_Fish (C_Item)
 
 INSTANCE ItFoMuttonRaw (C_Item)
 {	
-	name 				=	"Surowe miÍso";
+	name 				=	"Surowe miƒôso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -222,7 +222,7 @@ INSTANCE ItFoMuttonRaw (C_Item)
 
 INSTANCE ItFoMutton (C_Item)	//kommt aus Bratpfannen-Mobsi !!!
 {	
-	name 				=	"Smaøone miÍso";
+	name 				=	"Sma≈ºone miƒôso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -372,7 +372,7 @@ INSTANCE ItFo_FishSoup (C_Item)
 
 INSTANCE ItFo_Sausage (C_Item)
 {	
-	name 				=	"Kie≥basa";
+	name 				=	"Kie≈Çbasa";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -398,7 +398,7 @@ INSTANCE ItFo_Sausage (C_Item)
 
 INSTANCE ItFo_Honey (C_Item)
 {	
-	name 				=	"MiÛd";
+	name 				=	"Mi√≥d";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

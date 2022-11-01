@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchständer in der Magierbibliothek
+//				Weitere BuchstÃ¤nder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, "Strona 1"					);
-					Doc_PrintLine	( nDocID,  0, "Kamienie runiczne i ich sk³adniki"	);
+					Doc_PrintLine	( nDocID,  0, "Kamienie runiczne i ich skÅ‚adniki"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -165,42 +165,42 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "PIERWSZY KR¥G"					);
+					Doc_PrintLine	( nDocID,  0, "PIERWSZY KRÄ„G"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Runy pierwszego krêgu i potrzebne do ich stworzenia sk³adniki:");
+					Doc_PrintLines	( nDocID,  0, "Runy pierwszego krÄ™gu i potrzebne do ich stworzenia skÅ‚adniki:");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Œwiat³o");
-					Doc_PrintLine	( nDocID,  0, "Z³ota moneta");
+					Doc_PrintLine	( nDocID,  0, "ÅšwiatÅ‚o");
+					Doc_PrintLine	( nDocID,  0, "ZÅ‚ota moneta");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Ognista strza³a");
+					Doc_PrintLine	( nDocID,  0, "Ognista strzaÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "Siarka");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Ma³a b³yskawica");
-					Doc_PrintLine	( nDocID,  0, "Ska³a krystaliczna");
+					Doc_PrintLine	( nDocID,  0, "MaÅ‚a bÅ‚yskawica");
+					Doc_PrintLine	( nDocID,  0, "SkaÅ‚a krystaliczna");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Szkielet-goblin");
-					Doc_PrintLine	( nDocID,  0, "Koœæ goblina");
+					Doc_PrintLine	( nDocID,  0, "KoÅ›Ä‡ goblina");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Leczenie lekkich ran");
-					Doc_PrintLine	( nDocID,  0, "Roœlina lecznicza");
+					Doc_PrintLine	( nDocID,  0, "RoÅ›lina lecznicza");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego sk³adnika."					);
+					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego skÅ‚adnika."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Trzeba te¿ znaæ w³aœciwe zaklêcie, dysponowaæ zwojem, na którym je spisano oraz pustym kamieniem runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Trzeba teÅ¼ znaÄ‡ wÅ‚aÅ›ciwe zaklÄ™cie, dysponowaÄ‡ zwojem, na ktÃ³rym je spisano oraz pustym kamieniem runicznym."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dopiero po spe³nieniu tych wszystkich warunków mo¿na rozpocz¹æ pracê przy stole runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Dopiero po speÅ‚nieniu tych wszystkich warunkÃ³w moÅ¼na rozpoczÄ…Ä‡ pracÄ™ przy stole runicznym."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -223,29 +223,29 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "DRUGI KR¥G"					);
+					Doc_PrintLine	( nDocID,  0, "DRUGI KRÄ„G"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Runy drugiego krêgu i potrzebne do ich stworzenia sk³adniki:");
+					Doc_PrintLines	( nDocID,  0, "Runy drugiego krÄ™gu i potrzebne do ich stworzenia skÅ‚adniki:");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					Doc_PrintLine	( nDocID,  0, "Kula ognia");
-					Doc_PrintLine	( nDocID,  0, "Smo³a");
+					Doc_PrintLine	( nDocID,  0, "SmoÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Lodowa strza³a");
+					Doc_PrintLine	( nDocID,  0, "Lodowa strzaÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "Kwarcyt");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					Doc_PrintLine	( nDocID,  0, "Przyzwanie wilka");
-					Doc_PrintLine	( nDocID,  0, "Skóra wilka");
+					Doc_PrintLine	( nDocID,  0, "SkÃ³ra wilka");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Piêœæ wichru");
-					Doc_PrintLine	( nDocID,  0, "Wêgiel");
+					Doc_PrintLine	( nDocID,  0, "PiÄ™Å›Ä‡ wichru");
+					Doc_PrintLine	( nDocID,  0, "WÄ™giel");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Sen");
@@ -256,11 +256,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego sk³adnika."					);
+					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego skÅ‚adnika."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Trzeba te¿ znaæ w³aœciwe zaklêcie, dysponowaæ zwojem, na którym je spisano oraz pustym kamieniem runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Trzeba teÅ¼ znaÄ‡ wÅ‚aÅ›ciwe zaklÄ™cie, dysponowaÄ‡ zwojem, na ktÃ³rym je spisano oraz pustym kamieniem runicznym."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dopiero po spe³nieniu tych wszystkich warunków mo¿na rozpocz¹æ pracê przy stole runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Dopiero po speÅ‚nieniu tych wszystkich warunkÃ³w moÅ¼na rozpoczÄ…Ä‡ pracÄ™ przy stole runicznym."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -284,52 +284,52 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "TRZECI KR¥G"					);
+					Doc_PrintLine	( nDocID,  0, "TRZECI KRÄ„G"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Runy trzeciego krêgu i potrzebne do ich stworzenia sk³adniki:");
+					Doc_PrintLines	( nDocID,  0, "Runy trzeciego krÄ™gu i potrzebne do ich stworzenia skÅ‚adniki:");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Leczenie œrednich ran");
+					Doc_PrintLine	( nDocID,  0, "Leczenie Å›rednich ran");
 					Doc_PrintLine	( nDocID,  0, "Ziele lecznicze");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Ma³a burza ognista");
-					Doc_PrintLine	( nDocID,  0, "Smo³a, Siarka");
+					Doc_PrintLine	( nDocID,  0, "MaÅ‚a burza ognista");
+					Doc_PrintLine	( nDocID,  0, "SmoÅ‚a, Siarka");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Tworzenie szkieletu");
-					Doc_PrintLine	( nDocID,  0, "Koœæ szkieletu");
+					Doc_PrintLine	( nDocID,  0, "KoÅ›Ä‡ szkieletu");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Strach");
-					Doc_PrintLine	( nDocID,  0, "Czarna per³a");
+					Doc_PrintLine	( nDocID,  0, "Czarna perÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Bry³a lodu");
+					Doc_PrintLine	( nDocID,  0, "BryÅ‚a lodu");
 					Doc_PrintLine	( nDocID,  0, "Kwarcyt");
 					Doc_PrintLine	( nDocID,  0, "Akwamaryn");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Piorun kulisty");
-					Doc_PrintLine	( nDocID,  0, "Ska³a krystaliczna");
+					Doc_PrintLine	( nDocID,  0, "SkaÅ‚a krystaliczna");
 					Doc_PrintLine	( nDocID,  0, "Siarka");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Kula ognia");
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  0, "Smo³a, Siarka");
+					Doc_PrintLine	( nDocID,  0, "SmoÅ‚a, Siarka");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego sk³adnika."					);
+					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego skÅ‚adnika."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Trzeba te¿ znaæ w³aœciwe zaklêcie, dysponowaæ zwojem, na którym je spisano oraz pustym kamieniem runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Trzeba teÅ¼ znaÄ‡ wÅ‚aÅ›ciwe zaklÄ™cie, dysponowaÄ‡ zwojem, na ktÃ³rym je spisano oraz pustym kamieniem runicznym."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dopiero po spe³nieniu tych wszystkich warunków mo¿na rozpocz¹æ pracê przy stole runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Dopiero po speÅ‚nieniu tych wszystkich warunkÃ³w moÅ¼na rozpoczÄ…Ä‡ pracÄ™ przy stole runicznym."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -353,20 +353,20 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "CZWARTY KR¥G"					);
+					Doc_PrintLine	( nDocID,  0, "CZWARTY KRÄ„G"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Runy czwartego krêgu i potrzebne do ich stworzenia sk³adniki:");
+					Doc_PrintLines	( nDocID,  0, "Runy czwartego krÄ™gu i potrzebne do ich stworzenia skÅ‚adniki:");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Du¿a kula ognia");
+					Doc_PrintLine	( nDocID,  0, "DuÅ¼a kula ognia");
 					Doc_PrintLine	( nDocID,  0, "Siarka");
-					Doc_PrintLine	( nDocID,  0, "Smo³a");
+					Doc_PrintLine	( nDocID,  0, "SmoÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "B³yskawica");
-					Doc_PrintLine	( nDocID,  0, "Ska³a krystaliczna");
+					Doc_PrintLine	( nDocID,  0, "BÅ‚yskawica");
+					Doc_PrintLine	( nDocID,  0, "SkaÅ‚a krystaliczna");
 					Doc_PrintLine	( nDocID,  0, "Kwarcyt");
 					Doc_PrintLine	( nDocID,  0, "");				
 					
@@ -374,8 +374,8 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  0, "Serce kamiennego golema");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Zniszczenie o¿ywieñca");
-					Doc_PrintLine	( nDocID,  0, "Woda œwiêcona");
+					Doc_PrintLine	( nDocID,  0, "Zniszczenie oÅ¼ywieÅ„ca");
+					Doc_PrintLine	( nDocID,  0, "Woda Å›wiÄ™cona");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -386,17 +386,17 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego sk³adnika."					);
+					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego skÅ‚adnika."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Trzeba te¿ znaæ w³aœciwe zaklêcie, dysponowaæ zwojem, na którym je spisano oraz pustym kamieniem runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Trzeba teÅ¼ znaÄ‡ wÅ‚aÅ›ciwe zaklÄ™cie, dysponowaÄ‡ zwojem, na ktÃ³rym je spisano oraz pustym kamieniem runicznym."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dopiero po spe³nieniu tych wszystkich warunków mo¿na rozpocz¹æ pracê przy stole runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Dopiero po speÅ‚nieniu tych wszystkich warunkÃ³w moÅ¼na rozpoczÄ…Ä‡ pracÄ™ przy stole runicznym."					);
 					Doc_Show		( nDocID );
 		
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des fünften Kreises und ihre Ingredenzien
+//				Runen des fÃ¼nften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {
@@ -414,10 +414,10 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "PI¥TY KR¥G"					);
+					Doc_PrintLine	( nDocID,  0, "PIÄ„TY KRÄ„G"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Runy pi¹tego krêgu i potrzebne do ich stworzenia sk³adniki:");
+					Doc_PrintLines	( nDocID,  0, "Runy piÄ…tego krÄ™gu i potrzebne do ich stworzenia skÅ‚adniki:");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -427,7 +427,7 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Du¿a burza ognista");
+					Doc_PrintLine	( nDocID,  0, "DuÅ¼a burza ognista");
 					Doc_PrintLine	( nDocID,  0, "Siarka");
 					Doc_PrintLine	( nDocID,  0, "Ognista pokrzywa");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -436,19 +436,19 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  0, "Serce demona");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Leczenie ciê¿kich ran");
-					Doc_PrintLine	( nDocID,  0, "Korzeñ leczniczy");
+					Doc_PrintLine	( nDocID,  0, "Leczenie ciÄ™Å¼kich ran");
+					Doc_PrintLine	( nDocID,  0, "KorzeÅ„ leczniczy");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego sk³adnika."					);
+					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego skÅ‚adnika."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Trzeba te¿ znaæ w³aœciwe zaklêcie, dysponowaæ zwojem, na którym je spisano oraz pustym kamieniem runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Trzeba teÅ¼ znaÄ‡ wÅ‚aÅ›ciwe zaklÄ™cie, dysponowaÄ‡ zwojem, na ktÃ³rym je spisano oraz pustym kamieniem runicznym."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dopiero po spe³nieniu tych wszystkich warunków mo¿na rozpocz¹æ pracê przy stole runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Dopiero po speÅ‚nieniu tych wszystkich warunkÃ³w moÅ¼na rozpoczÄ…Ä‡ pracÄ™ przy stole runicznym."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -472,32 +472,32 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "SZÓSTY KR¥G"					);
+					Doc_PrintLine	( nDocID,  0, "SZÃ“STY KRÄ„G"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Runy szóstego krêgu i potrzebne do ich stworzenia sk³adniki:");
+					Doc_PrintLines	( nDocID,  0, "Runy szÃ³stego krÄ™gu i potrzebne do ich stworzenia skÅ‚adniki:");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					Doc_PrintLine	( nDocID,  0, "Deszcz ognia");
-					Doc_PrintLine	( nDocID,  0, "Smo³a");
+					Doc_PrintLine	( nDocID,  0, "SmoÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "Siarka");
-					Doc_PrintLine	( nDocID,  0, "Jêzyk ognistego jaszczura");
+					Doc_PrintLine	( nDocID,  0, "JÄ™zyk ognistego jaszczura");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Tchnienie œmierci");
-					Doc_PrintLine	( nDocID,  0, "Wêgiel");
-					Doc_PrintLine	( nDocID,  0, "Czarna per³a");
+					Doc_PrintLine	( nDocID,  0, "Tchnienie Å›mierci");
+					Doc_PrintLine	( nDocID,  0, "WÄ™giel");
+					Doc_PrintLine	( nDocID,  0, "Czarna perÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Œmiertelna fala");
-					Doc_PrintLine	( nDocID,  0, "Koœæ szkieletu");
-					Doc_PrintLine	( nDocID,  0, "Czarna per³a");
+					Doc_PrintLine	( nDocID,  0, "Åšmiertelna fala");
+					Doc_PrintLine	( nDocID,  0, "KoÅ›Ä‡ szkieletu");
+					Doc_PrintLine	( nDocID,  0, "Czarna perÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Armia ciemnoœci");
-					Doc_PrintLine	( nDocID,  0, "Koœæ szkieletu");
-					Doc_PrintLine	( nDocID,  0, "Czarna per³a");
+					Doc_PrintLine	( nDocID,  0, "Armia ciemnoÅ›ci");
+					Doc_PrintLine	( nDocID,  0, "KoÅ›Ä‡ szkieletu");
+					Doc_PrintLine	( nDocID,  0, "Czarna perÅ‚a");
 					Doc_PrintLine	( nDocID,  0, "Serce kamiennego golema");
 					Doc_PrintLine	( nDocID,  0,  "Serce demona");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -510,16 +510,16 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
 					Doc_PrintLine	( nDocID,  1, "Zmniejszenie potwora");
-					Doc_PrintLine	( nDocID,  1, "Koœæ goblina");
-					Doc_PrintLine	( nDocID,  1, "Kie³ trolla");
+					Doc_PrintLine	( nDocID,  1, "KoÅ›Ä‡ goblina");
+					Doc_PrintLine	( nDocID,  1, "KieÅ‚ trolla");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego sk³adnika."					);
+					Doc_PrintLines	( nDocID,  1, "Tworzenie runy wymaga jednej sztuki lub porcji odpowiedniego skÅ‚adnika."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Trzeba te¿ znaæ w³aœciwe zaklêcie, dysponowaæ zwojem, na którym je spisano oraz pustym kamieniem runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Trzeba teÅ¼ znaÄ‡ wÅ‚aÅ›ciwe zaklÄ™cie, dysponowaÄ‡ zwojem, na ktÃ³rym je spisano oraz pustym kamieniem runicznym."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Dopiero po spe³nieniu tych wszystkich warunków mo¿na rozpocz¹æ pracê przy stole runicznym."					);
+					Doc_PrintLines	( nDocID,  1, "Dopiero po speÅ‚nieniu tych wszystkich warunkÃ³w moÅ¼na rozpoczÄ…Ä‡ pracÄ™ przy stole runicznym."					);
 					Doc_Show		( nDocID );
 		
 	};

@@ -8,7 +8,7 @@ func int B_GetLearnCostAttribute (var C_NPC oth, var int attribut)
 {
 	var int kosten; kosten = 0;
 
-	// ------ Kosten für Stärke ------
+	// ------ Kosten fÃ¼r StÃ¤rke ------
 	if (attribut == ATR_STRENGTH) 
 	{
 		if (oth.aivar[REAL_STRENGTH] >= 120)		{	kosten = (5);	}
@@ -18,7 +18,7 @@ func int B_GetLearnCostAttribute (var C_NPC oth, var int attribut)
 		else 										{	kosten = (1);	};
 	};
 	
-	// ------ Kosten für Dexterity ------
+	// ------ Kosten fÃ¼r Dexterity ------
 	if (attribut == ATR_DEXTERITY) 
 	{
 		if (oth.aivar[REAL_DEXTERITY] >= 120)		{	kosten = (5);	}
@@ -28,7 +28,7 @@ func int B_GetLearnCostAttribute (var C_NPC oth, var int attribut)
 		else 										{	kosten = (1);	};
 	};
 	
-	// ------ Kosten für Mana MAX ------
+	// ------ Kosten fÃ¼r Mana MAX ------
 	if (attribut == ATR_MANA_MAX)
 	{		
 		if (oth.aivar[REAL_MANA_MAX] >= 120)		{	kosten = (5);	}

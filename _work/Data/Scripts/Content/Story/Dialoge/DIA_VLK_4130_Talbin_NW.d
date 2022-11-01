@@ -41,7 +41,7 @@ instance DIA_Talbin_NW		(C_INFO)
 	condition	 = 	DIA_Talbin_NW_Condition;
 	information	 = 	DIA_Talbin_NW_Info;
 
-	description	 = 	"No proszê, prze³êcz nie by³a chyba a¿ tak straszna?";
+	description	 = 	"No proszÄ™, przeÅ‚Ä™cz nie byÅ‚a chyba aÅ¼ tak straszna?";
 };
 
 func int DIA_Talbin_NW_Condition ()
@@ -51,24 +51,24 @@ func int DIA_Talbin_NW_Condition ()
 
 func void DIA_Talbin_NW_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //No proszê, prze³êcz nie by³a chyba a¿ tak straszna?
-	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Dziêki za ratunek.
-	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Proszê, znalaz³em ten kamieñ na prze³êczy. Myœlê, ¿e ci siê przyda.
+	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //No proszÄ™, przeÅ‚Ä™cz nie byÅ‚a chyba aÅ¼ tak straszna?
+	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //DziÄ™ki za ratunek.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //ProszÄ™, znalazÅ‚em ten kamieÅ„ na przeÅ‚Ä™czy. MyÅ›lÄ™, Å¼e ci siÄ™ przyda.
 
 	if (hero.guild == GIL_KDF)
 	{
-	AI_Output			(self, other, "DIA_Talbin_NW_07_03"); //To chyba kamieñ runiczny.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_03"); //To chyba kamieÅ„ runiczny.
 	CreateInvItems (self, ItMi_RuneBlank, 1);									
 	B_GiveInvItems (self, other, ItMi_RuneBlank, 1);					
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Talbin_NW_07_04"); //To chyba kawa³ek rudy.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_04"); //To chyba kawaÅ‚ek rudy.
 	CreateInvItems (self, ItMi_Nugget, 1);									
 	B_GiveInvItems (self, other, ItMi_Nugget, 1);					
 	};
 	
-	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Niech Innos ma ciê w swojej opiece.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Niech Innos ma ciÄ™ w swojej opiece.
 
 	AI_StopProcessInfos (self);
 
@@ -89,7 +89,7 @@ instance DIA_Talbin_NW_PERM		(C_INFO)
 	information	 = 	DIA_Talbin_NW_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Talbin_NW_PERM_Condition ()
@@ -102,8 +102,8 @@ func int DIA_Talbin_NW_PERM_Condition ()
 
 func void DIA_Talbin_NW_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //Wszystko w porz¹dku?
-	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //Tak, dziêkujê. IdŸ ju¿, poradzê sobie.
+	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //Wszystko w porzÄ…dku?
+	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //Tak, dziÄ™kujÄ™. IdÅº juÅ¼, poradzÄ™ sobie.
 	AI_StopProcessInfos (self);
 };
 

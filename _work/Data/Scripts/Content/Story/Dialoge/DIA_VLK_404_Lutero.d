@@ -54,12 +54,12 @@ FUNC INT DIA_Lutero_Hallo_Condition()
 };
 FUNC VOID DIA_Lutero_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Nazywam siê Lutero. Zajmujê siê skupem i sprzeda¿¹ najró¿niejszych rzeczy.
-	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Co mo¿esz mi zaoferowaæ?
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Mam tu wyj¹tkowo rzadkie i niespotykane towary. Jeszcze nigdy nie zdarzy³o mi siê zawieœæ oczekiwañ klienta.
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Nazywam siÄ™ Lutero. ZajmujÄ™ siÄ™ skupem i sprzedaÅ¼Ä… najrÃ³Å¼niejszych rzeczy.
+	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Co moÅ¼esz mi zaoferowaÄ‡?
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Mam tu wyjÄ…tkowo rzadkie i niespotykane towary. Jeszcze nigdy nie zdarzyÅ‚o mi siÄ™ zawieÅ›Ä‡ oczekiwaÅ„ klienta.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Lutero sprzedaje w górnym mieœcie rzadkie towary."); 
+	B_LogEntry (TOPIC_CityTrader, "Lutero sprzedaje w gÃ³rnym mieÅ›cie rzadkie towary."); 
 };
 //************************************************************
 //	GetLost
@@ -87,11 +87,11 @@ FUNC VOID DIA_Lutero_GetLost_Info()
 {	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //Wynocha st¹d! Nie masz co robiæ? ZnajdŸ sobie jak¹œ pracê, darmozjadzie - tylko jak najdalej st¹d!
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //Wynocha stÄ…d! Nie masz co robiÄ‡? ZnajdÅº sobie jakÄ…Å› pracÄ™, darmozjadzie - tylko jak najdalej stÄ…d!
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Czego tu szukasz, nowicjuszu? Czy nie powinieneœ przebywaæ w klasztorze?
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Czego tu szukasz, nowicjuszu? Czy nie powinieneÅ› przebywaÄ‡ w klasztorze?
 	};
 	AI_StopProcessInfos (self);
 };
@@ -105,7 +105,7 @@ INSTANCE DIA_Lutero_Snapper(C_INFO)
 	condition	= DIA_Lutero_Snapper_Condition;
 	information	= DIA_Lutero_Snapper_Info;
 	permanent	= FALSE;
-	description = "Szukasz czegoœ konkretnego?";
+	description = "Szukasz czegoÅ› konkretnego?";
 };                       
 
 FUNC INT DIA_Lutero_Snapper_Condition()
@@ -118,26 +118,26 @@ FUNC INT DIA_Lutero_Snapper_Condition()
 };
 FUNC VOID DIA_Lutero_Snapper_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Szukasz czegoœ konkretnego?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Tak, potrzebne mi s¹ pazury zêbacza.
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Jednak nie chodzi mi o jakiekolwiek pazury. To musi byæ coœ specjalnego, szpony potê¿nej bestii, która zabi³a dziesi¹tki myœliwych, albo coœ takiego.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Gdzie mogê znaleŸæ zêbacze?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Kilka z nich zamieszkuje tê wyspê, ale wiêkszoœæ grasuje w Górniczej Dolinie.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Co z tego bêdê mia³?
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Szukasz czegoÅ› konkretnego?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Tak, potrzebne mi sÄ… pazury zÄ™bacza.
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Jednak nie chodzi mi o jakiekolwiek pazury. To musi byÄ‡ coÅ› specjalnego, szpony potÄ™Å¼nej bestii, ktÃ³ra zabiÅ‚a dziesiÄ…tki myÅ›liwych, albo coÅ› takiego.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Gdzie mogÄ™ znaleÅºÄ‡ zÄ™bacze?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Kilka z nich zamieszkuje tÄ™ wyspÄ™, ale wiÄ™kszoÅ›Ä‡ grasuje w GÃ³rniczej Dolinie.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Co z tego bÄ™dÄ™ miaÅ‚?
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_06"); //Mogê dla ciebie znaleŸæ kamieñ runiczny.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_06"); //MogÄ™ dla ciebie znaleÅºÄ‡ kamieÅ„ runiczny.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Mogê daæ ci pierœcieñ nietykalnoœci.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //MogÄ™ daÄ‡ ci pierÅ›cieÅ„ nietykalnoÅ›ci.
 	};
-	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Zobaczê, co siê da zrobiæ.
+	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //ZobaczÄ™, co siÄ™ da zrobiÄ‡.
 	
 	Log_CreateTopic (Topic_Lutero,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lutero,LOG_RUNNING);
-	B_LogEntry (Topic_Lutero,"Kupiec Lutero poszukuje pazurów wyj¹tkowo silnego zêbacza.");
+	B_LogEntry (Topic_Lutero,"Kupiec Lutero poszukuje pazurÃ³w wyjÄ…tkowo silnego zÄ™bacza.");
 	
 	Lutero_Krallen = LOG_RUNNING;
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Lutero_Kralle(C_INFO)
 	condition	= DIA_Lutero_Kralle_Condition;
 	information	= DIA_Lutero_Kralle_Info;
 	permanent	= FALSE;
-	description = "Mam tu dla ciebie pazury bardzo niezwyk³ego zêbacza.";
+	description = "Mam tu dla ciebie pazury bardzo niezwykÅ‚ego zÄ™bacza.";
 };                       
 
 FUNC INT DIA_Lutero_Kralle_Condition()
@@ -164,22 +164,22 @@ FUNC INT DIA_Lutero_Kralle_Condition()
 };
 FUNC VOID DIA_Lutero_Kralle_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //Mam tu dla ciebie pazury bardzo niezwyk³ego zêbacza.
+	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //Mam tu dla ciebie pazury bardzo niezwykÅ‚ego zÄ™bacza.
 	Lutero_Krallen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Moi klienci siê uciesz¹.
+	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Moi klienci siÄ™ ucieszÄ….
 	B_GiveInvItems (other, self, ItAt_ClawLeader,1);
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Nie mam tutaj kamienia runicznego. Ale wiem, gdzie go mo¿na znaleŸæ.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //W drodze z miasta do gospody, bêdziesz przechodzi³ pod mostem.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Jest tam jaskinia, w której jeden z moich przyjació³ ukry³ skrzyniê z kamieniem runicznym. Oto klucz.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Nie mam tutaj kamienia runicznego. Ale wiem, gdzie go moÅ¼na znaleÅºÄ‡.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //W drodze z miasta do gospody, bÄ™dziesz przechodziÅ‚ pod mostem.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Jest tam jaskinia, w ktÃ³rej jeden z moich przyjaciÃ³Å‚ ukryÅ‚ skrzyniÄ™ z kamieniem runicznym. Oto klucz.
 		B_GiveInvItems (self, other, ITKE_RUNE_MIS,1); 
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_05"); //Oto pierœcieñ, który ci obieca³em.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_05"); //Oto pierÅ›cieÅ„, ktÃ³ry ci obiecaÅ‚em.
 		B_GiveInvItems (self, other, ItRi_Prot_Total_01,1);
 	};
 };
@@ -193,7 +193,7 @@ INSTANCE DIA_Lutero_Trade(C_INFO)
 	condition	= DIA_Lutero_Trade_Condition;
 	information	= DIA_Lutero_Trade_Info;
 	permanent	= TRUE;
-	description = "Poka¿ mi swoje towary.";
+	description = "PokaÅ¼ mi swoje towary.";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Lutero_Trade_Condition()
@@ -206,7 +206,7 @@ FUNC INT DIA_Lutero_Trade_Condition()
 FUNC VOID DIA_Lutero_Trade_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Lutero_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other ,self,"DIA_Lutero_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 };
 
 

@@ -44,10 +44,10 @@ func int DIA_Fed_HALLO_Condition ()
 };
 func void DIA_Fed_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Czego ode mnie chcesz? Nigdzie nie idê!
-	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Spokojnie, odprê¿ siê - nikt nie wymaga od ciebie, ¿ebyœ siê st¹d rusza³.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Chwa³a Innosowi. Wiesz, przez ostatnie kilka dni wielu naszych ludzi opuœci³o obóz i ¿aden z nich nie wróci³.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Wszyscy zostali po¿arci przez zêbacze. Ale nie ja. Ja zostanê tutaj, dopóki to wszystko siê nie skoñczy.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Czego ode mnie chcesz? Nigdzie nie idÄ™!
+	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Spokojnie, odprÄ™Å¼ siÄ™ - nikt nie wymaga od ciebie, Å¼ebyÅ› siÄ™ stÄ…d ruszaÅ‚.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //ChwaÅ‚a Innosowi. Wiesz, przez ostatnie kilka dni wielu naszych ludzi opuÅ›ciÅ‚o obÃ³z i Å¼aden z nich nie wrÃ³ciÅ‚.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Wszyscy zostali poÅ¼arci przez zÄ™bacze. Ale nie ja. Ja zostanÄ™ tutaj, dopÃ³ki to wszystko siÄ™ nie skoÅ„czy.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -59,7 +59,7 @@ instance DIA_Fed_Snapper	(C_INFO)
 	condition	 = 	DIA_Fed_Snapper_Condition;
 	information	 = 	DIA_Fed_Snapper_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Co wiesz o zêbaczach?";
+	description	 = 	"Co wiesz o zÄ™baczach?";
 };
 func int DIA_Fed_Snapper_Condition ()
 {	
@@ -70,10 +70,10 @@ func int DIA_Fed_Snapper_Condition ()
 };
 func void DIA_Fed_Snapper_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Co wiesz o zêbaczach?
-	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot obserwuje je przez ca³¹ noc. Kilka z nich jest na dole, w stawie obok mrocznej wie¿y.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Inne czaj¹ siê na górze... Czekaj¹, a¿ bêdziemy wyczerpani. Wtedy staniemy siê ³atwym ³upem...
-	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //ZnaleŸliœmy siê w pu³apce. Wkrótce zaatakuj¹ obóz i po¿r¹ nas wszystkich...
+	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Co wiesz o zÄ™baczach?
+	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot obserwuje je przez caÅ‚Ä… noc. Kilka z nich jest na dole, w stawie obok mrocznej wieÅ¼y.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Inne czajÄ… siÄ™ na gÃ³rze... CzekajÄ…, aÅ¼ bÄ™dziemy wyczerpani. Wtedy staniemy siÄ™ Å‚atwym Å‚upem...
+	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //ZnaleÅºliÅ›my siÄ™ w puÅ‚apce. WkrÃ³tce zaatakujÄ… obÃ³z i poÅ¼rÄ… nas wszystkich...
 	AI_Output (other, self, "DIA_Fed_Snapper_15_04"); //Rozumiem.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -86,7 +86,7 @@ instance DIA_Fed_Perm	(C_INFO)
 	condition	 = 	DIA_Fed_Perm_Condition;
 	information	 = 	DIA_Fed_Perm_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 func int DIA_Fed_Perm_Condition ()
 {	
@@ -94,16 +94,16 @@ func int DIA_Fed_Perm_Condition ()
 };
 func void DIA_Fed_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Perm_15_00"); //Wszystko w porz¹dku?
+	AI_Output (other, self, "DIA_Fed_Perm_15_00"); //Wszystko w porzÄ…dku?
 	
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Wszêdzie dooko³a czaj¹ siê zêbacze. Potrafisz je wyczuæ? Ja potrafiê... Czujê ich smród...
+		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //WszÄ™dzie dookoÅ‚a czajÄ… siÄ™ zÄ™bacze. Potrafisz je wyczuÄ‡? Ja potrafiÄ™... CzujÄ™ ich smrÃ³d...
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //Zêbacze chyba siê wycofa³y. Ale to nic nie oznacza. Jeszcze tu wróc¹ - a jeœli nie one, to wilki, jaszczury albo orkowie.
-		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Prêdzej czy póŸniej nas dostan¹, zabij¹ i po¿r¹ nasze zw³oki...
+		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //ZÄ™bacze chyba siÄ™ wycofaÅ‚y. Ale to nic nie oznacza. Jeszcze tu wrÃ³cÄ… - a jeÅ›li nie one, to wilki, jaszczury albo orkowie.
+		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //PrÄ™dzej czy pÃ³Åºniej nas dostanÄ…, zabijÄ… i poÅ¼rÄ… nasze zwÅ‚oki...
 	};
 	AI_StopProcessInfos(self);
 	

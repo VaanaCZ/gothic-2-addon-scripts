@@ -29,7 +29,7 @@ INSTANCE DIA_PAL_9_JOIN(C_INFO)
 	condition	= DIA_PAL_9_JOIN_Condition;
 	information	= DIA_PAL_9_JOIN_Info;
 	permanent	= TRUE;
-	description = "Jak mogê zostaæ paladynem?";
+	description = "Jak mogÄ™ zostaÄ‡ paladynem?";
 };                       
 
 FUNC INT DIA_PAL_9_JOIN_Condition()
@@ -42,9 +42,9 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Jak mogê zostaæ paladynem?
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Ci, którzy wyka¿¹ siê odwag¹ w s³u¿bie Innosowi lub Królowi, mog¹ zostaæ wybrani!
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Mówi¹c prosto: wybrani zostan¹ najlepsi. CIEBIE czeka jednak jeszcze d³uga droga.
+	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Jak mogÄ™ zostaÄ‡ paladynem?
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Ci, ktÃ³rzy wykaÅ¼Ä… siÄ™ odwagÄ… w sÅ‚uÅ¼bie Innosowi lub KrÃ³lowi, mogÄ… zostaÄ‡ wybrani!
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //MÃ³wiÄ…c prosto: wybrani zostanÄ… najlepsi. CIEBIE czeka jednak jeszcze dÅ‚uga droga.
 };
 
 // *************************************************************************
@@ -72,7 +72,7 @@ FUNC VOID DIA_PAL_9_PEOPLE_Info()
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Kto tu dowodzi?
 	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Lord Hagen.
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //I?
-	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //I nikt wiêcej. Lord Hagen jest najwy¿szym urzêdnikiem i dowódc¹ na wyspie.
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //I nikt wiÄ™cej. Lord Hagen jest najwyÅ¼szym urzÄ™dnikiem i dowÃ³dcÄ… na wyspie.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_9_LOCATION(C_INFO)
 	condition	= DIA_PAL_9_LOCATION_Condition;
 	information	= DIA_PAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Dlaczego wy, paladyni, przybyliœcie do Khorinis?";
+	description = "Dlaczego wy, paladyni, przybyliÅ›cie do Khorinis?";
 };                       
 
 FUNC INT DIA_PAL_9_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Dlaczego wy, paladyni, przybyliœcie do Khorinis?
-	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //To nie twoja sprawa, kolego! Wystarczy ci wiedzieæ, ¿e s³u¿ymy Królowi i Innosowi!
+	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Dlaczego wy, paladyni, przybyliÅ›cie do Khorinis?
+	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //To nie twoja sprawa, kolego! Wystarczy ci wiedzieÄ‡, Å¼e sÅ‚uÅ¼ymy KrÃ³lowi i Innosowi!
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE DIA_PAL_9_STANDARD(C_INFO)
 	condition	= DIA_PAL_9_STANDARD_Condition;
 	information	= DIA_PAL_9_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
                        
 func INT DIA_PAL_9_STANDARD_Condition()
@@ -120,7 +120,7 @@ func INT DIA_PAL_9_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_9_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_9_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_PAL_9_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_9_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //Teraz, kiedy przysz³o nam zmierzyæ siê ze smokami, jestem pewien, ¿e nasz dowódca odpowiednio zareaguje.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_01"); //Teraz, kiedy przyszÅ‚o nam zmierzyÄ‡ siÄ™ ze smokami, jestem pewien, Å¼e nasz dowÃ³dca odpowiednio zareaguje.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Nie mamy ¿adnych wiadomoœci od naszych oddzia³ów w Górniczej Dolinie. To bardzo niepokoj¹ce.
+				AI_Output (self, other, "DIA_PAL_9_STANDARD_09_02"); //Nie mamy Å¼adnych wiadomoÅ›ci od naszych oddziaÅ‚Ã³w w GÃ³rniczej Dolinie. To bardzo niepokojÄ…ce.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //B³ogos³awiony niech bêdzie Innos! Niebezpieczeñstwo ataku smoków zosta³o za¿egnane. ¯eby dotrzeæ do rudy, musimy siê zaj¹æ ju¿ tylko orkami.
+			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //BÅ‚ogosÅ‚awiony niech bÄ™dzie Innos! NiebezpieczeÅ„stwo ataku smokÃ³w zostaÅ‚o zaÅ¼egnane. Å»eby dotrzeÄ‡ do rudy, musimy siÄ™ zajÄ…Ä‡ juÅ¼ tylko orkami.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //Jeœli nie masz ju¿ nic wiêcej do powiedzenia, to spadaj, prostaku.
+		AI_Output (self, other, "DIA_PAL_9_STANDARD_09_04"); //JeÅ›li nie masz juÅ¼ nic wiÄ™cej do powiedzenia, to spadaj, prostaku.
 	};
 };
 

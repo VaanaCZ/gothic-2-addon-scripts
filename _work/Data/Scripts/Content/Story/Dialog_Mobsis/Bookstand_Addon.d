@@ -1,6 +1,6 @@
 
 //*************************************
-//	Buchst‰nder im Banditenlager
+//	Buchst√§nder im Banditenlager
 //*************************************
 
 FUNC VOID Use_Bookstand_Addon_BL_S1()		
@@ -23,13 +23,13 @@ FUNC VOID Use_Bookstand_Addon_BL_S1()
 
 					Doc_PrintLine	( nDocID,  0, "Kopalnia"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Crimson: otrzyma≥ i przetopi≥ 79 samorodkÛw z≥ota"					);
+					Doc_PrintLines	( nDocID,  0, "Crimson: otrzyma≈Ç i przetopi≈Ç 79 samorodk√≥w z≈Çota"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Scatty: otrzyma≥ towary wartoúci 250 sztuk z≥ota"					);
+					Doc_PrintLines	( nDocID,  0, "Scatty: otrzyma≈Ç towary warto≈õci 250 sztuk z≈Çota"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Garaz: otrzyma≥ 6 samorodkÛw z≥ota"					);
+					Doc_PrintLines	( nDocID,  0, "Garaz: otrzyma≈Ç 6 samorodk√≥w z≈Çota"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Wszyscy straønicy: otrzymali 9 samorodkÛw z≥ota"					);
+					Doc_PrintLines	( nDocID,  0, "Wszyscy stra≈ºnicy: otrzymali 9 samorodk√≥w z≈Çota"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
@@ -39,19 +39,19 @@ FUNC VOID Use_Bookstand_Addon_BL_S1()
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
-					Doc_PrintLine	( nDocID,  1, "ObÛz:"					);
+					Doc_PrintLine	( nDocID,  1, "Ob√≥z:"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Straø Kruka: 25 sztuk z≥ota"					);
+					Doc_PrintLines	( nDocID,  1, "Stra≈º Kruka: 25 sztuk z≈Çota"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Finn: 60 sztuk z≥ota"					);
-					Doc_PrintLines	( nDocID,  1, "Lennar: 40 sztuk z≥ota"); 
-					Doc_PrintLines	( nDocID,  1, "Emilio: 50 sztuk z≥ota"					);
+					Doc_PrintLines	( nDocID,  1, "Finn: 60 sztuk z≈Çota"					);
+					Doc_PrintLines	( nDocID,  1, "Lennar: 40 sztuk z≈Çota"); 
+					Doc_PrintLines	( nDocID,  1, "Emilio: 50 sztuk z≈Çota"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Inni: 20 sztuk z≥ota"					);
+					Doc_PrintLines	( nDocID,  1, "Inni: 20 sztuk z≈Çota"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Huno, Fisk, Snaf: w zaleønoúci od towaru"					);
+					Doc_PrintLines	( nDocID,  1, "Huno, Fisk, Snaf: w zale≈ºno≈õci od towaru"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Myúliwi: Szef powinien to wyjaúniÊ! Franko otrzyma≥ 7 sztuk z≥ota");
+					Doc_PrintLines	( nDocID,  1, "My≈õliwi: Szef powinien to wyja≈õniƒá! Franko otrzyma≈Ç 7 sztuk z≈Çota");
 					Doc_Show		( nDocID );
 	
 	};
@@ -83,52 +83,52 @@ func int C_CanReadBookStand ()
 
 func void Use_BookstandMaya () 
 {
-	if (BookstandMayaArt == 1)		//Joly:  ¸berall objektieren!
+	if (BookstandMayaArt == 1)		//Joly:  √ºberall objektieren!
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "...gdyø jedynie STRAØNICY UMAR£YCH byli zdolni przywo≥aÊ przodkÛw.");                                             
+			Doc_PrintLines	( StPl_nDocID,  0, "...gdy≈º jedynie STRA≈ªNICY UMAR≈ÅYCH byli zdolni przywo≈Çaƒá przodk√≥w.");                                             
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Ich nieobecnoúÊ g≥Íboko rani. Bez rady przodkÛw jesteúmy na ≥asce naszego ludu.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Ich nieobecno≈õƒá g≈Çƒôboko rani. Bez rady przodk√≥w jeste≈õmy na ≈Çasce naszego ludu.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "UZDROWICIELE zostali wys≥ani, aby zapieczÍtowaÊ portal i zniszczyÊ klucz. Jedynie Adanos wie, co siÍ z nimi sta≥o, i czy zdo≥ali wykonaÊ powierzone im zadanie.");         
+			Doc_PrintLines	( StPl_nDocID,  0, "UZDROWICIELE zostali wys≈Çani, aby zapieczƒôtowaƒá portal i zniszczyƒá klucz. Jedynie Adanos wie, co siƒô z nimi sta≈Ço, i czy zdo≈Çali wykonaƒá powierzone im zadanie.");         
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "KASTA WOJOWNIK”W zosta≥a zniszczona przez gniew Adanosa. PÍk≥o serce starego ksiÍcia wojownikÛw."		);  
+			Doc_PrintLines	( StPl_nDocID,  1, "KASTA WOJOWNIK√ìW zosta≈Ça zniszczona przez gniew Adanosa. Pƒôk≈Ço serce starego ksiƒôcia wojownik√≥w."		);  
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Jedynie pozostali KAP£ANI podsycajπ nadziejÍ i bezustannie g≥oszπ kazania o odrodzeniu naszego miasta.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Jedynie pozostali KAP≈ÅANI podsycajƒÖ nadziejƒô i bezustannie g≈ÇoszƒÖ kazania o odrodzeniu naszego miasta.");
 			Doc_PrintLine	( StPl_nDocID,  1, "");                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Ale my, UCZENI, znamy gorzkπ prawdÍ. JARKENDAR upad≥ i wkrÛtce zniknie w odmÍtach czasu.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Ale my, UCZENI, znamy gorzkƒÖ prawdƒô. JARKENDAR upad≈Ç i wkr√≥tce zniknie w odmƒôtach czasu.");
 			Doc_PrintLines	( StPl_nDocID,  1, "");        
 	}
 	else if (BookstandMayaArt == 2)     //Joly: objektieren egal wo, nur nicht Entrance.                     
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "RADEMESA pogrzebano w úwiπtyni Adanosa, ale moc miecza nie zosta≥a zniszczona.");
+			Doc_PrintLines	( StPl_nDocID,  0, "RADEMESA pogrzebano w ≈õwiƒÖtyni Adanosa, ale moc miecza nie zosta≈Ça zniszczona.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Jego wp≥yw sta≥ siÍ zbyt wielki. Nie by≥o koÒca rzeziom na ulicach.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Jego wp≈Çyw sta≈Ç siƒô zbyt wielki. Nie by≈Ço ko≈Ñca rzeziom na ulicach.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Jednak gniew ADANOSA po≥oøy≥ temu kres. Morze wznios≥o siÍ ponad JARKENDAR i zatopi≥o ca≥e miasto.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Jednak gniew ADANOSA po≈Ço≈ºy≈Ç temu kres. Morze wznios≈Ço siƒô ponad JARKENDAR i zatopi≈Ço ca≈Çe miasto.");
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "W wiÍkszoúci nietkniÍte pozosta≥y jedynie úwiπtynie i budynki na wzniesieniach.");
+			Doc_PrintLines	( StPl_nDocID,  1, "W wiƒôkszo≈õci nietkniƒôte pozosta≈Çy jedynie ≈õwiƒÖtynie i budynki na wzniesieniach.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
-			Doc_PrintLines	( StPl_nDocID,  1, "Niewielka grupa ocala≥ych z katastrofy nie ma juø si≥y potrzebnej do odbudowy miasta.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Niewielka grupa ocala≈Çych z katastrofy nie ma ju≈º si≈Çy potrzebnej do odbudowy miasta.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
 			Doc_PrintLine	( StPl_nDocID,  1, ""		);                                    
-			Doc_PrintLines	( StPl_nDocID,  1, "I tak los JARKENDARU zosta≥ przypieczÍtowany.");
+			Doc_PrintLines	( StPl_nDocID,  1, "I tak los JARKENDARU zosta≈Ç przypieczƒôtowany.");
 
 			if ( SC_Knows_WeaponInAdanosTempel == FALSE)
 			{				
@@ -139,64 +139,64 @@ func void Use_BookstandMaya ()
 	else if (BookstandMayaArt == 3)                  
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Podesz≥y wiek QUARHODRONA uniemoøliwia≥ mu dowodzenie armiπ. Dlatego kap≥ani domagali siÍ przejÍcia jego kompetencji.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Podesz≈Çy wiek QUARHODRONA uniemo≈ºliwia≈Ç mu dowodzenie armiƒÖ. Dlatego kap≈Çani domagali siƒô przejƒôcia jego kompetencji.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Rozkazali mu zrzec siÍ tytu≥u, a takøe oddaÊ miecz.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Rozkazali mu zrzec siƒô tytu≈Çu, a tak≈ºe oddaƒá miecz.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  0, "Na jego miejsce powo≥ano RadÍ PiÍciu. Ale sprzeciwi≥a siÍ temu Kasta WojownikÛw.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Na jego miejsce powo≈Çano Radƒô Piƒôciu. Ale sprzeciwi≈Ça siƒô temu Kasta Wojownik√≥w.");
 	                
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Wojownicy nie chcieli podporzπdkowaÊ siÍ Radzie PiÍciu i wybrali na swego przywÛdcÍ RADEMESA, syna QUARHODRONA.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Wojownicy nie chcieli podporzƒÖdkowaƒá siƒô Radzie Piƒôciu i wybrali na swego przyw√≥dcƒô RADEMESA, syna QUARHODRONA.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON przysta≥ na to z powodu dumy i zaufania do swego potomka.");
+			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON przysta≈Ç na to z powodu dumy i zaufania do swego potomka.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Przekaza≥ miecz swojemu synowi, z nadziejπ, øe bÍdzie nim w≥ada≥ rÛwnie pewnie, jak niegdyú on sam.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Przekaza≈Ç miecz swojemu synowi, z nadziejƒÖ, ≈ºe bƒôdzie nim w≈Çada≈Ç r√≥wnie pewnie, jak niegdy≈õ on sam.");
 	} 
 	else if (BookstandMayaArt == 4)  
 	{
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "RADEMES by≥ s≥aby. Miecz przejπ≥ nad nim kontrolÍ i uczyni≥ z niego swe narzÍdzie.");
+			Doc_PrintLines	( StPl_nDocID,  0, "RADEMES by≈Ç s≈Çaby. Miecz przejƒÖ≈Ç nad nim kontrolƒô i uczyni≈Ç z niego swe narzƒôdzie.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "OpÍtany przez miecz, sprowadzi≥ tyle cierpienia i okrucieÒstw na swÛj lud, øe nawet uzdrowiciele nie byli w stanie uúmierzyÊ bÛlu.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Opƒôtany przez miecz, sprowadzi≈Ç tyle cierpienia i okrucie≈Ñstw na sw√≥j lud, ≈ºe nawet uzdrowiciele nie byli w stanie u≈õmierzyƒá b√≥lu.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "Miecz wkrÛtce zrozumia≥, øe ludzie sπ zbyt s≥abi, by zapobiec jego planom.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Miecz wkr√≥tce zrozumia≈Ç, ≈ºe ludzie sƒÖ zbyt s≈Çabi, by zapobiec jego planom.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
-			Doc_PrintLines	( StPl_nDocID,  0, "ZagroziÊ mu mog≥a jedynie moc naszych przodkÛw.");
+			Doc_PrintLines	( StPl_nDocID,  0, "Zagroziƒá mu mog≈Ça jedynie moc naszych przodk√≥w.");
 			Doc_PrintLine	( StPl_nDocID,  0, ""						);                    
 			                                                                                          
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Dlatego RADEMES kaza≥ wygnaÊ lub straciÊ wszystkich StraønikÛw Umar≥ych i w ten sposÛb odebra≥ ca≥π nadziejÍ na ocalenie przed z≥em.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Dlatego RADEMES kaza≈Ç wygnaƒá lub straciƒá wszystkich Stra≈ºnik√≥w Umar≈Çych i w ten spos√≥b odebra≈Ç ca≈ÇƒÖ nadziejƒô na ocalenie przed z≈Çem.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Nie by≥o juø øadnego Straønika Umar≥ych, kiedy pozosta≥a czwÛrka dawnych przywÛdcÛw naszego ludu podjÍ≥a gorzkπ decyzjÍ poddania JARKENDARU.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Nie by≈Ço ju≈º ≈ºadnego Stra≈ºnika Umar≈Çych, kiedy pozosta≈Ça czw√≥rka dawnych przyw√≥dc√≥w naszego ludu podjƒô≈Ça gorzkƒÖ decyzjƒô poddania JARKENDARU.");
 			Doc_PrintLine	( StPl_nDocID,  1, ""						);                                
-			Doc_PrintLines	( StPl_nDocID,  1, "Na ulicach szala≥a wojna, gdy uzdrowiciele wyruszyli, by na zawsze zamknπÊ wejúcie do naszej doliny.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Na ulicach szala≈Ça wojna, gdy uzdrowiciele wyruszyli, by na zawsze zamknƒÖƒá wej≈õcie do naszej doliny.");
 	}
 	else if (BookstandMayaArt == 5)
 	{
 			Doc_PrintLines	( StPl_nDocID,  0, "");  
-			Doc_PrintLines	( StPl_nDocID,  0, "QUARHODRON, najwyøszy kap≥an KHARDIMON i ja dyskutowaliúmy w tych salach o tym, jak pokonaÊ RADEMESA i jego miecz.");
+			Doc_PrintLines	( StPl_nDocID,  0, "QUARHODRON, najwy≈ºszy kap≈Çan KHARDIMON i ja dyskutowali≈õmy w tych salach o tym, jak pokonaƒá RADEMESA i jego miecz.");
 			Doc_PrintLines	( StPl_nDocID,  0, "");  
-			Doc_PrintLines	( StPl_nDocID,  0, "QUARHODRON i KHARDIMON uwaøali, øe najlepiej zjednoczyÊ siÍ, zaatakowaÊ RADEMESA i pokonaÊ go w otwartej walce. Ale ja zbyt dobrze zna≥em moc miecza, by wierzyÊ, øe przyniesie to poøπdany skutek.");
+			Doc_PrintLines	( StPl_nDocID,  0, "QUARHODRON i KHARDIMON uwa≈ºali, ≈ºe najlepiej zjednoczyƒá siƒô, zaatakowaƒá RADEMESA i pokonaƒá go w otwartej walce. Ale ja zbyt dobrze zna≈Çem moc miecza, by wierzyƒá, ≈ºe przyniesie to po≈ºƒÖdany skutek.");
 			Doc_PrintLines	( StPl_nDocID,  0, "");	
-			Doc_PrintLines	( StPl_nDocID,  0, "Wykorzysta≥em swoje prawo do uniewaønienia decyzji pozosta≥ej dwÛjki. Zdecydowa≥em pokonaÊ RADEMESA za pomocπ podstÍpu.");			
+			Doc_PrintLines	( StPl_nDocID,  0, "Wykorzysta≈Çem swoje prawo do uniewa≈ºnienia decyzji pozosta≈Çej dw√≥jki. Zdecydowa≈Çem pokonaƒá RADEMESA za pomocƒÖ podstƒôpu.");			
 
 			Doc_SetMargins	( StPl_nDocID, -1, 30, 20, 275, 20, 1   		);                                
 			Doc_PrintLines	( StPl_nDocID,  1, ""		);  
 
-			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON podporzπdkowa≥ siÍ decyzji rady. Wyruszy≥ do úwiπtyni Adanosa i wys≥a≥ wiadomoúÊ do swojego syna.");                   
+			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON podporzƒÖdkowa≈Ç siƒô decyzji rady. Wyruszy≈Ç do ≈õwiƒÖtyni Adanosa i wys≈Ça≈Ç wiadomo≈õƒá do swojego syna.");                   
 			Doc_PrintLines	( StPl_nDocID,  1, "");  
-			Doc_PrintLines	( StPl_nDocID,  1, "NienawiúÊ RADEMESA przybra≥a takie rozmiary, øe w furii wpad≥ do úwiπtyni, aby zabiÊ swojego ojca.");                
+			Doc_PrintLines	( StPl_nDocID,  1, "Nienawi≈õƒá RADEMESA przybra≈Ça takie rozmiary, ≈ºe w furii wpad≈Ç do ≈õwiƒÖtyni, aby zabiƒá swojego ojca.");                
 			Doc_PrintLines	( StPl_nDocID,  1, "");  
-			Doc_PrintLines	( StPl_nDocID,  1, "Gdy zorientowa≥ siÍ, jaki mamy plan, by≥o juø za pÛüno.");
+			Doc_PrintLines	( StPl_nDocID,  1, "Gdy zorientowa≈Ç siƒô, jaki mamy plan, by≈Ço ju≈º za p√≥≈∫no.");
 			Doc_PrintLines	( StPl_nDocID,  1, ""); 
-			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON zamknπ≥ za nimi komnaty úwiπtyni i RADEMES zosta≥ w nich uwiÍziony na ca≥π wiecznoúÊ."); 
+			Doc_PrintLines	( StPl_nDocID,  1, "QUARHODRON zamknƒÖ≈Ç za nimi komnaty ≈õwiƒÖtyni i RADEMES zosta≈Ç w nich uwiƒôziony na ca≈ÇƒÖ wieczno≈õƒá."); 
 			
 			Doc_PrintLines	( StPl_nDocID,  1, "");  
 			Doc_PrintLines	( StPl_nDocID,  1, "");

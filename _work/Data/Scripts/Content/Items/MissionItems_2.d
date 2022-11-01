@@ -1,12 +1,12 @@
 //Missionitems 2. Kapitel
 
 //********************************************
-//	Xardas´ Stein des Wissens   liegt im alten Demonenbeschwörerturm auf dem Tisch in seinem alten Studierzimmer!
+//	XardasÂ´ Stein des Wissens   liegt im alten DemonenbeschwÃ¶rerturm auf dem Tisch in seinem alten Studierzimmer!
 //********************************************
 
 INSTANCE ItMi_StoneOfKnowlegde_MIS (C_Item)
 {
-	name 				=	"Kamieñ Wiedzy";
+	name 				=	"KamieÅ„ Wiedzy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -52,10 +52,10 @@ func void UsePaladinLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Lordzie Hagenie!");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ekspedycja do Górniczej Doliny zakoñczy³a siê klêsk¹. Ponieœliœmy ogromne straty. Niedobitki schroni³y siê w zamku otoczonym przez orków.");
-					Doc_PrintLines	( nDocID,  0, "Smoki atakowa³y nas wielokrotnie. Spustoszy³y tereny dooko³a zamku. Niechaj Innos pomo¿e nam przetrwaæ do przybycia posi³ków. Zbrojny wypad z zamku nie jest mo¿liwy.");					
+					Doc_PrintLines	( nDocID,  0, "Ekspedycja do GÃ³rniczej Doliny zakoÅ„czyÅ‚a siÄ™ klÄ™skÄ…. PonieÅ›liÅ›my ogromne straty. Niedobitki schroniÅ‚y siÄ™ w zamku otoczonym przez orkÃ³w.");
+					Doc_PrintLines	( nDocID,  0, "Smoki atakowaÅ‚y nas wielokrotnie. SpustoszyÅ‚y tereny dookoÅ‚a zamku. Niechaj Innos pomoÅ¼e nam przetrwaÄ‡ do przybycia posiÅ‚kÃ³w. Zbrojny wypad z zamku nie jest moÅ¼liwy.");					
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Niech nas Innos strze¿e.");
+					Doc_PrintLine	( nDocID,  0, "Niech nas Innos strzeÅ¼e.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Garond");
 					Doc_Show		( nDocID );
@@ -95,8 +95,8 @@ func void UseLetterForGorn ()
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Gorn!"					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLines	( nDocID,  0, "Garond zgodzi³ siê wypuœciæ ciê na wolnoœæ - za 1000 sztuk z³ota.");
-					Doc_PrintLines	( nDocID,  0, "Jeœli masz wiêc jakieœ z³oto, lepiej powiedz, gdzie je ukry³eœ.");
+					Doc_PrintLines	( nDocID,  0, "Garond zgodziÅ‚ siÄ™ wypuÅ›ciÄ‡ ciÄ™ na wolnoÅ›Ä‡ - za 1000 sztuk zÅ‚ota.");
+					Doc_PrintLines	( nDocID,  0, "JeÅ›li masz wiÄ™c jakieÅ› zÅ‚oto, lepiej powiedz, gdzie je ukryÅ‚eÅ›.");
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Milten"					);
@@ -105,7 +105,7 @@ func void UseLetterForGorn ()
 };
 
 //********************************************
-//	Kerkerschlüssel der Burg im Minental
+//	KerkerschlÃ¼ssel der Burg im Minental
 //********************************************
 
 
@@ -130,7 +130,7 @@ INSTANCE ItKe_PrisonKey_MIS(C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzlager der Burg im Minental
+//	SchlÃ¼ssel Erzlager der Burg im Minental
 //********************************************
 INSTANCE ItKe_OC_Store(C_Item)
 {
@@ -152,7 +152,7 @@ INSTANCE ItKe_OC_Store(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Erzbaron Flur der Burg im Minental
+//	SchlÃ¼ssel Erzbaron Flur der Burg im Minental
 //********************************************
 INSTANCE ITKE_ErzBaronFlur(C_Item)
 {
@@ -168,13 +168,13 @@ INSTANCE ITKE_ErzBaronFlur(C_Item)
 
 	description			= 	"Klucz do pierwszych drzwi.";
 	
-	TEXT[2]				= 	"Wyryto na nim imiê.";
+	TEXT[2]				= 	"Wyryto na nim imiÄ™.";
 	TEXT[3]				= 	"Gomez";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Erzbaron Raum der Burg im Minental
+//	SchlÃ¼ssel Erzbaron Raum der Burg im Minental
 //********************************************
 INSTANCE ITKE_ErzBaronRaum(C_Item)
 {
@@ -190,7 +190,7 @@ INSTANCE ITKE_ErzBaronRaum(C_Item)
 
 	description			= 	"Klucz do drugich drzwi.";
 	
-	TEXT[2]				= 	"Wyryto na nim imiê.";
+	TEXT[2]				= 	"Wyryto na nim imiÄ™.";
 	TEXT[3]				= 	"Gomez";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -201,7 +201,7 @@ INSTANCE ITKE_ErzBaronRaum(C_Item)
 
 INSTANCE ItMi_GornsTreasure_MIS(C_Item)
 {
-	name 				=	"Skórzany mieszek";
+	name 				=	"SkÃ³rzany mieszek";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -213,7 +213,7 @@ INSTANCE ItMi_GornsTreasure_MIS(C_Item)
 	material 			=	MAT_METAL;
 	on_state[0]			=   UseGornsTreasure;
 	
-	description			= 	"Skórzana sakwa Gorna.";
+	description			= 	"SkÃ³rzana sakwa Gorna.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
@@ -228,7 +228,7 @@ FUNC VOID UseGornsTreasure ()
 
 INSTANCE ItWr_Silvestro_MIS		(C_Item)
 {
-	name 				=	"Wiadomoœæ";
+	name 				=	"WiadomoÅ›Ä‡";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -239,7 +239,7 @@ INSTANCE ItWr_Silvestro_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseItwr_Silvestro;
 	scemeName			=	"MAP";
-	description			= 	"Wiadomoœæ od Silvestra";
+	description			= 	"WiadomoÅ›Ä‡ od Silvestra";
 };
 func void UseItwr_Silvestro ()
 {   
@@ -250,25 +250,25 @@ func void UseItwr_Silvestro ()
 				Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		); 
 				Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 				Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-				Doc_PrintLine	( nDocID,  0, "Od królewskiego paladyna Silvestra");
+				Doc_PrintLine	( nDocID,  0, "Od krÃ³lewskiego paladyna Silvestra");
 				Doc_PrintLine	( nDocID,  0, "");
-				Doc_PrintLines	( nDocID,  0, "Kolejny dzieñ dr¹¿enia przed nami. Dziœ zamierzamy przebiæ siê przez œcianê skaln¹.");
-				Doc_PrintLines	( nDocID,  0, "Mam z³e przeczucia, wiêc zabezpieczê wydobyt¹ dotychczas rudê.");
-				Doc_PrintLines	( nDocID,  0, "Tylko Diego zna okolicê. Muszê mu wiêc zaufaæ. To on zabierze skrzynie - ale nie puszczê go samego.");	
-				Doc_PrintLines	( nDocID,  0, "Muszê chroniæ rudê za wszelk¹ cenê, wyœlê wiêc z nim dwóch rycerzy.");	
+				Doc_PrintLines	( nDocID,  0, "Kolejny dzieÅ„ drÄ…Å¼enia przed nami. DziÅ› zamierzamy przebiÄ‡ siÄ™ przez Å›cianÄ™ skalnÄ….");
+				Doc_PrintLines	( nDocID,  0, "Mam zÅ‚e przeczucia, wiÄ™c zabezpieczÄ™ wydobytÄ… dotychczas rudÄ™.");
+				Doc_PrintLines	( nDocID,  0, "Tylko Diego zna okolicÄ™. MuszÄ™ mu wiÄ™c zaufaÄ‡. To on zabierze skrzynie - ale nie puszczÄ™ go samego.");	
+				Doc_PrintLines	( nDocID,  0, "MuszÄ™ chroniÄ‡ rudÄ™ za wszelkÄ… cenÄ™, wyÅ›lÄ™ wiÄ™c z nim dwÃ³ch rycerzy.");	
 				Doc_PrintLine	( nDocID,  0, "");
-				Doc_PrintLine	( nDocID,  0, "Niech ¿yje Król");
+				Doc_PrintLine	( nDocID,  0, "Niech Å¼yje KrÃ³l");
 				Doc_PrintLine	( nDocID,  0, "");
 				Doc_PrintLine	( nDocID,  0, "Silvestro");
 				Doc_Show		( nDocID );
 				
 };
 //**********************************************************************************
-//	Krallen des Rudelführers
+//	Krallen des RudelfÃ¼hrers
 //----------------------------------------------------------------------------------
 INSTANCE ItAt_ClawLeader (C_Item)
 {
-	name 				=	"Pazury zêbacza";
+	name 				=	"Pazury zÄ™bacza";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -278,7 +278,7 @@ INSTANCE ItAt_ClawLeader (C_Item)
 	visual 				=	"ItAt_Claw.3DS";
 	material 			=	MAT_LEATHER;
 
-	description			= 	"Pazury przywódcy stada";
+	description			= 	"Pazury przywÃ³dcy stada";
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
@@ -290,7 +290,7 @@ INSTANCE ItAt_ClawLeader (C_Item)
 //----------------------------------------------------------------------------------
 INSTANCE ItSe_Olav	(C_Item)
 {
-	name 				=	"Skórzana sakiewka";
+	name 				=	"SkÃ³rzana sakiewka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -306,7 +306,7 @@ INSTANCE ItSe_Olav	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"W œrodku podzwania kilka monet.";
+	TEXT[2]				= 	"W Å›rodku podzwania kilka monet.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -319,7 +319,7 @@ FUNC VOID UseOlav ()
 /******************************************************************************************/
 instance ItMi_GoldPlate_MIS (C_Item)
 {
-	name 				=	"Z³oty talerz";
+	name 				=	"ZÅ‚oty talerz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -336,11 +336,11 @@ instance ItMi_GoldPlate_MIS (C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzlager der Burg im Minental
+//	SchlÃ¼ssel Erzlager der Burg im Minental
 //********************************************
 INSTANCE ItKe_Pass_MIS(C_Item)
 {
-	name 				=	"Klucz do prze³êczy";
+	name 				=	"Klucz do przeÅ‚Ä™czy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -351,11 +351,11 @@ INSTANCE ItKe_Pass_MIS(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	"Niewielki klucz";
-	TEXT[1]				= 	"otwieraj¹cy bramê na prze³êczy.";
+	TEXT[1]				= 	"otwierajÄ…cy bramÄ™ na przeÅ‚Ä™czy.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Bromor
+//	SchlÃ¼ssel Bromor
 //********************************************
 INSTANCE ItKe_Bromor(C_Item)
 {
@@ -369,12 +369,12 @@ INSTANCE ItKe_Bromor(C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Klucz do pokoju w³aœciciela";
+	description			= 	"Klucz do pokoju wÅ‚aÅ›ciciela";
 	TEXT[1]				= 	"burdelu.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Runenstein
+//	SchlÃ¼ssel Runenstein
 //********************************************
 INSTANCE ITKE_RUNE_MIS(C_Item)
 {
@@ -390,14 +390,14 @@ INSTANCE ITKE_RUNE_MIS(C_Item)
 
 	description			= 	"Niewielki klucz do kufra.";
 	
-	TEXT[1]				= 	"Sam kufer znajduje siê";
+	TEXT[1]				= 	"Sam kufer znajduje siÄ™";
 	TEXT[2]				= 	"pod mostem.";
-	TEXT[3]				= 	"W œrodku ukryto kamieñ runiczny.";
+	TEXT[3]				= 	"W Å›rodku ukryto kamieÅ„ runiczny.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //**********************************************************************************
-//	Bloodfly Stachel ausschlürfen lernen
+//	Bloodfly Stachel ausschlÃ¼rfen lernen
 //----------------------------------------------------------------------------------
 INSTANCE ItWr_Bloody_MIS		(C_Item)
 {
@@ -412,7 +412,7 @@ INSTANCE ItWr_Bloody_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseBloodMIS;
 	scemeName			=	"MAP";
-	description			= 	"Trucizna krwiopijców";
+	description			= 	"Trucizna krwiopijcÃ³w";
 };
 func void UseBloodMIS ()
 {   
@@ -426,12 +426,12 @@ func void UseBloodMIS ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "¯¹d³o krwiopijcy zawiera œmierteln¹ truciznê, na któr¹ trzeba bardzo uwa¿aæ."					);
-					Doc_PrintLines	( nDocID,  0, "Dlatego podczas usuwania ¿¹d³a nale¿y przestrzegaæ nastêpuj¹cej zasady:");
-					Doc_PrintLines	( nDocID,  0, "¯¹d³o rozcinamy od koñca a¿ do samej podstawy.");					
-					Doc_PrintLines	( nDocID,  0, "Usuwamy skórê, a nastêpnie nacinamy tkankê otaczaj¹c¹ gruczo³."					);
-					Doc_PrintLines	( nDocID,  0, "Zawiera ona substancjê o w³aœciwoœciach leczniczych.");
-					Doc_PrintLines	( nDocID,  0, "Jednak ludzki organizm po jakimœ czasie uodparnia siê na jej dzia³anie."					);
+					Doc_PrintLines	( nDocID,  0, "Å»Ä…dÅ‚o krwiopijcy zawiera Å›miertelnÄ… truciznÄ™, na ktÃ³rÄ… trzeba bardzo uwaÅ¼aÄ‡."					);
+					Doc_PrintLines	( nDocID,  0, "Dlatego podczas usuwania Å¼Ä…dÅ‚a naleÅ¼y przestrzegaÄ‡ nastÄ™pujÄ…cej zasady:");
+					Doc_PrintLines	( nDocID,  0, "Å»Ä…dÅ‚o rozcinamy od koÅ„ca aÅ¼ do samej podstawy.");					
+					Doc_PrintLines	( nDocID,  0, "Usuwamy skÃ³rÄ™, a nastÄ™pnie nacinamy tkankÄ™ otaczajÄ…cÄ… gruczoÅ‚."					);
+					Doc_PrintLines	( nDocID,  0, "Zawiera ona substancjÄ™ o wÅ‚aÅ›ciwoÅ›ciach leczniczych.");
+					Doc_PrintLines	( nDocID,  0, "Jednak ludzki organizm po jakimÅ› czasie uodparnia siÄ™ na jej dziaÅ‚anie."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Damarok");
 					Doc_Show		( nDocID );
@@ -440,7 +440,7 @@ func void UseBloodMIS ()
 		{
 			Knows_Bloodfly = TRUE;
 			Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-			B_LogEntry (Topic_Bonus, "Teraz wiem, jak uzyskaæ substancjê lecznicz¹ z ¿¹de³ krwiopijców.");
+			B_LogEntry (Topic_Bonus, "Teraz wiem, jak uzyskaÄ‡ substancjÄ™ leczniczÄ… z Å¼Ä…deÅ‚ krwiopijcÃ³w.");
 			B_GivePlayerXP (XP_Ambient);
 		};		
 };
@@ -473,12 +473,12 @@ func void UsePfandbrief ()
 					Doc_SetFont 	( nDocID, -1, FONT_Book    			); 	// -1 -> all pages 
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "D³ug mo¿e zostaæ sp³acony poprzez"					);
-					Doc_PrintLine	( nDocID,  0, "przejêcie zastawionego przedmiotu, którego"					);
-					Doc_PrintLine	( nDocID,  0, "wartoœæ równa jest wartoœci d³ugu."					);
+					Doc_PrintLine	( nDocID,  0, "DÅ‚ug moÅ¼e zostaÄ‡ spÅ‚acony poprzez"					);
+					Doc_PrintLine	( nDocID,  0, "przejÄ™cie zastawionego przedmiotu, ktÃ³rego"					);
+					Doc_PrintLine	( nDocID,  0, "wartoÅ›Ä‡ rÃ³wna jest wartoÅ›ci dÅ‚ugu."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Zastawiono: ozdobny z³oty kielich"					);
-					Doc_PrintLines	( nDocID,  0, "z kolekcji Krwawych Kielichów");
+					Doc_PrintLine	( nDocID,  0, "Zastawiono: ozdobny zÅ‚oty kielich"					);
+					Doc_PrintLines	( nDocID,  0, "z kolekcji Krwawych KielichÃ³w");
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "podpisano");
 					Doc_PrintLine	( nDocID,  0, "Lutero, kupiec"					);
@@ -542,7 +542,7 @@ INSTANCE ItWr_Manowar		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseManowar;
 	scemeName			=	"MAP";
-	description			=   "S³owa pieœni.";
+	description			=   "SÅ‚owa pieÅ›ni.";
 };
 func void UseManowar ()
 {   
@@ -557,13 +557,13 @@ func void UseManowar ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Lament Dominique");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "D¹¿ymy do Jego ³aski.");
+					Doc_PrintLines	( nDocID,  0, "DÄ…Å¼ymy do Jego Å‚aski.");
 					Doc_PrintLines	( nDocID,  0, "Innos chroni mnie i moich braci.");					
-					Doc_PrintLines	( nDocID,  0, "Nie pozwolê siê zatrzymaæ mym wrogom,"					);
-					Doc_PrintLines	( nDocID,  0, "Albowiem w mym sercu p³onie Jego ogieñ."					);
-					Doc_PrintLines	( nDocID,  0, "Moje ostrze s³u¿y tylko Jemu."					);
-					Doc_PrintLines	( nDocID,  0, "Niechaj zabrzmi Jego œwiête imiê."					);
-					Doc_PrintLines	( nDocID,  0, "Ka¿dy, kto mi siê sprzeciwi"					);
+					Doc_PrintLines	( nDocID,  0, "Nie pozwolÄ™ siÄ™ zatrzymaÄ‡ mym wrogom,"					);
+					Doc_PrintLines	( nDocID,  0, "Albowiem w mym sercu pÅ‚onie Jego ogieÅ„."					);
+					Doc_PrintLines	( nDocID,  0, "Moje ostrze sÅ‚uÅ¼y tylko Jemu."					);
+					Doc_PrintLines	( nDocID,  0, "Niechaj zabrzmi Jego Å›wiÄ™te imiÄ™."					);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¼dy, kto mi siÄ™ sprzeciwi"					);
 					Doc_PrintLines	( nDocID,  0, "zginie na miejscu,");
 					Doc_PrintLines	( nDocID,  0, "bom jest wojownikiem Innosa."					);
 					
@@ -577,7 +577,7 @@ func void UseManowar ()
 
 INSTANCE ItWr_KDWLetter		(C_Item)
 {
-	name 				=	"Wiadomoœæ";
+	name 				=	"WiadomoÅ›Ä‡";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -588,7 +588,7 @@ INSTANCE ItWr_KDWLetter		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseKDWLetter;
 	scemeName			=	"MAP";
-	description			=  "Wiadomoœæ";
+	description			=  "WiadomoÅ›Ä‡";
 };
 func void UseKDWLetter ()
 {   
@@ -602,11 +602,11 @@ func void UseKDWLetter ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Opuœciliœmy obóz i zamierzamy udaæ siê do samego centrum destrukcji. Mo¿e tam znajdziemy odpowiedzi, których szukaliœmy przez tyle lat. Jeden Adanos wie, dok¹d zawiedzie nas ta œcie¿ka."					);
+					Doc_PrintLines	( nDocID,  0, "OpuÅ›ciliÅ›my obÃ³z i zamierzamy udaÄ‡ siÄ™ do samego centrum destrukcji. MoÅ¼e tam znajdziemy odpowiedzi, ktÃ³rych szukaliÅ›my przez tyle lat. Jeden Adanos wie, dokÄ…d zawiedzie nas ta Å›cieÅ¼ka."					);
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Adanos niech bêdzie z nami"					);
+					Doc_PrintLines	( nDocID,  0, "Adanos niech bÄ™dzie z nami"					);
 					Doc_PrintLine	( nDocID,  0, "Saturas");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
@@ -630,7 +630,7 @@ INSTANCE ItWr_GilbertLetter		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseGilbertLetter;
 	scemeName			=	"MAP";
-	description			=  "Wiadomoœæ";
+	description			=  "WiadomoÅ›Ä‡";
 };
 func void UseGilbertLetter ()
 {   
@@ -645,8 +645,8 @@ func void UseGilbertLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Mam ju¿ doœæ. Ukrywam siê tutaj strasznie d³ugo, a Bariera podobno upad³a."					);
-					Doc_PrintLines	( nDocID,  0, "Teraz raczej nikt nie bêdzie mnie szuka³. Mam doœæ tej jaskini i ca³ej tej cholernej doliny. Idê do domu.");
+					Doc_PrintLines	( nDocID,  0, "Mam juÅ¼ doÅ›Ä‡. Ukrywam siÄ™ tutaj strasznie dÅ‚ugo, a Bariera podobno upadÅ‚a."					);
+					Doc_PrintLines	( nDocID,  0, "Teraz raczej nikt nie bÄ™dzie mnie szukaÅ‚. Mam doÅ›Ä‡ tej jaskini i caÅ‚ej tej cholernej doliny. IdÄ™ do domu.");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);

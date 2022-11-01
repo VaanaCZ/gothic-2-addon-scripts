@@ -670,7 +670,7 @@ instance Itemhoshi (Npc_Default)
 	CreateInvItems(self,ItRw_Addon_MagicBolt,100);
 
 //------------------------------------------------------------
-//	Alle G¸rtel
+//	Alle G√ºrtel
 //------------------------------------------------------------	
 //Gothic2
 
@@ -1014,8 +1014,8 @@ instance Itemhoshi (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh√§ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen f√ºr Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1102,8 +1102,8 @@ instance TA_Testmodell (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh√§ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen f√ºr Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1169,7 +1169,7 @@ FUNC VOID Rtn_Follow_1500 ()
 
 
 //*************************************************
-//	Testdialoge f¸r Followmode und Guideplayer ----
+//	Testdialoge f√ºr Followmode und Guideplayer ----
 //*************************************************
 
 //--- Exit ---
@@ -1203,7 +1203,7 @@ INSTANCE Info_TA_Testmodell_GuideStart (C_INFO)
 	condition	= DIA_TA_Testmodell_GuideStart_Condition;
 	information	= DIA_TA_Testmodell_GuideStart_Info;
 	permanent	= TRUE;
-	description = "Pokaø Guide_Player!";
+	description = "Poka≈º Guide_Player!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_GuideStart_Condition()
@@ -1232,7 +1232,7 @@ INSTANCE Info_TA_Testmodell_GuideEnd (C_INFO)
 	condition	= DIA_TA_Testmodell_GuideEnd_Condition;
 	information	= DIA_TA_Testmodell_GuideEnd_Info;
 	permanent	= TRUE;
-	description = "ZakoÒcz Guide_Player!";
+	description = "Zako≈Ñcz Guide_Player!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_GuideEnd_Condition()
@@ -1261,7 +1261,7 @@ INSTANCE Info_TA_Testmodell_FollowStart (C_INFO)
 	condition	= DIA_TA_Testmodell_FollowStart_Condition;
 	information	= DIA_TA_Testmodell_FollowStart_Info;
 	permanent	= TRUE;
-	description = "Za mnπ!";
+	description = "Za mnƒÖ!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_FollowStart_Condition()
@@ -1290,7 +1290,7 @@ INSTANCE Info_TA_Testmodell_FollowEnd (C_INFO)
 	condition	= DIA_TA_Testmodell_FollowEnd_Condition;
 	information	= DIA_TA_Testmodell_FollowEnd_Info;
 	permanent	= TRUE;
-	description = "Dalej, za mnπ!";
+	description = "Dalej, za mnƒÖ!";
 };                       
 
 FUNC INT DIA_TA_Testmodell_FollowEnd_Condition()
@@ -1350,8 +1350,8 @@ instance TA_Smalltalkpartner (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 70); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	//------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh√§ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 70); //Grenzen f√ºr Talent-Level liegen bei 30 und 60
 		
 
 	// ------ TA anmelden ------
@@ -1407,7 +1407,7 @@ func void INIT_TA_Testlevel ()
 
 INSTANCE Gold(C_Item)
 {
-	name 				=	"Worek pe≥en z≥ota!";
+	name 				=	"Worek pe≈Çen z≈Çota!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -1425,9 +1425,9 @@ INSTANCE Gold(C_Item)
 FUNC VOID UseGold ()
 {
 	CreateInvItems (self,ItMi_Gold,1000);	
-	PrintScreen	("Otrzyma≥eú 1000 szt. z≥ota", -1, 45, FONT_Screen, 2);
+	PrintScreen	("Otrzyma≈Çe≈õ 1000 szt. z≈Çota", -1, 45, FONT_Screen, 2);
 	Snd_Play ("Geldbeutel");
-	PrintScreen	("Kara za oszustwo: doúwiadczenie -100 ", -1, 55, FONT_Screen, 2);
+	PrintScreen	("Kara za oszustwo: do≈õwiadczenie -100 ", -1, 55, FONT_Screen, 2);
 	if hero.exp >= 100
 	{
 		hero.exp = hero.exp - 100;
@@ -1444,7 +1444,7 @@ FUNC VOID UseGold ()
 
 INSTANCE Armor(C_Item)
 {
-	name 				=	"Worek pe≥en pancerzy!";
+	name 				=	"Worek pe≈Çen pancerzy!";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -1564,7 +1564,7 @@ func void UseHosh1 ()
 
 INSTANCE EnterBanditCamp (C_Item)
 {	
-	name 				=	"Wejúcie do obozu bandytÛw";
+	name 				=	"Wej≈õcie do obozu bandyt√≥w";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -1595,7 +1595,7 @@ INSTANCE PH (C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UsePatrickHelper;
 	scemeName			=	"MAP";
-	description			=   "Ma≥y tester magii";
+	description			=   "Ma≈Çy tester magii";
 };
 func void UsePatrickHelper ()
 {   
@@ -1603,11 +1603,11 @@ func void UsePatrickHelper ()
 	self.attribute[ATR_MANA] =			400;
 	
 	Npc_SetTalentSkill	(self, NPC_TALENT_MAGE, 			6);
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h‰ngt ab von DEX (auf Programmebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKLOCK, 		1); //h√§ngt ab von DEX (auf Programmebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SNEAK, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ACROBAT, 			0);
 	
-	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h‰ngt ab von DEX (auf Scriptebene)
+	Npc_SetTalentSkill	(self, NPC_TALENT_PICKPOCKET, 		1);	//h√§ngt ab von DEX (auf Scriptebene)
 	Npc_SetTalentSkill	(self, NPC_TALENT_SMITH, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_RUNES, 			1);
 	Npc_SetTalentSkill	(self, NPC_TALENT_ALCHEMY, 			1);
@@ -1699,7 +1699,7 @@ func void UsePatrickHelper ()
 
 INSTANCE Hosh4 (C_ITEM) 
 {	
-	name 					=	"Greg wrÛci≥";
+	name 					=	"Greg wr√≥ci≈Ç";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;

@@ -1,6 +1,6 @@
 INSTANCE J1 (C_Item)
 {	
-	name 				=	"Wype³nia potworami obszar dodatku";
+	name 				=	"WypeÅ‚nia potworami obszar dodatku";
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
 	value 				=	0;
@@ -699,7 +699,7 @@ INSTANCE DJG_inserten (C_Item)
 func void UseDJG_inserten ()
 {   
 //************************************************************
-//			Befehle fürs JOLY_Storyhelpletter
+//			Befehle fÃ¼rs JOLY_Storyhelpletter
 //************************************************************
 //B_Kapitelwechsel(1, NewWorld_Zen );
 //B_GiveTradeInv (1);
@@ -863,7 +863,7 @@ FUNC VOID DIA_Namefehlt_KAP6_EXIT_Info()
 
 
 //**************************************
-//Storyhelper light für die Oldworld //Joly: steht wegen verwechslungsgefahr!
+//Storyhelper light fÃ¼r die Oldworld //Joly: steht wegen verwechslungsgefahr!
 //**************************************
 INSTANCE SH_Oldworld (NPC_DEFAULT)
 {
@@ -943,7 +943,7 @@ INSTANCE SH_Oldworld_INFO1 (C_INFO)
 	information		= SH_Oldworld_INFO1_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Rozdzia³ 1"; 
+	description		= "RozdziaÅ‚ 1"; 
 };
 
 FUNC INT SH_Oldworld_INFO1_Condition()
@@ -956,7 +956,7 @@ func VOID SH_Oldworld_INFO1_Info()
 
 	Info_ClearChoices	( SH_Oldworld_INFO1 );
 	Info_AddChoice		( SH_Oldworld_INFO1, DIALOG_BACK			                			, SH_Oldworld_BACK1);
-	Info_AddChoice		( SH_Oldworld_INFO1, "Pocz¹tek rozdzia³u"			                			, SH_Oldworld_KAPITEL1ANFANG);
+	Info_AddChoice		( SH_Oldworld_INFO1, "PoczÄ…tek rozdziaÅ‚u"			                			, SH_Oldworld_KAPITEL1ANFANG);
 };
 //---------------------------------------------------------------------
 //	BACK
@@ -977,7 +977,7 @@ FUNC VOID SH_Oldworld_KAPITEL1ANFANG()
 	B_Kapitelwechsel		(1, OLDWORLD_ZEN );
 	
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	//Info_ClearChoices	( SH_Oldworld_INFO1 );
 	AI_StopProcessInfos	( self );
 };
@@ -992,7 +992,7 @@ INSTANCE SH_Oldworld_INFO2 (C_INFO)
 	information		= SH_Oldworld_INFO2_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Rozdzia³ 2"; 
+	description		= "RozdziaÅ‚ 2"; 
 };
 
 FUNC INT SH_Oldworld_INFO2_Condition()
@@ -1005,7 +1005,7 @@ func VOID SH_Oldworld_INFO2_Info()
 
 	Info_ClearChoices	( SH_Oldworld_INFO2 );
 	Info_AddChoice		( SH_Oldworld_INFO2, DIALOG_BACK			                			, SH_Oldworld_BACK2);
-	Info_AddChoice		( SH_Oldworld_INFO2, "Pocz¹tek rozdzia³u"			                			, SH_Oldworld_KAPITEL2ANFANG);
+	Info_AddChoice		( SH_Oldworld_INFO2, "PoczÄ…tek rozdziaÅ‚u"			                			, SH_Oldworld_KAPITEL2ANFANG);
 };
 //---------------------------------------------------------------------
 //	BACK
@@ -1026,7 +1026,7 @@ FUNC VOID SH_Oldworld_KAPITEL2ANFANG()
 	B_Kapitelwechsel		(2, OLDWORLD_ZEN );
 	
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	//Info_ClearChoices	( SH_Oldworld_INFO2 );
 	AI_StopProcessInfos	( self );
 };
@@ -1042,7 +1042,7 @@ INSTANCE SH_Oldworld_INFO3 (C_INFO)
 	information		= SH_Oldworld_INFO3_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Rozdzia³ 3"; 
+	description		= "RozdziaÅ‚ 3"; 
 };
 
 FUNC INT SH_Oldworld_INFO3_Condition()
@@ -1055,7 +1055,7 @@ func VOID SH_Oldworld_INFO3_Info()
 
 	Info_ClearChoices	( SH_Oldworld_INFO3 );
 	Info_AddChoice		( SH_Oldworld_INFO3, DIALOG_BACK			                			, SH_Oldworld_BACK3);
-	Info_AddChoice		( SH_Oldworld_INFO3, "Pocz¹tek rozdzia³u"			                			, SH_Oldworld_KAPITEL3ANFANG);
+	Info_AddChoice		( SH_Oldworld_INFO3, "PoczÄ…tek rozdziaÅ‚u"			                			, SH_Oldworld_KAPITEL3ANFANG);
 };
 //---------------------------------------------------------------------
 //	BACK
@@ -1080,7 +1080,7 @@ FUNC VOID SH_Oldworld_KAPITEL3ANFANG()
 	B_Kapitelwechsel		(3, OLDWORLD_ZEN );	
 
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO3 );
 	AI_StopProcessInfos	( self );
 };
@@ -1096,7 +1096,7 @@ INSTANCE SH_Oldworld_INFO4 (C_INFO)
 	information		= SH_Oldworld_INFO4_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Rozdzia³ 4"; 
+	description		= "RozdziaÅ‚ 4"; 
 };
 
 FUNC INT SH_Oldworld_INFO4_Condition()
@@ -1109,7 +1109,7 @@ func VOID SH_Oldworld_INFO4_Info()
 
 	Info_ClearChoices	( SH_Oldworld_INFO4 );
 	Info_AddChoice		( SH_Oldworld_INFO4, DIALOG_BACK			                			, SH_Oldworld_BACK4);
-	Info_AddChoice		( SH_Oldworld_INFO4, "Pocz¹tek rozdzia³u"			                			, SH_Oldworld_KAPITEL4ANFANG);
+	Info_AddChoice		( SH_Oldworld_INFO4, "PoczÄ…tek rozdziaÅ‚u"			                			, SH_Oldworld_KAPITEL4ANFANG);
 };
 //---------------------------------------------------------------------
 //	BACK
@@ -1144,7 +1144,7 @@ FUNC VOID SH_Oldworld_KAPITEL4ANFANG()
 	B_NPC_IsAliveCheck (OLDWORLD_ZEN);
 	B_Kapitelwechsel		(4, OLDWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO4 );
 	AI_StopProcessInfos	( self );
 };
@@ -1160,7 +1160,7 @@ INSTANCE SH_Oldworld_INFO5 (C_INFO)
 	information		= SH_Oldworld_INFO5_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Rozdzia³ 5"; 
+	description		= "RozdziaÅ‚ 5"; 
 };
 
 FUNC INT SH_Oldworld_INFO5_Condition()
@@ -1173,7 +1173,7 @@ func VOID SH_Oldworld_INFO5_Info()
 
 	Info_ClearChoices	( SH_Oldworld_INFO5 );
 	Info_AddChoice		( SH_Oldworld_INFO5, DIALOG_BACK			                			, SH_Oldworld_BACK5);
-	Info_AddChoice		( SH_Oldworld_INFO5, "Pocz¹tek rozdzia³u"			                			, SH_Oldworld_KAPITEL5ANFANG);
+	Info_AddChoice		( SH_Oldworld_INFO5, "PoczÄ…tek rozdziaÅ‚u"			                			, SH_Oldworld_KAPITEL5ANFANG);
 };
 //---------------------------------------------------------------------
 //	BACK
@@ -1207,12 +1207,12 @@ FUNC VOID SH_Oldworld_KAPITEL5ANFANG()
 	B_NPC_IsAliveCheck (OLDWORLD_ZEN);
 	B_Kapitelwechsel		(4, OLDWORLD_ZEN );
 	//-------- was neu geschieht --------
-	CreateInvItems (hero,ItAt_IcedragonHeart,1);			//damit man eins für die DI hat!!
+	CreateInvItems (hero,ItAt_IcedragonHeart,1);			//damit man eins fÃ¼r die DI hat!!
 	MIS_AllDragonsDead = TRUE;
 	EnterNW_Kapitel5 = TRUE;	
 	B_Kapitelwechsel		(5, OLDWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO5 );
 	AI_StopProcessInfos	( self );
 };
@@ -1228,7 +1228,7 @@ INSTANCE SH_Oldworld_INFO6 (C_INFO)
 	information		= SH_Oldworld_INFO6_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Rozdzia³ 6"; 
+	description		= "RozdziaÅ‚ 6"; 
 };
 
 FUNC INT SH_Oldworld_INFO6_Condition()
@@ -1241,7 +1241,7 @@ func VOID SH_Oldworld_INFO6_Info()
 
 	Info_ClearChoices	( SH_Oldworld_INFO6 );
 	Info_AddChoice		( SH_Oldworld_INFO6, DIALOG_BACK			                			, SH_Oldworld_BACK6);
-	Info_AddChoice		( SH_Oldworld_INFO6, "Pocz¹tek rozdzia³u"			                			, SH_Oldworld_KAPITEL6ANFANG);
+	Info_AddChoice		( SH_Oldworld_INFO6, "PoczÄ…tek rozdziaÅ‚u"			                			, SH_Oldworld_KAPITEL6ANFANG);
 };
 //---------------------------------------------------------------------
 //	BACK
@@ -1260,7 +1260,7 @@ FUNC VOID SH_Oldworld_KAPITEL6ANFANG()
 	//-------- was neu geschieht --------	
 	B_Kapitelwechsel		(6, OLDWORLD_ZEN );
 	
-	//-------- Menü --------	
+	//-------- MenÃ¼ --------	
 	Info_ClearChoices	( SH_Oldworld_INFO6 );
 	AI_StopProcessInfos	( self );
 };
@@ -1269,7 +1269,7 @@ FUNC VOID SH_Oldworld_KAPITEL6ANFANG()
 instance PC_Hero (NPC_DEFAULT)
 {
 	// ------ SC ------
-	name 		= "Ich der Drachenjäger";
+	name 		= "Ich der DrachenjÃ¤ger";
 	guild		= GIL_DJG;
 	id			= 0;
 	voice		= 15;
@@ -1413,7 +1413,7 @@ instance PC_Hero (NPC_DEFAULT)
 //	Firedragon Testmodell
 //*************************
 
-INSTANCE Dragon_Testmodell	(Mst_Default_Dragon_Fire)  //Joly: Testdrachen für den Talk!
+INSTANCE Dragon_Testmodell	(Mst_Default_Dragon_Fire)  //Joly: Testdrachen fÃ¼r den Talk!
 {
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);

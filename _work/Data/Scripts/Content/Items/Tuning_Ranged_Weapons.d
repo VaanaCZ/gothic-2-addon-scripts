@@ -11,7 +11,7 @@ const int Damage_SldBogen			= 30;
 const int Condition_SldBogen		= 25;
 const int Value_SldBogen			= 200;
 
-//Bögen
+//BÃ¶gen
 //Kapitel 1
 const int Damage_Kurzbogen			= 15; 	
 const int Condition_Kurzbogen		= 10;
@@ -67,7 +67,7 @@ const int Condition_Drachenbogen	= 160;
 const int Value_Drachenbogen		= 1600;	
 
 
-//Armbrüste                                                                         	     	
+//ArmbrÃ¼ste                                                                         	     	
 //Kapitel 1                                                                         	     	
 const int Damage_Jagdarmbrust		= 30;
 const int Condition_Jagdarmbrust	= 20; 

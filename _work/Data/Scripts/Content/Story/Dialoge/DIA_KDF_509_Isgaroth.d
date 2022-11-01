@@ -19,11 +19,11 @@ FUNC INT DIA_Isgaroth_EXIT_Condition()
 
 FUNC VOID DIA_Isgaroth_EXIT_Info()
 {
-	AI_Output	(self ,other,"DIA_Isgaroth_EXIT_01_00"); //Niechaj Innos zawsze ma ciê w swojej opiece.
+	AI_Output	(self ,other,"DIA_Isgaroth_EXIT_01_00"); //Niechaj Innos zawsze ma ciÄ™ w swojej opiece.
 	AI_StopProcessInfos (self);
 };
 //****************************************************************************
-//	Begrüssung
+//	BegrÃ¼ssung
 //****************************************************************************
 
 INSTANCE DIA_Isgaroth_Hello   (C_INFO)
@@ -44,7 +44,7 @@ FUNC INT DIA_Isgaroth_Hello_Condition()
 };
 FUNC VOID DIA_Isgaroth_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Isgaroth_Hello_01_00"); //Niech Innos bêdzie z tob¹. Co mogê dla ciebie zrobiæ, wêdrowcze?
+	AI_Output (self ,other,"DIA_Isgaroth_Hello_01_00"); //Niech Innos bÄ™dzie z tobÄ…. Co mogÄ™ dla ciebie zrobiÄ‡, wÄ™drowcze?
 }; 
 //****************************************************************************
 //	Segen
@@ -56,7 +56,7 @@ INSTANCE DIA_Isgaroth_Segen   (C_INFO)
 	condition   = DIA_Isgaroth_Segen_Condition;
 	information = DIA_Isgaroth_Segen_Info;
 	permanent   = TRUE;
-	description	= "Pob³ogos³aw mnie!";
+	description	= "PobÅ‚ogosÅ‚aw mnie!";
 };
 FUNC INT DIA_Isgaroth_Segen_Condition()
 {
@@ -64,8 +64,8 @@ FUNC INT DIA_Isgaroth_Segen_Condition()
 };
 FUNC VOID DIA_Isgaroth_Segen_Info()
 {
-	AI_Output (other ,self,"DIA_Isgaroth_Segen_15_00"); //Pob³ogos³aw mnie!
-	AI_Output (self ,other,"DIA_Isgaroth_Segen_01_01"); //B³ogos³awiê ciê w imieniu Innosa. Niechaj ogieñ naszego Pana zawsze p³onie w twym sercu, aby dawaæ ci si³ê do postêpowania zgodnie z jego naukami.
+	AI_Output (other ,self,"DIA_Isgaroth_Segen_15_00"); //PobÅ‚ogosÅ‚aw mnie!
+	AI_Output (self ,other,"DIA_Isgaroth_Segen_01_01"); //BÅ‚ogosÅ‚awiÄ™ ciÄ™ w imieniu Innosa. Niechaj ogieÅ„ naszego Pana zawsze pÅ‚onie w twym sercu, aby dawaÄ‡ ci siÅ‚Ä™ do postÄ™powania zgodnie z jego naukami.
 	
 	Isgaroth_Segen = TRUE;
 }; 
@@ -79,7 +79,7 @@ INSTANCE DIA_Isgaroth_Wolf   (C_INFO)
 	condition   = DIA_Isgaroth_Wolf_Condition;
 	information = DIA_Isgaroth_Wolf_Info;
 	permanent   = FALSE;
-	description	= "Przysy³a mnie Sergio...";
+	description	= "PrzysyÅ‚a mnie Sergio...";
 };
 FUNC INT DIA_Isgaroth_Wolf_Condition()
 {	
@@ -92,11 +92,11 @@ FUNC INT DIA_Isgaroth_Wolf_Condition()
 };
 FUNC VOID DIA_Isgaroth_Wolf_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //Przys³a³ mnie Sergio. Przej¹³em jego zadanie. A zatem, o co chodzi?
-	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //W okolicy pojawi³ siê ostatnio ciemny wilk. ZnajdŸ go i zabij.
+	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //PrzysÅ‚aÅ‚ mnie Sergio. PrzejÄ…Å‚em jego zadanie. A zatem, o co chodzi?
+	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //W okolicy pojawiÅ‚ siÄ™ ostatnio ciemny wilk. ZnajdÅº go i zabij.
 
 	MIS_IsgarothWolf = LOG_RUNNING;
-	B_LogEntry (Topic_IsgarothWolf,"W pobli¿u kaplicy krêci siê mroczny wilk. Mam go znaleŸæ i zabiæ.");
+	B_LogEntry (Topic_IsgarothWolf,"W pobliÅ¼u kaplicy krÄ™ci siÄ™ mroczny wilk. Mam go znaleÅºÄ‡ i zabiÄ‡.");
 	
 };
 //********************************************************************************
@@ -109,7 +109,7 @@ INSTANCE DIA_Isgaroth_tot   (C_INFO)
 	condition   = DIA_Isgaroth_tot_Condition;
 	information = DIA_Isgaroth_tot_Info;
 	permanent   = TRUE;
-	description	= "Zabi³em wilka.";
+	description	= "ZabiÅ‚em wilka.";
 };
 FUNC INT DIA_Isgaroth_tot_Condition()
 {	
@@ -123,8 +123,8 @@ FUNC INT DIA_Isgaroth_tot_Condition()
 };
 FUNC VOID DIA_Isgaroth_tot_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_tot_15_00"); //Zabi³em wilka.
-	AI_Output (self ,other,"DIA_Isgaroth_tot_01_01"); //Dobra robota, nowicjuszu. Jesteœ dzielnym cz³owiekiem. A teraz wracaj do klasztoru, do swoich obowi¹zków.
+	AI_Output (other,self ,"DIA_Isgaroth_tot_15_00"); //ZabiÅ‚em wilka.
+	AI_Output (self ,other,"DIA_Isgaroth_tot_01_01"); //Dobra robota, nowicjuszu. JesteÅ› dzielnym czÅ‚owiekiem. A teraz wracaj do klasztoru, do swoich obowiÄ…zkÃ³w.
 	
 	MIS_IsgarothWolf = LOG_SUCCESS;
 	B_GivePlayerXP (XP_IsgarothWolf);
@@ -154,10 +154,10 @@ FUNC INT DIA_Isgaroth_Job_Condition()
 FUNC VOID DIA_Isgaroth_Job_Info()
 {
 	AI_Output (other,self ,"DIA_Isgaroth_Job_15_00"); //Co tutaj robisz?
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_01"); //Jestem Magiem Ognia. Kap³anem boga Innosa.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Innos jest najwy¿szym bogiem, stworzycielem ognia i panem sprawiedliwoœci, a to jest jego kaplica.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //Ludzie przychodz¹ tutaj, kiedy chc¹ siê pomodliæ do Innosa lub otrzymaæ b³ogos³awieñstwo.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //Za niewielk¹ op³at¹ mo¿esz ode mnie otrzymaæ wiele po¿ytecznych przedmiotów.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_01"); //Jestem Magiem Ognia. KapÅ‚anem boga Innosa.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Innos jest najwyÅ¼szym bogiem, stworzycielem ognia i panem sprawiedliwoÅ›ci, a to jest jego kaplica.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //Ludzie przychodzÄ… tutaj, kiedy chcÄ… siÄ™ pomodliÄ‡ do Innosa lub otrzymaÄ‡ bÅ‚ogosÅ‚awieÅ„stwo.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //Za niewielkÄ… opÅ‚atÄ… moÅ¼esz ode mnie otrzymaÄ‡ wiele poÅ¼ytecznych przedmiotÃ³w.
 	
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
 	B_LogEntry (Topic_KlosterTrader,"Mistrz Isgaroth sprzedaje przydatne przedmioty magiczne w kaplicy przed klasztorem.");
@@ -173,7 +173,7 @@ INSTANCE DIA_Isgaroth_Trade   (C_INFO)
 	information = DIA_Isgaroth_Trade_Info;
 	permanent   = TRUE;
 	trade		= TRUE;
-	description	= "Poka¿ mi swoje towary.";
+	description	= "PokaÅ¼ mi swoje towary.";
 };
 FUNC INT DIA_Isgaroth_Trade_Condition()
 {	
@@ -185,7 +185,7 @@ FUNC INT DIA_Isgaroth_Trade_Condition()
 FUNC VOID DIA_Isgaroth_Trade_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other ,self,"DIA_Isgaroth_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other ,self,"DIA_Isgaroth_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 };
 //********************************************************************************
 //	Kloster
@@ -197,7 +197,7 @@ INSTANCE DIA_Isgaroth_Kloster   (C_INFO)
 	condition   = DIA_Isgaroth_Kloster_Condition;
 	information = DIA_Isgaroth_Kloster_Info;
 	permanent   = FALSE;
-	description	= "Dok¹d prowadzi ta œcie¿ka?";
+	description	= "DokÄ…d prowadzi ta Å›cieÅ¼ka?";
 };
 FUNC INT DIA_Isgaroth_Kloster_Condition()
 {	
@@ -209,21 +209,21 @@ FUNC INT DIA_Isgaroth_Kloster_Condition()
 };
 FUNC VOID DIA_Isgaroth_Kloster_Info()
 {
-	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //Dok¹d prowadzi ta œcie¿ka?
-	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //Ta œcie¿ka zaprowadzi ciê prosto do klasztoru Magów Ognia. Jednak wstêp tam maj¹ tylko s³udzy Innosa.
+	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //DokÄ…d prowadzi ta Å›cieÅ¼ka?
+	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //Ta Å›cieÅ¼ka zaprowadzi ciÄ™ prosto do klasztoru MagÃ³w Ognia. Jednak wstÄ™p tam majÄ… tylko sÅ‚udzy Innosa.
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_02"); //Jeœli chcesz zostaæ przyjêty jako nowicjusz, musisz przynieœæ owcê i...
+		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_02"); //JeÅ›li chcesz zostaÄ‡ przyjÄ™ty jako nowicjusz, musisz przynieÅ›Ä‡ owcÄ™ i...
 		B_Say_Gold (self, other,Summe_Kloster);
 		
 		Log_CreateTopic (Topic_Kloster,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Kloster,LOG_RUNNING);
-		B_LogEntry (Topic_Kloster,"Aby zostaæ nowicjuszem w klasztorze Innosa, potrzebujê owcy i 1000 sztuk z³ota.");
+		B_LogEntry (Topic_Kloster,"Aby zostaÄ‡ nowicjuszem w klasztorze Innosa, potrzebujÄ™ owcy i 1000 sztuk zÅ‚ota.");
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //Poniewa¿ przy³¹czy³eœ siê ju¿ do innej grupy, nie zostaniesz wpuszczony do œrodka.
+		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //PoniewaÅ¼ przyÅ‚Ä…czyÅ‚eÅ› siÄ™ juÅ¼ do innej grupy, nie zostaniesz wpuszczony do Å›rodka.
 	};
 };
 
@@ -239,7 +239,7 @@ INSTANCE DIA_Isgaroth_Vatras   (C_INFO)
 	condition   = DIA_Isgaroth_Vatras_Condition;
 	information = DIA_Isgaroth_Vatras_Info;
 	permanent   = TRUE;
-	description	= "Mam wiadomoœæ od Vatrasa.";
+	description	= "Mam wiadomoÅ›Ä‡ od Vatrasa.";
 };
 FUNC INT DIA_Isgaroth_Vatras_Condition()
 {
@@ -252,9 +252,9 @@ FUNC INT DIA_Isgaroth_Vatras_Condition()
 };
 FUNC VOID DIA_Isgaroth_Vatras_Info()
 {
-	AI_Output (other,self ,"DIA_ISgaroth_Vatras_15_00"); //Mam wiadomoœæ od Vatrasa.
-	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Co to za wiadomoœæ?
-	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //List. Proszê, oto on.
+	AI_Output (other,self ,"DIA_ISgaroth_Vatras_15_00"); //Mam wiadomoÅ›Ä‡ od Vatrasa.
+	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Co to za wiadomoÅ›Ä‡?
+	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //List. ProszÄ™, oto on.
 	
 	if (Npc_HasItems (other,ItWr_VatrasMessage) == 1)
 	{
@@ -264,8 +264,8 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		};
 		B_UseFakeScroll();
 	
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_03"); //Dobrze, mo¿esz powiedzieæ Vatrasowi, ¿e odebra³em jego wiadomoœæ.
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_04"); //Przyjmij jako zap³atê te magiczne mikstury, na pewno ci siê przydadz¹.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_03"); //Dobrze, moÅ¼esz powiedzieÄ‡ Vatrasowi, Å¼e odebraÅ‚em jego wiadomoÅ›Ä‡.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_04"); //Przyjmij jako zapÅ‚atÄ™ te magiczne mikstury, na pewno ci siÄ™ przydadzÄ….
 		
 		CreateInvItems (self, ItPo_Health_02,2);
 		B_GiveInvItems (self,other,ItPo_Health_02,2);
@@ -281,8 +281,8 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		};
 		B_UseFakeScroll ();
 	
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //Pieczêæ jest z³amana. Coœ ty sobie wyobra¿a³, g³upcze!
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_06"); //IdŸ i powiedz Vatrasowi, ¿e odebra³em jego wiadomoœæ.
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //PieczÄ™Ä‡ jest zÅ‚amana. CoÅ› ty sobie wyobraÅ¼aÅ‚, gÅ‚upcze!
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_06"); //IdÅº i powiedz Vatrasowi, Å¼e odebraÅ‚em jego wiadomoÅ›Ä‡.
 		AI_StopProcessInfos (self);
 	};	
 	Vatras_Return = TRUE;

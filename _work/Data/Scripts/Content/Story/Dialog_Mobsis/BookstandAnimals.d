@@ -14,7 +14,7 @@ var int Animals_2_permanent;
 var int Animals_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals1_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -31,27 +31,27 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "£owy i zwierzyna"					);
+					Doc_PrintLine	( nDocID,  0, "Åowy i zwierzyna"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Ka¿de stworzenie mo¿e pozostawiæ po sobie trofeum, które zwiêkszy maj¹tek i s³awê doœwiadczonego myœliwego."						);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¼de stworzenie moÅ¼e pozostawiÄ‡ po sobie trofeum, ktÃ³re zwiÄ™kszy majÄ…tek i sÅ‚awÄ™ doÅ›wiadczonego myÅ›liwego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Myœliwy taki bêdzie te¿ wiedzia³, jak preparowaæ swe zdobycze i pozyskiwaæ trofea.");
+					Doc_PrintLines	( nDocID,  0, "MyÅ›liwy taki bÄ™dzie teÅ¼ wiedziaÅ‚, jak preparowaÄ‡ swe zdobycze i pozyskiwaÄ‡ trofea.");
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Pozyskiwanie k³ów"						);
-					Doc_PrintLines	( nDocID,  0, "K³y to dla wielu zwierz¹t broñ, a najcenniejsze s¹ te, które mo¿na pozyskaæ z truche³ wilków, zêbaczy, cieniostworów, wê¿y b³otnych i trolli."						);
+					Doc_PrintLine	( nDocID,  0, "Pozyskiwanie kÅ‚Ã³w"						);
+					Doc_PrintLines	( nDocID,  0, "KÅ‚y to dla wielu zwierzÄ…t broÅ„, a najcenniejsze sÄ… te, ktÃ³re moÅ¼na pozyskaÄ‡ z trucheÅ‚ wilkÃ³w, zÄ™baczy, cieniostworÃ³w, wÄ™Å¼y bÅ‚otnych i trolli."						);
 				
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Obdzieranie ze skóry"						);
-					Doc_PrintLines	( nDocID,  1, "Umiejêtnoœæ ceniona wœród doœwiadczonych myœliwych, gdy¿ pozwala na pozyskiwanie wartoœciowych skór owiec, wilków, cieniostworów,"						); 
-					Doc_PrintLines	( nDocID,  1, "wê¿y b³otnych i topielców."						);
+					Doc_PrintLine	( nDocID,  1, "Obdzieranie ze skÃ³ry"						);
+					Doc_PrintLines	( nDocID,  1, "UmiejÄ™tnoÅ›Ä‡ ceniona wÅ›rÃ³d doÅ›wiadczonych myÅ›liwych, gdyÅ¼ pozwala na pozyskiwanie wartoÅ›ciowych skÃ³r owiec, wilkÃ³w, cieniostworÃ³w,"						); 
+					Doc_PrintLines	( nDocID,  1, "wÄ™Å¼y bÅ‚otnych i topielcÃ³w."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Pozyskiwanie szponów"						);
-					Doc_PrintLines	( nDocID,  1, "Mo¿na je praktykowaæ na jaszczurach, zêbaczach, topielcach i cieniostworach."						);
+					Doc_PrintLine	( nDocID,  1, "Pozyskiwanie szponÃ³w"						);
+					Doc_PrintLines	( nDocID,  1, "MoÅ¼na je praktykowaÄ‡ na jaszczurach, zÄ™baczach, topielcach i cieniostworach."						);
 					Doc_Show		( nDocID );
 					
 					if (Animals_1_permanent == FALSE)
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandAnimals1_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals2_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -79,26 +79,26 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "£owy i zwierzyna"					);
+					Doc_PrintLine	( nDocID,  0, "Åowy i zwierzyna"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Ka¿de stworzenie mo¿e pozostawiæ po sobie trofeum, które zwiêkszy maj¹tek i s³awê doœwiadczonego myœliwego."						);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¼de stworzenie moÅ¼e pozostawiÄ‡ po sobie trofeum, ktÃ³re zwiÄ™kszy majÄ…tek i sÅ‚awÄ™ doÅ›wiadczonego myÅ›liwego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Krwiopijcy"			);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Wypatroszenie tych lataj¹cych potworów nie jest proste, mo¿na im jednak"					); 
-					Doc_PrintLines	( nDocID,  0, "usun¹æ skrzyd³a i wyj¹æ ¿¹d³a." );
-					Doc_PrintLines	( nDocID,  0, "I jedne, i drugie stanowi¹ cenne trofea myœliwskie."	);
+					Doc_PrintLines	( nDocID,  0, "Wypatroszenie tych latajÄ…cych potworÃ³w nie jest proste, moÅ¼na im jednak"					); 
+					Doc_PrintLines	( nDocID,  0, "usunÄ…Ä‡ skrzydÅ‚a i wyjÄ…Ä‡ Å¼Ä…dÅ‚a." );
+					Doc_PrintLines	( nDocID,  0, "I jedne, i drugie stanowiÄ… cenne trofea myÅ›liwskie."	);
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Polne bestie i pe³zacze atakuj¹ za pomoc¹ ¿uwaczek. Szczególnie cenne s¹ narz¹dy"						);
-					Doc_PrintLines	( nDocID,  1, "tych drugich, zawieraj¹ce wydzielinê, której wypicie zwiêksza moc magiczn¹."						);
-					Doc_PrintLines	( nDocID,  1, "Nie nale¿y nadu¿ywaæ tego cudownego œrodka, gdy¿ z czasem organizm ludzki przestaje nañ reagowaæ."						);   
-					Doc_PrintLines	( nDocID,  1, "Podobnie popularne s¹ p³yty pancerza pe³zacza, z których mo¿na tworzyæ bardzo dobre zbroje."						);
+					Doc_PrintLines	( nDocID,  1, "Polne bestie i peÅ‚zacze atakujÄ… za pomocÄ… Å¼uwaczek. SzczegÃ³lnie cenne sÄ… narzÄ…dy"						);
+					Doc_PrintLines	( nDocID,  1, "tych drugich, zawierajÄ…ce wydzielinÄ™, ktÃ³rej wypicie zwiÄ™ksza moc magicznÄ…."						);
+					Doc_PrintLines	( nDocID,  1, "Nie naleÅ¼y naduÅ¼ywaÄ‡ tego cudownego Å›rodka, gdyÅ¼ z czasem organizm ludzki przestaje naÅ„ reagowaÄ‡."						);   
+					Doc_PrintLines	( nDocID,  1, "Podobnie popularne sÄ… pÅ‚yty pancerza peÅ‚zacza, z ktÃ³rych moÅ¼na tworzyÄ‡ bardzo dobre zbroje."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, " "						);
 					Doc_Show		( nDocID );
@@ -112,7 +112,7 @@ FUNC VOID Use_BookstandAnimals2_S1()		//Tierbücher
 	};
 };
 
-FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
+FUNC VOID Use_BookstandAnimals3_S1()		//TierbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -129,25 +129,25 @@ FUNC VOID Use_BookstandAnimals3_S1()		//Tierbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "£owy i zwierzyna"					);
+					Doc_PrintLine	( nDocID,  0, "Åowy i zwierzyna"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Ka¿de stworzenie mo¿e pozostawiæ po sobie trofeum, które zwiêkszy maj¹tek i s³awê doœwiadczonego myœliwego."						);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¼de stworzenie moÅ¼e pozostawiÄ‡ po sobie trofeum, ktÃ³re zwiÄ™kszy majÄ…tek i sÅ‚awÄ™ doÅ›wiadczonego myÅ›liwego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Ognisty jaszczur"						);
-					Doc_PrintLines	( nDocID,  0, "Ta jaszczuropodobna, ziej¹ca ogniem istota jest wyj¹tkowo groŸna dla ka¿dego przebywaj¹cego w pobli¿u."						);
-					Doc_PrintLines	( nDocID,  0, "Jej cenny jêzyk mo¿e spróbowaæ zdobyæ tylko ktoœ dysponuj¹cy jak¹œ ochron¹ przed ogniem."	);		
+					Doc_PrintLines	( nDocID,  0, "Ta jaszczuropodobna, ziejÄ…ca ogniem istota jest wyjÄ…tkowo groÅºna dla kaÅ¼dego przebywajÄ…cego w pobliÅ¼u."						);
+					Doc_PrintLines	( nDocID,  0, "Jej cenny jÄ™zyk moÅ¼e sprÃ³bowaÄ‡ zdobyÄ‡ tylko ktoÅ› dysponujÄ…cy jakÄ…Å› ochronÄ… przed ogniem."	);		
 			
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLine	( nDocID,  1, "Cieniostwór"		);
+					Doc_PrintLine	( nDocID,  1, "CieniostwÃ³r"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Wiêkszoœæ z tych stworzeñ to zaszyci g³êboko w lasach samotnicy."						); 
-					Doc_PrintLines	( nDocID,  1, "Pozosta³o ich na œwiecie bardzo niewiele, nie stanowi¹ wiêc zagro¿enia dla ludzi - chyba ¿e wkroczy siê na ich tereny ³owieckie."						);
-					Doc_PrintLines	( nDocID,  1, "Dobrze wiedzieæ, gdzie znajduj¹ siê te tereny - róg cieniostwora to cenne trofeum myœliwskie, które jednak trzeba"						);
-					Doc_PrintLines	( nDocID,  1, "umieæ odpowiednio preparowaæ."						);
+					Doc_PrintLines	( nDocID,  1, "WiÄ™kszoÅ›Ä‡ z tych stworzeÅ„ to zaszyci gÅ‚Ä™boko w lasach samotnicy."						); 
+					Doc_PrintLines	( nDocID,  1, "PozostaÅ‚o ich na Å›wiecie bardzo niewiele, nie stanowiÄ… wiÄ™c zagroÅ¼enia dla ludzi - chyba Å¼e wkroczy siÄ™ na ich tereny Å‚owieckie."						);
+					Doc_PrintLines	( nDocID,  1, "Dobrze wiedzieÄ‡, gdzie znajdujÄ… siÄ™ te tereny - rÃ³g cieniostwora to cenne trofeum myÅ›liwskie, ktÃ³re jednak trzeba"						);
+					Doc_PrintLines	( nDocID,  1, "umieÄ‡ odpowiednio preparowaÄ‡."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 							

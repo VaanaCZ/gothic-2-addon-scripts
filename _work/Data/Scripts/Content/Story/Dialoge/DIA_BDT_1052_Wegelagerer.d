@@ -31,7 +31,7 @@ INSTANCE DIA_1052_Wegelagerer_Hello   (C_INFO)
 	condition   = DIA_1052_Wegelagerer_Hello_Condition;
 	information = DIA_1052_Wegelagerer_Hello_Info;
 	permanent   = FALSE;
-	description = "Kim jesteú?";
+	description = "Kim jeste≈õ?";
 };
 
 FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
@@ -47,10 +47,10 @@ FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
 
 FUNC VOID DIA_1052_Wegelagerer_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Kim jesteú?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Co to ma byÊ? Przes≥uchanie?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Nie mam ci nic do powiedzenia, ale moøe chcesz pogadaÊ z moim kolegπ.
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Tylko uwaøaj, on nie lubi obcych.
+	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Kim jeste≈õ?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //Co to ma byƒá? Przes≈Çuchanie?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Nie mam ci nic do powiedzenia, ale mo≈ºe chcesz pogadaƒá z moim kolegƒÖ.
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Tylko uwa≈ºaj, on nie lubi obcych.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ func int DIA_Wegelagerer_ANGRIFF2_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF2_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //No i dobrze, koleøko. Doigra≥eú siÍ.
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //No i dobrze, kole≈ºko. Doigra≈Çe≈õ siƒô.
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,40);
 

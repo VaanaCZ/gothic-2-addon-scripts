@@ -82,111 +82,111 @@ FUNC INT DIA_Moe_Hallo_Condition()
 };
 FUNC VOID DIA_Moe_Hallo_Info()
 {
-	AI_Output (self ,other,"DIA_Moe_Hallo_01_00"); //Hej, nie znam ciê... Czego tutaj szukasz? Mo¿e knajpy?
+	AI_Output (self ,other,"DIA_Moe_Hallo_01_00"); //Hej, nie znam ciÄ™... Czego tutaj szukasz? MoÅ¼e knajpy?
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Nie, nie idê do knajpy... (KONIEC)",DIA_Moe_Hallo_Gehen);
-	Info_AddChoice 	  (DIA_Moe_Hallo,"Wiêc to tutaj zbiera siê ca³e towarzystwo...",DIA_Moe_Hallo_Witz);
-	Info_AddChoice 	  (DIA_Moe_Hallo,"Tak, masz coœ przeciwko?",DIA_Moe_Hallo_Reizen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Nie, nie idÄ™ do knajpy... (KONIEC)",DIA_Moe_Hallo_Gehen);
+	Info_AddChoice 	  (DIA_Moe_Hallo,"WiÄ™c to tutaj zbiera siÄ™ caÅ‚e towarzystwo...",DIA_Moe_Hallo_Witz);
+	Info_AddChoice 	  (DIA_Moe_Hallo,"Tak, masz coÅ› przeciwko?",DIA_Moe_Hallo_Reizen);
 };
 FUNC VOID DIA_Moe_Hallo_Gehen()
 {
 	AI_Output (other ,self,"DIA_Moe_Hallo_Gehen_15_00"); //Nie, nie szukam knajpy...
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_01"); //Tak, te¿ bym tak powiedzia³. Ale to nie ma znaczenia - i dlatego mo¿emy od razu przejœæ do interesów.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_02"); //Poniewa¿ jesteœ tu nowy, mam dla ciebie propozycjê. Zap³acisz mi 50 sztuk z³ota, a ja pozwolê ci wejœæ.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_03"); //Tyle kosztuje wejœcie do knajpy.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_01"); //Tak, teÅ¼ bym tak powiedziaÅ‚. Ale to nie ma znaczenia - i dlatego moÅ¼emy od razu przejÅ›Ä‡ do interesÃ³w.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_02"); //PoniewaÅ¼ jesteÅ› tu nowy, mam dla ciebie propozycjÄ™. ZapÅ‚acisz mi 50 sztuk zÅ‚ota, a ja pozwolÄ™ ci wejÅ›Ä‡.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Gehen_01_03"); //Tyle kosztuje wejÅ›cie do knajpy.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Dowiedzmy siê, co na ten temat s¹dzi stra¿...",DIA_Moe_Hallo_Miliz);
-	Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet z³amanego grosza!",DIA_Moe_Hallo_Vergisses);
-	Info_AddChoice    (DIA_Moe_Hallo,"W porz¹dku, zap³acê.",DIA_Moe_Hallo_Zahlen);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ale ja nie chcê wejœæ do knajpy!",DIA_Moe_Hallo_Kneipe);
+	Info_AddChoice    (DIA_Moe_Hallo,"Dowiedzmy siÄ™, co na ten temat sÄ…dzi straÅ¼...",DIA_Moe_Hallo_Miliz);
+	Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet zÅ‚amanego grosza!",DIA_Moe_Hallo_Vergisses);
+	Info_AddChoice    (DIA_Moe_Hallo,"W porzÄ…dku, zapÅ‚acÄ™.",DIA_Moe_Hallo_Zahlen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ale ja nie chcÄ™ wejÅ›Ä‡ do knajpy!",DIA_Moe_Hallo_Kneipe);
 };
 FUNC VOID DIA_Moe_Hallo_Kneipe()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Kneipe_15_00"); //Ale ja nie chcê wejœæ do knajpy!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Kneipe_01_01"); //Taaak, prêdzej czy póŸniej ka¿dy chce wejœæ do knajpy. Wiêc równie dobrze mo¿esz mi zap³aciæ ju¿ teraz - i potem bêdziesz mia³ spokój.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Kneipe_15_00"); //Ale ja nie chcÄ™ wejÅ›Ä‡ do knajpy!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Kneipe_01_01"); //Taaak, prÄ™dzej czy pÃ³Åºniej kaÅ¼dy chce wejÅ›Ä‡ do knajpy. WiÄ™c rÃ³wnie dobrze moÅ¼esz mi zapÅ‚aciÄ‡ juÅ¼ teraz - i potem bÄ™dziesz miaÅ‚ spokÃ³j.
 };
 FUNC VOID  DIA_Moe_Hallo_Witz()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Witz_15_00"); //Ach, wiêc to tutaj zbiera siê ca³e towarzystwo. £atwo pomyliæ to miejsce z pa³acem gubernatora...
-	AI_Output (self ,other,"DIA_Moe_Hallo_Witz_01_01"); //Hej, daruj sobie te kiepskie dowcipy, jeœli nie chcesz zbieraæ zêbów z ulicy.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Witz_15_00"); //Ach, wiÄ™c to tutaj zbiera siÄ™ caÅ‚e towarzystwo. Åatwo pomyliÄ‡ to miejsce z paÅ‚acem gubernatora...
+	AI_Output (self ,other,"DIA_Moe_Hallo_Witz_01_01"); //Hej, daruj sobie te kiepskie dowcipy, jeÅ›li nie chcesz zbieraÄ‡ zÄ™bÃ³w z ulicy.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Widzê, ¿e nie obêdzie siê bez bijatyki...",DIA_Moe_Hallo_Pruegel);
-	Info_AddChoice    (DIA_Moe_Hallo,"Za ma³o masz problemów?",DIA_Moe_Hallo_Aerger);
-	Info_AddChoice    (DIA_Moe_Hallo,"Uspokój siê, chcê tylko wypiæ piwo.",DIA_Moe_Hallo_Ruhig);
-	Info_AddChoice    (DIA_Moe_Hallo,"Ale ja nie chcê wejœæ do knajpy!",DIA_Moe_Hallo_Kneipe);
+	Info_AddChoice    (DIA_Moe_Hallo,"WidzÄ™, Å¼e nie obÄ™dzie siÄ™ bez bijatyki...",DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice    (DIA_Moe_Hallo,"Za maÅ‚o masz problemÃ³w?",DIA_Moe_Hallo_Aerger);
+	Info_AddChoice    (DIA_Moe_Hallo,"UspokÃ³j siÄ™, chcÄ™ tylko wypiÄ‡ piwo.",DIA_Moe_Hallo_Ruhig);
+	Info_AddChoice    (DIA_Moe_Hallo,"Ale ja nie chcÄ™ wejÅ›Ä‡ do knajpy!",DIA_Moe_Hallo_Kneipe);
 };
 FUNC VOID DIA_Moe_Hallo_Reizen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Reizen_15_00"); //Tak, masz coœ przeciwko?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Reizen_01_01"); //Nie masz tu czego szukaæ, kurduplu.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Reizen_15_00"); //Tak, masz coÅ› przeciwko?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Reizen_01_01"); //Nie masz tu czego szukaÄ‡, kurduplu.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Widzê, ¿e nie obêdzie siê bez bijatyki...",DIA_Moe_Hallo_Pruegel);
-	Info_AddChoice    (DIA_Moe_Hallo,"Za ma³o masz problemów?",DIA_Moe_Hallo_Aerger);
-	Info_AddChoice    (DIA_Moe_Hallo,"Uspokój siê, chcê tylko wypiæ piwo.",DIA_Moe_Hallo_Ruhig);
+	Info_AddChoice    (DIA_Moe_Hallo,"WidzÄ™, Å¼e nie obÄ™dzie siÄ™ bez bijatyki...",DIA_Moe_Hallo_Pruegel);
+	Info_AddChoice    (DIA_Moe_Hallo,"Za maÅ‚o masz problemÃ³w?",DIA_Moe_Hallo_Aerger);
+	Info_AddChoice    (DIA_Moe_Hallo,"UspokÃ³j siÄ™, chcÄ™ tylko wypiÄ‡ piwo.",DIA_Moe_Hallo_Ruhig);
 };
 FUNC VOID DIA_Moe_Hallo_Miliz()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Miliz_15_00"); //Dowiedzmy siê, co na ten temat s¹dzi stra¿...
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_01"); //Na twoim miejscu nie liczy³bym na stra¿. Stra¿nicy tu nie przychodz¹.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_02"); //Jesteœmy w dzielnicy portowej, cwaniaczku. Baliby siê tutaj z kimkolwiek zadrzeæ.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_03"); //Stra¿nicy mog¹ co najwy¿ej chodziæ do 'Czerwonej Latarni'. A zatem, jak sam widzisz, to sprawa tylko miêdzy nami.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Miliz_15_00"); //Dowiedzmy siÄ™, co na ten temat sÄ…dzi straÅ¼...
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_01"); //Na twoim miejscu nie liczyÅ‚bym na straÅ¼. StraÅ¼nicy tu nie przychodzÄ….
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_02"); //JesteÅ›my w dzielnicy portowej, cwaniaczku. Baliby siÄ™ tutaj z kimkolwiek zadrzeÄ‡.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Miliz_01_03"); //StraÅ¼nicy mogÄ… co najwyÅ¼ej chodziÄ‡ do 'Czerwonej Latarni'. A zatem, jak sam widzisz, to sprawa tylko miÄ™dzy nami.
 };
 FUNC VOID DIA_Moe_Hallo_Pruegel()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Pruegel_15_00"); //Rozumiem. Widzê, ¿e nie obejdzie siê bez bijatyki.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Pruegel_01_01"); //Proszê bardzo, spróbuj. Poka¿, co potrafisz!
+	AI_Output (other ,self,"DIA_Moe_Hallo_Pruegel_15_00"); //Rozumiem. WidzÄ™, Å¼e nie obejdzie siÄ™ bez bijatyki.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Pruegel_01_01"); //ProszÄ™ bardzo, sprÃ³buj. PokaÅ¼, co potrafisz!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Aerger()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Aerger_15_00"); //Za ma³o masz problemów?
-	AI_Output (self ,other,"DIA_Moe_Hallo_Aerger_01_01"); //Jasne, problemy to moje drugie imiê. Broñ siê, kurduplu!
+	AI_Output (other ,self,"DIA_Moe_Hallo_Aerger_15_00"); //Za maÅ‚o masz problemÃ³w?
+	AI_Output (self ,other,"DIA_Moe_Hallo_Aerger_01_01"); //Jasne, problemy to moje drugie imiÄ™. BroÅ„ siÄ™, kurduplu!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Ruhig()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Ruhig_15_00"); //Uspokój siê, chcê tylko wypiæ piwo.
-	AI_Output (self ,other,"DIA_Moe_Hallo_Ruhig_01_01"); //Dobrze, ale ¿eby wejœæ do œrodka, musisz mi zap³aciæ 50 sztuk z³ota.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Ruhig_15_00"); //UspokÃ³j siÄ™, chcÄ™ tylko wypiÄ‡ piwo.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Ruhig_01_01"); //Dobrze, ale Å¼eby wejÅ›Ä‡ do Å›rodka, musisz mi zapÅ‚aciÄ‡ 50 sztuk zÅ‚ota.
 	
 	Info_ClearChoices (DIA_Moe_Hallo);
-	Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet z³amanego grosza!",DIA_Moe_Hallo_Vergisses);
-	Info_AddChoice    (DIA_Moe_Hallo,"W porz¹dku, zap³acê.",DIA_Moe_Hallo_Zahlen);
+	Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet zÅ‚amanego grosza!",DIA_Moe_Hallo_Vergisses);
+	Info_AddChoice    (DIA_Moe_Hallo,"W porzÄ…dku, zapÅ‚acÄ™.",DIA_Moe_Hallo_Zahlen);
 	
 };
 FUNC VOID DIA_Moe_Hallo_Zahlen()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_00"); //W porz¹dku, zap³acê.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_00"); //W porzÄ…dku, zapÅ‚acÄ™.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold,50)
 	{
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_01"); //Wspaniale. A skoro ju¿ posz³o nam tak ³atwo, mo¿esz mi teraz oddaæ resztê swoich pieniêdzy.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_01"); //Wspaniale. A skoro juÅ¼ poszÅ‚o nam tak Å‚atwo, moÅ¼esz mi teraz oddaÄ‡ resztÄ™ swoich pieniÄ™dzy.
 		
 		Info_ClearChoices (DIA_Moe_Hallo);
-		Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet z³amanego grosza!",DIA_Moe_Hallo_Vergisses);
-		Info_AddChoice    (DIA_Moe_Hallo,"Proszê, to wszystko, co mam.",DIA_Moe_Hallo_Alles);
+		Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet zÅ‚amanego grosza!",DIA_Moe_Hallo_Vergisses);
+		Info_AddChoice    (DIA_Moe_Hallo,"ProszÄ™, to wszystko, co mam.",DIA_Moe_Hallo_Alles);
 	}
 	else if (Npc_HasItems (hero, ItMi_Gold) > 9)
 	{
-		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_02"); //...ale nie mam przy sobie tylu pieniêdzy.
+		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_02"); //...ale nie mam przy sobie tylu pieniÄ™dzy.
 		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_03"); //To nie ma znaczenia. Po prostu daj mi wszystko, co masz.
 		
 		Info_ClearChoices (DIA_Moe_Hallo);
-		Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet z³amanego grosza!",DIA_Moe_Hallo_Vergisses);
-		Info_AddChoice    (DIA_Moe_Hallo,"Proszê, to wszystko, co mam.",DIA_Moe_Hallo_Alles);
+		Info_AddChoice    (DIA_Moe_Hallo,"Zapomnij o tym, nie dostaniesz nawet zÅ‚amanego grosza!",DIA_Moe_Hallo_Vergisses);
+		Info_AddChoice    (DIA_Moe_Hallo,"ProszÄ™, to wszystko, co mam.",DIA_Moe_Hallo_Alles);
 	}
 	else
 	{
-		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_04"); //...ale nie mam nawet 10 sztuk z³ota.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_05"); //Ale trafi³em.
-		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_06"); //No dobrze ju¿, dobrze, mo¿esz wejœæ.
+		AI_Output (other ,self,"DIA_Moe_Hallo_Zahlen_15_04"); //...ale nie mam nawet 10 sztuk zÅ‚ota.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_05"); //Ale trafiÅ‚em.
+		AI_Output (self ,other,"DIA_Moe_Hallo_Zahlen_01_06"); //No dobrze juÅ¼, dobrze, moÅ¼esz wejÅ›Ä‡.
 		
 		AI_StopProcessInfos (self);
 	};
@@ -194,19 +194,19 @@ FUNC VOID DIA_Moe_Hallo_Zahlen()
 };
 FUNC VOID DIA_Moe_Hallo_Vergisses()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Vergisses_15_00"); //Zapomnij o tym, nie dostaniesz nawet z³amanego grosza!
-	AI_Output (self ,other,"DIA_Moe_Hallo_Vergisses_01_01"); //Wiêc zabiorê wszystko, co masz - ale najpierw spuszczê ci porz¹dne lanie.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Vergisses_15_00"); //Zapomnij o tym, nie dostaniesz nawet zÅ‚amanego grosza!
+	AI_Output (self ,other,"DIA_Moe_Hallo_Vergisses_01_01"); //WiÄ™c zabiorÄ™ wszystko, co masz - ale najpierw spuszczÄ™ ci porzÄ…dne lanie.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
 };
 FUNC VOID DIA_Moe_Hallo_Alles()
 {
-	AI_Output (other ,self,"DIA_Moe_Hallo_Alles_15_00"); //Proszê, to wszystko, co mam.
+	AI_Output (other ,self,"DIA_Moe_Hallo_Alles_15_00"); //ProszÄ™, to wszystko, co mam.
 	
 	B_GiveInvItems (other, self, ItMi_Gold, Npc_HasItems (other,ItMi_Gold));
 	
-	AI_Output (self ,other,"DIA_Moe_Hallo_Alles_01_01"); //Dobrze, to wystarczy. Chodz¹ca pob³a¿liwoœæ - oto ca³y ja.
+	AI_Output (self ,other,"DIA_Moe_Hallo_Alles_01_01"); //Dobrze, to wystarczy. ChodzÄ…ca pobÅ‚aÅ¼liwoÅ›Ä‡ - oto caÅ‚y ja.
 	AI_StopProcessInfos (self);
 };
 //************************************************
@@ -220,7 +220,7 @@ INSTANCE DIA_Moe_Harbor(C_INFO)
 	condition	= DIA_Moe_Harbor_Condition;
 	information	= DIA_Moe_Harbor_Info;
 	permanent	= TRUE;
-	description = "Wiesz, co dzieje siê w porcie, prawda?";
+	description = "Wiesz, co dzieje siÄ™ w porcie, prawda?";
 };                       
 
 FUNC INT DIA_Moe_Harbor_Condition()
@@ -230,14 +230,14 @@ FUNC INT DIA_Moe_Harbor_Condition()
  
 FUNC VOID DIA_Moe_Harbor_Info()
 {	
-	AI_Output (other,self ,"DIA_Moe_Harbor_15_00"); //Wiesz, co dzieje siê w porcie, prawda?
+	AI_Output (other,self ,"DIA_Moe_Harbor_15_00"); //Wiesz, co dzieje siÄ™ w porcie, prawda?
 	AI_Output (self ,other,"DIA_Moe_Harbor_01_01"); //Pewnie. A dlaczego pytasz?
 	
 	Info_ClearChoices (DIA_Moe_Harbor);
 	Info_AddChoice		(DIA_Moe_Harbor, DIALOG_BACK, DIA_Moe_Harbor_Back);
-	Info_AddChoice		(DIA_Moe_Harbor,"Du¿o tu macie statków?",DIA_Moe_Harbor_Ship);
-	Info_AddChoice		(DIA_Moe_Harbor,"Czemu nie widzê tu ¿adnej stra¿y?",DIA_Moe_Harbor_Militia);
-	Info_AddChoice 		(DIA_Moe_Harbor,"S³ysza³eœ ostatnio jakieœ plotki?",DIA_Moe_Harbor_Rumors);
+	Info_AddChoice		(DIA_Moe_Harbor,"DuÅ¼o tu macie statkÃ³w?",DIA_Moe_Harbor_Ship);
+	Info_AddChoice		(DIA_Moe_Harbor,"Czemu nie widzÄ™ tu Å¼adnej straÅ¼y?",DIA_Moe_Harbor_Militia);
+	Info_AddChoice 		(DIA_Moe_Harbor,"SÅ‚yszaÅ‚eÅ› ostatnio jakieÅ› plotki?",DIA_Moe_Harbor_Rumors);
 };
 
 FUNC VOID DIA_Moe_Harbor_Back ()
@@ -247,43 +247,43 @@ FUNC VOID DIA_Moe_Harbor_Back ()
 
 FUNC VOID DIA_Moe_Harbor_Ship ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Ship_15_00"); //Du¿o tu macie statków?
-	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_01"); //Jedyny statek w tym mieœcie nale¿y do paladynów.
-	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_02"); //Jest zacumowany na po³udniowym zachodzie.
+	AI_Output (other,self ,"DIA_Moe_Harbor_Ship_15_00"); //DuÅ¼o tu macie statkÃ³w?
+	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_01"); //Jedyny statek w tym mieÅ›cie naleÅ¼y do paladynÃ³w.
+	AI_Output (self ,other,"DIA_Moe_Harbor_Ship_01_02"); //Jest zacumowany na poÅ‚udniowym zachodzie.
 	
 };
 
 FUNC VOID DIA_Moe_Harbor_Militia ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Militia_15_00"); //Czemu nie widzê tu ¿adnej stra¿y?
-	AI_Output (self ,other,"DIA_Moe_Harbor_Militia_01_01"); //Stra¿ tutaj nie przychodzi. Sami za³atwiamy nasze spory.
+	AI_Output (other,self ,"DIA_Moe_Harbor_Militia_15_00"); //Czemu nie widzÄ™ tu Å¼adnej straÅ¼y?
+	AI_Output (self ,other,"DIA_Moe_Harbor_Militia_01_01"); //StraÅ¼ tutaj nie przychodzi. Sami zaÅ‚atwiamy nasze spory.
 };
 
 FUNC VOID DIA_Moe_Harbor_Rumors ()
 {
-	AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_00"); //S³ysza³eœ ostatnio jakieœ plotki?
+	AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_00"); //SÅ‚yszaÅ‚eÅ› ostatnio jakieÅ› plotki?
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_01"); //W tych okolicach nie lubimy, kiedy ktoœ zadaje zbyt du¿o pytañ. Szczególnie jeœli jest to ktoœ obcy.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_01"); //W tych okolicach nie lubimy, kiedy ktoÅ› zadaje zbyt duÅ¼o pytaÅ„. SzczegÃ³lnie jeÅ›li jest to ktoÅ› obcy.
 	}
 	else if (Kapitel == 2)
 	{
 		if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_02"); //¯adnych. A czego siê spodziewa³eœ? To spokojne miejsce.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_02"); //Å»adnych. A czego siÄ™ spodziewaÅ‚eÅ›? To spokojne miejsce.
 		}
 		else if (hero.guild == GIL_KDF)
 		|| (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_03"); //Nie jest dobrze. Czasy s¹ ciê¿kie, a my z trudem wi¹¿emy koniec z koñcem.
-			AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_04"); //Przestañ siê ze mnie nabijaæ.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_05"); //Jak mog³eœ pomyœleæ coœ takiego? Zrani³eœ moje uczucia.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_03"); //Nie jest dobrze. Czasy sÄ… ciÄ™Å¼kie, a my z trudem wiÄ…Å¼emy koniec z koÅ„cem.
+			AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_04"); //PrzestaÅ„ siÄ™ ze mnie nabijaÄ‡.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_05"); //Jak mogÅ‚eÅ› pomyÅ›leÄ‡ coÅ› takiego? ZraniÅ‚eÅ› moje uczucia.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_06"); //Jest nieweso³o. Od jakiegoœ czasu Lord Andre ci¹gle wsadza nos w nie swoje sprawy.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_07"); //Taki elegancik nigdy nie zrozumie, co siê tutaj dzieje.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_06"); //Jest niewesoÅ‚o. Od jakiegoÅ› czasu Lord Andre ciÄ…gle wsadza nos w nie swoje sprawy.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_07"); //Taki elegancik nigdy nie zrozumie, co siÄ™ tutaj dzieje.
 		};
 		
 	}
@@ -295,29 +295,29 @@ FUNC VOID DIA_Moe_Harbor_Rumors ()
 			|| (hero.guild == GIL_PAL)
 			|| (hero.guild == GIL_KDF)
 			{
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_08"); //Nie mamy z tym nic wspólnego.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_08"); //Nie mamy z tym nic wspÃ³lnego.
 				AI_Output (other,self ,"DIA_Moe_Harbor_Rumors_15_09"); //To znaczy z czym?
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_10"); //Z tym zamordowanym paladynem. Powinieneœ zainteresowaæ siê najemnikami, zamiast marnowaæ tutaj swój czas.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_10"); //Z tym zamordowanym paladynem. PowinieneÅ› zainteresowaÄ‡ siÄ™ najemnikami, zamiast marnowaÄ‡ tutaj swÃ³j czas.
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_11"); //Wiem, ¿e nie mia³eœ z tym nic wspólnego, ale to morderstwo naprawdê wzbudzi³o niepokój porz¹dnych obywateli.
-				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_12"); //Jeœli zechcesz przyj¹æ przyjacielsk¹ radê, najlepiej bêdzie, jeœli znikniesz z miasta. Przynajmniej na jakiœ czas.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_11"); //Wiem, Å¼e nie miaÅ‚eÅ› z tym nic wspÃ³lnego, ale to morderstwo naprawdÄ™ wzbudziÅ‚o niepokÃ³j porzÄ…dnych obywateli.
+				AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_12"); //JeÅ›li zechcesz przyjÄ…Ä‡ przyjacielskÄ… radÄ™, najlepiej bÄ™dzie, jeÅ›li znikniesz z miasta. Przynajmniej na jakiÅ› czas.
 			};	
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_13"); //Odk¹d zosta³o udowodnione, ¿e najemnicy nie mieli nic wspólnego ze œmierci¹ tego paladyna, stra¿ boi siê tu przychodziæ.
-			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_14"); //Pewnie obawiaj¹ siê tych paru mieszkaj¹cych tutaj pijaków, he, he. I dobrze.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_13"); //OdkÄ…d zostaÅ‚o udowodnione, Å¼e najemnicy nie mieli nic wspÃ³lnego ze Å›mierciÄ… tego paladyna, straÅ¼ boi siÄ™ tu przychodziÄ‡.
+			AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_14"); //Pewnie obawiajÄ… siÄ™ tych paru mieszkajÄ…cych tutaj pijakÃ³w, he, he. I dobrze.
 		};
 	}
 	else if (Kapitel == 4)
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_15"); //Nic siê tu nie dzieje.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_15"); //Nic siÄ™ tu nie dzieje.
 	}
 	else //Kapitel 5
 	{
-		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_16"); //Ci nadêci paladyni opuszczaj¹ nasz port. Najwy¿szy czas.
+		AI_Output (self ,other,"DIA_Moe_Harbor_Rumors_01_16"); //Ci nadÄ™ci paladyni opuszczajÄ… nasz port. NajwyÅ¼szy czas.
 	};
 };
 

@@ -48,11 +48,11 @@ func int DIA_Vino_HALLO_Condition ()
 func void DIA_Vino_HALLO_Info ()
 {
 	AI_Output (other, self, "DIA_Vino_HALLO_15_00"); //Jak idzie praca?
-	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Jak zwykle, roboty coraz wiêcej, pieniêdzy coraz mniej. Jak Ÿle pójdzie, to jutro napadn¹ nas orkowie i spal¹ nasz¹ farmê.
+	AI_Output (self, other, "DIA_Vino_HALLO_05_01"); //Jak zwykle, roboty coraz wiÄ™cej, pieniÄ™dzy coraz mniej. Jak Åºle pÃ³jdzie, to jutro napadnÄ… nas orkowie i spalÄ… naszÄ… farmÄ™.
 	
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_HALLO_05_02"); //Królewscy paladyni zajêli niemal ca³e miasto. Ale jakoœ w¹tpiê, ¿eby chcia³o im siê ruszyæ ty³ki i ochroniæ nas przed orkami.
+			AI_Output (self, other, "DIA_Vino_HALLO_05_02"); //KrÃ³lewscy paladyni zajÄ™li niemal caÅ‚e miasto. Ale jakoÅ› wÄ…tpiÄ™, Å¼eby chciaÅ‚o im siÄ™ ruszyÄ‡ tyÅ‚ki i ochroniÄ‡ nas przed orkami.
 		};
 };
 
@@ -66,7 +66,7 @@ instance DIA_Vino_SeekWork		(C_INFO)
 	condition	= DIA_Vino_SeekWork_Condition;
 	information	= DIA_Vino_SeekWork_Info;
 	permanent 	= FALSE;
-	description	= "Mogê ci jakoœ pomóc? Szukam pracy.";
+	description	= "MogÄ™ ci jakoÅ› pomÃ³c? Szukam pracy.";
 	
 };
 func int DIA_Vino_SeekWork_Condition ()
@@ -81,31 +81,31 @@ func int DIA_Vino_SeekWork_Condition ()
 };
 func void DIA_Vino_SeekWork_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //Mogê ci jakoœ pomóc? Szukam pracy.
+	AI_Output (other, self, "DIA_Vino_SeekWork_15_00"); //MogÄ™ ci jakoÅ› pomÃ³c? Szukam pracy.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //Znasz siê na pracy w polu?
-		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //A na czym tu siê znaæ?
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //Ach! W takim razie ju¿ ci chyba podziêkujê.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_01"); //Znasz siÄ™ na pracy w polu?
+		AI_Output (other, self, "DIA_Vino_SeekWork_15_02"); //A na czym tu siÄ™ znaÄ‡?
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_03"); //Ach! W takim razie juÅ¼ ci chyba podziÄ™kujÄ™.
 		
 		if (!Npc_IsDead(Lobart))
 		{
-			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //Jeœli chcesz siê zatrudniæ u Lobarta jako zwyk³y robotnik, to ostrzegam. Ludziom takim jak ty p³aci naprawdê marnie.
+			AI_Output (self, other, "DIA_Vino_SeekWork_05_04"); //JeÅ›li chcesz siÄ™ zatrudniÄ‡ u Lobarta jako zwykÅ‚y robotnik, to ostrzegam. Ludziom takim jak ty pÅ‚aci naprawdÄ™ marnie.
 		
 			if ( (Mob_HasItems("CHEST_LOBART", ITAR_Bau_L) == TRUE) || (Npc_HasItems (lobart, itar_bau_l) > 0) )
 			&& (Lobart_Kleidung_Verkauft == FALSE)
 			&& ( (Npc_KnowsInfo (other, DIA_Lobart_KLEIDUNG)) || (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW)) )
 			{
-				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //Obieca³, ¿e sprzeda mi tanio czyste ubranie, jeœli pomogê na farmie.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Hmmm. Nie mam dla ciebie pracy, ale mo¿esz przynieœæ mnie i ch³opakom coœ do picia.
-				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //Przynieœ no flaszkê wina, a powiem Lobartowi, ¿eœ siê œwietnie spisa³.
+				AI_Output (other, self, "DIA_Vino_SeekWork_15_05"); //ObiecaÅ‚, Å¼e sprzeda mi tanio czyste ubranie, jeÅ›li pomogÄ™ na farmie.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_06"); //Hmmm. Nie mam dla ciebie pracy, ale moÅ¼esz przynieÅ›Ä‡ mnie i chÅ‚opakom coÅ› do picia.
+				AI_Output (self, other, "DIA_Vino_SeekWork_05_07"); //PrzynieÅ› no flaszkÄ™ wina, a powiem Lobartowi, Å¼eÅ› siÄ™ Å›wietnie spisaÅ‚.
 				
 				MIS_Vino_Wein = LOG_RUNNING;
 				
 				Log_CreateTopic (TOPIC_Vino,LOG_MISSION);
 				Log_SetTopicStatus (TOPIC_Vino,LOG_RUNNING);
-				B_LogEntry (TOPIC_Vino,"Jeœli Vino dostanie ode mnie butelkê wina, powie Lobartowi, ¿e mu pomog³em.");
+				B_LogEntry (TOPIC_Vino,"JeÅ›li Vino dostanie ode mnie butelkÄ™ wina, powie Lobartowi, Å¼e mu pomogÅ‚em.");
 				
 			}
 			else
@@ -116,7 +116,7 @@ func void DIA_Vino_SeekWork_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //Nie s¹dzê! Ktoœ taki jak ty nie chcia³by siê chyba mêczyæ z prac¹, któr¹ mam do zaoferowania.
+		AI_Output (self, other, "DIA_Vino_SeekWork_05_09"); //Nie sÄ…dzÄ™! KtoÅ› taki jak ty nie chciaÅ‚by siÄ™ chyba mÄ™czyÄ‡ z pracÄ…, ktÃ³rÄ… mam do zaoferowania.
 	};
 };
 
@@ -146,14 +146,14 @@ func void DIA_Vino_BringWine_Info ()
 {
 	AI_Output (other, self, "DIA_Vino_BringWine_15_00"); //Oto twoje wino.
 	B_GiveInvItems (other,self, itfo_wine, 1);
-	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //Wolê nie pytaæ, jak je zdoby³eœ. A kogó¿ to obchodzi?
+	AI_Output (self, other, "DIA_Vino_BringWine_05_01"); //WolÄ™ nie pytaÄ‡, jak je zdobyÅ‚eÅ›. A kogÃ³Å¼ to obchodzi?
 	if (!Npc_IsDead (Lobart))
 	{
-		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //Tak czy inaczej, dziêki.
+		AI_Output (self, other, "DIA_Vino_BringWine_05_02"); //Tak czy inaczej, dziÄ™ki.
 
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Postaram siê, by Lobart us³ysza³ o tobie same dobre rzeczy.
+			AI_Output (self, other, "DIA_Vino_BringWine_05_03"); //Postaram siÄ™, by Lobart usÅ‚yszaÅ‚ o tobie same dobre rzeczy.
 		};
 	};
 	
@@ -174,7 +174,7 @@ instance DIA_Vino_ToTheCity (C_INFO)
 	condition	= DIA_Vino_ToTheCity_Condition;
 	information	= DIA_Vino_ToTheCity_Info;
 	permanent 	= FALSE;
-	description	= "Ruszam w stronê miasta.";
+	description	= "Ruszam w stronÄ™ miasta.";
 };
 
 func int DIA_Vino_ToTheCity_Condition ()
@@ -187,15 +187,15 @@ func int DIA_Vino_ToTheCity_Condition ()
 
 func void DIA_Vino_ToTheCity_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //Ruszam w stronê miasta.
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_00"); //Ruszam w stronÄ™ miasta.
 	AI_Output (self, other, "DIA_Vino_ToTheCity_05_01"); //I?
-	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //Czy mo¿esz mi powiedzieæ coœ ciekawego na temat miasta?
-	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //Nie. Ale Maleth zagl¹da tam od czasu do czasu - mo¿e on coœ wie, to znaczy coœ, co by ciê zainteresowa³o.
+	AI_Output (other, self, "DIA_Vino_ToTheCity_15_02"); //Czy moÅ¼esz mi powiedzieÄ‡ coÅ› ciekawego na temat miasta?
+	AI_Output (self, other, "DIA_Vino_ToTheCity_05_03"); //Nie. Ale Maleth zaglÄ…da tam od czasu do czasu - moÅ¼e on coÅ› wie, to znaczy coÅ›, co by ciÄ™ zainteresowaÅ‚o.
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//								Gerüchte (PERM)
+//								GerÃ¼chte (PERM)
 ///////////////////////////////////////////////////////////////////////
 
 // --------------------------
@@ -210,7 +210,7 @@ instance DIA_Vino_PERM (C_INFO)
 	condition	= DIA_Vino_PERM_Condition;
 	information	= DIA_Vino_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Jakieœ ciekawe nowiny?";
+	description	= "JakieÅ› ciekawe nowiny?";
 };
 func int DIA_Vino_PERM_Condition ()
 {
@@ -222,26 +222,26 @@ func int DIA_Vino_PERM_Condition ()
 };
 func void DIA_Vino_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //Jakieœ ciekawe nowiny?
+	AI_Output (other, self, "DIA_Vino_PERM_15_00"); //JakieÅ› ciekawe nowiny?
 	
 	if (Vino_Gossip_Orks == FALSE)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //Przysi¹g³bym, ¿em dwa dni temu widzia³ orka, na skraju lasu.
-		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //Od tego czasu podczas snu staram siê mieæ choæ jedno oko otwarte.
+		AI_Output (self, other, "DIA_Vino_PERM_05_01"); //PrzysiÄ…gÅ‚bym, Å¼em dwa dni temu widziaÅ‚ orka, na skraju lasu.
+		AI_Output (self, other, "DIA_Vino_PERM_05_02"); //Od tego czasu podczas snu staram siÄ™ mieÄ‡ choÄ‡ jedno oko otwarte.
 		Vino_Gossip_Orks = TRUE;
 		Knows_Ork = TRUE;
 	}
 	else if (Vino_Gossip_Bugs == FALSE)
 	&& 		(MIS_AndreHelpLobart == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Ta wielka plaga ¿uków doprowadza nas do szaleñstwa. S¹ wszêdzie. ¯r¹ wszystko, co napotkaj¹ na swej drodze.
-		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //Jakoœ w zesz³ym tygodniu le¿a³em sobie na ³¹ce i ju¿ prawie zasypia³em, kiedy poczu³em, ¿e jedna z tych bestii zaczyna siê dobieraæ do mojego buta!
-		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //Trza by³o widzieæ, jakem ucieka³. Od tamtego czasu nie mogê spokojnie spaæ.
+		AI_Output (self, other, "DIA_Vino_PERM_05_03"); //Ta wielka plaga Å¼ukÃ³w doprowadza nas do szaleÅ„stwa. SÄ… wszÄ™dzie. Å»rÄ… wszystko, co napotkajÄ… na swej drodze.
+		AI_Output (self, other, "DIA_Vino_PERM_05_04"); //JakoÅ› w zeszÅ‚ym tygodniu leÅ¼aÅ‚em sobie na Å‚Ä…ce i juÅ¼ prawie zasypiaÅ‚em, kiedy poczuÅ‚em, Å¼e jedna z tych bestii zaczyna siÄ™ dobieraÄ‡ do mojego buta!
+		AI_Output (self, other, "DIA_Vino_PERM_05_05"); //Trza byÅ‚o widzieÄ‡, jakem uciekaÅ‚. Od tamtego czasu nie mogÄ™ spokojnie spaÄ‡.
 		Vino_Gossip_Bugs = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //Oprócz tego, co ci powiedzia³em, nic.
+		AI_Output (self, other, "DIA_Vino_PERM_05_06"); //OprÃ³cz tego, co ci powiedziaÅ‚em, nic.
 	};
 };
 
@@ -289,7 +289,7 @@ instance DIA_Vino_DMTAMSTART		(C_INFO)
 	information	 = 	DIA_Vino_DMTAMSTART_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak ci siê wiedzie?";
+	description	 = 	"Jak ci siÄ™ wiedzie?";
 };
 
 func int DIA_Vino_DMTAMSTART_Condition ()
@@ -303,20 +303,20 @@ func int DIA_Vino_DMTAMSTART_Condition ()
 var int DIA_Vino_DMTAMSTART_OneTime;
 func void DIA_Vino_DMTAMSTART_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_DMTAMSTART_15_00"); //Jak ci siê wiedzie?
+	AI_Output			(other, self, "DIA_Vino_DMTAMSTART_15_00"); //Jak ci siÄ™ wiedzie?
 	
 	if (FoundVinosKellerei == TRUE)
 	&& (DIA_Vino_DMTAMSTART_OneTime == FALSE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //Ogólnie do dupy. Stra¿ znalaz³a moj¹ ukryt¹ gorzelniê.
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //Mam nadziejê, ¿e nie zorientuj¹ siê, kto jest jej w³aœcicielem.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_01"); //OgÃ³lnie do dupy. StraÅ¼ znalazÅ‚a mojÄ… ukrytÄ… gorzelniÄ™.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_02"); //Mam nadziejÄ™, Å¼e nie zorientujÄ… siÄ™, kto jest jej wÅ‚aÅ›cicielem.
 		B_GivePlayerXP (XP_AmbientKap3);
 		DIA_Vino_DMTAMSTART_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //I jeszcze te psubraty w czarnych kapturach. Ktoœ powinien poodcinaæ im te kapturzyska razem z zawartoœci¹.
+		AI_Output			(self, other, "DIA_Vino_DMTAMSTART_05_03"); //I jeszcze te psubraty w czarnych kapturach. KtoÅ› powinien poodcinaÄ‡ im te kapturzyska razem z zawartoÅ›ciÄ….
 	};
 };
 
@@ -332,7 +332,7 @@ instance DIA_Vino_Obesessed		(C_INFO)
 	information	 = 	DIA_Vino_Obesessed_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Coœ nie tak?";
+	description	 = 	"CoÅ› nie tak?";
 };
 
 func int DIA_Vino_Obesessed_Condition ()
@@ -356,8 +356,8 @@ func void DIA_Vino_Obesessed_Info ()
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //Co ci siê sta³o?
-	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //Do cholery, wynoœ siê. Inaczej mnie zabij¹.
+	AI_Output			(other, self, "DIA_Vino_Obesessed_15_00"); //Co ci siÄ™ staÅ‚o?
+	AI_Output			(self, other, "DIA_Vino_Obesessed_05_01"); //Do cholery, wynoÅ› siÄ™. Inaczej mnie zabijÄ….
 	AI_StopProcessInfos (self);
 	DMT_Vino1.aivar[AIV_EnemyOverride] = FALSE;
 	DMT_Vino2.aivar[AIV_EnemyOverride] = FALSE;
@@ -377,7 +377,7 @@ instance DIA_Vino_Heilung		(C_INFO)
 	information	 = 	DIA_Vino_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nie jesteœ sob¹.";
+	description	 = 	"Nie jesteÅ› sobÄ….";
 };
 
 func int DIA_Vino_Heilung_Condition ()
@@ -392,17 +392,17 @@ func int DIA_Vino_Heilung_Condition ()
 var int DIA_Vino_Heilung_oneTime;
 func void DIA_Vino_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //Nie jesteœ sob¹.
-	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Moja g³owa... D³u¿ej tego nie wytrzymam.
+	AI_Output			(other, self, "DIA_Vino_Heilung_15_00"); //Nie jesteÅ› sobÄ….
+	AI_Output			(self, other, "DIA_Vino_Heilung_05_01"); //Moja gÅ‚owa... DÅ‚uÅ¼ej tego nie wytrzymam.
 
 	if (DIA_Vino_Heilung_oneTime == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //Powinieneœ udaæ siê do klasztoru. Pyrokar, najwy¿szy Mag Ognia, móg³by ci pomóc.
-		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //Tak uwa¿asz? W porz¹dku, spróbujê.
+		AI_Output			(other, self, "DIA_Vino_Heilung_15_02"); //PowinieneÅ› udaÄ‡ siÄ™ do klasztoru. Pyrokar, najwyÅ¼szy Mag Ognia, mÃ³gÅ‚by ci pomÃ³c.
+		AI_Output			(self, other, "DIA_Vino_Heilung_05_03"); //Tak uwaÅ¼asz? W porzÄ…dku, sprÃ³bujÄ™.
 		B_NpcClearObsessionByDMT (self);
 		B_StartOtherRoutine  (Vino,"Kloster"); 
 		
-		B_LogEntry (TOPIC_DEMENTOREN,"Vino jest opêtany. Wys³a³em go do klasztoru, aby tam poprosi³ o uzdrowienie. Mam nadziejê, ¿e wszystko bêdzie dobrze."); 
+		B_LogEntry (TOPIC_DEMENTOREN,"Vino jest opÄ™tany. WysÅ‚aÅ‚em go do klasztoru, aby tam poprosiÅ‚ o uzdrowienie. Mam nadziejÄ™, Å¼e wszystko bÄ™dzie dobrze."); 
 	
 		B_GivePlayerXP (XP_VinoFreeFromDMT);
 		DIA_Vino_Heilung_oneTime = TRUE;
@@ -457,7 +457,7 @@ instance DIA_Vino_PERM4OBSESSED		(C_INFO)
 	information	 = 	DIA_Vino_PERM4OBSESSED_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jak siê masz?";
+	description	 = 	"Jak siÄ™ masz?";
 };
 
 func int DIA_Vino_PERM4OBSESSED_Condition ()
@@ -474,12 +474,12 @@ var int DIA_Vino_PERM4OBSESSED_XP_oneTime;
 
 func void DIA_Vino_PERM4OBSESSED_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //Jak siê czujesz?
-	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Wszystko w porz¹dku. Ch³opaki mi pomog¹. Wci¹¿ jednak cholernie krêci mi siê w g³owie.
+	AI_Output			(other, self, "DIA_Vino_PERM4OBSESSED_15_00"); //Jak siÄ™ czujesz?
+	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_01"); //Wszystko w porzÄ…dku. ChÅ‚opaki mi pomogÄ…. WciÄ…Å¼ jednak cholernie krÄ™ci mi siÄ™ w gÅ‚owie.
 
 	if (DIA_Vino_PERM4OBSESSED_XP_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_02"); //Muszê przyznaæ, ¿e to najlepsze wino, jakie pi³em.
+	AI_Output			(self, other, "DIA_Vino_PERM4OBSESSED_05_02"); //MuszÄ™ przyznaÄ‡, Å¼e to najlepsze wino, jakie piÅ‚em.
 	B_GivePlayerXP (XP_Ambient);
 	DIA_Vino_PERM4OBSESSED_XP_oneTime = TRUE; 
 	};
@@ -496,7 +496,7 @@ instance DIA_Vino_PERM45UND6		(C_INFO)
 	information	 = 	DIA_Vino_PERM45UND6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jakieœ wieœci?";
+	description	 = 	"JakieÅ› wieÅ›ci?";
 };
 
 func int DIA_Vino_PERM45UND6_Condition ()
@@ -511,22 +511,22 @@ func int DIA_Vino_PERM45UND6_Condition ()
 
 func void DIA_Vino_PERM45UND6_Info ()
 {
-	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //Jakieœ wieœci?
+	AI_Output			(other, self, "DIA_Vino_PERM45UND6_15_00"); //JakieÅ› wieÅ›ci?
 
 	if (hero.guild == GIL_PAL)
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //Ostatnio drastycznie wzros³a liczba orków w okolicy.
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Chyba wy, paladyni, pozbêdziecie siê ich, prawda?
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_01"); //Ostatnio drastycznie wzrosÅ‚a liczba orkÃ³w w okolicy.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_02"); //Chyba wy, paladyni, pozbÄ™dziecie siÄ™ ich, prawda?
 	}
 	else	//hero.guild == GIL_DJG
 	{
-	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_03"); //Obawiam siê, ¿e wkrótce przyjdzie nam porzuciæ farmê, i przy³¹czyæ siê do najemników Onara.
+	AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_03"); //Obawiam siÄ™, Å¼e wkrÃ³tce przyjdzie nam porzuciÄ‡ farmÄ™, i przyÅ‚Ä…czyÄ‡ siÄ™ do najemnikÃ³w Onara.
 	};
 	
 	if (FoundVinosKellerei == TRUE)
 	&& (hero.guild != GIL_MIL)
 	{
-		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //Niestety, stra¿e znalaz³y moj¹ ma³¹ gorzelniê. Mam nadziejê, ¿e mnie nie dopadn¹.
+		AI_Output			(self, other, "DIA_Vino_PERM45UND6_05_04"); //Niestety, straÅ¼e znalazÅ‚y mojÄ… maÅ‚Ä… gorzelniÄ™. Mam nadziejÄ™, Å¼e mnie nie dopadnÄ….
 	};
 };
 

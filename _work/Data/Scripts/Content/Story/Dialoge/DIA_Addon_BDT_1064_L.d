@@ -25,7 +25,7 @@ FUNC VOID DIA_BanditGuard_EXIT_Info()
 // ************************************************************
 
 // -----------------------------------------------------------
-	const string Bdt_1064_Checkpoint	= "NW_CASTLEMINE_TOWER_05";	//WP vor TurmTür
+	const string Bdt_1064_Checkpoint	= "NW_CASTLEMINE_TOWER_05";	//WP vor TurmTÃ¼r
 // -----------------------------------------------------------
 
 instance DIA_Bdt_1064_BanditGuard_FirstWarn (C_INFO)
@@ -57,7 +57,7 @@ func int DIA_Bdt_1064_BanditGuard_FirstWarn_Condition()
 
 func void DIA_Bdt_1064_BanditGuard_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_00"); //Jest tylko JEDEN sposób, ¿ebyœ dosta³ siê do obozu ¯YWY - przez most.
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_00"); //Jest tylko JEDEN sposÃ³b, Å¼ebyÅ› dostaÅ‚ siÄ™ do obozu Å»YWY - przez most.
 		
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Bdt_1064_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Bdt_1064_BanditGuard_SecondWarn_Condition()
 
 func void DIA_Bdt_1064_BanditGuard_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_01");  //Chcesz oberwaæ, co? Zrób jeszcze JEDEN krok, a zrzucê ciê z urwiska.
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_01");  //Chcesz oberwaÄ‡, co? ZrÃ³b jeszcze JEDEN krok, a zrzucÄ™ ciÄ™ z urwiska.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Bdt_1064_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -130,7 +130,7 @@ func void DIA_Bdt_1064_BanditGuard_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_02"); //Dobra, sam siê o to prosi³eœ...
+	AI_Output (self, other,"DIA_Addon_Dexwache_Add_04_02"); //Dobra, sam siÄ™ o to prosiÅ‚eÅ›...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
@@ -158,6 +158,6 @@ FUNC INT DIA_BanditGuard_PERM_Condition()
 };
 FUNC VOID DIA_BanditGuard_PERM_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Dexwache_Add_04_03"); //Nie dra¿nij mnie!
+	AI_Output (self, other, "DIA_Addon_Dexwache_Add_04_03"); //Nie draÅ¼nij mnie!
 	AI_StopProcessInfos(self);
 };

@@ -1,7 +1,7 @@
 // *******************************************************
 // ZS_ClearRoom
 // ------------
-// geht davon aus, daß Eindringling keine Berechtigung hat
+// geht davon aus, daÃŸ Eindringling keine Berechtigung hat
 // *******************************************************
 
 func void B_ClearRoomTalk()
@@ -20,7 +20,7 @@ func int B_ExitIfRoomLeft()
 {
 	var int portalguild; portalguild = Wld_GetPlayerPortalGuild();
 	
-	// ------ Spieler verläßt Portalraum ODER Spieler ist in befugten Raum gegangen ------
+	// ------ Spieler verlÃ¤ÃŸt Portalraum ODER Spieler ist in befugten Raum gegangen ------
 	if (!C_NpcIsBotheredByPlayerRoomGuild(self))
 	|| (portalguild == GIL_PUBLIC) //Ausnahme hier: Public (Wichtig: Public-Room erzeugt NIE ZS_ClearRoom)
 	{
@@ -82,7 +82,7 @@ func int ZS_ClearRoom_Loop ()
 		}
 		else
 		{
-			// ------- Sonderfall, z.B. für SC-Mil-->Vlk -------
+			// ------- Sonderfall, z.B. fÃ¼r SC-Mil-->Vlk -------
 			if (Npc_GetAttitude (other, self) != ATT_FRIENDLY)
 			{
 				B_Say 			(self, other, "$WHYAREYOUINHERE");

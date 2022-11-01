@@ -76,7 +76,7 @@ FUNC INT DIA_Rupert_Hello_Condition()
 FUNC VOID DIA_Rupert_Hello_Info()
 {	
 	AI_Output (self ,other,"DIA_Rupert_Hello_03_00"); //Witaj, nieznajomy!
-	AI_Output (self ,other,"DIA_Rupert_Hello_03_01"); //Pewnie jesteœ g³odny i spragniony - a mo¿e zerkniesz okiem na moje towary?
+	AI_Output (self ,other,"DIA_Rupert_Hello_03_01"); //Pewnie jesteÅ› gÅ‚odny i spragniony - a moÅ¼e zerkniesz okiem na moje towary?
 };	
 
 // ************************************************************
@@ -89,7 +89,7 @@ INSTANCE DIA_Rupert_ZuPal(C_INFO)
 	condition	= DIA_Rupert_ZuPal_Condition;
 	information	= DIA_Rupert_ZuPal_Info;
 	permanent	= FALSE;
-	description = "W³aœciwie, to chcia³em siê widzieæ z paladynami...";
+	description = "WÅ‚aÅ›ciwie, to chciaÅ‚em siÄ™ widzieÄ‡ z paladynami...";
 };                       
 FUNC INT DIA_Rupert_ZuPal_Condition()
 {
@@ -100,8 +100,8 @@ FUNC INT DIA_Rupert_ZuPal_Condition()
 };
 FUNC VOID DIA_Rupert_ZuPal_Info()
 {	
-	AI_Output (other, self,"DIA_Rupert_ZuPal_15_00"); //W³aœciwie, to chcia³em siê widzieæ z paladynami...
-	AI_Output (self ,other,"DIA_Rupert_ZuPal_03_01"); //Niewielka jest na to szansa. Od kiedy paladyni urz¹dzili swoj¹ siedzibê w górnym mieœcie, ciê¿ko jest siê tam dostaæ.
+	AI_Output (other, self,"DIA_Rupert_ZuPal_15_00"); //WÅ‚aÅ›ciwie, to chciaÅ‚em siÄ™ widzieÄ‡ z paladynami...
+	AI_Output (self ,other,"DIA_Rupert_ZuPal_03_01"); //Niewielka jest na to szansa. Od kiedy paladyni urzÄ…dzili swojÄ… siedzibÄ™ w gÃ³rnym mieÅ›cie, ciÄ™Å¼ko jest siÄ™ tam dostaÄ‡.
 };	
 
 // ************************************************************
@@ -114,7 +114,7 @@ INSTANCE DIA_Rupert_HelpMeIntoOV(C_INFO)
 	condition	= DIA_Rupert_HelpMeIntoOV_Condition;
 	information	= DIA_Rupert_HelpMeIntoOV_Info;
 	permanent	= FALSE;
-	description = "Czy mo¿esz mi pomóc dostaæ siê do górnego miasta?";
+	description = "Czy moÅ¼esz mi pomÃ³c dostaÄ‡ siÄ™ do gÃ³rnego miasta?";
 };                       
 FUNC INT DIA_Rupert_HelpMeIntoOV_Condition()
 {
@@ -126,15 +126,15 @@ FUNC INT DIA_Rupert_HelpMeIntoOV_Condition()
 };
 FUNC VOID DIA_Rupert_HelpMeIntoOV_Info()
 {	
-	AI_Output (other, self,"DIA_Rupert_HelpMeIntoOV_15_00"); //Czy mo¿esz mi pomóc dostaæ siê do górnego miasta?
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_01"); //Ja? Niemo¿liwe, nie mam tu w³aœciwie nic do powiedzenia.
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_02"); //W dolnej czêœci miasta jest tylko kilka osób, których wp³ywy mog³yby ci zapewniæ wstêp do górnego miasta.
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_03"); //Jedn¹ z nich jest mój szef, Matteo. To z nim powinieneœ porozmawiaæ.
+	AI_Output (other, self,"DIA_Rupert_HelpMeIntoOV_15_00"); //Czy moÅ¼esz mi pomÃ³c dostaÄ‡ siÄ™ do gÃ³rnego miasta?
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_01"); //Ja? NiemoÅ¼liwe, nie mam tu wÅ‚aÅ›ciwie nic do powiedzenia.
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_02"); //W dolnej czÄ™Å›ci miasta jest tylko kilka osÃ³b, ktÃ³rych wpÅ‚ywy mogÅ‚yby ci zapewniÄ‡ wstÄ™p do gÃ³rnego miasta.
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_03"); //JednÄ… z nich jest mÃ³j szef, Matteo. To z nim powinieneÅ› porozmawiaÄ‡.
 	
 	Log_CreateTopic (TOPIC_OV,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_OV,LOG_RUNNING);
-	B_LogEntry (TOPIC_OV,"Jeœli chcê siê dostaæ do górnego miasta, bêdê potrzebowa³ pomocy jakiejœ wp³ywowej osobistoœci z dolnej czêœci miasta.");
-	B_LogEntry (TOPIC_OV,"Kupiec Matteo to jeden z bardziej wp³ywowych mieszkañców dolnej czêœci miasta.");
+	B_LogEntry (TOPIC_OV,"JeÅ›li chcÄ™ siÄ™ dostaÄ‡ do gÃ³rnego miasta, bÄ™dÄ™ potrzebowaÅ‚ pomocy jakiejÅ› wpÅ‚ywowej osobistoÅ›ci z dolnej czÄ™Å›ci miasta.");
+	B_LogEntry (TOPIC_OV,"Kupiec Matteo to jeden z bardziej wpÅ‚ywowych mieszkaÅ„cÃ³w dolnej czÄ™Å›ci miasta.");
 };	
 
 // ***************************************************************
@@ -147,7 +147,7 @@ INSTANCE DIA_Rupert_WoMatteo(C_INFO)
 	condition	= DIA_Rupert_WoMatteo_Condition;
 	information	= DIA_Rupert_WoMatteo_Info;
 	permanent	= FALSE;
-	description = "Gdzie go znajdê?";
+	description = "Gdzie go znajdÄ™?";
 };                      
 FUNC INT DIA_Rupert_WoMatteo_Condition()
 {
@@ -159,19 +159,19 @@ FUNC INT DIA_Rupert_WoMatteo_Condition()
 };
 FUNC VOID DIA_Rupert_WoMatteo_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_WoMatteo_15_00"); //Gdzie go znajdê?
-	AI_Output (self ,other,"DIA_Rupert_WoMatteo_03_01"); //Stoisz w³aœnie przed jego sklepem. Prawie go nie opuszcza. WejdŸ do œrodka.
+	AI_Output (other,self ,"DIA_Rupert_WoMatteo_15_00"); //Gdzie go znajdÄ™?
+	AI_Output (self ,other,"DIA_Rupert_WoMatteo_03_01"); //Stoisz wÅ‚aÅ›nie przed jego sklepem. Prawie go nie opuszcza. WejdÅº do Å›rodka.
 	
 	if (Knows_Matteo == FALSE)
 	{
 		Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-		B_LogEntry (TOPIC_CityTrader,"Sklep Mattea znajduje siê przy po³udniowej bramie miasta. Mo¿na tam kupiæ orê¿, ¿ywnoœæ oraz wyposa¿enie.");
+		B_LogEntry (TOPIC_CityTrader,"Sklep Mattea znajduje siÄ™ przy poÅ‚udniowej bramie miasta. MoÅ¼na tam kupiÄ‡ orÄ™Å¼, Å¼ywnoÅ›Ä‡ oraz wyposaÅ¼enie.");
 		Knows_Matteo = TRUE;
 	};
 };
 
 // ***************************************************************
-//							Wer hat Einfluß
+//							Wer hat EinfluÃŸ
 // ***************************************************************
 INSTANCE DIA_Rupert_WerEinfluss(C_INFO)
 {
@@ -180,7 +180,7 @@ INSTANCE DIA_Rupert_WerEinfluss(C_INFO)
 	condition	= DIA_Rupert_WerEinfluss_Condition;
 	information	= DIA_Rupert_WerEinfluss_Info;
 	permanent	= FALSE;
-	description = "Jakich innych wp³ywowych obywateli mia³eœ na myœli?";
+	description = "Jakich innych wpÅ‚ywowych obywateli miaÅ‚eÅ› na myÅ›li?";
 };                      
 FUNC INT DIA_Rupert_WerEinfluss_Condition()
 {
@@ -192,12 +192,12 @@ FUNC INT DIA_Rupert_WerEinfluss_Condition()
 };
 FUNC VOID DIA_Rupert_WerEinfluss_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_WerEinfluss_15_00"); //Jakich innych wp³ywowych obywateli mia³eœ na myœli?
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_01"); //Najwa¿niejszymi osobami w tej czêœci miasta s¹ dzia³aj¹cy na tej ulicy kupcy i rzemieœlnicy.
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_02"); //Powinieneœ naj¹æ siê u któregoœ jako czeladnik - tak jak ja.
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_03"); //Od kiedy pracujê dla Mattea, miastowi nabrali do mnie szacunku.
+	AI_Output (other,self ,"DIA_Rupert_WerEinfluss_15_00"); //Jakich innych wpÅ‚ywowych obywateli miaÅ‚eÅ› na myÅ›li?
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_01"); //NajwaÅ¼niejszymi osobami w tej czÄ™Å›ci miasta sÄ… dziaÅ‚ajÄ…cy na tej ulicy kupcy i rzemieÅ›lnicy.
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_02"); //PowinieneÅ› najÄ…Ä‡ siÄ™ u ktÃ³regoÅ› jako czeladnik - tak jak ja.
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_03"); //Od kiedy pracujÄ™ dla Mattea, miastowi nabrali do mnie szacunku.
 	
-	B_LogEntry (TOPIC_OV,"Spróbujê zatrudniæ siê jako czeladnik u jednego z mistrzów.");
+	B_LogEntry (TOPIC_OV,"SprÃ³bujÄ™ zatrudniÄ‡ siÄ™ jako czeladnik u jednego z mistrzÃ³w.");
 };
 
 // ***************************************************************
@@ -210,7 +210,7 @@ INSTANCE DIA_Rupert_Work(C_INFO)
 	condition	= DIA_Rupert_Work_Condition;
 	information	= DIA_Rupert_Work_Info;
 	permanent	= FALSE;
-	description = "Potrzebujê pieniêdzy. Szukam pracy.";
+	description = "PotrzebujÄ™ pieniÄ™dzy. Szukam pracy.";
 };                      
 FUNC INT DIA_Rupert_Work_Condition()
 {
@@ -221,9 +221,9 @@ FUNC INT DIA_Rupert_Work_Condition()
 };
 FUNC VOID DIA_Rupert_Work_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_Work_15_00"); //Potrzebujê pieniêdzy. Szukam pracy.
-	AI_Output (self ,other,"DIA_Rupert_Work_03_01"); //S³ysza³em, ¿e Bosper ma jakieœ problemy z zaopatrzeniem. Jego sklep znajduje siê kilka kroków st¹d.
-	AI_Output (self ,other,"DIA_Rupert_Work_03_02"); //Mówi¹, ¿e ponoæ dobrze p³aci.
+	AI_Output (other,self ,"DIA_Rupert_Work_15_00"); //PotrzebujÄ™ pieniÄ™dzy. Szukam pracy.
+	AI_Output (self ,other,"DIA_Rupert_Work_03_01"); //SÅ‚yszaÅ‚em, Å¼e Bosper ma jakieÅ› problemy z zaopatrzeniem. Jego sklep znajduje siÄ™ kilka krokÃ³w stÄ…d.
+	AI_Output (self ,other,"DIA_Rupert_Work_03_02"); //MÃ³wiÄ…, Å¼e ponoÄ‡ dobrze pÅ‚aci.
 };
 
 // ***************************************************************
@@ -236,7 +236,7 @@ INSTANCE DIA_Rupert_YourOffer(C_INFO)
 	condition	= DIA_Rupert_YourOffer_Condition;
 	information	= DIA_Rupert_YourOffer_Info;
 	permanent	= FALSE;
-	description = "Co chcesz mi zaproponowaæ?";
+	description = "Co chcesz mi zaproponowaÄ‡?";
 };                      
 FUNC INT DIA_Rupert_YourOffer_Condition()
 {
@@ -245,11 +245,11 @@ FUNC INT DIA_Rupert_YourOffer_Condition()
 FUNC VOID DIA_Rupert_YourOffer_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_YourOffer_15_00"); //Co sprzedajesz?
-	AI_Output (self ,other,"DIA_Rupert_YourOffer_03_01"); //W tej chwili wybór jest niewielki.
+	AI_Output (self ,other,"DIA_Rupert_YourOffer_03_01"); //W tej chwili wybÃ³r jest niewielki.
 	if (hero.guild != GIL_SLD)
 	&& (hero.guild != GIL_DJG)
 	{ 
-		AI_Output (self ,other,"DIA_Rupert_YourOffer_03_02"); //Ten cholerny w³aœciciel ziemski przerwa³ dostawy, a to co skupujemy z ma³ych farm, nie wystarcza, by zaspokoiæ potrzeby miasta.
+		AI_Output (self ,other,"DIA_Rupert_YourOffer_03_02"); //Ten cholerny wÅ‚aÅ›ciciel ziemski przerwaÅ‚ dostawy, a to co skupujemy z maÅ‚ych farm, nie wystarcza, by zaspokoiÄ‡ potrzeby miasta.
 	};
 };
 
@@ -263,7 +263,7 @@ INSTANCE DIA_Rupert_Trade(C_INFO)
 	condition	= DIA_Rupert_Trade_Condition;
 	information	= DIA_Rupert_Trade_Info;
 	permanent	= TRUE;
-	description = "Poka¿ mi swoje towary.";
+	description = "PokaÅ¼ mi swoje towary.";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Rupert_Trade_Condition()
@@ -280,11 +280,11 @@ FUNC VOID DIA_Rupert_Trade_Info()
 		CreateInvItems (self, ItFo_cheese, 5);
 	};
 	
-	AI_Output (other,self ,"DIA_Rupert_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other,self ,"DIA_Rupert_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output (self,other,"DIA_Rupert_Trade_03_01"); //Musisz mi wybaczyæ niewielki wybór, cz³owiek z twoj¹ pozycj¹ z pewnoœci¹ przywyk³ do czegoœ wiêcej.
+		AI_Output (self,other,"DIA_Rupert_Trade_03_01"); //Musisz mi wybaczyÄ‡ niewielki wybÃ³r, czÅ‚owiek z twojÄ… pozycjÄ… z pewnoÅ›ciÄ… przywykÅ‚ do czegoÅ› wiÄ™cej.
 	};
 };
 
@@ -298,7 +298,7 @@ INSTANCE DIA_Rupert_Bauernaufstand(C_INFO)
 	condition	= DIA_Rupert_Bauernaufstand_Condition;
 	information	= DIA_Rupert_Bauernaufstand_Info;
 	permanent	= FALSE;
-	description = "Powiedz mi proszê coœ wiêcej o buncie ch³opów.";
+	description = "Powiedz mi proszÄ™ coÅ› wiÄ™cej o buncie chÅ‚opÃ³w.";
 };                       
 FUNC INT DIA_Rupert_Bauernaufstand_Condition()
 {	
@@ -310,16 +310,16 @@ FUNC INT DIA_Rupert_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Rupert_Bauernaufstand_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_Bauernaufstand_15_00"); //Powiedz mi proszê coœ wiêcej o buncie ch³opów.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_01"); //To doœæ proste: Onar, bogaty w³aœciciel ziemski, przesta³ p³aciæ miastu podatki.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_02"); //WyobraŸ sobie! Jesteœmy w stanie wojny z orkami, a ten snob chce zagarn¹æ wszystko dla siebie.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_03"); //W zwyk³ych okolicznoœciach stra¿ miejska szybko zajê³aby siê t¹ spraw¹.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_04"); //Ale uwa¿aj, bo teraz bêdzie najlepsze: powiadaj¹, ¿e Onar zatrudni³ najemników, których zadaniem jest odpêdzanie oddzia³ów stra¿y miejskiej!
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_05"); //NAJEMNICY! Mówiê ci, to wszystko skoñczy siê wojn¹! Jakby JEDNEJ by³o nam za ma³o!
+	AI_Output (other,self ,"DIA_Rupert_Bauernaufstand_15_00"); //Powiedz mi proszÄ™ coÅ› wiÄ™cej o buncie chÅ‚opÃ³w.
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_01"); //To doÅ›Ä‡ proste: Onar, bogaty wÅ‚aÅ›ciciel ziemski, przestaÅ‚ pÅ‚aciÄ‡ miastu podatki.
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_02"); //WyobraÅº sobie! JesteÅ›my w stanie wojny z orkami, a ten snob chce zagarnÄ…Ä‡ wszystko dla siebie.
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_03"); //W zwykÅ‚ych okolicznoÅ›ciach straÅ¼ miejska szybko zajÄ™Å‚aby siÄ™ tÄ… sprawÄ….
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_04"); //Ale uwaÅ¼aj, bo teraz bÄ™dzie najlepsze: powiadajÄ…, Å¼e Onar zatrudniÅ‚ najemnikÃ³w, ktÃ³rych zadaniem jest odpÄ™dzanie oddziaÅ‚Ã³w straÅ¼y miejskiej!
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_05"); //NAJEMNICY! MÃ³wiÄ™ ci, to wszystko skoÅ„czy siÄ™ wojnÄ…! Jakby JEDNEJ byÅ‚o nam za maÅ‚o!
 };
 
 // ***************************************************************
-//							Söldner
+//							SÃ¶ldner
 // ***************************************************************
 INSTANCE DIA_Rupert_Mercs(C_INFO)
 {
@@ -342,9 +342,9 @@ FUNC INT DIA_Rupert_Mercs_Condition()
 FUNC VOID DIA_Rupert_Mercs_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_Mercs_15_00"); //Co wiesz o najemnikach Onara?
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_01"); //S³ysza³em, ¿e wiêkszoœæ z nich to byli skazañcy z kolonii górniczej.
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_02"); //Ich przywódca by³ chyba jak¹œ grub¹ ryb¹ na królewskim dworze - genera³em, czy kimœ takim. Wygnano go jako zdrajcê.
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_03"); //Ciê¿kie czasy nasta³y.
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_01"); //SÅ‚yszaÅ‚em, Å¼e wiÄ™kszoÅ›Ä‡ z nich to byli skazaÅ„cy z kolonii gÃ³rniczej.
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_02"); //Ich przywÃ³dca byÅ‚ chyba jakÄ…Å› grubÄ… rybÄ… na krÃ³lewskim dworze - generaÅ‚em, czy kimÅ› takim. Wygnano go jako zdrajcÄ™.
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_03"); //CiÄ™Å¼kie czasy nastaÅ‚y.
 };
 
 

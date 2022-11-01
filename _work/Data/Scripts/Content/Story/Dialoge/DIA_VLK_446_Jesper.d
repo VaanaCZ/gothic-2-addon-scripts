@@ -72,20 +72,20 @@ FUNC INT DIA_Jesper_Hallo_Condition()
 };
 FUNC VOID DIA_Jesper_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Jesper_Hallo_09_00");//Co tu robisz? Nie masz tu czego szukaæ.
+	AI_Output (self, other,"DIA_Jesper_Hallo_09_00");//Co tu robisz? Nie masz tu czego szukaÄ‡.
 	AI_Output (self, other,"DIA_Jesper_Hallo_09_01");//No dobra, co tu robisz?
 		
 	Info_ClearChoices (DIA_Jesper_Hallo);
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Zamierzam ciê zabiæ.",DIA_Jesper_Hallo_Kill);	
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Chcia³em trochê pozwiedzaæ.",DIA_Jesper_Hallo_NurSo);
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"Zamierzam ciÄ™ zabiÄ‡.",DIA_Jesper_Hallo_Kill);	
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"ChciaÅ‚em trochÄ™ pozwiedzaÄ‡.",DIA_Jesper_Hallo_NurSo);
 		
 	if  (Attila_Key == TRUE)
 	{
-		Info_AddChoice 	  (DIA_Jesper_Hallo,"Attila da³ mi klucz... ",DIA_Jesper_Hallo_Willkommen);
+		Info_AddChoice 	  (DIA_Jesper_Hallo,"Attila daÅ‚ mi klucz... ",DIA_Jesper_Hallo_Willkommen);
 	}	
 	else 
 	{
-		Info_AddChoice 	  (DIA_Jesper_Hallo,"Za³atwi³em Attilê...",DIA_Jesper_Hallo_Umgelegt);
+		Info_AddChoice 	  (DIA_Jesper_Hallo,"ZaÅ‚atwiÅ‚em AttilÄ™...",DIA_Jesper_Hallo_Umgelegt);
 	};
 	
 	DG_gefunden = TRUE;
@@ -93,8 +93,8 @@ FUNC VOID DIA_Jesper_Hallo_Info()
 };
 FUNC VOID DIA_Jesper_Hallo_Kill()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Kill_15_00");//Zamierzam ciê zabiæ.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Kill_09_01");//Có¿ za wspania³y pomys³. Sam na niego wpad³eœ, co? A co tam. Nie bêdê przed³u¿a³.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Kill_15_00");//Zamierzam ciÄ™ zabiÄ‡.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Kill_09_01");//CÃ³Å¼ za wspaniaÅ‚y pomysÅ‚. Sam na niego wpadÅ‚eÅ›, co? A co tam. Nie bÄ™dÄ™ przedÅ‚uÅ¼aÅ‚.
 	
 	
 	AI_StopProcessInfos (self);
@@ -103,39 +103,39 @@ FUNC VOID DIA_Jesper_Hallo_Kill()
 };
 FUNC VOID DIA_Jesper_Hallo_NurSo()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_NurSo_15_00");//Chcia³em trochê pozwiedzaæ.
-	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_01");//Nie ma siê na co gapiæ. Wkraczasz na grz¹ski grunt, jasne?
-	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_02");//Wiêc nie ruszaj broni i powiedz mi, dlaczego tu jesteœ.
+	AI_Output (other, self,"DIA_Jesper_Hallo_NurSo_15_00");//ChciaÅ‚em trochÄ™ pozwiedzaÄ‡.
+	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_01");//Nie ma siÄ™ na co gapiÄ‡. Wkraczasz na grzÄ…ski grunt, jasne?
+	AI_Output (self, other,"DIA_Jesper_Hallo_NurSo_09_02");//WiÄ™c nie ruszaj broni i powiedz mi, dlaczego tu jesteÅ›.
 };
 FUNC VOID DIA_Jesper_Hallo_Willkommen()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Willkommen_15_00");//Attila da³ mi klucz. Dlatego tu jestem. Wiêc czego ode mnie chcesz?
-	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_01");//Chcia³byœ wiedzieæ? Spokojnie.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_02");//IdŸ do Cassii. Czeka na ciebie.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Willkommen_15_00");//Attila daÅ‚ mi klucz. Dlatego tu jestem. WiÄ™c czego ode mnie chcesz?
+	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_01");//ChciaÅ‚byÅ› wiedzieÄ‡? Spokojnie.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Willkommen_09_02");//IdÅº do Cassii. Czeka na ciebie.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
 };
 FUNC VOID DIA_Jesper_Hallo_Umgelegt()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Umgelegt_15_00");//Za³atwi³em Attilê. Mia³ przy sobie klucz do kana³ów.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_01");//Zabi³eœ Attilê? No i co z tego, to by³ nêdzny pies.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_02");//Powiem ci coœ. Jeœli mnie zaatakujesz, zabijê ciê.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Umgelegt_15_00");//ZaÅ‚atwiÅ‚em AttilÄ™. MiaÅ‚ przy sobie klucz do kanaÅ‚Ã³w.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_01");//ZabiÅ‚eÅ› AttilÄ™? No i co z tego, to byÅ‚ nÄ™dzny pies.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Umgelegt_09_02");//Powiem ci coÅ›. JeÅ›li mnie zaatakujesz, zabijÄ™ ciÄ™.
 	
 	Info_ClearChoices (DIA_Jesper_Hallo);
 	Info_AddChoice 	  (DIA_Jesper_Hallo,"Co ty tu robisz...",DIA_Jesper_Hallo_Was);	
-	Info_AddChoice 	  (DIA_Jesper_Hallo,"Chcê siê zobaczyæ z twoim przywódc¹.",DIA_Jesper_Hallo_Anfuehrer);
+	Info_AddChoice 	  (DIA_Jesper_Hallo,"ChcÄ™ siÄ™ zobaczyÄ‡ z twoim przywÃ³dcÄ….",DIA_Jesper_Hallo_Anfuehrer);
 };
 FUNC VOID DIA_Jesper_Hallo_Was()
 {
 	AI_Output (other, self,"DIA_Jesper_Hallo_Was_15_00");//Co robisz w tej ciemnej, wilgotnej norze?
-	AI_Output (self, other,"DIA_Jesper_Hallo_Was_09_01");//Mieszkam tu. Jeszcze jedno g³upie pytanie, a wytnê ci na skórze wzorek.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Was_09_01");//Mieszkam tu. Jeszcze jedno gÅ‚upie pytanie, a wytnÄ™ ci na skÃ³rze wzorek.
 };
 FUNC VOID DIA_Jesper_Hallo_Anfuehrer()
 {
-	AI_Output (other, self,"DIA_Jesper_Hallo_Anfuehrer_15_00");//Chcê siê zobaczyæ z twoim przywódc¹.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_01");//HA - moim przywódc¹? Jestem pewien, ¿e Cassia chêtnie z tob¹ porozmawia.
-	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_02");//IdŸ - i nie próbuj ¿adnych sztuczek.
+	AI_Output (other, self,"DIA_Jesper_Hallo_Anfuehrer_15_00");//ChcÄ™ siÄ™ zobaczyÄ‡ z twoim przywÃ³dcÄ….
+	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_01");//HA - moim przywÃ³dcÄ…? Jestem pewien, Å¼e Cassia chÄ™tnie z tobÄ… porozmawia.
+	AI_Output (self, other,"DIA_Jesper_Hallo_Anfuehrer_09_02");//IdÅº - i nie prÃ³buj Å¼adnych sztuczek.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
 };
@@ -149,7 +149,7 @@ INSTANCE DIA_Jesper_Bezahlen   (C_INFO)
 	condition   = DIA_Jesper_Bezahlen_Condition;
 	information = DIA_Jesper_Bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Mo¿esz mnie czegoœ nauczyæ?";
+	description	= "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };
 FUNC INT DIA_Jesper_Bezahlen_Condition()
 {	
@@ -163,22 +163,22 @@ FUNC INT DIA_Jesper_Bezahlen_Condition()
 };
 FUNC VOID DIA_Jesper_Bezahlen_Info()
 {	
-	AI_Output (other, self, "DIA_Jesper_Bezahlen_15_00");//Mo¿esz mnie czegoœ nauczyæ?
+	AI_Output (other, self, "DIA_Jesper_Bezahlen_15_00");//MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
 	
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_01");//Pewnie, poka¿ê ci, jak siê skradaæ - za darmo.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_01");//Pewnie, pokaÅ¼Ä™ ci, jak siÄ™ skradaÄ‡ - za darmo.
 		Jesper_TeachSneak = TRUE;
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_02");//Chcesz siê nauczyæ, jak siê bezszelestnie poruszaæ? To ciê bêdzie kosztowaæ 100 sztuk z³ota.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_09_02");//Chcesz siÄ™ nauczyÄ‡, jak siÄ™ bezszelestnie poruszaÄ‡? To ciÄ™ bÄ™dzie kosztowaÄ‡ 100 sztuk zÅ‚ota.
 		B_Say_Gold (self, other, Jesper_Cost);
 		
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
-		Info_AddChoice (DIA_Jesper_Bezahlen,"Mo¿e póŸniej... (POWRÓT)",DIA_Jesper_Bezahlen_Spaeter);
-		Info_AddChoice (DIA_Jesper_Bezahlen,"Chcê siê nauczyæ sztuki skradania (zap³aæ 100 sztuk z³ota).",DIA_Jesper_Bezahlen_Okay);
+		Info_AddChoice (DIA_Jesper_Bezahlen,"MoÅ¼e pÃ³Åºniej... (POWRÃ“T)",DIA_Jesper_Bezahlen_Spaeter);
+		Info_AddChoice (DIA_Jesper_Bezahlen,"ChcÄ™ siÄ™ nauczyÄ‡ sztuki skradania (zapÅ‚aÄ‡ 100 sztuk zÅ‚ota).",DIA_Jesper_Bezahlen_Okay);
 	};
 };
 FUNC VOID DIA_Jesper_Bezahlen_Spaeter()
@@ -187,18 +187,18 @@ FUNC VOID DIA_Jesper_Bezahlen_Spaeter()
 };
 FUNC VOID DIA_Jesper_Bezahlen_Okay()
 {
-	AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_00");//Dobra, chcê siê nauczyæ skradania.
+	AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_00");//Dobra, chcÄ™ siÄ™ nauczyÄ‡ skradania.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_01");//Oto z³oto.
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_02");//Daj mi znaæ, jak bêdziesz gotowy.
+		AI_Output (other, self, "DIA_Jesper_Bezahlen_Okay_15_01");//Oto zÅ‚oto.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_02");//Daj mi znaÄ‡, jak bÄ™dziesz gotowy.
 		Jesper_TeachSneak = TRUE;
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_03");//Bez z³ota niczego siê nie nauczysz.
+		AI_Output (self, other, "DIA_Jesper_Bezahlen_Okay_09_03");//Bez zÅ‚ota niczego siÄ™ nie nauczysz.
 		Info_ClearChoices (DIA_Jesper_Bezahlen);
 	};
 };
@@ -212,7 +212,7 @@ INSTANCE DIA_Jesper_Schleichen   (C_INFO)
 	condition   = DIA_Jesper_Schleichen_Condition;
 	information = DIA_Jesper_Schleichen_Info;
 	permanent   = TRUE;
-	description = "Naucz mnie zasad skradania i ukrywania siê.";
+	description = "Naucz mnie zasad skradania i ukrywania siÄ™.";
 };
 //--------------------------------------
 var int DIA_Jesper_Schleichen_permanent;
@@ -227,18 +227,18 @@ FUNC INT DIA_Jesper_Schleichen_Condition()
 };
 FUNC VOID DIA_Jesper_Schleichen_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Schleichen_15_00");//Naucz mnie sztuki skradania siê.
+	AI_Output (other, self, "DIA_Jesper_Schleichen_15_00");//Naucz mnie sztuki skradania siÄ™.
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK)
 	{
-		AI_Output (self, other, "DIA_Jesper_Schleichen_09_01");//Umiejêtnoœæ skradania siê jest niezwykle wa¿na dla ka¿dego z³odzieja. Przede wszystkim do poruszania siê po cudzych domach.
-		AI_Output (self, other, "DIA_Jesper_Schleichen_09_02");//Nie tup tak. Wiêkszoœæ ludzi ma bardzo czujny sen.
-		AI_Output (self, other, "DIA_Jesper_Schleichen_09_03");//Jeœli bêdziesz siê skrada³, nikt ciê nie us³yszy - wtedy bêdziesz móg³ pracowaæ bez przeszkód.
+		AI_Output (self, other, "DIA_Jesper_Schleichen_09_01");//UmiejÄ™tnoÅ›Ä‡ skradania siÄ™ jest niezwykle waÅ¼na dla kaÅ¼dego zÅ‚odzieja. Przede wszystkim do poruszania siÄ™ po cudzych domach.
+		AI_Output (self, other, "DIA_Jesper_Schleichen_09_02");//Nie tup tak. WiÄ™kszoÅ›Ä‡ ludzi ma bardzo czujny sen.
+		AI_Output (self, other, "DIA_Jesper_Schleichen_09_03");//JeÅ›li bÄ™dziesz siÄ™ skradaÅ‚, nikt ciÄ™ nie usÅ‚yszy - wtedy bÄ™dziesz mÃ³gÅ‚ pracowaÄ‡ bez przeszkÃ³d.
 		DIA_Jesper_Schleichen_permanent = TRUE;
 	};
 };
 //////////////////////////////////////////////////////////////////////
-//	Info Freunde getötet
+//	Info Freunde getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Jesper_Killer   (C_INFO)
 {
@@ -262,20 +262,20 @@ FUNC VOID DIA_Jesper_Killer_Info()
 	if  Npc_IsDead (Cassia)
 	&&  Npc_IsDead (Ramirez)
 	{
-		AI_Output (self, other, "DIA_Jesper_Killer_09_00");//Zabi³eœ moich przyjació³. Dlaczego to zrobi³eœ, morderco?
-		AI_Output (self, other, "DIA_Jesper_Killer_09_01");//Wyœlê ciê do królestwa Beliara.
+		AI_Output (self, other, "DIA_Jesper_Killer_09_00");//ZabiÅ‚eÅ› moich przyjaciÃ³Å‚. Dlaczego to zrobiÅ‚eÅ›, morderco?
+		AI_Output (self, other, "DIA_Jesper_Killer_09_01");//WyÅ›lÄ™ ciÄ™ do krÃ³lestwa Beliara.
 	}
 	else if Npc_IsDead (Cassia)
 	{
-		AI_Output (self, other, "DIA_Jesper_Killer_09_02");//Zabi³eœ Cassiê, ty parszywy morderco. Mnie jednak nie pokonasz!
+		AI_Output (self, other, "DIA_Jesper_Killer_09_02");//ZabiÅ‚eÅ› CassiÄ™, ty parszywy morderco. Mnie jednak nie pokonasz!
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE,1); 
 	}
 	else if  Npc_IsDead (Ramirez)
 	{
-		AI_Output (self, other, "DIA_Jesper_Killer_09_03");//Wyœwiadczy³em Ramirezowi wiêcej przys³ug i zebra³em wiêcej gotówki, ni¿ kiedykolwiek widzia³eœ.
-		AI_Output (self, other, "DIA_Jesper_Killer_09_04");//A ty go zabi³eœ, wredny psie! Pora za to zap³aciæ!
+		AI_Output (self, other, "DIA_Jesper_Killer_09_03");//WyÅ›wiadczyÅ‚em Ramirezowi wiÄ™cej przysÅ‚ug i zebraÅ‚em wiÄ™cej gotÃ³wki, niÅ¼ kiedykolwiek widziaÅ‚eÅ›.
+		AI_Output (self, other, "DIA_Jesper_Killer_09_04");//A ty go zabiÅ‚eÅ›, wredny psie! Pora za to zapÅ‚aciÄ‡!
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE,1); 
@@ -292,7 +292,7 @@ INSTANCE DIA_Jesper_Bogen   (C_INFO)
 	condition   = DIA_Jesper_Bogen_Condition;
 	information = DIA_Jesper_Bogen_Info;
 	permanent   = FALSE;
-	description = "Nie wiesz przypadkiem czegoœ o ³uku Bospera?";
+	description = "Nie wiesz przypadkiem czegoÅ› o Å‚uku Bospera?";
 };
 
 FUNC INT DIA_Jesper_Bogen_Condition()
@@ -306,17 +306,17 @@ FUNC INT DIA_Jesper_Bogen_Condition()
 };
 FUNC VOID DIA_Jesper_Bogen_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Bogen_15_00");//Nie wiesz przypadkiem czegoœ o ³uku Bospera?
-	AI_Output (self, other, "DIA_Jesper_Bogen_09_01");//Chodzi ci o ten ³uk od ³uczarza? Taak, mam go gdzieœ w skrzyni.
-	AI_Output (self, other, "DIA_Jesper_Bogen_09_02");//Pe³no tam jednak szczurów. Mo¿esz go przynieœæ, jeœli siê nie boisz.
-	AI_Output (self, other, "DIA_Jesper_Bogen_09_03");//Och, oczywiœcie skrzynia jest zamkniêta. Bêdziesz musia³ siê w³amaæ. Na szczêœcie wci¹¿ masz wytrychy.
+	AI_Output (other, self, "DIA_Jesper_Bogen_15_00");//Nie wiesz przypadkiem czegoÅ› o Å‚uku Bospera?
+	AI_Output (self, other, "DIA_Jesper_Bogen_09_01");//Chodzi ci o ten Å‚uk od Å‚uczarza? Taak, mam go gdzieÅ› w skrzyni.
+	AI_Output (self, other, "DIA_Jesper_Bogen_09_02");//PeÅ‚no tam jednak szczurÃ³w. MoÅ¼esz go przynieÅ›Ä‡, jeÅ›li siÄ™ nie boisz.
+	AI_Output (self, other, "DIA_Jesper_Bogen_09_03");//Och, oczywiÅ›cie skrzynia jest zamkniÄ™ta. BÄ™dziesz musiaÅ‚ siÄ™ wÅ‚amaÄ‡. Na szczÄ™Å›cie wciÄ…Å¼ masz wytrychy.
 	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_01");	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_02");	
 	Wld_InsertNpc (Giant_Rat, "NW_CITY_KANAL_ROOM_01_03");
 };
 //////////////////////////////////////////////////////////////////////
-//	Info Tür
+//	Info TÃ¼r
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Jesper_Tuer   (C_INFO)
 {
@@ -325,7 +325,7 @@ INSTANCE DIA_Jesper_Tuer   (C_INFO)
 	condition   = DIA_Jesper_Tuer_Condition;
 	information = DIA_Jesper_Tuer_Info;
 	permanent   = FALSE;
-	description = "Co jest za tymi zamkniêtymi drzwiami?";
+	description = "Co jest za tymi zamkniÄ™tymi drzwiami?";
 };
 
 FUNC INT DIA_Jesper_Tuer_Condition()
@@ -338,11 +338,11 @@ FUNC INT DIA_Jesper_Tuer_Condition()
 };
 FUNC VOID DIA_Jesper_Tuer_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Tuer_15_00");//Co jest za tymi zamkniêtymi drzwiami?
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_01");//Dalej jest skrzynia - wyzwanie przygotowane przez mistrza otwierania zamków.
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_02");//Umieœci³ na niej tak skomplikowany zamek, ¿e do tej pory nikt nie móg³ go otworzyæ.
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_03");//Niestety, zosta³ z³apany - wyrzucili go za Barierê i pewnie tam umar³.
-	AI_Output (self, other, "DIA_Jesper_Tuer_09_04");//Jeœli jednak chcesz otworzyæ skrzyniê, to weŸ ten klucz od drzwi sali.
+	AI_Output (other, self, "DIA_Jesper_Tuer_15_00");//Co jest za tymi zamkniÄ™tymi drzwiami?
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_01");//Dalej jest skrzynia - wyzwanie przygotowane przez mistrza otwierania zamkÃ³w.
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_02");//UmieÅ›ciÅ‚ na niej tak skomplikowany zamek, Å¼e do tej pory nikt nie mÃ³gÅ‚ go otworzyÄ‡.
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_03");//Niestety, zostaÅ‚ zÅ‚apany - wyrzucili go za BarierÄ™ i pewnie tam umarÅ‚.
+	AI_Output (self, other, "DIA_Jesper_Tuer_09_04");//JeÅ›li jednak chcesz otworzyÄ‡ skrzyniÄ™, to weÅº ten klucz od drzwi sali.
 	
 	B_GiveInvItems (self, other, ItKe_Fingers,1);
 };
@@ -356,7 +356,7 @@ INSTANCE DIA_Jesper_Truhe   (C_INFO)
 	condition   = DIA_Jesper_Truhe_Condition;
 	information = DIA_Jesper_Truhe_Info;
 	permanent   = FALSE;
-	description = "Uda³o mi siê otworzyæ skrzyniê.";
+	description = "UdaÅ‚o mi siÄ™ otworzyÄ‡ skrzyniÄ™.";
 };
 
 FUNC INT DIA_Jesper_Truhe_Condition()
@@ -372,8 +372,8 @@ FUNC INT DIA_Jesper_Truhe_Condition()
 };
 FUNC VOID DIA_Jesper_Truhe_Info()
 {
-	AI_Output (other, self, "DIA_Jesper_Truhe_15_00");//Uda³o mi siê otworzyæ skrzyniê.
-	AI_Output (self, other, "DIA_Jesper_Truhe_09_01");//Niemo¿liwe! Wygl¹da na to, ¿e mamy nowego mistrza otwierania zamków.
+	AI_Output (other, self, "DIA_Jesper_Truhe_15_00");//UdaÅ‚o mi siÄ™ otworzyÄ‡ skrzyniÄ™.
+	AI_Output (self, other, "DIA_Jesper_Truhe_09_01");//NiemoÅ¼liwe! WyglÄ…da na to, Å¼e mamy nowego mistrza otwierania zamkÃ³w.
 	AI_Output (self, other, "DIA_Jesper_Truhe_09_02");//Gratulacje!
 	
 	B_GivePlayerXP (XP_JesperTruhe);

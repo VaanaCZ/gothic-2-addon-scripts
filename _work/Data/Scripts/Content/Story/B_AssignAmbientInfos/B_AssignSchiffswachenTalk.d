@@ -3,20 +3,20 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 {	
-	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt auf´s Schiff!!!!
-	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufÂ´s Schiff!!!!
+	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: FÃ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃŸ nach der Aktion wieder geÃ¤ndert werden, z. B = 0;
 	{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_04_00"); //Obserwujemy ciê, wiêc lepiej o tym pamiêtaj.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_04_00"); //Obserwujemy ciÄ™, wiÄ™c lepiej o tym pamiÄ™taj.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Nie wpl¹cz siê w jakieœ k³opoty, bêd¹c tutaj.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Nie wplÄ…cz siÄ™ w jakieÅ› kÅ‚opoty, bÄ™dÄ…c tutaj.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Nawet nie myœl o kradzie¿y, jasne?
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Nawet nie myÅ›l o kradzieÅ¼y, jasne?
 			};
 		AI_StopProcessInfos (Schiffswache);
 		Npc_SetRefuseTalk 	(Schiffswache,60);
@@ -54,30 +54,30 @@ func void B_AssignSchiffswachenInfos (var C_NPC Schiffswache)
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Przeklêci orkowie najechali zamek Garonda. Natychmiast musimy coœ zrobiæ!
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //PrzeklÄ™ci orkowie najechali zamek Garonda. Natychmiast musimy coÅ› zrobiÄ‡!
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Jeœli kiedyœ dorwiemy drania, który otworzy³ g³ówn¹ bramê, nie bêdziemy z nim d³ugo rozmawiaæ. Zap³aci za sw¹ zdradê.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //JeÅ›li kiedyÅ› dorwiemy drania, ktÃ³ry otworzyÅ‚ gÅ‚Ã³wnÄ… bramÄ™, nie bÄ™dziemy z nim dÅ‚ugo rozmawiaÄ‡. ZapÅ‚aci za swÄ… zdradÄ™.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //Nie mo¿emy d³u¿ej czekaæ. Bez pomocy nasi ch³opcy ugn¹ siê pod naciskiem kolejnej fali orkowych wojsk.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //Nie moÅ¼emy dÅ‚uÅ¼ej czekaÄ‡. Bez pomocy nasi chÅ‚opcy ugnÄ… siÄ™ pod naciskiem kolejnej fali orkowych wojsk.
 			};
 		}
 	else
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond zwo³a³ pospolite ruszenie. Wkrótce wyruszamy do Górniczej Doliny.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond zwoÅ‚aÅ‚ pospolite ruszenie. WkrÃ³tce wyruszamy do GÃ³rniczej Doliny.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Czas daæ orkom ostateczn¹ nauczkê.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Czas daÄ‡ orkom ostatecznÄ… nauczkÄ™.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Nie mogê siê doczekaæ, by pokazaæ orkom, co o nich myœlê. Wkrótce zaczynamy.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Nie mogÄ™ siÄ™ doczekaÄ‡, by pokazaÄ‡ orkom, co o nich myÅ›lÄ™. WkrÃ³tce zaczynamy.
 			};
 		};
 	AI_StopProcessInfos	(Schiffswache);

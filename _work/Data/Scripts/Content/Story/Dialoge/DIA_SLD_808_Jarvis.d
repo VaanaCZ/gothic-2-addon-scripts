@@ -45,8 +45,8 @@ FUNC INT DIA_Jarvis_Hello_Condition()
  
 FUNC VOID DIA_Jarvis_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Hej! Czy ja ciê sk¹dœ nie znam?
-	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //To mo¿liwe. Te¿ by³em w Kolonii.
+	AI_Output (self, other, "DIA_Jarvis_Hello_04_00"); //Hej! Czy ja ciÄ™ skÄ…dÅ› nie znam?
+	AI_Output (other, self, "DIA_Jarvis_Hello_15_01"); //To moÅ¼liwe. TeÅ¼ byÅ‚em w Kolonii.
 	AI_Output (self, other, "DIA_Jarvis_Hello_04_02"); //Taak... Czego chcesz?
 };
 	
@@ -60,7 +60,7 @@ instance DIA_Jarvis_DieLage (C_INFO)
 	condition	= DIA_Jarvis_DieLage_Condition;
 	information	= DIA_Jarvis_DieLage_Info;
 	permanent	= FALSE;
-	description = "Jak wygl¹da sytuacja?";
+	description = "Jak wyglÄ…da sytuacja?";
 };                       
 
 FUNC INT DIA_Jarvis_DieLage_Condition()
@@ -70,9 +70,9 @@ FUNC INT DIA_Jarvis_DieLage_Condition()
  
 FUNC VOID DIA_Jarvis_DieLage_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Jak wygl¹da sytuacja?
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //Teraz mamy powa¿ne k³opoty. Wœród nas, najemników, tworz¹ siê dwa obozy.
-	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Sylvio i jego ludzie nie wierz¹, ¿e Lee ma dobry plan.
+	AI_Output (other, self, "DIA_Jarvis_DieLage_15_00"); //Jak wyglÄ…da sytuacja?
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_01"); //Teraz mamy powaÅ¼ne kÅ‚opoty. WÅ›rÃ³d nas, najemnikÃ³w, tworzÄ… siÄ™ dwa obozy.
+	AI_Output (self, other, "DIA_Jarvis_DieLage_04_02"); //Sylvio i jego ludzie nie wierzÄ…, Å¼e Lee ma dobry plan.
 };
 	
 // ************************************************************
@@ -85,7 +85,7 @@ instance DIA_Jarvis_TwoFronts (C_INFO)
 	condition	= DIA_Jarvis_TwoFronts_Condition;
 	information	= DIA_Jarvis_TwoFronts_Info;
 	permanent	= FALSE;
-	description = "Co was tak poró¿ni³o?";
+	description = "Co was tak porÃ³Å¼niÅ‚o?";
 };                       
 
 FUNC INT DIA_Jarvis_TwoFronts_Condition()
@@ -98,14 +98,14 @@ FUNC INT DIA_Jarvis_TwoFronts_Condition()
  
 FUNC VOID DIA_Jarvis_TwoFronts_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Co was tak poró¿ni³o?
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //Wiêkszoœæ z nas pochodzi z Kolonii, tak samo jak Lee.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //Jednak niektórzy z najemników do³¹czyli do nas póŸniej.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //Nie byli w Kolonii, ale walczyli z orkami - dalej na po³udniu.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //Jakimœ sposobem dowiedzieli siê, ¿e Lee szuka ludzi. Ich szefem by³ Sylvio.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //Uzna³ przywództwo Lee, ale teraz próbuje podburzaæ przeciwko niemu najemników, ¿eby nie realizowali jego planu.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //Sporo ludzi Lee uwa¿a, ¿e to ¿aden problem. Ale ja znam kolesi takich jak Sylvio.
-	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Zrobi wszystko, ¿eby zrealizowaæ swoje zamierzenia.
+	AI_Output (other, self, "DIA_Jarvis_TwoFronts_15_00"); //Co was tak porÃ³Å¼niÅ‚o?
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_01"); //WiÄ™kszoÅ›Ä‡ z nas pochodzi z Kolonii, tak samo jak Lee.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_02"); //Jednak niektÃ³rzy z najemnikÃ³w doÅ‚Ä…czyli do nas pÃ³Åºniej.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_03"); //Nie byli w Kolonii, ale walczyli z orkami - dalej na poÅ‚udniu.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_04"); //JakimÅ› sposobem dowiedzieli siÄ™, Å¼e Lee szuka ludzi. Ich szefem byÅ‚ Sylvio.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_05"); //UznaÅ‚ przywÃ³dztwo Lee, ale teraz prÃ³buje podburzaÄ‡ przeciwko niemu najemnikÃ³w, Å¼eby nie realizowali jego planu.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_06"); //Sporo ludzi Lee uwaÅ¼a, Å¼e to Å¼aden problem. Ale ja znam kolesi takich jak Sylvio.
+	AI_Output (self, other, "DIA_Jarvis_TwoFronts_04_07"); //Zrobi wszystko, Å¼eby zrealizowaÄ‡ swoje zamierzenia.
 };
 	
 // ************************************************************
@@ -134,10 +134,10 @@ FUNC VOID DIA_Jarvis_LeesPlan_Info()
 	AI_Output (other, self, "DIA_Jarvis_LeesPlan_15_00"); //Czy wiesz, co zmierza Lee?
 	if ((hero.guild != GIL_MIL) && (hero.guild != GIL_PAL))
 	{
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Lee chce, ¿ebyœmy czekali, a¿ paladyni w mieœcie wymr¹ z g³odu.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_01"); //Lee chce, Å¼ebyÅ›my czekali, aÅ¼ paladyni w mieÅ›cie wymrÄ… z gÅ‚odu.
 	};
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Planuje zabraæ nas wszystkich z wyspy. A Innos wie, ¿e nie mam nic przeciwko opuszczeniu tego miejsca.
-	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //Nie wiem, jak zamierza tego dokonaæ, ale mu ufam. Dobrze nami dowodzi.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_02"); //Planuje zabraÄ‡ nas wszystkich z wyspy. A Innos wie, Å¼e nie mam nic przeciwko opuszczeniu tego miejsca.
+	AI_Output (self, other, "DIA_Jarvis_LeesPlan_04_03"); //Nie wiem, jak zamierza tego dokonaÄ‡, ale mu ufam. Dobrze nami dowodzi.
 };
 
 // ************************************************************
@@ -164,10 +164,10 @@ FUNC INT DIA_Jarvis_SylviosPlan_Condition()
 FUNC VOID DIA_Jarvis_SylviosPlan_Info()
 {	
 	AI_Output (other, self, "DIA_Jarvis_SylviosPlan_15_00"); //Czy wiesz, co planuje Sylvio?
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Sylvio dowiedzia³ siê, ¿e niektórzy z paladynów przenieœli siê do starej Kolonii.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //Mówi, ¿e reszta paladynów nie odwa¿y siê nas tutaj zaatakowaæ i chce wykorzystaæ sytuacjê.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //Pl¹drowaæ ma³e farmy, rozprawiæ siê z ma³ymi patrolami stra¿y poza miastem, z³upiæ podró¿nych - takie rzeczy.
-	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //Lee uwa¿a jednak, ¿e w naszej sytuacji by³aby to najgorsza rzecz, jak¹ moglibyœmy zrobiæ.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_01"); //Sylvio dowiedziaÅ‚ siÄ™, Å¼e niektÃ³rzy z paladynÃ³w przenieÅ›li siÄ™ do starej Kolonii.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_02"); //MÃ³wi, Å¼e reszta paladynÃ³w nie odwaÅ¼y siÄ™ nas tutaj zaatakowaÄ‡ i chce wykorzystaÄ‡ sytuacjÄ™.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_03"); //PlÄ…drowaÄ‡ maÅ‚e farmy, rozprawiÄ‡ siÄ™ z maÅ‚ymi patrolami straÅ¼y poza miastem, zÅ‚upiÄ‡ podrÃ³Å¼nych - takie rzeczy.
+	AI_Output (self, other, "DIA_Jarvis_SylviosPlan_04_04"); //Lee uwaÅ¼a jednak, Å¼e w naszej sytuacji byÅ‚aby to najgorsza rzecz, jakÄ… moglibyÅ›my zrobiÄ‡.
 };
 
 // ************************************************************
@@ -180,7 +180,7 @@ instance DIA_Jarvis_WannaJoin (C_INFO)
 	condition	= DIA_Jarvis_WannaJoin_Condition;
 	information	= DIA_Jarvis_WannaJoin_Info;
 	permanent	= FALSE;
-	description = "Chcê zostaæ najemnikiem!";
+	description = "ChcÄ™ zostaÄ‡ najemnikiem!";
 };                       
 
 FUNC INT DIA_Jarvis_WannaJoin_Condition()
@@ -193,11 +193,11 @@ FUNC INT DIA_Jarvis_WannaJoin_Condition()
  
 FUNC VOID DIA_Jarvis_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //Chcê zostaæ najemnikiem!
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Nie jestem pewien, czy to dobry pomys³...
+	AI_Output (other, self, "DIA_Jarvis_WannaJoin_15_00"); //ChcÄ™ zostaÄ‡ najemnikiem!
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_01"); //Nie jestem pewien, czy to dobry pomysÅ‚...
 	AI_Output (other,self , "DIA_Jarvis_WannaJoin_15_02"); //W czym problem?
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //No có¿, muszê g³osowaæ za tob¹ albo przeciwko tobie.
-	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //A w obecnej sytuacji zag³osujê na ciebie tylko wtedy, jeœli bêdê pewien, ¿e stoisz po stronie Lee!
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_03"); //No cÃ³Å¼, muszÄ™ gÅ‚osowaÄ‡ za tobÄ… albo przeciwko tobie.
+	AI_Output (self, other, "DIA_Jarvis_WannaJoin_04_04"); //A w obecnej sytuacji zagÅ‚osujÄ™ na ciebie tylko wtedy, jeÅ›li bÄ™dÄ™ pewien, Å¼e stoisz po stronie Lee!
 };
 
 // ************************************************************
@@ -210,7 +210,7 @@ instance DIA_Jarvis_MissionKO (C_INFO)
 	condition	= DIA_Jarvis_MissionKO_Condition;
 	information	= DIA_Jarvis_MissionKO_Info;
 	permanent	= FALSE;
-	description = "Wiêc co powinienem zrobiæ?";
+	description = "WiÄ™c co powinienem zrobiÄ‡?";
 };                       
 
 FUNC INT DIA_Jarvis_MissionKO_Condition()
@@ -224,15 +224,15 @@ FUNC INT DIA_Jarvis_MissionKO_Condition()
  
 FUNC VOID DIA_Jarvis_MissionKO_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //Wiêc co powinienem zrobiæ?
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //To proste. Obij paru ch³opaków Sylvia! Tym sposobem obie strony bêd¹ dok³adnie wiedzia³y, za kim siê opowiedzia³eœ.
-	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //A jeœli do tego bêdziesz siê trzyma³ zasad pojedynku, to zaskarbisz sobie szacunek pozosta³ych.
+	AI_Output (other, self, "DIA_Jarvis_MissionKO_15_00"); //WiÄ™c co powinienem zrobiÄ‡?
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_01"); //To proste. Obij paru chÅ‚opakÃ³w Sylvia! Tym sposobem obie strony bÄ™dÄ… dokÅ‚adnie wiedziaÅ‚y, za kim siÄ™ opowiedziaÅ‚eÅ›.
+	AI_Output (self, other, "DIA_Jarvis_MissionKO_04_02"); //A jeÅ›li do tego bÄ™dziesz siÄ™ trzymaÅ‚ zasad pojedynku, to zaskarbisz sobie szacunek pozostaÅ‚ych.
 	
 	MIS_Jarvis_SldKO = LOG_RUNNING;
 	self.aivar[AIV_IGNORE_Murder] = TRUE;
 	Log_CreateTopic (TOPIC_JarvisSLDKo,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_JarvisSLDKo,LOG_RUNNING);
-	B_LogEntry (TOPIC_JarvisSLDKo,"Jarvis chce przetrzepaæ skórê kilku ch³opakom Sylvia. Kiedy ta sprawa bêdzie ju¿ za³atwiona, udzieli mi swojego poparcia.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Jarvis chce przetrzepaÄ‡ skÃ³rÄ™ kilku chÅ‚opakom Sylvia. Kiedy ta sprawa bÄ™dzie juÅ¼ zaÅ‚atwiona, udzieli mi swojego poparcia.");
 };
 
 // ************************************************************
@@ -245,7 +245,7 @@ instance DIA_Jarvis_DuellRegeln (C_INFO)
 	condition	= DIA_Jarvis_DuellRegeln_Condition;
 	information	= DIA_Jarvis_DuellRegeln_Info;
 	permanent	= FALSE;
-	description = "Jakie s¹ regu³y pojedynku?";
+	description = "Jakie sÄ… reguÅ‚y pojedynku?";
 };                       
 
 FUNC INT DIA_Jarvis_DuellRegeln_Condition()
@@ -258,11 +258,11 @@ FUNC INT DIA_Jarvis_DuellRegeln_Condition()
  
 FUNC VOID DIA_Jarvis_DuellRegeln_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Jakie s¹ regu³y pojedynku?
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //IdŸ do Torlofa, jeœli jesteœ zainteresowany, on ci to wyjaœni.
-	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //¯ebyœmy siê dobrze zrozumieli: nie interesuje mnie, czy bêdziesz przestrzega³ zasad, czy nie. Wa¿ne, ¿eby ci kolesie wyl¹dowali na glebie!
+	AI_Output (other, self, "DIA_Jarvis_DuellRegeln_15_00"); //Jakie sÄ… reguÅ‚y pojedynku?
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_01"); //IdÅº do Torlofa, jeÅ›li jesteÅ› zainteresowany, on ci to wyjaÅ›ni.
+	AI_Output (self, other, "DIA_Jarvis_DuellRegeln_04_02"); //Å»ebyÅ›my siÄ™ dobrze zrozumieli: nie interesuje mnie, czy bÄ™dziesz przestrzegaÅ‚ zasad, czy nie. WaÅ¼ne, Å¼eby ci kolesie wylÄ…dowali na glebie!
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Nie muszê nawet trzymaæ siê zasad obowi¹zuj¹cych w czasie pojedynku...");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Nie muszÄ™ nawet trzymaÄ‡ siÄ™ zasad obowiÄ…zujÄ…cych w czasie pojedynku...");
 };
 
 // ************************************************************
@@ -275,7 +275,7 @@ instance DIA_Jarvis_SylviosMen (C_INFO)
 	condition	= DIA_Jarvis_SylviosMen_Condition;
 	information	= DIA_Jarvis_SylviosMen_Info;
 	permanent	= FALSE;
-	description = "Którzy z najemników to ludzie Sylvia?";
+	description = "KtÃ³rzy z najemnikÃ³w to ludzie Sylvia?";
 };                       
 
 FUNC INT DIA_Jarvis_SylviosMen_Condition()
@@ -288,12 +288,12 @@ FUNC INT DIA_Jarvis_SylviosMen_Condition()
  
 FUNC VOID DIA_Jarvis_SylviosMen_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //Którzy z najemników to ludzie Sylvia?
-	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Jest szeœciu ch³opa. Po pierwsze Sylvio i jego prawa rêka Bullko.
+	AI_Output (other, self, "DIA_Jarvis_SylviosMen_15_00"); //KtÃ³rzy z najemnikÃ³w to ludzie Sylvia?
+	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_01"); //Jest szeÅ›ciu chÅ‚opa. Po pierwsze Sylvio i jego prawa rÄ™ka Bullko.
 	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_02"); //Potem Rod, Sentenza, Fester i Raoul.
 	AI_Output (self, other, "DIA_Jarvis_SylviosMen_04_03"); //Reszta jest neutralna albo stoi po stronie Lee.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Ludzie Sylvia - Bullko, Rod, Sentenza, Fester i Raoul - s¹ tacy sami jak on.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Ludzie Sylvia - Bullko, Rod, Sentenza, Fester i Raoul - sÄ… tacy sami jak on.");
 };
 
 // ************************************************************
@@ -306,7 +306,7 @@ instance DIA_Jarvis_HowMany (C_INFO)
 	condition	= DIA_Jarvis_HowMany_Condition;
 	information	= DIA_Jarvis_HowMany_Info;
 	permanent	= FALSE;
-	description = "Ilu ludzi Sylvia muszê pokonaæ?";
+	description = "Ilu ludzi Sylvia muszÄ™ pokonaÄ‡?";
 };                       
 
 FUNC INT DIA_Jarvis_HowMany_Condition()
@@ -319,12 +319,12 @@ FUNC INT DIA_Jarvis_HowMany_Condition()
  
 FUNC VOID DIA_Jarvis_HowMany_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //Ilu ludzi Sylvia powinienem pokonaæ?
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //Je¿eli powalisz trzech z nich, poka¿esz po czyjej jesteœ stronie.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Kogo wybierzesz, to ju¿ twoja sprawa.
-	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //Ma³a rada: nie chodzi o sprawdzian twojej odwagi. Nie zadzieraj z Sylviem - zrobi z ciebie siekane kotlety.
+	AI_Output (other, self, "DIA_Jarvis_HowMany_15_00"); //Ilu ludzi Sylvia powinienem pokonaÄ‡?
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_01"); //JeÅ¼eli powalisz trzech z nich, pokaÅ¼esz po czyjej jesteÅ› stronie.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_02"); //Kogo wybierzesz, to juÅ¼ twoja sprawa.
+	AI_Output (self, other, "DIA_Jarvis_HowMany_04_03"); //MaÅ‚a rada: nie chodzi o sprawdzian twojej odwagi. Nie zadzieraj z Sylviem - zrobi z ciebie siekane kotlety.
 	
-	B_LogEntry (TOPIC_JarvisSLDKo,"Wystarczy, jeœli pokonam trzech spoœród ludzi Sylvia. Od tego ostatniego lepiej trzymaæ siê z daleka.");
+	B_LogEntry (TOPIC_JarvisSLDKo,"Wystarczy, jeÅ›li pokonam trzech spoÅ›rÃ³d ludzi Sylvia. Od tego ostatniego lepiej trzymaÄ‡ siÄ™ z daleka.");
 };
 
 // ************************************************************
@@ -337,7 +337,7 @@ instance DIA_Jarvis_HowManyLeft (C_INFO)
 	condition	= DIA_Jarvis_HowManyLeft_Condition;
 	information	= DIA_Jarvis_HowManyLeft_Info;
 	permanent	= TRUE;
-	description = "Ilu ludzi Sylvia jest jeszcze na mojej liœcie?";
+	description = "Ilu ludzi Sylvia jest jeszcze na mojej liÅ›cie?";
 };                       
 
 FUNC INT DIA_Jarvis_HowManyLeft_Condition()
@@ -351,7 +351,7 @@ FUNC INT DIA_Jarvis_HowManyLeft_Condition()
  
 FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Ilu ludzi Sylvia jest jeszcze na mojej liœcie?
+	AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_00"); //Ilu ludzi Sylvia jest jeszcze na mojej liÅ›cie?
 	
 	var int victories;
 	victories = 0;
@@ -359,15 +359,15 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	if (Bullco.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| (Bullco.aivar[AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_01"); //Pokona³em Bullka.
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //S³ysza³em. NieŸle.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_01"); //PokonaÅ‚em Bullka.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_02"); //SÅ‚yszaÅ‚em. NieÅºle.
 		victories = victories + 1; 
 
 	};
 	if (Rod.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| (Rod.aivar[AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_03"); //Rod wygl¹da, jakby przytrafi³ mu siê ma³y wypadek.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_03"); //Rod wyglÄ…da, jakby przytrafiÅ‚ mu siÄ™ maÅ‚y wypadek.
 		victories = victories + 1;
 	};
 	if (Sentenza.aivar[AIV_DefeatedByPlayer] == TRUE)
@@ -375,11 +375,11 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (Npc_KnowsInfo (other, DIA_Sentenza_Hello))
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Sentenza próbowa³ wydusiæ ze mnie trochê z³ota - to by³ niezbyt m¹dry pomys³.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_04"); //Sentenza prÃ³bowaÅ‚ wydusiÄ‡ ze mnie trochÄ™ zÅ‚ota - to byÅ‚ niezbyt mÄ…dry pomysÅ‚.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_05"); //Powali³em Sentenzê.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_05"); //PowaliÅ‚em SentenzÄ™.
 		};
 
 		victories = victories + 1;
@@ -390,11 +390,11 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (MIS_Fester_KillBugs == LOG_OBSOLETE)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_06"); //Fester chcia³ mnie zrobiæ w konia - i to by³ jego b³¹d.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_06"); //Fester chciaÅ‚ mnie zrobiÄ‡ w konia - i to byÅ‚ jego bÅ‚Ä…d.
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Fester dosta³ to, co mu siê nale¿a³o.
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_07"); //Fester dostaÅ‚ to, co mu siÄ™ naleÅ¼aÅ‚o.
 		};
 		victories = victories + 1;
 	};
@@ -404,15 +404,15 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{
 		if (victories == 0)
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //A jeœli chodzi o Raoula...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_08"); //A jeÅ›li chodzi o Raoula...
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //Poszed³em zobaczyæ siê z Raoulem...
+			AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_09"); //PoszedÅ‚em zobaczyÄ‡ siÄ™ z Raoulem...
 		};
 	
 		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_10"); //I?
-		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //Koniecznie potrzebowa³ porz¹dnego obicia pyska.
+		AI_Output (other, self, "DIA_Jarvis_HowManyLeft_15_11"); //Koniecznie potrzebowaÅ‚ porzÄ…dnego obicia pyska.
 		victories = victories + 1;
 	};
 	
@@ -422,36 +422,36 @@ FUNC VOID DIA_Jarvis_HowManyLeft_Info()
 	{	
 		if (victories == 0)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //Jak dot¹d nie pokona³eœ ¿adnego z ludzi Sylvia.
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_12"); //Jak dotÄ…d nie pokonaÅ‚eÅ› Å¼adnego z ludzi Sylvia.
 		}
 		else // 1-2
 		{
 			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_13"); //Dobrze - tylko tak dalej.
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //Spodziewam siê, ¿e sponiewierasz przynajmniej trzech z nich.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_14"); //Spodziewam siÄ™, Å¼e sponiewierasz przynajmniej trzech z nich.
 	}
 	else // 3 oder mehr
 	{	
 		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_15"); //Wystarczy, wystarczy.
 		if (victories == 6)
 		{
-			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //Naprawdê nakopa³eœ ka¿demu z nich, hê?
+			AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_16"); //NaprawdÄ™ nakopaÅ‚eÅ› kaÅ¼demu z nich, hÄ™?
 		};
-		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //Jestem pod wra¿eniem - jeœli Lee mnie spyta, to bez wahania na ciebie zag³osujê.
+		AI_Output (self, other, "DIA_Jarvis_HowManyLeft_04_17"); //Jestem pod wraÅ¼eniem - jeÅ›li Lee mnie spyta, to bez wahania na ciebie zagÅ‚osujÄ™.
 		
 		MIS_Jarvis_SldKO = LOG_SUCCESS;
 		
 		self.aivar[AIV_IGNORE_Murder] = FALSE;
 		
 		B_GivePlayerXP ((XP_Ambient)*victories);
-		B_LogEntry (TOPIC_SLDRespekt,"Jarvis udzieli mi swojego poparcia, jeœli zechcê wst¹piæ w szeregi najemników.");
+		B_LogEntry (TOPIC_SLDRespekt,"Jarvis udzieli mi swojego poparcia, jeÅ›li zechcÄ™ wstÄ…piÄ‡ w szeregi najemnikÃ³w.");
 	};
 };
 
 
 // ###############################
 // ##							##
-// 			Höhere Gilden
+// 			HÃ¶here Gilden
 // ##							##
 // ###############################
 
@@ -469,7 +469,7 @@ instance DIA_Jarvis_PERM (C_INFO)
 	condition	= DIA_Jarvis_PERM_Condition;
 	information	= DIA_Jarvis_PERM_Info;
 	permanent	= FALSE;
-	description = "Jakieœ wieœci?";
+	description = "JakieÅ› wieÅ›ci?";
 };                       
 
 FUNC INT DIA_Jarvis_PERM_Condition()
@@ -482,7 +482,7 @@ FUNC INT DIA_Jarvis_PERM_Condition()
  
 FUNC VOID DIA_Jarvis_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Jarvis_PERM_15_00"); //Jakieœ wieœci?
+	AI_Output (other, self, "DIA_Jarvis_PERM_15_00"); //JakieÅ› wieÅ›ci?
 	
 	if (Kapitel <= 3)
 	{
@@ -491,18 +491,18 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 			if (other.guild == GIL_SLD)
 			|| (other.guild == GIL_DJG)
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //Teraz jesteœ jednym z nas. To dobrze.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_01"); //Teraz jesteÅ› jednym z nas. To dobrze.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //Dokona³eœ z³ego wyboru - mog³eœ byæ jednym z nas.
+				AI_Output (self, other, "DIA_Jarvis_PERM_04_02"); //DokonaÅ‚eÅ› zÅ‚ego wyboru - mogÅ‚eÅ› byÄ‡ jednym z nas.
 			};
 		
 			Jarvis_GuildComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_03"); //Ch³opaki Sylvia dostali ostatnio niez³¹ nauczkê.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_03"); //ChÅ‚opaki Sylvia dostali ostatnio niezÅ‚Ä… nauczkÄ™.
 		};
 	};
 	
@@ -510,13 +510,13 @@ FUNC VOID DIA_Jarvis_PERM_Info()
 	{
 		if (Jarvis_SylvioComment == FALSE)
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Silvio w koñcu siê zmy³. Gdy dowiedzia³ siê o smokach, to razem z czêœci¹ swoich ch³opaków wyruszy³ do Kolonii.
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //Pewnie myœli, ¿e tam mo¿na siê ob³owiæ.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_04"); //Silvio w koÅ„cu siÄ™ zmyÅ‚. Gdy dowiedziaÅ‚ siÄ™ o smokach, to razem z czÄ™Å›ciÄ… swoich chÅ‚opakÃ³w wyruszyÅ‚ do Kolonii.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_05"); //Pewnie myÅ›li, Å¼e tam moÅ¼na siÄ™ obÅ‚owiÄ‡.
 			Jarvis_SylvioComment = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Nic, jak na razie spokój. Nie mogê siê doczekaæ, ¿eby zobaczyæ, co z tego wyniknie.
+			AI_Output (self, other, "DIA_Jarvis_PERM_04_06"); //Nic, jak na razie spokÃ³j. Nie mogÄ™ siÄ™ doczekaÄ‡, Å¼eby zobaczyÄ‡, co z tego wyniknie.
 		};
 	};
 };

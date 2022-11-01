@@ -53,16 +53,16 @@ func int DIA_Pal_213_Schiffswache_FirstWarn_Condition()
 
 func void DIA_Pal_213_Schiffswache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Pal_213_Schiffswache_FirstWarn_01_00"); //Zaczekaj chwilkÍ! A gdzie to siÍ wybierasz?
-	AI_Output (other, self,"DIA_Pal_213_Schiffswache_FirstWarn_15_01"); //Chcia≥em tylko...
+	AI_Output (self, other,"DIA_Pal_213_Schiffswache_FirstWarn_01_00"); //Zaczekaj chwilkƒô! A gdzie to siƒô wybierasz?
+	AI_Output (other, self,"DIA_Pal_213_Schiffswache_FirstWarn_15_01"); //Chcia≈Çem tylko...
 
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output (self, other,"DIA_Pal_213_Schiffswache_FirstWarn_01_02"); //Wybacz, nie moøesz przejúÊ.
+		AI_Output (self, other,"DIA_Pal_213_Schiffswache_FirstWarn_01_02"); //Wybacz, nie mo≈ºesz przej≈õƒá.
 	}
 	else
 	{	
-		AI_Output (self, other,"DIA_Pal_213_Schiffswache_FirstWarn_01_03"); //Nie ma tu nic do oglπdania. Odejdü.
+		AI_Output (self, other,"DIA_Pal_213_Schiffswache_FirstWarn_01_03"); //Nie ma tu nic do oglƒÖdania. Odejd≈∫.
 	};
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP(other,Pal_213_Checkpoint);
@@ -100,11 +100,11 @@ func void DIA_Pal_213_Schiffswache_SecondWarn_Info()
 {
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output (self, other,"DIA_Pal_213_Schiffswache_SecondWarn_01_00"); //Ani kroku dalej. Nie robimy øadnych wyjπtkÛw.
+		AI_Output (self, other,"DIA_Pal_213_Schiffswache_SecondWarn_01_00"); //Ani kroku dalej. Nie robimy ≈ºadnych wyjƒÖtk√≥w.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Pal_213_Schiffswache_SecondWarn_01_01"); //Nie chcesz chyba, bym MUSIA£ zrobiÊ ci krzywdÍ?
+		AI_Output (self, other,"DIA_Pal_213_Schiffswache_SecondWarn_01_01"); //Nie chcesz chyba, bym MUSIA≈Å zrobiƒá ci krzywdƒô?
 	};
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,Pal_213_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -143,7 +143,7 @@ func void DIA_Pal_213_Schiffswache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -166,7 +166,7 @@ INSTANCE DIA_Pal_213_Schiffswache_GoOnBoard   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_GoOnBoard_Condition;
 	information = DIA_Pal_213_Schiffswache_GoOnBoard_Info;
 	permanent   = FALSE;
-	description = "MuszÍ dostaÊ siÍ na statek.";
+	description = "Muszƒô dostaƒá siƒô na statek.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_GoOnBoard_Condition()
@@ -176,10 +176,10 @@ FUNC INT DIA_Pal_213_Schiffswache_GoOnBoard_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_GoOnBoard_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_GoOnBoard_15_00"); //MuszÍ dostaÊ siÍ na statek.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_GoOnBoard_01_01"); //Nikt nie ma tam wstÍpu! Takie dosta≥em rozkazy!
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_GoOnBoard_01_02"); //ZabijÍ kaødego, kto wejdzie na pok≥ad bez zezwolenia.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_GoOnBoard_01_03"); //W imiÍ Innosa, bÍdÍ chroni≥ statku do ostatniej kropli krwi.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_GoOnBoard_15_00"); //Muszƒô dostaƒá siƒô na statek.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_GoOnBoard_01_01"); //Nikt nie ma tam wstƒôpu! Takie dosta≈Çem rozkazy!
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_GoOnBoard_01_02"); //Zabijƒô ka≈ºdego, kto wejdzie na pok≈Çad bez zezwolenia.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_GoOnBoard_01_03"); //W imiƒô Innosa, bƒôdƒô chroni≈Ç statku do ostatniej kropli krwi.
 };
 
 //**********************************************************
@@ -193,7 +193,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF_Info;
 	permanent   = FALSE;
-	description = "åmiesz przeciwstawiaÊ siÍ woli Maga Ognia?";
+	description = "≈ömiesz przeciwstawiaƒá siƒô woli Maga Ognia?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF_Condition()
@@ -207,10 +207,10 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmKDF_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF_15_00"); //åmiesz przeciwstawiaÊ siÍ woli Maga Ognia?
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF_01_01"); //Nie. Skπdøe. Niech Innos mi wybaczy.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF_01_02"); //Magowie Ognia to straønicy mπdroúci Innosa...
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF_01_03"); //...Ktokolwiek im siÍ sprzeciwia, sprzeciwia siÍ woli samego Innosa, odrzucajπc jego ≥askÍ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF_15_00"); //≈ömiesz przeciwstawiaƒá siƒô woli Maga Ognia?
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF_01_01"); //Nie. SkƒÖd≈ºe. Niech Innos mi wybaczy.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF_01_02"); //Magowie Ognia to stra≈ºnicy mƒÖdro≈õci Innosa...
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF_01_03"); //...Ktokolwiek im siƒô sprzeciwia, sprzeciwia siƒô woli samego Innosa, odrzucajƒÖc jego ≈Çaskƒô.
 };
 
 //**********************************************************
@@ -224,7 +224,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF2   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF2_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF2_Info;
 	permanent   = FALSE;
-	description = "Co bÍdzie, jeúli wejdÍ na pok≥ad?";
+	description = "Co bƒôdzie, je≈õli wejdƒô na pok≈Çad?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF2_Condition()
@@ -238,12 +238,12 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmKDF2_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF2_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF2_15_00"); //Co bÍdzie, jeúli wejdÍ na pok≥ad?
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF2_01_01"); //ZabijÍ... to znaczy, bÍdÍ ciÍ musia≥ powstrzymaÊ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF2_15_00"); //Co bƒôdzie, je≈õli wejdƒô na pok≈Çad?
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF2_01_01"); //Zabijƒô... to znaczy, bƒôdƒô ciƒô musia≈Ç powstrzymaƒá.
 };
 
 //**********************************************************
-//Du w¸rdest einen Magier des Feuers angreifen?
+//Du w√ºrdest einen Magier des Feuers angreifen?
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmKDF3   (C_INFO)
@@ -253,7 +253,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF3   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF3_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF3_Info;
 	permanent   = FALSE;
-	description = "Zaatakowa≥byú Maga Ognia?";
+	description = "Zaatakowa≈Çby≈õ Maga Ognia?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF3_Condition()
@@ -267,9 +267,9 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmKDF3_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF3_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF3_15_00"); //Zaatakowa≥byú Maga Ognia?
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF3_01_01"); //Nie úmia≥bym podnieúÊ rÍki na maga.
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF3_15_02"); //WiÍc co byú zrobi≥, gdybym wszed≥ na pok≥ad?
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF3_15_00"); //Zaatakowa≈Çby≈õ Maga Ognia?
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF3_01_01"); //Nie ≈õmia≈Çbym podnie≈õƒá rƒôki na maga.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF3_15_02"); //Wiƒôc co by≈õ zrobi≈Ç, gdybym wszed≈Ç na pok≈Çad?
 	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF3_01_03"); //Nic, Panie.
 };
 
@@ -284,7 +284,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF4   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF4_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF4_Info;
 	permanent   = FALSE;
-	description = "W takim razie, wchodzÍ.";
+	description = "W takim razie, wchodzƒô.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF4_Condition()
@@ -298,12 +298,12 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmKDF4_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF4_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF4_15_00"); //W takim razie, wchodzÍ.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF4_01_01"); //Nie rÛb tego, proszÍ. Rozkazy lorda Hagena by≥y jasne.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF4_15_00"); //W takim razie, wchodzƒô.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF4_01_01"); //Nie r√≥b tego, proszƒô. Rozkazy lorda Hagena by≈Çy jasne.
 };
 
 //**********************************************************
-//Schlieﬂen Lord Hagen Befehle auch mich mit ein?.
+//Schlie√üen Lord Hagen Befehle auch mich mit ein?.
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmKDF5   (C_INFO)
@@ -313,7 +313,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF5   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF5_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF5_Info;
 	permanent   = FALSE;
-	description = "Czy rozkazy Lorda Hagena obejmujπ takøe mnie?";
+	description = "Czy rozkazy Lorda Hagena obejmujƒÖ tak≈ºe mnie?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF5_Condition()
@@ -327,10 +327,10 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmKDF5_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF5_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF5_15_00"); //Czy rozkazy Lorda Hagena obejmujπ takøe mnie?
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF5_15_00"); //Czy rozkazy Lorda Hagena obejmujƒÖ tak≈ºe mnie?
 	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF5_01_01"); //Nie wiem.
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF5_15_02"); //Pomyúl tylko, czy Lord Hagen mÛg≥by podejrzewaÊ maga o kradzieø?
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF5_01_03"); //Nie sπdzÍ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF5_15_02"); //Pomy≈õl tylko, czy Lord Hagen m√≥g≈Çby podejrzewaƒá maga o kradzie≈º?
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF5_01_03"); //Nie sƒÖdzƒô.
 };
 
 //**********************************************************
@@ -344,7 +344,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmKDF6   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmKDF6_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmKDF6_Info;
 	permanent   = FALSE;
-	description = "ProszÍ po raz ostatni: pozwÛl mi wejúÊ na pok≥ad!";
+	description = "Proszƒô po raz ostatni: pozw√≥l mi wej≈õƒá na pok≈Çad!";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmKDF6_Condition()
@@ -358,8 +358,8 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmKDF6_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmKDF6_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF6_15_00"); //ProszÍ po raz ostatni: pozwÛl mi wejúÊ na pok≥ad!
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF6_01_01"); //Zrozumia≥em. Moøesz wejúÊ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmKDF6_15_00"); //Proszƒô po raz ostatni: pozw√≥l mi wej≈õƒá na pok≈Çad!
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmKDF6_01_01"); //Zrozumia≈Çem. Mo≈ºesz wej≈õƒá.
 
 	MIS_ShipIsFree = TRUE;
 	B_StartOtherRoutine	(Girion,"WaitForShip");
@@ -376,7 +376,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmPAL   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmPAL_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmPAL_Info;
 	permanent   = FALSE;
-	description = "Czyøbyú mi nie ufa≥, rycerzu?";
+	description = "Czy≈ºby≈õ mi nie ufa≈Ç, rycerzu?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmPAL_Condition()
@@ -390,8 +390,8 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmPAL_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmPAL_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmPAL_15_00"); //Czyøbyú mi nie ufa≥, rycerzu?
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmPAL_01_01"); //Nie o to chodzi, po prostu wykonujÍ swoje rozkazy.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmPAL_15_00"); //Czy≈ºby≈õ mi nie ufa≈Ç, rycerzu?
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmPAL_01_01"); //Nie o to chodzi, po prostu wykonujƒô swoje rozkazy.
 };
 
 //**********************************************************
@@ -405,7 +405,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmPAL2   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmPAL2_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmPAL2_Info;
 	permanent   = FALSE;
-	description = "Powinieneú wiÍc wiedzieÊ, ktÛry z nas ma wyøszy stopieÒ.";
+	description = "Powiniene≈õ wiƒôc wiedzieƒá, kt√≥ry z nas ma wy≈ºszy stopie≈Ñ.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmPAL2_Condition()
@@ -419,7 +419,7 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmPAL2_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmPAL2_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmPAL2_15_00"); //Powinieneú wiÍc wiedzieÊ, ktÛry z nas ma wyøszy stopieÒ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmPAL2_15_00"); //Powiniene≈õ wiƒôc wiedzieƒá, kt√≥ry z nas ma wy≈ºszy stopie≈Ñ.
 	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmPAL2_01_01"); //Tak jest!
 };
 
@@ -434,7 +434,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmPAL3   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmPAL3_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmPAL3_Info;
 	permanent   = FALSE;
-	description = "Niniejszym rozkazujÍ ci wpuúciÊ mnie na okrÍt.";
+	description = "Niniejszym rozkazujƒô ci wpu≈õciƒá mnie na okrƒôt.";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmPAL3_Condition()
@@ -448,8 +448,8 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmPAL3_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmPAL3_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmPAL3_15_00"); //Niniejszym rozkazujÍ ci wpuúciÊ mnie na pok≥ad.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmPAL3_01_01"); //Tak jest, moøesz wejúÊ, Panie.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmPAL3_15_00"); //Niniejszym rozkazujƒô ci wpu≈õciƒá mnie na pok≈Çad.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmPAL3_01_01"); //Tak jest, mo≈ºesz wej≈õƒá, Panie.
 	
 	MIS_ShipIsFree = TRUE;
 	B_StartOtherRoutine	(Girion,"WaitForShip");
@@ -466,7 +466,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmDJG   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmDJG_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmDJG_Info;
 	permanent   = FALSE;
-	description = "Nie moøna by czegoú zrobiÊ w tej sprawie?";
+	description = "Nie mo≈ºna by czego≈õ zrobiƒá w tej sprawie?";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmDJG_Condition()
@@ -480,12 +480,12 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmDJG_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmDJG_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmDJG_15_00"); //Nie moøna by czegoú zrobiÊ w tej sprawie?
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG_01_01"); //Nie do koÒca rozumiem?
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmDJG_15_00"); //Nie mo≈ºna by czego≈õ zrobiƒá w tej sprawie?
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG_01_01"); //Nie do ko≈Ñca rozumiem?
 };
 
 //**********************************************************
-//sc ist DJG -Ich kˆnnte dir Geld geben.
+//sc ist DJG -Ich k√∂nnte dir Geld geben.
 //**********************************************************
 
 INSTANCE DIA_Pal_213_Schiffswache_IAmDJG2   (C_INFO)
@@ -495,7 +495,7 @@ INSTANCE DIA_Pal_213_Schiffswache_IAmDJG2   (C_INFO)
 	condition   = DIA_Pal_213_Schiffswache_IAmDJG2_Condition;
 	information = DIA_Pal_213_Schiffswache_IAmDJG2_Info;
 	permanent   = FALSE;
-	description = "MÛg≥bym ci daÊ trochÍ z≥ota...";
+	description = "M√≥g≈Çbym ci daƒá trochƒô z≈Çota...";
 };
 
 FUNC INT DIA_Pal_213_Schiffswache_IAmDJG2_Condition()
@@ -509,8 +509,8 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmDJG2_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmDJG2_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmDJG2_15_00"); //MÛg≥bym ci daÊ trochÍ z≥ota, a ty przez moment popatrzy≥byú sobie w innπ stronÍ.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG2_01_01"); //Nie pozwolÍ siÍ przekupiÊ. Jeúli natychmiast nie odejdziesz, potraktujÍ to jako obrazÍ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmDJG2_15_00"); //M√≥g≈Çbym ci daƒá trochƒô z≈Çota, a ty przez moment popatrzy≈Çby≈õ sobie w innƒÖ stronƒô.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG2_01_01"); //Nie pozwolƒô siƒô przekupiƒá. Je≈õli natychmiast nie odejdziesz, potraktujƒô to jako obrazƒô.
 };
 
 //**********************************************************
@@ -539,13 +539,13 @@ FUNC INT DIA_Pal_213_Schiffswache_IAmDJG3_Condition()
 
 FUNC VOID DIA_Pal_213_Schiffswache_IAmDJG3_Info()
 {
-	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmDJG3_15_00"); //Posiadam pisemne zezwolenie. Wolno mi wejúÊ na pok≥ad statku.
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG3_01_01"); //Niech no spojrzÍ.
+	AI_Output (other,self ,"DIA_Pal_213_Schiffswache_IAmDJG3_15_00"); //Posiadam pisemne zezwolenie. Wolno mi wej≈õƒá na pok≈Çad statku.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG3_01_01"); //Niech no spojrzƒô.
 	
 	B_GiveInvItems (other,self,ItWr_ForgedShipLetter_Mis,1);
 	B_UseFakeScroll ();
 	
-	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG3_01_02"); //W porzπdku, moøesz przejúÊ.
+	AI_Output (self ,other,"DIA_Pal_213_Schiffswache_IAmDJG3_01_02"); //W porzƒÖdku, mo≈ºesz przej≈õƒá.
 	
 	MIS_ShipIsFree = TRUE;
 	B_StartOtherRoutine	(Girion,"WaitForShip");

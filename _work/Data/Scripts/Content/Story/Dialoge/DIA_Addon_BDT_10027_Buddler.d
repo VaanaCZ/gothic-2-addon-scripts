@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10027_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10027_Buddler_Hi_Condition;
 	information = DIA_Addon_10027_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 {	
@@ -36,15 +36,15 @@ FUNC INT DIA_Addon_10027_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//Co s³ychaæ?
+	AI_Output (other, self, "DIA_Addon_BDT_10027_Buddler_Hi_15_00");//Co sÅ‚ychaÄ‡?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//Doœæ ju¿ harowa³em dla baronów rudy. Dobrze, ¿e teraz inni kopi¹.
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//DoÅ›Ä‡ juÅ¼ harowaÅ‚em dla baronÃ³w rudy. Dobrze, Å¼e teraz inni kopiÄ….
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Do diab³a, wygl¹da na to, ¿e znowu musimy sami kopaæ, co?
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Do diabÅ‚a, wyglÄ…da na to, Å¼e znowu musimy sami kopaÄ‡, co?
 	};
 };
 //---------------------------------------------------------------------
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Praca umys³owa. Ch³opcze, kopanie z³ota to praca czysto umys³owa. Nie próbuj pokonaæ ska³y - jest twardsza ni¿ ty.
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Uwolnij swój umys³ - musisz siê staæ jednoœci¹ ze z³otem. Wtedy kopanie stanie siê modlitw¹, medytacj¹.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Praca umysÅ‚owa. ChÅ‚opcze, kopanie zÅ‚ota to praca czysto umysÅ‚owa. Nie prÃ³buj pokonaÄ‡ skaÅ‚y - jest twardsza niÅ¼ ty.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Uwolnij swÃ³j umysÅ‚ - musisz siÄ™ staÄ‡ jednoÅ›ciÄ… ze zÅ‚otem. Wtedy kopanie stanie siÄ™ modlitwÄ…, medytacjÄ….
 	
 	B_Upgrade_Hero_HackChance(10);
 };

@@ -135,7 +135,7 @@ INSTANCE ITAR_PIR_H_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Thorus_Addon (C_Item)
 {
-	name 					=	"Ciê¿ka zbroja gwardzisty";
+	name 					=	"CiÄ™Å¼ka zbroja gwardzisty";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -155,7 +155,7 @@ INSTANCE ITAR_Thorus_Addon (C_Item)
 	visual_skin 			=	0;
 	material 				=	MAT_LEATHER;
 
-	description				=	"Zbroja stra¿nika Kruka";
+	description				=	"Zbroja straÅ¼nika Kruka";
 
 	TEXT[0]					= 	PRINT_Addon_BDTArmor;
 	TEXT[1]					=	NAME_Prot_Edge;			
@@ -259,7 +259,7 @@ INSTANCE ITAR_OreBaron_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_RANGER_Addon (C_Item)
 {
-	name 					=	"Zbroja Wodnego Krêgu";
+	name 					=	"Zbroja Wodnego KrÄ™gu";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,7 +453,7 @@ INSTANCE ITAR_MayaZombie_Addon (C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rüstungen
+//	Magische RÃ¼stungen
 //
 
 

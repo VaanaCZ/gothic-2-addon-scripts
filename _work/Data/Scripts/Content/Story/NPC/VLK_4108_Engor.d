@@ -19,7 +19,7 @@ instance VLK_4108_Engor (Npc_Default)
 	EquipItem			(self, ItMw_1H_Mil_Sword);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 
 	
 	

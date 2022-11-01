@@ -8,7 +8,7 @@ func void B_RAVENSESCAPEINTOTEMPELAVI ()
 		
 		Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RavenKDW,"Dosta³em siê do kwatery Kruka i zd¹¿y³em zauwa¿yæ, jak przeszed³ przez du¿¹ bramê. Nie mog³em udaæ siê za nim. S¹dzê, ¿e brama prowadzi do œwi¹tyni Adanosa, wiêc muszê o tym powiedzieæ Saturasowi."); 
+		B_LogEntry (TOPIC_Addon_RavenKDW,"DostaÅ‚em siÄ™ do kwatery Kruka i zdÄ…Å¼yÅ‚em zauwaÅ¼yÄ‡, jak przeszedÅ‚ przez duÅ¼Ä… bramÄ™. Nie mogÅ‚em udaÄ‡ siÄ™ za nim. SÄ…dzÄ™, Å¼e brama prowadzi do Å›wiÄ…tyni Adanosa, wiÄ™c muszÄ™ o tym powiedzieÄ‡ Saturasowi."); 
 		
 		B_RAVENSESCAPEINTOTEMPELAVI_OneTime = TRUE;
 	};

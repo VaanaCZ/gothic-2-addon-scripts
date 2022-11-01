@@ -43,8 +43,8 @@ FUNC INT DIA_Edda_Hallo_Condition()
 FUNC VOID DIA_Edda_Hallo_Info()
 {	
 	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Co tu gotujesz?
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Zupê rybn¹. Mo¿e nie smakuje najlepiej, ale przynajmniej jest gor¹ca.
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //Jeœli chcesz, mo¿esz spróbowaæ.
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //ZupÄ™ rybnÄ…. MoÅ¼e nie smakuje najlepiej, ale przynajmniej jest gorÄ…ca.
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //JeÅ›li chcesz, moÅ¼esz sprÃ³bowaÄ‡.
 };
 
 // ************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_Edda_Stadt(C_INFO)
 	condition	= DIA_Edda_Stadt_Condition;
 	information	= DIA_Edda_Stadt_Info;
 	permanent	= FALSE;
-	description = "Co mo¿esz mi powiedzieæ o mieœcie?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o mieÅ›cie?";
 };                       
 
 FUNC INT DIA_Edda_Stadt_Condition()
@@ -66,12 +66,12 @@ FUNC INT DIA_Edda_Stadt_Condition()
 };
 FUNC VOID DIA_Edda_Stadt_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Co mo¿esz mi powiedzieæ o mieœcie?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //Wiêkszoœæ jego mieszkañców obawia siê z³odziei. Dlatego lepiej nie wchodziæ do obcych domów.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Jeœli jednak potrzebujesz noclegu, zapraszam do mojej chaty. Mam tu dodatkowe ³ó¿ko, mo¿esz w nim spaæ, jeœli chcesz.
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Nie boisz siê z³odziei?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Jedyna wartoœciowa rzecz, jaka kiedykolwiek nale¿a³a do mnie, zosta³a mi odebrana.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //Ktoœ ukrad³ mój pos¹¿ek Innosa.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o mieÅ›cie?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //WiÄ™kszoÅ›Ä‡ jego mieszkaÅ„cÃ³w obawia siÄ™ zÅ‚odziei. Dlatego lepiej nie wchodziÄ‡ do obcych domÃ³w.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //JeÅ›li jednak potrzebujesz noclegu, zapraszam do mojej chaty. Mam tu dodatkowe Å‚Ã³Å¼ko, moÅ¼esz w nim spaÄ‡, jeÅ›li chcesz.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Nie boisz siÄ™ zÅ‚odziei?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Jedyna wartoÅ›ciowa rzecz, jaka kiedykolwiek naleÅ¼aÅ‚a do mnie, zostaÅ‚a mi odebrana.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //KtoÅ› ukradÅ‚ mÃ³j posÄ…Å¼ek Innosa.
 	
 	Edda_Schlafplatz = TRUE;
 	Wld_AssignRoomToGuild ("hafen08",	GIL_NONE);
@@ -86,7 +86,7 @@ INSTANCE DIA_Edda_Kochen(C_INFO)
 	condition	= DIA_Edda_Kochen_Condition;
 	information	= DIA_Edda_Kochen_Info;
 	permanent	= FALSE;
-	description = "Mo¿esz mi ugotowaæ zupê?";
+	description = "MoÅ¼esz mi ugotowaÄ‡ zupÄ™?";
 };                       
 
 FUNC INT DIA_Edda_Kochen_Condition()
@@ -95,11 +95,11 @@ FUNC INT DIA_Edda_Kochen_Condition()
 };
 FUNC VOID DIA_Edda_Kochen_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //Mo¿esz mi ugotowaæ zupê?
-	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //Gotujê dla wszystkich. Jeœli zechcesz, mogê gotowaæ i dla ciebie. Musisz mi tylko przynieœæ rybê.
+	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //MoÅ¼esz mi ugotowaÄ‡ zupÄ™?
+	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //GotujÄ™ dla wszystkich. JeÅ›li zechcesz, mogÄ™ gotowaÄ‡ i dla ciebie. Musisz mi tylko przynieÅ›Ä‡ rybÄ™.
 };			
 // ************************************************************
-// 		tägliche Suppe abholen
+// 		tÃ¤gliche Suppe abholen
 // ************************************************************
 INSTANCE DIA_Edda_Suppe(C_INFO)
 {
@@ -108,7 +108,7 @@ INSTANCE DIA_Edda_Suppe(C_INFO)
 	condition	= DIA_Edda_Suppe_Condition;
 	information	= DIA_Edda_Suppe_Info;
 	permanent	= TRUE;
-	description = "Mo¿esz mi ugotowaæ zupê?";
+	description = "MoÅ¼esz mi ugotowaÄ‡ zupÄ™?";
 };                       
 
 FUNC INT DIA_Edda_Suppe_Condition()
@@ -120,29 +120,29 @@ FUNC INT DIA_Edda_Suppe_Condition()
 };
 FUNC VOID DIA_Edda_Suppe_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //Mo¿esz mi ugotowaæ zupê?
+	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //MoÅ¼esz mi ugotowaÄ‡ zupÄ™?
 	
 	if (Wld_GetDay() == 0)
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //Od jutra mo¿esz codziennie liczyæ na talerz mojej gor¹cej zupy.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //Od jutra moÅ¼esz codziennie liczyÄ‡ na talerz mojej gorÄ…cej zupy.
 	}
 	else if (Edda_Day != Wld_GetDay())
 	{
 		if B_GiveInvItems (other, self, ItFo_Fish,1)
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //Nic prostszego. Proszê, weŸ talerz.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //Nic prostszego. ProszÄ™, weÅº talerz.
 			B_GiveInvItems (self, other, ItFo_Fishsoup, 1);
 			Edda_Day = Wld_GetDay ();
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //Przynieœ mi rybê, a ugotujê ci smaczn¹ zupê.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //PrzynieÅ› mi rybÄ™, a ugotujÄ™ ci smacznÄ… zupÄ™.
 		};
 		
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_03"); //Nie, nie dzisiaj. Wróæ jutro.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_03"); //Nie, nie dzisiaj. WrÃ³Ä‡ jutro.
 	};
 };			
 // ************************************************************
@@ -155,7 +155,7 @@ INSTANCE DIA_Edda_Statue(C_INFO)
 	condition	= DIA_Edda_Statue_Condition;
 	information	= DIA_Edda_Statue_Info;
 	permanent	= FALSE;
-	description = "Patrz, przynios³em ci pos¹¿ek Innosa.";
+	description = "Patrz, przyniosÅ‚em ci posÄ…Å¼ek Innosa.";
 };                       
 FUNC INT DIA_Edda_Statue_Condition()
 {	
@@ -167,8 +167,8 @@ FUNC INT DIA_Edda_Statue_Condition()
 };
 FUNC VOID DIA_Edda_Statue_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //Patrz, przynios³em ci pos¹¿ek Innosa.
-	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //Dziêkujê, bardzo dziêkujê. Niechaj œwiat³o Innosa zawsze oœwietla ci drogê...
+	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //Patrz, przyniosÅ‚em ci posÄ…Å¼ek Innosa.
+	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //DziÄ™kujÄ™, bardzo dziÄ™kujÄ™. Niechaj Å›wiatÅ‚o Innosa zawsze oÅ›wietla ci drogÄ™...
 	AI_Output (other ,self,"DIA_Edda_Statue_15_02"); //Drobiazg.
 	
 	B_GiveInvItems (other, self,ItMI_InnosStatue, 1); 
@@ -186,7 +186,7 @@ INSTANCE DIA_Edda_PICKPOCKET (C_INFO)
 	condition	= DIA_Edda_PICKPOCKET_Condition;
 	information	= DIA_Edda_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego pos¹¿ka bêdzie dziecinnie ³atwa)";
+	description = "(KradzieÅ¼ tego posÄ…Å¼ka bÄ™dzie dziecinnie Å‚atwa)";
 };                       
 
 FUNC INT DIA_Edda_PICKPOCKET_Condition()

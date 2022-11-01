@@ -54,7 +54,7 @@ instance DIA_Dobar_Talent		(C_INFO)
 	condition	 = 	DIA_Dobar_Talent_Condition;
 	information	 = 	DIA_Dobar_Talent_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Wiem co nieco na temat pracy w kuŸni.";
+	description	 =  "Wiem co nieco na temat pracy w kuÅºni.";
 };
 func int DIA_Dobar_Talent_Condition ()
 {	
@@ -65,8 +65,8 @@ func int DIA_Dobar_Talent_Condition ()
 };
 func void DIA_Dobar_Talent_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Wiem co nieco na temat pracy w kuŸni.
-	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Œwietnie... i co z tego?
+	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Wiem co nieco na temat pracy w kuÅºni.
+	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Åšwietnie... i co z tego?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Schmiede
@@ -78,7 +78,7 @@ instance DIA_Dobar_Schmiede		(C_INFO)
 	condition	 = 	DIA_Dobar_Schmiede_Condition;
 	information	 = 	DIA_Dobar_Schmiede_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Czy mogê skorzystaæ z twojej kuŸni?";
+	description	 = 	"Czy mogÄ™ skorzystaÄ‡ z twojej kuÅºni?";
 };
 
 func int DIA_Dobar_Schmiede_Condition ()
@@ -90,9 +90,9 @@ func int DIA_Dobar_Schmiede_Condition ()
 };
 func void DIA_Dobar_Schmiede_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //Czy mogê skorzystaæ z twojej kuŸni?
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //Mam wiele do zrobienia. Tylko wchodzilibyœmy sobie nawzajem w drogê. Zaczekaj, a¿ siê œciemni.
-	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Wtedy ja i Parlaf pójdziemy spaæ, a ty mo¿esz tu sobie pracowaæ bez przeszkód.
+	AI_Output (other, self, "DIA_Dobar_Schmiede_15_00"); //Czy mogÄ™ skorzystaÄ‡ z twojej kuÅºni?
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_01"); //Mam wiele do zrobienia. Tylko wchodzilibyÅ›my sobie nawzajem w drogÄ™. Zaczekaj, aÅ¼ siÄ™ Å›ciemni.
+	AI_Output (self, other, "DIA_Dobar_Schmiede_08_02"); //Wtedy ja i Parlaf pÃ³jdziemy spaÄ‡, a ty moÅ¼esz tu sobie pracowaÄ‡ bez przeszkÃ³d.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info beibringen
@@ -104,7 +104,7 @@ instance DIA_Dobar_beibringen		(C_INFO)
 	condition	 = 	DIA_Dobar_beibringen_Condition;
 	information	 = 	DIA_Dobar_beibringen_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Mo¿esz mnie czegoœ nauczyæ?";
+	description	 = 	"MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };
 
 func int DIA_Dobar_beibringen_Condition ()
@@ -116,13 +116,13 @@ func int DIA_Dobar_beibringen_Condition ()
 };
 func void DIA_Dobar_beibringen_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //Czy mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Tak wiêc znasz ju¿ podstawy. Mogê ci pomóc udoskonaliæ twoje umiejêtnoœci.
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Bêdziesz móg³ wtedy wyrabiaæ lepsz¹ broñ.
+	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //Czy moÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Tak wiÄ™c znasz juÅ¼ podstawy. MogÄ™ ci pomÃ³c udoskonaliÄ‡ twoje umiejÄ™tnoÅ›ci.
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //BÄ™dziesz mÃ³gÅ‚ wtedy wyrabiaÄ‡ lepszÄ… broÅ„.
 	
 	Dobar_Learnsmith = TRUE;
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Dobar mo¿e mnie nauczyæ, jak wykuwaæ lepszy orê¿.");
+	B_LogEntry		(TOPIC_Teacher_OC, "Dobar moÅ¼e mnie nauczyÄ‡, jak wykuwaÄ‡ lepszy orÄ™Å¼.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Teach
@@ -133,7 +133,7 @@ instance DIA_Dobar_Teach		(C_INFO)
 	nr			 = 	3;
 	condition	 = 	DIA_Dobar_Teach_Condition;
 	information	 = 	DIA_Dobar_Teach_Info;
-	description	 = 	B_BuildLearnString ("Poka¿ mi, jak wykuæ dobry miecz!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
+	description	 = 	B_BuildLearnString ("PokaÅ¼ mi, jak wykuÄ‡ dobry miecz!", B_GetLearnCostTalent (other, NPC_TALENT_SMITH, WEAPON_1H_Special_01));
 	permanent	 =  TRUE;
 };
 func int DIA_Dobar_Teach_Condition ()
@@ -146,13 +146,13 @@ func int DIA_Dobar_Teach_Condition ()
 };
 func void DIA_Dobar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //Poka¿ mi, jak wykuæ dobry miecz!
+	AI_Output (other, self, "DIA_Dobar_Teach_15_00"); //PokaÅ¼ mi, jak wykuÄ‡ dobry miecz!
 	
 	if B_TeachPlayerTalentSmith	(self, hero, WEAPON_1H_Special_01) 
 	{	
-		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Upewnij siê, ¿e stal jest równomiernie rozgrzana - pozwoli ci to uzyskaæ równe, g³adkie ostrze.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Jeœli bêdziesz o tym pamiêta³, twoje miecze stan¹ siê twardsze i ostrzejsze.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //To ju¿ ca³a niezbêdna wiedza. Jeœli bêdziesz potrzebowa³ stali, porozmawiaj z Engorem.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Upewnij siÄ™, Å¼e stal jest rÃ³wnomiernie rozgrzana - pozwoli ci to uzyskaÄ‡ rÃ³wne, gÅ‚adkie ostrze.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //JeÅ›li bÄ™dziesz o tym pamiÄ™taÅ‚, twoje miecze stanÄ… siÄ™ twardsze i ostrzejsze.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //To juÅ¼ caÅ‚a niezbÄ™dna wiedza. JeÅ›li bÄ™dziesz potrzebowaÅ‚ stali, porozmawiaj z Engorem.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ instance DIA_Dobar_Waffe		(C_INFO)
 	condition	 = 	DIA_Dobar_Waffe_Condition;
 	information	 = 	DIA_Dobar_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mo¿esz zrobiæ dla mnie broñ?";
+	description	 = 	"MoÅ¼esz zrobiÄ‡ dla mnie broÅ„?";
 };
 func int DIA_Dobar_Waffe_Condition ()
 {
@@ -173,11 +173,11 @@ func int DIA_Dobar_Waffe_Condition ()
 };
 func void DIA_Dobar_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Mo¿esz zrobiæ dla mnie broñ?
-	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //Nie mam na to czasu. Ja tylko kujê broñ, a Parlaf j¹ ostrzy. Wydawaniem orê¿a zajmuje siê Tandor.
+	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //MoÅ¼esz zrobiÄ‡ dla mnie broÅ„?
+	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //Nie mam na to czasu. Ja tylko kujÄ™ broÅ„, a Parlaf jÄ… ostrzy. Wydawaniem orÄ™Å¼a zajmuje siÄ™ Tandor.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Tandor handluje na zamku broni¹.");
+	B_LogEntry (TOPIC_Trader_OC,"Tandor handluje na zamku broniÄ….");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm
@@ -203,20 +203,20 @@ func void DIA_Dobar_NEWS_Info ()
 	
 	if (Dobar_einmalig == FALSE)
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //Zajmujê siê kuciem orê¿a dla zamkowych rycerzy. Odk¹d siê tu znaleŸliœmy, wci¹¿ produkujê now¹ broñ.
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //Bêdzie nam potrzebna. Poka¿emy tym przeklêtym orkom, jak smakuje stal naszych mieczy!
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_01"); //ZajmujÄ™ siÄ™ kuciem orÄ™Å¼a dla zamkowych rycerzy. OdkÄ…d siÄ™ tu znaleÅºliÅ›my, wciÄ…Å¼ produkujÄ™ nowÄ… broÅ„.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_02"); //BÄ™dzie nam potrzebna. PokaÅ¼emy tym przeklÄ™tym orkom, jak smakuje stal naszych mieczy!
 
 		if ((Npc_IsDead(Parlaf)) == FALSE)
 		{
 			B_TurnToNpc (self, Parlaf);
-			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //Hej, Parlaf, pamiêtaj, ¿eby dobrze naostrzyæ te miecze - tacy orkowie potrafi¹ byæ naprawdê twardzi!
+			AI_Output (self, other, "DIA_Dobar_NEWS_08_03"); //Hej, Parlaf, pamiÄ™taj, Å¼eby dobrze naostrzyÄ‡ te miecze - tacy orkowie potrafiÄ… byÄ‡ naprawdÄ™ twardzi!
 			B_TurnToNpc (self, other); 
 		};
 		Dobar_einmalig = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //Mog³o byæ lepiej. Gdybyœ mi ci¹gle nie przerywa³, mo¿e uda³oby mi siê wreszcie coœ zrobiæ.
+		AI_Output (self, other, "DIA_Dobar_NEWS_08_04"); //MogÅ‚o byÄ‡ lepiej. GdybyÅ› mi ciÄ…gle nie przerywaÅ‚, moÅ¼e udaÅ‚oby mi siÄ™ wreszcie coÅ› zrobiÄ‡.
 	};
 };
 
@@ -232,7 +232,7 @@ INSTANCE DIA_Dobar_PICKPOCKET (C_INFO)
 	condition	= DIA_Dobar_PICKPOCKET_Condition;
 	information	= DIA_Dobar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tej bry³ki rudy bêdzie trudna)";
+	description = "(KradzieÅ¼ tej bryÅ‚ki rudy bÄ™dzie trudna)";
 };                       
 
 FUNC INT DIA_Dobar_PICKPOCKET_Condition()

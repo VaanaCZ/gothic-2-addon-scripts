@@ -66,7 +66,7 @@ instance DIA_Coragon_HALLO		(C_INFO)
 	condition	 = 	DIA_Coragon_HALLO_Condition;
 	information	 = 	DIA_Coragon_HALLO_Info;
 	permanent    =  FALSE;
-	description	 = 	"Czy mogê kupiæ coœ do picia?";
+	description	 = 	"Czy mogÄ™ kupiÄ‡ coÅ› do picia?";
 };
 
 func int DIA_Coragon_HALLO_Condition ()
@@ -76,11 +76,11 @@ func int DIA_Coragon_HALLO_Condition ()
 
 func void DIA_Coragon_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Coragon_HALLO_15_00"); //Czy mogê kupiæ coœ do picia?
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_00"); //Mo¿esz siê tu najeœæ - o ile ciê na to staæ.
+	AI_Output (other, self, "DIA_Coragon_HALLO_15_00"); //Czy mogÄ™ kupiÄ‡ coÅ› do picia?
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_00"); //MoÅ¼esz siÄ™ tu najeÅ›Ä‡ - o ile ciÄ™ na to staÄ‡.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Jedzenie i napoje mogê kupiæ u w³aœciciela gospody, Coragona.");
+	B_LogEntry (Topic_CityTrader,"Jedzenie i napoje mogÄ™ kupiÄ‡ u wÅ‚aÅ›ciciela gospody, Coragona.");
 };
 
 // *********************************************************
@@ -93,7 +93,7 @@ instance DIA_Coragon_Trade		(C_INFO)
 	condition	 = 	DIA_Coragon_Trade_Condition;
 	information	 = 	DIA_Coragon_Trade_Info;
 	permanent    =  TRUE;
-	description	 = 	"Poka¿ mi swoje towary.";
+	description	 = 	"PokaÅ¼ mi swoje towary.";
 	trade 		 =  TRUE;
 };
 func int DIA_Coragon_Trade_Condition ()
@@ -106,7 +106,7 @@ func int DIA_Coragon_Trade_Condition ()
 func void DIA_Coragon_Trade_Info () //FIXME_FILER NOCH ESSEN IN INV
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Coragon_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other, self, "DIA_Coragon_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 };
 
 // *********************************************************
@@ -119,7 +119,7 @@ instance DIA_Coragon_WhatsUp	(C_INFO)
 	condition	 = 	DIA_Coragon_WhatsUp_Condition;
 	information	 = 	DIA_Coragon_WhatsUp_Info;
 	permanent    =  FALSE;
-	description	 = 	"Jak id¹ interesy?";
+	description	 = 	"Jak idÄ… interesy?";
 	
 };
 func int DIA_Coragon_WhatsUp_Condition ()
@@ -131,14 +131,14 @@ func int DIA_Coragon_WhatsUp_Condition ()
 };
 func void DIA_Coragon_WhatsUp_Info ()
 {
-	AI_Output (other, self, "DIA_Coragon_Gelaber_15_00"); //Jak id¹ interesy?
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_01"); //Taa... Lord Andre rozdaje piwo za darmo na placu wisielców.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_02"); //Z tego powodu zachodz¹ do mnie ostatnio tylko bogacze z górnego miasta...
-	AI_Output (other, self, "DIA_Coragon_Add_15_03"); //Coœ z nimi nie tak?
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_04"); //Niektórzy z nich naprawdê mog¹ ciê zdenerwowaæ...
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_05"); //Taki na przyk³ad Valentino - nie mogê znieœæ faceta.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_06"); //Ale niestety nie mogê sobie wybieraæ klientów - potrzeba mi ka¿dego szel¹ga.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_07"); //Ukradziono mi ca³e oszczêdnoœci, nawet moje srebro.
+	AI_Output (other, self, "DIA_Coragon_Gelaber_15_00"); //Jak idÄ… interesy?
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_01"); //Taa... Lord Andre rozdaje piwo za darmo na placu wisielcÃ³w.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_02"); //Z tego powodu zachodzÄ… do mnie ostatnio tylko bogacze z gÃ³rnego miasta...
+	AI_Output (other, self, "DIA_Coragon_Add_15_03"); //CoÅ› z nimi nie tak?
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_04"); //NiektÃ³rzy z nich naprawdÄ™ mogÄ… ciÄ™ zdenerwowaÄ‡...
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_05"); //Taki na przykÅ‚ad Valentino - nie mogÄ™ znieÅ›Ä‡ faceta.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_06"); //Ale niestety nie mogÄ™ sobie wybieraÄ‡ klientÃ³w - potrzeba mi kaÅ¼dego szelÄ…ga.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_07"); //Ukradziono mi caÅ‚e oszczÄ™dnoÅ›ci, nawet moje srebro.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -151,7 +151,7 @@ instance DIA_Addon_Coragon_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Coragon_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Coragon_MissingPeople_Info;
 
-	description	 = 	"Wiesz mo¿e coœ o zaginionych mieszkañcach miasta?";
+	description	 = 	"Wiesz moÅ¼e coÅ› o zaginionych mieszkaÅ„cach miasta?";
 };
 
 func int DIA_Addon_Coragon_MissingPeople_Condition ()
@@ -165,18 +165,18 @@ func int DIA_Addon_Coragon_MissingPeople_Condition ()
 
 func void DIA_Addon_Coragon_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Coragon_MissingPeople_15_00"); //Wiesz mo¿e coœ o zaginionych mieszkañcach miasta?
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_01"); //Podobno to w wiêkszoœci mieszkañcy portu. Ma³o mnie to dziwi, bior¹c pod uwagê reputacjê tego miejsca... 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_02"); //Nawet stolarz Thorben wspomina³, ¿e zagin¹³ jego czeladnik.  
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_03"); //Jeden z kupców - goœæ imieniem Hakon - opowiedzia³ mi ostatnio dziwn¹ historiê. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_04"); //Wspomnia³, ¿e by³ taki facet, którego widywa³ codziennie... A¿ nagle przesta³ go widywaæ. Pyta³ siê nawet o to cz³onków stra¿y. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_05"); //Wiêkszoœæ mieszkañców miasta zaczê³a panikowaæ. Nie wiem, co o tym wszystkim s¹dziæ, ale to chyba jakaœ bzdura.  
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_06"); //Khorinis to niebezpieczne miejsce, a i za jego bramami czyha na cz³owieka wiele zagro¿eñ.   
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_07"); //Grasuj¹ tam dzikie bestie i bandyci. To proste...  
+	AI_Output	(other, self, "DIA_Addon_Coragon_MissingPeople_15_00"); //Wiesz moÅ¼e coÅ› o zaginionych mieszkaÅ„cach miasta?
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_01"); //Podobno to w wiÄ™kszoÅ›ci mieszkaÅ„cy portu. MaÅ‚o mnie to dziwi, biorÄ…c pod uwagÄ™ reputacjÄ™ tego miejsca... 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_02"); //Nawet stolarz Thorben wspominaÅ‚, Å¼e zaginÄ…Å‚ jego czeladnik.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_03"); //Jeden z kupcÃ³w - goÅ›Ä‡ imieniem Hakon - opowiedziaÅ‚ mi ostatnio dziwnÄ… historiÄ™. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_04"); //WspomniaÅ‚, Å¼e byÅ‚ taki facet, ktÃ³rego widywaÅ‚ codziennie... AÅ¼ nagle przestaÅ‚ go widywaÄ‡. PytaÅ‚ siÄ™ nawet o to czÅ‚onkÃ³w straÅ¼y. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_05"); //WiÄ™kszoÅ›Ä‡ mieszkaÅ„cÃ³w miasta zaczÄ™Å‚a panikowaÄ‡. Nie wiem, co o tym wszystkim sÄ…dziÄ‡, ale to chyba jakaÅ› bzdura.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_06"); //Khorinis to niebezpieczne miejsce, a i za jego bramami czyha na czÅ‚owieka wiele zagroÅ¼eÅ„.   
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_07"); //GrasujÄ… tam dzikie bestie i bandyci. To proste...  
 	
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Hakon, kupiec z targowiska, i stolarz Thorben podobno wiedz¹ coœ na temat zaginionych ludzi."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Hakon, kupiec z targowiska, i stolarz Thorben podobno wiedzÄ… coÅ› na temat zaginionych ludzi."); 
 };
 
 // *********************************************************
@@ -189,7 +189,7 @@ instance DIA_Coragon_Bestohlen	(C_INFO)
 	condition	 = 	DIA_Coragon_Bestohlen_Condition;
 	information	 = 	DIA_Coragon_Bestohlen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Obrabowano ciê?";
+	description	 = 	"Obrabowano ciÄ™?";
 	
 };
 func int DIA_Coragon_Bestohlen_Condition ()
@@ -201,10 +201,10 @@ func int DIA_Coragon_Bestohlen_Condition ()
 };
 func void DIA_Coragon_Bestohlen_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_08"); //Obrabowano ciê?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_09"); //To by³o ju¿ jakiœ czas temu - w gospodzie by³o pe³no ludzi, a i ja nieŸle wtedy popi³em.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_10"); //Nie by³o mnie za szynkwasem tylko przez chwilê, ale tym ³obuzom to wystarczy³o.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_11"); //Donios³em o wszystkim stra¿y, ale oni oczywiœcie nic nie znaleŸli. Wypili za to du¿o darmowego piwa 'na potrzeby œledztwa'.
+	AI_Output (other, self,"DIA_Coragon_Add_15_08"); //Obrabowano ciÄ™?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_09"); //To byÅ‚o juÅ¼ jakiÅ› czas temu - w gospodzie byÅ‚o peÅ‚no ludzi, a i ja nieÅºle wtedy popiÅ‚em.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_10"); //Nie byÅ‚o mnie za szynkwasem tylko przez chwilÄ™, ale tym Å‚obuzom to wystarczyÅ‚o.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_11"); //DoniosÅ‚em o wszystkim straÅ¼y, ale oni oczywiÅ›cie nic nie znaleÅºli. Wypili za to duÅ¼o darmowego piwa 'na potrzeby Å›ledztwa'.
 	
 	MIS_Coragon_Silber = LOG_RUNNING;
 };
@@ -226,11 +226,11 @@ func void B_Coragon_Bier()
 	
 	if (Coragon_Bier < 2)
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_21"); //To wyj¹tkowe piwo - ostatnia beczka, któr¹ dysponujê.
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_21"); //To wyjÄ…tkowe piwo - ostatnia beczka, ktÃ³rÄ… dysponujÄ™.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_22"); //To ostatni ³yk!
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_22"); //To ostatni Å‚yk!
 	};
 };
 
@@ -264,7 +264,7 @@ func void DIA_Coragon_BringSilber_Info ()
 		Npc_RemoveInvItems (self, ItMi_CoragonsSilber,8);
 	};
 	
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_13"); //Niemo¿liwe!
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_13"); //NiemoÅ¼liwe!
 	B_GivePlayerXP (XP_CoragonsSilber);
 	B_Coragon_Bier();
 	
@@ -294,8 +294,8 @@ func int DIA_Coragon_Schuldenbuch_Condition ()
 func void DIA_Coragon_Schuldenbuch_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_15"); //Popatrz, co tutaj mam.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_16"); //Hmm... To spis d³u¿ników Lehmara!
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_17"); //Co masz zamiar z nim zrobiæ?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_16"); //Hmm... To spis dÅ‚uÅ¼nikÃ³w Lehmara!
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_17"); //Co masz zamiar z nim zrobiÄ‡?
 };
 
 
@@ -309,7 +309,7 @@ instance DIA_Coragon_GiveBook (C_INFO)
 	condition	 = 	DIA_Coragon_GiveBook_Condition;
 	information	 = 	DIA_Coragon_GiveBook_Info;
 	permanent    =  FALSE;
-	description	 = 	"Oto twoja ksiêga.";
+	description	 = 	"Oto twoja ksiÄ™ga.";
 	
 };
 func int DIA_Coragon_GiveBook_Condition ()
@@ -321,9 +321,9 @@ func int DIA_Coragon_GiveBook_Condition ()
 };
 func void DIA_Coragon_GiveBook_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_18"); //Oto twoja ksiêga.
+	AI_Output (other, self,"DIA_Coragon_Add_15_18"); //Oto twoja ksiÄ™ga.
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_19"); //Dziêki! Ratujesz mi ¿ycie - Lehmar bywa niebezpieczny, gdy w grê wchodz¹ jego pieni¹dze.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_19"); //DziÄ™ki! Ratujesz mi Å¼ycie - Lehmar bywa niebezpieczny, gdy w grÄ™ wchodzÄ… jego pieniÄ…dze.
 	B_GivePlayerXP (XP_Schuldenbuch);
 	B_Coragon_Bier();
 };
@@ -339,7 +339,7 @@ instance DIA_Coragon_ToOV (C_INFO)
 	condition	 = 	DIA_Coragon_ToOV_Condition;
 	information	 = 	DIA_Coragon_ToOV_Info;
 	permanent    =  FALSE;
-	description	 = 	"W jaki sposób mogê siê dostaæ do górnego miasta?";
+	description	 = 	"W jaki sposÃ³b mogÄ™ siÄ™ dostaÄ‡ do gÃ³rnego miasta?";
 	
 };
 func int DIA_Coragon_ToOV_Condition ()
@@ -353,11 +353,11 @@ func int DIA_Coragon_ToOV_Condition ()
 };
 func void DIA_Coragon_ToOV_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_23"); //W jaki sposób mogê siê dostaæ do górnego miasta?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_24"); //Musisz zostaæ obywatelem tego miasta. ZnajdŸ jak¹œ pracê.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_25"); //Popytaj mo¿e robotników w dolnym mieœcie.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_26"); //Jeœli to nic nie da, mo¿esz równie¿ skontaktowaæ siê z Lordem Andre - znajdziesz go w koszarach.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_27"); //Byæ mo¿e pozwoli ci do³¹czyæ do stra¿y - jej cz³onkowie równie¿ maj¹ wstêp do górnego miasta.
+	AI_Output (other, self,"DIA_Coragon_Add_15_23"); //W jaki sposÃ³b mogÄ™ siÄ™ dostaÄ‡ do gÃ³rnego miasta?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_24"); //Musisz zostaÄ‡ obywatelem tego miasta. ZnajdÅº jakÄ…Å› pracÄ™.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_25"); //Popytaj moÅ¼e robotnikÃ³w w dolnym mieÅ›cie.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_26"); //JeÅ›li to nic nie da, moÅ¼esz rÃ³wnieÅ¼ skontaktowaÄ‡ siÄ™ z Lordem Andre - znajdziesz go w koszarach.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_27"); //ByÄ‡ moÅ¼e pozwoli ci doÅ‚Ä…czyÄ‡ do straÅ¼y - jej czÅ‚onkowie rÃ³wnieÅ¼ majÄ… wstÄ™p do gÃ³rnego miasta.
 };
 
 
@@ -384,10 +384,10 @@ func int DIA_Coragon_Valentino_Condition ()
 func void DIA_Coragon_Valentino_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_28"); //O co chodzi z tym Valentinem?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_29"); //Ma z³ota jak lodu i nie musi nic robiæ. Co wiêcej, chwali siê tym na prawo i na lewo.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_30"); //Niezale¿nie od tego, czy ktoœ chce go s³uchaæ...
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_31"); //Sporo pije i zwykle siedzi a¿ do zamkniêcia, po czym wytacza siê nad ranem na ulice górnego miasta.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_32"); //I tak dzieñ w dzieñ...
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_29"); //Ma zÅ‚ota jak lodu i nie musi nic robiÄ‡. Co wiÄ™cej, chwali siÄ™ tym na prawo i na lewo.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_30"); //NiezaleÅ¼nie od tego, czy ktoÅ› chce go sÅ‚uchaÄ‡...
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_31"); //Sporo pije i zwykle siedzi aÅ¼ do zamkniÄ™cia, po czym wytacza siÄ™ nad ranem na ulice gÃ³rnego miasta.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_32"); //I tak dzieÅ„ w dzieÅ„...
 	
 	
 };
@@ -417,19 +417,19 @@ func int DIA_Coragon_News_Condition ()
 };
 func void DIA_Coragon_News_Info ()
 {
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_33"); //Valentino nie by³ w stanie uregulowaæ wczorajszego rachunku.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_33"); //Valentino nie byÅ‚ w stanie uregulowaÄ‡ wczorajszego rachunku.
 	if (Valentino.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_34"); //Be³kota³ coœ o tym, ¿e go okradziono i ¿e zap³aci póŸniej. Co za tupet!
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_34"); //BeÅ‚kotaÅ‚ coÅ› o tym, Å¼e go okradziono i Å¼e zapÅ‚aci pÃ³Åºniej. Co za tupet!
 	}
 	else //Pickpocket OHNE Niederschlagen - AUSKOMMENTIERT
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_35"); //Wczeœniej siê puszy³, ile to kasy on nie ma...
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_36"); //A nagle wk³ada rêkê do kieszeni, a jego twarz przybiera jeszcze g³upszy wyraz ni¿ zwykle. Za chwilê gada, ¿e go okradziono.
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_35"); //WczeÅ›niej siÄ™ puszyÅ‚, ile to kasy on nie ma...
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_36"); //A nagle wkÅ‚ada rÄ™kÄ™ do kieszeni, a jego twarz przybiera jeszcze gÅ‚upszy wyraz niÅ¼ zwykle. Za chwilÄ™ gada, Å¼e go okradziono.
 	};
 	
-	AI_Output (other, self,"DIA_Coragon_Add_15_37"); //No... I co zrobi³eœ?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_38"); //Porachowa³em mu koœci.
+	AI_Output (other, self,"DIA_Coragon_Add_15_37"); //No... I co zrobiÅ‚eÅ›?
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_38"); //PorachowaÅ‚em mu koÅ›ci.
 };
 
 // *********************************************************
@@ -442,7 +442,7 @@ instance DIA_Coragon_Ring (C_INFO)
 	condition	= DIA_Coragon_Ring_Condition;
 	information	= DIA_Coragon_Ring_Info;
 	permanent   = FALSE;
-	description = "Proszê - przyjmij ten pierœcieñ.";
+	description = "ProszÄ™ - przyjmij ten pierÅ›cieÅ„.";
 	
 };
 func int DIA_Coragon_Ring_Condition ()
@@ -455,11 +455,11 @@ func int DIA_Coragon_Ring_Condition ()
 };
 func void DIA_Coragon_Ring_Info ()
 {
-	AI_Output (other, self,"DIA_Coragon_Add_15_39"); //Proszê - przyjmij ten pierœcieñ.
+	AI_Output (other, self,"DIA_Coragon_Add_15_39"); //ProszÄ™ - przyjmij ten pierÅ›cieÅ„.
 	B_GiveInvItems (other, self, ItRi_ValentinosRing, 1);
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_40"); //Co? Nie rozumiem...
-	AI_Output (other, self,"DIA_Coragon_Add_15_41"); //Nale¿a³ do Valentina.
-	AI_Output (other, self,"DIA_Coragon_Add_15_42"); //Zawsze mo¿esz ofiarowaæ ten pierœcieñ komuœ, kto zdo³a go schwytaæ...
+	AI_Output (other, self,"DIA_Coragon_Add_15_41"); //NaleÅ¼aÅ‚ do Valentina.
+	AI_Output (other, self,"DIA_Coragon_Add_15_42"); //Zawsze moÅ¼esz ofiarowaÄ‡ ten pierÅ›cieÅ„ komuÅ›, kto zdoÅ‚a go schwytaÄ‡...
 
 	B_GivePlayerXP (300);
 	

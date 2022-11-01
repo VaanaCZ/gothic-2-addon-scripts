@@ -30,7 +30,7 @@ INSTANCE DIA_Liesel_Hallo (C_INFO)
 	condition	= DIA_Liesel_Hallo_Condition;
 	information	= DIA_Liesel_Hallo_Info;
 	permanent	= FALSE;
-	description = "Czeœæ..."; 
+	description = "CzeÅ›Ä‡..."; 
 };                       
 FUNC INT DIA_Liesel_Hallo_Condition()
 {
@@ -38,7 +38,7 @@ FUNC INT DIA_Liesel_Hallo_Condition()
 };
 FUNC VOID DIA_Liesel_Hallo_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_Hallo_15_00"); //Czeœæ... khm... owco.
+	AI_Output (other, self,"DIA_Liesel_Hallo_15_00"); //CzeÅ›Ä‡... khm... owco.
 	B_LieselMaeh ();
 };
 // ************************************************************
@@ -51,7 +51,7 @@ INSTANCE DIA_Liesel_KommMit (C_INFO)
 	condition	= DIA_Liesel_KommMit_Condition;
 	information	= DIA_Liesel_KommMit_Info;
 	permanent	= TRUE;
-	description = "ChodŸ ze mn¹."; 
+	description = "ChodÅº ze mnÄ…."; 
 };                       
 FUNC INT DIA_Liesel_KommMit_Condition()
 {
@@ -65,7 +65,7 @@ FUNC INT DIA_Liesel_KommMit_Condition()
  
 FUNC VOID DIA_Liesel_KommMit_Info()
 {	
-	AI_Output (other, self,"DIA_Liesel_KommMit_15_00");	//ChodŸ ze mn¹.
+	AI_Output (other, self,"DIA_Liesel_KommMit_15_00");	//ChodÅº ze mnÄ….
 	B_LieselMaeh ();
 	
 	self.aivar[AIV_PARTYMEMBER] = TRUE;

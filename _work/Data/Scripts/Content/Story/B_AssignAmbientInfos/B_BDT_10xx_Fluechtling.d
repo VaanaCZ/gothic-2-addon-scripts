@@ -5,12 +5,12 @@
 
 FUNC VOID B_DIA_BDT_10XX_Fluechtling_Stimme7 ()
 {
-	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00"); //Nie ma mowy! Nie wrócê do wiêzienia!
+	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_07_00"); //Nie ma mowy! Nie wrÃ³cÄ™ do wiÄ™zienia!
 };
 
 FUNC VOID B_DIA_BDT_10XX_Fluechtling_Stimme6 ()
 {
-	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00"); //Nie przyszed³eœ chyba po to, ¿eby zabraæ nas z powrotem do wiêzienia, co?
+	AI_Output			(self, other, "DIA_B_DIA_BDT_10XX_Fluechtling_06_00"); //Nie przyszedÅ‚eÅ› chyba po to, Å¼eby zabraÄ‡ nas z powrotem do wiÄ™zienia, co?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,35 +55,35 @@ func int DIA_BDT_1031_Fluechtling_Tip1_Condition ()
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_07_00"); //Trzymaj siê ode mnie z daleka, chyba ¿e chcesz wyl¹dowaæ w wiêzieniu.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_07_00"); //Trzymaj siÄ™ ode mnie z daleka, chyba Å¼e chcesz wylÄ…dowaÄ‡ w wiÄ™zieniu.
 	B_GivePlayerXP (XP_AmbientKap3);
 	
 	if (SCFoundMorgahard == FALSE)
 	{
 		Info_ClearChoices	(DIA_BDT_1031_Fluechtling_Tip1);
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Nie bój siê, nie chcê ciê wydaæ.", DIA_BDT_1031_Fluechtling_Tip1_frei );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Przybywam, by ciê aresztowaæ.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Gdzie jest Morgahard, twój dowódca?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Nie bÃ³j siÄ™, nie chcÄ™ ciÄ™ wydaÄ‡.", DIA_BDT_1031_Fluechtling_Tip1_frei );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Przybywam, by ciÄ™ aresztowaÄ‡.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Gdzie jest Morgahard, twÃ³j dowÃ³dca?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
 	};
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Gdzie jest Morgahard, twój dowódca?
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //Rozdzieliliœmy siê, ¿eby trudniej nas by³o z³apaæ. Nie mam pojêcia, gdzie s¹ pozostali.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Gdzie jest Morgahard, twÃ³j dowÃ³dca?
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //RozdzieliliÅ›my siÄ™, Å¼eby trudniej nas byÅ‚o zÅ‚apaÄ‡. Nie mam pojÄ™cia, gdzie sÄ… pozostali.
 	
-	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Szkoda, w takim razie bêdê chyba musia³ powiadomiæ sêdziego.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
+	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Szkoda, w takim razie bÄ™dÄ™ chyba musiaÅ‚ powiadomiÄ‡ sÄ™dziego.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
 
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //Szkoda, w takim razie bêdê chyba musia³ powiadomiæ sêdziego.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Dobra ju¿, dobra. Wydaje mi siê, ¿e niektórzy schronili siê w tawernie. Ale pamiêtaj, nie wiesz tego ode mnie!
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //Szkoda, w takim razie bÄ™dÄ™ chyba musiaÅ‚ powiadomiÄ‡ sÄ™dziego.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Dobra juÅ¼, dobra. Wydaje mi siÄ™, Å¼e niektÃ³rzy schronili siÄ™ w tawernie. Ale pamiÄ™taj, nie wiesz tego ode mnie!
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1031_Fluechtling_Tip1_Knast ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00"); //Przyszed³em tu, by ciê aresztowaæ.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Knast_15_00"); //PrzyszedÅ‚em tu, by ciÄ™ aresztowaÄ‡.
 	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Knast_07_01"); //Po moim trupie.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno , 1);
@@ -91,14 +91,14 @@ func void DIA_BDT_1031_Fluechtling_Tip1_Knast ()
 
 func void DIA_BDT_1031_Fluechtling_Tip1_frei ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00"); //Nie bój siê, nie chcê ciê wydaæ.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01"); //Jeœli przysy³a ciê sêdzia, to powiedz mu, ¿e mo¿e siê poca³owaæ.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_15_00"); //Nie bÃ³j siÄ™, nie chcÄ™ ciÄ™ wydaÄ‡.
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_07_01"); //JeÅ›li przysyÅ‚a ciÄ™ sÄ™dzia, to powiedz mu, Å¼e moÅ¼e siÄ™ pocaÅ‚owaÄ‡.
 	
-	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Co takiego zrobi³eœ?", DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen );
+	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Co takiego zrobiÅ‚eÅ›?", DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen );
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00"); //Co takiego zrobi³eœ?
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_15_00"); //Co takiego zrobiÅ‚eÅ›?
 	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_frei_verbrechen_07_01"); //Nie twoja sprawa.
 
 };
@@ -223,21 +223,21 @@ func void DIA_BDT_1033_Fluechtling_Tip2_Info ()
 	if (SCFoundMorgahard == FALSE)
 	{
 		Info_ClearChoices	(DIA_BDT_1033_Fluechtling_Tip2);
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Uspokój siê. Chcê tylko porozmawiaæ.", DIA_BDT_1033_Fluechtling_Tip2_frei );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Przys³a³ mnie sêdzia. Mam ciê do niego zaprowadziæ.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Gdzie jest Morgahard, twój dowódca?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "UspokÃ³j siÄ™. ChcÄ™ tylko porozmawiaÄ‡.", DIA_BDT_1033_Fluechtling_Tip2_frei );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "PrzysÅ‚aÅ‚ mnie sÄ™dzia. Mam ciÄ™ do niego zaprowadziÄ‡.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Gdzie jest Morgahard, twÃ³j dowÃ³dca?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
 	};
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Gdzie jest Morgahard, twój dowódca?
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //Nie chcê ¿adnych k³opotów. IdŸ do zarz¹dcy. Wiem, ¿e chcia³ siê ukryæ wœród najemników. A teraz zostaw mnie w spokoju.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Gdzie jest Morgahard, twÃ³j dowÃ³dca?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //Nie chcÄ™ Å¼adnych kÅ‚opotÃ³w. IdÅº do zarzÄ…dcy. Wiem, Å¼e chciaÅ‚ siÄ™ ukryÄ‡ wÅ›rÃ³d najemnikÃ³w. A teraz zostaw mnie w spokoju.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_BDT_1033_Fluechtling_Tip2_Knast ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00"); //Przys³a³ mnie sêdzia. Mam ciê do niego zaprowadziæ.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Knast_15_00"); //PrzysÅ‚aÅ‚ mnie sÄ™dzia. Mam ciÄ™ do niego zaprowadziÄ‡.
 	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Knast_07_01"); //NIE.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno , 1);
@@ -245,15 +245,15 @@ func void DIA_BDT_1033_Fluechtling_Tip2_Knast ()
 
 func void DIA_BDT_1033_Fluechtling_Tip2_frei ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //Uspokój siê. Chcê tylko porozmawiaæ.
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //Ale ja nie chcê rozmawiaæ z tob¹. Odwal siê.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //UspokÃ³j siÄ™. ChcÄ™ tylko porozmawiaÄ‡.
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //Ale ja nie chcÄ™ rozmawiaÄ‡ z tobÄ…. Odwal siÄ™.
 	
-	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Narobi³eœ w portki ze strachu?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
+	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "NarobiÅ‚eÅ› w portki ze strachu?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //Narobi³eœ w portki ze strachu?
-	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //Gadaj zdrów, to nie na ciebie czeka szubienica.
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //NarobiÅ‚eÅ› w portki ze strachu?
+	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //Gadaj zdrÃ³w, to nie na ciebie czeka szubienica.
 
 };
 

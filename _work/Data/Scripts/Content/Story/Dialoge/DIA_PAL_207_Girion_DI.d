@@ -32,7 +32,7 @@ instance DIA_Girion_DI_Hallo		(C_INFO)
 	information	 = 	DIA_Girion_DI_Hallo_Info;
 	PERMANENT 	 =  TRUE;
 
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 func int DIA_Girion_DI_Hallo_Condition ()
 {	
@@ -43,20 +43,20 @@ func int DIA_Girion_DI_Hallo_Condition ()
 };
 func void DIA_Girion_DI_Hallo_Info ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_Hallo_15_00"); //Czy wszystko w porz¹dku?
+	AI_Output			(other, self, "DIA_Girion_DI_Hallo_15_00"); //Czy wszystko w porzÄ…dku?
 
 	if (ORkSturmDI == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //Orkowie wykazali siê spor¹ odwag¹, staj¹c przeciwko mnie.
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Wdanie siê w walkê z królewskim paladynem nie by³o z ich strony zbyt m¹dre.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //Orkowie wykazali siÄ™ sporÄ… odwagÄ…, stajÄ…c przeciwko mnie.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Wdanie siÄ™ w walkÄ™ z krÃ³lewskim paladynem nie byÅ‚o z ich strony zbyt mÄ…dre.
 		}
 	else if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //Tak myœlê. Jak du¿o czasu potrzeba ci na wype³nienie misji?
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //Tak myÅ›lÄ™. Jak duÅ¼o czasu potrzeba ci na wypeÅ‚nienie misji?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_04"); //Nie traktuj mnie jak idioty. Rób, co musisz, a potem oddawaj statek.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_04"); //Nie traktuj mnie jak idioty. RÃ³b, co musisz, a potem oddawaj statek.
 		};
 };
 
@@ -70,7 +70,7 @@ INSTANCE DIA_Girion_DI_Teach(C_INFO)
 	condition	= DIA_Girion_DI_Teach_Condition;
 	information	= DIA_Girion_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Nauczaj mnie - szybciej siê st¹d wszyscy wydostaniemy!";
+	description = "Nauczaj mnie - szybciej siÄ™ stÄ…d wszyscy wydostaniemy!";
 };                       
 
 FUNC INT DIA_Girion_DI_Teach_Condition()
@@ -83,8 +83,8 @@ FUNC INT DIA_Girion_DI_Teach_Condition()
  
 FUNC VOID DIA_Girion_DI_Teach_Info()
 {	
-	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //Jeœli mnie wytrenujesz, bêdziemy mogli szybciej opuœciæ to miejsce.
-	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //Wygl¹da na to, ¿e nie mam innego wyboru.
+	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //JeÅ›li mnie wytrenujesz, bÄ™dziemy mogli szybciej opuÅ›ciÄ‡ to miejsce.
+	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //WyglÄ…da na to, Å¼e nie mam innego wyboru.
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -104,7 +104,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_1()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_1_08_00"); //Nigdy nie podnoœ ³okci. Powoduje to usztywnienie nadgarstków, co z kolei wp³ywa na obni¿enie celnoœci.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_1_08_00"); //Nigdy nie podnoÅ› Å‚okci. Powoduje to usztywnienie nadgarstkÃ³w, co z kolei wpÅ‚ywa na obniÅ¼enie celnoÅ›ci.
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -123,7 +123,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_5()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //Zawsze przed strza³em rozluŸnij lewe ramiê. Dziêki temu bêdziesz móg³ lepiej wycelowaæ.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //Zawsze przed strzaÅ‚em rozluÅºnij lewe ramiÄ™. DziÄ™ki temu bÄ™dziesz mÃ³gÅ‚ lepiej wycelowaÄ‡.
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -140,7 +140,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_1_08_00"); //Twoje ostrze musi byæ szybkie niczym wiatr.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_1_08_00"); //Twoje ostrze musi byÄ‡ szybkie niczym wiatr.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -157,7 +157,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //Pamiêtaj, ¿e rozwi¹zania si³owe z regu³y s¹ nieskuteczne. Zamiast machaæ mieczem na oœlep, musisz precyzyjnie wyliczyæ ka¿dy cios.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //PamiÄ™taj, Å¼e rozwiÄ…zania siÅ‚owe z reguÅ‚y sÄ… nieskuteczne. Zamiast machaÄ‡ mieczem na oÅ›lep, musisz precyzyjnie wyliczyÄ‡ kaÅ¼dy cios.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -174,7 +174,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 90))
 	{
-		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //Nie trzymaj rêkojeœci tak kurczowo, wtedy masz wiêksze szanse trafienia.
+		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //Nie trzymaj rÄ™kojeÅ›ci tak kurczowo, wtedy masz wiÄ™ksze szanse trafienia.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -191,7 +191,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 90))
 	{
-		AI_Output(self,other,"DIA_Girion_DI_Teach_2H_5_08_00"); //Pamiêtaj o kontrataku. Najlepsz¹ obronê zapewni¹ ci uniki.
+		AI_Output(self,other,"DIA_Girion_DI_Teach_2H_5_08_00"); //PamiÄ™taj o kontrataku. NajlepszÄ… obronÄ™ zapewniÄ… ci uniki.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -220,7 +220,7 @@ instance DIA_Girion_DI_OrcEliteRing		(C_INFO)
 	information	 = 	DIA_Girion_DI_OrcEliteRing_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mam tu pierœcieñ orkowego herszta.";
+	description	 = 	"Mam tu pierÅ›cieÅ„ orkowego herszta.";
 };
 
 func int DIA_Girion_DI_OrcEliteRing_Condition ()
@@ -234,24 +234,24 @@ func int DIA_Girion_DI_OrcEliteRing_Condition ()
 var int DIA_Girion_DI_OrcEliteRing_OneTime;
 func void DIA_Girion_DI_OrcEliteRing_Info ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_15_00"); //Mam tu pierœcieñ orkowego herszta.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_15_00"); //Mam tu pierÅ›cieÅ„ orkowego herszta.
 
 	if (DIA_Girion_DI_OrcEliteRing_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //Przypuszczam, ¿e móg³by siê przydaæ Lordowi Hagenowi.
+		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //Przypuszczam, Å¼e mÃ³gÅ‚by siÄ™ przydaÄ‡ Lordowi Hagenowi.
 		DIA_Girion_DI_OrcEliteRing_OneTime = TRUE;
 	};
 
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Daj go mnie, a ja dostarczê go Hagenowi.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Daj go mnie, a ja dostarczÄ™ go Hagenowi.
 
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
-	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Wola³bym go raczej zatrzymaæ dla siebie.", DIA_Girion_DI_OrcEliteRing_behalten );
-	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Proszê, weŸ go.", DIA_Girion_DI_OrcEliteRing_geben );
+	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "WolaÅ‚bym go raczej zatrzymaÄ‡ dla siebie.", DIA_Girion_DI_OrcEliteRing_behalten );
+	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "ProszÄ™, weÅº go.", DIA_Girion_DI_OrcEliteRing_geben );
 };
 func void DIA_Girion_DI_OrcEliteRing_geben ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_geben_15_00"); //Proszê, weŸ go.
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_geben_08_01"); //Dziêkujê. I tak nie mam co z nim zrobiæ.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_geben_15_00"); //ProszÄ™, weÅº go.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_geben_08_01"); //DziÄ™kujÄ™. I tak nie mam co z nim zrobiÄ‡.
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 	B_GiveInvItems (other, self, ItRi_OrcEliteRing,1);
 	B_GivePlayerXP (XP_Ambient);
@@ -259,8 +259,8 @@ func void DIA_Girion_DI_OrcEliteRing_geben ()
 
 func void DIA_Girion_DI_OrcEliteRing_behalten ()
 {
-	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_behalten_15_00"); //Wola³bym go raczej zatrzymaæ dla siebie.
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_behalten_08_01"); //Bardzo proszê. I tak nic z nim nie zrobisz.
+	AI_Output			(other, self, "DIA_Girion_DI_OrcEliteRing_behalten_15_00"); //WolaÅ‚bym go raczej zatrzymaÄ‡ dla siebie.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_behalten_08_01"); //Bardzo proszÄ™. I tak nic z nim nie zrobisz.
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 };
 
@@ -275,7 +275,7 @@ instance DIA_Girion_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Girion_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Mo¿emy odp³ywaæ.";
+	description = 	"MoÅ¼emy odpÅ‚ywaÄ‡.";
 };
 
 func int DIA_Girion_DI_UndeadDragonDead_Condition ()
@@ -289,30 +289,30 @@ func int DIA_Girion_DI_UndeadDragonDead_Condition ()
 var int DIA_Girion_DI_UndeadDragonDead_OneTime;
 func void DIA_Girion_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_00"); //Mo¿emy odp³ywaæ.
-	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_01"); //Najwy¿szy czas. Ju¿ myœla³em, ¿e przyjdzie mi spêdziæ resztê ¿ycia na tym klifie.
+	AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_00"); //MoÅ¼emy odpÅ‚ywaÄ‡.
+	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_01"); //NajwyÅ¼szy czas. JuÅ¼ myÅ›laÅ‚em, Å¼e przyjdzie mi spÄ™dziÄ‡ resztÄ™ Å¼ycia na tym klifie.
 
 	if (DIA_Girion_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //A teraz przeka¿ mi dowodzenie nad okrêtem.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //Nie dotarliœmy jeszcze do Khorinis. A skoro ju¿ o tym mowa, to wcale nie mam ochoty tam wracaæ.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //Mam ju¿ doœæ tego miejsca.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //Te¿ o tym myœla³em. Ale to nie miejsce ani czas na takie dyskusje. Pogadamy na ten temat, kiedy znajdziemy siê na morzu.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //Niezale¿nie od wszystkiego cieszê siê, ¿e uda³o ci siê wróciæ na statek w jednym kawa³ku.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //A teraz przekaÅ¼ mi dowodzenie nad okrÄ™tem.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //Nie dotarliÅ›my jeszcze do Khorinis. A skoro juÅ¼ o tym mowa, to wcale nie mam ochoty tam wracaÄ‡.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //Mam juÅ¼ doÅ›Ä‡ tego miejsca.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //TeÅ¼ o tym myÅ›laÅ‚em. Ale to nie miejsce ani czas na takie dyskusje. Pogadamy na ten temat, kiedy znajdziemy siÄ™ na morzu.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //NiezaleÅ¼nie od wszystkiego cieszÄ™ siÄ™, Å¼e udaÅ‚o ci siÄ™ wrÃ³ciÄ‡ na statek w jednym kawaÅ‚ku.
 			
 			if (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //Jesteœ prawdziwym wojownikiem Innosa. Nie mam co do tego ¿adnych w¹tpliwoœci. Cieszê siê, ¿e jesteœmy po tej samej stronie.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //JesteÅ› prawdziwym wojownikiem Innosa. Nie mam co do tego Å¼adnych wÄ…tpliwoÅ›ci. CieszÄ™ siÄ™, Å¼e jesteÅ›my po tej samej stronie.
 			}
 			else
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_08"); //Nawet jeœli jesteœ draniem, tym razem post¹pi³eœ w³aœciwie.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_08"); //Nawet jeÅ›li jesteÅ› draniem, tym razem postÄ…piÅ‚eÅ› wÅ‚aÅ›ciwie.
 			};
 			
 			DIA_Girion_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 
-	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_09"); //Dobrze. A teraz idŸ do kapitana i ka¿ mu odp³yn¹æ z tego miejsca.
+	AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_09"); //Dobrze. A teraz idÅº do kapitana i kaÅ¼ mu odpÅ‚ynÄ…Ä‡ z tego miejsca.
 	AI_StopProcessInfos (self);
 };
 

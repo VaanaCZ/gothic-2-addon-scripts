@@ -20,7 +20,7 @@ INSTANCE MENU_LEAVE_GAME(C_MENU_DEF)
 
 INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		= "Na pewno chcesz wyjœæ?";   		
+	text[0]		= "Na pewno chcesz wyjÅ›Ä‡?";   		
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=    0;		posy		= 3400;
@@ -34,7 +34,7 @@ INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Tak";
-	text[1]		= "Jeszcze tu wrócê!"; // Kommentar
+	text[1]		= "Jeszcze tu wrÃ³cÄ™!"; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 4400;	
@@ -50,7 +50,7 @@ INSTANCE MENUITEM_LEAVE_GAME_NO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Nie";
-	text[1]		= "Nie, chcê dalej graæ."; // Kommentar
+	text[1]		= "Nie, chcÄ™ dalej graÄ‡."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 5000;	

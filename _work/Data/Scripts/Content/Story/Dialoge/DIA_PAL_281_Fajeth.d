@@ -37,11 +37,11 @@ FUNC VOID DIA_Fajeth_EXIT_Info()
 };
 
 /* 
-	Seit einiger Zeit suchen wir in diesem verfluchten Gebiet eine Stelle, die noch erzhaltiges Gestein enthält, 
-	nicht ständig von Orkpatroullien heimgesucht wird, wo die dauernden Drachenangriffe ausbleiben!
-	Wir sind völlig verdreckt und ausgehungert, haben unzählige Kämpfe ausgetragen 
-	und haben endlich hier den Funken einer Hoffnung gefunden bei diesem dreckigen Loch in der Erde dort drüben unseren praktisch unmöglichen Auftrag zu erledigen.
-	Und da kommt einer wie du daher und besitzt die Frechheit uns zu sagen, wir seien überfällig! Entweder bist du völlig verrückt oder einfach nur unverschämt!
+	Seit einiger Zeit suchen wir in diesem verfluchten Gebiet eine Stelle, die noch erzhaltiges Gestein enthÃ¤lt, 
+	nicht stÃ¤ndig von Orkpatroullien heimgesucht wird, wo die dauernden Drachenangriffe ausbleiben!
+	Wir sind vÃ¶llig verdreckt und ausgehungert, haben unzÃ¤hlige KÃ¤mpfe ausgetragen 
+	und haben endlich hier den Funken einer Hoffnung gefunden bei diesem dreckigen Loch in der Erde dort drÃ¼ben unseren praktisch unmÃ¶glichen Auftrag zu erledigen.
+	Und da kommt einer wie du daher und besitzt die Frechheit uns zu sagen, wir seien Ã¼berfÃ¤llig! Entweder bist du vÃ¶llig verrÃ¼ckt oder einfach nur unverschÃ¤mt!
 */
 ///////////////////////////////////////////////////////////////////////	
 //	Info First
@@ -64,9 +64,9 @@ func int DIA_Fajeth_First_Condition ()
 };
 func void DIA_Fajeth_First_Info ()
 {
-	AI_Output (self, other, "DIA_Fajeth_First_12_00"); //Kim jesteœ i co tutaj robisz?
+	AI_Output (self, other, "DIA_Fajeth_First_12_00"); //Kim jesteÅ› i co tutaj robisz?
 	AI_Output (other, self, "DIA_Fajeth_First_15_01"); //Przybywam z rozkazu Lorda Hagena...
-	AI_Output (self, other, "DIA_Fajeth_First_12_02"); //S¹dzê, ¿e powinieneœ spróbowaæ dotrzeæ do zamku. Przebywa tam kapitan Garond, g³ównodowodz¹cy tej ekspedycji.
+	AI_Output (self, other, "DIA_Fajeth_First_12_02"); //SÄ…dzÄ™, Å¼e powinieneÅ› sprÃ³bowaÄ‡ dotrzeÄ‡ do zamku. Przebywa tam kapitan Garond, gÅ‚Ã³wnodowodzÄ…cy tej ekspedycji.
 	
 	AI_StopProcessInfos (self);
 };
@@ -92,62 +92,62 @@ func int DIA_Fajeth_Hallo_Condition ()
 };
 func void DIA_Fajeth_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Fajeth_Hallo_12_00"); //Sk¹d przybywasz?
+	AI_Output (self, other, "DIA_Fajeth_Hallo_12_00"); //SkÄ…d przybywasz?
 	AI_Output (other, self, "DIA_Fajeth_Hallo_15_01"); //Jestem tutaj w imieniu Garonda...
-	AI_Output (self, other, "DIA_Fajeth_Hallo_12_02"); //Dobrze. Potrzebujemy nowych r¹k do pracy.
-	AI_Output (other, self, "DIA_Fajeth_Hallo_15_03"); //Nie przyby³em tu pomagaæ w wydobyciu.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_12_02"); //Dobrze. Potrzebujemy nowych rÄ…k do pracy.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_15_03"); //Nie przybyÅ‚em tu pomagaÄ‡ w wydobyciu.
 	AI_Output (self, other, "DIA_Fajeth_Hallo_12_04"); //Nie? A po co?
-	AI_Output (other, self, "DIA_Fajeth_Hallo_15_05"); //Kazano mi dowiedzieæ siê, ile rudy zdo³aliœcie wydobyæ.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_15_05"); //Kazano mi dowiedzieÄ‡ siÄ™, ile rudy zdoÅ‚aliÅ›cie wydobyÄ‡.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_06"); //Wielki magu, twoja obecnoœæ nape³nia mnie i moich ludzi odwag¹.
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_07"); //Z pewnoœci¹ móg³byœ nam pomóc, gdybyœ zechcia³ u¿yæ mocy, któr¹ obdarzy³ ciê Innos.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_06"); //Wielki magu, twoja obecnoÅ›Ä‡ napeÅ‚nia mnie i moich ludzi odwagÄ….
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_07"); //Z pewnoÅ›ciÄ… mÃ³gÅ‚byÅ› nam pomÃ³c, gdybyÅ› zechciaÅ‚ uÅ¼yÄ‡ mocy, ktÃ³rÄ… obdarzyÅ‚ ciÄ™ Innos.
 		
 		
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Co mogê dla ciebie zrobiæ?",DIA_Fajeth_Hallo_Tun);	
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Moja misja jest wa¿niejsza.",DIA_Fajeth_Hallo_KDFNein);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Co mogÄ™ dla ciebie zrobiÄ‡?",DIA_Fajeth_Hallo_Tun);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Moja misja jest waÅ¼niejsza.",DIA_Fajeth_Hallo_KDFNein);	
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_08"); //Moje zadanie polega na wydobywaniu rudy i chronieniu naszych zapasów.
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_09"); //Do tego potrzebujê ludzi. Jesteœ s³ug¹ Innosa - a zatem musisz s³uchaæ moich poleceñ.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_08"); //Moje zadanie polega na wydobywaniu rudy i chronieniu naszych zapasÃ³w.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_09"); //Do tego potrzebujÄ™ ludzi. JesteÅ› sÅ‚ugÄ… Innosa - a zatem musisz sÅ‚uchaÄ‡ moich poleceÅ„.
 		
 		
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Co mogê dla ciebie zrobiæ?",DIA_Fajeth_Hallo_Tun);	
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Ale ja otrzyma³em ju¿ rozkazy i to od Garonda.",DIA_Fajeth_Hallo_MILNein);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Co mogÄ™ dla ciebie zrobiÄ‡?",DIA_Fajeth_Hallo_Tun);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Ale ja otrzymaÅ‚em juÅ¼ rozkazy i to od Garonda.",DIA_Fajeth_Hallo_MILNein);	
 	}
 	else //GIL_SLD
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_10"); //S³uchaj, nie wiem, czemu Garond przys³a³ tu najemnika, ale z pewnoœci¹ mia³ w tym jakiœ cel.
-		AI_Output (self, other, "DIA_Fajeth_Hallo_12_11"); //Zanim ciê odeœlê, chcia³bym ci zleciæ jedno zadanie.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_10"); //SÅ‚uchaj, nie wiem, czemu Garond przysÅ‚aÅ‚ tu najemnika, ale z pewnoÅ›ciÄ… miaÅ‚ w tym jakiÅ› cel.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_12_11"); //Zanim ciÄ™ odeÅ›lÄ™, chciaÅ‚bym ci zleciÄ‡ jedno zadanie.
 		
 		
-		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Wszystko ma swoj¹ cenê.",DIA_Fajeth_Hallo_SLDJa);	
+		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Wszystko ma swojÄ… cenÄ™.",DIA_Fajeth_Hallo_SLDJa);	
 		Info_AddChoice 	  (DIA_Fajeth_Hallo,"Nie, nie mam czasu...",DIA_Fajeth_Hallo_SLDNein);	
 	};
 }; 
 FUNC VOID DIA_Fajeth_Hallo_Tun () //Mission
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_Tun_15_00"); //Co mogê dla ciebie zrobiæ?
-	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_01"); //Horda zêbaczy ju¿ od dawna grasuje w tej okolicy. Ostatnio kr¹¿¹ dooko³a naszego obozu, jakby czekaj¹c na okazjê do ataku.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_02"); //Nie wiem dok³adnie, o co mo¿e im chodziæ, ale dopóki tu s¹, w obozie nie zapanuje spokój.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_Tun_15_00"); //Co mogÄ™ dla ciebie zrobiÄ‡?
+	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_01"); //Horda zÄ™baczy juÅ¼ od dawna grasuje w tej okolicy. Ostatnio krÄ…Å¼Ä… dookoÅ‚a naszego obozu, jakby czekajÄ…c na okazjÄ™ do ataku.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_02"); //Nie wiem dokÅ‚adnie, o co moÅ¼e im chodziÄ‡, ale dopÃ³ki tu sÄ…, w obozie nie zapanuje spokÃ³j.
 
 	if ((Npc_IsDead(Fed)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_03"); //Najwiêcej problemów sprawia Fed. Nie doœæ, ¿e sam jest œmiertelnie przera¿ony, to jeszcze rozsiewa panikê wœród pozosta³ych skazañców.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_03"); //NajwiÄ™cej problemÃ³w sprawia Fed. Nie doÅ›Ä‡, Å¼e sam jest Å›miertelnie przeraÅ¼ony, to jeszcze rozsiewa panikÄ™ wÅ›rÃ³d pozostaÅ‚ych skazaÅ„cÃ³w.
 	};
 
 	if ((Npc_IsDead(Bilgot)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_04"); //Bilgot te¿ siê do niczego nie nadaje.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_04"); //Bilgot teÅ¼ siÄ™ do niczego nie nadaje.
 	};
 
 	if ((Npc_IsDead(Tengron)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_05"); //Tengron co prawda potrafi walczyæ, ale brakuje mu sprytu.
+		AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_05"); //Tengron co prawda potrafi walczyÄ‡, ale brakuje mu sprytu.
 	};
-	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_06"); //Chcê, ¿ebyœ znalaz³ te bestie i zabi³ je. Tylko ty mo¿esz podj¹æ siê tego zadania.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_Tun_12_06"); //ChcÄ™, Å¼ebyÅ› znalazÅ‚ te bestie i zabiÅ‚ je. Tylko ty moÅ¼esz podjÄ…Ä‡ siÄ™ tego zadania.
 	
 	Wld_InsertNpc	(NewMine_Snapper7,"OW_PATH_333");	//Joly: Zur Sicherheit, falls keine mehr da sind.
 	Wld_InsertNpc	(NewMine_Snapper8,"OW_PATH_333");
@@ -156,7 +156,7 @@ FUNC VOID DIA_Fajeth_Hallo_Tun () //Mission
 	MIS_Fajeth_Kill_Snapper = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_FajethKillSnapper,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_FajethKillSnapper,LOG_RUNNING);
-	B_LogEntry (TOPIC_FajethKillSnapper,"Fajeth kaza³ mi siê zaj¹æ zêbaczami, które ju¿ od jakiegoœ czasu kr¹¿¹ w okolicach obozu.");
+	B_LogEntry (TOPIC_FajethKillSnapper,"Fajeth kazaÅ‚ mi siÄ™ zajÄ…Ä‡ zÄ™baczami, ktÃ³re juÅ¼ od jakiegoÅ› czasu krÄ…Å¼Ä… w okolicach obozu.");
 	
 	Info_ClearChoices (DIA_Fajeth_Hallo);
 	
@@ -166,33 +166,33 @@ FUNC VOID DIA_Fajeth_Hallo_Tun () //Mission
 };
 FUNC VOID DIA_Fajeth_Hallo_KDFNein ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_KDFNein_15_00"); //Moja misja jest wa¿niejsza. Nie mogê ci pomóc.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_KDFNein_12_01"); //Oczywiœcie, o wielki. Odpowiem na wszystkie twoje pytania.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_KDFNein_15_00"); //Moja misja jest waÅ¼niejsza. Nie mogÄ™ ci pomÃ³c.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_KDFNein_12_01"); //OczywiÅ›cie, o wielki. Odpowiem na wszystkie twoje pytania.
 	MIS_Fajeth_Kill_Snapper = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Fajeth_Hallo);
 };
 FUNC VOID DIA_Fajeth_Hallo_MILNein ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_MILNein_15_00"); //Ale ja otrzyma³em ju¿ rozkazy i to od Garonda.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_01"); //I wype³nisz je. Ale dopiero po tym, jak ciê odprawiê.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_02"); //Od tej chwili odzywasz siê tylko po to, ¿eby zapytaæ: 'Co mogê dla pana zrobiæ?' Jasne?!
+	AI_Output (other, self, "DIA_Fajeth_Hallo_MILNein_15_00"); //Ale ja otrzymaÅ‚em juÅ¼ rozkazy i to od Garonda.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_01"); //I wypeÅ‚nisz je. Ale dopiero po tym, jak ciÄ™ odprawiÄ™.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_MILNein_12_02"); //Od tej chwili odzywasz siÄ™ tylko po to, Å¼eby zapytaÄ‡: 'Co mogÄ™ dla pana zrobiÄ‡?' Jasne?!
 };
 FUNC VOID DIA_Fajeth_Hallo_SLDJa ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDJa_15_00"); //Wszystko ma swoj¹ cenê. Jeœli mi zap³acisz, mo¿e siê nad tym zastanowiê.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_01"); //Nie jestem przyzwyczajony do ubijania interesów z najemnikami. Nie znoszê siê targowaæ.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_02"); //Jednak na znak mojej przychylnoœci zap³acê ci za twoj¹ pracê 100 sztuk z³ota.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDJa_15_00"); //Wszystko ma swojÄ… cenÄ™. JeÅ›li mi zapÅ‚acisz, moÅ¼e siÄ™ nad tym zastanowiÄ™.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_01"); //Nie jestem przyzwyczajony do ubijania interesÃ³w z najemnikami. Nie znoszÄ™ siÄ™ targowaÄ‡.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_02"); //Jednak na znak mojej przychylnoÅ›ci zapÅ‚acÄ™ ci za twojÄ… pracÄ™ 100 sztuk zÅ‚ota.
 	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDJa_12_03"); //Zgoda?
 	Fajeth_Pay = TRUE;
 	Info_ClearChoices (DIA_Fajeth_Hallo);
-	Info_AddChoice 	  (DIA_Fajeth_Hallo,"Co mogê dla ciebie zrobiæ?",DIA_Fajeth_Hallo_Tun);	
+	Info_AddChoice 	  (DIA_Fajeth_Hallo,"Co mogÄ™ dla ciebie zrobiÄ‡?",DIA_Fajeth_Hallo_Tun);	
 	Info_AddChoice 	  (DIA_Fajeth_Hallo,"Nie, nie mam czasu...",DIA_Fajeth_Hallo_SLDNein);	
 };
 FUNC VOID DIA_Fajeth_Hallo_SLDNein ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDNein_15_00"); //Nie, nie mam czasu zajmowaæ siê waszym problemem.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_01"); //Gardzisz ³atwym zarobkiem? Nigdy bym siê tego nie spodziewa³ po najemniku.
-	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_02"); //Ale skoro nie chcesz nam pomóc, to pytaj, o co chcesz, i wynoœ siê st¹d jak najszybciej.
+	AI_Output (other, self, "DIA_Fajeth_Hallo_SLDNein_15_00"); //Nie, nie mam czasu zajmowaÄ‡ siÄ™ waszym problemem.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_01"); //Gardzisz Å‚atwym zarobkiem? Nigdy bym siÄ™ tego nie spodziewaÅ‚ po najemniku.
+	AI_Output (self, other, "DIA_Fajeth_Hallo_SLDNein_12_02"); //Ale skoro nie chcesz nam pomÃ³c, to pytaj, o co chcesz, i wynoÅ› siÄ™ stÄ…d jak najszybciej.
 	MIS_Fajeth_Kill_Snapper = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Fajeth_Hallo);
 };
@@ -206,7 +206,7 @@ instance DIA_Fajeth_Leader		(C_INFO)
 	condition	 = 	DIA_Fajeth_Leader_Condition;
 	information	 = 	DIA_Fajeth_Leader_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Zabi³em przywódcê stada.";
+	description	 =  "ZabiÅ‚em przywÃ³dcÄ™ stada.";
 };
 func int DIA_Fajeth_Leader_Condition ()
 {
@@ -219,12 +219,12 @@ func int DIA_Fajeth_Leader_Condition ()
 };
 func void DIA_Fajeth_Leader_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_Leader_15_00"); //Zabi³em przywódcê stada.
-	AI_Output (self, other, "DIA_Fajeth_Leader_12_01"); //Dobrze. Pozbawione przywódcy bestie nie s¹ nawet w po³owie tak groŸne. Nie s¹dzê, ¿eby mia³y nas jeszcze zaatakowaæ.
+	AI_Output (other, self, "DIA_Fajeth_Leader_15_00"); //ZabiÅ‚em przywÃ³dcÄ™ stada.
+	AI_Output (self, other, "DIA_Fajeth_Leader_12_01"); //Dobrze. Pozbawione przywÃ³dcy bestie nie sÄ… nawet w poÅ‚owie tak groÅºne. Nie sÄ…dzÄ™, Å¼eby miaÅ‚y nas jeszcze zaatakowaÄ‡.
 	
 	if (Fajeth_Pay == TRUE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_Leader_12_02"); //Oto twoje z³oto, zgodnie z umow¹.
+		AI_Output (self, other, "DIA_Fajeth_Leader_12_02"); //Oto twoje zÅ‚oto, zgodnie z umowÄ….
 		B_GiveInvItems (self, other, ItMi_Gold,100); 
 	};
 	
@@ -244,7 +244,7 @@ instance DIA_Fajeth_SNAPPER_KILLED		(C_INFO)
 	condition	 = 	DIA_Fajeth_SNAPPER_KILLED_Condition;
 	information	 = 	DIA_Fajeth_SNAPPER_KILLED_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Zêbacze ju¿ nie sprawi¹ wam problemów.";
+	description	 = 	"ZÄ™bacze juÅ¼ nie sprawiÄ… wam problemÃ³w.";
 };
 
 func int DIA_Fajeth_SNAPPER_KILLED_Condition ()
@@ -258,12 +258,12 @@ func int DIA_Fajeth_SNAPPER_KILLED_Condition ()
 func void DIA_Fajeth_SNAPPER_KILLED_Info ()
 {
  		
-	AI_Output (hero, self, "DIA_Fajeth_SNAPPER_KILLED_15_00"); //Zêbacze ju¿ nie sprawi¹ wam problemów.
-	AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_01"); //Dobra robota. Powinniœmy poradziæ sobie z reszt¹ tych bestii.
+	AI_Output (hero, self, "DIA_Fajeth_SNAPPER_KILLED_15_00"); //ZÄ™bacze juÅ¼ nie sprawiÄ… wam problemÃ³w.
+	AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_01"); //Dobra robota. PowinniÅ›my poradziÄ‡ sobie z resztÄ… tych bestii.
 	
 	if (Fajeth_Pay == TRUE)
 	{
-		AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_02"); //Zas³ugujesz na nagrodê - oto 100 sztuk z³ota, tak jak siê umawialiœmy.
+		AI_Output (self, hero, "DIA_Fajeth_SNAPPER_KILLED_12_02"); //ZasÅ‚ugujesz na nagrodÄ™ - oto 100 sztuk zÅ‚ota, tak jak siÄ™ umawialiÅ›my.
 		B_GiveInvItems (self, other, ItmI_Gold,100); 
 	};					
 	Fajeth.flags = 0;
@@ -293,8 +293,8 @@ func int DIA_Fajeth_Running_Condition ()
 func void DIA_Fajeth_Running_Info ()
 {
 	AI_Output (other, self, "DIA_Fajeth_Running_15_00"); //Jak tam morale twoich ludzi?
-	AI_Output (self, other, "DIA_Fajeth_Running_12_01"); //Naprawdê chcesz wiedzieæ? S¹ tak przera¿eni, ¿e w ogóle nie nadaj¹ siê do pracy!
-	AI_Output (self, other, "DIA_Fajeth_Running_12_02"); //Za³atw jakoœ ten problem z zêbaczami albo czekaj¹ nas powa¿ne k³opoty!
+	AI_Output (self, other, "DIA_Fajeth_Running_12_01"); //NaprawdÄ™ chcesz wiedzieÄ‡? SÄ… tak przeraÅ¼eni, Å¼e w ogÃ³le nie nadajÄ… siÄ™ do pracy!
+	AI_Output (self, other, "DIA_Fajeth_Running_12_02"); //ZaÅ‚atw jakoÅ› ten problem z zÄ™baczami albo czekajÄ… nas powaÅ¼ne kÅ‚opoty!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Belohnung
@@ -306,7 +306,7 @@ instance DIA_Fajeth_BELOHNUNG		(C_INFO)
 	condition	 = 	DIA_Fajeth_BELOHNUNG_Condition;
 	information	 = 	DIA_Fajeth_BELOHNUNG_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Powiedz mi, ile rudy uda³o wam siê wydobyæ do tej pory.";
+	description	 = 	"Powiedz mi, ile rudy udaÅ‚o wam siÄ™ wydobyÄ‡ do tej pory.";
 };
 
 func int DIA_Fajeth_BELOHNUNG_Condition ()
@@ -320,16 +320,16 @@ func int DIA_Fajeth_BELOHNUNG_Condition ()
 
 func void DIA_Fajeth_BELOHNUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_00"); //Powiedz mi, ile rudy uda³o wam siê wydobyæ do tej pory.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_01"); //Zamelduj Garondowi, ¿e uda³o nam siê wydobyæ jedynie DWIE skrzynie rudy.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_02"); //Z powodu ci¹g³ych ataków ponios³em spore straty.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_03"); //Jeœli Garond przyœle mi wiêcej ludzi, bêdziemy mogli dalej wydobywaæ rudê.
-	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_04"); //Rozumiem. Zawiadomiê go.
-	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_05"); //Dobrze. Reszta nale¿y do ciebie. My postaramy siê jak najd³u¿ej utrzymaæ pozycje.
+	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_00"); //Powiedz mi, ile rudy udaÅ‚o wam siÄ™ wydobyÄ‡ do tej pory.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_01"); //Zamelduj Garondowi, Å¼e udaÅ‚o nam siÄ™ wydobyÄ‡ jedynie DWIE skrzynie rudy.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_02"); //Z powodu ciÄ…gÅ‚ych atakÃ³w poniosÅ‚em spore straty.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_03"); //JeÅ›li Garond przyÅ›le mi wiÄ™cej ludzi, bÄ™dziemy mogli dalej wydobywaÄ‡ rudÄ™.
+	AI_Output (other, self, "DIA_Fajeth_BELOHNUNG_15_04"); //Rozumiem. ZawiadomiÄ™ go.
+	AI_Output (self, other, "DIA_Fajeth_BELOHNUNG_12_05"); //Dobrze. Reszta naleÅ¼y do ciebie. My postaramy siÄ™ jak najdÅ‚uÅ¼ej utrzymaÄ‡ pozycje.
 	
 	Fajeth_Ore = TRUE;
 	
-	B_LogEntry (TOPIC_ScoutMine,"Górnicy Fajetha wydobyli do tej pory DWIE skrzynie rudy.");
+	B_LogEntry (TOPIC_ScoutMine,"GÃ³rnicy Fajetha wydobyli do tej pory DWIE skrzynie rudy.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -357,14 +357,14 @@ func int DIA_Fajeth_Perm2_Condition ()
 func void DIA_Fajeth_Perm2_Info ()
 {
 	AI_Output (other, self, "DIA_Fajeth_Perm2_15_00"); //Jak idzie produkcja rudy?
-	AI_Output (self, other, "DIA_Fajeth_Perm2_12_01"); //Nie za dobrze. Czynimy niewielkie postêpy.
-	AI_Output (self, other, "DIA_Fajeth_Perm2_12_02"); //Kiedy tu przybyliœmy, sz³o nam znacznie lepiej, jednak ostatnio moi ch³opcy wydobywaj¹ same od³amki. Nic, co mog³oby nam siê przydaæ.
-	AI_Output (self, other, "DIA_Fajeth_Perm2_12_03"); //Ale nie poddamy siê - przynajmniej dopóki ja tutaj dowodzê.
+	AI_Output (self, other, "DIA_Fajeth_Perm2_12_01"); //Nie za dobrze. Czynimy niewielkie postÄ™py.
+	AI_Output (self, other, "DIA_Fajeth_Perm2_12_02"); //Kiedy tu przybyliÅ›my, szÅ‚o nam znacznie lepiej, jednak ostatnio moi chÅ‚opcy wydobywajÄ… same odÅ‚amki. Nic, co mogÅ‚oby nam siÄ™ przydaÄ‡.
+	AI_Output (self, other, "DIA_Fajeth_Perm2_12_03"); //Ale nie poddamy siÄ™ - przynajmniej dopÃ³ki ja tutaj dowodzÄ™.
 };
 //#####################################################################
 //##
 //##
-//##							KAPITEL 3 und höher
+//##							KAPITEL 3 und hÃ¶her
 //##
 //##
 //#####################################################################
@@ -397,9 +397,9 @@ func void DIA_Fajeth_ERZABBAU_Info ()
 	
 	if (MIS_AllDragonsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_01"); //Ostatnio zrobi³o siê tu trochê ciszej. Zastanawiam siê dlaczego.
-		AI_Output (other, self, "DIA_Fajeth_ERZABBAU_15_02"); //Wszystkie smoki nie ¿yj¹.
-		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_03"); //Mam nadziejê, ¿e wkrótce nas ktoœ zast¹pi. Powoli popadam tu w ob³êd.
+		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_01"); //Ostatnio zrobiÅ‚o siÄ™ tu trochÄ™ ciszej. Zastanawiam siÄ™ dlaczego.
+		AI_Output (other, self, "DIA_Fajeth_ERZABBAU_15_02"); //Wszystkie smoki nie Å¼yjÄ….
+		AI_Output (self, other, "DIA_Fajeth_ERZABBAU_12_03"); //Mam nadziejÄ™, Å¼e wkrÃ³tce nas ktoÅ› zastÄ…pi. Powoli popadam tu w obÅ‚Ä™d.
 	}
 	else 
 	{

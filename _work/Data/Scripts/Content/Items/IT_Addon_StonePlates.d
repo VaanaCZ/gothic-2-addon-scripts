@@ -46,7 +46,7 @@ const int TwoHStonePlate 		= 7;
 const int BowStonePlate 		= 8;
 const int CrsBowStonePlate 		= 9;
 
-const string StPl_MagicAuraText = "Kamienna tablica otoczona jest magiczn¹ aur¹.";
+const string StPl_MagicAuraText = "Kamienna tablica otoczona jest magicznÄ… aurÄ….";
 const string StPl_StandardText 	= "";
 
 //------------------------------------------------------------------------------------------
@@ -339,7 +339,7 @@ PROTOTYPE   Prototype_StonePlate (C_ITEM)
 //------------------------------------------------------------------------------------------
 instance ItWr_StrStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica Si³y I";
+	description 		=	"Kamienna tablica SiÅ‚y I";
 	on_state[0]			=   Use_StrStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -350,7 +350,7 @@ func void Use_StrStonePlate1 ()
 };
 instance ItWr_StrStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica Si³y II";
+	description 		=	"Kamienna tablica SiÅ‚y II";
 	on_state[0]			=   Use_StrStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -361,7 +361,7 @@ func void Use_StrStonePlate2 ()
 };
 instance ItWr_StrStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica Si³y III";
+	description 		=	"Kamienna tablica SiÅ‚y III";
 	on_state[0]			=   Use_StrStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -376,7 +376,7 @@ func void Use_StrStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_DexStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica Zrêcznoœci I";
+	description 		=	"Kamienna tablica ZrÄ™cznoÅ›ci I";
 	on_state[0]			=   Use_DexStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -387,7 +387,7 @@ func void Use_DexStonePlate1 ()
 };
 instance ItWr_DexStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica Zrêcznoœci II";
+	description 		=	"Kamienna tablica ZrÄ™cznoÅ›ci II";
 	on_state[0]			=   Use_DexStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -398,7 +398,7 @@ func void Use_DexStonePlate2 ()
 };
 instance ItWr_DexStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica Zrêcznoœci III";
+	description 		=	"Kamienna tablica ZrÄ™cznoÅ›ci III";
 	on_state[0]			=   Use_DexStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -412,7 +412,7 @@ func void Use_DexStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_HitPointStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica ¯ycia I";
+	description 		=	"Kamienna tablica Å»ycia I";
 	on_state[0]			=   Use_HitPointStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -423,7 +423,7 @@ func void Use_HitPointStonePlate1 ()
 };
 instance ItWr_HitPointStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica ¯ycia II";
+	description 		=	"Kamienna tablica Å»ycia II";
 	on_state[0]			=   Use_HitPointStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -434,7 +434,7 @@ func void Use_HitPointStonePlate2 ()
 };
 instance ItWr_HitPointStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica ¯ycia III";
+	description 		=	"Kamienna tablica Å»ycia III";
 	on_state[0]			=   Use_HitPointStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -487,7 +487,7 @@ func void Use_ManaStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_OneHStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica walki broni¹ jednorêczn¹ I";
+	description 		=	"Kamienna tablica walki broniÄ… jednorÄ™cznÄ… I";
 	on_state[0]			=   Use_OneHStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -498,7 +498,7 @@ func void Use_OneHStonePlate1 ()
 };
 instance ItWr_OneHStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica walki broni¹ jednorêczn¹ II";
+	description 		=	"Kamienna tablica walki broniÄ… jednorÄ™cznÄ… II";
 	on_state[0]			=   Use_OneHStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -509,7 +509,7 @@ func void Use_OneHStonePlate2 ()
 };
 instance ItWr_OneHStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate  
 {
-	description 		=	"Kamienna tablica walki broni¹ jednorêczn¹ III";
+	description 		=	"Kamienna tablica walki broniÄ… jednorÄ™cznÄ… III";
 	on_state[0]			=   Use_OneHStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -523,7 +523,7 @@ func void Use_OneHStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_TwoHStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica walki broni¹ dwurêczn¹ I";
+	description 		=	"Kamienna tablica walki broniÄ… dwurÄ™cznÄ… I";
 	on_state[0]			=   Use_TwoHStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -534,7 +534,7 @@ func void Use_TwoHStonePlate1 ()
 };
 instance ItWr_TwoHStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica walki broni¹ dwurêczn¹ II";
+	description 		=	"Kamienna tablica walki broniÄ… dwurÄ™cznÄ… II";
 	on_state[0]			=   Use_TwoHStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -545,7 +545,7 @@ func void Use_TwoHStonePlate2 ()
 };
 instance ItWr_TwoHStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: hat Malcom in der Tasche!
 {
-	description 		=	"Kamienna tablica walki broni¹ dwurêczn¹ III";
+	description 		=	"Kamienna tablica walki broniÄ… dwurÄ™cznÄ… III";
 	on_state[0]			=   Use_TwoHStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -559,7 +559,7 @@ func void Use_TwoHStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_BowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica ³uczników I";
+	description 		=	"Kamienna tablica Å‚ucznikÃ³w I";
 	on_state[0]			=   Use_BowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -570,7 +570,7 @@ func void Use_BowStonePlate1 ()
 };
 instance ItWr_BowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica ³uczników II";
+	description 		=	"Kamienna tablica Å‚ucznikÃ³w II";
 	on_state[0]			=   Use_BowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -581,7 +581,7 @@ func void Use_BowStonePlate2 ()
 };
 instance ItWr_BowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica ³uczników III";
+	description 		=	"Kamienna tablica Å‚ucznikÃ³w III";
 	on_state[0]			=   Use_BowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -595,7 +595,7 @@ func void Use_BowStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_CrsBowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Kamienna tablica kuszników I";
+	description 		=	"Kamienna tablica kusznikÃ³w I";
 	on_state[0]			=   Use_CrsBowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -606,7 +606,7 @@ func void Use_CrsBowStonePlate1 ()
 };
 instance ItWr_CrsBowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica kuszników II";
+	description 		=	"Kamienna tablica kusznikÃ³w II";
 	on_state[0]			=   Use_CrsBowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -617,7 +617,7 @@ func void Use_CrsBowStonePlate2 ()
 };
 instance ItWr_CrsBowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Kamienna tablica kuszników III";
+	description 		=	"Kamienna tablica kusznikÃ³w III";
 	on_state[0]			=   Use_CrsBowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };

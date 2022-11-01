@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Shadowbeast_Skeleton(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Szkielet-cieniostwór";
+	name							=	"Szkielet-cieniostwÃ³r";
 	guild							=	GIL_SHADOWBEAST_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SHADOWBEAST_SKELETON;
 	level							=	40;

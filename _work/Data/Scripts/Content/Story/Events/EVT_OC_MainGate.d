@@ -1,6 +1,6 @@
 
 //****************************
-// 	EVT_OC_MAINGATE_FUNC (Funktion, die bei öffnen des Haupttores der Burg ausgeführt wird. Kapitel 5)
+// 	EVT_OC_MAINGATE_FUNC (Funktion, die bei Ã¶ffnen des Haupttores der Burg ausgefÃ¼hrt wird. Kapitel 5)
 //****************************
 func void EVT_OC_MAINGATE_FUNC_S1 ()
 {

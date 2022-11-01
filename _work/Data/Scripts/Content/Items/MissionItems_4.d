@@ -1,6 +1,6 @@
 
-const int Value_Dragonegg 		= 200;//Joly: nicht ändern
-const int Value_OrcEliteRing 	= 130;//Joly: nicht ändern
+const int Value_Dragonegg 		= 200;//Joly: nicht Ã¤ndern
+const int Value_OrcEliteRing 	= 130;//Joly: nicht Ã¤ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -85,7 +85,7 @@ INSTANCE ItMW_1H_FerrosSword_Mis (C_Item)
 
 INSTANCE ItMi_KerolothsGeldbeutel_MIS(C_Item)
 {
-	name 				=	"Skórzana torba Kerolotha";
+	name 				=	"SkÃ³rzana torba Kerolotha";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -110,7 +110,7 @@ FUNC VOID UseKerolothsGeldbeutel ()
 
 INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name 				=	"Skórzana torba Kerolotha";
+	name 				=	"SkÃ³rzana torba Kerolotha";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -149,11 +149,11 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 };
 
 
-//Tabins Lurkerhäute von Engrom
+//Tabins LurkerhÃ¤ute von Engrom
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
-	name 				=	"Skóra topielca";
+	name 				=	"SkÃ³ra topielca";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"Na wewnêtrznej stronie wygarbowano imiê 'Talbin'.";
+	TEXT[0]				= 	"Na wewnÄ™trznej stronie wygarbowano imiÄ™ 'Talbin'.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -172,7 +172,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Drachen-Ei	(für DJG only Ambient auftrag)
+//	Drachen-Ei	(fÃ¼r DJG only Ambient auftrag)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
@@ -187,23 +187,23 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Jajo jest ciep³e, a ze œrodka";
-	TEXT[1]					=	"dochodzi s³aby dŸwiêk, jakby drapanie.";
+	TEXT[0]					=	"Jajo jest ciepÅ‚e, a ze Å›rodka";
+	TEXT[1]					=	"dochodzi sÅ‚aby dÅºwiÄ™k, jakby drapanie.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
 //---------------------------------------------------------------------
-//	OrcEliteRing (für PAL only Ambient auftrag)
+//	OrcEliteRing (fÃ¼r PAL only Ambient auftrag)
 //---------------------------------------------------------------------
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
 {
-	name 					=	"Pierœcieñ orkowych przywódców";
+	name 					=	"PierÅ›cieÅ„ orkowych przywÃ³dcÃ³w";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
-	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muß so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: MuÃŸ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	value 					=	Value_OrcEliteRing;
 
@@ -216,7 +216,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 
 	description				= 	name;
 
-	TEXT[0]					=	"Pierœcieñ jest szorstki i";
+	TEXT[0]					=	"PierÅ›cieÅ„ jest szorstki i";
 	TEXT[1]					=	"dziwnie zimny w dotyku.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
@@ -325,7 +325,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 		if (Use_Map_NewWorld_Orcelite_MIS_OneTime == FALSE)
 		&& (MIS_KillOrkOberst != 0)
 		{
-			B_LogEntry (TOPIC_OrcElite,"Przy orkowym pu³kowniku znalaz³em dziwn¹ mapê. Wygl¹da jak plan dzia³añ wojennych tych stworzeñ."); 
+			B_LogEntry (TOPIC_OrcElite,"Przy orkowym puÅ‚kowniku znalazÅ‚em dziwnÄ… mapÄ™. WyglÄ…da jak plan dziaÅ‚aÅ„ wojennych tych stworzeÅ„."); 
 			Use_Map_NewWorld_Orcelite_MIS_OneTime = TRUE;
 		};
 	};

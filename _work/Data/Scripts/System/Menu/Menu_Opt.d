@@ -45,7 +45,7 @@ INSTANCE MENUITEM_OPT_GAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Ustawienia gry";
-	text[1]		= "Zmiana ustawieñ rozgrywki";  // Kommentar
+	text[1]		= "Zmiana ustawieÅ„ rozgrywki";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*0;
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_OPT_GRAPHICS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Ustawienia grafiki";
-	text[1]		= "Pole widzenia, iloœæ szczegó³ów i efekty specjalne";  // Kommentar
+	text[1]		= "Pole widzenia, iloÅ›Ä‡ szczegÃ³Å‚Ã³w i efekty specjalne";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*1;
@@ -79,7 +79,7 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"Ustawienia obrazu";
-	text[1]		=	"Karta graficzna, rozdzielczoœæ, jasnoœæ i kontrast";  // Kommentar
+	text[1]		=	"Karta graficzna, rozdzielczoÅ›Ä‡, jasnoÅ›Ä‡ i kontrast";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -95,8 +95,8 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_AUDIO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Ustawienia dŸwiêku";
-	text[1]		= "Muzyka, efekty dŸwiêkowe i sekwencje mówione";  // Kommentar
+	text[0]		= "Ustawienia dÅºwiÄ™ku";
+	text[1]		= "Muzyka, efekty dÅºwiÄ™kowe i sekwencje mÃ³wione";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*3;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Wydajnoœæ/Jakoœæ";
-	text[1]		= "Optymalizacja dzia³ania gry";  // Kommentar
+	text[0]		= "WydajnoÅ›Ä‡/JakoÅ›Ä‡";
+	text[1]		= "Optymalizacja dziaÅ‚ania gry";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -167,7 +167,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "Ust. w³asne#Du¿a wydajnoœæ|Œrednia jakoœæ|Wysoka jakoœæ";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "Ust. wÅ‚asne#DuÅ¼a wydajnoÅ›Ä‡|Åšrednia jakoÅ›Ä‡|Wysoka jakoÅ›Ä‡";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension
@@ -185,7 +185,7 @@ instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_OPT_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wróæ";
+	text[0]		=	"WrÃ³Ä‡";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y+300;
 	dimx		=	6192;		dimy		=	MENU_OPT_DY;

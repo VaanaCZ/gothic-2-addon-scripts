@@ -44,7 +44,7 @@ FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Przywódcy przychodz¹ i odchodz¹... Trudno ich zliczyæ.
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//PrzywÃ³dcy przychodzÄ… i odchodzÄ…... Trudno ich zliczyÄ‡.
 		}
 		else
 		{
@@ -53,8 +53,8 @@ FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Naszym nowym przywódc¹ jest Kruk. On nas tu doprowadzi³ i za³o¿y³ nasz obóz.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Sprawuje kontrolê nad kopalni¹, bo inaczej te psy dawno pozabija³yby siê o z³oto.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Naszym nowym przywÃ³dcÄ… jest Kruk. On nas tu doprowadziÅ‚ i zaÅ‚oÅ¼yÅ‚ nasz obÃ³z.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Sprawuje kontrolÄ™ nad kopalniÄ…, bo inaczej te psy dawno pozabijaÅ‚yby siÄ™ o zÅ‚oto.
 	};
 };
 // *************************************************************************
@@ -80,9 +80,9 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Lager_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Co wiesz o obozie?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Gdy sta³o siê jasne, ¿e jest tu kopalnia z³ota, te szczury wyrzyna³y siê a¿ mi³o.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Wtedy Kruk zabi³ najgorszych z nich, a resztê wyrzuci³ z kopalni.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Od tamtej pory nikomu nie wolno wchodziæ na górny obszar. A wiêŸniów zapêdzi³ do pracy w kopalni.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Gdy staÅ‚o siÄ™ jasne, Å¼e jest tu kopalnia zÅ‚ota, te szczury wyrzynaÅ‚y siÄ™ aÅ¼ miÅ‚o.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Wtedy Kruk zabiÅ‚ najgorszych z nich, a resztÄ™ wyrzuciÅ‚ z kopalni.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Od tamtej pory nikomu nie wolno wchodziÄ‡ na gÃ³rny obszar. A wiÄ™ÅºniÃ³w zapÄ™dziÅ‚ do pracy w kopalni.
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
 		B_LogEntry (TOPIC_Addon_RavenKDW, LogText_Addon_RavensGoldmine); 
@@ -100,7 +100,7 @@ instance DIA_Addon_BL_BDT_1_Lager2(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager2_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager2_Info;
 	permanent	= TRUE;
-	description = "Co mo¿esz mi powiedzieæ o obozowisku?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o obozowisku?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
@@ -113,8 +113,8 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Lager2_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Co wiesz o obozie?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Je¿eli kogoœ zaatakujesz, WSZYSCY bêd¹ ciê œcigaæ.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//No chyba ¿e masz dobry powód, ¿eby siê do kogoœ dobraæ. Wtedy nikt nie bêdzie siê wtr¹caæ.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//JeÅ¼eli kogoÅ› zaatakujesz, WSZYSCY bÄ™dÄ… ciÄ™ Å›cigaÄ‡.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//No chyba Å¼e masz dobry powÃ³d, Å¼eby siÄ™ do kogoÅ› dobraÄ‡. Wtedy nikt nie bÄ™dzie siÄ™ wtrÄ…caÄ‡.
 };
 // *************************************************************************
 // 								News
@@ -139,10 +139,10 @@ FUNC VOID DIA_Addon_BL_BDT_1_News_Info()
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Kruk nie ¿yje. Co my teraz zrobimy?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Kruk nie Å¼yje. Co my teraz zrobimy?
 	};
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//Piraci nie chc¹ ju¿ woziæ nas na sta³y l¹d, bo nie dostali wynagrodzenia za ostatnie wycieczki.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//Powinniœmy wbiæ jednego czy dwóch na pal, wtedy reszta na pewno zmieni zdanie.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//Piraci nie chcÄ… juÅ¼ woziÄ‡ nas na staÅ‚y lÄ…d, bo nie dostali wynagrodzenia za ostatnie wycieczki.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//PowinniÅ›my wbiÄ‡ jednego czy dwÃ³ch na pal, wtedy reszta na pewno zmieni zdanie.
 };
 // *************************************************************************
 // 									Sklaven
@@ -153,7 +153,7 @@ instance DIA_Addon_BL_BDT_1_Sklaven(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Sklaven_Condition;
 	information	= DIA_Addon_BL_BDT_1_Sklaven_Info;
 	permanent	= TRUE;
-	description = "Co wiesz o wiêŸniach?";
+	description = "Co wiesz o wiÄ™Åºniach?";
 };  
 FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 {	
@@ -167,14 +167,14 @@ FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Sklaven_Info()
 {	
 	 
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Co wiesz o wiêŸniach?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Kruk chce, ¿eby coœ wykopali. Najpierw zmusi³ do tego bandytów, ale zbyt wielu z nich oszala³o.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Dlatego zaprz¹g³ wiêŸniów - nawet gdy zgin¹, nie ma to znaczenia.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Co wiesz o wiÄ™Åºniach?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Kruk chce, Å¼eby coÅ› wykopali. Najpierw zmusiÅ‚ do tego bandytÃ³w, ale zbyt wielu z nich oszalaÅ‚o.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Dlatego zaprzÄ…gÅ‚ wiÄ™ÅºniÃ³w - nawet gdy zginÄ…, nie ma to znaczenia.
 	
 	if (BDT_1_Ausbuddeln == FALSE)
 	{
-		AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_03");//Co Kruk chce wykopaæ?
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");//Nie mam pojêcia, ale wygl¹da na to, ¿e to coœ wiêcej ni¿ z³oto.
+		AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_03");//Co Kruk chce wykopaÄ‡?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");//Nie mam pojÄ™cia, ale wyglÄ…da na to, Å¼e to coÅ› wiÄ™cej niÅ¼ zÅ‚oto.
 		BDT_1_Ausbuddeln = TRUE;
 	};
 };

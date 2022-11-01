@@ -73,7 +73,7 @@ func int DIA_Mil_310_Stadtwache_FirstWarn_Condition()
 
 func void DIA_Mil_310_Stadtwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_00"); //STAÆ!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_00"); //STAÄ†!
 		
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
@@ -83,38 +83,38 @@ func void DIA_Mil_310_Stadtwache_FirstWarn_Info()
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_03"); //Jesteœ poszukiwany w mieœcie za morderstwo.
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_03"); //JesteÅ› poszukiwany w mieÅ›cie za morderstwo.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_04"); //Nie potrzebujemy to ¿adnych brudnych z³odziei!
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_04"); //Nie potrzebujemy to Å¼adnych brudnych zÅ‚odziei!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_05"); //Nie trzeba nam w mieœcie pieniaczy!
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_05"); //Nie trzeba nam w mieÅ›cie pieniaczy!
 		};
 	
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_06"); //Dlaczego mielibyœmy ciê wpuœciæ?
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_06"); //Dlaczego mielibyÅ›my ciÄ™ wpuÅ›ciÄ‡?
 	}
 	else // ------ normales Reinkommen ------
 	{
 		 var C_Item itm; itm = Npc_GetEquippedArmor(other);
 		
-		// ------ ohne Rüstung ------
+		// ------ ohne RÃ¼stung ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		&& (hero.guild == GIL_NONE) 
 		{
 			AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_07"); //A dlaczego nie?
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_08"); //TY tu nie wejdziesz, ch³opcze!
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_08"); //TY tu nie wejdziesz, chÅ‚opcze!
 			AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_09"); //Dlaczego nie?
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_10"); //Ju¿ po twoim obszarpanym wygl¹dzie widzê, ¿e jedyne co ze sob¹ przynosisz to k³opoty.
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_11"); //W mieœcie mamy ju¿ dostatecznie du¿o k³opotów. Nie ma tu miejsca dla ludzi bez pieniêdzy.
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_10"); //JuÅ¼ po twoim obszarpanym wyglÄ…dzie widzÄ™, Å¼e jedyne co ze sobÄ… przynosisz to kÅ‚opoty.
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_11"); //W mieÅ›cie mamy juÅ¼ dostatecznie duÅ¼o kÅ‚opotÃ³w. Nie ma tu miejsca dla ludzi bez pieniÄ™dzy.
 			
 			Log_CreateTopic (TOPIC_City,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_City,LOG_RUNNING);
-			B_LogEntry (TOPIC_City,"Stra¿nicy strzeg¹cy bram miasta nie wpuszcz¹ mnie, jeœli bêdê wygl¹da³ jak nêdzarz. Muszê zrobiæ coœ ze swoim wygl¹dem albo poszukaæ innej drogi do miasta.");
+			B_LogEntry (TOPIC_City,"StraÅ¼nicy strzegÄ…cy bram miasta nie wpuszczÄ… mnie, jeÅ›li bÄ™dÄ™ wyglÄ…daÅ‚ jak nÄ™dzarz. MuszÄ™ zrobiÄ‡ coÅ› ze swoim wyglÄ…dem albo poszukaÄ‡ innej drogi do miasta.");
 		}
  	 	 
  		// ------ als Bauer ------		
@@ -124,32 +124,32 @@ func void DIA_Mil_310_Stadtwache_FirstWarn_Info()
 			if (self.aivar[AIV_TalkedToPlayer] == TRUE)
 			{
 				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_12"); //Czego chcesz tym razem?
-				AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_13"); //Przys³ano mnie z farmy.
-				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_14"); //No proszê? Czy¿byœ w koñcu mia³ jakiœ dobry powód, by siê tu pojawiaæ?
+				AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_13"); //PrzysÅ‚ano mnie z farmy.
+				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_14"); //No proszÄ™? CzyÅ¼byÅ› w koÅ„cu miaÅ‚ jakiÅ› dobry powÃ³d, by siÄ™ tu pojawiaÄ‡?
 			}
 			else //zum ersten Mal da
 			{
-				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_15"); //Jesteœ jednym z pomocników z farmy Lobarta? Nigdy ciê tu nie widzia³em!
-				AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_16"); //Od niedawna pracujê dla Lobarta.
-				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_17"); //Co sprowadza ciê do miasta?
+				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_15"); //JesteÅ› jednym z pomocnikÃ³w z farmy Lobarta? Nigdy ciÄ™ tu nie widziaÅ‚em!
+				AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_16"); //Od niedawna pracujÄ™ dla Lobarta.
+				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_17"); //Co sprowadza ciÄ™ do miasta?
 			};
 		}
 		
-		// ------ alle anderen Rüstungen ------
+		// ------ alle anderen RÃ¼stungen ------
 		else 
 		{
-			AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_18"); //S³ucham?
+			AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_18"); //SÅ‚ucham?
 			if (hero.guild == GIL_PAL)
 			|| (hero.guild == GIL_KDF)
 			{
 				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_19"); //Wybacz, ale takie mam rozkazy.
-				AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_20"); //Czy¿byœ chcia³ mnie zatrzymaæ?
-				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_21"); //Gdzie¿bym œmia³. Wszyscy cz³onkowie koœcio³a Innosa s¹ mile widziani.
+				AI_Output (other, self,"DIA_Mil_310_Stadtwache_FirstWarn_15_20"); //CzyÅ¼byÅ› chciaÅ‚ mnie zatrzymaÄ‡?
+				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_21"); //GdzieÅ¼bym Å›miaÅ‚. Wszyscy czÅ‚onkowie koÅ›cioÅ‚a Innosa sÄ… mile widziani.
 				
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_22"); //Chcia³em ci siê tylko przyjrzeæ. Wygl¹da na to, ¿e masz pieni¹dze. Mo¿esz wejœæ.
+				AI_Output (self, other,"DIA_Mil_310_Stadtwache_FirstWarn_07_22"); //ChciaÅ‚em ci siÄ™ tylko przyjrzeÄ‡. WyglÄ…da na to, Å¼e masz pieniÄ…dze. MoÅ¼esz wejÅ›Ä‡.
 			};
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Stadtwache_333.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -191,7 +191,7 @@ FUNC INT DIA_Mil_310_Stadtwache_SecondWarn_Condition()
 
 func void DIA_Mil_310_Stadtwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_SecondWarn_07_00"); //Nie masz tu czego szukaæ. Jeden krok dalej, a posiekam ciê na kawa³ki.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_SecondWarn_07_00"); //Nie masz tu czego szukaÄ‡. Jeden krok dalej, a posiekam ciÄ™ na kawaÅ‚ki.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_310_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -229,7 +229,7 @@ func void DIA_Mil_310_Stadtwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Attack_07_00"); //Sam siê o to prosi³eœ...
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Attack_07_00"); //Sam siÄ™ o to prosiÅ‚eÅ›...
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -247,7 +247,7 @@ INSTANCE DIA_Mil_310_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_310_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_310_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Masz tu 100 sztuk z³ota i wpuœæ mnie!";
+	description	= "Masz tu 100 sztuk zÅ‚ota i wpuÅ›Ä‡ mnie!";
 };                       
 
 FUNC INT DIA_Mil_310_Stadtwache_Bribe_Condition()
@@ -260,15 +260,15 @@ FUNC INT DIA_Mil_310_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_310_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Bribe_15_00"); //Oto 100 sztuk z³ota. Pozwól mi przejœæ!
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Bribe_15_00"); //Oto 100 sztuk zÅ‚ota. PozwÃ³l mi przejÅ›Ä‡!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Bribe_07_01"); //Brzmi rozs¹dnie, w porz¹dku - wchodŸ.
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Bribe_07_01"); //Brzmi rozsÄ…dnie, w porzÄ…dku - wchodÅº.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_310_Stadtwache_Bribe_07_02"); //I kieruj siê od razu do Lorda Andre! W przeciwnym wypadku nastêpny taki numer bêdzie ciê kosztowa³ 100 sztuk wiêcej!
+			AI_Output (self, other,"DIA_Mil_310_Stadtwache_Bribe_07_02"); //I kieruj siÄ™ od razu do Lorda Andre! W przeciwnym wypadku nastÄ™pny taki numer bÄ™dzie ciÄ™ kosztowaÅ‚ 100 sztuk wiÄ™cej!
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -276,12 +276,12 @@ func void DIA_Mil_310_Stadtwache_Bribe_Info()
 		Mil_310_schonmalreingelassen = TRUE;
 		B_CheckLog();
 		
-		// ------ wenn bezahlt, persönliche Absolution erteilen -------
+		// ------ wenn bezahlt, persÃ¶nliche Absolution erteilen -------
 		MIL_310_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Bribe_07_03"); //Co?! Gdzie?! Nie widzê ¿adnego z³ota. Won!
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Bribe_07_03"); //Co?! Gdzie?! Nie widzÄ™ Å¼adnego zÅ‚ota. Won!
 	};
 	
 	AI_StopProcessInfos (self);
@@ -298,7 +298,7 @@ INSTANCE DIA_Mil_310_Stadtwache_Passierschein (C_INFO)
 	condition	= DIA_Mil_310_Stadtwache_Passierschein_Condition;
 	information	= DIA_Mil_310_Stadtwache_Passierschein_Info;
 	permanent 	= FALSE;
-	description	= "Mam przepustkê!";
+	description	= "Mam przepustkÄ™!";
 };
 
 FUNC INT DIA_Mil_310_Stadtwache_Passierschein_Condition()
@@ -313,17 +313,17 @@ FUNC INT DIA_Mil_310_Stadtwache_Passierschein_Condition()
 
 FUNC VOID DIA_Mil_310_Stadtwache_Passierschein_Info()
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Passierschein_15_00"); //Mam przepustkê!
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Passierschein_15_00"); //Mam przepustkÄ™!
 	
-	if (Npc_HasEquippedArmor(other) == FALSE) //ohne Rüstung
+	if (Npc_HasEquippedArmor(other) == FALSE) //ohne RÃ¼stung
 	{
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Passierschein_07_01"); //Naprawdê? A kogoœ zabi³ bandyto, ¿eby j¹ dostaæ?
-		AI_Output (other, self,"DIA_Mil_310_Stadtwache_Passierschein_15_02"); //Pozwolisz mi przejœæ czy nie?
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Passierschein_07_03"); //Dobra, wchodŸ, nim siê rozmyœlê!
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Passierschein_07_01"); //NaprawdÄ™? A kogoÅ› zabiÅ‚ bandyto, Å¼eby jÄ… dostaÄ‡?
+		AI_Output (other, self,"DIA_Mil_310_Stadtwache_Passierschein_15_02"); //Pozwolisz mi przejÅ›Ä‡ czy nie?
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Passierschein_07_03"); //Dobra, wchodÅº, nim siÄ™ rozmyÅ›lÄ™!
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Passierschein_07_04"); //Wygl¹da na orygina³. Mo¿esz przejœæ.
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_Passierschein_07_04"); //WyglÄ…da na oryginaÅ‚. MoÅ¼esz przejÅ›Ä‡.
 	};
 
 	self.aivar[AIV_PASSGATE] = TRUE;
@@ -345,7 +345,7 @@ INSTANCE DIA_Mil_310_Stadtwache_ZumSchmied (C_INFO)
 	condition	= DIA_Mil_310_Stadtwache_ZumSchmied_Condition;
 	information	= DIA_Mil_310_Stadtwache_ZumSchmied_Info;
 	permanent 	= FALSE;
-	description	= "Chcia³bym zobaczyæ siê z kowalem, muszê naprawiæ ekwipunek.";
+	description	= "ChciaÅ‚bym zobaczyÄ‡ siÄ™ z kowalem, muszÄ™ naprawiÄ‡ ekwipunek.";
 };
 
 FUNC INT DIA_Mil_310_Stadtwache_ZumSchmied_Condition()
@@ -362,20 +362,20 @@ FUNC INT DIA_Mil_310_Stadtwache_ZumSchmied_Condition()
 
 FUNC VOID DIA_Mil_310_Stadtwache_ZumSchmied_Info()
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_ZumSchmied_15_00"); //Chcia³bym zobaczyæ siê z kowalem, muszê naprawiæ ekwipunek.
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_ZumSchmied_15_00"); //ChciaÅ‚bym zobaczyÄ‡ siÄ™ z kowalem, muszÄ™ naprawiÄ‡ ekwipunek.
 	
 	if (Mil_310_Scheisse_erzaehlt == TRUE)
 	{
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_01"); //Ach tak? Dlaczegoœ od razu tak nie gada³?
-		AI_Output (other, self,"DIA_Mil_310_Stadtwache_ZumSchmied_15_02"); //Zastanawia³em siê, jak zareagujesz.
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_03"); //Co? Wykrêæ mi jeszcze jeden taki numer, a poka¿ê ci, jak reagujê na takich durnych ¿artownisiów jak ty.
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_01"); //Ach tak? DlaczegoÅ› od razu tak nie gadaÅ‚?
+		AI_Output (other, self,"DIA_Mil_310_Stadtwache_ZumSchmied_15_02"); //ZastanawiaÅ‚em siÄ™, jak zareagujesz.
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_03"); //Co? WykrÄ™Ä‡ mi jeszcze jeden taki numer, a pokaÅ¼Ä™ ci, jak reagujÄ™ na takich durnych Å¼artownisiÃ³w jak ty.
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_04"); //W porz¹dku, mo¿esz przejœæ.
+		AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_04"); //W porzÄ…dku, moÅ¼esz przejÅ›Ä‡.
 	};
 	
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_05"); //Gdybyœ spotka³ Lobarta, ka¿ mu porz¹dnie karmiæ owce, nied³ugo wracamy!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_ZumSchmied_07_05"); //GdybyÅ› spotkaÅ‚ Lobarta, kaÅ¼ mu porzÄ…dnie karmiÄ‡ owce, niedÅ‚ugo wracamy!
 
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Stadtwache_333.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -387,7 +387,7 @@ FUNC VOID DIA_Mil_310_Stadtwache_ZumSchmied_Info()
 };
 
 // ************************************************************
-// 				Planzen für Constantino
+// 				Planzen fÃ¼r Constantino
 // ************************************************************
 
 INSTANCE DIA_Addon_Mil_310_Stadtwache_Constantino (C_INFO)
@@ -397,7 +397,7 @@ INSTANCE DIA_Addon_Mil_310_Stadtwache_Constantino (C_INFO)
 	condition	= DIA_Addon_Mil_310_Stadtwache_Constantino_Condition;
 	information	= DIA_Addon_Mil_310_Stadtwache_Constantino_Info;
 	permanent 	= TRUE;
-	description	= "Mam tu zio³a dla alchemika Constantina.";
+	description	= "Mam tu zioÅ‚a dla alchemika Constantina.";
 };
 
 FUNC INT DIA_Addon_Mil_310_Stadtwache_Constantino_Condition()
@@ -411,7 +411,7 @@ FUNC INT DIA_Addon_Mil_310_Stadtwache_Constantino_Condition()
 
 FUNC VOID DIA_Addon_Mil_310_Stadtwache_Constantino_Info()
 {
-	AI_Output (other, self,"DIA_Addon_Mil_310_Stadtwache_Constantino_15_00"); //Mam tu zio³a dla alchemika Constantina.
+	AI_Output (other, self,"DIA_Addon_Mil_310_Stadtwache_Constantino_15_00"); //Mam tu zioÅ‚a dla alchemika Constantina.
 
 	if ((Npc_HasItems (other, ItPl_Mana_Herb_01) > 0)
 		|| (Npc_HasItems (other, ItPl_Mana_Herb_02) > 0)
@@ -426,7 +426,7 @@ FUNC VOID DIA_Addon_Mil_310_Stadtwache_Constantino_Info()
 		|| (Npc_HasItems (other, ItPl_Perm_Herb) > 0)
 		|| (Npc_HasItems (other, ItPl_Beet) > 0))
 	{
-		AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_01"); //Ach tak? W takim razie poka¿ mi, co przynosisz.
+		AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_01"); //Ach tak? W takim razie pokaÅ¼ mi, co przynosisz.
 		
 		if 	((Npc_HasItems (other, ItPl_Mana_Herb_01) >= MinimumPassagePlants)
 			|| (Npc_HasItems (other, ItPl_Mana_Herb_02) >= MinimumPassagePlants)
@@ -440,7 +440,7 @@ FUNC VOID DIA_Addon_Mil_310_Stadtwache_Constantino_Info()
 			|| (Npc_HasItems (other, ItPl_Temp_Herb) >= MinimumPassagePlants)
 			|| (Npc_HasItems (other, ItPl_Perm_Herb) >= MinimumPassagePlants))
 		{
-			AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_02"); //Taaak... Wygl¹da w porz¹dku. Dobra, wchodŸ - tylko ¿adnych burd. Rozumiemy siê?
+			AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_02"); //Taaak... WyglÄ…da w porzÄ…dku. Dobra, wchodÅº - tylko Å¼adnych burd. Rozumiemy siÄ™?
 
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Stadtwache_333.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -456,17 +456,17 @@ FUNC VOID DIA_Addon_Mil_310_Stadtwache_Constantino_Info()
 
 			if (Npc_HasItems (other, ItPl_Beet) >= MinimumPassagePlants)
 			{
-				AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_04"); //A na co alchemikowi te chwasty? Masz mnie za idiotê? Wynoœ siê.
+				AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_04"); //A na co alchemikowi te chwasty? Masz mnie za idiotÄ™? WynoÅ› siÄ™.
 			}
 			else 
 			{
-				AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_05"); //Mo¿e i nie jestem ekspertem w dziedzinie alchemii, ale raczej nie przydaje siê w niej taka w³oszczyzna jak to. IdŸ sobie.
+				AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_05"); //MoÅ¼e i nie jestem ekspertem w dziedzinie alchemii, ale raczej nie przydaje siÄ™ w niej taka wÅ‚oszczyzna jak to. IdÅº sobie.
 			};	
 		};
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_06"); //Zio³a? Jakie zio³a? Nie masz ¿adnych zió³. Wynocha!
+		AI_Output (self, other,"DIA_Addon_Mil_310_Stadtwache_Constantino_07_06"); //ZioÅ‚a? Jakie zioÅ‚a? Nie masz Å¼adnych ziÃ³Å‚. Wynocha!
 	};
 
 	AI_StopProcessInfos	(self);
@@ -483,7 +483,7 @@ INSTANCE DIA_Mil_310_Stadtwache_MilizWerden (C_INFO)
 	condition	= DIA_Mil_310_Stadtwache_MilizWerden_Condition;
 	information	= DIA_Mil_310_Stadtwache_MilizWerden_Info;
 	permanent 	= FALSE;
-	description	= "Chcê siê przy³¹czyæ do stra¿y!";
+	description	= "ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do straÅ¼y!";
 };
 
 FUNC INT DIA_Mil_310_Stadtwache_MilizWerden_Condition()
@@ -496,14 +496,14 @@ FUNC INT DIA_Mil_310_Stadtwache_MilizWerden_Condition()
 
 FUNC VOID DIA_Mil_310_Stadtwache_MilizWerden_Info()
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_MilizWerden_15_00"); //Chcê siê przy³¹czyæ do stra¿y!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_MilizWerden_07_01"); //A to dobre! Spróbuj przy innej bramie, mo¿e TAM ci uwierz¹.
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_MilizWerden_15_00"); //ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do straÅ¼y!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_MilizWerden_07_01"); //A to dobre! SprÃ³buj przy innej bramie, moÅ¼e TAM ci uwierzÄ….
 	
 	Mil_310_Scheisse_erzaehlt = TRUE;
 };
 
 // ************************************************************
-// 				Wichtige Nachricht für Paladine
+// 				Wichtige Nachricht fÃ¼r Paladine
 // ************************************************************
 
 INSTANCE DIA_Mil_310_Stadtwache_Paladine (C_INFO)
@@ -513,7 +513,7 @@ INSTANCE DIA_Mil_310_Stadtwache_Paladine (C_INFO)
 	condition	= DIA_Mil_310_Stadtwache_Paladine_Condition;
 	information	= DIA_Mil_310_Stadtwache_Paladine_Info;
 	permanent 	= FALSE;
-	description	= "Muszê porozmawiaæ z przywódc¹ paladynów!";
+	description	= "MuszÄ™ porozmawiaÄ‡ z przywÃ³dcÄ… paladynÃ³w!";
 };
 
 FUNC INT DIA_Mil_310_Stadtwache_Paladine_Condition()
@@ -526,23 +526,23 @@ FUNC INT DIA_Mil_310_Stadtwache_Paladine_Condition()
 
 FUNC VOID DIA_Mil_310_Stadtwache_Paladine_Info()
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_15_00"); //Muszê siê zobaczyæ z przywódc¹ paladynów! Mam dla niego bardzo wa¿ne informacje!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_07_01"); //Och? A có¿ to za informacje?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_15_00"); //MuszÄ™ siÄ™ zobaczyÄ‡ z przywÃ³dcÄ… paladynÃ³w! Mam dla niego bardzo waÅ¼ne informacje!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_07_01"); //Och? A cÃ³Å¼ to za informacje?
 	
 	Mil_310_Scheisse_erzaehlt = TRUE;
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Wkrótce miasto zostanie zaatakowane!",DIA_Mil_310_Stadtwache_Paladine_AttackSoon);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Chmara orków zbiera siê w dolinie Khorinis!",DIA_Mil_310_Stadtwache_Paladine_EvilArmy);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Przybywam, aby zdobyæ Oko Innosa!",DIA_Mil_310_Stadtwache_Paladine_EyeInnos);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"WkrÃ³tce miasto zostanie zaatakowane!",DIA_Mil_310_Stadtwache_Paladine_AttackSoon);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Chmara orkÃ³w zbiera siÄ™ w dolinie Khorinis!",DIA_Mil_310_Stadtwache_Paladine_EvilArmy);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Przybywam, aby zdobyÄ‡ Oko Innosa!",DIA_Mil_310_Stadtwache_Paladine_EyeInnos);
 };
 
 func void DIA_Mil_310_Stadtwache_Paladine_EyeInnos() //1
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_15_00"); //Przyszed³em po Oko Innosa!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_07_01"); //Po co? Nigdy o czymœ takim nie s³ysza³em - có¿ to w³aœciwie jest?
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_15_02"); //Bardzo wa¿ny artefakt.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_07_03"); //Nie wygl¹dasz mi na powa¿nego pos³añca. A masz coœ, co potwierdzi twoj¹ to¿samoœæ?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_15_00"); //PrzyszedÅ‚em po Oko Innosa!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_07_01"); //Po co? Nigdy o czymÅ› takim nie sÅ‚yszaÅ‚em - cÃ³Å¼ to wÅ‚aÅ›ciwie jest?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_15_02"); //Bardzo waÅ¼ny artefakt.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_07_03"); //Nie wyglÄ…dasz mi na powaÅ¼nego posÅ‚aÅ„ca. A masz coÅ›, co potwierdzi twojÄ… toÅ¼samoÅ›Ä‡?
 	if (!Npc_HasItems(other, itwr_passierschein) > 0)
 	{
 		AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EyeInnos_15_04"); //Nie, nie mam!
@@ -554,31 +554,31 @@ func void DIA_Mil_310_Stadtwache_Paladine_EyeInnos() //1
 
 func void DIA_Mil_310_Stadtwache_Paladine_EvilArmy() //2 --> weiter
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EvilArmy_15_00"); //Chmara orków zbiera siê w dolinie Khorinis!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_EvilArmy_07_01"); //W Górniczej Dolinie? Czy stamt¹d w³aœnie przybywasz? Widzia³eœ ich armiê?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_EvilArmy_15_00"); //Chmara orkÃ³w zbiera siÄ™ w dolinie Khorinis!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_EvilArmy_07_01"); //W GÃ³rniczej Dolinie? Czy stamtÄ…d wÅ‚aÅ›nie przybywasz? WidziaÅ‚eÅ› ich armiÄ™?
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale przys³a³ mnie ktoœ, kto widzia³.",DIA_Mil_310_Stadtwache_Paladine_NoSomeone);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale wiem, ¿e orkami dowodz¹ smoki!",DIA_Mil_310_Stadtwache_Paladine_NoDragons);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Tak. By³em w dolinie Khorinis. Widzia³em kilka potê¿nych smoków!",DIA_Mil_310_Stadtwache_Paladine_YesDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale przysÅ‚aÅ‚ mnie ktoÅ›, kto widziaÅ‚.",DIA_Mil_310_Stadtwache_Paladine_NoSomeone);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale wiem, Å¼e orkami dowodzÄ… smoki!",DIA_Mil_310_Stadtwache_Paladine_NoDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Tak. ByÅ‚em w dolinie Khorinis. WidziaÅ‚em kilka potÄ™Å¼nych smokÃ³w!",DIA_Mil_310_Stadtwache_Paladine_YesDragons);
 };
 
 func void DIA_Mil_310_Stadtwache_Paladine_AttackSoon() //3 --> weiter
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_AttackSoon_15_00"); //Wkrótce miasto zostanie zaatakowane!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AttackSoon_07_01"); //Co? Przez kogo? Orków? Widzia³eœ jak¹œ armiê?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_AttackSoon_15_00"); //WkrÃ³tce miasto zostanie zaatakowane!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AttackSoon_07_01"); //Co? Przez kogo? OrkÃ³w? WidziaÅ‚eÅ› jakÄ…Å› armiÄ™?
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale przys³a³ mnie ktoœ, kto widzia³.",DIA_Mil_310_Stadtwache_Paladine_NoSomeone);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale wiem, ¿e orkami dowodz¹ smoki!",DIA_Mil_310_Stadtwache_Paladine_NoDragons);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Tak. By³em w dolinie Khorinis. Widzia³em kilka potê¿nych smoków!",DIA_Mil_310_Stadtwache_Paladine_YesDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale przysÅ‚aÅ‚ mnie ktoÅ›, kto widziaÅ‚.",DIA_Mil_310_Stadtwache_Paladine_NoSomeone);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie, ale wiem, Å¼e orkami dowodzÄ… smoki!",DIA_Mil_310_Stadtwache_Paladine_NoDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Tak. ByÅ‚em w dolinie Khorinis. WidziaÅ‚em kilka potÄ™Å¼nych smokÃ³w!",DIA_Mil_310_Stadtwache_Paladine_YesDragons);
 };
 // ------------------------------------------------------------------------
 func void DIA_Mil_310_Stadtwache_Paladine_NoDragons() //+1
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_15_00"); //Nie, ale wiem, ¿e orkami dowodz¹ smoki!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_07_01"); //Jasne! A moja babka robi u orkowych genera³ów za adiutanta.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_07_02"); //Chyba nie myœlisz, ¿e wpuœcimy ciê do Lorda Hagena z tak¹ naci¹gan¹ historyjk¹.
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_15_00"); //Nie, ale wiem, Å¼e orkami dowodzÄ… smoki!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_07_01"); //Jasne! A moja babka robi u orkowych generaÅ‚Ã³w za adiutanta.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_07_02"); //Chyba nie myÅ›lisz, Å¼e wpuÅ›cimy ciÄ™ do Lorda Hagena z takÄ… naciÄ…ganÄ… historyjkÄ….
 	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoDragons_07_03"); //Spadaj!
 	Player_KnowsLordHagen = TRUE;
 	
@@ -587,20 +587,20 @@ func void DIA_Mil_310_Stadtwache_Paladine_NoDragons() //+1
 
 func void DIA_Mil_310_Stadtwache_Paladine_NoSomeone() //+2 --> weiter
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_NoSomeone_15_00"); //Nie, ale przys³a³ mnie ktoœ, kto widzia³.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoSomeone_07_01"); //KTO ciê przys³a³?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_NoSomeone_15_00"); //Nie, ale przysÅ‚aÅ‚ mnie ktoÅ›, kto widziaÅ‚.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_NoSomeone_07_01"); //KTO ciÄ™ przysÅ‚aÅ‚?
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie mogê ci nic powiedzieæ.",DIA_Mil_310_Stadtwache_Paladine_CantTellYou);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nie mogÄ™ ci nic powiedzieÄ‡.",DIA_Mil_310_Stadtwache_Paladine_CantTellYou);
 	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Paladyn.",DIA_Mil_310_Stadtwache_Paladine_APaladin);
 	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Pewien mag.",DIA_Mil_310_Stadtwache_Paladine_AMage);
 };
 
 func void DIA_Mil_310_Stadtwache_Paladine_YesDragons() //+3
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_YesDragons_15_00"); //Tak. By³em w dolinie Khorinis. Widzia³em kilka potê¿nych smoków!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_YesDragons_07_01"); //K³amco! Prze³êcz prowadz¹ca do doliny jest zamkniêta z obydwu stron. Nikt nie mo¿e przez ni¹ przejœæ.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_YesDragons_07_02"); //Wynoœ siê!
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_YesDragons_15_00"); //Tak. ByÅ‚em w dolinie Khorinis. WidziaÅ‚em kilka potÄ™Å¼nych smokÃ³w!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_YesDragons_07_01"); //KÅ‚amco! PrzeÅ‚Ä™cz prowadzÄ…ca do doliny jest zamkniÄ™ta z obydwu stron. Nikt nie moÅ¼e przez niÄ… przejÅ›Ä‡.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_YesDragons_07_02"); //WynoÅ› siÄ™!
 	
 	AI_StopProcessInfos(self);	
 };
@@ -608,40 +608,40 @@ func void DIA_Mil_310_Stadtwache_Paladine_YesDragons() //+3
 func void DIA_Mil_310_Stadtwache_Paladine_AMage() //++1
 {
 	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_AMage_15_00"); //Pewien mag.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AMage_07_01"); //Otrzyma³eœ te informacje od maga? Masz wiêc pewnie pieczêæ potwierdzaj¹c¹ jego s³owa!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AMage_07_01"); //OtrzymaÅ‚eÅ› te informacje od maga? Masz wiÄ™c pewnie pieczÄ™Ä‡ potwierdzajÄ…cÄ… jego sÅ‚owa!
 	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_AMage_15_02"); //Nie.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AMage_07_03"); //Jak to? Magowie ZAWSZE daj¹ swym pos³añcom pieczêæ.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AMage_07_03"); //Jak to? Magowie ZAWSZE dajÄ… swym posÅ‚aÅ„com pieczÄ™Ä‡.
 	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_AMage_15_04"); //Nie ten.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AMage_07_05"); //Nie wierzê ci. Jeœli naprawdê jesteœ pos³añcem, to mów, co masz do powiedzenia, tu i teraz.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_AMage_07_05"); //Nie wierzÄ™ ci. JeÅ›li naprawdÄ™ jesteÅ› posÅ‚aÅ„cem, to mÃ³w, co masz do powiedzenia, tu i teraz.
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Tê wiadomoœæ mogê przekazaæ jedynie paladynom!",DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Armi¹ Z³a dowodz¹ smoki!",DIA_Mil_310_Stadtwache_Paladine_DepecheDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"TÄ™ wiadomoÅ›Ä‡ mogÄ™ przekazaÄ‡ jedynie paladynom!",DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"ArmiÄ… ZÅ‚a dowodzÄ… smoki!",DIA_Mil_310_Stadtwache_Paladine_DepecheDragons);
 };
 
 func void DIA_Mil_310_Stadtwache_Paladine_APaladin() //++2 --> weiter
 {
 	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_APaladin_15_00"); //Paladyn.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_APaladin_07_01"); //Hm, to ca³kiem mo¿liwe - paladyni strzeg¹ prze³êczy prowadz¹cej do Górniczej Doliny.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_APaladin_07_02"); //Przeka¿ mi wiadomoœæ, a ja zameldujê o twoim przybyciu.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_APaladin_07_01"); //Hm, to caÅ‚kiem moÅ¼liwe - paladyni strzegÄ… przeÅ‚Ä™czy prowadzÄ…cej do GÃ³rniczej Doliny.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_APaladin_07_02"); //PrzekaÅ¼ mi wiadomoÅ›Ä‡, a ja zameldujÄ™ o twoim przybyciu.
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Tê wiadomoœæ mogê przekazaæ jedynie paladynom!",DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Armi¹ Z³a dowodz¹ smoki!",DIA_Mil_310_Stadtwache_Paladine_DepecheDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"TÄ™ wiadomoÅ›Ä‡ mogÄ™ przekazaÄ‡ jedynie paladynom!",DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"ArmiÄ… ZÅ‚a dowodzÄ… smoki!",DIA_Mil_310_Stadtwache_Paladine_DepecheDragons);
 };
 
 func void DIA_Mil_310_Stadtwache_Paladine_CantTellYou() //++3 - k.A.
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_CantTellYou_15_00"); //Nie mogê ci nic powiedzieæ.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_CantTellYou_07_01"); //Nie denerwuj mnie ch³opcze, jestem stra¿nikiem miejskim!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_CantTellYou_07_02"); //Mnie mo¿esz powiedzieæ WSZYSTKO. Mów wiêc, kto ciê przys³a³?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_CantTellYou_15_00"); //Nie mogÄ™ ci nic powiedzieÄ‡.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_CantTellYou_07_01"); //Nie denerwuj mnie chÅ‚opcze, jestem straÅ¼nikiem miejskim!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_CantTellYou_07_02"); //Mnie moÅ¼esz powiedzieÄ‡ WSZYSTKO. MÃ³w wiÄ™c, kto ciÄ™ przysÅ‚aÅ‚?
 };
 // -------------------------------------------
 func void DIA_Mil_310_Stadtwache_Paladine_DepecheDragons() //+++1
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_15_00"); //Armi¹ Z³a dowodz¹ smoki!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_01"); //Co? To nie mo¿e byæ prawda. A ju¿ prawie mia³em ciê wpuœciæ.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_02"); //Gdybyœ opowiedzia³ tê historiê Lordowi Hagenowi, kaza³by sobie przynieœæ moj¹ g³owê na srebrnej tacy.
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_15_00"); //ArmiÄ… ZÅ‚a dowodzÄ… smoki!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_01"); //Co? To nie moÅ¼e byÄ‡ prawda. A juÅ¼ prawie miaÅ‚em ciÄ™ wpuÅ›ciÄ‡.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_02"); //GdybyÅ› opowiedziaÅ‚ tÄ™ historiÄ™ Lordowi Hagenowi, kazaÅ‚by sobie przynieÅ›Ä‡ mojÄ… gÅ‚owÄ™ na srebrnej tacy.
 	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_DepecheDragons_07_03"); //Spadaj!
 	Player_KnowsLordHagen = TRUE;	
 	
@@ -650,20 +650,20 @@ func void DIA_Mil_310_Stadtwache_Paladine_DepecheDragons() //+++1
 
 func void DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins() //+++2 --> 2b
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins_15_00"); //Tê wiadomoœæ mogê przekazaæ jedynie paladynom!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins_07_01"); //Nic z tego, ch³opcze!
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins_07_02"); //Jak mam ciê u diab³a wpuœciæ do Lorda Hagena, jeœli nie bêdê mia³ pewnoœci, ¿e nie zmarnujesz jego cennego czasu?
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins_15_00"); //TÄ™ wiadomoÅ›Ä‡ mogÄ™ przekazaÄ‡ jedynie paladynom!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins_07_01"); //Nic z tego, chÅ‚opcze!
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_OnlyPaladins_07_02"); //Jak mam ciÄ™ u diabÅ‚a wpuÅ›ciÄ‡ do Lorda Hagena, jeÅ›li nie bÄ™dÄ™ miaÅ‚ pewnoÅ›ci, Å¼e nie zmarnujesz jego cennego czasu?
 	Player_KnowsLordHagen = TRUE;
 	
 	Info_ClearChoices (DIA_Mil_310_Stadtwache_Paladine);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nic z tego. Te informacje przeznaczone s¹ TYLKO dla paladynów.",DIA_Mil_310_Stadtwache_Paladine_Only2);
-	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Armi¹ Z³a dowodz¹ smoki!",DIA_Mil_310_Stadtwache_Paladine_DepecheDragons);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"Nic z tego. Te informacje przeznaczone sÄ… TYLKO dla paladynÃ³w.",DIA_Mil_310_Stadtwache_Paladine_Only2);
+	Info_AddChoice    (DIA_Mil_310_Stadtwache_Paladine,"ArmiÄ… ZÅ‚a dowodzÄ… smoki!",DIA_Mil_310_Stadtwache_Paladine_DepecheDragons);
 };
 
 func void DIA_Mil_310_Stadtwache_Paladine_Only2() //+++2b
 {
-	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_Only2_15_00"); //Nic z tego. Te informacje przeznaczone s¹ TYLKO dla paladynów.
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_Only2_07_01"); //Twoja podró¿ koñczy siê tutaj, obcy.
+	AI_Output (other, self,"DIA_Mil_310_Stadtwache_Paladine_Only2_15_00"); //Nic z tego. Te informacje przeznaczone sÄ… TYLKO dla paladynÃ³w.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_Paladine_Only2_07_01"); //Twoja podrÃ³Å¼ koÅ„czy siÄ™ tutaj, obcy.
 
 	AI_StopProcessInfos(self);	
 };
@@ -693,7 +693,7 @@ FUNC INT DIA_Mil_310_Stadtwache_PERM_Condition()
 	
 func void DIA_Mil_310_Stadtwache_PERM_Info()
 {
-	AI_Output (self, other,"DIA_Mil_310_Stadtwache_PERM_07_00"); //Dalej, ruszaj st¹d.
+	AI_Output (self, other,"DIA_Mil_310_Stadtwache_PERM_07_00"); //Dalej, ruszaj stÄ…d.
 	
 	AI_StopProcessInfos (self);
 };

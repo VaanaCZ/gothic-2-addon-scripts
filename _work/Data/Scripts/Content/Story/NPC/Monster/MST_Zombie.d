@@ -137,7 +137,7 @@ INSTANCE Zombie04	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 {
 	
-	name 			= "S≥uga Kruka";
+	name 			= "S≈Çuga Kruka";
 	
 	Mdl_SetVisual			(self,	"Zombie.mds");
 	//								Body-Mesh		Body-Tex	Skin-Color	Head-MMS	Head-Tex	Teeth-Tex	ARMOR
@@ -151,7 +151,7 @@ INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Bloodwyn	(Mst_Default_Zombie)
 {
 	
-	name = "Oøywiony Bloodwyn";
+	name = "O≈ºywiony Bloodwyn";
 	level							=	25;
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	1600;
@@ -341,7 +341,7 @@ INSTANCE MayaZombie04		(Mst_Default_Zombie)
 	Npc_SetToFistMode(self);
 };
 //*************
-//	Einer der Totenw‰chter  	
+//	Einer der Totenw√§chter  	
 //*************
 
 INSTANCE MayaZombie04_Totenw	(Mst_Default_Zombie) 

@@ -1,6 +1,6 @@
 INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 {
-	name 				=	"Zardzewia³y klucz";
+	name 				=	"ZardzewiaÅ‚y klucz";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -13,7 +13,7 @@ INSTANCE ITKE_PORTALTEMPELWALKTHROUGH_ADDON (C_Item)
 	description			= 	name;
 	
 	TEXT[2]				=	"Pasuje do drzwi kamienia teleportacyjnego";
-	TEXT[3]				=   "w œwi¹tyni portalu.";
+	TEXT[3]				=   "w Å›wiÄ…tyni portalu.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //-----------------------------------------------------------------------
@@ -51,8 +51,8 @@ INSTANCE ITKE_Addon_Tavern_01 (C_Item)
 
 	description			= 	"Klucz Lou";
 	
-	TEXT[2]				=	"Otwiera gospodê";
-	TEXT[3]				=   "w obozie bandytów.";
+	TEXT[2]				=	"Otwiera gospodÄ™";
+	TEXT[3]				=   "w obozie bandytÃ³w.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -72,7 +72,7 @@ INSTANCE ITKE_Addon_Esteban_01 (C_Item)
 	description			= 	"Klucz Estebana";
 	
 	TEXT[2]				=	"Pasuje do skrzyni";
-	TEXT[3]				=   "w jego kryjówce.";
+	TEXT[3]				=   "w jego kryjÃ³wce.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -93,7 +93,7 @@ INSTANCE ITKE_ORLAN_TELEPORTSTATION (C_Item)
 	description			= 	"Klucz Orlana";
 	
 	TEXT[2]				=	"Pasuje do drzwi w jaskini";
-	TEXT[3]				=   "na po³udnie od jego gospody.";
+	TEXT[3]				=   "na poÅ‚udnie od jego gospody.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -114,7 +114,7 @@ INSTANCE ITKE_CANYONLIBRARY_HIERARCHY_BOOKS_ADDON (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Zabrany szamanowi w obozie orków,";
+	TEXT[2]				=	"Zabrany szamanowi w obozie orkÃ³w,";
 	TEXT[3]				=   "naprzeciw biblioteki uczonych.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -134,7 +134,7 @@ INSTANCE ITKE_ADDON_BUDDLER_01 (C_Item)
 
 	description			= 	"Klucz do skrzyni";
 	
-	TEXT[2]				=	"w obozie bandytów.";
+	TEXT[2]				=	"w obozie bandytÃ³w.";
 	TEXT[3]				=   "";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

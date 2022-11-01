@@ -50,20 +50,20 @@ func void DIA_Engardo_HALLO_Info ()
 	Akils_SLDStillthere = TRUE;
 	if (Chance == FALSE)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Hej, prostaku, zgubi³eœ siê? Wracaj lepiej na pole, dogl¹daæ swojej brukwi.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Hej, prostaku, zgubiÅ‚eÅ› siÄ™? Wracaj lepiej na pole, doglÄ…daÄ‡ swojej brukwi.
 		Chance = 1;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 1) 
 	{	
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //Znalaz³eœ siê w niew³aœciwym miejscu w niew³aœciwym czasie...
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //...wiêc jeœli chcesz prze¿yæ, to lepiej zabieraj siê st¹d czym prêdzej, jasne?
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //ZnalazÅ‚eÅ› siÄ™ w niewÅ‚aÅ›ciwym miejscu w niewÅ‚aÅ›ciwym czasie...
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //...wiÄ™c jeÅ›li chcesz przeÅ¼yÄ‡, to lepiej zabieraj siÄ™ stÄ…d czym prÄ™dzej, jasne?
 		Chance = 2;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 2)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //Coœ nie tak z twoimi uszami, czy ¿ycie ju¿ ca³kiem ci zbrzyd³o? Zreszt¹ niewa¿ne, ju¿ i tak za póŸno.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //CoÅ› nie tak z twoimi uszami, czy Å¼ycie juÅ¼ caÅ‚kiem ci zbrzydÅ‚o? ZresztÄ… niewaÅ¼ne, juÅ¼ i tak za pÃ³Åºno.
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_SuddenEnemyInferno, 1);

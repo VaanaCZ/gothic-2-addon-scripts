@@ -2,7 +2,7 @@
 instance VLK_4201_Wirt (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "W≥aúciciel gospody";
+	name 		= "W≈Ça≈õciciel gospody";
 	guild 		= GIL_VLK;
 	id 			= 4201;
 	voice 		= 14;

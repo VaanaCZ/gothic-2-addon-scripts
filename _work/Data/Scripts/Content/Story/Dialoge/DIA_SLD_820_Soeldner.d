@@ -48,43 +48,43 @@ FUNC INT DIA_Sld_820_Halt_Condition()
 FUNC VOID DIA_Sld_820_Halt_Info()
 {	
 	AI_Output (self, other, "DIA_Sld_820_Halt_07_00"); //A ty gdzie leziesz?
-	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //Do domu, oczywiœcie.
-	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //Onar p³aci nam za to, byœmy nie wpuszczali tu takich jak ty!
+	AI_Output (other, self, "DIA_Sld_820_Halt_15_01"); //Do domu, oczywiÅ›cie.
+	AI_Output (self, other, "DIA_Sld_820_Halt_07_02"); //Onar pÅ‚aci nam za to, byÅ›my nie wpuszczali tu takich jak ty!
 
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Nie wa¿cie mi siê wpuszczaæ stra¿ników! - to jego dok³adne s³owa.
+		AI_Output (self, other, "DIA_Sld_820_Halt_07_03"); //Nie waÅ¼cie mi siÄ™ wpuszczaÄ‡ straÅ¼nikÃ³w! - to jego dokÅ‚adne sÅ‚owa.
 	};
 
-	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //Chcê pogadaæ z Lee!
+	AI_Output (other, self, "DIA_Sld_820_Halt_15_04"); //ChcÄ™ pogadaÄ‡ z Lee!
 	AI_Output (self, other, "DIA_Sld_820_Halt_07_05"); //Czego od niego chcesz?
 	
 	Info_ClearChoices (DIA_Sld_820_Halt);
-	Info_AddChoice (DIA_Sld_820_Halt, "On i ja znamy siê od dawna...", DIA_Sld_820_Halt_KenneLee);
+	Info_AddChoice (DIA_Sld_820_Halt, "On i ja znamy siÄ™ od dawna...", DIA_Sld_820_Halt_KenneLee);
 	if (other.guild == GIL_NONE)
 	{
-		Info_AddChoice (DIA_Sld_820_Halt, "Chcê siê przy³¹czyæ do najemników. Masz coœ przeciwko temu?", DIA_Sld_820_Halt_WannaJoin);
+		Info_AddChoice (DIA_Sld_820_Halt, "ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w. Masz coÅ› przeciwko temu?", DIA_Sld_820_Halt_WannaJoin);
 	};
 };
 
 func void B_Sld_820_LeeIsRight()
 {
-	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee jest w prawym skrzydle. Nawet nie myœl o wa³êsaniu siê gdzie indziej!
+	AI_Output (self, other, "B_Sld_820_LeeIsRight_07_00"); //Lee jest w prawym skrzydle. Nawet nie myÅ›l o waÅ‚Ä™saniu siÄ™ gdzie indziej!
 };
 
 func void DIA_Sld_820_Halt_WannaJoin()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //Chcê siê przy³¹czyæ do najemników. Masz coœ przeciwko temu?
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Ach, œwie¿e miêso armatnie! WchodŸ, wchodŸ do œrodka.
+	AI_Output (other, self, "DIA_Sld_820_Halt_WannaJoin_15_00"); //ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w. Masz coÅ› przeciwko temu?
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_01"); //Ach, Å›wieÅ¼e miÄ™so armatnie! WchodÅº, wchodÅº do Å›rodka.
 	B_Sld_820_LeeIsRight();
-	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Ale pamiêtaj, trzymaj siê z daleka od Onara! Nie lubi, kiedy ktokolwiek siê do niego odzywa, tym bardziej bez pytania. Szczególnie zaœ nie lubi takich jak ty.
+	AI_Output (self, other, "DIA_Sld_820_Halt_WannaJoin_07_02"); //Ale pamiÄ™taj, trzymaj siÄ™ z daleka od Onara! Nie lubi, kiedy ktokolwiek siÄ™ do niego odzywa, tym bardziej bez pytania. SzczegÃ³lnie zaÅ› nie lubi takich jak ty.
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Sld_820_Halt_KenneLee()
 {
-	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //On i ja znamy siê od dawna...
-	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //JESTEŒ kumplem Lee? Nie wierzê! Ale wchodŸ, jeœli Lee ciê nie pozna, od razu siê domyœlisz...
+	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //On i ja znamy siÄ™ od dawna...
+	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //JESTEÅš kumplem Lee? Nie wierzÄ™! Ale wchodÅº, jeÅ›li Lee ciÄ™ nie pozna, od razu siÄ™ domyÅ›lisz...
 	B_Sld_820_LeeIsRight();
 	AI_StopProcessInfos	(self);
 };
@@ -100,7 +100,7 @@ INSTANCE DIA_Sld_820_PERM(C_INFO)
 	condition	= DIA_Sld_820_PERM_Condition;
 	information	= DIA_Sld_820_PERM_Info;
 	permanent	= TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT DIA_Sld_820_PERM_Condition()
@@ -111,7 +111,7 @@ FUNC INT DIA_Sld_820_PERM_Condition()
 FUNC VOID DIA_Sld_820_PERM_Info()
 {	
 	AI_Output (other, self, "DIA_Sld_820_PERM_15_00"); //Jak leci?
-	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //WejdŸ, jeœli chcesz, ale nie odzywaj siê do mnie.
+	AI_Output (self, other, "DIA_Sld_820_PERM_07_01"); //WejdÅº, jeÅ›li chcesz, ale nie odzywaj siÄ™ do mnie.
 	AI_StopProcessInfos	(self);
 };
 

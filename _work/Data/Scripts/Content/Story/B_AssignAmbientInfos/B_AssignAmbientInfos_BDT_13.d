@@ -52,7 +52,7 @@ FUNC VOID DIA_BDT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_00"); //Na co siê gapisz, kretynie!
+		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_00"); //Na co siÄ™ gapisz, kretynie!
 	};
 	if (randy == 1)
 	{
@@ -60,7 +60,7 @@ FUNC VOID DIA_BDT_13_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_02"); //Zostaw mnie w spokoju, przyb³êdo.
+		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_02"); //Zostaw mnie w spokoju, przybÅ‚Ä™do.
 	};
 	
 	AI_StopProcessInfos	(self);

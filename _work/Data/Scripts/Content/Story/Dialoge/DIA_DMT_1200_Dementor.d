@@ -26,7 +26,7 @@ FUNC VOID DIA_BridgeDementor_EXIT_Info()
 
 };	
 ///////////////////////////////////////////////////////////////////////
-//	Info BridgeDementor (steht an der Brücke)
+//	Info BridgeDementor (steht an der BrÃ¼cke)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_BridgeDementor		(C_INFO)
 {
@@ -53,9 +53,9 @@ func void DIA_BridgeDementor_Info ()
 	Wld_PlayEffect("spellFX_Fear",  self, self, 0, 0, 0, FALSE );
 	AI_PlayAni (self,"T_PRACTICEMAGIC5");	
 	
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //Wiedzieliœmy, ¿e przybêdziesz!
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //Wkrótce mój Mistrz zatryumfuje, a ca³y œwiat padnie przed nim na kolana!
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Ty g³upcze! Nie masz pojêcia, przeciw komu wystêpujesz! Twa zuchwa³oœæ zostanie ukarana tu i teraz!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //WiedzieliÅ›my, Å¼e przybÄ™dziesz!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //WkrÃ³tce mÃ³j Mistrz zatryumfuje, a caÅ‚y Å›wiat padnie przed nim na kolana!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Ty gÅ‚upcze! Nie masz pojÄ™cia, przeciw komu wystÄ™pujesz! Twa zuchwaÅ‚oÅ›Ä‡ zostanie ukarana tu i teraz!
 
 	Npc_SetRefuseTalk (self,30);	
 };

@@ -42,8 +42,8 @@ FUNC INT DIA_Dragomir_Hello_Condition()
 };
 FUNC VOID DIA_Dragomir_Hello_Info()
 {
-	AI_Output (self,other,"DIA_Dragomir_Hello_12_00"); //Zapuszczasz siê tak daleko od domu?
-	AI_Output (self,other,"DIA_Dragomir_Hello_12_01"); //Tam trzeba mieæ oczy z ty³u g³owy, szczególnie jeœli podró¿ujesz sam.
+	AI_Output (self,other,"DIA_Dragomir_Hello_12_00"); //Zapuszczasz siÄ™ tak daleko od domu?
+	AI_Output (self,other,"DIA_Dragomir_Hello_12_01"); //Tam trzeba mieÄ‡ oczy z tyÅ‚u gÅ‚owy, szczegÃ³lnie jeÅ›li podrÃ³Å¼ujesz sam.
 };		 
 	
 // ***********************************************************
@@ -65,8 +65,8 @@ FUNC INT DIA_Dragomir_OutHere_Condition()
 FUNC VOID DIA_Dragomir_OutHere_Info()
 {
 	AI_Output (other,self ,"DIA_Dragomir_OutHere_15_00"); //Co tu robisz?
-	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_01"); //No có¿, gospoda jest dla mnie za droga, dlatego zamieszka³em tutaj.
-	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_02"); //Wygl¹da na to, ¿e poprzedni mieszkañcy tego miejsca ju¿ go nie potrzebuj¹.
+	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_01"); //No cÃ³Å¼, gospoda jest dla mnie za droga, dlatego zamieszkaÅ‚em tutaj.
+	AI_Output (self ,other,"DIA_Dragomir_OutHere_12_02"); //WyglÄ…da na to, Å¼e poprzedni mieszkaÅ„cy tego miejsca juÅ¼ go nie potrzebujÄ….
 };		 		
 
 // ***********************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_Dragomir_Settlers   (C_INFO)
 	condition   = DIA_Dragomir_Settlers_Condition;
 	information = DIA_Dragomir_Settlers_Info;
 	permanent   = FALSE;
-	description = "Kto mieszka³ w tym obozie?";
+	description = "Kto mieszkaÅ‚ w tym obozie?";
 };
 FUNC INT DIA_Dragomir_Settlers_Condition()
 {
@@ -90,8 +90,8 @@ FUNC INT DIA_Dragomir_Settlers_Condition()
 };
 FUNC VOID DIA_Dragomir_Settlers_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Settlers_15_00"); //Kto mieszka³ w tym obozie?
-	AI_Output (self ,other,"DIA_Dragomir_Settlers_12_01"); //Nie mam pojêcia, pewnie jacyœ myœliwi. Podejrzewam, ¿e zrobi³o siê tu dla nich zbyt niebezpiecznie.
+	AI_Output (other,self ,"DIA_Dragomir_Settlers_15_00"); //Kto mieszkaÅ‚ w tym obozie?
+	AI_Output (self ,other,"DIA_Dragomir_Settlers_12_01"); //Nie mam pojÄ™cia, pewnie jacyÅ› myÅ›liwi. Podejrzewam, Å¼e zrobiÅ‚o siÄ™ tu dla nich zbyt niebezpiecznie.
 };
 
 
@@ -117,17 +117,17 @@ FUNC INT DIA_Dragomir_Dangerous_Condition()
 FUNC VOID DIA_Dragomir_Dangerous_Info()
 {
 	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_00"); //A czy tutaj nie JEST zbyt niebezpiecznie?
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_01"); //Nie, jeœli potrafisz siê broniæ. Moja kusza wiele razy sprawdzi³a siê w walce.
-	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_02"); //Wygl¹da niepozornie.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_03"); //Zapewniam ciê, to œmiercionoœna broñ w rêkach kogoœ, kto umie siê ni¹ pos³ugiwaæ. Kiedyœ mia³em zreszt¹ wiêksz¹, ale j¹ straci³em.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_04"); //Podczas wyprawy w góry zapuœci³em siê zbyt g³êboko na pó³noc. Znajduje siê tam wielki kamienny kr¹g z o³tarzem ofiarnym.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_05"); //Polowa³em tam na œcierwojady, kiedy z lasu wy³oni³a siê nagle grupa tych wstrêtnych o¿ywieñców i zaatakowa³a mnie.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_06"); //Mog³em jedynie ratowaæ siê ucieczk¹.
-	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_07"); //Kiedy bieg³em, moja ulubiona kusza zeœliznê³a mi siê z ramienia. Z pewnoœci¹ wci¹¿ tam le¿y, gdzieœ w okolicach tego kamiennego krêgu na pó³nocy.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_01"); //Nie, jeÅ›li potrafisz siÄ™ broniÄ‡. Moja kusza wiele razy sprawdziÅ‚a siÄ™ w walce.
+	AI_Output (other,self ,"DIA_Dragomir_Dangerous_15_02"); //WyglÄ…da niepozornie.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_03"); //Zapewniam ciÄ™, to Å›miercionoÅ›na broÅ„ w rÄ™kach kogoÅ›, kto umie siÄ™ niÄ… posÅ‚ugiwaÄ‡. KiedyÅ› miaÅ‚em zresztÄ… wiÄ™kszÄ…, ale jÄ… straciÅ‚em.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_04"); //Podczas wyprawy w gÃ³ry zapuÅ›ciÅ‚em siÄ™ zbyt gÅ‚Ä™boko na pÃ³Å‚noc. Znajduje siÄ™ tam wielki kamienny krÄ…g z oÅ‚tarzem ofiarnym.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_05"); //PolowaÅ‚em tam na Å›cierwojady, kiedy z lasu wyÅ‚oniÅ‚a siÄ™ nagle grupa tych wstrÄ™tnych oÅ¼ywieÅ„cÃ³w i zaatakowaÅ‚a mnie.
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_06"); //MogÅ‚em jedynie ratowaÄ‡ siÄ™ ucieczkÄ….
+	AI_Output (self ,other,"DIA_Dragomir_Dangerous_12_07"); //Kiedy biegÅ‚em, moja ulubiona kusza zeÅ›liznÄ™Å‚a mi siÄ™ z ramienia. Z pewnoÅ›ciÄ… wciÄ…Å¼ tam leÅ¼y, gdzieÅ› w okolicach tego kamiennego krÄ™gu na pÃ³Å‚nocy.
 
 	Log_CreateTopic (TOPIC_DragomirsArmbrust, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DragomirsArmbrust, LOG_RUNNING);
-	B_LogEntry (TOPIC_DragomirsArmbrust,"Dragomir zostawi³ swoj¹ kuszê w kamiennym krêgu w wysokich górach na pó³nocy."); 
+	B_LogEntry (TOPIC_DragomirsArmbrust,"Dragomir zostawiÅ‚ swojÄ… kuszÄ™ w kamiennym krÄ™gu w wysokich gÃ³rach na pÃ³Å‚nocy."); 
 
 	MIS_DragomirsArmbrust = LOG_RUNNING;
 };
@@ -142,7 +142,7 @@ INSTANCE DIA_Dragomir_Armbrust   (C_INFO)
 	condition   = DIA_Dragomir_Armbrust_Condition;
 	information = DIA_Dragomir_Armbrust_Info;
 	permanent   = FALSE;
-	description = "Proszê. Znalaz³em twoj¹ kuszê.";
+	description = "ProszÄ™. ZnalazÅ‚em twojÄ… kuszÄ™.";
 };
 FUNC INT DIA_Dragomir_Armbrust_Condition()
 {
@@ -154,12 +154,12 @@ FUNC INT DIA_Dragomir_Armbrust_Condition()
 };
 FUNC VOID DIA_Dragomir_Armbrust_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_00"); //Proszê. Znalaz³em twoj¹ kuszê.
+	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_00"); //ProszÄ™. ZnalazÅ‚em twojÄ… kuszÄ™.
 	B_GiveInvItems (other, self, ItRw_DragomirsArmbrust_MIS, 1);					
-	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_01"); //Rzeczywiœcie, to nale¿y do mnie! Nie powiesz mi chyba, ¿e uda³eœ siê do kamiennego krêgu?!
-	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_02"); //Oczywiœcie!
-	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_03"); //To by³o bardzo nierozwa¿ne z twojej strony. Mimo to dziêkujê.
-	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_04"); //Oczywiœcie, odp³acê ci siê za tê przys³ugê. Mam nadziejê, ¿e to wystarczy.
+	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_01"); //RzeczywiÅ›cie, to naleÅ¼y do mnie! Nie powiesz mi chyba, Å¼e udaÅ‚eÅ› siÄ™ do kamiennego krÄ™gu?!
+	AI_Output (other,self ,"DIA_Dragomir_Armbrust_15_02"); //OczywiÅ›cie!
+	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_03"); //To byÅ‚o bardzo nierozwaÅ¼ne z twojej strony. Mimo to dziÄ™kujÄ™.
+	AI_Output (self ,other,"DIA_Dragomir_Armbrust_12_04"); //OczywiÅ›cie, odpÅ‚acÄ™ ci siÄ™ za tÄ™ przysÅ‚ugÄ™. Mam nadziejÄ™, Å¼e to wystarczy.
 
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);					
@@ -183,7 +183,7 @@ INSTANCE DIA_Dragomir_Learn   (C_INFO)
 	condition   = DIA_Dragomir_Learn_Condition;
 	information = DIA_Dragomir_Learn_Info;
 	permanent   = TRUE;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
+	description = "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };
 FUNC INT DIA_Dragomir_Learn_Condition()
 {
@@ -195,38 +195,38 @@ FUNC INT DIA_Dragomir_Learn_Condition()
 };
 FUNC VOID DIA_Dragomir_Learn_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Learn_15_00"); //Mo¿esz mnie czegoœ nauczyæ?
+	AI_Output (other,self ,"DIA_Dragomir_Learn_15_00"); //MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
 	
 	if (other.attribute[ATR_DEXTERITY] < 30)
 	{
-		AI_Output (self ,other,"DIA_Dragomir_Learn_12_01"); //Zanim czegokolwiek ciê nauczê, bêdziesz musia³ popracowaæ nad swoj¹ zrêcznoœci¹.
+		AI_Output (self ,other,"DIA_Dragomir_Learn_12_01"); //Zanim czegokolwiek ciÄ™ nauczÄ™, bÄ™dziesz musiaÅ‚ popracowaÄ‡ nad swojÄ… zrÄ™cznoÅ›ciÄ….
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Dragomir_Learn_12_02"); //Jeœli jesteœ w stanie zap³aciæ za naukê. Jak ju¿ mówi³em, w obecnej chwili krucho u mnie z gotówk¹.
-		AI_Output (other,self ,"DIA_Dragomir_Learn_15_03"); //Ile sobie ¿yczysz?
+		AI_Output (self ,other,"DIA_Dragomir_Learn_12_02"); //JeÅ›li jesteÅ› w stanie zapÅ‚aciÄ‡ za naukÄ™. Jak juÅ¼ mÃ³wiÅ‚em, w obecnej chwili krucho u mnie z gotÃ³wkÄ….
+		AI_Output (other,self ,"DIA_Dragomir_Learn_15_03"); //Ile sobie Å¼yczysz?
 		B_Say_Gold (self,other,Dragomir_TeachingCost);
 		
 		Info_ClearChoices (DIA_Dragomir_Learn);
-		Info_AddChoice (DIA_Dragomir_Learn,"Mo¿e póŸniej.",DIA_Dragomir_Learn_Later);
+		Info_AddChoice (DIA_Dragomir_Learn,"MoÅ¼e pÃ³Åºniej.",DIA_Dragomir_Learn_Later);
 		if (Npc_HasItems (other,ItMi_Gold) >= Dragomir_TeachingCost)
 		{ 
-			Info_AddChoice (DIA_Dragomir_Learn,"Oto twoje z³oto.",DIA_Dragomir_Learn_Here);
+			Info_AddChoice (DIA_Dragomir_Learn,"Oto twoje zÅ‚oto.",DIA_Dragomir_Learn_Here);
 		};
 	};	
 };
 
 FUNC VOID DIA_Dragomir_Learn_Later()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Learn_Later_15_00"); //Mo¿e póŸniej.
+	AI_Output (other,self ,"DIA_Dragomir_Learn_Later_15_00"); //MoÅ¼e pÃ³Åºniej.
 	Info_ClearChoices (DIA_Dragomir_Learn);
 };
 
 FUNC VOID DIA_Dragomir_Learn_Here()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Learn_Here_15_00"); //Oto twoje z³oto.
+	AI_Output (other,self ,"DIA_Dragomir_Learn_Here_15_00"); //Oto twoje zÅ‚oto.
 	B_GiveInvItems (other,self,ItMi_Gold,Dragomir_TeachingCost);
-	AI_Output (self ,other,"DIA_Dragomir_Learn_Here_12_01"); //Dobrze, jeœli o mnie chodzi, mo¿emy zaczynaæ natychmiast.
+	AI_Output (self ,other,"DIA_Dragomir_Learn_Here_12_01"); //Dobrze, jeÅ›li o mnie chodzi, moÅ¼emy zaczynaÄ‡ natychmiast.
 	
 	Dragomir_TeachPlayer = TRUE;
 	Info_ClearChoices (DIA_Dragomir_Learn);
@@ -247,7 +247,7 @@ INSTANCE DIA_Dragomir_Teach   (C_INFO)
 	condition   = DIA_Dragomir_Teach_Condition;
 	information = DIA_Dragomir_Teach_Info;
 	permanent   = TRUE;
-	description = "Naucz mnie czegoœ.";
+	description = "Naucz mnie czegoÅ›.";
 };
 FUNC INT DIA_Dragomir_Teach_Condition()
 {
@@ -259,7 +259,7 @@ FUNC INT DIA_Dragomir_Teach_Condition()
 };
 FUNC VOID DIA_Dragomir_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Dragomir_Teach_15_00"); //Naucz mnie czegoœ.
+	AI_Output (other,self ,"DIA_Dragomir_Teach_15_00"); //Naucz mnie czegoÅ›.
 		
 	Info_ClearChoices 	(DIA_Dragomir_Teach);
 	Info_AddChoice 		(DIA_Dragomir_Teach,	DIALOG_BACK		,DIA_Dragomir_Teach_Back);
@@ -273,7 +273,7 @@ func void DIA_Dragomir_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 75)
 	{
-		AI_Output(self,other,"DIA_Dragomir_Teach_12_00"); //Nie potrafiê ciê ju¿ niczego nauczyæ. Czas, abyœ poszuka³ sobie innego nauczyciela.
+		AI_Output(self,other,"DIA_Dragomir_Teach_12_00"); //Nie potrafiÄ™ ciÄ™ juÅ¼ niczego nauczyÄ‡. Czas, abyÅ› poszukaÅ‚ sobie innego nauczyciela.
 		DIA_Dragomir_Teach_permanent = TRUE;
 		
 	};

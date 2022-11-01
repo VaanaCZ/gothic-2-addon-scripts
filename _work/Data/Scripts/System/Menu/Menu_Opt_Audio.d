@@ -43,7 +43,7 @@ const int MENU_SOUND_DY = 550;
 INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "USTAWIENIA DèWI KU";
+	text[0]		= "USTAWIENIA D≈πWIƒòKU";
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TITLE_Y;
@@ -61,8 +61,8 @@ INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "G≥oúnoúÊ efektÛw";
-	text[1]		= "G≥oúnoúÊ efektÛw düwiÍkowych i partii mÛwionych"; // Kommentar
+	text[0]		= "G≈Ço≈õno≈õƒá efekt√≥w";
+	text[1]		= "G≈Ço≈õno≈õƒá efekt√≥w d≈∫wiƒôkowych i partii m√≥wionych"; // Kommentar
 
 	// Position und Dimension
 	posx		= 700;		posy		= MENU_START_SOUND_Y + MENU_SOUND_DY*0;
@@ -97,8 +97,8 @@ INSTANCE MENUITEM_AUDIO_SFXVOL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "G≥oúnoúÊ muzyki";
-	text[1]		= "G≥oúnoúÊ podk≥adu muzycznego"; // Kommentar
+	text[0]		= "G≈Ço≈õno≈õƒá muzyki";
+	text[1]		= "G≈Ço≈õno≈õƒá podk≈Çadu muzycznego"; // Kommentar
 
 	// Position und Dimension
 	posx		= 700;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*1;
@@ -134,7 +134,7 @@ instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Muzyka";
-	text[1]		= "W≥πczenie/wy≥πczenie muzyki w tle"; // Kommentar
+	text[1]		= "W≈ÇƒÖczenie/wy≈ÇƒÖczenie muzyki w tle"; // Kommentar
 
 	// Position und Dimension
 	posx		=	700;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*2;
@@ -176,7 +176,7 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Sterownik düwiÍku";
+	text[0]		= "Sterownik d≈∫wiƒôku";
 	text[1]		= "Wymaga ponownego uruchomienia gry"; // Kommentar
 
 	// Position und Dimension
@@ -209,8 +209,8 @@ instance MENUITEM_AUDIO_PROVIDER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SPEEKER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Ust. g≥oúnikÛw";
-	text[1]		= "Wybierz odpowiedniπ konfiguracjÍ g≥oúnikÛw"; // Kommentar
+	text[0]		= "Ust. g≈Ço≈õnik√≥w";
+	text[1]		= "Wybierz odpowiedniƒÖ konfiguracjƒô g≈Ço≈õnik√≥w"; // Kommentar
 
 	// Position und Dimension
 	posx		=	700;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*4;
@@ -226,7 +226,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
 	// PATCH 1.30 - added 5.1 and 7.1 speaker system flags
-	text[0]		=   "2 g≥oúniki|S≥uchawki|Surround|4 g≥oúniki|G≥oúniki 5.1|G≥oúniki 7.1";
+	text[0]		=   "2 g≈Ço≈õniki|S≈Çuchawki|Surround|4 g≈Ço≈õniki|G≈Ço≈õniki 5.1|G≈Ço≈õniki 7.1";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4700;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -242,8 +242,8 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Pog≥os otoczenia";
-	text[1]		= "Specjalne efekty düwiÍkowe otoczenia"; // Kommentar
+	text[0]		= "Pog≈Ços otoczenia";
+	text[1]		= "Specjalne efekty d≈∫wiƒôkowe otoczenia"; // Kommentar
 
 	// Position und Dimension
 	posx		=	700;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5;
@@ -275,8 +275,8 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB_SPEECH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Pog≥os mowy";
-	text[1]		= "Czy pog≥os ma wp≥ywaÊ na partie mÛwione?";
+	text[0]		= "Pog≈Ços mowy";
+	text[1]		= "Czy pog≈Ços ma wp≈Çywaƒá na partie m√≥wione?";
 
 	// Position und Dimension
 	posx		=	700;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6;
@@ -291,7 +291,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
-	text[0]		=   "Nie|CzÍúciowo|Tak";
+	text[0]		=   "Nie|Czƒô≈õciowo|Tak";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4700;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6 + MENU_CHOICE_YPLUS;
@@ -309,7 +309,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "PrÛbkowanie";
+	text[0]		= "Pr√≥bkowanie";
 	text[1]		= "Wymaga ponownego uruchomienia gry"; // Kommentar
 
 	// Position und Dimension
@@ -342,7 +342,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"WrÛÊ";
+	text[0]		=	"Wr√≥ƒá";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

@@ -40,7 +40,7 @@ FUNC INT DIA_Addon_Tonak_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Tonak_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Tonak_Hi_03_00"); //Czego chcesz? Jestem tu wiêŸniem, choæ nie zrobi³em nic z³ego.
+	AI_Output (self, other, "DIA_Addon_Tonak_Hi_03_00"); //Czego chcesz? Jestem tu wiÄ™Åºniem, choÄ‡ nie zrobiÅ‚em nic zÅ‚ego.
 	AI_StopProcessInfos (self);
 };
 

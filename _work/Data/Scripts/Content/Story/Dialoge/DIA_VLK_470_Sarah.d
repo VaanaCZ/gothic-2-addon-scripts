@@ -103,13 +103,13 @@ func int DIA_Sarah_HALLO_Condition ()
 func void DIA_Sarah_HALLO_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Jak idzie interes?
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Kiedy pojawili siê paladyni, pomyœla³am, ¿e to dobra okazja na zarobek.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Zlecili jednak produkcjê swojej broni Haradowi, wiêc ani Hakon, ani ja nie zarobiliœmy nawet sztuki z³ota.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Co wiêcej, wieœniacy odciêli dostawy po¿ywienia i ceny bardzo posz³y w górê.
-	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Pocieszam siê jeszcze tylko tym, ¿e paladyni p³ac¹ za moje pokoje w gospodzie.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Kiedy pojawili siÄ™ paladyni, pomyÅ›laÅ‚am, Å¼e to dobra okazja na zarobek.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Zlecili jednak produkcjÄ™ swojej broni Haradowi, wiÄ™c ani Hakon, ani ja nie zarobiliÅ›my nawet sztuki zÅ‚ota.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Co wiÄ™cej, wieÅ›niacy odciÄ™li dostawy poÅ¼ywienia i ceny bardzo poszÅ‚y w gÃ³rÄ™.
+	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Pocieszam siÄ™ jeszcze tylko tym, Å¼e paladyni pÅ‚acÄ… za moje pokoje w gospodzie.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Sara sprzedaje broñ na targowisku.");	
+	B_LogEntry (Topic_CityTrader,"Sara sprzedaje broÅ„ na targowisku.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Bauern
@@ -121,7 +121,7 @@ instance DIA_Sarah_Bauern		(C_INFO)
 	condition	 = 	DIA_Sarah_Bauern_Condition;
 	information	 = 	DIA_Sarah_Bauern_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Na czym polega problem z ch³opami?";
+	description	 = 	"Na czym polega problem z chÅ‚opami?";
 };
 
 func int DIA_Sarah_Bauern_Condition ()
@@ -133,13 +133,13 @@ func int DIA_Sarah_Bauern_Condition ()
 };
 func void DIA_Sarah_Bauern_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Na czym polega problem z ch³opami?
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Odmawiaj¹ dostaw towarów.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Teraz, kiedy szlaki morskie zosta³y zamkniête, miasto jest ca³kowicie zale¿ne od dostaw z okolicznych farm.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //A Onar, w³aœciciel ziemski, wynaj¹³ najemników, by chroniæ siê przed oddzia³ami stra¿y. Inaczej stra¿nicy sami zabraliby jedzenie.
-	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Najemnicy jednak nie tylko broni¹ farmy Onara.
-	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Zastraszaj¹ te¿ rolników, którzy prowadz¹ mniejsze gospodarstwa.
-	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Widzia³am ich, kiedy mija³am farmê Akila. Nie chcia³abym byæ teraz na jego miejscu.
+	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Na czym polega problem z chÅ‚opami?
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //OdmawiajÄ… dostaw towarÃ³w.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Teraz, kiedy szlaki morskie zostaÅ‚y zamkniÄ™te, miasto jest caÅ‚kowicie zaleÅ¼ne od dostaw z okolicznych farm.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //A Onar, wÅ‚aÅ›ciciel ziemski, wynajÄ…Å‚ najemnikÃ³w, by chroniÄ‡ siÄ™ przed oddziaÅ‚ami straÅ¼y. Inaczej straÅ¼nicy sami zabraliby jedzenie.
+	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Najemnicy jednak nie tylko broniÄ… farmy Onara.
+	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //ZastraszajÄ… teÅ¼ rolnikÃ³w, ktÃ³rzy prowadzÄ… mniejsze gospodarstwa.
+	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //WidziaÅ‚am ich, kiedy mijaÅ‚am farmÄ™ Akila. Nie chciaÅ‚abym byÄ‡ teraz na jego miejscu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -152,7 +152,7 @@ instance DIA_Sarah_AkilsHof		(C_INFO)
 	condition	 = 	DIA_Sarah_AkilsHof_Condition;
 	information	 = 	DIA_Sarah_AkilsHof_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Gdzie znajduje siê farma Akila?";
+	description	 = 	"Gdzie znajduje siÄ™ farma Akila?";
 };
 
 func int DIA_Sarah_AkilsHof_Condition ()
@@ -164,10 +164,10 @@ func int DIA_Sarah_AkilsHof_Condition ()
 };
 func void DIA_Sarah_AkilsHof_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Gdzie znajduje siê farma Akila?
-	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Jeœli wyjdziesz wschodni¹ bram¹, a potem skrêcisz w prawo, dojdziesz do schodów.
-	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //Prowadz¹ one na farmê Akila.
-	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Jednak nie odwa¿y³abym siê tam teraz iœæ. Z pewnoœci¹ najemnicy jeszcze nie odeszli.
+	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Gdzie znajduje siÄ™ farma Akila?
+	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //JeÅ›li wyjdziesz wschodniÄ… bramÄ…, a potem skrÄ™cisz w prawo, dojdziesz do schodÃ³w.
+	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //ProwadzÄ… one na farmÄ™ Akila.
+	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Jednak nie odwaÅ¼yÅ‚abym siÄ™ tam teraz iÅ›Ä‡. Z pewnoÅ›ciÄ… najemnicy jeszcze nie odeszli.
 };
 
 
@@ -182,7 +182,7 @@ instance DIA_Sarah_Trade		(C_INFO)
 	information	 = 	DIA_Sarah_Trade_Info;
 	Trade		 = 	TRUE;
 	permanent	 =	TRUE;
-	description	 = 	"Poka¿ mi swoje towary.";
+	description	 = 	"PokaÅ¼ mi swoje towary.";
 };
 
 func int DIA_Sarah_Trade_Condition ()
@@ -197,7 +197,7 @@ func int DIA_Sarah_Trade_Condition ()
 func void DIA_Sarah_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Sarah_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other, self, "DIA_Sarah_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 	
 	Sarah_WaffenGesehen = TRUE;
 	
@@ -225,8 +225,8 @@ func int DIA_Sarah_IMKNAST_Condition ()
 };
 func void DIA_Sarah_IMKNAST_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Ty! Jak œmiesz siê tu pokazywaæ! Nie mogê tego udowodniæ, ale jestem pewna, ¿e macza³eœ ³apska w tych brudnych machlojkach.
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //To przez ciebie teraz tu jestem. Przez ciebie, i tego cholernego Canthara - niech dosiêgnie was gniew Innosa!
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Ty! Jak Å›miesz siÄ™ tu pokazywaÄ‡! Nie mogÄ™ tego udowodniÄ‡, ale jestem pewna, Å¼e maczaÅ‚eÅ› Å‚apska w tych brudnych machlojkach.
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //To przez ciebie teraz tu jestem. Przez ciebie, i tego cholernego Canthara - niech dosiÄ™gnie was gniew Innosa!
 	
 	AI_StopProcessInfos (self);
 };
@@ -241,7 +241,7 @@ instance DIA_Sarah_Success		(C_INFO)
 	condition	 = 	DIA_Sarah_Success_Condition;
 	information	 = 	DIA_Sarah_Success_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Canthar próbowa³ ciê wrobiæ...";
+	description	 = 	"Canthar prÃ³bowaÅ‚ ciÄ™ wrobiÄ‡...";
 };
 
 func int DIA_Sarah_Success_Condition ()
@@ -254,9 +254,9 @@ func int DIA_Sarah_Success_Condition ()
 };
 func void DIA_Sarah_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar próbowa³ ciê wrobiæ i przej¹æ twój interes. Wyda³em go jednak stra¿y miejskiej.
-	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //W ten sposób sprowadzi³eœ na siebie gniew potê¿nego cz³owieka. Znam tego drania od dawna, zawsze chcia³ zaj¹æ moje miejsce.
-	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Przyjmij tê broñ jako wyraz mojej wdziêcznoœci.
+	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar prÃ³bowaÅ‚ ciÄ™ wrobiÄ‡ i przejÄ…Ä‡ twÃ³j interes. WydaÅ‚em go jednak straÅ¼y miejskiej.
+	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //W ten sposÃ³b sprowadziÅ‚eÅ› na siebie gniew potÄ™Å¼nego czÅ‚owieka. Znam tego drania od dawna, zawsze chciaÅ‚ zajÄ…Ä‡ moje miejsce.
+	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Przyjmij tÄ™ broÅ„ jako wyraz mojej wdziÄ™cznoÅ›ci.
 	
 	B_GivePlayerXP (XP_CantharImKnast);
 	B_GiveInvItems (self, other, ItMw_Piratensaebel,1);

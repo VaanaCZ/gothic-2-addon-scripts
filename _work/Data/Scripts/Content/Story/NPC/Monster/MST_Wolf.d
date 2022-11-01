@@ -121,7 +121,7 @@ INSTANCE Summoned_Wolf	(Mst_Default_Wolf)
 INSTANCE YWolf	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"M³ody wilk";
+	name							=	"MÅ‚ody wilk";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	10;
 	attribute	[ATR_DEXTERITY]		=	10;
@@ -146,13 +146,13 @@ INSTANCE YWolf	(Mst_Default_Wolf)
 
 
 //************
-//	Missions Wölfe für Pepe: YWolf    	
+//	Missions WÃ¶lfe fÃ¼r Pepe: YWolf    	
 //************
 
 
 INSTANCE PEPES_YWolf1	(Mst_Default_Wolf)
 {
-	name							=	"M³ody wilk";
+	name							=	"MÅ‚ody wilk";
 	level							=	3;
 	
 	//----- Attribute ----
@@ -177,7 +177,7 @@ INSTANCE PEPES_YWolf1	(Mst_Default_Wolf)
 INSTANCE PEPES_YWolf2	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"M³ody wilk";
+	name							=	"MÅ‚ody wilk";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	15;
@@ -200,7 +200,7 @@ INSTANCE PEPES_YWolf2	(Mst_Default_Wolf)
 INSTANCE PEPES_YWolf3	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"M³ody wilk";
+	name							=	"MÅ‚ody wilk";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	15;
@@ -223,7 +223,7 @@ INSTANCE PEPES_YWolf3	(Mst_Default_Wolf)
 INSTANCE PEPES_YWolf4	(Mst_Default_Wolf)
 {
 	level							=	3;
-	name							=	"M³ody wilk";
+	name							=	"MÅ‚ody wilk";
 	//----- Attribute ----
 	attribute	[ATR_STRENGTH]		=	15;
 	attribute	[ATR_DEXTERITY]		=	15;

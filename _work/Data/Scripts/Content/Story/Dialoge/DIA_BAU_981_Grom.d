@@ -31,7 +31,7 @@ instance DIA_Grom_HALLO		(C_INFO)
 	condition	 = 	DIA_Grom_HALLO_Condition;
 	information	 = 	DIA_Grom_HALLO_Info;
 
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Grom_HALLO_Condition ()
@@ -41,25 +41,25 @@ func int DIA_Grom_HALLO_Condition ()
 
 func void DIA_Grom_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Wszystko w porz¹dku?
-	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ach, witaj nieznajomy wêdrowcze. Jestem trochê zajêty, wiêc lepiej mów szybko, czego chcesz.
+	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Wszystko w porzÄ…dku?
+	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ach, witaj nieznajomy wÄ™drowcze. Jestem trochÄ™ zajÄ™ty, wiÄ™c lepiej mÃ³w szybko, czego chcesz.
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
-	Info_AddChoice	(DIA_Grom_HALLO, "Czy s¹ tutaj jakieœ interesuj¹ce rzeczy?", DIA_Grom_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Grom_HALLO, "Czy sÄ… tutaj jakieÅ› interesujÄ…ce rzeczy?", DIA_Grom_HALLO_waszusehen );
 	Info_AddChoice	(DIA_Grom_HALLO, "Co tu porabiasz?", DIA_Grom_HALLO_was );
 };
 
 func void DIA_Grom_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Jest tu coœ interesuj¹cego?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Interesuj¹cego, powiadasz... Tak, interesuj¹cy to dobre s³owo. Jeœli wejdziesz nieco g³êbiej w te lasy, mo¿esz mieæ bardzo niemi³e spotkanie.
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Mieszkaj¹ tam kud³ate bestie potê¿nej postury i wzrostu. Wiêc jeœli nie czujesz siê na si³ach, ¿eby je pokonaæ, lepiej tam nie idŸ.
+	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Jest tu coÅ› interesujÄ…cego?
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //InteresujÄ…cego, powiadasz... Tak, interesujÄ…cy to dobre sÅ‚owo. JeÅ›li wejdziesz nieco gÅ‚Ä™biej w te lasy, moÅ¼esz mieÄ‡ bardzo niemiÅ‚e spotkanie.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //MieszkajÄ… tam kudÅ‚ate bestie potÄ™Å¼nej postury i wzrostu. WiÄ™c jeÅ›li nie czujesz siÄ™ na siÅ‚ach, Å¼eby je pokonaÄ‡, lepiej tam nie idÅº.
 };
 
 func void DIA_Grom_HALLO_was ()
 {
 	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Co tutaj robisz?
-	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Wszystko to, czym zwykle zajmuj¹ siê myœliwi i drwale.
+	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Wszystko to, czym zwykle zajmujÄ… siÄ™ myÅ›liwi i drwale.
 	Info_AddChoice	(DIA_Grom_HALLO, DIALOG_BACK, DIA_Grom_HALLO_BACK );
 };
 
@@ -79,7 +79,7 @@ INSTANCE DIA_Grom_AskTeacher (C_INFO)
 	condition	= DIA_Grom_AskTeacher_Condition;
 	information	= DIA_Grom_AskTeacher_Info;
 
-	description = "Mo¿esz nauczyæ mnie czegoœ o polowaniu?";
+	description = "MoÅ¼esz nauczyÄ‡ mnie czegoÅ› o polowaniu?";
 };                       
 
 FUNC INT DIA_Grom_AskTeacher_Condition()
@@ -92,12 +92,12 @@ FUNC INT DIA_Grom_AskTeacher_Condition()
 
 FUNC VOID DIA_Grom_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Mo¿esz mnie nauczyæ czegoœ o polowaniu?
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Jasne. Ale najpierw przynieœ mi coœ normalnego do jedzenia. Umieram tu z g³odu.
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Podzielê siê z tob¹ swoj¹ wiedz¹, jeœli dostanê butelkê mleka, bochenek chleba i kawa³ek t³ustej szynki.
+	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //MoÅ¼esz mnie nauczyÄ‡ czegoÅ› o polowaniu?
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Jasne. Ale najpierw przynieÅ› mi coÅ› normalnego do jedzenia. Umieram tu z gÅ‚odu.
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //PodzielÄ™ siÄ™ z tobÄ… swojÄ… wiedzÄ…, jeÅ›li dostanÄ™ butelkÄ™ mleka, bochenek chleba i kawaÅ‚ek tÅ‚ustej szynki.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
-	B_LogEntry (TOPIC_GromAskTeacher,"Myœliwy Grom nauczy mnie wszystkiego, co wie, jeœli przyniosê mu butelkê mleka, bochenek chleba i kawa³ szynki."); 
+	B_LogEntry (TOPIC_GromAskTeacher,"MyÅ›liwy Grom nauczy mnie wszystkiego, co wie, jeÅ›li przyniosÄ™ mu butelkÄ™ mleka, bochenek chleba i kawaÅ‚ szynki."); 
 };
 
 
@@ -146,7 +146,7 @@ instance DIA_Grom_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grom_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grom_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Naucz mnie, jak powinno siê polowaæ.";
+	description	 = 	"Naucz mnie, jak powinno siÄ™ polowaÄ‡.";
 };
 
 func int DIA_Grom_TEACHHUNTING_Condition ()
@@ -159,7 +159,7 @@ func int DIA_Grom_TEACHHUNTING_Condition ()
 
 func void DIA_Grom_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //Naucz mnie, jak powinno siê polowaæ.
+	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //Naucz mnie, jak powinno siÄ™ polowaÄ‡.
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -168,35 +168,35 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			)
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Czego chcia³byœ siê nauczyæ?
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_01"); //Czego chciaÅ‚byÅ› siÄ™ nauczyÄ‡?
 		
 
 			Info_AddChoice		(DIA_Grom_TEACHHUNTING, DIALOG_BACK, DIA_Grom_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Obedrzyj ze skóry",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Grom_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Obedrzyj ze skÃ³ry",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Grom_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Usuñ k³y",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ kÅ‚y",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Grom_TEACHHUNTING_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Usuñ serce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ serce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Usuñ ¿uwaczkê",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ Å¼uwaczkÄ™",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grom_TEACHHUNTING_Mandibles	);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Róg cieniostwora",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("RÃ³g cieniostwora",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Nie mogê ciê nauczyæ niczego, czego byœ ju¿ nie wiedzia³.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Nie mogÄ™ ciÄ™ nauczyÄ‡ niczego, czego byÅ› juÅ¼ nie wiedziaÅ‚.
 		};
 };
 
@@ -210,7 +210,7 @@ func void DIA_Grom_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Natnij nogi na tyle g³êboko, ¿ebyœ móg³ bez problemu zdj¹æ ze zwierzêcia skórê. Zaczynaj zawsze od przodu.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Natnij nogi na tyle gÅ‚Ä™boko, Å¼ebyÅ› mÃ³gÅ‚ bez problemu zdjÄ…Ä‡ ze zwierzÄ™cia skÃ³rÄ™. Zaczynaj zawsze od przodu.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -220,7 +220,7 @@ func void DIA_Grom_TEACHHUNTING_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Usuwaj¹c zêby, musisz bardzo uwa¿aæ, ¿eby siê nie po³ama³y.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //UsuwajÄ…c zÄ™by, musisz bardzo uwaÅ¼aÄ‡, Å¼eby siÄ™ nie poÅ‚amaÅ‚y.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Serce zwierzêcia mo¿esz usun¹æ, wycinaj¹c je no¿em z klatki piersiowej. Op³aca siê to robiæ w przypadku niektórych niezwyk³ych lub magicznych zwierz¹t.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Serce zwierzÄ™cia moÅ¼esz usunÄ…Ä‡, wycinajÄ…c je noÅ¼em z klatki piersiowej. OpÅ‚aca siÄ™ to robiÄ‡ w przypadku niektÃ³rych niezwykÅ‚ych lub magicznych zwierzÄ…t.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //¯uwaczki pe³zacza lub polnej bestii mo¿esz usun¹æ, u¿ywaj¹c do tego celu jakiejœ wytrzyma³ej, metalowej dŸwigni. S¹ bardzo mocno przytwierdzone do czaszki.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Å»uwaczki peÅ‚zacza lub polnej bestii moÅ¼esz usunÄ…Ä‡, uÅ¼ywajÄ…c do tego celu jakiejÅ› wytrzymaÅ‚ej, metalowej dÅºwigni. SÄ… bardzo mocno przytwierdzone do czaszki.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -250,7 +250,7 @@ func void DIA_Grom_TEACHHUNTING_ShadowHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Aby wyrwaæ róg cieniostwora, musisz zaprzeæ siê o czaszkê i ci¹gn¹æ z ca³ej si³y, pomagaj¹c sobie przy tym ostrym no¿em.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Aby wyrwaÄ‡ rÃ³g cieniostwora, musisz zaprzeÄ‡ siÄ™ o czaszkÄ™ i ciÄ…gnÄ…Ä‡ z caÅ‚ej siÅ‚y, pomagajÄ…c sobie przy tym ostrym noÅ¼em.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

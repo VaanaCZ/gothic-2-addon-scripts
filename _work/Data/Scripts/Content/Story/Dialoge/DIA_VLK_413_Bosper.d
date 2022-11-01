@@ -41,11 +41,11 @@ func int DIA_Bosper_HALLO_Condition ()
 func void DIA_Bosper_HALLO_Info ()
 {
 	AI_Output (self, other, "DIA_Bosper_HALLO_11_00"); //Witaj w moim sklepie, nieznajomy!
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_01"); //Jestem Bosper. Wyrabiam ³uki i handlujê futrami.
-	AI_Output (self, other, "DIA_Bosper_HALLO_11_02"); //Co ciê sprowadza do Khorinis?
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_01"); //Jestem Bosper. Wyrabiam Å‚uki i handlujÄ™ futrami.
+	AI_Output (self, other, "DIA_Bosper_HALLO_11_02"); //Co ciÄ™ sprowadza do Khorinis?
 	
 	Log_CreateTopic	(TOPIC_CityTrader,LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader,"Bosper produkuje ³uki i handluje skórami. Jego sklep mieœci siê przy wschodniej bramie, w dolnej czêœci miasta.");
+	B_LogEntry (TOPIC_CityTrader,"Bosper produkuje Å‚uki i handluje skÃ³rami. Jego sklep mieÅ›ci siÄ™ przy wschodniej bramie, w dolnej czÄ™Å›ci miasta.");
 };
 
 // ***********************************************************
@@ -58,7 +58,7 @@ instance DIA_Bosper_IntoOV		(C_INFO)
 	condition	= DIA_Bosper_IntoOV_Condition;
 	information = DIA_Bosper_IntoOV_Info;
 	permanent   = FALSE;
-	description = "Muszê siê dostaæ go górnego miasta...";
+	description = "MuszÄ™ siÄ™ dostaÄ‡ go gÃ³rnego miasta...";
 };
 func int DIA_Bosper_IntoOV_Condition ()
 {	
@@ -70,18 +70,18 @@ func int DIA_Bosper_IntoOV_Condition ()
 };
 func void DIA_Bosper_IntoOV_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_IntoOV_15_00"); //Muszê siê dostaæ go górnego miasta...
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_01"); //Tam, gdzie s¹ paladyni? Zapomnij o tym.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_02"); //Musia³byœ byæ szanowanym obywatelem albo przynajmniej mieæ porz¹dn¹ pracê.
-	AI_Output (self, other, "DIA_Bosper_IntoOV_11_03"); //Obcy nie ma szans siê tam dostaæ.
+	AI_Output (other, self, "DIA_Bosper_IntoOV_15_00"); //MuszÄ™ siÄ™ dostaÄ‡ go gÃ³rnego miasta...
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_01"); //Tam, gdzie sÄ… paladyni? Zapomnij o tym.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_02"); //MusiaÅ‚byÅ› byÄ‡ szanowanym obywatelem albo przynajmniej mieÄ‡ porzÄ…dnÄ… pracÄ™.
+	AI_Output (self, other, "DIA_Bosper_IntoOV_11_03"); //Obcy nie ma szans siÄ™ tam dostaÄ‡.
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Bosper_IntoOV_15_04"); //Zauwa¿y³em..
+		AI_Output (other, self, "DIA_Bosper_IntoOV_15_04"); //ZauwaÅ¼yÅ‚em..
 	};
 
 	Log_CreateTopic (TOPIC_OV,LOG_MISSION);
 	Log_SetTopicStatus	(TOPIC_OV,LOG_RUNNING);
-	B_LogEntry (TOPIC_OV,"Aby uzyskaæ dostêp do górnego miasta, muszê zostaæ szanowanym obywatelem albo znaleŸæ sobie jak¹œ pracê.");
+	B_LogEntry (TOPIC_OV,"Aby uzyskaÄ‡ dostÄ™p do gÃ³rnego miasta, muszÄ™ zostaÄ‡ szanowanym obywatelem albo znaleÅºÄ‡ sobie jakÄ…Å› pracÄ™.");
 };
 
 // ***********************************************************
@@ -103,22 +103,22 @@ func int DIA_Bosper_SeekWork_Condition ()
 func void DIA_Bosper_SeekWork_Info ()
 {
 	AI_Output (other, self, "DIA_Bosper_SeekWork_15_00"); //Szukam pracy.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_01"); //Hmmm - przyda³by mi siê nowy czeladnik.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_02"); //Poprzedni zrezygnowa³ dwa dni temu.
-	AI_Output (self, other, "DIA_Bosper_SeekWork_11_03"); //A wiêc, znasz siê trochê na polowaniu?
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_01"); //Hmmm - przydaÅ‚by mi siÄ™ nowy czeladnik.
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_02"); //Poprzedni zrezygnowaÅ‚ dwa dni temu.
+	AI_Output (self, other, "DIA_Bosper_SeekWork_11_03"); //A wiÄ™c, znasz siÄ™ trochÄ™ na polowaniu?
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (other, self, "DIA_Bosper_SeekWork_15_04"); //Hmm... Có¿...
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_05"); //Mogê ciê nauczyæ, jak siê obdziera ze skóry zwierzêta.
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_06"); //Dobrze ci zap³acê za ka¿d¹ skórê, jak¹ mi przyniesiesz.
+		AI_Output (other, self, "DIA_Bosper_SeekWork_15_04"); //Hmm... CÃ³Å¼...
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_05"); //MogÄ™ ciÄ™ nauczyÄ‡, jak siÄ™ obdziera ze skÃ³ry zwierzÄ™ta.
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_06"); //Dobrze ci zapÅ‚acÄ™ za kaÅ¼dÄ… skÃ³rÄ™, jakÄ… mi przyniesiesz.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Bosper_SeekWork_15_07"); //Jeœli o to chodzi, to mogê ci dostarczyæ trochê skór.
-		AI_Output (self, other, "DIA_Bosper_SeekWork_11_08"); //Wspaniale! Przynieœ mi tyle skór, ile zdo³asz. Zap³acê ci za nie dobr¹ cenê.
+		AI_Output (other, self, "DIA_Bosper_SeekWork_15_07"); //JeÅ›li o to chodzi, to mogÄ™ ci dostarczyÄ‡ trochÄ™ skÃ³r.
+		AI_Output (self, other, "DIA_Bosper_SeekWork_11_08"); //Wspaniale! PrzynieÅ› mi tyle skÃ³r, ile zdoÅ‚asz. ZapÅ‚acÄ™ ci za nie dobrÄ… cenÄ™.
 	};
 	
-  B_LogEntry (TOPIC_Lehrling,"Bosper potrzebuje nowego czeladnika. Móg³bym siê u niego zatrudniæ.");	
+  B_LogEntry (TOPIC_Lehrling,"Bosper potrzebuje nowego czeladnika. MÃ³gÅ‚bym siÄ™ u niego zatrudniÄ‡.");	
  
 };
 
@@ -137,7 +137,7 @@ instance DIA_Bosper_LEHRLING		(C_INFO)
 	condition	= DIA_Bosper_LEHRLING_Condition;
 	information = DIA_Bosper_LEHRLING_Info;
 	permanent   = TRUE;
-	description = "Chcê zostaæ twoim czeladnikiem.";
+	description = "ChcÄ™ zostaÄ‡ twoim czeladnikiem.";
 };
 func int DIA_Bosper_LEHRLING_Condition ()
 {	
@@ -152,12 +152,12 @@ func void DIA_Bosper_LEHRLING_Info ()
 	var int stimmen;
 	stimmen = 0;
 	
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_15_00"); //Chcê zostaæ twoim czeladnikiem.
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_15_00"); //ChcÄ™ zostaÄ‡ twoim czeladnikiem.
 
 	if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
 		// ------ Bosper ------
-		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_01"); //Hej... Wspaniale! Wygl¹da na to, ¿e ju¿ znasz podstawy.
+		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_01"); //Hej... Wspaniale! WyglÄ…da na to, Å¼e juÅ¼ znasz podstawy.
 		stimmen = stimmen + 1;
 		
 		// ------ Harad ------
@@ -166,17 +166,17 @@ func void DIA_Bosper_LEHRLING_Info ()
 			if (MIS_Harad_Orc == LOG_SUCCESS)
 			|| (MIS_HakonBandits == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_02"); //Harad uwa¿a, ¿e jesteœ dobrym cz³owiekiem.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_02"); //Harad uwaÅ¼a, Å¼e jesteÅ› dobrym czÅ‚owiekiem.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_03"); //Ale Harad w¹tpi w twoje umiejêtnoœci.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_03"); //Ale Harad wÄ…tpi w twoje umiejÄ™tnoÅ›ci.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_04"); //Ale Harad mówi, ¿e nigdy ciê nie widzia³.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_04"); //Ale Harad mÃ³wi, Å¼e nigdy ciÄ™ nie widziaÅ‚.
 		};
 		
 		// ------ Thorben ------
@@ -184,17 +184,17 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_05"); //Thorben da³ ci swoje b³ogos³awieñstwo. Nie jestem zbyt pobo¿ny, ale mnie to nie przeszkadza.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_05"); //Thorben daÅ‚ ci swoje bÅ‚ogosÅ‚awieÅ„stwo. Nie jestem zbyt poboÅ¼ny, ale mnie to nie przeszkadza.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_06"); //Thorben poprze ciê tylko wtedy, kiedy zdobêdziesz b³ogos³awieñstwo bogów.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_06"); //Thorben poprze ciÄ™ tylko wtedy, kiedy zdobÄ™dziesz bÅ‚ogosÅ‚awieÅ„stwo bogÃ³w.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_07"); //Thorben nie wie, kim jesteœ.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_07"); //Thorben nie wie, kim jesteÅ›.
 		};
 		
 		// ------ Constantino ------
@@ -202,18 +202,18 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_08"); //Constantino powiedzia³, ¿e jeœli o niego chodzi, to mo¿esz siê zapisaæ, gdzie chcesz.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_08"); //Constantino powiedziaÅ‚, Å¼e jeÅ›li o niego chodzi, to moÅ¼esz siÄ™ zapisaÄ‡, gdzie chcesz.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_09"); //Constantino powiedzia³, ¿e zosta³eœ tu w mieœcie oskar¿ony o pope³nienie przestêpstwa. Mam nadziejê, ¿e to jakiœ drobiazg?
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_10"); //Dopilnuj, ¿eby ta sprawa siê wyjaœni³a.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_09"); //Constantino powiedziaÅ‚, Å¼e zostaÅ‚eÅ› tu w mieÅ›cie oskarÅ¼ony o popeÅ‚nienie przestÄ™pstwa. Mam nadziejÄ™, Å¼e to jakiÅ› drobiazg?
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_10"); //Dopilnuj, Å¼eby ta sprawa siÄ™ wyjaÅ›niÅ‚a.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_11"); //Constantino nigdy o tobie nie s³ysza³.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_11"); //Constantino nigdy o tobie nie sÅ‚yszaÅ‚.
 		};
 				
 		// ------ Matteo ------
@@ -221,21 +221,21 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_12"); //A Matteo mówi, ¿e jesteœ wart swojej wagi w z³ocie.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_12"); //A Matteo mÃ³wi, Å¼e jesteÅ› wart swojej wagi w zÅ‚ocie.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_13"); //A Matteo wspomina³ coœ o d³ugach - lepiej z nim porozmawiaj.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_13"); //A Matteo wspominaÅ‚ coÅ› o dÅ‚ugach - lepiej z nim porozmawiaj.
 			}
 			else	
 			{	
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_14"); //Matteo mówi, ¿e jeszcze z tob¹ o tym nie rozmawia³.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_14"); //Matteo mÃ³wi, Å¼e jeszcze z tobÄ… o tym nie rozmawiaÅ‚.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_15"); //Matteo mówi, ¿e nigdy ciê nie widzia³.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_15"); //Matteo mÃ³wi, Å¼e nigdy ciÄ™ nie widziaÅ‚.
 		};		
 
 		// ------ AUSWERTUNG ------
@@ -243,32 +243,32 @@ func void DIA_Bosper_LEHRLING_Info ()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_16"); //A to oznacza, ¿e masz poparcie wszystkich mistrzów!
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_16"); //A to oznacza, Å¼e masz poparcie wszystkich mistrzÃ³w!
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_17"); //Popiera ciê teraz czterech mistrzów. To wystarczy, ¿eby ciê przyj¹æ na czeladnika.
+				AI_Output (self, other,"DIA_Bosper_LEHRLING_11_17"); //Popiera ciÄ™ teraz czterech mistrzÃ³w. To wystarczy, Å¼eby ciÄ™ przyjÄ…Ä‡ na czeladnika.
 			};
 			
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_18"); //Mo¿esz dla mnie pracowaæ, kiedy tylko chcesz.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_18"); //MoÅ¼esz dla mnie pracowaÄ‡, kiedy tylko chcesz.
 			
 			Info_ClearChoices (DIA_Bosper_LEHRLING);
-			Info_AddChoice (DIA_Bosper_LEHRLING, "Dobrze. Pomyœlê o tym.", DIA_Bosper_LEHRLING_Later);
-			Info_AddChoice (DIA_Bosper_LEHRLING, "Wchodzê w to!", DIA_Bosper_LEHRLING_OK);
+			Info_AddChoice (DIA_Bosper_LEHRLING, "Dobrze. PomyÅ›lÄ™ o tym.", DIA_Bosper_LEHRLING_Later);
+			Info_AddChoice (DIA_Bosper_LEHRLING, "WchodzÄ™ w to!", DIA_Bosper_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_19"); //Musisz mieæ poparcie co najmniej czterech mistrzów, ¿eby zostaæ czeladnikiem w tym mieœcie.
-			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_20"); //To znaczy, ¿e powinieneœ porozmawiaæ z tymi, którzy na razie niezbyt ciê popieraj¹.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_19"); //Musisz mieÄ‡ poparcie co najmniej czterech mistrzÃ³w, Å¼eby zostaÄ‡ czeladnikiem w tym mieÅ›cie.
+			AI_Output (self, other,"DIA_Bosper_LEHRLING_11_20"); //To znaczy, Å¼e powinieneÅ› porozmawiaÄ‡ z tymi, ktÃ³rzy na razie niezbyt ciÄ™ popierajÄ….
 		};
 	}
 	else //keine WolfFurs
 	{
-		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_21"); //Zanim ciê przyjmê, muszê oczywiœcie wiedzieæ, czy w ogóle siê nadajesz.
+		AI_Output (self, other, "DIA_Bosper_LEHRLING_11_21"); //Zanim ciÄ™ przyjmÄ™, muszÄ™ oczywiÅ›cie wiedzieÄ‡, czy w ogÃ³le siÄ™ nadajesz.
 		
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_LEHRLING_11_22"); //Zwróci³eœ mi mój ³uk, ale to nie œwiadczy o twoich talentach myœliwskich.
+			AI_Output (self, other, "DIA_Bosper_LEHRLING_11_22"); //ZwrÃ³ciÅ‚eÅ› mi mÃ³j Å‚uk, ale to nie Å›wiadczy o twoich talentach myÅ›liwskich.
 		};
 		Bosper_HintToJob = TRUE;
 	};	
@@ -276,8 +276,8 @@ func void DIA_Bosper_LEHRLING_Info ()
 
 func void DIA_Bosper_LEHRLING_OK()
 {
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //Wchodzê w to!
-	AI_Output (self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //Nie po¿a³ujesz! Myœlê, ¿e dobrze nam siê bêdzie razem pracowa³o.
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_OK_15_00"); //WchodzÄ™ w to!
+	AI_Output (self, other, "DIA_Bosper_LEHRLING_OK_11_01"); //Nie poÅ¼aÅ‚ujesz! MyÅ›lÄ™, Å¼e dobrze nam siÄ™ bÄ™dzie razem pracowaÅ‚o.
 	
 	Player_IsApprentice = APP_BOSPER;
 	Npc_ExchangeRoutine (Lothar, "START");
@@ -288,15 +288,15 @@ func void DIA_Bosper_LEHRLING_OK()
 	Wld_AssignRoomToGuild ("gritta", GIL_NONE);	// = Bospers Ladem
 	MIS_Apprentice = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_Bonus,"Bosper przyj¹³ mnie na swojego czeladnika. Droga do górnego miasta stoi przede mn¹ otworem.");
+	B_LogEntry (Topic_Bonus,"Bosper przyjÄ…Å‚ mnie na swojego czeladnika. Droga do gÃ³rnego miasta stoi przede mnÄ… otworem.");
 	
 	Info_ClearChoices (DIA_Bosper_LEHRLING);
 };
 
 func void DIA_Bosper_LEHRLING_Later()
 {
-	AI_Output (other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //Dobrze. Pomyœlê o tym.
-	AI_Output (self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Podejmij dobr¹ decyzjê! By³byœ dla mnie œwietnym kandydatem.
+	AI_Output (other, self, "DIA_Bosper_LEHRLING_Later_15_00"); //Dobrze. PomyÅ›lÄ™ o tym.
+	AI_Output (self, other, "DIA_Bosper_LEHRLING_Later_11_01"); //Podejmij dobrÄ… decyzjÄ™! ByÅ‚byÅ› dla mnie Å›wietnym kandydatem.
 	
 	Info_ClearChoices (DIA_Bosper_LEHRLING);
 };
@@ -312,7 +312,7 @@ instance DIA_Bosper_OtherMasters (C_INFO)
 	condition	= DIA_Bosper_OtherMasters_Condition;
 	information = DIA_Bosper_OtherMasters_Info;
 	permanent   = FALSE;
-	description = "A co, jeœli chcê pracowaæ dla innego mistrza?";
+	description = "A co, jeÅ›li chcÄ™ pracowaÄ‡ dla innego mistrza?";
 };
 func int DIA_Bosper_OtherMasters_Condition ()
 {	
@@ -324,13 +324,13 @@ func int DIA_Bosper_OtherMasters_Condition ()
 };
 func void DIA_Bosper_OtherMasters_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_OtherMasters_15_00"); //A co, jeœli chcê pracowaæ dla innego mistrza?
+	AI_Output (other, self, "DIA_Bosper_OtherMasters_15_00"); //A co, jeÅ›li chcÄ™ pracowaÄ‡ dla innego mistrza?
 	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_01"); //Bzdura!
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_02"); //Harad i Matteo maj¹ czeladników.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_03"); //Alchemik Constantino to samotnik - od lat nie mia³ ucznia.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_04"); //A co do Thorbena... Wszyscy wiedz¹, ¿e jest kompletnie sp³ukany. Pewnie nie mia³by ci nawet czym zap³aciæ.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_05"); //Z kolei ja pilnie potrzebujê czeladnika. No i dobrze p³acê.
-	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_06"); //Ale niezale¿nie, gdzie siê chcesz zatrudniæ i tak potrzebna ci bêdzie zgoda wszystkich mistrzów z dolnej czêœci miasta...
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_02"); //Harad i Matteo majÄ… czeladnikÃ³w.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_03"); //Alchemik Constantino to samotnik - od lat nie miaÅ‚ ucznia.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_04"); //A co do Thorbena... Wszyscy wiedzÄ…, Å¼e jest kompletnie spÅ‚ukany. Pewnie nie miaÅ‚by ci nawet czym zapÅ‚aciÄ‡.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_05"); //Z kolei ja pilnie potrzebujÄ™ czeladnika. No i dobrze pÅ‚acÄ™.
+	AI_Output (self, other, "DIA_Bosper_OtherMasters_11_06"); //Ale niezaleÅ¼nie, gdzie siÄ™ chcesz zatrudniÄ‡ i tak potrzebna ci bÄ™dzie zgoda wszystkich mistrzÃ³w z dolnej czÄ™Å›ci miasta...
 	
 	
 	
@@ -346,7 +346,7 @@ instance DIA_Bosper_Bartok (C_INFO)
 	condition	= DIA_Bosper_Bartok_Condition;
 	information = DIA_Bosper_Bartok_Info;
 	permanent   = FALSE;
-	description = "Dlaczego twój czeladnik zrezygnowa³?";
+	description = "Dlaczego twÃ³j czeladnik zrezygnowaÅ‚?";
 };
 func int DIA_Bosper_Bartok_Condition ()
 {	
@@ -357,11 +357,11 @@ func int DIA_Bosper_Bartok_Condition ()
 };
 func void DIA_Bosper_Bartok_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Bartok_15_00"); //Dlaczego twój czeladnik zrezygnowa³?
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_01"); //Powiedzia³ tylko, ¿e w okolicy zrobi³o siê zbyt niebezpiecznie.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_02"); //Jeœli to ciê naprawdê ciekawi, mo¿esz go zapytaæ.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_03"); //Nazywa siê Bartok. Pewnie krêci siê gdzieœ ko³o ober¿y Coragona.
-	AI_Output (self, other, "DIA_Bosper_Bartok_11_04"); //PrzejdŸ ko³o kuŸni, a dalej prosto.
+	AI_Output (other, self, "DIA_Bosper_Bartok_15_00"); //Dlaczego twÃ³j czeladnik zrezygnowaÅ‚?
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_01"); //PowiedziaÅ‚ tylko, Å¼e w okolicy zrobiÅ‚o siÄ™ zbyt niebezpiecznie.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_02"); //JeÅ›li to ciÄ™ naprawdÄ™ ciekawi, moÅ¼esz go zapytaÄ‡.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_03"); //Nazywa siÄ™ Bartok. Pewnie krÄ™ci siÄ™ gdzieÅ› koÅ‚o oberÅ¼y Coragona.
+	AI_Output (self, other, "DIA_Bosper_Bartok_11_04"); //PrzejdÅº koÅ‚o kuÅºni, a dalej prosto.
 };
 
 // ***********************************************************
@@ -375,7 +375,7 @@ instance DIA_Bosper_ZUSTIMMUNG (C_INFO)
 	condition	= DIA_Bosper_ZUSTIMMUNG_Condition;
 	information = DIA_Bosper_ZUSTIMMUNG_Info;
 	permanent   = TRUE;
-	description = "Czy zgodzisz siê, ¿ebym zawar³ umowê z innym mistrzem?";
+	description = "Czy zgodzisz siÄ™, Å¼ebym zawarÅ‚ umowÄ™ z innym mistrzem?";
 };
 func int DIA_Bosper_ZUSTIMMUNG_Condition ()
 {	
@@ -390,36 +390,36 @@ var int Bosper_Zustimmung_Once;
 
 func void DIA_Bosper_ZUSTIMMUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //Czy zgodzisz siê, ¿ebym zawar³ umowê z innym mistrzem?
+	AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_00"); //Czy zgodzisz siÄ™, Å¼ebym zawarÅ‚ umowÄ™ z innym mistrzem?
 	if (MIS_Bosper_Bogen == LOG_SUCCESS)
 	|| (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //Mia³em nadziejê, ¿e bêdziesz pracowa³ dla mnie.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_01"); //MiaÅ‚em nadziejÄ™, Å¼e bÄ™dziesz pracowaÅ‚ dla mnie.
 		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_02"); //Ale skoro tego chcesz...
-		AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Czy to znaczy, ¿e mnie poprzesz?
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //Jeœli pozostali mistrzowie nie zaprotestuj¹ - tak.
+		AI_Output (other, self, "DIA_Bosper_ZUSTIMMUNG_15_03"); //Czy to znaczy, Å¼e mnie poprzesz?
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_04"); //JeÅ›li pozostali mistrzowie nie zaprotestujÄ… - tak.
 		if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //W koñcu zwróci³eœ mi mój ³uk.
+			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_05"); //W koÅ„cu zwrÃ³ciÅ‚eÅ› mi mÃ³j Å‚uk.
 		};
 		if (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //Ale na pewno by³byœ dobrym myœliwym.
+			AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_06"); //Ale na pewno byÅ‚byÅ› dobrym myÅ›liwym.
 		};
 		if Bosper_Zustimmung_Once == FALSE
 		{
 			B_GivePlayerXP (XP_Zustimmung);
 			Bosper_Zustimmung_Once = TRUE;
 		};	
-		B_LogEntry (Topic_Lehrling,"Jeœli zechcê zostaæ czeladnikiem, Bosper udzieli mi swojego poparcia.");
+		B_LogEntry (Topic_Lehrling,"JeÅ›li zechcÄ™ zostaÄ‡ czeladnikiem, Bosper udzieli mi swojego poparcia.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //W porz¹dku! Dostaniesz moj¹ zgodê - ale pod jednym warunkiem.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Pracuj dla mnie, przynajmniej przez jakiœ czas.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //Wtedy sam ocenisz, czy odpowiada ci moje rzemios³o.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //A kto wie - mo¿e to polubisz i zostaniesz ze mn¹.
-		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //Jeœli jesteœ doœæ dobry, by pracowaæ dla mnie, to u innych te¿ sobie poradzisz.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_07"); //W porzÄ…dku! Dostaniesz mojÄ… zgodÄ™ - ale pod jednym warunkiem.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_08"); //Pracuj dla mnie, przynajmniej przez jakiÅ› czas.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_09"); //Wtedy sam ocenisz, czy odpowiada ci moje rzemiosÅ‚o.
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_10"); //A kto wie - moÅ¼e to polubisz i zostaniesz ze mnÄ….
+		AI_Output (self, other, "DIA_Bosper_ZUSTIMMUNG_11_11"); //JeÅ›li jesteÅ› doÅ›Ä‡ dobry, by pracowaÄ‡ dla mnie, to u innych teÅ¼ sobie poradzisz.
 		Bosper_HintToJob = TRUE;
 	};	
 };
@@ -434,7 +434,7 @@ instance DIA_Bosper_Job (C_INFO)
 	condition	= DIA_Bosper_Job_Condition;
 	information = DIA_Bosper_Job_Info;
 	permanent   = FALSE;
-	description = "Co mam dla ciebie zrobiæ?";
+	description = "Co mam dla ciebie zrobiÄ‡?";
 };
 func int DIA_Bosper_Job_Condition ()
 {	
@@ -445,36 +445,36 @@ func int DIA_Bosper_Job_Condition ()
 };
 func void DIA_Bosper_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Job_15_00"); //Co mam dla ciebie zrobiæ?
+	AI_Output (other, self, "DIA_Bosper_Job_15_00"); //Co mam dla ciebie zrobiÄ‡?
 
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_01"); //Nauczê ciê, jak obdzieraæ ze skóry zwierzynê, a ty mi przyniesiesz, no powiedzmy, pó³ tuzina wilczych futer.
+		AI_Output (self, other, "DIA_Bosper_Job_11_01"); //NauczÄ™ ciÄ™, jak obdzieraÄ‡ ze skÃ³ry zwierzynÄ™, a ty mi przyniesiesz, no powiedzmy, pÃ³Å‚ tuzina wilczych futer.
 		
 		Log_CreateTopic (TOPIC_CityTeacher,LOG_NOTE);
-		B_LogEntry	(TOPIC_CityTeacher,"Bosper mo¿e mnie nauczyæ, jak obdzieraæ ze skóry zwierzêta.");
+		B_LogEntry	(TOPIC_CityTeacher,"Bosper moÅ¼e mnie nauczyÄ‡, jak obdzieraÄ‡ ze skÃ³ry zwierzÄ™ta.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_02"); //Przynieœ mi pó³ tuzina wilczych futer.
+		AI_Output (self, other, "DIA_Bosper_Job_11_02"); //PrzynieÅ› mi pÃ³Å‚ tuzina wilczych futer.
 	};
 	
-	AI_Output (self, other, "DIA_Bosper_Job_11_03"); //Wtedy bêdê wiedzia³, ¿e opanowa³eœ swój fach.
-	AI_Output (self, other, "DIA_Bosper_Job_11_04"); //Jeœli nie zajmie ci to ca³ego ¿ycia i skóry bêd¹ w znoœnym stanie, to ciê przyjmê.
+	AI_Output (self, other, "DIA_Bosper_Job_11_03"); //Wtedy bÄ™dÄ™ wiedziaÅ‚, Å¼e opanowaÅ‚eÅ› swÃ³j fach.
+	AI_Output (self, other, "DIA_Bosper_Job_11_04"); //JeÅ›li nie zajmie ci to caÅ‚ego Å¼ycia i skÃ³ry bÄ™dÄ… w znoÅ›nym stanie, to ciÄ™ przyjmÄ™.
 	if (Npc_KnowsInfo(other, DIA_Bosper_OtherMasters))
 	{
-		AI_Output (self, other, "DIA_Bosper_Job_11_05"); //Albo bêdziesz móg³ naj¹æ siê u innego mistrza. Jeœli tego naprawdê chcesz.
+		AI_Output (self, other, "DIA_Bosper_Job_11_05"); //Albo bÄ™dziesz mÃ³gÅ‚ najÄ…Ä‡ siÄ™ u innego mistrza. JeÅ›li tego naprawdÄ™ chcesz.
 	};
 	
 	MIS_Bosper_WolfFurs = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_BosperWolf,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperWolf,LOG_RUNNING);
-	B_LogEntry (TOPIC_BosperWolf,"Mam przynieœæ Bosperowi szeœæ wilczych skór. Kiedy ju¿ wykonam zadanie, zatrudni mnie jako swojego czeladnika albo udzieli poparcia, jeœli zechcê pracowaæ u innego mistrza.");
+	B_LogEntry (TOPIC_BosperWolf,"Mam przynieÅ›Ä‡ Bosperowi szeÅ›Ä‡ wilczych skÃ³r. Kiedy juÅ¼ wykonam zadanie, zatrudni mnie jako swojego czeladnika albo udzieli poparcia, jeÅ›li zechcÄ™ pracowaÄ‡ u innego mistrza.");
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		B_LogEntry (TOPIC_BosperWolf,"Chcia³bym, ¿eby Bosper nauczy³ mnie oprawiaæ zwierzêta.");
+		B_LogEntry (TOPIC_BosperWolf,"ChciaÅ‚bym, Å¼eby Bosper nauczyÅ‚ mnie oprawiaÄ‡ zwierzÄ™ta.");
 	};
 };
 
@@ -503,25 +503,25 @@ func void DIA_Bosper_BringFur_Info ()
 	
 	if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_01"); //Jesteœ teraz czeladnikiem innego mistrza. Kupiê od ciebie skóry po zwyk³ej cenie.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_01"); //JesteÅ› teraz czeladnikiem innego mistrza. KupiÄ™ od ciebie skÃ³ry po zwykÅ‚ej cenie.
 		MIS_Bosper_WolfFurs = LOG_OBSOLETE;
 		return;
 	};
 	
 	if (B_GiveInvItems (other, self, ItAt_WolfFur, 6))		
 	{
-		AI_Output (other, self, "DIA_Bosper_BringFur_15_02"); //Mam je, proszê.
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_03"); //Wspaniale! Wiedzia³em, ¿e nadajesz siê do tej pracy.
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_04"); //A oto zap³ata, tak jak obiecywa³em.
+		AI_Output (other, self, "DIA_Bosper_BringFur_15_02"); //Mam je, proszÄ™.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_03"); //Wspaniale! WiedziaÅ‚em, Å¼e nadajesz siÄ™ do tej pracy.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_04"); //A oto zapÅ‚ata, tak jak obiecywaÅ‚em.
 		B_GiveInvItems (self, other, itmi_gold, (Value_WolfFur * 6));
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_05"); //I co? Co myœlisz? Czy to nie lepsza praca ni¿ kucie mieczy po ca³ych dniach albo nape³nianie ma³ych buteleczek w zakurzonej komnacie?
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_05"); //I co? Co myÅ›lisz? Czy to nie lepsza praca niÅ¼ kucie mieczy po caÅ‚ych dniach albo napeÅ‚nianie maÅ‚ych buteleczek w zakurzonej komnacie?
 		
 		MIS_Bosper_WolfFurs = LOG_SUCCESS;
-		B_LogEntry (Topic_Lehrling,"Bosper przyjmie mnie na czeladnika, jeœli pozostali mistrzowie udziel¹ mi swojego poparcia.");
+		B_LogEntry (Topic_Lehrling,"Bosper przyjmie mnie na czeladnika, jeÅ›li pozostali mistrzowie udzielÄ… mi swojego poparcia.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_BringFur_11_06"); //Umawialiœmy siê na pó³ tuzina, ale masz jeszcze czas. Ruszaj i przynieœ mi te skóry.
+		AI_Output (self, other, "DIA_Bosper_BringFur_11_06"); //UmawialiÅ›my siÄ™ na pÃ³Å‚ tuzina, ale masz jeszcze czas. Ruszaj i przynieÅ› mi te skÃ³ry.
 	};
 
 };
@@ -536,7 +536,7 @@ instance DIA_Bosper_TeachFUR (C_INFO)
 	condition	= DIA_Bosper_TeachFUR_Condition;
 	information = DIA_Bosper_TeachFUR_Info;
 	permanent   = TRUE;
-	description = "Naucz mnie, jak obdzieraæ zwierzynê ze skóry.";
+	description = "Naucz mnie, jak obdzieraÄ‡ zwierzynÄ™ ze skÃ³ry.";
 };
 func int DIA_Bosper_TeachFUR_Condition ()
 {	
@@ -548,16 +548,16 @@ func int DIA_Bosper_TeachFUR_Condition ()
 };
 func void DIA_Bosper_TeachFUR_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_TeachFUR_15_00"); //Naucz mnie, jak obdzieraæ zwierzynê ze skóry.
+	AI_Output (other, self, "DIA_Bosper_TeachFUR_15_00"); //Naucz mnie, jak obdzieraÄ‡ zwierzynÄ™ ze skÃ³ry.
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 	{
-		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_01"); //Dobrze. S³uchaj. To doœæ proste.
-		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_02"); //Ostrym no¿em rozcinasz brzuch zwierzêcia. Potem robisz ma³e naciêcia po wewnêtrznej stronie ³ap i œci¹gasz skórê.
+		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_01"); //Dobrze. SÅ‚uchaj. To doÅ›Ä‡ proste.
+		AI_Output (self, other, "DIA_Bosper_TeachFUR_11_02"); //Ostrym noÅ¼em rozcinasz brzuch zwierzÄ™cia. Potem robisz maÅ‚e naciÄ™cia po wewnÄ™trznej stronie Å‚ap i Å›ciÄ…gasz skÃ³rÄ™.
 		if (MIS_Bosper_WolfFurs == LOG_RUNNING)
 		{
-			AI_Output (self, other, "DIA_Bosper_TeachFUR_11_03"); //Przynieœ mi te wilcze skóry, to zobaczymy...
-			B_LogEntry (TOPIC_BosperWolf,"Bosper nauczy³ mnie, jak obdzieraæ zwierzynê ze skóry.");
+			AI_Output (self, other, "DIA_Bosper_TeachFUR_11_03"); //PrzynieÅ› mi te wilcze skÃ³ry, to zobaczymy...
+			B_LogEntry (TOPIC_BosperWolf,"Bosper nauczyÅ‚ mnie, jak obdzieraÄ‡ zwierzynÄ™ ze skÃ³ry.");
 		};
 	};
 };
@@ -572,7 +572,7 @@ instance DIA_Bosper_Trade		(C_INFO)
 	condition	 = 	DIA_Bosper_Trade_Condition;
 	information	 = 	DIA_Bosper_Trade_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Poka¿ mi swoje towary.";
+	description	 = 	"PokaÅ¼ mi swoje towary.";
 };
 func int DIA_Bosper_Trade_Condition ()
 {
@@ -585,7 +585,7 @@ func int DIA_Bosper_Trade_Condition ()
 };
 func void DIA_Bosper_Trade_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other, self, "DIA_Bosper_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 	
 	if (DIA_Bosper_Trade.trade == TRUE)
 	{
@@ -605,13 +605,13 @@ func void DIA_Bosper_Trade_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_Trade_11_01"); //Nie jesteœ tu po to, ¿eby ogl¹daæ moje towary! Masz mi przynieœæ te skóry!
-		AI_Output (self, other, "DIA_Bosper_Trade_11_02"); //Wiêc do roboty!
+		AI_Output (self, other, "DIA_Bosper_Trade_11_01"); //Nie jesteÅ› tu po to, Å¼eby oglÄ…daÄ‡ moje towary! Masz mi przynieÅ›Ä‡ te skÃ³ry!
+		AI_Output (self, other, "DIA_Bosper_Trade_11_02"); //WiÄ™c do roboty!
 	};
 };
 
 // **************************************************************
-// 						Von Bogen gehört
+// 						Von Bogen gehÃ¶rt
 // **************************************************************
 instance DIA_Bosper_BogenRunning (C_INFO)
 {
@@ -620,7 +620,7 @@ instance DIA_Bosper_BogenRunning (C_INFO)
 	condition	 = 	DIA_Bosper_BogenRunning_Condition;
 	information	 = 	DIA_Bosper_BogenRunning_Info;
 	permanent	 = 	FALSE;
-	description	 = "S³ysza³em, ¿e ktoœ ciê okrad³.";
+	description	 = "SÅ‚yszaÅ‚em, Å¼e ktoÅ› ciÄ™ okradÅ‚.";
 };
 func int DIA_Bosper_BogenRunning_Condition ()
 {	
@@ -631,19 +631,19 @@ func int DIA_Bosper_BogenRunning_Condition ()
 };
 func void DIA_Bosper_BogenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_BogenRunning_15_00"); //S³ysza³em, ¿e ktoœ ciê okrad³.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_01"); //Kto ci to powiedzia³? Pewnie Bartok, co? Nie mia³ nic ciekawszego do powiedzenia? No có¿.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_02"); //Mówiê ci, jak dorwê tego drania, to niech siê lepiej modli!
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_03"); //Wyszed³em ze sklepu tylko na chwilê. Kiedy wróci³em, zd¹¿y³em tylko zobaczyæ, jak wychodzi - z moim ³ukiem na ramieniu.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_04"); //Od razu wezwa³em stra¿ników, ale ten niegodziwiec uciek³ do portu. I tam go zgubili.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_05"); //Narobi³em takiego szumu, ¿e stra¿ przetrz¹snê³a ca³¹ dzielnicê portow¹. Ale nic nie znaleŸli.
+	AI_Output (other, self, "DIA_Bosper_BogenRunning_15_00"); //SÅ‚yszaÅ‚em, Å¼e ktoÅ› ciÄ™ okradÅ‚.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_01"); //Kto ci to powiedziaÅ‚? Pewnie Bartok, co? Nie miaÅ‚ nic ciekawszego do powiedzenia? No cÃ³Å¼.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_02"); //MÃ³wiÄ™ ci, jak dorwÄ™ tego drania, to niech siÄ™ lepiej modli!
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_03"); //WyszedÅ‚em ze sklepu tylko na chwilÄ™. Kiedy wrÃ³ciÅ‚em, zdÄ…Å¼yÅ‚em tylko zobaczyÄ‡, jak wychodzi - z moim Å‚ukiem na ramieniu.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_04"); //Od razu wezwaÅ‚em straÅ¼nikÃ³w, ale ten niegodziwiec uciekÅ‚ do portu. I tam go zgubili.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_05"); //NarobiÅ‚em takiego szumu, Å¼e straÅ¼ przetrzÄ…snÄ™Å‚a caÅ‚Ä… dzielnicÄ™ portowÄ…. Ale nic nie znaleÅºli.
 	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_06"); //Cholerne obiboki!
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_07"); //Za³o¿ê siê, ¿e mój ³uk jest ci¹gle w mieœcie. Poinformowa³em stra¿e przy obu bramach i nie widzieli, ¿eby ktoœ wychodzi³ z moim ³ukiem.
-	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_08"); //Jak dorwê tego ³obuza...
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_07"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e mÃ³j Å‚uk jest ciÄ…gle w mieÅ›cie. PoinformowaÅ‚em straÅ¼e przy obu bramach i nie widzieli, Å¼eby ktoÅ› wychodziÅ‚ z moim Å‚ukiem.
+	AI_Output (self, other, "DIA_Bosper_BogenRunning_11_08"); //Jak dorwÄ™ tego Å‚obuza...
 
 	Log_CreateTopic (TOPIC_BosperBogen,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BosperBogen,LOG_RUNNING);
-	B_LogEntry	(TOPIC_BosperBogen,"Bosperowi skradziono ³uk. Z³odziej skierowa³ siê do przystani i tam przepad³ jak kamieñ w wodê. Stra¿nicy miejscy przeszukali ca³¹ dzielnicê portow¹, lecz nie uda³o im siê nic znaleŸæ. Istnieje jednak du¿e prawdopodobieñstwo, ¿e z³odziej nie opuœci³ jeszcze miasta.");
+	B_LogEntry	(TOPIC_BosperBogen,"Bosperowi skradziono Å‚uk. ZÅ‚odziej skierowaÅ‚ siÄ™ do przystani i tam przepadÅ‚ jak kamieÅ„ w wodÄ™. StraÅ¼nicy miejscy przeszukali caÅ‚Ä… dzielnicÄ™ portowÄ…, lecz nie udaÅ‚o im siÄ™ nic znaleÅºÄ‡. Istnieje jednak duÅ¼e prawdopodobieÅ„stwo, Å¼e zÅ‚odziej nie opuÅ›ciÅ‚ jeszcze miasta.");
 };
 
 // **************************************************************
@@ -656,7 +656,7 @@ instance DIA_Bosper_BogenSuccess (C_INFO)
 	condition	 = 	DIA_Bosper_BogenSuccess_Condition;
 	information	 = 	DIA_Bosper_BogenSuccess_Info;
 	permanent	 = 	FALSE;
-	description	 = "S¹dzê, ¿e to twój ³uk...";
+	description	 = "SÄ…dzÄ™, Å¼e to twÃ³j Å‚uk...";
 };
 func int DIA_Bosper_BogenSuccess_Condition ()
 {	
@@ -667,15 +667,15 @@ func int DIA_Bosper_BogenSuccess_Condition ()
 };
 func void DIA_Bosper_BogenSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_00"); //S¹dzê, ¿e to twój ³uk...
+	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_00"); //SÄ…dzÄ™, Å¼e to twÃ³j Å‚uk...
 	
 	B_GiveInvItems (other, self, ItRw_Bow_L_03_MIS,1);
 	
-	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_01"); //Mój ³uk! Gdzie go znalaz³eœ?
-	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_02"); //W ciemnej norze pe³nej szczurów.
-	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_03"); //Mam nadziejê, ¿e nie wpakowa³eœ siê w k³opoty...
-	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_04"); //Nie - robi³em ju¿ takie rzeczy wczeœniej.
-	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_05"); //Hmmm. Tak czy inaczej, dziêkujê. Jestem twoim d³u¿nikiem.
+	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_01"); //MÃ³j Å‚uk! Gdzie go znalazÅ‚eÅ›?
+	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_02"); //W ciemnej norze peÅ‚nej szczurÃ³w.
+	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_03"); //Mam nadziejÄ™, Å¼e nie wpakowaÅ‚eÅ› siÄ™ w kÅ‚opoty...
+	AI_Output (other, self, "DIA_Bosper_BogenSuccess_15_04"); //Nie - robiÅ‚em juÅ¼ takie rzeczy wczeÅ›niej.
+	AI_Output (self, other, "DIA_Bosper_BogenSuccess_11_05"); //Hmmm. Tak czy inaczej, dziÄ™kujÄ™. Jestem twoim dÅ‚uÅ¼nikiem.
 	 
 	MIS_Bosper_Bogen = LOG_SUCCESS;
 	B_GivePlayerXP(XP_Bosper_Bogen);
@@ -696,7 +696,7 @@ instance DIA_Bosper_PERM		(C_INFO)
 	condition	 = 	DIA_Bosper_PERM_Condition;
 	information	 = 	DIA_Bosper_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co s³ychaæ w mieœcie?";
+	description	 = 	"Co sÅ‚ychaÄ‡ w mieÅ›cie?";
 };
 func int DIA_Bosper_PERM_Condition ()
 {
@@ -707,20 +707,20 @@ func int DIA_Bosper_PERM_Condition ()
 };
 func void DIA_Bosper_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_PERM_15_00"); //Co s³ychaæ w mieœcie?
+	AI_Output (other, self, "DIA_Bosper_PERM_15_00"); //Co sÅ‚ychaÄ‡ w mieÅ›cie?
 	
 	if (Bosper_Island == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bosper_PERM_11_01"); //Jeœli orkowie naprawdê zaczn¹ oblegaæ miasto, to bêdzie tu nieprzyjemnie.
-		AI_Output (self, other, "DIA_Bosper_PERM_11_02"); //Jest tylko jeden statek i pilnuj¹ go paladyni. Nie s¹dzê, ¿eby u¿yli go do ewakuacji obywateli.
-		AI_Output (other, self, "DIA_Bosper_PERM_15_03"); //Nie ma innego sposobu, ¿eby siê st¹d wydostaæ?
-		AI_Output (self, other, "DIA_Bosper_PERM_11_04"); //Nie. Nikt nie opuœci wyspy bez statku.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_01"); //JeÅ›li orkowie naprawdÄ™ zacznÄ… oblegaÄ‡ miasto, to bÄ™dzie tu nieprzyjemnie.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_02"); //Jest tylko jeden statek i pilnujÄ… go paladyni. Nie sÄ…dzÄ™, Å¼eby uÅ¼yli go do ewakuacji obywateli.
+		AI_Output (other, self, "DIA_Bosper_PERM_15_03"); //Nie ma innego sposobu, Å¼eby siÄ™ stÄ…d wydostaÄ‡?
+		AI_Output (self, other, "DIA_Bosper_PERM_11_04"); //Nie. Nikt nie opuÅ›ci wyspy bez statku.
 		
 		Bosper_Island = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Bosper_PERM_11_05"); //Jak na razie nic nowego. Wpadnij póŸniej.
+		AI_Output (self, other, "DIA_Bosper_PERM_11_05"); //Jak na razie nic nowego. Wpadnij pÃ³Åºniej.
 	};
 };
 
@@ -756,8 +756,8 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_MIL)
 	&& (Bosper_MILKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_00"); //Zaci¹gn¹³eœ siê do stra¿y, co?
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_01"); //Nie, ¿eby mnie to obchodzi³o. Dopóki poluj¹c na orków i bandytów, nie zapomnisz upolowaæ kilku wilków.
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_00"); //ZaciÄ…gnÄ…Å‚eÅ› siÄ™ do straÅ¼y, co?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_01"); //Nie, Å¼eby mnie to obchodziÅ‚o. DopÃ³ki polujÄ…c na orkÃ³w i bandytÃ³w, nie zapomnisz upolowaÄ‡ kilku wilkÃ³w.
 		Bosper_MILKommentar = TRUE;
 	}
 	
@@ -765,7 +765,7 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_PAL)
 	&& (Bosper_PALKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_02"); //Wygl¹da na to, ¿e twoja kariera toczy siê jak lawina. Paladyn Króla!
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_02"); //WyglÄ…da na to, Å¼e twoja kariera toczy siÄ™ jak lawina. Paladyn KrÃ³la!
 		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_03"); //Nie zapomnij o swoim starym mistrzu...
 		Bosper_PALKommentar = TRUE;
 	}
@@ -775,7 +775,7 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (Bosper_StartGuild != GIL_KDF)
 	&& (Bosper_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_04"); //Poszed³eœ do klasztoru, co? Mam nadziejê, ¿e bêd¹ ciê wystarczaj¹co czêsto wypuszczaæ, ¿ebyœ nadal zaopatrywa³ mnie w skóry...
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_04"); //PoszedÅ‚eÅ› do klasztoru, co? Mam nadziejÄ™, Å¼e bÄ™dÄ… ciÄ™ wystarczajÄ…co czÄ™sto wypuszczaÄ‡, Å¼ebyÅ› nadal zaopatrywaÅ‚ mnie w skÃ³ry...
 		Bosper_INNOSKommentar = TRUE;
 	}
 	
@@ -783,8 +783,8 @@ FUNC VOID DIA_Bosper_AlsLehrling_Info()
 	&& (other.guild != GIL_PAL)
 	&& (other.guild != GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_05"); //Gdzie siê szwenda³eœ tyle czasu?
-		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_06"); //Potrzebujê wiêcej skór, przynios³eœ jakieœ?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_05"); //Gdzie siÄ™ szwendaÅ‚eÅ› tyle czasu?
+		AI_Output (self, other,"DIA_Bosper_AlsLehrling_11_06"); //PotrzebujÄ™ wiÄ™cej skÃ³r, przyniosÅ‚eÅ› jakieÅ›?
 		Bosper_Lehrling_Day = Wld_GetDay();
 	}
 	
@@ -805,7 +805,7 @@ instance DIA_Bosper_Aufgaben (C_INFO)
 	condition	= DIA_Bosper_Aufgaben_Condition;
 	information	= DIA_Bosper_Aufgaben_Info;
 	permanent	= FALSE;
-	description	= "Co mam robiæ jako czeladnik?";
+	description	= "Co mam robiÄ‡ jako czeladnik?";
 };
 func int DIA_Bosper_Aufgaben_Condition ()
 {
@@ -816,18 +816,18 @@ func int DIA_Bosper_Aufgaben_Condition ()
 };
 func void DIA_Bosper_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_Aufgaben_15_00"); //Co mam robiæ jako czeladnik?
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_01"); //To proste. Przynieœ mi tyle futer, ile zdo³asz.
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_02"); //Zap³acê ci za nie lepsz¹ cenê ni¿ ka¿dy inny handlarz.
-	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_03"); //Poza tym, mo¿esz siê w ogóle nie pokazywaæ w sklepie. Poradzê sobie œwietnie sam.
+	AI_Output (other, self, "DIA_Bosper_Aufgaben_15_00"); //Co mam robiÄ‡ jako czeladnik?
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_01"); //To proste. PrzynieÅ› mi tyle futer, ile zdoÅ‚asz.
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_02"); //ZapÅ‚acÄ™ ci za nie lepszÄ… cenÄ™ niÅ¼ kaÅ¼dy inny handlarz.
+	AI_Output (self, other, "DIA_Bosper_Aufgaben_11_03"); //Poza tym, moÅ¼esz siÄ™ w ogÃ³le nie pokazywaÄ‡ w sklepie. PoradzÄ™ sobie Å›wietnie sam.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (other, self, "DIA_Bosper_Aufgaben_15_04"); //A gdzie mam spaæ?
-		AI_Output (self, other, "DIA_Bosper_Aufgaben_11_05"); //Nie mam tu dla ciebie pokoju. Powinieneœ znaleŸæ jakieœ ³ó¿ko w gospodzie ko³o placu targowego.
+		AI_Output (other, self, "DIA_Bosper_Aufgaben_15_04"); //A gdzie mam spaÄ‡?
+		AI_Output (self, other, "DIA_Bosper_Aufgaben_11_05"); //Nie mam tu dla ciebie pokoju. PowinieneÅ› znaleÅºÄ‡ jakieÅ› Å‚Ã³Å¼ko w gospodzie koÅ‚o placu targowego.
 	};
 	
 	Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Bosper skupuje skóry zwierzêce po wyj¹tkowo dobrej cenie.");
+	B_LogEntry (Topic_Bonus,"Bosper skupuje skÃ³ry zwierzÄ™ce po wyjÄ…tkowo dobrej cenie.");
 };
 
 // *******************************************************
@@ -844,7 +844,7 @@ instance DIA_Bosper_SellFur (C_INFO)
 	condition	= DIA_Bosper_SellFur_Condition;
 	information	= DIA_Bosper_SellFur_Info;
 	permanent	= TRUE;
-	description	= "Mam dla ciebie kilka skór...";
+	description	= "Mam dla ciebie kilka skÃ³r...";
 };
 func int DIA_Bosper_SellFur_Condition ()
 {
@@ -855,7 +855,7 @@ func int DIA_Bosper_SellFur_Condition ()
 };
 func void DIA_Bosper_SellFur_Info ()
 {
-	AI_Output (other, self, "DIA_Bosper_SellFur_15_00"); //Mam dla ciebie kilka skór...
+	AI_Output (other, self, "DIA_Bosper_SellFur_15_00"); //Mam dla ciebie kilka skÃ³r...
 	
 	if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 	|| (Npc_HasItems(other, ItAt_WolfFur) > 0)
@@ -875,8 +875,8 @@ func void DIA_Bosper_SellFur_Info ()
 		
 		if (Npc_HasItems(other, ItAt_SheepFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_01"); //Owcze skóry? Chyba nie zat³uk³eœ jakiemuœ wieœniakowi jego owiec, co?
-			AI_Output (other, self, "DIA_Bosper_SellFur_15_02"); //Nawet bym o tym nie pomyœla³...
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_01"); //Owcze skÃ³ry? Chyba nie zatÅ‚ukÅ‚eÅ› jakiemuÅ› wieÅ›niakowi jego owiec, co?
+			AI_Output (other, self, "DIA_Bosper_SellFur_15_02"); //Nawet bym o tym nie pomyÅ›laÅ‚...
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_SheepFur) * Value_SheepFur) );
 			B_GiveInvItems(other, self, ItAt_SheepFur, Npc_HasItems(other, ItAt_SheepFur));
 				
@@ -884,21 +884,21 @@ func void DIA_Bosper_SellFur_Info ()
 		
 		if (Npc_HasItems(other, ItAt_WolfFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_03"); //Wilcza skóra, nieŸle...
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_03"); //Wilcza skÃ³ra, nieÅºle...
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_WolfFur) * Value_WolfFur) );
 			B_GiveInvItems(other, self, ItAt_WolfFur, Npc_HasItems(other, ItAt_WolfFur));
 		};
 		
 		if (Npc_HasItems(other, ItAt_WargFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_04"); //Skóra warga? Te bestie s¹ niebezpieczne...
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_04"); //SkÃ³ra warga? Te bestie sÄ… niebezpieczne...
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_WargFur) * Value_WargFur) );
 			B_GiveInvItems(other, self, ItAt_WargFur, Npc_HasItems(other, ItAt_WargFur));
 		};
 		
 		if (Npc_HasItems(other, ItAt_ShadowFur) > 0)
 		{
-			AI_Output (self, other, "DIA_Bosper_SellFur_11_05"); //Och, nawet skóra cieniostwora - takie s¹ sporo warte.
+			AI_Output (self, other, "DIA_Bosper_SellFur_11_05"); //Och, nawet skÃ³ra cieniostwora - takie sÄ… sporo warte.
 			B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_ShadowFur) * Value_ShadowFur) );
 			B_GiveInvItems(other, self, ItAt_ShadowFur, Npc_HasItems(other, ItAt_ShadowFur));
 		};
@@ -908,15 +908,15 @@ func void DIA_Bosper_SellFur_Info ()
 		{
 			if (Bosper_TrollFurSold == FALSE)
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_06"); //A co TO za skóra?
-				AI_Output (other, self, "DIA_Bosper_SellFur_15_07"); //Zdar³em j¹ z trolla.
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_08"); //To... to jest warte ma³¹ fortunê.
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_06"); //A co TO za skÃ³ra?
+				AI_Output (other, self, "DIA_Bosper_SellFur_15_07"); //ZdarÅ‚em jÄ… z trolla.
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_08"); //To... to jest warte maÅ‚Ä… fortunÄ™.
 				Bosper_TrollFurSold == TRUE;
 			}
 			else //TRUE
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_09"); //Kolejna trollowa skóra... Czy ty na nie polujesz?
-				AI_Output (other, self, "DIA_Bosper_SellFur_15_10"); //Nie, po prostu korzystam z ka¿dej okazji...
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_09"); //Kolejna trollowa skÃ³ra... Czy ty na nie polujesz?
+				AI_Output (other, self, "DIA_Bosper_SellFur_15_10"); //Nie, po prostu korzystam z kaÅ¼dej okazji...
 			};
 			
 			if (Npc_HasItems(other, ItAt_TrollFur) > 0)
@@ -926,17 +926,17 @@ func void DIA_Bosper_SellFur_Info ()
 			};
 			if (Npc_HasItems(other, ItAt_TrollBlackFur) > 0)
 			{
-				AI_Output (self, other, "DIA_Bosper_SellFur_11_11"); //No proszê, skóra czarnego trolla!
+				AI_Output (self, other, "DIA_Bosper_SellFur_11_11"); //No proszÄ™, skÃ³ra czarnego trolla!
 				B_GiveInvItems(self, other, itmi_gold, (Npc_HasItems(other, ItAt_TrollBlackFur) * Value_TrollBlackFur) );
 				B_GiveInvItems(other, self, ItAt_TrollBlackFur, Npc_HasItems(other, ItAt_TrollBlackFur));
 			};
 		};
 		
-		AI_Output (self, other, "DIA_Bosper_SellFur_11_12"); //Dobra robota. PrzyjdŸ do mnie, jak bêdziesz mia³ nastêpne...
+		AI_Output (self, other, "DIA_Bosper_SellFur_11_12"); //Dobra robota. PrzyjdÅº do mnie, jak bÄ™dziesz miaÅ‚ nastÄ™pne...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bosper_SellFur_11_13"); //Ale pamiêtaj - interesuj¹ mnie tylko skóry wilków, cieniostworów i tym podobne...
+		AI_Output (self, other, "DIA_Bosper_SellFur_11_13"); //Ale pamiÄ™taj - interesujÄ… mnie tylko skÃ³ry wilkÃ³w, cieniostworÃ³w i tym podobne...
 	};
 };
 
@@ -950,7 +950,7 @@ INSTANCE DIA_Bosper_Minenanteil (C_INFO)
 	condition	= DIA_Bosper_Minenanteil_Condition;
 	information	= DIA_Bosper_Minenanteil_Info;
 
-	description = "Widzê, ¿e masz na sprzeda¿ udzia³y w kopalni.";
+	description = "WidzÄ™, Å¼e masz na sprzedaÅ¼ udziaÅ‚y w kopalni.";
 };   
                     
 FUNC INT DIA_Bosper_Minenanteil_Condition()
@@ -964,8 +964,8 @@ FUNC INT DIA_Bosper_Minenanteil_Condition()
 
 FUNC VOID DIA_Bosper_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Bosper_Minenanteil_15_00"); //Widzê, ¿e masz na sprzeda¿ udzia³y w kopalni.
-	AI_Output (self, other, "DIA_Bosper_Minenanteil_11_01"); //Eee... Ja nic o tym nie wiem. Mo¿esz je zatrzymaæ, jeœli chcesz.
+	AI_Output (other, self, "DIA_Bosper_Minenanteil_15_00"); //WidzÄ™, Å¼e masz na sprzedaÅ¼ udziaÅ‚y w kopalni.
+	AI_Output (self, other, "DIA_Bosper_Minenanteil_11_01"); //Eee... Ja nic o tym nie wiem. MoÅ¼esz je zatrzymaÄ‡, jeÅ›li chcesz.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

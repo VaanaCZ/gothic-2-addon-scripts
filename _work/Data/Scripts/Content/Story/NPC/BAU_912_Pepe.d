@@ -31,8 +31,8 @@ instance BAU_912_Pepe (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 10); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh√§ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 10); //Grenzen f√ºr Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_912;
@@ -40,7 +40,7 @@ instance BAU_912_Pepe (Npc_Default)
 
 FUNC VOID Rtn_Start_912 ()
 {	
-	TA_Stand_Eating		(08,00,22,00,"NW_BIGFARM_SHEEP2_02"); 	//Joly: muﬂ hier tag und nacht stehen!!!!!!!!!!!!!
-    TA_Stand_Eating		(22,00,08,00,"NW_BIGFARM_SHEEP2_02");	//Joly: muﬂ hier tag und nacht stehen!!!!!!!!!!!!!
+	TA_Stand_Eating		(08,00,22,00,"NW_BIGFARM_SHEEP2_02"); 	//Joly: mu√ü hier tag und nacht stehen!!!!!!!!!!!!!
+    TA_Stand_Eating		(22,00,08,00,"NW_BIGFARM_SHEEP2_02");	//Joly: mu√ü hier tag und nacht stehen!!!!!!!!!!!!!
 };
 

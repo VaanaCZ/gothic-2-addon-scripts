@@ -21,7 +21,7 @@ FUNC INT DIA_Herold_Info_Condition()
 
 FUNC VOID DIA_Herold_Info_Info()
 {
-	AI_Output (self ,other,"DIA_Herold_Info_04_00"); //Nie przeszkadzaj mi. Jestem na s≥uøbie.
+	AI_Output (self ,other,"DIA_Herold_Info_04_00"); //Nie przeszkadzaj mi. Jestem na s≈Çu≈ºbie.
 	
 	AI_StopProcessInfos (self);
 };

@@ -1,9 +1,9 @@
 // *************************************************************
 // B_DeletePetzCrime
 // -----------------
-// Ändert Petzcrime in Abhängigkeit von Home-Location
-// Wenn NSC tot oder charmed, wird "seine" Petzcrime gelöscht
-// wenn NSC keine Home-Location angehört --> keine Auswirkungen
+// Ã„ndert Petzcrime in AbhÃ¤ngigkeit von Home-Location
+// Wenn NSC tot oder charmed, wird "seine" Petzcrime gelÃ¶scht
+// wenn NSC keine Home-Location angehÃ¶rt --> keine Auswirkungen
 // CRIME_NONE oder keine Home-Location = keine Auswirkungen
 // *************************************************************
 

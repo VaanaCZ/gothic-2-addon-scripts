@@ -74,7 +74,7 @@ FUNC INT DIA_Addon_Carlos_HI_Condition()
 };
 FUNC VOID DIA_Addon_Carlos_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_12_00"); //Hej, to ty jesteœ tym nowym, który pobi³ Franka?
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_12_00"); //Hej, to ty jesteÅ› tym nowym, ktÃ³ry pobiÅ‚ Franka?
 
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 	Info_AddChoice (DIA_Addon_Carlos_HI, "Co? Ja? Nie!" ,DIA_Addon_Carlos_HI_No);
@@ -84,14 +84,14 @@ FUNC VOID DIA_Addon_Carlos_HI_Info()
 func void DIA_Addon_Carlos_HI_Yes()
 {
 	AI_Output (other,self,"DIA_Addon_Carlos_HI_Yes_15_00"); //Tak, o co chodzi?
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_Yes_12_01"); //Bo teraz ja muszê odwalaæ jego robotê. Wielkie dziêki!
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_Yes_12_01"); //Bo teraz ja muszÄ™ odwalaÄ‡ jego robotÄ™. Wielkie dziÄ™ki!
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 };
 
 func void DIA_Addon_Carlos_HI_No()
 {
 	AI_Output (other,self,"DIA_Addon_Carlos_HI_No_15_00"); //Co? Ja? Nie!
-	AI_Output (self,other,"DIA_Addon_Carlos_HI_No_12_01"); //Ach, rozumiem. Nie chcia³em przeszkadzaæ.
+	AI_Output (self,other,"DIA_Addon_Carlos_HI_No_12_01"); //Ach, rozumiem. Nie chciaÅ‚em przeszkadzaÄ‡.
 	Info_ClearChoices (DIA_Addon_Carlos_HI);
 };
 
@@ -118,18 +118,18 @@ FUNC VOID DIA_Addon_Carlos_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
 	
-	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_00");//Thorus kaza³ mi wpuœciæ do obozu kogoœ nowego, gdy zabójca bêdzie ju¿ gryz³ ziemiê.
+	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_00");//Thorus kazaÅ‚ mi wpuÅ›ciÄ‡ do obozu kogoÅ› nowego, gdy zabÃ³jca bÄ™dzie juÅ¼ gryzÅ‚ ziemiÄ™.
 	
 	if (Logan_Inside == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_01");//A Franko przys³a³ Logana.
+		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_01");//A Franko przysÅ‚aÅ‚ Logana.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_02");//A Franko przys³a³ nowych kolesi.
+		AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_02");//A Franko przysÅ‚aÅ‚ nowych kolesi.
 	};
 	
-	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_03");//Hej, ja tylko wykonujê rozkazy Thorusa. Nie wiem nic o samej próbie zabójstwa.
+	AI_Output (self, other, "DIA_Addon_Carlos_Attentat_12_03");//Hej, ja tylko wykonujÄ™ rozkazy Thorusa. Nie wiem nic o samej prÃ³bie zabÃ³jstwa.
 };
 
 //---------------------------------------------------------------------
@@ -142,7 +142,7 @@ INSTANCE DIA_Addon_Carlos_PERM   (C_INFO)
 	condition   = DIA_Addon_Carlos_PERM_Condition;
 	information = DIA_Addon_Carlos_PERM_Info;
 	permanent   = TRUE;
-	description	= "Jak to jest byæ szefem myœliwych?";
+	description	= "Jak to jest byÄ‡ szefem myÅ›liwych?";
 };
 FUNC INT DIA_Addon_Carlos_PERM_Condition()
 {	
@@ -150,7 +150,7 @@ FUNC INT DIA_Addon_Carlos_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Carlos_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Carlos_PERM_15_00"); //Jak to jest byæ szefem myœliwych?
+	AI_Output (other, self, "DIA_Addon_Carlos_PERM_15_00"); //Jak to jest byÄ‡ szefem myÅ›liwych?
 	AI_Output (self, other, "DIA_Addon_Carlos_PERM_12_00"); //Nie przypominaj mi o tym!
 	AI_StopProcessInfos (self);
 };

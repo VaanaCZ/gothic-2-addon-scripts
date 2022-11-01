@@ -1,15 +1,15 @@
 //##########################################################################
 //##
-//##	Hier stehen alle Buchständermobsiscripte
+//##	Hier stehen alle BuchstÃ¤ndermobsiscripte
 //##
 //##########################################################################
 
 
 //*************************************
-//	Buchständer in der Klosterbibliothek
+//	BuchstÃ¤nder in der Klosterbibliothek
 //*************************************
 
-FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
+FUNC VOID Use_Bookstand_01_S1()		//BuchstÃ¤nder in der Magierbibliothek
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -17,11 +17,11 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 	{	
 	if  (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; //für die Prüfung des Feuers 
+			KNOWS_FIRE_CONTEST = TRUE; //fÃ¼r die PrÃ¼fung des Feuers 
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
-			B_LogEntry (TOPIC_FireContest,"Jako nowicjusz mam prawo za¿¹daæ Próby Ognia, a ka¿dy z trzech magów nale¿¹cych do Najwy¿szej Rady przydzieli mi jakieœ zadanie. Po ukoñczeniu wszystkich misji zostanê przyjêty do Krêgu Ognia.");
+			B_LogEntry (TOPIC_FireContest,"Jako nowicjusz mam prawo zaÅ¼Ä…daÄ‡ PrÃ³by Ognia, a kaÅ¼dy z trzech magÃ³w naleÅ¼Ä…cych do NajwyÅ¼szej Rady przydzieli mi jakieÅ› zadanie. Po ukoÅ„czeniu wszystkich misji zostanÄ™ przyjÄ™ty do KrÄ™gu Ognia.");
 		};
 	
 		var int nDocID;
@@ -35,12 +35,12 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   			); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
-					Doc_PrintLine	( nDocID,  0, "Próba Ognia"					);
+					Doc_PrintLine	( nDocID,  0, "PrÃ³ba Ognia"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Nowicjusz mo¿e uwa¿aæ, ¿e jest gotowy na do³¹czenie do Krêgu Ognia, ale nie od razu dost¹pi tego zaszczytu. Gdy dobrze siê zastanowi i nadal bêdzie uparcie d¹¿yæ do swego celu, to mo¿e skorzystaæ z prawa za¿¹dania Próby, nie mo¿e mu odmówiæ ¿aden mag. Ca³a procedura nie ogranicza siê do Próby Magii - kandydat musi równie¿ zostaæ oœwiecony przez p³omienie, gdy wyrazi tak¹ wolê przed Najwy¿sz¹ Rad¹, stanie przed PRÓB¹ OGNIA,");
+					Doc_PrintLines	( nDocID,  0, "Nowicjusz moÅ¼e uwaÅ¼aÄ‡, Å¼e jest gotowy na doÅ‚Ä…czenie do KrÄ™gu Ognia, ale nie od razu dostÄ…pi tego zaszczytu. Gdy dobrze siÄ™ zastanowi i nadal bÄ™dzie uparcie dÄ…Å¼yÄ‡ do swego celu, to moÅ¼e skorzystaÄ‡ z prawa zaÅ¼Ä…dania PrÃ³by, nie moÅ¼e mu odmÃ³wiÄ‡ Å¼aden mag. CaÅ‚a procedura nie ogranicza siÄ™ do PrÃ³by Magii - kandydat musi rÃ³wnieÅ¼ zostaÄ‡ oÅ›wiecony przez pÅ‚omienie, gdy wyrazi takÄ… wolÄ™ przed NajwyÅ¼szÄ… RadÄ…, stanie przed PRÃ“BÄ… OGNIA,");
 			
 					
 					
@@ -48,13 +48,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "która sprawdzi jego zrêcznoœæ, si³ê i m¹droœæ. Ka¿de z trzech zadañ zostanie zlecone przez innego cz³onka Najwy¿szej Rady i dopiero po wykonaniu wszystkich trzech kandydat bêdzie móg³ z³o¿yæ Przysiêgê Ognia i zbrataæ siê z p³omieniami."); 
+					Doc_PrintLines	( nDocID,  1, "ktÃ³ra sprawdzi jego zrÄ™cznoÅ›Ä‡, siÅ‚Ä™ i mÄ…droÅ›Ä‡. KaÅ¼de z trzech zadaÅ„ zostanie zlecone przez innego czÅ‚onka NajwyÅ¼szej Rady i dopiero po wykonaniu wszystkich trzech kandydat bÄ™dzie mÃ³gÅ‚ zÅ‚oÅ¼yÄ‡ PrzysiÄ™gÄ™ Ognia i zbrataÄ‡ siÄ™ z pÅ‚omieniami."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Taka jest wola Innosa i tako¿ siê stanie."					);
+					Doc_PrintLines	( nDocID,  1, "Taka jest wola Innosa i takoÅ¼ siÄ™ stanie."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Najwy¿sza Rada"					);
+					Doc_PrintLines	( nDocID,  1, "NajwyÅ¼sza Rada"					);
 					Doc_Show		( nDocID );
 
 			
@@ -62,13 +62,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchständer in der Magierbibliothek
 };
 
 //*************************************
-//	Buchständer in der Geheimen Bibliothek
+//	BuchstÃ¤nder in der Geheimen Bibliothek
 //*************************************
 //--------------------------------------
 var int FinalDragonEquipment_Once;
 //--------------------------------------
 
-FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothek 
+FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//BuchstÃ¤nder in der geheimen Bibliothek 
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -86,7 +86,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  	
 	
 						Doc_PrintLine	( nDocID,  0, "");
-						Doc_PrintLines	( nDocID,  0, "...Mam nadziejê, ¿e Bariera ochroni rudê przed zakusami Beliara. Król w swej naiwnoœci wierzy, ¿e stworzyliœmy j¹, ¿eby nie dopuœciæ do ucieczek. Niechaj nadal tak s¹dzi, jeœli dziêki temu uda siê nam osi¹gn¹æ nasze odleglejsze cele. Mo¿emy tylko marzyæ o czasie na przygotowanie siê do nadchodz¹cej walki. To na ni¹ skierujê ca³¹ sw¹ moc, gdy tylko Bariera dooko³a Górniczej Doliny zostanie ukoñczona.");
+						Doc_PrintLines	( nDocID,  0, "...Mam nadziejÄ™, Å¼e Bariera ochroni rudÄ™ przed zakusami Beliara. KrÃ³l w swej naiwnoÅ›ci wierzy, Å¼e stworzyliÅ›my jÄ…, Å¼eby nie dopuÅ›ciÄ‡ do ucieczek. Niechaj nadal tak sÄ…dzi, jeÅ›li dziÄ™ki temu uda siÄ™ nam osiÄ…gnÄ…Ä‡ nasze odleglejsze cele. MoÅ¼emy tylko marzyÄ‡ o czasie na przygotowanie siÄ™ do nadchodzÄ…cej walki. To na niÄ… skierujÄ™ caÅ‚Ä… swÄ… moc, gdy tylko Bariera dookoÅ‚a GÃ³rniczej Doliny zostanie ukoÅ„czona.");
 						Doc_PrintLines	( nDocID,  0, "");
 			
 					
@@ -96,15 +96,15 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 		{	
 			PlayerGetsAmulettOfDeath = TRUE;
 			PLAYER_TALENT_RUNES[SPL_MasterOfDisaster] = TRUE; 
-			B_LogEntry (TOPIC_TalentRunes,"Sk³adniki runy 'œwiêty pocisk': 1 porcja wody œwiêconej, nie potrzeba zwoju z zaklêciem");
+			B_LogEntry (TOPIC_TalentRunes,"SkÅ‚adniki runy 'Å›wiÄ™ty pocisk': 1 porcja wody Å›wiÄ™conej, nie potrzeba zwoju z zaklÄ™ciem");
 			
 			
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "...Na runicznym stole obla³em wod¹ œwiêcon¹, zgodnie z instrukcjami, pusty kamieñ runiczny. Kamieñ uleg³ zniszczeniu... To zaklêcie jest chyba przeznaczone tylko dla Wybrañca."); 
-						Doc_PrintLines	( nDocID,  1, "Na stra¿y klasztoru pozostawi³em œwiêt¹ Aurê Innosa. Przeor bêdzie o ni¹ dba³, dopóki nie objawi siê Wybraniec."	);
-						Doc_PrintLines	( nDocID,  1, "£zy Innosa mog¹ odegraæ ogromn¹ rolê w nadchodz¹cej walce, niebezpiecznie wiêc trzymaæ je na widoku publicznym. Lepiej schowam je tu, w bibliotece."	);
+						Doc_PrintLines	( nDocID,  1, "...Na runicznym stole oblaÅ‚em wodÄ… Å›wiÄ™conÄ…, zgodnie z instrukcjami, pusty kamieÅ„ runiczny. KamieÅ„ ulegÅ‚ zniszczeniu... To zaklÄ™cie jest chyba przeznaczone tylko dla WybraÅ„ca."); 
+						Doc_PrintLines	( nDocID,  1, "Na straÅ¼y klasztoru pozostawiÅ‚em Å›wiÄ™tÄ… AurÄ™ Innosa. Przeor bÄ™dzie o niÄ… dbaÅ‚, dopÃ³ki nie objawi siÄ™ Wybraniec."	);
+						Doc_PrintLines	( nDocID,  1, "Åzy Innosa mogÄ… odegraÄ‡ ogromnÄ… rolÄ™ w nadchodzÄ…cej walce, niebezpiecznie wiÄ™c trzymaÄ‡ je na widoku publicznym. Lepiej schowam je tu, w bibliotece."	);
 						Doc_Show		( nDocID );
 						
 						
@@ -116,17 +116,17 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen	(PRINT_LearnPalTeleportSecret, -1, -1, FONT_Screen, 2);
 			
 			Log_CreateTopic (TOPIC_TalentRunes,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentRunes,"Tworzenie run wymaga u¿ycia odpowiednich sk³adników. Ca³y proces wymaga jeszcze odpowiedniego sto³u i pustego kamienia runicznego.");
-			B_LogEntry (TOPIC_TalentRunes,"Sk³adniki runy 'Tajny teleport': 1 porcja ³ez Innosa");
+			B_LogEntry (TOPIC_TalentRunes,"Tworzenie run wymaga uÅ¼ycia odpowiednich skÅ‚adnikÃ³w. CaÅ‚y proces wymaga jeszcze odpowiedniego stoÅ‚u i pustego kamienia runicznego.");
+			B_LogEntry (TOPIC_TalentRunes,"SkÅ‚adniki runy 'Tajny teleport': 1 porcja Å‚ez Innosa");
 			
 			
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Aby móc siê dostaæ do ukrytego miejsca, musisz stworzyæ specjaln¹ runê teleportuj¹c¹ - bêdzie ci do tego potrzebny pusty kamieñ runiczny i ma³a buteleczka wody œwiêconej."); 
+						Doc_PrintLines	( nDocID,  1, "Aby mÃ³c siÄ™ dostaÄ‡ do ukrytego miejsca, musisz stworzyÄ‡ specjalnÄ… runÄ™ teleportujÄ…cÄ… - bÄ™dzie ci do tego potrzebny pusty kamieÅ„ runiczny i maÅ‚a buteleczka wody Å›wiÄ™conej."); 
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Jestem prawie pewien, ¿e paladyni wykorzystywali ³zy Innosa w dawno zapomnianym rytuale znanym jako Konsekracja Miecza. Za pomoc¹ znalezionej wczeœniej ma³ej buteleczki powinienem wiêc nadaæ konsekrowanej broni dodatkow¹ moc."	);
+						Doc_PrintLines	( nDocID,  1, "Jestem prawie pewien, Å¼e paladyni wykorzystywali Å‚zy Innosa w dawno zapomnianym rytuale znanym jako Konsekracja Miecza. Za pomocÄ… znalezionej wczeÅ›niej maÅ‚ej buteleczki powinienem wiÄ™c nadaÄ‡ konsekrowanej broni dodatkowÄ… moc."	);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_Show		( nDocID );
 		}
@@ -138,20 +138,20 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchständer in der geheimen Bibliothe
 			PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentSmith,"Jeœli zechcê wykuæ jak¹œ broñ, to po pierwsze bêdzie mi potrzebny kawa³ surowej stali, który trzeba rozgrzaæ do czerwonoœci w kuŸni, a nastêpnie ukszta³towaæ na kowadle. Nadanie broni jakichœ specjalnych charakterystyk bêdzie wymaga³o u¿ycia dodatkowych sk³adników.");
-			B_LogEntry (TOPIC_TalentSmith,"Dodanie na przyk³ad czterech bry³ek rudy i piêciu porcji smoczej krwi umo¿liwi mi wykucie magicznego ostrza na smoki, a");
-			B_LogEntry (TOPIC_TalentSmith,"piêciu bry³ek rudy i piêciu porcji smoczej krwi - du¿ego magicznego ostrza na smoki.");
+			B_LogEntry (TOPIC_TalentSmith,"JeÅ›li zechcÄ™ wykuÄ‡ jakÄ…Å› broÅ„, to po pierwsze bÄ™dzie mi potrzebny kawaÅ‚ surowej stali, ktÃ³ry trzeba rozgrzaÄ‡ do czerwonoÅ›ci w kuÅºni, a nastÄ™pnie uksztaÅ‚towaÄ‡ na kowadle. Nadanie broni jakichÅ› specjalnych charakterystyk bÄ™dzie wymagaÅ‚o uÅ¼ycia dodatkowych skÅ‚adnikÃ³w.");
+			B_LogEntry (TOPIC_TalentSmith,"Dodanie na przykÅ‚ad czterech bryÅ‚ek rudy i piÄ™ciu porcji smoczej krwi umoÅ¼liwi mi wykucie magicznego ostrza na smoki, a");
+			B_LogEntry (TOPIC_TalentSmith,"piÄ™ciu bryÅ‚ek rudy i piÄ™ciu porcji smoczej krwi - duÅ¼ego magicznego ostrza na smoki.");
 			PlayerGetsFinalDJGArmor = TRUE;
 		
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Fragment ksiêgi 'Broñ smoczego pana'."); 
-						Doc_PrintLines	( nDocID,  1, "Aby zbroicy ze smoczych ³usek twardoœci nielichej dodaæ, pokryæ trza ³uski takowe rud¹ w dolinie na wyspie Karynis kopan¹."					);
+						Doc_PrintLines	( nDocID,  1, "Fragment ksiÄ™gi 'BroÅ„ smoczego pana'."); 
+						Doc_PrintLines	( nDocID,  1, "Aby zbroicy ze smoczych Å‚usek twardoÅ›ci nielichej dodaÄ‡, pokryÄ‡ trza Å‚uski takowe rudÄ… w dolinie na wyspie Karynis kopanÄ…."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "By ostrze poœlednie zdatnym dla smoczego pana uczyniæ, krwi¹ smoków oblaæ je nale¿y. Piêæ porcji posoki sprawi, ¿e ostrze ostre niezwykle bêdzie i moc niezrównan¹ zyska."					);
+						Doc_PrintLines	( nDocID,  1, "By ostrze poÅ›lednie zdatnym dla smoczego pana uczyniÄ‡, krwiÄ… smokÃ³w oblaÄ‡ je naleÅ¼y. PiÄ™Ä‡ porcji posoki sprawi, Å¼e ostrze ostre niezwykle bÄ™dzie i moc niezrÃ³wnanÄ… zyska."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Uwaga: nazwa 'Karynis' nawi¹zuje prawdopodobnie do obszarów znanych obecnie jako Khorinis.");
+						Doc_PrintLines	( nDocID,  1, "Uwaga: nazwa 'Karynis' nawiÄ…zuje prawdopodobnie do obszarÃ³w znanych obecnie jako Khorinis.");
 						Doc_Show		( nDocID );
 		};
 		

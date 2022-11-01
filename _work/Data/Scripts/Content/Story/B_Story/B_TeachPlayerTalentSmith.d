@@ -27,37 +27,37 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Jeœli zechcê wykuæ jak¹œ broñ, to po pierwsze bêdzie mi potrzebny kawa³ surowej stali, który muszê rozgrzaæ do czerwonoœci w kuŸni, a nastêpnie nadaæ mu odpowiedni kszta³t na kowadle. Jeœli zechcê nadaæ broni jakieœ specjalne charakterystyki, to bêdê musia³ u¿yæ dodatkowych sk³adników.");
+	B_LogEntry (TOPIC_TalentSmith,"JeÅ›li zechcÄ™ wykuÄ‡ jakÄ…Å› broÅ„, to po pierwsze bÄ™dzie mi potrzebny kawaÅ‚ surowej stali, ktÃ³ry muszÄ™ rozgrzaÄ‡ do czerwonoÅ›ci w kuÅºni, a nastÄ™pnie nadaÄ‡ mu odpowiedni ksztaÅ‚t na kowadle. JeÅ›li zechcÄ™ nadaÄ‡ broni jakieÅ› specjalne charakterystyki, to bÄ™dÄ™ musiaÅ‚ uÅ¼yÄ‡ dodatkowych skÅ‚adnikÃ³w.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Najprostszy miecz nie potrzebuje ¿adnych dodatków.");};
+	B_LogEntry (TOPIC_TalentSmith,"Najprostszy miecz nie potrzebuje Å¼adnych dodatkÃ³w.");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 1 bry³kê rudy, zrobiê ´D£UGI MIECZ Z RUDY´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 1 bryÅ‚kÄ™ rudy, zrobiÄ™ Â´DÅUGI MIECZ Z RUDYÂ´.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 2 bry³ki rudy, zrobiê ´MIECZ DWURÊCZNY Z RUDY´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 2 bryÅ‚ki rudy, zrobiÄ™ Â´MIECZ DWURÄ˜CZNY Z RUDYÂ´.");};
 	if (waffe == WEAPON_1H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 2 bry³ki rudy, zrobiê ´MIECZ PÓ£TORARÊCZNY Z RUDY´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 2 bryÅ‚ki rudy, zrobiÄ™ Â´MIECZ PÃ“ÅTORARÄ˜CZNY Z RUDYÂ´.");};
 	if (waffe == WEAPON_2H_Special_02)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 3 bry³ki rudy, zrobiê ´CIÊ¯KI MIECZ DWURÊCZNY Z RUDY´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 3 bryÅ‚ki rudy, zrobiÄ™ Â´CIÄ˜Å»KI MIECZ DWURÄ˜CZNY Z RUDYÂ´.");};
 	if (waffe == WEAPON_1H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 3 bry³ki rudy, zrobiê ´OSTRZE BOJOWE Z RUDY´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 3 bryÅ‚ki rudy, zrobiÄ™ Â´OSTRZE BOJOWE Z RUDYÂ´.");};
 	if (waffe == WEAPON_2H_Special_03)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 4 bry³ki rudy, zrobiê ´CIÊ¯KIE OSTRZE BOJOWE Z RUDY´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 4 bryÅ‚ki rudy, zrobiÄ™ Â´CIÄ˜Å»KIE OSTRZE BOJOWE Z RUDYÂ´.");};
 	if (waffe == WEAPON_1H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 4 bry³ki rudy i 5 porcji smoczej krwi, zrobiê ´OSTRZE Z RUDY NA SMOKI´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 4 bryÅ‚ki rudy i 5 porcji smoczej krwi, zrobiÄ™ Â´OSTRZE Z RUDY NA SMOKIÂ´.");};
 	if (waffe == WEAPON_2H_Special_04)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_04] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobêdê 5 bry³ek rudy i 5 porcji smoczej krwi, zrobiê ´DU¯E OSTRZE Z RUDY NA SMOKI´.");};
+	B_LogEntry (TOPIC_TalentSmith,"Gdy zdobÄ™dÄ™ 5 bryÅ‚ek rudy i 5 porcji smoczej krwi, zrobiÄ™ Â´DUÅ»E OSTRZE Z RUDY NA SMOKIÂ´.");};
 	
 	//Harad - Addon
 	if (waffe == WEAPON_1H_Harad_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_01] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Teraz mogê wykuæ dobry miecz."); };
+	B_LogEntry (TOPIC_TalentSmith,"Teraz mogÄ™ wykuÄ‡ dobry miecz."); };
 	if (waffe == WEAPON_1H_Harad_02)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_02] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Teraz mogê wykuæ tak¿e d³ugi miecz."); };
+	B_LogEntry (TOPIC_TalentSmith,"Teraz mogÄ™ wykuÄ‡ takÅ¼e dÅ‚ugi miecz."); };
 	if (waffe == WEAPON_1H_Harad_03)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_03] 	= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Teraz mogê wykuæ nawet Rubinowe Ostrze."); };
-	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"Harad nauczy³ mnie, jak wykuæ 'El Bastardo' – jedn¹ z najlepszych znanych broni jednorêcznych."); };
+	B_LogEntry (TOPIC_TalentSmith,"Teraz mogÄ™ wykuÄ‡ nawet Rubinowe Ostrze."); };
+	if (waffe == WEAPON_1H_Harad_04)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Harad_04] 	= TRUE;	B_LogEntry (TOPIC_TalentSmith,"Harad nauczyÅ‚ mnie, jak wykuÄ‡ 'El Bastardo' â€“ jednÄ… z najlepszych znanych broni jednorÄ™cznych."); };
 	
 	PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 	

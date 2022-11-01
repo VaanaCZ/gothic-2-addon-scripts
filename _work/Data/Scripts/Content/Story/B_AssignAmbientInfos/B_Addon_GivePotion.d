@@ -10,7 +10,7 @@ instance DIA_Addon_GivePotion(C_INFO)
 	condition	= DIA_Addon_GivePotion_Condition;
 	information	= DIA_Addon_GivePotion_Info;
 	permanent	= TRUE;
-	description = "(Daj miksturê lecznicz¹)";
+	description = "(Daj miksturÄ™ leczniczÄ…)";
 };                       
 FUNC INT DIA_Addon_GivePotion_Condition()
 {
@@ -39,15 +39,15 @@ func VOID DIA_Addon_GivePotion_Info()
 	};
 	if (Npc_HasItems (other,ItPo_Health_01) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_GivePotion,"(Daj esencjê lecznicz¹)",DIA_Addon_GivePotion_ItPo_Health_01);
+		Info_AddChoice (DIA_Addon_GivePotion,"(Daj esencjÄ™ leczniczÄ…)",DIA_Addon_GivePotion_ItPo_Health_01);
 	};
 };
 // ------------------------------------------------------------
 func void B_Addon_DrinkPotion ()
 {
-	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //Proszê, weŸ tê miksturê uzdrawiaj¹c¹.
+	AI_Output (other,self ,"DIA_Addon_Brandon_GivePotion_15_00"); //ProszÄ™, weÅº tÄ™ miksturÄ™ uzdrawiajÄ…cÄ….
 
-	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //geändert m.F. 
+	if ((self.attribute[ATR_HITPOINTS]) < (self.attribute[ATR_HITPOINTS_MAX])) //geÃ¤ndert m.F. 
 	{
 		if (Npc_HasItems(self,ItPo_Health_03) > 0)			
 		{

@@ -31,13 +31,13 @@ FUNC VOID	Change_FH_Visual()
 
 	var string printText;
 
-	PrintScreen	("Tekstura skóry:" 		, -1, 10, "FONT_OLD_10_WHITE.TGA", 4 );
+	PrintScreen	("Tekstura skÃ³ry:" 		, -1, 10, "FONT_OLD_10_WHITE.TGA", 4 );
 	
 	printText = IntToString	(FH_SkinTexture);
 	PrintScreen	(printText		, -1, 12, "FONT_OLD_10_WHITE.TGA", 2 );
 	
 	
-	PrintScreen	("G³owa:"		, -1, 20, "FONT_OLD_10_WHITE.TGA", 2 );
+	PrintScreen	("GÅ‚owa:"		, -1, 20, "FONT_OLD_10_WHITE.TGA", 2 );
 	PrintScreen	(FH_HeadMesh		, -1, 22, "FONT_OLD_10_WHITE.TGA", 2 );
 
 };
@@ -78,7 +78,7 @@ INSTANCE DIA_FH_NextFace (C_INFO)
 	condition		= DIA_FH_NextFace_Condition;
 	information		= DIA_FH_NextFace_Info;
 	permanent		= 1;
-	description		= "Nastêpna twarz";
+	description		= "NastÄ™pna twarz";
 };                       
 
 FUNC INT DIA_FH_NextFace_Condition()
@@ -103,7 +103,7 @@ INSTANCE DIA_FH_NextFace10 (C_INFO)
 	condition		= DIA_FH_NextFace10_Condition;
 	information		= DIA_FH_NextFace10_Info;
 	permanent		= 1;
-	description		= "10 wzorów do przodu";
+	description		= "10 wzorÃ³w do przodu";
 };                       
 
 FUNC INT DIA_FH_NextFace10_Condition()
@@ -151,7 +151,7 @@ INSTANCE DIA_FH_PreviousFace10 (C_INFO)
 	condition		= DIA_FH_PreviousFace10_Condition;
 	information		= DIA_FH_PreviousFace10_Info;
 	permanent		= 1;
-	description		= "10 wzorów wstecz";
+	description		= "10 wzorÃ³w wstecz";
 };                       
 
 FUNC INT DIA_FH_PreviousFace10_Condition()
@@ -175,7 +175,7 @@ INSTANCE DIA_FH_ResetFace (C_INFO)
 	condition		= DIA_FH_ResetFace_Condition;
 	information		= DIA_FH_ResetFace_Info;
 	permanent		= 1;
-	description		= "Powrót do twarzy domyœlnej";
+	description		= "PowrÃ³t do twarzy domyÅ›lnej";
 };                       
 
 FUNC INT DIA_FH_ResetFace_Condition()
@@ -224,7 +224,7 @@ INSTANCE DIA_FH_Repeat (C_INFO)
 	condition		= DIA_FH_Repeat_Condition;
 	information		= DIA_FH_Repeat_Info;
 	permanent		= 1;
-	description		= "Powtórzenie dzia³ania";
+	description		= "PowtÃ³rzenie dziaÅ‚ania";
 };                       
 
 FUNC INT DIA_FH_Repeat_Condition()
@@ -247,7 +247,7 @@ INSTANCE DIA_FH_Sex (C_INFO)
 	condition		= DIA_FH_Sex_Condition;
 	information		= DIA_FH_Sex_Info;
 	permanent		= 1;
-	description		= "P³eæ";
+	description		= "PÅ‚eÄ‡";
 };                       
 
 FUNC INT DIA_FH_Sex_Condition()
@@ -281,7 +281,7 @@ INSTANCE DIA_FH_Choose_HeadMesh (C_INFO)
 	condition		= DIA_FH_Choose_HeadMesh_Condition;
 	information		= DIA_FH_Choose_HeadMesh_Info;
 	permanent		= 1;
-	description		= "Wybór g³owy";
+	description		= "WybÃ³r gÅ‚owy";
 };                       
 
 FUNC INT DIA_FH_Choose_HeadMesh_Condition()
@@ -293,7 +293,7 @@ FUNC VOID DIA_FH_Choose_HeadMesh_Info()
 {	
 	Info_ClearChoices	(DIA_FH_Choose_HeadMesh);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Powrót" 				, DIA_FH_Choose_HeadMesh_7);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "PowrÃ³t" 				, DIA_FH_Choose_HeadMesh_7);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Psionic" 	, DIA_FH_Choose_HeadMesh_6);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Thief" 		, DIA_FH_Choose_HeadMesh_5);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Bald" 		, DIA_FH_Choose_HeadMesh_4);

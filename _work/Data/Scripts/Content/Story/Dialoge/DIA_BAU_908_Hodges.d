@@ -57,9 +57,9 @@ func int DIA_Hodges_HALLO_Condition ()
 func void DIA_Hodges_HALLO_Info ()
 {
 	AI_Output (other, self, "DIA_Hodges_HALLO_15_00"); //Witaj, jestem tu nowy.
-	AI_Output (self, other, "DIA_Hodges_HALLO_03_01"); //Nie chcia³bym, ¿ebyœ to odebra³ w niew³aœciwy sposób, ale nie mam teraz ochoty na pogawêdkê - jestem zupe³nie wykoñczony.
-	AI_Output (other, self, "DIA_Hodges_HALLO_15_02"); //Masz strasznie du¿o pracy, co?
-	AI_Output (self, other, "DIA_Hodges_HALLO_03_03"); //Racja. Bennet wyrabia tyle broni, ¿e ledwie nad¹¿am z jej polerowaniem.
+	AI_Output (self, other, "DIA_Hodges_HALLO_03_01"); //Nie chciaÅ‚bym, Å¼ebyÅ› to odebraÅ‚ w niewÅ‚aÅ›ciwy sposÃ³b, ale nie mam teraz ochoty na pogawÄ™dkÄ™ - jestem zupeÅ‚nie wykoÅ„czony.
+	AI_Output (other, self, "DIA_Hodges_HALLO_15_02"); //Masz strasznie duÅ¼o pracy, co?
+	AI_Output (self, other, "DIA_Hodges_HALLO_03_03"); //Racja. Bennet wyrabia tyle broni, Å¼e ledwie nadÄ…Å¼am z jej polerowaniem.
 };
 
 // ************************************************************
@@ -72,7 +72,7 @@ instance DIA_Hodges_TellAboutFarm	(C_INFO)
 	condition	 = 	DIA_Hodges_TellAboutFarm_Condition;
 	information	 = 	DIA_Hodges_TellAboutFarm_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Co mo¿esz mi powiedzieæ o farmie?";
+	description	 = 	"Co moÅ¼esz mi powiedzieÄ‡ o farmie?";
 };
 
 func int DIA_Hodges_TellAboutFarm_Condition ()
@@ -86,11 +86,11 @@ func int DIA_Hodges_TellAboutFarm_Condition ()
 
 func void DIA_Hodges_TellAboutFarm_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_TellAboutFarm_15_00"); //Co mo¿esz mi powiedzieæ o farmie?
+	AI_Output (other,self ,"DIA_Hodges_TellAboutFarm_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o farmie?
 	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_01"); //To jest farma Onara.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_02"); //A ten du¿y budynek to jego dom. Jedno skrzyd³o zajmuj¹ najemnicy.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_03"); //Odk¹d siê sprowadzili, my, farmerzy, musimy mieszkaæ w stodole.
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_04"); //Ale mi to nie przeszkadza, to dobrze, ¿e ktoœ pilnuje farmy.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_02"); //A ten duÅ¼y budynek to jego dom. Jedno skrzydÅ‚o zajmujÄ… najemnicy.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_03"); //OdkÄ…d siÄ™ sprowadzili, my, farmerzy, musimy mieszkaÄ‡ w stodole.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_04"); //Ale mi to nie przeszkadza, to dobrze, Å¼e ktoÅ› pilnuje farmy.
 	
 	if (Npc_GetDistToWP (self, "NW_BIGFARM_SMITH_SHARP") < 500)
 	{
@@ -98,9 +98,9 @@ func void DIA_Hodges_TellAboutFarm_Info ()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_06"); //Kuchnia znajduje siê na ty³ach kuŸni.
+		AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_06"); //Kuchnia znajduje siÄ™ na tyÅ‚ach kuÅºni.
 	};
-	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_07"); //Przy odrobinie szczêœcia mo¿e za³apiesz siê na coœ do jedzenia.
+	AI_Output (self ,other,"DIA_Hodges_TellAboutFarm_03_07"); //Przy odrobinie szczÄ™Å›cia moÅ¼e zaÅ‚apiesz siÄ™ na coÅ› do jedzenia.
 };
 
 // ************************************************************
@@ -130,10 +130,10 @@ func int DIA_Hodges_AboutSld_Condition ()
 func void DIA_Hodges_AboutSld_Info ()
 {	
 	AI_Output (other,self ,"DIA_Hodges_AboutSld_15_00"); //A o co chodzi z tymi najemnikami?
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_01"); //Onar wynaj¹³ ich, ¿eby obroniæ siê przed stra¿¹.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_02"); //Najemnicy chroni¹ tak¿e farmê, trzodê i farmerów.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_03"); //Wiêc ¿eby ci nie przysz³o do g³owy coœ ukraœæ.
-	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_04"); //Oni tylko czekaj¹ na pretekst, ¿eby ciê zbiæ na kwaœne jab³ko.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_01"); //Onar wynajÄ…Å‚ ich, Å¼eby obroniÄ‡ siÄ™ przed straÅ¼Ä….
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_02"); //Najemnicy chroniÄ… takÅ¼e farmÄ™, trzodÄ™ i farmerÃ³w.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_03"); //WiÄ™c Å¼eby ci nie przyszÅ‚o do gÅ‚owy coÅ› ukraÅ›Ä‡.
+	AI_Output (self ,other,"DIA_Hodges_AboutSld_03_04"); //Oni tylko czekajÄ… na pretekst, Å¼eby ciÄ™ zbiÄ‡ na kwaÅ›ne jabÅ‚ko.
 };
 
 // ************************************************************
@@ -146,7 +146,7 @@ instance DIA_Hodges_TRADE	(C_INFO)
 	condition	= DIA_Hodges_TRADE_Condition;
 	information	= DIA_Hodges_TRADE_Info;
 	permanent 	= TRUE;
-	description	= "Mogê od ciebie kupiæ broñ?";
+	description	= "MogÄ™ od ciebie kupiÄ‡ broÅ„?";
 	trade		= TRUE;
 };
 
@@ -157,8 +157,8 @@ func int DIA_Hodges_TRADE_Condition ()
 
 func void DIA_Hodges_TRADE_Info ()
 {	
-	AI_Output (other, self ,"DIA_Hodges_TRADE_15_00"); //Mogê kupiæ u ciebie jak¹œ broñ?
-	AI_Output (self, other, "DIA_Hodges_TRADE_03_01"); //Wybór jest doœæ ubogi. Wiêkszoœæ mieczy i toporów trafia do Onara.
+	AI_Output (other, self ,"DIA_Hodges_TRADE_15_00"); //MogÄ™ kupiÄ‡ u ciebie jakÄ…Å› broÅ„?
+	AI_Output (self, other, "DIA_Hodges_TRADE_03_01"); //WybÃ³r jest doÅ›Ä‡ ubogi. WiÄ™kszoÅ›Ä‡ mieczy i toporÃ³w trafia do Onara.
 	
 	Npc_RemoveInvItems (self,ItMiSwordblade,Npc_HasItems (self,ItMiSwordblade));
 };
@@ -253,13 +253,13 @@ func int DIA_Hodges_DontWork_Condition ()
 func void DIA_Hodges_DontWork_Info ()
 {	
 	AI_Output (other,self ,"DIA_Hodges_DontWork_15_00"); //Dlaczego nie pracujesz?
-	AI_Output (self ,other,"DIA_Hodges_DontWork_03_01"); //Jeszcze nie s³ysza³eœ? Paladyni aresztowali Benneta.
+	AI_Output (self ,other,"DIA_Hodges_DontWork_03_01"); //Jeszcze nie sÅ‚yszaÅ‚eÅ›? Paladyni aresztowali Benneta.
 
 	MIS_RescueBennet = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_RESCUEBENNET, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_RESCUEBENNET, LOG_RUNNING);
-	B_LogEntry (TOPIC_RESCUEBENNET,"Kowal Bennet zosta³ aresztowany w mieœcie przez paladynów."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Kowal Bennet zostaÅ‚ aresztowany w mieÅ›cie przez paladynÃ³w."); 
 
 };
 
@@ -273,7 +273,7 @@ instance DIA_Hodges_WhatHappened		(C_INFO)
 	condition	 = 	DIA_Hodges_WhatHappened_Condition;
 	information	 = 	DIA_Hodges_WhatHappened_Info;
 	permanent 	 = 	FALSE;
-	description	 = 	"Co siê sta³o?";
+	description	 = 	"Co siÄ™ staÅ‚o?";
 };
 
 func int DIA_Hodges_WhatHappened_Condition ()
@@ -287,11 +287,11 @@ func int DIA_Hodges_WhatHappened_Condition ()
 
 func void DIA_Hodges_WhatHappened_Info ()
 {	
-	AI_Output (other,self ,"DIA_Hodges_WhatHappened_15_00"); //Co siê sta³o?
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_01"); //Byliœmy na zakupach w mieœcie, kiedy nagle us³yszeliœmy krzyk: 'Tu s¹, pojmaæ ich!'
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_02"); //O rany, ale siê przestraszy³em! Ucieka³em, jakby œciga³o mnie ca³e stado demonów.
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_03"); //Bennet by³ tu¿ za mn¹. Nie wiem, co siê sta³o, ale kiedy dotar³em do bram miasta, jego ju¿ nie by³o.
-	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_04"); //Musia³ siê zgubiæ gdzieœ po drodze.
+	AI_Output (other,self ,"DIA_Hodges_WhatHappened_15_00"); //Co siÄ™ staÅ‚o?
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_01"); //ByliÅ›my na zakupach w mieÅ›cie, kiedy nagle usÅ‚yszeliÅ›my krzyk: 'Tu sÄ…, pojmaÄ‡ ich!'
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_02"); //O rany, ale siÄ™ przestraszyÅ‚em! UciekaÅ‚em, jakby Å›cigaÅ‚o mnie caÅ‚e stado demonÃ³w.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_03"); //Bennet byÅ‚ tuÅ¼ za mnÄ…. Nie wiem, co siÄ™ staÅ‚o, ale kiedy dotarÅ‚em do bram miasta, jego juÅ¼ nie byÅ‚o.
+	AI_Output (self ,other,"DIA_Hodges_WhatHappened_03_04"); //MusiaÅ‚ siÄ™ zgubiÄ‡ gdzieÅ› po drodze.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -319,18 +319,18 @@ func int DIA_Hodges_BennetsCrime_Condition ()
 func void DIA_Hodges_BennetsCrime_Info ()
 {	
 	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_00"); //Jaki zarzut postawiono Bennetowi?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_01"); //Morderstwo! Podobno zabi³ paladyna. Co za wierutna bzdura! Przez ca³y czas by³ tu¿ obok mnie.
-	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_02"); //Wiêc dlaczego nie pójdziesz do miasta i nie wyjaœnisz ca³ej sprawy?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_03"); //Zamknêliby mnie do pud³a jako jego wspólnika. Szczególnie w obecnej sytuacji.
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_01"); //Morderstwo! Podobno zabiÅ‚ paladyna. Co za wierutna bzdura! Przez caÅ‚y czas byÅ‚ tuÅ¼ obok mnie.
+	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_02"); //WiÄ™c dlaczego nie pÃ³jdziesz do miasta i nie wyjaÅ›nisz caÅ‚ej sprawy?
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_03"); //ZamknÄ™liby mnie do pudÅ‚a jako jego wspÃ³lnika. SzczegÃ³lnie w obecnej sytuacji.
 	AI_Output (other,self ,"DIA_Hodges_BennetsCrime_15_04"); //Sytuacji?
-	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_05"); //No wiesz, Onar. To siê musia³o tak skoñczyæ.
+	AI_Output (self ,other,"DIA_Hodges_BennetsCrime_03_05"); //No wiesz, Onar. To siÄ™ musiaÅ‚o tak skoÅ„czyÄ‡.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Podobno Bennet zamordowa³ paladyna. Jego czeladnik Hodges twierdzi, ¿e to nieprawda, jednak boi siê oœwiadczyæ to w mieœcie."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Podobno Bennet zamordowaÅ‚ paladyna. Jego czeladnik Hodges twierdzi, Å¼e to nieprawda, jednak boi siÄ™ oÅ›wiadczyÄ‡ to w mieÅ›cie."); 
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Wie reagieren die Söldner?
+//	Wie reagieren die SÃ¶ldner?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hodges_BennetAndSLD			(C_INFO)
 {
@@ -354,10 +354,10 @@ func int DIA_Hodges_BennetAndSLD_Condition ()
 func void DIA_Hodges_BennetAndSLD_Info ()
 {	
 	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_00"); //Jak zareagowali na to wasi najemnicy?
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_01"); //Oczywiœcie nie wiem dok³adnie, co zamierzaj¹, ale niektórzy z nich s¹ naprawdê wkurzeni.
-	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_02"); //Domyœlam siê.
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_03"); //Gdyby to zale¿a³o od nich, natychmiast zaatakowaliby miasto, ¿eby odbiæ Benneta.
-	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_04"); //Porozmawiaj z Lee, mo¿e coœ da siê zrobiæ.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_01"); //OczywiÅ›cie nie wiem dokÅ‚adnie, co zamierzajÄ…, ale niektÃ³rzy z nich sÄ… naprawdÄ™ wkurzeni.
+	AI_Output (other,self ,"DIA_Hodges_BennetAndSLD_15_02"); //DomyÅ›lam siÄ™.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_03"); //Gdyby to zaleÅ¼aÅ‚o od nich, natychmiast zaatakowaliby miasto, Å¼eby odbiÄ‡ Benneta.
+	AI_Output (self ,other,"DIA_Hodges_BennetAndSLD_03_04"); //Porozmawiaj z Lee, moÅ¼e coÅ› da siÄ™ zrobiÄ‡.
 };
 //##################################################
 //##

@@ -31,7 +31,7 @@ INSTANCE DIA_Torlof_DI_Hallo   (C_INFO)
 	information = DIA_Torlof_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "Wszystko w porz¹dku?";
+	description = "Wszystko w porzÄ…dku?";
 
 };
 
@@ -45,15 +45,15 @@ FUNC INT DIA_Torlof_DI_Hallo_Condition()
 
 FUNC VOID DIA_Torlof_DI_Hallo_Info()
 {
-	AI_Output (other,self ,"DIA_Torlof_DI_Hallo_15_00"); //Wszystko w porz¹dku?
+	AI_Output (other,self ,"DIA_Torlof_DI_Hallo_15_00"); //Wszystko w porzÄ…dku?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Jak na razie... Ale to siê mo¿e szybko zmieniæ. Uwa¿aj na siebie.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Jak na razie... Ale to siÄ™ moÅ¼e szybko zmieniÄ‡. UwaÅ¼aj na siebie.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_02"); //Jeœli ci przeklêci orkowie bêd¹ siê trzymaæ z dala, wszystko bêdzie w porz¹dku.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_02"); //JeÅ›li ci przeklÄ™ci orkowie bÄ™dÄ… siÄ™ trzymaÄ‡ z dala, wszystko bÄ™dzie w porzÄ…dku.
 		B_StartOtherRoutine	(Torlof_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ INSTANCE DIA_Torlof_DI_Teach (C_INFO)
 	condition	= DIA_Torlof_DI_Teach_Condition;
 	information	= DIA_Torlof_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Pomó¿ mi popracowaæ nad moimi umiejêtnoœciami.";
+	description = "PomÃ³Å¼ mi popracowaÄ‡ nad moimi umiejÄ™tnoÅ›ciami.";
 };                       
 
 FUNC INT DIA_Torlof_DI_Teach_Condition()
@@ -83,7 +83,7 @@ FUNC INT DIA_Torlof_DI_Teach_Condition()
  
 FUNC VOID DIA_Torlof_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //Pomó¿ mi popracowaæ nad moimi umiejêtnoœciami.
+	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //PomÃ³Å¼ mi popracowaÄ‡ nad moimi umiejÄ™tnoÅ›ciami.
 	
 	Info_ClearChoices (DIA_Torlof_DI_Teach); 
 	Info_AddChoice		(DIA_Torlof_DI_Teach, DIALOG_BACK, DIA_Torlof_DI_Teach_Back);
@@ -155,7 +155,7 @@ instance DIA_Torlof_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Torlof_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Wróg zosta³ pokonany.";
+	description = 	"WrÃ³g zostaÅ‚ pokonany.";
 
 };
 
@@ -168,18 +168,18 @@ func int DIA_Torlof_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Torlof_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Torlof_DI_UndeadDragonDead_15_00"); //Wróg zosta³ pokonany.
-	AI_Output			(self ,other, "DIA_Torlof_DI_UndeadDragonDead_01_01"); //Wcale mnie to nie dziwi. To jak? Mo¿emy ju¿ odbijaæ od brzegu?
+	AI_Output			(other ,self, "DIA_Torlof_DI_UndeadDragonDead_15_00"); //WrÃ³g zostaÅ‚ pokonany.
+	AI_Output			(self ,other, "DIA_Torlof_DI_UndeadDragonDead_01_01"); //Wcale mnie to nie dziwi. To jak? MoÅ¼emy juÅ¼ odbijaÄ‡ od brzegu?
 
 	Info_ClearChoices	(DIA_Torlof_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Muszê jeszcze coœ za³atwiæ.", DIA_Torlof_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Tak, to ju¿ koniec. ChodŸmy.", DIA_Torlof_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "MuszÄ™ jeszcze coÅ› zaÅ‚atwiÄ‡.", DIA_Torlof_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Tak, to juÅ¼ koniec. ChodÅºmy.", DIA_Torlof_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Torlof_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Torlof_DI_UndeadDragonDead_moment_15_00"); //Muszê jeszcze coœ za³atwiæ.
-	AI_Output			(self, other, "DIA_Torlof_DI_UndeadDragonDead_moment_01_01"); //No to siê poœpiesz!
+	AI_Output			(other, self, "DIA_Torlof_DI_UndeadDragonDead_moment_15_00"); //MuszÄ™ jeszcze coÅ› zaÅ‚atwiÄ‡.
+	AI_Output			(self, other, "DIA_Torlof_DI_UndeadDragonDead_moment_01_01"); //No to siÄ™ poÅ›piesz!
 	AI_StopProcessInfos (self);
 };
 

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Snapper(C_Npc)			
 {
 	//---- Monster ----
-	name							=	"Zêbacz";
+	name							=	"ZÄ™bacz";
 	guild							=	GIL_SNAPPER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SNAPPER;
 	level							=	12;
@@ -132,11 +132,11 @@ INSTANCE NewMine_Snapper8	(Mst_Default_Snapper)
 	Npc_SetToFistMode(self);
 };
 
-INSTANCE NewMine_LeadSnapper	(Mst_Default_Snapper)	//OW NewMineMission Kill_Snapper: Bilgot weiß von einem Leittier, das muß tot -> Fajeths Auftrag erledigt! 
+INSTANCE NewMine_LeadSnapper	(Mst_Default_Snapper)	//OW NewMineMission Kill_Snapper: Bilgot weiÃŸ von einem Leittier, das muÃŸ tot -> Fajeths Auftrag erledigt! 
 {
 	B_SetVisuals_Snapper();
 	Npc_SetToFistMode(self);
-	name	=	"Przywódca grupy";
+	name	=	"PrzywÃ³dca grupy";
 	
 	//----- Attribute ----	
 	attribute	[ATR_STRENGTH]		=	60;

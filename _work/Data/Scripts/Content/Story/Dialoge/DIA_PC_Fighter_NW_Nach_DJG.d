@@ -22,7 +22,7 @@ FUNC VOID DIA_GornNW_nach_DJG_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_GornNW_nach_DJG_AllDragonsDead(C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_GornNW_nach_DJG_AllDragonsDead(C_INFO)
 	information	= DIA_GornNW_nach_DJG_AllDragonsDead_Info;
 	permanent	= TRUE;
 
-	description = "Odprê¿y³eœ siê wreszcie?";
+	description = "OdprÄ™Å¼yÅ‚eÅ› siÄ™ wreszcie?";
 };                       
 FUNC INT DIA_GornNW_nach_DJG_AllDragonsDead_Condition()
 {
@@ -44,10 +44,10 @@ FUNC INT DIA_GornNW_nach_DJG_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_GornNW_nach_DJG_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_00"); //Odprê¿y³eœ siê wreszcie?
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_01"); //Jasne! Przecie¿ smoki gryz¹ ziemiê, nie?
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_02"); //Sprawa jest trochê bardziej skomplikowana...
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_03"); //Jak zwykle. Daj znaæ, gdyby mój topór móg³ ci siê na coœ przydaæ.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_00"); //OdprÄ™Å¼yÅ‚eÅ› siÄ™ wreszcie?
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_01"); //Jasne! PrzecieÅ¼ smoki gryzÄ… ziemiÄ™, nie?
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_02"); //Sprawa jest trochÄ™ bardziej skomplikowana...
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_03"); //Jak zwykle. Daj znaÄ‡, gdyby mÃ³j topÃ³r mÃ³gÅ‚ ci siÄ™ na coÅ› przydaÄ‡.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@ instance DIA_GornNW_nach_DJG_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Potrzebujê twojej pomocy.";
+	description	 = 	"PotrzebujÄ™ twojej pomocy.";
 };
 func int DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition ()
 {	
@@ -72,33 +72,33 @@ func int DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition ()
 };
 func void DIA_GornNW_nach_DJG_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_00"); //Potrzebujê twojej pomocy.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_01"); //Nie dziwi mnie to! Co mogê dla ciebie zrobiæ?
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_02"); //Pop³yniesz ze mn¹ na pewn¹ wyspê, ¿eby skopaæ parê ty³ków?
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_03"); //Zawsze wiedzia³eœ, jak mnie zachêciæ! Co mam robiæ?
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_00"); //PotrzebujÄ™ twojej pomocy.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_01"); //Nie dziwi mnie to! Co mogÄ™ dla ciebie zrobiÄ‡?
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_02"); //PopÅ‚yniesz ze mnÄ… na pewnÄ… wyspÄ™, Å¼eby skopaÄ‡ parÄ™ tyÅ‚kÃ³w?
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_03"); //Zawsze wiedziaÅ‚eÅ›, jak mnie zachÄ™ciÄ‡! Co mam robiÄ‡?
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 
-	B_LogEntry (TOPIC_Crew,"Gorn bardzo siê zapali³, kiedy powiedzia³em mu o wyspie. Jeœli bêdê potrzebowa³ jego pomocy, chêtnie ze mn¹ pop³ynie.");
+	B_LogEntry (TOPIC_Crew,"Gorn bardzo siÄ™ zapaliÅ‚, kiedy powiedziaÅ‚em mu o wyspie. JeÅ›li bÄ™dÄ™ potrzebowaÅ‚ jego pomocy, chÄ™tnie ze mnÄ… popÅ‚ynie.");
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_04"); //Mam ju¿ zebran¹ za³ogê, ale zastanawiam siê, czy mimo to nie wzi¹æ ciê ze sob¹.
-		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_05"); //Gdybyœ musia³ kogoœ wyrzuciæ, ¿eby zrobiæ miejsce dla mnie, pozb¹dŸ siê najs³abszego.
-		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_06"); //Podczas takiej wyprawy przydadz¹ siê zaprawieni w boju wojownicy.
+		AI_Output			(other,self , "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_04"); //Mam juÅ¼ zebranÄ… zaÅ‚ogÄ™, ale zastanawiam siÄ™, czy mimo to nie wziÄ…Ä‡ ciÄ™ ze sobÄ….
+		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_05"); //GdybyÅ› musiaÅ‚ kogoÅ› wyrzuciÄ‡, Å¼eby zrobiÄ‡ miejsce dla mnie, pozbÄ…dÅº siÄ™ najsÅ‚abszego.
+		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_06"); //Podczas takiej wyprawy przydadzÄ… siÄ™ zaprawieni w boju wojownicy.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_GornNW_nach_DJG_KnowWhereEnemy);
-		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Dam ci znaæ, gdy przyjdzie pora.",DIA_GornNW_nach_DJG_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Chcê, ¿ebyœ ze mn¹ pop³yn¹³. Czekaj na mnie na przystani.",DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Dam ci znaÄ‡, gdy przyjdzie pora.",DIA_GornNW_nach_DJG_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"ChcÄ™, Å¼ebyÅ› ze mnÄ… popÅ‚ynÄ…Å‚. Czekaj na mnie na przystani.",DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_15_00"); //Chcê, ¿ebyœ ze mn¹ pop³yn¹³. Czekaj na mnie na przystani.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_12_01"); //Masz statek? Ho, ho! Jedno ci powiem - z tob¹ nie mo¿na siê nudziæ!
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_15_00"); //ChcÄ™, Å¼ebyÅ› ze mnÄ… popÅ‚ynÄ…Å‚. Czekaj na mnie na przystani.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_12_01"); //Masz statek? Ho, ho! Jedno ci powiem - z tobÄ… nie moÅ¼na siÄ™ nudziÄ‡!
 	
 	
 	B_GivePlayerXP (XP_Crewmember_Success); 
@@ -120,8 +120,8 @@ FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_15_00"); //Dam ci znaæ, gdy przyjdzie pora.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_12_01"); //W porz¹dku.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_15_00"); //Dam ci znaÄ‡, gdy przyjdzie pora.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_12_01"); //W porzÄ…dku.
 
 	Gorn_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_GornNW_nach_DJG_KnowWhereEnemy);
@@ -137,7 +137,7 @@ instance DIA_GornNW_nach_DJG_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_LeaveMyShip_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Mo¿e jednak lepiej bêdzie, jeœli tu zostaniesz.";
+	description	 = 	"MoÅ¼e jednak lepiej bÄ™dzie, jeÅ›li tu zostaniesz.";
 };
 func int DIA_GornNW_nach_DJG_LeaveMyShip_Condition ()
 {	
@@ -149,8 +149,8 @@ func int DIA_GornNW_nach_DJG_LeaveMyShip_Condition ()
 };
 func void DIA_GornNW_nach_DJG_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_LeaveMyShip_15_00"); //Mo¿e jednak lepiej bêdzie, jeœli tu zostaniesz.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_LeaveMyShip_12_01"); //Mam ciê puœciæ samego? Hmmm. Nie jestem zachwycony, ale przecie¿ to twoja wojna. Gdybyœ zmieni³ zdanie, wiesz, gdzie mnie szukaæ.
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_LeaveMyShip_15_00"); //MoÅ¼e jednak lepiej bÄ™dzie, jeÅ›li tu zostaniesz.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_LeaveMyShip_12_01"); //Mam ciÄ™ puÅ›ciÄ‡ samego? Hmmm. Nie jestem zachwycony, ale przecieÅ¼ to twoja wojna. GdybyÅ› zmieniÅ‚ zdanie, wiesz, gdzie mnie szukaÄ‡.
 	
 	Gorn_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -159,7 +159,7 @@ func void DIA_GornNW_nach_DJG_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornNW_nach_DJG_StillNeedYou		(C_INFO)
 {
@@ -168,7 +168,7 @@ instance DIA_GornNW_nach_DJG_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_StillNeedYou_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Jednak bêdziesz mi potrzebny.";
+	description	 = 	"Jednak bÄ™dziesz mi potrzebny.";
 };
 
 func int DIA_GornNW_nach_DJG_StillNeedYou_Condition ()
@@ -183,8 +183,8 @@ func int DIA_GornNW_nach_DJG_StillNeedYou_Condition ()
 
 func void DIA_GornNW_nach_DJG_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_GornNW_nach_DJG_StillNeedYou_15_00"); //Jednak bêdziesz mi potrzebny.
-	AI_Output	(self, other, "DIA_GornNW_nach_DJG_StillNeedYou_12_01"); //No proszê. A ju¿ myœla³em, ¿e zdechnê tu z nudów, podczas gdy ty bêdziesz siê dobrze bawi³. Do zobaczenia.
+	AI_Output	(other, self, "DIA_GornNW_nach_DJG_StillNeedYou_15_00"); //Jednak bÄ™dziesz mi potrzebny.
+	AI_Output	(self, other, "DIA_GornNW_nach_DJG_StillNeedYou_12_01"); //No proszÄ™. A juÅ¼ myÅ›laÅ‚em, Å¼e zdechnÄ™ tu z nudÃ³w, podczas gdy ty bÄ™dziesz siÄ™ dobrze bawiÅ‚. Do zobaczenia.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Gorn_IsOnBoard	 = LOG_SUCCESS;

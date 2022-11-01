@@ -1,5 +1,5 @@
 // **************************************
-// NSC pflückt etwas vom Boden an Pick-FP
+// NSC pflÃ¼ckt etwas vom Boden an Pick-FP
 // **************************************
 
 func void ZS_Pick_FP ()

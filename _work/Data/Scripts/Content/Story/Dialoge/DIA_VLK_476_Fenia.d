@@ -20,12 +20,12 @@ FUNC VOID DIA_Fenia_EXIT_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //Mi≥ego dnia, panie paladynie.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //Mi≈Çego dnia, panie paladynie.
 	};
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //Bezpiecznej podrÛøy, wielki magu.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //Bezpiecznej podr√≥≈ºy, wielki magu.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -90,10 +90,10 @@ FUNC VOID DIA_Fenia_Hallo_Info()
 {
 		if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //Wyglπdasz na strasznie zmÍczonego. Chyba d≥ugo nie spa≥eú, prawda?
-			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Zbyt d≥ugo, zdecydowanie zbyt d≥ugo.
+			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //WyglƒÖdasz na strasznie zmƒôczonego. Chyba d≈Çugo nie spa≈Çe≈õ, prawda?
+			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Zbyt d≈Çugo, zdecydowanie zbyt d≈Çugo.
 		};
-	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //Chodü, podejdü bliøej. U mnie znajdziesz to, czego ci potrzeba!
+	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //Chod≈∫, podejd≈∫ bli≈ºej. U mnie znajdziesz to, czego ci potrzeba!
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Fenia sprzedaje jedzenie przy drodze do portu.");
@@ -111,7 +111,7 @@ instance DIA_Fenia_HANDELN		(C_INFO)
 	information	 = 	DIA_Fenia_HANDELN_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Pokaø mi swoje towary.";
+	description	 = 	"Poka≈º mi swoje towary.";
 };
 
 func int DIA_Fenia_HANDELN_Condition ()
@@ -124,7 +124,7 @@ func int DIA_Fenia_HANDELN_Condition ()
 func void DIA_Fenia_HANDELN_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Fenia_HANDELN_15_00"); //Pokaø mi swoje towary.
+	AI_Output			(other, self, "DIA_Fenia_HANDELN_15_00"); //Poka≈º mi swoje towary.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -137,7 +137,7 @@ instance DIA_Fenia_Infos		(C_INFO)
 	condition	 = 	DIA_Fenia_Infos_Condition;
 	information	 = 	DIA_Fenia_Infos_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Powiedzia≥aú, øe masz wszystko... Czy to dotyczy rÛwnieø informacji?";
+	description	 = 	"Powiedzia≈Ça≈õ, ≈ºe masz wszystko... Czy to dotyczy r√≥wnie≈º informacji?";
 };
 
 func int DIA_Fenia_Infos_Condition ()
@@ -149,8 +149,8 @@ func int DIA_Fenia_Infos_Condition ()
 };
 func void DIA_Fenia_Infos_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_15_00"); //Powiedzia≥aú, øe masz wszystko, czego mogÍ potrzebowaÊ. Czy to dotyczy rÛwnieø informacji?
-	AI_Output			(self, other, "DIA_Fenia_Infos_17_01"); //Aleø oczywiúcie! A co ciÍ interesuje?
+	AI_Output			(other, self, "DIA_Fenia_Infos_15_00"); //Powiedzia≈Ça≈õ, ≈ºe masz wszystko, czego mogƒô potrzebowaƒá. Czy to dotyczy r√≥wnie≈º informacji?
+	AI_Output			(self, other, "DIA_Fenia_Infos_17_01"); //Ale≈º oczywi≈õcie! A co ciƒô interesuje?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Fenia_MoreTraders (C_INFO)
 	condition	= DIA_Fenia_MoreTraders_Condition;
 	information	= DIA_Fenia_MoreTraders_Info;
 	permanent 	= FALSE;
-	description	= "Czy tu, w porcie, sπ jeszcze jacyú inni handlarze?";
+	description	= "Czy tu, w porcie, sƒÖ jeszcze jacy≈õ inni handlarze?";
 };
 
 func int DIA_Fenia_MoreTraders_Condition ()
@@ -175,8 +175,8 @@ func int DIA_Fenia_MoreTraders_Condition ()
 };
 func void DIA_Fenia_MoreTraders_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Czy tu, w porcie, sπ jeszcze jacyú inni handlarze?
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Trzymaj siÍ lewej strony nabrzeøa, a spotkasz Halvora, mojego mÍøa. Sprzedaje ryby.
+	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Czy tu, w porcie, sƒÖ jeszcze jacy≈õ inni handlarze?
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Trzymaj siƒô lewej strony nabrze≈ºa, a spotkasz Halvora, mojego mƒô≈ºa. Sprzedaje ryby.
 	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Po drugiej stronie znajdziesz Brahima, kartografa.
 };
 
@@ -190,7 +190,7 @@ instance DIA_Fenia_OV (C_INFO)
 	condition	= DIA_Fenia_OV_Condition;
 	information	= DIA_Fenia_OV_Info;
 	permanent 	= FALSE;
-	description	= "Znasz kogoú z gÛrnego miasta?";
+	description	= "Znasz kogo≈õ z g√≥rnego miasta?";
 };
 
 func int DIA_Fenia_OV_Condition ()
@@ -203,8 +203,8 @@ func int DIA_Fenia_OV_Condition ()
 };
 func void DIA_Fenia_OV_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Znasz kogoú z gÛrnego miasta?
-	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //Gdybym zna≥a kogoú stamtπd, na pewno byú mnie tu nie znalaz≥, ch≥opcze.
+	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Znasz kogo≈õ z g√≥rnego miasta?
+	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //Gdybym zna≈Ça kogo≈õ stamtƒÖd, na pewno by≈õ mnie tu nie znalaz≈Ç, ch≈Çopcze.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -217,7 +217,7 @@ instance DIA_Fenia_Interesting (C_INFO)
 	condition	= DIA_Fenia_Interesting_Condition;
 	information	= DIA_Fenia_Interesting_Info;
 	permanent 	= FALSE;
-	description	= "Co ciekawego moøna znaleüÊ w okolicach portu?";
+	description	= "Co ciekawego mo≈ºna znale≈∫ƒá w okolicach portu?";
 };
 
 func int DIA_Fenia_Interesting_Condition ()
@@ -229,11 +229,11 @@ func int DIA_Fenia_Interesting_Condition ()
 };
 func void DIA_Fenia_Interesting_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //Sπ tu jakieú interesujπce rzeczy, ktÛre powinienem zobaczyÊ?
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Jeúli szukasz mocnych wraøeÒ, udaj siÍ do knajpy Kardifa na nabrzeøu. Tam zawsze coú siÍ dzieje.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //Nie sposÛb tam nie trafiÊ. Przed wejúciem stoi facet, ktÛry z pewnoúciπ przykuje twojπ uwagÍ.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //Poza tym jest teø wielki okrÍt paladynÛw. Warto go zobaczyÊ!
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //Nietrudno tam trafiÊ. Trzymaj siÍ tylko lewej strony nabrzeøa, a potem przejdü pod wielkπ kamiennπ twarzπ.
+	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //SƒÖ tu jakie≈õ interesujƒÖce rzeczy, kt√≥re powinienem zobaczyƒá?
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Je≈õli szukasz mocnych wra≈ºe≈Ñ, udaj siƒô do knajpy Kardifa na nabrze≈ºu. Tam zawsze co≈õ siƒô dzieje.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //Nie spos√≥b tam nie trafiƒá. Przed wej≈õciem stoi facet, kt√≥ry z pewno≈õciƒÖ przykuje twojƒÖ uwagƒô.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //Poza tym jest te≈º wielki okrƒôt paladyn√≥w. Warto go zobaczyƒá!
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //Nietrudno tam trafiƒá. Trzymaj siƒô tylko lewej strony nabrze≈ºa, a potem przejd≈∫ pod wielkƒÖ kamiennƒÖ twarzƒÖ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -246,7 +246,7 @@ instance DIA_Fenia_Aufregend (C_INFO)
 	condition	= DIA_Fenia_Aufregend_Condition;
 	information	= DIA_Fenia_Aufregend_Info;
 	permanent 	= FALSE;
-	description	= "Czy ostatnio wydarzy≥o siÍ tu coú niezwyk≥ego?";
+	description	= "Czy ostatnio wydarzy≈Ço siƒô tu co≈õ niezwyk≈Çego?";
 };
 
 func int DIA_Fenia_Aufregend_Condition ()
@@ -258,11 +258,11 @@ func int DIA_Fenia_Aufregend_Condition ()
 };
 func void DIA_Fenia_Aufregend_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Czy ostatnio wydarzy≥o siÍ tu coú niezwyk≥ego?
-	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Moøna tak powiedzieÊ. To nie by≥o dawno temu.
-	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Ucieka≥ tÍdy z≥odziej. Najwyraüniej ukrad≥ ≥uk w dolnej czÍúci miasta.
-	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Oczywiúcie, straø przyby≥a jak zwykle za pÛüno.
-	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Uciek≥ im bez problemu - po prostu wskoczy≥ do wody i tyle go widzieli.
+	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Czy ostatnio wydarzy≈Ço siƒô tu co≈õ niezwyk≈Çego?
+	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Mo≈ºna tak powiedzieƒá. To nie by≈Ço dawno temu.
+	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Ucieka≈Ç tƒôdy z≈Çodziej. Najwyra≈∫niej ukrad≈Ç ≈Çuk w dolnej czƒô≈õci miasta.
+	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Oczywi≈õcie, stra≈º przyby≈Ça jak zwykle za p√≥≈∫no.
+	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Uciek≈Ç im bez problemu - po prostu wskoczy≈Ç do wody i tyle go widzieli.
 };
 
 

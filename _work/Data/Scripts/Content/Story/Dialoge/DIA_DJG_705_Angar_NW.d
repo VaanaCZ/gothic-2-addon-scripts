@@ -21,7 +21,7 @@ FUNC VOID DIA_Angar_NW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getˆtet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen get√∂tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Angar_NW_AllDragonsDead(C_INFO)
@@ -31,7 +31,7 @@ INSTANCE DIA_Angar_NW_AllDragonsDead(C_INFO)
 	condition	= DIA_Angar_NW_AllDragonsDead_Condition;
 	information	= DIA_Angar_NW_AllDragonsDead_Info;
 
-	description = "Co s≥ychaÊ?";
+	description = "Co s≈Çychaƒá?";
 };                       
 FUNC INT DIA_Angar_NW_AllDragonsDead_Condition()
 {
@@ -40,10 +40,10 @@ FUNC INT DIA_Angar_NW_AllDragonsDead_Condition()
 FUNC VOID DIA_Angar_NW_AllDragonsDead_Info()
 {	
 	AI_Output (other,self ,"DIA_Angar_NW_AllDragonsDead_15_00"); //Jak leci?
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Nie najgorzej, chociaø ciπgle mam ten przeklÍty bÛl g≥owy. Odkπd opuúci≥em GÛrniczπ DolinÍ, czujÍ siÍ jednak duøo lepiej.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Nie najgorzej, chocia≈º ciƒÖgle mam ten przeklƒôty b√≥l g≈Çowy. OdkƒÖd opu≈õci≈Çem G√≥rniczƒÖ Dolinƒô, czujƒô siƒô jednak du≈ºo lepiej.
 	if (Angar_IsOnBoard != LOG_SUCCESS) 
 	{
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //ZostanÍ tutaj. Gdybyú mnie potrzebowa≥, bÍdziesz wiedzia≥, gdzie mnie szukaÊ.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //Zostanƒô tutaj. Gdyby≈õ mnie potrzebowa≈Ç, bƒôdziesz wiedzia≈Ç, gdzie mnie szukaƒá.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Angar_NW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Angar_NW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Angar_NW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Zamierzam opuúciÊ Khorinis. Nie chcesz siÍ do mnie przy≥πczyÊ?";
+	description	 = 	"Zamierzam opu≈õciƒá Khorinis. Nie chcesz siƒô do mnie przy≈ÇƒÖczyƒá?";
 };
 func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 {	
@@ -70,30 +70,30 @@ func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 };
 func void DIA_Angar_NW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Zamierzam opuúciÊ Khorinis. Nie chcesz siÍ do mnie przy≥πczyÊ?
-	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //Hmmm. Im dalej od GÛrniczej Doliny, tym lepiej. Kiedy ruszamy?
+	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Zamierzam opu≈õciƒá Khorinis. Nie chcesz siƒô do mnie przy≈ÇƒÖczyƒá?
+	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //Hmmm. Im dalej od G√≥rniczej Doliny, tym lepiej. Kiedy ruszamy?
 		
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	
-	B_LogEntry (TOPIC_Crew,"Angar jest wdziÍczny za pomoc w wydostaniu siÍ z GÛrniczej Doliny. Zaproponowa≥, øe przy≥πczy siÍ do mnie.");  
+	B_LogEntry (TOPIC_Crew,"Angar jest wdziƒôczny za pomoc w wydostaniu siƒô z G√≥rniczej Doliny. Zaproponowa≈Ç, ≈ºe przy≈ÇƒÖczy siƒô do mnie.");  
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Chwilowo mam juø wystarczajπco licznπ za≥ogÍ. Moøe odezwÍ siÍ do ciebie pÛüniej.
-		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Jak chcesz. Wiesz, gdzie mnie szukaÊ.
+		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Chwilowo mam ju≈º wystarczajƒÖco licznƒÖ za≈Çogƒô. Mo≈ºe odezwƒô siƒô do ciebie p√≥≈∫niej.
+		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Jak chcesz. Wiesz, gdzie mnie szukaƒá.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Dam ci znaÊ, kiedy przyjdzie pora.",DIA_Angar_NW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Idü na przystaÒ. Tam siÍ spotkamy.",DIA_Angar_NW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Dam ci znaƒá, kiedy przyjdzie pora.",DIA_Angar_NW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Id≈∫ na przysta≈Ñ. Tam siƒô spotkamy.",DIA_Angar_NW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Idü na przystaÒ. Tam siÍ spotkamy.
-	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //W porzπdku. Ruszam.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Id≈∫ na przysta≈Ñ. Tam siƒô spotkamy.
+	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //W porzƒÖdku. Ruszam.
 	 
                                                                                                                                                   
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -116,8 +116,8 @@ FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //Dam ci znaÊ, kiedy przyjdzie pora.
-	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //W porzπdku.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //Dam ci znaƒá, kiedy przyjdzie pora.
+	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //W porzƒÖdku.
 
 	Angar_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
@@ -133,7 +133,7 @@ instance DIA_Angar_NW_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Angar_NW_LeaveMyShip_Condition;
 	information	 = 	DIA_Angar_NW_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"ZostaÒ tutaj, pÛki nie odzyskasz si≥.";
+	description	 = 	"Zosta≈Ñ tutaj, p√≥ki nie odzyskasz si≈Ç.";
 };
 func int DIA_Angar_NW_LeaveMyShip_Condition ()
 {	
@@ -145,8 +145,8 @@ func int DIA_Angar_NW_LeaveMyShip_Condition ()
 };
 func void DIA_Angar_NW_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //ZostaÒ tutaj, pÛki nie odzyskasz si≥.
-	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //W porzπdku. Moøe tak bÍdzie lepiej.
+	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Zosta≈Ñ tutaj, p√≥ki nie odzyskasz si≈Ç.
+	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //W porzƒÖdku. Mo≈ºe tak bƒôdzie lepiej.
 	
 	Angar_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -155,7 +155,7 @@ func void DIA_Angar_NW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 {
@@ -164,7 +164,7 @@ instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Angar_NW_StillNeedYou_Condition;
 	information	 = 	DIA_Angar_NW_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Wracaj na pok≥ad.";
+	description	 = 	"Wracaj na pok≈Çad.";
 };
 
 func int DIA_Angar_NW_StillNeedYou_Condition ()
@@ -179,8 +179,8 @@ func int DIA_Angar_NW_StillNeedYou_Condition ()
 
 func void DIA_Angar_NW_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Wracaj na pok≥ad.
-	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Jesteú jeszcze gorszy niø ja. Moøe byú siÍ wreszcie zdecydowa≥? Bywaj.
+	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Wracaj na pok≈Çad.
+	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Jeste≈õ jeszcze gorszy ni≈º ja. Mo≈ºe by≈õ siƒô wreszcie zdecydowa≈Ç? Bywaj.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Angar_IsOnBoard	 = LOG_SUCCESS;
@@ -245,7 +245,7 @@ instance DIA_Angar_NW_FOUNDAMULETT		(C_INFO)
 	condition	 = 	DIA_Angar_NW_FOUNDAMULETT_Condition;
 	information	 = 	DIA_Angar_NW_FOUNDAMULETT_Info;
 
-	description	 = 	"Znalaz≥em twÛj amulet.";
+	description	 = 	"Znalaz≈Çem tw√≥j amulet.";
 };
 
 func int DIA_Angar_NW_FOUNDAMULETT_Condition ()

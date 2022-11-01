@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10028_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10028_Buddler_Hi_Condition;
 	information = DIA_Addon_10028_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_10028_Buddler_Hi_Condition()
 {	
@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10028_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10028_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00");//Co s³ychaæ?
+	AI_Output (other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00");//Co sÅ‚ychaÄ‡?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//Nie zamierzam tu kopaæ. Od tego mamy niewolników.
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//Zdobywanie z³ota jeszcze nigdy nie by³o tak ³atwe!
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//Nie zamierzam tu kopaÄ‡. Od tego mamy niewolnikÃ³w.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//Zdobywanie zÅ‚ota jeszcze nigdy nie byÅ‚o tak Å‚atwe!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03");//Hmmf. Co za idiota uwolni³ niewolników?
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03");//Hmmf. Co za idiota uwolniÅ‚ niewolnikÃ³w?
 		AI_StopProcessInfos(self);
 	};
 };
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_10028_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10028_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_00");//Musisz kopaæ od do³u do góry.
-	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//To trochê trudne, ale tym sposobem wydobêdziesz ze ska³y wiêcej z³ota.
+	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_00");//Musisz kopaÄ‡ od doÅ‚u do gÃ³ry.
+	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//To trochÄ™ trudne, ale tym sposobem wydobÄ™dziesz ze skaÅ‚y wiÄ™cej zÅ‚ota.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

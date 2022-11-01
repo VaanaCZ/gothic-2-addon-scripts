@@ -18,7 +18,7 @@ INSTANCE PIR_1356_Addon_Bill (Npc_Default)
 	EquipItem (self, ItMw_Addon_PIR1hAxe);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_Drax, BodyTex_N, ITAR_PIR_L_Addon);	

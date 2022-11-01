@@ -31,7 +31,7 @@ INSTANCE DIA_Bartok_PICKPOCKET (C_INFO)
 	condition	= DIA_Bartok_PICKPOCKET_Condition;
 	information	= DIA_Bartok_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego ko³czanu bêdzie doœæ ³atwa)";
+	description = "(KradzieÅ¼ tego koÅ‚czanu bÄ™dzie doÅ›Ä‡ Å‚atwa)";
 };                       
 
 FUNC INT DIA_Bartok_PICKPOCKET_Condition()
@@ -85,7 +85,7 @@ INSTANCE DIA_Bartok_Hallo (C_INFO)
 	condition	= DIA_Bartok_Hallo_Condition;
 	information	= DIA_Bartok_Hallo_Info;
 	permanent	= FALSE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 FUNC INT DIA_Bartok_Hallo_Condition()
 {
@@ -93,11 +93,11 @@ FUNC INT DIA_Bartok_Hallo_Condition()
 };
 FUNC VOID DIA_Bartok_Hallo_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_Hello_15_00"); //Co s³ychaæ?
-	AI_Output (self ,other,"DIA_Bartok_Hello_04_01"); //Nie jesteœ st¹d, co? Niewa¿ne, ja te¿ nie.
-	AI_Output (other ,self,"DIA_Bartok_Hello_15_02"); //Gdzie siê wczeœniej krêci³eœ?
-	AI_Output (self ,other,"DIA_Bartok_Hello_04_03"); //W lasach, polowa³em na wilki i œcierwojady razem z innymi myœliwymi.
-	AI_Output (self ,other,"DIA_Bartok_Hello_04_04"); //Ale rzuci³em to. Czasy zrobi³y siê niebezpieczne. Krêci siê tam sporo podejrzanych typów...
+	AI_Output (other ,self,"DIA_Bartok_Hello_15_00"); //Co sÅ‚ychaÄ‡?
+	AI_Output (self ,other,"DIA_Bartok_Hello_04_01"); //Nie jesteÅ› stÄ…d, co? NiewaÅ¼ne, ja teÅ¼ nie.
+	AI_Output (other ,self,"DIA_Bartok_Hello_15_02"); //Gdzie siÄ™ wczeÅ›niej krÄ™ciÅ‚eÅ›?
+	AI_Output (self ,other,"DIA_Bartok_Hello_04_03"); //W lasach, polowaÅ‚em na wilki i Å›cierwojady razem z innymi myÅ›liwymi.
+	AI_Output (self ,other,"DIA_Bartok_Hello_04_04"); //Ale rzuciÅ‚em to. Czasy zrobiÅ‚y siÄ™ niebezpieczne. KrÄ™ci siÄ™ tam sporo podejrzanych typÃ³w...
 };
 // *****************************************************
 //						Jaeger
@@ -109,7 +109,7 @@ INSTANCE DIA_Bartok_Jaeger(C_INFO)
 	condition	= DIA_Bartok_Jaeger_Condition;
 	information	= DIA_Bartok_Jaeger_Info;
 	permanent	= FALSE;
-	description	= "Gdzie mogê znaleŸæ innych myœliwych?";
+	description	= "Gdzie mogÄ™ znaleÅºÄ‡ innych myÅ›liwych?";
 };                       
 FUNC INT DIA_Bartok_Jaeger_Condition()
 {
@@ -120,12 +120,12 @@ FUNC INT DIA_Bartok_Jaeger_Condition()
 };
 FUNC VOID DIA_Bartok_Jaeger_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_Jager_15_00"); //Gdzie mogê znaleŸæ innych myœliwych?
-	AI_Output (self ,other,"DIA_Bartok_Jager_04_01"); //Mieliœmy obóz niedaleko tawerny, w po³owie drogi do gospodarstwa Onara.
-	AI_Output (self ,other,"DIA_Bartok_Jager_04_02"); //Ale nie wiem, czy ktoœ jeszcze tam zosta³.
+	AI_Output (other ,self,"DIA_Bartok_Jager_15_00"); //Gdzie mogÄ™ znaleÅºÄ‡ innych myÅ›liwych?
+	AI_Output (self ,other,"DIA_Bartok_Jager_04_01"); //MieliÅ›my obÃ³z niedaleko tawerny, w poÅ‚owie drogi do gospodarstwa Onara.
+	AI_Output (self ,other,"DIA_Bartok_Jager_04_02"); //Ale nie wiem, czy ktoÅ› jeszcze tam zostaÅ‚.
 	
-	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_00"); //Do niedawna obaj przebywaliœmy w mieœcie.
-	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_01"); //Mój przyjaciel Trokar jest bardzo dobrym myœliwym.
+	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_00"); //Do niedawna obaj przebywaliÅ›my w mieÅ›cie.
+	AI_Output (self ,other,"DIA_Addon_Bartok_Jager_04_01"); //MÃ³j przyjaciel Trokar jest bardzo dobrym myÅ›liwym.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -153,29 +153,29 @@ func void DIA_Addon_Bartok_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Bartok_MissingPeople_15_00"); //Gdzie on teraz przebywa?
 	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_01"); //To dziwna historia...
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_02"); //Kilka dni temu siedzieliœmy w knajpie Coragona i gadaliœmy o ³owach.
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_03"); //Nie pytaj mnie, co siê dok³adnie sta³o - by³em nieŸle wstawiony.
-	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_04"); //Pamiêtam tylko, ¿e Trokar wspomnia³ coœ o zakupie bagiennego ziela... Nigdy nie wróci³.
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_02"); //Kilka dni temu siedzieliÅ›my w knajpie Coragona i gadaliÅ›my o Å‚owach.
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_03"); //Nie pytaj mnie, co siÄ™ dokÅ‚adnie staÅ‚o - byÅ‚em nieÅºle wstawiony.
+	AI_Output	(self, other, "DIA_Addon_Bartok_MissingPeople_04_04"); //PamiÄ™tam tylko, Å¼e Trokar wspomniaÅ‚ coÅ› o zakupie bagiennego ziela... Nigdy nie wrÃ³ciÅ‚.
 
 	MIS_Bartok_MissingTrokar = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Addon_Bartok_MissingPeople);
-	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "Nie próbowa³eœ go szukaæ?", DIA_Addon_Bartok_MissingPeople_such );
-	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "Gdzie mia³ kupiæ to ziele?", DIA_Addon_Bartok_MissingPeople_wo );
+	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "Nie prÃ³bowaÅ‚eÅ› go szukaÄ‡?", DIA_Addon_Bartok_MissingPeople_such );
+	Info_AddChoice	(DIA_Addon_Bartok_MissingPeople, "Gdzie miaÅ‚ kupiÄ‡ to ziele?", DIA_Addon_Bartok_MissingPeople_wo );
 };
 func void DIA_Addon_Bartok_MissingPeople_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_wo_15_00"); //Gdzie mia³ kupiæ to ziele?
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_wo_04_01"); //Chyba gdzieœ w porcie.
+	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_wo_15_00"); //Gdzie miaÅ‚ kupiÄ‡ to ziele?
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_wo_04_01"); //Chyba gdzieÅ› w porcie.
 };
 func void DIA_Addon_Bartok_MissingPeople_such ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_such_15_00"); //Nie próbowa³eœ go szukaæ?
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_01"); //Nie. Powiadomi³em tylko stra¿.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_02"); //Jej funkcjonariusze nie zdo³ali go odnaleŸæ...
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_03"); //Mam nadziejê, ¿e nie zaatakowa³ go wilk lub nie sta³o siê coœ jeszcze gorszego.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_04"); //Myœl, ¿e podczas polowania móg³bym natkn¹æ siê na jego zimne truch³o... przepe³nia mnie strachem.
-	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_05"); //Ten obraz nigdy chyba nie zniknie z mej pamiêci...
+	AI_Output			(other, self, "DIA_Addon_Bartok_MissingPeople_such_15_00"); //Nie prÃ³bowaÅ‚eÅ› go szukaÄ‡?
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_01"); //Nie. PowiadomiÅ‚em tylko straÅ¼.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_02"); //Jej funkcjonariusze nie zdoÅ‚ali go odnaleÅºÄ‡...
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_03"); //Mam nadziejÄ™, Å¼e nie zaatakowaÅ‚ go wilk lub nie staÅ‚o siÄ™ coÅ› jeszcze gorszego.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_04"); //MyÅ›l, Å¼e podczas polowania mÃ³gÅ‚bym natknÄ…Ä‡ siÄ™ na jego zimne truchÅ‚o... przepeÅ‚nia mnie strachem.
+	AI_Output			(self, other, "DIA_Addon_Bartok_MissingPeople_such_04_05"); //Ten obraz nigdy chyba nie zniknie z mej pamiÄ™ci...
 };
 
 // *****************************************************
@@ -188,7 +188,7 @@ INSTANCE DIA_Bartok_Bosper (C_INFO)
 	condition	= DIA_Bartok_Bosper_Condition;
 	information	= DIA_Bartok_Bosper_Info;
 	permanent	= FALSE;
-	description	= "Bosper mówi³, ¿e kiedyœ dla niego pracowa³eœ...";
+	description	= "Bosper mÃ³wiÅ‚, Å¼e kiedyÅ› dla niego pracowaÅ‚eÅ›...";
 };                       
 FUNC INT DIA_Bartok_Bosper_Condition()
 {
@@ -200,14 +200,14 @@ FUNC INT DIA_Bartok_Bosper_Condition()
 };
 FUNC VOID DIA_Bartok_Bosper_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_Bosper_15_00"); //Bosper mówi³, ¿e kiedyœ dla niego pracowa³eœ...
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_01"); //To prawda. Ale jego interesuj¹ tylko te cholerne skóry.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_02"); //Mówi³em mu, jak siê tam zrobi³o niebezpiecznie. Nie zwróci³ na to uwagi.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_03"); //No có¿, przynajmniej dobrze zap³aci³ - nie mogê narzekaæ.
-	AI_Output (other ,self,"DIA_Bartok_Bosper_15_04"); //Mo¿esz mi coœ o nim powiedzieæ?
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_05"); //Ostatnio ktoœ ukrad³ Bosperowi jeden z jego ³uków. W bia³y dzieñ.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_06"); //Jakiœ facet po prostu wszed³ do jego sklepu, wzi¹³ ³uk i wyszed³.
-	AI_Output (self ,other,"DIA_Bartok_Bosper_04_07"); //Z³odzieje s¹ coraz bardziej bezczelni!
+	AI_Output (other ,self,"DIA_Bartok_Bosper_15_00"); //Bosper mÃ³wiÅ‚, Å¼e kiedyÅ› dla niego pracowaÅ‚eÅ›...
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_01"); //To prawda. Ale jego interesujÄ… tylko te cholerne skÃ³ry.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_02"); //MÃ³wiÅ‚em mu, jak siÄ™ tam zrobiÅ‚o niebezpiecznie. Nie zwrÃ³ciÅ‚ na to uwagi.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_03"); //No cÃ³Å¼, przynajmniej dobrze zapÅ‚aciÅ‚ - nie mogÄ™ narzekaÄ‡.
+	AI_Output (other ,self,"DIA_Bartok_Bosper_15_04"); //MoÅ¼esz mi coÅ› o nim powiedzieÄ‡?
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_05"); //Ostatnio ktoÅ› ukradÅ‚ Bosperowi jeden z jego Å‚ukÃ³w. W biaÅ‚y dzieÅ„.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_06"); //JakiÅ› facet po prostu wszedÅ‚ do jego sklepu, wziÄ…Å‚ Å‚uk i wyszedÅ‚.
+	AI_Output (self ,other,"DIA_Bartok_Bosper_04_07"); //ZÅ‚odzieje sÄ… coraz bardziej bezczelni!
 	
 	if (MIS_Bosper_Bogen != LOG_SUCCESS) 
 	{    
@@ -225,7 +225,7 @@ INSTANCE DIA_Bartok_WannaLearn (C_INFO)
 	condition	= DIA_Bartok_WannaLearn_Condition;
 	information	= DIA_Bartok_WannaLearn_Info;
 	permanent	= FALSE;
-	description	= "Mo¿esz nauczyæ mnie czegoœ o polowaniu?";
+	description	= "MoÅ¼esz nauczyÄ‡ mnie czegoÅ› o polowaniu?";
 };                       
 FUNC INT DIA_Bartok_WannaLearn_Condition()
 {
@@ -236,17 +236,17 @@ FUNC INT DIA_Bartok_WannaLearn_Condition()
 };
 FUNC VOID DIA_Bartok_WannaLearn_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_WannaLearn_15_00"); //Mo¿esz nauczyæ mnie czegoœ o polowaniu?
-	AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_01"); //Mogê ci pokazaæ, jak siê cicho skradaæ i pos³ugiwaæ siê ³ukiem.
+	AI_Output (other ,self,"DIA_Bartok_WannaLearn_15_00"); //MoÅ¼esz nauczyÄ‡ mnie czegoÅ› o polowaniu?
+	AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_01"); //MogÄ™ ci pokazaÄ‡, jak siÄ™ cicho skradaÄ‡ i posÅ‚ugiwaÄ‡ siÄ™ Å‚ukiem.
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_02"); //Jeœli chcesz siê nauczyæ, jak zdejmowaæ skóry ze zwierz¹t, idŸ do Bospera. To on mnie tego nauczy³.
+		AI_Output (self ,other,"DIA_Bartok_WannaLearn_04_02"); //JeÅ›li chcesz siÄ™ nauczyÄ‡, jak zdejmowaÄ‡ skÃ³ry ze zwierzÄ…t, idÅº do Bospera. To on mnie tego nauczyÅ‚.
 	};
 	
 	Bartok_TeachPlayer = TRUE;
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Bartok mo¿e mnie nauczyæ strzelania z ³uku oraz skradania siê.");
+	B_LogEntry (Topic_CityTeacher, "Bartok moÅ¼e mnie nauczyÄ‡ strzelania z Å‚uku oraz skradania siÄ™.");
 };
 
 // *****************************************************
@@ -259,7 +259,7 @@ INSTANCE DIA_Bartok_TeachSneak (C_INFO)
 	condition	= DIA_Bartok_TeachSneak_Condition;
 	information	= DIA_Bartok_TeachSneak_Info;
 	permanent	= TRUE;
-	description	= B_BuildLearnString ("Naucz mnie, jak siê nale¿y skradaæ!", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
+	description	= B_BuildLearnString ("Naucz mnie, jak siÄ™ naleÅ¼y skradaÄ‡!", B_GetLearnCostTalent(other, NPC_TALENT_SNEAK, 1));
 };                       
 FUNC INT DIA_Bartok_TeachSneak_Condition()
 {
@@ -271,15 +271,15 @@ FUNC INT DIA_Bartok_TeachSneak_Condition()
 };
 FUNC VOID DIA_Bartok_TeachSneak_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_TeachSneak_15_00"); //Poka¿ mi, jak siê skradaæ.
+	AI_Output (other ,self,"DIA_Bartok_TeachSneak_15_00"); //PokaÅ¼ mi, jak siÄ™ skradaÄ‡.
 	
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_SNEAK))
 	{
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_01"); //Dobrze. Najpierw musisz nauczyæ siê odpowiednio roz³o¿yæ ciê¿ar swojego cia³a.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_02"); //Aby to zrobiæ, ugnij kolana i zawsze stawiaj stopê, zaczynaj¹c od piêty.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_03"); //Zanim ruszysz drug¹ nogê, znajdŸ dobre oparcie i przenieœ ca³y ciê¿ar cia³a na pierwsz¹ nogê.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_04"); //Do wiêkszoœci stworzeñ nie uda ci siê podejœæ, chyba ¿e œpi¹. Zwierzêta po prostu ciê wyczuj¹.
-		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_05"); //A wiêc zawsze zwracaj uwagê, sk¹d wieje wiatr.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_01"); //Dobrze. Najpierw musisz nauczyÄ‡ siÄ™ odpowiednio rozÅ‚oÅ¼yÄ‡ ciÄ™Å¼ar swojego ciaÅ‚a.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_02"); //Aby to zrobiÄ‡, ugnij kolana i zawsze stawiaj stopÄ™, zaczynajÄ…c od piÄ™ty.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_03"); //Zanim ruszysz drugÄ… nogÄ™, znajdÅº dobre oparcie i przenieÅ› caÅ‚y ciÄ™Å¼ar ciaÅ‚a na pierwszÄ… nogÄ™.
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_04"); //Do wiÄ™kszoÅ›ci stworzeÅ„ nie uda ci siÄ™ podejÅ›Ä‡, chyba Å¼e Å›piÄ…. ZwierzÄ™ta po prostu ciÄ™ wyczujÄ….
+		AI_Output (self ,other,"DIA_Bartok_TeachSneak_04_05"); //A wiÄ™c zawsze zwracaj uwagÄ™, skÄ…d wieje wiatr.
 	};
 };
 
@@ -296,7 +296,7 @@ INSTANCE DIA_Bartok_Teach (C_INFO)
 	condition	= DIA_Bartok_Teach_Condition;
 	information	= DIA_Bartok_Teach_Info;
 	permanent	= TRUE;
-	Description = "Chcia³bym lepiej strzelaæ z ³uku.";
+	Description = "ChciaÅ‚bym lepiej strzelaÄ‡ z Å‚uku.";
 };                       
 FUNC INT DIA_Bartok_Teach_Condition()
 {
@@ -307,8 +307,8 @@ FUNC INT DIA_Bartok_Teach_Condition()
 };
 func VOID DIA_Bartok_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Bartok_TeachBow_15_00"); //Chcia³bym lepiej strzelaæ z ³uku.
-	AI_Output (self ,other,"DIA_Bartok_TeachBow_04_01"); //W porz¹dku, zobaczymy, czy uda mi siê ciebie czegoœ nauczyæ...
+	AI_Output (other,self ,"DIA_Bartok_TeachBow_15_00"); //ChciaÅ‚bym lepiej strzelaÄ‡ z Å‚uku.
+	AI_Output (self ,other,"DIA_Bartok_TeachBow_04_01"); //W porzÄ…dku, zobaczymy, czy uda mi siÄ™ ciebie czegoÅ› nauczyÄ‡...
 	
 	Bosper_MerkeBow = other.HitChance[NPC_TALENT_BOW];
 	
@@ -323,11 +323,11 @@ FUNC VOID DIA_Bartok_Teach_BACK()
 {
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_00"); //Teraz powinieneœ poszukaæ kogoœ, kto zna siê na tym lepiej ni¿ ja.
+		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_00"); //Teraz powinieneÅ› poszukaÄ‡ kogoÅ›, kto zna siÄ™ na tym lepiej niÅ¼ ja.
 	}
 	else if (Bosper_MerkeBow < other.HitChance[NPC_TALENT_BOW])
 	{
-		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_01"); //W porz¹dku, twoja celnoœæ ju¿ siê poprawi³a.
+		AI_Output(self,other,"DIA_Bartok_TeachBow_BACK_04_01"); //W porzÄ…dku, twoja celnoÅ›Ä‡ juÅ¼ siÄ™ poprawiÅ‚a.
 	};
 	
 	Info_ClearChoices (DIA_Bartok_Teach);
@@ -366,7 +366,7 @@ INSTANCE DIA_Bartok_Zusammen (C_INFO)
 	condition	= DIA_Bartok_Zusammen_Condition;
 	information	= DIA_Bartok_Zusammen_Info;
 	permanent	= TRUE;
-	description	= "Czemu nie pójdziemy na polowanie razem?";
+	description	= "Czemu nie pÃ³jdziemy na polowanie razem?";
 };                       
 FUNC INT DIA_Bartok_Zusammen_Condition()
 {
@@ -380,34 +380,34 @@ FUNC VOID DIA_Bartok_Zusammen_Info()
 {	
 	if (Bartok_Later == FALSE)
 	{
-		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_00"); //Czemu nie pójdziemy na polowanie razem?
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_01"); //Hmmm. We dwóch jest bezpieczniej, to prawda...
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_02"); //A wiêc znasz siê trochê na polowaniu?
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_03"); //To znaczy, umiesz zdejmowaæ skórê ze zwierzêcia?
+		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_00"); //Czemu nie pÃ³jdziemy na polowanie razem?
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_01"); //Hmmm. We dwÃ³ch jest bezpieczniej, to prawda...
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_02"); //A wiÄ™c znasz siÄ™ trochÄ™ na polowaniu?
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_03"); //To znaczy, umiesz zdejmowaÄ‡ skÃ³rÄ™ ze zwierzÄ™cia?
 	};
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY[TROPHY_Fur] == TRUE)
 	{
 		if (Bartok_Later == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Bartok_HuntNOW_04_01"); //Masz 50 sztuk z³ota?
+			AI_Output (self ,other,"DIA_Bartok_HuntNOW_04_01"); //Masz 50 sztuk zÅ‚ota?
 		}
 		else
 		{
 			AI_Output (other ,self,"DIA_Bartok_Zusammen_15_04"); //Tak.
-			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_05"); //Dobra, ale chcê zobaczyæ 50 sztuk z³ota. Za to bêdziesz móg³ zatrzymaæ skóry i sprzedaæ je Bosperowi.
-			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_06"); //Uczciwy uk³ad, no nie?
+			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_05"); //Dobra, ale chcÄ™ zobaczyÄ‡ 50 sztuk zÅ‚ota. Za to bÄ™dziesz mÃ³gÅ‚ zatrzymaÄ‡ skÃ³ry i sprzedaÄ‡ je Bosperowi.
+			AI_Output (self ,other,"DIA_Bartok_Zusammen_04_06"); //Uczciwy ukÅ‚ad, no nie?
 		};
 		
 		Info_ClearChoices (DIA_Bartok_Zusammen);
 		Info_AddChoice	  (DIA_Bartok_Zusammen, "Na razie...", DIA_Bartok_Zusammen_Later);
-		Info_AddChoice	  (DIA_Bartok_Zusammen, "Proszê bardzo...", DIA_Bartok_Zusammen_Pay);
+		Info_AddChoice	  (DIA_Bartok_Zusammen, "ProszÄ™ bardzo...", DIA_Bartok_Zusammen_Pay);
 	}
 	else
 	{
 		AI_Output (other ,self,"DIA_Bartok_Zusammen_15_07"); //Nie.
 		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_08"); //W takim razie to nie ma sensu.
-		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_09"); //Wróæ, jak siê czegoœ nauczysz.
+		AI_Output (self ,other,"DIA_Bartok_Zusammen_04_09"); //WrÃ³Ä‡, jak siÄ™ czegoÅ› nauczysz.
 	};
 };
 
@@ -424,12 +424,12 @@ func void DIA_Bartok_Zusammen_Pay()
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 50))
 	{
-		AI_Output (other ,self,"DIA_Bartok_HuntNOW_GO_15_00"); //Proszê bardzo...
+		AI_Output (other ,self,"DIA_Bartok_HuntNOW_GO_15_00"); //ProszÄ™ bardzo...
 		Bartok_Bereit = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_03"); //Nie masz z³ota.
+		AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_03"); //Nie masz zÅ‚ota.
 	};
 };
 
@@ -447,7 +447,7 @@ INSTANCE DIA_Bartok_HuntNOW (C_INFO)
 	condition	= DIA_Bartok_HuntNOW_Condition;
 	information	= DIA_Bartok_HuntNOW_Info;
 	permanent	= FALSE;
-	description	= "ChodŸmy na polowanie!";
+	description	= "ChodÅºmy na polowanie!";
 };                       
 FUNC INT DIA_Bartok_HuntNOW_Condition()
 {
@@ -458,9 +458,9 @@ FUNC INT DIA_Bartok_HuntNOW_Condition()
 };
 FUNC VOID DIA_Bartok_HuntNOW_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_HuntNOW_15_00"); //ChodŸmy na polowanie!
-	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_01"); //W porz¹dku, idŸ za mn¹. Za po³udniow¹ bram¹ zaczyna siê las. Tam znajdziemy du¿o zwierz¹t.
-	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_02"); //Pewnie wiêcej, ni¿ byœmy chcieli...
+	AI_Output (other ,self,"DIA_Bartok_HuntNOW_15_00"); //ChodÅºmy na polowanie!
+	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_01"); //W porzÄ…dku, idÅº za mnÄ…. Za poÅ‚udniowÄ… bramÄ… zaczyna siÄ™ las. Tam znajdziemy duÅ¼o zwierzÄ…t.
+	AI_Output (self ,other,"DIA_Bartok_HuntNOW_GO_04_02"); //Pewnie wiÄ™cej, niÅ¼ byÅ›my chcieli...
 	Bartok_Los = TRUE;
 		
 	AI_StopProcessInfos (self);
@@ -498,17 +498,17 @@ FUNC INT DIA_Bartok_ImWald_Condition()
 };
 FUNC VOID DIA_Bartok_ImWald_Info()
 {	
-	AI_Output (self ,other,"DIA_Bartok_ImWald_04_00"); //No i jak myœlisz, powinniœmy iœæ dalej w las, czy nie?
+	AI_Output (self ,other,"DIA_Bartok_ImWald_04_00"); //No i jak myÅ›lisz, powinniÅ›my iÅ›Ä‡ dalej w las, czy nie?
 	
 	Info_ClearChoices (DIA_Bartok_ImWald);
 	Info_AddChoice	  (DIA_Bartok_ImWald, "Wracajmy!", DIA_Bartok_ImWald_NachHause);
-	Info_AddChoice	  (DIA_Bartok_ImWald, "ChodŸmy dalej.", DIA_Bartok_ImWald_Weiter);
+	Info_AddChoice	  (DIA_Bartok_ImWald, "ChodÅºmy dalej.", DIA_Bartok_ImWald_Weiter);
 };
 
 func void DIA_Bartok_ImWald_NachHause()
 {
 	AI_Output (other ,self,"DIA_Bartok_ImWald_NachHause_15_00"); //Wracajmy!
-	AI_Output (self ,other,"DIA_Bartok_ImWald_NachHause_04_01"); //To mi siê podoba. Pewnie wleŸlibyœmy prosto w uœcisk jakiegoœ orka.
+	AI_Output (self ,other,"DIA_Bartok_ImWald_NachHause_04_01"); //To mi siÄ™ podoba. Pewnie wleÅºlibyÅ›my prosto w uÅ›cisk jakiegoÅ› orka.
 	
 	Info_ClearChoices (DIA_Bartok_ImWald);
 	AI_StopProcessInfos (self);
@@ -518,8 +518,8 @@ func void DIA_Bartok_ImWald_NachHause()
 
 func void DIA_Bartok_ImWald_Weiter()
 {
-	AI_Output (other ,self,"DIA_Bartok_ImWald_Weiter_15_00"); //ChodŸmy dalej.
-	AI_Output (self ,other,"DIA_Bartok_ImWald_Weiter_04_01"); //W porz¹dku. Miejmy nadziejê, ¿e jakoœ to bêdzie...
+	AI_Output (other ,self,"DIA_Bartok_ImWald_Weiter_15_00"); //ChodÅºmy dalej.
+	AI_Output (self ,other,"DIA_Bartok_ImWald_Weiter_04_01"); //W porzÄ…dku. Miejmy nadziejÄ™, Å¼e jakoÅ› to bÄ™dzie...
 	
 	if (!Npc_IsDead(CityOrc))
 	{
@@ -556,8 +556,8 @@ FUNC INT DIA_Bartok_Angekommen_Condition()
 };
 FUNC VOID DIA_Bartok_Angekommen_Info()
 {	
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_00"); //Doœæ tego! Wracam do miasta.
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_01"); //Tutaj jest zbyt niebezpiecznie jak dla mnie - nawet we dwóch.
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_00"); //DoÅ›Ä‡ tego! Wracam do miasta.
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_01"); //Tutaj jest zbyt niebezpiecznie jak dla mnie - nawet we dwÃ³ch.
 	
 	if (Bartok_OrkStillThere == TRUE)
 	//&& (Npc_IsDead (CityOrc))
@@ -568,7 +568,7 @@ FUNC VOID DIA_Bartok_Angekommen_Info()
 	};
 	
 	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_03"); //No to na razie!
-	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_04"); //Mo¿esz sprzedaæ te skóry Bosperowi.
+	AI_Output (self ,other,"DIA_Bartok_Angekommen_04_04"); //MoÅ¼esz sprzedaÄ‡ te skÃ³ry Bosperowi.
 	
 	Bartok_Ende = TRUE;
 	AI_StopProcessInfos (self);
@@ -587,7 +587,7 @@ INSTANCE DIA_Bartok_PERM (C_INFO)
 	condition	= DIA_Bartok_PERM_Condition;
 	information	= DIA_Bartok_PERM_Info;
 	permanent	= TRUE;
-	description = "Wszystko w porz¹dku?";
+	description = "Wszystko w porzÄ…dku?";
 };                       
 FUNC INT DIA_Bartok_PERM_Condition()
 {
@@ -598,14 +598,14 @@ FUNC INT DIA_Bartok_PERM_Condition()
 };
 FUNC VOID DIA_Bartok_PERM_Info()
 {	
-	AI_Output (other ,self,"DIA_Bartok_PERM_15_00"); //Wszystko w porz¹dku?
+	AI_Output (other ,self,"DIA_Bartok_PERM_15_00"); //Wszystko w porzÄ…dku?
 	
 	if (Bartok_Ende == TRUE)
 	{		
-		AI_Output (self ,other,"DIA_Bartok_PERM_04_01"); //Tak. Ale ju¿ nie wychodzê z miasta. Przynajmniej w najbli¿szym czasie.
+		AI_Output (self ,other,"DIA_Bartok_PERM_04_01"); //Tak. Ale juÅ¼ nie wychodzÄ™ z miasta. Przynajmniej w najbliÅ¼szym czasie.
 		if (Bartok_OrkGesagt == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Bartok_PERM_04_02"); //Ci¹gle mi dr¿¹ kolana, jak sobie przypomnê tego orka.
+			AI_Output (self ,other,"DIA_Bartok_PERM_04_02"); //CiÄ…gle mi drÅ¼Ä… kolana, jak sobie przypomnÄ™ tego orka.
 		};
 	}
 	else

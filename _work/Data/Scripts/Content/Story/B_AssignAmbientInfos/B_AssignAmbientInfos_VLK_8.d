@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_8_JOIN(C_INFO)
 	condition	= DIA_VLK_8_JOIN_Condition;
 	information	= DIA_VLK_8_JOIN_Info;
 	permanent	= TRUE;
-	description = "Chcia³bym zostaæ obywatelem tego miasta!";
+	description = "ChciaÅ‚bym zostaÄ‡ obywatelem tego miasta!";
 };                       
 
 FUNC INT DIA_VLK_8_JOIN_Condition()
@@ -43,11 +43,11 @@ FUNC INT DIA_VLK_8_JOIN_Condition()
 
 FUNC VOID DIA_VLK_8_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //Chcia³bym zostaæ obywatelem tego miasta!
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //Po co mi to mówisz? IdŸ do któregoœ z rzemieœlników w dolnej czêœci miasta. Jeœli dopisze ci szczêœcie, któryœ przyjmie ciê na czeladnika.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //W innym wypadku bêdziesz musia³ pójœæ do gubernatora i zostaæ zarejestrowany jako prawny obywatel.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //W chwili obecnej mo¿esz jednak o tym zapomnieæ. Dopóki w mieœcie stacjonuj¹ paladyni, dopóty gubernator nie ma w³adzy w mieœcie.
-	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //Przywódca paladynów, Lord Hagen, z pewnoœci¹ nie ma czasu na takie drobnostki.
+	AI_Output (other, self, "DIA_VLK_8_JOIN_15_00"); //ChciaÅ‚bym zostaÄ‡ obywatelem tego miasta!
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_01"); //Po co mi to mÃ³wisz? IdÅº do ktÃ³regoÅ› z rzemieÅ›lnikÃ³w w dolnej czÄ™Å›ci miasta. JeÅ›li dopisze ci szczÄ™Å›cie, ktÃ³ryÅ› przyjmie ciÄ™ na czeladnika.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_02"); //W innym wypadku bÄ™dziesz musiaÅ‚ pÃ³jÅ›Ä‡ do gubernatora i zostaÄ‡ zarejestrowany jako prawny obywatel.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_03"); //W chwili obecnej moÅ¼esz jednak o tym zapomnieÄ‡. DopÃ³ki w mieÅ›cie stacjonujÄ… paladyni, dopÃ³ty gubernator nie ma wÅ‚adzy w mieÅ›cie.
+	AI_Output (self, other, "DIA_VLK_8_JOIN_08_04"); //PrzywÃ³dca paladynÃ³w, Lord Hagen, z pewnoÅ›ciÄ… nie ma czasu na takie drobnostki.
 };
 
 // *************************************************************************
@@ -59,7 +59,7 @@ INSTANCE DIA_VLK_8_PEOPLE(C_INFO)
 	condition	= DIA_VLK_8_PEOPLE_Condition;
 	information	= DIA_VLK_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Którzy z obywateli miasta s¹ najwa¿niejsi?";
+	description = "KtÃ³rzy z obywateli miasta sÄ… najwaÅ¼niejsi?";
 };                       
 
 FUNC INT DIA_VLK_8_PEOPLE_Condition()
@@ -69,8 +69,8 @@ FUNC INT DIA_VLK_8_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_8_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //Którzy z obywateli miasta s¹ najwa¿niejsi?
-	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //Oprócz paladynów... Najwa¿niejsi s¹ rzemieœlnicy z dolnej czêœci miasta. Ich zdanie bardzo siê tu liczy.
+	AI_Output (other, self, "DIA_VLK_8_PEOPLE_15_00"); //KtÃ³rzy z obywateli miasta sÄ… najwaÅ¼niejsi?
+	AI_Output (self, other, "DIA_VLK_8_PEOPLE_08_01"); //OprÃ³cz paladynÃ³w... NajwaÅ¼niejsi sÄ… rzemieÅ›lnicy z dolnej czÄ™Å›ci miasta. Ich zdanie bardzo siÄ™ tu liczy.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_8_LOCATION(C_INFO)
 	condition	= DIA_VLK_8_LOCATION_Condition;
 	information	= DIA_VLK_8_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Czy s¹ tutaj jakieœ interesuj¹ce rzeczy?";
+	description = "Czy sÄ… tutaj jakieÅ› interesujÄ…ce rzeczy?";
 };                       
 
 FUNC INT DIA_VLK_8_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_8_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_8_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Jakie ciekawe miejsca warto tu zobaczyæ?
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //Niedawno do portu wp³yn¹³ statek paladynów. Jest wielki. Koniecznie musisz go zobaczyæ.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //W¹tpiê jednak, by chcieli ciê wpuœciæ na pok³ad. Paladyni broni¹ wstêpu na statek jak klejnotów koronnych.
-	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //Nic dziwnego. To jedyna p³ywaj¹ca jednostka zakotwiczona w okolicy.
+	AI_Output (other, self, "DIA_VLK_8_LOCATION_15_00"); //Jakie ciekawe miejsca warto tu zobaczyÄ‡?
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_01"); //Niedawno do portu wpÅ‚ynÄ…Å‚ statek paladynÃ³w. Jest wielki. Koniecznie musisz go zobaczyÄ‡.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_02"); //WÄ…tpiÄ™ jednak, by chcieli ciÄ™ wpuÅ›ciÄ‡ na pokÅ‚ad. Paladyni broniÄ… wstÄ™pu na statek jak klejnotÃ³w koronnych.
+	AI_Output (self, other, "DIA_VLK_8_LOCATION_08_03"); //Nic dziwnego. To jedyna pÅ‚ywajÄ…ca jednostka zakotwiczona w okolicy.
 };
 
 // *************************************************************************
@@ -115,13 +115,13 @@ func INT DIA_VLK_8_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_8_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_VLK_8_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //Ostatnimi czasy wszyscy s¹ bardzo nerwowi.
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Jakby ma³o by³o tego, ¿e przybyli tu paladyni - teraz jeszcze znikaj¹ ludzie!
-		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //Najwy¿sza pora, ¿eby stra¿ coœ z tym zrobi³a.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_00"); //Ostatnimi czasy wszyscy sÄ… bardzo nerwowi.
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_01"); //Jakby maÅ‚o byÅ‚o tego, Å¼e przybyli tu paladyni - teraz jeszcze znikajÄ… ludzie!
+		AI_Output (self,other,"DIA_Addon_VLK_8_STANDARD_08_02"); //NajwyÅ¼sza pora, Å¼eby straÅ¼ coÅ› z tym zrobiÅ‚a.
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
 				Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -133,25 +133,25 @@ FUNC VOID DIA_VLK_8_STANDARD_Info()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Wszyscy czekaj¹ na og³oszenie powodu wizyty paladynów. Domyœlam siê, ¿e s¹ tu z powodu orków. Bestie pewnie wkrótce zaatakuj¹!
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //Mo¿e i paladynów prowadzi ³aska Innosa, lecz kiedy zjawi¹ siê orkowe hordy, wszyscy bêdziemy straceni.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_01"); //Wszyscy czekajÄ… na ogÅ‚oszenie powodu wizyty paladynÃ³w. DomyÅ›lam siÄ™, Å¼e sÄ… tu z powodu orkÃ³w. Bestie pewnie wkrÃ³tce zaatakujÄ…!
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_02"); //MoÅ¼e i paladynÃ³w prowadzi Å‚aska Innosa, lecz kiedy zjawiÄ… siÄ™ orkowe hordy, wszyscy bÄ™dziemy straceni.
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Ludzie powiadaj¹, ¿e jedynym powodem wizyty paladynów jest chêæ zabrania rudy... na potrzeby wojny na kontynencie.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //Czy wiesz, co to oznacza? Król ma w g³êbokim powa¿aniu to, ¿e orkowie wszystkich nas pozabijaj¹.
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //Zrobiê wszystko, by byæ na tym statku, kiedy paladyni zaczn¹ podnosiæ kotwicê.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_03"); //Ludzie powiadajÄ…, Å¼e jedynym powodem wizyty paladynÃ³w jest chÄ™Ä‡ zabrania rudy... na potrzeby wojny na kontynencie.
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_04"); //Czy wiesz, co to oznacza? KrÃ³l ma w gÅ‚Ä™bokim powaÅ¼aniu to, Å¼e orkowie wszystkich nas pozabijajÄ….
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_05"); //ZrobiÄ™ wszystko, by byÄ‡ na tym statku, kiedy paladyni zacznÄ… podnosiÄ‡ kotwicÄ™.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //Ponoæ orkowie lec¹ tutaj na grzbietach smoków, wielkich jak po³owa miasta. Nie mamy ¿adnych szans na obronê!
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_06"); //PonoÄ‡ orkowie lecÄ… tutaj na grzbietach smokÃ³w, wielkich jak poÅ‚owa miasta. Nie mamy Å¼adnych szans na obronÄ™!
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //Ludzie mówi¹, ¿e smoki zosta³y pokonane. Czy to prawda?
+		AI_Output (self,other,"DIA_VLK_8_STANDARD_08_07"); //Ludzie mÃ³wiÄ…, Å¼e smoki zostaÅ‚y pokonane. Czy to prawda?
 	};
 };
 

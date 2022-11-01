@@ -4,17 +4,17 @@
 ///////////////////////////////////////////////////////////////////////
 func void B_DIA_Addon_Riordian_Teach_15_00 ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Teach_15_00"); //Poka¿ mi, jak wyszkoliæ mojego ognika.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Teach_15_00"); //PokaÅ¼ mi, jak wyszkoliÄ‡ mojego ognika.
 };
 func void  B_DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Teraz twój ognik bêdzie w stanie znaleŸæ wiêcej rzeczy, które mog¹ ci siê przydaæ.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Teraz twÃ³j ognik bÄ™dzie w stanie znaleÅºÄ‡ wiÄ™cej rzeczy, ktÃ³re mogÄ… ci siÄ™ przydaÄ‡.
 };
 func void B_DIA_Addon_Riordian_Teach_10_08 () 
 {
-	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Twój ognik bêdzie szuka³ wszystkich po¿ytecznych obiektów. Nie mogê ciê nauczyæ niczego wiêcej.
+	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //TwÃ³j ognik bÄ™dzie szukaÅ‚ wszystkich poÅ¼ytecznych obiektÃ³w. Nie mogÄ™ ciÄ™ nauczyÄ‡ niczego wiÄ™cej.
 };
 func void B_DIA_Addon_Riordian_Teach_10_01 () 
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach2_10_00"); //Czego ma szukaæ twój ognik?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach2_10_00"); //Czego ma szukaÄ‡ twÃ³j ognik?
 };

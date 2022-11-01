@@ -36,7 +36,7 @@ instance MENUITEM_MAIN_NEWGAME(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Nowa gra";
-	text[1]		= "Rozpocznij now¹ przygodê";  // Kommentar
+	text[1]		= "Rozpocznij nowÄ… przygodÄ™";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*0;
@@ -58,7 +58,7 @@ INSTANCE MENUITEM_MAIN_SAVEGAME_LOAD(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Wczytaj";
-	text[1]		=	"Kontynuuj zapisan¹ grê";  // Kommentar
+	text[1]		=	"Kontynuuj zapisanÄ… grÄ™";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		=  0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*1;
@@ -95,8 +95,8 @@ instance MENUITEM_MAIN_SAVEGAME_SAVE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_RESUME(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wznów";
-	text[1]		=   "Wznów trwaj¹c¹ rozgrywkê";  // Kommentar
+	text[0]		=	"WznÃ³w";
+	text[1]		=   "WznÃ³w trwajÄ…cÄ… rozgrywkÄ™";  // Kommentar
 	
 	// Position und Dimension
 	posx		=	0;		posy		=	MENU_MAIN_Y + MENU_MAIN_DY*3;
@@ -116,7 +116,7 @@ instance MENUITEM_MAIN_OPTIONS(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Opcje";
-	text[1]		= "Ustawienia rozgrywki, dŸwiêku i grafiki.";  // Kommentar
+	text[1]		= "Ustawienia rozgrywki, dÅºwiÄ™ku i grafiki.";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*4;
@@ -133,7 +133,7 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Wprowadzenie";
-	text[1]		= "Odtwórz film wprowadzaj¹cy";
+	text[1]		= "OdtwÃ³rz film wprowadzajÄ…cy";
 	// Positionen  und Dimensione	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*5;
 	dimx		= 8100;		dimy		=  750;
@@ -147,8 +147,8 @@ instance MENUITEM_MAIN_INTRO(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Twórcy gry";
-	text[1]		= "Lista twórców gry";  // Kommentar
+	text[0]		= "TwÃ³rcy gry";
+	text[1]		= "Lista twÃ³rcÃ³w gry";  // Kommentar
 	
 	// Positionen  und Dimensionen	
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*6;
@@ -168,8 +168,8 @@ INSTANCE MENUITEM_MAIN_CREDITS(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MAIN_EXIT(C_MENU_ITEM_DEF) 
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "WyjdŸ";
-	text[1]		= "Powrót do systemu Windows";  // Kommentar
+	text[0]		= "WyjdÅº";
+	text[1]		= "PowrÃ³t do systemu Windows";  // Kommentar
 	
 	// Positionen  und Dimensionen
 	posx		= 0;		posy		= MENU_MAIN_Y + MENU_MAIN_DY*7;	

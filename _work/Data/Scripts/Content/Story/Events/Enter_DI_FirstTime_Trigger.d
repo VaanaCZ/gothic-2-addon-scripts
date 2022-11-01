@@ -8,11 +8,11 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 	//----- Levelchange verbarrikadieren --------
 	if (Npc_HasItems (hero,ITKE_SHIP_LEVELCHANGE_MIS))
 	{
-		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die Tür wieder zu!!!!
+		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die TÃ¼r wieder zu!!!!
 	};
 	
 	
-	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen Brückenevent
+	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen BrÃ¼ckenevent
 	{
 		Wld_InsertItem	(ItPo_Perm_DEX, "FP_ITEM_DI_ENTER_05");
 	};
@@ -21,7 +21,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 //##
 //##	B_ENTER_DRAGONISLAND			
 //##	//Joly: Steht hier, denn hier bin ich sicher, 
-//##	dass alle am start sind und können befüllt werden!
+//##	dass alle am start sind und kÃ¶nnen befÃ¼llt werden!
 //##
 //###############################################
 
@@ -44,7 +44,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 					{
 						Wld_InsertItem	(ItSe_XardasNotfallBeutel_MIS, "FP_ITEM_SHIP_12");
 						SC_InnosEyeVergessen_DI = TRUE;
-						B_LogEntry (TOPIC_HallenVonIrdorath,"Ostatniej nocy mia³em dziwny sen. Widzia³em Xardasa, który kaza³ mi przynieœæ coœ ze sto³u alchemicznego na statku. Bardzo dziwne. Zw³aszcza ¿e nic nie pi³em przed snem."); 
+						B_LogEntry (TOPIC_HallenVonIrdorath,"Ostatniej nocy miaÅ‚em dziwny sen. WidziaÅ‚em Xardasa, ktÃ³ry kazaÅ‚ mi przynieÅ›Ä‡ coÅ› ze stoÅ‚u alchemicznego na statku. Bardzo dziwne. ZwÅ‚aszcza Å¼e nic nie piÅ‚em przed snem."); 
 					};
 					Wld_InsertItem	(ItMi_Flask, "FP_ITEM_SHIP_06");
 					
@@ -62,88 +62,88 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			Log_CreateTopic (TOPIC_MyCrew, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_MyCrew, LOG_RUNNING);
 
-			//----- Die Kapitäne -----
+			//----- Die KapitÃ¤ne -----
 	
 				if ( JorgenIsCaptain == TRUE)	//Jorgen
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mój kapitan, Jorgen, poczeka na mnie na statku."); 
+					Log_AddEntry (TOPIC_MyCrew,"MÃ³j kapitan, Jorgen, poczeka na mnie na statku."); 
 				};
 			
 				if ( TorlofIsCaptain == TRUE)	//Torlof
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mój kapitan, Torlof, bêdzie broni³ statku tak d³ugo, a¿ nie wrócê z wyspy. Dziêki niemu stanê siê silniejszy i zrêczniejszy."); 
+					Log_AddEntry (TOPIC_MyCrew,"MÃ³j kapitan, Torlof, bÄ™dzie broniÅ‚ statku tak dÅ‚ugo, aÅ¼ nie wrÃ³cÄ™ z wyspy. DziÄ™ki niemu stanÄ™ siÄ™ silniejszy i zrÄ™czniejszy."); 
 				};
 			
 				if ( JackIsCaptain == TRUE)		//Jack
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mój kapitan, Jack, poczeka na mnie na statku. Wygl¹da na przestraszonego i mam nadziejê, ¿e poradzi sobie. Potrzebujê jego pomocy!"); 
+					Log_AddEntry (TOPIC_MyCrew,"MÃ³j kapitan, Jack, poczeka na mnie na statku. WyglÄ…da na przestraszonego i mam nadziejÄ™, Å¼e poradzi sobie. PotrzebujÄ™ jego pomocy!"); 
 				};
 				
 			//----- Die Crew -----
 				
 				if ( Lee_IsOnBoard == LOG_SUCCESS) //Lee
 				{
-					Log_AddEntry (TOPIC_MyCrew,"W czasie mojej nieobecnoœci Lee obejmie dowództwo na statku. Dziêki niemu bêdê siê lepiej pos³ugiwa³ broni¹ jedno- i dwurêczn¹."); 
+					Log_AddEntry (TOPIC_MyCrew,"W czasie mojej nieobecnoÅ›ci Lee obejmie dowÃ³dztwo na statku. DziÄ™ki niemu bÄ™dÄ™ siÄ™ lepiej posÅ‚ugiwaÅ‚ broniÄ… jedno- i dwurÄ™cznÄ…."); 
 				};
 			
 				if ( MiltenNW_IsOnBoard == LOG_SUCCESS) //Milten
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Dziêki Miltenowi mogê zwiêkszyæ moj¹ magiczn¹ moc."); 
+					Log_AddEntry (TOPIC_MyCrew,"DziÄ™ki Miltenowi mogÄ™ zwiÄ™kszyÄ‡ mojÄ… magicznÄ… moc."); 
 					if (hero.guild == GIL_KDF)
 					{
-						Log_AddEntry (TOPIC_MyCrew,"Milten poka¿e mi tak¿e, jak tworzyæ runy."); 
+						Log_AddEntry (TOPIC_MyCrew,"Milten pokaÅ¼e mi takÅ¼e, jak tworzyÄ‡ runy."); 
 					};
 				};
 			
 				if ( Lester_IsOnBoard == LOG_SUCCESS)	//Lester
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Niestety, wydaje mi siê, ¿e stan Lestera znacznie siê pogorszy³ na tej tajemniczej wyspie."); 
+					Log_AddEntry (TOPIC_MyCrew,"Niestety, wydaje mi siÄ™, Å¼e stan Lestera znacznie siÄ™ pogorszyÅ‚ na tej tajemniczej wyspie."); 
 				};
 			
 				if ( Mario_IsOnBoard == LOG_SUCCESS) //Mario
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mario dziwnie siê zachowuje. Od jakiegoœ czasu w ogóle siê nie odzywa."); 
+					Log_AddEntry (TOPIC_MyCrew,"Mario dziwnie siÄ™ zachowuje. Od jakiegoÅ› czasu w ogÃ³le siÄ™ nie odzywa."); 
 				};
 			
 				if ( Wolf_IsOnBoard== LOG_SUCCESS) //Wolf
 				{
-						Log_AddEntry (TOPIC_MyCrew,"Wilk mo¿e mnie nauczyæ, jak strzelaæ z ³uku i kuszy."); 
+						Log_AddEntry (TOPIC_MyCrew,"Wilk moÅ¼e mnie nauczyÄ‡, jak strzelaÄ‡ z Å‚uku i kuszy."); 
 				};
 			
 			
 				if ( Vatras_IsOnBoard == LOG_SUCCESS)	//Vatras
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Vatras, Mag Wody, nie tylko mo¿e mnie uleczyæ, ale tak¿e sporo nauczyæ o warzeniu mikstur"); 
+					Log_AddEntry (TOPIC_MyCrew,"Vatras, Mag Wody, nie tylko moÅ¼e mnie uleczyÄ‡, ale takÅ¼e sporo nauczyÄ‡ o warzeniu mikstur"); 
 					if (hero.guild == GIL_KDF)
 					{
-						Log_AddEntry (TOPIC_MyCrew,"Vatras mo¿e mi tak¿e pomóc poznaæ nowe krêgi magii."); 
+						Log_AddEntry (TOPIC_MyCrew,"Vatras moÅ¼e mi takÅ¼e pomÃ³c poznaÄ‡ nowe krÄ™gi magii."); 
 					};
 				};	
 				
 				if ( Bennet_IsOnBoard == LOG_SUCCESS)	//Bennet
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Bennet mo¿e mi pokazaæ, jak wykuæ broñ."); 
+					Log_AddEntry (TOPIC_MyCrew,"Bennet moÅ¼e mi pokazaÄ‡, jak wykuÄ‡ broÅ„."); 
 				};	
 			
 				if ( Diego_IsOnBoard == LOG_SUCCESS)	//Diego 
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Diego s³u¿y mi rad¹ i amunicj¹. Nauczy mnie tak¿e, jak otwieraæ zamki i strzelaæ z kuszy oraz ³uku."); 
+					Log_AddEntry (TOPIC_MyCrew,"Diego sÅ‚uÅ¼y mi radÄ… i amunicjÄ…. Nauczy mnie takÅ¼e, jak otwieraÄ‡ zamki i strzelaÄ‡ z kuszy oraz Å‚uku."); 
 				};
 			
 				if ( Gorn_IsOnBoard == LOG_SUCCESS)	//Gorn
 				{
-					Log_AddEntry (TOPIC_MyCrew,"W czasie naszej podró¿y Gorn nie zmru¿y³ oka. Pilnuje naszego statku. Wiem, ¿e mogê mu zaufaæ."); 
-					Log_AddEntry (TOPIC_MyCrew,"Dziêki Gornowi bêdê siê lepiej pos³ugiwa³ broni¹ dwurêczn¹."); 
+					Log_AddEntry (TOPIC_MyCrew,"W czasie naszej podrÃ³Å¼y Gorn nie zmruÅ¼yÅ‚ oka. Pilnuje naszego statku. Wiem, Å¼e mogÄ™ mu zaufaÄ‡."); 
+					Log_AddEntry (TOPIC_MyCrew,"DziÄ™ki Gornowi bÄ™dÄ™ siÄ™ lepiej posÅ‚ugiwaÅ‚ broniÄ… dwurÄ™cznÄ…."); 
 				};	
 			
 				if ( Lares_IsOnBoard == LOG_SUCCESS)	//Lares
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Lares obieca³ nauczyæ mnie skradania i walki broni¹ jednorêczn¹. Pomo¿e mi tak¿e staæ siê zrêczniejszym."); 
+					Log_AddEntry (TOPIC_MyCrew,"Lares obiecaÅ‚ nauczyÄ‡ mnie skradania i walki broniÄ… jednorÄ™cznÄ…. PomoÅ¼e mi takÅ¼e staÄ‡ siÄ™ zrÄ™czniejszym."); 
 				};	
 			
 				if ( Biff_IsOnBoard == LOG_SUCCESS)	//Biff
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Jedyne, na czym tak naprawdê zale¿y Biffowi, to pieni¹dze. Muszê na niego uwa¿aæ."); 
+					Log_AddEntry (TOPIC_MyCrew,"Jedyne, na czym tak naprawdÄ™ zaleÅ¼y Biffowi, to pieniÄ…dze. MuszÄ™ na niego uwaÅ¼aÄ‡."); 
 				};	
 			
 				if ( Angar_IsOnBoard == LOG_SUCCESS)	//Angar
@@ -153,7 +153,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			
 				if ( Girion_IsOnBoard == LOG_SUCCESS)	//Girion
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Girion jest niezmiernie cierpliwy. Dobra cecha u nauczyciela pos³ugiwania siê broni¹."); 
+					Log_AddEntry (TOPIC_MyCrew,"Girion jest niezmiernie cierpliwy. Dobra cecha u nauczyciela posÅ‚ugiwania siÄ™ broniÄ…."); 
 				};	
 	
 		IntroduceChapter (KapWechsel_6,KapWechsel_6_Text,"chapter6.tga","chapter_01.wav", 6000);

@@ -71,9 +71,9 @@ FUNC INT DIA_Addon_Garaz_Probleme_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Probleme_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//Poczekaj chwilê.
-	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//Jakiœ problem?
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//Pe³zacz. A w zasadzie kilka. Wygl¹da na to, ¿e trafiliœmy na gniazdo.
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//Poczekaj chwilÄ™.
+	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//JakiÅ› problem?
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//PeÅ‚zacz. A w zasadzie kilka. WyglÄ…da na to, Å¼e trafiliÅ›my na gniazdo.
 };
 //---------------------------------------------------------------------
 //	Info Hi
@@ -85,7 +85,7 @@ INSTANCE DIA_Addon_Garaz_Hi   (C_INFO)
 	condition   = DIA_Addon_Garaz_Hi_Condition;
 	information = DIA_Addon_Garaz_Hi_Info;
 	permanent   = FALSE;
-	description = "Dlaczego nie zaatakujemy pe³zaczy?";
+	description = "Dlaczego nie zaatakujemy peÅ‚zaczy?";
 };
 FUNC INT DIA_Addon_Garaz_Hi_Condition()
 {	
@@ -97,13 +97,13 @@ FUNC INT DIA_Addon_Garaz_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//Dlaczego nie zaatakujemy pe³zaczy?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//Te¿ siê nad tym zastanawiam. Stra¿nicy maj¹ najwyraŸniej "wa¿niejsze rzeczy do roboty".
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//A teraz Bloodwyn kaza³ mi rozwi¹zaæ ten problem.
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Rozumiem, ¿e nie zamierzasz walczyæ z pe³zaczami?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//A powinienem? Po to, ¿ebyœmy mogli po³o¿yæ ³apska na z³ocie w tej jaskini?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Bloodwyn i tak zabierze wiêkszoœæ. A ja nie zamierzam nadstawiaæ karku za tê odrobinê, która zostanie.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//A, jeœli TY chcesz z nimi walczyæ - proszê bardzo. Tylko nie œci¹gnij ich tu, na górê.
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//Dlaczego nie zaatakujemy peÅ‚zaczy?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//TeÅ¼ siÄ™ nad tym zastanawiam. StraÅ¼nicy majÄ… najwyraÅºniej "waÅ¼niejsze rzeczy do roboty".
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//A teraz Bloodwyn kazaÅ‚ mi rozwiÄ…zaÄ‡ ten problem.
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Rozumiem, Å¼e nie zamierzasz walczyÄ‡ z peÅ‚zaczami?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//A powinienem? Po to, Å¼ebyÅ›my mogli poÅ‚oÅ¼yÄ‡ Å‚apska na zÅ‚ocie w tej jaskini?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Bloodwyn i tak zabierze wiÄ™kszoÅ›Ä‡. A ja nie zamierzam nadstawiaÄ‡ karku za tÄ™ odrobinÄ™, ktÃ³ra zostanie.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//A, jeÅ›li TY chcesz z nimi walczyÄ‡ - proszÄ™ bardzo. Tylko nie Å›ciÄ…gnij ich tu, na gÃ³rÄ™.
 	
 };
 //---------------------------------------------------------------------
@@ -116,7 +116,7 @@ INSTANCE DIA_Addon_Garaz_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_Garaz_Bloodwyn_Condition;
 	information = DIA_Addon_Garaz_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Jest coœ jeszcze, co mo¿esz mi powiedzieæ o Bloodwynie?";
+	description = "Jest coÅ› jeszcze, co moÅ¼esz mi powiedzieÄ‡ o Bloodwynie?";
 };
 FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 {	
@@ -129,15 +129,15 @@ FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Bloodwyn_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Jest coœ jeszcze, co mo¿esz mi powiedzieæ o Bloodwynie?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Tak, to chciwy sukinsyn. Sprawdza ka¿d¹ ¿y³kê z³ota i z³o¿e.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//Dla niego wa¿ne jest tylko z³oto. Nas ma w g³êbokim poszanowaniu.
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//Coœ jeszcze?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Uwa¿a siê za najlepszego. Bloodwyn nie mo¿e znieœæ nikogo, kto jest od niego lepszy. Oczywiœcie ja nie powa¿y³bym siê rzuciæ mu wyzwania.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Najlepiej go unikaæ - chyba ¿e naprawdê chcesz go wkurzyæ.
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Jest coÅ› jeszcze, co moÅ¼esz mi powiedzieÄ‡ o Bloodwynie?
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Tak, to chciwy sukinsyn. Sprawdza kaÅ¼dÄ… Å¼yÅ‚kÄ™ zÅ‚ota i zÅ‚oÅ¼e.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//Dla niego waÅ¼ne jest tylko zÅ‚oto. Nas ma w gÅ‚Ä™bokim poszanowaniu.
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//CoÅ› jeszcze?
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//UwaÅ¼a siÄ™ za najlepszego. Bloodwyn nie moÅ¼e znieÅ›Ä‡ nikogo, kto jest od niego lepszy. OczywiÅ›cie ja nie powaÅ¼yÅ‚bym siÄ™ rzuciÄ‡ mu wyzwania.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Najlepiej go unikaÄ‡ - chyba Å¼e naprawdÄ™ chcesz go wkurzyÄ‡.
 	
-	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn na pewno opuœci œwi¹tyniê, jeœli us³yszy plotki o nowym z³o¿u z³ota znalezionym w kopalni.");
-	B_LogEntry (Topic_Addon_Tempel,"Kiedy Bloodwyn siê zdenerwuje, traci nad sob¹ panowanie. Ta wiedza na pewno mi siê przyda."); 
+	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn na pewno opuÅ›ci Å›wiÄ…tyniÄ™, jeÅ›li usÅ‚yszy plotki o nowym zÅ‚oÅ¼u zÅ‚ota znalezionym w kopalni.");
+	B_LogEntry (Topic_Addon_Tempel,"Kiedy Bloodwyn siÄ™ zdenerwuje, traci nad sobÄ… panowanie. Ta wiedza na pewno mi siÄ™ przyda."); 
 };
 //---------------------------------------------------------------------
 //	Info Sieg
@@ -149,7 +149,7 @@ INSTANCE DIA_Addon_Garaz_Sieg   (C_INFO)
 	condition   = DIA_Addon_Garaz_Sieg_Condition;
 	information = DIA_Addon_Garaz_Sieg_Info;
 	permanent   = FALSE;
-	description	= "Za³atwione. Pe³zacze s¹ martwe.";
+	description	= "ZaÅ‚atwione. PeÅ‚zacze sÄ… martwe.";
 };
 FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 {	
@@ -161,9 +161,9 @@ FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Sieg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//Za³atwione. Pe³zacze s¹ martwe.
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Bloodwyn tu idzie. Tego chcia³eœ, prawda?
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//Zabi³eœ pe³zacza, ¿eby œci¹gn¹æ tu Bloodwyna? No to TERAZ zrób to, co zamierza³eœ.
+	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//ZaÅ‚atwione. PeÅ‚zacze sÄ… martwe.
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Bloodwyn tu idzie. Tego chciaÅ‚eÅ›, prawda?
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//ZabiÅ‚eÅ› peÅ‚zacza, Å¼eby Å›ciÄ…gnÄ…Ä‡ tu Bloodwyna? No to TERAZ zrÃ³b to, co zamierzaÅ‚eÅ›.
 	
 	B_StartOtherRoutine (Bloodwyn,"GOLD");	
 	
@@ -190,8 +190,8 @@ FUNC INT DIA_Addon_Garaz_Blood_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Blood_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//Da³eœ temu bydlakowi nauczkê. Dobra robota.
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//W takim razie rozejrzê siê po okolicy.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//DaÅ‚eÅ› temu bydlakowi nauczkÄ™. Dobra robota.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//W takim razie rozejrzÄ™ siÄ™ po okolicy.
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos  (self);
@@ -220,9 +220,9 @@ FUNC INT DIA_Addon_Garaz_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Gold_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//O rany, sporo tu tego z³ota.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Bêdziemy potrzebowaæ drabiny, ¿eby dotrzeæ do tego z³ota.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Tylko ¿e nikt nie korzysta z drabin od czasu upadku bariery.. Szkoda.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//O rany, sporo tu tego zÅ‚ota.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//BÄ™dziemy potrzebowaÄ‡ drabiny, Å¼eby dotrzeÄ‡ do tego zÅ‚ota.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Tylko Å¼e nikt nie korzysta z drabin od czasu upadku bariery.. Szkoda.
 };
 
 

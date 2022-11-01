@@ -77,12 +77,12 @@ FUNC INT DIA_Gaertner_Job_Condition()
 FUNC VOID DIA_Gaertner_Job_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Co tutaj robisz?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //A jak s¹dzisz, hê? Jestem ogrodnikiem, zajmujê siê ogrodem.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //A jak sÄ…dzisz, hÄ™? Jestem ogrodnikiem, zajmujÄ™ siÄ™ ogrodem.
 	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Nie masz tu zbyt wiele towarzystwa, co?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Nie, i dobrze mi z tym. Przynajmniej mam spokój.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Raz chcieli mnie wpakowaæ do Kolonii za zabójstwo jednego goœcia.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Ale poniewa¿ gubernator Larius potrzebowa³ ogrodnika, pozwolili mi tu zostaæ.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Z czasem ten ogród sta³ siê moim domem. Bardzo siê cieszê, ¿e tak siê sta³o.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Nie, i dobrze mi z tym. Przynajmniej mam spokÃ³j.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Raz chcieli mnie wpakowaÄ‡ do Kolonii za zabÃ³jstwo jednego goÅ›cia.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Ale poniewaÅ¼ gubernator Larius potrzebowaÅ‚ ogrodnika, pozwolili mi tu zostaÄ‡.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Z czasem ten ogrÃ³d staÅ‚ siÄ™ moim domem. Bardzo siÄ™ cieszÄ™, Å¼e tak siÄ™ staÅ‚o.
 };
 //*************************************************************
 //		
@@ -94,7 +94,7 @@ INSTANCE DIA_Gaertner_Plants(C_INFO)
 	condition	= DIA_Gaertner_Plants_Condition;
 	information	= DIA_Gaertner_Plants_Info;
 	permanent	= FALSE;
-	description = "Czy hodujesz równie¿ jakieœ zio³a?";
+	description = "Czy hodujesz rÃ³wnieÅ¼ jakieÅ› zioÅ‚a?";
 };                       
 
 FUNC INT DIA_Gaertner_Plants_Condition()
@@ -106,12 +106,12 @@ FUNC INT DIA_Gaertner_Plants_Condition()
 };
 FUNC VOID DIA_Gaertner_Plants_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Czy hodujesz równie¿ jakieœ zio³a?
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Nawet kilka. Mam tutaj ogniste ziele i ogniste pokrzywy. Próbowa³em te¿ hodowaæ bagienne ziele, ale nie za bardzo chce rosn¹æ w tych warunkach.
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Mam trochê œwie¿o œciêtych roœlin, wiêc gdybyœ chcia³ coœ kupiæ...
+	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Czy hodujesz rÃ³wnieÅ¼ jakieÅ› zioÅ‚a?
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Nawet kilka. Mam tutaj ogniste ziele i ogniste pokrzywy. PrÃ³bowaÅ‚em teÅ¼ hodowaÄ‡ bagienne ziele, ale nie za bardzo chce rosnÄ…Ä‡ w tych warunkach.
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Mam trochÄ™ Å›wieÅ¼o Å›ciÄ™tych roÅ›lin, wiÄ™c gdybyÅ› chciaÅ‚ coÅ› kupiÄ‡...
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Ogrodnik gubernatora mo¿e mi sprzedaæ roœliny.");
+	B_LogEntry (Topic_CityTrader,"Ogrodnik gubernatora moÅ¼e mi sprzedaÄ‡ roÅ›liny.");
 };
 //*************************************************************
 //		Trade
@@ -123,7 +123,7 @@ INSTANCE DIA_Gaertner_Trade(C_INFO)
 	condition	= DIA_Gaertner_Trade_Condition;
 	information	= DIA_Gaertner_Trade_Info;
 	permanent	= TRUE;
-	description = "Poka¿ mi swoje towary.";
+	description = "PokaÅ¼ mi swoje towary.";
 	trade		= TRUE;
 };                       
 
@@ -137,7 +137,7 @@ FUNC INT DIA_Gaertner_Trade_Condition()
 FUNC VOID DIA_Gaertner_Trade_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other,self ,"DIA_Gaertner_Trade_15_00"); //Poka¿ mi swoje towary.
+	AI_Output (other,self ,"DIA_Gaertner_Trade_15_00"); //PokaÅ¼ mi swoje towary.
 };
 //*************************************************************
 //		Krautabak
@@ -149,7 +149,7 @@ INSTANCE DIA_Gaertner_Krautabak(C_INFO)
 	condition	= DIA_Gaertner_Krautabak_Condition;
 	information	= DIA_Gaertner_Krautabak_Info;
 	permanent	= FALSE;
-	description = "Mam tu trochê ziela.";
+	description = "Mam tu trochÄ™ ziela.";
 };                       
 
 FUNC INT DIA_Gaertner_Krautabak_Condition()
@@ -162,8 +162,8 @@ FUNC INT DIA_Gaertner_Krautabak_Condition()
 };
 FUNC VOID DIA_Gaertner_Krautabak_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //Mam tu trochê ziela. Chcesz sobie zapaliæ?
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Sam nie wiem... A zreszt¹, dawaj je tutaj. Skrêcê sobie jednego.
+	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //Mam tu trochÄ™ ziela. Chcesz sobie zapaliÄ‡?
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Sam nie wiem... A zresztÄ…, dawaj je tutaj. SkrÄ™cÄ™ sobie jednego.
 	
 	B_GiveInvItems (other, self, ItMi_SumpfTabak,1);
 	Npc_RemoveInvItems (self,ItMi_SumpfTabak,1);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Gaertner_Krautabak_Info()
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
 	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_02"); //Kh... kh.... Kh....
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Mocny towar. Chyba ju¿ mi wystarczy.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Mocny towar. Chyba juÅ¼ mi wystarczy.
 	
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -187,7 +187,7 @@ INSTANCE DIA_Gaertner_Sign(C_INFO)
 	condition	= DIA_Gaertner_Sign_Condition;
 	information	= DIA_Gaertner_Sign_Info;
 	permanent	= FALSE;
-	description = "(Poka¿ z³odziejski gest)";
+	description = "(PokaÅ¼ zÅ‚odziejski gest)";
 };                       
 
 FUNC INT DIA_Gaertner_Sign_Condition()
@@ -200,8 +200,8 @@ FUNC INT DIA_Gaertner_Sign_Condition()
 FUNC VOID DIA_Gaertner_Sign_Info()
 {	
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //A wiêc jesteœ jednym z nas. Mam dla ciebie po¿yteczn¹ wskazówkê.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //W okolicznych domach bardzo czêsto znajdziesz skrytki, otwierane przez naciœniêcie ukrytego przycisku.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Ludzie zwykle trzymaj¹ w nich kosztownoœci.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //A wiÄ™c jesteÅ› jednym z nas. Mam dla ciebie poÅ¼ytecznÄ… wskazÃ³wkÄ™.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //W okolicznych domach bardzo czÄ™sto znajdziesz skrytki, otwierane przez naciÅ›niÄ™cie ukrytego przycisku.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Ludzie zwykle trzymajÄ… w nich kosztownoÅ›ci.
 };
 

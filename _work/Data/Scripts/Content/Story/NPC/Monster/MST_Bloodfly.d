@@ -80,7 +80,7 @@ INSTANCE Bloodfly	(Mst_Default_Bloodfly)
 
 INSTANCE YBloodfly	(Mst_Default_Bloodfly)
 {
-	name							=	"Ma≥y krwiopijca";
+	name							=	"Ma≈Çy krwiopijca";
 	
 	level							=	3;
 	

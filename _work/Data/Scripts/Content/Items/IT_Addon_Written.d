@@ -3,7 +3,7 @@
 //**********************************************************************************
 INSTANCE ITWr_Addon_Hinweis_02		(C_Item)
 {
-	name 				=	"Wa¿na wiadomoœæ";
+	name 				=	"WaÅ¼na wiadomoÅ›Ä‡";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -15,7 +15,7 @@ INSTANCE ITWr_Addon_Hinweis_02		(C_Item)
 	on_state[0]			=   Use_Hinweis_02;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "Z gospody w obozie bandytów";
+	TEXT[0]				=  "Z gospody w obozie bandytÃ³w";
 };
 func void Use_Hinweis_02 ()
 {
@@ -31,10 +31,10 @@ func void Use_Hinweis_02 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Hej ludzie,");
 					Doc_PrintLines	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Lou znikn¹³ na bagnie. Pewnikiem ze¿ar³y go wê¿e.");	
-					Doc_PrintLines	( nDocID,  0, "Co gorsza, wraz z nim znikn¹³ klucz do drzwi."					);
+					Doc_PrintLines	( nDocID,  0, "Lou zniknÄ…Å‚ na bagnie. Pewnikiem zeÅ¼arÅ‚y go wÄ™Å¼e.");	
+					Doc_PrintLines	( nDocID,  0, "Co gorsza, wraz z nim zniknÄ…Å‚ klucz do drzwi."					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ten, kto go znajdzie, bêdzie móg³ zatrzymaæ rzeczy Lou.");	
+					Doc_PrintLines	( nDocID,  0, "Ten, kto go znajdzie, bÄ™dzie mÃ³gÅ‚ zatrzymaÄ‡ rzeczy Lou.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Snaf");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -45,7 +45,7 @@ func void Use_Hinweis_02 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Health_04		(C_Item)
 {
-	name 				=	"Mikstura lecznicza – przepis";
+	name 				=	"Mikstura lecznicza â€“ przepis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -56,10 +56,10 @@ INSTANCE ITWr_Addon_Health_04		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   Use_Heilrezept_04;
 	scemeName			=	"MAP";
-	description			= 	"Pe³nia ¿ycia";
+	description			= 	"PeÅ‚nia Å¼ycia";
 	
 	TEXT[2]				=	"Warzenie silnej mikstury.";
-	TEXT[3]				=	"Wymagana jest znajomoœæ eliksiru leczenia.";
+	TEXT[3]				=	"Wymagana jest znajomoÅ›Ä‡ eliksiru leczenia.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -74,7 +74,7 @@ func void Use_Heilrezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Health_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"Do przygotowania mikstury leczniczej potrzebne s¹ 3 esencje lecznicze oraz 1 rdest polny.");
+				B_LogEntry (TOPIC_TalentAlchemy,"Do przygotowania mikstury leczniczej potrzebne sÄ… 3 esencje lecznicze oraz 1 rdest polny.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -87,11 +87,11 @@ func void Use_Heilrezept_04 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLines	( nDocID,  0, "Tworzenie mikstury leczniczej:");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Potrzebny jest jeden rdest polny, a tak¿e trzy esencje lecznicze.");	
-					Doc_PrintLines	( nDocID,  0, "Po³¹cz je zgodnie z przepisem na tworzenie eliksiru leczenia.");	
+					Doc_PrintLines	( nDocID,  0, "Potrzebny jest jeden rdest polny, a takÅ¼e trzy esencje lecznicze.");	
+					Doc_PrintLines	( nDocID,  0, "PoÅ‚Ä…cz je zgodnie z przepisem na tworzenie eliksiru leczenia.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Mikstura mo¿e zostaæ przygotowana jedynie przez alchemika, który zna przepis na eliksir leczenia.");	
+					Doc_PrintLines	( nDocID,  0, "Mikstura moÅ¼e zostaÄ‡ przygotowana jedynie przez alchemika, ktÃ³ry zna przepis na eliksir leczenia.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -102,7 +102,7 @@ func void Use_Heilrezept_04 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Mana_04		(C_Item)
 {
-	name 				=	"Mikstura many – przepis";
+	name 				=	"Mikstura many â€“ przepis";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -114,10 +114,10 @@ INSTANCE ITWr_Addon_Mana_04		(C_Item)
 	on_state[0]			=   Use_Manarezept_04;
 	scemeName			=	"MAP";
 
-	description			= 	"Pe³nia many";
+	description			= 	"PeÅ‚nia many";
 	
 	TEXT[2]				=	"Warzenie silnej mikstury.";
-	TEXT[3]				=	"Wymagana jest znajomoœæ eliksiru many.";
+	TEXT[3]				=	"Wymagana jest znajomoÅ›Ä‡ eliksiru many.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -132,7 +132,7 @@ func void Use_Manarezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Mana_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"Do przygotowania mikstury many potrzebne s¹ 3 esencje many oraz 1 rdest polny.");
+				B_LogEntry (TOPIC_TalentAlchemy,"Do przygotowania mikstury many potrzebne sÄ… 3 esencje many oraz 1 rdest polny.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -145,11 +145,11 @@ func void Use_Manarezept_04 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLines	( nDocID,  0, "Warzenie mikstury many:");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Potrzebny jest jeden rdest polny, a tak¿e trzy esencje many.");	
-					Doc_PrintLines	( nDocID,  0, "Po³¹cz je zgodnie z przepisem na tworzenie eliksiru many.");	
+					Doc_PrintLines	( nDocID,  0, "Potrzebny jest jeden rdest polny, a takÅ¼e trzy esencje many.");	
+					Doc_PrintLines	( nDocID,  0, "PoÅ‚Ä…cz je zgodnie z przepisem na tworzenie eliksiru many.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ta mikstura mo¿e byæ przygotowana jedynie przez alchemika, który zna przepis na eliksir many.");	
+					Doc_PrintLines	( nDocID,  0, "Ta mikstura moÅ¼e byÄ‡ przygotowana jedynie przez alchemika, ktÃ³ry zna przepis na eliksir many.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -160,7 +160,7 @@ func void Use_Manarezept_04 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 {
-	name 				=	"Wa¿na wiadomoœæ";
+	name 				=	"WaÅ¼na wiadomoÅ›Ä‡";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -172,7 +172,7 @@ INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 	on_state[0]			=   Use_Hinweis_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "Wisia³a w chacie na bagnie";
+	TEXT[0]				=  "WisiaÅ‚a w chacie na bagnie";
 };
 func void Use_Hinweis_01 ()
 {
@@ -187,10 +187,10 @@ func void Use_Hinweis_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Hej ludzie,");
-					Doc_PrintLines	( nDocID,  0, "Rzeczy z tych skrzyñ s¹ tylko na nag³e wypadki.");	
-					Doc_PrintLines	( nDocID,  0, "I s¹ dla nas WSZYSTKICH. Wiêc siêgajcie tam tylko wtedy, kiedy naprawdê musicie.");	
-					Doc_PrintLines	( nDocID,  0, "I nie bierzcie wiêcej, ni¿ potrzebujecie."					);
-					Doc_PrintLines	( nDocID,  0, "Uda siê, jeœli wszyscy bêdziemy siê tego trzymaæ."					);
+					Doc_PrintLines	( nDocID,  0, "Rzeczy z tych skrzyÅ„ sÄ… tylko na nagÅ‚e wypadki.");	
+					Doc_PrintLines	( nDocID,  0, "I sÄ… dla nas WSZYSTKICH. WiÄ™c siÄ™gajcie tam tylko wtedy, kiedy naprawdÄ™ musicie.");	
+					Doc_PrintLines	( nDocID,  0, "I nie bierzcie wiÄ™cej, niÅ¼ potrzebujecie."					);
+					Doc_PrintLines	( nDocID,  0, "Uda siÄ™, jeÅ›li wszyscy bÄ™dziemy siÄ™ tego trzymaÄ‡."					);
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Fletcher");
@@ -202,7 +202,7 @@ func void Use_Hinweis_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_William_01		(C_Item)
 {
-	name 				=	"Liœcik";
+	name 				=	"LiÅ›cik";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -214,7 +214,7 @@ INSTANCE ITWr_Addon_William_01		(C_Item)
 	on_state[0]			=   Use_William_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Ten list mia³ przy sobie rybak William.";
+	Text[0]				=	"Ten list miaÅ‚ przy sobie rybak William.";
 };
 func void Use_William_01 ()
 {
@@ -229,14 +229,14 @@ func void Use_William_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Williamie,");
-					Doc_PrintLines	( nDocID,  0, "Kiedy ksiê¿yc jest w pe³ni, stra¿nicy s¹ rozkojarzeni.");	
-					Doc_PrintLines	( nDocID,  0, "Przekradnij siê – ale b¹dŸ ostro¿ny!");	
-					Doc_PrintLines	( nDocID,  0, "Jeœli bêdziesz iœæ drewnian¹ tam¹, uda ci siê wydostaæ z bagna."					);
-					Doc_PrintLines	( nDocID,  0, "Obóz piratów jest po drugiej stronie doliny, daleko na zachodzie."					);
-					Doc_PrintLines	( nDocID,  0, "Kiedy tam dotrzesz, z ³atwoœci¹ uciekniesz ³odzi¹.");	
+					Doc_PrintLines	( nDocID,  0, "Kiedy ksiÄ™Å¼yc jest w peÅ‚ni, straÅ¼nicy sÄ… rozkojarzeni.");	
+					Doc_PrintLines	( nDocID,  0, "Przekradnij siÄ™ â€“ ale bÄ…dÅº ostroÅ¼ny!");	
+					Doc_PrintLines	( nDocID,  0, "JeÅ›li bÄ™dziesz iÅ›Ä‡ drewnianÄ… tamÄ…, uda ci siÄ™ wydostaÄ‡ z bagna."					);
+					Doc_PrintLines	( nDocID,  0, "ObÃ³z piratÃ³w jest po drugiej stronie doliny, daleko na zachodzie."					);
+					Doc_PrintLines	( nDocID,  0, "Kiedy tam dotrzesz, z Å‚atwoÅ›ciÄ… uciekniesz Å‚odziÄ….");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Ktoœ, kto dobrze Ci ¿yczy");	
+					Doc_PrintLine	( nDocID,  0, "KtoÅ›, kto dobrze Ci Å¼yczy");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
@@ -273,11 +273,11 @@ func void Use_MCELIXIER_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "Mikstura przemiany duszy");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Do przyrz¹dzenia tej mikstury potrzebna jest wydzielina z dwóch ¿¹de³ krwiopijców.");	
-					Doc_PrintLines	( nDocID,  0, "Dodaj do tego jeden ekstrakt many, a tak¿e esencjê lecznicz¹.");	
-					Doc_PrintLines	( nDocID,  0, "W koñcu dosyp do ca³oœci woreczek czerwonego pieprzu."					);
+					Doc_PrintLines	( nDocID,  0, "Do przyrzÄ…dzenia tej mikstury potrzebna jest wydzielina z dwÃ³ch Å¼Ä…deÅ‚ krwiopijcÃ³w.");	
+					Doc_PrintLines	( nDocID,  0, "Dodaj do tego jeden ekstrakt many, a takÅ¼e esencjÄ™ leczniczÄ….");	
+					Doc_PrintLines	( nDocID,  0, "W koÅ„cu dosyp do caÅ‚oÅ›ci woreczek czerwonego pieprzu."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Tylko doœwiadczony alchemik wie, jak pobraæ wydzielinê z ¿¹d³a potrzebn¹ do zrobienia tej mikstury.");	
+					Doc_PrintLines	( nDocID,  0, "Tylko doÅ›wiadczony alchemik wie, jak pobraÄ‡ wydzielinÄ™ z Å¼Ä…dÅ‚a potrzebnÄ… do zrobienia tej mikstury.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -299,7 +299,7 @@ INSTANCE ITWr_Addon_Pirates_01		(C_Item)
 	on_state[0]			=   Use_Pirates_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=	"Ten papier by³ w kieszeni Angusa.";
+	TEXT[0]				=	"Ten papier byÅ‚ w kieszeni Angusa.";
 };
 func void Use_Pirates_01 ()
 {
@@ -316,17 +316,17 @@ func void Use_Pirates_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Za³atwcie dla nas ostatni ³adunek.");	
-					Doc_PrintLine	( nDocID,  0, "PrzywieŸcie go do jaskini. Tam siê spotkamy.");	
-					Doc_PrintLines	( nDocID,  0, "Zap³acê wam w z³ocie. Podwójn¹ cenê."					);
+					Doc_PrintLines	( nDocID,  0, "ZaÅ‚atwcie dla nas ostatni Å‚adunek.");	
+					Doc_PrintLine	( nDocID,  0, "PrzywieÅºcie go do jaskini. Tam siÄ™ spotkamy.");	
+					Doc_PrintLines	( nDocID,  0, "ZapÅ‚acÄ™ wam w zÅ‚ocie. PodwÃ³jnÄ… cenÄ™."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Tak w³aœnie zrobimy.");	
+					Doc_PrintLines	( nDocID,  0, "Tak wÅ‚aÅ›nie zrobimy.");	
 					Doc_PrintLine	( nDocID,  0, "Tom");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
-//	Rezept für grünene Novizen
+//	Rezept fÃ¼r grÃ¼nene Novizen
 //**********************************************************************************
 INSTANCE ITWr_Addon_Joint_01		(C_Item)
 {
@@ -342,7 +342,7 @@ INSTANCE ITWr_Addon_Joint_01		(C_Item)
 	on_state[0]			=   Use_Joint_Rezept_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				= 	"Le¿a³ w skrzyni Fortuna";
+	TEXT[0]				= 	"LeÅ¼aÅ‚ w skrzyni Fortuna";
 };
 func void Use_Joint_Rezept_01 ()
 {
@@ -359,11 +359,11 @@ func void Use_Joint_Rezept_01 ()
 					Doc_PrintLine	( nDocID,  0, "Zielony nowicjusz"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "...Te ³odygi mo¿na ca³kiem nieŸle zwijaæ, ale nie ma porównania z tym, co mieliœmy w obozie na bagnie.");	
+					Doc_PrintLines	( nDocID,  0, "...Te Å‚odygi moÅ¼na caÅ‚kiem nieÅºle zwijaÄ‡, ale nie ma porÃ³wnania z tym, co mieliÅ›my w obozie na bagnie.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Jeœli wezmê wyci¹g z dwóch ³odyg bagiennego ziela i zmieszam go z polnym rdestem, mo¿na to bêdzie porównaæ do zielonego nowicjusza."					);
+					Doc_PrintLines	( nDocID,  0, "JeÅ›li wezmÄ™ wyciÄ…g z dwÃ³ch Å‚odyg bagiennego ziela i zmieszam go z polnym rdestem, moÅ¼na to bÄ™dzie porÃ³wnaÄ‡ do zielonego nowicjusza."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Zielony nowicjusz ³agodzi wszystkie bóle i oczyszcza umys³.");	
+					Doc_PrintLines	( nDocID,  0, "Zielony nowicjusz Å‚agodzi wszystkie bÃ³le i oczyszcza umysÅ‚.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -374,7 +374,7 @@ func void Use_Joint_Rezept_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Lou_Rezept		(C_Item)
 {
-	name 				=	"Przepis na M³ot Lou ";
+	name 				=	"Przepis na MÅ‚ot Lou ";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -386,7 +386,7 @@ INSTANCE ITWr_Addon_Lou_Rezept		(C_Item)
 	on_state[0]			=   UseLouRezept;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Jak przygotowaæ M³ot Lou.";
+	Text[0]				= 	"Jak przygotowaÄ‡ MÅ‚ot Lou.";
 };
 func void UseLouRezept ()
 {
@@ -401,18 +401,18 @@ func void UseLouRezept ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Przepis na M³ot Lou"					);
+					Doc_PrintLine	( nDocID,  0, "Przepis na MÅ‚ot Lou"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Sk³adniki mocnej nalewki:");	
+					Doc_PrintLine	( nDocID,  0, "SkÅ‚adniki mocnej nalewki:");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Bierzesz butelkê, a tak¿e dwie rzepy i spor¹ garœæ bagiennego ziela.");	
-					Doc_PrintLines	( nDocID,  0, "Dodajesz do tego k³y b³otnego wê¿a."					);
-					Doc_PrintLines	( nDocID,  0, "Mieszasz w butelce i gotujesz z dzia³k¹ rumu."					);
+					Doc_PrintLines	( nDocID,  0, "Bierzesz butelkÄ™, a takÅ¼e dwie rzepy i sporÄ… garÅ›Ä‡ bagiennego ziela.");	
+					Doc_PrintLines	( nDocID,  0, "Dodajesz do tego kÅ‚y bÅ‚otnego wÄ™Å¼a."					);
+					Doc_PrintLines	( nDocID,  0, "Mieszasz w butelce i gotujesz z dziaÅ‚kÄ… rumu."					);
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Na zdrowie.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Wed³ug starego œlepca lepiej nie wdychaæ wyziewów!");	
+					Doc_PrintLines	( nDocID,  0, "WedÅ‚ug starego Å›lepca lepiej nie wdychaÄ‡ wyziewÃ³w!");	
 					Doc_Show		( nDocID );
 
 };
@@ -421,7 +421,7 @@ func void UseLouRezept ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Lou_Rezept2		(C_Item)
 {
-	name 				=	"Przepis na podwójny M³ot Lou";
+	name 				=	"Przepis na podwÃ³jny MÅ‚ot Lou";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -433,7 +433,7 @@ INSTANCE ITWr_Addon_Lou_Rezept2		(C_Item)
 	on_state[0]			=   UseLouRezept2;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Jak przygotowaæ podwójny M³ot Lou.";
+	Text[0]				= 	"Jak przygotowaÄ‡ podwÃ³jny MÅ‚ot Lou.";
 };
 func void UseLouRezept2 ()
 {
@@ -447,13 +447,13 @@ func void UseLouRezept2 ()
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Podwójny M³ot Lou"					);
+					Doc_PrintLine	( nDocID,  0, "PodwÃ³jny MÅ‚ot Lou"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "WeŸ stary, dobry M³ot Lou i przedestyluj go jeszcze raz.");
+					Doc_PrintLines	( nDocID,  0, "WeÅº stary, dobry MÅ‚ot Lou i przedestyluj go jeszcze raz.");
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Ten wywar mo¿e przyrz¹dziæ jedynie ktoœ doœwiadczony w destylacji.");	
+					Doc_PrintLines	( nDocID,  0, "Ten wywar moÅ¼e przyrzÄ…dziÄ‡ jedynie ktoÅ› doÅ›wiadczony w destylacji.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Profan mo¿e od tego nie tylko oœlepn¹æ, ale te¿ ca³kiem wyzion¹æ ducha.");	
+					Doc_PrintLines	( nDocID,  0, "Profan moÅ¼e od tego nie tylko oÅ›lepnÄ…Ä‡, ale teÅ¼ caÅ‚kiem wyzionÄ…Ä‡ ducha.");	
 					
 					Doc_Show		( nDocID );
 
@@ -464,7 +464,7 @@ func void UseLouRezept2 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Piratentod		(C_Item)
 {
-	name 				=	"Szybki œledŸ";
+	name 				=	"Szybki Å›ledÅº";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -476,7 +476,7 @@ INSTANCE ITWr_Addon_Piratentod		(C_Item)
 	on_state[0]			=   UseRezeptPiratentod;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Przepis na przygotowanie Szybkiego œledzia.";
+	Text[0]				=	"Przepis na przygotowanie Szybkiego Å›ledzia.";
 };
 func void UseRezeptPiratentod ()
 {
@@ -490,16 +490,16 @@ func void UseRezeptPiratentod ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Szybki œledŸ (mój przepis)"					);
+					Doc_PrintLine	( nDocID,  0, "Szybki Å›ledÅº (mÃ³j przepis)"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Ma³y klinek dla porz¹dnych ch³opaków");	
+					Doc_PrintLine	( nDocID,  0, "MaÅ‚y klinek dla porzÄ…dnych chÅ‚opakÃ³w");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Jak zwykle, potrzebna bêdzie butelka. Wlej do niej jedn¹ porcjê rumu i dodaj œwie¿¹ rybê.");	
-					Doc_PrintLines	( nDocID,  0, "Kiedy tylko p³yn zrobi siê ¿ó³ty, wyjmij rybê i dopraw garœci¹ soli"					);
-					Doc_PrintLines	( nDocID,  0, "œwie¿o zebranego zêbatego ziela."					);
+					Doc_PrintLines	( nDocID,  0, "Jak zwykle, potrzebna bÄ™dzie butelka. Wlej do niej jednÄ… porcjÄ™ rumu i dodaj Å›wieÅ¼Ä… rybÄ™.");	
+					Doc_PrintLines	( nDocID,  0, "Kiedy tylko pÅ‚yn zrobi siÄ™ Å¼Ã³Å‚ty, wyjmij rybÄ™ i dopraw garÅ›ciÄ… soli"					);
+					Doc_PrintLines	( nDocID,  0, "Å›wieÅ¼o zebranego zÄ™batego ziela."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Uwa¿aj! Ta nalewka naprawdê stawia na nogi.");	
+					Doc_PrintLines	( nDocID,  0, "UwaÅ¼aj! Ta nalewka naprawdÄ™ stawia na nogi.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_Show		( nDocID );
 
@@ -507,7 +507,7 @@ func void UseRezeptPiratentod ()
 //------------------------------------------------------------------------------------------
 INSTANCE Fakescroll_Addon (C_Item)
 {	
-	name 					=	"Kawa³ek papieru";
+	name 					=	"KawaÅ‚ek papieru";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	ITEM_MISSION;	
@@ -529,7 +529,7 @@ INSTANCE Fakescroll_Addon (C_Item)
 //------------------------------------------------------------------------------------------
 INSTANCE ItWr_Addon_AxtAnleitung (C_ITEM)
 {	
-	name 				=	"Przepis na bandycki topór";
+	name 				=	"Przepis na bandycki topÃ³r";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -556,19 +556,19 @@ func void UseAxtAnleitung ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Bandycki topór"					);
+					Doc_PrintLine	( nDocID,  0, "Bandycki topÃ³r"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Jednorêczny topór");	
+					Doc_PrintLine	( nDocID,  0, "JednorÄ™czny topÃ³r");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Osoba znaj¹ca podstawy kowalstwa mo¿e stworzyæ specjalny topór.");	
-					Doc_PrintLines	( nDocID,  0, "Potrzebne s¹ dwa kawa³ki rozgrzanego do bia³oœci ¿elaza."					);
-					Doc_PrintLines	( nDocID,  0, "Jedna bry³ka rudy i trzy komplety k³ów wilków, zêbaczy lub podobnych bestii."					);
+					Doc_PrintLines	( nDocID,  0, "Osoba znajÄ…ca podstawy kowalstwa moÅ¼e stworzyÄ‡ specjalny topÃ³r.");	
+					Doc_PrintLines	( nDocID,  0, "Potrzebne sÄ… dwa kawaÅ‚ki rozgrzanego do biaÅ‚oÅ›ci Å¼elaza."					);
+					Doc_PrintLines	( nDocID,  0, "Jedna bryÅ‚ka rudy i trzy komplety kÅ‚Ã³w wilkÃ³w, zÄ™baczy lub podobnych bestii."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Ruda i k³y zbijane s¹ w jedn¹ ca³oœæ na kowadle.");	
+					Doc_PrintLine	( nDocID,  0, "Ruda i kÅ‚y zbijane sÄ… w jednÄ… caÅ‚oÅ›Ä‡ na kowadle.");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Taki topór jest ³atwy we w³adaniu i zadaje spore");
-					Doc_PrintLines	( nDocID,  0, "obra¿enia.");	
+					Doc_PrintLine	( nDocID,  0, "Taki topÃ³r jest Å‚atwy we wÅ‚adaniu i zadaje spore");
+					Doc_PrintLines	( nDocID,  0, "obraÅ¼enia.");	
 					Doc_Show		( nDocID );
 };
 
@@ -576,7 +576,7 @@ func void UseAxtAnleitung ()
 //------------------------------------------------------------------------------------------
 INSTANCE ItWr_Addon_SUMMONANCIENTGHOST (C_ITEM)
 {	
-	name 				=	"Przywo³anie Quarhodrona";
+	name 				=	"PrzywoÅ‚anie Quarhodrona";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -588,7 +588,7 @@ INSTANCE ItWr_Addon_SUMMONANCIENTGHOST (C_ITEM)
 	on_state[0]			=   UseSummonAncientGhost;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Za pomoc¹ tego zwoju mo¿esz przywo³aæ Quarhodrona.";
+	Text[0]				=	"Za pomocÄ… tego zwoju moÅ¼esz przywoÅ‚aÄ‡ Quarhodrona.";
 };
 func void UseSummonAncientGhost ()
 {

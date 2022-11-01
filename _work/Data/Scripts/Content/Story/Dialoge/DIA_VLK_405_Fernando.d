@@ -31,7 +31,7 @@ INSTANCE DIA_Fernando_PICKPOCKET (C_INFO)
 	condition	= DIA_Fernando_PICKPOCKET_Condition;
 	information	= DIA_Fernando_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego mieszka bêdzie ryzykownym zadaniem)";
+	description = "(KradzieÅ¼ tego mieszka bÄ™dzie ryzykownym zadaniem)";
 };                       
 
 FUNC INT DIA_Fernando_PICKPOCKET_Condition()
@@ -100,10 +100,10 @@ FUNC INT DIA_Fernando_Hello_Condition()
 FUNC VOID DIA_Fernando_Hello_Info()
 {
 	AI_Output (other,self ,"DIA_Fernando_Hello_15_00"); //Jak interesy?
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_01"); //Nie za dobrze. Wszystko by³o du¿o ³atwiejsze, zanim zniknê³a Bariera.
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_02"); //WiêŸniowie wydobywali z kopalni ca³e tony rudy, które moje statki przewozi³y na kontynent.
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_03"); //W drodze powrotnej przywozi³y jedzenie i inne towary.
-	AI_Output (self ,other,"DIA_Fernando_Hello_14_04"); //Niestety, te czasy minê³y. Zostaliœmy odciêci od kontynentu, wiêc musimy zadowalaæ siê jedynie tym, co dostarczaj¹ nam nasi ch³opi.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_01"); //Nie za dobrze. Wszystko byÅ‚o duÅ¼o Å‚atwiejsze, zanim zniknÄ™Å‚a Bariera.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_02"); //WiÄ™Åºniowie wydobywali z kopalni caÅ‚e tony rudy, ktÃ³re moje statki przewoziÅ‚y na kontynent.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_03"); //W drodze powrotnej przywoziÅ‚y jedzenie i inne towary.
+	AI_Output (self ,other,"DIA_Fernando_Hello_14_04"); //Niestety, te czasy minÄ™Å‚y. ZostaliÅ›my odciÄ™ci od kontynentu, wiÄ™c musimy zadowalaÄ‡ siÄ™ jedynie tym, co dostarczajÄ… nam nasi chÅ‚opi.
 };
 //*********************************************************************
 //	Info Perm
@@ -116,7 +116,7 @@ INSTANCE DIA_Fernando_Perm   (C_INFO)
 	condition   = DIA_Fernando_Perm_Condition;
 	information = DIA_Fernando_Perm_Info;
 	permanent   = TRUE;
-	description = "Z czego siê teraz utrzymujesz?";
+	description = "Z czego siÄ™ teraz utrzymujesz?";
 };
 
 FUNC INT DIA_Fernando_Perm_Condition()
@@ -130,7 +130,7 @@ FUNC INT DIA_Fernando_Perm_Condition()
 
 FUNC VOID DIA_Fernando_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Fernando_Perm_15_00"); //Z czego siê teraz utrzymujesz?
+	AI_Output (other,self ,"DIA_Fernando_Perm_15_00"); //Z czego siÄ™ teraz utrzymujesz?
 
 	if (Fernando_ImKnast == TRUE)
 	{
@@ -140,15 +140,15 @@ FUNC VOID DIA_Fernando_Perm_Info()
 	{
 		if (Fernando_HatsZugegeben == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Addon_Fernando_Perm_14_00"); //Nie wiem. Na pewno nie bêdê ju¿ robiæ szemranych interesów.
+			AI_Output (self ,other,"DIA_Addon_Fernando_Perm_14_00"); //Nie wiem. Na pewno nie bÄ™dÄ™ juÅ¼ robiÄ‡ szemranych interesÃ³w.
 		}	
 		else if (Npc_KnowsInfo (other,DIA_Fernando_Success) == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Fernando_Perm_14_01"); //Na razie ¿yjê z oszczêdnoœci. Jednak jeœli nie uda mi siê szybko stan¹æ na nogi, wkrótce bêdê mia³ powa¿ne problemy finansowe.
+			AI_Output (self ,other,"DIA_Fernando_Perm_14_01"); //Na razie Å¼yjÄ™ z oszczÄ™dnoÅ›ci. Jednak jeÅ›li nie uda mi siÄ™ szybko stanÄ…Ä‡ na nogi, wkrÃ³tce bÄ™dÄ™ miaÅ‚ powaÅ¼ne problemy finansowe.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Fernando_Perm_14_02"); //Jestem zrujnowany. Powinienem by³ pos³uchaæ ojca, kiedy mnie ostrzega³, ¿ebym trzyma³ siê z daleka od górnictwa.
+			AI_Output (self ,other,"DIA_Fernando_Perm_14_02"); //Jestem zrujnowany. Powinienem byÅ‚ posÅ‚uchaÄ‡ ojca, kiedy mnie ostrzegaÅ‚, Å¼ebym trzymaÅ‚ siÄ™ z daleka od gÃ³rnictwa.
 		};
 	};
 };
@@ -180,26 +180,26 @@ FUNC INT DIA_Fernando_Minental_Condition()
 
 FUNC VOID DIA_Fernando_Minental_Info()
 {
-	AI_Output (self ,other,"DIA_Fernando_Minental_14_00"); //Ej, ty - zaczekaj chwilê. Podró¿ujesz do Górniczej Doliny, prawda?
-	AI_Output (other ,self,"DIA_Fernando_Minental_15_01"); //Co w zwi¹zku z tym?
-	AI_Output (self ,other,"DIA_Fernando_Minental_14_02"); //Zawrzyjmy umowê. Powiesz mi, co siê dzieje z rud¹, a ja w zamian za to podarujê ci...
+	AI_Output (self ,other,"DIA_Fernando_Minental_14_00"); //Ej, ty - zaczekaj chwilÄ™. PodrÃ³Å¼ujesz do GÃ³rniczej Doliny, prawda?
+	AI_Output (other ,self,"DIA_Fernando_Minental_15_01"); //Co w zwiÄ…zku z tym?
+	AI_Output (self ,other,"DIA_Fernando_Minental_14_02"); //Zawrzyjmy umowÄ™. Powiesz mi, co siÄ™ dzieje z rudÄ…, a ja w zamian za to podarujÄ™ ci...
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Fernando_Minental_14_03"); //...kamieñ runiczny.
+		AI_Output (self ,other,"DIA_Fernando_Minental_14_03"); //...kamieÅ„ runiczny.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Fernando_Minental_14_04"); //...pierœcieñ, który podniesie twoj¹ energiê ¿yciow¹.
+		AI_Output (self ,other,"DIA_Fernando_Minental_14_04"); //...pierÅ›cieÅ„, ktÃ³ry podniesie twojÄ… energiÄ™ Å¼yciowÄ….
 	};
-	AI_Output (other ,self,"DIA_Fernando_Minental_15_05"); //Zobaczê, co da siê zrobiæ.
+	AI_Output (other ,self,"DIA_Fernando_Minental_15_05"); //ZobaczÄ™, co da siÄ™ zrobiÄ‡.
 	
 	B_NpcClearObsessionByDMT (self);
 	Npc_ExchangeRoutine (self, "START");
 	
 	Log_CreateTopic (TOPIC_Fernando,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Fernando,LOG_RUNNING);
-	B_LogEntry (TOPIC_Fernando,"Kupiec Fernando chce wiedzieæ, co dzieje siê z rud¹ w Górniczej Dolinie.");
+	B_LogEntry (TOPIC_Fernando,"Kupiec Fernando chce wiedzieÄ‡, co dzieje siÄ™ z rudÄ… w GÃ³rniczej Dolinie.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ instance DIA_Addon_Fernando_BanditTrader		(C_INFO)
 	condition	 = 	DIA_Addon_Fernando_BanditTrader_Condition;
 	information	 = 	DIA_Addon_Fernando_BanditTrader_Info;
 
-	description	 = 	"Sprzedajesz broñ bandytom!";
+	description	 = 	"Sprzedajesz broÅ„ bandytom!";
 };
 
 func int DIA_Addon_Fernando_BanditTrader_Condition ()
@@ -231,78 +231,78 @@ func int DIA_Addon_Fernando_BanditTrader_Condition ()
 
 func void DIA_Addon_Fernando_BanditTrader_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_00"); //Sprzedajesz broñ bandytom!
-	AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_01"); //Eee? Sk¹d ten pomys³?
+	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_00"); //Sprzedajesz broÅ„ bandytom!
+	AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_01"); //Eee? SkÄ…d ten pomysÅ‚?
 
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Fernando, zamorski kupiec, przyzna³, ¿e dostarcza³ broñ bandytom."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Fernando, zamorski kupiec, przyznaÅ‚, Å¼e dostarczaÅ‚ broÅ„ bandytom."); 
 
 	B_GivePlayerXP (XP_Addon_Fernando_HatsZugegeben);
 	Fernando_HatsZugegeben = TRUE;
 
 	if	((Npc_HasItems (other,ItWr_Addon_BanditTrader))&&(BanditTrader_Lieferung_Gelesen == TRUE))
 	{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_02"); //Oto lista towarów, któr¹ uda³o mi siê u nich znaleŸæ. Widnieje na niej twój podpis.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_02"); //Oto lista towarÃ³w, ktÃ³rÄ… udaÅ‚o mi siÄ™ u nich znaleÅºÄ‡. Widnieje na niej twÃ³j podpis.
 	};
 	
 	if (Npc_HasItems (other,ItRi_Addon_BanditTrader))
 	{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_03"); //Mam te¿ pierœcieñ gildii kupców zamorskich Araxos - a ty jesteœ przecie¿ kupcem zamorskim, prawda?
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_03"); //Mam teÅ¼ pierÅ›cieÅ„ gildii kupcÃ³w zamorskich Araxos - a ty jesteÅ› przecieÅ¼ kupcem zamorskim, prawda?
 
 		if	(Npc_HasItems (other,ItMw_Addon_BanditTrader))
 		{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_04"); //Nie mówi¹c ju¿ o tym, ¿e bandyckie miecze s¹ oznaczone twoimi inicja³ami.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_04"); //Nie mÃ³wiÄ…c juÅ¼ o tym, Å¼e bandyckie miecze sÄ… oznaczone twoimi inicjaÅ‚ami.
 		};
 	}
 	else //nur (Npc_HasItems (other,ItMw_Addon_BanditTrader))
 	{
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_05"); //Miecze, których u¿ywali bandyci, by³y oznaczone twoimi inicja³ami.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_05"); //Miecze, ktÃ³rych uÅ¼ywali bandyci, byÅ‚y oznaczone twoimi inicjaÅ‚ami.
 	};
 
-	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_06"); //Nie próbuj zaprzeczaæ - przejrza³em twoje machlojki.
+	AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_06"); //Nie prÃ³buj zaprzeczaÄ‡ - przejrzaÅ‚em twoje machlojki.
 
 	if (Fernando_ImKnast == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_07"); //Wiêc to ty... To ty mnie zdradzi³eœ! Zap³acisz mi za to.
-		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_08"); //Najpierw musieliby ciê st¹d wypuœciæ, a jakoœ nie s¹dzê, aby do tego dosz³o.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_07"); //WiÄ™c to ty... To ty mnie zdradziÅ‚eÅ›! ZapÅ‚acisz mi za to.
+		AI_Output	(other, self, "DIA_Addon_Fernando_BanditTrader_15_08"); //Najpierw musieliby ciÄ™ stÄ…d wypuÅ›ciÄ‡, a jakoÅ› nie sÄ…dzÄ™, aby do tego doszÅ‚o.
 		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_09"); //Nadejdzie jeszcze pora zemsty...
 		B_NpcClearObsessionByDMT (self);
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_10"); //Musisz mi uwierzyæ! Nie chcia³em tego!
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_11"); //Na pocz¹tku chcieli tylko ¿ywnoœci! Interes szed³ s³abo, wiêc siê zgodzi³em.
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_12"); //Z czasem chcieli coraz wiêcej... Zagrozili, ¿e mnie zabij¹, jeœli nie dostarczê im mieczy!
-		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_13"); //Nie mo¿esz mnie obwiniaæ! To ja jestem tutaj ofiar¹!
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_10"); //Musisz mi uwierzyÄ‡! Nie chciaÅ‚em tego!
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_11"); //Na poczÄ…tku chcieli tylko Å¼ywnoÅ›ci! Interes szedÅ‚ sÅ‚abo, wiÄ™c siÄ™ zgodziÅ‚em.
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_12"); //Z czasem chcieli coraz wiÄ™cej... Zagrozili, Å¼e mnie zabijÄ…, jeÅ›li nie dostarczÄ™ im mieczy!
+		AI_Output	(self, other, "DIA_Addon_Fernando_BanditTrader_14_13"); //Nie moÅ¼esz mnie obwiniaÄ‡! To ja jestem tutaj ofiarÄ…!
 		
 		if (Fernando_ImKnast == FALSE)//Joly:zur Sicherheit
 		{
 			Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
-			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Ile mi zap³acisz, jeœli nie bêdê ci przeszkadzaæ w ucieczce?", DIA_Addon_Fernando_BanditTrader_preis );
-			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Zajmie siê tob¹ stra¿.", DIA_Addon_Fernando_BanditTrader_mil );
+			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Ile mi zapÅ‚acisz, jeÅ›li nie bÄ™dÄ™ ci przeszkadzaÄ‡ w ucieczce?", DIA_Addon_Fernando_BanditTrader_preis );
+			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Zajmie siÄ™ tobÄ… straÅ¼.", DIA_Addon_Fernando_BanditTrader_mil );
 			Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Jaka to smutna historia.", DIA_Addon_Fernando_BanditTrader_Uptown );
 		};
 	};
 };
 func void DIA_Addon_Fernando_BanditTrader_Uptown ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_00"); //Jaka to smutna historia... Jak na kogoœ ¿yj¹cego w górnym mieœcie jesteœ wyj¹tkowo odra¿aj¹cy.
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_01"); //Sprzedaæ duszê za kilka uncji z³ota... Ech.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_Uptown_14_02"); //Muszê zarobiæ na ¿ycie! Jeœli nie bêdzie mnie staæ na pokrycie kosztów, to wyrzuc¹ mnie z powrotem do portu! Miêdzy tych obdartusów!
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_00"); //Jaka to smutna historia... Jak na kogoÅ› Å¼yjÄ…cego w gÃ³rnym mieÅ›cie jesteÅ› wyjÄ…tkowo odraÅ¼ajÄ…cy.
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_Uptown_15_01"); //SprzedaÄ‡ duszÄ™ za kilka uncji zÅ‚ota... Ech.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_Uptown_14_02"); //MuszÄ™ zarobiÄ‡ na Å¼ycie! JeÅ›li nie bÄ™dzie mnie staÄ‡ na pokrycie kosztÃ³w, to wyrzucÄ… mnie z powrotem do portu! MiÄ™dzy tych obdartusÃ³w!
 };
 func void DIA_Addon_Fernando_BanditTrader_mil ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_00"); //Zajmie siê tob¹ stra¿.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_01"); //Tak nie mo¿na!
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_02"); //Ale¿ oczywiœcie, ¿e mo¿na.
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_00"); //Zajmie siÄ™ tobÄ… straÅ¼.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_01"); //Tak nie moÅ¼na!
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_mil_15_02"); //AleÅ¼ oczywiÅ›cie, Å¼e moÅ¼na.
 	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_mil_14_03"); //Na Innosa... Jestem zrujnowany.
 	B_NpcClearObsessionByDMT (self);
 };
 func void DIA_Addon_Fernando_BanditTrader_preis ()
 {
-	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_preis_15_00"); //Ile mi zap³acisz, jeœli nie bêdê ci przeszkadzaæ w ucieczce?
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_01"); //Znasz moj¹ sytuacjê. Zbyt wiele nie mam.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_02"); //Mo¿e 200 sztuk z³ota i cenny pierœcieñ?
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_03"); //Wiêcej nie mogê daæ... Dostanê teraz dowody?
+	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_preis_15_00"); //Ile mi zapÅ‚acisz, jeÅ›li nie bÄ™dÄ™ ci przeszkadzaÄ‡ w ucieczce?
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_01"); //Znasz mojÄ… sytuacjÄ™. Zbyt wiele nie mam.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_02"); //MoÅ¼e 200 sztuk zÅ‚ota i cenny pierÅ›cieÅ„?
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_preis_14_03"); //WiÄ™cej nie mogÄ™ daÄ‡... DostanÄ™ teraz dowody?
 
 	Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
 	Info_AddChoice	(DIA_Addon_Fernando_BanditTrader, "Nie, tego ci nie dam.", DIA_Addon_Fernando_BanditTrader_nein );
@@ -316,11 +316,11 @@ func void DIA_Addon_Fernando_BanditTrader_ja ()
 	Npc_RemoveInvItem	(hero ,ItRi_Addon_BanditTrader);
 	Npc_RemoveInvItem	(hero ,ItWr_Addon_BanditTrader);
 
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_01"); //Œwietnie - oto z³oto.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_01"); //Åšwietnie - oto zÅ‚oto.
 
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);		
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_02"); //Jeszcze pierœcieñ i jesteœmy kwita.
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_ja_14_02"); //Jeszcze pierÅ›cieÅ„ i jesteÅ›my kwita.
 	CreateInvItems (self, ItRi_Prot_Point_01, 1);									
 	B_GiveInvItems (self, other, ItRi_Prot_Point_01, 1);		
 	Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
@@ -328,7 +328,7 @@ func void DIA_Addon_Fernando_BanditTrader_ja ()
 func void DIA_Addon_Fernando_BanditTrader_nein ()
 {
 	AI_Output			(other, self, "DIA_Addon_Fernando_BanditTrader_nein_15_00"); //Nie, tego ci nie dam.
-	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_nein_14_01"); //Dobra. Tylko nie wa¿ siê mnie zdradziæ!
+	AI_Output			(self, other, "DIA_Addon_Fernando_BanditTrader_nein_14_01"); //Dobra. Tylko nie waÅ¼ siÄ™ mnie zdradziÄ‡!
 	Info_ClearChoices	(DIA_Addon_Fernando_BanditTrader);
 };
 //*********************************************************************
@@ -341,7 +341,7 @@ INSTANCE DIA_Fernando_Success   (C_INFO)
 	condition   = DIA_Fernando_Success_Condition;
 	information = DIA_Fernando_Success_Info;
 	permanent   = FALSE;
-	description	= "By³em w Górniczej Dolinie.";
+	description	= "ByÅ‚em w GÃ³rniczej Dolinie.";
 };
 FUNC INT DIA_Fernando_Success_Condition()
 {
@@ -354,30 +354,30 @@ FUNC INT DIA_Fernando_Success_Condition()
 };
 FUNC VOID DIA_Fernando_Success_Info()
 {
-	AI_Output (other ,self,"DIA_Fernando_Success_15_00"); //By³em w Górniczej Dolinie.
+	AI_Output (other ,self,"DIA_Fernando_Success_15_00"); //ByÅ‚em w GÃ³rniczej Dolinie.
 	
 	if (Fernando_ImKnast == FALSE)
 	{
 		Fernando_Erz = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 		
-		AI_Output (self ,other,"DIA_Fernando_Success_14_01"); //I co? Jak wygl¹da sytuacja?
-		AI_Output (other ,self,"DIA_Fernando_Success_15_02"); //Z³o¿a siê wyczerpa³y, nie warto prowadziæ prac dla kilku skrzyñ rudy.
-		AI_Output (self ,other,"DIA_Fernando_Success_14_03"); //To niemo¿liwe! A wiêc jestem zrujnowany...
+		AI_Output (self ,other,"DIA_Fernando_Success_14_01"); //I co? Jak wyglÄ…da sytuacja?
+		AI_Output (other ,self,"DIA_Fernando_Success_15_02"); //ZÅ‚oÅ¼a siÄ™ wyczerpaÅ‚y, nie warto prowadziÄ‡ prac dla kilku skrzyÅ„ rudy.
+		AI_Output (self ,other,"DIA_Fernando_Success_14_03"); //To niemoÅ¼liwe! A wiÄ™c jestem zrujnowany...
 	
 		if (Fernando_HatsZugegeben == FALSE)
 		{
-			AI_Output (other ,self,"DIA_Fernando_Success_15_04"); //Co z nasz¹ umow¹?
-			AI_Output (self ,other,"DIA_Fernando_Success_14_05"); //A teraz s³ówko o twojej nagrodzie...
+			AI_Output (other ,self,"DIA_Fernando_Success_15_04"); //Co z naszÄ… umowÄ…?
+			AI_Output (self ,other,"DIA_Fernando_Success_14_05"); //A teraz sÅ‚Ã³wko o twojej nagrodzie...
 			
 			if (other.guild == GIL_KDF)
 			{
-				AI_Output (self ,other,"DIA_Fernando_Minental_14_06"); //Proszê, weŸ ten kamieñ runiczny.
+				AI_Output (self ,other,"DIA_Fernando_Minental_14_06"); //ProszÄ™, weÅº ten kamieÅ„ runiczny.
 				B_GiveInvItems (self,other, ItmI_RuneBlank,1);
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Fernando_Minental_14_07"); //Proszê, weŸ ten pierœcieñ.
+				AI_Output (self ,other,"DIA_Fernando_Minental_14_07"); //ProszÄ™, weÅº ten pierÅ›cieÅ„.
 				B_GiveInvItems (self,other, ItRi_Hp_02,1);
 			};
 		};
@@ -386,7 +386,7 @@ FUNC VOID DIA_Fernando_Success_Info()
 	{
 		B_Say (self, other, "$NOTNOW");
 		Log_SetTopicStatus (TOPIC_Fernando, LOG_OBSOLETE);
-		B_LogEntry (TOPIC_Fernando,"Fernando nie chce kolejnych informacji. A ja nie chcê kolejnej zap³aty.");
+		B_LogEntry (TOPIC_Fernando,"Fernando nie chce kolejnych informacji. A ja nie chcÄ™ kolejnej zapÅ‚aty.");
 	};
 };
 
@@ -400,7 +400,7 @@ instance DIA_Fernando_Obsession		(C_INFO)
 	condition	 = 	DIA_Fernando_Obsession_Condition;
 	information	 = 	DIA_Fernando_Obsession_Info;
 
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Fernando_Obsession_Condition ()
@@ -429,7 +429,7 @@ instance DIA_Fernando_Heilung		(C_INFO)
 	information	 = 	DIA_Fernando_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jesteœ opêtany!";
+	description	 = 	"JesteÅ› opÄ™tany!";
 };
 
 func int DIA_Fernando_Heilung_Condition ()
@@ -443,8 +443,8 @@ func int DIA_Fernando_Heilung_Condition ()
 
 func void DIA_Fernando_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Fernando_Heilung_15_00"); //Jesteœ opêtany!
-	AI_Output			(self, other, "DIA_Fernando_Heilung_14_01"); //IdŸ. No idŸ wreszcie!
+	AI_Output			(other, self, "DIA_Fernando_Heilung_15_00"); //JesteÅ› opÄ™tany!
+	AI_Output			(self, other, "DIA_Fernando_Heilung_14_01"); //IdÅº. No idÅº wreszcie!
 	B_NpcClearObsessionByDMT (self);
 };
 

@@ -44,14 +44,14 @@ FUNC INT DIA_Rod_Hello_Condition()
  
 FUNC VOID DIA_Rod_Hello_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Hello_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_Rod_Hello_15_00"); //Co sÅ‚ychaÄ‡?
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Rod_Hello_06_01"); //Czego ode mnie chcesz, miêczaku?
+		AI_Output (self, other, "DIA_Rod_Hello_06_01"); //Czego ode mnie chcesz, miÄ™czaku?
 	
 			if (other.guild == GIL_KDF)
 			{
-				AI_Output (self, other, "DIA_Rod_Hello_06_02"); //Nie znaleŸli ci milutkiego pokoiku w klasztorze?
+				AI_Output (self, other, "DIA_Rod_Hello_06_02"); //Nie znaleÅºli ci milutkiego pokoiku w klasztorze?
 			};	
 	};
 };
@@ -68,7 +68,7 @@ instance DIA_Rod_WannaLearn (C_INFO)
 	condition	= DIA_Rod_WannaLearn_Condition;
 	information	= DIA_Rod_WannaLearn_Info;
 	permanent	= TRUE;
-	description	= "Czy móg³byœ mnie nauczyæ, jak walczyæ broni¹ dwurêczn¹?"; 
+	description	= "Czy mÃ³gÅ‚byÅ› mnie nauczyÄ‡, jak walczyÄ‡ broniÄ… dwurÄ™cznÄ…?"; 
 };                       
 
 FUNC INT DIA_Rod_WannaLearn_Condition()
@@ -81,17 +81,17 @@ FUNC INT DIA_Rod_WannaLearn_Condition()
  
 FUNC VOID DIA_Rod_WannaLearn_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_WannaLearn_15_00"); //Czy móg³byœ mnie nauczyæ, jak walczyæ broni¹ dwurêczn¹?
+	AI_Output (other, self, "DIA_Rod_WannaLearn_15_00"); //Czy mÃ³gÅ‚byÅ› mnie nauczyÄ‡, jak walczyÄ‡ broniÄ… dwurÄ™cznÄ…?
 		
 	if (Rod_WetteGewonnen == TRUE)
 	|| (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
 		AI_Output (self, other, "DIA_Rod_WannaLearn_06_01"); //Jestem niezgorszym wojownikiem, co nie znaczy - dobrym nauczycielem.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_02"); //Chocia¿ pewnie móg³bym ci pokazaæ podstawy walki t¹ broni¹.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_02"); //ChociaÅ¼ pewnie mÃ³gÅ‚bym ci pokazaÄ‡ podstawy walki tÄ… broniÄ….
 		
 		if (Npc_HasItems (self, ItMw_2h_Rod) == 0)
 		{
-			AI_Output (self, other, "DIA_Rod_WannaLearn_06_03"); //Pod warunkiem, oczywiœcie, ¿e mi zwrócisz mój miecz.
+			AI_Output (self, other, "DIA_Rod_WannaLearn_06_03"); //Pod warunkiem, oczywiÅ›cie, Å¼e mi zwrÃ³cisz mÃ³j miecz.
 		}
 		else
 		{
@@ -100,8 +100,8 @@ FUNC VOID DIA_Rod_WannaLearn_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //Pos³uchaj ch³opcze. Potrzeba wiele si³y, by w ogóle udŸwign¹æ broñ dwurêczn¹.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //Skocz ch³opcze lepiej na pastwisko i pobaw siê w ciuciubabkê z owieczkami!
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //PosÅ‚uchaj chÅ‚opcze. Potrzeba wiele siÅ‚y, by w ogÃ³le udÅºwignÄ…Ä‡ broÅ„ dwurÄ™cznÄ….
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //Skocz chÅ‚opcze lepiej na pastwisko i pobaw siÄ™ w ciuciubabkÄ™ z owieczkami!
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -119,7 +119,7 @@ INSTANCE DIA_Rod_Teach(C_INFO)
 	condition	= DIA_Rod_Teach_Condition;
 	information	= DIA_Rod_Teach_Info;
 	permanent	= TRUE;
-	description = "Chcê poprawiæ swoje umiejêtnoœci w walce broni¹ dwurêczn¹!";
+	description = "ChcÄ™ poprawiÄ‡ swoje umiejÄ™tnoÅ›ci w walce broniÄ… dwurÄ™cznÄ…!";
 };                       
 
 FUNC INT DIA_Rod_Teach_Condition()
@@ -132,7 +132,7 @@ FUNC INT DIA_Rod_Teach_Condition()
  
 FUNC VOID DIA_Rod_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //Chcê poprawiæ swoje umiejêtnoœci w walce broni¹ dwurêczn¹!
+	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //ChcÄ™ poprawiÄ‡ swoje umiejÄ™tnoÅ›ci w walce broniÄ… dwurÄ™cznÄ…!
 
 	Rod_Merke_2h = other.HitChance[NPC_TALENT_2H];
 	
@@ -146,7 +146,7 @@ FUNC VOID DIA_Rod_Teach_Back ()
 {
 	if (Rod_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //Ju¿ ca³kiem nieŸle sobie radzisz.
+		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //JuÅ¼ caÅ‚kiem nieÅºle sobie radzisz.
 	};
 	
 	Info_ClearChoices (DIA_Rod_Teach);
@@ -183,7 +183,7 @@ instance DIA_Rod_WannaJoin (C_INFO)
 	condition	= DIA_Rod_WannaJoin_Condition;
 	information	= DIA_Rod_WannaJoin_Info;
 	permanent	= TRUE;
-	description	= "Chcê siê przy³¹czyæ do najemników. Masz coœ przeciwko temu?"; 
+	description	= "ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w. Masz coÅ› przeciwko temu?"; 
 };                       
 
 FUNC INT DIA_Rod_WannaJoin_Condition()
@@ -196,32 +196,32 @@ FUNC INT DIA_Rod_WannaJoin_Condition()
  
 FUNC VOID DIA_Rod_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_WannaJoin_15_00"); //Chcê siê przy³¹czyæ do najemników. Masz coœ przeciwko temu?
+	AI_Output (other, self, "DIA_Rod_WannaJoin_15_00"); //ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w. Masz coÅ› przeciwko temu?
 	
 	if (Npc_HasItems (self, ItMw_2h_Rod) == 0)
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_01"); //Mo¿e najpierw oddasz mi miecz, co?
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_01"); //MoÅ¼e najpierw oddasz mi miecz, co?
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| 		(Rod_WetteGewonnen == TRUE)
 	{
 		if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 		{	
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //W porz¹dku, nie chowam urazy.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //Dobrze walczysz, a to jest najwa¿niejsze.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //Bójki miêdzy przyjació³mi to tutaj normalka. Przyzwyczaisz siê.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //W porzÄ…dku, nie chowam urazy.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //Dobrze walczysz, a to jest najwaÅ¼niejsze.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //BÃ³jki miÄ™dzy przyjaciÃ³Å‚mi to tutaj normalka. Przyzwyczaisz siÄ™.
 		}
 		else //WetteGewonnen
 		{
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_05"); //No proszê, masz ju¿ ca³kiem przyzwoity miecz. Reszty te¿ siê nauczysz.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_05"); //No proszÄ™, masz juÅ¼ caÅ‚kiem przyzwoity miecz. Reszty teÅ¼ siÄ™ nauczysz.
 		};
 		
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //Jeœli o mnie chodzi, nie ma sprawy.
-		B_LogEntry (TOPIC_SLDRespekt,"Rod poprze mnie, jeœli zechcê siê przy³¹czyæ do najemników.");
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //JeÅ›li o mnie chodzi, nie ma sprawy.
+		B_LogEntry (TOPIC_SLDRespekt,"Rod poprze mnie, jeÅ›li zechcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //Nie mamy tu miejsca dla miêczaków.
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //Nie mamy tu miejsca dla miÄ™czakÃ³w.
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -237,7 +237,7 @@ instance DIA_Rod_Duell (C_INFO)
 	condition	= DIA_Rod_Duell_Condition;
 	information	= DIA_Rod_Duell_Info;
 	permanent	= TRUE;
-	description	= "Chyba przyda³aby ci siê lekcja dobrych manier, co?"; 
+	description	= "Chyba przydaÅ‚aby ci siÄ™ lekcja dobrych manier, co?"; 
 };                       
 
 FUNC INT DIA_Rod_Duell_Condition()
@@ -259,14 +259,14 @@ FUNC INT DIA_Rod_Duell_Condition()
  
 FUNC VOID DIA_Rod_Duell_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Duell_15_00"); //Chyba przyda³aby ci siê lekcja dobrych manier, co?
+	AI_Output (other, self, "DIA_Rod_Duell_15_00"); //Chyba przydaÅ‚aby ci siÄ™ lekcja dobrych manier, co?
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_NONE)
 	{
-		AI_Output (self, other, "DIA_Rod_Duell_06_01"); //Dalej, spróbuj!
+		AI_Output (self, other, "DIA_Rod_Duell_06_01"); //Dalej, sprÃ³buj!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_Duell_06_02"); //Chyba nigdy siê nie nauczysz!
+		AI_Output (self, other, "DIA_Rod_Duell_06_02"); //Chyba nigdy siÄ™ nie nauczysz!
 	};
 	
 	AI_StopProcessInfos(self);
@@ -299,12 +299,12 @@ FUNC INT DIA_Rod_StarkGenug_Condition()
  
 FUNC VOID DIA_Rod_StarkGenug_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_StarkGenug_15_00"); //Jestem doœæ silny!
-	AI_Output (self, other, "DIA_Rod_StarkGenug_06_01"); //Nonsens! Nie uniós³byœ nawet przyzwoitego miecza, takiego jak choæby mój.
+	AI_Output (other, self, "DIA_Rod_StarkGenug_15_00"); //Jestem doÅ›Ä‡ silny!
+	AI_Output (self, other, "DIA_Rod_StarkGenug_06_01"); //Nonsens! Nie uniÃ³sÅ‚byÅ› nawet przyzwoitego miecza, takiego jak choÄ‡by mÃ³j.
 	
 	Log_CreateTopic (Topic_RodWette,LOG_MISSION);
 	Log_SetTopicStatus (Topic_RodWette,LOG_RUNNING);
-	B_LogEntry (Topic_RodWette,"Najemnik Rod twierdzi, ¿e nie zdo³am udŸwign¹æ jego miecza.");
+	B_LogEntry (Topic_RodWette,"Najemnik Rod twierdzi, Å¼e nie zdoÅ‚am udÅºwignÄ…Ä‡ jego miecza.");
 };	
 	
 	
@@ -319,7 +319,7 @@ instance DIA_Rod_BINStarkGenug (C_INFO)
 	condition	= DIA_Rod_BINStarkGenug_Condition;
 	information	= DIA_Rod_BINStarkGenug_Info;
 	permanent	= FALSE;
-	description	= "Powiedzia³em, ¿e JESTEM dostatecznie silny."; 
+	description	= "PowiedziaÅ‚em, Å¼e JESTEM dostatecznie silny."; 
 };                       
 
 FUNC INT DIA_Rod_BINStarkGenug_Condition()
@@ -334,8 +334,8 @@ FUNC INT DIA_Rod_BINStarkGenug_Condition()
  
 FUNC VOID DIA_Rod_BINStarkGenug_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_BINStarkGenug_15_00"); //Powiedzia³em, ¿e JESTEM dostatecznie silny.
-	AI_Output (self, other, "DIA_Rod_BINStarkGenug_06_01"); //Jesteœ rozbrajaj¹cy. Zaryzykujesz zak³adzik?
+	AI_Output (other, self, "DIA_Rod_BINStarkGenug_15_00"); //PowiedziaÅ‚em, Å¼e JESTEM dostatecznie silny.
+	AI_Output (self, other, "DIA_Rod_BINStarkGenug_06_01"); //JesteÅ› rozbrajajÄ…cy. Zaryzykujesz zakÅ‚adzik?
 };	
 	
 
@@ -353,7 +353,7 @@ instance DIA_Rod_Wette (C_INFO)
 	condition	= DIA_Rod_Wette_Condition;
 	information	= DIA_Rod_Wette_Info;
 	permanent	= TRUE;
-	description	= "Za³o¿ê siê, ¿e spokojnie dam sobie radê z twoim mieczem!"; 
+	description	= "ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e spokojnie dam sobie radÄ™ z twoim mieczem!"; 
 };                       
 
 FUNC INT DIA_Rod_Wette_Condition()
@@ -370,21 +370,21 @@ FUNC INT DIA_Rod_Wette_Condition()
  
 FUNC VOID DIA_Rod_Wette_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Wette_15_00"); //Za³o¿ê siê, ¿e spokojnie dam sobie radê z twoim mieczem!
-	AI_Output (self, other, "DIA_Rod_Wette_06_01"); //Naprawdê? Hmmm... Ile chcesz przegraæ?
-	AI_Output (self, other, "DIA_Rod_Wette_06_02"); //No có¿, wygl¹dasz raczej na biednego durnia. Powiedzmy - 30 sztuk z³ota! Masz chocia¿ tyle?
+	AI_Output (other, self, "DIA_Rod_Wette_15_00"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e spokojnie dam sobie radÄ™ z twoim mieczem!
+	AI_Output (self, other, "DIA_Rod_Wette_06_01"); //NaprawdÄ™? Hmmm... Ile chcesz przegraÄ‡?
+	AI_Output (self, other, "DIA_Rod_Wette_06_02"); //No cÃ³Å¼, wyglÄ…dasz raczej na biednego durnia. Powiedzmy - 30 sztuk zÅ‚ota! Masz chociaÅ¼ tyle?
 		
 	Info_ClearChoices (DIA_Rod_Wette);
 	Info_AddChoice (DIA_Rod_Wette, "Nie.", DIA_Rod_Wette_No);
 	Info_AddChoice (DIA_Rod_Wette, "Jasne.", DIA_Rod_Wette_Yes);
 	
-	B_LogEntry (Topic_RodWette,"Rod gotów jest za³o¿yæ siê o 30 sztuk z³ota, ¿e nie udŸwignê jego miecza.");
+	B_LogEntry (Topic_RodWette,"Rod gotÃ³w jest zaÅ‚oÅ¼yÄ‡ siÄ™ o 30 sztuk zÅ‚ota, Å¼e nie udÅºwignÄ™ jego miecza.");
 };
 
 func void DIA_Rod_Wette_No()
 {
 	AI_Output (other, self, "DIA_Rod_Wette_No_15_00"); //Nie.
-	AI_Output (self, other, "DIA_Rod_Wette_No_06_01"); //Ach, odejdŸ.
+	AI_Output (self, other, "DIA_Rod_Wette_No_06_01"); //Ach, odejdÅº.
 	
 	Info_ClearChoices (DIA_Rod_Wette);
 };
@@ -392,14 +392,14 @@ func void DIA_Rod_Wette_No()
 func void DIA_Rod_Wette_Yes()
 {
 	AI_Output (other, self, "DIA_Rod_Wette_Yes_15_00"); //Jasne.
-	AI_Output (self, other, "DIA_Rod_Wette_Yes_06_01"); //Niech no spojrzê...
+	AI_Output (self, other, "DIA_Rod_Wette_Yes_06_01"); //Niech no spojrzÄ™...
 	
 	if (B_GiveInvItems (other,self, itmi_gold, 30))
 	{
 		Rod_WetteAngenommen = TRUE;
 			
-		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_02"); //Proszê!
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_03"); //W porz¹dku, zobaczmy, na co ciê staæ...
+		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_02"); //ProszÄ™!
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_03"); //W porzÄ…dku, zobaczmy, na co ciÄ™ staÄ‡...
 		
 		B_GiveInvItems (self, other, ItMw_2h_Rod, 1);
 		
@@ -409,18 +409,18 @@ func void DIA_Rod_Wette_Yes()
 			AI_EquipBestMeleeWeapon	(other);
 			AI_ReadyMeleeWeapon		(other);
 							
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//Choæby na to?!
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//No có¿, wygl¹da na to, ¿e wygra³eœ.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//Kto by przypuszcza³. Naprawdê nie wygl¹dasz mi na kogoœ, kto mia³by tyle krzepy.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//Wygl¹da na to, ¿e w³aœnie straci³em 30 sztuk z³ota. Oto pieni¹dze.
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//ChoÄ‡by na to?!
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//No cÃ³Å¼, wyglÄ…da na to, Å¼e wygraÅ‚eÅ›.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//Kto by przypuszczaÅ‚. NaprawdÄ™ nie wyglÄ…dasz mi na kogoÅ›, kto miaÅ‚by tyle krzepy.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//WyglÄ…da na to, Å¼e wÅ‚aÅ›nie straciÅ‚em 30 sztuk zÅ‚ota. Oto pieniÄ…dze.
 			B_GiveInvItems (self, other, itmi_gold, 60);
 			Rod_WetteGewonnen = TRUE;
 			B_GivePlayerXP (XP_Rod); 
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //Nie udŸwignê tej broni!
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//To w³aœnie próbujê ci uœwiadomiæ!
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //Nie udÅºwignÄ™ tej broni!
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//To wÅ‚aÅ›nie prÃ³bujÄ™ ci uÅ›wiadomiÄ‡!
 		};
 		
 		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_10");//A teraz oddaj miecz.
@@ -431,12 +431,12 @@ func void DIA_Rod_Wette_Yes()
 		// Mike: AAAARGH!!!! genau DAS war der Fehler!!!
 			
 		Info_AddChoice (DIA_Rod_Wette, "Raczej nie...", DIA_Rod_Wette_KeepIt);
-		Info_AddChoice (DIA_Rod_Wette, "Proszê!", DIA_Rod_Wette_GiveBack);
+		Info_AddChoice (DIA_Rod_Wette, "ProszÄ™!", DIA_Rod_Wette_GiveBack);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_11"); //Chwileczkê, gdzie¿ ja go po³o¿y³em...
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_12"); //Hmmm... Wróæ, kiedy bêdziesz mia³ pieni¹dze na zak³ad.
+		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_11"); //ChwileczkÄ™, gdzieÅ¼ ja go poÅ‚oÅ¼yÅ‚em...
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_12"); //Hmmm... WrÃ³Ä‡, kiedy bÄ™dziesz miaÅ‚ pieniÄ…dze na zakÅ‚ad.
 		
 		Info_ClearChoices (DIA_Rod_Wette);
 	};
@@ -445,9 +445,9 @@ func void DIA_Rod_Wette_Yes()
 func void DIA_Rod_Wette_GiveBack()
 {
 	AI_RemoveWeapon (other);
-	AI_Output (other, self, "DIA_Rod_Wette_GiveBack_15_00"); //Proszê!
+	AI_Output (other, self, "DIA_Rod_Wette_GiveBack_15_00"); //ProszÄ™!
 	Info_ClearChoices (DIA_Rod_Wette);
-	Info_AddChoice (DIA_Rod_Wette, "(Oddaj broñ)", DIA_Rod_Wette_GiveBack2);
+	Info_AddChoice (DIA_Rod_Wette, "(Oddaj broÅ„)", DIA_Rod_Wette_GiveBack2);
 };
 
 func void DIA_Rod_Wette_GiveBack2()
@@ -455,7 +455,7 @@ func void DIA_Rod_Wette_GiveBack2()
 	B_GiveInvItems (other, self, ItMw_2h_Rod, 1);		
 	if (Rod_WetteGewonnen == FALSE)
 	{
-		AI_Output (self, other, "DIA_Rod_Wette_GiveBack_06_01"); //Mimo wszystko jesteœ miêczak i tyle.
+		AI_Output (self, other, "DIA_Rod_Wette_GiveBack_06_01"); //Mimo wszystko jesteÅ› miÄ™czak i tyle.
 	};
 	Info_ClearChoices (DIA_Rod_Wette);
 };
@@ -463,8 +463,8 @@ func void DIA_Rod_Wette_GiveBack2()
 func void DIA_Rod_Wette_KeepIt()
 {
 	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_00"); //Raczej nie...
-	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //S³ucham?
-	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Chyba zatrzymam go na jakiœ czas.
+	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //SÅ‚ucham?
+	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Chyba zatrzymam go na jakiÅ› czas.
 	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_03"); //Zaczekaj no, skurczybyku!
 	
 	Info_ClearChoices (DIA_Rod_Wette);
@@ -474,7 +474,7 @@ func void DIA_Rod_Wette_KeepIt()
 
 
 // ************************************************************
-// 			  				Schwert zurück
+// 			  				Schwert zurÃ¼ck
 // ************************************************************
 var int Rod_SchwertXPGiven;
 
@@ -485,7 +485,7 @@ instance DIA_Rod_GiveItBack (C_INFO)
 	condition	= DIA_Rod_GiveItBack_Condition;
 	information	= DIA_Rod_GiveItBack_Info;
 	permanent	= TRUE;
-	description	= "Proszê, oto twój miecz!"; 
+	description	= "ProszÄ™, oto twÃ³j miecz!"; 
 };                       
 
 FUNC INT DIA_Rod_GiveItBack_Condition()
@@ -500,8 +500,8 @@ FUNC VOID DIA_Rod_GiveItBack_Info()
 {	
 	B_GiveInvItems (other, self, ItMw_2h_Rod, 1);
 	
-	AI_Output (other, self, "DIA_Rod_GiveItBack_15_00"); //Proszê, oto twój miecz!
-	AI_Output (self, other, "DIA_Rod_GiveItBack_06_01"); //Czas najwy¿szy!
+	AI_Output (other, self, "DIA_Rod_GiveItBack_15_00"); //ProszÄ™, oto twÃ³j miecz!
+	AI_Output (self, other, "DIA_Rod_GiveItBack_06_01"); //Czas najwyÅ¼szy!
 	
 	if (Rod_SchwertXPGiven == FALSE)
 	{
@@ -521,7 +521,7 @@ instance DIA_Rod_PERM (C_INFO)
 	condition	= DIA_Rod_PERM_Condition;
 	information	= DIA_Rod_PERM_Info;
 	permanent	= TRUE;
-	description	= "Co s³ychaæ?"; 
+	description	= "Co sÅ‚ychaÄ‡?"; 
 };                       
 
 FUNC INT DIA_Rod_PERM_Condition()
@@ -543,28 +543,28 @@ FUNC VOID DIA_Rod_PERM_Info()
 			if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 			&& (Rod_WetteGewonnen == FALSE)
 			{
-				AI_Output (self, other, "DIA_Rod_PERM_06_01"); //Nie twoja sprawa, koleœ.
+				AI_Output (self, other, "DIA_Rod_PERM_06_01"); //Nie twoja sprawa, koleÅ›.
 				Rod_SchwachGesagt = TRUE;
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Rod_PERM_06_02"); //Ciekawe czy pozwol¹ ci siê przy³¹czyæ.
+				AI_Output (self, other, "DIA_Rod_PERM_06_02"); //Ciekawe czy pozwolÄ… ci siÄ™ przyÅ‚Ä…czyÄ‡.
 			};
 		}
 		else if (other.guild == GIL_SLD)
 		|| 		(other.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Rod_PERM_06_03"); //Jesteœ teraz jednym z nas, ch³opcze. Chyba siê jakoœ dogadamy.
+			AI_Output (self, other, "DIA_Rod_PERM_06_03"); //JesteÅ› teraz jednym z nas, chÅ‚opcze. Chyba siÄ™ jakoÅ› dogadamy.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Rod_PERM_06_04"); //Nie ma tu dla ciebie miejsca. IdŸ siê lepiej powa³êsaæ gdzie indziej.
+			AI_Output (self, other, "DIA_Rod_PERM_06_04"); //Nie ma tu dla ciebie miejsca. IdÅº siÄ™ lepiej powaÅ‚Ä™saÄ‡ gdzie indziej.
 		};
 	}
 
 	if (Kapitel >= 3)
 	{
-		AI_Output (self, other, "DIA_Rod_PERM_06_05"); //Jeœli opowieœci o smokach s¹ prawdziwe, powinniœmy zebraæ paru ludzi i pokazaæ tym bestiom, gdzie ich miejsce!
+		AI_Output (self, other, "DIA_Rod_PERM_06_05"); //JeÅ›li opowieÅ›ci o smokach sÄ… prawdziwe, powinniÅ›my zebraÄ‡ paru ludzi i pokazaÄ‡ tym bestiom, gdzie ich miejsce!
 	};
 
 	//### ab Kap 4 in OW ###

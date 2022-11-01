@@ -31,7 +31,7 @@ instance DIA_Ehnim_HALLO		(C_INFO)
 	condition	 = 	DIA_Ehnim_HALLO_Condition;
 	information	 = 	DIA_Ehnim_HALLO_Info;
 
-	description	 = 	"Kim jesteú?";
+	description	 = 	"Kim jeste≈õ?";
 };
 
 func int DIA_Ehnim_HALLO_Condition ()
@@ -41,15 +41,15 @@ func int DIA_Ehnim_HALLO_Condition ()
 
 func void DIA_Ehnim_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_HALLO_15_00"); //Kim jesteú?
-	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_01"); //Nazywam siÍ Ehnim. PracujÍ na farmie.
+	AI_Output			(other, self, "DIA_Ehnim_HALLO_15_00"); //Kim jeste≈õ?
+	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_01"); //Nazywam siƒô Ehnim. Pracujƒô na farmie.
 
 	if	(
 		(Hlp_IsValidNpc (Egill))
 		&& (!C_NpcIsDown (Egill))
 		)
 			{
-				AI_Output			(self, other, "DIA_Ehnim_HALLO_12_02"); //A ten pÛ≥g≥Ûwek, ktÛrego tam widzisz, to mÛj brat Egill.
+				AI_Output			(self, other, "DIA_Ehnim_HALLO_12_02"); //A ten p√≥≈Çg≈Ç√≥wek, kt√≥rego tam widzisz, to m√≥j brat Egill.
 			};
 	AI_Output			(self, other, "DIA_Ehnim_HALLO_12_03"); //Akil od lat zatrudnia nas na tej farmie.
 
@@ -66,7 +66,7 @@ instance DIA_Ehnim_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Ehnim_FELDARBEIT_Condition;
 	information	 = 	DIA_Ehnim_FELDARBEIT_Info;
 
-	description	 = 	"Jak idπ prace w polu?";
+	description	 = 	"Jak idƒÖ prace w polu?";
 };
 
 func int DIA_Ehnim_FELDARBEIT_Condition ()
@@ -79,9 +79,9 @@ func int DIA_Ehnim_FELDARBEIT_Condition ()
 
 func void DIA_Ehnim_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_FELDARBEIT_15_00"); //Jak idπ prace w polu?
-	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_01"); //Chcesz pomÛc? Chwytaj motykÍ, jest tam z ty≥u, i ruszaj na pole.
-	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_02"); //Bacz tylko, øeby siÍ nie daÊ zaskoczyÊ polnym bestiom. Te potwory potrafiπ odgryüÊ ca≥e ramiÍ jednym k≥apniÍciem zÍbÛw.
+	AI_Output			(other, self, "DIA_Ehnim_FELDARBEIT_15_00"); //Jak idƒÖ prace w polu?
+	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_01"); //Chcesz pom√≥c? Chwytaj motykƒô, jest tam z ty≈Çu, i ruszaj na pole.
+	AI_Output			(self, other, "DIA_Ehnim_FELDARBEIT_12_02"); //Bacz tylko, ≈ºeby siƒô nie daƒá zaskoczyƒá polnym bestiom. Te potwory potrafiƒÖ odgry≈∫ƒá ca≈Çe ramiƒô jednym k≈Çapniƒôciem zƒôb√≥w.
 
 };
 
@@ -108,8 +108,8 @@ func int DIA_Ehnim_FELDRAEUBER_Condition ()
 
 func void DIA_Ehnim_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_FELDRAEUBER_15_00"); //Czemu nie zrobicie porzπdku z tymi polnymi bestiami?
-	AI_Output			(self, other, "DIA_Ehnim_FELDRAEUBER_12_01"); //Zabi≥em ich wiÍcej, niø potrafiÍ zliczyÊ. Ale ciπgle przy≥aøπ nowe.
+	AI_Output			(other, self, "DIA_Ehnim_FELDRAEUBER_15_00"); //Czemu nie zrobicie porzƒÖdku z tymi polnymi bestiami?
+	AI_Output			(self, other, "DIA_Ehnim_FELDRAEUBER_12_01"); //Zabi≈Çem ich wiƒôcej, ni≈º potrafiƒô zliczyƒá. Ale ciƒÖgle przy≈Ça≈ºƒÖ nowe.
 
 };
 
@@ -123,7 +123,7 @@ instance DIA_Ehnim_STREIT1		(C_INFO)
 	condition	 = 	DIA_Ehnim_STREIT1_Condition;
 	information	 = 	DIA_Ehnim_STREIT1_Info;
 
-	description	 = 	"TwÛj brat powiedzia≥ mi dok≥adnie to samo.";
+	description	 = 	"Tw√≥j brat powiedzia≈Ç mi dok≈Çadnie to samo.";
 };
 
 func int DIA_Ehnim_STREIT1_Condition ()
@@ -148,9 +148,9 @@ func int DIA_Ehnim_STREIT1_Condition ()
 
 func void DIA_Ehnim_STREIT1_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT1_15_00"); //TwÛj brat powiedzia≥ mi dok≥adnie to samo.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_01"); //Co? Ten tchÛrz? Zawsze znika, jak tylko bestie pojawiπ siÍ w okolicy.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_02"); //Nie powinien gadaÊ takich bzdur.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT1_15_00"); //Tw√≥j brat powiedzia≈Ç mi dok≈Çadnie to samo.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_01"); //Co? Ten tch√≥rz? Zawsze znika, jak tylko bestie pojawiƒÖ siƒô w okolicy.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT1_12_02"); //Nie powinien gadaƒá takich bzdur.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -163,7 +163,7 @@ instance DIA_Ehnim_STREIT3		(C_INFO)
 	condition	 = 	DIA_Ehnim_STREIT3_Condition;
 	information	 = 	DIA_Ehnim_STREIT3_Info;
 
-	description	 = 	"TwÛj brat uwaøa, øe jesteú nadÍtym bufonem.";
+	description	 = 	"Tw√≥j brat uwa≈ºa, ≈ºe jeste≈õ nadƒôtym bufonem.";
 };
 
 func int DIA_Ehnim_STREIT3_Condition ()
@@ -183,10 +183,10 @@ func int DIA_Ehnim_STREIT3_Condition ()
 
 func void DIA_Ehnim_STREIT3_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT3_15_00"); //TwÛj brat uwaøa, øe jesteú nadÍtym bufonem.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_01"); //Co? Øe teø ma czelnoúÊ tak bezwstydnie k≥amaÊ!
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_02"); //Niech lepiej baczy, øebym mu nie da≥ nauczki.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_03"); //Idü, powiedz mu to.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT3_15_00"); //Tw√≥j brat uwa≈ºa, ≈ºe jeste≈õ nadƒôtym bufonem.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_01"); //Co? ≈ªe te≈º ma czelno≈õƒá tak bezwstydnie k≈Çamaƒá!
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_02"); //Niech lepiej baczy, ≈ºebym mu nie da≈Ç nauczki.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT3_12_03"); //Id≈∫, powiedz mu to.
 	AI_StopProcessInfos (self);
 };
 
@@ -201,7 +201,7 @@ instance DIA_Ehnim_STREIT5		(C_INFO)
 	information	 = 	DIA_Ehnim_STREIT5_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"Wydaje mi siÍ, øe obaj powinniúcie siÍ nieco uspokoiÊ.";
+	description	 = 	"Wydaje mi siƒô, ≈ºe obaj powinni≈õcie siƒô nieco uspokoiƒá.";
 };
 
 var int DIA_Ehnim_STREIT5_noPerm;
@@ -224,13 +224,13 @@ func int DIA_Ehnim_STREIT5_Condition ()
 
 func void DIA_Ehnim_STREIT5_Info ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_15_00"); //Wydaje mi siÍ, øe obaj powinniúcie siÍ nieco uspokoiÊ.
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_01"); //Nie chce ustπpiÊ, co?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_02"); //WyrwÍ mu wszystkie bebechy. Idü mu to powiedzieÊ.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_15_00"); //Wydaje mi siƒô, ≈ºe obaj powinni≈õcie siƒô nieco uspokoiƒá.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_01"); //Nie chce ustƒÖpiƒá, co?
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_12_02"); //Wyrwƒô mu wszystkie bebechy. Id≈∫ mu to powiedzieƒá.
 
 	Info_ClearChoices	(DIA_Ehnim_STREIT5);
 
-	Info_AddChoice	(DIA_Ehnim_STREIT5, "RÛb, co chcesz. Ja odchodzÍ.", DIA_Ehnim_STREIT5_gehen );
+	Info_AddChoice	(DIA_Ehnim_STREIT5, "R√≥b, co chcesz. Ja odchodzƒô.", DIA_Ehnim_STREIT5_gehen );
 	Info_AddChoice	(DIA_Ehnim_STREIT5, "Czemu sam mu tego nie powiesz?", DIA_Ehnim_STREIT5_Attack );
 
 
@@ -238,7 +238,7 @@ func void DIA_Ehnim_STREIT5_Info ()
 func void DIA_Ehnim_STREIT5_Attack ()
 {
 	AI_Output			(other, self, "DIA_Ehnim_STREIT5_Attack_15_00"); //Czemu sam mu tego nie powiesz?
-	AI_Output			(self, other, "DIA_Ehnim_STREIT5_Attack_12_01"); //ZrobiÍ to.
+	AI_Output			(self, other, "DIA_Ehnim_STREIT5_Attack_12_01"); //Zrobiƒô to.
 
 	AI_StopProcessInfos (self);
 
@@ -252,8 +252,8 @@ func void DIA_Ehnim_STREIT5_Attack ()
 
 func void DIA_Ehnim_STREIT5_gehen ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_STREIT5_gehen_15_00"); //RÛb, co chcesz. Ja odchodzÍ.
-	AI_Output			(self ,other, "DIA_Ehnim_STREIT5_gehen_12_01"); //Tak, naj≥atwiej jest sobie pÛjúÊ.
+	AI_Output			(other, self, "DIA_Ehnim_STREIT5_gehen_15_00"); //R√≥b, co chcesz. Ja odchodzƒô.
+	AI_Output			(self ,other, "DIA_Ehnim_STREIT5_gehen_12_01"); //Tak, naj≈Çatwiej jest sobie p√≥j≈õƒá.
 	
 	AI_StopProcessInfos (self);
 };
@@ -285,7 +285,7 @@ func int DIA_Ehnim_PERMKAP1_Condition ()
 
 func void DIA_Ehnim_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_PERMKAP1_12_00"); //Ma≥o jeszcze narobi≥eú? Lepiej, jak sobie pÛjdziesz.
+	AI_Output			(self, other, "DIA_Ehnim_PERMKAP1_12_00"); //Ma≈Ço jeszcze narobi≈Çe≈õ? Lepiej, jak sobie p√≥jdziesz.
 
 	AI_StopProcessInfos (self);
 };
@@ -315,11 +315,11 @@ func int DIA_Ehnim_MoleRatFett_Condition ()
 
 func void DIA_Ehnim_MoleRatFett_Info ()
 {
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_00"); //DALEJ tu jesteú.
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_01"); //Jak widzisz. Wciπø jesteú wúciek≥y?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_02"); //Niewaøne, zapomnij. Powiedz, by≥eú ostatnio na farmie Lobarta?
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_03"); //Moøe. A czemu pytasz?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_04"); //No... tak tylko. Chcia≥em po prostu porozmawiaÊ z Vino o tej jego gorzelni.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_00"); //DALEJ tu jeste≈õ.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_01"); //Jak widzisz. WciƒÖ≈º jeste≈õ w≈õciek≈Çy?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_02"); //Niewa≈ºne, zapomnij. Powiedz, by≈Çe≈õ ostatnio na farmie Lobarta?
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_15_03"); //Mo≈ºe. A czemu pytasz?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_12_04"); //No... tak tylko. Chcia≈Çem po prostu porozmawiaƒá z Vino o tej jego gorzelni.
 	
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Nie mam teraz czasu.", DIA_Ehnim_MoleRatFett_nein );
@@ -327,13 +327,13 @@ func void DIA_Ehnim_MoleRatFett_Info ()
 
 	if (Npc_IsDead(Vino))
 	{
-		Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Vino nie øyje.", DIA_Ehnim_MoleRatFett_tot );
+		Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Vino nie ≈ºyje.", DIA_Ehnim_MoleRatFett_tot );
 	};
 
 };
 func void DIA_Ehnim_MoleRatFett_tot ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_tot_15_00"); //Vino nie øyje.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_tot_15_00"); //Vino nie ≈ºyje.
 	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_tot_12_01"); //O rety. Hm... No tak.
 
 };
@@ -341,21 +341,21 @@ func void DIA_Ehnim_MoleRatFett_tot ()
 func void DIA_Ehnim_MoleRatFett_was ()
 {
 	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_15_00"); //Gorzelni? Jakiej gorzelni?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_01"); //No... pewnie nie powinienem ci tego gadaÊ. Vino zawsze bardzo zwaøa≥ na ten swÛj ma≥y sekret.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_02"); //Niewaøne, juø i tak siÍ wygada≥em. Vino ma w lesie ukrytπ gorzelniÍ.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_03"); //Jakiú czas temu prosi≥ mnie o coú, czym mÛg≥by nasmarowaÊ wrota.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_04"); //A ostatnio sporo pada≥o i brama zdπøy≥a doszczÍtnie zardzewieÊ. Mechanizm siÍ zaciπ≥ i teraz nie sposÛb dostaÊ siÍ do úrodka. Niez≥y numer.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_01"); //No... pewnie nie powinienem ci tego gadaƒá. Vino zawsze bardzo zwa≈ºa≈Ç na ten sw√≥j ma≈Çy sekret.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_02"); //Niewa≈ºne, ju≈º i tak siƒô wygada≈Çem. Vino ma w lesie ukrytƒÖ gorzelniƒô.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_03"); //Jaki≈õ czas temu prosi≈Ç mnie o co≈õ, czym m√≥g≈Çby nasmarowaƒá wrota.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_12_04"); //A ostatnio sporo pada≈Ço i brama zdƒÖ≈ºy≈Ça doszczƒôtnie zardzewieƒá. Mechanizm siƒô zaciƒÖ≈Ç i teraz nie spos√≥b dostaƒá siƒô do ≈õrodka. Niez≈Çy numer.
 
 	Log_CreateTopic (TOPIC_FoundVinosKellerei, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FoundVinosKellerei, LOG_RUNNING);
-	B_LogEntry (TOPIC_FoundVinosKellerei,"Ehnim powiedzia≥ mi, øe Vino ma sekretnπ gorzelniÍ w lesie w pobliøu farmy Akila. Jednak mechanizm otwierajπcy drzwi zaciπ≥ siÍ, a do jego uruchomienia potrzebny jest ≥Ûj kretoszczura."); 
+	B_LogEntry (TOPIC_FoundVinosKellerei,"Ehnim powiedzia≈Ç mi, ≈ºe Vino ma sekretnƒÖ gorzelniƒô w lesie w pobli≈ºu farmy Akila. Jednak mechanizm otwierajƒÖcy drzwi zaciƒÖ≈Ç siƒô, a do jego uruchomienia potrzebny jest ≈Ç√≥j kretoszczura."); 
 	
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "I co? Masz jakiú smar?", DIA_Ehnim_MoleRatFett_was_Fett );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "I co? Masz jaki≈õ smar?", DIA_Ehnim_MoleRatFett_was_Fett );
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_15_00"); //I co? Masz jakiú smar?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_12_01"); //Tak, pewnie. £Ûj kretoszczura. Obrzydlistwo, ale bardzo skuteczne. Uøywa siÍ go do konserwacji dzia≥ okrÍtowych.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_15_00"); //I co? Masz jaki≈õ smar?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_12_01"); //Tak, pewnie. ≈Å√≥j kretoszczura. Obrzydlistwo, ale bardzo skuteczne. U≈ºywa siƒô go do konserwacji dzia≈Ç okrƒôtowych.
 	
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Sprzedaj mi ten smar.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill );
 
@@ -364,13 +364,13 @@ var int Ehnim_MoleRatFettOffer;
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill ()
 {
 	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_00"); //Sprzedaj mi ten smar.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_01"); //To bÍdzie trochÍ kosztowa≥o, kolego. W tych stronach to rzadkoúÊ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_01"); //To bƒôdzie trochƒô kosztowa≈Ço, kolego. W tych stronach to rzadko≈õƒá.
 	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_15_02"); //Ile za niego chcesz?
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_03"); //Hm. 100 sztuk z≥ota?
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_12_03"); //Hm. 100 sztuk z≈Çota?
 	Ehnim_MoleRatFettOffer = 100;
 
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To stanowczo za duøo!", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To stanowczo za du≈ºo!", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel );
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Umowa stoi.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
 
 };
@@ -380,7 +380,7 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,Ehnim_MoleRatFettOffer))
 		{
-			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_01"); //ProszÍ.
+			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_01"); //Proszƒô.
 			
 			if (Npc_HasItems (self,ItMi_Moleratlubric_MIS))
 			{
@@ -393,12 +393,12 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_03"); //Niech to szlag, gdzie on siÍ podzia≥? Co za cholerstwo. No tak, chyba mi siÍ skoÒczy≥. No to nie pozostaje mi nic innego, jak zwrÛciÊ ci twojπ forsÍ.
+				AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_03"); //Niech to szlag, gdzie on siƒô podzia≈Ç? Co za cholerstwo. No tak, chyba mi siƒô sko≈Ñczy≈Ç. No to nie pozostaje mi nic innego, jak zwr√≥ciƒá ci twojƒÖ forsƒô.
 				B_GiveInvItems (self, other, ItMi_Gold,Ehnim_MoleRatFettOffer);
 				
 				if (Npc_IsDead(Egill) == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_04"); //Pewnikiem to sprawka mojego brata. Prawdziwy z niego draÒ.
+						AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_04"); //Pewnikiem to sprawka mojego brata. Prawdziwy z niego dra≈Ñ.
 						AI_StopProcessInfos (self);
 						other.aivar[AIV_INVINCIBLE] = FALSE;
 						B_Attack (self, Egill, AR_NONE, 0);
@@ -407,33 +407,33 @@ func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja ()
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_05"); //Wspaniale. Po co to ca≥e gadanie, skoro nie masz czym zap≥aciÊ? Szkoda mojego czasu.
+			AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja_12_05"); //Wspaniale. Po co to ca≈Çe gadanie, skoro nie masz czym zap≈Çaciƒá? Szkoda mojego czasu.
 		};
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_15_00"); //To za duøo.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_12_01"); //Dobra, dobra. 70 monet, ale to ostatnie s≥owo.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_15_00"); //To za du≈ºo.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_12_01"); //Dobra, dobra. 70 monet, ale to ostatnie s≈Çowo.
 	Ehnim_MoleRatFettOffer = 70;
 
 	Info_ClearChoices	(DIA_Ehnim_MoleRatFett);
-	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To wciπø za duøo.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch );
+	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "To wciƒÖ≈º za du≈ºo.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch );
 	Info_AddChoice	(DIA_Ehnim_MoleRatFett, "Umowa stoi.", DIA_Ehnim_MoleRatFett_was_Fett_habenwill_ja );
 
 };
 func void DIA_Ehnim_MoleRatFett_was_Fett_habenwill_zuviel_immernoch ()
 {
-	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_immernoch_15_00"); //To wciπø za duøo.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_immernoch_12_01"); //No to zapomnij o ca≥ej sprawie. Mi≥ego dnia.
+	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_was_immernoch_15_00"); //To wciƒÖ≈º za du≈ºo.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_was_immernoch_12_01"); //No to zapomnij o ca≈Çej sprawie. Mi≈Çego dnia.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Ehnim_MoleRatFett_nein ()
 {
 	AI_Output			(other, self, "DIA_Ehnim_MoleRatFett_nein_15_00"); //Nie mam teraz czasu.
-	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_nein_12_01"); //Nie daj siÍ zatrzymywaÊ.
+	AI_Output			(self, other, "DIA_Ehnim_MoleRatFett_nein_12_01"); //Nie daj siƒô zatrzymywaƒá.
 	AI_StopProcessInfos (self);
 };
 

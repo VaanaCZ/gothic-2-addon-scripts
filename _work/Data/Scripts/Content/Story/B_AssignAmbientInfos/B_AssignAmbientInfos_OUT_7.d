@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_7_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Ostatnio okolica sta³a siê o wiele bardziej niebezpieczna. Polne bestie to prawdziwa plaga.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Ostatnio okolica staÅ‚a siÄ™ o wiele bardziej niebezpieczna. Polne bestie to prawdziwa plaga.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Do tego musimy jeszcze p³aciæ kontrybucjê na rzecz miasta. Jeœli tego zaprzestaniemy, œci¹gniemy sobie na g³owê paladynów.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Do tego musimy jeszcze pÅ‚aciÄ‡ kontrybucjÄ™ na rzecz miasta. JeÅ›li tego zaprzestaniemy, Å›ciÄ…gniemy sobie na gÅ‚owÄ™ paladynÃ³w.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //Bunt Onara poci¹gnie za sob¹ powa¿ne konsekwencje. Wolê trzymaæ siê od tego z daleka.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //Bunt Onara pociÄ…gnie za sobÄ… powaÅ¼ne konsekwencje. WolÄ™ trzymaÄ‡ siÄ™ od tego z daleka.
 	};
 	
 	AI_StopProcessInfos	(self);

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Swarm(C_Npc)
 {
 	//----- Monster -----
-	name							=	"Lataj¹cy rój";
+	name							=	"LatajÄ…cy rÃ³j";
 	guild							=	GIL_BLOODFLY;
 	aivar[AIV_MM_REAL_ID]			= 	ID_BLOODFLY;
 	level							=	6;

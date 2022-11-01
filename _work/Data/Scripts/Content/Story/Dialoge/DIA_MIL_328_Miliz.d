@@ -38,11 +38,11 @@ func int DIA_328_Miliz_Hi_Condition ()
 };
 func void DIA_328_Miliz_Hi_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Ej, nie masz tu czego szukaÊ, zrozumia≥eú?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Kim jesteú?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Ej, nie masz tu czego szukaƒá, zrozumia≈Çe≈õ?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Kim jeste≈õ?
 	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //To nie twoja sprawa! Ja tu jestem szefem, jasne?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Szefem? Czego? Tych skrzyÒ?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Magazyn jest pod moim nadzorem, zrozumia≥eú? WiÍc sp≥ywaj, bo dostaniesz po ≥bie.
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Szefem? Czego? Tych skrzy≈Ñ?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Magazyn jest pod moim nadzorem, zrozumia≈Çe≈õ? Wiƒôc sp≈Çywaj, bo dostaniesz po ≈Çbie.
 	
 	AI_StopProcessInfos (self);
 	
@@ -69,8 +69,8 @@ func int DIA_328_Miliz_Kill_Condition ()
 };
 func void DIA_328_Miliz_Kill_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Ciπgle tu jesteú? Chyba mÛwi≥em, øebyú stπd wypad≥.
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Zaraz ci pokaøÍ, kto tu jest szefem!
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //CiƒÖgle tu jeste≈õ? Chyba m√≥wi≈Çem, ≈ºeby≈õ stƒÖd wypad≈Ç.
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Zaraz ci poka≈ºƒô, kto tu jest szefem!
 	
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);

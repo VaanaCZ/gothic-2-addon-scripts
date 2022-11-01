@@ -165,7 +165,7 @@ INSTANCE ItPl_Mana_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mana_Herb_03(C_Item)
 {	
-	name 				=	"Ognisty korzeñ";
+	name 				=	"Ognisty korzeÅ„";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -193,7 +193,7 @@ INSTANCE ItPl_Mana_Herb_03(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_01(C_Item)
 {	
-	name 				=	"Roœlina lecznicza";
+	name 				=	"RoÅ›lina lecznicza";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -250,7 +250,7 @@ INSTANCE ItPl_Health_Herb_02(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Health_Herb_03(C_Item)
 {	
-	name 				=	"Korzeñ leczniczy";
+	name 				=	"KorzeÅ„ leczniczy";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -304,7 +304,7 @@ INSTANCE ItPl_Dex_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Strength_Herb_01(C_Item)
 {	
-	name 				=	"Smoczy korzeñ";
+	name 				=	"Smoczy korzeÅ„";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -334,7 +334,7 @@ INSTANCE ItPl_Strength_Herb_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Speed_Herb_01(C_Item)
 {	
-	name 				=	"Zêbate ziele";
+	name 				=	"ZÄ™bate ziele";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -407,7 +407,7 @@ INSTANCE ItPl_Mushroom_01(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Mushroom_02(C_Item)
 {	
-	name 				=	"Miêso kopacza";
+	name 				=	"MiÄ™so kopacza";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -464,7 +464,7 @@ INSTANCE ItPl_Blueplant(C_Item)
 /******************************************************************************************/
 INSTANCE ItPl_Forestberry (C_Item)
 {	
-	name 				=	"Leœna jagoda";
+	name 				=	"LeÅ›na jagoda";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -523,7 +523,7 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von temporären und permanten Tränken
+//		Pflanze zum brauen von temporÃ¤ren und permanten TrÃ¤nken
 //******************************************************************************************
 
 
@@ -557,7 +557,7 @@ INSTANCE ItPl_Temp_Herb(C_Item)
 
 INSTANCE ItPl_Perm_Herb(C_Item)
 {	
-	name 				=	"Szczaw królewski";
+	name 				=	"Szczaw krÃ³lewski";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	

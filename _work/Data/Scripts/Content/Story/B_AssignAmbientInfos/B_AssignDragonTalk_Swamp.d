@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Swamp_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Wyczerpa³a siê moc Oka. Nadszed³ twój kres, cz³owieku.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //WyczerpaÅ‚a siÄ™ moc Oka. NadszedÅ‚ twÃ³j kres, czÅ‚owieku.
 
 	Swampdragon = Hlp_GetNpc (dragon_swamp);
 
@@ -72,18 +72,18 @@ FUNC INT DIA_Dragon_Swamp_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Swamp_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Biada ci, jeœli zbli¿ysz siê jeszcze o krok!
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_00"); //Biada ci, jeÅ›li zbliÅ¼ysz siÄ™ jeszcze o krok!
 
 	if (Mis_KilledDragons == 0)
 		{
-			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ha. Oko Innosa najwyraŸniej dzia³a.
+			AI_Output	(other, self, "DIA_Dragon_Swamp_Hello_15_01"); //Ha. Oko Innosa najwyraÅºniej dziaÅ‚a.
 		};
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //By³o tu przed tob¹ wielu takich jak ty. ¯aden siê nie osta³.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Oszczêdzaj oddech. Twoje s³owa mnie nie przestrasz¹, piekielny gadzie.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Odpowiesz na moje pytania albo utopiê ciê w twojej w³asnej krwi.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha, ha, ha. Œmiesz mi groziæ, robaczku? Podaj choæ jeden powód, dla którego nie mia³bym ciê od razu rozerwaæ na tysi¹c strzêpów.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Jestem wys³annikiem Innosa. Mam przy sobie œwiête Oko. Nie masz wyboru. Rób, co ci ka¿ê, albo spotka ciê zas³u¿ona kara.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //Aargh. Mów! Czego ode mnie chcesz?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //ByÅ‚o tu przed tobÄ… wielu takich jak ty. Å»aden siÄ™ nie ostaÅ‚.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //OszczÄ™dzaj oddech. Twoje sÅ‚owa mnie nie przestraszÄ…, piekielny gadzie.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Odpowiesz na moje pytania albo utopiÄ™ ciÄ™ w twojej wÅ‚asnej krwi.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ha, ha, ha. Åšmiesz mi groziÄ‡, robaczku? Podaj choÄ‡ jeden powÃ³d, dla ktÃ³rego nie miaÅ‚bym ciÄ™ od razu rozerwaÄ‡ na tysiÄ…c strzÄ™pÃ³w.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Jestem wysÅ‚annikiem Innosa. Mam przy sobie Å›wiÄ™te Oko. Nie masz wyboru. RÃ³b, co ci kaÅ¼Ä™, albo spotka ciÄ™ zasÅ‚uÅ¼ona kara.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //Aargh. MÃ³w! Czego ode mnie chcesz?
 };
 
 
@@ -96,7 +96,7 @@ instance DIA_Dragon_Swamp_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Swamp_WERBISTDU_Info;
 
-	description	 = 	"Kim jesteœ?";
+	description	 = 	"Kim jesteÅ›?";
 };
 
 func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
@@ -109,8 +109,8 @@ func int DIA_Dragon_Swamp_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Swamp_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Kim jesteœ?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Nazywam siê Pandrodor. Dobrze ci radzê: uciekaj st¹d, póki jeszcze mo¿esz!
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WERBISTDU_15_00"); //Kim jesteÅ›?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WERBISTDU_20_01"); //Nazywam siÄ™ Pandrodor. Dobrze ci radzÄ™: uciekaj stÄ…d, pÃ³ki jeszcze moÅ¼esz!
 	
 };
 
@@ -124,7 +124,7 @@ instance DIA_Dragon_Swamp_WOSINDDIEANDEREN		(C_INFO)
 	condition	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition;
 	information	 = 	DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info;
 
-	description	 = 	"Gdzie znajdê resztê twoich ohydnych pobratymców?";
+	description	 = 	"Gdzie znajdÄ™ resztÄ™ twoich ohydnych pobratymcÃ³w?";
 };
 
 func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
@@ -137,10 +137,10 @@ func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
 
 func void DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Gdzie znajdê resztê twoich ohydnych pobratymców?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //¯ywio³y, od których wszystko pochodzi, utrzymuj¹ ten œwiat w harmonii.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Ka¿dy z nich sprawuje w³adzê nad jedn¹ czêœci¹ œwiata.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Szukaj ¿ywio³ów, a znajdziesz moich braci.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Gdzie znajdÄ™ resztÄ™ twoich ohydnych pobratymcÃ³w?
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Å»ywioÅ‚y, od ktÃ³rych wszystko pochodzi, utrzymujÄ… ten Å›wiat w harmonii.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //KaÅ¼dy z nich sprawuje wÅ‚adzÄ™ nad jednÄ… czÄ™Å›ciÄ… Å›wiata.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Szukaj Å¼ywioÅ‚Ã³w, a znajdziesz moich braci.
 };
 
 

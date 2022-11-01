@@ -1,15 +1,15 @@
 // ******************************************************************
 // B_AssessMagic
 // -------------
-// Wahrnehmung ist für ALLE NSCs IMMER aktiv
-// auch für den Spieler (s.u.)
+// Wahrnehmung ist fÃ¼r ALLE NSCs IMMER aktiv
+// auch fÃ¼r den Spieler (s.u.)
 // wir aufgerufen, sobald irgendein Spruch auf einen NSC wirkt
 // setzt den NSC dan in den entsprechenden ZS
-// die meisten Spells führen allerdings zu keinem ZS
-// (sind unten nicht berücksichtigt)
+// die meisten Spells fÃ¼hren allerdings zu keinem ZS
+// (sind unten nicht berÃ¼cksichtigt)
 // ------------------------------------------------------------------
 // Beachtem: if (Npc_GetActiveSpell(other) == SPL_Sleep) funzt nicht,
-// weil Sleep INSTANT wirkt (d.h. sofort SENDCAST zurückliefert)
+// weil Sleep INSTANT wirkt (d.h. sofort SENDCAST zurÃ¼ckliefert)
 // und beim Aufruf von B_AssessMagic NICHT mehr "Active" ist!
 // ******************************************************************
 
@@ -299,7 +299,7 @@ if (spellType == SPL_WINDFIST)
 	return COLL_DOEVERYTHING;
 };
 
-//----- Betäubung -----
+//----- BetÃ¤ubung -----
 
 	if (spellType == SPL_Zap)
 	|| (spellType == SPL_ChargeZap)
@@ -540,7 +540,7 @@ if (spellType == SPL_WINDFIST)
 		return COLL_DOEVERYTHING;
 	};
 
-//----- Paladin Sprüche -----	
+//----- Paladin SprÃ¼che -----	
 	if (spellType == SPL_PalHolyBolt)
 	{
 		if (C_NpcIsEvil(self))

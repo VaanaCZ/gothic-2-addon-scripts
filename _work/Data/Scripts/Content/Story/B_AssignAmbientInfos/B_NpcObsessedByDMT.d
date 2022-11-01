@@ -22,13 +22,13 @@ var int NpcObsessedByDMT_Randolph;	//Joly: hat sein Buch Anfang 4. Kapitel
 
 func void B_DMTWurm ()
 {
-		AI_Output	(self, other, "DIA_NoName_ObsessedByDMT_19_00"); //Widzimy ciê, robaku. Nie uciekniesz nam.
+		AI_Output	(self, other, "DIA_NoName_ObsessedByDMT_19_00"); //Widzimy ciÄ™, robaku. Nie uciekniesz nam.
 };
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // B_NpcClearObsessionByDMT	steht bei allen NSCs statt der AI_StopProcessInfos (self);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muß in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
+func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muÃŸ in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
 {														
 	AI_StopProcessInfos	(medium);
 
@@ -91,7 +91,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			{
 				if (MIS_OCGateOpen == TRUE)
 					{
-						AI_Output	(self, other, "DIA_Brutus_ObsessedByDMT_19_00"); //Otwarcie wrót to wielka przys³uga dla naszego Mistrza, marny œmiertelniku. Na twym grobie postawimy kaplicê ku jego chwale.
+						AI_Output	(self, other, "DIA_Brutus_ObsessedByDMT_19_00"); //Otwarcie wrÃ³t to wielka przysÅ‚uga dla naszego Mistrza, marny Å›miertelniku. Na twym grobie postawimy kaplicÄ™ ku jego chwale.
 					}
 					else
 					{
@@ -106,7 +106,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Engrom))
 			{
-				AI_Output	(self, other, "DIA_Engrom_ObsessedByDMT_19_00"); //Zawróæ. Póki jeszcze mo¿esz.
+				AI_Output	(self, other, "DIA_Engrom_ObsessedByDMT_19_00"); //ZawrÃ³Ä‡. PÃ³ki jeszcze moÅ¼esz.
 				NpcObsessedByDMT_Engrom = TRUE;
 			}	
 
@@ -115,7 +115,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Vino))
 			{
-				AI_Output	(self, other, "DIA_Vino_ObsessedByDMT_19_00"); //Wkrótce wszyscy bêd¹ naszymi s³ugami. Twoje magiczne sztuczki na nic siê nie zdadz¹.
+				AI_Output	(self, other, "DIA_Vino_ObsessedByDMT_19_00"); //WkrÃ³tce wszyscy bÄ™dÄ… naszymi sÅ‚ugami. Twoje magiczne sztuczki na nic siÄ™ nie zdadzÄ….
 				NpcObsessedByDMT_Vino = TRUE;
 			}		
 
@@ -124,7 +124,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Malak))
 			{
-				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //Nigdy nie zdo³asz ocaliæ tej duszy, magu.
+				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //Nigdy nie zdoÅ‚asz ocaliÄ‡ tej duszy, magu.
 				NpcObsessedByDMT_Malak = TRUE;
 			}		
 		
@@ -133,7 +133,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Sekob))
 			{
-				AI_Output	(self, other, "DIA_Sekob_ObsessedByDMT_19_00"); //Poddaj siê, magu, nie mo¿esz nas pokonaæ.
+				AI_Output	(self, other, "DIA_Sekob_ObsessedByDMT_19_00"); //Poddaj siÄ™, magu, nie moÅ¼esz nas pokonaÄ‡.
 				NpcObsessedByDMT_Sekob = TRUE;
 			}		
 	
@@ -142,11 +142,11 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Randolph))
 			{
-				AI_Output	(self, other, "DIA_Randolph_ObsessedByDMT_19_00"); //Nie zawracaj sobie g³owy s³abeuszami. Zniewolimy ich wszystkich.
+				AI_Output	(self, other, "DIA_Randolph_ObsessedByDMT_19_00"); //Nie zawracaj sobie gÅ‚owy sÅ‚abeuszami. Zniewolimy ich wszystkich.
 				NpcObsessedByDMT_Randolph = TRUE;
 			}	
 				
-			else //Joly: für alle anderen
+			else //Joly: fÃ¼r alle anderen
 			{
 				B_DMTWurm ();
 				if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Bromor))

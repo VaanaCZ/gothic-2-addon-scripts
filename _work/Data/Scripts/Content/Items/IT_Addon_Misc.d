@@ -9,7 +9,7 @@ const int	Value_Addon_Joint_01		=  60;
 //---------------------------------------------------------------------
 INSTANCE ItMi_GoldNugget_Addon(C_Item)
 {
-	name 		=	"Bry³ka z³ota";
+	name 		=	"BryÅ‚ka zÅ‚ota";
 
 	mainflag 	=	ITEM_KAT_NONE;
 	flags 		=	ITEM_MULTI;
@@ -28,11 +28,11 @@ INSTANCE ItMi_GoldNugget_Addon(C_Item)
 	
 };
 //---------------------------------------------------------------------
-//	Weiße Perle
+//	WeiÃŸe Perle
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_WhitePearl (C_Item)
 {
-	name 				=	"Per³a";
+	name 				=	"PerÅ‚a";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -49,7 +49,7 @@ INSTANCE ItMi_Addon_WhitePearl (C_Item)
 	INV_ZBIAS			= INVCAM_ENTF_MISC_STANDARD;
 };
 //---------------------------------------------------------------------
-//	Grüner Novize
+//	GrÃ¼ner Novize
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Joint_01(C_Item)
 {
@@ -105,14 +105,14 @@ INSTANCE ItMi_BaltramPaket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Ciê¿ka paczka";
-	TEXT[3]				=	"pe³na dobrych rzeczy";
+	TEXT[2]				= 	"CiÄ™Å¼ka paczka";
+	TEXT[3]				=	"peÅ‚na dobrych rzeczy";
 	TEXT[4]				=	"od farmera Akila.";
 	
 };
 
 //****************************************************************************
-//				Baltrams Lieferung für Skip
+//				Baltrams Lieferung fÃ¼r Skip
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
@@ -129,15 +129,15 @@ INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"Ta ciê¿ka paczka";
-	TEXT[3]				=	"pe³na dobrych rzeczy";
-	TEXT[4]				=	"ma trafiæ do pirata Skipa.";
+	TEXT[2]				= 	"Ta ciÄ™Å¼ka paczka";
+	TEXT[3]				=	"peÅ‚na dobrych rzeczy";
+	TEXT[4]				=	"ma trafiÄ‡ do pirata Skipa.";
 	
 };
 /******************************************************************************************/
 INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 {
-	name 				=	"Z³ota misa Bromora";
+	name 				=	"ZÅ‚ota misa Bromora";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -149,15 +149,15 @@ INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 
 	description			= 	name;
 	TEXT[2]				= 	"Na dnie misy";
-	TEXT[3]				=	"ostrym narzêdziem ";
-	TEXT[4]				=	"wydrapano imiê 'Bromor'.";
+	TEXT[3]				=	"ostrym narzÄ™dziem ";
+	TEXT[4]				=	"wydrapano imiÄ™ 'Bromor'.";
 	TEXT[5]				= 	NAME_Value;	
 	COUNT[5]			= 	value;
 };
 
 INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 {
-	name 				=	"Skórzana torba Cavalorna";
+	name 				=	"SkÃ³rzana torba Cavalorna";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -172,9 +172,9 @@ INSTANCE ItSe_ADDON_CavalornsBeutel	(C_Item)
 	description			= 	name;
 	
 	TEXT[0]				= 	"";
-	TEXT[1]				= 	"Przywi¹zana jest do niej wywieszka";
+	TEXT[1]				= 	"PrzywiÄ…zana jest do niej wywieszka";
 	TEXT[2]				= 	"z imieniem 'Cavalorn',";
-	TEXT[3]				= 	"a w œrodku jest bry³a rudy.";
+	TEXT[3]				= 	"a w Å›rodku jest bryÅ‚a rudy.";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -186,7 +186,7 @@ FUNC VOID Use_CavalornsBeutel ()
 		SC_OpenedCavalornsBeutel = TRUE;
 		Log_CreateTopic (TOPIC_Addon_CavalornTheHut, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CavalornTheHut, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CavalornTheHut,"W chacie Cavalorna w Górniczej Dolinie znalaz³em torbê z bry³k¹ rudy. Ten stary drañ na pewno o niej zapomnia³.");
+		B_LogEntry (TOPIC_Addon_CavalornTheHut,"W chacie Cavalorna w GÃ³rniczej Dolinie znalazÅ‚em torbÄ™ z bryÅ‚kÄ… rudy. Ten stary draÅ„ na pewno o niej zapomniaÅ‚.");
 };
 
 //**************************************
@@ -278,7 +278,7 @@ INSTANCE ItMi_IECelloBow(C_Item)
 
 INSTANCE ItMi_IEDrum(C_Item)
 {
-	name 				=	"Bêben";
+	name 				=	"BÄ™ben";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -302,7 +302,7 @@ func void Use_Drum()
 
 INSTANCE ItMi_IEDrumScheit(C_Item)
 {
-	name 				=	"Tr¹ba";
+	name 				=	"TrÄ…ba";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -326,7 +326,7 @@ func void Use_Drumscheit()
 
 INSTANCE ItMi_IEDrumStick(C_Item)
 {
-	name 				=	"Pa³eczka";
+	name 				=	"PaÅ‚eczka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -366,7 +366,7 @@ func void Use_Dudel()
 
 INSTANCE ItMi_IEDudelGelb(C_Item)
 {
-	name 				=	"¯ó³te dudy";
+	name 				=	"Å»Ã³Å‚te dudy";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -439,7 +439,7 @@ func void Use_Laute()
 //****************************************************************************
 INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 {
-	name 				=	"Brzêcz¹ca paczka";
+	name 				=	"BrzÄ™czÄ…ca paczka";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -452,8 +452,8 @@ INSTANCE ItMi_Addon_Lennar_Paket(C_Item)
 	material 			=	 MAT_LEATHER;
 	
 	description			= 	name;
-	TEXT[2]				= 	"W œrodku s¹ wytrychy,";
-	TEXT[3]				=	"du¿o wytrychów.";
+	TEXT[2]				= 	"W Å›rodku sÄ… wytrychy,";
+	TEXT[3]				=	"duÅ¼o wytrychÃ³w.";
 	TEXT[4]				=	" ";
 	
 	TEXT[5]				= 	NAME_Value;		
@@ -485,7 +485,7 @@ instance ItMi_Zeitspalt_Addon(C_Item)
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
 	description			= 	name;
-	TEXT[3]				= 	"Dzia³anie nieznane.";				
+	TEXT[3]				= 	"DziaÅ‚anie nieznane.";				
 
 	INV_ZBIAS				= INVCAM_ENTF_MISC_STANDARD;
 };

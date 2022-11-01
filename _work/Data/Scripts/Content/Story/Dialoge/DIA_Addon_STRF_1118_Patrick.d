@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Patrick_Hi   (C_INFO)
 	condition   = DIA_Addon_Patrick_Hi_Condition;
 	information = DIA_Addon_Patrick_Hi_Info;
 	permanent   = FALSE;
-	description = "Przybywam tu z polecenia Magów Wody.";
+	description = "Przybywam tu z polecenia MagÃ³w Wody.";
 };
 FUNC INT DIA_Addon_Patrick_Hi_Condition()
 {	
@@ -36,40 +36,40 @@ FUNC INT DIA_Addon_Patrick_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//Przybywam tu z polecenia Magów Wody, aby ciê uwolniæ.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//Naprawdê? Niby czemu mia³bym ci wierzyæ?
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_02");//Chcesz siê st¹d wydostaæ?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//Pewnie, ¿e chcê st¹d uciec. Ale...
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//Przys³a³ mnie Vatras. Jeœli to ciê nie satysfakcjonuje, to nie bêdê siê narzuca³. Mo¿esz tu zostaæ, jeœli bardzo chcesz.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//Dobrze, wierzê ci.
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//Naprawdê? To by³o ³atwiejsze, ni¿ siê spodziewa³em. Dobra, teraz potrzebny nam plan.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Ucieczka to ryzykowna sprawa. William próbowa³ i teraz w¹cha kwiatki od spodu.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//WiêŸniowie to rolnicy i robotnicy. Ufaj¹ mi, ale nie zechc¹ ryzykowaæ g³ow¹.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//Przybywam tu z polecenia MagÃ³w Wody, aby ciÄ™ uwolniÄ‡.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//NaprawdÄ™? Niby czemu miaÅ‚bym ci wierzyÄ‡?
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_02");//Chcesz siÄ™ stÄ…d wydostaÄ‡?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//Pewnie, Å¼e chcÄ™ stÄ…d uciec. Ale...
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//PrzysÅ‚aÅ‚ mnie Vatras. JeÅ›li to ciÄ™ nie satysfakcjonuje, to nie bÄ™dÄ™ siÄ™ narzucaÅ‚. MoÅ¼esz tu zostaÄ‡, jeÅ›li bardzo chcesz.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//Dobrze, wierzÄ™ ci.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//NaprawdÄ™? To byÅ‚o Å‚atwiejsze, niÅ¼ siÄ™ spodziewaÅ‚em. Dobra, teraz potrzebny nam plan.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Ucieczka to ryzykowna sprawa. William prÃ³bowaÅ‚ i teraz wÄ…cha kwiatki od spodu.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//WiÄ™Åºniowie to rolnicy i robotnicy. UfajÄ… mi, ale nie zechcÄ… ryzykowaÄ‡ gÅ‚owÄ….
 		
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
-	Info_AddChoice (DIA_Addon_Patrick_Hi,"Chcesz, ¿ebym za³atwi³ ci u³askawienie od Kruka?",DIA_Addon_Patrick_Hi_Raven);
-	Info_AddChoice (DIA_Addon_Patrick_Hi,"Mam za³atwiæ wszystkich bandziorów, zanim siê w ogóle ruszysz?",DIA_Addon_Patrick_Hi_Kill);
+	Info_AddChoice (DIA_Addon_Patrick_Hi,"Chcesz, Å¼ebym zaÅ‚atwiÅ‚ ci uÅ‚askawienie od Kruka?",DIA_Addon_Patrick_Hi_Raven);
+	Info_AddChoice (DIA_Addon_Patrick_Hi,"Mam zaÅ‚atwiÄ‡ wszystkich bandziorÃ³w, zanim siÄ™ w ogÃ³le ruszysz?",DIA_Addon_Patrick_Hi_Kill);
 };
 FUNC VOID B_Say_Patrick_Plan()
 {
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//Ale to siê nie uda.
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//Jeœli jednak zajmiesz siê stra¿nikami, to reszta mo¿e wykorzystaæ szansê.
-	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//Dobrze. Stra¿ników biorê na siebie. Powiedz innym, ¿eby siê przygotowali.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//Ale to siÄ™ nie uda.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//JeÅ›li jednak zajmiesz siÄ™ straÅ¼nikami, to reszta moÅ¼e wykorzystaÄ‡ szansÄ™.
+	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//Dobrze. StraÅ¼nikÃ³w biorÄ™ na siebie. Powiedz innym, Å¼eby siÄ™ przygotowali.
 	
 	
-	B_LogEntry (Topic_Addon_Sklaven,"Niewolnicy nie bêd¹ próbowaæ ucieczki. Muszê znaleŸæ sposób, ¿eby bezpiecznie mogli opuœciæ obóz.");
+	B_LogEntry (Topic_Addon_Sklaven,"Niewolnicy nie bÄ™dÄ… prÃ³bowaÄ‡ ucieczki. MuszÄ™ znaleÅºÄ‡ sposÃ³b, Å¼eby bezpiecznie mogli opuÅ›ciÄ‡ obÃ³z.");
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//Chcesz, ¿ebym za³atwi³ ci u³askawienie od Kruka?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//To nie by³oby takie z³e.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//Chcesz, Å¼ebym zaÅ‚atwiÅ‚ ci uÅ‚askawienie od Kruka?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//To nie byÅ‚oby takie zÅ‚e.
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
 FUNC VOID DIA_Addon_Patrick_Hi_Kill()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Kill_15_00");//Mam za³atwiæ wszystkich bandziorów, zanim siê w ogóle ruszysz?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Kill_07_01");//To by³oby czyste szaleñstwo!
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Kill_15_00");//Mam zaÅ‚atwiÄ‡ wszystkich bandziorÃ³w, zanim siÄ™ w ogÃ³le ruszysz?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Kill_07_01");//To byÅ‚oby czyste szaleÅ„stwo!
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
@@ -105,10 +105,10 @@ FUNC INT DIA_Addon_Patrick_ready_Condition()
 FUNC VOID DIA_Addon_Patrick_ready_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_00");//Droga wolna. Uciekajcie!
-	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_01");//Wspaniale. Znam jedn¹ jaskiniê na bagnach, w której mogê ukryæ ludzi, ale co potem?
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_02");//Id¹c z bagien, kierujcie siê na po³udniowy zachód, a powinniœcie trafiæ do obozu, który Magowie Wody rozbili w ruinach starej œwi¹tyni.
-	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_03");//Oni poka¿¹ wam drogê.
-	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_04");//Wielkie dziêki, naprawdê. Jesteœmy g³êboko wdziêczni za okazane nam mi³osierdzie i pozostajemy zobowi¹zani...
+	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_01");//Wspaniale. Znam jednÄ… jaskiniÄ™ na bagnach, w ktÃ³rej mogÄ™ ukryÄ‡ ludzi, ale co potem?
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_02");//IdÄ…c z bagien, kierujcie siÄ™ na poÅ‚udniowy zachÃ³d, a powinniÅ›cie trafiÄ‡ do obozu, ktÃ³ry Magowie Wody rozbili w ruinach starej Å›wiÄ…tyni.
+	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_03");//Oni pokaÅ¼Ä… wam drogÄ™.
+	AI_Output (self, other, "DIA_Addon_Patrick_ready_07_04");//Wielkie dziÄ™ki, naprawdÄ™. JesteÅ›my gÅ‚Ä™boko wdziÄ™czni za okazane nam miÅ‚osierdzie i pozostajemy zobowiÄ…zani...
 	AI_Output (other, self, "DIA_Addon_Patrick_ready_15_05");//Spokojnie, po co ta ceremonia...
 	
 	Sklaven_Flucht = TRUE; 
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Patrick_Killer   (C_INFO)
 	condition   = DIA_Addon_Patrick_Killer_Condition;
 	information = DIA_Addon_Patrick_Killer_Info;
 	permanent   = FALSE;
-	description = "Zaj¹³em siê stra¿nikiem. Mo¿ecie uciekaæ.";
+	description = "ZajÄ…Å‚em siÄ™ straÅ¼nikiem. MoÅ¼ecie uciekaÄ‡.";
 };
 FUNC INT DIA_Addon_Patrick_Killer_Condition()
 {	
@@ -164,8 +164,8 @@ FUNC INT DIA_Addon_Patrick_Killer_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Killer_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//Zaj¹³em siê stra¿nikiem. Mo¿ecie uciekaæ.
-	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//A co bêdzie, jeœli opuœcimy kopalniê? Pozostali stra¿nicy zabij¹ nas w mgnieniu oka!
+	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//ZajÄ…Å‚em siÄ™ straÅ¼nikiem. MoÅ¼ecie uciekaÄ‡.
+	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//A co bÄ™dzie, jeÅ›li opuÅ›cimy kopalniÄ™? Pozostali straÅ¼nicy zabijÄ… nas w mgnieniu oka!
 };
 //---------------------------------------------------------------------
 //	Hoehle
@@ -177,7 +177,7 @@ INSTANCE DIA_Addon_Patrick_Hoehle   (C_INFO)
 	condition   = DIA_Addon_Patrick_Hoehle_Condition;
 	information = DIA_Addon_Patrick_Hoehle_Info;
 	permanent   = TRUE;
-	description = "Chcecie uciekaæ?";
+	description = "Chcecie uciekaÄ‡?";
 };
 FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 {	
@@ -188,8 +188,8 @@ FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Hoehle_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Hoehle_15_00");//Chcecie uciekaæ?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//Pewnie. Po prostu czekamy na odpowiedni¹ chwilê.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hoehle_15_00");//Chcecie uciekaÄ‡?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//Pewnie. Po prostu czekamy na odpowiedniÄ… chwilÄ™.
 };
 
 

@@ -8,7 +8,7 @@ INSTANCE DIA_Boltan_EXIT   (C_INFO)
 	condition   = DIA_Boltan_EXIT_Condition;
 	information = DIA_Boltan_EXIT_Info;
 	permanent   = TRUE;
-	description = "W³aœnie wychodzi³em.";
+	description = "WÅ‚aÅ›nie wychodziÅ‚em.";
 };
 
 FUNC INT DIA_Boltan_EXIT_Condition()
@@ -55,7 +55,7 @@ instance DIA_Boltan_ToConvicts		(C_INFO)
 	condition	= DIA_Boltan_ToConvicts_Condition;
 	information = DIA_Boltan_ToConvicts_Info;
 	permanent 	= TRUE;
-	description = "Chcê zobaczyæ wiêŸniów.";
+	description = "ChcÄ™ zobaczyÄ‡ wiÄ™ÅºniÃ³w.";
 };
 
 func int DIA_Boltan_ToConvicts_Condition ()
@@ -65,7 +65,7 @@ func int DIA_Boltan_ToConvicts_Condition ()
 
 func void DIA_Boltan_ToConvicts_Info ()
 {
-	AI_Output (other, self, "DIA_Boltan_Add_15_01"); //Chcê zobaczyæ wiêŸniów.
+	AI_Output (other, self, "DIA_Boltan_Add_15_01"); //ChcÄ™ zobaczyÄ‡ wiÄ™ÅºniÃ³w.
 	
 	
 	if (Kapitel == 3) 
@@ -73,11 +73,11 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //No, idŸ i po¿egnaj siê ze swoim kumplem.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //No, idÅº i poÅ¼egnaj siÄ™ ze swoim kumplem.
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //Zamknêliœmy tê œwiniê, która zamordowa³a paladyna Lothara.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_06"); //ZamknÄ™liÅ›my tÄ™ Å›winiÄ™, ktÃ³ra zamordowaÅ‚a paladyna Lothara.
 		};
 	}
 	else if (Canthar_Ausgeliefert == FALSE)
@@ -85,13 +85,13 @@ func void DIA_Boltan_ToConvicts_Info ()
 	&& (Rengaru_Ausgeliefert == FALSE)
 	&& (Nagur_Ausgeliefert == FALSE)
 	{
-		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Wszystkie cele s¹ puste.
+		AI_Output (self ,other, "DIA_Boltan_Add_05_02"); //Wszystkie cele sÄ… puste.
 	}
 	else
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //Dobra, koleœ.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //Dobra, koleÅ›.
 		}
 		else if (other.guild == GIL_PAL) || (other.guild == GIL_KDF)
 		{
@@ -99,7 +99,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 		}
 		else
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //IdŸ, tylko nie marudŸ za d³ugo, zrozumiano?
+			AI_Output (self ,other, "DIA_Boltan_Add_05_03"); //IdÅº, tylko nie marudÅº za dÅ‚ugo, zrozumiano?
 		};
 	};
 };		
@@ -129,9 +129,9 @@ func int DIA_Boltan_HalloBennet_Condition ()
 
 func void DIA_Boltan_HalloBennet_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Chyba nie zamierzasz wyci¹gn¹æ st¹d swojego kumpla, hê?
-	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Zapomnij o tym! Jak tylko krzyknê, zaraz zjawi¹ siê tu ch³opcy!
-	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //A wtedy zjemy potrawkê z siekanego najemnika!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Chyba nie zamierzasz wyciÄ…gnÄ…Ä‡ stÄ…d swojego kumpla, hÄ™?
+	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Zapomnij o tym! Jak tylko krzyknÄ™, zaraz zjawiÄ… siÄ™ tu chÅ‚opcy!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //A wtedy zjemy potrawkÄ™ z siekanego najemnika!
 };		
 	
 // ************************************************
@@ -159,10 +159,10 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 
 func void DIA_Boltan_HalloCanthar_Info ()
 {
-	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //To ty z³o¿y³eœ skargê na kupca Canthara!
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //By³o tu wielu ludzi, ¿eby za niego porêczyæ. Bardzo szanowanych ludzi.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Ta sprawa to jakieœ nieporozumienie. To siê czasem zdarza.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //Na przysz³oœæ uwa¿aj, kogo wysy³asz do wiêzienia.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //To ty zÅ‚oÅ¼yÅ‚eÅ› skargÄ™ na kupca Canthara!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //ByÅ‚o tu wielu ludzi, Å¼eby za niego porÄ™czyÄ‡. Bardzo szanowanych ludzi.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Ta sprawa to jakieÅ› nieporozumienie. To siÄ™ czasem zdarza.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //Na przyszÅ‚oÅ›Ä‡ uwaÅ¼aj, kogo wysyÅ‚asz do wiÄ™zienia.
 };		
 
 

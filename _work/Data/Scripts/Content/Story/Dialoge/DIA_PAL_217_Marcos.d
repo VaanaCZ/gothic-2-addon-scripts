@@ -42,24 +42,24 @@ FUNC INT DIA_Marcos_Hallo_Condition()
 };
 FUNC VOID DIA_Marcos_Hallo_Info()
 {	
-	AI_Output (self, other, "DIA_Marcos_Hallo_04_00");//STÓJ - w imiê Innosa! Jestem Marcos, królewski paladyn. Mów czego chcesz, i lepiej mów prawdê!
+	AI_Output (self, other, "DIA_Marcos_Hallo_04_00");//STÃ“J - w imiÄ™ Innosa! Jestem Marcos, krÃ³lewski paladyn. MÃ³w czego chcesz, i lepiej mÃ³w prawdÄ™!
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//Wybraniec Innosa zawsze mówi prawdê.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//Wybacz mi, dostojny magu. Nie zdawa³em sobie sprawy, z kim rozmawiam.
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//Nic siê nie sta³o.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Czy wolno mi wiedzieæ, co sprowadza ciê w te strony?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//Wybraniec Innosa zawsze mÃ³wi prawdÄ™.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//Wybacz mi, dostojny magu. Nie zdawaÅ‚em sobie sprawy, z kim rozmawiam.
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//Nic siÄ™ nie staÅ‚o.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Czy wolno mi wiedzieÄ‡, co sprowadza ciÄ™ w te strony?
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_05");//Spokojnie - wype³niam rozkazy Lorda Hagena.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_06");//Jesteœ ¿o³nierzem. Co ciê tu sprowadza?
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_05");//Spokojnie - wypeÅ‚niam rozkazy Lorda Hagena.
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_06");//JesteÅ› Å¼oÅ‚nierzem. Co ciÄ™ tu sprowadza?
 	}
 	else //SLD
 	{
 		AI_Output (other, self, "DIA_Marcos_Hallo_15_07");//Spokojnie, obaj pracujemy dla Lorda Hagena.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_08");//Od kiedy to Lord Hagen zatrudnia najemników? Mów - czego tu szukasz?
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_08");//Od kiedy to Lord Hagen zatrudnia najemnikÃ³w? MÃ³w - czego tu szukasz?
 	};
 
 };
@@ -73,7 +73,7 @@ INSTANCE DIA_Marcos_Hagen(C_INFO)
 	condition	= DIA_Marcos_Hagen_Condition;
 	information	= DIA_Marcos_Hagen_Info;
 	permanent	= FALSE;
-	description	= "Muszê dostarczyæ Lordowi Hagenowi dowód na istnienie smoków.";
+	description	= "MuszÄ™ dostarczyÄ‡ Lordowi Hagenowi dowÃ³d na istnienie smokÃ³w.";
 };                       
 
 FUNC INT DIA_Marcos_Hagen_Condition()
@@ -86,11 +86,11 @@ FUNC INT DIA_Marcos_Hagen_Condition()
 };
 FUNC VOID DIA_Marcos_Hagen_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Hagen_15_00");//Muszê dostarczyæ Lordowi Hagenowi dowód na istnienie smoków.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//Nie traæ zatem czasu i nie nadstawiaj niepotrzebnie karku.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//Czy s¹dzisz, ¿e znajdziesz tutaj smocz¹ ³uskê, któr¹ bêdziesz mu móg³ pokazaæ?
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_03");//IdŸ do zamku i porozmawiaj z kapitanem Garondem.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//Musi siê dowiedzieæ, ¿e wype³niasz misjê powierzon¹ ci przez Lorda Hagena! Na pewno udzieli ci pomocy.
+	AI_Output (other, self, "DIA_Marcos_Hagen_15_00");//MuszÄ™ dostarczyÄ‡ Lordowi Hagenowi dowÃ³d na istnienie smokÃ³w.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//Nie traÄ‡ zatem czasu i nie nadstawiaj niepotrzebnie karku.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//Czy sÄ…dzisz, Å¼e znajdziesz tutaj smoczÄ… Å‚uskÄ™, ktÃ³rÄ… bÄ™dziesz mu mÃ³gÅ‚ pokazaÄ‡?
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_03");//IdÅº do zamku i porozmawiaj z kapitanem Garondem.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//Musi siÄ™ dowiedzieÄ‡, Å¼e wypeÅ‚niasz misjÄ™ powierzonÄ… ci przez Lorda Hagena! Na pewno udzieli ci pomocy.
 };	
 
 // ************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_Marcos_Garond(C_INFO)
 	condition	= DIA_Marcos_Garond_Condition;
 	information	= DIA_Marcos_Garond_Info;
 	permanent	= FALSE;
-	description	= "Przysy³a mnie Garond...";
+	description	= "PrzysyÅ‚a mnie Garond...";
 };                       
 
 FUNC INT DIA_Marcos_Garond_Condition()
@@ -116,19 +116,19 @@ FUNC INT DIA_Marcos_Garond_Condition()
 };
 FUNC VOID DIA_Marcos_Garond_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//Przysy³a mnie Garond - kaza³ mi siê dowiedzieæ, ile rudy zdo³aliœcie wydobyæ.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//Powiedz Garondowi, ¿e musieliœmy przerwaæ wydobycie z powodu nasilaj¹cych siê ataków orków.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//Próbowa³em dotrzeæ do zamku wraz z grup¹ swoich ludzi, ale tylko ja prze¿y³em.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//Ruda znajduje siê w bezpiecznym miejscu. Wydobyliœmy CZTERY skrzynie. IdŸ zameldowaæ o tym Garondowi.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Powiedz mu, ¿e bêdê broni³ tej rudy, dopóki starczy mi si³. Nie wiem jednak, jak d³ugo jeszcze zdo³am unikaæ orków.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//Powiedz mu, ¿e potrzebujê wsparcia.
-	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//Dam mu znaæ.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//PrzysyÅ‚a mnie Garond - kazaÅ‚ mi siÄ™ dowiedzieÄ‡, ile rudy zdoÅ‚aliÅ›cie wydobyÄ‡.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//Powiedz Garondowi, Å¼e musieliÅ›my przerwaÄ‡ wydobycie z powodu nasilajÄ…cych siÄ™ atakÃ³w orkÃ³w.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//PrÃ³bowaÅ‚em dotrzeÄ‡ do zamku wraz z grupÄ… swoich ludzi, ale tylko ja przeÅ¼yÅ‚em.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//Ruda znajduje siÄ™ w bezpiecznym miejscu. WydobyliÅ›my CZTERY skrzynie. IdÅº zameldowaÄ‡ o tym Garondowi.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Powiedz mu, Å¼e bÄ™dÄ™ broniÅ‚ tej rudy, dopÃ³ki starczy mi siÅ‚. Nie wiem jednak, jak dÅ‚ugo jeszcze zdoÅ‚am unikaÄ‡ orkÃ³w.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//Powiedz mu, Å¼e potrzebujÄ™ wsparcia.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//Dam mu znaÄ‡.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Paladyn Marcos strze¿e w niewielkiej dolinie CZTERECH skrzyñ rudy.");
+	B_LogEntry (TOPIC_ScoutMine,"Paladyn Marcos strzeÅ¼e w niewielkiej dolinie CZTERECH skrzyÅ„ rudy.");
 	
 	Log_CreateTopic (Topic_MarcosJungs,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MarcosJungs,LOG_RUNNING);
-	B_LogEntry (Topic_MarcosJungs,"Marcos chce, aby Garond wys³a³ mu posi³ki.");
+	B_LogEntry (Topic_MarcosJungs,"Marcos chce, aby Garond wysÅ‚aÅ‚ mu posiÅ‚ki.");
 	
 	MIS_Marcos_Jungs = LOG_RUNNING;
 	Marcos_Ore = TRUE;
@@ -145,7 +145,7 @@ INSTANCE DIA_Marcos_Perm(C_INFO)
 	condition	= DIA_Marcos_Perm_Condition;
 	information	= DIA_Marcos_Perm_Info;
 	permanent	= TRUE;
-	description	= "Jak wygl¹da sytuacja?";
+	description	= "Jak wyglÄ…da sytuacja?";
 };                       
 
 FUNC INT DIA_Marcos_Perm_Condition()
@@ -164,17 +164,17 @@ FUNC VOID DIA_Marcos_Perm_Info()
 	
 	if (self.attribute [ATR_HITPOINTS]) < (self.attribute [ATR_HITPOINTS_MAX] /2)  
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_01");//Potrzebujê solidnego ³yka mikstury leczniczej!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_01");//PotrzebujÄ™ solidnego Å‚yka mikstury leczniczej!
 		B_UseItem (self, ItPo_Health_03);  
 		
 	}
 	else if (MIS_Marcos_Jungs == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//Wytrzymam - ale liczê na to, ¿e Garond nied³ugo przyœle mi wsparcie.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//Wytrzymam - ale liczÄ™ na to, Å¼e Garond niedÅ‚ugo przyÅ›le mi wsparcie.
 	}
 	else if (MIS_Marcos_Jungs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//Dziêkujê ci za pomoc. Niechaj Innos da nam si³ê.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//DziÄ™kujÄ™ ci za pomoc. Niechaj Innos da nam siÅ‚Ä™.
 		
 		if (Marcos_einmalig == FALSE)
 		{
@@ -184,7 +184,7 @@ FUNC VOID DIA_Marcos_Perm_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//Nie poddam siê! Innos daje mi si³ê!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//Nie poddam siÄ™! Innos daje mi siÅ‚Ä™!
 	};
 	
 	AI_StopProcessInfos (self);

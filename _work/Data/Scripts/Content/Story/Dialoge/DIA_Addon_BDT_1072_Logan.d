@@ -8,7 +8,7 @@ INSTANCE DIA_Addon_Logan_EXIT   (C_INFO)
 	condition   = DIA_Addon_Logan_EXIT_Condition;
 	information = DIA_Addon_Logan_EXIT_Info;
 	permanent   = TRUE;
-	description = "Przyjdê póŸniej...";
+	description = "PrzyjdÄ™ pÃ³Åºniej...";
 };
 FUNC INT DIA_Addon_Logan_EXIT_Condition()
 {	
@@ -16,13 +16,13 @@ FUNC INT DIA_Addon_Logan_EXIT_Condition()
 };
 FUNC VOID DIA_Addon_Logan_EXIT_Info()
 {		
-	AI_Output (other,self,"DIA_Addon_Logan_EXIT_15_00");//Przyjdê póŸniej...
+	AI_Output (other,self,"DIA_Addon_Logan_EXIT_15_00");//PrzyjdÄ™ pÃ³Åºniej...
 	
 	if ((!MIS_HlpLogan == LOG_RUNNING)
 	|| ( !MIS_HlpLogan == LOG_SUCCESS))
 	&& (Logan_Inside == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Logan_EXIT_10_01");//Tak, uciekaj. Bêdê tu sta³ i zatrzymam ka¿dego, kto spróbuje siê zbli¿yæ.
+		AI_Output (self,other,"DIA_Addon_Logan_EXIT_10_01");//Tak, uciekaj. BÄ™dÄ™ tu staÅ‚ i zatrzymam kaÅ¼dego, kto sprÃ³buje siÄ™ zbliÅ¼yÄ‡.
 	};
 	AI_StopProcessInfos (self);
 };	
@@ -87,7 +87,7 @@ FUNC VOID DIA_Addon_Logan_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_1072_Logan_Mine_10_00");//Uda³o ci siê, co? W porz¹dku, dobrze, ¿e mi pomagasz.
+	AI_Output (self, other, "DIA_Addon_BDT_1072_Logan_Mine_10_00");//UdaÅ‚o ci siÄ™, co? W porzÄ…dku, dobrze, Å¼e mi pomagasz.
 	
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -105,7 +105,7 @@ INSTANCE DIA_Addon_Logan_How2   (C_INFO)
 	condition   = DIA_Addon_Logan_How2_Condition;
 	information = DIA_Addon_Logan_How2_Info;
 	permanent   = FALSE;
-	description	= "Co u ciebie s³ychaæ?";
+	description	= "Co u ciebie sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_Logan_How2_Condition()	
 {
@@ -117,12 +117,12 @@ FUNC INT DIA_Addon_Logan_How2_Condition()
 };
 FUNC VOID DIA_Addon_Logan_How2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_How2_15_00"); //Co u ciebie s³ychaæ?
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_01"); //No có¿, przynajmniej jestem w œrodku. Lucia pêdzi naprawdê mocny bimber.
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_02"); //Esteban nie pozwala mi jednak wejœæ do kopalni. Przynajmniej na razie. Ale dosta³em kilka innych zadañ.
-	AI_Output (other, self, "DIA_Addon_Logan_How2_15_03"); //No i? Co ci kaza³ robiæ?
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_04"); //Ktoœ próbowa³ zabiæ Estebana. Chce wiedzieæ, kto za tym stoi.
-	AI_Output (self, other, "DIA_Addon_Logan_How2_10_05"); //Esteban s¹dzi, ¿e w sprawê zamieszany jest Snaf. Mam mieæ na niego oko...
+	AI_Output (other, self, "DIA_Addon_Logan_How2_15_00"); //Co u ciebie sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_01"); //No cÃ³Å¼, przynajmniej jestem w Å›rodku. Lucia pÄ™dzi naprawdÄ™ mocny bimber.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_02"); //Esteban nie pozwala mi jednak wejÅ›Ä‡ do kopalni. Przynajmniej na razie. Ale dostaÅ‚em kilka innych zadaÅ„.
+	AI_Output (other, self, "DIA_Addon_Logan_How2_15_03"); //No i? Co ci kazaÅ‚ robiÄ‡?
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_04"); //KtoÅ› prÃ³bowaÅ‚ zabiÄ‡ Estebana. Chce wiedzieÄ‡, kto za tym stoi.
+	AI_Output (self, other, "DIA_Addon_Logan_How2_10_05"); //Esteban sÄ…dzi, Å¼e w sprawÄ™ zamieszany jest Snaf. Mam mieÄ‡ na niego oko...
 
 };
 //---------------------------------------------------------------------
@@ -148,8 +148,8 @@ FUNC INT DIA_Addon_Logan_Attentat_Condition()
 FUNC VOID DIA_Addon_Logan_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_00");//A wiêc szukasz ludzi, którzy s¹ za to odpowiedzialni?
-	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_01");//Nic o tym nie wiem. Sk¹d niby mia³em siê dowiedzieæ? Siedzia³em jeszcze w bagnie, gdy ca³a ta historia mia³a miejsce.
+	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_00");//A wiÄ™c szukasz ludzi, ktÃ³rzy sÄ… za to odpowiedzialni?
+	AI_Output (self, other, "DIA_Addon_Logan_Attentat_10_01");//Nic o tym nie wiem. SkÄ…d niby miaÅ‚em siÄ™ dowiedzieÄ‡? SiedziaÅ‚em jeszcze w bagnie, gdy caÅ‚a ta historia miaÅ‚a miejsce.
 };
 //---------------------------------------------------------------------
 //	Info HI 
@@ -173,22 +173,22 @@ FUNC INT DIA_Addon_Logan_HI_Condition()
 };
 FUNC VOID DIA_Addon_Logan_HI_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_00");//Patrzcie, pañstwo, nowa twarz.
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_01");//Zamierzasz tak staæ czy przyszed³eœ mi pomóc?
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_00");//Patrzcie, paÅ„stwo, nowa twarz.
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_01");//Zamierzasz tak staÄ‡ czy przyszedÅ‚eÅ› mi pomÃ³c?
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Franco_HI) 
 	{
-		AI_Output (other, self, "DIA_Addon_Logan_HI_15_02");//Franko mnie przys³a³. Mówi³, ¿e przyda ci siê pomoc. To o co chodzi?
+		AI_Output (other, self, "DIA_Addon_Logan_HI_15_02");//Franko mnie przysÅ‚aÅ‚. MÃ³wiÅ‚, Å¼e przyda ci siÄ™ pomoc. To o co chodzi?
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Logan_HI_15_03");//To zale¿y - jakiej pomocy ci trzeba?
+		AI_Output (other, self, "DIA_Addon_Logan_HI_15_03");//To zaleÅ¼y - jakiej pomocy ci trzeba?
 	};
-	AI_Output (self, other, "DIA_Addon_Logan_HI_10_04");//B³otne wê¿e ostatnimi czasy trochê za bardzo siê do nas zbli¿aj¹. Pora zabiæ czêœæ z nich.
+	AI_Output (self, other, "DIA_Addon_Logan_HI_10_04");//BÅ‚otne wÄ™Å¼e ostatnimi czasy trochÄ™ za bardzo siÄ™ do nas zbliÅ¼ajÄ…. Pora zabiÄ‡ czÄ™Å›Ä‡ z nich.
 	
 	Log_CreateTopic (Topic_Addon_Logan,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Logan,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Logan,"Logan chce, ¿ebym zapolowa³ z nim na wê¿e b³otne.");
+	B_LogEntry (Topic_Addon_Logan,"Logan chce, Å¼ebym zapolowaÅ‚ z nim na wÄ™Å¼e bÅ‚otne.");
 };
 //---------------------------------------------------------------------
 //	Info Why
@@ -200,7 +200,7 @@ INSTANCE DIA_Addon_Logan_Why   (C_INFO)
 	condition   = DIA_Addon_Logan_Why_Condition;
 	information = DIA_Addon_Logan_Why_Info;
 	permanent   = FALSE;
-	description	= "A co za to dostanê?";
+	description	= "A co za to dostanÄ™?";
 };
 FUNC INT DIA_Addon_Logan_Why_Condition()	
 {
@@ -212,16 +212,16 @@ FUNC INT DIA_Addon_Logan_Why_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Why_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_Why_15_00"); //A co za to dostanê?
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_01"); //Franko pozwoli ci tu gniæ, jeœli nie bêdzie dla ciebie lepszego zastosowania.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_02"); //Chcesz wejœæ do obozu? No to musisz pomagaæ. Same s³owa nie przybli¿¹ ciê do celu.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_03"); //Poza tym mogê ci pokazaæ, jak patroszyæ te bestie.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_04"); //Nie s¹dzê jednak, ¿eby Franko wpuœci³ ciê do œrodka tylko dlatego, ¿e zabijesz parê wê¿y.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_05"); //Jest tu sporo ludzi, którzy ju¿ trochê czekaj¹.
-	AI_Output (self, other, "DIA_Addon_Logan_Why_10_06"); //I lepiej bêdzie, jeœli nastêpn¹ osob¹, która wejdzie do obozu, bêdê ja...
+	AI_Output (other, self, "DIA_Addon_Logan_Why_15_00"); //A co za to dostanÄ™?
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_01"); //Franko pozwoli ci tu gniÄ‡, jeÅ›li nie bÄ™dzie dla ciebie lepszego zastosowania.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_02"); //Chcesz wejÅ›Ä‡ do obozu? No to musisz pomagaÄ‡. Same sÅ‚owa nie przybliÅ¼Ä… ciÄ™ do celu.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_03"); //Poza tym mogÄ™ ci pokazaÄ‡, jak patroszyÄ‡ te bestie.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_04"); //Nie sÄ…dzÄ™ jednak, Å¼eby Franko wpuÅ›ciÅ‚ ciÄ™ do Å›rodka tylko dlatego, Å¼e zabijesz parÄ™ wÄ™Å¼y.
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_05"); //Jest tu sporo ludzi, ktÃ³rzy juÅ¼ trochÄ™ czekajÄ….
+	AI_Output (self, other, "DIA_Addon_Logan_Why_10_06"); //I lepiej bÄ™dzie, jeÅ›li nastÄ™pnÄ… osobÄ…, ktÃ³ra wejdzie do obozu, bÄ™dÄ™ ja...
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Logan mo¿e nauczyæ mnie zdejmowania futra, wyrywania pazurów i zêbów.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Logan moÅ¼e nauczyÄ‡ mnie zdejmowania futra, wyrywania pazurÃ³w i zÄ™bÃ³w.");	
 };
 //---------------------------------------------------------------------
 //	Info Lager
@@ -233,7 +233,7 @@ INSTANCE DIA_Addon_Logan_Lager   (C_INFO)
 	condition   = DIA_Addon_Logan_Lager_Condition;
 	information = DIA_Addon_Logan_Lager_Info;
 	permanent   = FALSE;
-	description	= "Czym jest obóz?";
+	description	= "Czym jest obÃ³z?";
 };
 FUNC INT DIA_Addon_Logan_Lager_Condition()	
 {
@@ -245,9 +245,9 @@ FUNC INT DIA_Addon_Logan_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Logan_Lager_15_00");//Czym jest obóz?
-	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_01");//Pytanie powinno brzmieæ: czym NIE jest obóz. Bez wê¿y, bez mokrych dziur... No wiesz, bez BAGNA.
-	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_02");//Zamiast tego maj¹ gorza³ê i z³oto. Z tego, co wiem, jest tam nawet jakaœ kobieta. Teraz rozumiesz?
+	AI_Output (other, self, "DIA_Addon_Logan_Lager_15_00");//Czym jest obÃ³z?
+	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_01");//Pytanie powinno brzmieÄ‡: czym NIE jest obÃ³z. Bez wÄ™Å¼y, bez mokrych dziur... No wiesz, bez BAGNA.
+	AI_Output (self, other, "DIA_Addon_Logan_Lager_10_02");//Zamiast tego majÄ… gorzaÅ‚Ä™ i zÅ‚oto. Z tego, co wiem, jest tam nawet jakaÅ› kobieta. Teraz rozumiesz?
 };
 //---------------------------------------------------------------------
 //	Info von Franco geschickt (MISsion) 
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Logan_MIS   (C_INFO)
 	condition   = DIA_Addon_Logan_MIS_Condition;
 	information = DIA_Addon_Logan_MIS_Info;
 	permanent   = FALSE;
-	description	= "ChodŸmy zabiæ parê b³otnych wê¿y.";
+	description	= "ChodÅºmy zabiÄ‡ parÄ™ bÅ‚otnych wÄ™Å¼y.";
 };
 FUNC INT DIA_Addon_Logan_MIS_Condition()	
 {	
@@ -271,10 +271,10 @@ FUNC INT DIA_Addon_Logan_MIS_Condition()
 FUNC VOID DIA_Addon_Logan_MIS_Info()
 {
 	
-	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_00");//ChodŸmy zabiæ parê b³otnych wê¿y.
-	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_01");//Wygl¹da na to, ¿e zrozumia³eœ, jak siê robi postêpy. Tak jak i... Cii. S³ysza³eœ? S³yszê je.
+	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_00");//ChodÅºmy zabiÄ‡ parÄ™ bÅ‚otnych wÄ™Å¼y.
+	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_01");//WyglÄ…da na to, Å¼e zrozumiaÅ‚eÅ›, jak siÄ™ robi postÄ™py. Tak jak i... Cii. SÅ‚yszaÅ‚eÅ›? SÅ‚yszÄ™ je.
 	AI_Output (other, self, "DIA_Addon_Logan_MIS_15_02");//Rozumiem. Co teraz zrobimy?
-	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_03");//Id¹. Na pewno maj¹ ochotê na przek¹skê. Zobaczymy, kto kogo bêdzie jad³. Dalej!
+	AI_Output (self, other, "DIA_Addon_Logan_MIS_10_03");//IdÄ…. Na pewno majÄ… ochotÄ™ na przekÄ…skÄ™. Zobaczymy, kto kogo bÄ™dzie jadÅ‚. Dalej!
 	
 	Snd_Play ("SWA_Warn");
 	AI_StopProcessInfos (self);
@@ -313,14 +313,14 @@ FUNC INT DIA_Addon_Logan_tot_Condition()
 };
 FUNC VOID DIA_Addon_Logan_tot_Info()
 {	 
-	AI_Output (self, other, "DIA_Addon_Logan_tot_10_00");//Dobry b³otny w¹¿ to martwy b³otny w¹¿. To powinno byæ przestrog¹ dla pozosta³ych.
-	AI_Output (other, self, "DIA_Addon_Logan_tot_15_01");//W porz¹dku, masz coœ jeszcze do zrobienia? Bo muszê ruszaæ dalej...
-	AI_Output (self, other, "DIA_Addon_Logan_tot_10_02");//W tej chwili nic. Wiesz, kogo musisz poszukaæ, jeœli bêdziesz chcia³ siê czegoœ nauczyæ.
+	AI_Output (self, other, "DIA_Addon_Logan_tot_10_00");//Dobry bÅ‚otny wÄ…Å¼ to martwy bÅ‚otny wÄ…Å¼. To powinno byÄ‡ przestrogÄ… dla pozostaÅ‚ych.
+	AI_Output (other, self, "DIA_Addon_Logan_tot_15_01");//W porzÄ…dku, masz coÅ› jeszcze do zrobienia? Bo muszÄ™ ruszaÄ‡ dalej...
+	AI_Output (self, other, "DIA_Addon_Logan_tot_10_02");//W tej chwili nic. Wiesz, kogo musisz poszukaÄ‡, jeÅ›li bÄ™dziesz chciaÅ‚ siÄ™ czegoÅ› nauczyÄ‡.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	MIS_HlpLogan = LOG_SUCCESS;
 	B_CheckLog ();
-	B_LogEntry (Topic_Addon_Franco,"Pomog³em Loganowi. Czas zobaczyæ, co s¹dzi o tym Franko.");
+	B_LogEntry (Topic_Addon_Franco,"PomogÅ‚em Loganowi. Czas zobaczyÄ‡, co sÄ…dzi o tym Franko.");
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START");
@@ -337,7 +337,7 @@ INSTANCE DIA_Addon_Logan_Lern   (C_INFO)
 	condition   = DIA_Addon_Logan_Lern_Condition;
 	information = DIA_Addon_Logan_Lern_Info;
 	permanent   = FALSE;
-	description = "Poka¿ mi, jak patroszyæ zwierzêta...";
+	description = "PokaÅ¼ mi, jak patroszyÄ‡ zwierzÄ™ta...";
 };
 FUNC INT DIA_Addon_Logan_Lern_Condition()
 {	
@@ -348,9 +348,9 @@ FUNC INT DIA_Addon_Logan_Lern_Condition()
 };
 FUNC VOID DIA_Addon_Logan_Lern_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Logan_Lern_15_00");//Poka¿ mi, jak patroszyæ zwierzêta...
-	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_01");//Jeœli chcesz siê czegoœ dowiedzieæ o krwiopijcach, zapytaj lepiej Edgora.
-	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_02");//Je¿eli bêdziesz patroszy³ bagienne wê¿e czy jaszczurki, to mo¿e chcesz nauczyæ siê, jak je obdzieraæ ze skóry i wyrywaæ im zêby?
+	AI_Output (other, self, "DIA_Addon_Logan_Lern_15_00");//PokaÅ¼ mi, jak patroszyÄ‡ zwierzÄ™ta...
+	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_01");//JeÅ›li chcesz siÄ™ czegoÅ› dowiedzieÄ‡ o krwiopijcach, zapytaj lepiej Edgora.
+	AI_Output (self, other, "DIA_Addon_Logan_Lern_10_02");//JeÅ¼eli bÄ™dziesz patroszyÅ‚ bagienne wÄ™Å¼e czy jaszczurki, to moÅ¼e chcesz nauczyÄ‡ siÄ™, jak je obdzieraÄ‡ ze skÃ³ry i wyrywaÄ‡ im zÄ™by?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Allgemeine Talente
@@ -362,7 +362,7 @@ INSTANCE DIA_Addon_Logan_Allg   (C_INFO)
 	condition   = DIA_Addon_Logan_Allg_Condition;
 	information = DIA_Addon_Logan_Allg_Info;
 	permanent   = TRUE;
-	description = "Chcê siê nauczyæ...";
+	description = "ChcÄ™ siÄ™ nauczyÄ‡...";
 };
 FUNC INT DIA_Addon_Logan_Allg_Condition()
 {	
@@ -381,11 +381,11 @@ FUNC VOID DIA_Addon_Logan_Allg_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Wyrywania zêbów",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_Logan_Allg_Teeth);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Wyrywania zÄ™bÃ³w",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Addon_Logan_Allg_Teeth);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 	{ 
-		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Wyrywania pazurów",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Addon_Logan_Allg_Claws);
+		Info_AddChoice	(DIA_Addon_Logan_Allg, B_BuildLearnString ("Wyrywania pazurÃ³w",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Addon_Logan_Allg_Claws);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 	{ 
@@ -437,12 +437,12 @@ FUNC INT DIA_Addon_Logan_Hacker_Condition()
 FUNC VOID DIA_Addon_Logan_Hacker_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10004_Logan_Hacker_15_00"); //Co nowego?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_01"); //Hej, uda³o mi siê dziêki twojej pomocy! Dosta³em pozwolenie na wejœcie do kopalni!
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_02"); //Nie znam siê na wydobyciu z³ota, ale jakoœ sobie poradzê.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_01"); //Hej, udaÅ‚o mi siÄ™ dziÄ™ki twojej pomocy! DostaÅ‚em pozwolenie na wejÅ›cie do kopalni!
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_02"); //Nie znam siÄ™ na wydobyciu zÅ‚ota, ale jakoÅ› sobie poradzÄ™.
 	
 	if (Logan_Lohn == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_03"); //Opanowa³em ju¿ podstawy. Dobrze siê ustaw i wal tak mocno, jak mo¿esz!
+		AI_Output (self, other, "DIA_Addon_BDT_10004_Logan_Hacker_10_03"); //OpanowaÅ‚em juÅ¼ podstawy. Dobrze siÄ™ ustaw i wal tak mocno, jak moÅ¼esz!
 		B_Upgrade_Hero_HackChance(10); 
 		Logan_Lohn = TRUE;
 	};

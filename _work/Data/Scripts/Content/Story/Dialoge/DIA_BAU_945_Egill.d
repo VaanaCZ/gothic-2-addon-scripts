@@ -32,7 +32,7 @@ instance DIA_Egill_HALLO		(C_INFO)
 	condition	 = 	DIA_Egill_HALLO_Condition;
 	information	 = 	DIA_Egill_HALLO_Info;
 
-	description	 = 	"Co s³ychaæ?";
+	description	 = 	"Co sÅ‚ychaÄ‡?";
 };
 
 func int DIA_Egill_HALLO_Condition ()
@@ -43,14 +43,14 @@ func int DIA_Egill_HALLO_Condition ()
 func void DIA_Egill_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_HALLO_15_00"); //Co tam?
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //Jeœli odwiedzaj¹ nas jacyœ przybysze, to przewa¿nie nie w pokojowych zamiarach.
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Mam nadziejê, ¿e siê nie mylê co do ciebie.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //JeÅ›li odwiedzajÄ… nas jacyÅ› przybysze, to przewaÅ¼nie nie w pokojowych zamiarach.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Mam nadziejÄ™, Å¼e siÄ™ nie mylÄ™ co do ciebie.
 	AI_Output			(self, other, "DIA_Egill_HALLO_08_03"); //Jestem Egill.
 	
 	if (Hlp_IsValidNpc (Ehnim))
 		&& (!C_NpcIsDown (Ehnim))
 		{
-			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //A ten dziwak, którego tam widzisz, to mój brat Ehnim.
+			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //A ten dziwak, ktÃ³rego tam widzisz, to mÃ³j brat Ehnim.
 		};
 };
 
@@ -65,7 +65,7 @@ instance DIA_Egill_FELDARBEIT		(C_INFO)
 	condition	 = 	DIA_Egill_FELDARBEIT_Condition;
 	information	 = 	DIA_Egill_FELDARBEIT_Info;
 
-	description	 = 	"Jak id¹ prace w polu?";
+	description	 = 	"Jak idÄ… prace w polu?";
 };
 
 func int DIA_Egill_FELDARBEIT_Condition ()
@@ -78,8 +78,8 @@ func int DIA_Egill_FELDARBEIT_Condition ()
 
 func void DIA_Egill_FELDARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Jak id¹ prace w polu?
-	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //Wspaniale. Gdyby tylko polne bestie nie niszczy³y naszych plonów...
+	AI_Output			(other, self, "DIA_Egill_FELDARBEIT_15_00"); //Jak idÄ… prace w polu?
+	AI_Output			(self, other, "DIA_Egill_FELDARBEIT_08_01"); //Wspaniale. Gdyby tylko polne bestie nie niszczyÅ‚y naszych plonÃ³w...
 
 };
 
@@ -108,8 +108,8 @@ func int DIA_Egill_FELDRAEUBER_Condition ()
 func void DIA_Egill_FELDRAEUBER_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //Czemu nic z nimi nie zrobicie?
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //¯artujesz chyba. Od kiedy tutaj mieszkam, zabi³em ju¿ ich tyle, ¿e ca³kiem straci³em rachubê.
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Niestety, wci¹¿ ich przybywa.
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Å»artujesz chyba. Od kiedy tutaj mieszkam, zabiÅ‚em juÅ¼ ich tyle, Å¼e caÅ‚kiem straciÅ‚em rachubÄ™.
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Niestety, wciÄ…Å¼ ich przybywa.
 };
 
 
@@ -123,7 +123,7 @@ instance DIA_Egill_STREIT2		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT2_Condition;
 	information	 = 	DIA_Egill_STREIT2_Info;
 
-	description	 = 	"Twój brat opowiedzia³ podobn¹ historiê.";
+	description	 = 	"TwÃ³j brat opowiedziaÅ‚ podobnÄ… historiÄ™.";
 };
 
 func int DIA_Egill_STREIT2_Condition ()
@@ -144,11 +144,11 @@ func int DIA_Egill_STREIT2_Condition ()
 
 func void DIA_Egill_STREIT2_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //Twój brat opowiedzia³ podobn¹ historiê.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //Taaak? A co dok³adnie powiedzia³?
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Twierdzi, ¿e on równie¿ zabi³ mnóstwo polnych bestii.
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Co? Ten dureñ nie trafi³by sam do domu!
-	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Powiedz mu, ¿e nie powinien siê tak przechwalaæ.
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //TwÃ³j brat opowiedziaÅ‚ podobnÄ… historiÄ™.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //Taaak? A co dokÅ‚adnie powiedziaÅ‚?
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Twierdzi, Å¼e on rÃ³wnieÅ¼ zabiÅ‚ mnÃ³stwo polnych bestii.
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Co? Ten dureÅ„ nie trafiÅ‚by sam do domu!
+	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Powiedz mu, Å¼e nie powinien siÄ™ tak przechwalaÄ‡.
 
 	AI_StopProcessInfos (self);
 };
@@ -165,7 +165,7 @@ instance DIA_Egill_STREIT4		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT4_Condition;
 	information	 = 	DIA_Egill_STREIT4_Info;
 
-	description	 = 	"Ehnim jest odrobinê poirytowany z powodu ca³ej tej sprawy.";
+	description	 = 	"Ehnim jest odrobinÄ™ poirytowany z powodu caÅ‚ej tej sprawy.";
 };
 
 func int DIA_Egill_STREIT4_Condition ()
@@ -185,8 +185,8 @@ func int DIA_Egill_STREIT4_Condition ()
 
 func void DIA_Egill_STREIT4_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim jest odrobinê poirytowany z powodu ca³ej tej sprawy.
-	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Niech siê za bardzo nie nadyma, bo spuszczê mu lanie. Mo¿esz mu to ode mnie przekazaæ.
+	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim jest odrobinÄ™ poirytowany z powodu caÅ‚ej tej sprawy.
+	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Niech siÄ™ za bardzo nie nadyma, bo spuszczÄ™ mu lanie. MoÅ¼esz mu to ode mnie przekazaÄ‡.
 
 	AI_StopProcessInfos (self);
 };
@@ -217,7 +217,7 @@ func int DIA_Egill_PERMKAP1_Condition ()
 
 func void DIA_Egill_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //Czy nie narobi³eœ ju¿ dosyæ szkód? Lepiej idŸ sobie.
+	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //Czy nie narobiÅ‚eÅ› juÅ¼ dosyÄ‡ szkÃ³d? Lepiej idÅº sobie.
 
 	AI_StopProcessInfos (self);
 };

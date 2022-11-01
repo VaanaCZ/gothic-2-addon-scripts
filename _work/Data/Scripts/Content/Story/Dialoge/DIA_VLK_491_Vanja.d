@@ -78,7 +78,7 @@ func int DIA_Vanja_STANDARD_Condition ()
 };
 func void DIA_Vanja_STANDARD_Info ()
 {
-	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Jestem zajêta.
+	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //Jestem zajÄ™ta.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -91,7 +91,7 @@ instance DIA_Vanja_DOPE		(C_INFO)
 	condition	 = 	DIA_Vanja_DOPE_Condition;
 	information	 = 	DIA_Vanja_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Nie wiesz, gdzie mogê znaleŸæ trochê ziela?";
+	description	 = 	"Nie wiesz, gdzie mogÄ™ znaleÅºÄ‡ trochÄ™ ziela?";
 };
 
 func int DIA_Vanja_DOPE_Condition ()
@@ -104,9 +104,9 @@ func int DIA_Vanja_DOPE_Condition ()
 };
 func void DIA_Vanja_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Nie wiesz, gdzie mogê znaleŸæ trochê ziela?
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Nie mam pojêcia. Trzymaj siê lepiej od tego z dala.
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Jeœli tego nie zrobisz, gorzko po¿a³ujesz...
+	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Nie wiesz, gdzie mogÄ™ znaleÅºÄ‡ trochÄ™ ziela?
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Nie mam pojÄ™cia. Trzymaj siÄ™ lepiej od tego z dala.
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //JeÅ›li tego nie zrobisz, gorzko poÅ¼aÅ‚ujesz...
 };
 
 

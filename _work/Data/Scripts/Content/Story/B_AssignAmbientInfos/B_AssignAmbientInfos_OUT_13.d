@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Do niedawna udawa³o nam siê odpieraæ orcze hordy. Ostatnio jednak jest ich coraz wiêcej.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Do niedawna udawaÅ‚o nam siÄ™ odpieraÄ‡ orcze hordy. Ostatnio jednak jest ich coraz wiÄ™cej.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_01"); //Stra¿ równie¿ nie chce nam pomóc. Przychodz¹ tylko z miasta zabieraæ to, co my zbierzemy i wyhodujemy.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_01"); //StraÅ¼ rÃ³wnieÅ¼ nie chce nam pomÃ³c. PrzychodzÄ… tylko z miasta zabieraÄ‡ to, co my zbierzemy i wyhodujemy.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar upad³ chyba na g³owê, ¿eby wypowiadaæ pos³uszeñstwo miastu, podczas gdy stacjonuj¹ tam paladyni.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar upadÅ‚ chyba na gÅ‚owÄ™, Å¼eby wypowiadaÄ‡ posÅ‚uszeÅ„stwo miastu, podczas gdy stacjonujÄ… tam paladyni.
 	};
 	
 	AI_StopProcessInfos	(self);

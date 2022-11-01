@@ -39,7 +39,7 @@ instance MENU_STATUS (C_MENU_DEF)
 	items[21]	= "MENU_ITEM_ATTRIBUTE_4";
 
 
-	// Rüstungswerte
+	// RÃ¼stungswerte
 	
 	items[22]	= "MENU_ITEM_ARMOR_HEADING";
 	// ---------------------------------------------
@@ -125,7 +125,7 @@ const int STAT_B_X4 = 7700; //Ende der B-Spalte (zum zentrieren der Headings)
 // ----- Zeilen / Blockanfang ------
 // 1. Spalte
 const int STAT_PLYHEAD_Y	= 1000;
-const int STAT_PLY_Y 		= 1450; //Gilde / Punkteblock (1000 + 300 Fonthöhe + 150 Abstand)
+const int STAT_PLY_Y 		= 1450; //Gilde / Punkteblock (1000 + 300 FonthÃ¶he + 150 Abstand)
 
 const int STAT_ATRHEAD_Y  	= 3250; 
 const int STAT_ATR_Y 		= 3700; //Attributsblock
@@ -137,7 +137,7 @@ const int STAT_ARM_Y 		= 5650; //Armorblock
 const int STAT_TALHEAD_Y  	= 1000;
 const int STAT_TAL_Y  		= 1450; //2. Spalte - Talentblock
 
-// ----- Zeilengrösse ------
+// ----- ZeilengrÃ¶sse ------
 const int STAT_DY =  300;
 
 
@@ -150,7 +150,7 @@ const int STAT_DY =  300;
 // ---------------
 instance MENU_ITEM_STATUS_HEADING(C_MENU_ITEM_DEF)
 {
-	text[0]	 	= "POSTAÆ";
+	text[0]	 	= "POSTAÄ†";
 	posx		= STAT_A_X1;				posy = STAT_PLYHEAD_Y;	
 	dimx 		= STAT_A_X4 - STAT_A_X1;	dimy = STAT_DY;
 	fontName	= STAT_FONT_DEFAULT;
@@ -191,7 +191,7 @@ instance MENU_ITEM_TALENT_7_TITLE(C_MENU_ITEM_DEF)
 instance MENU_ITEM_TALENT_7_CIRCLE(C_MENU_ITEM_DEF) 
 {
 	posx 		= STAT_A_X2;				posy = STAT_PLY_Y + STAT_DY*1;	
-	text[0]		= "Kr¹g"; 
+	text[0]		= "KrÄ…g"; 
 	fontName 	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE; 
 };
@@ -206,7 +206,7 @@ instance MENU_ITEM_TALENT_7_SKILL(C_MENU_ITEM_DEF)
 instance MENU_ITEM_EXP_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_PLY_Y + STAT_DY*2;	
-	text[0]		= "Doœwiadczenie"; 
+	text[0]		= "DoÅ›wiadczenie"; 
 	fontName 	= STAT_FONT_DEFAULT;	
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -264,11 +264,11 @@ INSTANCE MENU_ITEM_ATTRIBUTE_HEADING(C_MENU_ITEM_DEF)
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };
 
-// ------ Stärke ------
+// ------ StÃ¤rke ------
 INSTANCE MENU_ITEM_ATTRIBUTE_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*0;
-	text[0]		= "Si³a";
+	text[0]		= "SiÅ‚a";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -284,7 +284,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_1(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_2_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*1;
-	text[0]		= "Zrêcznoœæ";
+	text[0]		= "ZrÄ™cznoÅ›Ä‡";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -316,7 +316,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_3(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ATTRIBUTE_4_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1;				posy = STAT_ATR_Y + STAT_DY*3;
-	text[0]		= "Punkty trafieñ";
+	text[0]		= "Punkty trafieÅ„";
 	fontName	= STAT_FONT_DEFAULT;
 	flags		= flags & ~IT_SELECTABLE;
 };
@@ -330,7 +330,7 @@ INSTANCE MENU_ITEM_ATTRIBUTE_4(C_MENU_ITEM_DEF)
 
 
 // --------------
-// Rüstungsschutz
+// RÃ¼stungsschutz
 // --------------
 
 INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
@@ -346,7 +346,7 @@ INSTANCE MENU_ITEM_ARMOR_HEADING(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_1_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*0;
-	text[0]		= "Broñ";
+	text[0]		= "BroÅ„";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -378,7 +378,7 @@ INSTANCE MENU_ITEM_ARMOR_2(C_MENU_ITEM_DEF)
 INSTANCE MENU_ITEM_ARMOR_3_TITLE(C_MENU_ITEM_DEF)
 {
 	posx 		= STAT_A_X1; 				posy = STAT_ARM_Y + STAT_DY*2;
-	text[0]		= "Smoczy ogieñ";
+	text[0]		= "Smoczy ogieÅ„";
 	fontName 	= STAT_FONT_DEFAULT;
 	flags 		= flags & ~IT_SELECTABLE;
 };
@@ -416,7 +416,7 @@ INSTANCE MENU_ITEM_TALENTS_HEADING(C_MENU_ITEM_DEF)
 
 	posx		= STAT_B_X1; 				posy = STAT_TALHEAD_Y;
 	dimx 		= STAT_B_X4 - STAT_B_X1;	dimy = STAT_DY;
-	text[0]		= "UMIEJÊTNOŒCI";
+	text[0]		= "UMIEJÄ˜TNOÅšCI";
 	fontName	= STAT_FONT_DEFAULT;	
 	flags		= (flags & ~IT_SELECTABLE)|IT_TXT_CENTER;
 };

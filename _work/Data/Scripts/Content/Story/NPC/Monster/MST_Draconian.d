@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Draconian(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Jaszczurocz≥ek";
+	name							=	"Jaszczurocz≈Çek";
 	guild							=	GIL_DRACONIAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRACONIAN;
 	level							=	35;

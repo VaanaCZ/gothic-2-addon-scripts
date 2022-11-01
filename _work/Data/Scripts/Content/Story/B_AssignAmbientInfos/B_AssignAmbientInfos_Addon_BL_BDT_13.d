@@ -45,16 +45,16 @@ FUNC VOID DIA_Addon_BL_BDT_13_Chef_Info()
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//Nasz wspania³y przywódca Thorus. Dziêki niemu wszyscy bêdziemy bogaci.
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//Nasz wspaniaÅ‚y przywÃ³dca Thorus. DziÄ™ki niemu wszyscy bÄ™dziemy bogaci.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Nasz wspania³y przywódca.... Eee... Nie mam pojêcia...
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Nasz wspaniaÅ‚y przywÃ³dca.... Eee... Nie mam pojÄ™cia...
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//Nasz wspania³y przywódca, Kruk. Dziêki niemu wszyscy bêdziemy bogaci.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//Nasz wspaniaÅ‚y przywÃ³dca, Kruk. DziÄ™ki niemu wszyscy bÄ™dziemy bogaci.
 			
 	};
 };
@@ -77,8 +77,8 @@ FUNC INT DIA_Addon_BL_BDT_13_Lager_Condition()
 FUNC VOID DIA_Addon_BL_BDT_13_Lager_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Lager_15_00");//Co wiesz o obozie?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Porozmawiaj ze Snafem, jeœli chcesz siê czegoœ dowiedzieæ. Ten spasiony kucharz sporo wie.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Jeœli chcesz coœ kupiæ, poszukaj Fiska. On mo¿e za³atwiæ niemal wszystko...
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Porozmawiaj ze Snafem, jeÅ›li chcesz siÄ™ czegoÅ› dowiedzieÄ‡. Ten spasiony kucharz sporo wie.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//JeÅ›li chcesz coÅ› kupiÄ‡, poszukaj Fiska. On moÅ¼e zaÅ‚atwiÄ‡ niemal wszystko...
 };
 // *************************************************************************
 // 								News
@@ -103,13 +103,13 @@ FUNC VOID DIA_Addon_BL_BDT_13_News_Info()
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Kruk nie ¿yje. Teraz NIGDY nie wydostaniemy siê z tej wyspy.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Kruk nie Å¼yje. Teraz NIGDY nie wydostaniemy siÄ™ z tej wyspy.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//Piraci postawili ¿agle i zwiali.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Na pla¿y zosta³o tylko paru idiotów, którzy nie maj¹ nawet porz¹dnego statku.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Nawet Beliar nie wie, jak mo¿na siê wydostaæ z tej wyspy.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//Piraci postawili Å¼agle i zwiali.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Na plaÅ¼y zostaÅ‚o tylko paru idiotÃ³w, ktÃ³rzy nie majÄ… nawet porzÄ…dnego statku.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Nawet Beliar nie wie, jak moÅ¼na siÄ™ wydostaÄ‡ z tej wyspy.
 	};
 };
 // *************************************************************************
@@ -121,7 +121,7 @@ instance DIA_Addon_BL_BDT_13_Gold(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_Gold_Condition;
 	information	= DIA_Addon_BL_BDT_13_Gold_Info;
 	permanent	= TRUE;
-	description = "Jak mo¿na siê szybko wzbogaciæ?";
+	description = "Jak moÅ¼na siÄ™ szybko wzbogaciÄ‡?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_Gold_Condition()
@@ -136,24 +136,24 @@ FUNC VOID DIA_Addon_BL_BDT_13_Gold_Info()
 {	
 	BDT_13_Nerver = (BDT_13_Nerver +1);
 	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Gold_15_00");//Jak mo¿na siê szybko wzbogaciæ?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Gold_15_00");//Jak moÅ¼na siÄ™ szybko wzbogaciÄ‡?
 	
 	if (BDT_13_Nerver <= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Dobre pytanie. Czy¿ nie po to wszyscy tu jesteœmy?
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_02");//Zdob¹dŸ czerwony kamieñ i daj go Thorusowi, a bêdziesz móg³ wejœæ do kopalni.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Dobre pytanie. CzyÅ¼ nie po to wszyscy tu jesteÅ›my?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_02");//ZdobÄ…dÅº czerwony kamieÅ„ i daj go Thorusowi, a bÄ™dziesz mÃ³gÅ‚ wejÅ›Ä‡ do kopalni.
 	}
 	else if (BDT_13_Kill == FALSE)
 	{
 		BDT_13_Nerver = 0;
 		BDT_13_Kill = TRUE;
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_03");//¯arty sobie stroisz? Spadaj!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_03");//Å»arty sobie stroisz? Spadaj!
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
 		BDT_13_Nerver = 0;
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_04");//Koniec z uprzejmoœciami!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_04");//Koniec z uprzejmoÅ›ciami!
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1);
 	};

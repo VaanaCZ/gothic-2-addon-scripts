@@ -1,98 +1,98 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
 //ADDON
-const string	TOPIC_Addon_PickForConstantino	=	"Zio³a dla Constantina";			
-const string	TOPIC_Addon_Greg_NW				=	"Cz³owiek z opask¹ na oku";			
+const string	TOPIC_Addon_PickForConstantino	=	"ZioÅ‚a dla Constantina";			
+const string	TOPIC_Addon_Greg_NW				=	"CzÅ‚owiek z opaskÄ… na oku";			
 const string	TOPIC_Addon_Ornament			=	"Portal";			
 const string	TOPIC_Addon_HolRiordian			=	"Riordian";			
-const string	TOPIC_Addon_RingOfWater			=	"Wodny Kr¹g";
+const string	TOPIC_Addon_RingOfWater			=	"Wodny KrÄ…g";
 const string	TOPIC_Addon_KDW					=	"Magowie Wody";
 const string	TOPIC_Addon_CavalornTheHut		=	"Stara chata Cavalorna";
 var int			TOPIC_End_CavalornTheHut;
 const string	TOPIC_Addon_KillBrago			=	"Bandyci Cavalorna";
-const string	TOPIC_Addon_Bandittrader		=	"Handlarz broni¹ dla bandytów";
+const string	TOPIC_Addon_Bandittrader		=	"Handlarz broniÄ… dla bandytÃ³w";
 const string	TOPIC_Addon_MissingPeople		=	"Zaginieni ludzie";
-const string	TOPIC_Addon_WhoStolePeople		=	"Gdzie s¹ zaginieni ludzie?";
+const string	TOPIC_Addon_WhoStolePeople		=	"Gdzie sÄ… zaginieni ludzie?";
 const string	TOPIC_Addon_BringRangerToLares	=	"Pomoc dla Laresa";
 const string	TOPIC_Addon_TeleportsNW			=	"Kamienie teleportacyjne";
 const string	TOPIC_Addon_Stoneplates			=	"Kamienne tablice";
-const string	TOPIC_Addon_RangerHelpKDF		=	"U³atwione przyjêcie do klasztoru";
+const string	TOPIC_Addon_RangerHelpKDF		=	"UÅ‚atwione przyjÄ™cie do klasztoru";
 var int			TOPIC_End_RangerHelpKDF;
-const string	TOPIC_Addon_RangerHelpSLD		=	"U³atwione przyjêcie do najemników";
+const string	TOPIC_Addon_RangerHelpSLD		=	"UÅ‚atwione przyjÄ™cie do najemnikÃ³w";
 var int			TOPIC_End_RangerHelpSLD;
-const string	TOPIC_Addon_RangerHelpMIL		=	"U³atwione przyjêcie do stra¿y";
+const string	TOPIC_Addon_RangerHelpMIL		=	"UÅ‚atwione przyjÄ™cie do straÅ¼y";
 const string	TOPIC_Addon_Joe					=	"Joe";
 var int			TOPIC_END_Joe;
-const string	TOPIC_Addon_BromorsGold			=	"Z³ota misa Bromora";
+const string	TOPIC_Addon_BromorsGold			=	"ZÅ‚ota misa Bromora";
 
-const string	TOPIC_Addon_TeleportsADW		=	"Moc kamieni ogniskuj¹cych";
+const string	TOPIC_Addon_TeleportsADW		=	"Moc kamieni ogniskujÄ…cych";
 const string	TOPIC_Addon_Sklaven				=	"Niewolnicy Kruka";
 const string	TOPIC_Addon_Relicts				=	"Relikty"; 
 const string	TOPIC_Addon_RavenKDW			=	"Kruk"; 
-const string	TOPIC_Addon_Lance				=	"Stra¿ przednia Magów Wody"; 
+const string	TOPIC_Addon_Lance				=	"StraÅ¼ przednia MagÃ³w Wody"; 
 var int			TOPIC_End_Lance;
-const string	TOPIC_Addon_HousesOfRulers		=	"Posiad³oœci budowniczych"; 
+const string	TOPIC_Addon_HousesOfRulers		=	"PosiadÅ‚oÅ›ci budowniczych"; 
 const string	TOPIC_Addon_CanyonOrcs			=	"Orkowie w kanionie"; 
 var int			TOPIC_END_CanyonOrcs;
 const string	TOPIC_Addon_BDTRuestung			=	"Zbroja bandyty"; 
-const string	TOPIC_Addon_Quarhodron			=	"Moc Stra¿nika Umar³ych"; 
+const string	TOPIC_Addon_Quarhodron			=	"Moc StraÅ¼nika UmarÅ‚ych"; 
 const string	TOPIC_Addon_Klaue				=	"Szpon Beliara"; 
 var int			TOPIC_END_Klaue;
-const string	TOPIC_Addon_Kammern				=	"Komnaty œwi¹tyni"; 
+const string	TOPIC_Addon_Kammern				=	"Komnaty Å›wiÄ…tyni"; 
 const string	TOPIC_Addon_Flut				=	"Zatopione miasto"; 
 var int			TOPIC_END_Flut;
 const string	TOPIC_Addon_BaltramSkipTrade	=	"Piracki handel";  
 var int			TOPIC_END_BaltramSkipTrade; 							
-const string	TOPIC_Addon_FarimsFish			=	"Problemy ze stra¿¹"; 
+const string	TOPIC_Addon_FarimsFish			=	"Problemy ze straÅ¼Ä…"; 
 const string	TOPIC_Addon_Lucia				=	"Lucia"; 
 var int			TOPIC_END_Lucia;
-const string	TOPIC_Addon_Erol				=	"Napadniêci kupcy"; 
+const string	TOPIC_Addon_Erol				=	"NapadniÄ™ci kupcy"; 
 
 
 const string	TOPIC_Addon_VatrasAbloesung		=	"Pomoc dla Vatrasa";
 
-// ******** Texte, die in alte Topics gepackt werden müssen *************
+// ******** Texte, die in alte Topics gepackt werden mÃ¼ssen *************
 
-const string	LogText_Addon_SCKnowsMisspeapl 		=	"Wielu mieszkañców Khorinis zniknê³o. Nie wiadomo, co siê mog³o z nimi staæ.";
-const string	LogText_Addon_WilliamLeiche	 		=	"Zw³oki rybaka le¿¹ w ruinach na wschód od obozu Magów Wody.";
-const string	LogText_Addon_RavensGoldmine	 	=	"Kruk ma kopalniê, w której ka¿e wydobywaæ z³oto niewolnikom.";
-const string	LogText_Addon_KDWRight			 	=	"Tylko Mag Wody mo¿e wprowadziæ kogoœ do Wodnego Krêgu.";
+const string	LogText_Addon_SCKnowsMisspeapl 		=	"Wielu mieszkaÅ„cÃ³w Khorinis zniknÄ™Å‚o. Nie wiadomo, co siÄ™ mogÅ‚o z nimi staÄ‡.";
+const string	LogText_Addon_WilliamLeiche	 		=	"ZwÅ‚oki rybaka leÅ¼Ä… w ruinach na wschÃ³d od obozu MagÃ³w Wody.";
+const string	LogText_Addon_RavensGoldmine	 	=	"Kruk ma kopalniÄ™, w ktÃ³rej kaÅ¼e wydobywaÄ‡ zÅ‚oto niewolnikom.";
+const string	LogText_Addon_KDWRight			 	=	"Tylko Mag Wody moÅ¼e wprowadziÄ‡ kogoÅ› do Wodnego KrÄ™gu.";
 const string	LogText_Addon_WilliamMissing	 	=	"Jednym z zaginionych ludzi jest William, rybak z portu w Khorinis.";
-const string	LogText_Addon_Relicts	 			=	"W œwi¹tyni Adanosa w³adcy Jarkendaru wybudowali trzy komnaty pe³ne zabójczych pu³apek, które mia³y zatrzymaæ ka¿dego intruza. Kluczem do nich s¹ barwne relikty budowniczych.";
-const string	LogText_Addon_SkipsRumToBaltram		=	"Skip da³ mi rum dla Baltrama.";
+const string	LogText_Addon_Relicts	 			=	"W Å›wiÄ…tyni Adanosa wÅ‚adcy Jarkendaru wybudowali trzy komnaty peÅ‚ne zabÃ³jczych puÅ‚apek, ktÃ³re miaÅ‚y zatrzymaÄ‡ kaÅ¼dego intruza. Kluczem do nich sÄ… barwne relikty budowniczych.";
+const string	LogText_Addon_SkipsRumToBaltram		=	"Skip daÅ‚ mi rum dla Baltrama.";
 
 // Teach
-const string	LogText_Addon_Cavalorn_Teach		=	"Cavalorn mo¿e mi pokazaæ, jak korzystaæ z ³uku oraz jak siê skradaæ.";
-const string	LogText_Addon_SaturasTeach	 		=	"Saturas mo¿e nauczyæ mnie krêgów magii.";
-const string	LogText_Addon_MyxirTeach	 		=	"Myxir mo¿e nauczyæ mnie czytaæ w prastarym jêzyku budowniczych.";
-const string	LogText_Addon_RiordianTeach	 		=	"Riordian mo¿e nauczyæ mojego ognika szukania przedmiotów.";
-const string	LogText_Addon_RiordianTeachAlchemy 	=	"Riordian mo¿e nauczyæ mnie sztuki warzenia mikstur.";
-const string	LogText_Addon_NefariusTeach			=	"Od Nefariusa mogê dowiedzieæ siê, jak tworzyæ runy.";
-const string	LogText_Addon_Erol_Teach	 		=	"Kupiec Erol mo¿e mi pokazaæ, jak staæ siê silniejszym.";
+const string	LogText_Addon_Cavalorn_Teach		=	"Cavalorn moÅ¼e mi pokazaÄ‡, jak korzystaÄ‡ z Å‚uku oraz jak siÄ™ skradaÄ‡.";
+const string	LogText_Addon_SaturasTeach	 		=	"Saturas moÅ¼e nauczyÄ‡ mnie krÄ™gÃ³w magii.";
+const string	LogText_Addon_MyxirTeach	 		=	"Myxir moÅ¼e nauczyÄ‡ mnie czytaÄ‡ w prastarym jÄ™zyku budowniczych.";
+const string	LogText_Addon_RiordianTeach	 		=	"Riordian moÅ¼e nauczyÄ‡ mojego ognika szukania przedmiotÃ³w.";
+const string	LogText_Addon_RiordianTeachAlchemy 	=	"Riordian moÅ¼e nauczyÄ‡ mnie sztuki warzenia mikstur.";
+const string	LogText_Addon_NefariusTeach			=	"Od Nefariusa mogÄ™ dowiedzieÄ‡ siÄ™, jak tworzyÄ‡ runy.";
+const string	LogText_Addon_Erol_Teach	 		=	"Kupiec Erol moÅ¼e mi pokazaÄ‡, jak staÄ‡ siÄ™ silniejszym.";
 
 // Trade
-const string	LogText_Addon_CronosTrade	 		=	"Mag Wody, Cronos, ma kilka interesuj¹cych przedmiotów, które mo¿e mi sprzedaæ.";
-const string	LogText_Addon_VatrasTrade	 		=	"Vatras weŸmie ode mnie dziwne kamienne tablice, które mo¿na znaleŸæ w tym miejscu. Obieca³, ¿e op³aci mi siê to.";
-const string	LogText_Addon_MartinTrade	 		=	"Martin, kwatermistrz paladynów, mo¿e sprzedaæ mi rzeczy z ich magazynu.";
-const string	LogText_Addon_ErolTrade	 			=	"Kupiec Erol mo¿e sprzedaæ mi ró¿ne rzeczy. Jego chata znajduje siê pomiêdzy karczm¹ 'Martwa Harpia', a farm¹ Onara.";
+const string	LogText_Addon_CronosTrade	 		=	"Mag Wody, Cronos, ma kilka interesujÄ…cych przedmiotÃ³w, ktÃ³re moÅ¼e mi sprzedaÄ‡.";
+const string	LogText_Addon_VatrasTrade	 		=	"Vatras weÅºmie ode mnie dziwne kamienne tablice, ktÃ³re moÅ¼na znaleÅºÄ‡ w tym miejscu. ObiecaÅ‚, Å¼e opÅ‚aci mi siÄ™ to.";
+const string	LogText_Addon_MartinTrade	 		=	"Martin, kwatermistrz paladynÃ³w, moÅ¼e sprzedaÄ‡ mi rzeczy z ich magazynu.";
+const string	LogText_Addon_ErolTrade	 			=	"Kupiec Erol moÅ¼e sprzedaÄ‡ mi rÃ³Å¼ne rzeczy. Jego chata znajduje siÄ™ pomiÄ™dzy karczmÄ… 'Martwa Harpia', a farmÄ… Onara.";
 
 //WispDetector
-const string	LogText_Addon_WispLearned 			=	"Mój ognik mo¿e wykryæ nastêpuj¹ce przedmioty:";
-const string	LogText_Addon_WispLearned_NF 		=	"Broñ do walki wrêcz";
-const string	LogText_Addon_WispLearned_FF	 	=	"Broñ dystansow¹ i amunicjê";
-const string	LogText_Addon_WispLearned_NONE 		=	"Z³oto, klucze i narzêdzia";
+const string	LogText_Addon_WispLearned 			=	"MÃ³j ognik moÅ¼e wykryÄ‡ nastÄ™pujÄ…ce przedmioty:";
+const string	LogText_Addon_WispLearned_NF 		=	"BroÅ„ do walki wrÄ™cz";
+const string	LogText_Addon_WispLearned_FF	 	=	"BroÅ„ dystansowÄ… i amunicjÄ™";
+const string	LogText_Addon_WispLearned_NONE 		=	"ZÅ‚oto, klucze i narzÄ™dzia";
 const string	LogText_Addon_WispLearned_RUNE 		=	"Runy i zwoje";
-const string	LogText_Addon_WispLearned_MAGIC   	=	"Pierœcienie i amulety";
-const string	LogText_Addon_WispLearned_FOOD 		=	"¯ywnoœæ i roœliny";
+const string	LogText_Addon_WispLearned_MAGIC   	=	"PierÅ›cienie i amulety";
+const string	LogText_Addon_WispLearned_FOOD 		=	"Å»ywnoÅ›Ä‡ i roÅ›liny";
 const string	LogText_Addon_WispLearned_POTIONS 	=	"Wszelkiego rodzaju mikstury";
 
 //Language
-const string	LogText_Addon_Language_1 			=	"Nauczy³em siê jêzyka wieœniaków. To podstawowy jêzyk ludu budowniczych.";
-const string	LogText_Addon_Language_2 			=	"Nauczy³em siê jêzyka wojowników.";
-const string	LogText_Addon_Language_3 			=	"Nauczy³em siê jêzyka kap³anów.";
+const string	LogText_Addon_Language_1 			=	"NauczyÅ‚em siÄ™ jÄ™zyka wieÅ›niakÃ³w. To podstawowy jÄ™zyk ludu budowniczych.";
+const string	LogText_Addon_Language_2 			=	"NauczyÅ‚em siÄ™ jÄ™zyka wojownikÃ³w.";
+const string	LogText_Addon_Language_3 			=	"NauczyÅ‚em siÄ™ jÄ™zyka kapÅ‚anÃ³w.";
 
 
 
@@ -123,11 +123,11 @@ const string	TOPIC_BalthasarsSchafe			=	"Zakazane pastwisko";
 const string	TOPIC_AkilsSLDStillthere		=	"Farmer w potrzebie";			
 var int 		TOPIC_END_AkilsSLDStillthere;
 const string	TOPIC_Wettsaufen				=	"Do dna";			
-const string	TOPIC_GaanSchnaubi				=	"Prychaj¹ca istota";			
-const string	TOPIC_GromAskTeacher			=	"G³odny myœliwy";			
+const string	TOPIC_GaanSchnaubi				=	"PrychajÄ…ca istota";			
+const string	TOPIC_GromAskTeacher			=	"GÅ‚odny myÅ›liwy";			
 const string	TOPIC_DragomirsArmbrust			=	"Kusza Dragomira";			
 const string	TOPIC_KillLighthouseBandits		=	"Bandyci w latarni morskiej Jacka";			
-const string	TOPIC_HannaRetrieveLetter		=	"Ktoœ coœ zgubi³?";			
+const string	TOPIC_HannaRetrieveLetter		=	"KtoÅ› coÅ› zgubiÅ‚?";			
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
@@ -141,53 +141,53 @@ const string	TOPIC_Ulthar_HeileSchreine_PAL	=	"Zbezczeszczone kapliczki";
 const string	TOPIC_TraitorPedro				=	"Pedro zdrajca";
 const string	TOPIC_SekobDMT					=	"Wygnany farmer";
 var int 		TOPIC_END_SekobDMT;
-const string	TOPIC_AkilSchafDiebe			=	"Z³odzieje owiec";
+const string	TOPIC_AkilSchafDiebe			=	"ZÅ‚odzieje owiec";
 const string	TOPIC_HealHilda					=	"Leczenie Hildy";
 const string	TOPIC_MalethsGehstock			=	"Laska Maletha";
 var int 		TOPIC_END_MalethsGehstock;
-const string	TOPIC_BengarALLEIN				=	"Samotnoœæ i bezradnoœæ";
-const string	TOPIC_MinenAnteile				=	"Fa³szywe udzia³y w kopalni";
+const string	TOPIC_BengarALLEIN				=	"SamotnoÅ›Ä‡ i bezradnoÅ›Ä‡";
+const string	TOPIC_MinenAnteile				=	"FaÅ‚szywe udziaÅ‚y w kopalni";
 var int 		TOPIC_END_MinenAnteile;
-const string	TOPIC_RichterLakai				=	"Lokaj sêdziego";
-const string	TOPIC_KillTrollBlack			=	"Czarna skóra";
-const string	TOPIC_Torlof_Dmt				=	"Torlofa strach przed Z³ym";
+const string	TOPIC_RichterLakai				=	"Lokaj sÄ™dziego";
+const string	TOPIC_KillTrollBlack			=	"Czarna skÃ³ra";
+const string	TOPIC_Torlof_Dmt				=	"Torlofa strach przed ZÅ‚ym";
 const string	TOPIC_KillHoshPak				=	"Hosh-Pak";
 const string	TOPIC_Urshak					=	"Ur-Shak";
 
 // ------ Kapitel 4 ------
 const string	TOPIC_DRACHENJAGD				=	"Polowanie na smoki";
-const string	TOPIC_Dragonhunter				=	"£owcy smoków";	 
+const string	TOPIC_Dragonhunter				=	"Åowcy smokÃ³w";	 
 const string	TOPIC_LobartsOrKProblem			=	"Lobarta problem z orkami";			
 var int 		TOPIC_END_LobartsOrKProblem;
 const string	TOPIC_SylvioKillIceGolem		=	"Dwa lodowe golemy dla Sylvia";			
 var int 		TOPIC_END_SylvioKillIceGolem;
 const string	TOPIC_AngarsAmulett				=	"Amulet Angara";			
-const string	TOPIC_JanBecomesSmith			=	"Jan i kuŸnia";			
+const string	TOPIC_JanBecomesSmith			=	"Jan i kuÅºnia";			
 const string	TOPIC_FerrosSword				=	"Miecz Ferosa";			
 const string	TOPIC_DRACHENEIERNeoras			=	"Mikstura Neorasa ze smoczych jaj";			
 const string	TOPIC_DRACHENEIER				=	"Smocze jaja";			
 var int 		TOPIC_END_DRACHENEIER;
-const string	TOPIC_OrcElite					=	"Hordy orkowych wojowników";			
+const string	TOPIC_OrcElite					=	"Hordy orkowych wojownikÃ³w";			
 var int  		TOPIC_END_OrcElite;	
 const string	TOPIC_Dar_BringOrcEliteRing		=	"Bajer";			
 const string	TOPIC_FoundVinosKellerei		=	"Bimber";			
 const string	TOPIC_BrutusMeatbugs			=	"Paskudna nora";			
 var int  		TOPIC_END_BrutusMeatbugs;	
-const string	TOPIC_Sengrath_Missing			=	"Zguba w ciemnoœci";			
+const string	TOPIC_Sengrath_Missing			=	"Zguba w ciemnoÅ›ci";			
 var int  		TOPIC_END_Sengrath_Missing;	
-const string	TOPIC_Talbin_Runs				=	"Muszê siê st¹d wydostaæ!";			
+const string	TOPIC_Talbin_Runs				=	"MuszÄ™ siÄ™ stÄ…d wydostaÄ‡!";			
 var int  		TOPIC_END_Talbin_Runs;	
-const string	TOPIC_KerolothsGeldbeutel		=	"Kradzie¿";			
+const string	TOPIC_KerolothsGeldbeutel		=	"KradzieÅ¼";			
 var int   		TOPIC_END_KerolothsGeldbeutel;
 
 // ------ Kapitel 5 ------
-const string	TOPIC_BuchHallenVonIrdorath		=	"Pan smoków";			
+const string	TOPIC_BuchHallenVonIrdorath		=	"Pan smokÃ³w";			
 const string	TOPIC_RosisFlucht				=	"Ucieczka Rosi";			
-const string	TOPIC_bringRosiBackToSekob		=	"Sekob têskni za ¿on¹";			
+const string	TOPIC_bringRosiBackToSekob		=	"Sekob tÄ™skni za Å¼onÄ…";			
 const string	TOPIC_HealRandolph				=	"Brak";
-const string	TOPIC_GeroldGiveFood			=	"G³ód";
+const string	TOPIC_GeroldGiveFood			=	"GÅ‚Ã³d";
 
 // ------ Kapitel 6 ------
-const string	TOPIC_HallenVonIrdorath			=	"Dwór Irdorath";			
-const string	TOPIC_BackToShip				=	"Powrót na okrêt";			
-const string	TOPIC_MyCrew					=	"Moja za³oga";			
+const string	TOPIC_HallenVonIrdorath			=	"DwÃ³r Irdorath";			
+const string	TOPIC_BackToShip				=	"PowrÃ³t na okrÄ™t";			
+const string	TOPIC_MyCrew					=	"Moja zaÅ‚oga";			

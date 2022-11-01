@@ -18,7 +18,7 @@ INSTANCE KDF_508_Gorax (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	//Händler!
+	//HÃ¤ndler!
 	
 		
 	// ------ visuals ------																			

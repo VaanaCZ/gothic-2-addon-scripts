@@ -71,11 +71,11 @@ FUNC INT DIA_Addon_Sancho_HI_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //Cholera, znowu ktoœ nowy. Te¿ chcesz z³ota, co?
-	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //Z³ota?
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //Nie próbuj siê ze mn¹ przekomarzaæ!
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //Wszyscy nowi chc¹ wejœæ do kopalni.
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Nie oczekuj jednak, ¿e bêdzie to ³atwe!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //Cholera, znowu ktoÅ› nowy. TeÅ¼ chcesz zÅ‚ota, co?
+	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //ZÅ‚ota?
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //Nie prÃ³buj siÄ™ ze mnÄ… przekomarzaÄ‡!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //Wszyscy nowi chcÄ… wejÅ›Ä‡ do kopalni.
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Nie oczekuj jednak, Å¼e bÄ™dzie to Å‚atwe!
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -98,7 +98,7 @@ INSTANCE DIA_Addon_Sancho_Lager   (C_INFO)
 	condition   = DIA_Addon_Sancho_Lager_Condition;
 	information = DIA_Addon_Sancho_Lager_Info;
 	permanent   = FALSE;
-	description = "Jak mogê siê dostaæ do obozu?";
+	description = "Jak mogÄ™ siÄ™ dostaÄ‡ do obozu?";
 };
 FUNC INT DIA_Addon_Sancho_Lager_Condition()
 {	
@@ -106,17 +106,17 @@ FUNC INT DIA_Addon_Sancho_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Lager_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Lager_15_00"); //Jak mogê siê dostaæ do obozu?
-	AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_01"); //IdŸ po prostu mostem!
+	AI_Output (other,self,"DIA_Addon_Sancho_Lager_15_00"); //Jak mogÄ™ siÄ™ dostaÄ‡ do obozu?
+	AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_01"); //IdÅº po prostu mostem!
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //Jeœli jednak chcesz siê dostaæ do kopalni, bêdziesz musia³ przejœæ ko³o Franka.
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //On oczekuje od nowych, ¿e przez jakiœ czas bêd¹ pracowaæ poza obozem.
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //JeÅ›li jednak chcesz siÄ™ dostaÄ‡ do kopalni, bÄ™dziesz musiaÅ‚ przejÅ›Ä‡ koÅ‚o Franka.
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //On oczekuje od nowych, Å¼e przez jakiÅ› czas bÄ™dÄ… pracowaÄ‡ poza obozem.
 	};
 	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Wszyscy nowoprzybyli musz¹ pracowaæ na bagnie, zanim dostan¹ pozwolenie wejœcia do kopalni.");
+	B_LogEntry (Topic_Addon_Franco,"Wszyscy nowoprzybyli muszÄ… pracowaÄ‡ na bagnie, zanim dostanÄ… pozwolenie wejÅ›cia do kopalni.");
 };
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Sancho_Mine   (C_INFO)
 	condition   = DIA_Addon_Sancho_Mine_Condition;
 	information = DIA_Addon_Sancho_Mine_Info;
 	permanent   = FALSE;
-	description = "Powiedz mi coœ wiêcej o kopalni.";
+	description = "Powiedz mi coÅ› wiÄ™cej o kopalni.";
 };
 FUNC INT DIA_Addon_Sancho_Mine_Condition()
 {	
@@ -140,13 +140,13 @@ FUNC INT DIA_Addon_Sancho_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Mine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Powiedz mi coœ wiêcej o kopalni.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Chcesz dostaæ siê do œrodka? Spróbuj zaprzyjaŸniæ siê z Frankiem. On jest tu szefem.
+	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Powiedz mi coÅ› wiÄ™cej o kopalni.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Chcesz dostaÄ‡ siÄ™ do Å›rodka? SprÃ³buj zaprzyjaÅºniÄ‡ siÄ™ z Frankiem. On jest tu szefem.
 	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //To on decyduje, kto wejdzie do obozu.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Jak bêdziesz siedzia³ na ty³ku, to nie masz ¿adnych szans na wejœcie.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Porozmawiaj z nim, niech ci wyznaczy jak¹œ robotê.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Jak bÄ™dziesz siedziaÅ‚ na tyÅ‚ku, to nie masz Å¼adnych szans na wejÅ›cie.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Porozmawiaj z nim, niech ci wyznaczy jakÄ…Å› robotÄ™.
 	
-	B_LogEntry (Topic_Addon_Franco,"FRANKO decyduje o tym, kto mo¿e wejœæ do obozu. Rozdziela tak¿e pracê.");
+	B_LogEntry (Topic_Addon_Franco,"FRANKO decyduje o tym, kto moÅ¼e wejÅ›Ä‡ do obozu. Rozdziela takÅ¼e pracÄ™.");
 };
 
 //---------------------------------------------------------------------
@@ -159,7 +159,7 @@ INSTANCE DIA_Addon_Sancho_Franco (C_INFO)
 	condition   = DIA_Addon_Sancho_Franco_Condition;
 	information = DIA_Addon_Sancho_Franco_Info;
 	permanent   = FALSE;
-	description = "Gdzie znajdê tego Franka?";
+	description = "Gdzie znajdÄ™ tego Franka?";
 };
 FUNC INT DIA_Addon_Sancho_Franco_Condition()
 {	
@@ -171,11 +171,11 @@ FUNC INT DIA_Addon_Sancho_Franco_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Franco_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Gdzie znajdê tego Franka?
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //Zwykle krêci siê przed wejœciem do obozu.
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //No i zachowuj siê, bo inaczej dostaniesz tak¹ gównian¹ robotê, jak ja.
+	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Gdzie znajdÄ™ tego Franka?
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //Zwykle krÄ™ci siÄ™ przed wejÅ›ciem do obozu.
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //No i zachowuj siÄ™, bo inaczej dostaniesz takÄ… gÃ³wnianÄ… robotÄ™, jak ja.
 	
-	B_LogEntry (Topic_Addon_Franco,"Franko krêci siê przy wejœciu do obozu.");
+	B_LogEntry (Topic_Addon_Franco,"Franko krÄ™ci siÄ™ przy wejÅ›ciu do obozu.");
 };
 
 //---------------------------------------------------------------------
@@ -188,7 +188,7 @@ INSTANCE DIA_Addon_Sancho_Spitzel (C_INFO)
 	condition   = DIA_Addon_Sancho_Spitzel_Condition;
 	information = DIA_Addon_Sancho_Spitzel_Info;
 	permanent   = FALSE;
-	description = "Musisz tu siedzieæ przez ca³y czas?";
+	description = "Musisz tu siedzieÄ‡ przez caÅ‚y czas?";
 };
 FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 {	
@@ -200,10 +200,10 @@ FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Spitzel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//Musisz tu siedzieæ przez ca³y czas?
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//Mam sprawdzaæ, czy wœród nowych ludzi nie ma szpiegów.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Jakby ktoœ zna³ to zapomniane miejsce. To koniec œwiata - œrodek bagna.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Nikt nie mo¿e nas tu znaleŸæ i nie znajdzie. Po co ktoœ mia³by przysy³aæ do nas szpiegów?
+	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//Musisz tu siedzieÄ‡ przez caÅ‚y czas?
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//Mam sprawdzaÄ‡, czy wÅ›rÃ³d nowych ludzi nie ma szpiegÃ³w.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Jakby ktoÅ› znaÅ‚ to zapomniane miejsce. To koniec Å›wiata - Å›rodek bagna.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Nikt nie moÅ¼e nas tu znaleÅºÄ‡ i nie znajdzie. Po co ktoÅ› miaÅ‚by przysyÅ‚aÄ‡ do nas szpiegÃ³w?
 };
 
 //---------------------------------------------------------------------
@@ -234,15 +234,15 @@ FUNC VOID DIA_Addon_Sancho_Perm_Info()
 	if Npc_IsDead (Franco)
 	&& (Comment_Franco == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//S³ysza³em, ¿e wys³a³eœ Franka do piek³a. Dobra robota...
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//SÅ‚yszaÅ‚em, Å¼e wysÅ‚aÅ‚eÅ› Franka do piekÅ‚a. Dobra robota...
 		
 		if !Npc_IsDead (Carlos)
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//...ale teraz szarogêsi siê tutaj Carlos. A z nim nie ma ¿artów...
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//...ale teraz szarogÄ™si siÄ™ tutaj Carlos. A z nim nie ma Å¼artÃ³w...
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Carlosa te¿ wys³a³eœ na cmentarz? Ch³opie, lepiej trzymaj siê ode mnie z daleka.
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Carlosa teÅ¼ wysÅ‚aÅ‚eÅ› na cmentarz? ChÅ‚opie, lepiej trzymaj siÄ™ ode mnie z daleka.
 		};
 		
 		Comment_Franco = TRUE;
@@ -250,7 +250,7 @@ FUNC VOID DIA_Addon_Sancho_Perm_Info()
 	else if Npc_IsDead (Esteban)
 	&& (Comment_Esteban == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//S³ysza³em, ¿e ukatrupi³eœ Estebana. Ch³opie, do czego ty zmierzasz, co?
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//SÅ‚yszaÅ‚em, Å¼e ukatrupiÅ‚eÅ› Estebana. ChÅ‚opie, do czego ty zmierzasz, co?
 		
 		Comment_Esteban = TRUE;
 	}

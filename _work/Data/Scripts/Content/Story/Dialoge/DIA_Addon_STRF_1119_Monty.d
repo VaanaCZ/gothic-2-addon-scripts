@@ -32,7 +32,7 @@ INSTANCE DIA_Addon_Monty_Hi   (C_INFO)
 	condition   = DIA_Addon_Monty_Hi_Condition;
 	information = DIA_Addon_Monty_Hi_Info;
 	permanent   = FALSE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_Monty_Hi_Condition()
 {	
@@ -40,12 +40,12 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Co s³ychaæ?
-	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//¯yjê i tylko to siê liczy.
+	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Co sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Å»yjÄ™ i tylko to siÄ™ liczy.
 	
 	if (Monty_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//Jeœli kiedyœ bêdziesz chcia³ pogadaæ, jestem do twojej dyspozycji.
+		AI_Output (self, other, "DIA_Addon_Monty_Hi_08_02");//JeÅ›li kiedyÅ› bÄ™dziesz chciaÅ‚ pogadaÄ‡, jestem do twojej dyspozycji.
 		Monty_einmal = TRUE;
 	};
 };
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Najwa¿niejszy jest k¹t, pod jakim zadajesz uderzenie.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Nie za p³asko i nie za ostro. Tak naj³atwiej pozyskaæ kruszec i nie po³amaæ kilofa.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//NajwaÅ¼niejszy jest kÄ…t, pod jakim zadajesz uderzenie.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Nie za pÅ‚asko i nie za ostro. Tak najÅ‚atwiej pozyskaÄ‡ kruszec i nie poÅ‚amaÄ‡ kilofa.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

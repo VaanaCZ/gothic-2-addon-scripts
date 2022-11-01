@@ -32,7 +32,7 @@ INSTANCE DIA_Lester_DI_Hello (C_INFO)
 	information	= DIA_Lester_DI_Hello_Info;
 	permanent	 = 	TRUE;
 
-	description = "Jest coœ, o czym powinienem wiedzieæ?";
+	description = "Jest coÅ›, o czym powinienem wiedzieÄ‡?";
 };    
                    
 FUNC INT DIA_Lester_DI_Hello_Condition()
@@ -46,28 +46,28 @@ var int DIA_Lester_DI_SCGotWarning1;
 var int DIA_Lester_DI_SCGotWarning2;
 FUNC VOID DIA_Lester_DI_Hello_Info()
 {	
-	AI_Output	(other ,self,"DIA_Lester_DI_Hello_15_00");	//Jest coœ, o czym powinienem wiedzieæ?
+	AI_Output	(other ,self,"DIA_Lester_DI_Hello_15_00");	//Jest coÅ›, o czym powinienem wiedzieÄ‡?
 
 	if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (ORkSturmDI  == TRUE)
 	&& (DIA_Lester_DI_SCGotWarning1 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Mario wymkn¹³ siê ze statku podczas ataku orków. Mia³em na niego oko mimo ca³ego tego zamieszania.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Przemaszerowa³ sobie przez liniê orków i nikt go nie zatrzymywa³.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Od samego pocz¹tku coœ mi siê w nim nie podoba³o. To szpieg!
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Mario wymknÄ…Å‚ siÄ™ ze statku podczas ataku orkÃ³w. MiaÅ‚em na niego oko mimo caÅ‚ego tego zamieszania.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//PrzemaszerowaÅ‚ sobie przez liniÄ™ orkÃ³w i nikt go nie zatrzymywaÅ‚.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Od samego poczÄ…tku coÅ› mi siÄ™ w nim nie podobaÅ‚o. To szpieg!
 		B_GivePlayerXP (XP_Ambient);
 		DIA_Lester_DI_SCGotWarning1 = TRUE;
 	}
 	else if (Npc_IsDead(Mario_DI) == FALSE)
 	&& (DIA_Lester_DI_SCGotWarning2 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//Coœ mi siê nie podoba w tym ca³ym Mario. Facet roztacza wokó³ siebie jak¹œ dziwn¹ aurê.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//Uwa¿aj na siebie, przyjacielu.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_04");	//CoÅ› mi siÄ™ nie podoba w tym caÅ‚ym Mario. Facet roztacza wokÃ³Å‚ siebie jakÄ…Å› dziwnÄ… aurÄ™.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_05");	//UwaÅ¼aj na siebie, przyjacielu.
 		DIA_Lester_DI_SCGotWarning2 = TRUE;
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Nie teraz. Mo¿e póŸniej.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Nie teraz. MoÅ¼e pÃ³Åºniej.
 	};
 };
 
@@ -81,7 +81,7 @@ INSTANCE DIA_Lester_DI_MarioArsch (C_INFO)
 	condition	= DIA_Lester_DI_MarioArsch_Condition;
 	information	= DIA_Lester_DI_MarioArsch_Info;
 
-	description = "Mia³eœ racjê. Mario nas zdradzi³!";
+	description = "MiaÅ‚eÅ› racjÄ™. Mario nas zdradziÅ‚!";
 };    
                    
 FUNC INT DIA_Lester_DI_MarioArsch_Condition()
@@ -95,9 +95,9 @@ FUNC INT DIA_Lester_DI_MarioArsch_Condition()
 
 FUNC VOID DIA_Lester_DI_MarioArsch_Info()
 {	
-	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//Mia³eœ racjê. Mario nas zdradzi³!
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//A widzisz? Mo¿e i nie jestem zbyt bystry, ale co do tego nie mia³em ¿adnych w¹tpliwoœci.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//Na przysz³oœæ staraj siê lepiej dobieraæ towarzyszy podró¿y.
+	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//MiaÅ‚eÅ› racjÄ™. Mario nas zdradziÅ‚!
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//A widzisz? MoÅ¼e i nie jestem zbyt bystry, ale co do tego nie miaÅ‚em Å¼adnych wÄ…tpliwoÅ›ci.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//Na przyszÅ‚oÅ›Ä‡ staraj siÄ™ lepiej dobieraÄ‡ towarzyszy podrÃ³Å¼y.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -113,7 +113,7 @@ INSTANCE DIA_PC_Lester_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_PC_Lester_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "D³ugo tu ju¿ nie zabawimy.";
+	description = "DÅ‚ugo tu juÅ¼ nie zabawimy.";
 };                       
 FUNC INT DIA_PC_Lester_DI_UndeadDragonDead_Condition()
 {
@@ -126,28 +126,28 @@ FUNC INT DIA_PC_Lester_DI_UndeadDragonDead_Condition()
 var int DIA_PC_Lester_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_00"); //D³ugo tu ju¿ nie zabawimy.
+	AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_00"); //DÅ‚ugo tu juÅ¼ nie zabawimy.
 
 	if (DIA_PC_Lester_DI_UndeadDragonDead_OneTime == FALSE )
 	{
 		if ((Npc_GetDistToWP(self,"DI_DRACONIANAREA_19")<4000) )
 			{
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //Mój ból g³owy nagle ust¹pi³!
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Jak to zrobi³eœ?
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //Pokona³em nieprzyjaciela.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //To musia³o byæ coœ naprawdê potê¿nego. Co dok³adnie?
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Smok-o¿ywieniec.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //MÃ³j bÃ³l gÅ‚owy nagle ustÄ…piÅ‚!
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Jak to zrobiÅ‚eÅ›?
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //PokonaÅ‚em nieprzyjaciela.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //To musiaÅ‚o byÄ‡ coÅ› naprawdÄ™ potÄ™Å¼nego. Co dokÅ‚adnie?
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_05"); //Smok-oÅ¼ywieniec.
 			};
 	
 		if (SC_KnowsMadPsi == TRUE)
 			{
-				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //Twoi dawni kompani z obozu na bagnie dali mi nieŸle popaliæ.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Tak. Wiara czyni cuda. Zawsze tak by³o. Szkoda tylko, ¿e s³u¿yli z³emu.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Sporo czasu minie, nim siê z tego otrz¹snê.
+				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //Twoi dawni kompani z obozu na bagnie dali mi nieÅºle popaliÄ‡.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Tak. Wiara czyni cuda. Zawsze tak byÅ‚o. Szkoda tylko, Å¼e sÅ‚uÅ¼yli zÅ‚emu.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Sporo czasu minie, nim siÄ™ z tego otrzÄ…snÄ™.
 			};
 		DIA_PC_Lester_DI_UndeadDragonDead_OneTime = TRUE;
 	};
-	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Mam nadziejê, ¿e coœ takiego ju¿ nigdy siê nie powtórzy. Na ca³ym œwiecie nie ma tyle ziela, ile mam teraz ochotê wypaliæ!
+	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Mam nadziejÄ™, Å¼e coÅ› takiego juÅ¼ nigdy siÄ™ nie powtÃ³rzy. Na caÅ‚ym Å›wiecie nie ma tyle ziela, ile mam teraz ochotÄ™ wypaliÄ‡!
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");		
 };

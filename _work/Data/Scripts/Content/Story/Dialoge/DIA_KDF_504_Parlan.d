@@ -31,9 +31,9 @@ var int Parlan_Hammer; //damit es nur EINMAL kommt
 
 func void B_Parlan_HAMMER()
 {
-	AI_Output (self, other, "DIA_Parlan_HAMMER_05_00"); //Chwileczkê, mój synu.
-	AI_Output (self, other, "DIA_Parlan_HAMMER_05_01"); //Plotka g³osi, ¿e z sanktuarium skradziono bardzo cenny artefakt.
-	AI_Output (self, other, "DIA_Parlan_HAMMER_05_02"); //Nie chcê wiedzieæ nic wiêcej na ten temat. Rozumiem, ¿e wkrótce wróci on na swoje dawne miejsce.
+	AI_Output (self, other, "DIA_Parlan_HAMMER_05_00"); //ChwileczkÄ™, mÃ³j synu.
+	AI_Output (self, other, "DIA_Parlan_HAMMER_05_01"); //Plotka gÅ‚osi, Å¼e z sanktuarium skradziono bardzo cenny artefakt.
+	AI_Output (self, other, "DIA_Parlan_HAMMER_05_02"); //Nie chcÄ™ wiedzieÄ‡ nic wiÄ™cej na ten temat. Rozumiem, Å¼e wkrÃ³tce wrÃ³ci on na swoje dawne miejsce.
 	
 	Parlan_Hammer = TRUE;
 };
@@ -79,7 +79,7 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 						B_Parlan_HAMMER();
 					};
 	
-	AI_Output (self, other, "DIA_Parlan_PMSchulden_05_00"); //Pogwa³ci³eœ zasady naszego zgromadzenia.
+	AI_Output (self, other, "DIA_Parlan_PMSchulden_05_00"); //PogwaÅ‚ciÅ‚eÅ› zasady naszego zgromadzenia.
 
 	if (B_GetTotalPetzCounter(self) > Parlan_LastPetzCounter)
 	{
@@ -87,7 +87,7 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 		
 		if (Parlan_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_02"); //Twe winy zostan¹ ci odpuszczone tylko wtedy, gdy ofiarujesz pokaŸny datek na rzecz klasztoru.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_02"); //Twe winy zostanÄ… ci odpuszczone tylko wtedy, gdy ofiarujesz pokaÅºny datek na rzecz klasztoru.
 			AI_Output (other, self, "DIA_Parlan_PMAdd_15_00"); //Ile?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Parlan_LastPetzCounter);
@@ -103,41 +103,41 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_03"); //Co ty sobie wyobra¿asz? Módl siê do Innosa, by przebaczy³ ci twe wystêpki.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_03"); //Co ty sobie wyobraÅ¼asz? MÃ³dl siÄ™ do Innosa, by przebaczyÅ‚ ci twe wystÄ™pki.
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Parlan_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_04"); //Twoja sytuacja uleg³a zmianie.
+		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_04"); //Twoja sytuacja ulegÅ‚a zmianie.
 		
 		if (Parlan_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_05"); //Nie ma ju¿ œwiadków pope³nionego przez ciebie morderstwa.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_05"); //Nie ma juÅ¼ Å›wiadkÃ³w popeÅ‚nionego przez ciebie morderstwa.
 		};
 		
 		if (Parlan_LastPetzCrime == CRIME_THEFT)
 		|| ( (Parlan_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_06"); //Nikt nie chce zeznawaæ w sprawie pope³nionej przez ciebie kradzie¿y.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_06"); //Nikt nie chce zeznawaÄ‡ w sprawie popeÅ‚nionej przez ciebie kradzieÅ¼y.
 		};
 		
 		if (Parlan_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Parlan_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_07"); //Nie ma ju¿ nikogo, kto oskar¿a³by ciê o spowodowanie bójki.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_07"); //Nie ma juÅ¼ nikogo, kto oskarÅ¼aÅ‚by ciÄ™ o spowodowanie bÃ³jki.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_08"); //Wszystkie oskar¿enia wobec ciebie zosta³y wycofane.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_08"); //Wszystkie oskarÅ¼enia wobec ciebie zostaÅ‚y wycofane.
 		};
 		
-		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_09"); //Mnie mo¿esz oszukaæ - ale Innos widzi wszystko!
+		AI_Output (self, other, "DIA_Parlan_PMSchulden_05_09"); //Mnie moÅ¼esz oszukaÄ‡ - ale Innos widzi wszystko!
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_10"); //Grzechy zosta³y ci odpuszczone.
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_10"); //Grzechy zostaÅ‚y ci odpuszczone.
 			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_11"); //Nie zmarnuj tej szansy.
 	
 			Parlan_Schulden			= 0;
@@ -146,9 +146,9 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_12"); //Zap³acisz za swe grzechy - taka jest wola Innosa!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_12"); //ZapÅ‚acisz za swe grzechy - taka jest wola Innosa!
 			B_Say_Gold (self, other, Parlan_Schulden);
-			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_13"); //Uwolnij siê od swych grzechów!
+			AI_Output (self, other, "DIA_Parlan_PMSchulden_05_13"); //Uwolnij siÄ™ od swych grzechÃ³w!
 		};
 	};
 	
@@ -157,27 +157,27 @@ FUNC VOID DIA_Parlan_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Parlan_PMSchulden);
 		Info_ClearChoices  	(DIA_Parlan_PETZMASTER);
-		Info_AddChoice		(DIA_Parlan_PMSchulden,"Nie mam dostatecznie du¿o z³ota!",DIA_Parlan_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Parlan_PMSchulden,"Ile to mia³o byæ?",DIA_Parlan_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Parlan_PMSchulden,"Nie mam dostatecznie duÅ¼o zÅ‚ota!",DIA_Parlan_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Parlan_PMSchulden,"Ile to miaÅ‚o byÄ‡?",DIA_Parlan_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Parlan_Schulden)
 		{
-			Info_AddChoice 	(DIA_Parlan_PMSchulden,"Chcê zap³aciæ grzywnê!",DIA_Parlan_PETZMASTER_PayNow);
+			Info_AddChoice 	(DIA_Parlan_PMSchulden,"ChcÄ™ zapÅ‚aciÄ‡ grzywnÄ™!",DIA_Parlan_PETZMASTER_PayNow);
 		};
 	};
 };
 
 func void DIA_Parlan_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Parlan_PMSchulden_HowMuchAgain_15_00"); //Przypomnij mi, o jakiej sumie mówiliœmy.
+	AI_Output (other, self, "DIA_Parlan_PMSchulden_HowMuchAgain_15_00"); //Przypomnij mi, o jakiej sumie mÃ³wiliÅ›my.
 	B_Say_Gold (self, other, Parlan_Schulden);
 
 	Info_ClearChoices  	(DIA_Parlan_PMSchulden);
 	Info_ClearChoices  	(DIA_Parlan_PETZMASTER);
-	Info_AddChoice		(DIA_Parlan_PMSchulden,"Nie mam dostatecznie du¿o z³ota!",DIA_Parlan_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Parlan_PMSchulden,"Ile to mia³o byæ?",DIA_Parlan_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Parlan_PMSchulden,"Nie mam dostatecznie duÅ¼o zÅ‚ota!",DIA_Parlan_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Parlan_PMSchulden,"Ile to miaÅ‚o byÄ‡?",DIA_Parlan_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Parlan_Schulden)
 	{
-		Info_AddChoice 	(DIA_Parlan_PMSchulden,"Chcê zap³aciæ grzywnê!",DIA_Parlan_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Parlan_PMSchulden,"ChcÄ™ zapÅ‚aciÄ‡ grzywnÄ™!",DIA_Parlan_PETZMASTER_PayNow);
 	};
 };
 
@@ -215,59 +215,59 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 						B_Parlan_HAMMER();
 					};
 	
-	Parlan_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Parlan_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Parlan noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_00"); //Nie zamieniliœmy jeszcze ani s³owa, a ty ju¿ obarczy³eœ siê ciê¿arem winy!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_00"); //Nie zamieniliÅ›my jeszcze ani sÅ‚owa, a ty juÅ¼ obarczyÅ‚eÅ› siÄ™ ciÄ™Å¼arem winy!
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_01"); //Jesteœ winny najgorszej z mo¿liwych zbrodni! Morderstwa!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_01"); //JesteÅ› winny najgorszej z moÅ¼liwych zbrodni! Morderstwa!
 	
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Parlan_Schulden = Parlan_Schulden + 500;						//PLUS Mörder-Malus
+		Parlan_Schulden = Parlan_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
 			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_02"); //A teraz masz na sumieniu jeszcze dodatkowe grzechy!
 		};
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_03"); //Gdyby to zale¿a³o ode mnie, zosta³byœ potêpiony tu i teraz, morderco!
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_04"); //Jeœli jednak zap³acisz za swe czyny, mogê ciê rozgrzeszyæ..
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_03"); //Gdyby to zaleÅ¼aÅ‚o ode mnie, zostaÅ‚byÅ› potÄ™piony tu i teraz, morderco!
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_04"); //JeÅ›li jednak zapÅ‚acisz za swe czyny, mogÄ™ ciÄ™ rozgrzeszyÄ‡..
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_05"); //Kradzie¿ to pogwa³cenie zasad klasztoru.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_05"); //KradzieÅ¼ to pogwaÅ‚cenie zasad klasztoru.
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_06"); //Prócz tego z³ama³eœ jeszcze inne zasady.
+			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_06"); //PrÃ³cz tego zÅ‚amaÅ‚eÅ› jeszcze inne zasady.
 		};
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_07"); //Te przestêpstwa musz¹ zostaæ ukarane. Takie jest prawo Innosa.
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_08"); //Przeka¿esz klasztorowi stosowny datek.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_07"); //Te przestÄ™pstwa muszÄ… zostaÄ‡ ukarane. Takie jest prawo Innosa.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_08"); //PrzekaÅ¼esz klasztorowi stosowny datek.
 		
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_09"); //Nie tolerujemy tu ¿adnych bójek. To naruszenie panuj¹cych w klasztorze zasad.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_09"); //Nie tolerujemy tu Å¼adnych bÃ³jek. To naruszenie panujÄ…cych w klasztorze zasad.
 		
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
 			AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_10"); //Dlaczego zabijasz nasze owce?
 		};
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_11"); //¯yjemy tu, przestrzegaj¹c okreœlonych zasad. Dotycz¹ one tak¿e ciebie.
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_12"); //Za swe zbrodnie musisz z³o¿yæ ofiarê na rzecz klasztoru.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_11"); //Å»yjemy tu, przestrzegajÄ…c okreÅ›lonych zasad. DotyczÄ… one takÅ¼e ciebie.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_12"); //Za swe zbrodnie musisz zÅ‚oÅ¼yÄ‡ ofiarÄ™ na rzecz klasztoru.
 		
 		Parlan_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getötet ------
+	// ------ Schaf getÃ¶tet ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_13"); //Zabi³eœ nasze owce. Musisz zap³aciæ odpowiedni¹ rekompensatê.
+		AI_Output (self, other, "DIA_Parlan_PETZMASTER_05_13"); //ZabiÅ‚eÅ› nasze owce. Musisz zapÅ‚aciÄ‡ odpowiedniÄ… rekompensatÄ™.
 		
 		
 		Parlan_Schulden = 100;
@@ -281,18 +281,18 @@ FUNC VOID DIA_Parlan_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Parlan_PMSchulden);
 	Info_ClearChoices  	(DIA_Parlan_PETZMASTER);
-	Info_AddChoice		(DIA_Parlan_PETZMASTER,"Nie mam dostatecznie du¿o z³ota!",DIA_Parlan_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Parlan_PETZMASTER,"Nie mam dostatecznie duÅ¼o zÅ‚ota!",DIA_Parlan_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Parlan_Schulden)
 	{
-		Info_AddChoice 	(DIA_Parlan_PETZMASTER,"Chcê zap³aciæ grzywnê!",DIA_Parlan_PETZMASTER_PayNow);
+		Info_AddChoice 	(DIA_Parlan_PETZMASTER,"ChcÄ™ zapÅ‚aciÄ‡ grzywnÄ™!",DIA_Parlan_PETZMASTER_PayNow);
 	};
 };
 
 func void DIA_Parlan_PETZMASTER_PayNow()
 {
-	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayNow_15_00"); //Chcê zap³aciæ karê!
+	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayNow_15_00"); //ChcÄ™ zapÅ‚aciÄ‡ karÄ™!
 	B_GiveInvItems (other, self, itmi_gold, Parlan_Schulden);
-	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayNow_05_01"); //Przyjmujê datek. Twoje wykroczenie zostaje ci wybaczone. Niech Innos obdarzy ciê m¹droœci¹, byœ wiêcej nie grzeszy³.
+	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayNow_05_01"); //PrzyjmujÄ™ datek. Twoje wykroczenie zostaje ci wybaczone. Niech Innos obdarzy ciÄ™ mÄ…droÅ›ciÄ…, byÅ› wiÄ™cej nie grzeszyÅ‚.
 
 	B_GrantAbsolution (LOC_MONASTERY);
 	
@@ -306,9 +306,9 @@ func void DIA_Parlan_PETZMASTER_PayNow()
 
 func void DIA_Parlan_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayLater_15_00"); //Nie mam dostatecznie du¿o z³ota!
-	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_01"); //Trzeba by³o o tym pomyœleæ, zanim dopuœci³eœ siê owych wystêpków.
-	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_02"); //Mo¿e bêdzie to dla ciebie dobra nauczka. Pamiêtaj, jeœli nie bêdziesz pope³nia³ wykroczeñ, nie bêdziesz musia³ za nie p³aciæ.
+	AI_Output (other, self, "DIA_Parlan_PETZMASTER_PayLater_15_00"); //Nie mam dostatecznie duÅ¼o zÅ‚ota!
+	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_01"); //Trzeba byÅ‚o o tym pomyÅ›leÄ‡, zanim dopuÅ›ciÅ‚eÅ› siÄ™ owych wystÄ™pkÃ³w.
+	AI_Output (self, other, "DIA_Parlan_PETZMASTER_PayLater_05_02"); //MoÅ¼e bÄ™dzie to dla ciebie dobra nauczka. PamiÄ™taj, jeÅ›li nie bÄ™dziesz popeÅ‚niaÅ‚ wykroczeÅ„, nie bÄ™dziesz musiaÅ‚ za nie pÅ‚aciÄ‡.
 	
 	Parlan_LastPetzCounter 		= B_GetTotalPetzCounter(self);
 	Parlan_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -340,39 +340,39 @@ func int DIA_Parlan_WELCOME_Condition ()
 
 func void B_DIA_Parlan_WELCOME_GoForTribute ()
 {
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //Kiedy to ju¿ zrobisz, porozmawiamy na temat twojej pracy tu, w klasztorze.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //Kiedy to juÅ¼ zrobisz, porozmawiamy na temat twojej pracy tu, w klasztorze.
 };
 func void B_DIA_Parlan_WELCOME_BringTribute2Gorax ()
 {
-			AI_Output (self, other, "DIA_Addon_Parlan_WELCOME_05_00"); //Swoj¹ ofiarê na rzecz klasztoru zanieœ jak najszybciej Goraksowi. On ju¿ zadba, aby trafi³a gdzie trzeba.
+			AI_Output (self, other, "DIA_Addon_Parlan_WELCOME_05_00"); //SwojÄ… ofiarÄ™ na rzecz klasztoru zanieÅ› jak najszybciej Goraksowi. On juÅ¼ zadba, aby trafiÅ‚a gdzie trzeba.
 };
 
 func void DIA_Parlan_WELCOME_Info ()
 {
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_00"); //Witaj nowicjuszu, mam na imiê Parlan.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_00"); //Witaj nowicjuszu, mam na imiÄ™ Parlan.
 	AI_Output (other, self, "DIA_Parlan_WELCOME_15_01"); //Ja jestem...
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_02"); //...NOWICJUSZEM. To, kim by³eœ wczeœniej, nie ma znaczenia. Teraz jesteœ s³ug¹ Innosa. Tylko to siê liczy.
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_03"); //Wraz ze wst¹pieniem do Bractwa Ognia twoje wczeœniejsze winy zostan¹ ci wybaczone.
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_04"); //Niech Innos b³ogos³awi i oczyœci grzechy tego, który wstêpuje doñ na s³u¿bê.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_02"); //...NOWICJUSZEM. To, kim byÅ‚eÅ› wczeÅ›niej, nie ma znaczenia. Teraz jesteÅ› sÅ‚ugÄ… Innosa. Tylko to siÄ™ liczy.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_03"); //Wraz ze wstÄ…pieniem do Bractwa Ognia twoje wczeÅ›niejsze winy zostanÄ… ci wybaczone.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_04"); //Niech Innos bÅ‚ogosÅ‚awi i oczyÅ›ci grzechy tego, ktÃ³ry wstÄ™puje doÅ„ na sÅ‚uÅ¼bÄ™.
 	AI_Output (other, self, "DIA_Parlan_WELCOME_15_05"); //Co teraz?
-	AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //Najpierw musisz wype³niæ zadania nowicjusza. Bêdziesz pracowa³ i s³u¿y³ klasztorowi.
+	AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //Najpierw musisz wypeÅ‚niÄ‡ zadania nowicjusza. BÄ™dziesz pracowaÅ‚ i sÅ‚uÅ¼yÅ‚ klasztorowi.
 	
 	B_GrantAbsolution (LOC_ALL);
 	Snd_Play ("LEVELUP");
 	
 		Log_CreateTopic (Topic_Gemeinschaft,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Gemeinschaft,LOG_RUNNING);
-		B_LogEntry (Topic_Gemeinschaft, "Jako nowicjusz jestem zobowi¹zany s³u¿yæ spo³ecznoœci.");
+		B_LogEntry (Topic_Gemeinschaft, "Jako nowicjusz jestem zobowiÄ…zany sÅ‚uÅ¼yÄ‡ spoÅ‚ecznoÅ›ci.");
 	
 	if (Pedro_NOV_Aufnahme_LostInnosStatue_Daron == FALSE)//ADDON
 	{
 		if (Liesel_Giveaway ==  FALSE)
 		{
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //Przedtem jednak zabierz swoj¹ owcê do Opolosa, on siê ni¹ zajmie.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //Przedtem jednak zabierz swojÄ… owcÄ™ do Opolosa, on siÄ™ niÄ… zajmie.
 		};
 		if (DIA_Gorax_GOLD_perm == FALSE) 
 		{
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //Z³oto mo¿esz zanieœæ Goraxowi, naszemu ochmistrzowi. Znajdziesz go w winiarni.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //ZÅ‚oto moÅ¼esz zanieÅ›Ä‡ Goraxowi, naszemu ochmistrzowi. Znajdziesz go w winiarni.
 			B_DIA_Parlan_WELCOME_GoForTribute ();		
 		};
 	}
@@ -398,7 +398,7 @@ instance DIA_Parlan_Auge		(C_INFO)
 	condition	 = 	DIA_Parlan_Auge_Condition;
 	information	 = 	DIA_Parlan_Auge_Info;
 	permanent 	 =  FALSE; 
-	description	 =  "Poszukujê Oka Innosa.";
+	description	 =  "PoszukujÄ™ Oka Innosa.";
 };
 func int DIA_Parlan_Auge_Condition ()
 {	
@@ -409,10 +409,10 @@ func int DIA_Parlan_Auge_Condition ()
 };
 func void DIA_Parlan_Auge_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Auge_15_00"); //Poszukujê Oka Innosa.
-	AI_Output (self, other, "DIA_Parlan_Auge_05_01"); //Nie wiem, kto ci o nim powiedzia³, ale nikt nie ma dostêpu do boskiego artefaktu.
+	AI_Output (other, self, "DIA_Parlan_Auge_15_00"); //PoszukujÄ™ Oka Innosa.
+	AI_Output (self, other, "DIA_Parlan_Auge_05_01"); //Nie wiem, kto ci o nim powiedziaÅ‚, ale nikt nie ma dostÄ™pu do boskiego artefaktu.
 	AI_Output (other, self, "DIA_Parlan_Auge_15_02"); //Gdzie przechowywane jest Oko Innosa?
-	AI_Output (self, other, "DIA_Parlan_Auge_05_03"); //Im mniej osób zna ten sekret, tym bezpieczniejsze jest Oko. Mo¿esz sobie oszczêdziæ wysi³ku - i tak go nie odnajdziesz.
+	AI_Output (self, other, "DIA_Parlan_Auge_05_03"); //Im mniej osÃ³b zna ten sekret, tym bezpieczniejsze jest Oko. MoÅ¼esz sobie oszczÄ™dziÄ‡ wysiÅ‚ku - i tak go nie odnajdziesz.
 };
 
 
@@ -426,7 +426,7 @@ instance DIA_Parlan_Amulett		(C_INFO)
 	condition	 = 	DIA_Parlan_Amulett_Condition;
 	information	 = 	DIA_Parlan_Amulett_Info;
 	permanent 	 =  FALSE; 
-	description	 =  "Powiedz mi coœ o Oku Innosa.";
+	description	 =  "Powiedz mi coÅ› o Oku Innosa.";
 };
 func int DIA_Parlan_Amulett_Condition ()
 {	
@@ -438,9 +438,9 @@ func int DIA_Parlan_Amulett_Condition ()
 };
 func void DIA_Parlan_Amulett_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Amulett_15_00"); //Powiedz mi coœ o Oku Innosa.
-	AI_Output (self, other, "DIA_Parlan_Amulett_05_01"); //Dobrze. Oko Innosa zawiera w sobie cz¹stkê jego boskiej mocy. Tylko JEDEN wybrany s³uga Innosa mo¿e nosiæ ten amulet.
-	AI_Output (self, other, "DIA_Parlan_Amulett_05_02"); //Zosta³ on stworzony, by ochroniæ nas przed mocami Z³a, kiedy nadejdzie w³aœciwy moment.
+	AI_Output (other, self, "DIA_Parlan_Amulett_15_00"); //Powiedz mi coÅ› o Oku Innosa.
+	AI_Output (self, other, "DIA_Parlan_Amulett_05_01"); //Dobrze. Oko Innosa zawiera w sobie czÄ…stkÄ™ jego boskiej mocy. Tylko JEDEN wybrany sÅ‚uga Innosa moÅ¼e nosiÄ‡ ten amulet.
+	AI_Output (self, other, "DIA_Parlan_Amulett_05_02"); //ZostaÅ‚ on stworzony, by ochroniÄ‡ nas przed mocami ZÅ‚a, kiedy nadejdzie wÅ‚aÅ›ciwy moment.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hagen
@@ -452,7 +452,7 @@ instance DIA_Parlan_Hagen		(C_INFO)
 	condition	 = 	DIA_Parlan_Hagen_Condition;
 	information	 = 	DIA_Parlan_Hagen_Info;
 	permanent 	 =  FALSE; 
-	description	 =  "Muszê porozmawiaæ z dowódc¹ paladynów!";
+	description	 =  "MuszÄ™ porozmawiaÄ‡ z dowÃ³dcÄ… paladynÃ³w!";
 };
 func int DIA_Parlan_Hagen_Condition ()
 {	
@@ -464,8 +464,8 @@ func int DIA_Parlan_Hagen_Condition ()
 };
 func void DIA_Parlan_Hagen_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Hagen_15_00"); //Muszê porozmawiaæ z dowódc¹ paladynów!
-	AI_Output (self, other, "DIA_Parlan_Hagen_05_01"); //Lord Hagen nie przyjmuje nowicjuszy, jedynie my, magowie, mamy prawo siê z nim widzieæ.
+	AI_Output (other, self, "DIA_Parlan_Hagen_15_00"); //MuszÄ™ porozmawiaÄ‡ z dowÃ³dcÄ… paladynÃ³w!
+	AI_Output (self, other, "DIA_Parlan_Hagen_05_01"); //Lord Hagen nie przyjmuje nowicjuszy, jedynie my, magowie, mamy prawo siÄ™ z nim widzieÄ‡.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WORK
@@ -477,7 +477,7 @@ instance DIA_Parlan_WORK		(C_INFO)
 	condition	 = 	DIA_Parlan_WORK_Condition;
 	information	 = 	DIA_Parlan_WORK_Info;
 	permanent	 =  TRUE;
-	description	 = 	"W jaki sposób móg³bym s³u¿yæ zgromadzeniu?";
+	description	 = 	"W jaki sposÃ³b mÃ³gÅ‚bym sÅ‚uÅ¼yÄ‡ zgromadzeniu?";
 };
 //------------------------------------
 var int DIA_Parlan_WORK_perm;
@@ -494,17 +494,17 @@ func int DIA_Parlan_WORK_Condition ()
 };
 func void DIA_Parlan_WORK_Info ()
 {
-	AI_Output			(other, self, "DIA_Parlan_WORK_15_00"); //W jaki sposób móg³bym s³u¿yæ zgromadzeniu?
+	AI_Output			(other, self, "DIA_Parlan_WORK_15_00"); //W jaki sposÃ³b mÃ³gÅ‚bym sÅ‚uÅ¼yÄ‡ zgromadzeniu?
 	
 	//HACK
 	if (Liesel_Giveaway ==  FALSE)
 	|| (DIA_Gorax_GOLD_perm == FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //Najpierw musisz wype³niæ zadania nowicjusza. Bêdziesz pracowa³ i s³u¿y³ klasztorowi.
+		AI_Output (self, other, "DIA_Parlan_WELCOME_05_06"); //Najpierw musisz wypeÅ‚niÄ‡ zadania nowicjusza. BÄ™dziesz pracowaÅ‚ i sÅ‚uÅ¼yÅ‚ klasztorowi.
 		
 		if 	(Liesel_Giveaway ==  FALSE)
 		{
-			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //Przedtem jednak zabierz swoj¹ owcê do Opolosa, on siê ni¹ zajmie.
+			AI_Output (self, other, "DIA_Parlan_WELCOME_05_07"); //Przedtem jednak zabierz swojÄ… owcÄ™ do Opolosa, on siÄ™ niÄ… zajmie.
 		};
 		if  (DIA_Gorax_GOLD_perm == FALSE)
 		{
@@ -517,8 +517,8 @@ func void DIA_Parlan_WORK_Info ()
 				//ADDON<
 				else
 				{	
-					AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //Z³oto mo¿esz zanieœæ Goraxowi, naszemu ochmistrzowi. Znajdziesz go w winiarni.
-					AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //Kiedy to ju¿ zrobisz, porozmawiamy na temat twojej pracy tu, w klasztorze.
+					AI_Output (self, other, "DIA_Parlan_WELCOME_05_08"); //ZÅ‚oto moÅ¼esz zanieÅ›Ä‡ Goraxowi, naszemu ochmistrzowi. Znajdziesz go w winiarni.
+					AI_Output (self, other, "DIA_Parlan_WELCOME_05_09"); //Kiedy to juÅ¼ zrobisz, porozmawiamy na temat twojej pracy tu, w klasztorze.
 				};
 		};
 		
@@ -526,19 +526,19 @@ func void DIA_Parlan_WORK_Info ()
 	}
 	else if Wld_IsTime (22,00,07,30)
 	{
-		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_01"); //W tej chwili obowi¹zuje cisza nocna. Praca nowicjuszy zaczyna siê o œwicie, a koñczy o zmierzchu.
-		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_02"); //Ty te¿ powinieneœ udaæ siê na spoczynek. Wróæ do mnie, kiedy rozpoczn¹ siê godziny pracy.
+		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_01"); //W tej chwili obowiÄ…zuje cisza nocna. Praca nowicjuszy zaczyna siÄ™ o Å›wicie, a koÅ„czy o zmierzchu.
+		AI_Output (self, other, "DIA_Parlan_WORK_NIGHT_05_02"); //Ty teÅ¼ powinieneÅ› udaÄ‡ siÄ™ na spoczynek. WrÃ³Ä‡ do mnie, kiedy rozpocznÄ… siÄ™ godziny pracy.
 		
 		AI_StopProcessInfos (self);
 	} 
 	else
 	{
 		AI_Output (self, other, "DIA_Parlan_WORK_05_03"); //Porozmawiaj z innymi magami, dostaniesz od nich zadania.
-		AI_Output (self, other, "DIA_Parlan_WORK_05_04"); //Bêdê nadzorowa³ twoj¹ pracê. Kiedy wype³nisz wszystkie swoje obowi¹zki, otrzymasz pozwolenie na wejœcie do biblioteki, by studiowaæ s³owo Innosa.
+		AI_Output (self, other, "DIA_Parlan_WORK_05_04"); //BÄ™dÄ™ nadzorowaÅ‚ twojÄ… pracÄ™. Kiedy wypeÅ‚nisz wszystkie swoje obowiÄ…zki, otrzymasz pozwolenie na wejÅ›cie do biblioteki, by studiowaÄ‡ sÅ‚owo Innosa.
 		
 		DIA_Parlan_WORK_perm = TRUE;
 		MIS_KlosterArbeit = LOG_RUNNING; 
-		B_LogEntry (Topic_Gemeinschaft, "Jeœli wykonam wszystkie polecenia magów, bêdê móg³ korzystaæ z biblioteki.");
+		B_LogEntry (Topic_Gemeinschaft, "JeÅ›li wykonam wszystkie polecenia magÃ³w, bÄ™dÄ™ mÃ³gÅ‚ korzystaÄ‡ z biblioteki.");
 	
 	};
 };
@@ -552,7 +552,7 @@ instance DIA_Parlan_Stand		(C_INFO)
 	condition	 = 	DIA_Parlan_Stand_Condition;
 	information	 = 	DIA_Parlan_Stand_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Czy mogê skorzystaæ z biblioteki?";
+	description	 = 	"Czy mogÄ™ skorzystaÄ‡ z biblioteki?";
 };
 func int DIA_Parlan_Stand_Condition ()
 {
@@ -566,50 +566,50 @@ func void DIA_Parlan_Stand_Info ()
 {
 	Kloster_Punkte = 0;
 	
-	AI_Output (other, self, "DIA_Parlan_Stand_15_00"); //Mogê skorzystaæ z biblioteki?
+	AI_Output (other, self, "DIA_Parlan_Stand_15_00"); //MogÄ™ skorzystaÄ‡ z biblioteki?
 	
 	if (MIS_NeorasPflanzen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_01"); //Uda³o ci siê zdobyæ ogniste pokrzywy dla Brata Neorasa.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_01"); //UdaÅ‚o ci siÄ™ zdobyÄ‡ ogniste pokrzywy dla Brata Neorasa.
 		Kloster_Punkte = (Kloster_Punkte + 2);
 	};
 	if (MIS_Neorasrezept == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_02"); //Odnalaz³eœ receptury Brata Neorasa.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_02"); //OdnalazÅ‚eÅ› receptury Brata Neorasa.
 		Kloster_Punkte = (Kloster_Punkte + 2);
 	};
 	if (MIS_IsgarothWolf == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_03"); //Pozby³eœ siê czarnego wilka, który zagra¿a³ kaplicy.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_03"); //PozbyÅ‚eÅ› siÄ™ czarnego wilka, ktÃ³ry zagraÅ¼aÅ‚ kaplicy.
 		Kloster_Punkte = (Kloster_Punkte + 1);
 	};
 	if (MIS_ParlanFegen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_04"); //Znalaz³eœ czterech nowicjuszy, dziêki czemu mog³eœ posprz¹taæ komnaty.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_04"); //ZnalazÅ‚eÅ› czterech nowicjuszy, dziÄ™ki czemu mogÅ‚eÅ› posprzÄ…taÄ‡ komnaty.
 		Kloster_Punkte = (Kloster_Punkte + 3);
 	};
 	if (MIS_GoraxEssen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_05"); //Sprawiedliwie rozdzieli³eœ jad³o miêdzy nowicjuszy, tak jak prosi³ ciê o to brat Gorax.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_05"); //Sprawiedliwie rozdzieliÅ‚eÅ› jadÅ‚o miÄ™dzy nowicjuszy, tak jak prosiÅ‚ ciÄ™ o to brat Gorax.
 		Kloster_Punkte = (Kloster_Punkte + 1);
 	}
 	else if (MIS_GoraxEssen == LOG_FAILED)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_06"); //Gorax nie by³ z ciebie zadowolony, nie uda³o ci siê sprawiedliwie rozdzieliæ jedzenia.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_06"); //Gorax nie byÅ‚ z ciebie zadowolony, nie udaÅ‚o ci siÄ™ sprawiedliwie rozdzieliÄ‡ jedzenia.
 	};	
 	if (MIS_GoraxWein == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_07"); //Ku radoœci Goraxa sprzeda³eœ wino.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_07"); //Ku radoÅ›ci Goraxa sprzedaÅ‚eÅ› wino.
 		Kloster_Punkte = (Kloster_Punkte + 1);
 	}
 	else if (MIS_GoraxWein == LOG_FAILED)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_08"); //Nie mówmy ju¿ o tej sprawie z winem, tak chyba bêdzie najlepiej...
+		AI_Output (self, other, "DIA_Parlan_Stand_05_08"); //Nie mÃ³wmy juÅ¼ o tej sprawie z winem, tak chyba bÄ™dzie najlepiej...
 	};	
 	
 	if (Kloster_Punkte >= 8)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_09"); //Tak, wykona³eœ dostatecznie du¿o zadañ. Czas postudiowaæ nauki Innosa. Porozmawiaj proszê z Mistrzem Hyglasem, znajdziesz go w bibliotece.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_09"); //Tak, wykonaÅ‚eÅ› dostatecznie duÅ¼o zadaÅ„. Czas postudiowaÄ‡ nauki Innosa. Porozmawiaj proszÄ™ z Mistrzem Hyglasem, znajdziesz go w bibliotece.
 		AI_Output (self, other, "DIA_Parlan_Stand_05_10"); //Przyjmij ten oto klucz.
 		Parlan_Erlaubnis = TRUE;
 		MIS_KlosterArbeit = LOG_SUCCESS;
@@ -651,11 +651,11 @@ func void DIA_Parlan_Stand_Info ()
 	}
 	else if (Kloster_Punkte >= 1)
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_11"); //Zaiste sporo siê napracowa³eœ, wci¹¿ jednak musisz s³u¿yæ zgromadzeniu.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_11"); //Zaiste sporo siÄ™ napracowaÅ‚eÅ›, wciÄ…Å¼ jednak musisz sÅ‚uÅ¼yÄ‡ zgromadzeniu.
 	}
 	else  //0 Punkte
 	{
-		AI_Output (self, other, "DIA_Parlan_Stand_05_12"); //Najpierw wype³nij obowi¹zki na rzecz zgromadzenia. Kiedy skoñczysz, wrócimy do tej rozmowy.
+		AI_Output (self, other, "DIA_Parlan_Stand_05_12"); //Najpierw wypeÅ‚nij obowiÄ…zki na rzecz zgromadzenia. Kiedy skoÅ„czysz, wrÃ³cimy do tej rozmowy.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -668,7 +668,7 @@ instance DIA_Parlan_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Parlan_Aufgabe_Condition;
 	information	 = 	DIA_Parlan_Aufgabe_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Czy masz dla mnie jakieœ zadanie?";
+	description	 = 	"Czy masz dla mnie jakieÅ› zadanie?";
 };
 
 func int DIA_Parlan_Aufgabe_Condition ()
@@ -680,17 +680,17 @@ func int DIA_Parlan_Aufgabe_Condition ()
 };
 func void DIA_Parlan_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_00"); //Czy masz dla mnie jakieœ zadanie?
-	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_01"); //Hmmm... Tak, w rzeczy samej, jest coœ, co mo¿esz zrobiæ dla dobra zgromadzenia.
-	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_02"); //Komnatom nowicjuszy przyda³oby siê porz¹dne zamiatanie. Zajmij siê tym.
-	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_03"); //Przecie¿ to potrwa wieki...
-	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_04"); //Chyba wiêc najlepiej bêdzie zacz¹æ od razu, prawda?
+	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_00"); //Czy masz dla mnie jakieÅ› zadanie?
+	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_01"); //Hmmm... Tak, w rzeczy samej, jest coÅ›, co moÅ¼esz zrobiÄ‡ dla dobra zgromadzenia.
+	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_02"); //Komnatom nowicjuszy przydaÅ‚oby siÄ™ porzÄ…dne zamiatanie. Zajmij siÄ™ tym.
+	AI_Output (other, self, "DIA_Parlan_Aufgabe_15_03"); //PrzecieÅ¼ to potrwa wieki...
+	AI_Output (self, other, "DIA_Parlan_Aufgabe_05_04"); //Chyba wiÄ™c najlepiej bÄ™dzie zaczÄ…Ä‡ od razu, prawda?
 	
 	MIS_ParlanFegen = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_ParlanFegen,LOG_MISSION);
 	Log_SetTopicStatus (Topic_ParlanFegen,LOG_RUNNING);
-	B_LogEntry 	(Topic_ParlanFegen,"Mistrz Parlan chce, abym posprz¹ta³ komnaty czterech nowicjuszy. To zajmie ca³e wieki."); 
+	B_LogEntry 	(Topic_ParlanFegen,"Mistrz Parlan chce, abym posprzÄ…taÅ‚ komnaty czterech nowicjuszy. To zajmie caÅ‚e wieki."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info alle sind am Fegen 
@@ -702,7 +702,7 @@ instance DIA_Parlan_Fegen		(C_INFO)
 	condition	 = 	DIA_Parlan_Fegen_Condition;
 	information	 = 	DIA_Parlan_Fegen_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Jeœli chodzi o komnaty nowicjuszy...";
+	description	 = 	"JeÅ›li chodzi o komnaty nowicjuszy...";
 };
 //------------------------------------
 var int DIA_Parlan_Fegen_permanent; 
@@ -717,12 +717,12 @@ func int DIA_Parlan_Fegen_Condition ()
 };
 func void DIA_Parlan_Fegen_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_Fegen_15_00"); //Jeœli chodzi o komnaty nowicjuszy...
+	AI_Output (other, self, "DIA_Parlan_Fegen_15_00"); //JeÅ›li chodzi o komnaty nowicjuszy...
 	
 	if (NOV_Helfer >= 4)
 	{
-		AI_Output (self, other, "DIA_Parlan_Fegen_05_01"); //Widzê, ¿e uda³o ci siê znaleŸæ czterech pomocników. Myœlê, ¿e teraz mog¹ wróciæ do swych obowi¹zków.
-		AI_Output (self, other, "DIA_Parlan_Fegen_05_02"); //Dobra robota, nowicjuszu. Wype³ni³eœ powierzone ci przeze mnie zadanie.
+		AI_Output (self, other, "DIA_Parlan_Fegen_05_01"); //WidzÄ™, Å¼e udaÅ‚o ci siÄ™ znaleÅºÄ‡ czterech pomocnikÃ³w. MyÅ›lÄ™, Å¼e teraz mogÄ… wrÃ³ciÄ‡ do swych obowiÄ…zkÃ³w.
+		AI_Output (self, other, "DIA_Parlan_Fegen_05_02"); //Dobra robota, nowicjuszu. WypeÅ‚niÅ‚eÅ› powierzone ci przeze mnie zadanie.
 		MIS_ParlanFegen = LOG_SUCCESS; 
 		B_GivePlayerXP (XP_ParlanFegen);
 		DIA_Parlan_Fegen_permanent = TRUE;
@@ -734,7 +734,7 @@ func void DIA_Parlan_Fegen_Info ()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Parlan_Fegen_05_03"); //Niew¹tpliwie zadanie to nie nale¿y do ³atwych, jednak z pomoc¹ Innosa dasz sobie radê.
+		AI_Output (self, other, "DIA_Parlan_Fegen_05_03"); //NiewÄ…tpliwie zadanie to nie naleÅ¼y do Å‚atwych, jednak z pomocÄ… Innosa dasz sobie radÄ™.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -747,7 +747,7 @@ instance DIA_Parlan_LEARN		(C_INFO)
 	condition	 = 	DIA_Parlan_LEARN_Condition;
 	information	 = 	DIA_Parlan_LEARN_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Jak móg³bym siê nauczyæ sztuk magicznych?";
+	description	 = 	"Jak mÃ³gÅ‚bym siÄ™ nauczyÄ‡ sztuk magicznych?";
 };
 
 func int DIA_Parlan_LEARN_Condition ()
@@ -760,11 +760,11 @@ func int DIA_Parlan_LEARN_Condition ()
 };
 func void DIA_Parlan_LEARN_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_LEARN_15_00"); //Jak móg³bym siê nauczyæ sztuk magicznych?
-	AI_Output (self, other, "DIA_Parlan_LEARN_05_01"); //Nie jesteœ tu, by uczyæ siê magii, lecz by s³u¿yæ Innosowi.
-	AI_Output (self, other, "DIA_Parlan_LEARN_05_02"); //Mogê ci jednak pokazaæ, jak zwiêkszyæ swe magiczne moce.
+	AI_Output (other, self, "DIA_Parlan_LEARN_15_00"); //Jak mÃ³gÅ‚bym siÄ™ nauczyÄ‡ sztuk magicznych?
+	AI_Output (self, other, "DIA_Parlan_LEARN_05_01"); //Nie jesteÅ› tu, by uczyÄ‡ siÄ™ magii, lecz by sÅ‚uÅ¼yÄ‡ Innosowi.
+	AI_Output (self, other, "DIA_Parlan_LEARN_05_02"); //MogÄ™ ci jednak pokazaÄ‡, jak zwiÄ™kszyÄ‡ swe magiczne moce.
 	
-	B_LogEntry (Topic_KlosterTeacher,"Mistrz Parlan mo¿e mi pomóc w doskonaleniu moich zdolnoœci magicznych.");
+	B_LogEntry (Topic_KlosterTeacher,"Mistrz Parlan moÅ¼e mi pomÃ³c w doskonaleniu moich zdolnoÅ›ci magicznych.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info KNOWSJUDGE
@@ -776,7 +776,7 @@ instance DIA_Parlan_KNOWSJUDGE		(C_INFO)
 	condition	 = 	DIA_Parlan_KNOWSJUDGE_Condition;
 	information	 = 	DIA_Parlan_KNOWSJUDGE_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Chcê siê poddaæ Próbie Ognia.";
+	description	 = 	"ChcÄ™ siÄ™ poddaÄ‡ PrÃ³bie Ognia.";
 };
 func int DIA_Parlan_KNOWSJUDGE_Condition ()
 {	
@@ -789,12 +789,12 @@ func int DIA_Parlan_KNOWSJUDGE_Condition ()
 };
 func void DIA_Parlan_KNOWSJUDGE_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_00"); //Chcê siê poddaæ Próbie Ognia.
-	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_01"); //Co...? Hm... Mówisz powa¿nie?
+	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_00"); //ChcÄ™ siÄ™ poddaÄ‡ PrÃ³bie Ognia.
+	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_01"); //Co...? Hm... MÃ³wisz powaÅ¼nie?
 	AI_Output (other, self, "DIA_Parlan_KNOWSJUDGE_15_02"); //Nalegam.
-	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_03"); //Wyj¹tkowy z ciebie nowicjusz. W porz¹dku, jeœli mówisz powa¿nie, porozmawiaj z mistrzem Pyrokarem.
+	AI_Output (self, other, "DIA_Parlan_KNOWSJUDGE_05_03"); //WyjÄ…tkowy z ciebie nowicjusz. W porzÄ…dku, jeÅ›li mÃ³wisz powaÅ¼nie, porozmawiaj z mistrzem Pyrokarem.
 	
-	B_LogEntry (TOPIC_FireContest,"Jeœli chcê siê podj¹æ Próby Ognia, powinienem porozmawiaæ z Mistrzem Pyrokarem.");
+	B_LogEntry (TOPIC_FireContest,"JeÅ›li chcÄ™ siÄ™ podjÄ…Ä‡ PrÃ³by Ognia, powinienem porozmawiaÄ‡ z Mistrzem Pyrokarem.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH_MANA
@@ -806,7 +806,7 @@ instance DIA_Parlan_TEACH_MANA		(C_INFO)
 	condition	 = 	DIA_Parlan_TEACH_MANA_Condition;
 	information	 = 	DIA_Parlan_TEACH_MANA_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chcê zwiêkszyæ moj¹ magiczn¹ moc.";
+	description	 = 	"ChcÄ™ zwiÄ™kszyÄ‡ mojÄ… magicznÄ… moc.";
 };
 func int DIA_Parlan_TEACH_MANA_Condition ()
 {	
@@ -821,7 +821,7 @@ func int DIA_Parlan_TEACH_MANA_Condition ()
 };
 func void DIA_Parlan_TEACH_MANA_Info ()
 {
-		AI_Output (other, self, "DIA_Parlan_TEACH_MANA_15_00"); //Chcia³bym powiêkszyæ swoje magiczne zdolnoœci.
+		AI_Output (other, self, "DIA_Parlan_TEACH_MANA_15_00"); //ChciaÅ‚bym powiÄ™kszyÄ‡ swoje magiczne zdolnoÅ›ci.
 		
 		Info_ClearChoices   (DIA_Parlan_TEACH_MANA);	
 		Info_AddChoice 		(DIA_Parlan_TEACH_MANA,DIALOG_BACK,DIA_Parlan_TEACH_MANA_BACK);		
@@ -832,8 +832,8 @@ FUNC VOID DIA_Parlan_TEACH_MANA_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)  
 	{
-		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_00"); //Twoja magiczna moc wzros³a. Wiêcej nie mogê ci ju¿ pomóc.
-		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_01"); //Jeœli pragniesz nauczyæ siê wiêcej, porozmawiaj z Pyrokarem.
+		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_00"); //Twoja magiczna moc wzrosÅ‚a. WiÄ™cej nie mogÄ™ ci juÅ¼ pomÃ³c.
+		AI_Output (self, other, "DIA_Parlan_TEACH_MANA_05_01"); //JeÅ›li pragniesz nauczyÄ‡ siÄ™ wiÄ™cej, porozmawiaj z Pyrokarem.
 		Parlan_Sends = TRUE;
 	};
 	
@@ -879,9 +879,9 @@ func int DIA_Parlan_MAGE_Condition ()
 };
 func void DIA_Parlan_MAGE_Info ()
 {
-	AI_Output (self, other, "DIA_Parlan_MAGE_05_00"); //Z³o¿y³eœ przysiêgê, Bracie. Witaj w naszych szeregach.
-	AI_Output (self, other, "DIA_Parlan_MAGE_05_01"); //O krêgach magii opowiem ci, kiedy zdobêdziesz wiêksze doœwiadczenie.
-	AI_Output (self, other, "DIA_Parlan_MAGE_05_02"); //WeŸ ten kamieñ runiczny, to znak twojej mocy.
+	AI_Output (self, other, "DIA_Parlan_MAGE_05_00"); //ZÅ‚oÅ¼yÅ‚eÅ› przysiÄ™gÄ™, Bracie. Witaj w naszych szeregach.
+	AI_Output (self, other, "DIA_Parlan_MAGE_05_01"); //O krÄ™gach magii opowiem ci, kiedy zdobÄ™dziesz wiÄ™ksze doÅ›wiadczenie.
+	AI_Output (self, other, "DIA_Parlan_MAGE_05_02"); //WeÅº ten kamieÅ„ runiczny, to znak twojej mocy.
 	
 	B_GiveInvItems (self, other, Itmi_RunebLank,1);
 };
@@ -895,7 +895,7 @@ instance DIA_Parlan_CIRCLE1		(C_INFO)
 	condition	 = 	DIA_Parlan_CIRCLE1_Condition;
 	information	 = 	DIA_Parlan_CIRCLE1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"WprowadŸ mnie proszê do pierwszego krêgu magii.";
+	description	 = 	"WprowadÅº mnie proszÄ™ do pierwszego krÄ™gu magii.";
 };
 func int DIA_Parlan_CIRCLE1_Condition ()
 {	
@@ -908,13 +908,13 @@ func int DIA_Parlan_CIRCLE1_Condition ()
 };
 func void DIA_Parlan_CIRCLE1_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE1_15_00"); //WprowadŸ mnie proszê do pierwszego krêgu magii.
+	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE1_15_00"); //WprowadÅº mnie proszÄ™ do pierwszego krÄ™gu magii.
 	
 	if B_TeachMagicCircle (self, other, 1)
 	{
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_01"); //Magia pierwszego krêgu pozwala na u¿ywanie stworzonych przez siebie run.
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_02"); //Mo¿esz nauczyæ siê magicznych formu³ i samemu tworzyæ runy.
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_03"); //Ka¿dy z nas specjalizuje siê w jakimœ rodzaju magii. Zastanów siê wiêc dok³adnie, który z nich wybierzesz dla siebie.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_01"); //Magia pierwszego krÄ™gu pozwala na uÅ¼ywanie stworzonych przez siebie run.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_02"); //MoÅ¼esz nauczyÄ‡ siÄ™ magicznych formuÅ‚ i samemu tworzyÄ‡ runy.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE1_05_03"); //KaÅ¼dy z nas specjalizuje siÄ™ w jakimÅ› rodzaju magii. ZastanÃ³w siÄ™ wiÄ™c dokÅ‚adnie, ktÃ³ry z nich wybierzesz dla siebie.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -927,7 +927,7 @@ instance DIA_Parlan_CIRCLE2		(C_INFO)
 	condition	 = 	DIA_Parlan_CIRCLE2_Condition;
 	information	 = 	DIA_Parlan_CIRCLE2_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"WprowadŸ mnie w tajniki drugiego krêgu magii.";
+	description	 = 	"WprowadÅº mnie w tajniki drugiego krÄ™gu magii.";
 };
 func int DIA_Parlan_CIRCLE2_Condition ()
 {	
@@ -940,20 +940,20 @@ func int DIA_Parlan_CIRCLE2_Condition ()
 };
 func void DIA_Parlan_CIRCLE2_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE2_15_00"); //WprowadŸ mnie w tajniki drugiego krêgu magii.
+	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE2_15_00"); //WprowadÅº mnie w tajniki drugiego krÄ™gu magii.
 	
 	if (Kapitel >= 2)
 	{
 		if B_TeachMagicCircle (self, other, 2)
 		{
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_01"); //Poznasz teraz drugi kr¹g i nauczysz siê pos³ugiwaæ jeszcze potê¿niejsz¹ magi¹.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_02"); //Pamiêtaj jednak o spoczywaj¹cej na tobie odpowiedzialnoœci. Nie wobec mnie czy Pyrokara - wobec samego Innosa.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_03"); //To on wskazuje kierunek, jednak twoje czyny kszta³tuj¹ œcie¿kê, po której st¹pasz.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_01"); //Poznasz teraz drugi krÄ…g i nauczysz siÄ™ posÅ‚ugiwaÄ‡ jeszcze potÄ™Å¼niejszÄ… magiÄ….
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_02"); //PamiÄ™taj jednak o spoczywajÄ…cej na tobie odpowiedzialnoÅ›ci. Nie wobec mnie czy Pyrokara - wobec samego Innosa.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_03"); //To on wskazuje kierunek, jednak twoje czyny ksztaÅ‚tujÄ… Å›cieÅ¼kÄ™, po ktÃ³rej stÄ…pasz.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_04"); //Nie nadszed³ jeszcze czas.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE2_05_04"); //Nie nadszedÅ‚ jeszcze czas.
 	};
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -966,7 +966,7 @@ instance DIA_Parlan_CIRCLE3		(C_INFO)
 	condition	 = 	DIA_Parlan_CIRCLE3_Condition;
 	information	 = 	DIA_Parlan_CIRCLE3_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"WprowadŸ mnie w tajniki trzeciego krêgu magii.";
+	description	 = 	"WprowadÅº mnie w tajniki trzeciego krÄ™gu magii.";
 };
 func int DIA_Parlan_CIRCLE3_Condition ()
 {	
@@ -979,22 +979,22 @@ func int DIA_Parlan_CIRCLE3_Condition ()
 };
 func void DIA_Parlan_CIRCLE3_Info ()
 {
-	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE3_15_00"); //WprowadŸ mnie w tajniki trzeciego krêgu magii.
+	AI_Output (other, self, "DIA_Parlan_TECH_CIRCLE3_15_00"); //WprowadÅº mnie w tajniki trzeciego krÄ™gu magii.
 	
 	if (Kapitel >= 3)
 	{
 		if B_TeachMagicCircle (self, other, 3)
 		{
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_01"); //Tak, najwy¿szy czas, byœ pozna³ trzeci kr¹g magii. Czekaj¹ na ciebie nowe zaklêcia.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_02"); //Bêdziesz ich potrzebowa³. Z³o nie œpi, a jedynie potêga Innosa mo¿e je pokonaæ.
-			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_03"); //Przekaza³em ci ju¿ wiedzê z zakresu wszystkich krêgów, jakie znam. Jeœli pragniesz poznaæ magiê wy¿szych Krêgów, porozmawiaj z Karasem.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_01"); //Tak, najwyÅ¼szy czas, byÅ› poznaÅ‚ trzeci krÄ…g magii. CzekajÄ… na ciebie nowe zaklÄ™cia.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_02"); //BÄ™dziesz ich potrzebowaÅ‚. ZÅ‚o nie Å›pi, a jedynie potÄ™ga Innosa moÅ¼e je pokonaÄ‡.
+			AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_03"); //PrzekazaÅ‚em ci juÅ¼ wiedzÄ™ z zakresu wszystkich krÄ™gÃ³w, jakie znam. JeÅ›li pragniesz poznaÄ‡ magiÄ™ wyÅ¼szych KrÄ™gÃ³w, porozmawiaj z Karasem.
 			
-			B_LogEntry (Topic_KlosterTeacher,"Brat Parlan zapozna³ mnie z pierwszymi trzema krêgami. Dalsze postêpy mogê poczyniæ dziêki Bratu Karrasowi.");
+			B_LogEntry (Topic_KlosterTeacher,"Brat Parlan zapoznaÅ‚ mnie z pierwszymi trzema krÄ™gami. Dalsze postÄ™py mogÄ™ poczyniÄ‡ dziÄ™ki Bratu Karrasowi.");
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_04"); //Nie nadszed³ jeszcze czas na to, byœ móg³ wkroczyæ do trzeciego krêgu.
+		AI_Output (self, other, "DIA_Parlan_TECH_CIRCLE3_05_04"); //Nie nadszedÅ‚ jeszcze czas na to, byÅ› mÃ³gÅ‚ wkroczyÄ‡ do trzeciego krÄ™gu.
 	};
 };		
 ///////////////////////////////////////////////////////////////////////
@@ -1076,7 +1076,7 @@ func void DIA_Parlan_TEACH_Info ()
 	};
 	if (abletolearn < 1)
 	{
-		AI_Output (self, other, "DIA_Parlan_TEACH_05_01"); //W tej chwili nie nauczê ciê ¿adnych nowych formu³.
+		AI_Output (self, other, "DIA_Parlan_TEACH_05_01"); //W tej chwili nie nauczÄ™ ciÄ™ Å¼adnych nowych formuÅ‚.
 	};
 };
 FUNC VOID DIA_Parlan_TEACH_BACK()
@@ -1154,7 +1154,7 @@ FUNC VOID DIA_Parlan_Kap2_EXIT_Info()
 
 func void B_Parlan_Exit()
 {
-	AI_Output (self ,other,"DIA_Parlan_EXIT_05_00"); //Niech Innos ciê prowadzi.
+	AI_Output (self ,other,"DIA_Parlan_EXIT_05_00"); //Niech Innos ciÄ™ prowadzi.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1214,18 +1214,18 @@ FUNC VOID DIA_Parlan_IAmParlan_Info()
 {
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_00"); //Widzê, ¿e zdecydowa³eœ siê walczyæ po naszej stronie. Cieszy mnie to.
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_01"); //Przyda nam siê ka¿da pomoc! Powinieneœ od razu udaæ siê do Marduka, to on przygotowuje paladynów do walki.
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_00"); //WidzÄ™, Å¼e zdecydowaÅ‚eÅ› siÄ™ walczyÄ‡ po naszej stronie. Cieszy mnie to.
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_01"); //Przyda nam siÄ™ kaÅ¼da pomoc! PowinieneÅ› od razu udaÄ‡ siÄ™ do Marduka, to on przygotowuje paladynÃ³w do walki.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_02"); //Nie wiem, kto ciê wpuœci³ do klasztoru. Jestem Parlan, opiekujê siê nowicjuszami.
-		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_03"); //Nie ¿yczê sobie, by ktoœ odrywa³ ich od zajêæ, i drêczy³ niem¹drymi pytaniami, zrozumiano?
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_02"); //Nie wiem, kto ciÄ™ wpuÅ›ciÅ‚ do klasztoru. Jestem Parlan, opiekujÄ™ siÄ™ nowicjuszami.
+		AI_Output (self ,other,"DIA_Parlan_IAmParlan_05_03"); //Nie Å¼yczÄ™ sobie, by ktoÅ› odrywaÅ‚ ich od zajÄ™Ä‡, i drÄ™czyÅ‚ niemÄ…drymi pytaniami, zrozumiano?
 		
 		Parlan_DontTalkToNovice = LOG_RUNNING;
 			
 		Info_ClearChoices (DIA_Parlan_IAmParlan);
-		Info_AddChoice (DIA_Parlan_IAmParlan,"Bêdê robi³, co mi siê podoba.",DIA_Parlan_IAmParlan_MyChoice);
+		Info_AddChoice (DIA_Parlan_IAmParlan,"BÄ™dÄ™ robiÅ‚, co mi siÄ™ podoba.",DIA_Parlan_IAmParlan_MyChoice);
 		Info_AddChoice (DIA_Parlan_IAmParlan,"Jasne.",DIA_Parlan_IAmParlan_OK);
 	};
 	Wld_InsertItem (ItKe_KlosterBibliothek,"NW_MONASTERY_CORRIDOR_02"); 
@@ -1233,9 +1233,9 @@ FUNC VOID DIA_Parlan_IAmParlan_Info()
 
 FUNC VOID DIA_Parlan_IAmParlan_MyChoice ()
 {
-	AI_Output (other,self ,"DIA_Parlan_IAmParlan_MyChoice_15_00"); //Bêdê robi³, co mi siê podoba.
-	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_01"); //Na pewno istnieje jakiœ powód, dla którego twa obecnoœæ jest tutaj tolerowana, ale pamiêtaj - wszystko ma swoje granice.
-	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_02"); //Jeœli bêdziesz sprawia³ k³opoty, s³ono za to zap³acisz. Trzymaj siê z dala od nowicjuszy.
+	AI_Output (other,self ,"DIA_Parlan_IAmParlan_MyChoice_15_00"); //BÄ™dÄ™ robiÅ‚, co mi siÄ™ podoba.
+	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_01"); //Na pewno istnieje jakiÅ› powÃ³d, dla ktÃ³rego twa obecnoÅ›Ä‡ jest tutaj tolerowana, ale pamiÄ™taj - wszystko ma swoje granice.
+	AI_Output (self ,other,"DIA_Parlan_IAmParlan_MyChoice_05_02"); //JeÅ›li bÄ™dziesz sprawiaÅ‚ kÅ‚opoty, sÅ‚ono za to zapÅ‚acisz. Trzymaj siÄ™ z dala od nowicjuszy.
 	 
 	Info_ClearChoices (DIA_Parlan_IAmParlan);
 };
@@ -1243,12 +1243,12 @@ FUNC VOID DIA_Parlan_IAmParlan_MyChoice ()
 FUNC VOID DIA_Parlan_IAmParlan_OK()
 {
 	AI_Output (other,self ,"DIA_Parlan_IAmParlan_OK_15_00"); //Rozumiem.
-	AI_Output (self ,other,"DIA_Parlan_IAmParlan_OK_05_01"); //Mam tak¹ nadziejê.
+	AI_Output (self ,other,"DIA_Parlan_IAmParlan_OK_05_01"); //Mam takÄ… nadziejÄ™.
 
 	Info_ClearChoices (DIA_Parlan_IAmParlan);
 };
 ///////////////////////////////////////////////////////////////////////
-//	Schlüssel für Bibliothek
+//	SchlÃ¼ssel fÃ¼r Bibliothek
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Parlan_Bibliothek   (C_INFO)
 {
@@ -1257,7 +1257,7 @@ INSTANCE DIA_Parlan_Bibliothek   (C_INFO)
 	condition   = DIA_Parlan_Bibliothek_Condition;
 	information = DIA_Parlan_Bibliothek_Info;
 	permanent   = FALSE;
-	description = "Czy masz dla mnie coœ jeszcze?";
+	description = "Czy masz dla mnie coÅ› jeszcze?";
 };
 FUNC INT DIA_Parlan_Bibliothek_Condition()
 {
@@ -1271,9 +1271,9 @@ FUNC INT DIA_Parlan_Bibliothek_Condition()
 };
 FUNC VOID DIA_Parlan_Bibliothek_Info()
 {
-	AI_Output (other ,self,"DIA_Parlan_Bibliothek_15_00"); //Czy masz dla mnie coœ jeszcze?
-	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_01"); //Tak. Jako cz³onek biblioteki posiadasz do niej klucz. W bibliotece znajdziesz Braci Karasa i Hyglasa.
-	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_02"); //Jeœli chcesz, mo¿esz z nimi porozmawiaæ.
+	AI_Output (other ,self,"DIA_Parlan_Bibliothek_15_00"); //Czy masz dla mnie coÅ› jeszcze?
+	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_01"); //Tak. Jako czÅ‚onek biblioteki posiadasz do niej klucz. W bibliotece znajdziesz Braci Karasa i Hyglasa.
+	AI_Output (self ,other,"DIA_Parlan_Bibliothek_05_02"); //JeÅ›li chcesz, moÅ¼esz z nimi porozmawiaÄ‡.
 	
 	if (other.guild != GIL_PAL)
 	{
@@ -1306,9 +1306,9 @@ FUNC INT DIA_Parlan_DontDisturb_Condition()
 };
 FUNC VOID DIA_Parlan_DontDisturb_Info()
 {
-	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_00"); //Nie lubiê siê powtarzaæ, ale... zostaw nowicjuszy w spokoju.
-	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_01"); //Maj¹ oczyszczaæ swe dusze przy pomocy ciê¿kiej fizycznej pracy, aby przygotowywaæ siê do ¿ycia w klasztorze.
-	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_02"); //Nie bêdê tolerowa³ twoich dalszych wybryków.
+	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_00"); //Nie lubiÄ™ siÄ™ powtarzaÄ‡, ale... zostaw nowicjuszy w spokoju.
+	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_01"); //MajÄ… oczyszczaÄ‡ swe dusze przy pomocy ciÄ™Å¼kiej fizycznej pracy, aby przygotowywaÄ‡ siÄ™ do Å¼ycia w klasztorze.
+	AI_Output (self ,other,"DIA_Parlan_DontDisturb_05_02"); //Nie bÄ™dÄ™ tolerowaÅ‚ twoich dalszych wybrykÃ³w.
 	
 	Parlan_DontTalkToNovice = LOG_RUNNING;
 };
@@ -1324,7 +1324,7 @@ INSTANCE DIA_Parlan_Kap3U4U5_PERM   (C_INFO)
 	condition   = DIA_Parlan_Kap3U4U5_PERM_Condition;
 	information = DIA_Parlan_Kap3U4U5_PERM_Info;
 	permanent   = TRUE;
-	description = "Gdzie znajdê...";
+	description = "Gdzie znajdÄ™...";
 };
 FUNC INT DIA_Parlan_Kap3U4U5_PERM_Condition()
 {
@@ -1336,13 +1336,13 @@ FUNC INT DIA_Parlan_Kap3U4U5_PERM_Condition()
 };
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3_PERM_15_00"); //Gdzie znajdê...
+	AI_Output (other,self ,"DIA_Parlan_Kap3_PERM_15_00"); //Gdzie znajdÄ™...
 	
 	Info_ClearChoices (DIA_Parlan_Kap3U4U5_PERM);
 	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,DIALOG_Back,DIA_Parlan_Kap3U4U5_PERM_Back);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...koœció³?",DIA_Parlan_Kap3U4U5_PERM_Church);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...bibliotekê?",DIA_Parlan_Kap3U4U5_PERM_Library);
-	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...kaplicê?",DIA_Parlan_Kap3U4U5_PERM_Chapel);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...koÅ›ciÃ³Å‚?",DIA_Parlan_Kap3U4U5_PERM_Church);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...bibliotekÄ™?",DIA_Parlan_Kap3U4U5_PERM_Library);
+	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...kaplicÄ™?",DIA_Parlan_Kap3U4U5_PERM_Chapel);
 	Info_AddChoice (DIA_Parlan_Kap3U4U5_PERM,"...piwnice?",DIA_Parlan_Kap3U4U5_PERM_Cellar);
 };
 
@@ -1353,31 +1353,31 @@ FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Back()
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Church()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Church_15_00"); //...koœció³?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Church_05_01"); //Die Kirche ist das größte Gebäude im Kloster. Du kannst sie gar nicht übersehen.
-	AI_Output (self, other, "DIA_Parlan_Add_05_00"); //Panie Wszechmog¹cy! Czy¿by Innos pozbawi³ ciê wzroku?
-	AI_Output (self, other, "DIA_Parlan_Add_05_01"); //Gdzie tu jest koœció³? Hmmm... gdzie¿ on mo¿e byæ?
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Church_15_00"); //...koÅ›ciÃ³Å‚?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Church_05_01"); //Die Kirche ist das grÃ¶ÃŸte GebÃ¤ude im Kloster. Du kannst sie gar nicht Ã¼bersehen.
+	AI_Output (self, other, "DIA_Parlan_Add_05_00"); //Panie WszechmogÄ…cy! CzyÅ¼by Innos pozbawiÅ‚ ciÄ™ wzroku?
+	AI_Output (self, other, "DIA_Parlan_Add_05_01"); //Gdzie tu jest koÅ›ciÃ³Å‚? Hmmm... gdzieÅ¼ on moÅ¼e byÄ‡?
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Library()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Library_15_00"); //...bibliotekê?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Library_05_01"); //Die Bibliothek ist am Ende des Säulenganges, direkt gegenüber der Kirche.
-	AI_Output (self, other, "DIA_Parlan_Add_05_02"); //Biblioteka znajduje siê na koñcu kolumnady, na lewo. Dok³adnie po drugiej stronie koœcio³a.
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Library_15_00"); //...bibliotekÄ™?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Library_05_01"); //Die Bibliothek ist am Ende des SÃ¤ulenganges, direkt gegenÃ¼ber der Kirche.
+	AI_Output (self, other, "DIA_Parlan_Add_05_02"); //Biblioteka znajduje siÄ™ na koÅ„cu kolumnady, na lewo. DokÅ‚adnie po drugiej stronie koÅ›cioÅ‚a.
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Chapel()
 {
-	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Chapel_15_00"); //...kaplicê?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Chapel_05_01"); //Wenn du das Kloster betrittst, findest du die Kapelle auf der halben Höhe des linken Säulenganges.
-	AI_Output (self, other, "DIA_Parlan_Add_05_03"); //Kaplica to sala znajduj¹ca siê mniej wiêcej w po³owie kolumnady po lewej stronie. Tam w³aœnie paladyni modl¹ siê do Innosa.
+	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Chapel_15_00"); //...kaplicÄ™?
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Chapel_05_01"); //Wenn du das Kloster betrittst, findest du die Kapelle auf der halben HÃ¶he des linken SÃ¤ulenganges.
+	AI_Output (self, other, "DIA_Parlan_Add_05_03"); //Kaplica to sala znajdujÄ…ca siÄ™ mniej wiÄ™cej w poÅ‚owie kolumnady po lewej stronie. Tam wÅ‚aÅ›nie paladyni modlÄ… siÄ™ do Innosa.
 };
 
 FUNC VOID DIA_Parlan_Kap3U4U5_PERM_Cellar()
 {
 	AI_Output (other,self ,"DIA_Parlan_Kap3U4U5_PERM_Cellar_15_00"); //...piwnice?
-	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Cellar_05_01"); //Der Eingang in die Katakomben ist direkt gegenüber der Kapelle auf halber Höhe des Säulenganges.
-	AI_Output (self, other, "DIA_Parlan_Add_05_04"); //Wejœcie do piwnic znajduje siê w po³owie kolumnady, po prawej stronie.
+	//AI_Output (self ,other,"DIA_Parlan_Kap3U4U5_PERM_Cellar_05_01"); //Der Eingang in die Katakomben ist direkt gegenÃ¼ber der Kapelle auf halber HÃ¶he des SÃ¤ulenganges.
+	AI_Output (self, other, "DIA_Parlan_Add_05_04"); //WejÅ›cie do piwnic znajduje siÄ™ w poÅ‚owie kolumnady, po prawej stronie.
 };
 
 

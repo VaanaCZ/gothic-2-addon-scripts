@@ -34,7 +34,7 @@ instance DIA_Wolf_Hallo		(C_INFO)
 	condition	= DIA_Wolf_Hallo_Condition;
 	information	= DIA_Wolf_Hallo_Info;
 	permanent 	= FALSE;
-	description	= "Wszystko w porz¹dku?";
+	description	= "Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Wolf_Hallo_Condition ()
@@ -44,8 +44,8 @@ func int DIA_Wolf_Hallo_Condition ()
 
 func void DIA_Wolf_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_Hallo_15_00"); //Wszystko w porz¹dku?
-	AI_Output (self, other, "DIA_Wolf_Hallo_08_01"); //Hej, ja ciê znam! By³eœ w Kolonii!
+	AI_Output (other, self, "DIA_Wolf_Hallo_15_00"); //Wszystko w porzÄ…dku?
+	AI_Output (self, other, "DIA_Wolf_Hallo_08_01"); //Hej, ja ciÄ™ znam! ByÅ‚eÅ› w Kolonii!
 	AI_Output (self, other, "DIA_Wolf_Hallo_08_02"); //Czego tu szukasz?
 };
 
@@ -59,7 +59,7 @@ instance DIA_Wolf_WannaJoin		(C_INFO)
 	condition	= DIA_Wolf_WannaJoin_Condition;
 	information	= DIA_Wolf_WannaJoin_Info;
 	permanent 	= FALSE;
-	description	= "Chcê siê do was przy³¹czyæ.";
+	description	= "ChcÄ™ siÄ™ do was przyÅ‚Ä…czyÄ‡.";
 };
 
 func int DIA_Wolf_WannaJoin_Condition ()
@@ -73,15 +73,15 @@ func int DIA_Wolf_WannaJoin_Condition ()
 
 func void DIA_Wolf_WannaJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_00"); //Chcê siê do was przy³¹czyæ.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_01"); //Czemu nie. Nie mam nic przeciwko tobie. W koñcu pomog³eœ nam wtedy odbiæ kopalniê z r¹k stra¿ników.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_02"); //Tylko nie myœl, ¿e z pozosta³ymi pójdzie ci równie ³atwo.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_03"); //Do³¹czy³o do nas wielu nowych, a niektórzy ze starej bandy mog¹ ciê ju¿ nie pamiêtaæ.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_04"); //Nawet ja ledwo ciê pozna³em. Nie wygl¹dasz najlepiej.
-	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_05"); //Po upadku Bariery ledwo uszed³em z ¿yciem.
-	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_06"); //No to i tak mia³eœ szczêœcie.
+	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_00"); //ChcÄ™ siÄ™ do was przyÅ‚Ä…czyÄ‡.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_01"); //Czemu nie. Nie mam nic przeciwko tobie. W koÅ„cu pomogÅ‚eÅ› nam wtedy odbiÄ‡ kopalniÄ™ z rÄ…k straÅ¼nikÃ³w.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_02"); //Tylko nie myÅ›l, Å¼e z pozostaÅ‚ymi pÃ³jdzie ci rÃ³wnie Å‚atwo.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_03"); //DoÅ‚Ä…czyÅ‚o do nas wielu nowych, a niektÃ³rzy ze starej bandy mogÄ… ciÄ™ juÅ¼ nie pamiÄ™taÄ‡.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_04"); //Nawet ja ledwo ciÄ™ poznaÅ‚em. Nie wyglÄ…dasz najlepiej.
+	AI_Output (other, self, "DIA_Wolf_WannaJoin_15_05"); //Po upadku Bariery ledwo uszedÅ‚em z Å¼yciem.
+	AI_Output (self, other, "DIA_Wolf_WannaJoin_08_06"); //No to i tak miaÅ‚eÅ› szczÄ™Å›cie.
 	
-	B_LogEntry (TOPIC_SLDRespekt,"Wilk nie sprzeciwia siê mojemu wst¹pieniu w szeregi najemników.");
+	B_LogEntry (TOPIC_SLDRespekt,"Wilk nie sprzeciwia siÄ™ mojemu wstÄ…pieniu w szeregi najemnikÃ³w.");
 };
 
 // ************************************************************
@@ -94,7 +94,7 @@ instance DIA_Wolf_WannaBuy		(C_INFO)
 	condition	= DIA_Wolf_WannaBuy_Condition;
 	information	= DIA_Wolf_WannaBuy_Info;
 	permanent 	= FALSE;
-	description	= "Masz coœ do sprzedania?";
+	description	= "Masz coÅ› do sprzedania?";
 };
 
 func int DIA_Wolf_WannaBuy_Condition ()
@@ -107,12 +107,12 @@ func int DIA_Wolf_WannaBuy_Condition ()
 
 func void DIA_Wolf_WannaBuy_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaBuy_15_00"); //Masz coœ do sprzedania?
+	AI_Output (other, self, "DIA_Wolf_WannaBuy_15_00"); //Masz coÅ› do sprzedania?
 	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_01"); //Nawet nie pytaj.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_02"); //Naszym orê¿em i pancerzami zajmuje siê teraz jeden z nowych - Bennet.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_03"); //W Kolonii odpowiada³em za ca³¹ zbrojowniê Lee, a tutaj proszê: pojawia siê zawodowy kowal i rach-ciach - straci³em robotê.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_04"); //Potrzebujê jakiejœ ciekawej pracy, choæby nawet przy pilnowaniu farm.
-	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_05"); //Byle tylko nie siedzieæ tutaj z za³o¿onymi rêkami.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_02"); //Naszym orÄ™Å¼em i pancerzami zajmuje siÄ™ teraz jeden z nowych - Bennet.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_03"); //W Kolonii odpowiadaÅ‚em za caÅ‚Ä… zbrojowniÄ™ Lee, a tutaj proszÄ™: pojawia siÄ™ zawodowy kowal i rach-ciach - straciÅ‚em robotÄ™.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_04"); //PotrzebujÄ™ jakiejÅ› ciekawej pracy, choÄ‡by nawet przy pilnowaniu farm.
+	AI_Output (self, other, "DIA_Wolf_WannaBuy_08_05"); //Byle tylko nie siedzieÄ‡ tutaj z zaÅ‚oÅ¼onymi rÄ™kami.
 }; 
 
 // ************************************************************
@@ -125,7 +125,7 @@ instance DIA_Wolf_WannaLearn (C_INFO)
 	condition	= DIA_Wolf_WannaLearn_Condition;
 	information	= DIA_Wolf_WannaLearn_Info;
 	permanent 	= FALSE;
-	description	= "Mo¿esz mnie czegoœ nauczyæ?";
+	description	= "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };
 
 func int DIA_Wolf_WannaLearn_Condition ()
@@ -138,12 +138,12 @@ func int DIA_Wolf_WannaLearn_Condition ()
 
 func void DIA_Wolf_WannaLearn_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_WannaLearn_15_00"); //Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Wolf_WannaLearn_08_01"); //Jeœli chcesz, mogê ci pokazaæ, jak sprawniej pos³ugiwaæ siê ³ukiem. I tak nie mam teraz nic lepszego do roboty.
+	AI_Output (other, self, "DIA_Wolf_WannaLearn_15_00"); //MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output (self, other, "DIA_Wolf_WannaLearn_08_01"); //JeÅ›li chcesz, mogÄ™ ci pokazaÄ‡, jak sprawniej posÅ‚ugiwaÄ‡ siÄ™ Å‚ukiem. I tak nie mam teraz nic lepszego do roboty.
 	
 	Wolf_TeachBow = TRUE;
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Wilk mo¿e mnie nauczyæ, jak pos³ugiwaæ siê ³ukiem.");
+	B_LogEntry (Topic_SoldierTeacher,"Wilk moÅ¼e mnie nauczyÄ‡, jak posÅ‚ugiwaÄ‡ siÄ™ Å‚ukiem.");
 };
 
 // ************************************************************
@@ -159,7 +159,7 @@ instance DIA_Wolf_TEACH (C_INFO)
 	condition	= DIA_Wolf_TEACH_Condition;
 	information	= DIA_Wolf_TEACH_Info;
 	permanent 	= TRUE;
-	description	= "Chcê siê nauczyæ czegoœ o ³ucznictwie.";
+	description	= "ChcÄ™ siÄ™ nauczyÄ‡ czegoÅ› o Å‚ucznictwie.";
 };
 
 func int DIA_Wolf_TEACH_Condition ()
@@ -172,8 +172,8 @@ func int DIA_Wolf_TEACH_Condition ()
 
 func void DIA_Wolf_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_TEACH_15_00"); //Chcê siê nauczyæ czegoœ o ³ucznictwie.
-	AI_Output (self, other, "DIA_Wolf_TEACH_08_01"); //Czego mogê ciê nauczyæ?
+	AI_Output (other, self, "DIA_Wolf_TEACH_15_00"); //ChcÄ™ siÄ™ nauczyÄ‡ czegoÅ› o Å‚ucznictwie.
+	AI_Output (self, other, "DIA_Wolf_TEACH_08_01"); //Czego mogÄ™ ciÄ™ nauczyÄ‡?
 	
 	Wolf_Merke_Bow = other.HitChance[NPC_TALENT_BOW];
 	
@@ -187,7 +187,7 @@ FUNC VOID DIA_Wolf_Teach_Back ()
 {
 	if (Wolf_Merke_Bow < other.HitChance[NPC_TALENT_BOW])
 	{
-		AI_Output (self ,other,"DIA_Wolf_Teach_BACK_08_00"); //No i proszê. Od razu poprawi³a siê twoja celnoœæ.
+		AI_Output (self ,other,"DIA_Wolf_Teach_BACK_08_00"); //No i proszÄ™. Od razu poprawiÅ‚a siÄ™ twoja celnoÅ›Ä‡.
 	};
 	
 	Info_ClearChoices (DIA_Wolf_Teach);
@@ -223,7 +223,7 @@ instance DIA_Wolf_PERM		(C_INFO)
 	condition	= DIA_Wolf_PERM_Condition;
 	information	= DIA_Wolf_PERM_Info;
 	permanent	= TRUE;
-	description	= "Co s³ychaæ? Znalaz³eœ ju¿ jak¹œ pracê?";
+	description	= "Co sÅ‚ychaÄ‡? ZnalazÅ‚eÅ› juÅ¼ jakÄ…Å› pracÄ™?";
 };
 
 func int DIA_Wolf_PERM_Condition ()
@@ -238,8 +238,8 @@ func int DIA_Wolf_PERM_Condition ()
 
 func void DIA_Wolf_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_PERM_15_00"); //Co s³ychaæ? Znalaz³eœ ju¿ jak¹œ pracê?
-	AI_Output (self, other, "DIA_Wolf_PERM_08_01"); //Jeszcze nie. Daj mi znaæ, gdybyœ mia³ dla mnie jak¹œ robotê.
+	AI_Output (other, self, "DIA_Wolf_PERM_15_00"); //Co sÅ‚ychaÄ‡? ZnalazÅ‚eÅ› juÅ¼ jakÄ…Å› pracÄ™?
+	AI_Output (self, other, "DIA_Wolf_PERM_08_01"); //Jeszcze nie. Daj mi znaÄ‡, gdybyÅ› miaÅ‚ dla mnie jakÄ…Å› robotÄ™.
 };
 
 // ************************************************************
@@ -252,7 +252,7 @@ instance DIA_Wolf_Stadt		(C_INFO)
 	condition	= DIA_Wolf_Stadt_Condition;
 	information	= DIA_Wolf_Stadt_Info;
 	permanent	= FALSE;
-	description	= "Próbowa³eœ szukaæ pracy w mieœcie?";
+	description	= "PrÃ³bowaÅ‚eÅ› szukaÄ‡ pracy w mieÅ›cie?";
 };
 
 func int DIA_Wolf_Stadt_Condition ()
@@ -267,10 +267,10 @@ func int DIA_Wolf_Stadt_Condition ()
 
 func void DIA_Wolf_Stadt_Info ()
 {
-	AI_Output (other, self, "DIA_Wolf_Stadt_15_00"); //Próbowa³eœ szukaæ pracy w mieœcie?
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_01"); //W mieœcie? Musia³byœ mnie tam koñmi zaci¹gn¹æ.
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_02"); //A co, mo¿e myœlisz, ¿e chcia³bym pracowaæ w stra¿y? Taaa... ju¿ sobie wyobra¿am: ja w mundurze stra¿nika!
-	AI_Output (self, other, "DIA_Wolf_Stadt_08_03"); //I jeszcze te ci¹g³e rozkazy. Nie, nie ma mowy. Mo¿e i na farmie nie jest za du¿o roboty, ale przynajmniej nikt mn¹ nie pomiata.
+	AI_Output (other, self, "DIA_Wolf_Stadt_15_00"); //PrÃ³bowaÅ‚eÅ› szukaÄ‡ pracy w mieÅ›cie?
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_01"); //W mieÅ›cie? MusiaÅ‚byÅ› mnie tam koÅ„mi zaciÄ…gnÄ…Ä‡.
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_02"); //A co, moÅ¼e myÅ›lisz, Å¼e chciaÅ‚bym pracowaÄ‡ w straÅ¼y? Taaa... juÅ¼ sobie wyobraÅ¼am: ja w mundurze straÅ¼nika!
+	AI_Output (self, other, "DIA_Wolf_Stadt_08_03"); //I jeszcze te ciÄ…gÅ‚e rozkazy. Nie, nie ma mowy. MoÅ¼e i na farmie nie jest za duÅ¼o roboty, ale przynajmniej nikt mnÄ… nie pomiata.
 };
 
 
@@ -297,7 +297,7 @@ INSTANCE DIA_Wolf_AboutCrawler(C_INFO)
 	condition	= DIA_Wolf_AboutCrawler_Condition;
 	information	= DIA_Wolf_AboutCrawler_Info;
 	permanent	= FALSE;
-	description = "Podobno umiesz sporz¹dzaæ zbroje z pancerzy pe³zaczy?";
+	description = "Podobno umiesz sporzÄ…dzaÄ‡ zbroje z pancerzy peÅ‚zaczy?";
 };                       
 FUNC INT DIA_Wolf_AboutCrawler_Condition()
 {
@@ -309,19 +309,19 @@ FUNC INT DIA_Wolf_AboutCrawler_Condition()
 };
 FUNC VOID DIA_Wolf_AboutCrawler_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_00"); //Podobno umiesz sporz¹dzaæ zbroje z pancerzy pe³zaczy?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_01"); //Tak, to prawda. Sk¹d wiesz?
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_02"); //Powiedzia³ mi o tym myœliwy imieniem Gestath.
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_03"); //Móg³byœ zrobiæ tak¹ zbrojê dla mnie?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_04"); //Jasne. Przynieœ mi tylko 10 pancerzy pe³zaczy.
-	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_05"); //Ile to bêdzie kosztowaæ?
-	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_06"); //Nie ma o czym mówiæ. Nie wezmê pieniêdzy od starego druha.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_00"); //Podobno umiesz sporzÄ…dzaÄ‡ zbroje z pancerzy peÅ‚zaczy?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_01"); //Tak, to prawda. SkÄ…d wiesz?
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_02"); //PowiedziaÅ‚ mi o tym myÅ›liwy imieniem Gestath.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_03"); //MÃ³gÅ‚byÅ› zrobiÄ‡ takÄ… zbrojÄ™ dla mnie?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_04"); //Jasne. PrzynieÅ› mi tylko 10 pancerzy peÅ‚zaczy.
+	AI_Output (other, self, "DIA_Wolf_AboutCrawler_15_05"); //Ile to bÄ™dzie kosztowaÄ‡?
+	AI_Output (self, other, "DIA_Wolf_AboutCrawler_08_06"); //Nie ma o czym mÃ³wiÄ‡. Nie wezmÄ™ pieniÄ™dzy od starego druha.
 	
 	MIS_Wolf_BringCrawlerPlates = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Wolf_BringCrawlerPlates,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wolf_BringCrawlerPlates,LOG_RUNNING);
-	B_LogEntry (TOPIC_Wolf_BringCrawlerPlates,"Wilk mo¿e zrobiæ dla mnie zbrojê z 10 pancerzy pe³zacza.");
+	B_LogEntry (TOPIC_Wolf_BringCrawlerPlates,"Wilk moÅ¼e zrobiÄ‡ dla mnie zbrojÄ™ z 10 pancerzy peÅ‚zacza.");
 };
 
 
@@ -336,7 +336,7 @@ INSTANCE DIA_Wolf_TeachCrawlerPlates(C_INFO)
 	condition	= DIA_Wolf_TeachCrawlerPlates_Condition;
 	information	= DIA_Wolf_TeachCrawlerPlates_Info;
 	permanent	= TRUE;
-	description = B_BuildLearnString ("Naucz mnie zdzierania p³yt pancerza z pe³zaczy!", B_GetLearnCostTalent(other, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
+	description = B_BuildLearnString ("Naucz mnie zdzierania pÅ‚yt pancerza z peÅ‚zaczy!", B_GetLearnCostTalent(other, NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate));
 };                       
 FUNC INT DIA_Wolf_TeachCrawlerPlates_Condition()
 {
@@ -348,12 +348,12 @@ FUNC INT DIA_Wolf_TeachCrawlerPlates_Condition()
 };
 FUNC VOID DIA_Wolf_TeachCrawlerPlates_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_00"); //Naucz mnie zdejmowaæ pancerze z martwych pe³zaczy.
+	AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_00"); //Naucz mnie zdejmowaÄ‡ pancerze z martwych peÅ‚zaczy.
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 	{
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_01"); //To proste. Pancerze przylegaj¹ do cia³a tylko na krawêdziach. WeŸ po prostu ostry nó¿ i wytnij je wzd³u¿ brzegów.
-		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_02"); //Zapamiêta³eœ?
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_01"); //To proste. Pancerze przylegajÄ… do ciaÅ‚a tylko na krawÄ™dziach. WeÅº po prostu ostry nÃ³Å¼ i wytnij je wzdÅ‚uÅ¼ brzegÃ³w.
+		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_02"); //ZapamiÄ™taÅ‚eÅ›?
 		AI_Output (other, self, "DIA_Wolf_TeachCrawlerPlates_15_03"); //To nic trudnego.
 		AI_Output (self, other, "DIA_Wolf_TeachCrawlerPlates_08_04"); //W rzeczy samej.
 	};
@@ -370,7 +370,7 @@ INSTANCE DIA_Wolf_BringPlates(C_INFO)
 	condition	= DIA_Wolf_BringPlates_Condition;
 	information	= DIA_Wolf_BringPlates_Info;
 	permanent	= TRUE;
-	description = "Mam dla ciebie pancerze pe³zaczy na zbrojê.";
+	description = "Mam dla ciebie pancerze peÅ‚zaczy na zbrojÄ™.";
 };                       
 FUNC INT DIA_Wolf_BringPlates_Condition()
 {
@@ -382,9 +382,9 @@ FUNC INT DIA_Wolf_BringPlates_Condition()
 };
 FUNC VOID DIA_Wolf_BringPlates_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_BringPlates_15_00"); //Mam dla ciebie pancerze pe³zaczy na zbrojê.
+	AI_Output (other, self, "DIA_Wolf_BringPlates_15_00"); //Mam dla ciebie pancerze peÅ‚zaczy na zbrojÄ™.
 	B_GiveInvItems (other, self, ItAt_CrawlerPlate, 10);
-	AI_Output (self, other, "DIA_Wolf_BringPlates_08_01"); //Œwietnie! Poka¿.
+	AI_Output (self, other, "DIA_Wolf_BringPlates_08_01"); //Åšwietnie! PokaÅ¼.
 		
 	MIS_Wolf_BringCrawlerPlates = LOG_SUCCESS;
 };
@@ -403,7 +403,7 @@ INSTANCE DIA_Wolf_ArmorReady(C_INFO)
 	condition	= DIA_Wolf_ArmorReady_Condition;
 	information	= DIA_Wolf_ArmorReady_Info;
 	permanent	= TRUE;
-	description = "I co z t¹ zbroj¹?";
+	description = "I co z tÄ… zbrojÄ…?";
 };                       
 FUNC INT DIA_Wolf_ArmorReady_Condition()
 {
@@ -415,7 +415,7 @@ FUNC INT DIA_Wolf_ArmorReady_Condition()
 };
 FUNC VOID DIA_Wolf_ArmorReady_Info()
 {	
-	AI_Output (other, self, "DIA_Wolf_ArmorReady_15_00"); //I co z t¹ zbroj¹?
+	AI_Output (other, self, "DIA_Wolf_ArmorReady_15_00"); //I co z tÄ… zbrojÄ…?
 
 	if (Npc_HasItems (self, ItAt_CrawlerPlate) >= 10)
 	{
@@ -428,23 +428,23 @@ FUNC VOID DIA_Wolf_ArmorReady_Info()
 		if (Wolf_MakeArmor == TRUE)
 		&& (Wolf_Armor_Day > Wld_GetDay())
 		{
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_01"); //Bez obaw, zrobiê j¹ dla ciebie. Bêdzie gotowa na jutro.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_01"); //Bez obaw, zrobiÄ™ jÄ… dla ciebie. BÄ™dzie gotowa na jutro.
 		}
 		else
 		{
 			CreateInvItems (self, ItAr_Djg_Crawler, 1);
 			Npc_RemoveInvItems (self, ItAt_CrawlerPlate, 10);
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_02"); //Ju¿ skoñczona. Proszê.
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_02"); //JuÅ¼ skoÅ„czona. ProszÄ™.
 			B_GiveInvItems (self, other, ItAr_Djg_Crawler, 1);
-			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_03"); //Moim zdaniem wygl¹da ca³kiem nieŸle.
-			AI_Output (other, self, "DIA_Wolf_ArmorReady_15_04"); //Dziêki!
+			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_03"); //Moim zdaniem wyglÄ…da caÅ‚kiem nieÅºle.
+			AI_Output (other, self, "DIA_Wolf_ArmorReady_15_04"); //DziÄ™ki!
 			AI_Output (self, other, "DIA_Wolf_ArmorReady_08_05"); //Nie ma sprawy.
 			Player_GotCrawlerArmor = TRUE;
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Wolf_ArmorReady_08_06"); //¯arty siê ciebie trzymaj¹? A gdzie masz pancerze pe³zaczy?
+		AI_Output (self, other, "DIA_Wolf_ArmorReady_08_06"); //Å»arty siÄ™ ciebie trzymajÄ…? A gdzie masz pancerze peÅ‚zaczy?
 		Wolf_MakeArmor = FALSE;
 		MIS_Wolf_BringCrawlerPlates = LOG_RUNNING;
 	};
@@ -495,7 +495,7 @@ instance DIA_Wolf_BENGAR		(C_INFO)
 	information	 = 	DIA_Wolf_BENGAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Chyba znalaz³em na farmie Bengara pracê w sam raz dla ciebie.";
+	description	 = 	"Chyba znalazÅ‚em na farmie Bengara pracÄ™ w sam raz dla ciebie.";
 };
 
 func int DIA_Wolf_BENGAR_Condition ()
@@ -514,41 +514,41 @@ var int Wolf_BENGAR_geld;
 
 func void DIA_Wolf_BENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_00"); //Chyba znalaz³em na farmie Bengara pracê w sam raz dla ciebie.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_00"); //Chyba znalazÅ‚em na farmie Bengara pracÄ™ w sam raz dla ciebie.
 
 	if (DIA_Wolf_BENGAR_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_01"); //S³ucham.
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_02"); //Prze³êcz do Górniczej Doliny koñczy siê tu¿ przy farmie Bengara. Biedak ma wiêc mnóstwo problemów z ró¿nymi bestiami, które schodz¹ z gór.
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_03"); //Przyda³by mu siê ktoœ o obrony farmy.
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_04"); //To rzeczywiœcie niez³a propozycja. Przynajmniej nie musia³bym tu siedzieæ i gapiæ siê têsknym wzrokiem na kuŸniê.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_01"); //SÅ‚ucham.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_02"); //PrzeÅ‚Ä™cz do GÃ³rniczej Doliny koÅ„czy siÄ™ tuÅ¼ przy farmie Bengara. Biedak ma wiÄ™c mnÃ³stwo problemÃ³w z rÃ³Å¼nymi bestiami, ktÃ³re schodzÄ… z gÃ³r.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_15_03"); //PrzydaÅ‚by mu siÄ™ ktoÅ› o obrony farmy.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_08_04"); //To rzeczywiÅ›cie niezÅ‚a propozycja. Przynajmniej nie musiaÅ‚bym tu siedzieÄ‡ i gapiÄ‡ siÄ™ tÄ™sknym wzrokiem na kuÅºniÄ™.
 	DIA_Wolf_BENGAR_oneTime = TRUE;
 	};
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_05"); //W porz¹dku. Jako ¿e jesteœ jednym z nas, z³o¿ê ci specjaln¹ ofertê. Daj mi 300 sztuk z³ota i mogê ruszaæ w drogê.
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_05"); //W porzÄ…dku. Jako Å¼e jesteÅ› jednym z nas, zÅ‚oÅ¼Ä™ ci specjalnÄ… ofertÄ™. Daj mi 300 sztuk zÅ‚ota i mogÄ™ ruszaÄ‡ w drogÄ™.
 			Wolf_BENGAR_geld = 300;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_06"); //W porz¹dku. To bêdzie kosztowa³o... 800 sztuk z³ota.
-			AI_Output			(other, self, "DIA_Wolf_BENGAR_15_07"); //To du¿o pieniêdzy.
-			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_08"); //Có¿, dla jednego z nas zrobi³bym to za po³owê ceny. Ale dla ciebie...
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_06"); //W porzÄ…dku. To bÄ™dzie kosztowaÅ‚o... 800 sztuk zÅ‚ota.
+			AI_Output			(other, self, "DIA_Wolf_BENGAR_15_07"); //To duÅ¼o pieniÄ™dzy.
+			AI_Output			(self, other, "DIA_Wolf_BENGAR_08_08"); //CÃ³Å¼, dla jednego z nas zrobiÅ‚bym to za poÅ‚owÄ™ ceny. Ale dla ciebie...
 			Wolf_BENGAR_geld = 800;
 		};
 
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
-	Info_AddChoice	(DIA_Wolf_BENGAR, "Muszê siê zastanowiæ.", DIA_Wolf_BENGAR_nochnicht );
-	Info_AddChoice	(DIA_Wolf_BENGAR, "Oto twoje z³oto.", DIA_Wolf_BENGAR_geld );
+	Info_AddChoice	(DIA_Wolf_BENGAR, "MuszÄ™ siÄ™ zastanowiÄ‡.", DIA_Wolf_BENGAR_nochnicht );
+	Info_AddChoice	(DIA_Wolf_BENGAR, "Oto twoje zÅ‚oto.", DIA_Wolf_BENGAR_geld );
 };
 func void DIA_Wolf_BENGAR_geld ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_geld_15_00"); //Oto twoje z³oto.
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_geld_15_00"); //Oto twoje zÅ‚oto.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,	Wolf_BENGAR_geld))
 	{
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_01"); //Œwietnie. Nim wyruszê na farmê Bengara, zastanowiê siê, kogo móg³bym zabraæ ze sob¹.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_01"); //Åšwietnie. Nim wyruszÄ™ na farmÄ™ Bengara, zastanowiÄ™ siÄ™, kogo mÃ³gÅ‚bym zabraÄ‡ ze sobÄ….
 		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_02"); //Do zobaczenia!
 		
 	
@@ -562,15 +562,15 @@ func void DIA_Wolf_BENGAR_geld ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_03"); //Có¿, gdybyœ mia³ pieni¹dze, móg³bym od razu ruszaæ w drogê.
+		AI_Output			(self, other, "DIA_Wolf_BENGAR_geld_08_03"); //CÃ³Å¼, gdybyÅ› miaÅ‚ pieniÄ…dze, mÃ³gÅ‚bym od razu ruszaÄ‡ w drogÄ™.
 	};
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
 };
 
 func void DIA_Wolf_BENGAR_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Wolf_BENGAR_nochnicht_15_00"); //Zastanowiê siê jeszcze.
-	AI_Output			(self, other, "DIA_Wolf_BENGAR_nochnicht_08_01"); //Jak chcesz. Tylko mnie nie zawiedŸ!
+	AI_Output			(other, self, "DIA_Wolf_BENGAR_nochnicht_15_00"); //ZastanowiÄ™ siÄ™ jeszcze.
+	AI_Output			(self, other, "DIA_Wolf_BENGAR_nochnicht_08_01"); //Jak chcesz. Tylko mnie nie zawiedÅº!
 	Info_ClearChoices	(DIA_Wolf_BENGAR);
 };
 
@@ -585,7 +585,7 @@ instance DIA_Wolf_PERMKAP3		(C_INFO)
 	information	 = 	DIA_Wolf_PERMKAP3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Wolf_PERMKAP3_Condition ()
@@ -601,18 +601,18 @@ func int DIA_Wolf_PERMKAP3_Condition ()
 var int DIA_Wolf_PERMKAP3_onetime;
 func void DIA_Wolf_PERMKAP3_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_PERMKAP3_15_00"); //Wszystko w porz¹dku?
+	AI_Output			(other, self, "DIA_Wolf_PERMKAP3_15_00"); //Wszystko w porzÄ…dku?
 
 	if ((Npc_IsDead(Bengar))&&(DIA_Wolf_PERMKAP3_onetime == FALSE))
 	{
-		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_01"); //Mój pracodawca nie ¿yje. Ale co robiæ? Zawsze chcia³em mieæ w³asn¹ farmê.
+		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_01"); //MÃ³j pracodawca nie Å¼yje. Ale co robiÄ‡? Zawsze chciaÅ‚em mieÄ‡ wÅ‚asnÄ… farmÄ™.
 		AI_StopProcessInfos (self);	
 		Npc_ExchangeRoutine	(self,"BengarDead");
 		DIA_Wolf_PERMKAP3_onetime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_02"); //Tak, cisza i spokój.
+		AI_Output			(self, other, "DIA_Wolf_PERMKAP3_08_02"); //Tak, cisza i spokÃ³j.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -698,7 +698,7 @@ instance DIA_Wolf_SHIP		(C_INFO)
 	condition	 = 	DIA_Wolf_SHIP_Condition;
 	information	 = 	DIA_Wolf_SHIP_Info;
 
-	description	 = 	"Masz mo¿e ochotê wyrwaæ siê st¹d na pok³adzie okrêtu?";
+	description	 = 	"Masz moÅ¼e ochotÄ™ wyrwaÄ‡ siÄ™ stÄ…d na pokÅ‚adzie okrÄ™tu?";
 };
 
 func int DIA_Wolf_SHIP_Condition ()
@@ -712,28 +712,28 @@ func int DIA_Wolf_SHIP_Condition ()
 
 func void DIA_Wolf_SHIP_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_SHIP_15_00"); //Nie chcia³byœ wyp³yn¹æ ze mn¹ w morze?
+	AI_Output			(other, self, "DIA_Wolf_SHIP_15_00"); //Nie chciaÅ‚byÅ› wypÅ‚ynÄ…Ä‡ ze mnÄ… w morze?
 
 	if (MIS_BengarsHelpingSLD == LOG_SUCCESS)
 	&& (!Npc_IsDead (Bengar))
 	{
-	AI_Output			(self, other, "DIA_Wolf_SHIP_08_01"); //Nie, ju¿ nie. Znalaz³em dla siebie odpowiednie miejsce. Mo¿e innym razem.
+	AI_Output			(self, other, "DIA_Wolf_SHIP_08_01"); //Nie, juÅ¼ nie. ZnalazÅ‚em dla siebie odpowiednie miejsce. MoÅ¼e innym razem.
 	wolf_SaidNo = TRUE;
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Wolf_SHIP_08_02"); //Jasne, czemu nie. Chêtnie siê st¹d wyniosê. Mogê równie dobrze broniæ twojego statku. Dok¹d p³yniemy?
+	AI_Output			(self, other, "DIA_Wolf_SHIP_08_02"); //Jasne, czemu nie. ChÄ™tnie siÄ™ stÄ…d wyniosÄ™. MogÄ™ rÃ³wnie dobrze broniÄ‡ twojego statku. DokÄ…d pÅ‚yniemy?
 	MIS_BengarsHelpingSLD = LOG_OBSOLETE;
 	
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                                             
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                                             
-	B_LogEntry (TOPIC_Crew,"Wilk ma ju¿ doœæ tej wyspy i gotów jest zrobiæ wszystko, ¿eby siê st¹d wydostaæ. Jest dobrym wojownikiem."); 
+	B_LogEntry (TOPIC_Crew,"Wilk ma juÅ¼ doÅ›Ä‡ tej wyspy i gotÃ³w jest zrobiÄ‡ wszystko, Å¼eby siÄ™ stÄ…d wydostaÄ‡. Jest dobrym wojownikiem."); 
 	};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//Ich muß zu einer Insel nicht weit von dieser hier.
+//Ich muÃŸ zu einer Insel nicht weit von dieser hier.
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Wolf_KnowWhereEnemy		(C_INFO)
 {
@@ -742,7 +742,7 @@ instance DIA_Wolf_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Wolf_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Wolf_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Niedaleko. Na poblisk¹ wyspê.";
+	description	 = 	"Niedaleko. Na pobliskÄ… wyspÄ™.";
 };
 func int DIA_Wolf_KnowWhereEnemy_Condition ()
 {	
@@ -756,29 +756,29 @@ func int DIA_Wolf_KnowWhereEnemy_Condition ()
 };
 func void DIA_Wolf_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_KnowWhereEnemy_15_00"); //Niedaleko. Na poblisk¹ wyspê.
-	AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_01"); //No to na co czekamy? Podczas podró¿y mogê ciê jeszcze poduczyæ ³ucznictwa i strzelania z kuszy.
+	AI_Output			(other, self, "DIA_Wolf_KnowWhereEnemy_15_00"); //Niedaleko. Na pobliskÄ… wyspÄ™.
+	AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_01"); //No to na co czekamy? Podczas podrÃ³Å¼y mogÄ™ ciÄ™ jeszcze poduczyÄ‡ Å‚ucznictwa i strzelania z kuszy.
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Wolf_KnowWhereEnemy_15_02"); //Przypomnia³em sobie, ¿e jednak mam ju¿ doœæ ludzi.
-		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_03"); //A wiêc to tak?! Najpierw obiecujesz z³ote góry, a potem ka¿esz mi spadaæ, co?
-		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_04"); //Sp³ywaj! Mam nadziejê, ¿e ta twoja balia utonie w pó³ drogi.
+		AI_Output			(other,self , "DIA_Wolf_KnowWhereEnemy_15_02"); //PrzypomniaÅ‚em sobie, Å¼e jednak mam juÅ¼ doÅ›Ä‡ ludzi.
+		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_03"); //A wiÄ™c to tak?! Najpierw obiecujesz zÅ‚ote gÃ³ry, a potem kaÅ¼esz mi spadaÄ‡, co?
+		AI_Output			(self, other, "DIA_Wolf_KnowWhereEnemy_08_04"); //SpÅ‚ywaj! Mam nadziejÄ™, Å¼e ta twoja balia utonie w pÃ³Å‚ drogi.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Wolf_KnowWhereEnemy);
-		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Muszê siê nad tym jeszcze zastanowiæ.",DIA_Wolf_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Witamy na pok³adzie!",DIA_Wolf_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"MuszÄ™ siÄ™ nad tym jeszcze zastanowiÄ‡.",DIA_Wolf_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Wolf_KnowWhereEnemy,"Witamy na pokÅ‚adzie!",DIA_Wolf_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Wolf_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_00"); //Witamy na pok³adzie!
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_01"); //ZejdŸ na przystañ. Wkrótce odp³ywamy.
-	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_Yes_08_02"); //Ju¿ idê.
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_00"); //Witamy na pokÅ‚adzie!
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_Yes_15_01"); //ZejdÅº na przystaÅ„. WkrÃ³tce odpÅ‚ywamy.
+	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_Yes_08_02"); //JuÅ¼ idÄ™.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);                                                              
 	                                                                                                     
@@ -801,8 +801,8 @@ FUNC VOID DIA_Wolf_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Wolf_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_No_15_00"); //Muszê siê nad tym jeszcze zastanowiæ.
-	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_No_08_01"); //Wiesz co? Nie wierzê ju¿ w ani jedno twoje s³owo. ZejdŸ mi z oczu.
+	AI_Output (other,self ,"DIA_Wolf_KnowWhereEnemy_No_15_00"); //MuszÄ™ siÄ™ nad tym jeszcze zastanowiÄ‡.
+	AI_Output (self ,other,"DIA_Wolf_KnowWhereEnemy_No_08_01"); //Wiesz co? Nie wierzÄ™ juÅ¼ w ani jedno twoje sÅ‚owo. ZejdÅº mi z oczu.
 
 	Wolf_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Wolf_KnowWhereEnemy);
@@ -818,7 +818,7 @@ instance DIA_Wolf_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Wolf_LeaveMyShip_Condition;
 	information	 = 	DIA_Wolf_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Jednak mi siê nie przydasz.";
+	description	 = 	"Jednak mi siÄ™ nie przydasz.";
 };
 func int DIA_Wolf_LeaveMyShip_Condition ()
 {	
@@ -830,8 +830,8 @@ func int DIA_Wolf_LeaveMyShip_Condition ()
 };
 func void DIA_Wolf_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_LeaveMyShip_15_00"); //Jednak mi siê nie przydasz.
-	AI_Output			(self, other, "DIA_Wolf_LeaveMyShip_08_01"); //Najpierw dajesz mi nadziejê, a potem ka¿esz spadaæ? Jesteœ draniem, jakich ma³o. Zap³acisz mi za to.
+	AI_Output			(other, self, "DIA_Wolf_LeaveMyShip_15_00"); //Jednak mi siÄ™ nie przydasz.
+	AI_Output			(self, other, "DIA_Wolf_LeaveMyShip_08_01"); //Najpierw dajesz mi nadziejÄ™, a potem kaÅ¼esz spadaÄ‡? JesteÅ› draniem, jakich maÅ‚o. ZapÅ‚acisz mi za to.
 	
 	Wolf_IsOnBoard	 = LOG_FAILED;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -851,7 +851,7 @@ instance DIA_Wolf_SHIPOFF		(C_INFO)
 	information	 = 	DIA_Wolf_SHIPOFF_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"S³uchaj.";
+	description	 = 	"SÅ‚uchaj.";
 };
 
 func int DIA_Wolf_SHIPOFF_Condition ()
@@ -864,8 +864,8 @@ func int DIA_Wolf_SHIPOFF_Condition ()
 
 func void DIA_Wolf_SHIPOFF_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_SHIPOFF_15_00"); //S³uchaj.
-	AI_Output			(self, other, "DIA_Wolf_SHIPOFF_08_01"); //Odwal siê, sukinsynu.
+	AI_Output			(other, self, "DIA_Wolf_SHIPOFF_15_00"); //SÅ‚uchaj.
+	AI_Output			(self, other, "DIA_Wolf_SHIPOFF_08_01"); //Odwal siÄ™, sukinsynu.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };

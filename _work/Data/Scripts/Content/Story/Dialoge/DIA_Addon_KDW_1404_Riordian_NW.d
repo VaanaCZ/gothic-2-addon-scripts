@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Riordian_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Riordian_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Riordian_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Spruchrolle zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Riordian_NW_PICKPOCKET_Condition()
@@ -94,10 +94,10 @@ func int DIA_Addon_Riordian_Hallo_Condition ()
 func void DIA_Addon_Riordian_Hallo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Co robisz?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Badam kulturê tego staro¿ytnego ludu.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Z inskrypcji wiemy, ¿e ¿yli tu bardzo dawno temu.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Nie wiem dok³adnie, KIEDY powsta³a ta budowla, ale ich cywilizacja by³a bardzo rozwiniêta.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Zbudowali miasto po drugiej stronie gór. Oraz œwi¹tyniê Adanosa.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Badam kulturÄ™ tego staroÅ¼ytnego ludu.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Z inskrypcji wiemy, Å¼e Å¼yli tu bardzo dawno temu.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Nie wiem dokÅ‚adnie, KIEDY powstaÅ‚a ta budowla, ale ich cywilizacja byÅ‚a bardzo rozwiniÄ™ta.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Zbudowali miasto po drugiej stronie gÃ³r. Oraz Å›wiÄ…tyniÄ™ Adanosa.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alter
@@ -120,7 +120,7 @@ func int DIA_Addon_Riordian_Alter_Condition ()
 func void DIA_Addon_Riordian_Alter_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Riordian_Alter_15_00"); //Na ile lat oceniasz wiek tego budynku?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Alter_10_01"); //Nie potrafiê powiedzieæ dok³adnie, ale na pewno ma ju¿ kilkaset lat.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Alter_10_01"); //Nie potrafiÄ™ powiedzieÄ‡ dokÅ‚adnie, ale na pewno ma juÅ¼ kilkaset lat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Atlantis
@@ -145,13 +145,13 @@ func int DIA_Addon_Riordian_Atlantis_Condition ()
 func void DIA_Addon_Riordian_Atlantis_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Zaginione miasto na wyspie Khorinis?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Tak. Do tej pory myœleliœmy, ¿e znamy ca³¹ wyspê.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //S¹dziliœmy, ¿e ca³¹ jej pó³nocno-wschodni¹ czêœæ zajmuje ogromny masyw górski.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Ale myliliœmy siê.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Za górami le¿y dolina. Znajdowa³o siê tam miasto prastarej cywilizacji.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //Chêtnie bym zobaczy³ budynki tego miasta, ale pewnie rozpad³y siê w py³ wieki temu...
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Tak. Do tej pory myÅ›leliÅ›my, Å¼e znamy caÅ‚Ä… wyspÄ™.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //SÄ…dziliÅ›my, Å¼e caÅ‚Ä… jej pÃ³Å‚nocno-wschodniÄ… czÄ™Å›Ä‡ zajmuje ogromny masyw gÃ³rski.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Ale myliliÅ›my siÄ™.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Za gÃ³rami leÅ¼y dolina. ZnajdowaÅ‚o siÄ™ tam miasto prastarej cywilizacji.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //ChÄ™tnie bym zobaczyÅ‚ budynki tego miasta, ale pewnie rozpadÅ‚y siÄ™ w pyÅ‚ wieki temu...
 	
-	B_LogEntry (TOPIC_Addon_KDW,"Magowie Wody podejrzewaj¹, ¿e za portalem znajduje siê staro¿ytne, zaginione miasto."); 
+	B_LogEntry (TOPIC_Addon_KDW,"Magowie Wody podejrzewajÄ…, Å¼e za portalem znajduje siÄ™ staroÅ¼ytne, zaginione miasto."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SaturasWantYou
@@ -162,7 +162,7 @@ instance DIA_Addon_Riordian_SaturasWantYou		(C_INFO)
 	nr			 = 	5;
 	condition	 = 	DIA_Addon_Riordian_SaturasWantYou_Condition;
 	information	 = 	DIA_Addon_Riordian_SaturasWantYou_Info;
-	description	 = 	"Saturas chce ciê widzieæ.";
+	description	 = 	"Saturas chce ciÄ™ widzieÄ‡.";
 };
 
 func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
@@ -176,13 +176,13 @@ func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
 
 func void DIA_Addon_Riordian_SaturasWantYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas chce ciê widzieæ.
-	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Czy¿by posun¹³ siê naprzód ze swym dochodzeniem? W takim razie natychmiast siê z nim zobaczê.
+	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas chce ciÄ™ widzieÄ‡.
+	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //CzyÅ¼by posunÄ…Å‚ siÄ™ naprzÃ³d ze swym dochodzeniem? W takim razie natychmiast siÄ™ z nim zobaczÄ™.
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Jeœli chcesz siê dowiedzieæ wiêcej o tym miejscu, porozmawiaj z Nefariusem.
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Znajdziesz go w g³êbi krypt.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //JeÅ›li chcesz siÄ™ dowiedzieÄ‡ wiÄ™cej o tym miejscu, porozmawiaj z Nefariusem.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Znajdziesz go w gÅ‚Ä™bi krypt.
 	};	
 	
 	AI_StopProcessInfos (self);
@@ -204,7 +204,7 @@ instance DIA_Addon_Riordian_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dowiedzia³eœ siê czegoœ nowego?";
+	description	 = 	"DowiedziaÅ‚eÅ› siÄ™ czegoÅ› nowego?";
 };
 
 func int DIA_Addon_Riordian_Perm_Condition ()
@@ -217,15 +217,15 @@ func int DIA_Addon_Riordian_Perm_Condition ()
 
 func void DIA_Addon_Riordian_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Dowiedzia³eœ siê czegoœ nowego?
+	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //DowiedziaÅ‚eÅ› siÄ™ czegoÅ› nowego?
 	if (Riordian_PermNews == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //Wiem, ¿e ta prastara cywilizacja czci³a Adanosa!
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //Wiem, Å¼e ta prastara cywilizacja czciÅ‚a Adanosa!
 		Riordian_PermNews = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Raczej nie. Wróæ póŸniej.
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_02"); //Raczej nie. WrÃ³Ä‡ pÃ³Åºniej.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -240,7 +240,7 @@ instance DIA_Addon_Riordian_TeachPre		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_TeachPre_Condition;
 	information	 = 	DIA_Addon_Riordian_TeachPre_Info;
 
-	description	 = 	"Vatras da³ mi Amulet Szukaj¹cego Ognika...";
+	description	 = 	"Vatras daÅ‚ mi Amulet SzukajÄ…cego Ognika...";
 };
 func int DIA_Addon_Riordian_TeachPre_Condition ()
 {
@@ -252,10 +252,10 @@ func int DIA_Addon_Riordian_TeachPre_Condition ()
 };
 func void DIA_Addon_Riordian_TeachPre_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Vatras da³ mi Amulet Szukaj¹cego Ognika...
-	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Ach! To rzadki artefakt. Za jego pomoc¹ mo¿esz wyszkoliæ ognika.
-	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //Mo¿esz mi w tym pomóc?
-	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //Oczywiœcie. Przez d³ugi czas zajmowa³em siê tym rodzajem magii.
+	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_00"); //Vatras daÅ‚ mi Amulet SzukajÄ…cego Ognika...
+	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_01"); //Ach! To rzadki artefakt. Za jego pomocÄ… moÅ¼esz wyszkoliÄ‡ ognika.
+	AI_Output	(other, self, "DIA_Addon_Riordian_TeachPre_15_02"); //MoÅ¼esz mi w tym pomÃ³c?
+	AI_Output	(self, other, "DIA_Addon_Riordian_TeachPre_10_03"); //OczywiÅ›cie. Przez dÅ‚ugi czas zajmowaÅ‚em siÄ™ tym rodzajem magii.
 	Riordian_Addon_TeachPlayer = TRUE;
 
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
@@ -272,7 +272,7 @@ instance DIA_Addon_Riordian_Teach		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Teach_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Poka¿ mi, jak wyszkoliæ mojego ognika.";
+	description	 = 	"PokaÅ¼ mi, jak wyszkoliÄ‡ mojego ognika.";
 };
 var int DIA_Addon_Riordian_Teach_NoPerm;
 

@@ -39,20 +39,20 @@ FUNC VOID DIA_Addon_10019_Wache_Hi_Info()
 	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_06_00");//Idziesz do kopalni?
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
-	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Chcê siê widzieæ z Krukiem.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
+	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"ChcÄ™ siÄ™ widzieÄ‡ z Krukiem.",DIA_Addon_BDT_10019_Wache_Hi_Raven);
 	Info_AddChoice (DIA_Addon_BDT_10019_Wache_Hi,"Tak.",DIA_Addon_BDT_10019_Wache_Hi_Ja);
 };
 FUNC VOID B_Say_Wache_kaputt()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Dlaczego oni nie ¿yj¹?
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//Zaharowali siê na œmieræ.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_kaputt_15_00");//Dlaczego oni nie Å¼yjÄ…?
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_kaputt_06_01");//Zaharowali siÄ™ na Å›mierÄ‡.
 	
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
 };
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 {
-	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//Chcê siê widzieæ z Krukiem.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//Hej, spróbuj wejœæ do œwi¹tyni, a bêdziesz tak samo martwy, jak ci wiêŸniowie.
+	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Raven_15_00");//ChcÄ™ siÄ™ widzieÄ‡ z Krukiem.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_01");//Hej, sprÃ³buj wejÅ›Ä‡ do Å›wiÄ…tyni, a bÄ™dziesz tak samo martwy, jak ci wiÄ™Åºniowie.
 	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Raven_06_02");//Lepiej ruszaj do kopalni.
 	
 	B_Say_Wache_kaputt();
@@ -61,7 +61,7 @@ FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Raven()
 FUNC VOID DIA_Addon_BDT_10019_Wache_Hi_Ja()
 {
 	AI_Output (other, self, "DIA_Addon_BDT_10019_Wache_Hi_Ja_15_00");//Tak.
-	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Trzymaj siê. Dbaj o siebie lepiej ni¿ kolesie, którzy tu le¿¹.
+	AI_Output (self, other, "DIA_Addon_BDT_10019_Wache_Hi_Ja_06_01");//Trzymaj siÄ™. Dbaj o siebie lepiej niÅ¼ kolesie, ktÃ³rzy tu leÅ¼Ä….
 	
 	B_Say_Wache_kaputt();
 	Info_ClearChoices (DIA_Addon_BDT_10019_Wache_Hi);
