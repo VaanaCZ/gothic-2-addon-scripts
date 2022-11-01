@@ -21,7 +21,7 @@ FUNC INT DIA_Herold_Info_Condition()
 
 FUNC VOID DIA_Herold_Info_Info()
 {
-	AI_Output (self ,other,"DIA_Herold_Info_04_00"); //Nezdržuj, jsem ve službì.
+	AI_Output (self ,other,"DIA_Herold_Info_04_00"); //NezdrÅ¾uj, jsem ve sluÅ¾bÄ›.
 	
 	AI_StopProcessInfos (self);
 };

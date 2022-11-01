@@ -20,10 +20,10 @@ func int DIA_Addon_Morgan_EXIT_Info ()
 {
 	if (GregIsBack == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Morgan_Perm_15_00"); //Bì se natáhnout.
+		AI_Output	(other, self, "DIA_Addon_Morgan_Perm_15_00"); //BÄ›Å¾ se natÃ¡hnout.
 		if (Morgan_Perm_Counter == 0)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_01"); //(zívá) Dobrej nápad.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_01"); //(zÃ­vÃ¡) Dobrej nÃ¡pad.
 			Morgan_Perm_Counter = 1;
 		}
 		else if (Morgan_Perm_Counter == 1)
@@ -33,12 +33,12 @@ func int DIA_Addon_Morgan_EXIT_Info ()
 		}
 		else if (Morgan_Perm_Counter == 2)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_03"); //(unavenì) S nejvìtší radostí.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_03"); //(unavenÄ›) S nejvÄ›tÅ¡Ã­ radostÃ­.
 			Morgan_Perm_Counter = 3;
 		}
 		else if (Morgan_Perm_Counter == 3)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_04"); //Kdyby nìco, tak mì vzbuï.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_04"); //Kdyby nÄ›co, tak mÄ› vzbuÄ.
 			Morgan_Perm_Counter = 0;
 		};
 	};
@@ -102,10 +102,10 @@ FUNC INT DIA_Addon_Morgan_Anheuern_Condition()
 };
 func int DIA_Addon_Morgan_Anheuern_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_00"); //To je úasnı, teï budu muset furt øezat prkna.
+	AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_00"); //To je ÃºÅ¾asnÃ½, teÄ budu muset furt Å™ezat prkna.
 	if (MIS_Addon_Greg_ClearCanyon == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_01"); //(sarkasticky) Tak si to mlácení potvor uij!
+		AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_01"); //(sarkasticky) Tak si to mlÃ¡cenÃ­ potvor uÅ¾ij!
 	};
 };
 
@@ -134,9 +134,9 @@ FUNC INT DIA_Addon_Morgan_Hello_Condition()
 func VOID DIA_Addon_Morgan_Hello_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Morgan_Hello_15_00"); //Hej, ty!
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_01"); //(ospale) Co je? Co chceš?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_02"); //(ospale) U se vrátil Krokodıl Jack?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_03"); //(ospale) Ne? Tak to urèitì pøijde co nevidìt. Dobrou noc.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_01"); //(ospale) Co je? Co chceÅ¡?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_02"); //(ospale) UÅ¾ se vrÃ¡til KrokodÃ½l Jack?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_03"); //(ospale) Ne? Tak to urÄitÄ› pÅ™ijde co nevidÄ›t. Dobrou noc.
 	AI_StopProcessInfos (self);
 };
 
@@ -150,7 +150,7 @@ INSTANCE DIA_Addon_Morgan_Meat(C_INFO)
 	condition	= DIA_Addon_Morgan_Meat_Condition;
 	information	= DIA_Addon_Morgan_Meat_Info;
 
-	description	= "Mám doruèit nìjaké maso.";
+	description	= "MÃ¡m doruÄit nÄ›jakÃ© maso.";
 };                       
 FUNC INT DIA_Addon_Morgan_Meat_Condition()
 {
@@ -162,20 +162,20 @@ FUNC INT DIA_Addon_Morgan_Meat_Condition()
 };
 func VOID DIA_Addon_Morgan_Meat_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_00"); //Mám ti doruèit nìjaké maso.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_00"); //MÃ¡m ti doruÄit nÄ›jakÃ© maso.
 
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_01"); //(probouzí se) Aáá, musím si nìèeho loknout, abych se vzbudil.
+		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_01"); //(probouzÃ­ se) AÃ¡Ã¡, musÃ­m si nÄ›Äeho loknout, abych se vzbudil.
 		
 		CreateInvItems (self, ItFo_Booze, 3);									
 		B_UseItem (self,ItFo_Booze);
 		
-		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_02"); //To je lepší. Take ještì jednou – co chceš?
-		AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_03"); //Mám ti donést nìjaké maso od Krokodıla Jacka.
+		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_02"); //To je lepÅ¡Ã­. TakÅ¾e jeÅ¡tÄ› jednou â€“ co chceÅ¡?
+		AI_Output (other,self ,"DIA_Addon_Morgan_Meat_15_03"); //MÃ¡m ti donÃ©st nÄ›jakÃ© maso od KrokodÃ½la Jacka.
 	};
 
-	AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_04"); //No jo, maso. U si vzpomínám. Tak ho sem dej!
+	AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_04"); //No jo, maso. UÅ¾ si vzpomÃ­nÃ¡m. Tak ho sem dej!
 	
 	var int GivenMeat; GivenMeat = Npc_HasItems (other, ItFoMuttonRaw);
 	
@@ -188,7 +188,7 @@ func VOID DIA_Addon_Morgan_Meat_Info()
 	
 	if (GivenMeat < 10)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_05"); //Coe? A to je všecko? Jsi zbytek zblajznul, ne? No, nevadí...
+		AI_Output (self ,other,"DIA_Addon_Morgan_Meat_07_05"); //CoÅ¾e? A to je vÅ¡ecko? Jsi zbytek zblajznul, ne? No, nevadÃ­...
 	};
 	
 	B_LogEntry (TOPIC_Addon_BringMeat,"Donesl jsem to maso Morganovi.");
@@ -207,7 +207,7 @@ INSTANCE DIA_Addon_Morgan_Job(C_INFO)
 	condition	= DIA_Addon_Morgan_Job_Condition;
 	information	= DIA_Addon_Morgan_Job_Info;
 
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };                       
 FUNC INT DIA_Addon_Morgan_Job_Condition()
 {
@@ -218,14 +218,14 @@ FUNC INT DIA_Addon_Morgan_Job_Condition()
 };
 FUNC VOID DIA_Addon_Morgan_Job_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Morgan_Job_15_01"); //Co tady dìláš?
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_01"); //Greg ze mì udìlal velitele jednı ze dvou nájezdnickejch skupin.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_02"); //Zodpovídám za zásobování tábora – dohlíí na to Krokodıl Jack.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_03"); //A taky mám na starosti, aby se všecky ty bestie, kterı tu najdeš, drely dál vod tábora.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_04"); //To dìlaj CHLAPI.
+	AI_Output (other, self, "DIA_Addon_Morgan_Job_15_01"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_01"); //Greg ze mÄ› udÄ›lal velitele jednÃ½ ze dvou nÃ¡jezdnickejch skupin.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_02"); //ZodpovÃ­dÃ¡m za zÃ¡sobovÃ¡nÃ­ tÃ¡bora â€“ dohlÃ­Å¾Ã­ na to KrokodÃ½l Jack.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_03"); //A taky mÃ¡m na starosti, aby se vÅ¡ecky ty bestie, kterÃ½ tu najdeÅ¡, drÅ¾ely dÃ¡l vod tÃ¡bora.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_04"); //To dÄ›laj CHLAPI.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Morgan_Job_07_05"); //Øek jsem jim, e a se Greg vrátí, nechci tu vidìt ani jednu potvoru (zívá).
+		AI_Output (self, other, "DIA_Addon_Morgan_Job_07_05"); //Å˜ek jsem jim, Å¾e aÅ¾ se Greg vrÃ¡tÃ­, nechci tu vidÄ›t ani jednu potvoru (zÃ­vÃ¡).
 	};
 };
 
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Morgan_Sleep(C_INFO)
 	condition	= DIA_Addon_Morgan_Sleep_Condition;
 	information	= DIA_Addon_Morgan_Sleep_Info;
 
-	description	= "Dìláš aspoò nìco taky sám?";
+	description	= "DÄ›lÃ¡Å¡ aspoÅˆ nÄ›co taky sÃ¡m?";
 };                       
 FUNC INT DIA_Addon_Morgan_Sleep_Condition()
 {
@@ -250,13 +250,13 @@ FUNC INT DIA_Addon_Morgan_Sleep_Condition()
 };
 FUNC VOID DIA_Addon_Morgan_Sleep_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Sleep_15_00"); //A dìláš taky nìco sám?
+	AI_Output (other,self ,"DIA_Addon_Morgan_Sleep_15_00"); //A dÄ›lÃ¡Å¡ taky nÄ›co sÃ¡m?
 	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_01"); //Tyhle kecy si nech vod cesty.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_02"); //Mùj úkol je nejdùleitìjší ze všech.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_03"); //Já svı lidi cvièím.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_04"); //Dìlám z nich nejlepší a nejobávanìjší bojovníky, kterı se po tìchhle vodách kdy plavili.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_05"); //A rozhodnì to nedìlaj pro nic za nic.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_06"); //Dostanou za to poøádnej váèek zlata.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_02"); //MÅ¯j Ãºkol je nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ ze vÅ¡ech.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_03"); //JÃ¡ svÃ½ lidi cviÄÃ­m.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_04"); //DÄ›lÃ¡m z nich nejlepÅ¡Ã­ a nejobÃ¡vanÄ›jÅ¡Ã­ bojovnÃ­ky, kterÃ½ se po tÄ›chhle vodÃ¡ch kdy plavili.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_05"); //A rozhodnÄ› to nedÄ›laj pro nic za nic.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_06"); //Dostanou za to poÅ™Ã¡dnej vÃ¡Äek zlata.
 };
 
 // ************************************************************
@@ -274,7 +274,7 @@ instance DIA_Addon_Morgan_JoinMorgan(C_INFO)
 	condition	= DIA_Addon_Morgan_JoinMorgan_Condition;
 	information	= DIA_Addon_Morgan_JoinMorgan_Info;
 
-	description	= "Chci se k vám pøidat.";
+	description	= "Chci se k vÃ¡m pÅ™idat.";
 };                       
 FUNC INT DIA_Addon_Morgan_JoinMorgan_Condition()
 {
@@ -286,17 +286,17 @@ FUNC INT DIA_Addon_Morgan_JoinMorgan_Condition()
 };
 func VOID DIA_Addon_Morgan_JoinMorgan_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_JoinMorgan_15_00"); //Chci se ke tvému oddílu pøidat.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_01"); //(smìje se) K mımu voddílu? Ten se potlouká nìkde po plái.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_03"); //Ti chlapi nehnou prstem, dokud se kapitán nevrátí, to je jistı.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_04"); //Ale jestli chceš všem ukázat, e za nìco stojíš, klidnì tu práci na severní plái udìlej za nì.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_05"); //Je tam plno èíhavcù a kdo ví èeho ještì.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_06"); //Jestli je zlikviduješ sám, všichni si tì (zííív) budou váit.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_07"); //Tak tì vítám ve svım voddíle. Ha! A teï si zase lehnu!
+	AI_Output (other,self ,"DIA_Addon_Morgan_JoinMorgan_15_00"); //Chci se ke tvÃ©mu oddÃ­lu pÅ™idat.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_01"); //(smÄ›je se) K mÃ½mu voddÃ­lu? Ten se potloukÃ¡ nÄ›kde po plÃ¡Å¾i.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_03"); //Ti chlapi nehnou prstem, dokud se kapitÃ¡n nevrÃ¡tÃ­, to je jistÃ½.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_04"); //Ale jestli chceÅ¡ vÅ¡em ukÃ¡zat, Å¾e za nÄ›co stojÃ­Å¡, klidnÄ› tu prÃ¡ci na severnÃ­ plÃ¡Å¾i udÄ›lej za nÄ›.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_05"); //Je tam plno ÄÃ­havcÅ¯ a kdo vÃ­ Äeho jeÅ¡tÄ›.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_06"); //Jestli je zlikvidujeÅ¡ sÃ¡m, vÅ¡ichni si tÄ› (zÃ­Ã­Ã­v) budou vÃ¡Å¾it.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_07"); //Tak tÄ› vÃ­tÃ¡m ve svÃ½m voddÃ­le. Ha! A teÄ si zase lehnu!
 	
 	Log_CreateTopic (TOPIC_Addon_MorganBeach,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MorganBeach,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MorganBeach,"Kdy jsem se pøidal k Morganovım lupièùm, dostal jsem novı úkol: mám vyèistit severní plá ode všech potvor.");
+	B_LogEntry (TOPIC_Addon_MorganBeach,"KdyÅ¾ jsem se pÅ™idal k MorganovÃ½m lupiÄÅ¯m, dostal jsem novÃ½ Ãºkol: mÃ¡m vyÄistit severnÃ­ plÃ¡Å¾ ode vÅ¡ech potvor.");
 	
 	MIS_Addon_MorganLurker = LOG_RUNNING;
 	AI_StopProcessInfos (self);
@@ -312,7 +312,7 @@ instance DIA_Addon_Morgan_LurkerPlatt		(C_INFO)
 	condition	= DIA_Addon_Morgan_LurkerPlatt_Condition;
 	information	= DIA_Addon_Morgan_LurkerPlatt_Info;
 	permanent	= TRUE;
-	description	= "Severní plá u je èistá.";
+	description	= "SevernÃ­ plÃ¡Å¾ uÅ¾ je ÄistÃ¡.";
 };
 func int DIA_Addon_Morgan_LurkerPlatt_Condition ()
 {
@@ -328,18 +328,18 @@ func int DIA_Addon_Morgan_LurkerPlatt_Condition ()
 };
 func void DIA_Addon_Morgan_LurkerPlatt_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Morgan_LurkerPlatt_15_00"); //Severní plá u je úplnì vyèištìná.
-	AI_Output (self, other, "DIA_Addon_Morgan_LurkerPlatt_07_01"); //A co ta jeskynì? Tam u jsi taky byl?
+	AI_Output (other, self, "DIA_Addon_Morgan_LurkerPlatt_15_00"); //SevernÃ­ plÃ¡Å¾ uÅ¾ je ÃºplnÄ› vyÄiÅ¡tÄ›nÃ¡.
+	AI_Output (self, other, "DIA_Addon_Morgan_LurkerPlatt_07_01"); //A co ta jeskynÄ›? Tam uÅ¾ jsi taky byl?
 		
 	if (Npc_IsDead(BeachShadowbeast1))
 	{
-		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_02"); //No jasnì.
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_03"); //Prima, seš fakt dobrej chlap.
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_04"); //Tady máš odmìnu.
+		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_02"); //No jasnÄ›.
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_03"); //Prima, seÅ¡ fakt dobrej chlap.
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_04"); //Tady mÃ¡Å¡ odmÄ›nu.
 		CreateInvItems (self, ItMi_Gold, 150);									
 		B_GiveInvItems (self, other, ItMi_Gold, 150);
 		
-		B_LogEntry (TOPIC_Addon_MorganBeach,"Plá u je vyèištìná - všechny potvory jsou pryè.");
+		B_LogEntry (TOPIC_Addon_MorganBeach,"PlÃ¡Å¾ uÅ¾ je vyÄiÅ¡tÄ›nÃ¡ - vÅ¡echny potvory jsou pryÄ.");
 		
 		MIS_Addon_MorganLurker = LOG_SUCCESS;
 				
@@ -348,9 +348,9 @@ func void DIA_Addon_Morgan_LurkerPlatt_Info ()
 	else
 	{
 		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_05"); //Ehm...
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_06"); //No, ta k tomu taky patøí. Vra se, a to budeš mít celı.
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_06"); //No, ta k tomu taky patÅ™Ã­. VraÅ¥ se, aÅ¾ to budeÅ¡ mÃ­t celÃ½.
 		
-		B_LogEntry (TOPIC_Addon_MorganBeach,"Morgan také chce, abych se postaral o jeskyni.");
+		B_LogEntry (TOPIC_Addon_MorganBeach,"Morgan takÃ© chce, abych se postaral o jeskyni.");
 		
 		AI_StopProcessInfos (self);
 	};
@@ -366,7 +366,7 @@ instance DIA_Addon_Morgan_Auftrag2		(C_INFO)
 	condition	= DIA_Addon_Morgan_Auftrag2_Condition;
 	information	= DIA_Addon_Morgan_Auftrag2_Info;
 	permanent	= TRUE;
-	description	= "Mám udìlat ještì nìco?";
+	description	= "MÃ¡m udÄ›lat jeÅ¡tÄ› nÄ›co?";
 };
 func int DIA_Addon_Morgan_Auftrag2_Condition ()
 {
@@ -377,19 +377,19 @@ func int DIA_Addon_Morgan_Auftrag2_Condition ()
 };
 func void DIA_Addon_Morgan_Auftrag2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Morgan_Auftrag2_15_00"); //Mám udìlat ještì nìco?
+	AI_Output	(other, self, "DIA_Addon_Morgan_Auftrag2_15_00"); //MÃ¡m udÄ›lat jeÅ¡tÄ› nÄ›co?
 
 	if (GregIsBack == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_01"); //Teï ne.
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_02"); //Najdi si òákej kavalec na spaní a dej si poøádnou flašku rumu!
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_01"); //TeÄ ne.
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_02"); //Najdi si ÅˆÃ¡kej kavalec na spanÃ­ a dej si poÅ™Ã¡dnou flaÅ¡ku rumu!
 		CreateInvItems (self, ItFo_Booze, 3);									
 		B_UseItem (self,ItFo_Booze);
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_03"); //Aáá, to je dobrá vìc.
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_03"); //AÃ¡Ã¡, to je dobrÃ¡ vÄ›c.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_04"); //Radši by ses mìl zeptat kapitána.
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_04"); //RadÅ¡i by ses mÄ›l zeptat kapitÃ¡na.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -409,7 +409,7 @@ instance DIA_Addon_Morgan_FOUNDTHEM(C_INFO)
 	condition	= DIA_Addon_Morgan_FOUNDTHEM_Condition;
 	information	= DIA_Addon_Morgan_FOUNDTHEM_Info;
 	permanent	= TRUE;
-	description	= "Co se tıèe Anguse a Hanka...";
+	description	= "Co se tÃ½Äe Anguse a Hanka...";
 };                       
 FUNC INT DIA_Addon_Morgan_FOUNDTHEM_Condition()
 {
@@ -422,52 +422,52 @@ FUNC INT DIA_Addon_Morgan_FOUNDTHEM_Condition()
 
 FUNC VOID DIA_Addon_Morgan_FOUNDTHEM_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_00"); //Co se tıèe Anguse a Hanka...
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_00"); //Co se tÃ½Äe Anguse a Hanka...
 	
 	if (Morgan_AngusStory == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_01"); //Ani mi je nepøipomínej!
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_02"); //Nejspíš je zabili piráti.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_03"); //A Angus mìl u sebe mùj prsten.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_04"); //No, svım zpùsobem byl ten prsten JEHO, páè ho na mnì vyhrál v kostkách.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_05"); //Ale stejnì bych ho rád získal zpátky, a teï je nadobro PRYÈ!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_01"); //Ani mi je nepÅ™ipomÃ­nej!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_02"); //NejspÃ­Å¡ je zabili pirÃ¡ti.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_03"); //A Angus mÄ›l u sebe mÅ¯j prsten.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_04"); //No, svÃ½m zpÅ¯sobem byl ten prsten JEHO, pÃ¡Ä ho na mnÄ› vyhrÃ¡l v kostkÃ¡ch.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_05"); //Ale stejnÄ› bych ho rÃ¡d zÃ­skal zpÃ¡tky, a teÄ je nadobro PRYÄŒ!
 		Morgan_AngusStory = TRUE;
 	};
 
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
 	if (Npc_HasItems (other, ItRi_Addon_MorgansRing_Mission) > 0)
 	{
-		Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM, "Našel jsem je.", DIA_Addon_Morgan_FOUNDTHEM_Now);
+		Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM, "NaÅ¡el jsem je.", DIA_Addon_Morgan_FOUNDTHEM_Now);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_06"); //Jestli najdeš mùj prsten, pøines mi ho. Vyplatí se ti to, to ti garantuju!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_06"); //Jestli najdeÅ¡ mÅ¯j prsten, pÅ™ines mi ho. VyplatÃ­ se ti to, to ti garantuju!
 	};
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_Now()
 {
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_01"); //Našel jsem je.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_07"); //Tak povídej, kde jsou?
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_03"); //Jsou mrtví.
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_01"); //NaÅ¡el jsem je.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_07"); //Tak povÃ­dej, kde jsou?
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_15_03"); //Jsou mrtvÃ­.
 	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_08"); //A ten prsten? Co ten prsten?
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
 	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"Tady to je.",DIA_Addon_Morgan_FOUNDTHEM_GiveRing);
-	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"Nemìli to u sebe.",DIA_Addon_Morgan_FOUNDTHEM_NoRing);
+	Info_AddChoice (DIA_Addon_Morgan_FOUNDTHEM,"NemÄ›li to u sebe.",DIA_Addon_Morgan_FOUNDTHEM_NoRing);
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_NoRing()
 {
-	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_15_00"); //Nemìli ho u sebe.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_01"); //(zdìšenì) Coe? Vra se tam podívej se po nìm ještì jednou! Museli ho mít!
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_02"); //Je to malej prstınek se spoustou sloitejch vornamentù.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_03"); //MUSÍŠ ho najít, prostì MUSÍŠ!
+	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_15_00"); //NemÄ›li ho u sebe.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_01"); //(zdÄ›Å¡enÄ›) CoÅ¾e? VraÅ¥ se tam podÃ­vej se po nÄ›m jeÅ¡tÄ› jednou! Museli ho mÃ­t!
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_02"); //Je to malej prstÃ½nek se spoustou sloÅ¾itejch vornamentÅ¯.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_03"); //MUSÃÅ  ho najÃ­t, prostÄ› MUSÃÅ !
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_GiveRing()
 {
 	AI_Output (other, self ,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_15_00"); //Tady je.
 	B_GiveInvItems (other, self ,ItRi_Addon_MorgansRing_Mission,1);
-	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_01"); //(šastnı jako dìcko) Jo, to je von! Hodnej kluk!
-	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_02"); //Tumáš, vem si tuhle kamennou tabulku. Vypadá sice jako bezcennej krám, ale Garett za ni vysolí pìknì tuènou sumièku.
+	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_01"); //(Å¡Å¥astnÃ½ jako dÄ›cko) Jo, to je von! Hodnej kluk!
+	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_02"); //TumÃ¡Å¡, vem si tuhle kamennou tabulku. VypadÃ¡ sice jako bezcennej krÃ¡m, ale Garett za ni vysolÃ­ pÄ›knÄ› tuÄnou sumiÄku.
 	
 	MIS_Addon_Morgan_SeekTraitor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_MorgansRing);
@@ -490,7 +490,7 @@ INSTANCE DIA_Addon_Morgan_Francis(C_INFO)
 	condition	= DIA_Addon_Morgan_Francis_Condition;
 	information	= DIA_Addon_Morgan_Francis_Info;
 
-	description	= "Co si myslíš o Francisovi?";
+	description	= "Co si myslÃ­Å¡ o Francisovi?";
 };                       
 FUNC INT DIA_Addon_Morgan_Francis_Condition()
 {
@@ -506,11 +506,11 @@ FUNC INT DIA_Addon_Morgan_Francis_Condition()
 
 FUNC VOID DIA_Addon_Morgan_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_00"); //Co si myslíš o Francisovi?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_01"); //Nevadí mi, (hrozivì) pokud mì nechává na pokoji.
-	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_02"); //Copak to není zdejší šéf?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_03"); //(zlı smích) MYSLÍ si, e je tu šéf.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_04"); //(škodolibì) Ale a se vrátí Greg, Francis bude zase jen øezat fošny.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_00"); //Co si myslÃ­Å¡ o Francisovi?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_01"); //NevadÃ­ mi, (hrozivÄ›) pokud mÄ› nechÃ¡vÃ¡ na pokoji.
+	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_02"); //Copak to nenÃ­ zdejÅ¡Ã­ Å¡Ã©f?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_03"); //(zlÃ½ smÃ­ch) MYSLÃ si, Å¾e je tu Å¡Ã©f.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_04"); //(Å¡kodolibÄ›) Ale aÅ¾ se vrÃ¡tÃ­ Greg, Francis bude zase jen Å™ezat foÅ¡ny.
 };
 
 
@@ -530,7 +530,7 @@ INSTANCE DIA_Addon_Morgan_TRAIN(C_INFO)
 	condition	= DIA_Addon_Morgan_TRAIN_Condition;
 	information	= DIA_Addon_Morgan_TRAIN_Info;
 
-	description	= "A mohl bys vycvièit taky MÌ?";
+	description	= "A mohl bys vycviÄit taky MÄš?";
 };                       
 FUNC INT DIA_Addon_Morgan_TRAIN_Condition()
 {
@@ -541,8 +541,8 @@ FUNC INT DIA_Addon_Morgan_TRAIN_Condition()
 };
 FUNC VOID DIA_Addon_Morgan_TRAIN_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_TRAIN_15_00"); //Mohl bys vycvièit i MÌ?
-	AI_Output (self ,other,"DIA_Addon_Morgan_TRAIN_07_01"); //Jasnì, mùu ti ukázat, jak bojovat jednoruèníma zbranìma.
+	AI_Output (other,self ,"DIA_Addon_Morgan_TRAIN_15_00"); //Mohl bys vycviÄit i MÄš?
+	AI_Output (self ,other,"DIA_Addon_Morgan_TRAIN_07_01"); //JasnÄ›, mÅ¯Å¾u ti ukÃ¡zat, jak bojovat jednoruÄnÃ­ma zbranÄ›ma.
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Teacher,Log_Text_Addon_MorganTeach);
@@ -563,7 +563,7 @@ instance DIA_Addon_Morgan_Teach(C_INFO)
 	condition	= DIA_Addon_Morgan_Teach_Condition;
 	information	= DIA_Addon_Morgan_Teach_Info;
 	permanent	= TRUE;
-	description	= "Chci se nìco nauèit!";
+	description	= "Chci se nÄ›co nauÄit!";
 };                       
 FUNC INT DIA_Addon_Morgan_Teach_Condition()
 {
@@ -574,7 +574,7 @@ FUNC INT DIA_Addon_Morgan_Teach_Condition()
 };
 func VOID DIA_Addon_Morgan_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Teach_15_00"); //Nauè mì nìco!
+	AI_Output (other,self ,"DIA_Addon_Morgan_Teach_15_00"); //NauÄ mÄ› nÄ›co!
 	
 	Morgan_merke1h = other.HitChance[NPC_TALENT_1H];  
 	
@@ -589,23 +589,23 @@ func VOID DIA_Addon_Morgan_Teach_Back()
 	{
 		if (Morgan_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_00"); //Zapomeò na ty kecy vo cti a tak. Kdy nezabiješ, skonèíš zabitej.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_00"); //ZapomeÅˆ na ty kecy vo cti a tak. KdyÅ¾ nezabijeÅ¡, skonÄÃ­Å¡ zabitej.
 			Morgan_Labercount = 1;	
 		}
 		else if (Morgan_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_01"); //Pøíštì se musíš nauèit dávat do úderù vìtší sílu.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_01"); //PÅ™Ã­Å¡tÄ› se musÃ­Å¡ nauÄit dÃ¡vat do ÃºderÅ¯ vÄ›tÅ¡Ã­ sÃ­lu.
 			Morgan_Labercount = 2;	
 		}
 		else if (Morgan_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_02"); //Ha, ha, ha, aspoò e teï udríš meè.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_02"); //Ha, ha, ha, aspoÅˆ Å¾e teÄ udrÅ¾Ã­Å¡ meÄ.
 			Morgan_Labercount = 0;	
 		};
 	}
 	else if (other.HitChance[NPC_TALENT_1H] >= 75)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_Teach_Back_07_00"); //Jestli chceš bejt ještì lepší, budeš se muset uèit u nìkoho jinıho.
+		AI_Output (self ,other,"DIA_Addon_Morgan_Teach_Back_07_00"); //Jestli chceÅ¡ bejt jeÅ¡tÄ› lepÅ¡Ã­, budeÅ¡ se muset uÄit u nÄ›koho jinÃ½ho.
 	};
 	Info_ClearChoices (DIA_Addon_Morgan_Teach);
 };

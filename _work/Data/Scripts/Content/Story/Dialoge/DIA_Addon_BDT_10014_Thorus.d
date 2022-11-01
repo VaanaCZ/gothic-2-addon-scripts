@@ -39,14 +39,14 @@ FUNC INT DIA_Addon_Thorus_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Hi_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_00");//Pravidla znáš. Bez èervenı kamennı tabulky se nikdo do dolu nedostane.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Hi_15_01");//Na dùl zapomeò - chci vidìt Havrana.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_02");//Ale i tak tu máme svı pravidla a ty se tıkaj všech. Dokonce i tebe.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_03");//Vra se. Kdy se pokusíš bez dovolení vstoupit tam nahoru, stráe tì zabijou. TAKOVİ jsou pravidla.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_00");//Pravidla znÃ¡Å¡. Bez ÄervenÃ½ kamennÃ½ tabulky se nikdo do dolu nedostane.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Hi_15_01");//Na dÅ¯l zapomeÅˆ - chci vidÄ›t Havrana.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_02");//Ale i tak tu mÃ¡me svÃ½ pravidla a ty se tÃ½kaj vÅ¡ech. Dokonce i tebe.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_03");//VraÅ¥ se. KdyÅ¾ se pokusÃ­Å¡ bez dovolenÃ­ vstoupit tam nahoru, strÃ¡Å¾e tÄ› zabijou. TAKOVÃ jsou pravidla.
 	
 	if !Npc_IsDead (Esteban)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_04");//Jestli s tím máš problém, promluv si s Estebanem. Má na starosti tábor.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Hi_12_04");//Jestli s tÃ­m mÃ¡Å¡ problÃ©m, promluv si s Estebanem. MÃ¡ na starosti tÃ¡bor.
 	};
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "START");
@@ -61,7 +61,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Raven   (C_INFO)
 	condition   = DIA_Addon_Thorus_Raven_Condition;
 	information = DIA_Addon_Thorus_Raven_Info;
 	permanent   = FALSE;
-	description = "Musím se nutnì dostat k Havranovi...";
+	description = "MusÃ­m se nutnÄ› dostat k Havranovi...";
 };
 FUNC INT DIA_Addon_Thorus_Raven_Condition()
 {	
@@ -72,14 +72,14 @@ FUNC INT DIA_Addon_Thorus_Raven_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Raven_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raven_15_00");//Nutnì se musím dostat k Havranovi.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_01");//Vánì? Fakt si myslíš, e se k nìmu dostaneš?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_02");//Jeho stráe maj rozkaz, aby k nìmu NIKOHO nepouštìly. Byl bys mrtvej, ještì ne by ses k nìmu dostal.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_03");//Tak to pus z hlavy.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raven_15_00");//NutnÄ› se musÃ­m dostat k Havranovi.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_01");//VÃ¡Å¾nÄ›? Fakt si myslÃ­Å¡, Å¾e se k nÄ›mu dostaneÅ¡?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_02");//Jeho strÃ¡Å¾e maj rozkaz, aby k nÄ›mu NIKOHO nepouÅ¡tÄ›ly. Byl bys mrtvej, jeÅ¡tÄ› neÅ¾ by ses k nÄ›mu dostal.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raven_12_03");//Tak to pusÅ¥ z hlavy.
 
 	Log_CreateTopic (TOPIC_Addon_RavenKDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RavenKDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Havran je vùdcem banditù. Jestli se k nìmu chci dostat, budu jich muset pár odklidit z cesty."); 
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Havran je vÅ¯dcem banditÅ¯. Jestli se k nÄ›mu chci dostat, budu jich muset pÃ¡r odklidit z cesty."); 
 };
 //----------------------------------------------------------------------
 //	Info Zeit
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Zeit   (C_INFO)
 	condition   = DIA_Addon_Thorus_Zeit_Condition;
 	information = DIA_Addon_Thorus_Zeit_Info;
 	permanent   = FALSE;
-	description = "Pamatuješ se na mì? Ze Starého tábora...";
+	description = "PamatujeÅ¡ se na mÄ›? Ze StarÃ©ho tÃ¡bora...";
 };
 FUNC INT DIA_Addon_Thorus_Zeit_Condition()
 {	
@@ -102,16 +102,16 @@ FUNC INT DIA_Addon_Thorus_Zeit_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Zeit_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Zeit_15_00");//Ty se na mì nepamatuješ? Ze Starıho tábora?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_01");//Tys byl jedním z vìzòù?! Klidnì jsi moh patøit i k mı strái. A to si myslíš, e z nás teï dìlá spojence, nebo co?
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Zeit_15_00");//Ty se na mÄ› nepamatujeÅ¡? Ze StarÃ½ho tÃ¡bora?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_01");//Tys byl jednÃ­m z vÄ›zÅˆÅ¯?! KlidnÄ› jsi moh patÅ™it i k mÃ½ strÃ¡Å¾i. A to si myslÃ­Å¡, Å¾e z nÃ¡s teÄ dÄ›lÃ¡ spojence, nebo co?
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_02");//Ne, to ne.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_03");//Moná seš ten maník, co rozbil bariéru - a moná seš i ten, co pobil mı kámoše.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_03");//MoÅ¾nÃ¡ seÅ¡ ten manÃ­k, co rozbil bariÃ©ru - a moÅ¾nÃ¡ seÅ¡ i ten, co pobil mÃ½ kÃ¡moÅ¡e.
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_04");//A co?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_05");//Ty doby u jsou pryè.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_05");//Ty doby uÅ¾ jsou pryÄ.
 	
 	if !Npc_IsDead (Esteban)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_06");//Chceš dovnitø? Tak si seeò èervenej kámen a nezdruj mì.
+		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Zeit_12_06");//ChceÅ¡ dovnitÅ™? Tak si seÅ¾eÅˆ Äervenej kÃ¡men a nezdrÅ¾uj mÄ›.
 	};
 };
 
@@ -127,7 +127,7 @@ instance DIA_Addon_BDT_10014_Thorus_GoodOldPerm  (C_INFO)
 	condition   = DIA_Addon_Thorus_GoodOldPerm_Condition;
 	information = DIA_Addon_Thorus_GoodOldPerm_Info;
 	permanent   = TRUE;
-	description = "No tak, pus mì dál. Kvùli starım dobrım èasùm.";
+	description = "No tak, pusÅ¥ mÄ› dÃ¡l. KvÅ¯li starÃ½m dobrÃ½m ÄasÅ¯m.";
 };
 FUNC INT DIA_Addon_Thorus_GoodOldPerm_Condition()
 {	
@@ -140,18 +140,18 @@ FUNC INT DIA_Addon_Thorus_GoodOldPerm_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_GoodOldPerm_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Thorus_Add_15_00"); //No tak, pus mì tam. Pro starı dobrı èasy.
+	AI_Output (other, self, "DIA_Addon_Thorus_Add_15_00"); //No tak, pusÅ¥ mÄ› tam. Pro starÃ½ dobrÃ½ Äasy.
 	if (Thorus_GoodOldPerm == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_01"); //Nìco ti vysvìtlím. Víš, proè jsem ještì naivu?
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_02"); //Protoe jsem vdycky vìrnej svejm lidem.
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_03"); //Nemusím souhlasit se vším, co Havran dìlá, ale musím dodrovat pravidla. 
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_01"); //NÄ›co ti vysvÄ›tlÃ­m. VÃ­Å¡, proÄ jsem jeÅ¡tÄ› naÅ¾ivu?
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_02"); //ProtoÅ¾e jsem vÅ¾dycky vÄ›rnej svejm lidem.
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_03"); //NemusÃ­m souhlasit se vÅ¡Ã­m, co Havran dÄ›lÃ¡, ale musÃ­m dodrÅ¾ovat pravidla. 
 		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_04"); //A ty taky!
 		Thorus_GoodOldPerm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_05"); //(pevnì) Ne!
+		AI_Output (self, other, "DIA_Addon_Thorus_Add_12_05"); //(pevnÄ›) Ne!
 	};
 };
 
@@ -181,7 +181,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Stein   (C_INFO)
 	condition   = DIA_Addon_Thorus_Stein_Condition;
 	information = DIA_Addon_Thorus_Stein_Info;
 	permanent   = TRUE;
-	description = "Mám tu pro tebe kamennou tabulku...";
+	description = "MÃ¡m tu pro tebe kamennou tabulku...";
 };
 FUNC INT DIA_Addon_Thorus_Stein_Condition()
 {	
@@ -195,8 +195,8 @@ FUNC INT DIA_Addon_Thorus_Stein_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Stein_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Stein_15_00");//Mám tu pro tebe kamennou tabulku.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Stein_12_01");//Tohle není ten pravej kámen. Dùleitı jsou jenom ty èervenı.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Stein_15_00");//MÃ¡m tu pro tebe kamennou tabulku.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Stein_12_01");//Tohle nenÃ­ ten pravej kÃ¡men. DÅ¯leÅ¾itÃ½ jsou jenom ty ÄervenÃ½.
 };
 //----------------------------------------------------------------------
 //	Info Rein
@@ -208,7 +208,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Rein   (C_INFO)
 	condition   = DIA_Addon_Thorus_Rein_Condition;
 	information = DIA_Addon_Thorus_Rein_Info;
 	permanent   = FALSE;
-	description = "Mám tu pro tebe èervenou kamennou tabulku...";
+	description = "MÃ¡m tu pro tebe Äervenou kamennou tabulku...";
 };
 FUNC INT DIA_Addon_Thorus_Rein_Condition()
 {	
@@ -220,18 +220,18 @@ FUNC INT DIA_Addon_Thorus_Rein_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Rein_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_00");//Mám tu èervenou tabulku.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_00");//MÃ¡m tu Äervenou tabulku.
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_01");//Fajn.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_02");//Ty jsi zabil Estebana, take teï budeš jeho práci dìlat TY!
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_03");//V dole mají trochu problémy s dùlníma èervama.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_04");//U to koupili tøi kopáèi a ty se teï máš postarat o náhradu.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_05");//A kdy se koneènì dostanu do toho zatracenıho dolu?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_06");//Napøed dokonèi práci a pak si mùeš dìlat, co chceš.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_02");//Ty jsi zabil Estebana, takÅ¾e teÄ budeÅ¡ jeho prÃ¡ci dÄ›lat TY!
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_03");//V dole majÃ­ trochu problÃ©my s dÅ¯lnÃ­ma Äervama.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_04");//UÅ¾ to koupili tÅ™i kopÃ¡Äi a ty se teÄ mÃ¡Å¡ postarat o nÃ¡hradu.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Rein_15_05");//A kdy se koneÄnÄ› dostanu do toho zatracenÃ½ho dolu?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Rein_12_06");//NapÅ™ed dokonÄi prÃ¡ci a pak si mÅ¯Å¾eÅ¡ dÄ›lat, co chceÅ¡.
 	
 	MIS_Send_Buddler = LOG_RUNNING;
 	Log_CreateTopic (Topic_Addon_Buddler,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Buddler, LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Buddler,"Jeliko jsem teï nahradil Estebana, mìl bych do dolu poslat tøi kopáèe.");
+	B_LogEntry (Topic_Addon_Buddler,"JelikoÅ¾ jsem teÄ nahradil Estebana, mÄ›l bych do dolu poslat tÅ™i kopÃ¡Äe.");
 };
 //----------------------------------------------------------------------
 //	Info drei typen losgeschickt
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Sent   (C_INFO)
 	condition   = DIA_Addon_Thorus_Sent_Condition;
 	information = DIA_Addon_Thorus_Sent_Info;
 	permanent   = FALSE;
-	description = "Poslal jsem tam tøi chlapy.";
+	description = "Poslal jsem tam tÅ™i chlapy.";
 };
 FUNC INT DIA_Addon_Thorus_Sent_Condition()
 {	
@@ -255,8 +255,8 @@ FUNC INT DIA_Addon_Thorus_Sent_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Sent_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Sent_15_00");//Poslal jsem tam tøi chlapy.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Sent_12_01");//No dobøe. Tak teï si pro mì za mì mùeš jít dovnitø.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Sent_15_00");//Poslal jsem tam tÅ™i chlapy.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Sent_12_01");//No dobÅ™e. Tak teÄ si pro mÄ› za mÄ› mÅ¯Å¾eÅ¡ jÃ­t dovnitÅ™.
 
 	MIS_Send_Buddler = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
@@ -271,7 +271,7 @@ INSTANCE DIA_Addon_BDT_10014_Thorus_Armor   (C_INFO)
 	condition   = DIA_Addon_Thorus_Armor_Condition;
 	information = DIA_Addon_Thorus_Armor_Info;
 	permanent   = FALSE;
-	description = "No teda, co to máš za brnìní? Kde bych takové sehnal?";
+	description = "No teda, co to mÃ¡Å¡ za brnÄ›nÃ­? Kde bych takovÃ© sehnal?";
 };
 FUNC INT DIA_Addon_Thorus_Armor_Condition()
 {	
@@ -282,9 +282,9 @@ FUNC INT DIA_Addon_Thorus_Armor_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Armor_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Armor_15_00");//Hele, co to máš za zbroj? Kde bych takovou sehnal?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_01");//To nejde. Tuhle zbroj mùou nosit jenom Havranovy stráe.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_02");//Pochybuju, e by noví kandidáti mìli skládat òákı zkoušky Ale závìreènı rozhodnutí stejnì nezáleí na mnì, ale na Havranovi.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Armor_15_00");//Hele, co to mÃ¡Å¡ za zbroj? Kde bych takovou sehnal?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_01");//To nejde. Tuhle zbroj mÅ¯Å¾ou nosit jenom Havranovy strÃ¡Å¾e.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Armor_12_02");//Pochybuju, Å¾e by novÃ­ kandidÃ¡ti mÄ›li sklÃ¡dat ÅˆÃ¡kÃ½ zkouÅ¡ky Ale zÃ¡vÄ›reÄnÃ½ rozhodnutÃ­ stejnÄ› nezÃ¡leÅ¾Ã­ na mnÄ›, ale na Havranovi.
 };
 //----------------------------------------------------------------------
 //	Info Gefangene
@@ -296,7 +296,7 @@ INSTANCE DIA_Addon_Thorus_Gefangene   (C_INFO)
 	condition   = DIA_Addon_Thorus_Gefangene_Condition;
 	information = DIA_Addon_Thorus_Gefangene_Info;
 	permanent   = FALSE;
-	description = "Jak se vede vìzòùm?";
+	description = "Jak se vede vÄ›zÅˆÅ¯m?";
 };
 FUNC INT DIA_Addon_Thorus_Gefangene_Condition()
 {	
@@ -308,13 +308,13 @@ FUNC INT DIA_Addon_Thorus_Gefangene_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Gefangene_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_00");//Jak se vede vìzòùm?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_01");//Hmm, udìlali svou práci. Pokud vím, teï by mìli kutat zlato.
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_02");//A co kdy uteèou?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_03");//Tak za nima Bloodwyn pošle stráe. Ale pochybuju, e by byli tak blbí a utíkali.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_00");//Jak se vede vÄ›zÅˆÅ¯m?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_01");//Hmm, udÄ›lali svou prÃ¡ci. Pokud vÃ­m, teÄ by mÄ›li kutat zlato.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_02");//A co kdyÅ¾ uteÄou?
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_03");//Tak za nima Bloodwyn poÅ¡le strÃ¡Å¾e. Ale pochybuju, Å¾e by byli tak blbÃ­ a utÃ­kali.
 	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_04");//Pokud...
 	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Gefangene_15_05");//Pokud co?
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_06");//Pokud je k tomu nìkdo nepøimìje. Ale ádnıho takovıho cvoka neznám, aspoò dokud je tu Bloodwyn.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Gefangene_12_06");//Pokud je k tomu nÄ›kdo nepÅ™imÄ›je. Ale Å¾Ã¡dnÃ½ho takovÃ½ho cvoka neznÃ¡m, aspoÅˆ dokud je tu Bloodwyn.
 	B_Say (other, self,"$VERSTEHE");
 };
 //----------------------------------------------------------------------
@@ -339,23 +339,23 @@ FUNC INT DIA_Addon_Thorus_Speech_Condition()
 FUNC VOID DIA_Addon_Thorus_Speech_Info()
 {	
 	
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_00");//Co máš v plánu?
-	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_01");//Coe??
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_00");//Co mÃ¡Å¡ v plÃ¡nu?
+	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_01");//CoÅ¾e??
 	
 	if (RavenIsDead == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_02");//Take teï u jsi z cesty odklidil i Bloodwyna. Jen se ptám, kdo bude další na øadì. Havran? Nebo já?
-		AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_03");//Bojíš se?
-		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_04");//Z boje strach nemám, ale bojím se následkù, kterı by tvı èiny mohly mít.
+		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_02");//TakÅ¾e teÄ uÅ¾ jsi z cesty odklidil i Bloodwyna. Jen se ptÃ¡m, kdo bude dalÅ¡Ã­ na Å™adÄ›. Havran? Nebo jÃ¡?
+		AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_03");//BojÃ­Å¡ se?
+		AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_04");//Z boje strach nemÃ¡m, ale bojÃ­m se nÃ¡sledkÅ¯, kterÃ½ by tvÃ½ Äiny mohly mÃ­t.
 	};
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");//Tenhle tábor je to jedinı, co nám ještì zbejvá.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");//Moná nefunguje dokonale, ale hlavnì e ÒÁK funguje.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_07");//A s kadım zabitım zmizí i èást naší komunity.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_08");//My jsme banditi. Vydìdìnci, zloèinci, desperáti.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_09");//Pùjdou po nás, kamkoliv se hneme. Budou se nás snait zavøít a zabít.
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_10");//Lepší místo ne tohle u pro nás není, a lepší èas taky ne.
-	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_11");//Kam tím míøíš?
-	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_12");//Tihle chlapi potøebujou nìkoho, kdo je povede. Kdo by to mìl bejt? Ty? Kdy se furt couráš z místa na místo?
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_05");//Tenhle tÃ¡bor je to jedinÃ½, co nÃ¡m jeÅ¡tÄ› zbejvÃ¡.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_06");//MoÅ¾nÃ¡ nefunguje dokonale, ale hlavnÄ› Å¾e Å‡ÃK funguje.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_07");//A s kaÅ¾dÃ½m zabitÃ½m zmizÃ­ i ÄÃ¡st naÅ¡Ã­ komunity.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_08");//My jsme banditi. VydÄ›dÄ›nci, zloÄinci, desperÃ¡ti.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_09");//PÅ¯jdou po nÃ¡s, kamkoliv se hneme. Budou se nÃ¡s snaÅ¾it zavÅ™Ã­t a zabÃ­t.
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_10");//LepÅ¡Ã­ mÃ­sto neÅ¾ tohle uÅ¾ pro nÃ¡s nenÃ­, a lepÅ¡Ã­ Äas taky ne.
+	AI_Output (other, self, "DIA_Addon_Thorus_Speech_15_11");//Kam tÃ­m mÃ­Å™Ã­Å¡?
+	AI_Output (self, other, "DIA_Addon_Thorus_Speech_12_12");//Tihle chlapi potÅ™ebujou nÄ›koho, kdo je povede. Kdo by to mÄ›l bejt? Ty? KdyÅ¾ se furt courÃ¡Å¡ z mÃ­sta na mÃ­sto?
 };
 //----------------------------------------------------------------------
 //	Info Answer
@@ -367,7 +367,7 @@ INSTANCE DIA_Addon_Thorus_Answer   (C_INFO)
 	condition   = DIA_Addon_Thorus_Answer_Condition;
 	information = DIA_Addon_Thorus_Answer_Info;
 	permanent   = FALSE;
-	description = "Pak se ujmi vedení tábora ty.";
+	description = "Pak se ujmi vedenÃ­ tÃ¡bora ty.";
 };
 FUNC INT DIA_Addon_Thorus_Answer_Condition()
 {	
@@ -378,25 +378,25 @@ FUNC INT DIA_Addon_Thorus_Answer_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Answer_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_00");//Pak se ujmi vedení tábora ty.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_00");//Pak se ujmi vedenÃ­ tÃ¡bora ty.
 	
 	if (RavenIsDead == FALSE)
 	{
 		AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_01");//No jo, ale co Havran?
-		AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_02");//Havran bude mít brzo úplnì jiné starosti. Já se o nìj postarám.
+		AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_02");//Havran bude mÃ­t brzo ÃºplnÄ› jinÃ© starosti. JÃ¡ se o nÄ›j postarÃ¡m.
 	};
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_03");//Jo, a taky dohlídni na to, aby vìzni mohli v klidu odejít z tábora.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_04");//No dobøe. Postarám se o všecky zdejší stráe.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Answer_15_03");//Jo, a taky dohlÃ­dni na to, aby vÄ›zni mohli v klidu odejÃ­t z tÃ¡bora.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Answer_12_04");//No dobÅ™e. PostarÃ¡m se o vÅ¡ecky zdejÅ¡Ã­ strÃ¡Å¾e.
 	
-	B_LogEntry (Topic_Addon_Sklaven,"Bloodwyn je mrtvı a Thorus se postará, aby otroci mohli odejít z tábora."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Bloodwyn je mrtvÃ½ a Thorus se postarÃ¡, aby otroci mohli odejÃ­t z tÃ¡bora."); 
 	
 	if !Npc_IsDead (PrisonGuard)
 	{
-		B_LogEntry (Topic_Addon_Sklaven,"Teï si s tím 'hlídaèem otrokù' promluvím ještì jednou, aby Patrick a jeho chlapi mohli odejít."); 
+		B_LogEntry (Topic_Addon_Sklaven,"TeÄ si s tÃ­m 'hlÃ­daÄem otrokÅ¯' promluvÃ­m jeÅ¡tÄ› jednou, aby Patrick a jeho chlapi mohli odejÃ­t."); 
 	}
 	else
 	{
-		B_LogEntry (Topic_Addon_Sklaven,"S 'hlídaèem otrokù' u jsem se vypoøádal a Patrick teï mùe klidnì odejít i se svımi lidmi."); 
+		B_LogEntry (Topic_Addon_Sklaven,"S 'hlÃ­daÄem otrokÅ¯' uÅ¾ jsem se vypoÅ™Ã¡dal a Patrick teÄ mÅ¯Å¾e klidnÄ› odejÃ­t i se svÃ½mi lidmi."); 
 	};
 };
 //----------------------------------------------------------------------
@@ -409,7 +409,7 @@ INSTANCE DIA_Addon_Thorus_Raventot   (C_INFO)
 	condition   = DIA_Addon_Thorus_Raventot_Condition;
 	information = DIA_Addon_Thorus_Raventot_Info;
 	permanent   = FALSE;
-	description = "Zvládnul jsem to. Havran u to má za sebou.";
+	description = "ZvlÃ¡dnul jsem to. Havran uÅ¾ to mÃ¡ za sebou.";
 };
 FUNC INT DIA_Addon_Thorus_Raventot_Condition()
 {	
@@ -420,13 +420,13 @@ FUNC INT DIA_Addon_Thorus_Raventot_Condition()
 };
 FUNC VOID DIA_Addon_Thorus_Raventot_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_00");//A je to. Havran u to má za sebou.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_01");//To znamená, e jsi Beliarovi zasadil poøádnou ránu.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_02");//Take pùjdeš dál?
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_03");//Moje práce v tomhle údolí skonèila. Teï bych si rád pár dní odpoèal.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_04");//(smìje se) Jo, ty seš furt na pochodu, co? (vánì) Tak šastnou cestu!
-	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_05");//Kdo ví, moná na sebe ještì nìkdy narazíme.
-	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_06");//Kdo ví. Ještì budeš muset projít mnoha prùsmykama i chodbama. A v jednı z nich mì najdeš.
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_00");//A je to. Havran uÅ¾ to mÃ¡ za sebou.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_01");//To znamenÃ¡, Å¾e jsi Beliarovi zasadil poÅ™Ã¡dnou rÃ¡nu.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_02");//TakÅ¾e pÅ¯jdeÅ¡ dÃ¡l?
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_03");//Moje prÃ¡ce v tomhle ÃºdolÃ­ skonÄila. TeÄ bych si rÃ¡d pÃ¡r dnÃ­ odpoÄal.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_04");//(smÄ›je se) Jo, ty seÅ¡ furt na pochodu, co? (vÃ¡Å¾nÄ›) Tak Å¡Å¥astnou cestu!
+	AI_Output (other, self, "DIA_Addon_BDT_10014_Thorus_Raventot_15_05");//Kdo vÃ­, moÅ¾nÃ¡ na sebe jeÅ¡tÄ› nÄ›kdy narazÃ­me.
+	AI_Output (self, other, "DIA_Addon_BDT_10014_Thorus_Raventot_12_06");//Kdo vÃ­. JeÅ¡tÄ› budeÅ¡ muset projÃ­t mnoha prÅ¯smykama i chodbama. A v jednÃ½ z nich mÄ› najdeÅ¡.
 	
 	AI_StopProcessInfos (self);
 	

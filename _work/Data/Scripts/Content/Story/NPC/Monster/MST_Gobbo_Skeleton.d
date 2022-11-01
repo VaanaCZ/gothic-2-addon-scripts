@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Gobbo_Skeleton(C_NPC)			
 {
 	//----- Monster ----
-	name							=	"Gobliní kostlivec";
+	name							=	"GoblinÃ­ kostlivec";
 	guild							=	GIL_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_SKELETON;
 	level							=	15;
@@ -73,7 +73,7 @@ INSTANCE Gobbo_Skeleton	(Mst_Default_Gobbo_Skeleton)
 {
 	B_SetVisuals_Gobbo_Skeleton();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };
 
 
@@ -83,7 +83,7 @@ INSTANCE Gobbo_Skeleton	(Mst_Default_Gobbo_Skeleton)
 
 INSTANCE Summoned_Gobbo_Skeleton (Mst_Default_Gobbo_Skeleton)
 {
-	name							= "Vyvolaný kostlivec";
+	name							= "VyvolanÃ½ kostlivec";
 	guild							= GIL_SUMMONED_GOBBO_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_GOBBO_SKELETON;
 	level							= 0;
@@ -95,17 +95,17 @@ INSTANCE Summoned_Gobbo_Skeleton (Mst_Default_Gobbo_Skeleton)
 	
 	B_SetVisuals_Gobbo_Skeleton();
 	
-	Npc_SetToFightMode (self, ItMw_1H_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1H_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };
 
 
 //************************************
-//	Gobbo_Skeleton im OW Dämonenturm	
+//	Gobbo_Skeleton im OW DÃ¤monenturm	
 //************************************
 INSTANCE Gobbo_SkeletonOWDemonTower	(Mst_Default_Gobbo_Skeleton)
 {
 	B_SetVisuals_Gobbo_Skeleton();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };
 	

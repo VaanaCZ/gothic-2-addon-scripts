@@ -23,8 +23,8 @@ FUNC VOID DIA_Carl_EXIT_Info()
 ///////////////////////////////////////////////////////////////////////
 FUNC VOID B_CarlSayHallo ()
 {
-	AI_Output (self, other, "DIA_Carl_Hallo_05_00"); //Vypadá to, e tu ve mìstì máme pár zlodìjù, co okrádají boháèe.
-	AI_Output (self, other, "DIA_Carl_Hallo_05_01"); //Mìstská strá nedávno obrátila pøístavní ètvr vzhùru nohama, ale nenašli vùbec nic.
+	AI_Output (self, other, "DIA_Carl_Hallo_05_00"); //VypadÃ¡ to, Å¾e tu ve mÄ›stÄ› mÃ¡me pÃ¡r zlodÄ›jÅ¯, co okrÃ¡dajÃ­ bohÃ¡Äe.
+	AI_Output (self, other, "DIA_Carl_Hallo_05_01"); //MÄ›stskÃ¡ strÃ¡Å¾ nedÃ¡vno obrÃ¡tila pÅ™Ã­stavnÃ­ ÄtvrÅ¥ vzhÅ¯ru nohama, ale nenaÅ¡li vÅ¯bec nic.
 	
 };
 // ************************************************************
@@ -85,26 +85,26 @@ FUNC INT DIA_Carl_Hallo_Condition()
 };
 FUNC VOID DIA_Carl_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Carl_Hallo_05_02"); //Co dìláš v tıhle ubohı špinavı díøe? Co tady hledáš?
+	AI_Output (self, other, "DIA_Carl_Hallo_05_02"); //Co dÄ›lÃ¡Å¡ v tÃ½hle ubohÃ½ Å¡pinavÃ½ dÃ­Å™e? Co tady hledÃ¡Å¡?
 	
 	Info_ClearChoices (DIA_Carl_Hallo);
 	Info_AddChoice (DIA_Carl_Hallo,"Zabloudil jsem.",DIA_Carl_Hallo_verlaufen);
-	Info_AddChoice (DIA_Carl_Hallo,"Jen se dívám kolem.",DIA_Carl_Hallo_umsehen);
+	Info_AddChoice (DIA_Carl_Hallo,"Jen se dÃ­vÃ¡m kolem.",DIA_Carl_Hallo_umsehen);
 	
 	
 };
 FUNC VOID DIA_Carl_Hallo_verlaufen()
 {
 	AI_Output (other, self, "DIA_Carl_Hallo_verlaufen_15_00");//Zabloudil jsem.
-	AI_Output (self, other, "DIA_Carl_Hallo_verlaufen_05_01");//Tak si dávej pozor, aby tì nikdo neokradl.
+	AI_Output (self, other, "DIA_Carl_Hallo_verlaufen_05_01");//Tak si dÃ¡vej pozor, aby tÄ› nikdo neokradl.
 	B_CarlSayHallo();
 	Info_ClearChoices (DIA_Carl_Hallo);
 	
 };
 FUNC VOID DIA_Carl_Hallo_umsehen()
 {
-	AI_Output (other, self, "DIA_Carl_Hallo_umsehen_15_00");//Jen se dívám kolem.
-	AI_Output (self, other, "DIA_Carl_Hallo_umsehen_05_01");//Aha. Tak si dávej bacha, a tì nikdo nechytí, jak tu èenicháš.
+	AI_Output (other, self, "DIA_Carl_Hallo_umsehen_15_00");//Jen se dÃ­vÃ¡m kolem.
+	AI_Output (self, other, "DIA_Carl_Hallo_umsehen_05_01");//Aha. Tak si dÃ¡vej bacha, aÅ¥ tÄ› nikdo nechytÃ­, jak tu ÄenichÃ¡Å¡.
 	B_CarlSayHallo();
 	Info_ClearChoices (DIA_Carl_Hallo);
 };
@@ -118,7 +118,7 @@ INSTANCE DIA_Carl_Diebe   (C_INFO)
 	condition   = DIA_Carl_Diebe_Condition;
 	information = DIA_Carl_Diebe_Info;
 	permanent   = FALSE;
-	description	= "Co víš o tìch zlodìjích?";
+	description	= "Co vÃ­Å¡ o tÄ›ch zlodÄ›jÃ­ch?";
 };
 
 FUNC INT DIA_Carl_Diebe_Condition()
@@ -127,10 +127,10 @@ FUNC INT DIA_Carl_Diebe_Condition()
 };
 FUNC VOID DIA_Carl_Diebe_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Diebe_15_00");//Co víš o tìch zlodìjích?
-	AI_Output (self, other, "DIA_Carl_Diebe_05_01");//Nic. Ale všichni mìšané jsou vydìšení a zaèínají bıt nedùvìøiví - obzvláš vùèi cizincùm.
-	AI_Output (self, other, "DIA_Carl_Diebe_05_02");//Nenech se nachytat v cizím domì - na to se tady nikdo nekouká moc vlídnì.
-	AI_Output (self, other, "DIA_Carl_Diebe_05_03");//Ano, musíš se umìt bránit zlodìjùm. Nejlíp na to jít s poøádnì tlustım klackem.
+	AI_Output (other, self, "DIA_Carl_Diebe_15_00");//Co vÃ­Å¡ o tÄ›ch zlodÄ›jÃ­ch?
+	AI_Output (self, other, "DIA_Carl_Diebe_05_01");//Nic. Ale vÅ¡ichni mÄ›Å¡Å¥anÃ© jsou vydÄ›Å¡enÃ­ a zaÄÃ­najÃ­ bÃ½t nedÅ¯vÄ›Å™ivÃ­ - obzvlÃ¡Å¡Å¥ vÅ¯Äi cizincÅ¯m.
+	AI_Output (self, other, "DIA_Carl_Diebe_05_02");//Nenech se nachytat v cizÃ­m domÄ› - na to se tady nikdo nekoukÃ¡ moc vlÃ­dnÄ›.
+	AI_Output (self, other, "DIA_Carl_Diebe_05_03");//Ano, musÃ­Å¡ se umÄ›t brÃ¡nit zlodÄ›jÅ¯m. NejlÃ­p na to jÃ­t s poÅ™Ã¡dnÄ› tlustÃ½m klackem.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lernen
@@ -142,7 +142,7 @@ INSTANCE DIA_Carl_Lernen   (C_INFO)
 	condition   = DIA_Carl_Lernen_Condition;
 	information = DIA_Carl_Lernen_Info;
 	permanent   = FALSE;
-	description	= "Mùeš mì nìèemu nauèit?";
+	description	= "MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };
 
 FUNC INT DIA_Carl_Lernen_Condition()
@@ -151,17 +151,17 @@ FUNC INT DIA_Carl_Lernen_Condition()
 };
 FUNC VOID DIA_Carl_Lernen_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Lernen_15_00");//Mùu se u tebe nìèemu pøiuèit?
-	AI_Output (self, other, "DIA_Carl_Lernen_05_01");//No, vyrobil jsem nìkolik klik a nìco høebíkù a opravuju kovové souèástky.
-	AI_Output (self, other, "DIA_Carl_Lernen_05_02");//Ale o kování zbraní toho nevím tolik, abych tì mohl uèit.
-	AI_Output (self, other, "DIA_Carl_Lernen_05_03");//Jestli se chceš nìco nauèit, zajdi za Haradem. On urèitì ví, jak se vyrábìjí zbranì!
-	AI_Output (self, other, "DIA_Carl_Lernen_05_04");//Ale jestli si chceš trochu vypracovat svaly, tak s tím ti mùu pomoct.
+	AI_Output (other, self, "DIA_Carl_Lernen_15_00");//MÅ¯Å¾u se u tebe nÄ›Äemu pÅ™iuÄit?
+	AI_Output (self, other, "DIA_Carl_Lernen_05_01");//No, vyrobil jsem nÄ›kolik klik a nÄ›co hÅ™ebÃ­kÅ¯ a opravuju kovovÃ© souÄÃ¡stky.
+	AI_Output (self, other, "DIA_Carl_Lernen_05_02");//Ale o kovÃ¡nÃ­ zbranÃ­ toho nevÃ­m tolik, abych tÄ› mohl uÄit.
+	AI_Output (self, other, "DIA_Carl_Lernen_05_03");//Jestli se chceÅ¡ nÄ›co nauÄit, zajdi za Haradem. On urÄitÄ› vÃ­, jak se vyrÃ¡bÄ›jÃ­ zbranÄ›!
+	AI_Output (self, other, "DIA_Carl_Lernen_05_04");//Ale jestli si chceÅ¡ trochu vypracovat svaly, tak s tÃ­m ti mÅ¯Å¾u pomoct.
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Carl, kováø z pøístavní ètvrti, mi mùe pomoci vylepšit sílu.");
+	B_LogEntry (Topic_CityTeacher,"Carl, kovÃ¡Å™ z pÅ™Ã­stavnÃ­ Ätvrti, mi mÅ¯Å¾e pomoci vylepÅ¡it sÃ­lu.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Für's lernen bezahlen 
+//	Info FÃ¼r's lernen bezahlen 
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Carl_Wieviel   (C_INFO)
 {
@@ -170,7 +170,7 @@ INSTANCE DIA_Carl_Wieviel   (C_INFO)
 	condition   = DIA_Carl_Wieviel_Condition;
 	information = DIA_Carl_Wieviel_Info;
 	permanent   = FALSE;
-	description	= "Kolik si za vıcvik necháváš platit?";
+	description	= "Kolik si za vÃ½cvik nechÃ¡vÃ¡Å¡ platit?";
 };
 
 FUNC INT DIA_Carl_Wieviel_Condition()
@@ -182,16 +182,16 @@ FUNC INT DIA_Carl_Wieviel_Condition()
 };
 FUNC VOID DIA_Carl_Wieviel_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Wieviel_15_00");//Kolik si necháváš platit za vıcvik?
+	AI_Output (other, self, "DIA_Carl_Wieviel_15_00");//Kolik si nechÃ¡vÃ¡Å¡ platit za vÃ½cvik?
 	
 	if Npc_KnowsInfo (other,DIA_Edda_Statue)
 	{
-		AI_Output (self, other, "DIA_Carl_Wieviel_05_01");//Slyšel jsem, es pracoval pro Eddu. Budu tì cvièit zadarmo.
+		AI_Output (self, other, "DIA_Carl_Wieviel_05_01");//SlyÅ¡el jsem, Å¾es pracoval pro Eddu. Budu tÄ› cviÄit zadarmo.
 		Carl_TeachSTR = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Carl_Wieviel_05_02");//50 zlatıch a já ti dopomùu k vìtší síle.
+		AI_Output (self, other, "DIA_Carl_Wieviel_05_02");//50 zlatÃ½ch a jÃ¡ ti dopomÅ¯Å¾u k vÄ›tÅ¡Ã­ sÃ­le.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ INSTANCE DIA_Carl_bezahlen   (C_INFO)
 	condition   = DIA_Carl_bezahlen_Condition;
 	information = DIA_Carl_bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Rád bych se u tebe nechal vycvièit (zaplatit 50 zlaákù).";
+	description	= "RÃ¡d bych se u tebe nechal vycviÄit (zaplatit 50 zlaÅ¥Ã¡kÅ¯).";
 };
 FUNC INT DIA_Carl_bezahlen_Condition()
 {	
@@ -216,23 +216,23 @@ FUNC INT DIA_Carl_bezahlen_Condition()
 };
 FUNC VOID DIA_Carl_bezahlen_Info()
 {
-	AI_Output (other, self, "DIA_Carl_bezahlen_15_00");//Chtìl bych s tebou cvièit.
+	AI_Output (other, self, "DIA_Carl_bezahlen_15_00");//ChtÄ›l bych s tebou cviÄit.
 	
 	if Npc_KnowsInfo (other,DIA_Edda_Statue)
 	{
-		AI_Output (self, other, "DIA_Carl_bezahlen_05_01");//Slyšel jsem, es pracoval pro Eddu. Budu tì cvièit zadarmo.
+		AI_Output (self, other, "DIA_Carl_bezahlen_05_01");//SlyÅ¡el jsem, Å¾es pracoval pro Eddu. Budu tÄ› cviÄit zadarmo.
 		Carl_TeachSTR = TRUE;
 	}
 	else 
 	{
 		if B_GiveInvItems (other, self, ItMi_Gold, 50)
 		{
-			AI_Output (self, other, "DIA_Carl_bezahlen_05_02");//Dobøe, mùeme zaèít hned, jak budeš pøipraven.
+			AI_Output (self, other, "DIA_Carl_bezahlen_05_02");//DobÅ™e, mÅ¯Å¾eme zaÄÃ­t hned, jak budeÅ¡ pÅ™ipraven.
 			Carl_TeachSTR = TRUE;
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Carl_bezahlen_05_03");//Dej mi zlato a pak tì budu trénovat.
+			AI_Output (self, other, "DIA_Carl_bezahlen_05_03");//Dej mi zlato a pak tÄ› budu trÃ©novat.
 		};
 	};
 };
@@ -247,7 +247,7 @@ INSTANCE DIA_Carl_Teach(C_INFO)
 	condition	= DIA_Carl_Teach_Condition;
 	information	= DIA_Carl_Teach_Info;
 	permanent	= TRUE;
-	description = "Chtìl bych se stát silnìjším.";
+	description = "ChtÄ›l bych se stÃ¡t silnÄ›jÅ¡Ã­m.";
 };                       
 
 FUNC INT DIA_Carl_Teach_Condition()
@@ -260,7 +260,7 @@ FUNC INT DIA_Carl_Teach_Condition()
  
 FUNC VOID DIA_Carl_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Carl_Teach_15_00"); //Chtìl bych se stát silnìjším.
+	AI_Output (other,self ,"DIA_Carl_Teach_15_00"); //ChtÄ›l bych se stÃ¡t silnÄ›jÅ¡Ã­m.
 
 	Info_ClearChoices (DIA_Carl_Teach);
 	Info_AddChoice		(DIA_Carl_Teach, DIALOG_BACK, DIA_Carl_Teach_Back);

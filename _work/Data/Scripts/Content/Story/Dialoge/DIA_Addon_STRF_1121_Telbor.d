@@ -44,17 +44,17 @@ FUNC INT DIA_Addon_Telbor_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Telbor_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_00");//Hoj, jsem v pohodÏ.
+	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_00");//Hoj, jsem v pohodƒõ.
 	
 	if (Sklaven_Flucht == FALSE)
 	{
 		if (Pardos_Geheilt == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Ale Pardos je pÏknÏ vy¯Ìzenej.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Ale Pardos je pƒõknƒõ vy≈ô√≠zenej.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_02");//DÌky, ûes pomoh Pardovi.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_02");//D√≠ky, ≈æes pomoh Pardovi.
 			
 			if Telbor_once == FALSE
 			{
@@ -63,7 +63,7 @@ FUNC VOID DIA_Addon_Telbor_Hi_Info()
 			};	
 		};
 	};
-	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_03");//Jestli nÏco chceö, promluv si s Patrickem. To je n·ö mluvËÌ.
+	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_03");//Jestli nƒõco chce≈°, promluv si s Patrickem. To je n√°≈° mluvƒç√≠.
 	
 	AI_StopProcessInfos (self);
 };

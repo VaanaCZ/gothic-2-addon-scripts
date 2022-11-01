@@ -30,7 +30,7 @@ INSTANCE DIA_Jergan_Hallo   (C_INFO)
 	condition   = DIA_Jergan_Hallo_Condition;
 	information = DIA_Jergan_Hallo_Info;
 	permanent   = FALSE;
-	description = "Co tady pohledáváš?";
+	description = "Co tady pohledÃ¡vÃ¡Å¡?";
 };
 
 FUNC INT DIA_Jergan_Hallo_Condition()
@@ -40,8 +40,8 @@ FUNC INT DIA_Jergan_Hallo_Condition()
 
 FUNC VOID DIA_Jergan_Hallo_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Hallo_15_00");//Co tady pohledáváš?
-	AI_Output (self, other,"DIA_Jergan_Hallo_13_01");//Pøicházím z hradu. Poslali mì, abych našel ty pohøešované a zkontroloval tuhle oblast.
+	AI_Output (other, self,"DIA_Jergan_Hallo_15_00");//Co tady pohledÃ¡vÃ¡Å¡?
+	AI_Output (self, other,"DIA_Jergan_Hallo_13_01");//PÅ™ichÃ¡zÃ­m z hradu. Poslali mÄ›, abych naÅ¡el ty pohÅ™eÅ¡ovanÃ© a zkontroloval tuhle oblast.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Vermisste
@@ -53,7 +53,7 @@ INSTANCE DIA_Jergan_Vermisste   (C_INFO)
 	condition   = DIA_Jergan_Vermisste_Condition;
 	information = DIA_Jergan_Vermisste_Info;
 	permanent   = FALSE;
-	description = "Pohøešované?";
+	description = "PohÅ™eÅ¡ovanÃ©?";
 };
 
 FUNC INT DIA_Jergan_Vermisste_Condition()
@@ -65,9 +65,9 @@ FUNC INT DIA_Jergan_Vermisste_Condition()
 };
 FUNC VOID DIA_Jergan_Vermisste_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//Pohøešované?
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//Nìkterım se podaøilo uniknout, kdy zaútoèili draci. Vìtšina z nich to nestihla - a není divu!
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Ale pokud nìkdo pøeil, vezmu ho s sebou zpátky.
+	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//PohÅ™eÅ¡ovanÃ©?
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//NÄ›kterÃ½m se podaÅ™ilo uniknout, kdyÅ¾ zaÃºtoÄili draci. VÄ›tÅ¡ina z nich to nestihla - a nenÃ­ divu!
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Ale pokud nÄ›kdo pÅ™eÅ¾il, vezmu ho s sebou zpÃ¡tky.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Burg 
@@ -79,7 +79,7 @@ INSTANCE DIA_Jergan_Burg   (C_INFO)
 	condition   = DIA_Jergan_Burg_Condition;
 	information = DIA_Jergan_Burg_Info;
 	permanent   = FALSE;
-	description = "Mùeš mi pomoct dostat se do hradu?";
+	description = "MÅ¯Å¾eÅ¡ mi pomoct dostat se do hradu?";
 };
 
 FUNC INT DIA_Jergan_Burg_Condition()
@@ -92,13 +92,13 @@ FUNC INT DIA_Jergan_Burg_Condition()
 };
 FUNC VOID DIA_Jergan_Burg_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//Mùeš mi pomoct dostat se do hradu?
-	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//Jasnì, ale musíš mi prokázat laskavost.
-	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Jestli se ti podaøí dostat se do hradu, promluv si s paladinem Oricem. Vyøiï mu, e jeho bratr to tady v prùsmyku koupil.
+	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//MÅ¯Å¾eÅ¡ mi pomoct dostat se do hradu?
+	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//JasnÄ›, ale musÃ­Å¡ mi prokÃ¡zat laskavost.
+	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Jestli se ti podaÅ™Ã­ dostat se do hradu, promluv si s paladinem Oricem. VyÅ™iÄ mu, Å¾e jeho bratr to tady v prÅ¯smyku koupil.
 	
 	Log_CreateTopic (Topic_OricBruder, LOG_MISSION);
 	Log_SetTopicStatus (Topic_OricBruder,LOG_RUNNING);
-	B_LogEntry (Topic_OricBruder,"A se dostanu do hradu, musím Oricovi vyøídit, e jeho bratr zemøel v prùsmyku.");
+	B_LogEntry (Topic_OricBruder,"AÅ¾ se dostanu do hradu, musÃ­m Oricovi vyÅ™Ã­dit, Å¾e jeho bratr zemÅ™el v prÅ¯smyku.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gegend
@@ -110,7 +110,7 @@ INSTANCE DIA_Jergan_Gegend   (C_INFO)
 	condition   = DIA_Jergan_Gegend_Condition;
 	information = DIA_Jergan_Gegend_Info;
 	permanent   = TRUE;
-	description = "Co bych mìl vìdìt o této oblasti?";
+	description = "Co bych mÄ›l vÄ›dÄ›t o tÃ©to oblasti?";
 };
 
 FUNC INT DIA_Jergan_Gegend_Condition()
@@ -125,11 +125,11 @@ FUNC VOID DIA_Jergan_Gegend_Info()
 {
 	if (Jergan_Tell == FALSE)
 	{
-		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Co bych mìl vìdìt o této oblasti?
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Jestli chceš ít, vra se, odkud jsi pøišel.
-		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//Zelenokoci obléhají hrad u tıdny - a nìkde se tu ukrıvají draci.
+		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Co bych mÄ›l vÄ›dÄ›t o tÃ©to oblasti?
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Jestli chceÅ¡ Å¾Ã­t, vraÅ¥ se, odkud jsi pÅ™iÅ¡el.
+		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//ZelenokoÅ¾ci oblÃ©hajÃ­ hrad uÅ¾ tÃ½dny - a nÄ›kde se tu ukrÃ½vajÃ­ draci.
 	};
-	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//Celé Hornické údolí se hemí skøety - a máš namíøeno kamkoliv, nebude to procházka rùovou zahradou.
+	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//CelÃ© HornickÃ© ÃºdolÃ­ se hemÅ¾Ã­ skÅ™ety - aÅ¥ mÃ¡Å¡ namÃ­Å™eno kamkoliv, nebude to prochÃ¡zka rÅ¯Å¾ovou zahradou.
 	Jergan_Tell = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -156,10 +156,10 @@ FUNC INT DIA_Jergan_Hilfe_Condition()
 FUNC VOID DIA_Jergan_Hilfe_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//Jak se dostanu do hradu?
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Na pøímou cestu rovnou zapomeò. Ale pokud obejdeš hrad, moná se tam dostaneš zezadu.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Mìl bys zùstat mimo cestu a vyuít øeku. Nejlepší bude, kdy poplaveš po proudu. Odtud by to mìlo bıt snazší.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Skøeti pøed hradem postavili beranidlo. Mùeš se dostat dovnitø tímto zpùsobem - pøiplííš se k tìm bastardùm, jak jen to bude moné, a potom budeš upalovat, co to jen pùjde.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//Pokud budeš dostateènì rychlı, mìl bys to zvládnout.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Na pÅ™Ã­mou cestu rovnou zapomeÅˆ. Ale pokud obejdeÅ¡ hrad, moÅ¾nÃ¡ se tam dostaneÅ¡ zezadu.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//MÄ›l bys zÅ¯stat mimo cestu a vyuÅ¾Ã­t Å™eku. NejlepÅ¡Ã­ bude, kdyÅ¾ poplaveÅ¡ po proudu. Odtud by to mÄ›lo bÃ½t snazÅ¡Ã­.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//SkÅ™eti pÅ™ed hradem postavili beranidlo. MÅ¯Å¾eÅ¡ se dostat dovnitÅ™ tÃ­mto zpÅ¯sobem - pÅ™iplÃ­Å¾Ã­Å¡ se k tÄ›m bastardÅ¯m, jak jen to bude moÅ¾nÃ©, a potom budeÅ¡ upalovat, co to jen pÅ¯jde.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//Pokud budeÅ¡ dostateÄnÄ› rychlÃ½, mÄ›l bys to zvlÃ¡dnout.
 };
 
 
@@ -174,7 +174,7 @@ INSTANCE DIA_Jergan_Mine   (C_INFO)
 	condition   = DIA_Jergan_Mine_Condition;
 	information = DIA_Jergan_Mine_Info;
 	permanent   = FALSE;
-	description = "Co tady dìláš?";
+	description = "Co tady dÄ›lÃ¡Å¡?";
 };
 
 FUNC INT DIA_Jergan_Mine_Condition()
@@ -186,9 +186,9 @@ FUNC INT DIA_Jergan_Mine_Condition()
 };
 FUNC VOID DIA_Jergan_Mine_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Co tady dìláš?
-	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Jsem zvìd. Toulám se po kraji. Ale všichni ti chòapavci mi to ztìují.
-	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//Je vhodná doba k získání nìjakıch trofejí - za pøedpokladu, e víš, co dìláš.
+	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Jsem zvÄ›d. ToulÃ¡m se po kraji. Ale vÅ¡ichni ti chÅˆapavci mi to ztÄ›Å¾ujÃ­.
+	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//Je vhodnÃ¡ doba k zÃ­skÃ¡nÃ­ nÄ›jakÃ½ch trofejÃ­ - za pÅ™edpokladu, Å¾e vÃ­Å¡, co dÄ›lÃ¡Å¡.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen
@@ -200,7 +200,7 @@ INSTANCE DIA_Jergan_Claw   (C_INFO)
 	condition   = DIA_Jergan_Claw_Condition;
 	information = DIA_Jergan_Claw_Info;
 	permanent   = FALSE;
-	description = "Nauèíš mì, jak to dìlat?";
+	description = "NauÄÃ­Å¡ mÄ›, jak to dÄ›lat?";
 };
 
 FUNC INT DIA_Jergan_Claw_Condition()
@@ -214,8 +214,8 @@ FUNC INT DIA_Jergan_Claw_Condition()
 };
 FUNC VOID DIA_Jergan_Claw_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Claw_15_00");//Nauèíš mì, jak na to?
-	AI_Output (self, other,"DIA_Jergan_Claw_13_01");//Mùu ti ukázat, jak z jejich mrtvol vytrhnout drápy.
+	AI_Output (other, self,"DIA_Jergan_Claw_15_00");//NauÄÃ­Å¡ mÄ›, jak na to?
+	AI_Output (self, other,"DIA_Jergan_Claw_13_01");//MÅ¯Å¾u ti ukÃ¡zat, jak z jejich mrtvol vytrhnout drÃ¡py.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen lernen
@@ -227,7 +227,7 @@ INSTANCE DIA_Jergan_Teach   (C_INFO)
 	condition   = DIA_Jergan_Teach_Condition;
 	information = DIA_Jergan_Teach_Info;
 	permanent   = TRUE;
-	description = "(Nauèit se vyjímat drápy.)";
+	description = "(NauÄit se vyjÃ­mat drÃ¡py.)";
 };
 FUNC INT DIA_Jergan_Teach_Condition()
 {	
@@ -240,12 +240,12 @@ FUNC INT DIA_Jergan_Teach_Condition()
 };
 FUNC VOID DIA_Jergan_Teach_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Teach_15_00");//Uka mi, jak vytrhnout drápy.
+	AI_Output (other, self,"DIA_Jergan_Teach_15_00");//UkaÅ¾ mi, jak vytrhnout drÃ¡py.
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 	{
-		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//Dùleité je odstranit drápy škubnutím. Pøíliš neváhej a nerıpej èepelí.
-		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//Tímto zpùsobem nevytrhneš drápy jenom chòapavcùm, ale také ještìrùm a stínovım šelmám.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//DÅ¯leÅ¾itÃ© je odstranit drÃ¡py Å¡kubnutÃ­m. PÅ™Ã­liÅ¡ nevÃ¡hej a nerÃ½pej ÄepelÃ­.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//TÃ­mto zpÅ¯sobem nevytrhneÅ¡ drÃ¡py jenom chÅˆapavcÅ¯m, ale takÃ© jeÅ¡tÄ›rÅ¯m a stÃ­novÃ½m Å¡elmÃ¡m.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -258,7 +258,7 @@ INSTANCE DIA_Jergan_Diego   (C_INFO)
 	condition   = DIA_Jergan_Diego_Condition;
 	information = DIA_Jergan_Diego_Info;
 	permanent   = FALSE;
-	description = "Nevíš, kam a se Diego dostal?";
+	description = "NevÃ­Å¡, kam aÅ¾ se Diego dostal?";
 };
 
 FUNC INT DIA_Jergan_Diego_Condition()
@@ -272,14 +272,14 @@ FUNC INT DIA_Jergan_Diego_Condition()
 };
 FUNC VOID DIA_Jergan_Diego_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Víš, kam se podìl Diego?
-	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego? Byl jedním ze Silvestrovıch kopáèù. Ale vypaøil se.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//Vidìl jsem ho nedaleko odtud se dvìmi rytíøi a krabicí.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Vidíš tady tu starou strání vì? Jdi tím smìrem a potom k hradu.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Cesta vede skálami vpravo. To je ta cesta, kterou šli.
+	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//VÃ­Å¡, kam se podÄ›l Diego?
+	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego? Byl jednÃ­m ze SilvestrovÃ½ch kopÃ¡ÄÅ¯. Ale vypaÅ™il se.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//VidÄ›l jsem ho nedaleko odtud se dvÄ›mi rytÃ­Å™i a krabicÃ­.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//VidÃ­Å¡ tady tu starou strÃ¡Å¾nÃ­ vÄ›Å¾? Jdi tÃ­m smÄ›rem a potom k hradu.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Cesta vede skÃ¡lami vpravo. To je ta cesta, kterou Å¡li.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Rudelführer getötet
+//	RudelfÃ¼hrer getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Jergan_Leader   (C_INFO)
@@ -303,18 +303,18 @@ FUNC INT DIA_Jergan_Leader_Condition()
 };
 FUNC VOID DIA_Jergan_Leader_Info()
 {
-	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Tak ty jsi zabil vùdce smeèky. A získal jsi z té bestie drápy?
+	AI_Output (self, other,"DIA_Jergan_Leader_13_00");//Tak ty jsi zabil vÅ¯dce smeÄky. A zÃ­skal jsi z tÃ© bestie drÃ¡py?
 	
 	if (Npc_HasItems (other, ItAt_ClawLeader) >= 1)
 	{
 		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//Ano.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Ty musí mít jistì velkou cenu. Je tu nìkolik chlapíkù, kteøí takové vìci sbírají.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Pokud najdeš správného kupce, dostaneš za to kopec zlata.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Ty musÃ­ mÃ­t jistÄ› velkou cenu. Je tu nÄ›kolik chlapÃ­kÅ¯, kteÅ™Ã­ takovÃ© vÄ›ci sbÃ­rajÃ­.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Pokud najdeÅ¡ sprÃ¡vnÃ©ho kupce, dostaneÅ¡ za to kopec zlata.
 	}
 	else
 	{
 		AI_Output (other, self,"DIA_Jergan_Leader_15_04");//Ne.
-		AI_Output (self, other,"DIA_Jergan_Leader_13_05");//Mìl bys to udìlat. Jsem si jist, e za nì dostaneš majlant.
+		AI_Output (self, other,"DIA_Jergan_Leader_13_05");//MÄ›l bys to udÄ›lat. Jsem si jist, Å¾e za nÄ› dostaneÅ¡ majlant.
 	};	
 };
 

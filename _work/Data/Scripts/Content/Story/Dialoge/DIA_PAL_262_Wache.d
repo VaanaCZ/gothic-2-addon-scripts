@@ -37,14 +37,14 @@ func int DIA_PAL_262_GREET_Condition ()
 };
 func void DIA_PAL_262_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //Stát - kdo jsi?
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //Mnohem dùleitìjší je otázka, odkud jsem pøišel. Pøišel jsem skrz prùsmyk.
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //Budeš mi tedy dál stát v cestì, nebo mì pustíš dál?
-	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //No, to jsem pøece nemohl vìdìt. Jasnì e mùeš jít dál.
+	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //StÃ¡t - kdo jsi?
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //Mnohem dÅ¯leÅ¾itÄ›jÅ¡Ã­ je otÃ¡zka, odkud jsem pÅ™iÅ¡el. PÅ™iÅ¡el jsem skrz prÅ¯smyk.
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //BudeÅ¡ mi tedy dÃ¡l stÃ¡t v cestÄ›, nebo mÄ› pustÃ­Å¡ dÃ¡l?
+	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //No, to jsem pÅ™ece nemohl vÄ›dÄ›t. JasnÄ› Å¾e mÅ¯Å¾eÅ¡ jÃ­t dÃ¡l.
 
 	/*
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_00"); //Halt - wer bist du?
-	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin über den Pass gekommen.
+	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin Ã¼ber den Pass gekommen.
 	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_02"); //Also willst du mich jetzt aufhalten oder kann ich rein?
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_03"); //Konnte ich ja nicht wissen. Klar kannst du rein.
 	*/
@@ -61,7 +61,7 @@ instance DIA_Wache_PERM		(C_INFO)
 	condition	 = 	DIA_Wache_PERM_Condition;
 	information	 = 	DIA_Wache_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Kdo tady tomu velí?";
+	description	 = 	"Kdo tady tomu velÃ­?";
 };
 
 func int DIA_Wache_PERM_Condition ()
@@ -76,11 +76,11 @@ func void DIA_Wache_PERM_Info ()
 	/* obskur
 	AI_Output (other, self, "DIA_Wache_PERM_15_00"); //Wer hat hier das Sagen?
 	AI_Output (self, other, "DIA_Wache_PERM_10_01"); //Unser Kommandant Garond und seine beiden Berater, die Paladine Oric und Parcival.
-	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. Tagsüber halten sie sich im Thronsaal im Erdgeschoss auf.
+	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. TagsÃ¼ber halten sie sich im Thronsaal im Erdgeschoss auf.
 	*/
 	AI_Output (other, self, "DIA_Addon_Wache_PERM_15_00"); //Kdo to tady vede?
-	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_01"); //Náš velitel Garond se svımi dvìma rádci, paladiny Oricem a Parcivalem.
-	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_02"); //Jen pojï dál. Ve dne je najdeš v trùnním sále v pøízemí.
+	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_01"); //NÃ¡Å¡ velitel Garond se svÃ½mi dvÄ›ma rÃ¡dci, paladiny Oricem a Parcivalem.
+	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_02"); //Jen pojÄ dÃ¡l. Ve dne je najdeÅ¡ v trÅ¯nnÃ­m sÃ¡le v pÅ™Ã­zemÃ­.
 };
 
 

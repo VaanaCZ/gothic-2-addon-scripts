@@ -80,17 +80,17 @@ func void DIA_Sonja_STANDARD_Info ()
 {
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_00"); //Jestli se chceö pobavit, promluv si s Bromorem.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_00"); //Jestli se chce≈° pobavit, promluv si s Bromorem.
 	}
 	else if (other.guild == GIL_DJG)
 	&& (Sonja_Says == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //To je problÈm v·s chlap˘ - radöi byste vraûdili sk¯ety, neû zatloukli h¯ebÌk.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //To je probl√©m v√°s chlap≈Ø - rad≈°i byste vra≈ædili sk≈ôety, ne≈æ zatloukli h≈ôeb√≠k.
 		Sonja_Says = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_02"); //Jestli se r·d s nÏk˝m vybavujeö, najdi si babu a oûeÚ se s nÌ.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_02"); //Jestli se r√°d s nƒõk√Ωm vybavuje≈°, najdi si babu a o≈æe≈à se s n√≠.
 	};
 	AI_StopProcessInfos (self);
 };

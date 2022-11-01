@@ -40,8 +40,8 @@ FUNC INT DIA_Onar_Hallo_Condition()
 };
 FUNC VOID DIA_Onar_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Onar_Hallo_14_00"); //Kdo tì sem pustil?!
-	AI_Output (self, other, "DIA_Onar_Hallo_14_01"); //Co dìláš na mé farmì?!
+	AI_Output (self, other, "DIA_Onar_Hallo_14_00"); //Kdo tÄ› sem pustil?!
+	AI_Output (self, other, "DIA_Onar_Hallo_14_01"); //Co dÄ›lÃ¡Å¡ na mÃ© farmÄ›?!
 };
 
 // ************************************************************
@@ -54,7 +54,7 @@ INSTANCE DIA_Onar_PERM (C_INFO)
 	condition   = DIA_Onar_PERM_Condition;
 	information = DIA_Onar_PERM_Info;
 	permanent   = TRUE;
-	description = "Je tady na farmì všechno v poøádku?";
+	description = "Je tady na farmÄ› vÅ¡echno v poÅ™Ã¡dku?";
 };
 FUNC INT DIA_Onar_PERM_Condition()
 {
@@ -62,32 +62,32 @@ FUNC INT DIA_Onar_PERM_Condition()
 };
 FUNC VOID DIA_Onar_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Onar_PERM_15_00"); //Je tady na farmì všechno v poøádku?
+	AI_Output (other, self, "DIA_Onar_PERM_15_00"); //Je tady na farmÄ› vÅ¡echno v poÅ™Ã¡dku?
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_01"); //Nechápu, co se staráš. Nepatøíš na farmu!
+		AI_Output (self, other, "DIA_Onar_PERM_14_01"); //NechÃ¡pu, co se starÃ¡Å¡. NepatÅ™Ã­Å¡ na farmu!
 	};
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //Samozøejmì doufám, e ano! Za to pøece platím!!
-		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //Udìláš nejlíp, kdy zajdeš za Torlofem a poádáš o nìjakou práci.
+		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //SamozÅ™ejmÄ› doufÃ¡m, Å¾e ano! Za to pÅ™ece platÃ­m!!
+		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //UdÄ›lÃ¡Å¡ nejlÃ­p, kdyÅ¾ zajdeÅ¡ za Torlofem a poÅ¾Ã¡dÃ¡Å¡ o nÄ›jakou prÃ¡ci.
 	};
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Jo, jasnì. Jen si bì lovit ty své draky.
+		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Jo, jasnÄ›. Jen si bÄ›Å¾ lovit ty svÃ© draky.
 	};
 	
 	if (other.guild == GIL_NOV) || (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_05"); //Vy pokryteètí bastardi z kláštera tu nejste vítáni!
+		AI_Output (self, other, "DIA_Onar_PERM_14_05"); //Vy pokryteÄtÃ­ bastardi z klÃ¡Å¡tera tu nejste vÃ­tÃ¡ni!
 	};
 	
 	if (other.guild == GIL_MIL) || (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //Naše pohostinnost se na královská vojska nevztahuje.
+		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //NaÅ¡e pohostinnost se na krÃ¡lovskÃ¡ vojska nevztahuje.
 	};
 };
 
@@ -113,9 +113,9 @@ FUNC INT DIA_Onar_Work_Condition()
 FUNC VOID DIA_Onar_Work_Info()
 {
 	AI_Output (other, self, "DIA_Onar_Work_15_00"); //Chci pro tebe pracovat!
-	AI_Output (self, other, "DIA_Onar_Work_14_01"); //Teï nepotøebuju ádného dalšího nádeníka.
-	AI_Output (self, other, "DIA_Onar_Work_14_02"); //Moji lidé se starají o všechno ostatní.
-	AI_Output (self, other, "DIA_Onar_Work_14_03"); //Nemáš tady co dìlat, tak mazej!
+	AI_Output (self, other, "DIA_Onar_Work_14_01"); //TeÄ nepotÅ™ebuju Å¾Ã¡dnÃ©ho dalÅ¡Ã­ho nÃ¡denÃ­ka.
+	AI_Output (self, other, "DIA_Onar_Work_14_02"); //Moji lidÃ© se starajÃ­ o vÅ¡echno ostatnÃ­.
+	AI_Output (self, other, "DIA_Onar_Work_14_03"); //NemÃ¡Å¡ tady co dÄ›lat, tak mazej!
 };
 
 
@@ -129,7 +129,7 @@ INSTANCE DIA_Onar_WorkAsSld (C_INFO)
 	condition   = DIA_Onar_WorkAsSld_Condition;
 	information = DIA_Onar_WorkAsSld_Info;
 	permanent   = FALSE;
-	description = "Chci se stát oldnéøem!";
+	description = "Chci se stÃ¡t Å¾oldnÃ©Å™em!";
 };
 FUNC INT DIA_Onar_WorkAsSld_Condition()
 {
@@ -142,9 +142,9 @@ FUNC INT DIA_Onar_WorkAsSld_Condition()
 };
 FUNC VOID DIA_Onar_WorkAsSld_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //Chci se stát oldnéøem!
-	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Ty? oldnéø? Nenech se vysmát! Pokud bys jako oldák za nìco stál, musel by mi o tom Lee nìco øíct.
-	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_02"); //A teï vypadni, pronto!
+	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //Chci se stÃ¡t Å¾oldnÃ©Å™em!
+	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Ty? Å½oldnÃ©Å™? Nenech se vysmÃ¡t! Pokud bys jako Å¾oldÃ¡k za nÄ›co stÃ¡l, musel by mi o tom Lee nÄ›co Å™Ã­ct.
+	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_02"); //A teÄ vypadni, pronto!
 	Onar_WegenSldWerden = TRUE;
 };
 
@@ -158,7 +158,7 @@ INSTANCE DIA_Onar_Aufstand (C_INFO)
 	condition   = DIA_Onar_Aufstand_Condition;
 	information = DIA_Onar_Aufstand_Info;
 	permanent   = FALSE;
-	description = "Vzbouøili jste se proti mìstu, nebo co jsem to zaslechl?";
+	description = "VzbouÅ™ili jste se proti mÄ›stu, nebo co jsem to zaslechl?";
 };
 FUNC INT DIA_Onar_Aufstand_Condition()
 {
@@ -166,12 +166,12 @@ FUNC INT DIA_Onar_Aufstand_Condition()
 };
 FUNC VOID DIA_Onar_Aufstand_Info()
 {
-	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //Vzbouøili jste se proti mìstu, nebo co jsem to zaslechl?
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //Teï mì poslouchej. Zdìdil jsem tuhle farmu a tuhle pùdu po svém otci.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //A on ji zase zdìdil po SVÉM otci.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //Nedovolím tìm nenaranejm královskejm pitomcùm odjet s tím vším jen proto, aby nakrmili tu svojí armádu budiknièemù.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //Ta válka se skøety nikdy neskonèí. A kde budeme my? Mezi prvními, co padnou.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //Ne - radìji budu svou farmu bránit sám! Peníze, které takhle našetøím, mi zaplatí celou armádu.
+	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //VzbouÅ™ili jste se proti mÄ›stu, nebo co jsem to zaslechl?
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //TeÄ mÄ› poslouchej. ZdÄ›dil jsem tuhle farmu a tuhle pÅ¯du po svÃ©m otci.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //A on ji zase zdÄ›dil po SVÃ‰M otci.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //NedovolÃ­m tÄ›m nenaÅ¾ranejm krÃ¡lovskejm pitomcÅ¯m odjet s tÃ­m vÅ¡Ã­m jen proto, aby nakrmili tu svojÃ­ armÃ¡du budiÅ¾kniÄemÅ¯.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //Ta vÃ¡lka se skÅ™ety nikdy neskonÄÃ­. A kde budeme my? Mezi prvnÃ­mi, co padnou.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //Ne - radÄ›ji budu svou farmu brÃ¡nit sÃ¡m! PenÃ­ze, kterÃ© takhle naÅ¡etÅ™Ã­m, mi zaplatÃ­ celou armÃ¡du.
 };
 
 // ************************************************************
@@ -184,7 +184,7 @@ INSTANCE DIA_Onar_WegenPepe (C_INFO)
 	condition   = DIA_Onar_WegenPepe_Condition;
 	information = DIA_Onar_WegenPepe_Info;
 	permanent   = FALSE;
-	description = "Kvùli Bullcovi teï máte o pár ovcí míò.";
+	description = "KvÅ¯li Bullcovi teÄ mÃ¡te o pÃ¡r ovcÃ­ mÃ­Åˆ.";
 };
 FUNC INT DIA_Onar_WegenPepe_Condition()
 {
@@ -195,11 +195,11 @@ FUNC INT DIA_Onar_WegenPepe_Condition()
 };
 FUNC VOID DIA_Onar_WegenPepe_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //Kvùli Bullcovi teï máte o pár ovcí míò.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //O èem to mluvíš? Kdo je Bullco?
-	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //Jeden ze oldnéøù.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //Proè by mì to mìlo zajímat? Jestli má zálusk na moje ovce, bude se muset zodpovídat Leeovi.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Tak co mì otravuješ s takovejma nepodstatnejma hloupostma?
+	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //KvÅ¯li Bullcovi teÄ mÃ¡te o pÃ¡r ovcÃ­ mÃ­Åˆ.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //O Äem to mluvÃ­Å¡? Kdo je Bullco?
+	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //Jeden ze Å¾oldnÃ©Å™Å¯.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //ProÄ by mÄ› to mÄ›lo zajÃ­mat? Jestli mÃ¡ zÃ¡lusk na moje ovce, bude se muset zodpovÃ­dat Leeovi.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Tak co mÄ› otravujeÅ¡ s takovejma nepodstatnejma hloupostma?
 	Onar_WegenPepe = TRUE;
 };
 
@@ -213,7 +213,7 @@ INSTANCE DIA_Onar_WegenSekob (C_INFO)
 	condition   = DIA_Onar_WegenSekob_Condition;
 	information = DIA_Onar_WegenSekob_Info;
 	permanent   = FALSE;
-	description = "Pøišel jsem kvùli Sekobovu nájmu...";
+	description = "PÅ™iÅ¡el jsem kvÅ¯li Sekobovu nÃ¡jmu...";
 };
 FUNC INT DIA_Onar_WegenSekob_Condition()
 {
@@ -224,24 +224,24 @@ FUNC INT DIA_Onar_WegenSekob_Condition()
 };
 FUNC VOID DIA_Onar_WegenSekob_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_00"); //Pøišel jsem kvùli Sekobovu nájmu...
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_00"); //PÅ™iÅ¡el jsem kvÅ¯li Sekobovu nÃ¡jmu...
 
 	if (other.guild == GIL_SLD) || (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_WegenSekob_14_01"); //A proè s tím ksakru lezeš za mnou? Dej ty peníze Torlofovi.
+		AI_Output (self, other, "DIA_Onar_WegenSekob_14_01"); //A proÄ s tÃ­m ksakru lezeÅ¡ za mnou? Dej ty penÃ­ze Torlofovi.
 	
 	}
 	else //GIL_NONE
 	{
-		AI_Output (self, other, "DIA_Onar_WegenSekob_14_02"); //Proè si zatracenì myslíš, e to je TVOJE starost?
-		AI_Output (other, self, "DIA_Onar_WegenSekob_15_03"); //Chci se stát oldnéøem. Vıbìr nájemného je souèástí zkoušky.
+		AI_Output (self, other, "DIA_Onar_WegenSekob_14_02"); //ProÄ si zatracenÄ› myslÃ­Å¡, Å¾e to je TVOJE starost?
+		AI_Output (other, self, "DIA_Onar_WegenSekob_15_03"); //Chci se stÃ¡t Å¾oldnÃ©Å™em. VÃ½bÄ›r nÃ¡jemnÃ©ho je souÄÃ¡stÃ­ zkouÅ¡ky.
 		Onar_WegenSldWerden = TRUE;
 	};
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //Ale Sekob nemá ádnı peníze. U jsem mu to nandal.
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Øíká, e to je kvùli špatné úrodì.
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //(øve) Ty pitomèe! Myslíš, e nechá ty peníze jen tak nìkde povalovat? Nìkam je ukryl!
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //Víš, kolik napršelo? Špatná úroda, tupèe.
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //Bì a vymla z nìj ty prachy.
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //Ale Sekob nemÃ¡ Å¾Ã¡dnÃ½ penÃ­ze. UÅ¾ jsem mu to nandal.
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Å˜Ã­kÃ¡, Å¾e to je kvÅ¯li Å¡patnÃ© ÃºrodÄ›.
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //(Å™ve) Ty pitomÄe! MyslÃ­Å¡, Å¾e nechÃ¡ ty penÃ­ze jen tak nÄ›kde povalovat? NÄ›kam je ukryl!
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //VÃ­Å¡, kolik naprÅ¡elo? Å patnÃ¡ Ãºroda, tupÄe.
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //BÄ›Å¾ a vymlaÅ¥ z nÄ›j ty prachy.
 	Onar_WegenSekob = TRUE;
 };
 
@@ -256,7 +256,7 @@ INSTANCE DIA_Onar_LeeSentMe   (C_INFO)
 	condition   = DIA_Onar_LeeSentMe_Condition;
 	information = DIA_Onar_LeeSentMe_Info;
 	permanent   = FALSE;
-	description = "Poslal mì Lee. Chci tady pracovat jako oldnéø!";
+	description = "Poslal mÄ› Lee. Chci tady pracovat jako Å¾oldnÃ©Å™!";
 };
 FUNC INT DIA_Onar_LeeSentMe_Condition()
 {
@@ -268,22 +268,22 @@ FUNC INT DIA_Onar_LeeSentMe_Condition()
 };
 FUNC VOID DIA_Onar_LeeSentMe_Info()
 {
-	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //Poslal mì Lee. Chci tady pracovat jako oldnéø!
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //U mi o tom øekl.
+	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //Poslal mÄ› Lee. Chci tady pracovat jako Å¾oldnÃ©Å™!
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //UÅ¾ mi o tom Å™ekl.
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //Kdy jsem tì poprvé vidìl, nemìl jsem o tobì valné mínìní.
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Ale kdy si Lee myslí, e to zvládneš, jsem ochoten dát ti šanci.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //KdyÅ¾ jsem tÄ› poprvÃ© vidÄ›l, nemÄ›l jsem o tobÄ› valnÃ© mÃ­nÄ›nÃ­.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Ale kdyÅ¾ si Lee myslÃ­, Å¾e to zvlÃ¡dneÅ¡, jsem ochoten dÃ¡t ti Å¡anci.
 	};
 	
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //On je za tebe zodpovìdnı. Tak se koukej èinit.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //Ale ádnı blbosti! Nech farmáøe a sluky na pokoji a hlavnì si nic nepøivlastòuj, jasnı?
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //S èímkoli dalším se obra na Leeho.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //Všechno, o èem se potøebujeme bavit, se tıká tvého oldu.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //On je za tebe zodpovÄ›dnÃ½. Tak se koukej Äinit.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //Ale Å¾Ã¡dnÃ½ blbosti! Nech farmÃ¡Å™e a sluÅ¾ky na pokoji a hlavnÄ› si nic nepÅ™ivlastÅˆuj, jasnÃ½?
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //S ÄÃ­mkoli dalÅ¡Ã­m se obraÅ¥ na Leeho.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //VÅ¡echno, o Äem se potÅ™ebujeme bavit, se tÃ½kÃ¡ tvÃ©ho Å¾oldu.
 
 	Onar_Approved = TRUE;
-	B_LogEntry (TOPIC_BecomeSLD,"Onar mi dal svùj souhlas. Teï u mi nic nezabrání, abych se pøidal k oldákùm!");
+	B_LogEntry (TOPIC_BecomeSLD,"Onar mi dal svÅ¯j souhlas. TeÄ uÅ¾ mi nic nezabrÃ¡nÃ­, abych se pÅ™idal k Å¾oldÃ¡kÅ¯m!");
 };
 
 
@@ -302,7 +302,7 @@ INSTANCE DIA_Onar_HowMuch   (C_INFO)
 	condition   = DIA_Onar_HowMuch_Condition;
 	information = DIA_Onar_HowMuch_Info;
 	permanent   = FALSE;
-	description = "Tak co je s tím oldem?";
+	description = "Tak co je s tÃ­m Å¾oldem?";
 };
 FUNC INT DIA_Onar_HowMuch_Condition()
 {
@@ -313,78 +313,78 @@ FUNC INT DIA_Onar_HowMuch_Condition()
 };
 FUNC VOID DIA_Onar_HowMuch_Info()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_15_00"); //Tak co je s tím oldem?
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_01"); //Fajn, podívejme...
+	AI_Output (other, self, "DIA_Onar_HowMuch_15_00"); //Tak co je s tÃ­m Å¾oldem?
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_01"); //Fajn, podÃ­vejme...
 	
 	SOLD = 50;
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_02"); //Nevypadáš moc k svìtu.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_02"); //NevypadÃ¡Å¡ moc k svÄ›tu.
 	};
 	
 	if (Onar_WegenSekob == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Ty sis vánì nebyl dvakrát, kdy Innos rozdával rozum. To se pozná podle tı vìci se Sekobem.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Ty sis vÃ¡Å¾nÄ› nebyl dvakrÃ¡t, kdyÅ¾ Innos rozdÃ¡val rozum. To se poznÃ¡ podle tÃ½ vÄ›ci se Sekobem.
 		SOLD = SOLD - 10;
 	};
 	
 	if (ABSOLUTIONLEVEL_Farm > 1)
 	|| ( (B_GetGreatestPetzCrime (self) > CRIME_NONE) && (ABSOLUTIONLEVEL_Farm > 0) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //U jsi tu nejednou zpùsobil problémy.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //UÅ¾ jsi tu nejednou zpÅ¯sobil problÃ©my.
 		SOLD = SOLD - 10;
 	};
 	
 	if (Onar_WegenPepe == TRUE)
 	&& ( (Onar_WegenSekob == TRUE) || (Onar_WegenSldWerden == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_05"); //A poøád mi za zády vyvádíš samı ptákoviny.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_05"); //A poÅ™Ã¡d mi za zÃ¡dy vyvÃ¡dÃ­Å¡ samÃ½ ptÃ¡koviny.
 		SOLD = SOLD - 10;
 	};
 	
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_06"); //Nech mì hádat...
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_06"); //Nech mÄ› hÃ¡dat...
 	B_Say_Gold (self, other, SOLD);
 	
 	
 	Onar_SOLD_Day = Wld_GetDay();
 	Onar_SOLD_XP = other.exp;
 	
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_07"); //Co øikáš?
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_07"); //Co Å™ikÃ¡Å¡?
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
-	Info_AddChoice (DIA_Onar_HowMuch, "Nìjakı námitky?", DIA_Onar_HowMuch_Ok);
-	Info_AddChoice (DIA_Onar_HowMuch, "To není zrovna moc...", DIA_Onar_HowMuch_More);
+	Info_AddChoice (DIA_Onar_HowMuch, "NÄ›jakÃ½ nÃ¡mitky?", DIA_Onar_HowMuch_Ok);
+	Info_AddChoice (DIA_Onar_HowMuch, "To nenÃ­ zrovna moc...", DIA_Onar_HowMuch_More);
 	Info_AddChoice (DIA_Onar_HowMuch, "Za den?", DIA_Onar_HowMuch_PerDay);
 };
 
 func void DIA_Onar_HowMuch_PerDay()
 {
 	AI_Output (other, self, "DIA_Onar_HowMuch_PerDay_15_00"); //Za den?
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_01"); //Cos myslel? Za tıden? Vánì ti to moc nepálí.
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_02"); //Tak zvedni ten svùj zadek a bì pro ty peníze.
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_03"); //Nehodlám se o to za tebe postarat.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_01"); //Cos myslel? Za tÃ½den? VÃ¡Å¾nÄ› ti to moc nepÃ¡lÃ­.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_02"); //Tak zvedni ten svÅ¯j zadek a bÄ›Å¾ pro ty penÃ­ze.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_03"); //NehodlÃ¡m se o to za tebe postarat.
 };
 
 func void DIA_Onar_HowMuch_More()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //To není zrovna moc.
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //Jasnì, jestli chceš, mùeš u mì pracovat zadarmo.
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Mimochodem, tohle je všechno, co dostaneš!
+	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //To nenÃ­ zrovna moc.
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //JasnÄ›, jestli chceÅ¡, mÅ¯Å¾eÅ¡ u mÄ› pracovat zadarmo.
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Mimochodem, tohle je vÅ¡echno, co dostaneÅ¡!
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Svùj plat si mohu u Onara vyzvednout kadı den.");
+	B_LogEntry (Topic_Bonus,"SvÅ¯j plat si mohu u Onara vyzvednout kaÅ¾dÃ½ den.");
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 };
 	
 func void DIA_Onar_HowMuch_Ok()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_Ok_15_00"); //Nìjakı námitky?
-	AI_Output (self, other, "DIA_Onar_HowMuch_Ok_14_01"); //Taky si myslím. Teï zajdi za Leem.
+	AI_Output (other, self, "DIA_Onar_HowMuch_Ok_15_00"); //NÄ›jakÃ½ nÃ¡mitky?
+	AI_Output (self, other, "DIA_Onar_HowMuch_Ok_14_01"); //Taky si myslÃ­m. TeÄ zajdi za Leem.
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Svùj plat si mohu u Onara vyzvednout kadı den.");
+	B_LogEntry (Topic_Bonus,"SvÅ¯j plat si mohu u Onara vyzvednout kaÅ¾dÃ½ den.");
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 };
@@ -400,7 +400,7 @@ INSTANCE DIA_Onar_CollectGold (C_INFO)
 	condition   = DIA_Onar_CollectGold_Condition;
 	information = DIA_Onar_CollectGold_Info;
 	permanent   = TRUE;
-	description = "Dej mi mùj old!";
+	description = "Dej mi mÅ¯j Å¾old!";
 };
 FUNC INT DIA_Onar_CollectGold_Condition()
 {
@@ -412,49 +412,49 @@ FUNC INT DIA_Onar_CollectGold_Condition()
 };
 FUNC VOID DIA_Onar_CollectGold_Info()
 {
-	AI_Output (other, self, "DIA_Onar_CollectGold_15_00"); //Dej mi mùj old!
+	AI_Output (other, self, "DIA_Onar_CollectGold_15_00"); //Dej mi mÅ¯j Å¾old!
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_01"); //Platím oldákùm, ne drakobijcùm.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_01"); //PlatÃ­m Å¾oldÃ¡kÅ¯m, ne drakobijcÅ¯m.
 	}
 	else if (Torlof_TheOtherMission_TooLate == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //Nestarej se o to, co dostaneš za úkol!
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //Ptal jsem se Torlofa, jak ti to jde. A øíkal, e ti trvá vìènost, ne nìco udìláš.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //Nebudu plıtvat penìzi na darmošlapy.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //Teï budeš nìkolik tıdnù makat bez nároku na old! To tì moná nauèí.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //Nestarej se o to, co dostaneÅ¡ za Ãºkol!
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //Ptal jsem se Torlofa, jak ti to jde. A Å™Ã­kal, Å¾e ti trvÃ¡ vÄ›Änost, neÅ¾ nÄ›co udÄ›lÃ¡Å¡.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //Nebudu plÃ½tvat penÄ›zi na darmoÅ¡lapy.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //TeÄ budeÅ¡ nÄ›kolik tÃ½dnÅ¯ makat bez nÃ¡roku na Å¾old! To tÄ› moÅ¾nÃ¡ nauÄÃ­.
 	}
 	else if (B_GetGreatestPetzCrime(self) > CRIME_NONE)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_06"); //Slyšel jsem, es to zpackal. Nejdøív zajdi za Leem a dej tu vìc do poøádku.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_06"); //SlyÅ¡el jsem, Å¾es to zpackal. NejdÅ™Ã­v zajdi za Leem a dej tu vÄ›c do poÅ™Ã¡dku.
 	}
 	else if (Wld_GetDay() <= Onar_SOLD_Day)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //Pøeskoèilo ti snad?
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //Nejdøív budeš pár dní pracovat pro mì. old budeš dostávat vdycky následující den.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //PÅ™eskoÄilo ti snad?
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //NejdÅ™Ã­v budeÅ¡ pÃ¡r dnÃ­ pracovat pro mÄ›. Å½old budeÅ¡ dostÃ¡vat vÅ¾dycky nÃ¡sledujÃ­cÃ­ den.
 	}
 	else if (Wld_GetDay() - 2 >= Onar_SOLD_Day)
 	{
 		if (Wld_GetDay() - 2 == Onar_SOLD_Day)
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_09"); //Kdes byl vèera?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_09"); //Kdes byl vÄera?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_10"); //Kdes byl posledních pár dní?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_10"); //Kdes byl poslednÃ­ch pÃ¡r dnÃ­?
 		};
 	
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Nikdy ses tu neukázal.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //Kdo ví, kde ses flákal.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Nikdy ses tu neukÃ¡zal.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //Kdo vÃ­, kde ses flÃ¡kal.
 		Onar_SOLD_Day = Wld_GetDay();
 		Onar_SOLD_XP = other.exp;
 	}
-	else //genau 1 Tag später...
+	else //genau 1 Tag spÃ¤ter...
 	{
 		if (other.exp > Onar_SOLD_XP + 200)
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_13"); //(zkroušenì) No dobrá. Tady je tvùj old.
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_13"); //(zkrouÅ¡enÄ›) No dobrÃ¡. Tady je tvÅ¯j Å¾old.
 			
 			//patch m.F. 
 			B_GiveInvItems (self, other, itmi_gold, SOLD);
@@ -462,7 +462,7 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 		}
 		else //nur gepennt
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Co? Nedìlal jsi nic jiného, ne e ses poflakoval kolem? Teda kdy jsi zrovna nespal?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Co? NedÄ›lal jsi nic jinÃ©ho, neÅ¾ Å¾e ses poflakoval kolem? Teda kdyÅ¾ jsi zrovna nespal?
 			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //Za to ti platit nebudu!
 		};
 		
@@ -482,7 +482,7 @@ INSTANCE DIA_Onar_MariaGold (C_INFO)
 	condition   = DIA_Onar_MariaGold_Condition;
 	information = DIA_Onar_MariaGold_Info;
 	permanent   = FALSE;
-	description = "Maria si myslí, e jsem nedostal dost.";
+	description = "Maria si myslÃ­, Å¾e jsem nedostal dost.";
 };
 FUNC INT DIA_Onar_MariaGold_Condition()
 {
@@ -493,14 +493,14 @@ FUNC INT DIA_Onar_MariaGold_Condition()
 };
 FUNC VOID DIA_Onar_MariaGold_Info()
 {
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_00"); //Maria si myslí, e jsem nedostal dost.
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_00"); //Maria si myslÃ­, Å¾e jsem nedostal dost.
 	AI_Output (self, other, "DIA_Onar_MariaGold_14_01"); //Co?
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_02"); //Øíkala, e bys mi mìl platit víc.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_03"); //(remcá) Ta enská taky musí do všeho strkat nos.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //Øekla ti kolik?
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_02"); //Å˜Ã­kala, Å¾e bys mi mÄ›l platit vÃ­c.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_03"); //(remcÃ¡) Ta Å¾enskÃ¡ taky musÃ­ do vÅ¡eho strkat nos.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //Å˜ekla ti kolik?
 	AI_Output (other, self, "DIA_Onar_MariaGold_15_05"); //Ne.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //Dobrá, poèínaje pøíštím oldem budeš dostávat o 10 zlatıch víc.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Ale ani o minci víc, jasnı?
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //DobrÃ¡, poÄÃ­naje pÅ™Ã­Å¡tÃ­m Å¾oldem budeÅ¡ dostÃ¡vat o 10 zlatÃ½ch vÃ­c.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Ale ani o minci vÃ­c, jasnÃ½?
 	
 	SOLD = SOLD + 10;
 };	
@@ -531,15 +531,15 @@ func int DIA_Onar_WannaSheep_Condition ()
 func void DIA_Onar_WannaSheep_Info ()
 {
 	AI_Output (other, self, "DIA_Onar_WannaSheep_15_00"); //Chci koupit ovci!
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //Tak co s tím lezeš sem? Vidíš tu snad nìjakou ovci?
-	AI_Output (other, self, "DIA_Onar_WannaSheep_15_02"); //Já...
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //Jestli chceš koupit ovci, zajdi na pastvinu, je napravo od mého domu.
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //Pepe ti nìjakou prodá.
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //Tak co s tÃ­m lezeÅ¡ sem? VidÃ­Å¡ tu snad nÄ›jakou ovci?
+	AI_Output (other, self, "DIA_Onar_WannaSheep_15_02"); //JÃ¡...
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //Jestli chceÅ¡ koupit ovci, zajdi na pastvinu, je napravo od mÃ©ho domu.
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //Pepe ti nÄ›jakou prodÃ¡.
 	
 	if (Npc_IsDead (Pepe))
 	{
-		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Pepe je mrtvı, je mi líto.
-		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //Uf! V tom pøípadì... nech mi tu za ni 200 zlatıch a vezmi si ji z pastviny sám.
+		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Pepe je mrtvÃ½, je mi lÃ­to.
+		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //Uf! V tom pÅ™Ã­padÄ›... nech mi tu za ni 200 zlatÃ½ch a vezmi si ji z pastviny sÃ¡m.
 		
 		Onar_SellSheep = TRUE;
 	};
@@ -555,7 +555,7 @@ instance DIA_Onar_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Onar_BuyLiesel_Condition;
 	information	 = 	DIA_Onar_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Tady máš, 200 zlatıch. Dej mi tu ovci.";
+	description	 = 	"Tady mÃ¡Å¡, 200 zlatÃ½ch. Dej mi tu ovci.";
 };
 func int DIA_Onar_BuyLiesel_Condition ()
 {	
@@ -566,12 +566,12 @@ func int DIA_Onar_BuyLiesel_Condition ()
 };
 func void DIA_Onar_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Tady máš tìch 200 zlatıch. Dej mi tu ovci.
+	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Tady mÃ¡Å¡ tÄ›ch 200 zlatÃ½ch. Dej mi tu ovci.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 200))
 	{
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //Mùeš si ji z pastviny vzít sám.
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //Jedna z nich za tebou urèitì pùjde. Vìtšina jich slyší na jméno Betsy.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //MÅ¯Å¾eÅ¡ si ji z pastviny vzÃ­t sÃ¡m.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //Jedna z nich za tebou urÄitÄ› pÅ¯jde. VÄ›tÅ¡ina jich slyÅ¡Ã­ na jmÃ©no Betsy.
 		
 		Wld_InsertNpc	(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 	
@@ -579,6 +579,6 @@ func void DIA_Onar_BuyLiesel_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_03"); //Nemáš tolik zlata. Neplıtvej mım drahocennım èasem.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_03"); //NemÃ¡Å¡ tolik zlata. NeplÃ½tvej mÃ½m drahocennÃ½m Äasem.
 	};
 };

@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Monty_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Monty_NW_Hi_Condition;
 	information = DIA_Addon_Monty_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "Take se u vrátíš do práce?";
+	description = "TakÅ¾e se uÅ¾ vrÃ¡tÃ­Å¡ do prÃ¡ce?";
 };
 FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 {		
@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Monty_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//Tak co, u zase v práci?
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//Èlovìèe – co jsem byl pryè, nehli tu ani prstem. Teï se musím znova zavrtat do tìch stavebních plánù.
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Fajn, nebudu tì rušit.
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(smìje se) Prima, šastnou cestu.
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//Tak co, uÅ¾ zase v prÃ¡ci?
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//ÄŒlovÄ›Äe â€“ co jsem byl pryÄ, nehli tu ani prstem. TeÄ se musÃ­m znova zavrtat do tÄ›ch stavebnÃ­ch plÃ¡nÅ¯.
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Fajn, nebudu tÄ› ruÅ¡it.
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//(smÄ›je se) Prima, Å¡Å¥astnou cestu.
 };
 // ************************************************************
 // 			  				PICK POCKET

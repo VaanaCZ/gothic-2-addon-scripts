@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Ice_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Síla Oka vyhasla a tvùj èas vypršel.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //SÃ­la Oka vyhasla a tvÅ¯j Äas vyprÅ¡el.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -68,15 +68,15 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Proè rušíš mùj odpoèinek? To se musím vìènì zahrabávat na stále vzdálenìjších místech jen proto, aby mì taková protivná havì jako ty nechala na pokoji?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //ProÄ ruÅ¡Ã­Å¡ mÅ¯j odpoÄinek? To se musÃ­m vÄ›ÄnÄ› zahrabÃ¡vat na stÃ¡le vzdÃ¡lenÄ›jÅ¡Ã­ch mÃ­stech jen proto, aby mÄ› takovÃ¡ protivnÃ¡ havÄ›Å¥ jako ty nechala na pokoji?
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Mluvící drak. Poehnáno buï Innosovo oko.
+		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //MluvÃ­cÃ­ drak. PoÅ¾ehnÃ¡no buÄ Innosovo oko.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Vy lidé jste podivná stvoøení. I kdy vás smete ledovı vichr smrti, vdycky se najde nìkdo, kdo povstane z popela a myslí si o sobì, e je mu dáno bıt hrdinou.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Ale to brzo skonèí. Osobnì dohlédnu na to, aby nikdo z vás u nikdy z nièeho nepovstal.
-	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Ticho. S mocí posvátného Oka, je mi byla propùjèena, si mùu dovolit zeptat se tì na pár vìcí.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Jen se ptej. Tvé vìdomosti ti nebudou k nièemu.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Vy lidÃ© jste podivnÃ¡ stvoÅ™enÃ­. I kdyÅ¾ vÃ¡s smete ledovÃ½ vichr smrti, vÅ¾dycky se najde nÄ›kdo, kdo povstane z popela a myslÃ­ si o sobÄ›, Å¾e je mu dÃ¡no bÃ½t hrdinou.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Ale to brzo skonÄÃ­. OsobnÄ› dohlÃ©dnu na to, aby nikdo z vÃ¡s uÅ¾ nikdy z niÄeho nepovstal.
+	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Ticho. S mocÃ­ posvÃ¡tnÃ©ho Oka, jeÅ¾ mi byla propÅ¯jÄena, si mÅ¯Å¾u dovolit zeptat se tÄ› na pÃ¡r vÄ›cÃ­.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Jen se ptej. TvÃ© vÄ›domosti ti nebudou k niÄemu.
 
 };
 
@@ -104,7 +104,7 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition ()
 func void DIA_Dragon_Ice_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Jsem Finkregh. Pán ledu a snìhu, stráce shromádìní a konec koncù i tvá smrt.
+	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Jsem Finkregh. PÃ¡n ledu a snÄ›hu, strÃ¡Å¾ce shromÃ¡Å¾dÄ›nÃ­ a konec koncÅ¯ i tvÃ¡ smrt.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Dragon_Ice_BELIAR		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_BELIAR_Condition;
 	information	 = 	DIA_Dragon_Ice_BELIAR_Info;
 
-	description	 = 	"Jakému bohu slouíš?";
+	description	 = 	"JakÃ©mu bohu slouÅ¾Ã­Å¡?";
 };
 
 func int DIA_Dragon_Ice_BELIAR_Condition ()
@@ -130,11 +130,11 @@ func int DIA_Dragon_Ice_BELIAR_Condition ()
 
 func void DIA_Dragon_Ice_BELIAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Jakému bohu slouíš?
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Jakı zpropadenı bùh mohl kdy dovolit takovı ohavnı potvoøe jako ty chodit po téhle zemi?
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Neobtìuj se porozumìt smyslu našeho shromádìní, malı hrdino.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar nám nejen dovolil, abychom tu byli - on nás dokonce vede.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Podníceni jeho svatımi slovy si neodpoèineme do té doby, ne se jeho vùle promìní v skutky.
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //JakÃ©mu bohu slouÅ¾Ã­Å¡?
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //JakÃ½ zpropadenÃ½ bÅ¯h mohl kdy dovolit takovÃ½ ohavnÃ½ potvoÅ™e jako ty chodit po tÃ©hle zemi?
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //NeobtÄ›Å¾uj se porozumÄ›t smyslu naÅ¡eho shromÃ¡Å¾dÄ›nÃ­, malÃ½ hrdino.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar nÃ¡m nejen dovolil, abychom tu byli - on nÃ¡s dokonce vede.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //PodnÃ­ceni jeho svatÃ½mi slovy si neodpoÄineme do tÃ© doby, neÅ¾ se jeho vÅ¯le promÄ›nÃ­ v skutky.
 
 };
 

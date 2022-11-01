@@ -28,7 +28,7 @@ instance DIA_Addon_BL_BDT_1_Chef(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Chef_Condition;
 	information	= DIA_Addon_BL_BDT_1_Chef_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Chef_Condition()
@@ -44,17 +44,17 @@ FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Tady poøád odcházejí a pøicházejí noví velitelé, take za chvíli ztratíš pøehled.
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Tady poÅ™Ã¡d odchÃ¡zejÃ­ a pÅ™ichÃ¡zejÃ­ novÃ­ velitelÃ©, takÅ¾e za chvÃ­li ztratÃ­Å¡ pÅ™ehled.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_02");//Ale myslím, e teï je naším šéfem Thorus.
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_02");//Ale myslÃ­m, Å¾e teÄ je naÅ¡Ã­m Å¡Ã©fem Thorus.
 		};
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Náš velitel je Havran. Dovedl nás sem a vystavìl tábor.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Ovládá dùl, jinak by se ti psi pro to zlato u dávno navzájem pozabíjeli.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//NÃ¡Å¡ velitel je Havran. Dovedl nÃ¡s sem a vystavÄ›l tÃ¡bor.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//OvlÃ¡dÃ¡ dÅ¯l, jinak by se ti psi pro to zlato uÅ¾ dÃ¡vno navzÃ¡jem pozabÃ­jeli.
 	};
 };
 // *************************************************************************
@@ -66,7 +66,7 @@ instance DIA_Addon_BL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager_Info;
 	permanent	= FALSE;
-	description = "Co bys mi øekl o táboøe?";
+	description = "Co bys mi Å™ekl o tÃ¡boÅ™e?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
@@ -79,10 +79,10 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Co víš o táboøe?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Kdy se provalilo, e je tu zlatej dùl, zaèalo to v tıhle bandì flákaèù poøádnì vøít.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Ty nejhorší Havran pozabíjel a zbytek poslal do dolu.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Od tı doby sem nahoru nikdo nesmí. V dole musí kopat dokonce i všichni vìzni.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Co vÃ­Å¡ o tÃ¡boÅ™e?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//KdyÅ¾ se provalilo, Å¾e je tu zlatej dÅ¯l, zaÄalo to v tÃ½hle bandÄ› flÃ¡kaÄÅ¯ poÅ™Ã¡dnÄ› vÅ™Ã­t.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Ty nejhorÅ¡Ã­ Havran pozabÃ­jel a zbytek poslal do dolu.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Od tÃ½ doby sem nahoru nikdo nesmÃ­. V dole musÃ­ kopat dokonce i vÅ¡ichni vÄ›zni.
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
 		B_LogEntry (TOPIC_Addon_RavenKDW, LogText_Addon_RavensGoldmine); 
@@ -100,7 +100,7 @@ instance DIA_Addon_BL_BDT_1_Lager2(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager2_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager2_Info;
 	permanent	= TRUE;
-	description = "Co bys mi øekl o táboøe?";
+	description = "Co bys mi Å™ekl o tÃ¡boÅ™e?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
@@ -112,9 +112,9 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_1_Lager2_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Co víš o táboøe?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Jestli nìkoho z nich napadneš, sesypou se na tebe VŠICHNI.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//Pokud tedy nebudeš mít k tı hádce dobrej dùvod. Pak se ti do toho nikdo plést nebude.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Co vÃ­Å¡ o tÃ¡boÅ™e?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Jestli nÄ›koho z nich napadneÅ¡, sesypou se na tebe VÅ ICHNI.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//Pokud tedy nebudeÅ¡ mÃ­t k tÃ½ hÃ¡dce dobrej dÅ¯vod. Pak se ti do toho nikdo plÃ©st nebude.
 };
 // *************************************************************************
 // 								News
@@ -125,7 +125,7 @@ instance DIA_Addon_BL_BDT_1_News(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_News_Condition;
 	information	= DIA_Addon_BL_BDT_1_News_Info;
 	permanent	= TRUE;
-	description = "Nìco nového?";
+	description = "NÄ›co novÃ©ho?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_News_Condition()
@@ -135,14 +135,14 @@ FUNC INT DIA_Addon_BL_BDT_1_News_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_1_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");//Nìco nového?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");//NÄ›co novÃ©ho?
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Havran je mrtvı, co si teï poèneme?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Havran je mrtvÃ½, co si teÄ poÄneme?
 	};
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//Piráti nás na pevninu nepøevezou, protoe jsme jim za to u párkrát nezaplatili.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//Mìli bysme jich pár zapíchnout. Ostatní by snad potom dostali rozum a radši nás pøevezli.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//PirÃ¡ti nÃ¡s na pevninu nepÅ™evezou, protoÅ¾e jsme jim za to uÅ¾ pÃ¡rkrÃ¡t nezaplatili.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//MÄ›li bysme jich pÃ¡r zapÃ­chnout. OstatnÃ­ by snad potom dostali rozum a radÅ¡i nÃ¡s pÅ™evezli.
 };
 // *************************************************************************
 // 									Sklaven
@@ -153,7 +153,7 @@ instance DIA_Addon_BL_BDT_1_Sklaven(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Sklaven_Condition;
 	information	= DIA_Addon_BL_BDT_1_Sklaven_Info;
 	permanent	= TRUE;
-	description = "Co víš o vìzních?";
+	description = "Co vÃ­Å¡ o vÄ›znÃ­ch?";
 };  
 FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 {	
@@ -167,14 +167,14 @@ FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Sklaven_Info()
 {	
 	 
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Co víš o vìzních?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Havran chce nìco vykopat. Napøed to nechal dìlat bandity, ale a moc jich pøitom zaøvalo.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Take sem pøived vìznì - u tìch na úmrtnosti tolik nezáleí.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Co vÃ­Å¡ o vÄ›znÃ­ch?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Havran chce nÄ›co vykopat. NapÅ™ed to nechal dÄ›lat bandity, ale aÅ¾ moc jich pÅ™itom zaÅ™valo.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//TakÅ¾e sem pÅ™ived vÄ›znÄ› - u tÄ›ch na Ãºmrtnosti tolik nezÃ¡leÅ¾Ã­.
 	
 	if (BDT_1_Ausbuddeln == FALSE)
 	{
 		AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_03");//Co chce Havran vykopat?
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");//Nemám páru, ale urèitì je to nìco víc ne zlato.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_04");//NemÃ¡m pÃ¡ru, ale urÄitÄ› je to nÄ›co vÃ­c neÅ¾ zlato.
 		BDT_1_Ausbuddeln = TRUE;
 	};
 };

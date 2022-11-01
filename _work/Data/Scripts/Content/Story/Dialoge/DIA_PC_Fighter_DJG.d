@@ -32,7 +32,7 @@ instance DIA_GornDJG_STARTCAMP		(C_INFO)
 	condition	 = 	DIA_GornDJG_STARTCAMP_Condition;
 	information	 = 	DIA_GornDJG_STARTCAMP_Info;
 
-	description	 = 	"VidÌm, ûe ses p¯idal k drakobijc˘m.";
+	description	 = 	"Vid√≠m, ≈æe ses p≈ôidal k drakobijc≈Øm.";
 };
 
 func int DIA_GornDJG_STARTCAMP_Condition ()
@@ -45,28 +45,28 @@ func int DIA_GornDJG_STARTCAMP_Condition ()
 
 func void DIA_GornDJG_STARTCAMP_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //VidÌm, ûe ses p¯idal k drakobijc˘m.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //äel jsem se Sylviem do HornickÈho ˙dolÌ, protoûe se tady vyzn·m ze vöech nejlÈpe a chtÏl jsem si udÏlat p¯esnou p¯edstavu o zdejöÌ situaci.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //Jedno ti povÌm. NÏco se tu chyst·. JeötÏ nikdy jsem nevidÏl tolik sk¯et˘ na jednom mÌstÏ.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //Nedivil bych se, kdyby touhle dobou Garond a vöichni paladini z hradu uû neutekli nebo nebyli rozsekanÌ na kousky.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //Vid√≠m, ≈æe ses p≈ôidal k drakobijc≈Øm.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //≈†el jsem se Sylviem do Hornick√©ho √∫dol√≠, proto≈æe se tady vyzn√°m ze v≈°ech nejl√©pe a chtƒõl jsem si udƒõlat p≈ôesnou p≈ôedstavu o zdej≈°√≠ situaci.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //Jedno ti pov√≠m. Nƒõco se tu chyst√°. Je≈°tƒõ nikdy jsem nevidƒõl tolik sk≈ôet≈Ø na jednom m√≠stƒõ.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //Nedivil bych se, kdyby touhle dobou Garond a v≈°ichni paladini z hradu u≈æ neutekli nebo nebyli rozsekan√≠ na kousky.
 
-	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "UvidÌme se.", DIA_GornDJG_STARTCAMP_By );
-	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Co budeö dÏlat teÔ?", DIA_GornDJG_STARTCAMP_Wohin );
+	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Uvid√≠me se.", DIA_GornDJG_STARTCAMP_By );
+	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Co bude≈° dƒõlat teƒè?", DIA_GornDJG_STARTCAMP_Wohin );
 
 
 };
 func void DIA_GornDJG_STARTCAMP_Wohin ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Co chceö dÏlat?
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //Nejd¯Ìv p˘jdu tady s chlapci do HornickÈho ˙dolÌ a pak vyrazÌm.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //RozhodnÏ musÌm zjistit, co majÌ sk¯eti za lubem.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Co chce≈° dƒõlat?
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //Nejd≈ô√≠v p≈Øjdu tady s chlapci do Hornick√©ho √∫dol√≠ a pak vyraz√≠m.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //Rozhodnƒõ mus√≠m zjistit, co maj√≠ sk≈ôeti za lubem.
 
 };
 
 func void DIA_GornDJG_STARTCAMP_By ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //UvidÌme se.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //D·vej na sebe pozor.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //Uvid√≠me se.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //D√°vej na sebe pozor.
 	AI_StopProcessInfos	(self);
 };
 
@@ -80,7 +80,7 @@ instance DIA_GornDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_GornDJG_HALLO_Condition;
 	information	 = 	DIA_GornDJG_HALLO_Info;
 
-	description	 = 	"Tak tady ses zaöil!";
+	description	 = 	"Tak tady ses za≈°il!";
 };
 
 func int DIA_GornDJG_HALLO_Condition ()
@@ -93,8 +93,8 @@ func int DIA_GornDJG_HALLO_Condition ()
 
 func void DIA_GornDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_HALLO_15_00"); //Takûe tady ses zaöil!
-	AI_Output			(self, other, "DIA_GornDJG_HALLO_12_01"); //NenÌ tak snadnÈ se zabÌt, co?
+	AI_Output			(other, self, "DIA_GornDJG_HALLO_15_00"); //Tak≈æe tady ses za≈°il!
+	AI_Output			(self, other, "DIA_GornDJG_HALLO_12_01"); //Nen√≠ tak snadn√© se zab√≠t, co?
 
 };
 
@@ -107,7 +107,7 @@ instance DIA_GornDJG_WHATSUP		(C_INFO)
 	condition	 = 	DIA_GornDJG_WHATSUP_Condition;
 	information	 = 	DIA_GornDJG_WHATSUP_Info;
 
-	description	 = 	"Uû jsi nÏco chytil?";
+	description	 = 	"U≈æ jsi nƒõco chytil?";
 };
 
 func int DIA_GornDJG_WHATSUP_Condition ()
@@ -120,30 +120,30 @@ func int DIA_GornDJG_WHATSUP_Condition ()
 
 func void DIA_GornDJG_WHATSUP_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Uû jsi nÏco chytil?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_12_01"); //Po¯·d Ëek·m. ÿekl bych, ûe tam v tÏch skalnÌch trosk·ch nÏco je. V noci se tam svÌtÌ a jsou dokonce slyöet nÏjakÈ sk¯eky.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_15_00"); //U≈æ jsi nƒõco chytil?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_12_01"); //Po≈ô√°d ƒçek√°m. ≈òekl bych, ≈æe tam v tƒõch skaln√≠ch trosk√°ch nƒõco je. V noci se tam sv√≠t√≠ a jsou dokonce sly≈°et nƒõjak√© sk≈ôeky.
 
 	Info_ClearChoices	(DIA_GornDJG_WHATSUP);
-	Info_AddChoice		(DIA_GornDJG_WHATSUP, "ée by Lester?", DIA_GornDJG_WHATSUP_Lester );
+	Info_AddChoice		(DIA_GornDJG_WHATSUP, "≈Ωe by Lester?", DIA_GornDJG_WHATSUP_Lester );
 	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Drak?", DIA_GornDJG_WHATSUP_A_Dragon );
 	
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn hlÌdkuje na ˙patÌ ploöiny u starÈ kamennÈ pevnosti. Tak m˘ûe dob¯e pozorovat nejen ji, ale i sk¯etÌ opevnÏnÌ."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn hl√≠dkuje na √∫pat√≠ plo≈°iny u star√© kamenn√© pevnosti. Tak m≈Ø≈æe dob≈ôe pozorovat nejen ji, ale i sk≈ôet√≠ opevnƒõn√≠."); 
 };
 func void DIA_GornDJG_WHATSUP_Lester ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Moûn· to je Lester, kter˝ se vr·til do sv˝ch rozvalin?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //To tÏûko. Co vÌm, Lester tu uû neûije.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Mo≈æn√° to je Lester, kter√Ω se vr√°til do sv√Ωch rozvalin?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //To tƒõ≈æko. Co v√≠m, Lester tu u≈æ ne≈æije.
 };
 
 func void DIA_GornDJG_WHATSUP_A_Dragon ()
 {
 	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //Drak?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Dost moûn·. Ta planina je st¯eûen· jako nÏjak· mizern· kr·lovsk· pokladnice. Ale je to bohuûel jedin· cesta k pevnosti.
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //Jako by nestaËilo, ûe jsou draci dost nep¯ÌjemnÌ sami o sobÏ. Vypad· to, ûe majÌ v z·loze jeötÏ p·r dalöÌch p¯Ìöer.
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Dost mo≈æn√°. Ta planina je st≈ôe≈æen√° jako nƒõjak√° mizern√° kr√°lovsk√° pokladnice. Ale je to bohu≈æel jedin√° cesta k pevnosti.
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //Jako by nestaƒçilo, ≈æe jsou draci dost nep≈ô√≠jemn√≠ sami o sobƒõ. Vypad√° to, ≈æe maj√≠ v z√°loze je≈°tƒõ p√°r dal≈°√≠ch p≈ô√≠≈°er.
 
 	GornDJG_WhatMonsters = TRUE;
 
-	B_LogEntry (TOPIC_Dragonhunter,"Podle Gorna se ve starÈ kamennÈ pevnosti usadil drak."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Podle Gorna se ve star√© kamenn√© pevnosti usadil drak."); 
 	
 	Info_ClearChoices	(DIA_GornDJG_WHATSUP);
 };
@@ -157,7 +157,7 @@ instance DIA_GornDJG_WHATMONSTERS		(C_INFO)
 	condition	 = 	DIA_GornDJG_WHATMONSTERS_Condition;
 	information	 = 	DIA_GornDJG_WHATMONSTERS_Info;
 
-	description	 = 	"JakÈ p¯Ìöery to jsou?";
+	description	 = 	"Jak√© p≈ô√≠≈°ery to jsou?";
 };
 
 func int DIA_GornDJG_WHATMONSTERS_Condition ()
@@ -170,9 +170,9 @@ func int DIA_GornDJG_WHATMONSTERS_Condition ()
 
 func void DIA_GornDJG_WHATMONSTERS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //JakÈ p¯Ìöery to jsou?
-	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //NevÌm to ˙plnÏ p¯esnÏ, ale chodÌ vzp¯ÌmenÏ a majÌ öupinatou k˘ûi. PohybujÌ se po skal·ch jako chÚapavci, kte¯Ì vycÌtili obÏù.
-	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //Tady dole je slyöÌm funÏt a supÏt. ÿekl bych, ûe zabrali ˙plnÏ celou planinu.
+	AI_Output			(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //Jak√© p≈ô√≠≈°ery to jsou?
+	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //Nev√≠m to √∫plnƒõ p≈ôesnƒõ, ale chod√≠ vzp≈ô√≠menƒõ a maj√≠ ≈°upinatou k≈Ø≈æi. Pohybuj√≠ se po skal√°ch jako ch≈àapavci, kte≈ô√≠ vyc√≠tili obƒõ≈•.
+	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //Tady dole je sly≈°√≠m funƒõt a supƒõt. ≈òekl bych, ≈æe zabrali √∫plnƒõ celou planinu.
 
 };
 
@@ -186,7 +186,7 @@ instance DIA_GornDJG_WAHTABOUTORCS		(C_INFO)
 	condition	 = 	DIA_GornDJG_WAHTABOUTORCS_Condition;
 	information	 = 	DIA_GornDJG_WAHTABOUTORCS_Info;
 
-	description	 = 	"A co sk¯eti?";
+	description	 = 	"A co sk≈ôeti?";
 };
 
 func int DIA_GornDJG_WAHTABOUTORCS_Condition ()
@@ -199,11 +199,11 @@ func int DIA_GornDJG_WAHTABOUTORCS_Condition ()
 
 func void DIA_GornDJG_WAHTABOUTORCS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //A co sk¯eti?
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //ChvÌli jsem je sledoval. Za tou ohradou dole se musÌ nÏco ukr˝vat. M·m podez¯enÌ, ûe se jich tam shrom·ûdil uû pÏkn˝ z·stup.
-	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //TÌm chceö ¯Ìct, ûe jich tam je VÕC neû tady?
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //Nep¯ekvapilo by mÏ, kdyby jednoho dne tu palis·du strhli a zaplavili celou zemi. V˘bec se mi to nechce lÌbit.
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Pokud se to stane, budu se muset vr·tit a varovat Leeho. StejnÏ se chce z ostrova zdekovat. Pak bude nejvyööÌ Ëas.
+	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //A co sk≈ôeti?
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //Chv√≠li jsem je sledoval. Za tou ohradou dole se mus√≠ nƒõco ukr√Ωvat. M√°m podez≈ôen√≠, ≈æe se jich tam shrom√°≈ædil u≈æ pƒõkn√Ω z√°stup.
+	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //T√≠m chce≈° ≈ô√≠ct, ≈æe jich tam je V√çC ne≈æ tady?
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //Nep≈ôekvapilo by mƒõ, kdyby jednoho dne tu palis√°du strhli a zaplavili celou zemi. V≈Øbec se mi to nechce l√≠bit.
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Pokud se to stane, budu se muset vr√°tit a varovat Leeho. Stejnƒõ se chce z ostrova zdekovat. Pak bude nejvy≈°≈°√≠ ƒças.
 
 };
 
@@ -216,7 +216,7 @@ instance DIA_GornDJG_HELPKILLDRACONIANS		(C_INFO)
 	condition	 = 	DIA_GornDJG_HELPKILLDRACONIANS_Condition;
 	information	 = 	DIA_GornDJG_HELPKILLDRACONIANS_Info;
 
-	description	 = 	"M˘ûeö mi pomoci dostat se do pevnosti?";
+	description	 = 	"M≈Ø≈æe≈° mi pomoci dostat se do pevnosti?";
 };
 
 func int DIA_GornDJG_HELPKILLDRACONIANS_Condition ()
@@ -233,20 +233,20 @@ func int DIA_GornDJG_HELPKILLDRACONIANS_Condition ()
 
 func void DIA_GornDJG_HELPKILLDRACONIANS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //M˘ûeö mi pomoci dostat se do pevnosti?
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //To v·ûnÏ nevÌm. BojÌm se, ûe sk¯eti za˙toËÌ p¯esnÏ ve chvÌli, kdy je pustÌm z oËÌ.
-	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //To je paranoidnÌ!
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Nem˘ûu si pomoct. VÌö, nikdy bych si neodpustil, kdybych p¯iöel pozdÏ. Na druhou stranu...
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //Vûdyù je to jedno! ProË jinak bych tady byl? Za˙toËme na planinu a prosekejme si cestu do pevnosti.
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //Troöka pohybu n·m neuökodÌ. KromÏ toho bych se docela r·d podÌval na ty bestie vÌc zblÌzka.
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Dej mi vÏdÏt, aû budeö p¯ipraven!
+	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //M≈Ø≈æe≈° mi pomoci dostat se do pevnosti?
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //To v√°≈ænƒõ nev√≠m. Boj√≠m se, ≈æe sk≈ôeti za√∫toƒç√≠ p≈ôesnƒõ ve chv√≠li, kdy je pust√≠m z oƒç√≠.
+	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //To je paranoidn√≠!
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Nem≈Ø≈æu si pomoct. V√≠≈°, nikdy bych si neodpustil, kdybych p≈ôi≈°el pozdƒõ. Na druhou stranu...
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //V≈ædy≈• je to jedno! Proƒç jinak bych tady byl? Za√∫toƒçme na planinu a prosekejme si cestu do pevnosti.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //Tro≈°ka pohybu n√°m neu≈°kod√≠. Kromƒõ toho bych se docela r√°d pod√≠val na ty bestie v√≠c zbl√≠zka.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Dej mi vƒõdƒõt, a≈æ bude≈° p≈ôipraven!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn mi chce pomoci proniknout do kamennÈ pevnosti na planinÏ."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn mi chce pomoci proniknout do kamenn√© pevnosti na planinƒõ."); 
 
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info LosGeht¥s
+//	Info LosGeht¬¥s
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornDJG_LOSGEHTS		(C_INFO)
 {
@@ -254,7 +254,7 @@ instance DIA_GornDJG_LOSGEHTS		(C_INFO)
 	condition	 = 	DIA_GornDJG_LOSGEHTS_Condition;
 	information	 = 	DIA_GornDJG_LOSGEHTS_Info;
 
-	description	 = 	"Za˙toËme!";
+	description	 = 	"Za√∫toƒçme!";
 };
 
 func int DIA_GornDJG_LOSGEHTS_Condition ()
@@ -267,8 +267,8 @@ if (Npc_KnowsInfo(other, DIA_GornDJG_HELPKILLDRACONIANS))
 
 func void DIA_GornDJG_LOSGEHTS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Za˙toËme!
-	AI_Output			(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Jako za star˝ch Ëas˘, co? Ale jedno ti ¯eknu: tohle je moje bitva. Tentokr·t jdu vep¯edu j·!
+	AI_Output			(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Za√∫toƒçme!
+	AI_Output			(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Jako za star√Ωch ƒças≈Ø, co? Ale jedno ti ≈ôeknu: tohle je moje bitva. Tentokr√°t jdu vep≈ôedu j√°!
 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -299,11 +299,11 @@ func int DIA_GornDJG_BISHIERHIN_Condition ()
 
 func void DIA_GornDJG_BISHIERHIN_Info ()
 {
-	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //Byla to hraËka. Tak, p¯Ìteli, o zbytek se uû budeö muset postarat ty. Po¯·dnÏ jim zatop! J· se vr·tÌm a budu zase d·vat pozor na sk¯ety.
-	AI_Output			(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //é·dn˝ problÈm. JeötÏ se uvidÌme!
-	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //To douf·m!
+	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //Byla to hraƒçka. Tak, p≈ô√≠teli, o zbytek se u≈æ bude≈° muset postarat ty. Po≈ô√°dnƒõ jim zatop! J√° se vr√°t√≠m a budu zase d√°vat pozor na sk≈ôety.
+	AI_Output			(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //≈Ω√°dn√Ω probl√©m. Je≈°tƒõ se uvid√≠me!
+	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //To douf√°m!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn se vr·til zpÏt na svÈ pozorovacÌ stanoviötÏ. Chce i nad·le sledovat sk¯ety."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn se vr√°til zpƒõt na sv√© pozorovac√≠ stanovi≈°tƒõ. Chce i nad√°le sledovat sk≈ôety."); 
 
 	B_GivePlayerXP (XP_GornDJGPlateauClear);
  	
@@ -322,7 +322,7 @@ instance DIA_GornDJG_DRAGONDEAD		(C_INFO)
 	condition	 = 	DIA_GornDJG_DRAGONDEAD_Condition;
 	information	 = 	DIA_GornDJG_DRAGONDEAD_Info;
 
-	description	 = 	"Drak ze skal je mrtv˝!";	
+	description	 = 	"Drak ze skal je mrtv√Ω!";	
 };
 
 func int DIA_GornDJG_DRAGONDEAD_Condition ()
@@ -339,14 +339,14 @@ func int DIA_GornDJG_DRAGONDEAD_Condition ()
 
 func void DIA_GornDJG_DRAGONDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //Drak ze skal je mrtv˝!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //NeslyöÌm û·dnÈ dalöÌ sk¯eky! Byl jsi v tÈ skalnÌ pevnosti?
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //Drak ze skal je mrtv√Ω!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //Nesly≈°√≠m ≈æ√°dn√© dal≈°√≠ sk≈ôeky! Byl jsi v t√© skaln√≠ pevnosti?
 	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_02"); //Ano!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Ha, ha! To jsem si domyslel. Kdekoliv se objevÌö, nez˘stane k·men na kameni.
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Co budeö dÏlat d·l?
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //JeötÏ chvÌli tu z˘stanu a pak se vr·tÌm k Leeovi. Moûn· se tam zase setk·me!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //Cel· tahle krajina mi zaËÌn· lÈzt na nervy. Uû je naËase, abychom odsud vypadli.
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //UvidÌme se pozdÏji!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Ha, ha! To jsem si domyslel. Kdekoliv se objev√≠≈°, nez≈Østane k√°men na kameni.
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Co bude≈° dƒõlat d√°l?
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //Je≈°tƒõ chv√≠li tu z≈Østanu a pak se vr√°t√≠m k Leeovi. Mo≈æn√° se tam zase setk√°me!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //Cel√° tahle krajina mi zaƒç√≠n√° l√©zt na nervy. U≈æ je naƒçase, abychom odsud vypadli.
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //Uvid√≠me se pozdƒõji!
 	B_GivePlayerXP (XP_Ambient);
 };
 

@@ -49,7 +49,7 @@ FUNC INT DIA_Agon_Hello_Condition()
 
 FUNC VOID DIA_Agon_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_Hello_07_00"); //(opovrûlivÏ) Co chceö?
+	AI_Output (self ,other,"DIA_Agon_Hello_07_00"); //(opovr≈ælivƒõ) Co chce≈°?
 };
 
 // *************************************************************************
@@ -62,7 +62,7 @@ INSTANCE DIA_Agon_Wurst(C_INFO)
 	condition	= DIA_Agon_Wurst_Condition;
 	information	= DIA_Agon_Wurst_Info;
 	permanent	= FALSE;
-	description = "Tum·ö, m·m tu pro tebe skopovou klob·su.";
+	description = "Tum√°≈°, m√°m tu pro tebe skopovou klob√°su.";
 };                       
 
 FUNC INT DIA_Agon_Wurst_Condition()
@@ -78,9 +78,9 @@ FUNC INT DIA_Agon_Wurst_Condition()
 
 FUNC VOID DIA_Agon_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Agon_Wurst_15_00"); //Tum·ö, m·m tu pro tebe skopovou klob·su.
-	AI_Output (self, other, "DIA_Agon_Wurst_07_01"); //OvËÌ klob·sa, ovËÌ s˝r... ovËÌ mlÈko... uû mi to vöechno leze krkem.
-	AI_Output (other, self, "DIA_Agon_Wurst_15_02"); //Tak chceö tu klob·su, nebo ne?
+	AI_Output (other, self, "DIA_Agon_Wurst_15_00"); //Tum√°≈°, m√°m tu pro tebe skopovou klob√°su.
+	AI_Output (self, other, "DIA_Agon_Wurst_07_01"); //Ovƒç√≠ klob√°sa, ovƒç√≠ s√Ωr... ovƒç√≠ ml√©ko... u≈æ mi to v≈°echno leze krkem.
+	AI_Output (other, self, "DIA_Agon_Wurst_15_02"); //Tak chce≈° tu klob√°su, nebo ne?
 	AI_Output (self, other, "DIA_Agon_Wurst_07_03"); //Ale no tak ji sem dej!
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
@@ -106,7 +106,7 @@ INSTANCE DIA_Agon_New   (C_INFO)
 	condition   = DIA_Agon_New_Condition;
 	information = DIA_Agon_New_Info;
 	permanent   = FALSE;
-	description = "Jsem tady nov˝.";
+	description = "Jsem tady nov√Ω.";
 };
 
 FUNC INT DIA_Agon_New_Condition()
@@ -120,9 +120,9 @@ FUNC INT DIA_Agon_New_Condition()
 
 FUNC VOID DIA_Agon_New_Info()
 {
-	AI_Output	(other,self ,"DIA_Agon_New_15_00"); //Jsem tady nov˝.
-	AI_Output	(self ,other,"DIA_Agon_New_07_01"); //To vidÌm.
-	AI_Output	(self ,other,"DIA_Agon_New_07_02"); //Jestli zatÌm nem·ö co na pr·ci, promluv si s Parlanem. On uû ti nÏjakou d·.
+	AI_Output	(other,self ,"DIA_Agon_New_15_00"); //Jsem tady nov√Ω.
+	AI_Output	(self ,other,"DIA_Agon_New_07_01"); //To vid√≠m.
+	AI_Output	(self ,other,"DIA_Agon_New_07_02"); //Jestli zat√≠m nem√°≈° co na pr√°ci, promluv si s Parlanem. On u≈æ ti nƒõjakou d√°.
 };
 //***********************************************************************
 //	Was ist zwischen dir und Babo passiert?
@@ -151,41 +151,41 @@ FUNC INT DIA_Agon_YouAndBabo_Condition()
 FUNC VOID DIA_Agon_YouAndBabo_Info()
 {
 	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_15_00"); //Co se stalo mezi tebou a Babem?
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_01"); //NemÏl bys vÏ¯it vöemu, co uslyöÌö.
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_02"); //(ne˙stupnÏ) ÿeknÏme si jedno: p˘jdu svou vlastnÌ cestou. Tou, kterou mi p¯edurËil Innos.
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_03"); //NedovolÌm nikomu st·t mi v cestÏ, a urËitÏ ne tomu jelim·nkovi Babovi.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_01"); //Nemƒõl bys vƒõ≈ôit v≈°emu, co usly≈°√≠≈°.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_02"); //(ne√∫stupnƒõ) ≈òeknƒõme si jedno: p≈Øjdu svou vlastn√≠ cestou. Tou, kterou mi p≈ôedurƒçil Innos.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_03"); //Nedovol√≠m nikomu st√°t mi v cestƒõ, a urƒçitƒõ ne tomu jelim√°nkovi Babovi.
 
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"NemÏli bychom my novicovÈ drûet pohromadÏ?",DIA_Agon_YouAndBabo_AllTogether);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"Innos s·m vÌ, jakou cestou bychom se mÏli vydat.",DIA_Agon_YouAndBabo_InnosWay);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"Vych·zÌme spolu docela dob¯e.",DIA_Agon_YouAndBabo_Understand);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"Nemƒõli bychom my novicov√© dr≈æet pohromadƒõ?",DIA_Agon_YouAndBabo_AllTogether);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"Innos s√°m v√≠, jakou cestou bychom se mƒõli vydat.",DIA_Agon_YouAndBabo_InnosWay);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"Vych√°z√≠me spolu docela dob≈ôe.",DIA_Agon_YouAndBabo_Understand);
 };
 
 FUNC VOID DIA_Agon_YouAndBabo_AllTogether ()
 {
-	AI_Output (other,self ,"DIA_Agon_YouAndBabo_AllTogether_15_00"); //NemÏli bychom my novicovÈ drûet pohromadÏ?
-	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_01"); //Vy ostatnÌ si drûte pohromadÏ, jak chcete.
-	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_02"); //Ale prosÌm, nepl˝tvej m˝m Ëasem. (chladnÏ) A nestav se mi do cesty.
+	AI_Output (other,self ,"DIA_Agon_YouAndBabo_AllTogether_15_00"); //Nemƒõli bychom my novicov√© dr≈æet pohromadƒõ?
+	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_01"); //Vy ostatn√≠ si dr≈æte pohromadƒõ, jak chcete.
+	AI_Output (self ,other,"DIA_Agon_YouAndBabo_AllTogether_07_02"); //Ale pros√≠m, nepl√Ωtvej m√Ωm ƒçasem. (chladnƒõ) A nestav se mi do cesty.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 
 FUNC VOID DIA_Agon_YouAndBabo_InnosWay ()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_InnosWay_15_00"); //Innos s·m vÌ, jakou cestou bychom se mÏli vydat.
-	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_InnosWay_07_01"); //Moje rodina vûdycky st·la vysoko v InnosovÏ p¯Ìzni a na tom se nic nezmÏnÌ.
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_InnosWay_15_00"); //Innos s√°m v√≠, jakou cestou bychom se mƒõli vydat.
+	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_InnosWay_07_01"); //Moje rodina v≈ædycky st√°la vysoko v Innosovƒõ p≈ô√≠zni a na tom se nic nezmƒõn√≠.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 FUNC VOID DIA_Agon_YouAndBabo_Understand ()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_Understand_15_00"); //Vych·zÌme spolu docela dob¯e.
-	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_Understand_07_01"); //To douf·m. Aû budu m·gem, m˘ûu za tebe ztratit sl˘vko.
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_Understand_15_00"); //Vych√°z√≠me spolu docela dob≈ôe.
+	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_Understand_07_01"); //To douf√°m. A≈æ budu m√°gem, m≈Ø≈æu za tebe ztratit sl≈Øvko.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 //************************************************************************
-//	Kann ich bei dir Kr‰uter bekommen?
+//	Kann ich bei dir Kr√§uter bekommen?
 //************************************************************************
 
 INSTANCE DIA_Agon_GetHerb   (C_INFO)
@@ -195,7 +195,7 @@ INSTANCE DIA_Agon_GetHerb   (C_INFO)
 	condition   = DIA_Agon_GetHerb_Condition;
 	information = DIA_Agon_GetHerb_Info;
 	permanent   = TRUE;
-	description = "Co tady pÏstujete?";
+	description = "Co tady pƒõstujete?";
 };
 
 FUNC INT DIA_Agon_GetHerb_Condition()
@@ -207,11 +207,11 @@ FUNC INT DIA_Agon_GetHerb_Condition()
 };
 FUNC VOID DIA_Agon_GetHerb_Info()
 {
-	AI_Output (other,self ,"DIA_Agon_GetHerb_15_00"); //Co tady pÏstujete?
-	AI_Output (self ,other,"DIA_Agon_GetHerb_07_01"); //SnaûÌme se vypÏstovat lÈËivÈ byliny, aby mohl mistr Neoras va¯it lektvary.
+	AI_Output (other,self ,"DIA_Agon_GetHerb_15_00"); //Co tady pƒõstujete?
+	AI_Output (self ,other,"DIA_Agon_GetHerb_07_01"); //Sna≈æ√≠me se vypƒõstovat l√©ƒçiv√© byliny, aby mohl mistr Neoras va≈ôit lektvary.
 };
 //************************************************************************
-//	Agon ist in der Hˆhle
+//	Agon ist in der H√∂hle
 //************************************************************************
 
 INSTANCE DIA_Agon_GolemDead   (C_INFO)
@@ -235,19 +235,19 @@ FUNC INT DIA_Agon_GolemDead_Condition()
 
 FUNC VOID DIA_Agon_GolemDead_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_GolemDead_07_00"); //(vÌtÏznÏ) Jdeö pozdÏ!
-	AI_Output (self ,other,"DIA_Agon_GolemDead_07_01"); //Byl jsem tady prvnÌ! Vyhr·l jsem!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_07_00"); //(v√≠tƒõznƒõ) Jde≈° pozdƒõ!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_07_01"); //Byl jsem tady prvn√≠! Vyhr√°l jsem!
 	 
 	Info_ClearChoices (DIA_Agon_GolemDead);
-	Info_AddChoice (DIA_Agon_GolemDead,"(v˝hr˘ûnÏ) Jenom pokud se odsud dostaneö ûiv˝.",DIA_Agon_GolemDead_NoWay);
-	Info_AddChoice (DIA_Agon_GolemDead,"Drû hubu!",DIA_Agon_GolemDead_ShutUp);
-	Info_AddChoice (DIA_Agon_GolemDead,"Gratuluji, v·ûnÏ sis to zaslouûil.",DIA_Agon_GolemDead_Congrat);
+	Info_AddChoice (DIA_Agon_GolemDead,"(v√Ωhr≈Ø≈ænƒõ) Jenom pokud se odsud dostane≈° ≈æiv√Ω.",DIA_Agon_GolemDead_NoWay);
+	Info_AddChoice (DIA_Agon_GolemDead,"Dr≈æ hubu!",DIA_Agon_GolemDead_ShutUp);
+	Info_AddChoice (DIA_Agon_GolemDead,"Gratuluji, v√°≈ænƒõ sis to zaslou≈æil.",DIA_Agon_GolemDead_Congrat);
 };
 
 FUNC VOID DIA_Agon_GolemDead_NoWay ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_NoWay_15_00"); //(v˝hr˘ûnÏ) Jenom pokud se odsud dostaneö ûiv˝.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_NoWay_07_01"); //Chceö mÏ zabÌt? To se ti nikdy nepovede.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_NoWay_15_00"); //(v√Ωhr≈Ø≈ænƒõ) Jenom pokud se odsud dostane≈° ≈æiv√Ω.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_NoWay_07_01"); //Chce≈° mƒõ zab√≠t? To se ti nikdy nepovede.
 
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -255,20 +255,20 @@ FUNC VOID DIA_Agon_GolemDead_NoWay ()
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_15_00"); //Drû hubu!
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_01"); //(v˝smÏönÏ) Nem·ö n·rok, prohr·l jsi! P¯iznej si to.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_02"); //Jenom mnÏ bylo osudem urËeno st·t se m·gem.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_15_00"); //Dr≈æ hubu!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_01"); //(v√Ωsmƒõ≈°nƒõ) Nem√°≈° n√°rok, prohr√°l jsi! P≈ôiznej si to.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_02"); //Jenom mnƒõ bylo osudem urƒçeno st√°t se m√°gem.
 	
 	Info_ClearChoices (DIA_Agon_GolemDead);
-	Info_AddChoice (DIA_Agon_GolemDead,"Osud ti urËil leda polÌbit mi zadek. Truhla je moje.",DIA_Agon_GolemDead_ShutUp_MyChest);
-	Info_AddChoice (DIA_Agon_GolemDead,"Vyhr·l jsi.",DIA_Agon_GolemDead_ShutUp_YouWin);
+	Info_AddChoice (DIA_Agon_GolemDead,"Osud ti urƒçil leda pol√≠bit mi zadek. Truhla je moje.",DIA_Agon_GolemDead_ShutUp_MyChest);
+	Info_AddChoice (DIA_Agon_GolemDead,"Vyhr√°l jsi.",DIA_Agon_GolemDead_ShutUp_YouWin);
 
 };
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp_MyChest ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_MyChest_15_00"); //Osud ti urËil leda polÌbit mi zadek. Truhla je moje.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_MyChest_07_01"); //(rozzlobenÏ) Ne, to teda ne, to tÏ spÌö zabiju.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_MyChest_15_00"); //Osud ti urƒçil leda pol√≠bit mi zadek. Truhla je moje.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_MyChest_07_01"); //(rozzlobenƒõ) Ne, to teda ne, to tƒõ sp√≠≈° zabiju.
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -276,9 +276,9 @@ FUNC VOID DIA_Agon_GolemDead_ShutUp_MyChest ()
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp_YouWin ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_YouWin_15_00"); //Vyhr·l jsi.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_01"); //(zbÏsile) Ne, mÏ neoö·lÌö. SnaûÌö se mÏ zbavit.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_02"); //To nedopustÌm!
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_YouWin_15_00"); //Vyhr√°l jsi.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_01"); //(zbƒõsile) Ne, mƒõ neo≈°√°l√≠≈°. Sna≈æ√≠≈° se mƒõ zbavit.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_02"); //To nedopust√≠m!
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -286,18 +286,18 @@ FUNC VOID DIA_Agon_GolemDead_ShutUp_YouWin ()
 
 FUNC VOID DIA_Agon_GolemDead_Congrat ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_00"); //Gratuluji, v·ûnÏ sis to zaslouûil.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_01"); //(ned˘vÏ¯ivÏ) Co to m· znamenat? Co m·ö za lubem?
-	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_02"); //O Ëem to mluvÌö?
-	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_03"); //(nervÛznÏ) 
-	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_04"); //To se ti nikdy nepoda¯Ì!
+	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_00"); //Gratuluji, v√°≈ænƒõ sis to zaslou≈æil.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_01"); //(ned≈Øvƒõ≈ôivƒõ) Co to m√° znamenat? Co m√°≈° za lubem?
+	AI_Output (other,self ,"DIA_Agon_GolemDead_Congrat_15_02"); //O ƒçem to mluv√≠≈°?
+	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_03"); //(nerv√≥znƒõ) 
+	AI_Output (self ,other,"DIA_Agon_GolemDead_Congrat_07_04"); //To se ti nikdy nepoda≈ô√≠!
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
 };
 
 //****************************************
-//	Der Sc war vor Agon in der Hˆhle
+//	Der Sc war vor Agon in der H√∂hle
 //****************************************
 
 INSTANCE DIA_Agon_GolemLives   (C_INFO)
@@ -321,8 +321,8 @@ FUNC INT DIA_Agon_GolemLives_Condition()
 
 FUNC VOID DIA_Agon_GolemLives_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_00"); //(p¯ekvapenÏ) Naöel jsi ten ˙kryt p¯ede mnou. To nejde...
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_01"); //(odhodlanÏ) Tak to nem˘ûe z˘stat! To nedovolÌm.
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_00"); //(p≈ôekvapenƒõ) Na≈°el jsi ten √∫kryt p≈ôede mnou. To nejde...
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_01"); //(odhodlanƒõ) Tak to nem≈Ø≈æe z≈Østat! To nedovol√≠m.
 	AI_Output (self ,other,"DIA_Agon_GolemLives_07_02"); //Dokonce nikdy nenajdou tvou mrtvolu.
 	
 	AI_StopProcessInfos (self);
@@ -355,8 +355,8 @@ FUNC INT DIA_Agon_StillAlive_Condition()
 FUNC VOID DIA_Agon_StillAlive_Info()
 {
 	AI_Output (other,self ,"DIA_Agon_StillAlive_15_00"); //Was machst Du hier? 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //H‰ttest Du mich nicht tˆten kˆnnen? Dann m¸sste ich das ganze hier wenigstens nicht mehr ertragen. 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zur¸ck ins Kloster!
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //H√§ttest Du mich nicht t√∂ten k√∂nnen? Dann m√ºsste ich das ganze hier wenigstens nicht mehr ertragen. 
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zur√ºck ins Kloster!
 	
 	AI_StopProcessInfos (self);
 };
@@ -372,7 +372,7 @@ INSTANCE DIA_Agon_Perm   (C_INFO)
 	condition   = DIA_Agon_Perm_Condition;
 	information = DIA_Agon_Perm_Info;
 	permanent   = TRUE;
-	description = "Tak jak to vypad·?";
+	description = "Tak jak to vypad√°?";
 };
 
 FUNC INT DIA_Agon_Perm_Condition()
@@ -389,11 +389,11 @@ FUNC VOID DIA_Agon_Perm_Info()
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output	(self ,other,"DIA_Agon_Perm_07_01"); //Ach - dÌky za tv˘j z·jem, sire paladine. Pr·ce se mi lÌbÌ a jsem si jist, ûe brzy budu vybr·n mezi m·gy.
+		AI_Output	(self ,other,"DIA_Agon_Perm_07_01"); //Ach - d√≠ky za tv≈Øj z√°jem, sire paladine. Pr√°ce se mi l√≠b√≠ a jsem si jist, ≈æe brzy budu vybr√°n mezi m√°gy.
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Agon_Perm_07_02"); //(arogantnÏ) Tady v InnosovÏ kl·öte¯e jsi jenom hostem. MÏl by ses tedy podle toho chovat a neruöit mÏ v mÈ pr·ci. P¯eji hezk˝ den.
+		AI_Output	(self ,other,"DIA_Agon_Perm_07_02"); //(arogantnƒõ) Tady v Innosovƒõ kl√°≈°te≈ôe jsi jenom hostem. Mƒõl by ses tedy podle toho chovat a neru≈°it mƒõ v m√© pr√°ci. P≈ôeji hezk√Ω den.
 	};
 };
 

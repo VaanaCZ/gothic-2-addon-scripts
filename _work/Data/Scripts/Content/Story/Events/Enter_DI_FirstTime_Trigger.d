@@ -8,11 +8,11 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 	//----- Levelchange verbarrikadieren --------
 	if (Npc_HasItems (hero,ITKE_SHIP_LEVELCHANGE_MIS))
 	{
-		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die Tür wieder zu!!!!
+		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die TÃ¼r wieder zu!!!!
 	};
 	
 	
-	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen Brückenevent
+	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen BrÃ¼ckenevent
 	{
 		Wld_InsertItem	(ItPo_Perm_DEX, "FP_ITEM_DI_ENTER_05");
 	};
@@ -21,7 +21,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 //##
 //##	B_ENTER_DRAGONISLAND			
 //##	//Joly: Steht hier, denn hier bin ich sicher, 
-//##	dass alle am start sind und können befüllt werden!
+//##	dass alle am start sind und kÃ¶nnen befÃ¼llt werden!
 //##
 //###############################################
 
@@ -44,7 +44,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 					{
 						Wld_InsertItem	(ItSe_XardasNotfallBeutel_MIS, "FP_ITEM_SHIP_12");
 						SC_InnosEyeVergessen_DI = TRUE;
-						B_LogEntry (TOPIC_HallenVonIrdorath,"Dnes v noci jsem mìl zvláštní sen. Hovoøil se mnou Xardas a žádal mì, abych na lodi pøistoupil k alchymistické kolonì a nìco odtamtud sebral. Bylo to velmi zvláštní, protože jsem veèer pøed tím kupodivu vùbec nic nepil. Možná to bylo delirium ze støízlivosti."); 
+						B_LogEntry (TOPIC_HallenVonIrdorath,"Dnes v noci jsem mÄ›l zvlÃ¡Å¡tnÃ­ sen. HovoÅ™il se mnou Xardas a Å¾Ã¡dal mÄ›, abych na lodi pÅ™istoupil k alchymistickÃ© kolonÄ› a nÄ›co odtamtud sebral. Bylo to velmi zvlÃ¡Å¡tnÃ­, protoÅ¾e jsem veÄer pÅ™ed tÃ­m kupodivu vÅ¯bec nic nepil. MoÅ¾nÃ¡ to bylo delirium ze stÅ™Ã­zlivosti."); 
 					};
 					Wld_InsertItem	(ItMi_Flask, "FP_ITEM_SHIP_06");
 					
@@ -62,98 +62,98 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			Log_CreateTopic (TOPIC_MyCrew, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_MyCrew, LOG_RUNNING);
 
-			//----- Die Kapitäne -----
+			//----- Die KapitÃ¤ne -----
 	
 				if ( JorgenIsCaptain == TRUE)	//Jorgen
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Kapitán Jorgen zùstane na lodi, dokud se nevrátím."); 
+					Log_AddEntry (TOPIC_MyCrew,"KapitÃ¡n Jorgen zÅ¯stane na lodi, dokud se nevrÃ¡tÃ­m."); 
 				};
 			
 				if ( TorlofIsCaptain == TRUE)	//Torlof
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Kapitán Torlof zùstane na lodi a bude ji hlídat po celou dobu, co budu na ostrovì. Pøitom za ním mohu zajít, pokud si budu chtít zvýšit obratnost èi sílu."); 
+					Log_AddEntry (TOPIC_MyCrew,"KapitÃ¡n Torlof zÅ¯stane na lodi a bude ji hlÃ­dat po celou dobu, co budu na ostrovÄ›. PÅ™itom za nÃ­m mohu zajÃ­t, pokud si budu chtÃ­t zvÃ½Å¡it obratnost Äi sÃ­lu."); 
 				};
 			
 				if ( JackIsCaptain == TRUE)		//Jack
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Kapitán Jack zùstane tady na lodi, dokud se nevrátím. Je sice trochu vydìšený, ale doufám, že se èasem uklidní. Potøebuji ho."); 
+					Log_AddEntry (TOPIC_MyCrew,"KapitÃ¡n Jack zÅ¯stane tady na lodi, dokud se nevrÃ¡tÃ­m. Je sice trochu vydÄ›Å¡enÃ½, ale doufÃ¡m, Å¾e se Äasem uklidnÃ­. PotÅ™ebuji ho."); 
 				};
 				
 			//----- Die Crew -----
 				
 				if ( Lee_IsOnBoard == LOG_SUCCESS) //Lee
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Lee po dobu mé nepøítomnosti dohlédne na loï. Také se u nìj mohu zastavit, budu-li si chtít vylepšit schopnosti boje jednoruèními a obouruèními zbranìmi."); 
+					Log_AddEntry (TOPIC_MyCrew,"Lee po dobu mÃ© nepÅ™Ã­tomnosti dohlÃ©dne na loÄ. TakÃ© se u nÄ›j mohu zastavit, budu-li si chtÃ­t vylepÅ¡it schopnosti boje jednoruÄnÃ­mi a obouruÄnÃ­mi zbranÄ›mi."); 
 				};
 			
 				if ( MiltenNW_IsOnBoard == LOG_SUCCESS) //Milten
 				{
-					Log_AddEntry (TOPIC_MyCrew,"S Miltenovou pomocí si mohu zvýšit své zásoby many."); 
+					Log_AddEntry (TOPIC_MyCrew,"S Miltenovou pomocÃ­ si mohu zvÃ½Å¡it svÃ© zÃ¡soby many."); 
 					if (hero.guild == GIL_KDF)
 					{
-						Log_AddEntry (TOPIC_MyCrew,"Milten mi krom toho mùže vysvìtlit, jak vyrobit runy."); 
+						Log_AddEntry (TOPIC_MyCrew,"Milten mi krom toho mÅ¯Å¾e vysvÄ›tlit, jak vyrobit runy."); 
 					};
 				};
 			
 				if ( Lester_IsOnBoard == LOG_SUCCESS)	//Lester
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mám pocit, že na tom podivném ostrovì se Lesterùv stav ještì zhoršil."); 
+					Log_AddEntry (TOPIC_MyCrew,"MÃ¡m pocit, Å¾e na tom podivnÃ©m ostrovÄ› se LesterÅ¯v stav jeÅ¡tÄ› zhorÅ¡il."); 
 				};
 			
 				if ( Mario_IsOnBoard == LOG_SUCCESS) //Mario
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mario je nìjaký divný. Po celou dobu plavby jen sedí na zádi a nepromluví ani slovo."); 
+					Log_AddEntry (TOPIC_MyCrew,"Mario je nÄ›jakÃ½ divnÃ½. Po celou dobu plavby jen sedÃ­ na zÃ¡di a nepromluvÃ­ ani slovo."); 
 				};
 			
 				if ( Wolf_IsOnBoard== LOG_SUCCESS) //Wolf
 				{
-						Log_AddEntry (TOPIC_MyCrew,"Vlk mì nauèí støílet z luku a kuše."); 
+						Log_AddEntry (TOPIC_MyCrew,"Vlk mÄ› nauÄÃ­ stÅ™Ã­let z luku a kuÅ¡e."); 
 				};
 			
 			
 				if ( Vatras_IsOnBoard == LOG_SUCCESS)	//Vatras
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Vatras se uchýlil do kajuty pro mágy. Mùže mì uzdravit a prozradit mi spoustu vìcí ohlednì míchání lektvarù."); 
+					Log_AddEntry (TOPIC_MyCrew,"Vatras se uchÃ½lil do kajuty pro mÃ¡gy. MÅ¯Å¾e mÄ› uzdravit a prozradit mi spoustu vÄ›cÃ­ ohlednÄ› mÃ­chÃ¡nÃ­ lektvarÅ¯."); 
 					if (hero.guild == GIL_KDF)
 					{
-						Log_AddEntry (TOPIC_MyCrew,"Vatras mi také mùže pomoci s postupem do dalšího magického kruhu."); 
+						Log_AddEntry (TOPIC_MyCrew,"Vatras mi takÃ© mÅ¯Å¾e pomoci s postupem do dalÅ¡Ã­ho magickÃ©ho kruhu."); 
 					};
 				};	
 				
 				if ( Bennet_IsOnBoard == LOG_SUCCESS)	//Bennet
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Bennet mì nauèí kovaøinì, když ho o to požádám."); 
+					Log_AddEntry (TOPIC_MyCrew,"Bennet mÄ› nauÄÃ­ kovaÅ™inÄ›, kdyÅ¾ ho o to poÅ¾Ã¡dÃ¡m."); 
 				};	
 			
 				if ( Diego_IsOnBoard == LOG_SUCCESS)	//Diego 
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Když nebudu vìdìt, kudy kam, mohu se obrátit na Diega, který mì navíc zásobí støelivem. Také mì nauèí páèit zámky a støílet z luku a kuše."); 
+					Log_AddEntry (TOPIC_MyCrew,"KdyÅ¾ nebudu vÄ›dÄ›t, kudy kam, mohu se obrÃ¡tit na Diega, kterÃ½ mÄ› navÃ­c zÃ¡sobÃ­ stÅ™elivem. TakÃ© mÄ› nauÄÃ­ pÃ¡Äit zÃ¡mky a stÅ™Ã­let z luku a kuÅ¡e."); 
 				};
 			
 				if ( Gorn_IsOnBoard == LOG_SUCCESS)	//Gorn
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Gorn bìhem našeho výletu nezahálel a teï na loï dohlédne. Myslím, že když mu ji svìøím, bude v dobrých rukou."); 
-					Log_AddEntry (TOPIC_MyCrew,"S Gornovou pomocí se mohu zlepšit v ovládání obouruèních zbraní."); 
+					Log_AddEntry (TOPIC_MyCrew,"Gorn bÄ›hem naÅ¡eho vÃ½letu nezahÃ¡lel a teÄ na loÄ dohlÃ©dne. MyslÃ­m, Å¾e kdyÅ¾ mu ji svÄ›Å™Ã­m, bude v dobrÃ½ch rukou."); 
+					Log_AddEntry (TOPIC_MyCrew,"S Gornovou pomocÃ­ se mohu zlepÅ¡it v ovlÃ¡dÃ¡nÃ­ obouruÄnÃ­ch zbranÃ­."); 
 				};	
 			
 				if ( Lares_IsOnBoard == LOG_SUCCESS)	//Lares
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Lares mi slíbil, že mì nauèí plížení a jednoruènímu boji. Krom toho si u nìj mohu vylepšit obratnost."); 
+					Log_AddEntry (TOPIC_MyCrew,"Lares mi slÃ­bil, Å¾e mÄ› nauÄÃ­ plÃ­Å¾enÃ­ a jednoruÄnÃ­mu boji. Krom toho si u nÄ›j mohu vylepÅ¡it obratnost."); 
 				};	
 			
 				if ( Biff_IsOnBoard == LOG_SUCCESS)	//Biff
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Biff je tak hamižný, až to bolí. Nebude snadné na nìj dohlížet."); 
+					Log_AddEntry (TOPIC_MyCrew,"Biff je tak hamiÅ¾nÃ½, aÅ¾ to bolÃ­. Nebude snadnÃ© na nÄ›j dohlÃ­Å¾et."); 
 				};	
 			
 				if ( Angar_IsOnBoard == LOG_SUCCESS)	//Angar
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Angar nemá nikde stání. Mám pocit, že se zanedlouho pustí do boje sám se sebou."); 
+					Log_AddEntry (TOPIC_MyCrew,"Angar nemÃ¡ nikde stÃ¡nÃ­. MÃ¡m pocit, Å¾e se zanedlouho pustÃ­ do boje sÃ¡m se sebou."); 
 				};	
 			
 				if ( Girion_IsOnBoard == LOG_SUCCESS)	//Girion
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Girion se drží poøádnì stranou - jeho trpìlivost je obdivuhodná. A pøitom je to bojový cvièitel. To se mi na konci mùže hodit."); 
+					Log_AddEntry (TOPIC_MyCrew,"Girion se drÅ¾Ã­ poÅ™Ã¡dnÄ› stranou - jeho trpÄ›livost je obdivuhodnÃ¡. A pÅ™itom je to bojovÃ½ cviÄitel. To se mi na konci mÅ¯Å¾e hodit."); 
 				};	
 	
 		IntroduceChapter (KapWechsel_6,KapWechsel_6_Text,"chapter6.tga","chapter_01.wav", 6000);

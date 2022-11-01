@@ -53,18 +53,18 @@ func void DIA_Ingmar_Hallo_Info ()
 	if (EnterOW_Kapitel2 == FALSE)
 	&& (LordHagen.aivar[AIV_TalkedToPlayer] == TRUE)
 	{ 
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_00"); //Podle zpráv, které jsem dostal, je Hornické údolí dost nebezpeèné místo.
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_01"); //Ne odejdeš, poøádnì se vybav.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_00"); //Podle zprÃ¡v, kterÃ© jsem dostal, je HornickÃ© ÃºdolÃ­ dost nebezpeÄnÃ© mÃ­sto.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_01"); //NeÅ¾ odejdeÅ¡, poÅ™Ã¡dnÄ› se vybav.
 	}
 	else if (MIS_OLDWORLD == LOG_SUCCESS)
 	&& 		(LordHagen.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_02"); //Situace v Hornickém údolí je váná. Ale pøipravíme nìjakı plán, jak odtamtud dostat naše chlapce i s rudou.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_02"); //Situace v HornickÃ©m ÃºdolÃ­ je vÃ¡Å¾nÃ¡. Ale pÅ™ipravÃ­me nÄ›jakÃ½ plÃ¡n, jak odtamtud dostat naÅ¡e chlapce i s rudou.
 		DIA_Ingmar_Hallo_permanent = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ingmar_Hallo_06_03"); //Myslel jsem, e sis pøišel promluvit s lordem Hagenem. Tak jen do toho.
+		AI_Output (self, other, "DIA_Ingmar_Hallo_06_03"); //Myslel jsem, Å¾e sis pÅ™iÅ¡el promluvit s lordem Hagenem. Tak jen do toho.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ instance DIA_Ingmar_Krieg		(C_INFO)
 	condition	 = 	DIA_Ingmar_Krieg_Condition;
 	information	 = 	DIA_Ingmar_Krieg_Info;
 	permanent    =  FALSE;
-	description	 =  "Jaká je situace na kontinentu?";
+	description	 =  "JakÃ¡ je situace na kontinentu?";
 };
 func int DIA_Ingmar_Krieg_Condition ()
 {	
@@ -88,10 +88,10 @@ func int DIA_Ingmar_Krieg_Condition ()
 };
 func void DIA_Ingmar_Krieg_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_Krieg_15_00"); //Jaká je situace na kontinentu?
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_01"); //Válka ještì není vyhraná, i kdy královské síly u enou skøety zpìt.
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_02"); //Na mnohıch místech se ale shromaïují menší tlupy skøetù a snaí se naší armádu roztøíštit.
-	AI_Output (self, other, "DIA_Ingmar_Krieg_06_03"); //Bojují beze cti a bez víry - musíme tedy zvítìzit.
+	AI_Output (other, self, "DIA_Ingmar_Krieg_15_00"); //JakÃ¡ je situace na kontinentu?
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_01"); //VÃ¡lka jeÅ¡tÄ› nenÃ­ vyhranÃ¡, i kdyÅ¾ krÃ¡lovskÃ© sÃ­ly uÅ¾ Å¾enou skÅ™ety zpÄ›t.
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_02"); //Na mnohÃ½ch mÃ­stech se ale shromaÅ¾ÄujÃ­ menÅ¡Ã­ tlupy skÅ™etÅ¯ a snaÅ¾Ã­ se naÅ¡Ã­ armÃ¡du roztÅ™Ã­Å¡tit.
+	AI_Output (self, other, "DIA_Ingmar_Krieg_06_03"); //BojujÃ­ beze cti a bez vÃ­ry - musÃ­me tedy zvÃ­tÄ›zit.
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -104,7 +104,7 @@ instance DIA_Ingmar_CanTeach		(C_INFO)
 	condition	 = 	DIA_Ingmar_CanTeach_Condition;
 	information	 = 	DIA_Ingmar_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Mùeš mì nìco nauèit?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?";
 };
 
 func int DIA_Ingmar_CanTeach_Condition ()
@@ -116,17 +116,17 @@ func int DIA_Ingmar_CanTeach_Condition ()
 };
 func void DIA_Ingmar_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_CanTeach_15_00"); //Mùeš mì nìco nauèit?
+	AI_Output (other, self, "DIA_Ingmar_CanTeach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nÄ›co nauÄit?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_01"); //Mùu tì nauèit, jak si posílit pae, abys mohl pouívat zbranì efektivnìji.
+		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_01"); //MÅ¯Å¾u tÄ› nauÄit, jak si posÃ­lit paÅ¾e, abys mohl pouÅ¾Ã­vat zbranÄ› efektivnÄ›ji.
 			Ingmar_TeachSTR = TRUE;
-			B_LogEntry (TOPIC_CityTeacher,"Paladin Ingmar mi mùe pomoci zvıšit sílu.");
+			B_LogEntry (TOPIC_CityTeacher,"Paladin Ingmar mi mÅ¯Å¾e pomoci zvÃ½Å¡it sÃ­lu.");
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_02"); //Uèím pouze èleny našeho øádu.
+		AI_Output (self, other, "DIA_Ingmar_CanTeach_06_02"); //UÄÃ­m pouze Äleny naÅ¡eho Å™Ã¡du.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -139,7 +139,7 @@ instance DIA_Ingmar_Teach		(C_INFO)
 	condition	 = 	DIA_Ingmar_Teach_Condition;
 	information	 = 	DIA_Ingmar_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chci se stát silnìjším.";
+	description	 = 	"Chci se stÃ¡t silnÄ›jÅ¡Ã­m.";
 };
 func int DIA_Ingmar_Teach_Condition ()
 {	
@@ -150,7 +150,7 @@ func int DIA_Ingmar_Teach_Condition ()
 };
 func void DIA_Ingmar_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_Teach_15_00"); //Chtìl bych se stát silnìjším.
+	AI_Output (other, self, "DIA_Ingmar_Teach_15_00"); //ChtÄ›l bych se stÃ¡t silnÄ›jÅ¡Ã­m.
 	
 	
 	Info_ClearChoices   (DIA_Ingmar_Teach);
@@ -163,7 +163,7 @@ func void DIA_Ingmar_Teach_BACK()
 {
 	if (other.attribute [ATR_STRENGTH] >= T_MAX)
 	{
-		AI_Output (self, other, "DIA_Ingmar_Teach_06_00"); //U jsi silnı jako trol. Není nic, co bych tì mohl nauèit.
+		AI_Output (self, other, "DIA_Ingmar_Teach_06_00"); //UÅ¾ jsi silnÃ½ jako trol. NenÃ­ nic, co bych tÄ› mohl nauÄit.
 	};
 	Info_ClearChoices (DIA_Ingmar_TEACH);
 };
@@ -271,7 +271,7 @@ instance DIA_Ingmar_ORKELITE		(C_INFO)
 	condition	 = 	DIA_Ingmar_ORKELITE_Condition;
 	information	 = 	DIA_Ingmar_ORKELITE_Info;
 
-	description	 = 	"Skøeti plánují hlavní ofenzívu.";
+	description	 = 	"SkÅ™eti plÃ¡nujÃ­ hlavnÃ­ ofenzÃ­vu.";
 };
 
 func int DIA_Ingmar_ORKELITE_Condition ()
@@ -286,56 +286,56 @@ func int DIA_Ingmar_ORKELITE_Condition ()
 func void DIA_Ingmar_ORKELITE_Info ()
 {
 
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_00"); //Skøeti plánují hlavní ofenzívu.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_01"); //Vánì. Tak to je velice zajímavé. A na základì èeho se tak domníváš?
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_00"); //SkÅ™eti plÃ¡nujÃ­ hlavnÃ­ ofenzÃ­vu.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_01"); //VÃ¡Å¾nÄ›. Tak to je velice zajÃ­mavÃ©. A na zÃ¡kladÄ› Äeho se tak domnÃ­vÃ¡Å¡?
 
 	if (TalkedTo_AntiPaladin == TRUE)
 	{
 	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_02"); //Mluvil jsem s nimi.
 	};
 
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_03"); //Po kraji se potulují jejich velitelé.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_04"); //Hmm. To nezní jako typická skøetí strategie.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_15_03"); //Po kraji se potulujÃ­ jejich velitelÃ©.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_06_04"); //Hmm. To neznÃ­ jako typickÃ¡ skÅ™etÃ­ strategie.
 
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Radìji bys mìl pøijít na nìco, jak se jich zbavit.", DIA_Ingmar_ORKELITE_loswerden );
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Co udìláme?", DIA_Ingmar_ORKELITE_wasTun );
-	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Co to znamená?", DIA_Ingmar_ORKELITE_wieso );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "RadÄ›ji bys mÄ›l pÅ™ijÃ­t na nÄ›co, jak se jich zbavit.", DIA_Ingmar_ORKELITE_loswerden );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Co udÄ›lÃ¡me?", DIA_Ingmar_ORKELITE_wasTun );
+	Info_AddChoice	(DIA_Ingmar_ORKELITE, "Co to znamenÃ¡?", DIA_Ingmar_ORKELITE_wieso );
 
 	Log_CreateTopic (TOPIC_OrcElite, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_OrcElite, LOG_RUNNING);
-	B_LogEntry (TOPIC_OrcElite,"Ingmar se velmi zajímá o pøíbìh skøetích elitních váleèníkù."); 
+	B_LogEntry (TOPIC_OrcElite,"Ingmar se velmi zajÃ­mÃ¡ o pÅ™Ã­bÄ›h skÅ™etÃ­ch elitnÃ­ch vÃ¡leÄnÃ­kÅ¯."); 
 
 	MIS_KillOrkOberst = LOG_RUNNING;
 };
 func void DIA_Ingmar_ORKELITE_loswerden ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_loswerden_15_00"); //Radìji bys mìl pøijít na nìco, jak se jich zbavit.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_loswerden_06_01"); //Mìlo by staèit, kdybychom mìli víc informací. Pošlu nìkoho, aby prozkoumal okolí.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_loswerden_15_00"); //RadÄ›ji bys mÄ›l pÅ™ijÃ­t na nÄ›co, jak se jich zbavit.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_loswerden_06_01"); //MÄ›lo by staÄit, kdybychom mÄ›li vÃ­c informacÃ­. PoÅ¡lu nÄ›koho, aby prozkoumal okolÃ­.
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
 };
 
 func void DIA_Ingmar_ORKELITE_wieso ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wieso_15_00"); //Co to znamená?
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_01"); //Pokud je to, co øíkáš, pravda, tak nás chtìjí oslabit zevnitø tím, e na nás budou útoèit jejich nejlepší váleèníci.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_02"); //Obvykle jeden takovı velitel vede skupinu skøetích bojovníkù. Málokdy jich vidíš dva nebo víc pohromadì.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_03"); //Dìlají to z nìjakého dùvodu. Jejich vùdci tvoøí jádro útoèné strategie a vìtšinou jsou obklopeni skøetími váleèníky.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_04"); //Je tedy velice tìké se k nìkomu z nich dostat, ani by bylo nutné si prosekat cestu alespoò tøiceti nepøáteli.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wieso_15_00"); //Co to znamenÃ¡?
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_01"); //Pokud je to, co Å™Ã­kÃ¡Å¡, pravda, tak nÃ¡s chtÄ›jÃ­ oslabit zevnitÅ™ tÃ­m, Å¾e na nÃ¡s budou ÃºtoÄit jejich nejlepÅ¡Ã­ vÃ¡leÄnÃ­ci.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_02"); //Obvykle jeden takovÃ½ velitel vede skupinu skÅ™etÃ­ch bojovnÃ­kÅ¯. MÃ¡lokdy jich vidÃ­Å¡ dva nebo vÃ­c pohromadÄ›.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_03"); //DÄ›lajÃ­ to z nÄ›jakÃ©ho dÅ¯vodu. Jejich vÅ¯dci tvoÅ™Ã­ jÃ¡dro ÃºtoÄnÃ© strategie a vÄ›tÅ¡inou jsou obklopeni skÅ™etÃ­mi vÃ¡leÄnÃ­ky.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wieso_06_04"); //Je tedy velice tÄ›Å¾kÃ© se k nÄ›komu z nich dostat, aniÅ¾ by bylo nutnÃ© si prosekat cestu alespoÅˆ tÅ™iceti nepÅ™Ã¡teli.
 	
-	B_LogEntry (TOPIC_OrcElite,"Ingmar se zmínil o hlavním skøetím vojevùdci."); 
+	B_LogEntry (TOPIC_OrcElite,"Ingmar se zmÃ­nil o hlavnÃ­m skÅ™etÃ­m vojevÅ¯dci."); 
 };
 
 func void DIA_Ingmar_ORKELITE_wasTun ()
 {
-	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wasTun_15_00"); //Co udìláme?
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_01"); //Kdy jich je tolik jako teï, jedná se vìtšinou o nájezdnou patrolu, kterou vede ten nejvıše postavenı z nich.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_02"); //Nejvıše postavenı vojevùdce si zaøídí hlavní stan v nìjaké jeskyni, odkud vysílá své vojsko do boje.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_03"); //Pokud by se nám podaøilo tohoto velitele zneškodnit, získali bychom tak nezanedbatelnou vıhodu.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_04"); //Skøetí velitel se vìtšinou pohybuje v blízkosti svıch nepøátel. Asi by bylo dobré hledat jeho jeskyni nìkde nedaleko mìsta.
-	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_05"); //Nìkolik skøetù bylo spatøeno poblí Lobartovy farmy. Asi by bylo moudré zaèít s pátráním tam.
+	AI_Output (other, self, "DIA_Ingmar_ORKELITE_wasTun_15_00"); //Co udÄ›lÃ¡me?
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_01"); //KdyÅ¾ jich je tolik jako teÄ, jednÃ¡ se vÄ›tÅ¡inou o nÃ¡jezdnou patrolu, kterou vede ten nejvÃ½Å¡e postavenÃ½ z nich.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_02"); //NejvÃ½Å¡e postavenÃ½ vojevÅ¯dce si zaÅ™Ã­dÃ­ hlavnÃ­ stan v nÄ›jakÃ© jeskyni, odkud vysÃ­lÃ¡ svÃ© vojsko do boje.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_03"); //Pokud by se nÃ¡m podaÅ™ilo tohoto velitele zneÅ¡kodnit, zÃ­skali bychom tak nezanedbatelnou vÃ½hodu.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_04"); //SkÅ™etÃ­ velitel se vÄ›tÅ¡inou pohybuje v blÃ­zkosti svÃ½ch nepÅ™Ã¡tel. Asi by bylo dobrÃ© hledat jeho jeskyni nÄ›kde nedaleko mÄ›sta.
+	AI_Output (self, other, "DIA_Ingmar_ORKELITE_wasTun_06_05"); //NÄ›kolik skÅ™etÅ¯ bylo spatÅ™eno poblÃ­Å¾ Lobartovy farmy. Asi by bylo moudrÃ© zaÄÃ­t s pÃ¡trÃ¡nÃ­m tam.
 
-	B_LogEntry (TOPIC_OrcElite,"Podle Ingmara bych mìl skøetího plukovníka hledat v jeskyni kdesi u Lobartova statku. Mám ho najít a znièit."); 
+	B_LogEntry (TOPIC_OrcElite,"Podle Ingmara bych mÄ›l skÅ™etÃ­ho plukovnÃ­ka hledat v jeskyni kdesi u Lobartova statku. MÃ¡m ho najÃ­t a zniÄit."); 
 	
 	Info_ClearChoices	(DIA_Ingmar_ORKELITE);
 };
@@ -351,7 +351,7 @@ instance DIA_Ingmar_HAUPTQUARTIER		(C_INFO)
 	condition	 = 	DIA_Ingmar_HAUPTQUARTIER_Condition;
 	information	 = 	DIA_Ingmar_HAUPTQUARTIER_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Podaøilo se mi vypátrat hlavní skøetí stan.";
+	description	 = 	"PodaÅ™ilo se mi vypÃ¡trat hlavnÃ­ skÅ™etÃ­ stan.";
 };
 
 func int DIA_Ingmar_HAUPTQUARTIER_Condition ()
@@ -365,10 +365,10 @@ func int DIA_Ingmar_HAUPTQUARTIER_Condition ()
 
 func void DIA_Ingmar_HAUPTQUARTIER_Info ()
 {
-	AI_Output (other, self, "DIA_Ingmar_HAUPTQUARTIER_15_00"); //Našel jsem hlavní stan skøetù. Jejich vojevùdce padl.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_01"); //To je vynikající zpráva. Skøeti tak nebudou mít nìjakı èas na útok ani pomyšlení.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_02"); //To není špatné. Kdybychom mìli víc rytíøù, jako jsi ty, byla by nadcházející bitva pøedem rozhodnuta.
-	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_03"); //Vezmi si tohle zlato a kup si za nìj nìjakou poøádnou vıbavu.
+	AI_Output (other, self, "DIA_Ingmar_HAUPTQUARTIER_15_00"); //NaÅ¡el jsem hlavnÃ­ stan skÅ™etÅ¯. Jejich vojevÅ¯dce padl.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_01"); //To je vynikajÃ­cÃ­ zprÃ¡va. SkÅ™eti tak nebudou mÃ­t nÄ›jakÃ½ Äas na Ãºtok ani pomyÅ¡lenÃ­.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_02"); //To nenÃ­ Å¡patnÃ©. Kdybychom mÄ›li vÃ­c rytÃ­Å™Å¯, jako jsi ty, byla by nadchÃ¡zejÃ­cÃ­ bitva pÅ™edem rozhodnuta.
+	AI_Output (self, other, "DIA_Ingmar_HAUPTQUARTIER_06_03"); //Vezmi si tohle zlato a kup si za nÄ›j nÄ›jakou poÅ™Ã¡dnou vÃ½bavu.
 
 	B_GivePlayerXP (XP_KilledOrkOberst);
 	CreateInvItems (self, ItMi_Gold, 300);									
@@ -457,7 +457,7 @@ INSTANCE DIA_Ingmar_PICKPOCKET (C_INFO)
 	condition	= DIA_Ingmar_PICKPOCKET_Condition;
 	information	= DIA_Ingmar_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento svitek je témìø nemoné ukrást.)";
+	description = "(Tento svitek je tÃ©mÄ›Å™ nemoÅ¾nÃ© ukrÃ¡st.)";
 };                       
 
 FUNC INT DIA_Ingmar_PICKPOCKET_Condition()

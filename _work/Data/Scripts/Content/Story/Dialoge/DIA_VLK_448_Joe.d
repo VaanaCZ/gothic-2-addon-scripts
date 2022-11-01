@@ -75,15 +75,15 @@ FUNC INT DIA_Joe_Hallo_Condition()
 };
 FUNC VOID DIA_Joe_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Hej, díky, chlape, vánì dìkuju. U jsem si myslel, e se odsud nikdy nedostanu.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Hej, dÃ­ky, chlape, vÃ¡Å¾nÄ› dÄ›kuju. UÅ¾ jsem si myslel, Å¾e se odsud nikdy nedostanu.
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP ((XP_Ambient*4));
 	
-	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Co TADY dìláš?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Jsem tu zamèenej. Ty dveøe byly otevøenı a já se tu jen chtìl trochu porozhlídnout - ale jakmile jsem vlez dovnitø, pøišel stráce a ty zatracenı dveøe zamknul.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Je to fakt trapas - byl bych ti vdìènej, kdyby to zùstalo jen mezi náma.
-	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Rozumím. Vánì to není nic pøíjemnıho.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Mám dojem, e potøebuju panáka.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Co TADY dÄ›lÃ¡Å¡?
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Jsem tu zamÄenej. Ty dveÅ™e byly otevÅ™enÃ½ a jÃ¡ se tu jen chtÄ›l trochu porozhlÃ­dnout - ale jakmile jsem vlez dovnitÅ™, pÅ™iÅ¡el strÃ¡Å¾ce a ty zatracenÃ½ dveÅ™e zamknul.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Je to fakt trapas - byl bych ti vdÄ›Änej, kdyby to zÅ¯stalo jen mezi nÃ¡ma.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//RozumÃ­m. VÃ¡Å¾nÄ› to nenÃ­ nic pÅ™Ã­jemnÃ½ho.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//MÃ¡m dojem, Å¾e potÅ™ebuju panÃ¡ka.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START"); 
 };
@@ -97,7 +97,7 @@ INSTANCE DIA_Joe_Perm   (C_INFO)
 	condition   = DIA_Joe_Perm_Condition;
 	information = DIA_Joe_Perm_Info;
 	permanent   = TRUE;
-	description	= "Je všechno v poøádku?";
+	description	= "Je vÅ¡echno v poÅ™Ã¡dku?";
 };
 FUNC INT DIA_Joe_Perm_Condition()
 {	
@@ -108,8 +108,8 @@ FUNC INT DIA_Joe_Perm_Condition()
 };
 FUNC VOID DIA_Joe_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Je všechno v poøádku?
-	AI_Output (self, other,"DIA_Joe_Perm_10_01");//Díky, es mì z toho dostal.
+	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Je vÅ¡echno v poÅ™Ã¡dku?
+	AI_Output (self, other,"DIA_Joe_Perm_10_01");//DÃ­ky, Å¾es mÄ› z toho dostal.
 	
 	AI_StopProcessInfos (self);
 };
@@ -123,7 +123,7 @@ INSTANCE DIA_Joe_Sign   (C_INFO)
 	condition   = DIA_Joe_Sign_Condition;
 	information = DIA_Joe_Sign_Info;
 	permanent   = FALSE;
-	description	= "(Pøedvést zlodìjskı signál.)";
+	description	= "(PÅ™edvÃ©st zlodÄ›jskÃ½ signÃ¡l.)";
 };
 FUNC INT DIA_Joe_Sign_Condition()
 {	
@@ -136,8 +136,8 @@ FUNC INT DIA_Joe_Sign_Condition()
 FUNC VOID DIA_Joe_Sign_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Hej, co ty víš - moná máme spoleènı pøátele. V tom pøípadì mi dovol vyjádøit svou vdìènost za svoji záchranu.
-	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Tady, vezmi si tyhle paklíèe - jsem si jistej, e se ti budou hodit.
+	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Hej, co ty vÃ­Å¡ - moÅ¾nÃ¡ mÃ¡me spoleÄnÃ½ pÅ™Ã¡tele. V tom pÅ™Ã­padÄ› mi dovol vyjÃ¡dÅ™it svou vdÄ›Änost za svoji zÃ¡chranu.
+	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Tady, vezmi si tyhle paklÃ­Äe - jsem si jistej, Å¾e se ti budou hodit.
 	
 	B_GiveInvItems (self, other, ItKE_Lockpick, 5);
 	

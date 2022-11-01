@@ -20,7 +20,7 @@ FUNC VOID DIA_Pedro_DI_EXIT_Info()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info Verräter
+//	Info VerrÃ¤ter
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Pedro_DI_YOU		(C_INFO)
 {
@@ -29,7 +29,7 @@ instance DIA_Pedro_DI_YOU		(C_INFO)
 	condition	 = 	DIA_Pedro_DI_YOU_Condition;
 	information	 = 	DIA_Pedro_DI_YOU_Info;
 	
-	description	 = 	"Zrádce!";
+	description	 = 	"ZrÃ¡dce!";
 	
 };
 func int DIA_Pedro_DI_YOU_Condition ()
@@ -39,49 +39,49 @@ func int DIA_Pedro_DI_YOU_Condition ()
 
 func void DIA_Pedro_DI_YOU_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //Zrádce! Tak jsem tì koneènì našel.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_00"); //ZrÃ¡dce! Tak jsem tÄ› koneÄnÄ› naÅ¡el.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_01"); //Nemysli si, e se nad tebou slituji jen proto, e jsem jedním z paladinù.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_01"); //Nemysli si, Å¾e se nad tebou slituji jen proto, Å¾e jsem jednÃ­m z paladinÅ¯.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Mnoho z nás, oldnéøù, zaprodalo duši Beliarovi, a pøesto mi èasto neèiní dobøe pomyšlení na to, e je bez milosti zabíjíme. Ale u tebe, ty prašivá svinì, udìlám vıjimku!
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_02"); //Mnoho z nÃ¡s, Å¾oldnÃ©Å™Å¯, zaprodalo duÅ¡i Beliarovi, a pÅ™esto mi Äasto neÄinÃ­ dobÅ™e pomyÅ¡lenÃ­ na to, Å¾e je bez milosti zabÃ­jÃ­me. Ale u tebe, ty praÅ¡ivÃ¡ svinÄ›, udÄ›lÃ¡m vÃ½jimku!
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //Ze všech tìch bezpáteøních parchantù, které jsem ve svém ivotì potkal, jsi ty ten naprosto nejhorší. Jsi hanbou našeho øádu.
+			AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_03"); //Ze vÅ¡ech tÄ›ch bezpÃ¡teÅ™nÃ­ch parchantÅ¯, kterÃ© jsem ve svÃ©m Å¾ivotÄ› potkal, jsi ty ten naprosto nejhorÅ¡Ã­. Jsi hanbou naÅ¡eho Å™Ã¡du.
 		};
 
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //Mìl bych tì na místì zabít.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //Zadr. Prosím. Oèarovali mì. Nikdy bych nezradil klášter o své vlastní vùli.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //Ani netušíš, èím vším jsem musel bìhem posledních nìkolika dní projít. Dali mi do hlavy ten hlas. Nemohl jsem se tomu ubránit.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //Skøetí plukovník mì celé dny vyslıchal. Poøád mì bil. Ušetøi mì Jsem nevinnı. Musíš mi vìøit.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_15_04"); //MÄ›l bych tÄ› na mÃ­stÄ› zabÃ­t.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_05"); //ZadrÅ¾. ProsÃ­m. OÄarovali mÄ›. Nikdy bych nezradil klÃ¡Å¡ter o svÃ© vlastnÃ­ vÅ¯li.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_06"); //Ani netuÅ¡Ã­Å¡, ÄÃ­m vÅ¡Ã­m jsem musel bÄ›hem poslednÃ­ch nÄ›kolika dnÃ­ projÃ­t. Dali mi do hlavy ten hlas. Nemohl jsem se tomu ubrÃ¡nit.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_09_07"); //SkÅ™etÃ­ plukovnÃ­k mÄ› celÃ© dny vyslÃ½chal. PoÅ™Ã¡d mÄ› bil. UÅ¡etÅ™i mÄ› Jsem nevinnÃ½. MusÃ­Å¡ mi vÄ›Å™it.
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Tak mi øekni, co víš.", DIA_Pedro_DI_YOU_verschon );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Vùbec nic nemusím. Na místì tì zabiju.", DIA_Pedro_DI_YOU_tot );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Uka mi jedinı dùvod, proè bych ti mìl vìøit.", DIA_Pedro_DI_YOU_grund );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "Tak mi Å™ekni, co vÃ­Å¡.", DIA_Pedro_DI_YOU_verschon );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "VÅ¯bec nic nemusÃ­m. Na mÃ­stÄ› tÄ› zabiju.", DIA_Pedro_DI_YOU_tot );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "UkaÅ¾ mi jedinÃ½ dÅ¯vod, proÄ bych ti mÄ›l vÄ›Å™it.", DIA_Pedro_DI_YOU_grund );
 	if (MIS_Gorax_KillPedro == LOG_RUNNING)
 	{
-		Info_AddChoice	(DIA_Pedro_DI_YOU, "Serpentes mi pøikázal, abych tì zabil.", DIA_Pedro_DI_YOU_Serpentes );
+		Info_AddChoice	(DIA_Pedro_DI_YOU, "Serpentes mi pÅ™ikÃ¡zal, abych tÄ› zabil.", DIA_Pedro_DI_YOU_Serpentes );
 	};
 };
 
 func void DIA_Pedro_DI_YOU_grund ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //Uka mi jedinı dùvod, proè bych ti mìl vìøit.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(úpìnlivì) Nech mì ít. Mùu ti dát informaci, s její pomocí se odsud dostaneš. Musíš mì vyslechnout.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_grund_15_00"); //UkaÅ¾ mi jedinÃ½ dÅ¯vod, proÄ bych ti mÄ›l vÄ›Å™it.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_grund_09_01"); //(ÃºpÄ›nlivÄ›) Nech mÄ› Å¾Ã­t. MÅ¯Å¾u ti dÃ¡t informaci, s jejÃ­Å¾ pomocÃ­ se odsud dostaneÅ¡. MusÃ­Å¡ mÄ› vyslechnout.
 
 };
 var int PedroDI_Flee;
 func void DIA_Pedro_DI_YOU_tot ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_tot_15_00"); //Vùbec nic nemusím. Na místì tì zabiju.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_tot_09_01"); //U všech bohù...
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_tot_15_00"); //VÅ¯bec nic nemusÃ­m. Na mÃ­stÄ› tÄ› zabiju.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_tot_09_01"); //U vÅ¡ech bohÅ¯...
 
 	AI_StopProcessInfos (self);
 
@@ -92,30 +92,30 @@ func void DIA_Pedro_DI_YOU_tot ()
 
 func void DIA_Pedro_DI_YOU_Serpentes ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Serpentes mi dal rozkaz, abych tì zabil. U jenom z principu udìlám to, co mi bylo øeèeno.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(úpìnlivì) Prosím, ne. To nemùeš udìlat. Mùu ti bıt k uitku. Nejednej ukvapenì.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_Serpentes_15_00"); //Serpentes mi dal rozkaz, abych tÄ› zabil. UÅ¾ jenom z principu udÄ›lÃ¡m to, co mi bylo Å™eÄeno.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_Serpentes_09_01"); //(ÃºpÄ›nlivÄ›) ProsÃ­m, ne. To nemÅ¯Å¾eÅ¡ udÄ›lat. MÅ¯Å¾u ti bÃ½t k uÅ¾itku. Nejednej ukvapenÄ›.
 
 	B_GivePlayerXP (XP_Pedro_SerpentesMission);
-	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heißen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
+	MIS_Gorax_KillPedro = LOG_SUCCESS;	//Joly: bei erfolgreicher Mission in folgenden Dialogen muss heiÃŸen; if ((Npc_IsDead(PedroDI)) && (MIS_Gorax_KillPedro == LOG_SUCCESS))
 
 };
 
 func void DIA_Pedro_DI_YOU_verschon ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //Tak mi øekni, co víš.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(uklidnìnì) Ano, samozøejmì. Øeknu ti všechno, co budeš chtít. Pod jednou podmínkou. Musíš mì dostat z tohoto prokletého ostrova, souhlasíš?
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_verschon_15_00"); //Tak mi Å™ekni, co vÃ­Å¡.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_verschon_09_01"); //(uklidnÄ›nÄ›) Ano, samozÅ™ejmÄ›. Å˜eknu ti vÅ¡echno, co budeÅ¡ chtÃ­t. Pod jednou podmÃ­nkou. MusÃ­Å¡ mÄ› dostat z tohoto prokletÃ©ho ostrova, souhlasÃ­Å¡?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_YOU);
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "Vùbec nic nemusím. Na místì tì zabiju.", DIA_Pedro_DI_YOU_tot );
-	Info_AddChoice	(DIA_Pedro_DI_YOU, "No dobøe. Pojï se mnou, vezmu tì na svou loï.", DIA_Pedro_DI_YOU_FollowShip );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "VÅ¯bec nic nemusÃ­m. Na mÃ­stÄ› tÄ› zabiju.", DIA_Pedro_DI_YOU_tot );
+	Info_AddChoice	(DIA_Pedro_DI_YOU, "No dobÅ™e. PojÄ se mnou, vezmu tÄ› na svou loÄ.", DIA_Pedro_DI_YOU_FollowShip );
 
 };
 
 var int MIS_Pedro_DI_FollowShip;
 func void DIA_Pedro_DI_YOU_FollowShip ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_YOU_FollowShip_15_00"); //Dobrá. Pojï za mnou, odvedu tì na loï.
-	AI_Output			(self, other, "DIA_Pedro_DI_YOU_FollowShip_09_01"); //Máš mé díky. Nebudeš toho litovat.
+	AI_Output			(other, self, "DIA_Pedro_DI_YOU_FollowShip_15_00"); //DobrÃ¡. PojÄ za mnou, odvedu tÄ› na loÄ.
+	AI_Output			(self, other, "DIA_Pedro_DI_YOU_FollowShip_09_01"); //MÃ¡Å¡ mÃ© dÃ­ky. NebudeÅ¡ toho litovat.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"FollowShip");
@@ -149,61 +149,61 @@ func int DIA_Pedro_DI_ArrivedAtShip_Condition ()
 func void DIA_Pedro_DI_ArrivedAtShip_Info ()
 {
 	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_00"); //Tak jsme tady!
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //Máš opravdu pùsobivou loï. Jsi opravdu vynikající vùdce.
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //Pøestaò blábolit. Øekni mi koneènì to, co chci vìdìt.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Ech, samozøejmì. Kde bych mìl zaèít?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_01"); //MÃ¡Å¡ opravdu pÅ¯sobivou loÄ. Jsi opravdu vynikajÃ­cÃ­ vÅ¯dce.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_15_02"); //PÅ™estaÅˆ blÃ¡bolit. Å˜ekni mi koneÄnÄ› to, co chci vÄ›dÄ›t.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_09_03"); //Ech, samozÅ™ejmÄ›. Kde bych mÄ›l zaÄÃ­t?
 	
 	Info_ClearChoices	(DIA_Pedro_DI_ArrivedAtShip);
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "U jsem slyšel dost.", DIA_Pedro_DI_ArrivedAtShip_Back );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Jak je moné se dostat dovnitø ostrova?", DIA_Pedro_DI_ArrivedAtShip_Innere );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Jaké pøíšery se pohybují po tomto ostrovì?", DIA_Pedro_DI_ArrivedAtShip_Monster );
-	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Co bylo s tím skøetím plukovníkem?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "UÅ¾ jsem slyÅ¡el dost.", DIA_Pedro_DI_ArrivedAtShip_Back );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Jak je moÅ¾nÃ© se dostat dovnitÅ™ ostrova?", DIA_Pedro_DI_ArrivedAtShip_Innere );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "JakÃ© pÅ™Ã­Å¡ery se pohybujÃ­ po tomto ostrovÄ›?", DIA_Pedro_DI_ArrivedAtShip_Monster );
+	Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Co bylo s tÃ­m skÅ™etÃ­m plukovnÃ­kem?", DIA_Pedro_DI_ArrivedAtShip_OrkOberst );
 
 
 };
 func void DIA_Pedro_DI_ArrivedAtShip_OrkOberst ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //Co bylo s tím skøetím plukovníkem?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //Znièil mou poslední jiskøièku nadìje, e ještì nìkdy spatøím svou domovinu.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //Od chvíle, co jsem sem pøišel, mì vyslıchal ohlednì strategického rozmístìní paladinù v Khorinidu.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //Samozøejmì e jsem mu o tom mnoho neøekl. Jak bych také mohl, sakra? Vdy jsem u ohnivıch jenom novic.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_15_00"); //Co bylo s tÃ­m skÅ™etÃ­m plukovnÃ­kem?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_01"); //ZniÄil mou poslednÃ­ jiskÅ™iÄku nadÄ›je, Å¾e jeÅ¡tÄ› nÄ›kdy spatÅ™Ã­m svou domovinu.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_02"); //Od chvÃ­le, co jsem sem pÅ™iÅ¡el, mÄ› vyslÃ½chal ohlednÄ› strategickÃ©ho rozmÃ­stÄ›nÃ­ paladinÅ¯ v Khorinidu.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OrkOberst_09_03"); //SamozÅ™ejmÄ› Å¾e jsem mu o tom mnoho neÅ™ekl. Jak bych takÃ© mohl, sakra? VÅ¾dyÅ¥ jsem u ohnivÃ½ch jenom novic.
 	
 	if ((Npc_IsDead(OrkElite_AntiPaladinOrkOberst_DI)))
 	{
-		Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "Skøetí plukovník je mrtvı.", DIA_Pedro_DI_ArrivedAtShip_OberstTot );
+		Info_AddChoice	(DIA_Pedro_DI_ArrivedAtShip, "SkÅ™etÃ­ plukovnÃ­k je mrtvÃ½.", DIA_Pedro_DI_ArrivedAtShip_OberstTot );
 	};
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Monster ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //Jaké pøíšery se pohybují po tomto ostrovì?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //Bìhem dne mùeš èasto vidìt, jak k pobøeí míøí ještìøi. Obvykle nesou nìjaká ohromná vejce.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //Moc jsem toho ve své cele nepochytil, ale myslím, e se chystají opustit ostrov.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Monster_15_00"); //JakÃ© pÅ™Ã­Å¡ery se pohybujÃ­ po tomto ostrovÄ›?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_01"); //BÄ›hem dne mÅ¯Å¾eÅ¡ Äasto vidÄ›t, jak k pobÅ™eÅ¾Ã­ mÃ­Å™Ã­ jeÅ¡tÄ›Å™i. Obvykle nesou nÄ›jakÃ¡ ohromnÃ¡ vejce.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Monster_09_02"); //Moc jsem toho ve svÃ© cele nepochytil, ale myslÃ­m, Å¾e se chystajÃ­ opustit ostrov.
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Innere ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //Jak je moné dostat se dovnitø ostrova?
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //V trùnním sálu skøetího plukovníka je tajná chodba.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Vlekli mì tam pokadé, kdy mì chtìl vyslıchat. Vidìl jsem, e tam je.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Jeden ze šamanù spustil mechanismus tak, e zatáhnul za jednu z pochodní pøipevnìnıch na zdi v chodbì.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Hmm. Myslím, e nejprve zatáhl za pochodeò nalevo a pak napravo, ale moná si to nepamatuju úplnì pøesnì.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //V zadní èásti se náhle otevøel prùchod, kterı vedl hluboko do hory.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //Bohuel nevím, kde ta chodba konèí.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Innere_15_00"); //Jak je moÅ¾nÃ© dostat se dovnitÅ™ ostrova?
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_01"); //V trÅ¯nnÃ­m sÃ¡lu skÅ™etÃ­ho plukovnÃ­ka je tajnÃ¡ chodba.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_02"); //Vlekli mÄ› tam pokaÅ¾dÃ©, kdyÅ¾ mÄ› chtÄ›l vyslÃ½chat. VidÄ›l jsem, Å¾e tam je.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_03"); //Jeden ze Å¡amanÅ¯ spustil mechanismus tak, Å¾e zatÃ¡hnul za jednu z pochodnÃ­ pÅ™ipevnÄ›nÃ½ch na zdi v chodbÄ›.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_04"); //Hmm. MyslÃ­m, Å¾e nejprve zatÃ¡hl za pochodeÅˆ nalevo a pak napravo, ale moÅ¾nÃ¡ si to nepamatuju ÃºplnÄ› pÅ™esnÄ›.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_05"); //V zadnÃ­ ÄÃ¡sti se nÃ¡hle otevÅ™el prÅ¯chod, kterÃ½ vedl hluboko do hory.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Innere_09_06"); //BohuÅ¾el nevÃ­m, kde ta chodba konÄÃ­.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_OberstTot ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_15_00"); //Skøetí plukovník je mrtvı.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //Mrtvı? Innos budi pochválen. Na ten jeho pøíšernı oblièej nikdy nezapomenu.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_15_00"); //SkÅ™etÃ­ plukovnÃ­k je mrtvÃ½.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_OberstTot_09_01"); //MrtvÃ½? Innos budiÅ¾ pochvÃ¡len. Na ten jeho pÅ™Ã­Å¡ernÃ½ obliÄej nikdy nezapomenu.
 
 };
 
 func void DIA_Pedro_DI_ArrivedAtShip_Back ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //U jsem slyšel dost. Bì si najít místo na mé lodi. Ještì poøád mám dost práce.
-	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //Nech tì Innosova síla provází. Budu se za tebe modlit.
+	AI_Output			(other, self, "DIA_Pedro_DI_ArrivedAtShip_Back_15_00"); //UÅ¾ jsem slyÅ¡el dost. BÄ›Å¾ si najÃ­t mÃ­sto na mÃ© lodi. JeÅ¡tÄ› poÅ™Ã¡d mÃ¡m dost prÃ¡ce.
+	AI_Output			(self, other, "DIA_Pedro_DI_ArrivedAtShip_Back_09_01"); //NechÅ¥ tÄ› Innosova sÃ­la provÃ¡zÃ­. Budu se za tebe modlit.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Ship");
@@ -222,7 +222,7 @@ instance DIA_Pedro_DI_PERM		(C_INFO)
 	information	 = 	DIA_Pedro_DI_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Unavenı?";
+	description	 = 	"UnavenÃ½?";
 };
 var int PedroDI_TalkNomore;
 func int DIA_Pedro_DI_PERM_Condition ()
@@ -235,23 +235,23 @@ func int DIA_Pedro_DI_PERM_Condition ()
 };
 func void DIA_Pedro_DI_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //Unavenı?
+	AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_00"); //UnavenÃ½?
 
 	if (Npc_GetDistToWP(self,"SHIP_DECK_05")<1000) 
 	{	
 		if (PedroDI_Flee == LOG_RUNNING)
 		{
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_01"); //Chtìl bys snad, abych ti pøinesl polštáø?
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_02"); //Nech mì bıt, prosím. Potichu si tady sednu a ani nepípnu.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_01"); //ChtÄ›l bys snad, abych ti pÅ™inesl polÅ¡tÃ¡Å™?
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_02"); //Nech mÄ› bÃ½t, prosÃ­m. Potichu si tady sednu a ani nepÃ­pnu.
 			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_03"); //Hmm.
 			B_GivePlayerXP (XP_Ambient);
 			PedroDI_Flee = LOG_SUCCESS;
 		}
 		else if (Npc_IsDead(Dragon_Undead))
 		{
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //Jsem úplnì odrovnanı.
-			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //Sbal si svıch pìt švestek. Brzy zase vyrazíme na moøe.
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //Díky, chlape. U jsem si myslel, e se svalím z lavice rovnou na zem. Dobrou noc.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_04"); //Jsem ÃºplnÄ› odrovnanÃ½.
+			AI_Output			(other, self, "DIA_Pedro_DI_PERM_15_05"); //Sbal si svÃ½ch pÄ›t Å¡vestek. Brzy zase vyrazÃ­me na moÅ™e.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_06"); //DÃ­ky, chlape. UÅ¾ jsem si myslel, Å¾e se svalÃ­m z lavice rovnou na zem. Dobrou noc.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"SleepShip");
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -259,13 +259,13 @@ func void DIA_Pedro_DI_PERM_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_07"); //To je v poøádku. Díky.
+			AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_07"); //To je v poÅ™Ã¡dku. DÃ­ky.
 			AI_StopProcessInfos (self);
 		};
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_08"); //Prosím. Nech mì ít!
+		AI_Output			(self, other, "DIA_Pedro_DI_PERM_09_08"); //ProsÃ­m. Nech mÄ› Å¾Ã­t!
 		AI_StopProcessInfos (self);
 	};
 };

@@ -9,7 +9,7 @@ INSTANCE Spell_Firestorm (C_Spell_Proto)
 {
 	time_per_mana				= 0;
 	damage_per_level			= 	SPL_Damage_InstantFireStorm;
-	damageType					= 	DAM_MAGIC;	// war vorher DAM_FIRE für feuereffekte
+	damageType					= 	DAM_MAGIC;	// war vorher DAM_FIRE fÃ¼r feuereffekte
 };
 
 func int Spell_Logic_Firestorm	(var int manaInvested)

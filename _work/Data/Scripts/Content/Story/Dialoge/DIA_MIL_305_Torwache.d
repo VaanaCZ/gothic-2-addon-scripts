@@ -73,33 +73,33 @@ func int DIA_Mil_305_Torwache_FirstWarn_Condition()
 
 func void DIA_Mil_305_Torwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_00"); //STÁT!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_00"); //STÃT!
 
 	// ------ PETZMASTER LIGHT und Personal CRIMES -------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_01"); //Ve mìstì jsi hledán pro vradu! Ne se to vyøeší, nemohu tì vpustit do horní èásti mìsta.
+			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_01"); //Ve mÄ›stÄ› jsi hledÃ¡n pro vraÅ¾du! NeÅ¾ se to vyÅ™eÅ¡Ã­, nemohu tÄ› vpustit do hornÃ­ ÄÃ¡sti mÄ›sta.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_02"); //Dokud jsi obvinìnı z krádee, nesmíš vstoupit do horní èásti mìsta!
+			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_02"); //Dokud jsi obvinÄ›nÃ½ z krÃ¡deÅ¾e, nesmÃ­Å¡ vstoupit do hornÃ­ ÄÃ¡sti mÄ›sta!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_03"); //Potíista jako ty nemá v horní èásti mìsta co pohledávat.
+			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_03"); //PotÃ­Å¾ista jako ty nemÃ¡ v hornÃ­ ÄÃ¡sti mÄ›sta co pohledÃ¡vat.
 		};
 	
-		AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_04"); //Bì za lordem Andrem a tu záleitost urovnej!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_04"); //BÄ›Å¾ za lordem Andrem a tu zÃ¡leÅ¾itost urovnej!
 	}
 	
 	// ------ normales Reinkommen ------
 	else 
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_05"); //Do horní èásti mìsta mají pøístup jen obèané mìsta a královští vojáci!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_05"); //Do hornÃ­ ÄÃ¡sti mÄ›sta majÃ­ pÅ™Ã­stup jen obÄanÃ© mÄ›sta a krÃ¡lovÅ¡tÃ­ vojÃ¡ci!
 	};
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_305_Checkpoint);
@@ -133,7 +133,7 @@ FUNC INT DIA_Mil_305_Torwache_SecondWarn_Condition()
 
 func void DIA_Mil_305_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_305_Torwache_SecondWarn_03_00"); //Øíkám ti to naposledy. Ještì jeden krok a ocitneš se ve svìtì bolesti.
+	AI_Output (self, other,"DIA_Mil_305_Torwache_SecondWarn_03_00"); //Å˜Ã­kÃ¡m ti to naposledy. JeÅ¡tÄ› jeden krok a ocitneÅ¡ se ve svÄ›tÄ› bolesti.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_305_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -171,13 +171,13 @@ func void DIA_Mil_305_Torwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_305_Torwache_Attack_03_00"); //Øekl sis o to.
+	AI_Output (self, other,"DIA_Mil_305_Torwache_Attack_03_00"); //Å˜ekl sis o to.
 	AI_StopProcessInfos	(self);	
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
 };
 
 // ***************************************************************
-//					Nachricht für Lord Hagen 
+//					Nachricht fÃ¼r Lord Hagen 
 // ***************************************************************
 instance DIA_Mil_305_Torwache_MESSAGE		(C_INFO)
 {
@@ -186,7 +186,7 @@ instance DIA_Mil_305_Torwache_MESSAGE		(C_INFO)
 	condition	 = 	DIA_Mil_305_Torwache_MESSAGE_Condition;
 	information	 = 	DIA_Mil_305_Torwache_MESSAGE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Pøináším dùleitou zprávu pro lorda Hagena.";
+	description	 = 	"PÅ™inÃ¡Å¡Ã­m dÅ¯leÅ¾itou zprÃ¡vu pro lorda Hagena.";
 };
 func int DIA_Mil_305_Torwache_MESSAGE_Condition ()
 {	
@@ -198,9 +198,9 @@ func int DIA_Mil_305_Torwache_MESSAGE_Condition ()
 };
 func void DIA_Mil_305_Torwache_MESSAGE_Info ()
 {
-	AI_Output (other, self, "DIA_Mil_305_Torwache_MESSAGE_15_00"); //Pøináším dùleitou zprávu pro lorda Hagena.
-	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_01"); //Polovina mìsta by chtìla mluvit s lordem Hagenem v nìjaké dùleité záleitosti.
-	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_02"); //Kdybychom vpustili kadého adatele, nedìlal by nic jiného, ne e by vyøizoval podruné záleitosti mìšanù.
+	AI_Output (other, self, "DIA_Mil_305_Torwache_MESSAGE_15_00"); //PÅ™inÃ¡Å¡Ã­m dÅ¯leÅ¾itou zprÃ¡vu pro lorda Hagena.
+	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_01"); //Polovina mÄ›sta by chtÄ›la mluvit s lordem Hagenem v nÄ›jakÃ© dÅ¯leÅ¾itÃ© zÃ¡leÅ¾itosti.
+	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_02"); //Kdybychom vpustili kaÅ¾dÃ©ho Å¾adatele, nedÄ›lal by nic jinÃ©ho, neÅ¾ Å¾e by vyÅ™izoval podruÅ¾nÃ© zÃ¡leÅ¾itosti mÄ›Å¡Å¥anÅ¯.
 };	
 
 // ***************************************************************
@@ -213,7 +213,7 @@ instance DIA_Mil_305_Torwache_Ausnahme (C_INFO)
 	condition	 = 	DIA_Mil_305_Torwache_Ausnahme_Condition;
 	information	 = 	DIA_Mil_305_Torwache_Ausnahme_Info;
 	permanent    =  TRUE;
-	description	 = 	"Nešla by udìlat vıjimka?";
+	description	 = 	"NeÅ¡la by udÄ›lat vÃ½jimka?";
 };
 func int DIA_Mil_305_Torwache_Ausnahme_Condition ()
 {	
@@ -224,13 +224,13 @@ func int DIA_Mil_305_Torwache_Ausnahme_Condition ()
 };
 func void DIA_Mil_305_Torwache_Ausnahme_Info ()
 {
-	AI_Output (other, self, "DIA_Mil_305_Torwache_Ausnahme_15_00"); //Nešla by udìlat vıjimka?
-	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_01"); //(vykøikne) Coe?! V tomhle mìstì platí urèitá pravidla! Pravidla, která se vztahují na kadého, bez vıjimek!
-	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_02"); //Pokud bychom svolili k porušení tìchto pravidel, bylo by to nespravedlivé ke všem, kdo se jimi øídí.
+	AI_Output (other, self, "DIA_Mil_305_Torwache_Ausnahme_15_00"); //NeÅ¡la by udÄ›lat vÃ½jimka?
+	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_01"); //(vykÅ™ikne) CoÅ¾e?! V tomhle mÄ›stÄ› platÃ­ urÄitÃ¡ pravidla! Pravidla, kterÃ¡ se vztahujÃ­ na kaÅ¾dÃ©ho, bez vÃ½jimek!
+	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_02"); //Pokud bychom svolili k poruÅ¡enÃ­ tÄ›chto pravidel, bylo by to nespravedlivÃ© ke vÅ¡em, kdo se jimi Å™Ã­dÃ­.
 };	
 
 // ************************************************************
-// 						Ich BIN Bürger!  				  
+// 						Ich BIN BÃ¼rger!  				  
 // ************************************************************
 INSTANCE DIA_Mil_305_Torwache_PassAsCitizen (C_INFO)
 {
@@ -239,7 +239,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsCitizen (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsCitizen_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsCitizen_Info;
 	permanent	= TRUE;
-	description = "Jsem uznávanı obèan Khorinidu! Nechte mì projít!";
+	description = "Jsem uznÃ¡vanÃ½ obÄan Khorinidu! Nechte mÄ› projÃ­t!";
 };                       
 FUNC INT DIA_Mil_305_Torwache_PassAsCitizen_Condition()
 {	
@@ -251,12 +251,12 @@ FUNC INT DIA_Mil_305_Torwache_PassAsCitizen_Condition()
 };
 FUNC VOID DIA_Mil_305_Torwache_PassAsCitizen_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsCitizen_15_00"); //Jsem uznávanı obèan Khorinidu! Nechte mì projít!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsCitizen_15_00"); //Jsem uznÃ¡vanÃ½ obÄan Khorinidu! Nechte mÄ› projÃ­t!
 
 	if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_01"); //A u khorinidské mistry pøimìlo ke tvému zapsání mezi uèedníky cokoliv - nechci to vìdìt.
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_02"); //Mùeš vstoupit! Ale chovej se slušnì! Jinak tì èekají nejvìtší trable tvého ivota!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_01"); //AÅ¥ uÅ¾ khorinidskÃ© mistry pÅ™imÄ›lo ke tvÃ©mu zapsÃ¡nÃ­ mezi uÄednÃ­ky cokoliv - nechci to vÄ›dÄ›t.
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_02"); //MÅ¯Å¾eÅ¡ vstoupit! Ale chovej se sluÅ¡nÄ›! Jinak tÄ› ÄekajÃ­ nejvÄ›tÅ¡Ã­ trable tvÃ©ho Å¾ivota!
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
 		Mil_305_schonmalreingelassen = TRUE;
@@ -268,13 +268,13 @@ FUNC VOID DIA_Mil_305_Torwache_PassAsCitizen_Info()
 	||		(MIS_Bosper_Bogen == LOG_SUCCESS) || (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	|| 		(MIS_Harad_Orc == LOG_SUCCESS) || (MIS_HakonBandits == LOG_SUCCESS)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_03"); //Moná sis naklonil na svou stranu nìkteré mistry z dolní èásti mìsta, ale kdybys byl obèanem tohoto mìsta, vìdìl bych o tom!
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_04"); //Nevìs mi bulíky na nos! Varuju tì!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_03"); //MoÅ¾nÃ¡ sis naklonil na svou stranu nÄ›kterÃ© mistry z dolnÃ­ ÄÃ¡sti mÄ›sta, ale kdybys byl obÄanem tohoto mÄ›sta, vÄ›dÄ›l bych o tom!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_04"); //NevÄ›s mi bulÃ­ky na nos! Varuju tÄ›!
 		AI_StopProcessInfos(self);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_05"); //Jsi jen špína za nehty! Okamitì zmiz!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_05"); //Jsi jen Å¡pÃ­na za nehty! OkamÅ¾itÄ› zmiz!
 		AI_StopProcessInfos(self);
 	};
 };
@@ -291,7 +291,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsMil (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsMil_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsMil_Info;
 	permanent 	= TRUE; 
-	description	= "Patøím k domobranì - nechte mì projít!";
+	description	= "PatÅ™Ã­m k domobranÄ› - nechte mÄ› projÃ­t!";
 };                       
 
 FUNC INT DIA_Mil_305_Torwache_PassAsMil_Condition()
@@ -306,9 +306,9 @@ FUNC INT DIA_Mil_305_Torwache_PassAsMil_Condition()
 
 FUNC VOID DIA_Mil_305_Torwache_PassAsMil_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMil_15_00"); //Patøím k domobranì - nechte mì projít!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_01"); //Take Andre tì pøijal? V tom pøípadì nakonec asi nebudeš a tak špatnı chlap!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_02"); //Jsi teï jedním z ochráncù mìsta! Tak se k obèanùm chovej hezky pøátelsky!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMil_15_00"); //PatÅ™Ã­m k domobranÄ› - nechte mÄ› projÃ­t!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_01"); //TakÅ¾e Andre tÄ› pÅ™ijal? V tom pÅ™Ã­padÄ› nakonec asi nebudeÅ¡ aÅ¾ tak Å¡patnÃ½ chlap!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_02"); //Jsi teÄ jednÃ­m z ochrÃ¡ncÅ¯ mÄ›sta! Tak se k obÄanÅ¯m chovej hezky pÅ™Ã¡telsky!
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -327,7 +327,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsMage (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsMage_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsMage_Info;
 	permanent 	= TRUE; 
-	description	= "Opovauješ se stát v cestì Innosovu zástupci?";
+	description	= "OpovaÅ¾ujeÅ¡ se stÃ¡t v cestÄ› Innosovu zÃ¡stupci?";
 };                       
 
 FUNC INT DIA_Mil_305_Torwache_PassAsMage_Condition()
@@ -342,10 +342,10 @@ FUNC INT DIA_Mil_305_Torwache_PassAsMage_Condition()
 
 FUNC VOID DIA_Mil_305_Torwache_PassAsMage_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_00"); //Opovauješ se stát v cestì Innosovu zástupci?
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_01"); //Ehm... ne! Samozøejmì ne! Innosovım vyvolenım je vstup povolen!
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_02"); //Modli se k Innosovi, a ti odpustí tvou troufalost!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_03"); //Ano, vyvolenı!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_00"); //OpovaÅ¾ujeÅ¡ se stÃ¡t v cestÄ› Innosovu zÃ¡stupci?
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_01"); //Ehm... ne! SamozÅ™ejmÄ› ne! InnosovÃ½m vyvolenÃ½m je vstup povolen!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_02"); //Modli se k Innosovi, aÅ¥ ti odpustÃ­ tvou troufalost!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_03"); //Ano, vyvolenÃ½!
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -355,7 +355,7 @@ FUNC VOID DIA_Mil_305_Torwache_PassAsMage_Info()
 
 
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃ–LDNER
 // ************************************************************
 
 INSTANCE DIA_Mil_305_Torwache_PassAsSld (C_INFO)
@@ -365,7 +365,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsSld (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsSld_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsSld_Info;
 	permanent 	= TRUE; 
-	description	= "Nesu dùleitou zprávu pro lorda Hagena!";
+	description	= "Nesu dÅ¯leÅ¾itou zprÃ¡vu pro lorda Hagena!";
 };                       
 
 FUNC INT DIA_Mil_305_Torwache_PassAsSld_Condition()
@@ -380,10 +380,10 @@ FUNC INT DIA_Mil_305_Torwache_PassAsSld_Condition()
 
 FUNC VOID DIA_Mil_305_Torwache_PassAsSld_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_00"); //Nesu dùleitou zprávu pro lorda Hagena!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_01"); //Ty jsi jeden z té oldácké chátry! Co bys ty mohl od lorda Hagena chtít?
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_02"); //Pøináším nabídku pøímìøí.
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_03"); //Ha! Take jste vy mizerové nakonec pøece jenom pøišli k rozumu. Tak bì za lordem Hagenem, ale chovej se pìknì zdvoøile, nebo ti nakopu tu tvou tlustou blbou... zadek!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_00"); //Nesu dÅ¯leÅ¾itou zprÃ¡vu pro lorda Hagena!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_01"); //Ty jsi jeden z tÃ© Å¾oldÃ¡ckÃ© chÃ¡try! Co bys ty mohl od lorda Hagena chtÃ­t?
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_02"); //PÅ™inÃ¡Å¡Ã­m nabÃ­dku pÅ™Ã­mÄ›Å™Ã­.
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_03"); //Ha! TakÅ¾e jste vy mizerovÃ© nakonec pÅ™ece jenom pÅ™iÅ¡li k rozumu. Tak bÄ›Å¾ za lordem Hagenem, ale chovej se pÄ›knÄ› zdvoÅ™ile, nebo ti nakopu tu tvou tlustou blbou... zadek!
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -420,20 +420,20 @@ FUNC VOID DIA_Mil_305_Torwache_PERM_Info()
 	if (other.guild == GIL_PAL) 
 	|| (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_01"); //Všechno v pohodì, kámo!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_01"); //VÅ¡echno v pohodÄ›, kÃ¡mo!
 	}
 	else if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_02"); //Plníme zde jen svou povinnost. Dìkuji, e sis mì všiml, vyvolenı!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_02"); //PlnÃ­me zde jen svou povinnost. DÄ›kuji, Å¾e sis mÄ› vÅ¡iml, vyvolenÃ½!
 	}
 	else if (other.guild == GIL_SLD)
 	||		(other.guild == GIL_DJG)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_03"); //Sice tì nechám projít, ale to ještì neznamená, e s tebou chci mluvit!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_03"); //Sice tÄ› nechÃ¡m projÃ­t, ale to jeÅ¡tÄ› neznamenÃ¡, Å¾e s tebou chci mluvit!
 	}
 	else //GIL_None 
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_04"); //Co chceš?
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_04"); //Co chceÅ¡?
 	};
 	
 	AI_StopProcessInfos	(self);

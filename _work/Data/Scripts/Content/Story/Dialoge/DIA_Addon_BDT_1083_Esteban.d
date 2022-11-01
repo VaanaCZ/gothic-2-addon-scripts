@@ -78,10 +78,10 @@ FUNC INT DIA_Addon_Esteban_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_00");//Tak ty seš ten chlap, co se probojoval a do tábora.
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_00");//Tak ty seÅ¡ ten chlap, co se probojoval aÅ¾ do tÃ¡bora.
 	AI_Output (other, self, "DIA_Addon_Esteban_Hi_15_01");//To se to teda rychle rozneslo.
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_02");//Franco byl tvrdej oøíšek, nikdo si s ním radši nic nezaèínal. Nikdo kromì tebe.
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_03");//Abych to ujasnil, jestli òákou takovou sviòárnu zkusíš na mì, zabiju tì.
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_02");//Franco byl tvrdej oÅ™Ã­Å¡ek, nikdo si s nÃ­m radÅ¡i nic nezaÄÃ­nal. Nikdo kromÄ› tebe.
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_03");//Abych to ujasnil, jestli ÅˆÃ¡kou takovou sviÅˆÃ¡rnu zkusÃ­Å¡ na mÄ›, zabiju tÄ›.
 };
 //--------------------------------------------------------------------
 //	Info Mine
@@ -105,9 +105,9 @@ FUNC INT DIA_Addon_Esteban_Mine_Condition()
 FUNC VOID DIA_Addon_Esteban_Mine_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Esteban_Mine_15_00");//Chci se dostat do dolu!
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_01");//(s úšklebkem) To je jasnı. Pak jsi pøišel na to správnı místo.
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_02");//Protoe kadej, kdo kutá v dole, dostává pìknou hromadu zlata.
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_03");//A taky potøebuješ èervenı kameny, aby tì Thorus pustil dovnitø.
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_01");//(s ÃºÅ¡klebkem) To je jasnÃ½. Pak jsi pÅ™iÅ¡el na to sprÃ¡vnÃ½ mÃ­sto.
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_02");//ProtoÅ¾e kaÅ¾dej, kdo kutÃ¡ v dole, dostÃ¡vÃ¡ pÄ›knou hromadu zlata.
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_03");//A taky potÅ™ebujeÅ¡ ÄervenÃ½ kameny, aby tÄ› Thorus pustil dovnitÅ™.
 };
 //--------------------------------------------------------------------
 //	Info Rot
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_Esteban_Rot   (C_INFO)
 	condition   = DIA_Addon_Esteban_Rot_Condition;
 	information = DIA_Addon_Esteban_Rot_Info;
 	permanent   = FALSE;
-	description = "Dej mi jeden z tìch èervenıch kamenù.";
+	description = "Dej mi jeden z tÄ›ch ÄervenÃ½ch kamenÅ¯.";
 };
 FUNC INT DIA_Addon_Esteban_Rot_Condition()
 {	
@@ -130,20 +130,20 @@ FUNC INT DIA_Addon_Esteban_Rot_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Rot_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Rot_15_00");//Dej mi jeden z tìch èervenıch kamenù.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_01");//Klidnì, ale nebude to zadarmo.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_02");//Obvykle za nì chci podíl ze zlata, kterı chlapi dostanou za kopání.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_03");//(odhadnì) Co vlastnì víš o dolování zlata?
+	AI_Output (other, self, "DIA_Addon_Esteban_Rot_15_00");//Dej mi jeden z tÄ›ch ÄervenÃ½ch kamenÅ¯.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_01");//KlidnÄ›, ale nebude to zadarmo.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_02");//Obvykle za nÄ› chci podÃ­l ze zlata, kterÃ½ chlapi dostanou za kopÃ¡nÃ­.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_03");//(odhadnÄ›) Co vlastnÄ› vÃ­Å¡ o dolovÃ¡nÃ­ zlata?
 	if (Hero_HackChance > 25) 
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_04");//U ses nejspíš pár trikù nauèil, co?
+		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_04");//UÅ¾ ses nejspÃ­Å¡ pÃ¡r trikÅ¯ nauÄil, co?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_05");//Nezdá se mi, e bys byl zrovna kopáèskej lumen.
+		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_05");//NezdÃ¡ se mi, Å¾e bys byl zrovna kopÃ¡Äskej lumen.
 	};
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_06");//(jízlivì) Jestli ti dám èervenej kámen, nebude to proto, e seš tak dobrej kopáè.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_07");//Kdepak, mám pro tebe jinou práci.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_06");//(jÃ­zlivÄ›) Jestli ti dÃ¡m Äervenej kÃ¡men, nebude to proto, Å¾e seÅ¡ tak dobrej kopÃ¡Ä.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_07");//Kdepak, mÃ¡m pro tebe jinou prÃ¡ci.
 	
 };
 //--------------------------------------------------------------------
@@ -156,7 +156,7 @@ INSTANCE DIA_Addon_Esteban_MIS   (C_INFO)
 	condition   = DIA_Addon_Esteban_MIS_Condition;
 	information = DIA_Addon_Esteban_MIS_Info;
 	permanent   = FALSE;
-	description = "Jakou práci?";
+	description = "Jakou prÃ¡ci?";
 };
 FUNC INT DIA_Addon_Esteban_MIS_Condition()
 {	
@@ -167,29 +167,29 @@ FUNC INT DIA_Addon_Esteban_MIS_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_MIS_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_00");//Jakou práci?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_01");//Jeden bandita se mì snail oddìlat. Ale místo toho moje stráe zabily JEHO.
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_02");//Zachtìlo se mu tvıho místa, co?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_03");//Byl to debil! Bandita bez mozku. Snait se mì zabít na vlastní pìst, to je pøeci úplná pitomost!
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_04");//Ne, jenom plnil òákou dohodu – urèitì ho poslal nìkdo jinej.
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_05");//Take já mám zjistit, kdo za tím opravdu vìzí.
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_06");//A u na mì toho vraha poslal kdokoliv, poøádnì si to odskáèe. Najdi ho – a já tì pustím do dolu.
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_00");//Jakou prÃ¡ci?
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_01");//Jeden bandita se mÄ› snaÅ¾il oddÄ›lat. Ale mÃ­sto toho moje strÃ¡Å¾e zabily JEHO.
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_02");//ZachtÄ›lo se mu tvÃ½ho mÃ­sta, co?
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_03");//Byl to debil! Bandita bez mozku. SnaÅ¾it se mÄ› zabÃ­t na vlastnÃ­ pÄ›st, to je pÅ™eci ÃºplnÃ¡ pitomost!
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_04");//Ne, jenom plnil ÅˆÃ¡kou dohodu â€“ urÄitÄ› ho poslal nÄ›kdo jinej.
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_05");//TakÅ¾e jÃ¡ mÃ¡m zjistit, kdo za tÃ­m opravdu vÄ›zÃ­.
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_06");//AÅ¥ uÅ¾ na mÄ› toho vraha poslal kdokoliv, poÅ™Ã¡dnÄ› si to odskÃ¡Äe. Najdi ho â€“ a jÃ¡ tÄ› pustÃ­m do dolu.
 	
 	if !Npc_IsDead (Senyan)
 	&&  Npc_KnowsInfo (other,DIA_Addon_BDT_1084_Senyan_Hi)
 	{
-		AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_07");//Zrovna v tıhle vìci mì za tebou poslal Senyan..
-		AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_08");//Senyan? Ten pro mì taky pracuje. Øíkal jsem mu, a má oèi otevøenı.
+		AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_07");//Zrovna v tÃ½hle vÄ›ci mÄ› za tebou poslal Senyan..
+		AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_08");//Senyan? Ten pro mÄ› taky pracuje. Å˜Ã­kal jsem mu, aÅ¥ mÃ¡ oÄi otevÅ™enÃ½.
 	};
 	
 	MIS_Judas = LOG_RUNNING;
 	Log_CreateTopic (Topic_Addon_Esteban,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Esteban,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Esteban, "Nìkdo Estebanovi usiloval o ivot. Mám zjistit, kdo to byl.");
+	B_LogEntry (Topic_Addon_Esteban, "NÄ›kdo Estebanovi usiloval o Å¾ivot. MÃ¡m zjistit, kdo to byl.");
 
 };
 //--------------------------------------------------------------------
-//	Info Attentäter (Kerl)
+//	Info AttentÃ¤ter (Kerl)
 //--------------------------------------------------------------------
 INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 {
@@ -198,7 +198,7 @@ INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 	condition   = DIA_Addon_Esteban_Kerl_Condition;
 	information = DIA_Addon_Esteban_Kerl_Info;
 	permanent   = FALSE;
-	description = "A proè bych to mìl dìlat?";
+	description = "A proÄ bych to mÄ›l dÄ›lat?";
 };
 FUNC INT DIA_Addon_Esteban_Kerl_Condition()
 {	
@@ -209,12 +209,12 @@ FUNC INT DIA_Addon_Esteban_Kerl_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Kerl_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Kerl_15_00");//Co bych v tom mìl dìlat?
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_01");//V tomhle táboøe o tom ví kadej, take musíš hrát otevøenì.
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_02");//Sna se zjistit, kdo stojí na mı stranì a kdo ne. A nenech se oblafnout.
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_03");//Promluv si se Snafem. Ten tlustej kuchaø toho pochytí spoustu.
+	AI_Output (other, self, "DIA_Addon_Esteban_Kerl_15_00");//Co bych v tom mÄ›l dÄ›lat?
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_01");//V tomhle tÃ¡boÅ™e o tom vÃ­ kaÅ¾dej, takÅ¾e musÃ­Å¡ hrÃ¡t otevÅ™enÄ›.
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_02");//SnaÅ¾ se zjistit, kdo stojÃ­ na mÃ½ stranÄ› a kdo ne. A nenech se oblafnout.
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_03");//Promluv si se Snafem. Ten tlustej kuchaÅ™ toho pochytÃ­ spoustu.
 	
-	B_LogEntry (Topic_Addon_Esteban, "Viníka najdu tak, e si promluvím se všemi v táboøe a získám pøehled, kdo na èí stranì stojí. Nejlepší bude zaèít s vyptáváním u Snafa, protoe ten slyší spoustu vìcí.");
+	B_LogEntry (Topic_Addon_Esteban, "VinÃ­ka najdu tak, Å¾e si promluvÃ­m se vÅ¡emi v tÃ¡boÅ™e a zÃ­skÃ¡m pÅ™ehled, kdo na ÄÃ­ stranÄ› stojÃ­. NejlepÅ¡Ã­ bude zaÄÃ­t s vyptÃ¡vÃ¡nÃ­m u Snafa, protoÅ¾e ten slyÅ¡Ã­ spoustu vÄ›cÃ­.");
 };
 //--------------------------------------------------------------------
 //	Info Armor 
@@ -226,7 +226,7 @@ INSTANCE DIA_Addon_Esteban_Armor   (C_INFO)
 	condition   = DIA_Addon_Esteban_Armor_Condition;
 	information = DIA_Addon_Esteban_Armor_Info;
 	permanent   = FALSE;
-	description = "Potøebuju lepší zbroj.";
+	description = "PotÅ™ebuju lepÅ¡Ã­ zbroj.";
 };
 FUNC INT DIA_Addon_Esteban_Armor_Condition()
 {	
@@ -237,11 +237,11 @@ FUNC INT DIA_Addon_Esteban_Armor_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Armor_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Armor_15_00"); //Potøebuju lepší brnìní.
-	AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_01"); //Na co? Dyk u jedno máš. Zatím ti musí staèit.
+	AI_Output (other, self, "DIA_Addon_Esteban_Armor_15_00"); //PotÅ™ebuju lepÅ¡Ã­ brnÄ›nÃ­.
+	AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_01"); //Na co? Dyk uÅ¾ jedno mÃ¡Å¡. ZatÃ­m ti musÃ­ staÄit.
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_02"); //Kdy ale splníš, co ti zadám, mùem si o tom ještì promluvit.
+		AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_02"); //KdyÅ¾ ale splnÃ­Å¡, co ti zadÃ¡m, mÅ¯Å¾em si o tom jeÅ¡tÄ› promluvit.
 	};
 };
 //--------------------------------------------------------------------
@@ -254,7 +254,7 @@ INSTANCE DIA_Addon_Esteban_Auftrag   (C_INFO)
 	condition   = DIA_Addon_Esteban_Auftrag_Condition;
 	information = DIA_Addon_Esteban_Auftrag_Info;
 	permanent   = TRUE;
-	description = "Co se tıèe toho úkolu...";
+	description = "Co se tÃ½Äe toho Ãºkolu...";
 };
 FUNC INT DIA_Addon_Esteban_Auftrag_Condition()
 {	
@@ -267,25 +267,25 @@ FUNC INT DIA_Addon_Esteban_Auftrag_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Auftrag_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_00");//K tomu úkolu...
-	AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_01");//Hele, já se musím starat i o jinı vìci.
+	AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_00");//K tomu Ãºkolu...
+	AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_01");//Hele, jÃ¡ se musÃ­m starat i o jinÃ½ vÄ›ci.
 	
 	if (MIS_Judas == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_02");//Já myslel, e by ses rád dozvìdìl, kdo stojí za tím útokem.
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_03");//A kdo? Vyklop jeho jméno, a mu mı stráe mùou zakroutit krkem!
-		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_04");//Spískal to obchodník Fisk. A zrovna si klidnì sedí za barem, popíjí a nic netuší.
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_05");//HA! Vıbornì, chlapèe. Mı stráe u s ním zametou.
+		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_02");//JÃ¡ myslel, Å¾e by ses rÃ¡d dozvÄ›dÄ›l, kdo stojÃ­ za tÃ­m Ãºtokem.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_03");//A kdo? Vyklop jeho jmÃ©no, aÅ¥ mu mÃ½ strÃ¡Å¾e mÅ¯Å¾ou zakroutit krkem!
+		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_04");//SpÃ­skal to obchodnÃ­k Fisk. A zrovna si klidnÄ› sedÃ­ za barem, popÃ­jÃ­ a nic netuÅ¡Ã­.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_05");//HA! VÃ½bornÄ›, chlapÄe. MÃ½ strÃ¡Å¾e uÅ¾ s nÃ­m zametou.
 		
 		AI_TurnToNpc (self, Wache_01);
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_06");//Slyšeli jste ho, chlapi. Bìte na Fiska.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_06");//SlyÅ¡eli jste ho, chlapi. BÄ›Å¾te na Fiska.
 		AI_TurnToNpc (self, other);
 		
 		Bodyguard_Killer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_07");//Vra se, a zjistíš, kdo je to.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_07");//VraÅ¥ se, aÅ¾ zjistÃ­Å¡, kdo je to.
 		AI_StopProcessInfos(self);
 	};
 };	
@@ -299,7 +299,7 @@ INSTANCE DIA_Addon_Esteban_Away   (C_INFO)
 	condition   = DIA_Addon_Esteban_Away_Condition;
 	information = DIA_Addon_Esteban_Away_Info;
 	permanent   = FALSE;
-	description = "A co bude dál?";
+	description = "A co bude dÃ¡l?";
 };
 FUNC INT DIA_Addon_Esteban_Away_Condition()
 {	
@@ -310,10 +310,10 @@ FUNC INT DIA_Addon_Esteban_Away_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Away_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Away_15_00");//A co bude dál?
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_01");//Co bude dál? Povím ti, co bude dál.
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_02");//Fiska èeká pìknì bolestivá smrt. A kadej v táboøe se o tom dozví.
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_03");//Bude to pro nì varování.
+	AI_Output (other, self, "DIA_Addon_Esteban_Away_15_00");//A co bude dÃ¡l?
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_01");//Co bude dÃ¡l? PovÃ­m ti, co bude dÃ¡l.
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_02");//Fiska ÄekÃ¡ pÄ›knÄ› bolestivÃ¡ smrt. A kaÅ¾dej v tÃ¡boÅ™e se o tom dozvÃ­.
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_03");//Bude to pro nÄ› varovÃ¡nÃ­.
 	
 	B_StartotherRoutine (Wache_01,"AMBUSH");
 	B_StartotherRoutine (Wache_02,"AMBUSH");
@@ -328,7 +328,7 @@ INSTANCE DIA_Addon_Esteban_Stone   (C_INFO)
 	condition   = DIA_Addon_Esteban_Stone_Condition;
 	information = DIA_Addon_Esteban_Stone_Info;
 	permanent   = FALSE;
-	description = "Dostanu teï ten èervenı kámen?";
+	description = "Dostanu teÄ ten ÄervenÃ½ kÃ¡men?";
 };
 FUNC INT DIA_Addon_Esteban_Stone_Condition()
 {	
@@ -340,9 +340,9 @@ FUNC INT DIA_Addon_Esteban_Stone_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Stone_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Stone_15_00");//A dostanu teï ten èervenı kámen?
-	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_01");//Vedl sis dobøe. Takovı lidi se nemaj co plahoèit v dole.
-	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_02");//Tady pro tebe najdu mnohem lepší vyuití. Zùstaneš v táboøe a budeš pro mì dìlat dál.
+	AI_Output (other, self, "DIA_Addon_Esteban_Stone_15_00");//A dostanu teÄ ten ÄervenÃ½ kÃ¡men?
+	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_01");//Vedl sis dobÅ™e. TakovÃ½ lidi se nemaj co plahoÄit v dole.
+	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_02");//Tady pro tebe najdu mnohem lepÅ¡Ã­ vyuÅ¾itÃ­. ZÅ¯staneÅ¡ v tÃ¡boÅ™e a budeÅ¡ pro mÄ› dÄ›lat dÃ¡l.
 };		
 //--------------------------------------------------------------------
 //	Info nicht arbeiten
@@ -354,7 +354,7 @@ INSTANCE DIA_Addon_Esteban_not   (C_INFO)
 	condition   = DIA_Addon_Esteban_not_Condition;
 	information = DIA_Addon_Esteban_not_Info;
 	permanent   = FALSE;
-	description = "Budu o tom pøemıšlet.";
+	description = "Budu o tom pÅ™emÃ½Å¡let.";
 };
 FUNC INT DIA_Addon_Esteban_not_Condition()
 {	
@@ -365,9 +365,9 @@ FUNC INT DIA_Addon_Esteban_not_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_not_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_not_15_00");//Popøemıšlím o tom.
-	AI_Output (self, other, "DIA_Addon_Esteban_not_07_01");//Zapomínáš, s kım mluvíš. Já to tady vedu a ty budeš dìlat, co øeknu.
-	AI_Output (self, other, "DIA_Addon_Esteban_not_07_02");//A já øíkám, e budeš dìlat pro mì a pro nikoho jinıho. Je to jasnı?
+	AI_Output (other, self, "DIA_Addon_Esteban_not_15_00");//PopÅ™emÃ½Å¡lÃ­m o tom.
+	AI_Output (self, other, "DIA_Addon_Esteban_not_07_01");//ZapomÃ­nÃ¡Å¡, s kÃ½m mluvÃ­Å¡. JÃ¡ to tady vedu a ty budeÅ¡ dÄ›lat, co Å™eknu.
+	AI_Output (self, other, "DIA_Addon_Esteban_not_07_02");//A jÃ¡ Å™Ã­kÃ¡m, Å¾e budeÅ¡ dÄ›lat pro mÄ› a pro nikoho jinÃ½ho. Je to jasnÃ½?
 };
 //--------------------------------------------------------------------
 //	Info Leibwache weg (fight)
@@ -379,7 +379,7 @@ INSTANCE DIA_Addon_Esteban_fight   (C_INFO)
 	condition   = DIA_Addon_Esteban_fight_Condition;
 	information = DIA_Addon_Esteban_fight_Info;
 	permanent   = FALSE;
-	description = "Snaíš se mì tahat za nos?";
+	description = "SnaÅ¾Ã­Å¡ se mÄ› tahat za nos?";
 };
 FUNC INT DIA_Addon_Esteban_fight_Condition()
 {	
@@ -390,12 +390,12 @@ FUNC INT DIA_Addon_Esteban_fight_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_fight_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_00");//Nedìlej ze mì vola. O tom, e bych pro tebe pracoval, nikdy nebyla øeè.
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_01");//Takovouhle nabídku hned tak nìkdo nedostane. Ale jestli chceš, tak klidnì mùeš odejít z tábora.
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_02");//A co kdybys dodrel slovo a dal mi ten èervenı kámen?
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_03");//Hele, ještì slovo a mı stráe ti daj taky pìknou nakládaèku.
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_04");//(úšklebek) Jaké stráe?
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_05");//Coe...? Á, u to chápu, chceš mì dostat. Jen poèkej...
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_00");//NedÄ›lej ze mÄ› vola. O tom, Å¾e bych pro tebe pracoval, nikdy nebyla Å™eÄ.
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_01");//Takovouhle nabÃ­dku hned tak nÄ›kdo nedostane. Ale jestli chceÅ¡, tak klidnÄ› mÅ¯Å¾eÅ¡ odejÃ­t z tÃ¡bora.
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_02");//A co kdybys dodrÅ¾el slovo a dal mi ten ÄervenÃ½ kÃ¡men?
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_03");//Hele, jeÅ¡tÄ› slovo a mÃ½ strÃ¡Å¾e ti daj taky pÄ›knou naklÃ¡daÄku.
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_04");//(ÃºÅ¡klebek) JakÃ© strÃ¡Å¾e?
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_05");//CoÅ¾e...? Ã, uÅ¾ to chÃ¡pu, chceÅ¡ mÄ› dostat. Jen poÄkej...
 	
 	Bodyguard_Killer = FALSE;
 	
@@ -415,7 +415,7 @@ INSTANCE DIA_Addon_Esteban_Duell   (C_INFO)
 	condition   = DIA_Addon_Esteban_Duell_Condition;
 	information = DIA_Addon_Esteban_Duell_Info;
 	permanent   = FALSE;
-	description = "OKAMITÌ mi dej ten kámen, nebo si ho vezmu sám!";
+	description = "OKAMÅ½ITÄš mi dej ten kÃ¡men, nebo si ho vezmu sÃ¡m!";
 };
 FUNC INT DIA_Addon_Esteban_Duell_Condition()
 {	
@@ -427,8 +427,8 @@ FUNC INT DIA_Addon_Esteban_Duell_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Duell_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Esteban_Duell_15_00"); //OKAMITÌ mi dej ten šutr, nebo si ho vezmu sám!
-	AI_Output (self,other,"DIA_Addon_Esteban_Duell_07_01"); //Tak ty chceš chcípnout? No dobøe, udìlám ti laskavost a zbavím tì tvı blbosti.
+	AI_Output (other,self,"DIA_Addon_Esteban_Duell_15_00"); //OKAMÅ½ITÄš mi dej ten Å¡utr, nebo si ho vezmu sÃ¡m!
+	AI_Output (self,other,"DIA_Addon_Esteban_Duell_07_01"); //Tak ty chceÅ¡ chcÃ­pnout? No dobÅ™e, udÄ›lÃ¡m ti laskavost a zbavÃ­m tÄ› tvÃ½ blbosti.
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

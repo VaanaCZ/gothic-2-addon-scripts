@@ -54,20 +54,20 @@ FUNC INT DIA_Garond_PMSchulden_Condition()
 
 FUNC VOID DIA_Garond_PMSchulden_Info()
 {
-	AI_Output (self, other, "DIA_Garond_PMSchulden_10_00"); //Nemáme se o èem bavit, dokud nezaplatíš pokutu.
+	AI_Output (self, other, "DIA_Garond_PMSchulden_10_00"); //NemÃ¡me se o Äem bavit, dokud nezaplatÃ­Å¡ pokutu.
 
 	if (B_GetTotalPetzCounter(self) > Garond_LastPetzCounter)
 	{
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_01"); //A ta podle posledních obvinìní zase stoupla.
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_02"); //Zdá se, e ses zapletl do dalších potíí.
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_01"); //A ta podle poslednÃ­ch obvinÄ›nÃ­ zase stoupla.
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_02"); //ZdÃ¡ se, Å¾e ses zapletl do dalÅ¡Ã­ch potÃ­Å¾Ã­.
 		
 		if (Garond_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_03"); //Ale doufám, e to koneènì všechno zaplatíš! Dohromady to dìlá...
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_03"); //Ale doufÃ¡m, Å¾e to koneÄnÄ› vÅ¡echno zaplatÃ­Å¡! Dohromady to dÄ›lÃ¡...
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_04"); //Vánì jsi mì zklamal. Tvoje pokuta je...
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_04"); //VÃ¡Å¾nÄ› jsi mÄ› zklamal. Tvoje pokuta je...
 		};
 				
 		var int diff; diff = (B_GetTotalPetzCounter(self) - Garond_LastPetzCounter);
@@ -83,37 +83,37 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 	}
 	else if (B_GetGreatestPetzCrime(self) < Garond_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_05"); //Objevilo se pár novıch skuteèností.
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_05"); //Objevilo se pÃ¡r novÃ½ch skuteÄnostÃ­.
 		
 		if (Garond_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_06"); //Z nièeho nic u nejsi obvinìnı z vrady.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_06"); //Z niÄeho nic uÅ¾ nejsi obvinÄ›nÃ½ z vraÅ¾dy.
 		};
 		
 		if (Garond_LastPetzCrime == CRIME_THEFT)
 		|| ( (Garond_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_07"); //Nikdo si nevzpomíná, e by tì vidìl krást.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_07"); //Nikdo si nevzpomÃ­nÃ¡, Å¾e by tÄ› vidÄ›l krÃ¡st.
 		};
 		
 		if (Garond_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Garond_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_08"); //U není nikdo, kdo by tvrdil, e tì vidìl zapleteného do nìjaké rvaèky.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_08"); //UÅ¾ nenÃ­ nikdo, kdo by tvrdil, Å¾e tÄ› vidÄ›l zapletenÃ©ho do nÄ›jakÃ© rvaÄky.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_09"); //Zdá se, e všechna obvinìní proti tobì byla staena.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_09"); //ZdÃ¡ se, Å¾e vÅ¡echna obvinÄ›nÃ­ proti tobÄ› byla staÅ¾ena.
 		};
 		
-		AI_Output (self, other, "DIA_Garond_PMSchulden_10_10"); //Netuším, o co tam šlo, ale varuju tì: nepøehánìj to!
+		AI_Output (self, other, "DIA_Garond_PMSchulden_10_10"); //NetuÅ¡Ã­m, o co tam Å¡lo, ale varuju tÄ›: nepÅ™ehÃ¡nÄ›j to!
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_11"); //Rozhodl jsem se zapomenout na tvé dluhy.
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_12"); //A u se na hradì nezaplétej do ádnıch potíí!
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_11"); //Rozhodl jsem se zapomenout na tvÃ© dluhy.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_12"); //A uÅ¾ se na hradÄ› nezaplÃ©tej do Å¾Ã¡dnÃ½ch potÃ­Å¾Ã­!
 	
 			Garond_Schulden			= 0;
 			Garond_LastPetzCounter 	= 0;
@@ -121,9 +121,9 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_13"); //Jedno si vyjasnìme: tak jako tak budeš muset zaplatit pokutu v plné vıši.
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_13"); //Jedno si vyjasnÄ›me: tak jako tak budeÅ¡ muset zaplatit pokutu v plnÃ© vÃ½Å¡i.
 			B_Say_Gold (self, other, Garond_Schulden);
-			AI_Output (self, other, "DIA_Garond_PMSchulden_10_14"); //No, take co?
+			AI_Output (self, other, "DIA_Garond_PMSchulden_10_14"); //No, takÅ¾e co?
 		};
 	};
 	
@@ -132,8 +132,8 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Garond_PMSchulden);
 		Info_ClearChoices  	(DIA_Garond_PETZMASTER);
-		Info_AddChoice		(DIA_Garond_PMSchulden,"Nemám dost penìz!",DIA_Garond_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Garond_PMSchulden,"Kolik e to bylo?",DIA_Garond_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Garond_PMSchulden,"NemÃ¡m dost penÄ›z!",DIA_Garond_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Garond_PMSchulden,"Kolik Å¾e to bylo?",DIA_Garond_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Garond_Schulden)
 		{
 			Info_AddChoice 	(DIA_Garond_PMSchulden,"Chci tu pokutu zaplatit!",DIA_Garond_PETZMASTER_PayNow);
@@ -143,13 +143,13 @@ FUNC VOID DIA_Garond_PMSchulden_Info()
 
 func void DIA_Garond_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Garond_PMSchulden_HowMuchAgain_15_00"); //Kolik e to bylo?
+	AI_Output (other, self, "DIA_Garond_PMSchulden_HowMuchAgain_15_00"); //Kolik Å¾e to bylo?
 	B_Say_Gold (self, other, Garond_Schulden);
 
 	Info_ClearChoices  	(DIA_Garond_PMSchulden);
 	Info_ClearChoices  	(DIA_Garond_PETZMASTER);
-	Info_AddChoice		(DIA_Garond_PMSchulden,"Nemám dost penìz!",DIA_Garond_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Garond_PMSchulden,"Kolik e to bylo?",DIA_Garond_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Garond_PMSchulden,"NemÃ¡m dost penÄ›z!",DIA_Garond_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Garond_PMSchulden,"Kolik Å¾e to bylo?",DIA_Garond_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Garond_Schulden)
 	{
 		Info_AddChoice 	(DIA_Garond_PMSchulden,"Chci tu pokutu zaplatit!",DIA_Garond_PETZMASTER_PayNow);
@@ -181,62 +181,62 @@ FUNC INT DIA_Garond_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Garond_PETZMASTER_Info()
 {
-	Garond_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Garond_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Garond noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_00"); //Take to jsi ty, kdo dìlá na hradì problémy.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_00"); //TakÅ¾e to jsi ty, kdo dÄ›lÃ¡ na hradÄ› problÃ©my.
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_01"); //Øíkal jsem si, kdy za mnou koneènì zavítáš.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_02"); //Vrada je pøesnì to poslední, co tady potøebujeme.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_03"); //Potøebuji kadého ze svıch lidí - a teï mám o jednoho míò!
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_01"); //Å˜Ã­kal jsem si, kdy za mnou koneÄnÄ› zavÃ­tÃ¡Å¡.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_02"); //VraÅ¾da je pÅ™esnÄ› to poslednÃ­, co tady potÅ™ebujeme.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_03"); //PotÅ™ebuji kaÅ¾dÃ©ho ze svÃ½ch lidÃ­ - a teÄ mÃ¡m o jednoho mÃ­Åˆ!
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Garond_Schulden = Garond_Schulden + 500;						//PLUS Mörder-Malus
+		Garond_Schulden = Garond_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_04"); //A to nemluvím o tìch dalších vìcech, do kterıch ses zapletl.
+			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_04"); //A to nemluvÃ­m o tÄ›ch dalÅ¡Ã­ch vÄ›cech, do kterÃ½ch ses zapletl.
 		};
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_05"); //Nìco ti vysvìtlím. Všichni jsme tady ve stejné pasti.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_06"); //A zoufale potøebuji kadého ze svıch muù. Vèetnì tebe.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_07"); //Pokud chceš mermomocí nìkoho zabít, staèí, kdy odejdeš z hradu. Je tam spousta skøetù.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_08"); //Ukládám ti pokutu - i kdy mì vánì štve, e se musím zabıvat vìcmi, jako je tohle.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_05"); //NÄ›co ti vysvÄ›tlÃ­m. VÅ¡ichni jsme tady ve stejnÃ© pasti.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_06"); //A zoufale potÅ™ebuji kaÅ¾dÃ©ho ze svÃ½ch muÅ¾Å¯. VÄetnÄ› tebe.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_07"); //Pokud chceÅ¡ mermomocÃ­ nÄ›koho zabÃ­t, staÄÃ­, kdyÅ¾ odejdeÅ¡ z hradu. Je tam spousta skÅ™etÅ¯.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_08"); //UklÃ¡dÃ¡m ti pokutu - i kdyÅ¾ mÄ› vÃ¡Å¾nÄ› Å¡tve, Å¾e se musÃ­m zabÃ½vat vÄ›cmi, jako je tohle.
 	};		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_09"); //Šušká se, e si tu a tam pøilepšíš z vìcí, které ti neøíkají pane.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_09"); //Å uÅ¡kÃ¡ se, Å¾e si tu a tam pÅ™ilepÅ¡Ã­Å¡ z vÄ›cÃ­, kterÃ© ti neÅ™Ã­kajÃ­ pane.
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_10"); //A to nemluvím o dalších vìcech, které se ke mnì donesly.
+			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_10"); //A to nemluvÃ­m o dalÅ¡Ã­ch vÄ›cech, kterÃ© se ke mnÄ› donesly.
 		};
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_11"); //Z toho se jen tak nevyvlíkneš. Zdá se, e nechápeš vánost naší situace.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_12"); //Budeš muset zaplatit pokutu, která by vyrovnala tvé zloèiny!
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_11"); //Z toho se jen tak nevyvlÃ­kneÅ¡. ZdÃ¡ se, Å¾e nechÃ¡peÅ¡ vÃ¡Å¾nost naÅ¡Ã­ situace.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_12"); //BudeÅ¡ muset zaplatit pokutu, kterÃ¡ by vyrovnala tvÃ© zloÄiny!
 		
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_13"); //Rvaèky mezi mustvem nevidím rád.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_13"); //RvaÄky mezi muÅ¾stvem nevidÃ­m rÃ¡d.
 	
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_14"); //A to s tou ovcí bylo také zcela zbyteèné.
+			AI_Output (self, other, "DIA_Garond_PETZMASTER_10_14"); //A to s tou ovcÃ­ bylo takÃ© zcela zbyteÄnÃ©.
 		};
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_15"); //Take budeš muset zaplatit pokutu!
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_15"); //TakÅ¾e budeÅ¡ muset zaplatit pokutu!
 		
 		
 		Garond_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 
-	// ------ Schaf getötet (es gibt drei Schafe in der Burg) ------
+	// ------ Schaf getÃ¶tet (es gibt drei Schafe in der Burg) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_16"); //Ty jen tak zabíjíš ovce? Patøí nám všem.
-		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_17"); //Zaplatíš mi za to maso.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_16"); //Ty jen tak zabÃ­jÃ­Å¡ ovce? PatÅ™Ã­ nÃ¡m vÅ¡em.
+		AI_Output (self, other, "DIA_Garond_PETZMASTER_10_17"); //ZaplatÃ­Å¡ mi za to maso.
 	
 		
 		Garond_Schulden = 100;
@@ -251,7 +251,7 @@ FUNC VOID DIA_Garond_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Garond_PMSchulden);
 	Info_ClearChoices  	(DIA_Garond_PETZMASTER);
-	Info_AddChoice		(DIA_Garond_PETZMASTER,"Nemám dost penìz!",DIA_Garond_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Garond_PETZMASTER,"NemÃ¡m dost penÄ›z!",DIA_Garond_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Garond_Schulden)
 	{
 		Info_AddChoice 	(DIA_Garond_PETZMASTER,"Chci tu pokutu zaplatit!",DIA_Garond_PETZMASTER_PayNow);
@@ -262,7 +262,7 @@ func void DIA_Garond_PETZMASTER_PayNow()
 {
 	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayNow_15_00"); //Chci tu pokutu zaplatit!
 	B_GiveInvItems (other, self, itmi_gold, Garond_Schulden);
-	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayNow_10_01"); //Dobrá, øeknu chlapcùm, aby se uklidnili. Ale bìda ti, jestli tì ještì jednou pøistihnu pøi nìèem takovém!
+	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayNow_10_01"); //DobrÃ¡, Å™eknu chlapcÅ¯m, aby se uklidnili. Ale bÄ›da ti, jestli tÄ› jeÅ¡tÄ› jednou pÅ™istihnu pÅ™i nÄ›Äem takovÃ©m!
 
 	B_GrantAbsolution (LOC_OLDCAMP);
 	
@@ -276,9 +276,9 @@ func void DIA_Garond_PETZMASTER_PayNow()
 
 func void DIA_Garond_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayLater_15_00"); //Nemám dost penìz!
-	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_01"); //V tom pøípadì by sis mìl nìjaké rychle sehnat.
-	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_02"); //A varuju tì: jestli se zase do nìèeho zapleteš, tak se ta èástka ještì zvıší!
+	AI_Output (other, self, "DIA_Garond_PETZMASTER_PayLater_15_00"); //NemÃ¡m dost penÄ›z!
+	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_01"); //V tom pÅ™Ã­padÄ› by sis mÄ›l nÄ›jakÃ© rychle sehnat.
+	AI_Output (self, other, "DIA_Garond_PETZMASTER_PayLater_10_02"); //A varuju tÄ›: jestli se zase do nÄ›Äeho zapleteÅ¡, tak se ta ÄÃ¡stka jeÅ¡tÄ› zvÃ½Å¡Ã­!
 	
 	Garond_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Garond_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -308,21 +308,21 @@ FUNC INT DIA_Garond_Hello_Condition()
 };
 FUNC VOID DIA_Garond_Hello_Info()
 {	
-		AI_Output (self ,other,"DIA_Garond_Hello_10_00"); //Odkud jsi pøišel? Nejsi ádnı z horníkù a ani ádnı z mıch muù. No?
-		AI_Output (other ,self,"DIA_Garond_Hello_15_01"); //Pøišel jsem skrz prùsmyk.
-		AI_Output (self ,other,"DIA_Garond_Hello_10_02"); //Skrz prùsmyk...? Ty jsi vánì prošel - u Innose!
+		AI_Output (self ,other,"DIA_Garond_Hello_10_00"); //Odkud jsi pÅ™iÅ¡el? Nejsi Å¾Ã¡dnÃ½ z hornÃ­kÅ¯ a ani Å¾Ã¡dnÃ½ z mÃ½ch muÅ¾Å¯. No?
+		AI_Output (other ,self,"DIA_Garond_Hello_15_01"); //PÅ™iÅ¡el jsem skrz prÅ¯smyk.
+		AI_Output (self ,other,"DIA_Garond_Hello_10_02"); //Skrz prÅ¯smyk...? Ty jsi vÃ¡Å¾nÄ› proÅ¡el - u Innose!
 		
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Garond_Hello_10_03"); //Proè jsi tu cestu podstupoval, mágu?
+			AI_Output (self ,other,"DIA_Garond_Hello_10_03"); //ProÄ jsi tu cestu podstupoval, mÃ¡gu?
 		}
 		else if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self ,other,"DIA_Garond_Hello_10_04"); //Jaké jsou tvoje rozkazy, vojáku?
+			AI_Output (self ,other,"DIA_Garond_Hello_10_04"); //JakÃ© jsou tvoje rozkazy, vojÃ¡ku?
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Garond_Hello_10_05"); //Vrtá mi hlavou, proè by chtìl oldák podstupovat nìco takového. Co tady dìláš?
+			AI_Output (self ,other,"DIA_Garond_Hello_10_05"); //VrtÃ¡ mi hlavou, proÄ by chtÄ›l Å¾oldÃ¡k podstupovat nÄ›co takovÃ©ho. Co tady dÄ›lÃ¡Å¡?
 		};
 };
 
@@ -336,7 +336,7 @@ INSTANCE DIA_Garond_NeedProof (C_INFO)
 	nr			= 1;
 	condition	= DIA_Garond_NeedProof_Condition;
 	information	= DIA_Garond_NeedProof_Info;
-	description = "Pøicházím od lorda Hagena.";
+	description = "PÅ™ichÃ¡zÃ­m od lorda Hagena.";
 };                       
 
 FUNC INT DIA_Garond_NeedProof_Condition()
@@ -351,27 +351,27 @@ FUNC INT DIA_Garond_NeedProof_Condition()
  
 FUNC VOID DIA_Garond_NeedProof_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_00"); //Pøicházím od lorda Hagena. Chce, abych mu donesl dùkaz o pøítomnosti drakù.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_01"); //A to jsi pøišel jen proto, abys jej sebral a zase zmizel?
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_02"); //Pøesnì to jsem mìl v plánu.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_03"); //Take on chce dùkaz? Mùe ho mít. Ale nemùu tì poslat zpátky za lordem Hagenem, ani bych mu øekl o rudì.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_04"); //Poslouchej - lord Hagen se musí bezpodmíneènì dozvìdìt o zdejší situaci a o tom, kolik rudy se nám podaøilo vydolovat.
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_05"); //Dobrá, co chceš, abych pro tebe udìlal?
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_06"); //Mám tam tøi skupiny horníkù, ale ještì jsem od nich nevidìl ani zrnko.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_07"); //Obejdi všechny doly a nahlas mi, kolik rudy u mají.
-	AI_Output (self ,other,"DIA_Garond_NeedProof_10_08"); //Pak ti napíšu dopis, kterı doneseš zpátky lordu Hagenovi.
-	AI_Output (other,self ,"DIA_Garond_NeedProof_15_09"); //Dobrá. Zdá se, e nemám na vıbìr.
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_00"); //PÅ™ichÃ¡zÃ­m od lorda Hagena. Chce, abych mu donesl dÅ¯kaz o pÅ™Ã­tomnosti drakÅ¯.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_01"); //A to jsi pÅ™iÅ¡el jen proto, abys jej sebral a zase zmizel?
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_02"); //PÅ™esnÄ› to jsem mÄ›l v plÃ¡nu.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_03"); //TakÅ¾e on chce dÅ¯kaz? MÅ¯Å¾e ho mÃ­t. Ale nemÅ¯Å¾u tÄ› poslat zpÃ¡tky za lordem Hagenem, aniÅ¾ bych mu Å™ekl o rudÄ›.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_04"); //Poslouchej - lord Hagen se musÃ­ bezpodmÃ­neÄnÄ› dozvÄ›dÄ›t o zdejÅ¡Ã­ situaci a o tom, kolik rudy se nÃ¡m podaÅ™ilo vydolovat.
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_05"); //DobrÃ¡, co chceÅ¡, abych pro tebe udÄ›lal?
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_06"); //MÃ¡m tam tÅ™i skupiny hornÃ­kÅ¯, ale jeÅ¡tÄ› jsem od nich nevidÄ›l ani zrnko.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_07"); //Obejdi vÅ¡echny doly a nahlas mi, kolik rudy uÅ¾ majÃ­.
+	AI_Output (self ,other,"DIA_Garond_NeedProof_10_08"); //Pak ti napÃ­Å¡u dopis, kterÃ½ doneseÅ¡ zpÃ¡tky lordu Hagenovi.
+	AI_Output (other,self ,"DIA_Garond_NeedProof_15_09"); //DobrÃ¡. ZdÃ¡ se, Å¾e nemÃ¡m na vÃ½bÄ›r.
 	
 	MIS_ScoutMine = LOG_RUNNING;
 	B_StartOtherRoutine (Jergan,"FAJETH");
 	
-	B_LogEntry (TOPIC_MISOLDWORLD,"Ještì ne mì velitel Garond pošle zpátky, chce, abych nalezl tøi skupiny kopáèù a zjistil, kolik rudy u získali.");
+	B_LogEntry (TOPIC_MISOLDWORLD,"JeÅ¡tÄ› neÅ¾ mÄ› velitel Garond poÅ¡le zpÃ¡tky, chce, abych nalezl tÅ™i skupiny kopÃ¡ÄÅ¯ a zjistil, kolik rudy uÅ¾ zÃ­skali.");
 	
 	Log_CreateTopic (TOPIC_ScoutMine,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_ScoutMine,LOG_RUNNING);
 	
-	B_LogEntry (TOPIC_ScoutMine,"Velitel Garond mì povìøil dalším posláním. U pøed èasem vyslal tøi oddíly kopáèù, kteøí mìli pátrat po magické rudì, ale nikdo z nich se dosud nevrátil.");
-	B_LogEntry (TOPIC_ScoutMine,"Musím ty ztracené oddíly najít a zjistit, kolik rudy u se jim podaøilo vytìit.");
+	B_LogEntry (TOPIC_ScoutMine,"Velitel Garond mÄ› povÄ›Å™il dalÅ¡Ã­m poslÃ¡nÃ­m. UÅ¾ pÅ™ed Äasem vyslal tÅ™i oddÃ­ly kopÃ¡ÄÅ¯, kteÅ™Ã­ mÄ›li pÃ¡trat po magickÃ© rudÄ›, ale nikdo z nich se dosud nevrÃ¡til.");
+	B_LogEntry (TOPIC_ScoutMine,"MusÃ­m ty ztracenÃ© oddÃ­ly najÃ­t a zjistit, kolik rudy uÅ¾ se jim podaÅ™ilo vytÄ›Å¾it.");
 
 };
 // ************************************************************
@@ -385,7 +385,7 @@ INSTANCE DIA_Garond_Why (C_INFO)
 	condition	= DIA_Garond_Why_Condition;
 	information	= DIA_Garond_Why_Info;
 	permanent	= FALSE;
-	description = "Ale proè zrovna já?";
+	description = "Ale proÄ zrovna jÃ¡?";
 };                       
 
 FUNC INT DIA_Garond_Why_Condition()
@@ -398,12 +398,12 @@ FUNC INT DIA_Garond_Why_Condition()
 };
 FUNC VOID DIA_Garond_Why_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Why_15_00"); //Ale proè zrovna já?
-	AI_Output (self ,other,"DIA_Garond_Why_10_01"); //Protoe víš, jak proklouznout mezi skøety. Moji chlapci by tam byli beznadìjnì ztracení.
-	AI_Output (self ,other,"DIA_Garond_Why_10_02"); //Ty jsi mezi nimi ale u jednou prošel - to je nejlepší dùkaz, e jsi pro tenhle úkol ten pravı.
+	AI_Output (other,self ,"DIA_Garond_Why_15_00"); //Ale proÄ zrovna jÃ¡?
+	AI_Output (self ,other,"DIA_Garond_Why_10_01"); //ProtoÅ¾e vÃ­Å¡, jak proklouznout mezi skÅ™ety. Moji chlapci by tam byli beznadÄ›jnÄ› ztracenÃ­.
+	AI_Output (self ,other,"DIA_Garond_Why_10_02"); //Ty jsi mezi nimi ale uÅ¾ jednou proÅ¡el - to je nejlepÅ¡Ã­ dÅ¯kaz, Å¾e jsi pro tenhle Ãºkol ten pravÃ½.
 };
 // ************************************************************
-// 			Ausrüstung
+// 			AusrÃ¼stung
 // ************************************************************
 
 INSTANCE DIA_Garond_Equipment (C_INFO)
@@ -413,7 +413,7 @@ INSTANCE DIA_Garond_Equipment (C_INFO)
 	condition	= DIA_Garond_Equipment_Condition;
 	information	= DIA_Garond_Equipment_Info;
 	permanent	= FALSE;
-	description = "Potøebuji nìjaké vybavení.";
+	description = "PotÅ™ebuji nÄ›jakÃ© vybavenÃ­.";
 };                       
 
 FUNC INT DIA_Garond_Equipment_Condition()
@@ -428,18 +428,18 @@ FUNC INT DIA_Garond_Equipment_Condition()
 };
 FUNC VOID DIA_Garond_Equipment_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Equipment_15_00"); //Potøebuji nìjaké vybavení.
+	AI_Output (other,self ,"DIA_Garond_Equipment_15_00"); //PotÅ™ebuji nÄ›jakÃ© vybavenÃ­.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Garond_Equipment_10_01"); //Promluv si s mágem Miltenem, je tady na hradì. On bude vìdìt, co by se ti mohlo hodit.
+		AI_Output (self ,other,"DIA_Garond_Equipment_10_01"); //Promluv si s mÃ¡gem Miltenem, je tady na hradÄ›. On bude vÄ›dÄ›t, co by se ti mohlo hodit.
 	};
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self ,other,"DIA_Garond_Equipment_10_02"); //Promluv si o tom s Tandorem. Dá ti všechno, co budeš potøebovat.
+		AI_Output (self ,other,"DIA_Garond_Equipment_10_02"); //Promluv si o tom s Tandorem. DÃ¡ ti vÅ¡echno, co budeÅ¡ potÅ™ebovat.
 		
 		Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-		B_LogEntry (TOPIC_Trader_OC,"Tandor na hradì obchoduje se zbranìmi.");
+		B_LogEntry (TOPIC_Trader_OC,"Tandor na hradÄ› obchoduje se zbranÄ›mi.");
 	};
 };
 // ************************************************************
@@ -453,7 +453,7 @@ INSTANCE DIA_Garond_zahlen (C_INFO)
 	condition	= DIA_Garond_zahlen_Condition;
 	information	= DIA_Garond_zahlen_Info;
 	permanent	= FALSE;
-	description = "Kolik mi dáš, kdy tvùj úkol splním?";
+	description = "Kolik mi dÃ¡Å¡, kdyÅ¾ tvÅ¯j Ãºkol splnÃ­m?";
 };                       
 
 FUNC INT DIA_Garond_zahlen_Condition()
@@ -467,12 +467,12 @@ FUNC INT DIA_Garond_zahlen_Condition()
 };
 FUNC VOID DIA_Garond_zahlen_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_zahlen_15_00"); //Kolik mi dáš, kdy tvùj úkol splním?
-	AI_Output (self ,other,"DIA_Garond_zahlen_10_01"); //(pohnìvanì) Nejsem zvyklı dohadovat se se oldáky.
-	AI_Output (self ,other,"DIA_Garond_zahlen_10_02"); //Dobrá, zdá se, e nemám na vıbìr. Kdy se o to postaráš, jak je tøeba, dám ti 500 zlatıch.
+	AI_Output (other,self ,"DIA_Garond_zahlen_15_00"); //Kolik mi dÃ¡Å¡, kdyÅ¾ tvÅ¯j Ãºkol splnÃ­m?
+	AI_Output (self ,other,"DIA_Garond_zahlen_10_01"); //(pohnÄ›vanÄ›) Nejsem zvyklÃ½ dohadovat se se Å¾oldÃ¡ky.
+	AI_Output (self ,other,"DIA_Garond_zahlen_10_02"); //DobrÃ¡, zdÃ¡ se, Å¾e nemÃ¡m na vÃ½bÄ›r. KdyÅ¾ se o to postarÃ¡Å¡, jak je tÅ™eba, dÃ¡m ti 500 zlatÃ½ch.
 };
 // ************************************************************
-// 	Wo finde ich die Schürfstellen?
+// 	Wo finde ich die SchÃ¼rfstellen?
 // ************************************************************
 
 INSTANCE DIA_Garond_Wo (C_INFO)
@@ -497,21 +497,21 @@ FUNC INT DIA_Garond_Wo_Condition()
 FUNC VOID DIA_Garond_Wo_Info()
 {		
 	AI_Output (other,self ,"DIA_Garond_Wo_15_00"); //Kde najdu ty doly?
-	AI_Output (self ,other,"DIA_Garond_Wo_10_01"); //Vezmi si tuhle mapu. Jsou na ní zakreslené dvì oblasti, ve kterıch jsou doly.
+	AI_Output (self ,other,"DIA_Garond_Wo_10_01"); //Vezmi si tuhle mapu. Jsou na nÃ­ zakreslenÃ© dvÄ› oblasti, ve kterÃ½ch jsou doly.
 	
 	CreateInvItems (self, ItWr_Map_OldWorld_Oremines_MIS, 1);									
 	B_GiveInvItems (self, other, ItWr_Map_OldWorld_Oremines_MIS, 1);					
 
-	AI_Output (self ,other,"DIA_Garond_Wo_10_02"); //Pokud bys mìl ještì nìjaké dotazy, zeptej se Parcivala. Øekne ti všechno, co bys mìl vìdìt o hornících.
+	AI_Output (self ,other,"DIA_Garond_Wo_10_02"); //Pokud bys mÄ›l jeÅ¡tÄ› nÄ›jakÃ© dotazy, zeptej se Parcivala. Å˜ekne ti vÅ¡echno, co bys mÄ›l vÄ›dÄ›t o hornÃ­cÃ­ch.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Informace o kopáèích mohu získat od paladina Parcivala.");
+	B_LogEntry (TOPIC_ScoutMine,"Informace o kopÃ¡ÄÃ­ch mohu zÃ­skat od paladina Parcivala.");
 };
 
 FUNC VOID B_Garond_OreCounter3 ()
 {		
-	AI_Output (self ,other,"B_Garond_OreCounter3_10_00"); //Zatracenì! Co se to tam dìje? To nás pøišel vyhladit samotnı Beliar?
-	AI_Output (self ,other,"B_Garond_OreCounter3_10_01"); //Moji mui jsou témìø všichni mrtví a s tou trochou rudy, co máme, bychom nezastavili JEDINÉHO SKØETA, NATO CELOU ARMÁDU!
-	AI_Output (self ,other,"B_Garond_OreCounter3_10_02"); //Celá vıprava je odsouzená k záhubì.
+	AI_Output (self ,other,"B_Garond_OreCounter3_10_00"); //ZatracenÄ›! Co se to tam dÄ›je? To nÃ¡s pÅ™iÅ¡el vyhladit samotnÃ½ Beliar?
+	AI_Output (self ,other,"B_Garond_OreCounter3_10_01"); //Moji muÅ¾i jsou tÃ©mÄ›Å™ vÅ¡ichni mrtvÃ­ a s tou trochou rudy, co mÃ¡me, bychom nezastavili JEDINÃ‰HO SKÅ˜ETA, NATOÅ½ CELOU ARMÃDU!
+	AI_Output (self ,other,"B_Garond_OreCounter3_10_02"); //CelÃ¡ vÃ½prava je odsouzenÃ¡ k zÃ¡hubÄ›.
 };
 
 // ************************************************************
@@ -539,11 +539,11 @@ FUNC INT DIA_Garond_Fajeth_Condition()
 FUNC VOID DIA_Garond_Fajeth_Info()
 {		
 	AI_Output (other,self ,"DIA_Garond_Fajeth_15_00"); //Promluvil jsem si s Fajethem.
-	AI_Output (self ,other,"DIA_Garond_Fajeth_10_01"); //Co má na srdci?
-	AI_Output (other,self ,"DIA_Garond_Fajeth_15_02"); //Jeho lidé vydolovali dvì bedny rudy.
-	AI_Output (self ,other,"DIA_Garond_Fajeth_10_03"); //Hmm... dvì bedny? Nepotøebuju dvì bedny - potøebuju DVÌ STOVKY.
- 	AI_Output (other,self ,"DIA_Garond_Fajeth_15_04"); //Mám ti vyøídit, e potøebuje víc muù.
- 	AI_Output (self ,other,"DIA_Garond_Fajeth_10_05"); //Coe? To mám poslat další lidi na jistou smrt? Na to mùe zapomenout.
+	AI_Output (self ,other,"DIA_Garond_Fajeth_10_01"); //Co mÃ¡ na srdci?
+	AI_Output (other,self ,"DIA_Garond_Fajeth_15_02"); //Jeho lidÃ© vydolovali dvÄ› bedny rudy.
+	AI_Output (self ,other,"DIA_Garond_Fajeth_10_03"); //Hmm... dvÄ› bedny? NepotÅ™ebuju dvÄ› bedny - potÅ™ebuju DVÄš STOVKY.
+ 	AI_Output (other,self ,"DIA_Garond_Fajeth_15_04"); //MÃ¡m ti vyÅ™Ã­dit, Å¾e potÅ™ebuje vÃ­c muÅ¾Å¯.
+ 	AI_Output (self ,other,"DIA_Garond_Fajeth_10_05"); //CoÅ¾e? To mÃ¡m poslat dalÅ¡Ã­ lidi na jistou smrt? Na to mÅ¯Å¾e zapomenout.
  	
  	Ore_Counter = (Ore_Counter +1);
  	B_GivePlayerXP (XP_Fajeth_Ore);
@@ -564,7 +564,7 @@ INSTANCE DIA_Garond_Silvestro (C_INFO)
 	condition	= DIA_Garond_Silvestro_Condition;
 	information	= DIA_Garond_Silvestro_Info;
 	permanent	= FALSE;
-	description = "Co se Silvestrova dolu tıèe...";
+	description = "Co se Silvestrova dolu tÃ½Äe...";
 };                       
 
 FUNC INT DIA_Garond_Silvestro_Condition()
@@ -579,12 +579,12 @@ FUNC INT DIA_Garond_Silvestro_Condition()
 };
 FUNC VOID DIA_Garond_Silvestro_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Silvestro_15_00"); //Co se Silvestrova dolu tıèe...
-	AI_Output (self ,other,"DIA_Garond_Silvestro_10_01"); //Vidìl jsi ho? Mluvil jsi s ním?
-	AI_Output (other,self ,"DIA_Garond_Silvestro_15_02"); //Všichni zemøeli. Pøekvapili je dùlní èervi.
-	AI_Output (self ,other,"DIA_Garond_Silvestro_10_03"); //A co ruda? Víš, kolik jí vytìili?
-	AI_Output (other,self ,"DIA_Garond_Silvestro_15_04"); //Podaøilo se jim zachránit pár beden. Jsou v jeskyni poblí cesty mezi hradem a dolem.
-	AI_Output (self ,other,"DIA_Garond_Silvestro_10_05"); //Zatracenì! Byli to vánì dobøí chlapi - nech se Innos slituje nad jejich dušemi.
+	AI_Output (other,self ,"DIA_Garond_Silvestro_15_00"); //Co se Silvestrova dolu tÃ½Äe...
+	AI_Output (self ,other,"DIA_Garond_Silvestro_10_01"); //VidÄ›l jsi ho? Mluvil jsi s nÃ­m?
+	AI_Output (other,self ,"DIA_Garond_Silvestro_15_02"); //VÅ¡ichni zemÅ™eli. PÅ™ekvapili je dÅ¯lnÃ­ Äervi.
+	AI_Output (self ,other,"DIA_Garond_Silvestro_10_03"); //A co ruda? VÃ­Å¡, kolik jÃ­ vytÄ›Å¾ili?
+	AI_Output (other,self ,"DIA_Garond_Silvestro_15_04"); //PodaÅ™ilo se jim zachrÃ¡nit pÃ¡r beden. Jsou v jeskyni poblÃ­Å¾ cesty mezi hradem a dolem.
+	AI_Output (self ,other,"DIA_Garond_Silvestro_10_05"); //ZatracenÄ›! Byli to vÃ¡Å¾nÄ› dobÅ™Ã­ chlapi - nechÅ¥ se Innos slituje nad jejich duÅ¡emi.
 	
 	Ore_Counter = (Ore_Counter +1);
 	B_GivePlayerXP (XP_Silvestro_Ore);
@@ -619,11 +619,11 @@ FUNC INT DIA_Garond_Marcos_Condition()
 FUNC VOID DIA_Garond_Marcos_Info()
 {		
 	AI_Output (other,self ,"DIA_Garond_Marcos_15_00"); //Setkal jsem se s Marcosem.
-	AI_Output (self ,other,"DIA_Garond_Marcos_10_01"); //A? Co hlásí? Kolik rudy pro nás má?
-	AI_Output (other,self ,"DIA_Garond_Marcos_15_02"); //Ètyøi bedny. Opustil dùl, aby dostal rudu do bezpeèí.
-	AI_Output (other,self ,"DIA_Garond_Marcos_15_03"); //Teï ty bedny hlídá v malém údolíèku za skøetími liniemi. ádá ale o posily.
-	AI_Output (self ,other,"DIA_Garond_Marcos_10_04"); //Coe? Jenom ètyøi bedny - a opustil dùl? Sakra, to není dobré.
-	AI_Output (self ,other,"DIA_Garond_Marcos_10_05"); //A teï chce ještì další mue? No dobrá, pošlu mu dva chlapy.
+	AI_Output (self ,other,"DIA_Garond_Marcos_10_01"); //A? Co hlÃ¡sÃ­? Kolik rudy pro nÃ¡s mÃ¡?
+	AI_Output (other,self ,"DIA_Garond_Marcos_15_02"); //ÄŒtyÅ™i bedny. Opustil dÅ¯l, aby dostal rudu do bezpeÄÃ­.
+	AI_Output (other,self ,"DIA_Garond_Marcos_15_03"); //TeÄ ty bedny hlÃ­dÃ¡ v malÃ©m ÃºdolÃ­Äku za skÅ™etÃ­mi liniemi. Å½Ã¡dÃ¡ ale o posily.
+	AI_Output (self ,other,"DIA_Garond_Marcos_10_04"); //CoÅ¾e? Jenom ÄtyÅ™i bedny - a opustil dÅ¯l? Sakra, to nenÃ­ dobrÃ©.
+	AI_Output (self ,other,"DIA_Garond_Marcos_10_05"); //A teÄ chce jeÅ¡tÄ› dalÅ¡Ã­ muÅ¾e? No dobrÃ¡, poÅ¡lu mu dva chlapy.
 	
 	
 	Marcos_Guard1.flags = 0;
@@ -671,15 +671,15 @@ FUNC INT DIA_Garond_Success_Condition()
 FUNC VOID DIA_Garond_Success_Info()
 {		
 	AI_Output (other,self ,"DIA_Garond_Success_15_00"); //A co ten dopis pro lorda Hagena?
-	AI_Output (self ,other,"DIA_Garond_Success_10_01"); //Máme dohromady deset beden rudy - a ztratili jsme dvakrát tolik dobrıch muù.
-	AI_Output (self ,other,"DIA_Garond_Success_10_02"); //Dostaneš svùj dopis. Lord Hagen se o tom MUSÍ dozvìdìt. Tohle údolí je prokleté - hnízdí tady zlo.
+	AI_Output (self ,other,"DIA_Garond_Success_10_01"); //MÃ¡me dohromady deset beden rudy - a ztratili jsme dvakrÃ¡t tolik dobrÃ½ch muÅ¾Å¯.
+	AI_Output (self ,other,"DIA_Garond_Success_10_02"); //DostaneÅ¡ svÅ¯j dopis. Lord Hagen se o tom MUSÃ dozvÄ›dÄ›t. Tohle ÃºdolÃ­ je prokletÃ© - hnÃ­zdÃ­ tady zlo.
 	
 	CreateInvItems (self,ItWr_PaladinLetter_MIS,1);
 	B_GiveInvItems (self,other,ItWr_PaladinLetter_MIS,1);
 	
 	KnowsPaladins_Ore = TRUE;
 	
-	B_LogEntry (TOPIC_MISOLDWORLD,"Velitel Garond mi dal dopis, kterı by mìl bıt dostateènım dùkazem. Musím jej ukázat lordu Hagenovi.");
+	B_LogEntry (TOPIC_MISOLDWORLD,"Velitel Garond mi dal dopis, kterÃ½ by mÄ›l bÃ½t dostateÄnÃ½m dÅ¯kazem. MusÃ­m jej ukÃ¡zat lordu Hagenovi.");
 	
 	MIS_ScoutMine = LOG_SUCCESS;
 	B_GivePlayerXP (XP_ScoutMine);
@@ -711,7 +711,7 @@ FUNC INT DIA_Garond_SLD_Condition()
 FUNC VOID DIA_Garond_SLD_Info()
 {		
 	AI_Output (other,self ,"DIA_Garond_SLD_15_00"); //A co moje mzda?
-	AI_Output (self ,other,"DIA_Garond_SLD_10_01"); //No jo, dobrá. Ještì ti vlastnì dluím nìjaké zlato. Tady je tvoje odmìna.
+	AI_Output (self ,other,"DIA_Garond_SLD_10_01"); //No jo, dobrÃ¡. JeÅ¡tÄ› ti vlastnÄ› dluÅ¾Ã­m nÄ›jakÃ© zlato. Tady je tvoje odmÄ›na.
 	B_GiveInvItems (self, other, itMI_Gold, 500);
 };
 // ************************************************************
@@ -724,7 +724,7 @@ INSTANCE DIA_Garond_Running (C_INFO)
 	condition	= DIA_Garond_Running_Condition;
 	information	= DIA_Garond_Running_Info;
 	permanent	= TRUE;
-	description = "Jak to vypadá?";
+	description = "Jak to vypadÃ¡?";
 };                       
 
 FUNC INT DIA_Garond_Running_Condition()
@@ -738,20 +738,20 @@ FUNC INT DIA_Garond_Running_Condition()
 };
 FUNC VOID DIA_Garond_Running_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Running_15_00"); //Jak to vypadá?
+	AI_Output (other,self ,"DIA_Garond_Running_15_00"); //Jak to vypadÃ¡?
 	
 	if (Ore_Counter == 2) 
 	{
-		AI_Output (self ,other,"DIA_Garond_Running_10_01"); //Teï u jen èekám na zprávy z posledního dolu - a doufám, e to budou dobré zprávy.
+		AI_Output (self ,other,"DIA_Garond_Running_10_01"); //TeÄ uÅ¾ jen ÄekÃ¡m na zprÃ¡vy z poslednÃ­ho dolu - a doufÃ¡m, Å¾e to budou dobrÃ© zprÃ¡vy.
 		
 	}
 	else if (Ore_Counter == 1) 
 	{
-		AI_Output (self ,other,"DIA_Garond_Running_10_02"); //Potøebuji zprávy o tom, jak to vypadá v dalších dvou dolech. Pak se uvidí.
+		AI_Output (self ,other,"DIA_Garond_Running_10_02"); //PotÅ™ebuji zprÃ¡vy o tom, jak to vypadÃ¡ v dalÅ¡Ã­ch dvou dolech. Pak se uvidÃ­.
 	}
 	else //0
 	{
-		AI_Output (self ,other,"DIA_Garond_Running_10_03"); //Mìl by ses vydat hledat ty doly. Zoufale potøebuji zprávy o tom, jak to vypadá s dobıváním rudy.
+		AI_Output (self ,other,"DIA_Garond_Running_10_03"); //MÄ›l by ses vydat hledat ty doly. Zoufale potÅ™ebuji zprÃ¡vy o tom, jak to vypadÃ¡ s dobÃ½vÃ¡nÃ­m rudy.
 	};
 	
 };
@@ -781,14 +781,14 @@ FUNC INT DIA_Garond_Gorn_Condition()
 FUNC VOID DIA_Garond_Gorn_Info()
 {		
 	AI_Output (other,self ,"DIA_Garond_Gorn_15_00"); //Chci, abys pustil Gorna.
-	AI_Output (self ,other,"DIA_Garond_Gorn_10_01"); //Nemùu ho propustit. Spáchal mnoho zloèinù, za které musí pykat.
-	AI_Output (other,self ,"DIA_Garond_Gorn_15_02"); //Mùu za nìj zaplatit jeho pokutu?
-	AI_Output (self ,other,"DIA_Garond_Gorn_10_03"); //To by moná šlo - ale rozhodnì to nebude levné. Za Gorna budu chtít 1000 zlatıch.
-	AI_Output (other,self ,"DIA_Garond_Gorn_15_04"); //To je hodnì penìz.
-	AI_Output (self ,other,"DIA_Garond_Gorn_10_05"); //Gorn se také musí zodpovídat za hodnì vìcí. Pøines mi ty peníze a já Gorna propustím.
+	AI_Output (self ,other,"DIA_Garond_Gorn_10_01"); //NemÅ¯Å¾u ho propustit. SpÃ¡chal mnoho zloÄinÅ¯, za kterÃ© musÃ­ pykat.
+	AI_Output (other,self ,"DIA_Garond_Gorn_15_02"); //MÅ¯Å¾u za nÄ›j zaplatit jeho pokutu?
+	AI_Output (self ,other,"DIA_Garond_Gorn_10_03"); //To by moÅ¾nÃ¡ Å¡lo - ale rozhodnÄ› to nebude levnÃ©. Za Gorna budu chtÃ­t 1000 zlatÃ½ch.
+	AI_Output (other,self ,"DIA_Garond_Gorn_15_04"); //To je hodnÄ› penÄ›z.
+	AI_Output (self ,other,"DIA_Garond_Gorn_10_05"); //Gorn se takÃ© musÃ­ zodpovÃ­dat za hodnÄ› vÄ›cÃ­. PÅ™ines mi ty penÃ­ze a jÃ¡ Gorna propustÃ­m.
 	
 	MIS_RescueGorn = LOG_RUNNING; 
-	B_LogEntry (TOPIC_RescueGorn,"Garond ádá za Gornovo propuštìní tisíc zlaákù.");
+	B_LogEntry (TOPIC_RescueGorn,"Garond Å¾Ã¡dÃ¡ za Gornovo propuÅ¡tÄ›nÃ­ tisÃ­c zlaÅ¥Ã¡kÅ¯.");
 };
 // ************************************************************
 // Gorn freikaufen
@@ -801,7 +801,7 @@ INSTANCE DIA_Garond_Pay (C_INFO)
 	condition	= DIA_Garond_Pay_Condition;
 	information	= DIA_Garond_Pay_Info;
 	permanent	= TRUE;
-	description = "Chci zaplatit za Gornovu svobodu. (Zaplatit 1000 zlaákù)";
+	description = "Chci zaplatit za Gornovu svobodu. (Zaplatit 1000 zlaÅ¥Ã¡kÅ¯)";
 };                       
 FUNC INT DIA_Garond_Pay_Condition()
 {
@@ -814,18 +814,18 @@ FUNC INT DIA_Garond_Pay_Condition()
 };
 FUNC VOID DIA_Garond_Pay_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Pay_15_00"); //Chtìl bych vykoupit Gorna.
+	AI_Output (other,self ,"DIA_Garond_Pay_15_00"); //ChtÄ›l bych vykoupit Gorna.
 	
 	if B_GiveInvItems (other, self, ItMI_Gold, 1000)
 	{
-		AI_Output (self ,other,"DIA_Garond_Pay_10_01"); //Dobrá. Bì za Geroldem a øekni mu, a na mùj rozkaz Gorna propustí.
+		AI_Output (self ,other,"DIA_Garond_Pay_10_01"); //DobrÃ¡. BÄ›Å¾ za Geroldem a Å™ekni mu, aÅ¥ na mÅ¯j rozkaz Gorna propustÃ­.
 		
 		Garond_Kerkerauf = TRUE;
-		B_LogEntry (TOPIC_RescueGorn,"Zaplatil jsem Garondovi. Teï se Gorn mùe dostat z lochu - stráce Gerold ho pustí.");
+		B_LogEntry (TOPIC_RescueGorn,"Zaplatil jsem Garondovi. TeÄ se Gorn mÅ¯Å¾e dostat z lochu - strÃ¡Å¾ce Gerold ho pustÃ­.");
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Garond_Pay_10_02"); //V tom pøípadì mi pøines 1000 zlatıch.
+		AI_Output (self ,other,"DIA_Garond_Pay_10_02"); //V tom pÅ™Ã­padÄ› mi pÅ™ines 1000 zlatÃ½ch.
 	};	
 };
 // ************************************************************
@@ -838,7 +838,7 @@ INSTANCE DIA_Garond_Perm2 (C_INFO)
 	condition	= DIA_Garond_Perm2_Condition;
 	information	= DIA_Garond_Perm2_Info;
 	permanent	= TRUE;
-	description = "Co budeš dìlat teï?";
+	description = "Co budeÅ¡ dÄ›lat teÄ?";
 };                       
 
 FUNC INT DIA_Garond_Perm2_Condition()
@@ -851,9 +851,9 @@ FUNC INT DIA_Garond_Perm2_Condition()
 };
 FUNC VOID DIA_Garond_Perm2_Info()
 {		
-	AI_Output (other,self ,"DIA_Garond_Perm2_15_00"); //Co budeš dìlat teï?
-	AI_Output (self ,other,"DIA_Garond_Perm2_10_01"); //Mám u všeho dost. Moje jediná nadìje jsi teï ty - a e mi lord Hagen pošle posily.
-	AI_Output (self ,other,"DIA_Garond_Perm2_10_02"); //Budeme stát pevnì jako skála a modlit se k Innosovi, aby nás v této temné hodinì nenechal klesnout na mysli.
+	AI_Output (other,self ,"DIA_Garond_Perm2_15_00"); //Co budeÅ¡ dÄ›lat teÄ?
+	AI_Output (self ,other,"DIA_Garond_Perm2_10_01"); //MÃ¡m uÅ¾ vÅ¡eho dost. Moje jedinÃ¡ nadÄ›je jsi teÄ ty - a Å¾e mi lord Hagen poÅ¡le posily.
+	AI_Output (self ,other,"DIA_Garond_Perm2_10_02"); //Budeme stÃ¡t pevnÄ› jako skÃ¡la a modlit se k Innosovi, aby nÃ¡s v tÃ©to temnÃ© hodinÄ› nenechal klesnout na mysli.
 };
 //#####################################################################
 //##
@@ -898,7 +898,7 @@ instance DIA_Garond_WASGIBTSNEUES		(C_INFO)
 	condition	 = 	DIA_Garond_WASGIBTSNEUES_Condition;
 	information	 = 	DIA_Garond_WASGIBTSNEUES_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co je nového?";
+	description	 = 	"Co je novÃ©ho?";
 };
 
 func int DIA_Garond_WASGIBTSNEUES_Condition ()
@@ -911,9 +911,9 @@ func int DIA_Garond_WASGIBTSNEUES_Condition ()
 
 func void DIA_Garond_WASGIBTSNEUES_Info ()
 {
-	AI_Output (other, self, "DIA_Garond_WASGIBTSNEUES_15_00"); //Co je nového?
-	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_01"); //Zatracenì. Co se tady flákáš? Potøebuju ty zatracené posily!
-	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_02"); //Dokonce i Milten opustil hrad. Ale já nepotøebuju míò lidí - potøebuju jich víc!
+	AI_Output (other, self, "DIA_Garond_WASGIBTSNEUES_15_00"); //Co je novÃ©ho?
+	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_01"); //ZatracenÄ›. Co se tady flÃ¡kÃ¡Å¡? PotÅ™ebuju ty zatracenÃ© posily!
+	AI_Output (self, other, "DIA_Garond_WASGIBTSNEUES_10_02"); //Dokonce i Milten opustil hrad. Ale jÃ¡ nepotÅ™ebuju mÃ­Åˆ lidÃ­ - potÅ™ebuju jich vÃ­c!
 };
 //#####################################################################
 //##
@@ -959,7 +959,7 @@ instance DIA_Garond_BACKINKAP4		(C_INFO)
 	condition	 = 	DIA_Garond_BACKINKAP4_Condition;
 	information	 = 	DIA_Garond_BACKINKAP4_Info;
 	Permanent	 =	FALSE;
-	description	 = 	"Jsem zpìt.";
+	description	 = 	"Jsem zpÄ›t.";
 };
 
 func int DIA_Garond_BACKINKAP4_Condition ()
@@ -972,22 +972,22 @@ func int DIA_Garond_BACKINKAP4_Condition ()
 
 func void DIA_Garond_BACKINKAP4_Info ()
 {
-	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_00"); //Jsem zpìt.
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_01"); //No to vidím. Kde jsou ty posily?
-	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_02"); //Lord Hagen pøijde, jakmile vyøídí všechny nezbytné záleitosti. Hodnì se toho stalo.
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_03"); //To mì nezajímá. Mì zajímají vojáci. Skøetù je èím dál tím víc a moc dlouho se u neudríme.
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_04"); //Mui jsou unavení a dochází nám proviant.
-	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_05"); //Pøijelo pár dobrovolníkù.
+	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_00"); //Jsem zpÄ›t.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_01"); //No to vidÃ­m. Kde jsou ty posily?
+	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_02"); //Lord Hagen pÅ™ijde, jakmile vyÅ™Ã­dÃ­ vÅ¡echny nezbytnÃ© zÃ¡leÅ¾itosti. HodnÄ› se toho stalo.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_03"); //To mÄ› nezajÃ­mÃ¡. MÄ› zajÃ­majÃ­ vojÃ¡ci. SkÅ™etÅ¯ je ÄÃ­m dÃ¡l tÃ­m vÃ­c a moc dlouho se uÅ¾ neudrÅ¾Ã­me.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_04"); //MuÅ¾i jsou unavenÃ­ a dochÃ¡zÃ­ nÃ¡m proviant.
+	AI_Output (other, self, "DIA_Garond_BACKINKAP4_15_05"); //PÅ™ijelo pÃ¡r dobrovolnÃ­kÅ¯.
 
 	if (hero.guild == GIL_DJG)
 	{
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_06"); //Myslíš sebe a tìch tvıch pár drakobijcù, co? Mùete nám sice pomoci, ale poøád vás není dost.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_06"); //MyslÃ­Å¡ sebe a tÄ›ch tvÃ½ch pÃ¡r drakobijcÅ¯, co? MÅ¯Å¾ete nÃ¡m sice pomoci, ale poÅ™Ã¡d vÃ¡s nenÃ­ dost.
 	}
 	else
 	{
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_07"); //Myslíš ty drakobijce na dvoøe? Ti nám sice mohou pomoci, ale poøád jich není dost.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_07"); //MyslÃ­Å¡ ty drakobijce na dvoÅ™e? Ti nÃ¡m sice mohou pomoci, ale poÅ™Ã¡d jich nenÃ­ dost.
 	};
-	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_08"); //Jestli Hagen co nejdøív nepošle nìjaké mue, pak za nic neruèím.
+	AI_Output (self, other, "DIA_Garond_BACKINKAP4_10_08"); //Jestli Hagen co nejdÅ™Ã­v nepoÅ¡le nÄ›jakÃ© muÅ¾e, pak za nic neruÄÃ­m.
 
 	B_InitNpcGlobals ();//Joly: zur Sicherheit
 
@@ -998,7 +998,7 @@ func void DIA_Garond_BACKINKAP4_Info ()
 	DJG_Angar_SentToStones = TRUE;
 
 
-	// Die Drachenjäger vom Spielstart verziehen sich in ihr Lager.
+	// Die DrachenjÃ¤ger vom Spielstart verziehen sich in ihr Lager.
 	//-----------------------------------------
 	B_StartOtherRoutine 	(Kjorn,	"START");
 	B_StartOtherRoutine 	(Godar,	"START");
@@ -1022,7 +1022,7 @@ instance DIA_Garond_DragonPlettBericht		(C_INFO)
 	condition	 = 	DIA_Garond_DragonPlettBericht_Condition;
 	information	 = 	DIA_Garond_DragonPlettBericht_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"A co se tıèe tìch drakù...";
+	description	 = 	"A co se tÃ½Äe tÄ›ch drakÅ¯...";
 };
 
 var int DIA_Garond_DragonPlettBericht_NoPerm;
@@ -1044,12 +1044,12 @@ var int Garond_IcedragonKilled_OneTime;
 var int Garond_OricExperte_OneTime;
 func void DIA_Garond_DragonPlettBericht_Info ()
 {
-	B_LogEntry (TOPIC_DRACHENJAGD,"Garond se musí zajímat o to, jak to s draky vypadá, i kdy pùsobí dojmem, e ve skuteènosti mu to mùe bıt ukradené."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"Garond se musÃ­ zajÃ­mat o to, jak to s draky vypadÃ¡, i kdyÅ¾ pÅ¯sobÃ­ dojmem, Å¾e ve skuteÄnosti mu to mÅ¯Å¾e bÃ½t ukradenÃ©."); 
 
 	if (Garond_DragonCounter < MIS_KilledDragons)
 	{
-		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_00"); //Mám zprávy o dracích.
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_01"); //Podej hlášení.
+		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_00"); //MÃ¡m zprÃ¡vy o dracÃ­ch.
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_01"); //Podej hlÃ¡Å¡enÃ­.
 		
 		var int CurrentDragonCount;
 		var int Drachengeld;
@@ -1060,7 +1060,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(Swampdragon))
 		&& (Garond_SwampdragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_02"); //Zabil jsem draka v bainì na vıchod odsud.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_02"); //Zabil jsem draka v baÅ¾inÄ› na vÃ½chod odsud.
 			Garond_SwampdragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
@@ -1068,7 +1068,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(Rockdragon))
 		&& (Garond_RockdragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_03"); //Drak ve skalní pevnosti na jihu je mrtvı.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_03"); //Drak ve skalnÃ­ pevnosti na jihu je mrtvÃ½.
 			Garond_RockdragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
@@ -1076,7 +1076,7 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(FireDragon))
 		&& (Garond_FireDragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_04"); //Ohnivı drak v sopce na jihu u nebude tropit ádné potíe.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_04"); //OhnivÃ½ drak v sopce na jihu uÅ¾ nebude tropit Å¾Ã¡dnÃ© potÃ­Å¾e.
 			Garond_FireDragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
@@ -1084,12 +1084,12 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 		if (Npc_IsDead(Icedragon))
 		&& (Garond_IcedragonKilled_OneTime == FALSE)
 		{
-			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_05"); //Vydal jsem se do zamrzlé oblasti na západì a zlikvidoval tamního draka.
+			AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_05"); //Vydal jsem se do zamrzlÃ© oblasti na zÃ¡padÄ› a zlikvidoval tamnÃ­ho draka.
 			Garond_IcedragonKilled_OneTime = TRUE;
 			CurrentDragonCount = (CurrentDragonCount + 1);
 		};
 
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_06"); //To jsou dobré zprávy. Tady. Vezmi si nìjaké peníze na doplnìní vıbavy.
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_06"); //To jsou dobrÃ© zprÃ¡vy. Tady. Vezmi si nÄ›jakÃ© penÃ­ze na doplnÄ›nÃ­ vÃ½bavy.
 		
 		DrachenGeld = (CurrentDragonCount * Garond_KilledDragonGeld);
 		XP_LocalGarond =  (CurrentDragonCount * XP_Garond_KilledDragon);
@@ -1111,20 +1111,20 @@ func void DIA_Garond_DragonPlettBericht_Info ()
 	&& ((Npc_IsDead(Oric))	== FALSE)
 	&& (MIS_AllDragonsDead == FALSE)
 	{
-		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_07"); //Mùeš mi dát nìjaké další informace o dracích?
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_08"); //Vrásky mi teï dìlají jiné vìci. Oric, mùj dùstojník pøes strategické vìci, ti o tom øekne víc.
-		B_LogEntry (TOPIC_DRACHENJAGD,"Garondùv strategickı dùstojník Oric by pro mì mohl mít nìjaké uiteèné informace."); 
+		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_07"); //MÅ¯Å¾eÅ¡ mi dÃ¡t nÄ›jakÃ© dalÅ¡Ã­ informace o dracÃ­ch?
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_08"); //VrÃ¡sky mi teÄ dÄ›lajÃ­ jinÃ© vÄ›ci. Oric, mÅ¯j dÅ¯stojnÃ­k pÅ™es strategickÃ© vÄ›ci, ti o tom Å™ekne vÃ­c.
+		B_LogEntry (TOPIC_DRACHENJAGD,"GarondÅ¯v strategickÃ½ dÅ¯stojnÃ­k Oric by pro mÄ› mohl mÃ­t nÄ›jakÃ© uÅ¾iteÄnÃ© informace."); 
 		Garond_OricExperte_OneTime = TRUE;
 	}
 	else if (MIS_AllDragonsDead == FALSE)
 	{
-		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_09"); //Provedli draci mezitím nìjakı další útok?
-		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_10"); //Naštìstí ne. Prozatím se drí zpátky.
+		AI_Output (other, self, "DIA_Garond_DragonPlettBericht_15_09"); //Provedli draci mezitÃ­m nÄ›jakÃ½ dalÅ¡Ã­ Ãºtok?
+		AI_Output (self, other, "DIA_Garond_DragonPlettBericht_10_10"); //NaÅ¡tÄ›stÃ­ ne. ProzatÃ­m se drÅ¾Ã­ zpÃ¡tky.
 	};
 };
 
 //*********************************************************************
-//	Ich habe alle drachen getötet
+//	Ich habe alle drachen getÃ¶tet
 //*********************************************************************
 
 ///////////////////////////////////////////////////////////////////////
@@ -1137,7 +1137,7 @@ instance DIA_Garond_AllDragonDead		(C_INFO)
 	condition	 = 	DIA_Garond_AllDragonDead_Condition;
 	information	 = 	DIA_Garond_AllDragonDead_Info;
 	Permanent	 =	FALSE;
-	description	 = 	"Všichni draci u jsou mrtví.";
+	description	 = 	"VÅ¡ichni draci uÅ¾ jsou mrtvÃ­.";
 };
 
 func int DIA_Garond_AllDragonDead_Condition ()
@@ -1152,14 +1152,14 @@ func int DIA_Garond_AllDragonDead_Condition ()
 
 func void DIA_Garond_AllDragonDead_Info ()
 {
-	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_00"); //Všichni draci jsou mrtví.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_01"); //(nevìøícnì) Všichni? Take zlo bylo navdy zaehnáno?
-	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_02"); //Ne, to bohuel ne. Ještì poøád zbıvá jejich vùdce.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_03"); //Copak nebyli draci veliteli skøetù?
-	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_04"); //Ano, to ano, ale mají svého vlastního pána. Toho se musíme také zbavit.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_05"); //Zatracenì, do toho jít nemùu. Musím hlídat rudu, a ještì navíc tu jsou poøád ti skøeti.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_06"); //Budeš se o to muset postarat sám. Nemùu ti pomoci.
-	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_07"); //Nech tì Innos ochraòuje.
+	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_00"); //VÅ¡ichni draci jsou mrtvÃ­.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_01"); //(nevÄ›Å™Ã­cnÄ›) VÅ¡ichni? TakÅ¾e zlo bylo navÅ¾dy zaÅ¾ehnÃ¡no?
+	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_02"); //Ne, to bohuÅ¾el ne. JeÅ¡tÄ› poÅ™Ã¡d zbÃ½vÃ¡ jejich vÅ¯dce.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_03"); //Copak nebyli draci veliteli skÅ™etÅ¯?
+	AI_Output (other, self, "DIA_Garond_AllDragonDead_15_04"); //Ano, to ano, ale majÃ­ svÃ©ho vlastnÃ­ho pÃ¡na. Toho se musÃ­me takÃ© zbavit.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_05"); //ZatracenÄ›, do toho jÃ­t nemÅ¯Å¾u. MusÃ­m hlÃ­dat rudu, a jeÅ¡tÄ› navÃ­c tu jsou poÅ™Ã¡d ti skÅ™eti.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_06"); //BudeÅ¡ se o to muset postarat sÃ¡m. NemÅ¯Å¾u ti pomoci.
+	AI_Output (self, other, "DIA_Garond_AllDragonDead_10_07"); //NechÅ¥ tÄ› Innos ochraÅˆuje.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1172,7 +1172,7 @@ instance DIA_Garond_JanBecomeSmith		(C_INFO)
 	condition	= 	DIA_Garond_JanBecomeSmith_Condition;
 	information	= 	DIA_Garond_JanBecomeSmith_Info;
 	Permanent	=	TRUE;
-	description	= 	"Máme problém s kováøem.";
+	description	= 	"MÃ¡me problÃ©m s kovÃ¡Å™em.";
 };
 
 func int DIA_Garond_JanBecomeSmith_Condition ()
@@ -1186,45 +1186,45 @@ func int DIA_Garond_JanBecomeSmith_Condition ()
 
 func void DIA_Garond_JanBecomeSmith_Info ()
 {
-	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_00"); //Máme problém s kováøem.
-	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_01"); //Jakım kováøem? Pøed chvílí tu byl.
-	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_02"); //On se vrátil? V tom pøípadì mu øekni...
-	AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_03"); //Ne, já mluvím o Janovi.
+	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_00"); //MÃ¡me problÃ©m s kovÃ¡Å™em.
+	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_01"); //JakÃ½m kovÃ¡Å™em? PÅ™ed chvÃ­lÃ­ tu byl.
+	AI_Output			(self ,other, "DIA_Garond_JanBecomeSmith_10_02"); //On se vrÃ¡til? V tom pÅ™Ã­padÄ› mu Å™ekni...
+	AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_03"); //Ne, jÃ¡ mluvÃ­m o Janovi.
 
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_04"); //Je to drakobijec jako já - a je to dobrı kováø.
+		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_04"); //Je to drakobijec jako jÃ¡ - a je to dobrÃ½ kovÃ¡Å™.
 	}
 	else
 	{
-		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_05"); //Jeden z drakobijcù. Je to kováø.
+		AI_Output			(other,self , "DIA_Garond_JanBecomeSmith_15_05"); //Jeden z drakobijcÅ¯. Je to kovÃ¡Å™.
 	};	
 
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_06"); //To je dobøe. Náš pøedchozí kováø zmizel, srab jeden.
-	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_07"); //Jan se o kovárnu rád postará.
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_08"); //Aha. Take si myslíš, e bych mu mìl vìøit.
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_06"); //To je dobÅ™e. NÃ¡Å¡ pÅ™edchozÃ­ kovÃ¡Å™ zmizel, srab jeden.
+	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_07"); //Jan se o kovÃ¡rnu rÃ¡d postarÃ¡.
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_08"); //Aha. TakÅ¾e si myslÃ­Å¡, Å¾e bych mu mÄ›l vÄ›Å™it.
 	AI_Output			(other, self, "DIA_Garond_JanBecomeSmith_15_09"); //Ano.
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_10"); //Pokud si jsi tak jistı, mùeš se za nìj zaruèit.
-	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_11"); //Jestlie bude dìlat nìjaké potíe, budeš se za to zodpovídat ty. Souhlasíš?
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_10"); //Pokud si jsi tak jistÃ½, mÅ¯Å¾eÅ¡ se za nÄ›j zaruÄit.
+	AI_Output			(self, other, "DIA_Garond_JanBecomeSmith_10_11"); //JestliÅ¾e bude dÄ›lat nÄ›jakÃ© potÃ­Å¾e, budeÅ¡ se za to zodpovÃ­dat ty. SouhlasÃ­Å¡?
 	
 	Info_ClearChoices 	(DIA_Garond_JanBecomeSmith);
-	Info_AddChoice 		(DIA_Garond_JanBecomeSmith,"Budu o tom pøemıšlet.",DIA_Garond_JanBecomeSmith_No);
-	Info_AddChoice		(DIA_Garond_JanBecomeSmith,"Zaruèím se za Jana.",DIA_Garond_JanBecomeSmith_Yes); 		
+	Info_AddChoice 		(DIA_Garond_JanBecomeSmith,"Budu o tom pÅ™emÃ½Å¡let.",DIA_Garond_JanBecomeSmith_No);
+	Info_AddChoice		(DIA_Garond_JanBecomeSmith,"ZaruÄÃ­m se za Jana.",DIA_Garond_JanBecomeSmith_Yes); 		
 };
 
 FUNC VOID DIA_Garond_JanBecomeSmith_No ()
 {
-	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_No_15_00"); //Budu o tom pøemıšlet.
-	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_01"); //Jak mu mám vìøit já, kdy mu nedùvìøuješ ani ty sám?
-	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_02"); //Pokud se za toho tvého Jana nikdo nepostaví, bude muset dret ruce od vıhnì dál.
+	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_No_15_00"); //Budu o tom pÅ™emÃ½Å¡let.
+	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_01"); //Jak mu mÃ¡m vÄ›Å™it jÃ¡, kdyÅ¾ mu nedÅ¯vÄ›Å™ujeÅ¡ ani ty sÃ¡m?
+	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_No_10_02"); //Pokud se za toho tvÃ©ho Jana nikdo nepostavÃ­, bude muset drÅ¾et ruce od vÃ½hnÄ› dÃ¡l.
 
 	Info_ClearChoices 	(DIA_Garond_JanBecomeSmith);
 };
 
 FUNC VOID DIA_Garond_JanBecomeSmith_Yes()
 {
-	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_Yes_15_00"); //Zaruèím se za Jana.
-	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_Yes_10_01"); //Dobrá. V tom pøípadì mùe kovárnu pouívat. Samozøejmì také bude muset udìlat meèe pro mé mue.
+	AI_Output (other,self ,"DIA_Garond_JanBecomeSmith_Yes_15_00"); //ZaruÄÃ­m se za Jana.
+	AI_Output (self ,other,"DIA_Garond_JanBecomeSmith_Yes_10_01"); //DobrÃ¡. V tom pÅ™Ã­padÄ› mÅ¯Å¾e kovÃ¡rnu pouÅ¾Ã­vat. SamozÅ™ejmÄ› takÃ© bude muset udÄ›lat meÄe pro mÃ© muÅ¾e.
 	
 	Info_ClearChoices 	(DIA_Garond_JanBecomeSmith);
 	MIS_JanBecomesSmith = LOG_SUCCESS; 
@@ -1289,16 +1289,16 @@ func int DIA_Garond_PERM5_Condition ()
 
 func void DIA_Garond_PERM5_Info ()
 {
-	AI_Output			(other, self, "DIA_Garond_PERM5_15_00"); //Jak to vypadá?
+	AI_Output			(other, self, "DIA_Garond_PERM5_15_00"); //Jak to vypadÃ¡?
 
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Garond_PERM5_10_01"); //Zatracenì! Nìjakı parchant nechal hlavní bránu otevøenou. Teï je z nás krmení pro vlky.
-	AI_Output			(self, other, "DIA_Garond_PERM5_10_02"); //A dostanu toho zrádce do rukou...
+	AI_Output			(self, other, "DIA_Garond_PERM5_10_01"); //ZatracenÄ›! NÄ›jakÃ½ parchant nechal hlavnÃ­ brÃ¡nu otevÅ™enou. TeÄ je z nÃ¡s krmenÃ­ pro vlky.
+	AI_Output			(self, other, "DIA_Garond_PERM5_10_02"); //AÅ¾ dostanu toho zrÃ¡dce do rukou...
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Garond_PERM5_10_03"); //Pokud Hagen nepøijde co nejdøív, pochcípáme tady jako mouchy.
+	AI_Output			(self, other, "DIA_Garond_PERM5_10_03"); //Pokud Hagen nepÅ™ijde co nejdÅ™Ã­v, pochcÃ­pÃ¡me tady jako mouchy.
 	};
 };
 

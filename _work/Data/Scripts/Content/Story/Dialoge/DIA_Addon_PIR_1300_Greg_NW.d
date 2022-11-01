@@ -53,29 +53,29 @@ func int DIA_Addon_Greg_NW_Hallo_Condition ()
 func void DIA_Addon_Greg_NW_Hallo_Info ()
 {
 
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_00"); //Sst ñ hej, ty, pojÔ sem!
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_00"); //Sst ‚Äì hej, ty, pojƒè sem!
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_Hallo_15_01"); //Co je?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_02"); //Jdeö do mÏsta? A seö furt v jednom kole, co?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_03"); //(podlÈzavÏ) Poslyö, vypad·ö jako chytrej chlap. VsadÌm se, ûe to dot·hneö daleko.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_04"); //UrËitÏ se nenech·ö jen tak oblbnout. To pozn·m hned na prvnÌ pohled.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_05"); //PovÏz, nechtÏl by sis vydÏlat p·r zlaù·k˘?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_02"); //Jde≈° do mƒõsta? A se≈° furt v jednom kole, co?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_03"); //(podl√©zavƒõ) Posly≈°, vypad√°≈° jako chytrej chlap. Vsad√≠m se, ≈æe to dot√°hne≈° daleko.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_04"); //Urƒçitƒõ se nenech√°≈° jen tak oblbnout. To pozn√°m hned na prvn√≠ pohled.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Hallo_01_05"); //Povƒõz, nechtƒõl by sis vydƒõlat p√°r zla≈•√°k≈Ø?
 
 	PlayerTalkedToGregNW	= TRUE;
 	SC_MeetsGregTime = 1; //Joly: erste Mal getroffen.
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Hallo);
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "K tÏm mÏstsk˝m str·ûÌm...", DIA_Addon_Greg_NW_Hallo_weg );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "P¯estaÚ kecat kraviny a vyklop, co vÌö.", DIA_Addon_Greg_NW_Hallo_schleim );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Nevypad·ö jako nÏkdo, komu by v kaps·ch cinkaly zlaù·ky.", DIA_Addon_Greg_NW_Hallo_vorsicht );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Ukr˝v·ö se p¯ed nÏk˝m?", DIA_Addon_Greg_NW_Hallo_hide );
-	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "ProË ne?", DIA_Addon_Greg_NW_Hallo_ja );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "K tƒõm mƒõstsk√Ωm str√°≈æ√≠m...", DIA_Addon_Greg_NW_Hallo_weg );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "P≈ôesta≈à kecat kraviny a vyklop, co v√≠≈°.", DIA_Addon_Greg_NW_Hallo_schleim );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Nevypad√°≈° jako nƒõkdo, komu by v kaps√°ch cinkaly zla≈•√°ky.", DIA_Addon_Greg_NW_Hallo_vorsicht );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Ukr√Ωv√°≈° se p≈ôed nƒõk√Ωm?", DIA_Addon_Greg_NW_Hallo_hide );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Hallo, "Proƒç ne?", DIA_Addon_Greg_NW_Hallo_ja );
 
 };
 
 func void DIA_Addon_Greg_NW_Hallo_weg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_weg_15_00"); //MusÌm uû jÌt.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_weg_01_01"); //(otr·venÏ) Takûe mi nepom˘ûeö. To ti nezapomenu, k·mo. JeötÏ se sejdeme.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_weg_15_00"); //Mus√≠m u≈æ j√≠t.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_weg_01_01"); //(otr√°venƒõ) Tak≈æe mi nepom≈Ø≈æe≈°. To ti nezapomenu, k√°mo. Je≈°tƒõ se sejdeme.
 
 	AI_StopProcessInfos (self);
 	MIS_Addon_Greg_BringMeToTheCity = LOG_FAILED;
@@ -83,44 +83,44 @@ func void DIA_Addon_Greg_NW_Hallo_weg ()
 
 func void DIA_Addon_Greg_NW_Hallo_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_ja_15_00"); //ProË ne?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_01"); //Odpusù nevzdÏlan˝mu n·mo¯nÌkovi, jsem tady cizÌ a nevÌm p¯esnÏ, jak to tady chodÌ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_02"); //Tak jsem musel dost bolestivÏ zjistit, ûe v tomhle p¯ÌstavnÌm mÏstÏ si na cizince zrovna nepotrpÏj.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_03"); //(p¯ehnan· sebelÌtost) TeÔ tu stojÌm a nem·m ponÏtÌ, jak se dostat do mÏsta.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_04"); //MusÌm tam vy¯Ìdit jednu fakt d˘leûitou z·leûitost a m˘j z·kaznÌk mi neodpustÌ, kdyû se zpozdÌm, ch·peö?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_05"); //Pom˘ûeö mi najÌt zp˘sob, jak se dostat kolem str·ûÌ, viÔ ûe jo?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_ja_15_00"); //Proƒç ne?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_01"); //Odpus≈• nevzdƒõlan√Ωmu n√°mo≈ôn√≠kovi, jsem tady ciz√≠ a nev√≠m p≈ôesnƒõ, jak to tady chod√≠.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_02"); //Tak jsem musel dost bolestivƒõ zjistit, ≈æe v tomhle p≈ô√≠stavn√≠m mƒõstƒõ si na cizince zrovna nepotrpƒõj.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_03"); //(p≈ôehnan√° sebel√≠tost) Teƒè tu stoj√≠m a nem√°m ponƒõt√≠, jak se dostat do mƒõsta.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_04"); //Mus√≠m tam vy≈ô√≠dit jednu fakt d≈Øle≈æitou z√°le≈æitost a m≈Øj z√°kazn√≠k mi neodpust√≠, kdy≈æ se zpozd√≠m, ch√°pe≈°?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_ja_01_05"); //Pom≈Ø≈æe≈° mi naj√≠t zp≈Øsob, jak se dostat kolem str√°≈æ√≠, viƒè ≈æe jo?
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Hallo);
 	
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Ten divn˝ chlapÌk s p·skou p¯es oko se chce dostat do p¯ÌstavnÌho mÏsta. M·m za¯Ìdit, aby nÏjak proöel p¯es mÏstskÈ str·ûe."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Ten divn√Ω chlap√≠k s p√°skou p≈ôes oko se chce dostat do p≈ô√≠stavn√≠ho mƒõsta. M√°m za≈ô√≠dit, aby nƒõjak pro≈°el p≈ôes mƒõstsk√© str√°≈æe."); 
 	
 	MIS_Addon_Greg_BringMeToTheCity = LOG_RUNNING;
 };
 
 func void DIA_Addon_Greg_NW_Hallo_vorsicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_vorsicht_15_00"); //Nevypad·ö zrovna na boh·Ëe.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_01"); //(p¯ehnan· skromnost) No, urËitÏ se nepohybuju ve stejnejch kruzÌch jako dûentlmen tv˝ho kalibru.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_02"); //Ale urËitÏ nevodmÌtneö malej p¯ÌspÏveËek ke tv˝mu urËitÏ znaËn˝mu majetku.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_03"); //Tak co ty na to? M˘ûu s tebou poËÌtat?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_vorsicht_15_00"); //Nevypad√°≈° zrovna na boh√°ƒçe.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_01"); //(p≈ôehnan√° skromnost) No, urƒçitƒõ se nepohybuju ve stejnejch kruz√≠ch jako d≈æentlmen tv√Ωho kalibru.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_02"); //Ale urƒçitƒõ nevodm√≠tne≈° malej p≈ô√≠spƒõveƒçek ke tv√Ωmu urƒçitƒõ znaƒçn√Ωmu majetku.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_vorsicht_01_03"); //Tak co ty na to? M≈Ø≈æu s tebou poƒç√≠tat?
 
 };
 
 func void DIA_Addon_Greg_NW_Hallo_schleim ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_schleim_15_00"); //P¯estaÚ pl·cat kraviny a radöi vyklop, co chceö.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_01"); //VidÌö? Tohle p¯esnÏ myslÌm.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_02"); //PÏkn˝ ¯eËiËky jeötÏ nikdy nikomu nepomohly.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_03"); //J· vÏdÏl, ûe m·m p¯ed sebou tvrd˝ho vobchodnÌka.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_04"); //Ty seö vobchodnÌk a urËitÏ bys r·d p¯idal nÏco m·lo do mÏöce, co?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_schleim_15_00"); //P≈ôesta≈à pl√°cat kraviny a rad≈°i vyklop, co chce≈°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_01"); //Vid√≠≈°? Tohle p≈ôesnƒõ mysl√≠m.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_02"); //Pƒõkn√Ω ≈ôeƒçiƒçky je≈°tƒõ nikdy nikomu nepomohly.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_03"); //J√° vƒõdƒõl, ≈æe m√°m p≈ôed sebou tvrd√Ωho vobchodn√≠ka.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_schleim_01_04"); //Ty se≈° vobchodn√≠k a urƒçitƒõ bys r√°d p≈ôidal nƒõco m√°lo do mƒõ≈°ce, co?
 };
 
 func void DIA_Addon_Greg_NW_Hallo_hide ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_hide_15_00"); //Ty se p¯ed nÏk˝m skr˝v·ö?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_01"); //JistÏûe ne. To je hloupost. Jen prostÏ radöi stojÌm mezi stromama, aby mi vÌtr nefoukal do ksichtu.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_02"); //Ale co ty? Chceö tu pr·ci?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Hallo_hide_15_00"); //Ty se p≈ôed nƒõk√Ωm skr√Ωv√°≈°?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_01"); //Jistƒõ≈æe ne. To je hloupost. Jen prostƒõ rad≈°i stoj√≠m mezi stromama, aby mi v√≠tr nefoukal do ksichtu.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Hallo_hide_01_02"); //Ale co ty? Chce≈° tu pr√°ci?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -134,7 +134,7 @@ instance DIA_Addon_Greg_NW_Stadtwachen		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_Stadtwachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"K tÏm mÏstsk˝m str·ûÌm...";
+	description	 = 	"K tƒõm mƒõstsk√Ωm str√°≈æ√≠m...";
 };
 
 func int DIA_Addon_Greg_NW_Stadtwachen_Condition ()
@@ -152,11 +152,11 @@ VAR int DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino;
 
 func void DIA_Addon_Greg_NW_Stadtwachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_Stadtwachen_15_00"); //Co se t˝Ëe tÏch mÏstsk˝ch str·ûn˝ch...
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Stadtwachen_01_01"); //Ano? Napad· tÏ nÏco?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_Stadtwachen_15_00"); //Co se t√Ωƒçe tƒõch mƒõstsk√Ωch str√°≈æn√Ωch...
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Stadtwachen_01_01"); //Ano? Napad√° tƒõ nƒõco?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_Stadtwachen);
-	Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Nap¯ed si to musÌm rozmyslet.", DIA_Addon_Greg_NW_Stadtwachen_nochnicht );
+	Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Nap≈ôed si to mus√≠m rozmyslet.", DIA_Addon_Greg_NW_Stadtwachen_nochnicht );
 
 	if (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_geld == FALSE)
 	{
@@ -166,24 +166,24 @@ func void DIA_Addon_Greg_NW_Stadtwachen_Info ()
 	if (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_Schein == FALSE)
 	&& (Npc_HasItems (other,ItWr_Passierschein))
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "M·m p¯Ìstup do mÏsta.", DIA_Addon_Greg_NW_Stadtwachen_Schein );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "M√°m p≈ô√≠stup do mƒõsta.", DIA_Addon_Greg_NW_Stadtwachen_Schein );
 	};
 	
 	if (MIS_Addon_Lester_PickForConstantino != 0)
 	&& (DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "M˘ûeö se tam dostat jako bylink·¯.", DIA_Addon_Greg_NW_Stadtwachen_constantino );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "M≈Ø≈æe≈° se tam dostat jako bylink√°≈ô.", DIA_Addon_Greg_NW_Stadtwachen_constantino );
 	};
 
 	IF	((Npc_HasItems (other,ItAr_BAU_L)) || (Npc_HasItems (other,ItAr_BAU_M)))
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Kdyû si oblÈkneö tenhle selsk˝ odÏv, mÏli by tÏ tam pustit.", DIA_Addon_Greg_NW_Stadtwachen_klamotten );
+		Info_AddChoice	(DIA_Addon_Greg_NW_Stadtwachen, "Kdy≈æ si obl√©kne≈° tenhle selsk√Ω odƒõv, mƒõli by tƒõ tam pustit.", DIA_Addon_Greg_NW_Stadtwachen_klamotten );
 	};
 };
 
 func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_00"); //MÏli by tÏ pustit, kdyû si oblÈkneö tyhle selskÈ öaty.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_00"); //Mƒõli by tƒõ pustit, kdy≈æ si obl√©kne≈° tyhle selsk√© ≈°aty.
 
 	if (Npc_HasItems (other,ItAr_BAU_L))
 	{
@@ -194,8 +194,8 @@ func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 		B_GiveInvItems 		(other, self, ITAR_BAU_M,1);
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_01"); //P¯esnÏ to pot¯ebuju. J· vÏdÏl, ûe s tebou m˘ûu poËÌtat.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_02"); //Nenech·m se otravovat vod nÏkoho, kdo se voblÌk· jako k¯upan, haha.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_01"); //P≈ôesnƒõ to pot≈ôebuju. J√° vƒõdƒõl, ≈æe s tebou m≈Ø≈æu poƒç√≠tat.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_02"); //Nenech√°m se otravovat vod nƒõkoho, kdo se vobl√≠k√° jako k≈ôupan, haha.
 
 	if (Npc_HasItems (self,ItAr_BAU_L))
 	{
@@ -206,47 +206,47 @@ func void DIA_Addon_Greg_NW_Stadtwachen_klamotten ()
 		AI_EquipArmor 		(self,ITAR_BAU_M);
 	};
 	
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_03"); //V˝bornÏ, to bylo fakt skvÏl˝. Tady m·ö slÌbenou vodmÏnu.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_03"); //V√Ωbornƒõ, to bylo fakt skvƒõl√Ω. Tady m√°≈° sl√≠benou vodmƒõnu.
 	
 	CreateInvItems (self, ItMi_Gold, 50);									
 	B_GiveInvItems (self, other, ItMi_Gold, 50);	
 	B_GivePlayerXP (XP_Greg_NW_GiveBauArmor);				
 	
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_04"); //(naötvanÏ) Coûe? Mizernejch 50 zlaù·k˘? To snad nemyslÌö v·ûnÏ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_05"); //(blahosklonnÏ) Zlato nenÌ vöecko, p¯Ìteli. ProzatÌm si je vem.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_06"); //M·m pocit, ûe se jeötÏ brzo uvidÌme.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_07"); //A kdo vÌ? Moûn· ti tu laskavost voplatim. Tak se zatÌm vopatruj.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_15_04"); //(na≈°tvanƒõ) Co≈æe? Mizernejch 50 zla≈•√°k≈Ø? To snad nemysl√≠≈° v√°≈ænƒõ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_05"); //(blahosklonnƒõ) Zlato nen√≠ v≈°ecko, p≈ô√≠teli. Prozat√≠m si je vem.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_06"); //M√°m pocit, ≈æe se je≈°tƒõ brzo uvid√≠me.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_klamotten_01_07"); //A kdo v√≠? Mo≈æn√° ti tu laskavost voplatim. Tak se zat√≠m vopatruj.
 	AI_StopProcessInfos (self);
 
 	Npc_ExchangeRoutine	(self,"Markt");
 
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Dal jsem mu selsk˝ odÏv. V nÏm kolem str·ûÌ snadno projde."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Dal jsem mu selsk√Ω odƒõv. V nƒõm kolem str√°≈æ√≠ snadno projde."); 
 
 	MIS_Addon_Greg_BringMeToTheCity = LOG_SUCCESS;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_15_00"); //To si nap¯ed musÌm rozmyslet.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_01_01"); //(v·ûnÏ) Dob¯e, ale pospÏö si. Nem·m Ëasu nazbyt.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_15_00"); //To si nap≈ôed mus√≠m rozmyslet.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_nochnicht_01_01"); //(v√°≈ænƒõ) Dob≈ôe, ale pospƒõ≈° si. Nem√°m ƒçasu nazbyt.
 	AI_StopProcessInfos (self);
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_Schein ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_Schein_15_00"); //M·m propustku do mÏsta.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_01"); //(cynicky) Ch·pu. A to m·m jako p¯edstÌrat, ûe sem mÌstnÌ vobËan nebo co?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_02"); //(otr·venÏ) Jen se na mÏ koukni, hochu. Tomu nikdo neuvÏ¯Ì.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_Schein_15_00"); //M√°m propustku do mƒõsta.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_01"); //(cynicky) Ch√°pu. A to m√°m jako p≈ôedst√≠rat, ≈æe sem m√≠stn√≠ vobƒçan nebo co?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_Schein_01_02"); //(otr√°venƒõ) Jen se na mƒõ koukni, hochu. Tomu nikdo neuvƒõ≈ô√≠.
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_Schein = TRUE;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_constantino ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_constantino_15_00"); //M˘ûeö se do mÏsta dostat jako sbÏraË bylin.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_constantino_01_01"); //(otr·venÏ) Coûe? To vypad·m, jako ûe v lesÌch sbÌr·m kytiËky?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_constantino_15_00"); //M≈Ø≈æe≈° se do mƒõsta dostat jako sbƒõraƒç bylin.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_constantino_01_01"); //(otr√°venƒõ) Co≈æe? To vypad√°m, jako ≈æe v les√≠ch sb√≠r√°m kytiƒçky?
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_constantino = TRUE;
 };
 func void DIA_Addon_Greg_NW_Stadtwachen_geld ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_geld_15_00"); //A co ˙platek?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_geld_01_01"); //(öibalsky) No, kdyby to ölo, tak uû bych to vyzkouöel.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_Stadtwachen_geld_15_00"); //A co √∫platek?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_Stadtwachen_geld_01_01"); //(≈°ibalsky) No, kdyby to ≈°lo, tak u≈æ bych to vyzkou≈°el.
 	DIA_Addon_Greg_NW_Stadtwachen_ChoiceClose_geld = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -260,7 +260,7 @@ instance DIA_Addon_Greg_NW_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"JeötÏ jedna vÏc...";
+	description	 = 	"Je≈°tƒõ jedna vƒõc...";
 };
 func int DIA_Addon_Greg_NW_PERM_Condition ()
 {
@@ -272,9 +272,9 @@ func int DIA_Addon_Greg_NW_PERM_Condition ()
 };
 func void DIA_Addon_Greg_NW_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_PERM_15_00"); //A eötÏ jedna vÏc...
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_01"); //(dom˝ölivÏ) Hele, k·mo, teÔ tu m·m d˘leûitou pr·ci.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_02"); //(hrozivÏ) PromluvÌme si pozdÏjc, kapiöto?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_PERM_15_00"); //A e≈°tƒõ jedna vƒõc...
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_01"); //(dom√Ω≈°livƒõ) Hele, k√°mo, teƒè tu m√°m d≈Øle≈æitou pr√°ci.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_PERM_01_02"); //(hrozivƒõ) Promluv√≠me si pozdƒõjc, kapi≈°to?
 	AI_StopProcessInfos (self);
 };
 
@@ -308,24 +308,24 @@ func int DIA_Addon_Greg_NW_MeetGregSecondTime_Condition ()
 
 func void DIA_Addon_Greg_NW_MeetGregSecondTime_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_00"); //A heleme se, kohopak to tu m·me?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_00"); //A heleme se, kohopak to tu m√°me?
 
 	if (MIS_Addon_Greg_BringMeToTheCity == LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_01"); //To je to sedlaËisko.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_01"); //To je to sedlaƒçisko.
 	}
 	else if (MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_02"); //Ten chl·pek, co mÏ tak nestydatÏ vodp·lkoval. To m·ö radost, ûe mÏ zase vidÌö, co?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_02"); //Ten chl√°pek, co mƒõ tak nestydatƒõ vodp√°lkoval. To m√°≈° radost, ≈æe mƒõ zase vid√≠≈°, co?
 	}
 	else if (MIS_Addon_Greg_BringMeToTheCity == LOG_RUNNING)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_03"); //(vztekle) J· myslel, ûe mi pom˘ûeö, jenûe ty ses z toho vyvlÌknul.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_04"); //Myslel sis, ûe tam budu trËet nafurt, co?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_05"); //Ale teÔ se uk·ûe. »lovÏk si musÌ pomoct s·m, protoûe nikdo jinej to za nÏj neudÏl·. Jenûe teÔ uû mi jen tak neuteËeö.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_03"); //(vztekle) J√° myslel, ≈æe mi pom≈Ø≈æe≈°, jen≈æe ty ses z toho vyvl√≠knul.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_04"); //Myslel sis, ≈æe tam budu trƒçet nafurt, co?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_05"); //Ale teƒè se uk√°≈æe. ƒålovƒõk si mus√≠ pomoct s√°m, proto≈æe nikdo jinej to za nƒõj neudƒõl√°. Jen≈æe teƒè u≈æ mi jen tak neuteƒçe≈°.
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_06"); //Seö tu zrovna akor·t.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_MeetGregSecondTime_01_06"); //Se≈° tu zrovna akor√°t.
 	SC_SawGregInTaverne = TRUE;
 };
 
@@ -339,7 +339,7 @@ instance DIA_Addon_Greg_NW_wer		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_wer_Condition;
 	information	 = 	DIA_Addon_Greg_NW_wer_Info;
 
-	description	 = 	"Kdo v˘bec jsi?";
+	description	 = 	"Kdo v≈Øbec jsi?";
 };
 
 func int DIA_Addon_Greg_NW_wer_Condition ()
@@ -352,9 +352,9 @@ func int DIA_Addon_Greg_NW_wer_Condition ()
 
 func void DIA_Addon_Greg_NW_wer_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_wer_15_00"); //Kdo v˘bec jsi?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_wer_15_00"); //Kdo v≈Øbec jsi?
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_01"); //Do toho ti nic nejni.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_02"); //Dybysem ti chtÏl ¯Ìct, kdo jsem, uû bysem to asi udÏlal, nemyslÌö?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_wer_01_02"); //Dybysem ti chtƒõl ≈ô√≠ct, kdo jsem, u≈æ bysem to asi udƒõlal, nemysl√≠≈°?
 
 	
 };
@@ -369,7 +369,7 @@ instance DIA_Addon_Greg_NW_was		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_was_Condition;
 	information	 = 	DIA_Addon_Greg_NW_was_Info;
 
-	description	 = 	"Co ode mÏ chceö?";
+	description	 = 	"Co ode mƒõ chce≈°?";
 };
 
 func int DIA_Addon_Greg_NW_was_Condition ()
@@ -382,75 +382,75 @@ func int DIA_Addon_Greg_NW_was_Condition ()
 
 func VOID B_Greg_Search_Dexter ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_00"); //Hled·m jednoho chl·pka. Nikde ve mÏstÏ nenÌ a tihle budiûkniËemovÈ stejnÏ houby vÏdÏj.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_01"); //Je ötÌhlej, m· Ëern˝ vlasy a vobvykle nosÌv· Ëerven˝ brnÏnÌ.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_02"); //Pokud vÌm, bejval vÏznÏm v kolonii. MyslÌm, ûe jeho jmÈno zaËÌn· na D.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_00"); //Hled√°m jednoho chl√°pka. Nikde ve mƒõstƒõ nen√≠ a tihle budi≈ækniƒçemov√© stejnƒõ houby vƒõdƒõj.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_01"); //Je ≈°t√≠hlej, m√° ƒçern√Ω vlasy a vobvykle nos√≠v√° ƒçerven√Ω brnƒõn√≠.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Search_Dexter_01_02"); //Pokud v√≠m, bejval vƒõznƒõm v kolonii. Mysl√≠m, ≈æe jeho jm√©no zaƒç√≠n√° na D.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Muû s p·skou p¯es oko hled· nÏkoho, jehoû jmÈno zaËÌn· na D."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Mu≈æ s p√°skou p≈ôes oko hled√° nƒõkoho, jeho≈æ jm√©no zaƒç√≠n√° na D."); 
 
 	SC_KnowsGregsSearchsDexter = TRUE;
 };
 
 func void DIA_Addon_Greg_NW_was_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_00"); //Co po mnÏ chceö?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_00"); //Co po mnƒõ chce≈°?
 
 	if (MIS_Addon_Greg_BringMeToTheCity != 0)
 	{
-		AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_01"); //JeötÏ po¯·d m·ö problÈmy s mÏstskou str·ûÌ?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_was_01_02"); //(v˝hruûnÏ) ProblÈmy budeö mÌt TY, ty sketo!
+		AI_Output	(other, self, "DIA_Addon_Greg_NW_was_15_01"); //Je≈°tƒõ po≈ô√°d m√°≈° probl√©my s mƒõstskou str√°≈æ√≠?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_was_01_02"); //(v√Ωhru≈ænƒõ) Probl√©my bude≈° m√≠t TY, ty sketo!
 	};	
 
 	B_Greg_Search_Dexter ();
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "To by mohl b˝t Diego.", DIA_Addon_Greg_NW_was_Diego );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "To by mohl b√Ωt Diego.", DIA_Addon_Greg_NW_was_Diego );
 
 	if (Bdt13_Dexter_verraten == TRUE) 
 	|| (Ranger_SCKnowsDexter == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_was, "Nejmenuje se t¯eba Dexter?", DIA_Addon_Greg_NW_was_Dexter );
+		Info_AddChoice	(DIA_Addon_Greg_NW_was, "Nejmenuje se t≈ôeba Dexter?", DIA_Addon_Greg_NW_was_Dexter );
 	};
 	
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Nezn·m nikoho, kdo by tomu popisu odpovÌdal.", DIA_Addon_Greg_NW_was_no );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Nezn√°m nikoho, kdo by tomu popisu odpov√≠dal.", DIA_Addon_Greg_NW_was_no );
 };
 
 func void DIA_Addon_Greg_NW_was_GregUnsicher ()
 {
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_00"); //Jo, to by mohlo bejt vono, ale nevim to jistÏ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_01"); //SpÌö ho pozn·m, aû ho uvidim.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_00"); //Jo, to by mohlo bejt vono, ale nevim to jistƒõ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_GregUnsicher_01_01"); //Sp√≠≈° ho pozn√°m, a≈æ ho uvidim.
 };
 
 func void DIA_Addon_Greg_NW_was_UnNun ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_UnNun_15_00"); //JeötÏ nÏco?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_01"); //(naötvanÏ) Jo, ty ûvanile. EötÏ nÏco.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_02"); //Pot¯ebuju zbranÏ. Pot¯ebuju z·soby. A bodlo by taky Ú·k˝ to zlato.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_UnNun_15_00"); //Je≈°tƒõ nƒõco?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_01"); //(na≈°tvanƒõ) Jo, ty ≈ævanile. E≈°tƒõ nƒõco.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_UnNun_01_02"); //Pot≈ôebuju zbranƒõ. Pot≈ôebuju z√°soby. A bodlo by taky ≈à√°k√Ω to zlato.
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Nem˘ûu ti pomoct.", DIA_Addon_Greg_NW_was_NoHelp );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Z·soby? Vûdyù jsi v hospodÏ.", DIA_Addon_Greg_NW_was_Orlan );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "ZbranÏ? Ty majÌ ûold·ci.", DIA_Addon_Greg_NW_was_SLD );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Tady m·ö 10 zlaù·k˘.", DIA_Addon_Greg_NW_was_HierGold );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Copak jsi ve mÏstÏ nenaöel û·dnÈho obchodnÌka se zbranÏmi?", DIA_Addon_Greg_NW_was_Waffenhaendler );
-	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Zlato? To chceme p¯ece vöichni.", DIA_Addon_Greg_NW_was_Gold );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Nem≈Ø≈æu ti pomoct.", DIA_Addon_Greg_NW_was_NoHelp );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Z√°soby? V≈ædy≈• jsi v hospodƒõ.", DIA_Addon_Greg_NW_was_Orlan );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Zbranƒõ? Ty maj√≠ ≈æold√°ci.", DIA_Addon_Greg_NW_was_SLD );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Tady m√°≈° 10 zla≈•√°k≈Ø.", DIA_Addon_Greg_NW_was_HierGold );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Copak jsi ve mƒõstƒõ nena≈°el ≈æ√°dn√©ho obchodn√≠ka se zbranƒõmi?", DIA_Addon_Greg_NW_was_Waffenhaendler );
+	Info_AddChoice	(DIA_Addon_Greg_NW_was, "Zlato? To chceme p≈ôece v≈°ichni.", DIA_Addon_Greg_NW_was_Gold );
 };
 
 func void DIA_Addon_Greg_NW_was_NoHelp ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_NoHelp_15_00"); //Tak s tÌm ti pomoct nem˘ûu.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_01"); //(naötvanÏ) Radöi rovnou ¯ekni, ûe NECHCEä.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_NoHelp_15_00"); //Tak s t√≠m ti pomoct nem≈Ø≈æu.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_01"); //(na≈°tvanƒõ) Rad≈°i rovnou ≈ôekni, ≈æe NECHCE≈†.
 	
 	if ((MIS_Addon_Greg_BringMeToTheCity == LOG_RUNNING) || (MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED))
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_02"); //To uû je podruh˝, cos mÏ nechal ve ötychu.
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_03"); //D·m ti dobrou radu: dej si po¯·dn˝ho majzla, abysme se uû vÌckr·t nesetkali.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_02"); //To u≈æ je podruh√Ω, cos mƒõ nechal ve ≈°tychu.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_03"); //D√°m ti dobrou radu: dej si po≈ô√°dn√Ωho majzla, abysme se u≈æ v√≠ckr√°t nesetkali.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_04"); //To si piö, ûe si to zapamatuju.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_was_NoHelp_01_04"); //To si pi≈°, ≈æe si to zapamatuju.
 	};	
 	
 	MIS_Addon_Greg_RakeCave = LOG_OBSOLETE;
@@ -463,29 +463,29 @@ func void DIA_Addon_Greg_NW_was_NoHelp ()
 
 func void DIA_Addon_Greg_NW_was_Gold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_00"); //Zlato? To snad chceme vöichni.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_01"); //To by ölo, ale co s nÌm budeö dÏlat? PoËÌt·m, ûe to vöecko prochlast·ö nebo rozfofrujeö v bordelu.
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_02"); //M·ö snad Ú·kej lepöÌ pl·n?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_03"); //(naötvanÏ) Kdybys vÏdÏl, co vöecko jsem udÏlal, zalez bys do nejbliûöÌ dÌry.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_04"); //NebuÔ drzej, nebo ti tu tvojÌ nevym·chanou hubu zav¯u.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_00"); //Zlato? To snad chceme v≈°ichni.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_01"); //To by ≈°lo, ale co s n√≠m bude≈° dƒõlat? Poƒç√≠t√°m, ≈æe to v≈°ecko prochlast√°≈° nebo rozfofruje≈° v bordelu.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Gold_15_02"); //M√°≈° snad ≈à√°kej lep≈°√≠ pl√°n?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_03"); //(na≈°tvanƒõ) Kdybys vƒõdƒõl, co v≈°ecko jsem udƒõlal, zalez bys do nejbli≈æ≈°√≠ d√≠ry.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Gold_01_04"); //Nebuƒè drzej, nebo ti tu tvoj√≠ nevym√°chanou hubu zav≈ôu.
 };
 
 func void DIA_Addon_Greg_NW_was_Waffenhaendler ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Waffenhaendler_15_00"); //To jsi ve mÏstÏ nenaöel obchodnÌka se zbranÏmi?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Waffenhaendler_01_01"); //To nemyslÌö v·ûnÏ! Vûdyù tam prod·vaj samej ömejd!
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Waffenhaendler_15_00"); //To jsi ve mƒõstƒõ nena≈°el obchodn√≠ka se zbranƒõmi?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Waffenhaendler_01_01"); //To nemysl√≠≈° v√°≈ænƒõ! V≈ædy≈• tam prod√°vaj samej ≈°mejd!
 };
 
 func void DIA_Addon_Greg_NW_was_HierGold ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_HierGold_15_00"); //Tady m·ö 10 zlaù·k˘.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_01"); //(smÏje se) Ty naivo, prachy si m˘ûeö nechat. M·m lepöÌ pl·n.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_02"); //Nedaleko vodsuÔ je jeskynÏ! Uû jsem tam byl a na p·r mÌstech tam zahrabal sv˝ vÏci.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_03"); //Ale nem˘ûu tam jÌt s·m, p·Ë je to moc nebezpeËn˝. A tak by se mi öiklo, kdybys mi s tÌm pomoh.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_HierGold_15_00"); //Tady m√°≈° 10 zla≈•√°k≈Ø.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_01"); //(smƒõje se) Ty naivo, prachy si m≈Ø≈æe≈° nechat. M√°m lep≈°√≠ pl√°n.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_02"); //Nedaleko vodsuƒè je jeskynƒõ! U≈æ jsem tam byl a na p√°r m√≠stech tam zahrabal sv√Ω vƒõci.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_HierGold_01_03"); //Ale nem≈Ø≈æu tam j√≠t s√°m, p√°ƒç je to moc nebezpeƒçn√Ω. A tak by se mi ≈°iklo, kdybys mi s t√≠m pomoh.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"NabÌdl jsem muûi s p·skou p¯es oko zlato, ale nechtÏl je. M·m za nÌm jÌt do jeskynÏ."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Nab√≠dl jsem mu≈æi s p√°skou p≈ôes oko zlato, ale nechtƒõl je. M√°m za n√≠m j√≠t do jeskynƒõ."); 
 
 	MIS_Addon_Greg_RakeCave = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Addon_Greg_NW_was);
@@ -493,34 +493,34 @@ func void DIA_Addon_Greg_NW_was_HierGold ()
 
 func void DIA_Addon_Greg_NW_was_SLD ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_SLD_15_00"); //ZbranÏ? éold·ci majÌ zbranÏ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_01"); //ZajÌmav˝. Slyöel jsem, ûe ty kluky najal tlustej sedl·k Onar.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_02"); //(smÏje se) Na suchozemskou krysu to nejni öpatn˝.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_03"); //Nejni to öpatnej n·pad, moûn· bysem je mÏl navötÌvit.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_SLD_15_00"); //Zbranƒõ? ≈Ωold√°ci maj√≠ zbranƒõ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_01"); //Zaj√≠mav√Ω. Sly≈°el jsem, ≈æe ty kluky najal tlustej sedl√°k Onar.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_02"); //(smƒõje se) Na suchozemskou krysu to nejni ≈°patn√Ω.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_SLD_01_03"); //Nejni to ≈°patnej n√°pad, mo≈æn√° bysem je mƒõl nav≈°t√≠vit.
 };
 func void DIA_Addon_Greg_NW_was_Orlan ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Orlan_15_00"); //Z·soby? Vûdyù jsi v hospodÏ.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Orlan_01_01"); //Ten p¯ipitomÏlej hostinskej mi nechce nic d·t, dokud mu to nezaplatim.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Orlan_15_00"); //Z√°soby? V≈ædy≈• jsi v hospodƒõ.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_Orlan_01_01"); //Ten p≈ôipitomƒõlej hostinskej mi nechce nic d√°t, dokud mu to nezaplatim.
 };
 
 func void DIA_Addon_Greg_NW_was_no ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_no_15_00"); //Nezn·m nikoho, kdo by tomu popisu odpovÌdal.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_no_01_01"); //Moûn· to vÌm.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_no_15_00"); //Nezn√°m nikoho, kdo by tomu popisu odpov√≠dal.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_was_no_01_01"); //Mo≈æn√° to v√≠m.
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
 
 func void DIA_Addon_Greg_NW_was_Diego ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Diego_15_00"); //To mluvÌö o Diegovi.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Diego_15_00"); //To mluv√≠≈° o Diegovi.
 	DIA_Addon_Greg_NW_was_GregUnsicher ();
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
 
 func void DIA_Addon_Greg_NW_was_Dexter ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Dexter_15_00"); //Nejmenuje se n·hodou Dexter?
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_was_Dexter_15_00"); //Nejmenuje se n√°hodou Dexter?
 	DIA_Addon_Greg_NW_was_GregUnsicher ();
 	DIA_Addon_Greg_NW_was_UnNun ();
 };
@@ -535,7 +535,7 @@ instance DIA_Addon_Greg_NW_RakeCaveLos		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_RakeCaveLos_Condition;
 	information	 = 	DIA_Addon_Greg_NW_RakeCaveLos_Info;
 
-	description	 = 	"Tak pojÔme do tÈ jeskynÏ.";
+	description	 = 	"Tak pojƒème do t√© jeskynƒõ.";
 };
 
 func int DIA_Addon_Greg_NW_RakeCaveLos_Condition ()
@@ -550,8 +550,8 @@ func int DIA_Addon_Greg_NW_RakeCaveLos_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCaveLos_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveLos_15_00"); //Tak pojÔme do tÈ jeskynÏ.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveLos_01_01"); //PojÔ se mnou.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveLos_15_00"); //Tak pojƒème do t√© jeskynƒõ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveLos_01_01"); //Pojƒè se mnou.
 	AI_StopProcessInfos (self);
 	AI_UseMob			(self,"BENCH",-1);
 	Npc_ExchangeRoutine	(self,"RakeCave");
@@ -562,7 +562,7 @@ func void DIA_Addon_Greg_NW_RakeCaveLos_Info ()
 ///////////////////////////////////////////////////////////////////////
 	func void B_Greg_GoNow()
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_03"); //(velitelsky) Na co Ëek·ö? Padej dovnit¯ a p¯ines mi ty vÏci!
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_03"); //(velitelsky) Na co ƒçek√°≈°? Padej dovnit≈ô a p≈ôines mi ty vƒõci!
 	};
 // --------------------------------------------------------------------
 
@@ -589,17 +589,17 @@ func int DIA_Addon_Greg_NW_RakeCaveThere_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCaveThere_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_00"); //Prima, k·mo, tady je ta jeskynÏ.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_01"); //A tady m·ö krump·Ë.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_00"); //Prima, k√°mo, tady je ta jeskynƒõ.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_01"); //A tady m√°≈° krump√°ƒç.
 	B_GiveInvItems (self, other, itmw_2h_Axe_L_01, 1); //Spitzhacke	
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_02"); //NÏkde jsem to tam zakopal, m·ö to voznaËen˝ k¯Ìûkem.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_02"); //Nƒõkde jsem to tam zakopal, m√°≈° to voznaƒçen√Ω k≈ô√≠≈ækem.
 	B_Greg_GoNow();
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_RakeCaveThere_15_04"); //A co ty?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_05"); //NÏkdo n·m p¯eci musÌ hlÌdat z·da. Tak mazej fofrem dovnit¯.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCaveThere_01_05"); //Nƒõkdo n√°m p≈ôeci mus√≠ hl√≠dat z√°da. Tak mazej fofrem dovnit≈ô.
 
 	Log_CreateTopic (TOPIC_Addon_Greg_NW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Greg_NW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Greg_NW,"Ten chl·pek chce, abych mu v jeskyni naöel jeho vÏci. MÌsto, kde je zakopal, oznaËil k¯Ìûkem. TakÈ mi dal krump·Ë, abych mohl 'poklad' dostat ven."); 
+	B_LogEntry (TOPIC_Addon_Greg_NW,"Ten chl√°pek chce, abych mu v jeskyni na≈°el jeho vƒõci. M√≠sto, kde je zakopal, oznaƒçil k≈ô√≠≈ækem. Tak√© mi dal krump√°ƒç, abych mohl 'poklad' dostat ven."); 
 
 	MIS_Addon_Greg_RakeCave_Day = Wld_GetDay(); 
 };
@@ -630,11 +630,11 @@ func int DIA_Addon_Greg_NW_RakeCavePlundered_Condition ()
 
 func void DIA_Addon_Greg_NW_RakeCavePlundered_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_01_00"); //Co ses tam tak dlouho fl·kal? Uû jsi nÏco naöel?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_01_00"); //Co ses tam tak dlouho fl√°kal? U≈æ jsi nƒõco na≈°el?
 	
 	if (RAKEPLACE[Greg_FirstSecret] == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "Ano. Vykopal jsem mal˝ v·Ëek zlata.", DIA_Addon_Greg_NW_RakeCavePlundered_gold );
+		Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "Ano. Vykopal jsem mal√Ω v√°ƒçek zlata.", DIA_Addon_Greg_NW_RakeCavePlundered_gold );
 	};
 	Info_AddChoice	(DIA_Addon_Greg_NW_RakeCavePlundered, "Ne.", DIA_Addon_Greg_NW_RakeCavePlundered_No );
 };
@@ -643,11 +643,11 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_No ()
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_00"); //Ne.
 	if (RAKEPLACE[Greg_FirstSecret] == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_01"); //ZkouöÌö, co vydrûÌm, co?
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_02"); //(s p¯edstÌranou nevinnostÌ) Nic TAM nebylo.
+		AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_01"); //Zkou≈°√≠≈°, co vydr≈æ√≠m, co?
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_No_15_02"); //(s p≈ôedst√≠ranou nevinnost√≠) Nic TAM nebylo.
 	};	
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_03"); //Ksakru, j· to vÏdÏl. Ti supi jsou rychlejöÌ neû j· ñ uû zase.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_04"); //Ale to nic, br·cho. Musim jÌt, uvidÌme se pozdÏjc.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_03"); //Ksakru, j√° to vƒõdƒõl. Ti supi jsou rychlej≈°√≠ ne≈æ j√° ‚Äì u≈æ zase.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_No_01_04"); //Ale to nic, br√°cho. Musim j√≠t, uvid√≠me se pozdƒõjc.
 	AI_StopProcessInfos (self);
 	GregLocation = Greg_Bigcross;
 	Npc_ExchangeRoutine	(self,"Bigcross");
@@ -656,40 +656,40 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_No ()
 var int B_Greg_RakePlaceBriefing_OneTime;
 func void B_Greg_RakePlaceBriefing ()
 {
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_00"); //Dobr·. V jezÌrku se dvÏma vodop·dama je malinkatej ostr˘vek. Tam by mÏl bejt jeden z mejch ˙kryt˘.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_01"); //DalöÌ dvÏ mÌsta, kde jsem si nÏco zakopal, sou na hornÌch pastvin·ch.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_02"); //Jedno mÌsto je tam za tÌm statkem a dalöÌ je u vodop·d˘, co jsou u vstupu do pr˘smyku.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_03"); //Z polÌ tam naho¯e u statk·¯e tam vedou schody.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_04"); //DalöÌ skr˝ö je v roklinÏ pod tÏma schodama.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_00"); //Dobr√°. V jez√≠rku se dvƒõma vodop√°dama je malinkatej ostr≈Øvek. Tam by mƒõl bejt jeden z mejch √∫kryt≈Ø.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_01"); //Dal≈°√≠ dvƒõ m√≠sta, kde jsem si nƒõco zakopal, sou na horn√≠ch pastvin√°ch.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_02"); //Jedno m√≠sto je tam za t√≠m statkem a dal≈°√≠ je u vodop√°d≈Ø, co jsou u vstupu do pr≈Øsmyku.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_03"); //Z pol√≠ tam naho≈ôe u statk√°≈ôe tam vedou schody.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakePlaceBriefing_01_04"); //Dal≈°√≠ skr√Ω≈° je v roklinƒõ pod tƒõma schodama.
 
 	if (B_Greg_RakePlaceBriefing_OneTime == FALSE)
 	{
-		B_LogEntry (TOPIC_Addon_Greg_NW,"VÏci zakopal na vÌce mÌstech. 1) Na ostr˘vku v jeze¯e se dvÏma vodop·dy. 2) Na hornÌch pastvin·ch za statkem. 3) U vchodu do pr˘smyku u vodop·d˘. 4) V dolinÏ pod schody, kterÈ vedou z polÌ na hornÌch pastvin·ch k velkostatk·¯i. A j· mu m·m vöechny tyhle vÏci vykopat - poËk· na mÏ na k¯iûovatce mezi poli.");
+		B_LogEntry (TOPIC_Addon_Greg_NW,"Vƒõci zakopal na v√≠ce m√≠stech. 1) Na ostr≈Øvku v jeze≈ôe se dvƒõma vodop√°dy. 2) Na horn√≠ch pastvin√°ch za statkem. 3) U vchodu do pr≈Øsmyku u vodop√°d≈Ø. 4) V dolinƒõ pod schody, kter√© vedou z pol√≠ na horn√≠ch pastvin√°ch k velkostatk√°≈ôi. A j√° mu m√°m v≈°echny tyhle vƒõci vykopat - poƒçk√° na mƒõ na k≈ôi≈æovatce mezi poli.");
 		B_Greg_RakePlaceBriefing_OneTime = TRUE;
 	};
 };                                                                                             
                                                                                                
 func void DIA_Addon_Greg_NW_RakeCavePlundered_gold ()                                          
 {                                                                                              
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_00"); //Ano, vykopal jsem mal˝ v·Ëek zlata.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_01"); //(nenasytnÏ) Tak ho naval.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_00"); //Ano, vykopal jsem mal√Ω v√°ƒçek zlata.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_01"); //(nenasytnƒõ) Tak ho naval.
 
 	if ((Npc_HasItems (other,ItSe_GoldPocket25))||(Npc_HasItems (other,ItMi_Gold)>= 25))
 		{	
 			if (B_GiveInvItems (other, self, ItSe_GoldPocket25,1))
 				{
-					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02"); //Tum·ö.
+					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_02"); //Tum√°≈°.
 				}
 			else if (B_GiveInvItems (other, self, ItMi_Gold,25))
 				{
-					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_03"); //Bylo tam 25 zlaù·k˘ ñ tum·ö, vezmi si je.
+					AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_03"); //Bylo tam 25 zla≈•√°k≈Ø ‚Äì tum√°≈°, vezmi si je.
 				};
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_04"); //SkvÏl˝, takûe tam eötÏ sou.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_05"); //Nejseö zas tak nanicovatej.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_06"); //Tak poslyö, zakopal jsem jeötÏ dalöÌ vÏci. A chci, abys mi je naöel.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_04"); //Skvƒõl√Ω, tak≈æe tam e≈°tƒõ sou.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_05"); //Nejse≈° zas tak nanicovatej.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_06"); //Tak posly≈°, zakopal jsem je≈°tƒõ dal≈°√≠ vƒõci. A chci, abys mi je na≈°el.
 			B_Greg_RakePlaceBriefing ();
 			Greg_SuchWeiter = TRUE;
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_07"); //PoËk·m na tebe na k¯iûovatce u statk·¯ovejch polÌ. A snaû se mÏ nezklamat, jinak toho budeö litovat, k·mo.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_07"); //Poƒçk√°m na tebe na k≈ôi≈æovatce u statk√°≈ôovejch pol√≠. A sna≈æ se mƒõ nezklamat, jinak toho bude≈° litovat, k√°mo.
 			AI_StopProcessInfos (self);
 			GregLocation = Greg_Bigcross;
 			Npc_ExchangeRoutine	(self,"Bigcross");
@@ -697,8 +697,8 @@ func void DIA_Addon_Greg_NW_RakeCavePlundered_gold ()
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_08"); //Uû ho nem·m.
-			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_09"); //Kecy. M·m to z tebe teda vyml·tit?
+			AI_Output			(other, self, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_15_08"); //U≈æ ho nem√°m.
+			AI_Output			(self, other, "DIA_Addon_Greg_NW_RakeCavePlundered_gold_01_09"); //Kecy. M√°m to z tebe teda vyml√°tit?
 			AI_StopProcessInfos (self);
 			MIS_Addon_Greg_RakeCave = LOG_FAILED;//Joly:SC hat Greg angeschissen.
 			GregLocation = Greg_Bigcross;
@@ -749,7 +749,7 @@ instance DIA_Addon_Greg_NW_WhereTreasures		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_WhereTreasures_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"M˘ûeö mi jeötÏ zopakovat, kde p¯esnÏ jsi ty svÈ vÏci zakopal?";
+	description	 = 	"M≈Ø≈æe≈° mi je≈°tƒõ zopakovat, kde p≈ôesnƒõ jsi ty sv√© vƒõci zakopal?";
 };
 
 func int DIA_Addon_Greg_NW_WhereTreasures_Condition ()
@@ -763,7 +763,7 @@ func int DIA_Addon_Greg_NW_WhereTreasures_Condition ()
 
 func void DIA_Addon_Greg_NW_WhereTreasures_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhereTreasures_15_00"); //M˘ûeö mi zopakovat, kde p¯esnÏ jsi svÈ vÏci zakopal?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhereTreasures_15_00"); //M≈Ø≈æe≈° mi zopakovat, kde p≈ôesnƒõ jsi sv√© vƒõci zakopal?
 	B_Greg_RakePlaceBriefing ();
 };
 
@@ -778,7 +778,7 @@ instance DIA_Addon_Greg_NW_PermTaverne		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_PermTaverne_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"JeötÏ jedna vÏc...";
+	description	 = 	"Je≈°tƒõ jedna vƒõc...";
 };
 
 func int DIA_Addon_Greg_NW_PermTaverne_Condition ()
@@ -799,20 +799,20 @@ func int DIA_Addon_Greg_NW_PermTaverne_Condition ()
 
 func void DIA_Addon_Greg_NW_PermTaverne_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_PermTaverne_15_00"); //JeötÏ jedna vÏc...
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_PermTaverne_15_00"); //Je≈°tƒõ jedna vƒõc...
 
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_01"); //Nap¯ed naval m˝ zakopan˝ vÏci, teprv pak se s tebou budu bavit.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_01"); //Nap≈ôed naval m√Ω zakopan√Ω vƒõci, teprv pak se s tebou budu bavit.
 	}
 	else if (MIS_Addon_Greg_RakeCave == LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_02"); //Jsem r·d, ûes mi pomoh. Ale to z n·s eötÏ nedÏl· p¯·tele, esli mi rozumÌö.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_02"); //Jsem r√°d, ≈æes mi pomoh. Ale to z n√°s e≈°tƒõ nedƒõl√° p≈ô√°tele, esli mi rozum√≠≈°.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_03"); //Uû jsme toho ale nakecali dost.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_PermTaverne_01_03"); //U≈æ jsme toho ale nakecali dost.
 	};
 };
 
@@ -851,26 +851,26 @@ func void DIA_Addon_Greg_NW_Bigcross_Info ()
 {
 	if ((MIS_Addon_Greg_BringMeToTheCity == LOG_FAILED)||(MIS_Addon_Greg_RakeCave == LOG_FAILED))
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_00"); //A helemese, nenÌ to n·ö pan Nespolehlivej?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_00"); //A helemese, nen√≠ to n√°≈° pan Nespolehlivej?
 	};
 
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_01"); //Jak to jde?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_02"); //Tak vöelijak. Ti ûold·ci nejsou zrovna moc vochotn˝.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_03"); //»ekal jsem, ûe budou mÌt aspoÚ trochu vÌc kur·ûe.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_04"); //Jenûe je to jen banda velkohubejch chlubil˘, abych pravdu ¯ek.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_02"); //Tak v≈°elijak. Ti ≈æold√°ci nejsou zrovna moc vochotn√Ω.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_03"); //ƒåekal jsem, ≈æe budou m√≠t aspo≈à trochu v√≠c kur√°≈æe.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_04"); //Jen≈æe je to jen banda velkohubejch chlubil≈Ø, abych pravdu ≈ôek.
 	
 	if (MIS_Addon_Greg_RakeCave == LOG_RUNNING)
 	&& (Greg_SuchWeiter == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_05"); //Tak co je s tÏma vÏcma, co jsem zakopal? Uû jsi je naöel?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_05"); //Tak co je s tƒõma vƒõcma, co jsem zakopal? U≈æ jsi je na≈°el?
 		if (RAKEPLACE[1]==FALSE)
 		|| (RAKEPLACE[2]==FALSE)
 		|| (RAKEPLACE[3]==FALSE)
 		|| (RAKEPLACE[4]==FALSE)
 		|| (RAKEPLACE[5]==FALSE)
 		{
-			AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_06"); //Ne, vöechny jeötÏ ne.
-			AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_07"); //Tak hejbni kostrou! Nejni to p¯eci tak tÏûk˝.
+			AI_Output	(other, self, "DIA_Addon_Greg_NW_Bigcross_15_06"); //Ne, v≈°echny je≈°tƒõ ne.
+			AI_Output	(self, other, "DIA_Addon_Greg_NW_Bigcross_01_07"); //Tak hejbni kostrou! Nejni to p≈ôeci tak tƒõ≈æk√Ω.
 		};
 	};	
 };
@@ -885,7 +885,7 @@ instance DIA_Addon_Greg_NW_WhatWantFromSLD		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_WhatWantFromSLD_Condition;
 	information	 = 	DIA_Addon_Greg_NW_WhatWantFromSLD_Info;
 
-	description	 = 	"Co jsi mÏl do ËinÏnÌ se ûold·ky?";
+	description	 = 	"Co jsi mƒõl do ƒçinƒõn√≠ se ≈æold√°ky?";
 };
 
 func int DIA_Addon_Greg_NW_WhatWantFromSLD_Condition ()
@@ -900,7 +900,7 @@ func int DIA_Addon_Greg_NW_WhatWantFromSLD_Condition ()
 
 func void DIA_Addon_Greg_NW_WhatWantFromSLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhatWantFromSLD_15_00"); //Co jsi mÏl do ËinÏnÌ se ûold·ky?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WhatWantFromSLD_15_00"); //Co jsi mƒõl do ƒçinƒõn√≠ se ≈æold√°ky?
 	
 	if (SC_KnowsGregsSearchsDexter == FALSE)
 	{
@@ -908,8 +908,8 @@ func void DIA_Addon_Greg_NW_WhatWantFromSLD_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_01"); //To uû jsem ti ¯ek. Hled·m toho chl·pka v Ëerven˝m brnÏnÌ.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_02"); //Jenûe ti troubovÈ nemaj ani p·ru, kter· bije.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_01"); //To u≈æ jsem ti ≈ôek. Hled√°m toho chl√°pka v ƒçerven√Ωm brnƒõn√≠.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_WhatWantFromSLD_01_02"); //Jen≈æe ti troubov√© nemaj ani p√°ru, kter√° bije.
 	};	
 };
 
@@ -923,7 +923,7 @@ instance DIA_Addon_Greg_NW_DexterFound		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_DexterFound_Condition;
 	information	 = 	DIA_Addon_Greg_NW_DexterFound_Info;
 
-	description	 = 	"Uû to m·m - ty hled·ö chl·pka jmÈnem Dexter.";
+	description	 = 	"U≈æ to m√°m - ty hled√°≈° chl√°pka jm√©nem Dexter.";
 };
 
 func int DIA_Addon_Greg_NW_DexterFound_Condition ()
@@ -938,38 +938,38 @@ func int DIA_Addon_Greg_NW_DexterFound_Condition ()
 
 func void DIA_Addon_Greg_NW_DexterFound_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_DexterFound_15_00"); //Jestli to ch·pu spr·vnÏ, tak hled·ö jistÈho Dextera.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_DexterFound_01_01"); //Sakra, jak m·m vÏdÏt, jak se ten chl·pek jmenuje?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_DexterFound_15_00"); //Jestli to ch√°pu spr√°vnƒõ, tak hled√°≈° jist√©ho Dextera.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_DexterFound_01_01"); //Sakra, jak m√°m vƒõdƒõt, jak se ten chl√°pek jmenuje?
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Byl to jen takov˝ n·pad.", DIA_Addon_Greg_NW_DexterFound_weg );
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Nezajdeme za nÌm spoleËnÏ?", DIA_Addon_Greg_NW_DexterFound_together );
-	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "VÌm, kde ho najdeö.", DIA_Addon_Greg_NW_DexterFound_wo );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Byl to jen takov√Ω n√°pad.", DIA_Addon_Greg_NW_DexterFound_weg );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "Nezajdeme za n√≠m spoleƒçnƒõ?", DIA_Addon_Greg_NW_DexterFound_together );
+	Info_AddChoice	(DIA_Addon_Greg_NW_DexterFound, "V√≠m, kde ho najde≈°.", DIA_Addon_Greg_NW_DexterFound_wo );
 };
 func void DIA_Addon_Greg_NW_DexterFound_weg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_weg_15_00"); //To byl jen takov˝ n·pad.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_weg_15_00"); //To byl jen takov√Ω n√°pad.
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
 };
 
 func void DIA_Addon_Greg_NW_DexterFound_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_00"); //VÌm, kde ho najdeö.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_01"); //(p¯ekvapenÏ) V·ûnÏ? TAK POVÕDEJ!
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_00"); //V√≠m, kde ho najde≈°.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_01"); //(p≈ôekvapenƒõ) V√°≈ænƒõ? TAK POV√çDEJ!
 	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_02"); //Nedaleko odsud.
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_03"); //Vede bandu pÏknÏ vostrejch bandit˘.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_04"); //(uöklÌb· se) HA! Jo, to je von!
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_05"); //J· vÏdÏl, ûe se ta star· suchozemsk· krysa tady nÏkde zakopala!
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_06"); //TeÔ uû pot¯ebuju jen prohledat vöecky zdejöÌ skrejöe a myöÌ dÌry.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_07"); //J· toho hajzla najdu ñ na to tÏ nepot¯ebuju.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_wo_15_03"); //Vede bandu pƒõknƒõ vostrejch bandit≈Ø.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_04"); //(u≈°kl√≠b√° se) HA! Jo, to je von!
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_05"); //J√° vƒõdƒõl, ≈æe se ta star√° suchozemsk√° krysa tady nƒõkde zakopala!
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_06"); //Teƒè u≈æ pot≈ôebuju jen prohledat v≈°ecky zdej≈°√≠ skrej≈°e a my≈°√≠ d√≠ry.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_wo_01_07"); //J√° toho hajzla najdu ‚Äì na to tƒõ nepot≈ôebuju.
 	Info_ClearChoices	(DIA_Addon_Greg_NW_DexterFound);
 	B_GivePlayerXP (XP_Ambient);
 };
 
 func void DIA_Addon_Greg_NW_DexterFound_together ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_together_15_00"); //Co kdybychom za nÌm zaöli spolu?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_together_01_01"); //M·m s nÌm Ú·k˝ nevy¯Ìzen˝ ouËty. To zvl·dnu s·m.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_DexterFound_together_15_00"); //Co kdybychom za n√≠m za≈°li spolu?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_DexterFound_together_01_01"); //M√°m s n√≠m ≈à√°k√Ω nevy≈ô√≠zen√Ω ouƒçty. To zvl√°dnu s√°m.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1003,8 +1003,8 @@ func int DIA_Addon_Greg_NW_CaughtDexter_Condition ()
 
 func void DIA_Addon_Greg_NW_CaughtDexter_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_00"); //(nahlas) Kde je ta svinÏ?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter_15_01"); //Kdo? Kapit·n? Ten je p¯Ìmo tady.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_00"); //(nahlas) Kde je ta svinƒõ?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter_15_01"); //Kdo? Kapit√°n? Ten je p≈ô√≠mo tady.
 	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter_01_02"); //(nahlas) Tak uhni z cesty.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"DexterHouseRun");
@@ -1034,9 +1034,9 @@ func int DIA_Addon_Greg_NW_WodennNu_Condition ()
 
 func void DIA_Addon_Greg_NW_WodennNu_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_00"); //(naötvanÏ) Kam to öel?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_00"); //(na≈°tvanƒõ) Kam to ≈°el?
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_WodennNu_15_01"); //Byl tady.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_02"); //(velitelsky) Tak bÏû a najdi ho!
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WodennNu_01_02"); //(velitelsky) Tak bƒõ≈æ a najdi ho!
 	AI_StopProcessInfos (self);
 };
 
@@ -1063,9 +1063,9 @@ func int DIA_Addon_Greg_NW_CaughtDexter2_Condition ()
 
 func void DIA_Addon_Greg_NW_CaughtDexter2_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_00"); //¡, Dexter to koupil, co?
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter2_15_01"); //Uû to tak vypad·, ûe je mrtvej.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_02"); //Beztak mu to pat¯ilo. Tak mrkni, co m· u sebe.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_00"); //√Å, Dexter to koupil, co?
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_CaughtDexter2_15_01"); //U≈æ to tak vypad√°, ≈æe je mrtvej.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_CaughtDexter2_01_02"); //Beztak mu to pat≈ôilo. Tak mrkni, co m√° u sebe.
 	Npc_ExchangeRoutine	(self,"DexterHouseWalk");
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -1080,7 +1080,7 @@ instance DIA_Addon_Greg_NW_RavensLetter		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_RavensLetter_Condition;
 	information	 = 	DIA_Addon_Greg_NW_RavensLetter_Info;
 
-	description	 = 	"Dexter u sebe nemÏl nic neû tenhle dopis.";
+	description	 = 	"Dexter u sebe nemƒõl nic ne≈æ tenhle dopis.";
 };
 
 func int DIA_Addon_Greg_NW_RavensLetter_Condition ()
@@ -1096,24 +1096,24 @@ func int DIA_Addon_Greg_NW_RavensLetter_Condition ()
 
 func void DIA_Addon_Greg_NW_RavensLetter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00"); //Dexter u sebe nemÏl nic neû tenhle dopis.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01"); //Ukaû mi ho.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_00"); //Dexter u sebe nemƒõl nic ne≈æ tenhle dopis.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_01"); //Uka≈æ mi ho.
 	B_UseFakeScroll ();
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_02"); //A sakra, to mi v˘bec nepom˘ûe.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03"); //NemÏli jsme ho takle vodkrouhnout.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_04"); //Ty asi nevÌö, jak se dostat p¯es ty hory na severov˝chodÏ vod Khorinidu, co?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_02"); //A sakra, to mi v≈Øbec nepom≈Ø≈æe.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_03"); //Nemƒõli jsme ho takle vodkrouhnout.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_04"); //Ty asi nev√≠≈°, jak se dostat p≈ôes ty hory na severov√Ωchodƒõ vod Khorinidu, co?
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	&& (Saturas_NW.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_05"); //Moûn· nÏjak˝m podzemnÌm tunelem. VodnÌ m·govÈ pr·vÏ studujÌ port·l, kter˝ vede do hor na severov˝chodÏ.
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_06"); //(naötvanÏ) Co je to za pt·kovinu?
-		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_07"); //(posmÏönÏ) Pche. VodnÌ m·govÈ. To nem˘ûeö p¯ijÌt s nÏËÌm lepöÌm?
+		AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_05"); //Mo≈æn√° nƒõjak√Ωm podzemn√≠m tunelem. Vodn√≠ m√°gov√© pr√°vƒõ studuj√≠ port√°l, kter√Ω vede do hor na severov√Ωchodƒõ.
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_06"); //(na≈°tvanƒõ) Co je to za pt√°kovinu?
+		AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_07"); //(posmƒõ≈°nƒõ) Pche. Vodn√≠ m√°gov√©. To nem≈Ø≈æe≈° p≈ôij√≠t s nƒõƒç√≠m lep≈°√≠m?
 	};
 	
 	AI_Output	(other, self, "DIA_Addon_Greg_NW_RavensLetter_15_08"); //Ne.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_09"); //(rezignovanÏ si povzdychne) Takûe tu z˘stanu trËet.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_10"); //Dexter byl moje poslednÌ nadÏje.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_09"); //(rezignovanƒõ si povzdychne) Tak≈æe tu z≈Østanu trƒçet.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_RavensLetter_01_10"); //Dexter byl moje posledn√≠ nadƒõje.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1126,7 +1126,7 @@ instance DIA_Addon_Greg_NW_WasWillstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Greg_NW_WasWillstDu_Condition;
 	information	 = 	DIA_Addon_Greg_NW_WasWillstDu_Info;
 
-	description	 = 	"Co jsi Dexterovi chtÏl?";
+	description	 = 	"Co jsi Dexterovi chtƒõl?";
 };
 
 func int DIA_Addon_Greg_NW_WasWillstDu_Condition ()
@@ -1140,33 +1140,33 @@ func int DIA_Addon_Greg_NW_WasWillstDu_Condition ()
 
 func void DIA_Addon_Greg_NW_WasWillstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_WasWillstDu_15_00"); //Co jsi od Dextera chtÏl?
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_01"); //P¯iöel jsem p¯es hory na severov˝chodÏ tohohle ostrova a teÔ se chci vr·tit zp·tky.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_02"); //Doufal jsem, ûe ten ömejd bude vÏdÏt, jak se tam dostat bez lodi.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_WasWillstDu_15_00"); //Co jsi od Dextera chtƒõl?
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_01"); //P≈ôi≈°el jsem p≈ôes hory na severov√Ωchodƒõ tohohle ostrova a teƒè se chci vr√°tit zp√°tky.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_WasWillstDu_01_02"); //Doufal jsem, ≈æe ten ≈°mejd bude vƒõdƒõt, jak se tam dostat bez lodi.
 
 	Npc_ExchangeRoutine	(self,"DexterThrone");	
 
 	Info_ClearChoices	(DIA_Addon_Greg_NW_WasWillstDu);
-	Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "Co je za tÏmi horami?", DIA_Addon_Greg_NW_WasWillstDu_da );
+	Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "Co je za tƒõmi horami?", DIA_Addon_Greg_NW_WasWillstDu_da );
 	
 	if (Skip_NW.aivar[AIV_TalkedToPlayer]==TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "U p¯Ìstavu jsem vidÏl pir·ta jmÈnem Skip.", DIA_Addon_Greg_NW_WasWillstDu_Skip );
+		Info_AddChoice	(DIA_Addon_Greg_NW_WasWillstDu, "U p≈ô√≠stavu jsem vidƒõl pir√°ta jm√©nem Skip.", DIA_Addon_Greg_NW_WasWillstDu_Skip );
 	};
 };
 
 func void DIA_Addon_Greg_NW_WasWillstDu_da ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_da_15_00"); //Co je za tÏmi horami?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_01"); //Radöi se tam ani nezkouöej dostat.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_02"); //Je to tam pÏknÏ o drûku. Takovej chcÌp·k jako ty by tam dlouho nevydrûel.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_da_15_00"); //Co je za tƒõmi horami?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_01"); //Rad≈°i se tam ani nezkou≈°ej dostat.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_da_01_02"); //Je to tam pƒõknƒõ o dr≈æku. Takovej chc√≠p√°k jako ty by tam dlouho nevydr≈æel.
 };
 
 func void DIA_Addon_Greg_NW_WasWillstDu_Skip ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_Skip_15_00"); //U p¯Ìstavu jsem zahlÌdl pir·ta jmÈnem Skip.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_01"); //Ten mamlas! »ekal jsem tam t¯i dny. ProË p¯iöel tak pozdÏ?
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_02"); //Jen co se trochu zm·to¯Ìm, d·m mu co proto.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_WasWillstDu_Skip_15_00"); //U p≈ô√≠stavu jsem zahl√≠dl pir√°ta jm√©nem Skip.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_01"); //Ten mamlas! ƒåekal jsem tam t≈ôi dny. Proƒç p≈ôi≈°el tak pozdƒõ?
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_WasWillstDu_Skip_01_02"); //Jen co se trochu zm√°to≈ô√≠m, d√°m mu co proto.
 	SC_KnowsConnectionSkipGreg = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -1182,7 +1182,7 @@ instance DIA_Addon_Greg_NW_FoundTreasure		(C_INFO)
 	information	 = 	DIA_Addon_Greg_NW_FoundTreasure_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Naöel jsem tvÈ zakopanÈ vÏci.";
+	description	 = 	"Na≈°el jsem tv√© zakopan√© vƒõci.";
 };
 
 func int DIA_Addon_Greg_NW_FoundTreasure_Condition ()
@@ -1201,47 +1201,47 @@ func int DIA_Addon_Greg_NW_FoundTreasure_Condition ()
 
 func void DIA_Addon_Greg_NW_FoundTreasure_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Greg_NW_FoundTreasure_15_00"); //Naöel jsem tvÈ zakopanÈ vÏci.
-	AI_Output	(self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01"); //Pak bys u sebe mÏl mÌt 100 zlatejch, zlatej kalich, st¯Ìbrnou mÌsu a amulet. To vöecko je moje, tak to hezky naval.
+	AI_Output	(other, self, "DIA_Addon_Greg_NW_FoundTreasure_15_00"); //Na≈°el jsem tv√© zakopan√© vƒõci.
+	AI_Output	(self, other, "DIA_Addon_Greg_NW_FoundTreasure_01_01"); //Pak bys u sebe mƒõl m√≠t 100 zlatejch, zlatej kalich, st≈ô√≠brnou m√≠su a amulet. To v≈°ecko je moje, tak to hezky naval.
 	
 	Info_ClearChoices	(DIA_Addon_Greg_NW_FoundTreasure);	
-	Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Nem·m to u sebe.", DIA_Addon_Greg_NW_FoundTreasure_not );
+	Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Nem√°m to u sebe.", DIA_Addon_Greg_NW_FoundTreasure_not );
 
 	if ((Npc_HasItems (other,ItSe_GoldPocket100)) || (Npc_HasItems (other,itmi_gold)>= 100))
 	&& (Npc_HasItems (other,ItMi_GoldCup))
 	&& (Npc_HasItems (other,ItMi_SilverChalice))
 	&& (Npc_HasItems (other,ItAm_Prot_Point_01))
 		{
-			Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Tady m·ö svÈ vÏci.", DIA_Addon_Greg_NW_FoundTreasure_ja );
+			Info_AddChoice	(DIA_Addon_Greg_NW_FoundTreasure, "Tady m√°≈° sv√© vƒõci.", DIA_Addon_Greg_NW_FoundTreasure_ja );
 		};
 };
 func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_00"); //Tady to m·ö.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_00"); //Tady to m√°≈°.
 
 	if (B_GiveInvItems (other, self, ItSe_GoldPocket100,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_01"); //V·Ëek se 100 zlaù·ky.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_01"); //V√°ƒçek se 100 zla≈•√°ky.
 	}	
 	else if (B_GiveInvItems (other, self, ItMi_gold,100))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_02"); //100 zlaù·k˘.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_02"); //100 zla≈•√°k≈Ø.
 	};
 
 	if (B_GiveInvItems (other, self, ItMi_GoldCup,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_03"); //Zlat˝ kalich.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_03"); //Zlat√Ω kalich.
 	};
 	if (B_GiveInvItems (other, self, ItMi_SilverChalice,1))
 	{
-		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_04"); //St¯Ìbrn· mÌsa.
+		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_04"); //St≈ô√≠brn√° m√≠sa.
 	};
 	if (B_GiveInvItems (other, self, ItAm_Prot_Point_01,1))
 	{
 		AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_ja_15_05"); //A amulet.
 	};
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_06"); //V˝bornÏ. M·ö kliku, ûes nebyl tak blbej a nezdrhnul jsi s tÌm.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_07"); //Tady m·ö podÌl z lupu.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_06"); //V√Ωbornƒõ. M√°≈° kliku, ≈æes nebyl tak blbej a nezdrhnul jsi s t√≠m.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_ja_01_07"); //Tady m√°≈° pod√≠l z lupu.
 
 	B_GiveInvItems (self, other, ItMi_gold,30);
 	
@@ -1253,8 +1253,8 @@ func void DIA_Addon_Greg_NW_FoundTreasure_ja ()
 
 func void DIA_Addon_Greg_NW_FoundTreasure_not ()
 {
-	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_not_15_00"); //To u sebe nem·m.
-	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_not_01_01"); //Tak mi koukej ty vÏci p¯in˝st, neû se z toho zcvoknu.
+	AI_Output			(other, self, "DIA_Addon_Greg_NW_FoundTreasure_not_15_00"); //To u sebe nem√°m.
+	AI_Output			(self, other, "DIA_Addon_Greg_NW_FoundTreasure_not_01_01"); //Tak mi koukej ty vƒõci p≈ôin√Ωst, ne≈æ se z toho zcvoknu.
 	AI_StopProcessInfos (self);
 };
 

@@ -51,11 +51,11 @@ FUNC VOID DIA_Igaraz_Hello_Info()
 {
 	if (other.guild == GIL_NOV)
 	{
-		AI_Output (self ,other,"DIA_Igaranz_Hello_13_00"); //Co pro tebe mohu udìlat, bratøe?
+		AI_Output (self ,other,"DIA_Igaranz_Hello_13_00"); //Co pro tebe mohu udÄ›lat, bratÅ™e?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Igaranz_Hello_13_01"); //Co pro tebe mùu udìlat?
+		AI_Output (self ,other,"DIA_Igaranz_Hello_13_01"); //Co pro tebe mÅ¯Å¾u udÄ›lat?
 	};	
 };
 // *************************************************************************
@@ -68,7 +68,7 @@ INSTANCE DIA_Igaraz_Wurst(C_INFO)
 	condition	= DIA_Igaraz_Wurst_Condition;
 	information	= DIA_Igaraz_Wurst_Info;
 	permanent	= FALSE;
-	description = "Nemám èas, musím rozdìlovat klobásy.";
+	description = "NemÃ¡m Äas, musÃ­m rozdÄ›lovat klobÃ¡sy.";
 };                       
 
 FUNC INT DIA_Igaraz_Wurst_Condition()
@@ -84,8 +84,8 @@ FUNC INT DIA_Igaraz_Wurst_Condition()
 
 FUNC VOID DIA_Igaraz_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Igaraz_Wurst_15_00"); //Nemám èas, musím rozdìlovat klobásy.
-	AI_Output (self, other, "DIA_Igaraz_Wurst_13_01"); //Take pracuješ pro Goraxe, co? Tak fajn, dej mi tu klobásu.
+	AI_Output (other, self, "DIA_Igaraz_Wurst_15_00"); //NemÃ¡m Äas, musÃ­m rozdÄ›lovat klobÃ¡sy.
+	AI_Output (self, other, "DIA_Igaraz_Wurst_13_01"); //TakÅ¾e pracujeÅ¡ pro Goraxe, co? Tak fajn, dej mi tu klobÃ¡su.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -109,7 +109,7 @@ INSTANCE DIA_Igaranz_NotWork   (C_INFO)
 	condition   = DIA_Igaraz_NotWork_Condition;
 	information = DIA_Igaraz_NotWork_Info;
 	permanent   = FALSE;
-	description	= "Proè nepracuješ?";
+	description	= "ProÄ nepracujeÅ¡?";
 };
 FUNC INT DIA_Igaraz_NotWork_Condition()
 {	
@@ -122,12 +122,12 @@ FUNC INT DIA_Igaraz_NotWork_Condition()
 };
 FUNC VOID DIA_Igaraz_NotWork_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_NotWork_15_00"); //Proè nepracuješ?
-	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_01"); //Mám dovoleno studovat Innosovy lekce. Hledám moudrost v jeho slovech.
-	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //Jednoho dne si mì vyvolí - a pak projdu zkouškou magie a vstoupím do kruhu ohnì.
+	AI_Output (other,self ,"DIA_Igaranz_NotWork_15_00"); //ProÄ nepracujeÅ¡?
+	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_01"); //MÃ¡m dovoleno studovat Innosovy lekce. HledÃ¡m moudrost v jeho slovech.
+	AI_Output (self ,other,"DIA_Igaranz_NotWork_13_02"); //Jednoho dne si mÄ› vyvolÃ­ - a pak projdu zkouÅ¡kou magie a vstoupÃ­m do kruhu ohnÄ›.
 };
 ///////////////////////////////////////////////////////////////////////
-//Wer sind die Erwählten?
+//Wer sind die ErwÃ¤hlten?
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_Choosen   (C_INFO)
 {
@@ -136,7 +136,7 @@ INSTANCE DIA_Igaranz_Choosen   (C_INFO)
 	condition   = DIA_Igaraz_Choosen_Condition;
 	information = DIA_Igaraz_Choosen_Info;
 	permanent   = TRUE;
-	description	= "Kdo jsou vyvolení?";
+	description	= "Kdo jsou vyvolenÃ­?";
 };
 
 FUNC INT DIA_Igaraz_Choosen_Condition()
@@ -151,14 +151,14 @@ FUNC INT DIA_Igaraz_Choosen_Condition()
 };
 FUNC VOID DIA_Igaraz_Choosen_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_15_00"); //Kdo jsou vyvolení?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_01"); //Novicové, kterım Innos pøikázal projít zkouškou magie.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_02"); //Ten, kdo jí projde, bude pøijat mezi ohnivé mágy.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_15_00"); //Kdo jsou vyvolenÃ­?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_01"); //NovicovÃ©, kterÃ½m Innos pÅ™ikÃ¡zal projÃ­t zkouÅ¡kou magie.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_13_02"); //Ten, kdo jÃ­ projde, bude pÅ™ijat mezi ohnivÃ© mÃ¡gy.
 	
 	Info_ClearChoices (DIA_Igaranz_Choosen);
 	Info_AddChoice 	(DIA_Igaranz_Choosen,Dialog_Back,DIA_Igaranz_Choosen_back);
-	Info_AddChoice	(DIA_Igaranz_Choosen,"Co je ta zkouška magie?",DIA_Igaranz_Choosen_TestOfMagic);
-	Info_AddChoice	(DIA_Igaranz_Choosen,"Jak se mùu stát vyvolenım?",DIA_Igaranz_Choosen_HowChoosen);
+	Info_AddChoice	(DIA_Igaranz_Choosen,"Co je ta zkouÅ¡ka magie?",DIA_Igaranz_Choosen_TestOfMagic);
+	Info_AddChoice	(DIA_Igaranz_Choosen,"Jak se mÅ¯Å¾u stÃ¡t vyvolenÃ½m?",DIA_Igaranz_Choosen_HowChoosen);
 };	
 
 FUNC VOID DIA_Igaranz_Choosen_back ()
@@ -168,19 +168,19 @@ FUNC VOID DIA_Igaranz_Choosen_back ()
 
 FUNC VOID DIA_Igaranz_Choosen_TestOfMagic ()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Co je ta zkouška magie?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_01"); //Zkouška, kterou oznámí nejvyšší rada všem vybranım novicùm.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Je to úkol, bìhem kterého se projeví jejich víra a moudrost.
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_03"); //Úèastní se všichni vybraní novicové - úspìšnì však mùe zkoušku sloit jen jeden z nich.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_TestOfMagic_15_00"); //Co je ta zkouÅ¡ka magie?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_01"); //ZkouÅ¡ka, kterou oznÃ¡mÃ­ nejvyÅ¡Å¡Ã­ rada vÅ¡em vybranÃ½m novicÅ¯m.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_02"); //Je to Ãºkol, bÄ›hem kterÃ©ho se projevÃ­ jejich vÃ­ra a moudrost.
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_TestOfMagic_13_03"); //ÃšÄastnÃ­ se vÅ¡ichni vybranÃ­ novicovÃ© - ÃºspÄ›Å¡nÄ› vÅ¡ak mÅ¯Å¾e zkouÅ¡ku sloÅ¾it jen jeden z nich.
 };
 
 FUNC VOID DIA_Igaranz_Choosen_HowChoosen ()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Choosen_HowChoosen_15_00"); //Jak se mùu stát vyvolenım?
-	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //Na to nemùeš mít ádnı vliv. Své novice si vybírá sám Innos a jeho vùli oznamuje nejvyšší rada.
+	AI_Output (other,self ,"DIA_Igaranz_Choosen_HowChoosen_15_00"); //Jak se mÅ¯Å¾u stÃ¡t vyvolenÃ½m?
+	AI_Output (self ,other,"DIA_Igaranz_Choosen_HowChoosen_13_01"); //Na to nemÅ¯Å¾eÅ¡ mÃ­t Å¾Ã¡dnÃ½ vliv. SvÃ© novice si vybÃ­rÃ¡ sÃ¡m Innos a jeho vÅ¯li oznamuje nejvyÅ¡Å¡Ã­ rada.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über Innos Lehren
+//	ErzÃ¤hl mir was Ã¼ber Innos Lehren
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 {
@@ -189,7 +189,7 @@ INSTANCE DIA_Igaranz_StudyInnos   (C_INFO)
 	condition   = DIA_Igaraz_StudyInnos_Condition;
 	information = DIA_Igaraz_StudyInnos_Info;
 	permanent   = FALSE;
-	description	= "Jak mùu studovat svaté spisy?";
+	description	= "Jak mÅ¯Å¾u studovat svatÃ© spisy?";
 };
 
 FUNC INT DIA_Igaraz_StudyInnos_Condition()
@@ -204,12 +204,12 @@ FUNC INT DIA_Igaraz_StudyInnos_Condition()
 };
 FUNC VOID DIA_Igaraz_StudyInnos_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_StudyInnos_15_00"); //Jak mùu studovat svaté spisy?
-	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_01"); //Musíš získat pøístup do knihovny.
-	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //Mistr Parlan ti ale dá klíè a ve chvíli, kdy poprvé splníš všechny své povinnosti.
+	AI_Output (other,self ,"DIA_Igaranz_StudyInnos_15_00"); //Jak mÅ¯Å¾u studovat svatÃ© spisy?
+	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_01"); //MusÃ­Å¡ zÃ­skat pÅ™Ã­stup do knihovny.
+	AI_Output (self ,other,"DIA_Igaranz_StudyInnos_13_02"); //Mistr Parlan ti ale dÃ¡ klÃ­Ä aÅ¾ ve chvÃ­li, kdy poprvÃ© splnÃ­Å¡ vÅ¡echny svÃ© povinnosti.
 };
 //**************************************************************************
-//	ABSCHNITT 2  DIE PRÜFUNG DER MAGIE 
+//	ABSCHNITT 2  DIE PRÃœFUNG DER MAGIE 
 //**************************************************************************
 ///////////////////////////////////////////////////////////////////////
 //	Info CHOOSEN
@@ -233,7 +233,7 @@ func int DIA_Igaraz_IMTHEMAN_Condition ()
 };
 func void DIA_Igaraz_IMTHEMAN_Info ()
 {
-	AI_Output (self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(hrdì) Ji se tak stalo. Innos mì vybral a budu se úèastnit zkoušky magie.
+	AI_Output (self, other, "DIA_Igaraz_IMTHEMAN_13_00"); //(hrdÄ›) JiÅ¾ se tak stalo. Innos mÄ› vybral a budu se ÃºÄastnit zkouÅ¡ky magie.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info METOO
@@ -245,7 +245,7 @@ instance DIA_Igaraz_METOO		(C_INFO)
 	condition	 = 	DIA_Igaraz_METOO_Condition;
 	information	 = 	DIA_Igaraz_METOO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Já mám taky trochu potíe...";
+	description	 = 	"JÃ¡ mÃ¡m taky trochu potÃ­Å¾e...";
 };
 var int DIA_Igaraz_METOO_NOPERM ;
 
@@ -260,17 +260,17 @@ func int DIA_Igaraz_METOO_Condition ()
 };
 func void DIA_Igaraz_METOO_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_15_00"); //To mì taky - poadoval jsem zkoušku ohnì.
-	AI_Output (self, other, "DIA_Igaraz_METOO_13_01"); //Co jsi UDÌLAL? Buï jsi Innosùv oblíbenec, nebo naprosto šílenı.
-	AI_Output (other, self, "DIA_Igaraz_METOO_15_02"); //U jsem udìlal dost šílenıch vìcí, take bych øekl, e zvládnu i tohle.
-	AI_Output (self, other, "DIA_Igaraz_METOO_13_03"); //Innos nade mnou drí ochrannou ruku - jeho zkouškou tedy projdu.
+	AI_Output (other, self, "DIA_Igaraz_METOO_15_00"); //To mÄ› taky - poÅ¾adoval jsem zkouÅ¡ku ohnÄ›.
+	AI_Output (self, other, "DIA_Igaraz_METOO_13_01"); //Co jsi UDÄšLAL? BuÄ jsi InnosÅ¯v oblÃ­benec, nebo naprosto Å¡Ã­lenÃ½.
+	AI_Output (other, self, "DIA_Igaraz_METOO_15_02"); //UÅ¾ jsem udÄ›lal dost Å¡Ã­lenÃ½ch vÄ›cÃ­, takÅ¾e bych Å™ekl, Å¾e zvlÃ¡dnu i tohle.
+	AI_Output (self, other, "DIA_Igaraz_METOO_13_03"); //Innos nade mnou drÅ¾Ã­ ochrannou ruku - jeho zkouÅ¡kou tedy projdu.
 	
 
 	Info_ClearChoices	 (DIA_Igaraz_METOO);
 	Info_AddChoice 		 (DIA_Igaraz_METOO,DIALOG_BACK,DIA_Igaraz_METOO_BACK);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Moná bychom mohli pracovat spoleènì...",DIA_Igaraz_METOO_HELP);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Tak co, u jsi nìco vyzvìdìl?",DIA_Igaraz_METOO_TELL);
-	Info_AddChoice 		 (DIA_Igaraz_METOO,"Vidìl jsi Agona nebu Ulfa?",DIA_Igaraz_METOO_AGON);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"MoÅ¾nÃ¡ bychom mohli pracovat spoleÄnÄ›...",DIA_Igaraz_METOO_HELP);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"Tak co, uÅ¾ jsi nÄ›co vyzvÄ›dÄ›l?",DIA_Igaraz_METOO_TELL);
+	Info_AddChoice 		 (DIA_Igaraz_METOO,"VidÄ›l jsi Agona nebu Ulfa?",DIA_Igaraz_METOO_AGON);
 };
 FUNC VOID DIA_Igaraz_METOO_BACK()
 {
@@ -278,19 +278,19 @@ FUNC VOID DIA_Igaraz_METOO_BACK()
 };
 FUNC VOID DIA_Igaraz_METOO_TELL ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_TELL_15_00"); //A u jsi nìco objevil?
-	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_01"); //Protoe stejnì nemáš ádnou šanci, klidnì ti mùu øíct tohle:
-	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_02"); //Nesna se hledat poblí farem - není tam nic, co by tì k nìèemu dovedlo.
+	AI_Output (other, self, "DIA_Igaraz_METOO_TELL_15_00"); //A uÅ¾ jsi nÄ›co objevil?
+	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_01"); //ProtoÅ¾e stejnÄ› nemÃ¡Å¡ Å¾Ã¡dnou Å¡anci, klidnÄ› ti mÅ¯Å¾u Å™Ã­ct tohle:
+	AI_Output (self, other, "DIA_Igaraz_METOO_TELL_13_02"); //NesnaÅ¾ se hledat poblÃ­Å¾ farem - nenÃ­ tam nic, co by tÄ› k nÄ›Äemu dovedlo.
 };
 FUNC VOID DIA_Igaraz_METOO_HELP ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_HELP_15_00"); //Moná bychom mohli pracovat spoleènì...
-	AI_Output (self, other, "DIA_Igaraz_METOO_HELP_13_01"); //Zapomeò na to. Splním tenhle úkol sám. Akorát bys mì brzdil.
+	AI_Output (other, self, "DIA_Igaraz_METOO_HELP_15_00"); //MoÅ¾nÃ¡ bychom mohli pracovat spoleÄnÄ›...
+	AI_Output (self, other, "DIA_Igaraz_METOO_HELP_13_01"); //ZapomeÅˆ na to. SplnÃ­m tenhle Ãºkol sÃ¡m. AkorÃ¡t bys mÄ› brzdil.
 };
 FUNC VOID DIA_Igaraz_METOO_AGON ()
 {
-	AI_Output (other, self, "DIA_Igaraz_METOO_AGON_15_00"); //Vidìl jsi Agona nebo Ulfa?
-	AI_Output (self, other, "DIA_Igaraz_METOO_AGON_13_01"); //Rozdìlili jsme se u hostince. Šel jsem na farmy a ti dva vyrazili spolu - ale kam, to vánì nevím.
+	AI_Output (other, self, "DIA_Igaraz_METOO_AGON_15_00"); //VidÄ›l jsi Agona nebo Ulfa?
+	AI_Output (self, other, "DIA_Igaraz_METOO_AGON_13_01"); //RozdÄ›lili jsme se u hostince. Å el jsem na farmy a ti dva vyrazili spolu - ale kam, to vÃ¡Å¾nÄ› nevÃ­m.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ADD
@@ -302,7 +302,7 @@ instance DIA_Igaraz_ADD		(C_INFO)
 	condition	 = 	DIA_Igaraz_ADD_Condition;
 	information	 = 	DIA_Igaraz_ADD_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Nevíš nìco o 'oivlém kameni'?";
+	description	 = 	"NevÃ­Å¡ nÄ›co o 'oÅ¾ivlÃ©m kameni'?";
 };
 func int DIA_Igaraz_ADD_Condition ()
 {	
@@ -317,20 +317,20 @@ func int DIA_Igaraz_ADD_Condition ()
 };
 func void DIA_Igaraz_ADD_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_Add_15_00"); //Nevíš nìco o "oivlém kameni"?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_01"); //(zachichotá se) Ne! Byl to Serpentes, kdo ti dal tuhle zkoušku?
-	AI_Output (other, self, "DIA_Igaraz_Add_15_02"); //Ano, proè?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_03"); //Dovedu si pøedstavit, co má za lubem.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_04"); //Nebyl bys první, kdo by v téhle zkoušce neobstál.
-	AI_Output (other, self, "DIA_Igaraz_Add_15_05"); //Kde pøesnì najdu tu ivoucí skálu?
-	AI_Output (self, other, "DIA_Igaraz_Add_13_06"); //Jdi dál po téhle cestì. Po docela dlouhé dobì dojdeš k øece.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_07"); //Jdi dál a cesta tì zavede do hor. Nìkde tam by to mìlo bıt.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_08"); //Kdy dojdeš k mostu, tak u jsi moc daleko.
-	AI_Output (self, other, "DIA_Igaraz_Add_13_09"); //(zasmìje se) Tedy, POKUD se dostaneš tak daleko...
-	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //To je všechno, co ti k tomu øeknu. (sarkasticky) Je to konec koncù tvoje ZKOUŠKA!
+	AI_Output (other, self, "DIA_Igaraz_Add_15_00"); //NevÃ­Å¡ nÄ›co o "oÅ¾ivlÃ©m kameni"?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_01"); //(zachichotÃ¡ se) Ne! Byl to Serpentes, kdo ti dal tuhle zkouÅ¡ku?
+	AI_Output (other, self, "DIA_Igaraz_Add_15_02"); //Ano, proÄ?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_03"); //Dovedu si pÅ™edstavit, co mÃ¡ za lubem.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_04"); //Nebyl bys prvnÃ­, kdo by v tÃ©hle zkouÅ¡ce neobstÃ¡l.
+	AI_Output (other, self, "DIA_Igaraz_Add_15_05"); //Kde pÅ™esnÄ› najdu tu Å¾ivoucÃ­ skÃ¡lu?
+	AI_Output (self, other, "DIA_Igaraz_Add_13_06"); //Jdi dÃ¡l po tÃ©hle cestÄ›. Po docela dlouhÃ© dobÄ› dojdeÅ¡ k Å™ece.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_07"); //Jdi dÃ¡l a cesta tÄ› zavede do hor. NÄ›kde tam by to mÄ›lo bÃ½t.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_08"); //KdyÅ¾ dojdeÅ¡ k mostu, tak uÅ¾ jsi moc daleko.
+	AI_Output (self, other, "DIA_Igaraz_Add_13_09"); //(zasmÄ›je se) Tedy, POKUD se dostaneÅ¡ tak daleko...
+	AI_Output (self, other, "DIA_Igaraz_Add_13_10"); //To je vÅ¡echno, co ti k tomu Å™eknu. (sarkasticky) Je to konec koncÅ¯ tvoje ZKOUÅ KA!
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Perm Prüfung 
+//	Info Perm PrÃ¼fung 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Igaraz_Pruefung		(C_INFO)
 {
@@ -338,7 +338,7 @@ instance DIA_Igaraz_Pruefung		(C_INFO)
 	nr			 = 	22;
 	condition	 = 	DIA_Igaraz_Pruefung_Condition;
 	information	 = 	DIA_Igaraz_Pruefung_Info;
-	description	 =  "U jsi objevil nìco nového?";
+	description	 =  "UÅ¾ jsi objevil nÄ›co novÃ©ho?";
 };
 func int DIA_Igaraz_Pruefung_Condition ()
 {	
@@ -351,8 +351,8 @@ func int DIA_Igaraz_Pruefung_Condition ()
 };
 func void DIA_Igaraz_Pruefung_Info ()
 {
-	AI_Output (other, self, "DIA_Igaraz_Pruefung_15_00"); //U jsi objevil nìco nového?
-	AI_Output (self, other, "DIA_Igaraz_Pruefung_13_01"); //Ještì ne, ale stále hledám.
+	AI_Output (other, self, "DIA_Igaraz_Pruefung_15_00"); //UÅ¾ jsi objevil nÄ›co novÃ©ho?
+	AI_Output (self, other, "DIA_Igaraz_Pruefung_13_01"); //JeÅ¡tÄ› ne, ale stÃ¡le hledÃ¡m.
 	
 	AI_StopProcessInfos (self); 
 	
@@ -386,19 +386,19 @@ func int DIA_Igaraz_Stein_Condition ()
 };
 func void DIA_Igaraz_Stein_Info ()
 {
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_00"); //Hej, poèkej. Mìli bychom si promluvit.
-	AI_Output (other, self, "DIA_Igaraz_Seufz_15_01"); //No, já si to nemyslím.
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_02"); //Na tuhle zkoušku jsme èekali celé léta. Innos je se mnou a já ji MUSÍM splnit.
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_00"); //Hej, poÄkej. MÄ›li bychom si promluvit.
+	AI_Output (other, self, "DIA_Igaraz_Seufz_15_01"); //No, jÃ¡ si to nemyslÃ­m.
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_02"); //Na tuhle zkouÅ¡ku jsme Äekali celÃ© lÃ©ta. Innos je se mnou a jÃ¡ ji MUSÃM splnit.
 	
 	if Npc_KnowsInfo (other, DIA_Ulf_Abrechnung)
 	{
-		AI_Output (other, self, "DIA_Igaraz_Seufz_15_03"); //To mi zní povìdomì.
+		AI_Output (other, self, "DIA_Igaraz_Seufz_15_03"); //To mi znÃ­ povÄ›domÄ›.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Igaraz_Seufz_15_04"); //Nejsi sám, kdo tohle øíká.
+		AI_Output (other, self, "DIA_Igaraz_Seufz_15_04"); //Nejsi sÃ¡m, kdo tohle Å™Ã­kÃ¡.
 	};
-	AI_Output (self, other, "DIA_Igaraz_Seufz_13_05"); //Dost tlachání. Potøebuji, co jsi našel. Nadešel tedy èas, abys zemøel!
+	AI_Output (self, other, "DIA_Igaraz_Seufz_13_05"); //Dost tlachÃ¡nÃ­. PotÅ™ebuji, co jsi naÅ¡el. NadeÅ¡el tedy Äas, abys zemÅ™el!
 	
 	
 	AI_StopProcessInfos (self);
@@ -476,7 +476,7 @@ INSTANCE DIA_Igaranz_TalkAboutBabo   (C_INFO)
 	condition   = DIA_Igaraz_TalkAboutBabo_Condition;
 	information = DIA_Igaraz_TalkAboutBabo_Info;
 	permanent   = FALSE;
-	description = "Mìli bychom si promluvit o Babovi.";
+	description = "MÄ›li bychom si promluvit o Babovi.";
 };
 FUNC INT DIA_Igaraz_TalkAboutBabo_Condition()
 {
@@ -487,12 +487,12 @@ FUNC INT DIA_Igaraz_TalkAboutBabo_Condition()
 };
 FUNC VOID DIA_Igaraz_TalkAboutBabo_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_TalkAboutBabo_15_00"); //Mìli bychom si promluvit o Babovi.
-	AI_Output (self ,other,"DIA_Igaranz_TalkAboutBabo_13_01"); //(opatrnì) Ano, co se dìje?
+	AI_Output (other,self ,"DIA_Igaranz_TalkAboutBabo_15_00"); //MÄ›li bychom si promluvit o Babovi.
+	AI_Output (self ,other,"DIA_Igaranz_TalkAboutBabo_13_01"); //(opatrnÄ›) Ano, co se dÄ›je?
 };
 
 //**************************************************************************
-//	Du hast etwas was Babo gehört
+//	Du hast etwas was Babo gehÃ¶rt
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 {
@@ -501,7 +501,7 @@ INSTANCE DIA_Igaranz_BabosBelongings   (C_INFO)
 	condition   = DIA_Igaraz_BabosBelongings_Condition;
 	information = DIA_Igaraz_BabosBelongings_Info;
 	permanent   = FALSE;
-	description = "Máš nìco, co patøí Babovi.";
+	description = "MÃ¡Å¡ nÄ›co, co patÅ™Ã­ Babovi.";
 };
 FUNC INT DIA_Igaraz_BabosBelongings_Condition()
 {
@@ -512,10 +512,10 @@ FUNC INT DIA_Igaraz_BabosBelongings_Condition()
 };
 FUNC VOID DIA_Igaraz_BabosBelongings_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_00"); //Máš nìco, co patøí Babovi.
-	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_01"); //Co by to tak asi mohlo bıt?
-	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_02"); //Pár papírù. Babo by je rád dostal zpátky.
-	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_03"); //(vısmìšnì) No, tak tomu docela vìøím. Dovedu si to pøedstavit. Ale já si je naneštìstí radìji ponechám, co nás staví pøed ponìkud nepøíjemné dilema.
+	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_00"); //MÃ¡Å¡ nÄ›co, co patÅ™Ã­ Babovi.
+	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_01"); //Co by to tak asi mohlo bÃ½t?
+	AI_Output (other,self ,"DIA_Igaranz_BabosBelongings_15_02"); //PÃ¡r papÃ­rÅ¯. Babo by je rÃ¡d dostal zpÃ¡tky.
+	AI_Output (self ,other,"DIA_Igaranz_BabosBelongings_13_03"); //(vÃ½smÄ›Å¡nÄ›) No, tak tomu docela vÄ›Å™Ã­m. Dovedu si to pÅ™edstavit. Ale jÃ¡ si je naneÅ¡tÄ›stÃ­ radÄ›ji ponechÃ¡m, coÅ¾ nÃ¡s stavÃ­ pÅ™ed ponÄ›kud nepÅ™Ã­jemnÃ© dilema.
 };
 
 //**************************************************************************
@@ -528,7 +528,7 @@ INSTANCE DIA_Igaranz_WhereDocs   (C_INFO)
 	condition   = DIA_Igaraz_WhereDocs_Condition;
 	information = DIA_Igaraz_WhereDocs_Info;
 	permanent   = FALSE;
-	description = "Máš ty papíry?";
+	description = "MÃ¡Å¡ ty papÃ­ry?";
 };
 FUNC INT DIA_Igaraz_WhereDocs_Condition()
 {
@@ -539,14 +539,14 @@ FUNC INT DIA_Igaraz_WhereDocs_Condition()
 };
 FUNC VOID DIA_Igaraz_WhereDocs_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_00"); //Máš ty papíry?
-	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_01"); //(arogantnì) No, nemám je samozøejmì u sebe. Obávám se, e ti nemohu pomoci.
+	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_00"); //MÃ¡Å¡ ty papÃ­ry?
+	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_01"); //(arogantnÄ›) No, nemÃ¡m je samozÅ™ejmÄ› u sebe. ObÃ¡vÃ¡m se, Å¾e ti nemohu pomoci.
 	AI_Output (other,self ,"DIA_Igaranz_WhereDocs_15_02"); //Kde jsou?
-	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_03"); //Zamknul jsem je na bezpeèném místì. A klíè ode mì nikdy nedostaneš.
+	AI_Output (self ,other,"DIA_Igaranz_WhereDocs_13_03"); //Zamknul jsem je na bezpeÄnÃ©m mÃ­stÄ›. A klÃ­Ä ode mÄ› nikdy nedostaneÅ¡.
 };
 
 //**************************************************************************
-//	Was soll Babo für dich tun?
+//	Was soll Babo fÃ¼r dich tun?
 //**************************************************************************
 INSTANCE DIA_Igaranz_BabosJob   (C_INFO)
 {
@@ -555,7 +555,7 @@ INSTANCE DIA_Igaranz_BabosJob   (C_INFO)
 	condition   = DIA_Igaraz_BabosJob_Condition;
 	information = DIA_Igaraz_BabosJob_Info;
 	permanent   = FALSE;
-	description = "Co pro tebe mìl Babo udìlat?";
+	description = "Co pro tebe mÄ›l Babo udÄ›lat?";
 };
 FUNC INT DIA_Igaraz_BabosJob_Condition()
 {
@@ -566,15 +566,15 @@ FUNC INT DIA_Igaraz_BabosJob_Condition()
 };
 FUNC VOID DIA_Igaraz_BabosJob_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_00"); //Co pro tebe mìl Babo udìlat?
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_01"); //Kdybych vìdìl, e se ten mazánek nedokáe postarat o trochu trávy z bain, zaøídil bych, aby klášterní zahradu dostal na starost nìkdo jinı.
-	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_02"); //On má za úkol pìstovat trávu z bain?
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_03"); //Samozøejmì. Od doby, co u zpoza bariéry ádná nepøichází, se její cena ve mìstì ztrojnásobila.
-	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_04"); //To mùe bıt docela dobrı kšeft pro kadého, kdo se do toho dá. Ale Babo se nechtìl zapojit.
+	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_00"); //Co pro tebe mÄ›l Babo udÄ›lat?
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_01"); //Kdybych vÄ›dÄ›l, Å¾e se ten mazÃ¡nek nedokÃ¡Å¾e postarat o trochu trÃ¡vy z baÅ¾in, zaÅ™Ã­dil bych, aby klÃ¡Å¡ternÃ­ zahradu dostal na starost nÄ›kdo jinÃ½.
+	AI_Output (other,self ,"DIA_Igaranz_BabosJob_15_02"); //On mÃ¡ za Ãºkol pÄ›stovat trÃ¡vu z baÅ¾in?
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_03"); //SamozÅ™ejmÄ›. Od doby, co uÅ¾ zpoza bariÃ©ry Å¾Ã¡dnÃ¡ nepÅ™ichÃ¡zÃ­, se jejÃ­ cena ve mÄ›stÄ› ztrojnÃ¡sobila.
+	AI_Output (self ,other,"DIA_Igaranz_BabosJob_13_04"); //To mÅ¯Å¾e bÃ½t docela dobrÃ½ kÅ¡eft pro kaÅ¾dÃ©ho, kdo se do toho dÃ¡. Ale Babo se nechtÄ›l zapojit.
 };
 
 //**************************************************************************
-//	Wieviel willst du für die Papiere haben?
+//	Wieviel willst du fÃ¼r die Papiere haben?
 //**************************************************************************
 INSTANCE DIA_Igaranz_Price   (C_INFO)
 {
@@ -583,7 +583,7 @@ INSTANCE DIA_Igaranz_Price   (C_INFO)
 	condition   = DIA_Igaraz_Price_Condition;
 	information = DIA_Igaraz_Price_Info;
 	permanent   = FALSE;
-	description = "Kolik chceš za ty papíry?";
+	description = "Kolik chceÅ¡ za ty papÃ­ry?";
 };
 FUNC INT DIA_Igaraz_Price_Condition()
 {
@@ -594,10 +594,10 @@ FUNC INT DIA_Igaraz_Price_Condition()
 };
 FUNC VOID DIA_Igaraz_Price_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_Price_15_00"); //Kolik chceš za ty papíry?
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_01"); //(zasmìje se) Ha, ve skuteènosti jsou naprosto nedocenitelné. Nìco takového se tady moc èasto nevidí.
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_02"); //Nerad bych ale sázel celou svou budoucnost jen proti pár zlaákùm.
-	AI_Output (self ,other,"DIA_Igaranz_Price_13_03"); //300 zlatıch a mùeš si s tìmi papíry dìlat, co chceš.
+	AI_Output (other,self ,"DIA_Igaranz_Price_15_00"); //Kolik chceÅ¡ za ty papÃ­ry?
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_01"); //(zasmÄ›je se) Ha, ve skuteÄnosti jsou naprosto nedocenitelnÃ©. NÄ›co takovÃ©ho se tady moc Äasto nevidÃ­.
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_02"); //Nerad bych ale sÃ¡zel celou svou budoucnost jen proti pÃ¡r zlaÅ¥Ã¡kÅ¯m.
+	AI_Output (self ,other,"DIA_Igaranz_Price_13_03"); //300 zlatÃ½ch a mÅ¯Å¾eÅ¡ si s tÄ›mi papÃ­ry dÄ›lat, co chceÅ¡.
 };
 
 //**************************************************************************
@@ -610,7 +610,7 @@ INSTANCE DIA_Igaranz_BuyIt   (C_INFO)
 	condition   = DIA_Igaraz_BuyIt_Condition;
 	information = DIA_Igaraz_BuyIt_Info;
 	permanent   = FALSE;
-	description = "Chtìl bych ty papíry koupit.";
+	description = "ChtÄ›l bych ty papÃ­ry koupit.";
 };
 FUNC INT DIA_Igaraz_BuyIt_Condition()
 {
@@ -622,8 +622,8 @@ FUNC INT DIA_Igaraz_BuyIt_Condition()
 };
 FUNC VOID DIA_Igaraz_BuyIt_Info()
 {
-	AI_Output (other,self ,"DIA_Igaranz_BuyIt_15_00"); //Chtìl bych ty papíry koupit.
-	AI_Output (self ,other,"DIA_Igaranz_BuyIt_13_01"); //Podívej, nemùu odsud jen tak odejít. Dám ti klíè od mé truhly, stejnì v ní nic jiného není.
+	AI_Output (other,self ,"DIA_Igaranz_BuyIt_15_00"); //ChtÄ›l bych ty papÃ­ry koupit.
+	AI_Output (self ,other,"DIA_Igaranz_BuyIt_13_01"); //PodÃ­vej, nemÅ¯Å¾u odsud jen tak odejÃ­t. DÃ¡m ti klÃ­Ä od mÃ© truhly, stejnÄ› v nÃ­ nic jinÃ©ho nenÃ­.
 	
 	B_GiveInvItems (other,self,ItMi_Gold,300);
 	B_GiveInvItems (self,other,ItKe_IgarazChest_mis,1);
@@ -640,7 +640,7 @@ INSTANCE DIA_Igaraz_PICKPOCKET (C_INFO)
 	condition	= DIA_Igaraz_PICKPOCKET_Condition;
 	information	= DIA_Igaraz_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klíè pùjde ukrást snadno.)";
+	description = "(Tento klÃ­Ä pÅ¯jde ukrÃ¡st snadno.)";
 };                       
 
 FUNC INT DIA_Igaraz_PICKPOCKET_Condition()
@@ -675,7 +675,7 @@ func void DIA_Igaraz_PICKPOCKET_DoIt()
 	{
 		B_ResetThiefLevel();
 		AI_StopProcessInfos	(self);
-		B_Attack (self, other, AR_Theft, 1); //AR_Theft führt zu NEWS!
+		B_Attack (self, other, AR_Theft, 1); //AR_Theft fÃ¼hrt zu NEWS!
 	};
 };
 	
@@ -753,7 +753,7 @@ INSTANCE DIA_Igaranz_Perm   (C_INFO)
 	condition   = DIA_Igaraz_Perm_Condition;
 	information = DIA_Igaraz_Perm_Info;
 	permanent   = FALSE;
-	description	= "Máš pro mì nìco zajímavého?";
+	description	= "MÃ¡Å¡ pro mÄ› nÄ›co zajÃ­mavÃ©ho?";
 };
 FUNC INT DIA_Igaraz_Perm_Condition()
 {
@@ -766,7 +766,7 @@ FUNC INT DIA_Igaraz_Perm_Condition()
 };
 FUNC VOID DIA_Igaraz_Perm_Info()
 {
-	AI_Output (other ,self,"DIA_Igaranz_Perm_15_00"); //Máš pro mì nìco zajímavého?
+	AI_Output (other ,self,"DIA_Igaranz_Perm_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›co zajÃ­mavÃ©ho?
 	AI_Output (self ,other,"DIA_Igaranz_Perm_13_01"); //Ehm... ne.
 	
 	AI_StopProcessInfos(self); 

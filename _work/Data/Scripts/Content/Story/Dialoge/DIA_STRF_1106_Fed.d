@@ -44,10 +44,10 @@ func int DIA_Fed_HALLO_Condition ()
 };
 func void DIA_Fed_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Co ode mì chceš? Nikam nejdu!
-	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Klídek, v pohodì - nikdo po tobì nechce, abys nìkam chodil.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Díky Innosovi. Však víš, bìhem nìkolika posledních dní opustilo pár chlapù tábor - a nikdo z nich se nevrátil.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Všechny je serali chòapavci. Ale mì ne. Prostì tady zùstanu do tı doby, ne to skonèí.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Co ode mÄ› chceÅ¡? Nikam nejdu!
+	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //KlÃ­dek, v pohodÄ› - nikdo po tobÄ› nechce, abys nÄ›kam chodil.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //DÃ­ky Innosovi. VÅ¡ak vÃ­Å¡, bÄ›hem nÄ›kolika poslednÃ­ch dnÃ­ opustilo pÃ¡r chlapÅ¯ tÃ¡bor - a nikdo z nich se nevrÃ¡til.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //VÅ¡echny je seÅ¾rali chÅˆapavci. Ale mÄ› ne. ProstÄ› tady zÅ¯stanu do tÃ½ doby, neÅ¾ to skonÄÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -59,7 +59,7 @@ instance DIA_Fed_Snapper	(C_INFO)
 	condition	 = 	DIA_Fed_Snapper_Condition;
 	information	 = 	DIA_Fed_Snapper_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Co víš o chòapavcích?";
+	description	 = 	"Co vÃ­Å¡ o chÅˆapavcÃ­ch?";
 };
 func int DIA_Fed_Snapper_Condition ()
 {	
@@ -70,10 +70,10 @@ func int DIA_Fed_Snapper_Condition ()
 };
 func void DIA_Fed_Snapper_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Co víš o chòapavcích?
-	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot je v noci vídá. Nìkolik z nich jich je dole u jezírka pod tmavou vìí.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Ostatní jsou pøímo nad náma - nahoøe na skále. Jen èekají, a se úplnì vyèerpáme.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Jsme tady v pasti. Brzo napadnou tábor - a udìlají si krvavé hody.
+	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Co vÃ­Å¡ o chÅˆapavcÃ­ch?
+	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot je v noci vÃ­dÃ¡. NÄ›kolik z nich jich je dole u jezÃ­rka pod tmavou vÄ›Å¾Ã­.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //OstatnÃ­ jsou pÅ™Ã­mo nad nÃ¡ma - nahoÅ™e na skÃ¡le. Jen ÄekajÃ­, aÅ¾ se ÃºplnÄ› vyÄerpÃ¡me.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Jsme tady v pasti. Brzo napadnou tÃ¡bor - a udÄ›lajÃ­ si krvavÃ© hody.
 	AI_Output (other, self, "DIA_Fed_Snapper_15_04"); //Aha.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -86,7 +86,7 @@ instance DIA_Fed_Perm	(C_INFO)
 	condition	 = 	DIA_Fed_Perm_Condition;
 	information	 = 	DIA_Fed_Perm_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Copak ses zbláznil?";
+	description	 = 	"Copak ses zblÃ¡znil?";
 };
 func int DIA_Fed_Perm_Condition ()
 {	
@@ -94,16 +94,16 @@ func int DIA_Fed_Perm_Condition ()
 };
 func void DIA_Fed_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Perm_15_00"); //Jsi v poøádku?
+	AI_Output (other, self, "DIA_Fed_Perm_15_00"); //Jsi v poÅ™Ã¡dku?
 	
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Venku jsou chòapavci. Cítíš je...? Já je cítím...
+		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Venku jsou chÅˆapavci. CÃ­tÃ­Å¡ je...? JÃ¡ je cÃ­tÃ­m...
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //Vypadá to, e se chòapavci stáhli. Ale to ještì nic neznamená. Oni se vrátí - nebo vlci nebo ještìøi nebo skøeti.
-		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //A døív nebo pozdìji nás dostanou a pošmáknou si na našich mrtvolách.
+		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //VypadÃ¡ to, Å¾e se chÅˆapavci stÃ¡hli. Ale to jeÅ¡tÄ› nic neznamenÃ¡. Oni se vrÃ¡tÃ­ - nebo vlci nebo jeÅ¡tÄ›Å™i nebo skÅ™eti.
+		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //A dÅ™Ã­v nebo pozdÄ›ji nÃ¡s dostanou a poÅ¡mÃ¡knou si na naÅ¡ich mrtvolÃ¡ch.
 	};
 	AI_StopProcessInfos(self);
 	

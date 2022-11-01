@@ -31,7 +31,7 @@ INSTANCE DIA_Pablo_PICKPOCKET (C_INFO)
 	condition	= DIA_Pablo_PICKPOCKET_Condition;
 	information	= DIA_Pablo_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klíè by ukradlo i malé dítì.)";
+	description = "(Tento klÃ­Ä by ukradlo i malÃ© dÃ­tÄ›.)";
 };                       
 
 FUNC INT DIA_Pablo_PICKPOCKET_Condition()
@@ -98,41 +98,41 @@ func int DIA_Pablo_WANTED_Condition ()
 };
 func void DIA_Pablo_WANTED_Info ()
 {
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_00"); //Hej, poèkej - jsi mi nìjakı povìdomı.
-	AI_Output (other, self, "DIA_Pablo_WANTED_15_01"); //Co chceš?
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_02"); //Tvùj oblièej jsem u nìkde vidìl... ano - u vím!
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_00"); //Hej, poÄkej - jsi mi nÄ›jakÃ½ povÄ›domÃ½.
+	AI_Output (other, self, "DIA_Pablo_WANTED_15_01"); //Co chceÅ¡?
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_02"); //TvÅ¯j obliÄej jsem uÅ¾ nÄ›kde vidÄ›l... ano - uÅ¾ vÃ­m!
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_03"); //Tady - tenhle obrázek u sebe mìla skupina banditù, kterou jsme sbalili pøed pár dny. Vypadá vánì jako ty.
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_03"); //Tady - tenhle obrÃ¡zek u sebe mÄ›la skupina banditÅ¯, kterou jsme sbalili pÅ™ed pÃ¡r dny. VypadÃ¡ vÃ¡Å¾nÄ› jako ty.
 	B_GiveInvItems (self, other, ItWr_Poster_MIS,1);
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_04"); //Zdá se, e tì ti chlapíci hledali.
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_04"); //ZdÃ¡ se, Å¾e tÄ› ti chlapÃ­ci hledali.
 	
 	
 	Info_ClearChoices (DIA_Pablo_WANTED);
 	
-	Info_AddChoice  (DIA_Pablo_WANTED,"Ne, musel ses splést.",DIA_Pablo_WANTED_NOTHING);
-	Info_AddChoice 	(DIA_Pablo_WANTED,"Boínku, nìco takového by mì samotného nikdy nenapadlo.",DIA_Pablo_WANTED_IRONY);
+	Info_AddChoice  (DIA_Pablo_WANTED,"Ne, musel ses splÃ©st.",DIA_Pablo_WANTED_NOTHING);
+	Info_AddChoice 	(DIA_Pablo_WANTED,"BoÅ¾Ã­nku, nÄ›co takovÃ©ho by mÄ› samotnÃ©ho nikdy nenapadlo.",DIA_Pablo_WANTED_IRONY);
 };
 FUNC VOID DIA_Pablo_WANTED_NOTHING()
 {
-	AI_Output (other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //Ne, to se urèitì pletete. To musel bıt nìkdo jinı.
-	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Jak myslíš, cizinèe.
-	//AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); //Aber wenn du Probleme hast - dann lass sie außerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_00"); //Ale jestli se nakonec ukáe, es na tom obrázku pøece jenom byl TY - a pokud budeš mít nìjaké potíe - sna se je netahat s sebou do mìsta. U takhle to tady není ádnı med.
-	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //A cizinci, kteøí s sebou pøinášejí potíe, tady moc dlouho vìtšinou nezùstanou - doufám, e jsem se vyjádøil jasnì.
+	AI_Output (other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //Ne, to se urÄitÄ› pletete. To musel bÃ½t nÄ›kdo jinÃ½.
+	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Jak myslÃ­Å¡, cizinÄe.
+	//AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); //Aber wenn du Probleme hast - dann lass sie auÃŸerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_00"); //Ale jestli se nakonec ukÃ¡Å¾e, Å¾es na tom obrÃ¡zku pÅ™ece jenom byl TY - a pokud budeÅ¡ mÃ­t nÄ›jakÃ© potÃ­Å¾e - snaÅ¾ se je netahat s sebou do mÄ›sta. UÅ¾ takhle to tady nenÃ­ Å¾Ã¡dnÃ½ med.
+	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //A cizinci, kteÅ™Ã­ s sebou pÅ™inÃ¡Å¡ejÃ­ potÃ­Å¾e, tady moc dlouho vÄ›tÅ¡inou nezÅ¯stanou - doufÃ¡m, Å¾e jsem se vyjÃ¡dÅ™il jasnÄ›.
 	Pablo_belogen = TRUE;
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Pablo_WANTED_IRONY()
 {
-	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //Boínku, nìco takového by mì samotného nikdy nenapadlo.
-	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //Vánì legrace... co od tebe ti chlapíci chtìli?
+	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //BoÅ¾Ã­nku, nÄ›co takovÃ©ho by mÄ› samotnÃ©ho nikdy nenapadlo.
+	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //VÃ¡Å¾nÄ› legrace... co od tebe ti chlapÃ­ci chtÄ›li?
 	//AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_02"); //Ich werde sie fragen, wenn ich sie sehe. Ihr habt doch die Kerle eingelocht, die den Wisch dabei hatten, oder?
-	AI_Output (other, self,"DIA_Pablo_Add_15_01"); //Zeptejte se jich sami. Máte je pøece v bezpeèí pod zámkem, ne?
-	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //Ne - jsou mrtví.
-	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //Tak mám dojem, e se to u nikdy nedozvíme.
-	//AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_05"); //Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. Schönen Tag noch.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_02"); //V pøípadì, e bys mìl nìjaké problémy, promluv si s lordem Andrem. Moná by byl schopnı ti pomoci. Najdeš ho v kasárnách.
+	AI_Output (other, self,"DIA_Pablo_Add_15_01"); //Zeptejte se jich sami. MÃ¡te je pÅ™ece v bezpeÄÃ­ pod zÃ¡mkem, ne?
+	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //Ne - jsou mrtvÃ­.
+	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //Tak mÃ¡m dojem, Å¾e se to uÅ¾ nikdy nedozvÃ­me.
+	//AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_05"); //Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. SchÃ¶nen Tag noch.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_02"); //V pÅ™Ã­padÄ›, Å¾e bys mÄ›l nÄ›jakÃ© problÃ©my, promluv si s lordem Andrem. MoÅ¾nÃ¡ by byl schopnÃ½ ti pomoci. NajdeÅ¡ ho v kasÃ¡rnÃ¡ch.
 	
 	AI_StopProcessInfos (self);
 };
@@ -147,7 +147,7 @@ INSTANCE DIA_Pablo_Banditen   (C_INFO)
 	condition   = DIA_Pablo_Banditen_Condition;
 	information = DIA_Pablo_Banditen_Info;
 	permanent   = FALSE;
-	description = "Co víš o banditech?";
+	description = "Co vÃ­Å¡ o banditech?";
 };
 FUNC INT DIA_Pablo_Banditen_Condition()
 {	
@@ -155,12 +155,12 @@ FUNC INT DIA_Pablo_Banditen_Condition()
 };
 FUNC VOID DIA_Pablo_Banditen_Info()
 {
-	AI_Output (other, self,"DIA_Pablo_Add_15_03"); //Co víš o banditech?
-	//AI_Output (other, self, "DIA_Pablo_Banditen_15_00"); //Was weißt du über die Banditen, die vor der Stadt ihr Unwesen treiben?
-	AI_Output (self ,other,"DIA_Pablo_Add_12_04"); //Všichni pocházejí z té zatracené tìaøské kolonie. Je mezi nimi ale nìkolik skupinek odpadlíkù.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_05"); //Nìkteøí se zašili v horách a další se spojili s Onarem, velkostatkáøem.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_06"); //Nejvíc potíí ale zpùsobují bandité, kteøí se zdrují mimo mìsto.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_07"); //To kvùli nim se teï ádnı obchodník neodváí vyrazit za mìstské brány.
+	AI_Output (other, self,"DIA_Pablo_Add_15_03"); //Co vÃ­Å¡ o banditech?
+	//AI_Output (other, self, "DIA_Pablo_Banditen_15_00"); //Was weiÃŸt du Ã¼ber die Banditen, die vor der Stadt ihr Unwesen treiben?
+	AI_Output (self ,other,"DIA_Pablo_Add_12_04"); //VÅ¡ichni pochÃ¡zejÃ­ z tÃ© zatracenÃ© tÄ›Å¾aÅ™skÃ© kolonie. Je mezi nimi ale nÄ›kolik skupinek odpadlÃ­kÅ¯.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_05"); //NÄ›kteÅ™Ã­ se zaÅ¡ili v horÃ¡ch a dalÅ¡Ã­ se spojili s Onarem, velkostatkÃ¡Å™em.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_06"); //NejvÃ­c potÃ­Å¾Ã­ ale zpÅ¯sobujÃ­ banditÃ©, kteÅ™Ã­ se zdrÅ¾ujÃ­ mimo mÄ›sto.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_07"); //To kvÅ¯li nim se teÄ Å¾Ã¡dnÃ½ obchodnÃ­k neodvÃ¡Å¾Ã­ vyrazit za mÄ›stskÃ© brÃ¡ny.
 };
 
 // *************************************************************
@@ -173,7 +173,7 @@ INSTANCE DIA_Pablo_HakonBandits   (C_INFO)
 	condition   = DIA_Pablo_HakonBandits_Condition;
 	information = DIA_Pablo_HakonBandits_Info;
 	permanent   = FALSE;
-	description = "Nevíš nìco o banditech, kteøí okradli obchodníka Hakona?";
+	description = "NevÃ­Å¡ nÄ›co o banditech, kteÅ™Ã­ okradli obchodnÃ­ka Hakona?";
 };
 FUNC INT DIA_Pablo_HakonBandits_Condition()
 {	
@@ -185,25 +185,25 @@ FUNC INT DIA_Pablo_HakonBandits_Condition()
 };
 FUNC VOID DIA_Pablo_HakonBandits_Info()
 {
-	AI_Output (other, self,"DIA_Pablo_Add_15_20"); //Nevíš nìco o banditech, kteøí okradli obchodníka Hakona?
-	AI_Output (self ,other,"DIA_Pablo_Add_12_21"); //Jo TOHLE. Ani mi to nepøipomínej.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_22"); //Co víme, tak mají na svìdomí u pìknou øádku útokù na rùzné kupce.
+	AI_Output (other, self,"DIA_Pablo_Add_15_20"); //NevÃ­Å¡ nÄ›co o banditech, kteÅ™Ã­ okradli obchodnÃ­ka Hakona?
+	AI_Output (self ,other,"DIA_Pablo_Add_12_21"); //Jo TOHLE. Ani mi to nepÅ™ipomÃ­nej.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_22"); //Co vÃ­me, tak majÃ­ na svÄ›domÃ­ uÅ¾ pÄ›knou Å™Ã¡dku ÃºtokÅ¯ na rÅ¯znÃ© kupce.
 	
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_01"); //Ty krysy zalezly do svıch dìr a neodvaují se ani vystrèit nos.
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_02"); //Kdysi se nám je podaøilo vystopovat a sledovat. V lese za mìstem jsme ale museli s pronásledováním pøestat.
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_03"); //Kolem se potuluje spousta šelem, je to moc nebezpeèné.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_01"); //Ty krysy zalezly do svÃ½ch dÄ›r a neodvaÅ¾ujÃ­ se ani vystrÄit nos.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_02"); //Kdysi se nÃ¡m je podaÅ™ilo vystopovat a sledovat. V lese za mÄ›stem jsme ale museli s pronÃ¡sledovÃ¡nÃ­m pÅ™estat.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_03"); //Kolem se potuluje spousta Å¡elem, je to moc nebezpeÄnÃ©.
 	
-	B_LogEntry(TOPIC_HakonBanditen,"Bandité, kteøí okradli Hakona, se skrıvají kdesi v lesích poblí mìsta." );
+	B_LogEntry(TOPIC_HakonBanditen,"BanditÃ©, kteÅ™Ã­ okradli Hakona, se skrÃ½vajÃ­ kdesi v lesÃ­ch poblÃ­Å¾ mÄ›sta." );
 	
 	if (Pablo_AndreMelden == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Pablo_Add_12_23"); //Ale je tady ještì jedna vìc...
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_04"); //V Khorinidu se objevila èást uloupeného zboí.
-		AI_Output (other, self, "DIA_Pablo_Banditen_15_05"); //To znamená, e vìdí, jak lup propašovat do mìsta a pak ho tady prodat...
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_06"); //Jo, máme podezøení, e mají tady nìkde ve mìstì pøekupníka. Zatím se nám ale toho chlápka nepodaøilo chytit.
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_07"); //Pokud by se ti podaøilo na nìco pøijít, tak mìj na pamìti, e lord Andre vypsal na toho pašeráka odmìnu.
+		AI_Output (self ,other,"DIA_Pablo_Add_12_23"); //Ale je tady jeÅ¡tÄ› jedna vÄ›c...
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_04"); //V Khorinidu se objevila ÄÃ¡st uloupenÃ©ho zboÅ¾Ã­.
+		AI_Output (other, self, "DIA_Pablo_Banditen_15_05"); //To znamenÃ¡, Å¾e vÄ›dÃ­, jak lup propaÅ¡ovat do mÄ›sta a pak ho tady prodat...
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_06"); //Jo, mÃ¡me podezÅ™enÃ­, Å¾e majÃ­ tady nÄ›kde ve mÄ›stÄ› pÅ™ekupnÃ­ka. ZatÃ­m se nÃ¡m ale toho chlÃ¡pka nepodaÅ™ilo chytit.
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_07"); //Pokud by se ti podaÅ™ilo na nÄ›co pÅ™ijÃ­t, tak mÄ›j na pamÄ›ti, Å¾e lord Andre vypsal na toho paÅ¡erÃ¡ka odmÄ›nu.
 	
-		B_LogEntry(TOPIC_HakonBanditen,"Bandité mají ve mìstì nejspíš nìjakou spojku. Lord Andre nechal na tohoto jejich spojence vypsat odmìnu." );
+		B_LogEntry(TOPIC_HakonBanditen,"BanditÃ© majÃ­ ve mÄ›stÄ› nejspÃ­Å¡ nÄ›jakou spojku. Lord Andre nechal na tohoto jejich spojence vypsat odmÄ›nu." );
 	};
 }; 
 
@@ -217,7 +217,7 @@ INSTANCE DIA_Pablo_MyBandits   (C_INFO)
 	condition   = DIA_Pablo_MyBandits_Condition;
 	information = DIA_Pablo_MyBandits_Info;
 	permanent   = FALSE;
-	description = "Odkud byli ti bandité, kteøí mìli ten mùj obrázek?";
+	description = "Odkud byli ti banditÃ©, kteÅ™Ã­ mÄ›li ten mÅ¯j obrÃ¡zek?";
 };
 FUNC INT DIA_Pablo_MyBandits_Condition()
 {	
@@ -229,23 +229,23 @@ FUNC INT DIA_Pablo_MyBandits_Condition()
 };
 FUNC VOID DIA_Pablo_MyBandits_Info()
 {
-	AI_Output (other, self,"DIA_Pablo_Add_15_08"); //Odkud byli ti bandité, kteøí mìli ten mùj obrázek?
+	AI_Output (other, self,"DIA_Pablo_Add_15_08"); //Odkud byli ti banditÃ©, kteÅ™Ã­ mÄ›li ten mÅ¯j obrÃ¡zek?
 	if (Pablo_belogen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Pablo_Add_12_09"); //AHÁ! Take to nakonec BYL tvùj oblièej. Proè jsi to nepøiznal hned, co?
-		AI_Output (self ,other,"DIA_Pablo_Add_12_10"); //(naléhavì) Proè po tobì jdou?
-		AI_Output (other, self,"DIA_Pablo_Add_15_11"); //Já nevím - vánì!
-		AI_Output (self ,other,"DIA_Pablo_Add_12_12"); //Jasnì, jasnì. Chápu. Nìco ti øeknu. Kdybych si myslel, e jsi s tìmi bandity jedna ruka, u bys pìknì bruèel v chládku. Kapišto?
-		AI_Output (self ,other,"DIA_Pablo_Add_12_13"); //I tak bych to ale asi mìl nahlásit lordu Andremu...
+		AI_Output (self ,other,"DIA_Pablo_Add_12_09"); //AHÃ! TakÅ¾e to nakonec BYL tvÅ¯j obliÄej. ProÄ jsi to nepÅ™iznal hned, co?
+		AI_Output (self ,other,"DIA_Pablo_Add_12_10"); //(nalÃ©havÄ›) ProÄ po tobÄ› jdou?
+		AI_Output (other, self,"DIA_Pablo_Add_15_11"); //JÃ¡ nevÃ­m - vÃ¡Å¾nÄ›!
+		AI_Output (self ,other,"DIA_Pablo_Add_12_12"); //JasnÄ›, jasnÄ›. ChÃ¡pu. NÄ›co ti Å™eknu. Kdybych si myslel, Å¾e jsi s tÄ›mi bandity jedna ruka, uÅ¾ bys pÄ›knÄ› bruÄel v chlÃ¡dku. KapiÅ¡to?
+		AI_Output (self ,other,"DIA_Pablo_Add_12_13"); //I tak bych to ale asi mÄ›l nahlÃ¡sit lordu Andremu...
 		Pablo_AndreMelden = TRUE;
-		AI_Output (self ,other,"DIA_Pablo_Add_12_14"); //Ale co se tıèe té tvé otázky...
+		AI_Output (self ,other,"DIA_Pablo_Add_12_14"); //Ale co se tÃ½Äe tÃ© tvÃ© otÃ¡zky...
 	};
 
-	AI_Output (self ,other,"DIA_Pablo_Add_12_15"); //Sebrali jsme je poblí statkáøova sídla.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_16"); //Rozhodnì ale nevypadají jako Onarovi lidé.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_17"); //Øekl bych, e to byla èást menší skupinky, která se ukrıvá v horách poblí Onarovy farmy.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_18"); //Jestli bys ale mìl v plánu se tam vydat, musím tì varovat. Tihle hrdloøezové provedou s kadım krátkı proces!
-	AI_Output (other, self,"DIA_Pablo_Add_15_19"); //Budu to mít na pamìti.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_15"); //Sebrali jsme je poblÃ­Å¾ statkÃ¡Å™ova sÃ­dla.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_16"); //RozhodnÄ› ale nevypadajÃ­ jako Onarovi lidÃ©.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_17"); //Å˜ekl bych, Å¾e to byla ÄÃ¡st menÅ¡Ã­ skupinky, kterÃ¡ se ukrÃ½vÃ¡ v horÃ¡ch poblÃ­Å¾ Onarovy farmy.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_18"); //Jestli bys ale mÄ›l v plÃ¡nu se tam vydat, musÃ­m tÄ› varovat. Tihle hrdloÅ™ezovÃ© provedou s kaÅ¾dÃ½m krÃ¡tkÃ½ proces!
+	AI_Output (other, self,"DIA_Pablo_Add_15_19"); //Budu to mÃ­t na pamÄ›ti.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -266,7 +266,7 @@ FUNC INT DIA_Pablo_Perm_Condition()
 };
 FUNC VOID DIA_Pablo_Perm_Info()
 {
-	AI_Output (other, self, "DIA_Pablo_Perm_15_00"); //Jak to vypadá?
+	AI_Output (other, self, "DIA_Pablo_Perm_15_00"); //Jak to vypadÃ¡?
 	
 	if (Kapitel == 3)
 	{
@@ -275,41 +275,41 @@ FUNC VOID DIA_Pablo_Perm_Info()
 			if (hero.guild == GIL_MIL)
 			|| (hero.guild == GIL_PAL)
 			{
-				AI_Output (self, other, "DIA_Pablo_Perm_12_01"); //Vdycky jsem øíkal, e se tìm oldákùm nedá vìøit.
-				AI_Output (self, other, "DIA_Pablo_Perm_12_02"); //Je naèase, abychom tìm neøádùm uštìdøili lekci. Tohle nevymyslel Bennet sám o sobì.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_01"); //VÅ¾dycky jsem Å™Ã­kal, Å¾e se tÄ›m Å¾oldÃ¡kÅ¯m nedÃ¡ vÄ›Å™it.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_02"); //Je naÄase, abychom tÄ›m neÅ™Ã¡dÅ¯m uÅ¡tÄ›dÅ™ili lekci. Tohle nevymyslel Bennet sÃ¡m o sobÄ›.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
-				AI_Output (self, other, "DIA_Pablo_Perm_12_03"); //Jsem hluboce otøesen vradou ctihodného paladina Lothara.
-				AI_Output (self, other, "DIA_Pablo_Perm_12_04"); //Ale vìøím, e církev viníky spravedlivì potrestá.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_03"); //Jsem hluboce otÅ™esen vraÅ¾dou ctihodnÃ©ho paladina Lothara.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_04"); //Ale vÄ›Å™Ã­m, Å¾e cÃ­rkev vinÃ­ky spravedlivÄ› potrestÃ¡.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Pablo_Perm_12_05"); //Co e se tady potuluješ po okolí? Jestli máš v plánu osvobodit svého oldáckého pøítelíèka, tak na to rovnou zapomeò.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_05"); //Co Å¾e se tady potulujeÅ¡ po okolÃ­? Jestli mÃ¡Å¡ v plÃ¡nu osvobodit svÃ©ho Å¾oldÃ¡ckÃ©ho pÅ™Ã­telÃ­Äka, tak na to rovnou zapomeÅˆ.
 			};
 		}
 		else //Bennet ist unschuldig
 		{
-			AI_Output (self, other, "DIA_Pablo_Perm_12_06"); //To je k pláèi. Teï se nás snaí poštvat proti sobì navzájem.
-			AI_Output (self, other, "DIA_Pablo_Perm_12_07"); //Jestli nedokáete najít pravého vraha, skøeti nebudou muset ani hnout prstem.
+			AI_Output (self, other, "DIA_Pablo_Perm_12_06"); //To je k plÃ¡Äi. TeÄ se nÃ¡s snaÅ¾Ã­ poÅ¡tvat proti sobÄ› navzÃ¡jem.
+			AI_Output (self, other, "DIA_Pablo_Perm_12_07"); //Jestli nedokÃ¡Å¾ete najÃ­t pravÃ©ho vraha, skÅ™eti nebudou muset ani hnout prstem.
 		};
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_08"); //Dìlá mi starosti, co se stane, kdy teï paladinové odejdou.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_08"); //DÄ›lÃ¡ mi starosti, co se stane, kdyÅ¾ teÄ paladinovÃ© odejdou.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_09"); //Na nás se mùeš spolehnout. Pouijeme všechny dostupné prostøedky, aby tohle mìsto nezabøedlo do bahna bezpráví.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_09"); //Na nÃ¡s se mÅ¯Å¾eÅ¡ spolehnout. PouÅ¾ijeme vÅ¡echny dostupnÃ© prostÅ™edky, aby tohle mÄ›sto nezabÅ™edlo do bahna bezprÃ¡vÃ­.
 	}
 	else if (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_10"); //Mìj se na pozoru. Darebáky jako ty nespouštíme jen tak z oèí.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_10"); //MÄ›j se na pozoru. DarebÃ¡ky jako ty nespouÅ¡tÃ­me jen tak z oÄÃ­.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_11"); //Teï je docela klid. Problémy nám dìlají jen bandité za hradbami.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_11"); //TeÄ je docela klid. ProblÃ©my nÃ¡m dÄ›lajÃ­ jen banditÃ© za hradbami.
 	};	
 
 }; 

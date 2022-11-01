@@ -64,7 +64,7 @@ instance DIA_Addon_Erol_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_Hallo_Condition;
 	information	 = 	DIA_Addon_Erol_Hallo_Info;
 
-	description	 = 	"Co se dìje?";
+	description	 = 	"Co se dÄ›je?";
 };
 
 func int DIA_Addon_Erol_Hallo_Condition ()
@@ -74,9 +74,9 @@ func int DIA_Addon_Erol_Hallo_Condition ()
 
 func void DIA_Addon_Erol_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Hallo_15_00"); //Co se dìje?
-	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_01"); //(naštvanì) Co se dìje? Jen se koukni na ten binec tady pod tím mostem.
-	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_02"); //(naštvanì) Nìco takovıho jsem v ivotì nevidìl. Ty svinì by mìl nìkdo zlikvidovat, to ti povím.
+	AI_Output	(other, self, "DIA_Addon_Erol_Hallo_15_00"); //Co se dÄ›je?
+	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_01"); //(naÅ¡tvanÄ›) Co se dÄ›je? Jen se koukni na ten binec tady pod tÃ­m mostem.
+	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_02"); //(naÅ¡tvanÄ›) NÄ›co takovÃ½ho jsem v Å¾ivotÄ› nevidÄ›l. Ty svinÄ› by mÄ›l nÄ›kdo zlikvidovat, to ti povÃ­m.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -103,18 +103,18 @@ func int DIA_Addon_Erol_what_Condition ()
 func void DIA_Addon_Erol_what_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Erol_what_15_00"); //Co se stalo?
-	AI_Output	(self, other, "DIA_Addon_Erol_what_10_01"); //Byl jsem se svejma pomocníkama zrovna na cestì, kdy mi zèistajasna na vùz skoèily tyhle hnusnı bestie a kadıho zabily.
-	AI_Output	(self, other, "DIA_Addon_Erol_what_10_02"); //Mám kliku, e jsem ještì nezapomnìl pravej hák, jinak by bylo taky po mnì.
+	AI_Output	(self, other, "DIA_Addon_Erol_what_10_01"); //Byl jsem se svejma pomocnÃ­kama zrovna na cestÄ›, kdyÅ¾ mi zÄistajasna na vÅ¯z skoÄily tyhle hnusnÃ½ bestie a kaÅ¾dÃ½ho zabily.
+	AI_Output	(self, other, "DIA_Addon_Erol_what_10_02"); //MÃ¡m kliku, Å¾e jsem jeÅ¡tÄ› nezapomnÄ›l pravej hÃ¡k, jinak by bylo taky po mnÄ›.
 
 	Log_CreateTopic (TOPIC_Addon_Erol, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Erol, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Erol,"Obchodník Erol se stal obìtí banditù, kteøí se utáboøili u mostu poblí hospody U Mrtvé harpyje. Sebrali mu všechno jeho zboí, vèetnì jakıchsi cennıch kamennıch desek. Erol by byl velmi rád, kdybych mu je pøinesl zpìt."); 
+	B_LogEntry (TOPIC_Addon_Erol,"ObchodnÃ­k Erol se stal obÄ›tÃ­ banditÅ¯, kteÅ™Ã­ se utÃ¡boÅ™ili u mostu poblÃ­Å¾ hospody U MrtvÃ© harpyje. Sebrali mu vÅ¡echno jeho zboÅ¾Ã­, vÄetnÄ› jakÃ½chsi cennÃ½ch kamennÃ½ch desek. Erol by byl velmi rÃ¡d, kdybych mu je pÅ™inesl zpÄ›t."); 
 
 	MIS_Addon_Erol_BanditStuff = LOG_RUNNING;
 
 	Info_ClearChoices	(DIA_Addon_Erol_what);
-	Info_AddChoice	(DIA_Addon_Erol_what, "Tady ty vìci jsou tvoje?", DIA_Addon_Erol_what_dein );
-	Info_AddChoice	(DIA_Addon_Erol_what, "Kdo byli ti lidé?", DIA_Addon_Erol_what_wer );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Tady ty vÄ›ci jsou tvoje?", DIA_Addon_Erol_what_dein );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Kdo byli ti lidÃ©?", DIA_Addon_Erol_what_wer );
 };
 func void DIA_Addon_Erol_what_back ()
 {
@@ -122,60 +122,60 @@ func void DIA_Addon_Erol_what_back ()
 };
 func void DIA_Addon_Erol_what_dein ()
 {
-	AI_Output (other, self, "DIA_Addon_Erol_what_dein_15_00"); //Ty vìci pod mostem jsou tvoje?
-	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_01"); //Vùz, zboí, všecko.
+	AI_Output (other, self, "DIA_Addon_Erol_what_dein_15_00"); //Ty vÄ›ci pod mostem jsou tvoje?
+	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_01"); //VÅ¯z, zboÅ¾Ã­, vÅ¡ecko.
 	if (Npc_HasItems (other, itmi_erolskelch) > 0)
 	{
-		AI_Output (other, self, "DIA_Addon_Erol_what_dein_Add_15_00"); //Koukni, nìjaké vìci jsem ti našel.
-		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_01"); //Mùeš si je nechat. Teï u pro mì vìci ádnou cenu nemají.
+		AI_Output (other, self, "DIA_Addon_Erol_what_dein_Add_15_00"); //Koukni, nÄ›jakÃ© vÄ›ci jsem ti naÅ¡el.
+		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_01"); //MÅ¯Å¾eÅ¡ si je nechat. TeÄ uÅ¾ pro mÄ› vÄ›ci Å¾Ã¡dnou cenu nemajÃ­.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_02"); //Ale pro mì u ádnou cenu nemá vlastnì nic.
+		AI_Output (self, other, "DIA_Addon_Erol_what_dein_Add_10_02"); //Ale pro mÄ› uÅ¾ Å¾Ã¡dnou cenu nemÃ¡ vlastnÄ› nic.
 	};
-	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_02"); //Jediná nenahraditelná vìc, kterou mi sebrali, jsou tøi kamennı tabulky.
+	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_02"); //JedinÃ¡ nenahraditelnÃ¡ vÄ›c, kterou mi sebrali, jsou tÅ™i kamennÃ½ tabulky.
 
 	Info_AddChoice	(DIA_Addon_Erol_what, DIALOG_BACK, DIA_Addon_Erol_what_back );
-	Info_AddChoice	(DIA_Addon_Erol_what, "Kamenné tabulky?", DIA_Addon_Erol_what_Was );
+	Info_AddChoice	(DIA_Addon_Erol_what, "KamennÃ© tabulky?", DIA_Addon_Erol_what_Was );
 };
 func void DIA_Addon_Erol_what_Was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_Was_15_00"); //Kamenné tabulky?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_01"); //Slíbil jsem jednomu vodnímu mágovi z mìsta, e mu je pøinesu – chtìl je ode mì koupit.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_02"); //Musím je získat zpátky za kadou cenu, jinak bude moje povìst v tahu.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_Was_15_00"); //KamennÃ© tabulky?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_01"); //SlÃ­bil jsem jednomu vodnÃ­mu mÃ¡govi z mÄ›sta, Å¾e mu je pÅ™inesu â€“ chtÄ›l je ode mÄ› koupit.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_02"); //MusÃ­m je zÃ­skat zpÃ¡tky za kaÅ¾dou cenu, jinak bude moje povÄ›st v tahu.
 
-	Info_AddChoice	(DIA_Addon_Erol_what, "Kde jsi získal ty kamenné tabulky?", DIA_Addon_Erol_what_woher );
-	Info_AddChoice	(DIA_Addon_Erol_what, "Co s nimi mágové vody chtìjí dìlat?", DIA_Addon_Erol_what_KDW );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Kde jsi zÃ­skal ty kamennÃ© tabulky?", DIA_Addon_Erol_what_woher );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Co s nimi mÃ¡govÃ© vody chtÄ›jÃ­ dÄ›lat?", DIA_Addon_Erol_what_KDW );
 };
 func void DIA_Addon_Erol_what_KDW ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_KDW_15_00"); //Co s nimi chce dìlat?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_KDW_10_01"); //Prı je chce studovat, a tak mì poádal, abych mu pøinesl ještì další.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_KDW_15_00"); //Co s nimi chce dÄ›lat?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_KDW_10_01"); //PrÃ½ je chce studovat, a tak mÄ› poÅ¾Ã¡dal, abych mu pÅ™inesl jeÅ¡tÄ› dalÅ¡Ã­.
 };
 func void DIA_Addon_Erol_what_woher ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_woher_15_00"); //Kde jsi našel ty kamenné tabulky?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_01"); //Bejvaji u starejch budov, jako jsou mauzolea. A obèas taky v jeskyních.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_02"); //U jsem jich tomu vodnímu mágovi ve mìstì prodal spoustu.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_03"); //Ale tady jsou pìknì vzácnı. Vìtšinu z nich jsem našel severovıchodnì od Khorinidu.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_woher_15_00"); //Kde jsi naÅ¡el ty kamennÃ© tabulky?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_01"); //Bejvaji u starejch budov, jako jsou mauzolea. A obÄas taky v jeskynÃ­ch.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_02"); //UÅ¾ jsem jich tomu vodnÃ­mu mÃ¡govi ve mÄ›stÄ› prodal spoustu.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_03"); //Ale tady jsou pÄ›knÄ› vzÃ¡cnÃ½. VÄ›tÅ¡inu z nich jsem naÅ¡el severovÃ½chodnÄ› od Khorinidu.
 
-	Info_AddChoice	(DIA_Addon_Erol_what, "Proè se prostì nepoohlédneš po novıch?", DIA_Addon_Erol_what_neue );
+	Info_AddChoice	(DIA_Addon_Erol_what, "ProÄ se prostÄ› nepoohlÃ©dneÅ¡ po novÃ½ch?", DIA_Addon_Erol_what_neue );
 };
 func void DIA_Addon_Erol_what_neue ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_neue_15_00"); //Proè se prostì nepoohlédneš po novıch?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_01"); //V té bitce s bandity jsem si vymknul kotník.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_02"); //Sice mùu kulhat, ale pìšky s tou nohou moc daleko nedojdu.
+	AI_Output			(other, self, "DIA_Addon_Erol_what_neue_15_00"); //ProÄ se prostÄ› nepoohlÃ©dneÅ¡ po novÃ½ch?
+	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_01"); //V tÃ© bitce s bandity jsem si vymknul kotnÃ­k.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_02"); //Sice mÅ¯Å¾u kulhat, ale pÄ›Å¡ky s tou nohou moc daleko nedojdu.
 };
 func void DIA_Addon_Erol_what_wer ()
 {
 	AI_Output			(other, self, "DIA_Addon_Erol_what_wer_15_00"); //Co to bylo za lidi?
 	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_01"); //Banditi, kdo jinej? Obsadili tady ten most.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_02"); //Okradou kadıho, kdo se ho pokusí pøejít.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_03"); //Já vìdìl, e tu nìkde šmejdìj, a tak jsem to vzal dolem, pod mostem.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_04"); //Jene mùj vùz a všecko to zboí pro nì nejspíš bylo moc velkı lákadlo.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_05"); //Ti šmejdi prostì seskoèili z mostu – pøímo na mùj vùz.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_06"); //Mìl jsem se tam zkusit proplíit v noci.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_02"); //Okradou kaÅ¾dÃ½ho, kdo se ho pokusÃ­ pÅ™ejÃ­t.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_03"); //JÃ¡ vÄ›dÄ›l, Å¾e tu nÄ›kde Å¡mejdÄ›j, a tak jsem to vzal dolem, pod mostem.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_04"); //JenÅ¾e mÅ¯j vÅ¯z a vÅ¡ecko to zboÅ¾Ã­ pro nÄ› nejspÃ­Å¡ bylo moc velkÃ½ lÃ¡kadlo.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_05"); //Ti Å¡mejdi prostÄ› seskoÄili z mostu â€“ pÅ™Ã­mo na mÅ¯j vÅ¯z.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_06"); //MÄ›l jsem se tam zkusit proplÃ­Å¾it v noci.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -188,7 +188,7 @@ instance DIA_Addon_Erol_FernandosWeapons		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_FernandosWeapons_Condition;
 	information	 = 	DIA_Addon_Erol_FernandosWeapons_Info;
 
-	description	 = 	"Potøebuji informace o dodávce zbraní pro bandity.";
+	description	 = 	"PotÅ™ebuji informace o dodÃ¡vce zbranÃ­ pro bandity.";
 };
 
 func int DIA_Addon_Erol_FernandosWeapons_Condition ()
@@ -202,21 +202,21 @@ func int DIA_Addon_Erol_FernandosWeapons_Condition ()
 
 func void DIA_Addon_Erol_FernandosWeapons_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_FernandosWeapons_15_00"); //Potøebuju informace o dodávkách zbraní pro bandity.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_01"); //Dodávky zbraní? Jo, o tom vím. Òáká svinì z mìsta jim prodala tolik zbraní, e je sotva unesou.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_02"); //Nìkterı maj i na tom mostì, kde mì ti grázlové pøepadli.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_03"); //Zbytek nejspíš odtahali na náhorní pastviny za Bengarovım statkem.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_04"); //Moná je ti lotøi chtìli pøevézt pøes prùsmyk.
+	AI_Output	(other, self, "DIA_Addon_Erol_FernandosWeapons_15_00"); //PotÅ™ebuju informace o dodÃ¡vkÃ¡ch zbranÃ­ pro bandity.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_01"); //DodÃ¡vky zbranÃ­? Jo, o tom vÃ­m. Å‡Ã¡kÃ¡ svinÄ› z mÄ›sta jim prodala tolik zbranÃ­, Å¾e je sotva unesou.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_02"); //NÄ›kterÃ½ maj i na tom mostÄ›, kde mÄ› ti grÃ¡zlovÃ© pÅ™epadli.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_03"); //Zbytek nejspÃ­Å¡ odtahali na nÃ¡hornÃ­ pastviny za BengarovÃ½m statkem.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_04"); //MoÅ¾nÃ¡ je ti lotÅ™i chtÄ›li pÅ™evÃ©zt pÅ™es prÅ¯smyk.
 	
 	Info_ClearChoices	(DIA_Addon_Erol_FernandosWeapons);
 	Info_AddChoice	(DIA_Addon_Erol_FernandosWeapons, DIALOG_BACK, DIA_Addon_Erol_FernandosWeapons_back );
-	Info_AddChoice	(DIA_Addon_Erol_FernandosWeapons, "Kde jsou ty horní pastviny?", DIA_Addon_Erol_FernandosWeapons_bengar );
+	Info_AddChoice	(DIA_Addon_Erol_FernandosWeapons, "Kde jsou ty hornÃ­ pastviny?", DIA_Addon_Erol_FernandosWeapons_bengar );
 };
 func void DIA_Addon_Erol_FernandosWeapons_bengar ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_FernandosWeapons_bengar_15_00"); //Kde jsou ty náhorní pastviny?
-	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_01"); //Orlanova hospoda leí zhruba uprostøed ostrova Khorinis. Jmenuje se U Mrtvé harpyje.
-	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_02"); //Odtud vede cesta k jihu a ústí právì na náhorní pastviny u vchodu do prùsmyku k Hornickımu údolí.
+	AI_Output			(other, self, "DIA_Addon_Erol_FernandosWeapons_bengar_15_00"); //Kde jsou ty nÃ¡hornÃ­ pastviny?
+	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_01"); //Orlanova hospoda leÅ¾Ã­ zhruba uprostÅ™ed ostrova Khorinis. Jmenuje se U MrtvÃ© harpyje.
+	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_02"); //Odtud vede cesta k jihu a ÃºstÃ­ prÃ¡vÄ› na nÃ¡hornÃ­ pastviny u vchodu do prÅ¯smyku k HornickÃ½mu ÃºdolÃ­.
 	Info_ClearChoices	(DIA_Addon_Erol_FernandosWeapons);
 };
 
@@ -237,7 +237,7 @@ instance DIA_Addon_Erol_Stoneplates		(C_INFO)
 	information	 = 	DIA_Addon_Erol_Stoneplates_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"K tìm kamennım tabulkám...";
+	description	 = 	"K tÄ›m kamennÃ½m tabulkÃ¡m...";
 };
 
 func int DIA_Addon_Erol_Stoneplates_Condition ()
@@ -249,11 +249,11 @@ func int DIA_Addon_Erol_Stoneplates_Condition ()
 };
 
 var int StoneplatesCounter;
-const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); //Joly:Kohle für eine StonePlateCommon
+const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); //Joly:Kohle fÃ¼r eine StonePlateCommon
 
 func void DIA_Addon_Erol_Stoneplates_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Stoneplates_15_00"); //Co se tıèe tìch kamennıch tabulek...
+	AI_Output	(other, self, "DIA_Addon_Erol_Stoneplates_15_00"); //Co se tÃ½Äe tÄ›ch kamennÃ½ch tabulek...
 
 	if (Npc_HasItems (other,ItWr_StonePlateCommon_Addon) >= 1)
 	{
@@ -267,7 +267,7 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 		
 			if (StoneplatesCount == 1)
 				{
-					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_01"); //Jednu tady mám.
+					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_01"); //Jednu tady mÃ¡m.
 					B_GivePlayerXP (XP_Addon_BringStoneplate);
 					B_GiveInvItems (other, self, ItWr_StonePlateCommon_Addon, 1);
 				
@@ -276,7 +276,7 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 				}
 				else
 				{
-					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_02"); //Pár jich tu mám.
+					AI_Output		(other, self, "DIA_Addon_Erol_Stoneplates_15_02"); //PÃ¡r jich tu mÃ¡m.
 		
 					if ((StoneplatesCount + StoneplatesCounter) >= 3)
 					{
@@ -294,37 +294,37 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 				};
 				
 				
-			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_03"); //Dìkuju.
+			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_03"); //DÄ›kuju.
 		
 			if (StoneplatesCounter == 1)
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_04"); //Ještì poøád mi chybí dvì.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_04"); //JeÅ¡tÄ› poÅ™Ã¡d mi chybÃ­ dvÄ›.
 			}
 			else if	(StoneplatesCounter == 2)
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_05"); //Teï u mi schází jenom jedna.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_05"); //TeÄ uÅ¾ mi schÃ¡zÃ­ jenom jedna.
 			}
 			else // mindestens 3 Steintafeln hat er schon.
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_06"); //To staèí. Teï mùu dodret slovo, odnést je do mìsta a pak se koneènì vrátit domù.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_06"); //To staÄÃ­. TeÄ mÅ¯Å¾u dodrÅ¾et slovo, odnÃ©st je do mÄ›sta a pak se koneÄnÄ› vrÃ¡tit domÅ¯.
 				
 				MIS_Addon_Erol_BanditStuff = LOG_SUCCESS;
 				Wld_AssignRoomToGuild ("grpwaldhuette01",	GIL_PUBLIC);
 			};
 		
-			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_07"); //Samozøejmì ti za nì zaplatím.
+			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_07"); //SamozÅ™ejmÄ› ti za nÄ› zaplatÃ­m.
 
 			StoneplatesGeld	= (Addon_ErolsStoneplatesOffer * Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));
 		
 			CreateInvItems (self, ItMi_Gold, StoneplatesGeld); 
 			B_GiveInvItems (self, other, ItMi_Gold, StoneplatesGeld);
 			
-			Npc_RemoveInvItems	(self ,ItWr_StonePlateCommon_Addon 	, Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));//Joly: weil er zum Händler wird.
+			Npc_RemoveInvItems	(self ,ItWr_StonePlateCommon_Addon 	, Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));//Joly: weil er zum HÃ¤ndler wird.
 			
 			if (MIS_Addon_Erol_BanditStuff == LOG_SUCCESS)
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_08"); //Teï u mùu jít domù. Mùeš jít se mnou, jestli chceš.
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_09"); //A tam dojdem, moh bych ti pár vìcí prodat, kdy budeš chtít.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_08"); //TeÄ uÅ¾ mÅ¯Å¾u jÃ­t domÅ¯. MÅ¯Å¾eÅ¡ jÃ­t se mnou, jestli chceÅ¡.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_09"); //AÅ¾ tam dojdem, moh bych ti pÃ¡r vÄ›cÃ­ prodat, kdyÅ¾ budeÅ¡ chtÃ­t.
 				
 				AI_StopProcessInfos (self);
 				AI_UseMob			(self,"BENCH",-1);
@@ -338,13 +338,13 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 			if (C_ScHasMagicStonePlate () == TRUE)
 			{
 				AI_Output			(other, self, "DIA_Addon_Erol_Stoneplates_15_10"); //A co tahle?
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_11"); //Ne, tahle kamenná tabulka je magicky nabitá.
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_12"); //A vodní mágové bohuel tyhle tabulky nevykupujou.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_11"); //Ne, tahle kamennÃ¡ tabulka je magicky nabitÃ¡.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_12"); //A vodnÃ­ mÃ¡govÃ© bohuÅ¾el tyhle tabulky nevykupujou.
 			}
 			else
 			{			
 				AI_Output			(other, self, "DIA_Addon_Erol_Stoneplates_15_13"); //Kolik jich bylo?
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_14"); //Abych si zachránil povìst u vodních mágù ve mìstì, potøebuju tøi tabulky.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_14"); //Abych si zachrÃ¡nil povÄ›st u vodnÃ­ch mÃ¡gÅ¯ ve mÄ›stÄ›, potÅ™ebuju tÅ™i tabulky.
 			}; 
 	};
 };
@@ -359,7 +359,7 @@ instance DIA_Addon_Erol_Buerger		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_Buerger_Condition;
 	information	 = 	DIA_Addon_Erol_Buerger_Info;
 
-	description	 = 	"Ty jsi obèanem mìsta?";
+	description	 = 	"Ty jsi obÄanem mÄ›sta?";
 };
 
 func int DIA_Addon_Erol_Buerger_Condition ()
@@ -372,9 +372,9 @@ func int DIA_Addon_Erol_Buerger_Condition ()
 
 func void DIA_Addon_Erol_Buerger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Buerger_15_00"); //Ty jsi obèanem mìsta?
-	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_01"); //U jsem tam nebyl jak dlouho, hochu. Ale po tìch šmejdech z horní khorinidskı ètvrti se mi teda ani trochu nestejská.
-	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_02"); //Kdysi jsem tam sice nìjakej vliv mìl, ale to u je pár mìsícù.
+	AI_Output	(other, self, "DIA_Addon_Erol_Buerger_15_00"); //Ty jsi obÄanem mÄ›sta?
+	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_01"); //UÅ¾ jsem tam nebyl jak dlouho, hochu. Ale po tÄ›ch Å¡mejdech z hornÃ­ khorinidskÃ½ Ätvrti se mi teda ani trochu nestejskÃ¡.
+	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_02"); //Kdysi jsem tam sice nÄ›jakej vliv mÄ›l, ale to uÅ¾ je pÃ¡r mÄ›sÃ­cÅ¯.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -387,7 +387,7 @@ instance DIA_Addon_Erol_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_PreTeach_Condition;
 	information	 = 	DIA_Addon_Erol_PreTeach_Info;
 
-	description	 = 	"Tys dokázal zahnat bandity?";
+	description	 = 	"Tys dokÃ¡zal zahnat bandity?";
 };
 
 func int DIA_Addon_Erol_PreTeach_Condition ()
@@ -401,9 +401,9 @@ func int DIA_Addon_Erol_PreTeach_Condition ()
 func void DIA_Addon_Erol_PreTeach_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_00"); //Tys ty bandity zahnal?
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_01"); //Jo, ale urèitì ještì zùstali na mostì.
-	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_02"); //Mùeš mì nauèit dávat taky takové rány?
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_03"); //Samozøejmì e mùu.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_01"); //Jo, ale urÄitÄ› jeÅ¡tÄ› zÅ¯stali na mostÄ›.
+	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_02"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit dÃ¡vat taky takovÃ© rÃ¡ny?
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_03"); //SamozÅ™ejmÄ› Å¾e mÅ¯Å¾u.
 	Erol_Addon_TeachPlayer = TRUE;
 	Log_CreateTopic (Topic_OutTeacher,LOG_NOTE);
 	B_LogEntry (Topic_OutTeacher, LogText_Addon_Erol_Teach);
@@ -420,7 +420,7 @@ instance DIA_Addon_Erol_PreTrade		(C_INFO)
 	information	 = 	DIA_Addon_Erol_PreTrade_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 
 func int DIA_Addon_Erol_PreTrade_Condition ()
@@ -436,12 +436,12 @@ func int DIA_Addon_Erol_PreTrade_Condition ()
 func void DIA_Addon_Erol_PreTrade_Info ()
 {
 	B_Say (other,self,"$TRADE_2");
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_00"); //Nic ti prodat nemùu – všecko zboí mám tamhle pod mostem, hochu.
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_01"); //Prodat ti nìco mùu, teprve a se dostanu domù.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_00"); //Nic ti prodat nemÅ¯Å¾u â€“ vÅ¡ecko zboÅ¾Ã­ mÃ¡m tamhle pod mostem, hochu.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_01"); //Prodat ti nÄ›co mÅ¯Å¾u, teprve aÅ¾ se dostanu domÅ¯.
 
 	if (MIS_Addon_Erol_BanditStuff != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_02"); //Ale nemùu odsud odejít, dokud nebudu mít svı kamennı tabulky.
+		AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_02"); //Ale nemÅ¯Å¾u odsud odejÃ­t, dokud nebudu mÃ­t svÃ½ kamennÃ½ tabulky.
 	};
 };
 
@@ -455,7 +455,7 @@ instance DIA_Addon_Erol_SLD		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_SLD_Condition;
 	information	 = 	DIA_Addon_Erol_SLD_Info;
 
-	description	 = 	"Tohle je TVOJE chatrè?";
+	description	 = 	"Tohle je TVOJE chatrÄ?";
 };
 
 func int DIA_Addon_Erol_SLD_Condition ()
@@ -468,11 +468,11 @@ func int DIA_Addon_Erol_SLD_Condition ()
 var int Erol_IsAtHome;
 func void DIA_Addon_Erol_SLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_00"); //(pøekvapenì) Tohle je TVOJE chatrè?
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_01"); //Ano, proè? Co je s ní?
-	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_02"); //Nemáš problémy se oldáky?
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_03"); //Kdy se jim nepletu do øemesla, tak mì taky nechávaj na pokoji.
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_04"); //Krom toho jsou dobøí zákazníci, a kdy jim zaplatím, dohlíej mi tu na barák, dokud se nevrátím.
+	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_00"); //(pÅ™ekvapenÄ›) Tohle je TVOJE chatrÄ?
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_01"); //Ano, proÄ? Co je s nÃ­?
+	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_02"); //NemÃ¡Å¡ problÃ©my se Å¾oldÃ¡ky?
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_03"); //KdyÅ¾ se jim nepletu do Å™emesla, tak mÄ› taky nechÃ¡vaj na pokoji.
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_04"); //Krom toho jsou dobÅ™Ã­ zÃ¡kaznÃ­ci, a kdyÅ¾ jim zaplatÃ­m, dohlÃ­Å¾ej mi tu na barÃ¡k, dokud se nevrÃ¡tÃ­m.
 	B_GivePlayerXP (XP_Ambient);
 	if (Erol_IsAtHome == FALSE)
 	{
@@ -492,7 +492,7 @@ instance DIA_Addon_Erol_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Erol_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 
 func int DIA_Addon_Erol_Trade_Condition ()
@@ -508,7 +508,7 @@ func void DIA_Addon_Erol_Trade_Info ()
 {
 	B_GiveTradeInv (self);
 	B_Say (other,self,"$TRADE_2");
-	AI_Output	(self, other, "DIA_Addon_Erol_Trade_10_00"); //Obávám se, e moc velkej vıbìr nemám.
+	AI_Output	(self, other, "DIA_Addon_Erol_Trade_10_00"); //ObÃ¡vÃ¡m se, Å¾e moc velkej vÃ½bÄ›r nemÃ¡m.
 	
 	if (Erol_IsAtHome == FALSE)
 	{
@@ -531,7 +531,7 @@ INSTANCE DIA_Addon_Erol_Teach(C_INFO)
 	condition	= DIA_Addon_Erol_Teach_Condition;
 	information	= DIA_Addon_Erol_Teach_Info;
 	permanent	= TRUE;
-	description = "Uka mi, jak nepøátelùm zasazovat vìtší rány.";
+	description = "UkaÅ¾ mi, jak nepÅ™Ã¡telÅ¯m zasazovat vÄ›tÅ¡Ã­ rÃ¡ny.";
 };                       
 
 FUNC INT DIA_Addon_Erol_Teach_Condition()
@@ -544,26 +544,26 @@ FUNC INT DIA_Addon_Erol_Teach_Condition()
  
 FUNC VOID DIA_Addon_Erol_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Erol_Teach_15_00"); //Uka mi, jak dávat vìtší rány.
+	AI_Output (other,self ,"DIA_Addon_Erol_Teach_15_00"); //UkaÅ¾ mi, jak dÃ¡vat vÄ›tÅ¡Ã­ rÃ¡ny.
 
 	if (MIS_Addon_Erol_BanditStuff != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_01"); //Dobøe, ale nebude to zadarmo.
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_02"); //Pomoz mi zachránit povìst a pøines mi mı ztracenı kamennı tabulky.
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_03"); //Pak ti ukáu, jak v boji co nejlíp vyuívat vlastní síly.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_01"); //DobÅ™e, ale nebude to zadarmo.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_02"); //Pomoz mi zachrÃ¡nit povÄ›st a pÅ™ines mi mÃ½ ztracenÃ½ kamennÃ½ tabulky.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_03"); //Pak ti ukÃ¡Å¾u, jak v boji co nejlÃ­p vyuÅ¾Ã­vat vlastnÃ­ sÃ­ly.
 	}
 	else if (Erol_Bonus == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_00"); //Dobøe, tak dávej pozor. Ukáu ti jeden trik.
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_01"); //Kdy nìkomu dáváš ránu, nedìlej to jen silou pae, ale vlo do toho sílu celıho tìla.
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_02"); //Pootoè tìlem, vystrè rameno dopøedu a zároveò švihni paí.
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_03"); //(smìje se) Kdy se dobøe strefíš, poznáš ten rozdíl.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_00"); //DobÅ™e, tak dÃ¡vej pozor. UkÃ¡Å¾u ti jeden trik.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_01"); //KdyÅ¾ nÄ›komu dÃ¡vÃ¡Å¡ rÃ¡nu, nedÄ›lej to jen silou paÅ¾e, ale vloÅ¾ do toho sÃ­lu celÃ½ho tÄ›la.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_02"); //PootoÄ tÄ›lem, vystrÄ rameno dopÅ™edu a zÃ¡roveÅˆ Å¡vihni paÅ¾Ã­.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_03"); //(smÄ›je se) KdyÅ¾ se dobÅ™e strefÃ­Å¡, poznÃ¡Å¡ ten rozdÃ­l.
 		B_RaiseAttribute (other, ATR_STRENGTH, 1);
 		Erol_Bonus = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_04"); //Jestli se chceš nauèit víc, budeš muset tvrdì trénovat.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_04"); //Jestli se chceÅ¡ nauÄit vÃ­c, budeÅ¡ muset tvrdÄ› trÃ©novat.
 		Info_ClearChoices (DIA_Addon_Erol_Teach);
 		Info_AddChoice		(DIA_Addon_Erol_Teach, DIALOG_BACK, DIA_Addon_Erol_Teach_Back);
 		Info_AddChoice		(DIA_Addon_Erol_Teach, B_BuildLearnString(PRINT_LearnSTR1			, B_GetLearnCostAttribute(other, ATR_STRENGTH))			,DIA_Addon_Erol_Teach_STR_1);

@@ -1,7 +1,7 @@
 instance BDT_10025_Addon_Wache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Kuchaø";
+	name 		= "KuchaÅ™";
 	guild 		= GIL_BDT;
 	id 			= 10025;
 	voice 		= 7;

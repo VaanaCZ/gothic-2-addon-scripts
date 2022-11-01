@@ -4,7 +4,7 @@
 
 PROTOTYPE Mst_Default_Dragon_Fire(C_Npc)			
 {
-	name							= "Ohnivý drak";
+	name							= "OhnivÃ½ drak";
 	guild							= GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= ID_DRAGON_FIRE;
 	level							= 500;
@@ -33,7 +33,7 @@ PROTOTYPE Mst_Default_Dragon_Fire(C_Npc)
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
 	damage		[DAM_INDEX_FIRE]	=	149;
-	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt für Fire+Fly
+	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fÃ¼r Fire+Fly
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----	

@@ -30,7 +30,7 @@ instance DIA_Vatras_DI_HEAL		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_HEAL_Condition;
 	information	 = 	DIA_Vatras_DI_HEAL_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Vyleè mì.";
+	description	 = 	"VyleÄ mÄ›.";
 };
 
 func int DIA_Vatras_DI_HEAL_Condition ()
@@ -43,17 +43,17 @@ func int DIA_Vatras_DI_HEAL_Condition ()
 
 func void DIA_Vatras_DI_HEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_HEAL_15_00"); //Vyleè mì.
+	AI_Output			(other, self, "DIA_Vatras_DI_HEAL_15_00"); //VyleÄ mÄ›.
 	
 	if hero.attribute [ATR_HITPOINTS] < hero.attribute[ATR_HITPOINTS_MAX]
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_01"); //(zbonì) Adane, poehnej tomuto tìlu. Je pøedurèeno obnovit rovnováhu tohoto svìta.
+		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_01"); //(zboÅ¾nÄ›) Adane, poÅ¾ehnej tomuto tÄ›lu. Je pÅ™edurÄeno obnovit rovnovÃ¡hu tohoto svÄ›ta.
 		hero.attribute [ATR_HITPOINTS] = hero.attribute[ATR_HITPOINTS_MAX];
 		PrintScreen (PRINT_FullyHealed, - 1, - 1, FONT_Screen, 2);   
 	}
 	else 
 	{	
-		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_02"); //Tvé tìlo je teï bez zranìní.
+		AI_Output			(self, other, "DIA_Vatras_DI_HEAL_05_02"); //TvÃ© tÄ›lo je teÄ bez zranÄ›nÃ­.
 	};	
 };
  
@@ -69,7 +69,7 @@ instance DIA_Vatras_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Mùeš mi nìco prodat?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi nÄ›co prodat?";
 };
 
 func int DIA_Vatras_DI_TRADE_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Vatras_DI_TRADE_Condition ()
 
 func void DIA_Vatras_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_TRADE_15_00"); //Mùeš mi nìco prodat?
+	AI_Output			(other, self, "DIA_Vatras_DI_TRADE_15_00"); //MÅ¯Å¾eÅ¡ mi nÄ›co prodat?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Vatras_DI_TRADE_05_01"); //Tak co potøebuješ?
+	AI_Output			(self, other, "DIA_Vatras_DI_TRADE_05_01"); //Tak co potÅ™ebujeÅ¡?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -98,7 +98,7 @@ instance DIA_Vatras_DI_OBSESSION		(C_INFO)
 	information	 = 	DIA_Vatras_DI_OBSESSION_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Pomoz mi. Jsem prokletı!";
+	description	 = 	"Pomoz mi. Jsem prokletÃ½!";
 };
 
 func int DIA_Vatras_DI_OBSESSION_Condition ()
@@ -112,7 +112,7 @@ func int DIA_Vatras_DI_OBSESSION_Condition ()
 var int DIA_Vatras_DI_OBSESSION_Info_OneTime;
 func void DIA_Vatras_DI_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_OBSESSION_15_00"); //Pomoz mi. Jsem prokletı!
+	AI_Output			(other, self, "DIA_Vatras_DI_OBSESSION_15_00"); //Pomoz mi. Jsem prokletÃ½!
 
 	if (Got_HealObsession_Day<=(Wld_GetDay()-2))  
 		{
@@ -124,19 +124,19 @@ func void DIA_Vatras_DI_OBSESSION_Info ()
 		
 			if (Npc_HasItems (self,ItPo_HealObsession_MIS))
 			{
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_01"); //Vezmi si tenhle lektvar vykoupení. Pyrokar mi dal nìkolik tìch léèivıch lektvarù pro vlastní potøebu.
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_02"); //Nicménì vdycky pamatuj: mé prostøedky na odvrácení tìch noèních mùr jsou velmi omezené.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_01"); //Vezmi si tenhle lektvar vykoupenÃ­. Pyrokar mi dal nÄ›kolik tÄ›ch lÃ©ÄivÃ½ch lektvarÅ¯ pro vlastnÃ­ potÅ™ebu.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_02"); //NicmÃ©nÄ› vÅ¾dycky pamatuj: mÃ© prostÅ™edky na odvrÃ¡cenÃ­ tÄ›ch noÄnÃ­ch mÅ¯r jsou velmi omezenÃ©.
 				B_GiveInvItems (self, other, ItPo_HealObsession_MIS, 1);
 				Got_HealObsession_Day = Wld_GetDay(); 
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_03"); //Pyrokarovy zásoby jsou vyèerpány. Je mi opravdu líto, pøíteli. U ti nemùu nijak pomoct.
+				AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_03"); //Pyrokarovy zÃ¡soby jsou vyÄerpÃ¡ny. Je mi opravdu lÃ­to, pÅ™Ã­teli. UÅ¾ ti nemÅ¯Å¾u nijak pomoct.
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_04"); //Nevezmu si na svìdomí dát ti další lahvièku po tak krátké dobì. Vra se pozdìji, pøíteli.
+			AI_Output			(self, other, "DIA_Vatras_DI_OBSESSION_05_04"); //Nevezmu si na svÄ›domÃ­ dÃ¡t ti dalÅ¡Ã­ lahviÄku po tak krÃ¡tkÃ© dobÄ›. VraÅ¥ se pozdÄ›ji, pÅ™Ã­teli.
 		};
 };
 
@@ -150,7 +150,7 @@ instance DIA_Vatras_DI_RAT		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_RAT_Condition;
 	information	 = 	DIA_Vatras_DI_RAT_Info;
 
-	description	 = 	"Co mi mùeš dát za radu?";
+	description	 = 	"Co mi mÅ¯Å¾eÅ¡ dÃ¡t za radu?";
 };
 
 func int DIA_Vatras_DI_RAT_Condition ()
@@ -163,15 +163,15 @@ func int DIA_Vatras_DI_RAT_Condition ()
 };
 func void DIA_Vatras_DI_RAT_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_00"); //Co mi mùeš dát za radu?
-	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_01"); //Dr se od Pátraèù dál. Pamatuj, e ti jejich èernı pohled tady, daleko od kláštera, mùe zpùsobit váné obtíe.
+	AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_00"); //Co mi mÅ¯Å¾eÅ¡ dÃ¡t za radu?
+	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_01"); //DrÅ¾ se od PÃ¡traÄÅ¯ dÃ¡l. Pamatuj, Å¾e ti jejich ÄernÃ½ pohled tady, daleko od klÃ¡Å¡tera, mÅ¯Å¾e zpÅ¯sobit vÃ¡Å¾nÃ© obtÃ­Å¾e.
 
 	if (Npc_HasItems (other,ItAm_Prot_BlackEye_Mis))
 	{
-		AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_02"); //Nic se nedìje, mám amulet na vyvolávání duší.
+		AI_Output			(other, self, "DIA_Vatras_DI_RAT_15_02"); //Nic se nedÄ›je, mÃ¡m amulet na vyvolÃ¡vÃ¡nÃ­ duÅ¡Ã­.
 	};
 
-	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_03"); //Kdyby se ti pøesto cokoli stalo, pøijï za mnou. Uvidíme, co se dá dìlat.
+	AI_Output			(self, other, "DIA_Vatras_DI_RAT_05_03"); //Kdyby se ti pÅ™esto cokoli stalo, pÅ™ijÄ za mnou. UvidÃ­me, co se dÃ¡ dÄ›lat.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -184,7 +184,7 @@ instance DIA_Vatras_DI_PEDROTOT		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_PEDROTOT_Condition;
 	information	 = 	DIA_Vatras_DI_PEDROTOT_Info;
 
-	description	 = 	"Našel jsem toho zrádce Pedra.";
+	description	 = 	"NaÅ¡el jsem toho zrÃ¡dce Pedra.";
 };
 
 func int DIA_Vatras_DI_PEDROTOT_Condition ()
@@ -198,27 +198,27 @@ func int DIA_Vatras_DI_PEDROTOT_Condition ()
 var int DIA_Vatras_DI_PEDROTOT_VatrasSucked;
 func void DIA_Vatras_DI_PEDROTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_00"); //Našel jsem toho zrádce Pedra.
+	AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_00"); //NaÅ¡el jsem toho zrÃ¡dce Pedra.
 	B_GivePlayerXP (XP_Ambient);
 	
 	if (MIS_Gorax_KillPedro == LOG_SUCCESS)
 	&& (Npc_IsDead(Pedro_DI)) 
 	{
-		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_01"); //Je mrtvı.
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_02"); //Jsem opravdu zklamán. Tohle jsem si o tobì nemyslel.
-		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_03"); //Jak to myslíš?
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_04"); //Vím o tvé odporné dohodì s tìmi hady. Jsem hluboce otøesen tím, jak jsem nakonec pochybil.
+		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_01"); //Je mrtvÃ½.
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_02"); //Jsem opravdu zklamÃ¡n. Tohle jsem si o tobÄ› nemyslel.
+		AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_03"); //Jak to myslÃ­Å¡?
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_04"); //VÃ­m o tvÃ© odpornÃ© dohodÄ› s tÄ›mi hady. Jsem hluboce otÅ™esen tÃ­m, jak jsem nakonec pochybil.
 		DIA_Vatras_DI_PEDROTOT_VatrasSucked = TRUE;
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_05"); //Tak ho pøiveï sem na palubu. Pøedáme ho úøadùm v Khorinidu.
+		AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_05"); //Tak ho pÅ™iveÄ sem na palubu. PÅ™edÃ¡me ho ÃºÅ™adÅ¯m v Khorinidu.
 
 		if (Npc_IsDead(Pedro_DI)) 
 		{
-			AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_06"); //Teï u je trochu pozdì. Je mrtvı.
-			AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_07"); //(pøekvapenì) Ó, to je politováníhodné. Budu se modlit za jeho nebohou duši.
+			AI_Output			(other, self, "DIA_Vatras_DI_PEDROTOT_15_06"); //TeÄ uÅ¾ je trochu pozdÄ›. Je mrtvÃ½.
+			AI_Output			(self, other, "DIA_Vatras_DI_PEDROTOT_05_07"); //(pÅ™ekvapenÄ›) Ã“, to je politovÃ¡nÃ­hodnÃ©. Budu se modlit za jeho nebohou duÅ¡i.
 		}
 		else
 		{
@@ -254,7 +254,7 @@ func int DIA_Vatras_DI_VatrasSucked_Condition ()
 
 func void DIA_Vatras_DI_VatrasSucked_Info ()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_VatrasSucked_05_00"); //Bì mi z oèí, ty vrahu. Nemùeš u ode mì oèekávat absolutnì ádnou pomoc.
+	AI_Output			(self, other, "DIA_Vatras_DI_VatrasSucked_05_00"); //BÄ›Å¾ mi z oÄÃ­, ty vrahu. NemÅ¯Å¾eÅ¡ uÅ¾ ode mÄ› oÄekÃ¡vat absolutnÄ› Å¾Ã¡dnou pomoc.
 	AI_StopProcessInfos (self);
 };
 
@@ -269,7 +269,7 @@ INSTANCE DIA_Vatras_DI_Talente (C_INFO)
 	information		= DIA_Vatras_DI_Talente_Info;
 	permanent		= TRUE;
 
-	description		= "Nauè mì nìco z tvıch schopností."; 
+	description		= "NauÄ mÄ› nÄ›co z tvÃ½ch schopnostÃ­."; 
 };
 
 FUNC INT DIA_Vatras_DI_Talente_Condition()
@@ -281,8 +281,8 @@ FUNC INT DIA_Vatras_DI_Talente_Condition()
 };
 FUNC VOID DIA_Vatras_DI_Talente_Info ()
 {	
-	AI_Output			(other, self, "DIA_Vatras_DI_Talente_15_00"); //Nauè mì nìco ze svıch schopností.
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_05_01"); //Udìlám, co bude v mıch silách.
+	AI_Output			(other, self, "DIA_Vatras_DI_Talente_15_00"); //NauÄ mÄ› nÄ›co ze svÃ½ch schopnostÃ­.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_05_01"); //UdÄ›lÃ¡m, co bude v mÃ½ch silÃ¡ch.
 	
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	Info_AddChoice	  (DIA_Vatras_DI_Talente, DIALOG_BACK, DIA_Vatras_DI_Talente_BACK);
@@ -291,7 +291,7 @@ FUNC VOID DIA_Vatras_DI_Talente_Info ()
 	{
 		Info_AddChoice	  (DIA_Vatras_DI_Talente, "Kruhy magie", DIA_Vatras_DI_Talente_CIRCLES);
 	};
-	Info_AddChoice	  (DIA_Vatras_DI_Talente, "Alchymie - umìní míchat lektvary", DIA_Vatras_DI_Talente_ALCHIMIE);
+	Info_AddChoice	  (DIA_Vatras_DI_Talente, "Alchymie - umÄ›nÃ­ mÃ­chat lektvary", DIA_Vatras_DI_Talente_ALCHIMIE);
 };
 
 //**********************************************************
@@ -340,17 +340,17 @@ FUNC VOID DIA_Vatras_DI_Talente_ALCHIMIE ()
 	
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Esence hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Vatras_DI_Talente_POTION_Health_01);	  
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Esence hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_01)), DIA_Vatras_DI_Talente_POTION_Health_01);	  
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Extrakt hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Vatras_DI_Talente_POTION_Health_02);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Extrakt hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_02)), DIA_Vatras_DI_Talente_POTION_Health_02);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixír hojivé síly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Vatras_DI_Talente_POTION_Health_03);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("ElixÃ­r hojivÃ© sÃ­ly", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Health_03)), DIA_Vatras_DI_Talente_POTION_Health_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
 	{
@@ -364,7 +364,7 @@ FUNC VOID DIA_Vatras_DI_Talente_ALCHIMIE ()
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_02] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixír many", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), DIA_Vatras_DI_Talente_POTION_Mana_03);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("ElixÃ­r many", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Mana_03)), DIA_Vatras_DI_Talente_POTION_Mana_03);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Speed] == FALSE)
 	{
@@ -372,21 +372,21 @@ FUNC VOID DIA_Vatras_DI_Talente_ALCHIMIE ()
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixír síly"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), DIA_Vatras_DI_Talente_POTION_Perm_STR);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("ElixÃ­r sÃ­ly"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_STR)), DIA_Vatras_DI_Talente_POTION_Perm_STR);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_DEX] == FALSE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixír obratnosti"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), DIA_Vatras_DI_Talente_POTION_Perm_DEX);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("ElixÃ­r obratnosti"		, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_DEX)), DIA_Vatras_DI_Talente_POTION_Perm_DEX);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Mana] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Mana_03] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixír ducha"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), DIA_Vatras_DI_Talente_POTION_Perm_Mana);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("ElixÃ­r ducha"	, 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Mana)), DIA_Vatras_DI_Talente_POTION_Perm_Mana);
 	};
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
 	&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)
 	{
-		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("Elixír ivota", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Vatras_DI_Talente_POTION_Perm_Health);
+		Info_AddChoice	  (DIA_Vatras_DI_Talente, B_BuildLearnString ("ElixÃ­r Å¾ivota", 	B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Vatras_DI_Talente_POTION_Perm_Health);
 	};
 };
 //***************************************************************************
@@ -416,14 +416,14 @@ FUNC VOID DIA_Vatras_DI_Talente_Circle_4()
 };
 FUNC VOID DIA_Vatras_DI_Talente_Circle_5()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_5_05_00"); //Stal ses mágem pátého kruhu. Pouívej své vìdomosti s rozvahou.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_5_05_00"); //Stal ses mÃ¡gem pÃ¡tÃ©ho kruhu. PouÅ¾Ã­vej svÃ© vÄ›domosti s rozvahou.
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	B_TeachMagicCircle (self, other, 5);
 };
 FUNC VOID DIA_Vatras_DI_Talente_Circle_6()
 {
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00"); //Právì jsi získal pøístup k nejvyšším magickım vìdomostem.
-	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01"); //Nech se vést rozumem a ovládej své lidské slabosti. Jinak ti mohou zastøít zrak.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_00"); //PrÃ¡vÄ› jsi zÃ­skal pÅ™Ã­stup k nejvyÅ¡Å¡Ã­m magickÃ½m vÄ›domostem.
+	AI_Output			(self, other, "DIA_Vatras_DI_Talente_Circle_6_05_01"); //Nech se vÃ©st rozumem a ovlÃ¡dej svÃ© lidskÃ© slabosti. Jinak ti mohou zastÅ™Ã­t zrak.
 	Info_ClearChoices (DIA_Vatras_DI_Talente);
 	B_TeachMagicCircle (self, other, 6);
 };
@@ -494,7 +494,7 @@ instance DIA_Vatras_DI_DementorObsessionBook		(C_INFO)
 	information	 = 	DIA_Vatras_DI_DementorObsessionBook_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Získal jsem Almanach posedlıch.";
+	description	 = 	"ZÃ­skal jsem Almanach posedlÃ½ch.";
 };
 
 func int DIA_Vatras_DI_DementorObsessionBook_Condition ()
@@ -508,16 +508,16 @@ func int DIA_Vatras_DI_DementorObsessionBook_Condition ()
 var int DIA_Vatras_DI_DementorObsessionBook_OneTime;
 func void DIA_Vatras_DI_DementorObsessionBook_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_DementorObsessionBook_15_00"); //Mám tady Almanach prokletıch.
+	AI_Output			(other, self, "DIA_Vatras_DI_DementorObsessionBook_15_00"); //MÃ¡m tady Almanach prokletÃ½ch.
 	if (DIA_Vatras_DI_DementorObsessionBook_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_01"); //Hm. Mám dojem, e bude lepší, kdy ho vezmu Pyrokarovi do kláštera, jestli se tedy odsud ještì nìkdy dostaneme.
+		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_01"); //Hm. MÃ¡m dojem, Å¾e bude lepÅ¡Ã­, kdyÅ¾ ho vezmu Pyrokarovi do klÃ¡Å¡tera, jestli se tedy odsud jeÅ¡tÄ› nÄ›kdy dostaneme.
 		
 		DIA_Vatras_DI_DementorObsessionBook_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_02"); //Máš jich víc? Pøines mi všechno, co najdeš.
+		AI_Output			(self, other, "DIA_Vatras_DI_DementorObsessionBook_05_02"); //MÃ¡Å¡ jich vÃ­c? PÅ™ines mi vÅ¡echno, co najdeÅ¡.
 	};
 	B_GiveInvItems (other, self, ITWR_DementorObsessionBook_MIS,1);
 	B_GivePlayerXP (XP_Ambient);
@@ -533,7 +533,7 @@ instance DIA_Vatras_DI_UndeadDragonDead		(C_INFO)
 	condition	 = 	DIA_Vatras_DI_UndeadDragonDead_Condition;
 	information	 = 	DIA_Vatras_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Dokázal jsem to.";
+	description	 = 	"DokÃ¡zal jsem to.";
 };
 
 func int DIA_Vatras_DI_UndeadDragonDead_Condition ()
@@ -547,37 +547,37 @@ func int DIA_Vatras_DI_UndeadDragonDead_Condition ()
 var int DIA_Vatras_DI_UndeadDragonDead_OneTime;
 func void DIA_Vatras_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_DI_UndeadDragonDead_15_00"); //Dokázal jsem to.
+	AI_Output			(other, self, "DIA_Vatras_DI_UndeadDragonDead_15_00"); //DokÃ¡zal jsem to.
 
 	if (DIA_Vatras_DI_UndeadDragonDead_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_01"); //Já vím, vycítil jsem to.
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_02"); //Zasadil jsi Beliarovi ránu, ze které se jen tak nedostane.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_01"); //JÃ¡ vÃ­m, vycÃ­til jsem to.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_02"); //Zasadil jsi Beliarovi rÃ¡nu, ze kterÃ© se jen tak nedostane.
 	
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (other, self, "DIA_Vatras_DI_UndeadDragonDead_15_03"); //Mùu teï odejít, nebo máte vy mágové v zásobì ještì nìjaké kostlivce, co potøebujou opustit tenhle svìt?
+			AI_Output (other, self, "DIA_Vatras_DI_UndeadDragonDead_15_03"); //MÅ¯Å¾u teÄ odejÃ­t, nebo mÃ¡te vy mÃ¡govÃ© v zÃ¡sobÄ› jeÅ¡tÄ› nÄ›jakÃ© kostlivce, co potÅ™ebujou opustit tenhle svÄ›t?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_04"); //Ale mìj na pamìti, e to byla jen pouhá epizoda z vìèné války mezi dobrem a zlem.
+			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_04"); //Ale mÄ›j na pamÄ›ti, Å¾e to byla jen pouhÃ¡ epizoda z vÄ›ÄnÃ© vÃ¡lky mezi dobrem a zlem.
 		};
 		
-		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_05"); //Zlo si vdycky najde zpùsob, jak se dostat na tenhle svìt. Válka nikdy neskonèí.
+		AI_Output			(self, other, "DIA_Vatras_DI_UndeadDragonDead_05_05"); //Zlo si vÅ¾dycky najde zpÅ¯sob, jak se dostat na tenhle svÄ›t. VÃ¡lka nikdy neskonÄÃ­.
 		
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_06"); //Jako bojovník dobra bys to mìl vìdìt.
+			AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_06"); //Jako bojovnÃ­k dobra bys to mÄ›l vÄ›dÄ›t.
 		};
 			
-		AI_Output (self, other, "DIA_Vatras_Add_05_15"); //Jedinì sám Adanos stojí mezi válèícími bohy, aby zajistil rovnováhu sil.
-		AI_Output (other, self, "DIA_Vatras_Add_15_16"); //Mìl mi radši pomoct.
-		AI_Output (self, other, "DIA_Vatras_Add_05_17"); //(uliènicky) Ale vdy právì to udìlal - tím si mùeš bıt jist.
+		AI_Output (self, other, "DIA_Vatras_Add_05_15"); //JedinÄ› sÃ¡m Adanos stojÃ­ mezi vÃ¡lÄÃ­cÃ­mi bohy, aby zajistil rovnovÃ¡hu sil.
+		AI_Output (other, self, "DIA_Vatras_Add_15_16"); //MÄ›l mi radÅ¡i pomoct.
+		AI_Output (self, other, "DIA_Vatras_Add_05_17"); //(uliÄnicky) Ale vÅ¾dyÅ¥ prÃ¡vÄ› to udÄ›lal - tÃ­m si mÅ¯Å¾eÅ¡ bÃ½t jist.
 					
 		DIA_Vatras_DI_UndeadDragonDead_OneTime = TRUE;
 	};	
 
-	AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_09"); //Øekni kapitánovi, e má co nejdøíve zvednout kotvy. Momentální mír mùe bıt dost ošidnı.
+	AI_Output (self, other, "DIA_Vatras_DI_UndeadDragonDead_05_09"); //Å˜ekni kapitÃ¡novi, Å¾e mÃ¡ co nejdÅ™Ã­ve zvednout kotvy. MomentÃ¡lnÃ­ mÃ­r mÅ¯Å¾e bÃ½t dost oÅ¡idnÃ½.
 };
  
 ///////////////////////////////////////////////////////////////////////

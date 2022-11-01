@@ -51,32 +51,32 @@ FUNC INT DIA_Dragon_Fire_Island_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //Stùj, èlovìèe. Všechny mé smysly mi øíkají, e vrah mé vlastní krve stojí právì pøede mnou.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //Vánì? Komu øíkáš vrahu, ty zplozenèe pekel?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_00"); //StÅ¯j, ÄlovÄ›Äe. VÅ¡echny mÃ© smysly mi Å™Ã­kajÃ­, Å¾e vrah mÃ© vlastnÃ­ krve stojÃ­ prÃ¡vÄ› pÅ™ede mnou.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_01"); //VÃ¡Å¾nÄ›? Komu Å™Ã­kÃ¡Å¡ vrahu, ty zplozenÄe pekel?
 	
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Copak ti nestaèí, es vyvradil všechny moje potomky?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Copak ti nestaÄÃ­, Å¾es vyvraÅ¾dil vÅ¡echny moje potomky?
 	};
 	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Máš na svìdomí mého bratra Feomathara a za to zaplatíš.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //MÃ¡Å¡ na svÄ›domÃ­ mÃ©ho bratra Feomathara a za to zaplatÃ­Å¡.
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //A taky dostanu i zbytek tìch tvıch odpornıch mláïat.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrr. Bude mi potìšením tì usmait zaiva.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //A taky dostanu i zbytek tÄ›ch tvÃ½ch odpornÃ½ch mlÃ¡Äat.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Arrr. Bude mi potÄ›Å¡enÃ­m tÄ› usmaÅ¾it zaÅ¾iva.
 	};
 
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //Pøestaò dìlat takovej rámus. Vrátíme se k vìci.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_07"); //Došel jsi daleko, èlovíèku, ale tyhle sínì nikdy ivı neopustíš.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //PÅ™estaÅˆ dÄ›lat takovej rÃ¡mus. VrÃ¡tÃ­me se k vÄ›ci.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_07"); //DoÅ¡el jsi daleko, ÄlovÃ­Äku, ale tyhle sÃ­nÄ› nikdy Å¾ivÃ½ neopustÃ­Å¡.
 
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Další ohnivı drak. Zaèínám mít tìch bestií fakt plné zuby. A to se chci jenom dostat pøes rokli, která se otvírá právì za touhle ohnivou potvorou!"); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"DalÅ¡Ã­ ohnivÃ½ drak. ZaÄÃ­nÃ¡m mÃ­t tÄ›ch bestiÃ­ fakt plnÃ© zuby. A to se chci jenom dostat pÅ™es rokli, kterÃ¡ se otvÃ­rÃ¡ prÃ¡vÄ› za touhle ohnivou potvorou!"); 
 
 	DragonTalk_Exit_Free  = FALSE;
 	self.flags =  0;

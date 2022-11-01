@@ -40,11 +40,11 @@ func void DIA_PAL_297_TRESPAS_Info ()
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //Okolí je hodnì nebezpeèné, take by ses mìl moná vrátit - rozhodnì nechceme, aby se ti nìco stalo.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //OkolÃ­ je hodnÄ› nebezpeÄnÃ©, takÅ¾e by ses mÄ›l moÅ¾nÃ¡ vrÃ¡tit - rozhodnÄ› nechceme, aby se ti nÄ›co stalo.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //Vstoupit do údolí chce hodnì odvahy. Alespoò e u sebe máš dostatek léèivıch lektvarù.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //Vstoupit do ÃºdolÃ­ chce hodnÄ› odvahy. AlespoÅˆ Å¾e u sebe mÃ¡Å¡ dostatek lÃ©ÄivÃ½ch lektvarÅ¯.
 	};
 };
 
@@ -58,7 +58,7 @@ instance DIA_Addon_PAL_297_Rangerbandits		(C_INFO)
 	condition	 = 	DIA_Addon_PAL_297_Rangerbandits_Condition;
 	information	 = 	DIA_Addon_PAL_297_Rangerbandits_Info;
 
-	description	 = 	"Zahlédls tu poslední dobou nìjaké bandity?";
+	description	 = 	"ZahlÃ©dls tu poslednÃ­ dobou nÄ›jakÃ© bandity?";
 };
 
 func int DIA_Addon_PAL_297_Rangerbandits_Condition ()
@@ -71,9 +71,9 @@ func int DIA_Addon_PAL_297_Rangerbandits_Condition ()
 
 func void DIA_Addon_PAL_297_Rangerbandits_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_PAL_297_Rangerbandits_15_00"); //Neprošli tudy v poslední dobì nìjací banditi?
-	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_01"); //Nevím, o èem to mluvíš. Co jsme tu na strái, tak tudy neprošel nikdo. Nato nìjakı všiváckı banditi.
-	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_02"); //Ale optej se tam tìch vidlákù, tøeba nìco zahlídli.
+	AI_Output	(other, self, "DIA_Addon_PAL_297_Rangerbandits_15_00"); //NeproÅ¡li tudy v poslednÃ­ dobÄ› nÄ›jacÃ­ banditi?
+	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_01"); //NevÃ­m, o Äem to mluvÃ­Å¡. Co jsme tu na strÃ¡Å¾i, tak tudy neproÅ¡el nikdo. NatoÅ¾ nÄ›jakÃ½ vÅ¡ivÃ¡ckÃ½ banditi.
+	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_02"); //Ale optej se tam tÄ›ch vidlÃ¡kÅ¯, tÅ™eba nÄ›co zahlÃ­dli.
 };
  
 

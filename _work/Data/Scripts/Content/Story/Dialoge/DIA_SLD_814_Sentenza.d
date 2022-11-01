@@ -49,32 +49,32 @@ FUNC INT DIA_Sentenza_Hello_Condition()
  
 FUNC VOID DIA_Sentenza_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sentenza_Hello_09_00");	//Kam si myslíš, e jdeš?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_09_00");	//Kam si myslÃ­Å¡, Å¾e jdeÅ¡?
 	
 	self.aivar[AIV_LastFightComment] = TRUE;
 	Sentenza_SearchDay = B_GetDayPlus();
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "A co je ti vlastnì do toho?" 			,DIA_Sentenza_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Chtìl jsem se tu jen trochu porozhlédnout, nic víc."	,DIA_Sentenza_Hello_JustLooking);
+	Info_AddChoice		(DIA_Sentenza_Hello, "A co je ti vlastnÄ› do toho?" 			,DIA_Sentenza_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Sentenza_Hello, "ChtÄ›l jsem se tu jen trochu porozhlÃ©dnout, nic vÃ­c."	,DIA_Sentenza_Hello_JustLooking);
 };
 
 func void DIA_Sentenza_Hello_JustLooking()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_JustLooking_15_00"); //Chtìl jsem se tu jen trochu porozhlédnout, nic víc.
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_01"); //(smìje se) Na takové jako ty tu èíhá spousta nebezpeèí! A ty mi øíkáš, e se tu chceš jen tak porozhlédnout?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_02"); //Ha! Ty chceš urèitì na statek! Proè by ses jinak plahoèil takovı lán cesty, co?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_03"); //Tak pøestaò plácat kraviny a nech mì, a tì prohledám. Pak si mùeš jít zase po svém.
+	AI_Output (other, self,"DIA_Sentenza_Hello_JustLooking_15_00"); //ChtÄ›l jsem se tu jen trochu porozhlÃ©dnout, nic vÃ­c.
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_01"); //(smÄ›je se) Na takovÃ© jako ty tu ÄÃ­hÃ¡ spousta nebezpeÄÃ­! A ty mi Å™Ã­kÃ¡Å¡, Å¾e se tu chceÅ¡ jen tak porozhlÃ©dnout?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_02"); //Ha! Ty chceÅ¡ urÄitÄ› na statek! ProÄ by ses jinak plahoÄil takovÃ½ lÃ¡n cesty, co?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_03"); //Tak pÅ™estaÅˆ plÃ¡cat kraviny a nech mÄ›, aÅ¥ tÄ› prohledÃ¡m. Pak si mÅ¯Å¾eÅ¡ jÃ­t zase po svÃ©m.
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Dej ty pracky pryè."				,DIA_Sentenza_Hello_HandsOff);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Jen si poslu, pro mì za mì si mì klidnì prohledej!" 			,DIA_Sentenza_Hello_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Dej ty pracky pryÄ."				,DIA_Sentenza_Hello_HandsOff);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Jen si posluÅ¾, pro mÄ› za mÄ› si mÄ› klidnÄ› prohledej!" 			,DIA_Sentenza_Hello_SearchMe);
 };
 
 func void DIA_Sentenza_Hello_NotYourBusiness()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_NotYourBusiness_15_00"); //A co je ti vlastnì do toho?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_NotYourBusiness_09_01"); //(povzdech) Tak to ti budu muset dùkladnì vysvìtlit.
+	AI_Output (other, self,"DIA_Sentenza_Hello_NotYourBusiness_15_00"); //A co je ti vlastnÄ› do toho?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_NotYourBusiness_09_01"); //(povzdech) Tak to ti budu muset dÅ¯kladnÄ› vysvÄ›tlit.
 	
 	AI_StopProcessInfos (self);
 	
@@ -85,32 +85,32 @@ func void DIA_Sentenza_Hello_NotYourBusiness()
 	{
 		var int playerGold; playerGold = Npc_HasItems(other, ItMi_Gold);
 		
-		AI_Output (other, self,"DIA_Sentenza_Hello_SearchMe_15_00"); //Jen si poslu, klidnì si mì prohledej!
-		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_01"); //Tak se podívejme, copak to tu máš.
+		AI_Output (other, self,"DIA_Sentenza_Hello_SearchMe_15_00"); //Jen si posluÅ¾, klidnÄ› si mÄ› prohledej!
+		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_01"); //Tak se podÃ­vejme, copak to tu mÃ¡Å¡.
 		
 		if (playerGold >= 50)
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_02"); //Á, zlato! Vláèet s sebou tolik penìz, to mùe bıt poøádnì nebezpeèné.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_03"); //Spousta oldákù jsou prachsprostí hrdloøezové, ne tak poctiví jako já.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_02"); //Ã, zlato! VlÃ¡Äet s sebou tolik penÄ›z, to mÅ¯Å¾e bÃ½t poÅ™Ã¡dnÄ› nebezpeÄnÃ©.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_03"); //Spousta Å¾oldÃ¡kÅ¯ jsou prachsprostÃ­ hrdloÅ™ezovÃ©, ne tak poctivÃ­ jako jÃ¡.
 			B_GiveInvItems (other, self, ItMi_Gold, 50);
 			Sentenza_GoldTaken = TRUE;
 		}
 		else if (playerGold > 0)
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_04"); //No, to toho teda moc nemáš.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_05"); //Vrátím se k tobì pozdìji.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_04"); //No, to toho teda moc nemÃ¡Å¡.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_05"); //VrÃ¡tÃ­m se k tobÄ› pozdÄ›ji.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_06"); //Tos ušel takovou štreku a nemáš ani mìïák?
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_07"); //Nezdá se mi ale, e bys nìjak trpìl hladem. Urèitì si nìkde òákou tu škváru schováváš, co?
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_08"); //Je vidìt, e nejsi úplnì blbej. Urèitì se ještì setkáme - tak na sebe zatím dávej pozor!
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_09"); //A nejspíš jenom ty sám víš, kde svoje zlato máš.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_06"); //Tos uÅ¡el takovou Å¡treku a nemÃ¡Å¡ ani mÄ›ÄÃ¡k?
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_07"); //NezdÃ¡ se mi ale, Å¾e bys nÄ›jak trpÄ›l hladem. UrÄitÄ› si nÄ›kde ÅˆÃ¡kou tu Å¡kvÃ¡ru schovÃ¡vÃ¡Å¡, co?
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_08"); //Je vidÄ›t, Å¾e nejsi ÃºplnÄ› blbej. UrÄitÄ› se jeÅ¡tÄ› setkÃ¡me - tak na sebe zatÃ­m dÃ¡vej pozor!
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_09"); //A nejspÃ­Å¡ jenom ty sÃ¡m vÃ­Å¡, kde svoje zlato mÃ¡Å¡.
 		};
 		
 		Sentenza_Wants50 = TRUE;
 
-		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_10"); //Já po tobì chci jenom 50 zlaákù jako mıtné. A staèí, kdy to zaplatíš jednou - to je pøece fér, ne?
+		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_10"); //JÃ¡ po tobÄ› chci jenom 50 zlaÅ¥Ã¡kÅ¯ jako mÃ½tnÃ©. A staÄÃ­, kdyÅ¾ to zaplatÃ­Å¡ jednou - to je pÅ™ece fÃ©r, ne?
 	};
 
 func void DIA_Sentenza_Hello_SearchMe()
@@ -121,18 +121,18 @@ func void DIA_Sentenza_Hello_SearchMe()
 
 func void DIA_Sentenza_Hello_HandsOff()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_HandsOff_15_00"); //Dej ty pracky pryè.
-	AI_Output (self ,other,"DIA_Sentenza_Hello_HandsOff_09_01"); //(vıhrunì) Nebo co?
+	AI_Output (other, self,"DIA_Sentenza_Hello_HandsOff_15_00"); //Dej ty pracky pryÄ.
+	AI_Output (self ,other,"DIA_Sentenza_Hello_HandsOff_09_01"); //(vÃ½hruÅ¾nÄ›) Nebo co?
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Nebo nic. Tak mì teda prohledej!"						,DIA_Sentenza_Hello_SearchMe);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Nebo si na nìjakı èas budeš muset nechat zajít chu na šacování pocestnejch."	,DIA_Sentenza_Hello_OrElse);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Nebo nic. Tak mÄ› teda prohledej!"						,DIA_Sentenza_Hello_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Nebo si na nÄ›jakÃ½ Äas budeÅ¡ muset nechat zajÃ­t chuÅ¥ na Å¡acovÃ¡nÃ­ pocestnejch."	,DIA_Sentenza_Hello_OrElse);
 };
 
 func void DIA_Sentenza_Hello_OrElse()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_OrElse_15_00"); //Nebo si na nìjakı èas budeš muset nechat zajít chu na prohledávání.
-	AI_Output (self ,other,"DIA_Sentenza_Hello_OrElse_09_01"); //Tak to se uvidí.
+	AI_Output (other, self,"DIA_Sentenza_Hello_OrElse_15_00"); //Nebo si na nÄ›jakÃ½ Äas budeÅ¡ muset nechat zajÃ­t chuÅ¥ na prohledÃ¡vÃ¡nÃ­.
+	AI_Output (self ,other,"DIA_Sentenza_Hello_OrElse_09_01"); //Tak to se uvidÃ­.
 	
 	AI_StopProcessInfos (self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -165,17 +165,17 @@ FUNC INT DIA_Sentenza_Vzwei_Condition()
 
 FUNC VOID DIA_Sentenza_Vzwei_Info()
 {	
-	AI_Output (self ,other,"DIA_Sentenza_Vzwei_09_00");	//Tak tì tu máme zas. Mrknìme se, copak máš u sebe tentokrát!
+	AI_Output (self ,other,"DIA_Sentenza_Vzwei_09_00");	//Tak tÄ› tu mÃ¡me zas. MrknÄ›me se, copak mÃ¡Å¡ u sebe tentokrÃ¡t!
 
 	self.aivar[AIV_LastFightComment] = TRUE;
 	Sentenza_SearchDay = B_GetDayPlus();
 	
 	Info_ClearChoices	(DIA_Sentenza_Vzwei);
-	Info_AddChoice		(DIA_Sentenza_Vzwei, "Dej ty špinavé pracky pryè!"		,DIA_Sentenza_Vzwei_HandsOff);
+	Info_AddChoice		(DIA_Sentenza_Vzwei, "Dej ty Å¡pinavÃ© pracky pryÄ!"		,DIA_Sentenza_Vzwei_HandsOff);
 	
 	
 	
-	Info_AddChoice		(DIA_Sentenza_Vzwei, "Jen si poslu, pro mì za mì si mì klidnì prohledej!" 	,DIA_Sentenza_Vzwei_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Vzwei, "Jen si posluÅ¾, pro mÄ› za mÄ› si mÄ› klidnÄ› prohledej!" 	,DIA_Sentenza_Vzwei_SearchMe);
 };
 
 func void DIA_Sentenza_Vzwei_SearchMe()
@@ -187,8 +187,8 @@ func void DIA_Sentenza_Vzwei_SearchMe()
 
 func void DIA_Sentenza_Vzwei_HandsOff()
 {
-	AI_Output (other, self,"DIA_Sentenza_Vzwei_HandsOff_15_00"); //Dej ty špinavé pracky pryè!
-	AI_Output (self ,other,"DIA_Sentenza_Vzwei_HandsOff_09_01"); //(hrozivì) Nebo co? Tentokrát máš nejspíš u sebe daleko víc!
+	AI_Output (other, self,"DIA_Sentenza_Vzwei_HandsOff_15_00"); //Dej ty Å¡pinavÃ© pracky pryÄ!
+	AI_Output (self ,other,"DIA_Sentenza_Vzwei_HandsOff_09_01"); //(hrozivÄ›) Nebo co? TentokrÃ¡t mÃ¡Å¡ nejspÃ­Å¡ u sebe daleko vÃ­c!
 	
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -205,7 +205,7 @@ INSTANCE DIA_Sentenza_WannaJoin (C_INFO)
 	condition	= DIA_Sentenza_WannaJoin_Condition;
 	information	= DIA_Sentenza_WannaJoin_Info;
 	permanent	= FALSE;
-	description	= "Pøišel jsem se k vám pøidat.";
+	description	= "PÅ™iÅ¡el jsem se k vÃ¡m pÅ™idat.";
 };                       
 
 FUNC INT DIA_Sentenza_WannaJoin_Condition()
@@ -218,9 +218,9 @@ FUNC INT DIA_Sentenza_WannaJoin_Condition()
 
 FUNC VOID DIA_Sentenza_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_WannaJoin_15_00"); //Pøišel jsem se k vám pøidat.
-	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_01"); //To je od tebe hezké.
-	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_02"); //(lhostejnì) Je ti jasné, e oldáci budou hlasovat, jestli tì mezi sebe pøijmou nebo ne?
+	AI_Output (other, self, "DIA_Sentenza_WannaJoin_15_00"); //PÅ™iÅ¡el jsem se k vÃ¡m pÅ™idat.
+	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_01"); //To je od tebe hezkÃ©.
+	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_02"); //(lhostejnÄ›) Je ti jasnÃ©, Å¾e Å¾oldÃ¡ci budou hlasovat, jestli tÄ› mezi sebe pÅ™ijmou nebo ne?
 };
 
 // ************************************************************
@@ -234,7 +234,7 @@ INSTANCE DIA_Sentenza_Vote (C_INFO)
 	condition	= DIA_Sentenza_Vote_Condition;
 	information	= DIA_Sentenza_Vote_Info;
 	permanent	= TRUE;
-	description	= "A ty mi svùj hlas dáš?";
+	description	= "A ty mi svÅ¯j hlas dÃ¡Å¡?";
 };                       
 
 FUNC INT DIA_Sentenza_Vote_Condition()
@@ -248,30 +248,30 @@ FUNC INT DIA_Sentenza_Vote_Condition()
 
 FUNC VOID DIA_Sentenza_Vote_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_Vote_15_00"); //A ty mi svùj hlas dáš?
+	AI_Output (other, self, "DIA_Sentenza_Vote_15_00"); //A ty mi svÅ¯j hlas dÃ¡Å¡?
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_01"); //Jenom proto, es mi dal pár na frak? (zasmìje se) Ne.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_01"); //Jenom proto, Å¾es mi dal pÃ¡r na frak? (zasmÄ›je se) Ne.
 	}
 	else if (Npc_HasItems (self, itmi_gold) >= 50)
 	&& 		( (Sentenza_GoldTaken == TRUE) ||	(Sentenza_GoldGiven == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_02"); //A proè vlastnì ne? 50 zlaákù je docela dobrá cena za jeden hlas, nemyslíš?
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_02"); //A proÄ vlastnÄ› ne? 50 zlaÅ¥Ã¡kÅ¯ je docela dobrÃ¡ cena za jeden hlas, nemyslÃ­Å¡?
 		
 		Sentenza_Stimme = TRUE;
-		B_LogEntry (TOPIC_SLDRespekt,"Sentenza nemá nic proti tomu, abych se pøidal k oldákùm.");
+		B_LogEntry (TOPIC_SLDRespekt,"Sentenza nemÃ¡ nic proti tomu, abych se pÅ™idal k Å¾oldÃ¡kÅ¯m.");
 	}
 	else if (Sentenza_Stimme == TRUE)
 	&& 		(Npc_HasItems (self, itmi_gold) < 50)
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_03"); //Potom, cos mi zase ukradl zlato? Neøekl bych, hochu.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_03"); //Potom, cos mi zase ukradl zlato? NeÅ™ekl bych, hochu.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_04"); //Takhle to nefunguje, chlapeèku! Jestli pro tebe mám hlasovat, pak musíš ke mnì nasmìrovat taky òákı zlato.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_04"); //Takhle to nefunguje, chlapeÄku! Jestli pro tebe mÃ¡m hlasovat, pak musÃ­Å¡ ke mnÄ› nasmÄ›rovat taky ÅˆÃ¡kÃ½ zlato.
 		AI_Output (other, self, "DIA_Sentenza_Vote_15_05"); //Kolik?
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_06"); //50 zlaákù. To bys musel stejnì zaplatit.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_06"); //50 zlaÅ¥Ã¡kÅ¯. To bys musel stejnÄ› zaplatit.
 		Sentenza_Wants50 = TRUE;
 	};
 };
@@ -289,7 +289,7 @@ INSTANCE DIA_Sentenza_Pay50 (C_INFO)
 	condition	= DIA_Sentenza_Pay50_Condition;
 	information	= DIA_Sentenza_Pay50_Info;
 	permanent	= TRUE;
-	description	= "Tady máš tedy tìch 50 zlaákù.";
+	description	= "Tady mÃ¡Å¡ tedy tÄ›ch 50 zlaÅ¥Ã¡kÅ¯.";
 };                       
 
 FUNC INT DIA_Sentenza_Pay50_Condition()
@@ -304,20 +304,20 @@ FUNC INT DIA_Sentenza_Pay50_Condition()
 
 FUNC VOID DIA_Sentenza_Pay50_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_Pay50_15_00"); //Tady máš tìch 50 zlaákù.
+	AI_Output (other, self, "DIA_Sentenza_Pay50_15_00"); //Tady mÃ¡Å¡ tÄ›ch 50 zlaÅ¥Ã¡kÅ¯.
 	if (B_GiveInvItems (other, self, ItMi_Gold, 50))
 	{
-		AI_Output (self, other, "DIA_Sentenza_Pay50_09_01"); //Tak díky, to staèí!
+		AI_Output (self, other, "DIA_Sentenza_Pay50_09_01"); //Tak dÃ­ky, to staÄÃ­!
 		Sentenza_GoldGiven = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_Pay50_09_02"); //Nezahrávej si se mnou. Dostanu 50 zlaákù a ani o mìïák míò, jasné?
+		AI_Output (self, other, "DIA_Sentenza_Pay50_09_02"); //NezahrÃ¡vej si se mnou. Dostanu 50 zlaÅ¥Ã¡kÅ¯ a ani o mÄ›ÄÃ¡k mÃ­Åˆ, jasnÃ©?
 	};
 };
 
 // ************************************************************
-// 			  				Gold zurückholen
+// 			  				Gold zurÃ¼ckholen
 // ************************************************************
 var int Sentenza_Einmal;
 // ---------------------
@@ -329,7 +329,7 @@ INSTANCE DIA_Sentenza_GoldBack (C_INFO)
 	condition	= DIA_Sentenza_GoldBack_Condition;
 	information	= DIA_Sentenza_GoldBack_Info;
 	permanent	= TRUE;
-	description = "Vra mi mé zlato!";
+	description = "VraÅ¥ mi mÃ© zlato!";
 };                       
 
 FUNC INT DIA_Sentenza_GoldBack_Condition()
@@ -346,13 +346,13 @@ FUNC INT DIA_Sentenza_GoldBack_Condition()
  
 FUNC VOID DIA_Sentenza_GoldBack_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_GoldBack_15_00"); //Vra mi moje zlato!
+	AI_Output (other, self, "DIA_Sentenza_GoldBack_15_00"); //VraÅ¥ mi moje zlato!
 	if (other.guild == GIL_SLD)
 	&& (Torlof_SentenzaCounted == TRUE)
 	&& (Sentenza_Einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_01"); //Teï, kdy jsem ti dal svùj hlas?
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_02"); //Ty mizernı ebraèisko!
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_01"); //TeÄ, kdyÅ¾ jsem ti dal svÅ¯j hlas?
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_02"); //Ty mizernÃ½ Å¾ebraÄisko!
 		
 		Sentenza_Einmal = TRUE;
 		AI_StopProcessInfos(self);
@@ -360,7 +360,7 @@ FUNC VOID DIA_Sentenza_GoldBack_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_03"); //Klídek! Jenom to na chvilku pohlídám.
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_03"); //KlÃ­dek! Jenom to na chvilku pohlÃ­dÃ¡m.
 	};
 };
 
@@ -375,7 +375,7 @@ INSTANCE DIA_Sentenza_AufsMaul (C_INFO)
 	condition	= DIA_Sentenza_AufsMaul_Condition;
 	information	= DIA_Sentenza_AufsMaul_Info;
 	permanent	= FALSE; //FALSE!!!!!!!!!
-	description = "Hele, to vpøedu na hlavì je fakt tvùj ksicht, nebo na mì vystrkuješ prdel?";
+	description = "Hele, to vpÅ™edu na hlavÄ› je fakt tvÅ¯j ksicht, nebo na mÄ› vystrkujeÅ¡ prdel?";
 };                       
 
 FUNC INT DIA_Sentenza_AufsMaul_Condition()
@@ -389,8 +389,8 @@ FUNC INT DIA_Sentenza_AufsMaul_Condition()
  
 FUNC VOID DIA_Sentenza_AufsMaul_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_AufsMaul_15_00"); //Povìz mi, to, co máš vepøedu, je tvùj ksicht, nebo to na mì vystrkuješ prdel?
-	AI_Output (self, other, "DIA_Sentenza_AufsMaul_09_01"); //(vztekle se smìje) Dobøe, kdy to tak chceš...
+	AI_Output (other, self, "DIA_Sentenza_AufsMaul_15_00"); //PovÄ›z mi, to, co mÃ¡Å¡ vepÅ™edu, je tvÅ¯j ksicht, nebo to na mÄ› vystrkujeÅ¡ prdel?
+	AI_Output (self, other, "DIA_Sentenza_AufsMaul_09_01"); //(vztekle se smÄ›je) DobÅ™e, kdyÅ¾ to tak chceÅ¡...
 	
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -407,7 +407,7 @@ INSTANCE DIA_Sentenza_AufsMaulAgain (C_INFO)
 	condition	= DIA_Sentenza_AufsMaulAgain_Condition;
 	information	= DIA_Sentenza_AufsMaulAgain_Info;
 	permanent	= TRUE;
-	description = "Je èas na další náøez!";
+	description = "Je Äas na dalÅ¡Ã­ nÃ¡Å™ez!";
 };                       
 
 FUNC INT DIA_Sentenza_AufsMaulAgain_Condition()
@@ -424,8 +424,8 @@ FUNC INT DIA_Sentenza_AufsMaulAgain_Condition()
  
 FUNC VOID DIA_Sentenza_AufsMaulAgain_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_AufsMaulAgain_15_00"); //Je èas na další náøez!
-	AI_Output (self, other, "DIA_Sentenza_AufsMaulAgain_09_01"); //Kdy to øíkáš...
+	AI_Output (other, self, "DIA_Sentenza_AufsMaulAgain_15_00"); //Je Äas na dalÅ¡Ã­ nÃ¡Å™ez!
+	AI_Output (self, other, "DIA_Sentenza_AufsMaulAgain_09_01"); //KdyÅ¾ to Å™Ã­kÃ¡Å¡...
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
 };
@@ -454,10 +454,10 @@ FUNC VOID DIA_Sentenza_PERM_Info()
 {	
 	AI_Output (other, self, "DIA_Sentenza_PERM_15_00"); //Tak co, jak to jde?
 	
-	AI_Output (self, other, "DIA_Sentenza_PERM_09_01"); //Moc lidí tudy nechodí, ale doteïka mi kadı zaplatil.
+	AI_Output (self, other, "DIA_Sentenza_PERM_09_01"); //Moc lidÃ­ tudy nechodÃ­, ale doteÄka mi kaÅ¾dÃ½ zaplatil.
 	if (Npc_HasItems (self, itmi_gold) < 50)
 	{
-		AI_Output (self, other, "DIA_Sentenza_PERM_09_02"); //Kromì tebe. (zašklebí se)
+		AI_Output (self, other, "DIA_Sentenza_PERM_09_02"); //KromÄ› tebe. (zaÅ¡klebÃ­ se)
 	};
 };
 

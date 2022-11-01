@@ -78,7 +78,7 @@ FUNC INT DIA_Thorben_angepisst_Condition()
 };
 FUNC VOID DIA_Thorben_angepisst_Info()
 {	
-	AI_Output (self, other,"DIA_Thorben_angepisst_06_00"); //Zavradil jsi moji Grittu. To ti nikdy neodpustím. Bì mi z oèí, vrahu!
+	AI_Output (self, other,"DIA_Thorben_angepisst_06_00"); //ZavraÅ¾dil jsi moji Grittu. To ti nikdy neodpustÃ­m. BÄ›Å¾ mi z oÄÃ­, vrahu!
 	AI_StopProcessInfos (self);
 };
 
@@ -105,9 +105,9 @@ FUNC INT DIA_Thorben_Hallo_Condition()
 };
 FUNC VOID DIA_Thorben_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_00"); //Á! Nová tváø. Ty nejsi z Khorinidu, co?
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_01"); //Tohle není ta správná doba pro poutníky. Všude samí banditi, ádná práce a teï si ještì zaèali vyskakovat rolníci.
-	AI_Output (self, other,"DIA_Thorben_Hallo_06_02"); //Co tì sem pøivádí?
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_00"); //Ã! NovÃ¡ tvÃ¡Å™. Ty nejsi z Khorinidu, co?
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_01"); //Tohle nenÃ­ ta sprÃ¡vnÃ¡ doba pro poutnÃ­ky. VÅ¡ude samÃ­ banditi, Å¾Ã¡dnÃ¡ prÃ¡ce a teÄ si jeÅ¡tÄ› zaÄali vyskakovat rolnÃ­ci.
+	AI_Output (self, other,"DIA_Thorben_Hallo_06_02"); //Co tÄ› sem pÅ™ivÃ¡dÃ­?
 };
 
 // ************************************************************
@@ -120,7 +120,7 @@ INSTANCE DIA_Thorben_Arbeit(C_INFO)
 	condition	= DIA_Thorben_Arbeit_Condition;
 	information	= DIA_Thorben_Arbeit_Info;
 	permanent	= FALSE;
-	description = "Hledám práci.";
+	description = "HledÃ¡m prÃ¡ci.";
 };                       
 FUNC INT DIA_Thorben_Arbeit_Condition()
 {	
@@ -128,17 +128,17 @@ FUNC INT DIA_Thorben_Arbeit_Condition()
 };
 FUNC VOID DIA_Thorben_Arbeit_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Arbeit_15_00"); //Hledám práci.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_01"); //Víš nìco o truhlaøinì?
-	AI_Output (other, self,"DIA_Thorben_Arbeit_15_02"); //Jedinı, co dokáu ze døeva udìlat, je oheò.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_03"); //A co zámky?
+	AI_Output (other, self,"DIA_Thorben_Arbeit_15_00"); //HledÃ¡m prÃ¡ci.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_01"); //VÃ­Å¡ nÄ›co o truhlaÅ™inÄ›?
+	AI_Output (other, self,"DIA_Thorben_Arbeit_15_02"); //JedinÃ½, co dokÃ¡Å¾u ze dÅ™eva udÄ›lat, je oheÅˆ.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_03"); //A co zÃ¡mky?
 	AI_Output (other, self,"DIA_Thorben_Arbeit_15_04"); //Noooo...
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_05"); //Je mi líto, ale pokud o mém øemesle nic nevíš, nemùu tì potøebovat.
-	AI_Output (self, other,"DIA_Thorben_Arbeit_06_06"); //A nemám peníze na to, abych si platil uèedníka.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_05"); //Je mi lÃ­to, ale pokud o mÃ©m Å™emesle nic nevÃ­Å¡, nemÅ¯Å¾u tÄ› potÅ™ebovat.
+	AI_Output (self, other,"DIA_Thorben_Arbeit_06_06"); //A nemÃ¡m penÃ­ze na to, abych si platil uÄednÃ­ka.
 	
 	Log_CreateTopic (TOPIC_Lehrling,LOG_MISSION); 
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling, "Thorben mì do uèení nepøijme.");
+	B_LogEntry (TOPIC_Lehrling, "Thorben mÄ› do uÄenÃ­ nepÅ™ijme.");
 };
 
 // ************************************************************
@@ -151,7 +151,7 @@ INSTANCE DIA_Thorben_OtherMasters(C_INFO)
 	condition	= DIA_Thorben_OtherMasters_Condition;
 	information	= DIA_Thorben_OtherMasters_Info;
 	permanent	= FALSE;
-	description = "Co kdybych chtìl zaèít jako uèedník u jednoho z ostatních mistrù?";
+	description = "Co kdybych chtÄ›l zaÄÃ­t jako uÄednÃ­k u jednoho z ostatnÃ­ch mistrÅ¯?";
 };                       
 FUNC INT DIA_Thorben_OtherMasters_Condition()
 {	
@@ -163,42 +163,42 @@ FUNC INT DIA_Thorben_OtherMasters_Condition()
 };
 FUNC VOID DIA_Thorben_OtherMasters_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_15_00"); //Co kdybych chtìl zaèít jako uèedník u jednoho z ostatních mistrù?
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_01"); //Dobrá, dám ti své doporuèení.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_02"); //Ale nejdøív bys mìl získat poehnání od bohù.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_03"); //Øekni, jsi zbonı mu?
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_15_00"); //Co kdybych chtÄ›l zaÄÃ­t jako uÄednÃ­k u jednoho z ostatnÃ­ch mistrÅ¯?
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_01"); //DobrÃ¡, dÃ¡m ti svÃ© doporuÄenÃ­.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_02"); //Ale nejdÅ™Ã­v bys mÄ›l zÃ­skat poÅ¾ehnÃ¡nÃ­ od bohÅ¯.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_06_03"); //Å˜ekni, jsi zboÅ¾nÃ½ muÅ¾?
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
 	if (other.guild != GIL_KDF)
 	&& (other.guild != GIL_NOV)
 	&& (other.guild != GIL_PAL)
 	{
-		Info_AddChoice (DIA_Thorben_OtherMasters, "No, kdy myslíš, e bych se mìl modlit pravidelnì...", DIA_Thorben_OtherMasters_Naja);
+		Info_AddChoice (DIA_Thorben_OtherMasters, "No, kdyÅ¾ myslÃ­Å¡, Å¾e bych se mÄ›l modlit pravidelnÄ›...", DIA_Thorben_OtherMasters_Naja);
 	};
-	Info_AddChoice (DIA_Thorben_OtherMasters, "Ano. Nejpokornìjší sluebník, mistøe Thorbne.", DIA_Thorben_OtherMasters_Devoutly);
+	Info_AddChoice (DIA_Thorben_OtherMasters, "Ano. NejpokornÄ›jÅ¡Ã­ sluÅ¾ebnÃ­k, mistÅ™e Thorbne.", DIA_Thorben_OtherMasters_Devoutly);
 };
 
 func void B_Thorben_GetBlessings()
 {
-	AI_Output (self, other,"B_Thorben_GetBlessings_06_00"); //Tak to jdi za Vatrasem, Adanovım knìzem, a popros ho, a ti poehná.
+	AI_Output (self, other,"B_Thorben_GetBlessings_06_00"); //Tak to jdi za Vatrasem, AdanovÃ½m knÄ›zem, a popros ho, aÅ¥ ti poÅ¾ehnÃ¡.
 	if (other.guild != GIL_KDF)
 	&& (other.guild != GIL_NOV)
 	&& (other.guild != GIL_PAL)
 	{
-		AI_Output (self, other,"B_Thorben_GetBlessings_06_01"); //On u ti øekne, kde najít Innosovy knìze. Taky od nìj mùeš dostat poehnání.
+		AI_Output (self, other,"B_Thorben_GetBlessings_06_01"); //On uÅ¾ ti Å™ekne, kde najÃ­t Innosovy knÄ›ze. Taky od nÄ›j mÅ¯Å¾eÅ¡ dostat poÅ¾ehnÃ¡nÃ­.
 	};
-	AI_Output (self, other,"B_Thorben_GetBlessings_06_02"); //Jakmile získáš poehnání, máš mùj souhlas.
+	AI_Output (self, other,"B_Thorben_GetBlessings_06_02"); //Jakmile zÃ­skÃ¡Å¡ poÅ¾ehnÃ¡nÃ­, mÃ¡Å¡ mÅ¯j souhlas.
 	
 	MIS_Thorben_GetBlessings = LOG_RUNNING;
 	
 	Log_CreateTopic(TOPIC_Thorben,LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Thorben,LOG_RUNNING);
-	B_LogEntry (TOPIC_Thorben,"Thorben se za mì pøimluví teprve tehdy, a si vyprosím poehnání od Adanova a Innosova knìze.");
+	B_LogEntry (TOPIC_Thorben,"Thorben se za mÄ› pÅ™imluvÃ­ teprve tehdy, aÅ¾ si vyprosÃ­m poÅ¾ehnÃ¡nÃ­ od Adanova a Innosova knÄ›ze.");
 };
 
 func void DIA_Thorben_OtherMasters_Devoutly()
 {
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_Devoutly_15_00"); //Ano. Nejpokornìjší sluebník, mistøe Thorbene.
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_Devoutly_15_00"); //Ano. NejpokornÄ›jÅ¡Ã­ sluÅ¾ebnÃ­k, mistÅ™e Thorbene.
 	B_Thorben_GetBlessings();
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
@@ -206,10 +206,10 @@ func void DIA_Thorben_OtherMasters_Devoutly()
 
 func void DIA_Thorben_OtherMasters_Naja()
 {
-	AI_Output (other, self,"DIA_Thorben_OtherMasters_Naja_15_00"); //No, kdy myslíš, e bych se mìl modlit pravidelnì...
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_01"); //Já si to nemyslím. Vím to!
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_02"); //Nìkdo, kdo není dostateènì zbonı, mùj souhlas nikdy nezíská.
-	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_03"); //Pros bohy za shovívavost nad tvımi høíchy.
+	AI_Output (other, self,"DIA_Thorben_OtherMasters_Naja_15_00"); //No, kdyÅ¾ myslÃ­Å¡, Å¾e bych se mÄ›l modlit pravidelnÄ›...
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_01"); //JÃ¡ si to nemyslÃ­m. VÃ­m to!
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_02"); //NÄ›kdo, kdo nenÃ­ dostateÄnÄ› zboÅ¾nÃ½, mÅ¯j souhlas nikdy nezÃ­skÃ¡.
+	AI_Output (self, other,"DIA_Thorben_OtherMasters_Naja_06_03"); //Pros bohy za shovÃ­vavost nad tvÃ½mi hÅ™Ã­chy.
 	B_Thorben_GetBlessings();
 	
 	Info_ClearChoices (DIA_Thorben_OtherMasters);
@@ -225,7 +225,7 @@ INSTANCE DIA_Thorben_ZUSTIMMUNG(C_INFO)
 	condition	= DIA_Thorben_ZUSTIMMUNG_Condition;
 	information	= DIA_Thorben_ZUSTIMMUNG_Info;
 	permanent	= TRUE;
-	description = "Tak jak s tím doporuèením, mistøe?";
+	description = "Tak jak s tÃ­m doporuÄenÃ­m, mistÅ™e?";
 };                       
 FUNC INT DIA_Thorben_ZUSTIMMUNG_Condition()
 {	
@@ -237,43 +237,43 @@ FUNC INT DIA_Thorben_ZUSTIMMUNG_Condition()
 };
 FUNC VOID DIA_Thorben_ZUSTIMMUNG_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_00"); //Tak jak s tím doporuèením, mistøe?
-	AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_01"); //Poehnal ti Vatras?
+	AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_00"); //Tak jak s tÃ­m doporuÄenÃ­m, mistÅ™e?
+	AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_01"); //PoÅ¾ehnal ti Vatras?
 	
 	if (Vatras_Segen == TRUE)
 	{
 		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_02"); //Ano.
-		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_03"); //A získal jsi také poehnání Innose?
+		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_03"); //A zÃ­skal jsi takÃ© poÅ¾ehnÃ¡nÃ­ Innose?
 		
 		if (Daron_Segen == TRUE)
 		|| (Isgaroth_Segen == TRUE)
 		|| (other.guild == GIL_KDF)
 		{
-			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_04"); //Ano, získal.
-			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_05"); //V tom pøípadì máš i mé poehnání. Nezáleí na tom, jakou cestu sis vybral - buï hrdı na svou práci, chlapèe!
+			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_04"); //Ano, zÃ­skal.
+			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_05"); //V tom pÅ™Ã­padÄ› mÃ¡Å¡ i mÃ© poÅ¾ehnÃ¡nÃ­. NezÃ¡leÅ¾Ã­ na tom, jakou cestu sis vybral - buÄ hrdÃ½ na svou prÃ¡ci, chlapÄe!
 			
 			MIS_Thorben_GetBlessings = LOG_SUCCESS;
 			B_GivePlayerXP (XP_Zustimmung);
 			
 			Log_CreateTopic (TOPIC_Lehrling,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-			B_LogEntry (TOPIC_Lehrling,"Budu-li k nìkomu chtít vstoupit do uèení, Thorben se za mì pøimluví.");
+			B_LogEntry (TOPIC_Lehrling,"Budu-li k nÄ›komu chtÃ­t vstoupit do uÄenÃ­, Thorben se za mÄ› pÅ™imluvÃ­.");
 		}
 		else
 		{
-			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_06"); //Ne. Ještì ne.
-			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_07"); //Znáš moje podmínky. Svım záleitostem se mùeš vìnovat jen s poehnáním bohù.
+			AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_06"); //Ne. JeÅ¡tÄ› ne.
+			AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_07"); //ZnÃ¡Å¡ moje podmÃ­nky. SvÃ½m zÃ¡leÅ¾itostem se mÅ¯Å¾eÅ¡ vÄ›novat jen s poÅ¾ehnÃ¡nÃ­m bohÅ¯.
 		};
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_08"); //Ještì ne...
-		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_09"); //V tom pøípadì nevím, proè se mì znovu ptáš. Znáš moje podmínky.
+		AI_Output (other, self,"DIA_Thorben_ZUSTIMMUNG_15_08"); //JeÅ¡tÄ› ne...
+		AI_Output (self, other,"DIA_Thorben_ZUSTIMMUNG_06_09"); //V tom pÅ™Ã­padÄ› nevÃ­m, proÄ se mÄ› znovu ptÃ¡Å¡. ZnÃ¡Å¡ moje podmÃ­nky.
 	};
 };
 
 // ************************************************************
-// 		Was weißt du über Schlösser?		//E2
+// 		Was weiÃŸt du Ã¼ber SchlÃ¶sser?		//E2
 // ************************************************************
 INSTANCE DIA_Thorben_Locksmith(C_INFO)
 {
@@ -282,7 +282,7 @@ INSTANCE DIA_Thorben_Locksmith(C_INFO)
 	condition	= DIA_Thorben_Locksmith_Condition;
 	information	= DIA_Thorben_Locksmith_Info;
 	permanent	= FALSE;
-	description = "Tak ty se vyznáš v zámcích?";
+	description = "Tak ty se vyznÃ¡Å¡ v zÃ¡mcÃ­ch?";
 };                       
 FUNC INT DIA_Thorben_Locksmith_Condition()
 {	
@@ -293,10 +293,10 @@ FUNC INT DIA_Thorben_Locksmith_Condition()
 };
 FUNC VOID DIA_Thorben_Locksmith_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Locksmith_15_00"); //Tak ty se vyznáš v zámcích?
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_01"); //Co by to bylo za poøádnou truhlu bez dobrého zámku?
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_02"); //Vyrábím si své vlastní zámky. Takhle si mùu bıt pøinejmenším jistı, e jsem neudìlal bytelnou truhlu jen tak pro nic za nic.
-	AI_Output (self, other,"DIA_Thorben_Locksmith_06_03"); //Odbytı zámek se dá snadno zlomit. A tady v Khorinidu se všude kolem potuluje spousta zlodìjù. Zvláštì poslední dobou!
+	AI_Output (other, self,"DIA_Thorben_Locksmith_15_00"); //Tak ty se vyznÃ¡Å¡ v zÃ¡mcÃ­ch?
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_01"); //Co by to bylo za poÅ™Ã¡dnou truhlu bez dobrÃ©ho zÃ¡mku?
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_02"); //VyrÃ¡bÃ­m si svÃ© vlastnÃ­ zÃ¡mky. Takhle si mÅ¯Å¾u bÃ½t pÅ™inejmenÅ¡Ã­m jistÃ½, Å¾e jsem neudÄ›lal bytelnou truhlu jen tak pro nic za nic.
+	AI_Output (self, other,"DIA_Thorben_Locksmith_06_03"); //OdbytÃ½ zÃ¡mek se dÃ¡ snadno zlomit. A tady v Khorinidu se vÅ¡ude kolem potuluje spousta zlodÄ›jÅ¯. ZvlÃ¡Å¡tÄ› poslednÃ­ dobou!
 };
 
 // ************************************************************
@@ -309,7 +309,7 @@ INSTANCE DIA_Thorben_Schuldenbuch(C_INFO)
 	condition	= DIA_Thorben_Schuldenbuch_Condition;
 	information	= DIA_Thorben_Schuldenbuch_Info;
 	permanent	= FALSE;
-	description = "Mám tady Lehmarovu úèetní knihu...";
+	description = "MÃ¡m tady Lehmarovu ÃºÄetnÃ­ knihu...";
 };                       
 FUNC INT DIA_Thorben_Schuldenbuch_Condition()
 {	
@@ -320,18 +320,18 @@ FUNC INT DIA_Thorben_Schuldenbuch_Condition()
 };
 FUNC VOID DIA_Thorben_Schuldenbuch_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_00"); //Mám tady Lehmarovu úèetní knihu.
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_01"); //(podezíravì) Jak ses k tomu dostal?
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_02"); //Spíš by tì mìlo zajímat, e je v ní tvé jméno.
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_00"); //MÃ¡m tady Lehmarovu ÃºÄetnÃ­ knihu.
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_01"); //(podezÃ­ravÄ›) Jak ses k tomu dostal?
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_02"); //SpÃ­Å¡ by tÄ› mÄ›lo zajÃ­mat, Å¾e je v nÃ­ tvÃ© jmÃ©no.
 	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_03"); //Dej to sem!
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_04"); //A co mi za to dáš?
-	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_05"); //Nemám peníze nazbyt a nemùu ti dát nic jiného ne mé srdeèné podìkování.
+	AI_Output (other, self,"DIA_Thorben_Schuldenbuch_15_04"); //A co mi za to dÃ¡Å¡?
+	AI_Output (self, other,"DIA_Thorben_Schuldenbuch_06_05"); //NemÃ¡m penÃ­ze nazbyt a nemÅ¯Å¾u ti dÃ¡t nic jinÃ©ho neÅ¾ mÃ© srdeÄnÃ© podÄ›kovÃ¡nÃ­.
 	B_GivePlayerXP (XP_Schuldenbuch);
 };
 
 // ************************************************************
-// 		Kann ich Schlösser knacken lernen		//E3
+// 		Kann ich SchlÃ¶sser knacken lernen		//E3
 // ************************************************************
 INSTANCE DIA_Thorben_PleaseTeach(C_INFO)
 {
@@ -340,7 +340,7 @@ INSTANCE DIA_Thorben_PleaseTeach(C_INFO)
 	condition	= DIA_Thorben_PleaseTeach_Condition;
 	information	= DIA_Thorben_PleaseTeach_Info;
 	permanent	= TRUE;
-	description = "Mùeš mì nauèit, jak páèit zámky?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nauÄit, jak pÃ¡Äit zÃ¡mky?";
 };                       
 FUNC INT DIA_Thorben_PleaseTeach_Condition()
 {	
@@ -353,56 +353,56 @@ FUNC INT DIA_Thorben_PleaseTeach_Condition()
 };
 FUNC VOID DIA_Thorben_PleaseTeach_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_00"); //Mùeš mì nauèit, jak páèit zámky?
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit, jak pÃ¡Äit zÃ¡mky?
 		
 	if (Npc_HasItems (self, ItWr_Schuldenbuch) > 0)
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_01"); //Kdyby nebylo tebe, budu Lehmarovi platit po celı zbytek svého ivota.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_02"); //Nauèím tì, co budeš chtít.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_01"); //Kdyby nebylo tebe, budu Lehmarovi platit po celÃ½ zbytek svÃ©ho Å¾ivota.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_02"); //NauÄÃ­m tÄ›, co budeÅ¡ chtÃ­t.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else if (Thorben_GotGold == TRUE) //100 Gold bekommen
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_03"); //Pøinesl jsi mi 100 zlatıch. To od tebe bylo velmi milé.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_04"); //Pøivádí mì to do rozpakù, ale musím tì poádat ještì o jednu laskavost.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_05"); //Jeliko v dohledné dobì nemùu Lehmarovi svùj dluh splatit, chystá se na mì poslat ty své gorily.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_06"); //Dej mi ještì dalších 100 zlatıch a já tì zaènu uèit.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_03"); //PÅ™inesl jsi mi 100 zlatÃ½ch. To od tebe bylo velmi milÃ©.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_04"); //PÅ™ivÃ¡dÃ­ mÄ› to do rozpakÅ¯, ale musÃ­m tÄ› poÅ¾Ã¡dat jeÅ¡tÄ› o jednu laskavost.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_05"); //JelikoÅ¾ v dohlednÃ© dobÄ› nemÅ¯Å¾u Lehmarovi svÅ¯j dluh splatit, chystÃ¡ se na mÄ› poslat ty svÃ© gorily.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_06"); //Dej mi jeÅ¡tÄ› dalÅ¡Ã­ch 100 zlatÃ½ch a jÃ¡ tÄ› zaÄnu uÄit.
 
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
 		Info_AddChoice (DIA_Thorben_PleaseTeach, "Kolik?", DIA_Thorben_PleaseTeach_Later);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Dobrá. Tady je 100 zlatıch.", DIA_Thorben_PleaseTeach_Pay100);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "DobrÃ¡. Tady je 100 zlatÃ½ch.", DIA_Thorben_PleaseTeach_Pay100);
 	}
 	else if (MIS_Matteo_Gold == LOG_SUCCESS) //Grittas Schulden bezahlt
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_07"); //Zaplatil jsi Grittin dluh u Mattea. Vypadáš jako správnı chlap. Nauèím tì, co budeš chtít.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_08"); //Nicménì nemùu to dìlat zadarmo. Ještì poøád mám fùru dluhù a potøebuju peníze.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_07"); //Zaplatil jsi Grittin dluh u Mattea. VypadÃ¡Å¡ jako sprÃ¡vnÃ½ chlap. NauÄÃ­m tÄ›, co budeÅ¡ chtÃ­t.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_08"); //NicmÃ©nÄ› nemÅ¯Å¾u to dÄ›lat zadarmo. JeÅ¡tÄ› poÅ™Ã¡d mÃ¡m fÅ¯ru dluhÅ¯ a potÅ™ebuju penÃ­ze.
 		AI_Output (other, self,"DIA_Thorben_PleaseTeach_15_09"); //Kolik?
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_10"); //200 zlatıch.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_10"); //200 zlatÃ½ch.
 		
 		Info_ClearChoices (DIA_Thorben_PleaseTeach);
 		Info_AddChoice (DIA_Thorben_PleaseTeach, "Kolik?", DIA_Thorben_PleaseTeach_Later);
-		Info_AddChoice (DIA_Thorben_PleaseTeach, "Dobrá. Tady je 200 zlatıch.", DIA_Thorben_PleaseTeach_Pay200);
+		Info_AddChoice (DIA_Thorben_PleaseTeach, "DobrÃ¡. Tady je 200 zlatÃ½ch.", DIA_Thorben_PleaseTeach_Pay200);
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_11"); //Hmm... nevím, jestli se ti dá vìøit, nebo ne.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_12"); //Podle toho, co vím, mùeš klidnì bıt jedním z tìch darmošlapù, co pøišli do mìsta jen proto, aby vyprázdnili truhlice bohatıch lidí.
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_13"); //Nebudu tì uèit nic, dokud se nepøesvìdèím, e jsi dobrı èlovìk.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_11"); //Hmm... nevÃ­m, jestli se ti dÃ¡ vÄ›Å™it, nebo ne.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_12"); //Podle toho, co vÃ­m, mÅ¯Å¾eÅ¡ klidnÄ› bÃ½t jednÃ­m z tÄ›ch darmoÅ¡lapÅ¯, co pÅ™iÅ¡li do mÄ›sta jen proto, aby vyprÃ¡zdnili truhlice bohatÃ½ch lidÃ­.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_06_13"); //Nebudu tÄ› uÄit nic, dokud se nepÅ™esvÄ›dÄÃ­m, Å¾e jsi dobrÃ½ ÄlovÄ›k.
 	};
 };
 
 func void DIA_Thorben_PleaseTeach_Pay200()
 {
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay200_15_00"); //Dobrá. Tady je 200 zlatıch.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay200_15_00"); //DobrÃ¡. Tady je 200 zlatÃ½ch.
 	
 	if (B_GiveInvItems (other, self, ItMi_Gold, 200))
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_01"); //Tyhle peníze by mi mìly pomoct. Mùeme zaèít hned, jak budeš pøipraven.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_01"); //Tyhle penÃ­ze by mi mÄ›ly pomoct. MÅ¯Å¾eme zaÄÃ­t hned, jak budeÅ¡ pÅ™ipraven.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_02"); //Ještì poøád ti do 200 zlatıch pár mincí chybí. Ty peníze potøebuju.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay200_06_02"); //JeÅ¡tÄ› poÅ™Ã¡d ti do 200 zlatÃ½ch pÃ¡r mincÃ­ chybÃ­. Ty penÃ­ze potÅ™ebuju.
 	};
 	
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
@@ -410,16 +410,16 @@ func void DIA_Thorben_PleaseTeach_Pay200()
 
 func void DIA_Thorben_PleaseTeach_Pay100()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay100_15_00"); //Dobrá. Tady je 100 zlatıch.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Pay100_15_00"); //DobrÃ¡. Tady je 100 zlatÃ½ch.
 		
 	if (B_GiveInvItems (other, self, ItMi_Gold, 100))
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_01"); //V tom pøípadì mùeme zaèít hned, jak budeš pøipraven.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_01"); //V tom pÅ™Ã­padÄ› mÅ¯Å¾eme zaÄÃ­t hned, jak budeÅ¡ pÅ™ipraven.
 		Thorben_TeachPlayer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_02"); //Hej, ještì poøád ti do 100 zlatıch chybí pár mincí.
+		AI_Output (self, other,"DIA_Thorben_PleaseTeach_Pay100_06_02"); //Hej, jeÅ¡tÄ› poÅ™Ã¡d ti do 100 zlatÃ½ch chybÃ­ pÃ¡r mincÃ­.
 	};
 	
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
@@ -427,13 +427,13 @@ func void DIA_Thorben_PleaseTeach_Pay100()
 	
 func void DIA_Thorben_PleaseTeach_Later()
 {	
-	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Later_15_00"); //Moná pozdìji.
+	AI_Output (other, self,"DIA_Thorben_PleaseTeach_Later_15_00"); //MoÅ¾nÃ¡ pozdÄ›ji.
 
 	Info_ClearChoices (DIA_Thorben_PleaseTeach);
 };
 
 // ************************************************************
-// 		Schlösser knacken lernen		//E4
+// 		SchlÃ¶sser knacken lernen		//E4
 // ************************************************************
 INSTANCE DIA_Thorben_Teach(C_INFO)
 {
@@ -442,7 +442,7 @@ INSTANCE DIA_Thorben_Teach(C_INFO)
 	condition	= DIA_Thorben_Teach_Condition;
 	information	= DIA_Thorben_Teach_Info;
 	permanent	= TRUE;
-	description = B_BuildLearnString("Nauè mì páèit zámky!", B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1));
+	description = B_BuildLearnString("NauÄ mÄ› pÃ¡Äit zÃ¡mky!", B_GetLearnCostTalent(other, NPC_TALENT_PICKLOCK, 1));
 };                       
 FUNC INT DIA_Thorben_Teach_Condition()
 {	
@@ -454,13 +454,13 @@ FUNC INT DIA_Thorben_Teach_Condition()
 };
 FUNC VOID DIA_Thorben_Teach_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Teach_15_00"); //Nauè mì páèit zámky!
+	AI_Output (other, self,"DIA_Thorben_Teach_15_00"); //NauÄ mÄ› pÃ¡Äit zÃ¡mky!
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK)
 	{
-		AI_Output (self, other,"DIA_Thorben_Teach_06_01"); //Potøebuješ akorát nìjakı paklíè. Pokud jím budeš v zámku opatrnì otáèet doprava a doleva, mùeš mechanismus otevøít.
-		AI_Output (self, other,"DIA_Thorben_Teach_06_02"); //Ale pokud otoèíš pøíliš rychle nebo moc silnì ve špatném smìru, paklíè se zlomí.
-		AI_Output (self, other,"DIA_Thorben_Teach_06_03"); //Èím budeš obratnìjší, tím ménì budeš potøebovat paklíèù. To je všechno, opravdu.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_01"); //PotÅ™ebujeÅ¡ akorÃ¡t nÄ›jakÃ½ paklÃ­Ä. Pokud jÃ­m budeÅ¡ v zÃ¡mku opatrnÄ› otÃ¡Äet doprava a doleva, mÅ¯Å¾eÅ¡ mechanismus otevÅ™Ã­t.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_02"); //Ale pokud otoÄÃ­Å¡ pÅ™Ã­liÅ¡ rychle nebo moc silnÄ› ve Å¡patnÃ©m smÄ›ru, paklÃ­Ä se zlomÃ­.
+		AI_Output (self, other,"DIA_Thorben_Teach_06_03"); //ÄŒÃ­m budeÅ¡ obratnÄ›jÅ¡Ã­, tÃ­m mÃ©nÄ› budeÅ¡ potÅ™ebovat paklÃ­ÄÅ¯. To je vÅ¡echno, opravdu.
 	};
 };
 
@@ -474,7 +474,7 @@ INSTANCE DIA_Thorben_TRADE(C_INFO)
 	condition	= DIA_Thorben_TRADE_Condition;
 	information	= DIA_Thorben_TRADE_Info;
 	permanent	= TRUE;
-	description = "Mùeš mi prodat nìjaké paklíèe?";
+	description = "MÅ¯Å¾eÅ¡ mi prodat nÄ›jakÃ© paklÃ­Äe?";
 	trade		= TRUE;
 };                       
 FUNC INT DIA_Thorben_TRADE_Condition()
@@ -486,15 +486,15 @@ FUNC INT DIA_Thorben_TRADE_Condition()
 };
 FUNC VOID DIA_Thorben_TRADE_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_TRADE_15_00"); //Mùeš mi prodat nìjaké paklíèe?
+	AI_Output (other, self,"DIA_Thorben_TRADE_15_00"); //MÅ¯Å¾eÅ¡ mi prodat nÄ›jakÃ© paklÃ­Äe?
 	
 	if (Npc_GetTalentSkill (other, NPC_TALENT_PICKLOCK) > 0)
 	{
-		AI_Output (self, other,"DIA_Thorben_TRADE_06_01"); //Pokud mi ještì nìjaké zbyly...
+		AI_Output (self, other,"DIA_Thorben_TRADE_06_01"); //Pokud mi jeÅ¡tÄ› nÄ›jakÃ© zbyly...
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Thorben_TRADE_06_02"); //No tak dobrá. Ale dokud nevíš, jak s nimi zacházet, tak ti budou k nièemu.
+		AI_Output (self, other,"DIA_Thorben_TRADE_06_02"); //No tak dobrÃ¡. Ale dokud nevÃ­Å¡, jak s nimi zachÃ¡zet, tak ti budou k niÄemu.
 	};
 	
 	if (Npc_HasItems (self, ITke_Lockpick) == 0) 
@@ -504,7 +504,7 @@ FUNC VOID DIA_Thorben_TRADE_Info()
 		Dietrichgeben = Dietrichgeben +1;
 	};
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Tesaø Thorben prodává paklíèe."); 
+	B_LogEntry (Topic_CityTrader,"TesaÅ™ Thorben prodÃ¡vÃ¡ paklÃ­Äe."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -517,7 +517,7 @@ instance DIA_Addon_Thorben_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Thorben_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Thorben_MissingPeople_Info;
 
-	description	 = 	"Ty u jsi nìkdy nìjakého uèedníka mìl?";
+	description	 = 	"Ty uÅ¾ jsi nÄ›kdy nÄ›jakÃ©ho uÄednÃ­ka mÄ›l?";
 };
 
 func int DIA_Addon_Thorben_MissingPeople_Condition ()
@@ -532,23 +532,23 @@ func int DIA_Addon_Thorben_MissingPeople_Condition ()
 
 func void DIA_Addon_Thorben_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_00"); //U jsi nìkdy mìl nìjakého uèedníka?
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_01"); //Jo, a ani to není tak dávno.
+	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_00"); //UÅ¾ jsi nÄ›kdy mÄ›l nÄ›jakÃ©ho uÄednÃ­ka?
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_01"); //Jo, a ani to nenÃ­ tak dÃ¡vno.
 	AI_Output	(other, self, "DIA_Addon_Thorben_MissingPeople_15_02"); //A co se stalo?
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_03"); //Jmenoval se Elvrich. Byl to mùj synovec.
-	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_04"); //A byl jsem s ním docela spokojenı, ale jednoho dne prostì nepøišel do práce.
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_03"); //Jmenoval se Elvrich. Byl to mÅ¯j synovec.
+	AI_Output	(self, other, "DIA_Addon_Thorben_MissingPeople_06_04"); //A byl jsem s nÃ­m docela spokojenÃ½, ale jednoho dne prostÄ› nepÅ™iÅ¡el do prÃ¡ce.
 	
 	MIS_Thorben_BringElvrichBack = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Elvrich, uèedník tesaøe Thorbena, zmizel."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Elvrich, uÄednÃ­k tesaÅ™e Thorbena, zmizel."); 
 	
 	Info_ClearChoices	(DIA_Addon_Thorben_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, DIALOG_BACK, DIA_Addon_Thorben_MissingPeople_Back );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "A ohlásil jsi to domobranì?", DIA_Addon_Thorben_MissingPeople_Mil );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Jak je to dlouho, co jsi ho vidìl naposledy?", DIA_Addon_Thorben_MissingPeople_wann );
-	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Kde je Elvrich teï?", DIA_Addon_Thorben_MissingPeople_where );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "A ohlÃ¡sil jsi to domobranÄ›?", DIA_Addon_Thorben_MissingPeople_Mil );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Jak je to dlouho, co jsi ho vidÄ›l naposledy?", DIA_Addon_Thorben_MissingPeople_wann );
+	Info_AddChoice	(DIA_Addon_Thorben_MissingPeople, "Kde je Elvrich teÄ?", DIA_Addon_Thorben_MissingPeople_where );
 };
 
 func void DIA_Addon_Thorben_MissingPeople_Back ()
@@ -558,22 +558,22 @@ func void DIA_Addon_Thorben_MissingPeople_Back ()
 
 func void DIA_Addon_Thorben_MissingPeople_wann ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_wann_15_00"); //Jak je to dlouho, co jsi ho nevidìl?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_wann_06_01"); //Asi tak ètrnáct dní.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_wann_15_00"); //Jak je to dlouho, co jsi ho nevidÄ›l?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_wann_06_01"); //Asi tak ÄtrnÃ¡ct dnÃ­.
 };
 
 func void DIA_Addon_Thorben_MissingPeople_where ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_where_15_00"); //Kde je Elvrich teï?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_01"); //Jak to mám vìdìt? Ale furt se poflakoval kolem toho špinavıho bordelu v pøístavu.
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_02"); //Ani by mì nepøekvapilo, kdyby si tam ještì teï uíval s nìjakou štìtkou.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_where_15_00"); //Kde je Elvrich teÄ?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_01"); //Jak to mÃ¡m vÄ›dÄ›t? Ale furt se poflakoval kolem toho Å¡pinavÃ½ho bordelu v pÅ™Ã­stavu.
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_where_06_02"); //Ani by mÄ› nepÅ™ekvapilo, kdyby si tam jeÅ¡tÄ› teÄ uÅ¾Ã­val s nÄ›jakou Å¡tÄ›tkou.
 };
 
 func void DIA_Addon_Thorben_MissingPeople_Mil ()
 {
-	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_00"); //Ohlásil jsi to domobranì?
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_01"); //Samozøejmì. Mìli ho chytit a dohlídnout, aby se ta líná kùe vrátila zpátky do práce. Ale já u to stejnì zabalil.
-	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_02"); //A si dìlá, co chce. Døív nebo pozdìji stejnì zjistí, e bez slušné práce si v Khorinidu neškrtne.
+	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_00"); //OhlÃ¡sil jsi to domobranÄ›?
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_01"); //SamozÅ™ejmÄ›. MÄ›li ho chytit a dohlÃ­dnout, aby se ta lÃ­nÃ¡ kÅ¯Å¾e vrÃ¡tila zpÃ¡tky do prÃ¡ce. Ale jÃ¡ uÅ¾ to stejnÄ› zabalil.
+	AI_Output			(self, other, "DIA_Addon_Thorben_MissingPeople_Mil_06_02"); //AÅ¥ si dÄ›lÃ¡, co chce. DÅ™Ã­v nebo pozdÄ›ji stejnÄ› zjistÃ­, Å¾e bez sluÅ¡nÃ© prÃ¡ce si v Khorinidu neÅ¡krtne.
 	AI_Output			(other, self, "DIA_Addon_Thorben_MissingPeople_Mil_15_03"); //(cynicky) Opravdu?
 };
 
@@ -587,7 +587,7 @@ instance DIA_Addon_Thorben_ElvrichIsBack		(C_INFO)
 	condition	 = 	DIA_Addon_Thorben_ElvrichIsBack_Condition;
 	information	 = 	DIA_Addon_Thorben_ElvrichIsBack_Info;
 
-	description	 = 	"Elvrich pro tebe bude od nynìjška znovu pracovat.";
+	description	 = 	"Elvrich pro tebe bude od nynÄ›jÅ¡ka znovu pracovat.";
 };
 
 func int DIA_Addon_Thorben_ElvrichIsBack_Condition ()
@@ -601,9 +601,9 @@ func int DIA_Addon_Thorben_ElvrichIsBack_Condition ()
 
 func void DIA_Addon_Thorben_ElvrichIsBack_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Thorben_ElvrichIsBack_15_00"); //Odteïka pro tebe bude Elvrich znovu pracovat.
-	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_01"); //Mùu jenom doufat, e nezmizí znova, a se kolem ochomıtne nìjaká suknì.
-	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_02"); //Za to, e jsi mi pøivedl uèedníka, si vezmi tohle zlato.
+	AI_Output	(other, self, "DIA_Addon_Thorben_ElvrichIsBack_15_00"); //OdteÄka pro tebe bude Elvrich znovu pracovat.
+	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_01"); //MÅ¯Å¾u jenom doufat, Å¾e nezmizÃ­ znova, aÅ¾ se kolem ochomÃ½tne nÄ›jakÃ¡ suknÄ›.
+	AI_Output	(self, other, "DIA_Addon_Thorben_ElvrichIsBack_06_02"); //Za to, Å¾e jsi mi pÅ™ivedl uÄednÃ­ka, si vezmi tohle zlato.
 	CreateInvItems (self, ItMi_Gold, 200);									
 	B_GiveInvItems (self, other, ItMi_Gold, 200);
 	MIS_Thorben_BringElvrichBack = LOG_SUCCESS;
@@ -620,7 +620,7 @@ INSTANCE DIA_Thorben_Paladine(C_INFO)
 	condition	= DIA_Thorben_Paladine_Condition;
 	information	= DIA_Thorben_Paladine_Info;
 	permanent	= FALSE;
-	description = "Co víš o paladinech?";
+	description = "Co vÃ­Å¡ o paladinech?";
 };                       
 FUNC INT DIA_Thorben_Paladine_Condition()
 {	
@@ -631,12 +631,12 @@ FUNC INT DIA_Thorben_Paladine_Condition()
 };
 FUNC VOID DIA_Thorben_Paladine_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Paladine_15_00"); //Co víš o paladinech?
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_01"); //Nic moc. Pøed dvìma tıdny sem na lodi pøipluli z pevniny.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_02"); //Od té doby jsou zavøení v horní èásti mìsta.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_03"); //Nikdo tady poøádnì neví, proè vlastnì pøijeli.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_04"); //Hodnì lidí se obává útoku skøetù.
-	AI_Output (self, other,"DIA_Thorben_Paladine_06_05"); //Ale já si stejnì myslím, e jsou tu kvùli rolnické vzpouøe.
+	AI_Output (other, self,"DIA_Thorben_Paladine_15_00"); //Co vÃ­Å¡ o paladinech?
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_01"); //Nic moc. PÅ™ed dvÄ›ma tÃ½dny sem na lodi pÅ™ipluli z pevniny.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_02"); //Od tÃ© doby jsou zavÅ™enÃ­ v hornÃ­ ÄÃ¡sti mÄ›sta.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_03"); //Nikdo tady poÅ™Ã¡dnÄ› nevÃ­, proÄ vlastnÄ› pÅ™ijeli.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_04"); //HodnÄ› lidÃ­ se obÃ¡vÃ¡ Ãºtoku skÅ™etÅ¯.
+	AI_Output (self, other,"DIA_Thorben_Paladine_06_05"); //Ale jÃ¡ si stejnÄ› myslÃ­m, Å¾e jsou tu kvÅ¯li rolnickÃ© vzpouÅ™e.
 };
 
 // ************************************************************
@@ -649,7 +649,7 @@ INSTANCE DIA_Thorben_Bauernaufstand(C_INFO)
 	condition	= DIA_Thorben_Bauernaufstand_Condition;
 	information	= DIA_Thorben_Bauernaufstand_Info;
 	permanent	= FALSE;
-	description = "Víš nìco o té rolnické vzpouøe?";
+	description = "VÃ­Å¡ nÄ›co o tÃ© rolnickÃ© vzpouÅ™e?";
 };                       
 FUNC INT DIA_Thorben_Bauernaufstand_Condition()
 {	
@@ -662,12 +662,12 @@ FUNC INT DIA_Thorben_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Thorben_Bauernaufstand_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Bauernaufstand_15_00"); //Víš nìco o té rolnické vzpouøe?
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_01"); //Povídá se, e si velkostatkáø Onar najal oldnéøe, aby ho chránili pøed královskımi vojsky.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_02"); //Asi u mìl dost toho, e mu paladinové a domobrana poøád berou úrodu a dobytek.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_03"); //Jediné, co jsme tady ve mìstì zaznamenali, je neustálé zvyšování cen potravin.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_04"); //Onarova farma leí na vıchod odsud, je to docela daleko. Nevíme, jestli se tam k nìèemu chystá.
-	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_05"); //Pokud se chceš dozvìdìt víc, zeptej se kupcù na trišti. Mají o ostrovì vìtší pøehled ne já.
+	AI_Output (other, self,"DIA_Thorben_Bauernaufstand_15_00"); //VÃ­Å¡ nÄ›co o tÃ© rolnickÃ© vzpouÅ™e?
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_01"); //PovÃ­dÃ¡ se, Å¾e si velkostatkÃ¡Å™ Onar najal Å¾oldnÃ©Å™e, aby ho chrÃ¡nili pÅ™ed krÃ¡lovskÃ½mi vojsky.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_02"); //Asi uÅ¾ mÄ›l dost toho, Å¾e mu paladinovÃ© a domobrana poÅ™Ã¡d berou Ãºrodu a dobytek.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_03"); //JedinÃ©, co jsme tady ve mÄ›stÄ› zaznamenali, je neustÃ¡lÃ© zvyÅ¡ovÃ¡nÃ­ cen potravin.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_04"); //Onarova farma leÅ¾Ã­ na vÃ½chod odsud, je to docela daleko. NevÃ­me, jestli se tam k nÄ›Äemu chystÃ¡.
+	AI_Output (self, other,"DIA_Thorben_Bauernaufstand_06_05"); //Pokud se chceÅ¡ dozvÄ›dÄ›t vÃ­c, zeptej se kupcÅ¯ na trÅ¾iÅ¡ti. MajÃ­ o ostrovÄ› vÄ›tÅ¡Ã­ pÅ™ehled neÅ¾ jÃ¡.
 };
 
 // ************************************************************
@@ -680,7 +680,7 @@ INSTANCE DIA_Thorben_Gritta(C_INFO)
 	condition	= DIA_Thorben_Gritta_Condition;
 	information	= DIA_Thorben_Gritta_Info;
 	permanent	= FALSE;
-	description = "Pøišel jsem kvùli Grittì...";
+	description = "PÅ™iÅ¡el jsem kvÅ¯li GrittÄ›...";
 };                       
 FUNC INT DIA_Thorben_Gritta_Condition()
 {	
@@ -692,21 +692,21 @@ FUNC INT DIA_Thorben_Gritta_Condition()
 };
 FUNC VOID DIA_Thorben_Gritta_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_Gritta_15_00"); //Pøišel jsem kvùli Grittì.
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_01"); //Mé neteøi? O co jde? Není to nic s penìzi, e ne?
-	AI_Output (other, self,"DIA_Thorben_Gritta_15_02"); //Dluí 100 zlatıch kupci Matteovi.
+	AI_Output (other, self,"DIA_Thorben_Gritta_15_00"); //PÅ™iÅ¡el jsem kvÅ¯li GrittÄ›.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_01"); //MÃ© neteÅ™i? O co jde? NenÃ­ to nic s penÄ›zi, Å¾e ne?
+	AI_Output (other, self,"DIA_Thorben_Gritta_15_02"); //DluÅ¾Ã­ 100 zlatÃ½ch kupci Matteovi.
 	
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_03"); //Øekni, e to není pravda. Od té doby, co se ke mnì ta malá lenoška nastìhovala, mám jen samé potíe!
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_04"); //Má dluh snad u kadého kupce ve mìstì.
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_05"); //Musel jsem si pùjèit 200 zlatıch u lichváøe jen proto, abych vyrovnal její dluhy. A teï tohle!
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_03"); //Å˜ekni, Å¾e to nenÃ­ pravda. Od tÃ© doby, co se ke mnÄ› ta malÃ¡ lenoÅ¡ka nastÄ›hovala, mÃ¡m jen samÃ© potÃ­Å¾e!
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_04"); //MÃ¡ dluh snad u kaÅ¾dÃ©ho kupce ve mÄ›stÄ›.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_05"); //Musel jsem si pÅ¯jÄit 200 zlatÃ½ch u lichvÃ¡Å™e jen proto, abych vyrovnal jejÃ­ dluhy. A teÄ tohle!
 	if (Npc_GetDistToWP(self, "NW_CITY_MERCHANT_SHOP01_FRONT_01") < 500)
 	{
-		AI_Output (self, other,"DIA_Thorben_Gritta_06_06"); //Gritta by mìla bıt v domì.
+		AI_Output (self, other,"DIA_Thorben_Gritta_06_06"); //Gritta by mÄ›la bÃ½t v domÄ›.
 	};
-	AI_Output (self, other,"DIA_Thorben_Gritta_06_07"); //Jdi dál, jen se jí zeptej. Ale mùu ti øíct jedno: nemá ani zlatku.
+	AI_Output (self, other,"DIA_Thorben_Gritta_06_07"); //Jdi dÃ¡l, jen se jÃ­ zeptej. Ale mÅ¯Å¾u ti Å™Ã­ct jedno: nemÃ¡ ani zlatku.
 	if (Npc_HasItems(Gritta, itmi_gold) >= 100)
 	{
-		AI_Output (other, self,"DIA_Thorben_Gritta_15_08"); //Uvidíme...
+		AI_Output (other, self,"DIA_Thorben_Gritta_15_08"); //UvidÃ­me...
 	};
 };
 
@@ -720,7 +720,7 @@ INSTANCE DIA_Thorben_GrittaHatteGold(C_INFO)
 	condition	= DIA_Thorben_GrittaHatteGold_Condition;
 	information	= DIA_Thorben_GrittaHatteGold_Info;
 	permanent	= FALSE;
-	description = "Tvá neteø mi dala 100 zlatıch.";
+	description = "TvÃ¡ neteÅ™ mi dala 100 zlatÃ½ch.";
 };                       
 FUNC INT DIA_Thorben_GrittaHatteGold_Condition()
 {	
@@ -733,18 +733,18 @@ FUNC INT DIA_Thorben_GrittaHatteGold_Condition()
 };
 FUNC VOID DIA_Thorben_GrittaHatteGold_Info()
 {	
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_15_00"); //Tvá neteø mi dala 100 zlatıch.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_01"); //CO? Ta malá nestydatá zmije - to bylo MOJE zlato! Vzala ho z mé truhly.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_02"); //Vra mi to! Musím nejdøív zaplatit Lehmarovi. Matteo dostane své peníze pozdìji!
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_15_00"); //TvÃ¡ neteÅ™ mi dala 100 zlatÃ½ch.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_01"); //CO? Ta malÃ¡ nestydatÃ¡ zmije - to bylo MOJE zlato! Vzala ho z mÃ© truhly.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_06_02"); //VraÅ¥ mi to! MusÃ­m nejdÅ™Ã­v zaplatit Lehmarovi. Matteo dostane svÃ© penÃ­ze pozdÄ›ji!
 
 	Info_ClearChoices (DIA_Thorben_GrittaHatteGold);
 	if (MIS_Matteo_Gold == LOG_SUCCESS)
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "U jsem dal Matteovi jeho zlato!", DIA_Thorben_GrittaHatteGold_MatteoHatEs);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "UÅ¾ jsem dal Matteovi jeho zlato!", DIA_Thorben_GrittaHatteGold_MatteoHatEs);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Ne. Ty peníze jsou Matteovy.", DIA_Thorben_GrittaHatteGold_MatteoSollHaben);
+		Info_AddChoice (DIA_Thorben_GrittaHatteGold, "Ne. Ty penÃ­ze jsou Matteovy.", DIA_Thorben_GrittaHatteGold_MatteoSollHaben);
 	};
 
 	if (Npc_HasItems(other, itmi_gold) >= 100)
@@ -757,16 +757,16 @@ func void B_Thorben_DeletePetzCrimeGritta()
 {
 	if (Gritta_GoldGiven == FALSE)
 	{
-		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_00"); //A co vím o té malé zmiji, jsem si jistı, e bìela pøímo za mìstskou stráí, aby tì taky obvinila!
-		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_01"); //Dohlédnu na to, aby se to nìjak vyøešilo.
+		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_00"); //A co vÃ­m o tÃ© malÃ© zmiji, jsem si jistÃ½, Å¾e bÄ›Å¾ela pÅ™Ã­mo za mÄ›stskou strÃ¡Å¾Ã­, aby tÄ› taky obvinila!
+		AI_Output (self, other,"B_Thorben_DeletePetzCrimeGritta_06_01"); //DohlÃ©dnu na to, aby se to nÄ›jak vyÅ™eÅ¡ilo.
 		B_DeletePetzCrime (Gritta);
 	};
 };
 
 func void DIA_Thorben_GrittaHatteGold_MatteoHatEs()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_15_00"); //U jsem dal Matteovi jeho zlato!
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_06_01"); //Sakra! Dobrá - dluh je dluh. Alespoò e sis ty peníze nenechal. Asi bych ti za to mìl podìkovat.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_15_00"); //UÅ¾ jsem dal Matteovi jeho zlato!
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoHatEs_06_01"); //Sakra! DobrÃ¡ - dluh je dluh. AlespoÅˆ Å¾e sis ty penÃ­ze nenechal. Asi bych ti za to mÄ›l podÄ›kovat.
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	
@@ -775,9 +775,9 @@ func void DIA_Thorben_GrittaHatteGold_MatteoHatEs()
 
 func void DIA_Thorben_GrittaHatteGold_MatteoSollHaben()
 {
-	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_15_00"); //Ne. Ty peníze jsou Matteovy.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_01"); //Takhle mì dostaneš do poøádnıch trablù. Lehmar není zrovna pøehnanì shovívavı, kdy pøijde øeè na dluhy.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_02"); //Ale pøinejmenším se chystáš splatit dluh mé neteøe. Asi bych ti za to mìl podìkovat.
+	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_15_00"); //Ne. Ty penÃ­ze jsou Matteovy.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_01"); //Takhle mÄ› dostaneÅ¡ do poÅ™Ã¡dnÃ½ch trablÅ¯. Lehmar nenÃ­ zrovna pÅ™ehnanÄ› shovÃ­vavÃ½, kdyÅ¾ pÅ™ijde Å™eÄ na dluhy.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_MatteoSollHaben_06_02"); //Ale pÅ™inejmenÅ¡Ã­m se chystÃ¡Å¡ splatit dluh mÃ© neteÅ™e. Asi bych ti za to mÄ›l podÄ›kovat.
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	
@@ -788,8 +788,8 @@ func void DIA_Thorben_GrittaHatteGold_HereItIs()
 {
 	AI_Output (other, self,"DIA_Thorben_GrittaHatteGold_HereItIs_15_00"); //Tady je zlato.
 	B_GiveInvItems(other, self, itmi_gold, 100);
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_01"); //Díky! Koneènì mám alespoò èást penìz, co dluím Lehmarovi.
-	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_02"); //Nemùu uvìøit tomu, e mìla tu drzost vzít mé zlato!
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_01"); //DÃ­ky! KoneÄnÄ› mÃ¡m alespoÅˆ ÄÃ¡st penÄ›z, co dluÅ¾Ã­m Lehmarovi.
+	AI_Output (self, other,"DIA_Thorben_GrittaHatteGold_HereItIs_06_02"); //NemÅ¯Å¾u uvÄ›Å™it tomu, Å¾e mÄ›la tu drzost vzÃ­t mÃ© zlato!
 	
 	B_Thorben_DeletePetzCrimeGritta();
 	

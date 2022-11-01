@@ -76,9 +76,9 @@ func int DIA_Addon_Owen_Hello_Condition ()
 };
 func void DIA_Addon_Owen_Hello_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_00"); //Jak to vypadá?
-	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_01"); //Kdo seš? Ty patøíš k tìm banditùm?
-	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_02"); //Copak tak vypadám?
+	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_00"); //Jak to vypadÃ¡?
+	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_01"); //Kdo seÅ¡? Ty patÅ™Ã­Å¡ k tÄ›m banditÅ¯m?
+	AI_Output	(other, self, "DIA_Addon_Owen_Hello_15_02"); //Copak tak vypadÃ¡m?
 
 	var C_Item itm; itm = Npc_GetEquippedArmor(other);
 	
@@ -86,17 +86,17 @@ func void DIA_Addon_Owen_Hello_Info ()
 	||	 (Hlp_IsItem(itm, ItAr_Pir_L_Addon) == TRUE)
 	||	 (Hlp_IsItem(itm, ItAr_Pir_H_Addon) == TRUE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_03"); //Sice máš na sobì naše hadry, ale já tì neznám.
+		AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_03"); //Sice mÃ¡Å¡ na sobÄ› naÅ¡e hadry, ale jÃ¡ tÄ› neznÃ¡m.
 	}
 	else if ((Hlp_IsItem(itm, ItAr_BDT_M) == TRUE)
 	|| (Hlp_IsItem(itm, ItAr_BDT_H) == TRUE))
 	
 	{
-	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_04"); //Popravdì øeèeno ano.
+	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_04"); //PopravdÄ› Å™eÄeno ano.
 	}
 	else
 	{
-	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_05"); //Ne. Soudì podle obleèení jsi urazil hezkej kus cesty.
+	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_05"); //Ne. SoudÄ› podle obleÄenÃ­ jsi urazil hezkej kus cesty.
 	};
 };
 
@@ -110,7 +110,7 @@ instance DIA_Addon_Owen_WasMachen		(C_INFO)
 	condition	= DIA_Addon_Owen_WasMachen_Condition;
 	information	= DIA_Addon_Owen_WasMachen_Info;
 
-	description	= "Co tady dìláš?";
+	description	= "Co tady dÄ›lÃ¡Å¡?";
 };
 func int DIA_Addon_Owen_WasMachen_Condition ()
 {
@@ -121,9 +121,9 @@ func int DIA_Addon_Owen_WasMachen_Condition ()
 };
 func void DIA_Addon_Owen_WasMachen_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //Co tu dìláš?
-	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //Sekám døevo pro tábor.
-	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //Já tu otroèím, mùu si strhat cemr a v táboøe si všichni válej šunky.
+	AI_Output	(other, self, "DIA_Addon_Owen_WasMachen_15_00"); //Co tu dÄ›lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_01"); //SekÃ¡m dÅ™evo pro tÃ¡bor.
+	AI_Output	(self, other, "DIA_Addon_Owen_WasMachen_13_02"); //JÃ¡ tu otroÄÃ­m, mÅ¯Å¾u si strhat cemr a v tÃ¡boÅ™e si vÅ¡ichni vÃ¡lej Å¡unky.
 };
 
 // ************************************************************
@@ -136,7 +136,7 @@ instance DIA_Addon_Owen_Perm		(C_INFO)
 	condition	= DIA_Addon_Owen_Perm_Condition;
 	information	= DIA_Addon_Owen_Perm_Info;
 	permanent	= TRUE;
-	description	= "A co dál?";
+	description	= "A co dÃ¡l?";
 };
 func int DIA_Addon_Owen_Perm_Condition ()
 {
@@ -150,7 +150,7 @@ func int DIA_Addon_Owen_Perm_Condition ()
 func void DIA_Addon_Owen_Perm_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Owen_Perm_15_00"); //No a?
-	AI_Output	(self, other, "DIA_Addon_Owen_Perm_13_01"); //Kdybych vìdìl, e to vezme takovejhle obrat, tak jsem k pirátùm nikdy nelez.
+	AI_Output	(self, other, "DIA_Addon_Owen_Perm_13_01"); //Kdybych vÄ›dÄ›l, Å¾e to vezme takovejhle obrat, tak jsem k pirÃ¡tÅ¯m nikdy nelez.
 };
 
 // ************************************************************
@@ -163,7 +163,7 @@ instance DIA_Addon_Owen_Henry		(C_INFO)
 	condition	= DIA_Addon_Owen_Henry_Condition;
 	information	= DIA_Addon_Owen_Henry_Info;
 	permanent	= TRUE;
-	description	= "Henry èeká na døevo na stavbu palisády.";
+	description	= "Henry ÄekÃ¡ na dÅ™evo na stavbu palisÃ¡dy.";
 };
 func int DIA_Addon_Owen_Henry_Condition ()
 {
@@ -175,20 +175,20 @@ func int DIA_Addon_Owen_Henry_Condition ()
 };
 func void DIA_Addon_Owen_Henry_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_Henry_15_00"); //Henry èeká na døevo, kterı potøebuje na palisádu.
+	AI_Output	(other, self, "DIA_Addon_Owen_Henry_15_00"); //Henry ÄekÃ¡ na dÅ™evo, kterÃ½ potÅ™ebuje na palisÃ¡du.
 
 	if (MIS_Owen_FindMalcom != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_01"); //Napøed chci zjistit, co se stalo s mım kámošem Malcolmem.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_01"); //NapÅ™ed chci zjistit, co se stalo s mÃ½m kÃ¡moÅ¡em Malcolmem.
 	
 			
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Hele, klídek. Døív nebo pozdìjc mu to pitomı døevo pøinesu.
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_03"); //Tak mu to bì øíct sám.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Hele, klÃ­dek. DÅ™Ã­v nebo pozdÄ›jc mu to pitomÃ½ dÅ™evo pÅ™inesu.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_03"); //Tak mu to bÄ›Å¾ Å™Ã­ct sÃ¡m.
 		
-		B_LogEntry (TOPIC_Addon_HolOwen,"Mám Henrymu vyøídit, e døíví pøiveze Owen.");
+		B_LogEntry (TOPIC_Addon_HolOwen,"MÃ¡m Henrymu vyÅ™Ã­dit, Å¾e dÅ™Ã­vÃ­ pÅ™iveze Owen.");
 		
 		AI_StopProcessInfos (self);
 		Owen_ComesToHenry = TRUE;
@@ -224,19 +224,19 @@ func int DIA_Addon_Owen_MalcomStunt_Condition ()
 func void DIA_Addon_Owen_MalcomStunt_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //Co je?
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //Mùj kámoš Malcolm zmizel.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //Napad ho jeden z tìch hnusnejch èíhavcù.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Tak jsme zdrhli do tıhle jeskynì.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //Jene ten èíhavec šel po nás.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcolm s ním bojoval a pak oba spadli tady do tı díry.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //Nejspíš je plná vody.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Chvíli tam voba ještì bojovali a pak všecko ztichlo.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //Nemám zdání, jestli je naivu nebo ne.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //MÅ¯j kÃ¡moÅ¡ Malcolm zmizel.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //Napad ho jeden z tÄ›ch hnusnejch ÄÃ­havcÅ¯.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Tak jsme zdrhli do tÃ½hle jeskynÄ›.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //JenÅ¾e ten ÄÃ­havec Å¡el po nÃ¡s.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcolm s nÃ­m bojoval a pak oba spadli tady do tÃ½ dÃ­ry.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //NejspÃ­Å¡ je plnÃ¡ vody.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //ChvÃ­li tam voba jeÅ¡tÄ› bojovali a pak vÅ¡ecko ztichlo.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //NemÃ¡m zdÃ¡nÃ­, jestli je naÅ¾ivu nebo ne.
 	
 	Log_CreateTopic (TOPIC_Addon_MalcomsStunt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MalcomsStunt,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Owen chce vìdìt, zda je jeho pøítel Malcom ještì naivu. Kousek od ohništì spadl do hluboké jámy spolu s èíhavcem.");
-	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Owen prohlásil, e je tam dole voda a e Malcom byl zpoèátku urèitì naivu, ale pak u se odtamtud neozval ani hlásek.");
+	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Owen chce vÄ›dÄ›t, zda je jeho pÅ™Ã­tel Malcom jeÅ¡tÄ› naÅ¾ivu. Kousek od ohniÅ¡tÄ› spadl do hlubokÃ© jÃ¡my spolu s ÄÃ­havcem.");
+	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Owen prohlÃ¡sil, Å¾e je tam dole voda a Å¾e Malcom byl zpoÄÃ¡tku urÄitÄ› naÅ¾ivu, ale pak uÅ¾ se odtamtud neozval ani hlÃ¡sek.");
 	
 	MIS_Owen_FindMalcom = LOG_RUNNING;
 };
@@ -251,7 +251,7 @@ instance DIA_Addon_Owen_runter		(C_INFO)
 	condition	= DIA_Addon_Owen_runter_Condition;
 	information	= DIA_Addon_Owen_runter_Info;
 
-	description	= "A jak se do té díry dostanu?";
+	description	= "A jak se do tÃ© dÃ­ry dostanu?";
 };
 func int DIA_Addon_Owen_runter_Condition ()
 {
@@ -264,8 +264,8 @@ func int DIA_Addon_Owen_runter_Condition ()
 };
 func void DIA_Addon_Owen_runter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_runter_15_00"); //Jak se do té pukliny dostanu?
-	AI_Output	(self, other, "DIA_Addon_Owen_runter_13_01"); //Co já vím. Nejspíš tam budeš muset slézt nebo seskoèit.
+	AI_Output	(other, self, "DIA_Addon_Owen_runter_15_00"); //Jak se do tÃ© pukliny dostanu?
+	AI_Output	(self, other, "DIA_Addon_Owen_runter_13_01"); //Co jÃ¡ vÃ­m. NejspÃ­Å¡ tam budeÅ¡ muset slÃ©zt nebo seskoÄit.
 };
 
 // ------------------------------------------------------------
@@ -278,7 +278,7 @@ instance DIA_Addon_Owen_MalcomDead		(C_INFO)
 	condition	= DIA_Addon_Owen_MalcomDead_Condition;
 	information	= DIA_Addon_Owen_MalcomDead_Info;
 
-	description	= "Tvùj kamarád Malcom je mrtvı.";
+	description	= "TvÅ¯j kamarÃ¡d Malcom je mrtvÃ½.";
 };
 func int DIA_Addon_Owen_MalcomDead_Condition ()
 {
@@ -291,15 +291,15 @@ func int DIA_Addon_Owen_MalcomDead_Condition ()
 };
 func void DIA_Addon_Owen_MalcomDead_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Tvùj kamarád Malcolm je mrtvı.
-	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //Já si to myslel. Chudák malej. Asi jsem mu mìl pomoct.
+	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //TvÅ¯j kamarÃ¡d Malcolm je mrtvÃ½.
+	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //JÃ¡ si to myslel. ChudÃ¡k malej. Asi jsem mu mÄ›l pomoct.
 	if (SC_MadeStunt == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //Ty seš vánì stateènej, víš to?
-		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //V tı škvíøe bych mu stejnì nepomoh.
+		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_02"); //Ty seÅ¡ vÃ¡Å¾nÄ› stateÄnej, vÃ­Å¡ to?
+		AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_03"); //V tÃ½ Å¡kvÃ­Å™e bych mu stejnÄ› nepomoh.
 	};
 	
-	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Sdìlil jsem Owenovi, e jeho pøítel Malcom je mrtvı. Vzal to docela klidnì.");
+	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"SdÄ›lil jsem Owenovi, Å¾e jeho pÅ™Ã­tel Malcom je mrtvÃ½. Vzal to docela klidnÄ›.");
 	
 	MIS_Owen_FindMalcom = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Owen_MalcomDead);

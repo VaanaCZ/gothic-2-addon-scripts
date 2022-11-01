@@ -11,13 +11,13 @@ func void B_AssignDementorTalk_Ritual ()
 	if (MIS_SCKnowsInnosEyeIsBroken == FALSE)
 	
 	{
-		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //Pøišel jsi pøíliš pozdì.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Znièili jsme Innosovo oko, take u nemùe nikdy znovu nabıt své pùvodní moci.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Teï ti ukáeme pošetilost tvıch snah postavit se našemu Pánu.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //PÅ™iÅ¡el jsi pÅ™Ã­liÅ¡ pozdÄ›.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //ZniÄili jsme Innosovo oko, takÅ¾e uÅ¾ nemÅ¯Å¾e nikdy znovu nabÃ½t svÃ© pÅ¯vodnÃ­ moci.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //TeÄ ti ukÃ¡Å¾eme poÅ¡etilost tvÃ½ch snah postavit se naÅ¡emu PÃ¡nu.
 
 		MIS_SCKnowsInnosEyeIsBroken  = TRUE;
-		B_LogEntry (TOPIC_INNOSEYE, "Ti hrozní chlapi mi pìknì hrají na nervy - znièili Innosovo oko a já teï netuším, jak je spravit.");
- 		B_LogEntry (TOPIC_TraitorPedro, "Našel jsem Innosovo oko, ale po Pedrovi nebylo nikde ani vidu, ani slechu. Dal se do spolku s tìmi èernımi mágy.");
+		B_LogEntry (TOPIC_INNOSEYE, "Ti hroznÃ­ chlapi mi pÄ›knÄ› hrajÃ­ na nervy - zniÄili Innosovo oko a jÃ¡ teÄ netuÅ¡Ã­m, jak je spravit.");
+ 		B_LogEntry (TOPIC_TraitorPedro, "NaÅ¡el jsem Innosovo oko, ale po Pedrovi nebylo nikde ani vidu, ani slechu. Dal se do spolku s tÄ›mi ÄernÃ½mi mÃ¡gy.");
 		B_GivePlayerXP (XP_SCKnowsInnosEyeIsBroken);
 	}
 	else
@@ -27,19 +27,19 @@ func void B_AssignDementorTalk_Ritual ()
 		
 	 	if (randy == 0)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //Teï pocítíš naši moc.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //TeÄ pocÃ­tÃ­Å¡ naÅ¡i moc.
 		};
 		if (randy == 1)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Za Pána.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Za PÃ¡na.
 		};
 		if (randy == 2)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_05"); //Nemùeš se skrıt.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_05"); //NemÅ¯Å¾eÅ¡ se skrÃ½t.
 		};
 		if (randy == 3)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_06"); //Zabijeme tì.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_06"); //Zabijeme tÄ›.
 		};
 	};
 	Npc_SetRefuseTalk (self,30);

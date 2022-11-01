@@ -33,7 +33,7 @@ INSTANCE DIA_NONE_101_MARIO_DI_Job (C_INFO)
 	information = DIA_NONE_101_MARIO_DI_Job_Info;
 	permanent   = TRUE;
 
-	description	= "M·ö jedineËnou p¯Ìleûitost dok·zat svÈ schopnosti v boji.";
+	description	= "M√°≈° jedineƒçnou p≈ô√≠le≈æitost dok√°zat sv√© schopnosti v boji.";
 };
 
 FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
@@ -47,10 +47,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_Job_Info()
 {
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //M·ö jedineËnou p¯Ìleûitost dok·zat svÈ schopnosti v boji.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //Pomalu. Vöechno m· sv˘j Ëas.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Hmm. P¯esnÏ to jsem od tebe Ëekal.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Jen poËkej.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //M√°≈° jedineƒçnou p≈ô√≠le≈æitost dok√°zat sv√© schopnosti v boji.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //Pomalu. V≈°echno m√° sv≈Øj ƒças.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Hmm. P≈ôesnƒõ to jsem od tebe ƒçekal.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Jen poƒçkej.
 };
 
 //*********************************************************************
@@ -75,10 +75,10 @@ FUNC INT DIA_NONE_101_MARIO_DI_ambush_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_ambush_Info()
 {
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //PojÔ blÌû. Tak, p¯Ìteli. TeÔ mi ukaû, co m·ö.
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Co tÌm myslÌö?
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Je to prostÈ. P·n tÏ uû m· dost.
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //MÏl jsem tÏ zabÌt uû d¯Ìv. Ale j· a mÌ p¯·telÈ tu chybu hned napravÌme.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Pojƒè bl√≠≈æ. Tak, p≈ô√≠teli. Teƒè mi uka≈æ, co m√°≈°.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Co t√≠m mysl√≠≈°?
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //Je to prost√©. P√°n tƒõ u≈æ m√° dost.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //Mƒõl jsem tƒõ zab√≠t u≈æ d≈ô√≠v. Ale j√° a m√≠ p≈ô√°tel√© tu chybu hned naprav√≠me.
 	
 	Info_ClearChoices	(DIA_NONE_101_MARIO_DI_ambush);
 	Info_AddChoice	(DIA_NONE_101_MARIO_DI_ambush, DIALOG_ENDE, DIA_NONE_101_MARIO_DI_ambush_ambush );

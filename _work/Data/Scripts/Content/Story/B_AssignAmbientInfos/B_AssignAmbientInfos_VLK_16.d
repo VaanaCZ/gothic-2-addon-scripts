@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_16_JOIN(C_INFO)
 	condition	= DIA_VLK_16_JOIN_Condition;
 	information	= DIA_VLK_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "Chci se stát obèanem tohoto mìsta!";
+	description = "Chci se stÃ¡t obÄanem tohoto mÄ›sta!";
 };                       
 
 FUNC INT DIA_VLK_16_JOIN_Condition()
@@ -43,9 +43,9 @@ FUNC INT DIA_VLK_16_JOIN_Condition()
 
 FUNC VOID DIA_VLK_16_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_JOIN_15_00"); //Chci se stát obèanem tohoto mìsta!
-	AI_Output (self, other, "DIA_VLK_16_JOIN_16_01"); //Pomùeš nám bránit mìsto proti skøetùm?
-	AI_Output (self, other, "DIA_VLK_16_JOIN_16_02"); //Pokud jsi obèanem Khorinidu, mùeš se pøidat k domobranì - promluv si nìkım od mìstskıch stráí.
+	AI_Output (other, self, "DIA_VLK_16_JOIN_15_00"); //Chci se stÃ¡t obÄanem tohoto mÄ›sta!
+	AI_Output (self, other, "DIA_VLK_16_JOIN_16_01"); //PomÅ¯Å¾eÅ¡ nÃ¡m brÃ¡nit mÄ›sto proti skÅ™etÅ¯m?
+	AI_Output (self, other, "DIA_VLK_16_JOIN_16_02"); //Pokud jsi obÄanem Khorinidu, mÅ¯Å¾eÅ¡ se pÅ™idat k domobranÄ› - promluv si nÄ›kÃ½m od mÄ›stskÃ½ch strÃ¡Å¾Ã­.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_VLK_16_PEOPLE(C_INFO)
 	condition	= DIA_VLK_16_PEOPLE_Condition;
 	information	= DIA_VLK_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo v tomhle mìstì poívá nejvìtší vánosti?";
+	description = "Kdo v tomhle mÄ›stÄ› poÅ¾Ã­vÃ¡ nejvÄ›tÅ¡Ã­ vÃ¡Å¾nosti?";
 };                       
 
 FUNC INT DIA_VLK_16_PEOPLE_Condition()
@@ -67,8 +67,8 @@ FUNC INT DIA_VLK_16_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_PEOPLE_15_00"); //Kdo v tomhle mìstì poívá nejvìtší vánosti?
-	AI_Output (self, other, "DIA_VLK_16_PEOPLE_16_01"); //Paladinové obsadili horní èást mìsta.
+	AI_Output (other, self, "DIA_VLK_16_PEOPLE_15_00"); //Kdo v tomhle mÄ›stÄ› poÅ¾Ã­vÃ¡ nejvÄ›tÅ¡Ã­ vÃ¡Å¾nosti?
+	AI_Output (self, other, "DIA_VLK_16_PEOPLE_16_01"); //PaladinovÃ© obsadili hornÃ­ ÄÃ¡st mÄ›sta.
 };
 
 // *************************************************************************
@@ -80,7 +80,7 @@ INSTANCE DIA_VLK_16_LOCATION(C_INFO)
 	condition	= DIA_VLK_16_LOCATION_Condition;
 	information	= DIA_VLK_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co je tu zajímavého k vidìní?";
+	description = "Co je tu zajÃ­mavÃ©ho k vidÄ›nÃ­?";
 };                       
 
 FUNC INT DIA_VLK_16_LOCATION_Condition()
@@ -90,8 +90,8 @@ FUNC INT DIA_VLK_16_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_LOCATION_15_00"); //Co je tu zajímavého k vidìní?
-	AI_Output (self, other, "DIA_VLK_16_LOCATION_16_01"); //Na trišti nalezneš vystavené veškeré druhy zboí.
+	AI_Output (other, self, "DIA_VLK_16_LOCATION_15_00"); //Co je tu zajÃ­mavÃ©ho k vidÄ›nÃ­?
+	AI_Output (self, other, "DIA_VLK_16_LOCATION_16_01"); //Na trÅ¾iÅ¡ti nalezneÅ¡ vystavenÃ© veÅ¡kerÃ© druhy zboÅ¾Ã­.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_VLK_16_STANDARD(C_INFO)
 	condition	= DIA_VLK_16_STANDARD_Condition;
 	information	= DIA_VLK_16_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_VLK_16_STANDARD_Condition()
 {
@@ -111,12 +111,12 @@ func INT DIA_VLK_16_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_VLK_16_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_00"); //Doufám, e domobrana koneènì zjistí, proè se khorinidská populace tak tenèí.
-		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_01"); //Kdy slyšíš, kolik lidí u zmizelo, aby ses taky zaèal bát o ivot.
+		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_00"); //DoufÃ¡m, Å¾e domobrana koneÄnÄ› zjistÃ­, proÄ se khorinidskÃ¡ populace tak tenÄÃ­.
+		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_01"); //KdyÅ¾ slyÅ¡Ã­Å¡, kolik lidÃ­ uÅ¾ zmizelo, aby ses taky zaÄal bÃ¡t o Å¾ivot.
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
 				Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -128,31 +128,31 @@ FUNC VOID DIA_VLK_16_STANDARD_Info()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_01"); //U jsi to slyšel? Za hradbami byli vidìni skøeti. Doufejme, e paladinové mají dostatek muù.
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_02"); //Rád bych vìdìl, jestli to náhodu není ten dùvod, proè farmáøi pøestali chodit na trh.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_01"); //UÅ¾ jsi to slyÅ¡el? Za hradbami byli vidÄ›ni skÅ™eti. Doufejme, Å¾e paladinovÃ© majÃ­ dostatek muÅ¾Å¯.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_02"); //RÃ¡d bych vÄ›dÄ›l, jestli to nÃ¡hodu nenÃ­ ten dÅ¯vod, proÄ farmÃ¡Å™i pÅ™estali chodit na trh.
 	};
 	
 	if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_03"); //oldnéø, o kterém se øíkalo, e zavradil Lothara, je nevinnı. Objevily se dùkazy o tom, e na nìj nìkdo ušil boudu. Zaslechl jsem to na trišti.
+			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_03"); //Å½oldnÃ©Å™, o kterÃ©m se Å™Ã­kalo, Å¾e zavraÅ¾dil Lothara, je nevinnÃ½. Objevily se dÅ¯kazy o tom, Å¾e na nÄ›j nÄ›kdo uÅ¡il boudu. Zaslechl jsem to na trÅ¾iÅ¡ti.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_04"); //To je neslıchané. Ten statkáøskı oldák zabil ctihodného Lothara pøímo uprostøed ulice.
-			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_05"); //Ale Innos ho za jeho høíchy potrestá. Nikdo nesmí vztáhnout ruku na rytíøe našeho Pána.
+			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_04"); //To je neslÃ½chanÃ©. Ten statkÃ¡Å™skÃ½ Å¾oldÃ¡k zabil ctihodnÃ©ho Lothara pÅ™Ã­mo uprostÅ™ed ulice.
+			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_05"); //Ale Innos ho za jeho hÅ™Ã­chy potrestÃ¡. Nikdo nesmÃ­ vztÃ¡hnout ruku na rytÃ­Å™e naÅ¡eho PÃ¡na.
 		};
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_06"); //Slyšel jsem, e ti šibenièníci opustili Onarovu farmu. Øíká se, e se ze strachu pøed lordem Hagenem stáhli zpìt do Hornického údolí.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_06"); //SlyÅ¡el jsem, Å¾e ti Å¡ibeniÄnÃ­ci opustili Onarovu farmu. Å˜Ã­kÃ¡ se, Å¾e se ze strachu pÅ™ed lordem Hagenem stÃ¡hli zpÄ›t do HornickÃ©ho ÃºdolÃ­.
 	};
 	
 	if (Kapitel == 5)
 	{
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_07"); //Slyšel jsem, e se oddíl paladinù vydal do Hornického údolí pobít ty strašné draky.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_07"); //SlyÅ¡el jsem, Å¾e se oddÃ­l paladinÅ¯ vydal do HornickÃ©ho ÃºdolÃ­ pobÃ­t ty straÅ¡nÃ© draky.
 	};
 };
 

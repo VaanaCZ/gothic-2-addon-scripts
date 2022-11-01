@@ -16,7 +16,7 @@ func void EVT_ARCHOLDEAD_FUNC ()
 	
 		if (EVT_ARCHOLDEAD_FUNC_OneTime == FALSE)
 		{
-			B_LogEntry (TOPIC_HallenVonIrdorath,"Našel jsem tu nìco, co snad kdysi bıvalo chrámem a obıvala to spousta nemrtvıch. Všechno mi ivì pøipomíná zatracenı skøetí chrám a Spáèe. Tentokrát ale neselu - teï u ne!"); 
+			B_LogEntry (TOPIC_HallenVonIrdorath,"NaÅ¡el jsem tu nÄ›co, co snad kdysi bÃ½valo chrÃ¡mem a obÃ½vala to spousta nemrtvÃ½ch. VÅ¡echno mi Å¾ivÄ› pÅ™ipomÃ­nÃ¡ zatracenÃ½ skÅ™etÃ­ chrÃ¡m a SpÃ¡Äe. TentokrÃ¡t ale neselÅ¾u - teÄ uÅ¾ ne!"); 
 			EVT_ARCHOLDEAD_FUNC_OneTime = TRUE;
 		};
 };

@@ -78,7 +78,7 @@ func int DIA_Vanja_STANDARD_Condition ()
 };
 func void DIA_Vanja_STANDARD_Info ()
 {
-	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //M·m pr·ci.
+	AI_Output			(self, other, "DIA_Vanja_STANDARD_17_00"); //M√°m pr√°ci.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -91,7 +91,7 @@ instance DIA_Vanja_DOPE		(C_INFO)
 	condition	 = 	DIA_Vanja_DOPE_Condition;
 	information	 = 	DIA_Vanja_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Kde bych sehnal nÏjakou tr·vu?";
+	description	 = 	"Kde bych sehnal nƒõjakou tr√°vu?";
 };
 
 func int DIA_Vanja_DOPE_Condition ()
@@ -104,9 +104,9 @@ func int DIA_Vanja_DOPE_Condition ()
 };
 func void DIA_Vanja_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Kde bych sehnal nÏjakou tr·vu?
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Nem·m tuöenÌ. Radöi dej od toho ruce pryË.
-	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Protoûe jestli se na to nep¯estaneö pt·t, m˘ûeö si je sp·lit.
+	AI_Output (other, self, "DIA_Vanja_DOPE_15_00"); //Kde bych sehnal nƒõjakou tr√°vu?
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_01"); //Nem√°m tu≈°en√≠. Rad≈°i dej od toho ruce pryƒç.
+	AI_Output (self, other, "DIA_Vanja_DOPE_17_02"); //Proto≈æe jestli se na to nep≈ôestane≈° pt√°t, m≈Ø≈æe≈° si je sp√°lit.
 };
 
 

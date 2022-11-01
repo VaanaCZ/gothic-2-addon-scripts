@@ -29,7 +29,7 @@ instance DIA_Parlaf_HALLO		(C_INFO)
 	nr		 	 = 	1;
 	condition	 = 	DIA_Parlaf_HALLO_Condition;
 	information	 = 	DIA_Parlaf_HALLO_Info;
-	description	 = 	"Hej, jak se m·ö?";
+	description	 = 	"Hej, jak se m√°≈°?";
 };
 
 func int DIA_Parlaf_HALLO_Condition ()
@@ -39,12 +39,12 @@ func int DIA_Parlaf_HALLO_Condition ()
 
 func void DIA_Parlaf_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_HALLO_15_00"); //Hej, jak se m·ö?
-	AI_Output (self, other, "DIA_Parlaf_HALLO_03_01"); //Jak si myslÌö, ûe se m·m? CelÈ dny tr·vÌm u brousku a brousÌm meËe.
+	AI_Output (other, self, "DIA_Parlaf_HALLO_15_00"); //Hej, jak se m√°≈°?
+	AI_Output (self, other, "DIA_Parlaf_HALLO_03_01"); //Jak si mysl√≠≈°, ≈æe se m√°m? Cel√© dny tr√°v√≠m u brousku a brous√≠m meƒçe.
 	if ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //A vËera n·m Engor jeötÏ k tomu zase zmenöil p¯ÌdÏl jÌdla. Kdyû to takhle p˘jde d·l, za chvÌli pom¯eme hlady.
-		AI_Output (self, other, "DIA_Parlaf_HALLO_03_03"); //Nebo n·s zabijou sk¯eti. é·dnÈ p¯ÌjemnÈ vyhlÌdky se nekonajÌ.
+		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //A vƒçera n√°m Engor je≈°tƒõ k tomu zase zmen≈°il p≈ô√≠dƒõl j√≠dla. Kdy≈æ to takhle p≈Øjde d√°l, za chv√≠li pom≈ôeme hlady.
+		AI_Output (self, other, "DIA_Parlaf_HALLO_03_03"); //Nebo n√°s zabijou sk≈ôeti. ≈Ω√°dn√© p≈ô√≠jemn√© vyhl√≠dky se nekonaj√≠.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -70,13 +70,13 @@ func int DIA_Parlaf_ENGOR_Condition ()
 func void DIA_Parlaf_ENGOR_Info ()
 {
 	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_00"); //Kdo je ten Engor?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Engor se star· o z·sobov·nÌ a rozdÏluje potraviny - p¯ÌdÏly jsou ale kaûd˝ t˝den menöÌ a menöÌ.
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //No jasnÏ, m˘ûeö s nÌm smlouvat, ale pot¯ebujeö k tomu tvrdou zlatou mÏnu.
-	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_03"); //A ty to nem˘ûeö zat·hnout?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //Za sv˘j mizern˝ ûold si m˘ûu koupit leda tak p·r pitom˝ch tu¯Ìn˘!
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Engor se star√° o z√°sobov√°n√≠ a rozdƒõluje potraviny - p≈ô√≠dƒõly jsou ale ka≈æd√Ω t√Ωden men≈°√≠ a men≈°√≠.
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //No jasnƒõ, m≈Ø≈æe≈° s n√≠m smlouvat, ale pot≈ôebuje≈° k tomu tvrdou zlatou mƒõnu.
+	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_03"); //A ty to nem≈Ø≈æe≈° zat√°hnout?
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //Za sv≈Øj mizern√Ω ≈æold si m≈Ø≈æu koupit leda tak p√°r pitom√Ωch tu≈ô√≠n≈Ø!
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
-	Log_AddEntry(TOPIC_Trader_OC, "Engor se star· o z·sobov·nÌ hradu a bokem taky trochu obchoduje.");     
+	Log_AddEntry(TOPIC_Trader_OC, "Engor se star√° o z√°sobov√°n√≠ hradu a bokem taky trochu obchoduje.");     
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo Engor
@@ -88,7 +88,7 @@ instance DIA_Parlaf_Wo		(C_INFO)
 	condition	 = 	DIA_Parlaf_Wo_Condition;
 	information	 = 	DIA_Parlaf_Wo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kde bych naöel toho Engora?";
+	description	 = 	"Kde bych na≈°el toho Engora?";
 };
 
 func int DIA_Parlaf_Wo_Condition ()
@@ -101,8 +101,8 @@ func int DIA_Parlaf_Wo_Condition ()
 };
 func void DIA_Parlaf_Wo_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_Wo_15_00"); //Kde bych naöel toho Engora?
-	AI_Output (self, other, "DIA_Parlaf_Wo_03_01"); //V rytÌ¯skÈm sÌdle. StaËÌ projÌt otev¯en˝m pr˘chodem u kov·rny.
+	AI_Output (other, self, "DIA_Parlaf_Wo_15_00"); //Kde bych na≈°el toho Engora?
+	AI_Output (self, other, "DIA_Parlaf_Wo_03_01"); //V ryt√≠≈ôsk√©m s√≠dle. Staƒç√≠ proj√≠t otev≈ôen√Ωm pr≈Øchodem u kov√°rny.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info HUNGRIG
@@ -114,7 +114,7 @@ instance DIA_Parlaf_HUNGRIG		(C_INFO)
 	condition	 = 	DIA_Parlaf_HUNGRIG_Condition;
 	information	 = 	DIA_Parlaf_HUNGRIG_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co je novÈho?";
+	description	 = 	"Co je nov√©ho?";
 };
 
 func int DIA_Parlaf_HUNGRIG_Condition ()
@@ -128,8 +128,8 @@ func int DIA_Parlaf_HUNGRIG_Condition ()
 };
 func void DIA_Parlaf_HUNGRIG_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_HUNGRIG_15_00"); //Co je novÈho?
-	AI_Output (self, other, "DIA_Parlaf_HUNGRIG_03_01"); //Ten zatracen˝ Engor by mÏl vyd·vat vÌc jÌdla!
+	AI_Output (other, self, "DIA_Parlaf_HUNGRIG_15_00"); //Co je nov√©ho?
+	AI_Output (self, other, "DIA_Parlaf_HUNGRIG_03_01"); //Ten zatracen√Ω Engor by mƒõl vyd√°vat v√≠c j√≠dla!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SATT
@@ -141,7 +141,7 @@ instance DIA_Parlaf_SATT		(C_INFO)
 	condition	 = 	DIA_Parlaf_SATT_Condition;
 	information	 = 	DIA_Parlaf_SATT_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Co je novÈho?";
+	description	 = 	"Co je nov√©ho?";
 };
 
 func int DIA_Parlaf_SATT_Condition ()
@@ -155,17 +155,17 @@ func int DIA_Parlaf_SATT_Condition ()
 var int DIA_Parlaf_SATT_OneTime;
 func void DIA_Parlaf_SATT_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_SATT_15_00"); //Co je novÈho?
+	AI_Output (other, self, "DIA_Parlaf_SATT_15_00"); //Co je nov√©ho?
 	
 	if (DIA_Parlaf_SATT_OneTime == FALSE)
 	&& ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_SATT_03_01"); //Engor vydal novÈ p¯ÌdÏly masa. Uû bylo naËase.
+		AI_Output (self, other, "DIA_Parlaf_SATT_03_01"); //Engor vydal nov√© p≈ô√≠dƒõly masa. U≈æ bylo naƒçase.
 		DIA_Parlaf_SATT_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlaf_SATT_03_02"); //Tv˘j p¯Ìjezd je jedinou novinkou, kter· je opravdu nov·.
+		AI_Output (self, other, "DIA_Parlaf_SATT_03_02"); //Tv≈Øj p≈ô√≠jezd je jedinou novinkou, kter√° je opravdu nov√°.
 	};
 };
 

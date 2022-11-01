@@ -20,7 +20,7 @@ func VOID DIA_DiegoOw_EXIT_Info()
 };
 
 //******************************************************************
-//				Begrüssung
+//				BegrÃ¼ssung
 //******************************************************************
 INSTANCE DIA_DiegoOw_Hallo(C_INFO)
 {
@@ -37,21 +37,21 @@ FUNC INT DIA_DiegoOw_Hallo_Condition()
 };
 FUNC VOID DIA_DiegoOw_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_00");//Hej, myslel jsem si, e jsi mrtvı.
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_01");//Ano... to jsem také byl.
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_02");//Ale teï jsem zpátky a hledám dùkaz o tom, e tady jsou draci.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_03");//Proè to dìláš?
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_04");//Pracuji pro lorda Hagena. S pomocí paladinù se nám urèitì podaøí draky zastavit.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_05");//Paladinové? Nìco ti øeknu. Kdy se mi odsud podaøilo pláchnout, šel jsem do Khorinidu.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_06");//Chtìl jsem paladiny varovat pøed draky. Nebesa vìdí, proè jsem to vùbec zkoušel.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_07");//Ten nadutec Lothar mì ani neposlouchal - a u vùbec mì nenechal si promluvit s lordem Hagenem.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_08");//Místo toho mì poslali zpátky s touhle vıpravou. Take o paladinech mi vùbec nemluv.
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_09");//Dùleité je zastavit draky, dokud máme èas - a vùbec nezáleí na tom, kdo nám k tomu pomùe.
-	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_10");//Zastavit je? Mìli bysme vypadnout z tohohle údolí, dokud máme èas aspoò na to.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_00");//Hej, myslel jsem si, Å¾e jsi mrtvÃ½.
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_01");//Ano... to jsem takÃ© byl.
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_02");//Ale teÄ jsem zpÃ¡tky a hledÃ¡m dÅ¯kaz o tom, Å¾e tady jsou draci.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_03");//ProÄ to dÄ›lÃ¡Å¡?
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_04");//Pracuji pro lorda Hagena. S pomocÃ­ paladinÅ¯ se nÃ¡m urÄitÄ› podaÅ™Ã­ draky zastavit.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_05");//PaladinovÃ©? NÄ›co ti Å™eknu. KdyÅ¾ se mi odsud podaÅ™ilo plÃ¡chnout, Å¡el jsem do Khorinidu.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_06");//ChtÄ›l jsem paladiny varovat pÅ™ed draky. Nebesa vÄ›dÃ­, proÄ jsem to vÅ¯bec zkouÅ¡el.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_07");//Ten nadutec Lothar mÄ› ani neposlouchal - a uÅ¾ vÅ¯bec mÄ› nenechal si promluvit s lordem Hagenem.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_08");//MÃ­sto toho mÄ› poslali zpÃ¡tky s touhle vÃ½pravou. TakÅ¾e o paladinech mi vÅ¯bec nemluv.
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_09");//DÅ¯leÅ¾itÃ© je zastavit draky, dokud mÃ¡me Äas - a vÅ¯bec nezÃ¡leÅ¾Ã­ na tom, kdo nÃ¡m k tomu pomÅ¯Å¾e.
+	AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_10");//Zastavit je? MÄ›li bysme vypadnout z tohohle ÃºdolÃ­, dokud mÃ¡me Äas aspoÅˆ na to.
 	
-	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_03");//Øekni, jak se ti podaøilo dostat se pøes prùsmyk? Myslel jsem, e se to tam hemí skøety.
-	AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_04");//Skrz opuštìnı dùl vede cesta, kterou skøeti nehlídají.
-	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_05");//To je dobrı vìdìt. V tom pøípadì se brzy vydám do Khorinidu - mám tam pár nevyøízenıch úètù.
+	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_03");//Å˜ekni, jak se ti podaÅ™ilo dostat se pÅ™es prÅ¯smyk? Myslel jsem, Å¾e se to tam hemÅ¾Ã­ skÅ™ety.
+	AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_04");//Skrz opuÅ¡tÄ›nÃ½ dÅ¯l vede cesta, kterou skÅ™eti nehlÃ­dajÃ­.
+	AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_05");//To je dobrÃ½ vÄ›dÄ›t. V tom pÅ™Ã­padÄ› se brzy vydÃ¡m do Khorinidu - mÃ¡m tam pÃ¡r nevyÅ™Ã­zenÃ½ch ÃºÄtÅ¯.
 };	
 
 //******************************************************************
@@ -64,7 +64,7 @@ INSTANCE DIA_DiegoOw_Beweise(C_INFO)
 	condition	= DIA_DiegoOw_Beweise_Condition;
 	information	= DIA_DiegoOw_Beweise_Info;
 
-	description	= "Potøebuji ten dùkaz.";
+	description	= "PotÅ™ebuji ten dÅ¯kaz.";
 };                       
 FUNC INT DIA_DiegoOw_Beweise_Condition()
 {	
@@ -72,45 +72,45 @@ FUNC INT DIA_DiegoOw_Beweise_Condition()
 };
 FUNC VOID DIA_DiegoOw_Beweise_Info()
 {	
-		//AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_00");//Was weißt du von Silvestros Erz?
+		//AI_Output (other ,self,"DIA_DiegoOw_Silvestro_15_00");//Was weiÃŸt du von Silvestros Erz?
 	
-	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_11"); //Poslouchej, potøebuju ten dùkaz.
+	AI_Output (other ,self,"DIA_DiegoOw_Hallo_15_11"); //Poslouchej, potÅ™ebuju ten dÅ¯kaz.
 		
 	if (MIS_ScoutMine == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_14");//Dobrá, udìlám pro tebe, co bude v mıch silách. Ale nebudu za nikoho riskovat krk.
+		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_14");//DobrÃ¡, udÄ›lÃ¡m pro tebe, co bude v mÃ½ch silÃ¡ch. Ale nebudu za nikoho riskovat krk.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_12");//Dobrá, jestli to je smysl tvojí cesty - bì si promluvit s velitelem Garondem.
-		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_13");//Jestli nìkdo ví nìco o útocích drakù, tak to jsou hoši z hradu.
+		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_12");//DobrÃ¡, jestli to je smysl tvojÃ­ cesty - bÄ›Å¾ si promluvit s velitelem Garondem.
+		AI_Output (self ,other,"DIA_DiegoOw_Hallo_11_13");//Jestli nÄ›kdo vÃ­ nÄ›co o ÃºtocÃ­ch drakÅ¯, tak to jsou hoÅ¡i z hradu.
 	};
 	
 	if (MIS_ScoutMine == LOG_RUNNING)
 	{
-		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_00");//Jsem na cestì z Garondova rozkazu. Potøebuje vìdìt, kolik rudy jste zatím vykutali.
-		AI_Output (self ,other,"DIA_DiegoOw_Garond_11_01");//A pak ti dá ten dùkaz, po kterım tak touíš?
-		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_02");//Pøesnì tak. Take co - mùeš mi nìco øíct?
+		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_00");//Jsem na cestÄ› z Garondova rozkazu. PotÅ™ebuje vÄ›dÄ›t, kolik rudy jste zatÃ­m vykutali.
+		AI_Output (self ,other,"DIA_DiegoOw_Garond_11_01");//A pak ti dÃ¡ ten dÅ¯kaz, po kterÃ½m tak touÅ¾Ã­Å¡?
+		AI_Output (other ,self,"DIA_DiegoOw_Garond_15_02");//PÅ™esnÄ› tak. TakÅ¾e co - mÅ¯Å¾eÅ¡ mi nÄ›co Å™Ã­ct?
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoOw_Garond_11_01"); //A kdy u budeš na hradì, mùeš Garondovi øíct nìco, co ho urèitì hodnì zaujme:
+		AI_Output (self ,other,"DIA_Addon_DiegoOw_Garond_11_01"); //A kdyÅ¾ uÅ¾ budeÅ¡ na hradÄ›, mÅ¯Å¾eÅ¡ Garondovi Å™Ã­ct nÄ›co, co ho urÄitÄ› hodnÄ› zaujme:
 	};
 		
 	if (Npc_GetDistToWP (self, "LOCATION_02_05") <= 1000)
 	{
-		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_01"); //Tady vzadu v jeskyni jsou ÈTYØI bedny s rudou. Narubali jí Silvestrovi chlapi.
-		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_02"); //Jen a si pro ní Garond pøijde a vezme si jí - ale to u já tady nebudu.
+		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_01"); //Tady vzadu v jeskyni jsou ÄŒTYÅ˜I bedny s rudou. Narubali jÃ­ Silvestrovi chlapi.
+		AI_Output (self ,other,"DIA_DiegoOw_Silvestro_11_02"); //Jen aÅ¥ si pro nÃ­ Garond pÅ™ijde a vezme si jÃ­ - ale to uÅ¾ jÃ¡ tady nebudu.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_01"); //V jeskyni kousek od té, kde jsem ukryl ty ÈTYØI bedny rudy. Vytìili je Silvestrovi mui.
-		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_02"); //Jen a si pro nì Garond dojde, já u je nepotøebuju.
+		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_01"); //V jeskyni kousek od tÃ©, kde jsem ukryl ty ÄŒTYÅ˜I bedny rudy. VytÄ›Å¾ili je Silvestrovi muÅ¾i.
+		AI_Output (self ,other,"DIA_Addon_DiegoOw_Silvestro_11_02"); //Jen aÅ¥ si pro nÄ› Garond dojde, jÃ¡ uÅ¾ je nepotÅ™ebuju.
 	};
 	
 	Silvestro_Ore = TRUE;
 	
-	B_LogEntry (TOPIC_ScoutMine,"Diego dopravil ÈTYØI bedny rudy, kterou vytìili Silvestrovi mui, do bezpeèí.");
+	B_LogEntry (TOPIC_ScoutMine,"Diego dopravil ÄŒTYÅ˜I bedny rudy, kterou vytÄ›Å¾ili Silvestrovi muÅ¾i, do bezpeÄÃ­.");
 };
 //******************************************************************
 //			Mine
@@ -122,7 +122,7 @@ INSTANCE DIA_DiegoOw_Mine(C_INFO)
 	condition	= DIA_DiegoOw_Mine_Condition;
 	information	= DIA_DiegoOw_Mine_Info;
 	permanent	= FALSE;
-	description = "Jak to, e jsi u rudy právì ty?";
+	description = "Jak to, Å¾e jsi u rudy prÃ¡vÄ› ty?";
 };                       
 
 FUNC INT DIA_DiegoOw_Mine_Condition()
@@ -134,11 +134,11 @@ FUNC INT DIA_DiegoOw_Mine_Condition()
 };
 FUNC VOID DIA_DiegoOw_Mine_Info()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Mine_15_00");//Jak to, e jsi u rudy právì ty?
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_01");//Byl jsem v Silvestrovì skupinì. Tìili jsme nìkolik dní a pak zaèal bıt Silvestro z nièeho nic strašnì nervózní.
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_02");//Øekl, e bysme mìli ukrıt rudu na nìjaké bezpeèné místo.
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_03");//No, a protoe jsem se tehdy u stejnì chystal pláchnout, nabídnul jsem se, e rudu schovám.
-	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_04");//A to bylo moje jedinı štìstí. Horníci toti narazili na pár dùlních èervù. ádnı z nich nepøeil.
+	AI_Output (other ,self,"DIA_DiegoOw_Mine_15_00");//Jak to, Å¾e jsi u rudy prÃ¡vÄ› ty?
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_01");//Byl jsem v SilvestrovÄ› skupinÄ›. TÄ›Å¾ili jsme nÄ›kolik dnÃ­ a pak zaÄal bÃ½t Silvestro z niÄeho nic straÅ¡nÄ› nervÃ³znÃ­.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_02");//Å˜ekl, Å¾e bysme mÄ›li ukrÃ½t rudu na nÄ›jakÃ© bezpeÄnÃ© mÃ­sto.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_03");//No, a protoÅ¾e jsem se tehdy uÅ¾ stejnÄ› chystal plÃ¡chnout, nabÃ­dnul jsem se, Å¾e rudu schovÃ¡m.
+	AI_Output (self ,other,"DIA_DiegoOw_Mine_11_04");//A to bylo moje jedinÃ½ Å¡tÄ›stÃ­. HornÃ­ci totiÅ¾ narazili na pÃ¡r dÅ¯lnÃ­ch ÄervÅ¯. Å½Ã¡dnÃ½ z nich nepÅ™eÅ¾il.
 };
 //******************************************************************
 //			Ritter
@@ -150,7 +150,7 @@ INSTANCE DIA_DiegoOw_Ritter(C_INFO)
 	condition	= DIA_DiegoOw_Ritter_Condition;
 	information	= DIA_DiegoOw_Ritter_Info;
 	permanent	= FALSE;
-	description = "Pokud jde o ty dva mrtvé rytíøe...";
+	description = "Pokud jde o ty dva mrtvÃ© rytÃ­Å™e...";
 };                       
 
 FUNC INT DIA_DiegoOw_Ritter_Condition()
@@ -163,9 +163,9 @@ FUNC INT DIA_DiegoOw_Ritter_Condition()
 };
 FUNC VOID DIA_DiegoOw_Ritter_Info()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Ritter_15_00");//Co ti dva mrtví rytíøi pøed tvou skrıší?
-	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_01");//Našla si je zubatá bìhem bitvy se skupinou chòapavcù.
-	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_02");//No, Hornickı údolí má svoje vlastní zákony. Øíkal jsem jim to. Ale nechtìli mì poslouchat.
+	AI_Output (other ,self,"DIA_DiegoOw_Ritter_15_00");//Co ti dva mrtvÃ­ rytÃ­Å™i pÅ™ed tvou skrÃ½Å¡Ã­?
+	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_01");//NaÅ¡la si je zubatÃ¡ bÄ›hem bitvy se skupinou chÅˆapavcÅ¯.
+	AI_Output (self ,other,"DIA_DiegoOw_Ritter_11_02");//No, HornickÃ½ ÃºdolÃ­ mÃ¡ svoje vlastnÃ­ zÃ¡kony. Å˜Ã­kal jsem jim to. Ale nechtÄ›li mÄ› poslouchat.
 };
 //******************************************************************
 //			Perm
@@ -177,7 +177,7 @@ INSTANCE DIA_DiegoOw_Perm(C_INFO)
 	condition	= DIA_DiegoOw_Perm_Condition;
 	information	= DIA_DiegoOw_Perm_Info;
 	permanent	= FALSE;
-	description = "Co bych mìl o údolí vìdìt?";
+	description = "Co bych mÄ›l o ÃºdolÃ­ vÄ›dÄ›t?";
 };                       
 FUNC INT DIA_DiegoOw_Perm_Condition()
 {	
@@ -185,10 +185,10 @@ FUNC INT DIA_DiegoOw_Perm_Condition()
 };
 FUNC VOID DIA_DiegoOw_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Perm_15_00");//Co bych mìl o údolí vìdìt?
-	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_01");//Od pádu bariéry se tady pár vìcí zmìnilo. Hlavní slovo tu teï mají skøeti.
-	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_02");//My lidé nejsme nic jinıho ne rádlo pro skuteènı pány údolí: draky.
-	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_03");//Dr se stranou od všeho, co je nad tvoje síly - a vyhıbej se všemu, co vypadá jako drak.
+	AI_Output (other ,self,"DIA_DiegoOw_Perm_15_00");//Co bych mÄ›l o ÃºdolÃ­ vÄ›dÄ›t?
+	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_01");//Od pÃ¡du bariÃ©ry se tady pÃ¡r vÄ›cÃ­ zmÄ›nilo. HlavnÃ­ slovo tu teÄ majÃ­ skÅ™eti.
+	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_02");//My lidÃ© nejsme nic jinÃ½ho neÅ¾ Å¾rÃ¡dlo pro skuteÄnÃ½ pÃ¡ny ÃºdolÃ­: draky.
+	AI_Output (self ,other,"DIA_DiegoOw_Perm_11_03");//DrÅ¾ se stranou od vÅ¡eho, co je nad tvoje sÃ­ly - a vyhÃ½bej se vÅ¡emu, co vypadÃ¡ jako drak.
 };
 
 //******************************************************************
@@ -201,7 +201,7 @@ INSTANCE DIA_DiegoOw_Gorn(C_INFO)
 	condition	= DIA_DiegoOw_Gorn_Condition;
 	information	= DIA_DiegoOw_Gorn_Info;
 	permanent	= FALSE;
-	description = "Rád bych Gorna vykoupil z vìzení...";
+	description = "RÃ¡d bych Gorna vykoupil z vÄ›zenÃ­...";
 };                       
 
 FUNC INT DIA_DiegoOw_Gorn_Condition()
@@ -213,8 +213,8 @@ FUNC INT DIA_DiegoOw_Gorn_Condition()
 };
 FUNC VOID DIA_DiegoOw_Gorn_Info()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Gorn_15_00");//Chtìl bych vykoupit Gornovi na svobodu, ale Garond za to chce 1000 zlatıch.
-	AI_Output (self ,other,"DIA_DiegoOw_Gorn_11_01");//Hezká sumièka. Mám u sebe 300 zlatıch, klidnì si je vezmi. Ale zbytek je na tobì.
+	AI_Output (other ,self,"DIA_DiegoOw_Gorn_15_00");//ChtÄ›l bych vykoupit Gornovi na svobodu, ale Garond za to chce 1000 zlatÃ½ch.
+	AI_Output (self ,other,"DIA_DiegoOw_Gorn_11_01");//HezkÃ¡ sumiÄka. MÃ¡m u sebe 300 zlatÃ½ch, klidnÄ› si je vezmi. Ale zbytek je na tobÄ›.
 	
 	B_GiveInvItems (self, other, ItmI_Gold, 300);
 	
@@ -234,7 +234,7 @@ instance DIA_DiegoOw_Teach(C_INFO)
 	condition	= DIA_DiegoOw_Teach_Condition;
 	information	= DIA_DiegoOw_Teach_Info;
 	permanent	= TRUE;
-	description = "Mùeš mì nìèemu nauèit?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };                       
 func INT DIA_DiegoOw_Teach_Condition()
 {	
@@ -243,8 +243,8 @@ func INT DIA_DiegoOw_Teach_Condition()
 
 FUNC VOID DIA_DiegoOw_Teach_info ()
 {	
-	AI_Output (other ,self,"DIA_DiegoOw_Teach_15_00");//Mùeš mì nìèemu nauèit?
-	AI_Output (self, other,"DIA_Addon_DiegoOw_Teach_11_01");//Jasnì, co bys rád vìdìl?
+	AI_Output (other ,self,"DIA_DiegoOw_Teach_15_00");//MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?
+	AI_Output (self, other,"DIA_Addon_DiegoOw_Teach_11_01");//JasnÄ›, co bys rÃ¡d vÄ›dÄ›l?
 		
 	Diego_MerkeDEX = other.attribute[ATR_DEXTERITY];
 	Diego_MerkeSTR = other.attribute[ATR_STRENGTH];
@@ -260,11 +260,11 @@ func void DIA_DiegoOw_TEACH_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] > Diego_MerkeDEX)
 	{
-		AI_Output (self, other, "DIA_Addon_DiegoOw_Teach_11_02"); //Trochu obratnosti u jsi získal.
+		AI_Output (self, other, "DIA_Addon_DiegoOw_Teach_11_02"); //Trochu obratnosti uÅ¾ jsi zÃ­skal.
 	};
 	if (other.attribute[ATR_STRENGTH] > Diego_MerkeSTR)
 	{
-		AI_Output (self, other, "DIA_Addon_DiegoOw_Teach_11_03"); //(odhadnì) Dobøe. Tvá síla se zvıšila.
+		AI_Output (self, other, "DIA_Addon_DiegoOw_Teach_11_03"); //(odhadnÄ›) DobÅ™e. TvÃ¡ sÃ­la se zvÃ½Å¡ila.
 	};
 	
 	Info_ClearChoices (DIA_DiegoOw_TEACH);
@@ -367,7 +367,7 @@ instance DIA_Addon_ThiefOW_Together(C_INFO)
 	condition	= 	DIA_Addon_ThiefOW_Together_Condition;
 	information	= 	DIA_Addon_ThiefOW_Together_Info;
 
-	description	= 	"Pojïme spolu.";
+	description	= 	"PojÄme spolu.";
 };
 func int DIA_Addon_ThiefOW_Together_Condition ()
 {
@@ -375,14 +375,14 @@ func int DIA_Addon_ThiefOW_Together_Condition ()
 };
 func void DIA_Addon_ThiefOW_Together_Info ()
 {
-	AI_Output (other, self,	"DIA_Addon_Diego_Together_15_00"); //Tak pojïme spolu.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_01"); //Do prùsmyku? Proè ne.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_02"); //Bì první. Sotva jsi odsud pøišel.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_03"); //Ale a tì ani nenapadne se moc pøibliovat k hradu nebo ke skøetí palisádì.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_04"); //A taky se vyhıbej opevnìnım táborùm paladinù.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_05"); //Právì jsem z jednoho utekl a rozhodnì se nehodlám døít do úmoru nìkde v dole.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_06"); //A snad ani nemusím zmiòovat, e by ses nemìl pøibliovat k ádnému z drakù.
-	AI_Output (self, other, "DIA_Addon_Diego_Together_11_07"); //Dej mi vìdìt, a budeš pøipravenej.
+	AI_Output (other, self,	"DIA_Addon_Diego_Together_15_00"); //Tak pojÄme spolu.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_01"); //Do prÅ¯smyku? ProÄ ne.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_02"); //BÄ›Å¾ prvnÃ­. Sotva jsi odsud pÅ™iÅ¡el.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_03"); //Ale aÅ¥ tÄ› ani nenapadne se moc pÅ™ibliÅ¾ovat k hradu nebo ke skÅ™etÃ­ palisÃ¡dÄ›.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_04"); //A taky se vyhÃ½bej opevnÄ›nÃ½m tÃ¡borÅ¯m paladinÅ¯.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_05"); //PrÃ¡vÄ› jsem z jednoho utekl a rozhodnÄ› se nehodlÃ¡m dÅ™Ã­t do Ãºmoru nÄ›kde v dole.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_06"); //A snad ani nemusÃ­m zmiÅˆovat, Å¾e by ses nemÄ›l pÅ™ibliÅ¾ovat k Å¾Ã¡dnÃ©mu z drakÅ¯.
+	AI_Output (self, other, "DIA_Addon_Diego_Together_11_07"); //Dej mi vÄ›dÄ›t, aÅ¾ budeÅ¡ pÅ™ipravenej.
 };
 
 // ------------------------------------------------------------
@@ -395,7 +395,7 @@ instance DIA_Addon_ThiefOW_ComeOn(C_INFO)
 	condition	= 	DIA_Addon_ThiefOW_ComeOn_Condition;
 	information	= 	DIA_Addon_ThiefOW_ComeOn_Info;
 	permanent	= 	TRUE;
-	description	= 	"Pojï se mnou.";
+	description	= 	"PojÄ se mnou.";
 };
 func int DIA_Addon_ThiefOW_ComeOn_Condition ()
 {
@@ -408,7 +408,7 @@ func int DIA_Addon_ThiefOW_ComeOn_Condition ()
 };
 func void DIA_Addon_ThiefOW_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Diego_ComeOn_15_00"); //Pojï se mnou.
+	AI_Output (other, self, "DIA_Addon_Diego_ComeOn_15_00"); //PojÄ se mnou.
 	
 	if (C_DiegoTooFar(0))
 	{
@@ -418,7 +418,7 @@ func void DIA_Addon_ThiefOW_ComeOn_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_ComeOn_11_02"); //Dobøe.
+		AI_Output (self, other, "DIA_Addon_Diego_ComeOn_11_02"); //DobÅ™e.
 
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"FOLLOW");
@@ -436,7 +436,7 @@ INSTANCE DIA_Addon_ThiefOW_GoHome(C_INFO)
 	condition	= DIA_Addon_ThiefOW_GoHome_Condition;
 	information	= DIA_Addon_ThiefOW_GoHome_Info;
 	permanent	= TRUE;
-	description = "Poèkej tady.";
+	description = "PoÄkej tady.";
 };                       
 FUNC INT DIA_Addon_ThiefOW_GoHome_Condition()
 {
@@ -448,7 +448,7 @@ FUNC INT DIA_Addon_ThiefOW_GoHome_Condition()
 
 FUNC VOID DIA_Addon_ThiefOW_GoHome_Info()
 {	
-	AI_Output (other, self,"DIA_Addon_Diego_WarteHier_15_00"); //Poèkej tady!
+	AI_Output (other, self,"DIA_Addon_Diego_WarteHier_15_00"); //PoÄkej tady!
 		
 	if (Npc_GetDistToWP (self, "LOCATION_02_05") < 2000)
 	{
@@ -459,46 +459,46 @@ FUNC VOID DIA_Addon_ThiefOW_GoHome_Info()
 	}
 	else if (Npc_GetDistToWP (self, "DT_E1_04") < (1500+1000)) //XARDAS
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_02"); //Poèkám u té vìe venku.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_02"); //PoÄkÃ¡m u tÃ© vÄ›Å¾e venku.
 		AI_StopProcessInfos (self);
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"XARDAS");
 	}
 	else if (Npc_GetDistToWP (self, "OW_NEWMINE_11") < (4000+1000)) //FAJETHMINE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_03"); //Poèkám u dolu.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_03"); //PoÄkÃ¡m u dolu.
 		AI_StopProcessInfos (self); 
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"FAJETH");
 	}
 	else if (Npc_GetDistToWP (self, "OW_MINE3_OUT") < (1200+1000)) //SILVESTROMINE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_04"); //Poèkám pøímo pøed dolem.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_04"); //PoÄkÃ¡m pÅ™Ã­mo pÅ™ed dolem.
 		AI_StopProcessInfos (self); 
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"SILVESTRO");
 	}
 	else if (Npc_GetDistToWP (self, "OW_PATH_266") < (3000+1000)) //GRIMESMINE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_05"); //Poèkám tady kousek.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_05"); //PoÄkÃ¡m tady kousek.
 		AI_StopProcessInfos (self);
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"GRIMES");
 	}
 	else if (Npc_GetDistToWP (self, "LOCATION_02_05") < 15000) //Orcbarrier FIRE ANGAR LAKE
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_06"); //Ne. Vrátím se zpátky do jeskynì.
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_07"); //A tu skonèíš, zajdi za mnou.
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_08"); //Ale moc dlouho neotálej, nebo se vrátím sám.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_06"); //Ne. VrÃ¡tÃ­m se zpÃ¡tky do jeskynÄ›.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_07"); //AÅ¾ tu skonÄÃ­Å¡, zajdi za mnou.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_08"); //Ale moc dlouho neotÃ¡lej, nebo se vrÃ¡tÃ­m sÃ¡m.
 		AI_StopProcessInfos (self);
 		self.aivar[AIV_PARTYMEMBER] = FALSE;
 		Npc_ExchangeRoutine	(self,"START");
 	}
 	else //zu weit weg
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_09"); //Dìláš si srandu? To se máme rozdìlit? Tady?
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_10"); //Jen pøes mou mrtvolu!
-		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_11"); //Pùjdeme teï do prùsmyku - spolu.
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_09"); //DÄ›lÃ¡Å¡ si srandu? To se mÃ¡me rozdÄ›lit? Tady?
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_10"); //Jen pÅ™es mou mrtvolu!
+		AI_Output (self, other, "DIA_Addon_Diego_GoHome_11_11"); //PÅ¯jdeme teÄ do prÅ¯smyku - spolu.
 	};
 };
 
@@ -507,12 +507,12 @@ FUNC VOID DIA_Addon_ThiefOW_GoHome_Info()
 // ------------------------------------------------------------
 func void B_Addon_Diego_WillWaitOutside()
 {
-	AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_00"); //Bì první a omrkni to tam - já poèkám venku.
+	AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_00"); //BÄ›Å¾ prvnÃ­ a omrkni to tam - jÃ¡ poÄkÃ¡m venku.
 };
 // ------------------------------------------------------------
 func void B_Addon_Diego_PassOtherDirection()
 {
-	AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_01"); //Do prùsmyku se jde jinudy!
+	AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_01"); //Do prÅ¯smyku se jde jinudy!
 };
 // ------------------------------------------------------------
 var int Diego_TooFarComment;
@@ -554,15 +554,15 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 {	
 	if (C_DiegoTooFar(1000) == LOC_ANGAR)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_02"); //Na tıhle hrobce je nìco strašidelnıho.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_03"); //Radši bysme to mìli obejít.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_02"); //Na tÃ½hle hrobce je nÄ›co straÅ¡idelnÃ½ho.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_03"); //RadÅ¡i bysme to mÄ›li obejÃ­t.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_ICE)
 	{
 		if (Diego_IceVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_04"); //To je vchod do bıvalıho Novıho tábora. 
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_05"); //Urèitì se tam usadil nìjakej drak.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_04"); //To je vchod do bÃ½valÃ½ho NovÃ½ho tÃ¡bora. 
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_05"); //UrÄitÄ› se tam usadil nÄ›jakej drak.
 			B_Addon_Diego_PassOtherDirection();
 			Diego_IceVariation = 1;
 		}
@@ -573,27 +573,27 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 	}
 	else if (C_DiegoTooFar(1000) == LOC_SWAMP)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_06"); //Baina je slepá ulièka.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_07"); //Nepøekvapilo by mì, kdyby se v ní usídlil nìjakej drak.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_08"); //Nechoïme tam.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_06"); //BaÅ¾ina je slepÃ¡ uliÄka.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_07"); //NepÅ™ekvapilo by mÄ›, kdyby se v nÃ­ usÃ­dlil nÄ›jakej drak.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_08"); //NechoÄme tam.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_FIRE)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_09"); //Kdy pùjdeme poøád nahoru, urèitì potkáme draka.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_10"); //A já bych se rád dostal do Khorinidu IVEJ.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_11"); //Vezmìme to jinudy.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_09"); //KdyÅ¾ pÅ¯jdeme poÅ™Ã¡d nahoru, urÄitÄ› potkÃ¡me draka.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_10"); //A jÃ¡ bych se rÃ¡d dostal do Khorinidu Å½IVEJ.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_11"); //VezmÄ›me to jinudy.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_LAKE)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_12"); //Tohle jezero nás nikam nedovede.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_13"); //Do prùsmyku musíme jít jinudy!
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_12"); //Tohle jezero nÃ¡s nikam nedovede.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_13"); //Do prÅ¯smyku musÃ­me jÃ­t jinudy!
 	}
 	else if (C_DiegoTooFar(1000) == LOC_XARDAS)
 	{
 		if (Diego_XardasVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_14"); //Tohle je stará Xardasova vì. Ale pochopitelnì ji opustil u dávno.
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_15"); //Urèitì tam narafièil spoustu nepøíjemnejch pøekvapení. 
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_14"); //Tohle je starÃ¡ Xardasova vÄ›Å¾. Ale pochopitelnÄ› ji opustil uÅ¾ dÃ¡vno.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_15"); //UrÄitÄ› tam narafiÄil spoustu nepÅ™Ã­jemnejch pÅ™ekvapenÃ­. 
 			B_Addon_Diego_WillWaitOutside();
 			Diego_XardasVariation = 1;
 		}
@@ -609,24 +609,24 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 	{
 		if (Diego_FajethVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_16"); //Tamhle je Fajethùv dùl.
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_17"); //Jestli chceš jít dovnitø, tak mì vynech!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_16"); //Tamhle je FajethÅ¯v dÅ¯l.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_17"); //Jestli chceÅ¡ jÃ­t dovnitÅ™, tak mÄ› vynech!
 			Diego_FajethVariation = 1;
 		}
 		else //1
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_18"); //Já bych se tomu dolu vyhıbal na sto honù!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_18"); //JÃ¡ bych se tomu dolu vyhÃ½bal na sto honÅ¯!
 		};
 	}
 	else if (C_DiegoTooFar(1000) == LOC_SILVESTROMINE)
 	{
 		if (Diego_SilvestroVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_19"); //Pøesnì do tohohle dolu mì odvlekli i s ostatníma trestancema.
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_20"); //Vím urèitì, e NIKDO nepøeil.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_19"); //PÅ™esnÄ› do tohohle dolu mÄ› odvlekli i s ostatnÃ­ma trestancema.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_20"); //VÃ­m urÄitÄ›, Å¾e NIKDO nepÅ™eÅ¾il.
 			B_Addon_Diego_WillWaitOutside();
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_20"); //Ale kdy ti to potrvá moc dlouho, vrátím se do svıho tábora.
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_21"); //Pokud teda nechceš, abych tu na tebe poèkal.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_20"); //Ale kdyÅ¾ ti to potrvÃ¡ moc dlouho, vrÃ¡tÃ­m se do svÃ½ho tÃ¡bora.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_Add_11_21"); //Pokud teda nechceÅ¡, abych tu na tebe poÄkal.
 			Diego_SilvestroVariation = 1;
 		}
 		else //1
@@ -641,42 +641,42 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 	{
 		if (Diego_GrimesVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_21"); //Tohle je jeden z novejch paladinskejch dolù. 
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_22"); //Nikdy jsem tam nebyl, a ani o to nestojím.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_21"); //Tohle je jeden z novejch paladinskejch dolÅ¯. 
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_22"); //Nikdy jsem tam nebyl, a ani o to nestojÃ­m.
 			Diego_GrimesVariation = 1;
 		}
 		else //1
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_23"); //Od tohohle dolu se radši drme dál.
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_23"); //Od tohohle dolu se radÅ¡i drÅ¾me dÃ¡l.
 		};
 	}
 	else if (C_DiegoTooFar(1000) == LOC_BURG)
 	{
 		if (Diego_BurgVariation == 0)
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_24"); //Seš snad sebevrah, nebo co? Od toho hradu se dr hezky daleko!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_24"); //SeÅ¡ snad sebevrah, nebo co? Od toho hradu se drÅ¾ hezky daleko!
 			Diego_BurgVariation = 1;
 		}
 		else if (Diego_BurgVariation == 1)
 		{	
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_25"); //Hele, posloucháš mì vùbec?! Dr se od toho hradu dál!
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_25"); //Hele, poslouchÃ¡Å¡ mÄ› vÅ¯bec?! DrÅ¾ se od toho hradu dÃ¡l!
 			Diego_BurgVariation = 2;
 		}
 		else //2
 		{
-			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_26"); //Copak nerozumíš èesky? 'Od toho hradu dál'! Je to tak nepochopitelnı, nebo co?
+			AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_26"); //Copak nerozumÃ­Å¡ Äesky? 'Od toho hradu dÃ¡l'! Je to tak nepochopitelnÃ½, nebo co?
 			Diego_BurgVariation = 1;
 		};	
 	}
 	else if (C_DiegoTooFar(1000) == LOC_ORCBARRIER)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_27"); //Tady u dál nemùeme. Skøetí bariéra je pøíliš nebezpeèná.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_28"); //Myslím, e bude lepší, kdy to teï støihneme k západu a obejdeme to z druhı strany.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_27"); //Tady uÅ¾ dÃ¡l nemÅ¯Å¾eme. SkÅ™etÃ­ bariÃ©ra je pÅ™Ã­liÅ¡ nebezpeÄnÃ¡.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_28"); //MyslÃ­m, Å¾e bude lepÅ¡Ã­, kdyÅ¾ to teÄ stÅ™ihneme k zÃ¡padu a obejdeme to z druhÃ½ strany.
 	}
 	else if (C_DiegoTooFar(1000) == LOC_ORCBARRIER_FAR)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_29"); //Kdybychom pokraèovali tudy, jen bysme zase narazili na skøetí bariéru.
-		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_30"); //Vzhùru do prùsmyku!
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_29"); //Kdybychom pokraÄovali tudy, jen bysme zase narazili na skÅ™etÃ­ bariÃ©ru.
+		AI_Output (self, other, "DIA_Addon_Diego_TooFar_11_30"); //VzhÅ¯ru do prÅ¯smyku!
 	};
 
 	Diego_TooFarComment = TRUE;
@@ -687,9 +687,9 @@ FUNC VOID DIA_Addon_ThiefOW_TooFar_Info()
 // ------------------------------------------------------------
 func void B_Diego_WirSindDa()
 {	
-	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_02"); //Dál u pùjdu sám.
-	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_03"); //Ještì si musím pár vìcí zaøídit, ne se vrátím do Khorinidu.
-	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_04"); //Díky, kamaráde. Uvidíme se ve mìstì.
+	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_02"); //DÃ¡l uÅ¾ pÅ¯jdu sÃ¡m.
+	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_03"); //JeÅ¡tÄ› si musÃ­m pÃ¡r vÄ›cÃ­ zaÅ™Ã­dit, neÅ¾ se vrÃ¡tÃ­m do Khorinidu.
+	AI_Output (self, other, "DIA_Addon_Diego_Angekommen_11_04"); //DÃ­ky, kamarÃ¡de. UvidÃ­me se ve mÄ›stÄ›.
 	
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -742,10 +742,10 @@ FUNC INT DIA_Addon_ThiefOW_Nostalgie_Condition()
 };
 func VOID DIA_Addon_ThiefOW_Nostalgie_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_01"); //Pamatuješ?
-	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_02"); //Jak jsme se potkali poprvé?
-	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_03"); //U je to tak dlouho...
-	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_04"); //Ale tady bıvalo nìco JINİHO... Hmm, sakra! U si to nepamatuju!
+	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_01"); //PamatujeÅ¡?
+	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_02"); //Jak jsme se potkali poprvÃ©?
+	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_03"); //UÅ¾ je to tak dlouho...
+	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_04"); //Ale tady bÃ½valo nÄ›co JINÃHO... Hmm, sakra! UÅ¾ si to nepamatuju!
 	AI_Output (self, other, "DIA_Addon_Diego_Nostalgie_11_05"); //To je fuk.
 	B_GivePlayerXP (500);
 	hero.exp = hero.exp + 500;
@@ -766,7 +766,7 @@ instance DIA_Addon_ThiefOW_PERM (C_INFO)
 	condition	= DIA_Addon_ThiefOW_PERM_Condition;
 	information	= DIA_Addon_ThiefOW_PERM_Info;
 	permanent	= TRUE;
-	description = "Je všechno v poøádku?";
+	description = "Je vÅ¡echno v poÅ™Ã¡dku?";
 };                       
 FUNC INT DIA_Addon_ThiefOW_PERM_Condition()
 {
@@ -781,12 +781,12 @@ func VOID DIA_Addon_ThiefOW_PERM_Info()
 	AI_Output (other ,self,"DIA_Addon_Diego_PERM_15_00"); //Jak se vede?
 	if (self.attribute[ATR_HITPOINTS] <= (self.attribute[ATR_HITPOINTS_MAX] / 2))
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_PERM_11_01"); //Hodil by se mi léèivej lektvar, nemìl bys nìjakej?
+		AI_Output (self, other, "DIA_Addon_Diego_PERM_11_01"); //Hodil by se mi lÃ©Äivej lektvar, nemÄ›l bys nÄ›jakej?
 	}
 	else if (DiegoOW.aivar[AIV_PARTYMEMBER] == FALSE)
 	&& 		(Diego_angekommen == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Diego_PERM_11_02"); //Tak mi øekni, a budeš chtít vyrazit.
+		AI_Output (self, other, "DIA_Addon_Diego_PERM_11_02"); //Tak mi Å™ekni, aÅ¾ budeÅ¡ chtÃ­t vyrazit.
 	}
 	else if (Diego_angekommen == TRUE)
 	{

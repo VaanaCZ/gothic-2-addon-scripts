@@ -81,12 +81,12 @@ func void DIA_Addon_Martin_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Martin_MeetingIsRunning_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_00"); //Take ty jsi ten novej?
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_00"); //TakÅ¾e ty jsi ten novej?
 		DIA_Addon_Martin_MeetingIsRunning_OneTime = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_01"); //Bì napøed za Vatrasem, snad na tebe bude mít èas.
+		AI_Output			(self, other, "DIA_Addon_Cord_MeetingIsRunning_07_01"); //BÄ›Å¾ napÅ™ed za Vatrasem, snad na tebe bude mÃ­t Äas.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -119,7 +119,7 @@ func int DIA_Addon_Martin_Hallo_Condition ()
 
 func void DIA_Addon_Martin_Hallo_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Martin_Hallo_07_00"); //Hej ty, tady nemáš co dìlat. Sem mùou jenom paladinové a my, èlenové domobrany.
+	AI_Output	(self, other, "DIA_Addon_Martin_Hallo_07_00"); //Hej ty, tady nemÃ¡Å¡ co dÄ›lat. Sem mÅ¯Å¾ou jenom paladinovÃ© a my, ÄlenovÃ© domobrany.
 };
 
 
@@ -133,7 +133,7 @@ instance DIA_Addon_Martin_WasMachstDu		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_WasMachstDu_Condition;
 	information	 = 	DIA_Addon_Martin_WasMachstDu_Info;
 
-	description	 = 	"Co se to tu teda dìje?";
+	description	 = 	"Co se to tu teda dÄ›je?";
 };
 
 func int DIA_Addon_Martin_WasMachstDu_Condition ()
@@ -146,14 +146,14 @@ func int DIA_Addon_Martin_WasMachstDu_Condition ()
 
 func void DIA_Addon_Martin_WasMachstDu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_WasMachstDu_15_00"); //Tak co se tu dìje?
-	AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_01"); //Tohle je sklad paladinskıch královskıch stráí.
+	AI_Output	(other, self, "DIA_Addon_Martin_WasMachstDu_15_00"); //Tak co se tu dÄ›je?
+	AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_01"); //Tohle je sklad paladinskÃ½ch krÃ¡lovskÃ½ch strÃ¡Å¾Ã­.
 	
 	if (other.guild == GIL_NONE)
 	&& (SC_IsRanger == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_02"); //Jsem zdejší skladník. Zodpovídám za to, aby se neztratilo nic z paladinskıch zásob. A ty tu nemáš co dìlat.
-		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_03"); //Take ruce pryè, nebo o nì pøijdeš.
+		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_02"); //Jsem zdejÅ¡Ã­ skladnÃ­k. ZodpovÃ­dÃ¡m za to, aby se neztratilo nic z paladinskÃ½ch zÃ¡sob. A ty tu nemÃ¡Å¡ co dÄ›lat.
+		AI_Output	(self, other, "DIA_Addon_Martin_WasMachstDu_07_03"); //TakÅ¾e ruce pryÄ, nebo o nÄ› pÅ™ijdeÅ¡.
 	};
 };
 
@@ -167,7 +167,7 @@ instance DIA_Addon_Martin_PreTrade		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_PreTrade_Condition;
 	information	 = 	DIA_Addon_Martin_PreTrade_Info;
 
-	description	 = 	"Mùeš mi prodat nìco ze zásob paladinù?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi prodat nÄ›co ze zÃ¡sob paladinÅ¯?";
 };
 
 func int DIA_Addon_Martin_PreTrade_Condition ()
@@ -180,11 +180,11 @@ func int DIA_Addon_Martin_PreTrade_Condition ()
 
 func void DIA_Addon_Martin_PreTrade_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_00"); //Mùeš mi prodat nìco z paladinskıch zásob?
-	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_01"); //Chceš nakupovat? Hm, øeknìme, e kdybys mi dokázal vynahradit problémy, pramenící z toho, e se tu paladinùm ztrácejí vìci, moná bysme se mohli dohodnout.
-	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_02"); //A ty vìci se tu ztrácejí èasto?
-	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_03"); //Pokud skladník tvrdí, e je všechno v poøádku, pak ne.
-	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_04"); //Chápu.
+	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_00"); //MÅ¯Å¾eÅ¡ mi prodat nÄ›co z paladinskÃ½ch zÃ¡sob?
+	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_01"); //ChceÅ¡ nakupovat? Hm, Å™eknÄ›me, Å¾e kdybys mi dokÃ¡zal vynahradit problÃ©my, pramenÃ­cÃ­ z toho, Å¾e se tu paladinÅ¯m ztrÃ¡cejÃ­ vÄ›ci, moÅ¾nÃ¡ bysme se mohli dohodnout.
+	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_02"); //A ty vÄ›ci se tu ztrÃ¡cejÃ­ Äasto?
+	AI_Output	(self, other, "DIA_Addon_Martin_PreTrade_07_03"); //Pokud skladnÃ­k tvrdÃ­, Å¾e je vÅ¡echno v poÅ™Ã¡dku, pak ne.
+	AI_Output	(other, self, "DIA_Addon_Martin_PreTrade_15_04"); //ChÃ¡pu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -197,7 +197,7 @@ instance DIA_Addon_Martin_Farim		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_Farim_Condition;
 	information	 = 	DIA_Addon_Martin_Farim_Info;
 
-	description	 = 	"Rybáø Farim má problémy s domobranou.";
+	description	 = 	"RybÃ¡Å™ Farim mÃ¡ problÃ©my s domobranou.";
 };
 
 func int DIA_Addon_Martin_Farim_Condition ()
@@ -211,16 +211,16 @@ func int DIA_Addon_Martin_Farim_Condition ()
 
 func void DIA_Addon_Martin_Farim_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_00"); //Rybáø Farim má problémy s domobranou. Chlapi mu poøád nìco kradou.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_01"); //A co s tím mám co dìlat já?
-	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_02"); //Urèitì máš na paladiny aspoò trochu vliv.
-	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_03"); //Farim potøebuje, abys ho ochránil. Je ochoten ti za to dát èást ze svého úlovku.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_04"); //Chápu, co tím myslíš.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_05"); //(pohrdavì) Ryby! Jako bych tu mìl málo jinejch krámù!
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_06"); //Vyøiï svımu kámošovi, a pøijde za mnou a øekne mi konkrétnì, co mu domobrana provádí.
-	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_07"); //Postarám se o to.
+	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_00"); //RybÃ¡Å™ Farim mÃ¡ problÃ©my s domobranou. Chlapi mu poÅ™Ã¡d nÄ›co kradou.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_01"); //A co s tÃ­m mÃ¡m co dÄ›lat jÃ¡?
+	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_02"); //UrÄitÄ› mÃ¡Å¡ na paladiny aspoÅˆ trochu vliv.
+	AI_Output	(other, self, "DIA_Addon_Martin_Farim_15_03"); //Farim potÅ™ebuje, abys ho ochrÃ¡nil. Je ochoten ti za to dÃ¡t ÄÃ¡st ze svÃ©ho Ãºlovku.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_04"); //ChÃ¡pu, co tÃ­m myslÃ­Å¡.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_05"); //(pohrdavÄ›) Ryby! Jako bych tu mÄ›l mÃ¡lo jinejch krÃ¡mÅ¯!
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_06"); //VyÅ™iÄ svÃ½mu kÃ¡moÅ¡ovi, aÅ¥ pÅ™ijde za mnou a Å™ekne mi konkrÃ©tnÄ›, co mu domobrana provÃ¡dÃ­.
+	AI_Output	(self, other, "DIA_Addon_Martin_Farim_07_07"); //PostarÃ¡m se o to.
 	
-	B_LogEntry (TOPIC_Addon_FarimsFish,	"Intendant Martin u se o to postará."); 
+	B_LogEntry (TOPIC_Addon_FarimsFish,	"Intendant Martin uÅ¾ se o to postarÃ¡."); 
 
 	Martin_KnowsFarim = TRUE;
 	B_GivePlayerXP (XP_Addon_FarimSchutz);
@@ -238,7 +238,7 @@ instance DIA_Addon_Martin_Trade		(C_INFO)
 	Trade		 = 	TRUE;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co máš na prodej?";
+	description	 = 	"Co mÃ¡Å¡ na prodej?";
 };
 
 func int DIA_Addon_Martin_Trade_Condition ()
@@ -259,9 +259,9 @@ func void DIA_Addon_Martin_Trade_Info ()
 	};
 	
 	
-	AI_Output	(other, self, "DIA_Addon_Martin_Trade_15_00"); //Co mi mùeš nabídnout?
+	AI_Output	(other, self, "DIA_Addon_Martin_Trade_15_00"); //Co mi mÅ¯Å¾eÅ¡ nabÃ­dnout?
 	B_GiveTradeInv (self);
-	AI_Output	(self, other, "DIA_Addon_Martin_Trade_07_01"); //Tak dávej pozor.
+	AI_Output	(self, other, "DIA_Addon_Martin_Trade_07_01"); //Tak dÃ¡vej pozor.
 };
 
 
@@ -275,7 +275,7 @@ instance DIA_Addon_Martin_Rangerhelp		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_Rangerhelp_Condition;
 	information	 = 	DIA_Addon_Martin_Rangerhelp_Info;
 
-	description	 = 	"Poslal mì Lares.";
+	description	 = 	"Poslal mÄ› Lares.";
 };
 
 func int DIA_Addon_Martin_Rangerhelp_Condition ()
@@ -290,22 +290,22 @@ func int DIA_Addon_Martin_Rangerhelp_Condition ()
 
 func void DIA_Addon_Martin_Rangerhelp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_00"); //Posílá mì Lares. Tvrdil, e bys mi mohl pomoct.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_01"); //Tak? Opravdu? Tak spus, co po mnì chce?
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_02"); //Chci se pøidat k domobranì.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_03"); //(smìje se) To by se ti líbilo, co? Jene my mezi sebe nevezmem jen tak kdejakıho otrhance, pokud k tomu nemáme dobrej dùvod.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_04"); //To bys nejspíš mìl.
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_05"); //Nech si kecy na koledu a radši mi povìz, co mám udìlat, abych se k vám mohl pøidat.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_06"); //(pøekvapenì) No dobøe, tak dávej pozor.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_07"); //Dìlat skladníka je peklo, to ti teda povím. Staèí u jen starat se o všecky tyhle bedny a pytle
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_08"); //A pokadı, kdy veèer zajdu do hospody ke Kardiffovi, si s tìmahle bednama nìkdo hraje. Kdy se druhı den ráno vrátím, vdycky nìco chybí.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_09"); //(rozèilenì) A co je ještì divnìjší, paladinové nikdy nic nevidí.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_10"); //(naštvanì) Se z toho asi zblázním. Nemùu tu pøeci stát celou noc jak blbec!
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_11"); //Ale na druhou stranu, ty bys to udìlat mohl.
-	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_12"); //Chápu. Mám tu hlídat, zatímco ty se budeš potloukat po hospodách.
-	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_13"); //Ber, nebo nech bıt.
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_00"); //PosÃ­lÃ¡ mÄ› Lares. Tvrdil, Å¾e bys mi mohl pomoct.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_01"); //Tak? Opravdu? Tak spusÅ¥, co po mnÄ› chce?
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_02"); //Chci se pÅ™idat k domobranÄ›.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_03"); //(smÄ›je se) To by se ti lÃ­bilo, co? JenÅ¾e my mezi sebe nevezmem jen tak kdejakÃ½ho otrhance, pokud k tomu nemÃ¡me dobrej dÅ¯vod.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_04"); //To bys nejspÃ­Å¡ mÄ›l.
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_05"); //Nech si kecy na koledu a radÅ¡i mi povÄ›z, co mÃ¡m udÄ›lat, abych se k vÃ¡m mohl pÅ™idat.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_06"); //(pÅ™ekvapenÄ›) No dobÅ™e, tak dÃ¡vej pozor.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_07"); //DÄ›lat skladnÃ­ka je peklo, to ti teda povÃ­m. StaÄÃ­ uÅ¾ jen starat se o vÅ¡ecky tyhle bedny a pytle
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_08"); //A pokaÅ¾dÃ½, kdyÅ¾ veÄer zajdu do hospody ke Kardiffovi, si s tÄ›mahle bednama nÄ›kdo hraje. KdyÅ¾ se druhÃ½ den rÃ¡no vrÃ¡tÃ­m, vÅ¾dycky nÄ›co chybÃ­.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_09"); //(rozÄilenÄ›) A co je jeÅ¡tÄ› divnÄ›jÅ¡Ã­, paladinovÃ© nikdy nic nevidÃ­.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_10"); //(naÅ¡tvanÄ›) Se z toho asi zblÃ¡znÃ­m. NemÅ¯Å¾u tu pÅ™eci stÃ¡t celou noc jak blbec!
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_11"); //Ale na druhou stranu, ty bys to udÄ›lat mohl.
+	AI_Output	(other, self, "DIA_Addon_Martin_Rangerhelp_15_12"); //ChÃ¡pu. MÃ¡m tu hlÃ­dat, zatÃ­mco ty se budeÅ¡ potloukat po hospodÃ¡ch.
+	AI_Output	(self, other, "DIA_Addon_Martin_Rangerhelp_07_13"); //Ber, nebo nech bÃ½t.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Mám dohlédnout na bedny intendanta Martina. Podaøí-li se mi chytit nìkoho, kdo by se kolem nich motal, pomùe mi Martin vstoupit do øad domobrany."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"MÃ¡m dohlÃ©dnout na bedny intendanta Martina. PodaÅ™Ã­-li se mi chytit nÄ›koho, kdo by se kolem nich motal, pomÅ¯Å¾e mi Martin vstoupit do Å™ad domobrany."); 
 
 }; 
 
@@ -319,7 +319,7 @@ instance DIA_Addon_Martin_Auftrag		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_Auftrag_Condition;
 	information	 = 	DIA_Addon_Martin_Auftrag_Info;
 
-	description	 = 	"Dneska veèer ti ohlídám ty tvé bedny.";
+	description	 = 	"Dneska veÄer ti ohlÃ­dÃ¡m ty tvÃ© bedny.";
 };
 
 func int DIA_Addon_Martin_Auftrag_Condition ()
@@ -336,22 +336,22 @@ var int MIS_Addon_Martin_GetRangar_Day;
 
 func void DIA_Addon_Martin_Auftrag_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Auftrag_15_00"); //Tak já ti dneska veèer ty zásoby pohlídám.
-	AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_01"); //(potìšenì) To je milı.
+	AI_Output	(other, self, "DIA_Addon_Martin_Auftrag_15_00"); //Tak jÃ¡ ti dneska veÄer ty zÃ¡soby pohlÃ­dÃ¡m.
+	AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_01"); //(potÄ›Å¡enÄ›) To je milÃ½.
 	
 	if (Wld_IsTime (23,00,04,00))
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_02"); //Tak já jdu do hospody ke Kardiffovi. A a se vrátím, bìda ti, jestli bude nìco chybìt.
+		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_02"); //Tak jÃ¡ jdu do hospody ke Kardiffovi. A aÅ¾ se vrÃ¡tÃ­m, bÄ›da ti, jestli bude nÄ›co chybÄ›t.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_03"); //Dobøe, tak se veèer vra a dohlídni tady na ty vìci. Já si zatím odskoèím ke Kardiffovi.
+		AI_Output	(self, other, "DIA_Addon_Martin_Auftrag_07_03"); //DobÅ™e, tak se veÄer vraÅ¥ a dohlÃ­dni tady na ty vÄ›ci. JÃ¡ si zatÃ­m odskoÄÃ­m ke Kardiffovi.
 	};
 
 	B_StartOtherRoutine	(MIL_321_Rangar,"PrePalCampKlau"); 
 
 	Info_ClearChoices	(DIA_Addon_Martin_Auftrag);
-	Info_AddChoice	(DIA_Addon_Martin_Auftrag, "(více)", DIA_Addon_Martin_Auftrag_weiter );
+	Info_AddChoice	(DIA_Addon_Martin_Auftrag, "(vÃ­ce)", DIA_Addon_Martin_Auftrag_weiter );
 
 };
 
@@ -379,7 +379,7 @@ instance DIA_Addon_Martin_FromVatras (C_INFO)
 	condition	= DIA_Addon_Martin_FromVatras_Condition;
 	information	= DIA_Addon_Martin_FromVatras_Info;
 
-	description	= "Pátráš po tom, kdo prodává zbranì banditùm?";
+	description	= "PÃ¡trÃ¡Å¡ po tom, kdo prodÃ¡vÃ¡ zbranÄ› banditÅ¯m?";
 };
 func int DIA_Addon_Martin_FromVatras_Condition ()
 {
@@ -390,12 +390,12 @@ func int DIA_Addon_Martin_FromVatras_Condition ()
 };
 func void DIA_Addon_Martin_FromVatras_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_00"); //Ty hledáš toho chlapa, co prodává ty zbranì banditùm?
-	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_01"); //Kdo ti to øek?
+	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_00"); //Ty hledÃ¡Å¡ toho chlapa, co prodÃ¡vÃ¡ ty zbranÄ› banditÅ¯m?
+	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_01"); //Kdo ti to Å™ek?
 	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_02"); //Vatras.
-	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_03"); //Hm, a co ty o tom víš?
-	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_04"); //Nic moc, ale mùu zjistit víc.
-	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_05"); //(chápe) No, kdy je to tak...
+	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_03"); //Hm, a co ty o tom vÃ­Å¡?
+	AI_Output (other, self, "DIA_Addon_Martin_FromVatras_15_04"); //Nic moc, ale mÅ¯Å¾u zjistit vÃ­c.
+	AI_Output (self, other, "DIA_Addon_Martin_FromVatras_07_05"); //(chÃ¡pe) No, kdyÅ¾ je to tak...
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Tell Me
@@ -407,7 +407,7 @@ instance DIA_Addon_Martin_TellAll (C_INFO)
 	condition	= DIA_Addon_Martin_TellAll_Condition;
 	information	= DIA_Addon_Martin_TellAll_Info;
 
-	description	= "Povìz mi, co víš o tom obchodníku se zbranìmi?";
+	description	= "PovÄ›z mi, co vÃ­Å¡ o tom obchodnÃ­ku se zbranÄ›mi?";
 };
 func int DIA_Addon_Martin_TellAll_Condition ()
 {
@@ -418,12 +418,12 @@ func int DIA_Addon_Martin_TellAll_Condition ()
 };
 func void DIA_Addon_Martin_TellAll_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Martin_TellAll_15_00"); //Povìz, co víš o tom prodejci zbraní?
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_01"); //Tak poslouchej. Víme, e za tím musí bıt nìjakı vlivnı obèan z horní ètvrti.
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_02"); //A nìkteré zbranì dokonce pocházejí ze zásob domobrany.
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_03"); //Ale stále nevím, kdo pøesnì to má na svìdomí.
-	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_04"); //Pokud máš aludek na to, aby ses dokázal vypoøádat s nejmíò pìti banditama, moná to zjistíš.
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Podle Martina musí ty zbranì prodávat nìjakı vlivnı obèan z horní ètvrti."); 
+	AI_Output (other, self, "DIA_Addon_Martin_TellAll_15_00"); //PovÄ›z, co vÃ­Å¡ o tom prodejci zbranÃ­?
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_01"); //Tak poslouchej. VÃ­me, Å¾e za tÃ­m musÃ­ bÃ½t nÄ›jakÃ½ vlivnÃ½ obÄan z hornÃ­ Ätvrti.
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_02"); //A nÄ›kterÃ© zbranÄ› dokonce pochÃ¡zejÃ­ ze zÃ¡sob domobrany.
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_03"); //Ale stÃ¡le nevÃ­m, kdo pÅ™esnÄ› to mÃ¡ na svÄ›domÃ­.
+	AI_Output (self, other, "DIA_Addon_Martin_TellAll_07_04"); //Pokud mÃ¡Å¡ Å¾aludek na to, aby ses dokÃ¡zal vypoÅ™Ã¡dat s nejmÃ­Åˆ pÄ›ti banditama, moÅ¾nÃ¡ to zjistÃ­Å¡.
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Podle Martina musÃ­ ty zbranÄ› prodÃ¡vat nÄ›jakÃ½ vlivnÃ½ obÄan z hornÃ­ Ätvrti."); 
 };	
 ///////////////////////////////////////////////////////////////////////
 //	About Bandits
@@ -447,13 +447,13 @@ func int DIA_Addon_Martin_AboutBandits_Condition ()
 func void DIA_Addon_Martin_AboutBandits_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Martin_AboutBandits_15_00"); //A co ti banditi?
-	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_01"); //Víme, e banditi zrovna blokujou cesty, které spojují sedláky s mìstem.
-	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_02"); //Kromì toho jim v posledních pár dnech musela pøijít nìjaká zásilka zbraní.
-	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_03"); //Snad u tìch banditù najdeš nìjakı stopy, kterı by vedly k tomu, kdo je tìmi zbranìmi zásobuje.
+	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_01"); //VÃ­me, Å¾e banditi zrovna blokujou cesty, kterÃ© spojujÃ­ sedlÃ¡ky s mÄ›stem.
+	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_02"); //KromÄ› toho jim v poslednÃ­ch pÃ¡r dnech musela pÅ™ijÃ­t nÄ›jakÃ¡ zÃ¡silka zbranÃ­.
+	AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_03"); //Snad u tÄ›ch banditÅ¯ najdeÅ¡ nÄ›jakÃ½ stopy, kterÃ½ by vedly k tomu, kdo je tÄ›mi zbranÄ›mi zÃ¡sobuje.
 	//AI_Output (self, other, "DIA_Addon_Martin_AboutBandits_07_04"); //Ich werd sehen, was ich tun kann
 	
 	MIS_Martin_FindTheBanditTrader = LOG_RUNNING;
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Cestu mezi pøístavem a statky obsadili banditi. Snad tam najdu nìjaké vodítko, které mi pomùe vypátrat toho tajemného obchodníka se zbranìmi."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Cestu mezi pÅ™Ã­stavem a statky obsadili banditi. Snad tam najdu nÄ›jakÃ© vodÃ­tko, kterÃ© mi pomÅ¯Å¾e vypÃ¡trat toho tajemnÃ©ho obchodnÃ­ka se zbranÄ›mi."); 
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -467,7 +467,7 @@ instance DIA_Addon_Martin_Fernando		(C_INFO)
 	information	 = 	DIA_Addon_Martin_Fernando_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co se tıèe toho obchodníka se zbranìmi...";
+	description	 = 	"Co se tÃ½Äe toho obchodnÃ­ka se zbranÄ›mi...";
 };
 
 func int DIA_Addon_Martin_Fernando_Condition ()
@@ -482,14 +482,14 @@ var int Martin_IrrlichtHint;
 
 func void DIA_Addon_Martin_Fernando_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_00"); //No, co se tıèe toho obchodníka se zbranìmi...
+	AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_00"); //No, co se tÃ½Äe toho obchodnÃ­ka se zbranÄ›mi...
 
 	if 	(Npc_HasItems (other,ItMw_Addon_BanditTrader))
 	||(Npc_HasItems (other,ItRi_Addon_BanditTrader))
 	||((Npc_HasItems (other,ItWr_Addon_BanditTrader))&&(BanditTrader_Lieferung_Gelesen == TRUE))
 	||(Fernando_HatsZugegeben == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_01"); //Tak ven s tím, co máš?
+		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_01"); //Tak ven s tÃ­m, co mÃ¡Å¡?
 	
 		var int FernandoHints;
 		FernandoHints = 0;
@@ -503,62 +503,62 @@ func void DIA_Addon_Martin_Fernando_Info ()
 				
 				if (Npc_HasItems (other,ItMw_Addon_BanditTrader))
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_02"); //U banditù jsem našel tenhle rapír. Je na nìm vyleptáno písmeno F.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_02"); //U banditÅ¯ jsem naÅ¡el tenhle rapÃ­r. Je na nÄ›m vyleptÃ¡no pÃ­smeno F.
 					FernandoHints = (FernandoHints + 1);
 				};
 				if (Npc_HasItems (other,ItRi_Addon_BanditTrader))
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_03"); //Banditi mìli tenhle prsten, kterı poukazuje na nìjakého zámoøského obchodníka.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_03"); //Banditi mÄ›li tenhle prsten, kterÃ½ poukazuje na nÄ›jakÃ©ho zÃ¡moÅ™skÃ©ho obchodnÃ­ka.
 					FernandoHints = (FernandoHints + 1);
 				};
 				if ((Npc_HasItems (other,ItWr_Addon_BanditTrader))&&(BanditTrader_Lieferung_Gelesen == TRUE))
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_04"); //Tady je seznam dodávek zbraní a dalších vìcí pro bandity. Podepsal to jistı Fernando.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_04"); //Tady je seznam dodÃ¡vek zbranÃ­ a dalÅ¡Ã­ch vÄ›cÃ­ pro bandity. Podepsal to jistÃ½ Fernando.
 					FernandoHints = (FernandoHints + 3);
 				};
 			
 				if (Fernando_HatsZugegeben == TRUE)
 				{
-					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_05"); //A onen Fernando, starı obchodník z horní ètvrti, se pøiznal, e s bandity obchodoval.
+					AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_05"); //A onen Fernando, starÃ½ obchodnÃ­k z hornÃ­ Ätvrti, se pÅ™iznal, Å¾e s bandity obchodoval.
 					FernandoHints = (FernandoHints + 1);
 				};
 			}
 			else
 			{
-				AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_06"); //Fernando pøiznal, e bandity zásobuje zbranìmi.
+				AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_06"); //Fernando pÅ™iznal, Å¾e bandity zÃ¡sobuje zbranÄ›mi.
 			};
 			
 		if (FernandoHints >= 3)
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_07"); //Myslím, e to staèí. Take Fernando? No, dostane, co si zaslouí.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_08"); //A to se vdycky tváøí jako ztìlesnìná ctnost.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_09"); //Dohlídnu, aby ho zavøeli, a zèerná.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_10"); //Musím øíct, e to bylo skvìle provedeno.
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_11"); //Vatras tuhle novinu rád uslyší.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_07"); //MyslÃ­m, Å¾e to staÄÃ­. TakÅ¾e Fernando? No, dostane, co si zaslouÅ¾Ã­.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_08"); //A to se vÅ¾dycky tvÃ¡Å™Ã­ jako ztÄ›lesnÄ›nÃ¡ ctnost.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_09"); //DohlÃ­dnu, aby ho zavÅ™eli, aÅ¾ zÄernÃ¡.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_10"); //MusÃ­m Å™Ã­ct, Å¾e to bylo skvÄ›le provedeno.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_11"); //Vatras tuhle novinu rÃ¡d uslyÅ¡Ã­.
 			B_StartOtherRoutine	(Fernando,"Prison");
 			Fernando_ImKnast = TRUE;
 			MIs_Martin_FindTheBanditTrader = LOG_SUCCESS;
-			B_LogEntry (TOPIC_Addon_BanditTrader,"Martin se postará, aby byl Fernando øádnì potrestán. Mìl bych o tom povìdìt Vatrasovi."); 
+			B_LogEntry (TOPIC_Addon_BanditTrader,"Martin se postarÃ¡, aby byl Fernando Å™Ã¡dnÄ› potrestÃ¡n. MÄ›l bych o tom povÄ›dÄ›t Vatrasovi."); 
 
 			B_GivePlayerXP (XP_Addon_FernandoMartin);
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_12"); //A co dál?
-			AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_13"); //To je všechno.
+			AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_12"); //A co dÃ¡l?
+			AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_13"); //To je vÅ¡echno.
 		
 			if (Fernando_HatsZugegeben == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_14"); //Je sice hezkı, e to pøiznává, ale bez hmotného dùkazu bohuel nemùu dìlat nic.
-				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_15"); //Nechci, aby se mi lord Hagen vysmál. Budeš toho muset najít víc.
+				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_14"); //Je sice hezkÃ½, Å¾e to pÅ™iznÃ¡vÃ¡, ale bez hmotnÃ©ho dÅ¯kazu bohuÅ¾el nemÅ¯Å¾u dÄ›lat nic.
+				AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_15"); //Nechci, aby se mi lord Hagen vysmÃ¡l. BudeÅ¡ toho muset najÃ­t vÃ­c.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_16"); //To nestaèí. To mùe bıt skoro kadı z horní ètvrti.
-				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_17"); //Vypadá to, e budeme muset jít ještì dál po stopì banditù a dodávek zbraní, dokud nezjistíme, kdo za tím vìzí.
+				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_16"); //To nestaÄÃ­. To mÅ¯Å¾e bÃ½t skoro kaÅ¾dÃ½ z hornÃ­ Ätvrti.
+				AI_Output (self, other, "DIA_Addon_Martin_Fernando_07_17"); //VypadÃ¡ to, Å¾e budeme muset jÃ­t jeÅ¡tÄ› dÃ¡l po stopÄ› banditÅ¯ a dodÃ¡vek zbranÃ­, dokud nezjistÃ­me, kdo za tÃ­m vÄ›zÃ­.
 				if (Martin_IrrlichtHint == FALSE)
 				{
-					AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_18"); //Snad by sis mìl znovu promluvit s Vatrasem.
+					AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_18"); //Snad by sis mÄ›l znovu promluvit s Vatrasem.
 					Martin_IrrlichtHint = TRUE;
 				};
 			};
@@ -566,9 +566,9 @@ func void DIA_Addon_Martin_Fernando_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_19"); //Ještì jednou, kdo to byl?
-		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_20"); //Poslyš, máš zjistit, kdo má na svìdomí ty dodávky zbraní pro bandity a pøinést mi dùkaz.
-		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_21"); //Ale musí to bıt nìco doopravdy usvìdèujícího, jinak toho chlapa nebudu moct zatknout.
+		AI_Output	(other, self, "DIA_Addon_Martin_Fernando_15_19"); //JeÅ¡tÄ› jednou, kdo to byl?
+		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_20"); //PoslyÅ¡, mÃ¡Å¡ zjistit, kdo mÃ¡ na svÄ›domÃ­ ty dodÃ¡vky zbranÃ­ pro bandity a pÅ™inÃ©st mi dÅ¯kaz.
+		AI_Output	(self, other, "DIA_Addon_Martin_Fernando_07_21"); //Ale musÃ­ to bÃ½t nÄ›co doopravdy usvÄ›dÄujÃ­cÃ­ho, jinak toho chlapa nebudu moct zatknout.
 	};
 };
 
@@ -583,7 +583,7 @@ instance DIA_Addon_Martin_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Martin_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jsou tu poøád všechny bedny?";
+	description	 = 	"Jsou tu poÅ™Ã¡d vÅ¡echny bedny?";
 };
 
 func int DIA_Addon_Martin_Perm_Condition ()
@@ -596,30 +596,30 @@ func int DIA_Addon_Martin_Perm_Condition ()
 
 func void DIA_Addon_Martin_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_Perm_15_00"); //Jsou tu poøád všecky bedny?
+	AI_Output	(other, self, "DIA_Addon_Martin_Perm_15_00"); //Jsou tu poÅ™Ã¡d vÅ¡ecky bedny?
 	
 	if (MIS_Addon_Martin_GetRangar_Day <= (Wld_GetDay()-2))
 	&&	(MIS_Addon_Martin_GetRangar == LOG_RUNNING)
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_01"); //(naštvanì) Ty hajzle, mìls hlídat mı bedny! A teï se ztratilo ještì nìco dalšího!
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_01"); //(naÅ¡tvanÄ›) Ty hajzle, mÄ›ls hlÃ­dat mÃ½ bedny! A teÄ se ztratilo jeÅ¡tÄ› nÄ›co dalÅ¡Ã­ho!
 
 		if (Wld_IsTime (24,00,03,00))
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_02"); //(nahlas) Bì pøímo do zásobárny v pøístavu a pøiveï mi toho parchanta, co mi to ukrad, kapišto?
+			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_02"); //(nahlas) BÄ›Å¾ pÅ™Ã­mo do zÃ¡sobÃ¡rny v pÅ™Ã­stavu a pÅ™iveÄ mi toho parchanta, co mi to ukrad, kapiÅ¡to?
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_03"); //A a dneska veèer odejdu, koukej dávat vìtší pozor, jasnı?
+			AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_03"); //A aÅ¾ dneska veÄer odejdu, koukej dÃ¡vat vÄ›tÅ¡Ã­ pozor, jasnÃ½?
 		};	
 	}	
 	else if ((MIS_Addon_Martin_GetRangar != 0) || (hero.guild != GIL_NONE) || (Sc_IsRanger == TRUE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_04"); //Jen se smìj. Tak si zkus stát celej den na molu a dohlíet na celej ten binec.
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_05"); //Paladinové sem dotáhli takovejch krámù, a to není pìknı.
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_04"); //Jen se smÄ›j. Tak si zkus stÃ¡t celej den na molu a dohlÃ­Å¾et na celej ten binec.
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_05"); //PaladinovÃ© sem dotÃ¡hli takovejch krÃ¡mÅ¯, aÅ¾ to nenÃ­ pÄ›knÃ½.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_06"); //Nièeho se nedotıkej, jinak zavolám stráe, kapišto?
+		AI_Output	(self, other, "DIA_Addon_Martin_Perm_07_06"); //NiÄeho se nedotÃ½kej, jinak zavolÃ¡m strÃ¡Å¾e, kapiÅ¡to?
 	};
 };
 
@@ -633,7 +633,7 @@ instance DIA_Addon_Martin_GotRangar		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_GotRangar_Condition;
 	information	 = 	DIA_Addon_Martin_GotRangar_Info;
 
-	description	 = 	"Chytil jsem toho zlodìje.";
+	description	 = 	"Chytil jsem toho zlodÄ›je.";
 };
 
 func int DIA_Addon_Martin_GotRangar_Condition ()
@@ -647,14 +647,14 @@ func int DIA_Addon_Martin_GotRangar_Condition ()
 
 func void DIA_Addon_Martin_GotRangar_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_00"); //Chytil jsem toho zlodìje.
-	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_01"); //Na tvé zásoby ti chodil Rangar.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_02"); //No koneènì. Aspoò u vím, na koho si mám dávat bacha. Ten hajzl! Jestli ho pøistihnu, bude z toho poøádná rvaèka.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_03"); //Vdycky jsem se divil, proè nikdo z paladinù nikdy nic nevidí.
-	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_04"); //A proè tedy?
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_05"); //To je jasnı. Ti debilové nerozpoznaj jednoho èlena domobrany od druhıho. Pøipadáme jim všichni stejní.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_06"); //To byla dobrá práce, kámo.
-	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_07"); //Kdybys ode mì nìco potøeboval, staèí øíct.
+	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_00"); //Chytil jsem toho zlodÄ›je.
+	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_01"); //Na tvÃ© zÃ¡soby ti chodil Rangar.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_02"); //No koneÄnÄ›. AspoÅˆ uÅ¾ vÃ­m, na koho si mÃ¡m dÃ¡vat bacha. Ten hajzl! Jestli ho pÅ™istihnu, bude z toho poÅ™Ã¡dnÃ¡ rvaÄka.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_03"); //VÅ¾dycky jsem se divil, proÄ nikdo z paladinÅ¯ nikdy nic nevidÃ­.
+	AI_Output	(other, self, "DIA_Addon_Martin_GotRangar_15_04"); //A proÄ tedy?
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_05"); //To je jasnÃ½. Ti debilovÃ© nerozpoznaj jednoho Älena domobrany od druhÃ½ho. PÅ™ipadÃ¡me jim vÅ¡ichni stejnÃ­.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_06"); //To byla dobrÃ¡ prÃ¡ce, kÃ¡mo.
+	AI_Output	(self, other, "DIA_Addon_Martin_GotRangar_07_07"); //Kdybys ode mÄ› nÄ›co potÅ™eboval, staÄÃ­ Å™Ã­ct.
 
 	MIS_Addon_Martin_GetRangar = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Martin_GotRangar_Report);
@@ -670,7 +670,7 @@ instance DIA_Addon_Martin_GetMiliz		(C_INFO)
 	condition	 = 	DIA_Addon_Martin_GetMiliz_Condition;
 	information	 = 	DIA_Addon_Martin_GetMiliz_Info;
 
-	description	 = 	"Vdy víš, co po tobì chci.";
+	description	 = 	"VÅ¾dyÅ¥ vÃ­Å¡, co po tobÄ› chci.";
 };
 
 func int DIA_Addon_Martin_GetMiliz_Condition ()
@@ -683,16 +683,16 @@ func int DIA_Addon_Martin_GetMiliz_Condition ()
 
 func void DIA_Addon_Martin_GetMiliz_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Martin_GetMiliz_15_00"); //Však víš, co po tobì chci.
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_01"); //No jo, ty ses chtìl pøidat k domobranì, e jo?
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_02"); //U jsi mi dokázal, e za nìco stojíš.
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_03"); //No, øeknìme, e budu radši, kdy budeš na mı stranì, ne aby ses pøidal k nìkomu jinımu.
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_04"); //A proto ti pomùu. Tady máš ode mì doporuèující dopis a uka ho našemu paladinskımu veliteli Andremu.
+	AI_Output	(other, self, "DIA_Addon_Martin_GetMiliz_15_00"); //VÅ¡ak vÃ­Å¡, co po tobÄ› chci.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_01"); //No jo, ty ses chtÄ›l pÅ™idat k domobranÄ›, Å¾e jo?
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_02"); //UÅ¾ jsi mi dokÃ¡zal, Å¾e za nÄ›co stojÃ­Å¡.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_03"); //No, Å™eknÄ›me, Å¾e budu radÅ¡i, kdyÅ¾ budeÅ¡ na mÃ½ stranÄ›, neÅ¾ aby ses pÅ™idal k nÄ›komu jinÃ½mu.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_04"); //A proto ti pomÅ¯Å¾u. Tady mÃ¡Å¡ ode mÄ› doporuÄujÃ­cÃ­ dopis a ukaÅ¾ ho naÅ¡emu paladinskÃ½mu veliteli Andremu.
 	CreateInvItems (self, ItWr_Martin_MilizEmpfehlung_Addon, 1);									
 	B_GiveInvItems (self, other, ItWr_Martin_MilizEmpfehlung_Addon, 1);		
-	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_05"); //Najdeš ho v kasárnách. Urèitì tvou pomoc vyuije.
+	AI_Output	(self, other, "DIA_Addon_Martin_GetMiliz_07_05"); //NajdeÅ¡ ho v kasÃ¡rnÃ¡ch. UrÄitÄ› tvou pomoc vyuÅ¾ije.
 
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Martin mi dal doporuèující dopis pro velitele paladinù lorda Andreho, kterı mì tak pøijme do øad domobrany. Andreho najdu v kasárnách."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Martin mi dal doporuÄujÃ­cÃ­ dopis pro velitele paladinÅ¯ lorda Andreho, kterÃ½ mÄ› tak pÅ™ijme do Å™ad domobrany. Andreho najdu v kasÃ¡rnÃ¡ch."); 
 };
 
 

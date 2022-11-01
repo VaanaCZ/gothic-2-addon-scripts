@@ -34,7 +34,7 @@ INSTANCE DIA_Salandril_PICKPOCKET (C_INFO)
 	condition	= DIA_Salandril_PICKPOCKET_Condition;
 	information	= DIA_Salandril_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Tento klíè pùjde ukrást snadno.)";
+	description = "(Tento klÃ­Ä pÅ¯jde ukrÃ¡st snadno.)";
 };
 //----------------------------------------                       
 var int DIA_Salandril_PICKPOCKET_perm;
@@ -103,11 +103,11 @@ func int DIA_Salandril_Hallo_Condition ()
 };
 func void DIA_Salandril_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //Vítej, poutníku, hledáš nìjakı dobrı lektvar?
-	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //U mì najdeš velkı vıbìr za pøijatelné ceny a mé lektvary jsou mnohem lepší ne ty patoky, které prodává Zuris.
+	AI_Output (self, other, "DIA_Salandril_PERM_13_00"); //VÃ­tej, poutnÃ­ku, hledÃ¡Å¡ nÄ›jakÃ½ dobrÃ½ lektvar?
+	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //U mÄ› najdeÅ¡ velkÃ½ vÃ½bÄ›r za pÅ™ijatelnÃ© ceny a mÃ© lektvary jsou mnohem lepÅ¡Ã­ neÅ¾ ty patoky, kterÃ© prodÃ¡vÃ¡ Zuris.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Salandril prodává lektvary. Jeho obchod najdu v horní ètvrti."); 
+	B_LogEntry (TOPIC_CityTrader, "Salandril prodÃ¡vÃ¡ lektvary. Jeho obchod najdu v hornÃ­ Ätvrti."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trank
@@ -132,8 +132,8 @@ func int DIA_Salandril_Trank_Condition ()
 };
 func void DIA_Salandril_Trank_Info ()
 {
-	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //Slyšel jsem, e ses s paladiny vypravil do Hornického údolí. To na mì udìlalo dojem.
-	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //Mìl by sis vyšetøit chvilku a prohlédnout si mé zboí - zrovna ti mohu nabídnout jeden velmi zvláštní lektvar.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_00"); //SlyÅ¡el jsem, Å¾e ses s paladiny vypravil do HornickÃ©ho ÃºdolÃ­. To na mÄ› udÄ›lalo dojem.
+	AI_Output (self, other, "DIA_Salandril_Trank_13_01"); //MÄ›l by sis vyÅ¡etÅ™it chvilku a prohlÃ©dnout si mÃ© zboÅ¾Ã­ - zrovna ti mohu nabÃ­dnout jeden velmi zvlÃ¡Å¡tnÃ­ lektvar.
 	
 	CreateInvItems (self,ItPo_Perm_DEX,1);
 };
@@ -147,7 +147,7 @@ instance DIA_Salandril_Trade		(C_INFO)
 	condition	 = 	DIA_Salandril_Trade_Condition;
 	information	 = 	DIA_Salandril_Trade_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Uka mi své zboí.";
+	description	 =  "UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 	trade		 =  TRUE;
 };
 
@@ -161,11 +161,11 @@ func int DIA_Salandril_Trade_Condition ()
 func void DIA_Salandril_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Salandril_Trade_15_00"); //Uka mi své zboí.
+	AI_Output (other, self, "DIA_Salandril_Trade_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //Je mi potìšením, ctihodnı bratøe.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_01"); //Je mi potÄ›Å¡enÃ­m, ctihodnÃ½ bratÅ™e.
 		if (MIS_Serpentes_MinenAnteil_KDF == LOG_RUNNING)
 		{
 			SC_KnowsProspektorSalandril = TRUE;
@@ -173,7 +173,7 @@ func void DIA_Salandril_Trade_Info ()
 	};
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Salandril_Trade_13_02"); //Je mi potìšením, šlechetnı váleèníku.
+		AI_Output (self, other, "DIA_Salandril_Trade_13_02"); //Je mi potÄ›Å¡enÃ­m, Å¡lechetnÃ½ vÃ¡leÄnÃ­ku.
 	};
 };
 
@@ -222,7 +222,7 @@ instance DIA_Salandril_KLOSTER		(C_INFO)
 	condition	 = 	DIA_Salandril_KLOSTER_Condition;
 	information	 = 	DIA_Salandril_KLOSTER_Info;
 
-	description	 = 	"Teï se vyprav do kláštera - budeš souzen.";
+	description	 = 	"TeÄ se vyprav do klÃ¡Å¡tera - budeÅ¡ souzen.";
 };
 
 func int DIA_Salandril_KLOSTER_Condition ()
@@ -235,19 +235,19 @@ func int DIA_Salandril_KLOSTER_Condition ()
 
 func void DIA_Salandril_KLOSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //Teï se vyprav do kláštera - budeš souzen.
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //Coe? To jako abych zvednul zadek? Houby s octem! Ti mizerní mágové proti mnì nemají jedinı dùkaz!
+	AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_00"); //TeÄ se vyprav do klÃ¡Å¡tera - budeÅ¡ souzen.
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_01"); //CoÅ¾e? To jako abych zvednul zadek? Houby s octem! Ti mizernÃ­ mÃ¡govÃ© proti mnÄ› nemajÃ­ jedinÃ½ dÅ¯kaz!
 
 	if (hero.guild == GIL_KDF)
 	&& (SC_KnowsProspektorSalandril == TRUE)		
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //A co ty falešné dùlní akcie, které jsi prodával na ulicích po celé zemi? Nesou tvùj podpis. Jsi vinen.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_02"); //A co ty faleÅ¡nÃ© dÅ¯lnÃ­ akcie, kterÃ© jsi prodÃ¡val na ulicÃ­ch po celÃ© zemi? Nesou tvÅ¯j podpis. Jsi vinen.
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Mám své pøíkazy, a ty taky vyplním. Take buï pùjdeš po dobrém, nebo po zlém.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //MÃ¡m svÃ© pÅ™Ã­kazy, a ty taky vyplnÃ­m. TakÅ¾e buÄ pÅ¯jdeÅ¡ po dobrÃ©m, nebo po zlÃ©m.
 	};
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //Coe? Klidnì tì pøes mìsto potáhnu za límec jako kus špinavého hadru!
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //CoÅ¾e? KlidnÄ› tÄ› pÅ™es mÄ›sto potÃ¡hnu za lÃ­mec jako kus Å¡pinavÃ©ho hadru!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };
@@ -262,7 +262,7 @@ instance DIA_Salandril_GehinsKloster		(C_INFO)
 	condition	 = 	DIA_Salandril_GehinsKloster_Condition;
 	information	 = 	DIA_Salandril_GehinsKloster_Info;
 
-	description	 = 	"Take pùjdeš teï do toho kláštera, nebo chceš ještì jednu?";
+	description	 = 	"TakÅ¾e pÅ¯jdeÅ¡ teÄ do toho klÃ¡Å¡tera, nebo chceÅ¡ jeÅ¡tÄ› jednu?";
 };
 
 func int DIA_Salandril_GehinsKloster_Condition ()
@@ -277,8 +277,8 @@ func int DIA_Salandril_GehinsKloster_Condition ()
 
 func void DIA_Salandril_GehinsKloster_Info ()
 {
-	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //Tak pùjdeš teï do toho kláštera, nebo chceš ještì jednu?
-	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //Toho budeš litovat. Jo, ksakru, pùjdu do toho pitomıho kláštera, ale nemysli si, e je to vyøízené.
+	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //Tak pÅ¯jdeÅ¡ teÄ do toho klÃ¡Å¡tera, nebo chceÅ¡ jeÅ¡tÄ› jednu?
+	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //Toho budeÅ¡ litovat. Jo, ksakru, pÅ¯jdu do toho pitomÃ½ho klÃ¡Å¡tera, ale nemysli si, Å¾e je to vyÅ™Ã­zenÃ©.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KlosterUrteil");
 	MIS_Serpentes_BringSalandril_SLD = LOG_SUCCESS;

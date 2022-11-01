@@ -76,7 +76,7 @@ FUNC INT DIA_Addon_Matt_Hello_Condition()
 };
 func VOID DIA_Addon_Matt_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Addon_Matt_Hello_10_01"); //Ty seö tu novej, co? Prima! N·m se hodÌ kaûdej.
+	AI_Output (self ,other,"DIA_Addon_Matt_Hello_10_01"); //Ty se≈° tu novej, co? Prima! N√°m se hod√≠ ka≈ædej.
 };
 
 // ************************************************************
@@ -97,30 +97,30 @@ FUNC INT DIA_Addon_Matt_PERM_Condition()
 };
 func VOID DIA_Addon_Matt_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Matt_Alright_15_01"); //Jak se da¯Ì?
+	AI_Output (other, self, "DIA_Addon_Matt_Alright_15_01"); //Jak se da≈ô√≠?
 	
 	if (self.aivar[AIV_PARTYMEMBER] == TRUE)
 	{
 		if (self.attribute[ATR_HITPOINTS] < 100)
 		{
-			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_02"); //ÿÌkal jsem L…»IVEJ LEKTVAR. NerozumÌö Ëesky?
+			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_02"); //≈ò√≠kal jsem L√âƒåIVEJ LEKTVAR. Nerozum√≠≈° ƒçesky?
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_01"); //Vöecko v cajku (cynicky), kapit·ne!
+			AI_Output (self ,other,"DIA_Addon_Matt_Alright_10_01"); //V≈°ecko v cajku (cynicky), kapit√°ne!
 		};
 	}
 	else if (GregIsBack == TRUE)
 	&& (!Npc_IsDead(Greg))
 	{
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_01"); //To je sranda. Uû nem·me û·dnou loÔ.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_02"); //Budu prostÏ Ëekat, co Greg vymyslÌ.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_01"); //To je sranda. U≈æ nem√°me ≈æ√°dnou loƒè.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_02"); //Budu prostƒõ ƒçekat, co Greg vymysl√≠.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_03"); //TeÔ je v t·bo¯e klid, takûe si p˘jdu taky trochu d·chnout.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_04"); //A bejt tebou, udÏl·m to sam˝.
-		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_05"); //Od t˝ doby, co tu opruzujou ti banditi, se situace mÏnÌ rychlejc, neû je zdr·vo.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_03"); //Teƒè je v t√°bo≈ôe klid, tak≈æe si p≈Øjdu taky trochu d√°chnout.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_04"); //A bejt tebou, udƒõl√°m to sam√Ω.
+		AI_Output (self ,other,"DIA_Addon_Matt_Job_10_05"); //Od t√Ω doby, co tu opruzujou ti banditi, se situace mƒõn√≠ rychlejc, ne≈æ je zdr√°vo.
 	};
 };
 
@@ -134,7 +134,7 @@ INSTANCE DIA_Addon_Matt_Bandits(C_INFO)
 	condition	= DIA_Addon_Matt_Bandits_Condition;
 	information	= DIA_Addon_Matt_Bandits_Info;
 
-	description = "Co vÌö o banditech?";
+	description = "Co v√≠≈° o banditech?";
 };                       
 FUNC INT DIA_Addon_Matt_Bandits_Condition()
 {
@@ -142,13 +142,13 @@ FUNC INT DIA_Addon_Matt_Bandits_Condition()
 };
 func VOID DIA_Addon_Matt_Bandits_Info()
 {	
-	AI_Output (other, self,"DIA_Addon_Matt_Bandits_15_03"); //Co vÌö o banditech?
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_01"); //MyslÌö krom toho, ûe jsou pro n·s smrteln· hrozba a maj nad n·ma po¯·dnou p¯esilu?
+	AI_Output (other, self,"DIA_Addon_Matt_Bandits_15_03"); //Co v√≠≈° o banditech?
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_01"); //Mysl√≠≈° krom toho, ≈æe jsou pro n√°s smrteln√° hrozba a maj nad n√°ma po≈ô√°dnou p≈ôesilu?
 	AI_Output (other,self ,"DIA_Addon_Matt_Bandits_15_02"); //Ano.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_02"); //V·lej se ve zlatÏ.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_03"); //Teda aspoÚ se V¡LELI ve zlatÏ. Protoûe za poslednÌ z·silku nikdy nezaplatili.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_04"); //Ale pochybuju, ûe by to bylo proto, ûe jim doölo zlato.
-	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_05"); //SpÌö jim uû hlavy narostly do nebe.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_02"); //V√°lej se ve zlatƒõ.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_03"); //Teda aspo≈à se V√ÅLELI ve zlatƒõ. Proto≈æe za posledn√≠ z√°silku nikdy nezaplatili.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_04"); //Ale pochybuju, ≈æe by to bylo proto, ≈æe jim do≈°lo zlato.
+	AI_Output (self ,other,"DIA_Addon_Matt_Bandits_10_05"); //Sp√≠≈° jim u≈æ hlavy narostly do nebe.
 };
 
 // ************************************************************
@@ -161,7 +161,7 @@ INSTANCE DIA_Addon_Matt_Francis(C_INFO)
 	condition	= DIA_Addon_Matt_Francis_Condition;
 	information	= DIA_Addon_Matt_Francis_Info;
 
-	description = "Co vÌö o Francisovi?";
+	description = "Co v√≠≈° o Francisovi?";
 };                       
 FUNC INT DIA_Addon_Matt_Francis_Condition()
 {
@@ -176,10 +176,10 @@ FUNC INT DIA_Addon_Matt_Francis_Condition()
 };
 func VOID DIA_Addon_Matt_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_00"); //Co vÌö o Francisovi?
-	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_01"); //MyslÌö krom toho, ûe je lÌnej a neschopnej?
+	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_00"); //Co v√≠≈° o Francisovi?
+	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_01"); //Mysl√≠≈° krom toho, ≈æe je l√≠nej a neschopnej?
 	AI_Output (other,self ,"DIA_Addon_Brandon_Matt_15_02"); //Ano.
-	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_03"); //Tak to se musÌm zamyslet. Hmm... ne. Nic jin˝ho mÏ nenapad·.
+	AI_Output (self ,other,"DIA_Addon_Matt_Francis_10_03"); //Tak to se mus√≠m zamyslet. Hmm... ne. Nic jin√Ωho mƒõ nenapad√°.
 };
 
 
@@ -199,7 +199,7 @@ instance DIA_Addon_Matt_Anheuern(C_INFO)
 	condition	= DIA_Addon_Matt_Anheuern_Condition;
 	information	= DIA_Addon_Matt_Anheuern_Info;
 	permanent	= FALSE;
-	description = "PojÔ se mnou.";
+	description = "Pojƒè se mnou.";
 };                       
 FUNC INT DIA_Addon_Matt_Anheuern_Condition()
 {
@@ -210,20 +210,20 @@ FUNC INT DIA_Addon_Matt_Anheuern_Condition()
 };
 func VOID DIA_Addon_Matt_Anheuern_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_00"); //PojÔ se mnou.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_01"); //TeÔ nem˘ûu jÌt, snaûÌm se trochu si d·chnout.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_00"); //Pojƒè se mnou.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_01"); //Teƒè nem≈Ø≈æu j√≠t, sna≈æ√≠m se trochu si d√°chnout.
 	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_15_02"); //Jsou to rozkazy od Grega.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_03"); //(rychle) Aha, ch·pu. To je ovöem nÏco jin˝ho. Teda jako ûe uû jdu, ovöem, samoz¯ejmÏ.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_04"); //Kam p˘jdem?
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_03"); //(rychle) Aha, ch√°pu. To je ov≈°em nƒõco jin√Ωho. Teda jako ≈æe u≈æ jdu, ov≈°em, samoz≈ôejmƒõ.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_10_04"); //Kam p≈Øjdem?
 	
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
-	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Zav¯i klapaËku a radöi pojÔ.",DIA_Addon_Matt_Anheuern_ShutUp);
-	Info_AddChoice (DIA_Addon_Matt_Anheuern,"M·me vyËistit kaÚon.",DIA_Addon_Matt_Anheuern_ClearCanyon);
+	Info_AddChoice (DIA_Addon_Matt_Anheuern,"Zav≈ôi klapaƒçku a rad≈°i pojƒè.",DIA_Addon_Matt_Anheuern_ShutUp);
+	Info_AddChoice (DIA_Addon_Matt_Anheuern,"M√°me vyƒçistit ka≈àon.",DIA_Addon_Matt_Anheuern_ClearCanyon);
 };
 func VOID DIA_Addon_Matt_Anheuern_ShutUp()
 {
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ShutUp_15_00"); //Radöi drû hubu a krok.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ShutUp_10_01"); //(nevrle) Rozkaz (sarkasticky), kapit·ne!
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ShutUp_15_00"); //Rad≈°i dr≈æ hubu a krok.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ShutUp_10_01"); //(nevrle) Rozkaz (sarkasticky), kapit√°ne!
 	
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	AI_StopProcessInfos (self);
@@ -232,10 +232,10 @@ func VOID DIA_Addon_Matt_Anheuern_ShutUp()
 };
 func VOID DIA_Addon_Matt_Anheuern_ClearCanyon()
 {
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_00"); //M·me vyËistit kaÚon.
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_01"); //Si upad, ne? Dyk je plnej potvor. HlavnÏ s tÏma b¯itovcema bysme si nemÏli zahr·vat.
-	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_02"); //J· vÌm. Uû jdeö?
-	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_03"); //(povzdychne si) Radöi si nabalÌm p·r lÈËivejch lektvar˘, budem je pot¯ebovat.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_00"); //M√°me vyƒçistit ka≈àon.
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_01"); //Si upad, ne? Dyk je plnej potvor. Hlavnƒõ s tƒõma b≈ôitovcema bysme si nemƒõli zahr√°vat.
+	AI_Output (other,self ,"DIA_Addon_Matt_FollowMe_ClearCanyon_15_02"); //J√° v√≠m. U≈æ jde≈°?
+	AI_Output (self ,other,"DIA_Addon_Matt_FollowMe_ClearCanyon_10_03"); //(povzdychne si) Rad≈°i si nabal√≠m p√°r l√©ƒçivejch lektvar≈Ø, budem je pot≈ôebovat.
 
 	Info_ClearChoices (DIA_Addon_Matt_Anheuern);
 	AI_StopProcessInfos (self);
@@ -253,7 +253,7 @@ instance DIA_Addon_Matt_ComeOn(C_INFO)
 	condition	= 	DIA_Addon_Matt_ComeOn_Condition;
 	information	= 	DIA_Addon_Matt_ComeOn_Info;
 	permanent	= 	TRUE;
-	description	= 	"PojÔ se mnou.";
+	description	= 	"Pojƒè se mnou.";
 };
 func int DIA_Addon_Matt_ComeOn_Condition ()
 {
@@ -266,7 +266,7 @@ func int DIA_Addon_Matt_ComeOn_Condition ()
 };
 func void DIA_Addon_Matt_ComeOn_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Matt_ComeOn_15_00"); //PojÔ se mnou.
+	AI_Output (other, self, "DIA_Addon_Matt_ComeOn_15_00"); //Pojƒè se mnou.
 	
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
@@ -275,7 +275,7 @@ func void DIA_Addon_Matt_ComeOn_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_ComeOn_10_01"); //Rozkaz (cynicky), kapit·ne!
+		AI_Output (self, other, "DIA_Addon_Matt_ComeOn_10_01"); //Rozkaz (cynicky), kapit√°ne!
 		AI_StopProcessInfos (self);
 		B_Addon_PiratesFollowAgain();
 		Npc_ExchangeRoutine	(self,"FOLLOW");
@@ -293,7 +293,7 @@ INSTANCE DIA_Addon_Matt_GoHome(C_INFO)
 	condition	= DIA_Addon_Matt_GoHome_Condition;
 	information	= DIA_Addon_Matt_GoHome_Info;
 	permanent	= TRUE;
-	description = "Uû tÏ nepot¯ebuju.";
+	description = "U≈æ tƒõ nepot≈ôebuju.";
 };                       
 FUNC INT DIA_Addon_Matt_GoHome_Condition()
 {
@@ -305,8 +305,8 @@ FUNC INT DIA_Addon_Matt_GoHome_Condition()
 
 FUNC VOID DIA_Addon_Matt_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Matt_DontNeedYou_15_00"); //Uû tÏ nepot¯ebuju.
-	AI_Output (self, other, "DIA_Addon_Matt_GoHome_10_01"); //(skuhr· si pro sebe) Pot¯ebuju po¯·dn˝ho loka ko¯alky!
+	AI_Output (other,self ,"DIA_Addon_Matt_DontNeedYou_15_00"); //U≈æ tƒõ nepot≈ôebuju.
+	AI_Output (self, other, "DIA_Addon_Matt_GoHome_10_01"); //(skuhr√° si pro sebe) Pot≈ôebuju po≈ô√°dn√Ωho loka ko≈ôalky!
 		
 	AI_StopProcessInfos (self); 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -336,14 +336,14 @@ FUNC INT DIA_Addon_Matt_TooFar_Condition()
 
 FUNC VOID DIA_Addon_Matt_TooFar_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_01"); //Odsud uû m˘ûeö jÌt s·m (cynicky), kapit·ne.
+	AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_01"); //Odsud u≈æ m≈Ø≈æe≈° j√≠t s√°m (cynicky), kapit√°ne.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_03"); //J· i s chlapama se vracÌme do t·bora.
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_03"); //J√° i s chlapama se vrac√≠me do t√°bora.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_02"); //J· se vracÌm do t·bora!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_10_02"); //J√° se vrac√≠m do t√°bora!
 	};
 	
 	B_Addon_PiratesGoHome();
@@ -352,7 +352,7 @@ FUNC VOID DIA_Addon_Matt_TooFar_Info()
 };
 
 // ------------------------------------------------------------
-// 			 Ich kˆnnte 'nen Heiltrank gebrauchen!
+// 			 Ich k√∂nnte 'nen Heiltrank gebrauchen!
 // ------------------------------------------------------------
 INSTANCE DIA_Addon_Matt_Healing(C_INFO)
 {
@@ -373,7 +373,7 @@ FUNC INT DIA_Addon_Matt_Healing_Condition()
 };
 func VOID DIA_Addon_Matt_Healing_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_Matt_Healing_10_01"); //(cynicky) HalÛ, kapit·ne! Hodil by se mi Ú·kej lÈËivej lektvar.
+	AI_Output (self, other, "DIA_Addon_Matt_Healing_10_01"); //(cynicky) Hal√≥, kapit√°ne! Hodil by se mi ≈à√°kej l√©ƒçivej lektvar.
 };
 
 

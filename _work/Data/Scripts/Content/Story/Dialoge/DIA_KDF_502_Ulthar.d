@@ -45,14 +45,14 @@ func int DIA_Ulthar_GREET_Condition ()
 };
 func void DIA_Ulthar_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_00"); //Hleïme, pøed nejvyšší radou stojí novı novic. Innos tì doprovázej, synu.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_01"); //Co je pøesnì úkolem nejvyšší rady?
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_02"); //Naší povinností je hlásat vùli Innosovu. Jsme to tedy my, kdo oznaèuje novice vyvolené ke zkoušce magie.
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_03"); //Aèkoliv ijeme v ústraní, sledujeme svìtské záleitosti, nebo církev Innosova pøedstavuje nejvyšší pozemskı zákon.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_04"); //Ach, take vás zajímá, co se dìje ve svìtì.
-	AI_Output (other, self, "DIA_Ulthar_GREET_15_05"); //Co si tedy myslíte o tìch dracích, co se usadili v Hornickém údolí, a o jejich armádì, která roste den za dnem?
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_06"); //Chápu, e jsi rozèilenı, ale ne se rozhodneme nìco podniknout, musíme vše dùkladnì zváit.
-	AI_Output (self, other, "DIA_Ulthar_GREET_05_07"); //Kdybychom se teï nechali unést, nièeho bychom nedocílili. Take splò to, co máš pøikázáno - a my probereme, co je zapotøebí udìlat.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_00"); //HleÄme, pÅ™ed nejvyÅ¡Å¡Ã­ radou stojÃ­ novÃ½ novic. Innos tÄ› doprovÃ¡zej, synu.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_01"); //Co je pÅ™esnÄ› Ãºkolem nejvyÅ¡Å¡Ã­ rady?
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_02"); //NaÅ¡Ã­ povinnostÃ­ je hlÃ¡sat vÅ¯li Innosovu. Jsme to tedy my, kdo oznaÄuje novice vyvolenÃ© ke zkouÅ¡ce magie.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_03"); //AÄkoliv Å¾ijeme v ÃºstranÃ­, sledujeme svÄ›tskÃ© zÃ¡leÅ¾itosti, neboÅ¥ cÃ­rkev Innosova pÅ™edstavuje nejvyÅ¡Å¡Ã­ pozemskÃ½ zÃ¡kon.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_04"); //Ach, takÅ¾e vÃ¡s zajÃ­mÃ¡, co se dÄ›je ve svÄ›tÄ›.
+	AI_Output (other, self, "DIA_Ulthar_GREET_15_05"); //Co si tedy myslÃ­te o tÄ›ch dracÃ­ch, co se usadili v HornickÃ©m ÃºdolÃ­, a o jejich armÃ¡dÄ›, kterÃ¡ roste den za dnem?
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_06"); //ChÃ¡pu, Å¾e jsi rozÄilenÃ½, ale neÅ¾ se rozhodneme nÄ›co podniknout, musÃ­me vÅ¡e dÅ¯kladnÄ› zvÃ¡Å¾it.
+	AI_Output (self, other, "DIA_Ulthar_GREET_05_07"); //Kdybychom se teÄ nechali unÃ©st, niÄeho bychom nedocÃ­lili. TakÅ¾e splÅˆ to, co mÃ¡Å¡ pÅ™ikÃ¡zÃ¡no - a my probereme, co je zapotÅ™ebÃ­ udÄ›lat.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEST
@@ -63,7 +63,7 @@ instance DIA_Ulthar_MAGETEST		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Ulthar_MAGETEST_Condition;
 	information	 = 	DIA_Ulthar_MAGETEST_Info;
-	description	 = 	"Povìz mi o zkoušce magie.";
+	description	 = 	"PovÄ›z mi o zkouÅ¡ce magie.";
 };
 func int DIA_Ulthar_MAGETEST_Condition ()
 {	
@@ -74,9 +74,9 @@ func int DIA_Ulthar_MAGETEST_Condition ()
 };
 func void DIA_Ulthar_MAGETEST_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_MAGETEST_15_00"); //Povìz mi o zkoušce magie.
-	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_01"); //Je to šance pro vybrané novice vstoupit do spoleèenstva mágù. Zkoušku ovšem mùe splnit jen jeden.
-	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_02"); //Novice si ke zkoušce vybírá sám Innos.
+	AI_Output (other, self, "DIA_Ulthar_MAGETEST_15_00"); //PovÄ›z mi o zkouÅ¡ce magie.
+	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_01"); //Je to Å¡ance pro vybranÃ© novice vstoupit do spoleÄenstva mÃ¡gÅ¯. ZkouÅ¡ku ovÅ¡em mÅ¯Å¾e splnit jen jeden.
+	AI_Output (self, other, "DIA_Ulthar_MAGETEST_05_02"); //Novice si ke zkouÅ¡ce vybÃ­rÃ¡ sÃ¡m Innos.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WHEN
@@ -88,7 +88,7 @@ instance DIA_Ulthar_WHEN		(C_INFO)
 	condition	 = 	DIA_Ulthar_WHEN_Condition;
 	information	 = 	DIA_Ulthar_WHEN_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Kdy bude ta zkouška probíhat?";
+	description	 = 	"Kdy bude ta zkouÅ¡ka probÃ­hat?";
 };
 func int DIA_Ulthar_WHEN_Condition ()
 {
@@ -100,8 +100,8 @@ func int DIA_Ulthar_WHEN_Condition ()
 };
 func void DIA_Ulthar_WHEN_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_WHEN_15_00"); //Kdy bude ta zkouška probíhat?
-	AI_Output (self, other, "DIA_Ulthar_WHEN_05_01"); //Jakmile se dozvíme Innosovu vùli. Zpravíme o ní vybrané novice a podrobíme je zkoušce.
+	AI_Output (other, self, "DIA_Ulthar_WHEN_15_00"); //Kdy bude ta zkouÅ¡ka probÃ­hat?
+	AI_Output (self, other, "DIA_Ulthar_WHEN_05_01"); //Jakmile se dozvÃ­me Innosovu vÅ¯li. ZpravÃ­me o nÃ­ vybranÃ© novice a podrobÃ­me je zkouÅ¡ce.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -114,7 +114,7 @@ instance DIA_Ulthar_TEST		(C_INFO)
 	condition	 = 	DIA_Ulthar_TEST_Condition;
 	information	 = 	DIA_Ulthar_TEST_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Jsem pøipraven podrobit se tvé zkoušce, Mistøe.";
+	description	 = 	"Jsem pÅ™ipraven podrobit se tvÃ© zkouÅ¡ce, MistÅ™e.";
 };
 func int DIA_Ulthar_TEST_Condition ()
 {	
@@ -125,19 +125,19 @@ func int DIA_Ulthar_TEST_Condition ()
 };
 func void DIA_Ulthar_TEST_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_TEST_15_00"); //Jsem pøipraven podrobit se tvé zkoušce, Mistøe.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_01"); //Nepøekvapuje mì, e znáš ten starı zákon.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_02"); //Ale pochybuji, e si uvìdomuješ, jakému riziku se vystavuješ. Mìj na pamìti, e nedoèkavı duch zkouškou ohnì neprojde.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_03"); //Je to u strašnì dávno, kdy nìkdo tuto zkoušku podstupoval. A je jen jedinı èlovìk, kterı ji pøeil a úspìšnì sloil.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_04"); //Tehdy to byl mladı ambiciózní novic, teï u dlouhou dobu zastává vysokı úøad v nejvyšší radì - mluvím o Serpentesovi.
-	AI_Output (other, self, "DIA_Ulthar_TEST_15_05"); //Nebude to dlouho trvat a u nebude jedinım, kdo tu zkoušku sloil.
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_06"); //V tom pøípadì tì u nenechám dlouho èekat. Poslouchej znìní mé zkoušky:
-	AI_Output (self, other, "DIA_Ulthar_TEST_05_07"); //Vytvoø runu ohnivého šípu. To je vše - nech je ti Innos nápomocen.
+	AI_Output (other, self, "DIA_Ulthar_TEST_15_00"); //Jsem pÅ™ipraven podrobit se tvÃ© zkouÅ¡ce, MistÅ™e.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_01"); //NepÅ™ekvapuje mÄ›, Å¾e znÃ¡Å¡ ten starÃ½ zÃ¡kon.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_02"); //Ale pochybuji, Å¾e si uvÄ›domujeÅ¡, jakÃ©mu riziku se vystavujeÅ¡. MÄ›j na pamÄ›ti, Å¾e nedoÄkavÃ½ duch zkouÅ¡kou ohnÄ› neprojde.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_03"); //Je to uÅ¾ straÅ¡nÄ› dÃ¡vno, kdy nÄ›kdo tuto zkouÅ¡ku podstupoval. A je jen jedinÃ½ ÄlovÄ›k, kterÃ½ ji pÅ™eÅ¾il a ÃºspÄ›Å¡nÄ› sloÅ¾il.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_04"); //Tehdy to byl mladÃ½ ambiciÃ³znÃ­ novic, teÄ uÅ¾ dlouhou dobu zastÃ¡vÃ¡ vysokÃ½ ÃºÅ™ad v nejvyÅ¡Å¡Ã­ radÄ› - mluvÃ­m o Serpentesovi.
+	AI_Output (other, self, "DIA_Ulthar_TEST_15_05"); //Nebude to dlouho trvat a uÅ¾ nebude jedinÃ½m, kdo tu zkouÅ¡ku sloÅ¾il.
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_06"); //V tom pÅ™Ã­padÄ› tÄ› uÅ¾ nenechÃ¡m dlouho Äekat. Poslouchej znÄ›nÃ­ mÃ© zkouÅ¡ky:
+	AI_Output (self, other, "DIA_Ulthar_TEST_05_07"); //VytvoÅ™ runu ohnivÃ©ho Å¡Ã­pu. To je vÅ¡e - nechÅ¥ je ti Innos nÃ¡pomocen.
 	
 	MIS_RUNE = LOG_RUNNING;
 	Log_CreateTopic (TOPIC_Rune,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Rune,LOG_RUNNING);
-	B_LogEntry (TOPIC_Rune,"Ulthar mi zadal svùj úkol - musím vytvoøit runu ohnivého šípu.");
+	B_LogEntry (TOPIC_Rune,"Ulthar mi zadal svÅ¯j Ãºkol - musÃ­m vytvoÅ™it runu ohnivÃ©ho Å¡Ã­pu.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -164,7 +164,7 @@ func int DIA_Ulthar_RUNNING_Condition ()
 };
 func void DIA_Ulthar_RUNNING_Info ()
 {
-	AI_Output (self, other, "DIA_Ulthar_RUNNING_05_00"); //Svùj úkol znáš. Vìnuj se mu.
+	AI_Output (self, other, "DIA_Ulthar_RUNNING_05_00"); //SvÅ¯j Ãºkol znÃ¡Å¡. VÄ›nuj se mu.
 	
 	AI_StopProcessInfos (self);
 };
@@ -178,7 +178,7 @@ instance DIA_Ulthar_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Ulthar_SUCCESS_Condition;
 	information	 = 	DIA_Ulthar_SUCCESS_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Vytvoøil jsem tu runu!";
+	description	 = 	"VytvoÅ™il jsem tu runu!";
 };
 func int DIA_Ulthar_SUCCESS_Condition ()
 {
@@ -190,15 +190,15 @@ func int DIA_Ulthar_SUCCESS_Condition ()
 };
 func void DIA_Ulthar_SUCCESS_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_SUCCESS_15_00"); //Vytvoøil jsem tu runu!
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_01"); //Dobrá práce, novici. Mùeš si ji nechat, je to tvoje první runa.
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_02"); //A se dostaneš do prvního kruhu ohnì, budeš ji moci pouívat.
-	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_03"); //Splnil jsi svou zkoušku k mé spokojenosti.
+	AI_Output (other, self, "DIA_Ulthar_SUCCESS_15_00"); //VytvoÅ™il jsem tu runu!
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_01"); //DobrÃ¡ prÃ¡ce, novici. MÅ¯Å¾eÅ¡ si ji nechat, je to tvoje prvnÃ­ runa.
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_02"); //AÅ¾ se dostaneÅ¡ do prvnÃ­ho kruhu ohnÄ›, budeÅ¡ ji moci pouÅ¾Ã­vat.
+	AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_03"); //Splnil jsi svou zkouÅ¡ku k mÃ© spokojenosti.
 	
 	if (MIS_GOLEM == LOG_RUNNING)
 	&& ((Npc_IsDead (Magic_Golem)) == FALSE)
 	{
-		AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_04"); //Ale ještì poøád pøed sebou máš nebezpeènı úkol, kterı pro tebe nachystal Serpentes!
+		AI_Output (self, other, "DIA_Ulthar_SUCCESS_05_04"); //Ale jeÅ¡tÄ› poÅ™Ã¡d pÅ™ed sebou mÃ¡Å¡ nebezpeÄnÃ½ Ãºkol, kterÃ½ pro tebe nachystal Serpentes!
 	};
 	
 	MIS_RUNE = LOG_SUCCESS;
@@ -248,7 +248,7 @@ instance DIA_Ulthar_PermAbKap3		(C_INFO)
 	condition	 = 	DIA_Ulthar_PermAbKap3_Condition;
 	information	 = 	DIA_Ulthar_PermAbKap3_Info;
 	permanent	 = 	TRUE;
-	description  =  "Co je nového?";
+	description  =  "Co je novÃ©ho?";
 };
 func int DIA_Ulthar_PermAbKap3_Condition ()
 {	
@@ -260,15 +260,15 @@ func int DIA_Ulthar_PermAbKap3_Condition ()
 };
 func void DIA_Ulthar_PermAbKap3_Info ()
 {
-	AI_Output (other, self, "DIA_Ulthar_PermAbKap3_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_Ulthar_PermAbKap3_15_00"); //Co je novÃ©ho?
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_01"); //Momentálnì nic. Bì a splò své úkoly. Ještì toho máš dost na práci.
+		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_01"); //MomentÃ¡lnÄ› nic. BÄ›Å¾ a splÅˆ svÃ© Ãºkoly. JeÅ¡tÄ› toho mÃ¡Å¡ dost na prÃ¡ci.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_02"); //Ne. Nic, co bys u sám nevìdìl, bratøe.
+		AI_Output (self, other, "DIA_Ulthar_PermAbKap3_05_02"); //Ne. Nic, co bys uÅ¾ sÃ¡m nevÄ›dÄ›l, bratÅ™e.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -297,43 +297,43 @@ func void DIA_Ulthar_SCHREINEVERGIFTET_Info ()
 {
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_00"); //Ještì jedna vìc. Nepøítel znesvìtil nìkteré ze svatyò podél cest, které byly zasvìceny Innosovi. Pøišly o své magické poehnání.
-			AI_Output			(other, self, "DIA_Ulthar_SCHREINEVERGIFTET_15_01"); //Chápu. A dál?
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_02"); //Je na tobì, abys ty svatynì oèistil, aby se situace ještì nezhoršovala.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_00"); //JeÅ¡tÄ› jedna vÄ›c. NepÅ™Ã­tel znesvÄ›til nÄ›kterÃ© ze svatyÅˆ podÃ©l cest, kterÃ© byly zasvÄ›ceny Innosovi. PÅ™iÅ¡ly o svÃ© magickÃ© poÅ¾ehnÃ¡nÃ­.
+			AI_Output			(other, self, "DIA_Ulthar_SCHREINEVERGIFTET_15_01"); //ChÃ¡pu. A dÃ¡l?
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_02"); //Je na tobÄ›, abys ty svatynÄ› oÄistil, aby se situace jeÅ¡tÄ› nezhorÅ¡ovala.
 			CreateInvItems (self, ItMi_UltharsHolyWater_Mis, 1);									
 			B_GiveInvItems (self, other, ItMi_UltharsHolyWater_Mis, 1);	
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_03"); //Vezmi si tuto svìcenou vodu a pokrop s ní základy svatynì.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_04"); //S pomocí svatıch slov získá svatynì opìt svou starou moc.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_03"); //Vezmi si tuto svÄ›cenou vodu a pokrop s nÃ­ zÃ¡klady svatynÄ›.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_04"); //S pomocÃ­ svatÃ½ch slov zÃ­skÃ¡ svatynÄ› opÄ›t svou starou moc.
 
 			if ((Npc_HasItems (other,ItWr_Map_Shrine_MIS))==FALSE)
 			{
 				if ((Npc_HasItems (Gorax,ItWr_Map_Shrine_MIS)))
 				&& ((Npc_IsDead(Gorax))== FALSE)
 				{
-					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_05"); //Gorax ti prodá mapu, na které jsou vyznaèené naše svatynì.
+					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_05"); //Gorax ti prodÃ¡ mapu, na kterÃ© jsou vyznaÄenÃ© naÅ¡e svatynÄ›.
 				}
 				else
 				{
-					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_06"); //Tady máš mapu. Jsou na ní vyznaèené svatynì.
+					AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_06"); //Tady mÃ¡Å¡ mapu. Jsou na nÃ­ vyznaÄenÃ© svatynÄ›.
 					CreateInvItems (self, ItWr_Map_Shrine_MIS, 1);									
 					B_GiveInvItems (self, other, ItWr_Map_Shrine_MIS, 1);					
 				};
 			};
 
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_07"); //Teï bì a splò svùj úkol.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_07"); //TeÄ bÄ›Å¾ a splÅˆ svÅ¯j Ãºkol.
 			MIS_Ulthar_HeileSchreine_PAL = LOG_RUNNING;	
 			
 			Log_CreateTopic (TOPIC_Ulthar_HeileSchreine_PAL, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_Ulthar_HeileSchreine_PAL, LOG_RUNNING);
-			B_LogEntry (TOPIC_Ulthar_HeileSchreine_PAL,"Ulthar mi nakázal, abych jeho svìcenou vodou oèistil všechny svatynì, které nepøítel poskvrnil."); 
+			B_LogEntry (TOPIC_Ulthar_HeileSchreine_PAL,"Ulthar mi nakÃ¡zal, abych jeho svÄ›cenou vodou oÄistil vÅ¡echny svatynÄ›, kterÃ© nepÅ™Ã­tel poskvrnil."); 
 			
 			AI_StopProcessInfos (self);
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_08"); //Ještì jedna drobnost. Dr se dál od svatyní stojících podél cest. Slyšeli jsme, e nìkteré z nich byly znesvìceny.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_09"); //Nikdo netuší, jakou moc teï mohou mít.
-			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_10"); //Vyøešit tento problém není tvoje starost. Postarají se o to paladinové.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_08"); //JeÅ¡tÄ› jedna drobnost. DrÅ¾ se dÃ¡l od svatynÃ­ stojÃ­cÃ­ch podÃ©l cest. SlyÅ¡eli jsme, Å¾e nÄ›kterÃ© z nich byly znesvÄ›ceny.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_09"); //Nikdo netuÅ¡Ã­, jakou moc teÄ mohou mÃ­t.
+			AI_Output			(self, other, "DIA_Ulthar_SCHREINEVERGIFTET_05_10"); //VyÅ™eÅ¡it tento problÃ©m nenÃ­ tvoje starost. PostarajÃ­ se o to paladinovÃ©.
 			AI_StopProcessInfos (self);
 		};
 };
@@ -348,7 +348,7 @@ instance DIA_Ulthar_SchreineGeheilt		(C_INFO)
 	condition	 = 	DIA_Ulthar_SchreineGeheilt_Condition;
 	information	 = 	DIA_Ulthar_SchreineGeheilt_Info;
 
-	description  = 	"Oèistil jsem všechny svatynì.";
+	description  = 	"OÄistil jsem vÅ¡echny svatynÄ›.";
 };
 
 func int DIA_Ulthar_SchreineGeheilt_Condition ()
@@ -361,9 +361,9 @@ func int DIA_Ulthar_SchreineGeheilt_Condition ()
 
 func void DIA_Ulthar_SchreineGeheilt_Info ()
 {
-	AI_Output			(other, self, "DIA_Ulthar_SchreineGeheilt_15_00"); //Oèistil jsem všechny svatynì.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_01"); //Vıbornì, mùj synu. Jsem na tebe hrdı. Nech tì Innos stále doprovází.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_02"); //Vezmi si tento Amulet síly, mohl by se ti v bitvách proti nepøíteli hodit.
+	AI_Output			(other, self, "DIA_Ulthar_SchreineGeheilt_15_00"); //OÄistil jsem vÅ¡echny svatynÄ›.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_01"); //VÃ½bornÄ›, mÅ¯j synu. Jsem na tebe hrdÃ½. NechÅ¥ tÄ› Innos stÃ¡le doprovÃ¡zÃ­.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheilt_05_02"); //Vezmi si tento Amulet sÃ­ly, mohl by se ti v bitvÃ¡ch proti nepÅ™Ã­teli hodit.
 	CreateInvItems (self, ItAm_Dex_Strg_01, 1);									
 	B_GiveInvItems (self, other, ItAm_Dex_Strg_01, 1);
 	B_GivePlayerXP (XP_Ulthar_SchreineGereinigt);
@@ -430,8 +430,8 @@ func int DIA_Ulthar_SchreineGeheiltNoPAL_Condition ()
 
 func void DIA_Ulthar_SchreineGeheiltNoPAL_Info ()
 {
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_00"); //Dobré zprávy. Svatynì podél cest byly oèištìny. Innosova síla pomohla paladinùm smést tenhle problém ze zemského povrchu.
-	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_01"); //Opìt mùeš Innosovi obìtovat bez obav a bez vıhrad.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_00"); //DobrÃ© zprÃ¡vy. SvatynÄ› podÃ©l cest byly oÄiÅ¡tÄ›ny. Innosova sÃ­la pomohla paladinÅ¯m smÃ©st tenhle problÃ©m ze zemskÃ©ho povrchu.
+	AI_Output			(self, other, "DIA_Ulthar_SchreineGeheiltNoPAL_05_01"); //OpÄ›t mÅ¯Å¾eÅ¡ Innosovi obÄ›tovat bez obav a bez vÃ½hrad.
 	AI_StopProcessInfos (self);
 };
 

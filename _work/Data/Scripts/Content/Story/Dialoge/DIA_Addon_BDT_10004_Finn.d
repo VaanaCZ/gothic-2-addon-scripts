@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Finn_Hacker   (C_INFO)
 	condition   = DIA_Addon_Finn_Hacker_Condition;
 	information = DIA_Addon_Finn_Hacker_Info;
 	permanent   = TRUE;
-	description = "Tak u zase makáš?"; 
+	description = "Tak uÅ¾ zase makÃ¡Å¡?"; 
 };
 FUNC INT DIA_Addon_Finn_Hacker_Condition()
 {	
@@ -76,8 +76,8 @@ FUNC INT DIA_Addon_Finn_Hacker_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Hacker_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hacker_15_00"); //U zase makáš?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Jo, teï se snaím z tohohle dolu vykutat zlato do poslední mrtì.
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hacker_15_00"); //UÅ¾ zase makÃ¡Å¡?
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Jo, teÄ se snaÅ¾Ã­m z tohohle dolu vykutat zlato do poslednÃ­ mrtÄ›.
 };
 //----------------------------------------------------------------------
 //	Info Hacke
@@ -100,8 +100,8 @@ FUNC INT DIA_Addon_Finn_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hi_15_00"); //Zdravím!
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hi_07_01"); //(nabruèenì) Co chceš?
+	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hi_15_00"); //ZdravÃ­m!
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hi_07_01"); //(nabruÄenÄ›) Co chceÅ¡?
 };
 
 //----------------------------------------------------------------------
@@ -114,7 +114,7 @@ INSTANCE DIA_Addon_Finn_Hacke   (C_INFO)
 	condition   = DIA_Addon_Finn_Hacke_Condition;
 	information = DIA_Addon_Finn_Hacke_Info;
 	permanent   = FALSE;
-	description = "Kde bych sehnal krumpáè?";
+	description = "Kde bych sehnal krumpÃ¡Ä?";
 };
 FUNC INT DIA_Addon_Finn_Hacke_Condition()
 {	
@@ -122,10 +122,10 @@ FUNC INT DIA_Addon_Finn_Hacke_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Hacke_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Hacke_15_00"); //Kde bych sehnal krumpáè?
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //Bì za kováøem Hunem. Ale i kdy budeš mít krumpáè, neznamená to, e se dostaneš do dolu.
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_02"); //Jestli tam opravdu chceš, musíš si promluvit s Estebanem.
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Za Thorusem ani nemusíš chodit - ten tì pustí dovnitø, jedinì kdy budeš mít èervenı kámen.
+	AI_Output (other, self, "DIA_Addon_Finn_Hacke_15_00"); //Kde bych sehnal krumpÃ¡Ä?
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //BÄ›Å¾ za kovÃ¡Å™em Hunem. Ale i kdyÅ¾ budeÅ¡ mÃ­t krumpÃ¡Ä, neznamenÃ¡ to, Å¾e se dostaneÅ¡ do dolu.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_02"); //Jestli tam opravdu chceÅ¡, musÃ­Å¡ si promluvit s Estebanem.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Za Thorusem ani nemusÃ­Å¡ chodit - ten tÄ› pustÃ­ dovnitÅ™, jedinÄ› kdyÅ¾ budeÅ¡ mÃ­t ÄervenÃ½ kÃ¡men.
 };
 
 //----------------------------------------------------------------------
@@ -138,7 +138,7 @@ INSTANCE DIA_Addon_Finn_Esteban   (C_INFO)
 	condition   = DIA_Addon_Finn_Esteban_Condition;
 	information = DIA_Addon_Finn_Esteban_Info;
 	permanent   = FALSE;
-	description = "Poslyš, co si myslíš o Estebanovi?";
+	description = "PoslyÅ¡, co si myslÃ­Å¡ o Estebanovi?";
 };
 FUNC INT DIA_Addon_Finn_Esteban_Condition()
 {	
@@ -149,9 +149,9 @@ FUNC INT DIA_Addon_Finn_Esteban_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Esteban_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //Poslyš, co si myslíš o Estebanovi?
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(opatrnì) Je zdejší šéf a je... no, myslím e je dobrej.
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(váhavì) Vdycky do dolu posílá jenom dobrı chlapy. Myslím ty, kteøí se vyznají v dolování.
+	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //PoslyÅ¡, co si myslÃ­Å¡ o Estebanovi?
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(opatrnÄ›) Je zdejÅ¡Ã­ Å¡Ã©f a je... no, myslÃ­m Å¾e je dobrej.
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(vÃ¡havÄ›) VÅ¾dycky do dolu posÃ­lÃ¡ jenom dobrÃ½ chlapy. MyslÃ­m ty, kteÅ™Ã­ se vyznajÃ­ v dolovÃ¡nÃ­.
 };
 
 //----------------------------------------------------------------------
@@ -164,7 +164,7 @@ INSTANCE DIA_Addon_Finn_Profi (C_INFO)
 	condition   = DIA_Addon_Finn_Profi_Condition;
 	information = DIA_Addon_Finn_Profi_Info;
 	permanent   = FALSE;
-	description = "A víš nìco o dolování?";
+	description = "A vÃ­Å¡ nÄ›co o dolovÃ¡nÃ­?";
 };
 FUNC INT DIA_Addon_Finn_Profi_Condition()
 {	
@@ -175,8 +175,8 @@ FUNC INT DIA_Addon_Finn_Profi_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Profi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_Profi_15_00"); //A ty se v dolování vyznáš?
-	AI_Output (self, other, "DIA_Addon_Finn_Profi_07_01"); //Jsem nejlepší!
+	AI_Output (other, self, "DIA_Addon_Finn_Profi_15_00"); //A ty se v dolovÃ¡nÃ­ vyznÃ¡Å¡?
+	AI_Output (self, other, "DIA_Addon_Finn_Profi_07_01"); //Jsem nejlepÅ¡Ã­!
 };
 
 //----------------------------------------------------------------------
@@ -204,12 +204,12 @@ FUNC VOID DIA_Addon_Finn_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_00"); //No jasnì, šéfe. Chceš vidìt nejlepšího z dolu? Právì se na nìj koukáš.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_00"); //No jasnÄ›, Å¡Ã©fe. ChceÅ¡ vidÄ›t nejlepÅ¡Ã­ho z dolu? PrÃ¡vÄ› se na nÄ›j koukÃ¡Å¡.
 	
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Ne, nìco jinıho. Zasvìtím tì do tajemství kopáèù.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//Obèas se hodí do toho poøádnì majznout.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//Kdy nìkolikrát udeøíš a nic nevykopeš, pøejeï špièkou krumpáèe po bocích kamene.
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//S trochou štìstí tak najdeš i více valounù najednou.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Ne, nÄ›co jinÃ½ho. ZasvÄ›tÃ­m tÄ› do tajemstvÃ­ kopÃ¡ÄÅ¯.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//ObÄas se hodÃ­ do toho poÅ™Ã¡dnÄ› majznout.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//KdyÅ¾ nÄ›kolikrÃ¡t udeÅ™Ã­Å¡ a nic nevykopeÅ¡, pÅ™ejeÄ Å¡piÄkou krumpÃ¡Äe po bocÃ­ch kamene.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//S trochou Å¡tÄ›stÃ­ tak najdeÅ¡ i vÃ­ce valounÅ¯ najednou.
 	
 	B_Upgrade_hero_HackChance(10);
 	Knows_Truemmerschlag = TRUE;
@@ -242,15 +242,15 @@ FUNC INT DIA_Addon_Finn_Gold_Condition()
 FUNC VOID DIA_Addon_Finn_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//No, nìco bys mìl vìdìt. Zlato není ruda. Je v tom jeden zatracenej rozdíl.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//Tím myslím, e ádná enská by si nejspíš na krk nepovìsila náhrdelník z rudy.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_02");//Pøi kopání postupuj odshora dolù. Tak nejlíp uvolníš nuggety.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//Nìkteøí kopáèi to dìlaj jinak, ale to je mnohem sloitìjší.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//No, nÄ›co bys mÄ›l vÄ›dÄ›t. Zlato nenÃ­ ruda. Je v tom jeden zatracenej rozdÃ­l.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//TÃ­m myslÃ­m, Å¾e Å¾Ã¡dnÃ¡ Å¾enskÃ¡ by si nejspÃ­Å¡ na krk nepovÄ›sila nÃ¡hrdelnÃ­k z rudy.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_02");//PÅ™i kopÃ¡nÃ­ postupuj odshora dolÅ¯. Tak nejlÃ­p uvolnÃ­Å¡ nuggety.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//NÄ›kteÅ™Ã­ kopÃ¡Äi to dÄ›laj jinak, ale to je mnohem sloÅ¾itÄ›jÅ¡Ã­.
 
 	B_Upgrade_hero_HackChance(10);
 };
 //---------------------------------------------------------------------
-//	Info einschätzen
+//	Info einschÃ¤tzen
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 {
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 	condition   = DIA_Addon_Finn_ein_Condition;
 	information = DIA_Addon_Finn_ein_Info;
 	permanent   = TRUE;
-	description = "Mohl bys posoudit mé zlatokopecké schopnosti?";
+	description = "Mohl bys posoudit mÃ© zlatokopeckÃ© schopnosti?";
 };
 FUNC INT DIA_Addon_Finn_ein_Condition()
 {	
@@ -272,46 +272,46 @@ var int Finn_einmal;
 var int Finn_Gratulation;
 FUNC VOID DIA_Addon_Finn_ein_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//Mùeš posoudit mé zlatokopecké schopnosti?
+	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//MÅ¯Å¾eÅ¡ posoudit mÃ© zlatokopeckÃ© schopnosti?
 	
 	if (Finn_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//No jasnì, u v tom dìlám víc jak pìtatøicet let. Mùu posoudit úplnì všecko.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//No jasnÄ›, uÅ¾ v tom dÄ›lÃ¡m vÃ­c jak pÄ›tatÅ™icet let. MÅ¯Å¾u posoudit ÃºplnÄ› vÅ¡ecko.
 		Finn_einmal = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Co se tebe tıèe, tak bych øekl, e jsi
+	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Co se tebe tÃ½Äe, tak bych Å™ekl, Å¾e jsi
 
 	if (Hero_HackChance < 20)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_03"); //absolutní zaèáteèník.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_03"); //absolutnÃ­ zaÄÃ¡teÄnÃ­k.
 	}
 	else if (Hero_HackChance < 40)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_04"); //celkem ucházející kopáè.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_04"); //celkem uchÃ¡zejÃ­cÃ­ kopÃ¡Ä.
 	}
 	else if (Hero_HackChance < 55)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_05"); //zkušenej zlatokop.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_05"); //zkuÅ¡enej zlatokop.
 	}
 	else if (Hero_HackChance < 75)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_06"); //nefalšovanej kopáè.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_06"); //nefalÅ¡ovanej kopÃ¡Ä.
 	}
 	else if (Hero_HackChance < 90)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_07"); //zatracenì dobrej kopáè.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_07"); //zatracenÄ› dobrej kopÃ¡Ä.
 	}
 	else if (Hero_HackChance < 98)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_08"); //kopáèskej mistr.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_08"); //kopÃ¡Äskej mistr.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_09"); //guru mezi kopáèi.
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_09"); //guru mezi kopÃ¡Äi.
 		
 		if (Finn_Gratulation == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//Tak teï seš stejnì dobrej jak já. Gratuluju, kámo.
+			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//Tak teÄ seÅ¡ stejnÄ› dobrej jak jÃ¡. Gratuluju, kÃ¡mo.
 			B_GivePlayerXP (XP_Ambient*2);
 			Snd_Play ("LevelUP");
 			Finn_Gratulation = TRUE;
@@ -321,7 +321,7 @@ FUNC VOID DIA_Addon_Finn_ein_Info()
 	
 	var string ConcatText;
 	
-	ConcatText = ConcatStrings ("Natìené zlato: ", IntToString (Hero_HackChance));
+	ConcatText = ConcatStrings ("NatÄ›Å¾enÃ© zlato: ", IntToString (Hero_HackChance));
 	ConcatText = ConcatStrings (ConcatText, " procent");
 	PrintScreen (concatText, -1, -1, FONT_ScreenSmall,2);
 };
@@ -336,7 +336,7 @@ INSTANCE DIA_Addon_Finn_Attentat   (C_INFO)
 	condition   = DIA_Addon_Finn_Attentat_Condition;
 	information = DIA_Addon_Finn_Attentat_Info;
 	permanent   = FALSE;
-	description	= "K tomu pokusu o Estabanovu vradu...";
+	description	= "K tomu pokusu o Estabanovu vraÅ¾du...";
 };
 FUNC INT DIA_Addon_Finn_Attentat_Condition()
 {	
@@ -348,31 +348,31 @@ FUNC INT DIA_Addon_Finn_Attentat_Condition()
 FUNC VOID DIA_Addon_Finn_Attentat_Info()
 {
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentats auf Esteban
-	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_00"); //(opatrnì) Ano?
-	AI_Output (other, self, "DIA_Addon_Finn_Attentat_15_01"); //Máš ponìtí, kdo za tím stojí?
-	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_02"); //Proè to chceš vìdìt?
+	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_00"); //(opatrnÄ›) Ano?
+	AI_Output (other, self, "DIA_Addon_Finn_Attentat_15_01"); //MÃ¡Å¡ ponÄ›tÃ­, kdo za tÃ­m stojÃ­?
+	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_02"); //ProÄ to chceÅ¡ vÄ›dÄ›t?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Chci si s tím chlápkem promluvit.",DIA_Addon_Finn_Attentat_WannaTalk);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Esteban ho chce zabít!",DIA_Addon_Finn_Attentat_ForTheBoss);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Chci si s tÃ­m chlÃ¡pkem promluvit.",DIA_Addon_Finn_Attentat_WannaTalk);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Esteban ho chce zabÃ­t!",DIA_Addon_Finn_Attentat_ForTheBoss);
 };
 	
 func void B_Addon_Finn_TellAll()
 {
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(vypráví) Pøi tom útoku jsem si zrovna šel ke kováøi Hunovi pro novej krumpáè.
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(vyprÃ¡vÃ­) PÅ™i tom Ãºtoku jsem si zrovna Å¡el ke kovÃ¡Å™i Hunovi pro novej krumpÃ¡Ä.
 	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_01"); //Ale on tam nebyl.
-	AI_Output (other, self, "DIA_Addon_Finn_TellAll_15_02"); //A co dál?
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Obvykle tam VDYCKY bıvá, take je to FAKT podezøelı, to ti povím.
+	AI_Output (other, self, "DIA_Addon_Finn_TellAll_15_02"); //A co dÃ¡l?
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Obvykle tam VÅ½DYCKY bÃ½vÃ¡, takÅ¾e je to FAKT podezÅ™elÃ½, to ti povÃ­m.
 	
 	Finn_TellAll = TRUE;
-	B_LogEntry (Topic_Addon_Esteban, "Finn tvrdí, e Huno se od útoku u neobjevil.");
+	B_LogEntry (Topic_Addon_Esteban, "Finn tvrdÃ­, Å¾e Huno se od Ãºtoku uÅ¾ neobjevil.");
 };
 	
 func void DIA_Addon_Finn_Attentat_ForTheBoss()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_ForTheBoss_15_00"); //Esteban ho chce nechat zabít!
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //No teda! Ty dìláš pro šéfa?
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Pak ti povím, co vím.
+	AI_Output (other, self, "DIA_Addon_Finn_ForTheBoss_15_00"); //Esteban ho chce nechat zabÃ­t!
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //No teda! Ty dÄ›lÃ¡Å¡ pro Å¡Ã©fa?
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Pak ti povÃ­m, co vÃ­m.
 	
 	B_Addon_Finn_TellAll();
 	
@@ -381,19 +381,19 @@ func void DIA_Addon_Finn_Attentat_ForTheBoss()
 	
 func void DIA_Addon_Finn_Attentat_WannaTalk()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_WannaTalk_15_00"); //Chci si s tím chlápkem promluvit.
-	AI_Output (self, other, "DIA_Addon_Finn_WannaTalk_07_01"); //(obezøetnì) A co po nìm chceš?
+	AI_Output (other, self, "DIA_Addon_Finn_WannaTalk_15_00"); //Chci si s tÃ­m chlÃ¡pkem promluvit.
+	AI_Output (self, other, "DIA_Addon_Finn_WannaTalk_07_01"); //(obezÅ™etnÄ›) A co po nÄ›m chceÅ¡?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Do toho ti nic není!",DIA_Addon_Finn_Attentat_ForgetIt);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Mám pro nìj jistou zajímavou informaci.",DIA_Addon_Finn_Attentat_HaveInfos);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Chci odkrouhnout Estebana a hledám nìkoho, kdo mi s tím pomùe!",DIA_Addon_Finn_Attentat_KillEsteban);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Do toho ti nic nenÃ­!",DIA_Addon_Finn_Attentat_ForgetIt);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"MÃ¡m pro nÄ›j jistou zajÃ­mavou informaci.",DIA_Addon_Finn_Attentat_HaveInfos);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Chci odkrouhnout Estebana a hledÃ¡m nÄ›koho, kdo mi s tÃ­m pomÅ¯Å¾e!",DIA_Addon_Finn_Attentat_KillEsteban);
 };	
 		
 func void DIA_Addon_Finn_Attentat_KillEsteban()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_KillEsteban_15_00"); //Chci oddìlat Estebana a hledám nìkoho, kdo mi v tom pomùe!
-	AI_Output (self, other, "DIA_Addon_Finn_KillEsteban_07_01"); //S tím nechci nic mít!
+	AI_Output (other, self, "DIA_Addon_Finn_KillEsteban_15_00"); //Chci oddÄ›lat Estebana a hledÃ¡m nÄ›koho, kdo mi v tom pomÅ¯Å¾e!
+	AI_Output (self, other, "DIA_Addon_Finn_KillEsteban_07_01"); //S tÃ­m nechci nic mÃ­t!
 	
 	Finn_Petzt = TRUE;
 	
@@ -403,19 +403,19 @@ func void DIA_Addon_Finn_Attentat_KillEsteban()
 
 func void DIA_Addon_Finn_Attentat_HaveInfos()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_HaveInfos_15_00"); //Mám pro nìj zajímavou informaci.
-	AI_Output (self, other, "DIA_Addon_Finn_HaveInfos_07_01"); //Ty ses spolèil s tím chlapem, co to rozkázal, e jo.
+	AI_Output (other, self, "DIA_Addon_Finn_HaveInfos_15_00"); //MÃ¡m pro nÄ›j zajÃ­mavou informaci.
+	AI_Output (self, other, "DIA_Addon_Finn_HaveInfos_07_01"); //Ty ses spolÄil s tÃ­m chlapem, co to rozkÃ¡zal, Å¾e jo.
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Chci odkrouhnout Estebana a hledám nìkoho, kdo mi s tím pomùe!",DIA_Addon_Finn_Attentat_KillEsteban);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Po tom ti nic není!",DIA_Addon_Finn_Attentat_ForgetIt);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"To rozhodnì ne!",DIA_Addon_Finn_Attentat_NoNo);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Chci odkrouhnout Estebana a hledÃ¡m nÄ›koho, kdo mi s tÃ­m pomÅ¯Å¾e!",DIA_Addon_Finn_Attentat_KillEsteban);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Po tom ti nic nenÃ­!",DIA_Addon_Finn_Attentat_ForgetIt);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"To rozhodnÄ› ne!",DIA_Addon_Finn_Attentat_NoNo);
 };
 
 	func void DIA_Addon_Finn_Attentat_NoNo()
 	{
 		AI_Output (other, self, "DIA_Addon_Finn_NoNo_15_00"); //To teda ne!
-		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(odhadnì) No dobøe. Povím ti, co vím.
+		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(odhadnÄ›) No dobÅ™e. PovÃ­m ti, co vÃ­m.
 		
 		B_Addon_Finn_TellAll();
 		Info_ClearChoices (DIA_Addon_Finn_Attentat);
@@ -423,8 +423,8 @@ func void DIA_Addon_Finn_Attentat_HaveInfos()
 
 func void DIA_Addon_Finn_Attentat_ForgetIt()
 {	
-	AI_Output (other, self, "DIA_Addon_Finn_ForgetIt_15_00"); //Po tom ti nic není.
-	AI_Output (self, other, "DIA_Addon_Finn_ForgetIt_07_01"); //Take? Já o tı vìci stejnì nic nevím.
+	AI_Output (other, self, "DIA_Addon_Finn_ForgetIt_15_00"); //Po tom ti nic nenÃ­.
+	AI_Output (self, other, "DIA_Addon_Finn_ForgetIt_07_01"); //TakÅ¾e? JÃ¡ o tÃ½ vÄ›ci stejnÄ› nic nevÃ­m.
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
 };
@@ -439,7 +439,7 @@ INSTANCE DIA_Addon_Finn_Again  (C_INFO)
 	condition   = DIA_Addon_Finn_Again_Condition;
 	information = DIA_Addon_Finn_Again_Info;
 	permanent   = TRUE;
-	description	= "Ještì k tomu útoku...";
+	description	= "JeÅ¡tÄ› k tomu Ãºtoku...";
 };
 FUNC INT DIA_Addon_Finn_Again_Condition()
 {	
@@ -451,31 +451,31 @@ FUNC INT DIA_Addon_Finn_Again_Condition()
 };
 FUNC VOID DIA_Addon_Finn_Again_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_15_00"); //Ještì k tomu útoku.
+	AI_Output (other, self, "DIA_Addon_Finn_Again_15_00"); //JeÅ¡tÄ› k tomu Ãºtoku.
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //U jsem ti øekl všechno, co vím.
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //UÅ¾ jsem ti Å™ekl vÅ¡echno, co vÃ­m.
 		
 		Info_ClearChoices (DIA_Addon_Finn_Again);
-		Info_AddChoice (DIA_Addon_Finn_Again, "OK... (zpìt)", DIA_Addon_Finn_Again_Exit);
-		Info_AddChoice (DIA_Addon_Finn_Again, "Tak mi to øekni znova!", DIA_Addon_Finn_Again_Nochmal);		
+		Info_AddChoice (DIA_Addon_Finn_Again, "OK... (zpÄ›t)", DIA_Addon_Finn_Again_Exit);
+		Info_AddChoice (DIA_Addon_Finn_Again, "Tak mi to Å™ekni znova!", DIA_Addon_Finn_Again_Nochmal);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Tak mì s tím u neotravuj.
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Tak mÄ› s tÃ­m uÅ¾ neotravuj.
 		AI_StopProcessInfos(self);
 	};
 };
 
 func void DIA_Addon_Finn_Again_Exit()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_Exit_15_00"); //(odhadnì) Dobøe.
+	AI_Output (other, self, "DIA_Addon_Finn_Again_Exit_15_00"); //(odhadnÄ›) DobÅ™e.
 	Info_ClearChoices (DIA_Addon_Finn_Again);
 };
 
 func void DIA_Addon_Finn_Again_Nochmal()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_Again_Nochmal_15_00"); //Tak mi to øekni znovu!
+	AI_Output (other, self, "DIA_Addon_Finn_Again_Nochmal_15_00"); //Tak mi to Å™ekni znovu!
 	
 	B_Addon_Finn_TellAll();
 	

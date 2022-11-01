@@ -42,12 +42,12 @@ func int DIA_PAL_269_HERO_Condition ()
 var int DIA_Ritter_HERO_NoPerm;
 func void DIA_PAL_269_HERO_Info ()
 {
-	AI_Output			(self, other, "DIA_Ritter_HERO_04_00"); //Tvùj pøíchod je znamením pro nás všechny. Dodává nám to odvahu.
+	AI_Output			(self, other, "DIA_Ritter_HERO_04_00"); //TvÅ¯j pÅ™Ã­chod je znamenÃ­m pro nÃ¡s vÅ¡echny. DodÃ¡vÃ¡ nÃ¡m to odvahu.
 
 	if (DIA_Ritter_HERO_NoPerm == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Ritter_HERO_04_01"); //Víme, e na nás naši spolubojovníci z mìsta nezapomnìli. Innosovo oko na nás dohlíí.
-			AI_Output			(self, other, "DIA_Ritter_HERO_04_02"); //A jestli skøeti a draci vtrhnou na naše brány, postavíme se jim hrdì, a u nám bude souzeno pøeít nebo zemøít.
+			AI_Output			(self, other, "DIA_Ritter_HERO_04_01"); //VÃ­me, Å¾e na nÃ¡s naÅ¡i spolubojovnÃ­ci z mÄ›sta nezapomnÄ›li. Innosovo oko na nÃ¡s dohlÃ­Å¾Ã­.
+			AI_Output			(self, other, "DIA_Ritter_HERO_04_02"); //A jestli skÅ™eti a draci vtrhnou na naÅ¡e brÃ¡ny, postavÃ­me se jim hrdÄ›, aÅ¥ uÅ¾ nÃ¡m bude souzeno pÅ™eÅ¾Ã­t nebo zemÅ™Ã­t.
 			DIA_Ritter_HERO_NoPerm = TRUE;
 		};
 };

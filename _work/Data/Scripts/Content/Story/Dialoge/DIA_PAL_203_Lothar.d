@@ -38,7 +38,7 @@ INSTANCE DIA_Lothar_FirstEXIT   (C_INFO)
 	condition   = DIA_Lothar_FirstEXIT_Condition;
 	information = DIA_Lothar_FirstEXIT_Info;
 	permanent   = TRUE;
-	description = "Musím jít! (KONEC)";
+	description = "MusÃ­m jÃ­t! (KONEC)";
 };
 FUNC INT DIA_Lothar_FirstEXIT_Condition()
 {	
@@ -49,26 +49,26 @@ FUNC INT DIA_Lothar_FirstEXIT_Condition()
 };
 FUNC VOID DIA_Lothar_FirstEXIT_Info() 
 {
-	AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_00"); //Musím jít!
+	AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_00"); //MusÃ­m jÃ­t!
 	if (Lothar_Regeln == FALSE)
 	{
-		AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_01"); //Poèkej! Ještì neznáš mìstské zákony!
-		AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_02"); //Pozdìji.
+		AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_01"); //PoÄkej! JeÅ¡tÄ› neznÃ¡Å¡ mÄ›stskÃ© zÃ¡kony!
+		AI_Output (other, self, "DIA_Lothar_FirstEXIT_15_02"); //PozdÄ›ji.
 	}
 	else
 	{
 		if (Player_TalkedAboutDragons == TRUE)
 		&& ((hero.guild != GIL_PAL)	&&	(hero.guild != GIL_KDF))
 		{
-			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_03"); //Ještì JEDNOU uslyším, e lidem vyprávíš o dracích, a budeš mít velké problémy. Vyjádøil jsem se jasnì?
+			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_03"); //JeÅ¡tÄ› JEDNOU uslyÅ¡Ã­m, Å¾e lidem vyprÃ¡vÃ­Å¡ o dracÃ­ch, a budeÅ¡ mÃ­t velkÃ© problÃ©my. VyjÃ¡dÅ™il jsem se jasnÄ›?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_04"); //Dokud jsi v Khorinidu, jsi v bezpeèí.
+			AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_04"); //Dokud jsi v Khorinidu, jsi v bezpeÄÃ­.
 
 			if (hero.guild != GIL_PAL)
 			{
-				AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_05"); //Na mìsto teï dohlíejí královští paladini!
+				AI_Output (self, other, "DIA_Lothar_FirstEXIT_01_05"); //Na mÄ›sto teÄ dohlÃ­Å¾ejÃ­ krÃ¡lovÅ¡tÃ­ paladini!
 			};
 		};
 
@@ -110,25 +110,25 @@ func int DIA_Lothar_Hallo_Condition ()
 
 func void DIA_Lothar_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Lothar_Hallo_01_00"); //Stùj, cizinèe!
+	AI_Output (self, other, "DIA_Lothar_Hallo_01_00"); //StÅ¯j, cizinÄe!
 
 	if (Mil_310_schonmalreingelassen == FALSE)
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	&& ((hero.guild != GIL_PAL)	&&	(hero.guild != GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_01"); //Nevidìl jsem tì procházet branou.
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_01"); //NevidÄ›l jsem tÄ› prochÃ¡zet branou.
 		AI_Output (other, self, "DIA_Lothar_Hallo_15_02"); //A?
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_03"); //A stráe u druhé brány mají zákaz vpouštìt do mìsta neznámé osoby.
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_03"); //A strÃ¡Å¾e u druhÃ© brÃ¡ny majÃ­ zÃ¡kaz vpouÅ¡tÄ›t do mÄ›sta neznÃ¡mÃ© osoby.
 		AI_Output (other, self, "DIA_Lothar_Hallo_15_04"); //Noooo...
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_05"); //Budu si s tìma dvìma muset promluvit!
-		AI_Output (self, other, "DIA_Lothar_Hallo_01_06"); //Ale mezi námi:
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_05"); //Budu si s tÄ›ma dvÄ›ma muset promluvit!
+		AI_Output (self, other, "DIA_Lothar_Hallo_01_06"); //Ale mezi nÃ¡mi:
 	};
 
-	AI_Output (self, other, "DIA_Lothar_Hallo_01_07"); //Jsem Lothar. Královskı paladin a skromnı sluebník Innose, tvého Pána.
-	AI_Output (self, other, "DIA_Lothar_Hallo_01_08"); //Náš velitel, lord Hagen, mì povìøil úkolem vysvìtlit všem pøíchozím nové zákony mìsta, které se vztahují na všechny zdejší obyvatele.
+	AI_Output (self, other, "DIA_Lothar_Hallo_01_07"); //Jsem Lothar. KrÃ¡lovskÃ½ paladin a skromnÃ½ sluÅ¾ebnÃ­k Innose, tvÃ©ho PÃ¡na.
+	AI_Output (self, other, "DIA_Lothar_Hallo_01_08"); //NÃ¡Å¡ velitel, lord Hagen, mÄ› povÄ›Å™il Ãºkolem vysvÄ›tlit vÅ¡em pÅ™Ã­chozÃ­m novÃ© zÃ¡kony mÄ›sta, kterÃ© se vztahujÃ­ na vÅ¡echny zdejÅ¡Ã­ obyvatele.
 
 	//ADDON>
-	AI_Output (self, other, "DIA_Addon_Lothar_Hallo_01_00"); //Od té doby, co lidé z mìsta zaèali bezdùvodnì mizet, si kadı musí dávat pozor, aby ho nepotkal stejnı osud.
+	AI_Output (self, other, "DIA_Addon_Lothar_Hallo_01_00"); //Od tÃ© doby, co lidÃ© z mÄ›sta zaÄali bezdÅ¯vodnÄ› mizet, si kaÅ¾dÃ½ musÃ­ dÃ¡vat pozor, aby ho nepotkal stejnÃ½ osud.
 	//ADDON<
 
 	if Npc_KnowsInfo (other, DIA_Lester_SEND_XARDAS)
@@ -147,7 +147,7 @@ instance DIA_Lothar_MESSAGE		(C_INFO)
 	condition	 = 	DIA_Lothar_MESSAGE_Condition;
 	information	 = 	DIA_Lothar_MESSAGE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Mám dùleitı vzkaz pro velitele paladinù!";
+	description	 = 	"MÃ¡m dÅ¯leÅ¾itÃ½ vzkaz pro velitele paladinÅ¯!";
 };
 func int DIA_Lothar_MESSAGE_Condition ()
 {	
@@ -159,9 +159,9 @@ func int DIA_Lothar_MESSAGE_Condition ()
 };
 func void DIA_Lothar_MESSAGE_Info ()
 {
- 	AI_Output (other, self, "DIA_Lothar_MESSAGE_15_00"); //Mám dùleitı vzkaz pro velitele paladinù!
-	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_01"); //Ctihodnı lord Hagen nikoho nepøijímá.
-	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_02"); //Za všechny vìci tıkající se prostıch obèanù je zodpovìdnı lord Andre, velitel mìstské stráe.
+ 	AI_Output (other, self, "DIA_Lothar_MESSAGE_15_00"); //MÃ¡m dÅ¯leÅ¾itÃ½ vzkaz pro velitele paladinÅ¯!
+	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_01"); //CtihodnÃ½ lord Hagen nikoho nepÅ™ijÃ­mÃ¡.
+	AI_Output (self, other, "DIA_Lothar_MESSAGE_01_02"); //Za vÅ¡echny vÄ›ci tÃ½kajÃ­cÃ­ se prostÃ½ch obÄanÅ¯ je zodpovÄ›dnÃ½ lord Andre, velitel mÄ›stskÃ© strÃ¡Å¾e.
 };	
 
 // ***************************************************************
@@ -174,7 +174,7 @@ instance DIA_Lothar_EyeInnos (C_INFO)
 	condition	 = 	DIA_Lothar_EyeInnos_Condition;
 	information	 = 	DIA_Lothar_EyeInnos_Info;
 	permanent    =  FALSE;
-	description	 = 	"Pøišel jsem si pro Innosovo oko!";
+	description	 = 	"PÅ™iÅ¡el jsem si pro Innosovo oko!";
 };
 func int DIA_Lothar_EyeInnos_Condition ()
 {	
@@ -186,23 +186,23 @@ func int DIA_Lothar_EyeInnos_Condition ()
 };
 func void DIA_Lothar_EyeInnos_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_EyeInnos_15_00"); //Pøišel jsem si pro Innosovo oko!
+	AI_Output (other, self, "DIA_Lothar_EyeInnos_15_00"); //PÅ™iÅ¡el jsem si pro Innosovo oko!
 
 	if ((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_01"); //Oko spadá pod rozhodnutí lorda Hagena. Promluv si s ním.
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_01"); //Oko spadÃ¡ pod rozhodnutÃ­ lorda Hagena. Promluv si s nÃ­m.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_02"); //Posvátné Innosovo oko! Jak to, e o nìm víš?! Nejsi èlenem našeho øádu!
-		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_03"); //Øekl mi o nìm jeden mág.
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_04"); //Netuším, co tím zamıšlel, kdy ti svìøil jedno z tajemstvích našeho øádu.
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_05"); //Ale urèitì nechtìl, abys na nìj právì TY vztáhl ruku.
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_02"); //PosvÃ¡tnÃ© Innosovo oko! Jak to, Å¾e o nÄ›m vÃ­Å¡?! Nejsi Älenem naÅ¡eho Å™Ã¡du!
+		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_03"); //Å˜ekl mi o nÄ›m jeden mÃ¡g.
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_04"); //NetuÅ¡Ã­m, co tÃ­m zamÃ½Å¡lel, kdyÅ¾ ti svÄ›Å™il jedno z tajemstvÃ­ch naÅ¡eho Å™Ã¡du.
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_05"); //Ale urÄitÄ› nechtÄ›l, abys na nÄ›j prÃ¡vÄ› TY vztÃ¡hl ruku.
 		AI_Output (other, self, "DIA_Lothar_EyeInnos_15_06"); //Ale...
-		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_07"); //U o tom nechci slyšet!
+		AI_Output (self, other, "DIA_Lothar_EyeInnos_01_07"); //UÅ¾ o tom nechci slyÅ¡et!
 		if (Player_TalkedAboutDragons == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lothar_EyeInnos_01_08"); //Nejdøív zaèneš s báchorkami o dracích, a teï tohle - neuvìøitelné!
+			AI_Output (self, other, "DIA_Lothar_EyeInnos_01_08"); //NejdÅ™Ã­v zaÄneÅ¡ s bÃ¡chorkami o dracÃ­ch, a teÄ tohle - neuvÄ›Å™itelnÃ©!
 		};
 	};
 };	
@@ -217,7 +217,7 @@ instance DIA_Lothar_Dragons (C_INFO)
 	condition	 = 	DIA_Lothar_Dragons_Condition;
 	information	 = 	DIA_Lothar_Dragons_Info;
 	permanent    =  FALSE;
-	description	 = 	"Poslouchej - mìsto ohroují draci!";
+	description	 = 	"Poslouchej - mÄ›sto ohroÅ¾ujÃ­ draci!";
 };
 func int DIA_Lothar_Dragons_Condition ()
 {	
@@ -229,19 +229,19 @@ func int DIA_Lothar_Dragons_Condition ()
 };
 func void DIA_Lothar_Dragons_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Dragons_15_00"); //Poslouchej - mìsto ohroují draci!
+	AI_Output (other, self, "DIA_Lothar_Dragons_15_00"); //Poslouchej - mÄ›sto ohroÅ¾ujÃ­ draci!
 	if ((hero.guild != GIL_PAL)&&(hero.guild != GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_01"); //To není moné!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_02"); //Další šílenec!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_03"); //U takhle máme ve mìstì dost nepokojù. Nepotøebujeme ádného troubu, kterı bude dìsit lid povídaèkami o dracích!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_04"); //Posledního èlovìka, kterı si takovéhle vìci vymıšlel, jsem dal okamitì zavøít a poslat do Hornického údolí s vìzeòskım transportem. Take pozor na jazyk!
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_05"); //Nepotøebujeme nikoho, kdo by nám mezi lidmi šíøil paniku!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_01"); //To nenÃ­ moÅ¾nÃ©!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_02"); //DalÅ¡Ã­ Å¡Ã­lenec!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_03"); //UÅ¾ takhle mÃ¡me ve mÄ›stÄ› dost nepokojÅ¯. NepotÅ™ebujeme Å¾Ã¡dnÃ©ho troubu, kterÃ½ bude dÄ›sit lid povÃ­daÄkami o dracÃ­ch!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_04"); //PoslednÃ­ho ÄlovÄ›ka, kterÃ½ si takovÃ©hle vÄ›ci vymÃ½Å¡lel, jsem dal okamÅ¾itÄ› zavÅ™Ã­t a poslat do HornickÃ©ho ÃºdolÃ­ s vÄ›zeÅˆskÃ½m transportem. TakÅ¾e pozor na jazyk!
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_05"); //NepotÅ™ebujeme nikoho, kdo by nÃ¡m mezi lidmi Å¡Ã­Å™il paniku!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_06"); //Hodnì jsem o tom slyšel. Ale tìko tomu uvìøit.
-		AI_Output (self, other, "DIA_Lothar_Dragons_01_07"); //Bude lepší, kdy si to necháš pro sebe. Musíme pøedejít tomu, aby se mezi lidem šíøil strach a panika.
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_06"); //HodnÄ› jsem o tom slyÅ¡el. Ale tÄ›Å¾ko tomu uvÄ›Å™it.
+		AI_Output (self, other, "DIA_Lothar_Dragons_01_07"); //Bude lepÅ¡Ã­, kdyÅ¾ si to nechÃ¡Å¡ pro sebe. MusÃ­me pÅ™edejÃ­t tomu, aby se mezi lidem Å¡Ã­Å™il strach a panika.
 	};
 	Player_TalkedAboutDragons = TRUE;
 };	
@@ -256,7 +256,7 @@ instance DIA_Addon_Lothar_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Lothar_Ornament_Condition;
 	information	 = 	DIA_Addon_Lothar_Ornament_Info;
 
-	description	 = 	"Nevíš nìco o té kamenné obludì z kamenného kruhu na Lobartovì statku?";
+	description	 = 	"NevÃ­Å¡ nÄ›co o tÃ© kamennÃ© obludÄ› z kamennÃ©ho kruhu na LobartovÄ› statku?";
 };
 
 func int DIA_Addon_Lothar_Ornament_Condition ()
@@ -270,29 +270,29 @@ func int DIA_Addon_Lothar_Ornament_Condition ()
 
 func void DIA_Addon_Lothar_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lothar_Ornament_15_00"); //Nevíš nìco o té kamenné obludì z kamenného kruhu u Lobartova statku?
-	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_01"); //No jasnì, znièili jsme ji. Ohroovala i okolní usedlosti.
-	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_02"); //Proè se ptáš?
+	AI_Output	(other, self, "DIA_Addon_Lothar_Ornament_15_00"); //NevÃ­Å¡ nÄ›co o tÃ© kamennÃ© obludÄ› z kamennÃ©ho kruhu u Lobartova statku?
+	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_01"); //No jasnÄ›, zniÄili jsme ji. OhroÅ¾ovala i okolnÃ­ usedlosti.
+	AI_Output	(self, other, "DIA_Addon_Lothar_Ornament_01_02"); //ProÄ se ptÃ¡Å¡?
 	
 	Info_ClearChoices	(DIA_Addon_Lothar_Ornament);
-	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "Hledám kovovou èást ornamentu, kterı patøí k prstenu.", DIA_Addon_Lothar_Ornament_suche );
-	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "Myslíš, e je to normální?", DIA_Addon_Lothar_Ornament_normal );
+	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "HledÃ¡m kovovou ÄÃ¡st ornamentu, kterÃ½ patÅ™Ã­ k prstenu.", DIA_Addon_Lothar_Ornament_suche );
+	Info_AddChoice	(DIA_Addon_Lothar_Ornament, "MyslÃ­Å¡, Å¾e je to normÃ¡lnÃ­?", DIA_Addon_Lothar_Ornament_normal );
 };
 func void DIA_Addon_Lothar_Ornament_normal ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_00"); //Myslíš, e je to normální?
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_01"); //Myslíš tu kamennou potvoru?
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_02"); //Pokud vím, tak o tohle se starají vodní mágové. 
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_03"); //Moc jsem o tom nepøemıšlel. Máme dost práce tady ve mìstì a v Hornickém údolí.
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_04"); //Chápu.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_00"); //MyslÃ­Å¡, Å¾e je to normÃ¡lnÃ­?
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_01"); //MyslÃ­Å¡ tu kamennou potvoru?
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_02"); //Pokud vÃ­m, tak o tohle se starajÃ­ vodnÃ­ mÃ¡govÃ©. 
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_normal_01_03"); //Moc jsem o tom nepÅ™emÃ½Å¡lel. MÃ¡me dost prÃ¡ce tady ve mÄ›stÄ› a v HornickÃ©m ÃºdolÃ­.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_normal_15_04"); //ChÃ¡pu.
 };
 
 func void DIA_Addon_Lothar_Ornament_suche ()
 {
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_00"); //Hledám kovovı úlomek z ornamentu, kterı patøí k prstenu.
-	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_01"); //Mìl by bıt nìkde u kamenného kruhu u Lobarta.
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_02"); //Jo, na nìco takového jsme narazili. Mìl to u sebe ten kameòák. Myslím, e to byla nìjaká magická runa.
-	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_03"); //Dal jsem ji lordu Hagenovi, ale netuším, jestli ji poøád ještì má.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_00"); //HledÃ¡m kovovÃ½ Ãºlomek z ornamentu, kterÃ½ patÅ™Ã­ k prstenu.
+	AI_Output			(other, self, "DIA_Addon_Lothar_Ornament_suche_15_01"); //MÄ›l by bÃ½t nÄ›kde u kamennÃ©ho kruhu u Lobarta.
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_02"); //Jo, na nÄ›co takovÃ©ho jsme narazili. MÄ›l to u sebe ten kameÅˆÃ¡k. MyslÃ­m, Å¾e to byla nÄ›jakÃ¡ magickÃ¡ runa.
+	AI_Output			(self, other, "DIA_Addon_Lothar_Ornament_suche_01_03"); //Dal jsem ji lordu Hagenovi, ale netuÅ¡Ã­m, jestli ji poÅ™Ã¡d jeÅ¡tÄ› mÃ¡.
 };
 
 // ***************************************************************
@@ -305,7 +305,7 @@ instance DIA_Lothar_WhoDragons (C_INFO)
 	condition	 = 	DIA_Lothar_WhoDragons_Condition;
 	information	 = 	DIA_Lothar_WhoDragons_Info;
 	permanent    =  FALSE;
-	description	 = 	"Nìkdo u o pøítomnosti drakù mluvil?";
+	description	 = 	"NÄ›kdo uÅ¾ o pÅ™Ã­tomnosti drakÅ¯ mluvil?";
 };
 func int DIA_Lothar_WhoDragons_Condition ()
 {	
@@ -317,12 +317,12 @@ func int DIA_Lothar_WhoDragons_Condition ()
 };
 func void DIA_Lothar_WhoDragons_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_WhoDragons_15_00"); //Nìkdo u o pøítomnosti drakù mluvil?
-	AI_Output (self, other, "DIA_Lothar_WhoDragons_01_01"); //Ano. Ten chlapík se jmenoval Diego. Alespoò mám ten pocit.
+	AI_Output (other, self, "DIA_Lothar_WhoDragons_15_00"); //NÄ›kdo uÅ¾ o pÅ™Ã­tomnosti drakÅ¯ mluvil?
+	AI_Output (self, other, "DIA_Lothar_WhoDragons_01_01"); //Ano. Ten chlapÃ­k se jmenoval Diego. AlespoÅˆ mÃ¡m ten pocit.
 
 	if ((hero.guild != GIL_PAL)	&&	(hero.guild != GIL_KDF))
 	{
-		AI_Output (self, other, "DIA_Lothar_WhoDragons_01_02"); //(vıhrùnì) Varoval jsem ho - zrovna jako tebe! Ale ten blázen si nedal pokoj a poøád otravoval!
+		AI_Output (self, other, "DIA_Lothar_WhoDragons_01_02"); //(vÃ½hrÅ¯Å¾nÄ›) Varoval jsem ho - zrovna jako tebe! Ale ten blÃ¡zen si nedal pokoj a poÅ™Ã¡d otravoval!
 	};
 };	
 
@@ -336,7 +336,7 @@ instance DIA_Lothar_Regeln (C_INFO)
 	condition	 = 	DIA_Lothar_Regeln_Condition;
 	information	 = 	DIA_Lothar_Regeln_Info;
 	permanent    =  FALSE;
-	description	 = 	"No dobøe - seznam mì s mìstskımi zákony!";
+	description	 = 	"No dobÅ™e - seznam mÄ› s mÄ›stskÃ½mi zÃ¡kony!";
 };
 func int DIA_Lothar_Regeln_Condition ()
 {	
@@ -344,12 +344,12 @@ func int DIA_Lothar_Regeln_Condition ()
 };
 func void DIA_Lothar_Regeln_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Regeln_15_00"); //(s mírnım povzdechem) Dobrá - vysvìtli mi zákony mìsta!
-	AI_Output (self, other, "DIA_Lothar_Regeln_01_01"); //Za prvé: Ctihodnı paladin lord Hagen sídlí se svımi jednotkami v horní èásti mìsta.
-	AI_Output (self, other, "DIA_Lothar_Regeln_01_02"); //Proto tam mají pøístup pouze ctihodní obèané.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_04"); //Za druhé: V radnici v horní èásti mìsta je teï velitelství paladinù. Mají do ní pøístup pouze samotní paladinové a èlenové domobrany.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_05"); //A za tøetí: Kadı, kdo je obvinìn z nìjakého zloèinu, se musí ospravedlnit pøed velitelem domobrany.
-	AI_Output (self, other, "DIA_Lothar_Regeln_01_05"); //Nìjaké otázky?
+	AI_Output (other, self, "DIA_Lothar_Regeln_15_00"); //(s mÃ­rnÃ½m povzdechem) DobrÃ¡ - vysvÄ›tli mi zÃ¡kony mÄ›sta!
+	AI_Output (self, other, "DIA_Lothar_Regeln_01_01"); //Za prvÃ©: CtihodnÃ½ paladin lord Hagen sÃ­dlÃ­ se svÃ½mi jednotkami v hornÃ­ ÄÃ¡sti mÄ›sta.
+	AI_Output (self, other, "DIA_Lothar_Regeln_01_02"); //Proto tam majÃ­ pÅ™Ã­stup pouze ctihodnÃ­ obÄanÃ©.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_04"); //Za druhÃ©: V radnici v hornÃ­ ÄÃ¡sti mÄ›sta je teÄ velitelstvÃ­ paladinÅ¯. MajÃ­ do nÃ­ pÅ™Ã­stup pouze samotnÃ­ paladinovÃ© a ÄlenovÃ© domobrany.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_05"); //A za tÅ™etÃ­: KaÅ¾dÃ½, kdo je obvinÄ›n z nÄ›jakÃ©ho zloÄinu, se musÃ­ ospravedlnit pÅ™ed velitelem domobrany.
+	AI_Output (self, other, "DIA_Lothar_Regeln_01_05"); //NÄ›jakÃ© otÃ¡zky?
 	
 	Lothar_Regeln = TRUE;
 };	
@@ -364,7 +364,7 @@ instance DIA_Addon_Lothar_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Lothar_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Lothar_MissingPeople_Info;
 
-	description	 = 	"Obyvatelé mìsta prostì mizí?";
+	description	 = 	"ObyvatelÃ© mÄ›sta prostÄ› mizÃ­?";
 };
 
 func int DIA_Addon_Lothar_MissingPeople_Condition ()
@@ -378,11 +378,11 @@ func int DIA_Addon_Lothar_MissingPeople_Condition ()
 
 func void DIA_Addon_Lothar_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lothar_MissingPeople_15_00"); //Lidé z mìsta prostì mizí?
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_01"); //Jo, skoro kadı den se po nìkom slehne zem.
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_02"); //Dost mì štve, e domobrana ještì poøád nezjistila, kdo za tím vším vìzí.
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_03"); //Není divu, e obyvatelé mìsta si teï dávají zvláš bacha na cizince.
-	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_04"); //Take je radši moc neprovokuj, rozumíš?
+	AI_Output	(other, self, "DIA_Addon_Lothar_MissingPeople_15_00"); //LidÃ© z mÄ›sta prostÄ› mizÃ­?
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_01"); //Jo, skoro kaÅ¾dÃ½ den se po nÄ›kom slehne zem.
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_02"); //Dost mÄ› Å¡tve, Å¾e domobrana jeÅ¡tÄ› poÅ™Ã¡d nezjistila, kdo za tÃ­m vÅ¡Ã­m vÄ›zÃ­.
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_03"); //NenÃ­ divu, Å¾e obyvatelÃ© mÄ›sta si teÄ dÃ¡vajÃ­ zvlÃ¡Å¡Å¥ bacha na cizince.
+	AI_Output	(self, other, "DIA_Addon_Lothar_MissingPeople_01_04"); //TakÅ¾e je radÅ¡i moc neprovokuj, rozumÃ­Å¡?
 	
 		if (SC_HearedAboutMissingPeople == FALSE)
 		{
@@ -404,7 +404,7 @@ instance DIA_Lothar_HowCitizen (C_INFO)
 	condition	 = 	DIA_Lothar_HowCitizen_Condition;
 	information	 = 	DIA_Lothar_HowCitizen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Jak se mohu JÁ stát obèanem mìsta?";
+	description	 = 	"Jak se mohu JÃ stÃ¡t obÄanem mÄ›sta?";
 };
 func int DIA_Lothar_HowCitizen_Condition ()
 {	
@@ -417,11 +417,11 @@ func int DIA_Lothar_HowCitizen_Condition ()
 };
 func void DIA_Lothar_HowCitizen_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_06"); //Jak se mohu JÁ stát obèanem mìsta?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_07"); //Za obèany mìsta jsou povaováni jen ti, kdo mají stálé zamìstnání!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_09"); //Ale neøekl bych, e by k setkání s lordem Hagenem staèilo bıt obèanem mìsta!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_10"); //Jako obèan máš pøístup do horní èásti mìsta, nic víc!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_11"); //Na radnici mùeš bıt vpuštìn jen v pøípadì, e se staneš èlenem domobrany!
+	AI_Output (other, self, "DIA_Lothar_Add_15_06"); //Jak se mohu JÃ stÃ¡t obÄanem mÄ›sta?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_07"); //Za obÄany mÄ›sta jsou povaÅ¾ovÃ¡ni jen ti, kdo majÃ­ stÃ¡lÃ© zamÄ›stnÃ¡nÃ­!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_09"); //Ale neÅ™ekl bych, Å¾e by k setkÃ¡nÃ­ s lordem Hagenem staÄilo bÃ½t obÄanem mÄ›sta!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_10"); //Jako obÄan mÃ¡Å¡ pÅ™Ã­stup do hornÃ­ ÄÃ¡sti mÄ›sta, nic vÃ­c!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_11"); //Na radnici mÅ¯Å¾eÅ¡ bÃ½t vpuÅ¡tÄ›n jen v pÅ™Ã­padÄ›, Å¾e se staneÅ¡ Älenem domobrany!
 };
 
 // ***************************************************************
@@ -434,7 +434,7 @@ instance DIA_Lothar_WoArbeit (C_INFO)
 	condition	 = 	DIA_Lothar_WoArbeit_Condition;
 	information	 = 	DIA_Lothar_WoArbeit_Info;
 	permanent    =  FALSE;
-	description	 = 	"Kde bych mohl najít práci?";
+	description	 = 	"Kde bych mohl najÃ­t prÃ¡ci?";
 };
 func int DIA_Lothar_WoArbeit_Condition ()
 {	
@@ -447,12 +447,12 @@ func int DIA_Lothar_WoArbeit_Condition ()
 };
 func void DIA_Lothar_WoArbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_14"); //Kde bych mohl najít práci?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_15"); //Musíš se pøihlásit jako uèedník k jednomu z mistrù tady v dolní èásti mìsta.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_16"); //Jakmile tì mistr pøijme, stane se z tebe obèan.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_17"); //Musí s tím ale souhlasit i ostatní mistøi, tak velí zvyk tady v Khorinidu.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_18"); //Pokud sis pohrával s myšlenkou, e najdeš nìjakou práci v pøístavu, tak na to zase rychle zapomeò!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_19"); //ije tam spodina. Ani tam nechoï, nebo toho budeš litovat!
+	AI_Output (other, self, "DIA_Lothar_Add_15_14"); //Kde bych mohl najÃ­t prÃ¡ci?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_15"); //MusÃ­Å¡ se pÅ™ihlÃ¡sit jako uÄednÃ­k k jednomu z mistrÅ¯ tady v dolnÃ­ ÄÃ¡sti mÄ›sta.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_16"); //Jakmile tÄ› mistr pÅ™ijme, stane se z tebe obÄan.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_17"); //MusÃ­ s tÃ­m ale souhlasit i ostatnÃ­ mistÅ™i, tak velÃ­ zvyk tady v Khorinidu.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_18"); //Pokud sis pohrÃ¡val s myÅ¡lenkou, Å¾e najdeÅ¡ nÄ›jakou prÃ¡ci v pÅ™Ã­stavu, tak na to zase rychle zapomeÅˆ!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_19"); //Å½ije tam spodina. Ani tam nechoÄ, nebo toho budeÅ¡ litovat!
 };
 
 // ***************************************************************
@@ -465,7 +465,7 @@ instance DIA_Lothar_ToOV (C_INFO)
 	condition	 = 	DIA_Lothar_ToOV_Condition;
 	information	 = 	DIA_Lothar_ToOV_Info;
 	permanent    =  FALSE;
-	description	 = 	"Jak se dostanu do horní ètvrti?";
+	description	 = 	"Jak se dostanu do hornÃ­ Ätvrti?";
 };
 func int DIA_Lothar_ToOV_Condition ()
 {	
@@ -479,10 +479,10 @@ func int DIA_Lothar_ToOV_Condition ()
 };
 func void DIA_Lothar_ToOV_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_ToOV_15_00"); //Jak se dostanu do horní èásti mìsta?
-	AI_Output (self, other, "DIA_Lothar_ToOV_01_01"); //No tak, posloucháš mì vùbec?!
-	AI_Output (self, other, "DIA_Lothar_ToOV_01_02"); //Nejsi obèanem tohoto mìsta. Mùeš si tu zacházku ušetøit - stráe tì dovnitø nepustí.
-	AI_Output (self, other, "DIA_Lothar_ToOV_01_03"); //Do celé té oblasti za vnitøní branou máš vstup zakázán!
+	AI_Output (other, self, "DIA_Lothar_ToOV_15_00"); //Jak se dostanu do hornÃ­ ÄÃ¡sti mÄ›sta?
+	AI_Output (self, other, "DIA_Lothar_ToOV_01_01"); //No tak, poslouchÃ¡Å¡ mÄ› vÅ¯bec?!
+	AI_Output (self, other, "DIA_Lothar_ToOV_01_02"); //Nejsi obÄanem tohoto mÄ›sta. MÅ¯Å¾eÅ¡ si tu zachÃ¡zku uÅ¡etÅ™it - strÃ¡Å¾e tÄ› dovnitÅ™ nepustÃ­.
+	AI_Output (self, other, "DIA_Lothar_ToOV_01_03"); //Do celÃ© tÃ© oblasti za vnitÅ™nÃ­ branou mÃ¡Å¡ vstup zakÃ¡zÃ¡n!
 };	
 
 // ***************************************************************
@@ -495,7 +495,7 @@ instance DIA_Lothar_ToMiliz (C_INFO)
 	condition	 = 	DIA_Lothar_ToMiliz_Condition;
 	information	 = 	DIA_Lothar_ToMiliz_Info;
 	permanent    =  FALSE;
-	description	 = 	"Jak se mohu pøidat k domobranì?";
+	description	 = 	"Jak se mohu pÅ™idat k domobranÄ›?";
 };
 func int DIA_Lothar_ToMiliz_Condition ()
 {	
@@ -507,13 +507,13 @@ func int DIA_Lothar_ToMiliz_Condition ()
 };
 func void DIA_Lothar_ToMiliz_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_26"); //Jak se mohu pøidat k domobranì?
+	AI_Output (other, self, "DIA_Lothar_Add_15_26"); //Jak se mohu pÅ™idat k domobranÄ›?
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_27"); //Na pøíkaz lorda Hagena mohou do domobrany vstoupit jen obèané mìsta.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_27"); //Na pÅ™Ã­kaz lorda Hagena mohou do domobrany vstoupit jen obÄanÃ© mÄ›sta.
 		AI_Output (other, self, "DIA_Lothar_Add_15_28"); //Aha.
 	};
-	AI_Output (self ,other, "DIA_Lothar_Add_01_29"); //Pokud by ses chtìl dozvìdìt nìco víc, promluv si v kasárnách s lordem Andrem.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_29"); //Pokud by ses chtÄ›l dozvÄ›dÄ›t nÄ›co vÃ­c, promluv si v kasÃ¡rnÃ¡ch s lordem Andrem.
 };	
 
 // ***************************************************************
@@ -526,7 +526,7 @@ instance DIA_Lothar_ToPaladins (C_INFO)
 	condition	 = 	DIA_Lothar_ToPaladins_Condition;
 	information	 = 	DIA_Lothar_ToPaladins_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co musím udìlat, abych mìl takové brnìní jako ty?";
+	description	 = 	"Co musÃ­m udÄ›lat, abych mÄ›l takovÃ© brnÄ›nÃ­ jako ty?";
 };
 func int DIA_Lothar_ToPaladins_Condition ()
 {	
@@ -539,18 +539,18 @@ func int DIA_Lothar_ToPaladins_Condition ()
 };
 func void DIA_Lothar_ToPaladins_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_30"); //Co musím udìlat, abych mìl takové brnìní jako ty?
+	AI_Output (other, self, "DIA_Lothar_Add_15_30"); //Co musÃ­m udÄ›lat, abych mÄ›l takovÃ© brnÄ›nÃ­ jako ty?
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_31"); //(køièí) Coe? Vdy ani nejsi èlenem domobrany!
+		AI_Output (self ,other, "DIA_Lothar_Add_01_31"); //(kÅ™iÄÃ­) CoÅ¾e? VÅ¾dyÅ¥ ani nejsi Älenem domobrany!
 	};
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_32"); //Nejsi dokonce ani OBÈAN!
+		AI_Output (self ,other, "DIA_Lothar_Add_01_32"); //Nejsi dokonce ani OBÄŒAN!
 	};
-	AI_Output (self ,other, "DIA_Lothar_Add_01_33"); //Jak tì mùe vùbec napadnout, e bys mohl nosit brnìní PALADINA?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_34"); //Tuhle èest si vyslouilo jen nìkolik málo èlenù domobrany, a to za své neobyèejnì odváné skutky.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_35"); //(stroze) Pokud by ses chtìl stát paladinem, máš pøed sebou hodnì dlouhou cestu, chlapèe!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_33"); //Jak tÄ› mÅ¯Å¾e vÅ¯bec napadnout, Å¾e bys mohl nosit brnÄ›nÃ­ PALADINA?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_34"); //Tuhle Äest si vyslouÅ¾ilo jen nÄ›kolik mÃ¡lo ÄlenÅ¯ domobrany, a to za svÃ© neobyÄejnÄ› odvÃ¡Å¾nÃ© skutky.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_35"); //(stroze) Pokud by ses chtÄ›l stÃ¡t paladinem, mÃ¡Å¡ pÅ™ed sebou hodnÄ› dlouhou cestu, chlapÄe!
 };	
 
 // ***************************************************************
@@ -563,7 +563,7 @@ instance DIA_Lothar_WoAndre (C_INFO)
 	condition	 = 	DIA_Lothar_WoAndre_Condition;
 	information	 = 	DIA_Lothar_WoAndre_Info;
 	permanent    =  FALSE;
-	description	 = 	"Kde najdu velitele mìstské stráe?";
+	description	 = 	"Kde najdu velitele mÄ›stskÃ© strÃ¡Å¾e?";
 };
 func int DIA_Lothar_WoAndre_Condition ()
 {	
@@ -575,8 +575,8 @@ func int DIA_Lothar_WoAndre_Condition ()
 };
 func void DIA_Lothar_WoAndre_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_WoAndre_15_00"); //Kde najdu velitele mìstské stráe?
-	AI_Output (self, other, "DIA_Lothar_WoAndre_01_01"); //Lord Andre je v kasárnách na druhém konci mìsta.
+	AI_Output (other, self, "DIA_Lothar_WoAndre_15_00"); //Kde najdu velitele mÄ›stskÃ© strÃ¡Å¾e?
+	AI_Output (self, other, "DIA_Lothar_WoAndre_01_01"); //Lord Andre je v kasÃ¡rnÃ¡ch na druhÃ©m konci mÄ›sta.
 };	
 
 // ***************************************************************
@@ -589,7 +589,7 @@ instance DIA_Lothar_Schlafen (C_INFO)
 	condition	 = 	DIA_Lothar_Schlafen_Condition;
 	information	 = 	DIA_Lothar_Schlafen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Kde bych tu mohl strávit noc?";
+	description	 = 	"Kde bych tu mohl strÃ¡vit noc?";
 };
 func int DIA_Lothar_Schlafen_Condition ()
 {	
@@ -600,10 +600,10 @@ func int DIA_Lothar_Schlafen_Condition ()
 };
 func void DIA_Lothar_Schlafen_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_22"); //Kde bych tu mohl strávit noc?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_23"); //Pokud hledáš nocleh, jdi do hotelu pøímo naproti kasárnám.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_24"); //Paladinové platí za ubytování všech poutníkù, kteøí do mìsta pøijdou.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_25"); //Najdeš zde také všechny potulné kupce z trištì.
+	AI_Output (other, self, "DIA_Lothar_Add_15_22"); //Kde bych tu mohl strÃ¡vit noc?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_23"); //Pokud hledÃ¡Å¡ nocleh, jdi do hotelu pÅ™Ã­mo naproti kasÃ¡rnÃ¡m.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_24"); //PaladinovÃ© platÃ­ za ubytovÃ¡nÃ­ vÅ¡ech poutnÃ­kÅ¯, kteÅ™Ã­ do mÄ›sta pÅ™ijdou.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_25"); //NajdeÅ¡ zde takÃ© vÅ¡echny potulnÃ© kupce z trÅ¾iÅ¡tÄ›.
 };	
 
 // ***************************************************************
@@ -629,7 +629,7 @@ func int DIA_Lothar_PermB4OV_Condition ()
 };
 func void DIA_Lothar_PermB4OV_Info ()
 {
-	AI_Output (self, other, "DIA_Lothar_PermB4OV_01_00"); //O všem ostatním si u mùeš promluvit s lordem Andrem!
+	AI_Output (self, other, "DIA_Lothar_PermB4OV_01_00"); //O vÅ¡em ostatnÃ­m si uÅ¾ mÅ¯Å¾eÅ¡ promluvit s lordem Andrem!
 	AI_StopProcessInfos(self);
 };	
 	
@@ -638,42 +638,42 @@ func void DIA_Lothar_PermB4OV_Info ()
 // 		Blubb
 // ***************
 
-func void B_Lothar_Blubb() //überflüsige Outputs
+func void B_Lothar_Blubb() //Ã¼berflÃ¼sige Outputs
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_00"); //Ale já se MUSÍM setkat s lordem Hagenem!
+	AI_Output (other, self, "DIA_Lothar_Add_15_00"); //Ale jÃ¡ se MUSÃM setkat s lordem Hagenem!
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_45"); //A jak vidím, tak tì pøijal do domobrany.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_46"); //Hm - urèitì ví, co dìlá.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_45"); //A jak vidÃ­m, tak tÄ› pÅ™ijal do domobrany.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_46"); //Hm - urÄitÄ› vÃ­, co dÄ›lÃ¡.
 	
-	AI_Output (other, self, "DIA_Lothar_Add_15_20"); //Kolik je tady mistrù?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_21"); //Myslím, e jich je dohromady pìt.
+	AI_Output (other, self, "DIA_Lothar_Add_15_20"); //Kolik je tady mistrÅ¯?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_21"); //MyslÃ­m, Å¾e jich je dohromady pÄ›t.
 		
-	AI_Output (self ,other, "DIA_Lothar_Add_01_62"); //Hele, neøekl jsem to snad dost jasnì? U ádné povídaèky o dracích!
-	AI_Output (other, self, "DIA_Lothar_Add_15_63"); //Jak víš...?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_64"); //Do TOHO ti nic není!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_65"); //To bylo naposledy, rozumíme si?!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_62"); //Hele, neÅ™ekl jsem to snad dost jasnÄ›? UÅ¾ Å¾Ã¡dnÃ© povÃ­daÄky o dracÃ­ch!
+	AI_Output (other, self, "DIA_Lothar_Add_15_63"); //Jak vÃ­Å¡...?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_64"); //Do TOHO ti nic nenÃ­!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_65"); //To bylo naposledy, rozumÃ­me si?!
 	
 	AI_Output (other, self, "DIA_Lothar_Add_15_66"); //Kde najdu velitele domobrany?
-	AI_Output (other, self, "DIA_Lothar_Add_15_08"); //Jsem teï uèedník jednoho ze zdejších mistrù!
+	AI_Output (other, self, "DIA_Lothar_Add_15_08"); //Jsem teÄ uÄednÃ­k jednoho ze zdejÅ¡Ã­ch mistrÅ¯!
 	
-	// ------ NEWS_Modul für Unterstadt ------
-	AI_Output (self ,other, "DIA_Lothar_Add_01_47"); //U zase ty.
+	// ------ NEWS_Modul fÃ¼r Unterstadt ------
+	AI_Output (self ,other, "DIA_Lothar_Add_01_47"); //UÅ¾ zase ty.
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_43"); //Slyšel jsem, e ses setkal s lordem Andrem?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_44"); //Øíkal jsem ti snad, e k domobranì se mùeš pøidat jen v pøípadì, e jsi obèanem mìsta.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_43"); //SlyÅ¡el jsem, Å¾e ses setkal s lordem Andrem?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_44"); //Å˜Ã­kal jsem ti snad, Å¾e k domobranÄ› se mÅ¯Å¾eÅ¡ pÅ™idat jen v pÅ™Ã­padÄ›, Å¾e jsi obÄanem mÄ›sta.
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_48"); //Oznámil jsem lordu Hagenovi, e s ním chceš mluvit.
-	AI_Output (other, self, "DIA_Lothar_Add_15_49"); //A? Co øíkal?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_50"); //Nikdy o tobì neslyšel.
-	AI_Output (other, self, "DIA_Lothar_Add_15_51"); //Samozøejmì e ne. Øekl jsi mu o tìch dracích?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_52"); //Copak jsem ti neøekl, abys s tìmi povídaèkami PØESTAL?!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_48"); //OznÃ¡mil jsem lordu Hagenovi, Å¾e s nÃ­m chceÅ¡ mluvit.
+	AI_Output (other, self, "DIA_Lothar_Add_15_49"); //A? Co Å™Ã­kal?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_50"); //Nikdy o tobÄ› neslyÅ¡el.
+	AI_Output (other, self, "DIA_Lothar_Add_15_51"); //SamozÅ™ejmÄ› Å¾e ne. Å˜ekl jsi mu o tÄ›ch dracÃ­ch?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_52"); //Copak jsem ti neÅ™ekl, abys s tÄ›mi povÃ­daÄkami PÅ˜ESTAL?!
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_12"); //Slyšel jsem, e u máš souhlas nìkolika mistrù.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_13"); //Bereš to docela vánì, co?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_12"); //SlyÅ¡el jsem, Å¾e uÅ¾ mÃ¡Å¡ souhlas nÄ›kolika mistrÅ¯.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_13"); //BereÅ¡ to docela vÃ¡Å¾nÄ›, co?
 
-	AI_Output (self ,other, "DIA_Lothar_Add_01_01"); //Musíš dodrovat pravidla, stejnì jako kdokoliv jinı!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_02"); //Lord Hagen nemá èas.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_03"); //Pokud máš na srdci nìco PODSTATNÉHO, jdi za lordem Andrem. On ti pomùe!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_01"); //MusÃ­Å¡ dodrÅ¾ovat pravidla, stejnÄ› jako kdokoliv jinÃ½!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_02"); //Lord Hagen nemÃ¡ Äas.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_03"); //Pokud mÃ¡Å¡ na srdci nÄ›co PODSTATNÃ‰HO, jdi za lordem Andrem. On ti pomÅ¯Å¾e!
 };
 
 
@@ -708,39 +708,39 @@ func int DIA_Lothar_HelloAgain_Condition ()
 func void DIA_Lothar_HelloAgain_Info ()
 {
 	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_00"); //Aaa! Zase ty!
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_01"); //Take se ti nakonec podaøilo dostat se do horní èásti mìsta!
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_01"); //TakÅ¾e se ti nakonec podaÅ™ilo dostat se do hornÃ­ ÄÃ¡sti mÄ›sta!
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_36"); //Kde jsi vzal tu róbu?
-		AI_Output (other, self, "DIA_Lothar_Add_15_37"); //Prošel jsem zkouškou ohnì.
-		AI_Output (self ,other, "DIA_Lothar_Add_01_38"); //Neuvìøitelné. V tom pøípadì to, co se tu dìje, musí bıt Innosova vùle.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_36"); //Kde jsi vzal tu rÃ³bu?
+		AI_Output (other, self, "DIA_Lothar_Add_15_37"); //ProÅ¡el jsem zkouÅ¡kou ohnÄ›.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_38"); //NeuvÄ›Å™itelnÃ©. V tom pÅ™Ã­padÄ› to, co se tu dÄ›je, musÃ­ bÃ½t Innosova vÅ¯le.
 	};
 
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other, "DIA_Lothar_Add_01_39"); //Nepøidal ses k Onarovım oldákùm, e ne?
+		AI_Output (self ,other, "DIA_Lothar_Add_01_39"); //NepÅ™idal ses k OnarovÃ½m Å¾oldÃ¡kÅ¯m, Å¾e ne?
 		AI_Output (self ,other, "DIA_Lothar_Add_01_40"); //Jak ses sem dostal?
-		AI_Output (other, self, "DIA_Lothar_Add_15_41"); //Pøináším nabídku pøímìøí od Leeho.
-		AI_Output (self ,other, "DIA_Lothar_Add_01_42"); //Pche! Lord Hagen s tím nikdy nebude souhlasit.
+		AI_Output (other, self, "DIA_Lothar_Add_15_41"); //PÅ™inÃ¡Å¡Ã­m nabÃ­dku pÅ™Ã­mÄ›Å™Ã­ od Leeho.
+		AI_Output (self ,other, "DIA_Lothar_Add_01_42"); //Pche! Lord Hagen s tÃ­m nikdy nebude souhlasit.
 	};
 		
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_02"); //Musíš tady dbát na nìkteré vìci, jinak odsud poletíš stejnì rychle, jako ses sem dostal.
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_03"); //Vstup máš povolen jen do budov obchodníkù. Poznáš je podle znamení nade dveømi - to jen aby nedošlo k nìjakım nedorozumìním.
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_04"); //Ostatní budovy patøí vıznamnım obèanùm - tam nemáš co pohledávat!
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_02"); //MusÃ­Å¡ tady dbÃ¡t na nÄ›kterÃ© vÄ›ci, jinak odsud poletÃ­Å¡ stejnÄ› rychle, jako ses sem dostal.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_03"); //Vstup mÃ¡Å¡ povolen jen do budov obchodnÃ­kÅ¯. PoznÃ¡Å¡ je podle znamenÃ­ nade dveÅ™mi - to jen aby nedoÅ¡lo k nÄ›jakÃ½m nedorozumÄ›nÃ­m.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_04"); //OstatnÃ­ budovy patÅ™Ã­ vÃ½znamnÃ½m obÄanÅ¯m - tam nemÃ¡Å¡ co pohledÃ¡vat!
 	if (other.guild == GIL_KDF) 
 	|| (other.guild == GIL_NOV) 
 	{
-		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_05"); //Nic na tom nemìní, e teï jsi èlenem Innosova øádu.
+		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_05"); //Nic na tom nemÄ›nÃ­, Å¾e teÄ jsi Älenem Innosova Å™Ã¡du.
 	};
 	if (other.guild == GIL_MIL)
 	{	
-		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_06"); //Jakoto èlen domobrany máš také povolen pøístup do prostor paladinù.
-		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_07"); //Svoje ubikace máš ale poøád v kasárnách.
+		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_06"); //JakoÅ¾to Älen domobrany mÃ¡Å¡ takÃ© povolen pÅ™Ã­stup do prostor paladinÅ¯.
+		AI_Output (self, other, "DIA_Lothar_HelloAgain_01_07"); //Svoje ubikace mÃ¡Å¡ ale poÅ™Ã¡d v kasÃ¡rnÃ¡ch.
 	};
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_08"); //V téhle ètvrti ijí vıznamní obèané mìsta. Chovej se k nim tedy s náleitou úctou.
-	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_09"); //Rozumíme si?
-	AI_Output (other, self, "DIA_Lothar_HelloAgain_15_10"); //Jasnì.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_08"); //V tÃ©hle Ätvrti Å¾ijÃ­ vÃ½znamnÃ­ obÄanÃ© mÄ›sta. Chovej se k nim tedy s nÃ¡leÅ¾itou Ãºctou.
+	AI_Output (self, other, "DIA_Lothar_HelloAgain_01_09"); //RozumÃ­me si?
+	AI_Output (other, self, "DIA_Lothar_HelloAgain_15_10"); //JasnÄ›.
 };	
 
 // ***************************************************************
@@ -766,8 +766,8 @@ func int DIA_Lothar_Hagen_Condition ()
 func void DIA_Lothar_Hagen_Info ()
 {
 	AI_Output (other, self, "DIA_Lothar_Hagen_15_00"); //Kde najdu lorda Hagena?
-	AI_Output (self, other, "DIA_Lothar_Hagen_01_01"); //Je v radnici, na konci horní ètvrti.
-	AI_Output (self, other, "DIA_Lothar_Hagen_01_02"); //Pokud ale nemáš dobrı dùvod, tak tì tam stejnì nikdo nepustí.
+	AI_Output (self, other, "DIA_Lothar_Hagen_01_01"); //Je v radnici, na konci hornÃ­ Ätvrti.
+	AI_Output (self, other, "DIA_Lothar_Hagen_01_02"); //Pokud ale nemÃ¡Å¡ dobrÃ½ dÅ¯vod, tak tÄ› tam stejnÄ› nikdo nepustÃ­.
 };
 
 // ***************************************************************
@@ -793,11 +793,11 @@ func int DIA_Lothar_OWRunning_Condition ()
 func void DIA_Lothar_OWRunning_Info ()
 {
 	AI_Output (other, self, "DIA_Lothar_Add_15_53"); //Byl jsem si promluvit s lordem Hagenem.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_54"); //A? Nesnail ses ho obtìovat s tìmi báchorkami o dracích, e ne?
-	AI_Output (other, self, "DIA_Lothar_Add_15_55"); //Pøesnì to jsem udìlal.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_56"); //To snad nemùe bıt pravda...
-	AI_Output (other, self, "DIA_Lothar_Add_15_57"); //Poslal mì sehnat nìjaké dùkazy.
-	AI_Output (self ,other, "DIA_Lothar_Add_01_58"); //V tom pøípadì hodnì štìstí. (pro sebe) Blázne...
+	AI_Output (self ,other, "DIA_Lothar_Add_01_54"); //A? NesnaÅ¾il ses ho obtÄ›Å¾ovat s tÄ›mi bÃ¡chorkami o dracÃ­ch, Å¾e ne?
+	AI_Output (other, self, "DIA_Lothar_Add_15_55"); //PÅ™esnÄ› to jsem udÄ›lal.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_56"); //To snad nemÅ¯Å¾e bÃ½t pravda...
+	AI_Output (other, self, "DIA_Lothar_Add_15_57"); //Poslal mÄ› sehnat nÄ›jakÃ© dÅ¯kazy.
+	AI_Output (self ,other, "DIA_Lothar_Add_01_58"); //V tom pÅ™Ã­padÄ› hodnÄ› Å¡tÄ›stÃ­. (pro sebe) BlÃ¡zne...
 	
 	AI_StopProcessInfos (self);
 };
@@ -812,7 +812,7 @@ instance DIA_Lothar_OWRunningBrief (C_INFO)
 	condition	 = 	DIA_Lothar_OWRunningBrief_Condition;
 	information	 = 	DIA_Lothar_OWRunningBrief_Info;
 	permanent    =  FALSE;
-	description  = 	"Mám dùkaz! Tady je dopis od velitele Garonda!";
+	description  = 	"MÃ¡m dÅ¯kaz! Tady je dopis od velitele Garonda!";
 };
 func int DIA_Lothar_OWRunningBrief_Condition ()
 {	
@@ -824,9 +824,9 @@ func int DIA_Lothar_OWRunningBrief_Condition ()
 };
 func void DIA_Lothar_OWRunningBrief_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_Add_15_59"); //Mám dùkaz! Tady je dopis od velitele Garonda!
-	AI_Output (self ,other, "DIA_Lothar_Add_01_60"); //Take ti draci nejsou vımysl?
-	AI_Output (self ,other, "DIA_Lothar_Add_01_61"); //Køivdil jsem ti. Budu se modlit k Innosovi, aby mi odpustil mé chování.
+	AI_Output (other, self, "DIA_Lothar_Add_15_59"); //MÃ¡m dÅ¯kaz! Tady je dopis od velitele Garonda!
+	AI_Output (self ,other, "DIA_Lothar_Add_01_60"); //TakÅ¾e ti draci nejsou vÃ½mysl?
+	AI_Output (self ,other, "DIA_Lothar_Add_01_61"); //KÅ™ivdil jsem ti. Budu se modlit k Innosovi, aby mi odpustil mÃ© chovÃ¡nÃ­.
 	
 	AI_StopProcessInfos (self);
 };
@@ -841,7 +841,7 @@ instance DIA_Lothar_PERM (C_INFO)
 	condition	 = 	DIA_Lothar_PERM_Condition;
 	information	 = 	DIA_Lothar_PERM_Info;
 	permanent    =  TRUE;
-	description  = 	"Stalo se v poslední dobì nìco zajímavého?";
+	description  = 	"Stalo se v poslednÃ­ dobÄ› nÄ›co zajÃ­mavÃ©ho?";
 };
 func int DIA_Lothar_PERM_Condition ()
 {	
@@ -853,15 +853,15 @@ func int DIA_Lothar_PERM_Condition ()
 };
 func void DIA_Lothar_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Lothar_PERM_15_00"); //Stalo se v poslední dobì nìco zajímavého?
+	AI_Output (other, self, "DIA_Lothar_PERM_15_00"); //Stalo se v poslednÃ­ dobÄ› nÄ›co zajÃ­mavÃ©ho?
 	if (other.guild == GIL_NONE)
 	|| (other.guild == GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Lothar_PERM_01_01"); //Ano - e sem vpustili nìkoho, jako jsi ty. Nìco takového se nestalo u celé vìky.
+		AI_Output (self, other, "DIA_Lothar_PERM_01_01"); //Ano - Å¾e sem vpustili nÄ›koho, jako jsi ty. NÄ›co takovÃ©ho se nestalo uÅ¾ celÃ© vÄ›ky.
 	}
 	else if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Lothar_PERM_01_02"); //Ty bys to mìl vìdìt nejlíp. Jako èlen mìstské stráe musíš dohlíet na poøádek a dodrování zákona!
+		AI_Output (self, other, "DIA_Lothar_PERM_01_02"); //Ty bys to mÄ›l vÄ›dÄ›t nejlÃ­p. Jako Älen mÄ›stskÃ© strÃ¡Å¾e musÃ­Å¡ dohlÃ­Å¾et na poÅ™Ã¡dek a dodrÅ¾ovÃ¡nÃ­ zÃ¡kona!
 	}
 	else //KdF oder NOV
 	{

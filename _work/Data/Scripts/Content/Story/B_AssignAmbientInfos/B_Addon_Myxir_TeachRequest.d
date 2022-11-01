@@ -3,37 +3,37 @@
 ///////////////////////////////////////////////////////////////////////
 func void B_DIA_Addon_Myxir_TeachRequest ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_TeachRequest_15_00"); //Nauè mì tomu jazyku.
+	AI_Output	(other, self, "DIA_Addon_Myxir_TeachRequest_15_00"); //NauÄ mÄ› tomu jazyku.
 }; 
 
 func void B_DIA_Addon_Myxir_TeachL1 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_00"); //Zaèneme od nejjednoduššího. Nejdøív tì tedy nauèím jazyku rolníkù.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_01"); //Základním pravidlem písemnıch záznamù rolníkù je, e se zabıvají svìtskımi záleitostmi, jako je práce, láska nebo získávání potravy.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_02"); //Bıval to bìnı jazyk ve mìstech. Pokud jej znáš, dokáeš pochopit vìtšinu zdejších textù.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_00"); //ZaÄneme od nejjednoduÅ¡Å¡Ã­ho. NejdÅ™Ã­v tÄ› tedy nauÄÃ­m jazyku rolnÃ­kÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_01"); //ZÃ¡kladnÃ­m pravidlem pÃ­semnÃ½ch zÃ¡znamÅ¯ rolnÃ­kÅ¯ je, Å¾e se zabÃ½vajÃ­ svÄ›tskÃ½mi zÃ¡leÅ¾itostmi, jako je prÃ¡ce, lÃ¡ska nebo zÃ­skÃ¡vÃ¡nÃ­ potravy.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_02"); //BÃ½val to bÄ›Å¾nÃ½ jazyk ve mÄ›stech. Pokud jej znÃ¡Å¡, dokÃ¡Å¾eÅ¡ pochopit vÄ›tÅ¡inu zdejÅ¡Ã­ch textÅ¯.
 };
 
 func void B_DIA_Addon_Myxir_TeachL2 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_00"); //Jazykem rolníkù u vládneš, ale jazyk váleèníkù je o nìco obtínìjší.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_01"); //Texty v tomto jazyce se vìtšinou tıkají zbraní a válèení. I ty by ses z jejich záznamù mohl lecèemus pøiuèit.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_00"); //Jazykem rolnÃ­kÅ¯ uÅ¾ vlÃ¡dneÅ¡, ale jazyk vÃ¡leÄnÃ­kÅ¯ je o nÄ›co obtÃ­Å¾nÄ›jÅ¡Ã­.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_01"); //Texty v tomto jazyce se vÄ›tÅ¡inou tÃ½kajÃ­ zbranÃ­ a vÃ¡lÄenÃ­. I ty by ses z jejich zÃ¡znamÅ¯ mohl lecÄemus pÅ™iuÄit.
 };
 
 func void B_DIA_Addon_Myxir_TeachL3 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_00"); //Vytøíbenı jazyk knìí je skuteènì obtíné pochopit, ale rád ti s tím pomohu.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_01"); //Je to jazyk posvátnıch textù, které pojednávají o historii a o magii stvoøitelù.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_02"); //Kadı z tìchto textù je skuteènım pokladem, kdy víš, co znamená.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_00"); //VytÅ™Ã­benÃ½ jazyk knÄ›Å¾Ã­ je skuteÄnÄ› obtÃ­Å¾nÃ© pochopit, ale rÃ¡d ti s tÃ­m pomohu.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_01"); //Je to jazyk posvÃ¡tnÃ½ch textÅ¯, kterÃ© pojednÃ¡vajÃ­ o historii a o magii stvoÅ™itelÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_02"); //KaÅ¾dÃ½ z tÄ›chto textÅ¯ je skuteÄnÃ½m pokladem, kdyÅ¾ vÃ­Å¡, co znamenÃ¡.
 };
 
 func void B_DIA_Addon_Myxir_TeachNoMore ()
 {
-	AI_Output 	(self, other,"DIA_Addon_Myxir_TeachNoMore_12_00"); //Víc u tì nauèit nemohu. Jazyk stavitelù jsi u plnì zvládl.
+	AI_Output 	(self, other,"DIA_Addon_Myxir_TeachNoMore_12_00"); //VÃ­c uÅ¾ tÄ› nauÄit nemohu. Jazyk stavitelÅ¯ jsi uÅ¾ plnÄ› zvlÃ¡dl.
 };
 
 func void B_DIA_Addon_Myxir_Teach_LANGUAGE_X ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_Teach_LANGUAGE_X_12_00"); //Bì si vyzkoušet své nové znalosti. Uvidíš, e jazyk stavitelù u ti nebude tak nepochopitelnou záhadou.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Teach_LANGUAGE_X_12_00"); //BÄ›Å¾ si vyzkouÅ¡et svÃ© novÃ© znalosti. UvidÃ­Å¡, Å¾e jazyk stavitelÅ¯ uÅ¾ ti nebude tak nepochopitelnou zÃ¡hadou.
 };
 
 

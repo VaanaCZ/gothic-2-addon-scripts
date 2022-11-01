@@ -34,7 +34,7 @@ instance DIA_Rod_Hello (C_INFO)
 	condition	= DIA_Rod_Hello_Condition;
 	information	= DIA_Rod_Hello_Info;
 	permanent	= FALSE;
-	description	= "Je všechno v poøádku?"; 
+	description	= "Je vÅ¡echno v poÅ™Ã¡dku?"; 
 };                       
 
 FUNC INT DIA_Rod_Hello_Condition()
@@ -47,11 +47,11 @@ FUNC VOID DIA_Rod_Hello_Info()
 	AI_Output (other, self, "DIA_Rod_Hello_15_00"); //Jak se vede?
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Rod_Hello_06_01"); //(pohrdavì) Co ode mì chceš, blbeèku?
+		AI_Output (self, other, "DIA_Rod_Hello_06_01"); //(pohrdavÄ›) Co ode mÄ› chceÅ¡, blbeÄku?
 	
 			if (other.guild == GIL_KDF)
 			{
-				AI_Output (self, other, "DIA_Rod_Hello_06_02"); //Nemohli pro tebe najít v klášteøe místo?
+				AI_Output (self, other, "DIA_Rod_Hello_06_02"); //Nemohli pro tebe najÃ­t v klÃ¡Å¡teÅ™e mÃ­sto?
 			};	
 	};
 };
@@ -68,7 +68,7 @@ instance DIA_Rod_WannaLearn (C_INFO)
 	condition	= DIA_Rod_WannaLearn_Condition;
 	information	= DIA_Rod_WannaLearn_Info;
 	permanent	= TRUE;
-	description	= "Nemùeš mì nauèit, jak zacházet s obouruèními zbranìmi?"; 
+	description	= "NemÅ¯Å¾eÅ¡ mÄ› nauÄit, jak zachÃ¡zet s obouruÄnÃ­mi zbranÄ›mi?"; 
 };                       
 
 FUNC INT DIA_Rod_WannaLearn_Condition()
@@ -81,17 +81,17 @@ FUNC INT DIA_Rod_WannaLearn_Condition()
  
 FUNC VOID DIA_Rod_WannaLearn_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_WannaLearn_15_00"); //Nemùeš mì nauèit, jak zacházet s obouruèními zbranìmi?
+	AI_Output (other, self, "DIA_Rod_WannaLearn_15_00"); //NemÅ¯Å¾eÅ¡ mÄ› nauÄit, jak zachÃ¡zet s obouruÄnÃ­mi zbranÄ›mi?
 		
 	if (Rod_WetteGewonnen == TRUE)
 	|| (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_01"); //Nejsem špatnı bojovník, ale to neznamená, e jsem dobrı uèitel.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_02"); //Ale i tak ti mùu ukázat základy boje s obouruèními zbranìmi.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_01"); //Nejsem Å¡patnÃ½ bojovnÃ­k, ale to neznamenÃ¡, Å¾e jsem dobrÃ½ uÄitel.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_02"); //Ale i tak ti mÅ¯Å¾u ukÃ¡zat zÃ¡klady boje s obouruÄnÃ­mi zbranÄ›mi.
 		
 		if (Npc_HasItems (self, ItMw_2h_Rod) == 0)
 		{
-			AI_Output (self, other, "DIA_Rod_WannaLearn_06_03"); //Tak to jo, pokud mi vrátíš mùj meè.
+			AI_Output (self, other, "DIA_Rod_WannaLearn_06_03"); //Tak to jo, pokud mi vrÃ¡tÃ­Å¡ mÅ¯j meÄ.
 		}
 		else
 		{
@@ -100,8 +100,8 @@ FUNC VOID DIA_Rod_WannaLearn_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //Poslouchej, chlapèe. K tomu, abys mohl nosit obouruèní zbraò, potøebuješ mít velkou sílu.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //Proè se neodplazíš na pastvinu a nezahraješ si tam s oveèkama chodí pešek okolo?
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //Poslouchej, chlapÄe. K tomu, abys mohl nosit obouruÄnÃ­ zbraÅˆ, potÅ™ebujeÅ¡ mÃ­t velkou sÃ­lu.
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //ProÄ se neodplazÃ­Å¡ na pastvinu a nezahrajeÅ¡ si tam s oveÄkama chodÃ­ peÅ¡ek okolo?
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -119,7 +119,7 @@ INSTANCE DIA_Rod_Teach(C_INFO)
 	condition	= DIA_Rod_Teach_Condition;
 	information	= DIA_Rod_Teach_Info;
 	permanent	= TRUE;
-	description = "Chci si zdokonalit své bojové dovednosti v obouruèních zbraních!";
+	description = "Chci si zdokonalit svÃ© bojovÃ© dovednosti v obouruÄnÃ­ch zbranÃ­ch!";
 };                       
 
 FUNC INT DIA_Rod_Teach_Condition()
@@ -132,7 +132,7 @@ FUNC INT DIA_Rod_Teach_Condition()
  
 FUNC VOID DIA_Rod_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //Chci si zdokonalit své bojové dovednosti v obouruèních zbraních!
+	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //Chci si zdokonalit svÃ© bojovÃ© dovednosti v obouruÄnÃ­ch zbranÃ­ch!
 
 	Rod_Merke_2h = other.HitChance[NPC_TALENT_2H];
 	
@@ -146,7 +146,7 @@ FUNC VOID DIA_Rod_Teach_Back ()
 {
 	if (Rod_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //U se zaèínáš lepšit.
+		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //UÅ¾ se zaÄÃ­nÃ¡Å¡ lepÅ¡it.
 	};
 	
 	Info_ClearChoices (DIA_Rod_Teach);
@@ -183,7 +183,7 @@ instance DIA_Rod_WannaJoin (C_INFO)
 	condition	= DIA_Rod_WannaJoin_Condition;
 	information	= DIA_Rod_WannaJoin_Info;
 	permanent	= TRUE;
-	description	= "Chci se pøidat k oldnéøùm!"; 
+	description	= "Chci se pÅ™idat k Å¾oldnÃ©Å™Å¯m!"; 
 };                       
 
 FUNC INT DIA_Rod_WannaJoin_Condition()
@@ -196,32 +196,32 @@ FUNC INT DIA_Rod_WannaJoin_Condition()
  
 FUNC VOID DIA_Rod_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_WannaJoin_15_00"); //Chci se pøidat k oldnéøùm!
+	AI_Output (other, self, "DIA_Rod_WannaJoin_15_00"); //Chci se pÅ™idat k Å¾oldnÃ©Å™Å¯m!
 	
 	if (Npc_HasItems (self, ItMw_2h_Rod) == 0)
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_01"); //Take co kdybys mi pro zaèátek vrátil zpátky mùj meè, co?
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_01"); //TakÅ¾e co kdybys mi pro zaÄÃ¡tek vrÃ¡til zpÃ¡tky mÅ¯j meÄ, co?
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	|| 		(Rod_WetteGewonnen == TRUE)
 	{
 		if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 		{	
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //Fajn. Nemám nic proti tomu.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //Mùeš bojovat, a to je to, co se poèítá.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //Vìtšina hochù tady si z menších šarvátek mezi pøáteli nedìlá tìkou hlavu. Na to si brzy zvykneš.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //Fajn. NemÃ¡m nic proti tomu.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //MÅ¯Å¾eÅ¡ bojovat, a to je to, co se poÄÃ­tÃ¡.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //VÄ›tÅ¡ina hochÅ¯ tady si z menÅ¡Ã­ch Å¡arvÃ¡tek mezi pÅ™Ã¡teli nedÄ›lÃ¡ tÄ›Å¾kou hlavu. Na to si brzy zvykneÅ¡.
 		}
 		else //WetteGewonnen
 		{
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_05"); //No dobøe, máš poøádnı meè. Zbytek se nauèíš.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_05"); //No dobÅ™e, mÃ¡Å¡ poÅ™Ã¡dnÃ½ meÄ. Zbytek se nauÄÃ­Å¡.
 		};
 		
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //Co se mì tıèe, tak já tì beru.
-		B_LogEntry (TOPIC_SLDRespekt,"Budu-li se chtít pøipojit k oldnéøùm, Rod se za mì pøimluví.");
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //Co se mÄ› tÃ½Äe, tak jÃ¡ tÄ› beru.
+		B_LogEntry (TOPIC_SLDRespekt,"Budu-li se chtÃ­t pÅ™ipojit k Å¾oldnÃ©Å™Å¯m, Rod se za mÄ› pÅ™imluvÃ­.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //Tady není místo pro ádnıho strašpytla!
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //Tady nenÃ­ mÃ­sto pro Å¾Ã¡dnÃ½ho straÅ¡pytla!
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -237,7 +237,7 @@ instance DIA_Rod_Duell (C_INFO)
 	condition	= DIA_Rod_Duell_Condition;
 	information	= DIA_Rod_Duell_Info;
 	permanent	= TRUE;
-	description	= "Vypadá to, e ti budu muset ukázat nìkolik trikù, e jo?"; 
+	description	= "VypadÃ¡ to, Å¾e ti budu muset ukÃ¡zat nÄ›kolik trikÅ¯, Å¾e jo?"; 
 };                       
 
 FUNC INT DIA_Rod_Duell_Condition()
@@ -259,14 +259,14 @@ FUNC INT DIA_Rod_Duell_Condition()
  
 FUNC VOID DIA_Rod_Duell_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Duell_15_00"); //Vypadá to, e ti budu muset ukázat nìkolik trikù, e jo?
+	AI_Output (other, self, "DIA_Rod_Duell_15_00"); //VypadÃ¡ to, Å¾e ti budu muset ukÃ¡zat nÄ›kolik trikÅ¯, Å¾e jo?
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_NONE)
 	{
 		AI_Output (self, other, "DIA_Rod_Duell_06_01"); //No tak to zkus!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_Duell_06_02"); //Ty se tohle stìí nauèíš!
+		AI_Output (self, other, "DIA_Rod_Duell_06_02"); //Ty se tohle stÄ›Å¾Ã­ nauÄÃ­Å¡!
 	};
 	
 	AI_StopProcessInfos(self);
@@ -300,11 +300,11 @@ FUNC INT DIA_Rod_StarkGenug_Condition()
 FUNC VOID DIA_Rod_StarkGenug_Info()
 {	
 	AI_Output (other, self, "DIA_Rod_StarkGenug_15_00"); //Jsem dost silnej!
-	AI_Output (self, other, "DIA_Rod_StarkGenug_06_01"); //Blbost! Ty bys nemohl uzvednout dokonce ani meè, jako je ten mùj!
+	AI_Output (self, other, "DIA_Rod_StarkGenug_06_01"); //Blbost! Ty bys nemohl uzvednout dokonce ani meÄ, jako je ten mÅ¯j!
 	
 	Log_CreateTopic (Topic_RodWette,LOG_MISSION);
 	Log_SetTopicStatus (Topic_RodWette,LOG_RUNNING);
-	B_LogEntry (Topic_RodWette,"oldnéø Rod si myslí, e nedokáu uzvednout jeho meè.");
+	B_LogEntry (Topic_RodWette,"Å½oldnÃ©Å™ Rod si myslÃ­, Å¾e nedokÃ¡Å¾u uzvednout jeho meÄ.");
 };	
 	
 	
@@ -319,7 +319,7 @@ instance DIA_Rod_BINStarkGenug (C_INFO)
 	condition	= DIA_Rod_BINStarkGenug_Condition;
 	information	= DIA_Rod_BINStarkGenug_Info;
 	permanent	= FALSE;
-	description	= "Øekl jsem, e JSEM dost silnej!"; 
+	description	= "Å˜ekl jsem, Å¾e JSEM dost silnej!"; 
 };                       
 
 FUNC INT DIA_Rod_BINStarkGenug_Condition()
@@ -334,8 +334,8 @@ FUNC INT DIA_Rod_BINStarkGenug_Condition()
  
 FUNC VOID DIA_Rod_BINStarkGenug_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_BINStarkGenug_15_00"); //Øekl jsem, e JSEM dost silnej!
-	AI_Output (self, other, "DIA_Rod_BINStarkGenug_06_01"); //Chacháa, asi umøu smíchy. Chceš se vsadit?
+	AI_Output (other, self, "DIA_Rod_BINStarkGenug_15_00"); //Å˜ekl jsem, Å¾e JSEM dost silnej!
+	AI_Output (self, other, "DIA_Rod_BINStarkGenug_06_01"); //ChachÃ¡a, asi umÅ™u smÃ­chy. ChceÅ¡ se vsadit?
 };	
 	
 
@@ -353,7 +353,7 @@ instance DIA_Rod_Wette (C_INFO)
 	condition	= DIA_Rod_Wette_Condition;
 	information	= DIA_Rod_Wette_Info;
 	permanent	= TRUE;
-	description	= "Vsadím se, e zvládnu tvùj meè!"; 
+	description	= "VsadÃ­m se, Å¾e zvlÃ¡dnu tvÅ¯j meÄ!"; 
 };                       
 
 FUNC INT DIA_Rod_Wette_Condition()
@@ -370,15 +370,15 @@ FUNC INT DIA_Rod_Wette_Condition()
  
 FUNC VOID DIA_Rod_Wette_Info()
 {	
-	AI_Output (other, self, "DIA_Rod_Wette_15_00"); //Vsadím se, e zvládnu tvùj meè!
-	AI_Output (self, other, "DIA_Rod_Wette_06_01"); //Opravdu? Hmm... (pøemıšlí) O kolik se vsadíme?
-	AI_Output (self, other, "DIA_Rod_Wette_06_02"); //No vypadáš, jako ubohej zaèáteèník. Vsaïme se o 30 zlatıch! Máš vùbec tolik?
+	AI_Output (other, self, "DIA_Rod_Wette_15_00"); //VsadÃ­m se, Å¾e zvlÃ¡dnu tvÅ¯j meÄ!
+	AI_Output (self, other, "DIA_Rod_Wette_06_01"); //Opravdu? Hmm... (pÅ™emÃ½Å¡lÃ­) O kolik se vsadÃ­me?
+	AI_Output (self, other, "DIA_Rod_Wette_06_02"); //No vypadÃ¡Å¡, jako ubohej zaÄÃ¡teÄnÃ­k. VsaÄme se o 30 zlatÃ½ch! MÃ¡Å¡ vÅ¯bec tolik?
 		
 	Info_ClearChoices (DIA_Rod_Wette);
 	Info_AddChoice (DIA_Rod_Wette, "Ne.", DIA_Rod_Wette_No);
-	Info_AddChoice (DIA_Rod_Wette, "Jasnì.", DIA_Rod_Wette_Yes);
+	Info_AddChoice (DIA_Rod_Wette, "JasnÄ›.", DIA_Rod_Wette_Yes);
 	
-	B_LogEntry (Topic_RodWette,"Rod se se mnou vsadil o 30 zlaákù, e neuzvednu jeho meè.");
+	B_LogEntry (Topic_RodWette,"Rod se se mnou vsadil o 30 zlaÅ¥Ã¡kÅ¯, Å¾e neuzvednu jeho meÄ.");
 };
 
 func void DIA_Rod_Wette_No()
@@ -391,15 +391,15 @@ func void DIA_Rod_Wette_No()
 	
 func void DIA_Rod_Wette_Yes()
 {
-	AI_Output (other, self, "DIA_Rod_Wette_Yes_15_00"); //Jasnì.
-	AI_Output (self, other, "DIA_Rod_Wette_Yes_06_01"); //Nejdøív se kouknu...
+	AI_Output (other, self, "DIA_Rod_Wette_Yes_15_00"); //JasnÄ›.
+	AI_Output (self, other, "DIA_Rod_Wette_Yes_06_01"); //NejdÅ™Ã­v se kouknu...
 	
 	if (B_GiveInvItems (other,self, itmi_gold, 30))
 	{
 		Rod_WetteAngenommen = TRUE;
 			
 		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_02"); //Tady jsou!
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_03"); //(škodolibì) V poøádku, podíváme se teda, jak si silnej...
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_03"); //(Å¡kodolibÄ›) V poÅ™Ã¡dku, podÃ­vÃ¡me se teda, jak si silnej...
 		
 		B_GiveInvItems (self, other, ItMw_2h_Rod, 1);
 		
@@ -409,34 +409,34 @@ func void DIA_Rod_Wette_Yes()
 			AI_EquipBestMeleeWeapon	(other);
 			AI_ReadyMeleeWeapon		(other);
 							
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//Tak co øíkáš na mojí sílu?!
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//(zmatenı) Vypadá to, es mì dostal.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//Tohle jsem vùbec neèekal. Opravdu nevypadáš na to, e máš v sobì tolik síly.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//No - øekl bych, e jsem právì pøišel o 30 zlatıch. Tady jsou.
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//Tak co Å™Ã­kÃ¡Å¡ na mojÃ­ sÃ­lu?!
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//(zmatenÃ½) VypadÃ¡ to, Å¾es mÄ› dostal.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//Tohle jsem vÅ¯bec neÄekal. Opravdu nevypadÃ¡Å¡ na to, Å¾e mÃ¡Å¡ v sobÄ› tolik sÃ­ly.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//No - Å™ekl bych, Å¾e jsem prÃ¡vÄ› pÅ™iÅ¡el o 30 zlatÃ½ch. Tady jsou.
 			B_GiveInvItems (self, other, itmi_gold, 60);
 			Rod_WetteGewonnen = TRUE;
 			B_GivePlayerXP (XP_Rod); 
 		}
 		else
 		{
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //Tuhle zbraò neudrím.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//(smìje se) To ti pøece øíkám!
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //Tuhle zbraÅˆ neudrÅ¾Ã­m.
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//(smÄ›je se) To ti pÅ™ece Å™Ã­kÃ¡m!
 		};
 		
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_10");//A teï mi dej zpátky mùj meè.
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_10");//A teÄ mi dej zpÃ¡tky mÅ¯j meÄ.
 		
 		Info_ClearChoices (DIA_Rod_Wette);
 		
 		//Npc_RemoveInvItems (other,ItMw_2h_Rod,((Npc_HasItems (other,ItMw_2h_Rod))-1));		//Hoshi: Wilder HAck bitte stehen lassen!
 		// Mike: AAAARGH!!!! genau DAS war der Fehler!!!
 			
-		Info_AddChoice (DIA_Rod_Wette, "Myslím, e ne.", DIA_Rod_Wette_KeepIt);
-		Info_AddChoice (DIA_Rod_Wette, "Tumáš.", DIA_Rod_Wette_GiveBack);
+		Info_AddChoice (DIA_Rod_Wette, "MyslÃ­m, Å¾e ne.", DIA_Rod_Wette_KeepIt);
+		Info_AddChoice (DIA_Rod_Wette, "TumÃ¡Å¡.", DIA_Rod_Wette_GiveBack);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_11"); //Kam jsem ho tak mohl dát...
-		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_12"); //To dává smysl. Vra se zpátky, a budeš mít peníze na sázku.
+		AI_Output (other, self, "DIA_Rod_Wette_Yes_15_11"); //Kam jsem ho tak mohl dÃ¡t...
+		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_12"); //To dÃ¡vÃ¡ smysl. VraÅ¥ se zpÃ¡tky, aÅ¾ budeÅ¡ mÃ­t penÃ­ze na sÃ¡zku.
 		
 		Info_ClearChoices (DIA_Rod_Wette);
 	};
@@ -445,9 +445,9 @@ func void DIA_Rod_Wette_Yes()
 func void DIA_Rod_Wette_GiveBack()
 {
 	AI_RemoveWeapon (other);
-	AI_Output (other, self, "DIA_Rod_Wette_GiveBack_15_00"); //Tumáš.
+	AI_Output (other, self, "DIA_Rod_Wette_GiveBack_15_00"); //TumÃ¡Å¡.
 	Info_ClearChoices (DIA_Rod_Wette);
-	Info_AddChoice (DIA_Rod_Wette, "(pøedat mu zbraò)", DIA_Rod_Wette_GiveBack2);
+	Info_AddChoice (DIA_Rod_Wette, "(pÅ™edat mu zbraÅˆ)", DIA_Rod_Wette_GiveBack2);
 };
 
 func void DIA_Rod_Wette_GiveBack2()
@@ -455,17 +455,17 @@ func void DIA_Rod_Wette_GiveBack2()
 	B_GiveInvItems (other, self, ItMw_2h_Rod, 1);		
 	if (Rod_WetteGewonnen == FALSE)
 	{
-		AI_Output (self, other, "DIA_Rod_Wette_GiveBack_06_01"); //Nakonec nejsi stejnì nic jinıho ne strašpytel!
+		AI_Output (self, other, "DIA_Rod_Wette_GiveBack_06_01"); //Nakonec nejsi stejnÄ› nic jinÃ½ho neÅ¾ straÅ¡pytel!
 	};
 	Info_ClearChoices (DIA_Rod_Wette);
 };
 
 func void DIA_Rod_Wette_KeepIt()
 {
-	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_00"); //Myslím, e ne.
-	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //(vıhrunì) Co to bylo?
-	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Myslím, e si ho ještì  chvíli nechám.
-	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_03"); //Poèkej, ty parchante!
+	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_00"); //MyslÃ­m, Å¾e ne.
+	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //(vÃ½hruÅ¾nÄ›) Co to bylo?
+	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //MyslÃ­m, Å¾e si ho jeÅ¡tÄ›  chvÃ­li nechÃ¡m.
+	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_03"); //PoÄkej, ty parchante!
 	
 	Info_ClearChoices (DIA_Rod_Wette);
 	AI_StopProcessInfos (self);
@@ -474,7 +474,7 @@ func void DIA_Rod_Wette_KeepIt()
 
 
 // ************************************************************
-// 			  				Schwert zurück
+// 			  				Schwert zurÃ¼ck
 // ************************************************************
 var int Rod_SchwertXPGiven;
 
@@ -485,7 +485,7 @@ instance DIA_Rod_GiveItBack (C_INFO)
 	condition	= DIA_Rod_GiveItBack_Condition;
 	information	= DIA_Rod_GiveItBack_Info;
 	permanent	= TRUE;
-	description	= "Tady máš meè zpátky!"; 
+	description	= "Tady mÃ¡Å¡ meÄ zpÃ¡tky!"; 
 };                       
 
 FUNC INT DIA_Rod_GiveItBack_Condition()
@@ -500,8 +500,8 @@ FUNC VOID DIA_Rod_GiveItBack_Info()
 {	
 	B_GiveInvItems (other, self, ItMw_2h_Rod, 1);
 	
-	AI_Output (other, self, "DIA_Rod_GiveItBack_15_00"); //Tady máš meè zpátky!
-	AI_Output (self, other, "DIA_Rod_GiveItBack_06_01"); //Byl nejvyšší èas!
+	AI_Output (other, self, "DIA_Rod_GiveItBack_15_00"); //Tady mÃ¡Å¡ meÄ zpÃ¡tky!
+	AI_Output (self, other, "DIA_Rod_GiveItBack_06_01"); //Byl nejvyÅ¡Å¡Ã­ Äas!
 	
 	if (Rod_SchwertXPGiven == FALSE)
 	{
@@ -543,28 +543,28 @@ FUNC VOID DIA_Rod_PERM_Info()
 			if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 			&& (Rod_WetteGewonnen == FALSE)
 			{
-				AI_Output (self, other, "DIA_Rod_PERM_06_01"); //To tì nemusí zajímat, padavko.
+				AI_Output (self, other, "DIA_Rod_PERM_06_01"); //To tÄ› nemusÃ­ zajÃ­mat, padavko.
 				Rod_SchwachGesagt = TRUE;
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Rod_PERM_06_02"); //Jsem zvìdavı, jestli ti dovolí se k nim pøidat.
+				AI_Output (self, other, "DIA_Rod_PERM_06_02"); //Jsem zvÄ›davÃ½, jestli ti dovolÃ­ se k nim pÅ™idat.
 			};
 		}
 		else if (other.guild == GIL_SLD)
 		|| 		(other.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Rod_PERM_06_03"); //Jsi jedním z nás, chlapèe. Tak se nìjak dohodneme.
+			AI_Output (self, other, "DIA_Rod_PERM_06_03"); //Jsi jednÃ­m z nÃ¡s, chlapÄe. Tak se nÄ›jak dohodneme.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Rod_PERM_06_04"); //Ty sem nepatøíš, radši by ses mìl jít poflakovat nìkam jinam!
+			AI_Output (self, other, "DIA_Rod_PERM_06_04"); //Ty sem nepatÅ™Ã­Å¡, radÅ¡i by ses mÄ›l jÃ­t poflakovat nÄ›kam jinam!
 		};
 	}
 
 	if (Kapitel >= 3)
 	{
-		AI_Output (self, other, "DIA_Rod_PERM_06_05"); //Jestli jsou všechny ty povídaèky o dracích skuteènì pravdivé, mìli bychom dát pár lidí dohromady a jít ty mrchy pozabíjet!
+		AI_Output (self, other, "DIA_Rod_PERM_06_05"); //Jestli jsou vÅ¡echny ty povÃ­daÄky o dracÃ­ch skuteÄnÄ› pravdivÃ©, mÄ›li bychom dÃ¡t pÃ¡r lidÃ­ dohromady a jÃ­t ty mrchy pozabÃ­jet!
 	};
 
 	//### ab Kap 4 in OW ###

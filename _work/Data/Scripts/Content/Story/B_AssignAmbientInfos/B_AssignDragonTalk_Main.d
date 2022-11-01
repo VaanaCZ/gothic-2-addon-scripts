@@ -22,43 +22,43 @@ FUNC INT DIA_DragonTalk_Main_1_Condition()
 FUNC VOID DIA_DragonTalk_Main_1_Info()
 {	
 
-	AI_Output			(other, self, "DIA_DragonTalk_Main_1_15_00"); //Sluebníku zla. Proè ses tu objevil? Pøišel jsi jen kvùli tomu, aby rozséval dìs a hrùzu?
-	AI_Output			(self, other, "DIA_DragonTalk_Main_1_20_01"); //Nejvyšší zájmy našeho shromádìní ti zùstanou utajeny èlovíèku.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_1_15_00"); //SluÅ¾ebnÃ­ku zla. ProÄ ses tu objevil? PÅ™iÅ¡el jsi jen kvÅ¯li tomu, aby rozsÃ©val dÄ›s a hrÅ¯zu?
+	AI_Output			(self, other, "DIA_DragonTalk_Main_1_20_01"); //NejvyÅ¡Å¡Ã­ zÃ¡jmy naÅ¡eho shromÃ¡Å¾dÄ›nÃ­ ti zÅ¯stanou utajeny ÄlovÃ­Äku.
 
-	Info_AddChoice	(DIA_DragonTalk_Main_1, "Jak se dostanu za ostatními draky?", DIA_DragonTalk_Main_1_reden );
-	Info_AddChoice	(DIA_DragonTalk_Main_1, "Co u Innose musím udìlat, abych tì vykázal z domova lidského pokolení?", DIA_DragonTalk_Main_1_verbannen );
+	Info_AddChoice	(DIA_DragonTalk_Main_1, "Jak se dostanu za ostatnÃ­mi draky?", DIA_DragonTalk_Main_1_reden );
+	Info_AddChoice	(DIA_DragonTalk_Main_1, "Co u Innose musÃ­m udÄ›lat, abych tÄ› vykÃ¡zal z domova lidskÃ©ho pokolenÃ­?", DIA_DragonTalk_Main_1_verbannen );
 
 	DragonTalk_Exit_Free = TRUE;
 };
 func void DIA_DragonTalk_Main_1_verbannen ()
 {
-	AI_Output			(other, self, "DIA_DragonTalk_MAIN_1_verbannen_15_00"); //Co u Innose musím udìlat, abych tì vykázal z domova lidského pokolení?
-	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_01"); //(smích) Pøedtím, ne budeš moci jednat, musíš nejprve poznat zájmy našeho shromádìní.
-	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_02"); //Nicménì, nikdo ti to dobrovolnì neprozradí.
-	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_03"); //Jen samotné Oko mùe rozvázat naše jazyky a prozradit naše skuteèné zámìry.
-	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_04"); //V kadém pøípadì ti to bude k nièemu, a budeš mrtvı.
+	AI_Output			(other, self, "DIA_DragonTalk_MAIN_1_verbannen_15_00"); //Co u Innose musÃ­m udÄ›lat, abych tÄ› vykÃ¡zal z domova lidskÃ©ho pokolenÃ­?
+	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_01"); //(smÃ­ch) PÅ™edtÃ­m, neÅ¾ budeÅ¡ moci jednat, musÃ­Å¡ nejprve poznat zÃ¡jmy naÅ¡eho shromÃ¡Å¾dÄ›nÃ­.
+	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_02"); //NicmÃ©nÄ›, nikdo ti to dobrovolnÄ› neprozradÃ­.
+	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_03"); //Jen samotnÃ© Oko mÅ¯Å¾e rozvÃ¡zat naÅ¡e jazyky a prozradit naÅ¡e skuteÄnÃ© zÃ¡mÄ›ry.
+	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_04"); //V kaÅ¾dÃ©m pÅ™Ã­padÄ› ti to bude k niÄemu, aÅ¾ budeÅ¡ mrtvÃ½.
 	
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_05"); //Doneslo se k nám, e sis zvolil cestu drakobijce.
-		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_06"); //Proto jsme do vašeho svìta vyslali naše potomky, aby zajistili pokraèování našeho starobylého rodu.
-		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_07"); //Jsi ztracen, èlovíèku.
+		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_05"); //Doneslo se k nÃ¡m, Å¾e sis zvolil cestu drakobijce.
+		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_06"); //Proto jsme do vaÅ¡eho svÄ›ta vyslali naÅ¡e potomky, aby zajistili pokraÄovÃ¡nÃ­ naÅ¡eho starobylÃ©ho rodu.
+		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_07"); //Jsi ztracen, ÄlovÃ­Äku.
 		
 		Log_CreateTopic (TOPIC_DRACHENEIER, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_DRACHENEIER, LOG_RUNNING);
-		B_LogEntry (TOPIC_DRACHENEIER,"Jeden z drakù mumlal nìco o 'potomstvu' a o pokraèování rodu. Obávám se, e svá mláïata roznesli po celém civilizovaném svìtì."); 
+		B_LogEntry (TOPIC_DRACHENEIER,"Jeden z drakÅ¯ mumlal nÄ›co o 'potomstvu' a o pokraÄovÃ¡nÃ­ rodu. ObÃ¡vÃ¡m se, Å¾e svÃ¡ mlÃ¡Äata roznesli po celÃ©m civilizovanÃ©m svÄ›tÄ›."); 
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_08"); //Oko ti zajistilo pøístup. Nicménì a samotnı boj rozhodne, jestli jsi mì vùbec hoden.
+		AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_verbannen_20_08"); //Oko ti zajistilo pÅ™Ã­stup. NicmÃ©nÄ› aÅ¾ samotnÃ½ boj rozhodne, jestli jsi mÄ› vÅ¯bec hoden.
 	};
 };
 
 func void DIA_DragonTalk_Main_1_reden ()
 {
-	AI_Output			(other, self, "DIA_DragonTalk_MAIN_1_reden_15_00"); //Jak se dostanu za ostatními draky?
-	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_reden_20_01"); //Pouze mé srdce ti mùe pomoci obnovit moc Oka.
-	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_reden_20_02"); //Ale nikdy se ti nepodaøí vytrhnout mi srdce.
+	AI_Output			(other, self, "DIA_DragonTalk_MAIN_1_reden_15_00"); //Jak se dostanu za ostatnÃ­mi draky?
+	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_reden_20_01"); //Pouze mÃ© srdce ti mÅ¯Å¾e pomoci obnovit moc Oka.
+	AI_Output			(self, other, "DIA_DragonTalk_MAIN_1_reden_20_02"); //Ale nikdy se ti nepodaÅ™Ã­ vytrhnout mi srdce.
 
 };
 
@@ -73,7 +73,7 @@ INSTANCE DIA_DragonTalk_Main_2(C_INFO)
 	condition	= DIA_DragonTalk_Main_2_Condition;
 	information	= DIA_DragonTalk_Main_2_Info;
 	permanent	= FALSE;
-	description = "Kdo tì sem poslal?";
+	description = "Kdo tÄ› sem poslal?";
 };                       
 
 FUNC INT DIA_DragonTalk_Main_2_Condition()
@@ -86,14 +86,14 @@ FUNC INT DIA_DragonTalk_Main_2_Condition()
 
 FUNC VOID DIA_DragonTalk_Main_2_Info()
 {	
-	AI_Output			(other, self, "DIA_DragonTalk_Main_2_15_00"); //Kdo ti rozkazuje? Kdo tì sem poslal?
-	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_01"); //Naše budoucnost a dobré bydlo je v rukou Pána vyuívajícího Mocné slovo. U brzo mu nebude nikdo schopen vzdorovat.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_02"); //Jeho dlouhé ruce vdycky dosahovaly daleko za hranice øíše mrtvıch. Jeho pøíchod naplòuje duchy noci radostnım oèekáváním.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_03"); //Pøemùe vaše lidské pokolení a stane se vládcem svìta.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_04"); //V temnotì nejsme nièím jinım ne pøisluhovaèi jeho tvùrèí síly.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_05"); //Pán sestoupí mezi vás a pozvedne vaše zuboená tìla z popela a vyuije jich ke zmìnì bìhu svìta.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_2_15_00"); //Kdo ti rozkazuje? Kdo tÄ› sem poslal?
+	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_01"); //NaÅ¡e budoucnost a dobrÃ© bydlo je v rukou PÃ¡na vyuÅ¾Ã­vajÃ­cÃ­ho MocnÃ© slovo. UÅ¾ brzo mu nebude nikdo schopen vzdorovat.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_02"); //Jeho dlouhÃ© ruce vÅ¾dycky dosahovaly daleko za hranice Å™Ã­Å¡e mrtvÃ½ch. Jeho pÅ™Ã­chod naplÅˆuje duchy noci radostnÃ½m oÄekÃ¡vÃ¡nÃ­m.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_03"); //PÅ™emÅ¯Å¾e vaÅ¡e lidskÃ© pokolenÃ­ a stane se vlÃ¡dcem svÄ›ta.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_04"); //V temnotÄ› nejsme niÄÃ­m jinÃ½m neÅ¾ pÅ™isluhovaÄi jeho tvÅ¯rÄÃ­ sÃ­ly.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_2_20_05"); //PÃ¡n sestoupÃ­ mezi vÃ¡s a pozvedne vaÅ¡e zuboÅ¾enÃ¡ tÄ›la z popela a vyuÅ¾ije jich ke zmÄ›nÄ› bÄ›hu svÄ›ta.
 
-	B_LogEntry (TOPIC_DRACHENJAGD,"Draci nejsou vlastními pány. Slouí vládci, kterı jim nedovoluje vyslovit nic ne mlhavá proroctví, jako e náš pán pøijde, znièí celı svìt a tak dále. Prostì obvyklé vìci."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"Draci nejsou vlastnÃ­mi pÃ¡ny. SlouÅ¾Ã­ vlÃ¡dci, kterÃ½ jim nedovoluje vyslovit nic neÅ¾ mlhavÃ¡ proroctvÃ­, jako Å¾e nÃ¡Å¡ pÃ¡n pÅ™ijde, zniÄÃ­ celÃ½ svÄ›t a tak dÃ¡le. ProstÄ› obvyklÃ© vÄ›ci."); 
 	
 	DragonTalk_Exit_Free = TRUE;
 };
@@ -109,7 +109,7 @@ INSTANCE DIA_DragonTalk_Main_3(C_INFO)
 	condition	= DIA_DragonTalk_Main_3_Condition;
 	information	= DIA_DragonTalk_Main_3_Info;
 	permanent	= FALSE;
-	description = "Jak mùu zabít vašeho pána?";
+	description = "Jak mÅ¯Å¾u zabÃ­t vaÅ¡eho pÃ¡na?";
 };                       
 
 FUNC INT DIA_DragonTalk_Main_3_Condition()
@@ -122,29 +122,29 @@ FUNC INT DIA_DragonTalk_Main_3_Condition()
 
 FUNC VOID DIA_DragonTalk_Main_3_Info()
 {	
-	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_00"); //Jak mùu zabít vašeho Pána?
-	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_01"); //Je všemohoucí a témìø neporazitelnı. Pokud budeš tak pošetilı a pøesto se s ním setkáš, zemøeš pomalou a bolestivou smrtí.
-	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_02"); //To neslyším poprvé. Témìø úplná nezranitelnost neznamená, e ho nemùu zabít.
-	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_03"); //No, skonèeme to: Co musím udìlat?
-	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_04"); //Aby ses mohl postavit mému Pánu, musíš si opatøit pøedmìty, je on není schopen jakkoli získat.
-	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_05"); //A co to má bıt?
-	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_06"); //Musíš získat tu nejlepší zbroj, jakou vaše pozemská spoleènost kdy poznala, a chránit si jí svou kùi.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_00"); //Jak mÅ¯Å¾u zabÃ­t vaÅ¡eho PÃ¡na?
+	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_01"); //Je vÅ¡emohoucÃ­ a tÃ©mÄ›Å™ neporazitelnÃ½. Pokud budeÅ¡ tak poÅ¡etilÃ½ a pÅ™esto se s nÃ­m setkÃ¡Å¡, zemÅ™eÅ¡ pomalou a bolestivou smrtÃ­.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_02"); //To neslyÅ¡Ã­m poprvÃ©. TÃ©mÄ›Å™ ÃºplnÃ¡ nezranitelnost neznamenÃ¡, Å¾e ho nemÅ¯Å¾u zabÃ­t.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_03"); //No, skonÄeme to: Co musÃ­m udÄ›lat?
+	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_04"); //Aby ses mohl postavit mÃ©mu PÃ¡nu, musÃ­Å¡ si opatÅ™it pÅ™edmÄ›ty, jeÅ¾ on nenÃ­ schopen jakkoli zÃ­skat.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_3_15_05"); //A co to mÃ¡ bÃ½t?
+	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_06"); //MusÃ­Å¡ zÃ­skat tu nejlepÅ¡Ã­ zbroj, jakou vaÅ¡e pozemskÃ¡ spoleÄnost kdy poznala, a chrÃ¡nit si jÃ­ svou kÅ¯Å¾i.
 
 	if (other.guild == GIL_PAL) || (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Dragons_Add_20_01"); //Potøebuješ meè, jen byl posvìcen vaším bohem.
+		AI_Output (self, other, "DIA_Dragons_Add_20_01"); //PotÅ™ebujeÅ¡ meÄ, jenÅ¾ byl posvÄ›cen vaÅ¡Ã­m bohem.
 	}
 	else if (other.guild == GIL_KDF) || (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Dragons_Add_20_02"); //Potøebuješ runu, která bude vyrobena jen pro tebe.
+		AI_Output (self, other, "DIA_Dragons_Add_20_02"); //PotÅ™ebujeÅ¡ runu, kterÃ¡ bude vyrobena jen pro tebe.
 	}
 	else //Sld - Djg
 	{	
-		AI_Output (self, other, "DIA_Dragons_Add_20_00"); //Potøebuješ zbraò, ji vyrobili jen pro tvé pouití.
+		AI_Output (self, other, "DIA_Dragons_Add_20_00"); //PotÅ™ebujeÅ¡ zbraÅˆ, jiÅ¾ vyrobili jen pro tvÃ© pouÅ¾itÃ­.
 	};
 	
-	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_08"); //Ale tou nejtìší podmínkou je, e musíš získat pìt spoleèníkù, kteøí budou ochotni tì následovat i na druhı bøeh.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_09"); //Jedinì tak se mùeš odváit postavit našemu Pánu.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_08"); //Ale tou nejtÄ›Å¾Å¡Ã­ podmÃ­nkou je, Å¾e musÃ­Å¡ zÃ­skat pÄ›t spoleÄnÃ­kÅ¯, kteÅ™Ã­ budou ochotni tÄ› nÃ¡sledovat i na druhÃ½ bÅ™eh.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_3_20_09"); //JedinÄ› tak se mÅ¯Å¾eÅ¡ odvÃ¡Å¾it postavit naÅ¡emu PÃ¡nu.
 	
 	DragonTalk_Exit_Free = TRUE;
 };
@@ -160,7 +160,7 @@ INSTANCE DIA_DragonTalk_Main_4(C_INFO)
 	condition	= DIA_DragonTalk_Main_4_Condition;
 	information	= DIA_DragonTalk_Main_4_Info;
 	permanent	= FALSE;
-	description 	= "Jak mùu nalézt vašeho pána?";
+	description 	= "Jak mÅ¯Å¾u nalÃ©zt vaÅ¡eho pÃ¡na?";
 };                       
 
 FUNC INT DIA_DragonTalk_Main_4_Condition()
@@ -173,17 +173,17 @@ FUNC INT DIA_DragonTalk_Main_4_Condition()
 
 FUNC VOID DIA_DragonTalk_Main_4_Info()
 {	
-	AI_Output			(other, self, "DIA_DragonTalk_Main_4_15_00"); //Jak mùu nalézt vašeho Pána?
-	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_01"); //Postavil si úkryt v pevné skále Irdorathskıch síní a èeká tam na svùj osud.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_02"); //Do té doby, ne bude schopen obnovit podobu svìta, je mu byla pøedurèena, èeká tam v hluboké meditaci a...
-	AI_Output			(other, self, "DIA_DragonTalk_Main_4_15_03"); //Ušetøi mì podrobností. Prostì mi øekni, kde najdu ty Irdorathské sínì.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_04"); //Ha, ha, ha. Zklamal jsi mì, èlovíèku. Dokázals pøekonat všechna nebezpeèí a porazit všechny z nás, a teï skonèíš na tom, e nedokáeš pochopit vyšší vìdìní.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_05"); //Pokud ti Irdorath nic neøíká, pak udìláš líp, kdy zajdeš za vašimi mágy a poádáš je, aby si uspoøádali své svìtské záleitosti.
-	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_06"); //Je více ne zøejmé, e ještì nejsi pøipraven na tìké bøímì vyššího vzdìlání.
+	AI_Output			(other, self, "DIA_DragonTalk_Main_4_15_00"); //Jak mÅ¯Å¾u nalÃ©zt vaÅ¡eho PÃ¡na?
+	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_01"); //Postavil si Ãºkryt v pevnÃ© skÃ¡le IrdorathskÃ½ch sÃ­nÃ­ a ÄekÃ¡ tam na svÅ¯j osud.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_02"); //Do tÃ© doby, neÅ¾ bude schopen obnovit podobu svÄ›ta, jeÅ¾ mu byla pÅ™edurÄena, ÄekÃ¡ tam v hlubokÃ© meditaci a...
+	AI_Output			(other, self, "DIA_DragonTalk_Main_4_15_03"); //UÅ¡etÅ™i mÄ› podrobnostÃ­. ProstÄ› mi Å™ekni, kde najdu ty IrdorathskÃ© sÃ­nÄ›.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_04"); //Ha, ha, ha. Zklamal jsi mÄ›, ÄlovÃ­Äku. DokÃ¡zals pÅ™ekonat vÅ¡echna nebezpeÄÃ­ a porazit vÅ¡echny z nÃ¡s, a teÄ skonÄÃ­Å¡ na tom, Å¾e nedokÃ¡Å¾eÅ¡ pochopit vyÅ¡Å¡Ã­ vÄ›dÄ›nÃ­.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_05"); //Pokud ti Irdorath nic neÅ™Ã­kÃ¡, pak udÄ›lÃ¡Å¡ lÃ­p, kdyÅ¾ zajdeÅ¡ za vaÅ¡imi mÃ¡gy a poÅ¾Ã¡dÃ¡Å¡ je, aby si uspoÅ™Ã¡dali svÃ© svÄ›tskÃ© zÃ¡leÅ¾itosti.
+	AI_Output			(self, other, "DIA_DragonTalk_Main_4_20_06"); //Je vÃ­ce neÅ¾ zÅ™ejmÃ©, Å¾e jeÅ¡tÄ› nejsi pÅ™ipraven na tÄ›Å¾kÃ© bÅ™Ã­mÄ› vyÅ¡Å¡Ã­ho vzdÄ›lÃ¡nÃ­.
 	 
 	Log_CreateTopic (TOPIC_BuchHallenVonIrdorath, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_BuchHallenVonIrdorath, LOG_RUNNING);
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Pán drakù prı sídlí na mohutné skále v posvátnıch Irdorathskıch síních. Hmm. To je mi nìjak povìdomé - kde jsem o tom jenom èetl?"); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"PÃ¡n drakÅ¯ prÃ½ sÃ­dlÃ­ na mohutnÃ© skÃ¡le v posvÃ¡tnÃ½ch IrdorathskÃ½ch sÃ­nÃ­ch. Hmm. To je mi nÄ›jak povÄ›domÃ© - kde jsem o tom jenom Äetl?"); 
 
 	B_NPC_IsAliveCheck (OLDWORLD_ZEN);  //Joly: bringt Angar und Gorn in die NW.
 	DragonTalk_Exit_Free = TRUE;

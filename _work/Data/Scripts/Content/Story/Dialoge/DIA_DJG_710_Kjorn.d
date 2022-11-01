@@ -45,11 +45,11 @@ FUNC INT DIA_Kjorn_Hello_Condition()
 
 FUNC VOID DIA_Kjorn_Hello_Info()
 {
-	AI_Output	(self ,other,"DIA_Kjorn_Hello_06_00"); //Hej, pojï sem!
-	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_01"); //Co chceš?
-	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_02"); //Tohle údolí je nebezpeèné místo a bez poøádného vybavení budeš mrtvej, ani se nenadìješ.
-	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_03"); //Pøedpokládám, e to poøádné vybavení najdu u TEBE.
-	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_04"); //To se vsaï. Dokonce ti ho mùu prodat.
+	AI_Output	(self ,other,"DIA_Kjorn_Hello_06_00"); //Hej, pojÄ sem!
+	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_01"); //Co chceÅ¡?
+	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_02"); //Tohle ÃºdolÃ­ je nebezpeÄnÃ© mÃ­sto a bez poÅ™Ã¡dnÃ©ho vybavenÃ­ budeÅ¡ mrtvej, ani se nenadÄ›jeÅ¡.
+	AI_Output	(other,self ,"DIA_Kjorn_Hello_15_03"); //PÅ™edpoklÃ¡dÃ¡m, Å¾e to poÅ™Ã¡dnÃ© vybavenÃ­ najdu u TEBE.
+	AI_Output 	(self ,other,"DIA_Kjorn_Hello_06_04"); //To se vsaÄ. Dokonce ti ho mÅ¯Å¾u prodat.
 };
 
 //*********************************************************************
@@ -63,7 +63,7 @@ INSTANCE DIA_Kjorn_TRADE   (C_INFO)
 	information = DIA_Kjorn_TRADE_Info;
 	Trade		= TRUE;
 	permanent   = TRUE;
-	description	= "Co mi mùeš nabídnout?";
+	description	= "Co mi mÅ¯Å¾eÅ¡ nabÃ­dnout?";
 				
 };
 
@@ -75,7 +75,7 @@ FUNC INT DIA_Kjorn_TRADE_Condition()
 FUNC VOID DIA_Kjorn_TRADE_Info()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other,self ,"DIA_Kjorn_TRADE_15_00"); //Co mi mùeš nabídnout?
+	AI_Output	(other,self ,"DIA_Kjorn_TRADE_15_00"); //Co mi mÅ¯Å¾eÅ¡ nabÃ­dnout?
 
 };
 
@@ -89,7 +89,7 @@ INSTANCE DIA_Kjorn_SellInfos   (C_INFO)
 	condition   = DIA_Kjorn_SellInfos_Condition;
 	information = DIA_Kjorn_SellInfos_Info;
 	permanent   = FALSE;
-	description	= "Prodáváš taky informace?";
+	description	= "ProdÃ¡vÃ¡Å¡ taky informace?";
 				
 };
 
@@ -100,14 +100,14 @@ FUNC INT DIA_Kjorn_SellInfos_Condition()
 
 FUNC VOID DIA_Kjorn_SellInfos_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_SellInfos_15_00"); //Prodáváš taky informace?
-	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_01"); //Pøijde na to. Pokud je dobrá cena, øeknu všechno, co vím.
+	AI_Output	(other,self ,"DIA_Kjorn_SellInfos_15_00"); //ProdÃ¡vÃ¡Å¡ taky informace?
+	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_01"); //PÅ™ijde na to. Pokud je dobrÃ¡ cena, Å™eknu vÅ¡echno, co vÃ­m.
 	AI_Output 	(other,self ,"DIA_Kjorn_SellInfos_15_02"); //Kolik?
-	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_03"); //Hmm... tìko øíct. Ale myslím, e 50 zlatıch za kadou poskytnutou informaci je docela dobrá cena.
+	AI_Output 	(self ,other,"DIA_Kjorn_SellInfos_06_03"); //Hmm... tÄ›Å¾ko Å™Ã­ct. Ale myslÃ­m, Å¾e 50 zlatÃ½ch za kaÅ¾dou poskytnutou informaci je docela dobrÃ¡ cena.
 };
 
 //*********************************************************************
-//	Ich brauche Infos über.. 
+//	Ich brauche Infos Ã¼ber.. 
 //*********************************************************************
 INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 {
@@ -116,7 +116,7 @@ INSTANCE DIA_Kjorn_BuyInfos   (C_INFO)
 	condition   = DIA_Kjorn_BuyInfos_Condition;
 	information = DIA_Kjorn_BuyInfos_Info;
 	permanent   = TRUE;
-	description	= "Potøebuju nìjaké informace.";
+	description	= "PotÅ™ebuju nÄ›jakÃ© informace.";
 				
 };
 
@@ -130,11 +130,11 @@ FUNC INT DIA_Kjorn_BuyInfos_Condition()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_BuyInfos_15_00"); //Potøebuju nìjaké informace.
-	AI_Output 	(self ,other,"DIA_Kjorn_BuyInfos_06_01"); //50 zlatıch!
+	AI_Output	(other,self ,"DIA_Kjorn_BuyInfos_15_00"); //PotÅ™ebuju nÄ›jakÃ© informace.
+	AI_Output 	(self ,other,"DIA_Kjorn_BuyInfos_06_01"); //50 zlatÃ½ch!
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
-	Info_AddChoice (DIA_Kjorn_BuyInfos,"To je pro mì moc drahé.",DIA_Kjorn_BuyInfos_HoldMoney);	
+	Info_AddChoice (DIA_Kjorn_BuyInfos,"To je pro mÄ› moc drahÃ©.",DIA_Kjorn_BuyInfos_HoldMoney);	
 	
 	IF (Npc_HasItems (other,ItMi_Gold) >=50)
 	{	
@@ -144,7 +144,7 @@ FUNC VOID DIA_Kjorn_BuyInfos_Info()
 
 FUNC VOID DIA_Kjorn_BuyInfos_HoldMoney ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_HoldMoney_15_00"); //To je pro mì moc drahé.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_HoldMoney_15_00"); //To je pro mÄ› moc drahÃ©.
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 };
 
@@ -154,11 +154,11 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 	B_GiveInvItems (other,self,ItMi_Gold,50);
 	
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_01"); //A teï mi øekni...
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_GiveMoney_15_01"); //A teÄ mi Å™ekni...
 	
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
 	
-	//----- Zurück -----
+	//----- ZurÃ¼ck -----
 	
 	Info_AddChoice (DIA_Kjorn_BuyInfos,DIALOG_BACK,DIA_Kjorn_BuyInfos_Back);
 	
@@ -166,22 +166,22 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 	if KjornToldDragon == 0
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...o dracích.",DIA_Kjorn_BuyInfos_Dragon1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...o dracÃ­ch.",DIA_Kjorn_BuyInfos_Dragon1);
 	}
 	else if KjornToldDragon == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...ještì nìco o dracích.",DIA_Kjorn_BuyInfos_Dragon2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...jeÅ¡tÄ› nÄ›co o dracÃ­ch.",DIA_Kjorn_BuyInfos_Dragon2);
 	};
 	
 	//----- Das Minental -----
 	
 	if KjornToldColony == 0
 	{	
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...o Hornickém údolí.",DIA_Kjorn_BuyInfos_Colony1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...o HornickÃ©m ÃºdolÃ­.",DIA_Kjorn_BuyInfos_Colony1);
 	}
 	else if KjornToldColony == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...ještì nìco o Hornickém údolí.",DIA_Kjorn_BuyInfos_Colony2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...jeÅ¡tÄ› nÄ›co o HornickÃ©m ÃºdolÃ­.",DIA_Kjorn_BuyInfos_Colony2);
 	};
 	
 	//----- die Burg -----
@@ -195,20 +195,20 @@ FUNC VOID DIA_Kjorn_BuyInfos_GiveMoney ()
 	
 	if KjornToldOrks == 0
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...o skøetech.",DIA_Kjorn_BuyInfos_Orks1);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...o skÅ™etech.",DIA_Kjorn_BuyInfos_Orks1);
 	}
 	else if KjornToldOrks == 1
 	{
-		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...ještì nìco o skøetech.",DIA_Kjorn_BuyInfos_Orks2);
+		Info_AddChoice	(DIA_Kjorn_BuyInfos,"...jeÅ¡tÄ› nÄ›co o skÅ™etech.",DIA_Kjorn_BuyInfos_Orks2);
 	};	
 	
 };
 
-//------ Zurück -----
+//------ ZurÃ¼ck -----
 
 FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Back_15_00"); //Víš, rozmyslel jsem si to. Vra mi moje peníze.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Back_15_00"); //VÃ­Å¡, rozmyslel jsem si to. VraÅ¥ mi moje penÃ­ze.
 	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Back_06_01"); //Jak je libo.
 	
 	B_GiveInvItems (self,other,ItMi_Gold,50);
@@ -219,10 +219,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_Back ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Dragon1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Øekni mi nìco o dracích.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Draci jsou pradávná, neuvìøitelnì mocná stvoøení. Kdysi jich ily tisíce po celém svìtì.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_02"); //Ale u je to pøes sto let, co nìkterého z nich nìkdo vidìl.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Jejich krev je horká jako vroucí olej. Kdy se ti podívají do oèí, promìní se tvé srdce v kámen. Tak jsem to alespoò slyšel.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon1_15_00"); //Å˜ekni mi nÄ›co o dracÃ­ch.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_01"); //Draci jsou pradÃ¡vnÃ¡, neuvÄ›Å™itelnÄ› mocnÃ¡ stvoÅ™enÃ­. Kdysi jich Å¾ily tisÃ­ce po celÃ©m svÄ›tÄ›.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_02"); //Ale uÅ¾ je to pÅ™es sto let, co nÄ›kterÃ©ho z nich nÄ›kdo vidÄ›l.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon1_06_03"); //Jejich krev je horkÃ¡ jako vroucÃ­ olej. KdyÅ¾ se ti podÃ­vajÃ­ do oÄÃ­, promÄ›nÃ­ se tvÃ© srdce v kÃ¡men. Tak jsem to alespoÅˆ slyÅ¡el.
 	
 	KjornToldDragon = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -230,12 +230,12 @@ FUNC VOID DIA_Kjorn_BuyInfos_Dragon1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Dragon2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Øekni mi o tìch dracích víc.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_01"); //Ale ne všichni draci jsou takoví.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_02"); //Nìkteøí z nich mùou celou zem pokrıt vrstvou ledu nìkolik stop tlustou.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_03"); //Jiní dávají pøednost ivotu v bainách nebo v sopeènıch kráterech.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Dragon2_15_00"); //Å˜ekni mi o tÄ›ch dracÃ­ch vÃ­c.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_01"); //Ale ne vÅ¡ichni draci jsou takovÃ­.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_02"); //NÄ›kteÅ™Ã­ z nich mÅ¯Å¾ou celou zem pokrÃ½t vrstvou ledu nÄ›kolik stop tlustou.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Dragon2_06_03"); //JinÃ­ dÃ¡vajÃ­ pÅ™ednost Å¾ivotu v baÅ¾inÃ¡ch nebo v sopeÄnÃ½ch krÃ¡terech.
 	
-	B_LogEntry (TOPIC_DRACHENJAGD,"Drakobijce Kjorn se domnívá, e drakù je nìkolik druhù. Nìkteøí si potrpí na chlad a vlhko, jiní zase dávají pøednost ohni."); 
+	B_LogEntry (TOPIC_DRACHENJAGD,"Drakobijce Kjorn se domnÃ­vÃ¡, Å¾e drakÅ¯ je nÄ›kolik druhÅ¯. NÄ›kteÅ™Ã­ si potrpÃ­ na chlad a vlhko, jinÃ­ zase dÃ¡vajÃ­ pÅ™ednost ohni."); 
 
 	KjornToldDragon = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -246,11 +246,11 @@ FUNC VOID DIA_Kjorn_BuyInfos_Dragon2 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Colony1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony1_15_00"); //Øekni mi nìco o Hornickém údolí.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_01"); //Hornické údolí v Khorinidu je díky magické rudì známé po celé zemi.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_02"); //Tyhle hory jsou jedinım místem na svìtì, kde se magická ruda vyskytuje.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_03"); //Zbranì vyrobené z téhle rudy jsou prakticky neznièitelné a proniknou i tím nejlepším brnìním.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_04"); //Ještì pøed nìkolika tıdny celé údolí obklopovala magická bariéra. Byla neproniknutelná, a tak se nikdo nemohl dostat ven.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony1_15_00"); //Å˜ekni mi nÄ›co o HornickÃ©m ÃºdolÃ­.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_01"); //HornickÃ© ÃºdolÃ­ v Khorinidu je dÃ­ky magickÃ© rudÄ› znÃ¡mÃ© po celÃ© zemi.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_02"); //Tyhle hory jsou jedinÃ½m mÃ­stem na svÄ›tÄ›, kde se magickÃ¡ ruda vyskytuje.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_03"); //ZbranÄ› vyrobenÃ© z tÃ©hle rudy jsou prakticky nezniÄitelnÃ© a proniknou i tÃ­m nejlepÅ¡Ã­m brnÄ›nÃ­m.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony1_06_04"); //JeÅ¡tÄ› pÅ™ed nÄ›kolika tÃ½dny celÃ© ÃºdolÃ­ obklopovala magickÃ¡ bariÃ©ra. Byla neproniknutelnÃ¡, a tak se nikdo nemohl dostat ven.
 
 	KjornToldColony = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -258,11 +258,11 @@ FUNC VOID DIA_Kjorn_BuyInfos_Colony1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Colony2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony2_15_00"); //Øekni mi o tom údolí víc.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_01"); //Údolí se bìhem tìch nìkolika málo dní zmìnilo k nepoznání.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_02"); //Kdy pøišli skøeti, ukázaly se i další stvùry. Nic podobného tu nikdo nikdy pøedtím nevidìl.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_03"); //Øíká se, e tu ještì poøád zùstalo nìkolik osamìlıch lovcù, ale nejsem si zrovna jistı, jestli taky zùstali naivu.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_04"); //Vypadá to, jako by se do toho údolí stahovala všechna Beliarova stvoøení temnot.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Colony2_15_00"); //Å˜ekni mi o tom ÃºdolÃ­ vÃ­c.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_01"); //ÃšdolÃ­ se bÄ›hem tÄ›ch nÄ›kolika mÃ¡lo dnÃ­ zmÄ›nilo k nepoznÃ¡nÃ­.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_02"); //KdyÅ¾ pÅ™iÅ¡li skÅ™eti, ukÃ¡zaly se i dalÅ¡Ã­ stvÅ¯ry. Nic podobnÃ©ho tu nikdo nikdy pÅ™edtÃ­m nevidÄ›l.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_03"); //Å˜Ã­kÃ¡ se, Å¾e tu jeÅ¡tÄ› poÅ™Ã¡d zÅ¯stalo nÄ›kolik osamÄ›lÃ½ch lovcÅ¯, ale nejsem si zrovna jistÃ½, jestli taky zÅ¯stali naÅ¾ivu.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Colony2_06_04"); //VypadÃ¡ to, jako by se do toho ÃºdolÃ­ stahovala vÅ¡echna Beliarova stvoÅ™enÃ­ temnot.
 	
 	KjornToldColony = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -272,9 +272,9 @@ FUNC VOID DIA_Kjorn_BuyInfos_Colony2 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_OldCamp1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Øekni mi nìco o hradì.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //Leí témìø uprostøed Hornického údolí.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //Døív, kdy to údolí ještì slouilo jako vìzení, mìli veškerou rudu odtamtud pod palcem rudobaroni.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_OldCamp1_15_00"); //Å˜ekni mi nÄ›co o hradÄ›.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_01"); //LeÅ¾Ã­ tÃ©mÄ›Å™ uprostÅ™ed HornickÃ©ho ÃºdolÃ­.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_OldCamp1_06_02"); //DÅ™Ã­v, kdyÅ¾ to ÃºdolÃ­ jeÅ¡tÄ› slouÅ¾ilo jako vÄ›zenÃ­, mÄ›li veÅ¡kerou rudu odtamtud pod palcem rudobaroni.
 	
 	KjornToldOldCamp = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -285,10 +285,10 @@ FUNC VOID DIA_Kjorn_BuyInfos_OldCamp1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Orks1 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks1_15_00"); //Øekni mi nìco o skøetech.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_01"); //Ti skøeti tu nejsou moc dlouho. Alespoò ne ti, co jsou teï pøed hradem.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_02"); //Ale nejde mi na rozum, e jsou tak dobøe organizovaní. Skøeti vìtšinou útoèí hlava nehlava a je jim jedno na co.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_03"); //Tihle èekají na ten správnı èas. Èekají, ale my nevíme na co.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks1_15_00"); //Å˜ekni mi nÄ›co o skÅ™etech.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_01"); //Ti skÅ™eti tu nejsou moc dlouho. AlespoÅˆ ne ti, co jsou teÄ pÅ™ed hradem.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_02"); //Ale nejde mi na rozum, Å¾e jsou tak dobÅ™e organizovanÃ­. SkÅ™eti vÄ›tÅ¡inou ÃºtoÄÃ­ hlava nehlava a je jim jedno na co.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks1_06_03"); //Tihle ÄekajÃ­ na ten sprÃ¡vnÃ½ Äas. ÄŒekajÃ­, ale my nevÃ­me na co.
 	
 	KjornToldOrks = 1;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -296,9 +296,9 @@ FUNC VOID DIA_Kjorn_BuyInfos_Orks1 ()
 
 FUNC VOID DIA_Kjorn_BuyInfos_Orks2 ()
 {
-	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks2_15_00"); //Øekni mi o tìch skøetech víc.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_01"); //Ti skøeti jsou pod velením elitních váleèníkù. Mají obrovskou sílu a disponují vıbornımi zbrojemi. Je témìø nemoné je porazit.
-	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_02"); //Jednou jsem vidìl, jak jeden z nich sloil vzrostlı dub jedinım máchnutím sekery.
+	AI_Output (other,self ,"DIA_Kjorn_BuyInfos_Orks2_15_00"); //Å˜ekni mi o tÄ›ch skÅ™etech vÃ­c.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_01"); //Ti skÅ™eti jsou pod velenÃ­m elitnÃ­ch vÃ¡leÄnÃ­kÅ¯. MajÃ­ obrovskou sÃ­lu a disponujÃ­ vÃ½bornÃ½mi zbrojemi. Je tÃ©mÄ›Å™ nemoÅ¾nÃ© je porazit.
+	AI_Output (self ,other,"DIA_Kjorn_BuyInfos_Orks2_06_02"); //Jednou jsem vidÄ›l, jak jeden z nich sloÅ¾il vzrostlÃ½ dub jedinÃ½m mÃ¡chnutÃ­m sekery.
 	
 	KjornToldOrks = 2;
 	Info_ClearChoices (DIA_Kjorn_BuyInfos);
@@ -314,7 +314,7 @@ INSTANCE DIA_Kjorn_AllDragonsDead   (C_INFO)
 	condition   = DIA_Kjorn_AllDragonsDead_Condition;
 	information = DIA_Kjorn_AllDragonsDead_Info;
 	permanent   = FALSE;
-	description	= "Zabil jsem všechny draky!";
+	description	= "Zabil jsem vÅ¡echny draky!";
 				
 };
 
@@ -328,9 +328,9 @@ FUNC INT DIA_Kjorn_AllDragonsDead_Condition()
 
 FUNC VOID DIA_Kjorn_AllDragonsDead_Info()
 {
-	AI_Output	(other,self ,"DIA_Kjorn_AllDragonsDead_15_00"); //Zabil jsem všechny draky!
-	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_01"); //(smích) Jasnì, a já jsem paladin.
-	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_02"); //Moná se ti podaøilo zabít jednoho, ale všechny? Najdi si nìkoho jiného, kdo bude ochoten ti vìøit.
+	AI_Output	(other,self ,"DIA_Kjorn_AllDragonsDead_15_00"); //Zabil jsem vÅ¡echny draky!
+	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_01"); //(smÃ­ch) JasnÄ›, a jÃ¡ jsem paladin.
+	AI_Output 	(self ,other,"DIA_Kjorn_AllDragonsDead_06_02"); //MoÅ¾nÃ¡ se ti podaÅ™ilo zabÃ­t jednoho, ale vÅ¡echny? Najdi si nÄ›koho jinÃ©ho, kdo bude ochoten ti vÄ›Å™it.
 };
 
 // ************************************************************

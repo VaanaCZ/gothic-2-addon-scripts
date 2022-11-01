@@ -77,31 +77,31 @@ FUNC VOID DIA_Addon_Fortuno_Hi_Info()
 {
 	if (Fortuno_Einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_00");//(nervóznì) Temnı mrak kolem domu... u se blíí...
-		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_01");//Krev... jen ta ho vyvolá... ON mì vidí... on mì vidí... ach ne, bì pryè, ztra se...
-		AI_Output (other, self, "DIA_Addon_Fortuno_Hi_15_02");//Jsi v poøádku?
+		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_00");//(nervÃ³znÄ›) TemnÃ½ mrak kolem domu... uÅ¾ se blÃ­Å¾Ã­...
+		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_01");//Krev... jen ta ho vyvolÃ¡... ON mÄ› vidÃ­... on mÄ› vidÃ­... ach ne, bÄ›Å¾ pryÄ, ztraÅ¥ se...
+		AI_Output (other, self, "DIA_Addon_Fortuno_Hi_15_02");//Jsi v poÅ™Ã¡dku?
 		Fortuno_Einmal = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Fortuno,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Fortuno,LOG_RUNNING);
 		
-		B_LogEntry (Topic_Addon_Fortuno,"Fortuno se úplnì pomátl. Hledá nìjakého 'zeleného novice'.");
+		B_LogEntry (Topic_Addon_Fortuno,"Fortuno se ÃºplnÄ› pomÃ¡tl. HledÃ¡ nÄ›jakÃ©ho 'zelenÃ©ho novice'.");
 		
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_03");//Zelenı... zelenı novic... nemùu ho najít.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_03");//ZelenÃ½... zelenÃ½ novic... nemÅ¯Å¾u ho najÃ­t.
 	
 	Info_ClearChoices (DIA_Addon_Fortuno_Hi);
-	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Ještì se vrátím. (KONEC)",DIA_Addon_Fortuno_Hi_BACK);	
+	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"JeÅ¡tÄ› se vrÃ¡tÃ­m. (KONEC)",DIA_Addon_Fortuno_Hi_BACK);	
 	
-	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Mùu ti nìjak pomoci?",DIA_Addon_Fortuno_Hi_HILFE);
+	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"MÅ¯Å¾u ti nÄ›jak pomoci?",DIA_Addon_Fortuno_Hi_HILFE);
 	
 	if Npc_HasItems (other, ItMi_Joint ) >= 1
 	{
-		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Tumáš trochu trávy z bain.",DIA_Addon_Fortuno_Hi_JOINT);
+		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"TumÃ¡Å¡ trochu trÃ¡vy z baÅ¾in.",DIA_Addon_Fortuno_Hi_JOINT);
 	};
 	if Npc_HasItems (other, ItMi_Addon_Joint_01 ) >= 1
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Tumáš, vezmi si tohohle 'zeleného novice'.",DIA_Addon_Fortuno_Hi_GREEN);
+		Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"TumÃ¡Å¡, vezmi si tohohle 'zelenÃ©ho novice'.",DIA_Addon_Fortuno_Hi_GREEN);
 	};
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_BACK()
@@ -111,29 +111,29 @@ FUNC VOID DIA_Addon_Fortuno_Hi_BACK()
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_HILFE()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_HILFE_15_00");//Mùu ti nìjak pomoci?
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_HILFE_13_01");//Zelenı... zelenı novic pomùe novici...
+	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_HILFE_15_00");//MÅ¯Å¾u ti nÄ›jak pomoci?
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_HILFE_13_01");//ZelenÃ½... zelenÃ½ novic pomÅ¯Å¾e novici...
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_JOINT()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_JOINT_15_00");//Tumáš, dej si tuhle trávu z bain.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_JOINT_15_00");//TumÃ¡Å¡, dej si tuhle trÃ¡vu z baÅ¾in.
 	
 	if B_GiveInvItems (other, self,ItMi_Joint,1)
 	{
 		AI_UseItem (self, ItMI_Joint);
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_JOINT_13_01");//Není zelená, není silná, není zelená, není silná...
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_JOINT_13_01");//NenÃ­ zelenÃ¡, nenÃ­ silnÃ¡, nenÃ­ zelenÃ¡, nenÃ­ silnÃ¡...
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_GREEN()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_GREEN_15_00");//Tumáš, dej si tady tohohle 'zeleného novice'.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_GREEN_15_00");//TumÃ¡Å¡, dej si tady tohohle 'zelenÃ©ho novice'.
 	
 	if B_GiveInvItems (other, self,ItMi_Addon_Joint_01,1)
 	{
 		AI_UseItem (self, ItMI_Addon_Joint_01);
 		
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_01");//(probírá se) Aáááááá!
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_01");//(probÃ­rÃ¡ se) AÃ¡Ã¡Ã¡Ã¡Ã¡Ã¡!
 	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_02");//Moje hlava... kdo... jsem... jsem Fortuno... co... co je?
 	
 	Info_ClearChoices (DIA_Addon_Fortuno_Hi);
@@ -141,7 +141,7 @@ FUNC VOID DIA_Addon_Fortuno_Hi_GREEN()
 	
 	B_GivePlayerXP (XP_Addon_Fortuno_01);
 	
-	B_LogEntry (Topic_Addon_Fortuno,"'Zelenı novic' pomohl Fortunovi vyèistit hlavu.");
+	B_LogEntry (Topic_Addon_Fortuno,"'ZelenÃ½ novic' pomohl Fortunovi vyÄistit hlavu.");
 };
 
 
@@ -155,7 +155,7 @@ INSTANCE DIA_Addon_Fortuno_wer   (C_INFO)
 	condition   = DIA_Addon_Fortuno_wer_Condition;
 	information = DIA_Addon_Fortuno_wer_Info;
 	permanent   = FALSE;
-	description	= "Tak mi øekni, co ti je.";
+	description	= "Tak mi Å™ekni, co ti je.";
 };
 FUNC INT DIA_Addon_Fortuno_wer_Condition()
 {	
@@ -166,15 +166,15 @@ FUNC INT DIA_Addon_Fortuno_wer_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_wer_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_00");//No tak mi povìz, co je s tebou.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_01");//Kdysi jsem patøil k bratrstvu Spáèe. Všecko bylo tehdá fajn.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_02");//Ano, byli jsme bıvalí zloèinci, ale jako novici jsme nemìli ádnı starosti.
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_03");//Hele, já byl v Hornickım údolí zavøenej taky, take mi radši povìz nìco novıho.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_04");//Já... já si nic nepamatuju. Temnota mi zastøela mysl...
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_05");//No tak, soustøeï se, co se stalo? Kdy ses probral?
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_06");//Havran... pamatuju si jenom Havrana a... a nìjaké temné místnosti.
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_07");//Co je s Havranem? Co ti udìlal?
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_08");//(povzdech) Je mi líto. Moje mysl jako by poøád byla ještì ve vìzení... sám to nechápu...
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_00");//No tak mi povÄ›z, co je s tebou.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_01");//Kdysi jsem patÅ™il k bratrstvu SpÃ¡Äe. VÅ¡ecko bylo tehdÃ¡ fajn.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_02");//Ano, byli jsme bÃ½valÃ­ zloÄinci, ale jako novici jsme nemÄ›li Å¾Ã¡dnÃ½ starosti.
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_03");//Hele, jÃ¡ byl v HornickÃ½m ÃºdolÃ­ zavÅ™enej taky, takÅ¾e mi radÅ¡i povÄ›z nÄ›co novÃ½ho.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_04");//JÃ¡... jÃ¡ si nic nepamatuju. Temnota mi zastÅ™ela mysl...
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_05");//No tak, soustÅ™eÄ se, co se stalo? Kdy ses probral?
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_06");//Havran... pamatuju si jenom Havrana a... a nÄ›jakÃ© temnÃ© mÃ­stnosti.
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_07");//Co je s Havranem? Co ti udÄ›lal?
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_08");//(povzdech) Je mi lÃ­to. Moje mysl jako by poÅ™Ã¡d byla jeÅ¡tÄ› ve vÄ›zenÃ­... sÃ¡m to nechÃ¡pu...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info FREE
@@ -186,7 +186,7 @@ INSTANCE DIA_Addon_Fortuno_FREE   (C_INFO)
 	condition   = DIA_Addon_Fortuno_FREE_Condition;
 	information = DIA_Addon_Fortuno_FREE_Info;
 	permanent   = FALSE;
-	description	= "Nìjak si tu pamì pøece musíš osvìit.";
+	description	= "NÄ›jak si tu pamÄ›Å¥ pÅ™ece musÃ­Å¡ osvÄ›Å¾it.";
 };
 FUNC INT DIA_Addon_Fortuno_FREE_Condition()
 {	
@@ -197,12 +197,12 @@ FUNC INT DIA_Addon_Fortuno_FREE_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_FREE_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_00");//Musí bıt pøece nìjakı zpùsob, jak ti osvìit pamì.
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_01");//Jo... jo, moná to nìjak pùjde.
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_02");//Guru znali rùzné zpùsoby, jak pozmìnit ducha a vùli.
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_03");//A PAMATUJEŠ si z toho nìco?
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_04");//Ne, obávám se, e tyhle vìdomosti zmizely spolu s guru.
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_05");//A sakra. No, jestli existuje nìjakı zpùsob, jak osvobodit ducha, tak ho najdu.
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_00");//MusÃ­ bÃ½t pÅ™ece nÄ›jakÃ½ zpÅ¯sob, jak ti osvÄ›Å¾it pamÄ›Å¥.
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_01");//Jo... jo, moÅ¾nÃ¡ to nÄ›jak pÅ¯jde.
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_02");//Guru znali rÅ¯znÃ© zpÅ¯soby, jak pozmÄ›nit ducha a vÅ¯li.
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_03");//A PAMATUJEÅ  si z toho nÄ›co?
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_04");//Ne, obÃ¡vÃ¡m se, Å¾e tyhle vÄ›domosti zmizely spolu s guru.
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_05");//A sakra. No, jestli existuje nÄ›jakÃ½ zpÅ¯sob, jak osvobodit ducha, tak ho najdu.
 
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_BL_09");
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_BL_10");
@@ -210,7 +210,7 @@ FUNC VOID DIA_Addon_Fortuno_FREE_Info()
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_LOCH_01");
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_LOCH_01");
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Fortuno u je sice pøi smyslech, ale zase si nic nepamatuje.");
+	B_LogEntry (Topic_Addon_Fortuno,"Fortuno uÅ¾ je sice pÅ™i smyslech, ale zase si nic nepamatuje.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Herb
@@ -222,7 +222,7 @@ INSTANCE DIA_Addon_Fortuno_Herb   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Herb_Condition;
 	information = DIA_Addon_Fortuno_Herb_Info;
 	permanent   = FALSE;
-	description	= "Potøebuješ ještì další trávu z bain?";
+	description	= "PotÅ™ebujeÅ¡ jeÅ¡tÄ› dalÅ¡Ã­ trÃ¡vu z baÅ¾in?";
 };
 FUNC INT DIA_Addon_Fortuno_Herb_Condition()
 {
@@ -233,9 +233,9 @@ FUNC INT DIA_Addon_Fortuno_Herb_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Herb_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Herb_15_00");//Nepotøebuješ ještì nìjakou trávu z bain?
-	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_01");//Joooo, urèitì. Koupím všecku trávu, která se ti dostane do rukou.
-	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_02");//A zaplatím ti za ni víc ne Fisk.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Herb_15_00");//NepotÅ™ebujeÅ¡ jeÅ¡tÄ› nÄ›jakou trÃ¡vu z baÅ¾in?
+	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_01");//Joooo, urÄitÄ›. KoupÃ­m vÅ¡ecku trÃ¡vu, kterÃ¡ se ti dostane do rukou.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_02");//A zaplatÃ­m ti za ni vÃ­c neÅ¾ Fisk.
 };
 FUNC VOID B_Fortuno_InfoManager()
 {
@@ -243,8 +243,8 @@ FUNC VOID B_Fortuno_InfoManager()
 	Info_AddChoice (DIA_Addon_Fortuno_Trade,DIALOG_BACK,DIA_Addon_Fortuno_Trade_BACK);
 	if (Npc_HasItems (other, ITPl_SwampHerb) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(dát mu všecku trávu z bain)",DIA_Addon_Fortuno_Trade_all);
-		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(dát mu 1 ubalenou trávu z bain)",DIA_Addon_Fortuno_Trade_1);
+		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(dÃ¡t mu vÅ¡ecku trÃ¡vu z baÅ¾in)",DIA_Addon_Fortuno_Trade_all);
+		Info_AddChoice (DIA_Addon_Fortuno_Trade,"(dÃ¡t mu 1 ubalenou trÃ¡vu z baÅ¾in)",DIA_Addon_Fortuno_Trade_1);
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -257,7 +257,7 @@ INSTANCE DIA_Addon_Fortuno_Trade   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Trade_Condition;
 	information = DIA_Addon_Fortuno_Trade_Info;
 	permanent   = TRUE;
-	description	= "Mám tu pro tebe trávu z bain.";
+	description	= "MÃ¡m tu pro tebe trÃ¡vu z baÅ¾in.";
 };
 FUNC INT DIA_Addon_Fortuno_Trade_Condition()
 {	
@@ -269,7 +269,7 @@ FUNC INT DIA_Addon_Fortuno_Trade_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Trade_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Trade_15_00");//Mám pro tebe nìjakou trávu z bain.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Trade_15_00");//MÃ¡m pro tebe nÄ›jakou trÃ¡vu z baÅ¾in.
 	B_Fortuno_InfoManager();
 };
 FUNC VOID DIA_Addon_Fortuno_Trade_BACK()
@@ -314,7 +314,7 @@ INSTANCE DIA_Addon_Fortuno_Trank   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Trank_Condition;
 	information = DIA_Addon_Fortuno_Trank_Info;
 	permanent   = FALSE;
-	description	= "Mám tu pro tebe lektvar.";
+	description	= "MÃ¡m tu pro tebe lektvar.";
 };
 FUNC INT DIA_Addon_Fortuno_Trank_Condition()
 {
@@ -328,8 +328,8 @@ FUNC INT DIA_Addon_Fortuno_Trank_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Trank_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Trank_15_00");//Mám pro tebe jistı lektvar. Pomùe ti oivit vzpomínky.
-	AI_Output (self, other, "DIA_Addon_Fortuno_Trank_13_01");//Vìøím ti.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Trank_15_00");//MÃ¡m pro tebe jistÃ½ lektvar. PomÅ¯Å¾e ti oÅ¾ivit vzpomÃ­nky.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Trank_13_01");//VÄ›Å™Ã­m ti.
 	
 	if (Npc_HasItems (other, ItPo_Addon_Geist_02) >= 1)//der richtige
 	{
@@ -342,7 +342,7 @@ FUNC VOID DIA_Addon_Fortuno_Trank_Info()
 	}
 	else
 	{
-		if B_GiveInvItems (other, self, ItPo_Addon_Geist_01,1)//der...äh...tödliche
+		if B_GiveInvItems (other, self, ItPo_Addon_Geist_01,1)//der...Ã¤h...tÃ¶dliche
 		{
 			Log_SetTopicStatus (Topic_Addon_Fortuno,LOG_OBSOLETE);
 			AI_StopProcessInfos (self);
@@ -360,7 +360,7 @@ INSTANCE DIA_Addon_Fortuno_more   (C_INFO)
 	condition   = DIA_Addon_Fortuno_more_Condition;
 	information = DIA_Addon_Fortuno_more_Info;
 	permanent   = FALSE;
-	description	= "A dál?";
+	description	= "A dÃ¡l?";
 };
 FUNC INT DIA_Addon_Fortuno_more_Condition()
 {
@@ -372,27 +372,27 @@ FUNC INT DIA_Addon_Fortuno_more_Condition()
 FUNC VOID DIA_Addon_Fortuno_more_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_00");//No a?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_01");//Aáá! U si vzpomínám! Teï u to vidím – Adane, stùj pøi mnì – co jsem to udìlal?!
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_02");//Tak co jsi udìlal? A hlavnì co udìlal Havran?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_03");//Pomoh jsem mu. Pomoh jsem mu navázat kontakt. S NÍM. Chtìl nìjaké elixíry a já je pro nìj namíchal.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_04");//Pokusil se otevøít portál a dostat se do chrámu.
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_05");//Proè? Co v tom chrámu chtìl?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_06");//Mocnı artefakt. Je pohøbenı i s tím, kdo ho kdysi nosil. S mocnım váleèníkem, co se pøidal k NÌMU.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_01");//AÃ¡Ã¡! UÅ¾ si vzpomÃ­nÃ¡m! TeÄ uÅ¾ to vidÃ­m â€“ Adane, stÅ¯j pÅ™i mnÄ› â€“ co jsem to udÄ›lal?!
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_02");//Tak co jsi udÄ›lal? A hlavnÄ› co udÄ›lal Havran?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_03");//Pomoh jsem mu. Pomoh jsem mu navÃ¡zat kontakt. S NÃM. ChtÄ›l nÄ›jakÃ© elixÃ­ry a jÃ¡ je pro nÄ›j namÃ­chal.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_04");//Pokusil se otevÅ™Ã­t portÃ¡l a dostat se do chrÃ¡mu.
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_05");//ProÄ? Co v tom chrÃ¡mu chtÄ›l?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_06");//MocnÃ½ artefakt. Je pohÅ™benÃ½ i s tÃ­m, kdo ho kdysi nosil. S mocnÃ½m vÃ¡leÄnÃ­kem, co se pÅ™idal k NÄšMU.
 	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_07");//A pak?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_08");//Nemohli jsme otevøít portál.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_09");//Jene Havran vìdìl JISTÌ, e to pùjde, kdy vykope knìzovu hrobku.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_10");//A proto sem taky pøivedl všechny ty otroky. Obìti, kterı mohl pøimìt, aby kopaly tam, kde i sám èas odpoèívá v pokoji.
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_11");//Knìzovu hrobku?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_12");//Místo posledního odpoèinku Adanova knìze. Leí v dole.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_13");//Taky si vzpomínám na kamennı tabulky. Vìøil, e mu ukáou cestu.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_14");//A kdy je koneènì rozluštil, u mì nepotøeboval.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_15");//Seslal na mì kouzlo zapomnìní a... a pak jsi mì vysvobodil a ty.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_08");//Nemohli jsme otevÅ™Ã­t portÃ¡l.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_09");//JenÅ¾e Havran vÄ›dÄ›l JISTÄš, Å¾e to pÅ¯jde, kdyÅ¾ vykope knÄ›zovu hrobku.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_10");//A proto sem taky pÅ™ivedl vÅ¡echny ty otroky. ObÄ›ti, kterÃ½ mohl pÅ™imÄ›t, aby kopaly tam, kde i sÃ¡m Äas odpoÄÃ­vÃ¡ v pokoji.
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_11");//KnÄ›zovu hrobku?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_12");//MÃ­sto poslednÃ­ho odpoÄinku Adanova knÄ›ze. LeÅ¾Ã­ v dole.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_13");//Taky si vzpomÃ­nÃ¡m na kamennÃ½ tabulky. VÄ›Å™il, Å¾e mu ukÃ¡Å¾ou cestu.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_14");//A kdyÅ¾ je koneÄnÄ› rozluÅ¡til, uÅ¾ mÄ› nepotÅ™eboval.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_15");//Seslal na mÄ› kouzlo zapomnÄ›nÃ­ a... a pak jsi mÄ› vysvobodil aÅ¾ ty.
 	
 	SC_KnowsFortunoInfos = TRUE;
 	
-	B_LogEntry (TOPIC_Addon_RavenKDW,"Havran chce z Adanova chrámu získat nìjakı mocnı artefakt."); 
-	Log_AddEntry (TOPIC_Addon_RavenKDW,"Havran v dole z jakéhosi dùvodu vykopal hrob nìjakého dávného knìze."); 
-	Log_AddEntry (TOPIC_Addon_RavenKDW,"Havran vìøí, e mu v jeho snaení pomohou nìjaké kamenné tabulky."); 
+	B_LogEntry (TOPIC_Addon_RavenKDW,"Havran chce z Adanova chrÃ¡mu zÃ­skat nÄ›jakÃ½ mocnÃ½ artefakt."); 
+	Log_AddEntry (TOPIC_Addon_RavenKDW,"Havran v dole z jakÃ©hosi dÅ¯vodu vykopal hrob nÄ›jakÃ©ho dÃ¡vnÃ©ho knÄ›ze."); 
+	Log_AddEntry (TOPIC_Addon_RavenKDW,"Havran vÄ›Å™Ã­, Å¾e mu v jeho snaÅ¾enÃ­ pomohou nÄ›jakÃ© kamennÃ© tabulky."); 
 	
 	Npc_ExchangeRoutine (self, "START");
 	B_GivePlayerXP (XP_Addon_Fortuno_03);
@@ -420,6 +420,6 @@ FUNC INT DIA_Addon_Fortuno_Attentat_Condition()
 FUNC VOID DIA_Addon_Fortuno_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Fortuno_Attentat_13_00");//Útok? Promiò, byl jsem na chvíli... tak nìjak mimo. Nevím o tom vùbec nic.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Attentat_13_00");//Ãštok? PromiÅˆ, byl jsem na chvÃ­li... tak nÄ›jak mimo. NevÃ­m o tom vÅ¯bec nic.
 };
 

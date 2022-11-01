@@ -48,8 +48,8 @@ FUNC INT DIA_Keroloth_HELLO_Condition()
  
 FUNC VOID DIA_Keroloth_HELLO_Info()
 {	
-	AI_Output	(other ,self,"DIA_Keroloth_HELLO_15_00"); //Ty tady trÈnujeö ostatnÌ?
-	AI_Output	(self ,other,"DIA_Keroloth_HELLO_07_01"); //Ano. Aû ti sk¯eti, nebo jeötÏ h˘¯ draci znovu za˙toËÌ, bude kaûd· ruka dobr·.
+	AI_Output	(other ,self,"DIA_Keroloth_HELLO_15_00"); //Ty tady tr√©nuje≈° ostatn√≠?
+	AI_Output	(self ,other,"DIA_Keroloth_HELLO_07_01"); //Ano. A≈æ ti sk≈ôeti, nebo je≈°tƒõ h≈Ø≈ô draci znovu za√∫toƒç√≠, bude ka≈æd√° ruka dobr√°.
 };
 //***********************************************
 //	Kannst DU mir was beibringen
@@ -62,7 +62,7 @@ INSTANCE DIA_Keroloth_WantTeach(C_INFO)
 	condition	= DIA_Keroloth_WantTeach_Condition;
 	information	= DIA_Keroloth_WantTeach_Info;
 	permanent	= FALSE;
-	description = "M˘ûeö nÏco nauËit i mÏ?";
+	description = "M≈Ø≈æe≈° nƒõco nauƒçit i mƒõ?";
 };                       
 
 FUNC INT DIA_Keroloth_WantTeach_Condition()
@@ -75,17 +75,17 @@ FUNC INT DIA_Keroloth_WantTeach_Condition()
  
 FUNC VOID DIA_Keroloth_WantTeach_Info()
 {	
-	AI_Output 	(other,self ,"DIA_Keroloth_WantTeach_15_00"); //M˘ûeö nÏco nauËit i mÏ?
-	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_01"); //Samoz¯ejmÏ. TrÈnuji kaûdÈho sluönÈho ËlovÏka.
-	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_02"); //Ale pokud tady chceö p¯eûÌt, budeö pot¯ebovat kromÏ talentu i nÏjakou dobrou zbraÚ.
-	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_03"); //Poû·dej rytÌ¯e Tandora. Postar· se o tebe.
+	AI_Output 	(other,self ,"DIA_Keroloth_WantTeach_15_00"); //M≈Ø≈æe≈° nƒõco nauƒçit i mƒõ?
+	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_01"); //Samoz≈ôejmƒõ. Tr√©nuji ka≈æd√©ho slu≈°n√©ho ƒçlovƒõka.
+	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_02"); //Ale pokud tady chce≈° p≈ôe≈æ√≠t, bude≈° pot≈ôebovat kromƒõ talentu i nƒõjakou dobrou zbra≈à.
+	AI_Output 	(self ,other,"DIA_Keroloth_WantTeach_07_03"); //Po≈æ√°dej ryt√≠≈ôe Tandora. Postar√° se o tebe.
 		
 	Keroloth_TeachPlayer = TRUE;
 	Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Teacher_OC,"Keroloth na hradÏ trÈnuje bojovnÌky s meËem.");
+	B_LogEntry (TOPIC_Teacher_OC,"Keroloth na hradƒõ tr√©nuje bojovn√≠ky s meƒçem.");
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
-	B_LogEntry (TOPIC_Trader_OC,"Tandor na hradÏ obchoduje se zbranÏmi.");
+	B_LogEntry (TOPIC_Trader_OC,"Tandor na hradƒõ obchoduje se zbranƒõmi.");
 };
 //***********************************************
 //	Kampflehrer EINHAND
@@ -98,7 +98,7 @@ INSTANCE DIA_Keroloth_Teacher(C_INFO)
 	condition	= DIA_Keroloth_Teacher_Condition;
 	information	= DIA_Keroloth_Teacher_Info;
 	permanent	= TRUE;
-	description = "(NauËit se jednoruËnÌmu boji.)";
+	description = "(Nauƒçit se jednoruƒçn√≠mu boji.)";
 };                       
 
 FUNC INT DIA_Keroloth_Teacher_Condition()
@@ -112,7 +112,7 @@ FUNC INT DIA_Keroloth_Teacher_Condition()
  
 FUNC VOID DIA_Keroloth_Teacher_Info()
 {	
-	AI_Output 	(other,self ,"DIA_Keroloth_Teacher_15_00"); //Chci se uËit!
+	AI_Output 	(other,self ,"DIA_Keroloth_Teacher_15_00"); //Chci se uƒçit!
 	
 	Info_ClearChoices 	(DIA_Keroloth_Teacher);
 	Info_AddChoice 		(DIA_Keroloth_Teacher,DIALOG_BACK,DIA_Keroloth_Teacher_Back);
@@ -127,12 +127,12 @@ FUNC VOID DIA_Keroloth_Teacher_Back ()
 
 FUNC VOID B_Keroloth_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Keroloth_TeachNoMore1_07_00"); //Jsi velice dobr˝. Uû nenÌ nic, co bych tÏ mohl nauËit.
+	AI_Output(self,other,"B_Keroloth_TeachNoMore1_07_00"); //Jsi velice dobr√Ω. U≈æ nen√≠ nic, co bych tƒõ mohl nauƒçit.
 };
 
 FUNC VOID B_Keroloth_TeachNoMore2 ()
 {
-	AI_Output(self,other,"B_Keroloth_TeachNoMore2_07_00"); //M˘ûe ti pomoci uû jen zkuöen˝ mistr meËe.
+	AI_Output(self,other,"B_Keroloth_TeachNoMore2_07_00"); //M≈Ø≈æe ti pomoci u≈æ jen zku≈°en√Ω mistr meƒçe.
 };
 
 FUNC VOID DIA_Keroloth_Teacher_1H_1 ()
@@ -176,7 +176,7 @@ INSTANCE DIA_Keroloth_Teach(C_INFO)
 	condition	= DIA_Keroloth_Teach_Condition;
 	information	= DIA_Keroloth_Teach_Info;
 	permanent	= TRUE;
-	description = "(Osvojit si dovednost obouruËnÌho boje)";
+	description = "(Osvojit si dovednost obouruƒçn√≠ho boje)";
 };                       
 //----------------------------------
 var int DIA_Keroloth_Teach_permanent;
@@ -194,7 +194,7 @@ FUNC INT DIA_Keroloth_Teach_Condition()
  
 FUNC VOID DIA_Keroloth_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Keroloth_Teach_15_00"); //ZaËnÏme.
+	AI_Output (other,self ,"DIA_Keroloth_Teach_15_00"); //Zaƒçnƒõme.
 	
 	Info_ClearChoices 	(DIA_Keroloth_Teach);
 	Info_AddChoice 		(DIA_Keroloth_Teach,	DIALOG_BACK		,DIA_Keroloth_Teach_Back);
@@ -243,7 +243,7 @@ INSTANCE DIA_Keroloth_Udar(C_INFO)
 	condition	= DIA_Keroloth_Udar_Condition;
 	information	= DIA_Keroloth_Udar_Info;
 	permanent	= FALSE;
-	description = "A co boj na d·lku?";
+	description = "A co boj na d√°lku?";
 };                       
 
 FUNC INT DIA_Keroloth_Udar_Condition()
@@ -257,14 +257,14 @@ FUNC INT DIA_Keroloth_Udar_Condition()
  
 FUNC VOID DIA_Keroloth_Udar_Info()
 {	
-	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_00"); //A co boj na d·lku?
-	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_01"); //Co je s nÌm?
-	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_02"); //M˘ûeö mÏ trÈnovat i v nÏm?
-	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_03"); //Ne, ale m˘ûeö se zeptat Udara, je to dobr˝ - ne, je to NEJLEPäÕ st¯elec z kuöe, jakÈho zn·m.
+	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_00"); //A co boj na d√°lku?
+	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_01"); //Co je s n√≠m?
+	AI_Output 	(other,self ,"DIA_Keroloth_Udar_15_02"); //M≈Ø≈æe≈° mƒõ tr√©novat i v nƒõm?
+	AI_Output	(self ,other,"DIA_Keroloth_Udar_07_03"); //Ne, ale m≈Ø≈æe≈° se zeptat Udara, je to dobr√Ω - ne, je to NEJLEP≈†√ç st≈ôelec z ku≈°e, jak√©ho zn√°m.
 	
 	
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Udar z hradu v HornickÈm ˙dolÌ vÌ o kuöÌch snad vöechno, co lze zn·t.");
+	B_LogEntry		(TOPIC_Teacher_OC, "Udar z hradu v Hornick√©m √∫dol√≠ v√≠ o ku≈°√≠ch snad v≈°echno, co lze zn√°t.");
 };
 //#####################################################################
 //##
@@ -343,7 +343,7 @@ instance DIA_Keroloth_KAP4_HELLO		(C_INFO)
 	condition	 = 	DIA_Keroloth_KAP4_HELLO_Condition;
 	information	 = 	DIA_Keroloth_KAP4_HELLO_Info;
 
-	description	 = 	"NÏjak protahujeö obliËej.";
+	description	 = 	"Nƒõjak protahuje≈° obliƒçej.";
 };
 
 func int DIA_Keroloth_KAP4_HELLO_Condition ()
@@ -356,13 +356,13 @@ func int DIA_Keroloth_KAP4_HELLO_Condition ()
 
 func void DIA_Keroloth_KAP4_HELLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_15_00"); //NÏjak protahujeö obliËej.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_01"); //(nahnÏvanÏ) ZatracenÏ. Jak povÌd·m, jeden musÌ b˝t jako ost¯Ìû.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_02"); //Na chvÌli se otoËÌö z·dy a hned ti zaËnou mizet vÏci. Ksakru!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_15_00"); //Nƒõjak protahuje≈° obliƒçej.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_01"); //(nahnƒõvanƒõ) Zatracenƒõ. Jak pov√≠d√°m, jeden mus√≠ b√Ωt jako ost≈ô√≠≈æ.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_07_02"); //Na chv√≠li se otoƒç√≠≈° z√°dy a hned ti zaƒçnou mizet vƒõci. Ksakru!
 
 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, DIALOG_BACK, DIA_Keroloth_KAP4_HELLO_ende );
-	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Paladin by se nemÏl nikdy p¯estat ovl·dat.", DIA_Keroloth_KAP4_HELLO_ruhig );
- 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "NÏkdo ti nÏco ukradl?", DIA_Keroloth_KAP4_HELLO_bestohlen );
+	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Paladin by se nemƒõl nikdy p≈ôestat ovl√°dat.", DIA_Keroloth_KAP4_HELLO_ruhig );
+ 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Nƒõkdo ti nƒõco ukradl?", DIA_Keroloth_KAP4_HELLO_bestohlen );
 	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "Kdo to podle tebe byl?", DIA_Keroloth_KAP4_HELLO_pack );
 
 
@@ -374,23 +374,23 @@ func void DIA_Keroloth_KAP4_HELLO_ende ()
 
 func void DIA_Keroloth_KAP4_HELLO_bestohlen ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_15_00"); //NÏkdo ti nÏco ukradl?
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_01"); //Ne. NÏkdo mi strËil do kapsy 20 zlat˝ch. Samoz¯ejmÏ ûe mi nÏkdo nÏco ukradl, blbeËku!
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_02"); //Ale to ti povÌd·m, aû se mi ta praöiv· svinÏ dostane do rukou...
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_15_00"); //Nƒõkdo ti nƒõco ukradl?
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_01"); //Ne. Nƒõkdo mi strƒçil do kapsy 20 zlat√Ωch. Samoz≈ôejmƒõ ≈æe mi nƒõkdo nƒõco ukradl, blbeƒçku!
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_07_02"); //Ale to ti pov√≠d√°m, a≈æ se mi ta pra≈°iv√° svinƒõ dostane do rukou...
 
-	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "A co ti chybÌ?", DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt );
+	Info_AddChoice	(DIA_Keroloth_KAP4_HELLO, "A co ti chyb√≠?", DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt );
 };
 func void DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_00"); //A co ti chybÌ?
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_01"); //MÏöec - mÏl jsem v nÏm vöechny svÈ ˙spory.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_02"); //A teÔ je pryË!
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_03"); //UrËitÏ se nÏkde objevÌ.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_04"); //Aû se mi dostane do rukou...
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_00"); //A co ti chyb√≠?
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_01"); //Mƒõ≈°ec - mƒõl jsem v nƒõm v≈°echny sv√© √∫spory.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_02"); //A teƒè je pryƒç!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_15_03"); //Urƒçitƒõ se nƒõkde objev√≠.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_bestohlen_wasfehlt_07_04"); //A≈æ se mi dostane do rukou...
 
 	Log_CreateTopic (TOPIC_KerolothsGeldbeutel, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KerolothsGeldbeutel, LOG_RUNNING);
-	B_LogEntry (TOPIC_KerolothsGeldbeutel,"Paladinu Kerolothovi se ztratila portmonka a tvrdÌ, ûe mu ji uzmuli drakobijci."); 
+	B_LogEntry (TOPIC_KerolothsGeldbeutel,"Paladinu Kerolothovi se ztratila portmonka a tvrd√≠, ≈æe mu ji uzmuli drakobijci."); 
 
 
 	Info_ClearChoices	(DIA_Keroloth_KAP4_HELLO);
@@ -402,20 +402,20 @@ func void DIA_Keroloth_KAP4_HELLO_pack ()
 	
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_01"); //NÏkdo z v·s parchant˘ drakobijc˘, samoz¯ejmÏ. Kdo jin˝?
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_01"); //Nƒõkdo z v√°s parchant≈Ø drakobijc≈Ø, samoz≈ôejmƒõ. Kdo jin√Ω?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_02"); //Samoz¯ejmÏ nÏkdo z tÈ drakobijeckÈ ch·try. O kom jinÈm bych asi tak mluvil?
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_02"); //Samoz≈ôejmƒõ nƒõkdo z t√© drakobijeck√© ch√°try. O kom jin√©m bych asi tak mluvil?
 		};
 		
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_03"); //(pro sebe) PovÌd·m, ûe je zapot¯ebÌ mÌt je po¯·d na oËÌch.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_pack_07_03"); //(pro sebe) Pov√≠d√°m, ≈æe je zapot≈ôeb√≠ m√≠t je po≈ô√°d na oƒç√≠ch.
 };
 
 func void DIA_Keroloth_KAP4_HELLO_ruhig ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_ruhig_15_00"); //Uklidni se! Paladin by se nemÏl p¯estat ovl·dat.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_ruhig_07_01"); //Ale j· se nechci uklidnit. Bylo to zatracenÏ vöechno, co jsem mÏl!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_HELLO_ruhig_15_00"); //Uklidni se! Paladin by se nemƒõl p≈ôestat ovl√°dat.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_HELLO_ruhig_07_01"); //Ale j√° se nechci uklidnit. Bylo to zatracenƒõ v≈°echno, co jsem mƒõl!
 };
 
 
@@ -429,7 +429,7 @@ instance DIA_Keroloth_KAP4_GELDGEFUNDEN		(C_INFO)
 	condition	 = 	DIA_Keroloth_KAP4_GELDGEFUNDEN_Condition;
 	information	 = 	DIA_Keroloth_KAP4_GELDGEFUNDEN_Info;
 
-	description	 = 	"Asi jsem naöel tv˘j mÏöec.";
+	description	 = 	"Asi jsem na≈°el tv≈Øj mƒõ≈°ec.";
 };
 
 func int DIA_Keroloth_KAP4_GELDGEFUNDEN_Condition ()
@@ -446,51 +446,51 @@ func int DIA_Keroloth_KAP4_GELDGEFUNDEN_Condition ()
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_15_00"); //Asi jsem naöel tv˘j mÏöec.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_15_00"); //Asi jsem na≈°el tv≈Øj mƒõ≈°ec.
 	TOPIC_END_KerolothsGeldbeutel = TRUE;
 	B_GivePlayerXP (XP_KerolothsGeldbeutel);
 	if (B_GiveInvItems (other, self, ItMi_KerolothsGeldbeutelLeer_MIS,1))
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_01"); //Je pr·zdn˝. Kter· svinÏ to udÏlala?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_01"); //Je pr√°zdn√Ω. Kter√° svinƒõ to udƒõlala?
 	
 		Keroloths_BeutelLeer = TRUE;
 	};
 	if (B_GiveInvItems (other, self, ItMi_KerolothsGeldbeutel_MIS,1))
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_02"); //Co? Kde? Kter˝ parchant to udÏlal?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_07_02"); //Co? Kde? Kter√Ω parchant to udƒõlal?
 	};
 	
 	if (hero.guild == GIL_DJG)
 	{
-		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "MomentÌËek - jak· bude odmÏna?", DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn );
+		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Moment√≠ƒçek - jak√° bude odmƒõna?", DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn );
 	};
 
-	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Byl tady hned u kov·rny.", DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede );
-	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "PodezÌr·m nÏkoho z drakobijc˘.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
-	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Jak bych to mohl vÏdÏt?", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung);
+	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Byl tady hned u kov√°rny.", DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede );
+	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Podez√≠r√°m nƒõkoho z drakobijc≈Ø.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
+	Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Jak bych to mohl vƒõdƒõt?", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung);
 };
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_15_00"); //Jak bych to mohl vÏdÏt?
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_15_00"); //Jak bych to mohl vƒõdƒõt?
 
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_01"); //DÏl·ö si ze mÏ legraci? P¯iznej se, ûes to byl ty.
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_01"); //Dƒõl√°≈° si ze mƒõ legraci? P≈ôiznej se, ≈æes to byl ty.
 		
 		Info_ClearChoices	(DIA_Keroloth_KAP4_GELDGEFUNDEN);
-		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "PodezÌr·m nÏkoho z drakobijc˘.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
+		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Podez√≠r√°m nƒõkoho z drakobijc≈Ø.", DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG );
 		Info_AddChoice	(DIA_Keroloth_KAP4_GELDGEFUNDEN, "Polib mi.", DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_02"); //To jeötÏ zjistÌm.
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_07_02"); //To je≈°tƒõ zjist√≠m.
 		AI_StopProcessInfos (self);
 	};
 };
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich ()
 {
 	AI_Output			(other, self, "DIA_Keroloth_KAP4_kannstmich_15_00"); //Polib mi.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_kannstmich_07_01"); //J· ti uk·ûu, okr·dat poctivÈ lidi.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_kannstmich_07_01"); //J√° ti uk√°≈æu, okr√°dat poctiv√© lidi.
 
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_NONE, 1);	
@@ -498,17 +498,17 @@ func void DIA_Keroloth_KAP4_GELDGEFUNDEN_keineAhnung_kannstmich ()
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_15_00"); //PodezÌr·m jednoho z drakobijc˘.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_15_00"); //Podez√≠r√°m jednoho z drakobijc≈Ø.
 		
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_01"); //(rozzlobenÏ) J· to vÏdÏl.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_01"); //(rozzlobenƒõ) J√° to vƒõdƒõl.
 	
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_02"); //(k¯iËÌ) Nikdy tÏ nemÏli pouötÏt do hradu.
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_02"); //(k≈ôiƒç√≠) Nikdy tƒõ nemƒõli pou≈°tƒõt do hradu.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_03"); //Jen poËkej, j· d·m tÈ svini co proto.
+			AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG_07_03"); //Jen poƒçkej, j√° d√°m t√© svini co proto.
 		};
 
 	AI_StopProcessInfos	(self);
@@ -533,23 +533,23 @@ func void DIA_Keroloth_KAP4_GELDGEFUNDEN_DJG ()
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_15_00"); //Ehm. Byl tady, hned vedle kov·rny.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_07_01"); //Kde? PoblÌû kov·rny? UrËitÏ vypadl jednomu z tÏch drakobijc˘ z kapsy, ne¯Ìkej, ûe ne.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_15_00"); //Ehm. Byl tady, hned vedle kov√°rny.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Schmiede_07_01"); //Kde? Pobl√≠≈æ kov√°rny? Urƒçitƒõ vypadl jednomu z tƒõch drakobijc≈Ø z kapsy, ne≈ô√≠kej, ≈æe ne.
 };
 
 func void DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_15_00"); //PoËkej. A co odmÏna?
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_15_00"); //Poƒçkej. A co odmƒõna?
 	
  	if (Keroloths_BeutelLeer == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_01"); //Tak to je poslednÌ kapka. Uû dlouho ti nikdo pÏstÌ nep¯epoËÌtal zuby, co?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_01"); //Tak to je posledn√≠ kapka. U≈æ dlouho ti nikdo pƒõst√≠ nep≈ôepoƒç√≠tal zuby, co?
 		AI_StopProcessInfos	(self);
 		B_Attack (self, other, AR_NONE, 1);	
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_02"); //Arrh. Dobr·. Tady je p·r zlat˝ch. A teÔ mi ¯ekneö, kdo to udÏlal?
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_GELDGEFUNDEN_Lohn_07_02"); //Arrh. Dobr√°. Tady je p√°r zlat√Ωch. A teƒè mi ≈ôekne≈°, kdo to udƒõlal?
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);					
 		Keroloth_HasPayed = TRUE;
@@ -567,7 +567,7 @@ instance DIA_Keroloth_KAP4_BELOHNUNG		(C_INFO)
 	information	 = 	DIA_Keroloth_KAP4_BELOHNUNG_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Chci n·leznÈ za tv˘j mÏöec.";
+	description	 = 	"Chci n√°lezn√© za tv≈Øj mƒõ≈°ec.";
 };
 
 func int DIA_Keroloth_KAP4_BELOHNUNG_Condition ()
@@ -582,17 +582,17 @@ func int DIA_Keroloth_KAP4_BELOHNUNG_Condition ()
 
 func void DIA_Keroloth_KAP4_BELOHNUNG_Info ()
 {
- 	AI_Output			(other, self, "DIA_Keroloth_KAP4_BELOHNUNG_15_00"); //Chci n·leznÈ za tv˘j mÏöec.
+ 	AI_Output			(other, self, "DIA_Keroloth_KAP4_BELOHNUNG_15_00"); //Chci n√°lezn√© za tv≈Øj mƒõ≈°ec.
 
 	if ((Keroloths_BeutelLeer == TRUE) || (hero.guild == GIL_DJG))
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_01"); //Dostaneö akor·t tak r·nu do zub˘!
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_01"); //Dostane≈° akor√°t tak r√°nu do zub≈Ø!
 		AI_StopProcessInfos	(self);
 		B_Attack (self, other, AR_NONE, 1);	
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_02"); //To je jedinÈ, co tÏ zajÌm·? Tady m·ö sakra p·r zlat˝ch a teÔ zmiz.
+		AI_Output			(self, other, "DIA_Keroloth_KAP4_BELOHNUNG_07_02"); //To je jedin√©, co tƒõ zaj√≠m√°? Tady m√°≈° sakra p√°r zlat√Ωch a teƒè zmiz.
 		
 		CreateInvItems (self, ItMi_Gold, 50);									
 		B_GiveInvItems (self, other, ItMi_Gold, 50);					
@@ -612,7 +612,7 @@ instance DIA_Keroloth_KAP4_ENTSPANNDICH		(C_INFO)
 	information	 = 	DIA_Keroloth_KAP4_ENTSPANNDICH_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"KlÌdek.";
+	description	 = 	"Kl√≠dek.";
 };
 
 func int DIA_Keroloth_KAP4_ENTSPANNDICH_Condition ()
@@ -627,23 +627,23 @@ func int DIA_Keroloth_KAP4_ENTSPANNDICH_Condition ()
 
 func void DIA_Keroloth_KAP4_ENTSPANNDICH_Info ()
 {
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_00"); //KlÌdek.
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_00"); //Kl√≠dek.
 	
 	if (hero.guild == GIL_KDF)
 	{
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_01"); //Ano, mist¯e. PokusÌm se.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_01"); //Ano, mist≈ôe. Pokus√≠m se.
 	}
 	else if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_02"); //Nem˘ûu to dok·zat, ale myslÌm, ûe ty jsi ten zr·dce, kter˝ otev¯el br·nu.
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_03"); //Za to teÔ zaplatÌö.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_02"); //Nem≈Ø≈æu to dok√°zat, ale mysl√≠m, ≈æe ty jsi ten zr√°dce, kter√Ω otev≈ôel br√°nu.
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_03"); //Za to teƒè zaplat√≠≈°.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);	
 	}
 	else 
 	{
-	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_04"); //M·ö sv˘j mÏöec zp·tky, ne?
-	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_05"); //Nehraj si se mnou, chlapËe! Padej!
+	AI_Output			(other, self, "DIA_Keroloth_KAP4_ENTSPANNDICH_15_04"); //M√°≈° sv≈Øj mƒõ≈°ec zp√°tky, ne?
+	AI_Output			(self, other, "DIA_Keroloth_KAP4_ENTSPANNDICH_07_05"); //Nehraj si se mnou, chlapƒçe! Padej!
 	AI_StopProcessInfos (self);
 	};
 };

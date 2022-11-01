@@ -31,7 +31,7 @@ INSTANCE DIA_Zuris_PICKPOCKET (C_INFO)
 	condition	= DIA_Zuris_PICKPOCKET_Condition;
 	information	= DIA_Zuris_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Lektvar mu mùeš ukrást velmi snadno.)";
+	description = "(Lektvar mu mÅ¯Å¾eÅ¡ ukrÃ¡st velmi snadno.)";
 };                       
 
 FUNC INT DIA_Zuris_PICKPOCKET_Condition()
@@ -95,7 +95,7 @@ func int DIA_Zuris_Sperre_Condition ()
 };
 func void DIA_Zuris_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Zuris_Sperre_14_00"); //Jsi bıvalı trestanec z tìaøské kolonie. Odpal!
+	AI_Output (self, other, "DIA_Zuris_Sperre_14_00"); //Jsi bÃ½valÃ½ trestanec z tÄ›Å¾aÅ™skÃ© kolonie. Odpal!
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -122,11 +122,11 @@ func int DIA_Zuris_GREET_Condition ()
 };
 func void DIA_Zuris_GREET_Info ()
 {
-	AI_Output (self, other, "DIA_Zuris_GREET_14_00"); //Jsem Zuris, mistr lektvarù.
-	AI_Output (self, other, "DIA_Zuris_GREET_14_01"); //Potøebuješ esenci hojivé síly nebo nìjakı magickı elixír? Pak jsi na správném místì.
+	AI_Output (self, other, "DIA_Zuris_GREET_14_00"); //Jsem Zuris, mistr lektvarÅ¯.
+	AI_Output (self, other, "DIA_Zuris_GREET_14_01"); //PotÅ™ebujeÅ¡ esenci hojivÃ© sÃ­ly nebo nÄ›jakÃ½ magickÃ½ elixÃ­r? Pak jsi na sprÃ¡vnÃ©m mÃ­stÄ›.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Zuris prodává na trišti lektvary.");
+	B_LogEntry (Topic_CityTrader,"Zuris prodÃ¡vÃ¡ na trÅ¾iÅ¡ti lektvary.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -142,7 +142,7 @@ instance DIA_Zuris_WAREZ		(C_INFO)
 	information	 = 	DIA_Zuris_WAREZ_Info;
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 
 func int DIA_Zuris_WAREZ_Condition ()
@@ -152,12 +152,12 @@ func int DIA_Zuris_WAREZ_Condition ()
 func void DIA_Zuris_WAREZ_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Zuris_WAREZ_15_00"); //Uka mi své zboí.
+	AI_Output			(other, self, "DIA_Zuris_WAREZ_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 	
 	if (Zuris_einmal == FALSE)
 	&& (!Npc_KnowsInfo (other, DIA_Zuris_Potions))
 	{
-		AI_Output (self, other, "DIA_Zuris_GREET_14_02"); //Právì jsem dostal nìjaké nové lektvary. Mùj host - ohnivı mág, mistr Daron - mi je donesl pøímo z kláštera.
+		AI_Output (self, other, "DIA_Zuris_GREET_14_02"); //PrÃ¡vÄ› jsem dostal nÄ›jakÃ© novÃ© lektvary. MÅ¯j host - ohnivÃ½ mÃ¡g, mistr Daron - mi je donesl pÅ™Ã­mo z klÃ¡Å¡tera.
 		Zuris_einmal = TRUE;
 	};
 };
@@ -171,7 +171,7 @@ instance DIA_Zuris_POTIONS		(C_INFO)
 	condition	= 	DIA_Zuris_POTIONS_Condition;
 	information	= 	DIA_Zuris_POTIONS_Info;
 	permanent	= FALSE;
-	description	= 	"Mícháš si také nìjaké vlastní elixíry?";
+	description	= 	"MÃ­chÃ¡Å¡ si takÃ© nÄ›jakÃ© vlastnÃ­ elixÃ­ry?";
 };
 
 func int DIA_Zuris_POTIONS_Condition ()
@@ -183,16 +183,16 @@ func int DIA_Zuris_POTIONS_Condition ()
 };
 func void DIA_Zuris_POTIONS_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_POTIONS_15_00"); //Mícháš si také nìjaké vlastní elixíry?
-	AI_Output (self, other, "DIA_Zuris_POTIONS_14_01"); //Ne, buï je dostávám z kláštera, nebo si je kupuji u alchymisty Constantina.
+	AI_Output (other, self, "DIA_Zuris_POTIONS_15_00"); //MÃ­chÃ¡Å¡ si takÃ© nÄ›jakÃ© vlastnÃ­ elixÃ­ry?
+	AI_Output (self, other, "DIA_Zuris_POTIONS_14_01"); //Ne, buÄ je dostÃ¡vÃ¡m z klÃ¡Å¡tera, nebo si je kupuji u alchymisty Constantina.
 	
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Pokud tì zajímá míchání lektvarù, pak neváhej a promluv si s ním. Nìjakého pomocníka jistì potøebuje.
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Ale je moc umínìnı, ne aby si nìkoho najal sám. Je palièatı jak mezek.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Pokud tÄ› zajÃ­mÃ¡ mÃ­chÃ¡nÃ­ lektvarÅ¯, pak nevÃ¡hej a promluv si s nÃ­m. NÄ›jakÃ©ho pomocnÃ­ka jistÄ› potÅ™ebuje.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Ale je moc umÃ­nÄ›nÃ½, neÅ¾ aby si nÄ›koho najal sÃ¡m. Je paliÄatÃ½ jak mezek.
 	};
 	
-	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //Kdy jde trhat ty své rostliny, vdycky prochází pøímo kolem mì.
+	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //KdyÅ¾ jde trhat ty svÃ© rostliny, vÅ¾dycky prochÃ¡zÃ­ pÅ™Ã­mo kolem mÄ›.
 };
 
 // **************************************************
@@ -206,7 +206,7 @@ instance DIA_Zuris_Kraut (C_INFO)
 	condition	= DIA_Zuris_Kraut_Condition;
 	information	= DIA_Zuris_Kraut_Info;
 	permanent	= FALSE;
-	description	= "Kde pøesnì Constantino ty své byliny sbírá?";
+	description	= "Kde pÅ™esnÄ› Constantino ty svÃ© byliny sbÃ­rÃ¡?";
 };
 
 func int DIA_Zuris_Kraut_Condition ()
@@ -218,9 +218,9 @@ func int DIA_Zuris_Kraut_Condition ()
 };
 func void DIA_Zuris_Kraut_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //Kde pøesnì Constantino ty své byliny sbírá?
-	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //Pokadé projde tady vıchodní branou a pak zmizí v divoèinì nalevo.
-	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Jednou mi vykládal, e tu roste skoro všechno kromì královského šovíku.
+	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //Kde pÅ™esnÄ› Constantino ty svÃ© byliny sbÃ­rÃ¡?
+	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //PokaÅ¾dÃ© projde tady vÃ½chodnÃ­ branou a pak zmizÃ­ v divoÄinÄ› nalevo.
+	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Jednou mi vyklÃ¡dal, Å¾e tu roste skoro vÅ¡echno kromÄ› krÃ¡lovskÃ©ho Å¡Å¥ovÃ­ku.
 	
 	Wld_InsertItem (ItPl_Mana_Herb_01,"FP_ITEM_HERB_01");
 	Wld_InsertItem (ItPl_Mana_Herb_02,"FP_ITEM_HERB_02");
@@ -236,7 +236,7 @@ func void DIA_Zuris_Kraut_Info ()
 };
 
 // **************************************************
-//					 Kronstöckel
+//					 KronstÃ¶ckel
 // **************************************************
 
 instance DIA_Zuris_Kronstoeckel (C_INFO)
@@ -246,7 +246,7 @@ instance DIA_Zuris_Kronstoeckel (C_INFO)
 	condition	= DIA_Zuris_Kronstoeckel_Condition;
 	information	= DIA_Zuris_Kronstoeckel_Info;
 	permanent	= FALSE;
-	description	= "Zmínil se Constantino nìkdy, kde hledat královskı šovík?";
+	description	= "ZmÃ­nil se Constantino nÄ›kdy, kde hledat krÃ¡lovskÃ½ Å¡Å¥ovÃ­k?";
 };
 
 func int DIA_Zuris_Kronstoeckel_Condition ()
@@ -258,10 +258,10 @@ func int DIA_Zuris_Kronstoeckel_Condition ()
 };
 func void DIA_Zuris_Kronstoeckel_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //Zmínil se Constantino nìkdy, kde hledat královskı šovík?
-	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //Jednou jsem slyšel, jak øíká, e ten nejlepší roste poblí kamennıch kruhù.
-	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //U Lobartova statku - to je kousek od druhé brány - se jeden takovı kamennı kruh nachází.
-	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //Myslím, e leí na kopci. Døív to bıvalo nìjaké pohøebištì nebo tak nìco.
+	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //ZmÃ­nil se Constantino nÄ›kdy, kde hledat krÃ¡lovskÃ½ Å¡Å¥ovÃ­k?
+	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //Jednou jsem slyÅ¡el, jak Å™Ã­kÃ¡, Å¾e ten nejlepÅ¡Ã­ roste poblÃ­Å¾ kamennÃ½ch kruhÅ¯.
+	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //U Lobartova statku - to je kousek od druhÃ© brÃ¡ny - se jeden takovÃ½ kamennÃ½ kruh nachÃ¡zÃ­.
+	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //MyslÃ­m, Å¾e leÅ¾Ã­ na kopci. DÅ™Ã­v to bÃ½valo nÄ›jakÃ© pohÅ™ebiÅ¡tÄ› nebo tak nÄ›co.
 	
 	Wld_InsertItem (ItPl_Perm_Herb,"FP_ITEM_HERB_11");
 };
@@ -276,7 +276,7 @@ instance DIA_Zuris_WHERE		(C_INFO)
 	condition	 = 	DIA_Zuris_WHERE_Condition;
 	information	 = 	DIA_Zuris_WHERE_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kde bych Constantina našel?";
+	description	 = 	"Kde bych Constantina naÅ¡el?";
 };
 
 func int DIA_Zuris_WHERE_Condition ()
@@ -289,8 +289,8 @@ func int DIA_Zuris_WHERE_Condition ()
 };
 func void DIA_Zuris_WHERE_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_WHERE_15_00"); //Kde bych Constantina našel?
-	AI_Output (self, other, "DIA_Zuris_WHERE_14_01"); //Jeho obydlí najdeš v prùchodu poblí Haradovy kovárny. Urèitì ho nemineš.
+	AI_Output (other, self, "DIA_Zuris_WHERE_15_00"); //Kde bych Constantina naÅ¡el?
+	AI_Output (self, other, "DIA_Zuris_WHERE_14_01"); //Jeho obydlÃ­ najdeÅ¡ v prÅ¯chodu poblÃ­Å¾ Haradovy kovÃ¡rny. UrÄitÄ› ho nemineÅ¡.
 };
 
 
@@ -303,7 +303,7 @@ instance DIA_Zuris_Kloster		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Zuris_Kloster_Condition;
 	information	 = 	DIA_Zuris_Kloster_Info;
-	description  =  "Povìz mi nìco o klášteøe.";
+	description  =  "PovÄ›z mi nÄ›co o klÃ¡Å¡teÅ™e.";
 };
 
 func int DIA_Zuris_Kloster_Condition ()
@@ -315,8 +315,8 @@ func int DIA_Zuris_Kloster_Condition ()
 };
 func void DIA_Zuris_Kloster_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //Povìz mi nìco o klášteøe.
-	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //O tom by sis mìl radši pohovoøit pøímo s Daronem. Ten ví daleko víc ne já.
+	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //PovÄ›z mi nÄ›co o klÃ¡Å¡teÅ™e.
+	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //O tom by sis mÄ›l radÅ¡i pohovoÅ™it pÅ™Ã­mo s Daronem. Ten vÃ­ daleko vÃ­c neÅ¾ jÃ¡.
 };
 
 // ************************************************************
@@ -329,7 +329,7 @@ INSTANCE DIA_Zuris_Minenanteil (C_INFO)
 	condition	= DIA_Zuris_Minenanteil_Condition;
 	information	= DIA_Zuris_Minenanteil_Info;
 
-	description = "Prodáváš dùlní akcie?";
+	description = "ProdÃ¡vÃ¡Å¡ dÅ¯lnÃ­ akcie?";
 };   
                     
 FUNC INT DIA_Zuris_Minenanteil_Condition()
@@ -343,8 +343,8 @@ FUNC INT DIA_Zuris_Minenanteil_Condition()
 
 FUNC VOID DIA_Zuris_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //Ty prodáváš dùlní akcie?
-	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Ano, nìkteré šly ale rapidnì dolù. To je naposled, co jsem se pustil do nìèeho takhle podezøelého!
+	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //Ty prodÃ¡vÃ¡Å¡ dÅ¯lnÃ­ akcie?
+	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Ano, nÄ›kterÃ© Å¡ly ale rapidnÄ› dolÅ¯. To je naposled, co jsem se pustil do nÄ›Äeho takhle podezÅ™elÃ©ho!
 	
 	B_GivePlayerXP (XP_Ambient);
 };	

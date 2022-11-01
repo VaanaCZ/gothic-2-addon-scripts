@@ -41,7 +41,7 @@ func int DIA_Harad_Hallo_Condition ()
 };
 func void DIA_Harad_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Harad_Hallo_12_00"); //(nevrle) Co chceš?
+	AI_Output (self, other, "DIA_Harad_Hallo_12_00"); //(nevrle) Co chceÅ¡?
 };
 
 // *****************************************************
@@ -54,7 +54,7 @@ instance DIA_Harad_Arbeit		(C_INFO)
 	condition	= DIA_Harad_Arbeit_Condition;
 	information	= DIA_Harad_Arbeit_Info;
 	permanent   = FALSE;
-	description = "Hledám práci.";
+	description = "HledÃ¡m prÃ¡ci.";
 };
 func int DIA_Harad_Arbeit_Condition ()
 {
@@ -62,21 +62,21 @@ func int DIA_Harad_Arbeit_Condition ()
 };
 func void DIA_Harad_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Arbeit_15_00"); //Hledám práci!
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_01"); //Hm - hodil by se mi novı uèedník.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_02"); //Brian brzy dokonèí své uèení a potom opustí mìsto.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_03"); //Umíš nìco?
-	AI_Output (other, self, "DIA_Harad_Arbeit_15_04"); //Jestli máš na mysli kováøství...
+	AI_Output (other, self, "DIA_Harad_Arbeit_15_00"); //HledÃ¡m prÃ¡ci!
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_01"); //Hm - hodil by se mi novÃ½ uÄednÃ­k.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_02"); //Brian brzy dokonÄÃ­ svÃ© uÄenÃ­ a potom opustÃ­ mÄ›sto.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_03"); //UmÃ­Å¡ nÄ›co?
+	AI_Output (other, self, "DIA_Harad_Arbeit_15_04"); //Jestli mÃ¡Å¡ na mysli kovÃ¡Å™stvÃ­...
 	AI_Output (self, other, "DIA_Harad_Arbeit_12_05"); //Ne, to jsem zrovna nemyslel.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_06"); //Døív nebo pozdìji skøeti celé tohle mìsto obklíèí a pak budou nìco platní pouze ti, kteøí je dokáí ubránit.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_06"); //DÅ™Ã­v nebo pozdÄ›ji skÅ™eti celÃ© tohle mÄ›sto obklÃ­ÄÃ­ a pak budou nÄ›co platnÃ­ pouze ti, kteÅ™Ã­ je dokÃ¡Å¾Ã­ ubrÃ¡nit.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Harad_Arbeit_12_07"); //A já si do uèení nevezmu ádného budiknièemu, kterı pøi první známce potíí uteèe z mìsta se enami a ostatními poseroutky, místo aby zùstal tady a bránil pevnost.
+		AI_Output (self, other, "DIA_Harad_Arbeit_12_07"); //A jÃ¡ si do uÄenÃ­ nevezmu Å¾Ã¡dnÃ©ho budiÅ¾kniÄemu, kterÃ½ pÅ™i prvnÃ­ znÃ¡mce potÃ­Å¾Ã­ uteÄe z mÄ›sta se Å¾enami a ostatnÃ­mi poseroutky, mÃ­sto aby zÅ¯stal tady a brÃ¡nil pevnost.
 	};
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling,"Pokud se mi podaøí pøesvìdèit Harada, e nejsem ádnı budiknièemu, pøijme mì za svého uènì.");
+	B_LogEntry (TOPIC_Lehrling,"Pokud se mi podaÅ™Ã­ pÅ™esvÄ›dÄit Harada, Å¾e nejsem Å¾Ã¡dnÃ½ budiÅ¾kniÄemu, pÅ™ijme mÄ› za svÃ©ho uÄnÄ›.");
 };
 
 // *****************************************************
@@ -89,7 +89,7 @@ instance DIA_Harad_Taugenichts (C_INFO)
 	condition	= DIA_Harad_Taugenichts_Condition;
 	information	= DIA_Harad_Taugenichts_Info;
 	permanent   = FALSE;
-	description = "Já nejsem ádnı budiknièemu!";
+	description = "JÃ¡ nejsem Å¾Ã¡dnÃ½ budiÅ¾kniÄemu!";
 };
 func int DIA_Harad_Taugenichts_Condition ()
 {
@@ -100,18 +100,18 @@ func int DIA_Harad_Taugenichts_Condition ()
 };
 func void DIA_Harad_Taugenichts_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Taugenichts_15_00"); //Já nejsem ádnı budiknièemu!
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_01"); //To jsou silná slova! Mùeš to ale podloit i nìjakımi skutky?
-	AI_Output (other, self, "DIA_Harad_Taugenichts_15_02"); //A to jakımi?
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_03"); //Pøines mi nìjakou skøetí zbraò.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_04"); //Skøeti u byli zpozorováni pøímo u mìsta, take s trochou štìstí nebudeš hledat dlouho.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_05"); //Jestli se ti povede nìjakého skolit, tak tì pøijmu do uèení.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_06"); //Pokud s tím tedy budou souhlasit i ostatní mistøi.
+	AI_Output (other, self, "DIA_Harad_Taugenichts_15_00"); //JÃ¡ nejsem Å¾Ã¡dnÃ½ budiÅ¾kniÄemu!
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_01"); //To jsou silnÃ¡ slova! MÅ¯Å¾eÅ¡ to ale podloÅ¾it i nÄ›jakÃ½mi skutky?
+	AI_Output (other, self, "DIA_Harad_Taugenichts_15_02"); //A to jakÃ½mi?
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_03"); //PÅ™ines mi nÄ›jakou skÅ™etÃ­ zbraÅˆ.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_04"); //SkÅ™eti uÅ¾ byli zpozorovÃ¡ni pÅ™Ã­mo u mÄ›sta, takÅ¾e s trochou Å¡tÄ›stÃ­ nebudeÅ¡ hledat dlouho.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_05"); //Jestli se ti povede nÄ›jakÃ©ho skolit, tak tÄ› pÅ™ijmu do uÄenÃ­.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_06"); //Pokud s tÃ­m tedy budou souhlasit i ostatnÃ­ mistÅ™i.
 	
 	MIS_Harad_Orc = LOG_RUNNING;
 	Log_CreateTopic(TOPIC_HaradOrk,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HaradOrk,LOG_RUNNING);
-	B_LogEntry (TOPIC_HaradOrk,"Za mìstem se usadil skøet, kterého mám na prosbu kováøe Harada zabít. Jako dùkaz mu postaèí jakákoliv skøetí zbraò.");
+	B_LogEntry (TOPIC_HaradOrk,"Za mÄ›stem se usadil skÅ™et, kterÃ©ho mÃ¡m na prosbu kovÃ¡Å™e Harada zabÃ­t. Jako dÅ¯kaz mu postaÄÃ­ jakÃ¡koliv skÅ™etÃ­ zbraÅˆ.");
 };
 
 // *****************************************************
@@ -124,7 +124,7 @@ instance DIA_Harad_OrcRunning (C_INFO)
 	condition	= DIA_Harad_OrcRunning_Condition;
 	information	= DIA_Harad_OrcRunning_Info;
 	permanent   = FALSE;
-	description = "Promluvme si ještì o té skøetí záleitosti...";
+	description = "Promluvme si jeÅ¡tÄ› o tÃ© skÅ™etÃ­ zÃ¡leÅ¾itosti...";
 };
 func int DIA_Harad_OrcRunning_Condition ()
 {
@@ -136,26 +136,26 @@ func int DIA_Harad_OrcRunning_Condition ()
 };
 func void DIA_Harad_OrcRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_15_00"); //Promluvme si ještì o té skøetí záleitosti...
+	AI_Output (other, self, "DIA_Harad_OrcRunning_15_00"); //Promluvme si jeÅ¡tÄ› o tÃ© skÅ™etÃ­ zÃ¡leÅ¾itosti...
 	AI_Output (self, other, "DIA_Harad_OrcRunning_12_01"); //(stroze) Co?
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);	
-	Info_AddChoice (DIA_Harad_OrcRunning, "Ten tvùj skøet u je teï mrtvı!", DIA_Harad_OrcRunning_Done);
-	Info_AddChoice (DIA_Harad_OrcRunning, "Skøet je zatracenì tuhı protivník...", DIA_Harad_OrcRunning_TooHard);
+	Info_AddChoice (DIA_Harad_OrcRunning, "Ten tvÅ¯j skÅ™et uÅ¾ je teÄ mrtvÃ½!", DIA_Harad_OrcRunning_Done);
+	Info_AddChoice (DIA_Harad_OrcRunning, "SkÅ™et je zatracenÄ› tuhÃ½ protivnÃ­k...", DIA_Harad_OrcRunning_TooHard);
 
 	//AI_Output (self, other, "DIA_Harad_OrcRunning_12_02"); //Ah, ich verstehe schon. Du hast Wichtigeres zu tun. Schon in Ordnung, die Sache hat sich erledigt.
 };
 
 func void DIA_Harad_OrcRunning_TooHard()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_00"); //Ale skøet je zatracenì tuhı protivník.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_01"); //Hm - jak tak na tebe koukám, moná máš pravdu. Jsi fakt docela vyle, ale to se mùe zmìnit.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_02"); //Stejnì mi musíš dokázat, e se nebojíš bojovat.
-	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_03"); //Take by to mohlo bıt nìco menšího?
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_04"); //Hm - (pøemıšlí) Hakon, co na trišti obchoduje se zbranìmi, se mi svìøil, e ho pøed pár dny pøepadli banditi.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_05"); //Prı se potulují nìkde za jiní branou.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_06"); //Ti zbabìlí lupièi nejspíš moc rozumu nepobrali.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_07"); //Tak je všechny pochytej - a do posledního! Tak mi dokáeš, e nám tady ve mìstì snad pøece jen budeš nìco platnı.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_00"); //Ale skÅ™et je zatracenÄ› tuhÃ½ protivnÃ­k.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_01"); //Hm - jak tak na tebe koukÃ¡m, moÅ¾nÃ¡ mÃ¡Å¡ pravdu. Jsi fakt docela vyÅ¾le, ale to se mÅ¯Å¾e zmÄ›nit.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_02"); //StejnÄ› mi musÃ­Å¡ dokÃ¡zat, Å¾e se nebojÃ­Å¡ bojovat.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_03"); //TakÅ¾e by to mohlo bÃ½t nÄ›co menÅ¡Ã­ho?
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_04"); //Hm - (pÅ™emÃ½Å¡lÃ­) Hakon, co na trÅ¾iÅ¡ti obchoduje se zbranÄ›mi, se mi svÄ›Å™il, Å¾e ho pÅ™ed pÃ¡r dny pÅ™epadli banditi.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_05"); //PrÃ½ se potulujÃ­ nÄ›kde za jiÅ¾nÃ­ branou.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_06"); //Ti zbabÄ›lÃ­ lupiÄi nejspÃ­Å¡ moc rozumu nepobrali.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_07"); //Tak je vÅ¡echny pochytej - aÅ¾ do poslednÃ­ho! Tak mi dokÃ¡Å¾eÅ¡, Å¾e nÃ¡m tady ve mÄ›stÄ› snad pÅ™ece jen budeÅ¡ nÄ›co platnÃ½.
 	
 	Harad_HakonMission = TRUE;
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
@@ -163,11 +163,11 @@ func void DIA_Harad_OrcRunning_TooHard()
 	
 	if (MIS_HakonBandits != LOG_RUNNING)
 	{
-		B_LogEntry (TOPIC_Lehrling, "Harad mi øekl, e nìjací bandité okradli za mìstem kupce Hakona. Jestli se mi je podaøí dostihnout, pøesvìdèím ho, e za nìco stojím. Mìl bych si tedy promluvit s Hakonem - snad bude spíš vìdìt, kde se ti bandité potloukají.");
+		B_LogEntry (TOPIC_Lehrling, "Harad mi Å™ekl, Å¾e nÄ›jacÃ­ banditÃ© okradli za mÄ›stem kupce Hakona. Jestli se mi je podaÅ™Ã­ dostihnout, pÅ™esvÄ›dÄÃ­m ho, Å¾e za nÄ›co stojÃ­m. MÄ›l bych si tedy promluvit s Hakonem - snad bude spÃ­Å¡ vÄ›dÄ›t, kde se ti banditÃ© potloukajÃ­.");
 	}
 	else
 	{
-		B_LogEntry (TOPIC_Lehrling, "Harad mi øekl, e nìjací bandité okradli za mìstem kupce Hakona. Jestli se mi je podaøí dostihnout, pøesvìdèím ho, e za nìco stojím.");
+		B_LogEntry (TOPIC_Lehrling, "Harad mi Å™ekl, Å¾e nÄ›jacÃ­ banditÃ© okradli za mÄ›stem kupce Hakona. Jestli se mi je podaÅ™Ã­ dostihnout, pÅ™esvÄ›dÄÃ­m ho, Å¾e za nÄ›co stojÃ­m.");
 	};
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);
@@ -175,8 +175,8 @@ func void DIA_Harad_OrcRunning_TooHard()
 
 func void DIA_Harad_OrcRunning_Done()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_Done_15_00"); //Jako by ten skøet byl u teï mrtvı!
-	AI_Output (self, other, "DIA_Harad_OrcRunning_Done_12_01"); //Dobøe! Tak teï pøestaò plıtvat dechem a koukej, a za tebe mluví èiny!
+	AI_Output (other, self, "DIA_Harad_OrcRunning_Done_15_00"); //Jako by ten skÅ™et byl uÅ¾ teÄ mrtvÃ½!
+	AI_Output (self, other, "DIA_Harad_OrcRunning_Done_12_01"); //DobÅ™e! Tak teÄ pÅ™estaÅˆ plÃ½tvat dechem a koukej, aÅ¥ za tebe mluvÃ­ Äiny!
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);
 };
@@ -191,7 +191,7 @@ instance DIA_Harad_OrcSuccess (C_INFO)
 	condition	= DIA_Harad_OrcSuccess_Condition;
 	information	= DIA_Harad_OrcSuccess_Info;
 	permanent   = FALSE;
-	description = "Získal jsem tu skøetí zbraò, jak jsi chtìl.";
+	description = "ZÃ­skal jsem tu skÅ™etÃ­ zbraÅˆ, jak jsi chtÄ›l.";
 };
 func int DIA_Harad_OrcSuccess_Condition ()
 {
@@ -209,8 +209,8 @@ func int DIA_Harad_OrcSuccess_Condition ()
 };
 func void DIA_Harad_OrcSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_OrcSuccess_15_00"); //Získal jsem tu skøetí zbraò, jak jsi chtìl.
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_01"); //Uka...
+	AI_Output (other, self, "DIA_Harad_OrcSuccess_15_00"); //ZÃ­skal jsem tu skÅ™etÃ­ zbraÅˆ, jak jsi chtÄ›l.
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_01"); //UkaÅ¾...
 	
 		if (Npc_HasItems(other, ItMw_2H_OrcAxe_01) > 0)
 		{
@@ -235,29 +235,29 @@ func void DIA_Harad_OrcSuccess_Info ()
 	
 	if (Harad_HakonMission == TRUE)
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_02"); //Tak tys to PØECE dokázal! Tos tedy fakt dobrı!
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_02"); //Tak tys to PÅ˜ECE dokÃ¡zal! Tos tedy fakt dobrÃ½!
 	};
 	
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_03"); //Takovou zbraò u jsem nemìl v ruce, ani nepamatuju - naposledy, kdy jsem slouil jako voják ve skøetí válce.
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_04"); //To byly krušné èasy, to ti povím.
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_03"); //Takovou zbraÅˆ uÅ¾ jsem nemÄ›l v ruce, ani nepamatuju - naposledy, kdyÅ¾ jsem slouÅ¾il jako vojÃ¡k ve skÅ™etÃ­ vÃ¡lce.
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_04"); //To byly kruÅ¡nÃ© Äasy, to ti povÃ­m.
 	
 	if (Player_IsApprentice == APP_Harad)
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_05"); //Já vìdìl, e udìlám dobøe, kdy tì pøijmu do uèení. Skvìlá práce!
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_05"); //JÃ¡ vÄ›dÄ›l, Å¾e udÄ›lÃ¡m dobÅ™e, kdyÅ¾ tÄ› pÅ™ijmu do uÄenÃ­. SkvÄ›lÃ¡ prÃ¡ce!
 	}
 	else if (Player_IsApprentice == APP_NONE) 
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_06"); //Nevìøil jsem, e to zvládneš. Je to obdivuhodné.
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_06"); //NevÄ›Å™il jsem, Å¾e to zvlÃ¡dneÅ¡. Je to obdivuhodnÃ©.
 	}
 	else //anderer Weg
 	{
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_07"); //Škoda e ses rozhodl pro jinou dráhu.
-		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_08"); //Opravdu bych tu pro tebe našel uplatnìní.
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_07"); //Å koda Å¾e ses rozhodl pro jinou drÃ¡hu.
+		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_08"); //Opravdu bych tu pro tebe naÅ¡el uplatnÄ›nÃ­.
 	};
 	
 	MIS_Harad_Orc = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Harad_Orc);
-	B_LogEntry (Topic_Lehrling,"Harad mì pøijme jako svého uèedníka, pokud s tím budou souhlasit i ostatní mistøi.");
+	B_LogEntry (Topic_Lehrling,"Harad mÄ› pÅ™ijme jako svÃ©ho uÄednÃ­ka, pokud s tÃ­m budou souhlasit i ostatnÃ­ mistÅ™i.");
 };
 
 // *****************************************************
@@ -273,7 +273,7 @@ instance DIA_Harad_LEHRLING (C_INFO)
 	condition	= DIA_Harad_LEHRLING_Condition;
 	information	= DIA_Harad_LEHRLING_Info;
 	permanent   = TRUE;
-	description = "Kdy mùu jako tvùj uèedník zaèít?";
+	description = "Kdy mÅ¯Å¾u jako tvÅ¯j uÄednÃ­k zaÄÃ­t?";
 };
 func int DIA_Harad_LEHRLING_Condition ()
 {
@@ -288,7 +288,7 @@ func void DIA_Harad_LEHRLING_Info ()
 	var int stimmen;
 	stimmen = 0;
 	
-	AI_Output (other, self, "DIA_Harad_LEHRLING_15_00"); //Kdy mùu jako tvùj uèedník zaèít?
+	AI_Output (other, self, "DIA_Harad_LEHRLING_15_00"); //Kdy mÅ¯Å¾u jako tvÅ¯j uÄednÃ­k zaÄÃ­t?
 	
 	if (MIS_Harad_Orc == LOG_SUCCESS)
 	|| ( (MIS_HakonBandits == LOG_SUCCESS) && (Harad_HakonMission == TRUE) )
@@ -296,62 +296,62 @@ func void DIA_Harad_LEHRLING_Info ()
 		// ------ Harad ------
 		if (MIS_Harad_Orc == LOG_SUCCESS)
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_01"); //Chlap, kterı dokáe skolit skøeta, se nám opravdu hodí.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_01"); //Chlap, kterÃ½ dokÃ¡Å¾e skolit skÅ™eta, se nÃ¡m opravdu hodÃ­.
 			
 			if (MIS_HakonBandits == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_02"); //Krom toho se mi Hakon pochlubil, jak stateènì ses vypoøádal s bandity. To tì šlechtí!
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_02"); //Krom toho se mi Hakon pochlubil, jak stateÄnÄ› ses vypoÅ™Ã¡dal s bandity. To tÄ› Å¡lechtÃ­!
 			};
 		}
 		else //HakonBandits SUCCESS
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_03"); //Sice jsi nezabil ádného skøeta, ale Hakon se chlubil, jak skvìle ses vypoøádal s bandity. To tì šlechtí!
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_03"); //Sice jsi nezabil Å¾Ã¡dnÃ©ho skÅ™eta, ale Hakon se chlubil, jak skvÄ›le ses vypoÅ™Ã¡dal s bandity. To tÄ› Å¡lechtÃ­!
 		};
 		
-		AI_Output (self, other,"DIA_Harad_LEHRLING_12_04"); //Co se mì tıèe, mùeš zaèít tøeba hned.
+		AI_Output (self, other,"DIA_Harad_LEHRLING_12_04"); //Co se mÄ› tÃ½Äe, mÅ¯Å¾eÅ¡ zaÄÃ­t tÅ™eba hned.
 				
 		stimmen = stimmen + 1;
 		
-		AI_Output (self, other,"DIA_Harad_LEHRLING_12_05"); //A co se tıèe ostatních mistrù...
+		AI_Output (self, other,"DIA_Harad_LEHRLING_12_05"); //A co se tÃ½Äe ostatnÃ­ch mistrÅ¯...
 		
 		// ------ Thorben ------
 		if (Thorben.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
 			if (MIS_Thorben_GetBlessings == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_06"); //Thorben ti dal své poehnání.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_06"); //Thorben ti dal svÃ© poÅ¾ehnÃ¡nÃ­.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_07"); //Starı dobrı Thorben by byl rád, kdyby sis napøed vyprosil boí poehnání. Myslím, e to je dobrı nápad.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_07"); //StarÃ½ dobrÃ½ Thorben by byl rÃ¡d, kdyby sis napÅ™ed vyprosil boÅ¾Ã­ poÅ¾ehnÃ¡nÃ­. MyslÃ­m, Å¾e to je dobrÃ½ nÃ¡pad.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_08"); //Thorben prı s tebou ještì nemluvil.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_08"); //Thorben prÃ½ s tebou jeÅ¡tÄ› nemluvil.
 		};
 		
 		// ------ Bosper ------
 		if (Bosper.aivar[AIV_TalkedToPlayer] == TRUE)
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_09"); //Bosper se mi to snail vymluvit - chce tì toti za uèedníka sám.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_09"); //Bosper se mi to snaÅ¾il vymluvit - chce tÄ› totiÅ¾ za uÄednÃ­ka sÃ¡m.
 			if (MIS_Bosper_Bogen == LOG_SUCCESS)
 			|| (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_10"); //Mìl jsem s ním na tohle téma krátkou, ale ostrou diskusi.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_10"); //MÄ›l jsem s nÃ­m na tohle tÃ©ma krÃ¡tkou, ale ostrou diskusi.
 				AI_Output (self, other,"DIA_Harad_LEHRLING_12_11"); //Nakonec souhlasil.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_12"); //Poádal mì, zda bych mu nedovolil, aby ti mohl svou profesi aspoò pøedstavit.
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_13"); //Take si to omrkni - potom se mùeš vdycky rozhodnout. Tedy leda e bys nechtìl jeho hlas, samozøejmì.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_12"); //PoÅ¾Ã¡dal mÄ›, zda bych mu nedovolil, aby ti mohl svou profesi aspoÅˆ pÅ™edstavit.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_13"); //TakÅ¾e si to omrkni - potom se mÅ¯Å¾eÅ¡ vÅ¾dycky rozhodnout. Tedy leda Å¾e bys nechtÄ›l jeho hlas, samozÅ™ejmÄ›.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_14"); //A Bosper tì zatím vùbec nezná.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_14"); //A Bosper tÄ› zatÃ­m vÅ¯bec neznÃ¡.
 		};
 		
 		// ------ Constantino ------
@@ -359,18 +359,18 @@ func void DIA_Harad_LEHRLING_Info ()
 		{
 			if (B_GetGreatestPetzCrime (self) == CRIME_NONE)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_15"); //Constantinovi je jako vdycky všecko jedno. Co se jeho tıèe, tak prı mùeš zaèít, u koho chceš.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_15"); //Constantinovi je jako vÅ¾dycky vÅ¡ecko jedno. Co se jeho tÃ½Äe, tak prÃ½ mÅ¯Å¾eÅ¡ zaÄÃ­t, u koho chceÅ¡.
 				stimmen = stimmen + 1;
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_16"); //Constantino tvrdí, es tady ve mìstì spáchal nìjakı zloèin - je to pravda?
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_17"); //Jestli jo, tak bys to mìl jít okamitì napravit!
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_16"); //Constantino tvrdÃ­, Å¾es tady ve mÄ›stÄ› spÃ¡chal nÄ›jakÃ½ zloÄin - je to pravda?
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_17"); //Jestli jo, tak bys to mÄ›l jÃ­t okamÅ¾itÄ› napravit!
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_18"); //Constantino o tobì ještì vùbec neslyšel.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_18"); //Constantino o tobÄ› jeÅ¡tÄ› vÅ¯bec neslyÅ¡el.
 		};
 		
 		// ------ Matteo ------
@@ -378,21 +378,21 @@ func void DIA_Harad_LEHRLING_Info ()
 		{
 			if (MIS_Matteo_Gold == LOG_SUCCESS)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_19"); //A Matteo hlásí, es mu vrátil jeho zlato. Zdá se, e jsi opravdu èestnı mu.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_19"); //A Matteo hlÃ¡sÃ­, Å¾es mu vrÃ¡til jeho zlato. ZdÃ¡ se, Å¾e jsi opravdu ÄestnÃ½ muÅ¾.
 				stimmen = stimmen + 1;
 			}
 			else if (MIS_Matteo_Gold == LOG_RUNNING)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_20"); //A Matteo tvrdí, e mu ještì poøád nìco dluíš. Nevím, co mezi sebou máte, ale mìl bys to dát rychle do poøádku.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_20"); //A Matteo tvrdÃ­, Å¾e mu jeÅ¡tÄ› poÅ™Ã¡d nÄ›co dluÅ¾Ã­Å¡. NevÃ­m, co mezi sebou mÃ¡te, ale mÄ›l bys to dÃ¡t rychle do poÅ™Ã¡dku.
 			}
 			else	
 			{	
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_21"); //A Matteo prı s tebou na tohle téma ještì vùbec nemluvil.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_21"); //A Matteo prÃ½ s tebou na tohle tÃ©ma jeÅ¡tÄ› vÅ¯bec nemluvil.
 			};
 		}
 		else //noch kein Dialog
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_22"); //A Matteo tì prı ve svém krámku ještì nevidìl.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_22"); //A Matteo tÄ› prÃ½ ve svÃ©m krÃ¡mku jeÅ¡tÄ› nevidÄ›l.
 		};		
 
 		// ------ AUSWERTUNG ------
@@ -400,45 +400,45 @@ func void DIA_Harad_LEHRLING_Info ()
 		{
 			if (stimmen == 5)
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_23"); //To znamená, es získal doporuèení ode všech mistrù!
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_23"); //To znamenÃ¡, Å¾es zÃ­skal doporuÄenÃ­ ode vÅ¡ech mistrÅ¯!
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_24"); //To znamená, es získal doporuèení od ètyø mistrù. Co pro pøijetí do uèení staèí.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_24"); //To znamenÃ¡, Å¾es zÃ­skal doporuÄenÃ­ od ÄtyÅ™ mistrÅ¯. CoÅ¾ pro pÅ™ijetÃ­ do uÄenÃ­ staÄÃ­.
 			};
 			
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_25"); //Chceš tedy vstoupit do uèení ke mnì?
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_25"); //ChceÅ¡ tedy vstoupit do uÄenÃ­ ke mnÄ›?
 			
 			Info_ClearChoices (DIA_Harad_LEHRLING);
-			Info_AddChoice (DIA_Harad_LEHRLING, "Dobøe - rozmyslím si to.", DIA_Harad_LEHRLING_Later);
+			Info_AddChoice (DIA_Harad_LEHRLING, "DobÅ™e - rozmyslÃ­m si to.", DIA_Harad_LEHRLING_Later);
 			Info_AddChoice (DIA_Harad_LEHRLING, "Jdu do toho!", DIA_Harad_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_26"); //Potøebuješ doporuèení alespoò od ètyø mistrù, jinak tì nikdo v dolní èásti mìsta do uèení nepøijme.
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_27"); //Mìl by sis proto promluvit se všemi, které jsi ještì nepøesvìdèil.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_26"); //PotÅ™ebujeÅ¡ doporuÄenÃ­ alespoÅˆ od ÄtyÅ™ mistrÅ¯, jinak tÄ› nikdo v dolnÃ­ ÄÃ¡sti mÄ›sta do uÄenÃ­ nepÅ™ijme.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_27"); //MÄ›l by sis proto promluvit se vÅ¡emi, kterÃ© jsi jeÅ¡tÄ› nepÅ™esvÄ›dÄil.
 		};
 	}
-	else //Mission nicht erfüllt
+	else //Mission nicht erfÃ¼llt
 	{
-		AI_Output (self, other,"DIA_Harad_LEHRLING_12_28"); //Dokud mi nedokáeš, e nejsi úplnı budiknièemu, nemáš šanci.
+		AI_Output (self, other,"DIA_Harad_LEHRLING_12_28"); //Dokud mi nedokÃ¡Å¾eÅ¡, Å¾e nejsi ÃºplnÃ½ budiÅ¾kniÄemu, nemÃ¡Å¡ Å¡anci.
 	};
 };
 
 func void DIA_Harad_LEHRLING_OK()
 {
 	AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_00"); //Jdu do toho!
-	AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_01"); //Vıbornì! A teï tì nauèím, jak vykovat pìknı meè.
+	AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_01"); //VÃ½bornÄ›! A teÄ tÄ› nauÄÃ­m, jak vykovat pÄ›knÃ½ meÄ.
 	
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_02"); //To u umím!
-		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_03"); //No tak tím líp!
+		AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_02"); //To uÅ¾ umÃ­m!
+		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_03"); //No tak tÃ­m lÃ­p!
 	};
 	
 	if (other.attribute[ATR_STRENGTH] < (T_MED-30))
 	{
-		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_04"); //Krom toho bys mìl taky trochu posilovat. Vdy se mi úplnì ztrácíš pøed oèima!
+		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_04"); //Krom toho bys mÄ›l taky trochu posilovat. VÅ¾dyÅ¥ se mi ÃºplnÄ› ztrÃ¡cÃ­Å¡ pÅ™ed oÄima!
 	};
 	Player_IsApprentice = APP_Harad;
 	Npc_ExchangeRoutine (Lothar, "START");
@@ -448,21 +448,21 @@ func void DIA_Harad_LEHRLING_OK()
 	Harad_Lehrling_Day = Wld_GetDay();
 	Wld_AssignRoomToGuild ("schmied", GIL_NONE);
 	MIS_Apprentice = LOG_SUCCESS;
-	B_LogEntry (Topic_Bonus,"Harad mì pøijal za uèedníka. Nyní mám pøístup i do horní ètvrti.");
-	B_LogEntry (Topic_Bonus,"Harad za dobrou cenu odkoupí zbranì, které vykovám.");
+	B_LogEntry (Topic_Bonus,"Harad mÄ› pÅ™ijal za uÄednÃ­ka. NynÃ­ mÃ¡m pÅ™Ã­stup i do hornÃ­ Ätvrti.");
+	B_LogEntry (Topic_Bonus,"Harad za dobrou cenu odkoupÃ­ zbranÄ›, kterÃ© vykovÃ¡m.");
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_CityTeacher, "Harad mì vyuèí kováøskému umìní a také se s jeho pomocí mohu stát silnìjším.");
+	B_LogEntry (Topic_CityTeacher, "Harad mÄ› vyuÄÃ­ kovÃ¡Å™skÃ©mu umÄ›nÃ­ a takÃ© se s jeho pomocÃ­ mohu stÃ¡t silnÄ›jÅ¡Ã­m.");
 	Info_ClearChoices (DIA_Harad_LEHRLING);
 };
 
 func void DIA_Harad_LEHRLING_Later()
 {
-	AI_Output (other, self, "DIA_Harad_LEHRLING_Later_15_00"); //Dobøe - rozmyslím si to.
+	AI_Output (other, self, "DIA_Harad_LEHRLING_Later_15_00"); //DobÅ™e - rozmyslÃ­m si to.
 	if (!Npc_IsDead (Brian))
 	{
-		AI_Output (self, other, "DIA_Harad_LEHRLING_Later_12_01"); //ádnı spìch, Brian tu ještì nìjakou dobu zùstane.
+		AI_Output (self, other, "DIA_Harad_LEHRLING_Later_12_01"); //Å½Ã¡dnÃ½ spÄ›ch, Brian tu jeÅ¡tÄ› nÄ›jakou dobu zÅ¯stane.
 	};
 	Info_ClearChoices (DIA_Harad_LEHRLING);
 };
@@ -477,7 +477,7 @@ instance DIA_Harad_Zustimmung		(C_INFO)
 	condition	 = 	DIA_Harad_Zustimmung_Condition;
 	information	 = 	DIA_Harad_Zustimmung_Info;
 	permanent    =  TRUE;
-	description	 = 	"Mohu se zapsat do uèení k nìkterému z ostatních mistrù?";
+	description	 = 	"Mohu se zapsat do uÄenÃ­ k nÄ›kterÃ©mu z ostatnÃ­ch mistrÅ¯?";
 };
 
 func int DIA_Harad_Zustimmung_Condition ()
@@ -495,33 +495,33 @@ var int DIA_Harad_Zustimmung_Permanent;
 
 func void DIA_Harad_Zustimmung_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Zustimmung_15_00"); //Mohu se zapsat do uèení k nìkterému z ostatních mistrù?
+	AI_Output (other, self, "DIA_Harad_Zustimmung_15_00"); //Mohu se zapsat do uÄenÃ­ k nÄ›kterÃ©mu z ostatnÃ­ch mistrÅ¯?
 	
 	if (MIS_Harad_Orc == LOG_SUCCESS)
 	|| ( (MIS_HakonBandits == LOG_SUCCESS) && (Harad_HakonMission == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_01"); //Jsi dobrı èlovìk.
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_01"); //Jsi dobrÃ½ ÄlovÄ›k.
 		if (MIS_HakonBandits == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Harad_Zustimmung_12_02"); //Hakon mi líèil, jak ses vypoøádal s bandity.
+			AI_Output (self, other, "DIA_Harad_Zustimmung_12_02"); //Hakon mi lÃ­Äil, jak ses vypoÅ™Ã¡dal s bandity.
 		};
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_03"); //Dám ti své doporuèení.
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_03"); //DÃ¡m ti svÃ© doporuÄenÃ­.
 		
 		if (DIA_Harad_Zustimmung_Permanent == FALSE)
 		{
 			B_GivePlayerXP (XP_Zustimmung);
 			DIA_Harad_Zustimmung_Permanent = TRUE;
 		};
-		B_LogEntry (Topic_Lehrling,"Harad mì doporuèí, pokud se budu chtít stát uèedníkem nìkde jinde.");
+		B_LogEntry (Topic_Lehrling,"Harad mÄ› doporuÄÃ­, pokud se budu chtÃ­t stÃ¡t uÄednÃ­kem nÄ›kde jinde.");
 		
 		if (!Npc_IsDead(Brian))
 		{
-			AI_Output (self, other, "DIA_Harad_Zustimmung_12_04"); //Brian tu ještì nìjakou dobu pobude. A èasem jistì najdu jiného siláka, kterı ho zastoupí.
+			AI_Output (self, other, "DIA_Harad_Zustimmung_12_04"); //Brian tu jeÅ¡tÄ› nÄ›jakou dobu pobude. A Äasem jistÄ› najdu jinÃ©ho silÃ¡ka, kterÃ½ ho zastoupÃ­.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_05"); //Ostatní mistøi ti své svolení klidnì dát mohou, ale já tì nedoporuèím, dokud mì nepøesvìdèíš, e nejsi jenom neschopné jelito!
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_05"); //OstatnÃ­ mistÅ™i ti svÃ© svolenÃ­ klidnÄ› dÃ¡t mohou, ale jÃ¡ tÄ› nedoporuÄÃ­m, dokud mÄ› nepÅ™esvÄ›dÄÃ­Å¡, Å¾e nejsi jenom neschopnÃ© jelito!
 	};
 };
 
@@ -557,9 +557,9 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_MIL)
 	&& (Harad_MILKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_00"); //Take tys vstoupil do øad domobrany? Jsem na tebe hrdı!
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_01"); //Bìhem sluby v armádì nejspíš nebudeš moci zároveò plnit své uèednické povinnosti. Ani to od tebe neèekám.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_02"); //Ale kdy budeš nìco potøebovat, klidnì pøijï.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_00"); //TakÅ¾e tys vstoupil do Å™ad domobrany? Jsem na tebe hrdÃ½!
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_01"); //BÄ›hem sluÅ¾by v armÃ¡dÄ› nejspÃ­Å¡ nebudeÅ¡ moci zÃ¡roveÅˆ plnit svÃ© uÄednickÃ© povinnosti. Ani to od tebe neÄekÃ¡m.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_02"); //Ale kdyÅ¾ budeÅ¡ nÄ›co potÅ™ebovat, klidnÄ› pÅ™ijÄ.
 		Harad_MILKommentar = TRUE;
 	}
 	
@@ -567,8 +567,8 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_PAL)
 	&& (Harad_PALKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_03"); //Koukám, e ses dokázal dostat mezi paladiny!
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_04"); //Jsem rád, e jsem tì pøijal do uèení. I kdy jsi za kovadlinou zrovna moc èasu nestrávil.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_03"); //KoukÃ¡m, Å¾e ses dokÃ¡zal dostat mezi paladiny!
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_04"); //Jsem rÃ¡d, Å¾e jsem tÄ› pÅ™ijal do uÄenÃ­. I kdyÅ¾ jsi za kovadlinou zrovna moc Äasu nestrÃ¡vil.
 		
 		Harad_PALKommentar = TRUE;
 	}
@@ -578,9 +578,9 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_KDF)
 	&& (Harad_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_05"); //Take tys vstoupil do kláštera. Já osobnì bych byl radši, kdybys zùstal ve mìstì. Potøebujeme kadého mue.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_06"); //Ale kdy tì Innos povolal, asi to tak má bıt.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_07"); //Kdy budeš nìco potøebovat, jsem ti vdycky k dispozici.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_05"); //TakÅ¾e tys vstoupil do klÃ¡Å¡tera. JÃ¡ osobnÄ› bych byl radÅ¡i, kdybys zÅ¯stal ve mÄ›stÄ›. PotÅ™ebujeme kaÅ¾dÃ©ho muÅ¾e.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_06"); //Ale kdyÅ¾ tÄ› Innos povolal, asi to tak mÃ¡ bÃ½t.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_07"); //KdyÅ¾ budeÅ¡ nÄ›co potÅ™ebovat, jsem ti vÅ¾dycky k dispozici.
 		Harad_INNOSKommentar = TRUE;
 	}
 	
@@ -589,13 +589,13 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_PALKommentar == FALSE)
 	&& (Harad_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_08"); //U ses tu hezkou dobu neukázal. Kdepak ses toulal, co?
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_08"); //UÅ¾ ses tu hezkou dobu neukÃ¡zal. Kdepak ses toulal, co?
 		Harad_Lehrling_Day = Wld_GetDay();
 	}
 	
 	else
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_09"); //Tak tì tu máme zas.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_09"); //Tak tÄ› tu mÃ¡me zas.
 		Harad_Lehrling_Day = Wld_GetDay();
 	};
 };
@@ -610,7 +610,7 @@ instance DIA_Harad_Waffen (C_INFO)
 	condition	 = 	DIA_Harad_Waffen_Condition;
 	information	 = 	DIA_Harad_Waffen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Prodáváš také zbranì?";
+	description	 = 	"ProdÃ¡vÃ¡Å¡ takÃ© zbranÄ›?";
 };
 func int DIA_Harad_Waffen_Condition ()
 {	
@@ -621,9 +621,9 @@ func int DIA_Harad_Waffen_Condition ()
 };
 func void DIA_Harad_Waffen_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Waffen_15_00"); //Prodáváš také zbranì?
-	AI_Output (self, other, "DIA_Harad_Waffen_12_01"); //Na to zapomeò. Všechno, co vyrobím, si berou paladinové nebo domobrana.
-	AI_Output (self ,other, "DIA_Harad_Add_12_00"); //Od lorda Hagena jsem dostal zakázku na 100 meèù - chce s nimi vybavit mìstskou strá.
+	AI_Output (other, self, "DIA_Harad_Waffen_15_00"); //ProdÃ¡vÃ¡Å¡ takÃ© zbranÄ›?
+	AI_Output (self, other, "DIA_Harad_Waffen_12_01"); //Na to zapomeÅˆ. VÅ¡echno, co vyrobÃ­m, si berou paladinovÃ© nebo domobrana.
+	AI_Output (self ,other, "DIA_Harad_Add_12_00"); //Od lorda Hagena jsem dostal zakÃ¡zku na 100 meÄÅ¯ - chce s nimi vybavit mÄ›stskou strÃ¡Å¾.
 };
 
 // *****************************************************
@@ -636,7 +636,7 @@ instance DIA_Harad_Aufgaben	(C_INFO)
 	condition	 = 	DIA_Harad_Aufgaben_Condition;
 	information	 = 	DIA_Harad_Aufgaben_Info;
 	permanent    =  FALSE;
-	description	 = 	"Jaké mám jako uèedník povinnosti?";
+	description	 = 	"JakÃ© mÃ¡m jako uÄednÃ­k povinnosti?";
 };
 
 func int DIA_Harad_Aufgaben_Condition ()
@@ -648,13 +648,13 @@ func int DIA_Harad_Aufgaben_Condition ()
 };
 func void DIA_Harad_Aufgaben_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Aufgaben_15_00"); //Jaké mám jako uèedník povinnosti?
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_01"); //Celkem tøi.
+	AI_Output (other, self, "DIA_Harad_Aufgaben_15_00"); //JakÃ© mÃ¡m jako uÄednÃ­k povinnosti?
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_01"); //Celkem tÅ™i.
 	AI_Output (other, self, "DIA_Harad_Aufgaben_15_02"); //Kovat, kovat a kovat.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_03"); //Nejsi tak hloupı, jak vypadáš. Za kadı meè ti zaplatím - take kdy se budeš flákat, ádné penízky se neposypou. Jak prosté.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_05"); //Krom toho tì mùu nauèit, jak vyrobit prostı meè.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_06"); //Magické meèe mohou vyrábìt pouze zkušení kováøi - a k tomu máš ještì hodnì daleko.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_07"); //Jestli potøebuješ nocleh, mùeš se uloit nìkde v mém domì. U je ti všechno jasné?
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_03"); //Nejsi tak hloupÃ½, jak vypadÃ¡Å¡. Za kaÅ¾dÃ½ meÄ ti zaplatÃ­m - takÅ¾e kdyÅ¾ se budeÅ¡ flÃ¡kat, Å¾Ã¡dnÃ© penÃ­zky se neposypou. Jak prostÃ©.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_05"); //Krom toho tÄ› mÅ¯Å¾u nauÄit, jak vyrobit prostÃ½ meÄ.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_06"); //MagickÃ© meÄe mohou vyrÃ¡bÄ›t pouze zkuÅ¡enÃ­ kovÃ¡Å™i - a k tomu mÃ¡Å¡ jeÅ¡tÄ› hodnÄ› daleko.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_07"); //Jestli potÅ™ebujeÅ¡ nocleh, mÅ¯Å¾eÅ¡ se uloÅ¾it nÄ›kde v mÃ©m domÄ›. UÅ¾ je ti vÅ¡echno jasnÃ©?
 };
 
 // ************************************************************
@@ -667,7 +667,7 @@ instance DIA_Harad_SellBlades (C_INFO)
 	condition	 = DIA_Harad_SellBlades_Condition;
 	information	 = DIA_Harad_SellBlades_Info;
 	permanent    = TRUE;
-	description	 = "Chtìl bych prodat zbranì, co jsem vykoval.";
+	description	 = "ChtÄ›l bych prodat zbranÄ›, co jsem vykoval.";
 };
 func int DIA_Harad_SellBlades_Condition ()
 {	
@@ -678,7 +678,7 @@ func int DIA_Harad_SellBlades_Condition ()
 };
 func void DIA_Harad_SellBlades_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_SellBlades_15_00"); //Chtìl bych prodat zbranì, co jsem vykoval.
+	AI_Output (other, self, "DIA_Harad_SellBlades_15_00"); //ChtÄ›l bych prodat zbranÄ›, co jsem vykoval.
 	
 	var C_ITEM equipWeap; equipWeap = Npc_GetEquippedMeleeWeapon(other);
 	
@@ -703,11 +703,11 @@ func void DIA_Harad_SellBlades_Info ()
 		|| (Hlp_IsItem(equipWeap, ItMw_Rubinklinge) == TRUE)
 		|| (Hlp_IsItem(equipWeap, ItMw_ElBastardo) == TRUE)  
 		{
-			AI_Output (self, other, "DIA_Harad_SellBlades_12_01"); //Jedinou, kterou bych mohl pøijmout, máš zrovna pøipnutou u pasu, a tu si radši nechej.
+			AI_Output (self, other, "DIA_Harad_SellBlades_12_01"); //Jedinou, kterou bych mohl pÅ™ijmout, mÃ¡Å¡ zrovna pÅ™ipnutou u pasu, a tu si radÅ¡i nechej.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Harad_SellBlades_12_04"); //Tak nìjaké vykovej! Pøijímám pouze prosté meèe.
+			AI_Output (self, other, "DIA_Harad_SellBlades_12_04"); //Tak nÄ›jakÃ© vykovej! PÅ™ijÃ­mÃ¡m pouze prostÃ© meÄe.
 		};
 	}
 	else //(gesamt >= 1) - die verbeliebenden Klingen verkaufen ------
@@ -721,10 +721,10 @@ func void DIA_Harad_SellBlades_Info ()
 		Npc_RemoveInvItems (other, ItMw_ElBastardo, anzahl_ElBastardo);
 		
 				var string concatText;
-				concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben);		// "x Gegenstände gegeben"
+				concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben);		// "x GegenstÃ¤nde gegeben"
 				AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 				
-		AI_Output (self, other, "DIA_Harad_SellBlades_12_03"); //Tak, a tady máš vıplatu.
+		AI_Output (self, other, "DIA_Harad_SellBlades_12_03"); //Tak, a tady mÃ¡Å¡ vÃ½platu.
 		var int lohn;
 		lohn 	= (anzahl_common * Value_Common1)
 				+ (anzahl_schwert1 * Value_Schwert1)
@@ -743,8 +743,8 @@ func void DIA_Harad_SellBlades_Info ()
 // ************************************************************
 func void B_Harad_TeachSmith()
 {
-	AI_Output (self, other, "DIA_Harad_TeachCommon_12_01"); //Je to docela snadné, hochu. Staèí mít kousek surové oceli a podret ji v ohni, dokud nezèervená.
-	AI_Output (self, other, "DIA_Harad_TeachCommon_12_02"); //Pak èepel na kovadlinì náleitì vyklepeš.
+	AI_Output (self, other, "DIA_Harad_TeachCommon_12_01"); //Je to docela snadnÃ©, hochu. StaÄÃ­ mÃ­t kousek surovÃ© oceli a podrÅ¾et ji v ohni, dokud nezÄervenÃ¡.
+	AI_Output (self, other, "DIA_Harad_TeachCommon_12_02"); //Pak Äepel na kovadlinÄ› nÃ¡leÅ¾itÄ› vyklepeÅ¡.
 };
 // ------------------------------------------------------------
 func void B_HaradSmithChoices()
@@ -773,7 +773,7 @@ func void B_HaradSmithChoices()
 	};
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		Info_AddChoice	(DIA_Harad_TeachSmith, B_BuildLearnString("Nauèit se kováøství"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Harad_TeachSmith_Common);
+		Info_AddChoice	(DIA_Harad_TeachSmith, B_BuildLearnString("NauÄit se kovÃ¡Å™stvÃ­"	   , B_GetLearnCostTalent(other, NPC_TALENT_SMITH, WEAPON_Common))			,DIA_Harad_TeachSmith_Common);
 	};
 };
 // ------------------------------------------------------------
@@ -784,7 +784,7 @@ instance DIA_Harad_TeachSmith (C_INFO)
 	condition	 = 	DIA_Harad_TeachSmith_Condition;
 	information	 = 	DIA_Harad_TeachSmith_Info;
 	permanent    =  TRUE;
-	description	 = 	"Nauè mì vykovat prostı meè!";
+	description	 = 	"NauÄ mÄ› vykovat prostÃ½ meÄ!";
 };
 
 func int DIA_Harad_TeachSmith_Condition ()
@@ -803,7 +803,7 @@ func int DIA_Harad_TeachSmith_Condition ()
 };
 func void DIA_Harad_TeachSmith_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_TeachCommon_15_00"); //Nauè mì vykovat prostı meè!
+	AI_Output (other, self, "DIA_Harad_TeachCommon_15_00"); //NauÄ mÄ› vykovat prostÃ½ meÄ!
 	
 	B_HaradSmithChoices();
 };
@@ -816,7 +816,7 @@ func void DIA_Harad_TeachSmith_Common()
 	if B_TeachPlayerTalentSmith (self, other, WEAPON_Common)
 	{
 		B_Harad_TeachSmith();
-		AI_Output (self, other, "DIA_Harad_TeachCommon_12_03"); //Napoprvé to asi nebude ádnı zázrak, ale všechno ostatní se èasem taky nauèíš.
+		AI_Output (self, other, "DIA_Harad_TeachCommon_12_03"); //NapoprvÃ© to asi nebude Å¾Ã¡dnÃ½ zÃ¡zrak, ale vÅ¡echno ostatnÃ­ se Äasem taky nauÄÃ­Å¡.
 	};
 	
 	B_HaradSmithChoices();
@@ -872,7 +872,7 @@ INSTANCE DIA_Harad_TeachSTR (C_INFO)
 	condition	= DIA_Harad_TeachSTR_Condition;
 	information	= DIA_Harad_TeachSTR_Info;
 	permanent	= 1;
-	description = "Chci se stát silnìjším!";
+	description = "Chci se stÃ¡t silnÄ›jÅ¡Ã­m!";
 };                       
 
 FUNC INT DIA_Harad_TeachSTR_Condition()
@@ -885,7 +885,7 @@ FUNC INT DIA_Harad_TeachSTR_Condition()
 
 FUNC VOID DIA_Harad_TeachSTR_Info()
 {	
-	AI_Output (other, self, "DIA_Harad_TeachSTR_15_00"); //Chci se stát silnìjším!
+	AI_Output (other, self, "DIA_Harad_TeachSTR_15_00"); //Chci se stÃ¡t silnÄ›jÅ¡Ã­m!
 	
 	Harad_Merke_STR = other.attribute[ATR_STRENGTH];
 	
@@ -899,12 +899,12 @@ func void DIA_Harad_TeachSTR_BACK()
 {
 	if (Harad_Merke_STR < other.attribute[ATR_STRENGTH])
 	{
-		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_01"); //U jsi zase o nìco svalnatìjší.
+		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_01"); //UÅ¾ jsi zase o nÄ›co svalnatÄ›jÅ¡Ã­.
 	};
 
 	if (other.attribute[ATR_STRENGTH] < T_MED)
 	{
-		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_02"); //Vra se, a se budeš chtít dozvìdìt víc.
+		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_02"); //VraÅ¥ se, aÅ¾ se budeÅ¡ chtÃ­t dozvÄ›dÄ›t vÃ­c.
 	};
 	
 	Info_ClearChoices	(DIA_Harad_TeachSTR);
@@ -920,7 +920,7 @@ func void DIA_Harad_TeachSTR_1()
 	Info_AddChoice		(DIA_Harad_TeachSTR, B_BuildLearnString(PRINT_LearnSTR5			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_Harad_TeachSTR_5);
 };
 
-// ------ 5 Stärke ------
+// ------ 5 StÃ¤rke ------
 func void DIA_Harad_TeachSTR_5()
 {
 	B_TeachAttributePoints (self, other, ATR_STRENGTH, 5, T_MED);
@@ -950,7 +950,7 @@ instance DIA_Harad_ImmerNoch (C_INFO)
 	condition	 = 	DIA_Harad_ImmerNoch_Condition;
 	information	 = 	DIA_Harad_ImmerNoch_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ještì poøád pracuješ pro paladiny?";
+	description	 = 	"JeÅ¡tÄ› poÅ™Ã¡d pracujeÅ¡ pro paladiny?";
 };
 func int DIA_Harad_ImmerNoch_Condition ()
 {	
@@ -962,11 +962,11 @@ func int DIA_Harad_ImmerNoch_Condition ()
 
 func void DIA_Harad_ImmerNoch_Info ()
 {
-	AI_Output (other, self,"DIA_Harad_Add_15_01"); //Ještì poøád pracuješ pro paladiny?
-	AI_Output (self ,other,"DIA_Harad_Add_12_02"); //Se slubou u lorda Hagena jsem u skonèil.
-	AI_Output (self ,other,"DIA_Harad_Add_12_03"); //Teï pro nìj vyrábím meèe z magické rudy - ale tentokrát mi za nì platí.
-	AI_Output (self ,other,"DIA_Harad_Add_12_04"); //Ale aspoò teï sem tam mùu bokem vyrobit pár zbraní, které poskytnu kupcùm na trišti.
-	AI_Output (self ,other,"DIA_Harad_Add_12_05"); //Take jestli hledáš dobrı meè, mìl bys to zkusit u nich.
+	AI_Output (other, self,"DIA_Harad_Add_15_01"); //JeÅ¡tÄ› poÅ™Ã¡d pracujeÅ¡ pro paladiny?
+	AI_Output (self ,other,"DIA_Harad_Add_12_02"); //Se sluÅ¾bou u lorda Hagena jsem uÅ¾ skonÄil.
+	AI_Output (self ,other,"DIA_Harad_Add_12_03"); //TeÄ pro nÄ›j vyrÃ¡bÃ­m meÄe z magickÃ© rudy - ale tentokrÃ¡t mi za nÄ› platÃ­.
+	AI_Output (self ,other,"DIA_Harad_Add_12_04"); //Ale aspoÅˆ teÄ sem tam mÅ¯Å¾u bokem vyrobit pÃ¡r zbranÃ­, kterÃ© poskytnu kupcÅ¯m na trÅ¾iÅ¡ti.
+	AI_Output (self ,other,"DIA_Harad_Add_12_05"); //TakÅ¾e jestli hledÃ¡Å¡ dobrÃ½ meÄ, mÄ›l bys to zkusit u nich.
 };
 
 // *****************************************************
@@ -979,7 +979,7 @@ instance DIA_Harad_AboutErzklingen (C_INFO)
 	condition	 = 	DIA_Harad_AboutErzklingen_Condition;
 	information	 = 	DIA_Harad_AboutErzklingen_Info;
 	permanent    =  FALSE;
-	description	 = 	"Prozraï mi nìco blišího o bøitech z magické rudy!";
+	description	 = 	"ProzraÄ mi nÄ›co bliÅ¾Å¡Ã­ho o bÅ™itech z magickÃ© rudy!";
 };
 func int DIA_Harad_AboutErzklingen_Condition ()
 {	
@@ -991,14 +991,14 @@ func int DIA_Harad_AboutErzklingen_Condition ()
 
 func void DIA_Harad_AboutErzklingen_Info ()
 {
-	AI_Output (other, self,"DIA_Harad_Add_15_06"); //Prozraï mi nìco blišího o bøitech z magické rudy!
-	AI_Output (self, other, "DIA_Harad_Waffen_12_02"); //Proces vıroby magickıch bøitù je velmi sloitı a drahı, ale vısledkem je èepel, která se velmi dobøe ovládá a je prakticky neznièitelná.
-	AI_Output (self, other, "DIA_Harad_Waffen_12_03"); //Meè je urèitì velmi kvalitní, ale jeho skuteèná moc se projeví teprve v rukou paladina.
-	AI_Output (self, other, "DIA_Harad_Waffen_12_04"); //Paladinskı meè je zasvìcenı Innosovi. Vısledkem je, e takto oèarovaná zbraò je neskuteènì úèinná!
+	AI_Output (other, self,"DIA_Harad_Add_15_06"); //ProzraÄ mi nÄ›co bliÅ¾Å¡Ã­ho o bÅ™itech z magickÃ© rudy!
+	AI_Output (self, other, "DIA_Harad_Waffen_12_02"); //Proces vÃ½roby magickÃ½ch bÅ™itÅ¯ je velmi sloÅ¾itÃ½ a drahÃ½, ale vÃ½sledkem je Äepel, kterÃ¡ se velmi dobÅ™e ovlÃ¡dÃ¡ a je prakticky nezniÄitelnÃ¡.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_03"); //MeÄ je urÄitÄ› velmi kvalitnÃ­, ale jeho skuteÄnÃ¡ moc se projevÃ­ teprve v rukou paladina.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_04"); //PaladinskÃ½ meÄ je zasvÄ›cenÃ½ Innosovi. VÃ½sledkem je, Å¾e takto oÄarovanÃ¡ zbraÅˆ je neskuteÄnÄ› ÃºÄinnÃ¡!
 };
 
 // *****************************************************
-// 					Ich möchte eine Erzklinge kaufen
+// 					Ich mÃ¶chte eine Erzklinge kaufen
 // *****************************************************
 instance DIA_Harad_Erzklingen (C_INFO)
 {
@@ -1007,7 +1007,7 @@ instance DIA_Harad_Erzklingen (C_INFO)
 	condition	 = 	DIA_Harad_Erzklingen_Condition;
 	information	 = 	DIA_Harad_Erzklingen_Info;
 	permanent    =  TRUE;
-	description	 = 	"Chci si koupit magickı meè z rudy.";
+	description	 = 	"Chci si koupit magickÃ½ meÄ z rudy.";
 };
 func int DIA_Harad_Erzklingen_Condition ()
 {	
@@ -1026,21 +1026,21 @@ var int OreBladeBought;
 
 func void DIA_Harad_Erzklingen_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_Erzklingen_15_00"); //Chci si koupit meè z magické rudy.
+	AI_Output (other, self, "DIA_Harad_Erzklingen_15_00"); //Chci si koupit meÄ z magickÃ© rudy.
 	if (hero.guild != GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_01"); //Magické bøity prodávám pouze paladinùm, a to vdy pouze jeden kus.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_01"); //MagickÃ© bÅ™ity prodÃ¡vÃ¡m pouze paladinÅ¯m, a to vÅ¾dy pouze jeden kus.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_02"); //Jako paladinové mùete bıt rádi, e mùete tøímat tak skvìlé zbranì.
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_03"); //Dle rozkazu lorda Hagena ti mohu prodat pouze jedinou magickou zbraò.
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_04"); //Take co ti mohu nabídnout?
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_02"); //Jako paladinovÃ© mÅ¯Å¾ete bÃ½t rÃ¡di, Å¾e mÅ¯Å¾ete tÅ™Ã­mat tak skvÄ›lÃ© zbranÄ›.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_03"); //Dle rozkazu lorda Hagena ti mohu prodat pouze jedinou magickou zbraÅˆ.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_04"); //TakÅ¾e co ti mohu nabÃ­dnout?
 		
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Obouruèní meè (2000 zlaákù)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Jednoruèní meè (2000 zlaákù)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"ObouruÄnÃ­ meÄ (2000 zlaÅ¥Ã¡kÅ¯)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"JednoruÄnÃ­ meÄ (2000 zlaÅ¥Ã¡kÅ¯)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
@@ -1051,12 +1051,12 @@ FUNC VOID DIA_Harad_Erzklingen_Back()
 
 FUNC void B_Harad_NotEnoughGold ()
 {
-	AI_Output (self ,other,"B_Harad_NotEnoughGold_12_00"); //Nemáš dost zlata.
+	AI_Output (self ,other,"B_Harad_NotEnoughGold_12_00"); //NemÃ¡Å¡ dost zlata.
 };
 
 FUNC VOID B_Harad_HaveFunWithYourSword ()
 {
-	AI_Output (self,other,"B_Harad_HaveGunWithYourSword_12_00"); //Starej se o svou novou zbraò dobøe. Je cennìjší ne všechen tvùj majetek.
+	AI_Output (self,other,"B_Harad_HaveGunWithYourSword_12_00"); //Starej se o svou novou zbraÅˆ dobÅ™e. Je cennÄ›jÅ¡Ã­ neÅ¾ vÅ¡echen tvÅ¯j majetek.
 	
 	OreBladeBought = TRUE;
 	
@@ -1065,7 +1065,7 @@ FUNC VOID B_Harad_HaveFunWithYourSword ()
 
 FUNC VOID DIA_Harad_Erzklingen_2h()
 {
-	AI_Output (other,self ,"DIA_Harad_Erzklingen_2h_15_00"); //Vezmu si obouruèní meè!
+	AI_Output (other,self ,"DIA_Harad_Erzklingen_2h_15_00"); //Vezmu si obouruÄnÃ­ meÄ!
 	
 	if (Npc_HasItems (other,ItMi_Gold) >= Value_Blessed_2H_1)
 	{
@@ -1080,14 +1080,14 @@ FUNC VOID DIA_Harad_Erzklingen_2h()
 		B_Harad_NotEnoughGold ();
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Obouruèní meè (2000 zlaákù)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Jednoruèní meè (2000 zlaákù)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"ObouruÄnÃ­ meÄ (2000 zlaÅ¥Ã¡kÅ¯)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"JednoruÄnÃ­ meÄ (2000 zlaÅ¥Ã¡kÅ¯)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
 FUNC VOID DIA_Harad_Erzklingen_1h()
 {
-	AI_Output (other,self ,"DIA_Harad_Erzklingen_1h_15_00"); //Vezmu si jednoruèní meè!
+	AI_Output (other,self ,"DIA_Harad_Erzklingen_1h_15_00"); //Vezmu si jednoruÄnÃ­ meÄ!
 	
 	if (Npc_HasItems (other,ItMi_Gold) >= Value_Blessed_1H_1)
 	{
@@ -1102,8 +1102,8 @@ FUNC VOID DIA_Harad_Erzklingen_1h()
 		B_Harad_NotEnoughGold ();
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Obouruèní meè (2000 zlaákù)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Jednoruèní meè (2000 zlaákù)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"ObouruÄnÃ­ meÄ (2000 zlaÅ¥Ã¡kÅ¯)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"JednoruÄnÃ­ meÄ (2000 zlaÅ¥Ã¡kÅ¯)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
@@ -1116,7 +1116,7 @@ FUNC VOID DIA_Harad_Erzklingen_1h()
 //############################
 
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃ¼cke reparieren?
 //*********************************************************************
 instance DIA_Harad_RepairNecklace		(C_INFO)
 {
@@ -1125,7 +1125,7 @@ instance DIA_Harad_RepairNecklace		(C_INFO)
 	condition	 = 	DIA_Harad_RepairNecklace_Condition;
 	information	 = 	DIA_Harad_RepairNecklace_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Umíš opravit i klenoty?";
+	description	 = 	"UmÃ­Å¡ opravit i klenoty?";
 };
 
 func int DIA_Harad_RepairNecklace_Condition ()
@@ -1140,10 +1140,10 @@ func int DIA_Harad_RepairNecklace_Condition ()
 
 func void DIA_Harad_RepairNecklace_Info ()
 {
-	AI_Output (other,self ,"DIA_Harad_RepairNecklace_15_00"); //Umíš opravit i šperky?
-	AI_Output (self	,other,"DIA_Harad_RepairNecklace_12_01"); //Jsem kováø, ne zlatník. Budeš si tady ve mìstì muset najít nìkoho jiného, kdo ti pomùe.
-	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_02"); //Lidi mají jednu kapsu prázdnou a druhou vysypanou - u hezkou dobu tady nikdo nezbohatnul.
-	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_03"); //Vìtšinou jsou rádi, e mají co do úst.
+	AI_Output (other,self ,"DIA_Harad_RepairNecklace_15_00"); //UmÃ­Å¡ opravit i Å¡perky?
+	AI_Output (self	,other,"DIA_Harad_RepairNecklace_12_01"); //Jsem kovÃ¡Å™, ne zlatnÃ­k. BudeÅ¡ si tady ve mÄ›stÄ› muset najÃ­t nÄ›koho jinÃ©ho, kdo ti pomÅ¯Å¾e.
+	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_02"); //Lidi majÃ­ jednu kapsu prÃ¡zdnou a druhou vysypanou - uÅ¾ hezkou dobu tady nikdo nezbohatnul.
+	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_03"); //VÄ›tÅ¡inou jsou rÃ¡di, Å¾e majÃ­ co do Ãºst.
 	
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE; 	
 };
@@ -1158,7 +1158,7 @@ instance DIA_Harad_Goldsmith		(C_INFO)
 	condition	 = 	DIA_Harad_Goldsmith_Condition;
 	information	 = 	DIA_Harad_Goldsmith_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kde bych sehnal nìjakého zlatníka?";
+	description	 = 	"Kde bych sehnal nÄ›jakÃ©ho zlatnÃ­ka?";
 };
 
 func int DIA_Harad_Goldsmith_Condition ()
@@ -1171,9 +1171,9 @@ func int DIA_Harad_Goldsmith_Condition ()
 
 func void DIA_Harad_Goldsmith_Info ()
 {
-	AI_Output (other,self ,"DIA_Harad_Goldsmith_15_00"); //Kde bych sehnal nìjakého zlatníka?
-	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_01"); //Nìjakı se prı pøidal k oldákùm na Onarovì farmì.
-	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_02"); //Zkus se po nìm poohlédnout tam.
+	AI_Output (other,self ,"DIA_Harad_Goldsmith_15_00"); //Kde bych sehnal nÄ›jakÃ©ho zlatnÃ­ka?
+	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_01"); //NÄ›jakÃ½ se prÃ½ pÅ™idal k Å¾oldÃ¡kÅ¯m na OnarovÄ› farmÄ›.
+	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_02"); //Zkus se po nÄ›m poohlÃ©dnout tam.
 };
 
 

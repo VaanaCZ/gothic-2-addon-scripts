@@ -2,7 +2,7 @@
 instance VLK_453_Buerger (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Dìlník"; 
+	name 		= "DÄ›lnÃ­k"; 
 	guild 		= GIL_VLK;
 	id 			= 453;
 	voice 		= 6;

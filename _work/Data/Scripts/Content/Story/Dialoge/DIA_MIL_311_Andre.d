@@ -59,14 +59,14 @@ var int Andre_Steckbrief; //damit es nur EINMAL kommt
 
 func void B_Andre_Steckbrief()
 {
-	AI_Output (self ,other,"DIA_Andre_Add_08_00"); //Jeden z mıch muù mi øekl, e bandité roznášejí plakáty s vypsanou odmìnou a e je na nich tvoje tváø.
-	AI_Output (self ,other,"DIA_Andre_Add_08_01"); //Také mi øekl, es to nejdøív popøel.
-	AI_Output (self ,other,"DIA_Andre_Add_08_02"); //Take o co tady jde?
-	AI_Output (other, self,"DIA_Andre_Add_15_03"); //Nevím, proè mì ti lidé hledají...
-	AI_Output (self ,other,"DIA_Andre_Add_08_04"); //Pro tvoje vlastní dobrou doufám, e øíkáš pravdu.
-	AI_Output (self ,other,"DIA_Andre_Add_08_05"); //Nechci v domobranì nikoho, kdo nemá èistı rejstøík.
-	AI_Output (self ,other,"DIA_Andre_Add_08_06"); //Vìtšina z tìch banditù jsou bıvalí vìzni z tìaøské kolonie.
-	AI_Output (self ,other,"DIA_Andre_Add_08_07"); //Doufám, e ses s tìmi hrdloøezy nijak nezapletl!
+	AI_Output (self ,other,"DIA_Andre_Add_08_00"); //Jeden z mÃ½ch muÅ¾Å¯ mi Å™ekl, Å¾e banditÃ© roznÃ¡Å¡ejÃ­ plakÃ¡ty s vypsanou odmÄ›nou a Å¾e je na nich tvoje tvÃ¡Å™.
+	AI_Output (self ,other,"DIA_Andre_Add_08_01"); //TakÃ© mi Å™ekl, Å¾es to nejdÅ™Ã­v popÅ™el.
+	AI_Output (self ,other,"DIA_Andre_Add_08_02"); //TakÅ¾e o co tady jde?
+	AI_Output (other, self,"DIA_Andre_Add_15_03"); //NevÃ­m, proÄ mÄ› ti lidÃ© hledajÃ­...
+	AI_Output (self ,other,"DIA_Andre_Add_08_04"); //Pro tvoje vlastnÃ­ dobrou doufÃ¡m, Å¾e Å™Ã­kÃ¡Å¡ pravdu.
+	AI_Output (self ,other,"DIA_Andre_Add_08_05"); //Nechci v domobranÄ› nikoho, kdo nemÃ¡ ÄistÃ½ rejstÅ™Ã­k.
+	AI_Output (self ,other,"DIA_Andre_Add_08_06"); //VÄ›tÅ¡ina z tÄ›ch banditÅ¯ jsou bÃ½valÃ­ vÄ›zni z tÄ›Å¾aÅ™skÃ© kolonie.
+	AI_Output (self ,other,"DIA_Andre_Add_08_07"); //DoufÃ¡m, Å¾e ses s tÄ›mi hrdloÅ™ezy nijak nezapletl!
 	Andre_Steckbrief = TRUE;
 };
 
@@ -78,8 +78,8 @@ var int Andre_CantharFalle; //damit es nur EINMAL kommt
 
 func void B_Andre_CantharFalle()
 {
-	AI_Output (self, other, "B_Andre_CantharFalle_08_00"); //Byl tady kupec Canthar. Povídal, e jsi uprchlı trestanec z tìaøské kolonie.
-	AI_Output (self, other, "B_Andre_CantharFalle_08_01"); //Nevím, jestli to je pravda, a radši bych se tì neptal, ale mìl bys to nìjak objasnit.
+	AI_Output (self, other, "B_Andre_CantharFalle_08_00"); //Byl tady kupec Canthar. PovÃ­dal, Å¾e jsi uprchlÃ½ trestanec z tÄ›Å¾aÅ™skÃ© kolonie.
+	AI_Output (self, other, "B_Andre_CantharFalle_08_01"); //NevÃ­m, jestli to je pravda, a radÅ¡i bych se tÄ› neptal, ale mÄ›l bys to nÄ›jak objasnit.
 	
 	B_RemoveNpc (Sarah);
 	
@@ -175,7 +175,7 @@ FUNC INT DIA_Andre_PMSchulden_Condition()
 
 FUNC VOID DIA_Andre_PMSchulden_Info()
 {
-	AI_Output (self, other, "DIA_Andre_PMSchulden_08_00"); //Pøišel jsi zaplatit svou pokutu?
+	AI_Output (self, other, "DIA_Andre_PMSchulden_08_00"); //PÅ™iÅ¡el jsi zaplatit svou pokutu?
 
 						
 						// ------ STECKBRIEF ------
@@ -196,11 +196,11 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 
 	if (B_GetTotalPetzCounter(self) > Andre_LastPetzCounter)
 	{
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_01"); //U jsem se sám sebe ptal, jestli budeš mít dost odvahy sem pøijít!
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_02"); //Zdá se, e se poèet alob na tebe ještì znásobil!
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_01"); //UÅ¾ jsem se sÃ¡m sebe ptal, jestli budeÅ¡ mÃ­t dost odvahy sem pÅ™ijÃ­t!
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_02"); //ZdÃ¡ se, Å¾e se poÄet Å¾alob na tebe jeÅ¡tÄ› znÃ¡sobil!
 		if (Andre_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_03"); //Varoval jsem tì! Pokuta, kterou musíš zaplatit, je ještì vyšší!
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_03"); //Varoval jsem tÄ›! Pokuta, kterou musÃ­Å¡ zaplatit, je jeÅ¡tÄ› vyÅ¡Å¡Ã­!
 			AI_Output (other, self, "DIA_Andre_PMAdd_15_00"); //Kolik?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Andre_LastPetzCounter);
@@ -216,42 +216,42 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_04"); //Vánì jsi mì zklamal!
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_04"); //VÃ¡Å¾nÄ› jsi mÄ› zklamal!
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Andre_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_05"); //Objevilo se pár novıch vìcí.
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_05"); //Objevilo se pÃ¡r novÃ½ch vÄ›cÃ­.
 		
 		if (Andre_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_06"); //U není nikdo, kdo by tì obviòoval z vrady.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_06"); //UÅ¾ nenÃ­ nikdo, kdo by tÄ› obviÅˆoval z vraÅ¾dy.
 		};
 		
 		if (Andre_LastPetzCrime == CRIME_THEFT)
 		|| ( (Andre_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_07"); //U si nikdo nevzpomíná, e by tì vidìl pøi krádei.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_07"); //UÅ¾ si nikdo nevzpomÃ­nÃ¡, Å¾e by tÄ› vidÄ›l pÅ™i krÃ¡deÅ¾i.
 		};
 		
 		if (Andre_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Andre_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_08"); //U nejsou ádní svìdkové, kteøí by tvrdili, e tì vidìli úèastnit se rvaèky.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_08"); //UÅ¾ nejsou Å¾Ã¡dnÃ­ svÄ›dkovÃ©, kteÅ™Ã­ by tvrdili, Å¾e tÄ› vidÄ›li ÃºÄastnit se rvaÄky.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_09"); //Zdá se, e se všechna obvinìní proti tobì nakonec vyjasnila.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_09"); //ZdÃ¡ se, Å¾e se vÅ¡echna obvinÄ›nÃ­ proti tobÄ› nakonec vyjasnila.
 		};
 		
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_10"); //Nevím, jak se to stalo, ale varuji tì: nehraj si se mnou.
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_10"); //NevÃ­m, jak se to stalo, ale varuji tÄ›: nehraj si se mnou.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_11"); //Kadopádnì jsem se rozhodl odpustit ti tvoje dluhy.
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_12"); //Dej si pozor, aby ses nedostal do ádnıch dalších potíí.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_11"); //KaÅ¾dopÃ¡dnÄ› jsem se rozhodl odpustit ti tvoje dluhy.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_12"); //Dej si pozor, aby ses nedostal do Å¾Ã¡dnÃ½ch dalÅ¡Ã­ch potÃ­Å¾Ã­.
 	
 			Andre_Schulden			= 0;
 			Andre_LastPetzCounter 	= 0;
@@ -259,9 +259,9 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_13"); //Jedno si vyjasnìme: tak jako tak budeš muset zaplatit pokutu v plné vıši.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_13"); //Jedno si vyjasnÄ›me: tak jako tak budeÅ¡ muset zaplatit pokutu v plnÃ© vÃ½Å¡i.
 			B_Say_Gold (self, other, Andre_Schulden);
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_14"); //Tak kolik to dìlá?
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_14"); //Tak kolik to dÄ›lÃ¡?
 		};
 	};
 	
@@ -270,8 +270,8 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 	{
 		Info_ClearChoices  	(DIA_Andre_PMSchulden);
 		Info_ClearChoices  	(DIA_Andre_PETZMASTER);
-		Info_AddChoice		(DIA_Andre_PMSchulden,"Nemám dost penìz!",DIA_Andre_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Andre_PMSchulden,"Kolik e to bylo?",DIA_Andre_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Andre_PMSchulden,"NemÃ¡m dost penÄ›z!",DIA_Andre_PETZMASTER_PayLater);
+		Info_AddChoice		(DIA_Andre_PMSchulden,"Kolik Å¾e to bylo?",DIA_Andre_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Andre_Schulden)
 		{
 			Info_AddChoice 	(DIA_Andre_PMSchulden,"Chci tu pokutu zaplatit!",DIA_Andre_PETZMASTER_PayNow);
@@ -281,13 +281,13 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 
 func void DIA_Andre_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Andre_PMSchulden_HowMuchAgain_15_00"); //Kolik e to bylo?
+	AI_Output (other, self, "DIA_Andre_PMSchulden_HowMuchAgain_15_00"); //Kolik Å¾e to bylo?
 	B_Say_Gold (self, other, Andre_Schulden);
 
 	Info_ClearChoices  	(DIA_Andre_PMSchulden);
 	Info_ClearChoices  	(DIA_Andre_PETZMASTER);
-	Info_AddChoice		(DIA_Andre_PMSchulden,"Nemám dost penìz!",DIA_Andre_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Andre_PMSchulden,"Kolik e to bylo?",DIA_Andre_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Andre_PMSchulden,"NemÃ¡m dost penÄ›z!",DIA_Andre_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Andre_PMSchulden,"Kolik Å¾e to bylo?",DIA_Andre_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Andre_Schulden)
 	{
 		Info_AddChoice 	(DIA_Andre_PMSchulden,"Chci tu pokutu zaplatit!",DIA_Andre_PETZMASTER_PayNow);
@@ -319,12 +319,12 @@ FUNC INT DIA_Andre_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Andre_PETZMASTER_Info()
 {
-	Andre_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Andre_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Andre noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_00"); //Ty musíš bıt ten novı chlapík, kterı tady ve mìstì dìlá tolik problémù.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_00"); //Ty musÃ­Å¡ bÃ½t ten novÃ½ chlapÃ­k, kterÃ½ tady ve mÄ›stÄ› dÄ›lÃ¡ tolik problÃ©mÅ¯.
 	};
 	
 						// ------ STECKBRIEF ------
@@ -346,54 +346,54 @@ FUNC VOID DIA_Andre_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_01"); //Dobøe e jsi za mnou pøišel, ne to zaèalo bıt pro tebe ještì horší.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_02"); //Vrada je vánı zloèin!
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_01"); //DobÅ™e Å¾e jsi za mnou pÅ™iÅ¡el, neÅ¾ to zaÄalo bÃ½t pro tebe jeÅ¡tÄ› horÅ¡Ã­.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_02"); //VraÅ¾da je vÃ¡Å¾nÃ½ zloÄin!
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Andre_Schulden = Andre_Schulden + 500;						//PLUS Mörder-Malus
+		Andre_Schulden = Andre_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_03"); //A to nemluvím o tìch dalších vìcech, které jsi napáchal.
+			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_03"); //A to nemluvÃ­m o tÄ›ch dalÅ¡Ã­ch vÄ›cech, kterÃ© jsi napÃ¡chal.
 		};
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_04"); //Strání mají rozkazy trestat kadého vraha hned na místì.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_05"); //A vìtšina obèanù nehodlá vrady na území mìsta tolerovat!
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_06"); //Nemám ádnı zájem na tom tì povìsit. Jsme ve válce a potøebujeme kadého mue.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_07"); //Ale nebude lehké pøesvìdèit lidi, aby o tobì smıšleli zase lépe.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_08"); //Mìl bys projevit svou lítost zaplacením pokuty - pochopitelnì pøimìøenì vysoké.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_04"); //StrÃ¡Å¾nÃ­ majÃ­ rozkazy trestat kaÅ¾dÃ©ho vraha hned na mÃ­stÄ›.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_05"); //A vÄ›tÅ¡ina obÄanÅ¯ nehodlÃ¡ vraÅ¾dy na ÃºzemÃ­ mÄ›sta tolerovat!
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_06"); //NemÃ¡m Å¾Ã¡dnÃ½ zÃ¡jem na tom tÄ› povÄ›sit. Jsme ve vÃ¡lce a potÅ™ebujeme kaÅ¾dÃ©ho muÅ¾e.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_07"); //Ale nebude lehkÃ© pÅ™esvÄ›dÄit lidi, aby o tobÄ› smÃ½Å¡leli zase lÃ©pe.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_08"); //MÄ›l bys projevit svou lÃ­tost zaplacenÃ­m pokuty - pochopitelnÄ› pÅ™imÄ›Å™enÄ› vysokÃ©.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_09"); //Dobøe e jsi pøišel! Jsi obvinìn z krádee! Jsou na to svìdci!
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_09"); //DobÅ™e Å¾e jsi pÅ™iÅ¡el! Jsi obvinÄ›n z krÃ¡deÅ¾e! Jsou na to svÄ›dci!
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_10"); //A to nemluvím o dalších vìcech, které se mi donesly.
+			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_10"); //A to nemluvÃ­m o dalÅ¡Ã­ch vÄ›cech, kterÃ© se mi donesly.
 		};
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_11"); //Takové chování nebudu ve mìstì trpìt!
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_12"); //Abys odèinil svùj zloèin, musíš zaplatit pokutu.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_11"); //TakovÃ© chovÃ¡nÃ­ nebudu ve mÄ›stÄ› trpÄ›t!
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_12"); //Abys odÄinil svÅ¯j zloÄin, musÃ­Å¡ zaplatit pokutu.
 		
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_13"); //Je nìco jiného, kdy se popereš s lùzou v pøístavu...
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_14"); //Ale jakmile zaútoèíš na obèany nebo královské vojáky, musíš jít pøed soud.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_13"); //Je nÄ›co jinÃ©ho, kdyÅ¾ se popereÅ¡ s lÅ¯zou v pÅ™Ã­stavu...
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_14"); //Ale jakmile zaÃºtoÄÃ­Å¡ na obÄany nebo krÃ¡lovskÃ© vojÃ¡ky, musÃ­Å¡ jÃ­t pÅ™ed soud.
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
-			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_15"); //A to s tou ovcí bylo také zcela zbyteèné.
+			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_15"); //A to s tou ovcÃ­ bylo takÃ© zcela zbyteÄnÃ©.
 		};
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_16"); //Kdybych tì nechal odejít jen tak, bude si tady za chvíli kadı dìlat, co se mu zlíbí.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_17"); //Take zaplatíš pøimìøenou pokutu - a na celou vìc zapomeneme.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_16"); //Kdybych tÄ› nechal odejÃ­t jen tak, bude si tady za chvÃ­li kaÅ¾dÃ½ dÄ›lat, co se mu zlÃ­bÃ­.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_17"); //TakÅ¾e zaplatÃ­Å¡ pÅ™imÄ›Å™enou pokutu - a na celou vÄ›c zapomeneme.
 		
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getÃ¶tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_18"); //Slyšel jsem, e sis zasedl na naše ovce.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_19"); //Uvìdom si, e to nemohu nechat bıt jen tak.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_20"); //Budeš muset zaplatit náhradu škody!
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_18"); //SlyÅ¡el jsem, Å¾e sis zasedl na naÅ¡e ovce.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_19"); //UvÄ›dom si, Å¾e to nemohu nechat bÃ½t jen tak.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_20"); //BudeÅ¡ muset zaplatit nÃ¡hradu Å¡kody!
 		
 		Andre_Schulden = 100;
 	};
@@ -406,7 +406,7 @@ FUNC VOID DIA_Andre_PETZMASTER_Info()
 	
 	Info_ClearChoices  	(DIA_Andre_PMSchulden);
 	Info_ClearChoices  	(DIA_Andre_PETZMASTER);
-	Info_AddChoice		(DIA_Andre_PETZMASTER,"Nemám dost penìz!",DIA_Andre_PETZMASTER_PayLater);
+	Info_AddChoice		(DIA_Andre_PETZMASTER,"NemÃ¡m dost penÄ›z!",DIA_Andre_PETZMASTER_PayLater);
 	if (Npc_HasItems(other, itmi_gold) >= Andre_Schulden)
 	{
 		Info_AddChoice 	(DIA_Andre_PETZMASTER,"Chci tu pokutu zaplatit!",DIA_Andre_PETZMASTER_PayNow);
@@ -417,7 +417,7 @@ func void DIA_Andre_PETZMASTER_PayNow()
 {
 	AI_Output (other, self, "DIA_Andre_PETZMASTER_PayNow_15_00"); //Chci tu pokutu zaplatit!
 	B_GiveInvItems (other, self, itmi_gold, Andre_Schulden);
-	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayNow_08_01"); //Dobrá! Postarám se o tom, aby se o tom dozvìdìl kadı ve mìstì - tím se tvoje povìst zase trošku vylepší.
+	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayNow_08_01"); //DobrÃ¡! PostarÃ¡m se o tom, aby se o tom dozvÄ›dÄ›l kaÅ¾dÃ½ ve mÄ›stÄ› - tÃ­m se tvoje povÄ›st zase troÅ¡ku vylepÅ¡Ã­.
 
 	B_GrantAbsolution (LOC_CITY);
 	
@@ -431,9 +431,9 @@ func void DIA_Andre_PETZMASTER_PayNow()
 
 func void DIA_Andre_PETZMASTER_PayLater()
 {
-	AI_Output (other, self, "DIA_Andre_PETZMASTER_PayLater_15_00"); //Nemám dost penìz.
-	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_01"); //Tak si nìjaké co nejrychleji seeò.
-	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_02"); //A varuji tì: jestli se proviníš ještì nìèím, jen si to zhoršíš.
+	AI_Output (other, self, "DIA_Andre_PETZMASTER_PayLater_15_00"); //NemÃ¡m dost penÄ›z.
+	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_01"); //Tak si nÄ›jakÃ© co nejrychleji seÅ¾eÅˆ.
+	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_02"); //A varuji tÄ›: jestli se provinÃ­Å¡ jeÅ¡tÄ› nÄ›ÄÃ­m, jen si to zhorÅ¡Ã­Å¡.
 	
 	Andre_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Andre_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -462,13 +462,13 @@ func int DIA_Andre_Hallo_Condition ()
 };
 func void DIA_Andre_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Andre_Hallo_08_00"); //Innos tì provázej, cizinèe! Co tì ke mnì pøivádí?
+	AI_Output (self, other, "DIA_Andre_Hallo_08_00"); //Innos tÄ› provÃ¡zej, cizinÄe! Co tÄ› ke mnÄ› pÅ™ivÃ¡dÃ­?
 };
 
 
 
 // *********************************************************
-//					Nachricht für Lord Hagen
+//					Nachricht fÃ¼r Lord Hagen
 // *********************************************************
 instance DIA_Andre_Message		(C_INFO)
 {
@@ -477,7 +477,7 @@ instance DIA_Andre_Message		(C_INFO)
 	condition	= DIA_Andre_Message_Condition;
 	information	= DIA_Andre_Message_Info;
 	permanent 	= FALSE; 
-	description = "Pøináším dùleitou zprávu pro lorda Hagena.";
+	description = "PÅ™inÃ¡Å¡Ã­m dÅ¯leÅ¾itou zprÃ¡vu pro lorda Hagena.";
 };
 func int DIA_Andre_Message_Condition ()
 {
@@ -490,27 +490,27 @@ func int DIA_Andre_Message_Condition ()
 };
 func void DIA_Andre_Message_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Message_15_00"); //Mám dùleitou zprávu pro lorda Hagena.
-	AI_Output (self, other, "DIA_Andre_Message_08_01"); //No, stojíš pøed jedním z jeho muù. Èeho se to tıká?
+	AI_Output (other, self, "DIA_Andre_Message_15_00"); //MÃ¡m dÅ¯leÅ¾itou zprÃ¡vu pro lorda Hagena.
+	AI_Output (self, other, "DIA_Andre_Message_08_01"); //No, stojÃ­Å¡ pÅ™ed jednÃ­m z jeho muÅ¾Å¯. ÄŒeho se to tÃ½kÃ¡?
 	
 	Info_ClearChoices (DIA_Andre_Message);
-	Info_AddChoice (DIA_Andre_Message, "To mohu øíct jen lordu Hagenovi.", DIA_Andre_Message_Personal);
-	Info_AddChoice (DIA_Andre_Message, "Skøetímu vojsku velí DRACI!", DIA_Andre_Message_Dragons);
-	Info_AddChoice (DIA_Andre_Message, "Tıká se to posvátného artefaktu - Innosova oka.", DIA_Andre_Message_EyeInnos);
+	Info_AddChoice (DIA_Andre_Message, "To mohu Å™Ã­ct jen lordu Hagenovi.", DIA_Andre_Message_Personal);
+	Info_AddChoice (DIA_Andre_Message, "SkÅ™etÃ­mu vojsku velÃ­ DRACI!", DIA_Andre_Message_Dragons);
+	Info_AddChoice (DIA_Andre_Message, "TÃ½kÃ¡ se to posvÃ¡tnÃ©ho artefaktu - Innosova oka.", DIA_Andre_Message_EyeInnos);
 };
 
 func void B_Andre_LordHagenNichtZuSprechen()
 {
-	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_00"); //Lord Hagen pøijímá jen paladiny a ty, kdo jsou u paladinù ve slubì.
-	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_01"); //Je pod jeho dùstojnost ztrácet èas s bìnımi lidmi.
+	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_00"); //Lord Hagen pÅ™ijÃ­mÃ¡ jen paladiny a ty, kdo jsou u paladinÅ¯ ve sluÅ¾bÄ›.
+	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_01"); //Je pod jeho dÅ¯stojnost ztrÃ¡cet Äas s bÄ›Å¾nÃ½mi lidmi.
 };
 
 func void DIA_Andre_Message_EyeInnos()
 {
-	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_00"); //Tıká se to posvátného artefaktu - Innosova oka.
-	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_01"); //Innosovo oko - nikdy jsem o nìm neslyšel. Ale to ještì nemusí nic znamenat.
-	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_02"); //Pokud nìjakı artefakt tohoto jména opravdu existuje, stejnì o nìm vìdí jen nejvyšší èlenové našeho øádu.
-	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_03"); //Proto si musím promluvit se samotnım lordem Hagenem.
+	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_00"); //TÃ½kÃ¡ se to posvÃ¡tnÃ©ho artefaktu - Innosova oka.
+	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_01"); //Innosovo oko - nikdy jsem o nÄ›m neslyÅ¡el. Ale to jeÅ¡tÄ› nemusÃ­ nic znamenat.
+	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_02"); //Pokud nÄ›jakÃ½ artefakt tohoto jmÃ©na opravdu existuje, stejnÄ› o nÄ›m vÄ›dÃ­ jen nejvyÅ¡Å¡Ã­ ÄlenovÃ© naÅ¡eho Å™Ã¡du.
+	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_03"); //Proto si musÃ­m promluvit se samotnÃ½m lordem Hagenem.
 	
 	Andre_EyeInnos = TRUE;
 	
@@ -520,17 +520,17 @@ func void DIA_Andre_Message_EyeInnos()
 };
 func void DIA_Andre_Message_Dragons()
 {
-	AI_Output (other, self, "DIA_Andre_Message_Dragons_15_00"); //Zástupy skøetù vedou DRA-
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_01"); //(pøeruší tì) JÁ VÍM, e armáda skøetù je èím dál tím silnìjší.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_02"); //Nesnaíš se mi naznaèit, e to je TO, co chceš nahlásit lordu Hagenovi.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_03"); //Ten by ti utrhl hlavu za to, e mrháš jeho èasem takovımi historkami.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_04"); //A jsem si jist, e jsi dost chytrı na to, abys to vìdìl sám.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_05"); //Take o co ve skuteènosti jde?
+	AI_Output (other, self, "DIA_Andre_Message_Dragons_15_00"); //ZÃ¡stupy skÅ™etÅ¯ vedou DRA-
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_01"); //(pÅ™eruÅ¡Ã­ tÄ›) JÃ VÃM, Å¾e armÃ¡da skÅ™etÅ¯ je ÄÃ­m dÃ¡l tÃ­m silnÄ›jÅ¡Ã­.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_02"); //NesnaÅ¾Ã­Å¡ se mi naznaÄit, Å¾e to je TO, co chceÅ¡ nahlÃ¡sit lordu Hagenovi.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_03"); //Ten by ti utrhl hlavu za to, Å¾e mrhÃ¡Å¡ jeho Äasem takovÃ½mi historkami.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_04"); //A jsem si jist, Å¾e jsi dost chytrÃ½ na to, abys to vÄ›dÄ›l sÃ¡m.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_05"); //TakÅ¾e o co ve skuteÄnosti jde?
 };
 func void DIA_Andre_Message_Personal()
 {
-	AI_Output (other, self, "DIA_Andre_Message_Personal_15_00"); //To mohu øíct jen lordu Hagenovi.
-	AI_Output (self, other, "DIA_Andre_Message_Personal_08_01"); //Jak myslíš. Ale jedno bys mìl vìdìt:
+	AI_Output (other, self, "DIA_Andre_Message_Personal_15_00"); //To mohu Å™Ã­ct jen lordu Hagenovi.
+	AI_Output (self, other, "DIA_Andre_Message_Personal_08_01"); //Jak myslÃ­Å¡. Ale jedno bys mÄ›l vÄ›dÄ›t:
 	B_Andre_LordHagenNichtZuSprechen();
 	
 	Info_ClearChoices (DIA_Andre_Message);
@@ -545,7 +545,7 @@ instance DIA_Andre_Paladine		(C_INFO)
 	condition	 = 	DIA_Andre_Paladine_Condition;
 	information	 = 	DIA_Andre_Paladine_Info;
 	permanent 	 =  FALSE; 
-	description	 = 	"Proè jsou ve mìstì paladinové?";	
+	description	 = 	"ProÄ jsou ve mÄ›stÄ› paladinovÃ©?";	
 };
 func int DIA_Andre_Paladine_Condition ()
 {	
@@ -557,10 +557,10 @@ func int DIA_Andre_Paladine_Condition ()
 };
 func void DIA_Andre_Paladine_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Paladine_15_00"); //Proè jsou ve mìstì paladinové?
-	AI_Output (self, other, "DIA_Andre_Paladine_08_01"); //Cíle naší mise jsou tajné.
-	AI_Output (self, other, "DIA_Andre_Paladine_08_02"); //Mohu øíct jen to, e obèané mìsta nejsou v ohroení.
-	AI_Output (self, other, "DIA_Andre_Paladine_08_03"); //Nemusíš si dìlat starosti.
+	AI_Output (other, self, "DIA_Andre_Paladine_15_00"); //ProÄ jsou ve mÄ›stÄ› paladinovÃ©?
+	AI_Output (self, other, "DIA_Andre_Paladine_08_01"); //CÃ­le naÅ¡Ã­ mise jsou tajnÃ©.
+	AI_Output (self, other, "DIA_Andre_Paladine_08_02"); //Mohu Å™Ã­ct jen to, Å¾e obÄanÃ© mÄ›sta nejsou v ohroÅ¾enÃ­.
+	AI_Output (self, other, "DIA_Andre_Paladine_08_03"); //NemusÃ­Å¡ si dÄ›lat starosti.
 };
 // *********************************************************
 //	Warum seid ihr Paladine in der Stadt? 
@@ -572,7 +572,7 @@ instance DIA_Andre_PaladineAgain		(C_INFO)
 	condition	 = 	DIA_Andre_PaladineAgain_Condition;
 	information	 = 	DIA_Andre_PaladineAgain_Info;
 	permanent 	 =  FALSE; 
-	description	 = 	"Proè jsou ve mìstì paladinové?";	
+	description	 = 	"ProÄ jsou ve mÄ›stÄ› paladinovÃ©?";	
 };
 func int DIA_Andre_PaladineAgain_Condition ()
 {	
@@ -586,17 +586,17 @@ func void DIA_Andre_PaladineAgain_Info ()
 {
 	if Npc_KnowsInfo (other,DIA_Andre_Paladine)
 	{
-		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_00"); //Øekneš mi teï, proè jste vy paladinové pøijeli sem do Khorinidu?
+		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_00"); //Å˜ekneÅ¡ mi teÄ, proÄ jste vy paladinovÃ© pÅ™ijeli sem do Khorinidu?
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_01"); //Proè jsou ve mìstì paladinové?
+		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_01"); //ProÄ jsou ve mÄ›stÄ› paladinovÃ©?
 	};
 	
-	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_02"); //Teï patøíš k mìstské strái, take jsi také podøízenı paladinùm.
-	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_03"); //Koneènì tì tedy mohu zasvìtit.
-	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_04"); //Pøišli jsme sem na rozkaz krále Rhobara. Se zhroucením bariéry ustaly dodávky rudy.
-	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_05"); //Proto musíme získat rudu a dopravit ji na pevninu. Z té rudy vykováme nové zbranì a zaeneme skøety zpátky.
+	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_02"); //TeÄ patÅ™Ã­Å¡ k mÄ›stskÃ© strÃ¡Å¾i, takÅ¾e jsi takÃ© podÅ™Ã­zenÃ½ paladinÅ¯m.
+	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_03"); //KoneÄnÄ› tÄ› tedy mohu zasvÄ›tit.
+	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_04"); //PÅ™iÅ¡li jsme sem na rozkaz krÃ¡le Rhobara. Se zhroucenÃ­m bariÃ©ry ustaly dodÃ¡vky rudy.
+	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_05"); //Proto musÃ­me zÃ­skat rudu a dopravit ji na pevninu. Z tÃ© rudy vykovÃ¡me novÃ© zbranÄ› a zaÅ¾eneme skÅ™ety zpÃ¡tky.
 	
 	KnowsPaladins_Ore = TRUE;
 };
@@ -610,7 +610,7 @@ instance DIA_Andre_AskToJoin		(C_INFO)
 	condition	= DIA_Andre_AskToJoin_Condition;
 	information	= DIA_Andre_AskToJoin_Info;
 	permanent 	= FALSE; 
-	description = "Chci vstoupit do sluby k paladinùm!";
+	description = "Chci vstoupit do sluÅ¾by k paladinÅ¯m!";
 };
 func int DIA_Andre_AskToJoin_Condition ()
 {
@@ -621,26 +621,26 @@ func int DIA_Andre_AskToJoin_Condition ()
 };
 func void DIA_Andre_AskToJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_AskToJoin_15_00"); //Chci vstoupit do sluby k paladinùm!
+	AI_Output (other, self, "DIA_Andre_AskToJoin_15_00"); //Chci vstoupit do sluÅ¾by k paladinÅ¯m!
 
 	if (Npc_KnowsInfo(other,DIA_Andre_Message))
 	{
-		AI_Output (self, other, "DIA_Andre_AskToJoin_08_01"); //Dobrá. Hodí se mi kadı schopnı mu. Nezáleí na dùvodech, proè se k nám chce pøidat.
-		AI_Output (self, other, "DIA_Andre_AskToJoin_08_02"); //Pokud vstoupíš do sluby k paladinùm, mohl bych ti pomoci zaøídit slyšení u lorda Hagena.
+		AI_Output (self, other, "DIA_Andre_AskToJoin_08_01"); //DobrÃ¡. HodÃ­ se mi kaÅ¾dÃ½ schopnÃ½ muÅ¾. NezÃ¡leÅ¾Ã­ na dÅ¯vodech, proÄ se k nÃ¡m chce pÅ™idat.
+		AI_Output (self, other, "DIA_Andre_AskToJoin_08_02"); //Pokud vstoupÃ­Å¡ do sluÅ¾by k paladinÅ¯m, mohl bych ti pomoci zaÅ™Ã­dit slyÅ¡enÃ­ u lorda Hagena.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Andre_AskToJoin_08_03"); //Poadavek hodnı uznání.
+		AI_Output (self, other, "DIA_Andre_AskToJoin_08_03"); //PoÅ¾adavek hodnÃ½ uznÃ¡nÃ­.
 	};
 	
-	AI_Output (self, other, "DIA_Andre_AskToJoin_08_04"); //Mám však rozkazy pøijímat do domobrany jen obèany mìsta.
-	AI_Output (self, other, "DIA_Andre_AskToJoin_08_05"); //Mùj velitel se bojí, e by se do ní jinak mohli vetøít špehové nebo sabotéøi.
-	AI_Output (self, other, "DIA_Andre_AskToJoin_08_06"); //Tímhle zpùsobem chce to riziko minimalizovat.
-	AI_Output (self, other, "DIA_Andre_AskToJoin_08_07"); //Nejprve tedy musíš bıt obèanem mìsta - mùe sice bıt sporné, jestli tohle pravidlo má smysl nebo ne, ale rozkazy jsou rozkazy.
+	AI_Output (self, other, "DIA_Andre_AskToJoin_08_04"); //MÃ¡m vÅ¡ak rozkazy pÅ™ijÃ­mat do domobrany jen obÄany mÄ›sta.
+	AI_Output (self, other, "DIA_Andre_AskToJoin_08_05"); //MÅ¯j velitel se bojÃ­, Å¾e by se do nÃ­ jinak mohli vetÅ™Ã­t Å¡pehovÃ© nebo sabotÃ©Å™i.
+	AI_Output (self, other, "DIA_Andre_AskToJoin_08_06"); //TÃ­mhle zpÅ¯sobem chce to riziko minimalizovat.
+	AI_Output (self, other, "DIA_Andre_AskToJoin_08_07"); //Nejprve tedy musÃ­Å¡ bÃ½t obÄanem mÄ›sta - mÅ¯Å¾e sice bÃ½t spornÃ©, jestli tohle pravidlo mÃ¡ smysl nebo ne, ale rozkazy jsou rozkazy.
 	
 	Log_CreateTopic (TOPIC_BecomeMIL,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BecomeMIL,LOG_RUNNING);
-	B_LogEntry (TOPIC_BecomeMIL,"Chci-li se stát èlenem mìstské gardy, musím bıt nejdøív obèanem mìsta.");
+	B_LogEntry (TOPIC_BecomeMIL,"Chci-li se stÃ¡t Älenem mÄ›stskÃ© gardy, musÃ­m bÃ½t nejdÅ™Ã­v obÄanem mÄ›sta.");
 };
 
 // *********************************************************
@@ -653,7 +653,7 @@ instance DIA_Andre_AboutMiliz (C_INFO)
 	condition	 = 	DIA_Andre_AboutMiliz_Condition;
 	information	 = 	DIA_Andre_AboutMiliz_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co mùu od sluby v domobranì èekat?";
+	description	 = 	"Co mÅ¯Å¾u od sluÅ¾by v domobranÄ› Äekat?";
 };
 
 func int DIA_Andre_AboutMiliz_Condition ()
@@ -667,10 +667,10 @@ func int DIA_Andre_AboutMiliz_Condition ()
 
 func void DIA_Andre_ABOUTMILIZ_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_AboutMiliz_15_00"); //Co mùu od sluby v domobranì èekat?
-	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_01"); //Jedno si vyjasnìme. Bıt vojákem v domobranì obnáší mnohem víc ne jen promenádovat se mìstem v uniformì.
-	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_02"); //Je to špinavá a nìkdy i krvavá práce. Jakmile budeš jedním z nás, bude tì èekat spousta povinností.
-	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_03"); //Ale stojí to za to. Kromì platu budeš mít také monost stát se jednoho dne Innosovım svatım váleèníkem.
+	AI_Output (other, self, "DIA_Andre_AboutMiliz_15_00"); //Co mÅ¯Å¾u od sluÅ¾by v domobranÄ› Äekat?
+	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_01"); //Jedno si vyjasnÄ›me. BÃ½t vojÃ¡kem v domobranÄ› obnÃ¡Å¡Ã­ mnohem vÃ­c neÅ¾ jen promenÃ¡dovat se mÄ›stem v uniformÄ›.
+	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_02"); //Je to Å¡pinavÃ¡ a nÄ›kdy i krvavÃ¡ prÃ¡ce. Jakmile budeÅ¡ jednÃ­m z nÃ¡s, bude tÄ› Äekat spousta povinnostÃ­.
+	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_03"); //Ale stojÃ­ to za to. KromÄ› platu budeÅ¡ mÃ­t takÃ© moÅ¾nost stÃ¡t se jednoho dne InnosovÃ½m svatÃ½m vÃ¡leÄnÃ­kem.
 };
 			
 ///////////////////////////////////////////////////////////////////////
@@ -683,7 +683,7 @@ instance DIA_Addon_Andre_MartinEmpfehlung		(C_INFO)
 	condition	 = 	DIA_Addon_Andre_MartinEmpfehlung_Condition;
 	information	 = 	DIA_Addon_Andre_MartinEmpfehlung_Info;
 
-	description	 = 	"Podívej, mám tu doporuèující dopis od vašeho skladníka.";
+	description	 = 	"PodÃ­vej, mÃ¡m tu doporuÄujÃ­cÃ­ dopis od vaÅ¡eho skladnÃ­ka.";
 };
 
 func int DIA_Addon_Andre_MartinEmpfehlung_Condition ()
@@ -697,12 +697,12 @@ func int DIA_Addon_Andre_MartinEmpfehlung_Condition ()
 
 func void DIA_Addon_Andre_MartinEmpfehlung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Andre_MartinEmpfehlung_15_00"); //Koukni, mám tu doporuèující dopis od jednoho z vašich skladníkù.
-	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_01"); //(nevìøícnì) Coe? Uka mi ho.
+	AI_Output	(other, self, "DIA_Addon_Andre_MartinEmpfehlung_15_00"); //Koukni, mÃ¡m tu doporuÄujÃ­cÃ­ dopis od jednoho z vaÅ¡ich skladnÃ­kÅ¯.
+	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_01"); //(nevÄ›Å™Ã­cnÄ›) CoÅ¾e? UkaÅ¾ mi ho.
 	B_GiveInvItems (other, self, ItWr_Martin_MilizEmpfehlung_Addon,1);
 	B_UseFakeScroll();
-	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_02"); //(ohromenì) No tohle...! To ti muselo dát poøádnou práci. Martin nìco takového hned tak nìkomu nedá.
-	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_03"); //No dobøe, pøesvìdèil jsi mì. Kdy se za tebe pøimluvil i Martin, pøijmu tì mezi nás. Dej mi vìdìt, a budeš pøipravenı.
+	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_02"); //(ohromenÄ›) No tohle...! To ti muselo dÃ¡t poÅ™Ã¡dnou prÃ¡ci. Martin nÄ›co takovÃ©ho hned tak nÄ›komu nedÃ¡.
+	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_03"); //No dobÅ™e, pÅ™esvÄ›dÄil jsi mÄ›. KdyÅ¾ se za tebe pÅ™imluvil i Martin, pÅ™ijmu tÄ› mezi nÃ¡s. Dej mi vÄ›dÄ›t, aÅ¾ budeÅ¡ pÅ™ipravenÃ½.
 	Andre_Knows_MartinEmpfehlung = TRUE;
 };
 
@@ -716,7 +716,7 @@ instance DIA_Andre_Alternative (C_INFO)
 	condition	= DIA_Andre_Alternative_Condition;
 	information	= DIA_Andre_Alternative_Info;
 	permanent 	= FALSE; 
-	description = "Není nìjakı rychlejší zpùsob, jak se k vám pøidat?";
+	description = "NenÃ­ nÄ›jakÃ½ rychlejÅ¡Ã­ zpÅ¯sob, jak se k vÃ¡m pÅ™idat?";
 };
 func int DIA_Andre_Alternative_Condition ()
 {
@@ -728,10 +728,10 @@ func int DIA_Andre_Alternative_Condition ()
 };
 func void DIA_Andre_Alternative_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Alternative_15_00"); //Není nìjakı rychlejší zpùsob, jak se k vám pøidat?
-	AI_Output (self, other, "DIA_Andre_Alternative_08_01"); //Hmm (na chvíli se odmlèí) - ty to asi myslíš vánì, co?
-	AI_Output (self, other, "DIA_Andre_Alternative_08_02"); //Dobrá, poslouchej. Mám problém. Kdy ho za mì vyøešíš, dohlédnu na to, abys byl pøijat do øad domobrany.
-	AI_Output (self, other, "DIA_Andre_Alternative_08_03"); //Ale je velice dùleité, abys o tom nikomu neøekl ani slovo!
+	AI_Output (other, self, "DIA_Andre_Alternative_15_00"); //NenÃ­ nÄ›jakÃ½ rychlejÅ¡Ã­ zpÅ¯sob, jak se k vÃ¡m pÅ™idat?
+	AI_Output (self, other, "DIA_Andre_Alternative_08_01"); //Hmm (na chvÃ­li se odmlÄÃ­) - ty to asi myslÃ­Å¡ vÃ¡Å¾nÄ›, co?
+	AI_Output (self, other, "DIA_Andre_Alternative_08_02"); //DobrÃ¡, poslouchej. MÃ¡m problÃ©m. KdyÅ¾ ho za mÄ› vyÅ™eÅ¡Ã­Å¡, dohlÃ©dnu na to, abys byl pÅ™ijat do Å™ad domobrany.
+	AI_Output (self, other, "DIA_Andre_Alternative_08_03"); //Ale je velice dÅ¯leÅ¾itÃ©, abys o tom nikomu neÅ™ekl ani slovo!
 	
 	
 };
@@ -746,7 +746,7 @@ instance DIA_Andre_GuildOfThieves (C_INFO)
 	condition	= DIA_Andre_GuildOfThieves_Condition;
 	information	= DIA_Andre_GuildOfThieves_Info;
 	permanent 	= FALSE; 
-	description = "Co máš za problém?";
+	description = "Co mÃ¡Å¡ za problÃ©m?";
 };
 func int DIA_Andre_GuildOfThieves_Condition ()
 {
@@ -757,18 +757,18 @@ func int DIA_Andre_GuildOfThieves_Condition ()
 };
 func void DIA_Andre_GuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_GuildOfThieves_15_00"); //Co máš za problém?
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_01"); //Poslední dobou ve mìstì došlo k mnoství krádeí. Zatím se nám nepodaøilo nikoho chytit, ti zlodìji jsou prostì pøíliš dobøí.
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_02"); //Ti bastardi se vyznají. Jsem si jistı, e máme co do èinìní s organizovanou bandou.
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_03"); //Nepøekvapilo by mì, kdyby byl tady v Khorinidu zlodìjskı cech. Najdi vùdce toho gangu a sejmi ho.
+	AI_Output (other, self, "DIA_Andre_GuildOfThieves_15_00"); //Co mÃ¡Å¡ za problÃ©m?
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_01"); //PoslednÃ­ dobou ve mÄ›stÄ› doÅ¡lo k mnoÅ¾stvÃ­ krÃ¡deÅ¾Ã­. ZatÃ­m se nÃ¡m nepodaÅ™ilo nikoho chytit, ti zlodÄ›ji jsou prostÄ› pÅ™Ã­liÅ¡ dobÅ™Ã­.
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_02"); //Ti bastardi se vyznajÃ­. Jsem si jistÃ½, Å¾e mÃ¡me co do ÄinÄ›nÃ­ s organizovanou bandou.
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_03"); //NepÅ™ekvapilo by mÄ›, kdyby byl tady v Khorinidu zlodÄ›jskÃ½ cech. Najdi vÅ¯dce toho gangu a sejmi ho.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_04"); //Já se pak postarám o to, abys byl pøijat do domobrany - bez ohledu na to, jestli jsi obèanem mìsta, nebo ne.
-		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_05"); //Ale nesmíš se o naší dohodì nikomu zmínit ani slovem!
+		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_04"); //JÃ¡ se pak postarÃ¡m o to, abys byl pÅ™ijat do domobrany - bez ohledu na to, jestli jsi obÄanem mÄ›sta, nebo ne.
+		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_05"); //Ale nesmÃ­Å¡ se o naÅ¡Ã­ dohodÄ› nikomu zmÃ­nit ani slovem!
 	};
 	
 	MIS_Andre_GuildOfThieves = LOG_RUNNING;
-	B_LogEntry (TOPIC_BecomeMIL,"K mìstské gardì se mohu pøidat i jinak, a to tak, e vypátrám a znièím khorinidskı zlodìjskı cech.");
+	B_LogEntry (TOPIC_BecomeMIL,"K mÄ›stskÃ© gardÄ› se mohu pÅ™idat i jinak, a to tak, Å¾e vypÃ¡trÃ¡m a zniÄÃ­m khorinidskÃ½ zlodÄ›jskÃ½ cech.");
 	
 };
 
@@ -782,7 +782,7 @@ instance DIA_Andre_WhereThieves (C_INFO)
 	condition	= DIA_Andre_WhereThieves_Condition;
 	information	= DIA_Andre_WhereThieves_Info;
 	permanent 	= FALSE; 
-	description = "Kde bych mìl ty zlodìje zaèít hledat?";
+	description = "Kde bych mÄ›l ty zlodÄ›je zaÄÃ­t hledat?";
 };
 func int DIA_Andre_WhereThieves_Condition ()
 {
@@ -794,14 +794,14 @@ func int DIA_Andre_WhereThieves_Condition ()
 };
 func void DIA_Andre_WhereThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_WhereThieves_15_00"); //Kde bych mìl ty zlodìje zaèít hledat?
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_01"); //Kdybych to vìdìl, udìlám to sám!
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_02"); //Mùu ti øíct jenom tohle: Nedávno jsme obrátili celou pøístavní ètvr vzhùru nohama a nenašli jsme nic, vùbec nic.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_03"); //Lidé odtamtud nejsou zrovna upovídaní, zvláš kdy na sobì máš paladinské brnìní.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_04"); //Ale ty nejsi odsud, nebudou k tobì tak nedùvìøiví.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_05"); //Nejdøív by ses mìl poptat po pøístavu. Ale buï opatrnı. Jestli tamním lidem dojde, e pracuješ pro paladiny, nedozvíš se vùbec NIC!
+	AI_Output (other, self, "DIA_Andre_WhereThieves_15_00"); //Kde bych mÄ›l ty zlodÄ›je zaÄÃ­t hledat?
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_01"); //Kdybych to vÄ›dÄ›l, udÄ›lÃ¡m to sÃ¡m!
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_02"); //MÅ¯Å¾u ti Å™Ã­ct jenom tohle: NedÃ¡vno jsme obrÃ¡tili celou pÅ™Ã­stavnÃ­ ÄtvrÅ¥ vzhÅ¯ru nohama a nenaÅ¡li jsme nic, vÅ¯bec nic.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_03"); //LidÃ© odtamtud nejsou zrovna upovÃ­danÃ­, zvlÃ¡Å¡Å¥ kdyÅ¾ na sobÄ› mÃ¡Å¡ paladinskÃ© brnÄ›nÃ­.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_04"); //Ale ty nejsi odsud, nebudou k tobÄ› tak nedÅ¯vÄ›Å™ivÃ­.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_05"); //NejdÅ™Ã­v by ses mÄ›l poptat po pÅ™Ã­stavu. Ale buÄ opatrnÃ½. Jestli tamnÃ­m lidem dojde, Å¾e pracujeÅ¡ pro paladiny, nedozvÃ­Å¡ se vÅ¯bec NIC!
 	
-	B_LogEntry (TOPIC_BecomeMIL,"S pátráním po zlodìjském cechu mohu zaèít v pøístavní ètvrti.");
+	B_LogEntry (TOPIC_BecomeMIL,"S pÃ¡trÃ¡nÃ­m po zlodÄ›jskÃ©m cechu mohu zaÄÃ­t v pÅ™Ã­stavnÃ­ Ätvrti.");
 };
 
 // *********************************************************
@@ -814,7 +814,7 @@ instance DIA_Andre_WhatToDo (C_INFO)
 	condition	= DIA_Andre_WhatToDo_Condition;
 	information	= DIA_Andre_WhatToDo_Info;
 	permanent 	= FALSE; 
-	description = "Co mám udìlat, a najdu nìkterého z tìch zlodìjù?";
+	description = "Co mÃ¡m udÄ›lat, aÅ¾ najdu nÄ›kterÃ©ho z tÄ›ch zlodÄ›jÅ¯?";
 };
 func int DIA_Andre_WhatToDo_Condition ()
 {
@@ -826,14 +826,14 @@ func int DIA_Andre_WhatToDo_Condition ()
 };
 func void DIA_Andre_WhatToDo_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_WhatToDo_15_00"); //Co mám udìlat, a najdu nìkterého z tìch zlodìjù?
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_01"); //Pokud se bude jednat o nìjakého poskoka, pomahaèe nebo malou rybu, bude nejlepší, kdy to nebudeš hnát na ostøí noe.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_02"); //Spíš pøijï za mnou a podej mi o tom zprávu. Já se pak postarám o to, aby ten chlapík skonèil za møíemi.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_03"); //Do pøímého boje by náhodou mohla zakroèit mìstská strá a tìko bys pak mìl pøíleitost vysvìtlovat, o co vlastnì jde.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_04"); //Navíc za kadıho zmetka, kterej skonèí pod zámkem, dostaneš odmìnu.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_05"); //Ale jestli se ti podaøí najít skrıš jejich vùdcù - no - pak se boji u asi nevyhneš.
+	AI_Output (other, self, "DIA_Andre_WhatToDo_15_00"); //Co mÃ¡m udÄ›lat, aÅ¾ najdu nÄ›kterÃ©ho z tÄ›ch zlodÄ›jÅ¯?
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_01"); //Pokud se bude jednat o nÄ›jakÃ©ho poskoka, pomahaÄe nebo malou rybu, bude nejlepÅ¡Ã­, kdyÅ¾ to nebudeÅ¡ hnÃ¡t na ostÅ™Ã­ noÅ¾e.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_02"); //SpÃ­Å¡ pÅ™ijÄ za mnou a podej mi o tom zprÃ¡vu. JÃ¡ se pak postarÃ¡m o to, aby ten chlapÃ­k skonÄil za mÅ™Ã­Å¾emi.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_03"); //Do pÅ™Ã­mÃ©ho boje by nÃ¡hodou mohla zakroÄit mÄ›stskÃ¡ strÃ¡Å¾ a tÄ›Å¾ko bys pak mÄ›l pÅ™Ã­leÅ¾itost vysvÄ›tlovat, o co vlastnÄ› jde.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_04"); //NavÃ­c za kaÅ¾dÃ½ho zmetka, kterej skonÄÃ­ pod zÃ¡mkem, dostaneÅ¡ odmÄ›nu.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_05"); //Ale jestli se ti podaÅ™Ã­ najÃ­t skrÃ½Å¡ jejich vÅ¯dcÅ¯ - no - pak se boji uÅ¾ asi nevyhneÅ¡.
 	
-	B_LogEntry (TOPIC_BecomeMIL,"Pokud chytnu nìkterého z pøisluhovaèù zlodìjského cechu, mám ho pøedvést pøímo pøed lorda Andreho. Jestlie mám ale znièit celı cech, musím zjistit, kde se skrıvají.");
+	B_LogEntry (TOPIC_BecomeMIL,"Pokud chytnu nÄ›kterÃ©ho z pÅ™isluhovaÄÅ¯ zlodÄ›jskÃ©ho cechu, mÃ¡m ho pÅ™edvÃ©st pÅ™Ã­mo pÅ™ed lorda Andreho. JestliÅ¾e mÃ¡m ale zniÄit celÃ½ cech, musÃ­m zjistit, kde se skrÃ½vajÃ­.");
 };
 
 // *********************************************************
@@ -847,7 +847,7 @@ instance DIA_Andre_Auslieferung		(C_INFO)
 	condition	 = 	DIA_Andre_Auslieferung_Condition;
 	information	 = 	DIA_Andre_Auslieferung_Info;
 	permanent    =  TRUE;
-	description	 = 	"Pøišel jsem si vybrat odmìnu za zloèince.";
+	description	 = 	"PÅ™iÅ¡el jsem si vybrat odmÄ›nu za zloÄince.";
 };
 
 func int DIA_Andre_Auslieferung_Condition ()
@@ -863,23 +863,23 @@ func int DIA_Andre_Auslieferung_Condition ()
 
 func void DIA_Andre_Auslieferung_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Auslieferung_15_00"); //Pøišel jsem si vybrat odmìnu za zloèince.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_15_00"); //PÅ™iÅ¡el jsem si vybrat odmÄ›nu za zloÄince.
 	
 	Info_ClearChoices (DIA_Andre_Auslieferung);
 	
-	Info_AddChoice (DIA_Andre_Auslieferung,"Vrátím se pozdìji. (ZPÌT)",DIA_Andre_Auslieferung_Back);
+	Info_AddChoice (DIA_Andre_Auslieferung,"VrÃ¡tÃ­m se pozdÄ›ji. (ZPÄšT)",DIA_Andre_Auslieferung_Back);
 	
 	// ------ Rengaru -----
 	if (Rengaru_InKnast == TRUE)
 	&& (Rengaru_Ausgeliefert == FALSE)
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Rengaru okradl obchodníka Jora.",DIA_Andre_Auslieferung_Rengaru);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Rengaru okradl obchodnÃ­ka Jora.",DIA_Andre_Auslieferung_Rengaru);
 	};
 	// ------ Halvor ------
 	if (Betrayal_Halvor == TRUE)
 	&& (Halvor_Ausgeliefert == FALSE)
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Halvor prodává kradené zboí.",DIA_Andre_Auslieferung_Halvor);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Halvor prodÃ¡vÃ¡ kradenÃ© zboÅ¾Ã­.",DIA_Andre_Auslieferung_Halvor);
 	};
 	// ------ Nagur ------
 	if (MIS_Nagur_Bote == LOG_RUNNING)
@@ -891,13 +891,13 @@ func void DIA_Andre_Auslieferung_Info ()
 	if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	&& (MIS_Canthars_KomproBrief_Day > (Wld_GetDay()-2))
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Canthar se pokouší zbavit Sarah!",DIA_Andre_Auslieferung_Canthar);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Canthar se pokouÅ¡Ã­ zbavit Sarah!",DIA_Andre_Auslieferung_Canthar);
 	};
 	if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	&& (Npc_HasItems (Sarah, ItWr_Canthars_KomproBrief_MIS) >= 1)
 	&& (MIS_Canthars_KomproBrief_Day > (Wld_GetDay()-2))
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Sarah prodává zbranì Onarovi.",DIA_Andre_Auslieferung_Sarah);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Sarah prodÃ¡vÃ¡ zbranÄ› Onarovi.",DIA_Andre_Auslieferung_Sarah);
 	};
 };
 
@@ -911,9 +911,9 @@ func void DIA_Andre_Auslieferung_Rengaru()
 	//Rengaru in den Knast beamen
 	AI_Teleport			(Rengaru,"NW_CITY_HABOUR_KASERN_RENGARU"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Rengaru_15_00"); //Rengaru okradl kupce Joru. Zkusil prásknout do bot, ale chytil jsem ho.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_01"); //Dobrá, mí mui ho u sebrali. V nejbliší budoucnosti u nikoho okrádat nebude.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_02"); //Tady máš své peníze.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Rengaru_15_00"); //Rengaru okradl kupce Joru. Zkusil prÃ¡sknout do bot, ale chytil jsem ho.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_01"); //DobrÃ¡, mÃ­ muÅ¾i ho uÅ¾ sebrali. V nejbliÅ¾Å¡Ã­ budoucnosti uÅ¾ nikoho okrÃ¡dat nebude.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_02"); //Tady mÃ¡Å¡ svÃ© penÃ­ze.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	Rengaru_Ausgeliefert = TRUE;
@@ -929,9 +929,9 @@ func void DIA_Andre_Auslieferung_Halvor()
 	//Halvor in den Knast beamen
 	AI_Teleport			(Halvor,"NW_CITY_HABOUR_KASERN_HALVOR"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Halvor_15_00"); //Halvor je pøekupník. Prodává zboí, které bandité ukradnou kupcùm.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_01"); //Take on za tím vìzí. Mí mui ho okamitì zatknou.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_02"); //Neøekl bych, e bude dìlat nìjaké problémy. Hned ti dám tvou odmìnu.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Halvor_15_00"); //Halvor je pÅ™ekupnÃ­k. ProdÃ¡vÃ¡ zboÅ¾Ã­, kterÃ© banditÃ© ukradnou kupcÅ¯m.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_01"); //TakÅ¾e on za tÃ­m vÄ›zÃ­. MÃ­ muÅ¾i ho okamÅ¾itÄ› zatknou.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_02"); //NeÅ™ekl bych, Å¾e bude dÄ›lat nÄ›jakÃ© problÃ©my. Hned ti dÃ¡m tvou odmÄ›nu.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	
@@ -947,9 +947,9 @@ func void DIA_Andre_Auslieferung_Nagur()
 	//Nagur in den Knast beamen
 	AI_Teleport			(Nagur,"NW_CITY_HABOUR_KASERN_NAGUR"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Nagur_15_00"); //Nagur zabil Baltramova posla. Pokusil se nastrèit mì jako nového posla, aby zachytil Akilovu zásilku.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_01"); //Na toho chlapíka èeká trest. Okamitì ho nechám zavøít.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_02"); //Tady máš odmìnu, kterou sis po právu zaslouil.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Nagur_15_00"); //Nagur zabil Baltramova posla. Pokusil se nastrÄit mÄ› jako novÃ©ho posla, aby zachytil Akilovu zÃ¡silku.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_01"); //Na toho chlapÃ­ka ÄekÃ¡ trest. OkamÅ¾itÄ› ho nechÃ¡m zavÅ™Ã­t.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_02"); //Tady mÃ¡Å¡ odmÄ›nu, kterou sis po prÃ¡vu zaslouÅ¾il.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	B_StartOtherRoutine (Nagur,"PRISON");
@@ -964,10 +964,10 @@ func void DIA_Andre_Auslieferung_Canthar()
 	//Canthar in den Knast beamen
 	AI_Teleport			(Canthar,"NW_CITY_HABOUR_KASERN_RENGARU"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Canthar_15_00"); //Kupec Canthar se snaí zbavit Sarah!
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_01"); //Sarah? Té prodavaèky zbraní z trištì?
-	AI_Output (other,self , "DIA_Andre_Auslieferung_Canthar_15_02"); //Mìl jsem jí podstrèit falešnı dopis, ve kterém se tvrdí, e dodává zbranì Onarovi.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_03"); //Aha. Za toho parchanta ti rád vyplatím odmìnu. Jako by u byl za møíemi.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Canthar_15_00"); //Kupec Canthar se snaÅ¾Ã­ zbavit Sarah!
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_01"); //Sarah? TÃ© prodavaÄky zbranÃ­ z trÅ¾iÅ¡tÄ›?
+	AI_Output (other,self , "DIA_Andre_Auslieferung_Canthar_15_02"); //MÄ›l jsem jÃ­ podstrÄit faleÅ¡nÃ½ dopis, ve kterÃ©m se tvrdÃ­, Å¾e dodÃ¡vÃ¡ zbranÄ› Onarovi.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_03"); //Aha. Za toho parchanta ti rÃ¡d vyplatÃ­m odmÄ›nu. Jako by uÅ¾ byl za mÅ™Ã­Å¾emi.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	
@@ -988,10 +988,10 @@ func void DIA_Andre_Auslieferung_Sarah()
 	//Canthar zum markt beamen
 	AI_Teleport			(Canthar,"NW_CITY_SARAH"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_00"); //Sarah prodává zbranì Onarovi.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_01"); //Sarah? Ta prodavaèka zbraní z trištì? Máš nìjakı dùkaz?
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_02"); //Má u sebe dopis, ve kterém jsou podrobnosti o dodávce zbraní na farmu.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_03"); //To jí neprojde. Nechám ji zatknout.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_00"); //Sarah prodÃ¡vÃ¡ zbranÄ› Onarovi.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_01"); //Sarah? Ta prodavaÄka zbranÃ­ z trÅ¾iÅ¡tÄ›? MÃ¡Å¡ nÄ›jakÃ½ dÅ¯kaz?
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_02"); //MÃ¡ u sebe dopis, ve kterÃ©m jsou podrobnosti o dodÃ¡vce zbranÃ­ na farmu.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_03"); //To jÃ­ neprojde. NechÃ¡m ji zatknout.
 	
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
@@ -1018,7 +1018,7 @@ instance DIA_Andre_DGRunning (C_INFO)
 	condition	 = 	DIA_Andre_DGRunning_Condition;
 	information	 = 	DIA_Andre_DGRunning_Info;
 	permanent    =  TRUE;
-	description	 = 	"Co se tıèe toho cechu zlodìjù...";
+	description	 = 	"Co se tÃ½Äe toho cechu zlodÄ›jÅ¯...";
 };
 
 func int DIA_Andre_DGRunning_Condition ()
@@ -1031,12 +1031,12 @@ func int DIA_Andre_DGRunning_Condition ()
 
 func void DIA_Andre_DGRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_DGRunning_15_00"); //Co se tıèe toho cechu zlodìjù...
+	AI_Output (other, self, "DIA_Andre_DGRunning_15_00"); //Co se tÃ½Äe toho cechu zlodÄ›jÅ¯...
 	
 	if (Andre_Diebesgilde_aufgeraeumt == TRUE)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_08_01"); //Mùeš to pustit z hlavy. Poslal jsem dolù do stok pár chlapù.
-		AI_Output (self, other, "DIA_Andre_DGRunning_08_02"); //Cech zlodìjù je u jen smutná kapitola v historii tohoto mìsta.
+		AI_Output (self, other, "DIA_Andre_DGRunning_08_01"); //MÅ¯Å¾eÅ¡ to pustit z hlavy. Poslal jsem dolÅ¯ do stok pÃ¡r chlapÅ¯.
+		AI_Output (self, other, "DIA_Andre_DGRunning_08_02"); //Cech zlodÄ›jÅ¯ je uÅ¾ jen smutnÃ¡ kapitola v historii tohoto mÄ›sta.
 		MIS_Andre_GuildOfThieves = LOG_OBSOLETE;
 		
 		if (MIS_CassiaKelche == LOG_RUNNING)
@@ -1059,13 +1059,13 @@ func void DIA_Andre_DGRunning_Info ()
 	&& (Npc_IsDead(Jesper))
 	&& (Npc_IsDead(Ramirez))
 	{
-		Info_AddChoice(DIA_Andre_DGRunning, "Všechny jsem je dostal!", DIA_Andre_DGRunning_Success);
+		Info_AddChoice(DIA_Andre_DGRunning, "VÅ¡echny jsem je dostal!", DIA_Andre_DGRunning_Success);
 	};
 	
 	if ( (Cassia.aivar[AIV_TalkedToPlayer] == TRUE) || (Jesper.aivar[AIV_TalkedToPlayer] == TRUE) || (Ramirez.aivar[AIV_TalkedToPlayer] == TRUE) )
 	&& (Diebesgilde_verraten == FALSE)
 	{
-		Info_AddChoice(DIA_Andre_DGRunning, "Našel jsem úkryt cechu zlodìjù!", DIA_Andre_DGRunning_Verrat);
+		Info_AddChoice(DIA_Andre_DGRunning, "NaÅ¡el jsem Ãºkryt cechu zlodÄ›jÅ¯!", DIA_Andre_DGRunning_Verrat);
 	};
 };
 
@@ -1074,31 +1074,31 @@ func void DIA_Andre_DGRunning_BACK()
 	AI_Output (other, self, "DIA_Andre_DGRunning_BACK_15_00"); //Pracuji na tom.
 	if (Diebesgilde_verraten == TRUE)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_01"); //Dobrá. Dám ti na splnìní toho úkolu trochu víc èasu.
+		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_01"); //DobrÃ¡. DÃ¡m ti na splnÄ›nÃ­ toho Ãºkolu trochu vÃ­c Äasu.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_02"); //Dobrá! Dej mi o všem vìdìt.
+		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_02"); //DobrÃ¡! Dej mi o vÅ¡em vÄ›dÄ›t.
 	};
 	Info_ClearChoices(DIA_Andre_DGRunning);
 };
 
 func void DIA_Andre_DGRunning_Verrat()
 {	
-	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_00"); //Našel jsem úkryt cechu zlodìjù!
+	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_00"); //NaÅ¡el jsem Ãºkryt cechu zlodÄ›jÅ¯!
 	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_01"); //Kde?
-	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_02"); //Ve stokách pod mìstem.
-	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_03"); //Coe? Všechny kanály jsme zapeèetili.
-	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_04"); //Zdá se, e to jim nebrání v tom, aby si dole v klidu vegetovali.
-	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_05"); //Zneškodnil jsi ty kriminálníky?
+	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_02"); //Ve stokÃ¡ch pod mÄ›stem.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_03"); //CoÅ¾e? VÅ¡echny kanÃ¡ly jsme zapeÄetili.
+	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_04"); //ZdÃ¡ se, Å¾e to jim nebrÃ¡nÃ­ v tom, aby si dole v klidu vegetovali.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_05"); //ZneÅ¡kodnil jsi ty kriminÃ¡lnÃ­ky?
 	Diebesgilde_verraten = TRUE;
 	DG_gefunden = TRUE;
 };
 
 func void DIA_Andre_DGRunning_Success()
 {
-	AI_Output (other, self, "DIA_Andre_DGRunning_Success_15_00"); //Všechny jsem je dostal!
-	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_01"); //Prokázal jsi mìstu cennou slubu.
+	AI_Output (other, self, "DIA_Andre_DGRunning_Success_15_00"); //VÅ¡echny jsem je dostal!
+	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_01"); //ProkÃ¡zal jsi mÄ›stu cennou sluÅ¾bu.
 	DG_gefunden = TRUE;
 	MIS_Andre_GuildOfThieves = LOG_SUCCESS;
 	B_GivePlayerXP (XP_GuildOfThievesPlatt);
@@ -1110,14 +1110,14 @@ func void DIA_Andre_DGRunning_Success()
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_02"); //Jestli máš poøád zájem o místo v domobranì, staèí øíct.
+		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_02"); //Jestli mÃ¡Å¡ poÅ™Ã¡d zÃ¡jem o mÃ­sto v domobranÄ›, staÄÃ­ Å™Ã­ct.
 	}
 	else if (other.guild == GIL_MIL) || (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_03"); //Splnil jsi svou povinnost, jak se sluší na Innosova sluebníka a královského vojáka.
+		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_03"); //Splnil jsi svou povinnost, jak se sluÅ¡Ã­ na Innosova sluÅ¾ebnÃ­ka a krÃ¡lovskÃ©ho vojÃ¡ka.
 	};
 	
-	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_04"); //Právem ti náleí odmìna za ty bandity. Tady je.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_04"); //PrÃ¡vem ti nÃ¡leÅ¾Ã­ odmÄ›na za ty bandity. Tady je.
 	B_GiveInvItems (self, other, itmi_gold, (Kopfgeld*3));
 	
 	Info_ClearChoices(DIA_Andre_DGRunning);
@@ -1133,7 +1133,7 @@ instance DIA_Andre_JOIN	(C_INFO)
 	condition	 = 	DIA_Andre_JOIN_Condition;
 	information	 = 	DIA_Andre_JOIN_Info;
 	permanent    =  TRUE;
-	description	 = 	"Jsem pøipraven pøidat se k domobranì!";
+	description	 = 	"Jsem pÅ™ipraven pÅ™idat se k domobranÄ›!";
 };
 
 func int DIA_Andre_JOIN_Condition ()
@@ -1147,72 +1147,72 @@ func int DIA_Andre_JOIN_Condition ()
 
 func void DIA_Andre_JOIN_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_JOIN_15_00"); //Jsem pøipraven pøidat se k domobranì!
+	AI_Output (other, self, "DIA_Andre_JOIN_15_00"); //Jsem pÅ™ipraven pÅ™idat se k domobranÄ›!
 	
 	//ADDON
 	if (Andre_Knows_MartinEmpfehlung == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Andre_JOIN_08_00"); //Skladník Martin pro tebe nejen hlasuje, ale také se za tebe pøimluvil. A to samotné mi staèí.
+		AI_Output (self, other, "DIA_Addon_Andre_JOIN_08_00"); //SkladnÃ­k Martin pro tebe nejen hlasuje, ale takÃ© se za tebe pÅ™imluvil. A to samotnÃ© mi staÄÃ­.
 	}
 	//ADDON
 	else if (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 	&& (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_JOIN_08_01"); //Dodrím svou èást úmluvy a pøijímám tì do øad domobrany, aèkoliv nejsi obèanem mìsta.
-		AI_Output (self, other, "DIA_Andre_JOIN_08_02"); //Ale nikomu na svìtì o tom neøekni ani slovo! Èím ménì lidí bude o této vıjimce vìdìt, tím ménì to budu muset pozdìji obhajovat.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_01"); //DodrÅ¾Ã­m svou ÄÃ¡st Ãºmluvy a pÅ™ijÃ­mÃ¡m tÄ› do Å™ad domobrany, aÄkoliv nejsi obÄanem mÄ›sta.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_02"); //Ale nikomu na svÄ›tÄ› o tom neÅ™ekni ani slovo! ÄŒÃ­m mÃ©nÄ› lidÃ­ bude o tÃ©to vÃ½jimce vÄ›dÄ›t, tÃ­m mÃ©nÄ› to budu muset pozdÄ›ji obhajovat.
 	}
 	else if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_JOIN_08_03"); //Take ses stal obèanem Khorinidu?
+		AI_Output (self, other, "DIA_Andre_JOIN_08_03"); //TakÅ¾e ses stal obÄanem Khorinidu?
 		
 		if (Player_IsApprentice == APP_Harad)
 		{
-			AI_Output (other, self, "DIA_Andre_JOIN_15_04"); //Kováø mì pøijal za uèedníka.
-			AI_Output (self, other, "DIA_Andre_JOIN_08_05"); //Harad? Znám ho. Pracuje pro nás. Je to dobrı chlap.
+			AI_Output (other, self, "DIA_Andre_JOIN_15_04"); //KovÃ¡Å™ mÄ› pÅ™ijal za uÄednÃ­ka.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_05"); //Harad? ZnÃ¡m ho. Pracuje pro nÃ¡s. Je to dobrÃ½ chlap.
 		};
 		
 		if (Player_IsApprentice == APP_Constantino)
 		{
-			AI_Output (other, self, "DIA_Andre_JOIN_15_06"); //Jsem alchymistùv uèeò!
-			AI_Output (self, other, "DIA_Andre_JOIN_08_07"); //V domobranì nemáme zrovna moc uèencù. Moná by se nám mohly tvoje schopnosti hodit.
-			AI_Output (self, other, "DIA_Andre_JOIN_08_08"); //Moc toho o tom alchymistovi nevím. Ale lidé øíkají, e to je èestnı mu.
+			AI_Output (other, self, "DIA_Andre_JOIN_15_06"); //Jsem alchymistÅ¯v uÄeÅˆ!
+			AI_Output (self, other, "DIA_Andre_JOIN_08_07"); //V domobranÄ› nemÃ¡me zrovna moc uÄencÅ¯. MoÅ¾nÃ¡ by se nÃ¡m mohly tvoje schopnosti hodit.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_08"); //Moc toho o tom alchymistovi nevÃ­m. Ale lidÃ© Å™Ã­kajÃ­, Å¾e to je ÄestnÃ½ muÅ¾.
 		};
 		
 		if (Player_IsApprentice == APP_Bosper)
 		{
-			AI_Output (other, self, "DIA_Andre_JOIN_15_09"); //Vırobce lukù Bosper mì vzal do uèení.
-			AI_Output (self, other, "DIA_Andre_JOIN_08_10"); //Take víš také nìco o ivotì v divoèinì? To je dobøe, protoe èlenové domobrany plní i úkoly mimo okruh mìstskıch hradeb.
-			AI_Output (self, other, "DIA_Andre_JOIN_08_11"); //Lidé, kteøí se vyznají v divoèinì, se nám budou urèitì hodit.
-			AI_Output (self, other, "DIA_Andre_JOIN_08_12"); //A ten vırobce lukù je pro mìsto velice vıznamnı èlovìk.
+			AI_Output (other, self, "DIA_Andre_JOIN_15_09"); //VÃ½robce lukÅ¯ Bosper mÄ› vzal do uÄenÃ­.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_10"); //TakÅ¾e vÃ­Å¡ takÃ© nÄ›co o Å¾ivotÄ› v divoÄinÄ›? To je dobÅ™e, protoÅ¾e ÄlenovÃ© domobrany plnÃ­ i Ãºkoly mimo okruh mÄ›stskÃ½ch hradeb.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_11"); //LidÃ©, kteÅ™Ã­ se vyznajÃ­ v divoÄinÄ›, se nÃ¡m budou urÄitÄ› hodit.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_12"); //A ten vÃ½robce lukÅ¯ je pro mÄ›sto velice vÃ½znamnÃ½ ÄlovÄ›k.
 		};
 		
-		AI_Output (self, other, "DIA_Andre_JOIN_08_13"); //Pokud pro tebe bude hlasovat, nestojí tvému pøijetí do domobrany nic v cestì.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_13"); //Pokud pro tebe bude hlasovat, nestojÃ­ tvÃ©mu pÅ™ijetÃ­ do domobrany nic v cestÄ›.
 		
-		// ------- Außerdem noch GuildOfThieves ------
+		// ------- AuÃŸerdem noch GuildOfThieves ------
 		if (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Andre_JOIN_08_14"); //Navíc se ti podaøilo zbavit nás toho cechu zlodìjù. U jen za to bych tì do domobrany pøijal.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_14"); //NavÃ­c se ti podaÅ™ilo zbavit nÃ¡s toho cechu zlodÄ›jÅ¯. UÅ¾ jen za to bych tÄ› do domobrany pÅ™ijal.
 		};
 	}
 	else //Player_IsApprentice == APP_NONE
 	{
-		AI_Output (self, other, "DIA_Andre_JOIN_08_15"); //To je moné - ale stále nejsi obèanem našeho mìsta a já mám své rozkazy.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_15"); //To je moÅ¾nÃ© - ale stÃ¡le nejsi obÄanem naÅ¡eho mÄ›sta a jÃ¡ mÃ¡m svÃ© rozkazy.
 		return;
 	};
 		
-	AI_Output (self, other, "DIA_Andre_JOIN_08_16"); //Mùeš se k nám pøidat, jestli chceš. Ale tvé rozhodnutí bude koneèné.
-	AI_Output (self, other, "DIA_Andre_JOIN_08_17"); //Jakmile na sobì budeš mít zbroj domobrany, nebudeš si ji moci jen tak sejmout a pøestat patøit mezi nás.
-	AI_Output (self, other, "DIA_Andre_JOIN_08_18"); //Jsi pøipraven spoleènì s námi bojovat za Innose a krále?
+	AI_Output (self, other, "DIA_Andre_JOIN_08_16"); //MÅ¯Å¾eÅ¡ se k nÃ¡m pÅ™idat, jestli chceÅ¡. Ale tvÃ© rozhodnutÃ­ bude koneÄnÃ©.
+	AI_Output (self, other, "DIA_Andre_JOIN_08_17"); //Jakmile na sobÄ› budeÅ¡ mÃ­t zbroj domobrany, nebudeÅ¡ si ji moci jen tak sejmout a pÅ™estat patÅ™it mezi nÃ¡s.
+	AI_Output (self, other, "DIA_Andre_JOIN_08_18"); //Jsi pÅ™ipraven spoleÄnÄ› s nÃ¡mi bojovat za Innose a krÃ¡le?
 	
 	Info_ClearChoices (DIA_Andre_JOIN);
-	Info_AddChoice (DIA_Andre_JOIN,"Ještì si nejsem tak úplnì jistı.",DIA_Andre_JOIN_No);
-	Info_AddChoice (DIA_Andre_JOIN,"Jsem pøipraven!",DIA_Andre_JOIN_Yes);
+	Info_AddChoice (DIA_Andre_JOIN,"JeÅ¡tÄ› si nejsem tak ÃºplnÄ› jistÃ½.",DIA_Andre_JOIN_No);
+	Info_AddChoice (DIA_Andre_JOIN,"Jsem pÅ™ipraven!",DIA_Andre_JOIN_Yes);
 };
 	
 func void DIA_Andre_JOIN_Yes()
 {
-	AI_Output (other, self, "DIA_Andre_JOIN_Yes_15_00"); //Jsem pøipraven!
-	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_01"); //Tak budi. Vítej v domobranì.
+	AI_Output (other, self, "DIA_Andre_JOIN_Yes_15_00"); //Jsem pÅ™ipraven!
+	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_01"); //Tak budiÅ¾. VÃ­tej v domobranÄ›.
 	
 	Npc_SetTrueGuild (other, GIL_MIL);
 	other.guild	= GIL_MIL;
@@ -1220,9 +1220,9 @@ func void DIA_Andre_JOIN_Yes()
 	
 	Npc_ExchangeRoutine (Lothar, "START");
 	
-	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_02"); //Tady máš svou zbroj.
+	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_02"); //Tady mÃ¡Å¡ svou zbroj.
 	B_GiveInvItems (self,other, ITAR_MIL_L,1);
-	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_03"); //Nos ji hrdì a dùstojnì.
+	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_03"); //Nos ji hrdÄ› a dÅ¯stojnÄ›.
 	
 	SLD_Aufnahme = LOG_OBSOLETE;
 	KDF_Aufnahme = LOG_OBSOLETE;
@@ -1234,8 +1234,8 @@ func void DIA_Andre_JOIN_Yes()
 
 func void DIA_Andre_JOIN_No()
 {
-	AI_Output (other, self, "DIA_Andre_JOIN_No_15_00"); //Ještì si nejsem tak úplnì jistı.
-	AI_Output (self, other, "DIA_Andre_JOIN_No_08_01"); //Pokud máš stále nìjaké pochyby o svém rozhodnutí, nemohu tì pøijmout do øad domobrany.
+	AI_Output (other, self, "DIA_Andre_JOIN_No_15_00"); //JeÅ¡tÄ› si nejsem tak ÃºplnÄ› jistÃ½.
+	AI_Output (self, other, "DIA_Andre_JOIN_No_08_01"); //Pokud mÃ¡Å¡ stÃ¡le nÄ›jakÃ© pochyby o svÃ©m rozhodnutÃ­, nemohu tÄ› pÅ™ijmout do Å™ad domobrany.
 	
 	Info_ClearChoices (DIA_Andre_JOIN);
 };
@@ -1251,7 +1251,7 @@ instance DIA_Andre_LORDHAGEN		(C_INFO)
 	condition	 = 	DIA_Andre_LORDHAGEN_Condition;
 	information	 = 	DIA_Andre_LORDHAGEN_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mohu teï koneènì jít za lordem Hagenem?";
+	description	 = 	"Mohu teÄ koneÄnÄ› jÃ­t za lordem Hagenem?";
 };
 func int DIA_Andre_LORDHAGEN_Condition ()
 {	
@@ -1263,10 +1263,10 @@ func int DIA_Andre_LORDHAGEN_Condition ()
 };
 func void DIA_Andre_LORDHAGEN_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_00"); //Mohu teï koneènì jít za lordem Hagenem?
-	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_01"); //Nyní jsi ve slubách paladinù. Vpustí tì dovnitø. Ale ve vlastním zájmu bys mìl mít na srdci nìco opravdu dùleitého.
-	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_02"); //To také mám, nemìj obavy.
-	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_03"); //Mìj na pamìti, e budeš mluvit s velitelem paladinù. Chovej se podle toho. Nebudeš tam stát jen za sebe, ale za celou domobranu.
+	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_00"); //Mohu teÄ koneÄnÄ› jÃ­t za lordem Hagenem?
+	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_01"); //NynÃ­ jsi ve sluÅ¾bÃ¡ch paladinÅ¯. VpustÃ­ tÄ› dovnitÅ™. Ale ve vlastnÃ­m zÃ¡jmu bys mÄ›l mÃ­t na srdci nÄ›co opravdu dÅ¯leÅ¾itÃ©ho.
+	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_02"); //To takÃ© mÃ¡m, nemÄ›j obavy.
+	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_03"); //MÄ›j na pamÄ›ti, Å¾e budeÅ¡ mluvit s velitelem paladinÅ¯. Chovej se podle toho. NebudeÅ¡ tam stÃ¡t jen za sebe, ale za celou domobranu.
 };
 // *********************************************************
 //				Waffe
@@ -1278,7 +1278,7 @@ instance DIA_Andre_Waffe		(C_INFO)
 	condition	 = 	DIA_Andre_Waffe_Condition;
 	information	 = 	DIA_Andre_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Dostanu také nìjakou zbraò?";
+	description	 = 	"Dostanu takÃ© nÄ›jakou zbraÅˆ?";
 };
 func int DIA_Andre_Waffe_Condition ()
 {	
@@ -1290,16 +1290,16 @@ func int DIA_Andre_Waffe_Condition ()
 };
 func void DIA_Andre_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Waffe_15_00"); //Dostanu také nìjakou zbraò?
-	AI_Output (self, other, "DIA_Andre_Waffe_08_01"); //Samozøejmì. Obvykle se o to stará Peck. Ale zdá se mi, e jsem ho u nìjakou dobu nevidìl.
-	AI_Output (self, other, "DIA_Andre_Waffe_08_02"); //Zjisti, kde se zašívá, a pøiveï ho sem. Pak od nìj nafasuješ zbraò.
-	AI_Output (self, other, "DIA_Andre_Waffe_08_03"); //A pokud bys chtìl spát, mùeš si lehnout na nìkterou z postelí v kasárnách.
+	AI_Output (other, self, "DIA_Andre_Waffe_15_00"); //Dostanu takÃ© nÄ›jakou zbraÅˆ?
+	AI_Output (self, other, "DIA_Andre_Waffe_08_01"); //SamozÅ™ejmÄ›. Obvykle se o to starÃ¡ Peck. Ale zdÃ¡ se mi, Å¾e jsem ho uÅ¾ nÄ›jakou dobu nevidÄ›l.
+	AI_Output (self, other, "DIA_Andre_Waffe_08_02"); //Zjisti, kde se zaÅ¡Ã­vÃ¡, a pÅ™iveÄ ho sem. Pak od nÄ›j nafasujeÅ¡ zbraÅˆ.
+	AI_Output (self, other, "DIA_Andre_Waffe_08_03"); //A pokud bys chtÄ›l spÃ¡t, mÅ¯Å¾eÅ¡ si lehnout na nÄ›kterou z postelÃ­ v kasÃ¡rnÃ¡ch.
 	
 	MIS_Andre_Peck = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Peck,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Peck,LOG_RUNNING);
-	B_LogEntry (TOPIC_Peck,"Peck se toulá nìkde po mìstì. Pokud ho pøivedu zpátky do kasáren, mohu od nìj dostat zbraò.");
+	B_LogEntry (TOPIC_Peck,"Peck se toulÃ¡ nÄ›kde po mÄ›stÄ›. Pokud ho pÅ™ivedu zpÃ¡tky do kasÃ¡ren, mohu od nÄ›j dostat zbraÅˆ.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -1315,7 +1315,7 @@ instance DIA_Andre_FOUND_PECK		(C_INFO)
 	condition	 = 	DIA_Andre_FOUND_PECK_Condition;
 	information	 = 	DIA_Andre_FOUND_PECK_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Podaøilo se mi najít Pecka.";
+	description	 = 	"PodaÅ™ilo se mi najÃ­t Pecka.";
 };
 
 func int DIA_Andre_FOUND_PECK_Condition ()
@@ -1329,18 +1329,18 @@ func int DIA_Andre_FOUND_PECK_Condition ()
 };
 func void DIA_Andre_FOUND_PECK_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_PECK_15_00"); //Podaøilo se mi najít Pecka.
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_08_01"); //Ano, u je zpìt na svém místì a plní své povinnosti. Kde jsi ho našel?
+	AI_Output (other, self, "DIA_Andre_FOUND_PECK_15_00"); //PodaÅ™ilo se mi najÃ­t Pecka.
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_08_01"); //Ano, uÅ¾ je zpÄ›t na svÃ©m mÃ­stÄ› a plnÃ­ svÃ© povinnosti. Kde jsi ho naÅ¡el?
 
 	Info_ClearChoices 	(DIA_Andre_FOUND_PECK);
-	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"Zkøíil mi cestu...",DIA_Andre_FOUND_PECK_SOMEWHERE);
-	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"U Èervené lucernièky...",DIA_Andre_FOUND_PECK_REDLIGHT);
+	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"ZkÅ™Ã­Å¾il mi cestu...",DIA_Andre_FOUND_PECK_SOMEWHERE);
+	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"U ÄŒervenÃ© lucerniÄky...",DIA_Andre_FOUND_PECK_REDLIGHT);
 
 };
 FUNC VOID DIA_Andre_FOUND_PECK_SOMEWHERE()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_PECK_SOMEWHERE_15_00"); //Narazil jsem na nìj ve mìstì.
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_SOMEWHERE_08_01"); //Dobrá, tak za ním zajdi a vyzvedni si zbraò.
+	AI_Output (other, self, "DIA_Andre_FOUND_PECK_SOMEWHERE_15_00"); //Narazil jsem na nÄ›j ve mÄ›stÄ›.
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_SOMEWHERE_08_01"); //DobrÃ¡, tak za nÃ­m zajdi a vyzvedni si zbraÅˆ.
 	
 	MIS_Andre_Peck = LOG_OBSOLETE;// wird hier benutzt, um Unterscheidung bei Waffenausgabe zu haben, aber Mission ist trotzdem geschafft! M.F.
 	B_GivePlayerXP 		(XP_FoundPeck);
@@ -1348,9 +1348,9 @@ FUNC VOID DIA_Andre_FOUND_PECK_SOMEWHERE()
 };
 FUNC VOID DIA_Andre_FOUND_PECK_REDLIGHT()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_PECK_REDLIGHT_15_00"); //Byl u "Èervené lucerny".
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_01"); //Aha, take místo aby se staral o své povinnosti, vysedává s dìvèaty.
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_02"); //Asi s ním budu muset prohodit pár slov.
+	AI_Output (other, self, "DIA_Andre_FOUND_PECK_REDLIGHT_15_00"); //Byl u "ÄŒervenÃ© lucerny".
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_01"); //Aha, takÅ¾e mÃ­sto aby se staral o svÃ© povinnosti, vysedÃ¡vÃ¡ s dÄ›vÄaty.
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_02"); //Asi s nÃ­m budu muset prohodit pÃ¡r slov.
 	
 	B_GivePlayerXP 		(XP_FoundPeck*2);
 	MIS_Andre_Peck = LOG_SUCCESS;
@@ -1368,7 +1368,7 @@ FUNC VOID DIA_Andre_FOUND_PECK_REDLIGHT()
 
 FUNC VOID B_AndreSold ()
 {
-	AI_Output (self, other,"DIA_Andre_Sold_08_00");//Tady máš svùj plat.
+	AI_Output (self, other,"DIA_Andre_Sold_08_00");//Tady mÃ¡Å¡ svÅ¯j plat.
 	B_GiveInvItems (self, other, itmi_Gold, Andre_Sold); 
 };
 
@@ -1383,7 +1383,7 @@ instance DIA_Andre_FIRSTMISSION		(C_INFO)
 	condition	 = 	DIA_Andre_FIRSTMISSION_Condition;
 	information	 = 	DIA_Andre_FIRSTMISSION_Info;
 	permanent 	 =  FALSE; 
-	description	 = 	"Máš pro mì nìjakı úkol?";
+	description	 = 	"MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ Ãºkol?";
 };
 func int DIA_Andre_FIRSTMISSION_Condition ()
 {
@@ -1394,21 +1394,21 @@ func int DIA_Andre_FIRSTMISSION_Condition ()
 };
 func void DIA_Andre_FIRSTMISSION_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_00"); //Máš pro mì nìjakı úkol?
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_01"); //V poslední dobì se prı ve mìstì obchoduje s trávou z bain.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_02"); //Nemùeme dopustit, aby se to tady nìjak rozmohlo.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_03"); //Jinak by kadı zaèal kouøit a nikdo by nebyl schopnı pracovat, nato udret zbraò.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_04"); //To si nemùeme dovolit zvláš teï, kdy hrozí útok skøetù nebo oldákù.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_05"); //Mám podezøení, e za tím jsou ti oldáci. Vsadím se, e to oni pøináší to svinstvo do mìsta.
-	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_06"); //Co je na práci?
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_07"); //Mortis, jeden z našich muù, v pøístavní krèmì zaslechl, e nìkam do pøístavní ètvrti mìl dorazit balík trávy z bain.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_08"); //Porozhlédni se kolem a ten balík mi dones.
+	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ Ãºkol?
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_01"); //V poslednÃ­ dobÄ› se prÃ½ ve mÄ›stÄ› obchoduje s trÃ¡vou z baÅ¾in.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_02"); //NemÅ¯Å¾eme dopustit, aby se to tady nÄ›jak rozmohlo.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_03"); //Jinak by kaÅ¾dÃ½ zaÄal kouÅ™it a nikdo by nebyl schopnÃ½ pracovat, natoÅ¾ udrÅ¾et zbraÅˆ.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_04"); //To si nemÅ¯Å¾eme dovolit zvlÃ¡Å¡Å¥ teÄ, kdyÅ¾ hrozÃ­ Ãºtok skÅ™etÅ¯ nebo Å¾oldÃ¡kÅ¯.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_05"); //MÃ¡m podezÅ™enÃ­, Å¾e za tÃ­m jsou ti Å¾oldÃ¡ci. VsadÃ­m se, Å¾e to oni pÅ™inÃ¡Å¡Ã­ to svinstvo do mÄ›sta.
+	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_06"); //Co je na prÃ¡ci?
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_07"); //Mortis, jeden z naÅ¡ich muÅ¾Å¯, v pÅ™Ã­stavnÃ­ krÄmÄ› zaslechl, Å¾e nÄ›kam do pÅ™Ã­stavnÃ­ Ätvrti mÄ›l dorazit balÃ­k trÃ¡vy z baÅ¾in.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_08"); //PorozhlÃ©dni se kolem a ten balÃ­k mi dones.
 	
 	MIS_ANDRE_WAREHOUSE = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_WAREHOUSE,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_WAREHOUSE,LOG_RUNNING);
-	B_LogEntry (TOPIC_WAREHOUSE,"Do pøístavu dorazil balík trávy z bain - Mortis se o tom dozvìdìl v místní hospodì. Já mám tu zásilku najít a donést lordu Andreovi.");
+	B_LogEntry (TOPIC_WAREHOUSE,"Do pÅ™Ã­stavu dorazil balÃ­k trÃ¡vy z baÅ¾in - Mortis se o tom dozvÄ›dÄ›l v mÃ­stnÃ­ hospodÄ›. JÃ¡ mÃ¡m tu zÃ¡silku najÃ­t a donÃ©st lordu Andreovi.");
 	
 	
 };
@@ -1423,7 +1423,7 @@ instance DIA_Andre_FOUND_STUFF		(C_INFO)
 	condition	 = 	DIA_Andre_FOUND_STUFF_Condition;
 	information	 = 	DIA_Andre_FOUND_STUFF_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Co se toho balíku tıèe...";
+	description	 = 	"Co se toho balÃ­ku tÃ½Äe...";
 };
 func int DIA_Andre_FOUND_STUFF_Condition ()
 {	
@@ -1435,8 +1435,8 @@ func int DIA_Andre_FOUND_STUFF_Condition ()
 func void DIA_Andre_FOUND_STUFF_Info ()
 {
 	
-	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_15_00"); //Co se toho balíku tıèe...
-	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_08_01"); //Našel jsi ho?
+	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_15_00"); //Co se toho balÃ­ku tÃ½Äe...
+	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_08_01"); //NaÅ¡el jsi ho?
 	
 	if (Npc_HasItems (other, ItMi_HerbPaket) > 0)
 	|| (MIS_Cipher_Paket == LOG_SUCCESS)
@@ -1448,18 +1448,18 @@ func void DIA_Andre_FOUND_STUFF_Info ()
 			Info_AddChoice (DIA_Andre_FOUND_STUFF,"Ano, tady je.",DIA_Andre_FOUND_STUFF_Ja);	
 		};
 		
-		Info_AddChoice (DIA_Andre_FOUND_STUFF,"Hodil jsem ho do pøístavní zátoky.",DIA_Andre_FOUND_STUFF_Becken);
+		Info_AddChoice (DIA_Andre_FOUND_STUFF,"Hodil jsem ho do pÅ™Ã­stavnÃ­ zÃ¡toky.",DIA_Andre_FOUND_STUFF_Becken);
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Andre_FOUND_STUFF_15_02"); //Zatím ne.
+		AI_Output	(other, self, "DIA_Andre_FOUND_STUFF_15_02"); //ZatÃ­m ne.
 	};
 };
 FUNC VOID DIA_Andre_FOUND_STUFF_Ja()
 {
 	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Ja_15_00"); //Ano, tady je.
 	B_GiveInvItems (other, self,ItMi_HerbPaket,1);
-	AI_Output	(self, other, "DIA_Andre_FOUND_STUFF_Ja_08_01"); //Dobrá práce. Budeme tu trávu dobøe støeit.
+	AI_Output	(self, other, "DIA_Andre_FOUND_STUFF_Ja_08_01"); //DobrÃ¡ prÃ¡ce. Budeme tu trÃ¡vu dobÅ™e stÅ™eÅ¾it.
 	B_AndreSold ();
 	
 	MIS_ANDRE_WAREHOUSE = LOG_SUCCESS;
@@ -1470,8 +1470,8 @@ FUNC VOID DIA_Andre_FOUND_STUFF_Ja()
 };
 FUNC VOID DIA_Andre_FOUND_STUFF_Becken()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Becken_15_00"); //Hodil jsem ho do pøístavní zátoky.
-	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_Becken_08_01"); //Vánì? No, hlavnì e u nemùe padnout do špatnıch rukou.
+	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Becken_15_00"); //Hodil jsem ho do pÅ™Ã­stavnÃ­ zÃ¡toky.
+	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_Becken_08_01"); //VÃ¡Å¾nÄ›? No, hlavnÄ› Å¾e uÅ¾ nemÅ¯Å¾e padnout do Å¡patnÃ½ch rukou.
 	B_AndreSold ();
 	
 	MIS_ANDRE_WAREHOUSE = LOG_SUCCESS;
@@ -1491,7 +1491,7 @@ instance DIA_Andre_FIND_DEALER		(C_INFO)
 	condition	 = 	DIA_Andre_FIND_DEALER_Condition;
 	information	 = 	DIA_Andre_FIND_DEALER_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Máš pro mì nìjakou další práci?";
+	description	 = 	"MÃ¡Å¡ pro mÄ› nÄ›jakou dalÅ¡Ã­ prÃ¡ci?";
 };
 
 func int DIA_Andre_FIND_DEALER_Condition ()
@@ -1504,14 +1504,14 @@ func int DIA_Andre_FIND_DEALER_Condition ()
 };
 func void DIA_Andre_FIND_DEALER_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_FIND_DEALER_15_00"); //Máš pro mì nìjakou další práci?
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_01"); //Stáhnul jsi ten balík trávy z obìhu - to je dobøe.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_02"); //Rád bych ale zjistil, kdo to rozšiøuje mezi lidi.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_03"); //Musí to bıt nìkdo z pøístavní ètvrti.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_04"); //Kdyby do mìsta nìkdo pravidelnì pøicházel zvenèí, u bychom ho dávno chytili.
-	AI_Output (other, self, "DIA_Andre_FIND_DEALER_15_05"); //Co pøesnì mám udìlat?
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_06"); //Najdi toho pøekupníka a nech si od nìj nìjakou tu trávu prodat. Nebude to snadné, ale jinak ho nemùeme zatknout.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_07"); //Promluv si s Mortisem, vyzná se v pøístavní ètvrti. Moná by ti mohl nìjak pomoci.
+	AI_Output (other, self, "DIA_Andre_FIND_DEALER_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakou dalÅ¡Ã­ prÃ¡ci?
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_01"); //StÃ¡hnul jsi ten balÃ­k trÃ¡vy z obÄ›hu - to je dobÅ™e.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_02"); //RÃ¡d bych ale zjistil, kdo to rozÅ¡iÅ™uje mezi lidi.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_03"); //MusÃ­ to bÃ½t nÄ›kdo z pÅ™Ã­stavnÃ­ Ätvrti.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_04"); //Kdyby do mÄ›sta nÄ›kdo pravidelnÄ› pÅ™ichÃ¡zel zvenÄÃ­, uÅ¾ bychom ho dÃ¡vno chytili.
+	AI_Output (other, self, "DIA_Andre_FIND_DEALER_15_05"); //Co pÅ™esnÄ› mÃ¡m udÄ›lat?
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_06"); //Najdi toho pÅ™ekupnÃ­ka a nech si od nÄ›j nÄ›jakou tu trÃ¡vu prodat. Nebude to snadnÃ©, ale jinak ho nemÅ¯Å¾eme zatknout.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_07"); //Promluv si s Mortisem, vyznÃ¡ se v pÅ™Ã­stavnÃ­ Ätvrti. MoÅ¾nÃ¡ by ti mohl nÄ›jak pomoci.
 	
 	
 	MIS_Andre_REDLIGHT = LOG_RUNNING;
@@ -1519,7 +1519,7 @@ func void DIA_Andre_FIND_DEALER_Info ()
 	
 	Log_CreateTopic (TOPIC_REDLIGHT,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_REDLIGHT,LOG_RUNNING);
-	B_LogEntry (TOPIC_REDLIGHT,"Mám najít chlápka, co v pøístavišti kšeftuje s trávou z bain. Musím ho pøimìt, aby mi nìco ze svıch zásob prodal. Mortis mi v tom mùe pomoci.");
+	B_LogEntry (TOPIC_REDLIGHT,"MÃ¡m najÃ­t chlÃ¡pka, co v pÅ™Ã­staviÅ¡ti kÅ¡eftuje s trÃ¡vou z baÅ¾in. MusÃ­m ho pÅ™imÄ›t, aby mi nÄ›co ze svÃ½ch zÃ¡sob prodal. Mortis mi v tom mÅ¯Å¾e pomoci.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info REDLIGHT_SUCCESS
@@ -1532,7 +1532,7 @@ instance DIA_Andre_REDLIGHT_SUCCESS		(C_INFO)
 	condition	 = 	DIA_Andre_REDLIGHT_SUCCESS_Condition;
 	information	 = 	DIA_Andre_REDLIGHT_SUCCESS_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Co se tıká té trávy...";
+	description	 = 	"Co se tÃ½kÃ¡ tÃ© trÃ¡vy...";
 };
 func int DIA_Andre_REDLIGHT_SUCCESS_Condition ()
 {
@@ -1543,36 +1543,36 @@ func int DIA_Andre_REDLIGHT_SUCCESS_Condition ()
 };
 func void DIA_Andre_REDLIGHT_SUCCESS_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_00"); //Co se té trávy tıèe...
+	AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_00"); //Co se tÃ© trÃ¡vy tÃ½Äe...
 	
 	if (Npc_IsDead (Borka) == TRUE)
 	|| (Undercover_Failed == TRUE)
 	{
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_01"); //Nemyslím, e bychom se v pøístavní ètvrti nìco dozvìdìli.
+		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_01"); //NemyslÃ­m, Å¾e bychom se v pÅ™Ã­stavnÃ­ Ätvrti nÄ›co dozvÄ›dÄ›li.
 		
 		if  (Npc_IsDead (Borka) == TRUE)
 		{
-			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_02"); //Ne, kdy je ten vyhazovaè mrtvı.
+			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_02"); //Ne, kdyÅ¾ je ten vyhazovaÄ mrtvÃ½.
 		};
 		
 		if (Nadja_Victim == TRUE)
 		{
-			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_03"); //Ta dívka z Èervené lucerny, Nadja, je mrtvá. Musela to bıt nìjaká podivná nehoda.
+			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_03"); //Ta dÃ­vka z ÄŒervenÃ© lucerny, Nadja, je mrtvÃ¡. Musela to bÃ½t nÄ›jakÃ¡ podivnÃ¡ nehoda.
 			B_RemoveNpc (Nadja);
 		};
 		if (Undercover_Failed == TRUE)
 		{
-			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_04"); //Nebyl jsi dostateènì opatrnı.
+			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_04"); //Nebyl jsi dostateÄnÄ› opatrnÃ½.
 		};
 		MIS_Andre_REDLIGHT = LOG_FAILED;
 		B_CheckLog();
 	}
 	else if  (Borka_Deal == 2)
 	{
-		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_05"); //Vím, kdo tu trávu ve mìstì prodává. Je to Borka, dveøník od Èervené lucerny.
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_06"); //Vánì? Máme nìjakı dùkaz?
-		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_07"); //Trochu té trávy mi prodal.
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_08"); //Vıbornì, to nám staèí. Okamitì ho nechám zatknout.
+		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_05"); //VÃ­m, kdo tu trÃ¡vu ve mÄ›stÄ› prodÃ¡vÃ¡. Je to Borka, dveÅ™nÃ­k od ÄŒervenÃ© lucerny.
+		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_06"); //VÃ¡Å¾nÄ›? MÃ¡me nÄ›jakÃ½ dÅ¯kaz?
+		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_07"); //Trochu tÃ© trÃ¡vy mi prodal.
+		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_08"); //VÃ½bornÄ›, to nÃ¡m staÄÃ­. OkamÅ¾itÄ› ho nechÃ¡m zatknout.
 		
 		B_StartOtherRoutine (Borka, "PRISON");
 		MIS_Andre_REDLIGHT = LOG_SUCCESS;
@@ -1581,8 +1581,8 @@ func void DIA_Andre_REDLIGHT_SUCCESS_Info ()
 	}
 	else 
 	{
-		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_09"); //Ještì na tom pracuju.
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_10"); //Dobrá, a nezapomeò, e musíš toho chlapíka pøesvìdèit, aby s tebou uzavøel obchod.
+		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_09"); //JeÅ¡tÄ› na tom pracuju.
+		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_10"); //DobrÃ¡, a nezapomeÅˆ, Å¾e musÃ­Å¡ toho chlapÃ­ka pÅ™esvÄ›dÄit, aby s tebou uzavÅ™el obchod.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -1595,7 +1595,7 @@ instance DIA_Andre_HILFBAUERLOBART		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Andre_HILFBAUERLOBART_Condition;
 	information	 = 	DIA_Andre_HILFBAUERLOBART_Info;
-	description	 = 	"Máš pro mì nìjakı další úkol?";
+	description	 = 	"MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ dalÅ¡Ã­ Ãºkol?";
 };
 func int DIA_Andre_HILFBAUERLOBART_Condition ()
 {	
@@ -1606,14 +1606,14 @@ func int DIA_Andre_HILFBAUERLOBART_Condition ()
 };
 func void DIA_Andre_HILFBAUERLOBART_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_HILFBAUERLOBART_15_00"); //Máš pro mì nìjakı další úkol?
-	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_01"); //Farmáø Lobart má na svıch polích nìjaké problémy.
-	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_02"); //Pokud mu pomùeme, upevníme jeho vztahy s mìstem. Zajdi tedy za ním a zjisti, co se dìje.
+	AI_Output (other, self, "DIA_Andre_HILFBAUERLOBART_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ dalÅ¡Ã­ Ãºkol?
+	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_01"); //FarmÃ¡Å™ Lobart mÃ¡ na svÃ½ch polÃ­ch nÄ›jakÃ© problÃ©my.
+	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_02"); //Pokud mu pomÅ¯Å¾eme, upevnÃ­me jeho vztahy s mÄ›stem. Zajdi tedy za nÃ­m a zjisti, co se dÄ›je.
 
 	
 	Log_CreateTopic (TOPIC_Feldraeuber, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Feldraeuber, LOG_RUNNING);
-	B_LogEntry (TOPIC_Feldraeuber,"Andre mì poslal na Lobartùv statek. Mám mu pomoci ho dát znovu do poøádku."); 
+	B_LogEntry (TOPIC_Feldraeuber,"Andre mÄ› poslal na LobartÅ¯v statek. MÃ¡m mu pomoci ho dÃ¡t znovu do poÅ™Ã¡dku."); 
 	
 	
 	MIS_AndreHelpLobart = LOG_RUNNING;
@@ -1658,7 +1658,7 @@ func int DIA_Andre_LOBART_SUCCESS_Condition ()
 func void DIA_Andre_LOBART_SUCCESS_Info ()
 {
 	AI_Output (other, self, "DIA_Andre_LOBART_SUCCESS_15_00"); //Pomohl jsem Lobartovi.
-	AI_Output (self, other, "DIA_Andre_LOBART_SUCCESS_08_01"); //Vıbornì. Pokud bude Lobart spokojenı, bude mìstu i nadále prodávat své tuøíny.
+	AI_Output (self, other, "DIA_Andre_LOBART_SUCCESS_08_01"); //VÃ½bornÄ›. Pokud bude Lobart spokojenÃ½, bude mÄ›stu i nadÃ¡le prodÃ¡vat svÃ© tuÅ™Ã­ny.
 	B_GivePlayerXP (XP_LobartBugs);
 	B_AndreSold ();
 };
@@ -1673,7 +1673,7 @@ instance DIA_Addon_Andre_MissingPeople		(C_INFO)
 	condition	= DIA_Addon_Andre_MissingPeople_Condition;
 	information	= DIA_Addon_Andre_MissingPeople_Info;
 
-	description	= "A co ti zmizelí lidé?";
+	description	= "A co ti zmizelÃ­ lidÃ©?";
 };
 func int DIA_Addon_Andre_MissingPeople_Condition ()
 {
@@ -1685,13 +1685,13 @@ func int DIA_Addon_Andre_MissingPeople_Condition ()
 };
 func void DIA_Addon_Andre_MissingPeople_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople_15_00"); //Co je s tìmi pohøešovanımi lidmi?
+	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople_15_00"); //Co je s tÄ›mi pohÅ™eÅ¡ovanÃ½mi lidmi?
 	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_01"); //Co s nimi?
-	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople_15_02"); //Nemìli bychom je zkusit najít?
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_03"); //Lord Hagen mi nakázal chránit mìsto a pøilehlé statky.
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_04"); //To znamená, e se staráme o lidi, kteøí jsou ještì TADY.
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_05"); //V noci støeí ulice domobrana. Víc dìlat nemohu.
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_06"); //A TY by sis mìl taky hledìt hlavnì úkolù, které jsem ti zadal, jasné?
+	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople_15_02"); //NemÄ›li bychom je zkusit najÃ­t?
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_03"); //Lord Hagen mi nakÃ¡zal chrÃ¡nit mÄ›sto a pÅ™ilehlÃ© statky.
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_04"); //To znamenÃ¡, Å¾e se starÃ¡me o lidi, kteÅ™Ã­ jsou jeÅ¡tÄ› TADY.
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_05"); //V noci stÅ™eÅ¾Ã­ ulice domobrana. VÃ­c dÄ›lat nemohu.
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_06"); //A TY by sis mÄ›l taky hledÄ›t hlavnÄ› ÃºkolÅ¯, kterÃ© jsem ti zadal, jasnÃ©?
 	
 	MIS_Addon_Andre_MissingPeople = LOG_RUNNING;
 };
@@ -1706,7 +1706,7 @@ instance DIA_Addon_Andre_MissingPeople2	(C_INFO)
 	condition	= DIA_Addon_Andre_MissingPeople2_Condition;
 	information	= DIA_Addon_Andre_MissingPeople2_Info;
 
-	description	= "K tìm zmizelım lidem...";
+	description	= "K tÄ›m zmizelÃ½m lidem...";
 };
 func int DIA_Addon_Andre_MissingPeople2_Condition ()
 {
@@ -1719,8 +1719,8 @@ func int DIA_Addon_Andre_MissingPeople2_Condition ()
 };
 func void DIA_Addon_Andre_MissingPeople2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople2_15_00"); //Co se tıèe tìch zmizelıch lidí...
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople2_08_01"); //S tím u mi dej POKOJ! Mám jiné starosti.
+	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople2_15_00"); //Co se tÃ½Äe tÄ›ch zmizelÃ½ch lidÃ­...
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople2_08_01"); //S tÃ­m uÅ¾ mi dej POKOJ! MÃ¡m jinÃ© starosti.
 	MIS_Addon_Andre_MissingPeople = LOG_RUNNING;
 };
 
@@ -1734,7 +1734,7 @@ instance DIA_Addon_Andre_ReturnedMissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Andre_ReturnedMissingPeople_Condition;
 	information	 = 	DIA_Addon_Andre_ReturnedMissingPeople_Info;
 
-	description	 = 	"Zachránil jsem pár pohøešovanıch lidí.";
+	description	 = 	"ZachrÃ¡nil jsem pÃ¡r pohÅ™eÅ¡ovanÃ½ch lidÃ­.";
 };
 
 func int DIA_Addon_Andre_ReturnedMissingPeople_Condition ()
@@ -1748,22 +1748,22 @@ func int DIA_Addon_Andre_ReturnedMissingPeople_Condition ()
 
 func void DIA_Addon_Andre_ReturnedMissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_00"); //Nìkteré z tìch pohøešovanıch jsem osvobodil.
+	AI_Output	(other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_00"); //NÄ›kterÃ© z tÄ›ch pohÅ™eÅ¡ovanÃ½ch jsem osvobodil.
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_01"); //A já si øíkal, kde jsi sakra byl tak dlouho!
-		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_02"); //Jsi èlenem domobrany! A k nièemu takovému jsi nemìl rozkazy!
+		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_01"); //A jÃ¡ si Å™Ã­kal, kde jsi sakra byl tak dlouho!
+		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_02"); //Jsi Älenem domobrany! A k niÄemu takovÃ©mu jsi nemÄ›l rozkazy!
 		AI_Output (other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_03"); //Ale...
 	};	
-	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_04"); //Kolik lidí jsi našel?
-	AI_Output (other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_05"); //Všechny, kdo zatím pøeili.
-	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_06"); //VŠECHNY?! Já... Ehm...
+	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_04"); //Kolik lidÃ­ jsi naÅ¡el?
+	AI_Output (other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_05"); //VÅ¡echny, kdo zatÃ­m pÅ™eÅ¾ili.
+	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_06"); //VÅ ECHNY?! JÃ¡... Ehm...
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_07"); //...jsem na tebe hrdı! A jsem rád, e ses pøidal právì k nám!
+		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_07"); //...jsem na tebe hrdÃ½! A jsem rÃ¡d, Å¾e ses pÅ™idal prÃ¡vÄ› k nÃ¡m!
 		B_AndreSold ();
 	};
-	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_08"); //To byl takøka hrdinskı èin.
+	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_08"); //To byl takÅ™ka hrdinskÃ½ Äin.
 
 	MIS_Addon_Andre_MissingPeople = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Andre_MissingPeople);
@@ -1780,7 +1780,7 @@ func void DIA_Addon_Andre_ReturnedMissingPeople_Info ()
 
 func void B_Andre_GotoLordHagen()
 {
-	AI_Output (self ,other,"DIA_Andre_Add_08_11"); //Mìl bys jít pøímo za ním.
+	AI_Output (self ,other,"DIA_Andre_Add_08_11"); //MÄ›l bys jÃ­t pÅ™Ã­mo za nÃ­m.
 };
 
 // *********************************************************
@@ -1794,7 +1794,7 @@ instance DIA_Andre_BerichtDrachen		(C_INFO)
 	condition	 = 	DIA_Andre_BerichtDrachen_Condition;
 	information	 = 	DIA_Andre_BerichtDrachen_Info;
 	permanent	 =	FALSE;
-	description	 = 	"Byl jsem v Hornickém údolí a vidìl jsem draky!";
+	description	 = 	"Byl jsem v HornickÃ©m ÃºdolÃ­ a vidÄ›l jsem draky!";
 };
 func int DIA_Andre_BerichtDrachen_Condition ()
 {	
@@ -1808,17 +1808,17 @@ func void DIA_Andre_BerichtDrachen_Info ()
 {
 	//AI_Output (other, self,"DIA_Andre_Add_15_12"); //Lord Hagen hat mich auf eine Mission ins Minental geschickt! Ich soll direkt aufbrechen.
 	
-	AI_Output (other, self,"DIA_Andre_Add_15_13"); //Byl jsem v Hornickém údolí a vidìl jsem draky!
+	AI_Output (other, self,"DIA_Andre_Add_15_13"); //Byl jsem v HornickÃ©m ÃºdolÃ­ a vidÄ›l jsem draky!
 	if (Npc_HasItems (hero, ItWr_PaladinLetter_MIS) > 0)
 	{
-		AI_Output (other, self,"DIA_Andre_Add_15_14"); //Mám dopis od velitele Garonda, kterı má slova potvrzuje.
+		AI_Output (other, self,"DIA_Andre_Add_15_14"); //MÃ¡m dopis od velitele Garonda, kterÃ½ mÃ¡ slova potvrzuje.
 	};
-	AI_Output (self ,other,"DIA_Andre_Add_08_10"); //To bude lorda Hagena zajímat!
+	AI_Output (self ,other,"DIA_Andre_Add_08_10"); //To bude lorda Hagena zajÃ­mat!
 	B_Andre_GotoLordHagen();
 };
 
 ///////////////////////////////////////////////////////////////////////
-//		Cornelius lügt
+//		Cornelius lÃ¼gt
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Andre_BennetInPrison		(C_INFO)
@@ -1827,7 +1827,7 @@ instance DIA_Andre_BennetInPrison		(C_INFO)
 	condition	 = 	DIA_Andre_BennetInPrison_Condition;
 	information	 = 	DIA_Andre_BennetInPrison_Info;
 	permanent	 =	TRUE;
-	description	 = 	"A co Bennet, ten kováø?";
+	description	 = 	"A co Bennet, ten kovÃ¡Å™?";
 };
 func int DIA_Andre_BennetInPrison_Condition ()
 {	
@@ -1838,14 +1838,14 @@ func int DIA_Andre_BennetInPrison_Condition ()
 };
 func void DIA_Andre_BennetInPrison_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_BennetInPrison_15_00"); //A co Bennet, ten kováø?
-	AI_Output (self, other, "DIA_Andre_BennetInPrison_08_01"); //Myslíš toho oldáka? Sedí ve vìzení, kam patøí.
-	AI_Output (other,self ,"DIA_Andre_BennetInPrison_Talk_15_00"); //Mohu s ním mluvit?
-	AI_Output (self ,other,"DIA_Andre_BennetInPrison_Talk_08_01"); //Jistì, jak je libo. Ale pokud se pokusíš pomoci mu k útìku, skonèíš tam také.
+	AI_Output (other, self, "DIA_Andre_BennetInPrison_15_00"); //A co Bennet, ten kovÃ¡Å™?
+	AI_Output (self, other, "DIA_Andre_BennetInPrison_08_01"); //MyslÃ­Å¡ toho Å¾oldÃ¡ka? SedÃ­ ve vÄ›zenÃ­, kam patÅ™Ã­.
+	AI_Output (other,self ,"DIA_Andre_BennetInPrison_Talk_15_00"); //Mohu s nÃ­m mluvit?
+	AI_Output (self ,other,"DIA_Andre_BennetInPrison_Talk_08_01"); //JistÄ›, jak je libo. Ale pokud se pokusÃ­Å¡ pomoci mu k ÃºtÄ›ku, skonÄÃ­Å¡ tam takÃ©.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//		Cornelius lügt
+//		Cornelius lÃ¼gt
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Andre_Cornelius_Liar		(C_INFO)
@@ -1854,7 +1854,7 @@ instance DIA_Andre_Cornelius_Liar		(C_INFO)
 	condition	 = 	DIA_Andre_Cornelius_Liar_Condition;
 	information	 = 	DIA_Andre_Cornelius_Liar_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Myslím, e Cornelius le.";
+	description	 = 	"MyslÃ­m, Å¾e Cornelius lÅ¾e.";
 };
 func int DIA_Andre_Cornelius_Liar_Condition ()
 {	
@@ -1866,8 +1866,8 @@ func int DIA_Andre_Cornelius_Liar_Condition ()
 };
 func void DIA_Andre_Cornelius_Liar_Info ()
 {
-	AI_Output			(other, self, "DIA_Andre_Cornelius_Liar_15_00"); //Myslím, e Cornelius le.
-	AI_Output			(self, other, "DIA_Andre_Cornelius_Liar_08_01"); //Jsi si jistı?
+	AI_Output			(other, self, "DIA_Andre_Cornelius_Liar_15_00"); //MyslÃ­m, Å¾e Cornelius lÅ¾e.
+	AI_Output			(self, other, "DIA_Andre_Cornelius_Liar_08_01"); //Jsi si jistÃ½?
 	
 	Info_ClearChoices (DIA_Andre_Cornelius_Liar);
 	Info_AddChoice (DIA_Andre_Cornelius_Liar,"Ne.",DIA_Andre_Cornelius_Liar_No);  
@@ -1877,9 +1877,9 @@ func void DIA_Andre_Cornelius_Liar_Info ()
 FUNC VOID DIA_Andre_Cornelius_Liar_No()
 {
 	AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_No_15_00"); //Ne.
-	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_01"); //V tom pøípadì bys nemìl své podezøení tak zeširoka roztrubovat.
-	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_02"); //Cornelius je vlivnı mu. Mohl by ti udìlat ze ivota peklo, kdyby chtìl.
-	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_03"); //Pokud nemáš ádnı dùkaz, nemohu ti pomoci.
+	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_01"); //V tom pÅ™Ã­padÄ› bys nemÄ›l svÃ© podezÅ™enÃ­ tak zeÅ¡iroka roztrubovat.
+	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_02"); //Cornelius je vlivnÃ½ muÅ¾. Mohl by ti udÄ›lat ze Å¾ivota peklo, kdyby chtÄ›l.
+	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_03"); //Pokud nemÃ¡Å¡ Å¾Ã¡dnÃ½ dÅ¯kaz, nemohu ti pomoci.
 
 	Info_ClearChoices (DIA_Andre_Cornelius_Liar);
 };
@@ -1887,19 +1887,19 @@ FUNC VOID DIA_Andre_Cornelius_Liar_No()
 FUNC VOID DIA_Andre_Cornelius_Liar_Yes()
 {
 	AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_00"); //Ano.
-	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_01"); //Co za dùkaz máš?
+	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_01"); //Co za dÅ¯kaz mÃ¡Å¡?
 	
 	if (Cornelius_IsLiar == TRUE)
 	{
-		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_02"); //Èetl jsem jeho deník! Podplatili ho. Všechno je jen snùška lí.
-		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_03"); //Pokud to je skuteènì tak, musíš jít okamitì za lordem Hagenem.
-		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_04"); //Uka mu ten deník. On u se postará o zbytek.
+		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_02"); //ÄŒetl jsem jeho denÃ­k! Podplatili ho. VÅ¡echno je jen snÅ¯Å¡ka lÅ¾Ã­.
+		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_03"); //Pokud to je skuteÄnÄ› tak, musÃ­Å¡ jÃ­t okamÅ¾itÄ› za lordem Hagenem.
+		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_04"); //UkaÅ¾ mu ten denÃ­k. On uÅ¾ se postarÃ¡ o zbytek.
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_05"); //Ehm, no, myslím...
-		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_06"); //Potøebuji dùkaz, ne podezøení. Seeò dùkaz, pak pro tebe budu moci nìco udìlat.
-		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_07"); //Do té doby by sis mìl radìji dávat pozor na jazyk.
+		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_05"); //Ehm, no, myslÃ­m...
+		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_06"); //PotÅ™ebuji dÅ¯kaz, ne podezÅ™enÃ­. SeÅ¾eÅˆ dÅ¯kaz, pak pro tebe budu moci nÄ›co udÄ›lat.
+		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_07"); //Do tÃ© doby by sis mÄ›l radÄ›ji dÃ¡vat pozor na jazyk.
 	};
 	
 	Info_ClearChoices (DIA_Andre_Cornelius_Liar);
@@ -1926,8 +1926,8 @@ func int DIA_Andre_Paladin_Condition ()
 };
 func void DIA_Andre_Paladin_Info ()
 {
-	AI_Output (self, other, "DIA_Andre_Paladin_08_00"); //Take nyní jsi paladin! Gratuluji!
-	AI_Output (self, other, "DIA_Andre_Paladin_08_01"); //U od zaèátku jsem si myslel, e nezùstaneš u domobrany dlouho.
+	AI_Output (self, other, "DIA_Andre_Paladin_08_00"); //TakÅ¾e nynÃ­ jsi paladin! Gratuluji!
+	AI_Output (self, other, "DIA_Andre_Paladin_08_01"); //UÅ¾ od zaÄÃ¡tku jsem si myslel, Å¾e nezÅ¯staneÅ¡ u domobrany dlouho.
 };
 
 // ******************************************************
@@ -1941,7 +1941,7 @@ instance DIA_Andre_PERM		(C_INFO)
 	condition	 = DIA_Andre_PERM_Condition;
 	information	 = DIA_Andre_PERM_Info;
 	permanent	 = TRUE;
-	description	 = "Jak to vypadá ve mìstì?";
+	description	 = "Jak to vypadÃ¡ ve mÄ›stÄ›?";
 };
 func int DIA_Andre_PERM_Condition ()
 {	
@@ -1952,17 +1952,17 @@ func int DIA_Andre_PERM_Condition ()
 };
 func void DIA_Andre_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_PERM_15_00"); //Jak to vypadá ve mìstì?
+	AI_Output (other, self, "DIA_Andre_PERM_15_00"); //Jak to vypadÃ¡ ve mÄ›stÄ›?
 	
-	AI_Output (self, other, "DIA_Andre_PERM_08_01"); //Všechno je pod kontrolou.
+	AI_Output (self, other, "DIA_Andre_PERM_08_01"); //VÅ¡echno je pod kontrolou.
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Andre_PERM_08_02"); //Pokraèuj ve svém poslání.
+		AI_Output (self, other, "DIA_Andre_PERM_08_02"); //PokraÄuj ve svÃ©m poslÃ¡nÃ­.
 	};
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Andre_PERM_08_03"); //Od této chvíle se hlásíš pøímo lordu Hagenovi. Bì si s ním promluvit.
+		AI_Output (self, other, "DIA_Andre_PERM_08_03"); //Od tÃ©to chvÃ­le se hlÃ¡sÃ­Å¡ pÅ™Ã­mo lordu Hagenovi. BÄ›Å¾ si s nÃ­m promluvit.
 	};
 };
 
@@ -1982,7 +1982,7 @@ instance DIA_Andre_BerichtDrachenTot		(C_INFO)
 	condition	 = 	DIA_Andre_BerichtDrachenTot_Condition;
 	information	 = 	DIA_Andre_BerichtDrachenTot_Info;
 	permanent	 =	FALSE;
-	description	 = 	"Pobil jsem všechny draky v Hornickém údolí!";
+	description	 = 	"Pobil jsem vÅ¡echny draky v HornickÃ©m ÃºdolÃ­!";
 };
 func int DIA_Andre_BerichtDrachenTot_Condition ()
 {	
@@ -1993,8 +1993,8 @@ func int DIA_Andre_BerichtDrachenTot_Condition ()
 };
 func void DIA_Andre_BerichtDrachenTot_Info ()
 {
-	AI_Output (other, self,"DIA_Andre_Add_15_15"); //Pobil jsem všechny draky v Hornickém údolí!
-	AI_Output (self ,other,"DIA_Andre_Add_08_08"); //Pokud to je pravda, musíš o tom øíct lordu Hagenovi.
+	AI_Output (other, self,"DIA_Andre_Add_15_15"); //Pobil jsem vÅ¡echny draky v HornickÃ©m ÃºdolÃ­!
+	AI_Output (self ,other,"DIA_Andre_Add_08_08"); //Pokud to je pravda, musÃ­Å¡ o tom Å™Ã­ct lordu Hagenovi.
 	B_Andre_GotoLordHagen();
 };
 
@@ -2009,7 +2009,7 @@ instance DIA_Andre_BerichtTorAuf (C_INFO)
 	condition	 = 	DIA_Andre_BerichtTorAuf_Condition;
 	information	 = 	DIA_Andre_BerichtTorAuf_Info;
 	permanent	 =	FALSE;
-	description	 = 	"Na hrad v Hornickém údolí zaútoèili skøeti!";
+	description	 = 	"Na hrad v HornickÃ©m ÃºdolÃ­ zaÃºtoÄili skÅ™eti!";
 };
 func int DIA_Andre_BerichtTorAuf_Condition ()
 {	
@@ -2022,8 +2022,8 @@ func int DIA_Andre_BerichtTorAuf_Condition ()
 };
 func void DIA_Andre_BerichtTorAuf_Info ()
 {
-	AI_Output (other, self,"DIA_Andre_Add_15_16"); //Na hrad v Hornickém údolí zaútoèili skøeti!
-	AI_Output (self ,other,"DIA_Andre_Add_08_09"); //Ne! O tom se musí dozvìdìt lord Hagen.
+	AI_Output (other, self,"DIA_Andre_Add_15_16"); //Na hrad v HornickÃ©m ÃºdolÃ­ zaÃºtoÄili skÅ™eti!
+	AI_Output (self ,other,"DIA_Andre_Add_08_09"); //Ne! O tom se musÃ­ dozvÄ›dÄ›t lord Hagen.
 	B_Andre_GotoLordHagen();
 };
 

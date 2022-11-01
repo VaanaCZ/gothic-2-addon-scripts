@@ -22,7 +22,7 @@ FUNC VOID DIA_Wegelagerer_EXIT_Info()
 // 				  	Guard_Passage - First Warn
 // ************************************************************
 // ------------------------------------------------------------
-	const string BDT_1020_Wegelagerer_Checkpoint		= "NW_TROLLAREA_PATH_46"; //Die Br¸cke
+	const string BDT_1020_Wegelagerer_Checkpoint		= "NW_TROLLAREA_PATH_46"; //Die Br√ºcke
 // ------------------------------------------------------------
 instance DIA_BDT_1020_Wegelagerer_FirstWarn (C_INFO)
 {
@@ -44,76 +44,76 @@ func int DIA_BDT_1020_Wegelagerer_FirstWarn_Condition()
 };
 func void DIA_BDT_1020_Wegelagerer_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_00"); //Hej ty, st˘j!
-	AI_Output (other, self,"DIA_BDT_1020_Wegelagerer_FirstWarn_15_01"); //Co chceö?
-	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_02"); //Jestli nechceö, abych ti nÏjakou nat·hnul, mÏl bys nÏkolik mincÌ ze svojÌ kapsy p¯esunout do t˝ m˝. A pronto!
+	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_00"); //Hej ty, st≈Øj!
+	AI_Output (other, self,"DIA_BDT_1020_Wegelagerer_FirstWarn_15_01"); //Co chce≈°?
+	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_02"); //Jestli nechce≈°, abych ti nƒõjakou nat√°hnul, mƒõl bys nƒõkolik minc√≠ ze svoj√≠ kapsy p≈ôesunout do t√Ω m√Ω. A pronto!
 	
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP(other,BDT_1020_Wegelagerer_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
 	
  	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
- 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Kolik chceö?",DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch);
- 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"To si dÏl·ö srandu.",DIA_BDT_1020_Wegelagerer_FirstWarn_Joke);
+ 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Kolik chce≈°?",DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch);
+ 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"To si dƒõl√°≈° srandu.",DIA_BDT_1020_Wegelagerer_FirstWarn_Joke);
  	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Z cesty!",DIA_BDT_1020_Wegelagerer_PissOff);
 	
 	if (MIS_SCHNITZELJAGD == LOG_RUNNING)
 	{
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"ÿekni, nevidÏl jsi novice?",DIA_BDT_1020_Wegelagerer_AGON);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"≈òekni, nevidƒõl jsi novice?",DIA_BDT_1020_Wegelagerer_AGON);
 	};
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_AGON ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_AGON_15_00"); //ÿekni, nevidÏl jsi novice?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_01"); //(zmatenÏ) Ehm - co? Hmm... (p¯em˝ölÌ) Jo, to by mohlo b˝t.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_02"); //Dej mi 20 zlat˝ch a j· ti to povÌm!
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_AGON_15_00"); //≈òekni, nevidƒõl jsi novice?
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_01"); //(zmatenƒõ) Ehm - co? Hmm... (p≈ôem√Ω≈°l√≠) Jo, to by mohlo b√Ωt.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_02"); //Dej mi 20 zlat√Ωch a j√° ti to pov√≠m!
 
 	Wegelagerer_Surprise = TRUE;
 
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{ 
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Dobr·, dobr·, tady jsou ty prachy.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Dobr√°, dobr√°, tady jsou ty prachy.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"PromiÚ, nem·m û·dnÈ penÌze.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Promi≈à, nem√°m ≈æ√°dn√© pen√≠ze.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Jdi mi z cesty.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_15_00"); //Kolik chceö?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_06_01"); //(smÏje se) 20 zlat˝ch a m˘ûeme bejt k·moöi.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_15_00"); //Kolik chce≈°?
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_06_01"); //(smƒõje se) 20 zlat√Ωch a m≈Ø≈æeme bejt k√°mo≈°i.
 	
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
 	
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{ 
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Dobr·, dobr·, tady jsou ty prachy.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Dobr√°, dobr√°, tady jsou ty prachy.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"PromiÚ, nem·m û·dnÈ penÌze.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Promi≈à, nem√°m ≈æ√°dn√© pen√≠ze.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Jdi mi z cesty.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
 		
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Joke ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_15_00"); //To si dÏl·ö srandu.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_01"); //Vypad·m na to?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_02"); //Pokud neuvidÌm 20 zlat˝ch, staËÌ udÏlat jedinej krok navÌc a...
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_03"); //V tom p¯ÌpadÏ tÏ sejmu. Tak uû ty prachy naval.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_15_00"); //To si dƒõl√°≈° srandu.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_01"); //Vypad√°m na to?
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_02"); //Pokud neuvid√≠m 20 zlat√Ωch, staƒç√≠ udƒõlat jedinej krok nav√≠c a...
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_03"); //V tom p≈ô√≠padƒõ tƒõ sejmu. Tak u≈æ ty prachy naval.
 	
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
 	
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{ 
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Dobr·, dobr·, tady jsou ty prachy.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Dobr√°, dobr√°, tady jsou ty prachy.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"PromiÚ, nem·m û·dnÈ penÌze.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Promi≈à, nem√°m ≈æ√°dn√© pen√≠ze.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
 	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Jdi mi z cesty.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
 	
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_PissOff ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_PissOff_15_00"); //Z cesty!
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_01"); //Ty m·ö ale velkou hubu na tak vychrtl˝ho zaprcatÏl˝ho chl·pka.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_02"); //Uû je naËase, abych ti ji zav¯el.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_01"); //Ty m√°≈° ale velkou hubu na tak vychrtl√Ωho zaprcatƒõl√Ωho chl√°pka.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_02"); //U≈æ je naƒçase, abych ti ji zav≈ôel.
 	
 	AI_StopProcessInfos (self);
 	
@@ -121,16 +121,16 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_PissOff ()
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_15_00"); //Dobr·, dobr·, tady jsou ty prachy.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_15_00"); //Dobr√°, dobr√°, tady jsou ty prachy.
 	
 	if (Wegelagerer_Surprise == FALSE)
 	{
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_01"); //(jÌzlivÏ) ÿÌkal jsem si, ûe 20 zlat˝ch nenÌ tak velk· cena za tv˘j ûivot. M˘ûeö projÌt.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_01"); //(j√≠zlivƒõ) ≈ò√≠kal jsem si, ≈æe 20 zlat√Ωch nen√≠ tak velk√° cena za tv≈Øj ≈æivot. M≈Ø≈æe≈° proj√≠t.
 	};
 	if (Wegelagerer_Surprise == TRUE)
 	{
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_02"); //Fajn, tak ten novic tudy proöel p¯ed necelou hodinou.
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_03"); //MÏl docela naspÏch. Celou dobu se ohlÌûel. A teÔ se zdejchni.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_02"); //Fajn, tak ten novic tudy pro≈°el p≈ôed necelou hodinou.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_03"); //Mƒõl docela naspƒõch. Celou dobu se ohl√≠≈æel. A teƒè se zdejchni.
 	};
 	B_GiveInvItems (other,self ,itmi_gold,20);
 	self.aivar[AIV_PASSGATE]						= TRUE;
@@ -139,20 +139,20 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney ()
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_15_00"); //PromiÚ, nem·m û·dnÈ penÌze.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_01"); //Jo, jsou to teÔ zl˝ Ëasy, co.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_15_00"); //Promi≈à, nem√°m ≈æ√°dn√© pen√≠ze.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_01"); //Jo, jsou to teƒè zl√Ω ƒçasy, co.
 	
 	if Npc_HasEquippedMeleeWeapon (other)
 	{
-		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_02"); //Ale nÏco ti povÌm - dej mi svou zbraÚ. Pak tÏ nech·m projÌt.
+		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_02"); //Ale nƒõco ti pov√≠m - dej mi svou zbra≈à. Pak tƒõ nech√°m proj√≠t.
 	
 		Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"ZapomeÚ na to.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon);
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Tady, vezmi si mou zbraÚ.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Zapome≈à na to.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Tady, vezmi si mou zbra≈à.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_03"); //J· ti ¯eknu co: vraù se, aû budeö mÌt nÏjak˝ penÌze. é·dn˝ prachy, û·dnej most.
+		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_03"); //J√° ti ≈ôeknu co: vra≈• se, a≈æ bude≈° m√≠t nƒõjak√Ω pen√≠ze. ≈Ω√°dn√Ω prachy, ≈æ√°dnej most.
 		
 		self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
 		AI_StopProcessInfos (self);
@@ -162,26 +162,26 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney ()
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Never ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_Never_15_00"); //Jdi mi z cesty.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Never_06_01"); //Takûe ty to chceö tÌm tÏûöÌm zp˘sobem?
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Never_06_01"); //Tak≈æe ty to chce≈° t√≠m tƒõ≈æ≈°√≠m zp≈Øsobem?
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_15_00"); //ZapomeÚ na to.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_06_01"); //Dobr·, tak teda tvrdÏ.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_15_00"); //Zapome≈à na to.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_06_01"); //Dobr√°, tak teda tvrdƒõ.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_15_00"); //Tady, vezmi si mou zbraÚ.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_15_00"); //Tady, vezmi si mou zbra≈à.
 	
 	AI_DrawWeapon (other);
 	
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_06_01"); // Nech tu zbraÚ na pokoji. Jen poËkej!
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_06_01"); // Nech tu zbra≈à na pokoji. Jen poƒçkej!
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -211,14 +211,14 @@ FUNC INT DIA_BDT_1020_Wegelagerer_SecondWarn_Condition()
 };
 func void DIA_BDT_1020_Wegelagerer_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_SecondWarn_06_00"); //V·ûnÏ chceö jeötÏ dostat öanci? Je to tvoje pr·vo.
+	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_SecondWarn_06_00"); //V√°≈ænƒõ chce≈° je≈°tƒõ dostat ≈°anci? Je to tvoje pr√°vo.
 	
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_SecondWarn);
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_SecondWarn,"Tady jsou penÌze.",DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_SecondWarn,"Tady jsou pen√≠ze.",DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_SecondWarn,"Ned·m ti ani tronÌk.",DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_SecondWarn,"Ned√°m ti ani tron√≠k.",DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney);
 	
 	
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,BDT_1020_Wegelagerer_Checkpoint);
@@ -228,8 +228,8 @@ func void DIA_BDT_1020_Wegelagerer_SecondWarn_Info()
 FUNC VOID DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney ()
 {
 	
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney_15_00"); //Tady jsou penÌze.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney_06_01"); //¡, ono uû se s tebou d· mluvit.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney_15_00"); //Tady jsou pen√≠ze.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney_06_01"); //√Å, ono u≈æ se s tebou d√° mluvit.
 	
 	B_GiveInvItems (other,self ,itmi_gold,20);
 	self.aivar[AIV_PASSGATE]						= TRUE;
@@ -237,8 +237,8 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_SecondWarn_GiveMoney ()
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney_15_00"); //Ned·m ti ani mÏÔ·k.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney_06_01"); //Tak si ho vezmu s·m.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney_15_00"); //Ned√°m ti ani mƒõƒè√°k.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_SecondWarn_NoMoney_06_01"); //Tak si ho vezmu s√°m.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self ,other,AR_NONE, 1);
@@ -273,7 +273,7 @@ func void DIA_BDT_1020_Wegelagerer_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	
 	B_Attack (self, other, AR_NONE, 1);
 };

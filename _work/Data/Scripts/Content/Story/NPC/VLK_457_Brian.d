@@ -19,7 +19,7 @@ instance VLK_457_Brian (Npc_Default)
 	EquipItem	(self, ItMw_1h_VLK_Axe); 
 		
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Fighter", Face_B_Normal_Kirgo, BodyTex_B,ITAR_SMITH);	

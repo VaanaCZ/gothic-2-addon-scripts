@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_7_JOIN(C_INFO)
 	condition	= DIA_SLD_7_JOIN_Condition;
 	information	= DIA_SLD_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Rád bych se k vám pøidal!";
+	description = "RÃ¡d bych se k vÃ¡m pÅ™idal!";
 };                       
 
 FUNC INT DIA_SLD_7_JOIN_Condition()
@@ -42,18 +42,18 @@ FUNC INT DIA_SLD_7_JOIN_Condition()
 
 FUNC VOID DIA_SLD_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //Rád bych se k vám pøidal!
+	AI_Output (other, self, "DIA_SLD_7_JOIN_15_00"); //RÃ¡d bych se k vÃ¡m pÅ™idal!
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_01"); //Slyšel jsem, žes to nandal domobranì. Nìkdo jako ty se nám tu mùže jen hodit!
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_01"); //SlyÅ¡el jsem, Å¾es to nandal domobranÄ›. NÄ›kdo jako ty se nÃ¡m tu mÅ¯Å¾e jen hodit!
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_02"); //Nedokážu si pøedstavit, co je na vybírání daní od nìkolika farmáøù tak složitého, ale když si to Onar pøeje, já nebudu proti.
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_02"); //NedokÃ¡Å¾u si pÅ™edstavit, co je na vybÃ­rÃ¡nÃ­ danÃ­ od nÄ›kolika farmÃ¡Å™Å¯ tak sloÅ¾itÃ©ho, ale kdyÅ¾ si to Onar pÅ™eje, jÃ¡ nebudu proti.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_SLD_7_JOIN_07_03"); //Ty? Hned jak tì Torlof podrobí zkoušce, budeš hotovej, ty bimbasi!
+		AI_Output (self, other, "DIA_SLD_7_JOIN_07_03"); //Ty? Hned jak tÄ› Torlof podrobÃ­ zkouÅ¡ce, budeÅ¡ hotovej, ty bimbasi!
 	};
 };
 
@@ -66,7 +66,7 @@ INSTANCE DIA_SLD_7_PEOPLE(C_INFO)
 	condition	= DIA_SLD_7_PEOPLE_Condition;
 	information	= DIA_SLD_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tady tomu velí?";
+	description = "Kdo tady tomu velÃ­?";
 };                       
 
 FUNC INT DIA_SLD_7_PEOPLE_Condition()
@@ -76,11 +76,11 @@ FUNC INT DIA_SLD_7_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Kdo tady tomu velí?
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee je náš šéf. Torlof je jeho pravá ruka. Vìtšina lidí ho poslouchá, protože jim velel ještì v kolonii.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //A pak je tu Sylvio. Pøišel z hor potom, co sem dorazil Lee.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //On se svými lidmi pøedstavuje jen malou skupinku žoldnéøù - a dìlají jen samé problémy. Jedou na vlastní pìst.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //A Sylvio je mizernej zkurvysyn - dej si na nìj bacha.
+	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Kdo tady tomu velÃ­?
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee je nÃ¡Å¡ Å¡Ã©f. Torlof je jeho pravÃ¡ ruka. VÄ›tÅ¡ina lidÃ­ ho poslouchÃ¡, protoÅ¾e jim velel jeÅ¡tÄ› v kolonii.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //A pak je tu Sylvio. PÅ™iÅ¡el z hor potom, co sem dorazil Lee.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //On se svÃ½mi lidmi pÅ™edstavuje jen malou skupinku Å¾oldnÃ©Å™Å¯ - a dÄ›lajÃ­ jen samÃ© problÃ©my. Jedou na vlastnÃ­ pÄ›st.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //A Sylvio je mizernej zkurvysyn - dej si na nÄ›j bacha.
 };
 
 // *************************************************************************
@@ -92,7 +92,7 @@ INSTANCE DIA_SLD_7_LOCATION(C_INFO)
 	condition	= DIA_SLD_7_LOCATION_Condition;
 	information	= DIA_SLD_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Povìz mi nìco o tomhle statku.";
+	description = "PovÄ›z mi nÄ›co o tomhle statku.";
 };                       
 
 FUNC INT DIA_SLD_7_LOCATION_Condition()
@@ -102,12 +102,12 @@ FUNC INT DIA_SLD_7_LOCATION_Condition()
 
 FUNC VOID DIA_SLD_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Øekni mi nìco o farmì.
-	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Onar si nás najal, abychom bránili jeho majetek.
+	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Å˜ekni mi nÄ›co o farmÄ›.
+	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Onar si nÃ¡s najal, abychom brÃ¡nili jeho majetek.
 	if (other.guild != GIL_SLD)
 	&& (other.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Tak si radìj poøádnì rozmysli, než budeš chtít nìco ukrást nebo napadnout farmáøe. Jinak si to budeš muset nejdøív vyøíkat s námi.
+		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Tak si radÄ›j poÅ™Ã¡dnÄ› rozmysli, neÅ¾ budeÅ¡ chtÃ­t nÄ›co ukrÃ¡st nebo napadnout farmÃ¡Å™e. Jinak si to budeÅ¡ muset nejdÅ™Ã­v vyÅ™Ã­kat s nÃ¡mi.
 	};
 };
 
@@ -120,7 +120,7 @@ INSTANCE DIA_SLD_7_STANDARD(C_INFO)
 	condition	= DIA_SLD_7_STANDARD_Condition;
 	information	= DIA_SLD_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_SLD_7_STANDARD_Condition()
 {
@@ -128,7 +128,7 @@ func INT DIA_SLD_7_STANDARD_Condition()
 };
 FUNC VOID DIA_SLD_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_SLD_7_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel <= 2)
 	{
@@ -136,23 +136,23 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_01"); //Od tý doby, co ses k nám pøidal, je tu klid - žádná domobrana.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_01"); //Od tÃ½ doby, co ses k nÃ¡m pÅ™idal, je tu klid - Å¾Ã¡dnÃ¡ domobrana.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_02"); //Nic moc, alespoò tady. Ale zeptej se ve mìstì, mám dojem, že jim došel dlabanec. (smích)
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_02"); //Nic moc, alespoÅˆ tady. Ale zeptej se ve mÄ›stÄ›, mÃ¡m dojem, Å¾e jim doÅ¡el dlabanec. (smÃ­ch)
 			};
 		}
 		else
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //Draci v Hornickém údolí! Nechtìl bych teï být v kùži paladinù.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //Hádám, že král lordu Hagenovi asi nakope zadek, když se mu kvùli drakùm vrátí s prázdnejma rukama.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //Draci v HornickÃ©m ÃºdolÃ­! NechtÄ›l bych teÄ bÃ½t v kÅ¯Å¾i paladinÅ¯.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //HÃ¡dÃ¡m, Å¾e krÃ¡l lordu Hagenovi asi nakope zadek, kdyÅ¾ se mu kvÅ¯li drakÅ¯m vrÃ¡tÃ­ s prÃ¡zdnejma rukama.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //Tvoji paladinové si nevìdí s draky rady? Takoví kašpaøi - boj je práce pro opravdový chlapy.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //Tvoji paladinovÃ© si nevÄ›dÃ­ s draky rady? TakovÃ­ kaÅ¡paÅ™i - boj je prÃ¡ce pro opravdovÃ½ chlapy.
 			};
 		};	
 	};
@@ -164,12 +164,12 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //V té vìci s Bennetem ses zachoval víc než férovì. Sylvio se teï mùže vzteknout. Nejradši by vrazil do mìsta a rozmlátil to tam na kousky.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //Vždycky chtìl Leeho zatlaèit do kouta, a Bennet se mu výbornì hodil.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //V tÃ© vÄ›ci s Bennetem ses zachoval vÃ­c neÅ¾ fÃ©rovÄ›. Sylvio se teÄ mÅ¯Å¾e vzteknout. NejradÅ¡i by vrazil do mÄ›sta a rozmlÃ¡til to tam na kousky.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //VÅ¾dycky chtÄ›l Leeho zatlaÄit do kouta, a Bennet se mu vÃ½bornÄ› hodil.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Nevím, proè jsi pomohl Bennetovi, ale vìø mi, že pro mìsto je to tak lepší.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //NevÃ­m, proÄ jsi pomohl Bennetovi, ale vÄ›Å™ mi, Å¾e pro mÄ›sto je to tak lepÅ¡Ã­.
 			};
 		}
 		else
@@ -177,11 +177,11 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //Ta vìc s Bennetem je smùla. Možná jsme pøece jen mìli Sylvia poslechnout a napadnout mìsto.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //Ta vÄ›c s Bennetem je smÅ¯la. MoÅ¾nÃ¡ jsme pÅ™ece jen mÄ›li Sylvia poslechnout a napadnout mÄ›sto.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_10"); //Co máš v plánu s Bennetem? Jasnì, já to vlastnì radši ani nechci vìdìt. Už brzy ti dojde, k èemu to povede.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_10"); //Co mÃ¡Å¡ v plÃ¡nu s Bennetem? JasnÄ›, jÃ¡ to vlastnÄ› radÅ¡i ani nechci vÄ›dÄ›t. UÅ¾ brzy ti dojde, k Äemu to povede.
 			};
 		};		
 	};
@@ -190,19 +190,19 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_11"); //Mìl jsem dojem, žes mìl taky namíøeno do údolí. Spoleènì se Sylviem.
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_12"); //Nikdo z nás nechce ani pomyslet na to, že by Sylvio zùstal v údolí. Nikdy!
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_11"); //MÄ›l jsem dojem, Å¾es mÄ›l taky namÃ­Å™eno do ÃºdolÃ­. SpoleÄnÄ› se Sylviem.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_12"); //Nikdo z nÃ¡s nechce ani pomyslet na to, Å¾e by Sylvio zÅ¯stal v ÃºdolÃ­. Nikdy!
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //To je od tebe docela odvaha, ukázat se tady úplnì sám.
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Ale dokud se nebudeš pokoušet vybírat žádné danì, je mi to jedno.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //To je od tebe docela odvaha, ukÃ¡zat se tady ÃºplnÄ› sÃ¡m.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Ale dokud se nebudeÅ¡ pokouÅ¡et vybÃ­rat Å¾Ã¡dnÃ© danÄ›, je mi to jedno.
 		};
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Hochu, už to nemùžu dýl vydržet. Ovce, pastviny a stromy. Chci se odsud dostat.
+		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Hochu, uÅ¾ to nemÅ¯Å¾u dÃ½l vydrÅ¾et. Ovce, pastviny a stromy. Chci se odsud dostat.
 	};
 };
 

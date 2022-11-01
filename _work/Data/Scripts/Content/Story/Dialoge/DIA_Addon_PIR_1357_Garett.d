@@ -77,10 +77,10 @@ FUNC INT DIA_Addon_Garett_Anheuern_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Anheuern_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_00"); //A tì ani nenapadne, e by ses chtìl pøidat k našemu oddílu.
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_01"); //Co si myslíš, e budou ostatní dìlat, a budu pryè, co?
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_02"); //A se vrátím, nezbude v mı chajdì ani jediná bedna!
-	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_03"); //Take tu radši zùstanu a budu hlídat naše zásoby.
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_00"); //AÅ¥ tÄ› ani nenapadne, Å¾e by ses chtÄ›l pÅ™idat k naÅ¡emu oddÃ­lu.
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_01"); //Co si myslÃ­Å¡, Å¾e budou ostatnÃ­ dÄ›lat, aÅ¾ budu pryÄ, co?
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_02"); //AÅ¾ se vrÃ¡tÃ­m, nezbude v mÃ½ chajdÄ› ani jedinÃ¡ bedna!
+	AI_Output (self,other,"DIA_Addon_Garett_Anheuern_09_03"); //TakÅ¾e tu radÅ¡i zÅ¯stanu a budu hlÃ­dat naÅ¡e zÃ¡soby.
 };
 
 // ************************************************************
@@ -106,10 +106,10 @@ FUNC INT DIA_Addon_Garett_Hello_Condition()
 };
 FUNC VOID DIA_Addon_Garett_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_00"); //A hele, kohopak to tu máme? Nìkdo novej, a doufám, e nepatøí k tìm zatrolenejm banditùm.
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_01"); //Jsem Garett. Kdy budeš nìco potøebovat, jsem ten pravej.
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_02"); //Mám na skladì skoro všecko – víno, zbranì a spoustu dalších vìcí, kterı by se ti mohly hodit.
-	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_03"); //Kromì koøalky – pro pití musíš zajít za Samuelem.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_00"); //A hele, kohopak to tu mÃ¡me? NÄ›kdo novej, a doufÃ¡m, Å¾e nepatÅ™Ã­ k tÄ›m zatrolenejm banditÅ¯m.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_01"); //Jsem Garett. KdyÅ¾ budeÅ¡ nÄ›co potÅ™ebovat, jsem ten pravej.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_02"); //MÃ¡m na skladÄ› skoro vÅ¡ecko â€“ vÃ­no, zbranÄ› a spoustu dalÅ¡Ã­ch vÄ›cÃ­, kterÃ½ by se ti mohly hodit.
+	AI_Output (self,other,"DIA_Addon_Garett_Hello_09_03"); //KromÄ› koÅ™alky â€“ pro pitÃ­ musÃ­Å¡ zajÃ­t za Samuelem.
 
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_GarettTrade);
@@ -139,11 +139,11 @@ FUNC INT DIA_Addon_Garett_Samuel_Condition()
 FUNC VOID DIA_Addon_Garett_Samuel_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Garett_Samuel_15_00"); //Kdo je Samuel?
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_01"); //Náš paliè. ije v jeskyni na plái, kousek dál od tábora.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_02"); //Nemùeš to minout – staèí jít na sever.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_03"); //Hlavnì by ses mìl zásobit koøalkou.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_04"); //Jsou tu lidi, co si moc nepotrpí na zelenáèe, abych tak øek.
-	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_05"); //Poøádnej doušek koøalky dokáe zázraky!
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_01"); //NÃ¡Å¡ paliÄ. Å½ije v jeskyni na plÃ¡Å¾i, kousek dÃ¡l od tÃ¡bora.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_02"); //NemÅ¯Å¾eÅ¡ to minout â€“ staÄÃ­ jÃ­t na sever.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_03"); //HlavnÄ› by ses mÄ›l zÃ¡sobit koÅ™alkou.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_04"); //Jsou tu lidi, co si moc nepotrpÃ­ na zelenÃ¡Äe, abych tak Å™ek.
+	AI_Output (self,other,"DIA_Addon_Garett_Samuel_09_05"); //PoÅ™Ã¡dnej douÅ¡ek koÅ™alky dokÃ¡Å¾e zÃ¡zraky!
 
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_SamuelTrade);
 };
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Garett_Warez(C_INFO)
 	condition	= DIA_Addon_Garett_Warez_Condition;
 	information	= DIA_Addon_Garett_Warez_Info;
 
-	description = "Odkud bereš zásoby?";
+	description = "Odkud bereÅ¡ zÃ¡soby?";
 };                       
 FUNC INT DIA_Addon_Garett_Warez_Condition()
 {
@@ -166,10 +166,10 @@ FUNC INT DIA_Addon_Garett_Warez_Condition()
 };
 func VOID DIA_Addon_Garett_Warez_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Warez_15_00"); //Kde jsi své zásoby získal?
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_01"); //Kdy Skip jede do Khorinidu, vdycky pøiveze hromadu zásob.
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_02"); //Donedávna èást prodával pøímo banditùm.
-	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_03"); //Ale od tı doby, co s nima válèíme, chodí všecko zboí mnì.
+	AI_Output (other,self,"DIA_Addon_Garett_Warez_15_00"); //Kde jsi svÃ© zÃ¡soby zÃ­skal?
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_01"); //KdyÅ¾ Skip jede do Khorinidu, vÅ¾dycky pÅ™iveze hromadu zÃ¡sob.
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_02"); //DonedÃ¡vna ÄÃ¡st prodÃ¡val pÅ™Ã­mo banditÅ¯m.
+	AI_Output (self,other,"DIA_Addon_Garett_Warez_09_03"); //Ale od tÃ½ doby, co s nima vÃ¡lÄÃ­me, chodÃ­ vÅ¡ecko zboÅ¾Ã­ mnÄ›.
 };
 
 // ************************************************************
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Garett_Bandits(C_INFO)
 	condition	= DIA_Addon_Garett_Bandits_Condition;
 	information	= DIA_Addon_Garett_Bandits_Info;
 
-	description = "Co víš o banditech?";
+	description = "Co vÃ­Å¡ o banditech?";
 };                       
 FUNC INT DIA_Addon_Garett_Bandits_Condition()
 {
@@ -193,10 +193,10 @@ FUNC INT DIA_Addon_Garett_Bandits_Condition()
 };
 func VOID DIA_Addon_Garett_Bandits_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Bandits_15_00"); //Co víš o banditech?
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_01"); //Na to se radši zeptej Skipa.
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_02"); //Ten s tou bandou strávil spoustu èasu, to ti povím.
-	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_03"); //Greg nám nakázal, abysme oddìlali kadıho banditu, kterej se ukáe poblí tábora.
+	AI_Output (other,self,"DIA_Addon_Garett_Bandits_15_00"); //Co vÃ­Å¡ o banditech?
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_01"); //Na to se radÅ¡i zeptej Skipa.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_02"); //Ten s tou bandou strÃ¡vil spoustu Äasu, to ti povÃ­m.
+	AI_Output (self,other,"DIA_Addon_Garett_Bandits_09_03"); //Greg nÃ¡m nakÃ¡zal, abysme oddÄ›lali kaÅ¾dÃ½ho banditu, kterej se ukÃ¡Å¾e poblÃ­Å¾ tÃ¡bora.
 };
 
 
@@ -216,7 +216,7 @@ INSTANCE DIA_Addon_Garett_Greg(C_INFO)
 	condition	= DIA_Addon_Garett_Greg_Condition;
 	information	= DIA_Addon_Garett_Greg_Info;
 	permanent	= FALSE;
-	description = "Jakı je ten tvùj kapitán Greg?";
+	description = "JakÃ½ je ten tvÅ¯j kapitÃ¡n Greg?";
 };                       
 FUNC INT DIA_Addon_Garett_Greg_Condition ()
 {
@@ -225,14 +225,14 @@ FUNC INT DIA_Addon_Garett_Greg_Condition ()
 
 FUNC VOID DIA_Addon_Garett_Greg_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Garett_Greg_15_00"); //Jakı je ten váš kapitán Greg?
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_01"); //Je to ošlehanej moøskej vlk, vo tom není pochyb.
+	AI_Output (other, self, "DIA_Addon_Garett_Greg_15_00"); //JakÃ½ je ten vÃ¡Å¡ kapitÃ¡n Greg?
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_01"); //Je to oÅ¡lehanej moÅ™skej vlk, vo tom nenÃ­ pochyb.
 	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_02"); //A taky hrabivost sama.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_03"); //Nutí svıho pokladníka Francise vybírat tolik, e ještì pár grošù navíc a mìl by na krku vzpouru.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_04"); //A kdy nìkdo z nás narazí na nìco FAKT cennıho, nekompromisnì si to zabaví pro sebe.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_05"); //Jednou jsem na jednı královskı fregatì èmajznul kompas.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_06"); //A ten šmejd Greg mì pochopitelnì donutil, abych mu ho dal.
-	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_07"); //Pche! Nejspíš ho nìkde zakopal, i se svejma ostatníma pokladama.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_03"); //NutÃ­ svÃ½ho pokladnÃ­ka Francise vybÃ­rat tolik, Å¾e jeÅ¡tÄ› pÃ¡r groÅ¡Å¯ navÃ­c a mÄ›l by na krku vzpouru.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_04"); //A kdyÅ¾ nÄ›kdo z nÃ¡s narazÃ­ na nÄ›co FAKT cennÃ½ho, nekompromisnÄ› si to zabavÃ­ pro sebe.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_05"); //Jednou jsem na jednÃ½ krÃ¡lovskÃ½ fregatÄ› Ämajznul kompas.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_06"); //A ten Å¡mejd Greg mÄ› pochopitelnÄ› donutil, abych mu ho dal.
+	AI_Output (self, other, "DIA_Addon_Garett_Greg_09_07"); //Pche! NejspÃ­Å¡ ho nÄ›kde zakopal, i se svejma ostatnÃ­ma pokladama.
 };
 
 // ------------------------------------------------------------
@@ -258,17 +258,17 @@ FUNC INT DIA_Addon_Garett_Tips_Condition()
 FUNC VOID DIA_Addon_Garett_Tips_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_00"); //Kam Greg mohl ten kompas zakopat?
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_01"); //Jednou mi vyprávìl, e mùj kompas hlídá samotná smrt. A pak sa smál.
-	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_02"); //Ještì nìco?
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_03"); //Na jiním pobøeí je plá, kam se dá dostat jedinì z moøe.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_04"); //Greg tam prı èasto pobıvá. Moná tam nìco najdeš.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_05"); //Jednou jsem se tam šel mrknout, jako e bych tøeba nìco našel sám. Jene se to tem hemí všelijakejma potvorama.
-	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_06"); //Jestli to chceš vánì zkusit, nezapomeò si vzít krumpáè.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_01"); //Jednou mi vyprÃ¡vÄ›l, Å¾e mÅ¯j kompas hlÃ­dÃ¡ samotnÃ¡ smrt. A pak sa smÃ¡l.
+	AI_Output (other,self,"DIA_Addon_Garett_Tips_15_02"); //JeÅ¡tÄ› nÄ›co?
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_03"); //Na jiÅ¾nÃ­m pobÅ™eÅ¾Ã­ je plÃ¡Å¾, kam se dÃ¡ dostat jedinÄ› z moÅ™e.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_04"); //Greg tam prÃ½ Äasto pobÃ½vÃ¡. MoÅ¾nÃ¡ tam nÄ›co najdeÅ¡.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_05"); //Jednou jsem se tam Å¡el mrknout, jako Å¾e bych tÅ™eba nÄ›co naÅ¡el sÃ¡m. JenÅ¾e se to tem hemÅ¾Ã­ vÅ¡elijakejma potvorama.
+	AI_Output (self,other,"DIA_Addon_Garett_Tips_09_06"); //Jestli to chceÅ¡ vÃ¡Å¾nÄ› zkusit, nezapomeÅˆ si vzÃ­t krumpÃ¡Ä.
 	MIS_Addon_Garett_BringKompass = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_Kompass,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_Kompass,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Kompass,"Greg ukradl Garretovi vzácnı kompas a zakopal ho kdesi na jiní plái.");
+	B_LogEntry (TOPIC_Addon_Kompass,"Greg ukradl Garretovi vzÃ¡cnÃ½ kompas a zakopal ho kdesi na jiÅ¾nÃ­ plÃ¡Å¾i.");
 };
 
 // ------------------------------------------------------------
@@ -281,7 +281,7 @@ INSTANCE DIA_Addon_Garett_GiveKompass(C_INFO)
 	condition	= DIA_Addon_Garett_GiveKompass_Condition;
 	information	= DIA_Addon_Garett_GiveKompass_Info;
 	permanent	= FALSE;
-	description = "Tady máš ten kompas.";
+	description = "Tady mÃ¡Å¡ ten kompas.";
 };                       
 FUNC INT DIA_Addon_Garett_GiveKompass_Condition()
 {
@@ -293,30 +293,30 @@ FUNC INT DIA_Addon_Garett_GiveKompass_Condition()
 };
 FUNC VOID DIA_Addon_Garett_GiveKompass_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_GiveKompass_15_00"); //Tady máš ten svùj kompas.
+	AI_Output (other,self,"DIA_Addon_Garett_GiveKompass_15_00"); //Tady mÃ¡Å¡ ten svÅ¯j kompas.
 	
-	//Patch m.f. - weil Händler
+	//Patch m.f. - weil HÃ¤ndler
 	if B_GiveInvItems (other,self,ItMI_Addon_Kompass_Mis,1)
 	{
 		Npc_RemoveInvItems (self, ItMI_Addon_Kompass_Mis,1);
 	};
-	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_01"); //(šastnì) Jo, to je on! U jsem nedoufal, e ho znova uvidím.
-	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_02"); //Díky, chlape!
+	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_01"); //(Å¡Å¥astnÄ›) Jo, to je on! UÅ¾ jsem nedoufal, Å¾e ho znova uvidÃ­m.
+	AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_02"); //DÃ­ky, chlape!
 	
 	if (Npc_HasItems (self, ItBE_Addon_Prot_EdgPoi) > 0)
 	{ 
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_03"); //Tentokrát u ho Greg nedostane!
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_04"); //Tumáš, vem si na oplátku tenhle opasek. Je to nejcennìjší, co mám.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_03"); //TentokrÃ¡t uÅ¾ ho Greg nedostane!
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_04"); //TumÃ¡Å¡, vem si na oplÃ¡tku tenhle opasek. Je to nejcennÄ›jÅ¡Ã­, co mÃ¡m.
 		B_GiveInvItems (self, other, ItBE_Addon_Prot_EdgPoi, 1);
 	}
 	else if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_05"); //Tenhle pásek si ode mì koupil, pamatuješ?
-		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_06"); //A zaplatils za nìj spoustu penìz – (rychle) víc, ne za kolik stál. Tak si vem aspoò zpátky svı zlato.
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_05"); //Tenhle pÃ¡sek si ode mÄ› koupil, pamatujeÅ¡?
+		AI_Output (self,other,"DIA_Addon_Garett_GiveKompass_09_06"); //A zaplatils za nÄ›j spoustu penÄ›z â€“ (rychle) vÃ­c, neÅ¾ za kolik stÃ¡l. Tak si vem aspoÅˆ zpÃ¡tky svÃ½ zlato.
 		B_GiveInvItems (self, other, itmi_gold, Value_ItBE_Addon_Prot_EdgPoi);
 	};
 	
-	B_LogEntry (TOPIC_Addon_Kompass,"Garret mìl velkou radost, e jsem mu vrátil kompas.");
+	B_LogEntry (TOPIC_Addon_Kompass,"Garret mÄ›l velkou radost, Å¾e jsem mu vrÃ¡til kompas.");
 	MIS_Addon_Garett_BringKompass = LOG_SUCCESS;
 	B_GivePlayerXP (XP_ADDON_Garett_Bring_Kompass);
 };
@@ -331,7 +331,7 @@ INSTANCE DIA_Addon_Garett_Francis(C_INFO)
 	condition	= DIA_Addon_Garett_Francis_Condition;
 	information	= DIA_Addon_Garett_Francis_Info;
 	permanent	= FALSE;
-	description = "Co bys mi øekl o Francisovi?";
+	description = "Co bys mi Å™ekl o Francisovi?";
 };                       
 FUNC INT DIA_Addon_Garett_Francis_Condition()
 {
@@ -343,16 +343,16 @@ FUNC INT DIA_Addon_Garett_Francis_Condition()
 
 FUNC VOID DIA_Addon_Garett_Francis_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Garett_Francis_15_00"); //Co bys mi øekl o Francisovi?
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_01"); //Greg mu pøedal velení, dokud bude pryè.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_02"); //Ale Francis je jako velitel totálnì neschopnej!
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_03"); //Nedonutí ani Morgana, aby zvednul ten svùj línej zadek z postele.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_04"); //Henry a jeho chlapi jsou jediní, kteøí tu nìco dìlaj.
-	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_05"); //Ostatní se místo makání jen válej.
+	AI_Output (other,self,"DIA_Addon_Garett_Francis_15_00"); //Co bys mi Å™ekl o Francisovi?
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_01"); //Greg mu pÅ™edal velenÃ­, dokud bude pryÄ.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_02"); //Ale Francis je jako velitel totÃ¡lnÄ› neschopnej!
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_03"); //NedonutÃ­ ani Morgana, aby zvednul ten svÅ¯j lÃ­nej zadek z postele.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_04"); //Henry a jeho chlapi jsou jedinÃ­, kteÅ™Ã­ tu nÄ›co dÄ›laj.
+	AI_Output (self,other,"DIA_Addon_Garett_Francis_09_05"); //OstatnÃ­ se mÃ­sto makÃ¡nÃ­ jen vÃ¡lej.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_06"); //Mùu jen doufat, e se Greg brzo vrátí.
-		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_07"); //A všecky je poøádnì nakope do prdele.
+		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_06"); //MÅ¯Å¾u jen doufat, Å¾e se Greg brzo vrÃ¡tÃ­.
+		AI_Output (self,other,"DIA_Addon_Garett_Francis_09_07"); //A vÅ¡ecky je poÅ™Ã¡dnÄ› nakope do prdele.
 	};
 };
 
@@ -366,7 +366,7 @@ INSTANCE DIA_Addon_Garett_PERM   (C_INFO)
 	condition   = DIA_Addon_Garett_PERM_Condition;
 	information = DIA_Addon_Garett_PERM_Info;
 	permanent   = TRUE;
-	description = "Nìco nového?";
+	description = "NÄ›co novÃ©ho?";
 };
 FUNC INT DIA_Addon_Garett_PERM_Condition()
 {	
@@ -374,16 +374,16 @@ FUNC INT DIA_Addon_Garett_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Garett_PERM_Info()
 {
-	AI_Output (other,self ,"DIA_Addon_Garett_PERM_15_00"); //Copak je nového?
+	AI_Output (other,self ,"DIA_Addon_Garett_PERM_15_00"); //Copak je novÃ©ho?
 	
 	if (GregIsBack == FALSE)
 	|| (Npc_IsDead(Greg))
 	{
-		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_02"); //Od Gregova odchodu se tu nic moc nedìlo.
+		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_02"); //Od Gregova odchodu se tu nic moc nedÄ›lo.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_01"); //Kdy se teï Greg vrátil, všecko u zase zaèíná jít tak, jak má.
+		AI_Output (self ,other,"DIA_Addon_Garett_PERM_09_01"); //KdyÅ¾ se teÄ Greg vrÃ¡til, vÅ¡ecko uÅ¾ zase zaÄÃ­nÃ¡ jÃ­t tak, jak mÃ¡.
 	};
 };
 

@@ -31,7 +31,7 @@ instance DIA_Randolph_SchwereLuft		(C_INFO)
 	condition	 = 	DIA_Randolph_SchwereLuft_Condition;
 	information	 = 	DIA_Randolph_SchwereLuft_Info;
 	permanent  	 =  FALSE;
-	description	 = 	"Je všechno v poøádku?";
+	description	 = 	"Je vÅ¡echno v poÅ™Ã¡dku?";
 };
 func int DIA_Randolph_SchwereLuft_Condition ()
 {	
@@ -44,14 +44,14 @@ func int DIA_Randolph_SchwereLuft_Condition ()
 };
 func void DIA_Randolph_SchwereLuft_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_00"); //Je všechno v poøádku?
-	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_01"); //Hmm... jakmile tu øekne nìkdo nìco špatnì, zaène tanec... Take si dávej pozor na jazyk, jinak se taky nemusíš doít zítøejšího rána.
-	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_02"); //Budeš taky bojovat?
-	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_03"); //Nebudu tady jenom stát a civìt, a se nìco semele. Ale nehodlám ani nic zaèínat.
+	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_00"); //Je vÅ¡echno v poÅ™Ã¡dku?
+	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_01"); //Hmm... jakmile tu Å™ekne nÄ›kdo nÄ›co Å¡patnÄ›, zaÄne tanec... TakÅ¾e si dÃ¡vej pozor na jazyk, jinak se taky nemusÃ­Å¡ doÅ¾Ã­t zÃ­tÅ™ejÅ¡Ã­ho rÃ¡na.
+	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_02"); //BudeÅ¡ taky bojovat?
+	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_03"); //Nebudu tady jenom stÃ¡t a civÄ›t, aÅ¾ se nÄ›co semele. Ale nehodlÃ¡m ani nic zaÄÃ­nat.
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"Akilùv statek ohroují oldáci."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"AkilÅ¯v statek ohroÅ¾ujÃ­ Å¾oldÃ¡ci."); 
 	B_NpcClearObsessionByDMT (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Randolph_HALLO		(C_INFO)
 	condition	 = 	DIA_Randolph_HALLO_Condition;
 	information	 = 	DIA_Randolph_HALLO_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Je všechno v poøádku?";
+	description	 = 	"Je vÅ¡echno v poÅ™Ã¡dku?";
 };
 
 func int DIA_Randolph_HALLO_Condition ()
@@ -78,21 +78,21 @@ func int DIA_Randolph_HALLO_Condition ()
 };
 func void DIA_Randolph_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_HALLO_15_00"); //Je všechno v poøádku?
+	AI_Output (other, self, "DIA_Randolph_HALLO_15_00"); //Je vÅ¡echno v poÅ™Ã¡dku?
 	
 	if Npc_IsDead (Akil)
 	&& Npc_IsDead (Kati)
 	{
-		AI_Output (self, other, "DIA_Randolph_HALLO_06_01"); //Teï, kdy Kati a Akil odešli do Innosovy øíše, asi zaènu hospodaøit.
+		AI_Output (self, other, "DIA_Randolph_HALLO_06_01"); //TeÄ, kdyÅ¾ Kati a Akil odeÅ¡li do Innosovy Å™Ã­Å¡e, asi zaÄnu hospodaÅ™it.
 		
 		Npc_ExchangeRoutine (self,"START");
 		AI_ContinueRoutine  (self);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Randolph_HALLO_06_02"); //Ano, je mi dobøe. Ten Alvares byl poslední dobou stále drzejší a drzejší. Dobøe, e u je to za námi.
+		AI_Output (self, other, "DIA_Randolph_HALLO_06_02"); //Ano, je mi dobÅ™e. Ten Alvares byl poslednÃ­ dobou stÃ¡le drzejÅ¡Ã­ a drzejÅ¡Ã­. DobÅ™e, Å¾e uÅ¾ je to za nÃ¡mi.
 	};
-	AI_Output (self, other, "DIA_Randolph_HALLO_06_03"); //Co bych zrovna teï potøeboval, je poøádnej odvaz v hospodì.
+	AI_Output (self, other, "DIA_Randolph_HALLO_06_03"); //Co bych zrovna teÄ potÅ™eboval, je poÅ™Ã¡dnej odvaz v hospodÄ›.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -105,7 +105,7 @@ instance DIA_Randolph_Baltram		(C_INFO)
 	condition	 = 	DIA_Randolph_Baltram_Condition;
 	information	 = 	DIA_Randolph_Baltram_Info;
 	permanent  	 =  FALSE;
-	description	 = 	"Posílá mì Baltram.";
+	description	 = 	"PosÃ­lÃ¡ mÄ› Baltram.";
 };
 
 func int DIA_Randolph_Baltram_Condition ()
@@ -123,8 +123,8 @@ func int DIA_Randolph_Baltram_Condition ()
 
 func void DIA_Randolph_Baltram_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_Baltram_15_00"); //Poslal mì Baltram. Mám tu pro nìj vyzvednout nìjakı balík.
-	AI_Output (self, other, "DIA_Randolph_Baltram_06_01"); //Fajn. U jsem všechno pøipravil. Tady je tvùj balík.
+	AI_Output (other, self, "DIA_Randolph_Baltram_15_00"); //Poslal mÄ› Baltram. MÃ¡m tu pro nÄ›j vyzvednout nÄ›jakÃ½ balÃ­k.
+	AI_Output (self, other, "DIA_Randolph_Baltram_06_01"); //Fajn. UÅ¾ jsem vÅ¡echno pÅ™ipravil. Tady je tvÅ¯j balÃ­k.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -140,7 +140,7 @@ instance DIA_Randolph_Geschichte		(C_INFO)
 	condition	 = 	DIA_Randolph_Geschichte_Condition;
 	information	 = 	DIA_Randolph_Geschichte_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Ty nejsi zdejší, viï?";
+	description	 = 	"Ty nejsi zdejÅ¡Ã­, viÄ?";
 };
 
 func int DIA_Randolph_Geschichte_Condition ()
@@ -154,24 +154,24 @@ func int DIA_Randolph_Geschichte_Condition ()
 
 func void DIA_Randolph_Geschichte_Info ()
 {
-	AI_Output (other, self, "DIA_Randolph_Geschichte_15_00"); //Ty nejsi zdejší, viï?
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_01"); //Pocházím z jiních ostrovù. Øíkalo se, e tady v Korinidu budou zapotøebí lidi kvùli magické rudì.
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_02"); //Ale kdy jsem se sem dostal, mìli tady obrovskou bariéru. A mnì se tam zrovna nechtìlo. Tak jsem zaèal pracovat v pøístavu.
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_03"); //No, pak pøestaly lodì vydìlávat, tak jsem šel pracovat pro Akila. U jsem dìlal horší vìci, vánì.
+	AI_Output (other, self, "DIA_Randolph_Geschichte_15_00"); //Ty nejsi zdejÅ¡Ã­, viÄ?
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_01"); //PochÃ¡zÃ­m z jiÅ¾nÃ­ch ostrovÅ¯. Å˜Ã­kalo se, Å¾e tady v Korinidu budou zapotÅ™ebÃ­ lidi kvÅ¯li magickÃ© rudÄ›.
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_02"); //Ale kdyÅ¾ jsem se sem dostal, mÄ›li tady obrovskou bariÃ©ru. A mnÄ› se tam zrovna nechtÄ›lo. Tak jsem zaÄal pracovat v pÅ™Ã­stavu.
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_03"); //No, pak pÅ™estaly lodÄ› vydÄ›lÃ¡vat, tak jsem Å¡el pracovat pro Akila. UÅ¾ jsem dÄ›lal horÅ¡Ã­ vÄ›ci, vÃ¡Å¾nÄ›.
 };
 /*
 	Du kommst nicht aus der Gegend, richtig? 
-	Ich komme von den südlichen Inseln. Irgendwann hieß es, sie bräuchten Leute in Khorinis, wegen dem magischen Erz. 
+	Ich komme von den sÃ¼dlichen Inseln. Irgendwann hieÃŸ es, sie brÃ¤uchten Leute in Khorinis, wegen dem magischen Erz. 
 	Aber als ich ankam war da diese riesige Barriere. Und da wollte ich nicht rein. Ich hab dann angefangen im Hafen zu arbeiten. 
 	Und seitdem keine Schiffe mehr kommen, bin ich halt zu Akil gegangen. Naja, ich hab schon schlechtere Jobs gemacht.  
 	
 	
 	Hey, ich kenne da noch jemanden, der dir ein paar Sachen besorgen kann. 
-	Ein Freund, der mit mir zusammen aus dem Süden gekommen ist. 
-	Aber ich brauche 10 Goldmünzen, um beim Wett - Trinken in der Taverne mitzumachen.  
+	Ein Freund, der mit mir zusammen aus dem SÃ¼den gekommen ist. 
+	Aber ich brauche 10 GoldmÃ¼nzen, um beim Wett - Trinken in der Taverne mitzumachen.  
 	Also wenn du die Info willst, dann gib mir das Gold. 
 	
-//Wenn du die Taverne suchst dann geh einfach über die Brücke und folge dem Weg, dann kommst direkt daran vorbei.
+//Wenn du die Taverne suchst dann geh einfach Ã¼ber die BrÃ¼cke und folge dem Weg, dann kommst direkt daran vorbei.
 */
 ///////////////////////////////////////////////////////////////////////
 //	Info Taverne
@@ -183,7 +183,7 @@ instance DIA_Randolph_TAVERNE		(C_INFO)
 	condition	 = 	DIA_Randolph_TAVERNE_Condition;
 	information	 = 	DIA_Randolph_TAVERNE_Info;
 
-	description	 = 	"Ty jsi vysedával v hospodì?";
+	description	 = 	"Ty jsi vysedÃ¡val v hospodÄ›?";
 };
 
 func int DIA_Randolph_TAVERNE_Condition ()
@@ -197,9 +197,9 @@ func int DIA_Randolph_TAVERNE_Condition ()
 
 func void DIA_Randolph_TAVERNE_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_TAVERNE_15_00"); //Ty jsi vysedával v hospodì?
-	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_01"); //Jo, pøesnì tak. Ale to skonèilo.
-	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_02"); //U si to nemùu dovolit.
+	AI_Output			(other, self, "DIA_Randolph_TAVERNE_15_00"); //Ty jsi vysedÃ¡val v hospodÄ›?
+	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_01"); //Jo, pÅ™esnÄ› tak. Ale to skonÄilo.
+	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_02"); //UÅ¾ si to nemÅ¯Å¾u dovolit.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -212,7 +212,7 @@ instance DIA_Randolph_WASISTINTAVERNE		(C_INFO)
 	condition	 = 	DIA_Randolph_WASISTINTAVERNE_Condition;
 	information	 = 	DIA_Randolph_WASISTINTAVERNE_Info;
 
-	description	 = 	"Co se vlastnì v té hospodì dìje?";
+	description	 = 	"Co se vlastnÄ› v tÃ© hospodÄ› dÄ›je?";
 };
 
 func int DIA_Randolph_WASISTINTAVERNE_Condition ()
@@ -226,13 +226,13 @@ func int DIA_Randolph_WASISTINTAVERNE_Condition ()
 
 func void DIA_Randolph_WASISTINTAVERNE_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_WASISTINTAVERNE_15_00"); //Co se vlastnì v té hospodì dìje?
+	AI_Output			(other, self, "DIA_Randolph_WASISTINTAVERNE_15_00"); //Co se vlastnÄ› v tÃ© hospodÄ› dÄ›je?
 	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_01"); //Hraje se tam.
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_02"); //Ti chlápkové tam soutìej kadej s kadım. Kdo vydrí nejvíc piv, vyhrál.
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_03"); //Nakonec jsem nedìlal nic jiného ne prohrával, a teï potøebuju vydìlat nìco penìz.
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_02"); //Ti chlÃ¡pkovÃ© tam soutÄ›Å¾ej kaÅ¾dej s kaÅ¾dÃ½m. Kdo vydrÅ¾Ã­ nejvÃ­c piv, vyhrÃ¡l.
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_03"); //Nakonec jsem nedÄ›lal nic jinÃ©ho neÅ¾ prohrÃ¡val, a teÄ potÅ™ebuju vydÄ›lat nÄ›co penÄ›z.
 	Log_CreateTopic (TOPIC_Wettsaufen, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wettsaufen, LOG_RUNNING);
-	B_LogEntry (TOPIC_Wettsaufen,"V hospodì se uzavírají sázky."); 
+	B_LogEntry (TOPIC_Wettsaufen,"V hospodÄ› se uzavÃ­rajÃ­ sÃ¡zky."); 
 
 };
 
@@ -246,7 +246,7 @@ instance DIA_Randolph_GEGENWEN		(C_INFO)
 	condition	 = 	DIA_Randolph_GEGENWEN_Condition;
 	information	 = 	DIA_Randolph_GEGENWEN_Info;
 
-	description	 = 	"Proti komu jsi hrál?";
+	description	 = 	"Proti komu jsi hrÃ¡l?";
 };
 
 func int DIA_Randolph_GEGENWEN_Condition ()
@@ -260,15 +260,15 @@ func int DIA_Randolph_GEGENWEN_Condition ()
 
 func void DIA_Randolph_GEGENWEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_GEGENWEN_15_00"); //Proti komu jsi hrál?
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_01"); //Proti Rukharovi, tomu starımu budiknièemovi. Co vím, pokadı mì porazil.
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_02"); //Ale mám takovı nejasnı tušení, e mi ten mizernej hajzl vdycky øíznul pivo ginem.
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_03"); //Nejspíš ho má schovanej ve svı truhle. Ten všiváckej zkurvysyn!
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_04"); //Nìkdo by mu do tı jeho truhly mìl nastrèit èistou vodu. Pak by toho mohl do piva pøidávat, kolik by chtìl.
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_05"); //Kdybych tak mìl dost penìz, abych si to s ním mohl rozdat ještì jednou.
+	AI_Output			(other, self, "DIA_Randolph_GEGENWEN_15_00"); //Proti komu jsi hrÃ¡l?
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_01"); //Proti Rukharovi, tomu starÃ½mu budiÅ¾kniÄemovi. Co vÃ­m, pokaÅ¾dÃ½ mÄ› porazil.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_02"); //Ale mÃ¡m takovÃ½ nejasnÃ½ tuÅ¡enÃ­, Å¾e mi ten mizernej hajzl vÅ¾dycky Å™Ã­znul pivo ginem.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_03"); //NejspÃ­Å¡ ho mÃ¡ schovanej ve svÃ½ truhle. Ten vÅ¡ivÃ¡ckej zkurvysyn!
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_04"); //NÄ›kdo by mu do tÃ½ jeho truhly mÄ›l nastrÄit Äistou vodu. Pak by toho mohl do piva pÅ™idÃ¡vat, kolik by chtÄ›l.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_05"); //Kdybych tak mÄ›l dost penÄ›z, abych si to s nÃ­m mohl rozdat jeÅ¡tÄ› jednou.
 
-	B_LogEntry (TOPIC_Wettsaufen,"Randolph mi vyprávìl o Rukharovi a o soutìi v pití a také o tom, e u nemìl dost penìz, aby s Rukharem zmìøil síly ještì jednou."); 
-	B_LogEntry (TOPIC_Wettsaufen,"Randolph se domnívá, e Rukhar pøi souboji v pití podvádìl. Rád by mu v truhlici vymìnil jednu láhev ginu za láhev vody."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Randolph mi vyprÃ¡vÄ›l o Rukharovi a o soutÄ›Å¾i v pitÃ­ a takÃ© o tom, Å¾e uÅ¾ nemÄ›l dost penÄ›z, aby s Rukharem zmÄ›Å™il sÃ­ly jeÅ¡tÄ› jednou."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Randolph se domnÃ­vÃ¡, Å¾e Rukhar pÅ™i souboji v pitÃ­ podvÃ¡dÄ›l. RÃ¡d by mu v truhlici vymÄ›nil jednu lÃ¡hev ginu za lÃ¡hev vody."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -281,7 +281,7 @@ instance DIA_Randolph_WASBRAUCHSTDU		(C_INFO)
 	condition	 = 	DIA_Randolph_WASBRAUCHSTDU_Condition;
 	information	 = 	DIA_Randolph_WASBRAUCHSTDU_Info;
 
-	description	 = 	"Kolik na tu soutì potøebuješ?";
+	description	 = 	"Kolik na tu soutÄ›Å¾ potÅ™ebujeÅ¡?";
 };
 
 func int DIA_Randolph_WASBRAUCHSTDU_Condition ()
@@ -296,8 +296,8 @@ func int DIA_Randolph_WASBRAUCHSTDU_Condition ()
 
 func void DIA_Randolph_WASBRAUCHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_WASBRAUCHSTDU_15_00"); //Kolik na tu soutì potøebuješ?
-	AI_Output			(self, other, "DIA_Randolph_WASBRAUCHSTDU_06_01"); //10 zlatıch.
+	AI_Output			(other, self, "DIA_Randolph_WASBRAUCHSTDU_15_00"); //Kolik na tu soutÄ›Å¾ potÅ™ebujeÅ¡?
+	AI_Output			(self, other, "DIA_Randolph_WASBRAUCHSTDU_06_01"); //10 zlatÃ½ch.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -311,7 +311,7 @@ instance DIA_Randolph_ICHGEBEDIRGELD		(C_INFO)
 	information	 = 	DIA_Randolph_ICHGEBEDIRGELD_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"Dám ti ty peníze, aby sis to mohl rozdat s Rukharem.";
+	description	 = 	"DÃ¡m ti ty penÃ­ze, aby sis to mohl rozdat s Rukharem.";
 };
 
 var int DIA_Randolph_ICHGEBEDIRGELD_noPerm;
@@ -328,14 +328,14 @@ func int DIA_Randolph_ICHGEBEDIRGELD_Condition ()
 
 func void DIA_Randolph_ICHGEBEDIRGELD_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_ICHGEBEDIRGELD_15_00"); //Dám ti ty peníze, aby sis to mohl rozdat s Rukharem.
+	AI_Output			(other, self, "DIA_Randolph_ICHGEBEDIRGELD_15_00"); //DÃ¡m ti ty penÃ­ze, aby sis to mohl rozdat s Rukharem.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,10))
 		{
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_01"); //(nadšenì) Fakt? Díky moc. Brzo ti to vrátím.
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_02"); //Kdy vyhraju, vyklopím ještì o trochu víc, ne jsi mi dal. Ještì se uvidíme.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_01"); //(nadÅ¡enÄ›) Fakt? DÃ­ky moc. Brzo ti to vrÃ¡tÃ­m.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_02"); //KdyÅ¾ vyhraju, vyklopÃ­m jeÅ¡tÄ› o trochu vÃ­c, neÅ¾ jsi mi dal. JeÅ¡tÄ› se uvidÃ­me.
 		
-			B_LogEntry (TOPIC_Wettsaufen,"U jsem si vsadil a teï se na to podívám."); 
+			B_LogEntry (TOPIC_Wettsaufen,"UÅ¾ jsem si vsadil a teÄ se na to podÃ­vÃ¡m."); 
 			B_GivePlayerXP (XP_Randolph_WettkampfStart);
 		
 			DIA_Randolph_ICHGEBEDIRGELD_noPerm = TRUE;
@@ -350,7 +350,7 @@ func void DIA_Randolph_ICHGEBEDIRGELD_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_03"); //To je v poøádku. Nemáš dost ani pro sebe.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_03"); //To je v poÅ™Ã¡dku. NemÃ¡Å¡ dost ani pro sebe.
 		};
 	B_NpcClearObsessionByDMT (self);
 };
@@ -385,22 +385,22 @@ func void DIA_Randolph_WETTKAMPFZUENDE_Info ()
 	
 	if (Rukhar_Won_Wettkampf == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_01"); //Pøímo matka všech kocovin. A já se jí nemùu zbavit. U nebudu chlastat, pøísahám.
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_02"); //Tvoje peníze jsou fuè. Je mi líto.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_01"); //PÅ™Ã­mo matka vÅ¡ech kocovin. A jÃ¡ se jÃ­ nemÅ¯Å¾u zbavit. UÅ¾ nebudu chlastat, pÅ™Ã­sahÃ¡m.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_02"); //Tvoje penÃ­ze jsou fuÄ. Je mi lÃ­to.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_03"); //Ani nápad. Je mi fajn, vánì.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_03"); //Ani nÃ¡pad. Je mi fajn, vÃ¡Å¾nÄ›.
 		
 			if (DIA_Randolph_WETTKAMPFZUENDE_OneTime == FALSE)
 			{
-				AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_04"); //Tak to tentokrát koneènì vyšlo. Ještì jednou dík za peníze. Tady, vezmi si je zpátky.
+				AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_04"); //Tak to tentokrÃ¡t koneÄnÄ› vyÅ¡lo. JeÅ¡tÄ› jednou dÃ­k za penÃ­ze. Tady, vezmi si je zpÃ¡tky.
 				CreateInvItems (self, ItMi_Gold, 20);									
 				B_GiveInvItems (self, other, ItMi_Gold, 12);
 				DIA_Randolph_WETTKAMPFZUENDE_OneTime = TRUE;					
 			};
 			
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_05"); //Vypadá to, e se z toho Rukhar jen tak nedostane.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_05"); //VypadÃ¡ to, Å¾e se z toho Rukhar jen tak nedostane.
 		};
 
 	B_NpcClearObsessionByDMT (self);
@@ -417,7 +417,7 @@ instance DIA_Randolph_PERM		(C_INFO)
 	information	 = 	DIA_Randolph_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Jsi v pohodì?";
+	description	 = 	"Jsi v pohodÄ›?";
 };
 
 func int DIA_Randolph_PERM_Condition ()
@@ -439,7 +439,7 @@ func void DIA_Randolph_PERM_Info ()
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Randolph_PERM_15_00"); //Jsi v poøádku?
+			AI_Output			(other, self, "DIA_Randolph_PERM_15_00"); //Jsi v poÅ™Ã¡dku?
 
 			if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 			&& (MIS_HealRandolph != LOG_SUCCESS)
@@ -448,28 +448,28 @@ func void DIA_Randolph_PERM_Info ()
 					&& (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == TRUE)
 					&& (DIA_Randolph_PERM_GotMoney == FALSE)
 					{
-						AI_Output			(other, self, "DIA_Randolph_PERM_15_01"); //Posíláš mì tam bez jedinı zlatky a vùbec se neobtìuješ mi øíct, e to je tak drahı?
-						AI_Output			(other, self, "DIA_Randolph_PERM_15_02"); //Sagitta po mnì chce 300 zlatıch.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_03"); //Nemùu ti dát víc ne 150 zlatıch. Prosím, musíš mi pomoct. Prosím.
+						AI_Output			(other, self, "DIA_Randolph_PERM_15_01"); //PosÃ­lÃ¡Å¡ mÄ› tam bez jedinÃ½ zlatky a vÅ¯bec se neobtÄ›Å¾ujeÅ¡ mi Å™Ã­ct, Å¾e to je tak drahÃ½?
+						AI_Output			(other, self, "DIA_Randolph_PERM_15_02"); //Sagitta po mnÄ› chce 300 zlatÃ½ch.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_03"); //NemÅ¯Å¾u ti dÃ¡t vÃ­c neÅ¾ 150 zlatÃ½ch. ProsÃ­m, musÃ­Å¡ mi pomoct. ProsÃ­m.
 						CreateInvItems (self, ItMi_Gold, 150);									
 						B_GiveInvItems (self, other, ItMi_Gold, 150);					
 						DIA_Randolph_PERM_GotMoney = TRUE;
 					}
 					else
 					{
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_04"); //Jsem vánì na dnì. I kdybych pøestal pít, zabije mì absák. Vánì potøebuju pomoct.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_05"); //Je tu jeden zpùsob, jak bys mi mohl pomoct.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_06"); //Sagitta, ta stará bylinkáøka, to pro mì pøipravuje. Ale nemyslím si, e bych to mohl dokázat, kdy je teï v okolí tolik skøetù.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_04"); //Jsem vÃ¡Å¾nÄ› na dnÄ›. I kdybych pÅ™estal pÃ­t, zabije mÄ› absÅ¥Ã¡k. VÃ¡Å¾nÄ› potÅ™ebuju pomoct.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_05"); //Je tu jeden zpÅ¯sob, jak bys mi mohl pomoct.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_06"); //Sagitta, ta starÃ¡ bylinkÃ¡Å™ka, to pro mÄ› pÅ™ipravuje. Ale nemyslÃ­m si, Å¾e bych to mohl dokÃ¡zat, kdyÅ¾ je teÄ v okolÃ­ tolik skÅ™etÅ¯.
 					};
 					Log_CreateTopic (TOPIC_HealRandolph, LOG_MISSION);
 					Log_SetTopicStatus(TOPIC_HealRandolph, LOG_RUNNING);
-					B_LogEntry (TOPIC_HealRandolph,"Randolph prı nechal pití a poslal mì za bylinkáøkou Sagittou, aby mu dala nìco na jeho abstinenèní pøíznaky."); 
+					B_LogEntry (TOPIC_HealRandolph,"Randolph prÃ½ nechal pitÃ­ a poslal mÄ› za bylinkÃ¡Å™kou Sagittou, aby mu dala nÄ›co na jeho abstinenÄnÃ­ pÅ™Ã­znaky."); 
 
 					MIS_HealRandolph = LOG_RUNNING;
 				}
 			else
 				{
-					AI_Output			(self, other, "DIA_Randolph_PERM_06_07"); //Ještì poøád se mi trochu pletou nohy, ale jinak jsem v pohodì.
+					AI_Output			(self, other, "DIA_Randolph_PERM_06_07"); //JeÅ¡tÄ› poÅ™Ã¡d se mi trochu pletou nohy, ale jinak jsem v pohodÄ›.
 				};	
 		};	
 };
@@ -500,7 +500,7 @@ func int DIA_Randolph_Heilung_Condition ()
 func void DIA_Randolph_Heilung_Info ()
 {
 	AI_Output			(other, self, "DIA_Randolph_Heilung_15_00"); //Chlast ti stoupnul do hlavy, co?
-	AI_Output			(self, other, "DIA_Randolph_Heilung_06_01"); //U si nedám ani panáka. Ne v tomhle ivotì. To se mùeš vsadit, chlape.
+	AI_Output			(self, other, "DIA_Randolph_Heilung_06_01"); //UÅ¾ si nedÃ¡m ani panÃ¡ka. Ne v tomhle Å¾ivotÄ›. To se mÅ¯Å¾eÅ¡ vsadit, chlape.
 	B_NpcClearObsessionByDMT (self);
 };
 
@@ -515,7 +515,7 @@ instance DIA_Randolph_SAGITTAHEAL		(C_INFO)
 	condition	 = 	DIA_Randolph_SAGITTAHEAL_Condition;
 	information	 = 	DIA_Randolph_SAGITTAHEAL_Info;
 
-	description	 = 	"Tady, tohle ti od toho absáku trochu pomùe.";
+	description	 = 	"Tady, tohle ti od toho absÅ¥Ã¡ku trochu pomÅ¯Å¾e.";
 };
 
 func int DIA_Randolph_SAGITTAHEAL_Condition ()
@@ -529,7 +529,7 @@ func int DIA_Randolph_SAGITTAHEAL_Condition ()
 
 func void DIA_Randolph_SAGITTAHEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_00"); //Tady. To by mìlo zmírnit abstinenèní pøíznaky.
+	AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_00"); //Tady. To by mÄ›lo zmÃ­rnit abstinenÄnÃ­ pÅ™Ã­znaky.
 	B_GiveInvItems 		(other, self, ItPo_HealRandolph_MIS, 1);					
 	
 	if (Npc_IsInState (self,ZS_Pick_FP))
@@ -537,20 +537,20 @@ func void DIA_Randolph_SAGITTAHEAL_Info ()
 			B_UseItem 			(self,ItPo_HealRandolph_MIS);
 		};	
 		
-	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_01"); //Ach! Díky, chlape. Teï si zase budu moct odpoèinout.
-	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_02"); //Jak se ti za to budu moct kdy odvdìèit?
+	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_01"); //Ach! DÃ­ky, chlape. TeÄ si zase budu moct odpoÄinout.
+	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_02"); //Jak se ti za to budu moct kdy odvdÄ›Äit?
 	
 	if (DIA_Randolph_PERM_GotMoney == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_03"); //Hádám, e tìchhle pár mincí je dobrejch akorát k tomu, abych si zachoval tváø. Ale to je všechno, je mi líto.
+			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_03"); //HÃ¡dÃ¡m, Å¾e tÄ›chhle pÃ¡r mincÃ­ je dobrejch akorÃ¡t k tomu, abych si zachoval tvÃ¡Å™. Ale to je vÅ¡echno, je mi lÃ­to.
 		
 			CreateInvItems (self, ItMi_Gold, 150);									
 			B_GiveInvItems (self, other, ItMi_Gold, 150);					
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_04"); //Zaplatil jsem za tebe spoustu penìz a tìch tvejch pár ušmudlanejch mincí nestaèí ani na pokrytí mejch nákladù.
-			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_05"); //Fajn - v tom pøípadì mùu mluvit o štìstí, e jsem potkal tak vstøícného paladina, nemyslíš?
+			AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_04"); //Zaplatil jsem za tebe spoustu penÄ›z a tÄ›ch tvejch pÃ¡r uÅ¡mudlanejch mincÃ­ nestaÄÃ­ ani na pokrytÃ­ mejch nÃ¡kladÅ¯.
+			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_05"); //Fajn - v tom pÅ™Ã­padÄ› mÅ¯Å¾u mluvit o Å¡tÄ›stÃ­, Å¾e jsem potkal tak vstÅ™Ã­cnÃ©ho paladina, nemyslÃ­Å¡?
 			
 		};
 	

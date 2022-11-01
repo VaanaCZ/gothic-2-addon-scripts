@@ -71,9 +71,9 @@ FUNC INT DIA_Addon_Garaz_Probleme_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Probleme_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//Poèkej chvilku.
-	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//Máš nìjakej problém?
-	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//Dùlní èervi. Velká spousta dùlních èervù. Narazili jsme tady na hnízdo.
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//PoÄkej chvilku.
+	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//MÃ¡Å¡ nÄ›jakej problÃ©m?
+	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//DÅ¯lnÃ­ Äervi. VelkÃ¡ spousta dÅ¯lnÃ­ch ÄervÅ¯. Narazili jsme tady na hnÃ­zdo.
 };
 //---------------------------------------------------------------------
 //	Info Hi
@@ -85,7 +85,7 @@ INSTANCE DIA_Addon_Garaz_Hi   (C_INFO)
 	condition   = DIA_Addon_Garaz_Hi_Condition;
 	information = DIA_Addon_Garaz_Hi_Info;
 	permanent   = FALSE;
-	description = "Proè ty èervy nepobít?";
+	description = "ProÄ ty Äervy nepobÃ­t?";
 };
 FUNC INT DIA_Addon_Garaz_Hi_Condition()
 {	
@@ -97,13 +97,13 @@ FUNC INT DIA_Addon_Garaz_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//A proè na nì teda nezaútoèíme?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//To jsem se taky ptal, ale stráe prı mají na práci 'dùleitìjší vìci'.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Bloodwyn poslal mì, abych se o to postaral.
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Ty s tìma èervama asi bojovat nebudeš.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//A proè? Abysme se dostali ke zlatu v jeskyni?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Bloodwyn si stejnì nejvíc urve pro sebe. A já pro pár nuggetù nemíním riskovat krk.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Jestli ale chceš bojovat s tìma èervama, nebudu ti bránit. Akorát koukej, a je sem všecky nenalákáš, jasnı?
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//A proÄ na nÄ› teda nezaÃºtoÄÃ­me?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//To jsem se taky ptal, ale strÃ¡Å¾e prÃ½ majÃ­ na prÃ¡ci 'dÅ¯leÅ¾itÄ›jÅ¡Ã­ vÄ›ci'.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Bloodwyn poslal mÄ›, abych se o to postaral.
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Ty s tÄ›ma Äervama asi bojovat nebudeÅ¡.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//A proÄ? Abysme se dostali ke zlatu v jeskyni?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Bloodwyn si stejnÄ› nejvÃ­c urve pro sebe. A jÃ¡ pro pÃ¡r nuggetÅ¯ nemÃ­nÃ­m riskovat krk.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Jestli ale chceÅ¡ bojovat s tÄ›ma Äervama, nebudu ti brÃ¡nit. AkorÃ¡t koukej, aÅ¥ je sem vÅ¡ecky nenalÃ¡kÃ¡Å¡, jasnÃ½?
 	
 };
 //---------------------------------------------------------------------
@@ -116,7 +116,7 @@ INSTANCE DIA_Addon_Garaz_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_Garaz_Bloodwyn_Condition;
 	information = DIA_Addon_Garaz_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Mùeš mi o Bloodwynovi prozradit nìco blišího?";
+	description = "MÅ¯Å¾eÅ¡ mi o Bloodwynovi prozradit nÄ›co bliÅ¾Å¡Ã­ho?";
 };
 FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 {	
@@ -129,15 +129,15 @@ FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Bloodwyn_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Mùeš mi povìdìt víc o Bloodwynovi?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Jo, je to šmejd, co netouí po nièem jinım ne po zlatì. Prohlíí kadou novou ílu i kadej nugget.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//S takovou hamiností si jednou pìknì nabije drku. A na nás zvysoka sere.
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//MÅ¯Å¾eÅ¡ mi povÄ›dÄ›t vÃ­c o Bloodwynovi?
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Jo, je to Å¡mejd, co netouÅ¾Ã­ po niÄem jinÃ½m neÅ¾ po zlatÄ›. ProhlÃ­Å¾Ã­ kaÅ¾dou novou Å¾Ã­lu i kaÅ¾dej nugget.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//S takovou hamiÅ¾nostÃ­ si jednou pÄ›knÄ› nabije drÅ¾ku. A na nÃ¡s zvysoka sere.
 	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//A jinak?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Hraje si na velkıho machra a nesnese, kdy je nìkdo lepší ne von. No, já bych proti nìmu nešel.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Radši mu uhıbej z cesty a neprovokuj ho – pokud ho teda nechceš totálnì vytoèit. Pak neví, co dìlá.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Hraje si na velkÃ½ho machra a nesnese, kdyÅ¾ je nÄ›kdo lepÅ¡Ã­ neÅ¾ von. No, jÃ¡ bych proti nÄ›mu neÅ¡el.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//RadÅ¡i mu uhÃ½bej z cesty a neprovokuj ho â€“ pokud ho teda nechceÅ¡ totÃ¡lnÄ› vytoÄit. Pak nevÃ­, co dÄ›lÃ¡.
 	
-	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn definitivnì odejde z chrámu teprve tehdy, a se v dole najde nová zlatá íla.");
-	B_LogEntry (Topic_Addon_Tempel,"Kdy se Bloodwyn naštve, úplnì se pøestane ovládat. Toho bych mohl nìjak vyuít."); 
+	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn definitivnÄ› odejde z chrÃ¡mu teprve tehdy, aÅ¾ se v dole najde novÃ¡ zlatÃ¡ Å¾Ã­la.");
+	B_LogEntry (Topic_Addon_Tempel,"KdyÅ¾ se Bloodwyn naÅ¡tve, ÃºplnÄ› se pÅ™estane ovlÃ¡dat. Toho bych mohl nÄ›jak vyuÅ¾Ã­t."); 
 };
 //---------------------------------------------------------------------
 //	Info Sieg
@@ -149,7 +149,7 @@ INSTANCE DIA_Addon_Garaz_Sieg   (C_INFO)
 	condition   = DIA_Addon_Garaz_Sieg_Condition;
 	information = DIA_Addon_Garaz_Sieg_Info;
 	permanent   = FALSE;
-	description	= "S tìmi èervy u je to vyøízené.";
+	description	= "S tÄ›mi Äervy uÅ¾ je to vyÅ™Ã­zenÃ©.";
 };
 FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 {	
@@ -161,9 +161,9 @@ FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Sieg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//Tak tohle bysme mìli. Èervi u jsou bradou vzhùru.
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Bloodwyn u je na cestì. Tak jsi to chtìl, ne?
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//No, pobil jsi èervy, take Bloodwyn tu bude cobydup. Take jestli máš nìco v plánu, musíš to udìlat HNED.
+	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//Tak tohle bysme mÄ›li. ÄŒervi uÅ¾ jsou bradou vzhÅ¯ru.
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Bloodwyn uÅ¾ je na cestÄ›. Tak jsi to chtÄ›l, ne?
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//No, pobil jsi Äervy, takÅ¾e Bloodwyn tu bude cobydup. TakÅ¾e jestli mÃ¡Å¡ nÄ›co v plÃ¡nu, musÃ­Å¡ to udÄ›lat HNED.
 	
 	B_StartOtherRoutine (Bloodwyn,"GOLD");	
 	
@@ -190,8 +190,8 @@ FUNC INT DIA_Addon_Garaz_Blood_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Blood_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//Pìknì jsi mu to ukázal. Vıbornì.
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Tak to se jdu porozhlídnout po jeskyni.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//PÄ›knÄ› jsi mu to ukÃ¡zal. VÃ½bornÄ›.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Tak to se jdu porozhlÃ­dnout po jeskyni.
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos  (self);
@@ -220,9 +220,9 @@ FUNC INT DIA_Addon_Garaz_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Gold_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//Èoveèe, urèitì je tu spousta zlata!
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//K tìm nuggetùm tamhle nahoøe se ale dá dostat jenom po ebøíku.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Jene od pádu bariéry u nikdo ádnı ebøíky nepouívá. To je vánì pech!
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//ÄŒoveÄe, urÄitÄ› je tu spousta zlata!
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//K tÄ›m nuggetÅ¯m tamhle nahoÅ™e se ale dÃ¡ dostat jenom po Å¾ebÅ™Ã­ku.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//JenÅ¾e od pÃ¡du bariÃ©ry uÅ¾ nikdo Å¾Ã¡dnÃ½ Å¾ebÅ™Ã­ky nepouÅ¾Ã­vÃ¡. To je vÃ¡Å¾nÄ› pech!
 };
 
 

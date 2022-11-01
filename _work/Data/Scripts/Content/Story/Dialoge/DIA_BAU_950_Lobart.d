@@ -49,45 +49,45 @@ func int DIA_Lobart_STOLENCLOTHS_Condition ()
 
 func void DIA_Lobart_STOLENCLOTHS_Info ()
 {
-	// ------ SC hat Rüstung an ------
+	// ------ SC hat RÃ¼stung an ------
 	
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
 	if (Hlp_IsItem (heroArmor, ItAr_BAU_L) == TRUE)
 	{
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_00"); //Nevìøím svım oèím! Ten bastard se tu producíruje v MİCH šatech!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_00"); //NevÄ›Å™Ã­m svÃ½m oÄÃ­m! Ten bastard se tu producÃ­ruje v MÃCH Å¡atech!
 	}	
 	else
 	{
 		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_01"); //Hej, ty!
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_02"); //Od tı doby, cos tu byl naposled, se mi ztratilo pár vìcí z mojí truhly!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_02"); //Od tÃ½ doby, cos tu byl naposled, se mi ztratilo pÃ¡r vÄ›cÃ­ z mojÃ­ truhly!
 	};
 	
 	// ------ SC hat nach Arbeit gefragt -------
 	if (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW))
 	{
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_03"); //Mìl bys dìlat nìco uiteènıho, ne èmuchat kolem mıho domu, ty línej mizero!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_03"); //MÄ›l bys dÄ›lat nÄ›co uÅ¾iteÄnÃ½ho, ne Ämuchat kolem mÃ½ho domu, ty lÃ­nej mizero!
 	};
 	
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_04"); //Okamitì mi vra moje šaty!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_04"); //OkamÅ¾itÄ› mi vraÅ¥ moje Å¡aty!
 	
 	Info_ClearChoices	(DIA_Lobart_STOLENCLOTHS);
-	Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Zapomeò!", 				DIA_Lobart_STOLENCLOTHS_ForgetIt );
+	Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "ZapomeÅˆ!", 				DIA_Lobart_STOLENCLOTHS_ForgetIt );
 	if (Npc_HasItems (other, ItAr_BAU_L) > 0)
 	{
-		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Tady, vezmi si je zpátky.", 	DIA_Lobart_STOLENCLOTHS_HereYouGo );
+		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Tady, vezmi si je zpÃ¡tky.", 	DIA_Lobart_STOLENCLOTHS_HereYouGo );
 	}
 	else
 	{
-		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "U je nemám.", 	DIA_Lobart_STOLENCLOTHS_DontHaveIt );
+		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "UÅ¾ je nemÃ¡m.", 	DIA_Lobart_STOLENCLOTHS_DontHaveIt );
 	};
 };
 	
 func void DIA_Lobart_STOLENCLOTHS_HereYouGo ()
 {
-	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_HereYouGo_15_00"); //Tady, vezmi si je zpátky.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_01"); //Pokud je chceš, mùeš za nì taky ZAPLATIT!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_02"); //(odmìøenì) Teï bì dìlat nìco uiteènıho!
+	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_HereYouGo_15_00"); //Tady, vezmi si je zpÃ¡tky.
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_01"); //Pokud je chceÅ¡, mÅ¯Å¾eÅ¡ za nÄ› taky ZAPLATIT!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_02"); //(odmÄ›Å™enÄ›) TeÄ bÄ›Å¾ dÄ›lat nÄ›co uÅ¾iteÄnÃ½ho!
 	
 	B_GiveInvItems (other, self, ItAr_BAU_L, 1);
 	
@@ -96,8 +96,8 @@ func void DIA_Lobart_STOLENCLOTHS_HereYouGo ()
 
 func void DIA_Lobart_STOLENCLOTHS_DontHaveIt ()
 {
-	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_15_00"); //U je nemám.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01"); //Prodals je, co? (øve) Já ti ukáu, ty smrkáèi!
+	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_15_00"); //UÅ¾ je nemÃ¡m.
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01"); //Prodals je, co? (Å™ve) JÃ¡ ti ukÃ¡Å¾u, ty smrkÃ¡Äi!
 	
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos (self);	
@@ -106,8 +106,8 @@ func void DIA_Lobart_STOLENCLOTHS_DontHaveIt ()
 	
 func void DIA_Lobart_STOLENCLOTHS_ForgetIt ()
 {
-	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_ForgetIt_15_00"); //Zapomeò!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01"); //(øve) Já ti ukáu, mladíku!
+	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_ForgetIt_15_00"); //ZapomeÅˆ!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01"); //(Å™ve) JÃ¡ ti ukÃ¡Å¾u, mladÃ­ku!
 	
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos (self);	
@@ -142,26 +142,26 @@ func void DIA_Lobart_Hallo_Info ()
 {
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_00"); //Co otravuješ na mım pozemku?
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_01"); //(zkoumavì) Na èí stranì jsi? Vzbouøencù, nebo krále?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_00"); //Co otravujeÅ¡ na mÃ½m pozemku?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_01"); //(zkoumavÄ›) Na ÄÃ­ stranÄ› jsi? VzbouÅ™encÅ¯, nebo krÃ¡le?
 	
 		Info_ClearChoices	(DIA_Lobart_Hallo);
-		Info_AddChoice		(DIA_Lobart_Hallo, "Nerozumím...", DIA_Lobart_Hallo_What );
-		Info_AddChoice		(DIA_Lobart_Hallo, "Jsem na královì stranì!", 		DIA_Lobart_Hallo_ForTheKing );
-		Info_AddChoice		(DIA_Lobart_Hallo, "Jsem s rolníky!",		DIA_Lobart_Hallo_ForThePeasants );
+		Info_AddChoice		(DIA_Lobart_Hallo, "NerozumÃ­m...", DIA_Lobart_Hallo_What );
+		Info_AddChoice		(DIA_Lobart_Hallo, "Jsem na krÃ¡lovÄ› stranÄ›!", 		DIA_Lobart_Hallo_ForTheKing );
+		Info_AddChoice		(DIA_Lobart_Hallo, "Jsem s rolnÃ­ky!",		DIA_Lobart_Hallo_ForThePeasants );
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_02"); //Co pro tebe mùu udìlat?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_02"); //Co pro tebe mÅ¯Å¾u udÄ›lat?
 	};
 };
 
 func void DIA_Lobart_Hallo_ForThePeasants()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_ForThePeasants_15_00"); //Jsem s rolníky!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_01"); //Ha! Ten zpropadenej štváè Onar nás dostane všechny do hrobu!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_02"); //Co myslíš, jak dlouho budou ještì paladinové jen tak stát a pøihlíet?
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_03"); //Po tom, co Onar provedl, je celı mìsto vzhùru nohama.
+	AI_Output (other, self, "DIA_Lobart_Hallo_ForThePeasants_15_00"); //Jsem s rolnÃ­ky!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_01"); //Ha! Ten zpropadenej Å¡tvÃ¡Ä Onar nÃ¡s dostane vÅ¡echny do hrobu!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_02"); //Co myslÃ­Å¡, jak dlouho budou jeÅ¡tÄ› paladinovÃ© jen tak stÃ¡t a pÅ™ihlÃ­Å¾et?
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_03"); //Po tom, co Onar provedl, je celÃ½ mÄ›sto vzhÅ¯ru nohama.
 
 	Lobart_AgainstKing = TRUE;
 	Info_ClearChoices	(DIA_Lobart_Hallo);
@@ -169,11 +169,11 @@ func void DIA_Lobart_Hallo_ForThePeasants()
 
 func void DIA_Lobart_Hallo_ForTheKing()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_ForTheKing_15_00"); //Jsem na královì stranì!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_01"); //(pohrdavì) 'Na královì stranì!' To samı øíkali vojáci z domobrany, kdy mi vzali pùlku mıch ovcí.
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_02"); //Ale kde jsou ti bastardi, kdy si na nás došlápnou banditi? A kde asi tak budou, a nás napadnou skøeti?
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_03"); //Já ti øeknu kde: ve mìstì, za širokıma hradbama.
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_04"); //Tak mì s tím svım králem neotravuj.
+	AI_Output (other, self, "DIA_Lobart_Hallo_ForTheKing_15_00"); //Jsem na krÃ¡lovÄ› stranÄ›!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_01"); //(pohrdavÄ›) 'Na krÃ¡lovÄ› stranÄ›!' To samÃ½ Å™Ã­kali vojÃ¡ci z domobrany, kdyÅ¾ mi vzali pÅ¯lku mÃ½ch ovcÃ­.
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_02"); //Ale kde jsou ti bastardi, kdyÅ¾ si na nÃ¡s doÅ¡lÃ¡pnou banditi? A kde asi tak budou, aÅ¾ nÃ¡s napadnou skÅ™eti?
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_03"); //JÃ¡ ti Å™eknu kde: ve mÄ›stÄ›, za Å¡irokÃ½ma hradbama.
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_04"); //Tak mÄ› s tÃ­m svÃ½m krÃ¡lem neotravuj.
 	
 	Lobart_AgainstKing = FALSE;
 	Info_ClearChoices	(DIA_Lobart_Hallo);
@@ -181,8 +181,8 @@ func void DIA_Lobart_Hallo_ForTheKing()
 
 func void DIA_Lobart_Hallo_What()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_What_15_00"); //Nerozumím...
-	AI_Output (self, other, "DIA_Lobart_Hallo_What_05_01"); //Co?! Nezahrávej si se mnou, hochu! Chci vìdìt, na èí stranì jsi! Tak pro koho jsi?!
+	AI_Output (other, self, "DIA_Lobart_Hallo_What_15_00"); //NerozumÃ­m...
+	AI_Output (self, other, "DIA_Lobart_Hallo_What_05_01"); //Co?! NezahrÃ¡vej si se mnou, hochu! Chci vÄ›dÄ›t, na ÄÃ­ stranÄ› jsi! Tak pro koho jsi?!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -195,7 +195,7 @@ instance DIA_Lobart_KLEIDUNG		(C_INFO)
 	condition	= DIA_Lobart_KLEIDUNG_Condition;
 	information	= DIA_Lobart_KLEIDUNG_Info;
 	permanent 	= FALSE;
-	description	= "Potøebuju nìjaké vhodné šaty!";
+	description	= "PotÅ™ebuju nÄ›jakÃ© vhodnÃ© Å¡aty!";
 };
 
 func int DIA_Lobart_KLEIDUNG_Condition ()
@@ -208,19 +208,19 @@ func int DIA_Lobart_KLEIDUNG_Condition ()
 };
 func void DIA_Lobart_KLEIDUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_KLEIDUNG_15_00"); //Potøebuju nìjaké vhodné šaty!
-	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_01"); //Mùu ti dát èistı farmáøskı pracovní odìv.
-	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_02"); //A mùeš za nìj zaplatit?
+	AI_Output (other, self, "DIA_Lobart_KLEIDUNG_15_00"); //PotÅ™ebuju nÄ›jakÃ© vhodnÃ© Å¡aty!
+	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_01"); //MÅ¯Å¾u ti dÃ¡t ÄistÃ½ farmÃ¡Å™skÃ½ pracovnÃ­ odÄ›v.
+	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_02"); //A mÅ¯Å¾eÅ¡ za nÄ›j zaplatit?
 	
 			Log_CreateTopic (TOPIC_Kleidung,LOG_MISSION);  
 			Log_SetTopicStatus  (TOPIC_Kleidung,LOG_RUNNING);  
-			B_LogEntry (TOPIC_Kleidung,"Sedlák Lobart mi prodá pracovní odìv.");
+			B_LogEntry (TOPIC_Kleidung,"SedlÃ¡k Lobart mi prodÃ¡ pracovnÃ­ odÄ›v.");
 			  
 		
 	if (! Npc_KnowsInfo(other, 	DIA_Lobart_WorkNOW))
 	{
-		AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_03"); //Mùeš si èást ceny odpracovat. Pokud teda HLEDÁŠ práci.
-		B_LogEntry (TOPIC_Kleidung,"Èást ceny si mohu odpracovat na statku. Èím víc práce odvedu, tím ménì mì ty šaty budou stát.");
+		AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_03"); //MÅ¯Å¾eÅ¡ si ÄÃ¡st ceny odpracovat. Pokud teda HLEDÃÅ  prÃ¡ci.
+		B_LogEntry (TOPIC_Kleidung,"ÄŒÃ¡st ceny si mohu odpracovat na statku. ÄŒÃ­m vÃ­c prÃ¡ce odvedu, tÃ­m mÃ©nÄ› mÄ› ty Å¡aty budou stÃ¡t.");
 
 	};
 };
@@ -236,7 +236,7 @@ instance DIA_Lobart_BuyClothes (C_INFO)
 	condition	= DIA_Lobart_BuyClothes_Condition;
 	information	= DIA_Lobart_BuyClothes_Info;
 	permanent 	= TRUE;
-	description	= "Kolik za ty pracovní šaty chceš?";
+	description	= "Kolik za ty pracovnÃ­ Å¡aty chceÅ¡?";
 };
 
 func int DIA_Lobart_BuyClothes_Condition ()
@@ -253,8 +253,8 @@ func void DIA_Lobart_BuyClothes_Info ()
 {
 	Wert_LobartsRuestung = 80; //initialisieren
 	
-	AI_Output (other, self, "DIA_Lobart_BuyClothes_15_00"); //Kolik za ty pracovní šaty chceš?
-	AI_Output (self, other, "DIA_Lobart_BuyClothes_05_01"); //Dobrá, take...
+	AI_Output (other, self, "DIA_Lobart_BuyClothes_15_00"); //Kolik za ty pracovnÃ­ Å¡aty chceÅ¡?
+	AI_Output (self, other, "DIA_Lobart_BuyClothes_05_01"); //DobrÃ¡, takÅ¾e...
 	
 	if (Lobart_AgainstKing == TRUE)
 	{
@@ -264,60 +264,60 @@ func void DIA_Lobart_BuyClothes_Info ()
 	
 	if (MIS_Lobart_Rueben == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_02"); //Pracoval jsi pro mì na poli.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_02"); //Pracoval jsi pro mÄ› na poli.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Hilda_PfanneKaufen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_03"); //Pomohl jsi mé enì.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_03"); //Pomohl jsi mÃ© Å¾enÄ›.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Vino_Wein == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_04"); //Vino øíkal, es mu opravdu pomohl. A to u nìco znamená - ne pokadé drí s nádeníky.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_04"); //Vino Å™Ã­kal, Å¾es mu opravdu pomohl. A to uÅ¾ nÄ›co znamenÃ¡ - ne pokaÅ¾dÃ© drÅ¾Ã­ s nÃ¡denÃ­ky.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Maleth_Bandits == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_05"); //Maleth øíkal, es zahnal bandity. Ti bastardi nám zpùsobili hodnì potíí. Díky, es je odstranil z cesty!
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_05"); //Maleth Å™Ã­kal, Å¾es zahnal bandity. Ti bastardi nÃ¡m zpÅ¯sobili hodnÄ› potÃ­Å¾Ã­. DÃ­ky, Å¾es je odstranil z cesty!
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 
 	// ------------------------------
-	// ------ Wert der Rüstung ------
+	// ------ Wert der RÃ¼stung ------
 	// ------------------------------
 		B_Say_Gold (self, other, Wert_LobartsRuestung);
 		
 		if (Wert_LobartsRuestung == 30) 
 		{
-			AI_Output (self, other, "DIA_Lobart_GOLD_05_06"); //Levnìjší u to nebude.
-			B_LogEntry (TOPIC_Kleidung,"Ale neprodá mi je za ménì ne 30 zlaákù.");
+			AI_Output (self, other, "DIA_Lobart_GOLD_05_06"); //LevnÄ›jÅ¡Ã­ uÅ¾ to nebude.
+			B_LogEntry (TOPIC_Kleidung,"Ale neprodÃ¡ mi je za mÃ©nÄ› neÅ¾ 30 zlaÅ¥Ã¡kÅ¯.");
 		};
 
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
-	Info_AddChoice		(DIA_Lobart_BuyClothes, "To je moc drahé.", DIA_Lobart_BuyClothes_NotYet );
-	Info_AddChoice		(DIA_Lobart_BuyClothes, "Dej mi ty pracovní šaty. (Ochrana: zbranì 15, šípy 15)", DIA_Lobart_BuyClothes_BUY );
+	Info_AddChoice		(DIA_Lobart_BuyClothes, "To je moc drahÃ©.", DIA_Lobart_BuyClothes_NotYet );
+	Info_AddChoice		(DIA_Lobart_BuyClothes, "Dej mi ty pracovnÃ­ Å¡aty. (Ochrana: zbranÄ› 15, Å¡Ã­py 15)", DIA_Lobart_BuyClothes_BUY );
 };
 
 func void DIA_Lobart_BuyClothes_BUY()
 {
-	AI_Output (other, self, "DIA_Lobart_BuyClothes_BUY_15_00"); //Tak to mi ty šaty dej.
+	AI_Output (other, self, "DIA_Lobart_BuyClothes_BUY_15_00"); //Tak to mi ty Å¡aty dej.
 	
 	if (B_GiveInvItems (other, self, ItMi_gold, Wert_LobartsRuestung))
 	{
 		if (Npc_HasItems(self,ItAr_BAU_L) > 0)
 		{
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_01"); //Fajn, chlapèe. S poctivostí nejdál dojdeš. Tady je máš!
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_01"); //Fajn, chlapÄe. S poctivostÃ­ nejdÃ¡l dojdeÅ¡. Tady je mÃ¡Å¡!
 			
 			B_GiveInvItems (self, other, ItAr_BAU_L, 1);
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_02"); //V mém domì je truhla, ve které najdeš èistı odìv.
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_03"); //Ale ani nepomysli na to, e by sis bez optání vzal cokoli dalšího!
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_02"); //V mÃ©m domÄ› je truhla, ve kterÃ© najdeÅ¡ ÄistÃ½ odÄ›v.
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_03"); //Ale ani nepomysli na to, Å¾e by sis bez optÃ¡nÃ­ vzal cokoli dalÅ¡Ã­ho!
 		};
 		
 		Lobart_Kleidung_Verkauft = TRUE;
@@ -327,7 +327,7 @@ func void DIA_Lobart_BuyClothes_BUY()
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_04"); //Nemáš dost zlata!
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_04"); //NemÃ¡Å¡ dost zlata!
 	};
 	
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
@@ -335,7 +335,7 @@ func void DIA_Lobart_BuyClothes_BUY()
 
 func void DIA_Lobart_BuyClothes_NotYet()
 {
-	AI_Output (other, self, "DIA_Lobart_BuyClothes_NotYet_15_00"); //To je moc drahé.
+	AI_Output (other, self, "DIA_Lobart_BuyClothes_NotYet_15_00"); //To je moc drahÃ©.
 	AI_Output (self, other, "DIA_Lobart_BuyClothes_NotYet_05_01"); //Jak je libo...
 	
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
@@ -366,20 +366,20 @@ func int DIA_Lobart_AufstandInfo_Condition ()
 func void DIA_Lobart_AufstandInfo_Info ()
 {
 	AI_Output (other, self, "DIA_Lobart_AufstandInfo_15_00"); //A co jinak?
-	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_01"); //Jak, jinak? Hochu, ODKUD jsi? Jsme na pokraji obèanské války!
+	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_01"); //Jak, jinak? Hochu, ODKUD jsi? Jsme na pokraji obÄanskÃ© vÃ¡lky!
 
 	if 	(hero.guild == GIL_NONE)
 	 {
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_02"); //A doteï pohlíeli všichni farmáøi na odvody mìstu jako na spravedlivou formu zdanìní.
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_03"); //Ale od té doby, co jsou v Khorinidu paladinové, nás vojáci z domobrany navštìvují èím dál tím èastìjc a u si pomalu berou úplnì všechno.
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_04"); //Jestli to tak pùjde dál, nic u nám nezbude.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_02"); //AÅ¾ doteÄ pohlÃ­Å¾eli vÅ¡ichni farmÃ¡Å™i na odvody mÄ›stu jako na spravedlivou formu zdanÄ›nÃ­.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_03"); //Ale od tÃ© doby, co jsou v Khorinidu paladinovÃ©, nÃ¡s vojÃ¡ci z domobrany navÅ¡tÄ›vujÃ­ ÄÃ­m dÃ¡l tÃ­m ÄastÄ›jc a uÅ¾ si pomalu berou ÃºplnÄ› vÅ¡echno.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_04"); //Jestli to tak pÅ¯jde dÃ¡l, nic uÅ¾ nÃ¡m nezbude.
 	 };
 
-	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_05"); //Nìkteøí farmáøi se zaèali bouøit. Onar byl první!
+	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_05"); //NÄ›kteÅ™Ã­ farmÃ¡Å™i se zaÄali bouÅ™it. Onar byl prvnÃ­!
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr über Onar
+//	Mehr Ã¼ber Onar
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_OnarStory (C_INFO)
 {
@@ -388,7 +388,7 @@ instance DIA_Lobart_OnarStory (C_INFO)
 	condition	= DIA_Lobart_OnarStory_Condition;
 	information	= DIA_Lobart_OnarStory_Info;
 	permanent 	= FALSE;
-	description	= "Povìz mi nìco o tom Onarovi.";
+	description	= "PovÄ›z mi nÄ›co o tom Onarovi.";
 };
 
 func int DIA_Lobart_OnarStory_Condition ()
@@ -402,23 +402,23 @@ func int DIA_Lobart_OnarStory_Condition ()
 
 func void DIA_Lobart_OnarStory_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_OnarStory_15_00"); //Øekni mi nìco o tom Onarovi.
+	AI_Output (other, self, "DIA_Lobart_OnarStory_15_00"); //Å˜ekni mi nÄ›co o tom Onarovi.
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_01"); //Ty jsi oldák, ne? Tak co bych ti mìl dalšího øíkat o tvém šéfovi?
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_01"); //Ty jsi Å¾oldÃ¡k, ne? Tak co bych ti mÄ›l dalÅ¡Ã­ho Å™Ã­kat o tvÃ©m Å¡Ã©fovi?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_02"); //Onar je nejvìtší farmáø v okolí. Odtrhl se od mìsta.
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_03"); //Øíká se, e si najal oldáky, aby udrel domobranu na uzdì!
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_04"); //Není se mu co divit.
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_05"); //V kadém pøípadì se na jeho farmu u ádnı královskı voják neodváí vstoupit.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_02"); //Onar je nejvÄ›tÅ¡Ã­ farmÃ¡Å™ v okolÃ­. Odtrhl se od mÄ›sta.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_03"); //Å˜Ã­kÃ¡ se, Å¾e si najal Å¾oldÃ¡ky, aby udrÅ¾el domobranu na uzdÄ›!
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_04"); //NenÃ­ se mu co divit.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_05"); //V kaÅ¾dÃ©m pÅ™Ã­padÄ› se na jeho farmu uÅ¾ Å¾Ã¡dnÃ½ krÃ¡lovskÃ½ vojÃ¡k neodvÃ¡Å¾Ã­ vstoupit.
 		};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr über Söldner
+//	Mehr Ã¼ber SÃ¶ldner
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_SldInfo (C_INFO)
 {
@@ -427,7 +427,7 @@ instance DIA_Lobart_SldInfo (C_INFO)
 	condition	= DIA_Lobart_SldInfo_Condition;
 	information	= DIA_Lobart_SldInfo_Info;
 	permanent 	= FALSE;
-	description	= "Kdo jsou ti oldnéøi, co si Onar najal?";
+	description	= "Kdo jsou ti Å¾oldnÃ©Å™i, co si Onar najal?";
 };
 
 func int DIA_Lobart_SldInfo_Condition ()
@@ -442,13 +442,13 @@ func int DIA_Lobart_SldInfo_Condition ()
 
 func void DIA_Lobart_SldInfo_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00"); //Kdo jsou ti oldnéøi, co si Onar najal?
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01"); //O tìch chlapech toho moc nevím. Údajnì jsou to vìtšinou bıvalí vìzòové z trestanecké kolonie.
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_02"); //(opovrlivì) Všichni moc dobøe vìdí, co se od nich dá oèekávat.
+	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00"); //Kdo jsou ti Å¾oldnÃ©Å™i, co si Onar najal?
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01"); //O tÄ›ch chlapech toho moc nevÃ­m. ÃšdajnÄ› jsou to vÄ›tÅ¡inou bÃ½valÃ­ vÄ›zÅˆovÃ© z trestaneckÃ© kolonie.
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_02"); //(opovrÅ¾livÄ›) VÅ¡ichni moc dobÅ™e vÄ›dÃ­, co se od nich dÃ¡ oÄekÃ¡vat.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Für wen bist du?
+//	FÃ¼r wen bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WhichSide (C_INFO)
 {
@@ -457,7 +457,7 @@ instance DIA_Lobart_WhichSide (C_INFO)
 	condition	= DIA_Lobart_WhichSide_Condition;
 	information	= DIA_Lobart_WhichSide_Info;
 	permanent 	= FALSE;
-	description	= "Na èí stranì stojíš? Jsi se sedláky, nebo s králem?";
+	description	= "Na ÄÃ­ stranÄ› stojÃ­Å¡? Jsi se sedlÃ¡ky, nebo s krÃ¡lem?";
 };
 
 func int DIA_Lobart_WhichSide_Condition ()
@@ -471,20 +471,20 @@ func int DIA_Lobart_WhichSide_Condition ()
 
 func void DIA_Lobart_WhichSide_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_WhichSide_15_00"); //A co ty? Na èí stranì jsi? Rolníci, nebo král?
-	AI_Output (self, other, "DIA_Lobart_WhichSide_05_01"); //Jsem pøíliš blízko mìstu, ne abych mìl na vıbìr.
-	AI_Output (self, other, "DIA_Lobart_WhichSide_05_02"); //Ale já jsem vlastnì rád. Nevìdìl bych, jak se rozhodnout.
+	AI_Output (other, self, "DIA_Lobart_WhichSide_15_00"); //A co ty? Na ÄÃ­ stranÄ› jsi? RolnÃ­ci, nebo krÃ¡l?
+	AI_Output (self, other, "DIA_Lobart_WhichSide_05_01"); //Jsem pÅ™Ã­liÅ¡ blÃ­zko mÄ›stu, neÅ¾ abych mÄ›l na vÃ½bÄ›r.
+	AI_Output (self, other, "DIA_Lobart_WhichSide_05_02"); //Ale jÃ¡ jsem vlastnÄ› rÃ¡d. NevÄ›dÄ›l bych, jak se rozhodnout.
 	
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WhichSide_05_03"); //Král nás vysává a Onar posílá svı oldáky na kadıho, kdo se k nìmu odmítl pøidat.
-		AI_Output (self, other, "DIA_Lobart_WhichSide_05_04"); //To je taky dùvod, proè se vìtšina ostatních farmáøù ještì nerozhodla. Ale døíve èi pozdìji se budou muset k jedné stranì pøidat.
+		AI_Output (self, other, "DIA_Lobart_WhichSide_05_03"); //KrÃ¡l nÃ¡s vysÃ¡vÃ¡ a Onar posÃ­lÃ¡ svÃ½ Å¾oldÃ¡ky na kaÅ¾dÃ½ho, kdo se k nÄ›mu odmÃ­tl pÅ™idat.
+		AI_Output (self, other, "DIA_Lobart_WhichSide_05_04"); //To je taky dÅ¯vod, proÄ se vÄ›tÅ¡ina ostatnÃ­ch farmÃ¡Å™Å¯ jeÅ¡tÄ› nerozhodla. Ale dÅ™Ã­ve Äi pozdÄ›ji se budou muset k jednÃ© stranÄ› pÅ™idat.
 	};
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	*** MISSION: Rüben ziehen ***
+//	*** MISSION: RÃ¼ben ziehen ***
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WorkNOW (C_INFO)
 {
@@ -493,7 +493,7 @@ instance DIA_Lobart_WorkNOW (C_INFO)
 	condition	= DIA_Lobart_WorkNOW_Condition;
 	information	= DIA_Lobart_WorkNOW_Info;
 	permanent 	= FALSE;
-	description	= "Hledám práci.";
+	description	= "HledÃ¡m prÃ¡ci.";
 };
 
 func int DIA_Lobart_WorkNOW_Condition ()
@@ -511,48 +511,48 @@ func int DIA_Lobart_WorkNOW_Condition ()
 
 func void DIA_Lobart_WorkNOW_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_15_00"); //Hledám práci.
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_01"); //Dalšího rolníka u nemùu potøebovat. Ale mùu ti nabídnout práci nádeníka.
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_02"); //Tím myslím, e mùeš pøiloit ruku k dílu na poli. A taky se urèitì najde pár dalších vìcí, co se tu kolem musí udìlat.
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_15_00"); //HledÃ¡m prÃ¡ci.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_01"); //DalÅ¡Ã­ho rolnÃ­ka uÅ¾ nemÅ¯Å¾u potÅ™ebovat. Ale mÅ¯Å¾u ti nabÃ­dnout prÃ¡ci nÃ¡denÃ­ka.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_02"); //TÃ­m myslÃ­m, Å¾e mÅ¯Å¾eÅ¡ pÅ™iloÅ¾it ruku k dÃ­lu na poli. A taky se urÄitÄ› najde pÃ¡r dalÅ¡Ã­ch vÄ›cÃ­, co se tu kolem musÃ­ udÄ›lat.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_03"); //Mùu ti zaplatit zlatem. Nebo ti dám nìjaké slušné vìci na sebe.
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_04"); //Ty vìci docela stojí za to. Nemùu ti je dát zadarmo, ale mùu ti je pak prodat se slevou.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_03"); //MÅ¯Å¾u ti zaplatit zlatem. Nebo ti dÃ¡m nÄ›jakÃ© sluÅ¡nÃ© vÄ›ci na sebe.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_04"); //Ty vÄ›ci docela stojÃ­ za to. NemÅ¯Å¾u ti je dÃ¡t zadarmo, ale mÅ¯Å¾u ti je pak prodat se slevou.
 			
 		Log_CreateTopic (TOPIC_Kleidung,LOG_MISSION);  
 		Log_SetTopicStatus  (TOPIC_Kleidung,LOG_RUNNING);  
-		B_LogEntry (TOPIC_Kleidung,"Sedlák Lobart mi mùe prodat pracovní odìv. Èást ceny si mohu odpracovat na jeho statku - èím víc práce odvedu, tím ménì mì ty šaty budou stát.");
+		B_LogEntry (TOPIC_Kleidung,"SedlÃ¡k Lobart mi mÅ¯Å¾e prodat pracovnÃ­ odÄ›v. ÄŒÃ¡st ceny si mohu odpracovat na jeho statku - ÄÃ­m vÃ­c prÃ¡ce odvedu, tÃ­m mÃ©nÄ› mÄ› ty Å¡aty budou stÃ¡t.");
 			
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Lobart_Kleidung_Verkauft == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_05"); //Ale jak na tebe tak koukám, musím øíct: vezmi si ty šaty.
+			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_05"); //Ale jak na tebe tak koukÃ¡m, musÃ­m Å™Ã­ct: vezmi si ty Å¡aty.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_06"); //Ale ty u máš šaty, take asi budeš chtít zlato.
+			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_06"); //Ale ty uÅ¾ mÃ¡Å¡ Å¡aty, takÅ¾e asi budeÅ¡ chtÃ­t zlato.
 		};
 	};
 
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_07"); //Take - ten tuøínovı záhon za stodolou se musí sklidit.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_07"); //TakÅ¾e - ten tuÅ™Ã­novÃ½ zÃ¡hon za stodolou se musÃ­ sklidit.
 	
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
-	Info_AddChoice		(DIA_Lobart_WorkNOW, "Já mám tahat ze zemì tuøín? To si ze mì dìláš srandu!", DIA_Lobart_WorkNOW_WannaFoolMe );
-	Info_AddChoice		(DIA_Lobart_WorkNOW, "Dobrá.", DIA_Lobart_WorkNOW_Ok );
+	Info_AddChoice		(DIA_Lobart_WorkNOW, "JÃ¡ mÃ¡m tahat ze zemÄ› tuÅ™Ã­n? To si ze mÄ› dÄ›lÃ¡Å¡ srandu!", DIA_Lobart_WorkNOW_WannaFoolMe );
+	Info_AddChoice		(DIA_Lobart_WorkNOW, "DobrÃ¡.", DIA_Lobart_WorkNOW_Ok );
 };
 
 func void DIA_Lobart_WorkNOW_Ok()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_Ok_15_00"); //Dobrá...
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_Ok_15_00"); //DobrÃ¡...
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_Ok_05_01"); //Tak si s tím koukej pospíšit, ne si to rozmyslím.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_Ok_05_01"); //Tak si s tÃ­m koukej pospÃ­Å¡it, neÅ¾ si to rozmyslÃ­m.
 	};
 	Log_CreateTopic (TOPIC_Rueben,LOG_MISSION);  
 	Log_SetTopicStatus  (TOPIC_Rueben,LOG_RUNNING);  
-	B_LogEntry (TOPIC_Rueben,"Sedlák Lobart chce, abych mu z pole sklidil tuøíny. Za odmìnu dostanu pár zlaákù a budu si u nìj moci koupit ošacení se slevou.");
+	B_LogEntry (TOPIC_Rueben,"SedlÃ¡k Lobart chce, abych mu z pole sklidil tuÅ™Ã­ny. Za odmÄ›nu dostanu pÃ¡r zlaÅ¥Ã¡kÅ¯ a budu si u nÄ›j moci koupit oÅ¡acenÃ­ se slevou.");
 	
 	MIS_Lobart_Rueben = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
@@ -560,21 +560,21 @@ func void DIA_Lobart_WorkNOW_Ok()
 
 func void DIA_Lobart_WorkNOW_WannaFoolMe()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_WannaFoolMe_15_00"); //Já mám tahat ze zemì tuøín? To si musíš dìlat srandu!
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_01"); //Poøádná chlapská práce není pro takovıho 'nafrnìnıho dentlmena', eh?
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_WannaFoolMe_15_00"); //JÃ¡ mÃ¡m tahat ze zemÄ› tuÅ™Ã­n? To si musÃ­Å¡ dÄ›lat srandu!
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_01"); //PoÅ™Ã¡dnÃ¡ chlapskÃ¡ prÃ¡ce nenÃ­ pro takovÃ½ho 'nafrnÄ›nÃ½ho dÅ¾entlmena', eh?
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_02"); //Buï vytahej ty tuøíny ze zemì, nebo táhni z mojí farmy!
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_02"); //BuÄ vytahej ty tuÅ™Ã­ny ze zemÄ›, nebo tÃ¡hni z mojÃ­ farmy!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_03"); //Právì teï pro tebe nemám ádnou další práci.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_03"); //PrÃ¡vÄ› teÄ pro tebe nemÃ¡m Å¾Ã¡dnou dalÅ¡Ã­ prÃ¡ci.
 	};
 	
 	Log_CreateTopic (TOPIC_Rueben,LOG_MISSION);  
 	Log_SetTopicStatus  (TOPIC_Rueben,LOG_RUNNING);  
-	B_LogEntry (TOPIC_Rueben,"Sedlák Lobart chce, abych mu z pole sklidil tuøíny. Za odmìnu dostanu pár zlaákù a budu si u nìj moci koupit ošacení se slevou.");
+	B_LogEntry (TOPIC_Rueben,"SedlÃ¡k Lobart chce, abych mu z pole sklidil tuÅ™Ã­ny. Za odmÄ›nu dostanu pÃ¡r zlaÅ¥Ã¡kÅ¯ a budu si u nÄ›j moci koupit oÅ¡acenÃ­ se slevou.");
 	
 	MIS_Lobart_Rueben = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
@@ -591,7 +591,7 @@ instance DIA_Lobart_RuebenRunning		(C_INFO)
 	condition	 = 	DIA_Lobart_RuebenRunning_Condition;
 	information	 = 	DIA_Lobart_RuebenRunning_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Tady jsou tvoje tuøíny!";
+	description	 = 	"Tady jsou tvoje tuÅ™Ã­ny!";
 };
 
 func int DIA_Lobart_RuebenRunning_Condition ()
@@ -606,57 +606,57 @@ func int DIA_Lobart_RuebenRunning_Condition ()
 
 func void DIA_Lobart_RuebenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_00"); //Tady jsou tvoje tuøíny!
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_00"); //Tady jsou tvoje tuÅ™Ã­ny!
 
 	if (Npc_HasItems (other,ItPl_Beet) >= 20)
 	{
 		if (hero.guild == GIL_NONE)
 			{
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_01"); //Hej, ty pøece jen nebudeš takovej darmorout.
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_01"); //Hej, ty pÅ™ece jen nebudeÅ¡ takovej darmoÅ¾rout.
 			};
 
 		if ((Npc_IsDead(Hilda))== FALSE)
 		{
-			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_02"); //Dej je mé enì v kuchyni a øekni jí, a je uvaøí.
+			AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_02"); //Dej je mÃ© Å¾enÄ› v kuchyni a Å™ekni jÃ­, aÅ¥ je uvaÅ™Ã­.
 	
 			MIS_Lobart_RuebenToHilda = LOG_RUNNING;
 			Log_CreateTopic (TOPIC_Ruebenbringen,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_Ruebenbringen,LOG_RUNNING);
-			B_LogEntry (TOPIC_Ruebenbringen,"Musím ty tuøíny doruèit do domu a pøedat je Lobartovì enì, která z nich nìco dobrého uvaøí.");
+			B_LogEntry (TOPIC_Ruebenbringen,"MusÃ­m ty tuÅ™Ã­ny doruÄit do domu a pÅ™edat je LobartovÄ› Å¾enÄ›, kterÃ¡ z nich nÄ›co dobrÃ©ho uvaÅ™Ã­.");
 		};
 		
 		MIS_Lobart_Rueben = LOG_SUCCESS;
 		B_GivePlayerXP (XP_LobartHolRueben);
 		 
 	//	Log_SetTopicStatus(TOPIC_BauerLobart, LOG_SUCCESS); ALT
-	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine Rüben gebracht, er hat mich dafür entlohnt."); 
+	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine RÃ¼ben gebracht, er hat mich dafÃ¼r entlohnt."); 
 		
 		AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_03"); //A co moje mzda?
-		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //Mùu ti dát 5 zlatıch.
+		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //MÅ¯Å¾u ti dÃ¡t 5 zlatÃ½ch.
 		
 		if (hero.guild == GIL_NONE)
 			{
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_05"); //...nebo ti slevit z ceny tìch šatù. Tak co to bude?
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_05"); //...nebo ti slevit z ceny tÄ›ch Å¡atÅ¯. Tak co to bude?
 			};
 	
 		Info_ClearChoices 	(DIA_Lobart_RuebenRunning);
 
 		if (hero.guild == GIL_NONE)
 			{
-				Info_AddChoice		(DIA_Lobart_RuebenRunning, "Chci slevu na ty šaty!",	DIA_Lobart_RuebenRunning_Billiger );
+				Info_AddChoice		(DIA_Lobart_RuebenRunning, "Chci slevu na ty Å¡aty!",	DIA_Lobart_RuebenRunning_Billiger );
 			};
 
-		Info_AddChoice		(DIA_Lobart_RuebenRunning, "Dej mi tìch 5 zlatıch!", 		DIA_Lobart_RuebenRunning_Gold );
+		Info_AddChoice		(DIA_Lobart_RuebenRunning, "Dej mi tÄ›ch 5 zlatÃ½ch!", 		DIA_Lobart_RuebenRunning_Gold );
 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_06"); //Ale to není všech 20!
+		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_06"); //Ale to nenÃ­ vÅ¡ech 20!
 		
 		if (hero.guild == GIL_NONE)
 			{
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_07"); //Jsi tady na dovolené?! Doufám, e ne, chlapèe, jinak mùeš na svou mzdu zapomenout!
-				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_08"); //Vra se tam a pøines jich víc! Mazej do práce, nebo ti ukáu!
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_07"); //Jsi tady na dovolenÃ©?! DoufÃ¡m, Å¾e ne, chlapÄe, jinak mÅ¯Å¾eÅ¡ na svou mzdu zapomenout!
+				AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_08"); //VraÅ¥ se tam a pÅ™ines jich vÃ­c! Mazej do prÃ¡ce, nebo ti ukÃ¡Å¾u!
 			};
 		
 		AI_StopProcessInfos (self);
@@ -665,7 +665,7 @@ func void DIA_Lobart_RuebenRunning_Info ()
 
 func void DIA_Lobart_RuebenRunning_Gold ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Gold_15_00"); //Dej mi tìch 5 zlatıch!
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Gold_15_00"); //Dej mi tÄ›ch 5 zlatÃ½ch!
 	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Gold_05_01"); //Tady.
 
 	B_GiveInvItems (self, other, ItMi_Gold, 5);
@@ -681,8 +681,8 @@ func void DIA_Lobart_RuebenRunning_Gold ()
 
 func void DIA_Lobart_RuebenRunning_Billiger ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Billiger_15_00"); //Chci slevu na ty šaty!
-	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Billiger_05_01"); //Fajn! Dám ti je o 10 zlatıch levnìjc.
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Billiger_15_00"); //Chci slevu na ty Å¡aty!
+	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Billiger_05_01"); //Fajn! DÃ¡m ti je o 10 zlatÃ½ch levnÄ›jc.
 	
 	Info_ClearChoices 	(DIA_Lobart_RuebenRunning);
 };
@@ -697,7 +697,7 @@ instance DIA_Lobart_MoreWork (C_INFO)
 	condition	= DIA_Lobart_MoreWork_Condition;
 	information	= DIA_Lobart_MoreWork_Info;
 	permanent 	= TRUE;
-	description	= "Máš pro mì ještì nìjakou další práci?";
+	description	= "MÃ¡Å¡ pro mÄ› jeÅ¡tÄ› nÄ›jakou dalÅ¡Ã­ prÃ¡ci?";
 };
 
 func int DIA_Lobart_MoreWork_Condition ()
@@ -712,15 +712,15 @@ func int DIA_Lobart_MoreWork_Condition ()
 
 func void DIA_Lobart_MoreWork_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_MoreWork_15_00"); //Máš pro mì ještì nìjakou další práci?
+	AI_Output (other, self, "DIA_Lobart_MoreWork_15_00"); //MÃ¡Å¡ pro mÄ› jeÅ¡tÄ› nÄ›jakou dalÅ¡Ã­ prÃ¡ci?
 	
 	if (MIS_Lobart_Rueben == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Lobart_MoreWork_05_01"); //Nejdøív skliï ty tuøíny a pak se uvidí.
+		AI_Output (self, other, "DIA_Lobart_MoreWork_05_01"); //NejdÅ™Ã­v skliÄ ty tuÅ™Ã­ny a pak se uvidÃ­.
 	}
 	else //SUCCESS
 	{
-		AI_Output (self, other, "DIA_Lobart_MoreWork_05_02"); //Já ne, ale mùeš se zeptat mé eny nebo chlapù na polích. Tøeba budou potøebovat s nìèím pomoct.
+		AI_Output (self, other, "DIA_Lobart_MoreWork_05_02"); //JÃ¡ ne, ale mÅ¯Å¾eÅ¡ se zeptat mÃ© Å¾eny nebo chlapÅ¯ na polÃ­ch. TÅ™eba budou potÅ™ebovat s nÄ›ÄÃ­m pomoct.
 	};
 };
 
@@ -742,7 +742,7 @@ instance DIA_Lobart_ANDREHELPLOBART		(C_INFO)
 	npc			 = 	BAU_950_Lobart;
 	condition	 = 	DIA_Lobart_ANDREHELPLOBART_Condition;
 	information	 = 	DIA_Lobart_ANDREHELPLOBART_Info;
-	description	 = 	"Posílá mì za tebou Andre.";
+	description	 = 	"PosÃ­lÃ¡ mÄ› za tebou Andre.";
 };
 
 func int DIA_Lobart_ANDREHELPLOBART_Condition ()
@@ -755,11 +755,11 @@ func int DIA_Lobart_ANDREHELPLOBART_Condition ()
 
 func void DIA_Lobart_ANDREHELPLOBART_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ANDREHELPLOBART_15_00"); //Andre mì poslal za tebou. Máš pro mì nìjakou práci?
-	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_01"); //Jo, jasnì. Z tìch zatracenejch polních škùdcù u se mi zvedá kufr.
-	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_02"); //Oddìlej je všechny. Je mi jedno jak!
+	AI_Output			(other, self, "DIA_Lobart_ANDREHELPLOBART_15_00"); //Andre mÄ› poslal za tebou. MÃ¡Å¡ pro mÄ› nÄ›jakou prÃ¡ci?
+	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_01"); //Jo, jasnÄ›. Z tÄ›ch zatracenejch polnÃ­ch Å¡kÅ¯dcÅ¯ uÅ¾ se mi zvedÃ¡ kufr.
+	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_02"); //OddÄ›lej je vÅ¡echny. Je mi jedno jak!
 
-	Log_AddEntry (TOPIC_BecomeMIL,"Lobartova pole suují polní škùdci - mám je všechny zahnat."); 
+	Log_AddEntry (TOPIC_BecomeMIL,"Lobartova pole suÅ¾ujÃ­ polnÃ­ Å¡kÅ¯dci - mÃ¡m je vÅ¡echny zahnat."); 
 	MIS_LobartKillBugs = LOG_RUNNING;
 	
 	AI_StopProcessInfos (self);
@@ -773,7 +773,7 @@ instance DIA_Lobart_BUGDEAD		(C_INFO)
 	condition	 = 	DIA_Lobart_BUGDEAD_Condition;
 	information	 = 	DIA_Lobart_BUGDEAD_Info;
 	permanent 	 = 	TRUE;
-	description	 = 	"Zatoèil jsem s tìma vìcma!";
+	description	 = 	"ZatoÄil jsem s tÄ›ma vÄ›cma!";
 };
 
 var int DIA_Lobart_BUGDEAD_noPerm;
@@ -800,8 +800,8 @@ func void DIA_Lobart_BUGDEAD_Info ()
 		)
 
 		{
-			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_00"); //Zatoèil jsem s tìma vìcma!
-			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_01"); //Dobrá práce. Nejsi zas tak špatnej deratizátor. Doporuèím tì sousedùm. Na oplátku si vezmi tohle.
+			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_00"); //ZatoÄil jsem s tÄ›ma vÄ›cma!
+			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_01"); //DobrÃ¡ prÃ¡ce. Nejsi zas tak Å¡patnej deratizÃ¡tor. DoporuÄÃ­m tÄ› sousedÅ¯m. Na oplÃ¡tku si vezmi tohle.
 			
 			B_StartOtherRoutine	(Vino,"Start");
 			B_StartOtherRoutine	(LobartsBauer1,"Start");
@@ -812,13 +812,13 @@ func void DIA_Lobart_BUGDEAD_Info ()
 
 			MIS_LobartKillBugs 	= LOG_SUCCESS;
 			MIS_AndreHelpLobart = LOG_SUCCESS;
-			Log_AddEntry (TOPIC_BecomeMIL,"Polní škùdci u nebudou Lobarta obtìovat - všichni u jsou pryè."); 
+			Log_AddEntry (TOPIC_BecomeMIL,"PolnÃ­ Å¡kÅ¯dci uÅ¾ nebudou Lobarta obtÄ›Å¾ovat - vÅ¡ichni uÅ¾ jsou pryÄ."); 
 			DIA_Lobart_BUGDEAD_noPerm = TRUE;
 		}
 		else  
 		{
-			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_02"); //Zatoèil jsem s tìma vìcma!
-			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_03"); //Nepokoušej si ze mì dìlat blázny. Poøád je tam vidím. Buï ty zvíøata zabiješ, nebo na celou tu vìc zapomeò.
+			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_02"); //ZatoÄil jsem s tÄ›ma vÄ›cma!
+			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_03"); //NepokouÅ¡ej si ze mÄ› dÄ›lat blÃ¡zny. PoÅ™Ã¡d je tam vidÃ­m. BuÄ ty zvÃ­Å™ata zabijeÅ¡, nebo na celou tu vÄ›c zapomeÅˆ.
 			AI_StopProcessInfos (self);
 		};
 };
@@ -880,8 +880,8 @@ func int DIA_Lobart_DMT_Condition ()
 func void DIA_Lobart_DMT_Info ()
 {
 	AI_Output			(other, self, "DIA_Lobart_DMT_15_00"); //Jak to jde s tvou farmou?
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_01"); //U se to nedá vydret.
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_02"); //Najednou se tu objevili ti chlápci v èernıch kápích a postávají u cesty a u mojí farmy.
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_01"); //UÅ¾ se to nedÃ¡ vydrÅ¾et.
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_02"); //Najednou se tu objevili ti chlÃ¡pci v ÄernÃ½ch kÃ¡pÃ­ch a postÃ¡vajÃ­ u cesty a u mojÃ­ farmy.
 
 
 	Info_ClearChoices	(DIA_Lobart_DMT);
@@ -891,42 +891,42 @@ func void DIA_Lobart_DMT_Info ()
 	if (hero.guild == GIL_KDF)
 	&& (Vino_isAlive_Kap3 == TRUE)
 		{
-		AI_Output			(self, other, "DIA_Lobart_DMT_05_03"); //Nejdøív hroznì dlouho mluvili s Vinem a pak zmizeli i s ním.
+		AI_Output			(self, other, "DIA_Lobart_DMT_05_03"); //NejdÅ™Ã­v hroznÄ› dlouho mluvili s Vinem a pak zmizeli i s nÃ­m.
 
 			if (NpcObsessedByDMT_Vino == FALSE)
 			{
 			Info_AddChoice	(DIA_Lobart_DMT, "Kam odvlekli Vina?", DIA_Lobart_DMT_VinoWohin );
 			};
-			Info_AddChoice	(DIA_Lobart_DMT, "Co mìli za kšefty s Vinem?", DIA_Lobart_DMT_VinoWas );
+			Info_AddChoice	(DIA_Lobart_DMT, "Co mÄ›li za kÅ¡efty s Vinem?", DIA_Lobart_DMT_VinoWas );
 		};
 
 	if ((Npc_IsDead(Hilda))== FALSE)
 	&& ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL)	||	(hero.guild == GIL_KDF))
 	{
-		AI_Output			(self, other, "DIA_Lobart_DMT_05_04"); //Moje ena zase onemocnìla. U moc dlouho jenom leí v posteli. Stává se jí to docela èasto.
+		AI_Output			(self, other, "DIA_Lobart_DMT_05_04"); //Moje Å¾ena zase onemocnÄ›la. UÅ¾ moc dlouho jenom leÅ¾Ã­ v posteli. StÃ¡vÃ¡ se jÃ­ to docela Äasto.
 	};
 
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_05"); //Já u se z toho sloím!
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_05"); //JÃ¡ uÅ¾ se z toho sloÅ¾Ã­m!
 
 	if (MIS_HealHilda != LOG_SUCCESS)
 	&& ((Npc_IsDead(Hilda)) == FALSE)
 	&& ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL)	||	(hero.guild == GIL_KDF))
 	{
-		Info_AddChoice	(DIA_Lobart_DMT, "Proè svou enu nevezmeš k léèiteli?", DIA_Lobart_DMT_FrauHeilen );
+		Info_AddChoice	(DIA_Lobart_DMT, "ProÄ svou Å¾enu nevezmeÅ¡ k lÃ©Äiteli?", DIA_Lobart_DMT_FrauHeilen );
 	};
 
-	Info_AddChoice	(DIA_Lobart_DMT, "Proè s tìmi èernokabátníky nìco neudìláš?", DIA_Lobart_DMT_hof );
-	Info_AddChoice	(DIA_Lobart_DMT, "Mluvil jsi s tìmi mui v èerném?", DIA_Lobart_DMT_spokeToThem );
+	Info_AddChoice	(DIA_Lobart_DMT, "ProÄ s tÄ›mi ÄernokabÃ¡tnÃ­ky nÄ›co neudÄ›lÃ¡Å¡?", DIA_Lobart_DMT_hof );
+	Info_AddChoice	(DIA_Lobart_DMT, "Mluvil jsi s tÄ›mi muÅ¾i v ÄernÃ©m?", DIA_Lobart_DMT_spokeToThem );
 	
 };
 func void DIA_Lobart_DMT_FrauHeilen ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_FrauHeilen_15_00"); //Proè svou enu nevezmeš k léèiteli?
-	AI_Output			(self, other, "DIA_Lobart_DMT_FrauHeilen_05_01"); //Mìli bychom zajít do mìsta za Vatrasem, ale nemùu vytáhnout paty z domu, dokud se to tu nìjak neurovná.
+	AI_Output			(other, self, "DIA_Lobart_DMT_FrauHeilen_15_00"); //ProÄ svou Å¾enu nevezmeÅ¡ k lÃ©Äiteli?
+	AI_Output			(self, other, "DIA_Lobart_DMT_FrauHeilen_05_01"); //MÄ›li bychom zajÃ­t do mÄ›sta za Vatrasem, ale nemÅ¯Å¾u vytÃ¡hnout paty z domu, dokud se to tu nÄ›jak neurovnÃ¡.
 	
 	Log_CreateTopic (TOPIC_HealHilda, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HealHilda, LOG_RUNNING);
-	B_LogEntry (TOPIC_HealHilda,"Lobartovì enì Hildì je špatnì, ale Vatras by pro ni mìl mít nìjakı lék."); 
+	B_LogEntry (TOPIC_HealHilda,"LobartovÄ› Å¾enÄ› HildÄ› je Å¡patnÄ›, ale Vatras by pro ni mÄ›l mÃ­t nÄ›jakÃ½ lÃ©k."); 
 
 	MIS_HealHilda = LOG_RUNNING;	
 };
@@ -939,28 +939,28 @@ func void DIA_Lobart_DMT_BACK ()
 
 func void DIA_Lobart_DMT_spokeToThem ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_spokeToThem_15_00"); //Mluvil jsi s tìmi mui v èerném?
-	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_01"); //Jasnì. Tomu se nejde vyhnout.
-	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_02"); //Mám dojem, e nìkoho hledají.
+	AI_Output			(other, self, "DIA_Lobart_DMT_spokeToThem_15_00"); //Mluvil jsi s tÄ›mi muÅ¾i v ÄernÃ©m?
+	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_01"); //JasnÄ›. Tomu se nejde vyhnout.
+	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_02"); //MÃ¡m dojem, Å¾e nÄ›koho hledajÃ­.
 };
 
 func void DIA_Lobart_DMT_hof ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_hof_15_00"); //Proè s tìmi èernokabátníky nìco neudìláš?
-	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_01"); //Vánì bych rád. Ale vidìl jsem, jak jednoho èlovìka z mìsta upálili zaiva. Jenom tak.
-	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_02"); //Proè bych mìl riskovat ivot?
+	AI_Output			(other, self, "DIA_Lobart_DMT_hof_15_00"); //ProÄ s tÄ›mi ÄernokabÃ¡tnÃ­ky nÄ›co neudÄ›lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_01"); //VÃ¡Å¾nÄ› bych rÃ¡d. Ale vidÄ›l jsem, jak jednoho ÄlovÄ›ka z mÄ›sta upÃ¡lili zaÅ¾iva. Jenom tak.
+	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_02"); //ProÄ bych mÄ›l riskovat Å¾ivot?
 };
 
 func void DIA_Lobart_DMT_VinoWas ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWas_15_00"); //Co mìli za kšefty s Vinem?
-	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWas_05_01"); //To neøíkal. Prostì ho vzali s sebou.
+	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWas_15_00"); //Co mÄ›li za kÅ¡efty s Vinem?
+	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWas_05_01"); //To neÅ™Ã­kal. ProstÄ› ho vzali s sebou.
 };
 
 func void DIA_Lobart_DMT_VinoWohin ()
 {
 	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWohin_15_00"); //Kam odvlekli Vina?
-	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWohin_05_01"); //Odešli s ním do hor.
+	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWohin_05_01"); //OdeÅ¡li s nÃ­m do hor.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -973,7 +973,7 @@ instance DIA_Lobart_VINOTOT		(C_INFO)
 	condition	 = 	DIA_Lobart_VINOTOT_Condition;
 	information	 = 	DIA_Lobart_VINOTOT_Info;
 
-	description	 = 	"Vino se u nevrátí.";
+	description	 = 	"Vino se uÅ¾ nevrÃ¡tÃ­.";
 };
 
 func int DIA_Lobart_VINOTOT_Condition ()
@@ -988,18 +988,18 @@ func int DIA_Lobart_VINOTOT_Condition ()
 
 func void DIA_Lobart_VINOTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_00"); //Vino se u nevrátí.
+	AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_00"); //Vino se uÅ¾ nevrÃ¡tÃ­.
 
 	if (Npc_IsDead(Vino))	
 	{
-		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_01"); //Je mrtvı.
+		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_01"); //Je mrtvÃ½.
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_02"); //Pøivedli ho k šílenství.
+		AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_02"); //PÅ™ivedli ho k Å¡Ã­lenstvÃ­.
 	};
 	
-	AI_Output			(self, other, "DIA_Lobart_VINOTOT_05_03"); //U Innose. Doufejme, e ta noèní mùra u brzy skonèí.
+	AI_Output			(self, other, "DIA_Lobart_VINOTOT_05_03"); //U Innose. Doufejme, Å¾e ta noÄnÃ­ mÅ¯ra uÅ¾ brzy skonÄÃ­.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -1015,7 +1015,7 @@ instance DIA_Lobart_PERM		(C_INFO)
 	information	 = 	DIA_Lobart_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dávej na svou farmu pozor!";
+	description	 = 	"DÃ¡vej na svou farmu pozor!";
 };
 
 func int DIA_Lobart_PERM_Condition ()
@@ -1035,8 +1035,8 @@ func int DIA_Lobart_PERM_Condition ()
 
 func void DIA_Lobart_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_PERM_15_00"); //Dávej na svou farmu pozor!
-	AI_Output			(self, other, "DIA_Lobart_PERM_05_01"); //Pokusím se.
+	AI_Output			(other, self, "DIA_Lobart_PERM_15_00"); //DÃ¡vej na svou farmu pozor!
+	AI_Output			(self, other, "DIA_Lobart_PERM_05_01"); //PokusÃ­m se.
 };
 
 
@@ -1085,7 +1085,7 @@ instance DIA_Lobart_ORKPROBLEM		(C_INFO)
 	condition	 = 	DIA_Lobart_ORKPROBLEM_Condition;
 	information	 = 	DIA_Lobart_ORKPROBLEM_Info;
 
-	description	 = 	"Mám problém se skøety.";
+	description	 = 	"MÃ¡m problÃ©m se skÅ™ety.";
 };
 
 func int DIA_Lobart_ORKPROBLEM_Condition ()
@@ -1106,13 +1106,13 @@ func int DIA_Lobart_ORKPROBLEM_Condition ()
 
 func void DIA_Lobart_ORKPROBLEM_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ORKPROBLEM_15_00"); //Mám problém se skøety.
-	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_01"); //(øve) Zatracenì. Copak to nikdy neskonèí?
-	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_02"); //Kdy to takhle pùjde dál, nebude mít moje farma hodnotu ani 3 zlatıch.
+	AI_Output			(other, self, "DIA_Lobart_ORKPROBLEM_15_00"); //MÃ¡m problÃ©m se skÅ™ety.
+	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_01"); //(Å™ve) ZatracenÄ›. Copak to nikdy neskonÄÃ­?
+	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_02"); //KdyÅ¾ to takhle pÅ¯jde dÃ¡l, nebude mÃ­t moje farma hodnotu ani 3 zlatÃ½ch.
 	
 	Log_CreateTopic (TOPIC_LobartsOrKProblem, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_LobartsOrKProblem, LOG_RUNNING);
-	B_LogEntry (TOPIC_LobartsOrKProblem,"Na Lobartovì statku se usadili skøeti. Mám je nìjak zahnat."); 
+	B_LogEntry (TOPIC_LobartsOrKProblem,"Na LobartovÄ› statku se usadili skÅ™eti. MÃ¡m je nÄ›jak zahnat."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -1127,7 +1127,7 @@ instance DIA_Lobart_ORKSWEG		(C_INFO)
 	condition	 = 	DIA_Lobart_ORKSWEG_Condition;
 	information	 = 	DIA_Lobart_ORKSWEG_Info;
 
-	description	 = 	"Vyhnal jsem ty skøety z tvého pozemku.";
+	description	 = 	"Vyhnal jsem ty skÅ™ety z tvÃ©ho pozemku.";
 };
 
 func int DIA_Lobart_ORKSWEG_Condition ()
@@ -1147,12 +1147,12 @@ func int DIA_Lobart_ORKSWEG_Condition ()
 
 func void DIA_Lobart_ORKSWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ORKSWEG_15_00"); //Vyhnal jsem ty skøety z tvého pozemku.
+	AI_Output			(other, self, "DIA_Lobart_ORKSWEG_15_00"); //Vyhnal jsem ty skÅ™ety z tvÃ©ho pozemku.
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_01"); //Nedovol nikomu, aby o paladinech øíkal, e pro nás malé farmáøe nic nedìlají.
+		AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_01"); //Nedovol nikomu, aby o paladinech Å™Ã­kal, Å¾e pro nÃ¡s malÃ© farmÃ¡Å™e nic nedÄ›lajÃ­.
 	};
-	AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_02"); //Díky Innosovi. Nemùu ti toho dát zrovna moc, ale doufám, e alespoò oceníš vyjádøení mé vdìènosti.
+	AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_02"); //DÃ­ky Innosovi. NemÅ¯Å¾u ti toho dÃ¡t zrovna moc, ale doufÃ¡m, Å¾e alespoÅˆ ocenÃ­Å¡ vyjÃ¡dÅ™enÃ­ mÃ© vdÄ›Änosti.
 	
 	B_StartOtherRoutine	(Vino,"Start");
 	B_StartOtherRoutine	(LobartsBauer1,"Start");

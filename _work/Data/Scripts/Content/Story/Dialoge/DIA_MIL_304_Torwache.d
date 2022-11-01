@@ -28,7 +28,7 @@ instance DIA_Mil_304_Torwache_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Condition;
 	information	 = 	DIA_Mil_304_Torwache_WASMACHSTDU_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"Tak jak to vypad·?";
+	description	 = 	"Tak jak to vypad√°?";
 };
 func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 {	
@@ -39,15 +39,15 @@ func int DIA_Mil_304_Torwache_WASMACHSTDU_Condition ()
 };
 func void DIA_Mil_304_Torwache_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Tak jak to vypad·?
+	AI_Output			(other, self, "DIA_Mil_304_Torwache_WASMACHSTDU_15_00"); //Tak jak to vypad√°?
 	if (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Nemohu si stÏûovat. Kon·m svou povinnost, jak ode mne Innos oËek·v·.
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Nemohu si stƒõ≈æovat. Kon√°m svou povinnost, jak ode mne Innos oƒçek√°v√°.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hele, s tÌm sv˝m ËÌslem 'tak jak to vypad·' se tady aplauzu nedoËk·ö. BÏû mi z oËÌ, jasn˝?
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hele, s t√≠m sv√Ωm ƒç√≠slem 'tak jak to vypad√°' se tady aplauzu nedoƒçk√°≈°. Bƒõ≈æ mi z oƒç√≠, jasn√Ω?
 	};
 	 
 	AI_StopProcessInfos (self);

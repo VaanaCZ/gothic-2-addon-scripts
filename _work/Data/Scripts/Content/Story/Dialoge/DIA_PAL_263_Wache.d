@@ -30,7 +30,7 @@ instance DIA_PAL_263_PERM		(C_INFO)
 	condition	 = 	DIA_PAL_263_PERM_Condition;
 	information	 = 	DIA_PAL_263_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Podej hl·öenÌ, voj·ku!";
+	description	 = 	"Podej hl√°≈°en√≠, voj√°ku!";
 };
 
 func int DIA_PAL_263_PERM_Condition ()
@@ -43,10 +43,10 @@ func int DIA_PAL_263_PERM_Condition ()
 };
 func void DIA_PAL_263_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Podej hl·öenÌ, voj·ku!
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Ano, pane! DrûÌme pozice dle rozkaz˘. é·dnÈ dalöÌ ztr·ty. Proviant doch·zÌ, sk¯eti se drûÌ zp·tky.
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //PoslednÌ draËÌ ˙tok kompletnÏ zniËil vnÏjöÌ opevnÏnÌ. Od tÈ doby se ale nic zvl·ötnÌho nestalo.
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //Dobr·, pokraËuj.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Podej hl√°≈°en√≠, voj√°ku!
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Ano, pane! Dr≈æ√≠me pozice dle rozkaz≈Ø. ≈Ω√°dn√© dal≈°√≠ ztr√°ty. Proviant doch√°z√≠, sk≈ôeti se dr≈æ√≠ zp√°tky.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //Posledn√≠ draƒç√≠ √∫tok kompletnƒõ zniƒçil vnƒõj≈°√≠ opevnƒõn√≠. Od t√© doby se ale nic zvl√°≈°tn√≠ho nestalo.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //Dobr√°, pokraƒçuj.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM_OTH
@@ -71,8 +71,8 @@ func int DIA_PAL_263_PERM_OTH_Condition ()
 };
 func void DIA_PAL_263_PERM_OTH_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Jak to vypad·?
-	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //M·me situaci pod kontrolou. NedÏlej si vr·sky, civile. Vöechno bude v po¯·dku.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Jak to vypad√°?
+	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //M√°me situaci pod kontrolou. Nedƒõlej si vr√°sky, civile. V≈°echno bude v po≈ô√°dku.
 };
 
 

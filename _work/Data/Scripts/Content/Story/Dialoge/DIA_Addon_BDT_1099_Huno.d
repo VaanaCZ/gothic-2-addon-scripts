@@ -82,11 +82,11 @@ FUNC VOID DIA_Addon_Huno_Abwimmeln_Info()
 {	
 	if (Huno_MEGA_Angepisst == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_00"); //Co chceš? Vypadni!
+		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_00"); //Co chceÅ¡? Vypadni!
 	}
 	else //schickt dich in die Kneipe
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_01"); //Tak na co èekáš? Bì k baru!
+		AI_Output (self, other, "DIA_Addon_Huno_Abwimmeln_06_01"); //Tak na co ÄekÃ¡Å¡? BÄ›Å¾ k baru!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -103,7 +103,7 @@ instance DIA_Addon_Huno_Hi   (C_INFO)
 	condition   = DIA_Addon_Huno_Hi_Condition;
 	information = DIA_Addon_Huno_Hi_Info;
 	permanent   = FALSE;
-	description = "Øekl bych, e jsi mistrem svého øemesla.";
+	description = "Å˜ekl bych, Å¾e jsi mistrem svÃ©ho Å™emesla.";
 };
 FUNC INT DIA_Addon_Huno_Hi_Condition()
 {	
@@ -111,24 +111,24 @@ FUNC INT DIA_Addon_Huno_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_00");//Vypadá to, e seš mistrem svıho øemesla.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_01");//To u jsem slyšel. Pøinesls mi tu ocel?
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_02");//Ocel? Ne, myslím, e si mì s nìkım pleteš.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_03");//Hmm, seš mi nìjak povìdomej. Neznáme se odnìkud?
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_00");//VypadÃ¡ to, Å¾e seÅ¡ mistrem svÃ½ho Å™emesla.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_01");//To uÅ¾ jsem slyÅ¡el. PÅ™inesls mi tu ocel?
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_15_02");//Ocel? Ne, myslÃ­m, Å¾e si mÄ› s nÄ›kÃ½m pleteÅ¡.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_06_03");//Hmm, seÅ¡ mi nÄ›jak povÄ›domej. NeznÃ¡me se odnÄ›kud?
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
-	Info_AddChoice (DIA_Addon_Huno_Hi,"Jasnì, ze Starého tábora.",DIA_Addon_Huno_Hi_JA);
-	Info_AddChoice (DIA_Addon_Huno_Hi,"Nemùu si vzpomenout odkud.",DIA_Addon_Huno_Hi_NO);
+	Info_AddChoice (DIA_Addon_Huno_Hi,"JasnÄ›, ze StarÃ©ho tÃ¡bora.",DIA_Addon_Huno_Hi_JA);
+	Info_AddChoice (DIA_Addon_Huno_Hi,"NemÅ¯Å¾u si vzpomenout odkud.",DIA_Addon_Huno_Hi_NO);
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Huno prodává kováøské vybavení.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Huno prodÃ¡vÃ¡ kovÃ¡Å™skÃ© vybavenÃ­.");
 };
 FUNC VOID DIA_Addon_Huno_Hi_JA()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_00");//Jasnì, ze Starého tábora.
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_01");//Ze Starıho tábora? Aha, ty seš ten zvìdavej chlápek. Já myslel, e jsi mrtvej.
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_02");//Jo, to si myslí kadı. Kdo ještì pøeil?
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_03");//Pár. A nìkdo utek s Havranem, jako já. Pro spoustu dalších se ale Starej tábor stal hrobem.
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_00");//JasnÄ›, ze StarÃ©ho tÃ¡bora.
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_01");//Ze StarÃ½ho tÃ¡bora? Aha, ty seÅ¡ ten zvÄ›davej chlÃ¡pek. JÃ¡ myslel, Å¾e jsi mrtvej.
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_JA_15_02");//Jo, to si myslÃ­ kaÅ¾dÃ½. Kdo jeÅ¡tÄ› pÅ™eÅ¾il?
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_JA_06_03");//PÃ¡r. A nÄ›kdo utek s Havranem, jako jÃ¡. Pro spoustu dalÅ¡Ã­ch se ale Starej tÃ¡bor stal hrobem.
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 	
@@ -136,8 +136,8 @@ FUNC VOID DIA_Addon_Huno_Hi_JA()
 };
 FUNC VOID DIA_Addon_Huno_Hi_NO()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Hi_NO_15_00");//A odkud bychom se mìli znát?
-	AI_Output (self, other, "DIA_Addon_Huno_Hi_NO_06_01");//Hm, mám dìsnì dìravou hlavu. No to je jedno.
+	AI_Output (other, self, "DIA_Addon_Huno_Hi_NO_15_00");//A odkud bychom se mÄ›li znÃ¡t?
+	AI_Output (self, other, "DIA_Addon_Huno_Hi_NO_06_01");//Hm, mÃ¡m dÄ›snÄ› dÄ›ravou hlavu. No to je jedno.
 	
 	Info_ClearChoices (DIA_Addon_Huno_Hi);
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Huno_Blitz   (C_INFO)
 	condition   = DIA_Addon_Huno_Blitz_Condition;
 	information = DIA_Addon_Huno_Blitz_Info;
 	permanent   = FALSE;
-	description = "Povìz mi o tom, jak jsi utekl.";
+	description = "PovÄ›z mi o tom, jak jsi utekl.";
 };
 FUNC INT DIA_Addon_Huno_Blitz_Condition()
 {	
@@ -163,14 +163,14 @@ FUNC INT DIA_Addon_Huno_Blitz_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Blitz_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_00");//Povìz mi o tom úniku.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_01");//Kdy padla bariéra, propuknul chaos.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_02");//Nìkdo se schovával, nìkdo utíkal a všude se rabovalo.
-	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_03");//A co jsi dìlal ty?
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_04");//Zrovna jsem vycházel z tábora, kdy se najednou dìsnì rozsvìtlilo a celı tìlo mi zalila dìsná bolest.
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_05");//Ten zatracenej blesk mì zasáhnul! Jako bych ho furt ještì slyšel.
+	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_00");//PovÄ›z mi o tom Ãºniku.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_01");//KdyÅ¾ padla bariÃ©ra, propuknul chaos.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_02");//NÄ›kdo se schovÃ¡val, nÄ›kdo utÃ­kal a vÅ¡ude se rabovalo.
+	AI_Output (other, self, "DIA_Addon_Huno_Blitz_15_03");//A co jsi dÄ›lal ty?
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_04");//Zrovna jsem vychÃ¡zel z tÃ¡bora, kdyÅ¾ se najednou dÄ›snÄ› rozsvÄ›tlilo a celÃ½ tÄ›lo mi zalila dÄ›snÃ¡ bolest.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_05");//Ten zatracenej blesk mÄ› zasÃ¡hnul! Jako bych ho furt jeÅ¡tÄ› slyÅ¡el.
 	//AI_Output (self, other, "DIA_Blitz_06_07");//BLITZ
-	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_06");//Pak mi nìkdo øek, e mì našel Thorus a vzal mì s sebou.
+	AI_Output (self, other, "DIA_Addon_Huno_Blitz_06_06");//Pak mi nÄ›kdo Å™ek, Å¾e mÄ› naÅ¡el Thorus a vzal mÄ› s sebou.
 };
 //----------------------------------------------------------------------
 //	Info Armor
@@ -184,7 +184,7 @@ INSTANCE DIA_Addon_Huno_Armor   (C_INFO)
 	condition   = DIA_Addon_Huno_Armor_Condition;
 	information = DIA_Addon_Huno_Armor_Info;
 	permanent   = TRUE;
-	description = "Potøebuju lepší zbroj.";
+	description = "PotÅ™ebuju lepÅ¡Ã­ zbroj.";
 };
 FUNC INT DIA_Addon_Huno_Armor_Condition()
 {	
@@ -199,24 +199,24 @@ FUNC VOID DIA_Addon_Huno_Armor_Info()
 {	
 	Info_ClearChoices (DIA_Addon_Huno_Armor);
 	
-	AI_Output (other, self, "DIA_Addon_Huno_Armor_15_00"); //Potøebuju lepší zbroj.
+	AI_Output (other, self, "DIA_Addon_Huno_Armor_15_00"); //PotÅ™ebuju lepÅ¡Ã­ zbroj.
 	if (Huno_ArmorCheap == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_01"); //Tak si mùeš vzít tuhle. Je drahá, ale za to podìkuj Estebanovi.
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_02"); //Ten zatracenej pes vybírá poplatky z kadıho brnìní, kterı prodám.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_01"); //Tak si mÅ¯Å¾eÅ¡ vzÃ­t tuhle. Je drahÃ¡, ale za to podÄ›kuj Estebanovi.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_02"); //Ten zatracenej pes vybÃ­rÃ¡ poplatky z kaÅ¾dÃ½ho brnÄ›nÃ­, kterÃ½ prodÃ¡m.
 		
 		BDT_Armor_H_Value = 2100;
 		Info_AddChoice (DIA_Addon_Huno_Armor, DIALOG_BACK, DIA_Addon_Huno_Armor_BACK);
-		Info_AddChoice (DIA_Addon_Huno_Armor, "Zakoupit tìkou zbroj banditù (Ochrana: zbranì 45, šípy 45. Cena: 2100 zlatıch)", DIA_Addon_Huno_Armor_BUY);
+		Info_AddChoice (DIA_Addon_Huno_Armor, "Zakoupit tÄ›Å¾kou zbroj banditÅ¯ (Ochrana: zbranÄ› 45, Å¡Ã­py 45. Cena: 2100 zlatÃ½ch)", DIA_Addon_Huno_Armor_BUY);
 	}
 	else //CHEAP
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_Armor_15_03"); //Fisk øíkal, e mi prı udìláš cenu.
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_04"); //Povídáš Fisk? No, poøád mu dluím laskavost.
+		AI_Output (other, self, "DIA_Addon_Huno_Armor_15_03"); //Fisk Å™Ã­kal, Å¾e mi prÃ½ udÄ›lÃ¡Å¡ cenu.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_06_04"); //PovÃ­dÃ¡Å¡ Fisk? No, poÅ™Ã¡d mu dluÅ¾Ã­m laskavost.
 				
 		BDT_Armor_H_Value = 1400;
 		Info_AddChoice (DIA_Addon_Huno_Armor, DIALOG_BACK, DIA_Addon_Huno_Armor_BACK);
-		Info_AddChoice (DIA_Addon_Huno_Armor, "Zakoupit tìkou zbroj banditù (Ochrana: zbranì 45, šípy 45. Cena: 1400 zlatıch)", DIA_Addon_Huno_Armor_BUY);
+		Info_AddChoice (DIA_Addon_Huno_Armor, "Zakoupit tÄ›Å¾kou zbroj banditÅ¯ (Ochrana: zbranÄ› 45, Å¡Ã­py 45. Cena: 1400 zlatÃ½ch)", DIA_Addon_Huno_Armor_BUY);
 	};
 };
 func void DIA_Addon_Huno_Armor_Back()
@@ -225,17 +225,17 @@ func void DIA_Addon_Huno_Armor_Back()
 };
 func void DIA_Addon_Huno_Armor_Buy()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_Armor_Buy_15_00"); //Fan, tak já si tu zbroj vezmu.
+	AI_Output (other, self, "DIA_Addon_Huno_Armor_Buy_15_00"); //Fan, tak jÃ¡ si tu zbroj vezmu.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, BDT_Armor_H_Value)
 	{	
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_01"); //Jasnì.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_01"); //JasnÄ›.
 		
 		B_GiveInvItems (self, other,ITAR_BDT_H,1);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_02"); //ádnı zlato, ádná zbroj.
+		AI_Output (self, other, "DIA_Addon_Huno_Armor_Buy_06_02"); //Å½Ã¡dnÃ½ zlato, Å¾Ã¡dnÃ¡ zbroj.
 	};
 	
 	if (BDT_Armor_H_Value < 2100) //nur, wenn billliger!
@@ -256,7 +256,7 @@ INSTANCE DIA_Addon_Huno_Attentat   (C_INFO)
 	condition   = DIA_Addon_Huno_Attentat_Condition;
 	information = DIA_Addon_Huno_Attentat_Info;
 	permanent   = FALSE;
-	description = "K tomu pokusu o zavradìní Estebana...";
+	description = "K tomu pokusu o zavraÅ¾dÄ›nÃ­ Estebana...";
 };
 FUNC INT DIA_Addon_Huno_Attentat_Condition()
 {	
@@ -268,16 +268,16 @@ FUNC INT DIA_Addon_Huno_Attentat_Condition()
 FUNC VOID DIA_Addon_Huno_Attentat_Info()
 {	
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentast auf Esteban
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_00"); //(nebezpeènì) Co po mnì chceš?
-	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_01"); //Zjišuju, kdo vìzí za tím útokem.
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_02"); //A proè s tím lozíš za mnou?
-	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_03"); //Myslel jsem, e bys o tom mohl nìco vìdìt.
-	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_04"); //Já nevím NIC!
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_00"); //(nebezpeÄnÄ›) Co po mnÄ› chceÅ¡?
+	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_01"); //ZjiÅ¡Å¥uju, kdo vÄ›zÃ­ za tÃ­m Ãºtokem.
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_02"); //A proÄ s tÃ­m lozÃ­Å¡ za mnou?
+	AI_Output (other, self, "DIA_Addon_Huno_Attentat_15_03"); //Myslel jsem, Å¾e bys o tom mohl nÄ›co vÄ›dÄ›t.
+	AI_Output (self, other, "DIA_Addon_Huno_Attentat_06_04"); //JÃ¡ nevÃ­m NIC!
 };
 
 
 //----------------------------------------------------------------------
-//	Paar Dinge gehört
+//	Paar Dinge gehÃ¶rt
 //----------------------------------------------------------------------
 var int Huno_nochmal;
 var int Huno_SomeThings_PERM;
@@ -286,7 +286,7 @@ var int Huno_Counter;
 
 	func void B_Addon_Huno_Stress()
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Stress_06_00"); //(povzdech) A teï odsud hezky rychle vypadni, nebo se neznám!
+		AI_Output (self, other, "DIA_Addon_Huno_Stress_06_00"); //(povzdech) A teÄ odsud hezky rychle vypadni, nebo se neznÃ¡m!
 		Huno_Angepisst = TRUE;
 	};
 
@@ -297,7 +297,7 @@ INSTANCE DIA_Addon_Huno_SomeThings (C_INFO)
 	condition   = DIA_Addon_Huno_SomeThings_Condition;
 	information = DIA_Addon_Huno_SomeThings_Info;
 	permanent   = TRUE;
-	description = "U jsem o tobì nìco slyšel.";
+	description = "UÅ¾ jsem o tobÄ› nÄ›co slyÅ¡el.";
 };
 FUNC INT DIA_Addon_Huno_SomeThings_Condition()
 {	
@@ -310,7 +310,7 @@ FUNC INT DIA_Addon_Huno_SomeThings_Condition()
 };
 FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_00"); //Zaslechl jsem o tobì pár vìcí.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_00"); //Zaslechl jsem o tobÄ› pÃ¡r vÄ›cÃ­.
 	
 	if (Huno_nochmal == FALSE)
 	{
@@ -319,53 +319,53 @@ FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_02"); //Zase ty? (hrozivì) Koukej, a je to tentokrát nìco dùleitıho!
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_02"); //Zase ty? (hrozivÄ›) Koukej, aÅ¥ je to tentokrÃ¡t nÄ›co dÅ¯leÅ¾itÃ½ho!
 	};
 	
 	Huno_Counter = 0;
 
 	if (Finn_TellAll == TRUE) 		
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_03"); //Slyšel jsem, e kdy došlo k tomu útoku, nebyls na svım místì.
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_04"); //(nebezpeènì) Co ještì?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_03"); //SlyÅ¡el jsem, Å¾e kdyÅ¾ doÅ¡lo k tomu Ãºtoku, nebyls na svÃ½m mÃ­stÄ›.
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_04"); //(nebezpeÄnÄ›) Co jeÅ¡tÄ›?
 		Huno_Counter = Huno_Counter + 1;
 	};
 	
 	if (Paul_TellAll == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_05"); //Paul tvrdil, e Estebana nesnášíš.
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_06"); //(nebezpeènì) No a? On snad jo? Tak co dál?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_05"); //Paul tvrdil, Å¾e Estebana nesnÃ¡Å¡Ã­Å¡.
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_06"); //(nebezpeÄnÄ›) No a? On snad jo? Tak co dÃ¡l?
 		Huno_Counter = Huno_Counter + 1;
 	};
 	
 	if (Emilio_TellAll == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_07"); //Emilio tì prásknul! Urèitì o tom útoku nìco víš!
-		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_08"); //(klidnì) Tak ty sis povídal se starım Emiliem?
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_07"); //Emilio tÄ› prÃ¡sknul! UrÄitÄ› o tom Ãºtoku nÄ›co vÃ­Å¡!
+		AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_08"); //(klidnÄ›) Tak ty sis povÃ­dal se starÃ½m Emiliem?
 		
 		if (Huno_Counter > 0)
 		{
-			AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_09"); //A není sám, kdo tì podezírá.
+			AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_09"); //A nenÃ­ sÃ¡m, kdo tÄ› podezÃ­rÃ¡.
 			AI_PlayAni(self, "T_SEARCH");
-			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_10"); //A co to má jako znamenat?
+			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_10"); //A co to mÃ¡ jako znamenat?
 			
 			Huno_SomeThings_PERM = TRUE;
 			Info_ClearChoices (DIA_Addon_Huno_SomeThings);
-			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Chci se pøidat k vrahovi!", DIA_Addon_Huno_SomeThings_Contra);
-			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Jestli máš s tím útokem nìco spoleèného, tak si to šerednì odskáèeš!", DIA_Addon_Huno_SomeThings_Pro);
+			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Chci se pÅ™idat k vrahovi!", DIA_Addon_Huno_SomeThings_Contra);
+			Info_AddChoice (DIA_Addon_Huno_SomeThings, "Jestli mÃ¡Å¡ s tÃ­m Ãºtokem nÄ›co spoleÄnÃ©ho, tak si to Å¡erednÄ› odskÃ¡ÄeÅ¡!", DIA_Addon_Huno_SomeThings_Pro);
 			
-			B_LogEntry (Topic_Addon_Esteban, "Zdá se, e mám Huna v hrsti.");
+			B_LogEntry (Topic_Addon_Esteban, "ZdÃ¡ se, Å¾e mÃ¡m Huna v hrsti.");
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_11"); //(hrozivì) Moná bych si s ním mìl taky promluvit. A pak bude URÈITÌ tvrdit pravej opak!
+			AI_Output (self, other, "DIA_Addon_Huno_SomeThings_06_11"); //(hrozivÄ›) MoÅ¾nÃ¡ bych si s nÃ­m mÄ›l taky promluvit. A pak bude URÄŒITÄš tvrdit pravej opak!
 			B_Addon_Huno_Stress();
 			AI_StopProcessInfos (self);
 		};
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_12"); //Víc u nic.
+		AI_Output (other, self, "DIA_Addon_Huno_SomeThings_15_12"); //VÃ­c uÅ¾ nic.
 		B_Addon_Huno_Stress();
 		AI_StopProcessInfos (self);
 	};
@@ -373,8 +373,8 @@ FUNC VOID DIA_Addon_Huno_SomeThings_Info()
 
 func void DIA_Addon_Huno_SomeThings_Pro()
 {
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Pro_15_00"); //Jestli máš s tím útokem nìco spoleèného, tak si to šerednì odskáèeš!
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_01"); //(otrávenì) Ty seš takovej debil! To si vánì myslíš, e mùeš Estabanovi takhle podlejzat?
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Pro_15_00"); //Jestli mÃ¡Å¡ s tÃ­m Ãºtokem nÄ›co spoleÄnÃ©ho, tak si to Å¡erednÄ› odskÃ¡ÄeÅ¡!
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_01"); //(otrÃ¡venÄ›) Ty seÅ¡ takovej debil! To si vÃ¡Å¾nÄ› myslÃ­Å¡, Å¾e mÅ¯Å¾eÅ¡ Estabanovi takhle podlejzat?
 	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Pro_06_02"); //Vypadni odsud!
 	Huno_MEGA_Angepisst = TRUE;
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
@@ -383,49 +383,49 @@ func void DIA_Addon_Huno_SomeThings_Pro()
 	
 func void DIA_Addon_Huno_SomeThings_Contra()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_00"); //Chci se k tomu vrahovi pøidat!
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_01"); //Proti Estebanovi? Vánì? No tak to doka!
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_02"); //U hezky dlouho èekám na dodávku oceli od pirátù.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_03"); //Poèítám, e ji zabavil Esteban, aby mi ji pak prodal za vyšší cenu.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_04"); //Samozøejmì to nemùe udìlat sám. Platí ještì pár banditùm z bain.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_05"); //Jak to víš?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_06"); //Orali banditi vdycky hodnì vanìj.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_07"); //A má ten uvanìnı bandita nìjaké jméno?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_08"); //Do jeho jména ti nic není. Ale ten, koho hledáš TY, se jmenuje Juan. Jene toho u jsem stejnì v táboøe nìjakou dobu nevidìl.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_09"); //Musíš se po nìm poohlídnout v bainì.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_00"); //Chci se k tomu vrahovi pÅ™idat!
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_01"); //Proti Estebanovi? VÃ¡Å¾nÄ›? No tak to dokaÅ¾!
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_02"); //UÅ¾ hezky dlouho ÄekÃ¡m na dodÃ¡vku oceli od pirÃ¡tÅ¯.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_03"); //PoÄÃ­tÃ¡m, Å¾e ji zabavil Esteban, aby mi ji pak prodal za vyÅ¡Å¡Ã­ cenu.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_04"); //SamozÅ™ejmÄ› to nemÅ¯Å¾e udÄ›lat sÃ¡m. PlatÃ­ jeÅ¡tÄ› pÃ¡r banditÅ¯m z baÅ¾in.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_05"); //Jak to vÃ­Å¡?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_06"); //OÅ¾rali banditi vÅ¾dycky hodnÄ› Å¾vanÄ›j.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Contra_15_07"); //A mÃ¡ ten uÅ¾vanÄ›nÃ½ bandita nÄ›jakÃ© jmÃ©no?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_08"); //Do jeho jmÃ©na ti nic nenÃ­. Ale ten, koho hledÃ¡Å¡ TY, se jmenuje Juan. JenÅ¾e toho uÅ¾ jsem stejnÄ› v tÃ¡boÅ™e nÄ›jakou dobu nevidÄ›l.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Contra_06_09"); //MusÃ­Å¡ se po nÄ›m poohlÃ­dnout v baÅ¾inÄ›.
 	
 	MIS_Huno_Stahl = LOG_RUNNING;
 	Huno_Angepisst = FALSE;
 	
 	Log_CreateTopic (Topic_Addon_Huno,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Huno,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Huno,"Huno èeká, a mu piráti dodají nìjakou ocel. Prı ji Estebanovi ukradl jakısi Juan, kterı se teï skrıvá kdesi v bainách.");
+	B_LogEntry (Topic_Addon_Huno,"Huno ÄekÃ¡, aÅ¾ mu pirÃ¡ti dodajÃ­ nÄ›jakou ocel. PrÃ½ ji Estebanovi ukradl jakÃ½si Juan, kterÃ½ se teÄ skrÃ½vÃ¡ kdesi v baÅ¾inÃ¡ch.");
 	
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
-	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Napøed mi povìz, kdo stojí za tím útokem!", DIA_Addon_Huno_SomeThings_TellMeNow);
-	Info_AddChoice (DIA_Addon_Huno_SomeThings, "Dobøe, udìlám to.", DIA_Addon_Huno_SomeThings_Mission);
+	Info_AddChoice (DIA_Addon_Huno_SomeThings, "NapÅ™ed mi povÄ›z, kdo stojÃ­ za tÃ­m Ãºtokem!", DIA_Addon_Huno_SomeThings_TellMeNow);
+	Info_AddChoice (DIA_Addon_Huno_SomeThings, "DobÅ™e, udÄ›lÃ¡m to.", DIA_Addon_Huno_SomeThings_Mission);
 };
 
 func void DIA_Addon_Huno_SomeThings_Mission()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Mission_15_00"); //Fajn, udìlám to.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Mission_06_01"); //Dobøe. Uvidíme, jestli se ti dá vìøit.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_Mission_15_00"); //Fajn, udÄ›lÃ¡m to.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_Mission_06_01"); //DobÅ™e. UvidÃ­me, jestli se ti dÃ¡ vÄ›Å™it.
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
 	AI_StopProcessInfos (self);
 };
 func void DIA_Addon_Huno_SomeThings_TellMeNow()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_00"); //Napøed mi povìz, kdo vìzí za tím útokem.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_01"); //Ne. Nevìøím ti.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_02"); //Hele, tenhle rozhovor je o tom, jestli jdu s tím, kdo stojí za tím útokem, nebo s Estebanem.
-	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_03"); //S kım budu mluvit, to záleí na tobì.
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_04"); //(povzdech) No dobøe. Spojím tì s tím, kdo to má na svìdomí, ale záleí, jakım zpùsobem to øeknu, jasnı?
-	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_05"); //Bì k baru a promluv si s barmanem. Všecko ostatní se dozvíš od nìj.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_00"); //NapÅ™ed mi povÄ›z, kdo vÄ›zÃ­ za tÃ­m Ãºtokem.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_01"); //Ne. NevÄ›Å™Ã­m ti.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_02"); //Hele, tenhle rozhovor je o tom, jestli jdu s tÃ­m, kdo stojÃ­ za tÃ­m Ãºtokem, nebo s Estebanem.
+	AI_Output (other, self, "DIA_Addon_Huno_SomeThings_TellMeNow_15_03"); //S kÃ½m budu mluvit, to zÃ¡leÅ¾Ã­ na tobÄ›.
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_04"); //(povzdech) No dobÅ™e. SpojÃ­m tÄ› s tÃ­m, kdo to mÃ¡ na svÄ›domÃ­, ale zÃ¡leÅ¾Ã­, jakÃ½m zpÅ¯sobem to Å™eknu, jasnÃ½?
+	AI_Output (self, other, "DIA_Addon_Huno_SomeThings_TellMeNow_06_05"); //BÄ›Å¾ k baru a promluv si s barmanem. VÅ¡ecko ostatnÃ­ se dozvÃ­Å¡ od nÄ›j.
 	Huno_zuSnaf = TRUE;
 	Info_ClearChoices (DIA_Addon_Huno_SomeThings);
 	AI_StopProcessInfos (self);
 	
-	B_LogEntry (Topic_Addon_Esteban, "Huno øíkal, e bych si mìl promluvit se Snafem.");
+	B_LogEntry (Topic_Addon_Esteban, "Huno Å™Ã­kal, Å¾e bych si mÄ›l promluvit se Snafem.");
 };
 
 //----------------------------------------------------------------------
@@ -438,7 +438,7 @@ INSTANCE DIA_Addon_Huno_Paket   (C_INFO)
 	condition   = DIA_Addon_Huno_Paket_Condition;
 	information = DIA_Addon_Huno_Paket_Info;
 	permanent   = FALSE;
-	description = "Mám tady tu ocel.";
+	description = "MÃ¡m tady tu ocel.";
 };
 FUNC INT DIA_Addon_Huno_Paket_Condition()
 {	
@@ -450,26 +450,26 @@ FUNC INT DIA_Addon_Huno_Paket_Condition()
 };
 FUNC VOID DIA_Addon_Huno_Paket_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_00");//Mám tu ocel.
+	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_00");//MÃ¡m tu ocel.
 	B_GiveInvItems (other, self, ItMi_Addon_Steel_Paket,1);
-	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_01"); //A dál? Byl tam i Juan?
+	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_01"); //A dÃ¡l? Byl tam i Juan?
 	AI_Output (other, self, "DIA_Addon_Huno_Paket_15_02"); //Byl.
-	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_03"); //Já to vìdìl. To byla práce tı krysy Estebana.
+	AI_Output (self, other, "DIA_Addon_Huno_Paket_06_03"); //JÃ¡ to vÄ›dÄ›l. To byla prÃ¡ce tÃ½ krysy Estebana.
 	
 	if (Huno_zuSnaf == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_04"); //Jsi v pohodì. Popravdì øeèeno jsem od tebe nìco takovıho neèekal.
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_05"); //Tumáš, za odmìnu si vezmi tohle.
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_04"); //Jsi v pohodÄ›. PopravdÄ› Å™eÄeno jsem od tebe nÄ›co takovÃ½ho neÄekal.
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_05"); //TumÃ¡Å¡, za odmÄ›nu si vezmi tohle.
 		B_GiveInvItems (self, other, itmi_gold, 200);
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Addon_Huno_Paket_15_06"); //A jak to teï bude s naším ujednáním?
-		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_07"); //Chlap, se kterım chceš mluvit, na tebe èeká u baru. Promluv si s barmanem.
+		AI_Output (other, self, "DIA_Addon_Huno_Paket_15_06"); //A jak to teÄ bude s naÅ¡Ã­m ujednÃ¡nÃ­m?
+		AI_Output (self, other, "DIA_Addon_Huno_Paket_06_07"); //Chlap, se kterÃ½m chceÅ¡ mluvit, na tebe ÄekÃ¡ u baru. Promluv si s barmanem.
 		Huno_zuSnaf = TRUE;
 	};
 	
-	B_LogEntry (Topic_Addon_Esteban, "Huno øíkal, e bych si mìl promluvit se Snafem.");
+	B_LogEntry (Topic_Addon_Esteban, "Huno Å™Ã­kal, Å¾e bych si mÄ›l promluvit se Snafem.");
 	MIS_Huno_Stahl = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_HunoStahl);
 };

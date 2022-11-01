@@ -30,7 +30,7 @@ instance DIA_Albrecht_Hagen		(C_INFO)
 	condition	 = 	DIA_Albrecht_Hagen_Condition;
 	information	 = 	DIA_Albrecht_Hagen_Info;
 	permanent    =  FALSE;
-	description	 =  "Potøebuji mluvit s lordem Hagenem!";
+	description	 =  "PotÅ™ebuji mluvit s lordem Hagenem!";
 };
 
 func int DIA_Albrecht_Hagen_Condition ()
@@ -42,9 +42,9 @@ func int DIA_Albrecht_Hagen_Condition ()
 };
 func void DIA_Albrecht_Hagen_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Hagen_15_00"); //Potøebuji mluvit s lordem Hagenem!
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //Je ve velké síni, pøímo tady.
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Ale a po nìm chceš cokoliv, sna se to neprotahovat - je to velice zamìstnanı èlovìk!
+	AI_Output (other, self, "DIA_Albrecht_Hagen_15_00"); //PotÅ™ebuji mluvit s lordem Hagenem!
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //Je ve velkÃ© sÃ­ni, pÅ™Ã­mo tady.
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Ale aÅ¥ po nÄ›m chceÅ¡ cokoliv, snaÅ¾ se to neprotahovat - je to velice zamÄ›stnanÃ½ ÄlovÄ›k!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -56,7 +56,7 @@ instance DIA_Albrecht_Hallo		(C_INFO)
 	condition	 = 	DIA_Albrecht_Hallo_Condition;
 	information	 = 	DIA_Albrecht_Hallo_Info;
 	permanent    =  FALSE;
-	description	 =  "Co obnáší bıt paladinem?";
+	description	 =  "Co obnÃ¡Å¡Ã­ bÃ½t paladinem?";
 };
 
 func int DIA_Albrecht_Hallo_Condition ()
@@ -65,9 +65,9 @@ func int DIA_Albrecht_Hallo_Condition ()
 };
 func void DIA_Albrecht_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //Co obnáší bıt paladinem?
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //Paladin je Innosùv váleèník. ije, aby mu slouil, a bojuje, aby mu tak prokazoval èest.
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //On nám na oplátku propùjèuje dar magie. Magie run - tu dostáváme jako uznání za naše skutky.
+	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //Co obnÃ¡Å¡Ã­ bÃ½t paladinem?
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //Paladin je InnosÅ¯v vÃ¡leÄnÃ­k. Å½ije, aby mu slouÅ¾il, a bojuje, aby mu tak prokazoval Äest.
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //On nÃ¡m na oplÃ¡tku propÅ¯jÄuje dar magie. Magie run - tu dostÃ¡vÃ¡me jako uznÃ¡nÃ­ za naÅ¡e skutky.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -79,7 +79,7 @@ instance DIA_Albrecht_CanTeach		(C_INFO)
 	condition	 = 	DIA_Albrecht_CanTeach_Condition;
 	information	 = 	DIA_Albrecht_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Mùeš mì nìèemu nauèit?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?";
 };
 
 func int DIA_Albrecht_CanTeach_Condition ()
@@ -91,18 +91,18 @@ func int DIA_Albrecht_CanTeach_Condition ()
 };
 func void DIA_Albrecht_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_CanTeach_15_00"); //Mùeš mì nìèemu nauèit?
+	AI_Output (other, self, "DIA_Albrecht_CanTeach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nÄ›Äemu nauÄit?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Pokud se ukáe, e jsi toho hoden, vìnuji ti magickou runu paladinù.
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //Kromì toho tì mohu nauèit, jak si zvıšit magickou sílu.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Pokud se ukÃ¡Å¾e, Å¾e jsi toho hoden, vÄ›nuji ti magickou runu paladinÅ¯.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //KromÄ› toho tÄ› mohu nauÄit, jak si zvÃ½Å¡it magickou sÃ­lu.
 		Albrecht_TeachMANA = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Paladin Albrecht mi pomùe zvıšit magickou moc.");
+		B_LogEntry (TOPIC_CityTeacher,"Paladin Albrecht mi pomÅ¯Å¾e zvÃ½Å¡it magickou moc.");
 	}
 	else
 	{	
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_03"); //Uèím pouze paladiny.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_03"); //UÄÃ­m pouze paladiny.
 	};
 };
 
@@ -132,9 +132,9 @@ func void DIA_Albrecht_TEACHPalRunes_Info ()
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
 		
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Na znamení tvé hodnosti ti dávám runu svìtla. Je to symbol pravdy a spravedlnosti.
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_02"); //Osvìtluj cestu všem, kdo jdou po stopách Innosovıch.
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //Všechny ostatní runy si musíš vyslouit. Vra se, a nabudeš dojmu, e jich jsi hoden.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Na znamenÃ­ tvÃ© hodnosti ti dÃ¡vÃ¡m runu svÄ›tla. Je to symbol pravdy a spravedlnosti.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_02"); //OsvÄ›tluj cestu vÅ¡em, kdo jdou po stopÃ¡ch InnosovÃ½ch.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //VÅ¡echny ostatnÃ­ runy si musÃ­Å¡ vyslouÅ¾it. VraÅ¥ se, aÅ¾ nabudeÅ¡ dojmu, Å¾e jich jsi hoden.
 	
 		PLAYER_TALENT_RUNES [SPL_PalLight] = TRUE;
 	
@@ -144,12 +144,12 @@ func void DIA_Albrecht_TEACHPalRunes_Info ()
 	else
 	{
 		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_04"); //Kterou cestu sis zvolil?
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_05"); //Cestu uzdravování, nebo cestu boje?
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_05"); //Cestu uzdravovÃ¡nÃ­, nebo cestu boje?
 		
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Volím cestu uzdravování.",DIA_Albrecht_TEACHPalRunes_Heal);
-		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Volím cestu boje.",DIA_Albrecht_TEACHPalRunes_Combat);
+		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"VolÃ­m cestu uzdravovÃ¡nÃ­.",DIA_Albrecht_TEACHPalRunes_Heal);
+		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"VolÃ­m cestu boje.",DIA_Albrecht_TEACHPalRunes_Combat);
 	};	
 };
 
@@ -160,25 +160,25 @@ FUNC VOID DIA_Albrecht_TEACHPalRunes_BACK()
 
 FUNC VOID B_Albrecht_YouAreNotWorthy ()
 {
-	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //Ještì nejsi hoden obdret další kouzlo této cesty.
+	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //JeÅ¡tÄ› nejsi hoden obdrÅ¾et dalÅ¡Ã­ kouzlo tÃ©to cesty.
 };
 
 FUNC VOID DIA_Albrecht_TEACHPalRunes_Heal()
 {
-	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Heal_15_00"); //Volím cestu uzdravování.
+	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Heal_15_00"); //VolÃ­m cestu uzdravovÃ¡nÃ­.
 	if  (PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	&&	(MIS_ReadyforChapter4 == TRUE)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Léèba lehkıch zranìní", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalLightHeal);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("LÃ©Äba lehkÃ½ch zranÄ›nÃ­", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalLightHeal);
 	}
 	else if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	&&	(Kapitel >= 5)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Léèba støednì tìkıch zranìní", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalMediumHeal);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("LÃ©Äba stÅ™ednÄ› tÄ›Å¾kÃ½ch zranÄ›nÃ­", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalMediumHeal);
 	}
 	else
 	{
@@ -188,21 +188,21 @@ FUNC VOID DIA_Albrecht_TEACHPalRunes_Heal()
 
 FUNC VOID DIA_Albrecht_TEACHPalRunes_Combat()
 {
-	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Combat_15_00"); //Volím cestu boje.
+	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Combat_15_00"); //VolÃ­m cestu boje.
 	
 	if	(PLAYER_TALENT_RUNES [SPL_PalHolyBolt] == FALSE)
 	&&	(MIS_ReadyforChapter4 == TRUE)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Svatı šíp", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalHolyBolt);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("SvatÃ½ Å¡Ã­p", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalHolyBolt);
 	}
 	else if (PLAYER_TALENT_RUNES [SPL_PalRepelEvil] == FALSE)
 	&&	(Kapitel >= 5)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Zaehnání zla", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalRepelEvil);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("ZaÅ¾ehnÃ¡nÃ­ zla", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalRepelEvil);
 	}
 	else
 	{
@@ -292,7 +292,7 @@ instance DIA_Albrecht_Teach		(C_INFO)
 	condition	 = 	DIA_Albrecht_Teach_Condition;
 	information	 = 	DIA_Albrecht_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chtìl bych posílit svoji magickou moc.";
+	description	 = 	"ChtÄ›l bych posÃ­lit svoji magickou moc.";
 };
 func int DIA_Albrecht_Teach_Condition ()
 {	
@@ -303,7 +303,7 @@ func int DIA_Albrecht_Teach_Condition ()
 };
 func void DIA_Albrecht_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Teach_15_00"); //Chci zvıšit svou magickou sílu.
+	AI_Output (other, self, "DIA_Albrecht_Teach_15_00"); //Chci zvÃ½Å¡it svou magickou sÃ­lu.
 	
 	
 	Info_ClearChoices   (DIA_Albrecht_Teach);
@@ -316,7 +316,7 @@ func void DIA_Albrecht_Teach_BACK()
 {
 	if (other.attribute [ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_Albrecht_Teach_03_00"); //Pokud bys chtìl zvıšit svou magickou sílu ještì víc, budeš si u muset najít jiného uèitele.
+		AI_Output (self, other, "DIA_Albrecht_Teach_03_00"); //Pokud bys chtÄ›l zvÃ½Å¡it svou magickou sÃ­lu jeÅ¡tÄ› vÃ­c, budeÅ¡ si uÅ¾ muset najÃ­t jinÃ©ho uÄitele.
 	};
 	Info_ClearChoices (DIA_Albrecht_TEACH);
 };

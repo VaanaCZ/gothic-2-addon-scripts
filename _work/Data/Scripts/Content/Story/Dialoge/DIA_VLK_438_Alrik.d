@@ -68,7 +68,7 @@ INSTANCE DIA_Alrik_Hallo(C_INFO)
 	condition	= DIA_Alrik_Hallo_Condition;
 	information	= DIA_Alrik_Hallo_Info;
 	permanent	= FALSE;
-	description = "Co tady dÏl·ö?";
+	description = "Co tady dƒõl√°≈°?";
 };                       
 
 FUNC INT DIA_Alrik_Hallo_Condition()
@@ -78,28 +78,28 @@ FUNC INT DIA_Alrik_Hallo_Condition()
  
 FUNC VOID DIA_Alrik_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_Alrik_Hallo_15_00"); //Co tady dÏl·ö?
+	AI_Output (other,self ,"DIA_Alrik_Hallo_15_00"); //Co tady dƒõl√°≈°?
 	
 	if (Npc_GetDistToWP (self,"NW_CITY_PATH_HABOUR_16_01") <= 500) //In Ecke
 	{
-		AI_Output (self ,other,"DIA_Alrik_Hallo_09_01"); //(smÏje se) J· tady bydlÌm!
+		AI_Output (self ,other,"DIA_Alrik_Hallo_09_01"); //(smƒõje se) J√° tady bydl√≠m!
 	}
 	else //In Kneipe oder auf dem Weg
 	{
 		if (Npc_GetDistToWP (self,"NW_CITY_HABOUR_TAVERN01_01") <= 500)
 		{
-			AI_Output (self ,other,"DIA_Alrik_Hallo_09_02"); //Co bych tu asi tak mÏl dÏlat? Piju!
+			AI_Output (self ,other,"DIA_Alrik_Hallo_09_02"); //Co bych tu asi tak mƒõl dƒõlat? Piju!
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alrik_Hallo_09_03"); //Vyjdu si na menöÌ proch·zku.
+			AI_Output (self ,other,"DIA_Alrik_Hallo_09_03"); //Vyjdu si na men≈°√≠ proch√°zku.
 		};
 	};
-	AI_Output (self ,other,"DIA_Alrik_Hallo_09_04"); //Ale jestli tÌm myslÌö, co dÏl·m cel˝ den, tak po¯·d·m souboje.
+	AI_Output (self ,other,"DIA_Alrik_Hallo_09_04"); //Ale jestli t√≠m mysl√≠≈°, co dƒõl√°m cel√Ω den, tak po≈ô√°d√°m souboje.
 };
 
 // ************************************************************
-// 			  				Du k‰mpfst?
+// 			  				Du k√§mpfst?
 // ************************************************************
 
 INSTANCE DIA_Alrik_YouFight(C_INFO)
@@ -109,7 +109,7 @@ INSTANCE DIA_Alrik_YouFight(C_INFO)
 	condition	= DIA_Alrik_YouFight_Condition;
 	information	= DIA_Alrik_YouFight_Info;
 	permanent	= FALSE;
-	description = "Ty po¯·d·ö souboje?";
+	description = "Ty po≈ô√°d√°≈° souboje?";
 };                       
 
 FUNC INT DIA_Alrik_YouFight_Condition()
@@ -122,13 +122,13 @@ FUNC INT DIA_Alrik_YouFight_Condition()
  
 FUNC VOID DIA_Alrik_YouFight_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_YouFight_15_00"); //Ty po¯·d·ö souboje?
-	AI_Output (self ,other,"DIA_Alrik_YouFight_09_01"); //Kaûd˝ den od poledne do veËera.
+	AI_Output (other,self ,"DIA_Alrik_YouFight_15_00"); //Ty po≈ô√°d√°≈° souboje?
+	AI_Output (self ,other,"DIA_Alrik_YouFight_09_01"); //Ka≈æd√Ω den od poledne do veƒçera.
 	if (Npc_GetDistToWP (self,"NW_CITY_PATH_HABOUR_16_01") <= 500) //In Ecke
 	{
-		AI_Output (self ,other,"DIA_Alrik_YouFight_09_02"); //A p¯Ìmo tady!
+		AI_Output (self ,other,"DIA_Alrik_YouFight_09_02"); //A p≈ô√≠mo tady!
 	};
-	AI_Output (self ,other,"DIA_Alrik_YouFight_09_03"); //Za skladiötÏm v p¯ÌstavnÌ Ëtvrti - vöude dob¯e, doma nejlÌp!
+	AI_Output (self ,other,"DIA_Alrik_YouFight_09_03"); //Za skladi≈°tƒõm v p≈ô√≠stavn√≠ ƒçtvrti - v≈°ude dob≈ôe, doma nejl√≠p!
 };
 
 
@@ -143,7 +143,7 @@ INSTANCE DIA_Alrik_Regeln(C_INFO)
 	condition	= DIA_Alrik_Regeln_Condition;
 	information	= DIA_Alrik_Regeln_Info;
 	permanent	= FALSE;
-	description = "M· to nÏjak˝ pravidla?";
+	description = "M√° to nƒõjak√Ω pravidla?";
 };                       
 
 FUNC INT DIA_Alrik_Regeln_Condition()
@@ -156,23 +156,23 @@ FUNC INT DIA_Alrik_Regeln_Condition()
  
 FUNC VOID DIA_Alrik_Regeln_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_Regeln_15_00"); //Jsou nÏjak˝ pravidla?
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_01"); //Je to jednoduch˝: jsou povolen˝ vöechny norm·lnÌ zbranÏ. é·dn˝ luky ani kuöe a é¡DN¡ magie!
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_02"); //Bojujeme, dokud jeden z n·s nepadne. Jakmile bude jeden leûet s drûkou v hlÌnÏ, je konec, jasn˝?
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_03"); //Kaûd˝, kdo opustÌ mÌsto z·pasu, taky prohr·l. Takûe kdyû uteËeö, vyhr·l jsem j·!
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_04"); //Z·pisnÈ je 50 zlaù·k˘, a kdyû vyhrajeö, dostaneö zp·tky stovku. Kdyû ne, tak o ty prachy p¯ijdeö (uöklÌbne se).
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_05"); //Ch·peö?
+	AI_Output (other,self ,"DIA_Alrik_Regeln_15_00"); //Jsou nƒõjak√Ω pravidla?
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_01"); //Je to jednoduch√Ω: jsou povolen√Ω v≈°echny norm√°ln√≠ zbranƒõ. ≈Ω√°dn√Ω luky ani ku≈°e a ≈Ω√ÅDN√Å magie!
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_02"); //Bojujeme, dokud jeden z n√°s nepadne. Jakmile bude jeden le≈æet s dr≈ækou v hl√≠nƒõ, je konec, jasn√Ω?
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_03"); //Ka≈æd√Ω, kdo opust√≠ m√≠sto z√°pasu, taky prohr√°l. Tak≈æe kdy≈æ uteƒçe≈°, vyhr√°l jsem j√°!
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_04"); //Z√°pisn√© je 50 zla≈•√°k≈Ø, a kdy≈æ vyhraje≈°, dostane≈° zp√°tky stovku. Kdy≈æ ne, tak o ty prachy p≈ôijde≈° (u≈°kl√≠bne se).
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_05"); //Ch√°pe≈°?
 	AI_Output (other,self ,"DIA_Alrik_Regeln_15_06"); //Jo!
 };
 
 
 // ************************************************************
-// 		  			Important f¸r NEUE 3 K‰mpfe ab Kap 3
+// 		  			Important f√ºr NEUE 3 K√§mpfe ab Kap 3
 // ************************************************************
 
 		func void B_Alrik_Again()
 		{
-			AI_Output (self, other, "DIA_Alrik_Add_09_03"); //Tak co? Chceö si to se mnou znova rozdat? MyslÌm, ûe jsem se od poslednÏ o nÏco zlepöil.
+			AI_Output (self, other, "DIA_Alrik_Add_09_03"); //Tak co? Chce≈° si to se mnou znova rozdat? Mysl√≠m, ≈æe jsem se od poslednƒõ o nƒõco zlep≈°il.
 		};
 
 INSTANCE DIA_Alrik_NewFights3(C_INFO)
@@ -203,7 +203,7 @@ FUNC VOID DIA_Alrik_NewFights3_Info()
 };
 
 // ************************************************************
-// 		  			Important f¸r NEUE 3 K‰mpfe ab Kap 5
+// 		  			Important f√ºr NEUE 3 K√§mpfe ab Kap 5
 // ************************************************************
 
 INSTANCE DIA_Alrik_NewFights5(C_INFO)
@@ -238,13 +238,13 @@ FUNC VOID DIA_Alrik_NewFights5_Info()
 		
 		func void B_Alrik_Enough()
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_05"); //ÿekl bych, ûe uû ses navyhr·val dost.
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_06"); //Nech·pej mÏ öpatnÏ, ale od minula mi jeötÏ nep¯estalo huËet v hlavÏ.
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_05"); //≈òekl bych, ≈æe u≈æ ses navyhr√°val dost.
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_06"); //Nech√°pej mƒõ ≈°patnƒõ, ale od minula mi je≈°tƒõ nep≈ôestalo huƒçet v hlavƒõ.
 		};
 		
 		func void B_Alrik_ComeBackLater()
 		{
-			AI_Output (self, other, "DIA_Alrik_Add_09_02"); //Tak se vraù pozdÏji - j· mezitÌm budu cviËit.
+			AI_Output (self, other, "DIA_Alrik_Add_09_02"); //Tak se vra≈• pozdƒõji - j√° mezit√≠m budu cviƒçit.
 		};
 		
 
@@ -273,34 +273,34 @@ FUNC VOID DIA_Alrik_WannaFight_Info()
 	
 	Info_ClearChoices 	(DIA_Alrik_WannaFight);
 	
-	// ------ EXIT: Wenn Alrik schonmal verloren, n‰chster Kampf erst, wenn Alrik das bessere Schwert hat ------
+	// ------ EXIT: Wenn Alrik schonmal verloren, n√§chster Kampf erst, wenn Alrik das bessere Schwert hat ------
 	if ( (Alrik_ArenaKampfVerloren > 0) && (Npc_HasItems (self, ItMW_AlriksSword_Mis) == 0) )
 	|| (Npc_HasEquippedMeleeWeapon (self) == FALSE)
 	{
 		if (MIS_Alrik_Sword == LOG_SUCCESS) //Wenn nach Schwert-Mission niedergeschlagen und Schwert weggenommen
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_01"); //Nejd¯Ìv mi vraù meË a pak uvidÌme.
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_01"); //Nejd≈ô√≠v mi vra≈• meƒç a pak uvid√≠me.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_02"); //Ne-e, neû se ti znova postavÌm, pot¯ebuju lepöÌ zbraÚ!
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_03"); //P¯ed p·r dny jsem musel prodat sv˘j meË.
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_04"); //S nÌm mÏ totiû nikdo neporazÌ, hochu! Kdyû mi ho p¯ineseö, klidnÏ si s tebou zase zabojuju!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_02"); //Ne-e, ne≈æ se ti znova postav√≠m, pot≈ôebuju lep≈°√≠ zbra≈à!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_03"); //P≈ôed p√°r dny jsem musel prodat sv≈Øj meƒç.
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_04"); //S n√≠m mƒõ toti≈æ nikdo neporaz√≠, hochu! Kdy≈æ mi ho p≈ôinese≈°, klidnƒõ si s tebou zase zabojuju!
 			
 			Alrik_VomSchwertErzaehlt = TRUE;
 			
 			Log_CreateTopic (TOPIC_AlrikSchwert,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_AlrikSchwert,LOG_RUNNING);
-			B_LogEntry (TOPIC_AlrikSchwert,"Alrik prodal sv˘j meË obchodnÌku Jorovi. Bude se se mnou bÌt pouze tehdy, pokud mu jej p¯inesu zp·tky.");
+			B_LogEntry (TOPIC_AlrikSchwert,"Alrik prodal sv≈Øj meƒç obchodn√≠ku Jorovi. Bude se se mnou b√≠t pouze tehdy, pokud mu jej p≈ôinesu zp√°tky.");
 		};
 	}
 	
-	// ----- EXIT: ‹BER DREI MAL Alrik_ArenaKampfVerloren ------
+	// ----- EXIT: √úBER DREI MAL Alrik_ArenaKampfVerloren ------
 	else if (Kapitel <= 2)
 	&& (Alrik_ArenaKampfVerloren > 3)
 	{
-		AI_Output (self, other, "DIA_Alrik_Add_09_00"); //MyslÌm, ûe to by prozatÌm mohlo staËit.
-		AI_Output (self, other, "DIA_Alrik_Add_09_01"); //Nech mÏ trochu vydechnout.
+		AI_Output (self, other, "DIA_Alrik_Add_09_00"); //Mysl√≠m, ≈æe to by prozat√≠m mohlo staƒçit.
+		AI_Output (self, other, "DIA_Alrik_Add_09_01"); //Nech mƒõ trochu vydechnout.
 		B_Alrik_ComeBackLater();
 	}
 	
@@ -316,48 +316,48 @@ FUNC VOID DIA_Alrik_WannaFight_Info()
 	&& (Alrik_ArenaKampfVerloren > 9)
 	{
 		B_Alrik_Enough();
-		AI_Output (self, other, "DIA_Alrik_Add_09_04"); //Krom toho jsem uû dal dohromady dost penÏz.
-		AI_Output (self, other, "DIA_Alrik_Add_09_05"); //KonËÌm a jdu si ve mÏstÏ najÌt nÏjakÈ mÌsto, kde bych mohl z˘stat.
-		AI_Output (self, other, "DIA_Alrik_Add_09_06"); //Kdo vÌ, moûn· si otev¯u obchod se zbranÏmi.
+		AI_Output (self, other, "DIA_Alrik_Add_09_04"); //Krom toho jsem u≈æ dal dohromady dost penƒõz.
+		AI_Output (self, other, "DIA_Alrik_Add_09_05"); //Konƒç√≠m a jdu si ve mƒõstƒõ naj√≠t nƒõjak√© m√≠sto, kde bych mohl z≈Østat.
+		AI_Output (self, other, "DIA_Alrik_Add_09_06"); //Kdo v√≠, mo≈æn√° si otev≈ôu obchod se zbranƒõmi.
 	}
 	
 	// ------ normaler KAMPF ------
 	else if (Wld_IsTime(11,00,19,00))
 	{
-		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_07"); //M·ö 50 zlaù·k˘?
+		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_07"); //M√°≈° 50 zla≈•√°k≈Ø?
 		Info_ClearChoices 	(DIA_Alrik_WannaFight);
-		Info_AddChoice 		(DIA_Alrik_WannaFight, "Ani n·hodou...",	DIA_Alrik_WannaFight_NoGold);
+		Info_AddChoice 		(DIA_Alrik_WannaFight, "Ani n√°hodou...",	DIA_Alrik_WannaFight_NoGold);
 		if (Npc_HasItems (other, itmi_gold) >= 50)
 		{
-			Info_AddChoice 		(DIA_Alrik_WannaFight, "Jak chceö...",	DIA_Alrik_WannaFight_Gold);
+			Info_AddChoice 		(DIA_Alrik_WannaFight, "Jak chce≈°...",	DIA_Alrik_WannaFight_Gold);
 		};
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_08"); //Bojuju jenom od obÏda do veËera.
-		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_09"); //Boj stojÌ za to jenom tehdy, kdyû je kolem dost div·k˘, co uzavÌrajÌ s·zky!
+		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_08"); //Bojuju jenom od obƒõda do veƒçera.
+		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_09"); //Boj stoj√≠ za to jenom tehdy, kdy≈æ je kolem dost div√°k≈Ø, co uzav√≠raj√≠ s√°zky!
 		if (Wld_IsTime(19,00,03,30))
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_10"); //TeÔ uû je moc pozdÏ, vraù se zÌtra v poledne!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_10"); //Teƒè u≈æ je moc pozdƒõ, vra≈• se z√≠tra v poledne!
 		}
 		else // 03,30 - 11,00 
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_11"); //TeÔ je jeötÏ brzo, vraù se pozdÏji!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_11"); //Teƒè je je≈°tƒõ brzo, vra≈• se pozdƒõji!
 		};
 	};
 };
 
 func void DIA_Alrik_WannaFight_Gold()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_Gold_15_00"); //Jak si p¯ejeö.
+	AI_Output (other, self,"DIA_Alrik_WannaFight_Gold_15_00"); //Jak si p≈ôeje≈°.
 	B_GiveInvItems (other, self, itmi_gold, 50);
-	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_01"); //(hlasitÏ) M·me tu novÈho vyzyvatele!
-	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_02"); //S·zky jsou uzav¯eny.
+	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_01"); //(hlasitƒõ) M√°me tu nov√©ho vyzyvatele!
+	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_02"); //S√°zky jsou uzav≈ôeny.
 	
 	Npc_RemoveInvItems (self, itmi_gold, Npc_HasItems(self, itmi_gold) );
 	CreateInvItems (self, itmi_gold, 100); //50 vom Spieler und 50 Einsatz von Alrik...
 	
-	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_03"); //Jsi p¯ipraven?
+	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_03"); //Jsi p≈ôipraven?
 	
 	//--------------------------------------
 	self.aivar[AIV_ArenaFight] = AF_RUNNING;
@@ -365,22 +365,22 @@ func void DIA_Alrik_WannaFight_Gold()
 	//--------------------------------------
 	
 	Info_ClearChoices 	(DIA_Alrik_WannaFight);
-	Info_AddChoice 		(DIA_Alrik_WannaFight, "JeötÏ chvilku...",	DIA_Alrik_WannaFight_Moment);
-	Info_AddChoice 		(DIA_Alrik_WannaFight, "Tak pojÔ!",	DIA_Alrik_WannaFight_NOW);
+	Info_AddChoice 		(DIA_Alrik_WannaFight, "Je≈°tƒõ chvilku...",	DIA_Alrik_WannaFight_Moment);
+	Info_AddChoice 		(DIA_Alrik_WannaFight, "Tak pojƒè!",	DIA_Alrik_WannaFight_NOW);
 };
 
 func void DIA_Alrik_WannaFight_NoGold()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_NoGold_15_00"); //Ani n·hodou.
-	AI_Output (self, other,"DIA_Alrik_WannaFight_NoGold_09_01"); //Tak je seûeÚ! Bez s·zek nenÌ û·dn˝ boj!
+	AI_Output (other, self,"DIA_Alrik_WannaFight_NoGold_15_00"); //Ani n√°hodou.
+	AI_Output (self, other,"DIA_Alrik_WannaFight_NoGold_09_01"); //Tak je se≈æe≈à! Bez s√°zek nen√≠ ≈æ√°dn√Ω boj!
 	
 	Info_ClearChoices 	(DIA_Alrik_WannaFight);
 };
 
 func void DIA_Alrik_WannaFight_NOW()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_NOW_15_00"); //Tak pojÔ!
-	AI_Output (self, other,"DIA_Alrik_WannaFight_NOW_09_01"); //Tak uvidÌme, jak to zvl·dneö!
+	AI_Output (other, self,"DIA_Alrik_WannaFight_NOW_15_00"); //Tak pojƒè!
+	AI_Output (self, other,"DIA_Alrik_WannaFight_NOW_09_01"); //Tak uvid√≠me, jak to zvl√°dne≈°!
 	
 	if (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX])
 	{
@@ -394,8 +394,8 @@ func void DIA_Alrik_WannaFight_NOW()
 
 func void DIA_Alrik_WannaFight_Moment()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_Moment_15_00"); //JeötÏ chvilku.
-	AI_Output (self, other,"DIA_Alrik_WannaFight_Moment_09_01"); //KlidnÏ si dej na Ëas - j· zaËÌn·m teÔ!
+	AI_Output (other, self,"DIA_Alrik_WannaFight_Moment_15_00"); //Je≈°tƒõ chvilku.
+	AI_Output (self, other,"DIA_Alrik_WannaFight_Moment_09_01"); //Klidnƒõ si dej na ƒças - j√° zaƒç√≠n√°m teƒè!
 	
 	if (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX])
 	{
@@ -446,22 +446,22 @@ FUNC VOID DIA_Alrik_AfterFight_Info()
 	{
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_00"); //P·ni, chlape, ty m·ö ale sÌlu!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_00"); //P√°ni, chlape, ty m√°≈° ale s√≠lu!
 			
 			if (Npc_HasItems (self, itmi_gold) >= 100)
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_01"); //Tady m·ö tÏch 100 zlaù·k˘, zaslouûil sis je!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_01"); //Tady m√°≈° tƒõch 100 zla≈•√°k≈Ø, zaslou≈æil sis je!
 				B_GiveInvItems (self, other, itmi_gold, 100);
 			}
 			else if (Npc_HasItems (self, itmi_gold) == 0)
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_02"); //VidÌm, ûe svÈ zlato sis uû vzal.
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_03"); //MÏls ale poËkat, aû ti je d·m - j· svÈ slovo drûÌm!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_02"); //Vid√≠m, ≈æe sv√© zlato sis u≈æ vzal.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_03"); //Mƒõls ale poƒçkat, a≈æ ti je d√°m - j√° sv√© slovo dr≈æ√≠m!
 			}
 			else //zwischen 1 und 99 Gold...
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_04"); //Tys mÏ ale proöacoval, kdyû jsem byl v bezvÏdomÌ!
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_05"); //To nenÌ dobr˝, chlape! No, nevadÌ, ty prachy ti stejnÏ pat¯ily - a tady je zbytek!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_04"); //Tys mƒõ ale pro≈°acoval, kdy≈æ jsem byl v bezvƒõdom√≠!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_05"); //To nen√≠ dobr√Ω, chlape! No, nevad√≠, ty prachy ti stejnƒõ pat≈ôily - a tady je zbytek!
 				B_GiveInvItems (self, other, itmi_gold, Npc_HasItems(self, itmi_gold) );
 			};
 			
@@ -469,22 +469,22 @@ FUNC VOID DIA_Alrik_AfterFight_Info()
 		}
 		else if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_06"); //To byl dobr˝ boj. S·zku jsi sice prohr·l - nic si z toho ale nedÏlej, p¯ispÏls na dobrou vÏc! (uöklÌbne se)
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_06"); //To byl dobr√Ω boj. S√°zku jsi sice prohr√°l - nic si z toho ale nedƒõlej, p≈ôispƒõls na dobrou vƒõc! (u≈°kl√≠bne se)
 		}
 		else //FIGHT_CANCEL
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_07"); //Hej, jak jsem ¯ekl, kaûd˝, kdo se vzd·lÌ ze z·pasiötÏ, prohr·l! Jestli to chceö ale zkusit znova, jsem ti k dispozici!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_07"); //Hej, jak jsem ≈ôekl, ka≈æd√Ω, kdo se vzd√°l√≠ ze z√°pasi≈°tƒõ, prohr√°l! Jestli to chce≈° ale zkusit znova, jsem ti k dispozici!
 		};
 		
 		// ------ nur einmal ------
 		if (Alrik_Kaempfe == 1)
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_08"); //A jeötÏ jedna vÏc: o tom, co se dÏje za skladiötÏm, se nemluvÌ.
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_08"); //A je≈°tƒõ jedna vƒõc: o tom, co se dƒõje za skladi≈°tƒõm, se nemluv√≠.
 			
 			if (other.guild != GIL_MIL)
 			&& (other.guild != GIL_PAL)
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_09"); //Domobrana tÏ m˘ûe öoupnout za m¯Ìûe za sebemenöÌ proh¯eöek - a s·zenÌ na souboje se jim rozhodnÏ moc nelÌbÌ.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_09"); //Domobrana tƒõ m≈Ø≈æe ≈°oupnout za m≈ô√≠≈æe za sebemen≈°√≠ proh≈ôe≈°ek - a s√°zen√≠ na souboje se jim rozhodnƒõ moc nel√≠b√≠.
 			};
 		};
 				
@@ -498,22 +498,22 @@ FUNC VOID DIA_Alrik_AfterFight_Info()
 	{
 		if (self.aivar[AIV_ArenaFight] == AF_AFTER_PLUS_DAMAGE) // NACH Kampf und VOR Bewertung nochmal angegriffen.
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_10"); //Boj skonËil, b¯Ìdile!
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_11"); //NelÌbÌ se mi, kdyû nÏkdo poruöuje pravidla.
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_10"); //Boj skonƒçil, b≈ô√≠dile!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_11"); //Nel√≠b√≠ se mi, kdy≈æ nƒõkdo poru≈°uje pravidla.
 			AI_Output (self, other,"DIA_Alrik_AfterFight_09_12"); //Vypadni odsud!
 		}
 		else //einfach so angegriffen (unvorbereitet)
 		{
 			if (Alrik_Kaempfe == 0)
 			{	
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_13"); //Jestlis se mnou chtÏl bojovat, staËilo, abys mÏ prostÏ vyzval.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_13"); //Jestlis se mnou chtƒõl bojovat, staƒçilo, abys mƒõ prostƒõ vyzval.
 			}
 			else // > 0
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_14"); //Jestli chceö dalöÌ boj, tak mÏ k nÏmu prostÏ vyzvi!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_14"); //Jestli chce≈° dal≈°√≠ boj, tak mƒõ k nƒõmu prostƒõ vyzvi!
 			};
 			
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_15"); //S takov˝mi pobudy, jako jsi ty, nechci nic mÌt! Odpal!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_15"); //S takov√Ωmi pobudy, jako jsi ty, nechci nic m√≠t! Odpal!
 		};
 		
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -535,7 +535,7 @@ INSTANCE DIA_Alrik_DuWohnst(C_INFO)
 	condition	= DIA_Alrik_DuWohnst_Condition;
 	information	= DIA_Alrik_DuWohnst_Info;
 	permanent	= FALSE;
-	description = "Ty 'bydlÌö' za skladiötÏm?";
+	description = "Ty 'bydl√≠≈°' za skladi≈°tƒõm?";
 };                       
 
 FUNC INT DIA_Alrik_DuWohnst_Condition()
@@ -548,11 +548,11 @@ FUNC INT DIA_Alrik_DuWohnst_Condition()
  
 FUNC VOID DIA_Alrik_DuWohnst_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_DuWohnst_15_00"); //(p¯ekvapenÏ) Ty bydlÌö za skladiötÏm?
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_01"); //Je to jenom doËasnÈ. (uöklÌbne se) Kdybys mÏl tolik penÏz co j·, taky by sis dop¯·l trochu pohodlÌ!
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_02"); //B˝val jsem v˝cvikov˝m instruktorem v arm·dÏ, ale pak jsem toho nechal a vydal se za dobrodruûstvÌm.
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_03"); //A teÔ jsem skonËil v t˝hle öpinav˝ dÌ¯e a poslednÌch 100 zlaù·k˘ vysolil str·ûÌm u br·ny.
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_04"); //Takûe teÔ kouk·m zase p¯ijÌt k nÏjak˝m penÏz˘m. Dokonce jsem musel prodat i sv˘j meË.
+	AI_Output (other,self ,"DIA_Alrik_DuWohnst_15_00"); //(p≈ôekvapenƒõ) Ty bydl√≠≈° za skladi≈°tƒõm?
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_01"); //Je to jenom doƒçasn√©. (u≈°kl√≠bne se) Kdybys mƒõl tolik penƒõz co j√°, taky by sis dop≈ô√°l trochu pohodl√≠!
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_02"); //B√Ωval jsem v√Ωcvikov√Ωm instruktorem v arm√°dƒõ, ale pak jsem toho nechal a vydal se za dobrodru≈æstv√≠m.
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_03"); //A teƒè jsem skonƒçil v t√Ωhle ≈°pinav√Ω d√≠≈ôe a posledn√≠ch 100 zla≈•√°k≈Ø vysolil str√°≈æ√≠m u br√°ny.
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_04"); //Tak≈æe teƒè kouk√°m zase p≈ôij√≠t k nƒõjak√Ωm penƒõz≈Øm. Dokonce jsem musel prodat i sv≈Øj meƒç.
 	
 	Alrik_VomSchwertErzaehlt = TRUE;
 };
@@ -569,7 +569,7 @@ INSTANCE DIA_Alrik_WerSchwert(C_INFO)
 	condition	= DIA_Alrik_WerSchwert_Condition;
 	information	= DIA_Alrik_WerSchwert_Info;
 	permanent	= FALSE;
-	description = "Komu jsi sv˘j meË prodal?";
+	description = "Komu jsi sv≈Øj meƒç prodal?";
 };                       
 
 FUNC INT DIA_Alrik_WerSchwert_Condition()
@@ -583,11 +583,11 @@ FUNC INT DIA_Alrik_WerSchwert_Condition()
  
 FUNC VOID DIA_Alrik_WerSchwert_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_00"); //Komu jsi sv˘j meË prodal?
-	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_01"); //U jednoho obchodnÌka na trûiöti jsem ho vymÏnil za nÏjakÈ z·soby.
-	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_02"); //Ten chl·pek se jmenuje Jora. Ty pochodnÏ a trochu jÌdla, co mi dal, jsem uû d·vno spot¯eboval.
-	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_03"); //Ten meË mi ale asi jen tak zadarmo ned·.
-	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_04"); //Ten meË je star˝ a nejspÌö za nÏj moc chtÌt nebude. Mysli p¯itom na prachy, kterÈ si vydÏl·ö na s·zk·ch p¯i z·pase. (uöklÌbne se)
+	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_00"); //Komu jsi sv≈Øj meƒç prodal?
+	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_01"); //U jednoho obchodn√≠ka na tr≈æi≈°ti jsem ho vymƒõnil za nƒõjak√© z√°soby.
+	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_02"); //Ten chl√°pek se jmenuje Jora. Ty pochodnƒõ a trochu j√≠dla, co mi dal, jsem u≈æ d√°vno spot≈ôeboval.
+	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_03"); //Ten meƒç mi ale asi jen tak zadarmo ned√°.
+	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_04"); //Ten meƒç je star√Ω a nejsp√≠≈° za nƒõj moc cht√≠t nebude. Mysli p≈ôitom na prachy, kter√© si vydƒõl√°≈° na s√°zk√°ch p≈ôi z√°pase. (u≈°kl√≠bne se)
 		
 	MIS_Alrik_Sword = LOG_RUNNING;
 };
@@ -604,7 +604,7 @@ INSTANCE DIA_Alrik_HaveSword(C_INFO)
 	condition	= DIA_Alrik_HaveSword_Condition;
 	information	= DIA_Alrik_HaveSword_Info;
 	permanent	= TRUE;
-	description = "M·m ten tv˘j meË.";
+	description = "M√°m ten tv≈Øj meƒç.";
 };                       
 
 FUNC INT DIA_Alrik_HaveSword_Condition()
@@ -617,19 +617,19 @@ FUNC INT DIA_Alrik_HaveSword_Condition()
  
 FUNC VOID DIA_Alrik_HaveSword_Info()
 {	
-	AI_Output (other,self ,"DIA_Alrik_HaveSword_15_00"); //M·m ten tv˘j meË.
+	AI_Output (other,self ,"DIA_Alrik_HaveSword_15_00"); //M√°m ten tv≈Øj meƒç.
 	B_GiveInvItems (other,self,ItMW_AlriksSword_Mis,1);
 	
 	if (MIS_Alrik_Sword != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_01"); //P·ni! To je mnohem lepöÌ neû bojovat s nÏjak˝m star˝m klackem!
+		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_01"); //P√°ni! To je mnohem lep≈°√≠ ne≈æ bojovat s nƒõjak√Ωm star√Ωm klackem!
 		
 		MIS_Alrik_Sword = LOG_SUCCESS;
 		B_GivePlayerXP (XP_AlriksSword);
 	}
 	else
 	{	
-		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_02"); //SkvÏlÈ! Jsem zvÏdav, jestli se mÏ teÔ odv·ûÌö vyzvat jeötÏ jednou!
+		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_02"); //Skvƒõl√©! Jsem zvƒõdav, jestli se mƒõ teƒè odv√°≈æ√≠≈° vyzvat je≈°tƒõ jednou!
 	};
 		
 	if (Alrik_EinmalSchwertBonus == FALSE)
@@ -651,7 +651,7 @@ INSTANCE DIA_Alrik_Krieg(C_INFO)
 	condition	= DIA_Alrik_Krieg_Condition;
 	information	= DIA_Alrik_Krieg_Info;
 	permanent	= FALSE;
-	description = "Co vÌö o tÈ v·lce se sk¯ety?";
+	description = "Co v√≠≈° o t√© v√°lce se sk≈ôety?";
 };                       
 
 FUNC INT DIA_Alrik_Krieg_Condition()
@@ -665,10 +665,10 @@ FUNC INT DIA_Alrik_Krieg_Condition()
  
 FUNC VOID DIA_Alrik_Krieg_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_Krieg_15_00"); //Co vÌö o tÈ v·lce se sk¯ety?
-	AI_Output (self ,other,"DIA_Alrik_Krieg_09_01"); //K tomu nenÌ moc co ¯Ìct. Ta v·lka prostÏ trv· uû moc dlouho.
-	AI_Output (self ,other,"DIA_Alrik_Krieg_09_02"); //Cel· zemÏ hladovÌ. Vöude propukajÌ rolnickÈ nepokoje, kterÈ kr·l nemilosrdnÏ potÌr·.
-	AI_Output (self ,other,"DIA_Alrik_Krieg_09_03"); //Ale moc mu to nepom˘ûe - tÏch vzpour je uû je moc. Jestli v·lka brzo neskonËÌ, cel· ¯Ìöe se rozpadne.
+	AI_Output (other,self ,"DIA_Alrik_Krieg_15_00"); //Co v√≠≈° o t√© v√°lce se sk≈ôety?
+	AI_Output (self ,other,"DIA_Alrik_Krieg_09_01"); //K tomu nen√≠ moc co ≈ô√≠ct. Ta v√°lka prostƒõ trv√° u≈æ moc dlouho.
+	AI_Output (self ,other,"DIA_Alrik_Krieg_09_02"); //Cel√° zemƒõ hladov√≠. V≈°ude propukaj√≠ rolnick√© nepokoje, kter√© kr√°l nemilosrdnƒõ pot√≠r√°.
+	AI_Output (self ,other,"DIA_Alrik_Krieg_09_03"); //Ale moc mu to nepom≈Ø≈æe - tƒõch vzpour je u≈æ je moc. Jestli v√°lka brzo neskonƒç√≠, cel√° ≈ô√≠≈°e se rozpadne.
 };
 
 // ************************************************************
@@ -687,7 +687,7 @@ instance DIA_Alrik_Ausbilden(C_INFO)
 	condition	= DIA_Alrik_Ausbilden_Condition;
 	information	= DIA_Alrik_Ausbilden_Info;
 	permanent	= TRUE;
-	description = "M˘ûeö mÏ uËit?";
+	description = "M≈Ø≈æe≈° mƒõ uƒçit?";
 };                       
 
 FUNC INT DIA_Alrik_Ausbilden_Condition()
@@ -702,29 +702,29 @@ FUNC INT DIA_Alrik_Ausbilden_Condition()
  
 FUNC VOID DIA_Alrik_Ausbilden_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_Ausbilden_15_00"); //M˘ûeö mÏ uËit?
+	AI_Output (other,self ,"DIA_Alrik_Ausbilden_15_00"); //M≈Ø≈æe≈° mƒõ uƒçit?
 	
 	if (Alrik_Kaempfe == 0)
 	&& (hero.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_01"); //Jestli se opravdu chceö nauËit bojovat, tak si to pojÔ rozdat se mnou. (dom˝ölivÏ) A ani si za tu lekci nebudeö muset p¯iplatit.
+		AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_01"); //Jestli se opravdu chce≈° nauƒçit bojovat, tak si to pojƒè rozdat se mnou. (dom√Ω≈°livƒõ) A ani si za tu lekci nebude≈° muset p≈ôiplatit.
 		Alrik_VorausErzaehlt = TRUE; 
 	}
 	else //>0
 	{
 		if (Alrik_VorausErzaehlt == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_02"); //DodrûÌm slovo a nauËÌm tÏ vöechno, co zn·m - pokud m·ö tedy dostatek zkuöenostÌ.
+			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_02"); //Dodr≈æ√≠m slovo a nauƒç√≠m tƒõ v≈°echno, co zn√°m - pokud m√°≈° tedy dostatek zku≈°enost√≠.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_03"); //Jestli m·ö dostatek zkuöenostÌ, tak jasnÏ!
+			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_03"); //Jestli m√°≈° dostatek zku≈°enost√≠, tak jasnƒõ!
 		};
 		
 		
 		Alrik_Teach1H = TRUE;
 		Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-		B_LogEntry (Topic_CityTeacher,"Alrik mÏ vycviËÌ v boji s jednoruËnÌmi zbranÏmi. Potlouk· se kdesi za skladiötÏm v p¯ÌstavnÌ Ëtvrti.");
+		B_LogEntry (Topic_CityTeacher,"Alrik mƒõ vycviƒç√≠ v boji s jednoruƒçn√≠mi zbranƒõmi. Potlouk√° se kdesi za skladi≈°tƒõm v p≈ô√≠stavn√≠ ƒçtvrti.");
 	};
 };
 
@@ -743,7 +743,7 @@ instance DIA_Alrik_Teach(C_INFO)
 	condition	= DIA_Alrik_Teach_Condition;
 	information	= DIA_Alrik_Teach_Info;
 	permanent	= TRUE;
-	description = "VycviË mÏ v boji s meËem!";
+	description = "Vycviƒç mƒõ v boji s meƒçem!";
 };                       
 
 FUNC INT DIA_Alrik_Teach_Condition()
@@ -756,7 +756,7 @@ FUNC INT DIA_Alrik_Teach_Condition()
  
 FUNC VOID DIA_Alrik_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Alrik_Teach_15_00"); //VycviË mÏ v boji s meËem!
+	AI_Output (other,self ,"DIA_Alrik_Teach_15_00"); //Vycviƒç mƒõ v boji s meƒçem!
 	
 	Alrik_Merke_1h =  other.HitChance[NPC_TALENT_1H];
 	
@@ -770,11 +770,11 @@ FUNC VOID DIA_Alrik_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_1H] >= (60-30))
 	{
-		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_00"); //Uû nejsi û·dn˝ nov·Ëek!
+		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_00"); //U≈æ nejsi ≈æ√°dn√Ω nov√°ƒçek!
 	}
 	else if (other.HitChance[NPC_TALENT_1H] > Alrik_Merke_1h)
 	{
-		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_01"); //Uû ses po¯·dnÏ zlepöil - brzo z tebe bude po¯·dn˝ bojovnÌk!
+		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_01"); //U≈æ ses po≈ô√°dnƒõ zlep≈°il - brzo z tebe bude po≈ô√°dn√Ω bojovn√≠k!
 	};
 	
 	Info_ClearChoices (DIA_Alrik_Teach);

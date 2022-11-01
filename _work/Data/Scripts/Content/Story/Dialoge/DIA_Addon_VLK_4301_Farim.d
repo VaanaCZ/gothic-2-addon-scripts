@@ -64,7 +64,7 @@ instance DIA_Addon_Farim_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_Hallo_Condition;
 	information	 = 	DIA_Addon_Farim_Hallo_Info;
 
-	description	 = 	"Ty jsi rybáø?";
+	description	 = 	"Ty jsi rybÃ¡Å™?";
 };
 
 func int DIA_Addon_Farim_Hallo_Condition ()
@@ -74,16 +74,16 @@ func int DIA_Addon_Farim_Hallo_Condition ()
 
 func void DIA_Addon_Farim_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //Ty jsi rybáø?
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //(cynicky) Jak jsi na to pøišel?
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //Proè mì prostì nemùeš nechat na pokoji?
+	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //Ty jsi rybÃ¡Å™?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //(cynicky) Jak jsi na to pÅ™iÅ¡el?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //ProÄ mÄ› prostÄ› nemÅ¯Å¾eÅ¡ nechat na pokoji?
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //Neber si to osobnì, ale poslední dobou jsem s domobranou nemìl zrovna štìstí.
+		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //Neber si to osobnÄ›, ale poslednÃ­ dobou jsem s domobranou nemÄ›l zrovna Å¡tÄ›stÃ­.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_03"); //Neber si to osobnì, ale poslední dobou jsem nemìl moc štìstí. Mùe za to domobrana.
+		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_03"); //Neber si to osobnÄ›, ale poslednÃ­ dobou jsem nemÄ›l moc Å¡tÄ›stÃ­. MÅ¯Å¾e za to domobrana.
 	};
 };
 
@@ -97,7 +97,7 @@ instance DIA_Addon_Farim_MilizProbs		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_MilizProbs_Condition;
 	information	 = 	DIA_Addon_Farim_MilizProbs_Info;
 
-	description	 = 	"Problém s domobranou?";
+	description	 = 	"ProblÃ©m s domobranou?";
 };
 
 func int DIA_Addon_Farim_MilizProbs_Condition ()
@@ -110,53 +110,53 @@ func int DIA_Addon_Farim_MilizProbs_Condition ()
 
 func void DIA_Addon_Farim_MilizProbs_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_MilizProbs_15_00"); //Problémy s domobranou?
+	AI_Output	(other, self, "DIA_Addon_Farim_MilizProbs_15_00"); //ProblÃ©my s domobranou?
 	if (((hero.guild == GIL_MIL)||(hero.guild == GIL_PAL)) == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Ti šmejdi sem poøád chodí a berou si, co chtìj.
+		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Ti Å¡mejdi sem poÅ™Ã¡d chodÃ­ a berou si, co chtÄ›j.
 	};
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //Minulı tıden mi takhle sebrali všechen úlovek. Prej e 'je to pro dobrou vìc'.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //Vím, e od tı doby, co sedláci pøestali obchodovat, se kadej musí starat sám o sebe.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //A samozøejmì e nìkterı lidi mají hlad. Je zázrak, e mi ty ryby nekradou pøímo pod nosem.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Ale jestli to takhle pùjde dál, nebudu u mít co jíst ani já sám.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //MinulÃ½ tÃ½den mi takhle sebrali vÅ¡echen Ãºlovek. Prej Å¾e 'je to pro dobrou vÄ›c'.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //VÃ­m, Å¾e od tÃ½ doby, co sedlÃ¡ci pÅ™estali obchodovat, se kaÅ¾dej musÃ­ starat sÃ¡m o sebe.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //A samozÅ™ejmÄ› Å¾e nÄ›kterÃ½ lidi majÃ­ hlad. Je zÃ¡zrak, Å¾e mi ty ryby nekradou pÅ™Ã­mo pod nosem.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Ale jestli to takhle pÅ¯jde dÃ¡l, nebudu uÅ¾ mÃ­t co jÃ­st ani jÃ¡ sÃ¡m.
 	
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Dej mi všecky své ryby.", DIA_Addon_Farim_MilizProbs_klauen );
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Moná bych ti mohl pomoct.", DIA_Addon_Farim_MilizProbs_helfen );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Dej mi vÅ¡ecky svÃ© ryby.", DIA_Addon_Farim_MilizProbs_klauen );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "MoÅ¾nÃ¡ bych ti mohl pomoct.", DIA_Addon_Farim_MilizProbs_helfen );
 	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Mluvil jsi o tom s paladiny?", DIA_Addon_Farim_MilizProbs_paladine );
 };
 func void DIA_Addon_Farim_MilizProbs_paladine ()
 {
 	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_paladine_15_00"); //Mluvil jsi o tom s paladiny?
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_paladine_11_01"); //(smìje se) Dìláš si srandu? To si vánì myslíš, e by je zajímaly problémy takovıho uboáka, jako jsem já?
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_paladine_11_01"); //(smÄ›je se) DÄ›lÃ¡Å¡ si srandu? To si vÃ¡Å¾nÄ› myslÃ­Å¡, Å¾e by je zajÃ­maly problÃ©my takovÃ½ho uboÅ¾Ã¡ka, jako jsem jÃ¡?
 };
 var int Farim_PissedOff;
 func void DIA_Addon_Farim_MilizProbs_klauen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_klauen_15_00"); //Dej mi všecky svoje ryby.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_01"); //(vztekle) Já to VÌDÌL! Další z tìch hajzlù!
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_klauen_15_00"); //Dej mi vÅ¡ecky svoje ryby.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_01"); //(vztekle) JÃ¡ to VÄšDÄšL! DalÅ¡Ã­ z tÄ›ch hajzlÅ¯!
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_02"); //Ale obávám se, e jdeš pozdì, tví kamarádíèkové u tu byli vèera a sebrali mi úplnì všecko.
+		AI_Output (self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_02"); //Ale obÃ¡vÃ¡m se, Å¾e jdeÅ¡ pozdÄ›, tvÃ­ kamarÃ¡dÃ­ÄkovÃ© uÅ¾ tu byli vÄera a sebrali mi ÃºplnÄ› vÅ¡ecko.
 	};
 	
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_04"); //No, a teï bys u myslím mìl jít.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_04"); //No, a teÄ bys uÅ¾ myslÃ­m mÄ›l jÃ­t.
 	Farim_PissedOff = TRUE;
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 };
 func void DIA_Addon_Farim_MilizProbs_helfen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //Moná bych ti mohl pomoci.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //Nevím. Snad bys mohl znát nìkoho od domobrany, kdo má spojení na paladiny.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //Paladini si ode mì tìko budou kupovat ryby.
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //Uvidím, co se dá dìlat.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //MoÅ¾nÃ¡ bych ti mohl pomoci.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //NevÃ­m. Snad bys mohl znÃ¡t nÄ›koho od domobrany, kdo mÃ¡ spojenÃ­ na paladiny.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //Paladini si ode mÄ› tÄ›Å¾ko budou kupovat ryby.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //UvidÃ­m, co se dÃ¡ dÄ›lat.
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 	
 	Log_CreateTopic (TOPIC_Addon_FarimsFish, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_FarimsFish, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_FarimsFish,"Rybáø Farim má problém s domobranou. Chtìjí po nìm tolik ryb, e u mu nezbıvá nic pro vlastní obivu. Chtìlo by to najít nìjakého vlivného paladina, kterı by mu pomohl."); 
+	B_LogEntry (TOPIC_Addon_FarimsFish,"RybÃ¡Å™ Farim mÃ¡ problÃ©m s domobranou. ChtÄ›jÃ­ po nÄ›m tolik ryb, Å¾e uÅ¾ mu nezbÃ½vÃ¡ nic pro vlastnÃ­ obÅ¾ivu. ChtÄ›lo by to najÃ­t nÄ›jakÃ©ho vlivnÃ©ho paladina, kterÃ½ by mu pomohl."); 
 		
 	MIS_Addon_Farim_PaladinFisch = LOG_RUNNING;
 };
@@ -171,7 +171,7 @@ instance DIA_Addon_Farim_MartinHelps		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_MartinHelps_Condition;
 	information	 = 	DIA_Addon_Farim_MartinHelps_Info;
 
-	description	 = 	"Vím, jak vyøešit ten tvùj problém s domobranou.";
+	description	 = 	"VÃ­m, jak vyÅ™eÅ¡it ten tvÅ¯j problÃ©m s domobranou.";
 };
 
 func int DIA_Addon_Farim_MartinHelps_Condition ()
@@ -185,21 +185,21 @@ func int DIA_Addon_Farim_MartinHelps_Condition ()
 
 func void DIA_Addon_Farim_MartinHelps_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_00"); //Vím, jak vyøešit ten tvùj problém s domobranou.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_01"); //A jak by to mìlo bıt?
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_00"); //VÃ­m, jak vyÅ™eÅ¡it ten tvÅ¯j problÃ©m s domobranou.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_01"); //A jak by to mÄ›lo bÃ½t?
 
 	if (hero.guild == GIL_MIL)||(hero.guild == GIL_PAL)
 	{
-		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_02"); //Nejsem tu tak èasto, abych ti kadou noc hlídal ryby.
-		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_03"); //Ale znám nìkoho, kdo to udìlat mùe.
+		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_02"); //Nejsem tu tak Äasto, abych ti kaÅ¾dou noc hlÃ­dal ryby.
+		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_03"); //Ale znÃ¡m nÄ›koho, kdo to udÄ›lat mÅ¯Å¾e.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //Paladinskı skladník Martin chce, abys mu øekl o domobranì a o tvıch rybách.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //A myslíš, e mì pak domobrana nechá na pokoji?
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //Aspoò to tvrdí.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //Skvìlı. Dìkuju ti. Moc ti toho dát nemùu, ale poèkej...
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //Tenhle divnej modrej kámen jsem našel na jednom z ostrovù mimo pobøeí Khorinidu.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //Myslím, e není nijak zvláš cennı, ale urèitì se najde nìkdo, komu se bude hodit.
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //PaladinskÃ½ skladnÃ­k Martin chce, abys mu Å™ekl o domobranÄ› a o tvÃ½ch rybÃ¡ch.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //A myslÃ­Å¡, Å¾e mÄ› pak domobrana nechÃ¡ na pokoji?
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //AspoÅˆ to tvrdÃ­.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //SkvÄ›lÃ½. DÄ›kuju ti. Moc ti toho dÃ¡t nemÅ¯Å¾u, ale poÄkej...
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //Tenhle divnej modrej kÃ¡men jsem naÅ¡el na jednom z ostrovÅ¯ mimo pobÅ™eÅ¾Ã­ Khorinidu.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //MyslÃ­m, Å¾e nenÃ­ nijak zvlÃ¡Å¡Å¥ cennÃ½, ale urÄitÄ› se najde nÄ›kdo, komu se bude hodit.
 		
 	B_GiveInvItems (self, other, ItMi_Aquamarine, 1);		
 	
@@ -217,7 +217,7 @@ instance DIA_Addon_Farim_Landstreicher		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_Landstreicher_Condition;
 	information	 = 	DIA_Addon_Farim_Landstreicher_Info;
 
-	description	 = 	"Mùeš mi øíci nìco o tìch pohøešovanıch lidech?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mi Å™Ã­ci nÄ›co o tÄ›ch pohÅ™eÅ¡ovanÃ½ch lidech?";
 };
 
 func int DIA_Addon_Farim_Landstreicher_Condition ()
@@ -231,9 +231,9 @@ func int DIA_Addon_Farim_Landstreicher_Condition ()
 
 func void DIA_Addon_Farim_Landstreicher_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //Mùeš mi øíct nìco o tìch pohøešovanıch lidech?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //Mùj kámoš William se zaèal scházet s bandou divnejch individuí. A kam a ho to dostalo?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Jednoho krásnıho dne prostì nepøišel do práce a u jsem ho víckrát nevidìl.
+	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //MÅ¯Å¾eÅ¡ mi Å™Ã­ct nÄ›co o tÄ›ch pohÅ™eÅ¡ovanÃ½ch lidech?
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //MÅ¯j kÃ¡moÅ¡ William se zaÄal schÃ¡zet s bandou divnejch individuÃ­. A kam aÅ¾ ho to dostalo?
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Jednoho krÃ¡snÃ½ho dne prostÄ› nepÅ™iÅ¡el do prÃ¡ce a uÅ¾ jsem ho vÃ­ckrÃ¡t nevidÄ›l.
 	SCKnowsFarimAsWilliamsFriend = TRUE;
 };
 
@@ -248,7 +248,7 @@ instance DIA_Addon_Farim_William		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_William_Condition;
 	information	 = 	DIA_Addon_Farim_William_Info;
 
-	description	 = 	"Zmizel i tvùj kamarád William?";
+	description	 = 	"Zmizel i tvÅ¯j kamarÃ¡d William?";
 };
 
 func int DIA_Addon_Farim_William_Condition ()
@@ -262,72 +262,72 @@ func int DIA_Addon_Farim_William_Condition ()
 
 func void DIA_Addon_Farim_William_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //Tvùj kamarád William zmizel?
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //Pøesnì tak. Je to rybáø, ale poøád si hraje na dùleitıho, na to tì musím upozornit.
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //Mìl se vod tı bandy dret dál.
+	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //TvÅ¯j kamarÃ¡d William zmizel?
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //PÅ™esnÄ› tak. Je to rybÃ¡Å™, ale poÅ™Ã¡d si hraje na dÅ¯leÅ¾itÃ½ho, na to tÄ› musÃ­m upozornit.
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //MÄ›l se vod tÃ½ bandy drÅ¾et dÃ¡l.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
 	Log_AddEntry (TOPIC_Addon_MissingPeople, LogText_Addon_WilliamMissing); 
 	
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Co to mùe bejt za šmejdy?", DIA_Addon_Farim_William_typen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Urèitì se brzy objeví.", DIA_Addon_Farim_William_auftauchen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Co má za lubem?", DIA_Addon_Farim_William_WasGemacht );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Kdy jsi ho vidìl naposledy?", DIA_Addon_Farim_William_WannWeg );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Co to mÅ¯Å¾e bejt za Å¡mejdy?", DIA_Addon_Farim_William_typen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "UrÄitÄ› se brzy objevÃ­.", DIA_Addon_Farim_William_auftauchen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Co mÃ¡ za lubem?", DIA_Addon_Farim_William_WasGemacht );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Kdy jsi ho vidÄ›l naposledy?", DIA_Addon_Farim_William_WannWeg );
 };
 func void DIA_Addon_Farim_William_WasGemacht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //Co mìl v plánu?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //William mìl s tìma darebákama nìjakı pokoutní techtle mechtle.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //Myslím, e se to všecko toèilo kolem pašovanıho zboí, kterı tìm parchantùm prodával.
-	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiß ich nicht, was er stattdessen für sie gemacht hat.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //Co mÄ›l v plÃ¡nu?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //William mÄ›l s tÄ›ma darebÃ¡kama nÄ›jakÃ½ pokoutnÃ­ techtle mechtle.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //MyslÃ­m, Å¾e se to vÅ¡ecko toÄilo kolem paÅ¡ovanÃ½ho zboÅ¾Ã­, kterÃ½ tÄ›m parchantÅ¯m prodÃ¡val.
+	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiÃŸ ich nicht, was er stattdessen fÃ¼r sie gemacht hat.
 };
 func void DIA_Addon_Farim_William_typen ()
 {
 	AI_Output			(other, self, "DIA_Addon_Farim_William_typen_15_00"); //A co to bylo za parchanty?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //Nemám tucha, kdo to moh bejt, ani co dìlal tady v Khorinidu.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //Vím jenom, kde se s Williamem scházeli.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //Jednou jsem tam Williama vidìl, kdy jsem rybaøil v zátoce.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //NemÃ¡m tucha, kdo to moh bejt, ani co dÄ›lal tady v Khorinidu.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //VÃ­m jenom, kde se s Williamem schÃ¡zeli.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //Jednou jsem tam Williama vidÄ›l, kdyÅ¾ jsem rybaÅ™il v zÃ¡toce.
 	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Kde pøesnì se scházeli?", DIA_Addon_Farim_William_Wo );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Kde pÅ™esnÄ› se schÃ¡zeli?", DIA_Addon_Farim_William_Wo );
 };
 func void DIA_Addon_Farim_William_Wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Kde pøesnì je to místo, kde se scházeli?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //Je to v zátoce naproti pøístavu, severnì odsud.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //Dá se tam dostat jenom lodí nebo doplavat.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //Je tam plá a malej rybáøskej tábor. A tam jsem ho vidìl.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Kde pÅ™esnÄ› je to mÃ­sto, kde se schÃ¡zeli?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //Je to v zÃ¡toce naproti pÅ™Ã­stavu, severnÄ› odsud.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //DÃ¡ se tam dostat jenom lodÃ­ nebo doplavat.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //Je tam plÃ¡Å¾ a malej rybÃ¡Å™skej tÃ¡bor. A tam jsem ho vidÄ›l.
 	self.flags = 0;	//Joly: hat seine Pflicht getan
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Rybáø Farim oplakává ztrátu svého pøítele Williama, kterı se prı èasto stıkal s nìjakım hrdloøezy. Scházeli se v zátoce severnì od pøístavu."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"RybÃ¡Å™ Farim oplakÃ¡vÃ¡ ztrÃ¡tu svÃ©ho pÅ™Ã­tele Williama, kterÃ½ se prÃ½ Äasto stÃ½kal s nÄ›jakÃ½m hrdloÅ™ezy. SchÃ¡zeli se v zÃ¡toce severnÄ› od pÅ™Ã­stavu."); 
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "To u mi myslím staèí.", DIA_Addon_Farim_William_Tschau );
+	Info_AddChoice	(DIA_Addon_Farim_William, "To uÅ¾ mi myslÃ­m staÄÃ­.", DIA_Addon_Farim_William_Tschau );
 };
 func void DIA_Addon_Farim_William_WannWeg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //Kdy jsi ho vidìl naposledy?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WannWeg_11_01"); //Jen pøed pár dny.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //Kdy jsi ho vidÄ›l naposledy?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WannWeg_11_01"); //Jen pÅ™ed pÃ¡r dny.
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "Nevyjel prostì na moøe rybaøit?", DIA_Addon_Farim_William_Fischen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Nevyjel prostÄ› na moÅ™e rybaÅ™it?", DIA_Addon_Farim_William_Fischen );
 };
 func void DIA_Addon_Farim_William_Fischen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //Nevyjel tøeba jen na moøe rybaøit?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //To není moc pravdìpodobnı, jeho loï furt kotví v pøístavu.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //Nevyjel tÅ™eba jen na moÅ™e rybaÅ™it?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //To nenÃ­ moc pravdÄ›podobnÃ½, jeho loÄ furt kotvÃ­ v pÅ™Ã­stavu.
 };
 func void DIA_Addon_Farim_William_auftauchen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Však on se objeví.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //To si nemyslím, u je pryè moc dlouho.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //Obávám se, e jednoho krásnıho dne z moøe vytáhnu jeho mrtvolu.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //VÅ¡ak on se objevÃ­.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //To si nemyslÃ­m, uÅ¾ je pryÄ moc dlouho.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //ObÃ¡vÃ¡m se, Å¾e jednoho krÃ¡snÃ½ho dne z moÅ™e vytÃ¡hnu jeho mrtvolu.
 };
 func void DIA_Addon_Farim_William_Tschau ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Tschau_15_00"); //Myslím, e u jsem slyšel dost.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Tschau_11_01"); //Ani se nenamáhej, stejnì nevìøím, e ho najdeš.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Tschau_15_00"); //MyslÃ­m, Å¾e uÅ¾ jsem slyÅ¡el dost.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Tschau_11_01"); //Ani se nenamÃ¡hej, stejnÄ› nevÄ›Å™Ã­m, Å¾e ho najdeÅ¡.
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
 };
 
@@ -359,11 +359,11 @@ func void DIA_Addon_Farim_Perm_Info ()
 
 	if (Farim_PissedOff == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_01"); //Pøestaò pøedstírat, e tì to zajímá.
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_01"); //PÅ™estaÅˆ pÅ™edstÃ­rat, Å¾e tÄ› to zajÃ­mÃ¡.
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //U jsem zail lepší èasy. Jen málokdo pøeil a spousta lidí umøela.
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //UÅ¾ jsem zaÅ¾il lepÅ¡Ã­ Äasy. Jen mÃ¡lokdo pÅ™eÅ¾il a spousta lidÃ­ umÅ™ela.
 	};
 };
 
@@ -394,12 +394,12 @@ func int DIA_Addon_Farim_WilliamReport_Condition ()
 
 func void DIA_Addon_Farim_WilliamReport_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //Tak u jsi tu zas?
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //Doslechl ses nìco o mım kámoši Williamovi?
-	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //Je mrtvı.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //(povzdychne si) Jo, pøesnì to jsem èekal.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //Díky, e ses vrátil, abys mi to øek.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //Pùjdu do hospody a propiju jeho podíl z našeho posledního úlovku – pøesnì tak by si to pøál.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //Tak uÅ¾ jsi tu zas?
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //Doslechl ses nÄ›co o mÃ½m kÃ¡moÅ¡i Williamovi?
+	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //Je mrtvÃ½.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //(povzdychne si) Jo, pÅ™esnÄ› to jsem Äekal.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //DÃ­ky, Å¾e ses vrÃ¡til, abys mi to Å™ek.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //PÅ¯jdu do hospody a propiju jeho podÃ­l z naÅ¡eho poslednÃ­ho Ãºlovku â€“ pÅ™esnÄ› tak by si to pÅ™Ã¡l.
 };
 
 

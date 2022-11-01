@@ -36,10 +36,10 @@ FUNC INT DIA_Addon_10031_Wache_Scatty_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Scatty_Info()
 {	
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Hele, chceö jÌt kopat? Tak nezapomeÚ zajÌt za Scattym a doplnit z·soby.
-	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//Co tedy pot¯ebuju?
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//No, minim·lnÏ krump·Ë. A Ú·k˝ z·soby taky neuökodÌ.
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Nebo co takhle lÈËiv˝ lektvary? Je tu spousta d˘lnÌch Ëerv˘.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Hele, chce≈° j√≠t kopat? Tak nezapome≈à zaj√≠t za Scattym a doplnit z√°soby.
+	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//Co tedy pot≈ôebuju?
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//No, minim√°lnƒõ krump√°ƒç. A ≈à√°k√Ω z√°soby taky neu≈°kod√≠.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Nebo co takhle l√©ƒçiv√Ω lektvary? Je tu spousta d≈Øln√≠ch ƒçerv≈Ø.
 	AI_StopProcessInfos (self);
 };
 //----------------------------------------------------------------------
@@ -54,7 +54,7 @@ INSTANCE DIA_Addon_BDT_10031_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10031_Wache_Hi_Condition;
 	information = DIA_Addon_10031_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "Je vöechno v po¯·dku?";
+	description = "Je v≈°echno v po≈ô√°dku?";
 };
 FUNC INT DIA_Addon_10031_Wache_Hi_Condition()
 {	
@@ -62,15 +62,15 @@ FUNC INT DIA_Addon_10031_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10031_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00");//Vöecko v pohodÏ?
+	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Hi_15_00");//V≈°ecko v pohodƒõ?
 	
 	if (Sklaven_Flucht == TRUE)
 	&& (Wache_Joker == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//P·ni, ti otroci mÏli ale naspÏch!
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Jak se doslechli, ûe jsou volnÌ, pel·öili jak zajÌci.
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//P√°ni, ti otroci mƒõli ale naspƒõch!
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Jak se doslechli, ≈æe jsou voln√≠, pel√°≈°ili jak zaj√≠ci.
 		Wache_Joker = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Jo. Takûe sekej latinu a vöecko bude v pohodÏ.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Jo. Tak≈æe sekej latinu a v≈°ecko bude v pohodƒõ.
 	
 };

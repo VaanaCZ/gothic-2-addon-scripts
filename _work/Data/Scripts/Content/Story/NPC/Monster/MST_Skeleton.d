@@ -97,7 +97,7 @@ INSTANCE Skeleton			(Mst_Default_Skeleton)
 
 INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 {
-	name							=	"Vyvolan˝ kostlivec";
+	name							=	"Vyvolan√Ω kostlivec";
 	guild							=	GIL_SUMMONED_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SUMMONED_SKELETON;
 	level							=	0; //30
@@ -130,7 +130,7 @@ INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 	B_SetVisuals_Lesser_Skeleton();
 
 	EquipItem (self, ItMw_2H_Sword_M_01);
-	//EquipItem (self, ItRw_Sld_Bow); //FIXME Carsten: Bogen schieﬂt beim Skelett in Zeitlupe...
+	//EquipItem (self, ItRw_Sld_Bow); //FIXME Carsten: Bogen schie√üt beim Skelett in Zeitlupe...
 };
 
 //**************
@@ -139,7 +139,7 @@ INSTANCE Summoned_Skeleton (Mst_Default_Skeleton)
 
 INSTANCE Lesser_Skeleton	(Mst_Default_Skeleton)
 {
-	name							=	"Mal˝ kostlivec";
+	name							=	"Mal√Ω kostlivec";
 	
 	level							=	15;
 
@@ -177,7 +177,7 @@ INSTANCE Lesser_Skeleton	(Mst_Default_Skeleton)
 
 INSTANCE Crypt_Skeleton_Room_01			(Mst_Default_Skeleton)
 {
-	name							=	"Str·ûce krypty";
+	name							=	"Str√°≈æce krypty";
 
 	aivar[AIV_EnemyOverride] = TRUE;
 
@@ -189,7 +189,7 @@ INSTANCE Crypt_Skeleton_Room_01			(Mst_Default_Skeleton)
 
 INSTANCE Crypt_Skeleton_Room_02			(Mst_Default_Skeleton)
 {
-	name							=	"Str·ûce krypty";
+	name							=	"Str√°≈æce krypty";
 
 	aivar[AIV_EnemyOverride] = TRUE;
 	
@@ -201,7 +201,7 @@ INSTANCE Crypt_Skeleton_Room_02			(Mst_Default_Skeleton)
 
 INSTANCE Crypt_Skeleton_Room_03			(Mst_Default_Skeleton)
 {
-	name							=	"Str·ûce krypty";
+	name							=	"Str√°≈æce krypty";
 
 	aivar[AIV_EnemyOverride] = TRUE;
 	

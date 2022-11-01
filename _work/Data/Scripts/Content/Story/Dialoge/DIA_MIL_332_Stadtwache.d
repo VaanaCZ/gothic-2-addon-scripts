@@ -42,7 +42,7 @@ func int DIA_Mil_332_Stadtwache_PERM_Condition ()
 func void DIA_Mil_332_Stadtwache_PERM_Info ()
 {
 	AI_Output			(other, self, "DIA_Mil_332_Stadtwache_PERM_15_00"); //Jak se vede?
-	AI_Output			(self, other, "DIA_Mil_332_Stadtwache_PERM_04_01"); //PokraËuj! Jsem ve sluûbÏ!
+	AI_Output			(self, other, "DIA_Mil_332_Stadtwache_PERM_04_01"); //Pokraƒçuj! Jsem ve slu≈æbƒõ!
 	AI_StopProcessInfos (self);
 };
 

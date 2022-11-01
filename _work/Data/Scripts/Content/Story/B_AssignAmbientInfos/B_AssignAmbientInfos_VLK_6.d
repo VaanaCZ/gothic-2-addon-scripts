@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_6_JOIN(C_INFO)
 	condition	= DIA_VLK_6_JOIN_Condition;
 	information	= DIA_VLK_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Jak se mùu stát obèanem tohoto mìsta?";
+	description = "Jak se mÅ¯Å¾u stÃ¡t obÄanem tohoto mÄ›sta?";
 };                       
 
 FUNC INT DIA_VLK_6_JOIN_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_VLK_6_JOIN_Condition()
 
 FUNC VOID DIA_VLK_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_JOIN_15_00"); //Jak se mùu stát obèanem tohoto mìsta?
-	AI_Output (self, other, "DIA_VLK_6_JOIN_06_01"); //Chceš se tu usadit? Teï? Kdy všechno smìøuje ke konci svìta?
-	AI_Output (other, self, "DIA_VLK_6_JOIN_15_02"); //Nechci tu zùstat napoøád.
-	AI_Output (self, other, "DIA_VLK_6_JOIN_06_03"); //Fajn, pokud stojíš o moji radu, mìl bys odsud upalovat nejdál, co mùeš. Ale kdy na tom trváš, mìl by sis promluvit s jedním z vlivnıch mìšanù.
+	AI_Output (other, self, "DIA_VLK_6_JOIN_15_00"); //Jak se mÅ¯Å¾u stÃ¡t obÄanem tohoto mÄ›sta?
+	AI_Output (self, other, "DIA_VLK_6_JOIN_06_01"); //ChceÅ¡ se tu usadit? TeÄ? KdyÅ¾ vÅ¡echno smÄ›Å™uje ke konci svÄ›ta?
+	AI_Output (other, self, "DIA_VLK_6_JOIN_15_02"); //Nechci tu zÅ¯stat napoÅ™Ã¡d.
+	AI_Output (self, other, "DIA_VLK_6_JOIN_06_03"); //Fajn, pokud stojÃ­Å¡ o moji radu, mÄ›l bys odsud upalovat nejdÃ¡l, co mÅ¯Å¾eÅ¡. Ale kdyÅ¾ na tom trvÃ¡Å¡, mÄ›l by sis promluvit s jednÃ­m z vlivnÃ½ch mÄ›Å¡Å¥anÅ¯.
 };
 
 // *************************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_VLK_6_PEOPLE(C_INFO)
 	condition	= DIA_VLK_6_PEOPLE_Condition;
 	information	= DIA_VLK_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kde najdu vlivné obèany Khorinidu?";
+	description = "Kde najdu vlivnÃ© obÄany Khorinidu?";
 };                       
 
 FUNC INT DIA_VLK_6_PEOPLE_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_VLK_6_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_PEOPLE_15_00"); //Kde najdu vlivné obèany Khorinidu?
-	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_01"); //Zkus to u kováøe nebo truhláøe v dolní èásti mìsta. Najdeš tam i nìkolik dalších váenıch mistrù.
-	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_02"); //Pokud tady má kromì mìstské stráe a paladinù nìkdo nìjaké slovo, jsou to tihle mui.
+	AI_Output (other, self, "DIA_VLK_6_PEOPLE_15_00"); //Kde najdu vlivnÃ© obÄany Khorinidu?
+	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_01"); //Zkus to u kovÃ¡Å™e nebo truhlÃ¡Å™e v dolnÃ­ ÄÃ¡sti mÄ›sta. NajdeÅ¡ tam i nÄ›kolik dalÅ¡Ã­ch vÃ¡Å¾enÃ½ch mistrÅ¯.
+	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_02"); //Pokud tady mÃ¡ kromÄ› mÄ›stskÃ© strÃ¡Å¾e a paladinÅ¯ nÄ›kdo nÄ›jakÃ© slovo, jsou to tihle muÅ¾i.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_6_LOCATION(C_INFO)
 	condition	= DIA_VLK_6_LOCATION_Condition;
 	information	= DIA_VLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Jak se mám ve mìstì vyznat?";
+	description = "Jak se mÃ¡m ve mÄ›stÄ› vyznat?";
 };                       
 
 FUNC INT DIA_VLK_6_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_LOCATION_15_00"); //Jak se mám ve mìstì vyznat?
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_01"); //Není tak snadné najít správnı smìr, co? Ani ty ukazatele nedokáou pomoct úplnì vdycky.
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_02"); //Pokud máš špatnı orientaèní smysl, mìl bys zajít dolù do pøístavu - teda pokud tam trefíš - a poohlédnout se po domku kartografa.
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_03"); //Je to hned za hospodou v pøístavišti. Brahim pro tebe urèitì bude nìjakou mapu mìsta mít.
+	AI_Output (other, self, "DIA_VLK_6_LOCATION_15_00"); //Jak se mÃ¡m ve mÄ›stÄ› vyznat?
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_01"); //NenÃ­ tak snadnÃ© najÃ­t sprÃ¡vnÃ½ smÄ›r, co? Ani ty ukazatele nedokÃ¡Å¾ou pomoct ÃºplnÄ› vÅ¾dycky.
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_02"); //Pokud mÃ¡Å¡ Å¡patnÃ½ orientaÄnÃ­ smysl, mÄ›l bys zajÃ­t dolÅ¯ do pÅ™Ã­stavu - teda pokud tam trefÃ­Å¡ - a poohlÃ©dnout se po domku kartografa.
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_03"); //Je to hned za hospodou v pÅ™Ã­staviÅ¡ti. Brahim pro tebe urÄitÄ› bude nÄ›jakou mapu mÄ›sta mÃ­t.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_VLK_6_STANDARD(C_INFO)
 	condition	= DIA_VLK_6_STANDARD_Condition;
 	information	= DIA_VLK_6_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 func INT DIA_VLK_6_STANDARD_Condition()
 {
@@ -115,38 +115,38 @@ func INT DIA_VLK_6_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_STANDARD_15_00"); //Co je nového?
+	AI_Output (other, self, "DIA_VLK_6_STANDARD_15_00"); //Co je novÃ©ho?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_01"); //Od té doby, co bariéra vzala za své, je tohle mìsto plné banditù. Ale paladinové nedìlají vùbec nic. Tak proè tu ksakru vùbec jsou?
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_01"); //Od tÃ© doby, co bariÃ©ra vzala za svÃ©, je tohle mÄ›sto plnÃ© banditÅ¯. Ale paladinovÃ© nedÄ›lajÃ­ vÅ¯bec nic. Tak proÄ tu ksakru vÅ¯bec jsou?
 	};
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_02"); //Poslední dobou u to s tìmi bandity není tak zlé. Skoro to vypadá, e s tím nìkdo zaèal nìco dìlat.
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_02"); //PoslednÃ­ dobou uÅ¾ to s tÄ›mi bandity nenÃ­ tak zlÃ©. Skoro to vypadÃ¡, Å¾e s tÃ­m nÄ›kdo zaÄal nÄ›co dÄ›lat.
 	};
 	
 	if (Kapitel == 3)
 	{
 		if MIS_RescueBennet == LOG_SUCCESS
 		{
-			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_03"); //Nechali jít toho mizernıho oldáka, co zabil paladina. Nebylo by od vìci, kdyby ho místo toho radìji obìsili.
+			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_03"); //Nechali jÃ­t toho mizernÃ½ho Å¾oldÃ¡ka, co zabil paladina. Nebylo by od vÄ›ci, kdyby ho mÃ­sto toho radÄ›ji obÄ›sili.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_04"); //Øíká se, e jeden z Onarovıch oldákù zabil paladina. Toho chlápka chytili a zavøeli do aláøe. U brzo se bude houpat.
+			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_04"); //Å˜Ã­kÃ¡ se, Å¾e jeden z OnarovÃ½ch Å¾oldÃ¡kÅ¯ zabil paladina. Toho chlÃ¡pka chytili a zavÅ™eli do Å¾alÃ¡Å™e. UÅ¾ brzo se bude houpat.
 		};
 	};
 	
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_05"); //Rád bych vìdìl, co je na tìch draèích povídaèkách pravdy.
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_05"); //RÃ¡d bych vÄ›dÄ›l, co je na tÄ›ch draÄÃ­ch povÃ­daÄkÃ¡ch pravdy.
 	};
 
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_06"); //Øíká se, e lord Hagen shromaïuje své mue, aby osvobodili Hornické údolí. Koneènì se zaèaly vìci hıbat!
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_06"); //Å˜Ã­kÃ¡ se, Å¾e lord Hagen shromaÅ¾Äuje svÃ© muÅ¾e, aby osvobodili HornickÃ© ÃºdolÃ­. KoneÄnÄ› se zaÄaly vÄ›ci hÃ½bat!
 	};
 };
 

@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Gobbo_Black(C_NPC)			
 {
 	//----- Monster ----
-	name							=	"Èerný goblin";
+	name							=	"ÄŒernÃ½ goblin";
 	guild							=	GIL_GOBBO;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GOBBO_BLACK;
 	level							=	8;
@@ -74,7 +74,7 @@ INSTANCE Gobbo_Black (Mst_Default_Gobbo_Black)
 {
 	B_SetVisuals_Gobbo_Black();
 	
-	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };
 
 // ***********
@@ -84,5 +84,5 @@ INSTANCE Gobbo_DaronsStatuenKlauer (Mst_Default_Gobbo_Black)
 {
 	B_SetVisuals_Gobbo_Black();
 	CreateInvItems (self, ItMi_LostInnosStatue_Daron, 1);									
-	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR über STR bestimmt (Gobbo ist als Monster im Fistmode)
+	Npc_SetToFightMode (self, ItMw_1h_Bau_Mace); //Waffe ist nur Optik - Schaden wird NUR Ã¼ber STR bestimmt (Gobbo ist als Monster im Fistmode)
 };

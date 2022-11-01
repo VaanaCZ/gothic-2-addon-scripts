@@ -81,7 +81,7 @@ func int DIA_Sarah_Greet_Condition ()
 };
 func void DIA_Sarah_Greet_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_Add_16_07"); //Á! To jsi zase ty!
+	AI_Output (self, other, "DIA_Sarah_Add_16_07"); //Ã! To jsi zase ty!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -103,13 +103,13 @@ func int DIA_Sarah_HALLO_Condition ()
 func void DIA_Sarah_HALLO_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Jak jdou obchody?
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Kdy dorazili paladinové, nejdøív jsem si myslela, e to je pøíleitost k dobrım obchodùm.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Ale pak nechali Harada, aby jim vyrábìl zbranì, a ani Hakon ani já jsme od nich nevidìli ani zlatku.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Navíc farmáøi u dál nechtìjí zásobovat mìsto potravinami, a všechny ceny tak jdou nahoru.
-	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //e mi paladinové platí hotel, je jen slabá útìcha.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //KdyÅ¾ dorazili paladinovÃ©, nejdÅ™Ã­v jsem si myslela, Å¾e to je pÅ™Ã­leÅ¾itost k dobrÃ½m obchodÅ¯m.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Ale pak nechali Harada, aby jim vyrÃ¡bÄ›l zbranÄ›, a ani Hakon ani jÃ¡ jsme od nich nevidÄ›li ani zlatku.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //NavÃ­c farmÃ¡Å™i uÅ¾ dÃ¡l nechtÄ›jÃ­ zÃ¡sobovat mÄ›sto potravinami, a vÅ¡echny ceny tak jdou nahoru.
+	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Å½e mi paladinovÃ© platÃ­ hotel, je jen slabÃ¡ ÃºtÄ›cha.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Sarah prodává na trišti zbranì.");	
+	B_LogEntry (Topic_CityTrader,"Sarah prodÃ¡vÃ¡ na trÅ¾iÅ¡ti zbranÄ›.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Bauern
@@ -121,7 +121,7 @@ instance DIA_Sarah_Bauern		(C_INFO)
 	condition	 = 	DIA_Sarah_Bauern_Condition;
 	information	 = 	DIA_Sarah_Bauern_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Co je s farmáøi za problémy?";
+	description	 = 	"Co je s farmÃ¡Å™i za problÃ©my?";
 };
 
 func int DIA_Sarah_Bauern_Condition ()
@@ -133,13 +133,13 @@ func int DIA_Sarah_Bauern_Condition ()
 };
 func void DIA_Sarah_Bauern_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Co je s farmáøi za problémy?
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Odmítají dováet své zboí.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Teï, kdy u sem nepøiplouvají ádné lodì, je mìsto samozøejmì závislé jen na tom, co poskytnou farmáøi.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //A Onar, ten nejvìtší z farmáøù, si najal oldnéøe, aby chránili jeho farmu pøed mìstskou stráí. Jinak by si domobrana všechno zabrala pro sebe.
-	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Ale ti oldáci nechrání jenom Onarovu farmu.
-	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Zašli tak daleko, e zastrašují i malé farmáøe tady u mìsta.
-	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Vidìla jsem je, kdy jsem procházela pøes Akilovu farmu. Nechtìla bych teï bıt v jeho kùi.
+	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Co je s farmÃ¡Å™i za problÃ©my?
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //OdmÃ­tajÃ­ dovÃ¡Å¾et svÃ© zboÅ¾Ã­.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //TeÄ, kdyÅ¾ uÅ¾ sem nepÅ™iplouvajÃ­ Å¾Ã¡dnÃ© lodÄ›, je mÄ›sto samozÅ™ejmÄ› zÃ¡vislÃ© jen na tom, co poskytnou farmÃ¡Å™i.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //A Onar, ten nejvÄ›tÅ¡Ã­ z farmÃ¡Å™Å¯, si najal Å¾oldnÃ©Å™e, aby chrÃ¡nili jeho farmu pÅ™ed mÄ›stskou strÃ¡Å¾Ã­. Jinak by si domobrana vÅ¡echno zabrala pro sebe.
+	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Ale ti Å¾oldÃ¡ci nechrÃ¡nÃ­ jenom Onarovu farmu.
+	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //ZaÅ¡li tak daleko, Å¾e zastraÅ¡ujÃ­ i malÃ© farmÃ¡Å™e tady u mÄ›sta.
+	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //VidÄ›la jsem je, kdyÅ¾ jsem prochÃ¡zela pÅ™es Akilovu farmu. NechtÄ›la bych teÄ bÃ½t v jeho kÅ¯Å¾i.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -165,9 +165,9 @@ func int DIA_Sarah_AkilsHof_Condition ()
 func void DIA_Sarah_AkilsHof_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Kde najdu Akilovu farmu?
-	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Pokud odejdeš vıchodní bránou a dáš se cestou napravo, dostaneš se ke schodišti.
-	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //To vede nahoru k Akilovì farmì.
-	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Ale já bych tam teï nechodila - urèitì tam ještì poøád jsou oldáci.
+	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Pokud odejdeÅ¡ vÃ½chodnÃ­ brÃ¡nou a dÃ¡Å¡ se cestou napravo, dostaneÅ¡ se ke schodiÅ¡ti.
+	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //To vede nahoru k AkilovÄ› farmÄ›.
+	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Ale jÃ¡ bych tam teÄ nechodila - urÄitÄ› tam jeÅ¡tÄ› poÅ™Ã¡d jsou Å¾oldÃ¡ci.
 };
 
 
@@ -182,7 +182,7 @@ instance DIA_Sarah_Trade		(C_INFO)
 	information	 = 	DIA_Sarah_Trade_Info;
 	Trade		 = 	TRUE;
 	permanent	 =	TRUE;
-	description	 = 	"Uka mi své zboí.";
+	description	 = 	"UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 };
 
 func int DIA_Sarah_Trade_Condition ()
@@ -197,7 +197,7 @@ func int DIA_Sarah_Trade_Condition ()
 func void DIA_Sarah_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output (other, self, "DIA_Sarah_Trade_15_00"); //Uka mi své zboí.
+	AI_Output (other, self, "DIA_Sarah_Trade_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 	
 	Sarah_WaffenGesehen = TRUE;
 	
@@ -225,8 +225,8 @@ func int DIA_Sarah_IMKNAST_Condition ()
 };
 func void DIA_Sarah_IMKNAST_Info ()
 {
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Ty! Ty máš tu drzost tady ještì ukázat svùj ksicht! Nemùu to dokázat, ale vsadím se, e jsi namoèenej do pìknì špinavı hry.
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Je to tvoje chyba, e jsem tady. Tvoje a toho zatracenıho Canthara - a vás Innos ztrestá!
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Ty! Ty mÃ¡Å¡ tu drzost tady jeÅ¡tÄ› ukÃ¡zat svÅ¯j ksicht! NemÅ¯Å¾u to dokÃ¡zat, ale vsadÃ­m se, Å¾e jsi namoÄenej do pÄ›knÄ› Å¡pinavÃ½ hry.
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Je to tvoje chyba, Å¾e jsem tady. Tvoje a toho zatracenÃ½ho Canthara - aÅ¥ vÃ¡s Innos ztrestÃ¡!
 	
 	AI_StopProcessInfos (self);
 };
@@ -241,7 +241,7 @@ instance DIA_Sarah_Success		(C_INFO)
 	condition	 = 	DIA_Sarah_Success_Condition;
 	information	 = 	DIA_Sarah_Success_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Canthar se tì snail obelstít...";
+	description	 = 	"Canthar se tÄ› snaÅ¾il obelstÃ­t...";
 };
 
 func int DIA_Sarah_Success_Condition ()
@@ -254,9 +254,9 @@ func int DIA_Sarah_Success_Condition ()
 };
 func void DIA_Sarah_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar se tì pokusil podvést a získat tvùj stánek pro sebe. Ale já jsem ho pøedhodil mìstskım stráím.
-	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Tak to sis znepøátelil nebezpeèného mue. Znám toho bastarda u pìknì dlouho a vdycky chtìl mùj stánek pro sebe.
-	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Vezmi si tuhle zbraò jako vyjádøení mé vdìènosti.
+	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar se tÄ› pokusil podvÃ©st a zÃ­skat tvÅ¯j stÃ¡nek pro sebe. Ale jÃ¡ jsem ho pÅ™edhodil mÄ›stskÃ½m strÃ¡Å¾Ã­m.
+	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Tak to sis znepÅ™Ã¡telil nebezpeÄnÃ©ho muÅ¾e. ZnÃ¡m toho bastarda uÅ¾ pÄ›knÄ› dlouho a vÅ¾dycky chtÄ›l mÅ¯j stÃ¡nek pro sebe.
+	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Vezmi si tuhle zbraÅˆ jako vyjÃ¡dÅ™enÃ­ mÃ© vdÄ›Änosti.
 	
 	B_GivePlayerXP (XP_CantharImKnast);
 	B_GiveInvItems (self, other, ItMw_Piratensaebel,1);

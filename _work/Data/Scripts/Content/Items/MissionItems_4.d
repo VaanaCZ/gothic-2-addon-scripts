@@ -1,6 +1,6 @@
 
-const int Value_Dragonegg 		= 200;//Joly: nicht ‰ndern
-const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
+const int Value_Dragonegg 		= 200;//Joly: nicht √§ndern
+const int Value_OrcEliteRing 	= 130;//Joly: nicht √§ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -23,7 +23,7 @@ const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Angar˘v magick˝ amulet";
+	description		= "Angar≈Øv magick√Ω amulet";
 	
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= 10;
@@ -60,7 +60,7 @@ const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
 
 INSTANCE ItMW_1H_FerrosSword_Mis (C_Item) 
 {	
-	name 				=	"Fer˘v meË";
+	name 				=	"Fer≈Øv meƒç";
 
 	mainflag 			=	ITEM_KAT_NF;
 	flags 				=	ITEM_SWD|ITEM_MISSION;
@@ -85,7 +85,7 @@ INSTANCE ItMW_1H_FerrosSword_Mis (C_Item)
 
 INSTANCE ItMi_KerolothsGeldbeutel_MIS(C_Item)
 {
-	name 				=	"Keroloth˘v mÏöec";
+	name 				=	"Keroloth≈Øv mƒõ≈°ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -110,7 +110,7 @@ FUNC VOID UseKerolothsGeldbeutel ()
 
 INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 {
-	name 				=	"Keroloth˘v mÏöec";
+	name 				=	"Keroloth≈Øv mƒõ≈°ec";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MISSION;
@@ -127,7 +127,7 @@ INSTANCE ItMi_KerolothsGeldbeutelLeer_MIS(C_Item)
 
 INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 {
-	name 				=	"Sengrathova kuöe";
+	name 				=	"Sengrathova ku≈°e";
 
 	mainflag 			=	ITEM_KAT_FF;
 	flags 				=	ITEM_CROSSBOW;
@@ -149,11 +149,11 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 };
 
 
-//Tabins Lurkerh‰ute von Engrom
+//Tabins Lurkerh√§ute von Engrom
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
-	name 				=	"K˘ûe ËÌhavce";
+	name 				=	"K≈Ø≈æe ƒç√≠havce";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"Na vnit¯nÌ stranÏ je vyvedeno jmÈno Talbin.";
+	TEXT[0]				= 	"Na vnit≈ôn√≠ stranƒõ je vyvedeno jm√©no Talbin.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -172,11 +172,11 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Drachen-Ei	(f¸r DJG only Ambient auftrag)
+//	Drachen-Ei	(f√ºr DJG only Ambient auftrag)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
-	name 					=	"DraËÌ vejce";
+	name 					=	"Draƒç√≠ vejce";
 	
 	mainflag 				=	ITEM_KAT_NONE;
 	flags 					=	ITEM_MISSION|ITEM_MULTI;	
@@ -187,23 +187,23 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"Vejce je nezvykle teplÈ";
-	TEXT[1]					=	"a zevnit¯ se oz˝v· podez¯elÈ ökr·b·nÌ.";
+	TEXT[0]					=	"Vejce je nezvykle tepl√©";
+	TEXT[1]					=	"a zevnit≈ô se oz√Ωv√° podez≈ôel√© ≈°kr√°b√°n√≠.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
 };
 
 //---------------------------------------------------------------------
-//	OrcEliteRing (f¸r PAL only Ambient auftrag)
+//	OrcEliteRing (f√ºr PAL only Ambient auftrag)
 //---------------------------------------------------------------------
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
 {
-	name 					=	"Prsten sk¯etÌch vojev˘dc˘";
+	name 					=	"Prsten sk≈ôet√≠ch vojev≈Ødc≈Ø";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
-	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muﬂ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Mu√ü so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	value 					=	Value_OrcEliteRing;
 
@@ -216,8 +216,8 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 
 	description				= 	name;
 
-	TEXT[0]					=	"NeumÏle vyroben˝ prsten,";
-	TEXT[1]					=	"na dotyk podivnÏ chladn˝.";
+	TEXT[0]					=	"Neumƒõle vyroben√Ω prsten,";
+	TEXT[1]					=	"na dotyk podivnƒõ chladn√Ω.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
 	TEXT[5]					=	NAME_Value;					COUNT[5]	= value;
@@ -262,9 +262,9 @@ INSTANCE ItPo_DragonEggDrinkNeoras_MIS (C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Lektvar z draËÌho vejce";
+	description		= 	"Lektvar z draƒç√≠ho vejce";
 	
-	TEXT[3]			= 	"⁄Ëinky nejsou zn·my.";				
+	TEXT[3]			= 	"√öƒçinky nejsou zn√°my.";				
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	value;
@@ -325,7 +325,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 		if (Use_Map_NewWorld_Orcelite_MIS_OneTime == FALSE)
 		&& (MIS_KillOrkOberst != 0)
 		{
-			B_LogEntry (TOPIC_OrcElite,"U sk¯etÌho d˘stojnÌka jsem naöel podivnou mapu, kter· se podez¯ele podob· strategickÈmu v·leËnÈmu pl·nu."); 
+			B_LogEntry (TOPIC_OrcElite,"U sk≈ôet√≠ho d≈Østojn√≠ka jsem na≈°el podivnou mapu, kter√° se podez≈ôele podob√° strategick√©mu v√°leƒçn√©mu pl√°nu."); 
 			Use_Map_NewWorld_Orcelite_MIS_OneTime = TRUE;
 		};
 	};
@@ -338,7 +338,7 @@ var int Use_Map_NewWorld_Orcelite_MIS_OneTime;
 
 instance ItWr_Map_Caves_MIS (C_Item)
 {
-	name 		= "KhorinidskÈ jeskynÏ";  // 
+	name 		= "Khorinidsk√© jeskynƒõ";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;

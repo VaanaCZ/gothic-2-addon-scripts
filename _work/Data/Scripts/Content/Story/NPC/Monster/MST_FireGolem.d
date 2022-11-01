@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_FireGolem(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Ohnivý golem";
+	name							=	"OhnivÃ½ golem";
 	guild							=	GIL_FIREGOLEM;
 	aivar[AIV_MM_REAL_ID]			= 	ID_FIREGOLEM;
 	level							=	40;

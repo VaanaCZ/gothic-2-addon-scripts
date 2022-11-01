@@ -22,7 +22,7 @@ FUNC VOID DIA_GornNW_nach_DJG_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getˆtet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen get√∂tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_GornNW_nach_DJG_AllDragonsDead(C_INFO)
@@ -33,7 +33,7 @@ INSTANCE DIA_GornNW_nach_DJG_AllDragonsDead(C_INFO)
 	information	= DIA_GornNW_nach_DJG_AllDragonsDead_Info;
 	permanent	= TRUE;
 
-	description = "OdpoËinul sis?";
+	description = "Odpoƒçinul sis?";
 };                       
 FUNC INT DIA_GornNW_nach_DJG_AllDragonsDead_Condition()
 {
@@ -44,10 +44,10 @@ FUNC INT DIA_GornNW_nach_DJG_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_GornNW_nach_DJG_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_00"); //OdpoËinul sis?
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_01"); //JasnÏ, proË ne? Draci jsou mrtvÌ, ne?
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_02"); //Je to troöku sloûitÏjöÌ.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_03"); //(zasmÏje se) JasnÏ. Jako vûdycky. Dej mi vÏdÏt, aû budeö pot¯ebovat mou sekeru.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_00"); //Odpoƒçinul sis?
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_01"); //Jasnƒõ, proƒç ne? Draci jsou mrtv√≠, ne?
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_AllDragonsDead_15_02"); //Je to tro≈°ku slo≈æitƒõj≈°√≠.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_AllDragonsDead_12_03"); //(zasmƒõje se) Jasnƒõ. Jako v≈ædycky. Dej mi vƒõdƒõt, a≈æ bude≈° pot≈ôebovat mou sekeru.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -60,7 +60,7 @@ instance DIA_GornNW_nach_DJG_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"MÏl bych pro tebe a tvou sekeru nÏjakou pr·ci.";
+	description	 = 	"Mƒõl bych pro tebe a tvou sekeru nƒõjakou pr√°ci.";
 };
 func int DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition ()
 {	
@@ -72,33 +72,33 @@ func int DIA_GornNW_nach_DJG_KnowWhereEnemy_Condition ()
 };
 func void DIA_GornNW_nach_DJG_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_00"); //MÏl bych pro tebe a tvou sekeru nÏjakou pr·ci.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_01"); //Jasan. Nep¯ekvapuje mÏ to. Co pro tebe m˘ûu udÏlat?
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_02"); //Plul bys se mnou na jeden ostrov a natrhnul tam zadek p·r nep¯·tel˘m?
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_03"); //(zasmÏje se) JasnÏ. KlidnÏ hned. Jen mi ¯ekni, co je zapot¯ebÌ.
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_00"); //Mƒõl bych pro tebe a tvou sekeru nƒõjakou pr√°ci.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_01"); //Jasan. Nep≈ôekvapuje mƒõ to. Co pro tebe m≈Ø≈æu udƒõlat?
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_02"); //Plul bys se mnou na jeden ostrov a natrhnul tam zadek p√°r nep≈ô√°tel≈Øm?
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_03"); //(zasmƒõje se) Jasnƒõ. Klidnƒõ hned. Jen mi ≈ôekni, co je zapot≈ôeb√≠.
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 
-	B_LogEntry (TOPIC_Crew,"Kdyû jsem Gornovi vypr·vÏl o ostrovÏ, byl jednoznaËnÏ pro. Budu-li pot¯ebovat jeho sekeru, mohu ho smÏle vzÌt s sebou.");
+	B_LogEntry (TOPIC_Crew,"Kdy≈æ jsem Gornovi vypr√°vƒõl o ostrovƒõ, byl jednoznaƒçnƒõ pro. Budu-li pot≈ôebovat jeho sekeru, mohu ho smƒõle vz√≠t s sebou.");
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_04"); //Moment·lnÏ m·m v pos·dce pln˝ stav, ale r·d bych vzal s sebou i tebe.
-		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_05"); //Pokud musÌö kv˘li mÏ vykopnout nÏkoho z pos·dky, vyber toho nejslaböÌho.
-		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_06"); //V tÏchhle tÏûk˝ch Ëasech je kaûd· ruka dobr·.
+		AI_Output			(other,self , "DIA_GornNW_nach_DJG_KnowWhereEnemy_15_04"); //Moment√°lnƒõ m√°m v pos√°dce pln√Ω stav, ale r√°d bych vzal s sebou i tebe.
+		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_05"); //Pokud mus√≠≈° kv≈Øli mƒõ vykopnout nƒõkoho z pos√°dky, vyber toho nejslab≈°√≠ho.
+		AI_Output			(self, other, "DIA_GornNW_nach_DJG_KnowWhereEnemy_12_06"); //V tƒõchhle tƒõ≈æk√Ωch ƒçasech je ka≈æd√° ruka dobr√°.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_GornNW_nach_DJG_KnowWhereEnemy);
-		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"D·m ti vÏdÏt, aû bude na Ëase.",DIA_GornNW_nach_DJG_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Popluj se mnou. PoËkej na mÏ v z·livu.",DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"D√°m ti vƒõdƒõt, a≈æ bude na ƒçase.",DIA_GornNW_nach_DJG_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_GornNW_nach_DJG_KnowWhereEnemy,"Popluj se mnou. Poƒçkej na mƒõ v z√°livu.",DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_15_00"); //Popluj se mnou. PoËkej na mÏ v p¯Ìstavu.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_12_01"); //LoÔ? Ha! Teda ¯eknu ti, ûe s tebou se jeden nikdy nenudÌ. Brzy se uvidÌme.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_15_00"); //Popluj se mnou. Poƒçkej na mƒõ v p≈ô√≠stavu.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes_12_01"); //Loƒè? Ha! Teda ≈ôeknu ti, ≈æe s tebou se jeden nikdy nenud√≠. Brzy se uvid√≠me.
 	
 	
 	B_GivePlayerXP (XP_Crewmember_Success); 
@@ -120,8 +120,8 @@ FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_GornNW_nach_DJG_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_15_00"); //D·m ti vÏdÏt, aû bude naËase.
-	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_12_01"); //Dobr·.
+	AI_Output (other,self ,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_15_00"); //D√°m ti vƒõdƒõt, a≈æ bude naƒçase.
+	AI_Output (self ,other,"DIA_GornNW_nach_DJG_KnowWhereEnemy_No_12_01"); //Dobr√°.
 
 	Gorn_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_GornNW_nach_DJG_KnowWhereEnemy);
@@ -137,7 +137,7 @@ instance DIA_GornNW_nach_DJG_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_LeaveMyShip_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Moûn· bys mÏl radÏji z˘stat tady.";
+	description	 = 	"Mo≈æn√° bys mƒõl radƒõji z≈Østat tady.";
 };
 func int DIA_GornNW_nach_DJG_LeaveMyShip_Condition ()
 {	
@@ -149,8 +149,8 @@ func int DIA_GornNW_nach_DJG_LeaveMyShip_Condition ()
 };
 func void DIA_GornNW_nach_DJG_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_GornNW_nach_DJG_LeaveMyShip_15_00"); //Moûn· bys mÏl radÏji z˘stat tady.
-	AI_Output			(self, other, "DIA_GornNW_nach_DJG_LeaveMyShip_12_01"); //To tÏ m·m nechat jÌt samotnÈho? Hmm. NenÌ to pro mÏ jednoduchÈ, ale je to koneckonc˘ tvoje v·lka. Pokud bys nakonec p¯ece jenom chtÏl, abych öel s tebou, klidnÏ za mnou p¯ijÔ.
+	AI_Output			(other, self, "DIA_GornNW_nach_DJG_LeaveMyShip_15_00"); //Mo≈æn√° bys mƒõl radƒõji z≈Østat tady.
+	AI_Output			(self, other, "DIA_GornNW_nach_DJG_LeaveMyShip_12_01"); //To tƒõ m√°m nechat j√≠t samotn√©ho? Hmm. Nen√≠ to pro mƒõ jednoduch√©, ale je to koneckonc≈Ø tvoje v√°lka. Pokud bys nakonec p≈ôece jenom chtƒõl, abych ≈°el s tebou, klidnƒõ za mnou p≈ôijƒè.
 	
 	Gorn_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -159,7 +159,7 @@ func void DIA_GornNW_nach_DJG_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornNW_nach_DJG_StillNeedYou		(C_INFO)
 {
@@ -168,7 +168,7 @@ instance DIA_GornNW_nach_DJG_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_GornNW_nach_DJG_StillNeedYou_Condition;
 	information	 = 	DIA_GornNW_nach_DJG_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Vraù se. Pot¯ebuji tÏ.";
+	description	 = 	"Vra≈• se. Pot≈ôebuji tƒõ.";
 };
 
 func int DIA_GornNW_nach_DJG_StillNeedYou_Condition ()
@@ -183,8 +183,8 @@ func int DIA_GornNW_nach_DJG_StillNeedYou_Condition ()
 
 func void DIA_GornNW_nach_DJG_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_GornNW_nach_DJG_StillNeedYou_15_00"); //Vraù se. Pot¯ebuji tÏ.
-	AI_Output	(self, other, "DIA_GornNW_nach_DJG_StillNeedYou_12_01"); //No tak vidÌö. A j· uû si myslel, ûe mÏ tu nech·ö shnÌt, zatÌmco si budeö s·m uûÌvat. UvidÌme se pozdÏjc.
+	AI_Output	(other, self, "DIA_GornNW_nach_DJG_StillNeedYou_15_00"); //Vra≈• se. Pot≈ôebuji tƒõ.
+	AI_Output	(self, other, "DIA_GornNW_nach_DJG_StillNeedYou_12_01"); //No tak vid√≠≈°. A j√° u≈æ si myslel, ≈æe mƒõ tu nech√°≈° shn√≠t, zat√≠mco si bude≈° s√°m u≈æ√≠vat. Uvid√≠me se pozdƒõjc.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Gorn_IsOnBoard	 = LOG_SUCCESS;

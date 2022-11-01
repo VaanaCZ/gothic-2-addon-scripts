@@ -44,7 +44,7 @@ FUNC VOID DIA_Addon_10029_Buddler_Hi_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_02");//MusÌm si trochu zarubat, abych znova nabral rytmus.
+		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_02");//Mus√≠m si trochu zarubat, abych znova nabral rytmus.
 		AI_StopProcessInfos(self);
 	};
 };
@@ -67,8 +67,8 @@ FUNC INT DIA_Addon_10029_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10029_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//Nohy, vöecko to z·visÌ na noh·ch.
-	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//SÌla a rychlost vych·zejÌ z nohou.
+	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//Nohy, v≈°ecko to z√°vis√≠ na noh√°ch.
+	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//S√≠la a rychlost vych√°zej√≠ z nohou.
 	
 	B_Upgrade_Hero_HackChance(5);
 	

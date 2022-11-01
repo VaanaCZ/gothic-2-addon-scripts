@@ -76,9 +76,9 @@ FUNC INT DIA_Abuyin_Hallo_Condition()
 };
 FUNC VOID DIA_Abuyin_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_00");//(pøemıšlí) ...je to divné, ale mám neodbytnı pocit, e jsem tì u nìkde vidìl, poutníku...
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_01");//No, èas a prostor jsou prostì záhadné elementy. Ale omluv mou nezdvoøilost, ó synu trpìlivosti. Ještì jsem tì ani nepozdravil.
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_02");//Vítám tì, pøíteli! Uveleb se na mıch skrovnıch kobercích a v klidu si vychutnej dobrou dımku.
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_00");//(pÅ™emÃ½Å¡lÃ­) ...je to divnÃ©, ale mÃ¡m neodbytnÃ½ pocit, Å¾e jsem tÄ› uÅ¾ nÄ›kde vidÄ›l, poutnÃ­ku...
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_01");//No, Äas a prostor jsou prostÄ› zÃ¡hadnÃ© elementy. Ale omluv mou nezdvoÅ™ilost, Ã³ synu trpÄ›livosti. JeÅ¡tÄ› jsem tÄ› ani nepozdravil.
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_02");//VÃ­tÃ¡m tÄ›, pÅ™Ã­teli! Uveleb se na mÃ½ch skrovnÃ½ch kobercÃ­ch a v klidu si vychutnej dobrou dÃ½mku.
 };
 // ************************************************************
 // 			  		Wer bist du?
@@ -99,7 +99,7 @@ FUNC INT DIA_Abuyin_du_Condition()
 FUNC VOID DIA_Abuyin_du_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_du_15_00");//Kdo jsi?
-	AI_Output (self, other,"DIA_Abuyin_du_13_01");//Jmenuju se Abú Dín ibn Dadír ibn Omar Chalíd ben Hádí al-Šarídí. Jsem vìštcem a prorokem, astrologem a dodavatelem tabáku.
+	AI_Output (self, other,"DIA_Abuyin_du_13_01");//Jmenuju se AbÃº DÅ¾Ã­n ibn DÅ¾adÃ­r ibn Omar ChalÃ­d ben HÃ¡dÅ¾Ã­ al-Å arÃ­dÃ­. Jsem vÄ›Å¡tcem a prorokem, astrologem a dodavatelem tabÃ¡ku.
 };
 // ************************************************************
 // 			  		Kraut
@@ -111,7 +111,7 @@ INSTANCE DIA_Abuyin_Kraut(C_INFO)
 	condition	= DIA_Abuyin_Kraut_Condition;
 	information	= DIA_Abuyin_Kraut_Info;
 	permanent	= FALSE;
-	description	= "Jakı tabák mi mùeš nabídnout?";
+	description	= "JakÃ½ tabÃ¡k mi mÅ¯Å¾eÅ¡ nabÃ­dnout?";
 };                       
 FUNC INT DIA_Abuyin_Kraut_Condition()
 {	
@@ -122,9 +122,9 @@ FUNC INT DIA_Abuyin_Kraut_Condition()
 };
 FUNC VOID DIA_Abuyin_Kraut_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Kraut_15_00");//Jakı tabák nabízíš?
-	AI_Output (self, other,"DIA_Abuyin_Kraut_13_01");//Mé dımky jsou naplnìny pikantním a osvìujícím jableènım tabákem.
-	AI_Output (self, other,"DIA_Abuyin_Kraut_13_02");//Poslu si, kdykoli budeš chtít, synu dobrodruství.
+	AI_Output (other, self,"DIA_Abuyin_Kraut_15_00");//JakÃ½ tabÃ¡k nabÃ­zÃ­Å¡?
+	AI_Output (self, other,"DIA_Abuyin_Kraut_13_01");//MÃ© dÃ½mky jsou naplnÄ›ny pikantnÃ­m a osvÄ›Å¾ujÃ­cÃ­m jableÄnÃ½m tabÃ¡kem.
+	AI_Output (self, other,"DIA_Abuyin_Kraut_13_02");//PosluÅ¾ si, kdykoli budeÅ¡ chtÃ­t, synu dobrodruÅ¾stvÃ­.
 };
 // ************************************************************
 // 			  	anderen Tabak?
@@ -136,7 +136,7 @@ INSTANCE DIA_Abuyin_anderen(C_INFO)
 	condition	= DIA_Abuyin_anderen_Condition;
 	information	= DIA_Abuyin_anderen_Info;
 	permanent	= FALSE;
-	description	= "Máš i jinı tabák?";
+	description	= "MÃ¡Å¡ i jinÃ½ tabÃ¡k?";
 };                       
 FUNC INT DIA_Abuyin_anderen_Condition()
 {	
@@ -147,12 +147,12 @@ FUNC INT DIA_Abuyin_anderen_Condition()
 };
 FUNC VOID DIA_Abuyin_anderen_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_anderen_15_00");//Máš i jinı tabák?
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_01");//Nabízím pouze ten nejlepší tabák. Tato jableèná smìs má podobné vlastnosti jako tabák z mé domoviny, Jiních ostrovù.
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_02");//Ale samozøejmì se nijak nebráním vyzkoušet jakıkoli jinı druh - pokud tedy nìkdo dokáe vyrobit opravdu dobrı tabák.
-	AI_Output (other, self,"DIA_Abuyin_anderen_15_03");//Jak se to dìlá?
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_04");//Jako základ doporuèuji mùj jableènı tabák. A pak mùeš vyzkoušet kombinace s dalšími ingrediencemi.
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_05");//Vıroba probíhá v alchymistické kolonì a vyaduje základní znalosti alchymie.
+	AI_Output (other, self,"DIA_Abuyin_anderen_15_00");//MÃ¡Å¡ i jinÃ½ tabÃ¡k?
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_01");//NabÃ­zÃ­m pouze ten nejlepÅ¡Ã­ tabÃ¡k. Tato jableÄnÃ¡ smÄ›s mÃ¡ podobnÃ© vlastnosti jako tabÃ¡k z mÃ© domoviny, JiÅ¾nÃ­ch ostrovÅ¯.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_02");//Ale samozÅ™ejmÄ› se nijak nebrÃ¡nÃ­m vyzkouÅ¡et jakÃ½koli jinÃ½ druh - pokud tedy nÄ›kdo dokÃ¡Å¾e vyrobit opravdu dobrÃ½ tabÃ¡k.
+	AI_Output (other, self,"DIA_Abuyin_anderen_15_03");//Jak se to dÄ›lÃ¡?
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_04");//Jako zÃ¡klad doporuÄuji mÅ¯j jableÄnÃ½ tabÃ¡k. A pak mÅ¯Å¾eÅ¡ vyzkouÅ¡et kombinace s dalÅ¡Ã­mi ingrediencemi.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_05");//VÃ½roba probÃ­hÃ¡ v alchymistickÃ© kolonÄ› a vyÅ¾aduje zÃ¡kladnÃ­ znalosti alchymie.
 };
 // ************************************************************
 // 			  	Woher 
@@ -164,7 +164,7 @@ INSTANCE DIA_Abuyin_Woher(C_INFO)
 	condition	= DIA_Abuyin_Woher_Condition;
 	information	= DIA_Abuyin_Woher_Info;
 	permanent	= FALSE;
-	description	= "Kde se dá sehnat jableènı tabák?";
+	description	= "Kde se dÃ¡ sehnat jableÄnÃ½ tabÃ¡k?";
 };                       
 FUNC INT DIA_Abuyin_Woher_Condition()
 {	
@@ -175,19 +175,19 @@ FUNC INT DIA_Abuyin_Woher_Condition()
 };
 FUNC VOID DIA_Abuyin_Woher_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Woher_15_00");//Kde se dá sehnat jableènı tabák?
-	AI_Output (self, other,"DIA_Abuyin_Woher_13_01");//Dám ti dvì dávky. Je jen na tvé moudrosti, jak s ním naloíš.
-	AI_Output (self, other,"DIA_Abuyin_Woher_13_02");//Pokud budeš chtít další, zajdi pøímo za Zuridem, mistrem lektvarù. Dìlá si svùj vlastní tabák a také ho samozøejmì prodává.
+	AI_Output (other, self,"DIA_Abuyin_Woher_15_00");//Kde se dÃ¡ sehnat jableÄnÃ½ tabÃ¡k?
+	AI_Output (self, other,"DIA_Abuyin_Woher_13_01");//DÃ¡m ti dvÄ› dÃ¡vky. Je jen na tvÃ© moudrosti, jak s nÃ­m naloÅ¾Ã­Å¡.
+	AI_Output (self, other,"DIA_Abuyin_Woher_13_02");//Pokud budeÅ¡ chtÃ­t dalÅ¡Ã­, zajdi pÅ™Ã­mo za Zuridem, mistrem lektvarÅ¯. DÄ›lÃ¡ si svÅ¯j vlastnÃ­ tabÃ¡k a takÃ© ho samozÅ™ejmÄ› prodÃ¡vÃ¡.
 	
 	B_GiveInvItems (self, other, ItMi_ApfelTabak,2);
 };
 // ************************************************************
 FUNC VOID B_TabakProbieren()
 {
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_00");//Nech mì ten tabák vyzkoušet.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_00");//Nech mÄ› ten tabÃ¡k vyzkouÅ¡et.
 	CreateInvItems (self, ItMi_Joint,1);
 	B_UseItem (self, ItMi_Joint);
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_01");//Ne, obávám se, e mi tahle smìs nebude vyhovovat. Ale moná se ti podaøí nalézt nìkoho jiného, kdo ehm... ocení takovou delikatesu.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Nichts_13_01");//Ne, obÃ¡vÃ¡m se, Å¾e mi tahle smÄ›s nebude vyhovovat. Ale moÅ¾nÃ¡ se ti podaÅ™Ã­ nalÃ©zt nÄ›koho jinÃ©ho, kdo ehm... ocenÃ­ takovou delikatesu.
 };
 // ************************************************************
 // 			  	Mischung 
@@ -199,7 +199,7 @@ INSTANCE DIA_Abuyin_Mischung(C_INFO)
 	condition	= DIA_Abuyin_Mischung_Condition;
 	information	= DIA_Abuyin_Mischung_Info;
 	permanent	= TRUE;
-	description	= "Mám novou smìs tabáku...";
+	description	= "MÃ¡m novou smÄ›s tabÃ¡ku...";
 };                       
 FUNC INT DIA_Abuyin_Mischung_Condition()
 {	
@@ -216,7 +216,7 @@ FUNC INT DIA_Abuyin_Mischung_Condition()
 FUNC VOID DIA_Abuyin_Mischung_Info()
 {	
 	
-	AI_Output (other, self,"DIA_Abuyin_Mischung_15_00");//Mám novou smìs tabáku.
+	AI_Output (other, self,"DIA_Abuyin_Mischung_15_00");//MÃ¡m novou smÄ›s tabÃ¡ku.
 	
 	Info_ClearChoices (DIA_Abuyin_Mischung);
 	Info_AddChoice (DIA_Abuyin_Mischung,DIALOG_BACK,DIA_Abuyin_Mischung_BACK);
@@ -265,15 +265,15 @@ FUNC VOID DIA_Abuyin_Mischung_Super ()
 	
 	B_GiveInvItems (other, self, ItMi_Honigtabak, 1);
 		
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_00");//Nech mì ten tabák vyzkoušet.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_00");//Nech mÄ› ten tabÃ¡k vyzkouÅ¡et.
 	CreateInvItems (self, ItMi_Joint,1);
 	B_UseItem (self, ItMi_Joint);
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_01");//Chutná to pøímo neuvìøitelnì! Nikdy jsem nic lepšího nekouøil!
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_02");//Jak jsi tu smìs pøipravil?
-	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_03");//Smíchal jsem tabák s medem.
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_04");//To se ti opravdu povedlo, otèe umìní mísení. Byl bych potìšen, kdybych smìl své nuzné dımky naplnit tak vzácnou smìsí.
-	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_05");//Tak je naplò.
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_06");//Díky, synu velkorysosti. ádná jiná smìs nemùe bıt tak dobrá jako tato. Koupím od tebe veškerou smìs tohoto druhu, co mi pøineseš.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_01");//ChutnÃ¡ to pÅ™Ã­mo neuvÄ›Å™itelnÄ›! Nikdy jsem nic lepÅ¡Ã­ho nekouÅ™il!
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_02");//Jak jsi tu smÄ›s pÅ™ipravil?
+	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_03");//SmÃ­chal jsem tabÃ¡k s medem.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_04");//To se ti opravdu povedlo, otÄe umÄ›nÃ­ mÃ­senÃ­. Byl bych potÄ›Å¡en, kdybych smÄ›l svÃ© nuznÃ© dÃ½mky naplnit tak vzÃ¡cnou smÄ›sÃ­.
+	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_05");//Tak je naplÅˆ.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_06");//DÃ­ky, synu velkorysosti. Å½Ã¡dnÃ¡ jinÃ¡ smÄ›s nemÅ¯Å¾e bÃ½t tak dobrÃ¡ jako tato. KoupÃ­m od tebe veÅ¡kerou smÄ›s tohoto druhu, co mi pÅ™ineseÅ¡.
 	
 	Abuyin_Honigtabak = TRUE;
 	B_GivePlayerXP ((XP_Ambient)*2);
@@ -290,7 +290,7 @@ INSTANCE DIA_Abuyin_Trade(C_INFO)
 	condition	= DIA_Abuyin_Trade_Condition;
 	information	= DIA_Abuyin_Trade_Info;
 	permanent	= TRUE;
-	description	= "Mám pro tebe trochu medového tabáku.";
+	description	= "MÃ¡m pro tebe trochu medovÃ©ho tabÃ¡ku.";
 };                       
 FUNC INT DIA_Abuyin_Trade_Condition()
 {	
@@ -306,12 +306,12 @@ FUNC VOID DIA_Abuyin_Trade_Info()
 	
 	Abuyin_Score = (Npc_HasItems (other, Itmi_Honigtabak)* Value_Itmi_Honigtabak);
 	
-	AI_Output (other, self,"DIA_Abuyin_Trade_15_00");//Mám pro tebe trochu medového tabáku.
+	AI_Output (other, self,"DIA_Abuyin_Trade_15_00");//MÃ¡m pro tebe trochu medovÃ©ho tabÃ¡ku.
 	
 	B_GiveInvItems (other, self, ItmI_HonigTabak, Npc_HasItems (other, Itmi_Honigtabak));
 	B_GiveInvItems (self, other, ItmI_Gold, Abuyin_Score);
 	
-	AI_Output (self, other,"DIA_Abuyin_Trade_13_01");//Obchodovat s tebou je mi neskonalım potìšením.
+	AI_Output (self, other,"DIA_Abuyin_Trade_13_01");//Obchodovat s tebou je mi neskonalÃ½m potÄ›Å¡enÃ­m.
 };
 // ************************************************************
 // 			  		Herb - KrautPaket
@@ -323,7 +323,7 @@ INSTANCE DIA_Abuyin_Herb(C_INFO)
 	condition	= DIA_Abuyin_Herb_Condition;
 	information	= DIA_Abuyin_Herb_Info;
 	permanent	= FALSE;
-	description	= "Zajímal by tì tenhle balíèek trávy?";
+	description	= "ZajÃ­mal by tÄ› tenhle balÃ­Äek trÃ¡vy?";
 };                       
 FUNC INT DIA_Abuyin_Herb_Condition()
 {	
@@ -334,11 +334,11 @@ FUNC INT DIA_Abuyin_Herb_Condition()
 };
 FUNC VOID DIA_Abuyin_Herb_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Herb_15_00");//Zajímal by tì tenhle balíèek drog?
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_01");//Balík bylinek - neøíkej, e to je tráva z bain. Ó, dej to pryè, synu lehkovánosti.
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_02");//Jestli mì s tím chytí mìstské stráe, pošlou mì rovnou za møíe - a ty nedopadneš o moc lépe!
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_03");//Pokud chceš tu zásobu prodat, dám ti jednu radu - opus tohle mìsto.
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_04");//Pokus se toho zbavit nìkde za hradbami. Všechno, co za to mùeš dostat tady, je spousta trablù.
+	AI_Output (other, self,"DIA_Abuyin_Herb_15_00");//ZajÃ­mal by tÄ› tenhle balÃ­Äek drog?
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_01");//BalÃ­k bylinek - neÅ™Ã­kej, Å¾e to je trÃ¡va z baÅ¾in. Ã“, dej to pryÄ, synu lehkovÃ¡Å¾nosti.
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_02");//Jestli mÄ› s tÃ­m chytÃ­ mÄ›stskÃ© strÃ¡Å¾e, poÅ¡lou mÄ› rovnou za mÅ™Ã­Å¾e - a ty nedopadneÅ¡ o moc lÃ©pe!
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_03");//Pokud chceÅ¡ tu zÃ¡sobu prodat, dÃ¡m ti jednu radu - opusÅ¥ tohle mÄ›sto.
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_04");//Pokus se toho zbavit nÄ›kde za hradbami. VÅ¡echno, co za to mÅ¯Å¾eÅ¡ dostat tady, je spousta trablÅ¯.
 };
 // ************************************************************
 // 			  Kannst du mir eine Weissagung geben?
@@ -350,7 +350,7 @@ INSTANCE DIA_Abuyin_Weissagung(C_INFO)
 	condition	= DIA_Abuyin_Weissagung_Condition;
 	information	= DIA_Abuyin_Weissagung_Info;
 	permanent	= FALSE;
-	description	= "Mùeš mi pøedpovìdìt budoucnost?";
+	description	= "MÅ¯Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung_Condition()
 {	
@@ -362,11 +362,11 @@ FUNC INT DIA_Abuyin_Weissagung_Condition()
 };
 FUNC VOID DIA_Abuyin_Weissagung_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_00");//Dokáeš mi pøedpovìdìt budoucnost?
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_01");//Za menší poplatek jsem ti k slubám, ó otèe velkorysosti.
-	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_02");//Kolik chceš?
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_03");//Za pouhıch 25 zlatıch budu kvùli tobì riskovat pohled skrze èas.
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_04");//Ale pamatuj - budoucnost je vdycky nejistá. Vše, co mohu udìlat, je zbìnì prolétnout nìkolik útrkù èasu.
+	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_00");//DokÃ¡Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_01");//Za menÅ¡Ã­ poplatek jsem ti k sluÅ¾bÃ¡m, Ã³ otÄe velkorysosti.
+	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_02");//Kolik chceÅ¡?
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_03");//Za pouhÃ½ch 25 zlatÃ½ch budu kvÅ¯li tobÄ› riskovat pohled skrze Äas.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_04");//Ale pamatuj - budoucnost je vÅ¾dycky nejistÃ¡. VÅ¡e, co mohu udÄ›lat, je zbÄ›Å¾nÄ› prolÃ©tnout nÄ›kolik ÃºtrÅ¾kÅ¯ Äasu.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 1
@@ -378,7 +378,7 @@ INSTANCE DIA_Abuyin_Zukunft(C_INFO)
 	condition	= DIA_Abuyin_Zukunft_Condition;
 	information	= DIA_Abuyin_Zukunft_Info;
 	permanent	= TRUE;
-	description	= "Pøedpovìz mi budoucnost (zaplatit 25 zlaákù).";
+	description	= "PÅ™edpovÄ›z mi budoucnost (zaplatit 25 zlaÅ¥Ã¡kÅ¯).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft_permanent;
@@ -394,17 +394,17 @@ FUNC INT DIA_Abuyin_Zukunft_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft_15_00");//Pøedpovìz mi mou budoucnost.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft_15_00");//PÅ™edpovÄ›z mi mou budoucnost.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 25)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_01");//Dobrá, hledaèi vìdomostí. Teï se musím dostat do hypnotického stavu. Jsi pøipraven?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_01");//DobrÃ¡, hledaÄi vÄ›domostÃ­. TeÄ se musÃ­m dostat do hypnotickÃ©ho stavu. Jsi pÅ™ipraven?
 		Info_ClearChoices (DIA_Abuyin_Zukunft);
-		Info_AddChoice (DIA_Abuyin_Zukunft,"Jsem pøipraven!",DIA_Abuyin_Zukunft_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft,"Jsem pÅ™ipraven!",DIA_Abuyin_Zukunft_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_02");//Ó, otèe mincí, ádám tì o 25 zlatıch, za to, e nahlédnu do budoucnosti.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_02");//Ã“, otÄe mincÃ­, Å¾Ã¡dÃ¡m tÄ› o 25 zlatÃ½ch, za to, Å¾e nahlÃ©dnu do budoucnosti.
 	};
 
 };
@@ -413,15 +413,15 @@ FUNC VOID DIA_Abuyin_Zukunft_Trance()
 		AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 		Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 		
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_00");//(V transu)... Skøeti... hlídají vstup... stará chodba... Hornické údolí...
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_01");//(V transu)... Mu v záøivé zbroji... mág... je s ním tvùj pøítel... èeká na tebe...
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_02");//(V transu)... Oheò! Útok... mocná stvoøení... plameny... mnoho... jich zemøe...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_00");//(V transu)... SkÅ™eti... hlÃ­dajÃ­ vstup... starÃ¡ chodba... HornickÃ© ÃºdolÃ­...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_01");//(V transu)... MuÅ¾ v zÃ¡Å™ivÃ© zbroji... mÃ¡g... je s nÃ­m tvÅ¯j pÅ™Ã­tel... ÄekÃ¡ na tebe...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_02");//(V transu)... OheÅˆ! Ãštok... mocnÃ¡ stvoÅ™enÃ­... plameny... mnoho... jich zemÅ™e...
 		
-		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_00");//(V transu) Copak je tohle...? Mìsto... Zøíceniny... Quarhodron v... v Jharkendaru...
-		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_01");//(V transu)...je vyvolán... Quarhodron v Jharkendaru!
+		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_00");//(V transu) Copak je tohle...? MÄ›sto... ZÅ™Ã­ceniny... Quarhodron v... v Jharkendaru...
+		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_01");//(V transu)...je vyvolÃ¡n... Quarhodron v Jharkendaru!
 		
 		AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_03");//Je mi líto, ale vize je u konce. U tu není nic, co bych mohl spatøit.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_03");//Je mi lÃ­to, ale vize je u konce. UÅ¾ tu nenÃ­ nic, co bych mohl spatÅ™it.
 		
 		DIA_Abuyin_Zukunft_permanent = TRUE; 
 		Abuyin_Zukunft = 1;
@@ -439,7 +439,7 @@ INSTANCE DIA_Abuyin_Nochmal(C_INFO)
 	condition	= DIA_Abuyin_Nochmal_Condition;
 	information	= DIA_Abuyin_Nochmal_Info;
 	permanent	= TRUE;
-	description	= "Mùeš mi prorokovat ještì nìco jiného?";
+	description	= "MÅ¯Å¾eÅ¡ mi prorokovat jeÅ¡tÄ› nÄ›co jinÃ©ho?";
 };                       
 FUNC INT DIA_Abuyin_Nochmal_Condition()
 {	
@@ -450,14 +450,14 @@ FUNC INT DIA_Abuyin_Nochmal_Condition()
 };
 FUNC VOID DIA_Abuyin_Nochmal_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Nochmal_15_00");//Mùeš mi udìlat ještì další proroctví?
-	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_01");//Ó synu záhadné budoucnosti, není v mé moci poodhalit závoj èasu.
-	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_02");//Pouze pokud mi èas sešle další znamení, budu schopen do nìj nahlédnout znovu.
+	AI_Output (other, self,"DIA_Abuyin_Nochmal_15_00");//MÅ¯Å¾eÅ¡ mi udÄ›lat jeÅ¡tÄ› dalÅ¡Ã­ proroctvÃ­?
+	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_01");//Ã“ synu zÃ¡hadnÃ© budoucnosti, nenÃ­ v mÃ© moci poodhalit zÃ¡voj Äasu.
+	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_02");//Pouze pokud mi Äas seÅ¡le dalÅ¡Ã­ znamenÃ­, budu schopen do nÄ›j nahlÃ©dnout znovu.
 	
 	if (Abuyin_Erzaehlt == FALSE)
 	{
 		AI_Output (other, self,"DIA_Abuyin_Nochmal_15_03");//A kdy to bude?
-		AI_Output (self, other,"DIA_Abuyin_Nochmal_13_04");//A se budoucnost stane pøítomností a ty budeš pokraèovat ve své cestì.
+		AI_Output (self, other,"DIA_Abuyin_Nochmal_13_04");//AÅ¾ se budoucnost stane pÅ™Ã­tomnostÃ­ a ty budeÅ¡ pokraÄovat ve svÃ© cestÄ›.
 		Abuyin_Erzaehlt = TRUE;
 	};
 };
@@ -472,8 +472,8 @@ FUNC VOID DIA_Abuyin_Nochmal_Info()
 
 FUNC void B_Abuyin_Weissagung ()
 {	
-	AI_Output (other, self,"B_Abuyin_Weissagung_15_00");//Mùeš mi pøedpovìdìt budoucnost?
-	AI_Output (self, other,"B_Abuyin_Weissagung_13_01");//Ano, èas postoupil a já ti na oplátku za nìkolik mincí sdìlím proroctví.
+	AI_Output (other, self,"B_Abuyin_Weissagung_15_00");//MÅ¯Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?
+	AI_Output (self, other,"B_Abuyin_Weissagung_13_01");//Ano, Äas postoupil a jÃ¡ ti na oplÃ¡tku za nÄ›kolik mincÃ­ sdÄ›lÃ­m proroctvÃ­.
 	AI_Output (other, self,"B_Abuyin_Weissagung_15_02");//Kolik?
 };
 
@@ -488,7 +488,7 @@ INSTANCE DIA_Abuyin_Weissagung2(C_INFO)
 	condition	= DIA_Abuyin_Weissagung2_Condition;
 	information	= DIA_Abuyin_Weissagung2_Info;
 	permanent	= FALSE;
-	description	= "Mùeš mi pøedpovìdìt budoucnost?";
+	description	= "MÅ¯Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung2_Condition()
 {	
@@ -501,7 +501,7 @@ FUNC INT DIA_Abuyin_Weissagung2_Condition()
 FUNC VOID DIA_Abuyin_Weissagung2_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung2_13_00");//Za pouhıch 100 zlatıch budu kvùli tobì riskovat pohled skrze èas.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung2_13_00");//Za pouhÃ½ch 100 zlatÃ½ch budu kvÅ¯li tobÄ› riskovat pohled skrze Äas.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 2
@@ -513,7 +513,7 @@ INSTANCE DIA_Abuyin_Zukunft2(C_INFO)
 	condition	= DIA_Abuyin_Zukunft2_Condition;
 	information	= DIA_Abuyin_Zukunft2_Info;
 	permanent	= TRUE;
-	description	= "Pøedpovìz mi budoucnost (zaplatit 100 zlaákù).";
+	description	= "PÅ™edpovÄ›z mi budoucnost (zaplatit 100 zlaÅ¥Ã¡kÅ¯).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft2_permanent;
@@ -529,18 +529,18 @@ FUNC INT DIA_Abuyin_Zukunft2_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft2_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft2_15_00");//Pøedpovìz mi mou budoucnost.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft2_15_00");//PÅ™edpovÄ›z mi mou budoucnost.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 100)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_01");//Dobrá, synu udatnosti. Teï se dostanu do hypnotického stavu. Jsi pøipraven?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_01");//DobrÃ¡, synu udatnosti. TeÄ se dostanu do hypnotickÃ©ho stavu. Jsi pÅ™ipraven?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft2);
-		Info_AddChoice (DIA_Abuyin_Zukunft2,"Jsem pøipraven!",DIA_Abuyin_Zukunft2_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft2,"Jsem pÅ™ipraven!",DIA_Abuyin_Zukunft2_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_02");//Ó otèe mincí, ádám tì o 100 zlatıch za to, e nahlédnu do budoucnosti.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_02");//Ã“ otÄe mincÃ­, Å¾Ã¡dÃ¡m tÄ› o 100 zlatÃ½ch za to, Å¾e nahlÃ©dnu do budoucnosti.
 	};
 
 };	
@@ -549,12 +549,12 @@ FUNC VOID DIA_Abuyin_Zukunft2_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_00");//(V transu)... oldák... bude tì potøebovat... strašná vrada... Oko...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_01");//(V transu)... Zlovìstní stoupenci... pøicházejí... hledají tebe... stráce padne...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_02");//(V transu)... ale tøi se spojí... jedinì pak získáš, co ti náleí...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_00");//(V transu)... Å½oldÃ¡k... bude tÄ› potÅ™ebovat... straÅ¡nÃ¡ vraÅ¾da... Oko...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_01");//(V transu)... ZlovÄ›stnÃ­ stoupenci... pÅ™ichÃ¡zejÃ­... hledajÃ­ tebe... strÃ¡Å¾ce padne...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_02");//(V transu)... ale tÅ™i se spojÃ­... jedinÄ› pak zÃ­skÃ¡Å¡, co ti nÃ¡leÅ¾Ã­...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_03");//To je vše. Není nic, co bych ještì mohl spatøit.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_03");//To je vÅ¡e. NenÃ­ nic, co bych jeÅ¡tÄ› mohl spatÅ™it.
 	
 	DIA_Abuyin_Zukunft2_permanent = TRUE; 
 	Abuyin_Zukunft = 2;
@@ -581,7 +581,7 @@ INSTANCE DIA_Abuyin_Weissagung3(C_INFO)
 	condition	= DIA_Abuyin_Weissagung3_Condition;
 	information	= DIA_Abuyin_Weissagung3_Info;
 	permanent	= FALSE;
-	description	= "Mùeš mi pøedpovìdìt budoucnost?";
+	description	= "MÅ¯Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung3_Condition()
 {	
@@ -594,7 +594,7 @@ FUNC INT DIA_Abuyin_Weissagung3_Condition()
 FUNC VOID DIA_Abuyin_Weissagung3_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung3_13_00");//Za pouhıch 250 zlatıch budu kvùli tobì riskovat pohled skrze èas.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung3_13_00");//Za pouhÃ½ch 250 zlatÃ½ch budu kvÅ¯li tobÄ› riskovat pohled skrze Äas.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 3
@@ -606,7 +606,7 @@ INSTANCE DIA_Abuyin_Zukunft3(C_INFO)
 	condition	= DIA_Abuyin_Zukunft3_Condition;
 	information	= DIA_Abuyin_Zukunft3_Info;
 	permanent	= TRUE;
-	description	= "Pøedpovìz mi budoucnost (zaplatit 250 zlaákù).";
+	description	= "PÅ™edpovÄ›z mi budoucnost (zaplatit 250 zlaÅ¥Ã¡kÅ¯).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft3_permanent;
@@ -622,18 +622,18 @@ FUNC INT DIA_Abuyin_Zukunft3_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft3_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft3_15_00");//Pøedpovìz mi budoucnost.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft3_15_00");//PÅ™edpovÄ›z mi budoucnost.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 250)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_01");//Dobrá, synu vìdomostí. Teï se dostanu do hypnotického stavu. Jsi pøipraven?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_01");//DobrÃ¡, synu vÄ›domostÃ­. TeÄ se dostanu do hypnotickÃ©ho stavu. Jsi pÅ™ipraven?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft3);
-		Info_AddChoice (DIA_Abuyin_Zukunft3,"Jsem pøipraven!",DIA_Abuyin_Zukunft3_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft3,"Jsem pÅ™ipraven!",DIA_Abuyin_Zukunft3_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_02");//Ó otèe mincí, ádám tì o 250 zlatıch za to, e nahlédnu do budoucnosti.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_02");//Ã“ otÄe mincÃ­, Å¾Ã¡dÃ¡m tÄ› o 250 zlatÃ½ch za to, Å¾e nahlÃ©dnu do budoucnosti.
 	};
 
 };	
@@ -642,12 +642,12 @@ FUNC VOID  DIA_Abuyin_Zukunft3_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_00");//(V transu)... Musíš donutit... co není osud nikoho jiného, pouze tvùj...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_01");//(V transu)... pøes sníh a oheò... pøes led a plameny...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_02");//(V transu)... Mui v podivné zbroji... bainy... ještìøi... èekají na tebe...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_00");//(V transu)... MusÃ­Å¡ donutit... co nenÃ­ osud nikoho jinÃ©ho, pouze tvÅ¯j...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_01");//(V transu)... pÅ™es snÃ­h a oheÅˆ... pÅ™es led a plameny...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_02");//(V transu)... MuÅ¾i v podivnÃ© zbroji... baÅ¾iny... jeÅ¡tÄ›Å™i... ÄekajÃ­ na tebe...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_03");//To je vše. Není nic, co bych ještì mohl spatøit.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_03");//To je vÅ¡e. NenÃ­ nic, co bych jeÅ¡tÄ› mohl spatÅ™it.
 	
 	DIA_Abuyin_Zukunft3_permanent = TRUE; 
 	Abuyin_Zukunft = 3;
@@ -674,7 +674,7 @@ INSTANCE DIA_Abuyin_Weissagung4(C_INFO)
 	condition	= DIA_Abuyin_Weissagung4_Condition;
 	information	= DIA_Abuyin_Weissagung4_Info;
 	permanent	= FALSE;
-	description	= "Mùeš mi pøedpovìdìt budoucnost?";
+	description	= "MÅ¯Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung4_Condition()
 {	
@@ -687,7 +687,7 @@ FUNC INT DIA_Abuyin_Weissagung4_Condition()
 FUNC VOID DIA_Abuyin_Weissagung4_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung4_13_00");//Za pouhıch 500 zlatıch budu kvùli tobì riskovat pohled skrze èas.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung4_13_00");//Za pouhÃ½ch 500 zlatÃ½ch budu kvÅ¯li tobÄ› riskovat pohled skrze Äas.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 4
@@ -699,7 +699,7 @@ INSTANCE DIA_Abuyin_Zukunft4(C_INFO)
 	condition	= DIA_Abuyin_Zukunft4_Condition;
 	information	= DIA_Abuyin_Zukunft4_Info;
 	permanent	= TRUE;
-	description	= "Pøedpovìz mi budoucnost (zaplatit 500 zlaákù).";
+	description	= "PÅ™edpovÄ›z mi budoucnost (zaplatit 500 zlaÅ¥Ã¡kÅ¯).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft4_permanent;
@@ -715,18 +715,18 @@ FUNC INT DIA_Abuyin_Zukunft4_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft4_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft4_15_00");//Pøedpovìz mi mou budoucnost.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft4_15_00");//PÅ™edpovÄ›z mi mou budoucnost.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 500)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_01");//Dobrá, synu vìdomostí. Teï se dostanu do hypnotického stavu. Jsi pøipraven?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_01");//DobrÃ¡, synu vÄ›domostÃ­. TeÄ se dostanu do hypnotickÃ©ho stavu. Jsi pÅ™ipraven?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft4);
-		Info_AddChoice (DIA_Abuyin_Zukunft4,"Jsem pøipraven!",DIA_Abuyin_Zukunft4_Trance);	
+		Info_AddChoice (DIA_Abuyin_Zukunft4,"Jsem pÅ™ipraven!",DIA_Abuyin_Zukunft4_Trance);	
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_02");//Ó otèe mincí, ádám tì o 500 zlatıch za to, e nahlédnu do budoucnosti.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_02");//Ã“ otÄe mincÃ­, Å¾Ã¡dÃ¡m tÄ› o 500 zlatÃ½ch za to, Å¾e nahlÃ©dnu do budoucnosti.
 	};
 
 };
@@ -735,12 +735,12 @@ FUNC VOID DIA_Abuyin_Zukunft4_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_00");//(V transu)... Místo vìdomostí... jiná zemì... temné místo široko daleko...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_01");//(V transu)... udatní spoleèníci... musíš zvolit...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_02");//(V transu)... chrám... leí osamocen v Adanovì øíši... skrytı v mlze...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_00");//(V transu)... MÃ­sto vÄ›domostÃ­... jinÃ¡ zemÄ›... temnÃ© mÃ­sto Å¡iroko daleko...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_01");//(V transu)... udatnÃ­ spoleÄnÃ­ci... musÃ­Å¡ zvolit...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_02");//(V transu)... chrÃ¡m... leÅ¾Ã­ osamocen v AdanovÄ› Å™Ã­Å¡i... skrytÃ½ v mlze...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_03");//To je vše. Není nic, co bych ještì mohl spatøit.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_03");//To je vÅ¡e. NenÃ­ nic, co bych jeÅ¡tÄ› mohl spatÅ™it.
 	
 	DIA_Abuyin_Zukunft4_permanent = TRUE; 
 	Abuyin_Zukunft = 4;
@@ -767,7 +767,7 @@ INSTANCE DIA_Abuyin_Weissagung5(C_INFO)
 	condition	= DIA_Abuyin_Weissagung5_Condition;
 	information	= DIA_Abuyin_Weissagung5_Info;
 	permanent	= FALSE;
-	description	= "Mùeš mi pøedpovìdìt budoucnost?";
+	description	= "MÅ¯Å¾eÅ¡ mi pÅ™edpovÄ›dÄ›t budoucnost?";
 };                       
 FUNC INT DIA_Abuyin_Weissagung5_Condition()
 {	
@@ -780,7 +780,7 @@ FUNC INT DIA_Abuyin_Weissagung5_Condition()
 FUNC VOID DIA_Abuyin_Weissagung5_Info()
 {	
 	B_Abuyin_Weissagung ();
-	AI_Output (self, other,"DIA_Abuyin_Weissagung5_13_00");//Za pouhıch 1000 zlatıch budu kvùli tobì riskovat pohled skrze èas.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung5_13_00");//Za pouhÃ½ch 1000 zlatÃ½ch budu kvÅ¯li tobÄ› riskovat pohled skrze Äas.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 5
@@ -792,7 +792,7 @@ INSTANCE DIA_Abuyin_Zukunft5(C_INFO)
 	condition	= DIA_Abuyin_Zukunft5_Condition;
 	information	= DIA_Abuyin_Zukunft5_Info;
 	permanent	= TRUE;
-	description	= "Pøedpovìz mi budoucnost (zaplatit 1000 zlaákù).";
+	description	= "PÅ™edpovÄ›z mi budoucnost (zaplatit 1000 zlaÅ¥Ã¡kÅ¯).";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft5_permanent;
@@ -808,18 +808,18 @@ FUNC INT DIA_Abuyin_Zukunft5_Condition()
 };
 FUNC VOID DIA_Abuyin_Zukunft5_Info()
 {	
-	AI_Output (other, self,"DIA_Abuyin_Zukunft5_15_00");//Pøedpovìz mi mou budoucnost.
+	AI_Output (other, self,"DIA_Abuyin_Zukunft5_15_00");//PÅ™edpovÄ›z mi mou budoucnost.
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 1000)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_01");//Dobrá, synu vìdomostí. Teï se dostanu do hypnotického stavu. Jsi pøipraven?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_01");//DobrÃ¡, synu vÄ›domostÃ­. TeÄ se dostanu do hypnotickÃ©ho stavu. Jsi pÅ™ipraven?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft5);
-		Info_AddChoice (DIA_Abuyin_Zukunft5,"Jsem pøipraven!",DIA_Abuyin_Zukunft5_Trance);
+		Info_AddChoice (DIA_Abuyin_Zukunft5,"Jsem pÅ™ipraven!",DIA_Abuyin_Zukunft5_Trance);
 	}
 	else 
 	{
-		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_02");//Ó, otèe mincí, ádám tì o 1000 zlatıch za to, e nahlédnu do budoucnosti.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_02");//Ã“, otÄe mincÃ­, Å¾Ã¡dÃ¡m tÄ› o 1000 zlatÃ½ch za to, Å¾e nahlÃ©dnu do budoucnosti.
 	};
 
 };
@@ -828,12 +828,12 @@ FUNC VOID DIA_Abuyin_Zukunft5_Trance ()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_00");//(V transu)... Temnota pohltí zemi... zlo zvítìzí...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_01");//(V transu)... král prohraje válku se skøety...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_02");//(V transu)... vrátíš se, ale nenalezneš klidu...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_00");//(V transu)... Temnota pohltÃ­ zemi... zlo zvÃ­tÄ›zÃ­...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_01");//(V transu)... krÃ¡l prohraje vÃ¡lku se skÅ™ety...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_02");//(V transu)... vrÃ¡tÃ­Å¡ se, ale nenalezneÅ¡ klidu...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_03");//To je vše. Není nic, co bych ještì mohl spatøit.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_03");//To je vÅ¡e. NenÃ­ nic, co bych jeÅ¡tÄ› mohl spatÅ™it.
 		
 	DIA_Abuyin_Zukunft5_permanent = TRUE; 
 	Abuyin_Zukunft = 5;

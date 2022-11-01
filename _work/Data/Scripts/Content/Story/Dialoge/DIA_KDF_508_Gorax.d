@@ -32,7 +32,7 @@ INSTANCE DIA_Gorax_PICKPOCKET (C_INFO)
 	condition	= DIA_Gorax_PICKPOCKET_Condition;
 	information	= DIA_Gorax_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ukradení tohoto klíèe bude zatracenì tìké)";
+	description = "(UkradenÃ­ tohoto klÃ­Äe bude zatracenÄ› tÄ›Å¾kÃ©)";
 };                       
 
 FUNC INT DIA_Gorax_PICKPOCKET_Condition()
@@ -94,7 +94,7 @@ func int DIA_Gorax_HELP_Condition ()
 };
 func void DIA_Gorax_HELP_Info ()
 {
-	AI_Output (self, other, "DIA_Gorax_HELP_14_00"); //Mohu ti nìjak pomoci?
+	AI_Output (self, other, "DIA_Gorax_HELP_14_00"); //Mohu ti nÄ›jak pomoci?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GOLD
@@ -106,7 +106,7 @@ instance DIA_Gorax_GOLD		(C_INFO)
 	condition	 = 	DIA_Gorax_GOLD_Condition;
 	information	 = 	DIA_Gorax_GOLD_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Pøinesl jsem kopu zlata.";
+	description	 = 	"PÅ™inesl jsem kopu zlata.";
 };
 //-----------------------------------
 var int DIA_Gorax_GOLD_perm;
@@ -122,19 +122,19 @@ func int DIA_Gorax_GOLD_Condition ()
 };
 func void DIA_Gorax_GOLD_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_GOLD_15_00"); //Pøinesl jsem kopu zlata.
+	AI_Output (other, self, "DIA_Gorax_GOLD_15_00"); //PÅ™inesl jsem kopu zlata.
 	
 	if (Npc_HasItems (other, ItMi_Gold) >= Summe_Kloster)
 	{
-		AI_Output (self, other, "DIA_Gorax_GOLD_14_01"); //(pln oèekávání) Ach - pøinášíš dar Innosovi. Velmi dobøe, mùj synu.
-		AI_Output (self, other, "DIA_Gorax_GOLD_14_02"); //Pouiju tvùj dar ve prospìch kláštera, jak si Innos pøeje.
+		AI_Output (self, other, "DIA_Gorax_GOLD_14_01"); //(pln oÄekÃ¡vÃ¡nÃ­) Ach - pÅ™inÃ¡Å¡Ã­Å¡ dar Innosovi. Velmi dobÅ™e, mÅ¯j synu.
+		AI_Output (self, other, "DIA_Gorax_GOLD_14_02"); //PouÅ¾iju tvÅ¯j dar ve prospÄ›ch klÃ¡Å¡tera, jak si Innos pÅ™eje.
 	
 		DIA_Gorax_GOLD_perm = TRUE; //WICHTIG
 		B_GiveInvItems (other, self, ItMi_Gold, Summe_Kloster);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Co jsi s tím zlatem udìlal? Utratils ho? Pøines ho sem!
+		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Co jsi s tÃ­m zlatem udÄ›lal? Utratils ho? PÅ™ines ho sem!
 	};
 	
 };
@@ -150,7 +150,7 @@ instance DIA_Addon_Gorax_DaronsStatue		(C_INFO)
 	information	 = 	DIA_Addon_Gorax_DaronsStatue_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mám tu sošku, kterou mìl Daron donést do kláštera.";
+	description	 = 	"MÃ¡m tu soÅ¡ku, kterou mÄ›l Daron donÃ©st do klÃ¡Å¡tera.";
 };
 
 func int DIA_Addon_Gorax_DaronsStatue_Condition ()
@@ -165,12 +165,12 @@ func int DIA_Addon_Gorax_DaronsStatue_Condition ()
 
 func void DIA_Addon_Gorax_DaronsStatue_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gorax_DaronsStatue_15_00"); //Mám tady tu sošku, kterou mìl Daron pøinést do kláštera.
+	AI_Output	(other, self, "DIA_Addon_Gorax_DaronsStatue_15_00"); //MÃ¡m tady tu soÅ¡ku, kterou mÄ›l Daron pÅ™inÃ©st do klÃ¡Å¡tera.
 	
 	if (Npc_HasItems (other,ItMi_LostInnosStatue_Daron))
 	{
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_01"); //(povzdech) Je to trapné, e nám tak cennou vìc pøinesl jen rádoby novic.
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_02"); //Ale zároveò to potvrzuje tvé rozhodnutí slouit Innosovi.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_01"); //(povzdech) Je to trapnÃ©, Å¾e nÃ¡m tak cennou vÄ›c pÅ™inesl jen rÃ¡doby novic.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_02"); //Ale zÃ¡roveÅˆ to potvrzuje tvÃ© rozhodnutÃ­ slouÅ¾it Innosovi.
 		
 		//-----------PATCH M.F.----------------------
 		if B_GiveInvItems (other, self, ItMi_LostInnosStatue_Daron,1)
@@ -179,14 +179,14 @@ func void DIA_Addon_Gorax_DaronsStatue_Info ()
 		};
 		
 		
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_03"); //Jsem ti velmi vdìènı, mladı novici.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_03"); //Jsem ti velmi vdÄ›ÄnÃ½, mladÃ½ novici.
 		MIS_Addon_Daron_GetStatue = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Addon_ReturnedLostInnosStatue_Daron);
 		DIA_Gorax_GOLD_perm = TRUE; //WICHTIG
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_04"); //Sošku? Já tu ádnou sošku nevidím. Napøed mi ji pøines a pak moná té tvé historce uvìøím.
+		AI_Output	(self, other, "DIA_Addon_Gorax_DaronsStatue_14_04"); //SoÅ¡ku? JÃ¡ tu Å¾Ã¡dnou soÅ¡ku nevidÃ­m. NapÅ™ed mi ji pÅ™ines a pak moÅ¾nÃ¡ tÃ© tvÃ© historce uvÄ›Å™Ã­m.
 	};
 };
 
@@ -199,7 +199,7 @@ instance DIA_Gorax_SLEEP		(C_INFO)
 	nr			 =  4;
 	condition	 = 	DIA_Gorax_SLEEP_Condition;
 	information	 = 	DIA_Gorax_SLEEP_Info;
-	description	 = 	"Hledám místo, kde bych se mohl vyspat.";
+	description	 = 	"HledÃ¡m mÃ­sto, kde bych se mohl vyspat.";
 };
 func int DIA_Gorax_SLEEP_Condition ()
 {
@@ -211,10 +211,10 @@ func int DIA_Gorax_SLEEP_Condition ()
 };
 func void DIA_Gorax_SLEEP_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_SLEEP_15_00"); //Hledám místo, kde bych se mohl vyspat.
-	AI_Output (self, other, "DIA_Gorax_SLEEP_14_01"); //Hned vedle dveøí je volná postel. První napravo, vedle vchodu. Mùeš spát tam.
-	AI_Output (self, other, "DIA_Gorax_SLEEP_14_02"); //Svoje vìci si mùeš dát do nìkteré z nepouívanıch truhel.
-	AI_Output (self, other, "DIA_Gorax_SLEEP_14_03"); //A nezapomeò - v lonicích mágù nemáš co pohledávat. Také nesmíš vstupovat do knihovny, leda e bys mìl vıslovné povolení.
+	AI_Output (other, self, "DIA_Gorax_SLEEP_15_00"); //HledÃ¡m mÃ­sto, kde bych se mohl vyspat.
+	AI_Output (self, other, "DIA_Gorax_SLEEP_14_01"); //Hned vedle dveÅ™Ã­ je volnÃ¡ postel. PrvnÃ­ napravo, vedle vchodu. MÅ¯Å¾eÅ¡ spÃ¡t tam.
+	AI_Output (self, other, "DIA_Gorax_SLEEP_14_02"); //Svoje vÄ›ci si mÅ¯Å¾eÅ¡ dÃ¡t do nÄ›kterÃ© z nepouÅ¾Ã­vanÃ½ch truhel.
+	AI_Output (self, other, "DIA_Gorax_SLEEP_14_03"); //A nezapomeÅˆ - v loÅ¾nicÃ­ch mÃ¡gÅ¯ nemÃ¡Å¡ co pohledÃ¡vat. TakÃ© nesmÃ­Å¡ vstupovat do knihovny, leda Å¾e bys mÄ›l vÃ½slovnÃ© povolenÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -226,7 +226,7 @@ instance DIA_Gorax_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Gorax_Aufgabe_Condition;
 	information	 = 	DIA_Gorax_Aufgabe_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Máš pro mì nìjakı úkol?";
+	description	 = 	"MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ Ãºkol?";
 };
 func int DIA_Gorax_Aufgabe_Condition ()
 {
@@ -237,10 +237,10 @@ func int DIA_Gorax_Aufgabe_Condition ()
 };
 func void DIA_Gorax_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_Aufgabe_15_00"); //Máš pro mì nìjakı úkol?
-	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_01"); //Vy novicové v poslední dobì pracujete tvrdì. A ti, kdo hodnì pracují, by také mìli hodnì jíst.
-	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_02"); //Tady máš klíè od spiírny. Najdeš tam skopové klobásy. Rozdìl je mezi novice - ale spravedlivì!
-	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_03"); //A budeš hotov, zase za mnou pøijï.
+	AI_Output (other, self, "DIA_Gorax_Aufgabe_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ Ãºkol?
+	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_01"); //Vy novicovÃ© v poslednÃ­ dobÄ› pracujete tvrdÄ›. A ti, kdo hodnÄ› pracujÃ­, by takÃ© mÄ›li hodnÄ› jÃ­st.
+	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_02"); //Tady mÃ¡Å¡ klÃ­Ä od spiÅ¾Ã­rny. NajdeÅ¡ tam skopovÃ© klobÃ¡sy. RozdÄ›l je mezi novice - ale spravedlivÄ›!
+	AI_Output (self, other, "DIA_Gorax_Aufgabe_14_03"); //AÅ¾ budeÅ¡ hotov, zase za mnou pÅ™ijÄ.
 	 
 	CreateInvItems (self, ItKe_KlosterStore,1); 
 	B_GiveInvItems (self, other, ItKe_KlosterStore,1);
@@ -248,10 +248,10 @@ func void DIA_Gorax_Aufgabe_Info ()
 	
 	Log_CreateTopic (Topic_GoraxEssen,LOG_MISSION);
 	Log_SetTopicStatus (Topic_GoraxEssen,LOG_RUNNING);
-	B_LogEntry (Topic_GoraxEssen,"Mistr Gorax chce, abych skopové klobásy ze spiírny spravedlivì rozdìlil mezi novice. Kromì mì jich klášter obıvá celkem tøináct.");
+	B_LogEntry (Topic_GoraxEssen,"Mistr Gorax chce, abych skopovÃ© klobÃ¡sy ze spiÅ¾Ã­rny spravedlivÄ› rozdÄ›lil mezi novice. KromÄ› mÄ› jich klÃ¡Å¡ter obÃ½vÃ¡ celkem tÅ™inÃ¡ct.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Würste verteilt
+//	Info WÃ¼rste verteilt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_Wurst		(C_INFO)
 {
@@ -260,7 +260,7 @@ instance DIA_Gorax_Wurst		(C_INFO)
 	condition	 = 	DIA_Gorax_Wurst_Condition;
 	information	 = 	DIA_Gorax_Wurst_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Rozdal jsem novicùm ty klobásy (úkol splnìn).";
+	description	 = 	"Rozdal jsem novicÅ¯m ty klobÃ¡sy (Ãºkol splnÄ›n).";
 };
 func int DIA_Gorax_Wurst_Condition ()
 {
@@ -272,11 +272,11 @@ func int DIA_Gorax_Wurst_Condition ()
 };
 func void DIA_Gorax_Wurst_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_Wurst_15_00"); //Rozdìlil jsem ty klobásy.
+	AI_Output (other, self, "DIA_Gorax_Wurst_15_00"); //RozdÄ›lil jsem ty klobÃ¡sy.
 	
 	if (Wurst_Gegeben >= 13)
 	{
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_01"); //A uèinil jsi tak spravedlivì. Vezmi si tenhle svitek s léèivım kouzlem - a bì si zase po své práci.
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_01"); //A uÄinil jsi tak spravedlivÄ›. Vezmi si tenhle svitek s lÃ©ÄivÃ½m kouzlem - a bÄ›Å¾ si zase po svÃ© prÃ¡ci.
 		
 		MIS_GoraxEssen = LOG_SUCCESS; 
 		B_GivePlayerXP (XP_GoraxEssen);
@@ -284,9 +284,9 @@ func void DIA_Gorax_Wurst_Info ()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_02"); //Vánì? V tom pøípadì ses ale pøi plnìní toho úkolu moc nesnail.
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_03"); //Buï jsi ty klobásy snìdl sám, nebo jsi nìkomu dal víc, ne mu náleelo.
-		AI_Output (self, other, "DIA_Gorax_Wurst_14_04"); //Poslouchej, protoe jsi novı, nechám to protentokrát bıt. Ale pøíštì budu pøísnìjší!
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_02"); //VÃ¡Å¾nÄ›? V tom pÅ™Ã­padÄ› ses ale pÅ™i plnÄ›nÃ­ toho Ãºkolu moc nesnaÅ¾il.
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_03"); //BuÄ jsi ty klobÃ¡sy snÄ›dl sÃ¡m, nebo jsi nÄ›komu dal vÃ­c, neÅ¾ mu nÃ¡leÅ¾elo.
+		AI_Output (self, other, "DIA_Gorax_Wurst_14_04"); //Poslouchej, protoÅ¾e jsi novÃ½, nechÃ¡m to protentokrÃ¡t bÃ½t. Ale pÅ™Ã­Å¡tÄ› budu pÅ™Ã­snÄ›jÅ¡Ã­!
 		
 		MIS_GoraxEssen = LOG_FAILED; 
 	};
@@ -301,7 +301,7 @@ instance DIA_Gorax_Aufgabe2		(C_INFO)
 	condition	 = 	DIA_Gorax_Aufgabe2_Condition;
 	information	 = 	DIA_Gorax_Aufgabe2_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Máš pro mì nìjakı další úkol?";
+	description	 = 	"MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ dalÅ¡Ã­ Ãºkol?";
 };
 func int DIA_Gorax_Aufgabe2_Condition ()
 {
@@ -314,17 +314,17 @@ func int DIA_Gorax_Aufgabe2_Condition ()
 };
 func void DIA_Gorax_Aufgabe2_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_Aufgabe2_15_00"); //Máš pro mì nìjakı další úkol?
-	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_01"); //Ano. Jak víš, dìláme tady vıborné víno a také je prodáváme.
-	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_02"); //Orlan, majitel hostince "U Mrtvé harpyje", si objednal dodávku. Dohodli jsme se, e za ty láhve zaplatí 240 zlatıch.
-	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_03"); //Dones mu tyto láhve - ale nenech se ošidit.
+	AI_Output (other, self, "DIA_Gorax_Aufgabe2_15_00"); //MÃ¡Å¡ pro mÄ› nÄ›jakÃ½ dalÅ¡Ã­ Ãºkol?
+	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_01"); //Ano. Jak vÃ­Å¡, dÄ›lÃ¡me tady vÃ½bornÃ© vÃ­no a takÃ© je prodÃ¡vÃ¡me.
+	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_02"); //Orlan, majitel hostince "U MrtvÃ© harpyje", si objednal dodÃ¡vku. Dohodli jsme se, Å¾e za ty lÃ¡hve zaplatÃ­ 240 zlatÃ½ch.
+	AI_Output (self, other, "DIA_Gorax_Aufgabe2_14_03"); //Dones mu tyto lÃ¡hve - ale nenech se oÅ¡idit.
 	 
 	B_GiveInvItems (self, other, ItFo_Wine,12);
 	MIS_GoraxWein = LOG_RUNNING; 
 	
 	Log_CreateTopic (Topic_GoraxWein,LOG_MISSION);
 	Log_SetTopicStatus (Topic_GoraxWein,LOG_RUNNING);
-	B_LogEntry (Topic_GoraxWein,"Mistr Gorax chce, abych hospodskému Orlanovi doruèil dvanáct lahví vína. Mìl by mi za nì dát 240 zlaákù.");
+	B_LogEntry (Topic_GoraxWein,"Mistr Gorax chce, abych hospodskÃ©mu Orlanovi doruÄil dvanÃ¡ct lahvÃ­ vÃ­na. MÄ›l by mi za nÄ› dÃ¡t 240 zlaÅ¥Ã¡kÅ¯.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Orlan
@@ -355,25 +355,25 @@ func void DIA_Gorax_Orlan_Info ()
 	if (Npc_HasItems (other, ItmI_Gold) >= 100)
 	{
 		AI_Output (other, self, "DIA_Gorax_Orlan_15_00"); //Byl jsem za Orlanem.
-		AI_Output (self, other, "DIA_Gorax_Orlan_14_01"); //A dostal jsi 240 zlatıch?
+		AI_Output (self, other, "DIA_Gorax_Orlan_14_01"); //A dostal jsi 240 zlatÃ½ch?
 	
 		DIA_Gorax_Orlan_permanent = TRUE;
 		Info_ClearChoices (DIA_Gorax_Orlan);
 	
-		Info_AddChoice (DIA_Gorax_Orlan,"Ten šizuòk mì ošulil! (Pøedat 100 zlaákù.)",DIA_Gorax_Orlan_100);
-		Info_AddChoice (DIA_Gorax_Orlan,"Tady je zlato. (Odevzdat 240 zlaákù.)",DIA_Gorax_Orlan_240);
+		Info_AddChoice (DIA_Gorax_Orlan,"Ten Å¡izuÅˆk mÄ› oÅ¡ulil! (PÅ™edat 100 zlaÅ¥Ã¡kÅ¯.)",DIA_Gorax_Orlan_100);
+		Info_AddChoice (DIA_Gorax_Orlan,"Tady je zlato. (Odevzdat 240 zlaÅ¥Ã¡kÅ¯.)",DIA_Gorax_Orlan_240);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Co jsi s tím zlatem udìlal? Utratils ho? Pøines ho sem!
+		AI_Output (self, other, "DIA_Gorax_Orlan_14_02"); //Co jsi s tÃ­m zlatem udÄ›lal? Utratils ho? PÅ™ines ho sem!
 		
 	};
 };
 FUNC VOID DIA_Gorax_Orlan_100 ()
 {
-	AI_Output (other, self, "DIA_Gorax_Orlan_100_15_00"); //Dal mi ménì!
-	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_01"); //Tys mu to prodal lacinìji? To ne, proè jen jsem ze všech lidí posílal právì TEBE?
-	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_02"); //Jsi naprosto a totálnì neschopnı. Bì mi z oèí.
+	AI_Output (other, self, "DIA_Gorax_Orlan_100_15_00"); //Dal mi mÃ©nÄ›!
+	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_01"); //Tys mu to prodal lacinÄ›ji? To ne, proÄ jen jsem ze vÅ¡ech lidÃ­ posÃ­lal prÃ¡vÄ› TEBE?
+	AI_Output (self, other, "DIA_Gorax_Orlan_100_14_02"); //Jsi naprosto a totÃ¡lnÄ› neschopnÃ½. BÄ›Å¾ mi z oÄÃ­.
 	
 	B_GiveInvItems (other, self, ItMI_Gold, 100);
 	
@@ -384,17 +384,17 @@ FUNC VOID DIA_Gorax_Orlan_100 ()
 };
 FUNC VOID DIA_Gorax_Orlan_240 ()
 {
-	AI_Output (other, self, "DIA_Gorax_Orlan_240_15_00"); //Dostal jsem ty peníze.
+	AI_Output (other, self, "DIA_Gorax_Orlan_240_15_00"); //Dostal jsem ty penÃ­ze.
 	
 	if B_GiveInvItems (other, self, ItMI_Gold, 240)	
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_01"); //Vıbornì. Jsi vánì schopnı. Jako odmìnu si vezmi tenhle svitek s léèivım kouzlem. A teï bì a najdi si nìjakou další práci.
+		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_01"); //VÃ½bornÄ›. Jsi vÃ¡Å¾nÄ› schopnÃ½. Jako odmÄ›nu si vezmi tenhle svitek s lÃ©ÄivÃ½m kouzlem. A teÄ bÄ›Å¾ a najdi si nÄ›jakou dalÅ¡Ã­ prÃ¡ci.
 		MIS_GoraxWein = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Goraxwein);			
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_02"); //Ale èást tìch penìz jsi u staèil utratit, co? Jsi k nièemu - zmiz!
+		AI_Output (self, other, "DIA_Gorax_Orlan_240_14_02"); //Ale ÄÃ¡st tÄ›ch penÄ›z jsi uÅ¾ staÄil utratit, co? Jsi k niÄemu - zmiz!
 		MIS_GoraxWein = LOG_FAILED; 
 		B_GiveInvItems (other, self, ItMI_Gold, Npc_HasItems (other, ItmI_Gold));
 	};
@@ -411,7 +411,7 @@ instance DIA_Gorax_JOB		(C_INFO)
 	condition	 = 	DIA_Gorax_JOB_Condition;
 	information	 = 	DIA_Gorax_JOB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Jakou práci tu vykonáváš?";
+	description	 = 	"Jakou prÃ¡ci tu vykonÃ¡vÃ¡Å¡?";
 };
 func int DIA_Gorax_JOB_Condition ()
 {
@@ -419,13 +419,13 @@ func int DIA_Gorax_JOB_Condition ()
 };
 func void DIA_Gorax_JOB_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_JOB_15_00"); //Co tu máš na práci?
-	AI_Output (self, other, "DIA_Gorax_JOB_14_01"); //Mé úkoly jsou mnohé a rùznorodé. Nejsem jen správce, jsem té strácem pokladnice.
-	AI_Output (self, other, "DIA_Gorax_JOB_14_02"); //Navíc dohlíím na vinnı sklep a starám se o klášterní zásoby jídla.
-	AI_Output (self, other, "DIA_Gorax_JOB_14_03"); //Take pokud budeš nìco potøebovat, mùeš za mnou kdykoliv zajít a dostaneš to - samozøejmì za rozumnou protihodnotu.
+	AI_Output (other, self, "DIA_Gorax_JOB_15_00"); //Co tu mÃ¡Å¡ na prÃ¡ci?
+	AI_Output (self, other, "DIA_Gorax_JOB_14_01"); //MÃ© Ãºkoly jsou mnohÃ© a rÅ¯znorodÃ©. Nejsem jen sprÃ¡vce, jsem tÃ©Å¾ strÃ¡Å¾cem pokladnice.
+	AI_Output (self, other, "DIA_Gorax_JOB_14_02"); //NavÃ­c dohlÃ­Å¾Ã­m na vinnÃ½ sklep a starÃ¡m se o klÃ¡Å¡ternÃ­ zÃ¡soby jÃ­dla.
+	AI_Output (self, other, "DIA_Gorax_JOB_14_03"); //TakÅ¾e pokud budeÅ¡ nÄ›co potÅ™ebovat, mÅ¯Å¾eÅ¡ za mnou kdykoliv zajÃ­t a dostaneÅ¡ to - samozÅ™ejmÄ› za rozumnou protihodnotu.
 	
 	Log_CreateTopic (Topic_KlosterTrader,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTrader,"Mistr Gorax mì mùe zásobit vším, co bych mohl v klášteøe upotøebit.");
+	B_LogEntry (Topic_KlosterTrader,"Mistr Gorax mÄ› mÅ¯Å¾e zÃ¡sobit vÅ¡Ã­m, co bych mohl v klÃ¡Å¡teÅ™e upotÅ™ebit.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRADE
@@ -438,7 +438,7 @@ instance DIA_Gorax_TRADE		(C_INFO)
 	information	 = 	DIA_Gorax_TRADE_Info;
 	permanent	 = 	TRUE;
 	trade		 =  TRUE;
-	description	 = 	"Potøebuji pár vìcí...";
+	description	 = 	"PotÅ™ebuji pÃ¡r vÄ›cÃ­...";
 };
 func int DIA_Gorax_TRADE_Condition ()
 {
@@ -450,10 +450,10 @@ func int DIA_Gorax_TRADE_Condition ()
 func void DIA_Gorax_TRADE_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output			(other, self, "DIA_Gorax_TRADE_15_00"); //Potøebuji pár vìcí.
+	AI_Output			(other, self, "DIA_Gorax_TRADE_15_00"); //PotÅ™ebuji pÃ¡r vÄ›cÃ­.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info SLEEP für KDF
+//	Info SLEEP fÃ¼r KDF
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Gorax_KDF		(C_INFO)
 {
@@ -462,7 +462,7 @@ instance DIA_Gorax_KDF		(C_INFO)
 	condition	 = 	DIA_Gorax_KDF_Condition;
 	information	 = 	DIA_Gorax_KDF_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Potøebuji nové místo na spaní.";
+	description	 = 	"PotÅ™ebuji novÃ© mÃ­sto na spanÃ­.";
 };
 func int DIA_Gorax_KDF_Condition ()
 {
@@ -473,8 +473,8 @@ func int DIA_Gorax_KDF_Condition ()
 };
 func void DIA_Gorax_KDF_Info ()
 {
-	AI_Output (other, self, "DIA_Gorax_KDF_15_00"); //Potøebuji nové místo na spaní.
-	AI_Output (self, other, "DIA_Gorax_KDF_14_01"); //Napravo odsud je volnı pokoj. Vezmi si tenhle klíè. Najdeš tam všechno, co potøebuješ.
+	AI_Output (other, self, "DIA_Gorax_KDF_15_00"); //PotÅ™ebuji novÃ© mÃ­sto na spanÃ­.
+	AI_Output (self, other, "DIA_Gorax_KDF_14_01"); //Napravo odsud je volnÃ½ pokoj. Vezmi si tenhle klÃ­Ä. NajdeÅ¡ tam vÅ¡echno, co potÅ™ebujeÅ¡.
 	
 	B_GiveInvItems (self, other,ItKe_KDFPlayer,1);
 	Wld_InsertItem (ItPo_Perm_Mana,"FP_ITEM_KDFPLAYER");
@@ -562,33 +562,33 @@ func int DIA_Gorax_KILLPEDRO_Condition ()
 
 func void DIA_Gorax_KILLPEDRO_Info ()
 {
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_00"); //Poèkej, oldáku. Potøebuji si s tebou promluvit.
-	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_15_01"); //Co chceš?
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_02"); //Klášter se ocitl ve velice delikátní situaci.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_03"); //Momentálnì se zdá, e nikdo nevìøí nikomu. A potom ta vìc s Pedrem, to je navısost... (polkne)
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_04"); //Mám pro tebe úkol pøímo z nejvyšších míst. Nejsi èlenem bratrstva ohnì, a tedy jedinı, kdo tu vìc mùe zaøídit.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_05"); //Ale musím tì varovat. Pokud ti ten úkol zadám, budeš jej muset splnit. Jakmile se dozvíš, o co se jedná, nebudeš u mít na vıbìr. Rozumíš?
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_00"); //PoÄkej, Å¾oldÃ¡ku. PotÅ™ebuji si s tebou promluvit.
+	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_15_01"); //Co chceÅ¡?
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_02"); //KlÃ¡Å¡ter se ocitl ve velice delikÃ¡tnÃ­ situaci.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_03"); //MomentÃ¡lnÄ› se zdÃ¡, Å¾e nikdo nevÄ›Å™Ã­ nikomu. A potom ta vÄ›c s Pedrem, to je navÃ½sost... (polkne)
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_04"); //MÃ¡m pro tebe Ãºkol pÅ™Ã­mo z nejvyÅ¡Å¡Ã­ch mÃ­st. Nejsi Älenem bratrstva ohnÄ›, a tedy jedinÃ½, kdo tu vÄ›c mÅ¯Å¾e zaÅ™Ã­dit.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_14_05"); //Ale musÃ­m tÄ› varovat. Pokud ti ten Ãºkol zadÃ¡m, budeÅ¡ jej muset splnit. Jakmile se dozvÃ­Å¡, o co se jednÃ¡, nebudeÅ¡ uÅ¾ mÃ­t na vÃ½bÄ›r. RozumÃ­Å¡?
 	
 	Info_ClearChoices	(DIA_Gorax_KILLPEDRO);
-	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "Zapomeò na to. Je to na mì pøíliš riskantní.", DIA_Gorax_KILLPEDRO_nein );
-	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "Øekni, co chceš.", DIA_Gorax_KILLPEDRO_ja );
+	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "ZapomeÅˆ na to. Je to na mÄ› pÅ™Ã­liÅ¡ riskantnÃ­.", DIA_Gorax_KILLPEDRO_nein );
+	Info_AddChoice	(DIA_Gorax_KILLPEDRO, "Å˜ekni, co chceÅ¡.", DIA_Gorax_KILLPEDRO_ja );
 };
 func void DIA_Gorax_KILLPEDRO_nein ()
 {
-	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_nein_15_00"); //Zapomeò na to. Je to na mì pøíliš riskantní.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_nein_14_01"); //V poøádku. V tom pøípadì zapomeò, e bych cokoliv øíkal.
+	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_nein_15_00"); //ZapomeÅˆ na to. Je to na mÄ› pÅ™Ã­liÅ¡ riskantnÃ­.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_nein_14_01"); //V poÅ™Ã¡dku. V tom pÅ™Ã­padÄ› zapomeÅˆ, Å¾e bych cokoliv Å™Ã­kal.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Gorax_KILLPEDRO_ja ()
 {
-	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_ja_15_00"); //Øekni, co chceš.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_01"); //Dobrá. Poslouchej dobøe, protoe to øeknu jenom jednou.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_02"); //Serpentes chce, abys Pedra za jeho zradu potrestal smrtí, jakmile se ti dostane do rukou.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_03"); //Jakmile svùj úkol splníš, dostaneš zaplaceno.
-	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_04"); //Nikdy jsem to neøekl. A tys také nic neslyšel, rozumíš?
+	AI_Output			(other, self, "DIA_Gorax_KILLPEDRO_ja_15_00"); //Å˜ekni, co chceÅ¡.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_01"); //DobrÃ¡. Poslouchej dobÅ™e, protoÅ¾e to Å™eknu jenom jednou.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_02"); //Serpentes chce, abys Pedra za jeho zradu potrestal smrtÃ­, jakmile se ti dostane do rukou.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_03"); //Jakmile svÅ¯j Ãºkol splnÃ­Å¡, dostaneÅ¡ zaplaceno.
+	AI_Output			(self, other, "DIA_Gorax_KILLPEDRO_ja_14_04"); //Nikdy jsem to neÅ™ekl. A tys takÃ© nic neslyÅ¡el, rozumÃ­Å¡?
 
- 	B_LogEntry (TOPIC_TraitorPedro, "Gorax mi vyøídil vzkaz od Serpenta, e pokud narazím na zrádce Pedra, mám ho bez okolkù zabít.");
+ 	B_LogEntry (TOPIC_TraitorPedro, "Gorax mi vyÅ™Ã­dil vzkaz od Serpenta, Å¾e pokud narazÃ­m na zrÃ¡dce Pedra, mÃ¡m ho bez okolkÅ¯ zabÃ­t.");
 	
 	B_GivePlayerXP (XP_Gorax_KILLPEDRO_GotMission);
 	MIS_Gorax_KillPedro = LOG_RUNNING;

@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_BDT_10015_Emilio_Hi   (C_INFO)
 	condition   = DIA_Addon_Emilio_Hi_Condition;
 	information = DIA_Addon_Emilio_Hi_Info;
 	permanent   = FALSE;
-	description	= "Vypadáš jako kopáè.";
+	description	= "VypadÃ¡Å¡ jako kopÃ¡Ä.";
 };
 FUNC INT DIA_Addon_Emilio_Hi_Condition()
 {	
@@ -71,8 +71,8 @@ FUNC INT DIA_Addon_Emilio_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Hi_15_00");//Vypadáš jako kopáè.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Hi_10_01");//Taky e JSEM kopáè. Kdy jsem byl naposledy v dole, nadøel jsem se jak hovado.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Hi_15_00");//VypadÃ¡Å¡ jako kopÃ¡Ä.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Hi_10_01");//Taky Å¾e JSEM kopÃ¡Ä. KdyÅ¾ jsem byl naposledy v dole, nadÅ™el jsem se jak hovado.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_BDT_10015_Emilio_Gold   (C_INFO)
 	condition   = DIA_Addon_Emilio_Gold_Condition;
 	information = DIA_Addon_Emilio_Gold_Info;
 	permanent   = FALSE;
-	description	= "Co se dìje se zlatem z dolu?";
+	description	= "Co se dÄ›je se zlatem z dolu?";
 };
 FUNC INT DIA_Addon_Emilio_Gold_Condition()
 {	
@@ -104,10 +104,10 @@ FUNC INT DIA_Addon_Emilio_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Gold_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Gold_15_00");//Co dìláte s vytìenım zlatem?
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_01");//Thorus je vybírá a rozdìluje. Nikdo si nesmí nechat, co nakope.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_02");//Kadej dostává jenom èást zlata, aby zbyl podíl i na lovce a stráe.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_03");//Myslím, e to tak má bejt. Od tı doby, co máme tohle pravidlo, bylo míò smrákù a kopáèi furt dostávaj víc ne ti, co se poflakujou venku.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Gold_15_00");//Co dÄ›lÃ¡te s vytÄ›Å¾enÃ½m zlatem?
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_01");//Thorus je vybÃ­rÃ¡ a rozdÄ›luje. Nikdo si nesmÃ­ nechat, co nakope.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_02");//KaÅ¾dej dostÃ¡vÃ¡ jenom ÄÃ¡st zlata, aby zbyl podÃ­l i na lovce a strÃ¡Å¾e.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Gold_10_03");//MyslÃ­m, Å¾e to tak mÃ¡ bejt. Od tÃ½ doby, co mÃ¡me tohle pravidlo, bylo mÃ­Åˆ smrÅ¥Ã¡kÅ¯ a kopÃ¡Äi furt dostÃ¡vaj vÃ­c neÅ¾ ti, co se poflakujou venku.
 };
 //----------------------------------------------------------------------
 //	Info Stein
@@ -119,7 +119,7 @@ INSTANCE DIA_Addon_BDT_10015_Emilio_Stein   (C_INFO)
 	condition   = DIA_Addon_Emilio_Stein_Condition;
 	information = DIA_Addon_Emilio_Stein_Info;
 	permanent   = FALSE;
-	description	= "Co je to s tìmi èervenımi kameny?";
+	description	= "Co je to s tÄ›mi ÄervenÃ½mi kameny?";
 };
 FUNC INT DIA_Addon_Emilio_Stein_Condition()
 {	
@@ -130,11 +130,11 @@ FUNC INT DIA_Addon_Emilio_Stein_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Stein_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Stein_15_00");//A co máte s tìmi èervenımi kameny?
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Stein_15_00");//A co mÃ¡te s tÄ›mi ÄervenÃ½mi kameny?
 	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_01");//To vymyslel Thorus s Estebanem.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_02");//Thorus se stará o rozdìlování zlata a Esteban organizuje dìlníky v dole.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_03");//Samozøejmì e nechce bìhat za Thorusem pokadı, kdy nìkoho pošle do dolu.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_04");//A proto nám dává tyhle èervenı kamennı tabulky a Thorus nás za nì pouští dovnitø. Fungujou jako vstupenky.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_02");//Thorus se starÃ¡ o rozdÄ›lovÃ¡nÃ­ zlata a Esteban organizuje dÄ›lnÃ­ky v dole.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_03");//SamozÅ™ejmÄ› Å¾e nechce bÄ›hat za Thorusem pokaÅ¾dÃ½, kdyÅ¾ nÄ›koho poÅ¡le do dolu.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Stein_10_04");//A proto nÃ¡m dÃ¡vÃ¡ tyhle ÄervenÃ½ kamennÃ½ tabulky a Thorus nÃ¡s za nÄ› pouÅ¡tÃ­ dovnitÅ™. Fungujou jako vstupenky.
 };
 //---------------------------------------------------------------------
 //	Info Attentat 
@@ -148,7 +148,7 @@ INSTANCE DIA_Addon_Emilio_Attentat   (C_INFO)
 	condition   = DIA_Addon_Emilio_Attentat_Condition;
 	information = DIA_Addon_Emilio_Attentat_Info;
 	permanent   = TRUE;
-	description	= "Co víš o tom útoku?";
+	description	= "Co vÃ­Å¡ o tom Ãºtoku?";
 };
 FUNC INT DIA_Addon_Emilio_Attentat_Condition()
 {	
@@ -168,15 +168,15 @@ FUNC INT DIA_Addon_Emilio_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Emilio_Attentat_15_00"); //Co víš o tom útoku?
+	AI_Output (other, self, "DIA_Addon_Emilio_Attentat_15_00"); //Co vÃ­Å¡ o tom Ãºtoku?
 	if (Emilio_Switch == 0)
 	{
-		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_01"); //(vydìšenì) Hele, já s tím nemám nic spoleènıho!
+		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_01"); //(vydÄ›Å¡enÄ›) Hele, jÃ¡ s tÃ­m nemÃ¡m nic spoleÄnÃ½ho!
 		Emilio_Switch = 1;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_02"); //(vydìšenì) VÙBEC NIC!
+		AI_Output (self, other, "DIA_Addon_Emilio_Attentat_10_02"); //(vydÄ›Å¡enÄ›) VÅ®BEC NIC!
 		Emilio_Switch = 0;
 	};
 };
@@ -204,19 +204,19 @@ FUNC VOID DIA_Addon_Emilio_Senyan_Info()
 {	
 	if (Senyan_Called == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_00");//(zkoumavì) Povìz, PROÈ Senyan øval 'A hele, kohopak to tu máme'?
-		AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_01");//(suše) Nezaplacenı dluhy.
+		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_00");//(zkoumavÄ›) PovÄ›z, PROÄŒ Senyan Å™val 'A hele, kohopak to tu mÃ¡me'?
+		AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_01");//(suÅ¡e) NezaplacenÃ½ dluhy.
 	}
 	else
 	{
 		AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_02"); //Ty jsi zabil Senyana!
 	};
-	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_03");//Máš s tím òákej problém?
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_04");//(rychle) Ne, s tím ádnej problém nemám.
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_05");//Pøesnì naopak. (posmìšnì) Ten hajzl pracoval pro Estebana.
+	AI_Output (other, self, "DIA_Addon_BDT_10015_Emilio_Senyan_15_03");//MÃ¡Å¡ s tÃ­m ÅˆÃ¡kej problÃ©m?
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_04");//(rychle) Ne, s tÃ­m Å¾Ã¡dnej problÃ©m nemÃ¡m.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Senyan_10_05");//PÅ™esnÄ› naopak. (posmÄ›Å¡nÄ›) Ten hajzl pracoval pro Estebana.
 	
 	Senyan_CONTRA = LOG_SUCCESS;
-	B_LogEntry (Topic_Addon_Esteban, "Emilio není na Estabanovì stranì.");
+	B_LogEntry (Topic_Addon_Esteban, "Emilio nenÃ­ na EstabanovÄ› stranÄ›.");
 };
 
 //----------------------------------------------------------------------
@@ -229,7 +229,7 @@ INSTANCE DIA_Addon_Emilio_Jetzt   (C_INFO)
 	condition   = DIA_Addon_Emilio_Jetzt_Condition;
 	information = DIA_Addon_Emilio_Jetzt_Info;
 	permanent   = FALSE;
-	description	= "Jak to, e nejsi v dole?";
+	description	= "Jak to, Å¾e nejsi v dole?";
 };
 FUNC INT DIA_Addon_Emilio_Jetzt_Condition()
 {	
@@ -240,9 +240,9 @@ FUNC INT DIA_Addon_Emilio_Jetzt_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_Jetzt_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_Jetzt_15_00"); //Proè nejsi v dole?
-	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_01"); //(trochu nejistì) U jsem byl v dole dost dlouho a døel se do úmoru. Teï potøebuju pár dní odpoèinku.
-	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_02"); //(trochu nejistì si povzdechne) Ne dostanu další èervenej kámen.
+	AI_Output (other, self, "DIA_Addon_Emilio_Jetzt_15_00"); //ProÄ nejsi v dole?
+	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_01"); //(trochu nejistÄ›) UÅ¾ jsem byl v dole dost dlouho a dÅ™el se do Ãºmoru. TeÄ potÅ™ebuju pÃ¡r dnÃ­ odpoÄinku.
+	AI_Output (self, other, "DIA_Addon_Emilio_Jetzt_10_02"); //(trochu nejistÄ› si povzdechne) NeÅ¾ dostanu dalÅ¡Ã­ Äervenej kÃ¡men.
 };
 
 //----------------------------------------------------------------------
@@ -255,7 +255,7 @@ INSTANCE DIA_Addon_Emilio_VonEmilio (C_INFO)
 	condition   = DIA_Addon_Emilio_VonEmilio_Condition;
 	information = DIA_Addon_Emilio_VonEmilio_Info;
 	permanent   = FALSE;
-	description	= "Lennar mi o tobì nìco málo øekl...";
+	description	= "Lennar mi o tobÄ› nÄ›co mÃ¡lo Å™ekl...";
 };
 FUNC INT DIA_Addon_Emilio_VonEmilio_Condition()
 {	
@@ -267,20 +267,20 @@ FUNC INT DIA_Addon_Emilio_VonEmilio_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_VonEmilio_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_00"); //Lennar mi o tobì trochu vyprávìl
-	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_01"); //Lennar? Ten chlap je magor, to sis urèitì všimnul.
-	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_02"); //Øíkal, e jsi nebyl v dole od toho útoku.
-	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_03"); //(zastrašenì) Já... já nic nevím!
+	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_00"); //Lennar mi o tobÄ› trochu vyprÃ¡vÄ›l
+	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_01"); //Lennar? Ten chlap je magor, to sis urÄitÄ› vÅ¡imnul.
+	AI_Output (other, self, "DIA_Addon_Emilio_VonEmilio_15_02"); //Å˜Ã­kal, Å¾e jsi nebyl v dole od toho Ãºtoku.
+	AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_03"); //(zastraÅ¡enÄ›) JÃ¡... jÃ¡ nic nevÃ­m!
 	
 	if (!Npc_IsDead (Senyan))
 	{	
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_04"); //Ty spolupracuješ s tím Senyanem!
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_05"); //Oba jste ve spolku s Estebanem! Moc dobøe jsem slyšel, o èem jste to blábolili!
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_06"); //Esteban na nás doteïka kašlal, tak nevím, proè bych mìl vìøit jeho lidem.
-		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_07"); //Nech mì bejt.
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_04"); //Ty spolupracujeÅ¡ s tÃ­m Senyanem!
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_05"); //Oba jste ve spolku s Estebanem! Moc dobÅ™e jsem slyÅ¡el, o Äem jste to blÃ¡bolili!
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_06"); //Esteban na nÃ¡s doteÄka kaÅ¡lal, tak nevÃ­m, proÄ bych mÄ›l vÄ›Å™it jeho lidem.
+		AI_Output (self, other, "DIA_Addon_Emilio_VonEmilio_10_07"); //Nech mÄ› bejt.
 		AI_StopProcessInfos(self);
 	};
-	B_LogEntry (Topic_Addon_Esteban, "Emilio si myslí, e Lennar je totální kretén.");
+	B_LogEntry (Topic_Addon_Esteban, "Emilio si myslÃ­, Å¾e Lennar je totÃ¡lnÃ­ kretÃ©n.");
 };
 //----------------------------------------------------------------------
 //	Info Hilf Mir
@@ -292,7 +292,7 @@ INSTANCE DIA_Addon_Emilio_HilfMir (C_INFO)
 	condition   = DIA_Addon_Emilio_HilfMir_Condition;
 	information = DIA_Addon_Emilio_HilfMir_Info;
 	permanent   = FALSE;
-	description	= "Pomoz mi zjistit, kdo za tím útokem stojí!";
+	description	= "Pomoz mi zjistit, kdo za tÃ­m Ãºtokem stojÃ­!";
 };
 FUNC INT DIA_Addon_Emilio_HilfMir_Condition()
 {	
@@ -304,15 +304,15 @@ FUNC INT DIA_Addon_Emilio_HilfMir_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_HilfMir_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_00"); //Pomoz mi zjistit, kdo za tím útokem stojí!
-	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_01"); //Ne! nechci s tím nic mít!
-	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_02"); //Kdy si dement jako Lennar všimne, e se divnì chováš, zanedlouho to zjistí i Esteban.
-	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_03"); //(vykrucuje se) Já... sakra! Tak já ti teda øeknu jedno jméno, ale nic víc!
-	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_04"); //Poslouchám.
-	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_05"); //Huno... bì za Hunem. Ten o tı záleitosti musí nìco vìdìt.
+	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_00"); //Pomoz mi zjistit, kdo za tÃ­m Ãºtokem stojÃ­!
+	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_01"); //Ne! nechci s tÃ­m nic mÃ­t!
+	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_02"); //KdyÅ¾ si dement jako Lennar vÅ¡imne, Å¾e se divnÄ› chovÃ¡Å¡, zanedlouho to zjistÃ­ i Esteban.
+	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_03"); //(vykrucuje se) JÃ¡... sakra! Tak jÃ¡ ti teda Å™eknu jedno jmÃ©no, ale nic vÃ­c!
+	AI_Output (other, self, "DIA_Addon_Emilio_HilfMir_15_04"); //PoslouchÃ¡m.
+	AI_Output (self, other, "DIA_Addon_Emilio_HilfMir_10_05"); //Huno... bÄ›Å¾ za Hunem. Ten o tÃ½ zÃ¡leÅ¾itosti musÃ­ nÄ›co vÄ›dÄ›t.
 	Emilio_TellAll = TRUE;
 	
-	B_LogEntry (Topic_Addon_Esteban, "Emilio koneènì vyplivnul to jméno: Huno.");
+	B_LogEntry (Topic_Addon_Esteban, "Emilio koneÄnÄ› vyplivnul to jmÃ©no: Huno.");
 };
 
 //----------------------------------------------------------------------
@@ -325,7 +325,7 @@ INSTANCE DIA_Addon_Emilio_GegenEsteban (C_INFO)
 	condition   = DIA_Addon_Emilio_GegenEsteban_Condition;
 	information = DIA_Addon_Emilio_GegenEsteban_Info;
 	permanent   = FALSE;
-	description	= "Co máš proti Estebanovi?";
+	description	= "Co mÃ¡Å¡ proti Estebanovi?";
 };
 FUNC INT DIA_Addon_Emilio_GegenEsteban_Condition()
 {	
@@ -336,12 +336,12 @@ FUNC INT DIA_Addon_Emilio_GegenEsteban_Condition()
 };
 FUNC VOID DIA_Addon_Emilio_GegenEsteban_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Emilio_GegenEsteban_15_00"); //Co máš proti Estebanovi?
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_01"); //Ta svinì nemyslí na nic jinıho ne na prachy.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_02"); //Jednou za pár dní nìkoho z nás seere òákej dùlní èerv.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_03"); //Ale Esteban prostì do dolù neposílá ádnı bojovníky.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_04"); //A proè? TI chlapi patøej k Havranovı ochrance a Esteban jim nic neøekne, páè je z nich strachy celej podìlanej.
-	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_05"); //Radši nás nechá chcípat!
+	AI_Output (other, self, "DIA_Addon_Emilio_GegenEsteban_15_00"); //Co mÃ¡Å¡ proti Estebanovi?
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_01"); //Ta svinÄ› nemyslÃ­ na nic jinÃ½ho neÅ¾ na prachy.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_02"); //Jednou za pÃ¡r dnÃ­ nÄ›koho z nÃ¡s seÅ¾ere ÅˆÃ¡kej dÅ¯lnÃ­ Äerv.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_03"); //Ale Esteban prostÄ› do dolÅ¯ neposÃ­lÃ¡ Å¾Ã¡dnÃ½ bojovnÃ­ky.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_04"); //A proÄ? TI chlapi patÅ™ej k HavranovÃ½ ochrance a Esteban jim nic neÅ™ekne, pÃ¡Ä je z nich strachy celej podÄ›lanej.
+	AI_Output (self, other, "DIA_Addon_Emilio_GegenEsteban_10_05"); //RadÅ¡i nÃ¡s nechÃ¡ chcÃ­pat!
 };
 
 //----------------------------------------------------------------------
@@ -370,7 +370,7 @@ FUNC VOID DIA_Addon_Emilio_Mine_Info()
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
 	
-	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Mine_10_00");//Tak teï jsi tu šéfem ty. No jo, tak já u jdu.
+	AI_Output (self, other, "DIA_Addon_BDT_10015_Emilio_Mine_10_00");//Tak teÄ jsi tu Å¡Ã©fem ty. No jo, tak jÃ¡ uÅ¾ jdu.
 	
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -402,7 +402,7 @@ FUNC INT DIA_Addon_Emilio_Hacker_Condition()
 FUNC VOID DIA_Addon_Emilio_Hacker_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10004_Emilio_Hacker_15_00"); //Co je?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Emilio_Hacker_10_01"); //Døu se tu jako mezek, ale hlavnì e mì zatím neseral ádnej dùlní èerv.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Emilio_Hacker_10_01"); //DÅ™u se tu jako mezek, ale hlavnÄ› Å¾e mÄ› zatÃ­m neseÅ¾ral Å¾Ã¡dnej dÅ¯lnÃ­ Äerv.
 };
 
 

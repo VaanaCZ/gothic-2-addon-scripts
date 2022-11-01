@@ -39,8 +39,8 @@ FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_13_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Jak se vede?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//Buï tì seere nìjaká potvora, nebo tì seere nìjaká potvora.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Tahle baina bude naše smrt.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//BuÄ tÄ› seÅ¾ere nÄ›jakÃ¡ potvora, nebo tÄ› seÅ¾ere nÄ›jakÃ¡ potvora.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Tahle baÅ¾ina bude naÅ¡e smrt.
 };
 // *************************************************************************
 // 							Tal
@@ -51,7 +51,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent	= TRUE;
-	description = "Víš nìco zajímavého o tomhle údolí?";
+	description = "VÃ­Å¡ nÄ›co zajÃ­mavÃ©ho o tomhle ÃºdolÃ­?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
@@ -61,9 +61,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Co bys mi øekl o tomhle údolí?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Je tu spousta starejch krámù. Havran nám nakázal, abysme to všecko nakupili na jednu hromadu.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Netuším, co s tím chce dìlat, ale nikdo, kdo má všech pìt pohromadì, by pro pár starejch šutrù neriskoval krk.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Co bys mi Å™ekl o tomhle ÃºdolÃ­?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Je tu spousta starejch krÃ¡mÅ¯. Havran nÃ¡m nakÃ¡zal, abysme to vÅ¡ecko nakupili na jednu hromadu.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//NetuÅ¡Ã­m, co s tÃ­m chce dÄ›lat, ale nikdo, kdo mÃ¡ vÅ¡ech pÄ›t pohromadÄ›, by pro pÃ¡r starejch Å¡utrÅ¯ neriskoval krk.
 };
 // *************************************************************************
 // 							News
@@ -74,7 +74,7 @@ instance DIA_Addon_TAL_BDT_13_News(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_News_Condition;
 	information	= DIA_Addon_TAL_BDT_13_News_Info;
 	permanent	= TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
@@ -84,13 +84,13 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Sebìhlo se tu nìco nového?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Pìknì ty piráty vodíme za nos.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Zásobujou nás vìznìma, ale od nás ještì nevidìli ani vindru. Nedivím se, e jsou nakrknutı.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//SebÄ›hlo se tu nÄ›co novÃ©ho?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//PÄ›knÄ› ty pirÃ¡ty vodÃ­me za nos.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//ZÃ¡sobujou nÃ¡s vÄ›znÄ›ma, ale od nÃ¡s jeÅ¡tÄ› nevidÄ›li ani vindru. NedivÃ­m se, Å¾e jsou nakrknutÃ½.
 	
 	if (BDT_13_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//Co ale mùou dìlat? Pøepadnout tábor? (smìje se) HAHAHA.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//Co ale mÅ¯Å¾ou dÄ›lat? PÅ™epadnout tÃ¡bor? (smÄ›je se) HAHAHA.
 		BDT_13_einmal = TRUE;
 	};
 };

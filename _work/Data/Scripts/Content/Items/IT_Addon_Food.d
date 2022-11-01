@@ -27,7 +27,7 @@ const int HP_Shellflesh		= 20;
 //---------------------------------------------------------------------
 INSTANCE ItFo_Addon_Shellflesh (C_Item)
 {
-	name 				=	"äkeble";
+	name 				=	"≈†keble";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -40,9 +40,9 @@ INSTANCE ItFo_Addon_Shellflesh (C_Item)
 	on_state[0]			=	Use_Shellflesh;
 
 	description			= 	name;
-	TEXT[0]				= 	"äùavnat· ökeble";
+	TEXT[0]				= 	"≈†≈•avnat√° ≈°keble";
 	TEXT[1]				= 	NAME_Bonus_HP; COUNT[1] = HP_Shellflesh;
-	TEXT[2]				= 	"D· se jÌst syrov·";
+	TEXT[2]				= 	"D√° se j√≠st syrov√°";
 	TEXT[3]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -67,7 +67,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	on_state[0]		=	UseRum;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"BÌl˝ rum";
+	description		= 	"B√≠l√Ω rum";
 	
 	TEXT[1]			= 	NAME_Bonus_Mana;				
 	COUNT[1]		= 	Mana_Rum;
@@ -88,7 +88,7 @@ INSTANCE ItFo_Addon_Rum(C_Item)
 	
 INSTANCE ItFo_Addon_Grog(C_Item)
 {
-	name 			=	"Ko¯alka";
+	name 			=	"Ko≈ôalka";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -100,7 +100,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 	on_state[0]		=	UseGrog;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Ko¯alka pravÈho mo¯skÈho vlka";
+	description		= 	"Ko≈ôalka prav√©ho mo≈ôsk√©ho vlka";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Grog;
@@ -118,7 +118,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht f¸r 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht f√ºr 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {
@@ -134,9 +134,9 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 	on_state[0]		=	UseLouHammer;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Lou˘v cloum·k";
+	description		= 	"Lou≈Øv cloum√°k";
 	
-	TEXT[1]			= 	"⁄Ëinek          ???";				
+	TEXT[1]			= 	"√öƒçinek          ???";				
 	
 	
 	
@@ -158,7 +158,7 @@ INSTANCE ItFo_Addon_LousHammer (C_Item)
 //--------------------------------------------------------
 INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 {
-	name 			=	"Supercloum·k";
+	name 			=	"Supercloum√°k";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -170,9 +170,9 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	on_state[0]		=	UseSchlafHammer;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Supercloum·k";
+	description		= 	"Supercloum√°k";
 	
-	TEXT[1]			= 	"Po tomhle usnou i ti nejotrlejöÌ pij·ci.";				
+	TEXT[1]			= 	"Po tomhle usnou i ti nejotrlej≈°√≠ pij√°ci.";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchlafHammer;
@@ -194,7 +194,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 	
 INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 {
-	name 			=	"Rychl˝ herynek";
+	name 			=	"Rychl√Ω herynek";
 
 	mainflag 		=	ITEM_KAT_FOOD;
 	flags 			=	ITEM_MULTI;
@@ -206,10 +206,10 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 	on_state[0]		=	UseSchnellerHering;
 	scemeName		=	"POTIONFAST";
 
-	description		= 	"Vypad· nebezpeËnÏ!";
+	description		= 	"Vypad√° nebezpeƒçnƒõ!";
 	
-	TEXT[1]			= 	"⁄Ëinky nejsou zn·my.";				
-	TEXT[2]			=	"MoûnÈ vedlejöÌ ˙Ëinky";
+	TEXT[1]			= 	"√öƒçinky nejsou zn√°my.";				
+	TEXT[2]			=	"Mo≈æn√© vedlej≈°√≠ √∫ƒçinky";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchnellerHering;
@@ -235,7 +235,7 @@ INSTANCE ItFo_Addon_SchnellerHering(C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 {
-	name 				=	"S·Ëek s pep¯em";
+	name 				=	"S√°ƒçek s pep≈ôem";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -246,12 +246,12 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 
 	material 			=	MAT_LEATHER;
 		
-	description			= 	"»erven˝ pep¯";
+	description			= 	"ƒåerven√Ω pep≈ô";
 	
-	TEXT[0]				= 	"Z jiûnÌch ostrov˘";
+	TEXT[0]				= 	"Z ji≈æn√≠ch ostrov≈Ø";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
-	TEXT[3]				= 	"POZOR, OSTR…!";
+	TEXT[3]				= 	"POZOR, OSTR√â!";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -260,7 +260,7 @@ INSTANCE ItFo_Addon_Pfeffer_01	(C_Item)
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_FireStew (C_Item)
 {	
-	name 				=	"P·livÈ nudliËky";
+	name 				=	"P√°liv√© nudliƒçky";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -283,14 +283,14 @@ INSTANCE ItFo_Addon_FireStew (C_Item)
 		B_RaiseAttribute 	(self,	ATR_STRENGTH,	STR_FireStew);
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS_MAX,	HP_FireStew);
 		
-		PrintScreen ("SÌla a ûivotnÌ energie vzrostly!", -1, 34, FONT_ScreenSmall,2); 
+		PrintScreen ("S√≠la a ≈æivotn√≠ energie vzrostly!", -1, 34, FONT_ScreenSmall,2); 
 	};
 //-------------------------------------------------------
 // Fleischsuppe
 //-------------------------------------------------------
 INSTANCE ItFo_Addon_Meatsoup (C_Item)
 {	
-	name 				=	"DuöenÈ maso";
+	name 				=	"Du≈°en√© maso";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;
@@ -302,7 +302,7 @@ INSTANCE ItFo_Addon_Meatsoup (C_Item)
 	scemeName			=	"RICE";
 	on_state[0]			=	Use_MeatSoup;
 
-	description			= 	"DuöenÈ maso, z nÏhoû se jeötÏ kou¯Ì";
+	description			= 	"Du≈°en√© maso, z nƒõho≈æ se je≈°tƒõ kou≈ô√≠";
 	TEXT[1]				= 	NAME_Bonus_STR;		COUNT[1]	= STR_MeatSoup;
 	TEXT[5]				= 	NAME_Value;			COUNT[5]	= Value_FishSoup;
 

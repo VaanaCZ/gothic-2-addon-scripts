@@ -45,33 +45,33 @@ func int DIA_Urshak_HALLO_Condition ()
 
 func void DIA_Urshak_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_00"); //(agresivnì) KHROTOK JABARTH!!!
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_01"); //Poèkej! Já tì znát. Ty pøítel èlovìk s mìkkı hlas.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_02"); //Pøítel zabít zlı démon KRUSHAK.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_00"); //(agresivnÄ›) KHROTOK JABARTH!!!
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_01"); //PoÄkej! JÃ¡ tÄ› znÃ¡t. Ty pÅ™Ã­tel ÄlovÄ›k s mÄ›kkÃ½ hlas.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_02"); //PÅ™Ã­tel zabÃ­t zlÃ½ dÃ©mon KRUSHAK.
 	
 	B_GivePlayerXP (XP_UrshakFound);
 	
 	Log_CreateTopic (TOPIC_Urshak, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Urshak, LOG_RUNNING);
-	B_LogEntry (TOPIC_Urshak,"Našel jsem svého starého skøetího pøítele Ur-Shaka."); 
+	B_LogEntry (TOPIC_Urshak,"NaÅ¡el jsem svÃ©ho starÃ©ho skÅ™etÃ­ho pÅ™Ã­tele Ur-Shaka."); 
 
 	Info_ClearChoices	(DIA_Urshak_HALLO);
-	Info_AddChoice	(DIA_Urshak_HALLO, "Co tady dìláš?", DIA_Urshak_HALLO_freund );
-	Info_AddChoice	(DIA_Urshak_HALLO, "Mluvící skøet?", DIA_Urshak_HALLO_wer );
+	Info_AddChoice	(DIA_Urshak_HALLO, "Co tady dÄ›lÃ¡Å¡?", DIA_Urshak_HALLO_freund );
+	Info_AddChoice	(DIA_Urshak_HALLO, "MluvÃ­cÃ­ skÅ™et?", DIA_Urshak_HALLO_wer );
 };
 func void DIA_Urshak_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //Mluvící skøet?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //Ty zapomenout na Ur-Shak? To dìlat smutek.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //Ur-Shak pomoct pøítel mnoho dní pøed tím, ne ULU-MULU umonit jít do moje vesnice. Skøeti si váit pøátel a pøítel nezemøít rukou skøeta.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Pøítel pak jí do podzemní skøetí chrám a zahnat zlı démon. Pøed mnoho dnù. Ty nepamatovat?
+	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //MluvÃ­cÃ­ skÅ™et?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //Ty zapomenout na Ur-Shak? To dÄ›lat smutek.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //Ur-Shak pomoct pÅ™Ã­tel mnoho dnÃ­ pÅ™ed tÃ­m, neÅ¾ ULU-MULU umoÅ¾nit jÃ­t do moje vesnice. SkÅ™eti si vÃ¡Å¾it pÅ™Ã¡tel a pÅ™Ã­tel nezemÅ™Ã­t rukou skÅ™eta.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //PÅ™Ã­tel pak jÃ­ do podzemnÃ­ skÅ™etÃ­ chrÃ¡m a zahnat zlÃ½ dÃ©mon. PÅ™ed mnoho dnÅ¯. Ty nepamatovat?
 
 };
 
 func void DIA_Urshak_HALLO_freund ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //To sis teda vybral èas k setkání. Málem jsem tì zabil. Co tady dìláš?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ur-Shak dávat pozor na zemi a vidìt, co se stát zemi a jeho lidem.
+	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //To sis teda vybral Äas k setkÃ¡nÃ­. MÃ¡lem jsem tÄ› zabil. Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ur-Shak dÃ¡vat pozor na zemi a vidÄ›t, co se stÃ¡t zemi a jeho lidem.
 	Info_ClearChoices	(DIA_Urshak_HALLO);
 };
 
@@ -87,7 +87,7 @@ instance DIA_Urshak_WASMACHENORKS		(C_INFO)
 	condition	 = 	DIA_Urshak_WASMACHENORKS_Condition;
 	information	 = 	DIA_Urshak_WASMACHENORKS_Info;
 
-	description	 = 	"Proè skøeti napadli lidi?";
+	description	 = 	"ProÄ skÅ™eti napadli lidi?";
 };
 
 func int DIA_Urshak_WASMACHENORKS_Condition ()
@@ -101,11 +101,11 @@ func int DIA_Urshak_WASMACHENORKS_Condition ()
 
 func void DIA_Urshak_WASMACHENORKS_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //Proè skøeti napadli lidi?
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //Ur-Shak vdycky øíkat skøetímu lidu, lidé ne zlí a mnoho dobrıch pøátel mezi nima.
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Ale šaman neposlouchat Ur-Shak. Ur-Shak poøád u svého lidu v nemilost.
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_03"); //Tak Ur-Shak ne slyšet moc o velkı plán proti lidem.
-	B_LogEntry (TOPIC_Urshak,"Ještì stále nepøimìl svùj lid, aby mu naslouchal. Poøád zùstává vyhnancem."); 
+	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //ProÄ skÅ™eti napadli lidi?
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //Ur-Shak vÅ¾dycky Å™Ã­kat skÅ™etÃ­mu lidu, lidÃ© ne zlÃ­ a mnoho dobrÃ½ch pÅ™Ã¡tel mezi nima.
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Ale Å¡aman neposlouchat Ur-Shak. Ur-Shak poÅ™Ã¡d u svÃ©ho lidu v nemilost.
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_03"); //Tak Ur-Shak ne slyÅ¡et moc o velkÃ½ plÃ¡n proti lidem.
+	B_LogEntry (TOPIC_Urshak,"JeÅ¡tÄ› stÃ¡le nepÅ™imÄ›l svÅ¯j lid, aby mu naslouchal. PoÅ™Ã¡d zÅ¯stÃ¡vÃ¡ vyhnancem."); 
 };
 
 
@@ -119,7 +119,7 @@ instance DIA_Urshak_SOVIELE		(C_INFO)
 	condition	 = 	DIA_Urshak_SOVIELE_Condition;
 	information	 = 	DIA_Urshak_SOVIELE_Info;
 
-	description	 = 	"Proè je vás tu najednou tolik?";
+	description	 = 	"ProÄ je vÃ¡s tu najednou tolik?";
 };
 
 func int DIA_Urshak_SOVIELE_Condition ()
@@ -133,8 +133,8 @@ func int DIA_Urshak_SOVIELE_Condition ()
 
 func void DIA_Urshak_SOVIELE_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //Jak to, e je vás tu najednou tolik?
-	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //Skøeti pøijít z hor, ale další pøiplout na lodích a postavit velká palisáda.
+	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //Jak to, Å¾e je vÃ¡s tu najednou tolik?
+	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //SkÅ™eti pÅ™ijÃ­t z hor, ale dalÅ¡Ã­ pÅ™iplout na lodÃ­ch a postavit velkÃ¡ palisÃ¡da.
 };
 
 
@@ -148,7 +148,7 @@ instance DIA_Urshak_ZAUN		(C_INFO)
 	condition	 = 	DIA_Urshak_ZAUN_Condition;
 	information	 = 	DIA_Urshak_ZAUN_Info;
 
-	description	 = 	"Co je ukryto za to dlouhou zdí na vıchodì?";
+	description	 = 	"Co je ukryto za to dlouhou zdÃ­ na vÃ½chodÄ›?";
 };
 
 func int DIA_Urshak_ZAUN_Condition ()
@@ -162,9 +162,9 @@ func int DIA_Urshak_ZAUN_Condition ()
 
 func void DIA_Urshak_ZAUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_ZAUN_15_00"); //Co je ukryto za tou dlouhou zdí na vıchodì?
-	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_01"); //Skøeti vdycky, kdy válka, stavìt velká palisáda a tábor.
-	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_02"); //Palisáda dobrá pro válka. Ukrıvá síla vojska a chrání skøety.
+	AI_Output			(other, self, "DIA_Urshak_ZAUN_15_00"); //Co je ukryto za tou dlouhou zdÃ­ na vÃ½chodÄ›?
+	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_01"); //SkÅ™eti vÅ¾dycky, kdyÅ¾ vÃ¡lka, stavÄ›t velkÃ¡ palisÃ¡da a tÃ¡bor.
+	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_02"); //PalisÃ¡da dobrÃ¡ pro vÃ¡lka. UkrÃ½vÃ¡ sÃ­la vojska a chrÃ¡nÃ­ skÅ™ety.
 };
 
 
@@ -179,7 +179,7 @@ instance DIA_Urshak_WASHASTDUVOR		(C_INFO)
 	condition	 = 	DIA_Urshak_WASHASTDUVOR_Condition;
 	information	 = 	DIA_Urshak_WASHASTDUVOR_Info;
 
-	description	 = 	"Co budeš dìlat teï?";
+	description	 = 	"Co budeÅ¡ dÄ›lat teÄ?";
 };
 
 func int DIA_Urshak_WASHASTDUVOR_Condition ()
@@ -193,32 +193,32 @@ func int DIA_Urshak_WASHASTDUVOR_Condition ()
 
 func void DIA_Urshak_WASHASTDUVOR_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Co budeš dìlat teï?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //Ur-Shak èekat, a skøetí zvìd vzít Ur-Shak k Hosh-Pak.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Co budeÅ¡ dÄ›lat teÄ?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //Ur-Shak Äekat, aÅ¾ skÅ™etÃ­ zvÄ›d vzÃ­t Ur-Shak k Hosh-Pak.
 	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_02"); //Kdo je Hosh-Pak?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //Moc mocnı šaman. Mít velkı vliv na váleèníky a dìlat pro skøety velké plány.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //Moc mocnÃ½ Å¡aman. MÃ­t velkÃ½ vliv na vÃ¡leÄnÃ­ky a dÄ›lat pro skÅ™ety velkÃ© plÃ¡ny.
 
-	B_LogEntry (TOPIC_Urshak,"Ur-Shak má v plánu setkat se se skøetím šamanem Hosh-Pakem a pøesvìdèit ho, aby ho pøijal do rady mezi ostatní šamany."); 
+	B_LogEntry (TOPIC_Urshak,"Ur-Shak mÃ¡ v plÃ¡nu setkat se se skÅ™etÃ­m Å¡amanem Hosh-Pakem a pÅ™esvÄ›dÄit ho, aby ho pÅ™ijal do rady mezi ostatnÃ­ Å¡amany."); 
 
 	Info_ClearChoices	(DIA_Urshak_WASHASTDUVOR);
 
 	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, DIALOG_BACK, DIA_Urshak_WASHASTDUVOR_weiter );
 	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Kde najdu toho Hosh-Paka?", DIA_Urshak_WASHASTDUVOR_ );
-	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Tak proè teda za ním nejdeš?", DIA_Urshak_WASHASTDUVOR_hoshpak );
+	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Tak proÄ teda za nÃ­m nejdeÅ¡?", DIA_Urshak_WASHASTDUVOR_hoshpak );
 };
 func void DIA_Urshak_WASHASTDUVOR_hoshpak ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //Tak proè teda za ním nejdeš?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //Ur-Shak zkoušet znovu a znovu získat èest a staré místo v šamaní rada.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //Ale a do teï, Hosh-Pak neposlouchat Ur-Shak. Skøeti zabít Ur-Shak, kdy jeho vidìt bez zvìd. Ur-Shak muset mluvit s Hosh-Pak.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //Moná dneska štìstí.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //Tak proÄ teda za nÃ­m nejdeÅ¡?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //Ur-Shak zkouÅ¡et znovu a znovu zÃ­skat Äest a starÃ© mÃ­sto v Å¡amanÃ­ rada.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //Ale aÅ¾ do teÄ, Hosh-Pak neposlouchat Ur-Shak. SkÅ™eti zabÃ­t Ur-Shak, kdyÅ¾ jeho vidÄ›t bez zvÄ›d. Ur-Shak muset mluvit s Hosh-Pak.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //MoÅ¾nÃ¡ dneska Å¡tÄ›stÃ­.
 	
 };
 
 func void DIA_Urshak_WASHASTDUVOR_ ()
 {
 	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_Urshak_15_00"); //Kde najdu toho Hosh-Paka?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //Utáboøit se, kde vidìt skøetí bojovníky pøes les u velká sopka. Hosh-Pak tak moct ovládat váleèníky.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //UtÃ¡boÅ™it se, kde vidÄ›t skÅ™etÃ­ bojovnÃ­ky pÅ™es les u velkÃ¡ sopka. Hosh-Pak tak moct ovlÃ¡dat vÃ¡leÄnÃ­ky.
 
 };
 
@@ -239,7 +239,7 @@ instance DIA_Urshak_HOSHPAKDEAD		(C_INFO)
 	condition	 = 	DIA_Urshak_HOSHPAKDEAD_Condition;
 	information	 = 	DIA_Urshak_HOSHPAKDEAD_Info;
 
-	description	 = 	"Hosh-Pak je mrtvı.";
+	description	 = 	"Hosh-Pak je mrtvÃ½.";
 };
 
 func int DIA_Urshak_HOSHPAKDEAD_Condition ()
@@ -254,15 +254,15 @@ func int DIA_Urshak_HOSHPAKDEAD_Condition ()
 
 func void DIA_Urshak_HOSHPAKDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Hosh-Pak je mrtvı.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //Hosh-Pak mrtvı? RUSHTASOK!
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //Mé srdce tìké jako kámen. Ur-Shak nikdy nezapomenout velkı skøet, co udìlat Ur-Shak šaman.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //Rozumím, byl tvım uèitelem.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //Ur-Shak teï muset zbavit zármutku, muset dát Hosh-Pak poslední obøad. Ur-Shak muset jít.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //Pøítel radìj hned projít prùsmyk. Tady moc nebezpeènı.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //Ur-Shak smutná, kdy pøítel èlovìk umøít.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Hosh-Pak je mrtvÃ½.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //Hosh-Pak mrtvÃ½? RUSHTASOK!
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //MÃ© srdce tÄ›Å¾kÃ© jako kÃ¡men. Ur-Shak nikdy nezapomenout velkÃ½ skÅ™et, co udÄ›lat Ur-Shak Å¡aman.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //RozumÃ­m, byl tvÃ½m uÄitelem.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //Ur-Shak teÄ muset zbavit zÃ¡rmutku, muset dÃ¡t Hosh-Pak poslednÃ­ obÅ™ad. Ur-Shak muset jÃ­t.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //PÅ™Ã­tel radÄ›j hned projÃ­t prÅ¯smyk. Tady moc nebezpeÄnÃ½.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //Ur-Shak smutnÃ¡, kdyÅ¾ pÅ™Ã­tel ÄlovÄ›k umÅ™Ã­t.
 
-	B_LogEntry (TOPIC_Urshak,"Hosh-Pak je mrtev. Mùj skøetí pøítel nyní míøí k jeho stanu a oplakává smrt svého mentora. Mìl bych ho nechat jít."); 
+	B_LogEntry (TOPIC_Urshak,"Hosh-Pak je mrtev. MÅ¯j skÅ™etÃ­ pÅ™Ã­tel nynÃ­ mÃ­Å™Ã­ k jeho stanu a oplakÃ¡vÃ¡ smrt svÃ©ho mentora. MÄ›l bych ho nechat jÃ­t."); 
 
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);
@@ -297,7 +297,7 @@ func int DIA_Urshak_GEH_Condition ()
 
 func void DIA_Urshak_GEH_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //Pøítel radìj hned projít prùsmyk.
+	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //PÅ™Ã­tel radÄ›j hned projÃ­t prÅ¯smyk.
 	Npc_SetRefuseTalk (self,10);
 	AI_StopProcessInfos (self);
 };
@@ -326,16 +326,16 @@ func int DIA_Urshak_HOSHPAKRACHE_Condition ()
 
 func void DIA_Urshak_HOSHPAKRACHE_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //(agresivnì) KHROTOK ! Já zjistit, e ty tady, kdy Hosh-Pak mrtvı. Ty udìlal velká chyba, cizinec.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //Já vìdìt, ty budeš tady. Ty hrál na mì habaïùra.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //Tvoje pozice je dùleitìjší, ne jsi ochoten si pøipustit. Teï však nejsi nièím ne nástrojem zla.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Cizinec má pravda. Ur-Shaka teï naplòovat jen nenávist a chu po pomsta.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //Ur-Shak vidí velká chyba, e vìøit cizinci. Ur-Shak litovat, e nazıvat èlovìka pøítel a pomáhat mu, ne zabíjet.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Cizinec nakonec opustit údolí a projít prùsmyk. Ur-Shak nezabít cizinec teï. Èest šamana Ur-Shak velet nezabíjet.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //Pøíštì my potkat, my nepøátelé. Bude líp, ty teï odejít.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //(agresivnÄ›) KHROTOK ! JÃ¡ zjistit, Å¾e ty tady, kdyÅ¾ Hosh-Pak mrtvÃ½. Ty udÄ›lal velkÃ¡ chyba, cizinec.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //JÃ¡ vÄ›dÄ›t, ty budeÅ¡ tady. Ty hrÃ¡l na mÄ› habaÄÅ¯ra.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //Tvoje pozice je dÅ¯leÅ¾itÄ›jÅ¡Ã­, neÅ¾ jsi ochoten si pÅ™ipustit. TeÄ vÅ¡ak nejsi niÄÃ­m neÅ¾ nÃ¡strojem zla.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Cizinec mÃ¡ pravda. Ur-Shaka teÄ naplÅˆovat jen nenÃ¡vist a chuÅ¥ po pomsta.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //Ur-Shak vidÃ­ velkÃ¡ chyba, Å¾e vÄ›Å™it cizinci. Ur-Shak litovat, Å¾e nazÃ½vat ÄlovÄ›ka pÅ™Ã­tel a pomÃ¡hat mu, ne zabÃ­jet.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Cizinec nakonec opustit ÃºdolÃ­ a projÃ­t prÅ¯smyk. Ur-Shak nezabÃ­t cizinec teÄ. ÄŒest Å¡amana Ur-Shak velet nezabÃ­jet.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //PÅ™Ã­Å¡tÄ› my potkat, my nepÅ™Ã¡telÃ©. Bude lÃ­p, ty teÄ odejÃ­t.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
-	B_LogEntry (TOPIC_Urshak,"Ur-Shak byl pøijat zpátky do rady skøetích šamanù a ocitl se tedy na stranì nepøítele. Radši bych se mu mìl vyhıbat, dokud se mi nepodaøí tu záleitost se skøety nìjak urovnat. To by ho mìlo uklidnit."); 
+	B_LogEntry (TOPIC_Urshak,"Ur-Shak byl pÅ™ijat zpÃ¡tky do rady skÅ™etÃ­ch Å¡amanÅ¯ a ocitl se tedy na stranÄ› nepÅ™Ã­tele. RadÅ¡i bych se mu mÄ›l vyhÃ½bat, dokud se mi nepodaÅ™Ã­ tu zÃ¡leÅ¾itost se skÅ™ety nÄ›jak urovnat. To by ho mÄ›lo uklidnit."); 
 	B_GivePlayerXP (XP_UrshakBecomesShaman);
 };
 
@@ -363,7 +363,7 @@ func int DIA_Urshak_KEINEWAHL_Condition ()
 
 func void DIA_Urshak_KEINEWAHL_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_KEINEWAHL_18_00"); //Ty jít. Já nemluvit s cizinci.
+	AI_Output			(self, other, "DIA_Urshak_KEINEWAHL_18_00"); //Ty jÃ­t. JÃ¡ nemluvit s cizinci.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
 };

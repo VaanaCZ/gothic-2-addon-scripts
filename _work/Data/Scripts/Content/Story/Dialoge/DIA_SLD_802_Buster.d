@@ -42,7 +42,7 @@ INSTANCE DIA_Buster_Hello (C_INFO)
 
 FUNC INT DIA_Buster_Hello_Condition()
 {
-	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal gepr¸gelt
+	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal gepr√ºgelt
 	&& ((hero.guild != GIL_SLD) && (hero.guild != GIL_DJG))
 	{
 		return TRUE;
@@ -51,44 +51,44 @@ FUNC INT DIA_Buster_Hello_Condition()
  
 FUNC VOID DIA_Buster_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Buster_Hello_13_00");	//Kohopak to tady m·me? Nezn·m tÏ odnÏkud?
+	AI_Output (self ,other,"DIA_Buster_Hello_13_00");	//Kohopak to tady m√°me? Nezn√°m tƒõ odnƒõkud?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Kdyû myslÌö. Jsem na cestÏ za statk·¯em." 	,DIA_Buster_Hello_GoingToFarm);
-	Info_AddChoice		(DIA_Buster_Hello, "Kdo se pt·?"									,DIA_Buster_Hello_WhoAreYou);
+	Info_AddChoice		(DIA_Buster_Hello, "Kdy≈æ mysl√≠≈°. Jsem na cestƒõ za statk√°≈ôem." 	,DIA_Buster_Hello_GoingToFarm);
+	Info_AddChoice		(DIA_Buster_Hello, "Kdo se pt√°?"									,DIA_Buster_Hello_WhoAreYou);
 };
 
 func void DIA_Buster_Hello_WhoAreYou()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_WhoAreYou_15_00"); //Kdo se pt·?
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_01"); //Jsem Buster, jeden z Leeov˝ch ûoldnÈ¯˘!
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_02"); //A TY bys ke mnÏ mÏl b˝t troöku zdvo¯ilejöÌ, nebo toho budeö litovat!
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_03"); //Dobr·, co tady chceö?
+	AI_Output (other,self ,"DIA_Buster_Hello_WhoAreYou_15_00"); //Kdo se pt√°?
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_01"); //Jsem Buster, jeden z Leeov√Ωch ≈æoldn√©≈ô≈Ø!
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_02"); //A TY bys ke mnƒõ mƒõl b√Ωt tro≈°ku zdvo≈ôilej≈°√≠, nebo toho bude≈° litovat!
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_03"); //Dobr√°, co tady chce≈°?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Do toho ti nic nenÌ."								,DIA_Buster_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Buster_Hello, "Leeho zn·m!"											,DIA_Buster_Hello_IKnowLee);
-	Info_AddChoice		(DIA_Buster_Hello, "Jsem pouh˝m poutnÌkem, kter˝ by si r·d promluvil se statk·¯em." 	,DIA_Buster_Hello_GoingToFarm);
+	Info_AddChoice		(DIA_Buster_Hello, "Do toho ti nic nen√≠."								,DIA_Buster_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Buster_Hello, "Leeho zn√°m!"											,DIA_Buster_Hello_IKnowLee);
+	Info_AddChoice		(DIA_Buster_Hello, "Jsem pouh√Ωm poutn√≠kem, kter√Ω by si r√°d promluvil se statk√°≈ôem." 	,DIA_Buster_Hello_GoingToFarm);
 };
 
 func void DIA_Buster_Hello_IKnowLee()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_IKnowLee_15_00"); //Leeho zn·m!
-	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_01"); //Leeho zn· kaûd˝! To nic neznamen·, k·mo. Zrovna teÔ mluvÌö SE MNOU!
-	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_02"); //Takûe, kam m·ö namÌ¯eno?
+	AI_Output (other,self ,"DIA_Buster_Hello_IKnowLee_15_00"); //Leeho zn√°m!
+	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_01"); //Leeho zn√° ka≈æd√Ω! To nic neznamen√°, k√°mo. Zrovna teƒè mluv√≠≈° SE MNOU!
+	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_02"); //Tak≈æe, kam m√°≈° nam√≠≈ôeno?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Do toho ti nic nenÌ."								,DIA_Buster_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Buster_Hello, "Jsem pouh˝m poutnÌkem, kter˝ by si r·d promluvil s hostinsk˝m." 	,DIA_Buster_Hello_GoingToFarm);
+	Info_AddChoice		(DIA_Buster_Hello, "Do toho ti nic nen√≠."								,DIA_Buster_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Buster_Hello, "Jsem pouh√Ωm poutn√≠kem, kter√Ω by si r√°d promluvil s hostinsk√Ωm." 	,DIA_Buster_Hello_GoingToFarm);
 };
 
 func void DIA_Buster_Hello_NotYourBusiness()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_NotYourBusiness_15_00"); //Do toho ti nic nenÌ.
-	AI_Output (self ,other,"DIA_Buster_Hello_NotYourBusiness_13_01"); //Takhle se mnou nikdo mluvit nebude, ty Ëerve! ÿekl bych, ûe je Ëas na po¯·dnou nakl·daËku.
+	AI_Output (other,self ,"DIA_Buster_Hello_NotYourBusiness_15_00"); //Do toho ti nic nen√≠.
+	AI_Output (self ,other,"DIA_Buster_Hello_NotYourBusiness_13_01"); //Takhle se mnou nikdo mluvit nebude, ty ƒçerve! ≈òekl bych, ≈æe je ƒças na po≈ô√°dnou nakl√°daƒçku.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -96,48 +96,48 @@ func void DIA_Buster_Hello_NotYourBusiness()
 
 func void DIA_Buster_Hello_GoingToFarm()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_GoingToFarm_15_00"); //Kdyû myslÌö. Jsem na cestÏ za statk·¯em.
-	AI_Output (self ,other,"DIA_Buster_Hello_GoingToFarm_13_01"); //V·ûnÏ... Hm - nep¯ijdeö mi nÏjak zvl·öù nebezpeËn˝.
+	AI_Output (other,self ,"DIA_Buster_Hello_GoingToFarm_15_00"); //Kdy≈æ mysl√≠≈°. Jsem na cestƒõ za statk√°≈ôem.
+	AI_Output (self ,other,"DIA_Buster_Hello_GoingToFarm_13_01"); //V√°≈ænƒõ... Hm - nep≈ôijde≈° mi nƒõjak zvl√°≈°≈• nebezpeƒçn√Ω.
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Chceö to zjistit?"								,DIA_Buster_Hello_WannaTestIt);
-	Info_AddChoice		(DIA_Buster_Hello, "Jednou nebo dvakr·t jsem zabil nÏjakou p¯Ìöeru."	,DIA_Buster_Hello_SlewBeasts);
-	Info_AddChoice		(DIA_Buster_Hello, "To m·ö pravdu." 									,DIA_Buster_Hello_ImNoDanger);
+	Info_AddChoice		(DIA_Buster_Hello, "Chce≈° to zjistit?"								,DIA_Buster_Hello_WannaTestIt);
+	Info_AddChoice		(DIA_Buster_Hello, "Jednou nebo dvakr√°t jsem zabil nƒõjakou p≈ô√≠≈°eru."	,DIA_Buster_Hello_SlewBeasts);
+	Info_AddChoice		(DIA_Buster_Hello, "To m√°≈° pravdu." 									,DIA_Buster_Hello_ImNoDanger);
 };
 
 func void DIA_Buster_Hello_ImNoDanger()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_ImNoDanger_15_00"); //To m·ö pravdu.
-	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_01"); //(samolibÏ) Jo, za ty roky se nauËÌö si takov˝ch vÏcÌ vöÌmat, k·mo.
-	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_02"); //V jednom kuse tady bojujeme se sk¯etama. Nebo str·ûema z mÏsta. Teda, jsou to pÏknÏ neodbytn˝ prevÌti, to teda jo. (zasmÏje se)
+	AI_Output (other,self ,"DIA_Buster_Hello_ImNoDanger_15_00"); //To m√°≈° pravdu.
+	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_01"); //(samolibƒõ) Jo, za ty roky se nauƒç√≠≈° si takov√Ωch vƒõc√≠ v≈°√≠mat, k√°mo.
+	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_02"); //V jednom kuse tady bojujeme se sk≈ôetama. Nebo str√°≈æema z mƒõsta. Teda, jsou to pƒõknƒõ neodbytn√Ω prev√≠ti, to teda jo. (zasmƒõje se)
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "MyslÌö SKUTE»N… sk¯ety? Ty velkÈ potvory?"						,DIA_Buster_Hello_RealOrcs);
-	Info_AddChoice		(DIA_Buster_Hello, "Takûe?"												,DIA_Buster_Hello_SoWhat);
-	Info_AddChoice		(DIA_Buster_Hello, "P˘sobivÈ." 										,DIA_Buster_Hello_Impressive);
+	Info_AddChoice		(DIA_Buster_Hello, "Mysl√≠≈° SKUTEƒåN√â sk≈ôety? Ty velk√© potvory?"						,DIA_Buster_Hello_RealOrcs);
+	Info_AddChoice		(DIA_Buster_Hello, "Tak≈æe?"												,DIA_Buster_Hello_SoWhat);
+	Info_AddChoice		(DIA_Buster_Hello, "P≈Øsobiv√©." 										,DIA_Buster_Hello_Impressive);
 };
 
 func void DIA_Buster_Hello_SlewBeasts()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_SlewBeasts_15_00"); //Jednou nebo dvakr·t jsem zabil nÏjakou p¯Ìöeru.
-	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_01"); //Ha! (zasmÏje se) NejspÌö jsi v poli rozöl·pnul p·r brouk˘ a vyhnal nÏkolik krys z jejich nor.
-	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_02"); //Tady n·m jdou po krku sk¯eti! Jo, a ta mizern· mÏstsk· str·û. (v˝smÏönÏ se zasmÏje)
+	AI_Output (other,self ,"DIA_Buster_Hello_SlewBeasts_15_00"); //Jednou nebo dvakr√°t jsem zabil nƒõjakou p≈ô√≠≈°eru.
+	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_01"); //Ha! (zasmƒõje se) Nejsp√≠≈° jsi v poli roz≈°l√°pnul p√°r brouk≈Ø a vyhnal nƒõkolik krys z jejich nor.
+	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_02"); //Tady n√°m jdou po krku sk≈ôeti! Jo, a ta mizern√° mƒõstsk√° str√°≈æ. (v√Ωsmƒõ≈°nƒõ se zasmƒõje)
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "MyslÌö SKUTE»N… sk¯ety? Ty velkÈ potvory?"						,DIA_Buster_Hello_RealOrcs);
-	Info_AddChoice		(DIA_Buster_Hello, "Takûe?"												,DIA_Buster_Hello_SoWhat);
-	Info_AddChoice		(DIA_Buster_Hello, "P˘sobivÈ." 										,DIA_Buster_Hello_Impressive);
+	Info_AddChoice		(DIA_Buster_Hello, "Mysl√≠≈° SKUTEƒåN√â sk≈ôety? Ty velk√© potvory?"						,DIA_Buster_Hello_RealOrcs);
+	Info_AddChoice		(DIA_Buster_Hello, "Tak≈æe?"												,DIA_Buster_Hello_SoWhat);
+	Info_AddChoice		(DIA_Buster_Hello, "P≈Øsobiv√©." 										,DIA_Buster_Hello_Impressive);
 };
 
 func void DIA_Buster_Hello_WannaTestIt()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_00"); //Chceö se p¯esvÏdËit
-	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_01"); //BoûÌËku! Vybral jsem si öpatnÈho otlouk·nka, co?
-	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_02"); //Dalo by se to tak ¯Ìct.
-	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_03"); //Tak pojÔ, ukaû mi, co v tobÏ je.
+	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_00"); //Chce≈° se p≈ôesvƒõdƒçit
+	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_01"); //Bo≈æ√≠ƒçku! Vybral jsem si ≈°patn√©ho otlouk√°nka, co?
+	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_02"); //Dalo by se to tak ≈ô√≠ct.
+	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_03"); //Tak pojƒè, uka≈æ mi, co v tobƒõ je.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -145,29 +145,29 @@ func void DIA_Buster_Hello_WannaTestIt()
 
 func void DIA_Buster_Hello_Impressive()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_Impressive_15_00"); //P˘sobivÈ.
-	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_01"); //(zasmÏje se) To je naöe ûivnost, chlapËe! Dokonce si dÏl·me vlastnÌ zbranÏ a brnÏnÌ!
-	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_02"); //VysmÌv·me se smrti den co den. Ale o nÏËem takovÈm nem· vesnick˝ balÌk jako ty ani zd·nÌ.
+	AI_Output (other,self ,"DIA_Buster_Hello_Impressive_15_00"); //P≈Øsobiv√©.
+	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_01"); //(zasmƒõje se) To je na≈°e ≈æivnost, chlapƒçe! Dokonce si dƒõl√°me vlastn√≠ zbranƒõ a brnƒõn√≠!
+	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_02"); //Vysm√≠v√°me se smrti den co den. Ale o nƒõƒçem takov√©m nem√° vesnick√Ω bal√≠k jako ty ani zd√°n√≠.
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
-	Info_AddChoice		(DIA_Buster_Hello, "Asi ti budu muset uk·zat, jak velkÈ ponÏtÌ o tom m·m!"	,DIA_Buster_Hello_LetMeShowYou);
-	Info_AddChoice		(DIA_Buster_Hello, "Kdyû to ¯Ìk·ö..."									,DIA_Buster_Hello_IfYouSaySo);
+	Info_AddChoice		(DIA_Buster_Hello, "Asi ti budu muset uk√°zat, jak velk√© ponƒõt√≠ o tom m√°m!"	,DIA_Buster_Hello_LetMeShowYou);
+	Info_AddChoice		(DIA_Buster_Hello, "Kdy≈æ to ≈ô√≠k√°≈°..."									,DIA_Buster_Hello_IfYouSaySo);
 };
 
 func void DIA_Buster_Hello_IfYouSaySo()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_IfYouSaySo_15_00"); //Kdyû to ¯Ìk·ö...
-	AI_Output (self ,other,"DIA_Buster_Hello_IfYouSaySo_13_01"); //(se znudÏn˝m zavrËenÌm) Mazej, straöpytle!
+	AI_Output (other,self ,"DIA_Buster_Hello_IfYouSaySo_15_00"); //Kdy≈æ to ≈ô√≠k√°≈°...
+	AI_Output (self ,other,"DIA_Buster_Hello_IfYouSaySo_13_01"); //(se znudƒõn√Ωm zavrƒçen√≠m) Mazej, stra≈°pytle!
 
 	AI_StopProcessInfos	(self);
 };
 
 func void DIA_Buster_Hello_LetMeShowYou()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_LetMeShowYou_15_00"); //Asi ti budu muset uk·zat, jak velkÈ ponÏtÌ o tom m·m!
-	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_01"); //To m· b˝t jednomuûnÈ rolnickÈ povst·nÌ, nebo co?
-	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_02"); //Tak dobr·, ukaû mi, co v tobÏ je.
+	AI_Output (other,self ,"DIA_Buster_Hello_LetMeShowYou_15_00"); //Asi ti budu muset uk√°zat, jak velk√© ponƒõt√≠ o tom m√°m!
+	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_01"); //To m√° b√Ωt jednomu≈æn√© rolnick√© povst√°n√≠, nebo co?
+	AI_Output (self ,other,"DIA_Buster_Hello_LetMeShowYou_13_02"); //Tak dobr√°, uka≈æ mi, co v tobƒõ je.
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -175,34 +175,34 @@ func void DIA_Buster_Hello_LetMeShowYou()
 
 func void DIA_Buster_Hello_SoWhat()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_SoWhat_15_00"); //Takûe?
-	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_01"); //(odfrkne si) Jako bys vÏdÏl, o Ëem to tady mluvÌm. MyslÌö si, b˘hvÌjak nejsi siln˝, co?
-	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_02"); //(rozzlobenÏ) Moûn· je naËase, aby ti nÏkdo uötÏd¯il lekci!
+	AI_Output (other,self ,"DIA_Buster_Hello_SoWhat_15_00"); //Tak≈æe?
+	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_01"); //(odfrkne si) Jako bys vƒõdƒõl, o ƒçem to tady mluv√≠m. Mysl√≠≈° si, b≈Øhv√≠jak nejsi siln√Ω, co?
+	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_02"); //(rozzlobenƒõ) Mo≈æn√° je naƒçase, aby ti nƒõkdo u≈°tƒõd≈ôil lekci!
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
 	Info_AddChoice		(DIA_Buster_Hello, "Kdykoliv!"						,DIA_Buster_Hello_Whenever);
-	Info_AddChoice		(DIA_Buster_Hello, "DÏl·m si srandu..."			,DIA_Buster_Hello_JustJoking);
+	Info_AddChoice		(DIA_Buster_Hello, "Dƒõl√°m si srandu..."			,DIA_Buster_Hello_JustJoking);
 };
 
 func void DIA_Buster_Hello_RealOrcs()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_00"); //MyslÌö SKUTE»N… sk¯ety? Ty velkÈ potvory?
-	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_01"); //(povzdychne si) J· jenom... PoËkat! Chceö si ze mÏ utahovat?
-	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_02"); //(s ˙smÏvem) To v˘bec ne.
-	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_03"); //Ty Ëerve! (neËekanÏ agresivnÏ) Ned·ö jinak, co?
-	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_04"); //Tak pojÔ a ukaû, co v tobÏ je, ty hrdino!
+	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_00"); //Mysl√≠≈° SKUTEƒåN√â sk≈ôety? Ty velk√© potvory?
+	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_01"); //(povzdychne si) J√° jenom... Poƒçkat! Chce≈° si ze mƒõ utahovat?
+	AI_Output (other,self ,"DIA_Buster_Hello_RealOrcs_15_02"); //(s √∫smƒõvem) To v≈Øbec ne.
+	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_03"); //Ty ƒçerve! (neƒçekanƒõ agresivnƒõ) Ned√°≈° jinak, co?
+	AI_Output (self ,other,"DIA_Buster_Hello_RealOrcs_13_04"); //Tak pojƒè a uka≈æ, co v tobƒõ je, ty hrdino!
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
 	Info_AddChoice		(DIA_Buster_Hello, "Kdykoliv!"						,DIA_Buster_Hello_Whenever);
-	Info_AddChoice		(DIA_Buster_Hello, "DÏl·m si srandu..."			,DIA_Buster_Hello_JustJoking);
+	Info_AddChoice		(DIA_Buster_Hello, "Dƒõl√°m si srandu..."			,DIA_Buster_Hello_JustJoking);
 };
 
 func void DIA_Buster_Hello_Whenever()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_Whenever_15_00"); //Kdykoliv!
-	AI_Output (self ,other,"DIA_Buster_Hello_Whenever_13_01"); //Tak pojÔ blÌû, k·mo!
+	AI_Output (self ,other,"DIA_Buster_Hello_Whenever_13_01"); //Tak pojƒè bl√≠≈æ, k√°mo!
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -210,8 +210,8 @@ func void DIA_Buster_Hello_Whenever()
 
 func void DIA_Buster_Hello_JustJoking()
 {
-	AI_Output (other,self ,"DIA_Buster_Hello_JustJoking_15_00"); //DÏl·m si srandu.
-	AI_Output (self ,other,"DIA_Buster_Hello_JustJoking_13_01"); //No jo, jasnÏ, zastrË dr·pky! Jdi mi z oËÌ!
+	AI_Output (other,self ,"DIA_Buster_Hello_JustJoking_15_00"); //Dƒõl√°m si srandu.
+	AI_Output (self ,other,"DIA_Buster_Hello_JustJoking_13_01"); //No jo, jasnƒõ, zastrƒç dr√°pky! Jdi mi z oƒç√≠!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -243,7 +243,7 @@ FUNC INT DIA_Buster_FightNone_Condition()
 
 func void DIA_Buster_FightNone_Info()
 {
-	AI_Output (self, other,"DIA_Buster_FightNone_13_00"); //Co chceö, straöpytle?
+	AI_Output (self, other,"DIA_Buster_FightNone_13_00"); //Co chce≈°, stra≈°pytle?
 };
 
 
@@ -258,7 +258,7 @@ INSTANCE DIA_Buster_Duell (C_INFO)
 	condition	= DIA_Buster_Duell_Condition;
 	information	= DIA_Buster_Duell_Info;
 	permanent	= TRUE;
-	description = "VyzÌv·m tÏ k souboji!";
+	description = "Vyz√≠v√°m tƒõ k souboji!";
 };                       
 
 FUNC INT DIA_Buster_Duell_Condition()
@@ -271,17 +271,17 @@ FUNC INT DIA_Buster_Duell_Condition()
  
 FUNC VOID DIA_Buster_Duell_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_Duell_15_00"); //VyzÌv·m tÏ k souboji!
+	AI_Output (other, self,"DIA_Buster_Duell_15_00"); //Vyz√≠v√°m tƒõ k souboji!
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_NONE)
 	{
-		AI_Output (self, other,"DIA_Buster_Duell_13_01"); //Ha, ha! Nechceö to nechat jen tak, co? Tak dobr· - pojÔ sem!
+		AI_Output (self, other,"DIA_Buster_Duell_13_01"); //Ha, ha! Nechce≈° to nechat jen tak, co? Tak dobr√° - pojƒè sem!
 	}
 	else //WON oder CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_Duell_13_02"); //Chceö to zkusit znovu? Otravo mizernej - dobr·, pojÔ sem!
+		AI_Output (self, other,"DIA_Buster_Duell_13_02"); //Chce≈° to zkusit znovu? Otravo mizernej - dobr√°, pojƒè sem!
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 		{
-			AI_Output (self, other,"DIA_Buster_Duell_13_03"); //Ale uû podruhÈ neutÌkej!
+			AI_Output (self, other,"DIA_Buster_Duell_13_03"); //Ale u≈æ podruh√© neut√≠kej!
 		};
 	};
 	
@@ -300,7 +300,7 @@ INSTANCE DIA_Buster_WannaJoin (C_INFO)
 	condition	= DIA_Buster_WannaJoin_Condition;
 	information	= DIA_Buster_WannaJoin_Info;
 	permanent	= TRUE;
-	description = "Chci se p¯idat k ûoldnÈ¯˘m!";
+	description = "Chci se p≈ôidat k ≈æoldn√©≈ô≈Øm!";
 };                       
 
 FUNC INT DIA_Buster_WannaJoin_Condition()
@@ -314,36 +314,36 @@ FUNC INT DIA_Buster_WannaJoin_Condition()
  
 FUNC VOID DIA_Buster_WannaJoin_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_WannaJoin_15_00"); //Chci se p¯idat k ûoldnÈ¯˘m!
+	AI_Output (other, self,"DIA_Buster_WannaJoin_15_00"); //Chci se p≈ôidat k ≈æoldn√©≈ô≈Øm!
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	|| (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 		{
-			AI_Output (self, other,"DIA_Buster_WannaJoin_13_01"); //Kaûd˝, kdo m· r·nu tvrdou jako ty, by tady nemÏl mÌt û·dnÈ problÈmy.
+			AI_Output (self, other,"DIA_Buster_WannaJoin_13_01"); //Ka≈æd√Ω, kdo m√° r√°nu tvrdou jako ty, by tady nemƒõl m√≠t ≈æ√°dn√© probl√©my.
 		}
 		else //FIGHT_WON
 		{
-			AI_Output (self, other,"DIA_Buster_WannaJoin_13_02"); //Nejsi zrovna nejlepöÌ bojovnÌk, ale odvaha ti rozhodnÏ nechybÌ.
+			AI_Output (self, other,"DIA_Buster_WannaJoin_13_02"); //Nejsi zrovna nejlep≈°√≠ bojovn√≠k, ale odvaha ti rozhodnƒõ nechyb√≠.
 		};
-		AI_Output (self, other,"DIA_Buster_WannaJoin_13_03"); //M˘j hlas tady moc neznamen·, protoûe jsem tady dlouho nebyl, ale aû se mÏ Lee zept·, budu hlasovat pro tebe.
+		AI_Output (self, other,"DIA_Buster_WannaJoin_13_03"); //M≈Øj hlas tady moc neznamen√°, proto≈æe jsem tady dlouho nebyl, ale a≈æ se mƒõ Lee zept√°, budu hlasovat pro tebe.
 		Buster_Duell = TRUE;
 		Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
-		B_LogEntry (TOPIC_SLDRespekt,"TeÔ, kdyû jsem Bustera porazil, uû nem· nic proti tomu, abych se p¯idal k ûold·k˘m.");
+		B_LogEntry (TOPIC_SLDRespekt,"Teƒè, kdy≈æ jsem Bustera porazil, u≈æ nem√° nic proti tomu, abych se p≈ôidal k ≈æold√°k≈Øm.");
 	}
 	else //FIGHT_NONE oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_WannaJoin_13_04"); //Ty? NevzpomÌn·m si, ûe by k ûoldnÈ¯˘m kdy p¯ijali nÏjakÈho sraba.
+		AI_Output (self, other,"DIA_Buster_WannaJoin_13_04"); //Ty? Nevzpom√≠n√°m si, ≈æe by k ≈æoldn√©≈ô≈Øm kdy p≈ôijali nƒõjak√©ho sraba.
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 		{
-			AI_Output (self, other,"DIA_Buster_WannaJoin_13_05"); //UtÌkat ze souboje - s tÌm se tady moc daleko nedostaneö!
+			AI_Output (self, other,"DIA_Buster_WannaJoin_13_05"); //Ut√≠kat ze souboje - s t√≠m se tady moc daleko nedostane≈°!
 		};
 	};
 };
 
 // ************************************************************
-// 		  				 Mehr ¸ber Sˆldner		
+// 		  				 Mehr √ºber S√∂ldner		
 // ************************************************************
 var int Buster_SentenzaTip;
 
@@ -354,7 +354,7 @@ INSTANCE DIA_Buster_OtherSld (C_INFO)
 	condition	= DIA_Buster_OtherSld_Condition;
 	information	= DIA_Buster_OtherSld_Info;
 	permanent	= FALSE;
-	description = "R·d bych se dozvÏdÏl nÏco o ûoldnÈ¯Ìch a zdejöÌm okolÌ.";
+	description = "R√°d bych se dozvƒõdƒõl nƒõco o ≈æoldn√©≈ô√≠ch a zdej≈°√≠m okol√≠.";
 };                       
 
 FUNC INT DIA_Buster_OtherSld_Condition()
@@ -367,15 +367,15 @@ FUNC INT DIA_Buster_OtherSld_Condition()
  
 FUNC VOID DIA_Buster_OtherSld_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_OtherSld_15_00"); //R·d bych se dozvÏdÏl nÏco o ûoldnÈ¯Ìch a zdejöÌm okolÌ.
-	AI_Output (self, other,"DIA_Buster_OtherSld_13_01"); //O okolÌ ti toho moc nepovÌm. Na to by ses mÏl radÏji zeptat farm·¯˘.
-	AI_Output (self, other,"DIA_Buster_OtherSld_13_02"); //A co se t˝Ëe n·s ûoldnÈ¯˘ - m·me jedno velice jednoduchÈ pravidlo: jestli dok·ûeö neustoupit, m˘ûeö mezi n·s.
+	AI_Output (other, self,"DIA_Buster_OtherSld_15_00"); //R√°d bych se dozvƒõdƒõl nƒõco o ≈æoldn√©≈ô√≠ch a zdej≈°√≠m okol√≠.
+	AI_Output (self, other,"DIA_Buster_OtherSld_13_01"); //O okol√≠ ti toho moc nepov√≠m. Na to by ses mƒõl radƒõji zeptat farm√°≈ô≈Ø.
+	AI_Output (self, other,"DIA_Buster_OtherSld_13_02"); //A co se t√Ωƒçe n√°s ≈æoldn√©≈ô≈Ø - m√°me jedno velice jednoduch√© pravidlo: jestli dok√°≈æe≈° neustoupit, m≈Ø≈æe≈° mezi n√°s.
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_03"); //MyslÌm, ûe jsi p¯esnÏ z toho materi·lu, kter˝ pot¯ebujeme.
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_04"); //Ale ne, aby ti to stouplo do hlavy, ûe jsi mÏl v naöem poslednÌm souboji ötÏstÌ.
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_05"); //Na farmÏ je spousta hoch˘, kte¯Ì jsou o chloupek lepöÌ neû j·.
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_06"); //Sentenza, nap¯Ìklad. HlÌd· vstup na farmu. Aù se dÏje, co se dÏje, s nÌm se do k¯Ìûku nepouötÏj.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_03"); //Mysl√≠m, ≈æe jsi p≈ôesnƒõ z toho materi√°lu, kter√Ω pot≈ôebujeme.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_04"); //Ale ne, aby ti to stouplo do hlavy, ≈æe jsi mƒõl v na≈°em posledn√≠m souboji ≈°tƒõst√≠.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_05"); //Na farmƒõ je spousta hoch≈Ø, kte≈ô√≠ jsou o chloupek lep≈°√≠ ne≈æ j√°.
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_06"); //Sentenza, nap≈ô√≠klad. Hl√≠d√° vstup na farmu. A≈• se dƒõje, co se dƒõje, s n√≠m se do k≈ô√≠≈æku nepou≈°tƒõj.
 		Buster_SentenzaTip = TRUE;
 	}
 	else if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
@@ -384,7 +384,7 @@ FUNC VOID DIA_Buster_OtherSld_Info()
 	}
 	else  //FIGHT_NONE oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_07"); //Ale proË to vlastnÏ ¯Ìk·m takovÈmu zbabÏlci!
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_07"); //Ale proƒç to vlastnƒõ ≈ô√≠k√°m takov√©mu zbabƒõlci!
 		AI_StopProcessInfos (self);		
 	};
 };
@@ -402,7 +402,7 @@ INSTANCE DIA_Buster_AboutSentenza (C_INFO)
 	condition	= DIA_Buster_AboutSentenza_Condition;
 	information	= DIA_Buster_AboutSentenza_Info;
 	permanent	= FALSE;
-	description = "Co s tÌm Sentenzou?";
+	description = "Co s t√≠m Sentenzou?";
 };                       
 
 FUNC INT DIA_Buster_AboutSentenza_Condition()
@@ -415,23 +415,23 @@ FUNC INT DIA_Buster_AboutSentenza_Condition()
  
 FUNC VOID DIA_Buster_AboutSentenza_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_00"); //Co s tÌm Sentenzou?
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_01"); //Aû p¯ijdeö na farmu, pokusÌ se z tebe vym·Ëknout nÏjakÈ penÌze - to dÏl· vöem nov·Ëk˘m.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_02"); //A b˝t na tvÈm mÌstÏ, tak bych zaplatil. S·m jsem to svÈho Ëasu udÏlal. DobrÈ bylo, ûe mi pak dal sv˘j hlas.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_03"); //ÿÌk·, ûe jedna laskavost vyûaduje druhou. Tenkr·t jsem tak p¯iöel o vöechny svÈ penÌze, ale nebylo to vlastnÏ aû tak moc. A nakonec jsem byl r·d, ûe to tak dopadlo.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_04"); //Ve chvÌli, kdyû jsem vidÏl, jak zml·til manÌka, kter˝ se rozhodl NEZAPLATIT.
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_05"); //DÌky za radu.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_06"); //R·do se stalo. M· pro tebe nÏjakou cenu?
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_00"); //Co s t√≠m Sentenzou?
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_01"); //A≈æ p≈ôijde≈° na farmu, pokus√≠ se z tebe vym√°ƒçknout nƒõjak√© pen√≠ze - to dƒõl√° v≈°em nov√°ƒçk≈Øm.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_02"); //A b√Ωt na tv√©m m√≠stƒõ, tak bych zaplatil. S√°m jsem to sv√©ho ƒçasu udƒõlal. Dobr√© bylo, ≈æe mi pak dal sv≈Øj hlas.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_03"); //≈ò√≠k√°, ≈æe jedna laskavost vy≈æaduje druhou. Tenkr√°t jsem tak p≈ôi≈°el o v≈°echny sv√© pen√≠ze, ale nebylo to vlastnƒõ a≈æ tak moc. A nakonec jsem byl r√°d, ≈æe to tak dopadlo.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_04"); //Ve chv√≠li, kdy≈æ jsem vidƒõl, jak zml√°til man√≠ka, kter√Ω se rozhodl NEZAPLATIT.
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_05"); //D√≠ky za radu.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_06"); //R√°do se stalo. M√° pro tebe nƒõjakou cenu?
 
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
 	Info_AddChoice (DIA_Buster_AboutSentenza, "Ne.", DIA_Buster_AboutSentenza_No);
-	Info_AddChoice (DIA_Buster_AboutSentenza, "Tady m·ö - 5 zlat˝ch.", DIA_Buster_AboutSentenza_Give);
+	Info_AddChoice (DIA_Buster_AboutSentenza, "Tady m√°≈° - 5 zlat√Ωch.", DIA_Buster_AboutSentenza_Give);
 };
 
 func void DIA_Buster_AboutSentenza_Give()
 {
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_Give_15_00"); //Tady m·ö - 5 zlat˝ch.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_Give_13_01"); //DÌky, chlape. Zd· se, ûe si veËer budu moc d·t p·r korbel˘. Na to nezapomenu.
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_Give_15_00"); //Tady m√°≈° - 5 zlat√Ωch.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_Give_13_01"); //D√≠ky, chlape. Zd√° se, ≈æe si veƒçer budu moc d√°t p√°r korbel≈Ø. Na to nezapomenu.
 	Buster_GoldZumBrennen = TRUE;
 	Buster_Bonus = 50;
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
@@ -455,7 +455,7 @@ INSTANCE DIA_Buster_LeeLeader (C_INFO)
 	condition	= DIA_Buster_LeeLeader_Condition;
 	information	= DIA_Buster_LeeLeader_Info;
 	permanent	= FALSE;
-	description = "Lee je öÈf ûoldnÈ¯˘, ne?";
+	description = "Lee je ≈°√©f ≈æoldn√©≈ô≈Ø, ne?";
 };                       
 
 FUNC INT DIA_Buster_LeeLeader_Condition()
@@ -468,12 +468,12 @@ FUNC INT DIA_Buster_LeeLeader_Condition()
  
 FUNC VOID DIA_Buster_LeeLeader_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_00"); //Lee je öÈf ûoldnÈ¯˘, ne?
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_01"); //P¯esnÏ tak - hej, uû jsem si vzpomnÏl, odkud tÏ zn·m! Tys byl takÈ v kolonii.
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_00"); //Lee je ≈°√©f ≈æoldn√©≈ô≈Ø, ne?
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_01"); //P≈ôesnƒõ tak - hej, u≈æ jsem si vzpomnƒõl, odkud tƒõ zn√°m! Tys byl tak√© v kolonii.
 	AI_Output (other, self,"DIA_Buster_LeeLeader_15_02"); //(s povzdychem) To jsem byl.
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_03"); //NevidÏl jsem tÏ, kdyû doölo k tomu velkÈmu t¯esku. Ani hodnou chvÌli p¯edtÌm.
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_04"); //MÏl jsem jinÈ starosti.
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_05"); //Tos o hodnÏ p¯iöel - co jsme byli v lochu, tak se dost vÏcÌ zmÏnilo.
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_03"); //Nevidƒõl jsem tƒõ, kdy≈æ do≈°lo k tomu velk√©mu t≈ôesku. Ani hodnou chv√≠li p≈ôedt√≠m.
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_04"); //Mƒõl jsem jin√© starosti.
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_05"); //Tos o hodnƒõ p≈ôi≈°el - co jsme byli v lochu, tak se dost vƒõc√≠ zmƒõnilo.
 };
 
 
@@ -488,7 +488,7 @@ INSTANCE DIA_Buster_WhatHappened (C_INFO)
 	condition	= DIA_Buster_WhatHappened_Condition;
 	information	= DIA_Buster_WhatHappened_Info;
 	permanent	= FALSE;
-	description = "Co se stalo se ûoldnÈ¯i v kolonii?";
+	description = "Co se stalo se ≈æoldn√©≈ôi v kolonii?";
 };                       
 
 FUNC INT DIA_Buster_WhatHappened_Condition()
@@ -502,11 +502,11 @@ FUNC INT DIA_Buster_WhatHappened_Condition()
  
 FUNC VOID DIA_Buster_WhatHappened_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_WhatHappened_15_00"); //Co se stalo se ûoldnÈ¯i v kolonii?
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_01"); //Jakmile bariÈra padla, vyvedl n·s Lee z kolonie. ÿÌkal, ûe kdyû budeme drûet pohromadÏ, tak se n·m nic nestane. A mÏl pravdu.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_02"); //Netrvalo dlouho a naöli jsme si tady hezkÈ mÌsteËko. Statk·¯ n·m platÌ, abychom zametali s domobranou z mÏsta.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_03"); //A vÏtöina z n·s by do toho öla dobrovolnÏ i zadarmo.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_04"); //Ale Onar n·m d·v· jÌdlo a aspoÚ tak m˘ûeme nÏjak zabÌt Ëas, neû se naskytne nÏjak· p¯Ìleûitost pl·chnout z tohohle mizernÈho ostrova.
+	AI_Output (other, self,"DIA_Buster_WhatHappened_15_00"); //Co se stalo se ≈æoldn√©≈ôi v kolonii?
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_01"); //Jakmile bari√©ra padla, vyvedl n√°s Lee z kolonie. ≈ò√≠kal, ≈æe kdy≈æ budeme dr≈æet pohromadƒõ, tak se n√°m nic nestane. A mƒõl pravdu.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_02"); //Netrvalo dlouho a na≈°li jsme si tady hezk√© m√≠steƒçko. Statk√°≈ô n√°m plat√≠, abychom zametali s domobranou z mƒõsta.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_03"); //A vƒõt≈°ina z n√°s by do toho ≈°la dobrovolnƒõ i zadarmo.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_04"); //Ale Onar n√°m d√°v√° j√≠dlo a aspo≈à tak m≈Ø≈æeme nƒõjak zab√≠t ƒças, ne≈æ se naskytne nƒõjak√° p≈ô√≠le≈æitost pl√°chnout z tohohle mizern√©ho ostrova.
 };
 
 
@@ -520,7 +520,7 @@ INSTANCE DIA_Buster_Teach (C_INFO)
 	condition	= DIA_Buster_Teach_Condition;
 	information	= DIA_Buster_Teach_Info;
 	permanent	= TRUE;
-	description = "M˘ûeö mÏ nauËit, jak lÈpe bojovat?";
+	description = "M≈Ø≈æe≈° mƒõ nauƒçit, jak l√©pe bojovat?";
 };                       
 
 FUNC INT DIA_Buster_Teach_Condition()
@@ -532,20 +532,20 @@ FUNC INT DIA_Buster_Teach_Condition()
 };
 FUNC VOID DIA_Buster_Teach_Info()
 {	
-	AI_Output (other, self, "DIA_Buster_Teach_15_00"); //M˘ûeö mÏ nauËit, jak lÈpe bojovat?
+	AI_Output (other, self, "DIA_Buster_Teach_15_00"); //M≈Ø≈æe≈° mƒõ nauƒçit, jak l√©pe bojovat?
 	if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Buster_Teach_13_01"); //Moûn· bych ti mohl d·t jednu dvÏ rady.
+		AI_Output (self, other, "DIA_Buster_Teach_13_01"); //Mo≈æn√° bych ti mohl d√°t jednu dvƒõ rady.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Buster_Teach_13_02"); //Nejsi tak tup˝, jak vypad·ö. Dobr·, nauËÌm tÏ, co vÌm. Pak moûn· proti mnÏ budeö mÌt nÏjakou öanci.
+		AI_Output (self, other, "DIA_Buster_Teach_13_02"); //Nejsi tak tup√Ω, jak vypad√°≈°. Dobr√°, nauƒç√≠m tƒõ, co v√≠m. Pak mo≈æn√° proti mnƒõ bude≈° m√≠t nƒõjakou ≈°anci.
 	};
 	
 	if (BusterLOG == FALSE)
 	{
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTeacher,"Buster mÏ nauËÌ, jak bojovat jednoruËnÌmi zbranÏmi.");
+		B_LogEntry (Topic_SoldierTeacher,"Buster mƒõ nauƒç√≠, jak bojovat jednoruƒçn√≠mi zbranƒõmi.");
 		BusterLOG = TRUE;
 	};
 	Info_ClearChoices 	(DIA_Buster_Teach);
@@ -641,57 +641,57 @@ func void B_DIA_Buster_SHADOWBEASTS_OK ()
 
 func void DIA_Buster_SHADOWBEASTS_Info ()
 {
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_00"); //Hej, ty, chlapËe!
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_01"); //Co chceö?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_02"); //PoslednÌch p·r dnÌ jsem p¯em˝ölel, jak v tÈhle dÌ¯e p¯ijÌt k nÏjak˝m snadn˝m penÏz˘m.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_00"); //Hej, ty, chlapƒçe!
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_01"); //Co chce≈°?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_02"); //Posledn√≠ch p√°r dn√≠ jsem p≈ôem√Ω≈°lel, jak v t√©hle d√≠≈ôe p≈ôij√≠t k nƒõjak√Ωm snadn√Ωm penƒõz≈Øm.
 	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_03"); //A?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_04"); //MyslÌm, ûe jsem p¯iöel na to, jak nÏjakÈ prachy zÌskat.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_05"); //Jeden kupec z mÏsta vyklopÌ za jistou vÏc pÏknej balÌk.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_04"); //Mysl√≠m, ≈æe jsem p≈ôi≈°el na to, jak nƒõjak√© prachy z√≠skat.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_05"); //Jeden kupec z mƒõsta vyklop√≠ za jistou vƒõc pƒõknej bal√≠k.
 
 	Info_ClearChoices	(DIA_Buster_SHADOWBEASTS);
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Co je to za kupce, o kterÈm mluvÌö?", DIA_Buster_SHADOWBEASTS_wer );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Co je to za kupce, o kter√©m mluv√≠≈°?", DIA_Buster_SHADOWBEASTS_wer );
 	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "O co jde?", DIA_Buster_SHADOWBEASTS_was );
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "ProË mi to ¯Ìk·ö?", DIA_Buster_SHADOWBEASTS_ich );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Proƒç mi to ≈ô√≠k√°≈°?", DIA_Buster_SHADOWBEASTS_ich );
 
 };
 func void DIA_Buster_SHADOWBEASTS_ich ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_00"); //ProË mi to ¯Ìk·ö?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_01"); //Nem˘ûu do toho jÌt s·m. MusÌm z˘stat tady a d·vat pozor na ty pitomÈ ovce.
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_02"); //MyslÌö farm·¯e.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_03"); //No vûdyù.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_00"); //Proƒç mi to ≈ô√≠k√°≈°?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_01"); //Nem≈Ø≈æu do toho j√≠t s√°m. Mus√≠m z≈Østat tady a d√°vat pozor na ty pitom√© ovce.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_02"); //Mysl√≠≈° farm√°≈ôe.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_03"); //No v≈ædy≈•.
 
 };
 func void DIA_Buster_SHADOWBEASTS_was ()
 {
 	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_15_00"); //O co jde?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_01"); //Ten kupec tvrdÌ, ûe by mohl na trhu velice dob¯e zpenÏûit rohy stÌnovÈ öelmy.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_02"); //NÏkdo bude muset jÌt do lesa a ty stv˘ry pokosit. A to je pr·vÏ pr·ce pro tebe.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_01"); //Ten kupec tvrd√≠, ≈æe by mohl na trhu velice dob≈ôe zpenƒõ≈æit rohy st√≠nov√© ≈°elmy.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_02"); //Nƒõkdo bude muset j√≠t do lesa a ty stv≈Øry pokosit. A to je pr√°vƒõ pr√°ce pro tebe.
 
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Kolik z toho kouk·?", DIA_Buster_SHADOWBEASTS_was_wieviel );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Kolik z toho kouk√°?", DIA_Buster_SHADOWBEASTS_was_wieviel );
 };
 func void DIA_Buster_SHADOWBEASTS_was_wieviel ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_00"); //Kolik z toho kouk·?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_01"); //BalÌk penÏz, to ti povÌd·m. Bude dost pro n·s pro oba.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_00"); //Kolik z toho kouk√°?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_01"); //Bal√≠k penƒõz, to ti pov√≠d√°m. Bude dost pro n√°s pro oba.
 	if (Buster_GoldZumBrennen == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_02"); //A protoûe jsi mi tenkr·t p¯inesl to zlato, udÏl·m ti zvl·ötnÌ cenu.
+		AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_02"); //A proto≈æe jsi mi tenkr√°t p≈ôinesl to zlato, udƒõl√°m ti zvl√°≈°tn√≠ cenu.
 	};
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_03"); //To znÌ dob¯e! D·m ti vÏdÏt, aû budu mÌt nÏjakÈ ty rohy.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_03"); //To zn√≠ dob≈ôe! D√°m ti vƒõdƒõt, a≈æ budu m√≠t nƒõjak√© ty rohy.
 	MIS_Buster_KillShadowbeasts_DJG = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Buster_KillShadowbeasts, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Buster_KillShadowbeasts, LOG_RUNNING);
-	B_LogEntry (TOPIC_Buster_KillShadowbeasts,"Buster mi nabÌdl dobrou cenu za kaûd˝ roh stÌnovÈ öelmy, kter˝ mu p¯inesu."); 
+	B_LogEntry (TOPIC_Buster_KillShadowbeasts,"Buster mi nab√≠dl dobrou cenu za ka≈æd√Ω roh st√≠nov√© ≈°elmy, kter√Ω mu p≈ôinesu."); 
 
 	Info_ClearChoices	(DIA_Buster_SHADOWBEASTS);
 };
 func void DIA_Buster_SHADOWBEASTS_wer ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_wer_15_00"); //Co je to za kupce, o kterÈm mluvÌö?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_01"); //Tak to ne, k·mo. Byl bych v·ûnÏ pitomec, kdybych ti prozradil sv˘j zdroj. Chceö mÏ snad podfouknout?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_02"); //BuÔ se dohodneö SE MNOU, nebo v˘bec. Kapiöto?
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_wer_15_00"); //Co je to za kupce, o kter√©m mluv√≠≈°?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_01"); //Tak to ne, k√°mo. Byl bych v√°≈ænƒõ pitomec, kdybych ti prozradil sv≈Øj zdroj. Chce≈° mƒõ snad podfouknout?
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_02"); //Buƒè se dohodne≈° SE MNOU, nebo v≈Øbec. Kapi≈°to?
 
 };
 
@@ -706,7 +706,7 @@ instance DIA_Buster_BringTrophyShadowbeast		(C_INFO)
 	information	 = 	DIA_Buster_BringTrophyShadowbeast_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"K tÏm roh˘m stÌnovÈ öelmy...";
+	description	 = 	"K tƒõm roh≈Øm st√≠nov√© ≈°elmy...";
 };
 
 func int DIA_Buster_BringTrophyShadowbeast_Condition ()
@@ -725,20 +725,20 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 {
 	if ((Kapitel >= 5))
 	{
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_00"); //M˘j kupec n·m dal sbohem.
-		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_15_01"); //Co to m· znamenat?
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_02"); //Je mrtv˝. KlidnÏ si ty rohy nech. StejnÏ nevÌm, co bych s nimi teÔ dÏlal.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_00"); //M≈Øj kupec n√°m dal sbohem.
+		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_15_01"); //Co to m√° znamenat?
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_02"); //Je mrtv√Ω. Klidnƒõ si ty rohy nech. Stejnƒõ nev√≠m, co bych s nimi teƒè dƒõlal.
 		MIS_Buster_KillShadowbeasts_DJG = LOG_SUCCESS; //Joly: Feierabend ab Kapitel 5!!!!!!!
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_15_03"); //Jak m·m vykuchat stÌnovou öelmu?
-		AI_Output			(self, other, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_13_04"); //Ty to nevÌö? Teda chlape, Ëekal jsem od tebe vÌc.
+		AI_Output			(other, self, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_15_03"); //Jak m√°m vykuchat st√≠novou ≈°elmu?
+		AI_Output			(self, other, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_13_04"); //Ty to nev√≠≈°? Teda chlape, ƒçekal jsem od tebe v√≠c.
 	
 		Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
-		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, "Pak se k tobÏ vr·tÌm.", DIA_Buster_BringTrophyShadowbeast_back );
-		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, B_BuildLearnString ("UË mÏ.",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Buster_BringTrophyShadowbeast_teach );
+		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, "Pak se k tobƒõ vr√°t√≠m.", DIA_Buster_BringTrophyShadowbeast_back );
+		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, B_BuildLearnString ("Uƒç mƒõ.",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Buster_BringTrophyShadowbeast_teach );
 	}
 	else 
 	{
@@ -755,14 +755,14 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 	
 		if (BusterTrophyShadowbeastCount == 1)
 			{
-				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_05"); //M·m pro tebe roh stÌnovÈ öelmy.
+				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_05"); //M√°m pro tebe roh st√≠nov√© ≈°elmy.
 				B_GivePlayerXP (XP_BringBusterTrophyShadowbeast);
 				B_GiveInvItems (other, self, ItAt_ShadowHorn,1);
 				BusterTrophyShadowbeastCounter = BusterTrophyShadowbeastCounter + 1;
 			}
 			else
 			{
-				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_06"); //M·m pro tvÈho kupce p·r dalöÌch roh˘ stÌnovÈ öelmy.
+				AI_Output		(other, self, "DIA_Buster_BringTrophyShadowbeast_15_06"); //M√°m pro tv√©ho kupce p√°r dal≈°√≠ch roh≈Ø st√≠nov√© ≈°elmy.
 	
 				B_GiveInvItems (other, self, ItAt_ShadowHorn,  BusterTrophyShadowbeastCount);
 	
@@ -772,8 +772,8 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 				B_GivePlayerXP (XP_BringBusterTrophyShadowbeasts);
 			};
 	
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_07"); //SkvÏlÈ. Ukaû. A p¯ines jich vÌc. Kdo vÌ, jak dlouho bude ten kupec tyhle vÏci jeötÏ chtÌt.
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_08"); //Tady je tv˘j podÌl.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_07"); //Skvƒõl√©. Uka≈æ. A p≈ôines jich v√≠c. Kdo v√≠, jak dlouho bude ten kupec tyhle vƒõci je≈°tƒõ cht√≠t.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_08"); //Tady je tv≈Øj pod√≠l.
 	
 		BusterTrophyShadowbeastGeld	= (BusterTrophyShadowbeastCount * BustersBusterTrophyShadowbeastOffer);
 	
@@ -784,22 +784,22 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 };
 func void DIA_Buster_BringTrophyShadowbeast_teach ()
 {
-	AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_teach_15_00"); //UË mÏ.
+	AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_teach_15_00"); //Uƒç mƒõ.
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_01"); //Tak poslouchej. Zabijeö stÌnovou öelmu a pak ji pravou rukou chytÌö co nejpevnÏji za roh.
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_02"); //Potom zarazÌö n˘û do jejÌho Ëela a kolem rohu vy¯Ìzneö ûl·bek.
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_03"); //N˘û potom pouûijeö jako p·ku, roh odlomÌö a d·ö si ho do kapsy.
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_04"); //No. A pak mi ho p¯ineseö. To by pro tebe nemÏlo b˝t aû tak tÏûkÈ.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_01"); //Tak poslouchej. Zabije≈° st√≠novou ≈°elmu a pak ji pravou rukou chyt√≠≈° co nejpevnƒõji za roh.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_02"); //Potom zaraz√≠≈° n≈Ø≈æ do jej√≠ho ƒçela a kolem rohu vy≈ô√≠zne≈° ≈æl√°bek.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_03"); //N≈Ø≈æ potom pou≈æije≈° jako p√°ku, roh odlom√≠≈° a d√°≈° si ho do kapsy.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_04"); //No. A pak mi ho p≈ôinese≈°. To by pro tebe nemƒõlo b√Ωt a≈æ tak tƒõ≈æk√©.
 		};		
 	Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
 };
 
 func void DIA_Buster_BringTrophyShadowbeast_back ()
 {
-		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_back_15_00"); //Pak se k tobÏ vr·tÌm.
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_back_13_01"); //To douf·m.
+		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_back_15_00"); //Pak se k tobƒõ vr√°t√≠m.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_back_13_01"); //To douf√°m.
 		Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
 };
 
@@ -848,7 +848,7 @@ INSTANCE DIA_Buster_Perm4 (C_INFO)
 	condition	= DIA_Buster_Perm4_Condition;
 	information	= DIA_Buster_Perm4_Info;
 	permanent	= TRUE;
-	description = "Co si myslÌö o celÈ tÈ drakobijeckÈ z·leûitosti?";
+	description = "Co si mysl√≠≈° o cel√© t√© drakobijeck√© z√°le≈æitosti?";
 };                       
 
 FUNC INT DIA_Buster_Perm4_Condition()
@@ -861,9 +861,9 @@ FUNC INT DIA_Buster_Perm4_Condition()
  
 FUNC VOID DIA_Buster_Perm4_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_Perm4_15_00"); //Co si myslÌö o celÈ tÈ drakobijeckÈ z·leûitosti?
-	AI_Output (self, other,"DIA_Buster_Perm4_13_01"); //Hoöi by z toho mohli vyt¯Ìskat docela dost zlata - pokud d¯Ìv nezaklepou baËkorama.
-	AI_Output (self, other,"DIA_Buster_Perm4_13_02"); //J· osobnÏ se radöi drûÌm Leeho.
+	AI_Output (other, self,"DIA_Buster_Perm4_15_00"); //Co si mysl√≠≈° o cel√© t√© drakobijeck√© z√°le≈æitosti?
+	AI_Output (self, other,"DIA_Buster_Perm4_13_01"); //Ho≈°i by z toho mohli vyt≈ô√≠skat docela dost zlata - pokud d≈ô√≠v nezaklepou baƒçkorama.
+	AI_Output (self, other,"DIA_Buster_Perm4_13_02"); //J√° osobnƒõ se rad≈°i dr≈æ√≠m Leeho.
 };
 
 //#####################################################################

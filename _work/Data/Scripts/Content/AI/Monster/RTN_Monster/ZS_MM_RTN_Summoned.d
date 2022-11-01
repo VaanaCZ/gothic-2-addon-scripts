@@ -54,7 +54,7 @@ func int ZS_MM_Rtn_Summoned_Loop()
 			};
 			
 			// ------ Summon Time -------
-			self.aivar[AIV_SummonTime] = (self.aivar[AIV_SummonTime] + Npc_GetStateTime(self)); //weil AI_Goto länger dauern kann
+			self.aivar[AIV_SummonTime] = (self.aivar[AIV_SummonTime] + Npc_GetStateTime(self)); //weil AI_Goto lÃ¤nger dauern kann
 
 			if (self.aivar[AIV_SummonTime] >= MONSTER_SUMMON_TIME)
 			{

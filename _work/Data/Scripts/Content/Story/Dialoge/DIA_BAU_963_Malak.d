@@ -34,7 +34,7 @@ instance DIA_Malak_HALLO		(C_INFO)
 	condition	 = 	DIA_Malak_HALLO_Condition;
 	information	 = 	DIA_Malak_HALLO_Info;
 
-	description	 = 	"Je všechno v poøádku?";
+	description	 = 	"Je vÅ¡echno v poÅ™Ã¡dku?";
 };
 
 func int DIA_Malak_HALLO_Condition ()
@@ -47,15 +47,15 @@ func int DIA_Malak_HALLO_Condition ()
 
 func void DIA_Malak_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_HALLO_15_00"); //Je všechno v poøádku?
+	AI_Output			(other, self, "DIA_Malak_HALLO_15_00"); //Je vÅ¡echno v poÅ™Ã¡dku?
 
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Malak_HALLO_08_01"); //Další nádeník, co neví, kam by se vrtnul? ádnı problém. Promluv si s Bengarem, naším farmáøem.
+			AI_Output			(self, other, "DIA_Malak_HALLO_08_01"); //DalÅ¡Ã­ nÃ¡denÃ­k, co nevÃ­, kam by se vrtnul? Å½Ã¡dnÃ½ problÃ©m. Promluv si s Bengarem, naÅ¡Ã­m farmÃ¡Å™em.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Malak_HALLO_08_02"); //Jasnì.
+			AI_Output			(self, other, "DIA_Malak_HALLO_08_02"); //JasnÄ›.
 		};
 
 };
@@ -71,7 +71,7 @@ instance DIA_Malak_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Malak_WASMACHSTDU_Condition;
 	information	 = 	DIA_Malak_WASMACHSTDU_Info;
 
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Malak_WASMACHSTDU_Condition ()
@@ -85,9 +85,9 @@ func int DIA_Malak_WASMACHSTDU_Condition ()
 
 func void DIA_Malak_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_WASMACHSTDU_15_00"); //Co tady dìláš?
-	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_01"); //Jsem ovèák. Není to zrovna nároèná práce.
-	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_02"); //Ale teï si musíš dávat poøádnı pozor. Zvláš kdy se dostaneš blízko k prùsmyku.
+	AI_Output			(other, self, "DIA_Malak_WASMACHSTDU_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_01"); //Jsem ovÄÃ¡k. NenÃ­ to zrovna nÃ¡roÄnÃ¡ prÃ¡ce.
+	AI_Output			(self, other, "DIA_Malak_WASMACHSTDU_08_02"); //Ale teÄ si musÃ­Å¡ dÃ¡vat poÅ™Ã¡dnÃ½ pozor. ZvlÃ¡Å¡Å¥ kdyÅ¾ se dostaneÅ¡ blÃ­zko k prÅ¯smyku.
 
 };
 
@@ -102,7 +102,7 @@ instance DIA_Malak_PASS		(C_INFO)
 	condition	 = 	DIA_Malak_PASS_Condition;
 	information	 = 	DIA_Malak_PASS_Info;
 
-	description	 = 	"Co víš o tom prùsmyku?";
+	description	 = 	"Co vÃ­Å¡ o tom prÅ¯smyku?";
 };
 
 func int DIA_Malak_PASS_Condition ()
@@ -116,10 +116,10 @@ func int DIA_Malak_PASS_Condition ()
 
 func void DIA_Malak_PASS_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PASS_15_00"); //Co víš o tom prùsmyku?
-	AI_Output			(self, other, "DIA_Malak_PASS_08_01"); //Nic moc. Jen to, e vede do Hornického údolí, co ještì pøed pár tıdny uzavírala magická bariéra.
-	AI_Output			(self, other, "DIA_Malak_PASS_08_02"); //Ale jinak jediná vìc, na kterou si my farmáøi musíme dávat pozor, jsou karavany, co kadı mìsíc vozí do Hornického údolí všechno moné.
-	AI_Output			(self, other, "DIA_Malak_PASS_08_03"); //Ti hrdloøezové nám dokáou poøádnì znepøíjemnit ivot.
+	AI_Output			(other, self, "DIA_Malak_PASS_15_00"); //Co vÃ­Å¡ o tom prÅ¯smyku?
+	AI_Output			(self, other, "DIA_Malak_PASS_08_01"); //Nic moc. Jen to, Å¾e vede do HornickÃ©ho ÃºdolÃ­, co jeÅ¡tÄ› pÅ™ed pÃ¡r tÃ½dny uzavÃ­rala magickÃ¡ bariÃ©ra.
+	AI_Output			(self, other, "DIA_Malak_PASS_08_02"); //Ale jinak jedinÃ¡ vÄ›c, na kterou si my farmÃ¡Å™i musÃ­me dÃ¡vat pozor, jsou karavany, co kaÅ¾dÃ½ mÄ›sÃ­c vozÃ­ do HornickÃ©ho ÃºdolÃ­ vÅ¡echno moÅ¾nÃ©.
+	AI_Output			(self, other, "DIA_Malak_PASS_08_03"); //Ti hrdloÅ™ezovÃ© nÃ¡m dokÃ¡Å¾ou poÅ™Ã¡dnÄ› znepÅ™Ã­jemnit Å¾ivot.
 
 };
 
@@ -133,7 +133,7 @@ instance DIA_Malak_WOPASS		(C_INFO)
 	condition	 = 	DIA_Malak_WOPASS_Condition;
 	information	 = 	DIA_Malak_WOPASS_Info;
 
-	description	 = 	"Kde najdu prùsmyk do Hornického údolí?";
+	description	 = 	"Kde najdu prÅ¯smyk do HornickÃ©ho ÃºdolÃ­?";
 };
 
 func int DIA_Malak_WOPASS_Condition ()
@@ -147,8 +147,8 @@ func int DIA_Malak_WOPASS_Condition ()
 
 func void DIA_Malak_WOPASS_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_WOPASS_15_00"); //Kde najdu prùsmyk do Hornického údolí?
-	AI_Output			(self, other, "DIA_Malak_WOPASS_08_01"); //Poblí vodopádù na druhé stranì náhorních pastvin.
+	AI_Output			(other, self, "DIA_Malak_WOPASS_15_00"); //Kde najdu prÅ¯smyk do HornickÃ©ho ÃºdolÃ­?
+	AI_Output			(self, other, "DIA_Malak_WOPASS_08_01"); //PoblÃ­Å¾ vodopÃ¡dÅ¯ na druhÃ© stranÄ› nÃ¡hornÃ­ch pastvin.
 
 };
 
@@ -164,7 +164,7 @@ instance DIA_Malak_MINENTAL		(C_INFO)
 	condition	 = 	DIA_Malak_MINENTAL_Condition;
 	information	 = 	DIA_Malak_MINENTAL_Info;
 
-	description	 = 	"Co se povídá o Hornickém údolí?";
+	description	 = 	"Co se povÃ­dÃ¡ o HornickÃ©m ÃºdolÃ­?";
 };
 
 func int DIA_Malak_MINENTAL_Condition ()
@@ -179,9 +179,9 @@ func int DIA_Malak_MINENTAL_Condition ()
 func void DIA_Malak_MINENTAL_Info ()
 {
 
-	AI_Output			(other, self, "DIA_Malak_MINENTAL_15_00"); //Co se povídá o Hornickém údolí?
-	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_01"); //Všechno moné. Nìkteøí z chlapù slyšeli v noci køik, nìkteøí vidìli podivná svìtla nad horami.
-	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_02"); //Ale jestli to chceš vìdìt, tak to všechno jsou jen babskı povídaèky.
+	AI_Output			(other, self, "DIA_Malak_MINENTAL_15_00"); //Co se povÃ­dÃ¡ o HornickÃ©m ÃºdolÃ­?
+	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_01"); //VÅ¡echno moÅ¾nÃ©. NÄ›kteÅ™Ã­ z chlapÅ¯ slyÅ¡eli v noci kÅ™ik, nÄ›kteÅ™Ã­ vidÄ›li podivnÃ¡ svÄ›tla nad horami.
+	AI_Output			(self, other, "DIA_Malak_MINENTAL_08_02"); //Ale jestli to chceÅ¡ vÄ›dÄ›t, tak to vÅ¡echno jsou jen babskÃ½ povÃ­daÄky.
 
 };
 
@@ -196,7 +196,7 @@ instance DIA_Malak_WARSTDUSCHONDA		(C_INFO)
 	condition	 = 	DIA_Malak_WARSTDUSCHONDA_Condition;
 	information	 = 	DIA_Malak_WARSTDUSCHONDA_Info;
 
-	description	 = 	"U jsi nìkdy byl v Hornickém údolí?";
+	description	 = 	"UÅ¾ jsi nÄ›kdy byl v HornickÃ©m ÃºdolÃ­?";
 };
 
 func int DIA_Malak_WARSTDUSCHONDA_Condition ()
@@ -210,10 +210,10 @@ func int DIA_Malak_WARSTDUSCHONDA_Condition ()
 
 func void DIA_Malak_WARSTDUSCHONDA_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_WARSTDUSCHONDA_15_00"); //U jsi nìkdy byl v Hornickém údolí?
-	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_01"); //Ne. Ale jednou za èas se k nìmu dostanu. To vdycky vidím ty dva paladiny, co stojí u brány a drí strá.
-	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_02"); //Vypadá to, jako by se ujišovali, e se z údolí nic nedostane ven.
-	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_03"); //Ale jinak je Hornické údolí vlastnì takové pøirozené vìzení. Jakmile tam jedou vejdeš, ven u se nedostaneš.
+	AI_Output			(other, self, "DIA_Malak_WARSTDUSCHONDA_15_00"); //UÅ¾ jsi nÄ›kdy byl v HornickÃ©m ÃºdolÃ­?
+	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_01"); //Ne. Ale jednou za Äas se k nÄ›mu dostanu. To vÅ¾dycky vidÃ­m ty dva paladiny, co stojÃ­ u brÃ¡ny a drÅ¾Ã­ strÃ¡Å¾.
+	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_02"); //VypadÃ¡ to, jako by se ujiÅ¡Å¥ovali, Å¾e se z ÃºdolÃ­ nic nedostane ven.
+	AI_Output			(self, other, "DIA_Malak_WARSTDUSCHONDA_08_03"); //Ale jinak je HornickÃ© ÃºdolÃ­ vlastnÄ› takovÃ© pÅ™irozenÃ© vÄ›zenÃ­. Jakmile tam jedou vejdeÅ¡, ven uÅ¾ se nedostaneÅ¡.
 
 };
 
@@ -228,7 +228,7 @@ instance DIA_Malak_PALADINE		(C_INFO)
 	condition	 = 	DIA_Malak_PALADINE_Condition;
 	information	 = 	DIA_Malak_PALADINE_Info;
 
-	description	 = 	"Povìz mi o paladinech nìco víc. Jak dlouho u tu jsou?";
+	description	 = 	"PovÄ›z mi o paladinech nÄ›co vÃ­c. Jak dlouho uÅ¾ tu jsou?";
 };
 
 func int DIA_Malak_PALADINE_Condition ()
@@ -245,9 +245,9 @@ func int DIA_Malak_PALADINE_Condition ()
 
 func void DIA_Malak_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PALADINE_15_00"); //Øekni mi víc o tìch paladinech. Jak dlouho u tam jsou?
-	AI_Output			(self, other, "DIA_Malak_PALADINE_08_01"); //Tıden, dva. Myslím. Pøesnì to nevím.
-	AI_Output			(self, other, "DIA_Malak_PALADINE_08_02"); //Nedávno se jich tu potloukala celá skupina a pak zmizeli v prùsmyku. Od té doby u jsem je nevidìl.
+	AI_Output			(other, self, "DIA_Malak_PALADINE_15_00"); //Å˜ekni mi vÃ­c o tÄ›ch paladinech. Jak dlouho uÅ¾ tam jsou?
+	AI_Output			(self, other, "DIA_Malak_PALADINE_08_01"); //TÃ½den, dva. MyslÃ­m. PÅ™esnÄ› to nevÃ­m.
+	AI_Output			(self, other, "DIA_Malak_PALADINE_08_02"); //NedÃ¡vno se jich tu potloukala celÃ¡ skupina a pak zmizeli v prÅ¯smyku. Od tÃ© doby uÅ¾ jsem je nevidÄ›l.
 
 };
 
@@ -261,7 +261,7 @@ instance DIA_Malak_KEINEFRAUEN		(C_INFO)
 	condition	 = 	DIA_Malak_KEINEFRAUEN_Condition;
 	information	 = 	DIA_Malak_KEINEFRAUEN_Info;
 
-	description	 = 	"Nevidìl jsem tady ádnou enu.";
+	description	 = 	"NevidÄ›l jsem tady Å¾Ã¡dnou Å¾enu.";
 };
 
 func int DIA_Malak_KEINEFRAUEN_Condition ()
@@ -275,8 +275,8 @@ func int DIA_Malak_KEINEFRAUEN_Condition ()
 
 func void DIA_Malak_KEINEFRAUEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_KEINEFRAUEN_15_00"); //Nevidìl jsem tady ádnou enu.
-	AI_Output			(self, other, "DIA_Malak_KEINEFRAUEN_08_01"); //Tak to máš pravdu. Tohle je farma pro chlapy, abych tak øekl. Hodnì práce, øekl bych.
+	AI_Output			(other, self, "DIA_Malak_KEINEFRAUEN_15_00"); //NevidÄ›l jsem tady Å¾Ã¡dnou Å¾enu.
+	AI_Output			(self, other, "DIA_Malak_KEINEFRAUEN_08_01"); //Tak to mÃ¡Å¡ pravdu. Tohle je farma pro chlapy, abych tak Å™ekl. HodnÄ› prÃ¡ce, Å™ekl bych.
 
 };
 
@@ -292,7 +292,7 @@ instance DIA_Malak_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Malak_PERMKAP1_Info;
 	permanent	 =  TRUE;	
 
-	description	 = 	"S tou prací to nepøehánìj.";
+	description	 = 	"S tou pracÃ­ to nepÅ™ehÃ¡nÄ›j.";
 };
 
 func int DIA_Malak_PERMKAP1_Condition ()
@@ -314,8 +314,8 @@ func int DIA_Malak_PERMKAP1_Condition ()
 
 func void DIA_Malak_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_PERMKAP1_15_00"); //S tou prací to nepøehánìj.
-	AI_Output			(self, other, "DIA_Malak_PERMKAP1_08_01"); //Pokusím se.
+	AI_Output			(other, self, "DIA_Malak_PERMKAP1_15_00"); //S tou pracÃ­ to nepÅ™ehÃ¡nÄ›j.
+	AI_Output			(self, other, "DIA_Malak_PERMKAP1_08_01"); //PokusÃ­m se.
 
 	AI_StopProcessInfos (self);
 };
@@ -363,7 +363,7 @@ instance DIA_Malak_FLEEFROMPASS		(C_INFO)
 	condition	 = 	DIA_Malak_FLEEFROMPASS_Condition;
 	information	 = 	DIA_Malak_FLEEFROMPASS_Info;
 
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Malak_FLEEFROMPASS_Condition ()
@@ -383,11 +383,11 @@ func void DIA_Malak_FLEEFROMPASS_Info ()
 	}
 	else
 	{
-	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_00"); //Co tady dìláš?
-	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_01"); //Utekl jsem sem z Bengarovy farmy. Nechtìlo se mi èekat, a mì rozsápe nìkterá z tìch nestvùr, co pøicházejí z prùsmyku.
-	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_02"); //Nedokáeš si pøedstavit, co se za posledních nìkolik dnù odtamtud všechno vyvalilo.
-	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_03"); //Ale dokáu.
-	B_LogEntry (TOPIC_BengarALLEIN,"Malak se usadil na jihu, nebo se bojí nestvùr, které nahoru na pastviny pøicházejí z prùsmyku."); 
+	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_01"); //Utekl jsem sem z Bengarovy farmy. NechtÄ›lo se mi Äekat, aÅ¾ mÄ› rozsÃ¡pe nÄ›kterÃ¡ z tÄ›ch nestvÅ¯r, co pÅ™ichÃ¡zejÃ­ z prÅ¯smyku.
+	AI_Output			(self, other, "DIA_Malak_FLEEFROMPASS_08_02"); //NedokÃ¡Å¾eÅ¡ si pÅ™edstavit, co se za poslednÃ­ch nÄ›kolik dnÅ¯ odtamtud vÅ¡echno vyvalilo.
+	AI_Output			(other, self, "DIA_Malak_FLEEFROMPASS_15_03"); //Ale dokÃ¡Å¾u.
+	B_LogEntry (TOPIC_BengarALLEIN,"Malak se usadil na jihu, neboÅ¥ se bojÃ­ nestvÅ¯r, kterÃ© nahoru na pastviny pÅ™ichÃ¡zejÃ­ z prÅ¯smyku."); 
 	B_GivePlayerXP (XP_FoundMalakFLEEFROMPASS);
 	};
 };
@@ -403,7 +403,7 @@ instance DIA_Malak_Heilung		(C_INFO)
 	information	 = 	DIA_Malak_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Potøebuješ pomoct.";
+	description	 = 	"PotÅ™ebujeÅ¡ pomoct.";
 };
 
 func int DIA_Malak_Heilung_Condition ()
@@ -418,11 +418,11 @@ func int DIA_Malak_Heilung_Condition ()
 var int DIA_Malak_Heilung_oneTime;
 func void DIA_Malak_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_Heilung_15_00"); //Potøebuješ pomoct.
+	AI_Output			(other, self, "DIA_Malak_Heilung_15_00"); //PotÅ™ebujeÅ¡ pomoct.
 
 	if (DIA_Malak_Heilung_oneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Malak_Heilung_08_01"); //(plaètivì) Jen bych chtìl jít domù. Vrátím se k Bengarovi. Doufám, e je ještì naivu.
+	AI_Output			(self, other, "DIA_Malak_Heilung_08_01"); //(plaÄtivÄ›) Jen bych chtÄ›l jÃ­t domÅ¯. VrÃ¡tÃ­m se k Bengarovi. DoufÃ¡m, Å¾e je jeÅ¡tÄ› naÅ¾ivu.
 
 		B_NpcClearObsessionByDMT (self);
 		Npc_ExchangeRoutine	(self,"Start");
@@ -438,7 +438,7 @@ func void DIA_Malak_Heilung_Info ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Malak_Heilung_08_02"); //Nech mì na pokoji, mágu. Poradím si sám.
+		AI_Output			(self, other, "DIA_Malak_Heilung_08_02"); //Nech mÄ› na pokoji, mÃ¡gu. PoradÃ­m si sÃ¡m.
 		B_NpcClearObsessionByDMT (self);
 	};
 };
@@ -473,7 +473,7 @@ func int DIA_Malak_PERMCASTLE_Condition ()
 func void DIA_Malak_PERMCASTLE_Info ()
 {
 	AI_Output			(other, self, "DIA_Malak_PERMCASTLE_15_00"); //A co tady?
-	AI_Output			(self, other, "DIA_Malak_PERMCASTLE_08_01"); //Tady mám jen potíe s bandity. Poøád lepší ne ty zrùdy.
+	AI_Output			(self, other, "DIA_Malak_PERMCASTLE_08_01"); //Tady mÃ¡m jen potÃ­Å¾e s bandity. PoÅ™Ã¡d lepÅ¡Ã­ neÅ¾ ty zrÅ¯dy.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -487,7 +487,7 @@ instance DIA_Malak_BACKTOBENGAR		(C_INFO)
 	information	 = 	DIA_Malak_BACKTOBENGAR_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Bengar tì potøebuje. Èeká, a se k nìmu vrátíš nìmu na statek.";
+	description	 = 	"Bengar tÄ› potÅ™ebuje. ÄŒekÃ¡, aÅ¾ se k nÄ›mu vrÃ¡tÃ­Å¡ nÄ›mu na statek.";
 };
 
 func int DIA_Malak_BACKTOBENGAR_Condition ()
@@ -505,17 +505,17 @@ func int DIA_Malak_BACKTOBENGAR_Condition ()
 
 func void DIA_Malak_BACKTOBENGAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_00"); //Bengar tì potøebuje. Chce, aby ses vrátil na farmu.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_01"); //Nejsem blázen. Dokud nebude farma dobøe zabezpeèená, nehodlám odsud vystrèit nos!
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_00"); //Bengar tÄ› potÅ™ebuje. Chce, aby ses vrÃ¡til na farmu.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_01"); //Nejsem blÃ¡zen. Dokud nebude farma dobÅ™e zabezpeÄenÃ¡, nehodlÃ¡m odsud vystrÄit nos!
 	
-	B_LogEntry (TOPIC_BengarALLEIN,"Malak se nemíní vrátit na Bengarùv statek, dokud zùstává nechránìnı."); 
+	B_LogEntry (TOPIC_BengarALLEIN,"Malak se nemÃ­nÃ­ vrÃ¡tit na BengarÅ¯v statek, dokud zÅ¯stÃ¡vÃ¡ nechrÃ¡nÄ›nÃ½."); 
 
 	if (MIS_BengarsHelpingSLD == LOG_SUCCESS)
 	{
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_02"); //Najal jsem oldáka. Dává na farmu pozor.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_03"); //Tak to je samozøejmì jiná. Ale poèkat. Kdo toho chlapíka platí, he?
-	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_04"); //To je mùj problém.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_05"); //(zvìdavì) Mmh. Asi není šance, e bys mi to øekl, co?
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_02"); //Najal jsem Å¾oldÃ¡ka. DÃ¡vÃ¡ na farmu pozor.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_03"); //Tak to je samozÅ™ejmÄ› jinÃ¡. Ale poÄkat. Kdo toho chlapÃ­ka platÃ­, he?
+	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_15_04"); //To je mÅ¯j problÃ©m.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_08_05"); //(zvÄ›davÄ›) Mmh. Asi nenÃ­ Å¡ance, Å¾e bys mi to Å™ekl, co?
 	
 	Info_AddChoice	(DIA_Malak_BACKTOBENGAR, "Ne.", DIA_Malak_BACKTOBENGAR_los );
 	};
@@ -524,7 +524,7 @@ func void DIA_Malak_BACKTOBENGAR_Info ()
 func void DIA_Malak_BACKTOBENGAR_los ()
 {
 	AI_Output			(other, self, "DIA_Malak_BACKTOBENGAR_los_15_00"); //Ne.
-	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_los_08_01"); //Fajn. Tak se vrátím. Doufám, e ten chlap k nìèemu bude.
+	AI_Output			(self, other, "DIA_Malak_BACKTOBENGAR_los_08_01"); //Fajn. Tak se vrÃ¡tÃ­m. DoufÃ¡m, Å¾e ten chlap k nÄ›Äemu bude.
 	MIS_GetMalakBack = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Malak_BACKTOBENGAR);
 	B_NpcClearObsessionByDMT (self);
@@ -549,7 +549,7 @@ instance DIA_Malak_BACK		(C_INFO)
 	information	 = 	DIA_Malak_BACK_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Zùstaneš teï na Bengarovì farmì?";
+	description	 = 	"ZÅ¯staneÅ¡ teÄ na BengarovÄ› farmÄ›?";
 };
 
 func int DIA_Malak_BACK_Condition ()
@@ -565,8 +565,8 @@ func int DIA_Malak_BACK_Condition ()
 
 func void DIA_Malak_BACK_Info ()
 {
-	AI_Output			(other, self, "DIA_Malak_BACK_15_00"); //Zùstaneš teï na Bengarovì farmì?
-	AI_Output			(self, other, "DIA_Malak_BACK_08_01"); //Jasnì. Nìjak to zvládneme.
+	AI_Output			(other, self, "DIA_Malak_BACK_15_00"); //ZÅ¯staneÅ¡ teÄ na BengarovÄ› farmÄ›?
+	AI_Output			(self, other, "DIA_Malak_BACK_08_01"); //JasnÄ›. NÄ›jak to zvlÃ¡dneme.
 	B_NpcClearObsessionByDMT (self);
 };
 

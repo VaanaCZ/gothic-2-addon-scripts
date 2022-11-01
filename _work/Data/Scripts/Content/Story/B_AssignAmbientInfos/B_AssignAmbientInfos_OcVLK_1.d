@@ -30,7 +30,7 @@ INSTANCE DIA_OCVLK_1_PEOPLE(C_INFO)
 	condition	= DIA_OCVLK_1_PEOPLE_Condition;
 	information	= DIA_OCVLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kdo tomu tady velí?";
+	description = "Kdo tomu tady velÃ­?";
 };                       
 
 FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
@@ -44,8 +44,8 @@ FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_OCVLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Kdo tomu tady velí?
-	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Velitel Garond. Ale od chvíle, co se tu situace zhoršila, ho nikdo nevidìl jinde než v trùnním sálu. Je mi líto, že to vzalo tak špatný konec.
+	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Kdo tomu tady velÃ­?
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Velitel Garond. Ale od chvÃ­le, co se tu situace zhorÅ¡ila, ho nikdo nevidÄ›l jinde neÅ¾ v trÅ¯nnÃ­m sÃ¡lu. Je mi lÃ­to, Å¾e to vzalo tak Å¡patnÃ½ konec.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_1_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_1_LOCATION_Condition;
 	information	= DIA_OCVLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co víš o Hornickém údolí?";
+	description = "Co vÃ­Å¡ o HornickÃ©m ÃºdolÃ­?";
 };                       
 
 FUNC INT DIA_OCVLK_1_LOCATION_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_OCVLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Co víš o Hornickém údolí?
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Nìkolik z našich hochù je ještì stále v dolech a snaží se tìžit. Teda alespoò co vím.
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //Nechtìl bych s nimi mìnit. Celé údolí se hemží skøety. A to se ani nezmiòuju o dracích.
+	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Co vÃ­Å¡ o HornickÃ©m ÃºdolÃ­?
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //NÄ›kolik z naÅ¡ich hochÅ¯ je jeÅ¡tÄ› stÃ¡le v dolech a snaÅ¾Ã­ se tÄ›Å¾it. Teda alespoÅˆ co vÃ­m.
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //NechtÄ›l bych s nimi mÄ›nit. CelÃ© ÃºdolÃ­ se hemÅ¾Ã­ skÅ™ety. A to se ani nezmiÅˆuju o dracÃ­ch.
 };
 
 // *************************************************************************
@@ -97,18 +97,18 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Skøeti nás mají pøesnì tam, kde nás chtìli mít! Bez posil se dlouho neudržíme! Docela mì pøekvapuje, že nás draci jednoduše nedodìlali všechny.
+		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //SkÅ™eti nÃ¡s majÃ­ pÅ™esnÄ› tam, kde nÃ¡s chtÄ›li mÃ­t! Bez posil se dlouho neudrÅ¾Ã­me! Docela mÄ› pÅ™ekvapuje, Å¾e nÃ¡s draci jednoduÅ¡e nedodÄ›lali vÅ¡echny.
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //Tak se koneènì pøece jen doèkáme posil.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //Tak se koneÄnÄ› pÅ™ece jen doÄkÃ¡me posil.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //Slyším dobøe, že všichni draci byli zabiti? Díky Innosovi!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //SlyÅ¡Ã­m dobÅ™e, Å¾e vÅ¡ichni draci byli zabiti? DÃ­ky Innosovi!
 		};
 	};
 
@@ -116,11 +116,11 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Tahle zpropadená ruda. Mìli bysme ji všechnu shodit dolù z cimbuøí. Pak by nás skøeti možná nechali na pokoji.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Tahle zpropadenÃ¡ ruda. MÄ›li bysme ji vÅ¡echnu shodit dolÅ¯ z cimbuÅ™Ã­. Pak by nÃ¡s skÅ™eti moÅ¾nÃ¡ nechali na pokoji.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Ty smìšné bedny, které tak nedbale naházeli pøed vchod, nemùžou skøetùm nijak pøekazit jejich plány!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Ty smÄ›Å¡nÃ© bedny, kterÃ© tak nedbale nahÃ¡zeli pÅ™ed vchod, nemÅ¯Å¾ou skÅ™etÅ¯m nijak pÅ™ekazit jejich plÃ¡ny!
 		};
 	};
 };

@@ -30,11 +30,11 @@ FUNC VOID DIA_ToughGuy_NEWS_Info()
 	}
 	else if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		B_Say (self,other,"$TOUGHGUY_ATTACKWON"); //(selbstgef‰llig) Ich nehme an, du hast mittlerweile begriffen, wer von uns beiden der St‰rkere ist... Was willst du?
+		B_Say (self,other,"$TOUGHGUY_ATTACKWON"); //(selbstgef√§llig) Ich nehme an, du hast mittlerweile begriffen, wer von uns beiden der St√§rkere ist... Was willst du?
 	}
 	else //FIGHT_CANCEL
 	{
-		B_Say (self,other,"$TOUGHGUY_PLAYERATTACK"); //Ich dachte, du wolltest dich mit mir anlegen. Hast du's dir anders ¸berlegt? Willst doch lieber REDEN, was? (lacht) 
+		B_Say (self,other,"$TOUGHGUY_PLAYERATTACK"); //Ich dachte, du wolltest dich mit mir anlegen. Hast du's dir anders √ºberlegt? Willst doch lieber REDEN, was? (lacht) 
 	};
 	
 	// ------ AIVAR resetten ------
@@ -44,7 +44,7 @@ FUNC VOID DIA_ToughGuy_NEWS_Info()
 	//---------Skinner Addon Hack-----------------
 	if Hlp_GetInstanceID (self) == Hlp_GetInstanceID (Skinner)
 	{
-		AI_Output (self, other, "DIA_Addon_Skinner_ToughguyNews_08_00"); //...ale j· se s tebou nechci bavit...
+		AI_Output (self, other, "DIA_Addon_Skinner_ToughguyNews_08_00"); //...ale j√° se s tebou nechci bavit...
 
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 1); 

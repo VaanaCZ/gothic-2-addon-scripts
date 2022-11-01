@@ -42,7 +42,7 @@ func int DIA_Cedric_Hallo_Condition ()
 };
 func void DIA_Cedric_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Jsem Cedric, mistr meèe, královskı paladin.
+	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Jsem Cedric, mistr meÄe, krÃ¡lovskÃ½ paladin.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Cedric_CanTeach		(C_INFO)
 	condition	 = 	DIA_Cedric_CanTeach_Condition;
 	information	 = 	DIA_Cedric_CanTeach_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Mohl bys mì cvièit?";
+	description	 = 	"Mohl bys mÄ› cviÄit?";
 };
 func int DIA_Cedric_CanTeach_Condition ()
 {	
@@ -66,17 +66,17 @@ func int DIA_Cedric_CanTeach_Condition ()
 };
 func void DIA_Cedric_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //Mùeš mì uèit?
+	AI_Output (other, self, "DIA_Cedric_CanTeach_15_00"); //MÅ¯Å¾eÅ¡ mÄ› uÄit?
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Mùu tì trénovat v boji s jednoruèními zbranìmi.
+		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //MÅ¯Å¾u tÄ› trÃ©novat v boji s jednoruÄnÃ­mi zbranÄ›mi.
 		Cedric_Teach1H = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Paladin Cedric mì nauèí zacházet s jednoruèními zbranìmi.");
+		B_LogEntry (TOPIC_CityTeacher,"Paladin Cedric mÄ› nauÄÃ­ zachÃ¡zet s jednoruÄnÃ­mi zbranÄ›mi.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cedric_CanTeach_12_02"); //Uèím pouze paladiny.
+		AI_Output (self, other, "DIA_Cedric_CanTeach_12_02"); //UÄÃ­m pouze paladiny.
 	};
 	
 };
@@ -90,7 +90,7 @@ INSTANCE DIA_Cedric_Teach(C_INFO)
 	condition	= DIA_Cedric_Teach_Condition;
 	information	= DIA_Cedric_Teach_Info;
 	permanent	= TRUE;
-	description = "Chci, abys mì uèil.";
+	description = "Chci, abys mÄ› uÄil.";
 };                       
 //----------------------------------
 var int DIA_Cedric_Teach_permanent;
@@ -106,11 +106,11 @@ FUNC INT DIA_Cedric_Teach_Condition()
  
 FUNC VOID DIA_Cedric_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Cedric_Teach_15_00"); //Chci, abys mì uèil.
+	AI_Output (other,self ,"DIA_Cedric_Teach_15_00"); //Chci, abys mÄ› uÄil.
 	
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //O boji s meèem u víš úplnì všechno. U tì nemám co nauèit.
+		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //O boji s meÄem uÅ¾ vÃ­Å¡ ÃºplnÄ› vÅ¡echno. UÅ¾ tÄ› nemÃ¡m co nauÄit.
 	}
 	else
 	{

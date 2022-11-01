@@ -40,49 +40,49 @@ func int DIA_Landstreicher_HALLO_Condition ()
 
 func void DIA_Landstreicher_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_00"); //Co se to tady dìje?
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_15_01"); //Co myslíš?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_02"); //U jsi druhej, co tudy pádí, jako by ho pobodaly krvavı mouchy.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_00"); //Co se to tady dÄ›je?
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_15_01"); //Co myslÃ­Å¡?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_09_02"); //UÅ¾ jsi druhej, co tudy pÃ¡dÃ­, jako by ho pobodaly krvavÃ½ mouchy.
 	
 	Info_ClearChoices	(DIA_Landstreicher_HALLO);
 		
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "U musím jít.", DIA_Landstreicher_HALLO_weg );
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Kam šel ten druhı?", DIA_Landstreicher_HALLO_wo );
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Kdo byl ten druhej chlápek?", DIA_Landstreicher_HALLO_wer );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "UÅ¾ musÃ­m jÃ­t.", DIA_Landstreicher_HALLO_weg );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "Kam Å¡el ten druhÃ½?", DIA_Landstreicher_HALLO_wo );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "Kdo byl ten druhej chlÃ¡pek?", DIA_Landstreicher_HALLO_wer );
 
 };
 func void DIA_Landstreicher_HALLO_wo ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wo_15_00"); //Kam šel ten druhı?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wo_09_01"); //Metelil to dál po cestì jak namydlenej blesk.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wo_15_00"); //Kam Å¡el ten druhÃ½?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wo_09_01"); //Metelil to dÃ¡l po cestÄ› jak namydlenej blesk.
 };
 
 func void DIA_Landstreicher_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Kdo byl ten druhej chlápek?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_01"); //Vypadal jako jeden z tìch chytrolínskejch novicù z kláštera.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Øíkej si, co chceš, ale nìkterı z tìch klukù to nemaj v hlavì v poøádku.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Kdo byl ten druhej chlÃ¡pek?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_01"); //Vypadal jako jeden z tÄ›ch chytrolÃ­nskejch novicÅ¯ z klÃ¡Å¡tera.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Å˜Ã­kej si, co chceÅ¡, ale nÄ›kterÃ½ z tÄ›ch klukÅ¯ to nemaj v hlavÄ› v poÅ™Ã¡dku.
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_03"); //Staèí se podívat na ty jejich pøiblblı hábity. Nechtìl bych, aby mì v tom nìkdo chytil v noci na ulici. (smích)
-		Info_AddChoice	(DIA_Landstreicher_HALLO, "Dávej si pozor na to, co øíkáš. Taky jsem kdysi bıval novicem v klášteøe.", DIA_Landstreicher_HALLO_wer_vorsicht );
+		AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_03"); //StaÄÃ­ se podÃ­vat na ty jejich pÅ™iblblÃ½ hÃ¡bity. NechtÄ›l bych, aby mÄ› v tom nÄ›kdo chytil v noci na ulici. (smÃ­ch)
+		Info_AddChoice	(DIA_Landstreicher_HALLO, "DÃ¡vej si pozor na to, co Å™Ã­kÃ¡Å¡. Taky jsem kdysi bÃ½val novicem v klÃ¡Å¡teÅ™e.", DIA_Landstreicher_HALLO_wer_vorsicht );
 	};
 };
 func void DIA_Landstreicher_HALLO_wer_vorsicht ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_15_00"); //Dávej si pozor na jazyk. Sám jsem taky bıval novicem v tom klášteøe.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_01"); //(smích) Ty ubohá sviòko. To vysvìtluje pár vìcí.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_02"); //Hele klídek. Hleï si svıho. Máš svıch starostí dost, tak se nenech rušit.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_15_00"); //DÃ¡vej si pozor na jazyk. SÃ¡m jsem taky bÃ½val novicem v tom klÃ¡Å¡teÅ™e.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_01"); //(smÃ­ch) Ty ubohÃ¡ sviÅˆko. To vysvÄ›tluje pÃ¡r vÄ›cÃ­.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_09_02"); //Hele klÃ­dek. HleÄ si svÃ½ho. MÃ¡Å¡ svÃ½ch starostÃ­ dost, tak se nenech ruÅ¡it.
 
-	Info_AddChoice		(DIA_Landstreicher_HALLO, "Nìkdo by tì mìl nauèit dobrımu vychování.", DIA_Landstreicher_HALLO_wer_vorsicht_Manieren );
+	Info_AddChoice		(DIA_Landstreicher_HALLO, "NÄ›kdo by tÄ› mÄ›l nauÄit dobrÃ½mu vychovÃ¡nÃ­.", DIA_Landstreicher_HALLO_wer_vorsicht_Manieren );
 
 };
 func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_15_00"); //Nìkdo by tì mìl nauèit slušnımu chování.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //No tak se netvaø tak dotèenì. Fajn, kdy tak touíš po boji, máš ho mít.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_02"); //Tak mi uka, co v tobì je, novici.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_15_00"); //NÄ›kdo by tÄ› mÄ›l nauÄit sluÅ¡nÃ½mu chovÃ¡nÃ­.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //No tak se netvaÅ™ tak dotÄenÄ›. Fajn, kdyÅ¾ tak touÅ¾Ã­Å¡ po boji, mÃ¡Å¡ ho mÃ­t.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_02"); //Tak mi ukaÅ¾, co v tobÄ› je, novici.
 
 	AI_StopProcessInfos (self); 
 	B_Attack (self, other, AR_NONE, 1);
@@ -92,8 +92,8 @@ func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 
 func void DIA_Landstreicher_HALLO_weg ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_weg_15_00"); //U musím jít.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_weg_09_01"); //Hej. ádnı problém.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_weg_15_00"); //UÅ¾ musÃ­m jÃ­t.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_weg_09_01"); //Hej. Å½Ã¡dnÃ½ problÃ©m.
 
 	AI_StopProcessInfos (self);
 };
@@ -110,7 +110,7 @@ instance DIA_Landstreicher_WASMACHSTDU		(C_INFO)
 	information	 = 	DIA_Landstreicher_WASMACHSTDU_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Landstreicher_WASMACHSTDU_Condition ()
@@ -120,15 +120,15 @@ func int DIA_Landstreicher_WASMACHSTDU_Condition ()
 
 func void DIA_Landstreicher_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_WASMACHSTDU_15_00"); //Co tady dìláš?
+	AI_Output			(other, self, "DIA_Landstreicher_WASMACHSTDU_15_00"); //Co tady dÄ›lÃ¡Å¡?
 	
 		if (Npc_KnowsInfo(other, DIA_Landstreicher_HALLO))
 		{
-			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //Máš nìjak moc otázek na takovıho náfuku.
+			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //MÃ¡Å¡ nÄ›jak moc otÃ¡zek na takovÃ½ho nÃ¡fuku.
 		};
 
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Vzpomeò si na tu skøetí jeskyni, co jsme spolu prolezli, a já ti øeknu to tajemství.
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Jinak se starej sám o sebe.
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //VzpomeÅˆ si na tu skÅ™etÃ­ jeskyni, co jsme spolu prolezli, a jÃ¡ ti Å™eknu to tajemstvÃ­.
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Jinak se starej sÃ¡m o sebe.
 
 	AI_StopProcessInfos (self);
 };

@@ -45,12 +45,12 @@ FUNC INT DIA_PC_Thief_DI_Hallo_Condition()
 FUNC VOID DIA_PC_Thief_DI_Hallo_Info()
 {	
 	AI_Output (other,self ,"DIA_PC_Thief_DI_Hallo_15_00"); //Tak jsme tady.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_01"); //Ten ostrov není od Khorinidu tak daleko, jak jsem si myslel.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_02"); //To jsem nevìdìl. Teï se mi ale samozøejmì pár vìcí vyjasnilo.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_03"); //Poøád mi vrtalo hlavou, jak je moné, e mají skøeti tak dobrı pøísun zásob.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_04"); //S pomocí téhle základny to je hraèka.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_05"); //Bìhem cesty do srdce tohoto ostrova nejspíš narazíš na jednu dvì pasti.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_06"); //Pokud by ses nìkde zasekl, pøijï ke mnì. Moná by se ti mohly hodit moje zkušenosti.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_01"); //Ten ostrov nenÃ­ od Khorinidu tak daleko, jak jsem si myslel.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_02"); //To jsem nevÄ›dÄ›l. TeÄ se mi ale samozÅ™ejmÄ› pÃ¡r vÄ›cÃ­ vyjasnilo.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_03"); //PoÅ™Ã¡d mi vrtalo hlavou, jak je moÅ¾nÃ©, Å¾e majÃ­ skÅ™eti tak dobrÃ½ pÅ™Ã­sun zÃ¡sob.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_04"); //S pomocÃ­ tÃ©hle zÃ¡kladny to je hraÄka.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_05"); //BÄ›hem cesty do srdce tohoto ostrova nejspÃ­Å¡ narazÃ­Å¡ na jednu dvÄ› pasti.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Hallo_11_06"); //Pokud by ses nÄ›kde zasekl, pÅ™ijÄ ke mnÄ›. MoÅ¾nÃ¡ by se ti mohly hodit moje zkuÅ¡enosti.
 };
 
 // ************************************************************
@@ -65,7 +65,7 @@ INSTANCE DIA_PC_Thief_DI_RAT (C_INFO)
 	information	= DIA_PC_Thief_DI_RAT_Info;
 	permanent	 = 	TRUE;
 
-	description = "Potøebuji tvou pomoc.";
+	description = "PotÅ™ebuji tvou pomoc.";
 };     
                   
 FUNC INT DIA_PC_Thief_DI_RAT_Condition()
@@ -81,36 +81,36 @@ var int DIA_PC_Thief_DI_RAT_OneTime;
 var int DIA_PC_Thief_DI_RAT_OneTime2;
 FUNC VOID DIA_PC_Thief_DI_RAT_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_00"); //Potøebuji tvou pomoc.
+	AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_00"); //PotÅ™ebuji tvou pomoc.
 	
 	if (Npc_IsDead(OrkElite_AntiPaladinOrkOberst_DI))
 	&& (EVT_ORKOBERST_SWITCH_FOUND == FALSE)
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_01"); //Tam nahoøe má svùj hlavní stan skøetí plukovník. Nemùu se dostat dovnitø ostrova.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_02"); //Skøeti jsou chytrá stvoøení. Èasto jsou neprávem podceòováni. Øekl bych, e mají nìjakı tajnı prùchod. Prohledej zdi, snad najdeš nìjakı skrytı spínaè.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_03"); //Ale nezapomeò, e aby takovéhle tajné spínaèe fungovaly, musíš je èasto pouívat v pøesnì urèeném poøadí.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_01"); //Tam nahoÅ™e mÃ¡ svÅ¯j hlavnÃ­ stan skÅ™etÃ­ plukovnÃ­k. NemÅ¯Å¾u se dostat dovnitÅ™ ostrova.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_02"); //SkÅ™eti jsou chytrÃ¡ stvoÅ™enÃ­. ÄŒasto jsou neprÃ¡vem podceÅˆovÃ¡ni. Å˜ekl bych, Å¾e majÃ­ nÄ›jakÃ½ tajnÃ½ prÅ¯chod. Prohledej zdi, snad najdeÅ¡ nÄ›jakÃ½ skrytÃ½ spÃ­naÄ.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_03"); //Ale nezapomeÅˆ, Å¾e aby takovÃ©hle tajnÃ© spÃ­naÄe fungovaly, musÃ­Å¡ je Äasto pouÅ¾Ã­vat v pÅ™esnÄ› urÄenÃ©m poÅ™adÃ­.
 		 
 	}
 	else if	(Npc_IsDead(FireDragonIsland))
 	&& (EVT_DIBRIDGE_OPENED == FALSE)
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_04"); //Bojoval jsem s drakem a teï mám pøed sebou propast s padacím mostem. Ten most je ale zvednutı a já se nemùu dostat na druhou stranu.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_05"); //Hmm. Zkoušel jsi u nìjakou støelnou zbraò? Moná by šlo jeho mechanismus spustit dobøe míøenou ranou.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_04"); //Bojoval jsem s drakem a teÄ mÃ¡m pÅ™ed sebou propast s padacÃ­m mostem. Ten most je ale zvednutÃ½ a jÃ¡ se nemÅ¯Å¾u dostat na druhou stranu.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_05"); //Hmm. ZkouÅ¡el jsi uÅ¾ nÄ›jakou stÅ™elnou zbraÅˆ? MoÅ¾nÃ¡ by Å¡lo jeho mechanismus spustit dobÅ™e mÃ­Å™enou ranou.
 	}
 	else if	(Npc_IsDead(Skeleton_Lord_Archol))
 	&& ((Npc_KnowsInfo(other, DIA_Schwarzmagier_HELLO)) == FALSE)
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_06"); //Stojím proti hordì nemrtvıch a jejich sloitım pastem.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_07"); //Je mi líto, ale s nemrtvımi nemám ádné zkušenosti. S tím si budeš muset poradit sám.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_RAT_15_06"); //StojÃ­m proti hordÄ› nemrtvÃ½ch a jejich sloÅ¾itÃ½m pastem.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_07"); //Je mi lÃ­to, ale s nemrtvÃ½mi nemÃ¡m Å¾Ã¡dnÃ© zkuÅ¡enosti. S tÃ­m si budeÅ¡ muset poradit sÃ¡m.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_08"); //Vra se ke mnì, a budeš mít problém, na jeho øešení budou moje zkušenosti staèit.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_08"); //VraÅ¥ se ke mnÄ›, aÅ¾ budeÅ¡ mÃ­t problÃ©m, na jehoÅ¾ Å™eÅ¡enÃ­ budou moje zkuÅ¡enosti staÄit.
 		
 		 if (ORkSturmDI == TRUE)
 		 && (DIA_PC_Thief_DI_RAT_OneTime2 == FALSE)
 			{
-				AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_09"); //Ještì jedna vìc. Byl bych rád, kdybys k lodi nepøivedl všechny pøíšery, co se tu po okolí potulují. Doufám, e tenhle skøetí nájezd byl poslední, kterı jsem musel odráet!
+				AI_Output (self ,other,"DIA_PC_Thief_DI_RAT_11_09"); //JeÅ¡tÄ› jedna vÄ›c. Byl bych rÃ¡d, kdybys k lodi nepÅ™ivedl vÅ¡echny pÅ™Ã­Å¡ery, co se tu po okolÃ­ potulujÃ­. DoufÃ¡m, Å¾e tenhle skÅ™etÃ­ nÃ¡jezd byl poslednÃ­, kterÃ½ jsem musel odrÃ¡Å¾et!
 				B_GivePlayerXP (XP_Ambient);
 				DIA_PC_Thief_DI_RAT_OneTime2 = TRUE;
 			};	
@@ -130,7 +130,7 @@ instance DIA_Diego_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Potøebuju doplnit vızbroj.";
+	description	 = 	"PotÅ™ebuju doplnit vÃ½zbroj.";
 };
 
 func int DIA_Diego_DI_TRADE_Condition ()
@@ -143,7 +143,7 @@ func int DIA_Diego_DI_TRADE_Condition ()
 
 func void DIA_Diego_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Diego_DI_TRADE_15_00"); //Potøebuju doplnit vızbroj.
+	AI_Output			(other, self, "DIA_Diego_DI_TRADE_15_00"); //PotÅ™ebuju doplnit vÃ½zbroj.
 	B_GiveTradeInv (self);
 
 	//Joly: Mc ArrowBolt
@@ -160,7 +160,7 @@ func void DIA_Diego_DI_TRADE_Info ()
 	//////////////////////////////////////////////////////////////////////////////////////
 
 
-	AI_Output			(self, other, "DIA_Diego_DI_TRADE_11_01"); //Moná bych ti mohl pomoct.
+	AI_Output			(self, other, "DIA_Diego_DI_TRADE_11_01"); //MoÅ¾nÃ¡ bych ti mohl pomoct.
 };
 
 // ************************************************************
@@ -175,7 +175,7 @@ INSTANCE DIA_PC_Thief_DI_Training_Talente (C_INFO)
 	information	= DIA_PC_Thief_DI_Training_Talente_Info;
 	permanent	 = 	TRUE;
 
-	description = "Trénuj mì.";
+	description = "TrÃ©nuj mÄ›.";
 };                       
 FUNC INT DIA_PC_Thief_DI_Training_Talente_Condition()
 {
@@ -188,15 +188,15 @@ FUNC INT DIA_PC_Thief_DI_Training_Talente_Condition()
 
 FUNC VOID DIA_PC_Thief_DI_Training_Talente_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Thief_DI_Training_15_00"); //Trénuj mì.
-	AI_Output (self ,other,"DIA_PC_Thief_DI_Training_11_01"); //Co potøebuješ?
+	AI_Output (other,self ,"DIA_PC_Thief_DI_Training_15_00"); //TrÃ©nuj mÄ›.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_Training_11_01"); //Co potÅ™ebujeÅ¡?
 	
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
 	Info_AddChoice	  (DIA_PC_Thief_DI_Training_Talente, DIALOG_BACK, DIA_PC_Thief_DI_Training_Talente_BACK);
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-		Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "Páèení zámkù"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
+		Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "PÃ¡ÄenÃ­ zÃ¡mkÅ¯"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
 	};
 
 	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))			,DIA_PC_Thief_DI_Training_DEX_1);
@@ -214,7 +214,7 @@ func void DIA_PC_Thief_DI_Training_DEX_1 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 1, T_MAX))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_1_11_00"); //ivot pro tebe bude mnohem jednodušší, kdy se budeš dret mimo støeleckı úhel.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_1_11_00"); //Å½ivot pro tebe bude mnohem jednoduÅ¡Å¡Ã­, kdyÅ¾ se budeÅ¡ drÅ¾et mimo stÅ™eleckÃ½ Ãºhel.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -222,7 +222,7 @@ func void DIA_PC_Thief_DI_Training_DEX_1 ()
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "Páèení zámkù"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
+	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "PÃ¡ÄenÃ­ zÃ¡mkÅ¯"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
 	};
 
 	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))			,DIA_PC_Thief_DI_Training_DEX_1);
@@ -240,7 +240,7 @@ func void DIA_PC_Thief_DI_Training_DEX_5 ()
 {
 	if (B_TeachAttributePoints (self, other, ATR_DEXTERITY, 5, T_MAX))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_5_11_00"); //Kdy se pohybuješ, sna se bıt mrštnı jako koèka. Zbytek pùjde sám.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_DEX_5_11_00"); //KdyÅ¾ se pohybujeÅ¡, snaÅ¾ se bÃ½t mrÅ¡tnÃ½ jako koÄka. Zbytek pÅ¯jde sÃ¡m.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -248,7 +248,7 @@ func void DIA_PC_Thief_DI_Training_DEX_5 ()
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "Páèení zámkù"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
+	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "PÃ¡ÄenÃ­ zÃ¡mkÅ¯"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
 	};
 
 	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))			,DIA_PC_Thief_DI_Training_DEX_1);
@@ -266,7 +266,7 @@ func void DIA_PC_Thief_DI_Training_Combat_BOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 1, 100))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_Combat_BOW_1_11_00"); //Jestli chceš bıt opravdu dobrı, hodnì trénuj naneèisto.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_Combat_BOW_1_11_00"); //Jestli chceÅ¡ bÃ½t opravdu dobrÃ½, hodnÄ› trÃ©nuj naneÄisto.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -274,7 +274,7 @@ func void DIA_PC_Thief_DI_Training_Combat_BOW_1()
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "Páèení zámkù"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
+	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "PÃ¡ÄenÃ­ zÃ¡mkÅ¯"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
 	};
 
 	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))			,DIA_PC_Thief_DI_Training_DEX_1);
@@ -289,7 +289,7 @@ func void DIA_PC_Thief_DI_Training_Combat_BOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 5, 100))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_Combat_BOW_5_11_00"); //Pøi míøení pomalu vydechni, aby se ti netøásla ruka.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_Combat_BOW_5_11_00"); //PÅ™i mÃ­Å™enÃ­ pomalu vydechni, aby se ti netÅ™Ã¡sla ruka.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -297,7 +297,7 @@ func void DIA_PC_Thief_DI_Training_Combat_BOW_5()
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "Páèení zámkù"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
+	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "PÃ¡ÄenÃ­ zÃ¡mkÅ¯"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
 	};
 	
 	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))			,DIA_PC_Thief_DI_Training_DEX_1);
@@ -312,7 +312,7 @@ func void DIA_PC_Thief_DI_Training_Talente_PICKLOCK ()
 {
 	if (B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK))
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_PICKLOCK_11_00"); //U bylo naèase. Nechápu, es to doteï neumìl.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_Training_PICKLOCK_11_00"); //UÅ¾ bylo naÄase. NechÃ¡pu, Å¾es to doteÄ neumÄ›l.
 	};
 
 	Info_ClearChoices (DIA_PC_Thief_DI_Training_Talente);
@@ -320,7 +320,7 @@ func void DIA_PC_Thief_DI_Training_Talente_PICKLOCK ()
 
 	if (Npc_GetTalentSkill (hero, NPC_TALENT_PICKLOCK) == FALSE)
 	{
-	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "Páèení zámkù"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
+	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, "PÃ¡ÄenÃ­ zÃ¡mkÅ¯"	,DIA_PC_Thief_DI_Training_Talente_PICKLOCK);
 	};
 
 	Info_AddChoice		(DIA_PC_Thief_DI_Training_Talente, B_BuildLearnString(PRINT_LearnDEX1			, B_GetLearnCostAttribute(other, ATR_DEXTERITY))			,DIA_PC_Thief_DI_Training_DEX_1);
@@ -348,7 +348,7 @@ INSTANCE DIA_PC_Thief_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_PC_Thief_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description = "Je po všem. Teï odsud mùeme vypadnout.";
+	description = "Je po vÅ¡em. TeÄ odsud mÅ¯Å¾eme vypadnout.";
 };                       
 FUNC INT DIA_PC_Thief_DI_UndeadDragonDead_Condition()
 {
@@ -360,36 +360,36 @@ FUNC INT DIA_PC_Thief_DI_UndeadDragonDead_Condition()
 var int DIA_PC_Thief_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_PC_Thief_DI_UndeadDragonDead_Info()
 {	
-	AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_00"); //Je po všem. Teï odsud mùeme vypadnout.
+	AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_00"); //Je po vÅ¡em. TeÄ odsud mÅ¯Å¾eme vypadnout.
 
 	if ((Npc_GetDistToWP(self,"WP_UNDEAD_MIDDLE_01")<4000) )
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_01"); //Jen se na to podívej. Za celej svùj ivot jsem nic podobnıho nevidìl.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_02"); //Jak ses proboha skrz tu vìc dostal?
-		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_03"); //Øekl bych, e jsem mìl štìstí.
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_04"); //(smìje se) Kdy to øíkáš.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_01"); //Jen se na to podÃ­vej. Za celej svÅ¯j Å¾ivot jsem nic podobnÃ½ho nevidÄ›l.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_02"); //Jak ses proboha skrz tu vÄ›c dostal?
+		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_03"); //Å˜ekl bych, Å¾e jsem mÄ›l Å¡tÄ›stÃ­.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_04"); //(smÄ›je se) KdyÅ¾ to Å™Ã­kÃ¡Å¡.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_05"); //Dobrá.
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_05"); //DobrÃ¡.
 	};
 
 	if (DIA_PC_Thief_DI_UndeadDragonDead_OneTime == FALSE )
 	{
-		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_06"); //Co budeš dìlat dál?
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_07"); //To je dobrá otázka. Ze všeho nejdøív se asi vrátím do Khorinidu.
-		//AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_08"); //Wäre doch gelacht, wenn ich aus dem Dreckloch nicht wieder eine gescheite Stadt ohne Korruption machen kann.
+		AI_Output (other,self ,"DIA_PC_Thief_DI_UndeadDragonDead_15_06"); //Co budeÅ¡ dÄ›lat dÃ¡l?
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_07"); //To je dobrÃ¡ otÃ¡zka. Ze vÅ¡eho nejdÅ™Ã­v se asi vrÃ¡tÃ­m do Khorinidu.
+		//AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_08"); //WÃ¤re doch gelacht, wenn ich aus dem Dreckloch nicht wieder eine gescheite Stadt ohne Korruption machen kann.
 		if (Diebesgilde_Verraten == TRUE)
 		|| (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 		{
-			AI_Output (self ,other,"DIA_DiegoDI_Add_11_00"); //Zlodìjskej cech tam u není. Tím pádem se nabízí nìkolik zajímavıch pøíleitostí.
+			AI_Output (self ,other,"DIA_DiegoDI_Add_11_00"); //ZlodÄ›jskej cech tam uÅ¾ nenÃ­. TÃ­m pÃ¡dem se nabÃ­zÃ­ nÄ›kolik zajÃ­mavÃ½ch pÅ™Ã­leÅ¾itostÃ­.
 		};
-		//AI_Output (self ,other,"DIA_DiegoDI_Add_11_01"); //Für Bromors Haus kann ich bestimmt noch was rausschlagen - vorausgesetzt ich finde einen Käufer...
-		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_09"); //Hmm. Nebo moná prostì pøevezmu Bromorovu ivnost. V tom jsou vdycky peníze. Poctivı peníze.
+		//AI_Output (self ,other,"DIA_DiegoDI_Add_11_01"); //FÃ¼r Bromors Haus kann ich bestimmt noch was rausschlagen - vorausgesetzt ich finde einen KÃ¤ufer...
+		AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_09"); //Hmm. Nebo moÅ¾nÃ¡ prostÄ› pÅ™evezmu Bromorovu Å¾ivnost. V tom jsou vÅ¾dycky penÃ­ze. PoctivÃ½ penÃ­ze.
 		DIA_PC_Thief_DI_UndeadDragonDead_OneTime = TRUE;
 	};
 
-	AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_10"); //Bì za kapitánem, a u jsme pryè.
+	AI_Output (self ,other,"DIA_PC_Thief_DI_UndeadDragonDead_11_10"); //BÄ›Å¾ za kapitÃ¡nem, aÅ¥ uÅ¾ jsme pryÄ.
 	AI_StopProcessInfos (self);
 
 	if ( Lares_IsOnBoard != LOG_SUCCESS) 

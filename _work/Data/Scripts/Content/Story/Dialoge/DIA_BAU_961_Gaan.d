@@ -52,12 +52,12 @@ func void DIA_Addon_Gaan_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Gaan_MeetingIsRunning_One_time == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_00"); //Á, nová tváø. Vítej v kruhu vody.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_00"); //Ã, novÃ¡ tvÃ¡Å™. VÃ­tej v kruhu vody.
 		DIA_Addon_Gaan_MeetingIsRunning_One_time = TRUE;
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_01"); //Vatras tì chce vidìt. Mìl bys za ním zajít.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_01"); //Vatras tÄ› chce vidÄ›t. MÄ›l bys za nÃ­m zajÃ­t.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -72,7 +72,7 @@ instance DIA_Gaan_HALLO		(C_INFO)
 	condition	 = 	DIA_Gaan_HALLO_Condition;
 	information	 = 	DIA_Gaan_HALLO_Info;
 
-	description	 = 	"Tady nahoøe je docela hezky.";
+	description	 = 	"Tady nahoÅ™e je docela hezky.";
 };
 
 func int DIA_Gaan_HALLO_Condition ()
@@ -82,9 +82,9 @@ func int DIA_Gaan_HALLO_Condition ()
 
 func void DIA_Gaan_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_HALLO_15_00"); //Tady nahoøe je docela hezky.
-	AI_Output			(self, other, "DIA_Gaan_HALLO_03_01"); //Je to tu docela pìkné. Ale jakmile projdeš tím prùsmykem támhle, pøestaneš si to myslet.
-	AI_Output			(self, other, "DIA_Gaan_HALLO_03_02"); //Jestli na tebe tenhle kus zemì udìlal dojem, tak poèkej, co pak uvidíš v Hornickém údolí.
+	AI_Output			(other, self, "DIA_Gaan_HALLO_15_00"); //Tady nahoÅ™e je docela hezky.
+	AI_Output			(self, other, "DIA_Gaan_HALLO_03_01"); //Je to tu docela pÄ›knÃ©. Ale jakmile projdeÅ¡ tÃ­m prÅ¯smykem tÃ¡mhle, pÅ™estaneÅ¡ si to myslet.
+	AI_Output			(self, other, "DIA_Gaan_HALLO_03_02"); //Jestli na tebe tenhle kus zemÄ› udÄ›lal dojem, tak poÄkej, co pak uvidÃ­Å¡ v HornickÃ©m ÃºdolÃ­.
 
 };
 
@@ -116,8 +116,8 @@ func int DIA_Gaan_WASMACHSTDU_Condition ()
 func void DIA_Gaan_WASMACHSTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Gaan_WASMACHSTDU_15_00"); //Kdo jsi?
-	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_01"); //Jmenuju se Gaan. Jsem lovec a pracuju pro Bengara. Farmaøí tady na náhorních pastvinách.
-	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_02"); //Trávím tady venku vìtšinu svého èasu a vyhøívám se na slunci.
+	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_01"); //Jmenuju se Gaan. Jsem lovec a pracuju pro Bengara. FarmaÅ™Ã­ tady na nÃ¡hornÃ­ch pastvinÃ¡ch.
+	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_02"); //TrÃ¡vÃ­m tady venku vÄ›tÅ¡inu svÃ©ho Äasu a vyhÅ™Ã­vÃ¡m se na slunci.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -130,7 +130,7 @@ instance DIA_Addon_Gaan_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_Ranger_Condition;
 	information	 = 	DIA_Addon_Gaan_Ranger_Info;
 
-	description	 = 	"Proè se tváøíš tak zasmušile?";
+	description	 = 	"ProÄ se tvÃ¡Å™Ã­Å¡ tak zasmuÅ¡ile?";
 };
 
 func int DIA_Addon_Gaan_Ranger_Condition ()
@@ -145,10 +145,10 @@ func int DIA_Addon_Gaan_Ranger_Condition ()
 
 func void DIA_Addon_Gaan_Ranger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_00"); //Proè se tváøíš tak vánì?
-	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_01"); //Nosíš akvamarínovı prsten.
-	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_02"); //Ty patøíš ke kruhu vody?
-	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_03"); //Samozøejmì. A rád mezi námi vidím novou tváø.
+	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_00"); //ProÄ se tvÃ¡Å™Ã­Å¡ tak vÃ¡Å¾nÄ›?
+	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_01"); //NosÃ­Å¡ akvamarÃ­novÃ½ prsten.
+	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_02"); //Ty patÅ™Ã­Å¡ ke kruhu vody?
+	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_03"); //SamozÅ™ejmÄ›. A rÃ¡d mezi nÃ¡mi vidÃ­m novou tvÃ¡Å™.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -162,7 +162,7 @@ instance DIA_Addon_Gaan_AufgabeBeimRing		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_AufgabeBeimRing_Condition;
 	information	 = 	DIA_Addon_Gaan_AufgabeBeimRing_Info;
 
-	description	 = 	"Co v tom 'kruhu vody' dìláš ty?";
+	description	 = 	"Co v tom 'kruhu vody' dÄ›lÃ¡Å¡ ty?";
 };
 
 func int DIA_Addon_Gaan_AufgabeBeimRing_Condition ()
@@ -177,9 +177,9 @@ func int DIA_Addon_Gaan_AufgabeBeimRing_Condition ()
 
 func void DIA_Addon_Gaan_AufgabeBeimRing_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_AufgabeBeimRing_15_00"); //Jakı je tvùj úkol v rámci kruhu vody?
-	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_01"); //Dohlíím na vstup do prùsmyku a hlídám, kdo pøichází a odchází.
-	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_02"); //Ale od té doby, co paladinové zavøeli bránu, sem u moc lidí nechodí.
+	AI_Output	(other, self, "DIA_Addon_Gaan_AufgabeBeimRing_15_00"); //JakÃ½ je tvÅ¯j Ãºkol v rÃ¡mci kruhu vody?
+	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_01"); //DohlÃ­Å¾Ã­m na vstup do prÅ¯smyku a hlÃ­dÃ¡m, kdo pÅ™ichÃ¡zÃ­ a odchÃ¡zÃ­.
+	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_02"); //Ale od tÃ© doby, co paladinovÃ© zavÅ™eli brÃ¡nu, sem uÅ¾ moc lidÃ­ nechodÃ­.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ instance DIA_Addon_Gaan_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Gaan_MissingPeople_Info;
 
-	description	 = 	"Slyšel jsi o tìch pohøešovanıch lidech?";
+	description	 = 	"SlyÅ¡el jsi o tÄ›ch pohÅ™eÅ¡ovanÃ½ch lidech?";
 };
 
 func int DIA_Addon_Gaan_MissingPeople_Condition ()
@@ -206,9 +206,9 @@ func int DIA_Addon_Gaan_MissingPeople_Condition ()
 
 func void DIA_Addon_Gaan_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_MissingPeople_15_00"); //Nezaslechl jsi nìco o tìch pohøešovanıch lidech?
-	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_01"); //Jistìe ano. Právì proto musíme mít oèi na stopkách.
-	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_02"); //Ale popravdì øeèeno jsem zatím nevidìl nic, co by ti mohlo poskytnout nìjakou stopu.
+	AI_Output	(other, self, "DIA_Addon_Gaan_MissingPeople_15_00"); //Nezaslechl jsi nÄ›co o tÄ›ch pohÅ™eÅ¡ovanÃ½ch lidech?
+	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_01"); //JistÄ›Å¾e ano. PrÃ¡vÄ› proto musÃ­me mÃ­t oÄi na stopkÃ¡ch.
+	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_02"); //Ale popravdÄ› Å™eÄeno jsem zatÃ­m nevidÄ›l nic, co by ti mohlo poskytnout nÄ›jakou stopu.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -221,7 +221,7 @@ instance DIA_Gaan_WALD		(C_INFO)
 	condition	 = 	DIA_Gaan_WALD_Condition;
 	information	 = 	DIA_Gaan_WALD_Info;
 
-	description	 = 	"Co bych mìl vìdìt o Hornickém údolí?";
+	description	 = 	"Co bych mÄ›l vÄ›dÄ›t o HornickÃ©m ÃºdolÃ­?";
 };
 
 func int DIA_Gaan_WALD_Condition ()
@@ -231,12 +231,12 @@ func int DIA_Gaan_WALD_Condition ()
 
 func void DIA_Gaan_WALD_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WALD_15_00"); //Co bych mìl vìdìt o Hornickém údolí?
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_01"); //Tak to nevím. Byl jsem tam jen na skok. Vypadá to tam pìknì nebezpeènì.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_02"); //Nejlepší vìc, jakou mùeš udìlat, je dret se po vstupu do prùsmyku vyšlapané stezky.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_03"); //Buï mùeš jít velkou strí, nebo po cestì pøes most. Je to kratší a bezpeènìjší.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_04"); //Teï, kdy se to všude hemí skøety, musíš bıt hodnì opatrnı.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_05"); //Nerad bych tì táhnul k bylinkáøce.
+	AI_Output			(other, self, "DIA_Gaan_WALD_15_00"); //Co bych mÄ›l vÄ›dÄ›t o HornickÃ©m ÃºdolÃ­?
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_01"); //Tak to nevÃ­m. Byl jsem tam jen na skok. VypadÃ¡ to tam pÄ›knÄ› nebezpeÄnÄ›.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_02"); //NejlepÅ¡Ã­ vÄ›c, jakou mÅ¯Å¾eÅ¡ udÄ›lat, je drÅ¾et se po vstupu do prÅ¯smyku vyÅ¡lapanÃ© stezky.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_03"); //BuÄ mÅ¯Å¾eÅ¡ jÃ­t velkou strÅ¾Ã­, nebo po cestÄ› pÅ™es most. Je to kratÅ¡Ã­ a bezpeÄnÄ›jÅ¡Ã­.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_04"); //TeÄ, kdyÅ¾ se to vÅ¡ude hemÅ¾Ã­ skÅ™ety, musÃ­Å¡ bÃ½t hodnÄ› opatrnÃ½.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_05"); //Nerad bych tÄ› tÃ¡hnul k bylinkÃ¡Å™ce.
 
 };
 
@@ -250,7 +250,7 @@ instance DIA_Gaan_SAGITTA		(C_INFO)
 	condition	 = 	DIA_Gaan_SAGITTA_Condition;
 	information	 = 	DIA_Gaan_SAGITTA_Info;
 
-	description	 = 	"Bylinkáøce?";
+	description	 = 	"BylinkÃ¡Å™ce?";
 };
 
 func int DIA_Gaan_SAGITTA_Condition ()
@@ -263,12 +263,12 @@ func int DIA_Gaan_SAGITTA_Condition ()
 
 func void DIA_Gaan_SAGITTA_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_SAGITTA_15_00"); //Bylinkáøce?
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_01"); //Jmenuje se Sagitta. Léèí farmáøe a ostatní lidi, co ijí mimo mìsto.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_02"); //Vánì podivná enština.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_03"); //Nikdo za ní ve skuteènosti nechce chodit a všichni o ní rozšiøují rùzné fámy.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_04"); //Ale kdy je ti zle, nenajdeš nic lepšího ne Sagittu a její kuchyò plnou léèivıch bylin.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_05"); //Najdeš ji v tom pruhu lesa za Sekobovou farmou.
+	AI_Output			(other, self, "DIA_Gaan_SAGITTA_15_00"); //BylinkÃ¡Å™ce?
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_01"); //Jmenuje se Sagitta. LÃ©ÄÃ­ farmÃ¡Å™e a ostatnÃ­ lidi, co Å¾ijÃ­ mimo mÄ›sto.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_02"); //VÃ¡Å¾nÄ› podivnÃ¡ Å¾enÅ¡tina.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_03"); //Nikdo za nÃ­ ve skuteÄnosti nechce chodit a vÅ¡ichni o nÃ­ rozÅ¡iÅ™ujÃ­ rÅ¯znÃ© fÃ¡my.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_04"); //Ale kdyÅ¾ je ti zle, nenajdeÅ¡ nic lepÅ¡Ã­ho neÅ¾ Sagittu a jejÃ­ kuchyÅˆ plnou lÃ©ÄivÃ½ch bylin.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_05"); //NajdeÅ¡ ji v tom pruhu lesa za Sekobovou farmou.
 
 };
 
@@ -282,7 +282,7 @@ instance DIA_Gaan_MONSTER		(C_INFO)
 	condition	 = 	DIA_Gaan_MONSTER_Condition;
 	information	 = 	DIA_Gaan_MONSTER_Info;
 
-	description	 = 	"Jak ta nebezpeèná bestie vypadá?";
+	description	 = 	"Jak ta nebezpeÄnÃ¡ bestie vypadÃ¡?";
 };
 
 func int DIA_Gaan_MONSTER_Condition ()
@@ -298,9 +298,9 @@ func int DIA_Gaan_MONSTER_Condition ()
 
 func void DIA_Gaan_MONSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_MONSTER_15_00"); //Jak ta nebezpeèná bestie vypadá?
-	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_01"); //Poøádnì nevím. A doteï jsem jen slyšel vrèení a škrábání. Ale dokáu si pøedstavit, co ty zvuky vydávalo.
-	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_02"); //Pøed tím nejsou v bezpeèí ani vlci. Ta bestie u je do jednoho vyvradila.
+	AI_Output			(other, self, "DIA_Gaan_MONSTER_15_00"); //Jak ta nebezpeÄnÃ¡ bestie vypadÃ¡?
+	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_01"); //PoÅ™Ã¡dnÄ› nevÃ­m. AÅ¾ doteÄ jsem jen slyÅ¡el vrÄenÃ­ a Å¡krÃ¡bÃ¡nÃ­. Ale dokÃ¡Å¾u si pÅ™edstavit, co ty zvuky vydÃ¡valo.
+	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_02"); //PÅ™ed tÃ­m nejsou v bezpeÄÃ­ ani vlci. Ta bestie uÅ¾ je do jednoho vyvraÅ¾dila.
 
 };
 
@@ -314,7 +314,7 @@ instance DIA_Gaan_WASZAHLSTDU		(C_INFO)
 	condition	 = 	DIA_Gaan_WASZAHLSTDU_Condition;
 	information	 = 	DIA_Gaan_WASZAHLSTDU_Info;
 
-	description	 = 	"Kolik mi dáš, kdy tu bestii zabiju?";
+	description	 = 	"Kolik mi dÃ¡Å¡, kdyÅ¾ tu bestii zabiju?";
 };
 
 func int DIA_Gaan_WASZAHLSTDU_Condition ()
@@ -330,9 +330,9 @@ func int DIA_Gaan_WASZAHLSTDU_Condition ()
 
 func void DIA_Gaan_WASZAHLSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //Kolik mi dáš, kdy tu bestii zabiju?
-	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //Nìkomu, kdo to zabije, bych dal všechno, co mùu postrádat.
-	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 Goldmünzen? 
+	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //Kolik mi dÃ¡Å¡, kdyÅ¾ tu bestii zabiju?
+	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //NÄ›komu, kdo to zabije, bych dal vÅ¡echno, co mÅ¯Å¾u postrÃ¡dat.
+	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 GoldmÃ¼nzen? 
 	//Auskommentiert, weil "?" ist auch so gesprochen worden - kommt nicht gut
 	B_Say_Gold   (self,other,30);
 	MIS_Gaan_Deal = LOG_RUNNING;
@@ -348,7 +348,7 @@ instance DIA_Gaan_WOHERMONSTER		(C_INFO)
 	condition	 = 	DIA_Gaan_WOHERMONSTER_Condition;
 	information	 = 	DIA_Gaan_WOHERMONSTER_Info;
 
-	description	 = 	"Kde ta zatracená bestie ije?";
+	description	 = 	"Kde ta zatracenÃ¡ bestie Å¾ije?";
 };
 
 func int DIA_Gaan_WOHERMONSTER_Condition ()
@@ -364,9 +364,9 @@ func int DIA_Gaan_WOHERMONSTER_Condition ()
 
 func void DIA_Gaan_WOHERMONSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WOHERMONSTER_15_00"); //Kde ta zatracená bestie ije?
-	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_01"); //Nìkde mimo les. Moná sem chodí z Hornického údolí. Ale nejsem si tím jistı.
-	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_02"); //Nikdy jsem v Hornickém údolí nebyl.
+	AI_Output			(other, self, "DIA_Gaan_WOHERMONSTER_15_00"); //Kde ta zatracenÃ¡ bestie Å¾ije?
+	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_01"); //NÄ›kde mimo les. MoÅ¾nÃ¡ sem chodÃ­ z HornickÃ©ho ÃºdolÃ­. Ale nejsem si tÃ­m jistÃ½.
+	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_02"); //Nikdy jsem v HornickÃ©m ÃºdolÃ­ nebyl.
  
 };
 
@@ -394,13 +394,13 @@ func int DIA_Gaan_MONSTERTOT_Condition ()
 
 func void DIA_Gaan_MONSTERTOT_Info ()
 {
-	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_00"); //To odporné zvíøe je mrtvé.
-	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_01"); //Tak to zase mùu bez obav zaèít lovit.
+	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_00"); //To odpornÃ© zvÃ­Å™e je mrtvÃ©.
+	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_01"); //Tak to zase mÅ¯Å¾u bez obav zaÄÃ­t lovit.
 	
 
 	if (MIS_Gaan_Deal == LOG_RUNNING)
 		{
-			AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_02");	//Tady jsou peníze, co jsem ti slíbil.
+			AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_02");	//Tady jsou penÃ­ze, co jsem ti slÃ­bil.
 
 			CreateInvItems (self, ItMi_Gold, 30);									
 			B_GiveInvItems (self, other, ItMi_Gold, 30);					
@@ -423,7 +423,7 @@ INSTANCE DIA_Gaan_AskTeacher (C_INFO)
 	condition	= DIA_Gaan_AskTeacher_Condition;
 	information	= DIA_Gaan_AskTeacher_Info;
 
-	description = "Mùeš mì nauèit nìco o lovu?";
+	description = "MÅ¯Å¾eÅ¡ mÄ› nauÄit nÄ›co o lovu?";
 };                       
 
 FUNC INT DIA_Gaan_AskTeacher_Condition()
@@ -433,12 +433,12 @@ FUNC INT DIA_Gaan_AskTeacher_Condition()
 
 FUNC VOID DIA_Gaan_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Gaan_AskTeacher_15_00"); //Mùeš mì nauèit nìco o lovu?
-	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_01"); //ádnı problém. Za 100 zlatıch ti ukáu, jak vyvrhnout zvíøata, co jsi skolil.
-	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_02"); //Koešiny a ostatní trofeje ti na trhu vynesou spoustu penìz.
+	AI_Output(other,self,"DIA_Gaan_AskTeacher_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit nÄ›co o lovu?
+	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_01"); //Å½Ã¡dnÃ½ problÃ©m. Za 100 zlatÃ½ch ti ukÃ¡Å¾u, jak vyvrhnout zvÃ­Å™ata, co jsi skolil.
+	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_02"); //KoÅ¾eÅ¡iny a ostatnÃ­ trofeje ti na trhu vynesou spoustu penÄ›z.
 		
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Gaan mì nauèí, jak získat trofeje ze zvíøat.");
+	B_LogEntry		(TOPIC_Teacher, "Gaan mÄ› nauÄÃ­, jak zÃ­skat trofeje ze zvÃ­Å™at.");
 };
 
 
@@ -453,7 +453,7 @@ INSTANCE DIA_Gaan_PayTeacher (C_INFO)
 	condition	= DIA_Gaan_PayTeacher_Condition;
 	information	= DIA_Gaan_PayTeacher_Info;
 	permanent	= TRUE;
-	description = "Tady máš 100 zlaákù a vysvìtli mi, jak vyvrhnout zvíøata.";
+	description = "Tady mÃ¡Å¡ 100 zlaÅ¥Ã¡kÅ¯ a vysvÄ›tli mi, jak vyvrhnout zvÃ­Å™ata.";
 };                       
 
 var int DIA_Gaan_PayTeacher_noPerm;
@@ -469,17 +469,17 @@ FUNC INT DIA_Gaan_PayTeacher_Condition()
 
 FUNC VOID DIA_Gaan_PayTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Gaan_PayTeacher_15_00"); //Tady. 100 zlatıch za tvùj vıklad o vyvrhování zvíøat.
+	AI_Output(other,self,"DIA_Gaan_PayTeacher_15_00"); //Tady. 100 zlatÃ½ch za tvÅ¯j vÃ½klad o vyvrhovÃ¡nÃ­ zvÃ­Å™at.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold, 100))
 	{
-		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_01"); //Díky. Tak se mi to líbí.
+		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_01"); //DÃ­ky. Tak se mi to lÃ­bÃ­.
 		Gaan_TeachPlayer = TRUE;
 		DIA_Gaan_PayTeacher_noPerm = TRUE;
 	}
 	else	
 	{
-		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_02"); //Pøijï pozdìji, a budeš mít nìjaké peníze.
+		AI_Output(self,other,"DIA_Gaan_PayTeacher_03_02"); //PÅ™ijÄ pozdÄ›ji, aÅ¾ budeÅ¡ mÃ­t nÄ›jakÃ© penÃ­ze.
 	};
 };
 
@@ -494,7 +494,7 @@ instance DIA_Gaan_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gaan_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gaan_TEACHHUNTING_Info;
 	permanent	= TRUE;
-	description	 = 	"Co mì mùeš nauèit?";
+	description	 = 	"Co mÄ› mÅ¯Å¾eÅ¡ nauÄit?";
 };
 
 func int DIA_Gaan_TEACHHUNTING_Condition ()
@@ -507,7 +507,7 @@ func int DIA_Gaan_TEACHHUNTING_Condition ()
 
 func void DIA_Gaan_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_TEACHHUNTING_15_00"); //Co mì mùeš nauèit?
+	AI_Output			(other, self, "DIA_Gaan_TEACHHUNTING_15_00"); //Co mÄ› mÅ¯Å¾eÅ¡ nauÄit?
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
@@ -517,39 +517,39 @@ func void DIA_Gaan_TEACHHUNTING_Info ()
 			||((PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE) && (MIS_Gaan_Snapper == LOG_SUCCESS))
 		)
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_01"); //To záleí na tom, co chceš vìdìt.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_01"); //To zÃ¡leÅ¾Ã­ na tom, co chceÅ¡ vÄ›dÄ›t.
 
 			Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Vyjmutí zubù",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Gaan_TEACHHUNTING_Teeth);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("VyjmutÃ­ zubÅ¯",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Teeth)),  DIA_Gaan_TEACHHUNTING_Teeth);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Vyjmutí drápù",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Gaan_TEACHHUNTING_Claws);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("VyjmutÃ­ drÃ¡pÅ¯",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Gaan_TEACHHUNTING_Claws);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Staení z kùe",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Gaan_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("StaÅ¾enÃ­ z kÅ¯Å¾e",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Gaan_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("ihadla krvavıch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Gaan_TEACHHUNTING_BFSting);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Å½ihadla krvavÃ½ch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Gaan_TEACHHUNTING_BFSting);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Køídla krvavıch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Gaan_TEACHHUNTING_BFWing);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("KÅ™Ã­dla krvavÃ½ch much",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Gaan_TEACHHUNTING_BFWing);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 			&& (MIS_Gaan_Snapper == LOG_SUCCESS)
 			{ 
-				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Roh draèího chòapavce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gaan_TEACHHUNTING_DrgSnapperHorn);
+				Info_AddChoice	(DIA_Gaan_TEACHHUNTING, B_BuildLearnString ("Roh draÄÃ­ho chÅˆapavce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gaan_TEACHHUNTING_DrgSnapperHorn);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_02"); //Teï u tì nemùu nauèit nic, co bys ještì neznal. Je mi líto.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_02"); //TeÄ uÅ¾ tÄ› nemÅ¯Å¾u nauÄit nic, co bys jeÅ¡tÄ› neznal. Je mi lÃ­to.
 		};
 };
 
@@ -563,9 +563,9 @@ func void DIA_Gaan_TEACHHUNTING_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_00"); //Zvíøata o své drápy pøicházejí opravdu nerada. Øez musíš vést velmi pøesnì.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_01"); //Tvé ruce by se mìly lehce pøekrıvat. Pak silnım trhnutím dráp oddìl od okolní tkánì.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_02"); //Obchodníci se mohou vdycky pøetrhnout, aby za drápy vysolili pìknou sumièku.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_00"); //ZvÃ­Å™ata o svÃ© drÃ¡py pÅ™ichÃ¡zejÃ­ opravdu nerada. Å˜ez musÃ­Å¡ vÃ©st velmi pÅ™esnÄ›.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_01"); //TvÃ© ruce by se mÄ›ly lehce pÅ™ekrÃ½vat. Pak silnÃ½m trhnutÃ­m drÃ¡p oddÄ›l od okolnÃ­ tkÃ¡nÄ›.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_02"); //ObchodnÃ­ci se mohou vÅ¾dycky pÅ™etrhnout, aby za drÃ¡py vysolili pÄ›knou sumiÄku.
 		
 		};
 
@@ -579,8 +579,8 @@ func void DIA_Gaan_TEACHHUNTING_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_00"); //Nejsnadnìji se z mrtvıch zvíøat získávají zuby. Øez musíš v jejich tlamì vést tìsnì kolem nich.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_01"); //Pak je silnım trhnutím oddìlíš od lebky.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_00"); //NejsnadnÄ›ji se z mrtvÃ½ch zvÃ­Å™at zÃ­skÃ¡vajÃ­ zuby. Å˜ez musÃ­Å¡ v jejich tlamÄ› vÃ©st tÄ›snÄ› kolem nich.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_01"); //Pak je silnÃ½m trhnutÃ­m oddÄ›lÃ­Å¡ od lebky.
 	
 			
 		};
@@ -594,8 +594,8 @@ func void DIA_Gaan_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_00"); //Nejlepší zpùsob, jak získat koešinu, je vést hlubokı øez podél konèetin.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_01"); //Pak u je hraèka stáhnout kùi od hlavy k ocasu.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_00"); //NejlepÅ¡Ã­ zpÅ¯sob, jak zÃ­skat koÅ¾eÅ¡inu, je vÃ©st hlubokÃ½ Å™ez podÃ©l konÄetin.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_01"); //Pak uÅ¾ je hraÄka stÃ¡hnout kÅ¯Å¾i od hlavy k ocasu.
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
@@ -607,21 +607,21 @@ func void DIA_Gaan_TEACHHUNTING_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_00"); //Tyhle mouchy mají na høbetì mìkké místo.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_01"); //Kdy na nìj zatlaèíš, vytlaèí se ihadlo daleko ze zadeèku a pak ho staèí oddìlit noem.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_00"); //Tyhle mouchy majÃ­ na hÅ™betÄ› mÄ›kkÃ© mÃ­sto.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_01"); //KdyÅ¾ na nÄ›j zatlaÄÃ­Å¡, vytlaÄÃ­ se Å¾ihadlo daleko ze zadeÄku a pak ho staÄÃ­ oddÄ›lit noÅ¾em.
 			
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
 	Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 };
-// ------ Blutfliegenflügel ------
+// ------ BlutfliegenflÃ¼gel ------
 func void DIA_Gaan_TEACHHUNTING_BFWing ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_00"); //Nejlepší zpùsob, jak oddìlit køídla od tìla, je odøíznout je ostrım noem tìsnì nad hrudí.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_01"); //Musíš si dávat velkı pozor, abys nepoškodil velmi jemnou tkáò køídel. Pokud budeš pøi jejich oddìlování neopatrnı, získáš akorát bezcennou hromadu smetí.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_00"); //NejlepÅ¡Ã­ zpÅ¯sob, jak oddÄ›lit kÅ™Ã­dla od tÄ›la, je odÅ™Ã­znout je ostrÃ½m noÅ¾em tÄ›snÄ› nad hrudÃ­.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_01"); //MusÃ­Å¡ si dÃ¡vat velkÃ½ pozor, abys nepoÅ¡kodil velmi jemnou tkÃ¡Åˆ kÅ™Ã­del. Pokud budeÅ¡ pÅ™i jejich oddÄ›lovÃ¡nÃ­ neopatrnÃ½, zÃ­skÃ¡Å¡ akorÃ¡t bezcennou hromadu smetÃ­.
 
 		};
 
@@ -633,12 +633,12 @@ func void DIA_Gaan_TEACHHUNTING_DrgSnapperHorn()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00"); //Teï, kdy je ten pøerostlı chòapavec mrtvı, ti mùu ukázat, jak získat jeho roh.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_01"); //Zanoøíš nù hluboko do èela a opatrnì tu vìc vypáèíš nahoru.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //Pokud to nepùjde oddìlit od lebky, pouij ještì další nù z druhé strany.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00"); //TeÄ, kdyÅ¾ je ten pÅ™erostlÃ½ chÅˆapavec mrtvÃ½, ti mÅ¯Å¾u ukÃ¡zat, jak zÃ­skat jeho roh.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_01"); //ZanoÅ™Ã­Å¡ nÅ¯Å¾ hluboko do Äela a opatrnÄ› tu vÄ›c vypÃ¡ÄÃ­Å¡ nahoru.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //Pokud to nepÅ¯jde oddÄ›lit od lebky, pouÅ¾ij jeÅ¡tÄ› dalÅ¡Ã­ nÅ¯Å¾ z druhÃ© strany.
 	
 			
-			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den Füssen liegt!!
+			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den FÃ¼ssen liegt!!
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
@@ -676,22 +676,22 @@ func void DIA_Gaan_JAGD_Info ()
 
 	if ((Npc_IsDead(Gaans_Snapper))== FALSE)
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_01"); //Poslední zvíøe, co se mi podaøilo zabít, byla velká krysa. Nic extra a navíc z toho nic nekápne.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_02"); //Posledních nìkolik dní se tu potuluje nìjaká funící bestie.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_03"); //Nejen e zabíjí všechno, co se hıbe, ale taky mi kazí moji práci.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_01"); //PoslednÃ­ zvÃ­Å™e, co se mi podaÅ™ilo zabÃ­t, byla velkÃ¡ krysa. Nic extra a navÃ­c z toho nic nekÃ¡pne.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_02"); //PoslednÃ­ch nÄ›kolik dnÃ­ se tu potuluje nÄ›jakÃ¡ funÃ­cÃ­ bestie.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_03"); //Nejen Å¾e zabÃ­jÃ­ vÅ¡echno, co se hÃ½be, ale taky mi kazÃ­ moji prÃ¡ci.
 			Log_CreateTopic (TOPIC_GaanSchnaubi, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_GaanSchnaubi, LOG_RUNNING);
-			B_LogEntry (TOPIC_GaanSchnaubi,"Lovce Gaana trápí nìjaká podivná nestvùra. Dokud ji nezabiju, nebude moci dál lovit."); 
+			B_LogEntry (TOPIC_GaanSchnaubi,"Lovce Gaana trÃ¡pÃ­ nÄ›jakÃ¡ podivnÃ¡ nestvÅ¯ra. Dokud ji nezabiju, nebude moci dÃ¡l lovit."); 
 			MIS_Gaan_Snapper = LOG_RUNNING;
 		}
 	else if (Kapitel >= 3)
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_04"); //Zaèíná tu bıt pìknı blázinec. Z prùsmyku u se sem mezitím stihla nahrnout spousta tìch funících zvíøat.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_05"); //Za tìchto okolností je lov èím dál tím obtínìjší.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_04"); //ZaÄÃ­nÃ¡ tu bÃ½t pÄ›knÃ½ blÃ¡zinec. Z prÅ¯smyku uÅ¾ se sem mezitÃ­m stihla nahrnout spousta tÄ›ch funÃ­cÃ­ch zvÃ­Å™at.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_05"); //Za tÄ›chto okolnostÃ­ je lov ÄÃ­m dÃ¡l tÃ­m obtÃ­Å¾nÄ›jÅ¡Ã­.
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_06"); //Nemùu si stìovat.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_06"); //NemÅ¯Å¾u si stÄ›Å¾ovat.
 		};
 };
 

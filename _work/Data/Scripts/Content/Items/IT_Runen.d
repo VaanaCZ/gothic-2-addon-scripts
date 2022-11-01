@@ -767,7 +767,7 @@ INSTANCE ItRu_SumGobSkel (C_Item)
 	COUNT	[1]			=	SPL_Cost_SummonGoblinSkeleton;
 	
 	TEXT 	[2]			=   "Kosti";
-	TEXT 	[3]			=   "mrtvých goblinù.";
+	TEXT 	[3]			=   "mrtvÃ½ch goblinÅ¯.";
 	
 	TEXT	[5]			=	NAME_Value;					
 	COUNT	[5]			=	value;
@@ -1655,7 +1655,7 @@ INSTANCE ItRu_Deathbolt	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Støela smrti";
+	description			=	"StÅ™ela smrti";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;
 	COUNT	[0]			=	mag_circle;
@@ -1721,7 +1721,7 @@ INSTANCE ItRu_Concussionbolt	(C_Item)
 	wear				= 	WEAR_EFFECT;
 	effect				=	"SPELLFX_WEAKGLIMMER";
 
-	description			=	"Úderná šipka";
+	description			=	"ÃšdernÃ¡ Å¡ipka";
 	
 	TEXT	[0]			=	NAME_Mag_Circle;
 	COUNT	[0]			=	mag_circle;

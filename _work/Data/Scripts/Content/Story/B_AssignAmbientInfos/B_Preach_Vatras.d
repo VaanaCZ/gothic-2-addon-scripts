@@ -6,86 +6,86 @@ func void B_Preach_Vatras(var int satz)
 {
 	if (satz == 0) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Ale svìtlo bylo Beliarovi utrpením. A vše, co Innos vytvoøil, Beliar obrátil v prach.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Ale svÄ›tlo bylo Beliarovi utrpenÃ­m. A vÅ¡e, co Innos vytvoÅ™il, Beliar obrÃ¡til v prach.
 	};
 	if (satz == 1) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //Adanos však øekl, e takto nemùe vùbec nic existovat. ádné svìtlo, ani ádná tma.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //Adanos vÅ¡ak Å™ekl, Å¾e takto nemÅ¯Å¾e vÅ¯bec nic existovat. Å½Ã¡dnÃ© svÄ›tlo, ani Å¾Ã¡dnÃ¡ tma.
 	};
 	if (satz == 2)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //A tak se vloil mezi oba bratry, aby ukonèil jejich spor. A neuspìl.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //A tak se vloÅ¾il mezi oba bratry, aby ukonÄil jejich spor. A neuspÄ›l.
 	};
 	if (satz == 3)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Ale na místì, kam Adonos vstoupil, nemá ani Innos, ani Beliar ádnou moc.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Ale na mÃ­stÄ›, kam Adonos vstoupil, nemÃ¡ ani Innos, ani Beliar Å¾Ã¡dnou moc.
 	};
 	if (satz == 4)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //A na tomto místì si jsou Øád a Chaos rovny. A tak vzniklo moøe.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //A na tomto mÃ­stÄ› si jsou Å˜Ã¡d a Chaos rovny. A tak vzniklo moÅ™e.
 	};
 	if (satz == 5)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //A moøe dalo vzniknout zemi, je byla na poèátku existence všech stvoøení. Stromù, stejnì jako zvíøat. Vlkù i ovcí. A nakonec z ní povstal èlovìk.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //A moÅ™e dalo vzniknout zemi, jeÅ¾ byla na poÄÃ¡tku existence vÅ¡ech stvoÅ™enÃ­. StromÅ¯, stejnÄ› jako zvÃ­Å™at. VlkÅ¯ i ovcÃ­. A nakonec z nÃ­ povstal ÄlovÄ›k.
 	};
 	if (satz == 6)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //Adonos byl velmi spokojen s tím, co se pøihodilo. A jeho radost se stejnou mìrou tıkala všech bytostí bez vıjimky.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //Adonos byl velmi spokojen s tÃ­m, co se pÅ™ihodilo. A jeho radost se stejnou mÄ›rou tÃ½kala vÅ¡ech bytostÃ­ bez vÃ½jimky.
 	};
 	if (satz == 7)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Ale stejnì tak velká byla i Beliarova zlost. I jal se procházet zemí a hledat, dokud nenašel bestii. A Beliar k ní promluvil. A bestie se stala jeho sluebníkem.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Ale stejnÄ› tak velkÃ¡ byla i Beliarova zlost. I jal se prochÃ¡zet zemÃ­ a hledat, dokud nenaÅ¡el bestii. A Beliar k nÃ­ promluvil. A bestie se stala jeho sluÅ¾ebnÃ­kem.
 	};
 	if (satz == 8)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_08"); //Beliar jí vdechl èást své boské moci, a bestie tak mohla nièit zemi.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_08"); //Beliar jÃ­ vdechl ÄÃ¡st svÃ© boÅ¾skÃ© moci, a bestie tak mohla niÄit zemi.
 	};
 	if (satz == 9)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Innos však spatøil, co Beliar provedl. A tak i on prohledal celou zemi, aby nakonec zvolil èlovìka. Innos k nìmu promluvil. A èlovìk se stal jeho sluebníkem.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Innos vÅ¡ak spatÅ™il, co Beliar provedl. A tak i on prohledal celou zemi, aby nakonec zvolil ÄlovÄ›ka. Innos k nÄ›mu promluvil. A ÄlovÄ›k se stal jeho sluÅ¾ebnÃ­kem.
 	};
 	if (satz == 10)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_10"); //Innos vdechl èlovìku èást své boské moci, a ten pak mohl maøit Beliarovy snahy.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_10"); //Innos vdechl ÄlovÄ›ku ÄÃ¡st svÃ© boÅ¾skÃ© moci, a ten pak mohl maÅ™it Beliarovy snahy.
 	};
 	if (satz == 11)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //I Beliar promluvil k jinému stvoøení. Adanos však stvoøil pøíliv, a ten toto stvoøení smetl z povrchu zemského.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //I Beliar promluvil k jinÃ©mu stvoÅ™enÃ­. Adanos vÅ¡ak stvoÅ™il pÅ™Ã­liv, a ten toto stvoÅ™enÃ­ smetl z povrchu zemskÃ©ho.
 	};
 	if (satz == 12)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_12"); //Ale s ním byly smeteny i stromy a zvíøata. A Adana obklopil hlubokı smutek.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_12"); //Ale s nÃ­m byly smeteny i stromy a zvÃ­Å™ata. A Adana obklopil hlubokÃ½ smutek.
 	};
 	if (satz == 13)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //Proto Adanos promluvil ke svım bratrùm: U nikdy nevstoupíte na moji zem. Tato zem bude nazıvána svatou. A tak se stalo.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //Proto Adanos promluvil ke svÃ½m bratrÅ¯m: UÅ¾ nikdy nevstoupÃ­te na moji zem. Tato zem bude nazÃ½vÃ¡na svatou. A tak se stalo.
 	};
 	if (satz == 14)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_14"); //Ale èlovìk a bestie vedli válku v Adanovì zemi a stihl je boskı hnìv.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_14"); //Ale ÄlovÄ›k a bestie vedli vÃ¡lku v AdanovÄ› zemi a stihl je boÅ¾skÃ½ hnÄ›v.
 	};
 	if (satz == 15)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //A èlovìk zabil bestii, je pak vstoupila do Beliarova panství.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //A ÄlovÄ›k zabil bestii, jeÅ¾ pak vstoupila do Beliarova panstvÃ­.
 	};
 	if (satz == 16)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //Ale Adanos vidìl, e Øád a Chaos u si nejsou rovny, i vyzval Innose, aby si od èlovìka vzal zpìt svou boskou sílu.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //Ale Adanos vidÄ›l, Å¾e Å˜Ã¡d a Chaos uÅ¾ si nejsou rovny, i vyzval Innose, aby si od ÄlovÄ›ka vzal zpÄ›t svou boÅ¾skou sÃ­lu.
 	};
 	if (satz == 17)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //A Innos tak ve své moudrosti uèinil.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //A Innos tak ve svÃ© moudrosti uÄinil.
 	};
 	if (satz == 18)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_18"); //Adanos se však hrozil okamiku, kdy se bestie vrátí na zem.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_18"); //Adanos se vÅ¡ak hrozil okamÅ¾iku, kdy se bestie vrÃ¡tÃ­ na zem.
 	};
 	if (satz == 19)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //A tak vyzval Innose, aby pøenechal èást své moci Adanovì království, aby ji mohl opìt propùjèit èlovìku pro pøípad, e by se bestie vrátila.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //A tak vyzval Innose, aby pÅ™enechal ÄÃ¡st svÃ© moci AdanovÄ› krÃ¡lovstvÃ­, aby ji mohl opÄ›t propÅ¯jÄit ÄlovÄ›ku pro pÅ™Ã­pad, Å¾e by se bestie vrÃ¡tila.
 	};
 	if (satz == 20)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //A Innos tak ve své moudrosti uèinil.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //A Innos tak ve svÃ© moudrosti uÄinil.
 	};
 };

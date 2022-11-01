@@ -19,7 +19,7 @@ instance VLK_409_Zuris (Npc_Default)
 	EquipItem			(self, ItMw_1H_VLK_DAGGER);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Psionic", Face_N_ImportantGrey, BodyTex_N, ITAR_VLK_M);	

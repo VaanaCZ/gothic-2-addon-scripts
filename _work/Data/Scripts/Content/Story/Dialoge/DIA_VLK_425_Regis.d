@@ -74,10 +74,10 @@ func int DIA_Regis_Hallo_Condition ()
 };
 func void DIA_Regis_Hallo_Info ()
 {	
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Hej, tys v tomhle mìstì novı, co?
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Hej, tys v tomhle mÄ›stÄ› novÃ½, co?
 	AI_Output			(other, self, "DIA_Regis_Hallo_15_01"); //Ano, a co ty?
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //Pøišel jsem z pevniny a teï se tu jen tak poflakuju. U mi skoro došly peníze, take mi nejspíš nezbude nic jiného ne se pøidat k domobranì.
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //Ale já tam nechci. Nemíním se nechat ve jménu krále zabít nìjakımi špinavımi skøety.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //PÅ™iÅ¡el jsem z pevniny a teÄ se tu jen tak poflakuju. UÅ¾ mi skoro doÅ¡ly penÃ­ze, takÅ¾e mi nejspÃ­Å¡ nezbude nic jinÃ©ho neÅ¾ se pÅ™idat k domobranÄ›.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //Ale jÃ¡ tam nechci. NemÃ­nÃ­m se nechat ve jmÃ©nu krÃ¡le zabÃ­t nÄ›jakÃ½mi Å¡pinavÃ½mi skÅ™ety.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info MILIZ
@@ -89,7 +89,7 @@ instance DIA_Regis_MILIZ		(C_INFO)
 	condition	 = 	DIA_Regis_MILIZ_Condition;
 	information	 = 	DIA_Regis_MILIZ_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co bys mi øekl o domobranì?";
+	description	 = 	"Co bys mi Å™ekl o domobranÄ›?";
 };
 func int DIA_Regis_MILIZ_Condition ()
 {	
@@ -100,11 +100,11 @@ func int DIA_Regis_MILIZ_Condition ()
 };
 func void DIA_Regis_MILIZ_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Co bys mi øekl o domobranì?
-	AI_Output (self, other, "DIA_Regis_Add_13_01"); //Vede ji jeden z paladinù, jistı lord Andre.
-	AI_Output (self, other, "DIA_Regis_Add_13_02"); //Pokouší se zmobilizovat pùlku mìsta pro pøípad, e by nás napadli skøeti.
-	AI_Output (self, other, "DIA_Regis_Add_13_03"); //Ale chceš-li se nechat najmout, musíš se napøed stát obèanem mìsta.
-	AI_Output (self, other, "DIA_Regis_Add_13_04"); //Pokud vím, tak ty nejsi zdejším obèanem, take i kdy budeš cvièit sebevíc, stejnì tì oficiálnì nepøijmou.
+	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Co bys mi Å™ekl o domobranÄ›?
+	AI_Output (self, other, "DIA_Regis_Add_13_01"); //Vede ji jeden z paladinÅ¯, jistÃ½ lord Andre.
+	AI_Output (self, other, "DIA_Regis_Add_13_02"); //PokouÅ¡Ã­ se zmobilizovat pÅ¯lku mÄ›sta pro pÅ™Ã­pad, Å¾e by nÃ¡s napadli skÅ™eti.
+	AI_Output (self, other, "DIA_Regis_Add_13_03"); //Ale chceÅ¡-li se nechat najmout, musÃ­Å¡ se napÅ™ed stÃ¡t obÄanem mÄ›sta.
+	AI_Output (self, other, "DIA_Regis_Add_13_04"); //Pokud vÃ­m, tak ty nejsi zdejÅ¡Ã­m obÄanem, takÅ¾e i kdyÅ¾ budeÅ¡ cviÄit sebevÃ­c, stejnÄ› tÄ› oficiÃ¡lnÄ› nepÅ™ijmou.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ANDRE
@@ -116,7 +116,7 @@ instance DIA_Regis_ANDRE		(C_INFO)
 	condition	 = 	DIA_Regis_ANDRE_Condition;
 	information	 = 	DIA_Regis_ANDRE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co dalšího mi ještì mùeš prozradit o lordu Andrem?";
+	description	 = 	"Co dalÅ¡Ã­ho mi jeÅ¡tÄ› mÅ¯Å¾eÅ¡ prozradit o lordu Andrem?";
 };
 func int DIA_Regis_ANDRE_Condition ()
 {	
@@ -127,18 +127,18 @@ func int DIA_Regis_ANDRE_Condition ()
 };
 func void DIA_Regis_ANDRE_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Co dalšího mi ještì mùeš prozradit o lordu Andrem?
-	AI_Output (self, other, "DIA_Regis_Add_13_05"); //Také tu zastává funkci soudce.
-	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Pokud ve mìstì nìco provedeš, budeš se zodpovídat jemu.
-	AI_Output (self, other, "DIA_Regis_Add_13_07"); //Jednou jsem se takhle s nìkım popral.
-	AI_Output (self, other, "DIA_Regis_Add_13_08"); //On si pak šel stìovat lordu Andremu a udal mì.
-	AI_Output (self, other, "DIA_Regis_Add_13_09"); //Celá ta záleitost mì pøišla na 50 zlaákù.
-	AI_Output (self, other, "DIA_Regis_Add_13_10"); //A to jsem mìl kliku, e se to stalo v noci, a tak u toho nebyli ádní svìdkové.
-	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Èím víc lidí si na tebe toti stìuje, tím vyšší pokutu pak musíš zaplatit.
+	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Co dalÅ¡Ã­ho mi jeÅ¡tÄ› mÅ¯Å¾eÅ¡ prozradit o lordu Andrem?
+	AI_Output (self, other, "DIA_Regis_Add_13_05"); //TakÃ© tu zastÃ¡vÃ¡ funkci soudce.
+	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Pokud ve mÄ›stÄ› nÄ›co provedeÅ¡, budeÅ¡ se zodpovÃ­dat jemu.
+	AI_Output (self, other, "DIA_Regis_Add_13_07"); //Jednou jsem se takhle s nÄ›kÃ½m popral.
+	AI_Output (self, other, "DIA_Regis_Add_13_08"); //On si pak Å¡el stÄ›Å¾ovat lordu Andremu a udal mÄ›.
+	AI_Output (self, other, "DIA_Regis_Add_13_09"); //CelÃ¡ ta zÃ¡leÅ¾itost mÄ› pÅ™iÅ¡la na 50 zlaÅ¥Ã¡kÅ¯.
+	AI_Output (self, other, "DIA_Regis_Add_13_10"); //A to jsem mÄ›l kliku, Å¾e se to stalo v noci, a tak u toho nebyli Å¾Ã¡dnÃ­ svÄ›dkovÃ©.
+	AI_Output (self, other, "DIA_Regis_Add_13_11"); //ÄŒÃ­m vÃ­c lidÃ­ si na tebe totiÅ¾ stÄ›Å¾uje, tÃ­m vyÅ¡Å¡Ã­ pokutu pak musÃ­Å¡ zaplatit.
 };
 
 // ****************************************************
-// 					Prügelei mit Valentino
+// 					PrÃ¼gelei mit Valentino
 // ****************************************************
 instance DIA_Regis_Valentino (C_INFO)
 {
@@ -147,7 +147,7 @@ instance DIA_Regis_Valentino (C_INFO)
 	condition	 = 	DIA_Regis_Valentino_Condition;
 	information	 = 	DIA_Regis_Valentino_Info;
 	permanent    =  FALSE;
-	description	 = 	"S kım jsi bojoval?";
+	description	 = 	"S kÃ½m jsi bojoval?";
 };
 func int DIA_Regis_Valentino_Condition ()
 {	
@@ -158,9 +158,9 @@ func int DIA_Regis_Valentino_Condition ()
 };
 func void DIA_Regis_Valentino_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_Add_15_12"); //S kım jsi bojoval?
-	AI_Output (self, other, "DIA_Regis_Add_13_13"); //S chlápkem jménem Valentino - èasto se poflakuje kolem putyky poblí chrámu.
-	AI_Output (self, other, "DIA_Regis_Add_13_14"); //Já tedy nejsem ádnı násilník, ale TENHLE maník si zaslouí, aby mu nìkdo poøádnì zmaloval ciferník.
+	AI_Output (other, self, "DIA_Regis_Add_15_12"); //S kÃ½m jsi bojoval?
+	AI_Output (self, other, "DIA_Regis_Add_13_13"); //S chlÃ¡pkem jmÃ©nem Valentino - Äasto se poflakuje kolem putyky poblÃ­Å¾ chrÃ¡mu.
+	AI_Output (self, other, "DIA_Regis_Add_13_14"); //JÃ¡ tedy nejsem Å¾Ã¡dnÃ½ nÃ¡silnÃ­k, ale TENHLE manÃ­k si zaslouÅ¾Ã­, aby mu nÄ›kdo poÅ™Ã¡dnÄ› zmaloval cifernÃ­k.
 };
 
 // ****************************************************
@@ -187,14 +187,14 @@ func void DIA_Regis_ValDefeat_Info ()
 {
 	AI_Output (other, self, "DIA_Regis_Add_15_15"); //Setkal jsem se s Valentinem...
 	AI_Output (self, other, "DIA_Regis_Add_13_16"); //A?
-	AI_Output (other, self, "DIA_Regis_Add_15_17"); //Dal jsem mu pár facek.
-	AI_Output (self, other, "DIA_Regis_Add_13_18"); //(smìje se) Zaslouil si to.
+	AI_Output (other, self, "DIA_Regis_Add_15_17"); //Dal jsem mu pÃ¡r facek.
+	AI_Output (self, other, "DIA_Regis_Add_13_18"); //(smÄ›je se) ZaslouÅ¾il si to.
 	if (!Npc_IsDead (Valentino))
 	{
-		AI_Output (self, other, "DIA_Regis_Add_13_19"); //Tumáš - tenhle prsten jsem od nìj získal, kdy se náš malı spor urovnal.
+		AI_Output (self, other, "DIA_Regis_Add_13_19"); //TumÃ¡Å¡ - tenhle prsten jsem od nÄ›j zÃ­skal, kdyÅ¾ se nÃ¡Å¡ malÃ½ spor urovnal.
 		B_GiveInvItems (self, other, ItRi_ValentinosRing, 1);
 		Regis_Ring = TRUE;
-		AI_Output (self, other, "DIA_Regis_Add_13_20"); //(køení se) Mùeš ho pak vìnovat prvnímu, kdo mu dá pár pøes hubu.
+		AI_Output (self, other, "DIA_Regis_Add_13_20"); //(kÅ™enÃ­ se) MÅ¯Å¾eÅ¡ ho pak vÄ›novat prvnÃ­mu, kdo mu dÃ¡ pÃ¡r pÅ™es hubu.
 	};
 };
 
@@ -211,7 +211,7 @@ instance DIA_Regis_PERM		(C_INFO)
 	condition	 = 	DIA_Regis_PERM_Condition;
 	information	 = 	DIA_Regis_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Stalo se tu nìco zajímavého?";
+	description	 = 	"Stalo se tu nÄ›co zajÃ­mavÃ©ho?";
 };
 func int DIA_Regis_PERM_Condition ()
 {
@@ -219,15 +219,15 @@ func int DIA_Regis_PERM_Condition ()
 };
 func void DIA_Regis_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //Stalo se tu nìco zajímavého?
+	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //Stalo se tu nÄ›co zajÃ­mavÃ©ho?
 	
 	if (Regis_Bogendieb == FALSE)
 	&& (MIS_Bosper_Bogen != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //Dalo by se to tak øíct.
-		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Okradli vırobce lukù Bospera - takovou drzost aby pohledal!
-		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Ten maník prostì za bílého dne vešel do krámu a rychle èmajznul jeden z lukù.
-		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //A Bosper hned za ním a hulákal: "Stùj, ty zlodìji!" Ale lupiè byl rychlejší.
+		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //Dalo by se to tak Å™Ã­ct.
+		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Okradli vÃ½robce lukÅ¯ Bospera - takovou drzost aby pohledal!
+		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Ten manÃ­k prostÄ› za bÃ­lÃ©ho dne veÅ¡el do krÃ¡mu a rychle Ämajznul jeden z lukÅ¯.
+		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //A Bosper hned za nÃ­m a hulÃ¡kal: "StÅ¯j, ty zlodÄ›ji!" Ale lupiÄ byl rychlejÅ¡Ã­.
 		
 		
 		MIS_Bosper_Bogen = LOG_RUNNING;
@@ -236,28 +236,28 @@ func void DIA_Regis_PERM_Info ()
 	else if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		 && (Regis_Bogendieb != 2)	
 	{
-		AI_Output (self, other, "DIA_Regis_PERM_13_05"); //Nìjakı poctivı nálezce vrátil ukradenı luk zpátky Bosperovi.
-		AI_Output (self, other, "DIA_Regis_PERM_13_06"); //To je divné - èlovìk by si myslel, e se dnes kadı stará jen sám o sebe, ale tenhle chlap byl jinı a luk vrátil.
+		AI_Output (self, other, "DIA_Regis_PERM_13_05"); //NÄ›jakÃ½ poctivÃ½ nÃ¡lezce vrÃ¡til ukradenÃ½ luk zpÃ¡tky Bosperovi.
+		AI_Output (self, other, "DIA_Regis_PERM_13_06"); //To je divnÃ© - ÄlovÄ›k by si myslel, Å¾e se dnes kaÅ¾dÃ½ starÃ¡ jen sÃ¡m o sebe, ale tenhle chlap byl jinÃ½ a luk vrÃ¡til.
 		Regis_Bogendieb = 2;
 	}
 	else
 	{
 		if (Kapitel != 3)
 		{
-			AI_Output (self, other, "DIA_Regis_PERM_13_07"); //No, všechno je v klidu. Poèítám, e a sem pøitáhnou skøeti, urèitì si jich všimneme.
+			AI_Output (self, other, "DIA_Regis_PERM_13_07"); //No, vÅ¡echno je v klidu. PoÄÃ­tÃ¡m, Å¾e aÅ¾ sem pÅ™itÃ¡hnou skÅ™eti, urÄitÄ› si jich vÅ¡imneme.
 		}
 		else 
 		{
 			if (MIS_RescueBennet == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Nakonec zjistili, e ten oldák je nevinnı, a museli ho pustit.
-				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Lord Hagen musí bıt vzteky bez sebe.
+				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Nakonec zjistili, Å¾e ten Å¾oldÃ¡k je nevinnÃ½, a museli ho pustit.
+				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Lord Hagen musÃ­ bÃ½t vzteky bez sebe.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //Je toho plné mìsto. Pamatuješ se na paladina Lothara?
-				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //Moná.
-				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //Tak ten je mrtvı. Zabili ho pøímo na ulici a samozøejmì z toho obvinili oldáky, jak jinak.
+				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //Je toho plnÃ© mÄ›sto. PamatujeÅ¡ se na paladina Lothara?
+				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //MoÅ¾nÃ¡.
+				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //Tak ten je mrtvÃ½. Zabili ho pÅ™Ã­mo na ulici a samozÅ™ejmÄ› z toho obvinili Å¾oldÃ¡ky, jak jinak.
 			};
 		};
 	};
@@ -273,7 +273,7 @@ instance DIA_Regis_Crew		(C_INFO)
 	condition	 = 	DIA_Regis_Crew_Condition;
 	information	 = 	DIA_Regis_Crew_Info;
 	permanent    =  FALSE;
-	description	 = 	"Pokouším se najít posádku na cestu po moøi.";
+	description	 = 	"PokouÅ¡Ã­m se najÃ­t posÃ¡dku na cestu po moÅ™i.";
 };
 func int DIA_Regis_Crew_Condition ()
 {	
@@ -284,9 +284,9 @@ func int DIA_Regis_Crew_Condition ()
 };
 func void DIA_Regis_Crew_Info ()
 {
-	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //Pokouším se najít posádku na cestu po moøi.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //Tak s tím ti nepomùu. Nejspíš by ses mìl porozhlédnout po pøístavu nebo se poptat nìkde v hospodì.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Jestli tu zùstali ještì nìjací námoøníci, urèitì je najdeš tam.
+	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //PokouÅ¡Ã­m se najÃ­t posÃ¡dku na cestu po moÅ™i.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //Tak s tÃ­m ti nepomÅ¯Å¾u. NejspÃ­Å¡ by ses mÄ›l porozhlÃ©dnout po pÅ™Ã­stavu nebo se poptat nÄ›kde v hospodÄ›.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Jestli tu zÅ¯stali jeÅ¡tÄ› nÄ›jacÃ­ nÃ¡moÅ™nÃ­ci, urÄitÄ› je najdeÅ¡ tam.
 
 };
 

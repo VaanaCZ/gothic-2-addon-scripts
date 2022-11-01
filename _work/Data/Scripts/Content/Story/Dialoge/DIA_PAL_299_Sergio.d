@@ -19,7 +19,7 @@ FUNC VOID DIA_Sergio_EXIT_Info()
 {
 	if (Npc_GetDistToWP (self,"NW_MONASTERY_CHAPELL_02") <= 1500)  // Nur wenn Sergio in der Kapelle ist M.F.  
 	{
-		AI_Output (self, other,"DIA_Sergio_EXIT_04_00");//Nech Innos osvìtluje tvou cestu.
+		AI_Output (self, other,"DIA_Sergio_EXIT_04_00");//NechÅ¥ Innos osvÄ›tluje tvou cestu.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -47,7 +47,7 @@ func int DIA_Sergio_WELCOME_Condition ()
 };
 func void DIA_Sergio_WELCOME_Info ()
 {
-	AI_Output (self, other, "DIA_Sergio_WELCOME_04_00"); //Innos tì doprovázej, co pro tebe mohu udìlat?
+	AI_Output (self, other, "DIA_Sergio_WELCOME_04_00"); //Innos tÄ› doprovÃ¡zej, co pro tebe mohu udÄ›lat?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Isgaroth
@@ -72,24 +72,24 @@ func int DIA_Sergio_Isgaroth_Condition ()
 };
 func void DIA_Sergio_Isgaroth_Info ()
 {
-	AI_Output (self, other, "DIA_Sergio_Isgaroth_04_00"); //Modlil ses za mé bratry. Rád bych ti za to podìkoval. Øekni mi, co pro tebe mohu udìlat.
+	AI_Output (self, other, "DIA_Sergio_Isgaroth_04_00"); //Modlil ses za mÃ© bratry. RÃ¡d bych ti za to podÄ›koval. Å˜ekni mi, co pro tebe mohu udÄ›lat.
 	
 	Info_ClearChoices (DIA_Sergio_Isgaroth);
-	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"Co takhle malý penìžní dar?",DIA_Sergio_Isgaroth_Spende);
-	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"Podìl se se mnou o své váleènické zkušenosti.",DIA_Sergio_Isgaroth_XP);
+	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"Co takhle malÃ½ penÄ›Å¾nÃ­ dar?",DIA_Sergio_Isgaroth_Spende);
+	Info_AddChoice 	  (DIA_Sergio_Isgaroth,"PodÄ›l se se mnou o svÃ© vÃ¡leÄnickÃ© zkuÅ¡enosti.",DIA_Sergio_Isgaroth_XP);
 };	
 FUNC VOID DIA_Sergio_Isgaroth_Spende()
 {
-	AI_Output (other, self, "DIA_Sergio_Isgaroth_Spende_15_00"); //Co takhle malý penìžní dar?
-	AI_Output (self, other, "DIA_Sergio_Isgaroth_Spende_04_01"); //Snad ti budou tyhle zlaáky k užitku.
+	AI_Output (other, self, "DIA_Sergio_Isgaroth_Spende_15_00"); //Co takhle malÃ½ penÄ›Å¾nÃ­ dar?
+	AI_Output (self, other, "DIA_Sergio_Isgaroth_Spende_04_01"); //Snad ti budou tyhle zlaÅ¥Ã¡ky k uÅ¾itku.
 	
 	B_GiveInvItems (self,other, ItMi_Gold,100);
 	Info_ClearChoices (DIA_Sergio_Isgaroth);
 };
 FUNC VOID DIA_Sergio_Isgaroth_XP()
 {
-	AI_Output (other, self, "DIA_Sergio_Isgaroth_XP_15_00"); //Podìl se se mnou o své váleènické zkušenosti.
-	AI_Output (self, other, "DIA_Sergio_Isgaroth_XP_04_01"); //Když bojuješ, dávej si pozor, aby ti nikdo nemohl vpadnout do zad.
+	AI_Output (other, self, "DIA_Sergio_Isgaroth_XP_15_00"); //PodÄ›l se se mnou o svÃ© vÃ¡leÄnickÃ© zkuÅ¡enosti.
+	AI_Output (self, other, "DIA_Sergio_Isgaroth_XP_04_01"); //KdyÅ¾ bojujeÅ¡, dÃ¡vej si pozor, aby ti nikdo nemohl vpadnout do zad.
 	
 	other.HitChance[NPC_TALENT_2H] = (other.HitChance[NPC_TALENT_2H] + 2);
 	PrintScreen	(PRINT_Learn2H, -1, -1, FONT_ScreenSmall, 2);
@@ -105,7 +105,7 @@ instance DIA_Sergio_Aufgabe		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Sergio_Aufgabe_Condition;
 	information	 = 	DIA_Sergio_Aufgabe_Info;
-	description	 = 	"Potøebuji se dostat do knihovny.";
+	description	 = 	"PotÅ™ebuji se dostat do knihovny.";
 };
 func int DIA_Sergio_Aufgabe_Condition ()
 {	
@@ -118,16 +118,16 @@ func int DIA_Sergio_Aufgabe_Condition ()
 };
 func void DIA_Sergio_Aufgabe_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Aufgabe_15_00"); //Potøebuji se dostat do knihovny.
-	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_01"); //No, tam tì bohužel nemohu pustit. Nejprve musíš splnit své úkoly.
-	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_02"); //Ale mohu ti pomoci. Jdi za mistrem Isgarothem a promluv si s ním. Slyšel jsem, že potøebuje nìjakou pomoc. Šel bych sám - ale pøenechám to tobì.
+	AI_Output (other, self, "DIA_Sergio_Aufgabe_15_00"); //PotÅ™ebuji se dostat do knihovny.
+	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_01"); //No, tam tÄ› bohuÅ¾el nemohu pustit. Nejprve musÃ­Å¡ splnit svÃ© Ãºkoly.
+	AI_Output (self, other, "DIA_Sergio_Aufgabe_04_02"); //Ale mohu ti pomoci. Jdi za mistrem Isgarothem a promluv si s nÃ­m. SlyÅ¡el jsem, Å¾e potÅ™ebuje nÄ›jakou pomoc. Å el bych sÃ¡m - ale pÅ™enechÃ¡m to tobÄ›.
 	
 	Sergio_Sends = TRUE;
 	Wld_InsertNpc (BlackWolf,"NW_PATH_TO_MONASTER_AREA_01"); //ist richtig geschrieben! 
 	
 	Log_CreateTopic (Topic_IsgarothWolf,LOG_MISSION);
 	Log_SetTopicStatus	 (Topic_IsgarothWolf,LOG_RUNNING);
-	B_LogEntry (Topic_IsgarothWolf,"Mistr Isgaroth potøebuje pomoci ve svatyni. Mìl bych se po nìm podívat.");
+	B_LogEntry (Topic_IsgarothWolf,"Mistr Isgaroth potÅ™ebuje pomoci ve svatyni. MÄ›l bych se po nÄ›m podÃ­vat.");
 };	
 
 ///////////////////////////////////////////////////////////////////////
@@ -139,7 +139,7 @@ instance DIA_Sergio_WHAT		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Sergio_WHAT_Condition;
 	information	 = 	DIA_Sergio_WHAT_Info;
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 func int DIA_Sergio_WHAT_Condition ()
 {	
@@ -151,11 +151,11 @@ func int DIA_Sergio_WHAT_Condition ()
 };
 func void DIA_Sergio_WHAT_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_WHAT_15_00"); //Co tady dìláš?
-	AI_Output (self, other, "DIA_Sergio_WHAT_04_01"); //Modlím se k Innosovi, aby posílil mé paže a vùli.
-	AI_Output (self, other, "DIA_Sergio_WHAT_04_02"); //Tak budu moci èelit všem nebezpeèím a znièím každého jeho nepøítele k jeho vìtší slávì.
-	AI_Output (other, self, "DIA_Sergio_WHAT_15_03"); //Jakého nepøítele?
-	AI_Output (self, other, "DIA_Sergio_WHAT_04_04"); //Všechny, kteøí se protiví Innosovì vùli. A už to jsou lidé nebo pøíšery.
+	AI_Output (other, self, "DIA_Sergio_WHAT_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output (self, other, "DIA_Sergio_WHAT_04_01"); //ModlÃ­m se k Innosovi, aby posÃ­lil mÃ© paÅ¾e a vÅ¯li.
+	AI_Output (self, other, "DIA_Sergio_WHAT_04_02"); //Tak budu moci Äelit vÅ¡em nebezpeÄÃ­m a zniÄÃ­m kaÅ¾dÃ©ho jeho nepÅ™Ã­tele k jeho vÄ›tÅ¡Ã­ slÃ¡vÄ›.
+	AI_Output (other, self, "DIA_Sergio_WHAT_15_03"); //JakÃ©ho nepÅ™Ã­tele?
+	AI_Output (self, other, "DIA_Sergio_WHAT_04_04"); //VÅ¡echny, kteÅ™Ã­ se protivÃ­ InnosovÄ› vÅ¯li. AÅ¥ uÅ¾ to jsou lidÃ© nebo pÅ™Ã­Å¡ery.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Babo
@@ -166,7 +166,7 @@ instance DIA_Sergio_Babo		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Sergio_Babo_Condition;
 	information	 = 	DIA_Sergio_Babo_Info;
-	description	 = 	"Nemohl by sis projít nìkolik lekcí s Babem?";
+	description	 = 	"Nemohl by sis projÃ­t nÄ›kolik lekcÃ­ s Babem?";
 };
 func int DIA_Sergio_Babo_Condition ()
 {	
@@ -179,15 +179,15 @@ func int DIA_Sergio_Babo_Condition ()
 };
 func void DIA_Sergio_Babo_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Babo_15_00"); //Nemohl by sis projít nìkolik lekcí s Babem?
-	AI_Output (self, other, "DIA_Sergio_Babo_04_01"); //Proè mì nepožádá sám?
-	AI_Output (other, self, "DIA_Sergio_Babo_15_02"); //Myslím, že se stydí.
-	AI_Output (self, other, "DIA_Sergio_Babo_04_03"); //Aha. Dobrá, pokud to pro nìj tolik znamená, budu ho cvièit dvì hodiny každé ráno. Zaèínáme v pìt hodin. Vyøiï mu to.
+	AI_Output (other, self, "DIA_Sergio_Babo_15_00"); //Nemohl by sis projÃ­t nÄ›kolik lekcÃ­ s Babem?
+	AI_Output (self, other, "DIA_Sergio_Babo_04_01"); //ProÄ mÄ› nepoÅ¾Ã¡dÃ¡ sÃ¡m?
+	AI_Output (other, self, "DIA_Sergio_Babo_15_02"); //MyslÃ­m, Å¾e se stydÃ­.
+	AI_Output (self, other, "DIA_Sergio_Babo_04_03"); //Aha. DobrÃ¡, pokud to pro nÄ›j tolik znamenÃ¡, budu ho cviÄit dvÄ› hodiny kaÅ¾dÃ© rÃ¡no. ZaÄÃ­nÃ¡me v pÄ›t hodin. VyÅ™iÄ mu to.
 	
 	Npc_ExchangeRoutine (self, "TRAIN");
 	B_StartOtherRoutine (Babo,"TRAIN");
 
-	B_LogEntry (Topic_BaboTrain, "Sergio souhlasil, že od nynìjška bude s Babem každé ráno dvì hodiny trénovat."); 
+	B_LogEntry (Topic_BaboTrain, "Sergio souhlasil, Å¾e od nynÄ›jÅ¡ka bude s Babem kaÅ¾dÃ© rÃ¡no dvÄ› hodiny trÃ©novat."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WHY
@@ -198,7 +198,7 @@ instance DIA_Sergio_WHY		(C_INFO)
 	nr			 =  4;
 	condition	 = 	DIA_Sergio_WHY_Condition;
 	information	 = 	DIA_Sergio_WHY_Info;
-	description	 = 	"Proè nejsi s ostatními paladiny?";
+	description	 = 	"ProÄ nejsi s ostatnÃ­mi paladiny?";
 };
 func int DIA_Sergio_WHY_Condition ()
 {	
@@ -210,9 +210,9 @@ func int DIA_Sergio_WHY_Condition ()
 };
 func void DIA_Sergio_WHY_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_WHY_15_00"); //Proè nejsi s ostatními paladiny?
-	AI_Output (self, other, "DIA_Sergio_WHY_04_01"); //Možná vypadá nezvykle, že jsem tady, aèkoliv i my paladinové sloužíme mágùm, protože to jsou oni, kdo vykonává Innosovu vùli.
-	AI_Output (self, other, "DIA_Sergio_WHY_04_02"); //My paladinové jsme váleèníci ve jménì Innosovì. Jeho vùle je náš zákon. Momentálnì èekám na další rozkazy od mágù.
+	AI_Output (other, self, "DIA_Sergio_WHY_15_00"); //ProÄ nejsi s ostatnÃ­mi paladiny?
+	AI_Output (self, other, "DIA_Sergio_WHY_04_01"); //MoÅ¾nÃ¡ vypadÃ¡ nezvykle, Å¾e jsem tady, aÄkoliv i my paladinovÃ© slouÅ¾Ã­me mÃ¡gÅ¯m, protoÅ¾e to jsou oni, kdo vykonÃ¡vÃ¡ Innosovu vÅ¯li.
+	AI_Output (self, other, "DIA_Sergio_WHY_04_02"); //My paladinovÃ© jsme vÃ¡leÄnÃ­ci ve jmÃ©nÄ› InnosovÄ›. Jeho vÅ¯le je nÃ¡Å¡ zÃ¡kon. MomentÃ¡lnÄ› ÄekÃ¡m na dalÅ¡Ã­ rozkazy od mÃ¡gÅ¯.
 
 };
 ///////////////////////////////////////////////////////////////////////
@@ -225,7 +225,7 @@ instance DIA_Sergio_ORDERS		(C_INFO)
 	condition	 = 	DIA_Sergio_ORDERS_Condition;
 	information	 = 	DIA_Sergio_ORDERS_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Máš nìjaké nové rozkazy?";
+	description	 = 	"MÃ¡Å¡ nÄ›jakÃ© novÃ© rozkazy?";
 };
 func int DIA_Sergio_ORDERS_Condition ()
 {	
@@ -238,8 +238,8 @@ func int DIA_Sergio_ORDERS_Condition ()
 };
 func void DIA_Sergio_ORDERS_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_ORDERS_15_00"); //Máš nìjaké nové rozkazy?
-	AI_Output (self, other, "DIA_Sergio_ORDERS_04_01"); //Zatím mám èas hledat sílu v modlitbách.
+	AI_Output (other, self, "DIA_Sergio_ORDERS_15_00"); //MÃ¡Å¡ nÄ›jakÃ© novÃ© rozkazy?
+	AI_Output (self, other, "DIA_Sergio_ORDERS_04_01"); //ZatÃ­m mÃ¡m Äas hledat sÃ­lu v modlitbÃ¡ch.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Guide Start
@@ -251,7 +251,7 @@ instance DIA_Sergio_Start		(C_INFO)
 	condition	 = 	DIA_Sergio_Start_Condition;
 	information	 = 	DIA_Sergio_Start_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Máš mì doprovodit do prùsmyku.";
+	description	 = 	"MÃ¡Å¡ mÄ› doprovodit do prÅ¯smyku.";
 };
 func int DIA_Sergio_Start_Condition ()
 {	
@@ -264,8 +264,8 @@ func int DIA_Sergio_Start_Condition ()
 };
 func void DIA_Sergio_Start_Info ()
 {
-	AI_Output (other, self, "DIA_Sergio_Start_15_00"); //Máš mì doprovodit do prùsmyku.
-	AI_Output (self, other, "DIA_Sergio_Start_04_01"); //Dobrá, udìlám to. Cestu znám, takže pojï se mnou.
+	AI_Output (other, self, "DIA_Sergio_Start_15_00"); //MÃ¡Å¡ mÄ› doprovodit do prÅ¯smyku.
+	AI_Output (self, other, "DIA_Sergio_Start_04_01"); //DobrÃ¡, udÄ›lÃ¡m to. Cestu znÃ¡m, takÅ¾e pojÄ se mnou.
 	
 	AI_StopProcessInfos (self);
 	
@@ -296,8 +296,8 @@ func int DIA_Sergio_Guide_Condition ()
 func void DIA_Sergio_Guide_Info ()
 {
 	AI_Output (other, self, "DIA_Sergio_Guide_15_00"); //Jak se vede?
-	AI_Output (self, other, "DIA_Sergio_Guide_04_01"); //Doprovodím tì do prùsmyku. Ale ta nejnebezpeènìjší èást cesty zaèíná až tam.
-	AI_Output (self, other, "DIA_Sergio_Guide_04_02"); //Ale neplýtvejme èasem.
+	AI_Output (self, other, "DIA_Sergio_Guide_04_01"); //DoprovodÃ­m tÄ› do prÅ¯smyku. Ale ta nejnebezpeÄnÄ›jÅ¡Ã­ ÄÃ¡st cesty zaÄÃ­nÃ¡ aÅ¾ tam.
+	AI_Output (self, other, "DIA_Sergio_Guide_04_02"); //Ale neplÃ½tvejme Äasem.
 	
 	AI_StopProcessInfos (self);
 	
@@ -324,9 +324,9 @@ func int DIA_Sergio_Ende_Condition ()
 };
 func void DIA_Sergio_Ende_Info ()
 {
-	AI_Output (self, other, "DIA_Sergio_Ende_04_00"); //Jsme tady. A už tì èeká v Hornickém údolí cokoliv, doufám, že se dostaneš zpátky.
-	AI_Output (other, self, "DIA_Sergio_Ende_15_01"); //Neboj se - vrátím se.
-	AI_Output (self, other, "DIA_Sergio_Ende_04_02"); //Innos tì doprovázej. A tì vždy ochraòuje.
+	AI_Output (self, other, "DIA_Sergio_Ende_04_00"); //Jsme tady. AÅ¥ uÅ¾ tÄ› ÄekÃ¡ v HornickÃ©m ÃºdolÃ­ cokoliv, doufÃ¡m, Å¾e se dostaneÅ¡ zpÃ¡tky.
+	AI_Output (other, self, "DIA_Sergio_Ende_15_01"); //Neboj se - vrÃ¡tÃ­m se.
+	AI_Output (self, other, "DIA_Sergio_Ende_04_02"); //Innos tÄ› doprovÃ¡zej. AÅ¥ tÄ› vÅ¾dy ochraÅˆuje.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE; 
 	AI_StopProcessInfos (self);
@@ -356,11 +356,11 @@ func void DIA_Sergio_Perm_Info ()
 {
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Sergio_Perm_04_00"); //U Innose, bratøe. Pokud se chceš zeptat na nìco ohlednì požehnání meèe, zeptej se Marduka.
+		AI_Output (self, other, "DIA_Sergio_Perm_04_00"); //U Innose, bratÅ™e. Pokud se chceÅ¡ zeptat na nÄ›co ohlednÄ› poÅ¾ehnÃ¡nÃ­ meÄe, zeptej se Marduka.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sergio_Perm_04_01"); //Slyšel jsem o tobì. Jsi ten chlapík z farem, který byl v Hornickém údolí. Máš moje uznání.
+		AI_Output (self, other, "DIA_Sergio_Perm_04_01"); //SlyÅ¡el jsem o tobÄ›. Jsi ten chlapÃ­k z farem, kterÃ½ byl v HornickÃ©m ÃºdolÃ­. MÃ¡Å¡ moje uznÃ¡nÃ­.
 	};
 	AI_StopProcessInfos (self);
 	

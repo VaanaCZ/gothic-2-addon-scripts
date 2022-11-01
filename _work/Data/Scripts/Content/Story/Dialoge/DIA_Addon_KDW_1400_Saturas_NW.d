@@ -20,14 +20,14 @@ FUNC VOID DIA_Addon_Saturas_EXIT_Info()
 {
 	if (MIS_Addon_Saturas_BringRiordian2Me == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_01"); //Kdy u tì nic neodradí, abys ostatní mágy rušil od práce, mùeš jednomu z nich ode mì nìco vzkázat.
-		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_02"); //Vyøiï Riordianovi, e bych ho tu rád vidìl.
-		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_03"); //Najdeš ho v zadní èásti krypty.
+		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_01"); //KdyÅ¾ uÅ¾ tÄ› nic neodradÃ­, abys ostatnÃ­ mÃ¡gy ruÅ¡il od prÃ¡ce, mÅ¯Å¾eÅ¡ jednomu z nich ode mÄ› nÄ›co vzkÃ¡zat.
+		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_02"); //VyÅ™iÄ Riordianovi, Å¾e bych ho tu rÃ¡d vidÄ›l.
+		AI_Output	(self, other, "DIA_Addon_Saturas_auftrag_14_03"); //NajdeÅ¡ ho v zadnÃ­ ÄÃ¡sti krypty.
 		MIS_Addon_Saturas_BringRiordian2Me = LOG_RUNNING;
 	
 		Log_CreateTopic (TOPIC_Addon_HolRiordian, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_HolRiordian, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_HolRiordian,"Saturas chce, abych za ním poslal vodního mága Riordiana. Mìl by bıt na místì vykopávek, nìkde vzadu v hrobce."); 
+		B_LogEntry (TOPIC_Addon_HolRiordian,"Saturas chce, abych za nÃ­m poslal vodnÃ­ho mÃ¡ga Riordiana. MÄ›l by bÃ½t na mÃ­stÄ› vykopÃ¡vek, nÄ›kde vzadu v hrobce."); 
 	};
 	
 	AI_StopProcessInfos (self);
@@ -43,7 +43,7 @@ instance DIA_Addon_Saturas_Nefarius		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Nefarius_Condition;
 	information	 = 	DIA_Addon_Saturas_Nefarius_Info;
  
- 	description	 = 	"Mám najít ztracené èásti Nefariova ornamentu.";
+ 	description	 = 	"MÃ¡m najÃ­t ztracenÃ© ÄÃ¡sti Nefariova ornamentu.";
 };
 
 func int DIA_Addon_Saturas_Nefarius_Condition ()
@@ -55,25 +55,25 @@ func int DIA_Addon_Saturas_Nefarius_Condition ()
 };
 func void DIA_Addon_Saturas_Nefarius_Info ()
 {
-	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_00"); //Mám najít ztracené èásti ornamentu pro Nefaria.
-	AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_01"); //Coe? To je neuvìøitelné! To jsi zase ty?
-	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_02"); //ádnı strach, pøinesu sem ty vìci.
+	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_00"); //MÃ¡m najÃ­t ztracenÃ© ÄÃ¡sti ornamentu pro Nefaria.
+	AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_01"); //CoÅ¾e? To je neuvÄ›Å™itelnÃ©! To jsi zase ty?
+	AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_02"); //Å½Ã¡dnÃ½ strach, pÅ™inesu sem ty vÄ›ci.
 	
 	if (ORNAMENT_SWITCHED_FOREST == FALSE)
 	&& (Npc_HasItems (other,ItWr_Map_NewWorld_Ornaments_Addon))
 	{
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_03"); //(povzdech) Víš alespoò, co máš hledat?
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_03"); //(povzdech) VÃ­Å¡ alespoÅˆ, co mÃ¡Å¡ hledat?
 		AI_Output (other, self, "DIA_ADDON_Saturas_Nefarius_15_04"); //Nefarius mi dal tuhle mapu.
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_05"); //Uka mi ji!
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_05"); //UkaÅ¾ mi ji!
 		B_UseFakeScroll ();
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_06"); //Hmm, v tom velkém hvozdì je to velmi nebezpeèné. Nemìl bys tam chodit sám.
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_07"); //V Khorinidu se poohlédni po nìkom, kdo tì doprovodí.
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_08"); //Nechci, aby tì seraly nìjaké nestvùry – a s tebou i ten ornament.
-		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_09"); //Tady máš tu mapu.
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_06"); //Hmm, v tom velkÃ©m hvozdÄ› je to velmi nebezpeÄnÃ©. NemÄ›l bys tam chodit sÃ¡m.
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_07"); //V Khorinidu se poohlÃ©dni po nÄ›kom, kdo tÄ› doprovodÃ­.
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_08"); //Nechci, aby tÄ› seÅ¾raly nÄ›jakÃ© nestvÅ¯ry â€“ a s tebou i ten ornament.
+		AI_Output (self, other, "DIA_ADDON_Saturas_Nefarius_14_09"); //Tady mÃ¡Å¡ tu mapu.
 
 		Log_CreateTopic (TOPIC_Addon_Ornament, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_Ornament, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_Ornament,"Saturas mì nabádal, abych zlomky ornamentu v lese nehledal sám. Mìl bych zajít do Khorinidu a poohlédnout se po nìkom, kdo by mì doprovodil."); 
+		B_LogEntry (TOPIC_Addon_Ornament,"Saturas mÄ› nabÃ¡dal, abych zlomky ornamentu v lese nehledal sÃ¡m. MÄ›l bych zajÃ­t do Khorinidu a poohlÃ©dnout se po nÄ›kom, kdo by mÄ› doprovodil."); 
 	};
 };
  
@@ -98,62 +98,62 @@ func int DIA_Addon_Saturas_Hallo_Condition ()
 		return TRUE;
 	};
 };
-func void DIA_Addon_Saturas_Hallo_weißtdu ()
+func void DIA_Addon_Saturas_Hallo_weiÃŸtdu ()
 {
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_00"); //
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_01"); //
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_02"); //
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_weißtdu_15_03"); //
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_04"); //
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weißtdu_14_05"); //
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_00"); //
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_01"); //
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_02"); //
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_15_03"); //
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_04"); //
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_weiÃŸtdu_14_05"); //
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
 
 };
 
 func void DIA_Addon_Saturas_Hallo_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_00"); //Zbláznil ses? Bì odsud.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_01"); //Tyhle hrobky jsou pro samozvané dobrodruhy pøíliš nebezpeèné.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_02"); //(otrávenì) Poslyš, neznáme my se? Samozøejmì! Ty hajzle!
-	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_03"); //(otrávenì) Nemysli si, e jsem ti zapomnìl, jak jsi nás tenkrát v Novém táboøe podrazil.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_00"); //ZblÃ¡znil ses? BÄ›Å¾ odsud.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_01"); //Tyhle hrobky jsou pro samozvanÃ© dobrodruhy pÅ™Ã­liÅ¡ nebezpeÄnÃ©.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_02"); //(otrÃ¡venÄ›) PoslyÅ¡, neznÃ¡me my se? SamozÅ™ejmÄ›! Ty hajzle!
+	AI_Output	(self, other, "DIA_Addon_Saturas_Hallo_14_03"); //(otrÃ¡venÄ›) Nemysli si, Å¾e jsem ti zapomnÄ›l, jak jsi nÃ¡s tenkrÃ¡t v NovÃ©m tÃ¡boÅ™e podrazil.
 
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "(rozpaèitì) Já...", DIA_Addon_Saturas_Hallo_Video ); 
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "(rozpaÄitÄ›) JÃ¡...", DIA_Addon_Saturas_Hallo_Video ); 
 };
 
 func void DIA_Addon_Saturas_Hallo_Video ()
 {
 	PlayVideo ("oreheap.bik");
-	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_00"); //(otrávenì) Vyèerpal jsi magickou moc z celé hory rudy a pak ses prostì vypaøil.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_01"); //(otrávenì) Co sis vùbec myslel, e dìláš?
+	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_00"); //(otrÃ¡venÄ›) VyÄerpal jsi magickou moc z celÃ© hory rudy a pak ses prostÄ› vypaÅ™il.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Video_14_01"); //(otrÃ¡venÄ›) Co sis vÅ¯bec myslel, Å¾e dÄ›lÃ¡Å¡?
 
 	Info_ClearChoices	(DIA_Addon_Saturas_Hallo);
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Je mi to moc líto. Nevìdìl jsem, co dìlám.", DIA_Addon_Saturas_Hallo_sorry );
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Stejnì by vám to nevyšlo.", DIA_Addon_Saturas_Hallo_Spott );
-	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Bylo to nutné. Nemohl jsem jinak.", DIA_Addon_Saturas_Hallo_notwendig );
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Je mi to moc lÃ­to. NevÄ›dÄ›l jsem, co dÄ›lÃ¡m.", DIA_Addon_Saturas_Hallo_sorry );
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "StejnÄ› by vÃ¡m to nevyÅ¡lo.", DIA_Addon_Saturas_Hallo_Spott );
+	Info_AddChoice	(DIA_Addon_Saturas_Hallo, "Bylo to nutnÃ©. Nemohl jsem jinak.", DIA_Addon_Saturas_Hallo_notwendig );
 };
 
 func void DIA_Addon_Saturas_Hallo_notwendig ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //Jinak to nešlo. Bez síly rudy bych nikdy Spáèe neporazil.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(rozzuøenì) Co to blábolíš? Spáè a poraenı?
-	DIA_Addon_Saturas_Hallo_weißtdu ();
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_notwendig_15_00"); //Jinak to neÅ¡lo. Bez sÃ­ly rudy bych nikdy SpÃ¡Äe neporazil.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_notwendig_14_01"); //(rozzuÅ™enÄ›) Co to blÃ¡bolÃ­Å¡? SpÃ¡Ä a poraÅ¾enÃ½?
+	DIA_Addon_Saturas_Hallo_weiÃŸtdu ();
 };
 
 func void DIA_Addon_Saturas_Hallo_Spott ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_00"); //Váš plán by stejnì nefungoval. Odpálení bariéry pomocí haldy rudy je nejvìtší pitomost, jakou jsem kdy slyšel.
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_00"); //VÃ¡Å¡ plÃ¡n by stejnÄ› nefungoval. OdpÃ¡lenÃ­ bariÃ©ry pomocÃ­ haldy rudy je nejvÄ›tÅ¡Ã­ pitomost, jakou jsem kdy slyÅ¡el.
 	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_Spott_15_01"); //Nakonec byste do vzduchu vyhodili sami sebe.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(rozzuøenì) To u je vrchol! Kdo ti dal právo soudit nás a naše úmysly?
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //Kdybych nebyl tak mírumilovnı, seslal bych na tebe Adanùv hnìv, chlapèe.
-	DIA_Addon_Saturas_Hallo_weißtdu ();
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_02"); //(rozzuÅ™enÄ›) To uÅ¾ je vrchol! Kdo ti dal prÃ¡vo soudit nÃ¡s a naÅ¡e Ãºmysly?
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_Spott_14_03"); //Kdybych nebyl tak mÃ­rumilovnÃ½, seslal bych na tebe AdanÅ¯v hnÄ›v, chlapÄe.
+	DIA_Addon_Saturas_Hallo_weiÃŸtdu ();
 };
 
 func void DIA_Addon_Saturas_Hallo_sorry ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //Je mi to líto. Nevìdìl jsem, co dìlám.
-	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //Vánì? A to si myslíš, e tì omlouvá?
-	DIA_Addon_Saturas_Hallo_weißtdu ();
+	AI_Output			(other, self, "DIA_Addon_Saturas_Hallo_sorry_15_00"); //Je mi to lÃ­to. NevÄ›dÄ›l jsem, co dÄ›lÃ¡m.
+	AI_Output			(self, other, "DIA_Addon_Saturas_Hallo_sorry_14_01"); //VÃ¡Å¾nÄ›? A to si myslÃ­Å¡, Å¾e tÄ› omlouvÃ¡?
+	DIA_Addon_Saturas_Hallo_weiÃŸtdu ();
 };
 
 
@@ -168,7 +168,7 @@ instance DIA_Addon_Saturas_keineAhnung		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_keineAhnung_Condition;
 	information	 = 	DIA_Addon_Saturas_keineAhnung_Info;
 
-	description	 = 	"Tak o tom nemám ani šajna.";
+	description	 = 	"Tak o tom nemÃ¡m ani Å¡ajna.";
 };
 
 func int DIA_Addon_Saturas_keineAhnung_Condition ()
@@ -181,13 +181,13 @@ func int DIA_Addon_Saturas_keineAhnung_Condition ()
 
 func void DIA_Addon_Saturas_keineAhnung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_keineAhnung_15_00"); //Nemám tušení. Øíkal jsem si, e se jen tak zastavím.
-	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_01"); //Jen mì pøipravuješ o èas. Zmiz odsud.
-	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_02"); //(k sobì) Vyøídím si to s tebou pozdìji.
+	AI_Output	(other, self, "DIA_Addon_Saturas_keineAhnung_15_00"); //NemÃ¡m tuÅ¡enÃ­. Å˜Ã­kal jsem si, Å¾e se jen tak zastavÃ­m.
+	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_01"); //Jen mÄ› pÅ™ipravujeÅ¡ o Äas. Zmiz odsud.
+	AI_Output	(self, other, "DIA_Addon_Saturas_keineAhnung_14_02"); //(k sobÄ›) VyÅ™Ã­dÃ­m si to s tebou pozdÄ›ji.
 	
 	Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_KDW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_KDW,"Koneènì jsem našel vodní mágy. Nejdøív bych mìl zjistit, co tady ve skuteènosti dìlají. Saturas, kterı stále nemùe zapomenout na události z trestanecké kolonie, mi to zjevnì neøekne."); 
+	B_LogEntry (TOPIC_Addon_KDW,"KoneÄnÄ› jsem naÅ¡el vodnÃ­ mÃ¡gy. NejdÅ™Ã­v bych mÄ›l zjistit, co tady ve skuteÄnosti dÄ›lajÃ­. Saturas, kterÃ½ stÃ¡le nemÅ¯Å¾e zapomenout na udÃ¡losti z trestaneckÃ© kolonie, mi to zjevnÄ› neÅ™ekne."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -218,7 +218,7 @@ func int DIA_Addon_Saturas_raus_Condition ()
 
 func void DIA_Addon_Saturas_raus_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_raus_14_00"); //Ztra se, ne se ti nìco stane.
+	AI_Output	(self, other, "DIA_Addon_Saturas_raus_14_00"); //ZtraÅ¥ se, neÅ¾ se ti nÄ›co stane.
 	AI_StopProcessInfos (self);
 };
 
@@ -232,7 +232,7 @@ instance DIA_Addon_Saturas_Lares		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Lares_Condition;
 	information	 = 	DIA_Addon_Saturas_Lares_Info;
 
-	description	 = 	"Pøišel jsem sem s Laresem.";
+	description	 = 	"PÅ™iÅ¡el jsem sem s Laresem.";
 };
 
 func int DIA_Addon_Saturas_Lares_Condition ()
@@ -245,10 +245,10 @@ func int DIA_Addon_Saturas_Lares_Condition ()
 
 func void DIA_Addon_Saturas_Lares_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_00"); //Pøišel jsem sem s Laresem.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_01"); //(znepokojenì) S Laresem? vánì? Kde je?
-	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_02"); //Jsem tu sám, Lares se vrátil do mìsta.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_03"); //Coe? A to tì k nám poslal samotného? Co si vùbec myslí?
+	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_00"); //PÅ™iÅ¡el jsem sem s Laresem.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_01"); //(znepokojenÄ›) S Laresem? vÃ¡Å¾nÄ›? Kde je?
+	AI_Output	(other, self, "DIA_Addon_Saturas_Lares_15_02"); //Jsem tu sÃ¡m, Lares se vrÃ¡til do mÄ›sta.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Lares_14_03"); //CoÅ¾e? A to tÄ› k nÃ¡m poslal samotnÃ©ho? Co si vÅ¯bec myslÃ­?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ instance DIA_Addon_Saturas_Ornament		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Ornament_Condition;
 	information	 = 	DIA_Addon_Saturas_Ornament_Info;
 
-	description	 = 	"Pøinesl jsem ti ten ornament.";
+	description	 = 	"PÅ™inesl jsem ti ten ornament.";
 };
 
 func int DIA_Addon_Saturas_Ornament_Condition ()
@@ -277,23 +277,23 @@ func int DIA_Addon_Saturas_Ornament_Condition ()
 
 func void DIA_Addon_Saturas_Ornament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_00"); //Pøinesl jsem ti ten ornament.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_00"); //PÅ™inesl jsem ti ten ornament.
 	B_GiveInvItems (other, self, ItMi_Ornament_Addon_Vatras,1);
-	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_ADD_14_00"); //Co to má pro všecko na svìtì znamenat? 
+	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_ADD_14_00"); //Co to mÃ¡ pro vÅ¡ecko na svÄ›tÄ› znamenat? 
 
 	if (Lares_Angekommen == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_01"); //Kdo ti to dal? Neøíkej mi, e to na tebe Lares jen tak pøehrál.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_01"); //Kdo ti to dal? NeÅ™Ã­kej mi, Å¾e to na tebe Lares jen tak pÅ™ehrÃ¡l.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_02"); //Nech tìch øeèí – tady to máš. Chceš to, ne?
-	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_03"); //Samozøejmì. Ale znervózòuje mì, e ses do hry vloil zrovna TY.
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_04"); //Proè s tou starou historií s horou rudy tolik nadìláš?
-	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_05"); //Vdy jsem ti to u vynahradil. A nemùeš øíct, e jsem byl nespolehlivı.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(povzdech) A co mi to nakonec pøineslo? Pche, nemysli si, e bych ti snad vìøil.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_02"); //Nech tÄ›ch Å™eÄÃ­ â€“ tady to mÃ¡Å¡. ChceÅ¡ to, ne?
+	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_03"); //SamozÅ™ejmÄ›. Ale znervÃ³zÅˆuje mÄ›, Å¾e ses do hry vloÅ¾il zrovna TY.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_04"); //ProÄ s tou starou historiÃ­ s horou rudy tolik nadÄ›lÃ¡Å¡?
+	AI_Output	(other, self, "DIA_Addon_Saturas_Ornament_15_05"); //VÅ¾dyÅ¥ jsem ti to uÅ¾ vynahradil. A nemÅ¯Å¾eÅ¡ Å™Ã­ct, Å¾e jsem byl nespolehlivÃ½.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Ornament_14_06"); //(povzdech) A co mi to nakonec pÅ™ineslo? Pche, nemysli si, Å¾e bych ti snad vÄ›Å™il.
 	MIS_Addon_Lares_Ornament2Saturas = LOG_SUCCESS;
 
-	//Joly: Monster auffüllen, die bei Lares gestört haben
+	//Joly: Monster auffÃ¼llen, die bei Lares gestÃ¶rt haben
 	Wld_InsertNpc 	(Bloodfly, 	"FP_ROAM_NW_TROLLAREA_RUINS_07");
 	Wld_InsertNpc 	(Giant_Bug, 	"FP_ROAM_NW_TROLLAREA_RUINS_03");
 	Wld_InsertNpc 	(Lurker, 		"NW_TROLLAREA_RIVERSIDE_01");
@@ -325,7 +325,7 @@ instance DIA_Addon_Saturas_geheimbund		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_geheimbund_Condition;
 	information	 = 	DIA_Addon_Saturas_geheimbund_Info;
 
-	description	 = 	"Chtìl bych vstoupit do kruhu vody.";
+	description	 = 	"ChtÄ›l bych vstoupit do kruhu vody.";
 };
 
 func int DIA_Addon_Saturas_geheimbund_Condition ()
@@ -340,23 +340,23 @@ func int DIA_Addon_Saturas_geheimbund_Condition ()
 
 func void DIA_Addon_Saturas_geheimbund_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_00"); //Chci se pøidat ke kruhu vody.
+	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_00"); //Chci se pÅ™idat ke kruhu vody.
 
 	if (Lares_Angekommen == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_01"); //(vztekle) COE? Jak o nìm mùeš vìdìt? Kdo...? Ten LARES! Já ho zabiju!
-		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_02"); //Porušil nejdùleitìjší pravidlo – s nikım o kruhu vody nemluvit.
+		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_01"); //(vztekle) COÅ½E? Jak o nÄ›m mÅ¯Å¾eÅ¡ vÄ›dÄ›t? Kdo...? Ten LARES! JÃ¡ ho zabiju!
+		AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_02"); //PoruÅ¡il nejdÅ¯leÅ¾itÄ›jÅ¡Ã­ pravidlo â€“ s nikÃ½m o kruhu vody nemluvit.
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_03"); //(úplnì perplex) Nevím, co bych mìl øíct. Vìøím ti, jen dokud tì mùu mít na oèích.
-	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_04"); //O vašem kruhu mi ale povìdìl Vatras.
-	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_05"); //(rezignovanì) Coe? Vatras? (sarkasticky) No to je úasné! Jedinı z vodních mágù na ostrovì, kterı tì nezná, a ty na nìj zrovna natrefíš.
-	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_06"); //Varuju tì, tentokrát nedìlej ádné hlouposti.
-	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_07"); //(sarkasticky) Pokusím se.
+	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_03"); //(ÃºplnÄ› perplex) NevÃ­m, co bych mÄ›l Å™Ã­ct. VÄ›Å™Ã­m ti, jen dokud tÄ› mÅ¯Å¾u mÃ­t na oÄÃ­ch.
+	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_04"); //O vaÅ¡em kruhu mi ale povÄ›dÄ›l Vatras.
+	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_05"); //(rezignovanÄ›) CoÅ¾e? Vatras? (sarkasticky) No to je ÃºÅ¾asnÃ©! JedinÃ½ z vodnÃ­ch mÃ¡gÅ¯ na ostrovÄ›, kterÃ½ tÄ› neznÃ¡, a ty na nÄ›j zrovna natrefÃ­Å¡.
+	AI_Output	(self, other, "DIA_Addon_Saturas_geheimbund_14_06"); //Varuju tÄ›, tentokrÃ¡t nedÄ›lej Å¾Ã¡dnÃ© hlouposti.
+	AI_Output	(other, self, "DIA_Addon_Saturas_geheimbund_15_07"); //(sarkasticky) PokusÃ­m se.
 	
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Saturas mì do kruhu vody nemùe pøijmout. Rozhodnutí musí nechat na Vatrasovi."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Saturas mÄ› do kruhu vody nemÅ¯Å¾e pÅ™ijmout. RozhodnutÃ­ musÃ­ nechat na Vatrasovi."); 
 
 };
 
@@ -370,7 +370,7 @@ instance DIA_Addon_Saturas_wasmachstdu		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_wasmachstdu_Condition;
 	information	 = 	DIA_Addon_Saturas_wasmachstdu_Info;
 
-	description	 = 	"Co tady dìláš?";
+	description	 = 	"Co tady dÄ›lÃ¡Å¡?";
 };
 
 func int DIA_Addon_Saturas_wasmachstdu_Condition ()
@@ -383,11 +383,11 @@ func int DIA_Addon_Saturas_wasmachstdu_Condition ()
 
 func void DIA_Addon_Saturas_wasmachstdu_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_wasmachstdu_15_00"); //Co tu dìláš?
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_01"); //(uctivì) V tìchto síních jsou skryta pradávná tajemství. Záhadná tajemství.
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_02"); //Nápisy na stìnách poukazují na velmi starou kulturu.
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_03"); //Všechno, co tu vidíš, je psáno v jazyce, kterı vùbec neznáme.
-	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_04"); //Teprve mu zaèínáme rozumìt a chápat, co znamená.
+	AI_Output	(other, self, "DIA_Addon_Saturas_wasmachstdu_15_00"); //Co tu dÄ›lÃ¡Å¡?
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_01"); //(uctivÄ›) V tÄ›chto sÃ­nÃ­ch jsou skryta pradÃ¡vnÃ¡ tajemstvÃ­. ZÃ¡hadnÃ¡ tajemstvÃ­.
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_02"); //NÃ¡pisy na stÄ›nÃ¡ch poukazujÃ­ na velmi starou kulturu.
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_03"); //VÅ¡echno, co tu vidÃ­Å¡, je psÃ¡no v jazyce, kterÃ½ vÅ¯bec neznÃ¡me.
+	AI_Output	(self, other, "DIA_Addon_Saturas_wasmachstdu_14_04"); //Teprve mu zaÄÃ­nÃ¡me rozumÄ›t a chÃ¡pat, co znamenÃ¡.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -400,7 +400,7 @@ instance DIA_Addon_Saturas_Erdbeben		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Erdbeben_Condition;
 	information	 = 	DIA_Addon_Saturas_Erdbeben_Info;
 
-	description	 = 	"Co je to za divná zemìtøesení?";
+	description	 = 	"Co je to za divnÃ¡ zemÄ›tÅ™esenÃ­?";
 };
 
 func int DIA_Addon_Saturas_Erdbeben_Condition ()
@@ -415,11 +415,11 @@ func int DIA_Addon_Saturas_Erdbeben_Condition ()
 
 func void DIA_Addon_Saturas_Erdbeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_Erdbeben_15_00"); //Co je to za podivná zemìtøesení?
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_01"); //To je jedna z hádanek, kterou se snaím vyøešit.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_02"); //Kdesi za tìmito horami je nìjak narušena magická struktura.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_03"); //Nìkdo se evidentnì ze všech sil snaí zlomit velice mocné kouzlo.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_04"); //Obávám se, e zanedlouho tahle zemìtøesení postihnou celı ostrov.
+	AI_Output	(other, self, "DIA_Addon_Saturas_Erdbeben_15_00"); //Co je to za podivnÃ¡ zemÄ›tÅ™esenÃ­?
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_01"); //To je jedna z hÃ¡danek, kterou se snaÅ¾Ã­m vyÅ™eÅ¡it.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_02"); //Kdesi za tÄ›mito horami je nÄ›jak naruÅ¡ena magickÃ¡ struktura.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_03"); //NÄ›kdo se evidentnÄ› ze vÅ¡ech sil snaÅ¾Ã­ zlomit velice mocnÃ© kouzlo.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Erdbeben_14_04"); //ObÃ¡vÃ¡m se, Å¾e zanedlouho tahle zemÄ›tÅ™esenÃ­ postihnou celÃ½ ostrov.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WhatsOrnament
@@ -431,7 +431,7 @@ instance DIA_Addon_Saturas_WhatsOrnament		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_WhatsOrnament_Condition;
 	information	 = 	DIA_Addon_Saturas_WhatsOrnament_Info;
 
-	description	 = 	"Proè je pro tebe ten ornament tak dùleitı?";
+	description	 = 	"ProÄ je pro tebe ten ornament tak dÅ¯leÅ¾itÃ½?";
 };
 
 func int DIA_Addon_Saturas_WhatsOrnament_Condition ()
@@ -446,9 +446,9 @@ func int DIA_Addon_Saturas_WhatsOrnament_Condition ()
 
 func void DIA_Addon_Saturas_WhatsOrnament_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_WhatsOrnament_15_00"); //Proè je pro tebe ten ornament tak dùleitı?
-	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_01"); //(otrávenì) Je to klíè k portálu.
-	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_02"); //Víc ti neøeknu.
+	AI_Output	(other, self, "DIA_Addon_Saturas_WhatsOrnament_15_00"); //ProÄ je pro tebe ten ornament tak dÅ¯leÅ¾itÃ½?
+	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_01"); //(otrÃ¡venÄ›) Je to klÃ­Ä k portÃ¡lu.
+	AI_Output	(self, other, "DIA_Addon_Saturas_WhatsOrnament_14_02"); //VÃ­c ti neÅ™eknu.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ScRanger
@@ -461,7 +461,7 @@ instance DIA_Addon_Saturas_ScRanger		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_ScRanger_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Nyní patøím ke kruhu vody.";
+	description	 = 	"NynÃ­ patÅ™Ã­m ke kruhu vody.";
 };
 
 func int DIA_Addon_Saturas_ScRanger_Condition ()
@@ -475,41 +475,41 @@ func int DIA_Addon_Saturas_ScRanger_Condition ()
 
 func void DIA_Addon_Saturas_ScRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_ScRanger_15_00"); //Teï u patøím ke kruhu vody.
+	AI_Output	(other, self, "DIA_Addon_Saturas_ScRanger_15_00"); //TeÄ uÅ¾ patÅ™Ã­m ke kruhu vody.
 	var C_Item itm; 
 	itm = Npc_GetEquippedArmor(other);
 		
 	if 	(
-		((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE))	//-> Der SC IST Ranger! SC trägt eigenen (nicht Lares') Ring
-		|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)							//-> Der SC IST Ranger! Nur als Ranger hat er diese Rüstung bekommen.
+		((SCIsWearingRangerRing == TRUE) && (RangerRingIsLaresRing == FALSE))	//-> Der SC IST Ranger! SC trÃ¤gt eigenen (nicht Lares') Ring
+		|| (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)							//-> Der SC IST Ranger! Nur als Ranger hat er diese RÃ¼stung bekommen.
 		)
 		{
 			if (Hlp_IsItem(itm, ITAR_RANGER_Addon) == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_01"); //Jak vidím, nosíš zbroj našich dìtí.
+				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_01"); //Jak vidÃ­m, nosÃ­Å¡ zbroj naÅ¡ich dÄ›tÃ­.
 			}
 			else 
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_02"); //Jak vidím, nosíš naše tajné poznávací znamení – akvamarínovı prsten.
+				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_02"); //Jak vidÃ­m, nosÃ­Å¡ naÅ¡e tajnÃ© poznÃ¡vacÃ­ znamenÃ­ â€“ akvamarÃ­novÃ½ prsten.
 			};
 			
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_03"); //A tvé oèi mi napovídají, e mluvíš pravdu.
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_04"); //(mumlá si) No dobøe, pøijímám tì do našich øad.
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_05"); //Ale nezapomeò, e to znamená i obrovskou zodpovìdnost.
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_06"); //A ve tvém vlastním zájmu doufám, e budeš jednat èestnì.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_03"); //A tvÃ© oÄi mi napovÃ­dajÃ­, Å¾e mluvÃ­Å¡ pravdu.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_04"); //(mumlÃ¡ si) No dobÅ™e, pÅ™ijÃ­mÃ¡m tÄ› do naÅ¡ich Å™ad.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_05"); //Ale nezapomeÅˆ, Å¾e to znamenÃ¡ i obrovskou zodpovÄ›dnost.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_06"); //A ve tvÃ©m vlastnÃ­m zÃ¡jmu doufÃ¡m, Å¾e budeÅ¡ jednat ÄestnÄ›.
 			SaturasKnows_SC_IsRanger = TRUE;
-			B_LogEntry (TOPIC_Addon_RingOfWater,"Saturas akceptoval, e jsem vstoupil do kruhu vody."); 
+			B_LogEntry (TOPIC_Addon_RingOfWater,"Saturas akceptoval, Å¾e jsem vstoupil do kruhu vody."); 
 		}
 		else
 		{
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_07"); //A jak ti mám øíct, e jsi teï jedním z nás?
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_07"); //A jak ti mÃ¡m Å™Ã­ct, Å¾e jsi teÄ jednÃ­m z nÃ¡s?
 	
 			if (RangerRingIsLaresRing == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_08"); //Ten akvamarínovı prsten, co nosíš, patøí Laresovi – já to poznám.
+				AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_08"); //Ten akvamarÃ­novÃ½ prsten, co nosÃ­Å¡, patÅ™Ã­ Laresovi â€“ jÃ¡ to poznÃ¡m.
 			};
 
-			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_09"); // Snaíš se mì obelstít, co? Nic jiného jsem ani neèekal.
+			AI_Output	(self, other, "DIA_Addon_Saturas_ScRanger_14_09"); // SnaÅ¾Ã­Å¡ se mÄ› obelstÃ­t, co? Nic jinÃ©ho jsem ani neÄekal.
 			AI_StopProcessInfos (self);		
 		};
 };
@@ -525,7 +525,7 @@ instance DIA_Addon_Saturas_OpenPortal		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_OpenPortal_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dej mi prsten, otevøu ten portál.";
+	description	 = 	"Dej mi prsten, otevÅ™u ten portÃ¡l.";
 };
 var int DIA_Addon_Saturas_OpenPortal_NoPerm;
 func int DIA_Addon_Saturas_OpenPortal_Condition ()
@@ -539,18 +539,18 @@ func int DIA_Addon_Saturas_OpenPortal_Condition ()
 
 func void DIA_Addon_Saturas_OpenPortal_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_00"); //Dej mi ten prsten, a mùu otevøít portál.
+	AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_00"); //Dej mi ten prsten, aÅ¥ mÅ¯Å¾u otevÅ™Ã­t portÃ¡l.
 
 	if (SaturasKnows_SC_IsRanger == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_01"); //(potutelnì) Dobøe! Jako naše nové dítko bys mìl vánì mít tu èest.
-		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_02"); //Já ale stále èekám na zprávu od Vatrase. Dokud ji nedostanu, nemohu jít.
+		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_01"); //(potutelnÄ›) DobÅ™e! Jako naÅ¡e novÃ© dÃ­tko bys mÄ›l vÃ¡Å¾nÄ› mÃ­t tu Äest.
+		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_02"); //JÃ¡ ale stÃ¡le ÄekÃ¡m na zprÃ¡vu od Vatrase. Dokud ji nedostanu, nemohu jÃ­t.
 	
 		
 		if (RangerMeetingRunning == LOG_SUCCESS)
 		&& ((Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven)) || (Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven_opened))) 
 		{	
-			AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_03"); //Já pro tebe zprávu od Vatrase MÁM:
+			AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_03"); //JÃ¡ pro tebe zprÃ¡vu od Vatrase MÃM:
 	
 			B_GiveInvItems (other, self, ItWr_Vatras2Saturas_FindRaven,(Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven)));
 			B_GiveInvItems (other, self, ItWr_Vatras2Saturas_FindRaven_opened,(Npc_HasItems (other,ItWr_Vatras2Saturas_FindRaven_opened)));
@@ -558,25 +558,25 @@ func void DIA_Addon_Saturas_OpenPortal_Info ()
 			B_UseFakeScroll ();
 			if (Vatras2Saturas_FindRaven_Open == TRUE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_04"); //(otrávenì) Chápu. A samozøejmì jsi to nevydrel a musel jsi ji otevøít, co?
-				AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_05"); //No, já...
-				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_06"); //(hrozivì) Ve tvém vlastním zájmu doufám, e nezklameš tu velice chabou dùvìru, kterou k tobì chovám.
+				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_04"); //(otrÃ¡venÄ›) ChÃ¡pu. A samozÅ™ejmÄ› jsi to nevydrÅ¾el a musel jsi ji otevÅ™Ã­t, co?
+				AI_Output	(other, self, "DIA_Addon_Saturas_OpenPortal_15_05"); //No, jÃ¡...
+				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_06"); //(hrozivÄ›) Ve tvÃ©m vlastnÃ­m zÃ¡jmu doufÃ¡m, Å¾e nezklameÅ¡ tu velice chabou dÅ¯vÄ›ru, kterou k tobÄ› chovÃ¡m.
 			}
 			else
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_07"); //(pøekvapenì) Velice zajímavé. Dobøe.
+				AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_07"); //(pÅ™ekvapenÄ›) Velice zajÃ­mavÃ©. DobÅ™e.
 				B_GivePlayerXP (XP_Ambient);
 			};		
 			
-			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_08"); //Tumáš, vezmi si prsten. Sejdeme se u portálu – poèkám na tebe.
+			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_08"); //TumÃ¡Å¡, vezmi si prsten. Sejdeme se u portÃ¡lu â€“ poÄkÃ¡m na tebe.
 		
 			CreateInvItems (self, ItMi_PortalRing_Addon, 1);									
 			B_GiveInvItems (self, other, ItMi_PortalRing_Addon, 1);
 		
-			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_09"); //Pokud má Nefarius pravdu, portál se otevøe, jakmile do nìj vloíš prsten.
+			AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_09"); //Pokud mÃ¡ Nefarius pravdu, portÃ¡l se otevÅ™e, jakmile do nÄ›j vloÅ¾Ã­Å¡ prsten.
 			
 			DIA_Addon_Saturas_OpenPortal_NoPerm = TRUE;
-			B_LogEntry (TOPIC_Addon_Ornament,"Saturas mi dal zdobenı prsten. Ten staèí vloit do mechanismu portálu a mùu projít na druhou stranu."); 
+			B_LogEntry (TOPIC_Addon_Ornament,"Saturas mi dal zdobenÃ½ prsten. Ten staÄÃ­ vloÅ¾it do mechanismu portÃ¡lu a mÅ¯Å¾u projÃ­t na druhou stranu."); 
 
 			AI_StopProcessInfos (self);		
 			Npc_ExchangeRoutine	(self,"OpenPortal");
@@ -593,9 +593,9 @@ func void DIA_Addon_Saturas_OpenPortal_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_10"); //Vzhledem k tomu, e mi Vatras nijak nenaznaèil, e by se ti dalo vìøit, nechám si ten prsten sám.
+		AI_Output	(self, other, "DIA_Addon_Saturas_OpenPortal_14_10"); //Vzhledem k tomu, Å¾e mi Vatras nijak nenaznaÄil, Å¾e by se ti dalo vÄ›Å™it, nechÃ¡m si ten prsten sÃ¡m.
 		Saturas_WillVertrauensBeweis = TRUE;
-		B_LogEntry (TOPIC_Addon_Ornament,"Saturas mi prsten nedá, dokud mu nepøinesu znamení od Vatrase, e se mi dá vìøit."); 
+		B_LogEntry (TOPIC_Addon_Ornament,"Saturas mi prsten nedÃ¡, dokud mu nepÅ™inesu znamenÃ­ od Vatrase, Å¾e se mi dÃ¡ vÄ›Å™it."); 
 		AI_StopProcessInfos (self);		
 	};
 };
@@ -611,7 +611,7 @@ instance DIA_Addon_Saturas_PERM		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_PERM_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mùeš mì nauèit nìjaké magii?";
+	description	 = 	"MÅ¯Å¾eÅ¡ mÄ› nauÄit nÄ›jakÃ© magii?";
 };
 
 func int DIA_Addon_Saturas_PERM_Condition ()
@@ -624,7 +624,7 @@ func int DIA_Addon_Saturas_PERM_Condition ()
 
 func void DIA_Addon_Saturas_PERM_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_PERM_15_00"); //Mùeš mì nauèit nìco z oboru magie?
-	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_01"); //Aby sis zase zahrával se samotnou její podstatou?
-	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_02"); //Ne. Na takové hrátky nemám èas.
+	AI_Output	(other, self, "DIA_Addon_Saturas_PERM_15_00"); //MÅ¯Å¾eÅ¡ mÄ› nauÄit nÄ›co z oboru magie?
+	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_01"); //Aby sis zase zahrÃ¡val se samotnou jejÃ­ podstatou?
+	AI_Output	(self, other, "DIA_Addon_Saturas_PERM_14_02"); //Ne. Na takovÃ© hrÃ¡tky nemÃ¡m Äas.
 };

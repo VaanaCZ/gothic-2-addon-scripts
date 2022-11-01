@@ -71,11 +71,11 @@ FUNC INT DIA_Addon_Sancho_HI_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //A sakra, novej hoch. (smìje se) Seš tu kvùli zlatu, co?
-	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //Kvùli zlatu?
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //(smìje se) Nedìlej si ze mì šoufky.
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //Všichni noví chlapi vdycky chtìli do dolu.
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Ale nemysli si, e je to òáká brnkaèka!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //A sakra, novej hoch. (smÄ›je se) SeÅ¡ tu kvÅ¯li zlatu, co?
+	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //KvÅ¯li zlatu?
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //(smÄ›je se) NedÄ›lej si ze mÄ› Å¡oufky.
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //VÅ¡ichni novÃ­ chlapi vÅ¾dycky chtÄ›li do dolu.
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Ale nemysli si, Å¾e je to ÅˆÃ¡kÃ¡ brnkaÄka!
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -98,7 +98,7 @@ INSTANCE DIA_Addon_Sancho_Lager   (C_INFO)
 	condition   = DIA_Addon_Sancho_Lager_Condition;
 	information = DIA_Addon_Sancho_Lager_Info;
 	permanent   = FALSE;
-	description = "Jak se dostanu do tábora?";
+	description = "Jak se dostanu do tÃ¡bora?";
 };
 FUNC INT DIA_Addon_Sancho_Lager_Condition()
 {	
@@ -106,17 +106,17 @@ FUNC INT DIA_Addon_Sancho_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Lager_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Lager_15_00"); //Jak se dostanu do tábora?
-	AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_01"); //Prostì bì po chodníku.
+	AI_Output (other,self,"DIA_Addon_Sancho_Lager_15_00"); //Jak se dostanu do tÃ¡bora?
+	AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_01"); //ProstÄ› bÄ›Å¾ po chodnÃ­ku.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //Ale pokud chceš do dolu, musíš se napøed dostat pøes Franca.
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //Èeká, e všichni noví chlapi tu nejdøív budou chvíli otroèit.
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //Ale pokud chceÅ¡ do dolu, musÃ­Å¡ se napÅ™ed dostat pÅ™es Franca.
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //ÄŒekÃ¡, Å¾e vÅ¡ichni novÃ­ chlapi tu nejdÅ™Ã­v budou chvÃ­li otroÄit.
 	};
 	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Všichni novì pøíchozí musí napøed pracovat v bainì. Teprve potom mùou vstoupit do dolu.");
+	B_LogEntry (Topic_Addon_Franco,"VÅ¡ichni novÄ› pÅ™Ã­chozÃ­ musÃ­ napÅ™ed pracovat v baÅ¾inÄ›. Teprve potom mÅ¯Å¾ou vstoupit do dolu.");
 };
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Sancho_Mine   (C_INFO)
 	condition   = DIA_Addon_Sancho_Mine_Condition;
 	information = DIA_Addon_Sancho_Mine_Info;
 	permanent   = FALSE;
-	description = "Povìz mi nìco o dolu.";
+	description = "PovÄ›z mi nÄ›co o dolu.";
 };
 FUNC INT DIA_Addon_Sancho_Mine_Condition()
 {	
@@ -140,13 +140,13 @@ FUNC INT DIA_Addon_Sancho_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Mine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Povìz mi o dolu nìco víc.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Dám ti dobrou radu: jestli se tam chceš dostat, sna se dobøe vycházet s Francem. To je zdejší šéf.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //Rozhoduje, kdo další pùjde dovnitø.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Ale dovnitø tì pustí, jenom kdy dokáeš, e nejsi úplnı lemro.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Tak bì za ním, a ti dá òákou práci.
+	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //PovÄ›z mi o dolu nÄ›co vÃ­c.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //DÃ¡m ti dobrou radu: jestli se tam chceÅ¡ dostat, snaÅ¾ se dobÅ™e vychÃ¡zet s Francem. To je zdejÅ¡Ã­ Å¡Ã©f.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //Rozhoduje, kdo dalÅ¡Ã­ pÅ¯jde dovnitÅ™.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Ale dovnitÅ™ tÄ› pustÃ­, jenom kdyÅ¾ dokÃ¡Å¾eÅ¡, Å¾e nejsi ÃºplnÃ½ lemro.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Tak bÄ›Å¾ za nÃ­m, aÅ¥ ti dÃ¡ ÅˆÃ¡kou prÃ¡ci.
 	
-	B_LogEntry (Topic_Addon_Franco,"FRANCO rozhoduje, kdo se dostane do tábora. Také zadává úkoly.");
+	B_LogEntry (Topic_Addon_Franco,"FRANCO rozhoduje, kdo se dostane do tÃ¡bora. TakÃ© zadÃ¡vÃ¡ Ãºkoly.");
 };
 
 //---------------------------------------------------------------------
@@ -159,7 +159,7 @@ INSTANCE DIA_Addon_Sancho_Franco (C_INFO)
 	condition   = DIA_Addon_Sancho_Franco_Condition;
 	information = DIA_Addon_Sancho_Franco_Info;
 	permanent   = FALSE;
-	description = "A kde bych toho Franca našel?";
+	description = "A kde bych toho Franca naÅ¡el?";
 };
 FUNC INT DIA_Addon_Sancho_Franco_Condition()
 {	
@@ -171,11 +171,11 @@ FUNC INT DIA_Addon_Sancho_Franco_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Franco_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Kde bych toho Franca našel?
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //Vìtšinou postává na dvoøe naproti táboru.
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //Koukej s ním dobøe vycházet, jinak skonèíš u òákı mizernı døiny jako já.
+	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Kde bych toho Franca naÅ¡el?
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //VÄ›tÅ¡inou postÃ¡vÃ¡ na dvoÅ™e naproti tÃ¡boru.
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //Koukej s nÃ­m dobÅ™e vychÃ¡zet, jinak skonÄÃ­Å¡ u ÅˆÃ¡kÃ½ mizernÃ½ dÅ™iny jako jÃ¡.
 	
-	B_LogEntry (Topic_Addon_Franco,"Franco se prochází po dvorku pøed táborem.");
+	B_LogEntry (Topic_Addon_Franco,"Franco se prochÃ¡zÃ­ po dvorku pÅ™ed tÃ¡borem.");
 };
 
 //---------------------------------------------------------------------
@@ -188,7 +188,7 @@ INSTANCE DIA_Addon_Sancho_Spitzel (C_INFO)
 	condition   = DIA_Addon_Sancho_Spitzel_Condition;
 	information = DIA_Addon_Sancho_Spitzel_Info;
 	permanent   = FALSE;
-	description = "To to tu budeš takhle obcházet poøád?";
+	description = "To to tu budeÅ¡ takhle obchÃ¡zet poÅ™Ã¡d?";
 };
 FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 {	
@@ -200,10 +200,10 @@ FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Spitzel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//To tu chceš takhle obcházet poøád?
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//Mám zkontrolovat všecky novı chlapy, abych vidìl, jestli mezi nima není ádnej špión.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Ale na to mùeš zapomenout, kdy jsme v takovıhle díøe uprostøed bainy.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Nikdo nás tu nenajde – a proè by se vùbec nìkdo obtìoval posíláním zvìdù?
+	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//To tu chceÅ¡ takhle obchÃ¡zet poÅ™Ã¡d?
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//MÃ¡m zkontrolovat vÅ¡ecky novÃ½ chlapy, abych vidÄ›l, jestli mezi nima nenÃ­ Å¾Ã¡dnej Å¡piÃ³n.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Ale na to mÅ¯Å¾eÅ¡ zapomenout, kdyÅ¾ jsme v takovÃ½hle dÃ­Å™e uprostÅ™ed baÅ¾iny.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Nikdo nÃ¡s tu nenajde â€“ a proÄ by se vÅ¯bec nÄ›kdo obtÄ›Å¾oval posÃ­lÃ¡nÃ­m zvÄ›dÅ¯?
 };
 
 //---------------------------------------------------------------------
@@ -216,7 +216,7 @@ INSTANCE DIA_Addon_Sancho_Perm   (C_INFO)
 	condition   = DIA_Addon_Sancho_Perm_Condition;
 	information = DIA_Addon_Sancho_Perm_Info;
 	permanent   = TRUE;
-	description = "Co je nového?";
+	description = "Co je novÃ©ho?";
 };
 FUNC INT DIA_Addon_Sancho_Perm_Condition()
 {	
@@ -229,20 +229,20 @@ var int Comment_Franco;
 var int Comment_Esteban;
 FUNC VOID DIA_Addon_Sancho_Perm_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Perm_15_00");//Co je nového?
+	AI_Output (other,self,"DIA_Addon_Sancho_Perm_15_00");//Co je novÃ©ho?
 	
 	if Npc_IsDead (Franco)
 	&& (Comment_Franco == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//Doneslo se mi, e jsi zabil Franca. Vıbornì.
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//Doneslo se mi, Å¾e jsi zabil Franca. VÃ½bornÄ›.
 		
 		if !Npc_IsDead (Carlos)
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//Ale teï máme za zadkem pro zmìnu Carlose. A ten nedìlá ádnı blbosti.
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//Ale teÄ mÃ¡me za zadkem pro zmÄ›nu Carlose. A ten nedÄ›lÃ¡ Å¾Ã¡dnÃ½ blbosti.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Tys to vyøídil i s Carlosem? Èoveèe, ty seš fakt hnusnej zabiják! Radši mì nech bejt.
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Tys to vyÅ™Ã­dil i s Carlosem? ÄŒoveÄe, ty seÅ¡ fakt hnusnej zabijÃ¡k! RadÅ¡i mÄ› nech bejt.
 		};
 		
 		Comment_Franco = TRUE;
@@ -250,13 +250,13 @@ FUNC VOID DIA_Addon_Sancho_Perm_Info()
 	else if Npc_IsDead (Esteban)
 	&& (Comment_Esteban == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//Slyšel jsem, e jsi zabil Estebana. Ty máš urèitì nìco v plánu, co?
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//SlyÅ¡el jsem, Å¾e jsi zabil Estebana. Ty mÃ¡Å¡ urÄitÄ› nÄ›co v plÃ¡nu, co?
 		
 		Comment_Esteban = TRUE;
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_05");//Zatím se nic novıho nepøihodilo.
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_05");//ZatÃ­m se nic novÃ½ho nepÅ™ihodilo.
 	};
 	
 };

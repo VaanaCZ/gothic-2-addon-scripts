@@ -43,15 +43,15 @@ FUNC VOID DIA_Gunnar_Hallo_Info()
 	AI_Output (other, self, "DIA_Gunnar_Hallo_15_00"); //Co se stalo?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_01"); //Od té doby, co Onar vyhlásil, e si najal oldnéøe, poflakuje se na dvoøe akorát tak banda nièemnıch darebákù.
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_02"); //Všechna ta chátra, co nemìla co do huby, se vyrojila z lesa ještì pøed tím, ne jsme sem pøišli my.
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_03"); //Ty bastardi vánì vylejzaj snad odevšad.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_01"); //Od tÃ© doby, co Onar vyhlÃ¡sil, Å¾e si najal Å¾oldnÃ©Å™e, poflakuje se na dvoÅ™e akorÃ¡t tak banda niÄemnÃ½ch darebÃ¡kÅ¯.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_02"); //VÅ¡echna ta chÃ¡tra, co nemÄ›la co do huby, se vyrojila z lesa jeÅ¡tÄ› pÅ™ed tÃ­m, neÅ¾ jsme sem pÅ™iÅ¡li my.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_03"); //Ty bastardi vÃ¡Å¾nÄ› vylejzaj snad odevÅ¡ad.
 	};
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_04"); //Tak ty seš teï taky oldák, hm?
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_04"); //Tak ty seÅ¡ teÄ taky Å¾oldÃ¡k, hm?
 	};	
 	
 	if (other.guild == GIL_NOV)
@@ -63,7 +63,7 @@ FUNC VOID DIA_Gunnar_Hallo_Info()
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_06"); //Tady nejsou lidi z mìsta vítáni.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_06"); //Tady nejsou lidi z mÄ›sta vÃ­tÃ¡ni.
 	};
 	
 	Gunnar_HalloGesagt = TRUE;
@@ -79,7 +79,7 @@ INSTANCE DIA_Gunnar_Everywhere   (C_INFO)
 	condition   = DIA_Gunnar_Everywhere_Condition;
 	information = DIA_Gunnar_Everywhere_Info;
 	permanent   = TRUE;
-	description = "Kde se tu vzalo tolik oldnéøù?";
+	description = "Kde se tu vzalo tolik Å¾oldnÃ©Å™Å¯?";
 };
 FUNC INT DIA_Gunnar_Everywhere_Condition()
 {
@@ -90,14 +90,14 @@ FUNC INT DIA_Gunnar_Everywhere_Condition()
 };
 FUNC VOID DIA_Gunnar_Everywhere_Info()
 {
-	AI_Output (other, self, "DIA_Gunnar_Everywhere_15_00"); //Kde se tu vzalo tolik oldnéøù?
-	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_01"); //Vìtšina z nich je z trestanecké kolonie.
-	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_02"); //Další skupina oldnéøù pochází odnìkud z jihu, kde nejspíš lovili skøety.
-	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_03"); //A vsadím se, e se tu teï taky objevilo nìkolik banditù z hor, aby se mohli zadarmo najíst!
+	AI_Output (other, self, "DIA_Gunnar_Everywhere_15_00"); //Kde se tu vzalo tolik Å¾oldnÃ©Å™Å¯?
+	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_01"); //VÄ›tÅ¡ina z nich je z trestaneckÃ© kolonie.
+	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_02"); //DalÅ¡Ã­ skupina Å¾oldnÃ©Å™Å¯ pochÃ¡zÃ­ odnÄ›kud z jihu, kde nejspÃ­Å¡ lovili skÅ™ety.
+	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_03"); //A vsadÃ­m se, Å¾e se tu teÄ taky objevilo nÄ›kolik banditÅ¯ z hor, aby se mohli zadarmo najÃ­st!
 };
 
 // ************************************************************
-// 			  			Aud dem Süden
+// 			  			Aud dem SÃ¼den
 // ************************************************************
 INSTANCE DIA_Gunnar_South (C_INFO)
 {
@@ -106,7 +106,7 @@ INSTANCE DIA_Gunnar_South (C_INFO)
 	condition   = DIA_Gunnar_South_Condition;
 	information = DIA_Gunnar_South_Info;
 	permanent   = TRUE;
-	description = "Co víš o oldnéøích z jihu?";
+	description = "Co vÃ­Å¡ o Å¾oldnÃ©Å™Ã­ch z jihu?";
 };
 FUNC INT DIA_Gunnar_South_Condition()
 {
@@ -117,9 +117,9 @@ FUNC INT DIA_Gunnar_South_Condition()
 };
 FUNC VOID DIA_Gunnar_South_Info()
 {
-	AI_Output (other, self, "DIA_Gunnar_South_15_00"); //Co víš o oldnéøích z jihu?
-	AI_Output (self, other, "DIA_Gunnar_South_10_01"); //Nic moc. Co vím, tak tam lovili skøety.
-	AI_Output (self, other, "DIA_Gunnar_South_10_02"); //Sylvio je jejich šéf. Bullco, Sentenza, Raoul a nìkolik dalších pro nìj pracuje.
+	AI_Output (other, self, "DIA_Gunnar_South_15_00"); //Co vÃ­Å¡ o Å¾oldnÃ©Å™Ã­ch z jihu?
+	AI_Output (self, other, "DIA_Gunnar_South_10_01"); //Nic moc. Co vÃ­m, tak tam lovili skÅ™ety.
+	AI_Output (self, other, "DIA_Gunnar_South_10_02"); //Sylvio je jejich Å¡Ã©f. Bullco, Sentenza, Raoul a nÄ›kolik dalÅ¡Ã­ch pro nÄ›j pracuje.
 };
 
 // ************************************************************
@@ -132,7 +132,7 @@ INSTANCE DIA_Gunnar_Colony (C_INFO)
 	condition   = DIA_Gunnar_Colony_Condition;
 	information = DIA_Gunnar_Colony_Info;
 	permanent   = TRUE;
-	description = "Kterı z nich sem pøišel z kolonie?";
+	description = "KterÃ½ z nich sem pÅ™iÅ¡el z kolonie?";
 };
 FUNC INT DIA_Gunnar_Colony_Condition()
 {
@@ -143,8 +143,8 @@ FUNC INT DIA_Gunnar_Colony_Condition()
 };
 FUNC VOID DIA_Gunnar_Colony_Info()
 {
-	AI_Output (other, self, "DIA_Gunnar_Colony_15_00"); //Kdo všechno pøišel z kolonie?
-	AI_Output (self, other, "DIA_Gunnar_Colony_10_01"); //Lee a jeho lidé. Torlof, Cord, Jarvis, Vlk a buhvíkdo ještì.
+	AI_Output (other, self, "DIA_Gunnar_Colony_15_00"); //Kdo vÅ¡echno pÅ™iÅ¡el z kolonie?
+	AI_Output (self, other, "DIA_Gunnar_Colony_10_01"); //Lee a jeho lidÃ©. Torlof, Cord, Jarvis, Vlk a buhvÃ­kdo jeÅ¡tÄ›.
 };
 
 // ************************************************************
@@ -169,10 +169,10 @@ FUNC INT DIA_Gunnar_Bandits_Condition()
 FUNC VOID DIA_Gunnar_Bandits_Info()
 {
 	AI_Output (other, self, "DIA_Gunnar_Bandits_15_00"); //Co ti banditi, co jsi o nich mluvil?
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_01"); //Ale, jen jsem vanil. Nejsem si tím vùbec jistı.
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_02"); //Na jihu údolí jsou hory s opuštìnımi doly. Ukrıvá se tam nìkolik banditù.
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_03"); //Jsou tam taky trestanci z kolonie, stejní jako tihle oldáci na našem statku.
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_04"); //Jedinej rozdíl mezi nima je, e jsou ještì horší bahno. Zabijou kadıho, kdo se k nim pøiblíí.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_01"); //Ale, jen jsem Å¾vanil. Nejsem si tÃ­m vÅ¯bec jistÃ½.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_02"); //Na jihu ÃºdolÃ­ jsou hory s opuÅ¡tÄ›nÃ½mi doly. UkrÃ½vÃ¡ se tam nÄ›kolik banditÅ¯.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_03"); //Jsou tam taky trestanci z kolonie, stejnÃ­ jako tihle Å¾oldÃ¡ci na naÅ¡em statku.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_04"); //Jedinej rozdÃ­l mezi nima je, Å¾e jsou jeÅ¡tÄ› horÅ¡Ã­ bahno. Zabijou kaÅ¾dÃ½ho, kdo se k nim pÅ™iblÃ­Å¾Ã­.
 };
 
 

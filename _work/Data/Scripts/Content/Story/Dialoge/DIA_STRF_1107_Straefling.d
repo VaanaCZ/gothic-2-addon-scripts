@@ -40,8 +40,8 @@ func int DIA_STRF_1107_FINGER_Condition ()
 };
 func void DIA_STRF_1107_FINGER_Info ()
 {
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Od mıch hrncù ruce pryè! Nikdo se mıch hrncù nesmí ani dotknout, jasnı?!
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Jsem zodpovìdnı za jídlo, a to znamená, e nikdo jinı tady nemá co dìlat! Doufám, e jsem se vyjádøil jasnì!
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Od mÃ½ch hrncÅ¯ ruce pryÄ! Nikdo se mÃ½ch hrncÅ¯ nesmÃ­ ani dotknout, jasnÃ½?!
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Jsem zodpovÄ›dnÃ½ za jÃ­dlo, a to znamenÃ¡, Å¾e nikdo jinÃ½ tady nemÃ¡ co dÄ›lat! DoufÃ¡m, Å¾e jsem se vyjÃ¡dÅ™il jasnÄ›!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info COOK
@@ -51,7 +51,7 @@ instance DIA_STRF_1107_COOK		(C_INFO)
 	npc			 = 	STRF_1107_Straefling;
 	condition	 = 	DIA_STRF_1107_COOK_Condition;
 	information	 = 	DIA_STRF_1107_COOK_Info;
-	description	 =  "Kdo z tebe udìlal kuchaøe?";
+	description	 =  "Kdo z tebe udÄ›lal kuchaÅ™e?";
 };
 
 func int DIA_STRF_1107_COOK_Condition ()
@@ -63,10 +63,10 @@ func int DIA_STRF_1107_COOK_Condition ()
 };
 func void DIA_STRF_1107_COOK_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //Kdo z tebe udìlal kuchaøe?
-	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Byl to velitel Garond. Ne jsem stal trestancem, bıval jsem kuchaøem U Divoèáka.
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //A za co tì zavøeli?
-	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //Bylo to takovı menší nedorozumìní mezi hostem, sekáèkem na maso a mnou.
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //Kdo z tebe udÄ›lal kuchaÅ™e?
+	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Byl to velitel Garond. NeÅ¾ jsem stal trestancem, bÃ½val jsem kuchaÅ™em U DivoÄÃ¡ka.
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //A za co tÄ› zavÅ™eli?
+	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //Bylo to takovÃ½ menÅ¡Ã­ nedorozumÄ›nÃ­ mezi hostem, sekÃ¡Äkem na maso a mnou.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM
@@ -78,7 +78,7 @@ instance DIA_STRF_1107_PERM		(C_INFO)
 	condition	 = 	DIA_STRF_1107_PERM_Condition;
 	information	 = 	DIA_STRF_1107_PERM_Info;
 	permanent	 =  TRUE;
-	description	 =  "Nìco nového?";
+	description	 =  "NÄ›co novÃ©ho?";
 };
 
 func int DIA_STRF_1107_PERM_Condition ()
@@ -90,8 +90,8 @@ func int DIA_STRF_1107_PERM_Condition ()
 };
 func void DIA_STRF_1107_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //Nìco nového?
-	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Jestli se chceš dozvìdìt nìjakı novinky, promluv si s rytíøi. Já tady jen vaøím.
+	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //NÄ›co novÃ©ho?
+	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Jestli se chceÅ¡ dozvÄ›dÄ›t nÄ›jakÃ½ novinky, promluv si s rytÃ­Å™i. JÃ¡ tady jen vaÅ™Ã­m.
 };
  
 

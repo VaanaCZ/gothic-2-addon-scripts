@@ -22,7 +22,7 @@ FUNC VOID DIA_Gestath_EXIT_Info()
 	
 	if (Hlp_IsItem (heroArmor, ITAR_DJG_Crawler) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(úseènì) Pìkná zbroj!
+		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(ÃºseÄnÄ›) PÄ›knÃ¡ zbroj!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -48,46 +48,46 @@ func int DIA_Gestath_HALLO_Condition ()
 func void DIA_Gestath_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //Jak se vede?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(úseènì) Máš kurá, e jsi sem pøišel. Nezabloudil jsi náhodou?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(ÃºseÄnÄ›) MÃ¡Å¡ kurÃ¡Å¾, Å¾e jsi sem pÅ™iÅ¡el. Nezabloudil jsi nÃ¡hodou?
 	Gestath_TeachAnimalTrophy = TRUE;
 	Info_ClearChoices	(DIA_Gestath_HALLO);
-	Info_AddChoice	(DIA_Gestath_HALLO, "Co je tady k vidìní?", DIA_Gestath_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Gestath_HALLO, "Co tady dìláš?", DIA_Gestath_HALLO_was );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Co je tady k vidÄ›nÃ­?", DIA_Gestath_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Co tady dÄ›lÃ¡Å¡?", DIA_Gestath_HALLO_was );
 };
 func void DIA_Gestath_HALLO_plate ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Ta zbroj, co máš na sobì, je parádní.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //To teda jo, a taky tìko k sehnání. Je udìlaná z krunıøù dùlních èervù - vyrobil mi ji jistı Vlk.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Døív jsem bıval v téhle kolonii vìznìm. Dal jsem mu pár krunıøù dùlních èervù a za pár dní u svou práci dokonèil. Ten chlap je skvìlı.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Ta zbroj, co mÃ¡Å¡ na sobÄ›, je parÃ¡dnÃ­.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //To teda jo, a taky tÄ›Å¾ko k sehnÃ¡nÃ­. Je udÄ›lanÃ¡ z krunÃ½Å™Å¯ dÅ¯lnÃ­ch ÄervÅ¯ - vyrobil mi ji jistÃ½ Vlk.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //DÅ™Ã­v jsem bÃ½val v tÃ©hle kolonii vÄ›znÄ›m. Dal jsem mu pÃ¡r krunÃ½Å™Å¯ dÅ¯lnÃ­ch ÄervÅ¯ a za pÃ¡r dnÃ­ uÅ¾ svou prÃ¡ci dokonÄil. Ten chlap je skvÄ›lÃ½.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, DIALOG_BACK, DIA_Gestath_HALLO_Back );
-	Info_AddChoice	(DIA_Gestath_HALLO, "Kde je ten Vlk teï?", DIA_Gestath_HALLO_plate_woWolf );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Kde je ten Vlk teÄ?", DIA_Gestath_HALLO_plate_woWolf );
 };
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Kde je ten Vlk teï?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //U jsem ho nìjakou dobu nevidìl. Tenkrát byl oldákem tady v kolonii.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Poèítám, e se tu nìkde potuluje s ostatními.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Kde je ten Vlk teÄ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //UÅ¾ jsem ho nÄ›jakou dobu nevidÄ›l. TenkrÃ¡t byl Å¾oldÃ¡kem tady v kolonii.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //PoÄÃ­tÃ¡m, Å¾e se tu nÄ›kde potuluje s ostatnÃ­mi.
 };
 
 func void DIA_Gestath_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Co tady dìláš?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Chci si nìco vydìlat.
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Tady, uprostøed pustiny?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Jsem lovec. Specializuji se na to, co se loví jen tìko.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Ohniví ještìøi, dùlní èervi, draèí chòapavci - prostì všechno, co nikdo jinı neloví. To vdycky dobøe vynáší.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Co tady dÄ›lÃ¡Å¡?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Chci si nÄ›co vydÄ›lat.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Tady, uprostÅ™ed pustiny?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Jsem lovec. Specializuji se na to, co se lovÃ­ jen tÄ›Å¾ko.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //OhnivÃ­ jeÅ¡tÄ›Å™i, dÅ¯lnÃ­ Äervi, draÄÃ­ chÅˆapavci - prostÄ› vÅ¡echno, co nikdo jinÃ½ nelovÃ­. To vÅ¾dycky dobÅ™e vynÃ¡Å¡Ã­.
 	
-	Info_AddChoice	(DIA_Gestath_HALLO, "Ta zbroj, co máš na sobì, je parádní.", DIA_Gestath_HALLO_plate );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Ta zbroj, co mÃ¡Å¡ na sobÄ›, je parÃ¡dnÃ­.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Co je tady k vidìní?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Hromada ještìrù, skøetù a bùhvíèeho ještì. A to jsem ještì nebyl moc daleko na pláni.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //A tobì bych to taky neradil. To, co tam ije, opravdu nevypadá moc pøátelsky.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Co je tady k vidÄ›nÃ­?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Hromada jeÅ¡tÄ›rÅ¯, skÅ™etÅ¯ a bÅ¯hvÃ­Äeho jeÅ¡tÄ›. A to jsem jeÅ¡tÄ› nebyl moc daleko na plÃ¡ni.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //A tobÄ› bych to taky neradil. To, co tam Å¾ije, opravdu nevypadÃ¡ moc pÅ™Ã¡telsky.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -106,7 +106,7 @@ instance DIA_Gestath_Drachen		(C_INFO)
 	information	 = 	DIA_Gestath_Drachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dokáeš taky vyvrhnout draka?";
+	description	 = 	"DokÃ¡Å¾eÅ¡ taky vyvrhnout draka?";
 };
 var int Gestath_DragonTrophy;
 
@@ -121,14 +121,14 @@ func int DIA_Gestath_Drachen_Condition ()
 
 func void DIA_Gestath_Drachen_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Dokáeš taky vyvrhnout draka?
+	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //DokÃ¡Å¾eÅ¡ taky vyvrhnout draka?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(usmìje se) Zeptej se mì pozdìji, a budeš na nìco takového pøipravenı, jo?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(usmÄ›je se) Zeptej se mÄ› pozdÄ›ji, aÅ¾ budeÅ¡ na nÄ›co takovÃ©ho pÅ™ipravenÃ½, jo?
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Jasnì, proè ne?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //JasnÄ›, proÄ ne?
 		Gestath_DragonTrophy = TRUE;
 	};
 };
@@ -143,7 +143,7 @@ instance DIA_Gestath_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gestath_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gestath_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Vysvìtli mi, jak vyvrhnout zvíøata.";
+	description	 = 	"VysvÄ›tli mi, jak vyvrhnout zvÃ­Å™ata.";
 };
 
 func int DIA_Gestath_TEACHHUNTING_Condition ()
@@ -157,7 +157,7 @@ func int DIA_Gestath_TEACHHUNTING_Condition ()
 var int DIA_Gestath_TEACHHUNTING_OneTime;
 func void DIA_Gestath_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Vysvìtli mi, jak vyvrhnout zvíøata.
+	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //VysvÄ›tli mi, jak vyvrhnout zvÃ­Å™ata.
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
@@ -174,48 +174,48 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			{
 				if (DIA_Gestath_TEACHHUNTING_OneTime == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Proè ne? Myslím, e u toho umím dost.
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //ProÄ ne? MyslÃ­m, Å¾e uÅ¾ toho umÃ­m dost.
 						DIA_Gestath_TEACHHUNTING_OneTime = TRUE;
 					}
 				else
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Co bys rád vìdìl?
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Co bys rÃ¡d vÄ›dÄ›l?
 					};
 	
 				Info_AddChoice		(DIA_Gestath_TEACHHUNTING, DIALOG_BACK, DIA_Gestath_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Ohnivı jazyk",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  DIA_Gestath_TEACHHUNTING_FireTongue);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("OhnivÃ½ jazyk",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  DIA_Gestath_TEACHHUNTING_FireTongue);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Oddìlení èervích krunıøù",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Gestath_TEACHHUNTING_CrawlerPlate	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("OddÄ›lenÃ­ ÄervÃ­ch krunÃ½Å™Å¯",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Gestath_TEACHHUNTING_CrawlerPlate	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Vyjmutí kusadel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("VyjmutÃ­ kusadel",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Roh draèího chòapavce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Roh draÄÃ­ho chÅˆapavce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
 				};
 				
 				if (Gestath_DragonTrophy == TRUE)
 				{	
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Získání draèích šupin",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("ZÃ­skÃ¡nÃ­ draÄÃ­ch Å¡upin",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
 					};
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Získání draèí krve",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("ZÃ­skÃ¡nÃ­ draÄÃ­ krve",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
 					};
 				};			
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //V téhle chvíli nevím, co bych tì ještì nauèil.
+				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //V tÃ©hle chvÃ­li nevÃ­m, co bych tÄ› jeÅ¡tÄ› nauÄil.
 			};
 };
 
@@ -228,7 +228,7 @@ func void DIA_Gestath_TEACHHUNTING_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_FireTongue))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Ohnivé ještìrce lze vyøíznout jazyk jedinım tahem noe, kdy jej pøitom druhou rukou opatrnì pøidruješ.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //OhnivÃ© jeÅ¡tÄ›rce lze vyÅ™Ã­znout jazyk jedinÃ½m tahem noÅ¾e, kdyÅ¾ jej pÅ™itom druhou rukou opatrnÄ› pÅ™idrÅ¾ujeÅ¡.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -237,7 +237,7 @@ func void DIA_Gestath_TEACHHUNTING_CrawlerPlate()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //Èerví krunıøe musíš oddìlovat dostateènì silnım noem.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //ÄŒervÃ­ krunÃ½Å™e musÃ­Å¡ oddÄ›lovat dostateÄnÄ› silnÃ½m noÅ¾em.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -246,7 +246,7 @@ func void DIA_Gestath_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Kusadla jsou v lebkách polních škùdcù a dùlních èervù vrostlá pomìrnì hluboko. Proto si s nimi musíš chvíli pohrát, ne se ti podaøí je dostat ven.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Kusadla jsou v lebkÃ¡ch polnÃ­ch Å¡kÅ¯dcÅ¯ a dÅ¯lnÃ­ch ÄervÅ¯ vrostlÃ¡ pomÄ›rnÄ› hluboko. Proto si s nimi musÃ­Å¡ chvÃ­li pohrÃ¡t, neÅ¾ se ti podaÅ™Ã­ je dostat ven.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Nejlepší místo, kde zaèít s vyjímáním rohu draèího chòapavce, je støed èela. Pøitom musíš pouívat dost masivní nù.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //NejlepÅ¡Ã­ mÃ­sto, kde zaÄÃ­t s vyjÃ­mÃ¡nÃ­m rohu draÄÃ­ho chÅˆapavce, je stÅ™ed Äela. PÅ™itom musÃ­Å¡ pouÅ¾Ã­vat dost masivnÃ­ nÅ¯Å¾.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -264,7 +264,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Draèí šupiny lze vyjmout velmi tìko, ale ve chvíli, kdy u si zaèneš myslet, e to nezvládneš, zèistajasna z draèího høbetu koneènì odpadnou.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //DraÄÃ­ Å¡upiny lze vyjmout velmi tÄ›Å¾ko, ale ve chvÃ­li, kdy uÅ¾ si zaÄneÅ¡ myslet, Å¾e to nezvlÃ¡dneÅ¡, zÄistajasna z draÄÃ­ho hÅ™betu koneÄnÄ› odpadnou.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -273,7 +273,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonBlood ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Chceš-li získat krev, zamìø se na drakovo bøicho. Najdi mìkké místo a pak je probodni ostrım noem.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //ChceÅ¡-li zÃ­skat krev, zamÄ›Å™ se na drakovo bÅ™icho. Najdi mÄ›kkÃ© mÃ­sto a pak je probodni ostrÃ½m noÅ¾em.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

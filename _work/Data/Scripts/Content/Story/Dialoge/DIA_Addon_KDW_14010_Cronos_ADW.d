@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Cronos_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Cronos_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Cronos_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre einfach seine Karte zu stehlen)";
+	description = "(Es wÃ¤re einfach seine Karte zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Cronos_ADW_PICKPOCKET_Condition()
@@ -95,13 +95,13 @@ func int DIA_Addon_Cronos_ADWHello_Condition ()
 
 func void DIA_Addon_Cronos_ADWHello_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //Rád tì vidím. U jsme se obávali nejhoršího.
-	AI_Output	(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //Nebylo to tak zlé. Jak se vede?
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Tady je to vánì nebezpeèné.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //Nìkterá zdejší zvíøata jsme ještì nikdy nevidìli.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Kousek odsud je velká baina, která se rozšiøovala u nìkolik set let, ani by si toho kdo všiml.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //Není dne, aby na nás z tìch bain nezaútoèily nìjaké bestie.
-	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //Proto bych ti radil, abys tu byl na procházkách velice opatrnı.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_00"); //RÃ¡d tÄ› vidÃ­m. UÅ¾ jsme se obÃ¡vali nejhorÅ¡Ã­ho.
+	AI_Output	(other, self, "DIA_Addon_Cronos_ADWHello_15_01"); //Nebylo to tak zlÃ©. Jak se vede?
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_02"); //Tady je to vÃ¡Å¾nÄ› nebezpeÄnÃ©.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_03"); //NÄ›kterÃ¡ zdejÅ¡Ã­ zvÃ­Å™ata jsme jeÅ¡tÄ› nikdy nevidÄ›li.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_04"); //Kousek odsud je velkÃ¡ baÅ¾ina, kterÃ¡ se rozÅ¡iÅ™ovala uÅ¾ nÄ›kolik set let, aniÅ¾ by si toho kdo vÅ¡iml.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_05"); //NenÃ­ dne, aby na nÃ¡s z tÄ›ch baÅ¾in nezaÃºtoÄily nÄ›jakÃ© bestie.
+	AI_Output	(self, other, "DIA_Addon_Cronos_ADWHello_04_06"); //Proto bych ti radil, abys tu byl na prochÃ¡zkÃ¡ch velice opatrnÃ½.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -114,7 +114,7 @@ instance DIA_Addon_Cronos_WaechterADW		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_WaechterADW_Condition;
 	information	 = 	DIA_Addon_Cronos_WaechterADW_Info;
 
-	description	 = 	"Dozvìdìl ses o tìch kamennıch strácích nìco nového?";
+	description	 = 	"DozvÄ›dÄ›l ses o tÄ›ch kamennÃ½ch strÃ¡Å¾cÃ­ch nÄ›co novÃ©ho?";
 };
 
 func int DIA_Addon_Cronos_WaechterADW_Condition ()
@@ -124,11 +124,11 @@ func int DIA_Addon_Cronos_WaechterADW_Condition ()
 
 func void DIA_Addon_Cronos_WaechterADW_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //Víte nìco nového o tìch kamennıch strácích?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //U jsme jich pár zlikvidovali.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //Stojí tady jako solné sloupy a ani se nehnou.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //Ale zdání klame. Jakmile se k nim pøiblííš, napadnou tì.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_04"); //Je jasné, e zdroj jejich moci musí bıt nìkde tady kolem.
+	AI_Output	(other, self, "DIA_Addon_Cronos_WaechterADW_15_00"); //VÃ­te nÄ›co novÃ©ho o tÄ›ch kamennÃ½ch strÃ¡Å¾cÃ­ch?
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_01"); //UÅ¾ jsme jich pÃ¡r zlikvidovali.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_02"); //StojÃ­ tady jako solnÃ© sloupy a ani se nehnou.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_03"); //Ale zdÃ¡nÃ­ klame. Jakmile se k nim pÅ™iblÃ­Å¾Ã­Å¡, napadnou tÄ›.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WaechterADW_04_04"); //Je jasnÃ©, Å¾e zdroj jejich moci musÃ­ bÃ½t nÄ›kde tady kolem.
 };
 
 
@@ -143,7 +143,7 @@ instance DIA_Addon_Cronos_ADW_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Cronos_ADW_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Pojïme obchodovat.";
+	description	 = 	"PojÄme obchodovat.";
 };
 
 func int DIA_Addon_Cronos_ADW_Trade_Condition ()

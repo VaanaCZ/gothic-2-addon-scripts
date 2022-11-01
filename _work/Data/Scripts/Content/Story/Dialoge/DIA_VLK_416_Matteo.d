@@ -74,7 +74,7 @@ FUNC INT DIA_Matteo_Hallo_Condition()
 };
 FUNC VOID DIA_Matteo_Hallo_Info()
 {	
-	AI_Output (self, other, "DIA_Matteo_Hallo_09_00"); //Co pro tebe mohu udìlat?
+	AI_Output (self, other, "DIA_Matteo_Hallo_09_00"); //Co pro tebe mohu udÄ›lat?
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_Matteo_SellWhat(C_INFO)
 	condition	= DIA_Matteo_SellWhat_Condition;
 	information	= DIA_MAtteo_SellWhat_Info;
 	permanent	= FALSE;
-	description = "Co prodáváš?";
+	description = "Co prodÃ¡vÃ¡Å¡?";
 };                       
 FUNC INT DIA_Matteo_SellWhat_Condition()
 {	
@@ -95,15 +95,15 @@ FUNC INT DIA_Matteo_SellWhat_Condition()
 };
 FUNC VOID DIA_Matteo_SellWhat_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_SellWhat_15_00"); //Co prodáváš?
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_01"); //Mohu ti nabídnout všechno, co potøebuješ pro pøeití v divoèinì. Zbranì, pochodnì, zásoby - dokonce i zbroj.
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_02"); //Také tu mám i nìjaké zvláštní zboí.
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_03"); //Dvojnásob tvrzenou zbroj z chòapavèí kùe - nepouitou. Nemáš zájem?
+	AI_Output (other, self, "DIA_Matteo_SellWhat_15_00"); //Co prodÃ¡vÃ¡Å¡?
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_01"); //Mohu ti nabÃ­dnout vÅ¡echno, co potÅ™ebujeÅ¡ pro pÅ™eÅ¾itÃ­ v divoÄinÄ›. ZbranÄ›, pochodnÄ›, zÃ¡soby - dokonce i zbroj.
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_02"); //TakÃ© tu mÃ¡m i nÄ›jakÃ© zvlÃ¡Å¡tnÃ­ zboÅ¾Ã­.
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_03"); //DvojnÃ¡sob tvrzenou zbroj z chÅˆapavÄÃ­ kÅ¯Å¾e - nepouÅ¾itou. NemÃ¡Å¡ zÃ¡jem?
 	
 	if (Knows_Matteo == FALSE)
 	{
 		Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-		B_LogEntry (TOPIC_CityTrader,"Matteùv obchod leí u jiní mìstské brány. Nakoupím tam vybavení, zbranì i potraviny.");
+		B_LogEntry (TOPIC_CityTrader,"MatteÅ¯v obchod leÅ¾Ã­ u jiÅ¾nÃ­ mÄ›stskÃ© brÃ¡ny. NakoupÃ­m tam vybavenÃ­, zbranÄ› i potraviny.");
 		Knows_Matteo = TRUE;
 	};
 };
@@ -118,7 +118,7 @@ INSTANCE DIA_Matteo_TRADE (C_INFO)
 	condition	= DIA_Matteo_TRADE_Condition;
 	information	= DIA_Matteo_TRADE_Info;
 	permanent	= TRUE;
-	description = "Uka mi své zboí.";
+	description = "UkaÅ¾ mi svÃ© zboÅ¾Ã­.";
 	Trade		= TRUE;
 };                       
 FUNC INT DIA_Matteo_TRADE_Condition()
@@ -134,21 +134,21 @@ var int Matteo_TradeNewsPermanent;
 FUNC VOID DIA_Matteo_TRADE_Info()
 {	
 	B_GiveTradeInv (self);
-	AI_Output (other,self ,"DIA_Matteo_TRADE_15_00"); //Uka mi své zboí.
+	AI_Output (other,self ,"DIA_Matteo_TRADE_15_00"); //UkaÅ¾ mi svÃ© zboÅ¾Ã­.
 	if (Kapitel == 3)
 	&& (MIS_RescueBennet != LOG_SUCCESS)
 	&& (Matteo_TradeNewsPermanent == FALSE)
 	{
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_01"); //Od té doby, co oldáci oddìlali paladina Lothara, to tu ti jeho kamarádíèkové prošourávají mnohem pøísnìji.
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_02"); //Doufám, e a vraha povìsí, tak se to zlepší.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_01"); //Od tÃ© doby, co Å¾oldÃ¡ci oddÄ›lali paladina Lothara, to tu ti jeho kamarÃ¡dÃ­ÄkovÃ© proÅ¡Å¥ourÃ¡vajÃ­ mnohem pÅ™Ã­snÄ›ji.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_02"); //DoufÃ¡m, Å¾e aÅ¾ vraha povÄ›sÃ­, tak se to zlepÅ¡Ã­.
 	
 		Matteo_TradeNewsPermanent = 1;
 	};
 	if (Kapitel == 5)
 	&& (Matteo_TradeNewsPermanent < 2)
 	{
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_03"); //Vypadá to, e paladinové to tentokrát myslí vánì - dokonce odvolali i stráe z lodí.
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_04"); //Ještì e nám zase obnovuješ zásoby. Kdo ví, jestli pøíští tıden bude naše mìsto ještì stát.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_03"); //VypadÃ¡ to, Å¾e paladinovÃ© to tentokrÃ¡t myslÃ­ vÃ¡Å¾nÄ› - dokonce odvolali i strÃ¡Å¾e z lodÃ­.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_04"); //JeÅ¡tÄ› Å¾e nÃ¡m zase obnovujeÅ¡ zÃ¡soby. Kdo vÃ­, jestli pÅ™Ã­Å¡tÃ­ tÃ½den bude naÅ¡e mÄ›sto jeÅ¡tÄ› stÃ¡t.
 	
 		Matteo_TradeNewsPermanent = 2;
 	};
@@ -169,7 +169,7 @@ instance DIA_Matteo_LEATHER		(C_INFO)
 	condition	 = 	DIA_Matteo_LEATHER_Condition;
 	information	 = 	DIA_Matteo_LEATHER_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Koupit koenou zbroj. Ochrana: zbranì 25, šípy 20. (250 zlaákù)";
+	description	 = 	"Koupit koÅ¾enou zbroj. Ochrana: zbranÄ› 25, Å¡Ã­py 20. (250 zlaÅ¥Ã¡kÅ¯)";
 };
 
 func int DIA_Matteo_LEATHER_Condition ()
@@ -182,18 +182,18 @@ func int DIA_Matteo_LEATHER_Condition ()
 };
 func void DIA_Matteo_LEATHER_Info ()
 {
-	AI_Output (other, self, "DIA_Matteo_LEATHER_15_00"); //Dobøe, tak mi tu zbroj dej.
+	AI_Output (other, self, "DIA_Matteo_LEATHER_15_00"); //DobÅ™e, tak mi tu zbroj dej.
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{	
-		AI_Output (self, other, "DIA_Matteo_LEATHER_09_01"); //Bude se ti moc líbit. (ušklíbne se)
+		AI_Output (self, other, "DIA_Matteo_LEATHER_09_01"); //Bude se ti moc lÃ­bit. (uÅ¡klÃ­bne se)
 
 		B_GiveInvItems 	(self, other, ItAr_Leather_L, 1);
 		Matteo_LeatherBought = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Matteo_LEATHER_09_02"); //Zbroj má svou cenu - a opravdu za to stojí. Take se vra, a dáš dohromady dost zlata.
+		AI_Output (self, other, "DIA_Matteo_LEATHER_09_02"); //Zbroj mÃ¡ svou cenu - a opravdu za to stojÃ­. TakÅ¾e se vraÅ¥, aÅ¾ dÃ¡Å¡ dohromady dost zlata.
 	};
 };
 
@@ -207,7 +207,7 @@ INSTANCE DIA_Matteo_Paladine(C_INFO)
 	condition	= DIA_Matteo_Paladine_Condition;
 	information	= DIA_MAtteo_Paladine_Info;
 	permanent	= FALSE;
-	description = "Co víš o paladinech?";
+	description = "Co vÃ­Å¡ o paladinech?";
 };                       
 FUNC INT DIA_Matteo_Paladine_Condition()
 {	
@@ -218,13 +218,13 @@ FUNC INT DIA_Matteo_Paladine_Condition()
 };
 FUNC VOID DIA_Matteo_Paladine_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_Paladine_15_00"); //Co víš o paladinech?
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_01"); //Od chvíle, kdy ti bastardi dorazili do mìsta, neznám nic jiného ne samé trampoty.
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_02"); //Poslednì jsem zamíøil do horní èásti mìsta, ale stráe mi zastoupily cestu a chtìly vìdìt, co tam pohledávám!
+	AI_Output (other, self, "DIA_Matteo_Paladine_15_00"); //Co vÃ­Å¡ o paladinech?
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_01"); //Od chvÃ­le, kdy ti bastardi dorazili do mÄ›sta, neznÃ¡m nic jinÃ©ho neÅ¾ samÃ© trampoty.
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_02"); //PoslednÄ› jsem zamÃ­Å™il do hornÃ­ ÄÃ¡sti mÄ›sta, ale strÃ¡Å¾e mi zastoupily cestu a chtÄ›ly vÄ›dÄ›t, co tam pohledÃ¡vÃ¡m!
 	AI_Output (other, self, "DIA_Matteo_Paladine_15_03"); //A?
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_04"); //Samozøejmì mì pak pustily dovnitø!
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_05"); //Mùj obchod ve mìstì stál ještì døív, ne se ti nabubøelí hejhulové nauèili zapichovali podsvinèata døevìnım meèem!
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_06"); //A vèera sem ti bastardi jen tak mírnyx-tırnyx pøišli a zabavili mi pùlku zboí!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_04"); //SamozÅ™ejmÄ› mÄ› pak pustily dovnitÅ™!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_05"); //MÅ¯j obchod ve mÄ›stÄ› stÃ¡l jeÅ¡tÄ› dÅ™Ã­v, neÅ¾ se ti nabubÅ™elÃ­ hejhulovÃ© nauÄili zapichovali podsvinÄata dÅ™evÄ›nÃ½m meÄem!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_06"); //A vÄera sem ti bastardi jen tak mÃ­rnyx-tÃ½rnyx pÅ™iÅ¡li a zabavili mi pÅ¯lku zboÅ¾Ã­!
 };
 
 // ************************************************************
@@ -237,7 +237,7 @@ INSTANCE DIA_Matteo_Confiscated(C_INFO)
 	condition	= DIA_Matteo_Confiscated_Condition;
 	information	= DIA_MAtteo_Confiscated_Info;
 	permanent	= FALSE;
-	description = "Paladinové ti zabavili zboí?";
+	description = "PaladinovÃ© ti zabavili zboÅ¾Ã­?";
 };                       
 FUNC INT DIA_Matteo_Confiscated_Condition()
 {	
@@ -249,10 +249,10 @@ FUNC INT DIA_Matteo_Confiscated_Condition()
 FUNC VOID DIA_Matteo_Confiscated_Info()
 {	
 
-	AI_Output (other, self, "DIA_Matteo_Confiscated_15_00"); //Paladinové ti zabavili zboí?
-	AI_Output (self, other, "DIA_Matteo_Confiscated_09_01"); //Všecko, co jsem mìl uskladnìné vzadu na dvorku.
-	AI_Output (self, other, "DIA_Matteo_Confiscated_09_02"); //Prostì ke vchodu na dvùr postavili strá.
-	AI_Output (self, other, "DIA_Matteo_Confiscated_09_03"); //Mám kliku, e mi nesebrali úplnì všecko - aspoò tu zbroj tu mohli nechat.
+	AI_Output (other, self, "DIA_Matteo_Confiscated_15_00"); //PaladinovÃ© ti zabavili zboÅ¾Ã­?
+	AI_Output (self, other, "DIA_Matteo_Confiscated_09_01"); //VÅ¡ecko, co jsem mÄ›l uskladnÄ›nÃ© vzadu na dvorku.
+	AI_Output (self, other, "DIA_Matteo_Confiscated_09_02"); //ProstÄ› ke vchodu na dvÅ¯r postavili strÃ¡Å¾.
+	AI_Output (self, other, "DIA_Matteo_Confiscated_09_03"); //MÃ¡m kliku, Å¾e mi nesebrali ÃºplnÄ› vÅ¡ecko - aspoÅˆ tu zbroj tu mohli nechat.
 };
 
 // ************************************************************
@@ -265,7 +265,7 @@ INSTANCE DIA_Matteo_HelpMeToOV(C_INFO)
 	condition	= DIA_Matteo_HelpMeToOV_Condition;
 	information	= DIA_MAtteo_HelpMeToOV_Info;
 	permanent	= FALSE;
-	description = "Mùeš mi pomoci proniknout do horní ètvrti?";
+	description = "MÅ¯Å¾eÅ¡ mi pomoci proniknout do hornÃ­ Ätvrti?";
 };                       
 FUNC INT DIA_Matteo_HelpMeToOV_Condition()
 {	
@@ -278,25 +278,25 @@ FUNC INT DIA_Matteo_HelpMeToOV_Condition()
 };
 FUNC VOID DIA_Matteo_HelpMeToOV_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_00"); //Mùeš mi pomoci proniknout do horní ètvrti?
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_01"); //(udivenì) Coe? A co TAM chceš dìlat?
-	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_02"); //Nesu nìjakou dùleitou zprávu.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_03"); //No, víš... U ses zkoušel dostat pøes stráe?
+	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_00"); //MÅ¯Å¾eÅ¡ mi pomoci proniknout do hornÃ­ Ätvrti?
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_01"); //(udivenÄ›) CoÅ¾e? A co TAM chceÅ¡ dÄ›lat?
+	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_02"); //Nesu nÄ›jakou dÅ¯leÅ¾itou zprÃ¡vu.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_03"); //No, vÃ­Å¡... UÅ¾ ses zkouÅ¡el dostat pÅ™es strÃ¡Å¾e?
 
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_04"); //(hoøkı úsmìv) Zapomeò na to, chlape!
-		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_05"); //(usmìje se) To je pro ty maníky TYPICKÉ!
+		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_04"); //(hoÅ™kÃ½ ÃºsmÄ›v) ZapomeÅˆ na to, chlape!
+		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_05"); //(usmÄ›je se) To je pro ty manÃ­ky TYPICKÃ‰!
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_06"); //Nechápu, proè bych to mìl vùbec zkoušet.
-		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_07"); //Nejspíš máš pravdu.
+		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_06"); //NechÃ¡pu, proÄ bych to mÄ›l vÅ¯bec zkouÅ¡et.
+		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_07"); //NejspÃ­Å¡ mÃ¡Å¡ pravdu.
 	};
 	
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_08"); //Nevím, JAK dùleitá ta tvoje zpráva je, a vlastnì mi do toho ani nic není.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_09"); //Ale i kdy jim øekneš, e v pøístavu právì zakotvila loï plná skøetù, stejnì tì pošlou pryè.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_10"); //Protoe mají své ROZKAZY.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_08"); //NevÃ­m, JAK dÅ¯leÅ¾itÃ¡ ta tvoje zprÃ¡va je, a vlastnÄ› mi do toho ani nic nenÃ­.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_09"); //Ale i kdyÅ¾ jim Å™ekneÅ¡, Å¾e v pÅ™Ã­stavu prÃ¡vÄ› zakotvila loÄ plnÃ¡ skÅ™etÅ¯, stejnÄ› tÄ› poÅ¡lou pryÄ.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_10"); //ProtoÅ¾e majÃ­ svÃ© ROZKAZY.
 };
 
 // ************************************************************
@@ -305,10 +305,10 @@ FUNC VOID DIA_Matteo_HelpMeToOV_Info()
 
 func void B_Matteo_Preis()
 {
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_01"); //Zdá se, e ti na tom opravdu záleí.
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_02"); //(potutelnì) Otázka zní, JAK MOC ti na tom záleí.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_01"); //ZdÃ¡ se, Å¾e ti na tom opravdu zÃ¡leÅ¾Ã­.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_02"); //(potutelnÄ›) OtÃ¡zka znÃ­, JAK MOC ti na tom zÃ¡leÅ¾Ã­.
 	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_03"); //O co ti jde?
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_04"); //Mohu ti pomoci - koneckoncù tu patøím k nejvlivnìjším lidem.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_04"); //Mohu ti pomoci - koneckoncÅ¯ tu patÅ™Ã­m k nejvlivnÄ›jÅ¡Ã­m lidem.
 	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_05"); //Ale nebude to zadarmo.
 };
 
@@ -320,7 +320,7 @@ INSTANCE DIA_Matteo_HelpMeNow(C_INFO)
 	condition	= DIA_Matteo_HelpMeNow_Condition;
 	information	= DIA_MAtteo_HelpMeNow_Info;
 	permanent	= FALSE;
-	description = "Take mi mùeš pomoci proniknout do horní ètvrti?";
+	description = "TakÅ¾e mi mÅ¯Å¾eÅ¡ pomoci proniknout do hornÃ­ Ätvrti?";
 };                       
 FUNC INT DIA_Matteo_HelpMeNow_Condition()
 {	
@@ -333,7 +333,7 @@ FUNC INT DIA_Matteo_HelpMeNow_Condition()
 };
 FUNC VOID DIA_Matteo_HelpMeNow_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_00"); //Take mi mùeš pomoci proniknout do horní ètvrti?
+	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_00"); //TakÅ¾e mi mÅ¯Å¾eÅ¡ pomoci proniknout do hornÃ­ Ätvrti?
 	B_Matteo_Preis();
 };
 
@@ -347,7 +347,7 @@ INSTANCE DIA_Matteo_LehrlingLater(C_INFO)
 	condition	= DIA_Matteo_LehrlingLater_Condition;
 	information	= DIA_MAtteo_LehrlingLater_Info;
 	permanent	= FALSE;
-	description = "Pomoz mi stát se uèedníkem u nìkterého z ostatních mistrù.";
+	description = "Pomoz mi stÃ¡t se uÄednÃ­kem u nÄ›kterÃ©ho z ostatnÃ­ch mistrÅ¯.";
 };                       
 FUNC INT DIA_Matteo_LehrlingLater_Condition()
 {	
@@ -359,7 +359,7 @@ FUNC INT DIA_Matteo_LehrlingLater_Condition()
 };
 func VOID DIA_Matteo_LehrlingLater_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_LehrlingLater_15_00"); //Take mi mùeš pomoci proniknout do horní ètvrti?
+	AI_Output (other, self, "DIA_Matteo_LehrlingLater_15_00"); //TakÅ¾e mi mÅ¯Å¾eÅ¡ pomoci proniknout do hornÃ­ Ätvrti?
 	B_Matteo_Preis();
 };
 	
@@ -373,7 +373,7 @@ INSTANCE DIA_Matteo_PriceOfHelp(C_INFO)
 	condition	= DIA_Matteo_PriceOfHelp_Condition;
 	information	= DIA_MAtteo_PriceOfHelp_Info;
 	permanent	= FALSE;
-	description = "Co za svou pomoc chceš?";
+	description = "Co za svou pomoc chceÅ¡?";
 };                       
 FUNC INT DIA_Matteo_PriceOfHelp_Condition()
 {	
@@ -385,40 +385,40 @@ FUNC INT DIA_Matteo_PriceOfHelp_Condition()
 };
 FUNC VOID DIA_Matteo_PriceOfHelp_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_15_00"); //Co za svou pomoc chceš?
-	AI_Output (self, other, "DIA_Matteo_PriceOfHelp_09_01"); //100 zlatıch.
+	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_15_00"); //Co za svou pomoc chceÅ¡?
+	AI_Output (self, other, "DIA_Matteo_PriceOfHelp_09_01"); //100 zlatÃ½ch.
 	
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
-	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "To je zatracenì hodnì...", DIA_Matteo_PriceOfHelp_Wow);
-	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "Ty chamtivèe!", DIA_Matteo_PriceOfHelp_Cutthroat);
+	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "To je zatracenÄ› hodnÄ›...", DIA_Matteo_PriceOfHelp_Wow);
+	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "Ty chamtivÄe!", DIA_Matteo_PriceOfHelp_Cutthroat);
 };
 
 func void B_Matteo_RegDichAb()
 {
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_00"); //Klídek - nemyslím zrovna TVOJE zlato!
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_00"); //KlÃ­dek - nemyslÃ­m zrovna TVOJE zlato!
 	AI_Output (other, self, "B_Matteo_RegDichAb_15_01"); //Ale?
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_02"); //V zásadì jde o MOJE zlato.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_03"); //Tesaøova neteø Gritta mi toti u celé vìky nezaplatila, co mi dluí.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_04"); //A pøitom se tu ten malı spratek producíruje kadou chvíli v novıch hadrech - to znamená, e penìz má dost.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_05"); //Rád bych to z ní vymlátil, ale mistr Thorben - tesaø - tu má taky dost velkı vliv.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_06"); //Kdy mi dáš ty peníze, pomùu ti.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_02"); //V zÃ¡sadÄ› jde o MOJE zlato.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_03"); //TesaÅ™ova neteÅ™ Gritta mi totiÅ¾ uÅ¾ celÃ© vÄ›ky nezaplatila, co mi dluÅ¾Ã­.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_04"); //A pÅ™itom se tu ten malÃ½ spratek producÃ­ruje kaÅ¾dou chvÃ­li v novÃ½ch hadrech - to znamenÃ¡, Å¾e penÄ›z mÃ¡ dost.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_05"); //RÃ¡d bych to z nÃ­ vymlÃ¡til, ale mistr Thorben - tesaÅ™ - tu mÃ¡ taky dost velkÃ½ vliv.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_06"); //KdyÅ¾ mi dÃ¡Å¡ ty penÃ­ze, pomÅ¯Å¾u ti.
 	
 	MIS_Matteo_Gold = LOG_RUNNING;
 	Log_CreateTopic (Topic_Matteo,LOG_MISSION);
 	Log_SetTopicStatus	(Topic_Matteo,LOG_RUNNING);
-	B_LogEntry (Topic_Matteo,"Gritta, neteø tesaøe Thorbena, dluí Matteovi 100 zlaákù. Kdy mu je vrátím, pomùe mi proniknout do horní ètvrti.");
+	B_LogEntry (Topic_Matteo,"Gritta, neteÅ™ tesaÅ™e Thorbena, dluÅ¾Ã­ Matteovi 100 zlaÅ¥Ã¡kÅ¯. KdyÅ¾ mu je vrÃ¡tÃ­m, pomÅ¯Å¾e mi proniknout do hornÃ­ Ätvrti.");
 };
 
 func void DIA_Matteo_PriceOfHelp_Cutthroat()
 {
-	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Cutthroat_15_00"); //Ty chamtivèe!
+	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Cutthroat_15_00"); //Ty chamtivÄe!
 	B_Matteo_RegDichAb();
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
 };
 
 func void DIA_Matteo_PriceOfHelp_Wow()
 {
-	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Wow_15_00"); //To je zatracenì hodnì...
+	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_Wow_15_00"); //To je zatracenÄ› hodnÄ›...
 	B_Matteo_RegDichAb();
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
 };
@@ -433,7 +433,7 @@ INSTANCE DIA_Matteo_WoGritta(C_INFO)
 	condition	= DIA_Matteo_WoGritta_Condition;
 	information	= DIA_MAtteo_WoGritta_Info;
 	permanent	= FALSE;
-	description = "Kde bych tu Grittu našel?";
+	description = "Kde bych tu Grittu naÅ¡el?";
 };                       
 FUNC INT DIA_Matteo_WoGritta_Condition()
 {	
@@ -445,8 +445,8 @@ FUNC INT DIA_Matteo_WoGritta_Condition()
 };
 FUNC VOID DIA_Matteo_WoGritta_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WoGritta_15_00"); //Kde bych tu Grittu našel?
-	AI_Output (self, other, "DIA_Matteo_WoGritta_09_01"); //Jak jsem øekl, je to tesaøova neteø. Jeho dùm najdeš dole v ulici, poslední stavení napravo pøed kovárnou.
+	AI_Output (other, self, "DIA_Matteo_WoGritta_15_00"); //Kde bych tu Grittu naÅ¡el?
+	AI_Output (self, other, "DIA_Matteo_WoGritta_09_01"); //Jak jsem Å™ekl, je to tesaÅ™ova neteÅ™. Jeho dÅ¯m najdeÅ¡ dole v ulici, poslednÃ­ stavenÃ­ napravo pÅ™ed kovÃ¡rnou.
 };
 
 // ************************************************************
@@ -459,7 +459,7 @@ INSTANCE DIA_Matteo_GoldRunning(C_INFO)
 	condition	= DIA_Matteo_GoldRunning_Condition;
 	information	= DIA_MAtteo_GoldRunning_Info;
 	permanent	= TRUE;
-	description = "Tady máš tìch 100 zlaákù!";
+	description = "Tady mÃ¡Å¡ tÄ›ch 100 zlaÅ¥Ã¡kÅ¯!";
 };                       
 FUNC INT DIA_Matteo_GoldRunning_Condition()
 {	
@@ -471,14 +471,14 @@ FUNC INT DIA_Matteo_GoldRunning_Condition()
 };
 FUNC VOID DIA_Matteo_GoldRunning_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_GoldRunning_15_00"); //Tady máš tìch 100 zlaákù!
+	AI_Output (other, self, "DIA_Matteo_GoldRunning_15_00"); //Tady mÃ¡Å¡ tÄ›ch 100 zlaÅ¥Ã¡kÅ¯!
 	
 	//EXIT IF...
 	
 	if (Npc_IsDead(Gritta))
 	{
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_01"); //Na tom zlatì je Grittina krev! Já ti pøece ani v nejmenším nenakázal, abys ji zabil!
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_02"); //S tím nechci nic mít - a na naši úmluvu rovnou zapomeò! A u na mì víckrát nemluv!
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_01"); //Na tom zlatÄ› je Grittina krev! JÃ¡ ti pÅ™ece ani v nejmenÅ¡Ã­m nenakÃ¡zal, abys ji zabil!
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_02"); //S tÃ­m nechci nic mÃ­t - a na naÅ¡i Ãºmluvu rovnou zapomeÅˆ! A uÅ¾ na mÄ› vÃ­ckrÃ¡t nemluv!
 		MIS_Matteo_Gold = LOG_FAILED;
 		B_CheckLog();
 		AI_StopProcessInfos	(self);
@@ -491,15 +491,15 @@ FUNC VOID DIA_Matteo_GoldRunning_Info()
 	{
 		if (Npc_HasItems(Gritta, itmi_gold) < 100)
 		{
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_03"); //Tak co? Dìlala nìjaké problémy?
-			AI_Output (other, self, "DIA_Matteo_GoldRunning_15_04"); //Nic, co by stálo za zmínku.
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_05"); //Dobøe. Svou èást úmluvy jsi tedy dodrel.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_03"); //Tak co? DÄ›lala nÄ›jakÃ© problÃ©my?
+			AI_Output (other, self, "DIA_Matteo_GoldRunning_15_04"); //Nic, co by stÃ¡lo za zmÃ­nku.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_05"); //DobÅ™e. Svou ÄÃ¡st Ãºmluvy jsi tedy dodrÅ¾el.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_06"); //Ty to za ni chceš zaplatit? Hmm, dal bych spíš pøednost tomu, kdybys to vymáèkl pøímo z ní!
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_07"); //Ale - 100 zlaákù je poøád 100 zlaákù.
-			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_08"); //Svou èást úmluvy jsi tím dodrel.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_06"); //Ty to za ni chceÅ¡ zaplatit? Hmm, dal bych spÃ­Å¡ pÅ™ednost tomu, kdybys to vymÃ¡Äkl pÅ™Ã­mo z nÃ­!
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_07"); //Ale - 100 zlaÅ¥Ã¡kÅ¯ je poÅ™Ã¡d 100 zlaÅ¥Ã¡kÅ¯.
+			AI_Output (self, other, "DIA_Matteo_GoldRunning_09_08"); //Svou ÄÃ¡st Ãºmluvy jsi tÃ­m dodrÅ¾el.
 		};
 		
 		MIS_Matteo_Gold = LOG_SUCCESS;
@@ -507,7 +507,7 @@ FUNC VOID DIA_Matteo_GoldRunning_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_09"); //Poèítání není zrovna tvoje silná stránka, co? Vdy ty tìch 100 zlaákù nemáš.
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_09"); //PoÄÃ­tÃ¡nÃ­ nenÃ­ zrovna tvoje silnÃ¡ strÃ¡nka, co? VÅ¾dyÅ¥ ty tÄ›ch 100 zlaÅ¥Ã¡kÅ¯ nemÃ¡Å¡.
 	};
 };
 
@@ -522,7 +522,7 @@ instance DIA_Matteo_Zustimmung(C_INFO)
 	condition	= DIA_Matteo_Zustimmung_Condition;
 	information	= DIA_MAtteo_Zustimmung_Info;
 	permanent	= TRUE;
-	description = "Pomoz mi stát se uèedníkem u nìkterého z ostatních mistrù.";
+	description = "Pomoz mi stÃ¡t se uÄednÃ­kem u nÄ›kterÃ©ho z ostatnÃ­ch mistrÅ¯.";
 };          
 var int   DIA_Matteo_Zustimmung_perm;          
 FUNC INT DIA_Matteo_Zustimmung_Condition()
@@ -537,20 +537,20 @@ FUNC INT DIA_Matteo_Zustimmung_Condition()
 };
 FUNC VOID DIA_Matteo_Zustimmung_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_Zustimmung_15_00"); //Pomoz mi vstoupit do uèení k nìkterému z ostatních mistrù!
+	AI_Output (other, self, "DIA_Matteo_Zustimmung_15_00"); //Pomoz mi vstoupit do uÄenÃ­ k nÄ›kterÃ©mu z ostatnÃ­ch mistrÅ¯!
 	
 	if (MIS_Matteo_Gold == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_01"); //ádné strachy - já svou èást dohody dodrím.
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_02"); //Ostatním mistrùm budu o tobì vykládat jenom to nejlepší.
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_01"); //Å½Ã¡dnÃ© strachy - jÃ¡ svou ÄÃ¡st dohody dodrÅ¾Ã­m.
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_02"); //OstatnÃ­m mistrÅ¯m budu o tobÄ› vyklÃ¡dat jenom to nejlepÅ¡Ã­.
 		
 		B_GivePlayerXP (XP_Zustimmung);
-		B_LogEntry (Topic_Lehrling,"Matteo bude souhlasit, budu-li chtít vstoupit do uèení u nìkoho jiného.");
+		B_LogEntry (Topic_Lehrling,"Matteo bude souhlasit, budu-li chtÃ­t vstoupit do uÄenÃ­ u nÄ›koho jinÃ©ho.");
 		DIA_Matteo_Zustimmung_perm = TRUE;
 	}
 	else //LOG_RUNNING
 	{
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_03"); //Jedno po druhém. Nejdøív splò svou èást dohody a pøines mi zlato!
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_03"); //Jedno po druhÃ©m. NejdÅ™Ã­v splÅˆ svou ÄÃ¡st dohody a pÅ™ines mi zlato!
 	};
 };
 
@@ -564,7 +564,7 @@ INSTANCE DIA_Matteo_HowCanYouHelp (C_INFO)
 	condition	= DIA_Matteo_HowCanYouHelp_Condition;
 	information	= DIA_MAtteo_HowCanYouHelp_Info;
 	permanent	= FALSE;
-	description = "Co KONKRÉTNÌ pro mne mùeš udìlat?";
+	description = "Co KONKRÃ‰TNÄš pro mne mÅ¯Å¾eÅ¡ udÄ›lat?";
 };                       
 FUNC INT DIA_Matteo_HowCanYouHelp_Condition()
 {	
@@ -577,16 +577,16 @@ FUNC INT DIA_Matteo_HowCanYouHelp_Condition()
 };
 FUNC VOID DIA_Matteo_HowCanYouHelp_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_HowCanYouHelp_15_00"); //Co KONKRÉTNÌ pro mne mùeš udìlat?
-	AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_01"); //To je jednoduché. Vyuiju svùj vliv a pøesvìdèím jednoho z místních øemeslníkù, aby tì pøijal jako uèedníka.
+	AI_Output (other, self, "DIA_Matteo_HowCanYouHelp_15_00"); //Co KONKRÃ‰TNÄš pro mne mÅ¯Å¾eÅ¡ udÄ›lat?
+	AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_01"); //To je jednoduchÃ©. VyuÅ¾iju svÅ¯j vliv a pÅ™esvÄ›dÄÃ­m jednoho z mÃ­stnÃ­ch Å™emeslnÃ­kÅ¯, aby tÄ› pÅ™ijal jako uÄednÃ­ka.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_02"); //Tak se prakticky staneš mìšanem a budeš moci vstoupit i do horní ètvrti. A krom toho si i trochu pøivydìláš.
+		AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_02"); //Tak se prakticky staneÅ¡ mÄ›Å¡Å¥anem a budeÅ¡ moci vstoupit i do hornÃ­ Ätvrti. A krom toho si i trochu pÅ™ivydÄ›lÃ¡Å¡.
 	};
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling,"Matteo mi mùe pomoci, aby mì nìkterı z øemeslnickıch mistrù pøijal do uèení.");
+	B_LogEntry (TOPIC_Lehrling,"Matteo mi mÅ¯Å¾e pomoci, aby mÄ› nÄ›kterÃ½ z Å™emeslnickÃ½ch mistrÅ¯ pÅ™ijal do uÄenÃ­.");
 };	
 
 // ************************************************************
@@ -599,7 +599,7 @@ INSTANCE DIA_Matteo_WoAlsLehrling (C_INFO)
 	condition	= DIA_Matteo_WoAlsLehrling_Condition;
 	information	= DIA_MAtteo_WoAlsLehrling_Info;
 	permanent	= FALSE;
-	description = "Kde bych tedy mohl vstoupit do uèení?";
+	description = "Kde bych tedy mohl vstoupit do uÄenÃ­?";
 };                       
 FUNC INT DIA_Matteo_WoAlsLehrling_Condition()
 {	
@@ -611,16 +611,16 @@ FUNC INT DIA_Matteo_WoAlsLehrling_Condition()
 };
 FUNC VOID DIA_Matteo_WoAlsLehrling_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WoAlsLehrling_15_00"); //Kde bych tedy mohl vstoupit do uèení?
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_01"); //Vlastnì ke komukoliv z mistrù tady na hlavní ulici.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_02"); //Mùe to bıt kováø Harad, vırobce lukù Bosper, tesaø Thorben nebo alchymista Constantino.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_03"); //Jeden z nich tì musí pøijmout.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_04"); //Ale dùleité je, aby s tím souhlasili i ostatní mistøi. Tak je to tady v Khorinidu zvykem.
+	AI_Output (other, self, "DIA_Matteo_WoAlsLehrling_15_00"); //Kde bych tedy mohl vstoupit do uÄenÃ­?
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_01"); //VlastnÄ› ke komukoliv z mistrÅ¯ tady na hlavnÃ­ ulici.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_02"); //MÅ¯Å¾e to bÃ½t kovÃ¡Å™ Harad, vÃ½robce lukÅ¯ Bosper, tesaÅ™ Thorben nebo alchymista Constantino.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_03"); //Jeden z nich tÄ› musÃ­ pÅ™ijmout.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_04"); //Ale dÅ¯leÅ¾itÃ© je, aby s tÃ­m souhlasili i ostatnÃ­ mistÅ™i. Tak je to tady v Khorinidu zvykem.
 	
 	Log_CreateTopic (Topic_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lehrling,LOG_RUNNING);
-	B_LogEntry (Topic_Lehrling,"Mohu vstoupit do uèení k vırobci lukù Bosperovi, kováøi Haradovi, tesaøi Thorbenovi nebo k alchymistovi Constantinovi.");
-	B_LogEntry (Topic_Lehrling,"Ještì ne k nìkomu vstoupím do uèení, musím získat svolení ostatních mistrù.");
+	B_LogEntry (Topic_Lehrling,"Mohu vstoupit do uÄenÃ­ k vÃ½robci lukÅ¯ Bosperovi, kovÃ¡Å™i Haradovi, tesaÅ™i Thorbenovi nebo k alchymistovi Constantinovi.");
+	B_LogEntry (Topic_Lehrling,"JeÅ¡tÄ› neÅ¾ k nÄ›komu vstoupÃ­m do uÄenÃ­, musÃ­m zÃ­skat svolenÃ­ ostatnÃ­ch mistrÅ¯.");
 };
 // ************************************************************
 // 			  				WieZustimmung 			E6
@@ -632,7 +632,7 @@ INSTANCE DIA_Matteo_WieZustimmung (C_INFO)
 	condition	= DIA_Matteo_WieZustimmung_Condition;
 	information	= DIA_MAtteo_WieZustimmung_Info;
 	permanent	= FALSE;
-	description = "Jak získám souhlas ostatních mistrù?";
+	description = "Jak zÃ­skÃ¡m souhlas ostatnÃ­ch mistrÅ¯?";
 };                       
 FUNC INT DIA_Matteo_WieZustimmung_Condition()
 {	
@@ -644,11 +644,11 @@ FUNC INT DIA_Matteo_WieZustimmung_Condition()
 };
 FUNC VOID DIA_Matteo_WieZustimmung_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WieZustimmung_15_00"); //Jak získám souhlas ostatních mistrù?
-	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_01"); //Prostì je musíš nìjak pøesvìdèit. Zastav se u nich a promluv si s nimi.
-	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_02"); //Ale jestli si proti sobì popudíš víc jak jednoho, nebudeš mít šanci! Tak se koukej chovat slušnì!
+	AI_Output (other, self, "DIA_Matteo_WieZustimmung_15_00"); //Jak zÃ­skÃ¡m souhlas ostatnÃ­ch mistrÅ¯?
+	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_01"); //ProstÄ› je musÃ­Å¡ nÄ›jak pÅ™esvÄ›dÄit. Zastav se u nich a promluv si s nimi.
+	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_02"); //Ale jestli si proti sobÄ› popudÃ­Å¡ vÃ­c jak jednoho, nebudeÅ¡ mÃ­t Å¡anci! Tak se koukej chovat sluÅ¡nÄ›!
 	
-	B_LogEntry (Topic_Lehrling,"Ostatní mistøi mi dají své doporuèení pouze za pøedpokladu, e jim dokáu svou cenu.");
+	B_LogEntry (Topic_Lehrling,"OstatnÃ­ mistÅ™i mi dajÃ­ svÃ© doporuÄenÃ­ pouze za pÅ™edpokladu, Å¾e jim dokÃ¡Å¾u svou cenu.");
 };	
 
 // ************************************************************
@@ -661,7 +661,7 @@ INSTANCE DIA_Matteo_WarumNichtBeiDir (C_INFO)
 	condition	= DIA_Matteo_WarumNichtBeiDir_Condition;
 	information	= DIA_MAtteo_WarumNichtBeiDir_Info;
 	permanent	= FALSE;
-	description = "A proè mì do uèení nepøijmeš TY?";
+	description = "A proÄ mÄ› do uÄenÃ­ nepÅ™ijmeÅ¡ TY?";
 };                       
 FUNC INT DIA_Matteo_WarumNichtBeiDir_Condition()
 {	
@@ -673,13 +673,13 @@ FUNC INT DIA_Matteo_WarumNichtBeiDir_Condition()
 };
 FUNC VOID DIA_Matteo_WarumNichtBeiDir_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WarumNichtBeiDir_15_00"); //A proè mì do uèení nepøijmeš TY?
-	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_01"); //Rád bych - ale museli by s tím souhlasit i ostatní mistøi.
-	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_02"); //Nedávno jsem pøijal jiného uèedníka.
+	AI_Output (other, self, "DIA_Matteo_WarumNichtBeiDir_15_00"); //A proÄ mÄ› do uÄenÃ­ nepÅ™ijmeÅ¡ TY?
+	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_01"); //RÃ¡d bych - ale museli by s tÃ­m souhlasit i ostatnÃ­ mistÅ™i.
+	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_02"); //NedÃ¡vno jsem pÅ™ijal jinÃ©ho uÄednÃ­ka.
 };	
 
 // ************************************************************
-// 			  				Andere Möglichkeie 			E5
+// 			  				Andere MÃ¶glichkeie 			E5
 // ************************************************************
 INSTANCE DIA_Matteo_OtherWay (C_INFO)
 {
@@ -688,7 +688,7 @@ INSTANCE DIA_Matteo_OtherWay (C_INFO)
 	condition	= DIA_Matteo_OtherWay_Condition;
 	information	= DIA_MAtteo_OtherWay_Info;
 	permanent	= FALSE;
-	description = "Existuje i jinı zpùsob, jak se dostat do horní ètvrti?";
+	description = "Existuje i jinÃ½ zpÅ¯sob, jak se dostat do hornÃ­ Ätvrti?";
 };                       
 FUNC INT DIA_Matteo_OtherWay_Condition()
 {	
@@ -702,8 +702,8 @@ FUNC INT DIA_Matteo_OtherWay_Condition()
 };
 FUNC VOID DIA_Matteo_OtherWay_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_OtherWay_15_00"); //Existuje i jinı zpùsob, jak se dostat do horní ètvrti?
-	AI_Output (self, other, "DIA_Matteo_OtherWay_09_01"); //Snad ano - jestli na nìco pøijdu, dám ti vìdìt.
+	AI_Output (other, self, "DIA_Matteo_OtherWay_15_00"); //Existuje i jinÃ½ zpÅ¯sob, jak se dostat do hornÃ­ Ätvrti?
+	AI_Output (self, other, "DIA_Matteo_OtherWay_09_01"); //Snad ano - jestli na nÄ›co pÅ™ijdu, dÃ¡m ti vÄ›dÄ›t.
 };	
 
 // ************************************************************
@@ -716,7 +716,7 @@ INSTANCE DIA_Matteo_Minenanteil (C_INFO)
 	condition	= DIA_Matteo_Minenanteil_Condition;
 	information	= DIA_MAtteo_Minenanteil_Info;
 
-	description = "Ve tvém zboí vidím i nìjaké dùlní akcie.";
+	description = "Ve tvÃ©m zboÅ¾Ã­ vidÃ­m i nÄ›jakÃ© dÅ¯lnÃ­ akcie.";
 };   
                     
 FUNC INT DIA_Matteo_Minenanteil_Condition()
@@ -731,8 +731,8 @@ FUNC INT DIA_Matteo_Minenanteil_Condition()
 
 FUNC VOID DIA_Matteo_Minenanteil_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_Minenanteil_15_00"); //Mezi tvım zboím vidím i nìjaké dùlní akcie. Kdo ti je prodal?
-	AI_Output (self, other, "DIA_Matteo_Minenanteil_09_01"); //(nervóznì) Dùlní akcie? Jejda, kde se tu vzaly? Nemám ponìtí, jak jsem k nim pøišel. Èestné slovo, na mou duši.
+	AI_Output (other, self, "DIA_Matteo_Minenanteil_15_00"); //Mezi tvÃ½m zboÅ¾Ã­m vidÃ­m i nÄ›jakÃ© dÅ¯lnÃ­ akcie. Kdo ti je prodal?
+	AI_Output (self, other, "DIA_Matteo_Minenanteil_09_01"); //(nervÃ³znÄ›) DÅ¯lnÃ­ akcie? Jejda, kde se tu vzaly? NemÃ¡m ponÄ›tÃ­, jak jsem k nim pÅ™iÅ¡el. ÄŒestnÃ© slovo, na mou duÅ¡i.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

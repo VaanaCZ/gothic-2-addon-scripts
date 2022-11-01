@@ -14,7 +14,7 @@ var int History_2_permanent;
 var int History_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory1_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -36,15 +36,15 @@ FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
 					Doc_PrintLine	( nDocID,  0, ""						);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Nejlepší obrana je útok - alespoò proti všem nelidskım stvùrám. Odvracet útoky zvíøat nebo oblud toti vùbec nemá cenu."						);
-					Doc_PrintLines	( nDocID,  0, "Takového protivníka si je lepší nìkolika dobøe míøenımi ranami dret od tìla a pak ho pøekvapit náhlım vıpadem."						);
+					Doc_PrintLines	( nDocID,  0, "NejlepÅ¡Ã­ obrana je Ãºtok - alespoÅˆ proti vÅ¡em nelidskÃ½m stvÅ¯rÃ¡m. Odvracet Ãºtoky zvÃ­Å™at nebo oblud totiÅ¾ vÅ¯bec nemÃ¡ cenu."						);
+					Doc_PrintLines	( nDocID,  0, "TakovÃ©ho protivnÃ­ka si je lepÅ¡Ã­ nÄ›kolika dobÅ™e mÃ­Å™enÃ½mi ranami drÅ¾et od tÄ›la a pak ho pÅ™ekvapit nÃ¡hlÃ½m vÃ½padem."						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Samozøejmì e zkušení bojovníci mohou tyto pohyby libovolnì spojovat. Pokud jsi mistrem bojovıch umìní, mùeš takovıch kombinací pouívat i více."						); 
+					Doc_PrintLines	( nDocID,  1, "SamozÅ™ejmÄ› Å¾e zkuÅ¡enÃ­ bojovnÃ­ci mohou tyto pohyby libovolnÄ› spojovat. Pokud jsi mistrem bojovÃ½ch umÄ›nÃ­, mÅ¯Å¾eÅ¡ takovÃ½ch kombinacÃ­ pouÅ¾Ã­vat i vÃ­ce."						); 
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
 	
 };
 
-FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory2_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -82,20 +82,20 @@ FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
 
 					Doc_PrintLine	( nDocID,  0, "Ostrov"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Pøístavní mìsto Khorinis leí na ostrovì u pobøeí království Myrtana."						);
-					Doc_PrintLines	( nDocID,  0, "Tento ostrov je proslulı zejména tím, e se na nìm nachází slavné Hornické údolí. Jeho povìst je pochybná, nebo je po mnoho let obklopovala neprostupná magická bariéra, a proto slouilo jako vìznice pro trestance z celé øíše."						);
-					Doc_PrintLines	( nDocID,  0, "Ti zde dolovali magickou rudu, její loiska se ukrıvala hluboko pod povrchem zemì."						);
+					Doc_PrintLines	( nDocID,  0, "PÅ™Ã­stavnÃ­ mÄ›sto Khorinis leÅ¾Ã­ na ostrovÄ› u pobÅ™eÅ¾Ã­ krÃ¡lovstvÃ­ Myrtana."						);
+					Doc_PrintLines	( nDocID,  0, "Tento ostrov je proslulÃ½ zejmÃ©na tÃ­m, Å¾e se na nÄ›m nachÃ¡zÃ­ slavnÃ© HornickÃ© ÃºdolÃ­. Jeho povÄ›st je pochybnÃ¡, neboÅ¥ je po mnoho let obklopovala neprostupnÃ¡ magickÃ¡ bariÃ©ra, a proto slouÅ¾ilo jako vÄ›znice pro trestance z celÃ© Å™Ã­Å¡e."						);
+					Doc_PrintLines	( nDocID,  0, "Ti zde dolovali magickou rudu, jejÃ­Å¾ loÅ¾iska se ukrÃ½vala hluboko pod povrchem zemÄ›."						);
 					
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pùda za hranicemi Khorinidu je velmi úrodná, proto tu najdete mnoho selskıch usedlostí, kde se pìstují zejména tuøíny a chovají ovce."						); 
+					Doc_PrintLines	( nDocID,  1, "PÅ¯da za hranicemi Khorinidu je velmi ÃºrodnÃ¡, proto tu najdete mnoho selskÃ½ch usedlostÃ­, kde se pÄ›stujÃ­ zejmÃ©na tuÅ™Ã­ny a chovajÃ­ ovce."						); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Ji po celé generace patøí nejvìtší statek velkostatkáøi, kterı pak okolní pùdu pronajímá ostatním sedlákùm."						);
+					Doc_PrintLines	( nDocID,  1, "JiÅ¾ po celÃ© generace patÅ™Ã­ nejvÄ›tÅ¡Ã­ statek velkostatkÃ¡Å™i, kterÃ½ pak okolnÃ­ pÅ¯du pronajÃ­mÃ¡ ostatnÃ­m sedlÃ¡kÅ¯m."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Uprostøed ostrova stojí starobylı Innosùv klášter, kterı vedou mágové ohnì, ji zde provádìjí své magické a alchymistické vızkumy a také lisují víno."						);
+					Doc_PrintLines	( nDocID,  1, "UprostÅ™ed ostrova stojÃ­ starobylÃ½ InnosÅ¯v klÃ¡Å¡ter, kterÃ½ vedou mÃ¡govÃ© ohnÄ›, jiÅ¾ zde provÃ¡dÄ›jÃ­ svÃ© magickÃ© a alchymistickÃ© vÃ½zkumy a takÃ© lisujÃ­ vÃ­no."						);
 					
 					Doc_Show		( nDocID );
 					
@@ -109,7 +109,7 @@ FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
 };
 
 
-FUNC VOID Use_BookstandHistory3_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory3_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -126,26 +126,26 @@ FUNC VOID Use_BookstandHistory3_S1()		//Geschichtsbücher
 					Doc_SetFont 	( nDocID, -1, FONT_Book	   				); 	
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
-					Doc_PrintLine	( nDocID,  0, "Zákony ostrova"					);
+					Doc_PrintLine	( nDocID,  0, "ZÃ¡kony ostrova"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Všude, kde ije více lidí pohromadì, je nutné dodrovat urèitá pravidla pokojného souití - jak v klášteøe, tak ve mìstì èi na statku."						);
-					Doc_PrintLines	( nDocID,  0, "Všechny zloèiny proti komunitì budou potrestány."						);
-					Doc_PrintLines	( nDocID,  0, "Je zakázáno provokovat souboje nebo se zapojovat do rvaèek."						);
-					Doc_PrintLines	( nDocID,  0, "Kadá kráde je také zloèinem a pachatel ponese patøièné následky. I ovce jsou chránìny zákonem."						);
+					Doc_PrintLines	( nDocID,  0, "VÅ¡ude, kde Å¾ije vÃ­ce lidÃ­ pohromadÄ›, je nutnÃ© dodrÅ¾ovat urÄitÃ¡ pravidla pokojnÃ©ho souÅ¾itÃ­ - jak v klÃ¡Å¡teÅ™e, tak ve mÄ›stÄ› Äi na statku."						);
+					Doc_PrintLines	( nDocID,  0, "VÅ¡echny zloÄiny proti komunitÄ› budou potrestÃ¡ny."						);
+					Doc_PrintLines	( nDocID,  0, "Je zakÃ¡zÃ¡no provokovat souboje nebo se zapojovat do rvaÄek."						);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¾dÃ¡ krÃ¡deÅ¾ je takÃ© zloÄinem a pachatel ponese patÅ™iÄnÃ© nÃ¡sledky. I ovce jsou chrÃ¡nÄ›ny zÃ¡konem."						);
 					Doc_PrintLines	( nDocID,  0, " "						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pokud nìkdo zabije druhého, musí bıt za svùj èin souzen a odsouzen."						);
-					Doc_PrintLines	( nDocID,  1, "Jestli se chce vyhnout vìzení, musí zaplatit tuènou pokutu."						);
-					Doc_PrintLines	( nDocID,  1, "Na velkıch místech dbají o poøádek mui zákona. Doslechnou se o kadém zloèinu i pøestupku a jejich povinností je potrestat viníka a uèinit tak spravedlnosti zadost."						); 
-					Doc_PrintLines	( nDocID,  1, "Kadı, kdo se stane obìtí èi svìdkem zloèinu, nebude mít samozøejmì o pachateli dobré mínìní."						);
+					Doc_PrintLines	( nDocID,  1, "Pokud nÄ›kdo zabije druhÃ©ho, musÃ­ bÃ½t za svÅ¯j Äin souzen a odsouzen."						);
+					Doc_PrintLines	( nDocID,  1, "Jestli se chce vyhnout vÄ›zenÃ­, musÃ­ zaplatit tuÄnou pokutu."						);
+					Doc_PrintLines	( nDocID,  1, "Na velkÃ½ch mÃ­stech dbajÃ­ o poÅ™Ã¡dek muÅ¾i zÃ¡kona. Doslechnou se o kaÅ¾dÃ©m zloÄinu i pÅ™estupku a jejich povinnostÃ­ je potrestat vinÃ­ka a uÄinit tak spravedlnosti zadost."						); 
+					Doc_PrintLines	( nDocID,  1, "KaÅ¾dÃ½, kdo se stane obÄ›tÃ­ Äi svÄ›dkem zloÄinu, nebude mÃ­t samozÅ™ejmÄ› o pachateli dobrÃ© mÃ­nÄ›nÃ­."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Samozøejmì e existují tací, kteøí si se zákonem pøíliš hlavu nelámou - napøíklad bandité èi oldnéøi."						);
+					Doc_PrintLines	( nDocID,  1, "SamozÅ™ejmÄ› Å¾e existujÃ­ tacÃ­, kteÅ™Ã­ si se zÃ¡konem pÅ™Ã­liÅ¡ hlavu nelÃ¡mou - napÅ™Ã­klad banditÃ© Äi Å¾oldnÃ©Å™i."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
 					Doc_Show		( nDocID );

@@ -2,7 +2,7 @@
 PROTOTYPE Mst_Skeleton_Lord	(C_NPC)
 {
 	//----- Monster ----
-	name							=	"Pшнzraиnэ vбleиnнk";
+	name							=	"PЕ™Г­zraДЌnГЅ vГЎleДЌnГ­k";
 	guild							=	GIL_SKELETON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_SKELETON;
 	level							=	40;
@@ -84,7 +84,7 @@ INSTANCE Skeleton_Lord	(Mst_Skeleton_Lord)
 
 INSTANCE Crypt_Skeleton_Lord	(Mst_Skeleton_Lord)
 {
-	name		=	"Pшнzraиnэ pбn Inubis";
+	name		=	"PЕ™Г­zraДЌnГЅ pГЎn Inubis";
 
 	B_SetVisuals_Skeleton_Lord ();
 	
@@ -100,7 +100,7 @@ INSTANCE Crypt_Skeleton_Lord	(Mst_Skeleton_Lord)
 
 INSTANCE Skeleton_Lord_Archol	(Mst_Skeleton_Lord)
 {
-	name			=	"Pшнzraиnэ pбn Archol";
+	name			=	"PЕ™Г­zraДЌnГЅ pГЎn Archol";
 	level			=	60;
 
 	//----- Attribute ----	

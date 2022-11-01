@@ -50,20 +50,20 @@ func void DIA_Engardo_HALLO_Info ()
 	Akils_SLDStillthere = TRUE;
 	if (Chance == FALSE)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Hej, burane, ztratil ses? Vra se zpátky na pole a vytáhni tam nìjakı tuøíny.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_00"); //Hej, burane, ztratil ses? VraÅ¥ se zpÃ¡tky na pole a vytÃ¡hni tam nÄ›jakÃ½ tuÅ™Ã­ny.
 		Chance = 1;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 1) 
 	{	
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //Jsi ve špatnı èas na špatnym místì...
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //...take mám dojem, e jestli se chceš doít rána, mìl bys teï hned odsud pìknì vysmahnout, jasnı?
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_01"); //Jsi ve Å¡patnÃ½ Äas na Å¡patnym mÃ­stÄ›...
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_02"); //...takÅ¾e mÃ¡m dojem, Å¾e jestli se chceÅ¡ doÅ¾Ã­t rÃ¡na, mÄ›l bys teÄ hned odsud pÄ›knÄ› vysmahnout, jasnÃ½?
 		Chance = 2;
 		AI_StopProcessInfos (self);
 	}
 	else if (Chance == 2)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //Máš snad nìco s ušima? Nebo se chceš pozdravit se zubatou? (cynicky) Fajn, teï u je pozdì.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //MÃ¡Å¡ snad nÄ›co s uÅ¡ima? Nebo se chceÅ¡ pozdravit se zubatou? (cynicky) Fajn, teÄ uÅ¾ je pozdÄ›.
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_SuddenEnemyInferno, 1);

@@ -41,15 +41,15 @@ FUNC VOID DIA_Addon_10026_Wache_Hi_Info()
 	if (Sklaven_Flucht == FALSE)
 	{	
 		CreateInvItems (self, ItFo_Bacon,1);
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Smùla e máme tak málo otrokù. Musíme co nejdøív sehnat òákı další.
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Tihle chlapi u jsou úplnì oddìlanı. Nejspíš proto, e nemají co rát. (smìje se)
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//SmÅ¯la Å¾e mÃ¡me tak mÃ¡lo otrokÅ¯. MusÃ­me co nejdÅ™Ã­v sehnat ÅˆÃ¡kÃ½ dalÅ¡Ã­.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Tihle chlapi uÅ¾ jsou ÃºplnÄ› oddÄ›lanÃ½. NejspÃ­Å¡ proto, Å¾e nemajÃ­ co Å¾rÃ¡t. (smÄ›je se)
 		B_UseItem (self, ItFo_Bacon);
 		
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Ale radši bych poslal kopáèe zpátky do práce, ne abych tìm psùm dal kousek masa.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Ale radÅ¡i bych poslal kopÃ¡Äe zpÃ¡tky do prÃ¡ce, neÅ¾ abych tÄ›m psÅ¯m dal kousek masa.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Otroci jsou pryè – to je pech. No, nejspíš budeme muset znova zamìstnat kopáèe.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Otroci jsou pryÄ â€“ to je pech. No, nejspÃ­Å¡ budeme muset znova zamÄ›stnat kopÃ¡Äe.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_BDT_10026_Wache_Gruft   (C_INFO)
 	condition   = DIA_Addon_10026_Wache_Gruft_Condition;
 	information = DIA_Addon_10026_Wache_Gruft_Info;
 	permanent   = TRUE;
-	description = "Víš nìco o té hrobce?";
+	description = "VÃ­Å¡ nÄ›co o tÃ© hrobce?";
 };
 FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 {	
@@ -72,9 +72,9 @@ FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_10026_Wache_Gruft_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//Víš nìco o hrobce?
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//Jo, hrobku najdeš pøímo za touhle chodbou.
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//Staèí jít podél tìch mrtvol a jsi tam.
+	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//VÃ­Å¡ nÄ›co o hrobce?
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//Jo, hrobku najdeÅ¡ pÅ™Ã­mo za touhle chodbou.
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//StaÄÃ­ jÃ­t podÃ©l tÄ›ch mrtvol a jsi tam.
 };
 
 
