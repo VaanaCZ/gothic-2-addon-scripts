@@ -32,7 +32,7 @@ instance DIA_Till_HALLO		(C_INFO)
 	condition	 = 	DIA_Till_HALLO_Condition;
 	information	 = 	DIA_Till_HALLO_Info;
 
-	description	 = 	"Hej, m³ody, wszystko gra?";
+	description	 = 	"Hej, mÅ‚ody, wszystko gra?";
 };
 
 func int DIA_Till_HALLO_Condition ()
@@ -45,8 +45,8 @@ func int DIA_Till_HALLO_Condition ()
 
 func void DIA_Till_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_HALLO_15_00"); //Hej, m³ody, wszystko gra?
-	AI_Output			(self, other, "DIA_Till_HALLO_03_01"); //Ile razy mam wam powtarzaæ, ¿e pomocnicy powinni siê do mnie zwracaæ z szacunkiem?!
+	AI_Output			(other, self, "DIA_Till_HALLO_15_00"); //Hej, mÅ‚ody, wszystko gra?
+	AI_Output			(self, other, "DIA_Till_HALLO_03_01"); //Ile razy mam wam powtarzaÄ‡, Å¼e pomocnicy powinni siÄ™ do mnie zwracaÄ‡ z szacunkiem?!
 	B_StartOtherRoutine (Till,"Start"); 
 
 	Info_ClearChoices	(DIA_Till_HALLO);
@@ -57,16 +57,16 @@ func void DIA_Till_HALLO_Info ()
 	
 		if (Npc_IsDead(Sekob)== FALSE)
 		{
-			Info_AddChoice	(DIA_Till_HALLO, "Ty tu jesteœ szefem?", DIA_Till_HALLO_selber );
+			Info_AddChoice	(DIA_Till_HALLO, "Ty tu jesteÅ› szefem?", DIA_Till_HALLO_selber );
 		};
 	};
 };
 
 func void DIA_Till_HALLO_selber ()
 {
-	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_00"); //Ty tu jesteœ szefem?
-	AI_Output			(self, other, "DIA_Till_HALLO_selber_03_01"); //Ech. Nie, jestem tylko synem Sekoba. Ale kiedy tylko staruszek wyci¹gnie kopyta, to wszystko bêdzie nale¿a³o do mnie.
-	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_02"); //Zadziwiaj¹ce!
+	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_00"); //Ty tu jesteÅ› szefem?
+	AI_Output			(self, other, "DIA_Till_HALLO_selber_03_01"); //Ech. Nie, jestem tylko synem Sekoba. Ale kiedy tylko staruszek wyciÄ…gnie kopyta, to wszystko bÄ™dzie naleÅ¼aÅ‚o do mnie.
+	AI_Output			(other, self, "DIA_Till_HALLO_selber_15_02"); //ZadziwiajÄ…ce!
 
 	Info_ClearChoices	(DIA_Till_HALLO);
 };
@@ -74,7 +74,7 @@ func void DIA_Till_HALLO_selber ()
 func void DIA_Till_HALLO_keinervoneuch ()
 {
 	AI_Output			(other, self, "DIA_Till_HALLO_keinervoneuch_15_00"); //Nie jestem pomocnikiem.
-	AI_Output			(self, other, "DIA_Till_HALLO_keinervoneuch_03_01"); //To po co tu przyszed³eœ? Nic nam ju¿ nie zosta³o, nie masz tu czego szukaæ.
+	AI_Output			(self, other, "DIA_Till_HALLO_keinervoneuch_03_01"); //To po co tu przyszedÅ‚eÅ›? Nic nam juÅ¼ nie zostaÅ‚o, nie masz tu czego szukaÄ‡.
 
 	Info_ClearChoices	(DIA_Till_HALLO);
 };
@@ -90,7 +90,7 @@ instance DIA_Till_FELDARBEITER		(C_INFO)
 	condition	 = 	DIA_Till_FELDARBEITER_Condition;
 	information	 = 	DIA_Till_FELDARBEITER_Info;
 
-	description	 = 	"Zawsze w ten sposób traktujesz swoich pracowników?";
+	description	 = 	"Zawsze w ten sposÃ³b traktujesz swoich pracownikÃ³w?";
 };
 
 func int DIA_Till_FELDARBEITER_Condition ()
@@ -104,8 +104,8 @@ func int DIA_Till_FELDARBEITER_Condition ()
 
 func void DIA_Till_FELDARBEITER_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_FELDARBEITER_15_00"); //Zawsze w ten sposób traktujesz swoich pracowników?
-	AI_Output			(self, other, "DIA_Till_FELDARBEITER_03_01"); //Oczywiœcie - i dobrze im to robi. Musz¹ znaæ swoje miejsce.
+	AI_Output			(other, self, "DIA_Till_FELDARBEITER_15_00"); //Zawsze w ten sposÃ³b traktujesz swoich pracownikÃ³w?
+	AI_Output			(self, other, "DIA_Till_FELDARBEITER_03_01"); //OczywiÅ›cie - i dobrze im to robi. MuszÄ… znaÄ‡ swoje miejsce.
 
 };
 
@@ -120,7 +120,7 @@ instance DIA_Till_SEKOB		(C_INFO)
 	condition	 = 	DIA_Till_SEKOB_Condition;
 	information	 = 	DIA_Till_SEKOB_Info;
 
-	description	 = 	"Muszê porozmawiaæ z twoim ojcem.";
+	description	 = 	"MuszÄ™ porozmawiaÄ‡ z twoim ojcem.";
 };
 
 func int DIA_Till_SEKOB_Condition ()
@@ -138,13 +138,13 @@ func int DIA_Till_SEKOB_Condition ()
 
 func void DIA_Till_SEKOB_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_SEKOB_15_00"); //Muszê porozmawiaæ z twoim ojcem.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_01"); //Ojciec nie ma czasu. Ja mogê ciê wys³uchaæ w jego imieniu. Jak mogê ci pomóc?
+	AI_Output			(other, self, "DIA_Till_SEKOB_15_00"); //MuszÄ™ porozmawiaÄ‡ z twoim ojcem.
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_01"); //Ojciec nie ma czasu. Ja mogÄ™ ciÄ™ wysÅ‚uchaÄ‡ w jego imieniu. Jak mogÄ™ ci pomÃ³c?
 	AI_Output			(other, self, "DIA_Till_SEKOB_15_02"); //Przedstaw mnie swojemu ojcu.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_03"); //Twardziel z ciebie, i pewnie niez³y wojownik, co?
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_03"); //Twardziel z ciebie, i pewnie niezÅ‚y wojownik, co?
 	AI_Output			(other, self, "DIA_Till_SEKOB_15_04"); //Najlepszy.
-	AI_Output			(self, other, "DIA_Till_SEKOB_03_05"); //Mo¿e w takim razie zawo³am ojca.
-	AI_Output			(other, self, "DIA_Till_SEKOB_15_06"); //Nie k³opocz siê ch³opcze. Sam go znajdê.
+	AI_Output			(self, other, "DIA_Till_SEKOB_03_05"); //MoÅ¼e w takim razie zawoÅ‚am ojca.
+	AI_Output			(other, self, "DIA_Till_SEKOB_15_06"); //Nie kÅ‚opocz siÄ™ chÅ‚opcze. Sam go znajdÄ™.
 	AI_Output			(self, other, "DIA_Till_SEKOB_03_07"); //Jak chcesz.
 	
 	AI_StopProcessInfos (self);
@@ -160,7 +160,7 @@ instance DIA_Till_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Till_WASMACHSTDU_Condition;
 	information	 = 	DIA_Till_WASMACHSTDU_Info;
 
-	description	 = 	"Co mo¿esz zrobiæ?";
+	description	 = 	"Co moÅ¼esz zrobiÄ‡?";
 };
 
 func int DIA_Till_WASMACHSTDU_Condition ()
@@ -175,12 +175,12 @@ func int DIA_Till_WASMACHSTDU_Condition ()
 
 func void DIA_Till_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_00"); //Co porabiasz, kiedy znudzi ci siê odgrywanie pana i w³adcy na farmie?
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_01"); //Stojê na stra¿y.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_02"); //Ci zafajdani stra¿nicy z miasta coraz czêœciej pojawiaj¹ siê na farmie i kradn¹, co tylko wpadnie im w ³apska.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_03"); //Tylko w ci¹gu ostatniego tygodnia te dranie zabra³y nam kilka owiec.
-	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_04"); //Gdybym dorwa³ któregoœ z nich, dopiero bym mu pokaza³!
-	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_05"); //Z pewnoœci¹!
+	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_00"); //Co porabiasz, kiedy znudzi ci siÄ™ odgrywanie pana i wÅ‚adcy na farmie?
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_01"); //StojÄ™ na straÅ¼y.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_02"); //Ci zafajdani straÅ¼nicy z miasta coraz czÄ™Å›ciej pojawiajÄ… siÄ™ na farmie i kradnÄ…, co tylko wpadnie im w Å‚apska.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_03"); //Tylko w ciÄ…gu ostatniego tygodnia te dranie zabraÅ‚y nam kilka owiec.
+	AI_Output			(self, other, "DIA_Till_WASMACHSTDU_03_04"); //Gdybym dorwaÅ‚ ktÃ³regoÅ› z nich, dopiero bym mu pokazaÅ‚!
+	AI_Output			(other, self, "DIA_Till_WASMACHSTDU_15_05"); //Z pewnoÅ›ciÄ…!
 
 };
 
@@ -194,7 +194,7 @@ instance DIA_Till_WARUMNICHTSLD		(C_INFO)
 	condition	 = 	DIA_Till_WARUMNICHTSLD_Condition;
 	information	 = 	DIA_Till_WARUMNICHTSLD_Info;
 
-	description	 = 	"Dlaczego najemnicy nie pomagaj¹ w walce ze stra¿nikami?";
+	description	 = 	"Dlaczego najemnicy nie pomagajÄ… w walce ze straÅ¼nikami?";
 };
 
 func int DIA_Till_WARUMNICHTSLD_Condition ()
@@ -209,8 +209,8 @@ func int DIA_Till_WARUMNICHTSLD_Condition ()
 
 func void DIA_Till_WARUMNICHTSLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_WARUMNICHTSLD_15_00"); //Dlaczego najemnicy nie pomagaj¹ w walce ze stra¿nikami?
-	AI_Output			(self, other, "DIA_Till_WARUMNICHTSLD_03_01"); //Zanim siê rozgrzej¹, ja ju¿ wszystkich przepêdzam.
+	AI_Output			(other, self, "DIA_Till_WARUMNICHTSLD_15_00"); //Dlaczego najemnicy nie pomagajÄ… w walce ze straÅ¼nikami?
+	AI_Output			(self, other, "DIA_Till_WARUMNICHTSLD_03_01"); //Zanim siÄ™ rozgrzejÄ…, ja juÅ¼ wszystkich przepÄ™dzam.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -240,15 +240,15 @@ func int DIA_Till_BRONKO_Condition ()
 
 func void DIA_Till_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKO_15_00"); //Jest tu pewien cz³owiek, który pobiera myto od podró¿nych, twierdzi, ¿e to ON jest farmerem.
+	AI_Output			(other, self, "DIA_Till_BRONKO_15_00"); //Jest tu pewien czÅ‚owiek, ktÃ³ry pobiera myto od podrÃ³Å¼nych, twierdzi, Å¼e to ON jest farmerem.
 	AI_Output			(self, other, "DIA_Till_BRONKO_03_01"); //Ech. Tak, wiem. To Bronko. Robi, co chce.
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_02"); //Tyle razy mu powtarza³em, ¿e powinien wzi¹æ siê do roboty.
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_02"); //Tyle razy mu powtarzaÅ‚em, Å¼e powinien wziÄ…Ä‡ siÄ™ do roboty.
 	AI_Output			(other, self, "DIA_Till_BRONKO_15_03"); //Ale?
-	AI_Output			(self, other, "DIA_Till_BRONKO_03_04"); //Po prostu mnie nie s³ucha.
+	AI_Output			(self, other, "DIA_Till_BRONKO_03_04"); //Po prostu mnie nie sÅ‚ucha.
 	
 	if (Npc_IsDead(Sekob)== FALSE)
 	{
-		AI_Output			(self, other, "DIA_Till_BRONKO_03_05"); //Ojciec denerwuje siê na mnie, ¿e nie zdo³a³em zmusiæ tego obiboka do roboty.
+		AI_Output			(self, other, "DIA_Till_BRONKO_03_05"); //Ojciec denerwuje siÄ™ na mnie, Å¼e nie zdoÅ‚aÅ‚em zmusiÄ‡ tego obiboka do roboty.
 	};
 };
 
@@ -264,7 +264,7 @@ instance DIA_Till_BRONKOZURARBEIT		(C_INFO)
 	information	 = 	DIA_Till_BRONKOZURARBEIT_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Chyba bêdê móg³ ci pomóc.";
+	description	 = 	"Chyba bÄ™dÄ™ mÃ³gÅ‚ ci pomÃ³c.";
 };
 
 var int DIA_Till_BRONKOZURARBEIT_noPerm;
@@ -283,22 +283,22 @@ func int DIA_Till_BRONKOZURARBEIT_Condition ()
 
 func void DIA_Till_BRONKOZURARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_15_00"); //Mo¿e ja móg³bym pomóc?
-	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_03_01"); //Mówisz powa¿nie? W porz¹dku, pos³uchaj, zagoñ Bronka do pracy, a zap³acê ci 10 sztuk z³ota. Co ty na to?
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_15_00"); //MoÅ¼e ja mÃ³gÅ‚bym pomÃ³c?
+	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_03_01"); //MÃ³wisz powaÅ¼nie? W porzÄ…dku, posÅ‚uchaj, zagoÅ„ Bronka do pracy, a zapÅ‚acÄ™ ci 10 sztuk zÅ‚ota. Co ty na to?
 
 	Till_Angebot = 10;
 
 	Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Nie ma sprawy. Ale bêdziesz musia³ zap³aciæ wiêcej.", DIA_Till_BRONKOZURARBEIT_mehr );
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porz¹dku, zobaczê, co da siê zrobiæ.", DIA_Till_BRONKOZURARBEIT_ok );
-	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Muszê siê zastanowiæ.", DIA_Till_BRONKOZURARBEIT_nochnicht );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Nie ma sprawy. Ale bÄ™dziesz musiaÅ‚ zapÅ‚aciÄ‡ wiÄ™cej.", DIA_Till_BRONKOZURARBEIT_mehr );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Till_BRONKOZURARBEIT_ok );
+	Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "MuszÄ™ siÄ™ zastanowiÄ‡.", DIA_Till_BRONKOZURARBEIT_nochnicht );
 
 };
 
 func void DIA_Till_BRONKOZURARBEIT_nochnicht ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_nochnicht_15_00"); //Pomyœlê o tym.
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_nochnicht_15_00"); //PomyÅ›lÄ™ o tym.
 	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_nochnicht_03_01"); //Jak chcesz.
 
 	Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
@@ -307,15 +307,15 @@ func void DIA_Till_BRONKOZURARBEIT_nochnicht ()
 
 func void DIA_Till_BRONKOZURARBEIT_ok ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_ok_15_00"); //W porz¹dku, zobaczê, co da siê zrobiæ.
-	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_ok_03_01"); //Poœpiesz siê.
+	AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_ok_15_00"); //W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.
+	AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_ok_03_01"); //PoÅ›piesz siÄ™.
 	
 	DIA_Till_BRONKOZURARBEIT_noPerm = TRUE;
 	MIS_Sekob_Bronko_eingeschuechtert = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Bronkoeingeschuechtert, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Bronkoeingeschuechtert, LOG_RUNNING);
-	B_LogEntry (TOPIC_Bronkoeingeschuechtert,"Till nie mo¿e zagoniæ Bronka do roboty, wiêc prosi mnie o pomoc w tej sprawie."); 
+	B_LogEntry (TOPIC_Bronkoeingeschuechtert,"Till nie moÅ¼e zagoniÄ‡ Bronka do roboty, wiÄ™c prosi mnie o pomoc w tej sprawie."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -324,53 +324,53 @@ func void DIA_Till_BRONKOZURARBEIT_mehr ()
 {
 	if (Till_IchMachsNurEinmal == TRUE)
 		{
-			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_00"); //Chcê wiêcej.
+			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_00"); //ChcÄ™ wiÄ™cej.
 		}
 	else
 		{
-			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_01"); //Nie ma sprawy. Ale bêdziesz musia³ zap³aciæ wiêcej.
+			AI_Output			(other, self, "DIA_Till_BRONKOZURARBEIT_mehr_15_01"); //Nie ma sprawy. Ale bÄ™dziesz musiaÅ‚ zapÅ‚aciÄ‡ wiÄ™cej.
 			Till_IchMachsNurEinmal = TRUE;
 		};
 
 	 if (Till_Angebot == 10)
 	 	{
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_02"); //W porz¹dku. 20 sztuk z³ota.
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_02"); //W porzÄ…dku. 20 sztuk zÅ‚ota.
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Chcê wiêcej.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porz¹dku, zobaczê, co da siê zrobiæ.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "ChcÄ™ wiÄ™cej.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Till_BRONKOZURARBEIT_ok );
 			Till_Angebot = 20;
 		}
 	 else if (Till_Angebot == 20)
 		{
 			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_03"); //30?
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Chcê wiêcej.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porz¹dku, zobaczê, co da siê zrobiæ.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "ChcÄ™ wiÄ™cej.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Till_BRONKOZURARBEIT_ok );
 			Till_Angebot = 30;
 		}
 	 else if (Till_Angebot == 30)
 		{	
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_04"); //Mo¿e... 50?
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_04"); //MoÅ¼e... 50?
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Chcê wiêcej.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porz¹dku, zobaczê, co da siê zrobiæ.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "ChcÄ™ wiÄ™cej.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Till_BRONKOZURARBEIT_ok );
 			Till_Angebot = 50;
 		}
 	 else if (Till_Angebot == 50)
 		{	
 			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_05"); //Dobrze. 70?
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "Chcê wiêcej.", DIA_Till_BRONKOZURARBEIT_mehr );
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porz¹dku, zobaczê, co da siê zrobiæ.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "ChcÄ™ wiÄ™cej.", DIA_Till_BRONKOZURARBEIT_mehr );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Till_BRONKOZURARBEIT_ok );
 		Till_Angebot = 70;
 		}
 	 else if (Till_Angebot == 70)
 		{	
 	
-			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_06"); //Dobra ju¿, dobra. Niech bêdzie 100 sztuk z³ota. To wszystko, co mam.
+			AI_Output			(self, other, "DIA_Till_BRONKOZURARBEIT_mehr_03_06"); //Dobra juÅ¼, dobra. Niech bÄ™dzie 100 sztuk zÅ‚ota. To wszystko, co mam.
 			Info_ClearChoices	(DIA_Till_BRONKOZURARBEIT);
 
-			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porz¹dku, zobaczê, co da siê zrobiæ.", DIA_Till_BRONKOZURARBEIT_ok );
+			Info_AddChoice	(DIA_Till_BRONKOZURARBEIT, "W porzÄ…dku, zobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Till_BRONKOZURARBEIT_ok );
 
 			Till_Angebot = 100;
 		};
@@ -386,7 +386,7 @@ instance DIA_Till_BRONKOWIEDERANARBEIT		(C_INFO)
 	condition	 = 	DIA_Till_BRONKOWIEDERANARBEIT_Condition;
 	information	 = 	DIA_Till_BRONKOWIEDERANARBEIT_Info;
 
-	description	 = 	"Bronko wróci³ do pracy.";
+	description	 = 	"Bronko wrÃ³ciÅ‚ do pracy.";
 };
 
 func int DIA_Till_BRONKOWIEDERANARBEIT_Condition ()
@@ -403,22 +403,22 @@ func int DIA_Till_BRONKOWIEDERANARBEIT_Condition ()
 
 func void DIA_Till_BRONKOWIEDERANARBEIT_Info ()
 {
-	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_00"); //Bronko wróci³ do pracy.
-	AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_01"); //Naprawdê? To wspaniale.
-	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_02"); //Tak. A teraz mi zap³aæ.
+	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_00"); //Bronko wrÃ³ciÅ‚ do pracy.
+	AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_01"); //NaprawdÄ™? To wspaniale.
+	AI_Output			(other, self, "DIA_Till_BRONKOWIEDERANARBEIT_15_02"); //Tak. A teraz mi zapÅ‚aÄ‡.
 	
 	IntToFloat	(Till_Angebot);
 	
 	if (Till_Angebot <= 50)
 		{
-			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_03"); //Mmh. Có¿, umowa to umowa, nie mam racji?
+			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_03"); //Mmh. CÃ³Å¼, umowa to umowa, nie mam racji?
 
 			CreateInvItems (self, ItMi_Gold, Till_Angebot);									
 			B_GiveInvItems (self, other, ItMi_Gold, Till_Angebot);
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_04"); //Niestety, nie mam tyle pieniêdzy. Jestem ci jednak bardzo wdziêczny.
+			AI_Output			(self, other, "DIA_Till_BRONKOWIEDERANARBEIT_03_04"); //Niestety, nie mam tyle pieniÄ™dzy. Jestem ci jednak bardzo wdziÄ™czny.
 
 			Till_HatSeinGeldBehalten = TRUE;
 		};
@@ -459,11 +459,11 @@ func void DIA_Till_PERMKAP1_Info ()
 			if (MIS_bringRosiBackToSekob != LOG_SUCCESS)
 			&& (Rosi_FleeFromSekob_Kap5 == TRUE)
 			{
-				AI_Output			(other, self, "DIA_Till_PERMKAP1_15_00"); //Daleko od domu, co? Tutaj tatuœ ci nie pomo¿e.
-				AI_Output			(self, other, "DIA_Till_PERMKAP1_03_01"); //Któregoœ dnia ciê dorwê i porozmawiamy inaczej.
+				AI_Output			(other, self, "DIA_Till_PERMKAP1_15_00"); //Daleko od domu, co? Tutaj tatuÅ› ci nie pomoÅ¼e.
+				AI_Output			(self, other, "DIA_Till_PERMKAP1_03_01"); //KtÃ³regoÅ› dnia ciÄ™ dorwÄ™ i porozmawiamy inaczej.
 			};
 			
-			AI_Output			(other, self, "DIA_Till_PERMKAP1_15_02"); //Ciesz siê, ¿e wyszed³eœ ca³o z tego spotkania.
+			AI_Output			(other, self, "DIA_Till_PERMKAP1_15_02"); //Ciesz siÄ™, Å¼e wyszedÅ‚eÅ› caÅ‚o z tego spotkania.
 			AI_Output			(self, other, "DIA_Till_PERMKAP1_03_03"); //W takim razie, zostaw mnie w spokoju.
 			AI_StopProcessInfos (self);	
 		}
@@ -471,21 +471,21 @@ func void DIA_Till_PERMKAP1_Info ()
 		{		
 			if 	(self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 				{
-					AI_Output			(other, self, "DIA_Till_PERMKAP1_15_04"); //Mo¿e powinieneœ wiêcej jeœæ, wtedy wyroœniesz na du¿ego, silnego mê¿czyznê.
-					AI_Output			(self, other, "DIA_Till_PERMKAP1_03_05"); //Któregoœ dnia ci poka¿ê.
+					AI_Output			(other, self, "DIA_Till_PERMKAP1_15_04"); //MoÅ¼e powinieneÅ› wiÄ™cej jeÅ›Ä‡, wtedy wyroÅ›niesz na duÅ¼ego, silnego mÄ™Å¼czyznÄ™.
+					AI_Output			(self, other, "DIA_Till_PERMKAP1_03_05"); //KtÃ³regoÅ› dnia ci pokaÅ¼Ä™.
 					AI_StopProcessInfos (self);
 				}
 			else
 				{
 					if (Till_HatSeinGeldBehalten == TRUE)
 						{
-							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_06"); //Ty parszywy, ma³y...
-							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_07"); //Wynoœ siê.
+							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_06"); //Ty parszywy, maÅ‚y...
+							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_07"); //WynoÅ› siÄ™.
 							AI_StopProcessInfos (self);
 						}			
 					else
 						{
-							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_08"); //Wyciera³ ci ju¿ ktoœ dzisiaj nosek?
+							AI_Output			(other, self, "DIA_Till_PERMKAP1_15_08"); //WycieraÅ‚ ci juÅ¼ ktoÅ› dzisiaj nosek?
 							AI_Output			(self, other, "DIA_Till_PERMKAP1_03_09"); //Zostaw mnie w spokoju, idioto.
 						};
 				};

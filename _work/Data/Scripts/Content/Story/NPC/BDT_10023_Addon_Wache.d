@@ -1,7 +1,7 @@
 instance BDT_10023_Addon_Wache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Straønik niewolnikÛw";
+	name 		= "Stra≈ºnik niewolnik√≥w";
 	guild 		= GIL_BDT;
 	id 			= 10023;
 	voice 		= 11;

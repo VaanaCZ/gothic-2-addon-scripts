@@ -50,7 +50,7 @@ INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Tekstury";
-	text[1]		= 	"Wybór iloœci detali na teksturach"; // Kommentar
+	text[1]		= 	"WybÃ³r iloÅ›ci detali na teksturach"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -85,7 +85,7 @@ INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Modele";
-	text[1]		= 	"Wybór iloœci detali na modelach"; // Kommentar
+	text[1]		= 	"WybÃ³r iloÅ›ci detali na modelach"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -121,8 +121,8 @@ instance MENUITEM_GRA_MODEL_DETAIL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Zasiêg widzenia";
-	text[1]		= "Wybór zasiêgu widzenia, w procentach"; // Kommentar
+	text[0]		= "ZasiÄ™g widzenia";
+	text[1]		= "WybÃ³r zasiÄ™gu widzenia, w procentach"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3800;	dimy		=	750;
@@ -153,8 +153,8 @@ INSTANCE MENUITEM_GRA_SIGHT_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_VOB_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Zanikanie obiektów";
-	text[1]		= "Wybór zasiêgu, z jakiego widoczne bêd¹ obiekty"; // Kommentar
+	text[0]		= "Zanikanie obiektÃ³w";
+	text[1]		= "WybÃ³r zasiÄ™gu, z jakiego widoczne bÄ™dÄ… obiekty"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3900;	dimy		=	750;
@@ -191,7 +191,7 @@ INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Niebo";
-	text[1]		= 	"W³¹czenie/wy³¹czenie dodatkowych efektów nieba"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie dodatkowych efektÃ³w nieba"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3800;	dimy		=	750;
@@ -223,7 +223,7 @@ instance MENUITEM_GRA_SKY_EFFECTS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wróæ";
+	text[0]		=	"WrÃ³Ä‡";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y + 300;
 	dimx		=	6192;		dimy		=	MENU_DY;

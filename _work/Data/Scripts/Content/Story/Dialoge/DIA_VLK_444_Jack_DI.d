@@ -48,9 +48,9 @@ func void DIA_Jack_DI_GREET_Info ()
 {
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //Mam nadziejê, ¿e wiesz, co robisz, ch³opcze.
-		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //To nie potrwa d³ugo.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Miej g³owê na karku i wracaj ca³y, i zdrowy.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_00"); //Mam nadziejÄ™, Å¼e wiesz, co robisz, chÅ‚opcze.
+		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_01"); //To nie potrwa dÅ‚ugo.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_02"); //Miej gÅ‚owÄ™ na karku i wracaj caÅ‚y, i zdrowy.
 		AI_StopProcessInfos (self);
 	}
 	else
@@ -62,9 +62,9 @@ func void DIA_Jack_DI_GREET_Info ()
 			DIA_Jack_DI_GREET_OneTime = TRUE;
 		};
 
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //Jeœli znowu rozpêta siê tu takie piek³o, wyprowadzê st¹d statek. Z tob¹ czy bez ciebie! Jasne?
-		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //Spokojnie. Poradzê sobie.
-		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //No to lepiej siê poœpiesz.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_04"); //JeÅ›li znowu rozpÄ™ta siÄ™ tu takie piekÅ‚o, wyprowadzÄ™ stÄ…d statek. Z tobÄ… czy bez ciebie! Jasne?
+		AI_Output			(other ,self, "DIA_Jack_DI_GREET_15_05"); //Spokojnie. PoradzÄ™ sobie.
+		AI_Output			(self ,other, "DIA_Jack_DI_GREET_14_06"); //No to lepiej siÄ™ poÅ›piesz.
 		AI_StopProcessInfos (self);
 		Npc_ExchangeRoutine	(self,"Start");	
 	};
@@ -81,7 +81,7 @@ instance DIA_Jack_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jack_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Zrobione! Wróg pokonany.";
+	description = 	"Zrobione! WrÃ³g pokonany.";
 
 };
 
@@ -94,19 +94,19 @@ func int DIA_Jack_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jack_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //Zrobione! Wróg pokonany.
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //Mia³em nadziejê, ¿e wszystko jakoœ siê u³o¿y, ale przez ostatnie parê godzin trochê w to zw¹tpi³em.
-	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //Mo¿emy wreszcie ruszaæ w drogê?
+	AI_Output			(other ,self, "DIA_Jack_DI_UndeadDragonDead_15_00"); //Zrobione! WrÃ³g pokonany.
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_01"); //MiaÅ‚em nadziejÄ™, Å¼e wszystko jakoÅ› siÄ™ uÅ‚oÅ¼y, ale przez ostatnie parÄ™ godzin trochÄ™ w to zwÄ…tpiÅ‚em.
+	AI_Output			(self ,other, "DIA_Jack_DI_UndeadDragonDead_14_02"); //MoÅ¼emy wreszcie ruszaÄ‡ w drogÄ™?
 
 	Info_ClearChoices	(DIA_Jack_DI_UndeadDragonDead);
-	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Chwileczkê...", DIA_Jack_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Tak. Skoñczmy to wreszcie.", DIA_Jack_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "ChwileczkÄ™...", DIA_Jack_DI_UndeadDragonDead_moment );
+	Info_AddChoice	(DIA_Jack_DI_UndeadDragonDead, "Tak. SkoÅ„czmy to wreszcie.", DIA_Jack_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jack_DI_UndeadDragonDead_moment ()
 {
-	AI_Output			(other, self, "DIA_Jack_DI_UndeadDragonDead_moment_15_00"); //Jeszcze chwila. Muszê najpierw coœ za³atwiæ.
-	AI_Output			(self, other, "DIA_Jack_DI_UndeadDragonDead_moment_14_01"); //Tylko siê poœpiesz. Nie chcê tu zapuœciæ korzeni.
+	AI_Output			(other, self, "DIA_Jack_DI_UndeadDragonDead_moment_15_00"); //Jeszcze chwila. MuszÄ™ najpierw coÅ› zaÅ‚atwiÄ‡.
+	AI_Output			(self, other, "DIA_Jack_DI_UndeadDragonDead_moment_14_01"); //Tylko siÄ™ poÅ›piesz. Nie chcÄ™ tu zapuÅ›ciÄ‡ korzeni.
 	AI_StopProcessInfos (self);
 };
 

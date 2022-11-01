@@ -44,7 +44,7 @@ func int DIA_Mortis_Hallo_Condition ()
 };
 func void DIA_Mortis_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Mortis_Hallo_13_00"); //Czego chcesz? Pecka tu nie ma, wiêc nic nie wskórasz. PrzyjdŸ póŸniej.
+	AI_Output (self, other, "DIA_Mortis_Hallo_13_00"); //Czego chcesz? Pecka tu nie ma, wiÄ™c nic nie wskÃ³rasz. PrzyjdÅº pÃ³Åºniej.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -72,8 +72,8 @@ func int DIA_Mortis_Waffe_Condition ()
 func void DIA_Mortis_Waffe_Info ()
 {
 	AI_Output (other, self, "DIA_Mortis_Waffe_15_00"); //Gdzie jest Peck?
-	AI_Output (self, other, "DIA_Mortis_Waffe_13_01"); //W³aœnie siê do nas przy³¹czy³eœ, prawda? A zatem witam w dru¿ynie.
-	AI_Output (self, other, "DIA_Mortis_Waffe_13_02"); //Peck strasznie d³ugo zabawi³ w mieœcie. Za³o¿ê siê, ¿e ma spotkanie z t¹ s³odk¹ Vanj¹ z Czerwonej Latarni.
+	AI_Output (self, other, "DIA_Mortis_Waffe_13_01"); //WÅ‚aÅ›nie siÄ™ do nas przyÅ‚Ä…czyÅ‚eÅ›, prawda? A zatem witam w druÅ¼ynie.
+	AI_Output (self, other, "DIA_Mortis_Waffe_13_02"); //Peck strasznie dÅ‚ugo zabawiÅ‚ w mieÅ›cie. ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e ma spotkanie z tÄ… sÅ‚odkÄ… VanjÄ… z Czerwonej Latarni.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Paket
@@ -98,11 +98,11 @@ func int DIA_Mortis_Paket_Condition ()
 func void DIA_Mortis_Paket_Info ()
 {
 	AI_Output (other, self, "DIA_Mortis_Paket_15_00"); //Co wiesz na temat pewnej paczki z zielem?
-	AI_Output (self, other, "DIA_Mortis_Paket_13_01"); //Hmmm... Ostatnio s³ysza³em w tawernie portowej, jak Kardif rozmawia³ o niej z jakimœ innym mê¿czyzn¹.
-	AI_Output (other, self, "DIA_Mortis_Paket_15_02"); //Kim by³ ten drugi?
-	AI_Output (self, other, "DIA_Mortis_Paket_13_03"); //Nie mam pojêcia. Powiedzia³ tylko, ¿e znalaz³ najlepsz¹ mo¿liw¹ kryjówkê na ziele - a potem obaj zaczêli siê œmiaæ niczym pijani orkowie.
+	AI_Output (self, other, "DIA_Mortis_Paket_13_01"); //Hmmm... Ostatnio sÅ‚yszaÅ‚em w tawernie portowej, jak Kardif rozmawiaÅ‚ o niej z jakimÅ› innym mÄ™Å¼czyznÄ….
+	AI_Output (other, self, "DIA_Mortis_Paket_15_02"); //Kim byÅ‚ ten drugi?
+	AI_Output (self, other, "DIA_Mortis_Paket_13_03"); //Nie mam pojÄ™cia. PowiedziaÅ‚ tylko, Å¼e znalazÅ‚ najlepszÄ… moÅ¼liwÄ… kryjÃ³wkÄ™ na ziele - a potem obaj zaczÄ™li siÄ™ Å›miaÄ‡ niczym pijani orkowie.
 	
-	B_LogEntry (TOPIC_WAREHOUSE,"Mortis pods³ucha³ w portowej knajpie rozmowê Kardifa z jakimœ innym mê¿czyzn¹. Zastanawiali siê, gdzie ukryæ paczkê.");
+	B_LogEntry (TOPIC_WAREHOUSE,"Mortis podsÅ‚uchaÅ‚ w portowej knajpie rozmowÄ™ Kardifa z jakimÅ› innym mÄ™Å¼czyznÄ…. Zastanawiali siÄ™, gdzie ukryÄ‡ paczkÄ™.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Redlight
@@ -114,7 +114,7 @@ instance DIA_Mortis_Redlight		(C_INFO)
 	condition	 = 	DIA_Mortis_Redlight_Condition;
 	information	 = 	DIA_Mortis_Redlight_Info;
 	permanent    =  FALSE;
-	description  =  "Co mo¿esz mi powiedzieæ o dzielnicy portowej?";
+	description  =  "Co moÅ¼esz mi powiedzieÄ‡ o dzielnicy portowej?";
 };
 
 func int DIA_Mortis_Redlight_Condition ()
@@ -126,13 +126,13 @@ func int DIA_Mortis_Redlight_Condition ()
 };
 func void DIA_Mortis_Redlight_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Redlight_15_00"); //Co wiesz na temat dzielnicy portowej? Muszê dotrzeæ do cz³owieka, który sprzedaje ziele bagienne.
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_01"); //Widzisz, ci faceci na dole nie s¹ specjalnie gadatliwi, a ju¿ na pewno nie powiedz¹ nic stra¿nikowi miejskiemu.
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_02"); //Jeœli chcesz siê czegoœ dowiedzieæ tam na dole, to musisz zdj¹æ zbrojê.
+	AI_Output (other, self, "DIA_Mortis_Redlight_15_00"); //Co wiesz na temat dzielnicy portowej? MuszÄ™ dotrzeÄ‡ do czÅ‚owieka, ktÃ³ry sprzedaje ziele bagienne.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_01"); //Widzisz, ci faceci na dole nie sÄ… specjalnie gadatliwi, a juÅ¼ na pewno nie powiedzÄ… nic straÅ¼nikowi miejskiemu.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_02"); //JeÅ›li chcesz siÄ™ czegoÅ› dowiedzieÄ‡ tam na dole, to musisz zdjÄ…Ä‡ zbrojÄ™.
 	AI_Output (other, self, "DIA_Mortis_Redlight_15_03"); //No dobrze, a potem?
-	AI_Output (self, other, "DIA_Mortis_Redlight_13_04"); //Tawerna i burdel to dwa miejsca, gdzie mo¿esz zdobyæ informacje. Innymi s³owy, jeœli w ogóle zdo³asz siê czegoœ dowiedzieæ, to w³aœnie tam.
+	AI_Output (self, other, "DIA_Mortis_Redlight_13_04"); //Tawerna i burdel to dwa miejsca, gdzie moÅ¼esz zdobyÄ‡ informacje. Innymi sÅ‚owy, jeÅ›li w ogÃ³le zdoÅ‚asz siÄ™ czegoÅ› dowiedzieÄ‡, to wÅ‚aÅ›nie tam.
 	
-	B_LogEntry (TOPIC_REDLIGHT,"Mortis uwa¿a, ¿e jeœli chcê kupiæ bagienne ziele w dzielnicy portowej, powinienem siê tam udaæ bez zbroi. Najlepiej zacz¹æ poszukiwania od tawerny lub burdelu.");
+	B_LogEntry (TOPIC_REDLIGHT,"Mortis uwaÅ¼a, Å¼e jeÅ›li chcÄ™ kupiÄ‡ bagienne ziele w dzielnicy portowej, powinienem siÄ™ tam udaÄ‡ bez zbroi. Najlepiej zaczÄ…Ä‡ poszukiwania od tawerny lub burdelu.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -144,7 +144,7 @@ instance DIA_Mortis_CanTeach		(C_INFO)
 	condition	 = 	DIA_Mortis_CanTeach_Condition;
 	information	 = 	DIA_Mortis_CanTeach_Info;
 	permanent    =  TRUE;
-	description	 = 	"Chcê byæ silniejszy.";
+	description	 = 	"ChcÄ™ byÄ‡ silniejszy.";
 };
 
 func int DIA_Mortis_CanTeach_Condition ()
@@ -156,20 +156,20 @@ func int DIA_Mortis_CanTeach_Condition ()
 };
 func void DIA_Mortis_CanTeach_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_CanTeach_15_00"); //Chcê byæ silniejszy.
+	AI_Output (other, self, "DIA_Mortis_CanTeach_15_00"); //ChcÄ™ byÄ‡ silniejszy.
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Mortis_CanTeach_13_01"); //Jeœli zdobêdziesz wystarczaj¹co du¿o doœwiadczenia, pomogê ci w treningu.
+		AI_Output (self, other, "DIA_Mortis_CanTeach_13_01"); //JeÅ›li zdobÄ™dziesz wystarczajÄ…co duÅ¼o doÅ›wiadczenia, pomogÄ™ ci w treningu.
 		Mortis_TeachSTR = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Mortis_CanTeach_13_02"); //Ale¿ oczywiœcie, któ¿ by nie chcia³. Niestety, dopóki nie przy³¹czysz siê do nas albo do paladynów, nie mogê ci pomóc.
+		AI_Output (self, other, "DIA_Mortis_CanTeach_13_02"); //AleÅ¼ oczywiÅ›cie, ktÃ³Å¼ by nie chciaÅ‚. Niestety, dopÃ³ki nie przyÅ‚Ä…czysz siÄ™ do nas albo do paladynÃ³w, nie mogÄ™ ci pomÃ³c.
 	};
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Mortis, stra¿nik miejski, mo¿e pokazaæ mi kilka æwiczeñ zwiêkszaj¹cych si³ê.");
+	B_LogEntry (Topic_CityTeacher, "Mortis, straÅ¼nik miejski, moÅ¼e pokazaÄ‡ mi kilka Ä‡wiczeÅ„ zwiÄ™kszajÄ…cych siÅ‚Ä™.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -181,7 +181,7 @@ instance DIA_Mortis_Teach		(C_INFO)
 	condition	 = 	DIA_Mortis_Teach_Condition;
 	information	 = 	DIA_Mortis_Teach_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chcê byæ silniejszy.";
+	description	 = 	"ChcÄ™ byÄ‡ silniejszy.";
 };
 func int DIA_Mortis_Teach_Condition ()
 {	
@@ -192,7 +192,7 @@ func int DIA_Mortis_Teach_Condition ()
 };
 func void DIA_Mortis_Teach_Info ()
 {
-	AI_Output (other, self, "DIA_Mortis_Teach_15_00"); //Chcê byæ silniejszy.
+	AI_Output (other, self, "DIA_Mortis_Teach_15_00"); //ChcÄ™ byÄ‡ silniejszy.
 	
 	Info_ClearChoices   (DIA_Mortis_Teach);
 	Info_AddChoice 		(DIA_Mortis_Teach, DIALOG_BACK, DIA_Mortis_Teach_BACK);
@@ -204,7 +204,7 @@ func void DIA_Mortis_Teach_BACK()
 {
 	if (other.attribute[ATR_STRENGTH] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Mortis_Teach_13_00"); //Ju¿ jesteœ silny. Jeœli potrzebujesz dalszego treningu, bêdziesz sobie musia³ poszukaæ innego nauczyciela.
+		AI_Output (self, other, "DIA_Mortis_Teach_13_00"); //JuÅ¼ jesteÅ› silny. JeÅ›li potrzebujesz dalszego treningu, bÄ™dziesz sobie musiaÅ‚ poszukaÄ‡ innego nauczyciela.
 	};
 	Info_ClearChoices (DIA_Mortis_TEACH);
 };

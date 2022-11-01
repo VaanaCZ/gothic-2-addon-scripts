@@ -45,7 +45,7 @@ FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
 FUNC VOID DIA_OCVLK_1_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Kto tu dowodzi?
-	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Kapitan Garond. Odk¹d jednak walki uleg³y zaostrzeniu, nie rusza siê z sali tronowej na krok. Obawiam siê, ¿e ca³a sprawa Ÿle siê skoñczy.
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Kapitan Garond. OdkÄ…d jednak walki ulegÅ‚y zaostrzeniu, nie rusza siÄ™ z sali tronowej na krok. Obawiam siÄ™, Å¼e caÅ‚a sprawa Åºle siÄ™ skoÅ„czy.
 };
 
 // *************************************************************************
@@ -57,7 +57,7 @@ INSTANCE DIA_OCVLK_1_LOCATION(C_INFO)
 	condition	= DIA_OCVLK_1_LOCATION_Condition;
 	information	= DIA_OCVLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co wiesz o Górniczej Dolinie?";
+	description = "Co wiesz o GÃ³rniczej Dolinie?";
 };                       
 
 FUNC INT DIA_OCVLK_1_LOCATION_Condition()
@@ -71,9 +71,9 @@ FUNC INT DIA_OCVLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_OCVLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Co wiesz o Górniczej Dolinie?
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Wydaje mi siê, ¿e kilku naszych ch³opaków wci¹¿ pracuje w kopalniach.
-	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //Jednak nie zdecydowa³bym siê na handel z nimi. Ca³a dolina zajêta jest przez orków. Nie wspomnê ju¿ o smokach.
+	AI_Output (other, self, "DIA_OCVLK_1_LOCATION_15_00"); //Co wiesz o GÃ³rniczej Dolinie?
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_01"); //Wydaje mi siÄ™, Å¼e kilku naszych chÅ‚opakÃ³w wciÄ…Å¼ pracuje w kopalniach.
+	AI_Output (self, other, "DIA_OCVLK_1_LOCATION_01_02"); //Jednak nie zdecydowaÅ‚bym siÄ™ na handel z nimi. CaÅ‚a dolina zajÄ™ta jest przez orkÃ³w. Nie wspomnÄ™ juÅ¼ o smokach.
 };
 
 // *************************************************************************
@@ -93,22 +93,22 @@ func INT DIA_OCVLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00"); //Jak siê maj¹ sprawy?
+	AI_Output (other, self, "DIA_OCVLK_1_STANDARD_15_00"); //Jak siÄ™ majÄ… sprawy?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Orkowie zapêdzili nas w kozi róg! Bez posi³ków d³ugo nie wytrzymamy, wszyscy zgin¹! Zreszt¹ dziwi mnie fakt, ¿e smoki nas nie wykoñczy³y.
+		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Orkowie zapÄ™dzili nas w kozi rÃ³g! Bez posiÅ‚kÃ³w dÅ‚ugo nie wytrzymamy, wszyscy zginÄ…! ZresztÄ… dziwi mnie fakt, Å¼e smoki nas nie wykoÅ„czyÅ‚y.
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //Przynajmniej posi³ki dotar³y na czas.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_02"); //Przynajmniej posiÅ‚ki dotarÅ‚y na czas.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //S³ysza³em, ¿e smoki zosta³y zabite? Innosowi niech bêd¹ dziêki!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_03"); //SÅ‚yszaÅ‚em, Å¼e smoki zostaÅ‚y zabite? Innosowi niech bÄ™dÄ… dziÄ™ki!
 		};
 	};
 
@@ -116,11 +116,11 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Przeklêta ruda. Powinniœmy zrzuciæ ca³y jej zapas z barykad. Mo¿e wtedy orkowie zostawiliby nas w spokoju.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //PrzeklÄ™ta ruda. PowinniÅ›my zrzuciÄ‡ caÅ‚y jej zapas z barykad. MoÅ¼e wtedy orkowie zostawiliby nas w spokoju.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Ta sterta skrzyñ porozrzucana bez³adnie przed bram¹ na pewno nie zatrzyma orków!
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_05"); //Ta sterta skrzyÅ„ porozrzucana bezÅ‚adnie przed bramÄ… na pewno nie zatrzyma orkÃ³w!
 		};
 	};
 };

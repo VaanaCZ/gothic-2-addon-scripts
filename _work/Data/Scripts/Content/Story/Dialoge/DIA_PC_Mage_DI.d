@@ -33,7 +33,7 @@ INSTANCE DIA_Milten_DI_Hello(C_INFO)
 	condition	= DIA_Milten_DI_Hello_Condition;
 	information	= DIA_Milten_DI_Hello_Info;
 
-	description = "Zupe³nie jak za dawnych czasów.";
+	description = "ZupeÅ‚nie jak za dawnych czasÃ³w.";
 
 };                       
 
@@ -47,10 +47,10 @@ FUNC INT DIA_Milten_DI_Hello_Condition()
 
 FUNC VOID DIA_Milten_DI_Hello_Info()
 {	
-		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_00"); //Zupe³nie jak za dawnych czasów.
-		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_01"); //Œwiête s³owa. Ciekawe, czy i tym razem ci siê uda...
+		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_00"); //ZupeÅ‚nie jak za dawnych czasÃ³w.
+		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_01"); //ÅšwiÄ™te sÅ‚owa. Ciekawe, czy i tym razem ci siÄ™ uda...
 		AI_Output (other,self ,"DIA_Milten_DI_Hello_15_02"); //Co takiego?
-		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_03"); //Uratowaæ swój ty³ek, gdy wokó³ rozpêta siê prawdziwe piek³o.
+		AI_Output (self ,other,"DIA_Milten_DI_Hello_03_03"); //UratowaÄ‡ swÃ³j tyÅ‚ek, gdy wokÃ³Å‚ rozpÄ™ta siÄ™ prawdziwe piekÅ‚o.
 	
 };	
  
@@ -66,7 +66,7 @@ instance DIA_Milten_DI_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 
-	description	 = 	"Nie masz paru mikstur na sprzeda¿?";
+	description	 = 	"Nie masz paru mikstur na sprzedaÅ¼?";
 };
 
 func int DIA_Milten_DI_TRADE_Condition ()
@@ -80,7 +80,7 @@ func int DIA_Milten_DI_TRADE_Condition ()
 
 func void DIA_Milten_DI_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_TRADE_15_00"); //Nie masz paru mikstur na sprzeda¿?
+	AI_Output			(other, self, "DIA_Milten_DI_TRADE_15_00"); //Nie masz paru mikstur na sprzedaÅ¼?
 	B_GiveTradeInv (self);
 	//Joly: Mc ManaHealth
 	//////////////////////////////////////////////////////////////////////////////////////
@@ -93,7 +93,7 @@ func void DIA_Milten_DI_TRADE_Info ()
 	
 	
 	
-	AI_Output			(self, other, "DIA_Milten_DI_TRADE_03_01"); //Trochê zapasów jeszcze mi zosta³o.
+	AI_Output			(self, other, "DIA_Milten_DI_TRADE_03_01"); //TrochÄ™ zapasÃ³w jeszcze mi zostaÅ‚o.
 };
 //*************************************************************
 //Rat!
@@ -106,7 +106,7 @@ INSTANCE DIA_Milten_DI_Rat(C_INFO)
 	condition	= DIA_Milten_DI_Rat_Condition;
 	information	= DIA_Milten_DI_Rat_Info;
 
-	description = "Masz dla mnie jakieœ rady?";
+	description = "Masz dla mnie jakieÅ› rady?";
 
 };                       
 FUNC INT DIA_Milten_DI_Rat_Condition()
@@ -120,9 +120,9 @@ FUNC INT DIA_Milten_DI_Rat_Condition()
 
 FUNC VOID DIA_Milten_DI_Rat_Info()
 {	
-	AI_Output (other,self ,"DIA_Milten_DI_Rat_15_00"); //Masz dla mnie jakieœ rady?
-	AI_Output (self ,other,"DIA_Milten_DI_Rat_03_01"); //Hmmm... To mi³o, ¿e pytasz o radê w³aœnie mnie. Przyznam, ¿e jedna rzecz nie daje mi od pewnego czasu spokoju.
-	AI_Output (self, other, "DIA_Milten_DI_Rat_03_02"); //Masz ze sob¹ Oko Innosa?
+	AI_Output (other,self ,"DIA_Milten_DI_Rat_15_00"); //Masz dla mnie jakieÅ› rady?
+	AI_Output (self ,other,"DIA_Milten_DI_Rat_03_01"); //Hmmm... To miÅ‚o, Å¼e pytasz o radÄ™ wÅ‚aÅ›nie mnie. Przyznam, Å¼e jedna rzecz nie daje mi od pewnego czasu spokoju.
+	AI_Output (self, other, "DIA_Milten_DI_Rat_03_02"); //Masz ze sobÄ… Oko Innosa?
 	
 	Info_ClearChoices	(DIA_Milten_DI_Rat);
 
@@ -132,23 +132,23 @@ FUNC VOID DIA_Milten_DI_Rat_Info()
 	}
 	else
 	{
-		Info_AddChoice	(DIA_Milten_DI_Rat, "Oczywiœcie.", DIA_Milten_DI_Rat_ja );
+		Info_AddChoice	(DIA_Milten_DI_Rat, "OczywiÅ›cie.", DIA_Milten_DI_Rat_ja );
 	};
 };	
 
 func void DIA_Milten_DI_Rat_nein ()
 {
 	AI_Output			(other, self, "DIA_Milten_DI_Rat_nein_15_00"); //Nie.
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_01"); //Jak mo¿na byæ tak... A co zamierzasz zrobiæ, gdy natkniesz siê na jakiegoœ smoka?
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_02"); //Widzê, ¿e nie zm¹drza³eœ od naszego ostatniego spotkania. Mamy tutaj nawet pracowniê alchemiczn¹, w której mo¿na by nape³niæ amulet energi¹!
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_03"); //Co ty sobie wyobra¿asz?! Ech, mam nadziejê, ¿e twoja g³upota nie bêdzie nas zbyt drogo kosztowaæ.
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_01"); //Jak moÅ¼na byÄ‡ tak... A co zamierzasz zrobiÄ‡, gdy natkniesz siÄ™ na jakiegoÅ› smoka?
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_02"); //WidzÄ™, Å¼e nie zmÄ…drzaÅ‚eÅ› od naszego ostatniego spotkania. Mamy tutaj nawet pracowniÄ™ alchemicznÄ…, w ktÃ³rej moÅ¼na by napeÅ‚niÄ‡ amulet energiÄ…!
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_nein_03_03"); //Co ty sobie wyobraÅ¼asz?! Ech, mam nadziejÄ™, Å¼e twoja gÅ‚upota nie bÄ™dzie nas zbyt drogo kosztowaÄ‡.
 	Info_ClearChoices	(DIA_Milten_DI_Rat);
 };
 
 func void DIA_Milten_DI_Rat_ja ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_Rat_ja_15_00"); //Oczywiœcie, ¿e tak!
-	AI_Output			(self, other, "DIA_Milten_DI_Rat_ja_03_01"); //Wybacz, g³upie pytanie. Robiê siê trochê nerwowy.
+	AI_Output			(other, self, "DIA_Milten_DI_Rat_ja_15_00"); //OczywiÅ›cie, Å¼e tak!
+	AI_Output			(self, other, "DIA_Milten_DI_Rat_ja_03_01"); //Wybacz, gÅ‚upie pytanie. RobiÄ™ siÄ™ trochÄ™ nerwowy.
  	B_GivePlayerXP (XP_Ambient);
  	Info_ClearChoices	(DIA_Milten_DI_Rat);
 
@@ -164,7 +164,7 @@ instance DIA_Milten_DI_PEDROTOT		(C_INFO)
 	condition	 = 	DIA_Milten_DI_PEDROTOT_Condition;
 	information	 = 	DIA_Milten_DI_PEDROTOT_Info;
 
-	description	 = 	"Spotka³em Pedra.";
+	description	 = 	"SpotkaÅ‚em Pedra.";
 };
 
 func int DIA_Milten_DI_PEDROTOT_Condition ()
@@ -177,19 +177,19 @@ func int DIA_Milten_DI_PEDROTOT_Condition ()
 
 func void DIA_Milten_DI_PEDROTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_00"); //Spotka³em Pedra.
-	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_01"); //Co?! Gdzie?! Tu, na wyspie? Niech go szlag. Ten cz³owiek jest niesamowity.
-	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_02"); //Nie przypuszcza³em, ¿e taka z niego twarda sztuka.
+	AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_00"); //SpotkaÅ‚em Pedra.
+	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_01"); //Co?! Gdzie?! Tu, na wyspie? Niech go szlag. Ten czÅ‚owiek jest niesamowity.
+	AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_02"); //Nie przypuszczaÅ‚em, Å¼e taka z niego twarda sztuka.
 	B_GivePlayerXP (XP_Ambient);
 
 	if (Npc_IsDead(Pedro_DI))
 	{
-		AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_03"); //Ju¿ nie ¿yje.
-		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_04"); //Tak? Trudno, pokój jego duszy. Nie powiem, ¿eby mi go brakowa³o, ale chêtnie zamieni³bym z nim s³owo.
+		AI_Output			(other, self, "DIA_Milten_DI_PEDROTOT_15_03"); //JuÅ¼ nie Å¼yje.
+		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_04"); //Tak? Trudno, pokÃ³j jego duszy. Nie powiem, Å¼eby mi go brakowaÅ‚o, ale chÄ™tnie zamieniÅ‚bym z nim sÅ‚owo.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_05"); //Mam z nim niewyrównane rachunki.
+		AI_Output			(self, other, "DIA_Milten_DI_PEDROTOT_03_05"); //Mam z nim niewyrÃ³wnane rachunki.
 	};
 };
 
@@ -205,7 +205,7 @@ INSTANCE DIA_Milten_DI_TeachMagic(C_INFO)
 	information	= DIA_Milten_DI_TeachMagic_Info;
 	permanent	 = 	TRUE;
 
-	description = "Chcê popracowaæ nad moimi zdolnoœciami magicznymi.";
+	description = "ChcÄ™ popracowaÄ‡ nad moimi zdolnoÅ›ciami magicznymi.";
 
 };                       
 FUNC INT DIA_Milten_DI_TeachMagic_Condition()
@@ -220,22 +220,22 @@ FUNC INT DIA_Milten_DI_TeachMagic_Condition()
 var int DIA_Milten_DI_TeachMagic_OneTime;
 FUNC VOID DIA_Milten_DI_TeachMagic_Info()
 {	
-	AI_Output (other,self ,"DIA_Milten_DI_TeachMagic_15_00"); //Chcê popracowaæ nad moimi zdolnoœciami magicznymi.
+	AI_Output (other,self ,"DIA_Milten_DI_TeachMagic_15_00"); //ChcÄ™ popracowaÄ‡ nad moimi zdolnoÅ›ciami magicznymi.
 	
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_01"); //Zrobiê, co w mojej mocy.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_01"); //ZrobiÄ™, co w mojej mocy.
 	}
 	else
 	{
 		if (DIA_Milten_DI_TeachMagic_OneTime == FALSE)
 			{
-				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_02"); //Pomogê ci, ale pod jednym warunkiem: postarasz siê, ¿eby orkowie zostali tam, gdzie s¹.
+				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_02"); //PomogÄ™ ci, ale pod jednym warunkiem: postarasz siÄ™, Å¼eby orkowie zostali tam, gdzie sÄ….
 				DIA_Milten_DI_TeachMagic_OneTime = TRUE;
 			}
 		else
 			{
-				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_03"); //W porz¹dku. Czego potrzebujesz?
+				AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_03_03"); //W porzÄ…dku. Czego potrzebujesz?
 			};
 	};
 	
@@ -256,7 +256,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_1()
 {
 	if (B_TeachAttributePoints (self, other, ATR_MANA_MAX, 1, T_HIGH))
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //Niech Innos wskazuje ci w³aœciw¹ drogê.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_1_03_00"); //Niech Innos wskazuje ci wÅ‚aÅ›ciwÄ… drogÄ™.
 	};
 
 	Info_ClearChoices 	(DIA_Milten_DI_TeachMagic);
@@ -276,7 +276,7 @@ func void DIA_Milten_DI_TeachMagic_MANA_5()
 {
 	if (B_TeachAttributePoints (self, other, ATR_MANA_MAX, 5, T_HIGH))
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //Niech œwiat³o Innosa rozœwietla tw¹ drogê.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_MANA_5_03_00"); //Niech Å›wiatÅ‚o Innosa rozÅ›wietla twÄ… drogÄ™.
 	};
 
 	Info_ClearChoices 	(DIA_Milten_DI_TeachMagic);
@@ -296,7 +296,7 @@ FUNC VOID DIA_Milten_DI_TeachMagic_RUNES ()
 	Info_ClearChoices (DIA_Milten_DI_TeachMagic);
 	Info_AddChoice	  (DIA_Milten_DI_TeachMagic, DIALOG_BACK, DIA_Milten_DI_TeachMagic_BACK);
 	
-	AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00"); //Nie jest to moja specjalnoœæ, ale jakoœ sobie poradzimy.
+	AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_00"); //Nie jest to moja specjalnoÅ›Ä‡, ale jakoÅ› sobie poradzimy.
 
 	if (hero.guild == GIL_PAL)
 	{
@@ -304,19 +304,19 @@ FUNC VOID DIA_Milten_DI_TeachMagic_RUNES ()
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 4)
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," czwarty kr¹g", DIA_Milten_DI_TeachMagic_Runen_Circle_4);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," czwarty krÄ…g", DIA_Milten_DI_TeachMagic_Runen_Circle_4);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 5)
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," pi¹ty kr¹g", DIA_Milten_DI_TeachMagic_Runen_Circle_5);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," piÄ…ty krÄ…g", DIA_Milten_DI_TeachMagic_Runen_Circle_5);
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 6) 
 	{
-		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," szósty kr¹g", DIA_Milten_DI_TeachMagic_Runen_Circle_6);
+		Info_AddChoice 	  (DIA_Milten_DI_TeachMagic," szÃ³sty krÄ…g", DIA_Milten_DI_TeachMagic_Runen_Circle_6);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_01"); //Nie jesteœ jeszcze gotów. Musisz poznaæ wy¿sze krêgi. Dopiero potem bêdê móg³ ci pomóc.
+		AI_Output (self ,other,"DIA_Milten_DI_TeachMagic_RUNES_03_01"); //Nie jesteÅ› jeszcze gotÃ³w. Musisz poznaÄ‡ wyÅ¼sze krÄ™gi. Dopiero potem bÄ™dÄ™ mÃ³gÅ‚ ci pomÃ³c.
 	};
 };
 
@@ -334,7 +334,7 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin ()
 	
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Œwiat³o", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLight)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("ÅšwiatÅ‚o", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalLight)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight);
 	};
 	if	(PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	{ 
@@ -342,23 +342,23 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin ()
 	};
 	if	(PLAYER_TALENT_RUNES [SPL_PalHolyBolt] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Œwiêty pocisk", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalHolyBolt)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalHolyBolt);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("ÅšwiÄ™ty pocisk", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalHolyBolt)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalHolyBolt);
 	};
 	if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Œrednie uleczenie", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalMediumHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalMediumHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Åšrednie uleczenie", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalMediumHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalMediumHeal);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalRepelEvil] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Szkodzenie z³u", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalRepelEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalRepelEvil);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Szkodzenie zÅ‚u", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalRepelEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalRepelEvil);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalFullHeal] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Wiêksze uleczenie", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalFullHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalFullHeal);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("WiÄ™ksze uleczenie", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalFullHeal)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalFullHeal);
 	};
 	if (PLAYER_TALENT_RUNES [SPL_PalDestroyEvil] == FALSE)
 	{
-		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Zniszczenie z³a", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalDestroyEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalDestroyEvil);
+		Info_AddChoice	(DIA_Milten_DI_TeachMagic, B_BuildLearnString ("Zniszczenie zÅ‚a", B_GetLearnCostTalent (other, NPC_TALENT_RUNES, SPL_PalDestroyEvil)) ,DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalDestroyEvil);
 	};
 };
 FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Paladin_SPL_PalLight()
@@ -442,7 +442,7 @@ FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Circle_4_SPL_LightningFlash()
 	B_TeachPlayerTalentRunes (self, other, SPL_LightningFlash);		
 };
 //**********************************************************
-// Fünfter Kreis 
+// FÃ¼nfter Kreis 
 //--------------------------
 //**********************************************************
 FUNC VOID DIA_Milten_DI_TeachMagic_Runen_Circle_5()
@@ -552,7 +552,7 @@ instance DIA_Milten_DI_DementorObsessionBook		(C_INFO)
 	condition	 = 	DIA_Milten_DI_DementorObsessionBook_Condition;
 	information	 = 	DIA_Milten_DI_DementorObsessionBook_Info;
 
-	description	 = 	"Co mo¿esz mi powiedzieæ na temat tego almanachu opêtanych?";
+	description	 = 	"Co moÅ¼esz mi powiedzieÄ‡ na temat tego almanachu opÄ™tanych?";
 };
 
 func int DIA_Milten_DI_DementorObsessionBook_Condition ()
@@ -565,9 +565,9 @@ func int DIA_Milten_DI_DementorObsessionBook_Condition ()
 
 func void DIA_Milten_DI_DementorObsessionBook_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_DementorObsessionBook_15_00"); //Co mo¿esz mi powiedzieæ na temat tego almanachu opêtanych?
+	AI_Output			(other, self, "DIA_Milten_DI_DementorObsessionBook_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ na temat tego almanachu opÄ™tanych?
 	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_01"); //W takich sprawach ekspertem jest Pyrokar.
-	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_02"); //Przykro mi, ale zbyt ma³o wiem na ten temat.
+	AI_Output			(self, other, "DIA_Milten_DI_DementorObsessionBook_03_02"); //Przykro mi, ale zbyt maÅ‚o wiem na ten temat.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -581,7 +581,7 @@ instance DIA_Milten_DI_DragonEgg		(C_INFO)
 	condition	 = 	DIA_Milten_DI_DragonEgg_Condition;
 	information	 = 	DIA_Milten_DI_DragonEgg_Info;
 
-	description	 = 	"Co mo¿esz mi powiedzieæ o smoczych jajach?";
+	description	 = 	"Co moÅ¼esz mi powiedzieÄ‡ o smoczych jajach?";
 };
 
 func int DIA_Milten_DI_DragonEgg_Condition ()
@@ -594,9 +594,9 @@ func int DIA_Milten_DI_DragonEgg_Condition ()
 
 func void DIA_Milten_DI_DragonEgg_Info ()
 {
-	AI_Output			(other, self, "DIA_Milten_DI_DragonEgg_15_00"); //Co mo¿esz mi powiedzieæ o smoczych jajach?
-	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_01"); //Niewiele. S³ysza³em, ¿e pewnemu alchemikowi uda³o siê pozyskaæ z nich potê¿n¹ miksturê.
-	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_02"); //Ale nie znam szczegó³ów ani - tym bardziej - receptury.
+	AI_Output			(other, self, "DIA_Milten_DI_DragonEgg_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o smoczych jajach?
+	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_01"); //Niewiele. SÅ‚yszaÅ‚em, Å¼e pewnemu alchemikowi udaÅ‚o siÄ™ pozyskaÄ‡ z nich potÄ™Å¼nÄ… miksturÄ™.
+	AI_Output			(self, other, "DIA_Milten_DI_DragonEgg_03_02"); //Ale nie znam szczegÃ³Å‚Ã³w ani - tym bardziej - receptury.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -612,7 +612,7 @@ INSTANCE DIA_Milten_DI_UndeadDragonDead (C_INFO)
 	information	= DIA_Milten_DI_UndeadDragonDead_Info;
 	permanent	= TRUE;
 
-	description = "To ju¿ koniec.";
+	description = "To juÅ¼ koniec.";
 
 };
                        
@@ -627,29 +627,29 @@ FUNC INT DIA_Milten_DI_UndeadDragonDead_Condition()
 var int DIA_Milten_DI_UndeadDragonDead_OneTime;
 FUNC VOID DIA_Milten_DI_UndeadDragonDead_Info()
 {	
-		AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_00"); //Œwietnie! Œwi¹tynia straci³a teraz swoj¹ moc!
+		AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_00"); //Åšwietnie! ÅšwiÄ…tynia straciÅ‚a teraz swojÄ… moc!
 		
 		if (DIA_Milten_DI_UndeadDragonDead_OneTime == FALSE)
 		{
 			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_01"); //Powiesz mi, jak ty to robisz?
 			AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_02"); //Cholera, sam nie wiem!
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_03"); //Czy my nigdy nie zaznamy spokoju? Innos œwiadkiem - zas³u¿yliœmy na odpoczynek.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_03"); //Czy my nigdy nie zaznamy spokoju? Innos Å›wiadkiem - zasÅ‚uÅ¼yliÅ›my na odpoczynek.
 			
 			if (hero.guild == GIL_KDF)
 				{
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_04"); //Co zamierzasz teraz robiæ?
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_05"); //Zastanawia³em siê nad za³o¿eniem w³asnej akademii, w której naucza³bym naszej wiary. Ale kto wie, co przyniesie przysz³oœæ?
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_06"); //Nigdy nie ¿a³owa³em, ¿e zosta³em Magiem Ognia. A ty?
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_04"); //Co zamierzasz teraz robiÄ‡?
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_05"); //ZastanawiaÅ‚em siÄ™ nad zaÅ‚oÅ¼eniem wÅ‚asnej akademii, w ktÃ³rej nauczaÅ‚bym naszej wiary. Ale kto wie, co przyniesie przyszÅ‚oÅ›Ä‡?
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_06"); //Nigdy nie Å¼aÅ‚owaÅ‚em, Å¼e zostaÅ‚em Magiem Ognia. A ty?
 					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_07"); //Nie jestem taki pewien.
-					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_08"); //Powœci¹gliwy jak zwykle. Uratowa³eœ œwiat od niechybnej zguby! To chyba jest jakiœ powód do radoœci?
-					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_09"); //Hmmm... Mo¿e.
+					AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_08"); //PowÅ›ciÄ…gliwy jak zwykle. UratowaÅ‚eÅ› Å›wiat od niechybnej zguby! To chyba jest jakiÅ› powÃ³d do radoÅ›ci?
+					AI_Output (other,self ,"DIA_Milten_DI_UndeadDragonDead_15_09"); //Hmmm... MoÅ¼e.
 				};		
 
-			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_10"); //A niech ciê, marudo. Myœlê, ¿e na pocz¹tek przyda ci siê trochê snu.
+			AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_10"); //A niech ciÄ™, marudo. MyÅ›lÄ™, Å¼e na poczÄ…tek przyda ci siÄ™ trochÄ™ snu.
 			DIA_Milten_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 		
-		AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_11"); //IdŸ do kapitana i ka¿ mu podnosiæ kotwicê.
+		AI_Output (self ,other,"DIA_Milten_DI_UndeadDragonDead_03_11"); //IdÅº do kapitana i kaÅ¼ mu podnosiÄ‡ kotwicÄ™.
 
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");

@@ -22,7 +22,7 @@ FUNC VOID DIA_Gestath_EXIT_Info()
 	
 	if (Hlp_IsItem (heroArmor, ITAR_DJG_Crawler) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //Niez³a zbroja!
+		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //NiezÅ‚a zbroja!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -37,7 +37,7 @@ instance DIA_Gestath_HALLO		(C_INFO)
 	condition	 = 	DIA_Gestath_HALLO_Condition;
 	information	 = 	DIA_Gestath_HALLO_Info;
 
-	description	 = 	"Co s³ychaæ?";
+	description	 = 	"Co sÅ‚ychaÄ‡?";
 };
 
 func int DIA_Gestath_HALLO_Condition ()
@@ -48,17 +48,17 @@ func int DIA_Gestath_HALLO_Condition ()
 func void DIA_Gestath_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //Jak leci?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //Przyjœcie tutaj jest prawdziwym aktem odwagi. Pewnie siê zgubi³eœ, co?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //PrzyjÅ›cie tutaj jest prawdziwym aktem odwagi. Pewnie siÄ™ zgubiÅ‚eÅ›, co?
 	Gestath_TeachAnimalTrophy = TRUE;
 	Info_ClearChoices	(DIA_Gestath_HALLO);
-	Info_AddChoice	(DIA_Gestath_HALLO, "Jest tu coœ wartego zobaczenia?", DIA_Gestath_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Jest tu coÅ› wartego zobaczenia?", DIA_Gestath_HALLO_waszusehen );
 	Info_AddChoice	(DIA_Gestath_HALLO, "Co tutaj robisz?", DIA_Gestath_HALLO_was );
 };
 func void DIA_Gestath_HALLO_plate ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Niez³a zbroja.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Taak. Ciê¿ko coœ takiego dostaæ. Jest zrobiona z pancerza pe³zacza. Zrobi³ j¹ dla mnie pewien cz³owiek imieniem Wilk.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Wtedy by³em wiêŸniem w Kolonii. Da³em mu kilka ³usek pe³zacza, a parê dni póŸniej zbroja by³a ju¿ gotowa. Facet jest w porz¹dku.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //NiezÅ‚a zbroja.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Taak. CiÄ™Å¼ko coÅ› takiego dostaÄ‡. Jest zrobiona z pancerza peÅ‚zacza. ZrobiÅ‚ jÄ… dla mnie pewien czÅ‚owiek imieniem Wilk.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Wtedy byÅ‚em wiÄ™Åºniem w Kolonii. DaÅ‚em mu kilka Å‚usek peÅ‚zacza, a parÄ™ dni pÃ³Åºniej zbroja byÅ‚a juÅ¼ gotowa. Facet jest w porzÄ…dku.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
@@ -68,8 +68,8 @@ func void DIA_Gestath_HALLO_plate ()
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Gdzie teraz przebywa Wilk?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Nie widzia³em go od czasu, kiedy by³ najemnikiem w Kolonii.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Przypuszczam, ¿e wci¹¿ obraca siê w tym samym towarzystwie.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Nie widziaÅ‚em go od czasu, kiedy byÅ‚ najemnikiem w Kolonii.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Przypuszczam, Å¼e wciÄ…Å¼ obraca siÄ™ w tym samym towarzystwie.
 };
 
 func void DIA_Gestath_HALLO_was ()
@@ -77,17 +77,17 @@ func void DIA_Gestath_HALLO_was ()
 	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Co tutaj robisz?
 	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Zarabiam.
 	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //W takim miejscu?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Jestem myœliwym. Specjalizujê siê w trudnych zadaniach.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Ogniste jaszczury, pe³zacze, zêbacze... Jednym s³owem - wszystko, na co nikt inny nie zechcia³by zapolowaæ.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Jestem myÅ›liwym. SpecjalizujÄ™ siÄ™ w trudnych zadaniach.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Ogniste jaszczury, peÅ‚zacze, zÄ™bacze... Jednym sÅ‚owem - wszystko, na co nikt inny nie zechciaÅ‚by zapolowaÄ‡.
 	
-	Info_AddChoice	(DIA_Gestath_HALLO, "Niez³a zbroja.", DIA_Gestath_HALLO_plate );
+	Info_AddChoice	(DIA_Gestath_HALLO, "NiezÅ‚a zbroja.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Jest tu coœ wartego zobaczenia?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Trochê ognistych jaszczurów, orków i cholera wie, czego jeszcze. Nie by³em jeszcze na wy¿ynach.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Nie radzê jednak próbowaæ. Stworzenia, które ¿yj¹ tam na górze, nie wygl¹daj¹ zbyt przyjaŸnie.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Jest tu coÅ› wartego zobaczenia?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //TrochÄ™ ognistych jaszczurÃ³w, orkÃ³w i cholera wie, czego jeszcze. Nie byÅ‚em jeszcze na wyÅ¼ynach.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Nie radzÄ™ jednak prÃ³bowaÄ‡. Stworzenia, ktÃ³re Å¼yjÄ… tam na gÃ³rze, nie wyglÄ…dajÄ… zbyt przyjaÅºnie.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -106,7 +106,7 @@ instance DIA_Gestath_Drachen		(C_INFO)
 	information	 = 	DIA_Gestath_Drachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Potrafisz oprawiaæ smoki?";
+	description	 = 	"Potrafisz oprawiaÄ‡ smoki?";
 };
 var int Gestath_DragonTrophy;
 
@@ -121,10 +121,10 @@ func int DIA_Gestath_Drachen_Condition ()
 
 func void DIA_Gestath_Drachen_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Potrafisz oprawiaæ smoki?
+	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Potrafisz oprawiaÄ‡ smoki?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //Kiedyœ, kiedy nabierzesz doœwiadczenia, mo¿e nawet nauczê ciê tej sztuki!
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //KiedyÅ›, kiedy nabierzesz doÅ›wiadczenia, moÅ¼e nawet nauczÄ™ ciÄ™ tej sztuki!
 	}
 	else
 	{	
@@ -143,7 +143,7 @@ instance DIA_Gestath_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gestath_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gestath_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Naucz mnie sprawiaæ zwierzêta.";
+	description	 = 	"Naucz mnie sprawiaÄ‡ zwierzÄ™ta.";
 };
 
 func int DIA_Gestath_TEACHHUNTING_Condition ()
@@ -157,7 +157,7 @@ func int DIA_Gestath_TEACHHUNTING_Condition ()
 var int DIA_Gestath_TEACHHUNTING_OneTime;
 func void DIA_Gestath_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Naucz mnie sprawiaæ zwierzêta.
+	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Naucz mnie sprawiaÄ‡ zwierzÄ™ta.
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
@@ -174,48 +174,48 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			{
 				if (DIA_Gestath_TEACHHUNTING_OneTime == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Czemu nie? I tak mam chwilowo dosyæ wra¿eñ.
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Czemu nie? I tak mam chwilowo dosyÄ‡ wraÅ¼eÅ„.
 						DIA_Gestath_TEACHHUNTING_OneTime = TRUE;
 					}
 				else
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Co chcesz wiedzieæ?
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Co chcesz wiedzieÄ‡?
 					};
 	
 				Info_AddChoice		(DIA_Gestath_TEACHHUNTING, DIALOG_BACK, DIA_Gestath_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Jêzyk ognistego jaszczura",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  DIA_Gestath_TEACHHUNTING_FireTongue);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("JÄ™zyk ognistego jaszczura",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_FireTongue)),  DIA_Gestath_TEACHHUNTING_FireTongue);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Usuñ p³yty pancerza pe³zacza",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Gestath_TEACHHUNTING_CrawlerPlate	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ pÅ‚yty pancerza peÅ‚zacza",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Gestath_TEACHHUNTING_CrawlerPlate	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Usuñ ¿uwaczkê",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ Å¼uwaczkÄ™",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Gestath_TEACHHUNTING_Mandibles	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Róg smoczego zêbacza",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
+					Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("RÃ³g smoczego zÄ™bacza",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DrgSnapperHorn)),  DIA_Gestath_TEACHHUNTING_DrgSnapperHorn);
 				};
 				
 				if (Gestath_DragonTrophy == TRUE)
 				{	
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Usuñ smocze ³uski",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ smocze Å‚uski",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
 					};
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Zbieraj smocz¹ krew",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Zbieraj smoczÄ… krew",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonBlood)),  DIA_Gestath_TEACHHUNTING_DragonBlood);
 					};
 				};			
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //Nie wiem, czego jeszcze móg³bym ciê nauczyæ.
+				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //Nie wiem, czego jeszcze mÃ³gÅ‚bym ciÄ™ nauczyÄ‡.
 			};
 };
 
@@ -228,7 +228,7 @@ func void DIA_Gestath_TEACHHUNTING_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_FireTongue))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Musisz przytrzymaæ jêzyk ognistego jaszczura rêk¹. Teraz odcinasz go jednym sprawnym ruchem.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Musisz przytrzymaÄ‡ jÄ™zyk ognistego jaszczura rÄ™kÄ…. Teraz odcinasz go jednym sprawnym ruchem.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -237,7 +237,7 @@ func void DIA_Gestath_TEACHHUNTING_CrawlerPlate()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //¯eby zerwaæ pancerze pe³zaczy, potrzebujesz naprawdê ostrego no¿a.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //Å»eby zerwaÄ‡ pancerze peÅ‚zaczy, potrzebujesz naprawdÄ™ ostrego noÅ¼a.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -246,7 +246,7 @@ func void DIA_Gestath_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //¯uwaczki przytwierdzone s¹ doœæ mocno do czaszki polnej bestii lub pe³zacza. Usuniêcie ich wymaga trochê wysi³ku.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Å»uwaczki przytwierdzone sÄ… doÅ›Ä‡ mocno do czaszki polnej bestii lub peÅ‚zacza. UsuniÄ™cie ich wymaga trochÄ™ wysiÅ‚ku.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Aby odci¹æ zêbaczowi jego róg, potrzebujesz naprawdê mocnego no¿a. Wbij go w sam czubek g³owy.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Aby odciÄ…Ä‡ zÄ™baczowi jego rÃ³g, potrzebujesz naprawdÄ™ mocnego noÅ¼a. Wbij go w sam czubek gÅ‚owy.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -264,7 +264,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Smocze ³uski s¹ naprawdê trudne do wyrwania, ale te na plecach s¹ stosunkowo p³ytko osadzone.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Smocze Å‚uski sÄ… naprawdÄ™ trudne do wyrwania, ale te na plecach sÄ… stosunkowo pÅ‚ytko osadzone.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -273,7 +273,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonBlood ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Krew naj³atwiej spuœcisz, przecinaj¹c brzuch lub gard³o zwierzêcia ostrym no¿em.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Krew najÅ‚atwiej spuÅ›cisz, przecinajÄ…c brzuch lub gardÅ‚o zwierzÄ™cia ostrym noÅ¼em.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

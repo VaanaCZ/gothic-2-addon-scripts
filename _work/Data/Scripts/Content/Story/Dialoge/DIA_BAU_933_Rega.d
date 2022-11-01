@@ -31,7 +31,7 @@ instance DIA_Rega_HALLO		(C_INFO)
 	condition	 = 	DIA_Rega_HALLO_Condition;
 	information	 = 	DIA_Rega_HALLO_Info;
 
-	description	 = 	"Co s³ychaæ?";
+	description	 = 	"Co sÅ‚ychaÄ‡?";
 };
 
 func int DIA_Rega_HALLO_Condition ()
@@ -46,29 +46,29 @@ func void DIA_Rega_HALLO_Info ()
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Jesteœ z miasta, prawda?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //JesteÅ› z miasta, prawda?
 		}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //Nale¿ysz do najemników Onara, prawda?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_02"); //NaleÅ¼ysz do najemnikÃ³w Onara, prawda?
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //Jesteœ magiem, prawda?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_03"); //JesteÅ› magiem, prawda?
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //Nie jesteœ jednym z nas, hê?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_04"); //Nie jesteÅ› jednym z nas, hÄ™?
 
 		};
 		
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Lepiej zmykaj st¹d...
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Lepiej zmykaj stÄ…d...
 	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //Dlaczego?
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //To miejsce nigdy nie by³o rajem, ale przynajmniej mieliœmy spokój, pracuj¹c dla Sekoba.
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Ostatnio sytuacja sta³a siê nie do zniesienia.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //To miejsce nigdy nie byÅ‚o rajem, ale przynajmniej mieliÅ›my spokÃ³j, pracujÄ…c dla Sekoba.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Ostatnio sytuacja staÅ‚a siÄ™ nie do zniesienia.
 	if (Kapitel < 3)
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //Wszêdzie grasuj¹ bandyci, polne bestie niszcz¹ nasze zbiory, a w³aœciciel ziemski staje siê coraz bardziej bezwzglêdny.
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //WszÄ™dzie grasujÄ… bandyci, polne bestie niszczÄ… nasze zbiory, a wÅ‚aÅ›ciciel ziemski staje siÄ™ coraz bardziej bezwzglÄ™dny.
 		};
 };
 
@@ -83,7 +83,7 @@ instance DIA_Rega_ONAR		(C_INFO)
 	condition	 = 	DIA_Rega_ONAR_Condition;
 	information	 = 	DIA_Rega_ONAR_Info;
 
-	description	 = 	"Czy¿byœ ba³a siê w³aœciciela ziemskiego?";
+	description	 = 	"CzyÅ¼byÅ› baÅ‚a siÄ™ wÅ‚aÅ›ciciela ziemskiego?";
 };
 
 func int DIA_Rega_ONAR_Condition ()
@@ -98,9 +98,9 @@ func int DIA_Rega_ONAR_Condition ()
 
 func void DIA_Rega_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //Czy¿byœ ba³a siê w³aœciciela?
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Jasne, wystarczy, ¿e nie spodoba mu siê twoja gêba, a zaraz naœle na ciebie swoich najemników. Tak koñczy wielu, którzy maj¹ jakieœ ale.
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //Wolimy wiêc trzymaæ gêby na k³ódkê.
+	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //CzyÅ¼byÅ› baÅ‚a siÄ™ wÅ‚aÅ›ciciela?
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Jasne, wystarczy, Å¼e nie spodoba mu siÄ™ twoja gÄ™ba, a zaraz naÅ›le na ciebie swoich najemnikÃ³w. Tak koÅ„czy wielu, ktÃ³rzy majÄ… jakieÅ› ale.
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //Wolimy wiÄ™c trzymaÄ‡ gÄ™by na kÅ‚Ã³dkÄ™.
 
 };
 
@@ -116,7 +116,7 @@ instance DIA_Rega_SLD		(C_INFO)
 	condition	 = 	DIA_Rega_SLD_Condition;
 	information	 = 	DIA_Rega_SLD_Info;
 
-	description	 = 	"Czy najemnicy nie powinni zaj¹æ siê polnymi bestiami?";
+	description	 = 	"Czy najemnicy nie powinni zajÄ…Ä‡ siÄ™ polnymi bestiami?";
 };
 
 func int DIA_Rega_SLD_Condition ()
@@ -131,9 +131,9 @@ func int DIA_Rega_SLD_Condition ()
 
 func void DIA_Rega_SLD_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Czy najemnicy nie powinni zaj¹æ siê polnymi bestiami?
-	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //Nie wiem, za co im p³ac¹, ale na pewno nie za pomaganie nam, prostym ludziom.
-	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //Sprawa polnych bestii to problem ch³opów wynajmuj¹cych ziemiê od Onara.
+	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //Czy najemnicy nie powinni zajÄ…Ä‡ siÄ™ polnymi bestiami?
+	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //Nie wiem, za co im pÅ‚acÄ…, ale na pewno nie za pomaganie nam, prostym ludziom.
+	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //Sprawa polnych bestii to problem chÅ‚opÃ³w wynajmujÄ…cych ziemiÄ™ od Onara.
 
 };
 
@@ -148,7 +148,7 @@ instance DIA_Rega_BANDITEN		(C_INFO)
 	condition	 = 	DIA_Rega_BANDITEN_Condition;
 	information	 = 	DIA_Rega_BANDITEN_Info;
 
-	description	 = 	"Jak chronicie siê przed bandytami?";
+	description	 = 	"Jak chronicie siÄ™ przed bandytami?";
 };
 
 func int DIA_Rega_BANDITEN_Condition ()
@@ -161,8 +161,8 @@ func int DIA_Rega_BANDITEN_Condition ()
 
 func void DIA_Rega_BANDITEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //Jak chronicie siê przed bandytami?
-	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //Nie chronimy siê, uciekamy. Có¿ innego nam pozostaje?
+	AI_Output			(other, self, "DIA_Rega_BANDITEN_15_00"); //Jak chronicie siÄ™ przed bandytami?
+	AI_Output			(self, other, "DIA_Rega_BANDITEN_17_01"); //Nie chronimy siÄ™, uciekamy. CÃ³Å¼ innego nam pozostaje?
 
 };
 
@@ -193,8 +193,8 @@ func int DIA_Rega_BRONKO_Condition ()
 
 func void DIA_Rega_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Kto najbardziej daje siê wam we znaki?
-	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //Nie zrozum mnie Ÿle, ale mam doœæ k³opotów. IdŸ porozmawiaj z kim innym.
+	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Kto najbardziej daje siÄ™ wam we znaki?
+	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //Nie zrozum mnie Åºle, ale mam doÅ›Ä‡ kÅ‚opotÃ³w. IdÅº porozmawiaj z kim innym.
 
 	AI_StopProcessInfos (self);
 };
@@ -211,7 +211,7 @@ instance DIA_Rega_PERMKAP1		(C_INFO)
 	information	 = 	DIA_Rega_PERMKAP1_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"G³owa do góry.";
+	description	 = 	"GÅ‚owa do gÃ³ry.";
 };
 
 func int DIA_Rega_PERMKAP1_Condition ()
@@ -224,23 +224,23 @@ func int DIA_Rega_PERMKAP1_Condition ()
 
 func void DIA_Rega_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //Uszy do góry.
+	AI_Output			(other, self, "DIA_Rega_PERMKAP1_15_00"); //Uszy do gÃ³ry.
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //£atwo powiedzieæ. W koñcu mieszkasz w mieœcie.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //Åatwo powiedzieÄ‡. W koÅ„cu mieszkasz w mieÅ›cie.
 		}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Gdyby z wami, najemnikami, nie by³o tyle problemów, reszta sama by siê jakoœ u³o¿y³a.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Gdyby z wami, najemnikami, nie byÅ‚o tyle problemÃ³w, reszta sama by siÄ™ jakoÅ› uÅ‚oÅ¼yÅ‚a.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Z dnia na dzieñ widujemy coraz mniej magów. Mam nadziejê, ¿e nie jesteœ ostatni. Potrzebujemy was bardziej ni¿ kiedykolwiek.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Z dnia na dzieÅ„ widujemy coraz mniej magÃ³w. Mam nadziejÄ™, Å¼e nie jesteÅ› ostatni. Potrzebujemy was bardziej niÅ¼ kiedykolwiek.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //To nie³atwe, kiedy pracuje siê dla kogoœ tak bezwzglêdnego jak Sekob, nadzorca niewolników.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //To nieÅ‚atwe, kiedy pracuje siÄ™ dla kogoÅ› tak bezwzglÄ™dnego jak Sekob, nadzorca niewolnikÃ³w.
 		};
 	AI_StopProcessInfos (self);
 };

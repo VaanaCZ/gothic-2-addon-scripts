@@ -46,8 +46,8 @@ func int DIA_Meldor_Hallo_Condition ()
 func void DIA_Meldor_Hallo_Info ()
 {
 	AI_Output (self, other, "DIA_Meldor_Hallo_07_00"); //Czego chcesz?
-	AI_Output (other, self, "DIA_Meldor_Hallo_15_01"); //Chcia³em siê tutaj rozejrzeæ...
-	AI_Output (self, other, "DIA_Meldor_Hallo_07_02"); //A dok¹d dok³adnie siê udajesz?
+	AI_Output (other, self, "DIA_Meldor_Hallo_15_01"); //ChciaÅ‚em siÄ™ tutaj rozejrzeÄ‡...
+	AI_Output (self, other, "DIA_Meldor_Hallo_07_02"); //A dokÄ…d dokÅ‚adnie siÄ™ udajesz?
 };
 
 // ***********************************************************
@@ -60,7 +60,7 @@ instance DIA_Meldor_Interessantes		(C_INFO)
 	condition	= DIA_Meldor_Interessantes_Condition;
 	information	= DIA_Meldor_Interessantes_Info;
 	permanent 	= FALSE;
-	description	= "Czy s¹ tutaj jakieœ interesuj¹ce rzeczy?";
+	description	= "Czy sÄ… tutaj jakieÅ› interesujÄ…ce rzeczy?";
 };
 
 func int DIA_Meldor_Interessantes_Condition ()
@@ -70,12 +70,12 @@ func int DIA_Meldor_Interessantes_Condition ()
 
 func void DIA_Meldor_Interessantes_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Interessantes_15_00"); //Czy s¹ tutaj jakieœ interesuj¹ce rzeczy?
-	AI_Output (self, other, "DIA_Meldor_Interessantes_07_01"); //Jest burdel i knajpa. W³aœciciel nazywa siê Kardif. Jeœli potrzebne ci s¹ jakieœ informacje, powinieneœ udaæ siê do niego.
-	AI_Output (self, other, "DIA_Meldor_Interessantes_07_02"); //Tak przy okazji, potrzebujesz gotówki?
+	AI_Output (other, self, "DIA_Meldor_Interessantes_15_00"); //Czy sÄ… tutaj jakieÅ› interesujÄ…ce rzeczy?
+	AI_Output (self, other, "DIA_Meldor_Interessantes_07_01"); //Jest burdel i knajpa. WÅ‚aÅ›ciciel nazywa siÄ™ Kardif. JeÅ›li potrzebne ci sÄ… jakieÅ› informacje, powinieneÅ› udaÄ‡ siÄ™ do niego.
+	AI_Output (self, other, "DIA_Meldor_Interessantes_07_02"); //Tak przy okazji, potrzebujesz gotÃ³wki?
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Kardif, w³aœciciel knajpy, sprzedaje informacje.");
+	B_LogEntry (Topic_CityTrader,"Kardif, wÅ‚aÅ›ciciel knajpy, sprzedaje informacje.");
 };
 
 // ***********************************************************
@@ -88,7 +88,7 @@ instance DIA_Meldor_Lehmar		(C_INFO)
 	condition	= DIA_Meldor_Lehmar_Condition;
 	information	= DIA_Meldor_Lehmar_Info;
 	permanent 	= FALSE;
-	description	= "A co, rozdajesz pieni¹dze?";
+	description	= "A co, rozdajesz pieniÄ…dze?";
 };
 
 func int DIA_Meldor_Lehmar_Condition ()
@@ -101,9 +101,9 @@ func int DIA_Meldor_Lehmar_Condition ()
 
 func void DIA_Meldor_Lehmar_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00"); //A co, rozdajesz pieni¹dze?
-	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01"); //Nie. Ale po drugiej stronie ulicy mieszka Lehmar. Po¿ycza pieni¹dze na procent.
-	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02"); //Jestem pewien, ¿e po¿yczy ci parê sztuk z³ota.
+	AI_Output (other, self, "DIA_Meldor_Lehmar_15_00"); //A co, rozdajesz pieniÄ…dze?
+	AI_Output (self, other, "DIA_Meldor_Lehmar_07_01"); //Nie. Ale po drugiej stronie ulicy mieszka Lehmar. PoÅ¼ycza pieniÄ…dze na procent.
+	AI_Output (self, other, "DIA_Meldor_Lehmar_07_02"); //Jestem pewien, Å¼e poÅ¼yczy ci parÄ™ sztuk zÅ‚ota.
 	Npc_ExchangeRoutine (self, "START");
 };
 
@@ -132,7 +132,7 @@ func int DIA_Meldor_Arbeitest_Condition ()
 func void DIA_Meldor_Arbeitest_Info ()
 {
 	AI_Output (other, self, "DIA_Meldor_Arbeitest_15_00"); //Pracujesz dla Lehmara?
-	AI_Output (self, other, "DIA_Meldor_Arbeitest_07_01"); //Hmm... Zgad³eœ, geniuszu.
+	AI_Output (self, other, "DIA_Meldor_Arbeitest_07_01"); //Hmm... ZgadÅ‚eÅ›, geniuszu.
 };
 
 // ***********************************************************
@@ -145,7 +145,7 @@ instance DIA_Meldor_InsOV		(C_INFO)
 	condition	= DIA_Meldor_InsOV_Condition;
 	information	= DIA_Meldor_InsOV_Info;
 	permanent 	= FALSE;
-	description	= "W³aœciwie to idê do górnego miasta.";
+	description	= "WÅ‚aÅ›ciwie to idÄ™ do gÃ³rnego miasta.";
 };
 
 func int DIA_Meldor_InsOV_Condition ()
@@ -155,9 +155,9 @@ func int DIA_Meldor_InsOV_Condition ()
 
 func void DIA_Meldor_InsOV_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_InsOV_15_00"); //W³aœciwie to idê do górnego miasta.
-	AI_Output (self, other, "DIA_Meldor_InsOV_07_01"); //Tak, oczywiœcie. A ja w³aœnie mia³em wsi¹œæ na statek, który zawiezie mnie prosto na audiencjê u Króla.
-	AI_Output (self, other, "DIA_Meldor_InsOV_07_02"); //Od kiedy pojawili siê paladyni, takich jak ty czy ja nie wpuszcza siê do górnego miasta.
+	AI_Output (other, self, "DIA_Meldor_InsOV_15_00"); //WÅ‚aÅ›ciwie to idÄ™ do gÃ³rnego miasta.
+	AI_Output (self, other, "DIA_Meldor_InsOV_07_01"); //Tak, oczywiÅ›cie. A ja wÅ‚aÅ›nie miaÅ‚em wsiÄ…Å›Ä‡ na statek, ktÃ³ry zawiezie mnie prosto na audiencjÄ™ u KrÃ³la.
+	AI_Output (self, other, "DIA_Meldor_InsOV_07_02"); //Od kiedy pojawili siÄ™ paladyni, takich jak ty czy ja nie wpuszcza siÄ™ do gÃ³rnego miasta.
 };
 
 // ***********************************************************
@@ -170,7 +170,7 @@ instance DIA_Meldor_Citizen		(C_INFO)
 	condition	= DIA_Meldor_Citizen_Condition;
 	information	= DIA_Meldor_Citizen_Info;
 	permanent 	= FALSE;
-	description	= "Czy jesteœ obywatelem tego miasta?";
+	description	= "Czy jesteÅ› obywatelem tego miasta?";
 };
 
 func int DIA_Meldor_Citizen_Condition ()
@@ -183,10 +183,10 @@ func int DIA_Meldor_Citizen_Condition ()
 
 func void DIA_Meldor_Citizen_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_Citizen_15_00"); //Czy jesteœ obywatelem tego miasta?
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_01"); //Jeœli chodzi ci o to, czy tu mieszkam, to odpowiedŸ brzmi - tak. Co nie znaczy, ¿e mogê wchodziæ do górnego miasta.
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_02"); //Tylko arystokracja ma tam wstêp, no i oczywiœcie handlarze, i rzemieœlnicy z dolnej czêœci miasta.
-	AI_Output (self, other, "DIA_Meldor_Citizen_07_03"); //W dzielnicy portowej raczej nie znajdziesz nikogo spoœród œmietanki Khorinis. Tu nie ma nawet regularnych patroli stra¿y miejskiej.
+	AI_Output (other, self, "DIA_Meldor_Citizen_15_00"); //Czy jesteÅ› obywatelem tego miasta?
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_01"); //JeÅ›li chodzi ci o to, czy tu mieszkam, to odpowiedÅº brzmi - tak. Co nie znaczy, Å¼e mogÄ™ wchodziÄ‡ do gÃ³rnego miasta.
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_02"); //Tylko arystokracja ma tam wstÄ™p, no i oczywiÅ›cie handlarze, i rzemieÅ›lnicy z dolnej czÄ™Å›ci miasta.
+	AI_Output (self, other, "DIA_Meldor_Citizen_07_03"); //W dzielnicy portowej raczej nie znajdziesz nikogo spoÅ›rÃ³d Å›mietanki Khorinis. Tu nie ma nawet regularnych patroli straÅ¼y miejskiej.
 
 };
 // ***********************************************************
@@ -199,7 +199,7 @@ instance DIA_Meldor_Smoke		(C_INFO)
 	condition	= DIA_Meldor_Smoke_Condition;
 	information	= DIA_Meldor_Smoke_Info;
 	permanent 	= FALSE;
-	description	= "Wiesz mo¿e, gdzie mogê kupiæ trochê ziela?";
+	description	= "Wiesz moÅ¼e, gdzie mogÄ™ kupiÄ‡ trochÄ™ ziela?";
 };
 
 func int DIA_Meldor_Smoke_Condition ()
@@ -213,15 +213,15 @@ func void DIA_Meldor_Smoke_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Meldor_Smoke_15_00"); //Wiesz mo¿e, gdzie mogê kupiæ trochê ziela?
+	AI_Output (other, self, "DIA_Meldor_Smoke_15_00"); //Wiesz moÅ¼e, gdzie mogÄ™ kupiÄ‡ trochÄ™ ziela?
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Meldor_Smoke_07_01"); //Nie, nie mam pojêcia.
+		AI_Output (self, other, "DIA_Meldor_Smoke_07_01"); //Nie, nie mam pojÄ™cia.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Meldor_Smoke_07_02"); //Na twoim miejscu spróbowa³bym szczêœcia w Czerwonej Latarni.
+		AI_Output (self, other, "DIA_Meldor_Smoke_07_02"); //Na twoim miejscu sprÃ³bowaÅ‚bym szczÄ™Å›cia w Czerwonej Latarni.
 	};
 };
 
@@ -238,7 +238,7 @@ instance DIA_Meldor_PERM		(C_INFO)
 	condition	= DIA_Meldor_PERM_Condition;
 	information	= DIA_Meldor_PERM_Info;
 	permanent 	= TRUE;
-	description	= "Czy ostatnio wydarzy³o siê tu coœ niezwyk³ego?";
+	description	= "Czy ostatnio wydarzyÅ‚o siÄ™ tu coÅ› niezwykÅ‚ego?";
 };
 
 func int DIA_Meldor_PERM_Condition ()
@@ -248,27 +248,27 @@ func int DIA_Meldor_PERM_Condition ()
 
 func void DIA_Meldor_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Meldor_PERM_15_00"); //Czy ostatnio wydarzy³o siê tutaj coœ ciekawego?
+	AI_Output (other, self, "DIA_Meldor_PERM_15_00"); //Czy ostatnio wydarzyÅ‚o siÄ™ tutaj coÅ› ciekawego?
 	
 	if (Kapitel <= 1)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_01"); //Nie tak dawno temu stra¿ miejska wywróci³a ca³¹ dzielnicê portow¹ do góry nogami.
-		AI_Output (self, other, "DIA_Meldor_PERM_07_02"); //Szukali skradzionych kosztownoœci. Ostatnio zdarzy³o siê tu sporo kradzie¿y. Szczególnie w lepszych dzielnicach.
-		AI_Output (self, other, "DIA_Meldor_PERM_07_03"); //NajwyraŸniej próbuj¹ zwaliæ winê na biedotê z portu.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_01"); //Nie tak dawno temu straÅ¼ miejska wywrÃ³ciÅ‚a caÅ‚Ä… dzielnicÄ™ portowÄ… do gÃ³ry nogami.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_02"); //Szukali skradzionych kosztownoÅ›ci. Ostatnio zdarzyÅ‚o siÄ™ tu sporo kradzieÅ¼y. SzczegÃ³lnie w lepszych dzielnicach.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_03"); //NajwyraÅºniej prÃ³bujÄ… zwaliÄ‡ winÄ™ na biedotÄ™ z portu.
 	}
 	else if (Andre_Diebesgilde_aufgeraeumt == TRUE)
 	&&		(Meldor_DGNews == FALSE)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_04"); //Podobno znaleŸli w kana³ach z³odziejsk¹ kryjówkê. Wszyscy przestêpcy zostali zabici.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_04"); //Podobno znaleÅºli w kanaÅ‚ach zÅ‚odziejskÄ… kryjÃ³wkÄ™. Wszyscy przestÄ™pcy zostali zabici.
 		Meldor_DGNews = TRUE;
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_05"); //Podobno w Górniczej Dolinie s¹ smoki. Ciekaw jestem, kiedy nasi paladyni zostan¹ wys³ani do walki.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_05"); //Podobno w GÃ³rniczej Dolinie sÄ… smoki. Ciekaw jestem, kiedy nasi paladyni zostanÄ… wysÅ‚ani do walki.
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output (self, other, "DIA_Meldor_PERM_07_06"); //Podobno wszystkie smoki s¹ martwe.
+		AI_Output (self, other, "DIA_Meldor_PERM_07_06"); //Podobno wszystkie smoki sÄ… martwe.
 	}
 	else
 	{
@@ -302,7 +302,7 @@ func int DIA_Meldor_VonLehmar_Condition ()
 func void DIA_Meldor_VonLehmar_Info ()
 {
 	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_00"); //Hej, zaczekaj...
-	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_01"); //Mam dla ciebie wiadomoœæ od Lehmara.
+	AI_Output (self, other, "DIA_Meldor_VonLehmar_07_01"); //Mam dla ciebie wiadomoÅ›Ä‡ od Lehmara.
 
 	AI_StopProcessInfos (self);
 

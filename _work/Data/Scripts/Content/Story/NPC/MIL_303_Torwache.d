@@ -2,7 +2,7 @@
 instance Mil_303_Torwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Straønik wrÛt";	
+	name 		= "Stra≈ºnik wr√≥t";	
 	guild 		= GIL_MIL;
 	id 			= 303;
 	voice 		= 7;

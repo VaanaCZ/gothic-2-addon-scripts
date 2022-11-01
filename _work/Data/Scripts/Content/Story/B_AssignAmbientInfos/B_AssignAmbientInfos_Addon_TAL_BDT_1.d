@@ -28,7 +28,7 @@ instance DIA_Addon_TAL_BDT_1_Hi(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Hi_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Hi_Info;
 	permanent	= TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
@@ -38,15 +38,15 @@ FUNC INT DIA_Addon_TAL_BDT_1_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//Co s³ychaæ?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Poczekam, a¿ poprosz¹ o nowego, a wtedy bêdzie moja kolej.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Hi_15_00");//Co sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Poczekam, aÅ¼ poproszÄ… o nowego, a wtedy bÄ™dzie moja kolej.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Z tych wszystkich ludzi na zewn¹trz tylko Franko wchodzi do œrodka.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Z tych wszystkich ludzi na zewnÄ…trz tylko Franko wchodzi do Å›rodka.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Teraz, gdy Franko nie ¿yje, powinienem mieæ wiêksze szanse.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Teraz, gdy Franko nie Å¼yje, powinienem mieÄ‡ wiÄ™ksze szanse.
 	};
 };
 // *************************************************************************
@@ -58,7 +58,7 @@ instance DIA_Addon_TAL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_TAL_BDT_1_Lager_Info;
 	permanent	= TRUE;
-	description = "Co mo¿esz mi powiedzieæ o obozowisku?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o obozowisku?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Lager_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Co mo¿esz mi powiedzieæ o obozowisku?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//Uwa¿aj, z kim zadzierasz! Je¿eli zaczniesz bójkê bez powodu, wszyscy zwróc¹ siê przeciwko tobie!
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//Wiêkszoœæ z nich nie chce straciæ swojego z³ota - dlatego chroni¹ siê nawzajem.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Lager_15_00");//Co moÅ¼esz mi powiedzieÄ‡ o obozowisku?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_01");//UwaÅ¼aj, z kim zadzierasz! JeÅ¼eli zaczniesz bÃ³jkÄ™ bez powodu, wszyscy zwrÃ³cÄ… siÄ™ przeciwko tobie!
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Lager_01_02");//WiÄ™kszoÅ›Ä‡ z nich nie chce straciÄ‡ swojego zÅ‚ota - dlatego chroniÄ… siÄ™ nawzajem.
 };
 // *************************************************************************
 // 							News
@@ -92,9 +92,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_1_Raven_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Co wiesz o Kruku?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//To goœæ, który jako pierwszy przyby³ tu ze swoimi ch³opcami.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//To przywódca obozu. Lepiej z nim nie zadzieraj.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Kiedyœ przyjêli piêciu nowych, bo wy³adowa³ gniew na swoich ludziach.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//To goÅ›Ä‡, ktÃ³ry jako pierwszy przybyÅ‚ tu ze swoimi chÅ‚opcami.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//To przywÃ³dca obozu. Lepiej z nim nie zadzieraj.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//KiedyÅ› przyjÄ™li piÄ™ciu nowych, bo wyÅ‚adowaÅ‚ gniew na swoich ludziach.
 };
 FUNC VOID B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_NPC slf)
 {

@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Rock_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Doœæ gadania. Oko straci³o sw¹ ochronn¹ moc. Przygotuj siê na œmieræ.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //DoÅ›Ä‡ gadania. Oko straciÅ‚o swÄ… ochronnÄ… moc. Przygotuj siÄ™ na Å›mierÄ‡.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -54,14 +54,14 @@ FUNC INT DIA_Dragon_Rock_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Rock_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Jeszcze jeden zadufany w sobie karze³, który oœmieli³ siê wspi¹æ na moj¹ ska³ê... Ach, ludzie. Tacy waleczni... i tacy w¹tli.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Jeszcze jeden zadufany w sobie karzeÅ‚, ktÃ³ry oÅ›mieliÅ‚ siÄ™ wspiÄ…Ä‡ na mojÄ… skaÅ‚Ä™... Ach, ludzie. Tacy waleczni... i tacy wÄ…tli.
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Ej, ty mówisz!
+		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Ej, ty mÃ³wisz!
 	};
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Wypatroszê ciê i rzucê twoje wnêtrznoœci œcierwojadom.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //WypatroszÄ™ ciÄ™ i rzucÄ™ twoje wnÄ™trznoÅ›ci Å›cierwojadom.
 	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //Nie tak szybko! Mam tu Oko Innosa. Odpowiesz mi najpierw na moje pytania.
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //Aaargh. Pytaj wiêc!
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //Aaargh. Pytaj wiÄ™c!
 
 };
 
@@ -75,7 +75,7 @@ instance DIA_Dragon_Rock_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Rock_WERBISTDU_Info;
 
-	description	 = 	"Kim jesteœ?";
+	description	 = 	"Kim jesteÅ›?";
 };
 
 func int DIA_Dragon_Rock_WERBISTDU_Condition ()
@@ -88,8 +88,8 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Rock_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Kim jesteœ?
-	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Nazywam siê Pedrakhan. Jak ciê dopadnê, obedrê ¿ywcem ze skóry!
+	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Kim jesteÅ›?
+	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Nazywam siÄ™ Pedrakhan. Jak ciÄ™ dopadnÄ™, obedrÄ™ Å¼ywcem ze skÃ³ry!
 
 };
 
@@ -103,7 +103,7 @@ instance DIA_Dragon_Rock_HIERARCHIE		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information	 = 	DIA_Dragon_Rock_HIERARCHIE_Info;
 
-	description	 = 	"Który z was, smoków, jest najpotê¿niejszy?";
+	description	 = 	"KtÃ³ry z was, smokÃ³w, jest najpotÄ™Å¼niejszy?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
@@ -116,12 +116,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Który z was, smoków, jest najpotê¿niejszy?
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Czerpiemy nasz¹ moc z ¿ywio³ów waszego œwiata. Ich hierarchia jest bardzo prosta.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Miêkka ziemia obdarza ¿yciem wszystkie istoty pod s³oñcem, ale otworzy siê i poch³onie ciê, jeœli zbli¿ysz siê do niej za bardzo.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //Ska³a, która prêdzej pêknie, ni¿ siê podda, wznosi siê dumnie ku niebu, by pogrzebaæ pod sob¹ nieostro¿nych. A mimo to jest przecie¿ najlepsz¹ ochron¹ przed fal¹ przyp³ywu.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Iskra ¿ycia p³onie w hucz¹cym ogniu tego œwiata. A przecie¿ ogieñ spala ca³e ¿ycie, pozostawiaj¹c po nim ledwie garstkê popio³u.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Wszystkie ¿ywio³y maj¹ moc tworzenia i niszczenia. Ale tylko w wodzie, która sta³a siê twarda jak ska³a, wszystko stanie siê s³upem soli, na którym ¿ycie jest niemo¿liwe.
+	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //KtÃ³ry z was, smokÃ³w, jest najpotÄ™Å¼niejszy?
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Czerpiemy naszÄ… moc z Å¼ywioÅ‚Ã³w waszego Å›wiata. Ich hierarchia jest bardzo prosta.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //MiÄ™kka ziemia obdarza Å¼yciem wszystkie istoty pod sÅ‚oÅ„cem, ale otworzy siÄ™ i pochÅ‚onie ciÄ™, jeÅ›li zbliÅ¼ysz siÄ™ do niej za bardzo.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //SkaÅ‚a, ktÃ³ra prÄ™dzej pÄ™knie, niÅ¼ siÄ™ podda, wznosi siÄ™ dumnie ku niebu, by pogrzebaÄ‡ pod sobÄ… nieostroÅ¼nych. A mimo to jest przecieÅ¼ najlepszÄ… ochronÄ… przed falÄ… przypÅ‚ywu.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Iskra Å¼ycia pÅ‚onie w huczÄ…cym ogniu tego Å›wiata. A przecieÅ¼ ogieÅ„ spala caÅ‚e Å¼ycie, pozostawiajÄ…c po nim ledwie garstkÄ™ popioÅ‚u.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Wszystkie Å¼ywioÅ‚y majÄ… moc tworzenia i niszczenia. Ale tylko w wodzie, ktÃ³ra staÅ‚a siÄ™ twarda jak skaÅ‚a, wszystko stanie siÄ™ sÅ‚upem soli, na ktÃ³rym Å¼ycie jest niemoÅ¼liwe.
 
 };
 

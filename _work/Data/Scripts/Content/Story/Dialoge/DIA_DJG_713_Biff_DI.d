@@ -46,16 +46,16 @@ func int DIA_Biff_DI_HALLO_Condition ()
 
 func void DIA_Biff_DI_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //No i? Gdzie s¹ te bogactwa, które mi obiecywa³eœ?
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_00"); //No i? Gdzie sÄ… te bogactwa, ktÃ³re mi obiecywaÅ‚eÅ›?
 
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_ORKS)==FALSE)
 		{
-				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //A co ci mówi³em wczeœniej, na morzu?
+				AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_01"); //A co ci mÃ³wiÅ‚em wczeÅ›niej, na morzu?
 		};
 
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Na razie masz pilnowaæ statku.
-	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //Wola³bym nie p³yn¹æ z powrotem wp³aw.
-	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Cholera. Gdybym to wczeœniej wiedzia³, zosta³bym w Khorinis.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_02"); //Na razie masz pilnowaÄ‡ statku.
+	AI_Output			(other, self, "DIA_Biff_DI_HALLO_15_03"); //WolaÅ‚bym nie pÅ‚ynÄ…Ä‡ z powrotem wpÅ‚aw.
+	AI_Output			(self, other, "DIA_Biff_DI_HALLO_07_04"); //Cholera. Gdybym to wczeÅ›niej wiedziaÅ‚, zostaÅ‚bym w Khorinis.
 	AI_StopProcessInfos (self);
 };
 
@@ -70,7 +70,7 @@ instance DIA_Biff_DI_perm		(C_INFO)
 	information	 = 	DIA_Biff_DI_perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Wszystko w porz¹dku na pok³adzie?";
+	description	 = 	"Wszystko w porzÄ…dku na pokÅ‚adzie?";
 };
 
 func int DIA_Biff_DI_perm_Condition ()
@@ -84,8 +84,8 @@ func int DIA_Biff_DI_perm_Condition ()
 
 func void DIA_Biff_DI_perm_Info ()
 {
-	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //Wszystko w porz¹dku na pok³adzie?
-	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //Taa, taa. Wszystko w porz¹dku.
+	AI_Output			(other, self, "DIA_Biff_DI_perm_15_00"); //Wszystko w porzÄ…dku na pokÅ‚adzie?
+	AI_Output			(self, other, "DIA_Biff_DI_perm_07_01"); //Taa, taa. Wszystko w porzÄ…dku.
 	AI_StopProcessInfos (self);
 };
 
@@ -115,8 +115,8 @@ func int DIA_Biff_DI_ORKS_Condition ()
 func void DIA_Biff_DI_ORKS_Info ()
 {
 	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_00"); //Te parszywe bestie!
-	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Do diab³a, co tu robisz? Mia³eœ pilnowaæ statku.
-	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //Nie utonie przez te parê chwil, stary.
+	AI_Output			(other, self, "DIA_Biff_DI_ORKS_15_01"); //Do diabÅ‚a, co tu robisz? MiaÅ‚eÅ› pilnowaÄ‡ statku.
+	AI_Output			(self, other, "DIA_Biff_DI_ORKS_07_02"); //Nie utonie przez te parÄ™ chwil, stary.
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
@@ -147,8 +147,8 @@ func void DIA_Biff_DI_UNDEADDRGDEAD_Info ()
 {
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_00"); //Czyli to wszystko?
 	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_01"); //Na razie to wszystko.
-	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //A teraz, czy mogê...
-	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //Jeœli o mnie chodzi, to mo¿esz spl¹drowaæ ca³¹ wyspê.
+	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_02"); //A teraz, czy mogÄ™...
+	AI_Output			(other, self, "DIA_Biff_DI_UNDEADDRGDEAD_15_03"); //JeÅ›li o mnie chodzi, to moÅ¼esz splÄ…drowaÄ‡ caÅ‚Ä… wyspÄ™.
 	AI_Output			(self, other, "DIA_Biff_DI_UNDEADDRGDEAD_07_04"); //Wspaniale.
 	
 	AI_StopProcessInfos (self);
@@ -181,7 +181,7 @@ func int DIA_Biff_DI_plunder_Condition ()
 
 func void DIA_Biff_DI_plunder_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_DI_plunder_07_00"); //Do diab³a. Nie teraz.
+	AI_Output			(self, other, "DIA_Biff_DI_plunder_07_00"); //Do diabÅ‚a. Nie teraz.
 	AI_StopProcessInfos (self);
 };
 

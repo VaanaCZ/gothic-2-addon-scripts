@@ -59,11 +59,11 @@ func void DIA_Dar_Hallo_Ja()
 	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_00"); //Jasne.
 	CreateInvItem (other, itmi_joint);
 	B_UseItem (other, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_01"); //Niez³e, co?
-	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_02"); //Sk¹d masz towar?
+	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_01"); //NiezÅ‚e, co?
+	AI_Output (other, self, "DIA_Dar_Hallo_Ja_15_02"); //SkÄ…d masz towar?
 	CreateInvItem (self, itmi_joint);
 	B_UseItem (self, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_03"); //Mam swoje Ÿród³a.
+	AI_Output (self, other, "DIA_Dar_Hallo_Ja_03_03"); //Mam swoje ÅºrÃ³dÅ‚a.
 	Info_ClearChoices (DIA_Dar_Hallo);	
 };
 
@@ -85,7 +85,7 @@ INSTANCE DIA_Dar_PERM (C_INFO)
 	condition   = DIA_Dar_PERM_Condition;
 	information = DIA_Dar_PERM_Info;
 	permanent   = TRUE;
-	description = "Czy poza paleniem masz jeszcze jakieœ zajêcie?";
+	description = "Czy poza paleniem masz jeszcze jakieÅ› zajÄ™cie?";
 };
 
 FUNC INT DIA_Dar_PERM_Condition()
@@ -98,12 +98,12 @@ FUNC INT DIA_Dar_PERM_Condition()
 
 FUNC VOID DIA_Dar_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Dar_PERM_15_00"); //Czy poza paleniem masz jeszcze jakieœ zajêcie?
+	AI_Output (other, self, "DIA_Dar_PERM_15_00"); //Czy poza paleniem masz jeszcze jakieÅ› zajÄ™cie?
 	
 	if (Dar_LostAgainstCipher == TRUE)
 	&& (Dar_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Dar_PERM_03_01"); //Tak, czasami pozwalam siê pobiæ jakimœ pal¹cym ziele œmieciom...
+		AI_Output (self, other, "DIA_Dar_PERM_03_01"); //Tak, czasami pozwalam siÄ™ pobiÄ‡ jakimÅ› palÄ…cym ziele Å›mieciom...
 		Dar_einmal = TRUE;
 	}
 		else //DEFAULT
@@ -123,7 +123,7 @@ INSTANCE DIA_Dar_WannaJoin (C_INFO)
 	condition   = DIA_Dar_WannaJoin_Condition;
 	information = DIA_Dar_WannaJoin_Info;
 	permanent   = FALSE;
-	description = "Chcê siê przy³¹czyæ do najemników. Masz coœ przeciwko temu?";
+	description = "ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w. Masz coÅ› przeciwko temu?";
 };
 
 FUNC INT DIA_Dar_WannaJoin_Condition()
@@ -138,7 +138,7 @@ FUNC INT DIA_Dar_WannaJoin_Condition()
 
 FUNC VOID DIA_Dar_WannaJoin_Info()
 {
-	AI_Output (other, self, "DIA_Dar_WannaJoin_15_00"); //Chcê siê przy³¹czyæ do najemników. Masz coœ przeciwko temu?
+	AI_Output (other, self, "DIA_Dar_WannaJoin_15_00"); //ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do najemnikÃ³w. Masz coÅ› przeciwko temu?
 	AI_Output (self, other, "DIA_Dar_WannaJoin_03_01"); //A kogo to obchodzi...
 };
 
@@ -153,12 +153,12 @@ INSTANCE DIA_Dar_DuDieb (C_INFO)
 	condition   = DIA_Dar_DuDieb_Condition;
 	information = DIA_Dar_DuDieb_Info;
 	permanent   = FALSE;
-	description = "Cipher powiedzia³ mi, ¿e ktoœ mu ukrad³ paczkê bagiennego ziela.";
+	description = "Cipher powiedziaÅ‚ mi, Å¼e ktoÅ› mu ukradÅ‚ paczkÄ™ bagiennego ziela.";
 };
 
 FUNC INT DIA_Dar_DuDieb_Condition()
 {
-	if (Npc_KnowsInfo (other, DIA_Cipher_TradeWhat)) //von Diebstahl gehört
+	if (Npc_KnowsInfo (other, DIA_Cipher_TradeWhat)) //von Diebstahl gehÃ¶rt
 	&& (MIS_Cipher_Paket == LOG_RUNNING)
 	{
 		return TRUE;
@@ -167,9 +167,9 @@ FUNC INT DIA_Dar_DuDieb_Condition()
 
 FUNC VOID DIA_Dar_DuDieb_Info()
 {
-	AI_Output (other, self, "DIA_Dar_DuDieb_15_00"); //Cipher powiedzia³ mi, ¿e ktoœ mu ukrad³ paczkê bagiennego ziela.
-	AI_Output (self, other, "DIA_Dar_DuDieb_03_01"); //(œmiech)
-	AI_Output (other, self, "DIA_Dar_DuDieb_15_02"); //Wiesz coœ mo¿e na ten temat?
+	AI_Output (other, self, "DIA_Dar_DuDieb_15_00"); //Cipher powiedziaÅ‚ mi, Å¼e ktoÅ› mu ukradÅ‚ paczkÄ™ bagiennego ziela.
+	AI_Output (self, other, "DIA_Dar_DuDieb_03_01"); //(Å›miech)
+	AI_Output (other, self, "DIA_Dar_DuDieb_15_02"); //Wiesz coÅ› moÅ¼e na ten temat?
 	AI_Output (self, other, "DIA_Dar_DuDieb_03_03"); //Nie.
 	
 	Dar_Verdacht = TRUE;
@@ -205,14 +205,14 @@ FUNC VOID DIA_Dar_WoPaket_Info()
 		
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{	
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_01"); //Dobra, ju¿ dobra. Sprzeda³em to jakiemuœ obdartusowi w mieœcie.
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_02"); //To by³o w porcie. Nie pamiêtam, jak wygl¹da³.
-		AI_Output (other, self, "DIA_Dar_WoPaket_15_03"); //Czy¿byœ znowu domaga³ siê lania?
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_04"); //Powa¿nie cz³owieku, by³em kompletnie najarany. Nie mam zielonego pojêcia, jak wygl¹da³ ten goœæ.
-		AI_Output (self, other, "DIA_Dar_WoPaket_03_05"); //Pamiêtam tylko tyle, ¿e by³o to w porcie niedaleko miejsca, gdzie buduj¹ ³odzie.
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_01"); //Dobra, juÅ¼ dobra. SprzedaÅ‚em to jakiemuÅ› obdartusowi w mieÅ›cie.
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_02"); //To byÅ‚o w porcie. Nie pamiÄ™tam, jak wyglÄ…daÅ‚.
+		AI_Output (other, self, "DIA_Dar_WoPaket_15_03"); //CzyÅ¼byÅ› znowu domagaÅ‚ siÄ™ lania?
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_04"); //PowaÅ¼nie czÅ‚owieku, byÅ‚em kompletnie najarany. Nie mam zielonego pojÄ™cia, jak wyglÄ…daÅ‚ ten goÅ›Ä‡.
+		AI_Output (self, other, "DIA_Dar_WoPaket_03_05"); //PamiÄ™tam tylko tyle, Å¼e byÅ‚o to w porcie niedaleko miejsca, gdzie budujÄ… Å‚odzie.
 	
 		Dar_Dieb = TRUE;
-		B_LogEntry (Topic_CipherPaket,"Dar przyzna³ siê do kradzie¿y paczki ziela. Sprzeda³ j¹ w dzielnicy portowej Khorinis, niedaleko stoczni.");
+		B_LogEntry (Topic_CipherPaket,"Dar przyznaÅ‚ siÄ™ do kradzieÅ¼y paczki ziela. SprzedaÅ‚ jÄ… w dzielnicy portowej Khorinis, niedaleko stoczni.");
 	}
 	else
 	{
@@ -231,7 +231,7 @@ INSTANCE DIA_Dar_AufsMaul (C_INFO)
 	condition   = DIA_Dar_AufsMaul_Condition;
 	information = DIA_Dar_AufsMaul_Info;
 	permanent   = FALSE;
-	description = "Wyduszê to z ciebie!";
+	description = "WyduszÄ™ to z ciebie!";
 };
 
 FUNC INT DIA_Dar_AufsMaul_Condition()
@@ -246,10 +246,10 @@ FUNC INT DIA_Dar_AufsMaul_Condition()
 
 FUNC VOID DIA_Dar_AufsMaul_Info()
 {
-	AI_Output (other, self, "DIA_Dar_AufsMaul_15_00"); //Wyduszê to z ciebie!
-	AI_Output (self, other, "DIA_Dar_AufsMaul_03_01"); //Spokojnie. Jestem zbyt upalony, ¿eby z tob¹ walczyæ.
+	AI_Output (other, self, "DIA_Dar_AufsMaul_15_00"); //WyduszÄ™ to z ciebie!
+	AI_Output (self, other, "DIA_Dar_AufsMaul_03_01"); //Spokojnie. Jestem zbyt upalony, Å¼eby z tobÄ… walczyÄ‡.
 	B_GiveInvItems (self, other, itmi_joint, 1);
-	AI_Output (self, other, "DIA_Dar_AufsMaul_03_02"); //Najpierw weŸ sobie porz¹dnego macha.
+	AI_Output (self, other, "DIA_Dar_AufsMaul_03_02"); //Najpierw weÅº sobie porzÄ…dnego macha.
 };
 
 // ************************************************************
@@ -277,11 +277,11 @@ FUNC INT DIA_Dar_Kameradenschwein_Condition()
 
 FUNC VOID DIA_Dar_Kameradenschwein_Info()
 {
-	AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_00"); //Nie potrafisz trzymaæ jêzyka za zêbami? Powiedzia³eœ Cipherowi, ¿e ukrad³em jego ziele!
+	AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_00"); //Nie potrafisz trzymaÄ‡ jÄ™zyka za zÄ™bami? PowiedziaÅ‚eÅ› Cipherowi, Å¼e ukradÅ‚em jego ziele!
 	if (Npc_KnowsInfo (other, DIA_Dar_WannaJoin))
 	&& (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_01");  //Jasne, ju¿ idê oddaæ na ciebie g³os.
+		AI_Output (self, other, "DIA_Dar_Kameradenschwein_03_01");  //Jasne, juÅ¼ idÄ™ oddaÄ‡ na ciebie gÅ‚os.
 	};
 };
 
@@ -296,7 +296,7 @@ INSTANCE DIA_Dar_Pilztabak (C_INFO)
 	condition   = DIA_Dar_Pilztabak_Condition;
 	information = DIA_Dar_Pilztabak_Info;
 	permanent   = FALSE;
-	description	= "Czy kiedykolwiek próbowa³eœ grzybowego tytoniu?";
+	description	= "Czy kiedykolwiek prÃ³bowaÅ‚eÅ› grzybowego tytoniu?";
 };
 
 FUNC INT DIA_Dar_Pilztabak_Condition()
@@ -309,23 +309,23 @@ FUNC INT DIA_Dar_Pilztabak_Condition()
 
 FUNC VOID DIA_Dar_Pilztabak_Info()
 {
-	AI_Output (other, self, "DIA_Dar_Pilztabak_15_00"); //Czy kiedykolwiek próbowa³eœ grzybowego tytoniu?
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_01"); //Brzmi interesuj¹co. Dawaj.
+	AI_Output (other, self, "DIA_Dar_Pilztabak_15_00"); //Czy kiedykolwiek prÃ³bowaÅ‚eÅ› grzybowego tytoniu?
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_01"); //Brzmi interesujÄ…co. Dawaj.
 	B_GiveInvItems (other, self, Itmi_Pilztabak, 1);
 	AI_Output (self, other, "DIA_Dar_Pilztabak_03_02"); //No dobrze, zaczynamy...
 	CreateInvItem (self, itmi_joint);
 	B_UseItem (self, itmi_joint);
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_03"); //Czy kiedykolwiek pali³eœ ten towar?
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_03"); //Czy kiedykolwiek paliÅ‚eÅ› ten towar?
 	AI_Output (other, self, "DIA_Dar_Pilztabak_15_04"); //Hm...
 	CreateInvItem (self, itmi_joint);
 	B_UseItem (self, itmi_joint);
 	AI_Output (self, other, "DIA_Dar_Pilztabak_03_05"); //Tak czy nie?
-	AI_Output (other, self, "DIA_Dar_Pilztabak_15_06"); //Jestem ostatnio trochê zajêty...
+	AI_Output (other, self, "DIA_Dar_Pilztabak_15_06"); //Jestem ostatnio trochÄ™ zajÄ™ty...
 	AI_Output (self, other, "DIA_Dar_Pilztabak_03_07"); //O cholera!
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_08"); //Na œwiêtego Rhobara!
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_08"); //Na Å›wiÄ™tego Rhobara!
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self, other, "DIA_Dar_Pilztabak_03_09"); //Ten towar jest za mocny! Lepiej go nawet nie próbuj!
+	AI_Output (self, other, "DIA_Dar_Pilztabak_03_09"); //Ten towar jest za mocny! Lepiej go nawet nie prÃ³buj!
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -409,7 +409,7 @@ instance DIA_Dar_ORCRING		(C_INFO)
 	condition	 = 	DIA_Dar_ORCRING_Condition;
 	information	 = 	DIA_Dar_ORCRING_Info;
 
-	description	 = 	"Zdaje siê, ¿e brakuje tu kilku najemników.";
+	description	 = 	"Zdaje siÄ™, Å¼e brakuje tu kilku najemnikÃ³w.";
 };
 
 func int DIA_Dar_ORCRING_Condition ()
@@ -422,10 +422,10 @@ func int DIA_Dar_ORCRING_Condition ()
 
 func void DIA_Dar_ORCRING_Info ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_15_00"); //Zdaje siê, ¿e brakuje tu kilku najemników.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_03_01"); //Jasne. To prawda. Sylvio jest ca³e mile st¹d i zabra³ ze sob¹ po³owê za³ogi.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_03_02"); //Kogo to obchodzi? Z Lee i jego ch³opakami mam szansê staæ siê naprawdê kimœ. Potrzebujê tylko kopa.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_03_03"); //Gdybym zdo³a³ udowodniæ Lee, ¿e jestem naprawdê twardym facetem, mo¿e nawet mianowa³by mnie jednym ze swoich ochroniarzy.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_15_00"); //Zdaje siÄ™, Å¼e brakuje tu kilku najemnikÃ³w.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_03_01"); //Jasne. To prawda. Sylvio jest caÅ‚e mile stÄ…d i zabraÅ‚ ze sobÄ… poÅ‚owÄ™ zaÅ‚ogi.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_03_02"); //Kogo to obchodzi? Z Lee i jego chÅ‚opakami mam szansÄ™ staÄ‡ siÄ™ naprawdÄ™ kimÅ›. PotrzebujÄ™ tylko kopa.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_03_03"); //Gdybym zdoÅ‚aÅ‚ udowodniÄ‡ Lee, Å¼e jestem naprawdÄ™ twardym facetem, moÅ¼e nawet mianowaÅ‚by mnie jednym ze swoich ochroniarzy.
 
 	Info_ClearChoices	(DIA_Dar_ORCRING);
 	Info_AddChoice	(DIA_Dar_ORCRING, "To mnie nie dotyczy.", DIA_Dar_ORCRING_no );
@@ -433,50 +433,50 @@ func void DIA_Dar_ORCRING_Info ()
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG) || (hero.guild == GIL_KDF))
 	{
-		Info_AddChoice	(DIA_Dar_ORCRING, "Jak mia³oby to niby wygl¹daæ?", DIA_Dar_ORCRING_wie );
+		Info_AddChoice	(DIA_Dar_ORCRING, "Jak miaÅ‚oby to niby wyglÄ…daÄ‡?", DIA_Dar_ORCRING_wie );
 	};
 };
 
 func void DIA_Dar_ORCRING_necken ()
 {
 	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_15_00"); //Ty? Twardzielem?
-	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_01"); //Zamknij siê. Kim ty w ogóle jesteœ?
+	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_01"); //Zamknij siÄ™. Kim ty w ogÃ³le jesteÅ›?
 	
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_02"); //Pó³g³ówek z miasta. Gdyby ka¿dy by³ taki jak ty, to...
+			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_02"); //PÃ³Å‚gÅ‚Ã³wek z miasta. Gdyby kaÅ¼dy byÅ‚ taki jak ty, to...
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_03"); //By³eœ tu tylko parê dni, a ju¿ wymiêkasz.
+			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_03"); //ByÅ‚eÅ› tu tylko parÄ™ dni, a juÅ¼ wymiÄ™kasz.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_04"); //Kogo próbujesz przestraszyæ tymi magicznymi bredniami? Chyba nie mnie?
+			AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_04"); //Kogo prÃ³bujesz przestraszyÄ‡ tymi magicznymi bredniami? Chyba nie mnie?
 		}; 
 	
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 	{
-		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_05"); //W³aœciwie, jak siê tak nad tym zastanowiæ, to roz³upanie twojej czaszki z pewnoœci¹ zapewni³oby mi szacunek wœród ch³opaków Lee.
+		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_05"); //WÅ‚aÅ›ciwie, jak siÄ™ tak nad tym zastanowiÄ‡, to rozÅ‚upanie twojej czaszki z pewnoÅ›ciÄ… zapewniÅ‚oby mi szacunek wÅ›rÃ³d chÅ‚opakÃ³w Lee.
 
 		Info_ClearChoices	(DIA_Dar_ORCRING);
 		Info_AddChoice	(DIA_Dar_ORCRING, "Nie mam czasu na te bzdury.", DIA_Dar_ORCRING_necken_no );
-		Info_AddChoice	(DIA_Dar_ORCRING, "Dobrze. Tylko spróbuj.", DIA_Dar_ORCRING_necken_schlagen );
+		Info_AddChoice	(DIA_Dar_ORCRING, "Dobrze. Tylko sprÃ³buj.", DIA_Dar_ORCRING_necken_schlagen );
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_06"); //Tylko poczekaj. Znajdê jakiœ sposób, ¿eby zrobiæ wra¿enie na Lee.
+		AI_Output			(self, other, "DIA_Dar_ORCRING_necken_03_06"); //Tylko poczekaj. ZnajdÄ™ jakiÅ› sposÃ³b, Å¼eby zrobiÄ‡ wraÅ¼enie na Lee.
 	};
 };
 var int Dar_FightAgainstPaladin;
 func void DIA_Dar_ORCRING_necken_schlagen ()
 {
 	Dar_FightAgainstPaladin = TRUE;
-	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_schlagen_15_00"); //Dobrze. Tylko spróbuj.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_schlagen_03_01"); //Och, nie mogê siê doczekaæ.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_schlagen_15_00"); //Dobrze. Tylko sprÃ³buj.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_schlagen_03_01"); //Och, nie mogÄ™ siÄ™ doczekaÄ‡.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };
@@ -484,20 +484,20 @@ func void DIA_Dar_ORCRING_necken_schlagen ()
 func void DIA_Dar_ORCRING_necken_no ()
 {
 	AI_Output			(other, self, "DIA_Dar_ORCRING_necken_no_15_00"); //Nie mam czasu na te bzdury.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_no_03_01"); //No tak. Rycerz sprawiedliwoœci w lœni¹cej zbroi, zapomnia³em. Szkoda, myœla³em, ¿e staæ ciê na coœ wiêcej.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_necken_no_03_01"); //No tak. Rycerz sprawiedliwoÅ›ci w lÅ›niÄ…cej zbroi, zapomniaÅ‚em. Szkoda, myÅ›laÅ‚em, Å¼e staÄ‡ ciÄ™ na coÅ› wiÄ™cej.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Dar_ORCRING_wie ()
 {
-	AI_Output			(other, self, "DIA_Dar_ORCRING_wie_15_00"); //Jak mia³oby to niby wygl¹daæ?
-	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_01"); //Tak do koñca to nie wiem. Jakieœ orkowe trofeum nie by³oby najgorsze...
-	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_02"); //Jakieœ insygnia orkowych przywódców albo coœ w tym stylu. Sztandar, naramiennik, pierœcieñ, no wiesz, o co mi chodzi.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_03"); //To chyba oczywiste, ¿e nic poœledniejszego nie wchodzi w rachubê.
+	AI_Output			(other, self, "DIA_Dar_ORCRING_wie_15_00"); //Jak miaÅ‚oby to niby wyglÄ…daÄ‡?
+	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_01"); //Tak do koÅ„ca to nie wiem. JakieÅ› orkowe trofeum nie byÅ‚oby najgorsze...
+	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_02"); //JakieÅ› insygnia orkowych przywÃ³dcÃ³w albo coÅ› w tym stylu. Sztandar, naramiennik, pierÅ›cieÅ„, no wiesz, o co mi chodzi.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_wie_03_03"); //To chyba oczywiste, Å¼e nic poÅ›ledniejszego nie wchodzi w rachubÄ™.
 	
 	Log_CreateTopic (TOPIC_Dar_BringOrcEliteRing, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Dar_BringOrcEliteRing, LOG_RUNNING);
-	B_LogEntry (TOPIC_Dar_BringOrcEliteRing,"Dar chce zyskaæ szacunek najemników. Dlatego potrzebuje jakiegoœ orkowego trofeum - sztandaru, naramiennika, pierœcienia..."); 
+	B_LogEntry (TOPIC_Dar_BringOrcEliteRing,"Dar chce zyskaÄ‡ szacunek najemnikÃ³w. Dlatego potrzebuje jakiegoÅ› orkowego trofeum - sztandaru, naramiennika, pierÅ›cienia..."); 
 
 	MIS_Dar_BringOrcEliteRing = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Dar_ORCRING);
@@ -506,7 +506,7 @@ func void DIA_Dar_ORCRING_wie ()
 func void DIA_Dar_ORCRING_no ()
 {
 	AI_Output			(other, self, "DIA_Dar_ORCRING_no_15_00"); //To mnie nie dotyczy.
-	AI_Output			(self, other, "DIA_Dar_ORCRING_no_03_01"); //Oczywiœcie. By³bym naprawdê zdumiony.
+	AI_Output			(self, other, "DIA_Dar_ORCRING_no_03_01"); //OczywiÅ›cie. ByÅ‚bym naprawdÄ™ zdumiony.
 	Info_ClearChoices	(DIA_Dar_ORCRING);
 };
 
@@ -533,8 +533,8 @@ func int DIA_Dar_FIGHTAGAINSTPALOVER_Condition ()
 
 func void DIA_Dar_FIGHTAGAINSTPALOVER_Info ()
 {
-	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_00"); //No có¿, chyba nie zyskam uznania Lee, ponownie wdaj¹c siê z tob¹ w walkê.
-	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_01"); //Nie potrzebujê wrogów. Wiêc mo¿e po prostu zapomnijmy o tych bzdurach, co ty na to?
+	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_00"); //No cÃ³Å¼, chyba nie zyskam uznania Lee, ponownie wdajÄ…c siÄ™ z tobÄ… w walkÄ™.
+	AI_Output			(self, other, "DIA_Dar_FIGHTAGAINSTPALOVER_03_01"); //Nie potrzebujÄ™ wrogÃ³w. WiÄ™c moÅ¼e po prostu zapomnijmy o tych bzdurach, co ty na to?
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };
@@ -549,7 +549,7 @@ instance DIA_Dar_BRINGORCELITERING		(C_INFO)
 	condition	 = 	DIA_Dar_BRINGORCELITERING_Condition;
 	information	 = 	DIA_Dar_BRINGORCELITERING_Info;
 
-	description	 = 	"Mam tutaj orkowe trofeum, na którym ci zale¿a³o.";
+	description	 = 	"Mam tutaj orkowe trofeum, na ktÃ³rym ci zaleÅ¼aÅ‚o.";
 };
 
 func int DIA_Dar_BRINGORCELITERING_Condition ()
@@ -564,50 +564,50 @@ func int DIA_Dar_BRINGORCELITERING_Condition ()
 
 func void DIA_Dar_BRINGORCELITERING_Info ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_00"); //Mam tutaj orkowe trofeum, na którym ci zale¿a³o.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_01"); //Co mi przynios³eœ?
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_02"); //Pierœcieñ orkowego herszta.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_03"); //Có¿, w takim wypadku... Co za to chcesz?
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_00"); //Mam tutaj orkowe trofeum, na ktÃ³rym ci zaleÅ¼aÅ‚o.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_01"); //Co mi przyniosÅ‚eÅ›?
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_15_02"); //PierÅ›cieÅ„ orkowego herszta.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_03_03"); //CÃ³Å¼, w takim wypadku... Co za to chcesz?
 	MIS_Dar_BringOrcEliteRing = LOG_SUCCESS;
 
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
 
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Co mo¿esz mi zaoferowaæ?", DIA_Dar_BRINGORCELITERING_was );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Co moÅ¼esz mi zaoferowaÄ‡?", DIA_Dar_BRINGORCELITERING_was );
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Daj mi z³oto.", DIA_Dar_BRINGORCELITERING_geld );
+		Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Daj mi zÅ‚oto.", DIA_Dar_BRINGORCELITERING_geld );
 	};
 		
 };
 func void DIA_Dar_BRINGORCELITERING_geld ()
 {
 	
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_00"); //Daj mi z³oto.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_00"); //Daj mi zÅ‚oto.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-		AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_01"); //Hm. 600 z³otych monet?
+		AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_01"); //Hm. 600 zÅ‚otych monet?
 		AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_15_02"); //O co chodzi?
 	};
 
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_03"); //Dobrze. Dam ci za niego 1200 z³otych monet.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_03"); //Dobrze. Dam ci za niego 1200 zÅ‚otych monet.
 	
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_04"); //WeŸ pieni¹dze albo zatrzymaj sobie pierœcieñ.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_03_04"); //WeÅº pieniÄ…dze albo zatrzymaj sobie pierÅ›cieÅ„.
 	};
 	
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "To za ma³o.", DIA_Dar_BRINGORCELITERING_geld_no );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "To za maÅ‚o.", DIA_Dar_BRINGORCELITERING_geld_no );
 	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Umowa stoi.", DIA_Dar_BRINGORCELITERING_geld_ok );
 
 };
 func void DIA_Dar_BRINGORCELITERING_geld_ok ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_ok_15_00"); //Umowa stoi. Oto pierœcieñ.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_ok_15_00"); //Umowa stoi. Oto pierÅ›cieÅ„.
 	B_GiveInvItems 		(other, self, ItRi_OrcEliteRing, 1);					
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_ok_03_01"); //Dziêki. Ju¿ siê nie mogê doczekaæ, co powiedz¹ na to inni.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_ok_03_01"); //DziÄ™ki. JuÅ¼ siÄ™ nie mogÄ™ doczekaÄ‡, co powiedzÄ… na to inni.
 
 	CreateInvItems 		(self, ItMi_Gold, 1200);									
 	B_GiveInvItems 		(self, other, ItMi_Gold, 1200);					
@@ -618,33 +618,33 @@ func void DIA_Dar_BRINGORCELITERING_geld_ok ()
 
 func void DIA_Dar_BRINGORCELITERING_geld_no ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_no_15_00"); //To za ma³o.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_no_03_01"); //A ja uwa¿am, ¿e to za du¿o. Bez obrazy, ale jak dla mnie to jakiœ podejrzany interes.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_geld_no_15_00"); //To za maÅ‚o.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_geld_no_03_01"); //A ja uwaÅ¼am, Å¼e to za duÅ¼o. Bez obrazy, ale jak dla mnie to jakiÅ› podejrzany interes.
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
 };
 
 func void DIA_Dar_BRINGORCELITERING_was ()
 {
-	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_15_00"); //Co mo¿esz mi zaoferowaæ?
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_01"); //Mo¿esz przyj¹æ pieni¹dze albo ten amulet, który... hm, powiedzmy, ¿e wpad³ mi w rêce jakiœ czas temu.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_02"); //Podnosi zrêcznoœæ. Wypróbowa³em go ju¿ parê razy.
+	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_15_00"); //Co moÅ¼esz mi zaoferowaÄ‡?
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_01"); //MoÅ¼esz przyjÄ…Ä‡ pieniÄ…dze albo ten amulet, ktÃ³ry... hm, powiedzmy, Å¼e wpadÅ‚ mi w rÄ™ce jakiÅ› czas temu.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_03_02"); //Podnosi zrÄ™cznoÅ›Ä‡. WyprÃ³bowaÅ‚em go juÅ¼ parÄ™ razy.
 
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
-	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Daj mi z³oto.", DIA_Dar_BRINGORCELITERING_geld );
+	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Daj mi zÅ‚oto.", DIA_Dar_BRINGORCELITERING_geld );
 	Info_AddChoice	(DIA_Dar_BRINGORCELITERING, "Daj mi amulet.", DIA_Dar_BRINGORCELITERING_was_am );
 };
 
 func void DIA_Dar_BRINGORCELITERING_was_am ()
 {
 	AI_Output			(other, self, "DIA_Dar_BRINGORCELITERING_was_am_15_00"); //Daj mi amulet.
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_01"); //Jasne. Mi³ej zabawy. A teraz poproszê pierœcieñ.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_01"); //Jasne. MiÅ‚ej zabawy. A teraz poproszÄ™ pierÅ›cieÅ„.
 
 	B_GiveInvItems 		(other, self, ItRi_OrcEliteRing, 1);					
 	CreateInvItems 		(self, ItAm_Dex_01, 1);									
 	B_GiveInvItems 		(self, other, ItAm_Dex_01, 1);					
 	B_GivePlayerXP 		(XP_Dar_BringOrcEliteRing);
 
-	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_02"); //Interesy z tob¹ to sama przyjemnoœæ.
+	AI_Output			(self, other, "DIA_Dar_BRINGORCELITERING_was_am_03_02"); //Interesy z tobÄ… to sama przyjemnoÅ›Ä‡.
 	Info_ClearChoices	(DIA_Dar_BRINGORCELITERING);
 
 };

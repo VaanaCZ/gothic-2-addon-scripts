@@ -28,7 +28,7 @@ instance DIA_PAL_298_Pass		(C_INFO)
 	condition	 = 	DIA_PAL_298_Pass_Condition;
 	information	 = 	DIA_PAL_298_Pass_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Dok¹d prowadzi ta œcie¿ka?";
+	description	 = 	"DokÄ…d prowadzi ta Å›cieÅ¼ka?";
 };
 func int DIA_PAL_298_Pass_Condition ()
 {	
@@ -39,10 +39,10 @@ func int DIA_PAL_298_Pass_Condition ()
 };
 func void DIA_PAL_298_Pass_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Dok¹d prowadzi ta œcie¿ka?
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Za bram¹ le¿y prze³êcz prowadz¹ca do Górniczej Doliny.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//Po tej stronie jesteœmy my - po drugiej zaœ okopa³a siê grupa orków.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Lepiej zawróæ - têdy nie przejdziesz.
+	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//DokÄ…d prowadzi ta Å›cieÅ¼ka?
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Za bramÄ… leÅ¼y przeÅ‚Ä™cz prowadzÄ…ca do GÃ³rniczej Doliny.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//Po tej stronie jesteÅ›my my - po drugiej zaÅ› okopaÅ‚a siÄ™ grupa orkÃ³w.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Lepiej zawrÃ³Ä‡ - tÄ™dy nie przejdziesz.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRESPASS
@@ -65,9 +65,9 @@ func int DIA_PAL_298_TRESPASS_Condition ()
 };
 func void DIA_PAL_298_TRESPASS_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Jesteœ pewien, ¿e chcesz tam iœæ? Obawiam siê, ¿e daleko nie zajdziesz - po drugiej stronie stacjonuj¹ orkowie.
-	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Jeœli istnieje droga prowadz¹ca do Górniczej Doliny, odnajdê j¹.
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//W porz¹dku, wiêc idŸ. Niech Innos ciê prowadzi.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//JesteÅ› pewien, Å¼e chcesz tam iÅ›Ä‡? Obawiam siÄ™, Å¼e daleko nie zajdziesz - po drugiej stronie stacjonujÄ… orkowie.
+	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//JeÅ›li istnieje droga prowadzÄ…ca do GÃ³rniczej Doliny, odnajdÄ™ jÄ….
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//W porzÄ…dku, wiÄ™c idÅº. Niech Innos ciÄ™ prowadzi.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -79,7 +79,7 @@ instance DIA_PAL_298_Perm1		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm1_Condition;
 	information	 = 	DIA_PAL_298_Perm1_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Wiêc jeœli pójdê, to na w³asne ryzyko?";
+	description	 = 	"WiÄ™c jeÅ›li pÃ³jdÄ™, to na wÅ‚asne ryzyko?";
 };
 func int DIA_PAL_298_Perm1_Condition ()
 {	
@@ -91,8 +91,8 @@ func int DIA_PAL_298_Perm1_Condition ()
 };
 func void DIA_PAL_298_Perm1_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//Wiêc jeœli pójdê, to na w³asne ryzyko?
-	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Jeœli pójdziesz, zginiesz. Dlatego w³aœnie tu jesteœmy. Staramy siê nie dopuœciæ do takiego aktu g³upoty.
+	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//WiÄ™c jeÅ›li pÃ³jdÄ™, to na wÅ‚asne ryzyko?
+	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//JeÅ›li pÃ³jdziesz, zginiesz. Dlatego wÅ‚aÅ›nie tu jesteÅ›my. Staramy siÄ™ nie dopuÅ›ciÄ‡ do takiego aktu gÅ‚upoty.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 
@@ -104,7 +104,7 @@ instance DIA_PAL_298_Perm2		(C_INFO)
 	condition	 = 	DIA_PAL_298_Perm2_Condition;
 	information	 = 	DIA_PAL_298_Perm2_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Jak wygl¹da sytuacja?";
+	description	 = 	"Jak wyglÄ…da sytuacja?";
 };
 func int DIA_PAL_298_Perm2_Condition ()
 {	
@@ -115,8 +115,8 @@ func int DIA_PAL_298_Perm2_Condition ()
 };
 func void DIA_PAL_298_Perm2_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//Jak wygl¹da sytuacja?
-	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Wszystko jakby siê uspokoi³o. Sytuacja jest pod nasz¹ kontrol¹.
+	AI_Output (other, self, "DIA_PAL_298_Perm2_15_00");//Jak wyglÄ…da sytuacja?
+	AI_Output (self, other, "DIA_PAL_298_Perm2_09_01");//Wszystko jakby siÄ™ uspokoiÅ‚o. Sytuacja jest pod naszÄ… kontrolÄ….
 };
 
 

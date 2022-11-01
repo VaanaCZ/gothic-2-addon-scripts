@@ -73,62 +73,62 @@ func int DIA_Mil_333_Stadtwache_FirstWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //STÓJ!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_00"); //STÃ“J!
 		
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
 		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //O co chodzi?
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //Ju¿ ty wiesz o co, nawet a¿ za dobrze.
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //JuÅ¼ ty wiesz o co, nawet aÅ¼ za dobrze.
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Jesteœ poszukiwany w mieœcie za morderstwo.
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //JesteÅ› poszukiwany w mieÅ›cie za morderstwo.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //Nie potrzebujemy tu ¿adnych brudnych z³odziei!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_04"); //Nie potrzebujemy tu Å¼adnych brudnych zÅ‚odziei!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //W tym mieœcie nie ma miejsca dla awanturników!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //W tym mieÅ›cie nie ma miejsca dla awanturnikÃ³w!
 		};
 	
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //A dlaczego mielibyœmy ciê wpuœciæ?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //A dlaczego mielibyÅ›my ciÄ™ wpuÅ›ciÄ‡?
 	}
 	else // ------ normales Reinkommen ------
 	{
 		 var C_Item itm; itm = Npc_GetEquippedArmor(other);
 		
-		// ------ ohne Rüstung ODER als Bauer ------
+		// ------ ohne RÃ¼stung ODER als Bauer ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_L) == TRUE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_M) == TRUE)
 		{
 			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Tak?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //Wygl¹dasz na biedaka, nie potrzebujemy takich w naszym mieœcie.
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //WyglÄ…dasz na biedaka, nie potrzebujemy takich w naszym mieÅ›cie.
 			
 			if (Npc_HasItems(other, ItWr_Passierschein))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //Ale¿ ja mam przepustkê!
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_09"); //AleÅ¼ ja mam przepustkÄ™!
 				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_10"); //Dotyczy jedynie drugiej bramy.
 			};
 			
 			if (Npc_KnowsInfo (other, DIA_Mil_310_Stadtwache_MilizWerden))
 			{
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Mam zamiar zaci¹gn¹æ siê do stra¿y miejskiej!
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Heh! Nie rozœmieszaj mnie! Wynocha pod drug¹ bramê, mo¿e TAM uwierz¹ w te brednie.
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Ju¿ tam by³em, przys³ano mnie tutaj.
-				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //Cholera! Œmietanka zawsze trafia do nas...
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Mam zamiar zaciÄ…gnÄ…Ä‡ siÄ™ do straÅ¼y miejskiej!
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Heh! Nie rozÅ›mieszaj mnie! Wynocha pod drugÄ… bramÄ™, moÅ¼e TAM uwierzÄ… w te brednie.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //JuÅ¼ tam byÅ‚em, przysÅ‚ano mnie tutaj.
+				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //Cholera! Åšmietanka zawsze trafia do nas...
 			};
 		}
- 	 	// ------ alle anderen Rüstungen ------
+ 	 	// ------ alle anderen RÃ¼stungen ------
 		else 
 		{
 			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //Co?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //Chcia³em jedynie rzuciæ na ciebie okiem. Wygl¹da na to, ¿e masz pieni¹dze. Mo¿esz wejœæ.
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_16"); //ChciaÅ‚em jedynie rzuciÄ‡ na ciebie okiem. WyglÄ…da na to, Å¼e masz pieniÄ…dze. MoÅ¼esz wejÅ›Ä‡.
 			
 			self.aivar[AIV_PASSGATE] = TRUE;
 			Stadtwache_310.aivar[AIV_PASSGATE] = TRUE; 	//Wache vom anderen Stadttor
@@ -169,7 +169,7 @@ FUNC INT DIA_Mil_333_Stadtwache_SecondWarn_Condition()
 
 func void DIA_Mil_333_Stadtwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //Masz coœ ze s³uchem? Jeszcze jeden krok, a zapoznasz siê bli¿ej z ostrzem mojego miecza.
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_SecondWarn_06_00"); //Masz coÅ› ze sÅ‚uchem? Jeszcze jeden krok, a zapoznasz siÄ™ bliÅ¼ej z ostrzem mojego miecza.
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,Mil_333_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -207,7 +207,7 @@ func void DIA_Mil_333_Stadtwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] = 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //Sam siê o to prosi³eœ...
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_Attack_06_00"); //Sam siÄ™ o to prosiÅ‚eÅ›...
 	
 	AI_StopProcessInfos	(self);			
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -225,7 +225,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Masz tu 100 sztuk z³ota i wpuœæ mnie!";
+	description	= "Masz tu 100 sztuk zÅ‚ota i wpuÅ›Ä‡ mnie!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
@@ -238,15 +238,15 @@ FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_333_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Masz tu 100 sztuk z³ota i wpuœæ mnie!
+	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Masz tu 100 sztuk zÅ‚ota i wpuÅ›Ä‡ mnie!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //100 sztuk z³ota, powiadasz. W porz¹dku, mo¿esz wejœæ.
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //100 sztuk zÅ‚ota, powiadasz. W porzÄ…dku, moÅ¼esz wejÅ›Ä‡.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //I od razu idŸ do Andre! Mówiê powa¿nie, inaczej nastêpnym razem naliczê ci kolejne 100.
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_02"); //I od razu idÅº do Andre! MÃ³wiÄ™ powaÅ¼nie, inaczej nastÄ™pnym razem naliczÄ™ ci kolejne 100.
 		};
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -254,12 +254,12 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 		Mil_333_schonmalreingelassen = TRUE;
 		B_CheckLog();
 		
-		// ------ wenn bezahlt, persönliche Absolution erteilen -------
+		// ------ wenn bezahlt, persÃ¶nliche Absolution erteilen -------
 		MIL_333_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Co? Gdzie? Nie widzê ¿adnego z³ota. Sp³ywaj!
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_03"); //Co? Gdzie? Nie widzÄ™ Å¼adnego zÅ‚ota. SpÅ‚ywaj!
 	};
 	
 	AI_StopProcessInfos (self);
@@ -291,7 +291,7 @@ FUNC INT DIA_Mil_333_Stadtwache_PERM_Condition()
 	
 func void DIA_Mil_333_Stadtwache_PERM_Info()
 {
-	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_06_00"); //Rusz siê!
+	AI_Output (self, other,"DIA_Mil_333_Stadtwache_PERM_06_00"); //Rusz siÄ™!
 	
 	AI_StopProcessInfos (self);
 };

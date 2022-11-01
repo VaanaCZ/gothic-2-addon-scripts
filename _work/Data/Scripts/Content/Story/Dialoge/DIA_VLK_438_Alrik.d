@@ -82,24 +82,24 @@ FUNC VOID DIA_Alrik_Hallo_Info()
 	
 	if (Npc_GetDistToWP (self,"NW_CITY_PATH_HABOUR_16_01") <= 500) //In Ecke
 	{
-		AI_Output (self ,other,"DIA_Alrik_Hallo_09_01"); //To mój dom!
+		AI_Output (self ,other,"DIA_Alrik_Hallo_09_01"); //To mÃ³j dom!
 	}
 	else //In Kneipe oder auf dem Weg
 	{
 		if (Npc_GetDistToWP (self,"NW_CITY_HABOUR_TAVERN01_01") <= 500)
 		{
-			AI_Output (self ,other,"DIA_Alrik_Hallo_09_02"); //A co mam robiæ? Pijê.
+			AI_Output (self ,other,"DIA_Alrik_Hallo_09_02"); //A co mam robiÄ‡? PijÄ™.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alrik_Hallo_09_03"); //Idê na przechadzkê.
+			AI_Output (self ,other,"DIA_Alrik_Hallo_09_03"); //IdÄ™ na przechadzkÄ™.
 		};
 	};
-	AI_Output (self ,other,"DIA_Alrik_Hallo_09_04"); //Ale jeœli pytasz, co robiê przez ca³y dzieñ, to ci powiem - organizujê walki.
+	AI_Output (self ,other,"DIA_Alrik_Hallo_09_04"); //Ale jeÅ›li pytasz, co robiÄ™ przez caÅ‚y dzieÅ„, to ci powiem - organizujÄ™ walki.
 };
 
 // ************************************************************
-// 			  				Du kämpfst?
+// 			  				Du kÃ¤mpfst?
 // ************************************************************
 
 INSTANCE DIA_Alrik_YouFight(C_INFO)
@@ -123,12 +123,12 @@ FUNC INT DIA_Alrik_YouFight_Condition()
 FUNC VOID DIA_Alrik_YouFight_Info()
 {
 	AI_Output (other,self ,"DIA_Alrik_YouFight_15_00"); //Ty organizujesz walki?
-	AI_Output (self ,other,"DIA_Alrik_YouFight_09_01"); //Codziennie, od po³udnia do wieczora.
+	AI_Output (self ,other,"DIA_Alrik_YouFight_09_01"); //Codziennie, od poÅ‚udnia do wieczora.
 	if (Npc_GetDistToWP (self,"NW_CITY_PATH_HABOUR_16_01") <= 500) //In Ecke
 	{
-		AI_Output (self ,other,"DIA_Alrik_YouFight_09_02"); //Dok³adnie tutaj!
+		AI_Output (self ,other,"DIA_Alrik_YouFight_09_02"); //DokÅ‚adnie tutaj!
 	};
-	AI_Output (self ,other,"DIA_Alrik_YouFight_09_03"); //Za magazynem w dzielnicy portowej - wszêdzie dobrze, ale w domu najlepiej!
+	AI_Output (self ,other,"DIA_Alrik_YouFight_09_03"); //Za magazynem w dzielnicy portowej - wszÄ™dzie dobrze, ale w domu najlepiej!
 };
 
 
@@ -143,7 +143,7 @@ INSTANCE DIA_Alrik_Regeln(C_INFO)
 	condition	= DIA_Alrik_Regeln_Condition;
 	information	= DIA_Alrik_Regeln_Info;
 	permanent	= FALSE;
-	description = "Jakie s¹ zasady walk?";
+	description = "Jakie sÄ… zasady walk?";
 };                       
 
 FUNC INT DIA_Alrik_Regeln_Condition()
@@ -156,23 +156,23 @@ FUNC INT DIA_Alrik_Regeln_Condition()
  
 FUNC VOID DIA_Alrik_Regeln_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_Regeln_15_00"); //Jakie s¹ zasady walk?
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_01"); //Ca³kiem proste: mo¿na u¿ywaæ ka¿dej normalnej broni. ¯adnych ³uków ani kusz, i ¯ADNEJ magii!
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_02"); //Walczymy, dopóki jeden nie padnie. Kiedy jeden z walcz¹cych pada na ziemiê, walka siê koñczy. Zrozumia³eœ?
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_03"); //Kto wyjdzie z naro¿nika, ten odpada! Wiêc jeœli siê wycofasz, ja wygrywam!
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_04"); //Stawka wynosi 50 z³otych monet. Jeœli wygrasz, zabierasz stówê. Jeœli nie - no có¿ - wtedy twoje pieni¹dze znikaj¹.
-	AI_Output (self ,other,"DIA_Alrik_Regeln_09_05"); //Zrozumia³eœ?
+	AI_Output (other,self ,"DIA_Alrik_Regeln_15_00"); //Jakie sÄ… zasady walk?
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_01"); //CaÅ‚kiem proste: moÅ¼na uÅ¼ywaÄ‡ kaÅ¼dej normalnej broni. Å»adnych Å‚ukÃ³w ani kusz, i Å»ADNEJ magii!
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_02"); //Walczymy, dopÃ³ki jeden nie padnie. Kiedy jeden z walczÄ…cych pada na ziemiÄ™, walka siÄ™ koÅ„czy. ZrozumiaÅ‚eÅ›?
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_03"); //Kto wyjdzie z naroÅ¼nika, ten odpada! WiÄ™c jeÅ›li siÄ™ wycofasz, ja wygrywam!
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_04"); //Stawka wynosi 50 zÅ‚otych monet. JeÅ›li wygrasz, zabierasz stÃ³wÄ™. JeÅ›li nie - no cÃ³Å¼ - wtedy twoje pieniÄ…dze znikajÄ….
+	AI_Output (self ,other,"DIA_Alrik_Regeln_09_05"); //ZrozumiaÅ‚eÅ›?
 	AI_Output (other,self ,"DIA_Alrik_Regeln_15_06"); //Jasne!
 };
 
 
 // ************************************************************
-// 		  			Important für NEUE 3 Kämpfe ab Kap 3
+// 		  			Important fÃ¼r NEUE 3 KÃ¤mpfe ab Kap 3
 // ************************************************************
 
 		func void B_Alrik_Again()
 		{
-			AI_Output (self, other, "DIA_Alrik_Add_09_03"); //Jak leci? Chcesz znowu stan¹æ przeciwko mnie? S¹dzê, ¿e w miêdzyczasie sta³em siê lepszy...
+			AI_Output (self, other, "DIA_Alrik_Add_09_03"); //Jak leci? Chcesz znowu stanÄ…Ä‡ przeciwko mnie? SÄ…dzÄ™, Å¼e w miÄ™dzyczasie staÅ‚em siÄ™ lepszy...
 		};
 
 INSTANCE DIA_Alrik_NewFights3(C_INFO)
@@ -203,7 +203,7 @@ FUNC VOID DIA_Alrik_NewFights3_Info()
 };
 
 // ************************************************************
-// 		  			Important für NEUE 3 Kämpfe ab Kap 5
+// 		  			Important fÃ¼r NEUE 3 KÃ¤mpfe ab Kap 5
 // ************************************************************
 
 INSTANCE DIA_Alrik_NewFights5(C_INFO)
@@ -238,13 +238,13 @@ FUNC VOID DIA_Alrik_NewFights5_Info()
 		
 		func void B_Alrik_Enough()
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_05"); //Myœlê, ¿e ju¿ doœæ wygra³eœ.
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_06"); //Nie zrozum mnie Ÿle, ale we ³bie nadal mi siê krêci po poprzednim razie...
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_05"); //MyÅ›lÄ™, Å¼e juÅ¼ doÅ›Ä‡ wygraÅ‚eÅ›.
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_06"); //Nie zrozum mnie Åºle, ale we Å‚bie nadal mi siÄ™ krÄ™ci po poprzednim razie...
 		};
 		
 		func void B_Alrik_ComeBackLater()
 		{
-			AI_Output (self, other, "DIA_Alrik_Add_09_02"); //Wróæ do mnie póŸniej. A w miêdzyczasie trochê potrenujê...
+			AI_Output (self, other, "DIA_Alrik_Add_09_02"); //WrÃ³Ä‡ do mnie pÃ³Åºniej. A w miÄ™dzyczasie trochÄ™ potrenujÄ™...
 		};
 		
 
@@ -255,7 +255,7 @@ INSTANCE DIA_Alrik_WannaFight(C_INFO)
 	condition	= DIA_Alrik_WannaFight_Condition;
 	information	= DIA_Alrik_WannaFight_Info;
 	permanent	= TRUE;
-	description = "Chcê z tob¹ walczyæ!";
+	description = "ChcÄ™ z tobÄ… walczyÄ‡!";
 };                       
 
 FUNC INT DIA_Alrik_WannaFight_Condition()
@@ -269,38 +269,38 @@ FUNC INT DIA_Alrik_WannaFight_Condition()
 
 FUNC VOID DIA_Alrik_WannaFight_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_WannaFight_15_00"); //Chcê z tob¹ walczyæ!
+	AI_Output (other,self ,"DIA_Alrik_WannaFight_15_00"); //ChcÄ™ z tobÄ… walczyÄ‡!
 	
 	Info_ClearChoices 	(DIA_Alrik_WannaFight);
 	
-	// ------ EXIT: Wenn Alrik schonmal verloren, nächster Kampf erst, wenn Alrik das bessere Schwert hat ------
+	// ------ EXIT: Wenn Alrik schonmal verloren, nÃ¤chster Kampf erst, wenn Alrik das bessere Schwert hat ------
 	if ( (Alrik_ArenaKampfVerloren > 0) && (Npc_HasItems (self, ItMW_AlriksSword_Mis) == 0) )
 	|| (Npc_HasEquippedMeleeWeapon (self) == FALSE)
 	{
 		if (MIS_Alrik_Sword == LOG_SUCCESS) //Wenn nach Schwert-Mission niedergeschlagen und Schwert weggenommen
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_01"); //Najpierw oddaj mi mój miecz. Wtedy zobaczymy...
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_01"); //Najpierw oddaj mi mÃ³j miecz. Wtedy zobaczymy...
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_02"); //Nie, nie. Zanim znowu zmierzê siê z tob¹, potrzebna mi lepsza broñ!
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_03"); //Kilka dni temu musia³em sprzedaæ swój miecz.
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_04"); //Z tym maleñstwem jestem niepokonany! Jeœli je odzyskasz, znowu siê z tob¹ zmierzê!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_02"); //Nie, nie. Zanim znowu zmierzÄ™ siÄ™ z tobÄ…, potrzebna mi lepsza broÅ„!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_03"); //Kilka dni temu musiaÅ‚em sprzedaÄ‡ swÃ³j miecz.
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_04"); //Z tym maleÅ„stwem jestem niepokonany! JeÅ›li je odzyskasz, znowu siÄ™ z tobÄ… zmierzÄ™!
 			
 			Alrik_VomSchwertErzaehlt = TRUE;
 			
 			Log_CreateTopic (TOPIC_AlrikSchwert,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_AlrikSchwert,LOG_RUNNING);
-			B_LogEntry (TOPIC_AlrikSchwert,"Arik sprzeda³ swój miecz kupcowi imieniem Jora. Zgodzi siê ze mn¹ walczyæ tylko pod warunkiem, ¿e odzyskam jego broñ.");
+			B_LogEntry (TOPIC_AlrikSchwert,"Arik sprzedaÅ‚ swÃ³j miecz kupcowi imieniem Jora. Zgodzi siÄ™ ze mnÄ… walczyÄ‡ tylko pod warunkiem, Å¼e odzyskam jego broÅ„.");
 		};
 	}
 	
-	// ----- EXIT: ÜBER DREI MAL Alrik_ArenaKampfVerloren ------
+	// ----- EXIT: ÃœBER DREI MAL Alrik_ArenaKampfVerloren ------
 	else if (Kapitel <= 2)
 	&& (Alrik_ArenaKampfVerloren > 3)
 	{
 		AI_Output (self, other, "DIA_Alrik_Add_09_00"); //Chyba na razie wystarczy...
-		AI_Output (self, other, "DIA_Alrik_Add_09_01"); //Zróbmy krótk¹ przerwê.
+		AI_Output (self, other, "DIA_Alrik_Add_09_01"); //ZrÃ³bmy krÃ³tkÄ… przerwÄ™.
 		B_Alrik_ComeBackLater();
 	}
 	
@@ -316,48 +316,48 @@ FUNC VOID DIA_Alrik_WannaFight_Info()
 	&& (Alrik_ArenaKampfVerloren > 9)
 	{
 		B_Alrik_Enough();
-		AI_Output (self, other, "DIA_Alrik_Add_09_04"); //Poza tym zgarn¹³em ju¿ doœæ z³ota.
-		AI_Output (self, other, "DIA_Alrik_Add_09_05"); //Rezygnujê, zamierzam zatrzymaæ siê gdzieœ w mieœcie...
-		AI_Output (self, other, "DIA_Alrik_Add_09_06"); //Kto wie, mo¿e otworzê sklep z broni¹...
+		AI_Output (self, other, "DIA_Alrik_Add_09_04"); //Poza tym zgarnÄ…Å‚em juÅ¼ doÅ›Ä‡ zÅ‚ota.
+		AI_Output (self, other, "DIA_Alrik_Add_09_05"); //RezygnujÄ™, zamierzam zatrzymaÄ‡ siÄ™ gdzieÅ› w mieÅ›cie...
+		AI_Output (self, other, "DIA_Alrik_Add_09_06"); //Kto wie, moÅ¼e otworzÄ™ sklep z broniÄ…...
 	}
 	
 	// ------ normaler KAMPF ------
 	else if (Wld_IsTime(11,00,19,00))
 	{
-		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_07"); //Masz 50 sztuk z³ota?
+		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_07"); //Masz 50 sztuk zÅ‚ota?
 		Info_ClearChoices 	(DIA_Alrik_WannaFight);
 		Info_AddChoice 		(DIA_Alrik_WannaFight, "Nie...",	DIA_Alrik_WannaFight_NoGold);
 		if (Npc_HasItems (other, itmi_gold) >= 50)
 		{
-			Info_AddChoice 		(DIA_Alrik_WannaFight, "Proszê bardzo...",	DIA_Alrik_WannaFight_Gold);
+			Info_AddChoice 		(DIA_Alrik_WannaFight, "ProszÄ™ bardzo...",	DIA_Alrik_WannaFight_Gold);
 		};
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_08"); //Walczê tylko od po³udnia do wieczora.
-		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_09"); //Walka ma jakiœ sens tylko wtedy, kiedy jest doœæ widzów obstawiaj¹cych zak³ady.
+		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_08"); //WalczÄ™ tylko od poÅ‚udnia do wieczora.
+		AI_Output (self ,other,"DIA_Alrik_WannaFight_09_09"); //Walka ma jakiÅ› sens tylko wtedy, kiedy jest doÅ›Ä‡ widzÃ³w obstawiajÄ…cych zakÅ‚ady.
 		if (Wld_IsTime(19,00,03,30))
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_10"); //Jest ju¿ za póŸno. Wróæ jutro w po³udnie!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_10"); //Jest juÅ¼ za pÃ³Åºno. WrÃ³Ä‡ jutro w poÅ‚udnie!
 		}
 		else // 03,30 - 11,00 
 		{
-			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_11"); //Jest jeszcze za wczeœnie, przyjdŸ póŸniej!
+			AI_Output (self ,other,"DIA_Alrik_WannaFight_09_11"); //Jest jeszcze za wczeÅ›nie, przyjdÅº pÃ³Åºniej!
 		};
 	};
 };
 
 func void DIA_Alrik_WannaFight_Gold()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_Gold_15_00"); //Proszê bardzo...
+	AI_Output (other, self,"DIA_Alrik_WannaFight_Gold_15_00"); //ProszÄ™ bardzo...
 	B_GiveInvItems (other, self, itmi_gold, 50);
 	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_01"); //Mamy nowego zawodnika!
-	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_02"); //Zak³ady obstawione...
+	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_02"); //ZakÅ‚ady obstawione...
 	
 	Npc_RemoveInvItems (self, itmi_gold, Npc_HasItems(self, itmi_gold) );
 	CreateInvItems (self, itmi_gold, 100); //50 vom Spieler und 50 Einsatz von Alrik...
 	
-	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_03"); //Jesteœ gotowy?
+	AI_Output (self ,other,"DIA_Alrik_WannaFight_Gold_09_03"); //JesteÅ› gotowy?
 	
 	//--------------------------------------
 	self.aivar[AIV_ArenaFight] = AF_RUNNING;
@@ -365,22 +365,22 @@ func void DIA_Alrik_WannaFight_Gold()
 	//--------------------------------------
 	
 	Info_ClearChoices 	(DIA_Alrik_WannaFight);
-	Info_AddChoice 		(DIA_Alrik_WannaFight, "Chwileczkê...",	DIA_Alrik_WannaFight_Moment);
-	Info_AddChoice 		(DIA_Alrik_WannaFight, "No chodŸ!",	DIA_Alrik_WannaFight_NOW);
+	Info_AddChoice 		(DIA_Alrik_WannaFight, "ChwileczkÄ™...",	DIA_Alrik_WannaFight_Moment);
+	Info_AddChoice 		(DIA_Alrik_WannaFight, "No chodÅº!",	DIA_Alrik_WannaFight_NOW);
 };
 
 func void DIA_Alrik_WannaFight_NoGold()
 {
 	AI_Output (other, self,"DIA_Alrik_WannaFight_NoGold_15_00"); //Nie...
-	AI_Output (self, other,"DIA_Alrik_WannaFight_NoGold_09_01"); //No to je przynieœ! Bez stawki nie ma walki!
+	AI_Output (self, other,"DIA_Alrik_WannaFight_NoGold_09_01"); //No to je przynieÅ›! Bez stawki nie ma walki!
 	
 	Info_ClearChoices 	(DIA_Alrik_WannaFight);
 };
 
 func void DIA_Alrik_WannaFight_NOW()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_NOW_15_00"); //No chodŸ!
-	AI_Output (self, other,"DIA_Alrik_WannaFight_NOW_09_01"); //No to zobaczymy, na co ciê staæ!
+	AI_Output (other, self,"DIA_Alrik_WannaFight_NOW_15_00"); //No chodÅº!
+	AI_Output (self, other,"DIA_Alrik_WannaFight_NOW_09_01"); //No to zobaczymy, na co ciÄ™ staÄ‡!
 	
 	if (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX])
 	{
@@ -394,7 +394,7 @@ func void DIA_Alrik_WannaFight_NOW()
 
 func void DIA_Alrik_WannaFight_Moment()
 {
-	AI_Output (other, self,"DIA_Alrik_WannaFight_Moment_15_00"); //Chwileczkê...
+	AI_Output (other, self,"DIA_Alrik_WannaFight_Moment_15_00"); //ChwileczkÄ™...
 	AI_Output (self, other,"DIA_Alrik_WannaFight_Moment_09_01"); //Spokojnie... Ja zaczynam!
 	
 	if (self.attribute[ATR_HITPOINTS] < self.attribute[ATR_HITPOINTS_MAX])
@@ -446,22 +446,22 @@ FUNC VOID DIA_Alrik_AfterFight_Info()
 	{
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_00"); //Och, stary! Masz niez³y cios.
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_00"); //Och, stary! Masz niezÅ‚y cios.
 			
 			if (Npc_HasItems (self, itmi_gold) >= 100)
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_01"); //Oto twoje 100 sztuk z³ota! Zas³u¿y³eœ na nie!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_01"); //Oto twoje 100 sztuk zÅ‚ota! ZasÅ‚uÅ¼yÅ‚eÅ› na nie!
 				B_GiveInvItems (self, other, itmi_gold, 100);
 			}
 			else if (Npc_HasItems (self, itmi_gold) == 0)
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_02"); //Jak widzê, ju¿ wzi¹³eœ swoje z³oto.
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_03"); //Mog³eœ zaczekaæ, a¿ ci je dam - dotrzymujê s³owa!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_02"); //Jak widzÄ™, juÅ¼ wziÄ…Å‚eÅ› swoje zÅ‚oto.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_03"); //MogÅ‚eÅ› zaczekaÄ‡, aÅ¼ ci je dam - dotrzymujÄ™ sÅ‚owa!
 			}
 			else //zwischen 1 und 99 Gold...
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_04"); //Przetrz¹sn¹³eœ mi kieszenie, kiedy by³em nieprzytomny!
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_05"); //To z³y zwyczaj, stary! Niewa¿ne, pieni¹dze i tak by³y twoje. Tu jest reszta.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_04"); //PrzetrzÄ…snÄ…Å‚eÅ› mi kieszenie, kiedy byÅ‚em nieprzytomny!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_05"); //To zÅ‚y zwyczaj, stary! NiewaÅ¼ne, pieniÄ…dze i tak byÅ‚y twoje. Tu jest reszta.
 				B_GiveInvItems (self, other, itmi_gold, Npc_HasItems(self, itmi_gold) );
 			};
 			
@@ -469,22 +469,22 @@ FUNC VOID DIA_Alrik_AfterFight_Info()
 		}
 		else if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_06"); //To by³a dobra walka. Twoja stawka przepad³a - nie ¿a³uj jej, to dla dobra sprawy!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_06"); //To byÅ‚a dobra walka. Twoja stawka przepadÅ‚a - nie Å¼aÅ‚uj jej, to dla dobra sprawy!
 		}
 		else //FIGHT_CANCEL
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_07"); //Hej, mówi³em, kto opuszcza naro¿nik, przegrywa walkê! Jeœli chcesz spróbowaæ jeszcze raz, jestem do twojej dyspozycji!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_07"); //Hej, mÃ³wiÅ‚em, kto opuszcza naroÅ¼nik, przegrywa walkÄ™! JeÅ›li chcesz sprÃ³bowaÄ‡ jeszcze raz, jestem do twojej dyspozycji!
 		};
 		
 		// ------ nur einmal ------
 		if (Alrik_Kaempfe == 1)
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_08"); //I jeszcze jedno: nikt nie rozmawia o tym, co siê dzieje za magazynem.
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_08"); //I jeszcze jedno: nikt nie rozmawia o tym, co siÄ™ dzieje za magazynem.
 			
 			if (other.guild != GIL_MIL)
 			&& (other.guild != GIL_PAL)
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_09"); //Stra¿ pakuje za kratki ka¿dego, kto siê tu zjawia. Ci ch³opcy nie lubi¹ walk za pieni¹dze.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_09"); //StraÅ¼ pakuje za kratki kaÅ¼dego, kto siÄ™ tu zjawia. Ci chÅ‚opcy nie lubiÄ… walk za pieniÄ…dze.
 			};
 		};
 				
@@ -498,22 +498,22 @@ FUNC VOID DIA_Alrik_AfterFight_Info()
 	{
 		if (self.aivar[AIV_ArenaFight] == AF_AFTER_PLUS_DAMAGE) // NACH Kampf und VOR Bewertung nochmal angegriffen.
 		{
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_10"); //Walka by³a skoñczona, ty w³óczêgo!
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_11"); //Nie podoba mi siê, kiedy ktoœ nie przestrzega zasad.
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_12"); //Wynoœ siê st¹d!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_10"); //Walka byÅ‚a skoÅ„czona, ty wÅ‚Ã³czÄ™go!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_11"); //Nie podoba mi siÄ™, kiedy ktoÅ› nie przestrzega zasad.
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_12"); //WynoÅ› siÄ™ stÄ…d!
 		}
 		else //einfach so angegriffen (unvorbereitet)
 		{
 			if (Alrik_Kaempfe == 0)
 			{	
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_13"); //Skoro chcia³eœ walczyæ ze mn¹, wystarczy³o mnie wyzwaæ.
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_13"); //Skoro chciaÅ‚eÅ› walczyÄ‡ ze mnÄ…, wystarczyÅ‚o mnie wyzwaÄ‡.
 			}
 			else // > 0
 			{
-				AI_Output (self, other,"DIA_Alrik_AfterFight_09_14"); //Skoro chcia³eœ walczyæ ze mn¹ jeszcze raz, wystarczy³o mnie wyzwaæ!
+				AI_Output (self, other,"DIA_Alrik_AfterFight_09_14"); //Skoro chciaÅ‚eÅ› walczyÄ‡ ze mnÄ… jeszcze raz, wystarczyÅ‚o mnie wyzwaÄ‡!
 			};
 			
-			AI_Output (self, other,"DIA_Alrik_AfterFight_09_15"); //Nie chcê mieæ nic wspólnego z mêtami takimi jak ty! Zje¿d¿aj!
+			AI_Output (self, other,"DIA_Alrik_AfterFight_09_15"); //Nie chcÄ™ mieÄ‡ nic wspÃ³lnego z mÄ™tami takimi jak ty! ZjeÅ¼dÅ¼aj!
 		};
 		
 		// ------ In jedem Fall: Arena-Kampf abgeschlossen ------
@@ -549,10 +549,10 @@ FUNC INT DIA_Alrik_DuWohnst_Condition()
 FUNC VOID DIA_Alrik_DuWohnst_Info()
 {
 	AI_Output (other,self ,"DIA_Alrik_DuWohnst_15_00"); //'Mieszkasz' za tym magazynem?
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_01"); //To tylko chwilowe. Kiedy bêdziesz mia³ tyle z³ota co ja, bêdzie ciê staæ na trochê luksusu!
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_02"); //By³em instruktorem musztry w armii, ale rzuci³em to, ¿eby zaznaæ przygód i poszukaæ szczêœcia gdzie indziej.
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_03"); //A teraz ugrzêz³em w tej dziurze. Moje ostatnie 100 sztuk z³ota zniknê³o w kieszeniach stra¿ników przy bramie.
-	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_04"); //Wiêc staram siê znowu zdobyæ trochê pieniêdzy. Musia³em nawet sprzedaæ swój miecz.
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_01"); //To tylko chwilowe. Kiedy bÄ™dziesz miaÅ‚ tyle zÅ‚ota co ja, bÄ™dzie ciÄ™ staÄ‡ na trochÄ™ luksusu!
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_02"); //ByÅ‚em instruktorem musztry w armii, ale rzuciÅ‚em to, Å¼eby zaznaÄ‡ przygÃ³d i poszukaÄ‡ szczÄ™Å›cia gdzie indziej.
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_03"); //A teraz ugrzÄ™zÅ‚em w tej dziurze. Moje ostatnie 100 sztuk zÅ‚ota zniknÄ™Å‚o w kieszeniach straÅ¼nikÃ³w przy bramie.
+	AI_Output (self ,other,"DIA_Alrik_DuWohnst_09_04"); //WiÄ™c staram siÄ™ znowu zdobyÄ‡ trochÄ™ pieniÄ™dzy. MusiaÅ‚em nawet sprzedaÄ‡ swÃ³j miecz.
 	
 	Alrik_VomSchwertErzaehlt = TRUE;
 };
@@ -569,7 +569,7 @@ INSTANCE DIA_Alrik_WerSchwert(C_INFO)
 	condition	= DIA_Alrik_WerSchwert_Condition;
 	information	= DIA_Alrik_WerSchwert_Info;
 	permanent	= FALSE;
-	description = "Komu sprzeda³eœ ten miecz?";
+	description = "Komu sprzedaÅ‚eÅ› ten miecz?";
 };                       
 
 FUNC INT DIA_Alrik_WerSchwert_Condition()
@@ -583,11 +583,11 @@ FUNC INT DIA_Alrik_WerSchwert_Condition()
  
 FUNC VOID DIA_Alrik_WerSchwert_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_00"); //Komu sprzeda³eœ ten miecz?
-	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_01"); //Wymieni³em go z handlarzem na targowisku na parê drobiazgów.
-	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_02"); //Facet nazywa siê Jora. Pochodnie i trochê ¿arcia, które da³ mi w zamian, dawno ju¿ zu¿y³em.
+	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_00"); //Komu sprzedaÅ‚eÅ› ten miecz?
+	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_01"); //WymieniÅ‚em go z handlarzem na targowisku na parÄ™ drobiazgÃ³w.
+	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_02"); //Facet nazywa siÄ™ Jora. Pochodnie i trochÄ™ Å¼arcia, ktÃ³re daÅ‚ mi w zamian, dawno juÅ¼ zuÅ¼yÅ‚em.
 	AI_Output (other,self ,"DIA_Alrik_WerSchwert_15_03"); //Raczej nie odda mi go za darmo...
-	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_04"); //To stary miecz. Nie bêdzie za niego du¿o chcia³. Pomyœl o tych pieni¹dzach jako o dodatkowej stawce.
+	AI_Output (self ,other,"DIA_Alrik_WerSchwert_09_04"); //To stary miecz. Nie bÄ™dzie za niego duÅ¼o chciaÅ‚. PomyÅ›l o tych pieniÄ…dzach jako o dodatkowej stawce.
 		
 	MIS_Alrik_Sword = LOG_RUNNING;
 };
@@ -604,7 +604,7 @@ INSTANCE DIA_Alrik_HaveSword(C_INFO)
 	condition	= DIA_Alrik_HaveSword_Condition;
 	information	= DIA_Alrik_HaveSword_Info;
 	permanent	= TRUE;
-	description = "Mam twój miecz!";
+	description = "Mam twÃ³j miecz!";
 };                       
 
 FUNC INT DIA_Alrik_HaveSword_Condition()
@@ -617,19 +617,19 @@ FUNC INT DIA_Alrik_HaveSword_Condition()
  
 FUNC VOID DIA_Alrik_HaveSword_Info()
 {	
-	AI_Output (other,self ,"DIA_Alrik_HaveSword_15_00"); //Mam twój miecz!
+	AI_Output (other,self ,"DIA_Alrik_HaveSword_15_00"); //Mam twÃ³j miecz!
 	B_GiveInvItems (other,self,ItMW_AlriksSword_Mis,1);
 	
 	if (MIS_Alrik_Sword != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_01"); //Ach! To znacznie lepsze, ni¿ wymachiwanie starym kijem!
+		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_01"); //Ach! To znacznie lepsze, niÅ¼ wymachiwanie starym kijem!
 		
 		MIS_Alrik_Sword = LOG_SUCCESS;
 		B_GivePlayerXP (XP_AlriksSword);
 	}
 	else
 	{	
-		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_02"); //Dobrze! Ciekaw jestem, kiedy odwa¿ysz siê wyzwaæ mnie ponownie!
+		AI_Output (self ,other,"DIA_Alrik_HaveSword_09_02"); //Dobrze! Ciekaw jestem, kiedy odwaÅ¼ysz siÄ™ wyzwaÄ‡ mnie ponownie!
 	};
 		
 	if (Alrik_EinmalSchwertBonus == FALSE)
@@ -666,9 +666,9 @@ FUNC INT DIA_Alrik_Krieg_Condition()
 FUNC VOID DIA_Alrik_Krieg_Info()
 {
 	AI_Output (other,self ,"DIA_Alrik_Krieg_15_00"); //Co wiesz o wojnie z orkami?
-	AI_Output (self ,other,"DIA_Alrik_Krieg_09_01"); //Nie mam wiele do powiedzenia. Wojna trwa³a zdecydowanie za d³ugo.
-	AI_Output (self ,other,"DIA_Alrik_Krieg_09_02"); //Proœci ludzie g³oduj¹. Wszêdzie wybuchaj¹ ch³opskie bunty, które Król t³umi bez litoœci.
-	AI_Output (self ,other,"DIA_Alrik_Krieg_09_03"); //Ale jest ich za du¿o. Jeœli wojna siê szybko nie skoñczy, to bêdzie koniec królestwa.
+	AI_Output (self ,other,"DIA_Alrik_Krieg_09_01"); //Nie mam wiele do powiedzenia. Wojna trwaÅ‚a zdecydowanie za dÅ‚ugo.
+	AI_Output (self ,other,"DIA_Alrik_Krieg_09_02"); //ProÅ›ci ludzie gÅ‚odujÄ…. WszÄ™dzie wybuchajÄ… chÅ‚opskie bunty, ktÃ³re KrÃ³l tÅ‚umi bez litoÅ›ci.
+	AI_Output (self ,other,"DIA_Alrik_Krieg_09_03"); //Ale jest ich za duÅ¼o. JeÅ›li wojna siÄ™ szybko nie skoÅ„czy, to bÄ™dzie koniec krÃ³lestwa.
 };
 
 // ************************************************************
@@ -687,7 +687,7 @@ instance DIA_Alrik_Ausbilden(C_INFO)
 	condition	= DIA_Alrik_Ausbilden_Condition;
 	information	= DIA_Alrik_Ausbilden_Info;
 	permanent	= TRUE;
-	description = "Czy mo¿esz mnie wyszkoliæ?";
+	description = "Czy moÅ¼esz mnie wyszkoliÄ‡?";
 };                       
 
 FUNC INT DIA_Alrik_Ausbilden_Condition()
@@ -702,29 +702,29 @@ FUNC INT DIA_Alrik_Ausbilden_Condition()
  
 FUNC VOID DIA_Alrik_Ausbilden_Info()
 {
-	AI_Output (other,self ,"DIA_Alrik_Ausbilden_15_00"); //Czy mo¿esz mnie wyszkoliæ?
+	AI_Output (other,self ,"DIA_Alrik_Ausbilden_15_00"); //Czy moÅ¼esz mnie wyszkoliÄ‡?
 	
 	if (Alrik_Kaempfe == 0)
 	&& (hero.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_01"); //Jeœli naprawdê chcesz nauczyæ siê walczyæ, to zmierz siê ze mn¹. Ta lekcja bêdzie za darmo.
+		AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_01"); //JeÅ›li naprawdÄ™ chcesz nauczyÄ‡ siÄ™ walczyÄ‡, to zmierz siÄ™ ze mnÄ…. Ta lekcja bÄ™dzie za darmo.
 		Alrik_VorausErzaehlt = TRUE; 
 	}
 	else //>0
 	{
 		if (Alrik_VorausErzaehlt == TRUE)
 		{
-			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_02"); //Dotrzymujê s³owa. Nauczê ciê wszystkiego, co umiem - jeœli jesteœ wystarczaj¹co doœwiadczony.
+			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_02"); //DotrzymujÄ™ sÅ‚owa. NauczÄ™ ciÄ™ wszystkiego, co umiem - jeÅ›li jesteÅ› wystarczajÄ…co doÅ›wiadczony.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_03"); //Jasne, pod warunkiem, ¿e masz doœæ doœwiadczenia.
+			AI_Output (self ,other,"DIA_Alrik_Ausbilden_09_03"); //Jasne, pod warunkiem, Å¼e masz doÅ›Ä‡ doÅ›wiadczenia.
 		};
 		
 		
 		Alrik_Teach1H = TRUE;
 		Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-		B_LogEntry (Topic_CityTeacher,"Alrik, który krêci siê za magazynem w dzielnicy portowej, mo¿e mnie nauczyæ walki orê¿em jednorêcznym.");
+		B_LogEntry (Topic_CityTeacher,"Alrik, ktÃ³ry krÄ™ci siÄ™ za magazynem w dzielnicy portowej, moÅ¼e mnie nauczyÄ‡ walki orÄ™Å¼em jednorÄ™cznym.");
 	};
 };
 
@@ -743,7 +743,7 @@ instance DIA_Alrik_Teach(C_INFO)
 	condition	= DIA_Alrik_Teach_Condition;
 	information	= DIA_Alrik_Teach_Info;
 	permanent	= TRUE;
-	description = "Wyszkol mnie we w³adaniu mieczem!";
+	description = "Wyszkol mnie we wÅ‚adaniu mieczem!";
 };                       
 
 FUNC INT DIA_Alrik_Teach_Condition()
@@ -756,7 +756,7 @@ FUNC INT DIA_Alrik_Teach_Condition()
  
 FUNC VOID DIA_Alrik_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Alrik_Teach_15_00"); //Wyszkol mnie we w³adaniu mieczem!
+	AI_Output (other,self ,"DIA_Alrik_Teach_15_00"); //Wyszkol mnie we wÅ‚adaniu mieczem!
 	
 	Alrik_Merke_1h =  other.HitChance[NPC_TALENT_1H];
 	
@@ -770,11 +770,11 @@ FUNC VOID DIA_Alrik_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_1H] >= (60-30))
 	{
-		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_00"); //Ju¿ nie jesteœ pocz¹tkuj¹cy!
+		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_00"); //JuÅ¼ nie jesteÅ› poczÄ…tkujÄ…cy!
 	}
 	else if (other.HitChance[NPC_TALENT_1H] > Alrik_Merke_1h)
 	{
-		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_01"); //Jesteœ ju¿ lepszy. Nied³ugo staniesz siê prawdziwym wojownikiem!
+		AI_Output (self ,other,"DIA_Alrik_Teach_Back_09_01"); //JesteÅ› juÅ¼ lepszy. NiedÅ‚ugo staniesz siÄ™ prawdziwym wojownikiem!
 	};
 	
 	Info_ClearChoices (DIA_Alrik_Teach);

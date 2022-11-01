@@ -3,7 +3,7 @@
 // MAKERUNE_S1
 // --------------
 // Funktion wird durch Runentisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_RuneBlank
+// benÃ¶tigtes Item dafÃ¼r: ItMi_RuneBlank
 // *****************************************************
 FUNC VOID MAKERUNE_S1 ()
 {
@@ -54,7 +54,7 @@ INSTANCE PC_Circle_01 (C_Info)
 	condition		= PC_Circle_01_Condition;
 	information		= PC_Circle_01_Info;
 	permanent		= TRUE;
-	description		= "Twórz runy pierwszego krêgu"; 
+	description		= "TwÃ³rz runy pierwszego krÄ™gu"; 
 };
 
 FUNC INT PC_Circle_01_Condition ()
@@ -108,7 +108,7 @@ INSTANCE PC_Circle_02 (C_Info)
 	condition		= PC_Circle_02_Condition;
 	information		= PC_Circle_02_Info;
 	permanent		= TRUE;
-	description		= "Twórz runy drugiego krêgu"; 
+	description		= "TwÃ³rz runy drugiego krÄ™gu"; 
 };
 FUNC INT PC_Circle_02_Condition ()
 {
@@ -169,7 +169,7 @@ INSTANCE PC_Circle_03 (C_Info)
 	condition		= PC_Circle_03_Condition;
 	information		= PC_Circle_03_Info;
 	permanent		= TRUE;
-	description		= "Twórz runy trzeciego krêgu"; 
+	description		= "TwÃ³rz runy trzeciego krÄ™gu"; 
 };
 FUNC INT PC_Circle_03_Condition ()
 {	
@@ -237,7 +237,7 @@ INSTANCE PC_Circle_04 (C_Info)
 	condition		= PC_Circle_04_Condition;
 	information		= PC_Circle_04_Info;
 	permanent		= TRUE;
-	description		= "Twórz runy czwartego krêgu"; 
+	description		= "TwÃ³rz runy czwartego krÄ™gu"; 
 };
 FUNC INT PC_Circle_04_Condition ()
 {	
@@ -289,7 +289,7 @@ INSTANCE PC_Circle_05 (C_Info)
 	condition		= PC_Circle_05_Condition;
 	information		= PC_Circle_05_Info;
 	permanent		= TRUE;
-	description		= "Twórz runy pi¹tego krêgu"; 
+	description		= "TwÃ³rz runy piÄ…tego krÄ™gu"; 
 };
 FUNC INT PC_Circle_05_Condition ()
 {
@@ -337,7 +337,7 @@ INSTANCE PC_Circle_06 (C_Info)
 	condition		= PC_Circle_06_Condition;
 	information		= PC_Circle_06_Info;
 	permanent		= TRUE;
-	description		= "Twórz runy szóstego krêgu"; 
+	description		= "TwÃ³rz runy szÃ³stego krÄ™gu"; 
 };
 FUNC INT PC_Circle_06_Condition ()
 {	
@@ -441,7 +441,7 @@ INSTANCE PC_SPL_PalTeleportSecret (C_Info)
 	condition		= PC_SPL_PalTeleportSecret_Condition;
 	information		= PC_SPL_PalTeleportSecret_Info;
 	permanent		= TRUE;
-	description		= "Twórz runê teleportacyjn¹"; 
+	description		= "TwÃ³rz runÄ™ teleportacyjnÄ…"; 
 };
 FUNC INT PC_SPL_PalTeleportSecret_Condition ()
 {	

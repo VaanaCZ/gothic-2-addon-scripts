@@ -11,13 +11,13 @@ func void B_AssignDementorTalk_Ritual ()
 	if (MIS_SCKnowsInnosEyeIsBroken == FALSE)
 	
 	{
-		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //SpóŸni³eœ siê.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Zniszczyliœmy Oko Innosa. Ju¿ nigdy nie odzyska swojej dawnej mocy.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Za chwilê przekonasz siê, ¿e wszelkie próby pokonania naszego Pana i Mistrza s¹ z góry skazane na niepowodzenie.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //SpÃ³ÅºniÅ‚eÅ› siÄ™.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //ZniszczyliÅ›my Oko Innosa. JuÅ¼ nigdy nie odzyska swojej dawnej mocy.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Za chwilÄ™ przekonasz siÄ™, Å¼e wszelkie prÃ³by pokonania naszego Pana i Mistrza sÄ… z gÃ³ry skazane na niepowodzenie.
 
 		MIS_SCKnowsInnosEyeIsBroken  = TRUE;
-		B_LogEntry (TOPIC_INNOSEYE, "Te wredne draby zaczynaj¹ mnie denerwowaæ. Zniszczyli Oko Innosa. Nie mam zielonego pojêcia, jak je naprawiæ.");
- 		B_LogEntry (TOPIC_TraitorPedro, "Znalaz³em Oko Innosa, ale nie natkn¹³em siê jak do tej pory na ¿aden œlad Pedra. Ci czarni magowie najwyraŸniej siê z nim jakoœ porozumieli.");
+		B_LogEntry (TOPIC_INNOSEYE, "Te wredne draby zaczynajÄ… mnie denerwowaÄ‡. Zniszczyli Oko Innosa. Nie mam zielonego pojÄ™cia, jak je naprawiÄ‡.");
+ 		B_LogEntry (TOPIC_TraitorPedro, "ZnalazÅ‚em Oko Innosa, ale nie natknÄ…Å‚em siÄ™ jak do tej pory na Å¼aden Å›lad Pedra. Ci czarni magowie najwyraÅºniej siÄ™ z nim jakoÅ› porozumieli.");
 		B_GivePlayerXP (XP_SCKnowsInnosEyeIsBroken);
 	}
 	else
@@ -27,11 +27,11 @@ func void B_AssignDementorTalk_Ritual ()
 		
 	 	if (randy == 0)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //Poznaj nasz¹ moc.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //Poznaj naszÄ… moc.
 		};
 		if (randy == 1)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Za Pana Ciemnoœci!
+			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Za Pana CiemnoÅ›ci!
 		};
 		if (randy == 2)
 		{

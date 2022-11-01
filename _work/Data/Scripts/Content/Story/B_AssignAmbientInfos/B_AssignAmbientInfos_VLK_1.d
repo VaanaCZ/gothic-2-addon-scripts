@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_1_JOIN(C_INFO)
 	condition	= DIA_VLK_1_JOIN_Condition;
 	information	= DIA_VLK_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "W jaki sposób mogê zostaæ obywatelem tego miasta?";
+	description = "W jaki sposÃ³b mogÄ™ zostaÄ‡ obywatelem tego miasta?";
 };                       
 
 FUNC INT DIA_VLK_1_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_1_JOIN_Condition()
 
 FUNC VOID DIA_VLK_1_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //W jaki sposób mogê zostaæ obywatelem tego miasta?
-	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Poszukaj sobie jakiejœ przyzwoitej pracy! Wszyscy, którzy maj¹ pracê w Khorinis, s¹ zaliczani do obywateli miasta.
+	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //W jaki sposÃ³b mogÄ™ zostaÄ‡ obywatelem tego miasta?
+	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Poszukaj sobie jakiejÅ› przyzwoitej pracy! Wszyscy, ktÃ³rzy majÄ… pracÄ™ w Khorinis, sÄ… zaliczani do obywateli miasta.
 };
 
 // *************************************************************************
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_1_PEOPLE(C_INFO)
 	condition	= DIA_VLK_1_PEOPLE_Condition;
 	information	= DIA_VLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Kto jest tu w okolicy najwa¿niejszy?";
+	description = "Kto jest tu w okolicy najwaÅ¼niejszy?";
 };                       
 
 FUNC INT DIA_VLK_1_PEOPLE_Condition()
@@ -66,11 +66,11 @@ FUNC INT DIA_VLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Kto jest tu w okolicy najwa¿niejszy?
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //Do niedawna gubernator i sêdzia. Jednak niedawno przybyli do miasta paladyni i przejêli w³adzê.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Mo¿na rzec, ¿e ich przywódca, Lord Hagen, jest teraz kimœ w rodzaju gubernatora.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Jego praw¹ rêk¹ jest Lord Andre. To on dowodzi stra¿¹ miejsk¹, pe³ni te¿ funkcjê sêdziego.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //Wszyscy przestêpcy w mieœcie odpowiadaj¹ przed nim.
+	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Kto jest tu w okolicy najwaÅ¼niejszy?
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //Do niedawna gubernator i sÄ™dzia. Jednak niedawno przybyli do miasta paladyni i przejÄ™li wÅ‚adzÄ™.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //MoÅ¼na rzec, Å¼e ich przywÃ³dca, Lord Hagen, jest teraz kimÅ› w rodzaju gubernatora.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Jego prawÄ… rÄ™kÄ… jest Lord Andre. To on dowodzi straÅ¼Ä… miejskÄ…, peÅ‚ni teÅ¼ funkcjÄ™ sÄ™dziego.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //Wszyscy przestÄ™pcy w mieÅ›cie odpowiadajÄ… przed nim.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_1_LOCATION(C_INFO)
 	condition	= DIA_VLK_1_LOCATION_Condition;
 	information	= DIA_VLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Jakie ciekawe miejsca mo¿na odwiedziæ w tym mieœcie?";
+	description = "Jakie ciekawe miejsca moÅ¼na odwiedziÄ‡ w tym mieÅ›cie?";
 };                       
 
 FUNC INT DIA_VLK_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Co ciekawego mo¿na znaleŸæ w mieœcie?
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Mo¿na tu kupiæ praktycznie wszystko. Albo od kupców na targowisku, albo w dolnej czêœci miasta.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Zwa¿ jednak, ¿e za wiêkszoœæ towarów trzeba s³ono zap³aciæ.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Jeœli nie masz zbyt du¿o z³ota, udaj siê do Lehmara, lichwiarza, mo¿e bêdzie móg³ ci pomóc. Jego dom znajduje siê u wejœcia do dzielnicy portowej, w dolnej czêœci miasta.
+	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Co ciekawego moÅ¼na znaleÅºÄ‡ w mieÅ›cie?
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //MoÅ¼na tu kupiÄ‡ praktycznie wszystko. Albo od kupcÃ³w na targowisku, albo w dolnej czÄ™Å›ci miasta.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //ZwaÅ¼ jednak, Å¼e za wiÄ™kszoÅ›Ä‡ towarÃ³w trzeba sÅ‚ono zapÅ‚aciÄ‡.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //JeÅ›li nie masz zbyt duÅ¼o zÅ‚ota, udaj siÄ™ do Lehmara, lichwiarza, moÅ¼e bÄ™dzie mÃ³gÅ‚ ci pomÃ³c. Jego dom znajduje siÄ™ u wejÅ›cia do dzielnicy portowej, w dolnej czÄ™Å›ci miasta.
 };
 
 // *************************************************************************
@@ -115,31 +115,31 @@ func INT DIA_VLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Od upadku Bariery handel z najwa¿niejszym z wieœniaków nagle siê urwa³. Kto wie, co on knuje. Coœ mi tu œmierdzi...
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Od upadku Bariery handel z najwaÅ¼niejszym z wieÅ›niakÃ³w nagle siÄ™ urwaÅ‚. Kto wie, co on knuje. CoÅ› mi tu Å›mierdzi...
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar posuwa siê za daleko. Wci¹¿ odmawia dostaw dla miasta. Jeœli stra¿ nie zareaguje odpowiednio szybko, pozostali ch³opi wkrótce te¿ zaczn¹ siê buntowaæ.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar posuwa siÄ™ za daleko. WciÄ…Å¼ odmawia dostaw dla miasta. JeÅ›li straÅ¼ nie zareaguje odpowiednio szybko, pozostali chÅ‚opi wkrÃ³tce teÅ¼ zacznÄ… siÄ™ buntowaÄ‡.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //Ponoæ bandyci po³¹czyli swe si³y z magami. Potê¿ni czarni magowie w czarnych szatach. Chyba nawet widzia³em jednego z nich ostatniej nocy.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //PonoÄ‡ bandyci poÅ‚Ä…czyli swe siÅ‚y z magami. PotÄ™Å¼ni czarni magowie w czarnych szatach. Chyba nawet widziaÅ‚em jednego z nich ostatniej nocy.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //S³ysza³em, ¿e jeden z najemników Onara wyruszy³, aby pozabijaæ smoki. W koñcu zajêli siê czymœ po¿ytecznym.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //SÅ‚yszaÅ‚em, Å¼e jeden z najemnikÃ³w Onara wyruszyÅ‚, aby pozabijaÄ‡ smoki. W koÅ„cu zajÄ™li siÄ™ czymÅ› poÅ¼ytecznym.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //Wieœæ niesie, ¿e smoki zosta³y pokonane! Lord Hagen zbiera swe oddzia³y, by poprowadziæ je przeciw reszcie bestii, pl¹druj¹cych Górnicz¹ Dolinê.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //WieÅ›Ä‡ niesie, Å¼e smoki zostaÅ‚y pokonane! Lord Hagen zbiera swe oddziaÅ‚y, by poprowadziÄ‡ je przeciw reszcie bestii, plÄ…drujÄ…cych GÃ³rniczÄ… DolinÄ™.
 	};
 };
 

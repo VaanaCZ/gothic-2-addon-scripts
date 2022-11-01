@@ -31,7 +31,7 @@ INSTANCE DIA_Peck_PICKPOCKET (C_INFO)
 	condition	= DIA_Peck_PICKPOCKET_Condition;
 	information	= DIA_Peck_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego klucza bêdzie doœæ ryzykownym zadaniem)";
+	description = "(KradzieÅ¼ tego klucza bÄ™dzie doÅ›Ä‡ ryzykownym zadaniem)";
 };                       
 
 FUNC INT DIA_Peck_PICKPOCKET_Condition()
@@ -83,7 +83,7 @@ instance DIA_Peck_HEY		(C_INFO)
 	condition	 = 	DIA_Peck_HEY_Condition;
 	information	 = 	DIA_Peck_HEY_Info;
 	permanent	 = 	TRUE;
-	description	 =  "Hej, co s³ychaæ?";
+	description	 =  "Hej, co sÅ‚ychaÄ‡?";
 };
 func int DIA_Peck_HEY_Condition ()
 {	
@@ -95,8 +95,8 @@ func int DIA_Peck_HEY_Condition ()
 };
 func void DIA_Peck_HEY_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_HEY_15_00"); //Hej, co s³ychaæ?
-	AI_Output (self, other, "DIA_Peck_HEY_12_01"); //Cz³owieku, jestem zajêty. Zostaw mnie w spokoju.
+	AI_Output (other, self, "DIA_Peck_HEY_15_00"); //Hej, co sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Peck_HEY_12_01"); //CzÅ‚owieku, jestem zajÄ™ty. Zostaw mnie w spokoju.
 	
 	AI_StopProcessInfos (self);
 };
@@ -110,7 +110,7 @@ instance DIA_Peck_FOUND_PECK		(C_INFO)
 	condition	 = 	DIA_Peck_FOUND_PECK_Condition;
 	information	 = 	DIA_Peck_FOUND_PECK_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Hej, czas ju¿ ruszaæ w drogê.";
+	description	 =  "Hej, czas juÅ¼ ruszaÄ‡ w drogÄ™.";
 };
 
 func int DIA_Peck_FOUND_PECK_Condition ()
@@ -123,12 +123,12 @@ func int DIA_Peck_FOUND_PECK_Condition ()
 };
 func void DIA_Peck_FOUND_PECK_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_00"); //Hej, czas ju¿ ruszaæ w drogê.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_01"); //Czego chcesz? Nie widzisz, ¿e jestem zajêty?
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_02"); //Potrzebujê broni, wracaj wiêc do koszar.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_03"); //Do cholery, twoja broñ mo¿e poczekaæ.
-	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_04"); //No dalej, Andre ju¿ siê za tob¹ stêskni³.
-	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_05"); //Hmmm... cholera. W porz¹dku, ju¿ idê - ale kiedy zameldujesz siê u Andre, nie wspominaj, ¿e mnie tu widzia³eœ.
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_00"); //Hej, czas juÅ¼ ruszaÄ‡ w drogÄ™.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_01"); //Czego chcesz? Nie widzisz, Å¼e jestem zajÄ™ty?
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_02"); //PotrzebujÄ™ broni, wracaj wiÄ™c do koszar.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_03"); //Do cholery, twoja broÅ„ moÅ¼e poczekaÄ‡.
+	AI_Output (other, self, "DIA_Peck_FOUND_PECK_15_04"); //No dalej, Andre juÅ¼ siÄ™ za tobÄ… stÄ™skniÅ‚.
+	AI_Output (self, other, "DIA_Peck_FOUND_PECK_12_05"); //Hmmm... cholera. W porzÄ…dku, juÅ¼ idÄ™ - ale kiedy zameldujesz siÄ™ u Andre, nie wspominaj, Å¼e mnie tu widziaÅ‚eÅ›.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "STORAGE");
@@ -144,7 +144,7 @@ instance DIA_Peck_WEAPON		(C_INFO)
 	condition	 = 	DIA_Peck_WEAPON_Condition;
 	information	 = 	DIA_Peck_WEAPON_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Potrzebujê broni.";
+	description	 = 	"PotrzebujÄ™ broni.";
 };
 //------------------------------------
 var int DIA_Peck_WEAPON_perm;
@@ -161,32 +161,32 @@ func int DIA_Peck_WEAPON_Condition ()
 };
 func void DIA_Peck_WEAPON_Info ()
 {
-	AI_Output (other, self, "DIA_Peck_WEAPON_15_00"); //Potrzebujê broni.
+	AI_Output (other, self, "DIA_Peck_WEAPON_15_00"); //PotrzebujÄ™ broni.
 	
 	if (MIS_Andre_Peck == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Peck_WEAPON_12_01"); //Najpierw zamelduj siê u Andre.
+		AI_Output (self, other, "DIA_Peck_WEAPON_12_01"); //Najpierw zamelduj siÄ™ u Andre.
 	}
 	else	
 	{
 		if (MIS_Andre_Peck == LOG_OBSOLETE)
 		{
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_02"); //Kogó¿ my tu mamy. To nasz nowy towarzysz. I szuka sobie miecza.
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_03"); //Nie powiedzia³eœ Andre, ¿e by³em w Czerwonej Latarni. Jesteœ w porz¹dku. Proszê, weŸ swój miecz.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_02"); //KogÃ³Å¼ my tu mamy. To nasz nowy towarzysz. I szuka sobie miecza.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_03"); //Nie powiedziaÅ‚eÅ› Andre, Å¼e byÅ‚em w Czerwonej Latarni. JesteÅ› w porzÄ…dku. ProszÄ™, weÅº swÃ³j miecz.
 			AI_Output (self ,other,"DIA_Peck_Add_12_00"); //To najlepszy, jaki mam.
 			B_GiveInvItems 		(self, hero	, ItMw_Schwert1, 1); // edles Schwert 35
 	
 		}
-		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt für Andre M.F.
+		else if (MIS_Andre_Peck == LOG_SUCCESS) // ist schon korrekt, das SUCCESS gilt fÃ¼r Andre M.F.
 		{
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //Pamiêtam ciê dok³adnie. Kto doniós³ Andre, ¿e by³em w Czerwonej Latarni, co?
-			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //A teraz chcesz jeszcze ode mnie miecz... dobra, dostaniesz go. Proszê, a teraz zejdŸ mi z oczu.
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_04"); //PamiÄ™tam ciÄ™ dokÅ‚adnie. Kto doniÃ³sÅ‚ Andre, Å¼e byÅ‚em w Czerwonej Latarni, co?
+			AI_Output (self, other, "DIA_Peck_WEAPON_12_05"); //A teraz chcesz jeszcze ode mnie miecz... dobra, dostaniesz go. ProszÄ™, a teraz zejdÅº mi z oczu.
 			
 			B_GiveInvItems (self, hero, ItMw_1h_MISC_Sword,1);// rostiges Schwert
 			
 		};
 		DIA_Peck_WEAPON_perm = TRUE;
-	AI_Output (self, other, "DIA_Peck_WEAPON_12_06"); //Jeœli ta broñ ci nie odpowiada, idŸ do kupców na placu targowym.
+	AI_Output (self, other, "DIA_Peck_WEAPON_12_06"); //JeÅ›li ta broÅ„ ci nie odpowiada, idÅº do kupcÃ³w na placu targowym.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -198,7 +198,7 @@ func void DIA_Peck_WEAPON_Info ()
 
 func void B_Peck_LeckMich()
 {
-	AI_Output (self ,other,"DIA_Peck_Add_12_07"); //Poca³uj mnie w ty³ek!
+	AI_Output (self ,other,"DIA_Peck_Add_12_07"); //PocaÅ‚uj mnie w tyÅ‚ek!
 };
 
 
@@ -212,7 +212,7 @@ instance DIA_Peck_WEAPON2		(C_INFO)
 	condition	 = 	DIA_Peck_WEAPON2_Condition;
 	information	 = 	DIA_Peck_WEAPON2_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"Masz dla mnie jak¹œ lepsz¹ broñ?";
+	description	 = 	"Masz dla mnie jakÄ…Å› lepszÄ… broÅ„?";
 };
 //------------------------------------
 var int DIA_Peck_WEAPON2_perm;
@@ -230,10 +230,10 @@ func int DIA_Peck_WEAPON2_Condition ()
 };
 func void DIA_Peck_WEAPON2_Info ()
 {
-	AI_Output (self ,other,"DIA_Peck_Add_15_01"); //Masz dla mnie jak¹œ lepsz¹ broñ?
+	AI_Output (self ,other,"DIA_Peck_Add_15_01"); //Masz dla mnie jakÄ…Å› lepszÄ… broÅ„?
 	if (MIS_Andre_Peck == LOG_SUCCESS) //Peck verpetzt
 	{	
-		AI_Output (self ,other,"DIA_Peck_Add_12_06"); //Nie zapomnia³em o tym, ¿e donios³eœ na mnie Lordowi Andre.
+		AI_Output (self ,other,"DIA_Peck_Add_12_06"); //Nie zapomniaÅ‚em o tym, Å¼e doniosÅ‚eÅ› na mnie Lordowi Andre.
 		B_Peck_LeckMich();
 	}
 	else if (Kapitel < 3)
@@ -242,9 +242,9 @@ func void DIA_Peck_WEAPON2_Info ()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Peck_Add_12_03"); //Dobrze, ¿e pytasz. Tak siê sk³ada, ¿e mamy tu kilka niez³ych ostrzy po najemnikach Onara.
-		AI_Output (self ,other,"DIA_Peck_Add_12_04"); //Im ju¿ siê nie przydadz¹.
-		AI_Output (self ,other,"DIA_Peck_Add_12_05"); //Proszê, bierz.
+		AI_Output (self ,other,"DIA_Peck_Add_12_03"); //Dobrze, Å¼e pytasz. Tak siÄ™ skÅ‚ada, Å¼e mamy tu kilka niezÅ‚ych ostrzy po najemnikach Onara.
+		AI_Output (self ,other,"DIA_Peck_Add_12_04"); //Im juÅ¼ siÄ™ nie przydadzÄ….
+		AI_Output (self ,other,"DIA_Peck_Add_12_05"); //ProszÄ™, bierz.
 		B_GiveInvItems (self, other, ItMw_Rubinklinge, 1); //50
 		
 		DIA_Peck_WEAPON2_perm = TRUE;
@@ -261,7 +261,7 @@ instance DIA_Peck_PERM		(C_INFO)
 	condition	 = 	DIA_Peck_PERM_Condition;
 	information	 = 	DIA_Peck_PERM_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Wszystko w porz¹dku?";
+	description	 = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Peck_PERM_Condition ()
@@ -292,24 +292,24 @@ func void DIA_Peck_PERM_Info ()
 			if (hero.guild == GIL_MIL)
 			|| (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_02"); //Nie do koñca. Martwi¹ mnie najemnicy, a szczególnie pog³oska, ¿e chc¹ odbiæ swojego z wiêzienia.
-				AI_Output			(self, other, "DIA_Peck_PERM_12_03"); //Nie mam zamiaru przeciwstawiaæ siê grupie doœwiadczonych wojowników.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_02"); //Nie do koÅ„ca. MartwiÄ… mnie najemnicy, a szczegÃ³lnie pogÅ‚oska, Å¼e chcÄ… odbiÄ‡ swojego z wiÄ™zienia.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_03"); //Nie mam zamiaru przeciwstawiaÄ‡ siÄ™ grupie doÅ›wiadczonych wojownikÃ³w.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_04"); //Oczywiœcie. Mamy oczy szeroko otwarte. Magowie mog¹ spaæ spokojnie, wiêzieñ nie ma najmniejszej szansy ucieczki.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_04"); //OczywiÅ›cie. Mamy oczy szeroko otwarte. Magowie mogÄ… spaÄ‡ spokojnie, wiÄ™zieÅ„ nie ma najmniejszej szansy ucieczki.
 			}
 			else //Sld oder DJG
 			{
-				AI_Output			(self, other, "DIA_Peck_PERM_12_05"); //Wiem, co planujesz, ale nie uda ci siê odbiæ wiêŸnia.
+				AI_Output			(self, other, "DIA_Peck_PERM_12_05"); //Wiem, co planujesz, ale nie uda ci siÄ™ odbiÄ‡ wiÄ™Åºnia.
 			};
 		}	
 		else
 		{
-			AI_Output			(self, other, "DIA_Peck_PERM_12_06"); //Cieszê siê, ¿e sprawa morderstwa zosta³a wyjaœniona.
+			AI_Output			(self, other, "DIA_Peck_PERM_12_06"); //CieszÄ™ siÄ™, Å¼e sprawa morderstwa zostaÅ‚a wyjaÅ›niona.
 			AI_Output			(other, self, "DIA_Peck_PERM_15_07"); //Dlaczego?
-			AI_Output			(self, other, "DIA_Peck_PERM_12_08"); //Nie myœlisz chyba, ¿e najemnicy patrzyliby bezczynnie na to, jak wieszamy jednego z nich.
-			AI_Output			(self, other, "DIA_Peck_PERM_12_09"); //W najgorszym wypadku mogliby nas zaatakowaæ. Nie chcê nawet myœleæ, co by siê wtedy dzia³o.
+			AI_Output			(self, other, "DIA_Peck_PERM_12_08"); //Nie myÅ›lisz chyba, Å¼e najemnicy patrzyliby bezczynnie na to, jak wieszamy jednego z nich.
+			AI_Output			(self, other, "DIA_Peck_PERM_12_09"); //W najgorszym wypadku mogliby nas zaatakowaÄ‡. Nie chcÄ™ nawet myÅ›leÄ‡, co by siÄ™ wtedy dziaÅ‚o.
 		};	
 	};
 };

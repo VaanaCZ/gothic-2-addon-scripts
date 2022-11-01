@@ -47,11 +47,11 @@ FUNC VOID DIA_STRF_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_00"); //Zostaw mnie w spokoju, cz³owieku!
+		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_00"); //Zostaw mnie w spokoju, czÅ‚owieku!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_01"); //Czego chcesz? Nie czepiaj siê mnie!
+		AI_Output (self,other,"DIA_STRF_13_STANDARD_13_01"); //Czego chcesz? Nie czepiaj siÄ™ mnie!
 	};
 	if (randy == 2)
 	{

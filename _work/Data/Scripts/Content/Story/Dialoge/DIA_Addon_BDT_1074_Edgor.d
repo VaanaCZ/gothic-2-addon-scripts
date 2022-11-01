@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Edgor_EXIT_Info()
 	if Npc_KnowsInfo (other, DIA_Addon_Edgor_MIS2)
 	&& (Edgor_Exiteinmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //Mi³o mi ciê poznaæ...
+		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //MiÅ‚o mi ciÄ™ poznaÄ‡...
 		Edgor_Exiteinmal = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -78,11 +78,11 @@ FUNC INT DIA_Addon_Edgor_Hi_Condition()
 FUNC VOID DIA_Addon_Edgor_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Jak leci?
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Chcesz wiedzieæ, jak leci? Ju¿ ja ci powiem, jak leci!
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Pewnej sztormowej nocy przywieŸli mnie tu piraci. Zarzyga³em im ca³y statek.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //No a potem Kruk odci¹³ kopalniê, bo jacyœ durnie stali siê zbyt chciwi.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Franko zosta³ przywódc¹ myœliwych i zabije ka¿dego, kto mu siê przeciwstawi.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Czyli mówi¹c ogólnie, leci doœæ marnie.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Chcesz wiedzieÄ‡, jak leci? JuÅ¼ ja ci powiem, jak leci!
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Pewnej sztormowej nocy przywieÅºli mnie tu piraci. ZarzygaÅ‚em im caÅ‚y statek.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //No a potem Kruk odciÄ…Å‚ kopalniÄ™, bo jacyÅ› durnie stali siÄ™ zbyt chciwi.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Franko zostaÅ‚ przywÃ³dcÄ… myÅ›liwych i zabije kaÅ¼dego, kto mu siÄ™ przeciwstawi.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Czyli mÃ³wiÄ…c ogÃ³lnie, leci doÅ›Ä‡ marnie.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -103,7 +103,7 @@ INSTANCE DIA_Addon_Edgor_Franco (C_INFO)
 	condition   = DIA_Addon_Edgor_Franco_Condition;
 	information = DIA_Addon_Edgor_Franco_Info;
 	permanent   = FALSE;
-	description = "W jaki sposób Franko zosta³ przywódc¹ tej bandy?";
+	description = "W jaki sposÃ³b Franko zostaÅ‚ przywÃ³dcÄ… tej bandy?";
 };
 FUNC INT DIA_Addon_Edgor_Franco_Condition()
 {	
@@ -114,9 +114,9 @@ FUNC INT DIA_Addon_Edgor_Franco_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Franco_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //W jaki sposób Franko zosta³ przywódc¹ tej bandy?
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //Ca³kiem prosto: zabi³ Fletchera - poprzedniego przywódcê.
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher by³ w porz¹dku. Franko jednak oszukuje nas, jak tylko mo¿e.
+	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //W jaki sposÃ³b Franko zostaÅ‚ przywÃ³dcÄ… tej bandy?
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //CaÅ‚kiem prosto: zabiÅ‚ Fletchera - poprzedniego przywÃ³dcÄ™.
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Fletcher byÅ‚ w porzÄ…dku. Franko jednak oszukuje nas, jak tylko moÅ¼e.
 };	
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Edgor_MIS2   (C_INFO)
 	condition   = DIA_Addon_Edgor_MIS2_Condition;
 	information = DIA_Addon_Edgor_MIS2_Info;
 	permanent   = FALSE;
-	description = "Franko pyta³ mnie o tê kamienn¹ tabliczkê. Uda³o ci siê j¹ znaleŸæ?";
+	description = "Franko pytaÅ‚ mnie o tÄ™ kamiennÄ… tabliczkÄ™. UdaÅ‚o ci siÄ™ jÄ… znaleÅºÄ‡?";
 };
 FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 {	
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_MIS2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franko pyta³ mnie o tê kamienn¹ tabliczkê. Uda³o ci siê j¹ znaleŸæ?
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Ch³opie, nawet jej nie szuka³em. Wiem tylko, ¿e podobno jest w starym budynku na bagnach.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //A mój wewnêtrzny g³os wci¹¿ mi powtarza: Edgor, trzymaj siê z daleka od starych budynków stoj¹cych gdzieœ poœrodku bagna.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Nie bêdê nadstawia³ karku dla tego aroganckiego durnia - Franka!
+	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franko pytaÅ‚ mnie o tÄ™ kamiennÄ… tabliczkÄ™. UdaÅ‚o ci siÄ™ jÄ… znaleÅºÄ‡?
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //ChÅ‚opie, nawet jej nie szukaÅ‚em. Wiem tylko, Å¼e podobno jest w starym budynku na bagnach.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //A mÃ³j wewnÄ™trzny gÅ‚os wciÄ…Å¼ mi powtarza: Edgor, trzymaj siÄ™ z daleka od starych budynkÃ³w stojÄ…cych gdzieÅ› poÅ›rodku bagna.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Nie bÄ™dÄ™ nadstawiaÅ‚ karku dla tego aroganckiego durnia - Franka!
 	
-	B_LogEntry (Topic_Addon_Stoneplate,"Edgor nie pójdzie szukaæ kamiennej tablicy. Wspomnia³, ¿e znajduje siê ona gdzieœ w starym budynku na bagnach.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Edgor nie pÃ³jdzie szukaÄ‡ kamiennej tablicy. WspomniaÅ‚, Å¼e znajduje siÄ™ ona gdzieÅ› w starym budynku na bagnach.");
 };
 //---------------------------------------------------------------------
 //	Info Wegbeschreibung
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Edgor_Weg   (C_INFO)
 	condition   = DIA_Addon_Edgor_Weg_Condition;
 	information = DIA_Addon_Edgor_Weg_Info;
 	permanent   = FALSE;
-	description = "Mo¿esz powtórzyæ, gdzie jest ten stary budynek?";
+	description = "MoÅ¼esz powtÃ³rzyÄ‡, gdzie jest ten stary budynek?";
 };
 FUNC INT DIA_Addon_Edgor_Weg_Condition()
 {	
@@ -169,11 +169,11 @@ FUNC INT DIA_Addon_Edgor_Weg_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Mo¿esz powtórzyæ, gdzie jest ten stary budynek?
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Widzisz tê wielk¹ ska³ê? IdŸ œcie¿k¹, która znajduje siê na lewo od niej. Kawa³ek dalej bêdzie nastêpna wielka ska³a.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Tam pójdziesz œcie¿k¹ w lewo... Albo w prawo. Ch³opie, nie pamiêtam, to by³o dawno temu.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Ruina stoi na niewielkim wzgórzu, ukryta wœród roœlin.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Mo¿e bêdziesz mia³ szczêœcie i jej nie znajdziesz...
+	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //MoÅ¼esz powtÃ³rzyÄ‡, gdzie jest ten stary budynek?
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Widzisz tÄ™ wielkÄ… skaÅ‚Ä™? IdÅº Å›cieÅ¼kÄ…, ktÃ³ra znajduje siÄ™ na lewo od niej. KawaÅ‚ek dalej bÄ™dzie nastÄ™pna wielka skaÅ‚a.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Tam pÃ³jdziesz Å›cieÅ¼kÄ… w lewo... Albo w prawo. ChÅ‚opie, nie pamiÄ™tam, to byÅ‚o dawno temu.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Ruina stoi na niewielkim wzgÃ³rzu, ukryta wÅ›rÃ³d roÅ›lin.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //MoÅ¼e bÄ™dziesz miaÅ‚ szczÄ™Å›cie i jej nie znajdziesz...
 };
 //---------------------------------------------------------------------
 //	Info Found
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Edgor_Found   (C_INFO)
 	condition   = DIA_Addon_Edgor_Found_Condition;
 	information = DIA_Addon_Edgor_Found_Info;
 	permanent   = FALSE;
-	description = "Znalaz³em kamienn¹ tabliczkê!";
+	description = "ZnalazÅ‚em kamiennÄ… tabliczkÄ™!";
 };
 FUNC INT DIA_Addon_Edgor_Found_Condition()
 {	
@@ -198,9 +198,9 @@ FUNC INT DIA_Addon_Edgor_Found_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Found_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//Znalaz³em kamienn¹ tabliczkê!
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//Naprawdê? Ale z ciebie zuch.
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//Mo¿e dziêki temu pozwol¹ ci wejœæ do obozu.
+	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//ZnalazÅ‚em kamiennÄ… tabliczkÄ™!
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//NaprawdÄ™? Ale z ciebie zuch.
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//MoÅ¼e dziÄ™ki temu pozwolÄ… ci wejÅ›Ä‡ do obozu.
 };
 //---------------------------------------------------------------------
 //	Info Teach
@@ -212,7 +212,7 @@ INSTANCE DIA_Addon_Edgor_Teach   (C_INFO)
 	condition   = DIA_Addon_Edgor_Teach_Condition;
 	information = DIA_Addon_Edgor_Teach_Info;
 	permanent   = FALSE;
-	description = "Potrafisz mnie czegoœ nauczyæ?";
+	description = "Potrafisz mnie czegoÅ› nauczyÄ‡?";
 };
 FUNC INT DIA_Addon_Edgor_Teach_Condition()
 {	
@@ -223,20 +223,20 @@ FUNC INT DIA_Addon_Edgor_Teach_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Potrafisz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//Wiem co nieco o krwiopijcach. Nienawidzê tych bydlaków chyba nawet bardziej ni¿ Franka!
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Wiem, jak oderwaæ z ich trupów skrzyd³a i ¿¹d³a. Taaak, oderwaæ...
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Nie licz¹c tego, ¿e wiem, jak uzyskaæ wydzielinê z ¿¹d³a.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Jeœli chcesz, mogê ciê tego wszystkiego nauczyæ.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Oczywiœcie nie za darmo....
+	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Potrafisz mnie czegoÅ› nauczyÄ‡?
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//Wiem co nieco o krwiopijcach. NienawidzÄ™ tych bydlakÃ³w chyba nawet bardziej niÅ¼ Franka!
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Wiem, jak oderwaÄ‡ z ich trupÃ³w skrzydÅ‚a i Å¼Ä…dÅ‚a. Taaak, oderwaÄ‡...
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Nie liczÄ…c tego, Å¼e wiem, jak uzyskaÄ‡ wydzielinÄ™ z Å¼Ä…dÅ‚a.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//JeÅ›li chcesz, mogÄ™ ciÄ™ tego wszystkiego nauczyÄ‡.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//OczywiÅ›cie nie za darmo....
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor wie du¿o na temat krwiopijców i ich oporz¹dzania.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor wie duÅ¼o na temat krwiopijcÃ³w i ich oporzÄ…dzania.");	
 	Edgor_Teach = TRUE;
 };
 FUNC VOID B_Edgor_NotEnoughGold()
 {
-	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Za³atw trochê z³ota. Przyjmujê tylko monety, ¿adnych kawa³ków ani okruchów.
+	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//ZaÅ‚atw trochÄ™ zÅ‚ota. PrzyjmujÄ™ tylko monety, Å¼adnych kawaÅ‚kÃ³w ani okruchÃ³w.
 };
 //---------------------------------------------------------------------
 //	Info Train (Bloodflys)
@@ -248,7 +248,7 @@ INSTANCE DIA_Addon_Edgor_TrainStart   (C_INFO)
 	condition   = DIA_Addon_Edgor_Start_Condition;
 	information = DIA_Addon_Edgor_Start_Info;
 	permanent   = TRUE;
-	description = "A co do krwiopijców...";
+	description = "A co do krwiopijcÃ³w...";
 };
 FUNC INT DIA_Addon_Edgor_Start_Condition()
 {	
@@ -259,8 +259,8 @@ FUNC INT DIA_Addon_Edgor_Start_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Start_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00");//A co do krwiopijców...
-	AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01");//Co chcesz wiedzieæ?
+	AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_SEKRET_15_00");//A co do krwiopijcÃ³w...
+	AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_SEKRET_06_01");//Co chcesz wiedzieÄ‡?
 	
 	Info_ClearChoices (DIA_Addon_Edgor_TrainStart);
 	Info_AddChoice    (DIA_Addon_Edgor_TrainStart,DIALOG_BACK,DIA_Addon_Edgor_TrainStart_BACK);
@@ -268,15 +268,15 @@ FUNC VOID DIA_Addon_Edgor_Start_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "Wyci¹gnij ¿¹d³o krwiopijcy. (Koszt: 1 PN, 100 szt. z³ota)",DIA_Addon_Edgor_TrainStart_Sting);
+		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "WyciÄ…gnij Å¼Ä…dÅ‚o krwiopijcy. (Koszt: 1 PN, 100 szt. zÅ‚ota)",DIA_Addon_Edgor_TrainStart_Sting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Oderwij skrzyd³a krwiopijcy. (Koszt: 1 PN, 100 szt. z³ota)",DIA_Addon_Edgor_TrainStart_Wing);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Oderwij skrzydÅ‚a krwiopijcy. (Koszt: 1 PN, 100 szt. zÅ‚ota)",DIA_Addon_Edgor_TrainStart_Wing);
 	};
 	if (Knows_Bloodfly == FALSE)
 	{
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"Wydob¹dŸ wydzielinê z krwiopijcy. (Koszt: 1 PN, 100 szt. z³ota)",DIA_Addon_Edgor_TrainStart_GIFT);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"WydobÄ…dÅº wydzielinÄ™ z krwiopijcy. (Koszt: 1 PN, 100 szt. zÅ‚ota)",DIA_Addon_Edgor_TrainStart_GIFT);
 	};
 };	
 FUNC VOID DIA_Addon_Edgor_TrainStart_BACK()
@@ -289,9 +289,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Sting()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00");//Jak wydobyæ ¿¹d³o krwiopijcy?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01");//Trzeba przewróciæ truch³o i je rozp³ataæ. A potem przebiæ siê przez wnêtrznoœci w okolicy ogona.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02");//Wtedy ³atwo bêdzie wyrwaæ ¿¹d³o.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Sting_15_00");//Jak wydobyÄ‡ Å¼Ä…dÅ‚o krwiopijcy?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_01");//Trzeba przewrÃ³ciÄ‡ truchÅ‚o i je rozpÅ‚ataÄ‡. A potem przebiÄ‡ siÄ™ przez wnÄ™trznoÅ›ci w okolicy ogona.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Sting_06_02");//Wtedy Å‚atwo bÄ™dzie wyrwaÄ‡ Å¼Ä…dÅ‚o.
 		};
 	}
 	else
@@ -306,8 +306,8 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Wing()
 	{
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Jaki jest najlepszy sposób, ¿eby usun¹æ skrzyd³a?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//To doœæ proste. Z³ap jedn¹ rêk¹ za skrzyd³o, a drug¹ przetnij wierzchni¹ warstwê skóry.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Jaki jest najlepszy sposÃ³b, Å¼eby usunÄ…Ä‡ skrzydÅ‚a?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//To doÅ›Ä‡ proste. ZÅ‚ap jednÄ… rÄ™kÄ… za skrzydÅ‚o, a drugÄ… przetnij wierzchniÄ… warstwÄ™ skÃ³ry.
 		};
 	}
 	else
@@ -322,9 +322,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_GIFT()
 	{
 		if (other.lp >= 1)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Jak uzyskaæ wydzielinê krwiopijcy?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Trzeba rozci¹æ zewnêtrzn¹ warstwê ¿¹d³a. Wtedy powinieneœ zobaczyæ, jak œcieka uzdrawiaj¹ca wydzielina.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Mo¿na wypiæ ten p³yn albo wykorzystaæ go do sporz¹dzenia mikstury.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Jak uzyskaÄ‡ wydzielinÄ™ krwiopijcy?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Trzeba rozciÄ…Ä‡ zewnÄ™trznÄ… warstwÄ™ Å¼Ä…dÅ‚a. Wtedy powinieneÅ› zobaczyÄ‡, jak Å›cieka uzdrawiajÄ…ca wydzielina.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//MoÅ¼na wypiÄ‡ ten pÅ‚yn albo wykorzystaÄ‡ go do sporzÄ…dzenia mikstury.
 			
 			other.lp = (other.lp - 1);
 			Knows_Bloodfly = TRUE; 

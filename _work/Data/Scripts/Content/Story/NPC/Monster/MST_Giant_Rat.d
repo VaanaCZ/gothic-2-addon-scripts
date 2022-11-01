@@ -78,13 +78,13 @@ INSTANCE Giant_Rat	(Mst_Default_Giant_Rat)
 
 
 //**************************************
-//	junge Giant_Rat   (für Spielstart) 	
+//	junge Giant_Rat   (fÃ¼r Spielstart) 	
 //**************************************
 
 INSTANCE YGiant_Rat	(Mst_Default_Giant_Rat)
 {
 	//----- Monster ----
-	name							=	"M³ody olbrzymi szczur";
+	name							=	"MÅ‚ody olbrzymi szczur";
 	level							=	3;
 	
 	//----- Attribute ----

@@ -54,20 +54,20 @@ func void DIA_Geppert_HALLO_Info ()
 		Kervo_GotStuff = TRUE;
 	};	
 	
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //Staæ! Kto idzie?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //Nie chcesz mnie chyba wys³aæ z powrotem do kopalni rudy, prawda?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //Muszê ciê rozczarowaæ. Nie wrócê tam za nic w œwiecie.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //StaÄ‡! Kto idzie?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //Nie chcesz mnie chyba wysÅ‚aÄ‡ z powrotem do kopalni rudy, prawda?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //MuszÄ™ ciÄ™ rozczarowaÄ‡. Nie wrÃ³cÄ™ tam za nic w Å›wiecie.
 	
 
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 	Info_AddChoice	(DIA_Geppert_HALLO, "Co tutaj robisz?", DIA_Geppert_HALLO_Wasmachtihr );
-	Info_AddChoice	(DIA_Geppert_HALLO, "Jesteœ zbieg³ym wiêŸniem, prawda?", DIA_Geppert_HALLO_Flucht );
+	Info_AddChoice	(DIA_Geppert_HALLO, "JesteÅ› zbiegÅ‚ym wiÄ™Åºniem, prawda?", DIA_Geppert_HALLO_Flucht );
 };
 
 func void DIA_Geppert_HALLO_Flucht ()
 {
-	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //Jesteœ zbieg³ym wiêŸniem, prawda?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //Proszê, jaki jesteœ domyœlny. Z jakiego innego powodu móg³bym siedzieæ w tej zatêch³ej norze?
+	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //JesteÅ› zbiegÅ‚ym wiÄ™Åºniem, prawda?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //ProszÄ™, jaki jesteÅ› domyÅ›lny. Z jakiego innego powodu mÃ³gÅ‚bym siedzieÄ‡ w tej zatÄ™chÅ‚ej norze?
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
@@ -77,15 +77,15 @@ func void DIA_Geppert_HALLO_Wasmachtihr ()
 	
 	if 	((other.guild == GIL_MIL) || (other.guild == GIL_PAL))
 			{
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_01"); //Co to za kretyñskie pytanie? Chowam siê przed wami, ¿o³nierzami.
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_02"); //Przestañ kombinowaæ. Albo od razu mnie zabij, albo spadaj st¹d.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_01"); //Co to za kretyÅ„skie pytanie? Chowam siÄ™ przed wami, Å¼oÅ‚nierzami.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_02"); //PrzestaÅ„ kombinowaÄ‡. Albo od razu mnie zabij, albo spadaj stÄ…d.
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //G³upie pytanie. Ukrywam siê. Te œwinie ze stra¿y wszêdzie maj¹ swoich szpiegów.
+				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //GÅ‚upie pytanie. Ukrywam siÄ™. Te Å›winie ze straÅ¼y wszÄ™dzie majÄ… swoich szpiegÃ³w.
 			};
 
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //Nie dam siê ponownie wys³aæ do kopalni, i ju¿.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //Nie dam siÄ™ ponownie wysÅ‚aÄ‡ do kopalni, i juÅ¼.
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
@@ -100,7 +100,7 @@ instance DIA_Geppert_BRATEN		(C_INFO)
 	information	 = 	DIA_Geppert_BRATEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ta pieczeñ pachnie wspaniale.";
+	description	 = 	"Ta pieczeÅ„ pachnie wspaniale.";
 };
 
 func int DIA_Geppert_BRATEN_Condition ()
@@ -113,7 +113,7 @@ func int DIA_Geppert_BRATEN_Condition ()
 
 func void DIA_Geppert_BRATEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //Ta pieczeñ pachnie wspaniale.
+	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //Ta pieczeÅ„ pachnie wspaniale.
 	AI_Output			(self, other, "DIA_Geppert_BRATEN_10_01"); //Nie dotykaj!
 	AI_StopProcessInfos (self);
 };

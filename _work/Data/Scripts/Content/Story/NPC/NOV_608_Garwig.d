@@ -8,7 +8,7 @@ INSTANCE NOV_608_Garwig (Npc_Default)
 	flags       = 0;																	
 	npctype		= NPCTYPE_MAIN;
 	
-	//LEVEL für Sleep- Scroll nötig M.F.
+	//LEVEL fÃ¼r Sleep- Scroll nÃ¶tig M.F.
 	level		= 1;
 	// ------ Attribute ------
 	attribute[ATR_STRENGTH] 		= 60;

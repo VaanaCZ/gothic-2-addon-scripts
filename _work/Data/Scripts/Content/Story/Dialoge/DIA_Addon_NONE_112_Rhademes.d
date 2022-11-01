@@ -18,7 +18,7 @@ FUNC INT DIA_Addon_Rhademes_EXIT_Condition()
 FUNC VOID DIA_Addon_Rhademes_EXIT_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Rhademes_EXIT_15_00"); //Sam poszukam drogi!
-	AI_Output (self, other, "DIA_Addon_Rhademes_EXIT_03_01"); //Jak sobie ¿yczysz...
+	AI_Output (self, other, "DIA_Addon_Rhademes_EXIT_03_01"); //Jak sobie Å¼yczysz...
 	
 	AI_StopProcessInfos (self);
 };
@@ -50,13 +50,13 @@ FUNC VOID DIA_Addon_Rhademes_First_Info()
 {
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_00"); //Mój duch by³ uwiêziony przez ca³¹ wiecznoœæ.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_01"); //W koñcu jestem wolny. Miecz ma NOWEGO powiernika.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_02"); //Ostatnia komnata zosta³a otwarta.
-		AI_Output (other, self, "DIA_Addon_Rhademes_First_15_03"); //Ale brama wygl¹da na zamkniêt¹!
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_00"); //MÃ³j duch byÅ‚ uwiÄ™ziony przez caÅ‚Ä… wiecznoÅ›Ä‡.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_01"); //W koÅ„cu jestem wolny. Miecz ma NOWEGO powiernika.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_02"); //Ostatnia komnata zostaÅ‚a otwarta.
+		AI_Output (other, self, "DIA_Addon_Rhademes_First_15_03"); //Ale brama wyglÄ…da na zamkniÄ™tÄ…!
 		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_04"); //To nie jest brama do ostatniej komnaty.
 		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_05"); //TA brama prowadzi do poprzedniego pomieszczenia.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_06"); //Powiernik... zamkn¹³ j¹ za sob¹.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_06"); //Powiernik... zamknÄ…Å‚ jÄ… za sobÄ….
 		
 		Rhademes_Understood = TRUE;
 	}
@@ -81,7 +81,7 @@ instance DIA_Addon_Rhademes_Pforte (C_INFO)
 	condition   = DIA_Addon_Rhademes_Pforte_Condition;
 	information = DIA_Addon_Rhademes_Pforte_Info;
 	permanent   = FALSE;
-	description	= "Jak mogê otworzyæ bramê?";
+	description	= "Jak mogÄ™ otworzyÄ‡ bramÄ™?";
 };
 FUNC INT DIA_Addon_Rhademes_Pforte_Condition()
 {
@@ -89,10 +89,10 @@ FUNC INT DIA_Addon_Rhademes_Pforte_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_Pforte_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_00"); //Jak mogê otworzyæ bramê?
-	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_01"); //Przesuñ... jedn¹ z dŸwigni.
-	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_02"); //Dowoln¹?
-	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_03"); //Wszystkie dŸwignie otwieraj¹ bramê.
+	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_00"); //Jak mogÄ™ otworzyÄ‡ bramÄ™?
+	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_01"); //PrzesuÅ„... jednÄ… z dÅºwigni.
+	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_02"); //DowolnÄ…?
+	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_03"); //Wszystkie dÅºwignie otwierajÄ… bramÄ™.
 };
 
 // ***********************************************************
@@ -106,7 +106,7 @@ instance DIA_Addon_Rhademes_Hebel (C_INFO)
 	condition   = DIA_Addon_Rhademes_Hebel_Condition;
 	information = DIA_Addon_Rhademes_Hebel_Info;
 	permanent   = FALSE;
-	description	= "Nie wszystkie dŸwignie uruchamiaj¹ pu³apkê, tak?";
+	description	= "Nie wszystkie dÅºwignie uruchamiajÄ… puÅ‚apkÄ™, tak?";
 };
 FUNC INT DIA_Addon_Rhademes_Hebel_Condition()
 {
@@ -118,7 +118,7 @@ FUNC INT DIA_Addon_Rhademes_Hebel_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_Hebel_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_Hebel_15_00"); //Nie wszystkie dŸwignie uruchamiaj¹ pu³apkê, tak?
+	AI_Output (other, self, "DIA_Addon_Rhademes_Hebel_15_00"); //Nie wszystkie dÅºwignie uruchamiajÄ… puÅ‚apkÄ™, tak?
 	AI_Output (self, other, "DIA_Addon_Rhademes_Hebel_03_01"); //Tak!
 };
 
@@ -133,7 +133,7 @@ instance DIA_Addon_Rhademes_DontBelieve (C_INFO)
 	condition   = DIA_Addon_Rhademes_DontBelieve_Condition;
 	information = DIA_Addon_Rhademes_DontBelieve_Info;
 	permanent   = FALSE;
-	description	= "Nie wierzê ci!";
+	description	= "Nie wierzÄ™ ci!";
 };
 FUNC INT DIA_Addon_Rhademes_DontBelieve_Condition()
 {
@@ -145,8 +145,8 @@ FUNC INT DIA_Addon_Rhademes_DontBelieve_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_DontBelieve_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DontBelieve_15_00"); //Nie wierzê ci!
-	AI_Output (self, other, "DIA_Addon_Rhademes_DontBelieve_03_01"); //Nie, ja... zawsze mówiê prawdê.
+	AI_Output (other, self, "DIA_Addon_Rhademes_DontBelieve_15_00"); //Nie wierzÄ™ ci!
+	AI_Output (self, other, "DIA_Addon_Rhademes_DontBelieve_03_01"); //Nie, ja... zawsze mÃ³wiÄ™ prawdÄ™.
 };
 
 // ***********************************************************
@@ -160,7 +160,7 @@ instance DIA_Addon_Rhademes_DeinVater (C_INFO)
 	condition   = DIA_Addon_Rhademes_DeinVater_Condition;
 	information = DIA_Addon_Rhademes_DeinVater_Info;
 	permanent   = FALSE;
-	description	= "Twój ojciec zbudowa³ tê pu³apkê. Sk¹d mo¿esz wiedzieæ o jej dzia³aniu?";
+	description	= "TwÃ³j ojciec zbudowaÅ‚ tÄ™ puÅ‚apkÄ™. SkÄ…d moÅ¼esz wiedzieÄ‡ o jej dziaÅ‚aniu?";
 };
 FUNC INT DIA_Addon_Rhademes_DeinVater_Condition()
 {
@@ -172,16 +172,16 @@ FUNC INT DIA_Addon_Rhademes_DeinVater_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_00"); //Twój ojciec zbudowa³ tê pu³apkê. Sk¹d mo¿esz wiedzieæ o jej dzia³aniu?
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_01"); //QUARHODRON! Wci¹¿ s³yszê uderzenia m³ota... po drugiej stronie bramy... od tak dawna...
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_02"); //Miecz... pozwoli³ mi zobaczyæ... jego zemstê... za moj¹ pora¿kê...
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_03"); //To znaczy, ¿e widzia³eœ, która dŸwignia jest w³aœciwa?
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_04"); //Zapomnia³em to bardzo dawno temu.
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_00"); //TwÃ³j ojciec zbudowaÅ‚ tÄ™ puÅ‚apkÄ™. SkÄ…d moÅ¼esz wiedzieÄ‡ o jej dziaÅ‚aniu?
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_01"); //QUARHODRON! WciÄ…Å¼ sÅ‚yszÄ™ uderzenia mÅ‚ota... po drugiej stronie bramy... od tak dawna...
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_02"); //Miecz... pozwoliÅ‚ mi zobaczyÄ‡... jego zemstÄ™... za mojÄ… poraÅ¼kÄ™...
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_03"); //To znaczy, Å¼e widziaÅ‚eÅ›, ktÃ³ra dÅºwignia jest wÅ‚aÅ›ciwa?
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_04"); //ZapomniaÅ‚em to bardzo dawno temu.
 	
 	Info_ClearChoices (DIA_Addon_Rhademes_DeinVater);
-	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "No to domyœl siê!", DIA_Addon_Rhademes_DeinVater_Guess);
-	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Spróbuj sobie przypomnieæ!", DIA_Addon_Rhademes_DeinVater_Remember);
-	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "Myœl!", DIA_Addon_Rhademes_DeinVater_Think);
+	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "No to domyÅ›l siÄ™!", DIA_Addon_Rhademes_DeinVater_Guess);
+	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "SprÃ³buj sobie przypomnieÄ‡!", DIA_Addon_Rhademes_DeinVater_Remember);
+	Info_AddChoice (DIA_Addon_Rhademes_DeinVater, "MyÅ›l!", DIA_Addon_Rhademes_DeinVater_Think);
 };
 	
 	// ------------------------
@@ -190,7 +190,7 @@ FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 	// ------ zieh dran! ------
 	func void B_Addon_Rhademes_Lever(var int choice)
 	{
-		AI_Output (self, other, "DIA_Addon_Rhademes_Lever_03_00"); //To by³o tak dawno temu...
+		AI_Output (self, other, "DIA_Addon_Rhademes_Lever_03_00"); //To byÅ‚o tak dawno temu...
 		AI_StopProcessInfos (self);
 		
 		if (choice <= 1)
@@ -213,19 +213,19 @@ FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 	
 func void DIA_Addon_Rhademes_DeinVater_Think()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Think_15_00"); //Myœl!
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Think_15_00"); //MyÅ›l!
 	B_Addon_Rhademes_Lever(1);
 };
 
 func void DIA_Addon_Rhademes_DeinVater_Remember()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Remember_15_00"); //Spróbuj sobie przypomnieæ!
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Remember_15_00"); //SprÃ³buj sobie przypomnieÄ‡!
 	B_Addon_Rhademes_Lever(2);
 };
 
 func void DIA_Addon_Rhademes_DeinVater_Guess()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Guess_15_00"); //No to domyœl siê!
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_Guess_15_00"); //No to domyÅ›l siÄ™!
 	B_Addon_Rhademes_Lever(3);
 };
 
@@ -252,7 +252,7 @@ FUNC INT DIA_Addon_Rhademes_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_PERM_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Rhademes_PERM_03_00"); //Jeœli masz doœæ si³y... wrzuæ go... w morskie odmêty...
+	AI_Output (self, other, "DIA_Addon_Rhademes_PERM_03_00"); //JeÅ›li masz doÅ›Ä‡ siÅ‚y... wrzuÄ‡ go... w morskie odmÄ™ty...
 	SC_TookRhademesTrap = TRUE;
 	SC_TalkedToRhademAfter = TRUE;
 	AI_StopProcessInfos (self);

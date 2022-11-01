@@ -62,7 +62,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ ochrony przed ogniem";
+	description				= "Pier≈õcie≈Ñ ochrony przed ogniem";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire;
@@ -106,7 +106,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ ognia";
+	description				= "Pier≈õcie≈Ñ ognia";
 	
 	TEXT[2]					= NAME_Prot_Fire;
 	COUNT[2]				= Ri_ProtFire02;
@@ -150,7 +150,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ drewnianej skÛry";
+	description				= "Pier≈õcie≈Ñ drewnianej sk√≥ry";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint;
@@ -194,7 +194,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ kamiennej skÛry";
+	description				= "Pier≈õcie≈Ñ kamiennej sk√≥ry";
 	
 	TEXT[2]					= NAME_Prot_Point;
 	COUNT[2]				= Ri_ProtPoint02;
@@ -219,7 +219,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //Hˆhle OW//PassNW bei den Orks
+	INSTANCE ItRi_Prot_Edge_01(C_Item) //bei Cassia als Belohnung //H√∂hle OW//PassNW bei den Orks
 {
 	name 					=	NAME_Ring;
 
@@ -238,7 +238,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ øelaznej skÛry";
+	description				= "Pier≈õcie≈Ñ ≈ºelaznej sk√≥ry";
 
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge;
@@ -284,7 +284,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ magicznego pancerza";
+	description				= "Pier≈õcie≈Ñ magicznego pancerza";
 	
 	TEXT[2]					= NAME_Prot_Edge;
 	COUNT[2]				= Ri_ProtEdge02;
@@ -330,7 +330,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ ducha";
+	description				= "Pier≈õcie≈Ñ ducha";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage;
@@ -356,7 +356,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordh¸tte OW
+	INSTANCE ItRi_Prot_Mage_02(C_ITEM)	//Joly: von Neoras, wenn SC ihm Drachenei bringt. (Nur PAL oder KDF) ab Kapitel 4	//ricelordh√ºtte OW
 {
 	name 					=	NAME_Ring;
 
@@ -375,7 +375,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ obrony";
+	description				= "Pier≈õcie≈Ñ obrony";
 	
 	TEXT[2]					= NAME_Prot_Magic;
 	COUNT[2]				= Ri_ProtMage02;
@@ -421,7 +421,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "PierúcieÒ wiecznych zwyciÍstw";
+	description		= "Pier≈õcie≈Ñ wiecznych zwyciƒôstw";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage;
@@ -478,7 +478,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "PierúcieÒ nietykalnoúci";
+	description		= "Pier≈õcie≈Ñ nietykalno≈õci";
 	
 	TEXT[1]			= NAME_Prot_Magic;
 	COUNT[1]		= Ri_TProtMage02;
@@ -535,7 +535,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "PierúcieÒ zdolnoúci";
+	description		= "Pier≈õcie≈Ñ zdolno≈õci";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Ri_Dex;
@@ -561,7 +561,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	};
 	
 /******************************************************************************************/
-	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW N‰he Alter DT
+	INSTANCE ItRi_Dex_02(C_Item)//Joly:in OW N√§he Alter DT
 {
 	name 					=	NAME_Ring;
 
@@ -580,7 +580,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ zrÍcznoúci";
+	description				= "Pier≈õcie≈Ñ zrƒôczno≈õci";
 
 	TEXT[2]					= 	NAME_Bonus_Dex;
 	COUNT[2]				= 	Ri_Dex02;
@@ -626,7 +626,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ øycia";
+	description				= "Pier≈õcie≈Ñ ≈ºycia";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp;
@@ -679,7 +679,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ øywotnoúci";
+	description				= "Pier≈õcie≈Ñ ≈ºywotno≈õci";
 	
 	TEXT[2]					= NAME_Bonus_HP;
 	COUNT[2]				= Ri_Hp02;
@@ -732,7 +732,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ mocy";
+	description				= "Pier≈õcie≈Ñ mocy";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= Ri_Strg;
@@ -776,7 +776,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ si≥y";
+	description				= "Pier≈õcie≈Ñ si≈Çy";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= Ri_Strg02;
@@ -820,7 +820,7 @@ const int Value_Ri_DexStrg 			= 800;	const int Ri_DexStrg_Dex	=  4;
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ magii";
+	description				= "Pier≈õcie≈Ñ magii";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_Mana;
@@ -876,7 +876,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ gwiezdnej mocy";
+	description				= "Pier≈õcie≈Ñ gwiezdnej mocy";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_Mana02;
@@ -932,7 +932,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ oúwiecenia";
+	description				= "Pier≈õcie≈Ñ o≈õwiecenia";
 	
 	TEXT[2]					= NAME_Bonus_Mana;
 	COUNT[2]				= Ri_HpMana_Mana;
@@ -1002,7 +1002,7 @@ INSTANCE ItRi_Mana_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description				= "PierúcieÒ mocy";
+	description				= "Pier≈õcie≈Ñ mocy";
 	
 	TEXT[2]					= NAME_Bonus_Str;
 	COUNT[2]				= 4;

@@ -23,8 +23,8 @@ FUNC VOID DIA_Carl_EXIT_Info()
 ///////////////////////////////////////////////////////////////////////
 FUNC VOID B_CarlSayHallo ()
 {
-	AI_Output (self, other, "DIA_Carl_Hallo_05_00"); //Wygl¹da na to, ¿e mamy w mieœcie kilku z³odziei, którzy okradaj¹ bogaczy.
-	AI_Output (self, other, "DIA_Carl_Hallo_05_01"); //Stra¿ miejska przetrz¹snê³a ostatnio dzielnicê portow¹, ale nie uda³o im siê niczego znaleŸæ.
+	AI_Output (self, other, "DIA_Carl_Hallo_05_00"); //WyglÄ…da na to, Å¼e mamy w mieÅ›cie kilku zÅ‚odziei, ktÃ³rzy okradajÄ… bogaczy.
+	AI_Output (self, other, "DIA_Carl_Hallo_05_01"); //StraÅ¼ miejska przetrzÄ…snÄ™Å‚a ostatnio dzielnicÄ™ portowÄ…, ale nie udaÅ‚o im siÄ™ niczego znaleÅºÄ‡.
 	
 };
 // ************************************************************
@@ -85,26 +85,26 @@ FUNC INT DIA_Carl_Hallo_Condition()
 };
 FUNC VOID DIA_Carl_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Carl_Hallo_05_02"); //Co ciê sprowadza do tej biednej dzielnicy? Czego tu szukasz?
+	AI_Output (self, other, "DIA_Carl_Hallo_05_02"); //Co ciÄ™ sprowadza do tej biednej dzielnicy? Czego tu szukasz?
 	
 	Info_ClearChoices (DIA_Carl_Hallo);
-	Info_AddChoice (DIA_Carl_Hallo,"Zab³¹dzi³em.",DIA_Carl_Hallo_verlaufen);
-	Info_AddChoice (DIA_Carl_Hallo,"Tylko siê rozgl¹dam.",DIA_Carl_Hallo_umsehen);
+	Info_AddChoice (DIA_Carl_Hallo,"ZabÅ‚Ä…dziÅ‚em.",DIA_Carl_Hallo_verlaufen);
+	Info_AddChoice (DIA_Carl_Hallo,"Tylko siÄ™ rozglÄ…dam.",DIA_Carl_Hallo_umsehen);
 	
 	
 };
 FUNC VOID DIA_Carl_Hallo_verlaufen()
 {
-	AI_Output (other, self, "DIA_Carl_Hallo_verlaufen_15_00");//Zab³¹dzi³em.
-	AI_Output (self, other, "DIA_Carl_Hallo_verlaufen_05_01");//Wiêc lepiej uwa¿aj, ¿eby ciê ktoœ nie obrabowa³.
+	AI_Output (other, self, "DIA_Carl_Hallo_verlaufen_15_00");//ZabÅ‚Ä…dziÅ‚em.
+	AI_Output (self, other, "DIA_Carl_Hallo_verlaufen_05_01");//WiÄ™c lepiej uwaÅ¼aj, Å¼eby ciÄ™ ktoÅ› nie obrabowaÅ‚.
 	B_CarlSayHallo();
 	Info_ClearChoices (DIA_Carl_Hallo);
 	
 };
 FUNC VOID DIA_Carl_Hallo_umsehen()
 {
-	AI_Output (other, self, "DIA_Carl_Hallo_umsehen_15_00");//Tylko siê rozgl¹dam.
-	AI_Output (self, other, "DIA_Carl_Hallo_umsehen_05_01");//Ha. Wiêc lepiej, ¿eby nikt ciê nie z³apa³ na tym ca³ym rozgl¹daniu.
+	AI_Output (other, self, "DIA_Carl_Hallo_umsehen_15_00");//Tylko siÄ™ rozglÄ…dam.
+	AI_Output (self, other, "DIA_Carl_Hallo_umsehen_05_01");//Ha. WiÄ™c lepiej, Å¼eby nikt ciÄ™ nie zÅ‚apaÅ‚ na tym caÅ‚ym rozglÄ…daniu.
 	B_CarlSayHallo();
 	Info_ClearChoices (DIA_Carl_Hallo);
 };
@@ -118,7 +118,7 @@ INSTANCE DIA_Carl_Diebe   (C_INFO)
 	condition   = DIA_Carl_Diebe_Condition;
 	information = DIA_Carl_Diebe_Info;
 	permanent   = FALSE;
-	description	= "Co chcesz wiedzieæ o tych z³odziejach?";
+	description	= "Co chcesz wiedzieÄ‡ o tych zÅ‚odziejach?";
 };
 
 FUNC INT DIA_Carl_Diebe_Condition()
@@ -127,10 +127,10 @@ FUNC INT DIA_Carl_Diebe_Condition()
 };
 FUNC VOID DIA_Carl_Diebe_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Diebe_15_00");//Co chcesz wiedzieæ o tych z³odziejach?
-	AI_Output (self, other, "DIA_Carl_Diebe_05_01");//Nic. Ale wszyscy obywatele s¹ wystraszeni i stali siê nieufni - szczególnie wzglêdem obcych.
-	AI_Output (self, other, "DIA_Carl_Diebe_05_02");//Nie daj siê z³apaæ w cudzym domu - nikt nie zareaguje na to uprzejmoœci¹.
-	AI_Output (self, other, "DIA_Carl_Diebe_05_03");//Tak, trzeba siê broniæ przed z³odziejami. Najlepiej nadaje siê do tego solidna pa³ka.
+	AI_Output (other, self, "DIA_Carl_Diebe_15_00");//Co chcesz wiedzieÄ‡ o tych zÅ‚odziejach?
+	AI_Output (self, other, "DIA_Carl_Diebe_05_01");//Nic. Ale wszyscy obywatele sÄ… wystraszeni i stali siÄ™ nieufni - szczegÃ³lnie wzglÄ™dem obcych.
+	AI_Output (self, other, "DIA_Carl_Diebe_05_02");//Nie daj siÄ™ zÅ‚apaÄ‡ w cudzym domu - nikt nie zareaguje na to uprzejmoÅ›ciÄ….
+	AI_Output (self, other, "DIA_Carl_Diebe_05_03");//Tak, trzeba siÄ™ broniÄ‡ przed zÅ‚odziejami. Najlepiej nadaje siÄ™ do tego solidna paÅ‚ka.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Lernen
@@ -142,7 +142,7 @@ INSTANCE DIA_Carl_Lernen   (C_INFO)
 	condition   = DIA_Carl_Lernen_Condition;
 	information = DIA_Carl_Lernen_Info;
 	permanent   = FALSE;
-	description	= "Mo¿esz mnie czegoœ nauczyæ?";
+	description	= "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };
 
 FUNC INT DIA_Carl_Lernen_Condition()
@@ -151,17 +151,17 @@ FUNC INT DIA_Carl_Lernen_Condition()
 };
 FUNC VOID DIA_Carl_Lernen_Info()
 {
-	AI_Output (other, self, "DIA_Carl_Lernen_15_00");//Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Carl_Lernen_05_01");//Och, robiê okucia i gwoŸdzie. Naprawiam te¿ metalowe czêœci.
-	AI_Output (self, other, "DIA_Carl_Lernen_05_02");//Nie znam siê jednak na wyrobie broni dostatecznie dobrze, ¿eby ciê uczyæ.
-	AI_Output (self, other, "DIA_Carl_Lernen_05_03");//Je¿eli chcesz siê tego nauczyæ, to idŸ do Harada. On na pewno wie, jak siê wykuwa broñ!
-	AI_Output (self, other, "DIA_Carl_Lernen_05_04");//Jeœli jednak chcesz popracowaæ trochê nad swoimi miêœniami, to mogê ci w tym pomóc.
+	AI_Output (other, self, "DIA_Carl_Lernen_15_00");//MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output (self, other, "DIA_Carl_Lernen_05_01");//Och, robiÄ™ okucia i gwoÅºdzie. Naprawiam teÅ¼ metalowe czÄ™Å›ci.
+	AI_Output (self, other, "DIA_Carl_Lernen_05_02");//Nie znam siÄ™ jednak na wyrobie broni dostatecznie dobrze, Å¼eby ciÄ™ uczyÄ‡.
+	AI_Output (self, other, "DIA_Carl_Lernen_05_03");//JeÅ¼eli chcesz siÄ™ tego nauczyÄ‡, to idÅº do Harada. On na pewno wie, jak siÄ™ wykuwa broÅ„!
+	AI_Output (self, other, "DIA_Carl_Lernen_05_04");//JeÅ›li jednak chcesz popracowaÄ‡ trochÄ™ nad swoimi miÄ™Å›niami, to mogÄ™ ci w tym pomÃ³c.
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Carl, kowal z dzielnicy portowej, mo¿e mi pokazaæ, jak staæ siê silniejszym.");
+	B_LogEntry (Topic_CityTeacher,"Carl, kowal z dzielnicy portowej, moÅ¼e mi pokazaÄ‡, jak staÄ‡ siÄ™ silniejszym.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Für's lernen bezahlen 
+//	Info FÃ¼r's lernen bezahlen 
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Carl_Wieviel   (C_INFO)
 {
@@ -186,12 +186,12 @@ FUNC VOID DIA_Carl_Wieviel_Info()
 	
 	if Npc_KnowsInfo (other,DIA_Edda_Statue)
 	{
-		AI_Output (self, other, "DIA_Carl_Wieviel_05_01");//S³ysza³em, co zrobi³eœ dla Eddy. Wyszkolê ciê za darmo.
+		AI_Output (self, other, "DIA_Carl_Wieviel_05_01");//SÅ‚yszaÅ‚em, co zrobiÅ‚eÅ› dla Eddy. WyszkolÄ™ ciÄ™ za darmo.
 		Carl_TeachSTR = TRUE;
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Carl_Wieviel_05_02");//50 sztuk z³ota i pomogê ci nabraæ si³.
+		AI_Output (self, other, "DIA_Carl_Wieviel_05_02");//50 sztuk zÅ‚ota i pomogÄ™ ci nabraÄ‡ siÅ‚.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -204,7 +204,7 @@ INSTANCE DIA_Carl_bezahlen   (C_INFO)
 	condition   = DIA_Carl_bezahlen_Condition;
 	information = DIA_Carl_bezahlen_Info;
 	permanent   = TRUE;
-	description	= "Chcia³bym z tob¹ trenowaæ (zap³aæ 50 sztuk z³ota).";
+	description	= "ChciaÅ‚bym z tobÄ… trenowaÄ‡ (zapÅ‚aÄ‡ 50 sztuk zÅ‚ota).";
 };
 FUNC INT DIA_Carl_bezahlen_Condition()
 {	
@@ -216,23 +216,23 @@ FUNC INT DIA_Carl_bezahlen_Condition()
 };
 FUNC VOID DIA_Carl_bezahlen_Info()
 {
-	AI_Output (other, self, "DIA_Carl_bezahlen_15_00");//Chcê z tob¹ æwiczyæ.
+	AI_Output (other, self, "DIA_Carl_bezahlen_15_00");//ChcÄ™ z tobÄ… Ä‡wiczyÄ‡.
 	
 	if Npc_KnowsInfo (other,DIA_Edda_Statue)
 	{
-		AI_Output (self, other, "DIA_Carl_bezahlen_05_01");//S³ysza³em, co zrobi³eœ dla Eddy. Wyszkolê ciê za darmo.
+		AI_Output (self, other, "DIA_Carl_bezahlen_05_01");//SÅ‚yszaÅ‚em, co zrobiÅ‚eÅ› dla Eddy. WyszkolÄ™ ciÄ™ za darmo.
 		Carl_TeachSTR = TRUE;
 	}
 	else 
 	{
 		if B_GiveInvItems (other, self, ItMi_Gold, 50)
 		{
-			AI_Output (self, other, "DIA_Carl_bezahlen_05_02");//Dobrze, mo¿emy zacz¹æ, gdy tylko bêdziesz gotowy.
+			AI_Output (self, other, "DIA_Carl_bezahlen_05_02");//Dobrze, moÅ¼emy zaczÄ…Ä‡, gdy tylko bÄ™dziesz gotowy.
 			Carl_TeachSTR = TRUE;
 		}
 		else 
 		{
-			AI_Output (self, other, "DIA_Carl_bezahlen_05_03");//Zdob¹dŸ z³oto, wtedy ciê wyszkolê.
+			AI_Output (self, other, "DIA_Carl_bezahlen_05_03");//ZdobÄ…dÅº zÅ‚oto, wtedy ciÄ™ wyszkolÄ™.
 		};
 	};
 };
@@ -247,7 +247,7 @@ INSTANCE DIA_Carl_Teach(C_INFO)
 	condition	= DIA_Carl_Teach_Condition;
 	information	= DIA_Carl_Teach_Info;
 	permanent	= TRUE;
-	description = "Chcê byæ silniejszy.";
+	description = "ChcÄ™ byÄ‡ silniejszy.";
 };                       
 
 FUNC INT DIA_Carl_Teach_Condition()
@@ -260,7 +260,7 @@ FUNC INT DIA_Carl_Teach_Condition()
  
 FUNC VOID DIA_Carl_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Carl_Teach_15_00"); //Chcê byæ silniejszy.
+	AI_Output (other,self ,"DIA_Carl_Teach_15_00"); //ChcÄ™ byÄ‡ silniejszy.
 
 	Info_ClearChoices (DIA_Carl_Teach);
 	Info_AddChoice		(DIA_Carl_Teach, DIALOG_BACK, DIA_Carl_Teach_Back);

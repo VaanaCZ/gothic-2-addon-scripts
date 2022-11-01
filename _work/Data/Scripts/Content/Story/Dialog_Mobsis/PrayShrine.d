@@ -54,7 +54,7 @@ INSTANCE PC_PrayShrine_HEALSHRINE (C_Info)
 	condition		= PC_PrayShrine_HEALSHRINE_Condition;
 	information		= PC_PrayShrine_HEALSHRINE_Info;
 	permanent		= TRUE;
-	description		= "Oczyœæ œwi¹tyniê"; 
+	description		= "OczyÅ›Ä‡ Å›wiÄ…tyniÄ™"; 
 };
 
 FUNC INT PC_PrayShrine_HEALSHRINE_Condition ()
@@ -144,7 +144,7 @@ FUNC VOID PC_PrayShrine_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 }; 
 //*******************************************************
-//Für das Heil der Paladine beten
+//FÃ¼r das Heil der Paladine beten
 //*******************************************************
 INSTANCE PC_PrayShrine_Paladine (C_Info)
 {
@@ -153,7 +153,7 @@ INSTANCE PC_PrayShrine_Paladine (C_Info)
 	condition		= PC_PrayShrine_Paladine_Condition;
 	information		= PC_PrayShrine_Paladine_Info;
 	permanent		= FALSE;
-	description		= "Zmów modlitwê za paladynów."; 
+	description		= "ZmÃ³w modlitwÄ™ za paladynÃ³w."; 
 };
 
 FUNC INT PC_PrayShrine_Paladine_Condition ()
@@ -183,7 +183,7 @@ INSTANCE PC_PrayShrine_Pray (C_Info)
 	condition		= PC_PrayShrine_Pray_Condition;
 	information		= PC_PrayShrine_Pray_Info;
 	permanent		= TRUE;
-	description		= "Módl siê"; 
+	description		= "MÃ³dl siÄ™"; 
 };
 
 FUNC INT PC_PrayShrine_Pray_Condition ()
@@ -206,19 +206,19 @@ FUNC VOID PC_PrayShrine_Pray_Info()
 		{		
 			Info_ClearChoices (PC_PrayShrine_Pray);
 			Info_AddChoice (PC_PrayShrine_Pray,Dialog_Back,PC_PrayShrine_Pray_Back);
-			Info_AddChoice (PC_PrayShrine_Pray,"Chcê siê pomodliæ.",PC_PrayShrine_Pray_NoPay);
+			Info_AddChoice (PC_PrayShrine_Pray,"ChcÄ™ siÄ™ pomodliÄ‡.",PC_PrayShrine_Pray_NoPay);
 			
 			if (Npc_HasItems (hero,ItMi_Gold) >=10)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Chcê siê pomodliæ i z³o¿yæ ofiarê 10 sztuk z³ota.",PC_PrayShrine_Pray_SmallPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"ChcÄ™ siÄ™ pomodliÄ‡ i zÅ‚oÅ¼yÄ‡ ofiarÄ™ 10 sztuk zÅ‚ota.",PC_PrayShrine_Pray_SmallPay);
 			};
 			if (Npc_HasItems (hero,ItMi_Gold) >=50)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Chcê siê pomodliæ i z³o¿yæ ofiarê 50 sztuk z³ota.",PC_PrayShrine_Pray_MediumPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"ChcÄ™ siÄ™ pomodliÄ‡ i zÅ‚oÅ¼yÄ‡ ofiarÄ™ 50 sztuk zÅ‚ota.",PC_PrayShrine_Pray_MediumPay);
 			};
 			if (Npc_HasItems (hero,ItMi_Gold) >=100)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Chcê siê pomodliæ i z³o¿yæ ofiarê 100 sztuk z³ota.",PC_PrayShrine_Pray_BigPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"ChcÄ™ siÄ™ pomodliÄ‡ i zÅ‚oÅ¼yÄ‡ ofiarÄ™ 100 sztuk zÅ‚ota.",PC_PrayShrine_Pray_BigPay);
 			};
 		};
 }; 

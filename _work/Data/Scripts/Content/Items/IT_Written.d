@@ -41,7 +41,7 @@ func void UseStandardBrief ()
 
 INSTANCE StandardBuch (C_ITEM)
 {
-	name 					=	"TypowaKsi¹¿ka";
+	name 					=	"TypowaKsiÄ…Å¼ka";
 
 	mainflag 				=	ITEM_KAT_DOCS;
 	flags 					=	0;
@@ -52,7 +52,7 @@ INSTANCE StandardBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"TypowaKsi¹¿ka";
+	description				= 	"TypowaKsiÄ…Å¼ka";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseStandardBuch;
@@ -73,7 +73,7 @@ INSTANCE StandardBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "TypowaKsi¹¿ka Strona 1"	);
+					Doc_PrintLines	( nDocID,  0, "TypowaKsiÄ…Å¼ka Strona 1"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla"					);
@@ -82,10 +82,10 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "TypowaKsi¹¿ka Strona 2"	);
+					Doc_PrintLines	( nDocID,  1, "TypowaKsiÄ…Å¼ka Strona 2"	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla"	);
@@ -105,7 +105,7 @@ INSTANCE StandardBuch (C_ITEM)
 
 instance ItWr_Map_NewWorld (C_Item)
 {
-	name 		= "Mapa terenów Khorinis";  // 
+	name 		= "Mapa terenÃ³w Khorinis";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -181,7 +181,7 @@ instance ItWr_Map_NewWorld_City (C_Item)
 
 instance ItWr_Map_OldWorld (C_Item)
 {
-	name 		= "Mapa Górniczej Doliny";
+	name 		= "Mapa GÃ³rniczej Doliny";
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -235,10 +235,10 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Kunszt obronny po³udniowców";
+	description				= 	"Kunszt obronny poÅ‚udniowcÃ³w";
 	
-	TEXT[2] 				=  "Ksi¹¿ka opisuj¹ca sztukê";
-	TEXT[3] 				=  "walki broniami jednorêcznymi.";
+	TEXT[2] 				=  "KsiÄ…Å¼ka opisujÄ…ca sztukÄ™";
+	TEXT[3] 				=  "walki broniami jednorÄ™cznymi.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseEinhandBuch;
@@ -267,20 +267,20 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Kunszt obronny po³udniowców"	);
+					Doc_PrintLines	( nDocID,  0, "Kunszt obronny poÅ‚udniowcÃ³w"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Po³udniowiec w porównaniu z mieszkañcem pó³nocy nie polega tak bardzo na sile fizycznej, preferuj¹c zwinnoœæ, a gor¹cy klimat jego ojczyzny zmusza go do korzystania z l¿ejszych i daj¹cych wiêksz¹ swobodê ruchów pancerzy. W zwi¹zku z tym styl walki ludzi po³udnia jest ca³kowicie inny od tego, do którego jesteœmy przyzwyczajeni. "					);
+					Doc_PrintLines	( nDocID,  0, "PoÅ‚udniowiec w porÃ³wnaniu z mieszkaÅ„cem pÃ³Å‚nocy nie polega tak bardzo na sile fizycznej, preferujÄ…c zwinnoÅ›Ä‡, a gorÄ…cy klimat jego ojczyzny zmusza go do korzystania z lÅ¼ejszych i dajÄ…cych wiÄ™kszÄ… swobodÄ™ ruchÃ³w pancerzy. W zwiÄ…zku z tym styl walki ludzi poÅ‚udnia jest caÅ‚kowicie inny od tego, do ktÃ³rego jesteÅ›my przyzwyczajeni. "					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Prawdopodobnie najs³ynniejszym manewrem wywodz¹cym siê z po³udnia jest jednorêczny blok po³¹czony z krokiem wstecz: cofniêcie siê pozwala na zmniejszenie si³y wrogiego ciosu i umo¿liwia przyjêcie postawy u³atwiaj¹cej wyprowadzenie kontrataku."	);
+					Doc_PrintLines	( nDocID,  1, "Prawdopodobnie najsÅ‚ynniejszym manewrem wywodzÄ…cym siÄ™ z poÅ‚udnia jest jednorÄ™czny blok poÅ‚Ä…czony z krokiem wstecz: cofniÄ™cie siÄ™ pozwala na zmniejszenie siÅ‚y wrogiego ciosu i umoÅ¼liwia przyjÄ™cie postawy uÅ‚atwiajÄ…cej wyprowadzenie kontrataku."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -302,10 +302,10 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Bloki dwurêczne";
+	description				= 	"Bloki dwurÄ™czne";
 	
-	TEXT[2] 				=  "Ksi¹¿ka opisuj¹ca sztukê";
-	TEXT[3] 				=  "walki broniami dwurêcznymi.";
+	TEXT[2] 				=  "KsiÄ…Å¼ka opisujÄ…ca sztukÄ™";
+	TEXT[3] 				=  "walki broniami dwurÄ™cznymi.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseZweihandBuch;
@@ -333,20 +333,20 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Bloki dwurêczne"	);
+					Doc_PrintLines	( nDocID,  0, "Bloki dwurÄ™czne"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Blokowanie ciosów przeciwnika za pomoc¹ broni dwurêcznej umo¿liwia silnym wojownikom gwa³towne powstrzymanie wroga i przerwanie ewentualnej kombinacji jego ciosów. "					);
+					Doc_PrintLines	( nDocID,  0, "Blokowanie ciosÃ³w przeciwnika za pomocÄ… broni dwurÄ™cznej umoÅ¼liwia silnym wojownikom gwaÅ‚towne powstrzymanie wroga i przerwanie ewentualnej kombinacji jego ciosÃ³w. "					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Zatrzymany w ten sposób przeciwnik traci inicjatywê i ³atwiej go potem skutecznie zaatakowaæ."	);
+					Doc_PrintLines	( nDocID,  1, "Zatrzymany w ten sposÃ³b przeciwnik traci inicjatywÄ™ i Å‚atwiej go potem skutecznie zaatakowaÄ‡."	);
 					
 					Doc_Show		( nDocID );
 };

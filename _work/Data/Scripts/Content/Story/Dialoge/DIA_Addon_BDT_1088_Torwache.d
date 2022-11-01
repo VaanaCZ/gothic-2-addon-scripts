@@ -56,14 +56,14 @@ func int DIA_BDT_1088_Addon_Torwache_FirstWarn_Condition()
 
 func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_00"); //STÓJ!
+	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_00"); //STÃ“J!
 	
 	if (MIS_Send_Buddler == LOG_SUCCESS)
 	{
 		//kairo: aioutput-string des spielers gab es doppelt. umbenannt!
 		
-		AI_Output (other, self,"DIA_Addon_BDT_1088_Torwache_FirstWarn_15_01"); //Przepuœæ mnie, stra¿niku.
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_06_02"); //W porz¹dku. Mo¿esz przejœæ.
+		AI_Output (other, self,"DIA_Addon_BDT_1088_Torwache_FirstWarn_15_01"); //PrzepuÅ›Ä‡ mnie, straÅ¼niku.
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_06_02"); //W porzÄ…dku. MoÅ¼esz przejÅ›Ä‡.
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
 	}
@@ -77,7 +77,7 @@ func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 		}
 		else if (Torwache_Greetings == 1)
 		{
-			AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_04"); //Nie zrozumia³eœ? Z DROGI!
+			AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_04"); //Nie zrozumiaÅ‚eÅ›? Z DROGI!
 			Torwache_Greetings = 2;
 		}			
 		else
@@ -87,7 +87,7 @@ func void DIA_BDT_1088_Addon_Torwache_FirstWarn_Info()
 	}
 	else if (MIS_Send_Buddler == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_06"); //Hej, bez pozwolenia od Thorusa nie mogê ciê przepuœciæ.
+		AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_FirstWarn_06_06"); //Hej, bez pozwolenia od Thorusa nie mogÄ™ ciÄ™ przepuÅ›ciÄ‡.
 	};
 	
 	
@@ -126,7 +126,7 @@ FUNC INT DIA_BDT_1088_Addon_Torwache_SecondWarn_Condition()
 
 func void DIA_BDT_1088_Addon_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Dobra, spokojnie. To twoja ostatnia szansa. NATYCHMIAST siê cofnij, bo inaczej po tobie...
+	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_SecondWarn_06_00"); //Dobra, spokojnie. To twoja ostatnia szansa. NATYCHMIAST siÄ™ cofnij, bo inaczej po tobie...
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_1088_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -164,7 +164,7 @@ func void DIA_BDT_1088_Addon_Torwache_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_Attack_06_00"); //Chyba sobie ¿artujesz. No w ka¿dym razie ja jestem powa¿ny...
+	AI_Output (self, other,"DIA_Addon_BDT_1088_Addon_Torwache_Attack_06_00"); //Chyba sobie Å¼artujesz. No w kaÅ¼dym razie ja jestem powaÅ¼ny...
 	
 	AI_StopProcessInfos	(self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 

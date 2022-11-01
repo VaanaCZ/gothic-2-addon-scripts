@@ -32,7 +32,7 @@ instance DIA_GornDJG_STARTCAMP		(C_INFO)
 	condition	 = 	DIA_GornDJG_STARTCAMP_Condition;
 	information	 = 	DIA_GornDJG_STARTCAMP_Info;
 
-	description	 = 	"WidzÍ, øe przy≥πczy≥eú siÍ do ≥owcÛw smokÛw.";
+	description	 = 	"Widzƒô, ≈ºe przy≈ÇƒÖczy≈Çe≈õ siƒô do ≈Çowc√≥w smok√≥w.";
 };
 
 func int DIA_GornDJG_STARTCAMP_Condition ()
@@ -45,28 +45,28 @@ func int DIA_GornDJG_STARTCAMP_Condition ()
 
 func void DIA_GornDJG_STARTCAMP_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //WidzÍ, øe przy≥πczy≥eú siÍ do ≥owcÛw smokÛw.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //Poszed≥em z Sylviem do GÛrniczej Doliny, bo nikt nie zna okolicy lepiej ode mnie. Zresztπ chcia≥em sam rozejrzeÊ siÍ w sytuacji.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //Wiesz, co ci powiem? Coú tu siÍ szykuje. Pierwszy raz widzÍ tylu orkÛw naraz w jednym miejscu.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //Nie zdziwi≥bym siÍ, gdyby Garond i jego paladyni zostali do tej pory wybici do nogi.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_15_00"); //Widzƒô, ≈ºe przy≈ÇƒÖczy≈Çe≈õ siƒô do ≈Çowc√≥w smok√≥w.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_01"); //Poszed≈Çem z Sylviem do G√≥rniczej Doliny, bo nikt nie zna okolicy lepiej ode mnie. ZresztƒÖ chcia≈Çem sam rozejrzeƒá siƒô w sytuacji.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_02"); //Wiesz, co ci powiem? Co≈õ tu siƒô szykuje. Pierwszy raz widzƒô tylu ork√≥w naraz w jednym miejscu.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_12_03"); //Nie zdziwi≈Çbym siƒô, gdyby Garond i jego paladyni zostali do tej pory wybici do nogi.
 
 	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Do zobaczenia!", DIA_GornDJG_STARTCAMP_By );
-	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Co zamierzasz teraz robiÊ?", DIA_GornDJG_STARTCAMP_Wohin );
+	Info_AddChoice	(DIA_GornDJG_STARTCAMP, "Co zamierzasz teraz robiƒá?", DIA_GornDJG_STARTCAMP_Wohin );
 
 
 };
 func void DIA_GornDJG_STARTCAMP_Wohin ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Co zamierzasz teraz robiÊ?
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //Najpierw pÛjdÍ z ch≥opakami do GÛrniczej Doliny. Potem pewnie siÍ stπd ulotniÍ.
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //MuszÍ siÍ dowiedzieÊ, co planujπ orkowie.
+	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_Wohin_15_00"); //Co zamierzasz teraz robiƒá?
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_01"); //Najpierw p√≥jdƒô z ch≈Çopakami do G√≥rniczej Doliny. Potem pewnie siƒô stƒÖd ulotniƒô.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_Wohin_12_02"); //Muszƒô siƒô dowiedzieƒá, co planujƒÖ orkowie.
 
 };
 
 func void DIA_GornDJG_STARTCAMP_By ()
 {
 	AI_Output			(other, self, "DIA_GornDJG_STARTCAMP_By_15_00"); //Do zobaczenia!
-	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //Uwaøaj na siebie.
+	AI_Output			(self, other, "DIA_GornDJG_STARTCAMP_By_12_01"); //Uwa≈ºaj na siebie.
 	AI_StopProcessInfos	(self);
 };
 
@@ -80,7 +80,7 @@ instance DIA_GornDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_GornDJG_HALLO_Condition;
 	information	 = 	DIA_GornDJG_HALLO_Info;
 
-	description	 = 	"A wiÍc tutaj siÍ schowa≥eú!";
+	description	 = 	"A wiƒôc tutaj siƒô schowa≈Çe≈õ!";
 };
 
 func int DIA_GornDJG_HALLO_Condition ()
@@ -93,8 +93,8 @@ func int DIA_GornDJG_HALLO_Condition ()
 
 func void DIA_GornDJG_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_HALLO_15_00"); //A wiÍc tutaj siÍ schowa≥eú!
-	AI_Output			(self, other, "DIA_GornDJG_HALLO_12_01"); //Ty teø nie dasz siÍ tak ≥atwo zabiÊ, co?
+	AI_Output			(other, self, "DIA_GornDJG_HALLO_15_00"); //A wiƒôc tutaj siƒô schowa≈Çe≈õ!
+	AI_Output			(self, other, "DIA_GornDJG_HALLO_12_01"); //Ty te≈º nie dasz siƒô tak ≈Çatwo zabiƒá, co?
 
 };
 
@@ -107,7 +107,7 @@ instance DIA_GornDJG_WHATSUP		(C_INFO)
 	condition	 = 	DIA_GornDJG_WHATSUP_Condition;
 	information	 = 	DIA_GornDJG_WHATSUP_Info;
 
-	description	 = 	"Znalaz≥eú coú ciekawego?";
+	description	 = 	"Znalaz≈Çe≈õ co≈õ ciekawego?";
 };
 
 func int DIA_GornDJG_WHATSUP_Condition ()
@@ -120,30 +120,30 @@ func int DIA_GornDJG_WHATSUP_Condition ()
 
 func void DIA_GornDJG_WHATSUP_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Znalaz≥eú coú ciekawego?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_12_01"); //Ciπgle szukam. MyúlÍ, øe coú dzieje siÍ w starych ruinach, w gÛrach. W nocy widaÊ tam dziwne úwiat≥a i s≥ychaÊ jakieú wrzaski.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_15_00"); //Znalaz≈Çe≈õ co≈õ ciekawego?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_12_01"); //CiƒÖgle szukam. My≈õlƒô, ≈ºe co≈õ dzieje siƒô w starych ruinach, w g√≥rach. W nocy widaƒá tam dziwne ≈õwiat≈Ça i s≈Çychaƒá jakie≈õ wrzaski.
 
 	Info_ClearChoices	(DIA_GornDJG_WHATSUP);
-	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Moøe Lester?", DIA_GornDJG_WHATSUP_Lester );
-	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Myúlisz, øe to sprawka smoka?", DIA_GornDJG_WHATSUP_A_Dragon );
+	Info_AddChoice		(DIA_GornDJG_WHATSUP, "Mo≈ºe Lester?", DIA_GornDJG_WHATSUP_Lester );
+	Info_AddChoice		(DIA_GornDJG_WHATSUP, "My≈õlisz, ≈ºe to sprawka smoka?", DIA_GornDJG_WHATSUP_A_Dragon );
 	
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn przebywa u podnÛøa p≥askowyøu przy fortecy orkÛw. DziÍki temu moøe obserwowaÊ jednoczeúnie rÛwninÍ i orkowe barykady."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn przebywa u podn√≥≈ºa p≈Çaskowy≈ºu przy fortecy ork√≥w. Dziƒôki temu mo≈ºe obserwowaƒá jednocze≈õnie r√≥wninƒô i orkowe barykady."); 
 };
 func void DIA_GornDJG_WHATSUP_Lester ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Moøe Lester wrÛci≥ na swoje úmieci?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //Raczej nie. O ile wiem, Lester juø tam nie mieszka.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_Lester_15_00"); //Mo≈ºe Lester wr√≥ci≈Ç na swoje ≈õmieci?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_Lester_12_01"); //Raczej nie. O ile wiem, Lester ju≈º tam nie mieszka.
 };
 
 func void DIA_GornDJG_WHATSUP_A_Dragon ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //Myúlisz, øe to sprawka smoka?
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Bardzo moøliwe. Tamten p≥askowyø jest lepiej strzeøony niø krÛlewski skarbiec, a koniec koÒcÛw - to jedyna droga do fortecy.
-	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //Jakby ma≥o by≥o samych smokÛw - krÍci siÍ tam mnÛstwo innego plugastwa.
+	AI_Output			(other, self, "DIA_GornDJG_WHATSUP_A_Dragon_15_00"); //My≈õlisz, ≈ºe to sprawka smoka?
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_01"); //Bardzo mo≈ºliwe. Tamten p≈Çaskowy≈º jest lepiej strze≈ºony ni≈º kr√≥lewski skarbiec, a koniec ko≈Ñc√≥w - to jedyna droga do fortecy.
+	AI_Output			(self, other, "DIA_GornDJG_WHATSUP_A_Dragon_12_02"); //Jakby ma≈Ço by≈Ço samych smok√≥w - krƒôci siƒô tam mn√≥stwo innego plugastwa.
 
 	GornDJG_WhatMonsters = TRUE;
 
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn twierdzi, øe w starej skalnej fortecy przebywa smok."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn twierdzi, ≈ºe w starej skalnej fortecy przebywa smok."); 
 	
 	Info_ClearChoices	(DIA_GornDJG_WHATSUP);
 };
@@ -157,7 +157,7 @@ instance DIA_GornDJG_WHATMONSTERS		(C_INFO)
 	condition	 = 	DIA_GornDJG_WHATMONSTERS_Condition;
 	information	 = 	DIA_GornDJG_WHATMONSTERS_Info;
 
-	description	 = 	"O czym mÛwisz?";
+	description	 = 	"O czym m√≥wisz?";
 };
 
 func int DIA_GornDJG_WHATMONSTERS_Condition ()
@@ -170,9 +170,9 @@ func int DIA_GornDJG_WHATMONSTERS_Condition ()
 
 func void DIA_GornDJG_WHATMONSTERS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //O czym mÛwisz?
-	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //Nie przyjrza≥em im siÍ jeszcze dok≥adniej, ale czymkolwiek sπ - chodzπ wyprostowane i majπ ≥uskowatπ skÛrÍ. Skaczπ po ska≥ach jak stado zÍbaczy w poúcigu za ofiarπ.
-	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //S≥ysza≥em parÍ razy, jak wÍszy≥y po okolicy. MyúlÍ, øe zajÍ≥y ca≥π wyøynÍ.
+	AI_Output			(other, self, "DIA_GornDJG_WHATMONSTERS_15_00"); //O czym m√≥wisz?
+	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_01"); //Nie przyjrza≈Çem im siƒô jeszcze dok≈Çadniej, ale czymkolwiek sƒÖ - chodzƒÖ wyprostowane i majƒÖ ≈ÇuskowatƒÖ sk√≥rƒô. SkaczƒÖ po ska≈Çach jak stado zƒôbaczy w po≈õcigu za ofiarƒÖ.
+	AI_Output			(self, other, "DIA_GornDJG_WHATMONSTERS_12_02"); //S≈Çysza≈Çem parƒô razy, jak wƒôszy≈Çy po okolicy. My≈õlƒô, ≈ºe zajƒô≈Çy ca≈ÇƒÖ wy≈ºynƒô.
 
 };
 
@@ -200,10 +200,10 @@ func int DIA_GornDJG_WAHTABOUTORCS_Condition ()
 func void DIA_GornDJG_WAHTABOUTORCS_Info ()
 {
 	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_00"); //A co z orkami?
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //ObserwujÍ je od d≥uøszego czasu. Za tπ ich palisadπ musi siÍ kryÊ coú waønego. MyúlÍ, øe trzymajπ tam swoje g≥Ûwne si≥y.
-	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //Myúlisz, øe jest ich tam jeszcze wiÍcej niø tutaj?!
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //Nie zdziwi≥bym siÍ, gdyby pewnego dnia przewrÛcili tÍ swojπ palisadÍ i zalali nas jak powÛdü. Nie podoba mi siÍ to...
-	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Gdyby rzeczywiúcie ruszyli do ataku, bÍdÍ musia≥ ostrzec Lee. On i tak chce siÍ wynieúÊ z tej wyspy, a w obecnej sytuacji to chyba niez≥y pomys≥.
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_01"); //Obserwujƒô je od d≈Çu≈ºszego czasu. Za tƒÖ ich palisadƒÖ musi siƒô kryƒá co≈õ wa≈ºnego. My≈õlƒô, ≈ºe trzymajƒÖ tam swoje g≈Ç√≥wne si≈Çy.
+	AI_Output			(other, self, "DIA_GornDJG_WAHTABOUTORCS_15_02"); //My≈õlisz, ≈ºe jest ich tam jeszcze wiƒôcej ni≈º tutaj?!
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_03"); //Nie zdziwi≈Çbym siƒô, gdyby pewnego dnia przewr√≥cili tƒô swojƒÖ palisadƒô i zalali nas jak pow√≥d≈∫. Nie podoba mi siƒô to...
+	AI_Output			(self, other, "DIA_GornDJG_WAHTABOUTORCS_12_04"); //Gdyby rzeczywi≈õcie ruszyli do ataku, bƒôdƒô musia≈Ç ostrzec Lee. On i tak chce siƒô wynie≈õƒá z tej wyspy, a w obecnej sytuacji to chyba niez≈Çy pomys≈Ç.
 
 };
 
@@ -216,7 +216,7 @@ instance DIA_GornDJG_HELPKILLDRACONIANS		(C_INFO)
 	condition	 = 	DIA_GornDJG_HELPKILLDRACONIANS_Condition;
 	information	 = 	DIA_GornDJG_HELPKILLDRACONIANS_Info;
 
-	description	 = 	"Pomoøesz mi dostaÊ siÍ do fortecy?";
+	description	 = 	"Pomo≈ºesz mi dostaƒá siƒô do fortecy?";
 };
 
 func int DIA_GornDJG_HELPKILLDRACONIANS_Condition ()
@@ -233,20 +233,20 @@ func int DIA_GornDJG_HELPKILLDRACONIANS_Condition ()
 
 func void DIA_GornDJG_HELPKILLDRACONIANS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //Pomoøesz mi dostaÊ siÍ do fortecy?
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //Sam nie wiem. BojÍ siÍ spuúciÊ orkÛw z oka, choÊby na chwilÍ.
+	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_00"); //Pomo≈ºesz mi dostaƒá siƒô do fortecy?
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_01"); //Sam nie wiem. Bojƒô siƒô spu≈õciƒá ork√≥w z oka, choƒáby na chwilƒô.
 	AI_Output			(other, self, "DIA_GornDJG_HELPKILLDRACONIANS_15_02"); //Nie przesadzasz przypadkiem?
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Moøe, ale nigdy sobie nie wybaczÍ, gdybym nie zdπøy≥ ostrzec pozosta≥ych. Chociaø, z drugiej strony...
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //A co mi tam! W koÒcu, po co tu jestem? W porzπdku, pomogÍ ci przebiÊ siÍ do fortecy.
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //TrochÍ ruchu mi nie zaszkodzi. Zresztπ i tak chcia≥em siÍ lepiej przyjrzeÊ tym dziwnym bestiom.
-	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Daj mi znaÊ, kiedy bÍdziesz gotowy.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_03"); //Mo≈ºe, ale nigdy sobie nie wybaczƒô, gdybym nie zdƒÖ≈ºy≈Ç ostrzec pozosta≈Çych. Chocia≈º, z drugiej strony...
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_04"); //A co mi tam! W ko≈Ñcu, po co tu jestem? W porzƒÖdku, pomogƒô ci przebiƒá siƒô do fortecy.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_05"); //Trochƒô ruchu mi nie zaszkodzi. ZresztƒÖ i tak chcia≈Çem siƒô lepiej przyjrzeƒá tym dziwnym bestiom.
+	AI_Output			(self, other, "DIA_GornDJG_HELPKILLDRACONIANS_12_06"); //Daj mi znaƒá, kiedy bƒôdziesz gotowy.
 
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn chce mi pomÛc przedostaÊ siÍ do skalnej fortecy na p≥askowyøu."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn chce mi pom√≥c przedostaƒá siƒô do skalnej fortecy na p≈Çaskowy≈ºu."); 
 
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Info LosGeht¥s
+//	Info LosGeht¬¥s
 ///////////////////////////////////////////////////////////////////////
 instance DIA_GornDJG_LOSGEHTS		(C_INFO)
 {
@@ -254,7 +254,7 @@ instance DIA_GornDJG_LOSGEHTS		(C_INFO)
 	condition	 = 	DIA_GornDJG_LOSGEHTS_Condition;
 	information	 = 	DIA_GornDJG_LOSGEHTS_Info;
 
-	description	 = 	"Moøemy ruszaÊ!";
+	description	 = 	"Mo≈ºemy ruszaƒá!";
 };
 
 func int DIA_GornDJG_LOSGEHTS_Condition ()
@@ -267,8 +267,8 @@ if (Npc_KnowsInfo(other, DIA_GornDJG_HELPKILLDRACONIANS))
 
 func void DIA_GornDJG_LOSGEHTS_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Moøemy ruszaÊ!
-	AI_Output			(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Jak za dawnych czasÛw, co? Ale coú sobie wyjaúnijmy: to MOJA bitwa. Tym razem to JA idÍ z przodu!
+	AI_Output			(other, self, "DIA_GornDJG_LOSGEHTS_15_00"); //Mo≈ºemy ruszaƒá!
+	AI_Output			(self, other, "DIA_GornDJG_LOSGEHTS_12_01"); //Jak za dawnych czas√≥w, co? Ale co≈õ sobie wyja≈õnijmy: to MOJA bitwa. Tym razem to JA idƒô z przodu!
 
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
@@ -299,11 +299,11 @@ func int DIA_GornDJG_BISHIERHIN_Condition ()
 
 func void DIA_GornDJG_BISHIERHIN_Info ()
 {
-	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //Ha! £atwizna! CÛø, przyjacielu, resztπ musisz zajπÊ siÍ sam. SpuúÊ im ciÍgi! Ja wrÛcÍ na swÛj posterunek i bÍdÍ dalej obserwowa≥ orkÛw.
+	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_00"); //Ha! ≈Åatwizna! C√≥≈º, przyjacielu, resztƒÖ musisz zajƒÖƒá siƒô sam. Spu≈õƒá im ciƒôgi! Ja wr√≥cƒô na sw√≥j posterunek i bƒôdƒô dalej obserwowa≈Ç ork√≥w.
 	AI_Output			(other, self, "DIA_GornDJG_BISHIERHIN_15_01"); //Nie ma sprawy! Do zobaczenia!
-	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //No, mam nadziejÍ!
+	AI_Output			(self, other, "DIA_GornDJG_BISHIERHIN_12_02"); //No, mam nadziejƒô!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Gorn powrÛci≥ na swÛj posterunek. Zamierza nadal obserwowaÊ poczynania orkÛw."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Gorn powr√≥ci≈Ç na sw√≥j posterunek. Zamierza nadal obserwowaƒá poczynania ork√≥w."); 
 
 	B_GivePlayerXP (XP_GornDJGPlateauClear);
  	
@@ -322,7 +322,7 @@ instance DIA_GornDJG_DRAGONDEAD		(C_INFO)
 	condition	 = 	DIA_GornDJG_DRAGONDEAD_Condition;
 	information	 = 	DIA_GornDJG_DRAGONDEAD_Info;
 
-	description	 = 	"Kamienny smok nie øyje!";	
+	description	 = 	"Kamienny smok nie ≈ºyje!";	
 };
 
 func int DIA_GornDJG_DRAGONDEAD_Condition ()
@@ -339,13 +339,13 @@ func int DIA_GornDJG_DRAGONDEAD_Condition ()
 
 func void DIA_GornDJG_DRAGONDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //Kamienny smok nie øyje!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //Od jakiegoú czasu nie s≥yszÍ øadnych wrzaskÛw. By≥eú w fortecy?
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_00"); //Kamienny smok nie ≈ºyje!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_01"); //Od jakiego≈õ czasu nie s≈Çyszƒô ≈ºadnych wrzask√≥w. By≈Çe≈õ w fortecy?
 	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_02"); //Tak!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Ha, ha! Tak myúla≥em. Po tobie nie zostaje nawet kamieÒ na kamieniu!
-	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Co zamierzasz robiÊ dalej?
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //ZostanÍ tu jeszcze trochÍ, a potem wrÛcÍ do Lee. Moøe spotkamy siÍ u niego!
-	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //Mam juø doúÊ tej okolicy. Najwyøsza pora zwijaÊ manatki.
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_03"); //Ha, ha! Tak my≈õla≈Çem. Po tobie nie zostaje nawet kamie≈Ñ na kamieniu!
+	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_04"); //Co zamierzasz robiƒá dalej?
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_05"); //Zostanƒô tu jeszcze trochƒô, a potem wr√≥cƒô do Lee. Mo≈ºe spotkamy siƒô u niego!
+	AI_Output			(self, other, "DIA_GornDJG_DRAGONDEAD_12_06"); //Mam ju≈º do≈õƒá tej okolicy. Najwy≈ºsza pora zwijaƒá manatki.
 	AI_Output			(other, self, "DIA_GornDJG_DRAGONDEAD_15_07"); //Na razie!
 	B_GivePlayerXP (XP_Ambient);
 };

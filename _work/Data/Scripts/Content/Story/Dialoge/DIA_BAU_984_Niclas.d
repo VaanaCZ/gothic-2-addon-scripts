@@ -38,9 +38,9 @@ FUNC INT DIA_Niclas_Hello_Condition()
 };
 FUNC VOID DIA_Niclas_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Niclas_Hello_03_00"); //Ty te¿ uciek³eœ?
-	AI_Output (other,self ,"DIA_Niclas_Hello_15_01"); //Dlaczego tak uwa¿asz?
-	AI_Output (self ,other,"DIA_Niclas_Hello_03_02"); //Inaczej po co byœ tu przychodzi³? Przecie¿ tu nic siê nie dzieje.
+	AI_Output (self ,other,"DIA_Niclas_Hello_03_00"); //Ty teÅ¼ uciekÅ‚eÅ›?
+	AI_Output (other,self ,"DIA_Niclas_Hello_15_01"); //Dlaczego tak uwaÅ¼asz?
+	AI_Output (self ,other,"DIA_Niclas_Hello_03_02"); //Inaczej po co byÅ› tu przychodziÅ‚? PrzecieÅ¼ tu nic siÄ™ nie dzieje.
 };
 
 // ***********************************************************
@@ -53,7 +53,7 @@ INSTANCE DIA_Niclas_HaveALook   (C_INFO)
 	condition   = DIA_Niclas_HaveALook_Condition;
 	information = DIA_Niclas_HaveALook_Info;
 	permanent   = FALSE;
-	description = "Chcê siê tylko trochê rozejrzeæ.";
+	description = "ChcÄ™ siÄ™ tylko trochÄ™ rozejrzeÄ‡.";
 };
 FUNC INT DIA_Niclas_HaveALook_Condition()
 {
@@ -61,20 +61,20 @@ FUNC INT DIA_Niclas_HaveALook_Condition()
 };
 FUNC VOID DIA_Niclas_HaveALook_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_15_00"); //Chcê siê tylko trochê rozejrzeæ.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_03_01"); //Proszê bardzo. Mo¿e kawa³ek pieczystego?
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_15_00"); //ChcÄ™ siÄ™ tylko trochÄ™ rozejrzeÄ‡.
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_03_01"); //ProszÄ™ bardzo. MoÅ¼e kawaÅ‚ek pieczystego?
 	
 	CreateInvItems (self,ItFoMutton,1);
 	
 	Info_ClearChoices (DIA_Niclas_HaveALook);
-	Info_AddChoice (DIA_Niclas_HaveALook,"Nie, dziêkujê.",DIA_Niclas_HaveALook_No);
-	Info_AddChoice (DIA_Niclas_HaveALook,"Chêtnie.",DIA_Niclas_HaveALook_Yes);
+	Info_AddChoice (DIA_Niclas_HaveALook,"Nie, dziÄ™kujÄ™.",DIA_Niclas_HaveALook_No);
+	Info_AddChoice (DIA_Niclas_HaveALook,"ChÄ™tnie.",DIA_Niclas_HaveALook_Yes);
 };
 
 FUNC VOID DIA_Niclas_HaveALook_No ()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_No_15_00"); //Nie, dziêkujê.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_No_03_01"); //Czuj siê jak u siebie. Mam nadzieje, ¿e nie bêdzie ci przeszkadzaæ, jeœli coœ zjem.
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_No_15_00"); //Nie, dziÄ™kujÄ™.
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_No_03_01"); //Czuj siÄ™ jak u siebie. Mam nadzieje, Å¼e nie bÄ™dzie ci przeszkadzaÄ‡, jeÅ›li coÅ› zjem.
 	
 	B_UseItem (self ,ItFoMutton);
 	
@@ -83,8 +83,8 @@ FUNC VOID DIA_Niclas_HaveALook_No ()
 
 FUNC VOID DIA_Niclas_HaveALook_Yes ()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_Yes_15_00"); //Chêtnie.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_Yes_03_01"); //Proszê, najprzedniejszy udziec kretoszczura. Wed³ug mojego w³asnego przepisu.
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_Yes_15_00"); //ChÄ™tnie.
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_Yes_03_01"); //ProszÄ™, najprzedniejszy udziec kretoszczura. WedÅ‚ug mojego wÅ‚asnego przepisu.
 	
 	B_GiveInvItems (self ,other,ItFOMutton,1);
 	
@@ -101,7 +101,7 @@ INSTANCE DIA_Niclas_WhyHere   (C_INFO)
 	condition   = DIA_Niclas_WhyHere_Condition;
 	information = DIA_Niclas_WhyHere_Info;
 	permanent   = FALSE;
-	description = "Wiêc co tu w³aœciwie robisz?";
+	description = "WiÄ™c co tu wÅ‚aÅ›ciwie robisz?";
 };
 FUNC INT DIA_Niclas_WhyHere_Condition()
 {
@@ -109,8 +109,8 @@ FUNC INT DIA_Niclas_WhyHere_Condition()
 };
 FUNC VOID DIA_Niclas_WhyHere_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_WhyHere_15_00"); //Wiêc co tu w³aœciwie robisz?
-	AI_Output (self ,other,"DIA_Niclas_WhyHere_03_01"); //Jedynie tutaj odnajdujê spokój. W mieœcie czujê siê zniewolony i zaszczuty.
+	AI_Output (other,self ,"DIA_Niclas_WhyHere_15_00"); //WiÄ™c co tu wÅ‚aÅ›ciwie robisz?
+	AI_Output (self ,other,"DIA_Niclas_WhyHere_03_01"); //Jedynie tutaj odnajdujÄ™ spokÃ³j. W mieÅ›cie czujÄ™ siÄ™ zniewolony i zaszczuty.
 };
 
 // ***********************************************************
@@ -123,7 +123,7 @@ INSTANCE DIA_Niclas_ShouldntWork   (C_INFO)
 	condition   = DIA_Niclas_ShouldntWork_Condition;
 	information = DIA_Niclas_ShouldntWork_Info;
 	permanent   = FALSE;
-	description = "Nie musisz pracowaæ?";
+	description = "Nie musisz pracowaÄ‡?";
 };
 FUNC INT DIA_Niclas_ShouldntWork_Condition()
 {
@@ -134,10 +134,10 @@ FUNC INT DIA_Niclas_ShouldntWork_Condition()
 };
 FUNC VOID DIA_Niclas_ShouldntWork_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_00"); //Nie musisz pracowaæ?
-	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_01"); //Wszystko, czego potrzebujê, zdobywam sam. Robiê strza³y, a natura dostarcza mi po¿ywienia.
-	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_02"); //A wiêc jesteœ myœliwym?
-	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_03"); //Mo¿na tak to uj¹æ. Zabijam jednak tylko po to, by mieæ co jeœæ, nie dla pieniêdzy.
+	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_00"); //Nie musisz pracowaÄ‡?
+	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_01"); //Wszystko, czego potrzebujÄ™, zdobywam sam. RobiÄ™ strzaÅ‚y, a natura dostarcza mi poÅ¼ywienia.
+	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_02"); //A wiÄ™c jesteÅ› myÅ›liwym?
+	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_03"); //MoÅ¼na tak to ujÄ…Ä‡. Zabijam jednak tylko po to, by mieÄ‡ co jeÅ›Ä‡, nie dla pieniÄ™dzy.
 };
 
 // ***********************************************************
@@ -150,7 +150,7 @@ INSTANCE DIA_Niclas_CanTeachMe   (C_INFO)
 	condition   = DIA_Niclas_CanTeachMe_Condition;
 	information = DIA_Niclas_CanTeachMe_Info;
 	permanent   = FALSE;
-	description = "Mo¿e móg³byœ mnie czegoœ nauczyæ.";
+	description = "MoÅ¼e mÃ³gÅ‚byÅ› mnie czegoÅ› nauczyÄ‡.";
 };
 FUNC INT DIA_Niclas_CanTeachMe_Condition()
 {
@@ -161,11 +161,11 @@ FUNC INT DIA_Niclas_CanTeachMe_Condition()
 };
 FUNC VOID DIA_Niclas_CanTeachMe_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_CanTeachMe_15_00"); //Mo¿e móg³byœ mnie czegoœ nauczyæ.
-	AI_Output (self ,other,"DIA_Niclas_CanTeachMe_03_01"); //W³aœciwie, czemu nie. Mogê ci pokazaæ, jak siê pos³ugiwaæ ³ukiem.
+	AI_Output (other,self ,"DIA_Niclas_CanTeachMe_15_00"); //MoÅ¼e mÃ³gÅ‚byÅ› mnie czegoÅ› nauczyÄ‡.
+	AI_Output (self ,other,"DIA_Niclas_CanTeachMe_03_01"); //WÅ‚aÅ›ciwie, czemu nie. MogÄ™ ci pokazaÄ‡, jak siÄ™ posÅ‚ugiwaÄ‡ Å‚ukiem.
 	
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Niclas mo¿e mi pokazaæ, jak skuteczniej pos³ugiwaæ siê ³ukiem.");
+	B_LogEntry		(TOPIC_Teacher, "Niclas moÅ¼e mi pokazaÄ‡, jak skuteczniej posÅ‚ugiwaÄ‡ siÄ™ Å‚ukiem.");
 };
 		
 // ***********************************************************
@@ -178,7 +178,7 @@ INSTANCE DIA_Niclas_Teach   (C_INFO)
 	condition   = DIA_Niclas_Teach_Condition;
 	information = DIA_Niclas_Teach_Info;
 	permanent   = TRUE;
-	description = "Poka¿ mi proszê, jak siê pos³ugiwaæ ³ukiem.";
+	description = "PokaÅ¼ mi proszÄ™, jak siÄ™ posÅ‚ugiwaÄ‡ Å‚ukiem.";
 };
 FUNC INT DIA_Niclas_Teach_Condition()
 {
@@ -189,11 +189,11 @@ FUNC INT DIA_Niclas_Teach_Condition()
 };
 FUNC VOID DIA_Niclas_Teach_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_Teach_15_00"); //Poka¿ mi proszê, jak siê pos³ugiwaæ ³ukiem.
+	AI_Output (other,self ,"DIA_Niclas_Teach_15_00"); //PokaÅ¼ mi proszÄ™, jak siÄ™ posÅ‚ugiwaÄ‡ Å‚ukiem.
 	
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Niclas_Teach_03_01"); //Nauczy³em ciê ju¿ wszystkiego, co sam umia³em. Musisz sobie poszukaæ innego nauczyciela.
+		AI_Output(self,other,"DIA_Niclas_Teach_03_01"); //NauczyÅ‚em ciÄ™ juÅ¼ wszystkiego, co sam umiaÅ‚em. Musisz sobie poszukaÄ‡ innego nauczyciela.
 	}
 	else
 	{
@@ -208,7 +208,7 @@ FUNC VOID DIA_Niclas_Teach_Back()
 {
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Niclas_Teach_03_00"); //Niczego wiêcej nie mogê ciê ju¿ nauczyæ.
+		AI_Output(self,other,"DIA_Niclas_Teach_03_00"); //Niczego wiÄ™cej nie mogÄ™ ciÄ™ juÅ¼ nauczyÄ‡.
 	};
 	
 	Info_ClearChoices (DIA_Niclas_Teach);

@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Crimson_Hi   (C_INFO)
 	condition   = DIA_Addon_Crimson_Hi_Condition;
 	information = DIA_Addon_Crimson_Hi_Info;
 	permanent   = FALSE;
-	description = "Co robisz? Topisz z≥oto?";
+	description = "Co robisz? Topisz z≈Çoto?";
 };
 FUNC INT DIA_Addon_Crimson_Hi_Condition()
 {	
@@ -71,10 +71,10 @@ FUNC INT DIA_Addon_Crimson_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Crimson_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Co robisz? Topisz z≥oto?
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Nie, siekam cebulkÍ. Oczywiúcie, øe topiÍ z≥oto i robiÍ z niego monety.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//Pewnego piÍknego popo≥udnia zza rogu wyszed≥ Kruk i da≥ mi matrycÍ do wybijania monet.
-	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Z jednego samorodka mogÍ wybiÊ wiele monet - sπ tak dobre, øe nikt nie zauwaøy rÛønicy.
+	AI_Output (other, self, "DIA_Addon_Crimson_Hi_15_00");//Co robisz? Topisz z≈Çoto?
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_01");//Nie, siekam cebulkƒô. Oczywi≈õcie, ≈ºe topiƒô z≈Çoto i robiƒô z niego monety.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_02");//Pewnego piƒôknego popo≈Çudnia zza rogu wyszed≈Ç Kruk i da≈Ç mi matrycƒô do wybijania monet.
+	AI_Output (self, other, "DIA_Addon_Crimson_Hi_10_03");//Z jednego samorodka mogƒô wybiƒá wiele monet - sƒÖ tak dobre, ≈ºe nikt nie zauwa≈ºy r√≥≈ºnicy.
 };
 //---------------------------------------------------------------------
 //	Info How
@@ -98,7 +98,7 @@ FUNC INT DIA_Addon_Crimson_How_Condition()
 FUNC VOID DIA_Addon_Crimson_How_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Crimson_How_15_00");//Ile monet dasz mi za samorodek?
-	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//Nie znam ciÍ za dobrze, ale dam ci cenÍ jak dla przyjaciela. Za samorodek dostaniesz....
+	AI_Output (self, other, "DIA_Addon_Crimson_How_10_01");//Nie znam ciƒô za dobrze, ale dam ci cenƒô jak dla przyjaciela. Za samorodek dostaniesz....
 	B_Say_Gold (self, other, 10);
 };	
 //---------------------------------------------------------------------
@@ -124,8 +124,8 @@ FUNC VOID DIA_Addon_Crimson_Feilsch_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_00");//Umowa stoi!
 	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_01");//Hmm. Nie. To normalna cena.
-	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//Myúla≥em, øe to cena dla przyjaciÛ≥.
-	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//Bo tak jest. Wszyscy tu jesteúmy przyjaciÛ≥mi.
+	AI_Output (other, self, "DIA_Addon_Crimson_Feilsch_15_02");//My≈õla≈Çem, ≈ºe to cena dla przyjaci√≥≈Ç.
+	AI_Output (self, other, "DIA_Addon_Crimson_Feilsch_10_03");//Bo tak jest. Wszyscy tu jeste≈õmy przyjaci√≥≈Çmi.
 };	
 //---------------------------------------------------------------------
 //	Info Gold tauschen
@@ -137,7 +137,7 @@ INSTANCE DIA_Addon_Crimson_Gold   (C_INFO)
 	condition   = DIA_Addon_Crimson_Gold_Condition;
 	information = DIA_Addon_Crimson_Gold_Info;
 	permanent   = TRUE;
-	description = "WymieÒ samorodki z≥ota...";
+	description = "Wymie≈Ñ samorodki z≈Çota...";
 };
 FUNC INT DIA_Addon_Crimson_Gold_Condition()
 {	
@@ -155,12 +155,12 @@ FUNC VOID DIA_Addon_Crimson_Gold_Info()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"WymieÒ wszystkie samorodki z≥ota ",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"WymieÒ 1 samorodek z≥ota",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"Wymie≈Ñ wszystkie samorodki z≈Çota ",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"Wymie≈Ñ 1 samorodek z≈Çota",DIA_Addon_Crimson_Gold_1);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_Gold_10_01");//Ale nie masz øadnych samorodkÛw.
+		AI_Output (self, other, "DIA_Addon_Crimson_Gold_10_01");//Ale nie masz ≈ºadnych samorodk√≥w.
 	};
 };	
 FUNC VOID DIA_Addon_Crimson_Gold_BACK()
@@ -180,8 +180,8 @@ FUNC VOID DIA_Addon_Crimson_Gold_ALLE()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"WymieÒ wszystkie samorodki z≥ota ",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"WymieÒ 1 samorodek z≥ota",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"Wymie≈Ñ wszystkie samorodki z≈Çota ",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"Wymie≈Ñ 1 samorodek z≈Çota",DIA_Addon_Crimson_Gold_1);
 	};
 };
 FUNC VOID DIA_Addon_Crimson_Gold_1()
@@ -194,8 +194,8 @@ FUNC VOID DIA_Addon_Crimson_Gold_1()
 	
 	if (Npc_HasItems (other,ItMi_GoldNugget_Addon ) >= 1)
 	{
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"WymieÒ wszystkie samorodki z≥ota ",DIA_Addon_Crimson_Gold_ALLE);
-		Info_AddChoice (DIA_Addon_Crimson_Gold,"WymieÒ 1 samorodek z≥ota",DIA_Addon_Crimson_Gold_1);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"Wymie≈Ñ wszystkie samorodki z≈Çota ",DIA_Addon_Crimson_Gold_ALLE);
+		Info_AddChoice (DIA_Addon_Crimson_Gold,"Wymie≈Ñ 1 samorodek z≈Çota",DIA_Addon_Crimson_Gold_1);
 	};
 };
 FUNC VOID B_Say_CrimsonBeliar()
@@ -225,13 +225,13 @@ FUNC INT DIA_Addon_Crimson_Raven_Condition()
 FUNC VOID DIA_Addon_Crimson_Raven_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Crimson_Raven_15_00");//Co wiesz o Kruku?
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//Nie uwierzysz w to... Widzia≥em, co robi≥ w krypcie!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//Mamrota≥ i wypowiada≥ dziwne s≥owa... Powtarza≥ wszystko wiele razy...
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_01");//Nie uwierzysz w to... Widzia≈Çem, co robi≈Ç w krypcie!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_02");//Mamrota≈Ç i wypowiada≈Ç dziwne s≈Çowa... Powtarza≈Ç wszystko wiele razy...
 	B_Say_CrimsonBeliar();
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//Potem z krypty wystrzeli≥o jaskrawe úwiat≥o i us≥ysza≥em KRZYK.
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//O bogowie, ten g≥os! Brzmia≥ niczym ryk koÒca úwiata.
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Kruk z nim rozmawia≥ - Kruk i TEN g≥os!
-	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Nie pamiÍtam, o czym mÛwili. Mog≥em siÍ ruszyÊ dopiero wiele godzin pÛüniej.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_03");//Potem z krypty wystrzeli≈Ço jaskrawe ≈õwiat≈Ço i us≈Çysza≈Çem KRZYK.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_04");//O bogowie, ten g≈Ços! Brzmia≈Ç niczym ryk ko≈Ñca ≈õwiata.
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_05");//Kruk z nim rozmawia≈Ç - Kruk i TEN g≈Ços!
+	AI_Output (self, other, "DIA_Addon_Crimson_Raven_10_06");//Nie pamiƒôtam, o czym m√≥wili. Mog≈Çem siƒô ruszyƒá dopiero wiele godzin p√≥≈∫niej.
 };	
 //---------------------------------------------------------------------
 //	Info FATAGN
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_Crimson_FATAGN   (C_INFO)
 	condition   = DIA_Addon_Crimson_FATAGN_Condition;
 	information = DIA_Addon_Crimson_FATAGN_Info;
 	permanent   = TRUE;
-	description = "Moøesz jeszcze raz powtÛrzyÊ s≥owa Kruka?";
+	description = "Mo≈ºesz jeszcze raz powt√≥rzyƒá s≈Çowa Kruka?";
 };
 FUNC INT DIA_Addon_Crimson_FATAGN_Condition()
 {	
@@ -257,7 +257,7 @@ FUNC VOID DIA_Addon_Crimson_FATAGN_Info()
 {
 	Crimson_SayBeliar = (Crimson_SayBeliar +1);
 	
-	AI_Output (other, self, "DIA_Addon_Crimson_FATAGN_15_00");//Moøesz jeszcze raz powtÛrzyÊ s≥owa Kruka?
+	AI_Output (other, self, "DIA_Addon_Crimson_FATAGN_15_00");//Mo≈ºesz jeszcze raz powt√≥rzyƒá s≈Çowa Kruka?
 	
 	if (Crimson_SayBeliar <= 3)
 	{
@@ -268,7 +268,7 @@ FUNC VOID DIA_Addon_Crimson_FATAGN_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_02");//MyúlÍ, øe lepiej daÊ temu spokÛj.
+		AI_Output (self, other, "DIA_Addon_Crimson_FATAGN_10_02");//My≈õlƒô, ≈ºe lepiej daƒá temu spok√≥j.
 	};
 };	
 FUNC VOID DIA_Addon_Crimson_FATAGN_LOS()

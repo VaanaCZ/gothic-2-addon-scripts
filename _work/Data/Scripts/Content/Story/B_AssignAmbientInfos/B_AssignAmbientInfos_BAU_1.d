@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_1_JOIN(C_INFO)
 	condition	= DIA_BAU_1_JOIN_Condition;
 	information	= DIA_BAU_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "Powiedz mi coœ wiêcej o tych najemnikach!";
+	description = "Powiedz mi coÅ› wiÄ™cej o tych najemnikach!";
 };                       
 
 FUNC INT DIA_BAU_1_JOIN_Condition()
@@ -42,10 +42,10 @@ FUNC INT DIA_BAU_1_JOIN_Condition()
 
 FUNC VOID DIA_BAU_1_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_JOIN_15_00"); //Powiedz mi coœ wiêcej o tych najemnikach!
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01"); //Najlepiej, ¿ebyœ ich omija³ szerokim ³ukiem. To moja jedyna rada.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02"); //Wystarczy, ¿e któremuœ nie spodoba siê twoja gêba i dostaniesz w nos bez ostrze¿enia.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03"); //Jasne, zawsze mo¿esz o tym donieœæ Lee, ale nos i tak nie bêdzie ju¿ taki jak kiedyœ.
+	AI_Output (other, self, "DIA_BAU_1_JOIN_15_00"); //Powiedz mi coÅ› wiÄ™cej o tych najemnikach!
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01"); //Najlepiej, Å¼ebyÅ› ich omijaÅ‚ szerokim Å‚ukiem. To moja jedyna rada.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02"); //Wystarczy, Å¼e ktÃ³remuÅ› nie spodoba siÄ™ twoja gÄ™ba i dostaniesz w nos bez ostrzeÅ¼enia.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03"); //Jasne, zawsze moÅ¼esz o tym donieÅ›Ä‡ Lee, ale nos i tak nie bÄ™dzie juÅ¼ taki jak kiedyÅ›.
 };
 
 // *************************************************************************
@@ -67,10 +67,10 @@ FUNC INT DIA_BAU_1_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_PEOPLE_15_00"); //Kto tu rz¹dzi?
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01"); //To farma Onara i on podejmuje tu wszystkie wa¿ne decyzje.
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02"); //Pozwól, ¿e dam ci pewn¹ radê: nie wdawaj siê w bójki z jego najemnikami. Ci ch³opcy nie lubi¹, kiedy wchodzi im siê w drogê.
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03"); //Szczególnie ten Sylvio to strasznie wredny ³otr. Jednak ich przywódca, Lee, jest jak najbardziej w porz¹dku.
+	AI_Output (other, self, "DIA_BAU_1_PEOPLE_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01"); //To farma Onara i on podejmuje tu wszystkie waÅ¼ne decyzje.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02"); //PozwÃ³l, Å¼e dam ci pewnÄ… radÄ™: nie wdawaj siÄ™ w bÃ³jki z jego najemnikami. Ci chÅ‚opcy nie lubiÄ…, kiedy wchodzi im siÄ™ w drogÄ™.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03"); //SzczegÃ³lnie ten Sylvio to strasznie wredny Å‚otr. Jednak ich przywÃ³dca, Lee, jest jak najbardziej w porzÄ…dku.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_BAU_1_LOCATION(C_INFO)
 	condition	= DIA_BAU_1_LOCATION_Condition;
 	information	= DIA_BAU_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co mo¿esz mi powiedzieæ o tej okolicy?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o tej okolicy?";
 };                       
 
 FUNC INT DIA_BAU_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_BAU_1_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00"); //Co mo¿esz mi powiedzieæ o tej okolicy?
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01"); //Na oko³o tylko pola i farmy. I najemnicy, co to w³ócz¹ siê zw³aszcza na wschód od farmy Onara.
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02"); //Na pó³noc st¹d le¿y farma Sekoba, ale najemnicy pojawiaj¹ siê tam tylko po to, by zebraæ czynsz.
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03"); //Na po³udniowym zachodzie le¿y farma Bengara.
+	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o tej okolicy?
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01"); //Na okoÅ‚o tylko pola i farmy. I najemnicy, co to wÅ‚Ã³czÄ… siÄ™ zwÅ‚aszcza na wschÃ³d od farmy Onara.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02"); //Na pÃ³Å‚noc stÄ…d leÅ¼y farma Sekoba, ale najemnicy pojawiajÄ… siÄ™ tam tylko po to, by zebraÄ‡ czynsz.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03"); //Na poÅ‚udniowym zachodzie leÅ¼y farma Bengara.
 };
 
 // *************************************************************************
@@ -115,31 +115,31 @@ func INT DIA_BAU_1_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_BAU_1_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_01"); //Onar wynaj¹³ najemników, którzy maj¹ odstraszaæ stra¿ników miejskich. Inaczej rozkradliby nasz dobytek do ostatniej owcy!
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_01"); //Onar wynajÄ…Å‚ najemnikÃ³w, ktÃ³rzy majÄ… odstraszaÄ‡ straÅ¼nikÃ³w miejskich. Inaczej rozkradliby nasz dobytek do ostatniej owcy!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_02"); //Niewiele siê dzieje. Wci¹¿ te same problemy. Stra¿, orkowie, polne bestie.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_02"); //Niewiele siÄ™ dzieje. WciÄ…Å¼ te same problemy. StraÅ¼, orkowie, polne bestie.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_03"); //Ostatnio dziej¹ siê tu dziwne rzeczy. Kilka nocy temu widzia³em czarn¹ postaæ. To nie by³ cz³owiek.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_03"); //Ostatnio dziejÄ… siÄ™ tu dziwne rzeczy. Kilka nocy temu widziaÅ‚em czarnÄ… postaÄ‡. To nie byÅ‚ czÅ‚owiek.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_04"); //Pojawia siê coraz wiêcej orków. Czasem tak sobie myœlê, ¿e miejsce ka¿dego zabitego zajmuj¹ dwaj nowi.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_04"); //Pojawia siÄ™ coraz wiÄ™cej orkÃ³w. Czasem tak sobie myÅ›lÄ™, Å¼e miejsce kaÅ¼dego zabitego zajmujÄ… dwaj nowi.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_05"); //Paladyni wyruszaj¹ do Górniczej Doliny. O co w tym wszystkim chodzi? Jak tak dalej pójdzie, nie bêdzie nikogo, by powstrzymaæ stra¿ miejsk¹.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_05"); //Paladyni wyruszajÄ… do GÃ³rniczej Doliny. O co w tym wszystkim chodzi? Jak tak dalej pÃ³jdzie, nie bÄ™dzie nikogo, by powstrzymaÄ‡ straÅ¼ miejskÄ….
 	};
 };
 

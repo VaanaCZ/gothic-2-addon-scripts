@@ -43,9 +43,9 @@ FUNC INT DIA_Neoras_Hallo_Condition()
 };
 FUNC VOID DIA_Neoras_Hallo_Info()
 {
-	AI_Output (self ,other,"DIA_Neoras_Hallo_01_00"); //Co... co siê sta³o? Nie widzisz, ¿e w³aœnie przeprowadzam niezwykle skomplikowany eksperyment?
-	AI_Output (other,self ,"DIA_Neoras_Hallo_15_01"); //Nie chcê przeszkadzaæ.
-	AI_Output (self ,other,"DIA_Neoras_Hallo_01_02"); //Ju¿ przeszkodzi³eœ... Có¿, mów, czego chcesz?
+	AI_Output (self ,other,"DIA_Neoras_Hallo_01_00"); //Co... co siÄ™ staÅ‚o? Nie widzisz, Å¼e wÅ‚aÅ›nie przeprowadzam niezwykle skomplikowany eksperyment?
+	AI_Output (other,self ,"DIA_Neoras_Hallo_15_01"); //Nie chcÄ™ przeszkadzaÄ‡.
+	AI_Output (self ,other,"DIA_Neoras_Hallo_01_02"); //JuÅ¼ przeszkodziÅ‚eÅ›... CÃ³Å¼, mÃ³w, czego chcesz?
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Arbeit
@@ -57,7 +57,7 @@ INSTANCE DIA_Neoras_Arbeit   (C_INFO)
 	condition   = DIA_Neoras_Arbeit_Condition;
 	information = DIA_Neoras_Arbeit_Info;
 	permanent   = FALSE;
-	description	= "Czy masz dla mnie jak¹œ pracê?";
+	description	= "Czy masz dla mnie jakÄ…Å› pracÄ™?";
 };
 FUNC INT DIA_Neoras_Arbeit_Condition()
 {	
@@ -68,25 +68,25 @@ FUNC INT DIA_Neoras_Arbeit_Condition()
 };
 FUNC VOID DIA_Neoras_Arbeit_Info()
 {
-	AI_Output (other,self ,"DIA_Neoras_Arbeit_15_00"); //Czy masz dla mnie jak¹œ pracê?
-	AI_Output (self ,other,"DIA_Neoras_Arbeit_01_01"); //Tak, potrzebujê pewnych roœlin do moich eksperymentów, a dok³adnie - muszê mieæ ogniste pokrzywy.
-	AI_Output (self ,other,"DIA_Neoras_Arbeit_01_02"); //Wystarczy siedem kwiatów. Przynieœ mi je, proszê. Ach, i jeszcze jedno, zapodzia³em gdzieœ recepturê magicznych mikstur.
-	AI_Output (self ,other,"DIA_Neoras_Arbeit_01_03"); //Jeœli j¹ znajdziesz, bêdê dozgonnie wdziêczny.
+	AI_Output (other,self ,"DIA_Neoras_Arbeit_15_00"); //Czy masz dla mnie jakÄ…Å› pracÄ™?
+	AI_Output (self ,other,"DIA_Neoras_Arbeit_01_01"); //Tak, potrzebujÄ™ pewnych roÅ›lin do moich eksperymentÃ³w, a dokÅ‚adnie - muszÄ™ mieÄ‡ ogniste pokrzywy.
+	AI_Output (self ,other,"DIA_Neoras_Arbeit_01_02"); //Wystarczy siedem kwiatÃ³w. PrzynieÅ› mi je, proszÄ™. Ach, i jeszcze jedno, zapodziaÅ‚em gdzieÅ› recepturÄ™ magicznych mikstur.
+	AI_Output (self ,other,"DIA_Neoras_Arbeit_01_03"); //JeÅ›li jÄ… znajdziesz, bÄ™dÄ™ dozgonnie wdziÄ™czny.
 	
 	MIS_NeorasPflanzen = LOG_RUNNING;
 	MIS_NeorasRezept = LOG_RUNNING;
 	
 	Log_CreateTopic (Topic_NeorasPflanzen,LOG_MISSION);
 	Log_SetTopicStatus (Topic_NeorasPflanzen,LOG_RUNNING);
-	B_LogEntry (Topic_NeorasPflanzen,"Mam przynieœæ Mistrzowi Neorasowi siedem ognistych pokrzyw.");
+	B_LogEntry (Topic_NeorasPflanzen,"Mam przynieÅ›Ä‡ Mistrzowi Neorasowi siedem ognistych pokrzyw.");
 	
 	Log_CreateTopic (Topic_Neorasrezept,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Neorasrezept,LOG_RUNNING);
-	B_LogEntry (Topic_Neorasrezept,"Mistrz Neoras nie mo¿e znaleŸæ receptury na miksturê many.");
+	B_LogEntry (Topic_Neorasrezept,"Mistrz Neoras nie moÅ¼e znaleÅºÄ‡ receptury na miksturÄ™ many.");
 
 	if Npc_KnowsInfo (other, DIA_Opolos_beibringen)
 	{
-		B_LogEntry (Topic_Neorasrezept,"To musi byæ receptura, któr¹ chcia³ poznaæ Opolos.");
+		B_LogEntry (Topic_Neorasrezept,"To musi byÄ‡ receptura, ktÃ³rÄ… chciaÅ‚ poznaÄ‡ Opolos.");
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -114,9 +114,9 @@ FUNC VOID DIA_Neoras_Rezept_Info()
 	
 	if B_GiveInvItems (other, self, ItWr_ManaRezept,1)
 	{
-		AI_Output (other,self ,"DIA_Neoras_Rezept_15_01"); //Uda³o mi siê j¹ odnaleŸæ.
-		AI_Output (self ,other,"DIA_Neoras_Rezept_01_02"); //Doskonale, obawia³em siê, ¿e przepad³a na dobre.
-		AI_Output (self ,other,"DIA_Neoras_Rezept_01_03"); //Przyjmij, proszê, tê miksturê w dowód mojej wdziêcznoœci.
+		AI_Output (other,self ,"DIA_Neoras_Rezept_15_01"); //UdaÅ‚o mi siÄ™ jÄ… odnaleÅºÄ‡.
+		AI_Output (self ,other,"DIA_Neoras_Rezept_01_02"); //Doskonale, obawiaÅ‚em siÄ™, Å¼e przepadÅ‚a na dobre.
+		AI_Output (self ,other,"DIA_Neoras_Rezept_01_03"); //Przyjmij, proszÄ™, tÄ™ miksturÄ™ w dowÃ³d mojej wdziÄ™cznoÅ›ci.
 		
 		MIS_NeorasRezept = LOG_SUCCESS;
 		B_GivePlayerXP (XP_NeorasRezept);
@@ -124,8 +124,8 @@ FUNC VOID DIA_Neoras_Rezept_Info()
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Neoras_Rezept_15_04"); //Jeszcze jej nie znalaz³em.
-		AI_Output (self ,other,"DIA_Neoras_Rezept_01_05"); //Có¿, mam nadziejê, ¿e prêdzej czy póŸniej ci siê uda.
+		AI_Output (other,self ,"DIA_Neoras_Rezept_15_04"); //Jeszcze jej nie znalazÅ‚em.
+		AI_Output (self ,other,"DIA_Neoras_Rezept_01_05"); //CÃ³Å¼, mam nadziejÄ™, Å¼e prÄ™dzej czy pÃ³Åºniej ci siÄ™ uda.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -153,7 +153,7 @@ FUNC VOID DIA_Neoras_Flieder_Info()
 	
 	if B_GiveInvItems (other, self, ItPl_Mana_Herb_01,7)
 	{
-		AI_Output (self ,other,"DIA_Neoras_Flieder_01_01"); //Doskonale, przydadz¹ mi siê w badaniach. W zamian weŸ ten zwój 'Piêœæ wichru', na pewno oka¿e siê pomocny.
+		AI_Output (self ,other,"DIA_Neoras_Flieder_01_01"); //Doskonale, przydadzÄ… mi siÄ™ w badaniach. W zamian weÅº ten zwÃ³j 'PiÄ™Å›Ä‡ wichru', na pewno okaÅ¼e siÄ™ pomocny.
 		
 		MIS_NeorasPflanzen = LOG_SUCCESS;
 		B_GivePlayerXP (XP_NeorasPflanzen);
@@ -161,7 +161,7 @@ FUNC VOID DIA_Neoras_Flieder_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Neoras_Flieder_01_02"); //Naprawdê? Och, masz ich za ma³o. Potrzebujê SIEDMIU roœlin.
+		AI_Output (self ,other,"DIA_Neoras_Flieder_01_02"); //NaprawdÄ™? Och, masz ich za maÅ‚o. PotrzebujÄ™ SIEDMIU roÅ›lin.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -174,7 +174,7 @@ instance DIA_Neoras_TEACH		(C_INFO)
 	condition	 = 	DIA_Neoras_TEACH_Condition;
 	information	 = 	DIA_Neoras_TEACH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Czy móg³bym siê u ciebie uczyæ?";
+	description	 = 	"Czy mÃ³gÅ‚bym siÄ™ u ciebie uczyÄ‡?";
 };
 func int DIA_Neoras_TEACH_Condition ()
 {	
@@ -182,12 +182,12 @@ func int DIA_Neoras_TEACH_Condition ()
 };
 func void DIA_Neoras_TEACH_Info ()
 {
-	AI_Output (other, self, "DIA_Neoras_TEACH_15_00"); //Czy móg³bym siê u ciebie uczyæ?
+	AI_Output (other, self, "DIA_Neoras_TEACH_15_00"); //Czy mÃ³gÅ‚bym siÄ™ u ciebie uczyÄ‡?
 	
 	if (other.guild == GIL_KDF)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Neoras_TEACH_01_01"); //Zdradzê ci arkana sztuk alchemicznych.
+		AI_Output (self, other, "DIA_Neoras_TEACH_01_01"); //ZdradzÄ™ ci arkana sztuk alchemicznych.
 		
 		Info_ClearChoices 	(DIA_Neoras_TEACH);
 		Info_AddChoice 		(DIA_Neoras_TEACH,DIALOG_BACK,DIA_Neoras_TEACH_BACK);
@@ -212,7 +212,7 @@ func void DIA_Neoras_TEACH_Info ()
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Perm_Health] == FALSE)
 		&& ( PLAYER_TALENT_ALCHEMY[POTION_Health_03] == TRUE)
 		{
-			Info_AddChoice	  (DIA_Neoras_TEACH, B_BuildLearnString ("Eliksir ¿ycia", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Neoras_TEACH_Perm_Health);
+			Info_AddChoice	  (DIA_Neoras_TEACH, B_BuildLearnString ("Eliksir Å¼ycia", B_GetLearnCostTalent (other, NPC_TALENT_ALCHEMY, POTION_Perm_Health)), DIA_Neoras_TEACH_Perm_Health);
 		};
 		
 		if ( PLAYER_TALENT_ALCHEMY[POTION_Mana_01] == FALSE)
@@ -241,12 +241,12 @@ func void DIA_Neoras_TEACH_Info ()
 	}
 	else if (hero.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Neoras_TEACH_01_02"); //Nie uczê nowicjuszy. Jeœli, pewnego dnia, zostaniesz przyjêty do Krêgu Ognia...
-		AI_Output (self, other, "DIA_Neoras_TEACH_01_03"); //wtedy poka¿ê ci, jak tworzyæ potê¿ne mikstury.
+		AI_Output (self, other, "DIA_Neoras_TEACH_01_02"); //Nie uczÄ™ nowicjuszy. JeÅ›li, pewnego dnia, zostaniesz przyjÄ™ty do KrÄ™gu Ognia...
+		AI_Output (self, other, "DIA_Neoras_TEACH_01_03"); //wtedy pokaÅ¼Ä™ ci, jak tworzyÄ‡ potÄ™Å¼ne mikstury.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Neoras_TEACH_01_04"); //Swoj¹ wiedzê przekazujê jedynie cz³onkom naszego koœcio³a.
+		AI_Output (self, other, "DIA_Neoras_TEACH_01_04"); //SwojÄ… wiedzÄ™ przekazujÄ™ jedynie czÅ‚onkom naszego koÅ›cioÅ‚a.
 	};
 };
 FUNC VOID DIA_Neoras_TEACH_BACK()
@@ -357,7 +357,7 @@ INSTANCE DIA_Neoras_BrewPotion   (C_INFO)
 	condition   = DIA_Neoras_BrewPotion_Condition;
 	information = DIA_Neoras_BrewPotion_Info;
 	permanent   = TRUE;
-	description = "Czy móg³byœ przyrz¹dziæ dla mnie jak¹œ miksturê?";
+	description = "Czy mÃ³gÅ‚byÅ› przyrzÄ…dziÄ‡ dla mnie jakÄ…Å› miksturÄ™?";
 };
 FUNC INT DIA_Neoras_BrewPotion_Condition()
 {
@@ -369,27 +369,27 @@ FUNC INT DIA_Neoras_BrewPotion_Condition()
 
 FUNC VOID DIA_Neoras_BrewPotion_Info()
 {
-	AI_Output (other,self ,"DIA_Neoras_BrewPotion_15_00"); //Czy móg³byœ przyrz¹dziæ dla mnie jak¹œ miksturê?
+	AI_Output (other,self ,"DIA_Neoras_BrewPotion_15_00"); //Czy mÃ³gÅ‚byÅ› przyrzÄ…dziÄ‡ dla mnie jakÄ…Å› miksturÄ™?
 	
 	if (hero.guild == GIL_NOV)
 	{
-		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_01"); //Jak na nowicjusza, jesteœ strasznie impertynencki. Wracaj lepiej do swoich obowi¹zków.
-		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_02"); //Wszystko, czego potrzebujesz, mo¿esz kupiæ u Goraxa.
+		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_01"); //Jak na nowicjusza, jesteÅ› strasznie impertynencki. Wracaj lepiej do swoich obowiÄ…zkÃ³w.
+		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_02"); //Wszystko, czego potrzebujesz, moÅ¼esz kupiÄ‡ u Goraxa.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_03"); //Czy¿byœ w¹tpi³ w moje umiejêtnoœci? Potrafiê przygotowaæ ka¿d¹ miksturê.
+		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_03"); //CzyÅ¼byÅ› wÄ…tpiÅ‚ w moje umiejÄ™tnoÅ›ci? PotrafiÄ™ przygotowaÄ‡ kaÅ¼dÄ… miksturÄ™.
 		AI_Output (other,self ,"DIA_Neoras_BrewPotion_15_04"); //Doskonale.
-		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_05"); //Nie tak szybko. Wpierw musisz mi dostarczyæ odpowiednie sk³adniki, no i zap³aciæ za odczynniki i robociznê.
-		AI_Output (other,self ,"DIA_Neoras_BrewPotion_15_06"); //Ile ¿¹dasz?
-		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_07"); //Za samo sporz¹dzenie mikstury - 10 sztuk z³ota.
+		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_05"); //Nie tak szybko. Wpierw musisz mi dostarczyÄ‡ odpowiednie skÅ‚adniki, no i zapÅ‚aciÄ‡ za odczynniki i robociznÄ™.
+		AI_Output (other,self ,"DIA_Neoras_BrewPotion_15_06"); //Ile Å¼Ä…dasz?
+		AI_Output (self ,other,"DIA_Neoras_BrewPotion_01_07"); //Za samo sporzÄ…dzenie mikstury - 10 sztuk zÅ‚ota.
 		
 		NeorasBrewsForYou = TRUE;
 	};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Was brauche ich für einen...
+//	Was brauche ich fÃ¼r einen...
 ///////////////////////////////////////////////////////////////////////
 /*
 INSTANCE DIA_Neoras_Ingrediences   (C_INFO)
@@ -399,7 +399,7 @@ INSTANCE DIA_Neoras_Ingrediences   (C_INFO)
 	condition   = DIA_Neoras_Ingrediences_Condition;
 	information = DIA_Neoras_Ingrediences_Info;
 	permanent   = TRUE;
-	description = "Welche Zutaten brauche ich für...";
+	description = "Welche Zutaten brauche ich fÃ¼r...";
 };
 FUNC INT DIA_Neoras_Ingrediences_Condition()
 {
@@ -425,29 +425,29 @@ FUNC VOID DIA_Neoras_Ingrediences_Back ()
 
 FUNC VOID DIA_Neoras_Ingrediences_Speed ()
 {
-	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Speed_15_00"); //Welche Zutaten brauche ich für einen Trank der Geschwindigkeit?
-	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Speed_01_01"); //Für einen Trank, der dich schneller macht, brauche ich fünfmal so genanntes Snapperkraut und einen Kronstöckel.
+	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Speed_15_00"); //Welche Zutaten brauche ich fÃ¼r einen Trank der Geschwindigkeit?
+	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Speed_01_01"); //FÃ¼r einen Trank, der dich schneller macht, brauche ich fÃ¼nfmal so genanntes Snapperkraut und einen KronstÃ¶ckel.
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Speed_01_02"); //Und vergiss das Gold nicht.
 };
 
 FUNC VOID DIA_Neoras_Ingrediences_Mana ()
 {
-	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Mana_15_00"); //Welche Zutaten brauche ich für ein Mana-Extrakt?
+	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Mana_15_00"); //Welche Zutaten brauche ich fÃ¼r ein Mana-Extrakt?
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_01"); //Ein Manatrank ist nicht wirklich kompliziert.
-	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_02"); //Du musst mir fünfmal Feuerkraut und einen Feldknöterich bringen.
+	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_02"); //Du musst mir fÃ¼nfmal Feuerkraut und einen FeldknÃ¶terich bringen.
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Mana_01_03"); //Und vergiss das Gold nicht.
 };
 
 FUNC VOID DIA_Neoras_Ingrediences_Health ()
 {
-	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Health_15_00"); //Welche Zutaten brauche ich für ein Extrakt der Heilung?
+	AI_Output (other,self ,"DIA_Neoras_Ingrediences_Health_15_00"); //Welche Zutaten brauche ich fÃ¼r ein Extrakt der Heilung?
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_01"); //So ein Trank ist nicht besonders kompliziert.
-	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_02"); //Du musst mir nur fünf Heilkräuter und einen Feldknöterich bringen.
+	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_02"); //Du musst mir nur fÃ¼nf HeilkrÃ¤uter und einen FeldknÃ¶terich bringen.
 	AI_Output (self ,other,"DIA_Neoras_Ingrediences_Health_01_03"); //Und vergiss das Gold nicht.
 };
 */
 ///////////////////////////////////////////////////////////////////////
-//	Braue mir einen Trank //Ist Perm für KAp 3,4 und 5!!
+//	Braue mir einen Trank //Ist Perm fÃ¼r KAp 3,4 und 5!!
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Neoras_BrewForMe   (C_INFO)
@@ -471,7 +471,7 @@ FUNC VOID DIA_Neoras_BrewForMe_Info()
 {
 	Info_ClearChoices (DIA_Neoras_BrewForMe);
 	Info_AddChoice (DIA_Neoras_BrewForMe,DIALOG_BACK,DIA_Neoras_BrewForMe_Back);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"miksturê szybkoœci.",DIA_Neoras_BrewForMe_Speed);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"miksturÄ™ szybkoÅ›ci.",DIA_Neoras_BrewForMe_Speed);
 	Info_AddChoice (DIA_Neoras_BrewForMe,"ekstrakt many.",DIA_Neoras_BrewForMe_Mana);
 	Info_AddChoice (DIA_Neoras_BrewForMe,"ekstrakt leczniczy.",DIA_Neoras_BrewForMe_Health);
 };
@@ -483,8 +483,8 @@ FUNC VOID DIA_Neoras_BrewForMe_Back ()
 
 FUNC VOID DIA_Neoras_BrewForMe_Speed ()
 {
-	AI_Output (other,self ,"DIA_Neoras_BrewForMe_Speed_15_00"); //Czy mo¿esz przyrz¹dziæ dla mnie miksturê szybkoœci?
-	AI_Output (self ,other,"DIA_Neoras_BrewForMe_Speed_01_01"); //Oczywiœcie, a masz potrzebne sk³adniki i z³oto?
+	AI_Output (other,self ,"DIA_Neoras_BrewForMe_Speed_15_00"); //Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ szybkoÅ›ci?
+	AI_Output (self ,other,"DIA_Neoras_BrewForMe_Speed_01_01"); //OczywiÅ›cie, a masz potrzebne skÅ‚adniki i zÅ‚oto?
 	
 	if (Npc_HasItems (other,ItPl_Speed_Herb_01) >= 1)
 	&& (Npc_HasItems (other,ItPl_Temp_Herb) >= 1)
@@ -496,26 +496,26 @@ FUNC VOID DIA_Neoras_BrewForMe_Speed ()
 		B_GiveInvItems (other,self,ItPl_Temp_Herb,1);
 		B_GiveInvItems (other,self,ItMi_Gold,10);
 		
-		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Speed_01_03"); //Œwietnie, dziêkujê. Zaraz dam ci miksturê, nie bêdziesz musia³ d³ugo czekaæ.
+		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Speed_01_03"); //Åšwietnie, dziÄ™kujÄ™. Zaraz dam ci miksturÄ™, nie bÄ™dziesz musiaÅ‚ dÅ‚ugo czekaÄ‡.
 	
 		B_GiveInvItems (self,other,ItPo_Speed,1);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Speed_01_04"); //Nie masz odpowiednich sk³adników. Wróæ, kiedy je zgromadzisz.
+		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Speed_01_04"); //Nie masz odpowiednich skÅ‚adnikÃ³w. WrÃ³Ä‡, kiedy je zgromadzisz.
 	}; 
 	
 	Info_ClearChoices (DIA_Neoras_BrewForMe);
 	Info_AddChoice (DIA_Neoras_BrewForMe,DIALOG_BACK,DIA_Neoras_BrewForMe_Back);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Uwarz dla mnie miksturê wielkiej szybkoœci.",DIA_Neoras_BrewForMe_Speed);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie miksturê many?",DIA_Neoras_BrewForMe_Mana);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie eliksir leczniczy?",DIA_Neoras_BrewForMe_Health);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Uwarz dla mnie miksturÄ™ wielkiej szybkoÅ›ci.",DIA_Neoras_BrewForMe_Speed);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ many?",DIA_Neoras_BrewForMe_Mana);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie eliksir leczniczy?",DIA_Neoras_BrewForMe_Health);
 };
 
 FUNC VOID DIA_Neoras_BrewForMe_Mana ()
 {
-	AI_Output (other,self ,"DIA_Neoras_BrewForMe_Mana_15_00"); //Czy mo¿esz przyrz¹dziæ dla mnie miksturê many?
-	AI_Output (self ,other,"DIA_Neoras_BrewForMe_Mana_01_01"); //Oczywiœcie, a masz potrzebne sk³adniki i z³oto?
+	AI_Output (other,self ,"DIA_Neoras_BrewForMe_Mana_15_00"); //Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ many?
+	AI_Output (self ,other,"DIA_Neoras_BrewForMe_Mana_01_01"); //OczywiÅ›cie, a masz potrzebne skÅ‚adniki i zÅ‚oto?
 	
 	if (Npc_HasItems (other,ItPl_Mana_Herb_02) >= 2)
 	&& (Npc_HasItems (other,ItPl_Temp_Herb) >= 1)
@@ -527,26 +527,26 @@ FUNC VOID DIA_Neoras_BrewForMe_Mana ()
 		B_GiveInvItems (other,self,ItPl_Temp_Herb,1);
 		B_GiveInvItems (other,self,ItMi_Gold,10);
 		
-		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Mana_01_03"); //Œwietnie. Zaraz dam ci miksturê, nie bêdziesz musia³ d³ugo czekaæ.
+		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Mana_01_03"); //Åšwietnie. Zaraz dam ci miksturÄ™, nie bÄ™dziesz musiaÅ‚ dÅ‚ugo czekaÄ‡.
 	
 		B_GiveInvItems (self,other,ItPo_Mana_02,1);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Mana_01_04"); //Nie masz odpowiednich sk³adników. Wróæ, kiedy je zgromadzisz.
+		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Mana_01_04"); //Nie masz odpowiednich skÅ‚adnikÃ³w. WrÃ³Ä‡, kiedy je zgromadzisz.
 	}; 
 	
 	Info_ClearChoices (DIA_Neoras_BrewForMe);
 	Info_AddChoice (DIA_Neoras_BrewForMe,DIALOG_BACK,DIA_Neoras_BrewForMe_Back);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie miksturê szybkoœci?",DIA_Neoras_BrewForMe_Speed);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie miksturê many?",DIA_Neoras_BrewForMe_Mana);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie eliksir leczniczy?",DIA_Neoras_BrewForMe_Health);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ szybkoÅ›ci?",DIA_Neoras_BrewForMe_Speed);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ many?",DIA_Neoras_BrewForMe_Mana);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie eliksir leczniczy?",DIA_Neoras_BrewForMe_Health);
 };
 
 FUNC VOID DIA_Neoras_BrewForMe_Health ()
 {
-	AI_Output (other,self ,"DIA_Neoras_BrewForMe_Health_15_00"); //Czy mo¿esz przyrz¹dziæ dla mnie eliksir leczniczy?
-	AI_Output (self ,other,"DIA_Neoras_BrewForMe_Health_01_01"); //Oczywiœcie, a masz potrzebne sk³adniki i z³oto?
+	AI_Output (other,self ,"DIA_Neoras_BrewForMe_Health_15_00"); //Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie eliksir leczniczy?
+	AI_Output (self ,other,"DIA_Neoras_BrewForMe_Health_01_01"); //OczywiÅ›cie, a masz potrzebne skÅ‚adniki i zÅ‚oto?
 	
 	if (Npc_HasItems (other,ItPl_Health_Herb_02) >= 2)
 	&& (Npc_HasItems (other,ItPl_Temp_Herb) >= 1)
@@ -558,20 +558,20 @@ FUNC VOID DIA_Neoras_BrewForMe_Health ()
 		B_GiveInvItems (other,self,ItPl_Temp_Herb,1);
 		B_GiveInvItems (other,self,ItMi_Gold,10);
 		
-		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Health_01_03"); //Œwietnie. Zaraz dam ci eliksir, nie bêdziesz musia³ d³ugo czekaæ.
+		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Health_01_03"); //Åšwietnie. Zaraz dam ci eliksir, nie bÄ™dziesz musiaÅ‚ dÅ‚ugo czekaÄ‡.
 	
 		B_GiveInvItems (self,other,ItPo_Health_02,1);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Health_01_04"); //Nie masz odpowiednich sk³adników. Wróæ, kiedy je zgromadzisz.
+		AI_Output (self ,other,"DIA_Neoras_BrewForMe_Health_01_04"); //Nie masz odpowiednich skÅ‚adnikÃ³w. WrÃ³Ä‡, kiedy je zgromadzisz.
 	}; 
 	
 	Info_ClearChoices (DIA_Neoras_BrewForMe);
 	Info_AddChoice (DIA_Neoras_BrewForMe,DIALOG_BACK,DIA_Neoras_BrewForMe_Back);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie miksturê szybkoœci?",DIA_Neoras_BrewForMe_Speed);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie miksturê many?",DIA_Neoras_BrewForMe_Mana);
-	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy mo¿esz przyrz¹dziæ dla mnie eliksir leczniczy?",DIA_Neoras_BrewForMe_Health);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ szybkoÅ›ci?",DIA_Neoras_BrewForMe_Speed);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie miksturÄ™ many?",DIA_Neoras_BrewForMe_Mana);
+	Info_AddChoice (DIA_Neoras_BrewForMe,"Czy moÅ¼esz przyrzÄ…dziÄ‡ dla mnie eliksir leczniczy?",DIA_Neoras_BrewForMe_Health);
 };
 
 //#####################################################################
@@ -615,7 +615,7 @@ instance DIA_Neoras_DRACHENEIER		(C_INFO)
 	information	 = 	DIA_Neoras_DRACHENEIER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Wygl¹dasz na zmêczonego.";
+	description	 = 	"WyglÄ…dasz na zmÄ™czonego.";
 };
 
 func int DIA_Neoras_DRACHENEIER_Condition ()
@@ -630,57 +630,57 @@ func int DIA_Neoras_DRACHENEIER_Condition ()
 
 func void DIA_Neoras_DRACHENEIER_Info ()
 {
-	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_15_00"); //Wygl¹dasz na zmêczonego.
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_01_01"); //To prawda, jestem kompletnie wycieñczony. Od tygodni mêczê siê nad pewn¹ przeklêt¹ mieszank¹. I nic, nie dzia³a.
+	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_15_00"); //WyglÄ…dasz na zmÄ™czonego.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_01_01"); //To prawda, jestem kompletnie wycieÅ„czony. Od tygodni mÄ™czÄ™ siÄ™ nad pewnÄ… przeklÄ™tÄ… mieszankÄ…. I nic, nie dziaÅ‚a.
 
 	Info_ClearChoices	(DIA_Neoras_DRACHENEIER);
-	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "To nie mój problem.", DIA_Neoras_DRACHENEIER_no );
-	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "Co to ma niby byæ za mikstura?", DIA_Neoras_DRACHENEIER_trank );
-	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "Jakiœ problem?", DIA_Neoras_DRACHENEIER_ei );
+	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "To nie mÃ³j problem.", DIA_Neoras_DRACHENEIER_no );
+	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "Co to ma niby byÄ‡ za mikstura?", DIA_Neoras_DRACHENEIER_trank );
+	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "JakiÅ› problem?", DIA_Neoras_DRACHENEIER_ei );
 
 };
 func void DIA_Neoras_DRACHENEIER_ei ()
 {
 	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_15_00"); //W czym problem?
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_01_01"); //Receptura mówi coœ o smoczym jaju. Niestety, nie mam tego sk³adnika.
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_01_02"); //Próbujê zast¹piæ go innym, jednak, jak na razie, z mizernym skutkiem.
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_01_03"); //Jeœli uda³oby ci siê na nie natkn¹æ, pomyœl o mnie.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_01_01"); //Receptura mÃ³wi coÅ› o smoczym jaju. Niestety, nie mam tego skÅ‚adnika.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_01_02"); //PrÃ³bujÄ™ zastÄ…piÄ‡ go innym, jednak, jak na razie, z mizernym skutkiem.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_01_03"); //JeÅ›li udaÅ‚oby ci siÄ™ na nie natknÄ…Ä‡, pomyÅ›l o mnie.
 
-	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "Czego u¿ywasz zamiast smoczych jaj?", DIA_Neoras_DRACHENEIER_ei_statt );
-	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "Zobaczê, co da siê zrobiæ.", DIA_Neoras_DRACHENEIER_ei_jep );
+	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "Czego uÅ¼ywasz zamiast smoczych jaj?", DIA_Neoras_DRACHENEIER_ei_statt );
+	Info_AddChoice	(DIA_Neoras_DRACHENEIER, "ZobaczÄ™, co da siÄ™ zrobiÄ‡.", DIA_Neoras_DRACHENEIER_ei_jep );
 
 };
 func void DIA_Neoras_DRACHENEIER_ei_jep ()
 {
-	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_jep_15_00"); //Zobaczê, co siê da zrobiæ.
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_jep_01_01"); //Spokojnie, tylko ¿artowa³em. W¹tpiê, by uda³o ci siê znaleŸæ jajo smoka.
-	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_jep_15_02"); //Sk¹d ta pewnoœæ?
+	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_jep_15_00"); //ZobaczÄ™, co siÄ™ da zrobiÄ‡.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_jep_01_01"); //Spokojnie, tylko Å¼artowaÅ‚em. WÄ…tpiÄ™, by udaÅ‚o ci siÄ™ znaleÅºÄ‡ jajo smoka.
+	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_jep_15_02"); //SkÄ…d ta pewnoÅ›Ä‡?
 	Info_ClearChoices	(DIA_Neoras_DRACHENEIER);
 	
 	Log_CreateTopic (TOPIC_DRACHENEIERNeoras, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_DRACHENEIERNeoras, LOG_RUNNING);
-	B_LogEntry (TOPIC_DRACHENEIERNeoras,"Neoras potrzebuje smoczego jaja do swoich eksperymentów. Niewykluczone, ¿e uda mi siê je znaleŸæ w jakiejœ jaskini."); 
+	B_LogEntry (TOPIC_DRACHENEIERNeoras,"Neoras potrzebuje smoczego jaja do swoich eksperymentÃ³w. Niewykluczone, Å¼e uda mi siÄ™ je znaleÅºÄ‡ w jakiejÅ› jaskini."); 
 
 	MIS_Neoras_DragonEgg = LOG_RUNNING;
 };
 
 func void DIA_Neoras_DRACHENEIER_ei_statt ()
 {
-	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_statt_15_00"); //Czego u¿ywasz zamiast smoczych jaj?
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_statt_01_01"); //Wierz mi, nie chcesz wiedzieæ.
+	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_ei_statt_15_00"); //Czego uÅ¼ywasz zamiast smoczych jaj?
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_ei_statt_01_01"); //Wierz mi, nie chcesz wiedzieÄ‡.
 };
 
 func void DIA_Neoras_DRACHENEIER_trank ()
 {
-	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_trank_15_00"); //O jakiej miksturze w³aœciwie mówisz?
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_trank_01_01"); //Recepturê kupi³em od obwoŸnego kupca. Jej treœæ jest wielce dziwaczna, a zarazem ciekawa.
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_trank_01_02"); //Nie mam pewnoœci co do efektu dzia³ania mikstury, jednak ciekawoœæ nie pozwala mi przerwaæ badañ.
+	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_trank_15_00"); //O jakiej miksturze wÅ‚aÅ›ciwie mÃ³wisz?
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_trank_01_01"); //RecepturÄ™ kupiÅ‚em od obwoÅºnego kupca. Jej treÅ›Ä‡ jest wielce dziwaczna, a zarazem ciekawa.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_trank_01_02"); //Nie mam pewnoÅ›ci co do efektu dziaÅ‚ania mikstury, jednak ciekawoÅ›Ä‡ nie pozwala mi przerwaÄ‡ badaÅ„.
 };
 
 func void DIA_Neoras_DRACHENEIER_no ()
 {
 	AI_Output			(other, self, "DIA_Neoras_DRACHENEIER_no_15_00"); //To nie moja sprawa.
-	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_no_01_01"); //W takim razie nie zawracaj mi g³owy.
+	AI_Output			(self, other, "DIA_Neoras_DRACHENEIER_no_01_01"); //W takim razie nie zawracaj mi gÅ‚owy.
 	Info_ClearChoices	(DIA_Neoras_DRACHENEIER);
 };
 
@@ -695,7 +695,7 @@ instance DIA_Neoras_FOUNDDRAGONEGG		(C_INFO)
 	condition	 = 	DIA_Neoras_FOUNDDRAGONEGG_Condition;
 	information	 = 	DIA_Neoras_FOUNDDRAGONEGG_Info;
 
-	description	 = 	"Proszê, mam dla ciebie jajo smoka.";
+	description	 = 	"ProszÄ™, mam dla ciebie jajo smoka.";
 };
 
 func int DIA_Neoras_FOUNDDRAGONEGG_Condition ()
@@ -709,28 +709,28 @@ func int DIA_Neoras_FOUNDDRAGONEGG_Condition ()
 var int Neoras_DragonEggDrink_Day;
 func void DIA_Neoras_FOUNDDRAGONEGG_Info ()
 {
-	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_15_00"); //Proszê, mam dla ciebie jajo smoka.
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_01"); //Raczysz sobie ¿artowaæ.
+	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_15_00"); //ProszÄ™, mam dla ciebie jajo smoka.
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_01"); //Raczysz sobie Å¼artowaÄ‡.
 	B_GiveInvItems 		(other, self, ItAt_DragonEgg_Mis,1);
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_02"); //Jest prawdziwe! Sk¹d je masz?! Jak je znalaz³eœ?
-	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_15_03"); //Wola³bym zachowaæ to dla siebie.
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_04"); //Jak uwa¿asz. Co za nie chcesz?
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_02"); //Jest prawdziwe! SkÄ…d je masz?! Jak je znalazÅ‚eÅ›?
+	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_15_03"); //WolaÅ‚bym zachowaÄ‡ to dla siebie.
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_01_04"); //Jak uwaÅ¼asz. Co za nie chcesz?
 	
 	MIS_Neoras_DragonEgg = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Neoras_DragonEgg);
 
 	Info_ClearChoices	(DIA_Neoras_FOUNDDRAGONEGG);
 	Info_AddChoice	(DIA_Neoras_FOUNDDRAGONEGG, "Zaskocz mnie.", DIA_Neoras_FOUNDDRAGONEGG_irgendwas );
-	Info_AddChoice	(DIA_Neoras_FOUNDDRAGONEGG, "Mo¿e mikstury lecznicze?", DIA_Neoras_FOUNDDRAGONEGG_heil );
-	Info_AddChoice	(DIA_Neoras_FOUNDDRAGONEGG, "Daj mi trochê mikstury, kiedy bêdzie gotowa.", DIA_Neoras_FOUNDDRAGONEGG_trank );
+	Info_AddChoice	(DIA_Neoras_FOUNDDRAGONEGG, "MoÅ¼e mikstury lecznicze?", DIA_Neoras_FOUNDDRAGONEGG_heil );
+	Info_AddChoice	(DIA_Neoras_FOUNDDRAGONEGG, "Daj mi trochÄ™ mikstury, kiedy bÄ™dzie gotowa.", DIA_Neoras_FOUNDDRAGONEGG_trank );
 };
 
 var int Neoras_SCWantsDragonEggDrink;
 func void DIA_Neoras_FOUNDDRAGONEGG_trank ()
 {
-	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_trank_15_00"); //Daj mi trochê mikstury, kiedy bêdzie gotowa.
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_trank_01_01"); //W porz¹dku. Ale pamiêtaj, co ci powiedzia³em, nie wiem, jaki bêdzie rezultat tego eksperymentu.
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_trank_01_02"); //PrzyjdŸ póŸniej, kiedy skoñczê.
+	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_trank_15_00"); //Daj mi trochÄ™ mikstury, kiedy bÄ™dzie gotowa.
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_trank_01_01"); //W porzÄ…dku. Ale pamiÄ™taj, co ci powiedziaÅ‚em, nie wiem, jaki bÄ™dzie rezultat tego eksperymentu.
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_trank_01_02"); //PrzyjdÅº pÃ³Åºniej, kiedy skoÅ„czÄ™.
 
 	Neoras_DragonEggDrink_Day = Wld_GetDay(); 
 	Neoras_SCWantsDragonEggDrink = TRUE;
@@ -739,8 +739,8 @@ func void DIA_Neoras_FOUNDDRAGONEGG_trank ()
 
 func void DIA_Neoras_FOUNDDRAGONEGG_heil ()
 {
-	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_heil_15_00"); //Mo¿e mikstury lecznicze?
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_heil_01_01"); //Doskona³y wybór. Proszê, oto one. Na pewno ci siê przydadz¹.
+	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_heil_15_00"); //MoÅ¼e mikstury lecznicze?
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_heil_01_01"); //DoskonaÅ‚y wybÃ³r. ProszÄ™, oto one. Na pewno ci siÄ™ przydadzÄ….
 
 	CreateInvItems 		(self, ItPo_Health_03, 3);									
 	B_GiveInvItems 		(self, other, ItPo_Health_03, 3);					
@@ -751,8 +751,8 @@ func void DIA_Neoras_FOUNDDRAGONEGG_heil ()
 func void DIA_Neoras_FOUNDDRAGONEGG_irgendwas ()
 {
 	AI_Output			(other, self, "DIA_Neoras_FOUNDDRAGONEGG_irgendwas_15_00"); //Zaskocz mnie.
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_irgendwas_01_01"); //Mmm. W porz¹dku. WeŸ ten magiczny pierœcieñ. Na pewno przyda siê w starciach z wrogami.
-	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_irgendwas_01_02"); //Bêdzie ciê chroni³ przed atakami magicznych istot.
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_irgendwas_01_01"); //Mmm. W porzÄ…dku. WeÅº ten magiczny pierÅ›cieÅ„. Na pewno przyda siÄ™ w starciach z wrogami.
+	AI_Output			(self, other, "DIA_Neoras_FOUNDDRAGONEGG_irgendwas_01_02"); //BÄ™dzie ciÄ™ chroniÅ‚ przed atakami magicznych istot.
 
 	CreateInvItems 		(self, ItRi_Prot_Mage_02, 1);									
 	B_GiveInvItems 		(self, other, ItRi_Prot_Mage_02, 1);
@@ -770,7 +770,7 @@ instance DIA_Neoras_DRAGONEGGDRINK		(C_INFO)
 	condition	 = 	DIA_Neoras_DRAGONEGGDRINK_Condition;
 	information	 = 	DIA_Neoras_DRAGONEGGDRINK_Info;
 
-	description	 = 	"Przychodzê po straszliw¹ miksturê ze smoczego jaja.";
+	description	 = 	"PrzychodzÄ™ po straszliwÄ… miksturÄ™ ze smoczego jaja.";
 };
 
 func int DIA_Neoras_DRAGONEGGDRINK_Condition ()
@@ -784,10 +784,10 @@ func int DIA_Neoras_DRAGONEGGDRINK_Condition ()
 
 func void DIA_Neoras_DRAGONEGGDRINK_Info ()
 {
-	AI_Output			(other, self, "DIA_Neoras_DRAGONEGGDRINK_15_00"); //Przychodzê po straszliw¹ miksturê ze smoczego jaja.
-	AI_Output			(self, other, "DIA_Neoras_DRAGONEGGDRINK_01_01"); //Ach tak, w³aœnie j¹ przygotowa³em. Nie mia³em jednak czasu jej przetestowaæ i nie wezmê odpowiedzialnoœci za niepo¿¹dane efekty.
-	AI_Output			(other, self, "DIA_Neoras_DRAGONEGGDRINK_15_02"); //Oddaj mi j¹ natychmiast.
-	AI_Output			(self, other, "DIA_Neoras_DRAGONEGGDRINK_01_03"); //Dobrze ju¿, dobrze. Mam tylko nadziejê, ¿e nie eksploduje ci od niej g³owa.
+	AI_Output			(other, self, "DIA_Neoras_DRAGONEGGDRINK_15_00"); //PrzychodzÄ™ po straszliwÄ… miksturÄ™ ze smoczego jaja.
+	AI_Output			(self, other, "DIA_Neoras_DRAGONEGGDRINK_01_01"); //Ach tak, wÅ‚aÅ›nie jÄ… przygotowaÅ‚em. Nie miaÅ‚em jednak czasu jej przetestowaÄ‡ i nie wezmÄ™ odpowiedzialnoÅ›ci za niepoÅ¼Ä…dane efekty.
+	AI_Output			(other, self, "DIA_Neoras_DRAGONEGGDRINK_15_02"); //Oddaj mi jÄ… natychmiast.
+	AI_Output			(self, other, "DIA_Neoras_DRAGONEGGDRINK_01_03"); //Dobrze juÅ¼, dobrze. Mam tylko nadziejÄ™, Å¼e nie eksploduje ci od niej gÅ‚owa.
 	CreateInvItems 		(self, ItPo_DragonEggDrinkNeoras_MIS, 1);									
 	B_GiveInvItems 		(self, other, ItPo_DragonEggDrinkNeoras_MIS, 1);					
 };
@@ -802,7 +802,7 @@ instance DIA_Neoras_USEDDRAGONEGGDRINK		(C_INFO)
 	condition	 = 	DIA_Neoras_USEDDRAGONEGGDRINK_Condition;
 	information	 = 	DIA_Neoras_USEDDRAGONEGGDRINK_Info;
 
-	description	 = 	"Wypróbowa³em miksturê ze smoczych jaj. œwietna sprawa!";
+	description	 = 	"WyprÃ³bowaÅ‚em miksturÄ™ ze smoczych jaj. Å›wietna sprawa!";
 };
 
 func int DIA_Neoras_USEDDRAGONEGGDRINK_Condition ()
@@ -815,10 +815,10 @@ func int DIA_Neoras_USEDDRAGONEGGDRINK_Condition ()
 
 func void DIA_Neoras_USEDDRAGONEGGDRINK_Info ()
 {
-	AI_Output			(other, self, "DIA_Neoras_USEDDRAGONEGGDRINK_15_00"); //Wypróbowa³em miksturê ze smoczych jaj. Œwietna sprawa!
-	AI_Output			(self, other, "DIA_Neoras_USEDDRAGONEGGDRINK_01_01"); //Mmm. Zaiste ciekawe. Muszê siê zaraz wzi¹æ do dalszych badañ, absolutnie!
-	AI_Output			(other, self, "DIA_Neoras_USEDDRAGONEGGDRINK_15_02"); //Czy mo¿esz zrobiæ jej dla mnie wiêcej?
-	AI_Output			(self, other, "DIA_Neoras_USEDDRAGONEGGDRINK_01_03"); //Poczekajmy kilka tygodni, nim znowu j¹ wypróbujemy. No, chyba ¿e chcesz, by wyros³y ci rogi.
+	AI_Output			(other, self, "DIA_Neoras_USEDDRAGONEGGDRINK_15_00"); //WyprÃ³bowaÅ‚em miksturÄ™ ze smoczych jaj. Åšwietna sprawa!
+	AI_Output			(self, other, "DIA_Neoras_USEDDRAGONEGGDRINK_01_01"); //Mmm. Zaiste ciekawe. MuszÄ™ siÄ™ zaraz wziÄ…Ä‡ do dalszych badaÅ„, absolutnie!
+	AI_Output			(other, self, "DIA_Neoras_USEDDRAGONEGGDRINK_15_02"); //Czy moÅ¼esz zrobiÄ‡ jej dla mnie wiÄ™cej?
+	AI_Output			(self, other, "DIA_Neoras_USEDDRAGONEGGDRINK_01_03"); //Poczekajmy kilka tygodni, nim znowu jÄ… wyprÃ³bujemy. No, chyba Å¼e chcesz, by wyrosÅ‚y ci rogi.
 };
 
 //#####################################################################

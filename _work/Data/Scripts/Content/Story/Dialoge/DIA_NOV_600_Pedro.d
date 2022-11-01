@@ -36,8 +36,8 @@ func int DIA_Pedro_WELCOME_Condition ()
 func void DIA_Pedro_WELCOME_Info ()
 {
 	AI_Output (self, other, "DIA_Pedro_WELCOME_09_00"); //Witaj w klasztorze Innosa, nieznajomy.
-	AI_Output (self, other, "DIA_Pedro_WELCOME_09_01"); //Jestem Brat Pedro, pokorny s³uga Innosa i odŸwierny œwiêtego klasztoru.
-	AI_Output (self, other, "DIA_Pedro_WELCOME_09_02"); //Co ciê do nas sprowadza?
+	AI_Output (self, other, "DIA_Pedro_WELCOME_09_01"); //Jestem Brat Pedro, pokorny sÅ‚uga Innosa i odÅºwierny Å›wiÄ™tego klasztoru.
+	AI_Output (self, other, "DIA_Pedro_WELCOME_09_02"); //Co ciÄ™ do nas sprowadza?
 };
 // *************************************************************************
 // 							Wurst verteilen
@@ -49,7 +49,7 @@ INSTANCE DIA_Pedro_Wurst(C_INFO)
 	condition	= DIA_Pedro_Wurst_Condition;
 	information	= DIA_Pedro_Wurst_Info;
 	permanent	= FALSE;
-	description = "Masz tu kawa³ek kie³basy, Bracie.";
+	description = "Masz tu kawaÅ‚ek kieÅ‚basy, Bracie.";
 };                       
 
 FUNC INT DIA_Pedro_Wurst_Condition()
@@ -65,12 +65,12 @@ FUNC INT DIA_Pedro_Wurst_Condition()
 
 FUNC VOID DIA_Pedro_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Pedro_Wurst_15_00"); //Masz tu kawa³ek kie³basy, Bracie.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_01"); //To mi³o, ¿e o mnie pomyœla³eœ. Zwykle nikt o mnie nie pamiêta.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_02"); //Móg³byœ mi daæ jeszcze kawa³ek...
-	AI_Output (other, self, "DIA_Pedro_Wurst_15_03"); //Nie ma mowy. Wtedy za ma³o mi zostanie.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_04"); //No wiesz? Jeden kawa³ek! Przecie¿ nikt nie zauwa¿y. Mogê ci daæ coœ w zamian! Wiem, gdzie roœnie sporo ognistych pokrzyw!
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_05"); //Jeœli zaniesiesz je Neorasowi, na pewno da ci klucz do biblioteki. Co ty na to?
+	AI_Output (other, self, "DIA_Pedro_Wurst_15_00"); //Masz tu kawaÅ‚ek kieÅ‚basy, Bracie.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_01"); //To miÅ‚o, Å¼e o mnie pomyÅ›laÅ‚eÅ›. Zwykle nikt o mnie nie pamiÄ™ta.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_02"); //MÃ³gÅ‚byÅ› mi daÄ‡ jeszcze kawaÅ‚ek...
+	AI_Output (other, self, "DIA_Pedro_Wurst_15_03"); //Nie ma mowy. Wtedy za maÅ‚o mi zostanie.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_04"); //No wiesz? Jeden kawaÅ‚ek! PrzecieÅ¼ nikt nie zauwaÅ¼y. MogÄ™ ci daÄ‡ coÅ› w zamian! Wiem, gdzie roÅ›nie sporo ognistych pokrzyw!
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_05"); //JeÅ›li zaniesiesz je Neorasowi, na pewno da ci klucz do biblioteki. Co ty na to?
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -85,13 +85,13 @@ FUNC VOID DIA_Pedro_Wurst_Info()
 	AI_PrintScreen	(NovizeText, -1, YPOS_GOLDGIVEN, FONT_ScreenSmall, 2);
 	
 	Info_ClearChoices (DIA_Pedro_Wurst);
-	Info_AddChoice (DIA_Pedro_Wurst,"Niech bêdzie. Masz jeszcze jedno pêto.",DIA_Pedro_Wurst_JA);
+	Info_AddChoice (DIA_Pedro_Wurst,"Niech bÄ™dzie. Masz jeszcze jedno pÄ™to.",DIA_Pedro_Wurst_JA);
 	Info_AddChoice (DIA_Pedro_Wurst,"Nie ma mowy.",DIA_Pedro_Wurst_NEIN);
 };
 FUNC VOID DIA_Pedro_Wurst_JA()
 {
-	AI_Output (other, self, "DIA_Pedro_Wurst_JA_15_00"); //Niech bêdzie. Masz jeszcze jedno pêto.
-	AI_Output (self, other, "DIA_Pedro_Wurst_JA_09_01"); //Œwietnie. Po drugiej stronie mostu, na lewo i na prawo, roœnie du¿o ognistych pokrzyw.
+	AI_Output (other, self, "DIA_Pedro_Wurst_JA_15_00"); //Niech bÄ™dzie. Masz jeszcze jedno pÄ™to.
+	AI_Output (self, other, "DIA_Pedro_Wurst_JA_09_01"); //Åšwietnie. Po drugiej stronie mostu, na lewo i na prawo, roÅ›nie duÅ¼o ognistych pokrzyw.
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Info_ClearChoices (DIA_Pedro_Wurst);
 	
@@ -99,7 +99,7 @@ FUNC VOID DIA_Pedro_Wurst_JA()
 FUNC VOID DIA_Pedro_Wurst_NEIN()
 {
 	AI_Output (other, self, "DIA_Pedro_Wurst_NEIN_15_00"); //Nie ma mowy.
-	AI_Output (self, other, "DIA_Pedro_Wurst_NEIN_09_01"); //Chcesz siê podlizaæ Goraxowi, co? Wszyscy nowicjusze tak robi¹...
+	AI_Output (self, other, "DIA_Pedro_Wurst_NEIN_09_01"); //Chcesz siÄ™ podlizaÄ‡ Goraxowi, co? Wszyscy nowicjusze tak robiÄ…...
 	
 	Info_ClearChoices (DIA_Pedro_Wurst);
 };
@@ -112,7 +112,7 @@ instance DIA_Pedro_EINLASS		(C_INFO)
 	condition	= 	DIA_Pedro_EINLASS_Condition;
 	information	= 	DIA_Pedro_EINLASS_Info;
 	permanent	=	FALSE;
-	description	= 	"Chcê siê dostaæ do klasztoru.";
+	description	= 	"ChcÄ™ siÄ™ dostaÄ‡ do klasztoru.";
 };
 func int DIA_Pedro_EINLASS_Condition ()
 {	
@@ -123,9 +123,9 @@ func int DIA_Pedro_EINLASS_Condition ()
 };
 func void DIA_Pedro_EINLASS_Info ()
 {
-	AI_Output (other, self, "DIA_Pedro_EINLASS_15_00"); //Chcê siê dostaæ do klasztoru.
-	AI_Output (self, other, "DIA_Pedro_EINLASS_09_01"); //Tylko s³udzy Innosa mog¹ wejœæ do œrodka.
-	AI_Output (self, other, "DIA_Pedro_EINLASS_09_02"); //Jeœli chcesz siê pomodliæ, poszukaj którejœ z przydro¿nych kapliczek. Tam równie¿ znajdziesz odpowiedni¹ ciszê i spokój.
+	AI_Output (other, self, "DIA_Pedro_EINLASS_15_00"); //ChcÄ™ siÄ™ dostaÄ‡ do klasztoru.
+	AI_Output (self, other, "DIA_Pedro_EINLASS_09_01"); //Tylko sÅ‚udzy Innosa mogÄ… wejÅ›Ä‡ do Å›rodka.
+	AI_Output (self, other, "DIA_Pedro_EINLASS_09_02"); //JeÅ›li chcesz siÄ™ pomodliÄ‡, poszukaj ktÃ³rejÅ› z przydroÅ¼nych kapliczek. Tam rÃ³wnieÅ¼ znajdziesz odpowiedniÄ… ciszÄ™ i spokÃ³j.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEMPEL
@@ -137,7 +137,7 @@ instance DIA_Pedro_TEMPEL		(C_INFO)
 	condition	 = 	DIA_Pedro_TEMPEL_Condition;
 	information	 = 	DIA_Pedro_TEMPEL_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Co mam zrobiæ, ¿eby przyjêto mnie do klasztoru?";
+	description	 = 	"Co mam zrobiÄ‡, Å¼eby przyjÄ™to mnie do klasztoru?";
 };
 //-----------------------------------
 
@@ -152,26 +152,26 @@ func int DIA_Pedro_TEMPEL_Condition ()
 };
 func void DIA_Pedro_TEMPEL_Info ()
 {	
- 	AI_Output (other, self, "DIA_Pedro_TEMPEL_15_00"); //Co mam zrobiæ, ¿eby przyjêto mnie do klasztoru?
+ 	AI_Output (other, self, "DIA_Pedro_TEMPEL_15_00"); //Co mam zrobiÄ‡, Å¼eby przyjÄ™to mnie do klasztoru?
  	
  	if (other.guild != GIL_NONE)
  	{
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_01"); //Wybra³eœ ju¿ swoj¹ œcie¿kê. Droga do klasztoru jest przed tob¹ zamkniêta.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_01"); //WybraÅ‚eÅ› juÅ¼ swojÄ… Å›cieÅ¼kÄ™. Droga do klasztoru jest przed tobÄ… zamkniÄ™ta.
  	}
  	else
  	{
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_02"); //Jeœli chcesz do³¹czyæ do Bractwa Innosa, musisz poznaæ regu³y klasztoru i wiernie ich przestrzegaæ.
-		//AI_Output (self, other, "DIA_Pedro_TEMPEL_09_03"); //Außerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_02"); //JeÅ›li chcesz doÅ‚Ä…czyÄ‡ do Bractwa Innosa, musisz poznaÄ‡ reguÅ‚y klasztoru i wiernie ich przestrzegaÄ‡.
+		//AI_Output (self, other, "DIA_Pedro_TEMPEL_09_03"); //AuÃŸerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
 		//B_Say_Gold (self, other, Summe_Kloster);  
- 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_03"); //Wymagamy ponadto od ka¿dego nowicjusza daniny na rzecz Innosa.
- 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //Owcy i tysi¹ca sztuk z³ota.
- 		AI_Output (other, self, "DIA_Pedro_TEMPEL_15_04"); //To du¿o pieniêdzy.
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_05"); //To znak, ¿e rozpoczynasz nowe ¿ycie jako s³uga Innosa. Jeœli zostaniesz przyjêty, wszystkie twoje grzechy zostan¹ ci wybaczone.
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_06"); //Ale pamiêtaj: s³ug¹ Innosa zostaje siê na ca³e ¿ycie!
+ 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_03"); //Wymagamy ponadto od kaÅ¼dego nowicjusza daniny na rzecz Innosa.
+ 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //Owcy i tysiÄ…ca sztuk zÅ‚ota.
+ 		AI_Output (other, self, "DIA_Pedro_TEMPEL_15_04"); //To duÅ¼o pieniÄ™dzy.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_05"); //To znak, Å¼e rozpoczynasz nowe Å¼ycie jako sÅ‚uga Innosa. JeÅ›li zostaniesz przyjÄ™ty, wszystkie twoje grzechy zostanÄ… ci wybaczone.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_06"); //Ale pamiÄ™taj: sÅ‚ugÄ… Innosa zostaje siÄ™ na caÅ‚e Å¼ycie!
  		SC_KnowsKlosterTribut = TRUE;
   		Log_CreateTopic (Topic_Kloster,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Kloster,LOG_RUNNING);
-		B_LogEntry (Topic_Kloster,"Aby zostaæ nowicjuszem w klasztorze Innosa, bêdê potrzebowa³ owcy i ogromnej sumy pieniêdzy.");
+		B_LogEntry (Topic_Kloster,"Aby zostaÄ‡ nowicjuszem w klasztorze Innosa, bÄ™dÄ™ potrzebowaÅ‚ owcy i ogromnej sumy pieniÄ™dzy.");
  	};
 };
 
@@ -185,7 +185,7 @@ instance DIA_Addon_Pedro_Statuette (C_INFO)
 	condition	 = 	DIA_Addon_Pedro_Statuette_Condition;
 	information	 = 	DIA_Addon_Pedro_Statuette_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mam tu pos¹¿ek...";
+	description	 = 	"Mam tu posÄ…Å¼ek...";
 };
 func int DIA_Addon_Pedro_Statuette_Condition ()
 {	
@@ -199,20 +199,20 @@ func int DIA_Addon_Pedro_Statuette_Condition ()
 };
 func void DIA_Addon_Pedro_Statuette_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_00"); //Mam tu pos¹¿ek - jak s¹dzê, powinien siê on znaleŸæ w klasztorze.
-	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_01"); //Mogê teraz przejœæ?
+	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_00"); //Mam tu posÄ…Å¼ek - jak sÄ…dzÄ™, powinien siÄ™ on znaleÅºÄ‡ w klasztorze.
+	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_01"); //MogÄ™ teraz przejÅ›Ä‡?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_02"); //W tych wyj¹tkowych okolicznoœciach masz zgodê na zostanie nowicjuszem.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_02"); //W tych wyjÄ…tkowych okolicznoÅ›ciach masz zgodÄ™ na zostanie nowicjuszem.
 
 		Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Nowicjusz Pedro wpuœci³ mnie do klasztoru, bo przynios³em zaginiony pos¹¿ek. Mam go daæ komuœ w klasztorze."); 
+		B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Nowicjusz Pedro wpuÅ›ciÅ‚ mnie do klasztoru, bo przyniosÅ‚em zaginiony posÄ…Å¼ek. Mam go daÄ‡ komuÅ› w klasztorze."); 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_03"); //Obawiam siê, ¿e nawet mimo posiadania tego cennego przedmiotu nie masz tutaj wstêpu.
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_04"); //Wybra³eœ inn¹ œcie¿kê rozwoju i droga do klasztoru pozostanie dla ciebie na zawsze zamkniêta.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_03"); //Obawiam siÄ™, Å¼e nawet mimo posiadania tego cennego przedmiotu nie masz tutaj wstÄ™pu.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_04"); //WybraÅ‚eÅ› innÄ… Å›cieÅ¼kÄ™ rozwoju i droga do klasztoru pozostanie dla ciebie na zawsze zamkniÄ™ta.
 	};
 };
 
@@ -223,7 +223,7 @@ instance DIA_Addon_Pedro_Statuette_Abgeben (C_INFO)
 	condition	 = 	DIA_Addon_Pedro_Statuette_Abgeben_Condition;
 	information	 = 	DIA_Addon_Pedro_Statuette_Abgeben_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Mogê chocia¿ zostawiæ tutaj ten pos¹¿ek?";
+	description	 = 	"MogÄ™ chociaÅ¼ zostawiÄ‡ tutaj ten posÄ…Å¼ek?";
 };
 func int DIA_Addon_Pedro_Statuette_Abgeben_Condition ()
 {	
@@ -238,8 +238,8 @@ func int DIA_Addon_Pedro_Statuette_Abgeben_Condition ()
 };
 func void DIA_Addon_Pedro_Statuette_Abgeben_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_Abgeben_15_00"); //Mogê chocia¿ zostawiæ tutaj ten pos¹¿ek?
-	AI_Output (self, other, "DIA_Addon_Pedro_Statuette_Abgeben_09_01"); //Oczywiœcie, natychmiast siê nim zajmê. Dziêkujê ci za bezinteresowne poœwiêcenie.
+	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_Abgeben_15_00"); //MogÄ™ chociaÅ¼ zostawiÄ‡ tutaj ten posÄ…Å¼ek?
+	AI_Output (self, other, "DIA_Addon_Pedro_Statuette_Abgeben_09_01"); //OczywiÅ›cie, natychmiast siÄ™ nim zajmÄ™. DziÄ™kujÄ™ ci za bezinteresowne poÅ›wiÄ™cenie.
 	MIS_Addon_Daron_GetStatue = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_ReportLostInnosStatue2Daron);
 };
@@ -253,7 +253,7 @@ instance DIA_Pedro_Rules		(C_INFO)
 	condition	 = 	DIA_Pedro_Rules_Condition;
 	information	 = 	DIA_Pedro_Rules_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Jakich regu³ przestrzegaj¹ s³udzy Innosa?";
+	description	 = 	"Jakich reguÅ‚ przestrzegajÄ… sÅ‚udzy Innosa?";
 };
 func int DIA_Pedro_Rules_Condition ()
 {	
@@ -264,16 +264,16 @@ func int DIA_Pedro_Rules_Condition ()
 };
 func void DIA_Pedro_Rules_Info ()
 {
-	AI_Output (other, self,"DIA_Pedro_Rules_15_00"); //Jakich regu³ przestrzegaj¹ s³udzy Innosa?
-	AI_Output (self, other,"DIA_Pedro_Rules_09_01"); //Innos jest bogiem prawdy i sprawiedliwoœci, dlatego pod ¿adnym pozorem nie wolno nam oszukiwaæ i ³amaæ prawa.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_02"); //Wyst¹pienie przeciwko któremuœ z braci lub okradanie klasztoru jest karane z ca³¹ surowoœci¹!
-	AI_Output (self, other,"DIA_Pedro_Rules_09_03"); //Innos jest tak¿e bogiem w³adzy i ognia.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_04"); //Jako nowicjusz musisz okazywaæ szacunek i pos³uszeñstwo wszystkim Magom Ognia.
+	AI_Output (other, self,"DIA_Pedro_Rules_15_00"); //Jakich reguÅ‚ przestrzegajÄ… sÅ‚udzy Innosa?
+	AI_Output (self, other,"DIA_Pedro_Rules_09_01"); //Innos jest bogiem prawdy i sprawiedliwoÅ›ci, dlatego pod Å¼adnym pozorem nie wolno nam oszukiwaÄ‡ i Å‚amaÄ‡ prawa.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_02"); //WystÄ…pienie przeciwko ktÃ³remuÅ› z braci lub okradanie klasztoru jest karane z caÅ‚Ä… surowoÅ›ciÄ…!
+	AI_Output (self, other,"DIA_Pedro_Rules_09_03"); //Innos jest takÅ¼e bogiem wÅ‚adzy i ognia.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_04"); //Jako nowicjusz musisz okazywaÄ‡ szacunek i posÅ‚uszeÅ„stwo wszystkim Magom Ognia.
 	AI_Output (other,self ,"DIA_Pedro_Rules_15_05"); //Rozumiem.
-	AI_Output (self ,other,"DIA_Pedro_Rules_09_06"); //Co wiêcej, obowi¹zkiem ka¿dego nowicjusza jest praca w klasztorze dla dobra ca³ej spo³ecznoœci.
+	AI_Output (self ,other,"DIA_Pedro_Rules_09_06"); //Co wiÄ™cej, obowiÄ…zkiem kaÅ¼dego nowicjusza jest praca w klasztorze dla dobra caÅ‚ej spoÅ‚ecznoÅ›ci.
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Pedro_Rules_09_07"); //Jeœli jesteœ gotów przestrzegaæ tych zasad i z³o¿ysz odpowiedni¹ ofiarê, mo¿esz zostaæ przyjêty do klasztoru jako nowicjusz.
+		AI_Output (self ,other,"DIA_Pedro_Rules_09_07"); //JeÅ›li jesteÅ› gotÃ³w przestrzegaÄ‡ tych zasad i zÅ‚oÅ¼ysz odpowiedniÄ… ofiarÄ™, moÅ¼esz zostaÄ‡ przyjÄ™ty do klasztoru jako nowicjusz.
 	};
 };
 
@@ -286,7 +286,7 @@ instance DIA_Pedro_AUFNAHME		(C_INFO)
 	condition	 = 	DIA_Pedro_AUFNAHME_Condition;
 	information	 = 	DIA_Pedro_AUFNAHME_Info;
 	permanent 	 =  TRUE; 
-	description	 = 	"Chcê zostaæ nowicjuszem.";
+	description	 = 	"ChcÄ™ zostaÄ‡ nowicjuszem.";
 };
 var int DIA_Pedro_AUFNAHME_NOPERM;
 func int DIA_Pedro_AUFNAHME_Condition ()
@@ -300,24 +300,24 @@ func int DIA_Pedro_AUFNAHME_Condition ()
 func void B_DIA_Pedro_AUFNAHME_Choice ()
 {
 		Info_ClearChoices (DIA_Pedro_AUFNAHME);
-		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Muszê to sobie jeszcze przemyœleæ.",DIA_Pedro_AUFNAHME_NO);
-		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Tak, chcê poœwiêciæ swoje ¿ycie s³u¿bie Innosowi.",DIA_Pedro_AUFNAHME_YES);
+		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"MuszÄ™ to sobie jeszcze przemyÅ›leÄ‡.",DIA_Pedro_AUFNAHME_NO);
+		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Tak, chcÄ™ poÅ›wiÄ™ciÄ‡ swoje Å¼ycie sÅ‚uÅ¼bie Innosowi.",DIA_Pedro_AUFNAHME_YES);
 };
 func void DIA_Pedro_AUFNAHME_Info ()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_15_00"); //Chcê zostaæ nowicjuszem.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_15_00"); //ChcÄ™ zostaÄ‡ nowicjuszem.
 	
 	Npc_PerceiveAll (self);
 	
 	if (hero.guild != GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_01"); //Wybra³eœ ju¿ œcie¿kê, po której kroczysz. Droga magii jest dla ciebie zamkniêta.
+		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_01"); //WybraÅ‚eÅ› juÅ¼ Å›cieÅ¼kÄ™, po ktÃ³rej kroczysz. Droga magii jest dla ciebie zamkniÄ™ta.
 		DIA_Pedro_AUFNAHME_NOPERM = TRUE;
 	}
 	//ADDON>
 	else if (Npc_KnowsInfo (other, DIA_Addon_Pedro_Statuette))
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_AUFNAHME_09_02"); //Na pewno tego w³aœnie pragniesz? Wiedz, ¿e wybór œcie¿ki rozwoju jest ostateczny i nie bêdziesz go móg³ zmieniæ!
+		AI_Output (self, other, "DIA_Addon_Pedro_AUFNAHME_09_02"); //Na pewno tego wÅ‚aÅ›nie pragniesz? Wiedz, Å¼e wybÃ³r Å›cieÅ¼ki rozwoju jest ostateczny i nie bÄ™dziesz go mÃ³gÅ‚ zmieniÄ‡!
 		B_DIA_Pedro_AUFNAHME_Choice ();
 	}
 	//<ADDON
@@ -327,26 +327,26 @@ func void DIA_Pedro_AUFNAHME_Info ()
 	&& (Npc_GetDistToNpc(self, other) < 1000)
 	{
 		
-		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_03"); //Widzê, ¿e gotów jesteœ z³o¿yæ odpowiedni¹ ofiarê. Jeœli nie zmieni³eœ zdania, mo¿esz teraz zostaæ nowicjuszem w klasztorze.
-		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_04"); //Pamiêtaj jednak, ¿e od tej decyzji nie ma odwo³ania. Musisz mieæ pewnoœæ, ¿e wybierasz w³aœciw¹ œcie¿kê!
+		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_03"); //WidzÄ™, Å¼e gotÃ³w jesteÅ› zÅ‚oÅ¼yÄ‡ odpowiedniÄ… ofiarÄ™. JeÅ›li nie zmieniÅ‚eÅ› zdania, moÅ¼esz teraz zostaÄ‡ nowicjuszem w klasztorze.
+		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_04"); //PamiÄ™taj jednak, Å¼e od tej decyzji nie ma odwoÅ‚ania. Musisz mieÄ‡ pewnoÅ›Ä‡, Å¼e wybierasz wÅ‚aÅ›ciwÄ… Å›cieÅ¼kÄ™!
 		
 		B_DIA_Pedro_AUFNAHME_Choice ();
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_02"); //Nie masz jeszcze rzeczy potrzebnych do z³o¿enia ofiary.
+		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_02"); //Nie masz jeszcze rzeczy potrzebnych do zÅ‚oÅ¼enia ofiary.
 	};
 };
 
 FUNC VOID DIA_Pedro_AUFNAHME_YES()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_00"); //Tak, chcê poœwiêciæ swoje ¿ycie s³u¿bie Innosowi.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_01"); //Zatem witaj wœród nas, Bracie. Oto klucz do bramy klasztoru.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_02"); //Teraz musisz dobrowolnie otworzyæ te odrzwia i przekroczyæ próg.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_03"); //Od dziœ jesteœ nowicjuszem. Noœ tê szatê, by wszyscy wiedzieli, ¿e jesteœ jednym z nas.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_04"); //W œrodku zg³oœ siê do Parlana. Od dziœ on bêdzie siê tob¹ opiekowa³.
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_05"); //Czy moje wystêpki zostan¹ mi zapomniane?
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_06"); //Jeszcze nie. Porozmawiaj z Mistrzem Parlanem. On udzieli ci b³ogos³awieñstwa i oczyœci z grzechów.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_00"); //Tak, chcÄ™ poÅ›wiÄ™ciÄ‡ swoje Å¼ycie sÅ‚uÅ¼bie Innosowi.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_01"); //Zatem witaj wÅ›rÃ³d nas, Bracie. Oto klucz do bramy klasztoru.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_02"); //Teraz musisz dobrowolnie otworzyÄ‡ te odrzwia i przekroczyÄ‡ prÃ³g.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_03"); //Od dziÅ› jesteÅ› nowicjuszem. NoÅ› tÄ™ szatÄ™, by wszyscy wiedzieli, Å¼e jesteÅ› jednym z nas.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_04"); //W Å›rodku zgÅ‚oÅ› siÄ™ do Parlana. Od dziÅ› on bÄ™dzie siÄ™ tobÄ… opiekowaÅ‚.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_05"); //Czy moje wystÄ™pki zostanÄ… mi zapomniane?
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_06"); //Jeszcze nie. Porozmawiaj z Mistrzem Parlanem. On udzieli ci bÅ‚ogosÅ‚awieÅ„stwa i oczyÅ›ci z grzechÃ³w.
 	
 	CreateInvItems 		(self,ItKe_Innos_MIS,1);
 	B_GiveInvItems 		(self, hero, ItKe_Innos_MIS,1); 
@@ -375,13 +375,13 @@ FUNC VOID DIA_Pedro_AUFNAHME_YES()
 };
 FUNC VOID DIA_Pedro_AUFNAHME_NO()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_NO_15_00"); //Muszê to sobie jeszcze przemyœleæ.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_NO_09_01"); //Wróæ, gdy uznasz, ¿e jesteœ gotowy.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_NO_15_00"); //MuszÄ™ to sobie jeszcze przemyÅ›leÄ‡.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_NO_09_01"); //WrÃ³Ä‡, gdy uznasz, Å¼e jesteÅ› gotowy.
 	
 	Info_ClearChoices (DIA_Pedro_AUFNAHME);
 };
 //*********************************************************************
-//	Erzähl mir vom Leben im Kloster.
+//	ErzÃ¤hl mir vom Leben im Kloster.
 //*********************************************************************
 instance DIA_Pedro_Monastery		(C_INFO)
 {
@@ -390,7 +390,7 @@ instance DIA_Pedro_Monastery		(C_INFO)
 	condition	 = 	DIA_Pedro_Monastery_Condition;
 	information	 = 	DIA_Pedro_Monastery_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Opowiedz mi o ¿yciu w klasztorze.";
+	description	 = 	"Opowiedz mi o Å¼yciu w klasztorze.";
 };
 func int DIA_Pedro_Monastery_Condition ()
 {		
@@ -398,9 +398,9 @@ func int DIA_Pedro_Monastery_Condition ()
 };
 func void DIA_Pedro_Monastery_Info ()
 {
-	AI_Output (other, self, "DIA_Pedro_Monastery_15_00"); //Opowiedz mi o ¿yciu w klasztorze.
-	AI_Output (self, other, "DIA_Pedro_Monastery_09_01"); //Celem naszego ¿ycia jest s³u¿ba wielkiemu Innosowi. My, nowicjusze, wykonujemy podstawowe prace, a w wolnych chwilach studiujemy stare pisma.
-	AI_Output (self, other, "DIA_Pedro_Monastery_09_02"); //Naszymi opiekunami s¹ magowie, którzy zg³êbiaj¹ sztuki tajemne.
+	AI_Output (other, self, "DIA_Pedro_Monastery_15_00"); //Opowiedz mi o Å¼yciu w klasztorze.
+	AI_Output (self, other, "DIA_Pedro_Monastery_09_01"); //Celem naszego Å¼ycia jest sÅ‚uÅ¼ba wielkiemu Innosowi. My, nowicjusze, wykonujemy podstawowe prace, a w wolnych chwilach studiujemy stare pisma.
+	AI_Output (self, other, "DIA_Pedro_Monastery_09_02"); //Naszymi opiekunami sÄ… magowie, ktÃ³rzy zgÅ‚Ä™biajÄ… sztuki tajemne.
 }; 
 
 

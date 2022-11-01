@@ -46,32 +46,32 @@ func int DIA_Urshak_HALLO_Condition ()
 func void DIA_Urshak_HALLO_Info ()
 {
 	AI_Output			(self, other, "DIA_Urshak_HALLO_18_00"); //KHROTOK JABARTH!!!
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_01"); //Stój! Ciebie znaæ! Ty przyjaciel-cz³owiek, z ³agodny g³os.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_18_02"); //Przyjaciel co zabiæ demon KRUSHAK!
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_01"); //StÃ³j! Ciebie znaÄ‡! Ty przyjaciel-czÅ‚owiek, z Å‚agodny gÅ‚os.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_18_02"); //Przyjaciel co zabiÄ‡ demon KRUSHAK!
 	
 	B_GivePlayerXP (XP_UrshakFound);
 	
 	Log_CreateTopic (TOPIC_Urshak, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Urshak, LOG_RUNNING);
-	B_LogEntry (TOPIC_Urshak,"Odnalaz³em mego starego orkowego przyjaciela, Ur-Shaka."); 
+	B_LogEntry (TOPIC_Urshak,"OdnalazÅ‚em mego starego orkowego przyjaciela, Ur-Shaka."); 
 
 	Info_ClearChoices	(DIA_Urshak_HALLO);
 	Info_AddChoice	(DIA_Urshak_HALLO, "Co tu porabiasz?", DIA_Urshak_HALLO_freund );
-	Info_AddChoice	(DIA_Urshak_HALLO, "Gadaj¹cy ork?", DIA_Urshak_HALLO_wer );
+	Info_AddChoice	(DIA_Urshak_HALLO, "GadajÄ…cy ork?", DIA_Urshak_HALLO_wer );
 };
 func void DIA_Urshak_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //Gadaj¹cy ork?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //Zapomnia³ Ur-Shak? Ur-Shak smutny.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //Du¿o dni wczeœniej Ur-Shak pomóg³ zdobyæ ULU-MULU, ¿eby przyjaciel poszed³ do wioski. Wtedy orki go nie zabiæ.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Przyjaciel by³ w œwi¹tynia orków i pokona³ demon. Du¿o dni wczeœniej! Nie pamiêta?
+	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //GadajÄ…cy ork?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //ZapomniaÅ‚ Ur-Shak? Ur-Shak smutny.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //DuÅ¼o dni wczeÅ›niej Ur-Shak pomÃ³gÅ‚ zdobyÄ‡ ULU-MULU, Å¼eby przyjaciel poszedÅ‚ do wioski. Wtedy orki go nie zabiÄ‡.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Przyjaciel byÅ‚ w Å›wiÄ…tynia orkÃ³w i pokonaÅ‚ demon. DuÅ¼o dni wczeÅ›niej! Nie pamiÄ™ta?
 
 };
 
 func void DIA_Urshak_HALLO_freund ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //Szkoda, ¿e okolicznoœci nie s¹ bardziej sprzyjaj¹ce. O ma³o ciê nie zabi³em. Co tu robisz?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ur-Shak idzie, ¿eby zobaczyæ, co siê sta³o z jego bracia.
+	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //Szkoda, Å¼e okolicznoÅ›ci nie sÄ… bardziej sprzyjajÄ…ce. O maÅ‚o ciÄ™ nie zabiÅ‚em. Co tu robisz?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ur-Shak idzie, Å¼eby zobaczyÄ‡, co siÄ™ staÅ‚o z jego bracia.
 	Info_ClearChoices	(DIA_Urshak_HALLO);
 };
 
@@ -87,7 +87,7 @@ instance DIA_Urshak_WASMACHENORKS		(C_INFO)
 	condition	 = 	DIA_Urshak_WASMACHENORKS_Condition;
 	information	 = 	DIA_Urshak_WASMACHENORKS_Info;
 
-	description	 = 	"Dlaczego orkowie atakuj¹ ludzi?";
+	description	 = 	"Dlaczego orkowie atakujÄ… ludzi?";
 };
 
 func int DIA_Urshak_WASMACHENORKS_Condition ()
@@ -101,11 +101,11 @@ func int DIA_Urshak_WASMACHENORKS_Condition ()
 
 func void DIA_Urshak_WASMACHENORKS_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //Dlaczego orkowie atakuj¹ ludzi?
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //Ur-Shak zawsze mówi³, ¿e ludzie nie z³e, ¿e tam te¿ przyjaciele.
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Ale szaman nie s³uchaæ Ur-Shak, a bracia ci¹gle nie lubiæ Ur-Shak.
+	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //Dlaczego orkowie atakujÄ… ludzi?
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //Ur-Shak zawsze mÃ³wiÅ‚, Å¼e ludzie nie zÅ‚e, Å¼e tam teÅ¼ przyjaciele.
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Ale szaman nie sÅ‚uchaÄ‡ Ur-Shak, a bracia ciÄ…gle nie lubiÄ‡ Ur-Shak.
 	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_03"); //Ur-Shak nie wie, czemu wielka wojna z ludzie.
-	B_LogEntry (TOPIC_Urshak,"Wci¹¿ nie przekona³ swego ludu do wys³uchania jego racji. Ci¹gle jest wygnañcem."); 
+	B_LogEntry (TOPIC_Urshak,"WciÄ…Å¼ nie przekonaÅ‚ swego ludu do wysÅ‚uchania jego racji. CiÄ…gle jest wygnaÅ„cem."); 
 };
 
 
@@ -119,7 +119,7 @@ instance DIA_Urshak_SOVIELE		(C_INFO)
 	condition	 = 	DIA_Urshak_SOVIELE_Condition;
 	information	 = 	DIA_Urshak_SOVIELE_Info;
 
-	description	 = 	"Sk¹d siê was tu tylu wziê³o?";
+	description	 = 	"SkÄ…d siÄ™ was tu tylu wziÄ™Å‚o?";
 };
 
 func int DIA_Urshak_SOVIELE_Condition ()
@@ -133,8 +133,8 @@ func int DIA_Urshak_SOVIELE_Condition ()
 
 func void DIA_Urshak_SOVIELE_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //Sk¹d siê was tu tylu wziê³o?
-	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //Jedne orki id¹ z gór, a inne ze statków. Wszystkie robi¹ wielkie ogrodzenie.
+	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //SkÄ…d siÄ™ was tu tylu wziÄ™Å‚o?
+	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //Jedne orki idÄ… z gÃ³r, a inne ze statkÃ³w. Wszystkie robiÄ… wielkie ogrodzenie.
 };
 
 
@@ -148,7 +148,7 @@ instance DIA_Urshak_ZAUN		(C_INFO)
 	condition	 = 	DIA_Urshak_ZAUN_Condition;
 	information	 = 	DIA_Urshak_ZAUN_Info;
 
-	description	 = 	"Co siê kryje za palisad¹ orków na wschodzie?";
+	description	 = 	"Co siÄ™ kryje za palisadÄ… orkÃ³w na wschodzie?";
 };
 
 func int DIA_Urshak_ZAUN_Condition ()
@@ -162,9 +162,9 @@ func int DIA_Urshak_ZAUN_Condition ()
 
 func void DIA_Urshak_ZAUN_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_ZAUN_15_00"); //Co siê kryje za palisad¹ orków na wschodzie?
-	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_01"); //U orków zawsze du¿y pali-sada. Tam wojenny obóz.
-	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_02"); //Pali-sada dobry na wojnê. Nie widaæ ilu orki, a orki bezpieczne.
+	AI_Output			(other, self, "DIA_Urshak_ZAUN_15_00"); //Co siÄ™ kryje za palisadÄ… orkÃ³w na wschodzie?
+	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_01"); //U orkÃ³w zawsze duÅ¼y pali-sada. Tam wojenny obÃ³z.
+	AI_Output			(self, other, "DIA_Urshak_ZAUN_18_02"); //Pali-sada dobry na wojnÄ™. Nie widaÄ‡ ilu orki, a orki bezpieczne.
 };
 
 
@@ -179,7 +179,7 @@ instance DIA_Urshak_WASHASTDUVOR		(C_INFO)
 	condition	 = 	DIA_Urshak_WASHASTDUVOR_Condition;
 	information	 = 	DIA_Urshak_WASHASTDUVOR_Info;
 
-	description	 = 	"Co zamierzasz teraz zrobiæ?";
+	description	 = 	"Co zamierzasz teraz zrobiÄ‡?";
 };
 
 func int DIA_Urshak_WASHASTDUVOR_Condition ()
@@ -193,32 +193,32 @@ func int DIA_Urshak_WASHASTDUVOR_Condition ()
 
 func void DIA_Urshak_WASHASTDUVOR_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Co zamierzasz teraz zrobiæ?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //Ur-Shak poczeka, a¿ zwiadowcy zaprowadziæ go do Hosh-Pak.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Co zamierzasz teraz zrobiÄ‡?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //Ur-Shak poczeka, aÅ¼ zwiadowcy zaprowadziÄ‡ go do Hosh-Pak.
 	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_02"); //Kim jest ten Hosh-Pak?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //Bardzo du¿y szaman. Wielki wp³yw ma na wojownicy. Wielki plan ma dla orków.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //Bardzo duÅ¼y szaman. Wielki wpÅ‚yw ma na wojownicy. Wielki plan ma dla orkÃ³w.
 
-	B_LogEntry (TOPIC_Urshak,"Ur-Shak planuje spotkaæ siê z orkowym szamanem, Hosh-Pakiem. Chce otrzymaæ pozwolenie na ponowne do³¹czenie do Rady Szamanów."); 
+	B_LogEntry (TOPIC_Urshak,"Ur-Shak planuje spotkaÄ‡ siÄ™ z orkowym szamanem, Hosh-Pakiem. Chce otrzymaÄ‡ pozwolenie na ponowne doÅ‚Ä…czenie do Rady SzamanÃ³w."); 
 
 	Info_ClearChoices	(DIA_Urshak_WASHASTDUVOR);
 
 	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, DIALOG_BACK, DIA_Urshak_WASHASTDUVOR_weiter );
-	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Gdzie znajdê tego Hosh-Paka?", DIA_Urshak_WASHASTDUVOR_ );
-	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Wiêc dlaczego sam do niego nie pójdziesz?", DIA_Urshak_WASHASTDUVOR_hoshpak );
+	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Gdzie znajdÄ™ tego Hosh-Paka?", DIA_Urshak_WASHASTDUVOR_ );
+	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "WiÄ™c dlaczego sam do niego nie pÃ³jdziesz?", DIA_Urshak_WASHASTDUVOR_hoshpak );
 };
 func void DIA_Urshak_WASHASTDUVOR_hoshpak ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //Wiêc dlaczego sam do niego nie pójdziesz?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //Ur-Shak próbowaæ i próbowaæ oddostaæ honor, i byæ znów w rada szamanów.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //Ale Hosh-Pak nie chcia³ s³uchaæ. Bez zwiadowców orki zabij¹ Ur-Shak. Ur-Shak musi porozmawiaæ z Hosh-Pak.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //Mo¿e dzisiaj udaæ.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //WiÄ™c dlaczego sam do niego nie pÃ³jdziesz?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //Ur-Shak prÃ³bowaÄ‡ i prÃ³bowaÄ‡ oddostaÄ‡ honor, i byÄ‡ znÃ³w w rada szamanÃ³w.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //Ale Hosh-Pak nie chciaÅ‚ sÅ‚uchaÄ‡. Bez zwiadowcÃ³w orki zabijÄ… Ur-Shak. Ur-Shak musi porozmawiaÄ‡ z Hosh-Pak.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //MoÅ¼e dzisiaj udaÄ‡.
 	
 };
 
 func void DIA_Urshak_WASHASTDUVOR_ ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_Urshak_15_00"); //Gdzie znajdê tego Hosh-Paka?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //On ma miejsce, gdzie widzi wojownicy - nad fortec¹, przy ognista góra. Tam Hosh-Pak dowodzi wojownicy.
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_Urshak_15_00"); //Gdzie znajdÄ™ tego Hosh-Paka?
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //On ma miejsce, gdzie widzi wojownicy - nad fortecÄ…, przy ognista gÃ³ra. Tam Hosh-Pak dowodzi wojownicy.
 
 };
 
@@ -239,7 +239,7 @@ instance DIA_Urshak_HOSHPAKDEAD		(C_INFO)
 	condition	 = 	DIA_Urshak_HOSHPAKDEAD_Condition;
 	information	 = 	DIA_Urshak_HOSHPAKDEAD_Info;
 
-	description	 = 	"Hosh-Pak nie ¿yje.";
+	description	 = 	"Hosh-Pak nie Å¼yje.";
 };
 
 func int DIA_Urshak_HOSHPAKDEAD_Condition ()
@@ -254,15 +254,15 @@ func int DIA_Urshak_HOSHPAKDEAD_Condition ()
 
 func void DIA_Urshak_HOSHPAKDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Hosh-Pak nie ¿yje.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //Hosh-Pak nie ¿yje? RUSHTASOK!
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //Moje serce smutne. Ur-Shak nie zapomni wielki ork, który zrobi³ go szamanem.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //Rozumiem. Hosh-Pak by³ twoim nauczycielem, tak?
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //Ur-Shak musi nieœæ swój smutek. Musi pogrzebaæ Hosh-Pak. Ur-Shak musi ju¿ iœæ.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //Przyjaciel lepiej iœæ na prze³êcz. Tu niebezpiecznie.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //Ur-Shak bardzo smutny, jeœli przyjaciel-cz³owiek te¿ zgin¹æ.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Hosh-Pak nie Å¼yje.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //Hosh-Pak nie Å¼yje? RUSHTASOK!
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //Moje serce smutne. Ur-Shak nie zapomni wielki ork, ktÃ³ry zrobiÅ‚ go szamanem.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //Rozumiem. Hosh-Pak byÅ‚ twoim nauczycielem, tak?
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //Ur-Shak musi nieÅ›Ä‡ swÃ³j smutek. Musi pogrzebaÄ‡ Hosh-Pak. Ur-Shak musi juÅ¼ iÅ›Ä‡.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //Przyjaciel lepiej iÅ›Ä‡ na przeÅ‚Ä™cz. Tu niebezpiecznie.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //Ur-Shak bardzo smutny, jeÅ›li przyjaciel-czÅ‚owiek teÅ¼ zginÄ…Ä‡.
 
-	B_LogEntry (TOPIC_Urshak,"Hosh-Pak nie ¿yje. Mój orkowy przyjaciel zmierza do jego namiotów, pogr¹¿ony w ¿a³obie po swoim mentorze. Nie powinienem mu przeszkadzaæ."); 
+	B_LogEntry (TOPIC_Urshak,"Hosh-Pak nie Å¼yje. MÃ³j orkowy przyjaciel zmierza do jego namiotÃ³w, pogrÄ…Å¼ony w Å¼aÅ‚obie po swoim mentorze. Nie powinienem mu przeszkadzaÄ‡."); 
 
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);
@@ -297,7 +297,7 @@ func int DIA_Urshak_GEH_Condition ()
 
 func void DIA_Urshak_GEH_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //Przyjaciel lepiej iœæ przez prze³êcz.
+	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //Przyjaciel lepiej iÅ›Ä‡ przez przeÅ‚Ä™cz.
 	Npc_SetRefuseTalk (self,10);
 	AI_StopProcessInfos (self);
 };
@@ -326,16 +326,16 @@ func int DIA_Urshak_HOSHPAKRACHE_Condition ()
 
 func void DIA_Urshak_HOSHPAKRACHE_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //KHROTOK! Ja wiem, ¿e ty by³, gdzie zabili Hosh-Pak. Du¿y b³¹d, obcy cz³owiek!
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //Widzê, ¿e zaj¹³eœ tu jego miejsce. Od pocz¹tku mn¹ manipulowa³eœ.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //Twoja pozycja wœród orków jest wy¿sza, ni¿ sk³onny by³eœ przyznaæ. Teraz jesteœ niczym wiêcej jak narzêdziem w rêkach z³a.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Obcy dobrze mówi. Ur-Shak zna teraz tylko nienawiœæ i zemsta.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //Ur-Shak zobaczy³ b³¹d, ¿e zaufa³ cz³owiek. Ur-Shak ¿a³uje, ¿e pomóg³ z³y cz³owiek i mówi³ mu przyjaciel.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Obcy iœæ ju¿ z doliny i przez prze³êcz. Ur-Shak nie mo¿e zabiæ obcy. Honor szamana nie pozwala teraz zabiæ.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //Nastêpnym razem bêdziemy wrogi. Ty ju¿ lepiej iœæ.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //KHROTOK! Ja wiem, Å¼e ty byÅ‚, gdzie zabili Hosh-Pak. DuÅ¼y bÅ‚Ä…d, obcy czÅ‚owiek!
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //WidzÄ™, Å¼e zajÄ…Å‚eÅ› tu jego miejsce. Od poczÄ…tku mnÄ… manipulowaÅ‚eÅ›.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //Twoja pozycja wÅ›rÃ³d orkÃ³w jest wyÅ¼sza, niÅ¼ skÅ‚onny byÅ‚eÅ› przyznaÄ‡. Teraz jesteÅ› niczym wiÄ™cej jak narzÄ™dziem w rÄ™kach zÅ‚a.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Obcy dobrze mÃ³wi. Ur-Shak zna teraz tylko nienawiÅ›Ä‡ i zemsta.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //Ur-Shak zobaczyÅ‚ bÅ‚Ä…d, Å¼e zaufaÅ‚ czÅ‚owiek. Ur-Shak Å¼aÅ‚uje, Å¼e pomÃ³gÅ‚ zÅ‚y czÅ‚owiek i mÃ³wiÅ‚ mu przyjaciel.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Obcy iÅ›Ä‡ juÅ¼ z doliny i przez przeÅ‚Ä™cz. Ur-Shak nie moÅ¼e zabiÄ‡ obcy. Honor szamana nie pozwala teraz zabiÄ‡.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //NastÄ™pnym razem bÄ™dziemy wrogi. Ty juÅ¼ lepiej iÅ›Ä‡.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
-	B_LogEntry (TOPIC_Urshak,"Rada orkowych szamanów ponownie przyjê³a w swe szeregi Ur-Shaka. Walczy on teraz po stronie wroga... Nie wiem, jak zareaguje na mój widok. Nie powinienem mu chyba wchodziæ w drogê, dopóki nie rozstrzygnê moich spraw z orkami - do tego czasu powinien siê ju¿ uspokoiæ."); 
+	B_LogEntry (TOPIC_Urshak,"Rada orkowych szamanÃ³w ponownie przyjÄ™Å‚a w swe szeregi Ur-Shaka. Walczy on teraz po stronie wroga... Nie wiem, jak zareaguje na mÃ³j widok. Nie powinienem mu chyba wchodziÄ‡ w drogÄ™, dopÃ³ki nie rozstrzygnÄ™ moich spraw z orkami - do tego czasu powinien siÄ™ juÅ¼ uspokoiÄ‡."); 
 	B_GivePlayerXP (XP_UrshakBecomesShaman);
 };
 
@@ -363,7 +363,7 @@ func int DIA_Urshak_KEINEWAHL_Condition ()
 
 func void DIA_Urshak_KEINEWAHL_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_KEINEWAHL_18_00"); //Ty iœæ. Nie rozmawiaæ z obcy.
+	AI_Output			(self, other, "DIA_Urshak_KEINEWAHL_18_00"); //Ty iÅ›Ä‡. Nie rozmawiaÄ‡ z obcy.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
 };

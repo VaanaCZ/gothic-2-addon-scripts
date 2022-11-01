@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_Patrick_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Patrick_NW_Hi_Condition;
 	information = DIA_Addon_Patrick_NW_Hi_Info;
 	permanent   = FALSE;
-	description = "I jak? Wszystko w porz¹dku?";
+	description = "I jak? Wszystko w porzÄ…dku?";
 };
 FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 {		
@@ -72,12 +72,12 @@ FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//I jak? Wszystko w porz¹dku?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//Doskonale. Magowie Wody pomogli nam wydostaæ siê z tej przeklêtej doliny.
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//I jak? Wszystko w porzÄ…dku?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//Doskonale. Magowie Wody pomogli nam wydostaÄ‡ siÄ™ z tej przeklÄ™tej doliny.
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//Jakie macie plany?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Bêdê dalej walczy³ u boku Lee. Pewnego dnia opuœcimy tê wyspê.
-	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//A póŸniej?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Zobaczy siê. Jeœli wojna wci¹¿ trwa, pójdê walczyæ z orkami. Ale kto wie, co siê jeszcze wydarzy...
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//BÄ™dÄ™ dalej walczyÅ‚ u boku Lee. Pewnego dnia opuÅ›cimy tÄ™ wyspÄ™.
+	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//A pÃ³Åºniej?
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Zobaczy siÄ™. JeÅ›li wojna wciÄ…Å¼ trwa, pÃ³jdÄ™ walczyÄ‡ z orkami. Ale kto wie, co siÄ™ jeszcze wydarzy...
 };
 
 

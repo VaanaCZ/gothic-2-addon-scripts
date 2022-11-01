@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Dragon_Undead(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Smok-oøywieniec";
+	name							=	"Smok-o≈ºywieniec";
 	guild							=	GIL_DRAGON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DRAGON_UNDEAD;
 	level							=	1000;

@@ -2,7 +2,7 @@
 instance Mil_306_Tuerwache (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Stra¿nik domu sêdziego"; 	
+	name 		= "StraÅ¼nik domu sÄ™dziego"; 	
 	guild 		= GIL_MIL;
 	id 			= 306;
 	voice 		= 7;

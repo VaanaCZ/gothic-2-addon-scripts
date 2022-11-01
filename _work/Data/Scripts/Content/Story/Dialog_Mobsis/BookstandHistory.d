@@ -14,7 +14,7 @@ var int History_2_permanent;
 var int History_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory1_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -36,15 +36,15 @@ FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
 					Doc_PrintLine	( nDocID,  0, ""						);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Najlepsz¹ obron¹ jest atak - w ka¿dym razie przeciwko zwierzêtom i bestiom. W ich przypadku parowanie ciosów nie ma sensu."						);
-					Doc_PrintLines	( nDocID,  0, "Lepiej szachowaæ przeciwnika celnymi ciosami i przygotowaæ zaskakuj¹c¹ kombinacjê, której nie zdo³a odeprzeæ."						);
+					Doc_PrintLines	( nDocID,  0, "NajlepszÄ… obronÄ… jest atak - w kaÅ¼dym razie przeciwko zwierzÄ™tom i bestiom. W ich przypadku parowanie ciosÃ³w nie ma sensu."						);
+					Doc_PrintLines	( nDocID,  0, "Lepiej szachowaÄ‡ przeciwnika celnymi ciosami i przygotowaÄ‡ zaskakujÄ…cÄ… kombinacjÄ™, ktÃ³rej nie zdoÅ‚a odeprzeÄ‡."						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Pamiêtaj jednak, ¿e ³¹czenie ciosów w p³ynne sekwencje to domena doœwiadczonych wojowników, a ³¹czenie poszczególnych sekwencji jest jeszcze trudniejsze."						); 
+					Doc_PrintLines	( nDocID,  1, "PamiÄ™taj jednak, Å¼e Å‚Ä…czenie ciosÃ³w w pÅ‚ynne sekwencje to domena doÅ›wiadczonych wojownikÃ³w, a Å‚Ä…czenie poszczegÃ³lnych sekwencji jest jeszcze trudniejsze."						); 
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
@@ -63,7 +63,7 @@ FUNC VOID Use_BookstandHistory1_S1()		//Geschichtsbücher
 	
 };
 
-FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory2_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -82,20 +82,20 @@ FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
 
 					Doc_PrintLine	( nDocID,  0, "Wyspa"					);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Khorinis to portowe miasto le¿¹ce na wyspie w pobli¿u wybrze¿y Królestwa Myrtany."						);
-					Doc_PrintLines	( nDocID,  0, "Wiêkszoœæ swej w¹tpliwej s³awy wyspa zawdziêcza Górniczej Dolinie, gdzie znajdowa³a siê kolonia karna, otoczona przez wiele lat magiczn¹ barier¹. To tutaj wszyscy skazañcy kraju"						);
-					Doc_PrintLines	( nDocID,  0, "zajmowali siê wydobywaniem z najg³êbszych pok³adów skorupy ziemskiej magicznej rudy."						);
+					Doc_PrintLines	( nDocID,  0, "Khorinis to portowe miasto leÅ¼Ä…ce na wyspie w pobliÅ¼u wybrzeÅ¼y KrÃ³lestwa Myrtany."						);
+					Doc_PrintLines	( nDocID,  0, "WiÄ™kszoÅ›Ä‡ swej wÄ…tpliwej sÅ‚awy wyspa zawdziÄ™cza GÃ³rniczej Dolinie, gdzie znajdowaÅ‚a siÄ™ kolonia karna, otoczona przez wiele lat magicznÄ… barierÄ…. To tutaj wszyscy skazaÅ„cy kraju"						);
+					Doc_PrintLines	( nDocID,  0, "zajmowali siÄ™ wydobywaniem z najgÅ‚Ä™bszych pokÅ‚adÃ³w skorupy ziemskiej magicznej rudy."						);
 					
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Oprócz miasta znajduj¹ siê tam liczne farmy, a na ¿yznych ziemiach uprawia siê pszenicê, rzepê i hoduje owce."						); 
+					Doc_PrintLines	( nDocID,  1, "OprÃ³cz miasta znajdujÄ… siÄ™ tam liczne farmy, a na Å¼yznych ziemiach uprawia siÄ™ pszenicÄ™, rzepÄ™ i hoduje owce."						); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Od pokoleñ najwiêksza z farm nale¿a³a do wielmo¿y, który przekazywa³ swoje ziemie innym pod uprawê."						);
+					Doc_PrintLines	( nDocID,  1, "Od pokoleÅ„ najwiÄ™ksza z farm naleÅ¼aÅ‚a do wielmoÅ¼y, ktÃ³ry przekazywaÅ‚ swoje ziemie innym pod uprawÄ™."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "W centrum wyspy znajduje siê pradawny Klasztor Innosa zarz¹dzany przez Magów Ognia, którzy zajmuj¹ siê badaniem natury magii, alchemi¹ i wytwarzaniem win."						);
+					Doc_PrintLines	( nDocID,  1, "W centrum wyspy znajduje siÄ™ pradawny Klasztor Innosa zarzÄ…dzany przez MagÃ³w Ognia, ktÃ³rzy zajmujÄ… siÄ™ badaniem natury magii, alchemiÄ… i wytwarzaniem win."						);
 					
 					Doc_Show		( nDocID );
 					
@@ -109,7 +109,7 @@ FUNC VOID Use_BookstandHistory2_S1()		//Geschichtsbücher
 };
 
 
-FUNC VOID Use_BookstandHistory3_S1()		//Geschichtsbücher
+FUNC VOID Use_BookstandHistory3_S1()		//GeschichtsbÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -131,21 +131,21 @@ FUNC VOID Use_BookstandHistory3_S1()		//Geschichtsbücher
 					
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Ka¿de zebranie grupy ludzi musi siê odbywaæ w absolutnym spokoju - i to niezale¿nie od miejsca, w którym siê odbywa."						);
-					Doc_PrintLines	( nDocID,  0, "Ka¿da zbrodnia przeciwko ogó³owi bêdzie karana."						);
-					Doc_PrintLines	( nDocID,  0, "Ogó³ zabrania wszczynania bójek oraz brania w nich udzia³u."						);
-					Doc_PrintLines	( nDocID,  0, "Zbrodni¹ jest równie¿ kradzie¿, a prawo chroni tak¿e owce."						);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¼de zebranie grupy ludzi musi siÄ™ odbywaÄ‡ w absolutnym spokoju - i to niezaleÅ¼nie od miejsca, w ktÃ³rym siÄ™ odbywa."						);
+					Doc_PrintLines	( nDocID,  0, "KaÅ¼da zbrodnia przeciwko ogÃ³Å‚owi bÄ™dzie karana."						);
+					Doc_PrintLines	( nDocID,  0, "OgÃ³Å‚ zabrania wszczynania bÃ³jek oraz brania w nich udziaÅ‚u."						);
+					Doc_PrintLines	( nDocID,  0, "ZbrodniÄ… jest rÃ³wnieÅ¼ kradzieÅ¼, a prawo chroni takÅ¼e owce."						);
 					Doc_PrintLines	( nDocID,  0, " "						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Atak na cz³owieka lub jego zabicie oznacza dla sprawcy bezzw³oczne os¹dzenie. "						);
-					Doc_PrintLines	( nDocID,  1, "W najlepszym razie winny musi zap³aciæ wysok¹ grzywnê."						);
-					Doc_PrintLines	( nDocID,  1, "Wszystkie wiêksze skupiska ludzkie s¹ chronione przez odpowiednie s³u¿by. Ich funkcjonariusze karz¹ przestêpców i dbaj¹ o ³ad i porz¹dek."						); 
-					Doc_PrintLines	( nDocID,  1, "Praworz¹dna wiêkszoœæ poinformuje w³adze o przestêpstwie, sprawcy nie s¹ tu mile widziani,"						);
+					Doc_PrintLines	( nDocID,  1, "Atak na czÅ‚owieka lub jego zabicie oznacza dla sprawcy bezzwÅ‚oczne osÄ…dzenie. "						);
+					Doc_PrintLines	( nDocID,  1, "W najlepszym razie winny musi zapÅ‚aciÄ‡ wysokÄ… grzywnÄ™."						);
+					Doc_PrintLines	( nDocID,  1, "Wszystkie wiÄ™ksze skupiska ludzkie sÄ… chronione przez odpowiednie sÅ‚uÅ¼by. Ich funkcjonariusze karzÄ… przestÄ™pcÃ³w i dbajÄ… o Å‚ad i porzÄ…dek."						); 
+					Doc_PrintLines	( nDocID,  1, "PraworzÄ…dna wiÄ™kszoÅ›Ä‡ poinformuje wÅ‚adze o przestÄ™pstwie, sprawcy nie sÄ… tu mile widziani,"						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "choæ zdarzaj¹ siê jednostki o ¿adne prawa nie dbaj¹ce - to m.in wszelacy bandyci i najemnicy."						);
+					Doc_PrintLines	( nDocID,  1, "choÄ‡ zdarzajÄ… siÄ™ jednostki o Å¼adne prawa nie dbajÄ…ce - to m.in wszelacy bandyci i najemnicy."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLines	( nDocID,  1, ""						);
 					Doc_Show		( nDocID );

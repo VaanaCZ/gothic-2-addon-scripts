@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wirkung und Kosten von Tr‰nken
+// Wirkung und Kosten von Tr√§nken
 // ************************************************************************************************
 
 
@@ -25,7 +25,7 @@ const int 	Value_ManaTrunk			=   200;
 const int 	Value_HpTrunk			=   150;
 
 /******************************************************************************************/
-//	MANATRƒNKE																			//
+//	MANATR√ÑNKE																			//
 /******************************************************************************************/
 INSTANCE ItPo_Mana_01(C_Item)
 {
@@ -128,7 +128,7 @@ INSTANCE ItPo_Mana_03(C_Item)
 		Npc_ChangeAttribute	(self,	ATR_MANA,	Mana_Elixier);
 	};
 /******************************************************************************************/
-//	HEILTRƒNKE																			//
+//	HEILTR√ÑNKE																			//
 /******************************************************************************************/
 INSTANCE ItPo_Health_01(C_Item)
 {
@@ -228,7 +228,7 @@ INSTANCE ItPo_Health_03(C_Item)
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS,	HP_Elixier);
 	};
 /******************************************************************************************/
-// TRƒNKE F‹R PERMANENTE ATTRIBUT-ƒNDERUNGEN!
+// TR√ÑNKE F√úR PERMANENTE ATTRIBUT-√ÑNDERUNGEN!
 /******************************************************************************************/
 INSTANCE ItPo_Perm_STR(C_Item)
 {
@@ -247,7 +247,7 @@ INSTANCE ItPo_Perm_STR(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Eliksir si≥y";
+	description		= 	"Eliksir si≈Çy";
 	
 	TEXT[1]			= 	NAME_Bonus_Str;				
 	COUNT[1]		= 	STR_Elixier;
@@ -278,7 +278,7 @@ INSTANCE ItPo_Perm_DEX(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Eliksir zrÍcznoúci";
+	description		= 	"Eliksir zrƒôczno≈õci";
 	TEXT[1]			= 	NAME_Bonus_Dex;
 	COUNT[1]		= 	DEX_Elixier;
 	TEXT[5]			= 	NAME_Value;					
@@ -306,7 +306,7 @@ INSTANCE ItPo_Perm_Health(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Eliksir øycia";
+	description		= 	"Eliksir ≈ºycia";
 	
 	TEXT[1]			= 	NAME_Bonus_HpMax;				
 	COUNT[1]		= 	HPMax_Elixier;
@@ -372,8 +372,8 @@ INSTANCE ItPo_Speed(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Mikstura szybkoúci";
-	TEXT[1]			= 	"Tymczasowo zwiÍksza twojπ szybkoúÊ.";
+	description		= 	"Mikstura szybko≈õci";
+	TEXT[1]			= 	"Tymczasowo zwiƒôksza twojƒÖ szybko≈õƒá.";
 	
 	TEXT[3]			= 	NAME_Duration;				
 	COUNT[3]		= 	Time_Speed/60000;
@@ -392,7 +392,7 @@ INSTANCE ItPo_Speed(C_Item)
 //	MegaDrink	Kapitel 6																      //
 /******************************************************************************************/
 
-INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor¥m Endgegner
+INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor¬¥m Endgegner
 {
 	name 			=	"Embarla Firgasto";
 
@@ -428,6 +428,6 @@ INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Drac
 					B_RaiseAttribute	(self, ATR_STRENGTH,	STRorDEX_MegaDrink);
 				};
 	
-			Npc_ChangeAttribute	(self,	ATR_MANA, - ATR_MANA); //Joly: gem‰ﬂ des Rezeptes
+			Npc_ChangeAttribute	(self,	ATR_MANA, - ATR_MANA); //Joly: gem√§√ü des Rezeptes
 			Snd_Play ("DEM_Warn");
 		};

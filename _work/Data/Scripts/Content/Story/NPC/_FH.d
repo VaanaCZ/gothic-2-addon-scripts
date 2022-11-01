@@ -6,7 +6,7 @@ INSTANCE FH (NPC_DEFAULT)
 	name			= "Face Helper";
 	Npctype			= NPCTYPE_FRIEND;
 	guild			= GIL_NONE;
-	level			= 999;			// real 15, aber 999 damit er nicht vor dem Brückegolem flieht!
+	level			= 999;			// real 15, aber 999 damit er nicht vor dem BrÃ¼ckegolem flieht!
 	voice			= 5;
 	id				= 1311;
 	flags			= 0;

@@ -1,7 +1,7 @@
 // ************************************
 // B_ReadySpell
 // ------------
-// FIX für 2 Probleme von AI_ReadySpell
+// FIX fÃ¼r 2 Probleme von AI_ReadySpell
 // ************************************
 
 func void B_ReadySpell(var C_NPC slf, var int spell, var int mana)
@@ -45,13 +45,13 @@ func void B_ReadySpell(var C_NPC slf, var int spell, var int mana)
 	// [EDENFELD] Dies ist ein Relikt aus alten Zeiten, auskommentiert!
 	//if (!Npc_IsInFightMode(slf, FMODE_NONE))				// wenn self irgendeine Waffe oder Spruch gezogen hat
 	//{
-		//AI_RemoveWeapon (slf);	// AI_ReadySpell DARF NIE zweimal hintereinander aufgerufen werden, ohne daß AI_RemoveWeapon dazwischen kommt (Fehler: "Only one MOB allowed without collision")
+		//AI_RemoveWeapon (slf);	// AI_ReadySpell DARF NIE zweimal hintereinander aufgerufen werden, ohne daÃŸ AI_RemoveWeapon dazwischen kommt (Fehler: "Only one MOB allowed without collision")
 	//}
 
 	// ------ Spruch ziehen ------
 	AI_ReadySpell (slf, spell, mana);
 	
-	// AI_ReadySpell() setzt voraus, daß
+	// AI_ReadySpell() setzt voraus, daÃŸ
 	// a) der NPC MANA_MAX > 0 hat (haben alle NSCs)
 	// b) der NPC die entsprechende Rune im Inventory hat, equippt wird sie automatisch
 };

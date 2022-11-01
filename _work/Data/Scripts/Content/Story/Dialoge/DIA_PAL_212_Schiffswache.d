@@ -29,7 +29,7 @@ instance DIA_Pal_212_Schiffswache_WERSEIDIHR		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Info;
 
-	description	 = 	"Kim jesteú?";
+	description	 = 	"Kim jeste≈õ?";
 };
 
 func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WERSEIDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Kim jesteúcie?
-	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Jesteúmy emisariuszami KrÛla Rhobara, s≥ugami Innosa, ludzie nazywajπ nas takøe paladynami.
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Kim jeste≈õcie?
+	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Jeste≈õmy emisariuszami Kr√≥la Rhobara, s≈Çugami Innosa, ludzie nazywajƒÖ nas tak≈ºe paladynami.
 };
 
 
@@ -72,16 +72,16 @@ func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Nie musisz wiedzieÊ nic wiÍcej poza tym, øe nie wejdziesz na statek.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Nie musisz wiedzieƒá nic wiƒôcej poza tym, ≈ºe nie wejdziesz na statek.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Zostaliúmy przydzieleni do pracy jako straønicy. Nikt z przechodniÛw nie moøe wejúÊ na statek. Ty teø nie, przykro mi.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Zostali≈õmy przydzieleni do pracy jako stra≈ºnicy. Nikt z przechodni√≥w nie mo≈ºe wej≈õƒá na statek. Ty te≈º nie, przykro mi.
 		};
 	}
 	else
 	{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //To wszystko strata czasu. Zdecydowanie bardziej wola≥bym wspomagaÊ mych braci w GÛrniczej Dolinie.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //To wszystko strata czasu. Zdecydowanie bardziej wola≈Çbym wspomagaƒá mych braci w G√≥rniczej Dolinie.
 	};
 	AI_StopProcessInfos (self);
 };

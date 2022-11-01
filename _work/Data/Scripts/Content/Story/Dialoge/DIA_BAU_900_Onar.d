@@ -40,7 +40,7 @@ FUNC INT DIA_Onar_Hallo_Condition()
 };
 FUNC VOID DIA_Onar_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Onar_Hallo_14_00"); //Kto ciê tu u licha wpuœci³?
+	AI_Output (self, other, "DIA_Onar_Hallo_14_00"); //Kto ciÄ™ tu u licha wpuÅ›ciÅ‚?
 	AI_Output (self, other, "DIA_Onar_Hallo_14_01"); //Co robisz na mojej farmie?!
 };
 
@@ -54,7 +54,7 @@ INSTANCE DIA_Onar_PERM (C_INFO)
 	condition   = DIA_Onar_PERM_Condition;
 	information = DIA_Onar_PERM_Info;
 	permanent   = TRUE;
-	description = "Czy na farmie wszystko w porz¹dku?";
+	description = "Czy na farmie wszystko w porzÄ…dku?";
 };
 FUNC INT DIA_Onar_PERM_Condition()
 {
@@ -62,32 +62,32 @@ FUNC INT DIA_Onar_PERM_Condition()
 };
 FUNC VOID DIA_Onar_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Onar_PERM_15_00"); //Czy na farmie wszystko w porz¹dku?
+	AI_Output (other, self, "DIA_Onar_PERM_15_00"); //Czy na farmie wszystko w porzÄ…dku?
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_01"); //A co ciê to obchodzi, przecie¿ tutaj nie pracujesz.
+		AI_Output (self, other, "DIA_Onar_PERM_14_01"); //A co ciÄ™ to obchodzi, przecieÅ¼ tutaj nie pracujesz.
 	};
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //Mam nadziejê! W koñcu p³acê ci za to, ¿eby wszystko by³o w porz¹dku.
-		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //Lepiej id¿ do Torlofa i pogadaj z nim, mo¿e znajdzie dla ciebie jak¹œ pracê.
+		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //Mam nadziejÄ™! W koÅ„cu pÅ‚acÄ™ ci za to, Å¼eby wszystko byÅ‚o w porzÄ…dku.
+		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //Lepiej idÅ¼ do Torlofa i pogadaj z nim, moÅ¼e znajdzie dla ciebie jakÄ…Å› pracÄ™.
 	};
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Taa, jasne. IdŸ i zajmij siê polowaniem na te swoje smoki.
+		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Taa, jasne. IdÅº i zajmij siÄ™ polowaniem na te swoje smoki.
 	};
 	
 	if (other.guild == GIL_NOV) || (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_05"); //Wy, œwiêtoszkowate dranie z klasztoru, nie macie tu czego szukaæ!
+		AI_Output (self, other, "DIA_Onar_PERM_14_05"); //Wy, Å›wiÄ™toszkowate dranie z klasztoru, nie macie tu czego szukaÄ‡!
 	};
 	
 	if (other.guild == GIL_MIL) || (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //Nie lubimy tu oddzia³ów królewskich, jeœli wiesz, co mam na myœli.
+		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //Nie lubimy tu oddziaÅ‚Ã³w krÃ³lewskich, jeÅ›li wiesz, co mam na myÅ›li.
 	};
 };
 
@@ -101,7 +101,7 @@ INSTANCE DIA_Onar_Work (C_INFO)
 	condition   = DIA_Onar_Work_Condition;
 	information = DIA_Onar_Work_Info;
 	permanent   = FALSE;
-	description = "Chcê dla ciebie pracowaæ!";
+	description = "ChcÄ™ dla ciebie pracowaÄ‡!";
 };
 FUNC INT DIA_Onar_Work_Condition()
 {
@@ -112,10 +112,10 @@ FUNC INT DIA_Onar_Work_Condition()
 };
 FUNC VOID DIA_Onar_Work_Info()
 {
-	AI_Output (other, self, "DIA_Onar_Work_15_00"); //Chcê dla ciebie pracowaæ!
-	AI_Output (self, other, "DIA_Onar_Work_14_01"); //Nie potrzebujê teraz nikogo.
-	AI_Output (self, other, "DIA_Onar_Work_14_02"); //Moi ludzie doskonale sobie ze wszystkim radz¹.
-	AI_Output (self, other, "DIA_Onar_Work_14_03"); //Nie masz tu czego szukaæ, wynocha!
+	AI_Output (other, self, "DIA_Onar_Work_15_00"); //ChcÄ™ dla ciebie pracowaÄ‡!
+	AI_Output (self, other, "DIA_Onar_Work_14_01"); //Nie potrzebujÄ™ teraz nikogo.
+	AI_Output (self, other, "DIA_Onar_Work_14_02"); //Moi ludzie doskonale sobie ze wszystkim radzÄ….
+	AI_Output (self, other, "DIA_Onar_Work_14_03"); //Nie masz tu czego szukaÄ‡, wynocha!
 };
 
 
@@ -129,7 +129,7 @@ INSTANCE DIA_Onar_WorkAsSld (C_INFO)
 	condition   = DIA_Onar_WorkAsSld_Condition;
 	information = DIA_Onar_WorkAsSld_Info;
 	permanent   = FALSE;
-	description = "Chcê pracowaæ jako najemnik.";
+	description = "ChcÄ™ pracowaÄ‡ jako najemnik.";
 };
 FUNC INT DIA_Onar_WorkAsSld_Condition()
 {
@@ -142,8 +142,8 @@ FUNC INT DIA_Onar_WorkAsSld_Condition()
 };
 FUNC VOID DIA_Onar_WorkAsSld_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //Chcê pracowaæ jako najemnik.
-	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Ty? Jako najemnik? Nie rozœmieszaj mnie! Gdybyœ nadawa³ siê na najemnika, Lee dawno by mi o tym powiedzia³.
+	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //ChcÄ™ pracowaÄ‡ jako najemnik.
+	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Ty? Jako najemnik? Nie rozÅ›mieszaj mnie! GdybyÅ› nadawaÅ‚ siÄ™ na najemnika, Lee dawno by mi o tym powiedziaÅ‚.
 	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_02"); //A teraz spadaj, migiem!
 	Onar_WegenSldWerden = TRUE;
 };
@@ -158,7 +158,7 @@ INSTANCE DIA_Onar_Aufstand (C_INFO)
 	condition   = DIA_Onar_Aufstand_Condition;
 	information = DIA_Onar_Aufstand_Info;
 	permanent   = FALSE;
-	description = "S³ysza³em, ¿e podburzasz ludzi przeciwko miastu.";
+	description = "SÅ‚yszaÅ‚em, Å¼e podburzasz ludzi przeciwko miastu.";
 };
 FUNC INT DIA_Onar_Aufstand_Condition()
 {
@@ -166,12 +166,12 @@ FUNC INT DIA_Onar_Aufstand_Condition()
 };
 FUNC VOID DIA_Onar_Aufstand_Info()
 {
-	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //S³ysza³em, ¿e podburzasz ludzi przeciwko miastu.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //S³uchaj no... Tê farmê, jak i ziemiê, na której stoi, odziedziczy³em po ojcu.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //On zaœ, odziedziczy³ j¹ po SWOIM.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //Nie mam zamiaru pozwoliæ kilku imbecylom, p³aszcz¹cym siê przed królem, na rozszabrowanie mego rodzinnego maj¹tku, tylko po to, by nakarmiæ wojska.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //Wojna z orkami trwa chyba od zawsze. A my gdzie jesteœmy? Na granicy pora¿ki!
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //O nie - wolê ju¿ sam broniæ farmy! Za pieni¹dze oszczêdzone w ten sposób móg³bym zebraæ swoj¹ w³asn¹, ma³¹ armiê.
+	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //SÅ‚yszaÅ‚em, Å¼e podburzasz ludzi przeciwko miastu.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //SÅ‚uchaj no... TÄ™ farmÄ™, jak i ziemiÄ™, na ktÃ³rej stoi, odziedziczyÅ‚em po ojcu.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //On zaÅ›, odziedziczyÅ‚ jÄ… po SWOIM.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //Nie mam zamiaru pozwoliÄ‡ kilku imbecylom, pÅ‚aszczÄ…cym siÄ™ przed krÃ³lem, na rozszabrowanie mego rodzinnego majÄ…tku, tylko po to, by nakarmiÄ‡ wojska.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //Wojna z orkami trwa chyba od zawsze. A my gdzie jesteÅ›my? Na granicy poraÅ¼ki!
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //O nie - wolÄ™ juÅ¼ sam broniÄ‡ farmy! Za pieniÄ…dze oszczÄ™dzone w ten sposÃ³b mÃ³gÅ‚bym zebraÄ‡ swojÄ… wÅ‚asnÄ…, maÅ‚Ä… armiÄ™.
 };
 
 // ************************************************************
@@ -184,7 +184,7 @@ INSTANCE DIA_Onar_WegenPepe (C_INFO)
 	condition   = DIA_Onar_WegenPepe_Condition;
 	information = DIA_Onar_WegenPepe_Info;
 	permanent   = FALSE;
-	description = "Dziêki Bullkowi masz teraz kilka owiec mniej.";
+	description = "DziÄ™ki Bullkowi masz teraz kilka owiec mniej.";
 };
 FUNC INT DIA_Onar_WegenPepe_Condition()
 {
@@ -195,11 +195,11 @@ FUNC INT DIA_Onar_WegenPepe_Condition()
 };
 FUNC VOID DIA_Onar_WegenPepe_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //Dziêki Bullkowi masz teraz kilka owiec mniej.
+	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //DziÄ™ki Bullkowi masz teraz kilka owiec mniej.
 	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //O czym ty gadasz? Kim jest Bullko?
-	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //To jeden z najemników.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //A co mnie do tego? Jeœli zabija moje owce, bêdzie mia³ do czynienia z Lee.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Nie zawracaj mi g³owy takimi trywialnymi drobnostkami.
+	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //To jeden z najemnikÃ³w.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //A co mnie do tego? JeÅ›li zabija moje owce, bÄ™dzie miaÅ‚ do czynienia z Lee.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Nie zawracaj mi gÅ‚owy takimi trywialnymi drobnostkami.
 	Onar_WegenPepe = TRUE;
 };
 
@@ -213,7 +213,7 @@ INSTANCE DIA_Onar_WegenSekob (C_INFO)
 	condition   = DIA_Onar_WegenSekob_Condition;
 	information = DIA_Onar_WegenSekob_Info;
 	permanent   = FALSE;
-	description = "Przychodzê w sprawie czynszu Sekoba...";
+	description = "PrzychodzÄ™ w sprawie czynszu Sekoba...";
 };
 FUNC INT DIA_Onar_WegenSekob_Condition()
 {
@@ -224,24 +224,24 @@ FUNC INT DIA_Onar_WegenSekob_Condition()
 };
 FUNC VOID DIA_Onar_WegenSekob_Info()
 {
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_00"); //Przychodzê w sprawie czynszu Sekoba...
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_00"); //PrzychodzÄ™ w sprawie czynszu Sekoba...
 
 	if (other.guild == GIL_SLD) || (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_WegenSekob_14_01"); //Czego do diab³a TUTAJ szukasz? Zanieœ pieni¹dze Torlofowi.
+		AI_Output (self, other, "DIA_Onar_WegenSekob_14_01"); //Czego do diabÅ‚a TUTAJ szukasz? ZanieÅ› pieniÄ…dze Torlofowi.
 	
 	}
 	else //GIL_NONE
 	{
-		AI_Output (self, other, "DIA_Onar_WegenSekob_14_02"); //Dlaczego, do czorta, uwa¿asz, ¿e to TWOJA sprawa?
-		AI_Output (other, self, "DIA_Onar_WegenSekob_15_03"); //Chcê zostaæ najemnikiem. Œci¹ganie czynszu to dla mnie pewnego rodzaju test.
+		AI_Output (self, other, "DIA_Onar_WegenSekob_14_02"); //Dlaczego, do czorta, uwaÅ¼asz, Å¼e to TWOJA sprawa?
+		AI_Output (other, self, "DIA_Onar_WegenSekob_15_03"); //ChcÄ™ zostaÄ‡ najemnikiem. ÅšciÄ…ganie czynszu to dla mnie pewnego rodzaju test.
 		Onar_WegenSldWerden = TRUE;
 	};
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //Tylko ¿e Sekob nie ma pieniêdzy. NieŸle go nawet poturbowa³em.
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Twierdzi, ¿e plony w tym roku s³abe.
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //Ty têpaku! Czy wydaje ci siê, ¿e bêdzie siê obnosi³ ze z³otem? Pewnie gdzieœ je ukry³!
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //Wiesz, jak czêsto pada tu deszcz? S³abe zbiory, dupa... nie s³abe zbiory.
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //Wracaj tam i wyduœ z niego forsê.
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //Tylko Å¼e Sekob nie ma pieniÄ™dzy. NieÅºle go nawet poturbowaÅ‚em.
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Twierdzi, Å¼e plony w tym roku sÅ‚abe.
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //Ty tÄ™paku! Czy wydaje ci siÄ™, Å¼e bÄ™dzie siÄ™ obnosiÅ‚ ze zÅ‚otem? Pewnie gdzieÅ› je ukryÅ‚!
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //Wiesz, jak czÄ™sto pada tu deszcz? SÅ‚abe zbiory, dupa... nie sÅ‚abe zbiory.
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //Wracaj tam i wyduÅ› z niego forsÄ™.
 	Onar_WegenSekob = TRUE;
 };
 
@@ -256,7 +256,7 @@ INSTANCE DIA_Onar_LeeSentMe   (C_INFO)
 	condition   = DIA_Onar_LeeSentMe_Condition;
 	information = DIA_Onar_LeeSentMe_Info;
 	permanent   = FALSE;
-	description = "Przysy³a mnie Lee. Chcê pracowaæ jako najemnik!";
+	description = "PrzysyÅ‚a mnie Lee. ChcÄ™ pracowaÄ‡ jako najemnik!";
 };
 FUNC INT DIA_Onar_LeeSentMe_Condition()
 {
@@ -268,22 +268,22 @@ FUNC INT DIA_Onar_LeeSentMe_Condition()
 };
 FUNC VOID DIA_Onar_LeeSentMe_Info()
 {
-	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //Przysy³a mnie Lee. Chcê pracowaæ jako najemnik!
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //Ju¿ z nim rozmawia³em.
+	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //PrzysyÅ‚a mnie Lee. ChcÄ™ pracowaÄ‡ jako najemnik!
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //JuÅ¼ z nim rozmawiaÅ‚em.
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //Jakoœ od samego pocz¹tku nie bardzo mi siê podoba³eœ.
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Ale... skoro Lee chce ci daæ szansê.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //JakoÅ› od samego poczÄ…tku nie bardzo mi siÄ™ podobaÅ‚eÅ›.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Ale... skoro Lee chce ci daÄ‡ szansÄ™.
 	};
 	
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //To on jest za ciebie odpowiedzialny. Niech ci bêdzie.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //Ale ¿adnego obijania siê! Trzymaj siê z dala od ch³opów, a i ³apy precz od dziewuch. A co najwa¿niejsze, nie próbuj nic kraœæ, kapujesz?
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //Wszystkie pozosta³e sprawy za³atwiaj z Lee.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //No, pozostaje NAM tylko omówiæ kwestiê twojego wynagrodzenia.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //To on jest za ciebie odpowiedzialny. Niech ci bÄ™dzie.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //Ale Å¼adnego obijania siÄ™! Trzymaj siÄ™ z dala od chÅ‚opÃ³w, a i Å‚apy precz od dziewuch. A co najwaÅ¼niejsze, nie prÃ³buj nic kraÅ›Ä‡, kapujesz?
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //Wszystkie pozostaÅ‚e sprawy zaÅ‚atwiaj z Lee.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //No, pozostaje NAM tylko omÃ³wiÄ‡ kwestiÄ™ twojego wynagrodzenia.
 
 	Onar_Approved = TRUE;
-	B_LogEntry (TOPIC_BecomeSLD,"Onar udzieli³ mi swojego poparcia. Teraz ju¿ na pewno wst¹piê w szeregi najemników.");
+	B_LogEntry (TOPIC_BecomeSLD,"Onar udzieliÅ‚ mi swojego poparcia. Teraz juÅ¼ na pewno wstÄ…piÄ™ w szeregi najemnikÃ³w.");
 };
 
 
@@ -302,7 +302,7 @@ INSTANCE DIA_Onar_HowMuch   (C_INFO)
 	condition   = DIA_Onar_HowMuch_Condition;
 	information = DIA_Onar_HowMuch_Info;
 	permanent   = FALSE;
-	description = "Co z moj¹ wyp³at¹?";
+	description = "Co z mojÄ… wypÅ‚atÄ…?";
 };
 FUNC INT DIA_Onar_HowMuch_Condition()
 {
@@ -313,78 +313,78 @@ FUNC INT DIA_Onar_HowMuch_Condition()
 };
 FUNC VOID DIA_Onar_HowMuch_Info()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_15_00"); //Co z moj¹ wyp³at¹?
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_01"); //Zastanówmy siê...
+	AI_Output (other, self, "DIA_Onar_HowMuch_15_00"); //Co z mojÄ… wypÅ‚atÄ…?
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_01"); //ZastanÃ³wmy siÄ™...
 	
 	SOLD = 50;
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_02"); //Nie za bardzo mi siê podobasz.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_02"); //Nie za bardzo mi siÄ™ podobasz.
 	};
 	
 	if (Onar_WegenSekob == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Nie nale¿ysz do moich najlepszych ludzi. Widaæ to choæby po tym, jak za³atwi³eœ sprawê z Sekobem.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Nie naleÅ¼ysz do moich najlepszych ludzi. WidaÄ‡ to choÄ‡by po tym, jak zaÅ‚atwiÅ‚eÅ› sprawÄ™ z Sekobem.
 		SOLD = SOLD - 10;
 	};
 	
 	if (ABSOLUTIONLEVEL_Farm > 1)
 	|| ( (B_GetGreatestPetzCrime (self) > CRIME_NONE) && (ABSOLUTIONLEVEL_Farm > 0) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //Problemy same siê za tob¹ pa³êtaj¹, nied³ugo rozwalisz mi farmê.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //Problemy same siÄ™ za tobÄ… paÅ‚Ä™tajÄ…, niedÅ‚ugo rozwalisz mi farmÄ™.
 		SOLD = SOLD - 10;
 	};
 	
 	if (Onar_WegenPepe == TRUE)
 	&& ( (Onar_WegenSekob == TRUE) || (Onar_WegenSldWerden == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_05"); //I jeszcze ci¹gle te gówniane pytania.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_05"); //I jeszcze ciÄ…gle te gÃ³wniane pytania.
 		SOLD = SOLD - 10;
 	};
 	
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_06"); //Niech no pomyœlê.
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_06"); //Niech no pomyÅ›lÄ™.
 	B_Say_Gold (self, other, SOLD);
 	
 	
 	Onar_SOLD_Day = Wld_GetDay();
 	Onar_SOLD_XP = other.exp;
 	
-	AI_Output (self, other, "DIA_Onar_HowMuch_14_07"); //Coœ tam mówi³?
+	AI_Output (self, other, "DIA_Onar_HowMuch_14_07"); //CoÅ› tam mÃ³wiÅ‚?
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
-	Info_AddChoice (DIA_Onar_HowMuch, "W porz¹dku!", DIA_Onar_HowMuch_Ok);
-	Info_AddChoice (DIA_Onar_HowMuch, "Nie jest tego du¿o.", DIA_Onar_HowMuch_More);
-	Info_AddChoice (DIA_Onar_HowMuch, "P³acisz za dzieñ?", DIA_Onar_HowMuch_PerDay);
+	Info_AddChoice (DIA_Onar_HowMuch, "W porzÄ…dku!", DIA_Onar_HowMuch_Ok);
+	Info_AddChoice (DIA_Onar_HowMuch, "Nie jest tego duÅ¼o.", DIA_Onar_HowMuch_More);
+	Info_AddChoice (DIA_Onar_HowMuch, "PÅ‚acisz za dzieÅ„?", DIA_Onar_HowMuch_PerDay);
 };
 
 func void DIA_Onar_HowMuch_PerDay()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_PerDay_15_00"); //P³acisz za dzieñ?
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_01"); //A myœla³eœ, ¿e co... Za tydzieñ? Chyba rzeczywiœcie nie jesteœ zbyt bystry.
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_02"); //Rusz wiêc dupsko i bierz pieni¹dze.
-	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_03"); //Nie bêdê ich za tob¹ nosi³.
+	AI_Output (other, self, "DIA_Onar_HowMuch_PerDay_15_00"); //PÅ‚acisz za dzieÅ„?
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_01"); //A myÅ›laÅ‚eÅ›, Å¼e co... Za tydzieÅ„? Chyba rzeczywiÅ›cie nie jesteÅ› zbyt bystry.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_02"); //Rusz wiÄ™c dupsko i bierz pieniÄ…dze.
+	AI_Output (self, other, "DIA_Onar_HowMuch_PerDay_14_03"); //Nie bÄ™dÄ™ ich za tobÄ… nosiÅ‚.
 };
 
 func void DIA_Onar_HowMuch_More()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //Nie jest tego du¿o.
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //Nie podoba siê? Mo¿esz zawsze popracowaæ dla mnie za darmo.
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Tak czy inaczej, wiêcej nie dostaniesz.
+	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //Nie jest tego duÅ¼o.
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //Nie podoba siÄ™? MoÅ¼esz zawsze popracowaÄ‡ dla mnie za darmo.
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Tak czy inaczej, wiÄ™cej nie dostaniesz.
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Onar bêdzie mi p³aci³ ka¿dego dnia.");
+	B_LogEntry (Topic_Bonus,"Onar bÄ™dzie mi pÅ‚aciÅ‚ kaÅ¼dego dnia.");
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 };
 	
 func void DIA_Onar_HowMuch_Ok()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_Ok_15_00"); //W porz¹dku!
-	AI_Output (self, other, "DIA_Onar_HowMuch_Ok_14_01"); //Te¿ tak uwa¿am. Teraz idŸ pogadaæ z Lee.
+	AI_Output (other, self, "DIA_Onar_HowMuch_Ok_15_00"); //W porzÄ…dku!
+	AI_Output (self, other, "DIA_Onar_HowMuch_Ok_14_01"); //TeÅ¼ tak uwaÅ¼am. Teraz idÅº pogadaÄ‡ z Lee.
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
-	B_LogEntry (Topic_Bonus,"Onar bêdzie mi p³aci³ ka¿dego dnia.");
+	B_LogEntry (Topic_Bonus,"Onar bÄ™dzie mi pÅ‚aciÅ‚ kaÅ¼dego dnia.");
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 };
@@ -400,7 +400,7 @@ INSTANCE DIA_Onar_CollectGold (C_INFO)
 	condition   = DIA_Onar_CollectGold_Condition;
 	information = DIA_Onar_CollectGold_Info;
 	permanent   = TRUE;
-	description = "Zap³aæ mi moj¹ tygodniówkê!";
+	description = "ZapÅ‚aÄ‡ mi mojÄ… tygodniÃ³wkÄ™!";
 };
 FUNC INT DIA_Onar_CollectGold_Condition()
 {
@@ -412,49 +412,49 @@ FUNC INT DIA_Onar_CollectGold_Condition()
 };
 FUNC VOID DIA_Onar_CollectGold_Info()
 {
-	AI_Output (other, self, "DIA_Onar_CollectGold_15_00"); //Zap³aæ mi moj¹ tygodniówkê!
+	AI_Output (other, self, "DIA_Onar_CollectGold_15_00"); //ZapÅ‚aÄ‡ mi mojÄ… tygodniÃ³wkÄ™!
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_01"); //P³acê najemnikom, nie ³owcom smoków.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_01"); //PÅ‚acÄ™ najemnikom, nie Å‚owcom smokÃ³w.
 	}
 	else if (Torlof_TheOtherMission_TooLate == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //Wygl¹da na to, ¿e nie obchodz¹ ciê zadania, które ci przydzieli³em.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //Poprosi³em Torlofa, by obserwowa³ twoje postêpy. Wygl¹da na to, ¿e wykonanie zadania sprawia ci wielkie problemy.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //Nie bêdê marnowa³ z³ota na obiboków.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //Pochodzisz kilka tygodni bez pieniêdzy! Mo¿e to ciê czegoœ nauczy!
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //WyglÄ…da na to, Å¼e nie obchodzÄ… ciÄ™ zadania, ktÃ³re ci przydzieliÅ‚em.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //PoprosiÅ‚em Torlofa, by obserwowaÅ‚ twoje postÄ™py. WyglÄ…da na to, Å¼e wykonanie zadania sprawia ci wielkie problemy.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //Nie bÄ™dÄ™ marnowaÅ‚ zÅ‚ota na obibokÃ³w.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //Pochodzisz kilka tygodni bez pieniÄ™dzy! MoÅ¼e to ciÄ™ czegoÅ› nauczy!
 	}
 	else if (B_GetGreatestPetzCrime(self) > CRIME_NONE)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_06"); //S³ysza³em, ¿e nawali³eœ. Pogadaj najpierw z Lee i za³atw sprawê.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_06"); //SÅ‚yszaÅ‚em, Å¼e nawaliÅ‚eÅ›. Pogadaj najpierw z Lee i zaÅ‚atw sprawÄ™.
 	}
 	else if (Wld_GetDay() <= Onar_SOLD_Day)
 	{
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //Ju¿ zupe³nie poprzewraca³o ci siê we ³bie?
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //Popracuj najpierw trochê. Nastêpn¹ wyp³atê dostaniesz najwczeœniej jutro.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //JuÅ¼ zupeÅ‚nie poprzewracaÅ‚o ci siÄ™ we Å‚bie?
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //Popracuj najpierw trochÄ™. NastÄ™pnÄ… wypÅ‚atÄ™ dostaniesz najwczeÅ›niej jutro.
 	}
 	else if (Wld_GetDay() - 2 >= Onar_SOLD_Day)
 	{
 		if (Wld_GetDay() - 2 == Onar_SOLD_Day)
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_09"); //Gdzieœ siê wczoraj podziewa³?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_09"); //GdzieÅ› siÄ™ wczoraj podziewaÅ‚?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_10"); //Gdzieœ siê podziewa³ przez ostatnie kilka dni?
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_10"); //GdzieÅ› siÄ™ podziewaÅ‚ przez ostatnie kilka dni?
 		};
 	
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Ani razu ciê tu nie widzia³em.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //A kto ciê wie, gdzie siê w³óczy³eœ.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Ani razu ciÄ™ tu nie widziaÅ‚em.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //A kto ciÄ™ wie, gdzie siÄ™ wÅ‚Ã³czyÅ‚eÅ›.
 		Onar_SOLD_Day = Wld_GetDay();
 		Onar_SOLD_XP = other.exp;
 	}
-	else //genau 1 Tag später...
+	else //genau 1 Tag spÃ¤ter...
 	{
 		if (other.exp > Onar_SOLD_XP + 200)
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_13"); //Ach tak. Oto twoje pieni¹dze.
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_13"); //Ach tak. Oto twoje pieniÄ…dze.
 			
 			//patch m.F. 
 			B_GiveInvItems (self, other, itmi_gold, SOLD);
@@ -462,8 +462,8 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 		}
 		else //nur gepennt
 		{
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Co? Ca³ymi dniami siê obijasz, a kiedy siê nie obijasz, to œpisz!
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //Za to nie bêdê p³aci³.
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Co? CaÅ‚ymi dniami siÄ™ obijasz, a kiedy siÄ™ nie obijasz, to Å›pisz!
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //Za to nie bÄ™dÄ™ pÅ‚aciÅ‚.
 		};
 		
 		Onar_SOLD_Day = Wld_GetDay();
@@ -482,7 +482,7 @@ INSTANCE DIA_Onar_MariaGold (C_INFO)
 	condition   = DIA_Onar_MariaGold_Condition;
 	information = DIA_Onar_MariaGold_Info;
 	permanent   = FALSE;
-	description = "Maria uwa¿a, ¿e za ma³o dostajê.";
+	description = "Maria uwaÅ¼a, Å¼e za maÅ‚o dostajÄ™.";
 };
 FUNC INT DIA_Onar_MariaGold_Condition()
 {
@@ -493,14 +493,14 @@ FUNC INT DIA_Onar_MariaGold_Condition()
 };
 FUNC VOID DIA_Onar_MariaGold_Info()
 {
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_00"); //Maria uwa¿a, ¿e za ma³o dostajê.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_01"); //¯e co?
-	AI_Output (other, self, "DIA_Onar_MariaGold_15_02"); //Powiedzia³a, ¿e powinieneœ lepiej mi p³aciæ.
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_00"); //Maria uwaÅ¼a, Å¼e za maÅ‚o dostajÄ™.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_01"); //Å»e co?
+	AI_Output (other, self, "DIA_Onar_MariaGold_15_02"); //PowiedziaÅ‚a, Å¼e powinieneÅ› lepiej mi pÅ‚aciÄ‡.
 	AI_Output (self, other, "DIA_Onar_MariaGold_14_03"); //Ta baba zdecydowanie wtyka nos w nie swoje sprawy.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //A nie powiedzia³a ile?
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //A nie powiedziaÅ‚a ile?
 	AI_Output (other, self, "DIA_Onar_MariaGold_15_05"); //Nie.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //Niech bêdzie. Od nastêpnej wyp³aty bêdziesz dostawa³ 10 sztuk z³ota wiêcej.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Ale ani miedziaka wiêcej, zrozumiano?
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //Niech bÄ™dzie. Od nastÄ™pnej wypÅ‚aty bÄ™dziesz dostawaÅ‚ 10 sztuk zÅ‚ota wiÄ™cej.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Ale ani miedziaka wiÄ™cej, zrozumiano?
 	
 	SOLD = SOLD + 10;
 };	
@@ -519,7 +519,7 @@ instance DIA_Onar_WannaSheep	(C_INFO)
 	condition	 = 	DIA_Onar_WannaSheep_Condition;
 	information	 = 	DIA_Onar_WannaSheep_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chcia³bym kupiæ owcê!";
+	description	 = 	"ChciaÅ‚bym kupiÄ‡ owcÄ™!";
 };
 func int DIA_Onar_WannaSheep_Condition ()
 {	
@@ -530,16 +530,16 @@ func int DIA_Onar_WannaSheep_Condition ()
 };
 func void DIA_Onar_WannaSheep_Info ()
 {
-	AI_Output (other, self, "DIA_Onar_WannaSheep_15_00"); //Chcia³bym kupiæ owcê!
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //Wiêc po coœ tu przylaz³? Widzisz tu gdzieœ owce?
+	AI_Output (other, self, "DIA_Onar_WannaSheep_15_00"); //ChciaÅ‚bym kupiÄ‡ owcÄ™!
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //WiÄ™c po coÅ› tu przylazÅ‚? Widzisz tu gdzieÅ› owce?
 	AI_Output (other, self, "DIA_Onar_WannaSheep_15_02"); //Ja tylko...
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //Jeœli chcesz kupiæ owcê, idŸ na pastwisko. To na prawo od mojego domu.
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //Niech Pepe sprzeda ci jedn¹.
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //JeÅ›li chcesz kupiÄ‡ owcÄ™, idÅº na pastwisko. To na prawo od mojego domu.
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //Niech Pepe sprzeda ci jednÄ….
 	
 	if (Npc_IsDead (Pepe))
 	{
-		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Obawiam siê, ¿e Pepe nie ¿yje.
-		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //Och! W takim razie... zostaw mi 200 sztuk z³ota i weŸ sobie jedn¹ owcê z pastwiska.
+		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Obawiam siÄ™, Å¼e Pepe nie Å¼yje.
+		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //Och! W takim razie... zostaw mi 200 sztuk zÅ‚ota i weÅº sobie jednÄ… owcÄ™ z pastwiska.
 		
 		Onar_SellSheep = TRUE;
 	};
@@ -555,7 +555,7 @@ instance DIA_Onar_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Onar_BuyLiesel_Condition;
 	information	 = 	DIA_Onar_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Proszê, oto 200 sztuk z³ota. Daj mi jedn¹ owcê.";
+	description	 = 	"ProszÄ™, oto 200 sztuk zÅ‚ota. Daj mi jednÄ… owcÄ™.";
 };
 func int DIA_Onar_BuyLiesel_Condition ()
 {	
@@ -566,12 +566,12 @@ func int DIA_Onar_BuyLiesel_Condition ()
 };
 func void DIA_Onar_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Proszê, oto 200 sztuk z³ota. Daj mi jedn¹ owcê.
+	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //ProszÄ™, oto 200 sztuk zÅ‚ota. Daj mi jednÄ… owcÄ™.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 200))
 	{
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //Mo¿esz wzi¹æ sobie jedn¹ z pastwiska.
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //Któraœ z owiec powinna za tob¹ pójœæ. Praktycznie wszystkie reaguj¹ na imiê Betsy.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //MoÅ¼esz wziÄ…Ä‡ sobie jednÄ… z pastwiska.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //KtÃ³raÅ› z owiec powinna za tobÄ… pÃ³jÅ›Ä‡. Praktycznie wszystkie reagujÄ… na imiÄ™ Betsy.
 		
 		Wld_InsertNpc	(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 	
@@ -579,6 +579,6 @@ func void DIA_Onar_BuyLiesel_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_03"); //Nie masz nawet dostatecznie du¿o z³ota. Wynocha, nie marnuj mojego cennego czasu.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_03"); //Nie masz nawet dostatecznie duÅ¼o zÅ‚ota. Wynocha, nie marnuj mojego cennego czasu.
 	};
 };

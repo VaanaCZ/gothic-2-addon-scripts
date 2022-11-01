@@ -76,11 +76,11 @@ func int DIA_Borka_PISSOFF_Condition ()
 };
 func void DIA_Borka_PISSOFF_Info ()
 {
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Ej, ty! Gdzie idziesz? Niewa¿ne, co zamierzasz - zd¹¿ysz zrobiæ to póŸniej.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Stoisz przed klejnotem Khorinis - CZERWON¥ LATARNI¥. To najcudowniejszy zamtuz w ca³ej Myrtanie, do diaska!
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //Zawijaj¹ tu ¿eglarze z najdalszych krañców œwiata, tylko po to, ¿eby spêdziæ kilka nocy pod Czerwon¹ Latarni¹.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //A teraz ty masz okazjê - nie, zaszczyt - spêdziæ noc z Nadi¹, najbardziej namiêtnym kwiatem stworzonym przez bogów!
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //WejdŸ, a zaznasz czegoœ, o czym inni nawet nie œnili!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Ej, ty! Gdzie idziesz? NiewaÅ¼ne, co zamierzasz - zdÄ…Å¼ysz zrobiÄ‡ to pÃ³Åºniej.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Stoisz przed klejnotem Khorinis - CZERWONÄ„ LATARNIÄ„. To najcudowniejszy zamtuz w caÅ‚ej Myrtanie, do diaska!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //ZawijajÄ… tu Å¼eglarze z najdalszych kraÅ„cÃ³w Å›wiata, tylko po to, Å¼eby spÄ™dziÄ‡ kilka nocy pod CzerwonÄ… LatarniÄ….
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //A teraz ty masz okazjÄ™ - nie, zaszczyt - spÄ™dziÄ‡ noc z NadiÄ…, najbardziej namiÄ™tnym kwiatem stworzonym przez bogÃ³w!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //WejdÅº, a zaznasz czegoÅ›, o czym inni nawet nie Å›nili!
 	
 	AI_StopProcessInfos (self);
 };
@@ -109,8 +109,8 @@ func int DIA_Borka_TROUBLE_Condition ()
 };
 func void DIA_Borka_TROUBLE_Info ()
 {
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Dlaczego tam tak stoisz? WejdŸ i spotkaj siê z nasz¹ namiêtn¹ Nadi¹.
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Ta rozpalona królowa nocy nada nowe znaczenie twojemu ¿yciu!
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Dlaczego tam tak stoisz? WejdÅº i spotkaj siÄ™ z naszÄ… namiÄ™tnÄ… NadiÄ….
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Ta rozpalona krÃ³lowa nocy nada nowe znaczenie twojemu Å¼yciu!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ instance DIA_Borka_Smoke		(C_INFO)
 	condition	 = 	DIA_Borka_Smoke_Condition;
 	information	 = 	DIA_Borka_Smoke_Info;
 	permanent	 =  TRUE;
-	description	 =  "Nie wiesz, gdzie móg³bym kupiæ trochê ziela?";
+	description	 =  "Nie wiesz, gdzie mÃ³gÅ‚bym kupiÄ‡ trochÄ™ ziela?";
 };
 
 func int DIA_Borka_Smoke_Condition ()
@@ -136,8 +136,8 @@ func int DIA_Borka_Smoke_Condition ()
 };
 func void DIA_Borka_Smoke_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Nie wiesz, gdzie móg³bym kupiæ trochê ziela?
-	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //Nie. Zje¿d¿aj!
+	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Nie wiesz, gdzie mÃ³gÅ‚bym kupiÄ‡ trochÄ™ ziela?
+	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //Nie. ZjeÅ¼dÅ¼aj!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -150,7 +150,7 @@ instance DIA_Borka_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Borka_BUYHERB_Condition;
 	information	 = 	DIA_Borka_BUYHERB_Info;
 	permanent 	 =  TRUE;
-	description	 = 	"S³ysza³em, ¿e sprzedajesz ziele.";
+	description	 = 	"SÅ‚yszaÅ‚em, Å¼e sprzedajesz ziele.";
 };
 func int DIA_Borka_BUYHERB_Condition ()
 {
@@ -166,34 +166,34 @@ func void DIA_Borka_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //S³ysza³em, ¿e sprzedajesz ziele.
+	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //SÅ‚yszaÅ‚em, Å¼e sprzedajesz ziele.
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_01"); //Przepraszam, panie Stra¿niku. To jakaœ pomy³ka. Ja nic nie wiem o zielu.
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_01"); //Przepraszam, panie StraÅ¼niku. To jakaÅ› pomyÅ‚ka. Ja nic nie wiem o zielu.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //Kto tak powiedzia³?
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //Kto tak powiedziaÅ‚?
 	
 		Info_ClearChoices 	(DIA_Borka_BUYHERB);
 		Info_AddChoice		(DIA_Borka_BUYHERB,"To nieistotne.",DIA_Borka_BUYHERB_Egal);
-		Info_AddChoice		(DIA_Borka_BUYHERB,"Tak mówi Nadja.",DIA_Borka_BUYHERB_Nadja);
+		Info_AddChoice		(DIA_Borka_BUYHERB,"Tak mÃ³wi Nadja.",DIA_Borka_BUYHERB_Nadja);
 	};
 };
 FUNC VOID DIA_Borka_BUYHERB_Egal ()
 {
 	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //To nieistotne.
-	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Chcê siê po prostu upewniæ, kto ciê przys³a³.
+	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //ChcÄ™ siÄ™ po prostu upewniÄ‡, kto ciÄ™ przysÅ‚aÅ‚.
 	
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
-	Info_AddChoice		(DIA_Borka_BUYHERB,"Tak mówi Nadja.",DIA_Borka_BUYHERB_Nadja);
-	Info_AddChoice		(DIA_Borka_BUYHERB,"No to chcesz dobiæ targu, czy nie?",DIA_Borka_BUYHERB_Deal);
+	Info_AddChoice		(DIA_Borka_BUYHERB,"Tak mÃ³wi Nadja.",DIA_Borka_BUYHERB_Nadja);
+	Info_AddChoice		(DIA_Borka_BUYHERB,"No to chcesz dobiÄ‡ targu, czy nie?",DIA_Borka_BUYHERB_Deal);
 };
 FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 {
-	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //Tak mówi Nadja.
-	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //No proszê, ma³y ptaszek zaœpiewa³. Wiesz co, nie powinieneœ wierzyæ we wszystko, co ta dziewka wygaduje.
+	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //Tak mÃ³wi Nadja.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //No proszÄ™, maÅ‚y ptaszek zaÅ›piewaÅ‚. Wiesz co, nie powinieneÅ› wierzyÄ‡ we wszystko, co ta dziewka wygaduje.
 	
 	Nadja_Victim = TRUE; 
 	Undercover_Failed = TRUE;
@@ -201,9 +201,9 @@ FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 };
 FUNC VOID DIA_Borka_BUYHERB_Deal ()
 {
-	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //No to chcesz dobiæ targu, czy nie?
+	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //No to chcesz dobiÄ‡ targu, czy nie?
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //...w porz¹dku... dogadajmy siê. Ty dajesz mi 50 sztuk z³ota, wtedy ja ci dajê ziele. Bez targowania siê.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //...w porzÄ…dku... dogadajmy siÄ™. Ty dajesz mi 50 sztuk zÅ‚ota, wtedy ja ci dajÄ™ ziele. Bez targowania siÄ™.
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
 	Borka_Deal = TRUE;
 };	
@@ -217,7 +217,7 @@ instance DIA_Borka_SECOND_CHANCE		(C_INFO)
 	condition	 = 	DIA_Borka_SECOND_CHANCE_Condition;
 	information	 = 	DIA_Borka_SECOND_CHANCE_Info;
 	permanent	 =  TRUE;  	
-	description	 = 	"Dogadajmy siê (zap³aæ 50 sztuk z³ota).";
+	description	 = 	"Dogadajmy siÄ™ (zapÅ‚aÄ‡ 50 sztuk zÅ‚ota).";
 };
 func int DIA_Borka_SECOND_CHANCE_Condition ()
 {	
@@ -232,11 +232,11 @@ func int DIA_Borka_SECOND_CHANCE_Condition ()
 };
 func void DIA_Borka_SECOND_CHANCE_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //Dobijmy targu. Tu mam z³oto.
+	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //Dobijmy targu. Tu mam zÅ‚oto.
 	B_GiveInvItems (hero, self, ItMi_Gold, 50);
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //W porz¹dku...
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //W porzÄ…dku...
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //...oto œwie¿a soczysta ³odyga ziela.
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //...oto Å›wieÅ¼a soczysta Å‚odyga ziela.
 	B_GiveInvItems (self, hero, ItMi_Joint, 1);
 	Borka_Deal = 2;
 	AI_StopProcessInfos (self);

@@ -19,7 +19,7 @@ instance VLK_417_Constantino (Npc_Default)
 	EquipItem (self, itmw_1h_bau_axe);
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Psionic.", Face_N_OldBald_Jeremiah, BodyTex_N, ITAR_SMITH);	

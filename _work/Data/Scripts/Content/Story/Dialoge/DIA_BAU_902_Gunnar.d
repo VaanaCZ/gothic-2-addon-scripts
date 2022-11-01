@@ -32,7 +32,7 @@ INSTANCE DIA_Gunnar_Hallo   (C_INFO)
 	condition   = DIA_Gunnar_Hallo_Condition;
 	information = DIA_Gunnar_Hallo_Info;
 	permanent   = TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Gunnar_Hallo_Condition()
 {
@@ -43,27 +43,27 @@ FUNC VOID DIA_Gunnar_Hallo_Info()
 	AI_Output (other, self, "DIA_Gunnar_Hallo_15_00"); //Co tam?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_01"); //Odk¹d Onar og³osi³, ¿e zatrudnia najemników, wszêdzie a¿ siê roi od opryszków.
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_02"); //Zlaz³a siê tutaj ca³a ho³ota, która wczeœniej nie mia³a odwagi wyleŸæ z lasu.
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_03"); //Teraz schodz¹ siê ze wszystkich stron.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_01"); //OdkÄ…d Onar ogÅ‚osiÅ‚, Å¼e zatrudnia najemnikÃ³w, wszÄ™dzie aÅ¼ siÄ™ roi od opryszkÃ³w.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_02"); //ZlazÅ‚a siÄ™ tutaj caÅ‚a hoÅ‚ota, ktÃ³ra wczeÅ›niej nie miaÅ‚a odwagi wyleÅºÄ‡ z lasu.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_03"); //Teraz schodzÄ… siÄ™ ze wszystkich stron.
 	};
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_04"); //A wiêc ty równie¿ jesteœ teraz najemnikiem?
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_04"); //A wiÄ™c ty rÃ³wnieÅ¼ jesteÅ› teraz najemnikiem?
 	};	
 	
 	if (other.guild == GIL_NOV)
 	|| (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_05"); //Niech Innos bêdzie z tob¹!
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_05"); //Niech Innos bÄ™dzie z tobÄ…!
 	};
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Gunnar_Hallo_10_06"); //Ludzie z miasta nie s¹ tu mile widziani.
+		AI_Output (self, other, "DIA_Gunnar_Hallo_10_06"); //Ludzie z miasta nie sÄ… tu mile widziani.
 	};
 	
 	Gunnar_HalloGesagt = TRUE;
@@ -79,7 +79,7 @@ INSTANCE DIA_Gunnar_Everywhere   (C_INFO)
 	condition   = DIA_Gunnar_Everywhere_Condition;
 	information = DIA_Gunnar_Everywhere_Info;
 	permanent   = TRUE;
-	description = "Najemnicy przybywaj¹ ze wszystkich stron?";
+	description = "Najemnicy przybywajÄ… ze wszystkich stron?";
 };
 FUNC INT DIA_Gunnar_Everywhere_Condition()
 {
@@ -90,14 +90,14 @@ FUNC INT DIA_Gunnar_Everywhere_Condition()
 };
 FUNC VOID DIA_Gunnar_Everywhere_Info()
 {
-	AI_Output (other, self, "DIA_Gunnar_Everywhere_15_00"); //Najemnicy przybywaj¹ ze wszystkich stron?
-	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_01"); //Wiêkszoœæ z nich pochodzi z kolonii karnej.
-	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_02"); //Inna grupa najemników przyby³a z po³udnia, gdzie pewnie ugania³a siê za orkami.
-	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_03"); //Za³o¿ê siê, ¿e paru bandytów opuœci³o góry, ¿eby tutaj przybyæ! Zwabi³o ich darmowe ¿arcie!
+	AI_Output (other, self, "DIA_Gunnar_Everywhere_15_00"); //Najemnicy przybywajÄ… ze wszystkich stron?
+	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_01"); //WiÄ™kszoÅ›Ä‡ z nich pochodzi z kolonii karnej.
+	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_02"); //Inna grupa najemnikÃ³w przybyÅ‚a z poÅ‚udnia, gdzie pewnie uganiaÅ‚a siÄ™ za orkami.
+	AI_Output (self, other, "DIA_Gunnar_Everywhere_10_03"); //ZaÅ‚oÅ¼Ä™ siÄ™, Å¼e paru bandytÃ³w opuÅ›ciÅ‚o gÃ³ry, Å¼eby tutaj przybyÄ‡! ZwabiÅ‚o ich darmowe Å¼arcie!
 };
 
 // ************************************************************
-// 			  			Aud dem Süden
+// 			  			Aud dem SÃ¼den
 // ************************************************************
 INSTANCE DIA_Gunnar_South (C_INFO)
 {
@@ -106,7 +106,7 @@ INSTANCE DIA_Gunnar_South (C_INFO)
 	condition   = DIA_Gunnar_South_Condition;
 	information = DIA_Gunnar_South_Info;
 	permanent   = TRUE;
-	description = "Co wiesz na temat najemników z po³udnia?";
+	description = "Co wiesz na temat najemnikÃ³w z poÅ‚udnia?";
 };
 FUNC INT DIA_Gunnar_South_Condition()
 {
@@ -117,8 +117,8 @@ FUNC INT DIA_Gunnar_South_Condition()
 };
 FUNC VOID DIA_Gunnar_South_Info()
 {
-	AI_Output (other, self, "DIA_Gunnar_South_15_00"); //Co wiesz na temat najemników z po³udnia?
-	AI_Output (self, other, "DIA_Gunnar_South_10_01"); //Niewiele. Z tego co wiem, polowali tam na orków.
+	AI_Output (other, self, "DIA_Gunnar_South_15_00"); //Co wiesz na temat najemnikÃ³w z poÅ‚udnia?
+	AI_Output (self, other, "DIA_Gunnar_South_10_01"); //Niewiele. Z tego co wiem, polowali tam na orkÃ³w.
 	AI_Output (self, other, "DIA_Gunnar_South_10_02"); //Ich szefem jest Sylvio. Bullko, Sentenza, Raoul i paru innych to jego ludzie.
 };
 
@@ -157,7 +157,7 @@ INSTANCE DIA_Gunnar_Bandits (C_INFO)
 	condition   = DIA_Gunnar_Bandits_Condition;
 	information = DIA_Gunnar_Bandits_Info;
 	permanent   = TRUE;
-	description = "O jakich bandytów ci chodzi?";
+	description = "O jakich bandytÃ³w ci chodzi?";
 };
 FUNC INT DIA_Gunnar_Bandits_Condition()
 {
@@ -168,11 +168,11 @@ FUNC INT DIA_Gunnar_Bandits_Condition()
 };
 FUNC VOID DIA_Gunnar_Bandits_Info()
 {
-	AI_Output (other, self, "DIA_Gunnar_Bandits_15_00"); //O jakich bandytów ci chodzi?
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_01"); //Tak tylko gadam. Tak naprawdê nie jestem do koñca pewien.
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_02"); //Na po³udniu znajduj¹ siê opuszczone kopalnie. W niektórych ukrywaj¹ siê bandyci.
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_03"); //Oni równie¿ s¹ skazañcami z Kolonii, tak jak wiêkszoœæ najemników, których tutaj spotkasz.
-	AI_Output (self, other, "DIA_Gunnar_Bandits_10_04"); //Jedyna ró¿nica polega na tym, ¿e to jeszcze gorsze œcierwo. Zabij¹ ka¿dego, kto podejdzie zbyt blisko.
+	AI_Output (other, self, "DIA_Gunnar_Bandits_15_00"); //O jakich bandytÃ³w ci chodzi?
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_01"); //Tak tylko gadam. Tak naprawdÄ™ nie jestem do koÅ„ca pewien.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_02"); //Na poÅ‚udniu znajdujÄ… siÄ™ opuszczone kopalnie. W niektÃ³rych ukrywajÄ… siÄ™ bandyci.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_03"); //Oni rÃ³wnieÅ¼ sÄ… skazaÅ„cami z Kolonii, tak jak wiÄ™kszoÅ›Ä‡ najemnikÃ³w, ktÃ³rych tutaj spotkasz.
+	AI_Output (self, other, "DIA_Gunnar_Bandits_10_04"); //Jedyna rÃ³Å¼nica polega na tym, Å¼e to jeszcze gorsze Å›cierwo. ZabijÄ… kaÅ¼dego, kto podejdzie zbyt blisko.
 };
 
 

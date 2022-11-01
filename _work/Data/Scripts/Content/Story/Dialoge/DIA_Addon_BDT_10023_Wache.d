@@ -39,17 +39,17 @@ FUNC INT DIA_Addon_10023_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10023_Wache_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Hej, dok¹d idziesz? Zamierzasz ruszyæ t¹ œcie¿k¹?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Hej, dokÄ…d idziesz? Zamierzasz ruszyÄ‡ tÄ… Å›cieÅ¼kÄ…?
 	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//No tak, dlaczego nie?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//Na dole jest wiêcej niewolników. Nie bij ich za bardzo, jeœli nie s¹ w stanie pracowaæ.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//Nie chcemy, ¿eby siê obijali. Maj¹ wydobywaæ z³oto.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//Rozumiem, a kto tak kaza³?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//Na dole jest wiÄ™cej niewolnikÃ³w. Nie bij ich za bardzo, jeÅ›li nie sÄ… w stanie pracowaÄ‡.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//Nie chcemy, Å¼eby siÄ™ obijali. MajÄ… wydobywaÄ‡ zÅ‚oto.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//Rozumiem, a kto tak kazaÅ‚?
 	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//To rozkaz Bloodwyna.
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//Wydawa³o mi siê, ¿e szefem jest tu Kruk.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//To prawda. Niewolników da³ jednak w prezencie Bloodwynowi. Ju¿ ich nie potrzebuje.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//WydawaÅ‚o mi siÄ™, Å¼e szefem jest tu Kruk.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//To prawda. NiewolnikÃ³w daÅ‚ jednak w prezencie Bloodwynowi. JuÅ¼ ich nie potrzebuje.
 	
 	Pardos.attribute[ATR_HITPOINTS] 		= 70;
-	B_LogEntry (Topic_Addon_Sklaven,"Kruk nie potrzebuje ju¿ niewolników. Teraz ich w³aœcicielem jest Bloodwyn."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Kruk nie potrzebuje juÅ¼ niewolnikÃ³w. Teraz ich wÅ‚aÅ›cicielem jest Bloodwyn."); 
 };
 //---------------------------------------------------------------------
 //	Info go
@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_10023_Wache_go   (C_INFO)
 	condition   = DIA_Addon_10023_Wache_go_Condition;
 	information = DIA_Addon_10023_Wache_go_Info;
 	permanent   = TRUE;
-	description = "Uwolnij niewolników!";
+	description = "Uwolnij niewolnikÃ³w!";
 };
 FUNC INT DIA_Addon_10023_Wache_go_Condition()
 {	
@@ -71,32 +71,32 @@ FUNC INT DIA_Addon_10023_Wache_go_Condition()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_Info()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_15_00");//Uwolnij niewolników!
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_15_00");//Uwolnij niewolnikÃ³w!
 	
 	if (PrisonGuard_Rules == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//S³uchaj, rozkazy wydaje tu Bloodwyn. Niewolnicy s¹ jego w³asnoœci¹ i tylko on mo¿e ich uwolniæ.
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//Poza tym Thorus tak¿e ma tutaj pewn¹ w³adzê. A ty co robisz?
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//SÅ‚uchaj, rozkazy wydaje tu Bloodwyn. Niewolnicy sÄ… jego wÅ‚asnoÅ›ciÄ… i tylko on moÅ¼e ich uwolniÄ‡.
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//Poza tym Thorus takÅ¼e ma tutaj pewnÄ… wÅ‚adzÄ™. A ty co robisz?
 		PrisonGuard_Rules = TRUE;
-		B_LogEntry (Topic_Addon_Sklaven,"Tylko Bloodwyn i Thorus mog¹ pozwoliæ na uwolnienie niewolników.");
+		B_LogEntry (Topic_Addon_Sklaven,"Tylko Bloodwyn i Thorus mogÄ… pozwoliÄ‡ na uwolnienie niewolnikÃ³w.");
 	};
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_03");//Sprawujesz tu jak¹œ wa¿n¹ funkcjê?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_03");//Sprawujesz tu jakÄ…Å› waÅ¼nÄ… funkcjÄ™?
 	
 	Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	Info_AddChoice (DIA_Addon_10023_Wache_go,DIALOG_BACK,DIA_Addon_10023_Wache_go_BACK);
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Thorus_Answer)
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"Rozmawia³em z Thorusem.",DIA_Addon_10023_Wache_go_Thorus);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"RozmawiaÅ‚em z Thorusem.",DIA_Addon_10023_Wache_go_Thorus);
 	}
 	else if Npc_IsDead (Bloodwyn)
 	&& (Npc_HasItems (other,ItMi_Addon_Bloodwyn_Kopf) >=1)
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"(Poka¿ g³owê Bloodwyna)",DIA_Addon_10023_Wache_go_Blood);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"(PokaÅ¼ gÅ‚owÄ™ Bloodwyna)",DIA_Addon_10023_Wache_go_Blood);
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"To ja decydujê, KTO mo¿e wejœæ do kopalni.",DIA_Addon_10023_Wache_go_WER);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"To ja decydujÄ™, KTO moÅ¼e wejÅ›Ä‡ do kopalni.",DIA_Addon_10023_Wache_go_WER);
 	};
 };	
 FUNC VOID DIA_Addon_10023_Wache_go_BACK()
@@ -105,8 +105,8 @@ FUNC VOID DIA_Addon_10023_Wache_go_BACK()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_WER()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_WER_15_00");//To ja decydujê, KTO mo¿e wejœæ do kopalni.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_WER_11_01");//A zatem wykonujesz teraz pracê Estebana. A to oznacza, ¿e nie masz tu ¯ADNYCH wp³ywów. Zje¿d¿aj.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_WER_15_00");//To ja decydujÄ™, KTO moÅ¼e wejÅ›Ä‡ do kopalni.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_WER_11_01");//A zatem wykonujesz teraz pracÄ™ Estebana. A to oznacza, Å¼e nie masz tu Å»ADNYCH wpÅ‚ywÃ³w. ZjeÅ¼dÅ¼aj.
 	Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 };
 //----------------------------------------
@@ -116,28 +116,28 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 {
 	
 	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//Wystarczy?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//Nie chcê TEGO ogl¹daæ!
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Lepiej bêdzie, jak NATYCHMIAST uwolnisz niewolników.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//S³uchaj, nie mogê nikogo wypuœciæ, jeœli nie mam takiego rozkazu od Thorusa.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//Nie chcÄ™ TEGO oglÄ…daÄ‡!
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Lepiej bÄ™dzie, jak NATYCHMIAST uwolnisz niewolnikÃ³w.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//SÅ‚uchaj, nie mogÄ™ nikogo wypuÅ›ciÄ‡, jeÅ›li nie mam takiego rozkazu od Thorusa.
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Thorus_Answer)
 	{
 		Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
-		Info_AddChoice (DIA_Addon_10023_Wache_go,"Rozmawia³em z Thorusem.",DIA_Addon_10023_Wache_go_Thorus);
+		Info_AddChoice (DIA_Addon_10023_Wache_go,"RozmawiaÅ‚em z Thorusem.",DIA_Addon_10023_Wache_go_Thorus);
 	}
 	else
 	{
 		if (Wache_einmal == FALSE)
 		{
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//Mówi³eœ, ¿e niewolnicy nale¿¹ do Bloodwyna.
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//Tak. Ale wspomina³em te¿, ¿e nie mogê ich zwolniæ bez pozwolenia Thorusa.
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//Jesteœ z tych typów, którzy nawet nie pójd¹ siê odlaæ bez pozwolenia, co?
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//MÃ³wiÅ‚eÅ›, Å¼e niewolnicy naleÅ¼Ä… do Bloodwyna.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//Tak. Ale wspominaÅ‚em teÅ¼, Å¼e nie mogÄ™ ich zwolniÄ‡ bez pozwolenia Thorusa.
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//JesteÅ› z tych typÃ³w, ktÃ³rzy nawet nie pÃ³jdÄ… siÄ™ odlaÄ‡ bez pozwolenia, co?
 			Wache_einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//No có¿, wspomnia³em, ¿e...
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//...dobrze, daruj sobie resztê.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//No cÃ³Å¼, wspomniaÅ‚em, Å¼e...
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//...dobrze, daruj sobie resztÄ™.
 		};
 		Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	}; 
@@ -146,10 +146,10 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 };
 FUNC VOID DIA_Addon_10023_Wache_go_Thorus()
 {
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//Rozmawia³em z Thorusem. Masz uwolniæ niewolników.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//Dobrze, jeœli tak sobie ¿yczy Thorus. Zastanawia mnie, dlaczego wyda³ taki rozkaz...
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//...ale nie p³ac¹ ci za zadawanie pytañ.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Dobrze, dobrze - widzê, ¿e nie mam ju¿ kogo pilnowaæ. Idê zjeœæ trochê tej smacznej zupy.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//RozmawiaÅ‚em z Thorusem. Masz uwolniÄ‡ niewolnikÃ³w.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//Dobrze, jeÅ›li tak sobie Å¼yczy Thorus. Zastanawia mnie, dlaczego wydaÅ‚ taki rozkaz...
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//...ale nie pÅ‚acÄ… ci za zadawanie pytaÅ„.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Dobrze, dobrze - widzÄ™, Å¼e nie mam juÅ¼ kogo pilnowaÄ‡. IdÄ™ zjeÅ›Ä‡ trochÄ™ tej smacznej zupy.
 	
 	Ready_Togo = TRUE;
 	AI_StopProcessInfos (self);

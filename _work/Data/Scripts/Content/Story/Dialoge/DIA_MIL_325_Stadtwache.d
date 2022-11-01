@@ -58,8 +58,8 @@ func int DIA_Mil_325_Miliz_FirstWarn_Condition()
 
 func void DIA_Mil_325_Miliz_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //STÓJ!
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Nikt nie mo¿e wejœæ do magazynu.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //STÃ“J!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Nikt nie moÅ¼e wejÅ›Ä‡ do magazynu.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Mil_325_Miliz_SecondWarn_Condition()
 
 func void DIA_Mil_325_Miliz_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //G³uchy jesteœ? Jeden krok dalej, a posiekam ciê na kawa³ki.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //GÅ‚uchy jesteÅ›? Jeden krok dalej, a posiekam ciÄ™ na kawaÅ‚ki.
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -130,7 +130,7 @@ func void DIA_Mil_325_Miliz_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //To by³ b³¹d!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //To byÅ‚ bÅ‚Ä…d!
 	
 	AI_StopProcessInfos	(self);		
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -148,7 +148,7 @@ INSTANCE DIA_Mil_325_Miliz_Pass (C_INFO)
 	condition	= DIA_Mil_325_Miliz_Pass_Condition;
 	information	= DIA_Mil_325_Miliz_Pass_Info;
 	permanent	= FALSE;
-	description	= "Nale¿ê do armii królewskiej. Potrzebujê wyposa¿enia!";
+	description	= "NaleÅ¼Ä™ do armii krÃ³lewskiej. PotrzebujÄ™ wyposaÅ¼enia!";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
@@ -162,8 +162,8 @@ FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
 	
 func void DIA_Mil_325_Miliz_Pass_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Nale¿ê do armii królewskiej. Potrzebujê wyposa¿enia!
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //Masz na to jakieœ potwierdzenie?
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //NaleÅ¼Ä™ do armii krÃ³lewskiej. PotrzebujÄ™ wyposaÅ¼enia!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //Masz na to jakieÅ› potwierdzenie?
 	
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Nie.", DIA_Mil_325_Miliz_Pass_No);
@@ -172,8 +172,8 @@ func void DIA_Mil_325_Miliz_Pass_Info()
 
 func void DIA_Mil_325_Miliz_Pass_Yes()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //Oczywiœcie.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //W porz¹dku, mo¿esz wejœæ!
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //OczywiÅ›cie.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //W porzÄ…dku, moÅ¼esz wejÅ›Ä‡!
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
@@ -182,7 +182,7 @@ func void DIA_Mil_325_Miliz_Pass_Yes()
 func void DIA_Mil_325_Miliz_Pass_No()
 {
 	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_No_15_00"); //Nie.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_No_12_01"); //W takim razie wynoœ siê.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_No_12_01"); //W takim razie wynoÅ› siÄ™.
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
 };
@@ -199,7 +199,7 @@ INSTANCE DIA_Mil_325_Miliz_PERM (C_INFO)
 	condition	= DIA_Mil_325_Miliz_PERM_Condition;
 	information	= DIA_Mil_325_Miliz_PERM_Info;
 	permanent	= TRUE;
-	description	= "Dlaczego nikt nie mo¿e wejœæ do magazynu?";
+	description	= "Dlaczego nikt nie moÅ¼e wejÅ›Ä‡ do magazynu?";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
@@ -209,8 +209,8 @@ FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
 	
 func void DIA_Mil_325_Miliz_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Dlaczego nikt nie mo¿e wejœæ do magazynu?
-	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //Mi³oœciwy Lord Hagen skonfiskowa³ wszystko na potrzeby armii królewskiej.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Dlaczego nikt nie moÅ¼e wejÅ›Ä‡ do magazynu?
+	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //MiÅ‚oÅ›ciwy Lord Hagen skonfiskowaÅ‚ wszystko na potrzeby armii krÃ³lewskiej.
 };
 
 

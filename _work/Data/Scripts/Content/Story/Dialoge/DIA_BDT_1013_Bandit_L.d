@@ -20,7 +20,7 @@ FUNC VOID DIA_BDT_1013_BANDIT_FIRSTEXIT_Info()
 	&& (!Npc_IsDead (Ambusher_1014)) 
 	&& (!Npc_IsDead (Ambusher_1015))
 	{
-		AI_Output	(self, other, "DIA_BDT_1013_BANDIT_FIRSTEXIT_01_00"); //Na twoim miejscu trzyma³bym siê z dala od jaskini tam, na górze. Moi kumple mog¹ ci nieŸle osmaliæ ty³ek. A wierz mi, na bitce to oni siê znaj¹.
+		AI_Output	(self, other, "DIA_BDT_1013_BANDIT_FIRSTEXIT_01_00"); //Na twoim miejscu trzymaÅ‚bym siÄ™ z dala od jaskini tam, na gÃ³rze. Moi kumple mogÄ… ci nieÅºle osmaliÄ‡ tyÅ‚ek. A wierz mi, na bitce to oni siÄ™ znajÄ….
 	};
 	
 	AI_StopProcessInfos (self);
@@ -68,33 +68,33 @@ func int DIA_BDT_1013_BANDIT_WHERE_Condition ()
 
 func void DIA_BDT_1013_BANDIT_WHERE_Info ()
 {
-	AI_Output			(self, other, "DIA_BDT_1013_BANDIT_WHERE_01_00"); //Hej - sk¹d siê tu wzi¹³eœ, co?
+	AI_Output			(self, other, "DIA_BDT_1013_BANDIT_WHERE_01_00"); //Hej - skÄ…d siÄ™ tu wziÄ…Å‚eÅ›, co?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
 	
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Przybywam z gór.",DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN);	
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Przysy³a mnie Xardas...",DIA_BDT_1013_BANDIT_WHERE_XARDAS);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Przybywam z gÃ³r.",DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN);	
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"PrzysyÅ‚a mnie Xardas...",DIA_BDT_1013_BANDIT_WHERE_XARDAS);
 };
 //-------------------------------------------------------------------------------------------
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_15_00"); //Przybywam z gór.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_01"); //No w³aœnie, przybywasz z gór. To Ÿle.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_15_00"); //Przybywam z gÃ³r.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_01"); //No wÅ‚aÅ›nie, przybywasz z gÃ³r. To Åºle.
 	B_UseFakeScroll();
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_02"); //Bardzo Ÿle.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_03"); //Szukaj¹ ciê - ca³a zgraja naprawdê z³ych ludzi.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_04"); //Jest tu ktoœ, z kim musisz natychmiast porozmawiaæ. ChodŸ za mn¹!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_02"); //Bardzo Åºle.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_03"); //SzukajÄ… ciÄ™ - caÅ‚a zgraja naprawdÄ™ zÅ‚ych ludzi.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_MOUNTAIN_01_04"); //Jest tu ktoÅ›, z kim musisz natychmiast porozmawiaÄ‡. ChodÅº za mnÄ…!
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo¿e póŸniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Komu tak bardzo na mnie zale¿y?",DIA_BDT_1013_BANDIT_WHERE_WHO);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porz¹dku, prowadŸ.",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"MoÅ¼e pÃ³Åºniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Komu tak bardzo na mnie zaleÅ¼y?",DIA_BDT_1013_BANDIT_WHERE_WHO);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porzÄ…dku, prowadÅº.",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_XARDAS()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_15_00"); //Przysy³a mnie Xardas...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01"); //Stary czarodziej? Nazywa siê Xardas... Braga z pewnoœci¹ to zainteresuje.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_15_00"); //PrzysyÅ‚a mnie Xardas...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_XARDAS_01_01"); //Stary czarodziej? Nazywa siÄ™ Xardas... Braga z pewnoÅ›ciÄ… to zainteresuje.
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -102,8 +102,8 @@ FUNC VOID DIA_BDT_1013_BANDIT_WHERE_XARDAS()
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_YES()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_YES_15_00"); //W porz¹dku, prowadŸ.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_YES_01_01"); //No dobra, chodŸ za mn¹. Jaskinia jest niedaleko.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_YES_15_00"); //W porzÄ…dku, prowadÅº.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_YES_01_01"); //No dobra, chodÅº za mnÄ…. Jaskinia jest niedaleko.
 	
 	Npc_ExchangeRoutine	(self,"AMBUSH"); 
 	
@@ -112,66 +112,66 @@ FUNC VOID DIA_BDT_1013_BANDIT_WHERE_YES()
 
 FUNC VOID DIA_BDT_1013_BANDIT_WHERE_WHO()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_WHO_15_00"); //Komu tak bardzo na mnie zale¿y?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_01"); //Po³owa Khorinis siê za tob¹ ugania, nie powiesz mi chyba, ¿e nie masz o tym zielonego pojêcia?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02"); //Ach! Rozumiem! Nie chcesz o tym gadaæ, co? W porz¹dku - twoja sprawa.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_WHO_15_00"); //Komu tak bardzo na mnie zaleÅ¼y?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_01"); //PoÅ‚owa Khorinis siÄ™ za tobÄ… ugania, nie powiesz mi chyba, Å¼e nie masz o tym zielonego pojÄ™cia?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_02"); //Ach! Rozumiem! Nie chcesz o tym gadaÄ‡, co? W porzÄ…dku - twoja sprawa.
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_WHO_01_03"); //To jak, idziesz czy nie?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo¿e póŸniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Z kim powinienem porozmawiaæ?",DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porz¹dku, prowadŸ.",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"MoÅ¼e pÃ³Åºniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Z kim powinienem porozmawiaÄ‡?",DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porzÄ…dku, prowadÅº.",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_15_00"); //Z kim powinienem porozmawiaæ?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_01"); //Z moim szefem. Nazywa siê Brago. On wyjaœni ci wszystko o wiele lepiej ni¿ ja.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_02"); //No wiêc jak - idziemy?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_15_00"); //Z kim powinienem porozmawiaÄ‡?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_01"); //Z moim szefem. Nazywa siÄ™ Brago. On wyjaÅ›ni ci wszystko o wiele lepiej niÅ¼ ja.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_TALKPARTNER_01_02"); //No wiÄ™c jak - idziemy?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo¿e póŸniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Sk¹d mam wiedzieæ, ¿e to nie jest pu³apka?",DIA_BDT_1013_BANDIT_WHERE_NOTRAP);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porz¹dku, prowadŸ.",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"MoÅ¼e pÃ³Åºniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"SkÄ…d mam wiedzieÄ‡, Å¼e to nie jest puÅ‚apka?",DIA_BDT_1013_BANDIT_WHERE_NOTRAP);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porzÄ…dku, prowadÅº.",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 	
 func void DIA_BDT_1013_BANDIT_WHERE_NOTRAP()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_15_00"); //Sk¹d mam wiedzieæ, ¿e to nie jest pu³apka?
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_01"); //Wiesz, zaczynasz mnie ju¿ mêczyæ. Jeœli nie chcesz pomocy, to idŸ do miasta, niech ciê zapuszkuj¹!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02"); //Albo NATYCHMIAST ze mn¹ pójdziesz, albo zejdŸ mi z oczu, ³apiesz?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_15_00"); //SkÄ…d mam wiedzieÄ‡, Å¼e to nie jest puÅ‚apka?
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_01"); //Wiesz, zaczynasz mnie juÅ¼ mÄ™czyÄ‡. JeÅ›li nie chcesz pomocy, to idÅº do miasta, niech ciÄ™ zapuszkujÄ…!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTRAP_01_02"); //Albo NATYCHMIAST ze mnÄ… pÃ³jdziesz, albo zejdÅº mi z oczu, Å‚apiesz?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo¿e póŸniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Ktoœ ju¿ próbowa³ mnie wyko³owaæ...",DIA_BDT_1013_BANDIT_WHERE_DAMALS);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porz¹dku, prowadŸ.",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"MoÅ¼e pÃ³Åºniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"KtoÅ› juÅ¼ prÃ³bowaÅ‚ mnie wykoÅ‚owaÄ‡...",DIA_BDT_1013_BANDIT_WHERE_DAMALS);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porzÄ…dku, prowadÅº.",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_DAMALS()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00"); //Spokojnie, przyjacielu! Ktoœ ju¿ próbowa³ mnie wyko³owaæ...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_01"); //Czy¿by?
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02"); //Pewien cz³owiek chcia³, ¿ebyœmy odzyskali razem amulet, a zyskami podzielili siê po po³owie.
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03"); //Kiedy ju¿ wykonaliœmy zadanie, on i banda jego kole¿ków zaatakowali mnie.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_04"); //Wygl¹da na to, ¿eœ trafi³ na nieuczciwych ludzi - gdzie to siê wydarzy³o?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_00"); //Spokojnie, przyjacielu! KtoÅ› juÅ¼ prÃ³bowaÅ‚ mnie wykoÅ‚owaÄ‡...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_01"); //CzyÅ¼by?
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_02"); //Pewien czÅ‚owiek chciaÅ‚, Å¼ebyÅ›my odzyskali razem amulet, a zyskami podzielili siÄ™ po poÅ‚owie.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_15_03"); //Kiedy juÅ¼ wykonaliÅ›my zadanie, on i banda jego koleÅ¼kÃ³w zaatakowali mnie.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_DAMALS_01_04"); //WyglÄ…da na to, Å¼eÅ› trafiÅ‚ na nieuczciwych ludzi - gdzie to siÄ™ wydarzyÅ‚o?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
 	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"To nie ma znaczenia.",DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"By³em skazañcem w kolonii górniczej.",DIA_BDT_1013_BANDIT_WHERE_PRISONER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"ByÅ‚em skazaÅ„cem w kolonii gÃ³rniczej.",DIA_BDT_1013_BANDIT_WHERE_PRISONER);
 };
 
 func void DIA_BDT_1013_BANDIT_WHERE_PRISONER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_00"); //By³em skazañcem w kolonii górniczej.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_01"); //Ej... Przychodzisz spoza Bariery? Cz³owieku! Byliœmy tam razem!
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_02"); //Nie pamiêtam ciê...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_03"); //By³em kopaczem w Starym Obozie. Trzyma³em siê z dala od k³opotów.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_04"); //Ale teraz najwa¿niejsze jest to, ¿e wpakowa³eœ siê w porz¹dne tarapaty!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_05"); //Ktoœ wyznaczy³ za twoj¹ g³owê ca³kiem spor¹ nagrodê. Pojawi³y siê te¿ listy goñcze z twoj¹ facjat¹!
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_06"); //Na twoim miejscu bardzo bym na siebie uwa¿a³. S¹ wœród nas ludzie, którzy dla z³ota pozabijaliby w³asne matki.
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_07"); //Ale my, ch³opcy z kolonii karnej, powinniœmy siê trzymaæ razem!
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_08"); //Powinienem ci chyba podziêkowaæ...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_09"); //Nie ma za co. Próbujê po prostu utrzymaæ siê przy ¿yciu.
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_00"); //ByÅ‚em skazaÅ„cem w kolonii gÃ³rniczej.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_01"); //Ej... Przychodzisz spoza Bariery? CzÅ‚owieku! ByliÅ›my tam razem!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_02"); //Nie pamiÄ™tam ciÄ™...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_03"); //ByÅ‚em kopaczem w Starym Obozie. TrzymaÅ‚em siÄ™ z dala od kÅ‚opotÃ³w.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_04"); //Ale teraz najwaÅ¼niejsze jest to, Å¼e wpakowaÅ‚eÅ› siÄ™ w porzÄ…dne tarapaty!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_05"); //KtoÅ› wyznaczyÅ‚ za twojÄ… gÅ‚owÄ™ caÅ‚kiem sporÄ… nagrodÄ™. PojawiÅ‚y siÄ™ teÅ¼ listy goÅ„cze z twojÄ… facjatÄ…!
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_06"); //Na twoim miejscu bardzo bym na siebie uwaÅ¼aÅ‚. SÄ… wÅ›rÃ³d nas ludzie, ktÃ³rzy dla zÅ‚ota pozabijaliby wÅ‚asne matki.
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_07"); //Ale my, chÅ‚opcy z kolonii karnej, powinniÅ›my siÄ™ trzymaÄ‡ razem!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_15_08"); //Powinienem ci chyba podziÄ™kowaÄ‡...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_PRISONER_01_09"); //Nie ma za co. PrÃ³bujÄ™ po prostu utrzymaÄ‡ siÄ™ przy Å¼yciu.
 	
 	Bdt13_Friend = TRUE;
 	B_SetAttitude (self, ATT_FRIENDLY);
@@ -187,14 +187,14 @@ func void DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT()
 	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_NOTIMPORTANT_01_01"); //Jak tam sobie chcesz. To co? Idziemy?
 	
 	Info_ClearChoices 	(DIA_BDT_1013_BANDIT_WHERE);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"Mo¿e póŸniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
-	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porz¹dku, prowadŸ.",DIA_BDT_1013_BANDIT_WHERE_YES);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"MoÅ¼e pÃ³Åºniej...",DIA_BDT_1013_BANDIT_WHERE_LATER);
+	Info_AddChoice 		(DIA_BDT_1013_BANDIT_WHERE,"W porzÄ…dku, prowadÅº.",DIA_BDT_1013_BANDIT_WHERE_YES);
 };
 
 func VOID DIA_BDT_1013_BANDIT_WHERE_LATER()
 {
-	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00"); //Mo¿e póŸniej...
-	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01"); //Nie bêdzie ¿adnego póŸniej, kole¿ko!
+	AI_Output (other, self, "DIA_BDT_1013_BANDIT_WHERE_LATER_15_00"); //MoÅ¼e pÃ³Åºniej...
+	AI_Output (self, other, "DIA_BDT_1013_BANDIT_WHERE_LATER_01_01"); //Nie bÄ™dzie Å¼adnego pÃ³Åºniej, koleÅ¼ko!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -226,7 +226,7 @@ func void DIA_1013_BANDIT_AMBUSH_Info ()
 	if (Npc_IsDead(Ambusher_1014))
 	&& (Npc_IsDead(Ambusher_1015))
 	{
-		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_00"); //G³upio zrobi³eœ, œledz¹c mnie...
+		AI_Output			(self, other, "DIA_1013_BANDIT_AMBUSH_01_00"); //GÅ‚upio zrobiÅ‚eÅ›, Å›ledzÄ…c mnie...
 		B_Attack 			(self, other, AR_SuddenEnemyInferno, 1);
 		AI_StopProcessInfos (self);
 	}
@@ -247,7 +247,7 @@ instance DIA_1013_BANDIT_NAME (C_INFO)
 	condition	 = 	DIA_1013_BANDIT_NAME_Condition;
 	information	 = 	DIA_1013_BANDIT_NAME_Info;
 	PERMANENT	 =  FALSE;	
-	description	 = 	"Kto wyznaczy³ tê nagrodê?";
+	description	 = 	"Kto wyznaczyÅ‚ tÄ™ nagrodÄ™?";
 };
 func int DIA_1013_BANDIT_NAME_Condition ()
 {	
@@ -258,14 +258,14 @@ func int DIA_1013_BANDIT_NAME_Condition ()
 };
 func void DIA_1013_BANDIT_NAME_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_00"); //Kto wyznaczy³ tê nagrodê?
+	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_00"); //Kto wyznaczyÅ‚ tÄ™ nagrodÄ™?
 	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_01"); //Tego nie wiem. Tylko jeden z nas go zna.
 	AI_Output (other, self, "DIA_1013_BANDIT_NAME_15_02"); //A kto to taki?
-	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_03"); //Hej, stary, no naprawdê nie mogê ci tego powiedzieæ. Wiesz, jak jest...
+	AI_Output (self, other, "DIA_1013_BANDIT_NAME_01_03"); //Hej, stary, no naprawdÄ™ nie mogÄ™ ci tego powiedzieÄ‡. Wiesz, jak jest...
 	
 	Log_CreateTopic (Topic_Bandits,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Bandits,LOG_RUNNING);
-	B_LogEntry (Topic_Bandits,"Œcigaj¹ mnie bandyci. Maj¹ list goñczy z moj¹ podobizn¹. Zastanawiam siê, kto lub co siê za tym kryje.");
+	B_LogEntry (Topic_Bandits,"ÅšcigajÄ… mnie bandyci. MajÄ… list goÅ„czy z mojÄ… podobiznÄ…. Zastanawiam siÄ™, kto lub co siÄ™ za tym kryje.");
 	MIS_Steckbriefe = LOG_RUNNING;
 };
 
@@ -279,7 +279,7 @@ instance DIA_1013_BANDIT_DEXTER		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_DEXTER_Condition;
 	information	 = 	DIA_1013_BANDIT_DEXTER_Info;
 	PERMANENT	 =  TRUE;	
-	description	 = 	"10 sztuk z³ota za imiê tego goœcia!";
+	description	 = 	"10 sztuk zÅ‚ota za imiÄ™ tego goÅ›cia!";
 };
 func int DIA_1013_BANDIT_DEXTER_Condition ()
 {	
@@ -292,25 +292,25 @@ func int DIA_1013_BANDIT_DEXTER_Condition ()
 };
 func void DIA_1013_BANDIT_DEXTER_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_00"); //10 sztuk z³ota za imiê tego goœcia!
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_01"); //Och, stary, naprawdê nie mogê tego zrobiæ...
-	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_02"); //No, wykrztuœ to w koñcu!
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_03"); //Och, stary! No dobra. Nazywa siê Dexter. Ko³o du¿ego gospodarstwa jest stroma ska³a.
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_04"); //Na niej jest wie¿a stra¿nicza, a obok kilka kopalni. Gdzieœ w pobli¿u jest jego kryjówka.
+	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_00"); //10 sztuk zÅ‚ota za imiÄ™ tego goÅ›cia!
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_01"); //Och, stary, naprawdÄ™ nie mogÄ™ tego zrobiÄ‡...
+	AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_02"); //No, wykrztuÅ› to w koÅ„cu!
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_03"); //Och, stary! No dobra. Nazywa siÄ™ Dexter. KoÅ‚o duÅ¼ego gospodarstwa jest stroma skaÅ‚a.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_04"); //Na niej jest wieÅ¼a straÅ¼nicza, a obok kilka kopalni. GdzieÅ› w pobliÅ¼u jest jego kryjÃ³wka.
 	
-	B_LogEntry (Topic_Bandits,"Przywódc¹ bandytów jest Dexter. Ukrywa siê w kopalni w pobli¿u farmy w³aœciciela ziemskiego.");
+	B_LogEntry (Topic_Bandits,"PrzywÃ³dcÄ… bandytÃ³w jest Dexter. Ukrywa siÄ™ w kopalni w pobliÅ¼u farmy wÅ‚aÅ›ciciela ziemskiego.");
 	
 	if (B_GiveInvItems(other, self, itmi_gold, 10))
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_05"); //Widzisz, to nie by³o takie trudne. Tu jest twoje z³oto.
+		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_05"); //Widzisz, to nie byÅ‚o takie trudne. Tu jest twoje zÅ‚oto.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_06"); //Eee... W³aœnie przypomnia³em sobie, ¿e nie mam dziesiêciu sztuk z³ota.
-		AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_07"); //Co?! Ja... Och, niewa¿ne. To moja wina. Mog³em nic ci nie mówiæ, zanim nie zobaczy³em z³ota...
+		AI_Output (other, self, "DIA_1013_BANDIT_DEXTER_15_06"); //Eee... WÅ‚aÅ›nie przypomniaÅ‚em sobie, Å¼e nie mam dziesiÄ™ciu sztuk zÅ‚ota.
+		AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_07"); //Co?! Ja... Och, niewaÅ¼ne. To moja wina. MogÅ‚em nic ci nie mÃ³wiÄ‡, zanim nie zobaczyÅ‚em zÅ‚ota...
 	};
 	
-	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_08"); //Tylko nie mów im, kto ci to powiedzia³.
+	AI_Output (self, other, "DIA_1013_BANDIT_DEXTER_01_08"); //Tylko nie mÃ³w im, kto ci to powiedziaÅ‚.
 			
 	Bdt13_Dexter_verraten = TRUE;
 };
@@ -337,7 +337,7 @@ func int DIA_1013_BANDIT_PIC_Condition ()
 func void DIA_1013_BANDIT_PIC_Info ()
 {
 	AI_Output (other, self, "DIA_1013_BANDIT_PIC_15_00"); //Dasz mi ten portret?
-	AI_Output (self, other, "DIA_1013_BANDIT_PIC_01_01"); //Jasne. Przecie¿ to TWOJA gêba.
+	AI_Output (self, other, "DIA_1013_BANDIT_PIC_01_01"); //Jasne. PrzecieÅ¼ to TWOJA gÄ™ba.
 	B_GiveInvItems (self, other, ItWr_Poster_MIS,1);
 };
 
@@ -351,7 +351,7 @@ instance DIA_1013_BANDIT_FromMaleth		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_FromMaleth_Condition;
 	information	 = 	DIA_1013_BANDIT_FromMaleth_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Przys³a³ mnie jeden z ch³opów spoza miasta...";
+	description	 = 	"PrzysÅ‚aÅ‚ mnie jeden z chÅ‚opÃ³w spoza miasta...";
 };
 func int DIA_1013_BANDIT_FromMaleth_Condition ()
 {	
@@ -363,9 +363,9 @@ func int DIA_1013_BANDIT_FromMaleth_Condition ()
 };
 func void DIA_1013_BANDIT_FromMaleth_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_00"); //Przys³a³ mnie jeden z ch³opów spoza miasta...
-	AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_01"); //Co? Wieœniacy wiedz¹ o kryjówce?
-	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_02"); //Zauwa¿yli brak owiec.
+	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_00"); //PrzysÅ‚aÅ‚ mnie jeden z chÅ‚opÃ³w spoza miasta...
+	AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_01"); //Co? WieÅ›niacy wiedzÄ… o kryjÃ³wce?
+	AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_02"); //ZauwaÅ¼yli brak owiec.
 	
 	var C_NPC b14; b14 = Hlp_GetNpc(Bdt_1014_Bandit_L);
 	var C_NPC b15; b15 = Hlp_GetNpc(Bdt_1015_Bandit_L);
@@ -373,13 +373,13 @@ func void DIA_1013_BANDIT_FromMaleth_Info ()
 	if (Npc_IsDead (b14))
 	&& (Npc_IsDead (b15))
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_03"); //O cholera! Có¿, wiêc muszê siê st¹d wynieœæ. Jeœli znajd¹ pust¹ kryjówkê, to mo¿e przestan¹ mnie szukaæ.
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_03"); //O cholera! CÃ³Å¼, wiÄ™c muszÄ™ siÄ™ stÄ…d wynieÅ›Ä‡. JeÅ›li znajdÄ… pustÄ… kryjÃ³wkÄ™, to moÅ¼e przestanÄ… mnie szukaÄ‡.
 	}
 	else //mindestens einer lebt noch
 	{
-		AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_04"); //On chce, ¿ebyœcie wszyscy zginêli...
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_05"); //Zaraz - chyba mnie nie wkopiesz? Nie po tym, jak ci pomog³em?
-		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_06"); //No to idŸ i porozbijaj ³by pozosta³ym, skoro tak pragniesz rozlewu krwi - ja w to nie wchodzê!
+		AI_Output (other, self, "DIA_1013_BANDIT_FromMaleth_15_04"); //On chce, Å¼ebyÅ›cie wszyscy zginÄ™li...
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_05"); //Zaraz - chyba mnie nie wkopiesz? Nie po tym, jak ci pomogÅ‚em?
+		AI_Output (self, other, "DIA_1013_BANDIT_FromMaleth_01_06"); //No to idÅº i porozbijaj Å‚by pozostaÅ‚ym, skoro tak pragniesz rozlewu krwi - ja w to nie wchodzÄ™!
 	};
 	
 	Bdt_1013_Away = TRUE;
@@ -400,7 +400,7 @@ instance DIA_1013_BANDIT_FromCavalorn (C_INFO)
 	condition	 = 	DIA_1013_BANDIT_FromCavalorn_Condition;
 	information	 = 	DIA_1013_BANDIT_FromCavalorn_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Wkrótce rozpêta siê tu prawdziwe piek³o!";
+	description	 = 	"WkrÃ³tce rozpÄ™ta siÄ™ tu prawdziwe piekÅ‚o!";
 };
 func int DIA_1013_BANDIT_FromCavalorn_Condition ()
 {	
@@ -412,10 +412,10 @@ func int DIA_1013_BANDIT_FromCavalorn_Condition ()
 };
 func void DIA_1013_BANDIT_FromCavalorn_Info ()
 {
-	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_00"); //Wkrótce rozpêta siê tu prawdziwe piek³o!
+	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_00"); //WkrÃ³tce rozpÄ™ta siÄ™ tu prawdziwe piekÅ‚o!
 	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_01"); //Co?!
 	AI_Output (other, self, "DIA_ADDON_1013_BANDIT_FromCavalorn_15_02"); //Idzie tu po ciebie niejaki Cavalorn!
-	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_03"); //Cholera! Muszê siê st¹d wynieœæ.
+	AI_Output (self, other, "DIA_ADDON_1013_BANDIT_FromCavalorn_01_03"); //Cholera! MuszÄ™ siÄ™ stÄ…d wynieÅ›Ä‡.
 
 	Bdt_1013_Away = TRUE;
 	B_GivePlayerXP (XP_BanditWeg);
@@ -441,7 +441,7 @@ instance DIA_1013_BANDIT_PERM		(C_INFO)
 	condition	 = 	DIA_1013_BANDIT_PERM_Condition;
 	information	 = 	DIA_1013_BANDIT_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Wiesz coœ jeszcze, co mog³oby mnie zainteresowaæ?";
+	description	 = 	"Wiesz coÅ› jeszcze, co mogÅ‚oby mnie zainteresowaÄ‡?";
 };
 func int DIA_1013_BANDIT_PERM_Condition ()
 {	
@@ -453,17 +453,17 @@ func int DIA_1013_BANDIT_PERM_Condition ()
 };
 func void DIA_1013_BANDIT_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_1013_BANDIT_PERM_15_00"); //Wiesz coœ jeszcze, co mog³oby mnie zainteresowaæ?
+	AI_Output (other, self, "DIA_1013_BANDIT_PERM_15_00"); //Wiesz coÅ› jeszcze, co mogÅ‚oby mnie zainteresowaÄ‡?
 
 	if (bdt13_Gossip_Wildnis == FALSE)
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_01"); //Chodzi ci o tutejsz¹ okolicê? Jeœli chcesz prze¿yæ, trzymaj siê œcie¿ek.
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_02"); //Im dalej zapuœcisz siê w dzicz, tym wiêksze grozi ci niebezpieczeñstwo.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_01"); //Chodzi ci o tutejszÄ… okolicÄ™? JeÅ›li chcesz przeÅ¼yÄ‡, trzymaj siÄ™ Å›cieÅ¼ek.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_02"); //Im dalej zapuÅ›cisz siÄ™ w dzicz, tym wiÄ™ksze grozi ci niebezpieczeÅ„stwo.
 		bdt13_Gossip_Wildnis = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_03"); //Powiedzia³em ci wszystko, co wiem.
+		AI_Output (self, other, "DIA_1013_BANDIT_PERM_01_03"); //PowiedziaÅ‚em ci wszystko, co wiem.
 	};
 };
 

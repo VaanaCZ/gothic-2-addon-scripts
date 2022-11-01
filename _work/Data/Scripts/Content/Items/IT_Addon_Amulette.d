@@ -203,7 +203,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "PierúcieÒ Uzdrowiciela";
+	description		=  "Pier≈õcie≈Ñ Uzdrowiciela";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -249,7 +249,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		//aktuelle Hitpoints werden nicht gesteigert. (Sonst Heilmaschine)
 	};
 //---------------------------------------------------------------------------------------------------------
-	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //Hˆhle zum Canyon
+	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //H√∂hle zum Canyon
 {
 	name 			=	NAME_Ring;
 
@@ -268,7 +268,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "PierúcieÒ Uzdrowiciela";
+	description		=  "Pier≈õcie≈Ñ Uzdrowiciela";
 
 	TEXT[2]			= NAME_Bonus_HP;
 	COUNT[2]		= HP_Ring_Solo_Bonus;
@@ -336,7 +336,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Amulet Kap≥ana";
+	description		=  "Amulet Kap≈Çana";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Amulett_Solo_Bonus;
@@ -401,7 +401,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "PierúcieÒ Kap≥ana";
+	description		=  "Pier≈õcie≈Ñ Kap≈Çana";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -466,7 +466,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "PierúcieÒ Kap≥ana";
+	description		=  "Pier≈õcie≈Ñ Kap≈Çana";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -513,9 +513,9 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		
 	};
 //------------------------------------------------------------------------------------------
-// Kumulatives St‰rke Amulett (Maya) 
+// Kumulatives St√§rke Amulett (Maya) 
 //------------------------------------------------------------------------------------------
-	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhˆhle strand
+	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranh√∂hle strand
 {
 	name 			=	NAME_Amulett;
 
@@ -600,7 +600,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "PierúcieÒ Wojownika";
+	description		=  "Pier≈õcie≈Ñ Wojownika";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;
@@ -667,7 +667,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "PierúcieÒ Wojownika";
+	description		=  "Pier≈õcie≈Ñ Wojownika";
 
 	TEXT[2]			= NAME_Prot_Edge;
 	COUNT[2]		= STR_Ring_Solo_Bonus;

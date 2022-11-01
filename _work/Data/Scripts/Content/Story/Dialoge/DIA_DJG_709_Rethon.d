@@ -43,7 +43,7 @@ func int DIA_Rethon_HALLO_Condition ()
 func void DIA_Rethon_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Rethon_HALLO_15_00"); //Co tutaj robisz?
-	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //PrzygotowujÍ siÍ do walki, a co innego mogÍ robiÊ?
+	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //Przygotowujƒô siƒô do walki, a co innego mogƒô robiƒá?
 };
 
 
@@ -57,7 +57,7 @@ instance DIA_Rethon_KAMPF		(C_INFO)
 	condition	 = 	DIA_Rethon_KAMPF_Condition;
 	information	 = 	DIA_Rethon_KAMPF_Info;
 
-	description	 = 	"Z kim chcesz walczyÊ?";
+	description	 = 	"Z kim chcesz walczyƒá?";
 };
 
 func int DIA_Rethon_KAMPF_Condition ()
@@ -70,9 +70,9 @@ func int DIA_Rethon_KAMPF_Condition ()
 
 func void DIA_Rethon_KAMPF_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //Z kim chcesz walczyÊ?
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //Pomyúla≥em sobie, øe odwiedzÍ kilku paladynÛw i skopiÍ im ich t≥uste ty≥ki.
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //DureÒ. Ze smokami oczywiúcie. A ty myúla≥eú, øe z kim?
+	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //Z kim chcesz walczyƒá?
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //Pomy≈õla≈Çem sobie, ≈ºe odwiedzƒô kilku paladyn√≥w i skopiƒô im ich t≈Çuste ty≈Çki.
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //Dure≈Ñ. Ze smokami oczywi≈õcie. A ty my≈õla≈Çe≈õ, ≈ºe z kim?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ instance DIA_Rethon_PALADINE		(C_INFO)
 	condition	 = 	DIA_Rethon_PALADINE_Condition;
 	information	 = 	DIA_Rethon_PALADINE_Info;
 
-	description	 = 	"Czy paladynÛw nie denerwuje twoja obecnoúÊ?";
+	description	 = 	"Czy paladyn√≥w nie denerwuje twoja obecno≈õƒá?";
 };
 
 func int DIA_Rethon_PALADINE_Condition ()
@@ -98,11 +98,11 @@ func int DIA_Rethon_PALADINE_Condition ()
 
 func void DIA_Rethon_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Czy paladynÛw nie denerwuje twoja obecnoúÊ?
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Niby dlaczego? Paladyni majπ wiÍksze problemy. WiÍkszoúÊ z nich cieszy siÍ, øe jeszcze øyje.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Morale ch≥opcÛw szybko siÍ pogarsza. Nied≥ugo ca≥kowicie siÍ za≥amiπ.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Popatrz tylko na te ich ostrza, z ktÛrymi wybierajπ siÍ do bitwy.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Kaødy rozsπdny wojak dawno by uciek≥.
+	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Czy paladyn√≥w nie denerwuje twoja obecno≈õƒá?
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Niby dlaczego? Paladyni majƒÖ wiƒôksze problemy. Wiƒôkszo≈õƒá z nich cieszy siƒô, ≈ºe jeszcze ≈ºyje.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Morale ch≈Çopc√≥w szybko siƒô pogarsza. Nied≈Çugo ca≈Çkowicie siƒô za≈ÇamiƒÖ.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Popatrz tylko na te ich ostrza, z kt√≥rymi wybierajƒÖ siƒô do bitwy.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Ka≈ºdy rozsƒÖdny wojak dawno by uciek≈Ç.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Rethon_WOGRUPPE		(C_INFO)
 	condition	 = 	DIA_Rethon_WOGRUPPE_Condition;
 	information	 = 	DIA_Rethon_WOGRUPPE_Info;
 
-	description	 = 	"Oddzieli≥eú siÍ od swojej grupy?";
+	description	 = 	"Oddzieli≈Çe≈õ siƒô od swojej grupy?";
 };
 
 func int DIA_Rethon_WOGRUPPE_Condition ()
@@ -130,9 +130,9 @@ func int DIA_Rethon_WOGRUPPE_Condition ()
 
 func void DIA_Rethon_WOGRUPPE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //Oddzieli≥eú siÍ od swojej grupy?
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //Mojej grupy? Nie naleøÍ do øadnej grupy. KolekcjonujÍ trofea.
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Jeúli wrÛcÍ do domu bez trofeum, ca≥a wyprawa na nic. Jak widzisz, nie mam siÍ kim wyrÍczyÊ.
+	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //Oddzieli≈Çe≈õ siƒô od swojej grupy?
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //Mojej grupy? Nie nale≈ºƒô do ≈ºadnej grupy. Kolekcjonujƒô trofea.
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Je≈õli wr√≥cƒô do domu bez trofeum, ca≈Ça wyprawa na nic. Jak widzisz, nie mam siƒô kim wyrƒôczyƒá.
 };
 
 
@@ -146,7 +146,7 @@ instance DIA_Rethon_DRACHENGESEHEN		(C_INFO)
 	condition	 = 	DIA_Rethon_DRACHENGESEHEN_Condition;
 	information	 = 	DIA_Rethon_DRACHENGESEHEN_Info;
 
-	description	 = 	"Widzia≥eú juø jakiegoú smoka?";
+	description	 = 	"Widzia≈Çe≈õ ju≈º jakiego≈õ smoka?";
 };
 
 func int DIA_Rethon_DRACHENGESEHEN_Condition ()
@@ -159,8 +159,8 @@ func int DIA_Rethon_DRACHENGESEHEN_Condition ()
 
 func void DIA_Rethon_DRACHENGESEHEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //Widzia≥eú juø jakiegoú smoka?
-	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Nie, nim wyruszÍ na polowanie, muszÍ dobrze naostrzyÊ broÒ.
+	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //Widzia≈Çe≈õ ju≈º jakiego≈õ smoka?
+	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Nie, nim wyruszƒô na polowanie, muszƒô dobrze naostrzyƒá bro≈Ñ.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -173,7 +173,7 @@ instance DIA_Rethon_ANGST		(C_INFO)
 	condition	 = 	DIA_Rethon_ANGST_Condition;
 	information	 = 	DIA_Rethon_ANGST_Info;
 
-	description	 = 	"Nikogo siÍ nie boisz?";
+	description	 = 	"Nikogo siƒô nie boisz?";
 };
 
 func int DIA_Rethon_ANGST_Condition ()
@@ -186,23 +186,23 @@ func int DIA_Rethon_ANGST_Condition ()
 
 func void DIA_Rethon_ANGST_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_15_00"); //Nikogo siÍ nie boisz?
+	AI_Output			(other, self, "DIA_Rethon_ANGST_15_00"); //Nikogo siƒô nie boisz?
 
 	AI_Output			(self, other, "DIA_Rethon_ANGST_12_01"); //Co? Kogo? Sylvia?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //TwÛj szef naprawdÍ myúli, øe przyjdzie tu i urzπdzi masakrÍ, hÍ?
-			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //Nie pracujÍ dla Sylvia, tylko dla siebie.
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //Och. W takim razie zapomnij, øe coú mÛwi≥em.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //Tw√≥j szef naprawdƒô my≈õli, ≈ºe przyjdzie tu i urzƒÖdzi masakrƒô, hƒô?
+			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //Nie pracujƒô dla Sylvia, tylko dla siebie.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //Och. W takim razie zapomnij, ≈ºe co≈õ m√≥wi≈Çem.
 		};
 
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //Widzia≥eú tych øa≥osnych typkÛw, ktÛrzy siÍ za nim w≥Ûczπ?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //Sylvio powinien siÍ cieszyÊ, jeúli uda mu siÍ ujúÊ stπd z øyciem.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //Widzia≈Çe≈õ tych ≈ºa≈Çosnych typk√≥w, kt√≥rzy siƒô za nim w≈Ç√≥czƒÖ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //Sylvio powinien siƒô cieszyƒá, je≈õli uda mu siƒô uj≈õƒá stƒÖd z ≈ºyciem.
 
 	if (Npc_IsDead(DJG_Sylvio))
 	{
-	AI_Output			(other, self, "DIA_Rethon_ANGST_15_07"); //Nie uda mu siÍ. Nie øyje.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_15_07"); //Nie uda mu siƒô. Nie ≈ºyje.
 	AI_Output			(self, other, "DIA_Rethon_ANGST_12_08"); //Mnie to nie przeszkadza.
 	}
 	else
@@ -210,7 +210,7 @@ func void DIA_Rethon_ANGST_Info ()
 	Info_AddChoice	(DIA_Rethon_ANGST, DIALOG_BACK, DIA_Rethon_ANGST_weiter );
 	Info_AddChoice	(DIA_Rethon_ANGST, "Chyba go nie lubisz, co?", DIA_Rethon_ANGST_sylviomoegen );
 	Info_AddChoice	(DIA_Rethon_ANGST, "Gdzie jest teraz Sylvio?", DIA_Rethon_ANGST_woSylvio );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Sylvio by≥ tutaj?", DIA_Rethon_ANGST_sylviohier );
+	Info_AddChoice	(DIA_Rethon_ANGST, "Sylvio by≈Ç tutaj?", DIA_Rethon_ANGST_sylviohier );
 	};
 };
 
@@ -221,18 +221,18 @@ func void DIA_Rethon_ANGST_weiter ()
 
 func void DIA_Rethon_ANGST_sylviohier ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //Sylvio by≥ tutaj?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //W zamku? Tak, by≥ tutaj. Jednak tylko przez chwilÍ.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Porozmawia≥ z kilkoma osobami i wyruszy≥ dalej.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //Sylvio by≈Ç tutaj?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //W zamku? Tak, by≈Ç tutaj. Jednak tylko przez chwilƒô.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Porozmawia≈Ç z kilkoma osobami i wyruszy≈Ç dalej.
 
 };
 
 func void DIA_Rethon_ANGST_sylviomoegen ()
 {
 	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //Chyba go nie lubisz, co?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Co masz na myúli, mÛwiπc 'nie lubisz'? Nie jest to znajomoúÊ, z ktÛrej by≥bym jakoú szczegÛlnie dumny.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //Sylvio nie ma przyjaciÛ≥. Jedynie poplecznikÛw pe≥znπcych za nim krok w krok.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //To nie dla mnie. Ja pracujÍ sam.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Co masz na my≈õli, m√≥wiƒÖc 'nie lubisz'? Nie jest to znajomo≈õƒá, z kt√≥rej by≈Çbym jako≈õ szczeg√≥lnie dumny.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //Sylvio nie ma przyjaci√≥≈Ç. Jedynie poplecznik√≥w pe≈ÇznƒÖcych za nim krok w krok.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //To nie dla mnie. Ja pracujƒô sam.
 
 
 };
@@ -240,11 +240,11 @@ func void DIA_Rethon_ANGST_sylviomoegen ()
 func void DIA_Rethon_ANGST_woSylvio ()
 {
 	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //Gdzie jest teraz Sylvio?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Tutejsi paladyni wspominali coú o lodowym smoku na zachodzie. MÛwi siÍ, øe jest najwiÍkszy i najgroüniejszy z tych wszystkich bestii.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //Powinieneú by≥ widzieÊ b≥ysk w oczach Sylvia, kiedy siÍ o tym dowiedzia≥. Moøna wiÍc chyba odgadnπÊ, dokπd polaz≥.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Tutejsi paladyni wspominali co≈õ o lodowym smoku na zachodzie. M√≥wi siƒô, ≈ºe jest najwiƒôkszy i najgro≈∫niejszy z tych wszystkich bestii.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //Powiniene≈õ by≈Ç widzieƒá b≈Çysk w oczach Sylvia, kiedy siƒô o tym dowiedzia≈Ç. Mo≈ºna wiƒôc chyba odgadnƒÖƒá, dokƒÖd polaz≈Ç.
 
-	B_LogEntry (TOPIC_DRACHENJAGD,"£owca smokÛw Rethon mÛwi≥ coú o lodowym smoku."); 
-	B_LogEntry (TOPIC_Dragonhunter,"Sylvio by≥ w zamku, a potem wyruszy≥ na poszukiwania lodowego smoka.");
+	B_LogEntry (TOPIC_DRACHENJAGD,"≈Åowca smok√≥w Rethon m√≥wi≈Ç co≈õ o lodowym smoku."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Sylvio by≈Ç w zamku, a potem wyruszy≈Ç na poszukiwania lodowego smoka.");
 
 };
 
@@ -260,7 +260,7 @@ instance DIA_Rethon_MEINEWAFFE		(C_INFO)
 	condition	 = 	DIA_Rethon_MEINEWAFFE_Condition;
 	information	 = 	DIA_Rethon_MEINEWAFFE_Info;
 
-	description	 = 	"Czy mÛg≥byú pomÛc mi ulepszyÊ broÒ?";
+	description	 = 	"Czy m√≥g≈Çby≈õ pom√≥c mi ulepszyƒá bro≈Ñ?";
 };
 
 func int DIA_Rethon_MEINEWAFFE_Condition ()
@@ -273,9 +273,9 @@ func int DIA_Rethon_MEINEWAFFE_Condition ()
 
 func void DIA_Rethon_MEINEWAFFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //Czy mÛg≥byú mi pomÛc ulepszyÊ broÒ?
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //UlepszyÊ? Lepiej kup sobie coú nowego i czym prÍdzej pozbπdü siÍ tego swojego rupiecia.
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //Moøe mia≥bym coú dla ciebie. Zainteresowany?
+	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //Czy m√≥g≈Çby≈õ mi pom√≥c ulepszyƒá bro≈Ñ?
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //Ulepszyƒá? Lepiej kup sobie co≈õ nowego i czym prƒôdzej pozbƒÖd≈∫ siƒô tego swojego rupiecia.
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //Mo≈ºe mia≈Çbym co≈õ dla ciebie. Zainteresowany?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -290,7 +290,7 @@ instance DIA_Rethon_TRADE		(C_INFO)
 	permanent	 = 	TRUE;
 	trade		 = 	TRUE;
 	
-	description	 = 	"Co moøesz mi sprzedaÊ?";
+	description	 = 	"Co mo≈ºesz mi sprzedaƒá?";
 };
 
 func int DIA_Rethon_TRADE_Condition ()
@@ -303,20 +303,20 @@ func int DIA_Rethon_TRADE_Condition ()
 
 func void DIA_Rethon_TRADE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_TRADE_15_00"); //Co moøesz mi sprzedaÊ?
+	AI_Output			(other, self, "DIA_Rethon_TRADE_15_00"); //Co mo≈ºesz mi sprzedaƒá?
 	B_GiveTradeInv (self);
 
 	if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //SpÛjrz, jak nisko upad≥em. SprzedajÍ broÒ paladynowi.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //Sp√≥jrz, jak nisko upad≈Çem. Sprzedajƒô bro≈Ñ paladynowi.
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //Nie mam zbyt wielu towarÛw dla maga, ale zerknij, proszÍ...
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //Nie mam zbyt wielu towar√≥w dla maga, ale zerknij, proszƒô...
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_03"); //Wydaje mi siÍ, øe mam to, czego szukasz.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_03"); //Wydaje mi siƒô, ≈ºe mam to, czego szukasz.
 		};
 };
 

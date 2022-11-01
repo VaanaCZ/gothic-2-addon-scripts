@@ -31,7 +31,7 @@ instance DIA_Grimbald_HALLO		(C_INFO)
 	condition	 = 	DIA_Grimbald_HALLO_Condition;
 	information	 = 	DIA_Grimbald_HALLO_Info;
 
-	description	 = 	"Czekasz tu na kogoœ?";
+	description	 = 	"Czekasz tu na kogoÅ›?";
 };
 
 func int DIA_Grimbald_HALLO_Condition ()
@@ -42,62 +42,62 @@ var int Grimbald_PissOff;
 
 func void DIA_Grimbald_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //Czekasz tu na kogoœ?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_15_00"); //Czekasz tu na kogoÅ›?
 	
 	if 	(
 		(Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //Polujê. To chyba oczywiste.
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_01"); //PolujÄ™. To chyba oczywiste.
 				Grimbald_PissOff = TRUE;
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //Ju¿ nie. Przecie¿ przyszed³eœ, prawda?
+				AI_Output			(self, other, "DIA_Grimbald_HALLO_07_02"); //JuÅ¼ nie. PrzecieÅ¼ przyszedÅ‚eÅ›, prawda?
 				
 				Info_ClearChoices	(DIA_Grimbald_HALLO);
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Muszê siê zaj¹æ kilkoma sprawami.", DIA_Grimbald_HALLO_nein );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Czym siê zajmujesz?", DIA_Grimbald_HALLO_Was );
-				Info_AddChoice	(DIA_Grimbald_HALLO, "Dlaczego czeka³eœ na mnie?", DIA_Grimbald_HALLO_ich );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "MuszÄ™ siÄ™ zajÄ…Ä‡ kilkoma sprawami.", DIA_Grimbald_HALLO_nein );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Czym siÄ™ zajmujesz?", DIA_Grimbald_HALLO_Was );
+				Info_AddChoice	(DIA_Grimbald_HALLO, "Dlaczego czekaÅ‚eÅ› na mnie?", DIA_Grimbald_HALLO_ich );
 			};
 };
 
 func void DIA_Grimbald_HALLO_ich ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //Dlaczego czeka³eœ na mnie?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //Wygl¹dasz na silnego. Przyda mi siê pomoc kogoœ takiego jak ty.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_ich_15_00"); //Dlaczego czekaÅ‚eÅ› na mnie?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_ich_07_01"); //WyglÄ…dasz na silnego. Przyda mi siÄ™ pomoc kogoÅ› takiego jak ty.
 };
 
 func void DIA_Grimbald_HALLO_Was ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Co chcesz zrobiæ?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //Chcê zapolowaæ na zêbacze, ale obawiam siê, ¿e mo¿e ich byæ zbyt du¿o jak na si³y jednego myœliwego.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_15_00"); //Co chcesz zrobiÄ‡?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_07_01"); //ChcÄ™ zapolowaÄ‡ na zÄ™bacze, ale obawiam siÄ™, Å¼e moÅ¼e ich byÄ‡ zbyt duÅ¼o jak na siÅ‚y jednego myÅ›liwego.
 
 	Info_AddChoice	(DIA_Grimbald_HALLO, "Na mnie nie licz.", DIA_Grimbald_HALLO_Was_neinnein );
-	Info_AddChoice	(DIA_Grimbald_HALLO, "Dobrze, pomogê ci. IdŸ przodem.", DIA_Grimbald_HALLO_Was_ja );
+	Info_AddChoice	(DIA_Grimbald_HALLO, "Dobrze, pomogÄ™ ci. IdÅº przodem.", DIA_Grimbald_HALLO_Was_ja );
 };
 func void DIA_Grimbald_HALLO_Was_neinnein ()
 {
 	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_neinnein_15_00"); //Na mnie nie licz.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //Tchórz!
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_neinnein_07_01"); //TchÃ³rz!
 	Grimbald_PissOff = TRUE;
 	Info_ClearChoices	(DIA_Grimbald_HALLO);
 };
 
 func void DIA_Grimbald_HALLO_Was_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //Dobrze, pomogê ci. IdŸ przodem.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Tylko nie zbli¿aj siê za bardzo do czarnego trolla. Rozerwa³by ciê na strzêpy, jasne?
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //Biada ci, jeœli stchórzysz.
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_Was_ja_15_00"); //Dobrze, pomogÄ™ ci. IdÅº przodem.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_01"); //Tylko nie zbliÅ¼aj siÄ™ za bardzo do czarnego trolla. RozerwaÅ‚by ciÄ™ na strzÄ™py, jasne?
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_Was_ja_07_02"); //Biada ci, jeÅ›li stchÃ³rzysz.
 	B_StartOtherRoutine	(self,"Jagd");
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Grimbald_HALLO_nein ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //Muszê siê zaj¹æ kilkoma sprawami.
-	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Nie pleæ bzdur. Co to za wa¿ne sprawy, które masz niby za³atwiæ w tej g³uszy?
+	AI_Output			(other, self, "DIA_Grimbald_HALLO_nein_15_00"); //MuszÄ™ siÄ™ zajÄ…Ä‡ kilkoma sprawami.
+	AI_Output			(self, other, "DIA_Grimbald_HALLO_nein_07_01"); //Nie pleÄ‡ bzdur. Co to za waÅ¼ne sprawy, ktÃ³re masz niby zaÅ‚atwiÄ‡ w tej gÅ‚uszy?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -111,7 +111,7 @@ instance DIA_Grimbald_Jagd		(C_INFO)
 	information	 = 	DIA_Grimbald_Jagd_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Mo¿esz mnie nauczyæ polowaæ?";
+	description	 = 	"MoÅ¼esz mnie nauczyÄ‡ polowaÄ‡?";
 };
 
 func int DIA_Grimbald_Jagd_Condition ()
@@ -125,46 +125,46 @@ func int DIA_Grimbald_Jagd_Condition ()
 
 func void DIA_Grimbald_Jagd_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //Mo¿esz mnie nauczyæ czegoœ o polowaniu?
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_15_00"); //MoÅ¼esz mnie nauczyÄ‡ czegoÅ› o polowaniu?
 	if 	((Npc_IsDead(Grimbald_Snapper1))
 		&& (Npc_IsDead(Grimbald_Snapper2))
 		&& (Npc_IsDead(Grimbald_Snapper3)))
 		|| (Grimbald_PissOff == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Hmmm. Dobrze. Co prawda do tej pory nie bardzo mi pomog³eœ, ale nie zamierzam ciê od razu skreœlaæ.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_01"); //Hmmm. Dobrze. Co prawda do tej pory nie bardzo mi pomogÅ‚eÅ›, ale nie zamierzam ciÄ™ od razu skreÅ›laÄ‡.
 		Grimbald_TeachAnimalTrophy = TRUE;
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //Pewnie. Ale to bêdzie trochê kosztowaæ.
+		AI_Output			(self, other, "DIA_Grimbald_Jagd_07_02"); //Pewnie. Ale to bÄ™dzie trochÄ™ kosztowaÄ‡.
 		B_Say_Gold (self, other, 200);
 	
 		Info_ClearChoices	(DIA_Grimbald_Jagd);
-		Info_AddChoice	(DIA_Grimbald_Jagd, "Muszê siê zastanowiæ.", DIA_Grimbald_Jagd_zuviel );
-		Info_AddChoice	(DIA_Grimbald_Jagd, "W porz¹dku.", DIA_Grimbald_Jagd_ja );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "MuszÄ™ siÄ™ zastanowiÄ‡.", DIA_Grimbald_Jagd_zuviel );
+		Info_AddChoice	(DIA_Grimbald_Jagd, "W porzÄ…dku.", DIA_Grimbald_Jagd_ja );
 	};
 };
 
 func void DIA_Grimbald_Jagd_ja ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //Dobrze. Oto pieni¹dze.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_ja_15_00"); //Dobrze. Oto pieniÄ…dze.
 
 		if (B_GiveInvItems (other, self, ItMi_Gold,200))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //W porz¹dku. Powiedz mi, kiedy bêdziesz chcia³ siê czegoœ nauczyæ.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_01"); //W porzÄ…dku. Powiedz mi, kiedy bÄ™dziesz chciaÅ‚ siÄ™ czegoÅ› nauczyÄ‡.
 			Grimbald_TeachAnimalTrophy = TRUE;
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //Przynieœ pieni¹dze, a mo¿e siê czegoœ nauczysz.
+			AI_Output			(self, other, "DIA_Grimbald_Jagd_ja_07_02"); //PrzynieÅ› pieniÄ…dze, a moÅ¼e siÄ™ czegoÅ› nauczysz.
 		};
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };  
 
 func void DIA_Grimbald_Jagd_zuviel ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //Pomyœlê o tym.
-	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Skoro tak mówisz.
+	AI_Output			(other, self, "DIA_Grimbald_Jagd_zuviel_15_00"); //PomyÅ›lÄ™ o tym.
+	AI_Output			(self, other, "DIA_Grimbald_Jagd_zuviel_07_01"); //Skoro tak mÃ³wisz.
 	Info_ClearChoices	(DIA_Grimbald_Jagd);
 };
 
@@ -179,7 +179,7 @@ instance DIA_Grimbald_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grimbald_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grimbald_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Naucz mnie, jak powinno siê polowaæ.";
+	description	 = 	"Naucz mnie, jak powinno siÄ™ polowaÄ‡.";
 };
 
 func int DIA_Grimbald_TEACHHUNTING_Condition ()
@@ -192,7 +192,7 @@ func int DIA_Grimbald_TEACHHUNTING_Condition ()
 var int DIA_Grimbald_TEACHHUNTING_OneTime;
 func void DIA_Grimbald_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //Naucz mnie, jak powinno siê polowaæ.
+	AI_Output			(other, self, "DIA_Grimbald_TEACHHUNTING_15_00"); //Naucz mnie, jak powinno siÄ™ polowaÄ‡.
 	if (DIA_Grimbald_TEACHHUNTING_OneTime == FALSE)
 	{
 		B_StartOtherRoutine	(self,"JagdOver");
@@ -207,34 +207,34 @@ func void DIA_Grimbald_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 			)
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Czego konkretnie chcia³byœ siê dowiedzieæ?
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_01"); //Czego konkretnie chciaÅ‚byÅ› siÄ™ dowiedzieÄ‡?
 	
 				Info_AddChoice		(DIA_Grimbald_TEACHHUNTING, DIALOG_BACK, DIA_Grimbald_TEACHHUNTING_BACK);
 			
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("¯¹d³o krwiopijcy",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Å»Ä…dÅ‚o krwiopijcy",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFSting)),  DIA_Grimbald_TEACHHUNTING_BFSting);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Skrzyd³a krwiopijcy",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Grimbald_TEACHHUNTING_BFWing	);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("SkrzydÅ‚a krwiopijcy",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_BFWing)),  DIA_Grimbald_TEACHHUNTING_BFWing	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Usuñ pazury",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Grimbald_TEACHHUNTING_Claws	);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ pazury",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Grimbald_TEACHHUNTING_Claws	);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Usuñ ¿uwaczkê",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ Å¼uwaczkÄ™",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Mandibles)),  DIA_Grimbald_TEACHHUNTING_Mandibles);
 				};
 				if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
 				{ 
-					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("Usuñ p³yty pancerza zêbacza",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Grimbald_TEACHHUNTING_CrawlerPlate);
+					Info_AddChoice	(DIA_Grimbald_TEACHHUNTING, B_BuildLearnString ("UsuÅ„ pÅ‚yty pancerza zÄ™bacza",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_CrawlerPlate)),  DIA_Grimbald_TEACHHUNTING_CrawlerPlate);
 				};
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Wiesz ju¿ wszystko, czego móg³bym ciê nauczyæ.
+				AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_07_02"); //Wiesz juÅ¼ wszystko, czego mÃ³gÅ‚bym ciÄ™ nauczyÄ‡.
 			};
 };
 
@@ -247,7 +247,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFSting()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //Usuniêcie ¿¹d³a krwiopijcy nie powinno ci nastrêczaæ problemów. Wystarczy mocny nó¿.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFSting_07_00"); //UsuniÄ™cie Å¼Ä…dÅ‚a krwiopijcy nie powinno ci nastrÄ™czaÄ‡ problemÃ³w. Wystarczy mocny nÃ³Å¼.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -256,7 +256,7 @@ func void DIA_Grimbald_TEACHHUNTING_BFWing()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //Skrzyd³a krwiopijcy mo¿na urwaæ lub obci¹æ ostrym no¿em.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_BFWing_07_00"); //SkrzydÅ‚a krwiopijcy moÅ¼na urwaÄ‡ lub obciÄ…Ä‡ ostrym noÅ¼em.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -265,7 +265,7 @@ func void DIA_Grimbald_TEACHHUNTING_Claws ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //Istniej¹ ró¿ne sposoby usuwania pazurów. W przypadku niektórych zwierz¹t bêdziesz potrzebowaæ naprawdê du¿o si³y, kiedy indziej wystarczy jedynie ostry nó¿.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Claws_07_00"); //IstniejÄ… rÃ³Å¼ne sposoby usuwania pazurÃ³w. W przypadku niektÃ³rych zwierzÄ…t bÄ™dziesz potrzebowaÄ‡ naprawdÄ™ duÅ¼o siÅ‚y, kiedy indziej wystarczy jedynie ostry nÃ³Å¼.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -274,7 +274,7 @@ func void DIA_Grimbald_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //Pe³zacze i polne bestie maj¹ mocne ¿uwaczki, które mo¿na wyrwaæ z ich czaszek za pomoc¹ silnego szarpniêcia.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_Mandibles_07_00"); //PeÅ‚zacze i polne bestie majÄ… mocne Å¼uwaczki, ktÃ³re moÅ¼na wyrwaÄ‡ z ich czaszek za pomocÄ… silnego szarpniÄ™cia.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -283,7 +283,7 @@ func void DIA_Grimbald_TEACHHUNTING_CrawlerPlate ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Pancerz pe³zacza przylega œciœle do jego cia³a, jednak mo¿na go podwa¿yæ jakimœ p³askim narzêdziem.
+			AI_Output			(self, other, "DIA_Grimbald_TEACHHUNTING_CrawlerPlate_07_00"); //Pancerz peÅ‚zacza przylega Å›ciÅ›le do jego ciaÅ‚a, jednak moÅ¼na go podwaÅ¼yÄ‡ jakimÅ› pÅ‚askim narzÄ™dziem.
 		};
 	Info_ClearChoices	(DIA_Grimbald_TEACHHUNTING);
 };
@@ -299,7 +299,7 @@ instance DIA_Grimbald_NovChase		(C_INFO)
 	condition	 = 	DIA_Grimbald_NovChase_Condition;
 	information	 = 	DIA_Grimbald_NovChase_Info;
 
-	description	 = 	"Czy nie przechodzi³ têdy jakiœ nowicjusz?";
+	description	 = 	"Czy nie przechodziÅ‚ tÄ™dy jakiÅ› nowicjusz?";
 
 };
 
@@ -313,9 +313,9 @@ func int DIA_Grimbald_NovChase_Condition ()
 
 func void DIA_Grimbald_NovChase_Info ()
 {
-	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //Czy nie przechodzi³ têdy jakiœ nowicjusz?
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //Przesz³o têdy dzisiaj wielu dziwnych ludzi, w³¹czaj¹c tych dwóch ¿artownisiów przy kamiennym ³uku.
-	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Faktycznie, by³ z nimi pewien nowicjusz z Klasztoru Magów Ognia.
+	AI_Output			(other, self, "DIA_Grimbald_NovChase_15_00"); //Czy nie przechodziÅ‚ tÄ™dy jakiÅ› nowicjusz?
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_01"); //PrzeszÅ‚o tÄ™dy dzisiaj wielu dziwnych ludzi, wÅ‚Ä…czajÄ…c tych dwÃ³ch Å¼artownisiÃ³w przy kamiennym Å‚uku.
+	AI_Output			(self, other, "DIA_Grimbald_NovChase_07_02"); //Faktycznie, byÅ‚ z nimi pewien nowicjusz z Klasztoru MagÃ³w Ognia.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -342,7 +342,7 @@ func int DIA_Grimbald_Trolltot_Condition ()
 
 func void DIA_Grimbald_Trolltot_Info ()
 {
-	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //Czarny troll nie ¿yje. Dobra robota. Nigdy nie s¹dzi³em, ¿e zabicie tych bestii jest w ogóle mo¿liwe.
+	AI_Output			(self, other, "DIA_Grimbald_Trolltot_07_00"); //Czarny troll nie Å¼yje. Dobra robota. Nigdy nie sÄ…dziÅ‚em, Å¼e zabicie tych bestii jest w ogÃ³le moÅ¼liwe.
 	B_GivePlayerXP (XP_Ambient);
 };
 

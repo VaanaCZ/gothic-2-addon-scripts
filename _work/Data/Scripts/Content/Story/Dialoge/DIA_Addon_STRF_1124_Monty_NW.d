@@ -37,9 +37,9 @@ FUNC INT DIA_Addon_Monty_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Monty_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_00");//Z powrotem do pracy?
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//A jak myœlisz? S³uchaj, ch³opie, kiedy mnie nie by³o, te ³achudry nie po³o¿y³y jednej deski prawid³owo! Muszê pomyœleæ, jak to wszystko z³o¿yæ do kupy.
-	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Dobrze. Nie bêdê ci przeszkadza³.
-	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//Jasne. Bezpiecznej podró¿y.
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_01");//A jak myÅ›lisz? SÅ‚uchaj, chÅ‚opie, kiedy mnie nie byÅ‚o, te Å‚achudry nie poÅ‚oÅ¼yÅ‚y jednej deski prawidÅ‚owo! MuszÄ™ pomyÅ›leÄ‡, jak to wszystko zÅ‚oÅ¼yÄ‡ do kupy.
+	AI_Output (other, self, "DIA_Addon_Monty_NW_Hi_15_02");//Dobrze. Nie bÄ™dÄ™ ci przeszkadzaÅ‚.
+	AI_Output (self, other, "DIA_Addon_Monty_NW_Hi_08_03");//Jasne. Bezpiecznej podrÃ³Å¼y.
 };
 // ************************************************************
 // 			  				PICK POCKET

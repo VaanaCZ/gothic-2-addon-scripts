@@ -30,7 +30,7 @@ instance DIA_PAL_263_PERM		(C_INFO)
 	condition	 = 	DIA_PAL_263_PERM_Condition;
 	information	 = 	DIA_PAL_263_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Melduj, ¿o³nierzu!";
+	description	 = 	"Melduj, Å¼oÅ‚nierzu!";
 };
 
 func int DIA_PAL_263_PERM_Condition ()
@@ -43,10 +43,10 @@ func int DIA_PAL_263_PERM_Condition ()
 };
 func void DIA_PAL_263_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Melduj, ¿o³nierzu!
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Tak jest! Zgodnie z rozkazem utrzymujemy pozycje. ¯adnych dodatkowych strat. Zapasy na wyczerpaniu, orkowie jak na razie spokojni.
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //Ostatni atak smoków doszczêtnie zniszczy³ zewnêtrzne mury. Od tamtego czasu nic wa¿nego siê nie wydarzy³o.
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //W porz¹dku, wracaj do s³u¿by.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Melduj, Å¼oÅ‚nierzu!
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Tak jest! Zgodnie z rozkazem utrzymujemy pozycje. Å»adnych dodatkowych strat. Zapasy na wyczerpaniu, orkowie jak na razie spokojni.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //Ostatni atak smokÃ³w doszczÄ™tnie zniszczyÅ‚ zewnÄ™trzne mury. Od tamtego czasu nic waÅ¼nego siÄ™ nie wydarzyÅ‚o.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //W porzÄ…dku, wracaj do sÅ‚uÅ¼by.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM_OTH
@@ -58,7 +58,7 @@ instance DIA_PAL_263_PERM_OTH		(C_INFO)
 	condition	 = 	DIA_PAL_263_PERM_OTH_Condition;
 	information	 = 	DIA_PAL_263_PERM_OTH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Jak wygl¹da sytuacja?";
+	description	 = 	"Jak wyglÄ…da sytuacja?";
 };
 
 func int DIA_PAL_263_PERM_OTH_Condition ()
@@ -71,8 +71,8 @@ func int DIA_PAL_263_PERM_OTH_Condition ()
 };
 func void DIA_PAL_263_PERM_OTH_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Jak wygl¹da sytuacja?
-	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Kontrolujemy sytuacjê. Nie martw siê, cywilu. Wszystko dobrze siê skoñczy.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Jak wyglÄ…da sytuacja?
+	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Kontrolujemy sytuacjÄ™. Nie martw siÄ™, cywilu. Wszystko dobrze siÄ™ skoÅ„czy.
 };
 
 

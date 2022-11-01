@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Paul_Hi   (C_INFO)
 	condition   = DIA_Addon_Paul_Hi_Condition;
 	information = DIA_Addon_Paul_Hi_Info;
 	permanent   = FALSE;
-	description = "Handlujesz mo¿e sprzêtem kowalskim?";
+	description = "Handlujesz moÅ¼e sprzÄ™tem kowalskim?";
 };
 FUNC INT DIA_Addon_Paul_Hi_Condition()
 {	
@@ -71,9 +71,9 @@ FUNC INT DIA_Addon_Paul_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Paul_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_Hi_15_00"); //Handlujesz mo¿e sprzêtem kowalskim?
-	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_01"); //Huno chyba ma stal. Ja mam tylko kilka kawa³ków rudy.
-	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_02"); //Ale one nie s¹ na sprzeda¿. Ruda to jedyna cenna rzecz, jak¹ posiadam.
+	AI_Output (other, self, "DIA_Addon_Paul_Hi_15_00"); //Handlujesz moÅ¼e sprzÄ™tem kowalskim?
+	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_01"); //Huno chyba ma stal. Ja mam tylko kilka kawaÅ‚kÃ³w rudy.
+	AI_Output (self, other, "DIA_Addon_Paul_Hi_03_02"); //Ale one nie sÄ… na sprzedaÅ¼. Ruda to jedyna cenna rzecz, jakÄ… posiadam.
 };
 //---------------------------------------------------------------------
 //	Info Huno
@@ -97,9 +97,9 @@ FUNC INT DIA_Addon_Paul_Huno_Condition()
 FUNC VOID DIA_Addon_Paul_Huno_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Paul_Huno_15_00"); //Pracujesz dla Huno?
-	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_01"); //Chcia³em zarobiæ trochê z³ota, zacz¹³em wiêc pracowaæ dla Huno. Od tamtej pory od Estebana nie dosta³em ju¿ nic.
-	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_02"); //Powiedzia³ mi, ¿e nie jestem ju¿ potrzebny.
-	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_03"); //Tak wiêc praca dla Huno to moja jedyna szansa.
+	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_01"); //ChciaÅ‚em zarobiÄ‡ trochÄ™ zÅ‚ota, zaczÄ…Å‚em wiÄ™c pracowaÄ‡ dla Huno. Od tamtej pory od Estebana nie dostaÅ‚em juÅ¼ nic.
+	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_02"); //PowiedziaÅ‚ mi, Å¼e nie jestem juÅ¼ potrzebny.
+	AI_Output (self, other, "DIA_Addon_Paul_Huno_03_03"); //Tak wiÄ™c praca dla Huno to moja jedyna szansa.
 };
 
 //---------------------------------------------------------------------
@@ -124,7 +124,7 @@ FUNC INT DIA_Addon_Paul_Attentat_Condition()
 FUNC VOID DIA_Addon_Paul_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Paul_Attentat_03_00"); //Nic! Nie mam z tym nic wspólnego. Czego ode mnie chcesz?
+	AI_Output (self, other, "DIA_Addon_Paul_Attentat_03_00"); //Nic! Nie mam z tym nic wspÃ³lnego. Czego ode mnie chcesz?
 };
 	
 //---------------------------------------------------------------------
@@ -137,7 +137,7 @@ INSTANCE DIA_Addon_Paul_HunoVerdacht   (C_INFO)
 	condition   = DIA_Addon_Paul_HunoVerdacht_Condition;
 	information = DIA_Addon_Paul_HunoVerdacht_Info;
 	permanent   = FALSE;
-	description	= "Huno jest podejrzanym w sprawie usi³owania zabójstwa...";
+	description	= "Huno jest podejrzanym w sprawie usiÅ‚owania zabÃ³jstwa...";
 };
 FUNC INT DIA_Addon_Paul_HunoVerdacht_Condition()
 {	
@@ -149,12 +149,12 @@ FUNC INT DIA_Addon_Paul_HunoVerdacht_Condition()
 };
 FUNC VOID DIA_Addon_Paul_HunoVerdacht_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_HunoVerdacht_15_00"); //Huno jest podejrzanym w sprawie usi³owania zabójstwa...
+	AI_Output (other, self, "DIA_Addon_Paul_HunoVerdacht_15_00"); //Huno jest podejrzanym w sprawie usiÅ‚owania zabÃ³jstwa...
 	AI_Output (self, other, "DIA_Addon_Paul_HunoVerdacht_03_01"); //Nic o tym nie wiem!
 };
 	
 //---------------------------------------------------------------------
-//	Arbeitest für Huno
+//	Arbeitest fÃ¼r Huno
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Paul_HunoArbeit (C_INFO)
 {
@@ -163,7 +163,7 @@ INSTANCE DIA_Addon_Paul_HunoArbeit (C_INFO)
 	condition   = DIA_Addon_Paul_HunoArbeit_Condition;
 	information = DIA_Addon_Paul_HunoArbeit_Info;
 	permanent   = FALSE;
-	description	= "Pracujesz dla niego! MUSISZ coœ wiedzieæ!";
+	description	= "Pracujesz dla niego! MUSISZ coÅ› wiedzieÄ‡!";
 };
 FUNC INT DIA_Addon_Paul_HunoArbeit_Condition()
 {	
@@ -176,8 +176,8 @@ FUNC INT DIA_Addon_Paul_HunoArbeit_Condition()
 };
 FUNC VOID DIA_Addon_Paul_HunoArbeit_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_HunoArbeit_15_00"); //Pracujesz dla niego! MUSISZ coœ wiedzieæ!
-	AI_Output (self, other, "DIA_Addon_Paul_HunoArbeit_03_01"); //Nic nie wiem - naprawdê! Muszê dalej pracowaæ.
+	AI_Output (other, self, "DIA_Addon_Paul_HunoArbeit_15_00"); //Pracujesz dla niego! MUSISZ coÅ› wiedzieÄ‡!
+	AI_Output (self, other, "DIA_Addon_Paul_HunoArbeit_03_01"); //Nic nie wiem - naprawdÄ™! MuszÄ™ dalej pracowaÄ‡.
 	Npc_ExchangeRoutine(self, "AWAY");
 	AI_StopProcessInfos (self);
 };
@@ -192,7 +192,7 @@ INSTANCE DIA_Addon_Paul_FearEsteban (C_INFO)
 	condition   = DIA_Addon_Paul_FearEsteban_Condition;
 	information = DIA_Addon_Paul_FearEsteban_Info;
 	permanent   = FALSE;
-	description	= "Wiesz, co zrobi Esteban, gdy siê dowie, ¿e kryjesz Huno?";
+	description	= "Wiesz, co zrobi Esteban, gdy siÄ™ dowie, Å¼e kryjesz Huno?";
 };
 FUNC INT DIA_Addon_Paul_FearEsteban_Condition()
 {	
@@ -204,8 +204,8 @@ FUNC INT DIA_Addon_Paul_FearEsteban_Condition()
 };
 FUNC VOID DIA_Addon_Paul_FearEsteban_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_FearEsteban_15_00"); //Wiesz, co zrobi Esteban, gdy siê dowie, ¿e kryjesz Huno?
-	AI_Output (self, other, "DIA_Addon_Paul_FearEsteban_03_01"); //Cz³owieku, zostaw mnie w spokoju! Nie mia³em z tym nic wspólnego!
+	AI_Output (other, self, "DIA_Addon_Paul_FearEsteban_15_00"); //Wiesz, co zrobi Esteban, gdy siÄ™ dowie, Å¼e kryjesz Huno?
+	AI_Output (self, other, "DIA_Addon_Paul_FearEsteban_03_01"); //CzÅ‚owieku, zostaw mnie w spokoju! Nie miaÅ‚em z tym nic wspÃ³lnego!
 	Npc_ExchangeRoutine(self, "PRESTART");
 	AI_StopProcessInfos (self);
 };
@@ -232,20 +232,20 @@ FUNC INT DIA_Addon_Paul_MaulPaul_Condition()
 };
 FUNC VOID DIA_Addon_Paul_MaulPaul_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_00"); //Dobrze, a teraz powiesz mi wszystko, co wiesz, albo st³ukê ciê na kwaœne jab³ko!
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_01"); //N-nie, nie mo¿esz mnie tak traktowaæ tylko dlatego, ¿e pracujesz dla szefa!
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_02"); //Ale¿ oczywiœcie, ¿e mogê!
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_03"); //Nie zbli¿aj siê!
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_00"); //Dobrze, a teraz powiesz mi wszystko, co wiesz, albo stÅ‚ukÄ™ ciÄ™ na kwaÅ›ne jabÅ‚ko!
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_01"); //N-nie, nie moÅ¼esz mnie tak traktowaÄ‡ tylko dlatego, Å¼e pracujesz dla szefa!
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_02"); //AleÅ¼ oczywiÅ›cie, Å¼e mogÄ™!
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_03"); //Nie zbliÅ¼aj siÄ™!
 	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_04"); //Paul...
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_05"); //Wiem tylko tyle, ¿e Huno nie lubi Estebana.
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_06"); //Dzia³a mi na nerwy, opowiadaj¹c, ¿e Esteban ca³y czas psuje mu interes...
-	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_07"); //Nigdy nie komentowa³em tych spraw.
-	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_08"); //Mog³em siê domyœliæ. Widzisz, to nie by³o takie trudne, prawda?
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_05"); //Wiem tylko tyle, Å¼e Huno nie lubi Estebana.
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_06"); //DziaÅ‚a mi na nerwy, opowiadajÄ…c, Å¼e Esteban caÅ‚y czas psuje mu interes...
+	AI_Output (self, other, "DIA_Addon_Paul_MaulPaul_03_07"); //Nigdy nie komentowaÅ‚em tych spraw.
+	AI_Output (other, self, "DIA_Addon_Paul_MaulPaul_15_08"); //MogÅ‚em siÄ™ domyÅ›liÄ‡. Widzisz, to nie byÅ‚o takie trudne, prawda?
 	
 	Npc_ExchangeRoutine(self, "START");
 	
 	Paul_TellAll = TRUE;
-	B_LogEntry (Topic_Addon_Esteban, "Paul mówi, ¿e Huno nienawidzi Estebana za zrujnowanie jego interesu.");
+	B_LogEntry (Topic_Addon_Esteban, "Paul mÃ³wi, Å¼e Huno nienawidzi Estebana za zrujnowanie jego interesu.");
 };
 
 //----------------------------------------------------------------------
@@ -273,7 +273,7 @@ FUNC VOID DIA_Addon_Paul_Mine_Info()
 {	
 	B_Say 	  (other, self, "$MINE_ADDON_DESCRIPTION");
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
-	AI_Output (self, other, "DIA_Addon_BDT_1070_Paul_Mine_03_00");//W koñcu! Oto twoja ruda.
+	AI_Output (self, other, "DIA_Addon_BDT_1070_Paul_Mine_03_00");//W koÅ„cu! Oto twoja ruda.
 	B_GiveInvItems (self, other, ItMi_Nugget,2);
 	
 	Player_SentBuddler = (Player_SentBuddler +1);
@@ -292,7 +292,7 @@ INSTANCE DIA_Addon_Paul_PERM (C_INFO)
 	condition   = DIA_Addon_Paul_PERM_Condition;
 	information = DIA_Addon_Paul_PERM_Info;
 	permanent   = TRUE;
-	description = "Wszystko w porz¹dku?";
+	description = "Wszystko w porzÄ…dku?";
 };
 FUNC INT DIA_Addon_Paul_PERM_Condition()
 {	
@@ -303,22 +303,22 @@ FUNC INT DIA_Addon_Paul_PERM_Condition()
 };
 FUNC VOID DIA_Addon_Paul_PERM_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Paul_PERM_15_00"); //Wszystko w porz¹dku?
+	AI_Output (other, self, "DIA_Addon_Paul_PERM_15_00"); //Wszystko w porzÄ…dku?
 	
 	if (Npc_GetDistToWP (self,"ADW_MINE_PICK_07") <= 500)
 	{
-		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_01"); //Tak, zamierzam wydobyæ z tej ska³y trochê z³ota.
+		AI_Output (self, other, "DIA_Addon_Paul_PERM_03_01"); //Tak, zamierzam wydobyÄ‡ z tej skaÅ‚y trochÄ™ zÅ‚ota.
 	}
 	else 
 	{
 		if (Paul_TellAll == TRUE)
 		&& (Huno_zuSnaf == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_02"); //Powiedzia³em ci wszystko, co wiem!
+			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_02"); //PowiedziaÅ‚em ci wszystko, co wiem!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_03"); //Cz³owieku, ja chcê tylko spokojnie pracowaæ.
+			AI_Output (self, other, "DIA_Addon_Paul_PERM_03_03"); //CzÅ‚owieku, ja chcÄ™ tylko spokojnie pracowaÄ‡.
 		};
 	};
 };

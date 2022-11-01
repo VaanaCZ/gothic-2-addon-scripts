@@ -46,7 +46,7 @@ FUNC INT DIA_Larius_Hello_Condition()
 
 FUNC VOID DIA_Larius_Hello_Info()
 {	
-	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Czego chcesz? Jeœli masz jak¹œ sprawê, musisz siê najpierw umówiæ.
+	AI_Output (self,other,"DIA_Larius_Hello_01_00"); //Czego chcesz? JeÅ›li masz jakÄ…Å› sprawÄ™, musisz siÄ™ najpierw umÃ³wiÄ‡.
 
 };
 
@@ -61,7 +61,7 @@ INSTANCE DIA_Larius_WhoAreYou(C_INFO)
 	condition	= DIA_Larius_WhoAreYou_Condition;
 	information	= DIA_Larius_WhoAreYou_Info;
 	permanent	= FALSE;
-	description	= "Kim jesteœ?";
+	description	= "Kim jesteÅ›?";
 };                       
 
 FUNC INT DIA_Larius_WhoAreYou_Condition()
@@ -71,12 +71,12 @@ FUNC INT DIA_Larius_WhoAreYou_Condition()
 
 FUNC VOID DIA_Larius_WhoAreYou_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //Kim jesteœ?
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //Kim jesteÅ›?
 	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //Jestem Larius, miejscowy gubernator.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Chocia¿ w tym momencie mo¿e trudno w to uwierzyæ, jestem najbardziej wp³ywowym cz³owiekiem w tym mieœcie.
-	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //A wiêc ty tutaj rz¹dzisz?
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Ja... No có¿... w chwili obecnej mam zwi¹zane rêce.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Dopóki Lord Hagen nie opuœci miasta, to on sprawuje w³adzê.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //ChociaÅ¼ w tym momencie moÅ¼e trudno w to uwierzyÄ‡, jestem najbardziej wpÅ‚ywowym czÅ‚owiekiem w tym mieÅ›cie.
+	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //A wiÄ™c ty tutaj rzÄ…dzisz?
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Ja... No cÃ³Å¼... w chwili obecnej mam zwiÄ…zane rÄ™ce.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //DopÃ³ki Lord Hagen nie opuÅ›ci miasta, to on sprawuje wÅ‚adzÄ™.
 		
 };
 
@@ -91,7 +91,7 @@ INSTANCE DIA_Larius_Disturb(C_INFO)
 	condition	= DIA_Larius_Disturb_Condition;
 	information	= DIA_Larius_Disturb_Info;
 	permanent	= TRUE;
-	description	= "Nie chcia³em przeszkadzaæ.";
+	description	= "Nie chciaÅ‚em przeszkadzaÄ‡.";
 };                       
 
 FUNC INT DIA_Larius_Disturb_Condition()
@@ -101,8 +101,8 @@ FUNC INT DIA_Larius_Disturb_Condition()
 
 FUNC VOID DIA_Larius_Disturb_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //Nie chcia³em przeszkadzaæ.
-	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //A jednak przeszkadzasz. Wynoœ siê st¹d!
+	AI_Output (other,self ,"DIA_Larius_Disturb_15_00"); //Nie chciaÅ‚em przeszkadzaÄ‡.
+	AI_Output (self ,other,"DIA_Larius_Disturb_01_01"); //A jednak przeszkadzasz. WynoÅ› siÄ™ stÄ…d!
 };
 
 // ************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_Larius_DieLage(C_INFO)
 	condition	= DIA_Larius_DieLage_Condition;
 	information	= DIA_Larius_DieLage_Info;
 	permanent	= TRUE;
-	description	= "Co s³ychaæ?";
+	description	= "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT DIA_Larius_DieLage_Condition()
@@ -127,7 +127,7 @@ FUNC INT DIA_Larius_DieLage_Condition()
 FUNC VOID DIA_Larius_DieLage_Info()
 {	
 	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //Jak leci?
-	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //A co ciê to obchodzi? Dopóki w mieœcie przebywaj¹ paladyni, Lord Hagen sprawuje tu w³adzê.
+	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //A co ciÄ™ to obchodzi? DopÃ³ki w mieÅ›cie przebywajÄ… paladyni, Lord Hagen sprawuje tu wÅ‚adzÄ™.
 };
 
 
@@ -142,7 +142,7 @@ INSTANCE DIA_Larius_Richterueberfall(C_INFO)
 	condition	= DIA_Larius_Richterueberfall_Condition;
 	information	= DIA_Larius_Richterueberfall_Info;
 
-	description	= "Sêdzia wynaj¹³ kilku opryszków, ¿eby ciê uciszyli.";
+	description	= "SÄ™dzia wynajÄ…Å‚ kilku opryszkÃ³w, Å¼eby ciÄ™ uciszyli.";
 };                       
 
 FUNC INT DIA_Larius_Richterueberfall_Condition()
@@ -155,17 +155,17 @@ FUNC INT DIA_Larius_Richterueberfall_Condition()
 
 FUNC VOID DIA_Larius_Richterueberfall_Info()
 {	
-	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //Sêdzia wynaj¹³ kilku opryszków, ¿eby ciê uciszyli. Mogê to udowodniæ.
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //Nie opowiadaj takich bzdur, chcesz skoñczyæ w areszcie?
+	AI_Output (other,self ,"DIA_Larius_Richterueberfall_15_00"); //SÄ™dzia wynajÄ…Å‚ kilku opryszkÃ³w, Å¼eby ciÄ™ uciszyli. MogÄ™ to udowodniÄ‡.
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_01"); //Nie opowiadaj takich bzdur, chcesz skoÅ„czyÄ‡ w areszcie?
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //Nawet jeœli jesteœ wojownikiem Innosa...
+			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_02"); //Nawet jeÅ›li jesteÅ› wojownikiem Innosa...
 		};
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //Nawet jeœli jesteœ szanowanym magiem...
+			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //Nawet jeÅ›li jesteÅ› szanowanym magiem...
 		};
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //Moje s³owo wci¹¿ coœ znaczy w tym mieœcie. Ostrzegam ciê, nie zamierzam s³uchaæ, jak bezczelnie szkalujesz dobre imiê sêdziego!
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //Moje sÅ‚owo wciÄ…Å¼ coÅ› znaczy w tym mieÅ›cie. Ostrzegam ciÄ™, nie zamierzam sÅ‚uchaÄ‡, jak bezczelnie szkalujesz dobre imiÄ™ sÄ™dziego!
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };

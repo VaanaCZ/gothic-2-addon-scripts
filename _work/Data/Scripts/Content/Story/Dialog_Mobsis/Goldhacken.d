@@ -1,6 +1,6 @@
 FUNC INT B_GoldMob_Bestimmung()
 {
-	//bin ich mobsi X und habe ich noch Gold ¸brig?
+	//bin ich mobsi X und habe ich noch Gold √ºbrig?
 	if Hlp_StrCmp (Npc_GetNearestWP (self), "ADW_MINE_PICK_01") && (GoldMob_01_Amount_MAX > GoldMob_01_Amount)
 	{
 		GoldMob_01_Amount = (GoldMob_01_Amount +1);
@@ -153,7 +153,7 @@ INSTANCE PC_Goldhacken_Addon_Hour (C_Info)
 	condition		= PC_Goldhacken_Addon_Hour_Condition;
 	information		= PC_Goldhacken_Addon_Hour_Info;
 	permanent		= TRUE;
-	description		= "Od≥up trochÍ."; 
+	description		= "Od≈Çup trochƒô."; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Hour_Condition ()
@@ -200,7 +200,7 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 8)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-				PrintScreen ("Odpad≥y 3 samorodki z≥ota!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Odpad≈Çy 3 samorodki z≈Çota!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				
 			}
@@ -208,32 +208,32 @@ FUNC VOID PC_Goldhacken_Addon_Hour_Info()
 			&& (MultiNugget >= 5)
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-				PrintScreen ("Odpad≥y 2 samorodki z≥ota!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Odpad≈Çy 2 samorodki z≈Çota!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			}
 			else
 			{
 				CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-				PrintScreen ("Odpad≥ 1 samorodek z≥ota!", -1, -1, FONT_ScreenSmall, 2);	
+				PrintScreen ("Odpad≈Ç 1 samorodek z≈Çota!", -1, -1, FONT_ScreenSmall, 2);	
 				Truemmer_Count = 0;
 				GoldCounter = (GoldCounter +1);
 			};
 		}
 		else
 		{
-			PrintScreen ("Kawa≥ki z≥ota zasypujπ okolicÍ...", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Kawa≈Çki z≈Çota zasypujƒÖ okolicƒô...", -1, -1, FONT_ScreenSmall, 2);	
 			Truemmer_Count = (Truemmer_Count +1);
 		};
 	}
 	else
 	{
-		PrintScreen ("Nic nie zosta≥o.", -1, -1, FONT_ScreenSmall, 2);	
+		PrintScreen ("Nic nie zosta≈Ço.", -1, -1, FONT_ScreenSmall, 2);	
 		B_ENDPRODUCTIONDIALOG ();
 	};
 };
 //*******************************************************
-//	Goldhacken Tr¸mmerschlag
+//	Goldhacken Tr√ºmmerschlag
 //*******************************************************
 INSTANCE PC_Goldhacken_Addon_TSchlag (C_Info)
 {
@@ -273,19 +273,19 @@ FUNC VOID PC_Goldhacken_Addon_TSchlag_Info()
 		{
 			//----Gold verteilen-----------------------
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 3);	
-			PrintScreen ("Odpad≥y 3 samorodki z≥ota!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Odpad≈Çy 3 samorodki z≈Çota!", -1, -1, FONT_ScreenSmall, 2);	
 			
 		}
 		else if (TruemmerChance >= 50)
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 2);	
-			PrintScreen ("Odpad≥y 2 samorodki z≥ota!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Odpad≈Çy 2 samorodki z≈Çota!", -1, -1, FONT_ScreenSmall, 2);	
 		
 		}
 		else 
 		{
 			CreateInvItems (hero, ItMi_GoldNugget_Addon, 1);	
-			PrintScreen ("Odpad≥ 1 samorodek z≥ota!", -1, -1, FONT_ScreenSmall, 2);	
+			PrintScreen ("Odpad≈Ç 1 samorodek z≈Çota!", -1, -1, FONT_ScreenSmall, 2);	
 		};
 	};
 	Truemmer_Count = 0;
@@ -302,7 +302,7 @@ INSTANCE PC_Goldhacken_Addon_Chance (C_Info)
 	condition		= PC_Goldhacken_Addon_Chance_Condition;
 	information		= PC_Goldhacken_Addon_Chance_Info;
 	permanent		= TRUE;
-	description		= "(Ocena zdolnoúci)"; 
+	description		= "(Ocena zdolno≈õci)"; 
 };
 
 FUNC INT PC_Goldhacken_Addon_Chance_Condition ()
@@ -319,15 +319,15 @@ FUNC VOID PC_Goldhacken_Addon_Chance_Info()
 	
 	if (Hero_HackChance < 20) 
 	{
-		ConcatText = ConcatStrings ("nieopierzony øÛ≥todziÛb (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("nieopierzony ≈º√≥≈Çtodzi√≥b (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 40) 
 	{
-		ConcatText = ConcatStrings ("przeciÍtny kopacz (" , IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("przeciƒôtny kopacz (" , IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 55) 
 	{
-		ConcatText = ConcatStrings ("doúwiadczony kopacz (", IntToString (Hero_HackChance));
+		ConcatText = ConcatStrings ("do≈õwiadczony kopacz (", IntToString (Hero_HackChance));
 	}
 	else if (Hero_HackChance < 75) 
 	{

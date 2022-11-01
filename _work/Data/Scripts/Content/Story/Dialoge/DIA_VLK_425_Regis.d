@@ -74,10 +74,10 @@ func int DIA_Regis_Hallo_Condition ()
 };
 func void DIA_Regis_Hallo_Info ()
 {	
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Hej, nowy w mieœcie, co?
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Hej, nowy w mieÅ›cie, co?
 	AI_Output			(other, self, "DIA_Regis_Hallo_15_01"); //Tak, ale co ci do tego?
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //Niedawno przyby³em z kontynentu, teraz w³óczê siê bez celu. Z³oto niemal mi siê skoñczy³o, nie pozostanie mi wiêc chyba nic innego, jak tylko przy³¹czyæ siê do stra¿y.
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //Nie chcê tego jednak. To ¿adna przyjemnoœæ zostaæ rozszarpanym przez orków, w imiê Króla.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //Niedawno przybyÅ‚em z kontynentu, teraz wÅ‚Ã³czÄ™ siÄ™ bez celu. ZÅ‚oto niemal mi siÄ™ skoÅ„czyÅ‚o, nie pozostanie mi wiÄ™c chyba nic innego, jak tylko przyÅ‚Ä…czyÄ‡ siÄ™ do straÅ¼y.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //Nie chcÄ™ tego jednak. To Å¼adna przyjemnoÅ›Ä‡ zostaÄ‡ rozszarpanym przez orkÃ³w, w imiÄ™ KrÃ³la.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info MILIZ
@@ -89,7 +89,7 @@ instance DIA_Regis_MILIZ		(C_INFO)
 	condition	 = 	DIA_Regis_MILIZ_Condition;
 	information	 = 	DIA_Regis_MILIZ_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co mo¿esz mi powiedzieæ na temat stra¿y?";
+	description	 = 	"Co moÅ¼esz mi powiedzieÄ‡ na temat straÅ¼y?";
 };
 func int DIA_Regis_MILIZ_Condition ()
 {	
@@ -100,11 +100,11 @@ func int DIA_Regis_MILIZ_Condition ()
 };
 func void DIA_Regis_MILIZ_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Co mo¿esz mi powiedzieæ na temat stra¿y?
-	AI_Output (self, other, "DIA_Regis_Add_13_01"); //Jeden z paladynów przej¹³ niedawno dowodzenie. Niejaki Lord Andre.
-	AI_Output (self, other, "DIA_Regis_Add_13_02"); //Próbuje zmobilizowaæ po³owê miasta do walki przeciwko orkom.
-	AI_Output (self, other, "DIA_Regis_Add_13_03"); //Jednak, ¿eby siê zaci¹gn¹æ, trzeba byæ obywatelem miasta.
-	AI_Output (self, other, "DIA_Regis_Add_13_04"); //Z tego co wiem, to nie bêd¹c obywatelem, mo¿na trenowaæ, nie zostanie siê jednak oficjalnie przyjêtym.
+	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ na temat straÅ¼y?
+	AI_Output (self, other, "DIA_Regis_Add_13_01"); //Jeden z paladynÃ³w przejÄ…Å‚ niedawno dowodzenie. Niejaki Lord Andre.
+	AI_Output (self, other, "DIA_Regis_Add_13_02"); //PrÃ³buje zmobilizowaÄ‡ poÅ‚owÄ™ miasta do walki przeciwko orkom.
+	AI_Output (self, other, "DIA_Regis_Add_13_03"); //Jednak, Å¼eby siÄ™ zaciÄ…gnÄ…Ä‡, trzeba byÄ‡ obywatelem miasta.
+	AI_Output (self, other, "DIA_Regis_Add_13_04"); //Z tego co wiem, to nie bÄ™dÄ…c obywatelem, moÅ¼na trenowaÄ‡, nie zostanie siÄ™ jednak oficjalnie przyjÄ™tym.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info ANDRE
@@ -116,7 +116,7 @@ instance DIA_Regis_ANDRE		(C_INFO)
 	condition	 = 	DIA_Regis_ANDRE_Condition;
 	information	 = 	DIA_Regis_ANDRE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Co jeszcze mo¿esz mi powiedzieæ o Lordzie Andre?";
+	description	 = 	"Co jeszcze moÅ¼esz mi powiedzieÄ‡ o Lordzie Andre?";
 };
 func int DIA_Regis_ANDRE_Condition ()
 {	
@@ -127,18 +127,18 @@ func int DIA_Regis_ANDRE_Condition ()
 };
 func void DIA_Regis_ANDRE_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Co jeszcze mo¿esz mi powiedzieæ o Lordzie Andre?
-	AI_Output (self, other, "DIA_Regis_Add_13_05"); //Wiem, ¿e obj¹³ tak¿e funkcjê sêdziego.
-	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Jeœli wdasz siê w jakieœ k³opoty w mieœcie, bêdziesz musia³ przed nim odpowiadaæ.
-	AI_Output (self, other, "DIA_Regis_Add_13_07"); //Zdarzy³o mi siê raz wdaæ w bójkê z jednym z obywateli.
-	AI_Output (self, other, "DIA_Regis_Add_13_08"); //Ten pobieg³ z p³aczem do Lorda Andre i doniós³ na mnie.
-	AI_Output (self, other, "DIA_Regis_Add_13_09"); //Ta drobnostka kosztowa³a mnie 50 sztuk z³ota.
-	AI_Output (self, other, "DIA_Regis_Add_13_10"); //Ca³e szczêœcie, ¿e zajœcie mia³o miejsce w nocy i nie by³o œwiadków.
-	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Im wiêcej osób naskar¿y na ciebie w³adzom, tym wy¿sz¹ karê dostaniesz.
+	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Co jeszcze moÅ¼esz mi powiedzieÄ‡ o Lordzie Andre?
+	AI_Output (self, other, "DIA_Regis_Add_13_05"); //Wiem, Å¼e objÄ…Å‚ takÅ¼e funkcjÄ™ sÄ™dziego.
+	AI_Output (self, other, "DIA_Regis_Add_13_06"); //JeÅ›li wdasz siÄ™ w jakieÅ› kÅ‚opoty w mieÅ›cie, bÄ™dziesz musiaÅ‚ przed nim odpowiadaÄ‡.
+	AI_Output (self, other, "DIA_Regis_Add_13_07"); //ZdarzyÅ‚o mi siÄ™ raz wdaÄ‡ w bÃ³jkÄ™ z jednym z obywateli.
+	AI_Output (self, other, "DIA_Regis_Add_13_08"); //Ten pobiegÅ‚ z pÅ‚aczem do Lorda Andre i doniÃ³sÅ‚ na mnie.
+	AI_Output (self, other, "DIA_Regis_Add_13_09"); //Ta drobnostka kosztowaÅ‚a mnie 50 sztuk zÅ‚ota.
+	AI_Output (self, other, "DIA_Regis_Add_13_10"); //CaÅ‚e szczÄ™Å›cie, Å¼e zajÅ›cie miaÅ‚o miejsce w nocy i nie byÅ‚o Å›wiadkÃ³w.
+	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Im wiÄ™cej osÃ³b naskarÅ¼y na ciebie wÅ‚adzom, tym wyÅ¼szÄ… karÄ™ dostaniesz.
 };
 
 // ****************************************************
-// 					Prügelei mit Valentino
+// 					PrÃ¼gelei mit Valentino
 // ****************************************************
 instance DIA_Regis_Valentino (C_INFO)
 {
@@ -147,7 +147,7 @@ instance DIA_Regis_Valentino (C_INFO)
 	condition	 = 	DIA_Regis_Valentino_Condition;
 	information	 = 	DIA_Regis_Valentino_Info;
 	permanent    =  FALSE;
-	description	 = 	"Z kim siê pobi³eœ?";
+	description	 = 	"Z kim siÄ™ pobiÅ‚eÅ›?";
 };
 func int DIA_Regis_Valentino_Condition ()
 {	
@@ -158,9 +158,9 @@ func int DIA_Regis_Valentino_Condition ()
 };
 func void DIA_Regis_Valentino_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_Add_15_12"); //Z kim siê pobi³eœ?
-	AI_Output (self, other, "DIA_Regis_Add_13_13"); //Koleœ nazywa siê Valentino. Czêsto przesiaduje w knajpie, w pobli¿u œwi¹tyni.
-	AI_Output (self, other, "DIA_Regis_Add_13_14"); //Na ogó³, nie uznajê przemocy. Ale TEN cz³owiek zas³u¿y³ na to, ¿eby przerobiæ mu trochê facjatê.
+	AI_Output (other, self, "DIA_Regis_Add_15_12"); //Z kim siÄ™ pobiÅ‚eÅ›?
+	AI_Output (self, other, "DIA_Regis_Add_13_13"); //KoleÅ› nazywa siÄ™ Valentino. CzÄ™sto przesiaduje w knajpie, w pobliÅ¼u Å›wiÄ…tyni.
+	AI_Output (self, other, "DIA_Regis_Add_13_14"); //Na ogÃ³Å‚, nie uznajÄ™ przemocy. Ale TEN czÅ‚owiek zasÅ‚uÅ¼yÅ‚ na to, Å¼eby przerobiÄ‡ mu trochÄ™ facjatÄ™.
 };
 
 // ****************************************************
@@ -173,7 +173,7 @@ instance DIA_Regis_ValDefeat (C_INFO)
 	condition	 = 	DIA_Regis_ValDefeat_Condition;
 	information	 = 	DIA_Regis_ValDefeat_Info;
 	permanent    =  FALSE;
-	description	 = 	"Pozna³em Valentina.";
+	description	 = 	"PoznaÅ‚em Valentina.";
 };
 func int DIA_Regis_ValDefeat_Condition ()
 {	
@@ -185,16 +185,16 @@ func int DIA_Regis_ValDefeat_Condition ()
 };
 func void DIA_Regis_ValDefeat_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_Add_15_15"); //Pozna³em Valentina.
+	AI_Output (other, self, "DIA_Regis_Add_15_15"); //PoznaÅ‚em Valentina.
 	AI_Output (self, other, "DIA_Regis_Add_13_16"); //I?
-	AI_Output (other, self, "DIA_Regis_Add_15_17"); //Sprawi³em mu têgie lanie...
-	AI_Output (self, other, "DIA_Regis_Add_13_18"); //Zas³ugiwa³ na to...
+	AI_Output (other, self, "DIA_Regis_Add_15_17"); //SprawiÅ‚em mu tÄ™gie lanie...
+	AI_Output (self, other, "DIA_Regis_Add_13_18"); //ZasÅ‚ugiwaÅ‚ na to...
 	if (!Npc_IsDead (Valentino))
 	{
-		AI_Output (self, other, "DIA_Regis_Add_13_19"); //Podczas naszej ma³ej sprzeczki znalaz³em przy nim ten pierœcieñ.
+		AI_Output (self, other, "DIA_Regis_Add_13_19"); //Podczas naszej maÅ‚ej sprzeczki znalazÅ‚em przy nim ten pierÅ›cieÅ„.
 		B_GiveInvItems (self, other, ItRi_ValentinosRing, 1);
 		Regis_Ring = TRUE;
-		AI_Output (self, other, "DIA_Regis_Add_13_20"); //Mo¿esz go przekazaæ nastêpnej osobie, która da mu w mordê...
+		AI_Output (self, other, "DIA_Regis_Add_13_20"); //MoÅ¼esz go przekazaÄ‡ nastÄ™pnej osobie, ktÃ³ra da mu w mordÄ™...
 	};
 };
 
@@ -211,7 +211,7 @@ instance DIA_Regis_PERM		(C_INFO)
 	condition	 = 	DIA_Regis_PERM_Condition;
 	information	 = 	DIA_Regis_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Czy ostatnio wydarzy³o siê coœ ciekawego?";
+	description	 = 	"Czy ostatnio wydarzyÅ‚o siÄ™ coÅ› ciekawego?";
 };
 func int DIA_Regis_PERM_Condition ()
 {
@@ -219,15 +219,15 @@ func int DIA_Regis_PERM_Condition ()
 };
 func void DIA_Regis_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //Czy ostatnio wydarzy³o siê coœ ciekawego?
+	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //Czy ostatnio wydarzyÅ‚o siÄ™ coÅ› ciekawego?
 	
 	if (Regis_Bogendieb == FALSE)
 	&& (MIS_Bosper_Bogen != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //Mo¿na by tak powiedzieæ.
-		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Okradziono Bospera, miejscowego ³uczarza. Co za tupet.
-		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Koleœ po prostu wszed³ do sklepu, w œrodku dnia, i zabra³ stamt¹d ³uk.
-		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //Bosper wyskoczy³ za nim jak poparzony, krzycz¹c: 'Stój, zatrzymaj siê, draniu!' Z³odziej jednak by³ szybszy.
+		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //MoÅ¼na by tak powiedzieÄ‡.
+		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Okradziono Bospera, miejscowego Å‚uczarza. Co za tupet.
+		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //KoleÅ› po prostu wszedÅ‚ do sklepu, w Å›rodku dnia, i zabraÅ‚ stamtÄ…d Å‚uk.
+		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //Bosper wyskoczyÅ‚ za nim jak poparzony, krzyczÄ…c: 'StÃ³j, zatrzymaj siÄ™, draniu!' ZÅ‚odziej jednak byÅ‚ szybszy.
 		
 		
 		MIS_Bosper_Bogen = LOG_RUNNING;
@@ -236,28 +236,28 @@ func void DIA_Regis_PERM_Info ()
 	else if (MIS_Bosper_Bogen == LOG_SUCCESS)
 		 && (Regis_Bogendieb != 2)	
 	{
-		AI_Output (self, other, "DIA_Regis_PERM_13_05"); //Ostatnio jakiœ uczciwy znalazca odniós³ ³uk Bosperowi.
-		AI_Output (self, other, "DIA_Regis_PERM_13_06"); //To dziwne, mog³oby siê wydawaæ, ¿e ka¿dy chce dla siebie jak najwiêcej, a ten koleœ po prostu wraca i oddaje ³uk.
+		AI_Output (self, other, "DIA_Regis_PERM_13_05"); //Ostatnio jakiÅ› uczciwy znalazca odniÃ³sÅ‚ Å‚uk Bosperowi.
+		AI_Output (self, other, "DIA_Regis_PERM_13_06"); //To dziwne, mogÅ‚oby siÄ™ wydawaÄ‡, Å¼e kaÅ¼dy chce dla siebie jak najwiÄ™cej, a ten koleÅ› po prostu wraca i oddaje Å‚uk.
 		Regis_Bogendieb = 2;
 	}
 	else
 	{
 		if (Kapitel != 3)
 		{
-			AI_Output (self, other, "DIA_Regis_PERM_13_07"); //Có¿, wszystko po staremu. Jeœli zaatakuj¹ nas orkowie, na pewno to zauwa¿ymy...
+			AI_Output (self, other, "DIA_Regis_PERM_13_07"); //CÃ³Å¼, wszystko po staremu. JeÅ›li zaatakujÄ… nas orkowie, na pewno to zauwaÅ¼ymy...
 		}
 		else 
 		{
 			if (MIS_RescueBennet == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Okaza³o siê, ¿e najemnik by³ niewinny. Z tego co wiem, wypuszczono go na wolnoœæ.
-				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Lord Hagen musi byæ zielony ze z³oœci.
+				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //OkazaÅ‚o siÄ™, Å¼e najemnik byÅ‚ niewinny. Z tego co wiem, wypuszczono go na wolnoÅ›Ä‡.
+				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Lord Hagen musi byÄ‡ zielony ze zÅ‚oÅ›ci.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //Ca³e miasto jest rozsierdzone. Pamiêtasz paladyna Lothara?
-				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //Byæ mo¿e.
-				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //Tak czy inaczej, nie ¿yje. Jak zwykle, obwiniaj¹ najemników.
+				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //CaÅ‚e miasto jest rozsierdzone. PamiÄ™tasz paladyna Lothara?
+				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //ByÄ‡ moÅ¼e.
+				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //Tak czy inaczej, nie Å¼yje. Jak zwykle, obwiniajÄ… najemnikÃ³w.
 			};
 		};
 	};
@@ -273,7 +273,7 @@ instance DIA_Regis_Crew		(C_INFO)
 	condition	 = 	DIA_Regis_Crew_Condition;
 	information	 = 	DIA_Regis_Crew_Info;
 	permanent    =  FALSE;
-	description	 = 	"Szukam za³ogi, która wyruszy³aby ze mn¹ na morze.";
+	description	 = 	"Szukam zaÅ‚ogi, ktÃ³ra wyruszyÅ‚aby ze mnÄ… na morze.";
 };
 func int DIA_Regis_Crew_Condition ()
 {	
@@ -284,9 +284,9 @@ func int DIA_Regis_Crew_Condition ()
 };
 func void DIA_Regis_Crew_Info ()
 {
-	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //Szukam za³ogi, która wyruszy³aby ze mn¹ na morze.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //W tej kwestii nie mogê ci pomóc. Powinieneœ poszukaæ kogoœ w okolicach portu, mo¿e w okolicznych knajpach.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Jeœli w mieœcie s¹ jeszcze jacyœ ¿eglarze, to pewnie tam w³aœnie ich znajdziesz.
+	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //Szukam zaÅ‚ogi, ktÃ³ra wyruszyÅ‚aby ze mnÄ… na morze.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //W tej kwestii nie mogÄ™ ci pomÃ³c. PowinieneÅ› poszukaÄ‡ kogoÅ› w okolicach portu, moÅ¼e w okolicznych knajpach.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //JeÅ›li w mieÅ›cie sÄ… jeszcze jacyÅ› Å¼eglarze, to pewnie tam wÅ‚aÅ›nie ich znajdziesz.
 
 };
 

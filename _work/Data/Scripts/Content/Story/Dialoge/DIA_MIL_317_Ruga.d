@@ -31,7 +31,7 @@ INSTANCE DIA_Ruga_PICKPOCKET (C_INFO)
 	condition	= DIA_Ruga_PICKPOCKET_Condition;
 	information	= DIA_Ruga_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego klucza bêdzie doœæ ³atwa)";
+	description = "(KradzieÅ¼ tego klucza bÄ™dzie doÅ›Ä‡ Å‚atwa)";
 };                       
 
 FUNC INT DIA_Ruga_PICKPOCKET_Condition()
@@ -96,10 +96,10 @@ func int DIA_Ruga_Hallo_Condition ()
 func void DIA_Ruga_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Co tu robisz?
-	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Próbujê pokazaæ ch³opakom, jak w³aœciwie trzymaæ kuszê, i pomagam im nabraæ trochê zrêcznoœci.
+	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //PrÃ³bujÄ™ pokazaÄ‡ chÅ‚opakom, jak wÅ‚aÅ›ciwie trzymaÄ‡ kuszÄ™, i pomagam im nabraÄ‡ trochÄ™ zrÄ™cznoÅ›ci.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Ruga, stra¿nik miejski, pomo¿e mi w trenowaniu zrêcznoœci i nauczy mnie pos³ugiwaæ siê kusz¹, jednak tylko pod warunkiem, ¿e zostanê s³ug¹ Króla.");
+	B_LogEntry (Topic_CityTeacher, "Ruga, straÅ¼nik miejski, pomoÅ¼e mi w trenowaniu zrÄ™cznoÅ›ci i nauczy mnie posÅ‚ugiwaÄ‡ siÄ™ kuszÄ…, jednak tylko pod warunkiem, Å¼e zostanÄ™ sÅ‚ugÄ… KrÃ³la.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -111,7 +111,7 @@ instance DIA_Ruga_Train		(C_INFO)
 	condition	 = 	DIA_Ruga_Train_Condition;
 	information	 = 	DIA_Ruga_Train_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Mo¿esz mnie przeszkoliæ?";
+	description	 = 	"MoÅ¼esz mnie przeszkoliÄ‡?";
 };
 
 func int DIA_Ruga_Train_Condition ()
@@ -123,14 +123,14 @@ func int DIA_Ruga_Train_Condition ()
 };
 func void DIA_Ruga_Train_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Czy móg³byœ mnie trenowaæ?
+	AI_Output (other, self, "DIA_Ruga_Train_15_00"); //Czy mÃ³gÅ‚byÅ› mnie trenowaÄ‡?
 	
 	if (hero.guild == GIL_MIL)
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Jasne. Jeœli masz ju¿ trochê doœwiadczenia, chêtnie ci pomogê.
-		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Zawsze pamiêtaj, zwi¹zek miêdzy zrêcznoœci¹ a walk¹ na dystans jest równie wielki jak zwi¹zek kuszy i be³tu...
+		AI_Output (self, other, "DIA_Ruga_Train_11_01"); //Jasne. JeÅ›li masz juÅ¼ trochÄ™ doÅ›wiadczenia, chÄ™tnie ci pomogÄ™.
+		AI_Output (self, other, "DIA_Ruga_Train_11_02"); //Zawsze pamiÄ™taj, zwiÄ…zek miÄ™dzy zrÄ™cznoÅ›ciÄ… a walkÄ… na dystans jest rÃ³wnie wielki jak zwiÄ…zek kuszy i beÅ‚tu...
 		AI_Output (other, self, "DIA_Ruga_Train_15_03"); //...Jedno nie istnieje bez drugiego, rozumiem.
 	
 		Ruga_TeachCrossbow = TRUE;
@@ -139,13 +139,13 @@ func void DIA_Ruga_Train_Info ()
 	else if ((hero.guild == GIL_SLD)
 	|| 		 (hero.guild == GIL_DJG))
 	{
-		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //ZejdŸ mi z oczu, najemniku.
+		AI_Output (self, other, "DIA_Ruga_Train_11_04"); //ZejdÅº mi z oczu, najemniku.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{	 
-		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Nie, trenujê tylko osoby bêd¹ce na s³u¿bie u Króla. Nikogo wiêcej.
-		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Zawsze jednak przyda siê nam ktoœ taki jak ty. Jeœli wiêc chcesz zaci¹gn¹æ siê do stra¿y, porozmawiaj z Lordem Andre.
+		AI_Output (self, other, "DIA_Ruga_Train_11_05"); //Nie, trenujÄ™ tylko osoby bÄ™dÄ…ce na sÅ‚uÅ¼bie u KrÃ³la. Nikogo wiÄ™cej.
+		AI_Output (self, other, "DIA_Ruga_Train_11_06"); //Zawsze jednak przyda siÄ™ nam ktoÅ› taki jak ty. JeÅ›li wiÄ™c chcesz zaciÄ…gnÄ…Ä‡ siÄ™ do straÅ¼y, porozmawiaj z Lordem Andre.
 	};     
 };
 //**************************************
@@ -158,7 +158,7 @@ INSTANCE DIA_Ruga_Teach(C_INFO)
 	condition	= DIA_Ruga_Teach_Condition;
 	information	= DIA_Ruga_Teach_Info;
 	permanent	= TRUE;
-	description = "Poka¿ mi proszê, jak u¿ywaæ kuszy.";
+	description = "PokaÅ¼ mi proszÄ™, jak uÅ¼ywaÄ‡ kuszy.";
 };                       
 //-------------------------------------
 var int DIA_Ruga_Teach_permanent;
@@ -174,7 +174,7 @@ FUNC INT DIA_Ruga_Teach_Condition()
  
 FUNC VOID DIA_Ruga_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //Poka¿ mi proszê, jak u¿ywaæ kuszy.
+	AI_Output (other,self ,"DIA_Ruga_Teach_15_00"); //PokaÅ¼ mi proszÄ™, jak uÅ¼ywaÄ‡ kuszy.
 
 	Info_ClearChoices 	(DIA_Ruga_Teach);
 	Info_AddChoice 		(DIA_Ruga_Teach,	DIALOG_BACK		,DIA_Ruga_Teach_Back);
@@ -186,7 +186,7 @@ FUNC VOID DIA_Ruga_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 90)
 	{
-		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //Niczego wiecej ju¿ ciê nie nauczê. Czas, byœ znalaz³ sobie innego nauczyciela.
+		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //Niczego wiecej juÅ¼ ciÄ™ nie nauczÄ™. Czas, byÅ› znalazÅ‚ sobie innego nauczyciela.
 		DIA_Ruga_Teach_permanent = TRUE;
 		
 	};
@@ -224,7 +224,7 @@ instance DIA_Ruga_TEACHDEX		(C_INFO)
 	condition	 = 	DIA_Ruga_TEACHDEX_Condition;
 	information	 = 	DIA_Ruga_TEACHDEX_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chcê byæ zrêczniejszy.";
+	description	 = 	"ChcÄ™ byÄ‡ zrÄ™czniejszy.";
 };
 //------------------------------------
 var int DIA_Ruga_TEACHDEX_permanent;
@@ -239,7 +239,7 @@ func int DIA_Ruga_TEACHDEX_Condition ()
 };
 func void DIA_Ruga_TEACHDEX_Info ()
 {
-	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //Chcia³bym zwiêkszyæ swoj¹ zrêcznoœæ.
+	AI_Output (other, self, "DIA_Ruga_TEACHDEX_15_00"); //ChciaÅ‚bym zwiÄ™kszyÄ‡ swojÄ… zrÄ™cznoÅ›Ä‡.
 	
 	Info_ClearChoices   (DIA_Ruga_TEACHDEX);
 	Info_AddChoice 		(DIA_Ruga_TEACHDEX, DIALOG_BACK, DIA_Ruga_TEACHDEX_BACK);
@@ -251,7 +251,7 @@ func void DIA_Ruga_TEACHDEX_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //To wszystko, czego mog³em ciê nauczyæ. Jeœli chcesz podszlifowaæ sw¹ zrêcznoœæ, musisz znaleŸæ innego nauczyciela.
+		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //To wszystko, czego mogÅ‚em ciÄ™ nauczyÄ‡. JeÅ›li chcesz podszlifowaÄ‡ swÄ… zrÄ™cznoÅ›Ä‡, musisz znaleÅºÄ‡ innego nauczyciela.
 		DIA_Ruga_TEACHDEX_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Ruga_TEACHDEX);

@@ -49,32 +49,32 @@ FUNC INT DIA_Sentenza_Hello_Condition()
  
 FUNC VOID DIA_Sentenza_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Sentenza_Hello_09_00");	//A ty gdzie siÍ wybierasz?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_09_00");	//A ty gdzie siƒô wybierasz?
 	
 	self.aivar[AIV_LastFightComment] = TRUE;
 	Sentenza_SearchDay = B_GetDayPlus();
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "A co ciÍ to obchodzi?" 			,DIA_Sentenza_Hello_NotYourBusiness);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Chcia≥em siÍ rozejrzeÊ, to wszystko."	,DIA_Sentenza_Hello_JustLooking);
+	Info_AddChoice		(DIA_Sentenza_Hello, "A co ciƒô to obchodzi?" 			,DIA_Sentenza_Hello_NotYourBusiness);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Chcia≈Çem siƒô rozejrzeƒá, to wszystko."	,DIA_Sentenza_Hello_JustLooking);
 };
 
 func void DIA_Sentenza_Hello_JustLooking()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_JustLooking_15_00"); //Chcia≥em siÍ tylko rozejrzeÊ, to wszystko.
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_01"); //Na ludzi takich jak ty czekajπ tu same k≥opoty! A ty mi mÛwisz, øe chcesz siÍ tylko rozejrzeÊ?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_02"); //Ha! Zmierzasz w kierunku dworu! Po co inaczej przywlÛk≥byú siÍ aø tutaj, hm?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_03"); //Nie wciskaj mi wiÍc kitu i pozwÛl siÍ przeszukaÊ. Wtedy bÍdziesz mÛg≥ przejúÊ.
+	AI_Output (other, self,"DIA_Sentenza_Hello_JustLooking_15_00"); //Chcia≈Çem siƒô tylko rozejrzeƒá, to wszystko.
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_01"); //Na ludzi takich jak ty czekajƒÖ tu same k≈Çopoty! A ty mi m√≥wisz, ≈ºe chcesz siƒô tylko rozejrzeƒá?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_02"); //Ha! Zmierzasz w kierunku dworu! Po co inaczej przywl√≥k≈Çby≈õ siƒô a≈º tutaj, hm?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_JustLooking_09_03"); //Nie wciskaj mi wiƒôc kitu i pozw√≥l siƒô przeszukaƒá. Wtedy bƒôdziesz m√≥g≈Ç przej≈õƒá.
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Trzymaj ≥apy przy sobie!"				,DIA_Sentenza_Hello_HandsOff);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Jak tam sobie chcesz, moøesz mnie przeszukaÊ." 			,DIA_Sentenza_Hello_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Trzymaj ≈Çapy przy sobie!"				,DIA_Sentenza_Hello_HandsOff);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Jak tam sobie chcesz, mo≈ºesz mnie przeszukaƒá." 			,DIA_Sentenza_Hello_SearchMe);
 };
 
 func void DIA_Sentenza_Hello_NotYourBusiness()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_NotYourBusiness_15_00"); //A co ciÍ to obchodzi?
-	AI_Output (self ,other,"DIA_Sentenza_Hello_NotYourBusiness_09_01"); //WyjaúniÍ ci to powoli i dok≥adnie.
+	AI_Output (other, self,"DIA_Sentenza_Hello_NotYourBusiness_15_00"); //A co ciƒô to obchodzi?
+	AI_Output (self ,other,"DIA_Sentenza_Hello_NotYourBusiness_09_01"); //Wyja≈õniƒô ci to powoli i dok≈Çadnie.
 	
 	AI_StopProcessInfos (self);
 	
@@ -85,32 +85,32 @@ func void DIA_Sentenza_Hello_NotYourBusiness()
 	{
 		var int playerGold; playerGold = Npc_HasItems(other, ItMi_Gold);
 		
-		AI_Output (other, self,"DIA_Sentenza_Hello_SearchMe_15_00"); //Jak tam sobie chcesz, moøesz mnie przeszukaÊ.
-		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_01"); //SpÛjrzmy, co my tu mamy...
+		AI_Output (other, self,"DIA_Sentenza_Hello_SearchMe_15_00"); //Jak tam sobie chcesz, mo≈ºesz mnie przeszukaƒá.
+		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_01"); //Sp√≥jrzmy, co my tu mamy...
 		
 		if (playerGold >= 50)
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_02"); //Ach! Z≥oto! Niebezpiecznie jest nosiÊ przy sobie z≥oto.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_03"); //WiÍkszoúÊ najemnikÛw to zwyk≥e rzezimieszki. Nie uczciwi ludzie jak ja.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_02"); //Ach! Z≈Çoto! Niebezpiecznie jest nosiƒá przy sobie z≈Çoto.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_03"); //Wiƒôkszo≈õƒá najemnik√≥w to zwyk≈Çe rzezimieszki. Nie uczciwi ludzie jak ja.
 			B_GiveInvItems (other, self, ItMi_Gold, 50);
 			Sentenza_GoldTaken = TRUE;
 		}
 		else if (playerGold > 0)
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_04"); //CÛø, nie masz przy sobie zbyt wiele.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_05"); //Poczekaj, zaraz bÍdÍ z powrotem.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_04"); //C√≥≈º, nie masz przy sobie zbyt wiele.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_05"); //Poczekaj, zaraz bƒôdƒô z powrotem.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_06"); //Przyszed≥eú tu taki kawa≥ drogi bez z≥ota?
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_07"); //Nie wyglπdasz na zag≥odzonego, przyznaj siÍ, gdzie ukry≥eú kasÍ?
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_08"); //Tak czy inaczej, mπdry z ciebie goúÊ. Jestem pewien, øe jeszcze siÍ spotkamy. Do tego czasu, uwaøaj na siebie.
-			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_09"); //Tylko ty wiesz, gdzie schowa≥eú z≥oto!
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_06"); //Przyszed≈Çe≈õ tu taki kawa≈Ç drogi bez z≈Çota?
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_07"); //Nie wyglƒÖdasz na zag≈Çodzonego, przyznaj siƒô, gdzie ukry≈Çe≈õ kasƒô?
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_08"); //Tak czy inaczej, mƒÖdry z ciebie go≈õƒá. Jestem pewien, ≈ºe jeszcze siƒô spotkamy. Do tego czasu, uwa≈ºaj na siebie.
+			AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_09"); //Tylko ty wiesz, gdzie schowa≈Çe≈õ z≈Çoto!
 		};
 		
 		Sentenza_Wants50 = TRUE;
 
-		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_10"); //ChcÍ tylko 50 sztuk z≥ota - tyle wynosi myto. P≥acisz tylko raz. To chyba rozsπdne rozwiπzanie, prawda?
+		AI_Output (self ,other,"DIA_Sentenza_Hello_SearchMe_09_10"); //Chcƒô tylko 50 sztuk z≈Çota - tyle wynosi myto. P≈Çacisz tylko raz. To chyba rozsƒÖdne rozwiƒÖzanie, prawda?
 	};
 
 func void DIA_Sentenza_Hello_SearchMe()
@@ -121,18 +121,18 @@ func void DIA_Sentenza_Hello_SearchMe()
 
 func void DIA_Sentenza_Hello_HandsOff()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_HandsOff_15_00"); //Trzymaj ≥apy przy sobie!
+	AI_Output (other, self,"DIA_Sentenza_Hello_HandsOff_15_00"); //Trzymaj ≈Çapy przy sobie!
 	AI_Output (self ,other,"DIA_Sentenza_Hello_HandsOff_09_01"); //Albo co?
 	
 	Info_ClearChoices	(DIA_Sentenza_Hello);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Albo nic - moøesz mnie przeszukaÊ!"						,DIA_Sentenza_Hello_SearchMe);
-	Info_AddChoice		(DIA_Sentenza_Hello, "Albo przez nastÍpne dni nie bÍdziesz mia≥ si≥y, øeby kogokolwiek przeszukaÊ!"	,DIA_Sentenza_Hello_OrElse);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Albo nic - mo≈ºesz mnie przeszukaƒá!"						,DIA_Sentenza_Hello_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Hello, "Albo przez nastƒôpne dni nie bƒôdziesz mia≈Ç si≈Çy, ≈ºeby kogokolwiek przeszukaƒá!"	,DIA_Sentenza_Hello_OrElse);
 };
 
 func void DIA_Sentenza_Hello_OrElse()
 {
-	AI_Output (other, self,"DIA_Sentenza_Hello_OrElse_15_00"); //Albo przez nastÍpne kilka dni nie bÍdziesz w stanie nikogo przeszukaÊ!
-	AI_Output (self ,other,"DIA_Sentenza_Hello_OrElse_09_01"); //Przekonamy siÍ!
+	AI_Output (other, self,"DIA_Sentenza_Hello_OrElse_15_00"); //Albo przez nastƒôpne kilka dni nie bƒôdziesz w stanie nikogo przeszukaƒá!
+	AI_Output (self ,other,"DIA_Sentenza_Hello_OrElse_09_01"); //Przekonamy siƒô!
 	
 	AI_StopProcessInfos (self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -165,17 +165,17 @@ FUNC INT DIA_Sentenza_Vzwei_Condition()
 
 FUNC VOID DIA_Sentenza_Vzwei_Info()
 {	
-	AI_Output (self ,other,"DIA_Sentenza_Vzwei_09_00");	//To znowu ty. Sprawdümy, co tam masz przy sobie!
+	AI_Output (self ,other,"DIA_Sentenza_Vzwei_09_00");	//To znowu ty. Sprawd≈∫my, co tam masz przy sobie!
 
 	self.aivar[AIV_LastFightComment] = TRUE;
 	Sentenza_SearchDay = B_GetDayPlus();
 	
 	Info_ClearChoices	(DIA_Sentenza_Vzwei);
-	Info_AddChoice		(DIA_Sentenza_Vzwei, "Zabieraj ode mnie swoje obleúne ≥apska!"		,DIA_Sentenza_Vzwei_HandsOff);
+	Info_AddChoice		(DIA_Sentenza_Vzwei, "Zabieraj ode mnie swoje oble≈õne ≈Çapska!"		,DIA_Sentenza_Vzwei_HandsOff);
 	
 	
 	
-	Info_AddChoice		(DIA_Sentenza_Vzwei, "Jak tam sobie chcesz, moøesz mnie przeszukaÊ." 	,DIA_Sentenza_Vzwei_SearchMe);
+	Info_AddChoice		(DIA_Sentenza_Vzwei, "Jak tam sobie chcesz, mo≈ºesz mnie przeszukaƒá." 	,DIA_Sentenza_Vzwei_SearchMe);
 };
 
 func void DIA_Sentenza_Vzwei_SearchMe()
@@ -187,8 +187,8 @@ func void DIA_Sentenza_Vzwei_SearchMe()
 
 func void DIA_Sentenza_Vzwei_HandsOff()
 {
-	AI_Output (other, self,"DIA_Sentenza_Vzwei_HandsOff_15_00"); //Zabieraj ode mnie swoje obleúne ≥apska!
-	AI_Output (self ,other,"DIA_Sentenza_Vzwei_HandsOff_09_01"); //Ach? WidzÍ, øe tym razem masz coú przy sobie!
+	AI_Output (other, self,"DIA_Sentenza_Vzwei_HandsOff_15_00"); //Zabieraj ode mnie swoje oble≈õne ≈Çapska!
+	AI_Output (self ,other,"DIA_Sentenza_Vzwei_HandsOff_09_01"); //Ach? Widzƒô, ≈ºe tym razem masz co≈õ przy sobie!
 	
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -205,7 +205,7 @@ INSTANCE DIA_Sentenza_WannaJoin (C_INFO)
 	condition	= DIA_Sentenza_WannaJoin_Condition;
 	information	= DIA_Sentenza_WannaJoin_Info;
 	permanent	= FALSE;
-	description	= "ChcÍ siÍ do was przy≥πczyÊ!";
+	description	= "Chcƒô siƒô do was przy≈ÇƒÖczyƒá!";
 };                       
 
 FUNC INT DIA_Sentenza_WannaJoin_Condition()
@@ -218,9 +218,9 @@ FUNC INT DIA_Sentenza_WannaJoin_Condition()
 
 FUNC VOID DIA_Sentenza_WannaJoin_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_WannaJoin_15_00"); //ChcÍ siÍ do was przy≥πczyÊ!
-	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_01"); //åwietny pomys≥.
-	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_02"); //Rozumiesz chyba, øe najemnicy bÍdπ musieli zdecydowaÊ, czy chcπ byú siÍ przy≥πczy≥, czy teø nie?
+	AI_Output (other, self, "DIA_Sentenza_WannaJoin_15_00"); //Chcƒô siƒô do was przy≈ÇƒÖczyƒá!
+	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_01"); //≈öwietny pomys≈Ç.
+	AI_Output (self, other, "DIA_Sentenza_WannaJoin_09_02"); //Rozumiesz chyba, ≈ºe najemnicy bƒôdƒÖ musieli zdecydowaƒá, czy chcƒÖ by≈õ siƒô przy≈ÇƒÖczy≈Ç, czy te≈º nie?
 };
 
 // ************************************************************
@@ -234,7 +234,7 @@ INSTANCE DIA_Sentenza_Vote (C_INFO)
 	condition	= DIA_Sentenza_Vote_Condition;
 	information	= DIA_Sentenza_Vote_Info;
 	permanent	= TRUE;
-	description	= "Czy bÍdziesz g≥osowa≥ na tak?";
+	description	= "Czy bƒôdziesz g≈Çosowa≈Ç na tak?";
 };                       
 
 FUNC INT DIA_Sentenza_Vote_Condition()
@@ -248,30 +248,30 @@ FUNC INT DIA_Sentenza_Vote_Condition()
 
 FUNC VOID DIA_Sentenza_Vote_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_Vote_15_00"); //Czy bÍdziesz g≥osowa≥ na tak?
+	AI_Output (other, self, "DIA_Sentenza_Vote_15_00"); //Czy bƒôdziesz g≈Çosowa≈Ç na tak?
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_01"); //Dlaczego? Dlatego, øe mnie pobi≥eú? Nie ma szans.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_01"); //Dlaczego? Dlatego, ≈ºe mnie pobi≈Çe≈õ? Nie ma szans.
 	}
 	else if (Npc_HasItems (self, itmi_gold) >= 50)
 	&& 		( (Sentenza_GoldTaken == TRUE) ||	(Sentenza_GoldGiven == TRUE) )
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_02"); //W≥aúciwie, czemu nie? 50 sztuk z≥ota to chyba niewygÛrowana cena za pozytywny g≥os, nie uwaøasz?
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_02"); //W≈Ça≈õciwie, czemu nie? 50 sztuk z≈Çota to chyba niewyg√≥rowana cena za pozytywny g≈Ços, nie uwa≈ºasz?
 		
 		Sentenza_Stimme = TRUE;
-		B_LogEntry (TOPIC_SLDRespekt,"Sentenza nie sprzeciwia siÍ mojemu wstπpieniu w szeregi najemnikÛw.");
+		B_LogEntry (TOPIC_SLDRespekt,"Sentenza nie sprzeciwia siƒô mojemu wstƒÖpieniu w szeregi najemnik√≥w.");
 	}
 	else if (Sentenza_Stimme == TRUE)
 	&& 		(Npc_HasItems (self, itmi_gold) < 50)
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_03"); //Po tym, jak odebra≥eú mi z≥oto? Nie licz na to, ch≥opcze.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_03"); //Po tym, jak odebra≈Çe≈õ mi z≈Çoto? Nie licz na to, ch≈Çopcze.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_04"); //Tak nic nie za≥atwimy. Jeúli mam na ciebie g≥osowaÊ, musisz wysup≥aÊ trochÍ z≥ota.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_04"); //Tak nic nie za≈Çatwimy. Je≈õli mam na ciebie g≈Çosowaƒá, musisz wysup≈Çaƒá trochƒô z≈Çota.
 		AI_Output (other, self, "DIA_Sentenza_Vote_15_05"); //Ile?
-		AI_Output (self, other, "DIA_Sentenza_Vote_09_06"); //50 sztuk z≥ota, tyle ile wynosi myto.
+		AI_Output (self, other, "DIA_Sentenza_Vote_09_06"); //50 sztuk z≈Çota, tyle ile wynosi myto.
 		Sentenza_Wants50 = TRUE;
 	};
 };
@@ -289,7 +289,7 @@ INSTANCE DIA_Sentenza_Pay50 (C_INFO)
 	condition	= DIA_Sentenza_Pay50_Condition;
 	information	= DIA_Sentenza_Pay50_Info;
 	permanent	= TRUE;
-	description	= "Oto twoje 50 sztuk z≥ota.";
+	description	= "Oto twoje 50 sztuk z≈Çota.";
 };                       
 
 FUNC INT DIA_Sentenza_Pay50_Condition()
@@ -304,10 +304,10 @@ FUNC INT DIA_Sentenza_Pay50_Condition()
 
 FUNC VOID DIA_Sentenza_Pay50_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_Pay50_15_00"); //Oto twoje 50 sztuk z≥ota.
+	AI_Output (other, self, "DIA_Sentenza_Pay50_15_00"); //Oto twoje 50 sztuk z≈Çota.
 	if (B_GiveInvItems (other, self, ItMi_Gold, 50))
 	{
-		AI_Output (self, other, "DIA_Sentenza_Pay50_09_01"); //DziÍki, to powinno wystarczyÊ.
+		AI_Output (self, other, "DIA_Sentenza_Pay50_09_01"); //Dziƒôki, to powinno wystarczyƒá.
 		Sentenza_GoldGiven = TRUE;
 	}
 	else
@@ -317,7 +317,7 @@ FUNC VOID DIA_Sentenza_Pay50_Info()
 };
 
 // ************************************************************
-// 			  				Gold zur¸ckholen
+// 			  				Gold zur√ºckholen
 // ************************************************************
 var int Sentenza_Einmal;
 // ---------------------
@@ -329,7 +329,7 @@ INSTANCE DIA_Sentenza_GoldBack (C_INFO)
 	condition	= DIA_Sentenza_GoldBack_Condition;
 	information	= DIA_Sentenza_GoldBack_Info;
 	permanent	= TRUE;
-	description = "Oddawaj moje z≥oto!";
+	description = "Oddawaj moje z≈Çoto!";
 };                       
 
 FUNC INT DIA_Sentenza_GoldBack_Condition()
@@ -346,13 +346,13 @@ FUNC INT DIA_Sentenza_GoldBack_Condition()
  
 FUNC VOID DIA_Sentenza_GoldBack_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_GoldBack_15_00"); //Oddawaj moje z≥oto!
+	AI_Output (other, self, "DIA_Sentenza_GoldBack_15_00"); //Oddawaj moje z≈Çoto!
 	if (other.guild == GIL_SLD)
 	&& (Torlof_SentenzaCounted == TRUE)
 	&& (Sentenza_Einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_01"); //Teraz, kiedy odda≥em na ciebie g≥os?
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_02"); //Ty úmierdzπcy øebraku!
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_01"); //Teraz, kiedy odda≈Çem na ciebie g≈Ços?
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_02"); //Ty ≈õmierdzƒÖcy ≈ºebraku!
 		
 		Sentenza_Einmal = TRUE;
 		AI_StopProcessInfos(self);
@@ -360,7 +360,7 @@ FUNC VOID DIA_Sentenza_GoldBack_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_03"); //UspokÛj siÍ! Postanowi≥em je tylko przechowaÊ...
+		AI_Output (self, other, "DIA_Sentenza_GoldBack_09_03"); //Uspok√≥j siƒô! Postanowi≈Çem je tylko przechowaƒá...
 	};
 };
 
@@ -375,7 +375,7 @@ INSTANCE DIA_Sentenza_AufsMaul (C_INFO)
 	condition	= DIA_Sentenza_AufsMaul_Condition;
 	information	= DIA_Sentenza_AufsMaul_Info;
 	permanent	= FALSE; //FALSE!!!!!!!!!
-	description = "Powiedz no, czy to coú z przodu twojej g≥owy to twarz czy dupa?";
+	description = "Powiedz no, czy to co≈õ z przodu twojej g≈Çowy to twarz czy dupa?";
 };                       
 
 FUNC INT DIA_Sentenza_AufsMaul_Condition()
@@ -389,8 +389,8 @@ FUNC INT DIA_Sentenza_AufsMaul_Condition()
  
 FUNC VOID DIA_Sentenza_AufsMaul_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_AufsMaul_15_00"); //Powiedz no, czy to coú z przodu twojej g≥owy to twarz czy dupa?
-	AI_Output (self, other, "DIA_Sentenza_AufsMaul_09_01"); //W porzπdku, skoro tak chcesz...
+	AI_Output (other, self, "DIA_Sentenza_AufsMaul_15_00"); //Powiedz no, czy to co≈õ z przodu twojej g≈Çowy to twarz czy dupa?
+	AI_Output (self, other, "DIA_Sentenza_AufsMaul_09_01"); //W porzƒÖdku, skoro tak chcesz...
 	
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
@@ -407,7 +407,7 @@ INSTANCE DIA_Sentenza_AufsMaulAgain (C_INFO)
 	condition	= DIA_Sentenza_AufsMaulAgain_Condition;
 	information	= DIA_Sentenza_AufsMaulAgain_Info;
 	permanent	= TRUE;
-	description = "Koniec z mi≥ym goúciem!";
+	description = "Koniec z mi≈Çym go≈õciem!";
 };                       
 
 FUNC INT DIA_Sentenza_AufsMaulAgain_Condition()
@@ -424,8 +424,8 @@ FUNC INT DIA_Sentenza_AufsMaulAgain_Condition()
  
 FUNC VOID DIA_Sentenza_AufsMaulAgain_Info()
 {	
-	AI_Output (other, self, "DIA_Sentenza_AufsMaulAgain_15_00"); //Koniec z mi≥ym goúciem!
-	AI_Output (self, other, "DIA_Sentenza_AufsMaulAgain_09_01"); //Skoro tak mÛwisz...
+	AI_Output (other, self, "DIA_Sentenza_AufsMaulAgain_15_00"); //Koniec z mi≈Çym go≈õciem!
+	AI_Output (self, other, "DIA_Sentenza_AufsMaulAgain_09_01"); //Skoro tak m√≥wisz...
 	AI_StopProcessInfos(self);
 	B_Attack(self, other, AR_NONE, 1);
 };
@@ -454,10 +454,10 @@ FUNC VOID DIA_Sentenza_PERM_Info()
 {	
 	AI_Output (other, self, "DIA_Sentenza_PERM_15_00"); //No i jak tam interes?
 	
-	AI_Output (self, other, "DIA_Sentenza_PERM_09_01"); //Niewiele osÛb ostatnio tÍdy przechodzi, ale jak dotπd wszyscy p≥acili myto.
+	AI_Output (self, other, "DIA_Sentenza_PERM_09_01"); //Niewiele os√≥b ostatnio tƒôdy przechodzi, ale jak dotƒÖd wszyscy p≈Çacili myto.
 	if (Npc_HasItems (self, itmi_gold) < 50)
 	{
-		AI_Output (self, other, "DIA_Sentenza_PERM_09_02"); //OprÛcz ciebie...
+		AI_Output (self, other, "DIA_Sentenza_PERM_09_02"); //Opr√≥cz ciebie...
 	};
 };
 

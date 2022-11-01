@@ -63,7 +63,7 @@ INSTANCE DIA_Addon_Wache_01_Hi   (C_INFO)
 	condition   = DIA_Addon_Wache_01_Hi_Condition;
 	information = DIA_Addon_Wache_01_Hi_Info;
 	permanent   = TRUE;
-	description = "W porz¹dku?";
+	description = "W porzÄ…dku?";
 };
 FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 {	
@@ -71,7 +71,7 @@ FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_01_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//W porz¹dku?
+	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//W porzÄ…dku?
 	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//Dotknij tylko Estebana, a zginiesz.
 	
 	AI_StopProcessInfos (self);

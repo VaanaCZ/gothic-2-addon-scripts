@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Scatty_Hi   (C_INFO)
 	condition   = DIA_Addon_Scatty_Hi_Condition;
 	information = DIA_Addon_Scatty_Hi_Info;
 	permanent   = FALSE;
-	description = "Jak ci id¹ interesy?";
+	description = "Jak ci idÄ… interesy?";
 };
 FUNC INT DIA_Addon_Scatty_Hi_Condition()
 {	
@@ -77,13 +77,13 @@ FUNC INT DIA_Addon_Scatty_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Jak ci id¹ interesy?
+	AI_Output (other, self, "DIA_Addon_Scatty_Hi_15_00");//Jak ci idÄ… interesy?
 	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_01");//Od otwarcia krypty coraz gorzej....
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Kruk nie potrzebuje ju¿ niewolników. Teraz kopi¹ z³oto, bo tak kaza³ im Bloodwyn.
-	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//A kopacze maj¹ wolne. Odpoczywaj¹cy kopacze nie wró¿¹ dobrze moim interesom.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_02");//Kruk nie potrzebuje juÅ¼ niewolnikÃ³w. Teraz kopiÄ… zÅ‚oto, bo tak kazaÅ‚ im Bloodwyn.
+	AI_Output (self, other, "DIA_Addon_Scatty_Hi_01_03");//A kopacze majÄ… wolne. OdpoczywajÄ…cy kopacze nie wrÃ³Å¼Ä… dobrze moim interesom.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty handluje ró¿nymi towarami.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Scatty handluje rÃ³Å¼nymi towarami.");
 };
 /*
 	Ich bin hier auch sowas wie der Proviantmeister. Wenn du was brauchst, kannst du mit mir handeln. 
@@ -112,11 +112,11 @@ FUNC INT DIA_Addon_Scatty_last_Condition()
 FUNC VOID DIA_Addon_Scatty_last_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Scatty_last_15_00");//Bloodwyn? To on tu jest szefem?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Kontroluje kopalniê, ale rzadko do niej zagl¹da. Wiêkszoœæ czasu spêdza z Krukiem w œwi¹tyni.
-	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Co dok³adnie oznacza "rzadko"?
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Ostatnio widzia³em go, gdy wychodzi³ z krypty...
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//Nie, czekaj! To chyba by³o wtedy, gdy wys³a³ niewolników, aby wydobywali z³oto.
-	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Bardzo je lubi... inaczej ni¿ Kruk.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_01");//Kontroluje kopalniÄ™, ale rzadko do niej zaglÄ…da. WiÄ™kszoÅ›Ä‡ czasu spÄ™dza z Krukiem w Å›wiÄ…tyni.
+	AI_Output (other, self, "DIA_Addon_Scatty_last_15_02");//Co dokÅ‚adnie oznacza "rzadko"?
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_03");//Ostatnio widziaÅ‚em go, gdy wychodziÅ‚ z krypty...
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_04");//Nie, czekaj! To chyba byÅ‚o wtedy, gdy wysÅ‚aÅ‚ niewolnikÃ³w, aby wydobywali zÅ‚oto.
+	AI_Output (self, other, "DIA_Addon_Scatty_last_01_05");//Bardzo je lubi... inaczej niÅ¼ Kruk.
 };
 //---------------------------------------------------------------------
 //	Info Gruft
@@ -128,7 +128,7 @@ INSTANCE DIA_Addon_Scatty_Gruft   (C_INFO)
 	condition   = DIA_Addon_Scatty_Gruft_Condition;
 	information = DIA_Addon_Scatty_Gruft_Info;
 	permanent   = FALSE;
-	description = "O jakiej krypcie mówisz?";
+	description = "O jakiej krypcie mÃ³wisz?";
 };
 FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 {	
@@ -139,12 +139,12 @@ FUNC INT DIA_Addon_Scatty_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Gruft_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//O jakiej krypcie mówisz?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//To przeklêta krypta! Jej stra¿nicy zabili wielu ludzi!
-	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//Stra¿nicy? Mówisz o tych kamiennych stworach? O p³askich twarzach i okr¹g³ych g³owach?
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Tak! Ze ska³ wysz³y ich ca³e tuziny!
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Od pocz¹tku wiedzia³em, ¿e otwieranie krypty to nie jest dobry pomys³.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Kruk mia³ obsesjê na punkcie tych wykopalisk. Gdy tylko krypta zosta³a ods³oniêta, on i jego stra¿nicy weszli do œrodka.
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_00");//O jakiej krypcie mÃ³wisz?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_01");//To przeklÄ™ta krypta! Jej straÅ¼nicy zabili wielu ludzi!
+	AI_Output (other, self, "DIA_Addon_Scatty_Gruft_15_02");//StraÅ¼nicy? MÃ³wisz o tych kamiennych stworach? O pÅ‚askich twarzach i okrÄ…gÅ‚ych gÅ‚owach?
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_03");//Tak! Ze skaÅ‚ wyszÅ‚y ich caÅ‚e tuziny!
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_04");//Od poczÄ…tku wiedziaÅ‚em, Å¼e otwieranie krypty to nie jest dobry pomysÅ‚.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gruft_01_05");//Kruk miaÅ‚ obsesjÄ™ na punkcie tych wykopalisk. Gdy tylko krypta zostaÅ‚a odsÅ‚oniÄ™ta, on i jego straÅ¼nicy weszli do Å›rodka.
 };
 //---------------------------------------------------------------------
 //	Info GruftAgain
@@ -156,7 +156,7 @@ INSTANCE DIA_Addon_Scatty_GruftAgain   (C_INFO)
 	condition   = DIA_Addon_Scatty_GruftAgain_Condition;
 	information = DIA_Addon_Scatty_GruftAgain_Info;
 	permanent   = FALSE;
-	description = "Dlaczego Kruk tak chcia³ wejœæ do tej krypty?";
+	description = "Dlaczego Kruk tak chciaÅ‚ wejÅ›Ä‡ do tej krypty?";
 };
 FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 {	
@@ -167,17 +167,17 @@ FUNC INT DIA_Addon_Scatty_GruftAgain_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_GruftAgain_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Dlaczego Kruk tak chcia³ wejœæ do tej krypty?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//Hmm. Jesteœ doœæ wœcibski. Przypominasz mi goœcia, którego kiedyœ zna³em.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//By³ równie wœcibski. A pewnego dnia sprowadzi³o to na niego zgubê.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//Przestañ be³kotaæ. Co siê sta³o w krypcie?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//No có¿... Ee, zasch³o mi w ustach. Napi³bym siê czegoœ.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Hej, Scatt, NIE TERAZ. To wa¿ne. Co Kruk robi³ na dole?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Dobrze... On... przywo³a³ coœ, u¿ywaj¹c s³ów jakiegoœ dziwnego jêzyka.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Ze œrodka krypty przesi¹ka³o lœni¹ce œwiat³o, potem us³ysza³em krzyk. Wstrz¹saj¹cy, demoniczny wrzask.
-	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//Co sta³o siê potem?
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//To wszystko, co widzia³em. Z krypty wyszed³ Bloodwyn i kaza³ mi siê wynosiæ. Tak zreszt¹ zrobi³em.
-	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//Krótko potem Kruk i jego ludzie opuœcili œwi¹tyniê. Od tamtej pory nie by³o go tu na dole.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_00");//Dlaczego Kruk tak chciaÅ‚ wejÅ›Ä‡ do tej krypty?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_01");//Hmm. JesteÅ› doÅ›Ä‡ wÅ›cibski. Przypominasz mi goÅ›cia, ktÃ³rego kiedyÅ› znaÅ‚em.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_02");//ByÅ‚ rÃ³wnie wÅ›cibski. A pewnego dnia sprowadziÅ‚o to na niego zgubÄ™.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_03");//PrzestaÅ„ beÅ‚kotaÄ‡. Co siÄ™ staÅ‚o w krypcie?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_04");//No cÃ³Å¼... Ee, zaschÅ‚o mi w ustach. NapiÅ‚bym siÄ™ czegoÅ›.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_05");//Hej, Scatt, NIE TERAZ. To waÅ¼ne. Co Kruk robiÅ‚ na dole?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_06");//Dobrze... On... przywoÅ‚aÅ‚ coÅ›, uÅ¼ywajÄ…c sÅ‚Ã³w jakiegoÅ› dziwnego jÄ™zyka.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_07");//Ze Å›rodka krypty przesiÄ…kaÅ‚o lÅ›niÄ…ce Å›wiatÅ‚o, potem usÅ‚yszaÅ‚em krzyk. WstrzÄ…sajÄ…cy, demoniczny wrzask.
+	AI_Output (other, self, "DIA_Addon_Scatty_GruftAgain_15_08");//Co staÅ‚o siÄ™ potem?
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_09");//To wszystko, co widziaÅ‚em. Z krypty wyszedÅ‚ Bloodwyn i kazaÅ‚ mi siÄ™ wynosiÄ‡. Tak zresztÄ… zrobiÅ‚em.
+	AI_Output (self, other, "DIA_Addon_Scatty_GruftAgain_01_10");//KrÃ³tko potem Kruk i jego ludzie opuÅ›cili Å›wiÄ…tyniÄ™. Od tamtej pory nie byÅ‚o go tu na dole.
 };
 //---------------------------------------------------------------------
 //	Info Trinken
@@ -189,7 +189,7 @@ INSTANCE DIA_Addon_Scatty_Trinken   (C_INFO)
 	condition   = DIA_Addon_Scatty_Trinken_Condition;
 	information = DIA_Addon_Scatty_Trinken_Info;
 	permanent   = FALSE;
-	description = "Napijesz siê czegoœ?";
+	description = "Napijesz siÄ™ czegoÅ›?";
 };
 FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 {	
@@ -200,9 +200,9 @@ FUNC INT DIA_Addon_Scatty_Trinken_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Trinken_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Napijesz siê czegoœ?
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//Napi³bym siê piwa. Trudno je dostaæ w tym obozie.
-	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//Mo¿e Lucia ma jeszcze gdzieœ butelkê.
+	AI_Output (other, self, "DIA_Addon_Scatty_Trinken_15_00");//Napijesz siÄ™ czegoÅ›?
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_01");//NapiÅ‚bym siÄ™ piwa. Trudno je dostaÄ‡ w tym obozie.
+	AI_Output (self, other, "DIA_Addon_Scatty_Trinken_01_02");//MoÅ¼e Lucia ma jeszcze gdzieÅ› butelkÄ™.
 };
 //---------------------------------------------------------------------
 //	Info Bier geben
@@ -214,7 +214,7 @@ INSTANCE DIA_Addon_Scatty_Bier   (C_INFO)
 	condition   = DIA_Addon_Scatty_Bier_Condition;
 	information = DIA_Addon_Scatty_Bier_Info;
 	permanent   = FALSE;
-	description = "Zdrówko! (Daj piwo)";
+	description = "ZdrÃ³wko! (Daj piwo)";
 };
 FUNC INT DIA_Addon_Scatty_Bier_Condition()
 {	
@@ -226,13 +226,13 @@ FUNC INT DIA_Addon_Scatty_Bier_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_Bier_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//Zdrówko!
+	AI_Output (other, self, "DIA_Addon_Scatty_Bier_15_00");//ZdrÃ³wko!
 	
 	if B_GiveInvItems (other, self, ItFo_Beer, 1)
 	{
 		AI_UseItem (self, ItFo_Beer);
 	};
-	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Och, ale dobre. Dziêki, jesteœ moim bohaterem.
+	AI_Output (self, other, "DIA_Addon_Scatty_Bier_01_01");//Och, ale dobre. DziÄ™ki, jesteÅ› moim bohaterem.
 	
 	B_GivePlayerXP (XP_Ambient* 5);
 };
@@ -256,9 +256,9 @@ FUNC INT DIA_Addon_Scatty_Gold_Condition()
 FUNC VOID DIA_Addon_Scatty_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Bierzesz kilof i walisz w kawa³ z³ota... Ka¿dy to potrafi.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//Jeœli jednak bêdziesz tak robiæ, z³oto rozpadnie siê na drobne bry³ki. Dlatego w³aœnie kopaæ powinni ludzie z doœwiadczeniem.
-	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//Je¿eli masz trochê doœwiadczenia, to mogê ci powiedzieæ jeszcze parê rzeczy.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_00");//Bierzesz kilof i walisz w kawaÅ‚ zÅ‚ota... KaÅ¼dy to potrafi.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_01");//JeÅ›li jednak bÄ™dziesz tak robiÄ‡, zÅ‚oto rozpadnie siÄ™ na drobne bryÅ‚ki. Dlatego wÅ‚aÅ›nie kopaÄ‡ powinni ludzie z doÅ›wiadczeniem.
+	AI_Output (self, other, "DIA_Addon_Scatty_Gold_01_02");//JeÅ¼eli masz trochÄ™ doÅ›wiadczenia, to mogÄ™ ci powiedzieÄ‡ jeszcze parÄ™ rzeczy.
 
 	B_Upgrade_Hero_HackChance(5);
 };
@@ -274,7 +274,7 @@ INSTANCE DIA_Addon_Scatty_teach   (C_INFO)
 	condition   = DIA_Addon_Scatty_teach_Condition;
 	information = DIA_Addon_Scatty_teach_Info;
 	permanent   = TRUE;
-	description = "Naucz siê wydobywania z³ota. (Koszt: 2 PN/10 procent)";
+	description = "Naucz siÄ™ wydobywania zÅ‚ota. (Koszt: 2 PN/10 procent)";
 };
 FUNC INT DIA_Addon_Scatty_teach_Condition()
 {	
@@ -286,14 +286,14 @@ FUNC INT DIA_Addon_Scatty_teach_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_teach_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Powiedz mi coœ o kopaniu z³ota.
+	AI_Output (other, self, "DIA_Addon_Scatty_teach_15_00");//Powiedz mi coÅ› o kopaniu zÅ‚ota.
 	
 	if (other.lp >= 1)  
 	{
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Musisz pamiêtaæ, ¿e z³oto nie przypomina rudy. Jest miêkkie jak mas³o. Jak uderzysz zbyt mocno, rozpadnie siê na drobne kawa³eczki.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//Ka¿dy z kopaczy zna sztuczki, dziêki którym wydobywa ze ska³y ³adne bry³ki.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//To w³aœnie pomaga rozró¿niæ dobrego kopacza od z³ego.
-		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//No i praktyka te¿ robi swoje. Jak trochê popracujesz, bêdzie ci sz³o lepiej.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_01");//Musisz pamiÄ™taÄ‡, Å¼e zÅ‚oto nie przypomina rudy. Jest miÄ™kkie jak masÅ‚o. Jak uderzysz zbyt mocno, rozpadnie siÄ™ na drobne kawaÅ‚eczki.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_02");//KaÅ¼dy z kopaczy zna sztuczki, dziÄ™ki ktÃ³rym wydobywa ze skaÅ‚y Å‚adne bryÅ‚ki.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_03");//To wÅ‚aÅ›nie pomaga rozrÃ³Å¼niÄ‡ dobrego kopacza od zÅ‚ego.
+		AI_Output (self, other, "DIA_Addon_Scatty_teach_01_04");//No i praktyka teÅ¼ robi swoje. Jak trochÄ™ popracujesz, bÄ™dzie ci szÅ‚o lepiej.
 		
 		other.lp = (other.lp -1);
 		B_Upgrade_Hero_HackChance(10);
@@ -315,7 +315,7 @@ INSTANCE DIA_Addon_Scatty_tot   (C_INFO)
 	condition   = DIA_Addon_Scatty_tot_Condition;
 	information = DIA_Addon_Scatty_tot_Info;
 	permanent   = FALSE;
-	description = "Bloodwyn nie ¿yje.";
+	description = "Bloodwyn nie Å¼yje.";
 };
 FUNC INT DIA_Addon_Scatty_tot_Condition()
 {	
@@ -326,8 +326,8 @@ FUNC INT DIA_Addon_Scatty_tot_Condition()
 };
 FUNC VOID DIA_Addon_Scatty_tot_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Bloodwyn nie ¿yje.
-	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hmm, taka wiadomoœæ nie powinna mnie ucieszyæ. Ale Bloodwyn jest kolesiem, którego wolê widzieæ martwym.
+	AI_Output (other, self, "DIA_Addon_Scatty_tot_15_00");//Bloodwyn nie Å¼yje.
+	AI_Output (self, other, "DIA_Addon_Scatty_tot_01_01");//Hmm, taka wiadomoÅ›Ä‡ nie powinna mnie ucieszyÄ‡. Ale Bloodwyn jest kolesiem, ktÃ³rego wolÄ™ widzieÄ‡ martwym.
 };
 //---------------------------------------------------------------------
 //	Info trade

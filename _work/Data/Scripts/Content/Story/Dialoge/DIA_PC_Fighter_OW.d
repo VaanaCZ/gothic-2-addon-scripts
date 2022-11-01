@@ -47,23 +47,23 @@ FUNC VOID DIA_GornOW_Hello_Info()
 	VAR C_NPC Milten;
 	Milten			= Hlp_GetNpc(PC_Mage_OW);
 	
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Doœæ tego wylegiwania! Jesteœ wolny!
-	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //Najwy¿szy czas, ¿eby ktoœ mnie st¹d wyci¹gn¹³.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Ale w ¿yciu bym siê nie spodziewa³, ¿e to bêdziesz ty! Dobrze ciê znowu widzieæ!
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//Garond narzeka, ¿e za du¿o jesz i nie mo¿e sobie pozwoliæ na utrzymywanie takiego darmozjada.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Skoro ju¿ o tym mowa - napi³bym siê dobrego piwa! ChodŸmy st¹d, zbrzyd³a mi ta cela.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//DoÅ›Ä‡ tego wylegiwania! JesteÅ› wolny!
+	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //NajwyÅ¼szy czas, Å¼eby ktoÅ› mnie stÄ…d wyciÄ…gnÄ…Å‚.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Ale w Å¼yciu bym siÄ™ nie spodziewaÅ‚, Å¼e to bÄ™dziesz ty! Dobrze ciÄ™ znowu widzieÄ‡!
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//Garond narzeka, Å¼e za duÅ¼o jesz i nie moÅ¼e sobie pozwoliÄ‡ na utrzymywanie takiego darmozjada.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Skoro juÅ¼ o tym mowa - napiÅ‚bym siÄ™ dobrego piwa! ChodÅºmy stÄ…d, zbrzydÅ‚a mi ta cela.
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Czekaj chwilê. Mam tutaj coœ, co mo¿e ci siê przydaæ.
-		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //Znalaz³em w celi tê zbrojê. Jakiœ wiêzieñ musia³ j¹ tutaj ukryæ.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Czekaj chwilÄ™. Mam tutaj coÅ›, co moÅ¼e ci siÄ™ przydaÄ‡.
+		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //ZnalazÅ‚em w celi tÄ™ zbrojÄ™. JakiÅ› wiÄ™zieÅ„ musiaÅ‚ jÄ… tutaj ukryÄ‡.
 		B_GiveInvItems (self, other, itar_sld_M, 1);
-		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Na mnie jest za ma³a, ale na ciebie powinna pasowaæ.
-		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //Dziêki! Zobaczymy siê u Miltena...
+		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Na mnie jest za maÅ‚a, ale na ciebie powinna pasowaÄ‡.
+		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //DziÄ™ki! Zobaczymy siÄ™ u Miltena...
 	}
 	else
 	{
-		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//W porz¹dku. Zobaczymy siê u Miltena.
+		AI_Output 	(other,self ,"DIA_GornOW_Hello_15_05");	//W porzÄ…dku. Zobaczymy siÄ™ u Miltena.
 	};
 	AI_Output	(self ,other,"DIA_GornOW_Hello_12_06");	//Jasna sprawa!
 	
@@ -100,20 +100,20 @@ FUNC INT DIA_GornOW_MetMilten_Condition()
 };
 FUNC VOID DIA_GornOW_MetMilten_Info()
 {	
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//S³uchaj, doœæ siê ju¿ tutaj wynudzi³em. Mam wielk¹ ochotê rozejrzeæ siê trochê poza dolin¹.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Jak siê przedosta³eœ przez prze³êcz?
-	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//Znalaz³em ukryt¹ œcie¿kê, która prowadzi przez opuszczon¹ kopalniê.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Œwietnie. Zaczekam na w³aœciw¹ chwilê, a potem dam st¹d nogê.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//SÅ‚uchaj, doÅ›Ä‡ siÄ™ juÅ¼ tutaj wynudziÅ‚em. Mam wielkÄ… ochotÄ™ rozejrzeÄ‡ siÄ™ trochÄ™ poza dolinÄ….
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Jak siÄ™ przedostaÅ‚eÅ› przez przeÅ‚Ä™cz?
+	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//ZnalazÅ‚em ukrytÄ… Å›cieÅ¼kÄ™, ktÃ³ra prowadzi przez opuszczonÄ… kopalniÄ™.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Åšwietnie. Zaczekam na wÅ‚aÅ›ciwÄ… chwilÄ™, a potem dam stÄ…d nogÄ™.
 	
 	if (other.guild != GIL_SLD)
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//Dok¹d pójdziesz?
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Podobno Lee jeszcze ¿yje. Spróbujê znowu do niego do³¹czyæ.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//DokÄ…d pÃ³jdziesz?
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Podobno Lee jeszcze Å¼yje. SprÃ³bujÄ™ znowu do niego doÅ‚Ä…czyÄ‡.
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//W takim razie idŸ na farmê Onara. Znajdziesz tam Lee i jego ch³opców. Na pewno uciesz¹ siê na twój widok.
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//Tak zrobiê! Dziêki za cynk.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//W takim razie idÅº na farmÄ™ Onara. Znajdziesz tam Lee i jego chÅ‚opcÃ³w. Na pewno ucieszÄ… siÄ™ na twÃ³j widok.
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//Tak zrobiÄ™! DziÄ™ki za cynk.
 	};
 };	
 
@@ -127,7 +127,7 @@ INSTANCE DIA_GornOW_SeeYou (C_INFO)
 	condition	= DIA_GornOW_SeeYou_Condition;
 	information	= DIA_GornOW_Seeyou_Info;
 	permanent	= TRUE;
-	description = "Jeszcze siê spotkamy.";
+	description = "Jeszcze siÄ™ spotkamy.";
 };                       
 FUNC INT DIA_GornOW_SeeYou_Condition()
 {
@@ -140,8 +140,8 @@ FUNC INT DIA_GornOW_SeeYou_Condition()
  
 FUNC VOID DIA_GornOW_SeeYou_Info()
 {	
-	AI_Output	(other,self ,"DIA_GornOW_SeeYou_15_00");//Jeszcze siê spotkamy.
-	AI_Output	(self ,other,"DIA_GornOW_SeeYou_12_01");//Mo¿esz na to liczyæ.
+	AI_Output	(other,self ,"DIA_GornOW_SeeYou_15_00");//Jeszcze siÄ™ spotkamy.
+	AI_Output	(self ,other,"DIA_GornOW_SeeYou_12_01");//MoÅ¼esz na to liczyÄ‡.
 	
 	/*
 	if (other.guild == GIL_KDF)

@@ -41,7 +41,7 @@ func int DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Condition ()
 
 func void DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Info ()
 {
-	AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_00"); //Te, koleú... Chyba nie jesteú tu z powodu tej g≥upiej owcy, co?
+	AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_00"); //Te, kole≈õ... Chyba nie jeste≈õ tu z powodu tej g≈Çupiej owcy, co?
 
 	if (MIS_Akil_SchafDiebe == 0)
 	{
@@ -72,7 +72,7 @@ func int DIA_NAME_BANDIT_SchafKlau_Condition ()
 
 func void DIA_NAME_BANDIT_SchafKlau_Info ()
 {
-	AI_Output			(self, other, "DIA_NAME_BANDIT_SchafKlau_09_00"); //Hej! Do ciebie mÛwiÍ.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_SchafKlau_09_00"); //Hej! Do ciebie m√≥wiƒô.
 	
 	Info_AddChoice	(DIA_NAME_BANDIT_SchafKlau, DIALOG_ENDE, DIA_NAME_BANDIT_SchafKlau_weiter );
 
@@ -96,7 +96,7 @@ instance DIA_NAME_BANDIT_RUECKDASSCHAFRAUS		(C_INFO)
 	information	 = 	DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ukrad≥eú owcÍ z farmy Akila.";
+	description	 = 	"Ukrad≈Çe≈õ owcƒô z farmy Akila.";
 };
 
 func int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Condition ()
@@ -110,18 +110,18 @@ func int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Condition ()
 var int DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_NoPerm;
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_15_00"); //Ukrad≥eú owcÍ z farmy Akila.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_15_00"); //Ukrad≈Çe≈õ owcƒô z farmy Akila.
 	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_09_01"); //I co z tego? Co mi zrobisz?
 	
 	Info_ClearChoices	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS);
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "W≥aúciwie, co mnie obchodzi jakaú g≥upia owca.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Oddawaj owcÍ albo dostaniesz po makÛwce.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "W≈Ça≈õciwie, co mnie obchodzi jaka≈õ g≈Çupia owca.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Oddawaj owcƒô albo dostaniesz po mak√≥wce.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
 
 };
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //Oddawaj owcÍ albo dostaniesz po makÛwce.
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //Patrzcie go. Ch≥optasiu, w≥aúnie úciπgnπ≥eú na siebie mÛj gniew.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //Oddawaj owcƒô albo dostaniesz po mak√≥wce.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //Patrzcie go. Ch≈Çoptasiu, w≈Ça≈õnie ≈õciƒÖgnƒÖ≈Çe≈õ na siebie m√≥j gniew.
 
 	AI_StopProcessInfos (self);
 	DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_NoPerm = TRUE;
@@ -133,8 +133,8 @@ func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //W≥aúciwie, co mnie obchodzi jakaú g≥upia owca.
-	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //W takim razie nie wkurzaj mnie i zejdü mi z oczu!
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_15_00"); //W≈Ça≈õciwie, co mnie obchodzi jaka≈õ g≈Çupia owca.
+	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts_09_01"); //W takim razie nie wkurzaj mnie i zejd≈∫ mi z oczu!
 	hero.aivar[AIV_LastDistToWP] 	= Npc_GetDistToWP (hero,"NW_FOREST_CAVE1_IN_01");
 	AI_StopProcessInfos (self);
 };

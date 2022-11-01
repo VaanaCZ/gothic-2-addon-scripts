@@ -14,7 +14,7 @@ var int ALchemy_2_permanent;
 var int ALchemy_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemieb¸cher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemieb√ºcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -34,7 +34,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemieb¸cher
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Mikstury o mocy magicznej");
-					Doc_PrintLine	( nDocID,  0, "i ich sk≥adniki"						);
+					Doc_PrintLine	( nDocID,  0, "i ich sk≈Çadniki"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Esencja many"						);
@@ -52,13 +52,13 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemieb¸cher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Kaøda praca wykonywana przy stole alchemicznym wymaga zuøycia menzurki."	); 
+					Doc_PrintLines	( nDocID,  1, "Ka≈ºda praca wykonywana przy stole alchemicznym wymaga zu≈ºycia menzurki."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Warzenie kaødej mikstury leczniczej czy przywracajπcej moc magicznπ wymaga uøycia specjalnego sk≥adnika oraz roúliny, jakπ jest w tym wypadku:"			);
+					Doc_PrintLines	( nDocID,  1, "Warzenie ka≈ºdej mikstury leczniczej czy przywracajƒÖcej moc magicznƒÖ wymaga u≈ºycia specjalnego sk≈Çadnika oraz ro≈õliny, jakƒÖ jest w tym wypadku:"			);
 					Doc_PrintLine	( nDocID,  1, "Rdest polny"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Warzenie kaødej mikstury majπcej sta≥y i okreúlony wp≥yw na cia≥o lub umys≥ wymaga uøycia roúliny, jakπ jest w tym wypadku:"						);
-					Doc_PrintLines	( nDocID,  1, "Szczaw krÛlewski"		);
+					Doc_PrintLines	( nDocID,  1, "Warzenie ka≈ºdej mikstury majƒÖcej sta≈Çy i okre≈õlony wp≈Çyw na cia≈Ço lub umys≈Ç wymaga u≈ºycia ro≈õliny, jakƒÖ jest w tym wypadku:"						);
+					Doc_PrintLines	( nDocID,  1, "Szczaw kr√≥lewski"		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_1_permanent == FALSE)
@@ -70,7 +70,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemieb¸cher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemieb¸cher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemieb√ºcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -90,14 +90,14 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemieb¸cher
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Mikstury lecznicze");
-					Doc_PrintLine	( nDocID,  0, "i ich sk≥adniki"						);
+					Doc_PrintLine	( nDocID,  0, "i ich sk≈Çadniki"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Esencja lecznicza"						);
-					Doc_PrintLine	( nDocID,  0, "2 roúliny lecznicze"						);
+					Doc_PrintLine	( nDocID,  0, "2 ro≈õliny lecznicze"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Ekstrakt leczniczy"						);
-					Doc_PrintLine	( nDocID,  0, "2 zio≥a lecznicze"						);
+					Doc_PrintLine	( nDocID,  0, "2 zio≈Ça lecznicze"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Eliksir leczniczy"						);
 					Doc_PrintLine	( nDocID,  0, "2 korzenie lecznicze"						);
@@ -108,13 +108,13 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemieb¸cher
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Kaøda praca wykonywana przy stole alchemicznym wymaga zuøycia menzurki."	); 
+					Doc_PrintLines	( nDocID,  1, "Ka≈ºda praca wykonywana przy stole alchemicznym wymaga zu≈ºycia menzurki."	); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Warzenie kaødej mikstury leczniczej czy przywracajπcej moc magicznπ wymaga uøycia specjalnego sk≥adnika oraz roúliny, jakπ jest w tym wypadku:"			);
+					Doc_PrintLines	( nDocID,  1, "Warzenie ka≈ºdej mikstury leczniczej czy przywracajƒÖcej moc magicznƒÖ wymaga u≈ºycia specjalnego sk≈Çadnika oraz ro≈õliny, jakƒÖ jest w tym wypadku:"			);
 					Doc_PrintLine	( nDocID,  1, "Rdest polny"		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Warzenie kaødej mikstury majπcej sta≥y i okreúlony wp≥yw na cia≥o lub umys≥ wymaga uøycia roúliny, jakπ jest w tym wypadku:"						);
-					Doc_PrintLines	( nDocID,  1, "Szczaw krÛlewski"		);
+					Doc_PrintLines	( nDocID,  1, "Warzenie ka≈ºdej mikstury majƒÖcej sta≈Çy i okre≈õlony wp≈Çyw na cia≈Ço lub umys≈Ç wymaga u≈ºycia ro≈õliny, jakƒÖ jest w tym wypadku:"						);
+					Doc_PrintLines	( nDocID,  1, "Szczaw kr√≥lewski"		);
 					Doc_Show		( nDocID );
 					
 					if (ALchemy_2_permanent == FALSE)
@@ -126,7 +126,7 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemieb¸cher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemieb¸cher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemieb√ºcher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -144,32 +144,32 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemieb¸cher
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   	);  	
 
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Mikstury powodujπce sta≥e zmiany");
-					Doc_PrintLine	( nDocID,  0, "i ich sk≥adniki"						);
+					Doc_PrintLines	( nDocID,  0, "Mikstury powodujƒÖce sta≈Çe zmiany");
+					Doc_PrintLine	( nDocID,  0, "i ich sk≈Çadniki"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Eliksir zrÍcznoúci"						);
+					Doc_PrintLine	( nDocID,  0, "Eliksir zrƒôczno≈õci"						);
 					Doc_PrintLine	( nDocID,  0, "1 goblinie jagody"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Mikstura szybkoúci"						);
-					Doc_PrintLines	( nDocID,  0, "1 zÍbate ziele - ta mikstura zamiast szczawiu krÛlewskiego wymaga rdestu polnego."						);
+					Doc_PrintLine	( nDocID,  0, "Mikstura szybko≈õci"						);
+					Doc_PrintLines	( nDocID,  0, "1 zƒôbate ziele - ta mikstura zamiast szczawiu kr√≥lewskiego wymaga rdestu polnego."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Eliksir si≥y"						);
-					Doc_PrintLine	( nDocID,  0, "1 smoczy korzeÒ"						);
+					Doc_PrintLine	( nDocID,  0, "Eliksir si≈Çy"						);
+					Doc_PrintLine	( nDocID,  0, "1 smoczy korze≈Ñ"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Eliksir øycia"						);
-					Doc_PrintLine	( nDocID,  0, "1 korzeÒ leczniczy"						);
+					Doc_PrintLines	( nDocID,  0, "Eliksir ≈ºycia"						);
+					Doc_PrintLine	( nDocID,  0, "1 korze≈Ñ leczniczy"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLines	( nDocID,  0, "Eliksir ducha"						);
-					Doc_PrintLine	( nDocID,  0, "1 ognisty korzeÒ"						);
+					Doc_PrintLine	( nDocID,  0, "1 ognisty korze≈Ñ"						);
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Uwarzenie tych mikstur to najwyøszy stopieÒ alchemicznego wtajemniczenia. Kaøda z tych mikstur wymaga uøycia szczawiu krÛlewskiego."); 
+					Doc_PrintLines	( nDocID,  1, "Uwarzenie tych mikstur to najwy≈ºszy stopie≈Ñ alchemicznego wtajemniczenia. Ka≈ºda z tych mikstur wymaga u≈ºycia szczawiu kr√≥lewskiego."); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Mikstura szybkoúci ma mniej skomplikowanπ recepturÍ (nie wymaga uøycia szczawiu krÛlewskiego)."						);
+					Doc_PrintLines	( nDocID,  1, "Mikstura szybko≈õci ma mniej skomplikowanƒÖ recepturƒô (nie wymaga u≈ºycia szczawiu kr√≥lewskiego)."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					

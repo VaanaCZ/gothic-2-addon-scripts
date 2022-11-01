@@ -56,7 +56,7 @@ FUNC INT DIA_Wegelagerer_Hello_Condition()
 FUNC VOID DIA_Wegelagerer_Hello_Info()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Hello_15_00"); //Co tu robisz?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Hello_07_01"); //A co ciê to obchodzi?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Hello_07_01"); //A co ciÄ™ to obchodzi?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ FUNC INT DIA_Wegelagerer_Novice_Condition()
 FUNC VOID DIA_Wegelagerer_Novice_Info()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Novice_15_00"); //Szukam nowicjusza.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Novice_07_01"); //To bardzo ciekawe. My te¿ kogoœ szukamy.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Novice_07_01"); //To bardzo ciekawe. My teÅ¼ kogoÅ› szukamy.
 
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
 	Info_AddChoice (DIA_1051_Wegelagerer_Novice,"Kogo szukasz?",DIA_1051_Wegelagerer_Question_Novice_Who);
@@ -117,8 +117,8 @@ FUNC INT DIA_Wegelagerer_Question_Condition()
 FUNC VOID DIA_Wegelagerer_Question_Info()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //Tak tylko pytam.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //Zrozumia³em. Ale co TY tu robisz?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Tak czy inaczej, to nasza droga i nie lubimy, jak nam ktoœ tu przeszkadza.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //ZrozumiaÅ‚em. Ale co TY tu robisz?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Tak czy inaczej, to nasza droga i nie lubimy, jak nam ktoÅ› tu przeszkadza.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
 	if (MIS_Novizenchase == LOG_RUNNING)
@@ -126,14 +126,14 @@ FUNC VOID DIA_Wegelagerer_Question_Info()
 	{
 		Info_AddChoice (DIA_1051_Wegelagerer_Question,"Szukam nowicjusza.",DIA_1051_Wegelagerer_Question_Novice);
 	};	
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Nie twój interes.",DIA_1051_Wegelagerer_Question_MyConcern);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Tylko siê rozgl¹dam.",DIA_1051_Wegelagerer_Question_LookAround);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Nie twÃ³j interes.",DIA_1051_Wegelagerer_Question_MyConcern);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Tylko siÄ™ rozglÄ…dam.",DIA_1051_Wegelagerer_Question_LookAround);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_Novice ()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_Novice_15_00"); //Szukam nowicjusza.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_07_01"); //To bardzo ciekawe. My te¿ kogoœ szukamy.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_Novice_07_01"); //To bardzo ciekawe. My teÅ¼ kogoÅ› szukamy.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
 	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Kogo szukasz?",DIA_1051_Wegelagerer_Question_Novice_Who);
@@ -153,17 +153,17 @@ FUNC VOID DIA_1051_Wegelagerer_Question_Novice_Who ()
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern ()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_15_00"); //Nie twoja sprawa.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_07_01"); //O co ci chodzi? Szukasz k³opotów?
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_07_01"); //O co ci chodzi? Szukasz kÅ‚opotÃ³w?
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Nie, nie przeszkadzajcie sobie. ¿aden k³opot.",DIA_1051_Wegelagerer_Question_MyConcern_No);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Nie, nie przeszkadzajcie sobie. Å¼aden kÅ‚opot.",DIA_1051_Wegelagerer_Question_MyConcern_No);
 	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Skoro nalegasz.",DIA_1051_Wegelagerer_Question_MyConcern_Yes);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_No ()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_No_15_00"); //Nie, nie przeszkadzajcie sobie. ¯aden k³opot.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_No_07_01"); //Rozumiem. Zapaæka³eœ sobie portki ze strachu. Spadaj.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_No_15_00"); //Nie, nie przeszkadzajcie sobie. Å»aden kÅ‚opot.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_No_07_01"); //Rozumiem. ZapaÄ‡kaÅ‚eÅ› sobie portki ze strachu. Spadaj.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
 };
@@ -171,8 +171,8 @@ FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_No ()
 FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_15_00"); //Skoro nalegasz.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //He, he, mocny w gêbie.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //Pora ci j¹ zamkn¹æ.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //He, he, mocny w gÄ™bie.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //Pora ci jÄ… zamknÄ…Ä‡.
 
 	BDT_1051_Wegelagerer_Angriff = TRUE;
 	Npc_SetRefuseTalk (self,40);
@@ -181,8 +181,8 @@ FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 
 FUNC VOID DIA_1051_Wegelagerer_Question_LookAround ()
 {
-	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Tylko siê rozgl¹dam.
-	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //Dobra, ale przestañ nas denerwowaæ.
+	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Tylko siÄ™ rozglÄ…dam.
+	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //Dobra, ale przestaÅ„ nas denerwowaÄ‡.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
 };
@@ -214,7 +214,7 @@ func int DIA_Wegelagerer_ANGRIFF_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF_07_00"); //No dobra, doigra³eœ siê!
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF_07_00"); //No dobra, doigraÅ‚eÅ› siÄ™!
 
 	AI_StopProcessInfos (self);
 

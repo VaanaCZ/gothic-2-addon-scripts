@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesveränderung (unwissend zusammengebraut)																		//
+//	Trank der GeistesverÃ¤nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -20,10 +20,10 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 
 	description		= 	"Mikstura przemiany duszy";
 	
-	TEXT[2]			=   "ZASTANÓW siê przed jej u¿yciem!";
+	TEXT[2]			=   "ZASTANÃ“W siÄ™ przed jej uÅ¼yciem!";
 	
-	TEXT[3]			= 	"Mo¿e uszkodziæ umys³,";	
-	TEXT[4]			= 	"a nawet zabiæ tego, kto jej u¿yje.";
+	TEXT[3]			= 	"MoÅ¼e uszkodziÄ‡ umysÅ‚,";	
+	TEXT[4]			= 	"a nawet zabiÄ‡ tego, kto jej uÅ¼yje.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesveränderung (wissend zusammengebraut)																		//
+//	Trank der GeistesverÃ¤nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -57,10 +57,10 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 
 	description		= 	"Mikstura przemiany duszy";
 	
-	TEXT[2]			=   "ZASTANÓW siê przed jej u¿yciem!";
+	TEXT[2]			=   "ZASTANÃ“W siÄ™ przed jej uÅ¼yciem!";
 	
-	TEXT[3]			= 	"Mo¿e uszkodziæ umys³,";	
-	TEXT[4]			= 	"a nawet zabiæ tego, kto jej u¿yje.";
+	TEXT[3]			= 	"MoÅ¼e uszkodziÄ‡ umysÅ‚,";	
+	TEXT[4]			= 	"a nawet zabiÄ‡ tego, kto jej uÅ¼yje.";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaEssenz;
@@ -93,10 +93,10 @@ INSTANCE ItPo_Health_Addon_04(C_Item)
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
 
-	description		= 	"Pe³nia ¿ycia";
+	description		= 	"PeÅ‚nia Å¼ycia";
 	
 	//TEXT[1]			= 	NAME_Bonus_HP;				
-	TEXT[2]			= 	"Ca³kowita regeneracja energii ¿yciowej";
+	TEXT[2]			= 	"CaÅ‚kowita regeneracja energii Å¼yciowej";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_HpTrunk;
@@ -126,10 +126,10 @@ INSTANCE ItPo_Mana_Addon_04(C_Item)
 	effect			=	"SPELLFX_MANAPOTION"; 
 
 
-	description		= 	"Pe³nia many";
+	description		= 	"PeÅ‚nia many";
 	
 	//TEXT[1]			= 	NAME_Bonus_Mana;				
-	TEXT[2]			= 	"Ca³kowita regeneracja many";
+	TEXT[2]			= 	"CaÅ‚kowita regeneracja many";
 	
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_ManaTrunk;

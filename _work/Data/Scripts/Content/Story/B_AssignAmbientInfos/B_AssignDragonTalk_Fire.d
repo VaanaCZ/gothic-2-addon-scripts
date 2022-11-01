@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Fire_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Oko straci³o swoj¹ moc. Naciesz siê ostatnimi chwilami ¿ycia.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Oko straciÅ‚o swojÄ… moc. Naciesz siÄ™ ostatnimi chwilami Å¼ycia.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -61,16 +61,16 @@ FUNC INT DIA_Dragon_Fire_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Fire_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Trudno uwierzyæ, ¿e nadal znajduj¹ siê ludzie gotowi poœwiêciæ w³asne ¿ycie, byle tylko zobaczyæ prawdziwego smoka.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Trudno uwierzyÄ‡, Å¼e nadal znajdujÄ… siÄ™ ludzie gotowi poÅ›wiÄ™ciÄ‡ wÅ‚asne Å¼ycie, byle tylko zobaczyÄ‡ prawdziwego smoka.
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Jak na wielkiego, oœliz³ego jaszczura, jesteœ strasznie wygadany.
+		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Jak na wielkiego, oÅ›lizÅ‚ego jaszczura, jesteÅ› strasznie wygadany.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Nie przyszed³em tu z wizyt¹ towarzysk¹. Uprzejmoœci musimy chwilowo od³o¿yæ na bok.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Chyba nie chcesz mi powiedzieæ, ¿e zamierzasz rzuciæ mi wyzwanie?
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha, ha, ha! Skrêcê ci kark, cz³owieczku!
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Nie tak szybko, przyjacielu. Mam ze sob¹ Oko Innosa! Nie masz wyboru - odpowiesz na moje pytania albo zdechniesz w mêczarniach.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //Aaarh. Zatem pytaj, póki jeszcze mo¿esz. Twoja w³adza nade mn¹ wkrótce siê skoñczy.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Nie przyszedÅ‚em tu z wizytÄ… towarzyskÄ…. UprzejmoÅ›ci musimy chwilowo odÅ‚oÅ¼yÄ‡ na bok.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Chyba nie chcesz mi powiedzieÄ‡, Å¼e zamierzasz rzuciÄ‡ mi wyzwanie?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha, ha, ha! SkrÄ™cÄ™ ci kark, czÅ‚owieczku!
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Nie tak szybko, przyjacielu. Mam ze sobÄ… Oko Innosa! Nie masz wyboru - odpowiesz na moje pytania albo zdechniesz w mÄ™czarniach.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //Aaarh. Zatem pytaj, pÃ³ki jeszcze moÅ¼esz. Twoja wÅ‚adza nade mnÄ… wkrÃ³tce siÄ™ skoÅ„czy.
 
 };
 
@@ -84,7 +84,7 @@ instance DIA_Dragon_Fire_WerBistDu		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_WerBistDu_Condition;
 	information	 = 	DIA_Dragon_Fire_WerBistDu_Info;
 
-	description	 = 	"Kim jesteœ?";
+	description	 = 	"Kim jesteÅ›?";
 };
 
 func int DIA_Dragon_Fire_WerBistDu_Condition ()
@@ -97,9 +97,9 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Kim jesteœ?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Nazywam siê Feomathar. To wszystko, czego siê o mnie dowiesz.
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Spalê ciê na popió³, gdy tylko wyrwê siê spod w³adzy Oka!
+	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Kim jesteÅ›?
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Nazywam siÄ™ Feomathar. To wszystko, czego siÄ™ o mnie dowiesz.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //SpalÄ™ ciÄ™ na popiÃ³Å‚, gdy tylko wyrwÄ™ siÄ™ spod wÅ‚adzy Oka!
 
 };
 
@@ -112,7 +112,7 @@ instance DIA_Dragon_Fire_HORT		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_HORT_Condition;
 	information	 = 	DIA_Dragon_Fire_HORT_Info;
 
-	description	 = 	"Gdzie jest twój skarb?";
+	description	 = 	"Gdzie jest twÃ³j skarb?";
 };
 
 func int DIA_Dragon_Fire_HORT_Condition ()
@@ -125,9 +125,9 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 
 func void DIA_Dragon_Fire_HORT_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Ka¿dy smok ma miejsce, w którym przechowuje swoje skarby. Gdzie jest twój skarb?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //W miejscu, do którego nigdy nie dotrzesz. Postaram siê o to, gdy moc Oka os³abnie.
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Ukry³em swoje skarby wysoko na rozgrzanych ska³ach, gdzie nie dotrze ¿adna pozbawiona skrzyde³ istota!
+	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //KaÅ¼dy smok ma miejsce, w ktÃ³rym przechowuje swoje skarby. Gdzie jest twÃ³j skarb?
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //W miejscu, do ktÃ³rego nigdy nie dotrzesz. Postaram siÄ™ o to, gdy moc Oka osÅ‚abnie.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //UkryÅ‚em swoje skarby wysoko na rozgrzanych skaÅ‚ach, gdzie nie dotrze Å¼adna pozbawiona skrzydeÅ‚ istota!
 
 };
 

@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_Pardos_NW_Hi   (C_INFO)
 	condition   = DIA_Addon_Pardos_NW_Hi_Condition;
 	information = DIA_Addon_Pardos_NW_Hi_Info;
 	permanent   = TRUE;
-	description = "Dobrze siê czujesz?";
+	description = "Dobrze siÄ™ czujesz?";
 };
 FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 {		
@@ -36,9 +36,9 @@ FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_NW_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//Dobrze siê czujesz?
-	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//Ej, wybawco... Jeszcze raz dziêkujê. Teraz mogê ca³y dzieñ odpoczywaæ.
-	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//Widzê. No có¿, na mnie ju¿ czas.
+	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//Dobrze siÄ™ czujesz?
+	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//Ej, wybawco... Jeszcze raz dziÄ™kujÄ™. Teraz mogÄ™ caÅ‚y dzieÅ„ odpoczywaÄ‡.
+	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//WidzÄ™. No cÃ³Å¼, na mnie juÅ¼ czas.
 };
 // ************************************************************
 // 			  				PICK POCKET

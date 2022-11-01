@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Ice_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //W≥adza Oka nade mnπ dobieg≥a koÒca. TwÛj czas na tym úwiecie rÛwnieø.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //W≈Çadza Oka nade mnƒÖ dobieg≈Ça ko≈Ñca. Tw√≥j czas na tym ≈õwiecie r√≥wnie≈º.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -68,15 +68,15 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Dlaczego zak≥Ûcasz mÛj odpoczynek? Czy mam siÍ zakopaÊ jeszcze g≥Íbiej, byúcie mnie wreszcie zostawili w spokoju?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Dlaczego zak≈Ç√≥casz m√≥j odpoczynek? Czy mam siƒô zakopaƒá jeszcze g≈Çƒôbiej, by≈õcie mnie wreszcie zostawili w spokoju?
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Gadajπcy smok. Chwa≥a niech bÍdzie Oku Innosa.
+		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //GadajƒÖcy smok. Chwa≈Ça niech bƒôdzie Oku Innosa.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //ZaprawdÍ, jesteúcie niezwyk≥ymi istotami. Niewaøne, ile razy przetoczy siÍ przez was lodowaty wicher úmierci, zawsze znajdzie siÍ jeden, ktÛry powstanie z popio≥Ûw, myúlπc, øe sπdzone mu byÊ bohaterem.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Ale to siÍ wkrÛtce zmieni. Osobiúcie dopilnujÍ, by tym razem øaden z was nie powsta≥.
-	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Milcz! Na moc úwiÍtego Oka, ktÛre powierzono w moje rÍce, zaklinam ciÍ: odpowiedz na moje pytania!
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Pytaj wiÍc. Twoja wiedza i tak na nic ci siÍ nie zda.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Zaprawdƒô, jeste≈õcie niezwyk≈Çymi istotami. Niewa≈ºne, ile razy przetoczy siƒô przez was lodowaty wicher ≈õmierci, zawsze znajdzie siƒô jeden, kt√≥ry powstanie z popio≈Ç√≥w, my≈õlƒÖc, ≈ºe sƒÖdzone mu byƒá bohaterem.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Ale to siƒô wkr√≥tce zmieni. Osobi≈õcie dopilnujƒô, by tym razem ≈ºaden z was nie powsta≈Ç.
+	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Milcz! Na moc ≈õwiƒôtego Oka, kt√≥re powierzono w moje rƒôce, zaklinam ciƒô: odpowiedz na moje pytania!
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha, ha, ha. Pytaj wiƒôc. Twoja wiedza i tak na nic ci siƒô nie zda.
 
 };
 
@@ -90,7 +90,7 @@ instance DIA_Dragon_Ice_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Ice_WERBISTDU_Info;
 
-	description	 = 	"Kim jesteú?";
+	description	 = 	"Kim jeste≈õ?";
 };
 
 func int DIA_Dragon_Ice_WERBISTDU_Condition ()
@@ -103,8 +103,8 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Ice_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Kim jesteú?
-	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Jestem Finkregh, pan lodu i úniegu, Straønik Spotkania, i ten, ktÛry zakoÒczy twÛj nÍdzny øywot.
+	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Kim jeste≈õ?
+	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Jestem Finkregh, pan lodu i ≈õniegu, Stra≈ºnik Spotkania, i ten, kt√≥ry zako≈Ñczy tw√≥j nƒôdzny ≈ºywot.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Dragon_Ice_BELIAR		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_BELIAR_Condition;
 	information	 = 	DIA_Dragon_Ice_BELIAR_Info;
 
-	description	 = 	"KtÛremu bogu s≥uøysz?";
+	description	 = 	"Kt√≥remu bogu s≈Çu≈ºysz?";
 };
 
 func int DIA_Dragon_Ice_BELIAR_Condition ()
@@ -130,11 +130,11 @@ func int DIA_Dragon_Ice_BELIAR_Condition ()
 
 func void DIA_Dragon_Ice_BELIAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //KtÛremu bogu s≥uøysz?
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Jakieø to przeklÍte bÛstwo pozwala, by tak odraøajπce istoty jak ty chodzi≥y po naszym úwiecie?
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //PrÛøno siÍ trudzisz, prÛbujπc ogarnπÊ znaczenie naszego spotkania, ma≥y bohaterze.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar nie tylko pozwoli≥ na nasze przybycie. On KAZA£ nam tutaj przybyÊ!
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Ws≥uchani w jego úwiÍte s≥owa, nie spoczniemy, pÛki nie spe≥ni siÍ jego wola.
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Kt√≥remu bogu s≈Çu≈ºysz?
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Jakie≈º to przeklƒôte b√≥stwo pozwala, by tak odra≈ºajƒÖce istoty jak ty chodzi≈Çy po naszym ≈õwiecie?
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Pr√≥≈ºno siƒô trudzisz, pr√≥bujƒÖc ogarnƒÖƒá znaczenie naszego spotkania, ma≈Çy bohaterze.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Beliar nie tylko pozwoli≈Ç na nasze przybycie. On KAZA≈Å nam tutaj przybyƒá!
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Ws≈Çuchani w jego ≈õwiƒôte s≈Çowa, nie spoczniemy, p√≥ki nie spe≈Çni siƒô jego wola.
 
 };
 

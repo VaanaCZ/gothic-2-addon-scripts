@@ -6,19 +6,19 @@ func void ZS_Stand_RangerMeeting ()
 	
 	self.senses			= SENSE_SEE|SENSE_HEAR|SENSE_SMELL;		//Sense_Smell erforderlich, da der Sc sonst nicht "gesehen wird)!!	
 	self.senses_range	= 500;									//Damit der SC nicht sofort aus dem Wahrnehmungskreis des NSCs verschwindet 
-	Npc_SetPercTime		(self,	1);								//Damit er öfter reagiert!
+	Npc_SetPercTime		(self,	1);								//Damit er Ã¶fter reagiert!
 	
-	Npc_PercEnable		(self, 	PERC_ASSESSPLAYER		,	B_AssessGuidePlayer			); //Player wird VOR Enemy erfasst! - Geht in ZS_Attack, ZS_ReactToWeapon, B_AssessEnterRoom oder B_AssessTalk //mustte ich noch mal aufröseln)
+	Npc_PercEnable		(self, 	PERC_ASSESSPLAYER		,	B_AssessGuidePlayer			); //Player wird VOR Enemy erfasst! - Geht in ZS_Attack, ZS_ReactToWeapon, B_AssessEnterRoom oder B_AssessTalk //mustte ich noch mal aufrÃ¶seln)
 	Npc_PercEnable 		(self, 	PERC_ASSESSENEMY		,	B_AssessEnemy				); //geht in ZS_Attack
 
 	if  ((Hlp_GetInstanceID (self)) == (Hlp_GetInstanceID (Lares)))
 	||  ((Hlp_GetInstanceID (self)) == (Hlp_GetInstanceID (Erol)))
-	||  ((Hlp_GetInstanceID (self)) == (Hlp_GetInstanceID (Greg_NW))) //Joly:Ja,ja, ich weiß. GANZ BÖSE.
+	||  ((Hlp_GetInstanceID (self)) == (Hlp_GetInstanceID (Greg_NW))) //Joly:Ja,ja, ich weiÃŸ. GANZ BÃ–SE.
 	{
 		Npc_PercEnable	 	(self, 	PERC_ASSESSTALK			,	B_AssessTalk 				); //geht in ZS_Talk
 	};
 	
-	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob					); //öffnet Türen, die auf dem Weg liegen
+	Npc_PercEnable  	(self, 	PERC_MOVEMOB			,	B_MoveMob					); //Ã¶ffnet TÃ¼ren, die auf dem Weg liegen
 	Npc_PercEnable		(self,  PERC_ASSESSFIGHTSOUND	, 	B_AssessGuideFightSound		);	
 
 	if  ((Hlp_GetInstanceID (self)) == (Hlp_GetInstanceID (Lares)))

@@ -48,9 +48,9 @@ FUNC INT DIA_Udar_Hello_Condition()
 };
 FUNC VOID DIA_Udar_Hello_Info()
 {	
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//Mia³eœ cholerne szczêœcie, kiedy wszed³eœ. Prawie ciê zastrzeli³em.
-	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//W takim razie powinienem siê cieszyæ, ¿e masz taki bystry wzrok.
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Oszczêdzaj oddech. Porozmawiaj z Sengrathem, jeœli czegoœ chcesz.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//MiaÅ‚eÅ› cholerne szczÄ™Å›cie, kiedy wszedÅ‚eÅ›. Prawie ciÄ™ zastrzeliÅ‚em.
+	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//W takim razie powinienem siÄ™ cieszyÄ‡, Å¼e masz taki bystry wzrok.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//OszczÄ™dzaj oddech. Porozmawiaj z Sengrathem, jeÅ›li czegoÅ› chcesz.
 	
 	AI_StopProcessInfos (self);
 };
@@ -65,7 +65,7 @@ INSTANCE DIA_Udar_YouAreBest (C_INFO)
 	condition	= DIA_Udar_YouAreBest_Condition;
 	information	= DIA_Udar_YouAreBest_Info;
 	permanent	= FALSE;
-	Description = "S³ysza³em, ¿e jesteœ NAJLEPSZYM kusznikiem w królestwie.";
+	Description = "SÅ‚yszaÅ‚em, Å¼e jesteÅ› NAJLEPSZYM kusznikiem w krÃ³lestwie.";
 };                       
 
 FUNC INT DIA_Udar_YouAreBest_Condition()
@@ -78,8 +78,8 @@ FUNC INT DIA_Udar_YouAreBest_Condition()
  
 FUNC VOID DIA_Udar_YouAreBest_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//S³ysza³em, ¿e jesteœ NAJLEPSZYM kusznikiem w królestwie.
-	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Skoro tak mówi¹, to musi byæ prawda. Czego chcesz?
+	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//SÅ‚yszaÅ‚em, Å¼e jesteÅ› NAJLEPSZYM kusznikiem w krÃ³lestwie.
+	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Skoro tak mÃ³wiÄ…, to musi byÄ‡ prawda. Czego chcesz?
 };
 
 //***********************************
@@ -93,7 +93,7 @@ INSTANCE DIA_Udar_TeachMe (C_INFO)
 	condition	= DIA_Udar_TeachMe_Condition;
 	information	= DIA_Udar_TeachME_Info;
 	permanent	= FALSE;
-	Description = "Naucz mnie, jak strzelaæ z kuszy.";
+	Description = "Naucz mnie, jak strzelaÄ‡ z kuszy.";
 };                       
 
 FUNC INT DIA_Udar_TeachMe_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Udar_TeachMe_Condition()
  
 FUNC VOID DIA_Udar_TeachME_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//Naucz mnie, jak strzelaæ z kuszy.
-	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//Zje¿d¿aj! Dooko³a zamku biega doœæ celów. Poæwicz sobie na nich.
+	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//Naucz mnie, jak strzelaÄ‡ z kuszy.
+	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//ZjeÅ¼dÅ¼aj! DookoÅ‚a zamku biega doÅ›Ä‡ celÃ³w. PoÄ‡wicz sobie na nich.
 
 };	
 
@@ -137,11 +137,11 @@ FUNC INT DIA_Udar_ImGood_Condition()
 FUNC VOID DIA_Udar_ImGood_Info()
 {	
 	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Ja jestem najlepszy...
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//Masz racjê!
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//No có¿, skoro chcesz siê uczyæ, to ci pomogê.
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//Masz racjÄ™!
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//No cÃ³Å¼, skoro chcesz siÄ™ uczyÄ‡, to ci pomogÄ™.
 	
 	Udar_TeachPlayer = TRUE;
-	B_LogEntry		(TOPIC_Teacher_OC, "Udar mo¿e mnie nauczyæ, jak pos³ugiwaæ siê kusz¹."); 
+	B_LogEntry		(TOPIC_Teacher_OC, "Udar moÅ¼e mnie nauczyÄ‡, jak posÅ‚ugiwaÄ‡ siÄ™ kuszÄ…."); 
 };
 
 //***********************************
@@ -155,7 +155,7 @@ INSTANCE DIA_Udar_Teach (C_INFO)
 	condition	= DIA_Udar_Teach_Condition;
 	information	= DIA_Udar_Teach_Info;
 	permanent	= TRUE;
-	Description = "Chcê siê od ciebie uczyæ.";
+	Description = "ChcÄ™ siÄ™ od ciebie uczyÄ‡.";
 };                       
 
 FUNC INT DIA_Udar_Teach_Condition()
@@ -168,7 +168,7 @@ FUNC INT DIA_Udar_Teach_Condition()
  
 FUNC VOID DIA_Udar_Teach_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//Chcê siê od ciebie uczyæ.
+	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//ChcÄ™ siÄ™ od ciebie uczyÄ‡.
 	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //Dobra, strzelaj.
 	
 	Info_ClearChoices (DIA_Udar_Teach);
@@ -185,12 +185,12 @@ FUNC VOID DIA_Udar_Teach_BACK()
 
 FUNC VOID B_Udar_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Znasz ju¿ podstawy. Nie mamy czasu na wiêcej.
+	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Znasz juÅ¼ podstawy. Nie mamy czasu na wiÄ™cej.
 };
 
 FUNC VOID B_Udar_TeachNoMore2 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Aby sprawniej w³adaæ broni¹, musisz znaleŸæ odpowiedniego nauczyciela.
+	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Aby sprawniej wÅ‚adaÄ‡ broniÄ…, musisz znaleÅºÄ‡ odpowiedniego nauczyciela.
 };
 
 FUNC VOID DIA_Udar_Teach_Crossbow_1 ()
@@ -235,7 +235,7 @@ INSTANCE DIA_Udar_Perm (C_INFO)
 	condition	= DIA_Udar_Perm_Condition;
 	information	= DIA_Udar_Perm_Info;
 	permanent	= FALSE;
-	Description = "Jak siê maj¹ sprawy w zamku?";
+	Description = "Jak siÄ™ majÄ… sprawy w zamku?";
 };                       
 FUNC INT DIA_Udar_Perm_Condition()
 {
@@ -246,9 +246,9 @@ FUNC INT DIA_Udar_Perm_Condition()
 };
 FUNC VOID DIA_Udar_Perm_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Jak maj¹ siê sprawy w zamku?
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//Paru ch³opaków æwiczy, ale generalnie rzecz bior¹c, wszyscy czekamy, a¿ coœ siê stanie.
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Ta niepewnoœæ nas dobija. To strategia tych przeklêtych orków. Poczekaj¹, a¿ bêdziemy mieli nerwy w strzêpach.
+	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Jak majÄ… siÄ™ sprawy w zamku?
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//Paru chÅ‚opakÃ³w Ä‡wiczy, ale generalnie rzecz biorÄ…c, wszyscy czekamy, aÅ¼ coÅ› siÄ™ stanie.
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Ta niepewnoÅ›Ä‡ nas dobija. To strategia tych przeklÄ™tych orkÃ³w. PoczekajÄ…, aÅ¼ bÄ™dziemy mieli nerwy w strzÄ™pach.
 };	
 //***********************************
 //	Ring 
@@ -261,7 +261,7 @@ INSTANCE DIA_Udar_Ring (C_INFO)
 	condition	= DIA_Udar_Ring_Condition;
 	information	= DIA_Udar_Ring_Info;
 	permanent	= FALSE;
-	Description = "Proszê, przynoszê ci pierœcieñ Tengrona.";
+	Description = "ProszÄ™, przynoszÄ™ ci pierÅ›cieÅ„ Tengrona.";
 };                       
 FUNC INT DIA_Udar_Ring_Condition()
 {
@@ -272,9 +272,9 @@ FUNC INT DIA_Udar_Ring_Condition()
 };
 FUNC VOID DIA_Udar_Ring_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Proszê, przynoszê ci pierœcieñ Tengrona. Powinien ciê ochroniæ. Tengron powiedzia³, ¿e przyjdzie po niego, kiedy tylko wróci.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Co? Wiesz, co to za pierœcieñ? Dosta³ go w nagrodê za odwagê w bitwie.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Mówisz, ¿e chce go z powrotem? Jeœli taka jest wola Innosa, to tak siê stanie. Jeœli taka jest wola Innosa...
+	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//ProszÄ™, przynoszÄ™ ci pierÅ›cieÅ„ Tengrona. Powinien ciÄ™ ochroniÄ‡. Tengron powiedziaÅ‚, Å¼e przyjdzie po niego, kiedy tylko wrÃ³ci.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Co? Wiesz, co to za pierÅ›cieÅ„? DostaÅ‚ go w nagrodÄ™ za odwagÄ™ w bitwie.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//MÃ³wisz, Å¼e chce go z powrotem? JeÅ›li taka jest wola Innosa, to tak siÄ™ stanie. JeÅ›li taka jest wola Innosa...
 	
 	B_GiveInvItems (other,self,ItRi_Tengron,1);
 	TengronRing = TRUE;
@@ -338,16 +338,16 @@ func int DIA_Udar_Kap4WiederDa_Condition ()
 
 func void DIA_Udar_Kap4WiederDa_Info ()
 {
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Dobrze, ¿e przyszed³eœ. Mamy tu istne piek³o.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Dobrze, Å¼e przyszedÅ‚eÅ›. Mamy tu istne piekÅ‚o.
 
 	if (hero.guild != GIL_DJG)
 	{
-		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Co siê sta³o?
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //£owcy pusz¹ siê w zamku i przechwalaj¹, ¿e potrafi¹ za³atwiæ problem ze smokiem.
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Powiem ci jednak, ¿e nie wygl¹daj¹ na takich, co by sobie poradzili choæby ze starym, schorowanym zêbaczem.
+		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Co siÄ™ staÅ‚o?
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //Åowcy puszÄ… siÄ™ w zamku i przechwalajÄ…, Å¼e potrafiÄ… zaÅ‚atwiÄ‡ problem ze smokiem.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Powiem ci jednak, Å¼e nie wyglÄ…dajÄ… na takich, co by sobie poradzili choÄ‡by ze starym, schorowanym zÄ™baczem.
 	};
 
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Coraz wiêcej z nas zaczyna siê powa¿nie obawiaæ, czy uda nam siê wyjœæ z tego ca³o.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Coraz wiÄ™cej z nas zaczyna siÄ™ powaÅ¼nie obawiaÄ‡, czy uda nam siÄ™ wyjÅ›Ä‡ z tego caÅ‚o.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -360,7 +360,7 @@ instance DIA_Udar_Sengrath		(C_INFO)
 	condition	 = 	DIA_Udar_Sengrath_Condition;
 	information	 = 	DIA_Udar_Sengrath_Info;
 
-	description	 = 	"Czy nie jest was tutaj dwóch na stra¿y?";
+	description	 = 	"Czy nie jest was tutaj dwÃ³ch na straÅ¼y?";
 };
 
 func int DIA_Udar_Sengrath_Condition ()
@@ -375,16 +375,16 @@ func int DIA_Udar_Sengrath_Condition ()
 
 func void DIA_Udar_Sengrath_Info ()
 {
-	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //Czy nie jest was tutaj dwóch na stra¿y?
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //Ju¿ nie. Sengrath sta³ tutaj, na blankach, gdy nagle zasn¹³.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //Gdy to siê sta³o, jego kusza spad³a na dó³.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //Widzieliœmy, jak jeden z orków j¹ z³apa³ i znikn¹³ w ciemnoœciach.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Wtedy Sengrath obudzi³ siê i pobieg³ w noc, w stronê orkowskiej palisady. Od tamtej pory go nie widziano.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //Chroñ nas Innosie!
+	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //Czy nie jest was tutaj dwÃ³ch na straÅ¼y?
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //JuÅ¼ nie. Sengrath staÅ‚ tutaj, na blankach, gdy nagle zasnÄ…Å‚.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //Gdy to siÄ™ staÅ‚o, jego kusza spadÅ‚a na dÃ³Å‚.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //WidzieliÅ›my, jak jeden z orkÃ³w jÄ… zÅ‚apaÅ‚ i zniknÄ…Å‚ w ciemnoÅ›ciach.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Wtedy Sengrath obudziÅ‚ siÄ™ i pobiegÅ‚ w noc, w stronÄ™ orkowskiej palisady. Od tamtej pory go nie widziano.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //ChroÅ„ nas Innosie!
 
 	Log_CreateTopic (TOPIC_Sengrath_Missing, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Sengrath_Missing, LOG_RUNNING);
-	B_LogEntry (TOPIC_Sengrath_Missing,"Udar, stra¿nik na zamku, têskni za Sengrathem. Ostatnio widzia³ go póŸn¹ noc¹, kiedy ten bieg³ w stronê orkowych umocnieñ, aby odzyskaæ sw¹ kuszê."); 
+	B_LogEntry (TOPIC_Sengrath_Missing,"Udar, straÅ¼nik na zamku, tÄ™skni za Sengrathem. Ostatnio widziaÅ‚ go pÃ³ÅºnÄ… nocÄ…, kiedy ten biegÅ‚ w stronÄ™ orkowych umocnieÅ„, aby odzyskaÄ‡ swÄ… kuszÄ™."); 
 };
 
 
@@ -398,7 +398,7 @@ instance DIA_Udar_SENGRATHGEFUNDEN		(C_INFO)
 	condition	 = 	DIA_Udar_SENGRATHGEFUNDEN_Condition;
 	information	 = 	DIA_Udar_SENGRATHGEFUNDEN_Info;
 
-	description	 = 	"Znalaz³em Sengratha.";
+	description	 = 	"ZnalazÅ‚em Sengratha.";
 };
 
 func int DIA_Udar_SENGRATHGEFUNDEN_Condition ()
@@ -413,11 +413,11 @@ func int DIA_Udar_SENGRATHGEFUNDEN_Condition ()
 
 func void DIA_Udar_SENGRATHGEFUNDEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //Znalaz³em Sengratha.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //Naprawdê? Gdzie on jest?
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //Nie ¿yje. Oto jego kusza. Mia³ j¹ przy sobie.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Musia³ odzyskaæ swoj¹ kuszê, ale wygl¹da na to, ¿e orkowie jednak go zabili.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //Przeklêty g³upiec. Wiedzia³em, ¿e tak bêdzie. Wszyscy zginiemy.
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //ZnalazÅ‚em Sengratha.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //NaprawdÄ™? Gdzie on jest?
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //Nie Å¼yje. Oto jego kusza. MiaÅ‚ jÄ… przy sobie.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //MusiaÅ‚ odzyskaÄ‡ swojÄ… kuszÄ™, ale wyglÄ…da na to, Å¼e orkowie jednak go zabili.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //PrzeklÄ™ty gÅ‚upiec. WiedziaÅ‚em, Å¼e tak bÄ™dzie. Wszyscy zginiemy.
 
 	TOPIC_END_Sengrath_Missing = TRUE;
 	B_GivePlayerXP (XP_SengrathFound);
@@ -451,15 +451,15 @@ func void DIA_Udar_BADFEELING_Info ()
 {
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Jeszcze jeden taki atak i bêdzie po nas.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Jeszcze jeden taki atak i bÄ™dzie po nas.
 	}
 	else if (MIS_AllDragonsDead == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //Orkowie s¹ bardzo zaniepokojeni. Coœ ich nieŸle przestraszy³o. Czujê to.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //Orkowie sÄ… bardzo zaniepokojeni. CoÅ› ich nieÅºle przestraszyÅ‚o. CzujÄ™ to.
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //Mam co do tego naprawdê z³e przeczucia.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //Mam co do tego naprawdÄ™ zÅ‚e przeczucia.
 	};
 	
 	Npc_SetRefuseTalk (self,30);

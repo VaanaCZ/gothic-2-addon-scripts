@@ -38,12 +38,12 @@ func int DIA_Pepe_Hallo_Condition ()
 func void DIA_Pepe_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Pepe_Hallo_15_00"); //Co porabiasz?
-	AI_Output (self, other, "DIA_Pepe_Hallo_03_01"); //Pilnujê owiec! I unikam k³opotów.
+	AI_Output (self, other, "DIA_Pepe_Hallo_03_01"); //PilnujÄ™ owiec! I unikam kÅ‚opotÃ³w.
 	
 	if ((hero.guild != GIL_SLD)&&(hero.guild != GIL_DJG))
 	{
-		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Nie zawsze siê udaje, co?
-		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //No, szczególnie gdy wokó³ tylu najemników. Cieszê siê, ¿e jestem na pastwisku. Choæ i tu bywa niebezpiecznie.
+		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Nie zawsze siÄ™ udaje, co?
+		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //No, szczegÃ³lnie gdy wokÃ³Å‚ tylu najemnikÃ³w. CieszÄ™ siÄ™, Å¼e jestem na pastwisku. ChoÄ‡ i tu bywa niebezpiecznie.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Pepe_Danger (C_INFO)
 	condition	= DIA_Pepe_Danger_Condition;
 	information	= DIA_Pepe_Danger_Info;
 	permanent 	= FALSE;
-	description	= "A jakie¿ to niebezpieczeñstwa czyhaj¹ na pastwisku?";
+	description	= "A jakieÅ¼ to niebezpieczeÅ„stwa czyhajÄ… na pastwisku?";
 };
 func int DIA_Pepe_Danger_Condition ()
 {
@@ -68,9 +68,9 @@ func int DIA_Pepe_Danger_Condition ()
 };
 func void DIA_Pepe_Danger_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Jakie to niebezpieczeñstwa czyhaj¹ na pastwisku?
-	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //Po okolicy w³óczy siê niewielka wataha wilków. Ostatnio cholerne bestie prawie ka¿dego dnia porywaj¹ jedn¹ owcê.
-	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //Jeszcze kilka dni temu mia³em ze dwa razy wiêcej owiec. Kiedy Onar siê o tym dowie, chyba mnie zat³ucze.
+	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Jakie to niebezpieczeÅ„stwa czyhajÄ… na pastwisku?
+	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //Po okolicy wÅ‚Ã³czy siÄ™ niewielka wataha wilkÃ³w. Ostatnio cholerne bestie prawie kaÅ¼dego dnia porywajÄ… jednÄ… owcÄ™.
+	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //Jeszcze kilka dni temu miaÅ‚em ze dwa razy wiÄ™cej owiec. Kiedy Onar siÄ™ o tym dowie, chyba mnie zatÅ‚ucze.
 };
 
 // ************************************************************
@@ -83,7 +83,7 @@ instance DIA_Pepe_WhyNotSLD	(C_INFO)
 	condition	= DIA_Pepe_WhyNotSLD_Condition;
 	information	= DIA_Pepe_WhyNotSLD_Info;
 	PERMANENT 	= FALSE;
-	description	= "Dlaczego nie powiedzia³eœ o wilkach najemnikom?";
+	description	= "Dlaczego nie powiedziaÅ‚eÅ› o wilkach najemnikom?";
 };
 func int DIA_Pepe_WhyNotSLD_Condition ()
 {
@@ -95,11 +95,11 @@ func int DIA_Pepe_WhyNotSLD_Condition ()
 };
 func void DIA_Pepe_WhyNotSLD_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //Dlaczego nie powiedzia³eœ o wilkach najemnikom? Mogliby siê ich przecie¿ pozbyæ.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Taa, wiem. Powinienem by³ im powiedzieæ. Ale nie powiedzia³em.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //Teraz, kiedy tyle owiec zosta³o porwanych, wolê ju¿ nic nie gadaæ.
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //Przecie¿ w³aœnie powiedzia³eœ MNIE...
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //W³aœnie zaczynam tego ¿a³owaæ.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //Dlaczego nie powiedziaÅ‚eÅ› o wilkach najemnikom? Mogliby siÄ™ ich przecieÅ¼ pozbyÄ‡.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Taa, wiem. Powinienem byÅ‚ im powiedzieÄ‡. Ale nie powiedziaÅ‚em.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //Teraz, kiedy tyle owiec zostaÅ‚o porwanych, wolÄ™ juÅ¼ nic nie gadaÄ‡.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //PrzecieÅ¼ wÅ‚aÅ›nie powiedziaÅ‚eÅ› MNIE...
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //WÅ‚aÅ›nie zaczynam tego Å¼aÅ‚owaÄ‡.
 };
 
 // ************************************************************
@@ -112,7 +112,7 @@ instance DIA_Pepe_KillWolves (C_INFO)
 	condition	= DIA_Pepe_KillWolves_Condition;
 	information	= DIA_Pepe_KillWolves_Info;
 	permanent 	= FALSE;
-	description	= "A gdybym zabi³ te wilki?";
+	description	= "A gdybym zabiÅ‚ te wilki?";
 };
 func int DIA_Pepe_KillWolves_Condition ()
 {
@@ -123,11 +123,11 @@ func int DIA_Pepe_KillWolves_Condition ()
 };
 func void DIA_Pepe_KillWolves_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //A gdybym zabi³ te wilki?
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //Ty, sam? Ha, ha. Nie wierzê. Ju¿ chyba prêdzej zrobi³by to któryœ z moich baranów.
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Zapomnij. To by³a tylko taka sugestia. Przejdê siê do ch³opaków i zapytam, co oni na to.
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //Zaraz... A zreszt¹ dobrze, w porz¹dku! Ehm... jesteœ wielki i silny, móg³byœ pokonaæ i setkê wilków. Bardzo proszê!
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //Na ogó³ czaj¹ siê w krzakach, na obrze¿ach pastwiska. Myœlê, ¿e s¹ tylko cztery...
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //A gdybym zabiÅ‚ te wilki?
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //Ty, sam? Ha, ha. Nie wierzÄ™. JuÅ¼ chyba prÄ™dzej zrobiÅ‚by to ktÃ³ryÅ› z moich baranÃ³w.
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Zapomnij. To byÅ‚a tylko taka sugestia. PrzejdÄ™ siÄ™ do chÅ‚opakÃ³w i zapytam, co oni na to.
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //Zaraz... A zresztÄ… dobrze, w porzÄ…dku! Ehm... jesteÅ› wielki i silny, mÃ³gÅ‚byÅ› pokonaÄ‡ i setkÄ™ wilkÃ³w. Bardzo proszÄ™!
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //Na ogÃ³Å‚ czajÄ… siÄ™ w krzakach, na obrzeÅ¼ach pastwiska. MyÅ›lÄ™, Å¼e sÄ… tylko cztery...
 	
 	AI_StopProcessInfos (self);
 	
@@ -140,7 +140,7 @@ func void DIA_Pepe_KillWolves_Info ()
 	
 	Log_CreateTopic (TOPIC_PepeWolves,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_PepeWolves,LOG_RUNNING);
-	B_LogEntry (TOPIC_PepeWolves,"Owcom Pepe zagra¿aj¹ kr¹¿¹ce po okolicy stada wilków. Powinienem siê nimi zaj¹æ.");
+	B_LogEntry (TOPIC_PepeWolves,"Owcom Pepe zagraÅ¼ajÄ… krÄ…Å¼Ä…ce po okolicy stada wilkÃ³w. Powinienem siÄ™ nimi zajÄ…Ä‡.");
 };
 
 // ************************************************************
@@ -153,7 +153,7 @@ instance DIA_Pepe_KilledWolves		(C_INFO)
 	condition	 = 	DIA_Pepe_KilledWolves_Condition;
 	information	 = 	DIA_Pepe_KilledWolves_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Pozby³em siê wilków.";
+	description	 = 	"PozbyÅ‚em siÄ™ wilkÃ³w.";
 };
 func int DIA_Pepe_KilledWolves_Condition ()
 {
@@ -164,28 +164,28 @@ func int DIA_Pepe_KilledWolves_Condition ()
 };
 func void DIA_Pepe_KilledWolves_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_KilledWolves_15_00"); //Pozby³em siê wilków.
+	AI_Output (other, self, "DIA_Pepe_KilledWolves_15_00"); //PozbyÅ‚em siÄ™ wilkÃ³w.
 
 	if (Npc_IsDead(PEPES_YWolf1))
 	&& (Npc_IsDead(PEPES_YWolf2))
 	&& (Npc_IsDead(PEPES_YWolf3))
 	&& (Npc_IsDead(PEPES_YWolf4))
 	{
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //Naprawdê? Innosowi niech bêd¹ dziêki!
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //Dalej jednak nie wiem, jak powiedzieæ Onarowi o tych wszystkich porwanych owcach.
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //To wszystko wina tego przeklêtego Bullka!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //NaprawdÄ™? Innosowi niech bÄ™dÄ… dziÄ™ki!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //Dalej jednak nie wiem, jak powiedzieÄ‡ Onarowi o tych wszystkich porwanych owcach.
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //To wszystko wina tego przeklÄ™tego Bullka!
 
 		MIS_Pepe_KillWolves = LOG_SUCCESS;
 		B_GivePlayerXP (XP_PepeWolves);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_04"); //Nie rób ze mnie idioty, wiem, ¿e bestie ci¹gle ¿yj¹.
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_04"); //Nie rÃ³b ze mnie idioty, wiem, Å¼e bestie ciÄ…gle Å¼yjÄ….
 	};
 };
 
 // ************************************************************
-// 					Was hast du über Bullco gesagt?
+// 					Was hast du Ã¼ber Bullco gesagt?
 // ************************************************************
 instance DIA_Pepe_Bullco (C_INFO)
 {
@@ -194,7 +194,7 @@ instance DIA_Pepe_Bullco (C_INFO)
 	condition	 = 	DIA_Pepe_Bullco_Condition;
 	information	 = 	DIA_Pepe_Bullco_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Dlaczego wspomnia³eœ Bullka?";
+	description	 = 	"Dlaczego wspomniaÅ‚eÅ› Bullka?";
 };
 func int DIA_Pepe_Bullco_Condition ()
 {
@@ -207,17 +207,17 @@ func int DIA_Pepe_Bullco_Condition ()
 };
 func void DIA_Pepe_Bullco_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Dlaczego wspomnia³eœ Bullka?
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //To jeden z najemników. W³aœciwie to on mia³ siê zajmowaæ ochron¹ stada.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //Zamiast tego on i jego kumpel Sylvio przesiaduj¹ ca³ymi dniami z Thekl¹ w kuchni.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //Jeœli nie dostanê zap³aty, to bêdzie wina tego drania.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Gdybym chocia¿ móg³ mu spuœciæ porz¹dne lanie. Jednak wszyscy siê go boj¹, to prawdziwy morderca.
+	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Dlaczego wspomniaÅ‚eÅ› Bullka?
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //To jeden z najemnikÃ³w. WÅ‚aÅ›ciwie to on miaÅ‚ siÄ™ zajmowaÄ‡ ochronÄ… stada.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //Zamiast tego on i jego kumpel Sylvio przesiadujÄ… caÅ‚ymi dniami z TheklÄ… w kuchni.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //JeÅ›li nie dostanÄ™ zapÅ‚aty, to bÄ™dzie wina tego drania.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Gdybym chociaÅ¼ mÃ³gÅ‚ mu spuÅ›ciÄ‡ porzÄ…dne lanie. Jednak wszyscy siÄ™ go bojÄ…, to prawdziwy morderca.
 
 	MIS_Pepe_KickBullco = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_KickBullco,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_KickBullco,LOG_RUNNING);
-	B_LogEntry (TOPIC_KickBullco,"Pepe jest niezadowolony, ¿e Bullko poœwiêca jego owcom tak ma³o uwagi, i szuka kogoœ, kto da³by mu nauczkê.");
+	B_LogEntry (TOPIC_KickBullco,"Pepe jest niezadowolony, Å¼e Bullko poÅ›wiÄ™ca jego owcom tak maÅ‚o uwagi, i szuka kogoÅ›, kto daÅ‚by mu nauczkÄ™.");
 };
 
 // ************************************************************
@@ -230,7 +230,7 @@ instance DIA_Pepe_BullcoDefeated (C_INFO)
 	condition	 = 	DIA_Pepe_BullcoDefeated_Condition;
 	information	 = 	DIA_Pepe_BullcoDefeated_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Bullko dosta³ to, na co zas³ugiwa³. ";
+	description	 = 	"Bullko dostaÅ‚ to, na co zasÅ‚ugiwaÅ‚. ";
 };
 func int DIA_Pepe_BullcoDefeated_Condition ()
 {
@@ -245,8 +245,8 @@ func int DIA_Pepe_BullcoDefeated_Condition ()
 };
 func void DIA_Pepe_BullcoDefeated_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Bullko dosta³ to, na co zas³ugiwa³. Da³em mu porz¹dn¹ nauczkê.
-	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Ta œwinia zas³u¿y³a sobie na to.
+	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Bullko dostaÅ‚ to, na co zasÅ‚ugiwaÅ‚. DaÅ‚em mu porzÄ…dnÄ… nauczkÄ™.
+	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Ta Å›winia zasÅ‚uÅ¼yÅ‚a sobie na to.
 
 	MIS_Pepe_KickBullco = LOG_SUCCESS;
 	B_GivePlayerXP (XP_KickBullco);
@@ -279,22 +279,22 @@ func void DIA_Pepe_PERM_Info ()
 
 	if (kapitel <= 1)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_01"); //Wszystko w porz¹dku i ze mn¹, i z owcami. Przynajmniej z tymi, które pozosta³y przy ¿yciu.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_01"); //Wszystko w porzÄ…dku i ze mnÄ…, i z owcami. Przynajmniej z tymi, ktÃ³re pozostaÅ‚y przy Å¼yciu.
 	};
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Na razie dobrze. Ale obawiam siê, ¿e pewnego dnia wilki wróc¹ i bêdzie ich jeszcze wiêcej.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Na razie dobrze. Ale obawiam siÄ™, Å¼e pewnego dnia wilki wrÃ³cÄ… i bÄ™dzie ich jeszcze wiÄ™cej.
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //Dosz³y mnie dziwne wieœci. Podobno jakieœ wrogo nastawione typki zajê³y farmê Sekoba. Nie ruszaj¹ siê stamt¹d na krok.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //DoszÅ‚y mnie dziwne wieÅ›ci. Podobno jakieÅ› wrogo nastawione typki zajÄ™Å‚y farmÄ™ Sekoba. Nie ruszajÄ… siÄ™ stamtÄ…d na krok.
 	}
 	
 	if (kapitel >= 4)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_04"); //S³ysza³em, ¿e jacyœ ludzie zajêli farmê Lobarta. Mo¿e ktoœ powinien mu pomóc.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_04"); //SÅ‚yszaÅ‚em, Å¼e jacyÅ› ludzie zajÄ™li farmÄ™ Lobarta. MoÅ¼e ktoÅ› powinien mu pomÃ³c.
 	};
 };
 
@@ -308,7 +308,7 @@ instance DIA_Pepe_Liesel		(C_INFO)
 	condition	 = 	DIA_Pepe_Liesel_Condition;
 	information	 = 	DIA_Pepe_Liesel_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Czy móg³bym kupiæ owcê?";
+	description	 = 	"Czy mÃ³gÅ‚bym kupiÄ‡ owcÄ™?";
 };
 func int DIA_Pepe_Liesel_Condition ()
 {
@@ -319,9 +319,9 @@ func int DIA_Pepe_Liesel_Condition ()
 };
 func void DIA_Pepe_Liesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //Czy móg³bym kupiæ owcê?
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //Oczywiœcie, pod warunkiem, ¿e masz pieni¹dze. Owca bêdzie ciê kosztowa³a 100 sztuk z³ota.
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //Jeœli zap³acisz, dostaniesz owcê. Ale pamiêtaj, by dobrze j¹ traktowaæ.
+	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //Czy mÃ³gÅ‚bym kupiÄ‡ owcÄ™?
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //OczywiÅ›cie, pod warunkiem, Å¼e masz pieniÄ…dze. Owca bÄ™dzie ciÄ™ kosztowaÅ‚a 100 sztuk zÅ‚ota.
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //JeÅ›li zapÅ‚acisz, dostaniesz owcÄ™. Ale pamiÄ™taj, by dobrze jÄ… traktowaÄ‡.
 };
 
 // ************************************************************
@@ -336,7 +336,7 @@ instance DIA_Pepe_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Pepe_BuyLiesel_Condition;
 	information	 = 	DIA_Pepe_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Proszê, oto 100 sztuk z³ota. A teraz daj mi owcê.";
+	description	 = 	"ProszÄ™, oto 100 sztuk zÅ‚ota. A teraz daj mi owcÄ™.";
 };
 func int DIA_Pepe_BuyLiesel_Condition ()
 {	
@@ -347,24 +347,24 @@ func int DIA_Pepe_BuyLiesel_Condition ()
 };
 func void DIA_Pepe_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Proszê, oto 100 sztuk z³ota. A teraz daj mi owcê.
+	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //ProszÄ™, oto 100 sztuk zÅ‚ota. A teraz daj mi owcÄ™.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 100))
 	{
 		if (Pepe_SchafGekauft == 0)
 		{
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //Œwietnie. WeŸ sobie Betsy, znajdziesz j¹ na pastwisku.
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //Powiedz jej tylko, ¿eby za tob¹ posz³a. Jak na owcê, jest ca³kiem sprytna. I pamiêtaj, opiekuj siê ni¹.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //Åšwietnie. WeÅº sobie Betsy, znajdziesz jÄ… na pastwisku.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //Powiedz jej tylko, Å¼eby za tobÄ… poszÅ‚a. Jak na owcÄ™, jest caÅ‚kiem sprytna. I pamiÄ™taj, opiekuj siÄ™ niÄ….
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_03"); //Znowu? Dobrze, weŸ Betsy.
-			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Betsy? Jak to? Poprzednia te¿ nazywa³a siê Betsy...
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //Wszystkie owce nazywaj¹ siê Betsy.
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_03"); //Znowu? Dobrze, weÅº Betsy.
+			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Betsy? Jak to? Poprzednia teÅ¼ nazywaÅ‚a siÄ™ Betsy...
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //Wszystkie owce nazywajÄ… siÄ™ Betsy.
 			if (Pepe_SchafGekauft == 3)
 			{
-				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_06"); //Oczywiœcie, nie dotyczy to baranów.
-				AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_07"); //A one jak siê nazywaj¹?
+				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_06"); //OczywiÅ›cie, nie dotyczy to baranÃ³w.
+				AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_07"); //A one jak siÄ™ nazywajÄ…?
 				AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_08"); //Bruce.
 			};
 		};
@@ -376,7 +376,7 @@ func void DIA_Pepe_BuyLiesel_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_09"); //Nie masz dostatecznie du¿o pieniêdzy. Nie mogê ci sprzedaæ owcy po ni¿szej cenie.
+		AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_09"); //Nie masz dostatecznie duÅ¼o pieniÄ™dzy. Nie mogÄ™ ci sprzedaÄ‡ owcy po niÅ¼szej cenie.
 	};
 };
 

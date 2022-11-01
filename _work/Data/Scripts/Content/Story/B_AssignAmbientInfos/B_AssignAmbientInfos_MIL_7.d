@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_7_JOIN(C_INFO)
 	condition	= DIA_MIL_7_JOIN_Condition;
 	information	= DIA_MIL_7_JOIN_Info;
 	permanent	= TRUE;
-	description = "Chcê wst¹piæ do stra¿y.";
+	description = "ChcÄ™ wstÄ…piÄ‡ do straÅ¼y.";
 };                       
 
 FUNC INT DIA_MIL_7_JOIN_Condition()
@@ -42,16 +42,16 @@ FUNC INT DIA_MIL_7_JOIN_Condition()
 
 FUNC VOID DIA_MIL_7_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_JOIN_15_00"); //Chcê siê przy³¹czyæ do stra¿y!
+	AI_Output (other, self, "DIA_MIL_7_JOIN_15_00"); //ChcÄ™ siÄ™ przyÅ‚Ä…czyÄ‡ do straÅ¼y!
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01"); //Nie jesteœ nawet obywatelem Khorinis! Dlaczego myœlisz, ¿e Lord Andre zechce ciê przyj¹æ?
-		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02"); //Gdyby tak by³o, ka¿dy móg³by sobie przyjœæ, wzi¹æ przydzia³ow¹ broñ i zbrojê, a póŸniej znikn¹æ na dobre!
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01"); //Nie jesteÅ› nawet obywatelem Khorinis! Dlaczego myÅ›lisz, Å¼e Lord Andre zechce ciÄ™ przyjÄ…Ä‡?
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02"); //Gdyby tak byÅ‚o, kaÅ¼dy mÃ³gÅ‚by sobie przyjÅ›Ä‡, wziÄ…Ä‡ przydziaÅ‚owÄ… broÅ„ i zbrojÄ™, a pÃ³Åºniej zniknÄ…Ä‡ na dobre!
 		
 		if (C_NpcIsInQuarter (self) != Q_KASERNE)
 		{
-			AI_Output (other, self, "DIA_MIL_7_JOIN_15_03"); //Ja mówiê powa¿nie!
-			AI_Output (self, other, "DIA_MIL_7_JOIN_07_04"); //Nie wyjaœniaj tego mnie, tylko Lordowi Andre. Znajdziesz go w koszarach.
+			AI_Output (other, self, "DIA_MIL_7_JOIN_15_03"); //Ja mÃ³wiÄ™ powaÅ¼nie!
+			AI_Output (self, other, "DIA_MIL_7_JOIN_07_04"); //Nie wyjaÅ›niaj tego mnie, tylko Lordowi Andre. Znajdziesz go w koszarach.
 		};
 	}
 	else
@@ -83,9 +83,9 @@ FUNC INT DIA_MIL_7_PEOPLE_Condition()
 FUNC VOID DIA_MIL_7_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_7_PEOPLE_15_00"); //Co wiesz o paladynach?
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_01"); //Niewiele. Nikt w³aœciwie nie wie, dlaczego tu przybyli. Nawet ci z nas, którzy s³u¿¹ w stra¿y.
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02"); //Przejêli kontrolê nad miastem, przegonili gubernatora z jego komnat, zwolnili te¿ sêdziego z urzêdu.
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03"); //Jeœli chcesz znaæ moje zdanie, to dobrze siê sta³o. Tym nadêtym os³om przyda siê lekcja pokory.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_01"); //Niewiele. Nikt wÅ‚aÅ›ciwie nie wie, dlaczego tu przybyli. Nawet ci z nas, ktÃ³rzy sÅ‚uÅ¼Ä… w straÅ¼y.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02"); //PrzejÄ™li kontrolÄ™ nad miastem, przegonili gubernatora z jego komnat, zwolnili teÅ¼ sÄ™dziego z urzÄ™du.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03"); //JeÅ›li chcesz znaÄ‡ moje zdanie, to dobrze siÄ™ staÅ‚o. Tym nadÄ™tym osÅ‚om przyda siÄ™ lekcja pokory.
 };
 
 // *************************************************************************
@@ -108,10 +108,10 @@ FUNC INT DIA_MIL_7_LOCATION_Condition()
 FUNC VOID DIA_MIL_7_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_7_LOCATION_15_00"); //Jakie perspektywy daje to miasto?
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_01"); //Jeœli nie chcesz skoñczyæ w rynsztoku dzielnicy portowej, znajdŸ sobie jak¹œ sta³¹ pracê. Popytaj w dolnej czêœci miasta, mo¿e tam uda ci siê coœ znaleŸæ.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_02"); //Jeœli chcesz d³u¿ej pozostaæ w mieœcie, powinieneœ przy³¹czyæ siê do stra¿y lub chocia¿ podszkoliæ siê w walce.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_03"); //Instruktorzy w koszarach szkol¹ tak¿e cywili.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_04"); //Wkrótce pojawi¹ siê tu orkowie, a wtedy docenisz wojskowy trening i godziny na nim spêdzone.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_01"); //JeÅ›li nie chcesz skoÅ„czyÄ‡ w rynsztoku dzielnicy portowej, znajdÅº sobie jakÄ…Å› staÅ‚Ä… pracÄ™. Popytaj w dolnej czÄ™Å›ci miasta, moÅ¼e tam uda ci siÄ™ coÅ› znaleÅºÄ‡.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_02"); //JeÅ›li chcesz dÅ‚uÅ¼ej pozostaÄ‡ w mieÅ›cie, powinieneÅ› przyÅ‚Ä…czyÄ‡ siÄ™ do straÅ¼y lub chociaÅ¼ podszkoliÄ‡ siÄ™ w walce.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_03"); //Instruktorzy w koszarach szkolÄ… takÅ¼e cywili.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_04"); //WkrÃ³tce pojawiÄ… siÄ™ tu orkowie, a wtedy docenisz wojskowy trening i godziny na nim spÄ™dzone.
 };
 
 // *************************************************************************
@@ -131,7 +131,7 @@ func INT DIA_MIL_7_STANDARD_Condition()
 };
 FUNC VOID DIA_MIL_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_MIL_7_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
@@ -139,7 +139,7 @@ FUNC VOID DIA_MIL_7_STANDARD_Info()
 		randy = Hlp_Random (2);
 		if (randy == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_MIL_7_STANDARD_07_00"); //Ludzie znikaj¹ jeden po drugim. Nie uda³o nam siê jeszcze dowiedzieæ, co siê z nimi dzieje.
+			AI_Output (self,other,"DIA_Addon_MIL_7_STANDARD_07_00"); //Ludzie znikajÄ… jeden po drugim. Nie udaÅ‚o nam siÄ™ jeszcze dowiedzieÄ‡, co siÄ™ z nimi dzieje.
 			
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
@@ -151,35 +151,35 @@ FUNC VOID DIA_MIL_7_STANDARD_Info()
 		}
 		else
 		{		
-			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_01"); //Ponoæ ch³opi siê buntuj¹. Nie doœæ, ¿e jesteœmy w œrodku wojny z orkami, to jeszcze musimy siê u¿eraæ z tymi prostakami.
+			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_01"); //PonoÄ‡ chÅ‚opi siÄ™ buntujÄ…. Nie doÅ›Ä‡, Å¼e jesteÅ›my w Å›rodku wojny z orkami, to jeszcze musimy siÄ™ uÅ¼eraÄ‡ z tymi prostakami.
 		};
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_02"); //Czas ju¿, by paladyni zajêli siê rebeli¹ ch³opów. Kto ³amie prawo, powinien ponieœæ tego surowe konsekwencje. Szczególnie teraz, kiedy toczy siê wojna.
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_02"); //Czas juÅ¼, by paladyni zajÄ™li siÄ™ rebeliÄ… chÅ‚opÃ³w. Kto Å‚amie prawo, powinien ponieÅ›Ä‡ tego surowe konsekwencje. SzczegÃ³lnie teraz, kiedy toczy siÄ™ wojna.
 	};
 
 	if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_03"); //Najemnik, którego oskar¿ono o zabójstwo Lothara, jest prawdopodobnie niewinny. Ponoæ ktoœ znalaz³ dowód na to, ¿e go wrobiono.
+			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_03"); //Najemnik, ktÃ³rego oskarÅ¼ono o zabÃ³jstwo Lothara, jest prawdopodobnie niewinny. PonoÄ‡ ktoÅ› znalazÅ‚ dowÃ³d na to, Å¼e go wrobiono.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_04"); //Jeden z najemników Onara zamordowa³ Lothara, czcigodnego paladyna. Na szczêœcie drañ zosta³ z³apany i wtr¹cony do wiêzienia.
+			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_04"); //Jeden z najemnikÃ³w Onara zamordowaÅ‚ Lothara, czcigodnego paladyna. Na szczÄ™Å›cie draÅ„ zostaÅ‚ zÅ‚apany i wtrÄ…cony do wiÄ™zienia.
 		};
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_05"); //Niektórzy z najemników opuœcili farmê Onara. Jak widaæ, problem rozwi¹zuje siê sam.
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_05"); //NiektÃ³rzy z najemnikÃ³w opuÅ›cili farmÄ™ Onara. Jak widaÄ‡, problem rozwiÄ…zuje siÄ™ sam.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_06"); //Pozbyliœmy siê smoków, ale to nie koniec. Nastêpni w kolejce s¹ orkowie. Nied³ugo wszystkim siê zajmiemy!
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_06"); //PozbyliÅ›my siÄ™ smokÃ³w, ale to nie koniec. NastÄ™pni w kolejce sÄ… orkowie. NiedÅ‚ugo wszystkim siÄ™ zajmiemy!
 	};
 };
 

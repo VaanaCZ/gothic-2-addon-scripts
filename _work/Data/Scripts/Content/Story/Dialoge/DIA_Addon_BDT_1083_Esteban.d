@@ -78,10 +78,10 @@ FUNC INT DIA_Addon_Esteban_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_00");//Wiêc to ty jesteœ tym goœciem, który wywalczy³ sobie wejœcie do obozu.
-	AI_Output (other, self, "DIA_Addon_Esteban_Hi_15_01");//Wieœci szybko siê rozchodz¹...
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_02");//Franko by³ twardy. Nikt nie œmia³ mu siê przeciwstawiæ. Nikt poza tob¹.
-	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_03");//Mówiê to tylko po to, ¿ebyœmy siê dobrze zrozumieli. Jeœli spróbujesz tego samego ze mn¹, zabijê ciê.
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_00");//WiÄ™c to ty jesteÅ› tym goÅ›ciem, ktÃ³ry wywalczyÅ‚ sobie wejÅ›cie do obozu.
+	AI_Output (other, self, "DIA_Addon_Esteban_Hi_15_01");//WieÅ›ci szybko siÄ™ rozchodzÄ…...
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_02");//Franko byÅ‚ twardy. Nikt nie Å›miaÅ‚ mu siÄ™ przeciwstawiÄ‡. Nikt poza tobÄ….
+	AI_Output (self, other, "DIA_Addon_Esteban_Hi_07_03");//MÃ³wiÄ™ to tylko po to, Å¼ebyÅ›my siÄ™ dobrze zrozumieli. JeÅ›li sprÃ³bujesz tego samego ze mnÄ…, zabijÄ™ ciÄ™.
 };
 //--------------------------------------------------------------------
 //	Info Mine
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_Esteban_Mine   (C_INFO)
 	condition   = DIA_Addon_Esteban_Mine_Condition;
 	information = DIA_Addon_Esteban_Mine_Info;
 	permanent   = FALSE;
-	description = "Chcê wejœæ do kopalni!";
+	description = "ChcÄ™ wejÅ›Ä‡ do kopalni!";
 };
 FUNC INT DIA_Addon_Esteban_Mine_Condition()
 {	
@@ -104,10 +104,10 @@ FUNC INT DIA_Addon_Esteban_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Mine_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Mine_15_00");//Chcê wejœæ do kopalni!
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_01");//Oczywiœcie, ¿e tak. Rozmawiasz z w³aœciw¹ osob¹.
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_02");//Ka¿dy, kto pracuje w kopalni, dostanie ³adny udzia³ w z³ocie.
-	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_03");//A ja odpowiadam za czerwone kamienie, bez których Thorus nikogo nie przepuœci.
+	AI_Output (other, self, "DIA_Addon_Esteban_Mine_15_00");//ChcÄ™ wejÅ›Ä‡ do kopalni!
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_01");//OczywiÅ›cie, Å¼e tak. Rozmawiasz z wÅ‚aÅ›ciwÄ… osobÄ….
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_02");//KaÅ¼dy, kto pracuje w kopalni, dostanie Å‚adny udziaÅ‚ w zÅ‚ocie.
+	AI_Output (self, other, "DIA_Addon_Esteban_Mine_07_03");//A ja odpowiadam za czerwone kamienie, bez ktÃ³rych Thorus nikogo nie przepuÅ›ci.
 };
 //--------------------------------------------------------------------
 //	Info Rot
@@ -132,17 +132,17 @@ FUNC VOID DIA_Addon_Esteban_Rot_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Esteban_Rot_15_00");//Daj mi jeden z tych czerwonych kamieni.
 	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_01");//Pewnie, ale nie za darmo.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_02");//Zwykle domagam siê pewnego udzia³u w wykopanym z³ocie.
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_03");//Jak tam twoja sprawnoœæ w kopaniu?
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_02");//Zwykle domagam siÄ™ pewnego udziaÅ‚u w wykopanym zÅ‚ocie.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_03");//Jak tam twoja sprawnoÅ›Ä‡ w kopaniu?
 	if (Hero_HackChance > 25) 
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_04");//Znasz ju¿ parê sztuczek, prawda?
+		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_04");//Znasz juÅ¼ parÄ™ sztuczek, prawda?
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_05");//Nie wygl¹dasz na eksperta w tej dziedzinie...
+		AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_05");//Nie wyglÄ…dasz na eksperta w tej dziedzinie...
 	};
-	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_06");//Gdybym da³ ci czerwony kamieñ, to na pewno nie dlatego, ¿e jesteœ wykwalifikowanym kopaczem.
+	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_06");//Gdybym daÅ‚ ci czerwony kamieÅ„, to na pewno nie dlatego, Å¼e jesteÅ› wykwalifikowanym kopaczem.
 	AI_Output (self, other, "DIA_Addon_Esteban_Rot_07_07");//Nie, mam dla ciebie inne zadanie.
 	
 };
@@ -168,28 +168,28 @@ FUNC INT DIA_Addon_Esteban_MIS_Condition()
 FUNC VOID DIA_Addon_Esteban_MIS_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_00");//Tak?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_01");//Jeden z bandytów próbowa³ mnie usun¹æ. Jednak to ON zosta³ usuniêty przez moich stra¿ników.
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_02");//Pewnie chcia³ zaj¹æ twoje miejsce, co?
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_03");//To by³ dureñ! Skretynia³y oprych. Szczerze w¹tpiê, ¿e sam wpad³ na ten pomys³.
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_04");//Nie, wykonywa³ czyjeœ zlecenie...
-	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_05");//A ja mam siê dowiedzieæ, kto za tym stoi.
-	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_06");//Niewa¿ne, kto wys³a³ zabójcê - zap³aci za to. ZnajdŸ go, a ja wpuszczê ciê do kopalni.
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_01");//Jeden z bandytÃ³w prÃ³bowaÅ‚ mnie usunÄ…Ä‡. Jednak to ON zostaÅ‚ usuniÄ™ty przez moich straÅ¼nikÃ³w.
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_02");//Pewnie chciaÅ‚ zajÄ…Ä‡ twoje miejsce, co?
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_03");//To byÅ‚ dureÅ„! SkretyniaÅ‚y oprych. Szczerze wÄ…tpiÄ™, Å¼e sam wpadÅ‚ na ten pomysÅ‚.
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_04");//Nie, wykonywaÅ‚ czyjeÅ› zlecenie...
+	AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_05");//A ja mam siÄ™ dowiedzieÄ‡, kto za tym stoi.
+	AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_06");//NiewaÅ¼ne, kto wysÅ‚aÅ‚ zabÃ³jcÄ™ - zapÅ‚aci za to. ZnajdÅº go, a ja wpuszczÄ™ ciÄ™ do kopalni.
 	
 	if !Npc_IsDead (Senyan)
 	&&  Npc_KnowsInfo (other,DIA_Addon_BDT_1084_Senyan_Hi)
 	{
-		AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_07");//W³aœnie dlatego przys³a³ mnie tu Senyan.
-		AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_08");//Senyan? On te¿ dla mnie pracuje. Kaza³em mu mieæ oczy szeroko otwarte.
+		AI_Output (other, self, "DIA_Addon_Esteban_MIS_15_07");//WÅ‚aÅ›nie dlatego przysÅ‚aÅ‚ mnie tu Senyan.
+		AI_Output (self, other, "DIA_Addon_Esteban_MIS_07_08");//Senyan? On teÅ¼ dla mnie pracuje. KazaÅ‚em mu mieÄ‡ oczy szeroko otwarte.
 	};
 	
 	MIS_Judas = LOG_RUNNING;
 	Log_CreateTopic (Topic_Addon_Esteban,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Esteban,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Esteban, "Mia³a miejsce próba zabójstwa Estebana. Mam siê dowiedzieæ, kto za tym stoi.");
+	B_LogEntry (Topic_Addon_Esteban, "MiaÅ‚a miejsce prÃ³ba zabÃ³jstwa Estebana. Mam siÄ™ dowiedzieÄ‡, kto za tym stoi.");
 
 };
 //--------------------------------------------------------------------
-//	Info Attentäter (Kerl)
+//	Info AttentÃ¤ter (Kerl)
 //--------------------------------------------------------------------
 INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 {
@@ -198,7 +198,7 @@ INSTANCE DIA_Addon_Esteban_Kerl   (C_INFO)
 	condition   = DIA_Addon_Esteban_Kerl_Condition;
 	information = DIA_Addon_Esteban_Kerl_Info;
 	permanent   = FALSE;
-	description = "Od czego mam zacz¹æ?";
+	description = "Od czego mam zaczÄ…Ä‡?";
 };
 FUNC INT DIA_Addon_Esteban_Kerl_Condition()
 {	
@@ -209,12 +209,12 @@ FUNC INT DIA_Addon_Esteban_Kerl_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Kerl_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Kerl_15_00");//Od czego mam zacz¹æ?
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_01");//Wszyscy w obozie wiedz¹ o tym incydencie. Tak wiêc nie musisz tego trzymaæ w tajemnicy.
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_02");//Spróbuj siê dowiedzieæ, kto jest po mojej stronie, a kto nie!
-	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_03");//Porozmawiaj ze Snafem. Ten gruby kucharzyna zawsze du¿o wie.
+	AI_Output (other, self, "DIA_Addon_Esteban_Kerl_15_00");//Od czego mam zaczÄ…Ä‡?
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_01");//Wszyscy w obozie wiedzÄ… o tym incydencie. Tak wiÄ™c nie musisz tego trzymaÄ‡ w tajemnicy.
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_02");//SprÃ³buj siÄ™ dowiedzieÄ‡, kto jest po mojej stronie, a kto nie!
+	AI_Output (self, other, "DIA_Addon_Esteban_Kerl_07_03");//Porozmawiaj ze Snafem. Ten gruby kucharzyna zawsze duÅ¼o wie.
 	
-	B_LogEntry (Topic_Addon_Esteban, "Aby wytropiæ spiskowca, powinienem porozmawiaæ ze wszystkimi ludŸmi w obozie i ustaliæ, po czyjej s¹ stronie. Najlepiej rozpocz¹æ od Snafa. Dociera do niego mnóstwo plotek.");
+	B_LogEntry (Topic_Addon_Esteban, "Aby wytropiÄ‡ spiskowca, powinienem porozmawiaÄ‡ ze wszystkimi ludÅºmi w obozie i ustaliÄ‡, po czyjej sÄ… stronie. Najlepiej rozpoczÄ…Ä‡ od Snafa. Dociera do niego mnÃ³stwo plotek.");
 };
 //--------------------------------------------------------------------
 //	Info Armor 
@@ -226,7 +226,7 @@ INSTANCE DIA_Addon_Esteban_Armor   (C_INFO)
 	condition   = DIA_Addon_Esteban_Armor_Condition;
 	information = DIA_Addon_Esteban_Armor_Info;
 	permanent   = FALSE;
-	description = "Potrzebujê lepszego pancerza.";
+	description = "PotrzebujÄ™ lepszego pancerza.";
 };
 FUNC INT DIA_Addon_Esteban_Armor_Condition()
 {	
@@ -237,11 +237,11 @@ FUNC INT DIA_Addon_Esteban_Armor_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Armor_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Armor_15_00"); //Potrzebujê lepszego pancerza.
-	AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_01"); //Po co? Masz ju¿ zbrojê. Musi ci wystarczyæ.
+	AI_Output (other, self, "DIA_Addon_Esteban_Armor_15_00"); //PotrzebujÄ™ lepszego pancerza.
+	AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_01"); //Po co? Masz juÅ¼ zbrojÄ™. Musi ci wystarczyÄ‡.
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_02"); //Poproœ, jak wykonasz zadanie...
+		AI_Output (self, other, "DIA_Addon_Esteban_Armor_07_02"); //PoproÅ›, jak wykonasz zadanie...
 	};
 };
 //--------------------------------------------------------------------
@@ -268,24 +268,24 @@ FUNC INT DIA_Addon_Esteban_Auftrag_Condition()
 FUNC VOID DIA_Addon_Esteban_Auftrag_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_00");//Co do tego zadania...
-	AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_01");//S³uchaj, mam tak¿e inne sprawy, którymi muszê siê zajmowaæ.
+	AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_01");//SÅ‚uchaj, mam takÅ¼e inne sprawy, ktÃ³rymi muszÄ™ siÄ™ zajmowaÄ‡.
 	
 	if (MIS_Judas == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_02");//Och, myœla³em, ¿e zaciekawi ciê informacja o tym, kto sta³ za prób¹ zabójstwa...
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_03");//Kto to jest? Podaj mi imiê, ¿eby moi stra¿nicy mogli mu poder¿n¹æ gard³o.
-		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_04");//To handlarz Fisk. Siedzi sobie teraz w karczmie i popija. Nie ma pojêcia, ¿e wiem...
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_05");//HA! Doskona³a robota, ch³opcze. Moi stra¿nicy siê nim zajm¹...
+		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_02");//Och, myÅ›laÅ‚em, Å¼e zaciekawi ciÄ™ informacja o tym, kto staÅ‚ za prÃ³bÄ… zabÃ³jstwa...
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_03");//Kto to jest? Podaj mi imiÄ™, Å¼eby moi straÅ¼nicy mogli mu poderÅ¼nÄ…Ä‡ gardÅ‚o.
+		AI_Output (other, self, "DIA_Addon_Esteban_Auftrag_15_04");//To handlarz Fisk. Siedzi sobie teraz w karczmie i popija. Nie ma pojÄ™cia, Å¼e wiem...
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_05");//HA! DoskonaÅ‚a robota, chÅ‚opcze. Moi straÅ¼nicy siÄ™ nim zajmÄ…...
 		
 		AI_TurnToNpc (self, Wache_01);
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_06");//Ch³opaki, s³yszeliœcie! IdŸcie po tego Fiska.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_06");//ChÅ‚opaki, sÅ‚yszeliÅ›cie! IdÅºcie po tego Fiska.
 		AI_TurnToNpc (self, other);
 		
 		Bodyguard_Killer = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_07");//Wróæ, gdy dowiesz siê, kto to by³.
+		AI_Output (self, other, "DIA_Addon_Esteban_Auftrag_07_07");//WrÃ³Ä‡, gdy dowiesz siÄ™, kto to byÅ‚.
 		AI_StopProcessInfos(self);
 	};
 };	
@@ -312,8 +312,8 @@ FUNC VOID DIA_Addon_Esteban_Away_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Esteban_Away_15_00");//I co teraz?
 	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_01");//Teraz? Powiem ci, co zrobimy.
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_02");//Fisk umrze w cierpieniach i dowiedz¹ siê o tym wszyscy w obozie.
-	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_03");//To bêdzie dla nich ostrze¿enie.
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_02");//Fisk umrze w cierpieniach i dowiedzÄ… siÄ™ o tym wszyscy w obozie.
+	AI_Output (self, other, "DIA_Addon_Esteban_Away_07_03");//To bÄ™dzie dla nich ostrzeÅ¼enie.
 	
 	B_StartotherRoutine (Wache_01,"AMBUSH");
 	B_StartotherRoutine (Wache_02,"AMBUSH");
@@ -328,7 +328,7 @@ INSTANCE DIA_Addon_Esteban_Stone   (C_INFO)
 	condition   = DIA_Addon_Esteban_Stone_Condition;
 	information = DIA_Addon_Esteban_Stone_Info;
 	permanent   = FALSE;
-	description = "Dobra, a czy dostanê teraz czerwony kamieñ?";
+	description = "Dobra, a czy dostanÄ™ teraz czerwony kamieÅ„?";
 };
 FUNC INT DIA_Addon_Esteban_Stone_Condition()
 {	
@@ -340,9 +340,9 @@ FUNC INT DIA_Addon_Esteban_Stone_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Stone_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_Stone_15_00");//Dobra, a czy dostanê teraz czerwony kamieñ?
-	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_01");//Dobrze siê spisa³eœ. Ktoœ taki jak ty nie powinien siedzieæ w kopalni.
-	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_02");//Bardziej mi siê przydasz w obozie. Zostaniesz tu i bêdziesz dalej dla mnie pracowa³.
+	AI_Output (other, self, "DIA_Addon_Esteban_Stone_15_00");//Dobra, a czy dostanÄ™ teraz czerwony kamieÅ„?
+	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_01");//Dobrze siÄ™ spisaÅ‚eÅ›. KtoÅ› taki jak ty nie powinien siedzieÄ‡ w kopalni.
+	AI_Output (self, other, "DIA_Addon_Esteban_Stone_07_02");//Bardziej mi siÄ™ przydasz w obozie. Zostaniesz tu i bÄ™dziesz dalej dla mnie pracowaÅ‚.
 };		
 //--------------------------------------------------------------------
 //	Info nicht arbeiten
@@ -354,7 +354,7 @@ INSTANCE DIA_Addon_Esteban_not   (C_INFO)
 	condition   = DIA_Addon_Esteban_not_Condition;
 	information = DIA_Addon_Esteban_not_Info;
 	permanent   = FALSE;
-	description = "Zastanowiê siê nad tym.";
+	description = "ZastanowiÄ™ siÄ™ nad tym.";
 };
 FUNC INT DIA_Addon_Esteban_not_Condition()
 {	
@@ -365,9 +365,9 @@ FUNC INT DIA_Addon_Esteban_not_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_not_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_not_15_00");//Zastanowiê siê nad tym.
-	AI_Output (self, other, "DIA_Addon_Esteban_not_07_01");//NajwyraŸniej zapomnia³eœ, z kim rozmawiasz. To ja jestem szefem w obozie i bêdziesz robi³, co ci ka¿ê.
-	AI_Output (self, other, "DIA_Addon_Esteban_not_07_02");//A ja mówiê, ¿e bêdziesz pracowa³ dla mnie i dla nikogo innego. Zrozumia³eœ?
+	AI_Output (other, self, "DIA_Addon_Esteban_not_15_00");//ZastanowiÄ™ siÄ™ nad tym.
+	AI_Output (self, other, "DIA_Addon_Esteban_not_07_01");//NajwyraÅºniej zapomniaÅ‚eÅ›, z kim rozmawiasz. To ja jestem szefem w obozie i bÄ™dziesz robiÅ‚, co ci kaÅ¼Ä™.
+	AI_Output (self, other, "DIA_Addon_Esteban_not_07_02");//A ja mÃ³wiÄ™, Å¼e bÄ™dziesz pracowaÅ‚ dla mnie i dla nikogo innego. ZrozumiaÅ‚eÅ›?
 };
 //--------------------------------------------------------------------
 //	Info Leibwache weg (fight)
@@ -379,7 +379,7 @@ INSTANCE DIA_Addon_Esteban_fight   (C_INFO)
 	condition   = DIA_Addon_Esteban_fight_Condition;
 	information = DIA_Addon_Esteban_fight_Info;
 	permanent   = FALSE;
-	description = "Chyba ¿artujesz?";
+	description = "Chyba Å¼artujesz?";
 };
 FUNC INT DIA_Addon_Esteban_fight_Condition()
 {	
@@ -390,12 +390,12 @@ FUNC INT DIA_Addon_Esteban_fight_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_fight_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_00");//Chyba ¿artujesz. Nie taka by³a umowa.
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_01");//Nie ka¿demu zaproponowa³bym coœ takiego. Oczywiœcie, jeœli ci siê coœ nie podoba, mo¿esz zawsze opuœciæ obozowisko...
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_02");//A mo¿e dotrzymasz s³owa i dasz mi czerwony kamieñ?
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_03");//Hej - jeszcze jedno s³owo i moi stra¿nicy zajm¹ siê tak¿e tob¹.
-	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_04");//Jacy stra¿nicy?
-	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_05");//Co? Ach, rozumiem. Chcesz mnie zdradziæ. Kiepski pomys³.
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_00");//Chyba Å¼artujesz. Nie taka byÅ‚a umowa.
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_01");//Nie kaÅ¼demu zaproponowaÅ‚bym coÅ› takiego. OczywiÅ›cie, jeÅ›li ci siÄ™ coÅ› nie podoba, moÅ¼esz zawsze opuÅ›ciÄ‡ obozowisko...
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_02");//A moÅ¼e dotrzymasz sÅ‚owa i dasz mi czerwony kamieÅ„?
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_03");//Hej - jeszcze jedno sÅ‚owo i moi straÅ¼nicy zajmÄ… siÄ™ takÅ¼e tobÄ….
+	AI_Output (other, self, "DIA_Addon_Esteban_fight_15_04");//Jacy straÅ¼nicy?
+	AI_Output (self, other, "DIA_Addon_Esteban_fight_07_05");//Co? Ach, rozumiem. Chcesz mnie zdradziÄ‡. Kiepski pomysÅ‚.
 	
 	Bodyguard_Killer = FALSE;
 	
@@ -415,7 +415,7 @@ INSTANCE DIA_Addon_Esteban_Duell   (C_INFO)
 	condition   = DIA_Addon_Esteban_Duell_Condition;
 	information = DIA_Addon_Esteban_Duell_Info;
 	permanent   = FALSE;
-	description = "DAWAJ czerwony kamieñ, bo sam go sobie wezmê.";
+	description = "DAWAJ czerwony kamieÅ„, bo sam go sobie wezmÄ™.";
 };
 FUNC INT DIA_Addon_Esteban_Duell_Condition()
 {	
@@ -427,8 +427,8 @@ FUNC INT DIA_Addon_Esteban_Duell_Condition()
 };
 FUNC VOID DIA_Addon_Esteban_Duell_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Esteban_Duell_15_00"); //DAWAJ czerwony kamieñ, bo sam go sobie wezmê.
-	AI_Output (self,other,"DIA_Addon_Esteban_Duell_07_01"); //Chyba znudzi³o ci siê ¿ycie. Dobrze, zrobiê ci przys³ugê i pomogê rozwi¹zaæ ten problem!!!
+	AI_Output (other,self,"DIA_Addon_Esteban_Duell_15_00"); //DAWAJ czerwony kamieÅ„, bo sam go sobie wezmÄ™.
+	AI_Output (self,other,"DIA_Addon_Esteban_Duell_07_01"); //Chyba znudziÅ‚o ci siÄ™ Å¼ycie. Dobrze, zrobiÄ™ ci przysÅ‚ugÄ™ i pomogÄ™ rozwiÄ…zaÄ‡ ten problem!!!
 	
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);

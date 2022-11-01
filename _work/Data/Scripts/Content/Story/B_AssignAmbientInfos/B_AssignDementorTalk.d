@@ -72,32 +72,32 @@ func void DIA_AmbientDementor_Info ()
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 		{	
-			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Przyszed³eœ tu, by przeszkodziæ nam w rytuale? Jego dusza nale¿y do nas! Ju¿ mu nie pomo¿esz, magu!
+			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //PrzyszedÅ‚eÅ› tu, by przeszkodziÄ‡ nam w rytuale? Jego dusza naleÅ¼y do nas! JuÅ¼ mu nie pomoÅ¼esz, magu!
 		}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 		{
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 				{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //Spróbujesz przeszkodziæ mi w moim zadaniu? Nie masz szans, œmiertelniku!
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Jeszcze nikomu nie uda³o siê przejœæ przez moj¹ kryptê. Zawróæ! Ty te¿ nigdy nie dotrzesz do œwiêtego Dworu Irdorath.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //SprÃ³bujesz przeszkodziÄ‡ mi w moim zadaniu? Nie masz szans, Å›miertelniku!
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Jeszcze nikomu nie udaÅ‚o siÄ™ przejÅ›Ä‡ przez mojÄ… kryptÄ™. ZawrÃ³Ä‡! Ty teÅ¼ nigdy nie dotrzesz do Å›wiÄ™tego Dworu Irdorath.
 				}
 				else
 				{	
 				 	if (randy == 0)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //I tak dotar³eœ zbyt daleko, nêdzny robaku. Nigdy nie zst¹pisz do œwiêtego sanktuarium.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //I tak dotarÅ‚eÅ› zbyt daleko, nÄ™dzny robaku. Nigdy nie zstÄ…pisz do Å›wiÄ™tego sanktuarium.
 					};
 					if (randy == 1)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //Stój! Ani kroku dalej!
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //StÃ³j! Ani kroku dalej!
 					};
 					if (randy == 2)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Daleko zaszed³eœ, ale to ju¿ koniec twojej drogi.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Daleko zaszedÅ‚eÅ›, ale to juÅ¼ koniec twojej drogi.
 					};
 					if (randy == 3)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_06"); //Jeœli chcesz zmierzyæ siê z moim Panem, musisz najpierw mnie pokonaæ!
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_06"); //JeÅ›li chcesz zmierzyÄ‡ siÄ™ z moim Panem, musisz najpierw mnie pokonaÄ‡!
 					};
 				};	
 		}
@@ -105,38 +105,38 @@ func void DIA_AmbientDementor_Info ()
 		{
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Nêdzna namiastko maga, nigdy nie sprostasz boskiej mocy mego Pana i Mistrza!
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //NÄ™dzna namiastko maga, nigdy nie sprostasz boskiej mocy mego Pana i Mistrza!
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //A wiêc wybra³eœ œcie¿kê magii, by nas pokonaæ? Sprytny ruch, ale nawet to ciê teraz nie uratuje.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //A wiÄ™c wybraÅ‚eÅ› Å›cieÅ¼kÄ™ magii, by nas pokonaÄ‡? Sprytny ruch, ale nawet to ciÄ™ teraz nie uratuje.
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Nawet jako mag nie zdo³asz nas zniszczyæ.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Nawet jako mag nie zdoÅ‚asz nas zniszczyÄ‡.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mój Pan pozbawi ciê ¿ycia. Twoje kuglarskie sztuczki w niczym ci nie pomog¹.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //MÃ³j Pan pozbawi ciÄ™ Å¼ycia. Twoje kuglarskie sztuczki w niczym ci nie pomogÄ….
 			};
 		}
 	else
 		{	
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Poddaj siê, póki jeszcze mo¿esz. St¹d nie ma ucieczki.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Poddaj siÄ™, pÃ³ki jeszcze moÅ¼esz. StÄ…d nie ma ucieczki.
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Teraz poznasz prawdziw¹ moc mego Pana. Nic ciê ju¿ nie uratuje!
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Teraz poznasz prawdziwÄ… moc mego Pana. Nic ciÄ™ juÅ¼ nie uratuje!
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Mój Pan domaga siê twojej g³owy. Nie ma ju¿ dla ciebie ratunku.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //MÃ³j Pan domaga siÄ™ twojej gÅ‚owy. Nie ma juÅ¼ dla ciebie ratunku.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Wpad³eœ w nasze sid³a. Po¿egnaj siê z ¿yciem.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //WpadÅ‚eÅ› w nasze sidÅ‚a. PoÅ¼egnaj siÄ™ z Å¼yciem.
 			};
 		};
 };

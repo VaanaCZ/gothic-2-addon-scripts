@@ -1,12 +1,12 @@
 // *******************
 // LOG_Topic Constants 
 // -------------------
-// (für LOG_NOTE)
+// (fÃ¼r LOG_NOTE)
 // *******************
-// ------ Händler ------
+// ------ HÃ¤ndler ------
 const string	TOPIC_Trader_OC				=   "Handel w zamku";
 const string	TOPIC_CityTrader			=	"Handel w Khorinis";
-const string	Topic_OutTrader				=	"Handel w œwiecie zewnêtrznym";
+const string	Topic_OutTrader				=	"Handel w Å›wiecie zewnÄ™trznym";
 const string	Topic_SoldierTrader			=	"Handel na farmie Onara";
 
 
@@ -14,21 +14,21 @@ const string	Topic_SoldierTrader			=	"Handel na farmie Onara";
 const string	TOPIC_Teacher				=	"Nauka";
 const string	TOPIC_Teacher_OC			=   "Nauka w zamku";
 const string	Topic_SoldierTeacher		=	"Nauka na farmie Onara";
-const string	Topic_OutTeacher			=	"Nauka w œwiecie zewnêtrznym";
+const string	Topic_OutTeacher			=	"Nauka w Å›wiecie zewnÄ™trznym";
 const string	TOPIC_CityTeacher			=	"Nauka w Khorinis";
 //ADDON
-const string	TOPIC_Addon_KDWTeacher		=	"Nauka u Magów Wody";
+const string	TOPIC_Addon_KDWTeacher		=	"Nauka u MagÃ³w Wody";
 
 // ------ Micro - Talente ------
 const string	TOPIC_TalentSmith			=	"Wykuwanie";
 const string	TOPIC_TalentRunes			=	"Runy";
 const string	TOPIC_TalentAlchemy			=	"Napoje";
-const string	TOPIC_TalentAnimalTrophy	=	"Preparowanie zwierz¹t";
-const string	TOPIC_TalentMagicCircle		= 	"Krêgi magii";
-const string	TOPIC_WispDetector			= 	"Szukaj¹cy ognik";
-const string	TOPIC_Language				= 	"Jêzyk budowniczych";
+const string	TOPIC_TalentAnimalTrophy	=	"Preparowanie zwierzÄ…t";
+const string	TOPIC_TalentMagicCircle		= 	"KrÄ™gi magii";
+const string	TOPIC_WispDetector			= 	"SzukajÄ…cy ognik";
+const string	TOPIC_Language				= 	"JÄ™zyk budowniczych";
 
 // ------ Sonstiges ------
-const string	Topic_Bonus					=	"Miejsca specjalne"; //z.B. täglich essen abholen...
-const string	Topic_Diebesgilde			=	"Gildia z³odziei"; 
+const string	Topic_Bonus					=	"Miejsca specjalne"; //z.B. tÃ¤glich essen abholen...
+const string	Topic_Diebesgilde			=	"Gildia zÅ‚odziei"; 
 

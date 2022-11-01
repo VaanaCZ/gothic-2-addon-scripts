@@ -4,7 +4,7 @@
 
 func void PC_Sleep (var int t)
 {
-	AI_StopProcessInfos(self);		// [SK] ->muss hier stehen um das update zu gewährleisten
+	AI_StopProcessInfos(self);		// [SK] ->muss hier stehen um das update zu gewÃ¤hrleisten
 
 	PLAYER_MOBSI_PRODUCTION	=	MOBSI_NONE;
 	self.aivar[AIV_INVINCIBLE]=FALSE;
@@ -36,7 +36,7 @@ func void PC_Sleep (var int t)
 
 	//-------- AssessEnterRoom-Wahrnehmung versenden --------
 	PrintGlobals		(PD_ITEM_MOBSI);
-	Npc_SendPassivePerc	(hero,	PERC_ASSESSENTERROOM, NULL, hero);		//...damit der Spieler dieses Feature nicht zum Hütteplündern ausnutzt!
+	Npc_SendPassivePerc	(hero,	PERC_ASSESSENTERROOM, NULL, hero);		//...damit der Spieler dieses Feature nicht zum HÃ¼tteplÃ¼ndern ausnutzt!
 };
 
 
@@ -46,7 +46,7 @@ func void SLEEPABIT_S1 ()
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero);
 	var C_NPC rock; rock = Hlp_GetNpc(PC_Rockefeller);
 
-	//***ALT** if	(Hlp_GetInstanceID (self)== Hlp_GetInstanceID (Hero)) // MH: geändert, damit kontrollierte NSCs nicht schlafen können!
+	//***ALT** if	(Hlp_GetInstanceID (self)== Hlp_GetInstanceID (Hero)) // MH: geÃ¤ndert, damit kontrollierte NSCs nicht schlafen kÃ¶nnen!
 	if ( (Hlp_GetInstanceID(self)==Hlp_GetInstanceID(her))||(Hlp_GetInstanceID(self)==Hlp_GetInstanceID(rock)) )
 	{
 		self.aivar[AIV_INVINCIBLE]=TRUE;
@@ -124,7 +124,7 @@ INSTANCE PC_SleepTime_Noon (C_INFO)
 	information		= PC_SleepTime_Noon_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Odpoczywaj do po³udnia";
+	description		= "Odpoczywaj do poÅ‚udnia";
 };
 
 FUNC INT PC_SleepTime_Noon_Condition()
@@ -149,7 +149,7 @@ INSTANCE PC_SleepTime_Evening (C_INFO)
 	information		= PC_SleepTime_Evening_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Odpoczywaj do nastêpnego wieczora";
+	description		= "Odpoczywaj do nastÄ™pnego wieczora";
 };
 
 FUNC INT PC_SleepTime_Evening_Condition()
@@ -174,7 +174,7 @@ instance PC_SleepTime_Midnight (C_INFO)
 	information		= PC_SleepTime_Midnight_Info;
 	important		= 0;
 	permanent		= 1;
-	description		= "Odpoczywaj do pó³nocy";
+	description		= "Odpoczywaj do pÃ³Å‚nocy";
 };
 
 FUNC INT PC_SleepTime_Midnight_Condition()

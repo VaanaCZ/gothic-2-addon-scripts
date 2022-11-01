@@ -31,7 +31,7 @@ instance DIA_Addon_Cronos_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Hallo_Condition;
 	information	 = 	DIA_Addon_Cronos_Hallo_Info;
 
-	description	 = 	"Mogê ci przeszkodziæ?";
+	description	 = 	"MogÄ™ ci przeszkodziÄ‡?";
 };
 
 func int DIA_Addon_Cronos_Hallo_Condition ()
@@ -41,10 +41,10 @@ func int DIA_Addon_Cronos_Hallo_Condition ()
 
 func void DIA_Addon_Cronos_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //Mogê ci przeszkodziæ?
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //To TY? Nie myœla³em, ¿e jeszcze ciê kiedyœ zobaczê.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Masz du¿o odwagi, pokazuj¹c siê tu. Swego czasu chcieliœmy obedrzeæ ciê ze skóry.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Masz szczêœcie, ¿e minê³o ju¿ parê tygodni i wszyscy siê trochê uspokoili.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //MogÄ™ ci przeszkodziÄ‡?
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //To TY? Nie myÅ›laÅ‚em, Å¼e jeszcze ciÄ™ kiedyÅ› zobaczÄ™.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Masz duÅ¼o odwagi, pokazujÄ…c siÄ™ tu. Swego czasu chcieliÅ›my obedrzeÄ‡ ciÄ™ ze skÃ³ry.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Masz szczÄ™Å›cie, Å¼e minÄ™Å‚o juÅ¼ parÄ™ tygodni i wszyscy siÄ™ trochÄ™ uspokoili.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -71,10 +71,10 @@ func int DIA_Addon_Cronos_WasMachstdu_Condition ()
 func void DIA_Addon_Cronos_WasMachstdu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Co robisz?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //Moim zadaniem jest dowiedzieæ siê wiêcej na temat stra¿ników œwi¹tyni.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Maj¹ kamienne cia³a! Ci stra¿nicy naprawdê posiadaj¹ zdumiewaj¹ce zdolnoœci.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //W jednej chwili stoj¹ w ca³kowitym bezruchu, by nagle rzuciæ siê na ciebie niczym opêtani.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Nie uda³o mi siê jeszcze ustaliæ, jaka energia ich napêdza, ale jedno jest pewne - jest magicznego pochodzenia.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //Moim zadaniem jest dowiedzieÄ‡ siÄ™ wiÄ™cej na temat straÅ¼nikÃ³w Å›wiÄ…tyni.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //MajÄ… kamienne ciaÅ‚a! Ci straÅ¼nicy naprawdÄ™ posiadajÄ… zdumiewajÄ…ce zdolnoÅ›ci.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //W jednej chwili stojÄ… w caÅ‚kowitym bezruchu, by nagle rzuciÄ‡ siÄ™ na ciebie niczym opÄ™tani.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Nie udaÅ‚o mi siÄ™ jeszcze ustaliÄ‡, jaka energia ich napÄ™dza, ale jedno jest pewne - jest magicznego pochodzenia.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Waechter
@@ -86,7 +86,7 @@ instance DIA_Addon_Cronos_Waechter		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Waechter_Condition;
 	information	 = 	DIA_Addon_Cronos_Waechter_Info;
 
-	description	 = 	"Opowiedz mi wiêcej o tych kamiennych stra¿nikach.";
+	description	 = 	"Opowiedz mi wiÄ™cej o tych kamiennych straÅ¼nikach.";
 };
 
 func int DIA_Addon_Cronos_Waechter_Condition ()
@@ -99,11 +99,11 @@ func int DIA_Addon_Cronos_Waechter_Condition ()
 
 func void DIA_Addon_Cronos_Waechter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Opowiedz mi wiêcej o tych kamiennych stra¿nikach.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //Wiele wiêcej ci nie powiem. Musieliœmy ich zniszczyæ. Teraz s¹ niegroŸni.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //Zaatakowali nas, kiedy tu przybyliœmy.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Pokonaliœmy ich dopiero zjednoczonymi si³ami. Obawiam siê, ¿e po drugiej stronie portalu czeka wiêcej takich stra¿ników.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Musi byæ jakiœ sposób na wy³¹czenie napêdzaj¹cej ich energii. Coœ, co sprawi, ¿e stan¹ siê zwyk³ymi kamiennymi pos¹gami.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Opowiedz mi wiÄ™cej o tych kamiennych straÅ¼nikach.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //Wiele wiÄ™cej ci nie powiem. MusieliÅ›my ich zniszczyÄ‡. Teraz sÄ… niegroÅºni.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //Zaatakowali nas, kiedy tu przybyliÅ›my.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //PokonaliÅ›my ich dopiero zjednoczonymi siÅ‚ami. Obawiam siÄ™, Å¼e po drugiej stronie portalu czeka wiÄ™cej takich straÅ¼nikÃ³w.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Musi byÄ‡ jakiÅ› sposÃ³b na wyÅ‚Ä…czenie napÄ™dzajÄ…cej ich energii. CoÅ›, co sprawi, Å¼e stanÄ… siÄ™ zwykÅ‚ymi kamiennymi posÄ…gami.
 	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -117,7 +117,7 @@ instance DIA_Addon_Cronos_NW_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Cronos_NW_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Mo¿esz mi sprzedaæ trochê sprzêtu?";
+	description	 = 	"MoÅ¼esz mi sprzedaÄ‡ trochÄ™ sprzÄ™tu?";
 };
 
 func int DIA_Addon_Cronos_NW_Trade_Condition ()
@@ -133,11 +133,11 @@ var int DIA_Addon_Cronos_NW_Trade_OneTime;
 func void DIA_Addon_Cronos_NW_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //Mo¿esz mi sprzedaæ trochê sprzêtu?
+	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //MoÅ¼esz mi sprzedaÄ‡ trochÄ™ sprzÄ™tu?
 
 	if (DIA_Addon_Cronos_NW_Trade_OneTime==FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //Czemu nie? Jeœli dobrze pamiêtam, ostatnim razem tak¿e handlowaliœmy.
+		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //Czemu nie? JeÅ›li dobrze pamiÄ™tam, ostatnim razem takÅ¼e handlowaliÅ›my.
 		
 		DIA_Addon_Cronos_NW_Trade_OneTime = TRUE;
 	};

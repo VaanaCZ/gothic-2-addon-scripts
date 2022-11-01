@@ -1,6 +1,6 @@
 
 func void player_victim_is_immortal()
 {
-	PrintScreen("B³¹d Krytyczny!",-1,-1,FONT_Screen,5);
+	PrintScreen("BÅ‚Ä…d Krytyczny!",-1,-1,FONT_Screen,5);
 };
 

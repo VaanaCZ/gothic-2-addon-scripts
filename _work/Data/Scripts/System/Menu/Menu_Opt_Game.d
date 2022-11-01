@@ -11,7 +11,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[1]		= "MENUITEM_GAME_SUB_TITLES";
 	items[2]		= "MENUITEM_GAME_SUB_TITLES_CHOICE";
 	
-//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch über die ini tunebar
+//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch Ã¼ber die ini tunebar
 //	items[4]		= "MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE";
 
 	items[3]		= "MENUITEM_GAME_FIGHTFOCUS";
@@ -29,7 +29,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[11]		= "MENUITEM_MSENSITIVITY";
 	items[12]		= "MENUITEM_MSENSITIVITY_SLIDER";
 	
-	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch über die ini tunebar
+	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch Ã¼ber die ini tunebar
 	//items[12]		= "MENUITEM_GAME_BLOOD_CHOICE";
 	
 	items[13]		= "MENUITEM_GAME_OLDCONTROLS";
@@ -62,7 +62,7 @@ INSTANCE MENUITEM_GAME_SUB_TITLES(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Podpisy";
-	text[1]		= 	"W³¹czenie/wy³¹czenie podpisów przy dialogach"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie podpisÃ³w przy dialogach"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_SOUND_DY*0;
 	dimx		=	4600;	dimy		=	750;
@@ -129,8 +129,8 @@ instance MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_FIGHTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Oznaczanie celów";
-	text[1]		= 	"W³./wy³. wyró¿niania bierz¹cego celu w czasie walki"; // Kommentar
+	text[0]		=	"Oznaczanie celÃ³w";
+	text[1]		= 	"WÅ‚./wyÅ‚. wyrÃ³Å¼niania bierzÄ…cego celu w czasie walki"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_SOUND_DY*1;
 	dimx		=	4600;	dimy		=	750;
@@ -144,7 +144,7 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;	
-	text[0]		= 	"Nie|Okienko|Podœwietlenie|Oba";
+	text[0]		= 	"Nie|Okienko|PodÅ›wietlenie|Oba";
 	fontName	=   MENU_FONT_SMALL;
 	// Position und Dimension	
 	posx		= 5400;		posy		= MENU_START_Y + MENU_SOUND_DY*1 + MENU_CHOICE_YPLUS;
@@ -161,8 +161,8 @@ instance MENUITEM_GAME_FIGHTFOCUS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_INTERACTFOCUS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Podœwietlanie obiektów";
-	text[1]		= 	"W³./wy³. podœwietlania przedmiotów w polu widzenia"; // Kommentar
+	text[0]		=	"PodÅ›wietlanie obiektÃ³w";
+	text[1]		= 	"WÅ‚./wyÅ‚. podÅ›wietlania przedmiotÃ³w w polu widzenia"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_SOUND_DY*2;
 	dimx		=	4600;	dimy		=	750;
@@ -201,7 +201,7 @@ INSTANCE MENUITEM_GAME_LOOKAROUND_INVERSE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Zmiana pracy kamery";
-	text[1]		= 	"W³¹czenie/wy³¹czenie odwróconych ruchów kamery"; // Kommentar
+	text[1]		= 	"WÅ‚Ä…czenie/wyÅ‚Ä…czenie odwrÃ³conych ruchÃ³w kamery"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_SOUND_DY*3;
 	dimx		=	4600;	dimy		=	750;
@@ -272,8 +272,8 @@ instance MENUITEM_M_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_MSENSITIVITY(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Czu³oœæ myszy";
-	text[1]		= 	"Ustawienie czu³oœci myszy"; // Kommentar
+	text[0]		=	"CzuÅ‚oÅ›Ä‡ myszy";
+	text[1]		= 	"Ustawienie czuÅ‚oÅ›ci myszy"; // Kommentar
 	// Position und Dimension	
 	posx		=	700;	posy		=	MENU_START_Y + MENU_SOUND_DY*5;
 	dimx		=	4600;	dimy		=	750;
@@ -305,7 +305,7 @@ instance MENUITEM_MSENSITIVITY_SLIDER(C_MENU_ITEM_DEF)
 
 
 //
-// Bluteffekte deaktivert in Gothic 2 (nur noch über die INI tunebar)
+// Bluteffekte deaktivert in Gothic 2 (nur noch Ã¼ber die INI tunebar)
 //
 /*
 INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
@@ -380,7 +380,7 @@ INSTANCE MENUITEM_GAME_OLDCONTROLS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Wróæ";
+	text[0]		=	"WrÃ³Ä‡";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

@@ -100,7 +100,7 @@ instance DIA_Aya_KommMit(C_Info)
 	condition	= DIA_Aya_KommMit_Condition;
 	information	= DIA_Aya_KommMit_Info;
 	permanent	= TRUE;
-	description	= "Dobra, chodŸmy.";
+	description	= "Dobra, chodÅºmy.";
 };                       
 func int DIA_Aya_KommMit_Condition()
 {
@@ -111,7 +111,7 @@ func int DIA_Aya_KommMit_Condition()
 };
 func void DIA_Aya_KommMit_Info()
 {
-	AI_Output(other, self, "DIA_Lares_GoNow_15_00");  //Dobra, chodŸmy.
+	AI_Output(other, self, "DIA_Lares_GoNow_15_00");  //Dobra, chodÅºmy.
 
 	var int AyaGoldAmount;
 	AyaGoldAmount = Npc_HasItems(other, ItMi_Gold);
@@ -144,7 +144,7 @@ instance DIA_Aya_WarteHier(C_Info)
 	condition	= DIA_Aya_WarteHier_Condition;
 	information	= DIA_Aya_WarteHier_Info;
 	permanent	= TRUE;
-	description	= "Obawiam siê, ¿e teraz musimy siê rozstaæ.";
+	description	= "Obawiam siÄ™, Å¼e teraz musimy siÄ™ rozstaÄ‡.";
 };
 func int DIA_Aya_WarteHier_Condition()
 {
@@ -155,7 +155,7 @@ func int DIA_Aya_WarteHier_Condition()
 };
 func void DIA_Aya_WarteHier_Info()
 {
-	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Obawiam siê, ¿e teraz musimy siê rozstaæ.
+	AI_Output(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00");  //Obawiam siÄ™, Å¼e teraz musimy siÄ™ rozstaÄ‡.
 	B_Say(self, other, "$YESGOOUTOFHERE");
 	AI_StopProcessInfos(self);
 	Npc_ExchangeRoutine(self, "Start");

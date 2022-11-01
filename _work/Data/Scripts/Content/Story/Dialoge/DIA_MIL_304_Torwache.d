@@ -43,11 +43,11 @@ func void DIA_Mil_304_Torwache_WASMACHSTDU_Info ()
 	if (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Nie narzekam. Wykonujê swoj¹ pracê, zgodnie z wol¹ Innosa.
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_01"); //Nie narzekam. WykonujÄ™ swojÄ… pracÄ™, zgodnie z wolÄ… Innosa.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hej, przestañ mnie tu czarowaæ tym swoim 'jak leci?'. ZejdŸ mi z oczu, jasne?
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Hej, przestaÅ„ mnie tu czarowaÄ‡ tym swoim 'jak leci?'. ZejdÅº mi z oczu, jasne?
 	};
 	 
 	AI_StopProcessInfos (self);

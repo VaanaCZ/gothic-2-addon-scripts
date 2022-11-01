@@ -76,16 +76,16 @@ FUNC VOID DIA_Addon_Miguel_Hi_Info()
 	
 	if Wld_IsTime (06,00,22,00)
 	{
-		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//Szukasz czegoœ?
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//Roœlin - szukam roœlin.
+		AI_Output (other, self, "DIA_Addon_Miguel_Hi_15_01");//Szukasz czegoÅ›?
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_02");//RoÅ›lin - szukam roÅ›lin.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//Zwykle szukam roœlin.
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//Zwykle szukam roÅ›lin.
 	};
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Wiêkszoœæ tego, co tu roœnie, mo¿na wykorzystaæ.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Wiele zió³ ma w³aœciwoœci lecznicze, a bagienne ziele mo¿na paliæ.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Zanim umieœcili mnie za barier¹, pracowa³em u alchemika.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//WiÄ™kszoÅ›Ä‡ tego, co tu roÅ›nie, moÅ¼na wykorzystaÄ‡.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Wiele ziÃ³Å‚ ma wÅ‚aÅ›ciwoÅ›ci lecznicze, a bagienne ziele moÅ¼na paliÄ‡.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Zanim umieÅ›cili mnie za barierÄ…, pracowaÅ‚em u alchemika.
 };
 //---------------------------------------------------------------------
 //	Info Story
@@ -97,7 +97,7 @@ INSTANCE DIA_Addon_Miguel_Story   (C_INFO)
 	condition   = DIA_Addon_Miguel_Story_Condition;
 	information = DIA_Addon_Miguel_Story_Info;
 	permanent   = FALSE;
-	description = "Za co ciê zamknêli za barier¹?";
+	description = "Za co ciÄ™ zamknÄ™li za barierÄ…?";
 };
 FUNC INT DIA_Addon_Miguel_Story_Condition()
 {	
@@ -108,11 +108,11 @@ FUNC INT DIA_Addon_Miguel_Story_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Story_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//Za co ciê zamknêli za barier¹?
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Eksperymentowa³em z ró¿nymi miksturami, które wp³ywaj¹ na umys³ i pozwalaj¹ nim manipulowaæ.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Ignaz, mój mistrz, wypi³ kiedyœ jeden z moich "eksperymentów" zamiast wina.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//No... zacz¹³ siê zachowywaæ... nieco irracjonalnie. Od tamtej pory jest... troszkê niezrównowa¿ony.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//Magowie zes³ali mnie do kolonii karnej za "prowadzenie badañ w zakazanej dziedzinie".
+	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//Za co ciÄ™ zamknÄ™li za barierÄ…?
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//EksperymentowaÅ‚em z rÃ³Å¼nymi miksturami, ktÃ³re wpÅ‚ywajÄ… na umysÅ‚ i pozwalajÄ… nim manipulowaÄ‡.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Ignaz, mÃ³j mistrz, wypiÅ‚ kiedyÅ› jeden z moich "eksperymentÃ³w" zamiast wina.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//No... zaczÄ…Å‚ siÄ™ zachowywaÄ‡... nieco irracjonalnie. Od tamtej pory jest... troszkÄ™ niezrÃ³wnowaÅ¼ony.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//Magowie zesÅ‚ali mnie do kolonii karnej za "prowadzenie badaÅ„ w zakazanej dziedzinie".
 };
 
 //---------------------------------------------------------------------
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Miguel_Lager   (C_INFO)
 	condition   = DIA_Addon_Miguel_Lager_Condition;
 	information = DIA_Addon_Miguel_Lager_Info;
 	permanent   = FALSE;
-	description = "Co mo¿esz mi powiedzieæ o obozowisku?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o obozowisku?";
 };
 FUNC INT DIA_Addon_Miguel_Lager_Condition()
 {	
@@ -133,9 +133,9 @@ FUNC INT DIA_Addon_Miguel_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Co mo¿esz mi powiedzieæ o obozowisku?
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //Niewiele. Nigdy tam nie by³em.
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Tylko ludzie Kruka byli tam od pocz¹tku. Wszyscy pozostali przyszli póŸniej albo wci¹¿ czekaj¹ na przyjêcie. Tak jak ja.
+	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o obozowisku?
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //Niewiele. Nigdy tam nie byÅ‚em.
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Tylko ludzie Kruka byli tam od poczÄ…tku. Wszyscy pozostali przyszli pÃ³Åºniej albo wciÄ…Å¼ czekajÄ… na przyjÄ™cie. Tak jak ja.
 };
 
 //-----------------------------------------
@@ -148,7 +148,7 @@ instance DIA_Addon_Miguel_WhereFrom (C_INFO)
 	condition   = DIA_Addon_Miguel_WhereFrom_Condition;
 	information = DIA_Addon_Miguel_WhereFrom_Info;
 	permanent   = FALSE;
-	description = "Jak siê tu dosta³eœ?";
+	description = "Jak siÄ™ tu dostaÅ‚eÅ›?";
 };
 FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 {	
@@ -160,10 +160,10 @@ FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_WhereFrom_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Jak siê tu dosta³eœ?
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Myœlê, ¿e t¹ sam¹ drog¹ co ty. Z piratami przez morze.
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Ta dolina jest niedostêpna z wyspy. Mo¿na siê do niej dostaæ tylko morzem.
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //Dok³adnie.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Jak siÄ™ tu dostaÅ‚eÅ›?
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //MyÅ›lÄ™, Å¼e tÄ… samÄ… drogÄ… co ty. Z piratami przez morze.
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Ta dolina jest niedostÄ™pna z wyspy. MoÅ¼na siÄ™ do niej dostaÄ‡ tylko morzem.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //DokÅ‚adnie.
 };
 
 //-----------------------------------------
@@ -176,7 +176,7 @@ instance DIA_Addon_Miguel_Angefordert (C_INFO)
 	condition   = DIA_Addon_Miguel_Angefordert_Condition;
 	information = DIA_Addon_Miguel_Angefordert_Info;
 	permanent   = FALSE;
-	description = "Kiedy zwykle potrzebuj¹ nowych ludzi?";
+	description = "Kiedy zwykle potrzebujÄ… nowych ludzi?";
 };
 FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 {	
@@ -187,12 +187,12 @@ FUNC INT DIA_Addon_Miguel_Angefordert_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Angefordert_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //Kiedy zwykle potrzebuj¹ nowych ludzi?
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Gdy jest ich za ma³o...
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Gdy kogoœ zabije kopalniany pe³zacz, potrzebuj¹ drugiego na wymianê.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //No i czasem ch³opaki siê pozabijaj¹. Ale ostatnio nie jest tak Ÿle.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Kruk zdo³a³ to jakoœ zorganizowaæ i pilnuje, ¿eby w kopalni nie pracowali wszyscy naraz.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Nie mam pojêcia, jak to dok³adnie funkcjonuje. Nigdy tam nie by³em.
+	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //Kiedy zwykle potrzebujÄ… nowych ludzi?
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Gdy jest ich za maÅ‚o...
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Gdy kogoÅ› zabije kopalniany peÅ‚zacz, potrzebujÄ… drugiego na wymianÄ™.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //No i czasem chÅ‚opaki siÄ™ pozabijajÄ…. Ale ostatnio nie jest tak Åºle.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Kruk zdoÅ‚aÅ‚ to jakoÅ› zorganizowaÄ‡ i pilnuje, Å¼eby w kopalni nie pracowali wszyscy naraz.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Nie mam pojÄ™cia, jak to dokÅ‚adnie funkcjonuje. Nigdy tam nie byÅ‚em.
 };
 
 //---------------------------------------------------------------------
@@ -205,7 +205,7 @@ INSTANCE DIA_Addon_Miguel_Fortuno   (C_INFO)
 	condition   = DIA_Addon_Miguel_Fortuno_Condition;
 	information = DIA_Addon_Miguel_Fortuno_Info;
 	permanent   = FALSE;
-	description = "Fortuno sprawia wra¿enie ob³¹kanego.";
+	description = "Fortuno sprawia wraÅ¼enie obÅ‚Ä…kanego.";
 };
 FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 {	
@@ -216,17 +216,17 @@ FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Fortuno_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno sprawia wra¿enie ob³¹kanego. Myœlê, ¿e jakaœ mikstura mo¿e przywróciæ mu pamiêæ.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Fortuno? To jeden ze s³u¿¹cych Kruka.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno sprawia wraÅ¼enie obÅ‚Ä…kanego. MyÅ›lÄ™, Å¼e jakaÅ› mikstura moÅ¼e przywrÃ³ciÄ‡ mu pamiÄ™Ä‡.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Fortuno? To jeden ze sÅ‚uÅ¼Ä…cych Kruka.
 	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//Teraz to tylko wrak. A wszystko z winy Kruka.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Kruk. Nigdy o nim wiele nie myœla³em. Hmm, dobra. Niestety, nie mogê warzyæ mikstur tutaj, na bagnach.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//Móg³bym przyrz¹dziæ miksturê. W obozie jest odpowiedni stó³. Gdybym tylko mia³ przepis...
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Lepiej b¹dŸ ostro¿ny z tym przepisem. Warzenie mikstur to niebezpieczne zajêcie.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Kruk. Nigdy o nim wiele nie myÅ›laÅ‚em. Hmm, dobra. Niestety, nie mogÄ™ warzyÄ‡ mikstur tutaj, na bagnach.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//MÃ³gÅ‚bym przyrzÄ…dziÄ‡ miksturÄ™. W obozie jest odpowiedni stÃ³Å‚. Gdybym tylko miaÅ‚ przepis...
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Lepiej bÄ…dÅº ostroÅ¼ny z tym przepisem. Warzenie mikstur to niebezpieczne zajÄ™cie.
 	B_GiveInvItems (self, other, ITWr_Addon_MCELIXIER_01,1);
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Je¿eli u¿yjesz nieodpowiednich sk³adników albo coœ pójdzie nie tak, mikstura bêdzie œmierteln¹ trucizn¹.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//Bêdê uwa¿a³.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//JeÅ¼eli uÅ¼yjesz nieodpowiednich skÅ‚adnikÃ³w albo coÅ› pÃ³jdzie nie tak, mikstura bÄ™dzie Å›miertelnÄ… truciznÄ….
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//BÄ™dÄ™ uwaÅ¼aÅ‚.
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Miguel da³ mi przepis na miksturê, która ma pomóc Fortuna w odzyskaniu pamiêci. Powinienem przyrz¹dziæ j¹ dopiero wtedy, gdy dobrze poznam dzia³anie wszystkich sk³adników. Inaczej mo¿e byæ zabójcza.");
+	B_LogEntry (Topic_Addon_Fortuno,"Miguel daÅ‚ mi przepis na miksturÄ™, ktÃ³ra ma pomÃ³c Fortuna w odzyskaniu pamiÄ™ci. Powinienem przyrzÄ…dziÄ‡ jÄ… dopiero wtedy, gdy dobrze poznam dziaÅ‚anie wszystkich skÅ‚adnikÃ³w. Inaczej moÅ¼e byÄ‡ zabÃ³jcza.");
 };
 
 //---------------------------------------------------------------------
@@ -239,7 +239,7 @@ INSTANCE DIA_Addon_Miguel_BRAU   (C_INFO)
 	condition   = DIA_Addon_Miguel_BRAU_Condition;
 	information = DIA_Addon_Miguel_BRAU_Info;
 	permanent   = FALSE;
-	description = "Mo¿esz mnie czegoœ nauczyæ?";
+	description = "MoÅ¼esz mnie czegoÅ› nauczyÄ‡?";
 };
 FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 {	
@@ -250,12 +250,12 @@ FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_BRAU_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//Mo¿esz mnie czegoœ nauczyæ?
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//Nie mam na to czasu. Przyszed³em tu zdobyæ trochê z³ota. Na razie, dopóki nie wpuszcz¹ mnie do obozowiska, zarabiam na handlu zio³ami.
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Mogê jednak zaopatrzyæ ciê w mikstury.
+	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//MoÅ¼esz mnie czegoÅ› nauczyÄ‡?
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//Nie mam na to czasu. PrzyszedÅ‚em tu zdobyÄ‡ trochÄ™ zÅ‚ota. Na razie, dopÃ³ki nie wpuszczÄ… mnie do obozowiska, zarabiam na handlu zioÅ‚ami.
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//MogÄ™ jednak zaopatrzyÄ‡ ciÄ™ w mikstury.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Od Miguela mogê kupiæ roœliny i mikstury.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Od Miguela mogÄ™ kupiÄ‡ roÅ›liny i mikstury.");
 };
 
 //---------------------------------------------------------------------

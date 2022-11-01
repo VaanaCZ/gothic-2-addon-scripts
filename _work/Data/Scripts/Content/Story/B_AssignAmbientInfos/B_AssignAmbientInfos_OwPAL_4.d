@@ -47,15 +47,15 @@ FUNC VOID DIA_OWPAL_4_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_00"); //Innos to honor, a honor jest mym ¿yciem!
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_00"); //Innos to honor, a honor jest mym Å¼yciem!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Bêdziemy siê broniæ, póki chroni nas jaœniej¹ca ³aska Innosa!
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //BÄ™dziemy siÄ™ broniÄ‡, pÃ³ki chroni nas jaÅ›niejÄ…ca Å‚aska Innosa!
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //Z pomoc¹ Innosa uda siê nam odpêdziæ pomiot z³a!
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_02"); //Z pomocÄ… Innosa uda siÄ™ nam odpÄ™dziÄ‡ pomiot zÅ‚a!
 	};
 	
 	AI_StopProcessInfos	(self);

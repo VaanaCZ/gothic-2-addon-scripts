@@ -32,7 +32,7 @@ INSTANCE Focus_Melee (C_Focus)
 	
 	npc_range1	= 0.0;				
 	npc_range2	= 500.0;
-	npc_azi		= 50.0;			//    - geändert von 30 auf 45 (Gothic 1) auf 50 (Gothic II) -- Mike
+	npc_azi		= 50.0;			//    - geÃ¤ndert von 30 auf 45 (Gothic 1) auf 50 (Gothic II) -- Mike
 	npc_elevup	= 90.0;
 	npc_elevdo	= -60.0;
 	npc_prio	= 1;					// NPCs(1) before MOBs(0)
@@ -118,8 +118,8 @@ INSTANCE Focus_Throw_Mob (C_Focus)
 	mob_elevdo	= -45.0;
 };
 
-// ACHTUNG!!!!!!!: Der Magie Fokus sollte nicht verändert werden. Alle spezifischen Focus Modes sind PRO SPELL in der Spell_Params.d einstellbar.
-// Diese Magie Focus Instanz trifft die Vorentscheidung, welche Vobs überhaupt in Frage kommen. Der eigentlich Test findet in den einzelnen Spells statt!
+// ACHTUNG!!!!!!!: Der Magie Fokus sollte nicht verÃ¤ndert werden. Alle spezifischen Focus Modes sind PRO SPELL in der Spell_Params.d einstellbar.
+// Diese Magie Focus Instanz trifft die Vorentscheidung, welche Vobs Ã¼berhaupt in Frage kommen. Der eigentlich Test findet in den einzelnen Spells statt!
 INSTANCE Focus_Magic(C_Focus)
 {
 	// NSCs
@@ -149,7 +149,7 @@ INSTANCE Focus_Magic(C_Focus)
 	npc_azi		= 45.0;				
 	npc_elevup	= 90.0;
 	npc_elevdo	= -85.0;
-	npc_prio	= 1;				// MH: NUR NSCs werden berücksichtigt
+	npc_prio	= 1;				// MH: NUR NSCs werden berÃ¼cksichtigt
 	// ITEMs
 	item_range1	= 0.0;				
 	item_range2	= 3000.0;

@@ -1,7 +1,7 @@
 // ***********************************************
 // C_NpcIsToughGuy
 // ---------------
-// ist der NSC ein verweichlichter St‰dter = FALSE 
+// ist der NSC ein verweichlichter St√§dter = FALSE 
 // oder ein harter Junge, z.B. Bauersknecht = TRUE
 // ***********************************************
 

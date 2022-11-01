@@ -64,7 +64,7 @@ instance DIA_Addon_Farim_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_Hallo_Condition;
 	information	 = 	DIA_Addon_Farim_Hallo_Info;
 
-	description	 = 	"Jesteœ rybakiem?";
+	description	 = 	"JesteÅ› rybakiem?";
 };
 
 func int DIA_Addon_Farim_Hallo_Condition ()
@@ -74,16 +74,16 @@ func int DIA_Addon_Farim_Hallo_Condition ()
 
 func void DIA_Addon_Farim_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //Jesteœ rybakiem?
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //Jak na to wpad³eœ?
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //Mo¿e po prostu zostawisz mnie w spokoju, co?
+	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //JesteÅ› rybakiem?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //Jak na to wpadÅ‚eÅ›?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //MoÅ¼e po prostu zostawisz mnie w spokoju, co?
 	if (hero.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //Nie mam nic do ciebie, ale ostatnio mia³em sporo nieprzyjemnych staræ ze stra¿¹, wiêc rozumiesz...
+		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //Nie mam nic do ciebie, ale ostatnio miaÅ‚em sporo nieprzyjemnych starÄ‡ ze straÅ¼Ä…, wiÄ™c rozumiesz...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_03"); //Nie oceniaj mnie zbyt pochopnie. Po prostu jestem w pod³ym nastroju. K³opoty ze stra¿¹, rozumiesz...
+		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_03"); //Nie oceniaj mnie zbyt pochopnie. Po prostu jestem w podÅ‚ym nastroju. KÅ‚opoty ze straÅ¼Ä…, rozumiesz...
 	};
 };
 
@@ -97,7 +97,7 @@ instance DIA_Addon_Farim_MilizProbs		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_MilizProbs_Condition;
 	information	 = 	DIA_Addon_Farim_MilizProbs_Info;
 
-	description	 = 	"K³opoty ze stra¿¹?";
+	description	 = 	"KÅ‚opoty ze straÅ¼Ä…?";
 };
 
 func int DIA_Addon_Farim_MilizProbs_Condition ()
@@ -110,53 +110,53 @@ func int DIA_Addon_Farim_MilizProbs_Condition ()
 
 func void DIA_Addon_Farim_MilizProbs_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_MilizProbs_15_00"); //K³opoty ze stra¿¹?
+	AI_Output	(other, self, "DIA_Addon_Farim_MilizProbs_15_00"); //KÅ‚opoty ze straÅ¼Ä…?
 	if (((hero.guild == GIL_MIL)||(hero.guild == GIL_PAL)) == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Ci dranie regularnie mnie nachodz¹ i zabieraj¹, co im siê ¿ywnie podoba!
+		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Ci dranie regularnie mnie nachodzÄ… i zabierajÄ…, co im siÄ™ Å¼ywnie podoba!
 	};
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //W ostatnim tygodniu zabrali mi ca³y po³ów. Powiedzieli, ¿e to "dla wspólnego dobra"!
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //Wiem, ¿e jesteœmy zdani na w³asne si³y od czasu, gdy farmerzy przestali handlowaæ.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //Niektórzy jedz¹ porz¹dny posi³ek raz na tydzieñ. Nic dziwnego, ¿e stra¿ zabra³a mi wszystkie ryby.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Ale jeœli tak dalej pójdzie, to wkrótce sam zacznê g³odowaæ.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //W ostatnim tygodniu zabrali mi caÅ‚y poÅ‚Ã³w. Powiedzieli, Å¼e to "dla wspÃ³lnego dobra"!
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //Wiem, Å¼e jesteÅ›my zdani na wÅ‚asne siÅ‚y od czasu, gdy farmerzy przestali handlowaÄ‡.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //NiektÃ³rzy jedzÄ… porzÄ…dny posiÅ‚ek raz na tydzieÅ„. Nic dziwnego, Å¼e straÅ¼ zabraÅ‚a mi wszystkie ryby.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Ale jeÅ›li tak dalej pÃ³jdzie, to wkrÃ³tce sam zacznÄ™ gÅ‚odowaÄ‡.
 	
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Daj mi swoje ryby.", DIA_Addon_Farim_MilizProbs_klauen );
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Mo¿e bêdê móg³ ci jakoœ pomóc.", DIA_Addon_Farim_MilizProbs_helfen );
-	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Rozmawia³eœ o tym z paladynami?", DIA_Addon_Farim_MilizProbs_paladine );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "MoÅ¼e bÄ™dÄ™ mÃ³gÅ‚ ci jakoÅ› pomÃ³c.", DIA_Addon_Farim_MilizProbs_helfen );
+	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "RozmawiaÅ‚eÅ› o tym z paladynami?", DIA_Addon_Farim_MilizProbs_paladine );
 };
 func void DIA_Addon_Farim_MilizProbs_paladine ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_paladine_15_00"); //Rozmawia³eœ o tym z paladynami?
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_paladine_11_01"); //¯artujesz chyba! A co ich obchodzi, ¿e taki chudopacho³ek, jak ja, ma problemy ze stra¿¹?
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_paladine_15_00"); //RozmawiaÅ‚eÅ› o tym z paladynami?
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_paladine_11_01"); //Å»artujesz chyba! A co ich obchodzi, Å¼e taki chudopachoÅ‚ek, jak ja, ma problemy ze straÅ¼Ä…?
 };
 var int Farim_PissedOff;
 func void DIA_Addon_Farim_MilizProbs_klauen ()
 {
 	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_klauen_15_00"); //Daj mi swoje ryby.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_01"); //Wiedzia³em. Kolejny z tych siepaczy.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_01"); //WiedziaÅ‚em. Kolejny z tych siepaczy.
 	
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_02"); //Obawiam siê, ¿e przyszed³eœ trochê za póŸno. Twoi kompani zabrali wszystko ju¿ wczoraj.
+		AI_Output (self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_02"); //Obawiam siÄ™, Å¼e przyszedÅ‚eÅ› trochÄ™ za pÃ³Åºno. Twoi kompani zabrali wszystko juÅ¼ wczoraj.
 	};
 	
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_04"); //Myœlê, ¿e ju¿ czas na ciebie.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_klauen_11_04"); //MyÅ›lÄ™, Å¼e juÅ¼ czas na ciebie.
 	Farim_PissedOff = TRUE;
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 };
 func void DIA_Addon_Farim_MilizProbs_helfen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //Mo¿e bêdê móg³ ci jakoœ pomóc.
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //Bo ja wiem... Musia³byœ znaæ kogoœ w stra¿y, kto ma dojœcie do paladynów...
-	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //Sami paladyni raczej nie KUPI¥ ode mnie ryb.
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //Zobaczê, co da siê zrobiæ.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //MoÅ¼e bÄ™dÄ™ mÃ³gÅ‚ ci jakoÅ› pomÃ³c.
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //Bo ja wiem... MusiaÅ‚byÅ› znaÄ‡ kogoÅ› w straÅ¼y, kto ma dojÅ›cie do paladynÃ³w...
+	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //Sami paladyni raczej nie KUPIÄ„ ode mnie ryb.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //ZobaczÄ™, co da siÄ™ zrobiÄ‡.
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 	
 	Log_CreateTopic (TOPIC_Addon_FarimsFish, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_FarimsFish, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_FarimsFish,"Rybak Farim ma k³opoty ze stra¿¹, która zabiera mu zbyt wiele ryb, by móg³ zarobiæ na ¿ycie. Muszê znaleŸæ w stra¿y kogoœ, kto ma wp³yw na paladynów, i pomóc Farimowi."); 
+	B_LogEntry (TOPIC_Addon_FarimsFish,"Rybak Farim ma kÅ‚opoty ze straÅ¼Ä…, ktÃ³ra zabiera mu zbyt wiele ryb, by mÃ³gÅ‚ zarobiÄ‡ na Å¼ycie. MuszÄ™ znaleÅºÄ‡ w straÅ¼y kogoÅ›, kto ma wpÅ‚yw na paladynÃ³w, i pomÃ³c Farimowi."); 
 		
 	MIS_Addon_Farim_PaladinFisch = LOG_RUNNING;
 };
@@ -171,7 +171,7 @@ instance DIA_Addon_Farim_MartinHelps		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_MartinHelps_Condition;
 	information	 = 	DIA_Addon_Farim_MartinHelps_Info;
 
-	description	 = 	"Wiem ju¿, jak rozwi¹zaæ twoje problemy.";
+	description	 = 	"Wiem juÅ¼, jak rozwiÄ…zaÄ‡ twoje problemy.";
 };
 
 func int DIA_Addon_Farim_MartinHelps_Condition ()
@@ -185,21 +185,21 @@ func int DIA_Addon_Farim_MartinHelps_Condition ()
 
 func void DIA_Addon_Farim_MartinHelps_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_00"); //Wiem ju¿, jak rozwi¹zaæ twoje problemy.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_01"); //Zamieniam siê w s³uch.
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_00"); //Wiem juÅ¼, jak rozwiÄ…zaÄ‡ twoje problemy.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_01"); //Zamieniam siÄ™ w sÅ‚uch.
 
 	if (hero.guild == GIL_MIL)||(hero.guild == GIL_PAL)
 	{
-		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_02"); //Jestem tu od niedawna i ma³o mogê.
-		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_03"); //Ale znam kogoœ, kto móg³by ci pomóc.
+		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_02"); //Jestem tu od niedawna i maÅ‚o mogÄ™.
+		AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_03"); //Ale znam kogoÅ›, kto mÃ³gÅ‚by ci pomÃ³c.
 	};
 	
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //Martin, kwatermistrz paladynów, powiedzia³, ¿e chêtnie wys³ucha twojej skargi.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //Myœlisz, ¿e powie stra¿nikom, by zostawili mnie w spokoju?
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //Tak powiedzia³.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //Dobrze. Wielkie dziêki. Niestety, nie mogê ci siê odwdziêczyæ. Chocia¿...
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //Ten dziwny b³êkitny kamieñ znalaz³em kiedyœ na wyspie w pobli¿u Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //Nie s¹dzê, by by³ wiele wart, ale ktoœ taki jak ty na pewno znajdzie dla niego zastosowanie.
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //Martin, kwatermistrz paladynÃ³w, powiedziaÅ‚, Å¼e chÄ™tnie wysÅ‚ucha twojej skargi.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //MyÅ›lisz, Å¼e powie straÅ¼nikom, by zostawili mnie w spokoju?
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //Tak powiedziaÅ‚.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //Dobrze. Wielkie dziÄ™ki. Niestety, nie mogÄ™ ci siÄ™ odwdziÄ™czyÄ‡. ChociaÅ¼...
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //Ten dziwny bÅ‚Ä™kitny kamieÅ„ znalazÅ‚em kiedyÅ› na wyspie w pobliÅ¼u Khorinis.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //Nie sÄ…dzÄ™, by byÅ‚ wiele wart, ale ktoÅ› taki jak ty na pewno znajdzie dla niego zastosowanie.
 		
 	B_GiveInvItems (self, other, ItMi_Aquamarine, 1);		
 	
@@ -217,7 +217,7 @@ instance DIA_Addon_Farim_Landstreicher		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_Landstreicher_Condition;
 	information	 = 	DIA_Addon_Farim_Landstreicher_Info;
 
-	description	 = 	"Mo¿esz mi coœ powiedzieæ o zaginionych ludziach?";
+	description	 = 	"MoÅ¼esz mi coÅ› powiedzieÄ‡ o zaginionych ludziach?";
 };
 
 func int DIA_Addon_Farim_Landstreicher_Condition ()
@@ -231,9 +231,9 @@ func int DIA_Addon_Farim_Landstreicher_Condition ()
 
 func void DIA_Addon_Farim_Landstreicher_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //Mo¿esz mi coœ powiedzieæ o zaginionych ludziach?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //Mój kumpel, William, zadawa³ siê ostatnio z podejrzanymi typkami i do czego to doprowadzi³o?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Pewnego dnia nie przyszed³ do pracy i od tego czasu nikt go ju¿ nie widzia³.
+	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //MoÅ¼esz mi coÅ› powiedzieÄ‡ o zaginionych ludziach?
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //MÃ³j kumpel, William, zadawaÅ‚ siÄ™ ostatnio z podejrzanymi typkami i do czego to doprowadziÅ‚o?
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Pewnego dnia nie przyszedÅ‚ do pracy i od tego czasu nikt go juÅ¼ nie widziaÅ‚.
 	SCKnowsFarimAsWilliamsFriend = TRUE;
 };
 
@@ -248,7 +248,7 @@ instance DIA_Addon_Farim_William		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_William_Condition;
 	information	 = 	DIA_Addon_Farim_William_Info;
 
-	description	 = 	"William te¿ zagin¹³?";
+	description	 = 	"William teÅ¼ zaginÄ…Å‚?";
 };
 
 func int DIA_Addon_Farim_William_Condition ()
@@ -262,72 +262,72 @@ func int DIA_Addon_Farim_William_Condition ()
 
 func void DIA_Addon_Farim_William_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //William te¿ zagin¹³?
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //Zgadza siê. By³ zwyk³ym rybakiem, choæ nie da siê ukryæ, ¿e czasami zdrowo mu odbija³o.
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //Nie powinien by³ siê brataæ z tymi obwiesiami.
+	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //William teÅ¼ zaginÄ…Å‚?
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //Zgadza siÄ™. ByÅ‚ zwykÅ‚ym rybakiem, choÄ‡ nie da siÄ™ ukryÄ‡, Å¼e czasami zdrowo mu odbijaÅ‚o.
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //Nie powinien byÅ‚ siÄ™ brataÄ‡ z tymi obwiesiami.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
 	Log_AddEntry (TOPIC_Addon_MissingPeople, LogText_Addon_WilliamMissing); 
 	
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Co masz na myœli?", DIA_Addon_Farim_William_typen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Jestem pewien, ¿e prêdzej czy póŸniej wróci do domu.", DIA_Addon_Farim_William_auftauchen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "A co takiego robi³?", DIA_Addon_Farim_William_WasGemacht );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Kiedy widzia³eœ go po raz ostatni?", DIA_Addon_Farim_William_WannWeg );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Co masz na myÅ›li?", DIA_Addon_Farim_William_typen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Jestem pewien, Å¼e prÄ™dzej czy pÃ³Åºniej wrÃ³ci do domu.", DIA_Addon_Farim_William_auftauchen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "A co takiego robiÅ‚?", DIA_Addon_Farim_William_WasGemacht );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Kiedy widziaÅ‚eÅ› go po raz ostatni?", DIA_Addon_Farim_William_WannWeg );
 };
 func void DIA_Addon_Farim_William_WasGemacht ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //A co takiego robi³?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //William chyba krêci³ jakieœ lewe interesy z tymi rzezimieszkami.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //S¹dzê, ¿e sprzedawa³ im jakieœ nielegalne towary.
-	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiß ich nicht, was er stattdessen für sie gemacht hat.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //A co takiego robiÅ‚?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //William chyba krÄ™ciÅ‚ jakieÅ› lewe interesy z tymi rzezimieszkami.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //SÄ…dzÄ™, Å¼e sprzedawaÅ‚ im jakieÅ› nielegalne towary.
+	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiÃŸ ich nicht, was er stattdessen fÃ¼r sie gemacht hat.
 };
 func void DIA_Addon_Farim_William_typen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_typen_15_00"); //Co masz na myœli?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //Nie wiem, kim s¹, ani czego szukaj¹ w Khorinis.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //Wiem tylko, gdzie siê spotykali z Williamem.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //Widzia³em go tam tylko raz i to przypadkiem, podczas ³owienia ryb.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_typen_15_00"); //Co masz na myÅ›li?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //Nie wiem, kim sÄ…, ani czego szukajÄ… w Khorinis.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //Wiem tylko, gdzie siÄ™ spotykali z Williamem.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //WidziaÅ‚em go tam tylko raz i to przypadkiem, podczas Å‚owienia ryb.
 	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Gdzie siê spotykali?", DIA_Addon_Farim_William_Wo );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Gdzie siÄ™ spotykali?", DIA_Addon_Farim_William_Wo );
 };
 func void DIA_Addon_Farim_William_Wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Gdzie siê spotykali?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //Po przeciwnej stronie przystani, na pó³nocy, le¿y ma³a zatoka.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //Mo¿na siê tam dostaæ wp³aw lub ³ódk¹.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //W zatoce znajduje siê pla¿a, na której widzia³em tych przemytników.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Gdzie siÄ™ spotykali?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //Po przeciwnej stronie przystani, na pÃ³Å‚nocy, leÅ¼y maÅ‚a zatoka.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //MoÅ¼na siÄ™ tam dostaÄ‡ wpÅ‚aw lub Å‚Ã³dkÄ….
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //W zatoce znajduje siÄ™ plaÅ¼a, na ktÃ³rej widziaÅ‚em tych przemytnikÃ³w.
 	self.flags = 0;	//Joly: hat seine Pflicht getan
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Kolega rybaka Farima, William, zagin¹³. Podobno William spotyka³ siê z jakimiœ rzezimieszkami w zatoce na pó³noc od portu."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Kolega rybaka Farima, William, zaginÄ…Å‚. Podobno William spotykaÅ‚ siÄ™ z jakimiÅ› rzezimieszkami w zatoce na pÃ³Å‚noc od portu."); 
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "Chyba us³ysza³em ju¿ wystarczaj¹co wiele.", DIA_Addon_Farim_William_Tschau );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Chyba usÅ‚yszaÅ‚em juÅ¼ wystarczajÄ…co wiele.", DIA_Addon_Farim_William_Tschau );
 };
 func void DIA_Addon_Farim_William_WannWeg ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //Kiedy widzia³eœ go po raz ostatni?
+	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //Kiedy widziaÅ‚eÅ› go po raz ostatni?
 	AI_Output			(self, other, "DIA_Addon_Farim_William_WannWeg_11_01"); //Nie dalej jak kilka dni temu.
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "Mo¿e po prostu wyp³yn¹³ na po³ów?", DIA_Addon_Farim_William_Fischen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "MoÅ¼e po prostu wypÅ‚ynÄ…Å‚ na poÅ‚Ã³w?", DIA_Addon_Farim_William_Fischen );
 };
 func void DIA_Addon_Farim_William_Fischen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //Mo¿e po prostu wyp³yn¹³ na po³ów?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //Niemo¿liwe. Jego ³ódŸ jest wci¹¿ zacumowana na przystani.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //MoÅ¼e po prostu wypÅ‚ynÄ…Å‚ na poÅ‚Ã³w?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //NiemoÅ¼liwe. Jego Å‚Ã³dÅº jest wciÄ…Å¼ zacumowana na przystani.
 };
 func void DIA_Addon_Farim_William_auftauchen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Jestem pewien, ¿e prêdzej czy póŸniej wróci do domu.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //Nie s¹dzê. Zbyt d³ugo ju¿ go nie ma.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //Bojê siê, ¿e któregoœ dnia morze wyrzuci na brzeg jego cia³o.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Jestem pewien, Å¼e prÄ™dzej czy pÃ³Åºniej wrÃ³ci do domu.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //Nie sÄ…dzÄ™. Zbyt dÅ‚ugo juÅ¼ go nie ma.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //BojÄ™ siÄ™, Å¼e ktÃ³regoÅ› dnia morze wyrzuci na brzeg jego ciaÅ‚o.
 };
 func void DIA_Addon_Farim_William_Tschau ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Tschau_15_00"); //Chyba us³ysza³em ju¿ wystarczaj¹co wiele.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Tschau_11_01"); //Nie przejmuj siê tym. W¹tpiê, byœ go znalaz³.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Tschau_15_00"); //Chyba usÅ‚yszaÅ‚em juÅ¼ wystarczajÄ…co wiele.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Tschau_11_01"); //Nie przejmuj siÄ™ tym. WÄ…tpiÄ™, byÅ› go znalazÅ‚.
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
 };
 
@@ -342,7 +342,7 @@ instance DIA_Addon_Farim_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Farim_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"I jak tam ryby? Bior¹?";
+	description	 = 	"I jak tam ryby? BiorÄ…?";
 };
 
 func int DIA_Addon_Farim_Perm_Condition ()
@@ -355,15 +355,15 @@ func int DIA_Addon_Farim_Perm_Condition ()
 
 func void DIA_Addon_Farim_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_Perm_15_00"); //I jak tam ryby? Bior¹?
+	AI_Output	(other, self, "DIA_Addon_Farim_Perm_15_00"); //I jak tam ryby? BiorÄ…?
 
 	if (Farim_PissedOff == TRUE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_01"); //Ech, nie udawaj, ¿e ciê to interesuje!
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_01"); //Ech, nie udawaj, Å¼e ciÄ™ to interesuje!
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //Bywa³o lepiej. Jest jak jest. Za ma³o by ¿yæ, za du¿o, by umrzeæ.
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //BywaÅ‚o lepiej. Jest jak jest. Za maÅ‚o by Å¼yÄ‡, za duÅ¼o, by umrzeÄ‡.
 	};
 };
 
@@ -394,12 +394,12 @@ func int DIA_Addon_Farim_WilliamReport_Condition ()
 
 func void DIA_Addon_Farim_WilliamReport_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //Wróci³eœ!
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //S³ysza³eœ coœ o Williamie?
-	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //Nie ¿yje.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //Spodziewa³em siê takich wieœci.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //Dziêki, ¿e wróci³eœ, by mi to powiedzieæ.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //Pójdê do knajpy i za czêœæ zdobyczy Williama wypijê za jego pamiêæ. Wiem, ¿e on post¹pi³by tak samo, gdybym to ja zgin¹³.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //WrÃ³ciÅ‚eÅ›!
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //SÅ‚yszaÅ‚eÅ› coÅ› o Williamie?
+	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //Nie Å¼yje.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //SpodziewaÅ‚em siÄ™ takich wieÅ›ci.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //DziÄ™ki, Å¼e wrÃ³ciÅ‚eÅ›, by mi to powiedzieÄ‡.
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //PÃ³jdÄ™ do knajpy i za czÄ™Å›Ä‡ zdobyczy Williama wypijÄ™ za jego pamiÄ™Ä‡. Wiem, Å¼e on postÄ…piÅ‚by tak samo, gdybym to ja zginÄ…Å‚.
 };
 
 

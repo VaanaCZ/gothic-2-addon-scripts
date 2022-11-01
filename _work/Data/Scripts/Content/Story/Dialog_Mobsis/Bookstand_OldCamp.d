@@ -19,24 +19,24 @@ FUNC VOID Bookstand_Milten_03_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "PóŸno ju¿"					);
-					Doc_PrintLines	( nDocID,  0, "Jak ³atwo by³o przewidzieæ, t¹pniêcie w Starej Kopalni bardzo rozsierdzi³o Magnatów."	);
-					Doc_PrintLines	( nDocID,  0, "Gomez jest teraz jak beczka prochu, gotowa eksplodowaæ w ka¿dej chwili."					);
+					Doc_PrintLines	( nDocID,  0, "PÃ³Åºno juÅ¼"					);
+					Doc_PrintLines	( nDocID,  0, "Jak Å‚atwo byÅ‚o przewidzieÄ‡, tÄ…pniÄ™cie w Starej Kopalni bardzo rozsierdziÅ‚o MagnatÃ³w."	);
+					Doc_PrintLines	( nDocID,  0, "Gomez jest teraz jak beczka prochu, gotowa eksplodowaÄ‡ w kaÅ¼dej chwili."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Uwa¿a, ¿e winê za ostatnie wydarzenia ponosi ten nowy wiêzieñ. To rzeczywiœcie tajemniczy cz³owiek... Lepiej dla niego, ¿eby siê tu wiêcej nie pokazywa³.");
+					Doc_PrintLines	( nDocID,  0, "UwaÅ¼a, Å¼e winÄ™ za ostatnie wydarzenia ponosi ten nowy wiÄ™zieÅ„. To rzeczywiÅ›cie tajemniczy czÅ‚owiek... Lepiej dla niego, Å¼eby siÄ™ tu wiÄ™cej nie pokazywaÅ‚.");
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Corristo");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Gomez jest w paskudnym humorze i chyba wiem, co planuje. Musimy uprzedziæ Magów Wody, nim bêdzie za póŸno!"					);
+					Doc_PrintLines	( nDocID,  1, "Gomez jest w paskudnym humorze i chyba wiem, co planuje. Musimy uprzedziÄ‡ MagÃ³w Wody, nim bÄ™dzie za pÃ³Åºno!"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Corristo"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Mo¿e uda siê nam zapobiec katastrofie. Wolê nie myœleæ, co siê stanie, jeœli Wolna Kopalnia..."					);
+					Doc_PrintLines	( nDocID,  1, "MoÅ¼e uda siÄ™ nam zapobiec katastrofie. WolÄ™ nie myÅ›leÄ‡, co siÄ™ stanie, jeÅ›li Wolna Kopalnia..."					);
 					Doc_Show		( nDocID );
 
 	};
@@ -62,9 +62,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Pozwoli³em sobie trochê siê tutaj urz¹dziæ. Kto by pomyœla³, ¿e pewnego dnia bêdê jedynym magiem w obozie?"					);
-					Doc_PrintLines	( nDocID,  0, "Nie powiem, ¿eby cieszy³ mnie powrót tutaj. Prawdê mówi¹c, mam ochotê jak najszybciej st¹d uciec."	);
-					Doc_PrintLines	( nDocID,  0, "Ta ca³a wyprawa skazana jest na pora¿kê."					);
+					Doc_PrintLines	( nDocID,  0, "PozwoliÅ‚em sobie trochÄ™ siÄ™ tutaj urzÄ…dziÄ‡. Kto by pomyÅ›laÅ‚, Å¼e pewnego dnia bÄ™dÄ™ jedynym magiem w obozie?"					);
+					Doc_PrintLines	( nDocID,  0, "Nie powiem, Å¼eby cieszyÅ‚ mnie powrÃ³t tutaj. PrawdÄ™ mÃ³wiÄ…c, mam ochotÄ™ jak najszybciej stÄ…d uciec."	);
+					Doc_PrintLines	( nDocID,  0, "Ta caÅ‚a wyprawa skazana jest na poraÅ¼kÄ™."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");
 			
@@ -74,9 +74,9 @@ FUNC VOID Bookstand_Milten_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Wczoraj wyruszyli górnicy. Zabrali ze sob¹ Diega. Nie zdziwi³bym siê, gdyby ten cwaniak przy pierwszej okazji da³ nogê."					);
-					Doc_PrintLines	( nDocID,  1, "Jakoœ nie wyobra¿am go sobie z kilofem w rêku."					);
-					Doc_PrintLines	( nDocID,  1, "Có¿, wykorzystam wolny czas na zg³êbianie tajników alchemii."					);
+					Doc_PrintLines	( nDocID,  1, "Wczoraj wyruszyli gÃ³rnicy. Zabrali ze sobÄ… Diega. Nie zdziwiÅ‚bym siÄ™, gdyby ten cwaniak przy pierwszej okazji daÅ‚ nogÄ™."					);
+					Doc_PrintLines	( nDocID,  1, "JakoÅ› nie wyobraÅ¼am go sobie z kilofem w rÄ™ku."					);
+					Doc_PrintLines	( nDocID,  1, "CÃ³Å¼, wykorzystam wolny czas na zgÅ‚Ä™bianie tajnikÃ³w alchemii."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Milten"					);
 					Doc_Show		( nDocID );
@@ -130,34 +130,34 @@ FUNC VOID Bookstand_Engor_01_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Zapasy");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "ZnaleŸliœmy trochê towaru, ale nic specjalnego. Poza tym mamy tu:"					);
+					Doc_PrintLines	( nDocID,  0, "ZnaleÅºliÅ›my trochÄ™ towaru, ale nic specjalnego. Poza tym mamy tu:"					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "3 skrzynie starych szmat"	);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "8 skrzyñ zardzewia³ego ¿elaza"					);
+					Doc_PrintLines	( nDocID,  0, "8 skrzyÅ„ zardzewiaÅ‚ego Å¼elaza"					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "4 skrzynie po³amanych pancerzy");
+					Doc_PrintLines	( nDocID,  0, "4 skrzynie poÅ‚amanych pancerzy");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "5 (potwornie œmierdz¹cych) skrzyñ skóry i futer");
+					Doc_PrintLines	( nDocID,  0, "5 (potwornie Å›mierdzÄ…cych) skrzyÅ„ skÃ³ry i futer");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "2 skrzynie kilofów"					);
+					Doc_PrintLines	( nDocID,  1, "2 skrzynie kilofÃ³w"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "3 skrzynie narzêdzi"					);
+					Doc_PrintLines	( nDocID,  1, "3 skrzynie narzÄ™dzi"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "16 skrzyñ kamieni (bez rudy)"					);
+					Doc_PrintLines	( nDocID,  1, "16 skrzyÅ„ kamieni (bez rudy)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 skrzyniê zardzewia³ych ¿yletek"					);
+					Doc_PrintLines	( nDocID,  1, "1 skrzyniÄ™ zardzewiaÅ‚ych Å¼yletek"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "4 skrzynie zniszczonych naczyñ"					);
+					Doc_PrintLines	( nDocID,  1, "4 skrzynie zniszczonych naczyÅ„"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "56 beczu³ek z wod¹"					);
+					Doc_PrintLines	( nDocID,  1, "56 beczuÅ‚ek z wodÄ…"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "1 skrzyniê czegoœ paskudnego (dawno do cna przegni³ego)"					);
+					Doc_PrintLines	( nDocID,  1, "1 skrzyniÄ™ czegoÅ› paskudnego (dawno do cna przegniÅ‚ego)"					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, "Engor"					);
 					Doc_Show		( nDocID );

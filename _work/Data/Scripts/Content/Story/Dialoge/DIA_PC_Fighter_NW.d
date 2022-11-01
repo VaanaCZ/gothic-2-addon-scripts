@@ -31,7 +31,7 @@ INSTANCE DIA_GornNW_Hallo (C_INFO)
 	condition	= DIA_GornNW_Hallo_Condition;
 	information	= DIA_GornNW_Hallo_Info;
 	permanent	= FALSE;
-	description = "Wszystko w porz¹dku?";
+	description = "Wszystko w porzÄ…dku?";
 };                       
 FUNC INT DIA_GornNW_Hallo_Condition()
 {
@@ -39,17 +39,17 @@ FUNC INT DIA_GornNW_Hallo_Condition()
 };
 FUNC VOID DIA_GornNW_Hallo_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_Add_15_00"); //Wszystko w porz¹dku?
+	AI_Output (other,self ,"DIA_GornNW_Add_15_00"); //Wszystko w porzÄ…dku?
 	if (MIS_RescueGorn == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //Uratowa³eœ mój ty³ek, kolego.
-		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //Nigdy ci tego nie zapomnê.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //UratowaÅ‚eÅ› mÃ³j tyÅ‚ek, kolego.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //Nigdy ci tego nie zapomnÄ™.
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //Milten mnie wyci¹gn¹³.
-		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //Nigdy mu tego nie zapomnê.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //Milten mnie wyciÄ…gnÄ…Å‚.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //Nigdy mu tego nie zapomnÄ™.
 	};
 };
 
@@ -64,7 +64,7 @@ INSTANCE DIA_GornNW_WhatNext (C_INFO)
 	condition	= DIA_GornNW_WhatNext_Condition;
 	information	= DIA_GornNW_WhatNext_Info;
 	permanent	= TRUE;
-	description = "Co bêdziesz teraz robi³?";
+	description = "Co bÄ™dziesz teraz robiÅ‚?";
 };                       
 FUNC INT DIA_GornNW_WhatNext_Condition()
 {
@@ -72,9 +72,9 @@ FUNC INT DIA_GornNW_WhatNext_Condition()
 };
 FUNC VOID DIA_GornNW_WhatNext_Info()
 {	
-	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Co bêdziesz teraz robi³?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //Najpierw zamierzam porz¹dnie siê najeœæ.
+	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Co bÄ™dziesz teraz robiÅ‚?
+	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //Najpierw zamierzam porzÄ…dnie siÄ™ najeÅ›Ä‡.
 	AI_Output (other,self ,"DIA_GornNW_Add_15_07"); //A potem?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Kto wie? Mo¿e wrócê do Kolonii?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //Ktoœ musi mieæ oko na orków. Nie chcemy chyba, ¿eby bez ostrze¿enia zapukali nam do drzwi, nie?
+	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Kto wie? MoÅ¼e wrÃ³cÄ™ do Kolonii?
+	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //KtoÅ› musi mieÄ‡ oko na orkÃ³w. Nie chcemy chyba, Å¼eby bez ostrzeÅ¼enia zapukali nam do drzwi, nie?
 };

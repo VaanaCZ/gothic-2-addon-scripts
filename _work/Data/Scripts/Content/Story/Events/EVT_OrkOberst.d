@@ -47,7 +47,7 @@ func void EVT_ORKOBERST ()
 		
 		ORkSturmDI  = TRUE;
 		
-		B_LogEntry (TOPIC_HallenVonIrdorath,"Orkowy pu≥kownik to twardy przeciwnik. Z tego co wiem w jego sali tronowej musi byÊ jakieú tajemne przejúcie."); 
+		B_LogEntry (TOPIC_HallenVonIrdorath,"Orkowy pu≈Çkownik to twardy przeciwnik. Z tego co wiem w jego sali tronowej musi byƒá jakie≈õ tajemne przej≈õcie."); 
 
 		EVT_ORKOBERST_OneTime = TRUE;
 	};

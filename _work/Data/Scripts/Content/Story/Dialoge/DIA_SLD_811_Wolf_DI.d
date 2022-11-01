@@ -32,7 +32,7 @@ instance DIA_Wolf_DI_HALLO		(C_INFO)
 	information	 = 	DIA_Wolf_DI_HALLO_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co s³ychaæ?";
+	description	 = 	"Co sÅ‚ychaÄ‡?";
 };
 
 func int DIA_Wolf_DI_HALLO_Condition ()
@@ -45,20 +45,20 @@ func int DIA_Wolf_DI_HALLO_Condition ()
 var int DIA_Wolf_DI_HALLO_OneTime;
 func void DIA_Wolf_DI_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_00"); //Co s³ychaæ?
+	AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_00"); //Co sÅ‚ychaÄ‡?
 
 	if ( Bennet_IsOnBoard == LOG_SUCCESS)
 	&& (Npc_IsDead(Bennet_DI)	==	FALSE)
 		{
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Cholera! Musia³eœ braæ ze sob¹ Benneta?
-			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //Jakiœ problem?
-			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Ech... nie, ¿aden. Rób, co masz do zrobienia i wynoœmy siê st¹d, dobra?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_01"); //Cholera! MusiaÅ‚eÅ› braÄ‡ ze sobÄ… Benneta?
+			AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_02"); //JakiÅ› problem?
+			AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_03"); //Ech... nie, Å¼aden. RÃ³b, co masz do zrobienia i wynoÅ›my siÄ™ stÄ…d, dobra?
 		}
 	else
 		{
 			if (DIA_Wolf_DI_HALLO_OneTime == FALSE)
 				{
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_04"); //KuŸnia nie jest w najlepszym stanie, ale zrobiê co w mojej mocy.
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_04"); //KuÅºnia nie jest w najlepszym stanie, ale zrobiÄ™ co w mojej mocy.
 					B_GivePlayerXP (XP_Ambient);
 					DIA_Wolf_DI_HALLO_OneTime = TRUE;
 					AI_StopProcessInfos (self);
@@ -66,8 +66,8 @@ func void DIA_Wolf_DI_HALLO_Info ()
 				}
 			else
 				{
-					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //Móg³byœ sporz¹dziæ dla mnie now¹ zbrojê?
-					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Przykro mi, ale nie z tymi narzêdziami. Musisz poczekaæ, a¿ wyl¹dujemy na kontynencie.
+					AI_Output			(other, self, "DIA_Wolf_DI_HALLO_15_05"); //MÃ³gÅ‚byÅ› sporzÄ…dziÄ‡ dla mnie nowÄ… zbrojÄ™?
+					AI_Output			(self, other, "DIA_Wolf_DI_HALLO_08_06"); //Przykro mi, ale nie z tymi narzÄ™dziami. Musisz poczekaÄ‡, aÅ¼ wylÄ…dujemy na kontynencie.
 				};
 		};
 };
@@ -84,7 +84,7 @@ INSTANCE DIA_Wolf_DI_Training (C_INFO)
 	information	= DIA_Wolf_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "Naucz mnie czegoœ o walce na dystans.";
+	description = "Naucz mnie czegoÅ› o walce na dystans.";
 };                       
 FUNC INT DIA_Wolf_DI_Training_Condition()
 {
@@ -96,7 +96,7 @@ FUNC INT DIA_Wolf_DI_Training_Condition()
 
 FUNC VOID DIA_Wolf_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //Naucz mnie czegoœ o walce na dystans.
+	AI_Output (other,self ,"DIA_Wolf_DI_Training_15_00"); //Naucz mnie czegoÅ› o walce na dystans.
 	AI_Output (self ,other,"DIA_Wolf_DI_Training_08_01"); //A czego konkretnie?
 	
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
@@ -116,7 +116,7 @@ func void DIA_Wolf_DI_Training_BOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 1, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //W odró¿nieniu od kuszy do pos³ugiwania siê ³ukiem potrzeba du¿o miejsca. Pamiêtaj, ¿eby w trakcie walki zachowaæ odpowiedni¹ odleg³oœæ od przeciwnika.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_1_08_00"); //W odrÃ³Å¼nieniu od kuszy do posÅ‚ugiwania siÄ™ Å‚ukiem potrzeba duÅ¼o miejsca. PamiÄ™taj, Å¼eby w trakcie walki zachowaÄ‡ odpowiedniÄ… odlegÅ‚oÅ›Ä‡ od przeciwnika.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -133,7 +133,7 @@ func void DIA_Wolf_DI_Training_BOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_BOW, 5, 90))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //Ciêciwa musi siê przeœlizgn¹æ miêdzy twoimi palcami. Zaciskaj¹c kurczowo palce, wypaczysz kierunek lotu strza³y.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_BOW_5_08_00"); //CiÄ™ciwa musi siÄ™ przeÅ›lizgnÄ…Ä‡ miÄ™dzy twoimi palcami. ZaciskajÄ…c kurczowo palce, wypaczysz kierunek lotu strzaÅ‚y.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -154,7 +154,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_1()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 1, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //Strzelaj¹c z kuszy, musisz pozostawaæ w ca³kowitym bezruchu. Dlatego zawsze staraj siê powoli naciskaæ spust.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_1_08_00"); //StrzelajÄ…c z kuszy, musisz pozostawaÄ‡ w caÅ‚kowitym bezruchu. Dlatego zawsze staraj siÄ™ powoli naciskaÄ‡ spust.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -170,7 +170,7 @@ func void DIA_Wolf_DI_Training_CROSSBOW_5()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 100))
 	{
-		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Sprytny strzelec zawsze wykorzystuje powiewy powietrza i stara siê nie strzelaæ pod wiatr.
+		AI_Output (self ,other,"DIA_Wolf_DI_Training_CROSSBOW_5_08_00"); //Sprytny strzelec zawsze wykorzystuje powiewy powietrza i stara siÄ™ nie strzelaÄ‡ pod wiatr.
 	};
 	Info_ClearChoices 	(DIA_Wolf_DI_Training);
 	Info_AddChoice	  	(DIA_Wolf_DI_Training, DIALOG_BACK, DIA_Wolf_DI_Training_BACK);
@@ -197,7 +197,7 @@ instance DIA_Wolf_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Wolf_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Wszystko w porz¹dku?";
+	description = 	"Wszystko w porzÄ…dku?";
 };
 
 func int DIA_Wolf_DI_UndeadDragonDead_Condition ()
@@ -211,14 +211,14 @@ func int DIA_Wolf_DI_UndeadDragonDead_Condition ()
 var int DIA_Wolf_DI_UndeadDragonDead_OneTime;
 func void DIA_Wolf_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Wszystko w porz¹dku?
-	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //U mnie tak, a u ciebie? Nie by³o lekko, co?
+	AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_00"); //Wszystko w porzÄ…dku?
+	AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_01"); //U mnie tak, a u ciebie? Nie byÅ‚o lekko, co?
 
 	if (DIA_Wolf_DI_UndeadDragonDead_OneTime == FALSE)
 		{
-			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //Dok¹d zamierzasz siê teraz udaæ?
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Gdziekolwiek, byle nie z powrotem. Mam ju¿ serdecznie doœæ Khorinis.
-			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //Nie obchodzi mnie, dok¹d pop³yniemy, byle jak najdalej st¹d.
+			AI_Output			(other ,self, "DIA_Wolf_DI_UndeadDragonDead_15_02"); //DokÄ…d zamierzasz siÄ™ teraz udaÄ‡?
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_03"); //Gdziekolwiek, byle nie z powrotem. Mam juÅ¼ serdecznie doÅ›Ä‡ Khorinis.
+			AI_Output			(self ,other, "DIA_Wolf_DI_UndeadDragonDead_08_04"); //Nie obchodzi mnie, dokÄ…d popÅ‚yniemy, byle jak najdalej stÄ…d.
 			DIA_Wolf_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	AI_StopProcessInfos (self);

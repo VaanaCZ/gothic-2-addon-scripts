@@ -39,32 +39,32 @@ FUNC INT DIA_Dexter_Hallo_Condition()
 };
 FUNC VOID DIA_Dexter_Hallo_Info()
 {
-	AI_Output (self, other, "DIA_Dexter_Hallo_09_00");//Proszê, proszê, kogo tutaj mamy. Nasz wielki liberator we w³asnej osobie! Co tu robisz, bohaterze?
-	AI_Output (other, self, "DIA_Dexter_Hallo_15_01");//Potrzebujê paru odpowiedzi.
+	AI_Output (self, other, "DIA_Dexter_Hallo_09_00");//ProszÄ™, proszÄ™, kogo tutaj mamy. Nasz wielki liberator we wÅ‚asnej osobie! Co tu robisz, bohaterze?
+	AI_Output (other, self, "DIA_Dexter_Hallo_15_01");//PotrzebujÄ™ paru odpowiedzi.
 	
 	if (Ranger_SCKnowsDexter == TRUE)//ADDON
 	{
 		//ADDON>
-		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_00");//Nie s¹dzi³em, ¿e pojawisz siê tu z w³asnej woli.
-		AI_Output (other, self, "DIA_Addon_Dexter_Hallo_15_01");//Co to ma znaczyæ?
-		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_02");//To znaczy, ¿e ktoœ daje nagrodê za twoj¹ g³owê. Nie widzia³eœ jeszcze ¿adnych ulotek?
-		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_03");//Jest na nich TWOJA gêba. Tak... jesteœ poszukiwanym cz³owiekiem. Nie wiedzia³eœ o tym?
+		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_00");//Nie sÄ…dziÅ‚em, Å¼e pojawisz siÄ™ tu z wÅ‚asnej woli.
+		AI_Output (other, self, "DIA_Addon_Dexter_Hallo_15_01");//Co to ma znaczyÄ‡?
+		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_02");//To znaczy, Å¼e ktoÅ› daje nagrodÄ™ za twojÄ… gÅ‚owÄ™. Nie widziaÅ‚eÅ› jeszcze Å¼adnych ulotek?
+		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_03");//Jest na nich TWOJA gÄ™ba. Tak... jesteÅ› poszukiwanym czÅ‚owiekiem. Nie wiedziaÅ‚eÅ› o tym?
 		//ADDON<
 	}
 	else // (Bdt13_Dexter_verraten == TRUE) //Gothic2
 	{
-		AI_Output (other, self, "DIA_Dexter_Hallo_15_02");//Ktoœ rozprowadza ulotki z moj¹ podobizn¹. I ktoœ mi powiedzia³, ¿e to w³aœnie ty.
-		AI_Output (self, other, "DIA_Dexter_Hallo_09_03");//Ktoœ tu gada za du¿o.
+		AI_Output (other, self, "DIA_Dexter_Hallo_15_02");//KtoÅ› rozprowadza ulotki z mojÄ… podobiznÄ…. I ktoÅ› mi powiedziaÅ‚, Å¼e to wÅ‚aÅ›nie ty.
+		AI_Output (self, other, "DIA_Dexter_Hallo_09_03");//KtoÅ› tu gada za duÅ¼o.
 		
-		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_04");//Ale masz racjê. To ja rozprowadzi³em ulotki. I co siê dzieje? Sam do mnie przychodzisz.
+		AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_04");//Ale masz racjÄ™. To ja rozprowadziÅ‚em ulotki. I co siÄ™ dzieje? Sam do mnie przychodzisz.
 		
 		/*//ADDON>
 		AI_Output (self, other, "DIA_Dexter_Hallo_09_04");//Aber es stimmt. Ich habe meinen Jungs die Steckbriefe gegeben. Ich hatte keine andere Wahl.
 		AI_Output (self, other, "DIA_Dexter_Hallo_09_05");//Als ich versuchte, aus dem Minental zu entfliehen, entdeckten mich die Soldaten und trieben mich in eine Falle.
-		AI_Output (self, other, "DIA_Dexter_Hallo_09_06");//Ich dachte schon, das wäre mein Ende, aber dann tauchte plötzlich aus der Dunkelheit diese ... Gestalt auf.
-		AI_Output (self, other, "DIA_Dexter_Hallo_09_07");//Er trug eine schwarze Robe mit Kapuze und eine Maske überm Gesicht. Und er sprach mit einer Stimme, die alles andere als menschlich war.
-		AI_Output (self, other, "DIA_Dexter_Hallo_09_08");//Aber er bot mir seine Hilfe an. Er brachte mich aus dem Tal und bot mir eintausend Goldstücke für deinen Kopf.
-		AI_Output (self, other, "DIA_Dexter_Hallo_09_09");//Hey, was sollte ich machen? Wenn ich abgelehnt hätte, dann hätte er mich getötet!
+		AI_Output (self, other, "DIA_Dexter_Hallo_09_06");//Ich dachte schon, das wÃ¤re mein Ende, aber dann tauchte plÃ¶tzlich aus der Dunkelheit diese ... Gestalt auf.
+		AI_Output (self, other, "DIA_Dexter_Hallo_09_07");//Er trug eine schwarze Robe mit Kapuze und eine Maske Ã¼berm Gesicht. Und er sprach mit einer Stimme, die alles andere als menschlich war.
+		AI_Output (self, other, "DIA_Dexter_Hallo_09_08");//Aber er bot mir seine Hilfe an. Er brachte mich aus dem Tal und bot mir eintausend GoldstÃ¼cke fÃ¼r deinen Kopf.
+		AI_Output (self, other, "DIA_Dexter_Hallo_09_09");//Hey, was sollte ich machen? Wenn ich abgelehnt hÃ¤tte, dann hÃ¤tte er mich getÃ¶tet!
 		*///ADDON<
 		//ADDON B_LogEntry (Topic_Bandits,"Dexter hat die Steckbriefe verteilt. Typen mit schwarzen Kapuzen haben ihn damit beauftragt.");
 		
@@ -73,8 +73,8 @@ FUNC VOID DIA_Dexter_Hallo_Info()
 		B_GivePlayerXP (XP_Ambient);
 	};
 	AI_Output (other, self, "DIA_Addon_Dexter_Hallo_15_05");//Czego ode mnie chcesz?
-	AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_06");//Ja? Nic. Ale mój szef strasznie chcia³by ciê za³atwiæ.
-	AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_07");//Dlatego w³aœnie musia³em ciê znaleŸæ, ¿eby zanieœæ mu twoj¹ g³owê.
+	AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_06");//Ja? Nic. Ale mÃ³j szef strasznie chciaÅ‚by ciÄ™ zaÅ‚atwiÄ‡.
+	AI_Output (self, other, "DIA_Addon_Dexter_Hallo_09_07");//Dlatego wÅ‚aÅ›nie musiaÅ‚em ciÄ™ znaleÅºÄ‡, Å¼eby zanieÅ›Ä‡ mu twojÄ… gÅ‚owÄ™.
 };
 
 // ************************************************************
@@ -87,7 +87,7 @@ INSTANCE DIA_Dexter_Glaube   (C_INFO)
 	condition   = DIA_Dexter_Glaube_Condition;
 	information = DIA_Dexter_Glaube_Info;
 	permanent   = FALSE;
-	description = "Nie wierzê nawet w jedno twoje s³owo.";
+	description = "Nie wierzÄ™ nawet w jedno twoje sÅ‚owo.";
 };
 FUNC INT DIA_Dexter_Glaube_Condition()
 {	
@@ -98,8 +98,8 @@ FUNC INT DIA_Dexter_Glaube_Condition()
 };
 FUNC VOID DIA_Dexter_Glaube_Info()
 {
-	AI_Output (other, self, "DIA_Dexter_Glaube_15_00");//Nie wierzê nawet w jedno twoje s³owo.
-	AI_Output (self, other, "DIA_Dexter_Glaube_09_01");//Hej, to prawda. Przysiêgam na grób mojej matki!
+	AI_Output (other, self, "DIA_Dexter_Glaube_15_00");//Nie wierzÄ™ nawet w jedno twoje sÅ‚owo.
+	AI_Output (self, other, "DIA_Dexter_Glaube_09_01");//Hej, to prawda. PrzysiÄ™gam na grÃ³b mojej matki!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -127,14 +127,14 @@ func int DIA_Addon_Dexter_Patrick_Condition ()
 func void DIA_Addon_Dexter_Patrick_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Dexter_Patrick_15_00"); //Widziano tu najemnika imieniem Patrick.
-	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_01"); //Patrick? Nigdy o nim nie s³ysza³em.
-	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_02"); //A, pamiêtam jednego ostro gard³uj¹cego najemnika, który krêci³ siê tu czasem ze swoj¹ kompani¹.
-	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_03"); //Od d³u¿szego czasu go jednak nie widzia³em.
-	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_04"); //Mo¿e ta kompania go obwiesi³a... Któ¿ to mo¿e wiedzieæ.
+	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_01"); //Patrick? Nigdy o nim nie sÅ‚yszaÅ‚em.
+	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_02"); //A, pamiÄ™tam jednego ostro gardÅ‚ujÄ…cego najemnika, ktÃ³ry krÄ™ciÅ‚ siÄ™ tu czasem ze swojÄ… kompaniÄ….
+	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_03"); //Od dÅ‚uÅ¼szego czasu go jednak nie widziaÅ‚em.
+	AI_Output	(self, other, "DIA_Addon_Dexter_Patrick_09_04"); //MoÅ¼e ta kompania go obwiesiÅ‚a... KtÃ³Å¼ to moÅ¼e wiedzieÄ‡.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Dexter twierdzi, ¿e nie zna najemnika o imieniu Patrick."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Dexter twierdzi, Å¼e nie zna najemnika o imieniu Patrick."); 
 
 	Dexter_KnowsPatrick = TRUE;
 	B_GivePlayerXP (XP_Addon_Dexter_KnowsPatrick);
@@ -149,7 +149,7 @@ instance DIA_Addon_Dexter_Greg		(C_INFO)
 	condition	 = 	DIA_Addon_Dexter_Greg_Condition;
 	information	 = 	DIA_Addon_Dexter_Greg_Info;
 
-	description	 = 	"Jest taki goœæ z zas³oniêtym okiem. Szuka ciebie!";
+	description	 = 	"Jest taki goÅ›Ä‡ z zasÅ‚oniÄ™tym okiem. Szuka ciebie!";
 };
 
 func int DIA_Addon_Dexter_Greg_Condition ()
@@ -163,9 +163,9 @@ func int DIA_Addon_Dexter_Greg_Condition ()
 
 func void DIA_Addon_Dexter_Greg_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Dexter_Greg_15_00"); //Jest taki goœæ z zas³oniêtym okiem. Szuka ciebie!
-	AI_Output	(self, other, "DIA_Addon_Dexter_Greg_09_01"); //Wszyscy mnie ostatnio szukaj¹... Mam siê tym przejmowaæ?
-	AI_Output	(self, other, "DIA_Addon_Dexter_Greg_09_02"); //Jak czegoœ ode mnie chce, to niech tu przyjdzie.
+	AI_Output	(other, self, "DIA_Addon_Dexter_Greg_15_00"); //Jest taki goÅ›Ä‡ z zasÅ‚oniÄ™tym okiem. Szuka ciebie!
+	AI_Output	(self, other, "DIA_Addon_Dexter_Greg_09_01"); //Wszyscy mnie ostatnio szukajÄ…... Mam siÄ™ tym przejmowaÄ‡?
+	AI_Output	(self, other, "DIA_Addon_Dexter_Greg_09_02"); //Jak czegoÅ› ode mnie chce, to niech tu przyjdzie.
 	B_GivePlayerXP (XP_Ambient);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -192,49 +192,49 @@ func int DIA_Addon_Dexter_missingPeople_Condition ()
 func void DIA_Addon_Dexter_missingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Dexter_missingPeople_15_00"); //Podobno to ty porywasz ludzi z Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Dexter_missingPeople_09_01"); //Jednak uda³o ci siê to rozpracowaæ... Gratulujê, dobra robota.
-	AI_Output	(self, other, "DIA_Addon_Dexter_missingPeople_09_02"); //S¹dzi³em, ¿e uda³o mi siê lepiej zatrzeæ œlady.
+	AI_Output	(self, other, "DIA_Addon_Dexter_missingPeople_09_01"); //Jednak udaÅ‚o ci siÄ™ to rozpracowaÄ‡... GratulujÄ™, dobra robota.
+	AI_Output	(self, other, "DIA_Addon_Dexter_missingPeople_09_02"); //SÄ…dziÅ‚em, Å¼e udaÅ‚o mi siÄ™ lepiej zatrzeÄ‡ Å›lady.
 	
 	Info_ClearChoices	(DIA_Addon_Dexter_missingPeople);
-	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Kto kaza³ ci to robiæ?", DIA_Addon_Dexter_missingPeople_wer );
-	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Co siê sta³o z tymi ludŸmi?", DIA_Addon_Dexter_missingPeople_Wo );
+	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Kto kazaÅ‚ ci to robiÄ‡?", DIA_Addon_Dexter_missingPeople_wer );
+	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Co siÄ™ staÅ‚o z tymi ludÅºmi?", DIA_Addon_Dexter_missingPeople_Wo );
 };
 func void DIA_Addon_Dexter_missingPeople_Wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_Wo_15_00"); //Co siê sta³o z tymi ludŸmi? Gdzie oni s¹? W okolicznych kopalniach?
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Wo_09_01"); //Dawno ju¿ ich tu nie ma. S¹ za górami na pó³nocnym wschodzie, poza czyimkolwiek zasiêgiem...
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Wo_09_02"); //Niby mogê ci pokazaæ, gdzie dok³adnie... Tylko po co?
+	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_Wo_15_00"); //Co siÄ™ staÅ‚o z tymi ludÅºmi? Gdzie oni sÄ…? W okolicznych kopalniach?
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Wo_09_01"); //Dawno juÅ¼ ich tu nie ma. SÄ… za gÃ³rami na pÃ³Å‚nocnym wschodzie, poza czyimkolwiek zasiÄ™giem...
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Wo_09_02"); //Niby mogÄ™ ci pokazaÄ‡, gdzie dokÅ‚adnie... Tylko po co?
 };
 func void DIA_Addon_Dexter_missingPeople_wer ()
 {
-	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_wer_15_00"); //Kto kaza³ ci to robiæ?
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_wer_09_01"); //Mój szef, groŸny typ. Znasz go - to Kruk, jeden z Magnatów ze Starego Obozu w Górniczej Dolinie.
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_wer_09_02"); //Potrzebowa³ tych ludzi do swoich planów - tylko tyle siê dowiesz.
+	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_wer_15_00"); //Kto kazaÅ‚ ci to robiÄ‡?
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_wer_09_01"); //MÃ³j szef, groÅºny typ. Znasz go - to Kruk, jeden z MagnatÃ³w ze Starego Obozu w GÃ³rniczej Dolinie.
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_wer_09_02"); //PotrzebowaÅ‚ tych ludzi do swoich planÃ³w - tylko tyle siÄ™ dowiesz.
 
-	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Kruk? GroŸny? Hmm...", DIA_Addon_Dexter_missingPeople_Raven );
+	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Kruk? GroÅºny? Hmm...", DIA_Addon_Dexter_missingPeople_Raven );
 	Info_AddChoice	(DIA_Addon_Dexter_missingPeople, "Magnat? W Khorinis?", DIA_Addon_Dexter_missingPeople_RavenTot );
 		 
 };
 func void DIA_Addon_Dexter_missingPeople_Raven ()
 {
-	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_Raven_15_00"); //Kruk? GroŸny? Hmm...
+	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_Raven_15_00"); //Kruk? GroÅºny? Hmm...
 	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_01"); //A co ty tam wiesz?! Nie znasz go tak dobrze, jak ja.
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_02"); //Ju¿ wtedy by³ z niego kawa³ sukinsyna, ale teraz...
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_03"); //Bardzo siê zmieni³ po upadku Bariery. Twarz skry³ mu czarny cieñ.
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_04"); //Jego wzrok przebija ciê niczym pazury dzikiej bestii, jeœli zbyt d³ugo siê w niego wpatrzeæ...
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_05"); //Dobrze ci radzê - opuœæ Khorinis, dopóki jeszcze mo¿esz to uczyniæ.
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_06"); //Nie czeka ciê tu nic poza œmierci¹.
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_02"); //JuÅ¼ wtedy byÅ‚ z niego kawaÅ‚ sukinsyna, ale teraz...
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_03"); //Bardzo siÄ™ zmieniÅ‚ po upadku Bariery. Twarz skryÅ‚ mu czarny cieÅ„.
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_04"); //Jego wzrok przebija ciÄ™ niczym pazury dzikiej bestii, jeÅ›li zbyt dÅ‚ugo siÄ™ w niego wpatrzeÄ‡...
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_05"); //Dobrze ci radzÄ™ - opuÅ›Ä‡ Khorinis, dopÃ³ki jeszcze moÅ¼esz to uczyniÄ‡.
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_Raven_09_06"); //Nie czeka ciÄ™ tu nic poza Å›mierciÄ….
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Dexter ma szefa, który nazywa siê Kruk. To by³y magnat. Chyba w³aœnie on jest odpowiedzialny za wszystkie porwania. Teraz potrzebujê tylko jakiegoœ dowodu."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Dexter ma szefa, ktÃ³ry nazywa siÄ™ Kruk. To byÅ‚y magnat. Chyba wÅ‚aÅ›nie on jest odpowiedzialny za wszystkie porwania. Teraz potrzebujÄ™ tylko jakiegoÅ› dowodu."); 
 
 	Info_ClearChoices	(DIA_Addon_Dexter_missingPeople);
 };
 func void DIA_Addon_Dexter_missingPeople_RavenTot ()
 {
 	AI_Output			(other, self, "DIA_Addon_Dexter_missingPeople_RavenTot_15_00"); //Magnat? W Khorinis?
-	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_RavenTot_09_01"); //Ju¿ nie jest Magnatem. Ma swoje tajne plany, o których Khorinis wkrótce siê dowie...
+	AI_Output			(self, other, "DIA_Addon_Dexter_missingPeople_RavenTot_09_01"); //JuÅ¼ nie jest Magnatem. Ma swoje tajne plany, o ktÃ³rych Khorinis wkrÃ³tce siÄ™ dowie...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -247,7 +247,7 @@ instance DIA_Addon_Dexter_Boss		(C_INFO)
 	condition	 = 	DIA_Addon_Dexter_Boss_Condition;
 	information	 = 	DIA_Addon_Dexter_Boss_Info;
 
-	description	 = 	"Twój szef? A kim¿e on jest?";
+	description	 = 	"TwÃ³j szef? A kimÅ¼e on jest?";
 };
 
 func int DIA_Addon_Dexter_Boss_Condition ()
@@ -261,9 +261,9 @@ func int DIA_Addon_Dexter_Boss_Condition ()
 
 func void DIA_Addon_Dexter_Boss_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Dexter_Boss_15_00"); //Twój szef? A kim¿e on jest?
-	AI_Output	(self, other, "DIA_Addon_Dexter_Boss_09_01"); //Liczysz pewnie, ¿e ci tak od razu powiem, co? Pewnie tak.
-	AI_Output	(self, other, "DIA_Addon_Dexter_Boss_09_02"); //Nie mam ¿adnego powodu, aby udzieliæ ci odpowiedzi.
+	AI_Output	(other, self, "DIA_Addon_Dexter_Boss_15_00"); //TwÃ³j szef? A kimÅ¼e on jest?
+	AI_Output	(self, other, "DIA_Addon_Dexter_Boss_09_01"); //Liczysz pewnie, Å¼e ci tak od razu powiem, co? Pewnie tak.
+	AI_Output	(self, other, "DIA_Addon_Dexter_Boss_09_02"); //Nie mam Å¼adnego powodu, aby udzieliÄ‡ ci odpowiedzi.
 };
 
 // ************************************************************
@@ -276,7 +276,7 @@ INSTANCE DIA_Dexter_Vor   (C_INFO)
 	condition   = DIA_Dexter_Vor_Condition;
 	information = DIA_Dexter_Vor_Info;
 	permanent   = FALSE;
-	description = "Co zamierzasz zrobiæ?";
+	description = "Co zamierzasz zrobiÄ‡?";
 };
 FUNC INT DIA_Dexter_Vor_Condition()
 {	
@@ -287,12 +287,12 @@ FUNC INT DIA_Dexter_Vor_Condition()
 };
 FUNC VOID DIA_Dexter_Vor_Info()
 {
-	AI_Output (other, self, "DIA_Dexter_Vor_15_00");//I co zamierzasz zrobiæ? Zabiæ mnie?
-	AI_Output (self, other, "DIA_Dexter_Vor_09_01");//Tak. Ale ty nas uwolni³eœ. Dlatego postanowi³em daæ ci jeszcze jedn¹ szansê. Wynoœ siê st¹d - zniknij, ulotnij siê, zapadnij pod ziemiê. IdŸ i nigdy wiêcej nie pokazuj mi siê na oczy.
-	AI_Output (other, self, "DIA_Addon_Dexter_Vor_15_00");//Muszê siê dowiedzieæ, gdzie zabrano tych ludzi.
-	AI_Output (self, other, "DIA_Addon_Dexter_Vor_09_01");//Jasne. Mo¿e spróbujesz mnie zmusiæ?
-	AI_Output (self, other, "DIA_Addon_Dexter_Vor_09_02");//Lepiej ju¿ sobie idŸ!
-	AI_Output (self, other, "DIA_Dexter_Vor_09_02");//Jeœli jeszcze raz ciê tutaj zobaczê, zabijê bez wahania.
+	AI_Output (other, self, "DIA_Dexter_Vor_15_00");//I co zamierzasz zrobiÄ‡? ZabiÄ‡ mnie?
+	AI_Output (self, other, "DIA_Dexter_Vor_09_01");//Tak. Ale ty nas uwolniÅ‚eÅ›. Dlatego postanowiÅ‚em daÄ‡ ci jeszcze jednÄ… szansÄ™. WynoÅ› siÄ™ stÄ…d - zniknij, ulotnij siÄ™, zapadnij pod ziemiÄ™. IdÅº i nigdy wiÄ™cej nie pokazuj mi siÄ™ na oczy.
+	AI_Output (other, self, "DIA_Addon_Dexter_Vor_15_00");//MuszÄ™ siÄ™ dowiedzieÄ‡, gdzie zabrano tych ludzi.
+	AI_Output (self, other, "DIA_Addon_Dexter_Vor_09_01");//Jasne. MoÅ¼e sprÃ³bujesz mnie zmusiÄ‡?
+	AI_Output (self, other, "DIA_Addon_Dexter_Vor_09_02");//Lepiej juÅ¼ sobie idÅº!
+	AI_Output (self, other, "DIA_Dexter_Vor_09_02");//JeÅ›li jeszcze raz ciÄ™ tutaj zobaczÄ™, zabijÄ™ bez wahania.
 	Dexter_NoMoreSmallTalk = TRUE;
 	AI_StopProcessInfos (self);
 };
@@ -325,7 +325,7 @@ FUNC VOID DIA_Dexter_Kill_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dexter_Kill_09_01");//By³oby lepiej, gdybyœ siê tutaj nie pokazywa³. Po prostu znalaz³eœ siê w niew³aœciwym miejscu w niew³aœciwym czasie.
+		AI_Output (self, other, "DIA_Dexter_Kill_09_01");//ByÅ‚oby lepiej, gdybyÅ› siÄ™ tutaj nie pokazywaÅ‚. Po prostu znalazÅ‚eÅ› siÄ™ w niewÅ‚aÅ›ciwym miejscu w niewÅ‚aÅ›ciwym czasie.
 	};
 	
 	MIS_Steckbriefe = LOG_OBSOLETE;
@@ -358,7 +358,7 @@ INSTANCE DIA_Dexter_Kopf (C_INFO)
 	condition   = DIA_Dexter_Kopf_Condition;
 	information = DIA_Dexter_Kopf_Info;
 	permanent   = FALSE;
-	description = "Chcesz mojej g³owy? To spróbuj j¹ zdobyæ!";
+	description = "Chcesz mojej gÅ‚owy? To sprÃ³buj jÄ… zdobyÄ‡!";
 };
 FUNC INT DIA_Dexter_Kopf_Condition()
 {	
@@ -369,8 +369,8 @@ FUNC INT DIA_Dexter_Kopf_Condition()
 };
 FUNC VOID DIA_Dexter_Kopf_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Dexter_Add_15_00"); //Chcesz mojej g³owy? To spróbuj j¹ zdobyæ!
-	AI_Output (self, other, "DIA_Addon_Dexter_Add_09_01"); //Jak sobie ¿yczysz!
+	AI_Output (other, self, "DIA_Addon_Dexter_Add_15_00"); //Chcesz mojej gÅ‚owy? To sprÃ³buj jÄ… zdobyÄ‡!
+	AI_Output (self, other, "DIA_Addon_Dexter_Add_09_01"); //Jak sobie Å¼yczysz!
 
 	DIA_Dexter_Kill_ENDE();
 };
@@ -451,7 +451,7 @@ FUNC VOID DIA_Dexter_Wo_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Dexter_Wo_09_02");//Der Typ ist hier! Und nicht alleine. Da ist ein ganzer Haufen dieser Kerle überall unterwegs! Und die suchen dich.
+		AI_Output (self, other, "DIA_Dexter_Wo_09_02");//Der Typ ist hier! Und nicht alleine. Da ist ein ganzer Haufen dieser Kerle Ã¼berall unterwegs! Und die suchen dich.
 	};
 };
 */

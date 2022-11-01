@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_6_JOIN(C_INFO)
 	condition	= DIA_VLK_6_JOIN_Condition;
 	information	= DIA_VLK_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "W jaki sposób mogê zostaæ obywatelem tego miasta?";
+	description = "W jaki sposÃ³b mogÄ™ zostaÄ‡ obywatelem tego miasta?";
 };                       
 
 FUNC INT DIA_VLK_6_JOIN_Condition()
@@ -43,10 +43,10 @@ FUNC INT DIA_VLK_6_JOIN_Condition()
 
 FUNC VOID DIA_VLK_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_JOIN_15_00"); //W jaki sposób mogê zostaæ obywatelem tego miasta?
-	AI_Output (self, other, "DIA_VLK_6_JOIN_06_01"); //Chcesz siê tu osiedliæ? Teraz, kiedy wszystkie znaki na niebie i ziemi zdaj¹ siê zwiastowaæ koniec œwiata?
-	AI_Output (other, self, "DIA_VLK_6_JOIN_15_02"); //Nie chcia³em zostaæ tu na sta³e.
-	AI_Output (self, other, "DIA_VLK_6_JOIN_06_03"); //Jeœli chcesz znaæ moje zdanie, powinieneœ zwiewaæ st¹d, póki mo¿esz. Jednak, jeœli musisz zostaæ, porozmawiaj z którymœ z wp³ywowych obywateli.
+	AI_Output (other, self, "DIA_VLK_6_JOIN_15_00"); //W jaki sposÃ³b mogÄ™ zostaÄ‡ obywatelem tego miasta?
+	AI_Output (self, other, "DIA_VLK_6_JOIN_06_01"); //Chcesz siÄ™ tu osiedliÄ‡? Teraz, kiedy wszystkie znaki na niebie i ziemi zdajÄ… siÄ™ zwiastowaÄ‡ koniec Å›wiata?
+	AI_Output (other, self, "DIA_VLK_6_JOIN_15_02"); //Nie chciaÅ‚em zostaÄ‡ tu na staÅ‚e.
+	AI_Output (self, other, "DIA_VLK_6_JOIN_06_03"); //JeÅ›li chcesz znaÄ‡ moje zdanie, powinieneÅ› zwiewaÄ‡ stÄ…d, pÃ³ki moÅ¼esz. Jednak, jeÅ›li musisz zostaÄ‡, porozmawiaj z ktÃ³rymÅ› z wpÅ‚ywowych obywateli.
 };
 
 // *************************************************************************
@@ -58,7 +58,7 @@ INSTANCE DIA_VLK_6_PEOPLE(C_INFO)
 	condition	= DIA_VLK_6_PEOPLE_Condition;
 	information	= DIA_VLK_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Znasz jakichœ wp³ywowych ludzi w Khorinis?";
+	description = "Znasz jakichÅ› wpÅ‚ywowych ludzi w Khorinis?";
 };                       
 
 FUNC INT DIA_VLK_6_PEOPLE_Condition()
@@ -68,9 +68,9 @@ FUNC INT DIA_VLK_6_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_PEOPLE_15_00"); //Znasz jakichœ wp³ywowych ludzi w Khorinis?
-	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_01"); //Spróbuj u kowala lub cieœli, w dolnej czêœci miasta. Znajdziesz tam tak¿e kilku szanowanych mistrzów.
-	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_02"); //Jeœli w tym mieœcie ktokolwiek oprócz stra¿y i paladynów ma coœ do powiedzenia, to w³aœnie oni.
+	AI_Output (other, self, "DIA_VLK_6_PEOPLE_15_00"); //Znasz jakichÅ› wpÅ‚ywowych ludzi w Khorinis?
+	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_01"); //SprÃ³buj u kowala lub cieÅ›li, w dolnej czÄ™Å›ci miasta. Znajdziesz tam takÅ¼e kilku szanowanych mistrzÃ³w.
+	AI_Output (self, other, "DIA_VLK_6_PEOPLE_06_02"); //JeÅ›li w tym mieÅ›cie ktokolwiek oprÃ³cz straÅ¼y i paladynÃ³w ma coÅ› do powiedzenia, to wÅ‚aÅ›nie oni.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_6_LOCATION(C_INFO)
 	condition	= DIA_VLK_6_LOCATION_Condition;
 	information	= DIA_VLK_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Jak mam siê poruszaæ po mieœcie, by nie straciæ orientacji?";
+	description = "Jak mam siÄ™ poruszaÄ‡ po mieÅ›cie, by nie straciÄ‡ orientacji?";
 };                       
 
 FUNC INT DIA_VLK_6_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_6_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_LOCATION_15_00"); //Jak mam siê poruszaæ po mieœcie, by nie straciæ orientacji?
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_01"); //Nietrudno siê tu zgubiæ, co? Nawet drogowskazy niewiele pomagaj¹.
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_02"); //Jeœli masz kiepsk¹ orientacjê, udaj siê do dzielnicy portowej. Kiedy ju¿ tam trafisz, idŸ do domu kartografa.
-	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_03"); //Jego dom znajduje siê przy pomoœcie, niedaleko knajpy. Jestem pewien, ¿e Brahim znajdzie dla ciebie jak¹œ mapê.
+	AI_Output (other, self, "DIA_VLK_6_LOCATION_15_00"); //Jak mam siÄ™ poruszaÄ‡ po mieÅ›cie, by nie straciÄ‡ orientacji?
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_01"); //Nietrudno siÄ™ tu zgubiÄ‡, co? Nawet drogowskazy niewiele pomagajÄ….
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_02"); //JeÅ›li masz kiepskÄ… orientacjÄ™, udaj siÄ™ do dzielnicy portowej. Kiedy juÅ¼ tam trafisz, idÅº do domu kartografa.
+	AI_Output (self, other, "DIA_VLK_6_LOCATION_06_03"); //Jego dom znajduje siÄ™ przy pomoÅ›cie, niedaleko knajpy. Jestem pewien, Å¼e Brahim znajdzie dla ciebie jakÄ…Å› mapÄ™.
 };
 
 // *************************************************************************
@@ -115,38 +115,38 @@ func INT DIA_VLK_6_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_6_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_VLK_6_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_01"); //Od kiedy upad³a Bariera, w mieœcie roi siê od bandytów. Paladyni w ogóle siê tym nie przejmuj¹. Po cholerê wiêc siedz¹ w mieœcie?
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_01"); //Od kiedy upadÅ‚a Bariera, w mieÅ›cie roi siÄ™ od bandytÃ³w. Paladyni w ogÃ³le siÄ™ tym nie przejmujÄ…. Po cholerÄ™ wiÄ™c siedzÄ… w mieÅ›cie?
 	};
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_02"); //Ostatnio bandyci nie daj¹ siê a¿ tak bardzo we znaki. Wygl¹da na to, ¿e ktoœ w koñcu siê nimi zaj¹³.
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_02"); //Ostatnio bandyci nie dajÄ… siÄ™ aÅ¼ tak bardzo we znaki. WyglÄ…da na to, Å¼e ktoÅ› w koÅ„cu siÄ™ nimi zajÄ…Å‚.
 	};
 	
 	if (Kapitel == 3)
 	{
 		if MIS_RescueBennet == LOG_SUCCESS
 		{
-			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_03"); //Tego œmierdz¹cego najemnika, mordercê paladyna, wypuszczono na wolnoœæ. Myœlê, ¿e nale¿a³ mu siê stryczek.
+			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_03"); //Tego Å›mierdzÄ…cego najemnika, mordercÄ™ paladyna, wypuszczono na wolnoÅ›Ä‡. MyÅ›lÄ™, Å¼e naleÅ¼aÅ‚ mu siÄ™ stryczek.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_04"); //Podobno jeden z ludzi Onara zamordowa³ paladyna. Z³apali go ponoæ i wtr¹cili do paki. Nied³ugo bêdzie wisia³.
+			AI_Output (self,other,"DIA_VLK_6_STANDARD_06_04"); //Podobno jeden z ludzi Onara zamordowaÅ‚ paladyna. ZÅ‚apali go ponoÄ‡ i wtrÄ…cili do paki. NiedÅ‚ugo bÄ™dzie wisiaÅ‚.
 		};
 	};
 	
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_05"); //Zastanawiam siê, czy w opowieœciach o smokach jest choæ trochê prawdy...
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_05"); //Zastanawiam siÄ™, czy w opowieÅ›ciach o smokach jest choÄ‡ trochÄ™ prawdy...
 	};
 
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_06"); //Powiadaj¹, ¿e Lord Hagen zbiera wojska, by wyzwoliæ Górnicz¹ Dolinê. Nareszcie coœ siê dzieje!
+		AI_Output (self,other,"DIA_VLK_6_STANDARD_06_06"); //PowiadajÄ…, Å¼e Lord Hagen zbiera wojska, by wyzwoliÄ‡ GÃ³rniczÄ… DolinÄ™. Nareszcie coÅ› siÄ™ dzieje!
 	};
 };
 

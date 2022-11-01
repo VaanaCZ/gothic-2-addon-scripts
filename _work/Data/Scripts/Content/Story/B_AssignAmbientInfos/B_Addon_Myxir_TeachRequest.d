@@ -3,37 +3,37 @@
 ///////////////////////////////////////////////////////////////////////
 func void B_DIA_Addon_Myxir_TeachRequest ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_TeachRequest_15_00"); //Naucz mnie tego dziwnego jêzyka.
+	AI_Output	(other, self, "DIA_Addon_Myxir_TeachRequest_15_00"); //Naucz mnie tego dziwnego jÄ™zyka.
 }; 
 
 func void B_DIA_Addon_Myxir_TeachL1 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_00"); //Zacznijmy od czegoœ prostego. Nauczê ciê jêzyka wieœniaków.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_01"); //Teksty pisane w jêzyku wieœniaków traktuj¹ zwykle o sprawach przyziemnych: pracy, mi³oœci, zaopatrzeniu czy ¿ywnoœci.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_02"); //Jêzyk ten by³ powszechnie wykorzystywany w mieœcie. Tak wiêc bêdziesz w stanie zrozumieæ wiêkszoœæ tekstów, które tam znajdziesz.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_00"); //Zacznijmy od czegoÅ› prostego. NauczÄ™ ciÄ™ jÄ™zyka wieÅ›niakÃ³w.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_01"); //Teksty pisane w jÄ™zyku wieÅ›niakÃ³w traktujÄ… zwykle o sprawach przyziemnych: pracy, miÅ‚oÅ›ci, zaopatrzeniu czy Å¼ywnoÅ›ci.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL1_12_02"); //JÄ™zyk ten byÅ‚ powszechnie wykorzystywany w mieÅ›cie. Tak wiÄ™c bÄ™dziesz w stanie zrozumieÄ‡ wiÄ™kszoÅ›Ä‡ tekstÃ³w, ktÃ³re tam znajdziesz.
 };
 
 func void B_DIA_Addon_Myxir_TeachL2 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_00"); //Znasz ju¿ jêzyk wieœniaków. Jêzyk wojowników jest nieco trudniejszy.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_01"); //Teksty pisane w jêzyku wojowników dotycz¹ zwykle wojny i broni. Nauczysz siê wielu przydatnych rzeczy.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_00"); //Znasz juÅ¼ jÄ™zyk wieÅ›niakÃ³w. JÄ™zyk wojownikÃ³w jest nieco trudniejszy.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL2_12_01"); //Teksty pisane w jÄ™zyku wojownikÃ³w dotyczÄ… zwykle wojny i broni. Nauczysz siÄ™ wielu przydatnych rzeczy.
 };
 
 func void B_DIA_Addon_Myxir_TeachL3 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_00"); //Jêzyk kap³anów jest bardzo trudny do zrozumienia, ale chêtnie przeka¿ê ci jego zasady.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_01"); //W jêzyku kap³anów spisane s¹ wszystkie œwiête pisma objaœniaj¹ce historiê i magiê budowniczych.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_02"); //Ka¿dy z tych tekstów to prawdziwy skarb, o ile ktoœ zrozumie ich znaczenie.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_00"); //JÄ™zyk kapÅ‚anÃ³w jest bardzo trudny do zrozumienia, ale chÄ™tnie przekaÅ¼Ä™ ci jego zasady.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_01"); //W jÄ™zyku kapÅ‚anÃ³w spisane sÄ… wszystkie Å›wiÄ™te pisma objaÅ›niajÄ…ce historiÄ™ i magiÄ™ budowniczych.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TeachL3_12_02"); //KaÅ¼dy z tych tekstÃ³w to prawdziwy skarb, o ile ktoÅ› zrozumie ich znaczenie.
 };
 
 func void B_DIA_Addon_Myxir_TeachNoMore ()
 {
-	AI_Output 	(self, other,"DIA_Addon_Myxir_TeachNoMore_12_00"); //Nie mogê ci na razie pokazaæ niczego wiêcej. Opanowa³eœ jêzyk budowniczych.
+	AI_Output 	(self, other,"DIA_Addon_Myxir_TeachNoMore_12_00"); //Nie mogÄ™ ci na razie pokazaÄ‡ niczego wiÄ™cej. OpanowaÅ‚eÅ› jÄ™zyk budowniczych.
 };
 
 func void B_DIA_Addon_Myxir_Teach_LANGUAGE_X ()
 {
-	AI_Output	(self, other, "DIA_Addon_Myxir_Teach_LANGUAGE_X_12_00"); //IdŸ i sprawdŸ swoj¹ now¹ wiedzê. Przekonasz siê, ¿e pisma budowniczych nie stanowi¹ ju¿ dla ciebie zagadki.
+	AI_Output	(self, other, "DIA_Addon_Myxir_Teach_LANGUAGE_X_12_00"); //IdÅº i sprawdÅº swojÄ… nowÄ… wiedzÄ™. Przekonasz siÄ™, Å¼e pisma budowniczych nie stanowiÄ… juÅ¼ dla ciebie zagadki.
 };
 
 

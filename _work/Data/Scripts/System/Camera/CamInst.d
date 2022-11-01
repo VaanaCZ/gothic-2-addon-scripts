@@ -270,7 +270,7 @@ INSTANCE CamModMOBDefault(CCamSys_Def)
 	rotOffsetY			= 5.0;  
 };
 
-// Tür aufziehen (FRONT)
+// TÃ¼r aufziehen (FRONT)
 INSTANCE CAMMODMOBDOOR_FRONT (CCAMSYS_DEF)
 {
      bestrange = 1.250000000;
@@ -286,7 +286,7 @@ INSTANCE CAMMODMOBDOOR_FRONT (CCAMSYS_DEF)
      rotoffsety = -40.000000000;
 };
 
-// Tür aufstossen (BACK)
+// TÃ¼r aufstossen (BACK)
 INSTANCE CAMMODMOBDOOR_BACK (CCAMSYS_DEF)
 {
      bestrange = 1.250000000;
@@ -478,7 +478,7 @@ INSTANCE CAMMODMOBBENCH (CCAMSYS_DEF)
      rotoffsetx = 0.000000000;
 };
 
-// im Faß verstecken
+// im FaÃŸ verstecken
 INSTANCE CAMMODMOBBARRELO (CCAMSYS_DEF)
 {
      bestrange = 1.5000000;
@@ -497,7 +497,7 @@ INSTANCE CAMMODMOBBARRELO (CCAMSYS_DEF)
 // internal Cameras. Change at own risk
 
 // Firstperson Camera
-// bis auf die Trägheitsconstanten indolenceTrans & indolenceHead sind die Vars irrelevant
+// bis auf die TrÃ¤gheitsconstanten indolenceTrans & indolenceHead sind die Vars irrelevant
 // vielleicht sind auch noch andere Parameter sinnvoll
 
 INSTANCE CamModFirstPerson(CCamSys_Def)

@@ -23,7 +23,7 @@ func int ZS_MM_Rtn_Wusel_loop()
 		return LOOP_END;
 	};
 	
-	// ------ zum nächsten FP ------	
+	// ------ zum nÃ¤chsten FP ------	
 	if (Npc_GetStateTime (self) >= 1)
 	{
 		if (Npc_IsOnFP (self, "FP_ROAM"))
@@ -45,7 +45,7 @@ func int ZS_MM_Rtn_Wusel_loop()
 	
 		Npc_SetStateTime (self, 0);
 		
-		self.aivar[AIV_TAPOSITION] = NOTINPOS; //Walkmode ändern wieder möglich
+		self.aivar[AIV_TAPOSITION] = NOTINPOS; //Walkmode Ã¤ndern wieder mÃ¶glich
 	};	
 	
 	return LOOP_CONTINUE;

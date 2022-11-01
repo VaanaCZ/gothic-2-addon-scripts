@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_MinecrawlerWarrior(C_Npc)			
 {
 	//----- Monster -----
-	name							=	"Pe≥zacz-wojownik";
+	name							=	"Pe≈Çzacz-wojownik";
 	guild							=	GIL_MINECRAWLER;
 	aivar[AIV_MM_REAL_ID]			= 	ID_MINECRAWLERWARRIOR;
 	level							=	18;

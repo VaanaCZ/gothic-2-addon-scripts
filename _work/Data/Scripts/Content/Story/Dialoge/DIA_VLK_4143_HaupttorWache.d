@@ -43,8 +43,8 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Jakie jest twoje zadanie?
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Moje zadanie jest proste. Mam siê upewniæ, ¿e orkowie trzymaj¹ siê ponad 10 metrów od bramy.
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Jeœli bêd¹ próbowali wedrzeæ siê przez bramê, podniosê alarm. I to wszystko.
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Moje zadanie jest proste. Mam siÄ™ upewniÄ‡, Å¼e orkowie trzymajÄ… siÄ™ ponad 10 metrÃ³w od bramy.
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //JeÅ›li bÄ™dÄ… prÃ³bowali wedrzeÄ‡ siÄ™ przez bramÄ™, podniosÄ™ alarm. I to wszystko.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -58,7 +58,7 @@ instance DIA_Haupttorwache_TOROEFFNEN		(C_INFO)
 	information	 = 	DIA_Haupttorwache_TOROEFFNEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Co trzeba zrobiæ, aby otworzyæ g³ówn¹ bramê?";
+	description	 = 	"Co trzeba zrobiÄ‡, aby otworzyÄ‡ gÅ‚Ã³wnÄ… bramÄ™?";
 };
 
 func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
@@ -70,31 +70,31 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 };
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Co trzeba zrobiæ, aby otworzyæ g³ówn¹ bramê?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Na niebiosa, czemu ktokolwiek mia³by chcieæ j¹ otworzyæ?
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Co trzeba zrobiÄ‡, aby otworzyÄ‡ gÅ‚Ã³wnÄ… bramÄ™?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Na niebiosa, czemu ktokolwiek miaÅ‚by chcieÄ‡ jÄ… otworzyÄ‡?
 
 	self.flags = 0;//Joly:zur sicherheit
 
 	Info_ClearChoices	(DIA_Haupttorwache_TOROEFFNEN);
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Martwiê siê o bezpieczeñstwo zamku.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Niewa¿ne. Tak tylko pytam.", DIA_Haupttorwache_TOROEFFNEN_frage );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "MartwiÄ™ siÄ™ o bezpieczeÅ„stwo zamku.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "NiewaÅ¼ne. Tak tylko pytam.", DIA_Haupttorwache_TOROEFFNEN_frage );
 	
 };
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Martwiê siê o bezpieczeñstwo zamku.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Wierz mi, ja równie¿. Przez ca³y czas.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //A poniewa¿ jestem takim wiernym stra¿nikiem, Garond powierzy³ mi klucz do ko³owrotu.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //To wielka odpowiedzialnoœæ. Bêdê go dobrze strzeg³, tak jak przysiêga³em Garondowi.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Tak. WyobraŸ sobie, ¿e ktoœ wchodzi i poci¹ga za dŸwigniê, aby otworzyæ bramê, a to stare zardzewia³e ¿elastwo siê blokuje.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nikt jej wtedy nie zdo³a zamkn¹æ. Wolê nawet nie myœleæ, co nast¹pi³oby potem. Na szczêœcie nikt nie wie, ¿e to ja mam klucz.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //MartwiÄ™ siÄ™ o bezpieczeÅ„stwo zamku.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Wierz mi, ja rÃ³wnieÅ¼. Przez caÅ‚y czas.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //A poniewaÅ¼ jestem takim wiernym straÅ¼nikiem, Garond powierzyÅ‚ mi klucz do koÅ‚owrotu.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //To wielka odpowiedzialnoÅ›Ä‡. BÄ™dÄ™ go dobrze strzegÅ‚, tak jak przysiÄ™gaÅ‚em Garondowi.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Tak. WyobraÅº sobie, Å¼e ktoÅ› wchodzi i pociÄ…ga za dÅºwigniÄ™, aby otworzyÄ‡ bramÄ™, a to stare zardzewiaÅ‚e Å¼elastwo siÄ™ blokuje.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nikt jej wtedy nie zdoÅ‚a zamknÄ…Ä‡. WolÄ™ nawet nie myÅ›leÄ‡, co nastÄ…piÅ‚oby potem. Na szczÄ™Å›cie nikt nie wie, Å¼e to ja mam klucz.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Niewa¿ne. Tak tylko pytam.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Nawet tak nie mów, bo jeszcze wykraczesz. I tak jest ju¿ wystarczaj¹co ciê¿ko. A teraz odejdŸ, jestem zajêty.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //NiewaÅ¼ne. Tak tylko pytam.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Nawet tak nie mÃ³w, bo jeszcze wykraczesz. I tak jest juÅ¼ wystarczajÄ…co ciÄ™Å¼ko. A teraz odejdÅº, jestem zajÄ™ty.
 	AI_StopProcessInfos (self);
 };
 
@@ -109,7 +109,7 @@ INSTANCE DIA_Haupttorwache_PICKPOCKET (C_INFO)
 	condition	= DIA_Haupttorwache_PICKPOCKET_Condition;
 	information	= DIA_Haupttorwache_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Kradzie¿ tego klucza bêdzie dziecinnie ³atwa)";
+	description = "(KradzieÅ¼ tego klucza bÄ™dzie dziecinnie Å‚atwa)";
 };                       
 
 FUNC INT DIA_Haupttorwache_PICKPOCKET_Condition()

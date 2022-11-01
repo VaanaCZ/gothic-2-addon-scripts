@@ -3,7 +3,7 @@
 // -------------------------------------------------------------------------
 func void B_Dragon_Undead_Bla()
 {
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_00"); //I jak, koleœ? Masz te¿ orygina³?
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_00"); //I jak, koleÅ›? Masz teÅ¼ oryginaÅ‚?
 };
 
 // *************************************************************************
@@ -59,70 +59,70 @@ FUNC INT DIA_Dragon_Undead_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Undead_Hello_Info()
 {	
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_00"); //A wiêc uda³o ci siê mnie odnaleŸæ. Bardzo d³ugo czeka³em na twoje przybycie.
-	AI_Output (other, self, "DIA_Dragon_Undead_Hello_15_01"); //Nie rozœmieszaj mnie. Zaraz mi powiesz, ¿e wszystko przebiega zgodnie z twoim planem.
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_02"); //Có¿ ty mo¿esz wiedzieæ o moich zamiarach?
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_03"); //Czy¿ nie wys³a³em Poszukiwaczy, by naprowadzili ciê na mój œlad?
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_04"); //Czy nie pozostawi³em œladów mojego istnienia, tak wyraŸnych, ¿e trudno je by³o przeoczyæ?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_00"); //A wiÄ™c udaÅ‚o ci siÄ™ mnie odnaleÅºÄ‡. Bardzo dÅ‚ugo czekaÅ‚em na twoje przybycie.
+	AI_Output (other, self, "DIA_Dragon_Undead_Hello_15_01"); //Nie rozÅ›mieszaj mnie. Zaraz mi powiesz, Å¼e wszystko przebiega zgodnie z twoim planem.
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_02"); //CÃ³Å¼ ty moÅ¼esz wiedzieÄ‡ o moich zamiarach?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_03"); //CzyÅ¼ nie wysÅ‚aÅ‚em Poszukiwaczy, by naprowadzili ciÄ™ na mÃ³j Å›lad?
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_04"); //Czy nie pozostawiÅ‚em Å›ladÃ³w mojego istnienia, tak wyraÅºnych, Å¼e trudno je byÅ‚o przeoczyÄ‡?
 
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_05"); //Czy nie dosta³eœ siê tutaj dziêki zbroi wykonanej ze smoczych jaj?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_05"); //Czy nie dostaÅ‚eÅ› siÄ™ tutaj dziÄ™ki zbroi wykonanej ze smoczych jaj?
 	};
 
 	if (hero.guild == GIL_PAL)
 	{	
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_06"); //Czy nawróceni paladyni nie byli wystarczaj¹cym powodem, byœ poszuka³ sprawcy ca³ego tego zamieszania?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_06"); //Czy nawrÃ³ceni paladyni nie byli wystarczajÄ…cym powodem, byÅ› poszukaÅ‚ sprawcy caÅ‚ego tego zamieszania?
 	};
 
 	if (hero.guild == GIL_KDF)
 	{	
-		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_07"); //Czy spotkanie z opêtanymi nieszczêœnikami nie by³o wystarczaj¹cym powodem, byœ poszuka³ sprawcy ca³ego tego zamieszania?
+		AI_Output			(self, other, "DIA_Dragon_Undead_Hello_20_07"); //Czy spotkanie z opÄ™tanymi nieszczÄ™Å›nikami nie byÅ‚o wystarczajÄ…cym powodem, byÅ› poszukaÅ‚ sprawcy caÅ‚ego tego zamieszania?
 	};
 
-	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_08"); //Choæbyœ nie wiem jak próbowa³, nie mo¿esz temu zaprzeczyæ.
+	AI_Output (self, other, "DIA_Dragon_Undead_Hello_20_08"); //ChoÄ‡byÅ› nie wiem jak prÃ³bowaÅ‚, nie moÅ¼esz temu zaprzeczyÄ‡.
 	
 	//ADDON
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_01"); //Przeznaczenie tylko jednej sztuki nie zosta³o z góry okreœlone! 
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_02"); //Zabi³eœ jednego z moich s³ug. To on mia³ pos³ugiwaæ siê Szponem...
-	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_03"); //S¹dzê, ¿e ty go teraz masz. I za to zginiesz!
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_01"); //Przeznaczenie tylko jednej sztuki nie zostaÅ‚o z gÃ³ry okreÅ›lone! 
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_02"); //ZabiÅ‚eÅ› jednego z moich sÅ‚ug. To on miaÅ‚ posÅ‚ugiwaÄ‡ siÄ™ Szponem...
+	AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_03"); //SÄ…dzÄ™, Å¼e ty go teraz masz. I za to zginiesz!
 	
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Doœæ tego.", DIA_Dragon_Undead_Hello_attack );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Kto wys³a³ ciê na tê wojnê przeciw rodzajowi ludzkiemu?", DIA_Dragon_Undead_Hello_Auftraggeber );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Dlaczego tu przyby³eœ?", DIA_Dragon_Undead_Hello_warum );
-	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Kim jesteœ?", DIA_Dragon_Undead_Hello_wer );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "DoÅ›Ä‡ tego.", DIA_Dragon_Undead_Hello_attack );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Kto wysÅ‚aÅ‚ ciÄ™ na tÄ™ wojnÄ™ przeciw rodzajowi ludzkiemu?", DIA_Dragon_Undead_Hello_Auftraggeber );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Dlaczego tu przybyÅ‚eÅ›?", DIA_Dragon_Undead_Hello_warum );
+	Info_AddChoice	(DIA_Dragon_Undead_Hello, "Kim jesteÅ›?", DIA_Dragon_Undead_Hello_wer );
 
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Przeciwnikiem jest smok-o¿ywieniec. Muszê go zabiæ, zanim bêdê móg³ opuœciæ tê przeklêt¹ wyspê."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Przeciwnikiem jest smok-oÅ¼ywieniec. MuszÄ™ go zabiÄ‡, zanim bÄ™dÄ™ mÃ³gÅ‚ opuÅ›ciÄ‡ tÄ™ przeklÄ™tÄ… wyspÄ™."); 
 };
 func void DIA_Dragon_Undead_Hello_wer ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_00"); //Kim jesteœ?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_01"); //Nadal musisz o to pytaæ? Zastanów siê, g³upcze. Przecie¿ wiesz, kim jestem.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_00"); //Kim jesteÅ›?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_01"); //Nadal musisz o to pytaÄ‡? ZastanÃ³w siÄ™, gÅ‚upcze. PrzecieÅ¼ wiesz, kim jestem.
 	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_02"); //Nie mam imienia. Tak jak ty nie masz imienia.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_03"); //Mój stwórca obdarzy³ mnie bosk¹ moc¹, tak jak twój bóg obdarzy³ moc¹ ciebie.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_03"); //MÃ³j stwÃ³rca obdarzyÅ‚ mnie boskÄ… mocÄ…, tak jak twÃ³j bÃ³g obdarzyÅ‚ mocÄ… ciebie.
 
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_04"); //Moim przeznaczeniem jest zniszczyæ œwiat.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_04"); //Moim przeznaczeniem jest zniszczyÄ‡ Å›wiat.
 	
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_05"); //Tak, jak twoje przeznaczenie wyznacza moralny kod paladynów.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_05"); //Tak, jak twoje przeznaczenie wyznacza moralny kod paladynÃ³w.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_06"); //Tak, jak ty sam niesiesz œmieræ, ³owco smoków.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_06"); //Tak, jak ty sam niesiesz Å›mierÄ‡, Å‚owco smokÃ³w.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_07"); //Tak, jak twoim celem jest g³oszenie wiary Innosa, Magu Ognia.
+			AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_07"); //Tak, jak twoim celem jest gÅ‚oszenie wiary Innosa, Magu Ognia.
 		};
 
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_08"); //Czy nie czujesz wiêzi, która nas ³¹czy? Tak! Ju¿ wiesz, kim jestem.
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_09"); //Nie... To niemo¿liwe! Xardas zawsze mówi³...
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_10"); //Xardas jest s³aby. Nie stanowi dla mnie ¿adnego zagro¿enia. Tylko ty jesteœ godzien stawiæ mi czo³a.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_11"); //Tak zosta³o zapisane. Pora, byœ pogodzi³ siê ze swoim przeznaczeniem.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_08"); //Czy nie czujesz wiÄ™zi, ktÃ³ra nas Å‚Ä…czy? Tak! JuÅ¼ wiesz, kim jestem.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_wer_15_09"); //Nie... To niemoÅ¼liwe! Xardas zawsze mÃ³wiÅ‚...
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_10"); //Xardas jest sÅ‚aby. Nie stanowi dla mnie Å¼adnego zagroÅ¼enia. Tylko ty jesteÅ› godzien stawiÄ‡ mi czoÅ‚a.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_wer_20_11"); //Tak zostaÅ‚o zapisane. Pora, byÅ› pogodziÅ‚ siÄ™ ze swoim przeznaczeniem.
 	
 	
 
@@ -130,32 +130,32 @@ func void DIA_Dragon_Undead_Hello_wer ()
 
 func void DIA_Dragon_Undead_Hello_warum ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_warum_15_00"); //Dlaczego tu przyby³eœ?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_01"); //Powierzono mi m¹ moc, bym dziêki niej sk¹pa³ ten œwiat w morzu krwi.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_02"); //Nie spocznê, póki ostatnia forteca praworz¹dnoœci nie obróci siê w py³.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_warum_15_00"); //Dlaczego tu przybyÅ‚eÅ›?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_01"); //Powierzono mi mÄ… moc, bym dziÄ™ki niej skÄ…paÅ‚ ten Å›wiat w morzu krwi.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_warum_20_02"); //Nie spocznÄ™, pÃ³ki ostatnia forteca praworzÄ…dnoÅ›ci nie obrÃ³ci siÄ™ w pyÅ‚.
 
 };
 
 func void DIA_Dragon_Undead_Hello_Auftraggeber ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_Auftraggeber_15_00"); //Kto wys³a³ ciê na tê wojnê przeciw rodzajowi ludzkiemu?
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_01"); //Moim w³adc¹ jest Pan Ciemnoœci. Znasz go. S³yszysz jego zew.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_03"); //Moje armie powstan¹ wkrótce z jego imieniem na ustach, a œwiat spowije wieczny mrok.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_Auftraggeber_15_00"); //Kto wysÅ‚aÅ‚ ciÄ™ na tÄ™ wojnÄ™ przeciw rodzajowi ludzkiemu?
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_01"); //Moim wÅ‚adcÄ… jest Pan CiemnoÅ›ci. Znasz go. SÅ‚yszysz jego zew.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_Auftraggeber_20_03"); //Moje armie powstanÄ… wkrÃ³tce z jego imieniem na ustach, a Å›wiat spowije wieczny mrok.
 };
 
 func void DIA_Dragon_Undead_Hello_attack ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_attack_15_00"); //Doœæ tego. Wyœlê ciê z powrotem do piek³a, z którego wype³z³eœ, gadzie.
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_01"); //Nie jesteœ jeszcze gotów do walki ze mn¹. Jeszcze chwila, a mój cel zostanie osi¹gniêty.
+	AI_Output			(other, self, "DIA_Dragon_Undead_Hello_attack_15_00"); //DoÅ›Ä‡ tego. WyÅ›lÄ™ ciÄ™ z powrotem do piekÅ‚a, z ktÃ³rego wypeÅ‚zÅ‚eÅ›, gadzie.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_01"); //Nie jesteÅ› jeszcze gotÃ³w do walki ze mnÄ…. Jeszcze chwila, a mÃ³j cel zostanie osiÄ…gniÄ™ty.
 	//ADDON
 	if (C_ScHasEquippedBeliarsWeapon())
 	|| (C_ScHasReadiedBeliarsWeapon())
 	|| (C_ScHasBeliarsRune())
 	{
-		AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_04"); //Naprawdê s¹dzisz, ¿e mo¿esz mi zaszkodziæ tym szponem?
+		AI_Output (self, other, "DIA_Addon_UndeadDragon_Add_20_04"); //NaprawdÄ™ sÄ…dzisz, Å¼e moÅ¼esz mi zaszkodziÄ‡ tym szponem?
 	};
 	//ADDON ENDE
-	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_02"); //Twoje szcz¹tki pozwol¹ mi wyzwoliæ wiatr œmierci, który wkrótce omiecie ca³y œwiat.
+	AI_Output			(self, other, "DIA_Dragon_Undead_Hello_attack_20_02"); //Twoje szczÄ…tki pozwolÄ… mi wyzwoliÄ‡ wiatr Å›mierci, ktÃ³ry wkrÃ³tce omiecie caÅ‚y Å›wiat.
 		
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 

@@ -277,7 +277,7 @@ func void PLAYER_HOTKEY_LAME_POTION()
 		 }
 		 else
 		 {
-				Print ("Maksymalny moøliwy poziom many!");
+				Print ("Maksymalny mo≈ºliwy poziom many!");
 		 };
 	};
 };
@@ -335,7 +335,7 @@ if (Npc_IsInState (hero,ZS_Dead)==FALSE)
 		 }
 		 else
 		 {
-				Print ("Maksymalna moøliwa liczba punktÛw trafieÒ!");
+				Print ("Maksymalna mo≈ºliwa liczba punkt√≥w trafie≈Ñ!");
 		 };
 	};
 };

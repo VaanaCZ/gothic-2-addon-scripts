@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10025_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10025_Wache_Hi_Condition;
 	information = DIA_Addon_10025_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 {	
@@ -36,13 +36,13 @@ FUNC INT DIA_Addon_10025_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Co s³ychaæ?
-	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//Gotujê gulasz dla kopaczy i stra¿ników.
+	AI_Output (other, self, "DIA_Addon_BDT_10025_Wache_Hi_15_00");//Co sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_01");//GotujÄ™ gulasz dla kopaczy i straÅ¼nikÃ³w.
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Niewolnicy bêd¹ musieli obejœæ siê smakiem. Jak bêd¹ mieli szczêœcie, dostan¹ czerstwy chleb i wodê.
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Tym miêczakom z miasta to nie zaszkodzi.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Niewolnicy bÄ™dÄ… musieli obejÅ›Ä‡ siÄ™ smakiem. Jak bÄ™dÄ… mieli szczÄ™Å›cie, dostanÄ… czerstwy chleb i wodÄ™.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Tym miÄ™czakom z miasta to nie zaszkodzi.
 	};
 };
 

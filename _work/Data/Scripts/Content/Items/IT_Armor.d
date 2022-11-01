@@ -1,5 +1,5 @@
 // *********************************************************
-// R黶tungs Kosten in Gold
+// R眉stungs Kosten in Gold
 // -----------------------
 // Alles, was hier mit 0 angegeben ist  
 // a) kann der Spieler NIE bekommen und
@@ -22,7 +22,7 @@ const int VALUE_ITAR_MIL_M		= 2500;
 const int VALUE_ITAR_PAL_M		= 5000;
 const int VALUE_ITAR_PAL_H		= 20000;
 
-// ------ Bauern und S鰈dner ------
+// ------ Bauern und S枚ldner ------
 const int VALUE_ITAR_Bau_L		= 80;
 const int VALUE_ITAR_Bau_M		= 100;
 const int VALUE_ITAR_BauBabe_L	= 0;
@@ -42,7 +42,7 @@ const int VALUE_ITAR_Leather_L	= 250;
 const int VALUE_ITAR_BDT_M		= 550;
 const int VALUE_ITAR_BDT_H		= 2100;
 
-// ------ Drachenj鋑er ------
+// ------ Drachenj盲ger ------
 const int VALUE_ITAR_DJG_L		= 3000;
 const int VALUE_ITAR_DJG_M		= 12000;
 const int VALUE_ITAR_DJG_H		= 20000;
@@ -59,7 +59,7 @@ const int VALUE_ITAR_Prisoner	= 10;
 
 
 // ******************
-// 		R黶tungen
+// 		R眉stungen
 // ******************
 
 INSTANCE ITAR_Governor (C_Item)
@@ -104,7 +104,7 @@ INSTANCE ITAR_Governor (C_Item)
 // ******************************************************
 INSTANCE ITAR_JUDGE (C_Item)
 {
-	name 					=	"Szata s阣ziego";
+	name 					=	"Szata s臋dziego";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -144,7 +144,7 @@ INSTANCE ITAR_JUDGE (C_Item)
 // ******************************************************
 INSTANCE ITAR_SMITH (C_Item)
 {
-	name 					=	"Str骿 kowala";
+	name 					=	"Str贸j kowala";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -184,7 +184,7 @@ INSTANCE ITAR_SMITH (C_Item)
 // ******************************************************
 INSTANCE ITAR_BARKEEPER (C_Item)
 {
-	name 					=	"Str骿 ziemianina";
+	name 					=	"Str贸j ziemianina";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -224,7 +224,7 @@ INSTANCE ITAR_BARKEEPER (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_L (C_Item)
 {
-	name 					=	"Str骿 obywatela";
+	name 					=	"Str贸j obywatela";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -264,7 +264,7 @@ INSTANCE ITAR_VLK_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_M (C_Item)
 {
-	name 					=	"Str骿 obywatela";
+	name 					=	"Str贸j obywatela";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -304,7 +304,7 @@ INSTANCE ITAR_VLK_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_H (C_Item)
 {
-	name 					=	"Str骿 obywatela";
+	name 					=	"Str贸j obywatela";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -340,7 +340,7 @@ INSTANCE ITAR_VLK_H (C_Item)
 // ******************************************************
 instance ITAR_VlkBabe_L (C_Item)
 {
-	name 					=	"Str骿 obywatela 1";
+	name 					=	"Str贸j obywatela 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -380,7 +380,7 @@ instance ITAR_VlkBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_M (C_Item)
 {
-	name 					=	"Str骿 obywatela 2";
+	name 					=	"Str贸j obywatela 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -420,7 +420,7 @@ INSTANCE ITAR_VlkBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_H (C_Item)
 {
-	name 					=	"Str骿 obywatela 3";
+	name 					=	"Str贸j obywatela 3";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -456,7 +456,7 @@ INSTANCE ITAR_VlkBabe_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_MIL_L (C_Item)
 {
-	name 					=	"Lekki pancerz stra縴";
+	name 					=	"Lekki pancerz stra偶y";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -502,7 +502,7 @@ FUNC VOID Equip_ITAR_MIL_L()
 	{
 		MILArmor_Equipped = TRUE;
 		
-		if (MIL01_Equipped == TRUE)//G黵tel
+		if (MIL01_Equipped == TRUE)//G眉rtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -531,7 +531,7 @@ FUNC VOID UnEquip_ITAR_MIL_L()
 // ******************************************************
 INSTANCE ITAR_MIL_M (C_Item)
 {
-	name 					=	"Ci昕ki pancerz stra縴";
+	name 					=	"Ci臋偶ki pancerz stra偶y";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -682,7 +682,7 @@ INSTANCE ITAR_PAL_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_L (C_Item)
 {
-	name 					=	"Str骿 farmera 1";
+	name 					=	"Str贸j farmera 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -722,7 +722,7 @@ INSTANCE ITAR_BAU_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_M (C_Item)
 {
-	name 					=	"Str骿 farmera 2";
+	name 					=	"Str贸j farmera 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -910,7 +910,7 @@ FUNC VOID UnEquip_ITAR_SLD_L()
 // ******************************************************
 INSTANCE ITAR_SLD_M (C_Item)
 {
-	name 					=	"宺edni pancerz najemnika";
+	name 					=	"艢redni pancerz najemnika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -985,7 +985,7 @@ FUNC VOID UnEquip_ITAR_SLD_M()
 // ******************************************************
 INSTANCE ITAR_SLD_H (C_Item)
 {
-	name 					=	"Ci昕ki pancerz najemnika";
+	name 					=	"Ci臋偶ki pancerz najemnika";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1056,7 +1056,7 @@ FUNC VOID UnEquip_ITAR_SLD_H()
 // ******************************************************
 INSTANCE ITAR_DJG_Crawler (C_Item)
 {
-	name 					=	"Zbroja z pancerzy pe硓aczy";
+	name 					=	"Zbroja z pancerzy pe艂zaczy";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1131,7 +1131,7 @@ FUNC VOID UnEquip_ITAR_DJG_Crawler()
 // ******************************************************
 INSTANCE ITAR_DJG_L (C_Item)
 {
-	name 					=	"Lekki pancerz 硂wcy smok體";
+	name 					=	"Lekki pancerz 艂owcy smok贸w";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1171,7 +1171,7 @@ INSTANCE ITAR_DJG_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_M (C_Item)
 {
-	name 					=	"宺edni pancerz 硂wcy smok體";
+	name 					=	"艢redni pancerz 艂owcy smok贸w";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1211,7 +1211,7 @@ INSTANCE ITAR_DJG_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_H (C_Item)
 {
-	name 					=	"Ci昕ki pancerz 硂wcy smok體";
+	name 					=	"Ci臋偶ki pancerz 艂owcy smok贸w";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1251,7 +1251,7 @@ INSTANCE ITAR_DJG_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_DJG_BABE (C_Item)
 {
-	name 					=	"Kobiecy pancerz 硂wcy smok體";
+	name 					=	"Kobiecy pancerz 艂owcy smok贸w";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1442,7 +1442,7 @@ FUNC VOID UnEquip_ITAR_KDF_L()
 // ******************************************************
 INSTANCE ITAR_KDF_H (C_Item)
 {
-	name 					=	"Ci昕ka szata ognia";
+	name 					=	"Ci臋偶ka szata ognia";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1517,7 +1517,7 @@ FUNC VOID UnEquip_ITAR_KDF_H()
 // ******************************************************
 INSTANCE ITAR_Leather_L (C_Item)
 {
-	name 					=	"Sk髍zany pancerz";
+	name 					=	"Sk贸rzany pancerz";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ FUNC VOID Equip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = TRUE;	
 	
-		if (Leather01_Equipped == TRUE) //Lederg黵tel
+		if (Leather01_Equipped == TRUE) //Lederg眉rtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1575,7 +1575,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = FALSE;	
 	
-		if (Leather01_Equipped == TRUE) //Lederg黵tel
+		if (Leather01_Equipped == TRUE) //Lederg眉rtel
 		{
 			self.protection[PROT_EDGE] 	-= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;
@@ -1588,7 +1588,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 // ******************************************************
 INSTANCE ITAR_BDT_M (C_Item)
 {
-	name 					=	"宺edni pancerz bandyty";
+	name 					=	"艢redni pancerz bandyty";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1629,7 +1629,7 @@ INSTANCE ITAR_BDT_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_BDT_H (C_Item)
 {
-	name 					=	"Ci昕ki pancerz bandyty";
+	name 					=	"Ci臋偶ki pancerz bandyty";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1826,7 +1826,7 @@ INSTANCE ITAR_CorAngar (C_Item)
 // ******************************************************
 INSTANCE ITAR_Dementor (C_Item)
 {
-	name 					=	"Mroczny p砤szcz";
+	name 					=	"Mroczny p艂aszcz";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1902,7 +1902,7 @@ INSTANCE ITAR_KDW_H (C_Item)
 // ******************************************************
 instance ITAR_Prisoner (C_Item)
 {
-	name 					=	"chy skaza馽a";
+	name 					=	"艁achy skaza艅ca";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;

@@ -47,15 +47,15 @@ FUNC VOID DIA_STRF_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Gdybym odszed³, kiedy mia³em na to szansê, dziœ nie musia³bym harowaæ dla tych œwiñ!
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Gdybym odszedÅ‚, kiedy miaÅ‚em na to szansÄ™, dziÅ› nie musiaÅ‚bym harowaÄ‡ dla tych Å›wiÅ„!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_01"); //Wszystko przez rudê! Ci¹gle to samo. Wszystkim zale¿y tylko na tej cholernej rudzie.
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_01"); //Wszystko przez rudÄ™! CiÄ…gle to samo. Wszystkim zaleÅ¼y tylko na tej cholernej rudzie.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_02"); //Gdybyœ choæ raz spróbowa³ ¿arcia, które nam daj¹, sam zacz¹³byœ myœleæ o buncie.
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_02"); //GdybyÅ› choÄ‡ raz sprÃ³bowaÅ‚ Å¼arcia, ktÃ³re nam dajÄ…, sam zaczÄ…Å‚byÅ› myÅ›leÄ‡ o buncie.
 	};
 	
 	AI_StopProcessInfos	(self);

@@ -14,7 +14,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ falscher Parameter ------
 	if (circle < 1) || (circle > 6)
 	{
-		Print ("*** B³¹d: Z³y parametr ***");
+		Print ("*** BÅ‚Ä…d: ZÅ‚y parametr ***");
 		return FALSE;
 	};
 	
@@ -36,13 +36,13 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Magiczne runy, do których mam dostêp, s¹ podzielone na krêgi. Nie mogê korzystaæ z zaklêæ wymagaj¹cych stopnia wtajemniczenia przekraczaj¹cego moj¹ aktualn¹ wiedzê."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"Magiczne runy, do ktÃ³rych mam dostÄ™p, sÄ… podzielone na krÄ™gi. Nie mogÄ™ korzystaÄ‡ z zaklÄ™Ä‡ wymagajÄ…cych stopnia wtajemniczenia przekraczajÄ…cego mojÄ… aktualnÄ… wiedzÄ™."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)
 	{
 		PrintScreen	(PRINT_LearnCircle_1, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Zaklêcia z pierwszego krêgu to: œwiat³o, Ognista strza³a, Ma³a b³yskawica, Leczenie lekkich ran i Przyzwanie szkieletu-goblina.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"ZaklÄ™cia z pierwszego krÄ™gu to: Å›wiatÅ‚o, Ognista strzaÅ‚a, MaÅ‚a bÅ‚yskawica, Leczenie lekkich ran i Przyzwanie szkieletu-goblina.");
 		return TRUE;
 	};
 	
@@ -50,7 +50,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 2)
 	{
 		PrintScreen	(PRINT_LearnCircle_2, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Zaklêcia z drugiego krêgu to: Kula ognia, Lodowa strza³a, Przyzwanie wilka, Piêœæ wichru i Sen.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"ZaklÄ™cia z drugiego krÄ™gu to: Kula ognia, Lodowa strzaÅ‚a, Przyzwanie wilka, PiÄ™Å›Ä‡ wichru i Sen.");
 		return TRUE;
 	};
 	
@@ -58,7 +58,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 3)
 	{
 		PrintScreen	(PRINT_LearnCircle_3, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Zaklêcia z trzeciego krêgu to: Leczenie œrednich ran, Piorun kulisty, Ma³a burza ognista, Tworzenie szkieletu, Strach i Bry³a lodu.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"ZaklÄ™cia z trzeciego krÄ™gu to: Leczenie Å›rednich ran, Piorun kulisty, MaÅ‚a burza ognista, Tworzenie szkieletu, Strach i BryÅ‚a lodu.");
 		return TRUE;
 	};
 	
@@ -66,7 +66,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 4)
 	{
 		PrintScreen	(PRINT_LearnCircle_4, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Zaklêcia z czwartego krêgu to: B³yskawica, Tworzenie kamiennego golema, Zniszczenie o¿ywieñca i Du¿a kula ognia.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"ZaklÄ™cia z czwartego krÄ™gu to: BÅ‚yskawica, Tworzenie kamiennego golema, Zniszczenie oÅ¼ywieÅ„ca i DuÅ¼a kula ognia.");
 		return TRUE;
 	};
 	
@@ -74,7 +74,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 5)
 	{
 		PrintScreen	(PRINT_LearnCircle_5, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Zaklêcia z pi¹tego krêgu to: Du¿a burza ognista, Lodowa fala, Przyzwanie demona i Leczenie ciê¿kich ran.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"ZaklÄ™cia z piÄ…tego krÄ™gu to: DuÅ¼a burza ognista, Lodowa fala, Przyzwanie demona i Leczenie ciÄ™Å¼kich ran.");
 		return TRUE;
 	};
 	
@@ -82,7 +82,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	if (circle == 6)
 	{
 		PrintScreen	(PRINT_LearnCircle_6, -1, -1, FONT_Screen, 2);
-		B_LogEntry (TOPIC_TalentMagicCircle,"Zaklêcia z szóstego krêgu to: Deszcz ognia, Tchnienie œmierci, Œmiertelna fala, Armia ciemnoœci i Zmniejszenie potwora.");
+		B_LogEntry (TOPIC_TalentMagicCircle,"ZaklÄ™cia z szÃ³stego krÄ™gu to: Deszcz ognia, Tchnienie Å›mierci, Åšmiertelna fala, Armia ciemnoÅ›ci i Zmniejszenie potwora.");
 		return TRUE;
 	};
 };

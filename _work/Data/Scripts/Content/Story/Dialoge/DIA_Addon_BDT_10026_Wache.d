@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10026_Wache_Hi   (C_INFO)
 	condition   = DIA_Addon_10026_Wache_Hi_Condition;
 	information = DIA_Addon_10026_Wache_Hi_Info;
 	permanent   = TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };
 FUNC INT DIA_Addon_10026_Wache_Hi_Condition()
 {	
@@ -36,20 +36,20 @@ FUNC INT DIA_Addon_10026_Wache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10026_Wache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Hi_15_00");//Co s³ychaæ?
+	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Hi_15_00");//Co sÅ‚ychaÄ‡?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
 		CreateInvItems (self, ItFo_Bacon,1);
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Szkoda, ¿e zosta³o tak ma³o niewolników. Wkrótce bêdziemy musieli zorganizowaæ nowych.
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Ci kolesie s¹ kompletnie wyczerpani. Pewnie z g³odu.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Szkoda, Å¼e zostaÅ‚o tak maÅ‚o niewolnikÃ³w. WkrÃ³tce bÄ™dziemy musieli zorganizowaÄ‡ nowych.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Ci kolesie sÄ… kompletnie wyczerpani. Pewnie z gÅ‚odu.
 		B_UseItem (self, ItFo_Bacon);
 		
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Wolê jednak wys³aæ do pracy kilku kopaczy, ni¿ karmiæ tych g³upców miêsem.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//WolÄ™ jednak wysÅ‚aÄ‡ do pracy kilku kopaczy, niÅ¼ karmiÄ‡ tych gÅ‚upcÃ³w miÄ™sem.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Nie ma ju¿ niewolników - no jaka szkoda. Wygl¹da na to, ¿e musimy znowu pogoniæ kopaczy.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Nie ma juÅ¼ niewolnikÃ³w - no jaka szkoda. WyglÄ…da na to, Å¼e musimy znowu pogoniÄ‡ kopaczy.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -73,8 +73,8 @@ FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 FUNC VOID DIA_Addon_10026_Wache_Gruft_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//Co wiesz o krypcie?
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//No... znajduje siê na koñcu tej œcie¿ki.
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//IdŸ po trupach, a znajdziesz j¹.
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//No... znajduje siÄ™ na koÅ„cu tej Å›cieÅ¼ki.
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//IdÅº po trupach, a znajdziesz jÄ….
 };
 
 

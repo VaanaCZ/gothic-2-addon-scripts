@@ -79,7 +79,7 @@ func int DIA_Rengaru_Hauab_Condition ()
 func void DIA_Rengaru_Hauab_Info ()
 {
 	AI_Output (other, self, "DIA_Rengaru_Hauab_15_00"); //Co tu porabiasz?
-	AI_Output (self, other, "DIA_Rengaru_Hauab_07_01"); //A niby dlaczego mia³bym ci mówiæ. Spadaj!
+	AI_Output (self, other, "DIA_Rengaru_Hauab_07_01"); //A niby dlaczego miaÅ‚bym ci mÃ³wiÄ‡. Spadaj!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -92,7 +92,7 @@ instance DIA_Rengaru_HALLODIEB		(C_INFO)
 	condition	 = 	DIA_Rengaru_HALLODIEB_Condition;
 	information	 = 	DIA_Rengaru_HALLODIEB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Jora mówi, ¿e masz jego pieni¹dze.";
+	description	 = 	"Jora mÃ³wi, Å¼e masz jego pieniÄ…dze.";
 };
 func int DIA_Rengaru_HALLODIEB_Condition ()
 {
@@ -104,8 +104,8 @@ func int DIA_Rengaru_HALLODIEB_Condition ()
 
 func void DIA_Rengaru_HALLODIEB_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_HALLODIEB_15_00"); //Jora mówi, ¿e masz jego pieni¹dze.
-	AI_Output (self, other, "DIA_Rengaru_HALLODIEB_07_01"); //Cholera! Spadam st¹d!
+	AI_Output (other, self, "DIA_Rengaru_HALLODIEB_15_00"); //Jora mÃ³wi, Å¼e masz jego pieniÄ…dze.
+	AI_Output (self, other, "DIA_Rengaru_HALLODIEB_07_01"); //Cholera! Spadam stÄ…d!
 
 	AI_StopProcessInfos (self);
 
@@ -121,7 +121,7 @@ instance DIA_Rengaru_GOTYOU		(C_INFO)
 	condition	 = 	DIA_Rengaru_GOTYOU_Condition;
 	information	 = 	DIA_Rengaru_GOTYOU_Info;
 	permanent	 =  FALSE;	
-	description	 = 	"Mam ciê!";
+	description	 = 	"Mam ciÄ™!";
 };
 
 func int DIA_Rengaru_GOTYOU_Condition ()
@@ -136,32 +136,32 @@ func void DIA_Rengaru_GOTYOU_Info ()
 {
 	B_GivePlayerXP (XP_RengaruGotThief);
 	
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_00"); //Mam ciê!
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_00"); //Mam ciÄ™!
 	AI_Output (self, other, "DIA_Rengaru_GOTYOU_07_01"); //Czego ode mnie chcesz?
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_02"); //Okrad³eœ Jorê w bia³y dzieñ, widzia³ nawet, jak to robi³eœ.
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_03"); //Przyszed³em ci wiêc powiedzieæ, ¿e jesteœ zawszonym z³odziejem i...
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_02"); //OkradÅ‚eÅ› JorÄ™ w biaÅ‚y dzieÅ„, widziaÅ‚ nawet, jak to robiÅ‚eÅ›.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_15_03"); //PrzyszedÅ‚em ci wiÄ™c powiedzieÄ‡, Å¼e jesteÅ› zawszonym zÅ‚odziejem i...
 	
 	Info_ClearChoices (DIA_Rengaru_GOTYOU); 
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...Zas³ugujê na udzia³.", DIA_Rengaru_GOTYOU_Anteil );
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...¿ebyœ lepiej zwróci³ Jorze skradzione pieni¹dze, natychmiast.", DIA_Rengaru_GOTYOU_YouThief );
-	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...Teraz gadaj, kim jesteœ?", DIA_Rengaru_GOTYOU_WhoAreYou );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...ZasÅ‚ugujÄ™ na udziaÅ‚.", DIA_Rengaru_GOTYOU_Anteil );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...Å¼ebyÅ› lepiej zwrÃ³ciÅ‚ Jorze skradzione pieniÄ…dze, natychmiast.", DIA_Rengaru_GOTYOU_YouThief );
+	Info_AddChoice	(DIA_Rengaru_GOTYOU, "...Teraz gadaj, kim jesteÅ›?", DIA_Rengaru_GOTYOU_WhoAreYou );
 };
 func void DIA_Rengaru_GOTYOU_YouThief ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_YouThief_15_00"); //...¿ebyœ lepiej zwróci³ Jorze skradzione pieni¹dze, natychmiast.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_YouThief_15_00"); //...Å¼ebyÅ› lepiej zwrÃ³ciÅ‚ Jorze skradzione pieniÄ…dze, natychmiast.
 
 	if (Npc_HasItems (self, Itmi_Gold) >= 1)
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_01"); //Oto kasa! A teraz pozwól mi odejœæ, obiecujê, ¿e ju¿ nigdy nic nie ukradnê.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_01"); //Oto kasa! A teraz pozwÃ³l mi odejÅ›Ä‡, obiecujÄ™, Å¼e juÅ¼ nigdy nic nie ukradnÄ™.
 		B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self, ItMi_Gold));
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_02"); //Nie mam ju¿ tego z³ota.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_02"); //Nie mam juÅ¼ tego zÅ‚ota.
 		
 		if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)    
 		{
-			AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_03"); //Zreszt¹, po co ja ci to w³aœciwie mówiê? Ju¿ mnie przecie¿ obrobi³eœ!
+			AI_Output (self, other, "DIA_Rengaru_GOTYOU_YouThief_07_03"); //ZresztÄ…, po co ja ci to wÅ‚aÅ›ciwie mÃ³wiÄ™? JuÅ¼ mnie przecieÅ¼ obrobiÅ‚eÅ›!
 		};
 	};	
 	Info_ClearChoices	(DIA_Rengaru_GOTYOU);
@@ -169,21 +169,21 @@ func void DIA_Rengaru_GOTYOU_YouThief ()
 
 func void DIA_Rengaru_GOTYOU_Anteil ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_15_00"); //...Zas³ugujê na udzia³.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_15_00"); //...ZasÅ‚ugujÄ™ na udziaÅ‚.
 	
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_LOST)    
 	&& (Npc_HasItems (self, ItMi_Gold) < 1)
 	{ 
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_07_01"); //Poturbowa³eœ mnie, wzi¹³eœ wszystko, co mia³em! Pozwól mi po prostu odejœæ!
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_07_01"); //PoturbowaÅ‚eÅ› mnie, wziÄ…Å‚eÅ› wszystko, co miaÅ‚em! PozwÃ³l mi po prostu odejÅ›Ä‡!
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else
 	{	//HACK MF. self/other - falsch gesprochen, kein Ersatz...
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_15_02"); //Trudno, wygl¹da na to, ¿e nie mam wyboru. Podzielimy siê po po³owie.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_15_02"); //Trudno, wyglÄ…da na to, Å¼e nie mam wyboru. Podzielimy siÄ™ po poÅ‚owie.
 		
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 		Info_AddChoice		(DIA_Rengaru_GOTYOU, "O nie! Oddasz mi wszystko!", DIA_Rengaru_GOTYOU_Anteil_alles );
-		Info_AddChoice		(DIA_Rengaru_GOTYOU, "W porz¹dku, oddaj mi po³owê.", DIA_Rengaru_GOTYOU_Anteil_GehtKlar );
+		Info_AddChoice		(DIA_Rengaru_GOTYOU, "W porzÄ…dku, oddaj mi poÅ‚owÄ™.", DIA_Rengaru_GOTYOU_Anteil_GehtKlar );
 	};
 };
 func void DIA_Rengaru_GOTYOU_Anteil_alles ()
@@ -192,38 +192,38 @@ func void DIA_Rengaru_GOTYOU_Anteil_alles ()
 	
 	if (Npc_HasItems (self, Itmi_Gold) >= 2)
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_02"); //Postanowi³eœ mnie obrobiæ do cna. A bierz sobie ca³e z³oto i zostaw mnie w spokoju.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_02"); //PostanowiÅ‚eÅ› mnie obrobiÄ‡ do cna. A bierz sobie caÅ‚e zÅ‚oto i zostaw mnie w spokoju.
 		B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self, ItMi_Gold) );
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_03"); //Odda³bym ci z³oto, ale ju¿ go nie mam.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_alles_07_03"); //OddaÅ‚bym ci zÅ‚oto, ale juÅ¼ go nie mam.
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	};
 };
 
 func void DIA_Rengaru_GOTYOU_Anteil_GehtKlar ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_15_00"); //W porz¹dku, oddaj mi po³owê.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_15_00"); //W porzÄ…dku, oddaj mi poÅ‚owÄ™.
 	
 	if B_GiveInvItems (self, other, ItMi_Gold, (Npc_HasItems (self, ItMi_Gold))/2 )
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_01"); //Oto po³owa z³ota! A teraz zostaw mnie w spokoju!
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_01"); //Oto poÅ‚owa zÅ‚ota! A teraz zostaw mnie w spokoju!
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_02"); //Chêtnie odda³bym ci po³owê z³ota, ale nie mam go ju¿ przy sobie.
+		AI_Output (self, other, "DIA_Rengaru_GOTYOU_Anteil_GehtKlar_07_02"); //ChÄ™tnie oddaÅ‚bym ci poÅ‚owÄ™ zÅ‚ota, ale nie mam go juÅ¼ przy sobie.
 		Info_ClearChoices	(DIA_Rengaru_GOTYOU);
 	};
 };
 func void DIA_Rengaru_GOTYOU_WhoAreYou ()
 {
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_00"); //...Teraz gadaj, kim jesteœ?
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_01"); //Jestem tylko nêdzarzem, staraj¹cym siê zwi¹zaæ koniec z koñcem, w taki czy inny sposób.
-	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_02"); //Có¿ innego mi pozosta³o, w mieœcie pracy nie znajdê...
-	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_03"); //...Dobra, rozumiem. OszczêdŸ mi tych jêków.
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_00"); //...Teraz gadaj, kim jesteÅ›?
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_01"); //Jestem tylko nÄ™dzarzem, starajÄ…cym siÄ™ zwiÄ…zaÄ‡ koniec z koÅ„cem, w taki czy inny sposÃ³b.
+	AI_Output (self, other, "DIA_Rengaru_GOTYOU_WhoAreYou_07_02"); //CÃ³Å¼ innego mi pozostaÅ‚o, w mieÅ›cie pracy nie znajdÄ™...
+	AI_Output (other, self, "DIA_Rengaru_GOTYOU_WhoAreYou_15_03"); //...Dobra, rozumiem. OszczÄ™dÅº mi tych jÄ™kÃ³w.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info InKnast
@@ -235,7 +235,7 @@ instance DIA_Rengaru_INKNAST		(C_INFO)
 	condition	 = 	DIA_Rengaru_INKNAST_Condition;
 	information	 = 	DIA_Rengaru_INKNAST_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Powinienem wydaæ ciê stra¿y.";
+	description	 = 	"Powinienem wydaÄ‡ ciÄ™ straÅ¼y.";
 };
 
 func int DIA_Rengaru_INKNAST_Condition ()
@@ -248,17 +248,17 @@ func int DIA_Rengaru_INKNAST_Condition ()
 
 func void DIA_Rengaru_INKNAST_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_15_00"); //Powinienem wydaæ ciê stra¿y.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_07_01"); //Czego jeszcze ode mnie chcesz? Nie mam ju¿ nic! Zostaw mnie w spokoju!
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_15_00"); //Powinienem wydaÄ‡ ciÄ™ straÅ¼y.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_07_01"); //Czego jeszcze ode mnie chcesz? Nie mam juÅ¼ nic! Zostaw mnie w spokoju!
 	
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Dlaczego mia³bym chcieæ to zrobiæ?", DIA_Rengaru_INKNAST_keinKnast );
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Dopilnujê, byœ trafi³ za kratki.", DIA_Rengaru_INKNAST_Knast );
-	Info_AddChoice	(DIA_Rengaru_INKNAST, "Won st¹d! Nie chcê wiêcej ogl¹daæ twojej gêby!", DIA_Rengaru_INKNAST_HauAb );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "Dlaczego miaÅ‚bym chcieÄ‡ to zrobiÄ‡?", DIA_Rengaru_INKNAST_keinKnast );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "DopilnujÄ™, byÅ› trafiÅ‚ za kratki.", DIA_Rengaru_INKNAST_Knast );
+	Info_AddChoice	(DIA_Rengaru_INKNAST, "Won stÄ…d! Nie chcÄ™ wiÄ™cej oglÄ…daÄ‡ twojej gÄ™by!", DIA_Rengaru_INKNAST_HauAb );
 };
 func void DIA_Rengaru_INKNAST_HauAb ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_HauAb_15_00"); //Won st¹d! Nie chcê wiêcej ogl¹daæ twojej gêby!
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_HauAb_07_01"); //Nie po¿a³ujesz tego! Dziêki, stary!
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_HauAb_15_00"); //Won stÄ…d! Nie chcÄ™ wiÄ™cej oglÄ…daÄ‡ twojej gÄ™by!
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_HauAb_07_01"); //Nie poÅ¼aÅ‚ujesz tego! DziÄ™ki, stary!
 	
 	Npc_ExchangeRoutine	(self,"Start"); 	
 	AI_StopProcessInfos (self);
@@ -267,9 +267,9 @@ func void DIA_Rengaru_INKNAST_HauAb ()
 };
 func void DIA_Rengaru_INKNAST_Knast ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_Knast_15_00"); //Dopilnujê, byœ trafi³ za kratki.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_01"); //Nie chcê wiêcej k³opotów, jeœli uwa¿asz, ¿e tak w³aœnie powinieneœ post¹piæ, proszê bardzo.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_02"); //Uwa¿aj jednak, moim przyjacio³om nie spodoba siê to, jak mnie potraktowa³eœ...
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_Knast_15_00"); //DopilnujÄ™, byÅ› trafiÅ‚ za kratki.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_01"); //Nie chcÄ™ wiÄ™cej kÅ‚opotÃ³w, jeÅ›li uwaÅ¼asz, Å¼e tak wÅ‚aÅ›nie powinieneÅ› postÄ…piÄ‡, proszÄ™ bardzo.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_Knast_07_02"); //UwaÅ¼aj jednak, moim przyjacioÅ‚om nie spodoba siÄ™ to, jak mnie potraktowaÅ‚eÅ›...
 
 	
 	Rengaru_InKnast		= TRUE; 	
@@ -279,9 +279,9 @@ func void DIA_Rengaru_INKNAST_Knast ()
 
 func void DIA_Rengaru_INKNAST_keinKnast ()
 {
-	AI_Output (other, self, "DIA_Rengaru_INKNAST_keinKnast_15_00"); //Dlaczego mia³bym chcieæ to zrobiæ?
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_01"); //W mieœcie dobrze jest znaæ pewnych ludzi, i zawsze staæ po ich stronie.
-	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_02"); //Mogê szepn¹æ dobre s³ówko na twój temat tu i tam. Reszta zale¿y od ciebie.
+	AI_Output (other, self, "DIA_Rengaru_INKNAST_keinKnast_15_00"); //Dlaczego miaÅ‚bym chcieÄ‡ to zrobiÄ‡?
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_01"); //W mieÅ›cie dobrze jest znaÄ‡ pewnych ludzi, i zawsze staÄ‡ po ich stronie.
+	AI_Output (self, other, "DIA_Rengaru_INKNAST_keinKnast_07_02"); //MogÄ™ szepnÄ…Ä‡ dobre sÅ‚Ã³wko na twÃ³j temat tu i tam. Reszta zaleÅ¼y od ciebie.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info LastInfoKap1
@@ -293,7 +293,7 @@ instance DIA_Rengaru_LastInfoKap1		(C_INFO)
 	condition	 = 	DIA_Rengaru_LastInfoKap1_Condition;
 	information	 = 	DIA_Rengaru_LastInfoKap1_Info;
 	permanent	 =  TRUE;	
-	description	 = 	"I jak? Wszystko w porz¹dku?";
+	description	 = 	"I jak? Wszystko w porzÄ…dku?";
 };
 func int DIA_Rengaru_LastInfoKap1_Condition ()
 {
@@ -305,15 +305,15 @@ func int DIA_Rengaru_LastInfoKap1_Condition ()
 
 func void DIA_Rengaru_LastInfoKap1_Info ()
 {
-	AI_Output (other, self, "DIA_Rengaru_LastInfoKap1_15_00"); //I jak? Wszystko w porz¹dku?
+	AI_Output (other, self, "DIA_Rengaru_LastInfoKap1_15_00"); //I jak? Wszystko w porzÄ…dku?
 	
 	if (Rengaru_InKnast	== TRUE)
 	{
-		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_01"); //No dalej, nabijaj siê ze mnie. W koñcu ci siê oberwie, przysiêgam!
+		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_01"); //No dalej, nabijaj siÄ™ ze mnie. W koÅ„cu ci siÄ™ oberwie, przysiÄ™gam!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_02"); //Czego jeszcze chcesz? Niczego wiêcej nie ukrad³em, jak babciê kocham!
+		AI_Output (self, other, "DIA_Rengaru_LastInfoKap1_07_02"); //Czego jeszcze chcesz? Niczego wiÄ™cej nie ukradÅ‚em, jak babciÄ™ kocham!
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -326,7 +326,7 @@ INSTANCE DIA_Rengaru_Zeichen   (C_INFO)
 	condition   = DIA_Rengaru_Zeichen_Condition;
 	information = DIA_Rengaru_Zeichen_Info;
 	permanent   = FALSE;
-	description = "(Poka¿ z³odziejski gest)";
+	description = "(PokaÅ¼ zÅ‚odziejski gest)";
 };
 
 FUNC INT DIA_Rengaru_Zeichen_Condition()
@@ -342,10 +342,10 @@ FUNC VOID DIA_Rengaru_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
 	
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_00");//Hej, jesteœ jednym z nas.
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_01");//Pozwól, ¿e coœ ci powiem. Jeœli chcesz obrobiæ parê kieszonek w mieœcie, to uwa¿aj na kupców!
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_02");//Te psubraty nieŸle pilnuj¹ swojego towaru. Dam ci jednak wskazówkê.
-	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_03");//Kiedy bêdziesz ³apa³ przedmiot, który chcesz ukraœæ, jedn¹ rêk¹, machaj drug¹. To ich rozprasza.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_00");//Hej, jesteÅ› jednym z nas.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_01");//PozwÃ³l, Å¼e coÅ› ci powiem. JeÅ›li chcesz obrobiÄ‡ parÄ™ kieszonek w mieÅ›cie, to uwaÅ¼aj na kupcÃ³w!
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_02");//Te psubraty nieÅºle pilnujÄ… swojego towaru. Dam ci jednak wskazÃ³wkÄ™.
+	AI_Output (self, other, "DIA_Rengaru_Zeichen_07_03");//Kiedy bÄ™dziesz Å‚apaÅ‚ przedmiot, ktÃ³ry chcesz ukraÅ›Ä‡, jednÄ… rÄ™kÄ…, machaj drugÄ…. To ich rozprasza.
 	
 	B_RaiseAttribute(other, ATR_DEXTERITY, 1);
 	Snd_Play ("LEVELUP"); 

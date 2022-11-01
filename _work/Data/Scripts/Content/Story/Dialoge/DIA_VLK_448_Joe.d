@@ -75,15 +75,15 @@ FUNC INT DIA_Joe_Hallo_Condition()
 };
 FUNC VOID DIA_Joe_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Hej, dziêki, cz³owieku! Naprawdê wielkie dziêki. Ju¿ myœla³em, ¿e nigdy siê st¹d nie wydostanê...
+	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Hej, dziÄ™ki, czÅ‚owieku! NaprawdÄ™ wielkie dziÄ™ki. JuÅ¼ myÅ›laÅ‚em, Å¼e nigdy siÄ™ stÄ…d nie wydostanÄ™...
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP ((XP_Ambient*4));
 	
 	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Co ty TUTAJ robisz?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Da³em siê zamkn¹æ. Drzwi by³y otwarte i chcia³em siê jedynie trochê rozejrzeæ, ale kiedy tylko wszed³em do œrodka, pojawi³a siê stra¿ i zamknê³a te cholerne drzwi.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//To doœæ krêpuj¹ca sytuacja. By³bym bardzo wdziêczny, gdyby pozosta³o to miêdzy nami.
-	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Rozumiem, to rzeczywiœcie nie jest powód do dumy.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Chyba muszê siê napiæ.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//DaÅ‚em siÄ™ zamknÄ…Ä‡. Drzwi byÅ‚y otwarte i chciaÅ‚em siÄ™ jedynie trochÄ™ rozejrzeÄ‡, ale kiedy tylko wszedÅ‚em do Å›rodka, pojawiÅ‚a siÄ™ straÅ¼ i zamknÄ™Å‚a te cholerne drzwi.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//To doÅ›Ä‡ krÄ™pujÄ…ca sytuacja. ByÅ‚bym bardzo wdziÄ™czny, gdyby pozostaÅ‚o to miÄ™dzy nami.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Rozumiem, to rzeczywiÅ›cie nie jest powÃ³d do dumy.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Chyba muszÄ™ siÄ™ napiÄ‡.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START"); 
 };
@@ -97,7 +97,7 @@ INSTANCE DIA_Joe_Perm   (C_INFO)
 	condition   = DIA_Joe_Perm_Condition;
 	information = DIA_Joe_Perm_Info;
 	permanent   = TRUE;
-	description	= "Wszystko w porz¹dku?";
+	description	= "Wszystko w porzÄ…dku?";
 };
 FUNC INT DIA_Joe_Perm_Condition()
 {	
@@ -108,8 +108,8 @@ FUNC INT DIA_Joe_Perm_Condition()
 };
 FUNC VOID DIA_Joe_Perm_Info()
 {
-	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Wszystko w porz¹dku?
-	AI_Output (self, other,"DIA_Joe_Perm_10_01");//Dziêki za uwolnienie.
+	AI_Output (other, self,"DIA_Joe_Perm_15_00");//Wszystko w porzÄ…dku?
+	AI_Output (self, other,"DIA_Joe_Perm_10_01");//DziÄ™ki za uwolnienie.
 	
 	AI_StopProcessInfos (self);
 };
@@ -123,7 +123,7 @@ INSTANCE DIA_Joe_Sign   (C_INFO)
 	condition   = DIA_Joe_Sign_Condition;
 	information = DIA_Joe_Sign_Info;
 	permanent   = FALSE;
-	description	= "(Poka¿ z³odziejski gest)";
+	description	= "(PokaÅ¼ zÅ‚odziejski gest)";
 };
 FUNC INT DIA_Joe_Sign_Condition()
 {	
@@ -136,8 +136,8 @@ FUNC INT DIA_Joe_Sign_Condition()
 FUNC VOID DIA_Joe_Sign_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Hej, wiesz co - mamy wspólnych znajomych. W takim razie pozwól mi wyraziæ wdziêcznoœæ za uratowanie.
-	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Proszê, weŸ te wytrychy. Na pewno ci siê przydadz¹.
+	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Hej, wiesz co - mamy wspÃ³lnych znajomych. W takim razie pozwÃ³l mi wyraziÄ‡ wdziÄ™cznoÅ›Ä‡ za uratowanie.
+	AI_Output (self, other,"DIA_Joe_Sign_10_01");//ProszÄ™, weÅº te wytrychy. Na pewno ci siÄ™ przydadzÄ….
 	
 	B_GiveInvItems (self, other, ItKE_Lockpick, 5);
 	

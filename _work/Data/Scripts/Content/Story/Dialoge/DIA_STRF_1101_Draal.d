@@ -43,9 +43,9 @@ func int DIA_Draal_DRAGON_Condition ()
 };
 func void DIA_Draal_DRAGON_Info ()
 {
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_00"); //By³em na zewn¹trz, kiedy smok zaatakowa³.
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_01"); //Widzia³em go - by³ wielki niczym dziesiêciu ros³ych mê¿czyzn! Jego ognisty oddech w mgnieniu oka spopieli³ chaty!
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_02"); //Smok! Za ¿adne skarby siê st¹d nie ruszê! Nie jestem szaleñcem!
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_00"); //ByÅ‚em na zewnÄ…trz, kiedy smok zaatakowaÅ‚.
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_01"); //WidziaÅ‚em go - byÅ‚ wielki niczym dziesiÄ™ciu rosÅ‚ych mÄ™Å¼czyzn! Jego ognisty oddech w mgnieniu oka spopieliÅ‚ chaty!
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_02"); //Smok! Za Å¼adne skarby siÄ™ stÄ…d nie ruszÄ™! Nie jestem szaleÅ„cem!
 };
 
 

@@ -6,86 +6,86 @@ func void B_Preach_Vatras(var int satz)
 {
 	if (satz == 0) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Ale Beliar nie znosi³ widoku œwiat³a i niszczy³ wszystko, co Innos tworzy³.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Ale Beliar nie znosiÅ‚ widoku Å›wiatÅ‚a i niszczyÅ‚ wszystko, co Innos tworzyÅ‚.
 	};
 	if (satz == 1) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //Ujrza³ tedy Adanos, ¿e w ten sposób nic nie mo¿e istnieæ na œwiecie - ani jasnoœæ, ani mrok.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //UjrzaÅ‚ tedy Adanos, Å¼e w ten sposÃ³b nic nie moÅ¼e istnieÄ‡ na Å›wiecie - ani jasnoÅ›Ä‡, ani mrok.
 	};
 	if (satz == 2)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //Stan¹³ wiêc miêdzy swymi braæmi i próbowa³ pojednaæ ich ze sob¹, jednak¿e bez skutku.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //StanÄ…Å‚ wiÄ™c miÄ™dzy swymi braÄ‡mi i prÃ³bowaÅ‚ pojednaÄ‡ ich ze sobÄ…, jednakÅ¼e bez skutku.
 	};
 	if (satz == 3)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Ale tam, gdzie stan¹³ Adanos, ani Innos, ani Beliar nie mieli ¿adnej w³adzy.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Ale tam, gdzie stanÄ…Å‚ Adanos, ani Innos, ani Beliar nie mieli Å¼adnej wÅ‚adzy.
 	};
 	if (satz == 4)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //W miejscu tym £ad i Chaos wspó³istnia³y w harmonii. Tak oto powsta³o morze.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //W miejscu tym Åad i Chaos wspÃ³Å‚istniaÅ‚y w harmonii. Tak oto powstaÅ‚o morze.
 	};
 	if (satz == 5)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //A z morza wy³oni³ siê l¹d. A na l¹dzie powsta³o wszystko, co ¿ywe: roœliny i zwierzêta, wilki i owce. A na samym koñcu powstali ludzie.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //A z morza wyÅ‚oniÅ‚ siÄ™ lÄ…d. A na lÄ…dzie powstaÅ‚o wszystko, co Å¼ywe: roÅ›liny i zwierzÄ™ta, wilki i owce. A na samym koÅ„cu powstali ludzie.
 	};
 	if (satz == 6)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //Adanos cieszy³ siê ze wszystkiego, co wówczas powsta³o, a sw¹ mi³oœci¹ darzy³ jednakowo wszystkie rzeczy.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //Adanos cieszyÅ‚ siÄ™ ze wszystkiego, co wÃ³wczas powstaÅ‚o, a swÄ… miÅ‚oÅ›ciÄ… darzyÅ‚ jednakowo wszystkie rzeczy.
 	};
 	if (satz == 7)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Ale gniew Beliara by³ tak wielki, ¿e przemierzy³ on ca³¹ Ziemiê, by znaleŸæ bestiê. A gdy do niej przemówi³, sta³a siê ona jego s³ug¹.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Ale gniew Beliara byÅ‚ tak wielki, Å¼e przemierzyÅ‚ on caÅ‚Ä… ZiemiÄ™, by znaleÅºÄ‡ bestiÄ™. A gdy do niej przemÃ³wiÅ‚, staÅ‚a siÄ™ ona jego sÅ‚ugÄ….
 	};
 	if (satz == 8)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_08"); //Beliar tchn¹³ w ni¹ czêœæ swej boskiej mocy, by mog³a zniszczyæ ca³¹ Ziemiê.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_08"); //Beliar tchnÄ…Å‚ w niÄ… czÄ™Å›Ä‡ swej boskiej mocy, by mogÅ‚a zniszczyÄ‡ caÅ‚Ä… ZiemiÄ™.
 	};
 	if (satz == 9)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Ale Innos podpatrzy³ czyn Beliara i przemierzy³ Ziemiê, by znaleŸæ cz³owieka. A gdy do niego przemówi³, ten sta³ siê jego s³ug¹.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Ale Innos podpatrzyÅ‚ czyn Beliara i przemierzyÅ‚ ZiemiÄ™, by znaleÅºÄ‡ czÅ‚owieka. A gdy do niego przemÃ³wiÅ‚, ten staÅ‚ siÄ™ jego sÅ‚ugÄ….
 	};
 	if (satz == 10)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_10"); //Innos tchn¹³ w niego czêœæ swojej boskiej mocy, by móg³ on naprawiæ szkody wyrz¹dzone przez Beliara.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_10"); //Innos tchnÄ…Å‚ w niego czÄ™Å›Ä‡ swojej boskiej mocy, by mÃ³gÅ‚ on naprawiÄ‡ szkody wyrzÄ…dzone przez Beliara.
 	};
 	if (satz == 11)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //Tedy zwróci³ siê Beliar do innej istoty, ale Adanos zes³a³ potê¿n¹ falê, która zmy³a j¹ z powierzchni Ziemi.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //Tedy zwrÃ³ciÅ‚ siÄ™ Beliar do innej istoty, ale Adanos zesÅ‚aÅ‚ potÄ™Å¼nÄ… falÄ™, ktÃ³ra zmyÅ‚a jÄ… z powierzchni Ziemi.
 	};
 	if (satz == 12)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_12"); //Ale wraz z ni¹ odesz³y tak¿e drzewa i zwierzêta, wiêc Adanos wielce siê zasmuci³.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_12"); //Ale wraz z niÄ… odeszÅ‚y takÅ¼e drzewa i zwierzÄ™ta, wiÄ™c Adanos wielce siÄ™ zasmuciÅ‚.
 	};
 	if (satz == 13)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //I rzek³ wreszcie do swych braci: nigdy wiêcej nie postanie wasza noga na mojej Ziemi. Bo jest ona œwiêta i pozostanie tak¹ na wieki.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //I rzekÅ‚ wreszcie do swych braci: nigdy wiÄ™cej nie postanie wasza noga na mojej Ziemi. Bo jest ona Å›wiÄ™ta i pozostanie takÄ… na wieki.
 	};
 	if (satz == 14)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_14"); //Ale cz³owiek i bestia nie zaprzestali wojny na Ziemi Adanosa, i p³on¹³ w nich gniew ich bogów.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_14"); //Ale czÅ‚owiek i bestia nie zaprzestali wojny na Ziemi Adanosa, i pÅ‚onÄ…Å‚ w nich gniew ich bogÃ³w.
 	};
 	if (satz == 15)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //A cz³owiek pokona³ bestiê, która wróci³a do królestwa Beliara.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //A czÅ‚owiek pokonaÅ‚ bestiÄ™, ktÃ³ra wrÃ³ciÅ‚a do krÃ³lestwa Beliara.
 	};
 	if (satz == 16)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //I zobaczy³ Adanos, ¿e prys³a równowaga miêdzy £adem i Chaosem, i zakl¹³ Innosa, by ten odebra³ cz³owiekowi sw¹ bosk¹ moc.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //I zobaczyÅ‚ Adanos, Å¼e prysÅ‚a rÃ³wnowaga miÄ™dzy Åadem i Chaosem, i zaklÄ…Å‚ Innosa, by ten odebraÅ‚ czÅ‚owiekowi swÄ… boskÄ… moc.
 	};
 	if (satz == 17)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //A Innos, w swej m¹droœci, tak uczyni³.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //A Innos, w swej mÄ…droÅ›ci, tak uczyniÅ‚.
 	};
 	if (satz == 18)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_18"); //Ale Adanos obawia³ siê, ¿e pewnego dnia bestia powróci na Ziemiê.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_18"); //Ale Adanos obawiaÅ‚ siÄ™, Å¼e pewnego dnia bestia powrÃ³ci na ZiemiÄ™.
 	};
 	if (satz == 19)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //Dlatego uprosi³ Innosa, by ten zostawi³ czêœæ swej mocy na Ziemi, aby pewnego dnia przywróciæ j¹ cz³owiekowi.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //Dlatego uprosiÅ‚ Innosa, by ten zostawiÅ‚ czÄ™Å›Ä‡ swej mocy na Ziemi, aby pewnego dnia przywrÃ³ciÄ‡ jÄ… czÅ‚owiekowi.
 	};
 	if (satz == 20)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //A Innos, w swej m¹droœci, tak uczyni³.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //A Innos, w swej mÄ…droÅ›ci, tak uczyniÅ‚.
 	};
 };

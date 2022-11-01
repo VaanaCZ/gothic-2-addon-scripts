@@ -28,7 +28,7 @@ instance DIA_Addon_TAL_BDT_13_Hi(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Hi_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Hi_Info;
 	permanent	= TRUE;
-	description = "Co s³ychaæ?";
+	description = "Co sÅ‚ychaÄ‡?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
@@ -38,9 +38,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Co s³ychaæ?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//Po¿re ciê jakaœ bestia albo skoñczysz w brzuchu jakiegoœ bydlêcia.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//To bagno bêdzie naszym grobem...
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Co sÅ‚ychaÄ‡?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//PoÅ¼re ciÄ™ jakaÅ› bestia albo skoÅ„czysz w brzuchu jakiegoÅ› bydlÄ™cia.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//To bagno bÄ™dzie naszym grobem...
 };
 // *************************************************************************
 // 							Tal
@@ -62,8 +62,8 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Co wiesz o tej dolinie?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Pe³no w niej starych rzeczy. Kruk kaza³ nam wszystko zbieraæ.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Nie mam pojêcia, po co mu to, ale nikt przy zdrowych zmys³ach nie bêdzie nadstawia³ karku za parê kamyków...
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//PeÅ‚no w niej starych rzeczy. Kruk kazaÅ‚ nam wszystko zbieraÄ‡.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Nie mam pojÄ™cia, po co mu to, ale nikt przy zdrowych zmysÅ‚ach nie bÄ™dzie nadstawiaÅ‚ karku za parÄ™ kamykÃ³w...
 };
 // *************************************************************************
 // 							News
@@ -85,12 +85,12 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Co nowego?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Poprztykaliœmy siê z piratami.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Dostarczali nam wiêŸniów, ale nie dostali za to z³amanego miedziaka. Nic dziwnego, ¿e s¹ wœciekli.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//PoprztykaliÅ›my siÄ™ z piratami.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Dostarczali nam wiÄ™ÅºniÃ³w, ale nie dostali za to zÅ‚amanego miedziaka. Nic dziwnego, Å¼e sÄ… wÅ›ciekli.
 	
 	if (BDT_13_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//Ale co mog¹ zrobiæ? Zaatakowaæ obóz?
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_03");//Ale co mogÄ… zrobiÄ‡? ZaatakowaÄ‡ obÃ³z?
 		BDT_13_einmal = TRUE;
 	};
 };

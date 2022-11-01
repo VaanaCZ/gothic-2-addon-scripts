@@ -48,10 +48,10 @@ func int DIA_Talbin_HALLO_Condition ()
 
 func void DIA_Talbin_HALLO_Info ()
 {
-	AI_Output			(self, other, "DIA_Talbin_HALLO_07_00"); //StÛj! Ani kroku dalej!
+	AI_Output			(self, other, "DIA_Talbin_HALLO_07_00"); //St√≥j! Ani kroku dalej!
 	AI_Output			(other, self, "DIA_Talbin_HALLO_15_01"); //Nie ma sprawy!
-	AI_Output			(self, other, "DIA_Talbin_HALLO_07_02"); //Czyøby? No proszÍ, kolejna zagubiona owieczka, co? Z poczπtku wziπ≥em ciÍ za jednego z drani polujπcych w tym rejonie.
-	AI_Output			(self, other, "DIA_Talbin_HALLO_07_03"); //WidzÍ jednak, øe nie jesteú jednym z nich. Wyglπdasz raczej niegroünie!
+	AI_Output			(self, other, "DIA_Talbin_HALLO_07_02"); //Czy≈ºby? No proszƒô, kolejna zagubiona owieczka, co? Z poczƒÖtku wziƒÖ≈Çem ciƒô za jednego z drani polujƒÖcych w tym rejonie.
+	AI_Output			(self, other, "DIA_Talbin_HALLO_07_03"); //Widzƒô jednak, ≈ºe nie jeste≈õ jednym z nich. WyglƒÖdasz raczej niegro≈∫nie!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Talbin_WASMACHTIHR		(C_INFO)
 	condition	 = 	DIA_Talbin_WASMACHTIHR_Condition;
 	information	 = 	DIA_Talbin_WASMACHTIHR_Info;
 
-	description	 = 	"Wyglπdasz na myúliwego, ale chyba nie wiesz, co zrobiÊ z wolnym czasem.";
+	description	 = 	"WyglƒÖdasz na my≈õliwego, ale chyba nie wiesz, co zrobiƒá z wolnym czasem.";
 };
 
 func int DIA_Talbin_WASMACHTIHR_Condition ()
@@ -77,21 +77,21 @@ func int DIA_Talbin_WASMACHTIHR_Condition ()
 
 func void DIA_Talbin_WASMACHTIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_15_00"); //Wyglπdasz na myúliwego, ale chyba nie wiesz za bardzo, co zrobiÊ z wolnym czasem.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_01"); //Ha, Ha! Taa - tu siÍ z tobπ zgadzam. Ale cÛø mogÍ zrobiÊ, skoro nie mogÍ przedostaÊ siÍ przez prze≥Ícz.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_02"); //Czekam wiÍc tutaj i staram siÍ robiÊ to, co umiem najlepiej.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_15_00"); //WyglƒÖdasz na my≈õliwego, ale chyba nie wiesz za bardzo, co zrobiƒá z wolnym czasem.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_01"); //Ha, Ha! Taa - tu siƒô z tobƒÖ zgadzam. Ale c√≥≈º mogƒô zrobiƒá, skoro nie mogƒô przedostaƒá siƒô przez prze≈Çƒôcz.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_02"); //Czekam wiƒôc tutaj i staram siƒô robiƒá to, co umiem najlepiej.
 
 	if ((Npc_IsDead(Engrom)) == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_03"); //Jednak øal mi mojego kolegi, Engroma.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_03"); //Jednak ≈ºal mi mojego kolegi, Engroma.
 	};
 
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_04"); //Podejdü bliøej ognia, ogrzej siÍ trochÍ.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_07_04"); //Podejd≈∫ bli≈ºej ognia, ogrzej siƒô trochƒô.
 	
 	Info_ClearChoices	(DIA_Talbin_WASMACHTIHR);
 	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, DIALOG_BACK, DIA_Talbin_WASMACHTIHR_back );
-	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "Mimo to wydaje siÍ, øe jakoú sobie radzisz.", DIA_Talbin_WASMACHTIHR_gut );
-	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "Jesteú by≥ym wiÍüniem zza Bariery?", DIA_Talbin_WASMACHTIHR_strf );
+	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "Mimo to wydaje siƒô, ≈ºe jako≈õ sobie radzisz.", DIA_Talbin_WASMACHTIHR_gut );
+	Info_AddChoice	(DIA_Talbin_WASMACHTIHR, "Jeste≈õ by≈Çym wiƒô≈∫niem zza Bariery?", DIA_Talbin_WASMACHTIHR_strf );
 
 };
 func void DIA_Talbin_WASMACHTIHR_back ()
@@ -101,20 +101,20 @@ func void DIA_Talbin_WASMACHTIHR_back ()
 
 func void DIA_Talbin_WASMACHTIHR_strf ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_00"); //Jesteú by≥ym wiÍüniem zza Bariery?
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_01"); //Nie, nie! Skπd ten pomys≥? Przyby≥em tu tylko po to, øeby siÍ szybko wzbogaciÊ.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_02"); //Ktoú z tych okolic powiedzia≥ mi, øe te ziemie to úwietny teren ≥owiecki.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_03"); //Sporo zwierzyny, jeúli wiesz, co mam na myúli.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_04"); //Ostatnio zaú jedynπ rzeczπ, o jakπ tu naprawdÍ ≥atwo, jest moøliwoúÊ oberwania od orkÛw, jeúli zapuúcisz siÍ zbyt daleko.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_05"); //A ja jeszcze pozwoli≥em siÍ tym durniom zastraszyÊ.
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_06"); //Znam tych øartownisiÛw.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_00"); //Jeste≈õ by≈Çym wiƒô≈∫niem zza Bariery?
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_01"); //Nie, nie! SkƒÖd ten pomys≈Ç? Przyby≈Çem tu tylko po to, ≈ºeby siƒô szybko wzbogaciƒá.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_02"); //Kto≈õ z tych okolic powiedzia≈Ç mi, ≈ºe te ziemie to ≈õwietny teren ≈Çowiecki.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_03"); //Sporo zwierzyny, je≈õli wiesz, co mam na my≈õli.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_04"); //Ostatnio za≈õ jedynƒÖ rzeczƒÖ, o jakƒÖ tu naprawdƒô ≈Çatwo, jest mo≈ºliwo≈õƒá oberwania od ork√≥w, je≈õli zapu≈õcisz siƒô zbyt daleko.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_strf_07_05"); //A ja jeszcze pozwoli≈Çem siƒô tym durniom zastraszyƒá.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_strf_15_06"); //Znam tych ≈ºartownisi√≥w.
 };
 
 func void DIA_Talbin_WASMACHTIHR_gut ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_gut_15_00"); //Mimo to wydaje siÍ, øe jakoú sobie radzisz.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_01"); //CÛø! Nie mogÍ narzekaÊ. Mimo tych zafajdanych orkÛw, tereny na obrzeøach rzeki naleøπ do stosunkowo bezpiecznych.
-	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_02"); //Wydaje mi siÍ, øe nie lubiπ zbliøaÊ siÍ do wody. ChoÊ moøe to tylko zbieg okolicznoúci.
+	AI_Output			(other, self, "DIA_Talbin_WASMACHTIHR_gut_15_00"); //Mimo to wydaje siƒô, ≈ºe jako≈õ sobie radzisz.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_01"); //C√≥≈º! Nie mogƒô narzekaƒá. Mimo tych zafajdanych ork√≥w, tereny na obrze≈ºach rzeki nale≈ºƒÖ do stosunkowo bezpiecznych.
+	AI_Output			(self, other, "DIA_Talbin_WASMACHTIHR_gut_07_02"); //Wydaje mi siƒô, ≈ºe nie lubiƒÖ zbli≈ºaƒá siƒô do wody. Choƒá mo≈ºe to tylko zbieg okoliczno≈õci.
 };
 
 
@@ -128,7 +128,7 @@ instance DIA_Talbin_SORRYFORENGROM		(C_INFO)
 	condition	 = 	DIA_Talbin_SORRYFORENGROM_Condition;
 	information	 = 	DIA_Talbin_SORRYFORENGROM_Info;
 
-	description	 = 	"Dlaczego jest ci øal Engroma?";
+	description	 = 	"Dlaczego jest ci ≈ºal Engroma?";
 };
 
 func int DIA_Talbin_SORRYFORENGROM_Condition ()
@@ -145,9 +145,9 @@ func int DIA_Talbin_SORRYFORENGROM_Condition ()
 
 func void DIA_Talbin_SORRYFORENGROM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_SORRYFORENGROM_15_00"); //Dlaczego jest ci øal Engroma?
-	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_01"); //Poniewaø úlepo za mnπ podπøa, o nic nawet nie pyta.
-	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_02"); //Przez to wpakowaliúmy siÍ w k≥opoty. ChciwoúÊ, jak widaÊ, nie pop≥aca.
+	AI_Output			(other, self, "DIA_Talbin_SORRYFORENGROM_15_00"); //Dlaczego jest ci ≈ºal Engroma?
+	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_01"); //Poniewa≈º ≈õlepo za mnƒÖ podƒÖ≈ºa, o nic nawet nie pyta.
+	AI_Output			(self, other, "DIA_Talbin_SORRYFORENGROM_07_02"); //Przez to wpakowali≈õmy siƒô w k≈Çopoty. Chciwo≈õƒá, jak widaƒá, nie pop≈Çaca.
 };
 
 
@@ -161,7 +161,7 @@ instance DIA_Talbin_WASJAGDIHR		(C_INFO)
 	condition	 = 	DIA_Talbin_WASJAGDIHR_Condition;
 	information	 = 	DIA_Talbin_WASJAGDIHR_Info;
 
-	description	 = 	"Na co polujesz nad rzekπ?";
+	description	 = 	"Na co polujesz nad rzekƒÖ?";
 };
 
 func int DIA_Talbin_WASJAGDIHR_Condition ()
@@ -176,10 +176,10 @@ func int DIA_Talbin_WASJAGDIHR_Condition ()
 
 func void DIA_Talbin_WASJAGDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WASJAGDIHR_15_00"); //Na co polujesz nad rzekπ?
-	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_01"); //Co to za pytanie? Przejdü siÍ tylko brzegiem, a szybko siÍ domyúlisz. Oczywiúcie na topielce!
-	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_02"); //Nie≥atwo z≥apaÊ te bestie, ale za to smakujπ wyúmienicie.
-	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_03"); //Od czasu do czasu natykam siÍ teø na úcierwojady, ale nimi teø nie pogardzam.
+	AI_Output			(other, self, "DIA_Talbin_WASJAGDIHR_15_00"); //Na co polujesz nad rzekƒÖ?
+	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_01"); //Co to za pytanie? Przejd≈∫ siƒô tylko brzegiem, a szybko siƒô domy≈õlisz. Oczywi≈õcie na topielce!
+	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_02"); //Nie≈Çatwo z≈Çapaƒá te bestie, ale za to smakujƒÖ wy≈õmienicie.
+	AI_Output			(self, other, "DIA_Talbin_WASJAGDIHR_07_03"); //Od czasu do czasu natykam siƒô te≈º na ≈õcierwojady, ale nimi te≈º nie pogardzam.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -192,7 +192,7 @@ instance DIA_Talbin_ENGROMANGRY		(C_INFO)
 	condition	 = 	DIA_Talbin_ENGROMANGRY_Condition;
 	information	 = 	DIA_Talbin_ENGROMANGRY_Info;
 
-	description	 = 	"TwÛj kumpel jest chyba nieco zestresowany!";
+	description	 = 	"Tw√≥j kumpel jest chyba nieco zestresowany!";
 };
 
 func int DIA_Talbin_ENGROMANGRY_Condition ()
@@ -212,9 +212,9 @@ func int DIA_Talbin_ENGROMANGRY_Condition ()
 
 func void DIA_Talbin_ENGROMANGRY_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_ENGROMANGRY_15_00"); //TwÛj kumpel jest chyba nieco zestresowany!
-	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_01"); //PrzestaÒ! Nie prowokuj go wiÍcej, bo urwie mi ≥eb. W tej chwili nic nie poradzÍ na to, øe musimy tu siedzieÊ.
-	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_02"); //Kiedyú sobie za to odbijÍ!
+	AI_Output			(other, self, "DIA_Talbin_ENGROMANGRY_15_00"); //Tw√≥j kumpel jest chyba nieco zestresowany!
+	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_01"); //Przesta≈Ñ! Nie prowokuj go wiƒôcej, bo urwie mi ≈Çeb. W tej chwili nic nie poradzƒô na to, ≈ºe musimy tu siedzieƒá.
+	AI_Output			(self, other, "DIA_Talbin_ENGROMANGRY_07_02"); //Kiedy≈õ sobie za to odbijƒô!
 };
 
 
@@ -229,7 +229,7 @@ INSTANCE DIA_Talbin_AskTeacher (C_INFO)
 	condition	= DIA_Talbin_AskTeacher_Condition;
 	information	= DIA_Talbin_AskTeacher_Info;
 
-	description = "Moøesz nauczyÊ mnie czegoú o polowaniu?";
+	description = "Mo≈ºesz nauczyƒá mnie czego≈õ o polowaniu?";
 };                       
 
 FUNC INT DIA_Talbin_AskTeacher_Condition()
@@ -244,14 +244,14 @@ FUNC INT DIA_Talbin_AskTeacher_Condition()
 
 FUNC VOID DIA_Talbin_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_00"); //Czy mÛg≥byú nauczyÊ mnie czegoú o polowaniach?
-	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_01"); //Rozumiem! Nagle ci siÍ spodoba≥y. W porzπdku, ale nie ma nic za darmo.
-	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_02"); //Czego øπdasz?
-	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_03"); //Nie masz przypadkiem czegoú do jedzenia, czegoú innego niø miÍso topielca? Powiedzmy, kawa≥ek sera. Tak, ser... Odda≥bym øycie za kawa≥ek sera.
-	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_04"); //ZobaczÍ, co da siÍ zrobiÊ.
+	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_00"); //Czy m√≥g≈Çby≈õ nauczyƒá mnie czego≈õ o polowaniach?
+	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_01"); //Rozumiem! Nagle ci siƒô spodoba≈Çy. W porzƒÖdku, ale nie ma nic za darmo.
+	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_02"); //Czego ≈ºƒÖdasz?
+	AI_Output(self,other,"DIA_Talbin_AskTeacher_07_03"); //Nie masz przypadkiem czego≈õ do jedzenia, czego≈õ innego ni≈º miƒôso topielca? Powiedzmy, kawa≈Çek sera. Tak, ser... Odda≈Çbym ≈ºycie za kawa≈Çek sera.
+	AI_Output(other,self,"DIA_Talbin_AskTeacher_15_04"); //Zobaczƒô, co da siƒô zrobiƒá.
 		
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Talbin moøe mnie nauczyÊ, jak sporzπdzaÊ trofea.");
+	B_LogEntry		(TOPIC_Teacher, "Talbin mo≈ºe mnie nauczyƒá, jak sporzƒÖdzaƒá trofea.");
 };
 
 
@@ -266,7 +266,7 @@ INSTANCE DIA_Talbin_PayTeacher (C_INFO)
 	condition	= DIA_Talbin_PayTeacher_Condition;
 	information	= DIA_Talbin_PayTeacher_Info;
 	permanent	= TRUE;
-	description = "Oto twÛj ser. Czy teraz bÍdziesz mnie uczy≥?";
+	description = "Oto tw√≥j ser. Czy teraz bƒôdziesz mnie uczy≈Ç?";
 };                       
 
 var int DIA_Talbin_PayTeacher_noPerm;
@@ -288,15 +288,15 @@ FUNC VOID DIA_Talbin_PayTeacher_Info()
 {
 	if (B_GiveInvItems (other, self, itfo_Cheese, 1))
 	{
-		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_00"); //Oto twÛj ser. Czy teraz bÍdziesz mnie uczy≥?
-		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_01"); //NaprawdÍ uda≥o ci siÍ go zdobyÊ? Od wiekÛw nie jad≥em czegoú tak wspania≥ego. DziÍkujÍ. Er, a co powiesz na... o tak. Jasne!
+		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_00"); //Oto tw√≥j ser. Czy teraz bƒôdziesz mnie uczy≈Ç?
+		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_01"); //Naprawdƒô uda≈Ço ci siƒô go zdobyƒá? Od wiek√≥w nie jad≈Çem czego≈õ tak wspania≈Çego. Dziƒôkujƒô. Er, a co powiesz na... o tak. Jasne!
 		Talbin_TeachAnimalTrophy = TRUE;
 		DIA_Talbin_PayTeacher_noPerm = TRUE;
 	}
-	else	//SC hat keinen K‰se
+	else	//SC hat keinen K√§se
 	{
 		AI_Output(other,self,"DIA_Talbin_PayTeacher_15_02"); //W tej chwili nie mam przy sobie sera.
-		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_03"); //To zbyt piÍkne, by mog≥o byÊ prawdziwe. Daj mi znaÊ jak go zdobÍdziesz.
+		AI_Output(self,other,"DIA_Talbin_PayTeacher_07_03"); //To zbyt piƒôkne, by mog≈Ço byƒá prawdziwe. Daj mi znaƒá jak go zdobƒôdziesz.
 	};
 };
 
@@ -311,7 +311,7 @@ instance DIA_Talbin_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Talbin_TEACHHUNTING_Condition;
 	information	 = 	DIA_Talbin_TEACHHUNTING_Info;
 	permanent	= TRUE;
-	description	 = 	"Czego moøesz mnie nauczyÊ?";
+	description	 = 	"Czego mo≈ºesz mnie nauczyƒá?";
 };
 
 func int DIA_Talbin_TEACHHUNTING_Condition ()
@@ -326,7 +326,7 @@ func int DIA_Talbin_TEACHHUNTING_Condition ()
 
 func void DIA_Talbin_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_TEACHHUNTING_15_00"); //Czego moøesz mnie nauczyÊ?
+	AI_Output			(other, self, "DIA_Talbin_TEACHHUNTING_15_00"); //Czego mo≈ºesz mnie nauczyƒá?
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
@@ -334,32 +334,32 @@ func void DIA_Talbin_TEACHHUNTING_Info ()
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			)
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_01"); //A co chcesz wiedzieÊ?
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_01"); //A co chcesz wiedzieƒá?
 		
 
 			Info_AddChoice		(DIA_Talbin_TEACHHUNTING, DIALOG_BACK, DIA_Talbin_TEACHHUNTING_BACK);
 		
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Claws] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("UsuÒ pazury",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Talbin_TEACHHUNTING_Claws);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Usu≈Ñ pazury",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Claws)),  DIA_Talbin_TEACHHUNTING_Claws);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Obedrzyj ze skÛry",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Talbin_TEACHHUNTING_Fur);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Obedrzyj ze sk√≥ry",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Fur)),  DIA_Talbin_TEACHHUNTING_Fur);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("RÛg cieniostwora",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Talbin_TEACHHUNTING_ShadowHorn);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("R√≥g cieniostwora",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Talbin_TEACHHUNTING_ShadowHorn);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("UsuÒ serce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Talbin_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Talbin_TEACHHUNTING, B_BuildLearnString ("Usu≈Ñ serce",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Talbin_TEACHHUNTING_Heart);
 			};
 
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_02"); //MuszÍ ciÍ rozczarowaÊ. Wiesz juø wszystko, czego mÛg≥bym ciÍ nauczyÊ. Jeszcze raz, dziÍki za ser!
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_07_02"); //Muszƒô ciƒô rozczarowaƒá. Wiesz ju≈º wszystko, czego m√≥g≈Çbym ciƒô nauczyƒá. Jeszcze raz, dziƒôki za ser!
 		};
 };
 
@@ -373,8 +373,8 @@ func void DIA_Talbin_TEACHHUNTING_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_00"); //Odrπbywanie pazurÛw jest stosunkowo ≥atwe. £apiesz pazur na wysokoúci stawu i przyciskasz mocno do ziemi.
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_01"); //Potem bierzesz nÛø i ostroøne odcinasz pazur.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_00"); //OdrƒÖbywanie pazur√≥w jest stosunkowo ≈Çatwe. ≈Åapiesz pazur na wysoko≈õci stawu i przyciskasz mocno do ziemi.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Claws_07_01"); //Potem bierzesz n√≥≈º i ostro≈ºne odcinasz pazur.
 		};
 
 		Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
@@ -385,8 +385,8 @@ func void DIA_Talbin_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_00"); //Naj≥atwiejszy sposÛb na oskÛrowanie topielca to rozciπÊ skÛrÍ wzd≥uø brzucha...
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_01"); //...potem szarpnπÊ mocno za tylne ≥apy, i úciπgnπÊ skÛrÍ w jednym kawa≥ku.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_00"); //Naj≈Çatwiejszy spos√≥b na osk√≥rowanie topielca to rozciƒÖƒá sk√≥rƒô wzd≈Çu≈º brzucha...
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Fur_07_01"); //...potem szarpnƒÖƒá mocno za tylne ≈Çapy, i ≈õciƒÖgnƒÖƒá sk√≥rƒô w jednym kawa≈Çku.
 		};
 	Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
 };
@@ -395,7 +395,7 @@ func void DIA_Talbin_TEACHHUNTING_Shadowhorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_ShadowHorn_07_00"); //Rogi cieniostwora sπ bardzo twarde, toteø uøywa siÍ ich do robienia figurek i narzÍdzi.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_ShadowHorn_07_00"); //Rogi cieniostwora sƒÖ bardzo twarde, tote≈º u≈ºywa siƒô ich do robienia figurek i narzƒôdzi.
 		};
 	Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
 };
@@ -403,7 +403,7 @@ func void DIA_Talbin_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Heart_07_00"); //Bardzo trudne do zdobycia sπ serca magicznych stworzeÒ. Jeúli zechcesz dostaÊ jedno z nich, musisz bardzo uwaøaÊ, szczegÛlnie w przypadku golemÛw.
+			AI_Output			(self, other, "DIA_Talbin_TEACHHUNTING_Heart_07_00"); //Bardzo trudne do zdobycia sƒÖ serca magicznych stworze≈Ñ. Je≈õli zechcesz dostaƒá jedno z nich, musisz bardzo uwa≈ºaƒá, szczeg√≥lnie w przypadku golem√≥w.
 		};
 	Info_ClearChoices	(DIA_Talbin_TEACHHUNTING);
 };
@@ -488,7 +488,7 @@ instance DIA_Talbin_KAP4_WASNEUES		(C_INFO)
 	condition	 = 	DIA_Talbin_KAP4_WASNEUES_Condition;
 	information	 = 	DIA_Talbin_KAP4_WASNEUES_Info;
 
-	description  =  "Czy ktoú tÍdy przechodzi≥?";
+	description  =  "Czy kto≈õ tƒôdy przechodzi≈Ç?";
 };
 
 func int DIA_Talbin_KAP4_WASNEUES_Condition ()
@@ -503,8 +503,8 @@ func int DIA_Talbin_KAP4_WASNEUES_Condition ()
 
 func void DIA_Talbin_KAP4_WASNEUES_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_KAP4_WASNEUES_15_00"); //Czy ktoú tÍdy przechodzi≥?
-	AI_Output			(self, other, "DIA_Talbin_KAP4_WASNEUES_07_01"); //Tak. Niedawno widzia≥em tutaj grupkÍ úmiesznych goúci! Paradowali w swoich wyglansowanych zbrojach i udawali bardzo waønych.
+	AI_Output			(other, self, "DIA_Talbin_KAP4_WASNEUES_15_00"); //Czy kto≈õ tƒôdy przechodzi≈Ç?
+	AI_Output			(self, other, "DIA_Talbin_KAP4_WASNEUES_07_01"); //Tak. Niedawno widzia≈Çem tutaj grupkƒô ≈õmiesznych go≈õci! Paradowali w swoich wyglansowanych zbrojach i udawali bardzo wa≈ºnych.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -517,7 +517,7 @@ instance DIA_Talbin_KAP4_WASWOLLTENDJG		(C_INFO)
 	condition	 = 	DIA_Talbin_KAP4_WASWOLLTENDJG_Condition;
 	information	 = 	DIA_Talbin_KAP4_WASWOLLTENDJG_Info;
 
-	description	 = 	"Czego tu chcieli ci 'úmieszni goúcie'?";
+	description	 = 	"Czego tu chcieli ci '≈õmieszni go≈õcie'?";
 };
 
 func int DIA_Talbin_KAP4_WASWOLLTENDJG_Condition ()
@@ -533,13 +533,13 @@ if 	(Npc_KnowsInfo(other, DIA_Talbin_KAP4_WASNEUES))
 
 func void DIA_Talbin_KAP4_WASWOLLTENDJG_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_KAP4_WASWOLLTENDJG_15_00"); //Czego tu chcieli ci 'úmieszni goúcie'?
-	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_01"); //Pytali o zapasy i sprzÍt. Cz≥owieku, ja sam ledwo ciπgnÍ!
-	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_02"); //Ciπgle gadali coú o zabijaniu smokÛw. Bogowie jedni wiedzπ, skπd przysz≥a ta banda, nie wzbudzili jednak mojego zaufania.
+	AI_Output			(other, self, "DIA_Talbin_KAP4_WASWOLLTENDJG_15_00"); //Czego tu chcieli ci '≈õmieszni go≈õcie'?
+	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_01"); //Pytali o zapasy i sprzƒôt. Cz≈Çowieku, ja sam ledwo ciƒÖgnƒô!
+	AI_Output			(self, other, "DIA_Talbin_KAP4_WASWOLLTENDJG_07_02"); //CiƒÖgle gadali co≈õ o zabijaniu smok√≥w. Bogowie jedni wiedzƒÖ, skƒÖd przysz≈Ça ta banda, nie wzbudzili jednak mojego zaufania.
 
 	if (Kapitel == 4)
 	{
-		B_LogEntry (TOPIC_Dragonhunter,"Grupa ≥owcÛw smokÛw zatrzyma≥a siÍ obok siedziby myúliwego Talbina."); 
+		B_LogEntry (TOPIC_Dragonhunter,"Grupa ≈Çowc√≥w smok√≥w zatrzyma≈Ça siƒô obok siedziby my≈õliwego Talbina."); 
 	};
 };
 
@@ -555,7 +555,7 @@ instance DIA_Talbin_WOENGROM		(C_INFO)
 	condition	 = 	DIA_Talbin_WOENGROM_Condition;
 	information	 = 	DIA_Talbin_WOENGROM_Info;
 
-	description	 = 	"Jesteú sam?";
+	description	 = 	"Jeste≈õ sam?";
 };
 
 func int DIA_Talbin_WOENGROM_Condition ()
@@ -572,16 +572,16 @@ func int DIA_Talbin_WOENGROM_Condition ()
 
 func void DIA_Talbin_WOENGROM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_00"); //Jesteú sam?
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_01"); //Tak. MÛj kompan, Engrom, po prostu wsta≥ wczoraj i poszed≥ sobie. Powiedzia≥, øe mia≥ wizjÍ, w ktÛrej s≥ysza≥ jakiú ≥agodny g≥os.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_02"); //Ja tam nic nie s≥ysza≥em. Pomyúla≥em sobie, øe pewnie do koÒca mu juø odbi≥o.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_03"); //...chwilÍ potem juø go nie by≥o.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_04"); //Jeúli spotkasz gdzieú Engroma, przypomnij sukinkotowi, øe wciπø mi jest winny skÛrÍ topielca.
+	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_00"); //Jeste≈õ sam?
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_01"); //Tak. M√≥j kompan, Engrom, po prostu wsta≈Ç wczoraj i poszed≈Ç sobie. Powiedzia≈Ç, ≈ºe mia≈Ç wizjƒô, w kt√≥rej s≈Çysza≈Ç jaki≈õ ≈Çagodny g≈Ços.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_02"); //Ja tam nic nie s≈Çysza≈Çem. Pomy≈õla≈Çem sobie, ≈ºe pewnie do ko≈Ñca mu ju≈º odbi≈Ço.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_03"); //...chwilƒô potem ju≈º go nie by≈Ço.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_04"); //Je≈õli spotkasz gdzie≈õ Engroma, przypomnij sukinkotowi, ≈ºe wciƒÖ≈º mi jest winny sk√≥rƒô topielca.
 
 	if (Npc_KnowsInfo(other, DIA_Engrom_WhatAboutLeaving))
 		{
-	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_05"); //Myúla≥em, øe nie chcia≥ odejúÊ, bo ba≥ siÍ orkÛw. Czeka≥, aø zniknπ.
-	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_06"); //Jak juø mÛwi≥em - ca≥kowicie mu odbi≥o.
+	AI_Output			(other, self, "DIA_Talbin_WOENGROM_15_05"); //My≈õla≈Çem, ≈ºe nie chcia≈Ç odej≈õƒá, bo ba≈Ç siƒô ork√≥w. Czeka≈Ç, a≈º zniknƒÖ.
+	AI_Output			(self, other, "DIA_Talbin_WOENGROM_07_06"); //Jak ju≈º m√≥wi≈Çem - ca≈Çkowicie mu odbi≈Ço.
 		};
 	MIS_Tabin_LookForEngrom = LOG_RUNNING;
 };
@@ -596,7 +596,7 @@ instance DIA_Talbin_FOUNDENGROM		(C_INFO)
 	condition	 = 	DIA_Talbin_FOUNDENGROM_Condition;
 	information	 = 	DIA_Talbin_FOUNDENGROM_Info;
 
-	description	 = 	"Znalaz≥em twojego kompana, Engroma.";
+	description	 = 	"Znalaz≈Çem twojego kompana, Engroma.";
 };
 
 func int DIA_Talbin_FOUNDENGROM_Condition ()
@@ -613,37 +613,37 @@ func int DIA_Talbin_FOUNDENGROM_Condition ()
 
 func void DIA_Talbin_FOUNDENGROM_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_00"); //Znalaz≥em twojego kompana, Engroma.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_00"); //Znalaz≈Çem twojego kompana, Engroma.
 	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_01"); //Tak? Gdzie jest?
 
 
 	if (Npc_IsDead(Engrom))
 	{
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_02"); //Nie øyje.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_02"); //Nie ≈ºyje.
 	}
 	else	
 	{
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_03"); //Juø wiÍcej go chyba nie ujrzysz.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_03"); //Ju≈º wiƒôcej go chyba nie ujrzysz.
 	};
 
 	if (B_GiveInvItems (other, self, ItAt_TalbinsLurkerSkin,1))
 	{
-	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_04"); //ProszÍ, znalaz≥em przy nim skÛrÍ topielca.
+	AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_04"); //Proszƒô, znalaz≈Çem przy nim sk√≥rƒô topielca.
 	};	
 
 	if (hero.guild ==GIL_KDF)
 	{
-		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_05"); //Poszukiwacze go opÍtali.
-		AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_06"); //Poszukiwacze, a ktÛø to taki?
-		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_07"); //To s≥udzy Z≥a. Prawdziwi przywÛdcy orkÛw.
+		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_05"); //Poszukiwacze go opƒôtali.
+		AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_06"); //Poszukiwacze, a kt√≥≈º to taki?
+		AI_Output			(other, self, "DIA_Talbin_FOUNDENGROM_15_07"); //To s≈Çudzy Z≈Ça. Prawdziwi przyw√≥dcy ork√≥w.
 	};	
 
-	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_08"); //Na Innosa, muszÍ siÍ stπd wydostaÊ, nawet naraøajπc øycie. Teraz albo nigdy!
+	AI_Output			(self, other, "DIA_Talbin_FOUNDENGROM_07_08"); //Na Innosa, muszƒô siƒô stƒÖd wydostaƒá, nawet nara≈ºajƒÖc ≈ºycie. Teraz albo nigdy!
 	AI_StopProcessInfos (self);	
 
 	Log_CreateTopic (TOPIC_Talbin_Runs, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Talbin_Runs, LOG_RUNNING);
-	B_LogEntry (TOPIC_Talbin_Runs,"Talbin, myúliwy z GÛrniczej Doliny, pobieg≥ w stronÍ prze≥Íczy, jakby úciga≥y go ca≥e chmary krwiopijcÛw. SπdzÍ, øe skieruje siÍ do Khorinis."); 
+	B_LogEntry (TOPIC_Talbin_Runs,"Talbin, my≈õliwy z G√≥rniczej Doliny, pobieg≈Ç w stronƒô prze≈Çƒôczy, jakby ≈õciga≈Çy go ca≈Çe chmary krwiopijc√≥w. SƒÖdzƒô, ≈ºe skieruje siƒô do Khorinis."); 
 
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"FleePass");
@@ -663,7 +663,7 @@ instance DIA_Talbin_WOHIN		(C_INFO)
 	information	 = 	DIA_Talbin_WOHIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Dokπd siÍ udasz?";
+	description	 = 	"DokƒÖd siƒô udasz?";
 };
 
 func int DIA_Talbin_WOHIN_Condition ()
@@ -678,20 +678,20 @@ func int DIA_Talbin_WOHIN_Condition ()
 
 func void DIA_Talbin_WOHIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_15_00"); //Dokπd pÛjdziesz?
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_15_00"); //DokƒÖd p√≥jdziesz?
 
 		if (Npc_GetDistToWP(self,"START")<1000) 
 		{
-			AI_Output			(self, other, "DIA_Talbin_WOHIN_07_01"); //Zabierz mnie za prze≥Ícz, proszÍ.
+			AI_Output			(self, other, "DIA_Talbin_WOHIN_07_01"); //Zabierz mnie za prze≈Çƒôcz, proszƒô.
 		
 			Info_ClearChoices	(DIA_Talbin_WOHIN);
 			Info_AddChoice	(DIA_Talbin_WOHIN, "Nie mam dla ciebie czasu.", DIA_Talbin_WOHIN_ );
-			Info_AddChoice	(DIA_Talbin_WOHIN, "Idü po prostu przed siebie.", DIA_Talbin_WOHIN_durch );
-			Info_AddChoice	(DIA_Talbin_WOHIN, "W porzπdku.", DIA_Talbin_WOHIN_ok );
+			Info_AddChoice	(DIA_Talbin_WOHIN, "Id≈∫ po prostu przed siebie.", DIA_Talbin_WOHIN_durch );
+			Info_AddChoice	(DIA_Talbin_WOHIN, "W porzƒÖdku.", DIA_Talbin_WOHIN_ok );
 		}
 		else
 		{
-		AI_Output			(self, other, "DIA_Talbin_WOHIN_07_02"); //MuszÍ siÍ stπd wynosiÊ, dotrzeÊ za prze≥Ícz. Z drogi!
+		AI_Output			(self, other, "DIA_Talbin_WOHIN_07_02"); //Muszƒô siƒô stƒÖd wynosiƒá, dotrzeƒá za prze≈Çƒôcz. Z drogi!
 		AI_StopProcessInfos (self);
 		};
 
@@ -699,8 +699,8 @@ func void DIA_Talbin_WOHIN_Info ()
 };
 func void DIA_Talbin_WOHIN_ok ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_ok_15_00"); //W porzπdku.
-	AI_Output			(self, other, "DIA_Talbin_WOHIN_ok_07_01"); //DziÍkujÍ. Po prostu pÛjdÍ za tobπ.
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_ok_15_00"); //W porzƒÖdku.
+	AI_Output			(self, other, "DIA_Talbin_WOHIN_ok_07_01"); //Dziƒôkujƒô. Po prostu p√≥jdƒô za tobƒÖ.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"IntoPass");
 	Talbin_FollowsThroughPass = LOG_RUNNING;
@@ -710,15 +710,15 @@ func void DIA_Talbin_WOHIN_ok ()
 
 func void DIA_Talbin_WOHIN_durch ()
 {
-	AI_Output			(other, self, "DIA_Talbin_WOHIN_durch_15_00"); //Idü po prostu przed siebie.
-	AI_Output			(self, other, "DIA_Talbin_WOHIN_durch_07_01"); //Tak ciemno... Nie wejdÍ tam za øadne skarby.
+	AI_Output			(other, self, "DIA_Talbin_WOHIN_durch_15_00"); //Id≈∫ po prostu przed siebie.
+	AI_Output			(self, other, "DIA_Talbin_WOHIN_durch_07_01"); //Tak ciemno... Nie wejdƒô tam za ≈ºadne skarby.
 
 };
 
 func void DIA_Talbin_WOHIN_ ()
 {
 	AI_Output			(other, self, "DIA_Talbin_WOHIN_schwein_15_00"); //Nie mam dla ciebie czasu.
-	AI_Output			(self, other, "DIA_Talbin_WOHIN_schwein_07_01"); //Chcesz mnie tu zostawiÊ, bym zgni≥. Sp≥oniesz za to w piekle!
+	AI_Output			(self, other, "DIA_Talbin_WOHIN_schwein_07_01"); //Chcesz mnie tu zostawiƒá, bym zgni≈Ç. Sp≈Çoniesz za to w piekle!
 	Talbin_FollowsThroughPass = LOG_OBSOLETE;
 	AI_StopProcessInfos (self);
 };
@@ -748,7 +748,7 @@ func int DIA_Talbin_VERSCHWINDE_Condition ()
 func void DIA_Talbin_VERSCHWINDE_Info ()
 {
 	AI_Output			(other, self, "DIA_Talbin_VERSCHWINDE_15_00"); //Hej!
-	AI_Output			(self, other, "DIA_Talbin_VERSCHWINDE_07_01"); //Won. PoradzÍ sobie bez ciebie, szumowino.
+	AI_Output			(self, other, "DIA_Talbin_VERSCHWINDE_07_01"); //Won. Poradzƒô sobie bez ciebie, szumowino.
 	AI_StopProcessInfos (self);
 };
 

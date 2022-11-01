@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMi_Flask
+// ben√∂tigtes Item daf√ºr: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tr‰nke herstellen  Dialoge 
+//Tr√§nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -67,7 +67,7 @@ INSTANCE PC_Booze_Start (C_Info)
 	condition		= PC_Booze_Start_Condition;
 	information		= PC_Booze_Start_Info;
 	permanent		= TRUE;
-	description		= "Destyluj gorza≥kÍ"; 
+	description		= "Destyluj gorza≈Çkƒô"; 
 };
 
 FUNC INT PC_Booze_Start_Condition ()
@@ -119,7 +119,7 @@ INSTANCE PC_Booze_Lou (C_Info)
 	condition		= PC_Booze_Lou_Condition;
 	information		= PC_Booze_Lou_Info;
 	permanent		= TRUE;
-	description		= "SprÛbuj przygotowaÊ M≥ot Lou..."; 
+	description		= "Spr√≥buj przygotowaƒá M≈Çot Lou..."; 
 };
 
 FUNC INT PC_Booze_Lou_Condition ()
@@ -162,7 +162,7 @@ INSTANCE PC_Booze_Schlaf (C_Info)
 	condition		= PC_Booze_Schlaf_Condition;
 	information		= PC_Booze_Schlaf_Info;
 	permanent		= TRUE;
-	description		= "M≥ot Lou z podwÛjnπ zawartoúciπ rumu."; 
+	description		= "M≈Çot Lou z podw√≥jnƒÖ zawarto≈õciƒÖ rumu."; 
 };
 
 FUNC INT PC_Booze_Schlaf_Condition ()
@@ -206,7 +206,7 @@ INSTANCE PC_Booze_SchnellerHering (C_Info)
 	condition		= PC_Booze_SchnellerHering_Condition;
 	information		= PC_Booze_SchnellerHering_Info;
 	permanent		= TRUE;
-	description		= "Zmieszaj Szybkiego úledzia."; 
+	description		= "Zmieszaj Szybkiego ≈õledzia."; 
 };
 
 FUNC INT PC_Booze_SchnellerHering_Condition ()
@@ -249,7 +249,7 @@ INSTANCE PC_Charge_InnosEye (C_INFO)
 	condition		= PC_Charge_InnosEye_Condition;
 	information		= PC_Charge_InnosEye_Info;
 	permanent		= TRUE;
-	description		= "Ponowne na≥aduj Oko Innosa"; 
+	description		= "Ponowne na≈Çaduj Oko Innosa"; 
 };
 FUNC INT PC_Charge_InnosEye_Condition()
 {	
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tr‰nke 
+//Mana Tr√§nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -475,7 +475,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Pe≥nia many (3 esencje many, 1 rdest polny)"; 
+	description		= "Pe≈Çnia many (3 esencje many, 1 rdest polny)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltr‰nke 
+//Heiltr√§nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -569,7 +569,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Esencja lecznicza (2 roúliny lecznicze, 1 rdest polny)"; 
+	description		= "Esencja lecznicza (2 ro≈õliny lecznicze, 1 rdest polny)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -686,7 +686,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "Pe≥nia øycia (3 esencje lecznicze, 1 rdest polny)"; 
+	description		= "Pe≈Çnia ≈ºycia (3 esencje lecznicze, 1 rdest polny)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tr‰nke 
+//Spezielle Tr√§nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -829,7 +829,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Eliksir øycia (1 korzeÒ leczniczy, 1 szczaw krÛlewski)"; 
+	description		= "Eliksir ≈ºycia (1 korze≈Ñ leczniczy, 1 szczaw kr√≥lewski)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -868,7 +868,7 @@ INSTANCE PC_ItPo_Perm_Mana (C_INFO)
 	condition		= PC_ItPo_Perm_Mana_Condition;
 	information		= PC_ItPo_Perm_Mana_Info;
 	permanent		= TRUE;
-	description		= "Eliksir ducha (1 ognisty korzeÒ, 1 szczaw krÛlewski)"; 
+	description		= "Eliksir ducha (1 ognisty korze≈Ñ, 1 szczaw kr√≥lewski)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Mana_Condition()
@@ -907,7 +907,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Mikstura zrÍcznoúci (1 porcja goblinich jagÛd, 1 szczaw krÛlewski)"; 
+	description		= "Mikstura zrƒôczno≈õci (1 porcja goblinich jag√≥d, 1 szczaw kr√≥lewski)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -946,7 +946,7 @@ INSTANCE PC_ItPo_Strg (C_INFO)
 	condition		= PC_ItPo_Strg_Condition;
 	information		= PC_ItPo_Strg_Info;
 	permanent		= TRUE;
-	description		= "Mikstura si≥y (1 smoczy korzeÒ, 1 szczaw krÛlewski)"; 
+	description		= "Mikstura si≈Çy (1 smoczy korze≈Ñ, 1 szczaw kr√≥lewski)"; 
 };
 
 FUNC INT PC_ItPo_Strg_Condition()
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Mikstura szybkoúci (1 zÍbate ziele, 1 rdest polny)"; 
+	description		= "Mikstura szybko≈õci (1 zƒôbate ziele, 1 rdest polny)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1028,7 +1028,7 @@ INSTANCE PC_Tabak_Start (C_Info)
 	condition		= PC_Tabak_Start_Condition;
 	information		= PC_Tabak_Start_Info;
 	permanent		= TRUE;
-	description		= "Zmieszaj tytoÒ i zwiÒ ≥odygi"; 
+	description		= "Zmieszaj tyto≈Ñ i zwi≈Ñ ≈Çodygi"; 
 };
 
 FUNC INT PC_Tabak_Start_Condition ()
@@ -1081,7 +1081,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Przekszta≥cenie bagiennego ziela (1 ≥odyga)"; 
+	description		= "Przekszta≈Çcenie bagiennego ziela (1 ≈Çodyga)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Gr¸nen Novizen herstellen
+//	Gr√ºnen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1119,7 +1119,7 @@ INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 	condition		= PC_ItMi_Addon_Joint_01_Condition;
 	information		= PC_ItMi_Addon_Joint_01_Info;
 	permanent		= TRUE;
-	description		= "ZrÛb zielonego nowicjusza (1 ≥odyga)"; 
+	description		= "Zr√≥b zielonego nowicjusza (1 ≈Çodyga)"; 
 };
 
 FUNC INT PC_ItMi_Addon_Joint_01_Condition()
@@ -1190,7 +1190,7 @@ FUNC VOID PC_ItMi_Tabak_Info ()
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"...z mu≥owym grzybem",PC_ItMi_Tabak_Mushroom_01);
+		Info_AddChoice 	(PC_ItMi_Tabak,"...z mu≈Çowym grzybem",PC_ItMi_Tabak_Mushroom_01);
 	};
 	
 };
@@ -1228,7 +1228,7 @@ INSTANCE PC_ItPo_MegaDrink (C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Mikstura ze smoczych jaj (10 smoczych jaj, 1 czarna per≥a, 1 porcja siarki)"; 
+	description		= "Mikstura ze smoczych jaj (10 smoczych jaj, 1 czarna per≈Ça, 1 porcja siarki)"; 
 };
 
 FUNC INT PC_ItPo_MegaDrink_Condition()

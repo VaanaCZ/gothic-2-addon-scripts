@@ -29,7 +29,7 @@ INSTANCE DIA_BAU_16_JOIN(C_INFO)
 	condition	= DIA_BAU_16_JOIN_Condition;
 	information	= DIA_BAU_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "Powiedz mi coœ wiêcej o tych najemnikach!";
+	description = "Powiedz mi coÅ› wiÄ™cej o tych najemnikach!";
 };                       
 
 FUNC INT DIA_BAU_16_JOIN_Condition()
@@ -42,8 +42,8 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //Powiedz mi coœ wiêcej o tych najemnikach!
-	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Ca³ymi dniami w³ócz¹ siê po farmie, od czasu do czasu dadz¹ sobie po pyskach i najwyraŸniej dobrze siê bawi¹.
+	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //Powiedz mi coÅ› wiÄ™cej o tych najemnikach!
+	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //CaÅ‚ymi dniami wÅ‚Ã³czÄ… siÄ™ po farmie, od czasu do czasu dadzÄ… sobie po pyskach i najwyraÅºniej dobrze siÄ™ bawiÄ….
 };
 
 // *************************************************************************
@@ -65,9 +65,9 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Kto tu rz¹dzi?
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //Jeœli chcesz znaæ moje zdanie, najemnicy.
-	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Onar wprawdzie im p³aci, ale i tak robi¹ przewa¿nie to, co im siê ¿ywnie podoba.
+	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Kto tu rzÄ…dzi?
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //JeÅ›li chcesz znaÄ‡ moje zdanie, najemnicy.
+	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Onar wprawdzie im pÅ‚aci, ale i tak robiÄ… przewaÅ¼nie to, co im siÄ™ Å¼ywnie podoba.
 };
 
 // *************************************************************************
@@ -79,7 +79,7 @@ INSTANCE DIA_BAU_16_LOCATION(C_INFO)
 	condition	= DIA_BAU_16_LOCATION_Condition;
 	information	= DIA_BAU_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Co mo¿esz mi powiedzieæ o tym miejscu?";
+	description = "Co moÅ¼esz mi powiedzieÄ‡ o tym miejscu?";
 };                       
 
 FUNC INT DIA_BAU_16_LOCATION_Condition()
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Co mo¿esz mi powiedzieæ o tej okolicy?
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //W pobli¿u znajduj¹ siê trzy farmy. Farma Onara na wschodzie, zaœ na pó³nocnym krañcu doliny gospodarstwo Sekoba.
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Œcie¿ka pn¹ca siê na wy¿ynê, na po³udniowy wschód st¹d, prowadzi na farmê Bengara.
+	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Co moÅ¼esz mi powiedzieÄ‡ o tej okolicy?
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //W pobliÅ¼u znajdujÄ… siÄ™ trzy farmy. Farma Onara na wschodzie, zaÅ› na pÃ³Å‚nocnym kraÅ„cu doliny gospodarstwo Sekoba.
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //ÅšcieÅ¼ka pnÄ…ca siÄ™ na wyÅ¼ynÄ™, na poÅ‚udniowy wschÃ³d stÄ…d, prowadzi na farmÄ™ Bengara.
 };
 
 // *************************************************************************
@@ -111,31 +111,31 @@ func INT DIA_BAU_16_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Co s³ychaæ?
+	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Co sÅ‚ychaÄ‡?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Od kiedy okaza³o siê, ¿e potrafimy siê broniæ, oddzia³y z miasta przesta³y rozkradaæ nasze zbiory i inwentarz! Chyba zbytnio siê nas boj¹!
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Od kiedy okazaÅ‚o siÄ™, Å¼e potrafimy siÄ™ broniÄ‡, oddziaÅ‚y z miasta przestaÅ‚y rozkradaÄ‡ nasze zbiory i inwentarz! Chyba zbytnio siÄ™ nas bojÄ…!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Ludzie powiadaj¹, ¿e w Górniczej Dolinie gromadzi siê armia. Ponoæ wkrótce tu nadci¹gnie.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Ludzie powiadajÄ…, Å¼e w GÃ³rniczej Dolinie gromadzi siÄ™ armia. PonoÄ‡ wkrÃ³tce tu nadciÄ…gnie.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Plotka g³osi, ¿e w Górniczej Dolinie zadomowi³y siê smoki, ale jakoœ trudno mi w to uwierzyæ.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //Plotka gÅ‚osi, Å¼e w GÃ³rniczej Dolinie zadomowiÅ‚y siÄ™ smoki, ale jakoÅ› trudno mi w to uwierzyÄ‡.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //Niektórzy z najemników odeszli. W³aœciwie nie wiem, czy to dobrze, czy to Ÿle.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_04"); //NiektÃ³rzy z najemnikÃ³w odeszli. WÅ‚aÅ›ciwie nie wiem, czy to dobrze, czy to Åºle.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Swoj¹ drog¹ zastanawiam siê, po co w³aœciwie wysy³aj¹ tylu paladynów do Górniczej Doliny, o co w tym wszystkim chodzi?
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //SwojÄ… drogÄ… zastanawiam siÄ™, po co wÅ‚aÅ›ciwie wysyÅ‚ajÄ… tylu paladynÃ³w do GÃ³rniczej Doliny, o co w tym wszystkim chodzi?
 	};
 };
 
