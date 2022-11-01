@@ -23,7 +23,7 @@ func int DIA_Addon_Morgan_EXIT_Info ()
 		AI_Output	(other, self, "DIA_Addon_Morgan_Perm_15_00"); //Leg dich wieder hin.
 		if (Morgan_Perm_Counter == 0)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_01"); //(gähnt) Hervorragende Idee.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_01"); //(gÃ¤hnt) Hervorragende Idee.
 			Morgan_Perm_Counter = 1;
 		}
 		else if (Morgan_Perm_Counter == 1)
@@ -33,7 +33,7 @@ func int DIA_Addon_Morgan_EXIT_Info ()
 		}
 		else if (Morgan_Perm_Counter == 2)
 		{
-			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_03"); //(müde) Nichts lieber, als das.
+			AI_Output	(self, other, "DIA_Addon_Morgan_Perm_07_03"); //(mÃ¼de) Nichts lieber, als das.
 			Morgan_Perm_Counter = 3;
 		}
 		else if (Morgan_Perm_Counter == 3)
@@ -102,7 +102,7 @@ FUNC INT DIA_Addon_Morgan_Anheuern_Condition()
 };
 func int DIA_Addon_Morgan_Anheuern_Info ()
 {
-	AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_00"); //Toll, jetzt hat Greg mich zum Brettersägen verdonnert!
+	AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_00"); //Toll, jetzt hat Greg mich zum BrettersÃ¤gen verdonnert!
 	if (MIS_Addon_Greg_ClearCanyon == LOG_RUNNING)
 	{
 		AI_Output (self, other, "DIA_Addon_Morgan_Anheuern_07_01"); //(sarkastisch) Viel Spass beim Monster schlachten!
@@ -134,7 +134,7 @@ FUNC INT DIA_Addon_Morgan_Hello_Condition()
 func VOID DIA_Addon_Morgan_Hello_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Morgan_Hello_15_00"); //Hey du!
-	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_01"); //(verschlafen) Häh? Was willst du?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_01"); //(verschlafen) HÃ¤h? Was willst du?
 	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_02"); //(verschlafen) Ist Alligator Jack schon wieder da?
 	AI_Output (self ,other,"DIA_Addon_Morgan_Hello_07_03"); //(verschlafen) Nein? Dann wird er sicher bald kommen, gute Nacht.
 	AI_StopProcessInfos (self);
@@ -219,13 +219,13 @@ FUNC INT DIA_Addon_Morgan_Job_Condition()
 FUNC VOID DIA_Addon_Morgan_Job_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Morgan_Job_15_01"); //Was machst du hier?
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_01"); //Greg hat mir das Kommando über einen der beiden Entertrupps gegeben.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_02"); //Ich bin für die Versorgung des Lagers zuständig - darum kümmert sich Alligator Jack.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_03"); //Außerdem bin ich dafür verantwortlich, dass die Biester hier in der Gegend nicht zu nah ans Lager kommen.
-	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_04"); //Darum kümmern sich die JUNGS.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_01"); //Greg hat mir das Kommando Ã¼ber einen der beiden Entertrupps gegeben.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_02"); //Ich bin fÃ¼r die Versorgung des Lagers zustÃ¤ndig - darum kÃ¼mmert sich Alligator Jack.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_03"); //AuÃŸerdem bin ich dafÃ¼r verantwortlich, dass die Biester hier in der Gegend nicht zu nah ans Lager kommen.
+	AI_Output (self, other, "DIA_Addon_Morgan_Job_07_04"); //Darum kÃ¼mmern sich die JUNGS.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Morgan_Job_07_05"); //Ich hab ihnen gesagt, ich will hier kein einziges Vieh mehr in der Nähe sehen, (gähnt) wenn Greg zurückkommt.
+		AI_Output (self, other, "DIA_Addon_Morgan_Job_07_05"); //Ich hab ihnen gesagt, ich will hier kein einziges Vieh mehr in der NÃ¤he sehen, (gÃ¤hnt) wenn Greg zurÃ¼ckkommt.
 	};
 };
 
@@ -253,10 +253,10 @@ FUNC VOID DIA_Addon_Morgan_Sleep_Info()
 	AI_Output (other,self ,"DIA_Addon_Morgan_Sleep_15_00"); //Tust du auch mal was?
 	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_01"); //Hey, nicht frech werden!
 	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_02"); //Ich habe die wichtigste Aufgabe von allen.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_03"); //Ich kümmere mich um die Ausbildung meiner Leute.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_04"); //Ich mache sie zu den besten und furchtlosesten Kämpfern, die jemals auf diesen Gewässern gekreuzt sind.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_05"); //Außerdem ist es ja nicht so, daß die Jungs nichts davon haben, ihre Arbeit zu machen.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_06"); //Sie bekommen 'nen ordentlichen Sack voll Gold dafür.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_03"); //Ich kÃ¼mmere mich um die Ausbildung meiner Leute.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_04"); //Ich mache sie zu den besten und furchtlosesten KÃ¤mpfern, die jemals auf diesen GewÃ¤ssern gekreuzt sind.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_05"); //AuÃŸerdem ist es ja nicht so, daÃŸ die Jungs nichts davon haben, ihre Arbeit zu machen.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Sleep_07_06"); //Sie bekommen 'nen ordentlichen Sack voll Gold dafÃ¼r.
 };
 
 // ************************************************************
@@ -287,16 +287,16 @@ FUNC INT DIA_Addon_Morgan_JoinMorgan_Condition()
 func VOID DIA_Addon_Morgan_JoinMorgan_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Morgan_JoinMorgan_15_00"); //Ich will in deinen Trupp.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_01"); //(lacht) Mein Trupp? Mein Trupp hängt am Strand rum.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_03"); //Die Jungs machen keinen Finger krumm, bis der Käpt'n wieder da ist, das kann ich dir versprechen.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_01"); //(lacht) Mein Trupp? Mein Trupp hÃ¤ngt am Strand rum.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_03"); //Die Jungs machen keinen Finger krumm, bis der KÃ¤pt'n wieder da ist, das kann ich dir versprechen.
 	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_04"); //Aber wenn du allen zeigen willst, was du drauf hast, kannst du dir ja mal den Strand im Norden vornehmen.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_05"); //Der ist voller Lurker und was weiß ich noch allem.
-	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_06"); //Zieh die Sache alleine durch und du verdienst dir den Respekt (gähnt) der Leute...
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_05"); //Der ist voller Lurker und was weiÃŸ ich noch allem.
+	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_06"); //Zieh die Sache alleine durch und du verdienst dir den Respekt (gÃ¤hnt) der Leute...
 	AI_Output (self ,other,"DIA_Addon_Morgan_JoinMorgan_07_07"); //Willommen in meinem Trupp. Ha! Ich hau mich wieder hin...
 	
 	Log_CreateTopic (TOPIC_Addon_MorganBeach,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MorganBeach,LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MorganBeach,"Jetzt da ich in Morgans Entertrupp bin, will er, dass ich den nördlichen Strand von Viechern säubere.");
+	B_LogEntry (TOPIC_Addon_MorganBeach,"Jetzt da ich in Morgans Entertrupp bin, will er, dass ich den nÃ¶rdlichen Strand von Viechern sÃ¤ubere.");
 	
 	MIS_Addon_MorganLurker = LOG_RUNNING;
 	AI_StopProcessInfos (self);
@@ -329,7 +329,7 @@ func int DIA_Addon_Morgan_LurkerPlatt_Condition ()
 func void DIA_Addon_Morgan_LurkerPlatt_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Morgan_LurkerPlatt_15_00"); //Der Strand im Norden ist sauber.
-	AI_Output (self, other, "DIA_Addon_Morgan_LurkerPlatt_07_01"); //Was ist mit der Höhle? Warst du da auch schon?
+	AI_Output (self, other, "DIA_Addon_Morgan_LurkerPlatt_07_01"); //Was ist mit der HÃ¶hle? Warst du da auch schon?
 		
 	if (Npc_IsDead(BeachShadowbeast1))
 	{
@@ -347,10 +347,10 @@ func void DIA_Addon_Morgan_LurkerPlatt_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_05"); //Äh ...
-		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_06"); //Die gehört natürlich auch dazu. Komm wieder, wenn du das erledigt hast.
+		AI_Output	(other, self, "DIA_Addon_Morgan_LurkerPlatt_15_05"); //Ã„h ...
+		AI_Output	(self, other, "DIA_Addon_Morgan_LurkerPlatt_07_06"); //Die gehÃ¶rt natÃ¼rlich auch dazu. Komm wieder, wenn du das erledigt hast.
 		
-		B_LogEntry (TOPIC_Addon_MorganBeach,"Morgan will, dass ich mich auch noch um die Höhle kümmere.");
+		B_LogEntry (TOPIC_Addon_MorganBeach,"Morgan will, dass ich mich auch noch um die HÃ¶hle kÃ¼mmere.");
 		
 		AI_StopProcessInfos (self);
 	};
@@ -366,7 +366,7 @@ instance DIA_Addon_Morgan_Auftrag2		(C_INFO)
 	condition	= DIA_Addon_Morgan_Auftrag2_Condition;
 	information	= DIA_Addon_Morgan_Auftrag2_Info;
 	permanent	= TRUE;
-	description	= "Gibt's sonst noch was zu tun für mich?";
+	description	= "Gibt's sonst noch was zu tun fÃ¼r mich?";
 };
 func int DIA_Addon_Morgan_Auftrag2_Condition ()
 {
@@ -377,7 +377,7 @@ func int DIA_Addon_Morgan_Auftrag2_Condition ()
 };
 func void DIA_Addon_Morgan_Auftrag2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Morgan_Auftrag2_15_00"); //Gibt's sonst noch was zu tun für mich?
+	AI_Output	(other, self, "DIA_Addon_Morgan_Auftrag2_15_00"); //Gibt's sonst noch was zu tun fÃ¼r mich?
 
 	if (GregIsBack == FALSE)
 	{
@@ -389,7 +389,7 @@ func void DIA_Addon_Morgan_Auftrag2_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_04"); //Da fragst du am besten den Käpt'n.
+		AI_Output	(self, other, "DIA_Addon_Morgan_Auftrag2_07_04"); //Da fragst du am besten den KÃ¤pt'n.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -426,11 +426,11 @@ FUNC VOID DIA_Addon_Morgan_FOUNDTHEM_Info()
 	
 	if (Morgan_AngusStory == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_01"); //Hör bloß auf mit DER Sache.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_01"); //HÃ¶r bloÃŸ auf mit DER Sache.
 		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_02"); //Die beiden haben sich wahrscheinlich von Banditen umbringen lassen.
 		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_03"); //Und Angus hatte meinen Ring dabei.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_04"); //Na gut, eigentlich war es SEIN Ring. Er hat ihn beim Würfeln gewonnen.
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_05"); //Aber ich hätte ihn mir wieder zurückgeholt und jetzt ist er WEG!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_04"); //Na gut, eigentlich war es SEIN Ring. Er hat ihn beim WÃ¼rfeln gewonnen.
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_05"); //Aber ich hÃ¤tte ihn mir wieder zurÃ¼ckgeholt und jetzt ist er WEG!
 		Morgan_AngusStory = TRUE;
 	};
 
@@ -441,7 +441,7 @@ FUNC VOID DIA_Addon_Morgan_FOUNDTHEM_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_06"); //Wenn du meinen Ring findest, dann bring ihn zu mir zurück. Du sollst es auch nicht umsonst gemacht haben!
+		AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_07_06"); //Wenn du meinen Ring findest, dann bring ihn zu mir zurÃ¼ck. Du sollst es auch nicht umsonst gemacht haben!
 	};
 };
 func void DIA_Addon_Morgan_FOUNDTHEM_Now()
@@ -457,7 +457,7 @@ func void DIA_Addon_Morgan_FOUNDTHEM_Now()
 func void DIA_Addon_Morgan_FOUNDTHEM_NoRing()
 {
 	AI_Output (other,self ,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_15_00"); //Den hatten sie nicht dabei.
-	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_01"); //entsetzt) Was? Geh zurück und suche noch mal. Sie müssen ihn dabei gehabt haben.
+	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_01"); //entsetzt) Was? Geh zurÃ¼ck und suche noch mal. Sie mÃ¼ssen ihn dabei gehabt haben.
 	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_02"); //Es ist ein kleiner Ring mit vielen kleinen Verzierungen.
 	AI_Output (self ,other,"DIA_Addon_Morgan_FOUNDTHEM_NoRing_07_03"); //Du MUSST ihn finden. Du MUSST!
 	Info_ClearChoices (DIA_Addon_Morgan_FOUNDTHEM);
@@ -467,7 +467,7 @@ func void DIA_Addon_Morgan_FOUNDTHEM_GiveRing()
 	AI_Output (other, self ,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_15_00"); //Hier ist er.
 	B_GiveInvItems (other, self ,ItRi_Addon_MorgansRing_Mission,1);
 	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_01"); //(freut sich wie ein Kind) Ja, das ist er. Guter Mann!
-	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_02"); //Hier, nimm diese Steintafel. Sie sieht zwar aus wie alter Ramsch, aber Garett wird 'ne Menge Gold dafür springen lassen.
+	AI_Output (self, other,"DIA_Addon_Morgan_FOUNDTHEM_GiveRing_07_02"); //Hier, nimm diese Steintafel. Sie sieht zwar aus wie alter Ramsch, aber Garett wird 'ne Menge Gold dafÃ¼r springen lassen.
 	
 	MIS_Addon_Morgan_SeekTraitor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_MorgansRing);
@@ -490,7 +490,7 @@ INSTANCE DIA_Addon_Morgan_Francis(C_INFO)
 	condition	= DIA_Addon_Morgan_Francis_Condition;
 	information	= DIA_Addon_Morgan_Francis_Info;
 
-	description	= "Was hälst du von Francis?";
+	description	= "Was hÃ¤lst du von Francis?";
 };                       
 FUNC INT DIA_Addon_Morgan_Francis_Condition()
 {
@@ -506,11 +506,11 @@ FUNC INT DIA_Addon_Morgan_Francis_Condition()
 
 FUNC VOID DIA_Addon_Morgan_Francis_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_00"); //Was hältst du von Francis?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_01"); //Der ist mir egal, (gefährlich) solange er mich in Ruhe lässt!
+	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_00"); //Was hÃ¤ltst du von Francis?
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_01"); //Der ist mir egal, (gefÃ¤hrlich) solange er mich in Ruhe lÃ¤sst!
 	AI_Output (other,self ,"DIA_Addon_Morgan_Francis_15_02"); //Ist er nicht der Boss hier?
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_03"); //(lacht dreckig) Er HÄLT sich für den Boss.
-	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_04"); //(schadenfroh) Aber irgendwann ist Greg wieder da, und dann wird Francis wieder schön - brav - Bretter sägen.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_03"); //(lacht dreckig) Er HÃ„LT sich fÃ¼r den Boss.
+	AI_Output (self ,other,"DIA_Addon_Morgan_Francis_07_04"); //(schadenfroh) Aber irgendwann ist Greg wieder da, und dann wird Francis wieder schÃ¶n - brav - Bretter sÃ¤gen.
 };
 
 
@@ -542,7 +542,7 @@ FUNC INT DIA_Addon_Morgan_TRAIN_Condition()
 FUNC VOID DIA_Addon_Morgan_TRAIN_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_Morgan_TRAIN_15_00"); //Kannst du mich AUCH trainieren?
-	AI_Output (self ,other,"DIA_Addon_Morgan_TRAIN_07_01"); //Klar, ich kann ich dir zeigen, wie man mit Einhandwaffen kämpft.
+	AI_Output (self ,other,"DIA_Addon_Morgan_TRAIN_07_01"); //Klar, ich kann ich dir zeigen, wie man mit Einhandwaffen kÃ¤mpft.
 	
 	Log_CreateTopic (Topic_Addon_PIR_Teacher,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Teacher,Log_Text_Addon_MorganTeach);
@@ -589,17 +589,17 @@ func VOID DIA_Addon_Morgan_Teach_Back()
 	{
 		if (Morgan_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_00"); //Und denk dran, an diesem Geschwätz von Ehre ist nichts dran. Entweder du tötest ihn, oder er tötet dich.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_00"); //Und denk dran, an diesem GeschwÃ¤tz von Ehre ist nichts dran. Entweder du tÃ¶test ihn, oder er tÃ¶tet dich.
 			Morgan_Labercount = 1;	
 		}
 		else if (Morgan_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_01"); //In Zukunft musst du noch lernen mehr Kraft in deine Schläge zu legen.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_01"); //In Zukunft musst du noch lernen mehr Kraft in deine SchlÃ¤ge zu legen.
 			Morgan_Labercount = 2;	
 		}
 		else if (Morgan_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_02"); //Hahaha, zumindest weisst du mittlerweile, wie man ein Schwert hält.
+			AI_Output (self,other,"DIA_Addon_Morgan_CommentFightSkill_07_02"); //Hahaha, zumindest weisst du mittlerweile, wie man ein Schwert hÃ¤lt.
 			Morgan_Labercount = 0;	
 		};
 	}

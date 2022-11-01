@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis Onars Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis Onars Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 {
@@ -15,13 +15,13 @@ func void EVT_ORNAMENT_SWITCH_BIGFARM_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_BIGFARM_Addon, ItMi_OrnamentEffekt_BIGFARM_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Ich habe den Mechanismus des Steinkreises in der N‰he von Sekobs Hof aktiviert. Es gab einen grossen Knall und ein Steinw‰chter trachtete mir nach dem Leben."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"Ich habe den Mechanismus des Steinkreises in der N√§he von Sekobs Hof aktiviert. Es gab einen grossen Knall und ein Steinw√§chter trachtete mir nach dem Leben."); 
 			ORNAMENT_SWITCHED_BIGFARM = TRUE;
 		};
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis Lobarts Hof) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FARM_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis Lobarts Hof) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 {
@@ -36,7 +36,7 @@ func void EVT_ORNAMENT_SWITCH_FARM_01_FUNC ()
 };
 
 //****************************
-// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterr‰tsel beim Steinkreis im Medium Forest) //ADDON
+// 	EVT_ORNAMENT_SWITCH_FOREST_01_FUNC (Ornamentschalterr√§tsel beim Steinkreis im Medium Forest) //ADDON
 //****************************
 func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 {
@@ -52,7 +52,7 @@ func void EVT_ORNAMENT_SWITCH_FOREST_01_FUNC ()
 			Wld_PlayEffect("spellFX_LIGHTSTAR_RingRitual",  ItMi_OrnamentEffekt_FOREST_Addon, ItMi_OrnamentEffekt_FOREST_Addon, 0, 0, 0, FALSE );
 			Log_CreateTopic 	(TOPIC_Addon_Ornament, LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_Addon_Ornament, LOG_RUNNING);
-			B_LogEntry 			(TOPIC_Addon_Ornament,"Ich habe den Mechanismus des Steinkreises im nˆrdlichen Wald aktiviert. Ein grosser Steinw‰chter erschien. Er hatte eine echt miese Laune."); 
+			B_LogEntry 			(TOPIC_Addon_Ornament,"Ich habe den Mechanismus des Steinkreises im n√∂rdlichen Wald aktiviert. Ein grosser Steinw√§chter erschien. Er hatte eine echt miese Laune."); 
 			ORNAMENT_SWITCHED_FOREST = TRUE;
 		};
 };

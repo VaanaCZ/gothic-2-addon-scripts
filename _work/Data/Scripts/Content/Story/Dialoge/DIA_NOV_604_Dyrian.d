@@ -55,7 +55,7 @@ INSTANCE DIA_Dyrian_Wurst(C_INFO)
 	condition	= DIA_Dyrian_Wurst_Condition;
 	information	= DIA_Dyrian_Wurst_Info;
 	permanent	= FALSE;
-	description = "Ich verteile gerade Würste.";
+	description = "Ich verteile gerade WÃ¼rste.";
 };                       
 
 FUNC INT DIA_Dyrian_Wurst_Condition()
@@ -71,7 +71,7 @@ FUNC INT DIA_Dyrian_Wurst_Condition()
 
 FUNC VOID DIA_Dyrian_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Dyrian_Wurst_15_00"); //Ich verteile gerade Würste.
+	AI_Output (other, self, "DIA_Dyrian_Wurst_15_00"); //Ich verteile gerade WÃ¼rste.
 	AI_Output (self, other, "DIA_Dyrian_Wurst_13_01"); //Danke. Hoffentlich wird das nicht meine letzte Wurst sein, die ich hier bekomme.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
@@ -111,7 +111,7 @@ FUNC INT DIA_Dyrian_Job_Condition()
 FUNC VOID DIA_Dyrian_Job_Info()
 {
 	AI_Output (other,self ,"DIA_Dyrian_Job_15_00"); //Was machst du hier?
-	AI_Output (self ,other,"DIA_Dyrian_Job_13_01"); //Ich habe gegen die Gebote der Gemeinschaft verstoßen.
+	AI_Output (self ,other,"DIA_Dyrian_Job_13_01"); //Ich habe gegen die Gebote der Gemeinschaft verstoÃŸen.
 	AI_Output (self ,other,"DIA_Dyrian_Job_13_02"); //Jetzt warte ich auf die Entscheidung des Hohen Rates, ob ich im Kloster bleiben darf.
 };
 //**************************************************************************
@@ -125,7 +125,7 @@ INSTANCE DIA_Dyrian_WhatDone   (C_INFO)
 	condition   = DIA_Dyrian_WhatDone_Condition;
 	information = DIA_Dyrian_WhatDone_Info;
 	permanent   = FALSE;
-	description = "Erzähl mir, was passiert ist.";
+	description = "ErzÃ¤hl mir, was passiert ist.";
 };
 FUNC INT DIA_Dyrian_WhatDone_Condition()
 {
@@ -139,10 +139,10 @@ FUNC INT DIA_Dyrian_WhatDone_Condition()
 };
 FUNC VOID DIA_Dyrian_WhatDone_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_WhatDone_15_00"); //Erzähl mir, was passiert ist.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_01"); //Ich habe beim Fegen in den Räumen der Magier ein Buch mitgenommen, um es später zu lesen.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_02"); //Meister Hyglas hat es natürlich sofort bemerkt und mich nach dem Buch gefragt.
-	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_03"); //Aus Angst vor Bestrafung habe ich es geleugnet - aber als ich später mit dem Buch in meiner Kammer war, hat er mich erwischt.
+	AI_Output (other,self ,"DIA_Dyrian_WhatDone_15_00"); //ErzÃ¤hl mir, was passiert ist.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_01"); //Ich habe beim Fegen in den RÃ¤umen der Magier ein Buch mitgenommen, um es spÃ¤ter zu lesen.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_02"); //Meister Hyglas hat es natÃ¼rlich sofort bemerkt und mich nach dem Buch gefragt.
+	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_03"); //Aus Angst vor Bestrafung habe ich es geleugnet - aber als ich spÃ¤ter mit dem Buch in meiner Kammer war, hat er mich erwischt.
 	AI_Output (self ,other,"DIA_Dyrian_WhatDone_13_04"); //Er war ziemlich aufgebracht und hat den Hohen Rat informiert. Jetzt beraten sie, ob ich bleiben kann.
 };
 
@@ -174,7 +174,7 @@ FUNC VOID DIA_Dyrian_CanHelp_Info()
 	AI_Output (self ,other,"DIA_Dyrian_CanHelp_13_01"); //Nein, ich bin der Gnade Innos' und der der Magier ausgeliefert.
 };
 //**************************************************************************
-//	SC hat die Prüfung des Feuers angenommen und mit Hyglas gesprochen
+//	SC hat die PrÃ¼fung des Feuers angenommen und mit Hyglas gesprochen
 //**************************************************************************
 INSTANCE DIA_Dyrian_Scroll   (C_INFO)
 {
@@ -196,34 +196,34 @@ FUNC INT DIA_Dyrian_Scroll_Condition()
 };
 FUNC VOID DIA_Dyrian_Scroll_Info()
 {
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_00"); //Hey, hast du tatsächlich die Prüfung des Feuers gefordert?
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_00"); //Hey, hast du tatsÃ¤chlich die PrÃ¼fung des Feuers gefordert?
 	AI_Output (other,self ,"DIA_Dyrian_Scroll_15_01"); //Ja. Und ich habe vor, sie zu bestehen.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_02"); //Gut - vielleicht kann ich dir dabei helfen. Ich kann dir eine sehr nützliche Spruchrolle geben. Einen SCHLAF-Zauber. Interessiert?
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_13_02"); //Gut - vielleicht kann ich dir dabei helfen. Ich kann dir eine sehr nÃ¼tzliche Spruchrolle geben. Einen SCHLAF-Zauber. Interessiert?
 
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 	Info_AddChoice (DIA_Dyrian_Scroll,"Nein, ich brauche deine Hilfe nicht.",DIA_Dyrian_Scroll_No);
-	Info_AddChoice (DIA_Dyrian_Scroll,"Was willst du dafür?",DIA_Dyrian_Scroll_How);
+	Info_AddChoice (DIA_Dyrian_Scroll,"Was willst du dafÃ¼r?",DIA_Dyrian_Scroll_How);
 	Info_AddChoice (DIA_Dyrian_Scroll,"Was kann ich damit machen?",DIA_Dyrian_Scroll_What);
 };
 FUNC VOID DIA_Dyrian_Scroll_What ()
 {
 	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_00"); //Was kann ich damit machen?
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_01"); //Mit diesem Zauber kannst du Menschen für kurze Zeit in einen magischen Schlaf versetzen. Allerdings nur, wenn ihr Wille schwächer ist als deiner.
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_02"); //Das kann sehr nützlich sein, wenn dir jemand im Weg steht ...
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_03"); //Und woher weiß ich, ob derjenige einen schwächeren Willen hat?
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_04"); //Bei den Magiern brauchst du es gar nicht erst zu versuchen. Aber die meisten Novizen wirst du schlafen legen können.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_01"); //Mit diesem Zauber kannst du Menschen fÃ¼r kurze Zeit in einen magischen Schlaf versetzen. Allerdings nur, wenn ihr Wille schwÃ¤cher ist als deiner.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_02"); //Das kann sehr nÃ¼tzlich sein, wenn dir jemand im Weg steht ...
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_What_15_03"); //Und woher weiÃŸ ich, ob derjenige einen schwÃ¤cheren Willen hat?
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_What_13_04"); //Bei den Magiern brauchst du es gar nicht erst zu versuchen. Aber die meisten Novizen wirst du schlafen legen kÃ¶nnen.
 };
 FUNC VOID DIA_Dyrian_Scroll_No ()
 {
 	AI_Output (other,self ,"DIA_Dyrian_Scroll_No_15_00"); //Nein, ich brauche deine Hilfe nicht.
-	AI_Output (self,other ,"DIA_Dyrian_Scroll_No_13_01"); //Du kannst jederzeit zu mir kommen, wenn du es dir anders überlegen solltest.
+	AI_Output (self,other ,"DIA_Dyrian_Scroll_No_13_01"); //Du kannst jederzeit zu mir kommen, wenn du es dir anders Ã¼berlegen solltest.
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 };
 FUNC VOID DIA_Dyrian_Scroll_How ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Scroll_How_15_00"); //Was willst du dafür?
+	AI_Output (other,self ,"DIA_Dyrian_Scroll_How_15_00"); //Was willst du dafÃ¼r?
 	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_01"); //Jedem Magier steht bei der Aufnahme ein Wunsch zu.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_02"); //Und wenn du tatsächlich die Prüfung des Feuers bestehst, dann kannst du dich dafür einsetzen, dass ich im Kloster bleiben darf.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_How_13_02"); //Und wenn du tatsÃ¤chlich die PrÃ¼fung des Feuers bestehst, dann kannst du dich dafÃ¼r einsetzen, dass ich im Kloster bleiben darf.
 	
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 	Info_AddChoice (DIA_Dyrian_Scroll,"Nein, ich brauche deine Hilfe nicht.",DIA_Dyrian_Scroll_No);
@@ -233,13 +233,13 @@ FUNC VOID DIA_Dyrian_Scroll_How ()
 FUNC VOID DIA_Dyrian_Scroll_Yes ()
 {
 	AI_Output (other,self ,"DIA_Dyrian_Scroll_Yes_15_00"); //Okay, gib mir die Spruchrolle.
-	AI_Output (self ,other,"DIA_Dyrian_Scroll_Yes_13_01"); //Viel Glück während deiner Prüfung. Möge Innos dir beistehen.
+	AI_Output (self ,other,"DIA_Dyrian_Scroll_Yes_13_01"); //Viel GlÃ¼ck wÃ¤hrend deiner PrÃ¼fung. MÃ¶ge Innos dir beistehen.
 	
 	B_GiveInvItems (self,other,ItSc_Sleep,1);
 	MIS_HelpDyrian = LOG_RUNNING;
 	Log_CreateTopic (Topic_DyrianDrin,LOG_MISSION);
 	Log_SetTopicStatus (Topic_DyrianDrin,LOG_RUNNING);
-	B_LogEntry (Topic_DyrianDrin,"Dyrian hat mir eine Schlaf - Spruchrolle gegeben. Dafür will er, das ich mich dafür einsetze, das er im Kloster bleiben darf, falls ich Magier werde. ");
+	B_LogEntry (Topic_DyrianDrin,"Dyrian hat mir eine Schlaf - Spruchrolle gegeben. DafÃ¼r will er, das ich mich dafÃ¼r einsetze, das er im Kloster bleiben darf, falls ich Magier werde. ");
 	Info_ClearChoices (DIA_Dyrian_Scroll);
 	
 };
@@ -253,7 +253,7 @@ INSTANCE DIA_Dyrian_Doch   (C_INFO)
 	condition   = DIA_Dyrian_Doch_Condition;
 	information = DIA_Dyrian_Doch_Info;
 	permanent   = TRUE;
-	description = "Ich hab's mir überlegt. Gib mir den Schlaf-Zauber.";
+	description = "Ich hab's mir Ã¼berlegt. Gib mir den Schlaf-Zauber.";
 };
 FUNC INT DIA_Dyrian_Doch_Condition()
 {	
@@ -266,8 +266,8 @@ FUNC INT DIA_Dyrian_Doch_Condition()
 };
 FUNC VOID DIA_Dyrian_Doch_Info()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Doch_15_00"); //Ich hab's mir überlegt. Gib mir den Schlaf-Zauber.
-	AI_Output (self ,other,"DIA_Dyrian_Doch_13_01"); //Gut, wenn du die Prüfung bestehst, setzt du dich dafür ein, dass ich im Kloster bleiben kann.
+	AI_Output (other,self ,"DIA_Dyrian_Doch_15_00"); //Ich hab's mir Ã¼berlegt. Gib mir den Schlaf-Zauber.
+	AI_Output (self ,other,"DIA_Dyrian_Doch_13_01"); //Gut, wenn du die PrÃ¼fung bestehst, setzt du dich dafÃ¼r ein, dass ich im Kloster bleiben kann.
 	
 	B_GiveInvItems (self,other,ItSc_Sleep,1);
 	MIS_HelpDyrian = LOG_RUNNING;
@@ -297,14 +297,14 @@ FUNC VOID DIA_Dyrian_HelloAgain_Info()
 {
 	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_00"); //(freudestrahlend) Danke, du hast mich gerettet!
 	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_01"); //(erschrocken) Oh - verzeih mir Meister- ich wollte nicht aufdringlich erscheinen.
-	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_02"); //(ehrerbietend) Ich danke dir dafür, dass ich im Kloster bleiben darf. Mein Leben wird sich von nun an ändern ...
+	AI_Output (self ,other,"DIA_Dyrian_HelloAgain_13_02"); //(ehrerbietend) Ich danke dir dafÃ¼r, dass ich im Kloster bleiben darf. Mein Leben wird sich von nun an Ã¤ndern ...
 	
 	B_GivePlayerXP (XP_Ambient); 	
 	AI_StopProcessInfos (self); 
 };
 
 //*****************************************************************************
-//			Wie gehts? //Info für Magier Success 
+//			Wie gehts? //Info fÃ¼r Magier Success 
 //*****************************************************************************
 func void B_Dyrian_PlayerHowIsIt()
 {
@@ -335,7 +335,7 @@ FUNC VOID DIA_Dyrian_HowIsIt_Info()
 	AI_StopProcessInfos (self);	
 };
 //*****************************************************************************
-//			Wie gehts? //Info für alle anderen 
+//			Wie gehts? //Info fÃ¼r alle anderen 
 //*****************************************************************************
 INSTANCE DIA_Dyrian_other   (C_INFO)
 {
@@ -391,15 +391,15 @@ FUNC VOID DIA_Dyrian_Kneipe_Info()
 	
 	Info_ClearChoices (DIA_Dyrian_Kneipe);
 	Info_AddChoice (DIA_Dyrian_Kneipe,"Hier hast Du 5 Gold.",DIA_Dyrian_Kneipe_Gold);
-	Info_AddChoice (DIA_Dyrian_Kneipe,"Ich kann alles erklären.",DIA_Dyrian_Kneipe_CanExplain);
+	Info_AddChoice (DIA_Dyrian_Kneipe,"Ich kann alles erklÃ¤ren.",DIA_Dyrian_Kneipe_CanExplain);
 	Info_AddChoice (DIA_Dyrian_Kneipe,"Pass auf was du sagst!",DIA_Dyrian_Kneipe_ShutUp);
 		
 };
 
 FUNC VOID DIA_Dyrian_Kneipe_Gold ()
 {
-	AI_Output	(other,self ,"DIA_Dyrian_Kneipe_Gold_15_00"); //Hier hast du 5 Goldstücke.
-	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_01"); //(aufgeregt) 5 Gold? Du gibst mir 5 Gold. Dafür, dass du mein Leben zerstört hast?
+	AI_Output	(other,self ,"DIA_Dyrian_Kneipe_Gold_15_00"); //Hier hast du 5 GoldstÃ¼cke.
+	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_01"); //(aufgeregt) 5 Gold? Du gibst mir 5 Gold. DafÃ¼r, dass du mein Leben zerstÃ¶rt hast?
 	AI_Output 	(self ,other,"DIA_Dyrian_Kneipe_Gold_13_02"); //Ich werde mir all dein Gold nehmen!
 	
 	AI_StopProcessInfos (self);
@@ -408,9 +408,9 @@ FUNC VOID DIA_Dyrian_Kneipe_Gold ()
 
 FUNC VOID DIA_Dyrian_Kneipe_CanExplain ()
 {
-	AI_Output (other,self ,"DIA_Dyrian_Kneipe_CanExplain_15_00"); //Ich kann alles erklären.
+	AI_Output (other,self ,"DIA_Dyrian_Kneipe_CanExplain_15_00"); //Ich kann alles erklÃ¤ren.
 	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_01"); //Spar dir deine billigen Ausreden.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_02"); //Du lügst, wenn du den Mund aufmachst. Jetzt lass mich in Ruhe.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_CanExplain_13_02"); //Du lÃ¼gst, wenn du den Mund aufmachst. Jetzt lass mich in Ruhe.
 	
 	AI_StopProcessInfos (self);
 };
@@ -418,8 +418,8 @@ FUNC VOID DIA_Dyrian_Kneipe_CanExplain ()
 FUNC VOID DIA_Dyrian_Kneipe_ShutUp ()
 {
 	AI_Output (other,self ,"DIA_Dyrian_Kneipe_ShutUp_15_00"); //Pass auf, was du sagst.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_01"); //Ja, droh mir nur. Es wird dir nicht nützen.
-	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_02"); //Ich werde der ganzen Welt erzählen, was du für ein scheinheiliger Kerl bist! Sobald ich diese Flasche ausgetrunken habe ...
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_01"); //Ja, droh mir nur. Es wird dir nicht nÃ¼tzen.
+	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_02"); //Ich werde der ganzen Welt erzÃ¤hlen, was du fÃ¼r ein scheinheiliger Kerl bist! Sobald ich diese Flasche ausgetrunken habe ...
 	AI_Output (self ,other,"DIA_Dyrian_Kneipe_ShutUp_13_03"); //Jetzt geh mir aus den Augen, du widerst mich an!
 
 	AI_StopProcessInfos (self);
@@ -447,7 +447,7 @@ FUNC INT DIA_Dyrian_nachher_Condition()
 FUNC VOID DIA_Dyrian_nachher_Info()
 {
 	AI_Output (other,self ,"DIA_Dyrian_nachher_15_00"); //Wie sieht's aus?
-	AI_Output (self ,other,"DIA_Dyrian_nachher_13_01"); //Ach, lass mich bloß in Ruhe! Mit dir will ich nichts mehr zu tun haben!
+	AI_Output (self ,other,"DIA_Dyrian_nachher_13_01"); //Ach, lass mich bloÃŸ in Ruhe! Mit dir will ich nichts mehr zu tun haben!
 	AI_StopProcessInfos (self);	
 };
  

@@ -49,7 +49,7 @@ func int DIA_Lobart_STOLENCLOTHS_Condition ()
 
 func void DIA_Lobart_STOLENCLOTHS_Info ()
 {
-	// ------ SC hat Rüstung an ------
+	// ------ SC hat RÃ¼stung an ------
 	
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
@@ -66,13 +66,13 @@ func void DIA_Lobart_STOLENCLOTHS_Info ()
 	// ------ SC hat nach Arbeit gefragt -------
 	if (Npc_KnowsInfo (other, DIA_Lobart_WorkNOW))
 	{
-		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_03"); //Du solltest dich hier nützlich machen und nicht in meinem Haus rumschnüffeln, du Tagedieb!
+		AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_03"); //Du solltest dich hier nÃ¼tzlich machen und nicht in meinem Haus rumschnÃ¼ffeln, du Tagedieb!
 	};
 	
 	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_05_04"); //Du gibst mir auf der Stelle meine Klamotten wieder!
 	
 	Info_ClearChoices	(DIA_Lobart_STOLENCLOTHS);
-	Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Vergiß es!", 				DIA_Lobart_STOLENCLOTHS_ForgetIt );
+	Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "VergiÃŸ es!", 				DIA_Lobart_STOLENCLOTHS_ForgetIt );
 	if (Npc_HasItems (other, ItAr_BAU_L) > 0)
 	{
 		Info_AddChoice		(DIA_Lobart_STOLENCLOTHS, "Hier hast du sie wieder.", 	DIA_Lobart_STOLENCLOTHS_HereYouGo );
@@ -86,8 +86,8 @@ func void DIA_Lobart_STOLENCLOTHS_Info ()
 func void DIA_Lobart_STOLENCLOTHS_HereYouGo ()
 {
 	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_HereYouGo_15_00"); //Hier hast du sie wieder.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_01"); //Wenn du sie haben willst, musst du dafür BEZAHLEN!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_02"); //(schroff) Jetzt sieh zu, dass du dich nützlich machst!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_01"); //Wenn du sie haben willst, musst du dafÃ¼r BEZAHLEN!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_HereYouGo_05_02"); //(schroff) Jetzt sieh zu, dass du dich nÃ¼tzlich machst!
 	
 	B_GiveInvItems (other, self, ItAr_BAU_L, 1);
 	
@@ -97,7 +97,7 @@ func void DIA_Lobart_STOLENCLOTHS_HereYouGo ()
 func void DIA_Lobart_STOLENCLOTHS_DontHaveIt ()
 {
 	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_15_00"); //Ich habe sie nicht mehr.
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01"); //Hast sie wohl schon verkauft, was? (poltert) Ich werd dir helfen, Bürschchen!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_DontHaveIt_05_01"); //Hast sie wohl schon verkauft, was? (poltert) Ich werd dir helfen, BÃ¼rschchen!
 	
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos (self);	
@@ -107,7 +107,7 @@ func void DIA_Lobart_STOLENCLOTHS_DontHaveIt ()
 func void DIA_Lobart_STOLENCLOTHS_ForgetIt ()
 {
 	AI_Output (other, self, "DIA_Lobart_STOLENCLOTHS_ForgetIt_15_00"); //Vergiss es!
-	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01"); //(poltert) Ich werd dir helfen, Bürschchen!
+	AI_Output (self, other, "DIA_Lobart_STOLENCLOTHS_ForgetIt_05_01"); //(poltert) Ich werd dir helfen, BÃ¼rschchen!
 	
 	Lobart_Kleidung_gestohlen = TRUE;
 	AI_StopProcessInfos (self);	
@@ -143,22 +143,22 @@ func void DIA_Lobart_Hallo_Info ()
 	if (hero.guild == GIL_NONE)
 	{
 		AI_Output (self, other, "DIA_Lobart_Hallo_05_00"); //Warum treibst du dich hier auf meinem Land rum?
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_01"); //(abschätzend) Für wen bist du? Für die aufständischen Bauern oder für den König?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_01"); //(abschÃ¤tzend) FÃ¼r wen bist du? FÃ¼r die aufstÃ¤ndischen Bauern oder fÃ¼r den KÃ¶nig?
 	
 		Info_ClearChoices	(DIA_Lobart_Hallo);
 		Info_AddChoice		(DIA_Lobart_Hallo, "Ich verstehe nicht...", DIA_Lobart_Hallo_What );
-		Info_AddChoice		(DIA_Lobart_Hallo, "Für den König!", 		DIA_Lobart_Hallo_ForTheKing );
-		Info_AddChoice		(DIA_Lobart_Hallo, "Für die Bauern!",		DIA_Lobart_Hallo_ForThePeasants );
+		Info_AddChoice		(DIA_Lobart_Hallo, "FÃ¼r den KÃ¶nig!", 		DIA_Lobart_Hallo_ForTheKing );
+		Info_AddChoice		(DIA_Lobart_Hallo, "FÃ¼r die Bauern!",		DIA_Lobart_Hallo_ForThePeasants );
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_Hallo_05_02"); //Was kann ich für dich tun?
+		AI_Output (self, other, "DIA_Lobart_Hallo_05_02"); //Was kann ich fÃ¼r dich tun?
 	};
 };
 
 func void DIA_Lobart_Hallo_ForThePeasants()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_ForThePeasants_15_00"); //Für die Bauern!
+	AI_Output (other, self, "DIA_Lobart_Hallo_ForThePeasants_15_00"); //FÃ¼r die Bauern!
 	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_01"); //Ha! Onar, dieser verdammte Kriegstreiber, bringt uns noch alle ins Grab!
 	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_02"); //Was glaubst du, wie lange sich die Paladine das ansehen?
 	AI_Output (self, other, "DIA_Lobart_Hallo_ForThePeasants_05_03"); //Nach dem, was Onar sich geleistet hat, ist die ganze Stadt in Aufruhr.
@@ -169,11 +169,11 @@ func void DIA_Lobart_Hallo_ForThePeasants()
 
 func void DIA_Lobart_Hallo_ForTheKing()
 {
-	AI_Output (other, self, "DIA_Lobart_Hallo_ForTheKing_15_00"); //Für den König!
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_01"); //(verächtlich) 'Für den König!' Das haben die Stadtwachen gesagt, als sie die Hälfte meiner Schafe geholt haben.
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_02"); //Aber wo sind die Drecksäcke, wenn wir uns die Banditen vom Hals halten müssen? Wo werden sie sein, wenn uns die Orks überrennen?
+	AI_Output (other, self, "DIA_Lobart_Hallo_ForTheKing_15_00"); //FÃ¼r den KÃ¶nig!
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_01"); //(verÃ¤chtlich) 'FÃ¼r den KÃ¶nig!' Das haben die Stadtwachen gesagt, als sie die HÃ¤lfte meiner Schafe geholt haben.
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_02"); //Aber wo sind die DrecksÃ¤cke, wenn wir uns die Banditen vom Hals halten mÃ¼ssen? Wo werden sie sein, wenn uns die Orks Ã¼berrennen?
 	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_03"); //Ich werd's dir sagen: In der Stadt, hinter den dicken Mauern.
-	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_04"); //Also hör mir auf mit dem König.
+	AI_Output (self, other, "DIA_Lobart_Hallo_ForTheKing_05_04"); //Also hÃ¶r mir auf mit dem KÃ¶nig.
 	
 	Lobart_AgainstKing = FALSE;
 	Info_ClearChoices	(DIA_Lobart_Hallo);
@@ -182,7 +182,7 @@ func void DIA_Lobart_Hallo_ForTheKing()
 func void DIA_Lobart_Hallo_What()
 {
 	AI_Output (other, self, "DIA_Lobart_Hallo_What_15_00"); //Ich verstehe nicht ...
-	AI_Output (self, other, "DIA_Lobart_Hallo_What_05_01"); //Was?! Verarsch mich nicht, Junge! Ich will wissen, wo du stehst! Also, für wen bist du?!
+	AI_Output (self, other, "DIA_Lobart_Hallo_What_05_01"); //Was?! Verarsch mich nicht, Junge! Ich will wissen, wo du stehst! Also, fÃ¼r wen bist du?!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -195,7 +195,7 @@ instance DIA_Lobart_KLEIDUNG		(C_INFO)
 	condition	= DIA_Lobart_KLEIDUNG_Condition;
 	information	= DIA_Lobart_KLEIDUNG_Info;
 	permanent 	= FALSE;
-	description	= "Ich brauche vernünftige Kleidung!";
+	description	= "Ich brauche vernÃ¼nftige Kleidung!";
 };
 
 func int DIA_Lobart_KLEIDUNG_Condition ()
@@ -208,7 +208,7 @@ func int DIA_Lobart_KLEIDUNG_Condition ()
 };
 func void DIA_Lobart_KLEIDUNG_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_KLEIDUNG_15_00"); //Ich brauche vernünftige Kleidung!
+	AI_Output (other, self, "DIA_Lobart_KLEIDUNG_15_00"); //Ich brauche vernÃ¼nftige Kleidung!
 	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_01"); //Ich kann dir saubere Landarbeiterkleidung geben.
 	AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_02"); //Kannst du sie denn bezahlen?
 	
@@ -219,7 +219,7 @@ func void DIA_Lobart_KLEIDUNG_Info ()
 		
 	if (! Npc_KnowsInfo(other, 	DIA_Lobart_WorkNOW))
 	{
-		AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_03"); //Du könntest einen Teil des Preises abarbeiten ... falls du jemand bist, der Arbeit SUCHT.
+		AI_Output (self, other, "DIA_Lobart_KLEIDUNG_05_03"); //Du kÃ¶nntest einen Teil des Preises abarbeiten ... falls du jemand bist, der Arbeit SUCHT.
 		B_LogEntry (TOPIC_Kleidung,"Ich kann einen Teil des Preises auf seinem Hof abarbeiten. Je mehr ich arbeite, desto billiger wird die Kleidung.");
 
 	};
@@ -264,7 +264,7 @@ func void DIA_Lobart_BuyClothes_Info ()
 	
 	if (MIS_Lobart_Rueben == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_02"); //Du hast für mich die Feldarbeit gemacht.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_02"); //Du hast fÃ¼r mich die Feldarbeit gemacht.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
@@ -276,25 +276,25 @@ func void DIA_Lobart_BuyClothes_Info ()
 	
 	if (MIS_Vino_Wein == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_04"); //Vino sagt, du warst ihm eine echte Hilfe. Ich meine, das will schon was heißen - er hält sonst nichts von Tagelöhnern.
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_04"); //Vino sagt, du warst ihm eine echte Hilfe. Ich meine, das will schon was heiÃŸen - er hÃ¤lt sonst nichts von TagelÃ¶hnern.
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 	
 	if (MIS_Maleth_Bandits == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_05"); //Maleth sagt, du hast uns die Banditen vom Hals geschafft. Die Mistkerle haben uns 'ne Menge Ärger gemacht. Dank dir sind wir sie jetzt los!
+		AI_Output (self, other, "DIA_Lobart_BuyClothes_05_05"); //Maleth sagt, du hast uns die Banditen vom Hals geschafft. Die Mistkerle haben uns 'ne Menge Ã„rger gemacht. Dank dir sind wir sie jetzt los!
 		Wert_LobartsRuestung = Wert_LobartsRuestung - 10;
 	};
 
 	// ------------------------------
-	// ------ Wert der Rüstung ------
+	// ------ Wert der RÃ¼stung ------
 	// ------------------------------
 		B_Say_Gold (self, other, Wert_LobartsRuestung);
 		
 		if (Wert_LobartsRuestung == 30) 
 		{
 			AI_Output (self, other, "DIA_Lobart_GOLD_05_06"); //Billiger wird sie nicht.
-			B_LogEntry (TOPIC_Kleidung,"Für weniger als 30 Goldstücke, wird er sie mir allerdings nicht verkaufen.");
+			B_LogEntry (TOPIC_Kleidung,"FÃ¼r weniger als 30 GoldstÃ¼cke, wird er sie mir allerdings nicht verkaufen.");
 		};
 
 	Info_ClearChoices	(DIA_Lobart_BuyClothes);
@@ -310,14 +310,14 @@ func void DIA_Lobart_BuyClothes_BUY()
 	{
 		if (Npc_HasItems(self,ItAr_BAU_L) > 0)
 		{
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_01"); //Tja, mein Junge. Ehrlich währt am längsten! Hier hast du sie!
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_01"); //Tja, mein Junge. Ehrlich wÃ¤hrt am lÃ¤ngsten! Hier hast du sie!
 			
 			B_GiveInvItems (self, other, ItAr_BAU_L, 1);
 		}
 		else 
 		{
 			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_02"); //In meinem Haus steht eine Truhe, da findest du saubere Sachen.
-			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_03"); //Aber lass dir bloß nicht einfallen, noch was anderes zu nehmen, ohne zu fragen!
+			AI_Output (self, other, "DIA_Lobart_BuyClothes_BUY_05_03"); //Aber lass dir bloÃŸ nicht einfallen, noch was anderes zu nehmen, ohne zu fragen!
 		};
 		
 		Lobart_Kleidung_Verkauft = TRUE;
@@ -366,12 +366,12 @@ func int DIA_Lobart_AufstandInfo_Condition ()
 func void DIA_Lobart_AufstandInfo_Info ()
 {
 	AI_Output (other, self, "DIA_Lobart_AufstandInfo_15_00"); //Was ist hier eigentlich los?
-	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_01"); //Du weißt nicht, was los ist? Junge, wo kommst du HER? Wir befinden uns am Rande eines Bürgerkrieges!
+	AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_01"); //Du weiÃŸt nicht, was los ist? Junge, wo kommst du HER? Wir befinden uns am Rande eines BÃ¼rgerkrieges!
 
 	if 	(hero.guild == GIL_NONE)
 	 {
 		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_02"); //Bis jetzt haben alle Bauern die Abgaben an die Stadt als gerechten Tribut angesehen.
-		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_03"); //Aber seit die Paladine in Khorinis sind, kommen die Stadtwachen immer öfter - und sie holen nach und nach alles ab.
+		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_03"); //Aber seit die Paladine in Khorinis sind, kommen die Stadtwachen immer Ã¶fter - und sie holen nach und nach alles ab.
 		AI_Output (self, other, "DIA_Lobart_AufstandInfo_05_04"); //Wenn das so weitergeht, haben wir bald selbst nichts mehr.
 	 };
 
@@ -379,7 +379,7 @@ func void DIA_Lobart_AufstandInfo_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr über Onar
+//	Mehr Ã¼ber Onar
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_OnarStory (C_INFO)
 {
@@ -388,7 +388,7 @@ instance DIA_Lobart_OnarStory (C_INFO)
 	condition	= DIA_Lobart_OnarStory_Condition;
 	information	= DIA_Lobart_OnarStory_Info;
 	permanent 	= FALSE;
-	description	= "Erzähl mir mehr über diesen Onar...";
+	description	= "ErzÃ¤hl mir mehr Ã¼ber diesen Onar...";
 };
 
 func int DIA_Lobart_OnarStory_Condition ()
@@ -402,23 +402,23 @@ func int DIA_Lobart_OnarStory_Condition ()
 
 func void DIA_Lobart_OnarStory_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_OnarStory_15_00"); //Erzähl mir mehr über diesen Onar...
+	AI_Output (other, self, "DIA_Lobart_OnarStory_15_00"); //ErzÃ¤hl mir mehr Ã¼ber diesen Onar...
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_01"); //Du bist doch Söldner, oder? Was soll ich dir dann noch über deinen Boss erzählen?
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_01"); //Du bist doch SÃ¶ldner, oder? Was soll ich dir dann noch Ã¼ber deinen Boss erzÃ¤hlen?
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_02"); //Onar ist der größte Bauer hier in der Gegend. Er hat sich von der Stadt losgesagt.
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_03"); //Es heißt, er hat Söldner angeheuert, damit sie ihm die Stadtwache vom Hals halten!
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_04"); //Kann's ihm nicht verübeln.
-			AI_Output (self, other, "DIA_Lobart_OnarStory_05_05"); //Jedenfalls traut sich jetzt kein königlicher Soldat mehr auf seinen Hof.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_02"); //Onar ist der grÃ¶ÃŸte Bauer hier in der Gegend. Er hat sich von der Stadt losgesagt.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_03"); //Es heiÃŸt, er hat SÃ¶ldner angeheuert, damit sie ihm die Stadtwache vom Hals halten!
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_04"); //Kann's ihm nicht verÃ¼beln.
+			AI_Output (self, other, "DIA_Lobart_OnarStory_05_05"); //Jedenfalls traut sich jetzt kein kÃ¶niglicher Soldat mehr auf seinen Hof.
 		};
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Mehr über Söldner
+//	Mehr Ã¼ber SÃ¶ldner
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_SldInfo (C_INFO)
 {
@@ -427,7 +427,7 @@ instance DIA_Lobart_SldInfo (C_INFO)
 	condition	= DIA_Lobart_SldInfo_Condition;
 	information	= DIA_Lobart_SldInfo_Info;
 	permanent 	= FALSE;
-	description	= "Was sind das für Söldner, die Onar angeheuert hat?";
+	description	= "Was sind das fÃ¼r SÃ¶ldner, die Onar angeheuert hat?";
 };
 
 func int DIA_Lobart_SldInfo_Condition ()
@@ -442,13 +442,13 @@ func int DIA_Lobart_SldInfo_Condition ()
 
 func void DIA_Lobart_SldInfo_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00"); //Was sind das für Söldner, die Onar angeheuert hat?
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01"); //Ich weiß nicht viel über die Kerle. Angeblich sollen viele von ihnen ehemalige Gefangene aus der Minenkolonie sein.
-	AI_Output (self, other, "DIA_Lobart_SldInfo_05_02"); //(abfällig) Was man von denen zu halten hat, ist ja bekannt ...
+	AI_Output (other, self, "DIA_Lobart_SldInfo_15_00"); //Was sind das fÃ¼r SÃ¶ldner, die Onar angeheuert hat?
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_01"); //Ich weiÃŸ nicht viel Ã¼ber die Kerle. Angeblich sollen viele von ihnen ehemalige Gefangene aus der Minenkolonie sein.
+	AI_Output (self, other, "DIA_Lobart_SldInfo_05_02"); //(abfÃ¤llig) Was man von denen zu halten hat, ist ja bekannt ...
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Für wen bist du?
+//	FÃ¼r wen bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WhichSide (C_INFO)
 {
@@ -457,7 +457,7 @@ instance DIA_Lobart_WhichSide (C_INFO)
 	condition	= DIA_Lobart_WhichSide_Condition;
 	information	= DIA_Lobart_WhichSide_Info;
 	permanent 	= FALSE;
-	description	= "Für wen bist du? Bauern oder König?";
+	description	= "FÃ¼r wen bist du? Bauern oder KÃ¶nig?";
 };
 
 func int DIA_Lobart_WhichSide_Condition ()
@@ -471,20 +471,20 @@ func int DIA_Lobart_WhichSide_Condition ()
 
 func void DIA_Lobart_WhichSide_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_WhichSide_15_00"); //Was ist mit dir? Für wen bist du? Bauern oder König?
+	AI_Output (other, self, "DIA_Lobart_WhichSide_15_00"); //Was ist mit dir? FÃ¼r wen bist du? Bauern oder KÃ¶nig?
 	AI_Output (self, other, "DIA_Lobart_WhichSide_05_01"); //Ich bin zu nah an der Stadt, um wirklich eine Wahl zu haben.
-	AI_Output (self, other, "DIA_Lobart_WhichSide_05_02"); //Aber ich bin ganz froh darüber. Ich wüsste nicht, wie ich mich entscheiden soll.
+	AI_Output (self, other, "DIA_Lobart_WhichSide_05_02"); //Aber ich bin ganz froh darÃ¼ber. Ich wÃ¼sste nicht, wie ich mich entscheiden soll.
 	
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WhichSide_05_03"); //Der König lässt uns ausbluten und Onar hetzt allen, die sich ihm nicht anschließen, seine Söldner auf den Hals.
-		AI_Output (self, other, "DIA_Lobart_WhichSide_05_04"); //Deswegen sind die meisten anderen Bauern noch unentschlossen, aber auf kurz oder lang werden sie sich schon für eine Seite entscheiden MÜSSEN.
+		AI_Output (self, other, "DIA_Lobart_WhichSide_05_03"); //Der KÃ¶nig lÃ¤sst uns ausbluten und Onar hetzt allen, die sich ihm nicht anschlieÃŸen, seine SÃ¶ldner auf den Hals.
+		AI_Output (self, other, "DIA_Lobart_WhichSide_05_04"); //Deswegen sind die meisten anderen Bauern noch unentschlossen, aber auf kurz oder lang werden sie sich schon fÃ¼r eine Seite entscheiden MÃœSSEN.
 	};
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	*** MISSION: Rüben ziehen ***
+//	*** MISSION: RÃ¼ben ziehen ***
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lobart_WorkNOW (C_INFO)
 {
@@ -512,13 +512,13 @@ func int DIA_Lobart_WorkNOW_Condition ()
 func void DIA_Lobart_WorkNOW_Info ()
 {
 	AI_Output (other, self, "DIA_Lobart_WorkNOW_15_00"); //Ich suche Arbeit!
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_01"); //Einen weiteren Knecht kann ich nicht gebrauchen. Aber für einen Tagelöhner hätte ich schon was zu tun.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_01"); //Einen weiteren Knecht kann ich nicht gebrauchen. Aber fÃ¼r einen TagelÃ¶hner hÃ¤tte ich schon was zu tun.
 	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_02"); //Ich meine, du kannst mir ein bisschen auf dem Feld zur Hand gehen. Und es gibt auch sicher noch ein paar andere Dinge, die hier zu tun sind.
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_03"); //Ich könnte dich mit Gold bezahlen. Oder dir ein paar gute Sachen zum Anziehen geben.
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_04"); //Die Sachen sind 'ne Menge wert. Ich kann sie dir nicht umsonst geben, aber ich kann sie dir billiger verkaufen, wenn du für mich arbeitest.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_03"); //Ich kÃ¶nnte dich mit Gold bezahlen. Oder dir ein paar gute Sachen zum Anziehen geben.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_05_04"); //Die Sachen sind 'ne Menge wert. Ich kann sie dir nicht umsonst geben, aber ich kann sie dir billiger verkaufen, wenn du fÃ¼r mich arbeitest.
 			
 		Log_CreateTopic (TOPIC_Kleidung,LOG_MISSION);  
 		Log_SetTopicStatus  (TOPIC_Kleidung,LOG_RUNNING);  
@@ -527,7 +527,7 @@ func void DIA_Lobart_WorkNOW_Info ()
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Lobart_Kleidung_Verkauft == TRUE)
 		{
-			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_05"); //So, wie du rumläufst, solltest du die Klamotten nehmen.
+			AI_Output (self, other, "DIA_Lobart_WorkNOW_05_05"); //So, wie du rumlÃ¤ufst, solltest du die Klamotten nehmen.
 		}
 		else
 		{
@@ -535,10 +535,10 @@ func void DIA_Lobart_WorkNOW_Info ()
 		};
 	};
 
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_07"); //Wie auch immer - das kleine Rübenfeld neben der Scheune muss abgeerntet werden.
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_05_07"); //Wie auch immer - das kleine RÃ¼benfeld neben der Scheune muss abgeerntet werden.
 	
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
-	Info_AddChoice		(DIA_Lobart_WorkNOW, "Ich soll Rüben ziehen? Willst du mich verarschen?", DIA_Lobart_WorkNOW_WannaFoolMe );
+	Info_AddChoice		(DIA_Lobart_WorkNOW, "Ich soll RÃ¼ben ziehen? Willst du mich verarschen?", DIA_Lobart_WorkNOW_WannaFoolMe );
 	Info_AddChoice		(DIA_Lobart_WorkNOW, "Na gut...", DIA_Lobart_WorkNOW_Ok );
 };
 
@@ -548,11 +548,11 @@ func void DIA_Lobart_WorkNOW_Ok()
 
 	if (hero.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Lobart_WorkNOW_Ok_05_01"); //Dann beeil dich ein bisschen, bevor ich es mir anders überlege.
+		AI_Output (self, other, "DIA_Lobart_WorkNOW_Ok_05_01"); //Dann beeil dich ein bisschen, bevor ich es mir anders Ã¼berlege.
 	};
 	Log_CreateTopic (TOPIC_Rueben,LOG_MISSION);  
 	Log_SetTopicStatus  (TOPIC_Rueben,LOG_RUNNING);  
-	B_LogEntry (TOPIC_Rueben,"Ich soll für Bauer Lobart das Rübenfeld ernten. Dafür bezahlt er mir Gold oder geht mit dem Preis für die Kleidung runter.");
+	B_LogEntry (TOPIC_Rueben,"Ich soll fÃ¼r Bauer Lobart das RÃ¼benfeld ernten. DafÃ¼r bezahlt er mir Gold oder geht mit dem Preis fÃ¼r die Kleidung runter.");
 	
 	MIS_Lobart_Rueben = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
@@ -560,8 +560,8 @@ func void DIA_Lobart_WorkNOW_Ok()
 
 func void DIA_Lobart_WorkNOW_WannaFoolMe()
 {
-	AI_Output (other, self, "DIA_Lobart_WorkNOW_WannaFoolMe_15_00"); //Ich soll Rüben ziehen? Willst du mich verarschen?
-	AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_01"); //Richtige Männerarbeit ist wohl nichts für so einen 'feinen Herrn', was?
+	AI_Output (other, self, "DIA_Lobart_WorkNOW_WannaFoolMe_15_00"); //Ich soll RÃ¼ben ziehen? Willst du mich verarschen?
+	AI_Output (self, other, "DIA_Lobart_WorkNOW_WannaFoolMe_05_01"); //Richtige MÃ¤nnerarbeit ist wohl nichts fÃ¼r so einen 'feinen Herrn', was?
 
 	if (hero.guild == GIL_NONE)
 	{
@@ -574,7 +574,7 @@ func void DIA_Lobart_WorkNOW_WannaFoolMe()
 	
 	Log_CreateTopic (TOPIC_Rueben,LOG_MISSION);  
 	Log_SetTopicStatus  (TOPIC_Rueben,LOG_RUNNING);  
-	B_LogEntry (TOPIC_Rueben,"Ich soll für Bauer Lobart das Rübenfeld ernten. Dafür bezahlt er mir Gold oder geht mit dem Preis für die Kleidung runter.");
+	B_LogEntry (TOPIC_Rueben,"Ich soll fÃ¼r Bauer Lobart das RÃ¼benfeld ernten. DafÃ¼r bezahlt er mir Gold oder geht mit dem Preis fÃ¼r die Kleidung runter.");
 	
 	MIS_Lobart_Rueben = LOG_RUNNING;
 	Info_ClearChoices	(DIA_Lobart_WorkNOW);
@@ -591,7 +591,7 @@ instance DIA_Lobart_RuebenRunning		(C_INFO)
 	condition	 = 	DIA_Lobart_RuebenRunning_Condition;
 	information	 = 	DIA_Lobart_RuebenRunning_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Hier hast du deine Rüben!";
+	description	 = 	"Hier hast du deine RÃ¼ben!";
 };
 
 func int DIA_Lobart_RuebenRunning_Condition ()
@@ -606,7 +606,7 @@ func int DIA_Lobart_RuebenRunning_Condition ()
 
 func void DIA_Lobart_RuebenRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_00"); //Hier hast du deine Rüben!
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_00"); //Hier hast du deine RÃ¼ben!
 
 	if (Npc_HasItems (other,ItPl_Beet) >= 20)
 	{
@@ -622,17 +622,17 @@ func void DIA_Lobart_RuebenRunning_Info ()
 			MIS_Lobart_RuebenToHilda = LOG_RUNNING;
 			Log_CreateTopic (TOPIC_Ruebenbringen,LOG_MISSION);
 			Log_SetTopicStatus (TOPIC_Ruebenbringen,LOG_RUNNING);
-			B_LogEntry (TOPIC_Ruebenbringen,"Ich soll die geernteten Rüben zu Lobart's Frau im Haus bringen. Sie soll sie kochen. ");
+			B_LogEntry (TOPIC_Ruebenbringen,"Ich soll die geernteten RÃ¼ben zu Lobart's Frau im Haus bringen. Sie soll sie kochen. ");
 		};
 		
 		MIS_Lobart_Rueben = LOG_SUCCESS;
 		B_GivePlayerXP (XP_LobartHolRueben);
 		 
 	//	Log_SetTopicStatus(TOPIC_BauerLobart, LOG_SUCCESS); ALT
-	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine Rüben gebracht, er hat mich dafür entlohnt."); 
+	//	Log_AddEntry (TOPIC_BauerLobart,"Ich habe Lobart seine RÃ¼ben gebracht, er hat mich dafÃ¼r entlohnt."); 
 		
 		AI_Output (other, self, "DIA_Lobart_RuebenRunning_15_03"); //Was ist mit meinem Lohn?
-		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //Ich kann dir 5 Goldstücke geben.
+		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_04"); //Ich kann dir 5 GoldstÃ¼cke geben.
 		
 		if (hero.guild == GIL_NONE)
 			{
@@ -643,15 +643,15 @@ func void DIA_Lobart_RuebenRunning_Info ()
 
 		if (hero.guild == GIL_NONE)
 			{
-				Info_AddChoice		(DIA_Lobart_RuebenRunning, "Mach mir einen besseren Preis für die Klamotten!",	DIA_Lobart_RuebenRunning_Billiger );
+				Info_AddChoice		(DIA_Lobart_RuebenRunning, "Mach mir einen besseren Preis fÃ¼r die Klamotten!",	DIA_Lobart_RuebenRunning_Billiger );
 			};
 
-		Info_AddChoice		(DIA_Lobart_RuebenRunning, "Gib mir 5 Goldmünzen!", 		DIA_Lobart_RuebenRunning_Gold );
+		Info_AddChoice		(DIA_Lobart_RuebenRunning, "Gib mir 5 GoldmÃ¼nzen!", 		DIA_Lobart_RuebenRunning_Gold );
 
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_06"); //Das sind ja noch nicht mal 20 Stück!
+		AI_Output (self, other, "DIA_Lobart_RuebenRunning_05_06"); //Das sind ja noch nicht mal 20 StÃ¼ck!
 		
 		if (hero.guild == GIL_NONE)
 			{
@@ -665,7 +665,7 @@ func void DIA_Lobart_RuebenRunning_Info ()
 
 func void DIA_Lobart_RuebenRunning_Gold ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Gold_15_00"); //Gib mir 5 Goldmünzen!
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Gold_15_00"); //Gib mir 5 GoldmÃ¼nzen!
 	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Gold_05_01"); //Hier.
 
 	B_GiveInvItems (self, other, ItMi_Gold, 5);
@@ -681,8 +681,8 @@ func void DIA_Lobart_RuebenRunning_Gold ()
 
 func void DIA_Lobart_RuebenRunning_Billiger ()
 {
-	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Billiger_15_00"); //Mach mir einen besseren Preis für die Klamotten!
-	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Billiger_05_01"); //Gut! Ich werde sie dir für 10 Goldstücke weniger geben.
+	AI_Output (other, self, "DIA_Lobart_RuebenRunning_Billiger_15_00"); //Mach mir einen besseren Preis fÃ¼r die Klamotten!
+	AI_Output (self, other, "DIA_Lobart_RuebenRunning_Billiger_05_01"); //Gut! Ich werde sie dir fÃ¼r 10 GoldstÃ¼cke weniger geben.
 	
 	Info_ClearChoices 	(DIA_Lobart_RuebenRunning);
 };
@@ -697,7 +697,7 @@ instance DIA_Lobart_MoreWork (C_INFO)
 	condition	= DIA_Lobart_MoreWork_Condition;
 	information	= DIA_Lobart_MoreWork_Info;
 	permanent 	= TRUE;
-	description	= "Hast du sonst noch was für mich zu tun?";
+	description	= "Hast du sonst noch was fÃ¼r mich zu tun?";
 };
 
 func int DIA_Lobart_MoreWork_Condition ()
@@ -712,11 +712,11 @@ func int DIA_Lobart_MoreWork_Condition ()
 
 func void DIA_Lobart_MoreWork_Info ()
 {
-	AI_Output (other, self, "DIA_Lobart_MoreWork_15_00"); //Hast du sonst noch was für mich zu tun?
+	AI_Output (other, self, "DIA_Lobart_MoreWork_15_00"); //Hast du sonst noch was fÃ¼r mich zu tun?
 	
 	if (MIS_Lobart_Rueben == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Lobart_MoreWork_05_01"); //Hol erst die Rüben vom Feld. Dann sehen wir weiter.
+		AI_Output (self, other, "DIA_Lobart_MoreWork_05_01"); //Hol erst die RÃ¼ben vom Feld. Dann sehen wir weiter.
 	}
 	else //SUCCESS
 	{
@@ -755,11 +755,11 @@ func int DIA_Lobart_ANDREHELPLOBART_Condition ()
 
 func void DIA_Lobart_ANDREHELPLOBART_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_ANDREHELPLOBART_15_00"); //Andre schickt mich zu dir. Kann ich irgendwas für dich tun?
-	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_01"); //Ja, klar. Diese verdammten Feldräuber machen mich noch ganz krank.
+	AI_Output			(other, self, "DIA_Lobart_ANDREHELPLOBART_15_00"); //Andre schickt mich zu dir. Kann ich irgendwas fÃ¼r dich tun?
+	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_01"); //Ja, klar. Diese verdammten FeldrÃ¤uber machen mich noch ganz krank.
 	AI_Output			(self, other, "DIA_Lobart_ANDREHELPLOBART_05_02"); //Mach sie alle kalt. Wie du das anstellst, ist mir egal!
 
-	Log_AddEntry (TOPIC_BecomeMIL,"Lobarts Felder werden von Feldräubern heimgesucht. Er will, daß ich sie alle vertreibe."); 
+	Log_AddEntry (TOPIC_BecomeMIL,"Lobarts Felder werden von FeldrÃ¤ubern heimgesucht. Er will, daÃŸ ich sie alle vertreibe."); 
 	MIS_LobartKillBugs = LOG_RUNNING;
 	
 	AI_StopProcessInfos (self);
@@ -801,7 +801,7 @@ func void DIA_Lobart_BUGDEAD_Info ()
 
 		{
 			AI_Output			(other, self, "DIA_Lobart_BUGDEAD_15_00"); //Ich hab die Biester erledigt!
-			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_01"); //Alle Achtung. Als Kammerjäger taugst du was. Ich werde dich weiter empfehlen. Hier, nimm das als Entlohnung.
+			AI_Output			(self, other, "DIA_Lobart_BUGDEAD_05_01"); //Alle Achtung. Als KammerjÃ¤ger taugst du was. Ich werde dich weiter empfehlen. Hier, nimm das als Entlohnung.
 			
 			B_StartOtherRoutine	(Vino,"Start");
 			B_StartOtherRoutine	(LobartsBauer1,"Start");
@@ -812,7 +812,7 @@ func void DIA_Lobart_BUGDEAD_Info ()
 
 			MIS_LobartKillBugs 	= LOG_SUCCESS;
 			MIS_AndreHelpLobart = LOG_SUCCESS;
-			Log_AddEntry (TOPIC_BecomeMIL,"Lobart ist seine Feldräuber los geworden. Ich habe sie beseitigt"); 
+			Log_AddEntry (TOPIC_BecomeMIL,"Lobart ist seine FeldrÃ¤uber los geworden. Ich habe sie beseitigt"); 
 			DIA_Lobart_BUGDEAD_noPerm = TRUE;
 		}
 		else  
@@ -881,7 +881,7 @@ func void DIA_Lobart_DMT_Info ()
 {
 	AI_Output			(other, self, "DIA_Lobart_DMT_15_00"); //Wie geht's deinem Hof?
 	AI_Output			(self, other, "DIA_Lobart_DMT_05_01"); //Es ist nicht mehr auszuhalten.
-	AI_Output			(self, other, "DIA_Lobart_DMT_05_02"); //Auf einmal sind überall diese schwarzen Kapuzenkerle aufgetaucht und haben sich an der Straße und auf meinem Hof postiert.
+	AI_Output			(self, other, "DIA_Lobart_DMT_05_02"); //Auf einmal sind Ã¼berall diese schwarzen Kapuzenkerle aufgetaucht und haben sich an der StraÃŸe und auf meinem Hof postiert.
 
 
 	Info_ClearChoices	(DIA_Lobart_DMT);
@@ -903,7 +903,7 @@ func void DIA_Lobart_DMT_Info ()
 	if ((Npc_IsDead(Hilda))== FALSE)
 	&& ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL)	||	(hero.guild == GIL_KDF))
 	{
-		AI_Output			(self, other, "DIA_Lobart_DMT_05_04"); //Kurze Zeit später ist meine Frau wieder todkrank geworden. Sie liegt die meiste Zeit im Bett. Das hatte sie schon öfter.
+		AI_Output			(self, other, "DIA_Lobart_DMT_05_04"); //Kurze Zeit spÃ¤ter ist meine Frau wieder todkrank geworden. Sie liegt die meiste Zeit im Bett. Das hatte sie schon Ã¶fter.
 	};
 
 	AI_Output			(self, other, "DIA_Lobart_DMT_05_05"); //Ich dreh hier noch durch!
@@ -915,14 +915,14 @@ func void DIA_Lobart_DMT_Info ()
 		Info_AddChoice	(DIA_Lobart_DMT, "Warum gehst du mit deiner Frau nicht zum Heiler?", DIA_Lobart_DMT_FrauHeilen );
 	};
 
-	Info_AddChoice	(DIA_Lobart_DMT, "Warum unternimmst du nichts gegen die schwarzen Männer?", DIA_Lobart_DMT_hof );
-	Info_AddChoice	(DIA_Lobart_DMT, "Hast du mit den schwarzen Männern gesprochen?", DIA_Lobart_DMT_spokeToThem );
+	Info_AddChoice	(DIA_Lobart_DMT, "Warum unternimmst du nichts gegen die schwarzen MÃ¤nner?", DIA_Lobart_DMT_hof );
+	Info_AddChoice	(DIA_Lobart_DMT, "Hast du mit den schwarzen MÃ¤nnern gesprochen?", DIA_Lobart_DMT_spokeToThem );
 	
 };
 func void DIA_Lobart_DMT_FrauHeilen ()
 {
 	AI_Output			(other, self, "DIA_Lobart_DMT_FrauHeilen_15_00"); //Warum gehst du mit deiner Frau nicht zum Heiler?
-	AI_Output			(self, other, "DIA_Lobart_DMT_FrauHeilen_05_01"); //Dazu müssten wir zu Vatras in die Stadt gehen, aber ich geh hier keinen Meter von meinem Hof, solange hier so ein Chaos herrscht.
+	AI_Output			(self, other, "DIA_Lobart_DMT_FrauHeilen_05_01"); //Dazu mÃ¼ssten wir zu Vatras in die Stadt gehen, aber ich geh hier keinen Meter von meinem Hof, solange hier so ein Chaos herrscht.
 	
 	Log_CreateTopic (TOPIC_HealHilda, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HealHilda, LOG_RUNNING);
@@ -939,15 +939,15 @@ func void DIA_Lobart_DMT_BACK ()
 
 func void DIA_Lobart_DMT_spokeToThem ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_spokeToThem_15_00"); //Hast du mit den schwarzen Männern gesprochen?
-	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_01"); //Sicher. Es ließ sich ja gar nicht verhindern.
+	AI_Output			(other, self, "DIA_Lobart_DMT_spokeToThem_15_00"); //Hast du mit den schwarzen MÃ¤nnern gesprochen?
+	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_01"); //Sicher. Es lieÃŸ sich ja gar nicht verhindern.
 	AI_Output			(self, other, "DIA_Lobart_DMT_spokeToThem_05_02"); //Ich glaube, sie suchen jemanden.
 };
 
 func void DIA_Lobart_DMT_hof ()
 {
-	AI_Output			(other, self, "DIA_Lobart_DMT_hof_15_00"); //Warum unternimmst du nichts gegen die schwarzen Männer?
-	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_01"); //Würde ich ja liebend gerne tun. Aber ich hab gesehen, wie sie einen Stadtbewohner bei lebendigem Leib verbrannt haben. Einfach so.
+	AI_Output			(other, self, "DIA_Lobart_DMT_hof_15_00"); //Warum unternimmst du nichts gegen die schwarzen MÃ¤nner?
+	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_01"); //WÃ¼rde ich ja liebend gerne tun. Aber ich hab gesehen, wie sie einen Stadtbewohner bei lebendigem Leib verbrannt haben. Einfach so.
 	AI_Output			(self, other, "DIA_Lobart_DMT_hof_05_02"); //Wozu soll ich mein Leben aufs Spiel setzen?
 };
 
@@ -960,7 +960,7 @@ func void DIA_Lobart_DMT_VinoWas ()
 func void DIA_Lobart_DMT_VinoWohin ()
 {
 	AI_Output			(other, self, "DIA_Lobart_DMT_VinoWohin_15_00"); //Wohin haben sie Vino verschleppt?
-	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWohin_05_01"); //Sie sind mit ihm den Hügel da rauf.
+	AI_Output			(self, other, "DIA_Lobart_DMT_VinoWohin_05_01"); //Sie sind mit ihm den HÃ¼gel da rauf.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -973,7 +973,7 @@ instance DIA_Lobart_VINOTOT		(C_INFO)
 	condition	 = 	DIA_Lobart_VINOTOT_Condition;
 	information	 = 	DIA_Lobart_VINOTOT_Info;
 
-	description	 = 	"Vino kommt nicht mehr zurück.";
+	description	 = 	"Vino kommt nicht mehr zurÃ¼ck.";
 };
 
 func int DIA_Lobart_VINOTOT_Condition ()
@@ -988,7 +988,7 @@ func int DIA_Lobart_VINOTOT_Condition ()
 
 func void DIA_Lobart_VINOTOT_Info ()
 {
-	AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_00"); //Vino kommt nicht mehr zurück.
+	AI_Output			(other, self, "DIA_Lobart_VINOTOT_15_00"); //Vino kommt nicht mehr zurÃ¼ck.
 
 	if (Npc_IsDead(Vino))	
 	{
@@ -1107,8 +1107,8 @@ func int DIA_Lobart_ORKPROBLEM_Condition ()
 func void DIA_Lobart_ORKPROBLEM_Info ()
 {
 	AI_Output			(other, self, "DIA_Lobart_ORKPROBLEM_15_00"); //Du hast ein Orkproblem.
-	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_01"); //(poltert) Verdammt noch mal. Hört der Stress denn nie auf.
-	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_02"); //Wenn das so weiter geht, ist mein Hof keine 3 Goldmünzen mehr wert.
+	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_01"); //(poltert) Verdammt noch mal. HÃ¶rt der Stress denn nie auf.
+	AI_Output			(self, other, "DIA_Lobart_ORKPROBLEM_05_02"); //Wenn das so weiter geht, ist mein Hof keine 3 GoldmÃ¼nzen mehr wert.
 	
 	Log_CreateTopic (TOPIC_LobartsOrKProblem, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_LobartsOrKProblem, LOG_RUNNING);
@@ -1150,7 +1150,7 @@ func void DIA_Lobart_ORKSWEG_Info ()
 	AI_Output			(other, self, "DIA_Lobart_ORKSWEG_15_00"); //Ich habe die Orks von deinem Land beseitigt.
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_01"); //Da soll noch mal einer sagen, dass die Paladine nichts für uns kleinen Bauern tun.
+		AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_01"); //Da soll noch mal einer sagen, dass die Paladine nichts fÃ¼r uns kleinen Bauern tun.
 	};
 	AI_Output			(self, other, "DIA_Lobart_ORKSWEG_05_02"); //Innos sei gedankt. Ich kann dir nicht viel geben, aber ich hoffe, du erkennst meine Geste der Dankbarkeit an.
 	

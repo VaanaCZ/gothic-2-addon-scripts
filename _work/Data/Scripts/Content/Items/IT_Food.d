@@ -18,7 +18,7 @@ const int	Value_Water		=	10;		const int	HP_Water		=	8;
 const int	Value_Beer		=	20;		const int	HP_Beer			=	3;	const int	Mana_Beer		=	1;
 const int	Value_Booze		=	15;		const int	HP_Booze		=	4;	const int	Mana_Booze		=	1;
 const int	Value_Wine		=	20;		const int	HP_Wine			=	2;	const int	Mana_Wine		=	1;
-const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge‰ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
+const int	Value_Milk		=	15; 	const int	HP_Milk			=	5;	const int	Mana_Milk		=	1;	// Joly: Wenn diese Werte ge√§ndert werden passt Lobarts Auftrag holMilch nicht mehr!!!!!!
 
 
 
@@ -81,7 +81,7 @@ INSTANCE ItFo_Apple (C_Item)
 
 INSTANCE ItFo_Cheese (C_Item)
 {	
-	name 				=	"K‰se";
+	name 				=	"K√§se";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;

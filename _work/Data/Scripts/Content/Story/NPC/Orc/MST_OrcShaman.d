@@ -108,7 +108,7 @@ INSTANCE OrcShaman_Hosh_Pak (Mst_Default_OrcShaman)
 
 INSTANCE OrcShaman_Sit_CanyonLibraryKey (Mst_Default_OrcShaman)
 {
-	name							=	"Anführer der Horde";
+	name							=	"AnfÃ¼hrer der Horde";
 	// ------ visuals ------
 	B_SetVisuals_OrcShaman();
 	

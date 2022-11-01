@@ -24,7 +24,7 @@ FUNC VOID	Change_FH_Visual()
 	if  (FH_SkinTexture < 0)
 		{
 			FH_SkinTexture = 0;
-			PrintScreen	("MINUS-Gesichter gibt´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
+			PrintScreen	("MINUS-Gesichter gibtÂ´s nicht!!!!!!!!!!!" , -1, -1, "FONT_OLD_10_WHITE.TGA", 2);		
 		};
 		
 	B_SetNpcVisual 		(self, SEX, FH_HeadMesh, FH_SkinTexture, BodyTex_N, NO_ARMOR);		
@@ -293,7 +293,7 @@ FUNC VOID DIA_FH_Choose_HeadMesh_Info()
 {	
 	Info_ClearChoices	(DIA_FH_Choose_HeadMesh);
 
-	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "zurück" 				, DIA_FH_Choose_HeadMesh_7);
+	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "zurÃ¼ck" 				, DIA_FH_Choose_HeadMesh_7);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Psionic" 	, DIA_FH_Choose_HeadMesh_6);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Thief" 		, DIA_FH_Choose_HeadMesh_5);
 	Info_AddChoice		(DIA_FH_Choose_HeadMesh, "Hum_Head_Bald" 		, DIA_FH_Choose_HeadMesh_4);

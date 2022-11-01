@@ -28,7 +28,7 @@ instance DIA_PAL_298_Pass		(C_INFO)
 	condition	 = 	DIA_PAL_298_Pass_Condition;
 	information	 = 	DIA_PAL_298_Pass_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Wo führt dieser Weg hin? ";
+	description	 = 	"Wo fÃ¼hrt dieser Weg hin? ";
 };
 func int DIA_PAL_298_Pass_Condition ()
 {	
@@ -39,10 +39,10 @@ func int DIA_PAL_298_Pass_Condition ()
 };
 func void DIA_PAL_298_Pass_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Wo führt dieser Weg hin?
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Hinter dem Tor liegt der Pass, der zum Minental führt.
+	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Wo fÃ¼hrt dieser Weg hin?
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Hinter dem Tor liegt der Pass, der zum Minental fÃ¼hrt.
 	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//Auf dieser Seite stehen wir - auf der anderen Seite haben sich ein paar Orks festgebissen.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Geh lieber wieder zurück - du kannst hier eh nicht durch.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Geh lieber wieder zurÃ¼ck - du kannst hier eh nicht durch.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRESPASS
@@ -65,7 +65,7 @@ func int DIA_PAL_298_TRESPASS_Condition ()
 };
 func void DIA_PAL_298_TRESPASS_Info ()
 {
-	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Bist du sicher, dass du da rein willst? Ich befürchte, du wirst nicht sehr weit kommen - die Orks stehen auf der anderen Seite.
+	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Bist du sicher, dass du da rein willst? Ich befÃ¼rchte, du wirst nicht sehr weit kommen - die Orks stehen auf der anderen Seite.
 	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Wenn es einen Weg ins Minental gibt, werde ich ihn finden.
 	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//Gut, dann geh. Geh mit Innos.
 };
@@ -92,7 +92,7 @@ func int DIA_PAL_298_Perm1_Condition ()
 func void DIA_PAL_298_Perm1_Info ()
 {
 	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//Und wenn ich auf eigenes Risiko gehe?
-	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Dann würdest du sterben. Deshalb stehen wir ja hier. Damit du nicht auf solche dummen Gedanken kommst.
+	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Dann wÃ¼rdest du sterben. Deshalb stehen wir ja hier. Damit du nicht auf solche dummen Gedanken kommst.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 

@@ -28,7 +28,7 @@ INSTANCE DIA_Addon_BDT_10029_Buddler_Hi   (C_INFO)
 	condition   = DIA_Addon_10029_Buddler_Hi_Condition;
 	information = DIA_Addon_10029_Buddler_Hi_Info;
 	permanent   = TRUE;
-	description = "Wie l‰uft's ?";
+	description = "Wie l√§uft's ?";
 };
 FUNC INT DIA_Addon_10029_Buddler_Hi_Condition()
 {	
@@ -36,11 +36,11 @@ FUNC INT DIA_Addon_10029_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10029_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10029_Buddler_Hi_15_00");//Wie l‰uft's ?
+	AI_Output (other, self, "DIA_Addon_BDT_10029_Buddler_Hi_15_00");//Wie l√§uft's ?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_01");//Solange die Sklaven arbeiten, r¸hre ich keinen Finger.
+		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_01");//Solange die Sklaven arbeiten, r√ºhre ich keinen Finger.
 	}
 	else
 	{

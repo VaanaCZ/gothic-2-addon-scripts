@@ -37,9 +37,9 @@ FUNC INT DIA_1061_Wache_Hallo_Condition()
 FUNC VOID DIA_1061_Wache_Hallo_Info()
 {
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//Halt - du kannst hier nicht vorbei.
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Ich will mit deinem Anführer sprechen.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironisch) Ach so, du willst mit meinem Boss sprechen. Ja, dann lasse ich dich NATÜRLICH durch.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(todernst) Aber nur wenn du seinen Namen kennst - denn wenn nicht, muss ich dich töten! Also?
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Ich will mit deinem AnfÃ¼hrer sprechen.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironisch) Ach so, du willst mit meinem Boss sprechen. Ja, dann lasse ich dich NATÃœRLICH durch.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(todernst) Aber nur wenn du seinen Namen kennst - denn wenn nicht, muss ich dich tÃ¶ten! Also?
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Lee",DIA_1061_Wache_Hallo_Lee);
@@ -63,7 +63,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Lee()
 FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Dexter.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Tja ... Schätze, du kennst meinen Boss. Okay, ich lasse dich durch. Aber ich warne dich.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Tja ... SchÃ¤tze, du kennst meinen Boss. Okay, ich lasse dich durch. Aber ich warne dich.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Kommst du irgendjemandem zu nahe, kommst du hier nicht mehr lebend raus!
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Also atme tief durch und lass die Waffen stecken. Dexter findest du im Haus.
 	
@@ -77,7 +77,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Diego.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Richtig!
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//Nein, war nur ein Scherz. Du hast keine Ahnung, wer mein Boss ist.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Dann gibt's auch keinen Grund mehr, warum ich dich nicht töten sollte.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Dann gibt's auch keinen Grund mehr, warum ich dich nicht tÃ¶ten sollte.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);
@@ -114,7 +114,7 @@ FUNC INT DIA_1061_Wache_Perm_Condition()
 };
 FUNC VOID DIA_1061_Wache_Perm_Info()
 {
-	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Denk dran, immer schön ruhig bleiben, dann kommst hier auch lebend wieder raus.
+	AI_Output (self, other, "DIA_1061_Wache_Perm_01_00");//Denk dran, immer schÃ¶n ruhig bleiben, dann kommst hier auch lebend wieder raus.
 	AI_StopProcessInfos (self);
 };
 	 

@@ -51,7 +51,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent	= TRUE;
-	description = "Was weißt du über dieses Tal?";
+	description = "Was weiÃŸt du Ã¼ber dieses Tal?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
@@ -61,9 +61,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Was weißt du über dieses Tal?
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Was weiÃŸt du Ã¼ber dieses Tal?
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Hier gibt's haufenweise altes Zeug. Raven hat uns den Auftrag gegeben, alles einzusammeln.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Keine Ahnung, was er damit will, aber niemand, der bei Verstand ist, wird seinen Hals für ein paar alte Steine riskieren ...
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Keine Ahnung, was er damit will, aber niemand, der bei Verstand ist, wird seinen Hals fÃ¼r ein paar alte Steine riskieren ...
 };
 // *************************************************************************
 // 							News
@@ -85,8 +85,8 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Gibt's was Neues?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Diese Piraten haben wir ganz schön über's Ohr gehauen.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Sie haben uns Gefangene besorgt, aber nicht eine Münze dafür gesehen. Kein Wunder, dass die sauer sind.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Diese Piraten haben wir ganz schÃ¶n Ã¼ber's Ohr gehauen.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Sie haben uns Gefangene besorgt, aber nicht eine MÃ¼nze dafÃ¼r gesehen. Kein Wunder, dass die sauer sind.
 	
 	if (BDT_13_einmal == FALSE)
 	{

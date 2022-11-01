@@ -77,11 +77,11 @@ FUNC INT DIA_Gaertner_Job_Condition()
 FUNC VOID DIA_Gaertner_Job_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Was machst du hier?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //Was glaubst du, hm? Ich bin Gärtner, ich kümmere mich um den Garten.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //Was glaubst du, hm? Ich bin GÃ¤rtner, ich kÃ¼mmere mich um den Garten.
 	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Du bist hier ziemlich alleine, was?
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Ja, und das soll auch so bleiben. Ich bin froh, dass ich hier meine Ruhe habe.
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Damals, da habe ich einen Kerl umgelegt und sie wollten mich in die Strafkolonie bringen.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Aber Larius, der Statthalter, brauchte noch einen Gärtner - und deshalb konnte ich hier bleiben.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Aber Larius, der Statthalter, brauchte noch einen GÃ¤rtner - und deshalb konnte ich hier bleiben.
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Dieser Garten ist mit der Zeit mein Zuhause geworden. Und ich bin zufrieden damit.
 };
 //*************************************************************
@@ -107,11 +107,11 @@ FUNC INT DIA_Gaertner_Plants_Condition()
 FUNC VOID DIA_Gaertner_Plants_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Baust du auch Pflanzen an?
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Wenig. Ich hab Feuerkraut und Feuernesseln angebaut. Hab auch mal Sumpfkraut probiert, aber das wächst hier nur mäßig.
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Wenig. Ich hab Feuerkraut und Feuernesseln angebaut. Hab auch mal Sumpfkraut probiert, aber das wÃ¤chst hier nur mÃ¤ÃŸig.
 	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Na ja, ich hab gerade geerntet. Also, wenn du was kaufen willst ...
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Der Gärtner des Statthalters kann mir Pflanzen verkaufen.");
+	B_LogEntry (Topic_CityTrader,"Der GÃ¤rtner des Statthalters kann mir Pflanzen verkaufen.");
 };
 //*************************************************************
 //		Trade
@@ -163,7 +163,7 @@ FUNC INT DIA_Gaertner_Krautabak_Condition()
 FUNC VOID DIA_Gaertner_Krautabak_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //Ich habe hier Krauttabak. Willst du was rauchen?
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Kenne ich nicht - aber klar, immer her damit. Ich dreh mir mal einen Stängel.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Kenne ich nicht - aber klar, immer her damit. Ich dreh mir mal einen StÃ¤ngel.
 	
 	B_GiveInvItems (other, self, ItMi_SumpfTabak,1);
 	Npc_RemoveInvItems (self,ItMi_SumpfTabak,1);
@@ -200,8 +200,8 @@ FUNC INT DIA_Gaertner_Sign_Condition()
 FUNC VOID DIA_Gaertner_Sign_Info()
 {	
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Du gehörst also dazu. Dann habe ich eine nützliche Information für dich.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Einige der Häuser hier oben haben geheime Wände, die nur durch versteckte Schalter geöffnet werden können.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Du gehÃ¶rst also dazu. Dann habe ich eine nÃ¼tzliche Information fÃ¼r dich.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Einige der HÃ¤user hier oben haben geheime WÃ¤nde, die nur durch versteckte Schalter geÃ¶ffnet werden kÃ¶nnen.
 	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Dahinter bewahren die Leute ihren wertvollen Krempel auf.
 };
 

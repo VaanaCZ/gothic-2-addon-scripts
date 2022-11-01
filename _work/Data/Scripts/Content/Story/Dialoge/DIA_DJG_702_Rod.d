@@ -56,8 +56,8 @@ func int DIA_RodDJG_HALLO_Condition ()
 func void DIA_RodDJG_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_15_00"); //Alles klar bei dir?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_01"); //Diese Stiefel bringen mich noch um! Die neue Rüstung ist zwar Klasse, aber wieso müssen die Riemen an den Stiefeln bloß so fest sitzen.
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_02"); //Mach ich sie lockerer, fallen sie mir fast von den Füßen.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_01"); //Diese Stiefel bringen mich noch um! Die neue RÃ¼stung ist zwar Klasse, aber wieso mÃ¼ssen die Riemen an den Stiefeln bloÃŸ so fest sitzen.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_02"); //Mach ich sie lockerer, fallen sie mir fast von den FÃ¼ÃŸen.
 
 	if 	(
 		((Npc_IsDead(Swampdragon)) == FALSE)
@@ -72,8 +72,8 @@ func void DIA_RodDJG_HALLO_Info ()
 func void DIA_RodDJG_HALLO_Woher ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_Woher_15_00"); //Wo hast du die Stiefel her?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_01"); //Bennet, der alte Haudegen, hat sie uns Drachenjägern angefertigt und hat sich den Mist auch noch großzügig bezahlen lassen.
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_02"); //Wenn ich ihn in die Finger kriege, dann stopf ich ihm die Dinger in den Rachen und hole mir erstmal mein Geld wieder zurück.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_01"); //Bennet, der alte Haudegen, hat sie uns DrachenjÃ¤gern angefertigt und hat sich den Mist auch noch groÃŸzÃ¼gig bezahlen lassen.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_02"); //Wenn ich ihn in die Finger kriege, dann stopf ich ihm die Dinger in den Rachen und hole mir erstmal mein Geld wieder zurÃ¼ck.
 
 };
 
@@ -90,11 +90,11 @@ func void DIA_RodDJG_HALLO_warten ()
 		}
 		else
 		{
-		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_02"); //Ich hatte mir überlegt, die Sumpfregion dahinten mal genauer anzusehen.
+		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_02"); //Ich hatte mir Ã¼berlegt, die Sumpfregion dahinten mal genauer anzusehen.
 		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_03"); //Was denkst du? Sollten wir zusammen mal nachsehen, was wir finden?
 
 		Info_AddChoice	(DIA_RodDJG_HALLO, "Ich werde alleine gehen.", DIA_RodDJG_HALLO_warten_allein );
-		Info_AddChoice	(DIA_RodDJG_HALLO, "Was weißt du von der Sumpfregion?", DIA_RodDJG_HALLO_warten_wasweisstdu );
+		Info_AddChoice	(DIA_RodDJG_HALLO, "Was weiÃŸt du von der Sumpfregion?", DIA_RodDJG_HALLO_warten_wasweisstdu );
 		Info_AddChoice	(DIA_RodDJG_HALLO, "Lass uns zusammen rein gehen.", DIA_RodDJG_HALLO_warten_zusammen );
 		};
 };
@@ -112,7 +112,7 @@ func void DIA_RodDJG_HALLO_warten_zusammen ()
 
 func void DIA_RodDJG_HALLO_warten_wasweisstdu ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_wasweisstdu_15_00"); //Was weißt du von der Sumpfregion?
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_wasweisstdu_15_00"); //Was weiÃŸt du von der Sumpfregion?
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_wasweisstdu_06_01"); //Nur, dass sie zum Himmel stinkt und da sicher 'ne Menge Gold zu holen ist. Reicht das nicht?
 
 };
@@ -120,7 +120,7 @@ func void DIA_RodDJG_HALLO_warten_wasweisstdu ()
 func void DIA_RodDJG_HALLO_warten_allein ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_allein_15_00"); //Ich werde alleine gehen.
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_allein_06_01"); //Na dann, viel Glück.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_allein_06_01"); //Na dann, viel GlÃ¼ck.
 
 	AI_StopProcessInfos (self);
 };
@@ -158,7 +158,7 @@ func void DIA_RodDJG_WARTEMAL_Info ()
 		&& (Npc_IsDead(DJG_Cipher))
 		)
 		{
-			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_01"); //Hör zu, Mann. Die Geschichte wird mir jetzt doch ein bisschen zu heftig. Ich verdrück mich.
+			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_01"); //HÃ¶r zu, Mann. Die Geschichte wird mir jetzt doch ein bisschen zu heftig. Ich verdrÃ¼ck mich.
 			DJG_SwampParty = FALSE;
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
 			AI_StopProcessInfos (self);

@@ -41,7 +41,7 @@ FUNC INT DIA_Addon_Monty_Hi_Condition()
 FUNC VOID DIA_Addon_Monty_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Monty_Hi_15_00");//Hey, wie sieht's aus?
-	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Ich lebe - und nur das z‰hlt.
+	AI_Output (self, other, "DIA_Addon_Monty_Hi_08_01");//Ich lebe - und nur das z√§hlt.
 	
 	if (Monty_einmal == FALSE)
 	{
@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Nun, der Einschlagwinkel ist entscheidend f¸r eine solide Hackerei.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Nicht zu flach und nicht zu steil, so kommst du an die Nuggets und deine Spitzhacke h‰lt ewig.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Nun, der Einschlagwinkel ist entscheidend f√ºr eine solide Hackerei.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Nicht zu flach und nicht zu steil, so kommst du an die Nuggets und deine Spitzhacke h√§lt ewig.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

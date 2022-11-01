@@ -29,7 +29,7 @@ INSTANCE DIA_SLD_6_JOIN(C_INFO)
 	condition	= DIA_SLD_6_JOIN_Condition;
 	information	= DIA_SLD_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Ich will mich euch anschließen!";
+	description = "Ich will mich euch anschlieÃŸen!";
 };                       
 
 FUNC INT DIA_SLD_6_JOIN_Condition()
@@ -42,11 +42,11 @@ FUNC INT DIA_SLD_6_JOIN_Condition()
 
 FUNC VOID DIA_SLD_6_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //Ich will mich euch anschließen!
+	AI_Output (other, self, "DIA_SLD_6_JOIN_15_00"); //Ich will mich euch anschlieÃŸen!
 	
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_01"); //Ich hab von der Sache mit den Milizen gehört. Torlof sagt, du hast die Probe bestanden. Meine Stimme hast du.
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_01"); //Ich hab von der Sache mit den Milizen gehÃ¶rt. Torlof sagt, du hast die Probe bestanden. Meine Stimme hast du.
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
@@ -82,9 +82,9 @@ FUNC INT DIA_SLD_6_PEOPLE_Condition()
 FUNC VOID DIA_SLD_6_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Wer hat hier das Sagen?
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //Der Hof gehört Onar, wenn du das meinst. Aber unser Anführer ist Lee.
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Er war mal General in der Armee des Königs. Aber jetzt ist er nicht mehr ganz so gut auf den König zu sprechen (lacht).
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Merk dir seinen Namen. Wenn du hier Mist baust, ist er vermutlich der einzige, der die Sache für dich regeln kann. Alle anderen ziehen dir einfach das Fell über die Ohren.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //Der Hof gehÃ¶rt Onar, wenn du das meinst. Aber unser AnfÃ¼hrer ist Lee.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Er war mal General in der Armee des KÃ¶nigs. Aber jetzt ist er nicht mehr ganz so gut auf den KÃ¶nig zu sprechen (lacht).
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Merk dir seinen Namen. Wenn du hier Mist baust, ist er vermutlich der einzige, der die Sache fÃ¼r dich regeln kann. Alle anderen ziehen dir einfach das Fell Ã¼ber die Ohren.
 };
 
 // *************************************************************************
@@ -151,13 +151,13 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //Als ich das mit den Drachen gehört habe, wollte ich es erst gar nicht glauben.
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Ein Drache, das wäre ein Kampf. Keine Schafe oder Miliztrottel mehr, sondern ein echter Gegner.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //Als ich das mit den Drachen gehÃ¶rt habe, wollte ich es erst gar nicht glauben.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Ein Drache, das wÃ¤re ein Kampf. Keine Schafe oder Miliztrottel mehr, sondern ein echter Gegner.
 			}
 			else
 			{
 				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //Na, hat sich euer Lord Hagen aus Angst vor den Drachen schon in die Hose geschissen?
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //Schätze, jetzt wird er seinen feinen Hintern wohl doch noch aus der Stadt bewegen müssen.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //SchÃ¤tze, jetzt wird er seinen feinen Hintern wohl doch noch aus der Stadt bewegen mÃ¼ssen.
 			};
 		};	
 	};
@@ -166,7 +166,7 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Da kann Lord Hagen von Glück reden. Ein paar Tage länger und wir hätten Bennet selbst rausgeholt.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Da kann Lord Hagen von GlÃ¼ck reden. Ein paar Tage lÃ¤nger und wir hÃ¤tten Bennet selbst rausgeholt.
 		}
 		else
 		{
@@ -179,11 +179,11 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 		if (hero.guild == GIL_DJG)
 		{
 			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_09"); //Was machst du noch hier? Wolltest du nicht mit den anderen ins Tal.
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_10"); //Von mir aus braucht keiner von euch zurückkommen.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_10"); //Von mir aus braucht keiner von euch zurÃ¼ckkommen.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_11"); //Du solltest mal ins Minental gehen. Nach dem, was ich weiß, können die armen Schweine jede Hilfe gebrauchen.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_11"); //Du solltest mal ins Minental gehen. Nach dem, was ich weiÃŸ, kÃ¶nnen die armen Schweine jede Hilfe gebrauchen.
 		};	
 	};
 	
@@ -191,12 +191,12 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //Als du hier aufgetaucht bist, hab ich gleich gewusst, dass du den Laden hier kräftig aufmischen wirst.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //Als du hier aufgetaucht bist, hab ich gleich gewusst, dass du den Laden hier krÃ¤ftig aufmischen wirst.
 			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Aber Drachen? Respekt, mit dir wird sich so schnell niemand mehr anlegen.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_14"); //Respekt. Du gehörst zwar zur falschen Seite, aber Drachen töten, das kann nicht jeder.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_14"); //Respekt. Du gehÃ¶rst zwar zur falschen Seite, aber Drachen tÃ¶ten, das kann nicht jeder.
 		};	
 	};
 };

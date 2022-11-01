@@ -1,7 +1,7 @@
 // ************************************
 // ZS_RunToWP
 // ----------
-// Wird als TA für die Story verwendet, 
+// Wird als TA fÃ¼r die Story verwendet, 
 // wenn ein NSC mal eben wegrennen soll
 // ************************************
 

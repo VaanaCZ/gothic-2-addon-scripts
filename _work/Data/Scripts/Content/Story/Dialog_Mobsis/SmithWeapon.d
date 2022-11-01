@@ -34,9 +34,9 @@ FUNC VOID PC_SmithWeapon_End_Info()
 
 
 // *****************
-// Amboﬂ-Dialoge
+// Ambo√ü-Dialoge
 // -------------
-// h‰ngen am Spieler
+// h√§ngen am Spieler
 // *****************
 
 
@@ -47,7 +47,7 @@ INSTANCE PC_Common (C_INFO)
 	condition		= PC_Common_Condition;
 	information		= PC_Common_Info;
 	permanent		= TRUE;
-	description		= "Gewˆhnliche Waffen schmieden";
+	description		= "Gew√∂hnliche Waffen schmieden";
 };
 
 FUNC INT PC_Common_Condition()
@@ -575,8 +575,8 @@ FUNC VOID PC_ItMw_2H_Special_04_Info ()
 // ****************************************************
 // SMITHWEAPON_S1
 // --------------
-// Funktion wird durch Amboﬂ-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMiSwordrawhot
+// Funktion wird durch Ambo√ü-Mobsi-Benutzung aufgerufen!
+// ben√∂tigtes Item daf√ºr: ItMiSwordrawhot
 // *****************************************************
 
 FUNC VOID SMITHWEAPON_S1 ()

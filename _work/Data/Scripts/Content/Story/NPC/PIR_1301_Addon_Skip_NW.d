@@ -5,7 +5,7 @@ INSTANCE PIR_1301_Addon_Skip_NW (Npc_Default)
 	guild 		= GIL_PIR;
 	id 			= 1301;
 	voice 		= 8;
-	flags       = NPC_FLAG_IMMORTAL;	//Joly: kommt sp‰ter in der Addonworld nochmal vor.														
+	flags       = NPC_FLAG_IMMORTAL;	//Joly: kommt sp√§ter in der Addonworld nochmal vor.														
 	npctype		= NPCTYPE_MAIN;
 	
 	// ------ Attribute ------
@@ -19,7 +19,7 @@ INSTANCE PIR_1301_Addon_Skip_NW (Npc_Default)
 	EquipItem (self, ItRw_sld_bow); 
 	
 	// ------ Inventory ------
-	// H‰ndler
+	// H√§ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Pony", Face_N_Pirat01, BodyTex_N, ITAR_PIR_L_Addon);

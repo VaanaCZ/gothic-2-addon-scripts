@@ -18,7 +18,7 @@ FUNC VOID DIA_Baltram_EXIT_Info()
 {
 	AI_StopProcessInfos (self);
 };
-///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, Spielfluß hemmend)
+///////////////////////////////////////////////////////////////////////AUSKOMMENTIERT WEGEN ADDON M.F. (Missionen passen nicht mehr, SpielfluÃŸ hemmend)
 //	Info Sperre
 ///////////////////////////////////////////////////////////////////////
 /*
@@ -43,7 +43,7 @@ func int DIA_Baltram_Sperre_Condition ()
 };
 func void DIA_Baltram_Sperre_Info ()
 {
-	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein Sträfling aus der Minenkolonie. Mit dir mache ich keine Geschäfte!
+	AI_Output (self, other, "DIA_Baltram_Sperre_01_00"); //Was willst du? Du bist ein StrÃ¤fling aus der Minenkolonie. Mit dir mache ich keine GeschÃ¤fte!
 	AI_StopProcessInfos (self);	 
 };
 */
@@ -75,13 +75,13 @@ func void DIA_Baltram_Hallo_Info ()
 	&& (hero.guild != GIL_DJG)
 	{
 		AI_Output (self, other, "DIA_Baltram_Hallo_01_00"); //Willkommen Fremder, mein Name ist Baltram. Bist du gekommen, um dich mit Nahrung einzudecken?
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_01"); //Da muss ich dich leider enttäuschen. Ich habe momentan nicht viel auf Lager.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_01"); //Da muss ich dich leider enttÃ¤uschen. Ich habe momentan nicht viel auf Lager.
 		AI_Output (self, other, "DIA_Baltram_Hallo_01_02"); //Aber bald bekomme ich eine weitere Lieferung.
 	}
 	else
 	{
 		AI_Output (self, other, "DIA_Baltram_Hallo_01_03"); //Wenn du gekommen bist, um Nahrungsmittel bei mir zu kaufen, kannst du gleich wieder verschwinden.
-		AI_Output (self, other, "DIA_Baltram_Hallo_01_04"); //Ich halte nicht viel von euch Söldnern! Ihr macht mir nur Ärger.
+		AI_Output (self, other, "DIA_Baltram_Hallo_01_04"); //Ich halte nicht viel von euch SÃ¶ldnern! Ihr macht mir nur Ã„rger.
 	};
 };
 
@@ -111,15 +111,15 @@ func int DIA_Addon_Baltram_LaresAbloese_Condition ()
 func void DIA_Addon_Baltram_LaresAbloese_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_00"); //Warum schaust du so skeptisch?
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_01"); //Ich sehe, du trägst das Zeichen des 'Rings des Wassers'.
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_02"); //Du gehörst auch dazu?
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_03"); //Und wenn es so wäre?
-	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_04"); //Dann würde ich dir sagen, dass Lares auf seinem Posten am Hafen abgelöst werden will.
-	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_05"); //Gut. In dem Fall, würde ich mich darum kümmern, dass sich jemand darum kümmert.
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_01"); //Ich sehe, du trÃ¤gst das Zeichen des 'Rings des Wassers'.
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_02"); //Du gehÃ¶rst auch dazu?
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_03"); //Und wenn es so wÃ¤re?
+	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_04"); //Dann wÃ¼rde ich dir sagen, dass Lares auf seinem Posten am Hafen abgelÃ¶st werden will.
+	AI_Output	(self, other, "DIA_Addon_Baltram_LaresAbloese_01_05"); //Gut. In dem Fall, wÃ¼rde ich mich darum kÃ¼mmern, dass sich jemand darum kÃ¼mmert.
 	AI_Output	(other, self, "DIA_Addon_Baltram_LaresAbloese_15_06"); //Verstehe.
 	B_GivePlayerXP (XP_Ambient);
 
-	B_LogEntry (TOPIC_Addon_BringRangerToLares,"Baltram der Händler am Marktplatz wird sich um eine Ablösung für Lares kümmern. Vielleicht kann Lares JETZT vom Hafen weg."); 
+	B_LogEntry (TOPIC_Addon_BringRangerToLares,"Baltram der HÃ¤ndler am Marktplatz wird sich um eine AblÃ¶sung fÃ¼r Lares kÃ¼mmern. Vielleicht kann Lares JETZT vom Hafen weg."); 
 
 	SC_KnowsBaltramAsRanger = TRUE;
 	Baltram_Exchange4Lares = TRUE;
@@ -135,7 +135,7 @@ instance DIA_Baltram_Job		(C_INFO)
 	condition	 = 	DIA_Baltram_Job_Condition;
 	information	 = 	DIA_Baltram_Job_Info;
 	permanent	 =  FALSE;
-	description  =  "Hast du einen Job für mich?";
+	description  =  "Hast du einen Job fÃ¼r mich?";
 };
 func int DIA_Baltram_Job_Condition ()
 {
@@ -148,8 +148,8 @@ func int DIA_Baltram_Job_Condition ()
 };
 func void DIA_Baltram_Job_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_Job_15_00"); //Hast du einen Job für mich?
-	AI_Output (self, other, "DIA_Baltram_Job_01_01"); //Nein, ich habe schon einen Boten. Probier's doch mal bei den anderen Händlern.
+	AI_Output (other, self, "DIA_Baltram_Job_15_00"); //Hast du einen Job fÃ¼r mich?
+	AI_Output (self, other, "DIA_Baltram_Job_01_01"); //Nein, ich habe schon einen Boten. Probier's doch mal bei den anderen HÃ¤ndlern.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trick
@@ -175,9 +175,9 @@ func void DIA_Baltram_Trick_Info ()
 {
 	AI_Output (self, other, "DIA_Baltram_Trick_01_00"); //Hast du Interesse an einem Job?
 	AI_Output (other, self, "DIA_Baltram_Trick_15_01"); //Klar, worum geht's?
-	AI_Output (self, other, "DIA_Baltram_Trick_01_02"); //Mein Bote ist nicht zurückgekehrt, und ich warte auf eine Lieferung vom Bauer Akil.
+	AI_Output (self, other, "DIA_Baltram_Trick_01_02"); //Mein Bote ist nicht zurÃ¼ckgekehrt, und ich warte auf eine Lieferung vom Bauer Akil.
 	AI_Output (other, self, "DIA_Baltram_Trick_15_03"); //Und wie viel ist dir die Sache wert?
-	AI_Output (self, other, "DIA_Baltram_Trick_01_04"); //Ich gebe dir 50 Goldstücke.
+	AI_Output (self, other, "DIA_Baltram_Trick_01_04"); //Ich gebe dir 50 GoldstÃ¼cke.
 	AI_Output (other, self, "DIA_Baltram_Trick_15_05"); //Gut, ich bin dabei.
 	AI_Output (self, other, "DIA_Baltram_Trick_01_06"); //Okay, sag Akil einfach, dass du von mir kommst, er wird dir dann ein Paket geben. Das bringst du zu mir.
 	
@@ -186,7 +186,7 @@ func void DIA_Baltram_Trick_Info ()
 	
 	Log_CreateTopic (TOPIC_Baltram,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Baltram,LOG_RUNNING);
-	B_LogEntry (TOPIC_Baltram, "Wenn ich Baltram seine Lieferung bringe, zahlt er mir 50 Goldstücke.");
+	B_LogEntry (TOPIC_Baltram, "Wenn ich Baltram seine Lieferung bringe, zahlt er mir 50 GoldstÃ¼cke.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info WAREZ
@@ -223,7 +223,7 @@ func void DIA_Baltram_WAREZ_Info ()
 	if (Kapitel == 3)
 	&& (MIS_RescueBennet != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_01"); //Man hätte es gar nicht so weit kommen lassen sollen. Jetzt hat doch einer der Söldner tatsächlich einen der Paladine ermordet.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_01"); //Man hÃ¤tte es gar nicht so weit kommen lassen sollen. Jetzt hat doch einer der SÃ¶ldner tatsÃ¤chlich einen der Paladine ermordet.
 		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_02"); //Irgendwann musste ja etwas passieren!
 	};
 	if ((MIS_BaltramTrade != LOG_SUCCESS)
@@ -232,7 +232,7 @@ func void DIA_Baltram_WAREZ_Info ()
 	{
 		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_03"); //Typen wie du kriegen bei mir nichts.
 		AI_Output (other, self,"DIA_Baltram_WAREZ_15_04"); //Wieso?
-		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_05"); //Erst die Bauern aufwiegeln und dann so tun, als wäre nichts gewesen.
+		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_05"); //Erst die Bauern aufwiegeln und dann so tun, als wÃ¤re nichts gewesen.
 		AI_Output (self ,other,"DIA_Baltram_WAREZ_01_06"); //Jetzt verschwinde, du vertreibst mir die Kundschaft.
 		
 		MIS_BaltramTrade = LOG_FAILED;
@@ -264,14 +264,14 @@ func int DIA_Addon_Baltram_Skip_Condition ()
 
 func void DIA_Addon_Baltram_Skip_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_00"); //(beiläufig) Du handelst mit Piraten?
-	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_01"); //(fühlt sich erwischt) Was? Wer hat dir das erzählt?
+	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_00"); //(beilÃ¤ufig) Du handelst mit Piraten?
+	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_01"); //(fÃ¼hlt sich erwischt) Was? Wer hat dir das erzÃ¤hlt?
 	AI_Output	(other, self, "DIA_Addon_Baltram_Skip_15_02"); //Ich hab mich mit einem von ihnen unterhalten. Er scheint in seiner Bucht auf dich zu warten.
 	AI_Output	(self, other, "DIA_Addon_Baltram_Skip_01_03"); //Was willst du machen? Es sind harte Zeiten. Jeder muss sehen, wo er bleibt.
 	
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
 	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Hattest du keine Angst erwischt zu werden?", DIA_Addon_Baltram_Skip_erwischen );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Das wird Konsequenzen für dich haben!", DIA_Addon_Baltram_Skip_MIL );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Das wird Konsequenzen fÃ¼r dich haben!", DIA_Addon_Baltram_Skip_MIL );
 };
 func void DIA_Addon_Baltram_Skip_Back ()
 {
@@ -281,55 +281,55 @@ func void DIA_Addon_Baltram_Skip_Back ()
 
 func void DIA_Addon_Baltram_Skip_MIL ()
 {
-	AI_Output (other, self, "DIA_Addon_Baltram_Skip_MIL_15_00"); //Das wird Konsequenzen für dich haben!
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_MIL_01_01"); //Hey, hör zu. Ich sag dir alles, was ich weiß, und du verpfeifst mich dafür nicht, okay?
+	AI_Output (other, self, "DIA_Addon_Baltram_Skip_MIL_15_00"); //Das wird Konsequenzen fÃ¼r dich haben!
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_MIL_01_01"); //Hey, hÃ¶r zu. Ich sag dir alles, was ich weiÃŸ, und du verpfeifst mich dafÃ¼r nicht, okay?
 	
 	Info_ClearChoices (DIA_Addon_Baltram_Skip);
 	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Womit handelt ihr?", DIA_Addon_Baltram_Skip_was );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Was weißt du über die Piraten?", DIA_Addon_Baltram_Skip_pirat );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Was weiÃŸt du Ã¼ber die Piraten?", DIA_Addon_Baltram_Skip_pirat );
 };
 
 func void DIA_Addon_Baltram_Skip_erwischen ()
 {
 	AI_Output (other, self, "DIA_Addon_Baltram_Skip_erwischen_15_00"); //Hattest du keine Angst erwischt zu werden?
 	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_01"); //Das kann passieren. Du hast es ja auch herausgefunden.
-	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_02"); //Aber du hältst doch dicht, oder?
+	AI_Output (self, other, "DIA_Addon_Baltram_Skip_erwischen_01_02"); //Aber du hÃ¤ltst doch dicht, oder?
 	
 	Info_ClearChoices	(DIA_Addon_Baltram_Skip);
 	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Womit handelt ihr?", DIA_Addon_Baltram_Skip_was );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Was weißt du über die Piraten?", DIA_Addon_Baltram_Skip_pirat );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Was weiÃŸt du Ã¼ber die Piraten?", DIA_Addon_Baltram_Skip_pirat );
 };
 
 func void DIA_Addon_Baltram_Skip_was ()
 {
 	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_was_15_00"); //(barsch) Womit handelt ihr?
 	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_01"); //Ich versorge sie meistens mit Nahrung.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_02"); //Und von ihnen erhalte ich dafür den besten Rum, den man in Khorinis kriegen kann.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_was_01_02"); //Und von ihnen erhalte ich dafÃ¼r den besten Rum, den man in Khorinis kriegen kann.
 	
 	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Das war alles, was ich wissen wollte.", DIA_Addon_Baltram_Skip_Back );
-	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Ich könnte den Handel für dich abwickeln.", DIA_Addon_Baltram_Skip_Ich );
+	Info_AddChoice	(DIA_Addon_Baltram_Skip, "Ich kÃ¶nnte den Handel fÃ¼r dich abwickeln.", DIA_Addon_Baltram_Skip_Ich );
 };
 
 func void DIA_Addon_Baltram_Skip_Ich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_Ich_15_00"); //(grinst) Ich könnte den Handel für dich abwickeln.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_01"); //Das wäre gut. Ich kann Khorinis zur Zeit nicht verlassen.
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_Ich_15_00"); //(grinst) Ich kÃ¶nnte den Handel fÃ¼r dich abwickeln.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_01"); //Das wÃ¤re gut. Ich kann Khorinis zur Zeit nicht verlassen.
 	CreateInvItems (self, ItMi_Packet_Baltram4Skip_Addon, 1);									
 	B_GiveInvItems (self, other, ItMi_Packet_Baltram4Skip_Addon, 1);		
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_02"); //Hier, nimm dieses Päckchen und sag Skip, dass er mit dem Rum diesmal nicht so knausern soll.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_02"); //Hier, nimm dieses PÃ¤ckchen und sag Skip, dass er mit dem Rum diesmal nicht so knausern soll.
 	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_Ich_01_03"); //3 Flaschen sollten es schon sein.
 	
-	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Baltram gab mir ein Paket. Ich soll es Skip überbringen."); 
+	B_LogEntry (TOPIC_Addon_BaltramSkipTrade,"Baltram gab mir ein Paket. Ich soll es Skip Ã¼berbringen."); 
 	
 	MIS_Addon_Baltram_Paket4Skip = LOG_RUNNING;
 };
 
 func void DIA_Addon_Baltram_Skip_pirat ()
 {
-	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_pirat_15_00"); //(barsch) Was weißt du über die Piraten?
+	AI_Output			(other, self, "DIA_Addon_Baltram_Skip_pirat_15_00"); //(barsch) Was weiÃŸt du Ã¼ber die Piraten?
 	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_01"); //(hastig) Sie leben in einem abgelegenen Teil der Insel Khorinis.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_02"); //Soviel ich weiß, kann man den nur mit einer Kogge oder einem Schiff erreichen.
-	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_03"); //Die Bürger von Khorinis fürchten sich vor ihnen. Auch zurecht, weil sie im Grunde ein Haufen übler Halsabschneider sind.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_02"); //Soviel ich weiÃŸ, kann man den nur mit einer Kogge oder einem Schiff erreichen.
+	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_03"); //Die BÃ¼rger von Khorinis fÃ¼rchten sich vor ihnen. Auch zurecht, weil sie im Grunde ein Haufen Ã¼bler Halsabschneider sind.
 	AI_Output			(self, other, "DIA_Addon_Baltram_Skip_pirat_01_04"); //Aber, wenn du mich fragst, sind sie bei weitem nicht so schlimm wie die Banditen.
 };
 
@@ -362,7 +362,7 @@ func void DIA_Addon_Baltram_SkipsRum_Info ()
 	AI_Output	(other, self, "DIA_Addon_Baltram_SkipsRum_15_00"); //Ich habe den Rum von Skip. Er hat mir allerdings nur 2 Flaschen gegeben.
 	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_01"); //(sauer) Verdammt teuer. Was bildet sich dieser Kerl ein. Ach, gib schon her.
 	B_GiveInvItems (other, self, ItFo_Addon_Rum,2); 
-	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_02"); //Viel kann ich dir dafür jetzt nicht geben. Das hier muss dir reichen.
+	AI_Output	(self, other, "DIA_Addon_Baltram_SkipsRum_01_02"); //Viel kann ich dir dafÃ¼r jetzt nicht geben. Das hier muss dir reichen.
 	CreateInvItems (self, ItMi_Gold, 10);									
 	B_GiveInvItems (self, other, ItMi_Gold, 10);		
 
@@ -393,7 +393,7 @@ func int DIA_Baltram_AkilsHof_Condition ()
 func void DIA_Baltram_AkilsHof_Info ()
 {
 	AI_Output (other, self, "DIA_Baltram_AkilsHof_15_00"); //Wo finde ich Akils Hof?
-	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_01"); //Geh einfach hier vorne durch das Osttor raus und folge dem Weg nach Südosten.
+	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_01"); //Geh einfach hier vorne durch das Osttor raus und folge dem Weg nach SÃ¼dosten.
 	AI_Output (self, other, "DIA_Baltram_AkilsHof_01_02"); //Nach kurzer Zeit kommst du an eine Steintreppe. Die gehst du rauf und von da kannst du Akils Hof schon sehen.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -419,7 +419,7 @@ func int DIA_Baltram_Lieferung_Condition ()
 func void DIA_Baltram_Lieferung_Info ()
 {
 	AI_Output (other, self, "DIA_Baltram_Lieferung_15_00"); //Ich habe die Lieferung von Akil.
-	AI_Output (self, other, "DIA_Baltram_Lieferung_01_01"); //Ausgezeichnet. Endlich kann ich wieder frische Waren anbieten. Hier sind deine 50 Goldstücke.
+	AI_Output (self, other, "DIA_Baltram_Lieferung_01_01"); //Ausgezeichnet. Endlich kann ich wieder frische Waren anbieten. Hier sind deine 50 GoldstÃ¼cke.
 	
 	B_GiveInvItems (other, self, ItMi_BaltramPaket,1);
 	B_GiveInvItems (self, other, ItMi_Gold,50);
@@ -448,7 +448,7 @@ instance DIA_Baltram_LetUsTrade		(C_INFO)
 	condition	 = 	DIA_Baltram_LetUsTrade_Condition;
 	information	 = 	DIA_Baltram_LetUsTrade_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Können wir nicht doch ins Geschäft kommen?";
+	description	 = 	"KÃ¶nnen wir nicht doch ins GeschÃ¤ft kommen?";
 };
 func int DIA_Baltram_LetUsTrade_Condition ()
 {
@@ -460,7 +460,7 @@ func int DIA_Baltram_LetUsTrade_Condition ()
 
 func void DIA_Baltram_LetUsTrade_Info ()
 {
-	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_00"); //Können wir nicht doch ins Geschäft kommen?
+	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_00"); //KÃ¶nnen wir nicht doch ins GeschÃ¤ft kommen?
 	AI_Output (self, other, "DIA_Baltram_LetUsTrade_01_01"); //Pass auf, wenn du mir 10 Schinken und 10 Flaschen Wein besorgst, dann werde ich wieder mir dir handeln.
 	AI_Output (other, self, "DIA_Baltram_LetUsTrade_15_02"); //Ich werde sehen, was ich tun kann.
 	
@@ -520,7 +520,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	if (BaltramEnoughBacon == TRUE
 	&&  BaltramEnoughWine  == TRUE)
 	{
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04"); //Hmm, ist zwar nicht die beste Qualität, aber in diesen Zeiten sollte man nicht zu wählerisch sein.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_04"); //Hmm, ist zwar nicht die beste QualitÃ¤t, aber in diesen Zeiten sollte man nicht zu wÃ¤hlerisch sein.
 		
 		B_GiveInvItems (other,self,ItFo_Bacon,10);
 		B_GiveInvItems (other,self,ItFo_Wine,10);
@@ -529,7 +529,7 @@ func void DIA_Baltram_HaveYourWarez_Info ()
 	
 		B_GivePlayerXP (XP_BaltramTrade);
 		
-		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05"); //Jetzt sollte unseren zukünftigen Geschäften nichts mehr im Wege stehen.
+		AI_Output (self, other, "DIA_Baltram_HaveYourWarez_01_05"); //Jetzt sollte unseren zukÃ¼nftigen GeschÃ¤ften nichts mehr im Wege stehen.
 	};	
 };
 

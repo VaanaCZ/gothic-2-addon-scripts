@@ -19,7 +19,7 @@ INSTANCE PIR_1351_Addon_Samuel (Npc_Default)
 	
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_FatBAld", Face_B_Saturas, BodyTex_B, ITAR_PIR_L_Addon);	  

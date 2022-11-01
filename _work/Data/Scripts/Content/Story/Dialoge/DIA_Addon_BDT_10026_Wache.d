@@ -41,15 +41,15 @@ FUNC VOID DIA_Addon_10026_Wache_Hi_Info()
 	if (Sklaven_Flucht == FALSE)
 	{	
 		CreateInvItems (self, ItFo_Bacon,1);
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Schade, dass wir nur noch so wenig Sklaven haben. Wir müssen bald mal neue holen.
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Die Typen sind schon völlig kaputt. Liegt wohl daran, dass sie so wenig zu fressen kriegen. (lacht)
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Schade, dass wir nur noch so wenig Sklaven haben. Wir mÃ¼ssen bald mal neue holen.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Die Typen sind schon vÃ¶llig kaputt. Liegt wohl daran, dass sie so wenig zu fressen kriegen. (lacht)
 		B_UseItem (self, ItFo_Bacon);
 		
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Aber eher schicke ich die Buddler wieder an die Arbeit, als dass ich den Hunden ein Stück Fleisch abgebe.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Aber eher schicke ich die Buddler wieder an die Arbeit, als dass ich den Hunden ein StÃ¼ck Fleisch abgebe.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Die Sklaven sind weg - schade. Naja, dann müssen wir halt wieder die Buddler schlagen.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_04");//Die Sklaven sind weg - schade. Naja, dann mÃ¼ssen wir halt wieder die Buddler schlagen.
 	};
 	AI_StopProcessInfos (self);
 };
@@ -64,7 +64,7 @@ INSTANCE DIA_Addon_BDT_10026_Wache_Gruft   (C_INFO)
 	condition   = DIA_Addon_10026_Wache_Gruft_Condition;
 	information = DIA_Addon_10026_Wache_Gruft_Info;
 	permanent   = TRUE;
-	description = "Weißt du was über die Gruft?";
+	description = "WeiÃŸt du was Ã¼ber die Gruft?";
 };
 FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 {	
@@ -72,9 +72,9 @@ FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 };
 FUNC VOID DIA_Addon_10026_Wache_Gruft_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//Weißt du was über die Gruft?
+	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//WeiÃŸt du was Ã¼ber die Gruft?
 	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//Ja. Die Gruft liegt hinten in diesem Gang.
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//(unberührt) Immer den Leichen nach, dann wirst du sie schon finden.
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//(unberÃ¼hrt) Immer den Leichen nach, dann wirst du sie schon finden.
 };
 
 

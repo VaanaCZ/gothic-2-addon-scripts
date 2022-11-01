@@ -44,7 +44,7 @@ FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Soviele Anführer kommen und gehen ... da verliert man schon mal den Überblick.
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Soviele AnfÃ¼hrer kommen und gehen ... da verliert man schon mal den Ãœberblick.
 		}
 		else
 		{
@@ -53,8 +53,8 @@ FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Raven ist unser Anführer. Er hat uns hergeführt und das Lager aufgebaut.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Er kontrolliert die Mine, denn sonst hätten sich die Hunde längst wegen dem Gold umgebracht.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Raven ist unser AnfÃ¼hrer. Er hat uns hergefÃ¼hrt und das Lager aufgebaut.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Er kontrolliert die Mine, denn sonst hÃ¤tten sich die Hunde lÃ¤ngst wegen dem Gold umgebracht.
 	};
 };
 // *************************************************************************
@@ -66,7 +66,7 @@ instance DIA_Addon_BL_BDT_1_Lager(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager_Info;
 	permanent	= FALSE;
-	description = "Was weißt du über das Lager?";
+	description = "Was weiÃŸt du Ã¼ber das Lager?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
@@ -79,10 +79,10 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_1_Lager_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Was weißt du über das Lager?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Nachdem klar war, dass es hier eine Goldmine gibt, haben sich die Penner wohl ganz schön auf's Maul gehauen.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Was weiÃŸt du Ã¼ber das Lager?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Nachdem klar war, dass es hier eine Goldmine gibt, haben sich die Penner wohl ganz schÃ¶n auf's Maul gehauen.
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Raven hat dann die Schlimmsten von ihnen umgebracht und den Rest aus der Mine geworfen.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Seitdem darf niemand mehr in den oberen Bereich. Er hat sogar Gefangene anschleppen lassen, die in der Mine schürfen.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Seitdem darf niemand mehr in den oberen Bereich. Er hat sogar Gefangene anschleppen lassen, die in der Mine schÃ¼rfen.
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
 		B_LogEntry (TOPIC_Addon_RavenKDW, LogText_Addon_RavensGoldmine); 
@@ -100,7 +100,7 @@ instance DIA_Addon_BL_BDT_1_Lager2(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager2_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager2_Info;
 	permanent	= TRUE;
-	description = "Kannst du mir mehr über das Lager erzählen?";
+	description = "Kannst du mir mehr Ã¼ber das Lager erzÃ¤hlen?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
@@ -112,8 +112,8 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_1_Lager2_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Was weißt du über das Lager?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Wenn du jemanden angreifst, werden sich ALLE auf dich stürzen.
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager2_15_00");//Was weiÃŸt du Ã¼ber das Lager?
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_01");//Wenn du jemanden angreifst, werden sich ALLE auf dich stÃ¼rzen.
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager2_01_02");//Es sei denn, du hast einen Grund, dich mit jemandem anzulegen. Dann wird sich keiner einmischen.
 };
 // *************************************************************************
@@ -141,8 +141,8 @@ FUNC VOID DIA_Addon_BL_BDT_1_News_Info()
 	{
 		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Raven ist tot. Was sollen wir denn jetzt machen?
 	};
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//Die Piraten wollen uns nicht mehr zum Festland bringen, weil sie für ihre letzten Transporte nicht bezahlt wurden.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//Wir sollten ein oder zwei von ihnen aufspießen, dann werden die anderen uns garantiert wieder übersetzen.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//Die Piraten wollen uns nicht mehr zum Festland bringen, weil sie fÃ¼r ihre letzten Transporte nicht bezahlt wurden.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//Wir sollten ein oder zwei von ihnen aufspieÃŸen, dann werden die anderen uns garantiert wieder Ã¼bersetzen.
 };
 // *************************************************************************
 // 									Sklaven
@@ -153,7 +153,7 @@ instance DIA_Addon_BL_BDT_1_Sklaven(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Sklaven_Condition;
 	information	= DIA_Addon_BL_BDT_1_Sklaven_Info;
 	permanent	= TRUE;
-	description = "Was weißt du über die Gefangenen?";
+	description = "Was weiÃŸt du Ã¼ber die Gefangenen?";
 };  
 FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 {	
@@ -167,7 +167,7 @@ FUNC INT DIA_Addon_BL_BDT_1_Sklaven_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Sklaven_Info()
 {	
 	 
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Was weißt du über die Gefangenen?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Was weiÃŸt du Ã¼ber die Gefangenen?
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Raven will irgendwas ausgebuddeln. Erst hat er die Banditen das machen lassen, aber dabei sind zuviele draufgegangen.
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Deshalb hat er die Gefangenen geholt - wenn die krepieren, spielt das keine Rolle.
 	

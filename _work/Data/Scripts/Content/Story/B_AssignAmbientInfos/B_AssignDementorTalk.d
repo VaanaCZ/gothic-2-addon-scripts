@@ -72,14 +72,14 @@ func void DIA_AmbientDementor_Info ()
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 		{	
-			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Bist du gekommen unser Ritual zu stören? Seine Seele gehört uns. Du kannst ihn nicht mehr retten, Magier.
+			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Bist du gekommen unser Ritual zu stÃ¶ren? Seine Seele gehÃ¶rt uns. Du kannst ihn nicht mehr retten, Magier.
 		}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 		{
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 				{
 						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(lacht) Du bist gekommen, um mich und mein Werk herauszufordern? Du wirst versagen.
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Es ist noch niemandem gelungen, meine Krypta zu überwinden. Kehr um, denn auch du wirst die heiligen Hallen von Irdorath niemals erreichen.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Es ist noch niemandem gelungen, meine Krypta zu Ã¼berwinden. Kehr um, denn auch du wirst die heiligen Hallen von Irdorath niemals erreichen.
 				}
 				else
 				{	
@@ -105,34 +105,34 @@ func void DIA_AmbientDementor_Info ()
 		{
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Du kleiner schwacher Magier wirst es nicht mit der Macht des Meisters aufnehmen können.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Du kleiner schwacher Magier wirst es nicht mit der Macht des Meisters aufnehmen kÃ¶nnen.
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //Du hast den Weg der Magie gewählt, um uns zu bezwingen. Ein cleverer Schachzug. Aber auch das wird dir nichts nützen.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //Du hast den Weg der Magie gewÃ¤hlt, um uns zu bezwingen. Ein cleverer Schachzug. Aber auch das wird dir nichts nÃ¼tzen.
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Auch als Magier wirst du uns nicht aufhalten können.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Auch als Magier wirst du uns nicht aufhalten kÃ¶nnen.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mein Meister wird dich vernichten. Deine lächerlichen magischen Kunststückchen werden dich nicht retten.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mein Meister wird dich vernichten. Deine lÃ¤cherlichen magischen KunststÃ¼ckchen werden dich nicht retten.
 			};
 		}
 	else
 		{	
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Gib auf, solange du noch kannst. Es gibt kein Entkommen für dich.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Gib auf, solange du noch kannst. Es gibt kein Entkommen fÃ¼r dich.
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Nun wirst du die Macht unseres Meisters spüren. Du kannst ihr nicht entrinnen.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Nun wirst du die Macht unseres Meisters spÃ¼ren. Du kannst ihr nicht entrinnen.
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Der Meister will deinen Kopf. Niemand wird dich jetzt noch retten können.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Der Meister will deinen Kopf. Niemand wird dich jetzt noch retten kÃ¶nnen.
 			};
 			if (randy == 3)
 			{

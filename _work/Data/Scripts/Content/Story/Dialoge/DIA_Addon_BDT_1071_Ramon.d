@@ -60,15 +60,15 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 	{
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_00"); //Hey, was ist da unten passiert?
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_01"); //Ich habe Franco umgehauen.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //So? Dann ist es jetzt DEINE Aufgabe, dafür zu sorgen, dass die faulen Säcke jeden Tag ihre Arbeit machen.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Hey, ich bin nicht hier, um mich mit Jägern rumzuärgern. Ich will in's Lager.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Nichts da. Du hast Franco umgehauen - du bist jetzt der Anführer. Also mach deinen Job.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Wenn ich der Anführer bin, dann kann ich bestimmen, wer als Nächstes reinkommt.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //Und ich bestimme, dass ICH als Nächster reinkomme.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //So? Dann ist es jetzt DEINE Aufgabe, dafÃ¼r zu sorgen, dass die faulen SÃ¤cke jeden Tag ihre Arbeit machen.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Hey, ich bin nicht hier, um mich mit JÃ¤gern rumzuÃ¤rgern. Ich will in's Lager.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Nichts da. Du hast Franco umgehauen - du bist jetzt der AnfÃ¼hrer. Also mach deinen Job.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Wenn ich der AnfÃ¼hrer bin, dann kann ich bestimmen, wer als NÃ¤chstes reinkommt.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //Und ich bestimme, dass ICH als NÃ¤chster reinkomme.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(lacht) Ganz so einfach ist es nicht. Wir haben NIEMANDEN angefordert, also kommt auch NIEMAND rein.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Thorus kann doch einen neuen Anführer für die Jäger schicken, dann wird drinnen ein Platz für mich frei.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Thorus kann doch einen neuen AnfÃ¼hrer fÃ¼r die JÃ¤ger schicken, dann wird drinnen ein Platz fÃ¼r mich frei.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_09"); //(lacht) Du gibst nicht auf, was? Okay, dann schieb deinen Hintern rein.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Thorus wird sich darum kümmern, dass die Jäger nicht ohne Anführer leben müssen.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Thorus wird sich darum kÃ¼mmern, dass die JÃ¤ger nicht ohne AnfÃ¼hrer leben mÃ¼ssen.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_11"); //Worauf wartest du noch? Und besorg dir 'ne Spitzhacke!
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -84,25 +84,25 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 	}
 	else if (Ramon_News == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_12"); //Hey, was willst du? Kann mir nicht vorstellen, dass du 'ne Erlaubnis für's Lager hast.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_12"); //Hey, was willst du? Kann mir nicht vorstellen, dass du 'ne Erlaubnis fÃ¼r's Lager hast.
 		
 		if Npc_KnowsInfo (other, DIA_Addon_Franco_HI)
 		{
 			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //Franco schickt mich. Er will wissen, ob jemand im Lager gebraucht wird.
 		};
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //Ja, wir brauchen jemanden. Gestern hat wieder einer von den Kerlen den Löffel abgegeben.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //Ja, wir brauchen jemanden. Gestern hat wieder einer von den Kerlen den LÃ¶ffel abgegeben.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Dieser Idiot hat sich mit Esteban angelegt.
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_16"); //Wer ist Esteban?
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Der Anführer des unteren Lagers. Er entscheidet, wer in die Mine kommt.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Der AnfÃ¼hrer des unteren Lagers. Er entscheidet, wer in die Mine kommt.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_18"); //Also sag Franco, dass Thorus nach einem neuen Mann verlangt. Alles klar?
 		
 		Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Franco,"Thorus fordert einen neuen Mann für's Lager an. Das wird Franco interessieren.");
+		B_LogEntry (Topic_Addon_Franco,"Thorus fordert einen neuen Mann fÃ¼r's Lager an. Das wird Franco interessieren.");
 		
 		Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? DER Thorus?",DIA_Addon_Ramon_FirstWarn_YES);
-		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? Nie gehört...",DIA_Addon_Ramon_FirstWarn_NO);
+		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? Nie gehÃ¶rt...",DIA_Addon_Ramon_FirstWarn_NO);
 		
 		Ramon_News = TRUE;
 	}
@@ -120,7 +120,7 @@ FUNC VOID DIA_Addon_Ramon_FirstWarn_YES()
 	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_00"); //Thorus? DER Thorus?
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //Ja. DER Thorus. DER Mann, der die neuen Leute anfordert.
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //Der Mann, der entscheidet, ob und wann ein neuer Typ aus dem Sumpf ins Lager kommt.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //Du willst mir doch nicht erzählen, dass du ihn von früher kennst?
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //Du willst mir doch nicht erzÃ¤hlen, dass du ihn von frÃ¼her kennst?
 	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_04"); //Naja, ... Ja ...
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_05"); //Pass auf - JEDER kennt Thorus.
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //Trotzdem kommst du nicht rein - und ich werde ihm NICHTS ausrichten!
@@ -129,9 +129,9 @@ FUNC VOID DIA_Addon_Ramon_FirstWarn_YES()
 };
 FUNC VOID DIA_Addon_Ramon_FirstWarn_NO()
 {
-	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_NO_15_00"); //Thorus? Nie gehört ...
+	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_NO_15_00"); //Thorus? Nie gehÃ¶rt ...
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_01"); //Oh Mann, du kennst ihn nicht? Er war Chef der Gardisten im alten Lager.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_02"); //Er ist der Mann, der das Vertrauen von allen genießt.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_02"); //Er ist der Mann, der das Vertrauen von allen genieÃŸt.
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_03"); //Er fordert die neuen Leute an und er entscheidet, ob und wann ein neuer Mann in's Lager geholt wird.
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_NO_07_04"); //Wenn du lange genug lebst, wirst du ihn kennenlernen.
 	

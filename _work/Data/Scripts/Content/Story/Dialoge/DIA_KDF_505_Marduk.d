@@ -39,7 +39,7 @@ func int DIA_Marduk_JOB_Condition ()
 func void DIA_Marduk_JOB_Info ()
 {
 	AI_Output (other, self, "DIA_Marduk_JOB_15_00"); //Was ist deine Aufgabe hier?
-	AI_Output (self, other, "DIA_Marduk_JOB_05_01"); //Ich bereite die Paladine auf den Kampf gegen das Böse vor.
+	AI_Output (self, other, "DIA_Marduk_JOB_05_01"); //Ich bereite die Paladine auf den Kampf gegen das BÃ¶se vor.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Arbeit
@@ -51,7 +51,7 @@ instance DIA_Marduk_Arbeit		(C_INFO)
 	condition	 = 	DIA_Marduk_Arbeit_Condition;
 	information	 = 	DIA_Marduk_Arbeit_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Kann ich etwas für dich tun, Meister?";
+	description	 = 	"Kann ich etwas fÃ¼r dich tun, Meister?";
 };
 func int DIA_Marduk_Arbeit_Condition ()
 {	
@@ -62,15 +62,15 @@ func int DIA_Marduk_Arbeit_Condition ()
 };
 func void DIA_Marduk_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Arbeit_15_00"); //Kann ich etwas für dich tun, Meister?
-	AI_Output (self, other, "DIA_Marduk_Arbeit_05_01"); //Für mich? Nein, ich bedarf deiner Hilfe nicht. Bete lieber für das Heil der Streiter Innos, die ins Minental gezogen sind.
+	AI_Output (other, self, "DIA_Marduk_Arbeit_15_00"); //Kann ich etwas fÃ¼r dich tun, Meister?
+	AI_Output (self, other, "DIA_Marduk_Arbeit_05_01"); //FÃ¼r mich? Nein, ich bedarf deiner Hilfe nicht. Bete lieber fÃ¼r das Heil der Streiter Innos, die ins Minental gezogen sind.
 	
 	MIS_MardukBeten = LOG_RUNNING;
 	B_StartOtherRoutine (Sergio,"WAIT");
 	
 	Log_CreateTopic (Topic_MardukBeten,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MardukBeten,LOG_RUNNING);
-	B_LogEntry (Topic_MardukBeten,"Meister Marduk hat keine Aufgabe für mich. Er sagte mir, ich sollte lieber ein Gebet für die Paladine sprechen.");
+	B_LogEntry (Topic_MardukBeten,"Meister Marduk hat keine Aufgabe fÃ¼r mich. Er sagte mir, ich sollte lieber ein Gebet fÃ¼r die Paladine sprechen.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gebetet
@@ -82,7 +82,7 @@ instance DIA_Marduk_Gebetet		(C_INFO)
 	condition	 = 	DIA_Marduk_Gebetet_Condition;
 	information	 = 	DIA_Marduk_Gebetet_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ich habe für die Paladine gebetet.";
+	description	 = 	"Ich habe fÃ¼r die Paladine gebetet.";
 };
 func int DIA_Marduk_Gebetet_Condition ()
 {	
@@ -94,7 +94,7 @@ func int DIA_Marduk_Gebetet_Condition ()
 };
 func void DIA_Marduk_Gebetet_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Gebetet_15_00"); //Ich habe für die Paladine gebetet.
+	AI_Output (other, self, "DIA_Marduk_Gebetet_15_00"); //Ich habe fÃ¼r die Paladine gebetet.
 	AI_Output (self, other, "DIA_Marduk_Gebetet_05_01"); //Daran hast du gut getan. Nun geh und verrichte weiter deine Arbeiten.
 	
 	MIS_MardukBeten = LOG_SUCCESS;
@@ -102,7 +102,7 @@ func void DIA_Marduk_Gebetet_Info ()
 	B_StartOtherRoutine (Sergio,"START");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Das Böse
+//	Info Das BÃ¶se
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Marduk_Evil		(C_INFO)
 {
@@ -110,7 +110,7 @@ instance DIA_Marduk_Evil		(C_INFO)
 	condition	 = 	DIA_Marduk_Evil_Condition;
 	information	 = 	DIA_Marduk_Evil_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Was ist das 'Böse'?";
+	description	 = 	"Was ist das 'BÃ¶se'?";
 };
 func int DIA_Marduk_Evil_Condition ()
 {
@@ -121,10 +121,10 @@ func int DIA_Marduk_Evil_Condition ()
 };
 func void DIA_Marduk_Evil_Info ()
 {
-	AI_Output (other, self, "DIA_Marduk_Evil_15_00"); //Was ist das 'Böse'?
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_01"); //Das Böse ist allgegenwärtig. Es ist die Kraft Beliars, des ewigen Widersachers von Innos.
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_02"); //Es ist die allumfassende Schwärze, die versucht, das heilige Licht Innos für immer zu verdunkeln.
-	AI_Output (self ,other, "DIA_Marduk_Evil_05_03"); //Beliar ist der Herr der Dunkelheit, des Hasses und der Zerstörung.
+	AI_Output (other, self, "DIA_Marduk_Evil_15_00"); //Was ist das 'BÃ¶se'?
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_01"); //Das BÃ¶se ist allgegenwÃ¤rtig. Es ist die Kraft Beliars, des ewigen Widersachers von Innos.
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_02"); //Es ist die allumfassende SchwÃ¤rze, die versucht, das heilige Licht Innos fÃ¼r immer zu verdunkeln.
+	AI_Output (self ,other, "DIA_Marduk_Evil_05_03"); //Beliar ist der Herr der Dunkelheit, des Hasses und der ZerstÃ¶rung.
 	AI_Output (self ,other, "DIA_Marduk_Evil_05_04"); //Nur diejenigen unter uns, in deren Herzen Innos heiliges Feuer lodert, werden Innos strahlendes Licht in die Welt tragen und die Dunkelheit vertreiben.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -149,7 +149,7 @@ func void DIA_Marduk_Pal_Info ()
 {
 	AI_Output (other, self, "DIA_Marduk_Pal_15_00"); //Im Kloster leben doch nur Magier und Novizen.
 	AI_Output (self, other, "DIA_Marduk_Pal_05_01"); //Das ist richtig. Im Gegensatz zu unserer Gemeinschaft, die das Wort von Innos verehrt, ...
-	AI_Output (self, other, "DIA_Marduk_Pal_05_02"); //... verehren die Paladine vor allem die großen Taten unseres Herrn.
+	AI_Output (self, other, "DIA_Marduk_Pal_05_02"); //... verehren die Paladine vor allem die groÃŸen Taten unseres Herrn.
 	AI_Output (self, other, "DIA_Marduk_Pal_05_03"); //Wir sind die Vertreter Innos, die Paladine aber sind seine Streiter, die in seinem Namen in die Schlacht ziehen und seinen Ruhm mehren.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -393,7 +393,7 @@ FUNC VOID DIA_Marduk_Kap3_Hello_Info()
 	};
 	if (hero.Guild == GIL_DJG)
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_Hello,"Ich komme von den Höfen.",DIA_Marduk_Kap3_Hello_DJG);
+		Info_AddChoice (DIA_Marduk_Kap3_Hello,"Ich komme von den HÃ¶fen.",DIA_Marduk_Kap3_Hello_DJG);
 	};
 	
 };
@@ -404,12 +404,12 @@ FUNC VOID DIA_Marduk_Kap3_Hello_NotYourConcern ()
 	
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_01"); //(tadelnd) Ein Paladin sollte stets höflich und bescheiden sein. Deine Aufgabe ist es, diejenigen zu beschützen, die sich nicht selbst schützen können.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_02"); //(tadelnd) Das ist eine Privileg und du solltest dankbar sein, dass Innos dir diese Möglichkeit bietet. Denk darüber nach!
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_01"); //(tadelnd) Ein Paladin sollte stets hÃ¶flich und bescheiden sein. Deine Aufgabe ist es, diejenigen zu beschÃ¼tzen, die sich nicht selbst schÃ¼tzen kÃ¶nnen.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_02"); //(tadelnd) Das ist eine Privileg und du solltest dankbar sein, dass Innos dir diese MÃ¶glichkeit bietet. Denk darÃ¼ber nach!
 	};
 	if (hero.guild == GIL_DJG)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_03"); //(erbost) Es gab Zeiten, da war es für den Pöbel nicht möglich, unser heiliges Kloster zu betreten. Du bist der Beweis, dass es bessere Zeiten waren.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_03"); //(erbost) Es gab Zeiten, da war es fÃ¼r den PÃ¶bel nicht mÃ¶glich, unser heiliges Kloster zu betreten. Du bist der Beweis, dass es bessere Zeiten waren.
 		AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_NotYourConcern_05_04"); //(warnend) Ich warne dich, stell hier nichts an, oder du wirst umgehend bestraft, wir werden keine falsche Milde walten lassen.
 	};	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
@@ -418,17 +418,17 @@ FUNC VOID DIA_Marduk_Kap3_Hello_NotYourConcern ()
 FUNC VOID DIA_Marduk_Kap3_Hello_Soon ()
 {
 	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_Soon_15_00"); //Noch nicht lange.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_01"); //Dann heiße ich dich willkommen. In diesem Kampf brauchen wir jeden Mann, der den Mut hat, sich dem Bösen entgegenzustellen.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_02"); //In den Händen von Männern wie dir liegt das Schicksal von uns allen. Möge Innos dir immer den nötigen Mut spenden.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_01"); //Dann heiÃŸe ich dich willkommen. In diesem Kampf brauchen wir jeden Mann, der den Mut hat, sich dem BÃ¶sen entgegenzustellen.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_Soon_05_02"); //In den HÃ¤nden von MÃ¤nnern wie dir liegt das Schicksal von uns allen. MÃ¶ge Innos dir immer den nÃ¶tigen Mut spenden.
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
 };
 
 FUNC VOID DIA_Marduk_Kap3_Hello_DJG ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_DJG_15_00"); //Ich komme von den Höfen.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_01"); //Dann heiße ich dich im Namen der Gastfreundschaft willkommen. Ich hoffe, du weißt das zu schätzen.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_02"); //Missbrauche dein Gastrecht nicht, oder du wirst große Probleme bekommen.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_Hello_DJG_15_00"); //Ich komme von den HÃ¶fen.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_01"); //Dann heiÃŸe ich dich im Namen der Gastfreundschaft willkommen. Ich hoffe, du weiÃŸt das zu schÃ¤tzen.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_Hello_DJG_05_02"); //Missbrauche dein Gastrecht nicht, oder du wirst groÃŸe Probleme bekommen.
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_Hello);
 };
@@ -460,21 +460,21 @@ FUNC INT DIA_Marduk_TrainPals_Condition()
 FUNC VOID DIA_Marduk_TrainPals_Info()
 {
 	AI_Output (other,self ,"DIA_Marduk_TrainPals_15_00"); //Was kannst du mir beibringen?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_01"); //Deine Kampffertigkeiten kann ich dich natürlich nicht lehren.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_02"); //Wohl aber ist es mir möglich, dir das Wesen Innos und seiner Gaben näher zu bringen.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_03"); //Außerdem ist es meine Aufgabe, dich auf die Schwertweihe vorzubereiten.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_01"); //Deine Kampffertigkeiten kann ich dich natÃ¼rlich nicht lehren.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_02"); //Wohl aber ist es mir mÃ¶glich, dir das Wesen Innos und seiner Gaben nÃ¤her zu bringen.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_03"); //AuÃŸerdem ist es meine Aufgabe, dich auf die Schwertweihe vorzubereiten.
 	AI_Output (other,self ,"DIA_Marduk_TrainPals_15_04"); //Und die Magie?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_05"); //Hier lehren wir nur unsere Magie. Die Magie der Paladine wirst du in der Stadt lernen müssen.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_05_05"); //Hier lehren wir nur unsere Magie. Die Magie der Paladine wirst du in der Stadt lernen mÃ¼ssen.
 	
 	Info_ClearChoices (DIA_Marduk_TrainPals); 
-	Info_AddChoice (DIA_Marduk_TrainPals,"Später vielleicht.",DIA_Marduk_TrainPals_Later);
+	Info_AddChoice (DIA_Marduk_TrainPals,"SpÃ¤ter vielleicht.",DIA_Marduk_TrainPals_Later);
 	Info_AddChoice (DIA_Marduk_TrainPals,"Was meinst du damit?",DIA_Marduk_TrainPals_Meaning);
 	Info_AddChoice (DIA_Marduk_TrainPals,"Was ist die Schwertweihe?",DIA_Marduk_TrainPals_Blessing);
 };
 
 FUNC VOID DIA_Marduk_TrainPals_Later()
 {
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_Later_15_00"); //Vielleicht später.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_Later_15_00"); //Vielleicht spÃ¤ter.
 	AI_Output (self ,other,"DIA_Marduk_TrainPals_Later_05_01"); //Du bist mir jederzeit herzlich willkommen.
 	
 	Info_ClearChoices (DIA_Marduk_TrainPals);
@@ -483,9 +483,9 @@ FUNC VOID DIA_Marduk_TrainPals_Later()
 FUNC VOID DIA_Marduk_TrainPals_Meaning()
 {
 	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_00"); //Was meinst du damit?
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_01"); //Als Innos unsere Welt verlassen musste, ließ er den Menschen einen Teil seiner göttlichen Macht.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_02"); //Es ist nur wenigen von uns Menschen erlaubt, sich seiner Kraft zu bedienen und in Innos Namen für Gerechtigkeit zu sorgen.
-	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_03"); //Und was willst du mir näher bringen?
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_01"); //Als Innos unsere Welt verlassen musste, lieÃŸ er den Menschen einen Teil seiner gÃ¶ttlichen Macht.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_02"); //Es ist nur wenigen von uns Menschen erlaubt, sich seiner Kraft zu bedienen und in Innos Namen fÃ¼r Gerechtigkeit zu sorgen.
+	AI_Output (other,self ,"DIA_Marduk_TrainPals_Meaning_15_03"); //Und was willst du mir nÃ¤her bringen?
 	AI_Output (self ,other,"DIA_Marduk_TrainPals_Meaning_05_04"); //Ich kann dich auf den richtigen Weg bringen, Innos Wesen zu erkennen und ihm zu folgen.
 };
 
@@ -493,7 +493,7 @@ FUNC VOID DIA_Marduk_TrainPals_Blessing()
 {
 	AI_Output (other,self ,"DIA_Marduk_TrainPals_Blessing_15_00"); //Was ist die Schwertweihe?
 	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_01"); //Die Schwertweihe ist eines der heiligsten Rituale der Paladine.
-	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_02"); //Während dieser Zeremonie fließt Innos heilige Kraft durch die Schwertklinge des Paladins und gibt dem Schwert dadurch ungeahnte Kräfte.
+	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_02"); //WÃ¤hrend dieser Zeremonie flieÃŸt Innos heilige Kraft durch die Schwertklinge des Paladins und gibt dem Schwert dadurch ungeahnte KrÃ¤fte.
 	AI_Output (self ,other,"DIA_Marduk_TrainPals_Blessing_05_03"); //So ein geweihtes Schwert ist der wertvollste Besitz eines Paladins und wird ihn sein ganzes Leben lang begleiten.
 
 	Marduk_TrainPals_permanent = TRUE;
@@ -522,13 +522,13 @@ FUNC VOID DIA_Marduk_SwordBlessing_Info()
 {
 	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_15_00"); //Ich will mein Schwert weihen.
 	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_01"); //Wenn du dich zu diesem Schritt entschlossen hast, brauchst du zuerst eine Erzklinge.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_02"); //Mit dieser solltest du dich dann zum Gebet in die Kapelle zurückziehen.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_03"); //Während des Gebets und nach einer angemessen Spende an unseren Herrn Innos sollst du Innos um seine Gande und Führung im Kampf gegen das Böse bitten.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_02"); //Mit dieser solltest du dich dann zum Gebet in die Kapelle zurÃ¼ckziehen.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_03"); //WÃ¤hrend des Gebets und nach einer angemessen Spende an unseren Herrn Innos sollst du Innos um seine Gande und FÃ¼hrung im Kampf gegen das BÃ¶se bitten.
 	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_05_04"); //Wenn Innos dir wohlgesonnen ist, wird dein Schwert von dem Moment an unserem Herrn geweiht sein.
 	
 	Info_ClearChoices (DIA_Marduk_SwordBlessing);
 	Info_AddChoice (DIA_Marduk_SwordBlessing,DIALOG_BACK,DIA_Marduk_SwordBlessing_Back);
-	Info_AddChoice (DIA_Marduk_SwordBlessing,"Was für eine Spende?",DIA_Marduk_SwordBlessing_Donation); 
+	Info_AddChoice (DIA_Marduk_SwordBlessing,"Was fÃ¼r eine Spende?",DIA_Marduk_SwordBlessing_Donation); 
 	Info_AddChoice (DIA_Marduk_SwordBlessing,"Wo bekomme ich eine Erzklinge her?",DIA_Marduk_SwordBlessing_OreBlade);
 };
 
@@ -539,9 +539,9 @@ FUNC VOID DIA_Marduk_SwordBlessing_Back()
 
 FUNC VOID DIA_Marduk_SwordBlessing_Donation ()
 {
-	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_Donation_15_00"); //Was für eine Spende?
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_01"); //Nun, angesichts der Gnade, die dir zuteil wird, ist eine Summe von 5000 Goldstücken mehr als angemessen.
-	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_02"); //Es ist dir natürlich freigestellt, mehr zu geben.
+	AI_Output (other,self ,"DIA_Marduk_SwordBlessing_Donation_15_00"); //Was fÃ¼r eine Spende?
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_01"); //Nun, angesichts der Gnade, die dir zuteil wird, ist eine Summe von 5000 GoldstÃ¼cken mehr als angemessen.
+	AI_Output (self ,other,"DIA_Marduk_SwordBlessing_Donation_05_02"); //Es ist dir natÃ¼rlich freigestellt, mehr zu geben.
 };
 
 FUNC VOID DIA_Marduk_SwordBlessing_OreBlade ()
@@ -552,7 +552,7 @@ FUNC VOID DIA_Marduk_SwordBlessing_OreBlade ()
 	if (Npc_IsDead (HARAD) == TRUE)
 	{
 		AI_Output (other,self ,"DIA_Marduk_SwordBlessing_OreBlade_15_03"); //Harad ist tot.
-		AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_04"); //Das tut mir Leid, dann wirst du wohl warten müssen, bis du mit den anderen Paladinen wieder auf das Festland zurückkehrst.
+		AI_Output (self ,other,"DIA_Marduk_SwordBlessing_OreBlade_05_04"); //Das tut mir Leid, dann wirst du wohl warten mÃ¼ssen, bis du mit den anderen Paladinen wieder auf das Festland zurÃ¼ckkehrst.
 	}; 
 };
 
@@ -581,15 +581,15 @@ FUNC VOID DIA_Marduk_Kap3_PERM_Info()
 	
 	if (MIS_NovizenChase == LOG_RUNNING)
 	{
-		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_01"); //Allerdings, dem Feind ist es gelungen, einen Verräter in unsere heiligen Hallen zu schleusen.
+		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_01"); //Allerdings, dem Feind ist es gelungen, einen VerrÃ¤ter in unsere heiligen Hallen zu schleusen.
 		AI_Output (self, other,"DIA_Marduk_Kap3_PERM_05_02"); //Er hat das Auge Innos gestohlen, eines unserer wichtigsten Artefakte. Und das ist nur die Spitze des Eisbergs.
 		//Joly:AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_03"); //Was meinst du?
 	};
 	
 	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_04"); //(besorgt) Der Feind ist anscheinend schon bis in die Stadt vorgedrungen.
 	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_15_05"); //Was meinst du?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_06"); //Einer der Paladine, Lothar, ist auf offener Straße ermordet worden.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_07"); //(aufgebracht) Am helllichten Tag! Es ist schon weit gekommen, aber ich fürchte, das ist erst der Anfang.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_06"); //Einer der Paladine, Lothar, ist auf offener StraÃŸe ermordet worden.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_05_07"); //(aufgebracht) Am helllichten Tag! Es ist schon weit gekommen, aber ich fÃ¼rchte, das ist erst der Anfang.
 	
 	Info_ClearChoices (DIA_Marduk_Kap3_PERM);
 	Info_AddChoice (DIA_Marduk_Kap3_PERM,DIALOG_BACK,DIA_Marduk_Kap3_PERM_BAck);
@@ -600,7 +600,7 @@ FUNC VOID DIA_Marduk_Kap3_PERM_Info()
 	}	
 	else
 	{
-		Info_AddChoice (DIA_Marduk_Kap3_PERM,"Hat man der Mörder gefasst?",DIA_Marduk_Kap3_PERM_Murderer);
+		Info_AddChoice (DIA_Marduk_Kap3_PERM,"Hat man der MÃ¶rder gefasst?",DIA_Marduk_Kap3_PERM_Murderer);
 	};
 	
 	if (MIS_NovizenChase == LOG_RUNNING)
@@ -619,38 +619,38 @@ FUNC VOID DIA_Marduk_Kap3_PERM_AndNow ()
 	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_00"); //Was wird jetzt geschehen?
 	if (MIS_NovizenChase == LOG_RUNNING)
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_01"); //Wir werden den Dieb verfolgen, egal wohin. Wir werden ihn zur Strecke bringen und seiner gerechten Strafe zuführen.
-		AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_02"); //Dazu müssten wir erst einmal wissen, wo der Dieb ist.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_01"); //Wir werden den Dieb verfolgen, egal wohin. Wir werden ihn zur Strecke bringen und seiner gerechten Strafe zufÃ¼hren.
+		AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_AndNow_15_02"); //Dazu mÃ¼ssten wir erst einmal wissen, wo der Dieb ist.
 		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_03"); //Das werden wir schon rausfinden. Und wenn es auch noch lange dauern mag, wir werden ihn finden.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_04"); //Das schwöre ich bei Innos.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_04"); //Das schwÃ¶re ich bei Innos.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_05"); //Ein Mord, zudem an einem Paladin, ist ohne Zweifel eines der schwersten Verbrechen überhaupt.
-		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_06"); //Der Mörder wird ohne jeden Zweifel zum Tode verurteilt werden.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_05"); //Ein Mord, zudem an einem Paladin, ist ohne Zweifel eines der schwersten Verbrechen Ã¼berhaupt.
+		AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_AndNow_05_06"); //Der MÃ¶rder wird ohne jeden Zweifel zum Tode verurteilt werden.
 	};
 };
 
 FUNC VOID DIA_Marduk_Kap3_PERM_BennetisNotGuilty ()
 {
 	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_15_00"); //Bennet ist unschuldig. Der Zeuge hat gelogen.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_01"); //Woher weißt du das?
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_01"); //Woher weiÃŸt du das?
 	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_15_02"); //Ich habe Beweise gefunden.
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_03"); //Manchmal glaube ich, dass Verrat und Gier unsere größten Feinde sind.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_BennetisNotGuilty_05_03"); //Manchmal glaube ich, dass Verrat und Gier unsere grÃ¶ÃŸten Feinde sind.
 };
 
 FUNC VOID DIA_Marduk_Kap3_PERM_Murderer ()
 {
-	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_00"); //Hat man den Mörder gefasst?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_01"); //Zum Glück, ja. Es war einer von den Halsabschneidern von Onars Hof.
+	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_00"); //Hat man den MÃ¶rder gefasst?
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_01"); //Zum GlÃ¼ck, ja. Es war einer von den Halsabschneidern von Onars Hof.
 	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_Murderer_15_02"); //Wer?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_03"); //Den Namen kenne ich nicht. Aber bei den Söldnern sind durchaus ein paar Gestalten, denen man eine solche Tat zutrauen könnte.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_Murderer_05_03"); //Den Namen kenne ich nicht. Aber bei den SÃ¶ldnern sind durchaus ein paar Gestalten, denen man eine solche Tat zutrauen kÃ¶nnte.
 };
 
 FUNC VOID DIA_Marduk_Kap3_PERM_thief ()
 {
 	AI_Output (other,self ,"DIA_Marduk_Kap3_PERM_thief_15_00"); //Wo ist der Dieb hin?
-	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_01"); //Das weiß ich doch nicht, er ist wie ein Besessener zum Tor gestürmt und dann verschwunden.
+	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_01"); //Das weiÃŸ ich doch nicht, er ist wie ein Besessener zum Tor gestÃ¼rmt und dann verschwunden.
 	AI_Output (self ,other,"DIA_Marduk_Kap3_PERM_thief_05_02"); //Egal, wohin er sich verkriecht, unter welchem Stein er sich auch versteckt, Innos Zorn wir ihn treffen und seine schwarze Seele verbrennen.
 };
 

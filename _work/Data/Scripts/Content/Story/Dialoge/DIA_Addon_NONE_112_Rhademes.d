@@ -51,12 +51,12 @@ FUNC VOID DIA_Addon_Rhademes_First_Info()
 	if (PLAYER_TALENT_FOREIGNLANGUAGE[LANGUAGE_1] == TRUE)
 	{
 		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_00"); //Eine Ewigkeit lang war mein Geist gefangen.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_01"); //Nun bin ich endlich frei. Das Schwert hat einen NEUEN Träger.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_02"); //Die letzte Kammer wurde geöffnet.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_01"); //Nun bin ich endlich frei. Das Schwert hat einen NEUEN TrÃ¤ger.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_02"); //Die letzte Kammer wurde geÃ¶ffnet.
 		AI_Output (other, self, "DIA_Addon_Rhademes_First_15_03"); //Aber die Pforte sieht ziemlich verschlossen aus!
 		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_04"); //Dies hier ist nicht die Pforte zur letzten Kammer.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_05"); //DIESE Pforte führt dich in den Raum davor.
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_06"); //Der Träger ... hat sie hinter sich verschlossen.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_05"); //DIESE Pforte fÃ¼hrt dich in den Raum davor.
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_06"); //Der TrÃ¤ger ... hat sie hinter sich verschlossen.
 		
 		Rhademes_Understood = TRUE;
 	}
@@ -64,7 +64,7 @@ FUNC VOID DIA_Addon_Rhademes_First_Info()
 	{
 		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_07"); //(leidend) Ghanima en Kandra Adanos?!
 		B_Say (other, self, "$CANTUNDERSTANDTHIS");	
-		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_08"); //(verärgert) Bengla anthani!
+		AI_Output (self, other, "DIA_Addon_Rhademes_First_03_08"); //(verÃ¤rgert) Bengla anthani!
 		
 		AI_StopProcessInfos (self);
 	};
@@ -81,7 +81,7 @@ instance DIA_Addon_Rhademes_Pforte (C_INFO)
 	condition   = DIA_Addon_Rhademes_Pforte_Condition;
 	information = DIA_Addon_Rhademes_Pforte_Info;
 	permanent   = FALSE;
-	description	= "Wie öffne ich die Pforte?";
+	description	= "Wie Ã¶ffne ich die Pforte?";
 };
 FUNC INT DIA_Addon_Rhademes_Pforte_Condition()
 {
@@ -89,10 +89,10 @@ FUNC INT DIA_Addon_Rhademes_Pforte_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_Pforte_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_00"); //Wie öffne ich die Pforte?
+	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_00"); //Wie Ã¶ffne ich die Pforte?
 	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_01"); //Bewege ... einen der Hebel.
 	AI_Output (other, self, "DIA_Addon_Rhademes_Pforte_15_02"); //Irgendeinen?
-	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_03"); //All diese Hebel öffnen die Pforte.
+	AI_Output (self, other, "DIA_Addon_Rhademes_Pforte_03_03"); //All diese Hebel Ã¶ffnen die Pforte.
 };
 
 // ***********************************************************
@@ -106,7 +106,7 @@ instance DIA_Addon_Rhademes_Hebel (C_INFO)
 	condition   = DIA_Addon_Rhademes_Hebel_Condition;
 	information = DIA_Addon_Rhademes_Hebel_Info;
 	permanent   = FALSE;
-	description	= "Nicht alle Hebel lösen die Falle aus, richtig?";
+	description	= "Nicht alle Hebel lÃ¶sen die Falle aus, richtig?";
 };
 FUNC INT DIA_Addon_Rhademes_Hebel_Condition()
 {
@@ -118,7 +118,7 @@ FUNC INT DIA_Addon_Rhademes_Hebel_Condition()
 };
 FUNC VOID DIA_Addon_Rhademes_Hebel_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Rhademes_Hebel_15_00"); //Nicht alle Hebel lösen die Falle aus, richtig?
+	AI_Output (other, self, "DIA_Addon_Rhademes_Hebel_15_00"); //Nicht alle Hebel lÃ¶sen die Falle aus, richtig?
 	AI_Output (self, other, "DIA_Addon_Rhademes_Hebel_03_01"); //Doch, das tun sie!
 };
 
@@ -173,9 +173,9 @@ FUNC INT DIA_Addon_Rhademes_DeinVater_Condition()
 FUNC VOID DIA_Addon_Rhademes_DeinVater_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_00"); //Dein Vater hat die Falle erbaut, woher willst DU wissen, wie sie funktioniert?!
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_01"); //QUARHODRON! Ich höre noch immer die Hammerschläge ... auf der anderen Seite des Tores ... seit so langer Zeit ...
-	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_02"); //Das Schwert ... ließ mich sehen ... seine Rache ... für mein Versagen ...
-	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_03"); //Das heißt, du hast gesehen, welcher Hebel der richtige ist?
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_01"); //QUARHODRON! Ich hÃ¶re noch immer die HammerschlÃ¤ge ... auf der anderen Seite des Tores ... seit so langer Zeit ...
+	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_02"); //Das Schwert ... lieÃŸ mich sehen ... seine Rache ... fÃ¼r mein Versagen ...
+	AI_Output (other, self, "DIA_Addon_Rhademes_DeinVater_15_03"); //Das heiÃŸt, du hast gesehen, welcher Hebel der richtige ist?
 	AI_Output (self, other, "DIA_Addon_Rhademes_DeinVater_03_04"); //Ich habe es seit langem vergessen.
 	
 	Info_ClearChoices (DIA_Addon_Rhademes_DeinVater);

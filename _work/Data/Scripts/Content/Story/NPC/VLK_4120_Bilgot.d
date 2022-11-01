@@ -33,8 +33,8 @@ instance VLK_4120_Bilgot (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh‰ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 30); //Grenzen f¸r Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abh√§ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 30); //Grenzen f√ºr Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_4120;
@@ -48,7 +48,7 @@ FUNC VOID Rtn_Start_4120 ()
 
 FUNC VOID Rtn_FollowToOCBridge_4120 ()
 {	
-	TA_Follow_Player		(08,00,23,00,"START");//groﬂe Br¸cke vorm OC
+	TA_Follow_Player		(08,00,23,00,"START");//gro√üe Br√ºcke vorm OC
     TA_Follow_Player		(23,00,08,00,"START");
 };
 

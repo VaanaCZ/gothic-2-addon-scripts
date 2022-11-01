@@ -39,7 +39,7 @@ FUNC VOID DIA_Addon_10031_Wache_Scatty_Info()
 	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Hey, willst du buddeln gehen? Dann vergiss nicht, dich bei Scatty einzudecken.
 	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//Was brauche ich denn?
 	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Nun zumindest 'ne Spitzhacke. Etwas Proviant kann auch nicht schaden.
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Oder wie wäre es mit Heiltränken? Da unten gibt's Minecrawler.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//Oder wie wÃ¤re es mit HeiltrÃ¤nken? Da unten gibt's Minecrawler.
 	AI_StopProcessInfos (self);
 };
 //----------------------------------------------------------------------
@@ -68,9 +68,9 @@ FUNC VOID DIA_Addon_10031_Wache_Hi_Info()
 	&& (Wache_Joker == FALSE)
 	{
 		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_01");//Junge, Junge. Die Sklaven hatten es aber ziemlich eilig.
-		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Als sie gehört haben, dass sie frei sind, sind sie gerannt wie die Hasen!
+		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Als sie gehÃ¶rt haben, dass sie frei sind, sind sie gerannt wie die Hasen!
 		Wache_Joker = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Ja. Also mach keinen Ärger, dann bleibt auch alles klar.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Ja. Also mach keinen Ã„rger, dann bleibt auch alles klar.
 	
 };

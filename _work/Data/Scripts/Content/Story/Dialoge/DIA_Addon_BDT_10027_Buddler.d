@@ -40,11 +40,11 @@ FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//Ich habe lange genug für die Erzbarone geknechtet. Gut, dass jetzt andere buddeln.
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//Ich habe lange genug fÃ¼r die Erzbarone geknechtet. Gut, dass jetzt andere buddeln.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Verdammt. Jetzt müssen wir wohl wieder selber hacken, was?
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_02");//Verdammt. Jetzt mÃ¼ssen wir wohl wieder selber hacken, was?
 	};
 };
 //---------------------------------------------------------------------
@@ -66,7 +66,7 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Kopfarbeit, Junge. Goldhacken ist reine Kopfsache. Versuch nicht, den Fels zu bezwingen - er ist härter als du.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Kopfarbeit, Junge. Goldhacken ist reine Kopfsache. Versuch nicht, den Fels zu bezwingen - er ist hÃ¤rter als du.
 	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Mach dich von allem frei - und versuche, eins zu werden mit dem Gold. Dann ist es ist wie ein Gebet, eine Meditation.
 	
 	B_Upgrade_Hero_HackChance(10);

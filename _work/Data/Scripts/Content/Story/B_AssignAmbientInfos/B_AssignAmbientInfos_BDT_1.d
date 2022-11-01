@@ -51,7 +51,7 @@ FUNC VOID DIA_BDT_1_STANDARD_Info()
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_01"); //Suchst du Ärger?
+		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_01"); //Suchst du Ã„rger?
 	};
 	if (randy == 2)
 	{

@@ -80,8 +80,8 @@ FUNC VOID DIA_Joe_Hallo_Info()
 	B_GivePlayerXP ((XP_Ambient*4));
 	
 	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Was machst du HIER?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Ich bin eingsperrt worden. Die Tür war auf und ich wollte mal einen Blick riskieren - aber als ich drin war, kam die Wache und hat wieder abgesperrt.
-	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Das ist eine dumme Geschichte - ich wäre dir sehr dankbar, wenn das unter uns bliebe.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Ich bin eingsperrt worden. Die TÃ¼r war auf und ich wollte mal einen Blick riskieren - aber als ich drin war, kam die Wache und hat wieder abgesperrt.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Das ist eine dumme Geschichte - ich wÃ¤re dir sehr dankbar, wenn das unter uns bliebe.
 	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Verstehe, ist ja auch nicht gerade eine Heldentat gewesen.
 	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Ich brauche jetzt wohl etwas zu trinken.
 	AI_StopProcessInfos (self);
@@ -136,7 +136,7 @@ FUNC INT DIA_Joe_Sign_Condition()
 FUNC VOID DIA_Joe_Sign_Info()
 {
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Ach, sieh an, wir haben gemeinsame Freunde. Dann will ich mich mal für meine Rettung erkenntlich zeigen.
+	AI_Output (self, other,"DIA_Joe_Sign_10_00");//Ach, sieh an, wir haben gemeinsame Freunde. Dann will ich mich mal fÃ¼r meine Rettung erkenntlich zeigen.
 	AI_Output (self, other,"DIA_Joe_Sign_10_01");//Hier, nimm diese Dietriche - du kannst sie bestimmt gebrauchen.
 	
 	B_GiveInvItems (self, other, ItKE_Lockpick, 5);

@@ -3,8 +3,8 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 {	
-	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt auf´s Schiff!!!!
-	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufÂ´s Schiff!!!!
+	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: FÃ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃŸ nach der Aktion wieder geÃ¤ndert werden, z. B = 0;
 	{
 			if (Schiffswache.voice == 4)
 			{
@@ -54,15 +54,15 @@ func void B_AssignSchiffswachenInfos (var C_NPC Schiffswache)
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Die verdammten Orks haben Garonds Burg gestürmt. Wir müssen sofort handeln.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Die verdammten Orks haben Garonds Burg gestÃ¼rmt. Wir mÃ¼ssen sofort handeln.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Wenn wir den Verräter zu fassen kriegen, der das Haupttor der Burg geöffnet hat, machen wir kurzen Prozess mit ihm.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Wenn wir den VerrÃ¤ter zu fassen kriegen, der das Haupttor der Burg geÃ¶ffnet hat, machen wir kurzen Prozess mit ihm.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //Wir können nicht mehr lange warten. Unsere Jungs im Minental brauchen unsere Hilfe, bevor der nächste Orksturm kommt.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //Wir kÃ¶nnen nicht mehr lange warten. Unsere Jungs im Minental brauchen unsere Hilfe, bevor der nÃ¤chste Orksturm kommt.
 			};
 		}
 	else

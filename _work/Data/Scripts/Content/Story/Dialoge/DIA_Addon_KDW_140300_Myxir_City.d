@@ -41,7 +41,7 @@ var int DIA_Addon_Myxir_CITY_HelloCITY_OneTime;
 func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Du wirst jetzt in der Stadt bleiben?
-	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Einer von uns muss ja HIER sein, wenn Vatras die Stadt verl‰sst.
+	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Einer von uns muss ja HIER sein, wenn Vatras die Stadt verl√§sst.
 	
 	VatrasAbloeseIstDa = TRUE;
 	

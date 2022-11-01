@@ -11,12 +11,12 @@ func void B_AssignDementorTalk_Ritual ()
 	if (MIS_SCKnowsInnosEyeIsBroken == FALSE)
 	
 	{
-		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //Du kommst zu spät.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Wir haben das Auge Innos' zerstört, auf dass es seine Macht niemals zurückerlangen wird.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Wir werden dir jetzt zeigen, was für sinnloses Unterfangen es doch war, den Meister herauszufordern.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //Du kommst zu spÃ¤t.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Wir haben das Auge Innos' zerstÃ¶rt, auf dass es seine Macht niemals zurÃ¼ckerlangen wird.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Wir werden dir jetzt zeigen, was fÃ¼r sinnloses Unterfangen es doch war, den Meister herauszufordern.
 
 		MIS_SCKnowsInnosEyeIsBroken  = TRUE;
-		B_LogEntry (TOPIC_INNOSEYE, "Diese schwarzen Kerle gehen mir langsam auf die Nerven. Sie haben das Auge Innos zerstört. Kein Ahnung, wie ich das nun wieder regeln soll.");
+		B_LogEntry (TOPIC_INNOSEYE, "Diese schwarzen Kerle gehen mir langsam auf die Nerven. Sie haben das Auge Innos zerstÃ¶rt. Kein Ahnung, wie ich das nun wieder regeln soll.");
  		B_LogEntry (TOPIC_TraitorPedro, "Das Auge Innos habe ich gefunden. Aber von Pedro war bisher noch keine Spur zu sehen. Diese schwarzen Magier stecken mit ihm unter einer Decke.");
 		B_GivePlayerXP (XP_SCKnowsInnosEyeIsBroken);
 	}
@@ -27,11 +27,11 @@ func void B_AssignDementorTalk_Ritual ()
 		
 	 	if (randy == 0)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //Jetzt wirst du unsere Macht spüren.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //Jetzt wirst du unsere Macht spÃ¼ren.
 		};
 		if (randy == 1)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Für den Meister.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //FÃ¼r den Meister.
 		};
 		if (randy == 2)
 		{
@@ -39,7 +39,7 @@ func void B_AssignDementorTalk_Ritual ()
 		};
 		if (randy == 3)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_06"); //Wir werden dich töten.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_06"); //Wir werden dich tÃ¶ten.
 		};
 	};
 	Npc_SetRefuseTalk (self,30);

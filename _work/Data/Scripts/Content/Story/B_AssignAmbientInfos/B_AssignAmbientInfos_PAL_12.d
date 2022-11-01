@@ -43,9 +43,9 @@ FUNC INT DIA_PAL_12_JOIN_Condition()
 FUNC VOID DIA_PAL_12_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_12_JOIN_15_00"); //Ich will ein Paladin werden!
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_01"); //Du? Dass ich nicht lache! Du gehörst ja noch nicht einmal der Stadtwache an.
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_02"); //Wenn ich nicht sehen würde, was für ein dummer Bursche du bist, würde ich annehmen, dass du mich beleidigen willst.
-	AI_Output (self, other, "DIA_PAL_12_JOIN_12_03"); //Als Paladine werden nur die Besten der Besten unter den Getreuen des Königs und unseres Herrn Innos aufgenommen.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_01"); //Du? Dass ich nicht lache! Du gehÃ¶rst ja noch nicht einmal der Stadtwache an.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_02"); //Wenn ich nicht sehen wÃ¼rde, was fÃ¼r ein dummer Bursche du bist, wÃ¼rde ich annehmen, dass du mich beleidigen willst.
+	AI_Output (self, other, "DIA_PAL_12_JOIN_12_03"); //Als Paladine werden nur die Besten der Besten unter den Getreuen des KÃ¶nigs und unseres Herrn Innos aufgenommen.
 };
 
 // *************************************************************************
@@ -71,8 +71,8 @@ FUNC INT DIA_PAL_12_PEOPLE_Condition()
 FUNC VOID DIA_PAL_12_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_12_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //Das ist der ehrenwerte Lord Hagen. Aber für alle Belange des einfachen Volkes ist Lord Andre zuständig.
-	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Du findest ihn in der Kaserne. Vielleicht hast du Glück und er widmet dir ein paar Minuten seiner kostbaren Zeit.
+	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //Das ist der ehrenwerte Lord Hagen. Aber fÃ¼r alle Belange des einfachen Volkes ist Lord Andre zustÃ¤ndig.
+	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Du findest ihn in der Kaserne. Vielleicht hast du GlÃ¼ck und er widmet dir ein paar Minuten seiner kostbaren Zeit.
 };
 
 // *************************************************************************
@@ -99,7 +99,7 @@ FUNC VOID DIA_PAL_12_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_12_LOCATION_15_00"); //Was macht ihr Paladine hier in Khorinis?
 	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_01"); //Wer solche Fragen stellt, endet ziemlich schnell am Galgen.
-	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Wenn Lord Hagen sich EINE Sache nicht leisten kann, dann ist dies, das Wissen über unsere Mission in die Hände von Spionen fallen zu lassen.
+	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Wenn Lord Hagen sich EINE Sache nicht leisten kann, dann ist dies, das Wissen Ã¼ber unsere Mission in die HÃ¤nde von Spionen fallen zu lassen.
 	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_03"); //Also pass besser auf, wonach du fragst.
 };
 
@@ -141,7 +141,7 @@ FUNC VOID DIA_PAL_12_STANDARD_Info()
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Innos sei Dank! Die Bedrohung der Drachen ist abgewendet. Jetzt müssen wir uns nur noch um die Orks kümmern, um an das Erz zu kommen.
+			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Innos sei Dank! Die Bedrohung der Drachen ist abgewendet. Jetzt mÃ¼ssen wir uns nur noch um die Orks kÃ¼mmern, um an das Erz zu kommen.
 		};
 	}
 	else //KEIN Paladin

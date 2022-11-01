@@ -40,7 +40,7 @@ FUNC VOID DIA_Addon_10028_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//Ich mache mir nicht die Mühe und hacke selber. Wir haben genug Sklaven, die das für uns erledigen.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//Ich mache mir nicht die MÃ¼he und hacke selber. Wir haben genug Sklaven, die das fÃ¼r uns erledigen.
 		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(lacht) So leicht sind wir noch nie an unser Gold gekommen.
 	}
 	else

@@ -1,7 +1,7 @@
 // ********************************************
 // ZS_MM_Hunt
 // ----------
-// geht davon aus, daß Jäger Beute gefunden hat
+// geht davon aus, daÃŸ JÃ¤ger Beute gefunden hat
 // ********************************************
 
 func void ZS_MM_Hunt ()

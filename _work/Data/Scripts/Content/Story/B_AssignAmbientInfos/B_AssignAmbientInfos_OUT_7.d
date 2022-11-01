@@ -47,11 +47,11 @@ FUNC VOID DIA_OUT_7_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Hier drauﬂen ist es in letzte Zeit immer gef‰hrlicher geworden. Und die Feldr‰uber werden zu einer echten Plage.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Hier drau√üen ist es in letzte Zeit immer gef√§hrlicher geworden. Und die Feldr√§uber werden zu einer echten Plage.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Wir m¸ssen unseren Teil an die Stadt abgeben. Tun wir's nicht, bekommen wir am Ende noch ƒrger mit den Paladinen.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Wir m√ºssen unseren Teil an die Stadt abgeben. Tun wir's nicht, bekommen wir am Ende noch √Ñrger mit den Paladinen.
 	};
 	if (randy == 2)
 	{

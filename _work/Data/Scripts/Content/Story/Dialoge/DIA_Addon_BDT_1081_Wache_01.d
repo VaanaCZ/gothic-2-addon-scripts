@@ -72,7 +72,7 @@ FUNC INT DIA_Addon_Wache_01_Hi_Condition()
 FUNC VOID DIA_Addon_Wache_01_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Wache_01_Hi_15_00");//Alles klar?
-	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//Pack Esteban an und ich hau dich in Stücke.
+	AI_Output (self, other, "DIA_Addon_Wache_01_Hi_04_01");//Pack Esteban an und ich hau dich in StÃ¼cke.
 	
 	AI_StopProcessInfos (self);
 };

@@ -71,11 +71,11 @@ FUNC INT DIA_Addon_Sancho_HI_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_HI_Info()
 {	
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //Scheiﬂe, noch ein Neuer. (lacht) Auch wegen des Goldes hier, was?
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_00"); //Schei√üe, noch ein Neuer. (lacht) Auch wegen des Goldes hier, was?
 	AI_Output (other,self,"DIA_Addon_Sancho_HI_15_01"); //Gold?
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //(lachend) Jetzt hˆr auf mich zu verarschen!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_02"); //(lachend) Jetzt h√∂r auf mich zu verarschen!
 	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_03"); //Alle Neuen, die herkommen, wollen in die Mine.
-	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Aber stell dir das bloﬂ nicht so einfach vor!
+	AI_Output (self,other,"DIA_Addon_Sancho_HI_06_04"); //Aber stell dir das blo√ü nicht so einfach vor!
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -111,12 +111,12 @@ FUNC VOID DIA_Addon_Sancho_Lager_Info()
 	if (!Npc_IsDead(Franco))
 	{
 		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_02"); //Aber wenn du in die Mine willst, musst du an Franco vorbei.
-		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //Er erwartet von allen Neuen, dass sie sich erstmal 'ne Weile hier drauﬂen abrackern!
+		AI_Output (self,other,"DIA_Addon_Sancho_Lager_06_03"); //Er erwartet von allen Neuen, dass sie sich erstmal 'ne Weile hier drau√üen abrackern!
 	};
 	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Alle Neuen m¸ﬂen erst im Sumpf arbeiten, bevor sie Zugang zur Mine bekommen.");
+	B_LogEntry (Topic_Addon_Franco,"Alle Neuen m√º√üen erst im Sumpf arbeiten, bevor sie Zugang zur Mine bekommen.");
 };
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Sancho_Mine   (C_INFO)
 	condition   = DIA_Addon_Sancho_Mine_Condition;
 	information = DIA_Addon_Sancho_Mine_Info;
 	permanent   = FALSE;
-	description = "Erz‰hl mir mehr ¸ber die Mine...";
+	description = "Erz√§hl mir mehr √ºber die Mine...";
 };
 FUNC INT DIA_Addon_Sancho_Mine_Condition()
 {	
@@ -140,10 +140,10 @@ FUNC INT DIA_Addon_Sancho_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Mine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Erz‰hl mir mehr ¸ber die Mine ...
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Ich geb dir 'nen guten Rat: Wenn du rein willst, stell dich gut mit Franco. Er ist hier drauﬂen der Boss.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //Er entscheidet, wer als N‰chster rein darf.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Aber er wird dich nur reinlassen, wenn du hier drauﬂen nicht die Eier schaukelst.
+	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Erz√§hl mir mehr √ºber die Mine ...
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Ich geb dir 'nen guten Rat: Wenn du rein willst, stell dich gut mit Franco. Er ist hier drau√üen der Boss.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //Er entscheidet, wer als N√§chster rein darf.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Aber er wird dich nur reinlassen, wenn du hier drau√üen nicht die Eier schaukelst.
 	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Also geh zu ihm, und lass dir 'ne Aufgabe geben!
 	
 	B_LogEntry (Topic_Addon_Franco,"FRANCO entscheidet wer in's Lager kommt. Er verteilt auch die Aufgaben.");
@@ -172,10 +172,10 @@ FUNC INT DIA_Addon_Sancho_Franco_Condition()
 FUNC VOID DIA_Addon_Sancho_Franco_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Sancho_Franco_15_00"); //Wo finde ich diesen Franco?
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //Er h‰ngt meistens auf dem Vorplatz zum Lager rum.
-	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //Stell dich bloﬂ gut mit ihm, sonst bekommst du am Ende noch so'n Scheiﬂjob wie ich!
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_01"); //Er h√§ngt meistens auf dem Vorplatz zum Lager rum.
+	AI_Output (self,other,"DIA_Addon_Sancho_Franco_06_02"); //Stell dich blo√ü gut mit ihm, sonst bekommst du am Ende noch so'n Schei√üjob wie ich!
 	
-	B_LogEntry (Topic_Addon_Franco,"Franco h‰lt sich am Vorplatz zum Lager auf.");
+	B_LogEntry (Topic_Addon_Franco,"Franco h√§lt sich am Vorplatz zum Lager auf.");
 };
 
 //---------------------------------------------------------------------
@@ -188,7 +188,7 @@ INSTANCE DIA_Addon_Sancho_Spitzel (C_INFO)
 	condition   = DIA_Addon_Sancho_Spitzel_Condition;
 	information = DIA_Addon_Sancho_Spitzel_Info;
 	permanent   = FALSE;
-	description = "Muﬂt du hier die ganze Zeit rumh‰ngen?";
+	description = "Mu√üt du hier die ganze Zeit rumh√§ngen?";
 };
 FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 {	
@@ -200,10 +200,10 @@ FUNC INT DIA_Addon_Sancho_Spitzel_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Spitzel_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//Musst du hier die ganze Zeit rumh‰ngen?
+	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//Musst du hier die ganze Zeit rumh√§ngen?
 	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//Ich soll alle Neuen untersuchen, damit sich bei uns kein Spitzel einschleicht.
 	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Aber das kannst du vergessen. Ich meine, wir sind hier am Ende der Welt - mitten im Sumpf.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Niemand kann uns finden, niemand wird uns finden - und warum sollte sich jemand die M¸he machen, einen Spitzel zu uns schicken.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Niemand kann uns finden, niemand wird uns finden - und warum sollte sich jemand die M√ºhe machen, einen Spitzel zu uns schicken.
 };
 
 //---------------------------------------------------------------------
@@ -234,15 +234,15 @@ FUNC VOID DIA_Addon_Sancho_Perm_Info()
 	if Npc_IsDead (Franco)
 	&& (Comment_Franco == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//Ich hab gehˆrt, du hast Franco umgelegt. Saubere Arbeit ...
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_01");//Ich hab geh√∂rt, du hast Franco umgelegt. Saubere Arbeit ...
 		
 		if !Npc_IsDead (Carlos)
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//... aber jetzt haben wir diesen Carlos am Hals. Mit dem ist auch nicht zu spaﬂen ...
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_02");//... aber jetzt haben wir diesen Carlos am Hals. Mit dem ist auch nicht zu spa√üen ...
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Und Carlos hast du auch umgebracht? Alter, du bist ein ganz ¸bler Mˆrder, was? Lass mich bloﬂ in Ruhe.
+			AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_03");//Und Carlos hast du auch umgebracht? Alter, du bist ein ganz √ºbler M√∂rder, was? Lass mich blo√ü in Ruhe.
 		};
 		
 		Comment_Franco = TRUE;
@@ -250,7 +250,7 @@ FUNC VOID DIA_Addon_Sancho_Perm_Info()
 	else if Npc_IsDead (Esteban)
 	&& (Comment_Esteban == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//Ich hab gehˆrt, du hast Esteban umgelegt. Hey Mann, du hast es vor, was?
+		AI_Output (self,other,"DIA_Addon_Sancho_Perm_06_04");//Ich hab geh√∂rt, du hast Esteban umgelegt. Hey Mann, du hast es vor, was?
 		
 		Comment_Esteban = TRUE;
 	}

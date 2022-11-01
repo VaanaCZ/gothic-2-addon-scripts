@@ -43,7 +43,7 @@ func void DIA_Parlaf_HALLO_Info ()
 	AI_Output (self, other, "DIA_Parlaf_HALLO_03_01"); //Was glaubst du, wie es mir geht? Ich stehe den ganzen Tag am Schleifstein und bearbeite Klingen.
 	if ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //Und gestern hat Engor wieder unsere Rationen gekürzt. Wenn das so weitergeht, verhungern wir noch alle.
+		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //Und gestern hat Engor wieder unsere Rationen gekÃ¼rzt. Wenn das so weitergeht, verhungern wir noch alle.
 		AI_Output (self, other, "DIA_Parlaf_HALLO_03_03"); //Oder wir werden von den Orks umgebracht. Keine angenehmen Aussichten.
 	};
 };
@@ -70,13 +70,13 @@ func int DIA_Parlaf_ENGOR_Condition ()
 func void DIA_Parlaf_ENGOR_Info ()
 {
 	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_00"); //Wer ist Engor?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Engor verwaltet die Vorräte und teilt die Rationen ein. Und das wird wöchentlich weniger.
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //Er lässt zwar mit sich handeln, aber nur gegen bare Münze.
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Engor verwaltet die VorrÃ¤te und teilt die Rationen ein. Und das wird wÃ¶chentlich weniger.
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //Er lÃ¤sst zwar mit sich handeln, aber nur gegen bare MÃ¼nze.
 	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_03"); //Und das kannst du dir nicht leisten?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //Für den geringen Sold, den wir kassieren, kriege ich höchstens ein paar Rüben!
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //FÃ¼r den geringen Sold, den wir kassieren, kriege ich hÃ¶chstens ein paar RÃ¼ben!
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
-	Log_AddEntry(TOPIC_Trader_OC, "Engor verwaltet die Vorräte der Burg und macht nebenher Geschäfte.");     
+	Log_AddEntry(TOPIC_Trader_OC, "Engor verwaltet die VorrÃ¤te der Burg und macht nebenher GeschÃ¤fte.");     
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wo Engor
@@ -160,7 +160,7 @@ func void DIA_Parlaf_SATT_Info ()
 	if (DIA_Parlaf_SATT_OneTime == FALSE)
 	&& ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_SATT_03_01"); //Engor hat neue Rationen Fleisch verteilt. Mann, das war bitter nötig.
+		AI_Output (self, other, "DIA_Parlaf_SATT_03_01"); //Engor hat neue Rationen Fleisch verteilt. Mann, das war bitter nÃ¶tig.
 		DIA_Parlaf_SATT_OneTime = TRUE;
 	}
 	else

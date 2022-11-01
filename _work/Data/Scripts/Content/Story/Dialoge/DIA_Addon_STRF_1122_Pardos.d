@@ -40,8 +40,8 @@ FUNC INT DIA_Addon_Pardos_Hi_Condition()
 FUNC VOID DIA_Addon_Pardos_Hi_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//Wie geht's dir?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(müde) Ich bin fertig ... völlig fertig. Ist es ein strahlender Sonnentag oder eine dieser klaren Nächte, in der tausend Sterne funkeln?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(müder) Ich weiß es nicht ... wo ist der leichte Sommerregen, wo die Kühle des Abendwindes ... ich spüre sie nicht mehr ...
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(mÃ¼de) Ich bin fertig ... vÃ¶llig fertig. Ist es ein strahlender Sonnentag oder eine dieser klaren NÃ¤chte, in der tausend Sterne funkeln?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(mÃ¼der) Ich weiÃŸ es nicht ... wo ist der leichte Sommerregen, wo die KÃ¼hle des Abendwindes ... ich spÃ¼re sie nicht mehr ...
 	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(resigniert) Hier drin sterben die Augen zuerst ...
 };
 //---------------------------------------------------------------------
@@ -67,7 +67,7 @@ FUNC INT DIA_Addon_Pardos_save_Condition()
 FUNC VOID DIA_Addon_Pardos_save_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pardos_save_15_00");//Halte durch. Die Rettung naht.
-	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(müde) Danke. Danke für deine Worte.
+	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(mÃ¼de) Danke. Danke fÃ¼r deine Worte.
 	//Falsche Stimm Nummer M.F.//AI_Output (self, other, "DIA_Addon_Pardos_save_03_02");//Hey, du wirst doch jetzt nicht schlappmachen, oder? Gib jetzt nicht auf - klar?!
 };
 //---------------------------------------------------------------------
@@ -176,7 +176,7 @@ FUNC VOID DIA_Addon_Pardos_trank_Soup()
 	{
 		B_UseItem 	(self,ItFo_Addon_Meatsoup);
 	};	
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//Danke, das hat meine Kräfte gestärkt.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//Danke, das hat meine KrÃ¤fte gestÃ¤rkt.
 	B_GivePlayerXP (XP_Ambient *3);
 };
 //---------------------------------------------------------------------
@@ -201,7 +201,7 @@ FUNC INT DIA_Addon_Pardos_perm_Condition()
 FUNC VOID DIA_Addon_Pardos_perm_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pardos_perm_15_00");//Wie geht's dir?
-	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//Dank dir geht es mir besser. Ich fühle wie meine Kräfte zurückkehren.
+	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//Dank dir geht es mir besser. Ich fÃ¼hle wie meine KrÃ¤fte zurÃ¼ckkehren.
 };
 
 

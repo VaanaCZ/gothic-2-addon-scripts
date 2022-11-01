@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Giant_Bug(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Feldr‰uber";
+	name							=	"Feldr√§uber";
 	guild							=	GIL_GIANT_BUG;
 	aivar[AIV_MM_REAL_ID]			= 	ID_GIANT_BUG;
 	level							=	8;
@@ -76,13 +76,13 @@ INSTANCE Giant_Bug	(Mst_Default_Giant_Bug)
 
 
 //**************************************
-//	junge Giant_Bug   (f¸r Spielstart) 	
+//	junge Giant_Bug   (f√ºr Spielstart) 	
 //**************************************
 
 INSTANCE YGiant_Bug	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"Junger Feldr‰uber";
+	name							=	"Junger Feldr√§uber";
 	level							=	2;
 	
 	//----- Attribute ----
@@ -112,7 +112,7 @@ INSTANCE YGiant_Bug	(Mst_Default_Giant_Bug)
 INSTANCE YGiant_Bug_VinoRitual1	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"Junger Feldr‰uber";
+	name							=	"Junger Feldr√§uber";
 	level							=	4;
 	
 	//----- Attribute ----
@@ -141,7 +141,7 @@ INSTANCE YGiant_Bug_VinoRitual1	(Mst_Default_Giant_Bug)
 INSTANCE YGiant_Bug_VinoRitual2	(Mst_Default_Giant_Bug)
 {
 	//----- Monster ----
-	name							=	"Junger Feldr‰uber";
+	name							=	"Junger Feldr√§uber";
 	level							=	4;
 	
 	//----- Attribute ----
@@ -168,7 +168,7 @@ INSTANCE YGiant_Bug_VinoRitual2	(Mst_Default_Giant_Bug)
 };
 
 //**************************************
-//	Lobarts_Giant_Bug s   (f¸r Miliz Aufnahmemission) 	
+//	Lobarts_Giant_Bug s   (f√ºr Miliz Aufnahmemission) 	
 //**************************************
 
 INSTANCE Lobarts_Giant_Bug1	(Mst_Default_Giant_Bug)	

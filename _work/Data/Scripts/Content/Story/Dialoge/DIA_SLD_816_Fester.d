@@ -72,15 +72,15 @@ FUNC INT DIA_Fester_Auftrag_Condition()
 FUNC VOID DIA_Fester_Auftrag_Info()
 {	
 	AI_Output (other, self, "DIA_Fester_Auftrag_15_00"); //Wieso?
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_01"); //In letzter Zeit haben die Bauern immer mehr Probleme mit den Feldräubern.
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_01"); //In letzter Zeit haben die Bauern immer mehr Probleme mit den FeldrÃ¤ubern.
 	AI_Output (self, other, "DIA_Fester_Auftrag_08_02"); //Ein paar von ihnen haben sich sogar fressen lassen.
 	AI_Output (self, other, "DIA_Fester_Auftrag_08_03"); //Das fand der dicke Onar nicht gerade lustig. Wir haben alle eine Woche lang keinen Sold bekommen.
 	AI_Output (self, other, "DIA_Fester_Auftrag_08_04"); //Und es war mehr oder weniger meine Schuld. Jetzt will Lee, dass ich das Nest der Viecher alleine platt mache.
-	AI_Output (self, other, "DIA_Fester_Auftrag_08_05"); //Und die anderen Jungs haben schon Wetten abgeschlossen, ob ich's überlebe ...
+	AI_Output (self, other, "DIA_Fester_Auftrag_08_05"); //Und die anderen Jungs haben schon Wetten abgeschlossen, ob ich's Ã¼berlebe ...
 };
 
 // ************************************************************
-// 			  				Du Kämpfer? 
+// 			  				Du KÃ¤mpfer? 
 // ************************************************************
 
 instance DIA_Fester_YouFight (C_INFO)
@@ -90,7 +90,7 @@ instance DIA_Fester_YouFight (C_INFO)
 	condition	= DIA_Fester_YouFight_Condition;
 	information	= DIA_Fester_YouFight_Info;
 	permanent	= FALSE;
-	description = "Verstehst du was vom Kämpfen?";
+	description = "Verstehst du was vom KÃ¤mpfen?";
 };                       
 
 FUNC INT DIA_Fester_YouFight_Condition()
@@ -105,7 +105,7 @@ FUNC INT DIA_Fester_YouFight_Condition()
  
 FUNC VOID DIA_Fester_YouFight_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_YouFight_15_00"); //Verstehst du was vom Kämpfen?
+	AI_Output (other, self, "DIA_Fester_YouFight_15_00"); //Verstehst du was vom KÃ¤mpfen?
 	AI_Output (self, other, "DIA_Fester_YouFight_08_01"); //Mit dem Schwert bin ich ganz okay, aber mit dem Bogen bin ich richtig gut! Warum fragst du?
 };
 
@@ -136,12 +136,12 @@ FUNC INT DIA_Fester_WoNest_Condition()
 FUNC VOID DIA_Fester_WoNest_Info()
 {	
 	AI_Output (other, self, "DIA_Fester_WoNest_15_00"); //Wo ist das Nest?
-	AI_Output (self, other, "DIA_Fester_WoNest_08_01"); //Mitten auf dem Feld hier, in dem großen Felsen.
+	AI_Output (self, other, "DIA_Fester_WoNest_08_01"); //Mitten auf dem Feld hier, in dem groÃŸen Felsen.
 };
 
 
 // ************************************************************
-// 			  				Du Kämpfer? 
+// 			  				Du KÃ¤mpfer? 
 // ************************************************************
 
 var int Fester_Choice;
@@ -155,7 +155,7 @@ instance DIA_Fester_Together (C_INFO)
 	condition	= DIA_Fester_Together_Condition;
 	information	= DIA_Fester_Together_Info;
 	permanent	= FALSE;
-	description = "Wir könnten das Nest gemeinsam angreifen ...";
+	description = "Wir kÃ¶nnten das Nest gemeinsam angreifen ...";
 };                       
 
 FUNC INT DIA_Fester_Together_Condition()
@@ -169,7 +169,7 @@ FUNC INT DIA_Fester_Together_Condition()
  
 FUNC VOID DIA_Fester_Together_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_Together_15_00"); //Wir könnten das Nest gemeinsam angreifen ...
+	AI_Output (other, self, "DIA_Fester_Together_15_00"); //Wir kÃ¶nnten das Nest gemeinsam angreifen ...
 	AI_Output (self, other, "DIA_Fester_Together_08_01"); //Du willst mir helfen? Warum?
 	
 	Info_ClearChoices (DIA_Fester_Together);
@@ -195,13 +195,13 @@ func void DIA_Fester_Together_Gold()
 	AI_Output (other, self, "DIA_Fester_Together_Gold_15_00"); //Ich will Gold sehen!
 	AI_Output (self, other, "DIA_Fester_Together_Gold_08_01"); //(lacht) Du Drecksack! Du willst meine Lage ausnutzen, was?
 	AI_Output (self, other, "DIA_Fester_Together_Gold_08_02"); //Entweder ich bezahle dich, oder ich geh wahrscheinlich bei der Sache drauf.
-	AI_Output (self, other, "DIA_Fester_Together_Gold_08_03"); //Na gut. Ich kann dir 50 Goldstücke zahlen - mehr hab ich nicht.
+	AI_Output (self, other, "DIA_Fester_Together_Gold_08_03"); //Na gut. Ich kann dir 50 GoldstÃ¼cke zahlen - mehr hab ich nicht.
 	Fester_Choice = FC_Gold;
 	Info_ClearChoices (DIA_Fester_Together);
 };
 
 // ************************************************************
-// 			  				Du Kämpfer? 
+// 			  				Du KÃ¤mpfer? 
 // ************************************************************
 var int Fester_Losgeh_Day;
 // -----------------------
@@ -236,18 +236,18 @@ FUNC VOID DIA_Fester_TogetherNOW_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_02"); //Jetzt gleich? Oder musst du dich vorher noch ausrüsten?
-		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_03"); //Du könntest noch mal zum Hof gehen ...
+		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_02"); //Jetzt gleich? Oder musst du dich vorher noch ausrÃ¼sten?
+		AI_Output (self, other, "DIA_Fester_TogetherNOW_08_03"); //Du kÃ¶nntest noch mal zum Hof gehen ...
 		
 		Info_ClearChoices (DIA_Fester_TogetherNOW);
 		Info_AddChoice (DIA_Fester_TogetherNOW, "Gut, warten wir noch etwas...", DIA_Fester_TogetherNOW_Later);
-		Info_AddChoice (DIA_Fester_TogetherNOW, "Jetzt ist genausogut wie später.", DIA_Fester_TogetherNOW_NOW);
+		Info_AddChoice (DIA_Fester_TogetherNOW, "Jetzt ist genausogut wie spÃ¤ter.", DIA_Fester_TogetherNOW_NOW);
 	};
 };
 
 func void DIA_Fester_TogetherNOW_Now()
 {
-	AI_Output (other, self, "DIA_Fester_TogetherNOW_Now_15_00"); //Jetzt ist genau so gut wie später.
+	AI_Output (other, self, "DIA_Fester_TogetherNOW_Now_15_00"); //Jetzt ist genau so gut wie spÃ¤ter.
 	AI_Output (self, other, "DIA_Fester_TogetherNOW_Now_08_01"); //Gut, dann lass mal sehen, was du drauf hast.
 	
 	Npc_ExchangeRoutine (self, "GUIDE");
@@ -258,7 +258,7 @@ func void DIA_Fester_TogetherNOW_Now()
 	
 	Log_CreateTopic (TOPIC_FesterRauber,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_FesterRauber,LOG_RUNNING);
-	B_LogEntry (TOPIC_FesterRauber,"Ich werde zusammen mit Fester das Nest der Feldräuber angreifen.");
+	B_LogEntry (TOPIC_FesterRauber,"Ich werde zusammen mit Fester das Nest der FeldrÃ¤uber angreifen.");
 	
 	Info_ClearChoices (DIA_Fester_TogetherNOW);
 	AI_StopProcessInfos (self); 
@@ -268,7 +268,7 @@ func void DIA_Fester_TogetherNOW_Later()
 {
 		
 	AI_Output (other, self, "DIA_Fester_TogetherNOW_Later_15_00"); //Gut, warten wir noch etwas ...
-	AI_Output (self, other, "DIA_Fester_TogetherNOW_Later_08_01"); //Du weißt ja, wo du mich findest ...
+	AI_Output (self, other, "DIA_Fester_TogetherNOW_Later_08_01"); //Du weiÃŸt ja, wo du mich findest ...
 	Info_ClearChoices (DIA_Fester_TogetherNOW);
 };
 		
@@ -310,8 +310,8 @@ FUNC VOID DIA_Fester_InCave_Info()
 		AI_Output (self, other, "DIA_Fester_InCave_08_01"); //Hier haben sie also die toten Bauern hingeschleppt. Widerlich.
 	};
 
-	AI_Output (self, other, "DIA_Fester_InCave_08_02"); //Die Drecksviecher dürften wohl alle platt sein.
-	AI_Output (self, other, "DIA_Fester_InCave_08_03"); //Lass uns wieder zurückgehen!
+	AI_Output (self, other, "DIA_Fester_InCave_08_02"); //Die Drecksviecher dÃ¼rften wohl alle platt sein.
+	AI_Output (self, other, "DIA_Fester_InCave_08_03"); //Lass uns wieder zurÃ¼ckgehen!
 	
 	Npc_ExchangeRoutine (self, "START");
 	
@@ -346,13 +346,13 @@ FUNC VOID DIA_Fester_WasMitAbmachung_Info()
 	AI_Output (other, self, "DIA_Fester_WasMitAbmachung_15_00"); //Was ist mit unserer Abmachung?
 	if (Festers_Giant_Bug_Killed == 0)
 	{
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_01"); //Willst du mich verarschen? Du hast nichts dafür getan.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_01"); //Willst du mich verarschen? Du hast nichts dafÃ¼r getan.
 	}
 	else if (Fester_Choice == FC_Join)
 	{
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_02"); //Tja, ich könnte dir schon helfen, bei uns aufgenommen zu werden, aber ich werde es nicht tun.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_02"); //Tja, ich kÃ¶nnte dir schon helfen, bei uns aufgenommen zu werden, aber ich werde es nicht tun.
 		AI_Output (other, self, "DIA_Fester_WasMitAbmachung_15_03"); //Und warum nicht?
-		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_04"); //Wenn ich allen erzähle, dass du mir geholfen hast, brummen sie mir 'ne neue Aufgabe auf.
+		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_04"); //Wenn ich allen erzÃ¤hle, dass du mir geholfen hast, brummen sie mir 'ne neue Aufgabe auf.
 		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_05"); //Du verstehst doch, dass ich darauf keine Lust habe, oder?
 		AI_Output (self, other, "DIA_Fester_WasMitAbmachung_08_06"); //Tja, Pech gehabt, Junge. Du findest bestimmt einen anderen, der dir hilft.
 	}
@@ -388,7 +388,7 @@ instance DIA_Fester_PERMPruegel (C_INFO)
 	condition	= DIA_Fester_PERMPruegel_Condition;
 	information	= DIA_Fester_PERMPruegel_Info;
 	permanent	= TRUE;
-	description	= "Ich denke, du bist mal wieder reif für eine Tracht Prügel.";
+	description	= "Ich denke, du bist mal wieder reif fÃ¼r eine Tracht PrÃ¼gel.";
 };                       
 
 FUNC INT DIA_Fester_PERMPruegel_Condition()
@@ -403,7 +403,7 @@ FUNC INT DIA_Fester_PERMPruegel_Condition()
  
 FUNC VOID DIA_Fester_PERMPruegel_Info()
 {	
-	AI_Output (other, self, "DIA_Fester_PERMPruegel_15_00"); //Ich denke, du bist mal wieder reif für eine Tracht Prügel.
+	AI_Output (other, self, "DIA_Fester_PERMPruegel_15_00"); //Ich denke, du bist mal wieder reif fÃ¼r eine Tracht PrÃ¼gel.
 	
 	if (Fester_Duell_Day < Wld_GetDay())
 	{
@@ -419,7 +419,7 @@ FUNC VOID DIA_Fester_PERMPruegel_Info()
 	&& (Fester_FightVerarscht == FALSE)
 	{
 		AI_Output (other, self, "DIA_Fester_PERMPruegel_15_01"); //Ich lasse mich nicht gerne verarschen!
-		AI_Output (self, other, "DIA_Fester_PERMPruegel_08_02"); //Mir kommen die Tränen.
+		AI_Output (self, other, "DIA_Fester_PERMPruegel_08_02"); //Mir kommen die TrÃ¤nen.
 		Fester_FightVerarscht = TRUE;
 	}
 	else if (Npc_KnowsInfo (other, DIA_Jarvis_MissionKO))

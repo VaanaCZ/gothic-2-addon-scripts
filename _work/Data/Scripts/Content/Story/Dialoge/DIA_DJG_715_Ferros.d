@@ -44,8 +44,8 @@ FUNC VOID DIA_DJG_715_Ferros_Hello_Info()
 {
 	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //Wo kommst du her?
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //Vom Festland. Meine Leute und ich sind hierher geflohen.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //Die Lage dort wird immer schlimmer, die Orks hinterlassen nur noch niedergebrannte Dörfer.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Der König hat keine Kontrolle mehr über sein Reich.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //Die Lage dort wird immer schlimmer, die Orks hinterlassen nur noch niedergebrannte DÃ¶rfer.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Der KÃ¶nig hat keine Kontrolle mehr Ã¼ber sein Reich.
 
 	if (hero.guild == GIL_PAL)
 	{
@@ -78,7 +78,7 @@ FUNC VOID DIA_DJG_715_Ferros_Friends_Info()
 {
 	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Wo sind deine Leute jetzt?
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //Ich hab mich von ihnen getrennt.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Sie dachten, sie können sich alles nehmen, was sie wollen, auch wenn es ihnen nicht gehört. Ohne mich.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Sie dachten, sie kÃ¶nnen sich alles nehmen, was sie wollen, auch wenn es ihnen nicht gehÃ¶rt. Ohne mich.
 };
 
 //*********************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_DJG_715_Ferros_War   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_War_Condition;
 	information = DIA_DJG_715_Ferros_War_Info;
 	permanent   = FALSE;
-	description = "Weißt du noch mehr über den Krieg?";
+	description = "WeiÃŸt du noch mehr Ã¼ber den Krieg?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_War_Condition()
@@ -104,15 +104,15 @@ FUNC INT DIA_DJG_715_Ferros_War_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_War_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Weißt du noch mehr über den Krieg?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //WeiÃŸt du noch mehr Ã¼ber den Krieg?
 
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //Schon lange nicht mehr bei deinem König gewesen, was?
+		AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_01"); //Schon lange nicht mehr bei deinem KÃ¶nig gewesen, was?
 	};
 	
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Die Orks sind vor der Hauptstadt. Aber ob sie schon gefallen ist, weiß ich nicht.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //Das letzte, was ich gehört habe, ist, dass der König tot sei. Ich glaube aber nicht daran.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Die Orks sind vor der Hauptstadt. Aber ob sie schon gefallen ist, weiÃŸ ich nicht.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //Das letzte, was ich gehÃ¶rt habe, ist, dass der KÃ¶nig tot sei. Ich glaube aber nicht daran.
 };
 
 //*********************************************************************
@@ -136,12 +136,12 @@ FUNC INT DIA_DJG_715_Ferros_OldCamp_Condition()
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Info()
 {
 	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_15_00"); //Was machst du hier in der Burg?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //Ich habe von den Drachen gehört und wollte helfen, sie zu bekämpfen.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_01"); //Ich habe von den Drachen gehÃ¶rt und wollte helfen, sie zu bekÃ¤mpfen.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_02"); //Leider habe ich mein Schwert verloren, als ich durch die Orks geschlichen bin. Jetzt sitze ich hier fest.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_01_03"); //Ohne Schwert komme ich hier nicht wieder weg, und die Schwerter, die ich hier kaufen kann, sind der letzte Schrott.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Viel Glück bei der Suche.",DIA_DJG_715_Ferros_OldCamp_No);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Viel GlÃ¼ck bei der Suche.",DIA_DJG_715_Ferros_OldCamp_No);
 	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Was kriege ich, wenn ich dir ein gutes Schwert besorge?",DIA_DJG_715_Ferros_OldCamp_Price);
 	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Ich werde dein Schwert finden.",DIA_DJG_715_Ferros_OldCamp_Yes);
 	Wld_InsertItem		(ItMW_1H_FerrosSword_Mis , "FP_OW_ITEM_08"); 
@@ -154,8 +154,8 @@ FUNC VOID DIA_DJG_715_Ferros_OldCamp_Info()
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_No_15_00"); //Viel Glück bei der Suche.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_No_01_01"); //Ich frag mich wirklich, warum ich überhaupt hierher gekommen bin.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_No_15_00"); //Viel GlÃ¼ck bei der Suche.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_No_01_01"); //Ich frag mich wirklich, warum ich Ã¼berhaupt hierher gekommen bin.
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
@@ -163,7 +163,7 @@ FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Price ()
 {
 	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Price_15_00"); //Was kriege ich, wenn ich dir ein gutes Schwert besorge?
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Ich kann dir leider nichts geben. Ich hab mein letztes Geld für das Schwert ausgegeben.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Price_01_01"); //Ich kann dir leider nichts geben. Ich hab mein letztes Geld fÃ¼r das Schwert ausgegeben.
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
@@ -171,9 +171,9 @@ FUNC VOID DIA_DJG_715_Ferros_OldCamp_Price ()
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Yes ()
 {
 	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Ich werde dein Schwert finden.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //Das wär' Klasse. Am besten suchst du auf der hohen Klippe im Süden danach.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //Das wÃ¤r' Klasse. Am besten suchst du auf der hohen Klippe im SÃ¼den danach.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Dort, wo die Orkzelte stehen, habe ich es vermutlich verloren.
-	B_LogEntry (TOPIC_FerrosSword,"Auf der hohen Klippe im Süden, wo die Orkzelte stehen, hat Feros sein Schwert angeblich verloren. "); 
+	B_LogEntry (TOPIC_FerrosSword,"Auf der hohen Klippe im SÃ¼den, wo die Orkzelte stehen, hat Feros sein Schwert angeblich verloren. "); 
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 };
@@ -188,7 +188,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosAnySword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosAnySword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosAnySword_Info;
 	permanent   = FALSE;
-	description = "Vielleicht hab ich ein anderes Schwert für dich.";
+	description = "Vielleicht hab ich ein anderes Schwert fÃ¼r dich.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
@@ -203,7 +203,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Vielleicht hab ich ein anderes Schwert für dich.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Vielleicht hab ich ein anderes Schwert fÃ¼r dich.
 
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
@@ -260,7 +260,7 @@ FUNC VOID B_Ferros_FerrosAnySword_Yes2 ()
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //Als Dank werde ich dir zeigen, wie du mit ein paar Tricks deine Kraft und dein Geschick im Kampf besser nutzen kannst.
 
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Ferros kann mir beibringen wie ich meine Stärke und Geschicklichkeit steigern kann.");
+	B_LogEntry		(TOPIC_Teacher, "Ferros kann mir beibringen wie ich meine StÃ¤rke und Geschicklichkeit steigern kann.");
 
 };
 
@@ -348,7 +348,7 @@ INSTANCE DIA_Ferros_Teach(C_INFO)
 	condition	= DIA_Ferros_Teach_Condition;
 	information	= DIA_Ferros_Teach_Info;
 	permanent	= TRUE;
-	description = "Zeig mir, wie ich meine Fähigkeiten verbessere.";
+	description = "Zeig mir, wie ich meine FÃ¤higkeiten verbessere.";
 };                       
 
 FUNC INT DIA_Ferros_Teach_Condition()
@@ -361,7 +361,7 @@ FUNC INT DIA_Ferros_Teach_Condition()
  
 FUNC VOID DIA_Ferros_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Zeig mir, wie ich meine Fähigkeiten verbessere.
+	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Zeig mir, wie ich meine FÃ¤higkeiten verbessere.
 
 	if (MIS_OCGateOpen == TRUE)
 	{
@@ -369,7 +369,7 @@ FUNC VOID DIA_Ferros_Teach_Info()
 	}
 	else
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Ein guter Kämpfer muss lernen, seine Fähigkeiten direkt auf seine Waffe zu übertragen.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Ein guter KÃ¤mpfer muss lernen, seine FÃ¤higkeiten direkt auf seine Waffe zu Ã¼bertragen.
 	
 	Info_ClearChoices (DIA_Ferros_Teach);
 	Info_AddChoice		(DIA_Ferros_Teach, DIALOG_BACK, DIA_Ferros_Teach_Back);
@@ -435,7 +435,7 @@ FUNC INT DIA_Ferros_AllDragonsDead_Condition()
 FUNC VOID DIA_Ferros_AllDragonsDead_Info()
 {
 	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //Alle Drachen sind tot.
-	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Gut gemacht, wenn wir mehr Leute wie dich hätten, dann wäre es wahrscheinlich nie so weit gekommen.
+	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Gut gemacht, wenn wir mehr Leute wie dich hÃ¤tten, dann wÃ¤re es wahrscheinlich nie so weit gekommen.
 };
 
 // ************************************************************

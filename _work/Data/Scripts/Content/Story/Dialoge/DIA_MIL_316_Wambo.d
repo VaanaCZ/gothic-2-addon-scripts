@@ -32,7 +32,7 @@ INSTANCE DIA_Wambo_PICKPOCKET (C_INFO)
 	condition	= DIA_Wambo_PICKPOCKET_Condition;
 	information	= DIA_Wambo_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re gewagt seinen Schl¸ssel zu stehlen)";
+	description = "(Es w√§re gewagt seinen Schl√ºssel zu stehlen)";
 };                       
 
 FUNC INT DIA_Wambo_PICKPOCKET_Condition()
@@ -95,8 +95,8 @@ FUNC INT DIA_Wambo_Job_Condition()
 FUNC VOID DIA_Wambo_Job_Info()
 {	
 	AI_Output (other,self ,"DIA_Wambo_Job_15_00"); //Was machst du hier?
-	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //Ich achte darauf, dass niemand die H‰user betritt.
-	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //Ausdr¸cklicher Befehl von Lord Hagen. Und lass dir bloﬂ nicht einfallen, gegen diesen Befehl zu verstoﬂen!
+	AI_Output (self ,other,"DIA_Wambo_Job_03_01"); //Ich achte darauf, dass niemand die H√§user betritt.
+	AI_Output (self ,other,"DIA_Wambo_Job_03_02"); //Ausdr√ºcklicher Befehl von Lord Hagen. Und lass dir blo√ü nicht einfallen, gegen diesen Befehl zu versto√üen!
 };
 //*************************************************************
 //		Wie ist die Lage?
@@ -151,8 +151,8 @@ FUNC VOID DIA_Wambo_Ramirez_Info()
 	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Ach? Dieser Ramirez ist eine kleine Ratte. Und er ist kein Freund von mir. Egal. Hast du mir was mitgebracht?
 	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Kommt drauf an, was du haben willst.
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(leise) Okay, ich sage dir wie es l‰uft. Du bezahlst 250 Goldst¸cke. Dann werde ich Nachts nicht hier sein.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Falls du trotzdem auff‰llig wirst und ich in der N‰he bin, ist der Deal geplatzt.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(leise) Okay, ich sage dir wie es l√§uft. Du bezahlst 250 Goldst√ºcke. Dann werde ich Nachts nicht hier sein.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Falls du trotzdem auff√§llig wirst und ich in der N√§he bin, ist der Deal geplatzt.
 };
 //*************************************************************
 //	Deal
@@ -184,7 +184,7 @@ FUNC VOID DIA_Wambo_Deal_Info()
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{
 		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Alles klar, dann werde ich ab jetzt Abends verschwinden.
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //Und denk dran - wenn du in meiner N‰he ƒrger machst, kenne ich dich nicht.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //Und denk dran - wenn du in meiner N√§he √Ñrger machst, kenne ich dich nicht.
 		
 		DIA_Wambo_Deal_permanent = TRUE;
 		AI_StopProcessInfos (self);

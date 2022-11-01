@@ -75,10 +75,10 @@ FUNC INT DIA_Addon_Skinner_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Warum weckst du mich, h‰? Ich wette, du weiﬂt es nicht mal ...
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Nein - sag nichts. Jetzt ist es zu sp‰t f¸r Ausreden.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//Jetzt hast du zwei Mˆglichkeiten. Du k‰mpfst gegen mich und meine Betty. Oder du versuchst, wegzulaufen.
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//An deiner Stelle w¸rde ich laufen ...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Warum weckst du mich, h√§? Ich wette, du wei√üt es nicht mal ...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//Nein - sag nichts. Jetzt ist es zu sp√§t f√ºr Ausreden.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//Jetzt hast du zwei M√∂glichkeiten. Du k√§mpfst gegen mich und meine Betty. Oder du versuchst, wegzulaufen.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//An deiner Stelle w√ºrde ich laufen ...
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE,1);
@@ -110,7 +110,7 @@ FUNC VOID DIA_Addon_Skinner_Attentat_Info()
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);
 	
 	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Esteban aus dem Weg schaffen",DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA);
-	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Den Verr‰ter zur Strecke bringen",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
+	Info_AddChoice (DIA_Addon_Skinner_Attentat,"Den Verr√§ter zur Strecke bringen",DIA_Addon_Skinner_ATTENTAT_ADDON_PRO);
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 {
@@ -123,8 +123,8 @@ FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_CONTRA()
 };
 FUNC VOID DIA_Addon_Skinner_ATTENTAT_ADDON_PRO()
 {
-	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//Ich werde den Verr‰ter zur Strecke bringen.
-	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01");//Scheiﬂe.
+	AI_Output (other, self, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_15_00");//Ich werde den Verr√§ter zur Strecke bringen.
+	AI_Output (self, other, "DIA_Addon_Skinner_ATTENTAT_ADDON_PRO_08_01");//Schei√üe.
 	
 	Info_ClearChoices (DIA_Addon_Skinner_Attentat);
 };

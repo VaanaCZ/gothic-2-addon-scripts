@@ -46,7 +46,7 @@ func void DIA_Fed_HALLO_Info ()
 {
 	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Was willst du von mir? Ich werde nirgendwo hingehen!
 	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Bleib ganz ruhig - niemand will, dass du irgendwo hingehst.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Innos sei Dank. Weißt du, in den letzten Tagen haben immer wieder Männer das Lager verlassen - von denen ist keiner wiedergekommen.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Innos sei Dank. WeiÃŸt du, in den letzten Tagen haben immer wieder MÃ¤nner das Lager verlassen - von denen ist keiner wiedergekommen.
 	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Die wurden alle von den Snappern gefressen. Aber ich nicht. Ich werde hier einfach so lange hacken, bis alles vorbei ist.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -59,7 +59,7 @@ instance DIA_Fed_Snapper	(C_INFO)
 	condition	 = 	DIA_Fed_Snapper_Condition;
 	information	 = 	DIA_Fed_Snapper_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Was weißt du über die Snapper?";
+	description	 = 	"Was weiÃŸt du Ã¼ber die Snapper?";
 };
 func int DIA_Fed_Snapper_Condition ()
 {	
@@ -70,9 +70,9 @@ func int DIA_Fed_Snapper_Condition ()
 };
 func void DIA_Fed_Snapper_Info ()
 {
-	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Was weißt du über die Snapper?
-	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot hat sie nachts beobachtet. Ein paar von ihnen stehen unten an dem Tümpel, unten am Fuß des dunklen Turms.
-	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Andere sind genau über uns - auf der Felsklippe. Die warten so lange ab, bis wir völlig erschöpft sind.
+	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Was weiÃŸt du Ã¼ber die Snapper?
+	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot hat sie nachts beobachtet. Ein paar von ihnen stehen unten an dem TÃ¼mpel, unten am FuÃŸ des dunklen Turms.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Andere sind genau Ã¼ber uns - auf der Felsklippe. Die warten so lange ab, bis wir vÃ¶llig erschÃ¶pft sind.
 	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Wir haben uns hier selber in die Enge getrieben. Bald werden sie das Lager angreifen - und werden ihr blutiges Festmahl halten ...
 	AI_Output (other, self, "DIA_Fed_Snapper_15_04"); //Verstehe.
 };
@@ -98,12 +98,12 @@ func void DIA_Fed_Perm_Info ()
 	
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Die Snapper sind da draußen. Kannst du sie riechen ...? Ich rieche sie ...
+		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Die Snapper sind da drauÃŸen. Kannst du sie riechen ...? Ich rieche sie ...
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //Die Snapper haben sich anscheinend zurückgezogen. Aber das heißt nichts. Die kommen wieder - oder es kommen Wölfe, oder Warane, oder die Orks.
-		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Und über kurz oder lang werden sie uns erwischen und unsere toten Körper verspeisen ...
+		AI_Output (self, other, "DIA_Fed_Perm_08_02"); //Die Snapper haben sich anscheinend zurÃ¼ckgezogen. Aber das heiÃŸt nichts. Die kommen wieder - oder es kommen WÃ¶lfe, oder Warane, oder die Orks.
+		AI_Output (self, other, "DIA_Fed_Perm_08_03"); //Und Ã¼ber kurz oder lang werden sie uns erwischen und unsere toten KÃ¶rper verspeisen ...
 	};
 	AI_StopProcessInfos(self);
 	

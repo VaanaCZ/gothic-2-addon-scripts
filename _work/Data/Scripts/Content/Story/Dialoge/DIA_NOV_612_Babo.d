@@ -45,13 +45,13 @@ FUNC VOID DIA_Babo_Hello_Info()
 {
 	
 	
-	AI_Output (self ,other,"DIA_Babo_Hello_03_00"); //(schüchtern) Hallo, du bist auch neu hier oder?
+	AI_Output (self ,other,"DIA_Babo_Hello_03_00"); //(schÃ¼chtern) Hallo, du bist auch neu hier oder?
 	AI_Output (other,self ,"DIA_Babo_Hello_15_01"); //Ja, seit wann bist du denn da?
 	AI_Output (self ,other,"DIA_Babo_Hello_03_02"); //Ich bin seit vier Wochen hier. Hast du schon einen Kampfstab bekommen?
 	AI_Output (other,self ,"DIA_Babo_Hello_15_03"); //Bisher noch nicht.
-	AI_Output (self ,other,"DIA_Babo_Hello_03_04"); //Dann nimm diesen hier. Wir Novizen tragen alle einen Stab, als Zeichen unserer Wehrhaftigkeit. Kannst du kämpfen?
+	AI_Output (self ,other,"DIA_Babo_Hello_03_04"); //Dann nimm diesen hier. Wir Novizen tragen alle einen Stab, als Zeichen unserer Wehrhaftigkeit. Kannst du kÃ¤mpfen?
 	AI_Output (other,self ,"DIA_Babo_Hello_15_05"); //Nun ja, ich hab schon mal eine Waffe geschwungen ...
-	AI_Output (self ,other,"DIA_Babo_Hello_03_06"); //Wenn du willst, kann ich dir was beibringen. Allerdings hätte ich da ein Anliegen ...
+	AI_Output (self ,other,"DIA_Babo_Hello_03_06"); //Wenn du willst, kann ich dir was beibringen. Allerdings hÃ¤tte ich da ein Anliegen ...
 
 	B_GiveInvItems (self,other,ITMW_1h_NOV_Mace,1);
 	AI_EquipBestMeleeWeapon (self);
@@ -67,7 +67,7 @@ INSTANCE DIA_Babo_Anliegen   (C_INFO)
 	condition   = DIA_Babo_Anliegen_Condition;
 	information = DIA_Babo_Anliegen_Info;
 	permanent   = FALSE;
-	description	= "Was hast du für ein Anliegen?";
+	description	= "Was hast du fÃ¼r ein Anliegen?";
 };
 FUNC INT DIA_Babo_Anliegen_Condition()
 {
@@ -79,14 +79,14 @@ FUNC INT DIA_Babo_Anliegen_Condition()
 };
 FUNC VOID DIA_Babo_Anliegen_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Anliegen_15_00"); //Was hast du für ein Anliegen?
+	AI_Output (other,self ,"DIA_Babo_Anliegen_15_00"); //Was hast du fÃ¼r ein Anliegen?
 	AI_Output (self ,other,"DIA_Babo_Anliegen_03_01"); //Nun, einer der Paladine, Sergio, ist zurzeit im Kloster.
-	AI_Output (self ,other,"DIA_Babo_Anliegen_03_02"); //Wenn du ihn überreden kannst, mit mir einige Übungen durchzuführen, dann trainiere ich dich.
-	AI_Output (other,self ,"DIA_Babo_Anliegen_15_03"); //Ich werde mal sehen, was sich machen lässt.
+	AI_Output (self ,other,"DIA_Babo_Anliegen_03_02"); //Wenn du ihn Ã¼berreden kannst, mit mir einige Ãœbungen durchzufÃ¼hren, dann trainiere ich dich.
+	AI_Output (other,self ,"DIA_Babo_Anliegen_15_03"); //Ich werde mal sehen, was sich machen lÃ¤sst.
 	
 	Log_CreateTopic (Topic_BaboTrain,LOG_MISSION);
 	Log_SetTopicStatus (Topic_BaboTrain,LOG_RUNNING);
-	B_LogEntry (Topic_BaboTrain,"Wenn ich den Paladin Sergio überrede, mit Babo ein paar Kampfübungen durchzuführen, trainiert er mich im zweihändigen Kampf.");
+	B_LogEntry (Topic_BaboTrain,"Wenn ich den Paladin Sergio Ã¼berrede, mit Babo ein paar KampfÃ¼bungen durchzufÃ¼hren, trainiert er mich im zweihÃ¤ndigen Kampf.");
 	
 };
 //***********************************************************************
@@ -114,7 +114,7 @@ FUNC INT DIA_Babo_Sergio_Condition()
 FUNC VOID DIA_Babo_Sergio_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_Sergio_15_00"); //Ich habe mit Sergio gesprochen. Er wird jeden Morgen ab 5 Uhr mit dir zwei Stunden lang trainieren.
-	AI_Output (self ,other,"DIA_Babo_Sergio_03_01"); //Danke! Was für eine Ehre für mich!
+	AI_Output (self ,other,"DIA_Babo_Sergio_03_01"); //Danke! Was fÃ¼r eine Ehre fÃ¼r mich!
 	AI_Output (self ,other,"DIA_Babo_Sergio_03_02"); //Wenn du willst, zeige ich dir auch die Geheimnisse des Kampfes.
 	
 	Babo_TeachPlayer = TRUE;	
@@ -122,7 +122,7 @@ FUNC VOID DIA_Babo_Sergio_Info()
 	B_GivePlayerXP ((XP_Ambient)*2);
 	
 	Log_CreateTopic (Topic_KlosterTeacher,LOG_NOTE);
-	B_LogEntry (Topic_KlosterTeacher,"Babo kann mich im zweihändigen Kampf trainieren.");
+	B_LogEntry (Topic_KlosterTeacher,"Babo kann mich im zweihÃ¤ndigen Kampf trainieren.");
 };
 //***************************************************************************************
 //			Ich will trainieren
@@ -134,7 +134,7 @@ INSTANCE DIA_Babo_Teach(C_INFO)
 	condition	= DIA_Babo_Teach_Condition;
 	information	= DIA_Babo_Teach_Info;
 	permanent	= TRUE;
-	description = "Ich bin bereit für das Training.";
+	description = "Ich bin bereit fÃ¼r das Training.";
 };                       
 //----------------------------------
 var int DIA_Babo_Teach_permanent;
@@ -157,7 +157,7 @@ FUNC VOID DIA_Babo_Teach_Info()
 {	
 	babo_merk2h = other.HitChance [NPC_TALENT_2H]; 
 	
-	AI_Output (other,self ,"DIA_Babo_Teach_15_00"); //Ich bin bereit für das Training.
+	AI_Output (other,self ,"DIA_Babo_Teach_15_00"); //Ich bin bereit fÃ¼r das Training.
 	
 	Info_ClearChoices 	(DIA_Babo_Teach);
 	Info_AddChoice 		(DIA_Babo_Teach,	DIALOG_BACK		,DIA_Babo_Teach_Back);
@@ -169,7 +169,7 @@ FUNC VOID DIA_Babo_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_2H] >= 75)
 	{
-		AI_Output (self,other,"DIA_DIA_Babo_Teach_Back_03_00"); //Du hast alles über den zweihändigen Kampf gelernt, was ich dir beibringen konnte.
+		AI_Output (self,other,"DIA_DIA_Babo_Teach_Back_03_00"); //Du hast alles Ã¼ber den zweihÃ¤ndigen Kampf gelernt, was ich dir beibringen konnte.
 		
 		DIA_Babo_Teach_permanent = TRUE;
 	};
@@ -184,11 +184,11 @@ FUNC VOID DIA_Babo_Teach_2H_1 ()
 	{
 		if (Babo_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_00"); //Kämpfe für Innos. Innos ist unser Leben - und dein Glaube gibt dir Stärke.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_00"); //KÃ¤mpfe fÃ¼r Innos. Innos ist unser Leben - und dein Glaube gibt dir StÃ¤rke.
 		};
 		if (Babo_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_01"); //Ein Diener Innos' provoziert keinen Gegner - er überrascht ihn!
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_01"); //Ein Diener Innos' provoziert keinen Gegner - er Ã¼berrascht ihn!
 		};
 		if (Babo_Labercount == 2)
 		{
@@ -196,7 +196,7 @@ FUNC VOID DIA_Babo_Teach_2H_1 ()
 		};
 		if (Babo_Labercount == 3)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_03"); //Ein Diener Innos' ist immer bereit für den Kampf. Wenn du keine Zauber hast, ist dein Stab deine wichtigste Verteidigung.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_03_03"); //Ein Diener Innos' ist immer bereit fÃ¼r den Kampf. Wenn du keine Zauber hast, ist dein Stab deine wichtigste Verteidigung.
 		};
 		
 		Babo_Labercount = Babo_Labercount +1;
@@ -219,15 +219,15 @@ FUNC VOID DIA_Babo_Teach_2H_5 ()
 	{
 		if (Babo_Labercount == 0)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_00"); //Ein Diener Innos' kämpft nicht nur mit dem Stab, sondern auch mit dem Herz.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_00"); //Ein Diener Innos' kÃ¤mpft nicht nur mit dem Stab, sondern auch mit dem Herz.
 		};
 		if (Babo_Labercount == 1)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_01"); //Du musst den Punkt kennen, bis zu dem du zurückweichen darfst.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_01"); //Du musst den Punkt kennen, bis zu dem du zurÃ¼ckweichen darfst.
 		};
 		if (Babo_Labercount == 2)
 		{
-			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_02"); //Bedenke, du kämpfst gut, wenn du den Gegner steuerst und ihm keine Möglichkeit gibst, sich selbst zu steuern.
+			AI_Output (self,other,"DIA_DIA_Babo_Teach_2H_5_03_02"); //Bedenke, du kÃ¤mpfst gut, wenn du den Gegner steuerst und ihm keine MÃ¶glichkeit gibst, sich selbst zu steuern.
 		};
 		if (Babo_Labercount == 3)
 		{
@@ -272,10 +272,10 @@ FUNC INT DIA_Babo_Wurst_Condition()
 FUNC VOID DIA_Babo_Wurst_Info()
 {	
 	AI_Output (other, self, "DIA_Babo_Wurst_15_00"); //Hier, nimm eine Wurst.
-	AI_Output (self, other, "DIA_Babo_Wurst_03_01"); //Oh, Schafswürste, toll. Die schmecken am Besten - gib mir doch noch eine Wurst!
-	AI_Output (other, self, "DIA_Babo_Wurst_15_02"); //Dann habe ich nicht mehr genug für die anderen.
-	AI_Output (self, other, "DIA_Babo_Wurst_03_03"); //Eine Wurst hast du eh zuviel. Nämlich die, die für dich bestimmt ist. Und was ist schon eine Wurst unter Freunden?
-	AI_Output (self, other, "DIA_Babo_Wurst_03_04"); //Komm, ich gebe dir auch eine 'Feuerpfeil'-Spruchrolle dafür.
+	AI_Output (self, other, "DIA_Babo_Wurst_03_01"); //Oh, SchafswÃ¼rste, toll. Die schmecken am Besten - gib mir doch noch eine Wurst!
+	AI_Output (other, self, "DIA_Babo_Wurst_15_02"); //Dann habe ich nicht mehr genug fÃ¼r die anderen.
+	AI_Output (self, other, "DIA_Babo_Wurst_03_03"); //Eine Wurst hast du eh zuviel. NÃ¤mlich die, die fÃ¼r dich bestimmt ist. Und was ist schon eine Wurst unter Freunden?
+	AI_Output (self, other, "DIA_Babo_Wurst_03_04"); //Komm, ich gebe dir auch eine 'Feuerpfeil'-Spruchrolle dafÃ¼r.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -335,8 +335,8 @@ FUNC INT DIA_Babo_YouAndAgon_Condition()
 FUNC VOID DIA_Babo_YouAndAgon_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_YouAndAgon_15_00"); //Was ist zwischen dir und Agon passiert?
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_01"); //Ach, wir hatten einen Streit über die Pflege von Feuernesseln.
-	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_02"); //Die Pflanzen hatten schon fast Wurzelfäule, so sehr hat Agon sie gegossen.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_01"); //Ach, wir hatten einen Streit Ã¼ber die Pflege von Feuernesseln.
+	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_02"); //Die Pflanzen hatten schon fast WurzelfÃ¤ule, so sehr hat Agon sie gegossen.
 	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_03"); //Als die Wurzeln dann komplett verfault waren, hat er mir das Ganze in die Schuhe geschoben.
 	AI_Output (self ,other,"DIA_Babo_YouAndAgon_03_04"); //Seitdem darf ich den ganzen Tag den Hof fegen.
 };
@@ -388,13 +388,13 @@ FUNC INT DIA_Babo_PlantLore_Condition()
 FUNC VOID DIA_Babo_PlantLore_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_PlantLore_15_00"); //Du hast wohl Ahnung von Pflanzen?
-	AI_Output (self ,other,"DIA_Babo_PlantLore_03_01"); //Wir hatten einen Kräutergarten, dort habe ich von meinem Opa einige Tricks gelernt.
-	AI_Output (self ,other,"DIA_Babo_PlantLore_03_02"); //Ich würde am liebsten wieder im Garten arbeiten.
+	AI_Output (self ,other,"DIA_Babo_PlantLore_03_01"); //Wir hatten einen KrÃ¤utergarten, dort habe ich von meinem Opa einige Tricks gelernt.
+	AI_Output (self ,other,"DIA_Babo_PlantLore_03_02"); //Ich wÃ¼rde am liebsten wieder im Garten arbeiten.
 	
 	MIS_HelpBabo = LOG_RUNNING;
 	Log_CreateTopic (Topic_BaboGaertner,LOG_MISSION);
 	Log_SetTopicStatus (Topic_BaboGaertner,LOG_RUNNING);
-	B_LogEntry (Topic_BaboGaertner,"Babo würde lieber im Kräutergarten arbeiten, als den Hof zu fegen.");
+	B_LogEntry (Topic_BaboGaertner,"Babo wÃ¼rde lieber im KrÃ¤utergarten arbeiten, als den Hof zu fegen.");
 };
 //***********************************************************************
 //	Fegen
@@ -418,9 +418,9 @@ FUNC INT DIA_Babo_Fegen_Condition()
 FUNC VOID DIA_Babo_Fegen_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_Fegen_15_00"); //Ich soll die Novizenkammern fegen.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_01"); //Da hast du dir ja viel Arbeit aufgehalst. Weißt du was - ich helfe dir. Alleine schaffst du das nie.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_02"); //Aber ich brauche unbedingt eine 'Windfaust'-Spruchrolle - weißt du, ich hatte das Glück und durfte ein Buch darüber lesen.
-	AI_Output (self ,other,"DIA_Babo_Fegen_03_03"); //Und jetzt will ich den Zauber natürlich auch mal anwenden. Also besorge mir die Spruchrolle, dann helfe ich dir.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_01"); //Da hast du dir ja viel Arbeit aufgehalst. WeiÃŸt du was - ich helfe dir. Alleine schaffst du das nie.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_02"); //Aber ich brauche unbedingt eine 'Windfaust'-Spruchrolle - weiÃŸt du, ich hatte das GlÃ¼ck und durfte ein Buch darÃ¼ber lesen.
+	AI_Output (self ,other,"DIA_Babo_Fegen_03_03"); //Und jetzt will ich den Zauber natÃ¼rlich auch mal anwenden. Also besorge mir die Spruchrolle, dann helfe ich dir.
 	
 	B_LogEntry 	(Topic_ParlanFegen,"Babo hilft mir, die Novizenkammern zu fegen, wenn ich ihm eine Spruchrolle Windfaust bringe.");
 };
@@ -451,7 +451,7 @@ FUNC INT DIA_Babo_Windfaust_Condition()
 FUNC VOID DIA_Babo_Windfaust_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_Windfaust_15_00"); //Wegen der Spruchrolle...
-	AI_Output (self ,other,"DIA_Babo_Windfaust_03_01"); //Hast du einen Windfaust-Zauber für mich?
+	AI_Output (self ,other,"DIA_Babo_Windfaust_03_01"); //Hast du einen Windfaust-Zauber fÃ¼r mich?
 	
 	if B_GiveInvItems (other, self, ItSc_Windfist,1)
 	{ 
@@ -498,18 +498,18 @@ FUNC INT DIA_Babo_Life_Condition()
 FUNC VOID DIA_Babo_Life_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_Life_15_00"); //Wie ist das Leben hier im Kloster?
-	AI_Output (self ,other,"DIA_Babo_Life_03_01"); //Ich will mich nicht beklagen, aber ich hab nicht gedacht, dass hier alle so streng sind. Wenn du dich nicht an die Regeln hältst, wirst du bestraft.
-	AI_Output (self ,other,"DIA_Babo_Life_03_02"); //Viele Novizen wollen natürlich die Lehren Innos' in der Bibliothek studieren, damit sie vorbereitet sind, falls sie erwählt werden.
-	AI_Output (self ,other,"DIA_Babo_Life_03_03"); //Aber ich denke, die beste Vorbereitung auf die Prüfung der Magie ist die Erfüllung der eigenen Aufgaben.
+	AI_Output (self ,other,"DIA_Babo_Life_03_01"); //Ich will mich nicht beklagen, aber ich hab nicht gedacht, dass hier alle so streng sind. Wenn du dich nicht an die Regeln hÃ¤ltst, wirst du bestraft.
+	AI_Output (self ,other,"DIA_Babo_Life_03_02"); //Viele Novizen wollen natÃ¼rlich die Lehren Innos' in der Bibliothek studieren, damit sie vorbereitet sind, falls sie erwÃ¤hlt werden.
+	AI_Output (self ,other,"DIA_Babo_Life_03_03"); //Aber ich denke, die beste Vorbereitung auf die PrÃ¼fung der Magie ist die ErfÃ¼llung der eigenen Aufgaben.
 	
 	if (Npc_KnowsInfo (other,DIA_Igaranz_Choosen) == FALSE)
 	{
-		AI_Output (other,self ,"DIA_Babo_Life_15_04"); //Was hat es mit den Erwählten und dieser Prüfung auf sich?
+		AI_Output (other,self ,"DIA_Babo_Life_15_04"); //Was hat es mit den ErwÃ¤hlten und dieser PrÃ¼fung auf sich?
 		AI_Output (self ,other,"DIA_Babo_Life_03_05"); //Sprich mit Bruder Igaraz. Er kennt sich gut damit aus.
 	};
 };
 //*********************************************************************
-//		Sc hat Babo den Gärtnerposten verschafft (Kap. 2)
+//		Sc hat Babo den GÃ¤rtnerposten verschafft (Kap. 2)
 //*********************************************************************
 INSTANCE DIA_Babo_HowIsIt   (C_INFO)
 {
@@ -537,7 +537,7 @@ FUNC VOID DIA_Babo_HowIsIt_Info()
 	
 	if (MIS_HelpBabo == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_01"); //(demütig) Ich danke den Magiern für meine Aufgabe.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_01"); //(demÃ¼tig) Ich danke den Magiern fÃ¼r meine Aufgabe.
 		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_02"); //Es macht mir Freude im Garten zu arbeiten und hoffe, dass die Magier zufrieden mit mir sind, Meister.
 		
 		if (Babo_XPgiven == FALSE)
@@ -549,7 +549,7 @@ FUNC VOID DIA_Babo_HowIsIt_Info()
 	else
 	{
 		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_03"); //(erschrocken) G..g..gut, Meister.
-		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_04"); //Ich, ich arbeite hart und versuche die Magier nicht zu enttäuschen.
+		AI_Output (self ,other,"DIA_Babo_HowIsIt_03_04"); //Ich, ich arbeite hart und versuche die Magier nicht zu enttÃ¤uschen.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -637,7 +637,7 @@ FUNC VOID DIA_Babo_Kap3_Hello_Info()
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_01"); //(schüchtern) Ich versuche, die mir gestellten Aufgaben zur Zufriedenheit des Klosters zu lösen.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Hello_03_01"); //(schÃ¼chtern) Ich versuche, die mir gestellten Aufgaben zur Zufriedenheit des Klosters zu lÃ¶sen.
 	}	
 	else
 	{
@@ -670,15 +670,15 @@ FUNC INT DIA_Babo_Kap3_KeepTheFaith_Condition()
 FUNC VOID DIA_Babo_Kap3_KeepTheFaith_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_00"); //Du darfst den Glauben niemals verlieren.
-	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_01"); //(ertappt) Nein, ... ich meine, das würde ich niemals tun. Ehrlich!
-	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_02"); //Uns allen werden oft schwere Prüfungen auferlegt.
+	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_01"); //(ertappt) Nein, ... ich meine, das wÃ¼rde ich niemals tun. Ehrlich!
+	AI_Output (other,self ,"DIA_Babo_Kap3_KeepTheFaith_15_02"); //Uns allen werden oft schwere PrÃ¼fungen auferlegt.
 	AI_Output (self ,other,"DIA_Babo_Kap3_KeepTheFaith_03_03"); //Ja, Meister. Ich werde immer daran denken. Danke.
 	
 	B_GivePlayerXP (XP_Ambient); 
 };
 
 //*********************************************
-//	Das klingt aber nicht sehr glücklich.
+//	Das klingt aber nicht sehr glÃ¼cklich.
 //*********************************************
 
 INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)
@@ -688,7 +688,7 @@ INSTANCE DIA_Babo_Kap3_Unhappy   (C_INFO)
 	condition   = DIA_Babo_Kap3_Unhappy_Condition;
 	information = DIA_Babo_Kap3_Unhappy_Info;
 	permanent   = FALSE;
-	description = "Das klingt aber nicht sehr glücklich.";
+	description = "Das klingt aber nicht sehr glÃ¼cklich.";
 };
 FUNC INT DIA_Babo_Kap3_Unhappy_Condition()
 {
@@ -701,28 +701,28 @@ FUNC INT DIA_Babo_Kap3_Unhappy_Condition()
 };
 FUNC VOID DIA_Babo_Kap3_Unhappy_Info()
 {
-	AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_15_00"); //Das klingt aber nicht sehr glücklich.
+	AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_15_00"); //Das klingt aber nicht sehr glÃ¼cklich.
 	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_01"); //(ertappt) Na ja ... ich meine, eigentlich ist ja alles in Ordnung.
 	AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_03_02"); //Nur ... Ach, ich will mich nicht beschweren.
 
 	Info_ClearChoices	(DIA_Babo_Kap3_Unhappy);
-	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Dann hör auf zu jammern.",DIA_Babo_Kap3_Unhappy_Lament); 
-	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Mir kannst du´s ruhig erzählen.",DIA_Babo_Kap3_Unhappy_TellMe);
+	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Dann hÃ¶r auf zu jammern.",DIA_Babo_Kap3_Unhappy_Lament); 
+	Info_AddChoice	(DIA_Babo_Kap3_Unhappy,"Mir kannst duÂ´s ruhig erzÃ¤hlen.",DIA_Babo_Kap3_Unhappy_TellMe);
 };
 
 	FUNC VOID DIA_Babo_Kap3_Unhappy_Lament ()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_00"); //Dann hör auf zu jammern.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_01"); //(ängstlich) Ich ... Ich ... bitte erzählt den Magiern nichts.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_00"); //Dann hÃ¶r auf zu jammern.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_01"); //(Ã¤ngstlich) Ich ... Ich ... bitte erzÃ¤hlt den Magiern nichts.
 		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Lament_03_02"); //Ich will nicht schon wieder bestraft werden.
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_03"); //Ich denk drüber nach.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Lament_15_03"); //Ich denk drÃ¼ber nach.
 		
 		Info_ClearChoices	(DIA_Babo_Kap3_Unhappy);
 	};
 	
 	FUNC VOID DIA_Babo_Kap3_Unhappy_TellMe ()
 	{
-		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_00"); //Mir kannst du es ruhig erzählen.
+		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_00"); //Mir kannst du es ruhig erzÃ¤hlen.
 		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_01"); //Und du sagst den Magiern wirklich nichts?
 		AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_TellMe_15_02"); //Seh ich so aus?
 		AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_TellMe_03_03"); //Also gut. Ich habe Problem mit einem der Novizen. Er hat mich in der Hand.
@@ -738,15 +738,15 @@ FUNC VOID DIA_Babo_Kap3_Unhappy_Info()
 		
 		Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Das ist mir doch ein bisschen zu privat.",DIA_Babo_Kap3_Unhappy_Privat);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Was sollst du für ihn tun?",DIA_Babo_Kap3_Unhappy_ShouldDo);
-		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Was sind das für Dokumente?",DIA_Babo_Kap3_Unhappy_Documents); 
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Was sollst du fÃ¼r ihn tun?",DIA_Babo_Kap3_Unhappy_ShouldDo);
+		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Was sind das fÃ¼r Dokumente?",DIA_Babo_Kap3_Unhappy_Documents); 
 		Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Vielleicht kann ich dir helfen.",DIA_Babo_Kap3_Unhappy_CanHelpYou);
 	};
 
 		FUNC VOID DIA_Babo_Kap3_Unhappy_Privat ()
 		{
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_00"); //Das ist mir doch ein bisschen zu privat.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Privat_03_01"); //Ich versteh schon, du willst keinen Ärger. Dann werde ich da wohl alleine mit fertig werden müssen.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Privat_03_01"); //Ich versteh schon, du willst keinen Ã„rger. Dann werde ich da wohl alleine mit fertig werden mÃ¼ssen.
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Privat_15_02"); //Du schaffst das schon.
 		
 			Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
@@ -754,29 +754,29 @@ FUNC VOID DIA_Babo_Kap3_Unhappy_Info()
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_ShouldDo ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_ShouldDo_15_00"); //Was sollst du für ihn tun?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_01"); //Darüber möchte ich nicht reden. Auf jeden Fall ist es nichts Innos-gefälliges.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_02"); //Ich mag gar nicht darüber nachdenken, was passiert, wenn das rauskäme.
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_ShouldDo_15_00"); //Was sollst du fÃ¼r ihn tun?
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_01"); //DarÃ¼ber mÃ¶chte ich nicht reden. Auf jeden Fall ist es nichts Innos-gefÃ¤lliges.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_ShouldDo_03_02"); //Ich mag gar nicht darÃ¼ber nachdenken, was passiert, wenn das rauskÃ¤me.
 		
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_Documents ()
 		{
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_00"); //Was sind das für Dokumente?
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_00"); //Was sind das fÃ¼r Dokumente?
 			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_01"); //(unsicher) Das geht niemanden was an. Das ist ganz und gar meine Sache.
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_02"); //Los, sag schon.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_03"); //Das sind äh ... Ganz normale Dokument halt. Nichts Besonderes.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Documents_03_03"); //Das sind Ã¤h ... Ganz normale Dokument halt. Nichts Besonderes.
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Documents_15_04"); //Ich frag nicht weiter.
 		};
 		
 		FUNC VOID DIA_Babo_Kap3_Unhappy_CanHelpYou ()
 		{
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_00"); //Vielleicht kann ich dir helfen?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_01"); //Das würdest du tun?
-			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_02"); //Das kommt natürlich ganz drauf an.
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_03"); //(hastig) Ich würde dich natürlich auch dafür bezahlen.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_01"); //Das wÃ¼rdest du tun?
+			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_02"); //Das kommt natÃ¼rlich ganz drauf an.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_03"); //(hastig) Ich wÃ¼rde dich natÃ¼rlich auch dafÃ¼r bezahlen.
 			AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_CanHelpYou_15_04"); //Wie viel?
-			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_05"); //Ich habe natürlich nicht so viel Geld, aber ich könnte dir eine Spruchrolle geben. Ich habe einen Heilzauber.
+			AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_CanHelpYou_03_05"); //Ich habe natÃ¼rlich nicht so viel Geld, aber ich kÃ¶nnte dir eine Spruchrolle geben. Ich habe einen Heilzauber.
 			
 			Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 			Info_AddChoice (DIA_Babo_Kap3_Unhappy,"Da lass ich lieber die Finger von.",DIA_Babo_Kap3_Unhappy_No);
@@ -796,7 +796,7 @@ FUNC VOID DIA_Babo_Kap3_Unhappy_Info()
 				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_00"); //Ich werde mal sehen, was ich tun kann.
 				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_01"); //(freudig) Ehrlich, es muss einfach gelingen. Es muss!
 				AI_Output (self ,other,"DIA_Babo_Kap3_Unhappy_Yes_03_02"); //Also, du musst eigentlich nur rausfinden, wo Igaraz die Sachen aufbewahrt. Dann klaust du sie ihm und alles ist in bester Ordnung.
-				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_03"); //Ganz ruhig. Du machst erstmal weiter, um den Rest kümmere ich mich.
+				AI_Output (other,self ,"DIA_Babo_Kap3_Unhappy_Yes_15_03"); //Ganz ruhig. Du machst erstmal weiter, um den Rest kÃ¼mmere ich mich.
 				
 				Info_ClearChoices (DIA_Babo_Kap3_Unhappy);
 			};
@@ -827,7 +827,7 @@ FUNC INT DIA_Babo_Kap3_HaveYourDocs_Condition()
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_Info()
 {
 	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_00"); //Ich hab deine Dokumente.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_01"); //Wirklich? Danke, du hast mich gerettet. Ich weiß gar nicht, wie ich dir danken soll.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_01"); //Wirklich? Danke, du hast mich gerettet. Ich weiÃŸ gar nicht, wie ich dir danken soll.
 	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_15_02"); //Ja ja, beruhig dich wieder.
 	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_03_03"); //(aufgeregt) Sind es auch wirklich meine? Bist du dir sicher, zeig her.
 	
@@ -845,7 +845,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_Info()
 FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 {
 	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_15_00"); //Ich werde sie noch eine Weile behalten.
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_03_01"); //(fassunglos) Was!? Was soll das heißen. Was hast du vor?
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_03_01"); //(fassunglos) Was!? Was soll das heiÃŸen. Was hast du vor?
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"War nur ein Scherz.",DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke);
@@ -860,7 +860,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke()
 	{
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_00"); //War nur ein Scherz.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_01"); //(sauer) Haha, ich kann nicht darüber lachen. Also, wo sind sie?
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_01"); //(sauer) Haha, ich kann nicht darÃ¼ber lachen. Also, wo sind sie?
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_02"); //Hier.
 		
 		if (Npc_HasItems (other,ItWr_BabosDocs_MIS) >= 1)
@@ -875,8 +875,8 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 		
 		B_UseFakeScroll ();
 		
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_03"); //Ich wollte dich nicht beleidigen, aber ich bin ganz schön nervös wegen der Sache.
-		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_04"); //Schon vergessen. Noch viel Spaß mit deinen DOKUMENTEN.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_03_03"); //Ich wollte dich nicht beleidigen, aber ich bin ganz schÃ¶n nervÃ¶s wegen der Sache.
+		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_JustJoke_15_04"); //Schon vergessen. Noch viel SpaÃŸ mit deinen DOKUMENTEN.
 		
 		MIS_BabosDocs = LOG_SUCCESS;
 		B_GivePlayerXP (XP_BabosDocs);
@@ -887,7 +887,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern()
 	{
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_00"); //Das ist meine Sache.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_03_01"); //Die Dokumente gehören mir. Du hast kein Recht, sie zu behalten.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_03_01"); //Die Dokumente gehÃ¶ren mir. Du hast kein Recht, sie zu behalten.
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_MyConcern_15_02"); //Mach's gut.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
@@ -896,7 +896,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem()
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner()
 	{
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_00"); //Igaraz und ich sind jetzt Partner.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_01"); //(fassungslos) Was? Das könnt ihr nicht machen.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_03_01"); //(fassungslos) Was? Das kÃ¶nnt ihr nicht machen.
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_02"); //Anscheinend doch. Ich werde die Papiere behalten und alles bleibt wie gehabt.
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_03"); //Das Finanzielle werde ich mit Igaraz regeln.
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_KeepThem_Partner_15_04"); //Also, pass gut auf die Pflanzen auf.
@@ -934,7 +934,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_00"); //Aufgrund der nackten Tatsachen ist der Preis gestiegen.
 	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_01"); //Du bist auch nicht besser als die Anderen. Was willst du?
 	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_15_02"); //Was hast du?
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_03"); //Ich kann dir noch 121 Goldmünzen geben, das ist alles was ich habe.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_03_03"); //Ich kann dir noch 121 GoldmÃ¼nzen geben, das ist alles was ich habe.
 	
 	Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 	Info_AddChoice (DIA_Babo_Kap3_HaveYourDocs,"Das wird nicht reichen.",DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough);
@@ -944,7 +944,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore()
 	FUNC VOID DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough()
 	{
 		AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_15_00"); //Das wird nicht reichen.
-		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01"); //Aber mehr Geld habe ich nicht. Wenn ich das vorher gewusst hätte, wäre ich nie ins Kloster gegangen.
+		AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_IWantMore_NotEnough_03_01"); //Aber mehr Geld habe ich nicht. Wenn ich das vorher gewusst hÃ¤tte, wÃ¤re ich nie ins Kloster gegangen.
 		
 		Info_ClearChoices (DIA_Babo_Kap3_HaveYourDocs);
 	};
@@ -980,7 +980,7 @@ FUNC VOID DIA_Babo_Kap3_HaveYourDocs_HereTheyAre()
 	};
 	
 	B_UseFakeScroll ();
-	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_01"); //Ja, sie sind vollständig.
+	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_01"); //Ja, sie sind vollstÃ¤ndig.
 	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_02"); //Hast du sie angeguckt?
 	AI_Output (other,self ,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_15_03"); //Tut das was zur Sache?
 	AI_Output (self ,other,"DIA_Babo_Kap3_HaveYourDocs_HereTheyAre_03_04"); //Nein, Hauptsache, ich habe sie wieder.
@@ -1020,15 +1020,15 @@ FUNC VOID DIA_Babo_Kap3_Perm_Info()
 	AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_00"); //Bist du zufrieden mit deiner Aufgabe?
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_01"); //(wenig überzeugend) Ja, natürlich. Der Glaube an Innos' Weisheit und Stärke gibt mir Kraft.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_02"); //(rauswindend) Ich möchte nicht unverschämt erscheinen, aber ich habe heute noch sehr viel zu tun.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_01"); //(wenig Ã¼berzeugend) Ja, natÃ¼rlich. Der Glaube an Innos' Weisheit und StÃ¤rke gibt mir Kraft.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_02"); //(rauswindend) Ich mÃ¶chte nicht unverschÃ¤mt erscheinen, aber ich habe heute noch sehr viel zu tun.
 		AI_Output (other,self ,"DIA_Babo_Kap3_Perm_15_03"); //Du darfst weitermachen.
 		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_04"); //(erleichtert) Danke.
 	}
 	else
 	{
 		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_05"); //Es geht schon, aber ich muss jetzt weitermachen, sonst werde ich heute nicht fertig.
-		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_06"); //Ich will nicht schon wieder bis tief in die Nacht arbeiten, damit ich meinen Soll erfülle und keinen Ärger bekomme.
+		AI_Output (self ,other,"DIA_Babo_Kap3_Perm_03_06"); //Ich will nicht schon wieder bis tief in die Nacht arbeiten, damit ich meinen Soll erfÃ¼lle und keinen Ã„rger bekomme.
 	};
 	
 	AI_StopProcessInfos (self); 

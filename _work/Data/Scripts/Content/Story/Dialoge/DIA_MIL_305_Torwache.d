@@ -80,7 +80,7 @@ func void DIA_Mil_305_Torwache_FirstWarn_Info()
 	{
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_01"); //Du wirst in der Stadt als Mörder gesucht! Bis die Sache geklärt ist, kann ich dich nicht ins obere Viertel lassen.
+			AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_01"); //Du wirst in der Stadt als MÃ¶rder gesucht! Bis die Sache geklÃ¤rt ist, kann ich dich nicht ins obere Viertel lassen.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
@@ -99,7 +99,7 @@ func void DIA_Mil_305_Torwache_FirstWarn_Info()
 	// ------ normales Reinkommen ------
 	else 
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_05"); //Nur Bürger der Stadt und Truppen des Königs kommen ins obere Viertel!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_FirstWarn_03_05"); //Nur BÃ¼rger der Stadt und Truppen des KÃ¶nigs kommen ins obere Viertel!
 	};
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_305_Checkpoint);
@@ -177,7 +177,7 @@ func void DIA_Mil_305_Torwache_Attack_Info()
 };
 
 // ***************************************************************
-//					Nachricht für Lord Hagen 
+//					Nachricht fÃ¼r Lord Hagen 
 // ***************************************************************
 instance DIA_Mil_305_Torwache_MESSAGE		(C_INFO)
 {
@@ -186,7 +186,7 @@ instance DIA_Mil_305_Torwache_MESSAGE		(C_INFO)
 	condition	 = 	DIA_Mil_305_Torwache_MESSAGE_Condition;
 	information	 = 	DIA_Mil_305_Torwache_MESSAGE_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ich habe eine wichtige Nachricht für Lord Hagen.";
+	description	 = 	"Ich habe eine wichtige Nachricht fÃ¼r Lord Hagen.";
 };
 func int DIA_Mil_305_Torwache_MESSAGE_Condition ()
 {	
@@ -198,9 +198,9 @@ func int DIA_Mil_305_Torwache_MESSAGE_Condition ()
 };
 func void DIA_Mil_305_Torwache_MESSAGE_Info ()
 {
-	AI_Output (other, self, "DIA_Mil_305_Torwache_MESSAGE_15_00"); //Ich habe eine wichtige Nachricht für Lord Hagen.
+	AI_Output (other, self, "DIA_Mil_305_Torwache_MESSAGE_15_00"); //Ich habe eine wichtige Nachricht fÃ¼r Lord Hagen.
 	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_01"); //Die halbe Stadt will Lord Hagen in wichtigen Angelegenheiten sprechen.
-	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_02"); //Wenn wir alle Bittsteller zu ihm ließen, hätte er nichts anderes mehr zu tun, als sich mit den minderen Problemen der Stadtbewohner auseinander zu setzen.
+	AI_Output (self, other, "DIA_Mil_305_Torwache_MESSAGE_03_02"); //Wenn wir alle Bittsteller zu ihm lieÃŸen, hÃ¤tte er nichts anderes mehr zu tun, als sich mit den minderen Problemen der Stadtbewohner auseinander zu setzen.
 };	
 
 // ***************************************************************
@@ -213,7 +213,7 @@ instance DIA_Mil_305_Torwache_Ausnahme (C_INFO)
 	condition	 = 	DIA_Mil_305_Torwache_Ausnahme_Condition;
 	information	 = 	DIA_Mil_305_Torwache_Ausnahme_Info;
 	permanent    =  TRUE;
-	description	 = 	"Können wir nicht mal eine Ausnahme machen?";
+	description	 = 	"KÃ¶nnen wir nicht mal eine Ausnahme machen?";
 };
 func int DIA_Mil_305_Torwache_Ausnahme_Condition ()
 {	
@@ -224,13 +224,13 @@ func int DIA_Mil_305_Torwache_Ausnahme_Condition ()
 };
 func void DIA_Mil_305_Torwache_Ausnahme_Info ()
 {
-	AI_Output (other, self, "DIA_Mil_305_Torwache_Ausnahme_15_00"); //Können wir nicht mal eine Ausnahme machen?
-	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_01"); //(poltert) Was?! Es gibt Regeln in dieser Stadt! Regeln, die für ausnahmslos alle gelten!
+	AI_Output (other, self, "DIA_Mil_305_Torwache_Ausnahme_15_00"); //KÃ¶nnen wir nicht mal eine Ausnahme machen?
+	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_01"); //(poltert) Was?! Es gibt Regeln in dieser Stadt! Regeln, die fÃ¼r ausnahmslos alle gelten!
 	AI_Output (self, other, "DIA_Mil_305_Torwache_Ausnahme_03_02"); //Wenn wir diese Regeln brechen, handeln wir ungerecht gegen alle, die sie einhalten.
 };	
 
 // ************************************************************
-// 						Ich BIN Bürger!  				  
+// 						Ich BIN BÃ¼rger!  				  
 // ************************************************************
 INSTANCE DIA_Mil_305_Torwache_PassAsCitizen (C_INFO)
 {
@@ -239,7 +239,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsCitizen (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsCitizen_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsCitizen_Info;
 	permanent	= TRUE;
-	description = "Ich bin ein angesehener Bürger von Khorinis! Lass mich durch!";
+	description = "Ich bin ein angesehener BÃ¼rger von Khorinis! Lass mich durch!";
 };                       
 FUNC INT DIA_Mil_305_Torwache_PassAsCitizen_Condition()
 {	
@@ -251,12 +251,12 @@ FUNC INT DIA_Mil_305_Torwache_PassAsCitizen_Condition()
 };
 FUNC VOID DIA_Mil_305_Torwache_PassAsCitizen_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsCitizen_15_00"); //Ich bin ein angesehener Bürger von Khorinis! Lass mich durch!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsCitizen_15_00"); //Ich bin ein angesehener BÃ¼rger von Khorinis! Lass mich durch!
 
 	if (Player_IsApprentice > APP_NONE)
 	{
 		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_01"); //Was immer die Meister von Khorinis bewogen hat, dich als Lehrling aufzunehmen - ich will es gar nicht wissen.
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_02"); //Du kannst reingehen! Aber benimm dich bloß! Sonst bekommst du den Ärger deines Lebens!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_02"); //Du kannst reingehen! Aber benimm dich bloÃŸ! Sonst bekommst du den Ã„rger deines Lebens!
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
 		Mil_305_schonmalreingelassen = TRUE;
@@ -268,8 +268,8 @@ FUNC VOID DIA_Mil_305_Torwache_PassAsCitizen_Info()
 	||		(MIS_Bosper_Bogen == LOG_SUCCESS) || (MIS_Bosper_WolfFurs == LOG_SUCCESS)
 	|| 		(MIS_Harad_Orc == LOG_SUCCESS) || (MIS_HakonBandits == LOG_SUCCESS)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_03"); //Du hast dich vielleicht bisher mit einigen der Meister aus der Unterstadt gut gestellt, aber wenn du Bürger dieser Stadt wärst, wüsste ich davon!
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_04"); //Versuch nicht, mich hinters Licht zu führen! Ich warne dich!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_03"); //Du hast dich vielleicht bisher mit einigen der Meister aus der Unterstadt gut gestellt, aber wenn du BÃ¼rger dieser Stadt wÃ¤rst, wÃ¼sste ich davon!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsCitizen_03_04"); //Versuch nicht, mich hinters Licht zu fÃ¼hren! Ich warne dich!
 		AI_StopProcessInfos(self);
 	}
 	else
@@ -291,7 +291,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsMil (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsMil_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsMil_Info;
 	permanent 	= TRUE; 
-	description	= "Ich gehöre zur Miliz - lass mich rein!";
+	description	= "Ich gehÃ¶re zur Miliz - lass mich rein!";
 };                       
 
 FUNC INT DIA_Mil_305_Torwache_PassAsMil_Condition()
@@ -306,9 +306,9 @@ FUNC INT DIA_Mil_305_Torwache_PassAsMil_Condition()
 
 FUNC VOID DIA_Mil_305_Torwache_PassAsMil_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMil_15_00"); //Ich gehöre zur Miliz - lass mich rein!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMil_15_00"); //Ich gehÃ¶re zur Miliz - lass mich rein!
 	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_01"); //Andre hat dich also aufgenommen? Dann kannst du ja nicht so'n schlechter Kerl sein!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_02"); //Du gehörst ab jetzt zu den Beschützern der Stadt! Also sei schön freundlich zu den Bürgern!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMil_03_02"); //Du gehÃ¶rst ab jetzt zu den BeschÃ¼tzern der Stadt! Also sei schÃ¶n freundlich zu den BÃ¼rgern!
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -343,9 +343,9 @@ FUNC INT DIA_Mil_305_Torwache_PassAsMage_Condition()
 FUNC VOID DIA_Mil_305_Torwache_PassAsMage_Info()
 {
 	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_00"); //Du wagst es, dich einem Vertreter Innos' in den Weg zu stellen?!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_01"); //Ähm ... nein! Natürlich nicht! Der Zugang steht den Erwählten Innos' frei!
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_02"); //Bete zu Innos für diesen Frevel!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_03"); //Ja, Erwählter!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_01"); //Ã„hm ... nein! NatÃ¼rlich nicht! Der Zugang steht den ErwÃ¤hlten Innos' frei!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsMage_15_02"); //Bete zu Innos fÃ¼r diesen Frevel!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsMage_03_03"); //Ja, ErwÃ¤hlter!
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -355,7 +355,7 @@ FUNC VOID DIA_Mil_305_Torwache_PassAsMage_Info()
 
 
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃ–LDNER
 // ************************************************************
 
 INSTANCE DIA_Mil_305_Torwache_PassAsSld (C_INFO)
@@ -365,7 +365,7 @@ INSTANCE DIA_Mil_305_Torwache_PassAsSld (C_INFO)
 	condition	= DIA_Mil_305_Torwache_PassAsSld_Condition;
 	information	= DIA_Mil_305_Torwache_PassAsSld_Info;
 	permanent 	= TRUE; 
-	description	= "Ich habe eine wichtige Nachricht für Lord Hagen!";
+	description	= "Ich habe eine wichtige Nachricht fÃ¼r Lord Hagen!";
 };                       
 
 FUNC INT DIA_Mil_305_Torwache_PassAsSld_Condition()
@@ -380,10 +380,10 @@ FUNC INT DIA_Mil_305_Torwache_PassAsSld_Condition()
 
 FUNC VOID DIA_Mil_305_Torwache_PassAsSld_Info()
 {
-	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_00"); //Ich habe eine wichtige Nachricht für Lord Hagen!
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_01"); //Du bist doch einer von diesem Söldnerpack! Was kannst du schon von Lord Hagen wollen!
+	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_00"); //Ich habe eine wichtige Nachricht fÃ¼r Lord Hagen!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_01"); //Du bist doch einer von diesem SÃ¶ldnerpack! Was kannst du schon von Lord Hagen wollen!
 	AI_Output (other, self,"DIA_Mil_305_Torwache_PassAsSld_15_02"); //Ich bringe ein Friedensangebot.
-	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_03"); //Ah! Seid ihr Lumpen endlich vernünftig geworden. Dann geh mal zu Lord Hagen, aber sei schön höflich, sonst tritt er dir in deinen dicken dummen Hintern!
+	AI_Output (self, other,"DIA_Mil_305_Torwache_PassAsSld_03_03"); //Ah! Seid ihr Lumpen endlich vernÃ¼nftig geworden. Dann geh mal zu Lord Hagen, aber sei schÃ¶n hÃ¶flich, sonst tritt er dir in deinen dicken dummen Hintern!
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Mil_305_schonmalreingelassen = TRUE;
@@ -424,7 +424,7 @@ FUNC VOID DIA_Mil_305_Torwache_PERM_Info()
 	}
 	else if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_02"); //Wir erfüllen hier nur unsere Pflicht. Danke, dass du mich beachtet hast, Erwählter!
+		AI_Output (self, other,"DIA_Mil_305_Torwache_PERM_03_02"); //Wir erfÃ¼llen hier nur unsere Pflicht. Danke, dass du mich beachtet hast, ErwÃ¤hlter!
 	}
 	else if (other.guild == GIL_SLD)
 	||		(other.guild == GIL_DJG)

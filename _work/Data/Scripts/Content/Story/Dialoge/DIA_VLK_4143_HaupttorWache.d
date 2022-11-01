@@ -43,7 +43,7 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Was ist deine Aufgabe?
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Mein Auftrag ist simpel. Ich muss darauf achten, dass sich die Orks nicht näher als 30 Schritt ans Tor heran machen.
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Mein Auftrag ist simpel. Ich muss darauf achten, dass sich die Orks nicht nÃ¤her als 30 Schritt ans Tor heran machen.
 	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Wenn sie versuchen sollten, das Torgitter zu durchbrechen, werde ich Alarm schlagen. Das ist alles.
 };
 
@@ -58,7 +58,7 @@ instance DIA_Haupttorwache_TOROEFFNEN		(C_INFO)
 	information	 = 	DIA_Haupttorwache_TOROEFFNEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Was müsste jemand tun, wenn er das Haupttor öffnen wollte?";
+	description	 = 	"Was mÃ¼sste jemand tun, wenn er das Haupttor Ã¶ffnen wollte?";
 };
 
 func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
@@ -70,24 +70,24 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 };
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Was müsste jemand tun, wenn er das Haupttor öffnen wollte?
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Was mÃ¼sste jemand tun, wenn er das Haupttor Ã¶ffnen wollte?
 	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Um Himmels Willen. Warum willst du das wissen?
 
 	self.flags = 0;//Joly:zur sicherheit
 
 	Info_ClearChoices	(DIA_Haupttorwache_TOROEFFNEN);
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Ich mache mir Sorgen über die Sicherheit der Burg.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Schon gut. War nur so ´ne Frage.", DIA_Haupttorwache_TOROEFFNEN_frage );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Ich mache mir Sorgen Ã¼ber die Sicherheit der Burg.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Schon gut. War nur so Â´ne Frage.", DIA_Haupttorwache_TOROEFFNEN_frage );
 	
 };
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Ich mache mir Sorgen über die Sicherheit der Burg.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Ich mache mir Sorgen Ã¼ber die Sicherheit der Burg.
 	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Das mache ich mir auch jeden Tag, das kannst du mir glauben.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Und weil ich ein so gewissenhafter Wachmann bin, hat mir Garond jetzt endlich auch den Schlüssel zum Torraum anvertraut.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(stolz) Eine verantwortungsvolle Aufgabe. Ich werde gut darauf aufpassen. Das habe ich Garond schwören müssen.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Ja. Denn stell dir mal vor, da würde einer kommen und einfach den Hebel des Tores ziehen und das alte morsche Stahlgatter würde sich verkanten.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Dann könnte niemand mehr das Gitter schließen. Nicht auszudenken, was dann passieren würde. Zum Glück weiß das ja keiner, dass ich den Schlüssel habe.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Und weil ich ein so gewissenhafter Wachmann bin, hat mir Garond jetzt endlich auch den SchlÃ¼ssel zum Torraum anvertraut.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(stolz) Eine verantwortungsvolle Aufgabe. Ich werde gut darauf aufpassen. Das habe ich Garond schwÃ¶ren mÃ¼ssen.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Ja. Denn stell dir mal vor, da wÃ¼rde einer kommen und einfach den Hebel des Tores ziehen und das alte morsche Stahlgatter wÃ¼rde sich verkanten.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Dann kÃ¶nnte niemand mehr das Gitter schlieÃŸen. Nicht auszudenken, was dann passieren wÃ¼rde. Zum GlÃ¼ck weiÃŸ das ja keiner, dass ich den SchlÃ¼ssel habe.
 	AI_StopProcessInfos (self);
 };
 
@@ -109,7 +109,7 @@ INSTANCE DIA_Haupttorwache_PICKPOCKET (C_INFO)
 	condition	= DIA_Haupttorwache_PICKPOCKET_Condition;
 	information	= DIA_Haupttorwache_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es wäre ein Kinderspiel seinen Schlüssel zu stehlen)";
+	description = "(Es wÃ¤re ein Kinderspiel seinen SchlÃ¼ssel zu stehlen)";
 };                       
 
 FUNC INT DIA_Haupttorwache_PICKPOCKET_Condition()

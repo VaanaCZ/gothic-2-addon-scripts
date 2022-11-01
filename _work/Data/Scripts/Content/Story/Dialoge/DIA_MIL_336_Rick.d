@@ -42,7 +42,7 @@ func int DIA_Rick_HALLO_Condition ()
 func void DIA_Rick_HALLO_Info ()
 {
 	AI_Output (other, self, "DIA_Rick_HALLO_15_00"); //Wie sieht's aus?
-	AI_Output (self, other, "DIA_Rick_HALLO_10_01"); //Wenn du reden willst, rede mit Rumbold. Ich bin nur hier, falls jemand Ärger macht.
+	AI_Output (self, other, "DIA_Rick_HALLO_10_01"); //Wenn du reden willst, rede mit Rumbold. Ich bin nur hier, falls jemand Ã„rger macht.
 
 	AI_StopProcessInfos (self);		
 };

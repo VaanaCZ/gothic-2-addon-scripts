@@ -31,7 +31,7 @@ instance DIA_Addon_Cronos_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Hallo_Condition;
 	information	 = 	DIA_Addon_Cronos_Hallo_Info;
 
-	description	 = 	"Kann ich kurz stören?";
+	description	 = 	"Kann ich kurz stÃ¶ren?";
 };
 
 func int DIA_Addon_Cronos_Hallo_Condition ()
@@ -41,9 +41,9 @@ func int DIA_Addon_Cronos_Hallo_Condition ()
 
 func void DIA_Addon_Cronos_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //Kann ich kurz stören?
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(überrascht) DU bist es. Dass ich dich nochmal zu Gesicht bekomme hätte ich nicht gedacht.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Ganz schön mutig, dich noch mal bei uns blicken zu lassen. Es gab Zeiten, da hätten wir dir glatt das Fell über die Ohren gezogen.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //Kann ich kurz stÃ¶ren?
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(Ã¼berrascht) DU bist es. Dass ich dich nochmal zu Gesicht bekomme hÃ¤tte ich nicht gedacht.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Ganz schÃ¶n mutig, dich noch mal bei uns blicken zu lassen. Es gab Zeiten, da hÃ¤tten wir dir glatt das Fell Ã¼ber die Ohren gezogen.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Du kannst froh sein, dass das schon ein paar Wochen her ist und sich alle wieder beruhigen konnten.
 };
 
@@ -71,10 +71,10 @@ func int DIA_Addon_Cronos_WasMachstdu_Condition ()
 func void DIA_Addon_Cronos_WasMachstdu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Was machst du hier?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //(verwirrt) Meine Aufgabe besteht darin, mehr über die Wächter des Tempels herauszufinden.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Das ist schon ein harter Brocken, im wahrsten Sinne des Wortes. Diese Steinwächter haben eine mir völlig fremde Eigenschaft.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //In einem Moment stehen sie völlig leblos herum, und im nächsten Moment stürmen sie wie besessen auf dich los.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Ich habe ihre treibende Kraft noch nicht bestimmen können, aber eins ist sicher. Sie ist magischen Ursprungs.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //(verwirrt) Meine Aufgabe besteht darin, mehr Ã¼ber die WÃ¤chter des Tempels herauszufinden.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Das ist schon ein harter Brocken, im wahrsten Sinne des Wortes. Diese SteinwÃ¤chter haben eine mir vÃ¶llig fremde Eigenschaft.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //In einem Moment stehen sie vÃ¶llig leblos herum, und im nÃ¤chsten Moment stÃ¼rmen sie wie besessen auf dich los.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Ich habe ihre treibende Kraft noch nicht bestimmen kÃ¶nnen, aber eins ist sicher. Sie ist magischen Ursprungs.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Waechter
@@ -86,7 +86,7 @@ instance DIA_Addon_Cronos_Waechter		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Waechter_Condition;
 	information	 = 	DIA_Addon_Cronos_Waechter_Info;
 
-	description	 = 	"Erzähl' mir mehr über diese Steinwächter.";
+	description	 = 	"ErzÃ¤hl' mir mehr Ã¼ber diese SteinwÃ¤chter.";
 };
 
 func int DIA_Addon_Cronos_Waechter_Condition ()
@@ -99,10 +99,10 @@ func int DIA_Addon_Cronos_Waechter_Condition ()
 
 func void DIA_Addon_Cronos_Waechter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Erzähl' mir mehr über diese Steinwächter.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //(verwirrt) Viel kann ich dir bisher noch nicht sagen. Wir haben sie leider zerstören müssen. Jetzt sind sie ungefährlich.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //ErzÃ¤hl' mir mehr Ã¼ber diese SteinwÃ¤chter.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //(verwirrt) Viel kann ich dir bisher noch nicht sagen. Wir haben sie leider zerstÃ¶ren mÃ¼ssen. Jetzt sind sie ungefÃ¤hrlich.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //Als wir hierher kamen, haben sie uns angegriffen.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Wir konnten sie nur mit vereinten Kräften besiegen und ich befürchte, dass hinter dem Portal noch mehr davon auf uns warten.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Wir konnten sie nur mit vereinten KrÃ¤ften besiegen und ich befÃ¼rchte, dass hinter dem Portal noch mehr davon auf uns warten.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Es muss einen Weg geben, ihre treibende Kraft zu bannen, so dass sie nichts weiter sind als Statuen und das auch bleiben.
 	
 };
@@ -117,7 +117,7 @@ instance DIA_Addon_Cronos_NW_Trade		(C_INFO)
 	information	 = 	DIA_Addon_Cronos_NW_Trade_Info;
 	Trade 		 = 	TRUE;
 	permanent	 = 	TRUE;
-	description	 = 	"Kannst du mir ein paar Ausrüstungsgegenstände verkaufen?";
+	description	 = 	"Kannst du mir ein paar AusrÃ¼stungsgegenstÃ¤nde verkaufen?";
 };
 
 func int DIA_Addon_Cronos_NW_Trade_Condition ()
@@ -133,7 +133,7 @@ var int DIA_Addon_Cronos_NW_Trade_OneTime;
 func void DIA_Addon_Cronos_NW_Trade_Info ()
 {
 	B_GiveTradeInv (self);
-	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //Kannst du mir ein paar Ausrüstungsgegenstände verkaufen?
+	AI_Output	(other, self, "DIA_Addon_Cronos_NW_Trade_15_00"); //Kannst du mir ein paar AusrÃ¼stungsgegenstÃ¤nde verkaufen?
 
 	if (DIA_Addon_Cronos_NW_Trade_OneTime==FALSE)
 	{

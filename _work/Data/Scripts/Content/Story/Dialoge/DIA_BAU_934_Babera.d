@@ -31,7 +31,7 @@ instance DIA_Babera_HALLO		(C_INFO)
 	condition	 = 	DIA_Babera_HALLO_Condition;
 	information	 = 	DIA_Babera_HALLO_Info;
 
-	description	 = 	"Hallo, schönes Mädchen.";
+	description	 = 	"Hallo, schÃ¶nes MÃ¤dchen.";
 };
 
 func int DIA_Babera_HALLO_Condition ()
@@ -41,8 +41,8 @@ func int DIA_Babera_HALLO_Condition ()
 
 func void DIA_Babera_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Hallo, schönes Mädchen.
-	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //Süßholzraspeln wirkt bei mir nicht, Junge. Sag, was du willst. Ich hab zu tun.
+	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Hallo, schÃ¶nes MÃ¤dchen.
+	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //SÃ¼ÃŸholzraspeln wirkt bei mir nicht, Junge. Sag, was du willst. Ich hab zu tun.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -55,7 +55,7 @@ instance DIA_Babera_WIESIEHTSAUS		(C_INFO)
 	condition	 = 	DIA_Babera_WIESIEHTSAUS_Condition;
 	information	 = 	DIA_Babera_WIESIEHTSAUS_Info;
 
-	description	 = 	"Wie läuft's mit der Feldarbeit?";
+	description	 = 	"Wie lÃ¤uft's mit der Feldarbeit?";
 };
 
 func int DIA_Babera_WIESIEHTSAUS_Condition ()
@@ -68,32 +68,32 @@ func int DIA_Babera_WIESIEHTSAUS_Condition ()
 
 func void DIA_Babera_WIESIEHTSAUS_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Wie läuft's mit der Feldarbeit?
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Guck dir die riesigen Felder an, die wir bestellen müssen, dann weißt du, wie es läuft.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Wie lÃ¤uft's mit der Feldarbeit?
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Guck dir die riesigen Felder an, die wir bestellen mÃ¼ssen, dann weiÃŸt du, wie es lÃ¤uft.
 	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Suchst du Landarbeit?
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 
 	if (hero.guild == GIL_NONE)
 		{
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Nein. Eigentlich will ich Söldner werden.", DIA_Babera_WIESIEHTSAUS_Nein );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Nein. Eigentlich will ich SÃ¶ldner werden.", DIA_Babera_WIESIEHTSAUS_Nein );
 			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Vielleicht.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
 		};
 };
 func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 {
 	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Vielleicht.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //Wenn das so ist, dann geh am Besten zu unserem Bauern Sekob, dem alten Menschenschinder. Der hat vielleicht was für dich.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Du kannst es natürlich auch auf Onars großem Hof am Ende der langen Allee versuchen.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Aber nimm dich vor den Söldnern in Acht. Sie mögen keine Fremden.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //Wenn das so ist, dann geh am Besten zu unserem Bauern Sekob, dem alten Menschenschinder. Der hat vielleicht was fÃ¼r dich.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Du kannst es natÃ¼rlich auch auf Onars groÃŸem Hof am Ende der langen Allee versuchen.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Aber nimm dich vor den SÃ¶ldnern in Acht. Sie mÃ¶gen keine Fremden.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
 
 func void DIA_Babera_WIESIEHTSAUS_Nein ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Nein. Eigentlich will ich Söldner werden.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Dann bist du hier falsch. Die Söldner findest du meistens auf dem Hof des Großbauern.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Nein. Eigentlich will ich SÃ¶ldner werden.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Dann bist du hier falsch. Die SÃ¶ldner findest du meistens auf dem Hof des GroÃŸbauern.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
@@ -127,17 +127,17 @@ func void DIA_Babera_BRONKO_Info ()
 	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //Sag mal, der grimmige Typ da...
 	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //Das ist Bronko. Was ist mit ihm?
 	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //Ist das euer Bauer?
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(lacht) Hat er dir das erzählt, ja? Sekob ist unser Bauer. Bronko ist nur ein Faulpelz und Tunichtgut. Aber er hat Bärenkräfte.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(lacht) Hat er dir das erzÃ¤hlt, ja? Sekob ist unser Bauer. Bronko ist nur ein Faulpelz und Tunichtgut. Aber er hat BÃ¤renkrÃ¤fte.
 	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Deswegen sagt keiner was, wenn er nicht arbeitet.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //Die Einzigen, die er fürchtet, seid ihr Söldner.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_05"); //Die Einzigen, die er fÃ¼rchtet, seid ihr SÃ¶ldner.
 
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Die Einzigen, die ihn zur Arbeit bewegen könnten, sind die Söldner. Vor denen hat er Angst.
+			AI_Output			(self, other, "DIA_Babera_BRONKO_16_06"); //Die Einzigen, die ihn zur Arbeit bewegen kÃ¶nnten, sind die SÃ¶ldner. Vor denen hat er Angst.
 
 		};
 	Babera_BronkoKeinBauer = TRUE;

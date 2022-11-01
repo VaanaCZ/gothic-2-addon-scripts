@@ -49,26 +49,26 @@ func VOID DIA_Addon_BenchPirate_Hello_Info()
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_02"); //Francis soll mal Holz für die Palisade besorgen. Das wird er ja wohl noch können.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_02"); //Francis soll mal Holz fÃ¼r die Palisade besorgen. Das wird er ja wohl noch kÃ¶nnen.
 		}
 		else 
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_03"); //Von mir können die Banditen jetzt kommen. Mit Greg an unserer Seite, können die uns gar nichts.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_03"); //Von mir kÃ¶nnen die Banditen jetzt kommen. Mit Greg an unserer Seite, kÃ¶nnen die uns gar nichts.
 		};
 	}
 	else
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, der Lageranführer, ist 'ne Witzfigur. Den kann doch keiner Ernst nehmen.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, der LageranfÃ¼hrer, ist 'ne Witzfigur. Den kann doch keiner Ernst nehmen.
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg vertraut Francis, weil er zu dumm ist, um zu bescheißen! Aber ihn deswegen gleich zum Anführer zu machen....
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg vertraut Francis, weil er zu dumm ist, um zu bescheiÃŸen! Aber ihn deswegen gleich zum AnfÃ¼hrer zu machen....
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Wenn Greg nicht bald wieder kommt und ich endlich wieder Planken unter den Füßen habe, werde ich noch landkrank.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Wenn Greg nicht bald wieder kommt und ich endlich wieder Planken unter den FÃ¼ÃŸen habe, werde ich noch landkrank.
 		};
 	};	
 };
@@ -132,12 +132,12 @@ func void DIA_Addon_BenchPirate_ComeOn_Info ()
 	AI_Output	(other, self, "DIA_Addon_BenchPirate_ComeOn_15_01"); //Der Canyon wartet.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //Genau DAHIN gehe ich ja zurück...
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //Genau DAHIN gehe ich ja zurÃ¼ck...
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //Aye, aye, Käpt'n!
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //Aye, aye, KÃ¤pt'n!
 		if (C_BodyStateContains (self, BS_SIT))
 		{
 			AI_StandUp (self);
@@ -173,7 +173,7 @@ FUNC INT DIA_Addon_BenchPirate_GoHome_Condition()
 FUNC VOID DIA_Addon_BenchPirate_GoHome_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_BenchPirate_GoHome_15_00"); //Ich brauch dich nicht mehr.
-	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_01"); //Ich bin wieder im Lager, Käpt'n!
+	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_01"); //Ich bin wieder im Lager, KÃ¤pt'n!
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");
@@ -203,14 +203,14 @@ FUNC INT DIA_Addon_BenchPirate_TooFar_Condition()
 FUNC VOID DIA_Addon_BenchPirate_TooFar_Info()
 {	
 	AI_Output (self ,other,"DIA_Addon_BenchPirate_TooFar_07_01"); //Wir sind zu weit weg vom Lager. 
-	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_02"); //Das gefällt mir gar nicht.
+	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_02"); //Das gefÃ¤llt mir gar nicht.
 	if (C_HowManyPiratesInParty() >= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_02"); //Ich geh zurück zum Lager!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_02"); //Ich geh zurÃ¼ck zum Lager!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_03"); //Ich und die Jungs gehen zurück zum Lager!
+		AI_Output (self, other, "DIA_Addon_Matt_TooFar_07_03"); //Ich und die Jungs gehen zurÃ¼ck zum Lager!
 	};
 		
 	B_Addon_PiratesGoHome();

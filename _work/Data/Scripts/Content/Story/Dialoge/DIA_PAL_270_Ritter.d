@@ -43,7 +43,7 @@ func void DIA_Ritter_OUT_Info ()
 {
 	if (DIA_Ritter_OUT_NoPerm == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Du kommst aus Khorinis, nicht wahr? Wenn das alles hier vorbei ist, dann werde ich dorthin zurückgehen.
+		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Du kommst aus Khorinis, nicht wahr? Wenn das alles hier vorbei ist, dann werde ich dorthin zurÃ¼ckgehen.
 		DIA_Ritter_OUT_NoPerm = TRUE;
 	};
 	

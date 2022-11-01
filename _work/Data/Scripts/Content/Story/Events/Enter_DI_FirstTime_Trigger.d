@@ -8,11 +8,11 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 	//----- Levelchange verbarrikadieren --------
 	if (Npc_HasItems (hero,ITKE_SHIP_LEVELCHANGE_MIS))
 	{
-		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die Tür wieder zu!!!!
+		Npc_RemoveInvItems	(hero,	ITKE_SHIP_LEVELCHANGE_MIS,1);	//Joly: denn SHIP zen wird bei DRAGONISLAND UND NEWWORLD benutzt. Beim betreten der Insel ist die TÃ¼r wieder zu!!!!
 	};
 	
 	
-	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen Brückenevent
+	if (hero.attribute[ATR_DEXTERITY] < 15)//Joly:wegen BrÃ¼ckenevent
 	{
 		Wld_InsertItem	(ItPo_Perm_DEX, "FP_ITEM_DI_ENTER_05");
 	};
@@ -21,7 +21,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 //##
 //##	B_ENTER_DRAGONISLAND			
 //##	//Joly: Steht hier, denn hier bin ich sicher, 
-//##	dass alle am start sind und können befüllt werden!
+//##	dass alle am start sind und kÃ¶nnen befÃ¼llt werden!
 //##
 //###############################################
 
@@ -62,28 +62,28 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			Log_CreateTopic (TOPIC_MyCrew, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_MyCrew, LOG_RUNNING);
 
-			//----- Die Kapitäne -----
+			//----- Die KapitÃ¤ne -----
 	
 				if ( JorgenIsCaptain == TRUE)	//Jorgen
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Jorgen, mein Kapitän, wird hier auf dem Schiff warten, bis ich zurück bin."); 
+					Log_AddEntry (TOPIC_MyCrew,"Jorgen, mein KapitÃ¤n, wird hier auf dem Schiff warten, bis ich zurÃ¼ck bin."); 
 				};
 			
 				if ( TorlofIsCaptain == TRUE)	//Torlof
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Torlof, mein Kapitän, wird hier auf dem Schiff bleiben und es verteidigen, so lange ich auf der Insel bin. Bei ihm kann ich meine Geschicklichkeit und Stärke verbessern."); 
+					Log_AddEntry (TOPIC_MyCrew,"Torlof, mein KapitÃ¤n, wird hier auf dem Schiff bleiben und es verteidigen, so lange ich auf der Insel bin. Bei ihm kann ich meine Geschicklichkeit und StÃ¤rke verbessern."); 
 				};
 			
 				if ( JackIsCaptain == TRUE)		//Jack
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Jack, mein Kapitän, wird hier auf dem Schiff warten, bis ich zurück bin. Er wirkt ein bisschen ängstlich. Hoffentlich legt sich das wieder. Ich brauche ihn."); 
+					Log_AddEntry (TOPIC_MyCrew,"Jack, mein KapitÃ¤n, wird hier auf dem Schiff warten, bis ich zurÃ¼ck bin. Er wirkt ein bisschen Ã¤ngstlich. Hoffentlich legt sich das wieder. Ich brauche ihn."); 
 				};
 				
 			//----- Die Crew -----
 				
 				if ( Lee_IsOnBoard == LOG_SUCCESS) //Lee
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Lee wird in meiner Abwesenheit, das Kommando auf dem Schiff übernehmen. Bei ihm kann meine Fertigkeiten mit Ein- und Zweihandwaffen verbessern."); 
+					Log_AddEntry (TOPIC_MyCrew,"Lee wird in meiner Abwesenheit, das Kommando auf dem Schiff Ã¼bernehmen. Bei ihm kann meine Fertigkeiten mit Ein- und Zweihandwaffen verbessern."); 
 				};
 			
 				if ( MiltenNW_IsOnBoard == LOG_SUCCESS) //Milten
@@ -102,21 +102,21 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			
 				if ( Mario_IsOnBoard == LOG_SUCCESS) //Mario
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Mario ist ein wenig seltsam. Er hockte die gesamte Überfahrt am Heck des Schiffes und hat seitdem noch kein Wort gesagt. "); 
+					Log_AddEntry (TOPIC_MyCrew,"Mario ist ein wenig seltsam. Er hockte die gesamte Ãœberfahrt am Heck des Schiffes und hat seitdem noch kein Wort gesagt. "); 
 				};
 			
 				if ( Wolf_IsOnBoard== LOG_SUCCESS) //Wolf
 				{
-						Log_AddEntry (TOPIC_MyCrew,"Wolf kann mir Armbrust und Bogenschießen beibringen."); 
+						Log_AddEntry (TOPIC_MyCrew,"Wolf kann mir Armbrust und BogenschieÃŸen beibringen."); 
 				};
 			
 			
 				if ( Vatras_IsOnBoard == LOG_SUCCESS)	//Vatras
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Vatras hat sich in die Magierkajüte zurück gezogen. Bei ihm kann ich mich heilen lassen und eine Menge über das Tränkebrauen lernen. "); 
+					Log_AddEntry (TOPIC_MyCrew,"Vatras hat sich in die MagierkajÃ¼te zurÃ¼ck gezogen. Bei ihm kann ich mich heilen lassen und eine Menge Ã¼ber das TrÃ¤nkebrauen lernen. "); 
 					if (hero.guild == GIL_KDF)
 					{
-						Log_AddEntry (TOPIC_MyCrew,"Vatras kann auch meinen magischen Kreis erhöhen. "); 
+						Log_AddEntry (TOPIC_MyCrew,"Vatras kann auch meinen magischen Kreis erhÃ¶hen. "); 
 					};
 				};	
 				
@@ -127,13 +127,13 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			
 				if ( Diego_IsOnBoard == LOG_SUCCESS)	//Diego 
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Diego will mir helfen, wenn ich nicht mehr weiter weiß, und hat Munition für mich. Bei ihm kann ich das Schlösser knacken und Bogen- oder Armbrustschießen lernen."); 
+					Log_AddEntry (TOPIC_MyCrew,"Diego will mir helfen, wenn ich nicht mehr weiter weiÃŸ, und hat Munition fÃ¼r mich. Bei ihm kann ich das SchlÃ¶sser knacken und Bogen- oder ArmbrustschieÃŸen lernen."); 
 				};
 			
 				if ( Gorn_IsOnBoard == LOG_SUCCESS)	//Gorn
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Gorn hat auf unserer Reise kein bisschen geschlafen. Er wird auf das Schiff acht geben. Ich denke, es ist bei ihm in guten Händen."); 
-					Log_AddEntry (TOPIC_MyCrew,"Bei Gorn kann ich meine Fähigkeiten mit der Zweihandwaffen verbessern."); 
+					Log_AddEntry (TOPIC_MyCrew,"Gorn hat auf unserer Reise kein bisschen geschlafen. Er wird auf das Schiff acht geben. Ich denke, es ist bei ihm in guten HÃ¤nden."); 
+					Log_AddEntry (TOPIC_MyCrew,"Bei Gorn kann ich meine FÃ¤higkeiten mit der Zweihandwaffen verbessern."); 
 				};	
 			
 				if ( Lares_IsOnBoard == LOG_SUCCESS)	//Lares
@@ -153,7 +153,7 @@ func void ENTER_DI_FIRSTTIME_TRIGGER ()
 			
 				if ( Girion_IsOnBoard == LOG_SUCCESS)	//Girion
 				{
-					Log_AddEntry (TOPIC_MyCrew,"Girion hält sehr zurück. Bewundernswert seine Geduld. Immerhin ist er Kampflehrer. Vielleicht kommt mir das hier noch zu Gute."); 
+					Log_AddEntry (TOPIC_MyCrew,"Girion hÃ¤lt sehr zurÃ¼ck. Bewundernswert seine Geduld. Immerhin ist er Kampflehrer. Vielleicht kommt mir das hier noch zu Gute."); 
 				};	
 	
 		IntroduceChapter (KapWechsel_6,KapWechsel_6_Text,"chapter6.tga","chapter_01.wav", 6000);

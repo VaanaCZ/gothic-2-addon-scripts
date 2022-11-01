@@ -81,10 +81,10 @@ FUNC VOID DIA_Addon_Miguel_Hi_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//F¸r gewˆhnlich suche ich Pflanzen.
+		AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_03");//F√ºr gew√∂hnlich suche ich Pflanzen.
 	};
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Das meiste Zeug, was hier w‰chst, l‰sst sich f¸r irgendwas gebrauchen.
-	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Viele Pflanzen haben Heilwirkung und Sumpfkrautst‰ngel kannst du rauchen.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_04");//Das meiste Zeug, was hier w√§chst, l√§sst sich f√ºr irgendwas gebrauchen.
+	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_05");//Viele Pflanzen haben Heilwirkung und Sumpfkrautst√§ngel kannst du rauchen.
 	AI_Output (self, other, "DIA_Addon_Miguel_Hi_11_06");//Vor meiner Zeit in der Barriere habe ich bei einem Alchemisten gearbeitet.
 };
 //---------------------------------------------------------------------
@@ -109,10 +109,10 @@ FUNC INT DIA_Addon_Miguel_Story_Condition()
 FUNC VOID DIA_Addon_Miguel_Story_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Miguel_Story_15_00");//Warum haben sie dich in die Barriere gebracht?
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Ich habe viel mit Tr‰nken gearbeitet, die den Verstand beeinflussen.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_01");//Ich habe viel mit Tr√§nken gearbeitet, die den Verstand beeinflussen.
 	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_02");//Mein Lehrmeister Ignaz hat eines Abends anstatt seinem Wein mein 'Experiment' getrunken.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Das hat ihn zweitweise ... ‰h ... unberechenbar gemacht und seitdem ist er etwas verwirrt.
-	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(abf‰llig) Die Magier haben mich daraufhin in die Barriere werfen lassen. 'Forschung an verbotenem Wissen' haben sie es genannt.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_03");//Das hat ihn zweitweise ... √§h ... unberechenbar gemacht und seitdem ist er etwas verwirrt.
+	AI_Output (self, other, "DIA_Addon_Miguel_Story_11_04");//(abf√§llig) Die Magier haben mich daraufhin in die Barriere werfen lassen. 'Forschung an verbotenem Wissen' haben sie es genannt.
 };
 
 //---------------------------------------------------------------------
@@ -125,7 +125,7 @@ INSTANCE DIA_Addon_Miguel_Lager   (C_INFO)
 	condition   = DIA_Addon_Miguel_Lager_Condition;
 	information = DIA_Addon_Miguel_Lager_Info;
 	permanent   = FALSE;
-	description = "Was kannst du mir ¸ber das Lager erz‰hlen?";
+	description = "Was kannst du mir √ºber das Lager erz√§hlen?";
 };
 FUNC INT DIA_Addon_Miguel_Lager_Condition()
 {	
@@ -133,9 +133,9 @@ FUNC INT DIA_Addon_Miguel_Lager_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Lager_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Was kannst du mir ¸ber das Lager erz‰hlen?
+	AI_Output (other, self, "DIA_Addon_Miguel_Lager_15_00"); //Was kannst du mir √ºber das Lager erz√§hlen?
 	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_01"); //Nicht viel. Ich war selber noch nicht drin.
-	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Nur Ravens Leute waren von Anfang an dabei. Alle anderen, die sp‰ter kamen, so wie ich, m¸ssen warten, bis neue Leute angefordert werden.
+	AI_Output (self, other, "DIA_Addon_Miguel_Lager_11_02"); //Nur Ravens Leute waren von Anfang an dabei. Alle anderen, die sp√§ter kamen, so wie ich, m√ºssen warten, bis neue Leute angefordert werden.
 };
 
 //-----------------------------------------
@@ -161,9 +161,9 @@ FUNC INT DIA_Addon_Miguel_WhereFrom_Condition()
 FUNC VOID DIA_Addon_Miguel_WhereFrom_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_00"); //Woher bist du gekommen?
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Na, den selben Weg wie du, nehme ich an. Mit den Piraten. ‹bers Meer.
-	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Das Tal hier ist komplett abgeschieden. ‹ber Land gibt es keine Verbindung.
-	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(bed‰chtig) Genau.
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_01"); //Na, den selben Weg wie du, nehme ich an. Mit den Piraten. √úbers Meer.
+	AI_Output (self, other, "DIA_Addon_Miguel_WhereFrom_11_02"); //Das Tal hier ist komplett abgeschieden. √úber Land gibt es keine Verbindung.
+	AI_Output (other, self, "DIA_Addon_Miguel_WhereFrom_15_03"); //(bed√§chtig) Genau.
 };
 
 //-----------------------------------------
@@ -189,10 +189,10 @@ FUNC VOID DIA_Addon_Miguel_Angefordert_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Miguel_Angefordert_15_00"); //Wann werden neue Leute angefordert?
 	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_01"); //Na, wenn drinnen welche fehlen.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Wenn sich ein Buddler von 'nem Minecrawler fressen l‰sst, wird einer von uns reingelassen.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_02"); //Wenn sich ein Buddler von 'nem Minecrawler fressen l√§sst, wird einer von uns reingelassen.
 	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_03"); //Manchmal bringen sie sich auch gegenseitig um. Aber das ist in letzter Zeit besser geworden.
 	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_04"); //Raven hat den Zugang zur Mine irgendwie geregelt, so dass nicht alle gleichzeitig reinkommen.
-	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Aber wie das genau funktioniert, weiﬂ ich nicht. War ja noch nie drinnen.
+	AI_Output (self, other, "DIA_Addon_Miguel_Angefordert_11_05"); //Aber wie das genau funktioniert, wei√ü ich nicht. War ja noch nie drinnen.
 };
 
 //---------------------------------------------------------------------
@@ -216,17 +216,17 @@ FUNC INT DIA_Addon_Miguel_Fortuno_Condition()
 };
 FUNC VOID DIA_Addon_Miguel_Fortuno_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno ist ziemlich verwirrt und kˆnnte einen Trank vertragen, der ihm seine Erinnerung zur¸ckgibt.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_00");//Fortuno ist ziemlich verwirrt und k√∂nnte einen Trank vertragen, der ihm seine Erinnerung zur√ºckgibt.
 	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_01");//Fortuno? Das ist doch der Diener von Raven.
 	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_02");//Er war es. Jetzt ist er nur noch ein Wrack. Und das ist Ravens Schuld.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Raven? Ich habe bisher groﬂe St¸cke auf ihn gehalten. Hm, gut. Aber hier im Sumpf kann ich keinen Trank brauen.
-	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//ICH kˆnnte den Trank brauen. Im Lager steht ein Labor- Tisch. Ich brauche nur das Rezept.
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Sei vorsichtig mit diesem Rezept. Es ist gef‰hrlich, diesen Trank zu brauen.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_03");//Raven? Ich habe bisher gro√üe St√ºcke auf ihn gehalten. Hm, gut. Aber hier im Sumpf kann ich keinen Trank brauen.
+	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_04");//ICH k√∂nnte den Trank brauen. Im Lager steht ein Labor- Tisch. Ich brauche nur das Rezept.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_05");//Sei vorsichtig mit diesem Rezept. Es ist gef√§hrlich, diesen Trank zu brauen.
 	B_GiveInvItems (self, other, ITWr_Addon_MCELIXIER_01,1);
-	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Wenn irgendwas beim Brauen schiefgeht, oder eine Zutat nicht stimmt, wirkt der Trank tˆdlich.
+	AI_Output (self, other, "DIA_Addon_Miguel_Fortuno_11_06");//Wenn irgendwas beim Brauen schiefgeht, oder eine Zutat nicht stimmt, wirkt der Trank t√∂dlich.
 	AI_Output (other, self, "DIA_Addon_Miguel_Fortuno_15_07");//Ich werde vorsichtig sein.
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Miguel hat mir ein Rezept f¸r einen Trank gegeben. Damit kann ich Fortuno helfen, sich wieder zu erinnern. Ich sollte den Trank nur brauen, wenn ich mich mit allen Zutaten auskenne. Sonst wirkt er tˆdlich. ");
+	B_LogEntry (Topic_Addon_Fortuno,"Miguel hat mir ein Rezept f√ºr einen Trank gegeben. Damit kann ich Fortuno helfen, sich wieder zu erinnern. Ich sollte den Trank nur brauen, wenn ich mich mit allen Zutaten auskenne. Sonst wirkt er t√∂dlich. ");
 };
 
 //---------------------------------------------------------------------
@@ -251,11 +251,11 @@ FUNC INT DIA_Addon_Miguel_BRAU_Condition()
 FUNC VOID DIA_Addon_Miguel_BRAU_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Miguel_BRAU_15_00");//Kannst du mir was beibringen?
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//Keine Zeit. Ich bin hier, um an Gold zu kommen. Und solange ich nicht ins Lager komme, verdien' ich mir eben was mit meinen Kr‰utern.
-	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Aber wenn du ein paar Tr‰nke brauchst, ich hab noch welche dabei.
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_01");//Keine Zeit. Ich bin hier, um an Gold zu kommen. Und solange ich nicht ins Lager komme, verdien' ich mir eben was mit meinen Kr√§utern.
+	AI_Output (self, other, "DIA_Addon_Miguel_BRAU_11_02");//Aber wenn du ein paar Tr√§nke brauchst, ich hab noch welche dabei.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Bei Miguel kann ich Tr‰nke und Pflanzen kaufen.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Bei Miguel kann ich Tr√§nke und Pflanzen kaufen.");
 };
 
 //---------------------------------------------------------------------

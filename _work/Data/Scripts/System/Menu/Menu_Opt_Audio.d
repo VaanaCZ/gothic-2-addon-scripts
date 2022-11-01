@@ -62,7 +62,7 @@ INSTANCE MENUITEM_AUDIO_SFXVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Sound-Lautst.";
-	text[1]		= "Lautstärke von Soundeffekten und Sprachausgabe."; // Kommentar
+	text[1]		= "LautstÃ¤rke von Soundeffekten und Sprachausgabe."; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		= MENU_START_SOUND_Y + MENU_SOUND_DY*0;
@@ -98,7 +98,7 @@ INSTANCE MENUITEM_AUDIO_MUSICVOL(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Musik-Lautst.";
-	text[1]		= "Läutstärke der Hintergrundmusik."; // Kommentar
+	text[1]		= "LÃ¤utstÃ¤rke der Hintergrundmusik."; // Kommentar
 
 	// Position und Dimension
 	posx		= 1000;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*1;
@@ -177,7 +177,7 @@ instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Soundprovider";
-	text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
+	text[1]		= "Eine Ã„nderung wirkt sich erst beim Neustart aus!"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*3;
@@ -226,7 +226,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
 	// PATCH 1.30 - added 5.1 and 7.1 speaker system flags
-	text[0]		=   "2 Lautsprecher|Kopfhörer|Surround|4 Lautsprecher|5.1 Lautsprecher|7.1 Lautsprecher";
+	text[0]		=   "2 Lautsprecher|KopfhÃ¶rer|Surround|4 Lautsprecher|5.1 Lautsprecher|7.1 Lautsprecher";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -243,7 +243,7 @@ instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Hall-Effekt";
-	text[1]		= "Sollen Halleffekte in Höhlen aktiviert werden ?"; // Kommentar
+	text[1]		= "Sollen Halleffekte in HÃ¶hlen aktiviert werden ?"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5;
@@ -276,7 +276,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Sprache-Hall";
-	text[1]		= "Sollen Halleffekte für Sprachausgabe aktiviert werden ?";
+	text[1]		= "Sollen Halleffekte fÃ¼r Sprachausgabe aktiviert werden ?";
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6;
@@ -310,7 +310,7 @@ instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Sample-Rate";
-	text[1]		= "Eine Änderung wirkt sich erst beim Neustart aus!"; // Kommentar
+	text[1]		= "Eine Ã„nderung wirkt sich erst beim Neustart aus!"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*7;
@@ -342,7 +342,7 @@ instance MENUITEM_AUDIO_SAMPLERATE_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_AUDIO_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"ZurÃ¼ck";
 	// Position und Dimension
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

@@ -339,7 +339,7 @@ PROTOTYPE   Prototype_StonePlate (C_ITEM)
 //------------------------------------------------------------------------------------------
 instance ItWr_StrStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Steintafel der Stärke I";
+	description 		=	"Steintafel der StÃ¤rke I";
 	on_state[0]			=   Use_StrStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -350,7 +350,7 @@ func void Use_StrStonePlate1 ()
 };
 instance ItWr_StrStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Steintafel der Stärke II";
+	description 		=	"Steintafel der StÃ¤rke II";
 	on_state[0]			=   Use_StrStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -361,7 +361,7 @@ func void Use_StrStonePlate2 ()
 };
 instance ItWr_StrStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Steintafel der Stärke III";
+	description 		=	"Steintafel der StÃ¤rke III";
 	on_state[0]			=   Use_StrStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_01.3DS";	 
 };
@@ -559,7 +559,7 @@ func void Use_TwoHStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_BowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Steintafel des Bogenschützen I";
+	description 		=	"Steintafel des BogenschÃ¼tzen I";
 	on_state[0]			=   Use_BowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -570,7 +570,7 @@ func void Use_BowStonePlate1 ()
 };
 instance ItWr_BowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Steintafel des Bogenschützen II";
+	description 		=	"Steintafel des BogenschÃ¼tzen II";
 	on_state[0]			=   Use_BowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -581,7 +581,7 @@ func void Use_BowStonePlate2 ()
 };
 instance ItWr_BowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Steintafel des Bogenschützen III";
+	description 		=	"Steintafel des BogenschÃ¼tzen III";
 	on_state[0]			=   Use_BowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -595,7 +595,7 @@ func void Use_BowStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_CrsBowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Steintafel des Armbrustschützen I";
+	description 		=	"Steintafel des ArmbrustschÃ¼tzen I";
 	on_state[0]			=   Use_CrsBowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -606,7 +606,7 @@ func void Use_CrsBowStonePlate1 ()
 };
 instance ItWr_CrsBowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Steintafel des Armbrustschützen II";
+	description 		=	"Steintafel des ArmbrustschÃ¼tzen II";
 	on_state[0]			=   Use_CrsBowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -617,7 +617,7 @@ func void Use_CrsBowStonePlate2 ()
 };
 instance ItWr_CrsBowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Steintafel des Armbrustschützen III";
+	description 		=	"Steintafel des ArmbrustschÃ¼tzen III";
 	on_state[0]			=   Use_CrsBowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };

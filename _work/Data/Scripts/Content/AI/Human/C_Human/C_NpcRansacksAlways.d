@@ -1,8 +1,8 @@
 // ************************************************
 // C_NpcRansacksAlways
 // -------------------
-// enthält alle NPCs, die Plündern OBWOHL schon ein 
-// anderer NSC plündert
+// enthÃ¤lt alle NPCs, die PlÃ¼ndern OBWOHL schon ein 
+// anderer NSC plÃ¼ndert
 // ************************************************
 
 func int C_NpcRansacksAlways (var C_Npc slf)

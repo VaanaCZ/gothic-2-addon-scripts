@@ -21,11 +21,11 @@ func void ZS_Ghost ()
 
 	B_ResetAll (self);
 	
-	// ------ PercTime überschreiben ------
+	// ------ PercTime Ã¼berschreiben ------
 	Npc_SetPercTime		(self, 0.1);
 	
 	AI_StandUp		(self);				
-	AI_SetWalkmode 	(self,NPC_WALK);			// Walkmode für den Zustand
+	AI_SetWalkmode 	(self,NPC_WALK);			// Walkmode fÃ¼r den Zustand
 	AI_GotoWP		(self, self.wp);			// Gehe zum Tagesablaufstart
 	AI_AlignToWP	(self);
 };
@@ -75,7 +75,7 @@ func void ZS_GhostWusel ()
 
 func int ZS_GhostWusel_Loop ()
 {
-	// ------ zum nächsten FP ------	
+	// ------ zum nÃ¤chsten FP ------	
 	if (Npc_GetStateTime (self) >= 3)
 	{
 		if (Npc_IsOnFP (self, "FP_ROAM"))

@@ -22,7 +22,7 @@ FUNC VOID DIA_Gestath_EXIT_Info()
 	
 	if (Hlp_IsItem (heroArmor, ITAR_DJG_Crawler) == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(trocken) Coole Rüstung!
+		AI_Output			(self, other, "DIA_Gestath_EXIT_09_00"); //(trocken) Coole RÃ¼stung!
 	};
 	AI_StopProcessInfos (self);
 };
@@ -56,9 +56,9 @@ func void DIA_Gestath_HALLO_Info ()
 };
 func void DIA_Gestath_HALLO_plate ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Tolle Rüstung, die du da trägst.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Tolle RÃ¼stung, die du da trÃ¤gst.
 	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Ja. Schwer zu kriegen. Die ist aus Minecrawlerplatten gemacht. Hat mir ein Typ namens Wolf angefertigt.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //War damals Gefangener hier in der Kolonie. Hab ihm ein paar Minecrawlerplatten besorgt und ein paar Tage später war das Ding fertig. Der Typ ist okay.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //War damals Gefangener hier in der Kolonie. Hab ihm ein paar Minecrawlerplatten besorgt und ein paar Tage spÃ¤ter war das Ding fertig. Der Typ ist okay.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
@@ -68,26 +68,26 @@ func void DIA_Gestath_HALLO_plate ()
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Wo ist dieser Wolf jetzt?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Ist lange her, dass ich ihn gesehen habe. Damals war er einer der Söldner hier in der Kolonie.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Vermute, dass er immer noch mit den Jungs rumhängt.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Ist lange her, dass ich ihn gesehen habe. Damals war er einer der SÃ¶ldner hier in der Kolonie.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Vermute, dass er immer noch mit den Jungs rumhÃ¤ngt.
 };
 
 func void DIA_Gestath_HALLO_was ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Was machst du hier oben?
 	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Ich bin hier, um Geld zu machen.
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Hier in der Einöde?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Ich bin Jäger. Hab mich auf die schwierigen Fälle spezialisiert.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Feuerwarane, Minecrawler, Drachensnapper ... alles, was sonst kein anderer jagen würde. Das bringt Geld.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Hier in der EinÃ¶de?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Ich bin JÃ¤ger. Hab mich auf die schwierigen FÃ¤lle spezialisiert.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Feuerwarane, Minecrawler, Drachensnapper ... alles, was sonst kein anderer jagen wÃ¼rde. Das bringt Geld.
 	
-	Info_AddChoice	(DIA_Gestath_HALLO, "Tolle Rüstung, die du da trägst.", DIA_Gestath_HALLO_plate );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Tolle RÃ¼stung, die du da trÃ¤gst.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Was gibt es hier zu sehen?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Ne Menge Feuerwarane, Orks und was weiß ich noch alles. Bin noch nicht weiter oben auf der Hochebene gewesen.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Würde auch dir davon abraten, es zu versuchen. Hört sich nicht gut an, was da oben haust.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Ne Menge Feuerwarane, Orks und was weiÃŸ ich noch alles. Bin noch nicht weiter oben auf der Hochebene gewesen.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //WÃ¼rde auch dir davon abraten, es zu versuchen. HÃ¶rt sich nicht gut an, was da oben haust.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -124,7 +124,7 @@ func void DIA_Gestath_Drachen_Info ()
 	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Kannst du auch Drachen ausnehmen?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(lacht) Frag mich das später noch mal, wenn du bereit für so was bist, ok?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(lacht) Frag mich das spÃ¤ter noch mal, wenn du bereit fÃ¼r so was bist, ok?
 	}
 	else
 	{	
@@ -215,7 +215,7 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			}
 			else
 			{
-				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //Im Moment wüsste ich nicht, was ich dir noch beibringen könnte.
+				AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_03"); //Im Moment wÃ¼sste ich nicht, was ich dir noch beibringen kÃ¶nnte.
 			};
 };
 
@@ -228,7 +228,7 @@ func void DIA_Gestath_TEACHHUNTING_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_FireTongue))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Die Zunge von einem Feuerwaran schlägst du mit einem Messerhieb aus dem Maul, während du sie mit der anderen Hand festhältst.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Die Zunge von einem Feuerwaran schlÃ¤gst du mit einem Messerhieb aus dem Maul, wÃ¤hrend du sie mit der anderen Hand festhÃ¤ltst.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -237,7 +237,7 @@ func void DIA_Gestath_TEACHHUNTING_CrawlerPlate()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_CrawlerPlate))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //Crawlerplatten musst du mit einem stabilen Messer aus dem Rücken dieser Biester schälen.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_CrawlerPlate_09_00"); //Crawlerplatten musst du mit einem stabilen Messer aus dem RÃ¼cken dieser Biester schÃ¤len.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -246,7 +246,7 @@ func void DIA_Gestath_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Zangen stecken ziemlich tief im Schädel eines Feldräubers oder Minecrawlers. Es bedarf einiger Anstrengung, sie herauszuhebeln.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Zangen stecken ziemlich tief im SchÃ¤del eines FeldrÃ¤ubers oder Minecrawlers. Es bedarf einiger Anstrengung, sie herauszuhebeln.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Am Stirnansatz des Drachensnappers ist die beste Stelle, ihm das Horn mit einem stabilen Messer aus dem Schädel zu trennen.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Am Stirnansatz des Drachensnappers ist die beste Stelle, ihm das Horn mit einem stabilen Messer aus dem SchÃ¤del zu trennen.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -264,7 +264,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Drachenschuppen sind sehr hartnäckig, aber gerade wenn du glaubst, du schaffst es nicht, löst sich das Ding von dem Rücken des Drachen.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Drachenschuppen sind sehr hartnÃ¤ckig, aber gerade wenn du glaubst, du schaffst es nicht, lÃ¶st sich das Ding von dem RÃ¼cken des Drachen.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

@@ -20,12 +20,12 @@ FUNC VOID DIA_Fenia_EXIT_Info()
 {
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //Noch einen recht schönen Tag, Herr Paladin.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_00"); //Noch einen recht schÃ¶nen Tag, Herr Paladin.
 	};
 
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //Gute Reise, ehrwürdiger Magier.
+		AI_Output			(self, other, "DIA_Fenia_EXIT_17_01"); //Gute Reise, ehrwÃ¼rdiger Magier.
 	};
 	
 	AI_StopProcessInfos (self);
@@ -91,9 +91,9 @@ FUNC VOID DIA_Fenia_Hallo_Info()
 		if (hero.guild == GIL_NONE)
 		{
 			AI_Output			(self, other, "DIA_Fenia_Hallo_17_00"); //Du siehst recht mitgenommen aus. Lange nicht geschlafen, wie?
-			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Zu lange, würde ich sagen.
+			AI_Output			(other, self, "DIA_Fenia_Hallo_15_01"); //Zu lange, wÃ¼rde ich sagen.
 		};
-	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //Komm ruhig näher. Bei mir wirst du finden, was du suchst!
+	AI_Output			(self, other, "DIA_Fenia_Hallo_17_02"); //Komm ruhig nÃ¤her. Bei mir wirst du finden, was du suchst!
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Fenia handelt mit Nahrung auf dem Weg zum Hafen.");
@@ -163,7 +163,7 @@ instance DIA_Fenia_MoreTraders (C_INFO)
 	condition	= DIA_Fenia_MoreTraders_Condition;
 	information	= DIA_Fenia_MoreTraders_Info;
 	permanent 	= FALSE;
-	description	= "Gibt es noch andere Händler hier im Hafen?";
+	description	= "Gibt es noch andere HÃ¤ndler hier im Hafen?";
 };
 
 func int DIA_Fenia_MoreTraders_Condition ()
@@ -175,8 +175,8 @@ func int DIA_Fenia_MoreTraders_Condition ()
 };
 func void DIA_Fenia_MoreTraders_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Gibt es noch andere Händler hier im Hafen?
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Wenn du dich an der Kaimauer links hälst, findest du meinen Mann Halvor. Er verkauft Fische.
+	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Gibt es noch andere HÃ¤ndler hier im Hafen?
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Wenn du dich an der Kaimauer links hÃ¤lst, findest du meinen Mann Halvor. Er verkauft Fische.
 	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Auf der anderen Seite gibt es da noch Brahim, den Kartenzeichner.
 };
 
@@ -204,7 +204,7 @@ func int DIA_Fenia_OV_Condition ()
 func void DIA_Fenia_OV_Info ()
 {
 	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Kennst du jemanden aus dem oberen Viertel?
-	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(lacht) Wenn ich jemanden dort kennen würde, dann würde ich hier sicher nicht stehen, mein Junge.
+	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(lacht) Wenn ich jemanden dort kennen wÃ¼rde, dann wÃ¼rde ich hier sicher nicht stehen, mein Junge.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -230,10 +230,10 @@ func int DIA_Fenia_Interesting_Condition ()
 func void DIA_Fenia_Interesting_Info ()
 {
 	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //Was gibt es hier im Hafen Interessantes zu sehen?
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Nun. Wenn du etwas erleben willst, dann geh doch einfach rüber zu Kardifs Hafenkneipe an der Kaimauer. Da ist immer was los.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Nun. Wenn du etwas erleben willst, dann geh doch einfach rÃ¼ber zu Kardifs Hafenkneipe an der Kaimauer. Da ist immer was los.
 	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //Du kannst es kaum verfehlen. Der Kerl, der da am Eingang steht, wird dich sicher darauf aufmerksam machen.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //Ansonsten gibt es da noch das große Schiff der Paladine. Die stattliche Kriegsgaleere des Königs. Wirklich sehenswert.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //Wenn du dich an der Kaimauer links hältst und unter der hohen Felswand hindurchgehst, wirst du es finden.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //Ansonsten gibt es da noch das groÃŸe Schiff der Paladine. Die stattliche Kriegsgaleere des KÃ¶nigs. Wirklich sehenswert.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //Wenn du dich an der Kaimauer links hÃ¤ltst und unter der hohen Felswand hindurchgehst, wirst du es finden.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -261,7 +261,7 @@ func void DIA_Fenia_Aufregend_Info ()
 	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Ist hier in letzter Zeit was aufregendes passiert?
 	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Kann man wohl sagen. Ist noch gar nicht lange her
 	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Ein Dieb ist hier vorbeigerannt, Er hatte wohl in der Unterstadt einem Bogen gestohlen.
-	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Die Miliz kam natürlich wie immer viel zu spät.
+	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Die Miliz kam natÃ¼rlich wie immer viel zu spÃ¤t.
 	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Er ist ihnen entkommen - ist einfach ins Hafenbecken gesprungen und weg war er.
 };
 

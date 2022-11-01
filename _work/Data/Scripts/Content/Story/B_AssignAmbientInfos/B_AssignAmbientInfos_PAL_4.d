@@ -45,7 +45,7 @@ FUNC VOID DIA_PAL_4_JOIN_Info()
 	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //Wie werde ich Paladin?
 	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Wenn es dir wirklich ernst ist, solltest du dich in den Dienst der Paladine stellen.
 	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Geh zur Kaserne und rede mit Lord Andre. Lass dich in die Miliz aufnehmen.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Vielleicht bekommst du dann eine Chance, dich als würdig zu erweisen.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Vielleicht bekommst du dann eine Chance, dich als wÃ¼rdig zu erweisen.
 };
 
 // *************************************************************************
@@ -71,8 +71,8 @@ FUNC INT DIA_PAL_4_PEOPLE_Condition()
 FUNC VOID DIA_PAL_4_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //Wer hat hier das Kommando?
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Lord Hagen ist der Oberbefehlshaber über alle Truppen auf der Insel. Er hat auch - solange wir hier sind - das Amt des Statthalters inne.
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Aber er ist sehr beschäftigt. Wenn du etwas zu klären hast, geh zur Kaserne und rede mit Lord Andre.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Lord Hagen ist der Oberbefehlshaber Ã¼ber alle Truppen auf der Insel. Er hat auch - solange wir hier sind - das Amt des Statthalters inne.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Aber er ist sehr beschÃ¤ftigt. Wenn du etwas zu klÃ¤ren hast, geh zur Kaserne und rede mit Lord Andre.
 };
 
 // *************************************************************************
@@ -139,12 +139,12 @@ FUNC VOID DIA_PAL_4_STANDARD_Info()
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Innos sei Dank! Die Bedrohung der Drachen ist abgewendet. Jetzt müssen wir uns nur noch um die Orks kümmern, um an das Erz zu kommen.
+			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Innos sei Dank! Die Bedrohung der Drachen ist abgewendet. Jetzt mÃ¼ssen wir uns nur noch um die Orks kÃ¼mmern, um an das Erz zu kommen.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //Ich habe keine Zeit, mich mit den Gerüchten, die hier in der Stadt erzählt werden, zu befassen.
+		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //Ich habe keine Zeit, mich mit den GerÃ¼chten, die hier in der Stadt erzÃ¤hlt werden, zu befassen.
 	};
 };
 

@@ -42,7 +42,7 @@ func int DIA_Cedric_Hallo_Condition ()
 };
 func void DIA_Cedric_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Ich bin Schwertmeister Cedric, Paladin des Königs.
+	AI_Output (self, other, "DIA_Cedric_Hallo_12_00"); //Ich bin Schwertmeister Cedric, Paladin des KÃ¶nigs.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -70,9 +70,9 @@ func void DIA_Cedric_CanTeach_Info ()
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Ich kann dich im Kampf mit einhändigen Waffen trainieren.
+		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Ich kann dich im Kampf mit einhÃ¤ndigen Waffen trainieren.
 		Cedric_Teach1H = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Paladin Cedric kann mich im Kampf mit Einhändern unterweisen.");
+		B_LogEntry (TOPIC_CityTeacher,"Paladin Cedric kann mich im Kampf mit EinhÃ¤ndern unterweisen.");
 	}
 	else
 	{
@@ -110,7 +110,7 @@ FUNC VOID DIA_Cedric_Teach_Info()
 	
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Du hast alles über den Schwertkampf gelernt. Mehr kann ich dir nicht zeigen.
+		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Du hast alles Ã¼ber den Schwertkampf gelernt. Mehr kann ich dir nicht zeigen.
 	}
 	else
 	{

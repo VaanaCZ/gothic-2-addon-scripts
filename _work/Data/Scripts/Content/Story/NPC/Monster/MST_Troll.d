@@ -102,11 +102,11 @@ INSTANCE Maya_Troll	(Mst_Default_Troll)
 };
 
 //*********************************
-//	Höhlentroll bei Orks auf der DI    
+//	HÃ¶hlentroll bei Orks auf der DI    
 //*********************************
 INSTANCE Troll_DI	(Mst_Default_Troll)
 {
-	name		=	"Höhlentroll";
+	name		=	"HÃ¶hlentroll";
 
 	aivar[AIV_MaxDistToWp]			= 300;
 	aivar[AIV_OriginalFightTactic] 	= FAI_TROLL;

@@ -25,7 +25,7 @@ instance DJG_713_Biff_NW (Npc_Default)
 	fight_tactic		= FAI_HUMAN_STRONG;	// MASTER / STRONG / COWARD
 	
 	// ------ Equippte Waffen ------																	//Munition wird automatisch generiert, darf aber angegeben werden
-	EquipItem			(self, ItMw_2h_Sld_Axe); //Joly: Axt!!!!! Biff keine andere Waffe geben!!!!!!!!! DOCH DEFAULT MÄSSIG- die instanz gibts nicht mehr 
+	EquipItem			(self, ItMw_2h_Sld_Axe); //Joly: Axt!!!!! Biff keine andere Waffe geben!!!!!!!!! DOCH DEFAULT MÃ„SSIG- die instanz gibts nicht mehr 
 
 	// ------ Inventory ------
 	B_CreateAmbientInv 	(self);
@@ -39,8 +39,8 @@ instance DJG_713_Biff_NW (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 65); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 65); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_7130;

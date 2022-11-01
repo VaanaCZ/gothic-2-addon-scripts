@@ -84,7 +84,7 @@ func void DIA_Bennet_DI_TRADE_Info ()
 {
 	AI_Output			(other, self, "DIA_Bennet_DI_TRADE_15_00"); //Welche Waffen kannst du mir verkaufen?
 	B_GiveTradeInv (self);
-	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Nur die besten. Das weiﬂt du doch.
+	AI_Output			(self, other, "DIA_Bennet_DI_TRADE_06_01"); //Nur die besten. Das wei√üt du doch.
 };
   
 ///////////////////////////////////////////////////////////////////////
@@ -220,7 +220,7 @@ INSTANCE DIA_Bennet_TeachSTR (C_INFO)
 	condition	= DIA_Bennet_TeachSTR_Condition;
 	information	= DIA_Bennet_TeachSTR_Info;
 	permanent	= TRUE;
-	description = "Ich will st‰rker werden.";
+	description = "Ich will st√§rker werden.";
 };                       
 
 FUNC INT DIA_Bennet_TeachSTR_Condition()
@@ -233,7 +233,7 @@ FUNC INT DIA_Bennet_TeachSTR_Condition()
  
 FUNC VOID DIA_Bennet_TeachSTR_Info()
 {	
-	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Ich will st‰rker werden.
+	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Ich will st√§rker werden.
 	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //Ein starker Arm wird in Zeiten wie diesen gebraucht.
 	
 	Info_ClearChoices (DIA_Bennet_TeachSTR);
@@ -285,7 +285,7 @@ func void DIA_Bennet_DI_DragonEgg_Info ()
 	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_00"); //Ich habe hier ein Drachenei.
 	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_01"); //Und?
 	AI_Output			(other, self, "DIA_Bennet_DI_DragonEgg_15_02"); //Nun. Ich dachte ...
-	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Ich weiﬂ, was du denkst. Vergiss es, behalte das Ding. Ich will es nicht.
+	AI_Output			(self, other, "DIA_Bennet_DI_DragonEgg_06_03"); //Ich wei√ü, was du denkst. Vergiss es, behalte das Ding. Ich will es nicht.
 	B_GivePlayerXP (XP_Ambient);
 };
 	
@@ -314,7 +314,7 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
 func void DIA_Bennet_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Wir haben hier alles erledigt.
-	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Freut mich zu hˆren. Ich kann diese olle Schmiede nicht mehr sehen. Ich brauche wieder festen Boden unter den F¸ﬂen.
+	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Freut mich zu h√∂ren. Ich kann diese olle Schmiede nicht mehr sehen. Ich brauche wieder festen Boden unter den F√º√üen.
 	AI_StopProcessInfos (self);
 };
 

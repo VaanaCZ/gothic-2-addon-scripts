@@ -11,7 +11,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[1]		= "MENUITEM_GAME_SUB_TITLES";
 	items[2]		= "MENUITEM_GAME_SUB_TITLES_CHOICE";
 	
-//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch über die ini tunebar
+//	items[3]		= "MENUITEM_GAME_ANIMATE_WINDOWS";					// in gothic 2 nur noch Ã¼ber die ini tunebar
 //	items[4]		= "MENUITEM_GAME_ANIMATE_WINDOWS_CHOICE";
 
 	items[3]		= "MENUITEM_GAME_FIGHTFOCUS";
@@ -29,7 +29,7 @@ INSTANCE MENU_OPT_GAME(C_MENU_DEF)
 	items[11]		= "MENUITEM_MSENSITIVITY";
 	items[12]		= "MENUITEM_MSENSITIVITY_SLIDER";
 	
-	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch über die ini tunebar
+	//items[11]		= "MENUITEM_GAME_BLOOD";				// in gothic 2 nur noch Ã¼ber die ini tunebar
 	//items[12]		= "MENUITEM_GAME_BLOOD_CHOICE";
 	
 	items[13]		= "MENUITEM_GAME_OLDCONTROLS";
@@ -305,7 +305,7 @@ instance MENUITEM_MSENSITIVITY_SLIDER(C_MENU_ITEM_DEF)
 
 
 //
-// Bluteffekte deaktivert in Gothic 2 (nur noch über die INI tunebar)
+// Bluteffekte deaktivert in Gothic 2 (nur noch Ã¼ber die INI tunebar)
 //
 /*
 INSTANCE MENUITEM_GAME_BLOOD(C_MENU_ITEM_DEF)
@@ -380,7 +380,7 @@ INSTANCE MENUITEM_GAME_OLDCONTROLS_CHOICE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GAME_BACK(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"Zurück";
+	text[0]		=	"ZurÃ¼ck";
 	// Position und Dimension	
 	posx		=	1000;		posy		=	MENU_BACK_Y;
 	dimx		=	6192;		dimy		=	MENU_SOUND_DY;

@@ -56,10 +56,10 @@ FUNC VOID DIA_Lutero_Hallo_Info()
 {	
 	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Mein Name ist Lutero. Ich handle mit den verschiedensten Sachen.
 	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Welche Ware bietest du an?
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Nun, vor allem seltene und ausgefallene Dinge. Bisher ist es mir immer gelungen, die Wünsche meiner Kunden zu erfüllen.
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Nun, vor allem seltene und ausgefallene Dinge. Bisher ist es mir immer gelungen, die WÃ¼nsche meiner Kunden zu erfÃ¼llen.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Lutero handelt mit ausgefallenen und seltenen Gegenständen im oberen Viertel."); 
+	B_LogEntry (TOPIC_CityTrader, "Lutero handelt mit ausgefallenen und seltenen GegenstÃ¤nden im oberen Viertel."); 
 };
 //************************************************************
 //	GetLost
@@ -105,7 +105,7 @@ INSTANCE DIA_Lutero_Snapper(C_INFO)
 	condition	= DIA_Lutero_Snapper_Condition;
 	information	= DIA_Lutero_Snapper_Info;
 	permanent	= FALSE;
-	description = "Suchst du bestimmte Gegenstände?";
+	description = "Suchst du bestimmte GegenstÃ¤nde?";
 };                       
 
 FUNC INT DIA_Lutero_Snapper_Condition()
@@ -118,12 +118,12 @@ FUNC INT DIA_Lutero_Snapper_Condition()
 };
 FUNC VOID DIA_Lutero_Snapper_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Suchst du bestimmte Gegenstände?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Ja, für meinen derzeitigen Auftrag benötige ich die Krallen eines Snappers.
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Aber keine einfachen Krallen. Es muss schon was Besonderes sein. Die Krallen einer mächtigen Bestie, die viele Männer getötet hat, oder etwas Derartiges.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Suchst du bestimmte GegenstÃ¤nde?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Ja, fÃ¼r meinen derzeitigen Auftrag benÃ¶tige ich die Krallen eines Snappers.
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Aber keine einfachen Krallen. Es muss schon was Besonderes sein. Die Krallen einer mÃ¤chtigen Bestie, die viele MÃ¤nner getÃ¶tet hat, oder etwas Derartiges.
 	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Wo finde ich Snapper?
 	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Es gibt ein paar hier auf der Insel, die meisten hausen jedoch im Minental.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Und was springt für mich dabei raus?
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Und was springt fÃ¼r mich dabei raus?
 	
 	if (other.guild == GIL_KDF)
 	{
@@ -133,11 +133,11 @@ FUNC VOID DIA_Lutero_Snapper_Info()
 	{
 		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Ich kann dir einen Ring der Unbezwingbarkeit besorgen.
 	};
-	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Ich werde mal sehen, was sich machen lässt.
+	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Ich werde mal sehen, was sich machen lÃ¤sst.
 	
 	Log_CreateTopic (Topic_Lutero,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lutero,LOG_RUNNING);
-	B_LogEntry (Topic_Lutero,"Der Händler Lutero sucht nach Krallen eines besonders mächtigen Snappers.");
+	B_LogEntry (Topic_Lutero,"Der HÃ¤ndler Lutero sucht nach Krallen eines besonders mÃ¤chtigen Snappers.");
 	
 	Lutero_Krallen = LOG_RUNNING;
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Lutero_Kralle(C_INFO)
 	condition	= DIA_Lutero_Kralle_Condition;
 	information	= DIA_Lutero_Kralle_Info;
 	permanent	= FALSE;
-	description = "Ich habe besondere Snapperkrallen für dich. ";
+	description = "Ich habe besondere Snapperkrallen fÃ¼r dich. ";
 };                       
 
 FUNC INT DIA_Lutero_Kralle_Condition()
@@ -164,7 +164,7 @@ FUNC INT DIA_Lutero_Kralle_Condition()
 };
 FUNC VOID DIA_Lutero_Kralle_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //Ich habe besondere Snapperkrallen für dich.
+	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //Ich habe besondere Snapperkrallen fÃ¼r dich.
 	Lutero_Krallen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
 	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Das wird meinen Kunden freuen.
@@ -172,9 +172,9 @@ FUNC VOID DIA_Lutero_Kralle_Info()
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Den Runenstein habe ich allerdings nicht hier. Aber ich weiß, wo er liegt.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //Wenn du von der Stadt zur Herberge gehst, kommst du unter einer Brücke hindurch.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Dort, in einer Höhle, hat ein Freund von mir einen Runenstein in einer Truhe hinterlegt. Hier ist der Schlüssel.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Den Runenstein habe ich allerdings nicht hier. Aber ich weiÃŸ, wo er liegt.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //Wenn du von der Stadt zur Herberge gehst, kommst du unter einer BrÃ¼cke hindurch.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Dort, in einer HÃ¶hle, hat ein Freund von mir einen Runenstein in einer Truhe hinterlegt. Hier ist der SchlÃ¼ssel.
 		B_GiveInvItems (self, other, ITKE_RUNE_MIS,1); 
 	}
 	else

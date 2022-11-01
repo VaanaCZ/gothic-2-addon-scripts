@@ -55,7 +55,7 @@ INSTANCE ItPl_Weed(C_Item)
 
 INSTANCE ItPl_Beet (C_Item)
 {	
-	name 				=	"Feldrübe";
+	name 				=	"FeldrÃ¼be";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI;	
@@ -523,13 +523,13 @@ INSTANCE ItPl_Planeberry (C_Item)
 
 
 //******************************************************************************************
-//		Pflanze zum brauen von temporären und permanten Tränken
+//		Pflanze zum brauen von temporÃ¤ren und permanten TrÃ¤nken
 //******************************************************************************************
 
 
 INSTANCE ItPl_Temp_Herb(C_Item)
 {	
-	name 				=	"Feldknöterich";
+	name 				=	"FeldknÃ¶terich";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	
@@ -557,7 +557,7 @@ INSTANCE ItPl_Temp_Herb(C_Item)
 
 INSTANCE ItPl_Perm_Herb(C_Item)
 {	
-	name 				=	"Kronstöckel";
+	name 				=	"KronstÃ¶ckel";
 
 	mainflag 			=	ITEM_KAT_FOOD;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;	

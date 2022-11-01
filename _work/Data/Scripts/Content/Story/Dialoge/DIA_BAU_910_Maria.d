@@ -84,7 +84,7 @@ instance DIA_Maria_Soeldner	(C_INFO)
 	condition	= DIA_Maria_Soeldner_Condition;
 	information	= DIA_Maria_Soeldner_Info;
 	permanent  	= FALSE;
-	description = "Stören dich die Söldner?";
+	description = "StÃ¶ren dich die SÃ¶ldner?";
 };
 
 func int DIA_Maria_Soeldner_Condition ()
@@ -97,7 +97,7 @@ func int DIA_Maria_Soeldner_Condition ()
 
 func void DIA_Maria_Soeldner_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //Stören dich die Söldner?
+	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //StÃ¶ren dich die SÃ¶ldner?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
@@ -105,15 +105,15 @@ func void DIA_Maria_Soeldner_Info ()
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //Na ja, seit die Söldner hier sind, ist der Hof viel sicherer geworden.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //Na ja, seit die SÃ¶ldner hier sind, ist der Hof viel sicherer geworden.
 		};
 
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Damals, als wir noch auf uns allein gestellt waren, kamen regelmäßig die Milizen aus der Stadt und haben uns ausgeplündert.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Einen Großteil der Ernte haben sie weggeschleppt. Und auch einige Schafe haben sie mitgenommen. Getan haben sie dafür nichts.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Damals, als wir noch auf uns allein gestellt waren, kamen regelmÃ¤ÃŸig die Milizen aus der Stadt und haben uns ausgeplÃ¼ndert.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Einen GroÃŸteil der Ernte haben sie weggeschleppt. Und auch einige Schafe haben sie mitgenommen. Getan haben sie dafÃ¼r nichts.
 	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //Ein paar von den Mistkerlen haben uns sogar bestohlen.
 	if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //Nimm mir das jetzt nicht übel, Soldat. Ich weiß, ihr seid nicht alle so.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //Nimm mir das jetzt nicht Ã¼bel, Soldat. Ich weiÃŸ, ihr seid nicht alle so.
 		};	
 };
 
@@ -215,19 +215,19 @@ func void DIA_Maria_Belohnung_Info ()
 	if (other.guild == GIL_SLD)
 	|| (Npc_KnowsInfo (other, DIA_Onar_HowMuch))
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_01"); //Du arbeitest doch für meinen Mann als Söldner, richtig?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_01"); //Du arbeitest doch fÃ¼r meinen Mann als SÃ¶ldner, richtig?
 		AI_Output (other, self, "DIA_Maria_Belohnung_15_02"); //Richtig.
 		AI_Output (self, other, "DIA_Maria_Belohnung_17_03"); //Wie viel zahlt mein Mann dir?
 		B_Say_Gold (other, self, SOLD);
 		AI_Output (self, other, "DIA_Maria_Belohnung_17_04"); //Das ist zu wenig. Geh zu ihm und sag ihm, er soll dir mehr zahlen.
 		AI_Output (other, self, "DIA_Maria_Belohnung_15_05"); //Und du denkst, das wird er tun?
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_06"); //Er weiß, was passiert, wenn er es nicht tut. Glaub mir.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_06"); //Er weiÃŸ, was passiert, wenn er es nicht tut. Glaub mir.
 		Maria_MehrGold = TRUE;
 		Maria_Belohnung = TRUE;
 	}
 	else if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //Willst du hier auf dem Hof als Söldner anheuern?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //Willst du hier auf dem Hof als SÃ¶ldner anheuern?
 		Info_ClearChoices (DIA_Maria_Belohnung);
 		Info_AddChoice (DIA_Maria_Belohnung, "Nein - eigentlich nicht.", DIA_Maria_Belohnung_Gold);
 		Info_AddChoice (DIA_Maria_Belohnung, "Ja.", DIA_Maria_Belohnung_SOLD);
@@ -252,8 +252,8 @@ func void DIA_Maria_Belohnung_Gold()
 func void DIA_Maria_Belohnung_SOLD()
 {
 	AI_Output (other, self, "DIA_Maria_Belohnung_SOLD_15_00"); //Ja.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //Gut, wenn du hier arbeitest, werde ich dafür sorgen, dass du ordentlich bezahlt wirst.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Komm wieder, wenn du mit meinem Mann über deinen Lohn gesprochen hast.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //Gut, wenn du hier arbeitest, werde ich dafÃ¼r sorgen, dass du ordentlich bezahlt wirst.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Komm wieder, wenn du mit meinem Mann Ã¼ber deinen Lohn gesprochen hast.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 		
@@ -267,7 +267,7 @@ instance DIA_Maria_AboutOnar	(C_INFO)
 	condition	= DIA_Maria_AboutOnar_Condition;
 	information	= DIA_Maria_AboutOnar_Info;
 	permanent  	= FALSE;
-	description = "Erzähl mir über Onar.";
+	description = "ErzÃ¤hl mir Ã¼ber Onar.";
 };
 
 func int DIA_Maria_AboutOnar_Condition ()
@@ -280,12 +280,12 @@ func int DIA_Maria_AboutOnar_Condition ()
 
 func void DIA_Maria_AboutOnar_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //Erzähl mir über Onar.
+	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //ErzÃ¤hl mir Ã¼ber Onar.
 	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //Er ist ein guter Mann. Etwas brummig und sehr ungeduldig, aber jeder hat seine Fehler.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //Ich habe meinem Mann gesagt, warum lässt du dich von den Soldaten aus der Stadt so unterbuttern?
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //Ich habe meinem Mann gesagt, warum lÃ¤sst du dich von den Soldaten aus der Stadt so unterbuttern?
 	AI_Output (self, other, "DIA_Maria_AboutOnar_17_03"); //Tu was, hab ich gesagt.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Daraufhin hat er die Söldner angeheuert. Jetzt komme ich mir hier vor wie im Krieg.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //Aber schließlich ist ja auch Krieg, nicht?
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Daraufhin hat er die SÃ¶ldner angeheuert. Jetzt komme ich mir hier vor wie im Krieg.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //Aber schlieÃŸlich ist ja auch Krieg, nicht?
 };
 
 // ************************************************************
@@ -314,18 +314,18 @@ func void DIA_Maria_PERM_Info ()
 	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //Ist hier in letzter Zeit was Aufregendes passiert?
 	if (Kapitel <= 2)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //Die Paladine sind hier in der Nähe vorbeigezogen.
+		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //Die Paladine sind hier in der NÃ¤he vorbeigezogen.
 		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //Wir dachten erst, sie wollen den Hof angreifen, aber sie sind ins Minental gewandert.
 	}
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Wasili hat vor ein paar Nächten einen Dieb verjagt. Sonst war alles ruhig.
+		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Wasili hat vor ein paar NÃ¤chten einen Dieb verjagt. Sonst war alles ruhig.
 	};
 	
 	if (Kapitel >= 4)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_04"); //Seit ein Teil der Söldner weg ist, ist es hier ruhiger geworden.
+		AI_Output (self, other, "DIA_Maria_PERM_17_04"); //Seit ein Teil der SÃ¶ldner weg ist, ist es hier ruhiger geworden.
 	};
 };
 			

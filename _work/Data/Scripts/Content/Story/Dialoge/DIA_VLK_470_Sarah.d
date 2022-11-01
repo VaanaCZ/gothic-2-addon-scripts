@@ -93,7 +93,7 @@ instance DIA_Sarah_HALLO		(C_INFO)
 	condition	 = 	DIA_Sarah_HALLO_Condition;
 	information	 = 	DIA_Sarah_HALLO_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Wie läuft das Geschäft? ";
+	description	 = 	"Wie lÃ¤uft das GeschÃ¤ft? ";
 };
 
 func int DIA_Sarah_HALLO_Condition ()
@@ -102,11 +102,11 @@ func int DIA_Sarah_HALLO_Condition ()
 };
 func void DIA_Sarah_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Wie läuft das Geschäft?
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Als die Paladine kamen, dachte ich, das wäre eine gute Gelegenheit, Geschäfte zu machen.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Aber sie lassen sich ihre Waffen von Harad herstellen, und weder Hakon noch ich verdienen auch nur ein Goldstück an ihnen.
+	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Wie lÃ¤uft das GeschÃ¤ft?
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Als die Paladine kamen, dachte ich, das wÃ¤re eine gute Gelegenheit, GeschÃ¤fte zu machen.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Aber sie lassen sich ihre Waffen von Harad herstellen, und weder Hakon noch ich verdienen auch nur ein GoldstÃ¼ck an ihnen.
 	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Dazu kommt noch, dass die Nahrungsversorgung durch die Bauern ausbleibt - und alles teurer geworden ist.
-	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Da ist es nur ein kleiner Trost, daß die Paladine meine Hotelrechnung bezahlen.
+	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //Da ist es nur ein kleiner Trost, daÃŸ die Paladine meine Hotelrechnung bezahlen.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Sarah handelt mit Waffen am Marktplatz.");	
@@ -134,12 +134,12 @@ func int DIA_Sarah_Bauern_Condition ()
 func void DIA_Sarah_Bauern_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Was ist das Problem mit den Bauern?
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Sie weigern sich, ihre Erträge zu liefern.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Jetzt, da keine Schiffe mehr anlegen, ist die Stadt natürlich auf die Versorgung durch die Bauern angewiesen.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //Und Onar, der größte Bauer, hat sich Söldner angeworben, die seinen Hof vor den Stadtwachen beschützen. Die würden sich die Waren sonst einfach holen.
-	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Aber die Söldner bewachen nicht nur den Hof von Onar.
-	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Sie kommen bis zu den kleinen Höfen in der Nähe der Stadt heran, um die Bauern dort einzuschüchtern.
-	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Als ich an Akils Hof vorbeigekommen bin, hab ich sie gesehen. Ich möchte jetzt nicht in seiner Haut stecken.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Sie weigern sich, ihre ErtrÃ¤ge zu liefern.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Jetzt, da keine Schiffe mehr anlegen, ist die Stadt natÃ¼rlich auf die Versorgung durch die Bauern angewiesen.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //Und Onar, der grÃ¶ÃŸte Bauer, hat sich SÃ¶ldner angeworben, die seinen Hof vor den Stadtwachen beschÃ¼tzen. Die wÃ¼rden sich die Waren sonst einfach holen.
+	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Aber die SÃ¶ldner bewachen nicht nur den Hof von Onar.
+	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Sie kommen bis zu den kleinen HÃ¶fen in der NÃ¤he der Stadt heran, um die Bauern dort einzuschÃ¼chtern.
+	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Als ich an Akils Hof vorbeigekommen bin, hab ich sie gesehen. Ich mÃ¶chte jetzt nicht in seiner Haut stecken.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -165,9 +165,9 @@ func int DIA_Sarah_AkilsHof_Condition ()
 func void DIA_Sarah_AkilsHof_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Wo finde ich Akils Hof?
-	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Wenn du aus dem östlichen Stadttor hier raugehst, und dem Weg rechts hoch folgst, kommst du zu einer Treppe.
-	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //Die führt hoch zu Akils Hof.
-	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Aber da würde ich jetzt nicht hingehen - die Söldner sind bestimmt noch da.
+	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Wenn du aus dem Ã¶stlichen Stadttor hier raugehst, und dem Weg rechts hoch folgst, kommst du zu einer Treppe.
+	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //Die fÃ¼hrt hoch zu Akils Hof.
+	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Aber da wÃ¼rde ich jetzt nicht hingehen - die SÃ¶ldner sind bestimmt noch da.
 };
 
 
@@ -226,7 +226,7 @@ func int DIA_Sarah_IMKNAST_Condition ()
 func void DIA_Sarah_IMKNAST_Info ()
 {
 	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Du! Du wagst, hier aufzukreuzen? Ich kann es nicht beweisen, aber ich wette, du hast deine Finger in diesem schmutzigen Spiel.
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Du trägst mit Schuld daran, dass ich hier sitze. Du und dieser verdammte Canthar - möge Innos euch strafen!
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Du trÃ¤gst mit Schuld daran, dass ich hier sitze. Du und dieser verdammte Canthar - mÃ¶ge Innos euch strafen!
 	
 	AI_StopProcessInfos (self);
 };
@@ -254,8 +254,8 @@ func int DIA_Sarah_Success_Condition ()
 };
 func void DIA_Sarah_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar wollte dich reinlegen. Und sich deinen Stand unter den Nagel reissen. Aber ich habe ihn der Stadtwache übergeben.
-	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Da hast du dich mit einem gefährlichen Mann angelegt. Ich kenne den Mistkerl schon lange, er war schon immer auf meinen Platz scharf.
+	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar wollte dich reinlegen. Und sich deinen Stand unter den Nagel reissen. Aber ich habe ihn der Stadtwache Ã¼bergeben.
+	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Da hast du dich mit einem gefÃ¤hrlichen Mann angelegt. Ich kenne den Mistkerl schon lange, er war schon immer auf meinen Platz scharf.
 	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Nimm diese Waffe, als Zeichen meiner Dankbarkeit.
 	
 	B_GivePlayerXP (XP_CantharImKnast);

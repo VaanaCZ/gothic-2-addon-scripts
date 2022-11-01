@@ -43,8 +43,8 @@ FUNC INT DIA_PAL_9_JOIN_Condition()
 FUNC VOID DIA_PAL_9_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_9_JOIN_15_00"); //Wie kann ich Paladin werden?
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Diejenigen, die sich im Dienste Innos' oder des Königs würdig erweisen, werden erwählt!
-	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Das heißt im Klartext: Nur die Besten werden genommen. Aber davon bist DU noch sehr weit entfernt, mein Junge!
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_01"); //Diejenigen, die sich im Dienste Innos' oder des KÃ¶nigs wÃ¼rdig erweisen, werden erwÃ¤hlt!
+	AI_Output (self, other, "DIA_PAL_9_JOIN_09_02"); //Das heiÃŸt im Klartext: Nur die Besten werden genommen. Aber davon bist DU noch sehr weit entfernt, mein Junge!
 };
 
 // *************************************************************************
@@ -72,7 +72,7 @@ FUNC VOID DIA_PAL_9_PEOPLE_Info()
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_00"); //Wer hat hier das Kommando?
 	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_01"); //Lord Hagen.
 	AI_Output (other, self, "DIA_PAL_9_PEOPLE_15_02"); //Und?
-	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //Und sonst niemand. Lord Hagen ist der Oberbefehlshaber über die ganze Insel.
+	AI_Output (self, other, "DIA_PAL_9_PEOPLE_09_03"); //Und sonst niemand. Lord Hagen ist der Oberbefehlshaber Ã¼ber die ganze Insel.
 };
 
 // *************************************************************************
@@ -98,7 +98,7 @@ FUNC INT DIA_PAL_9_LOCATION_Condition()
 FUNC VOID DIA_PAL_9_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_9_LOCATION_15_00"); //Warum seid ihr Paladine nach Khorinis gekommen?
-	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Das geht dich nichts an, Bursche! Für dich muss es reichen zu wissen, dass wir im Dienste Innos' und des Königs handeln!
+	AI_Output (self, other, "DIA_PAL_9_LOCATION_09_01"); //Das geht dich nichts an, Bursche! FÃ¼r dich muss es reichen zu wissen, dass wir im Dienste Innos' und des KÃ¶nigs handeln!
 };
 
 // *************************************************************************
@@ -139,7 +139,7 @@ FUNC VOID DIA_PAL_9_STANDARD_Info()
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //Innos sei Dank! Die Bedrohung der Drachen ist abgewendet. Jetzt müssen wir uns nur noch um die Orks kümmern, um an das Erz zu kommen.
+			AI_Output (self, other, "DIA_PAL_9_STANDARD_09_03"); //Innos sei Dank! Die Bedrohung der Drachen ist abgewendet. Jetzt mÃ¼ssen wir uns nur noch um die Orks kÃ¼mmern, um an das Erz zu kommen.
 		};
 	}
 	else //KEIN Paladin

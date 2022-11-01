@@ -144,7 +144,7 @@ FUNC VOID PC_PrayShrine_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 }; 
 //*******************************************************
-//Für das Heil der Paladine beten
+//FÃ¼r das Heil der Paladine beten
 //*******************************************************
 INSTANCE PC_PrayShrine_Paladine (C_Info)
 {
@@ -153,7 +153,7 @@ INSTANCE PC_PrayShrine_Paladine (C_Info)
 	condition		= PC_PrayShrine_Paladine_Condition;
 	information		= PC_PrayShrine_Paladine_Info;
 	permanent		= FALSE;
-	description		= "Ein Gebet für die Paladine sprechen."; 
+	description		= "Ein Gebet fÃ¼r die Paladine sprechen."; 
 };
 
 FUNC INT PC_PrayShrine_Paladine_Condition ()
@@ -206,19 +206,19 @@ FUNC VOID PC_PrayShrine_Pray_Info()
 		{		
 			Info_ClearChoices (PC_PrayShrine_Pray);
 			Info_AddChoice (PC_PrayShrine_Pray,Dialog_Back,PC_PrayShrine_Pray_Back);
-			Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 0 Goldstücke.",PC_PrayShrine_Pray_NoPay);
+			Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 0 GoldstÃ¼cke.",PC_PrayShrine_Pray_NoPay);
 			
 			if (Npc_HasItems (hero,ItMi_Gold) >=10)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 10 Goldstücke.",PC_PrayShrine_Pray_SmallPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 10 GoldstÃ¼cke.",PC_PrayShrine_Pray_SmallPay);
 			};
 			if (Npc_HasItems (hero,ItMi_Gold) >=50)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 50 Goldstücke.",PC_PrayShrine_Pray_MediumPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 50 GoldstÃ¼cke.",PC_PrayShrine_Pray_MediumPay);
 			};
 			if (Npc_HasItems (hero,ItMi_Gold) >=100)
 			{
-				Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 100 Goldstücke.",PC_PrayShrine_Pray_BigPay);
+				Info_AddChoice (PC_PrayShrine_Pray,"Ich will beten und spende 100 GoldstÃ¼cke.",PC_PrayShrine_Pray_BigPay);
 			};
 		};
 }; 

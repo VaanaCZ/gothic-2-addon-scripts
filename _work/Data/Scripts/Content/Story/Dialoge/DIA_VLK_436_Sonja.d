@@ -80,12 +80,12 @@ func void DIA_Sonja_STANDARD_Info ()
 {
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_00"); //Sprich mit Bromor, wenn du Spaﬂ haben willst.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_00"); //Sprich mit Bromor, wenn du Spa√ü haben willst.
 	}
 	else if (other.guild == GIL_DJG)
 	&& (Sonja_Says == FALSE)
 	{
-		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //Das Problem mit euch Typen ist, dass ihr lieber Orks abschlachtet als zu vˆgeln.
+		AI_Output (self, other, "DIA_Sonja_STANDARD_16_01"); //Das Problem mit euch Typen ist, dass ihr lieber Orks abschlachtet als zu v√∂geln.
 		Sonja_Says = TRUE;
 	}
 	else

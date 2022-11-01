@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Fire_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Das Auge hat seine Kraft verloren und du wirst den nächsten Tag nicht mehr erleben.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Exit_20_00"); //Das Auge hat seine Kraft verloren und du wirst den nÃ¤chsten Tag nicht mehr erleben.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -64,13 +64,13 @@ FUNC VOID DIA_Dragon_Fire_Hello_Info()
 	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Ich kann es einfach nicht glauben, dass es wirklich noch Menschen gibt, die ihr Leben verwirken, nur um einen leibhaftigen Drachen zu sehen.
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Für so ein klobiges Ungetüm sprichst du aber noch recht deutlich.
+		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //FÃ¼r so ein klobiges UngetÃ¼m sprichst du aber noch recht deutlich.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Ich bin nicht nur gekommen, um dich zu sehen. Ich fürchte, ich hatte etwas Radikaleres im Sinn.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Sag jetzt bloß nicht, dass du mich herausfordern willst?
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Ich bin nicht nur gekommen, um dich zu sehen. Ich fÃ¼rchte, ich hatte etwas Radikaleres im Sinn.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Sag jetzt bloÃŸ nicht, dass du mich herausfordern willst?
 	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ha Ha Ha. Ich werde dir deinen schmalen Hals brechen.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Nicht so schnell, mein Freund. Ich trage das Auge Innos' bei mir. Du kannst dich meinem Willen nicht entziehen. Beantworte meine Fragen, oder die Qualen werden für dich unerträglich sein.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(Brüllt) Arrh. Dann stell deine lächerlichen Fragen, solange du noch kannst. Deine Macht wird nicht von Dauer sein.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Nicht so schnell, mein Freund. Ich trage das Auge Innos' bei mir. Du kannst dich meinem Willen nicht entziehen. Beantworte meine Fragen, oder die Qualen werden fÃ¼r dich unertrÃ¤glich sein.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(BrÃ¼llt) Arrh. Dann stell deine lÃ¤cherlichen Fragen, solange du noch kannst. Deine Macht wird nicht von Dauer sein.
 
 };
 
@@ -98,7 +98,7 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Wer bist du?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Mein Name ist Feomathar und das ist auch schon alles, was du über mich erfahren wirst.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Mein Name ist Feomathar und das ist auch schon alles, was du Ã¼ber mich erfahren wirst.
 	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Wenn ich aus dem Bann des Auges entfliehen kann, wirst du in Flammen aufgehen.
 
 };
@@ -126,8 +126,8 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 func void DIA_Dragon_Fire_HORT_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Jeder Drache hat doch einen Hort, wo er seinen gesammelten Reichtum lagert. Wo ist dein Hort?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //An einem Ort, der unerreichbar sein wird für dich, wenn ich die Fesseln des Auges erst einmal los bin.
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Meinen Besitz habe ich hoch oben auf dem heißen Felsen, den ein Mensch ohne Flügel wie du nur schwer erreichen sollte.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //An einem Ort, der unerreichbar sein wird fÃ¼r dich, wenn ich die Fesseln des Auges erst einmal los bin.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Meinen Besitz habe ich hoch oben auf dem heiÃŸen Felsen, den ein Mensch ohne FlÃ¼gel wie du nur schwer erreichen sollte.
 
 };
 

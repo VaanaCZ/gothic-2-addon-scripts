@@ -48,9 +48,9 @@ FUNC INT DIA_Udar_Hello_Condition()
 };
 FUNC VOID DIA_Udar_Hello_Info()
 {	
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//Du hattest verdammtes Glück, als du reingekommen bist. Um ein Haar hätte ich dich erschossen.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//Du hattest verdammtes GlÃ¼ck, als du reingekommen bist. Um ein Haar hÃ¤tte ich dich erschossen.
 	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//Dann sollte ich wohl froh sein, dass du so gute Augen hast.
-	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Spar dir deine Sprüche. Rede mit Sengrath, wenn du was willst.
+	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Spar dir deine SprÃ¼che. Rede mit Sengrath, wenn du was willst.
 	
 	AI_StopProcessInfos (self);
 };
@@ -65,7 +65,7 @@ INSTANCE DIA_Udar_YouAreBest (C_INFO)
 	condition	= DIA_Udar_YouAreBest_Condition;
 	information	= DIA_Udar_YouAreBest_Info;
 	permanent	= FALSE;
-	Description = "Ich habe gehört, du seist der BESTE Armbrustschütze...";
+	Description = "Ich habe gehÃ¶rt, du seist der BESTE ArmbrustschÃ¼tze...";
 };                       
 
 FUNC INT DIA_Udar_YouAreBest_Condition()
@@ -78,7 +78,7 @@ FUNC INT DIA_Udar_YouAreBest_Condition()
  
 FUNC VOID DIA_Udar_YouAreBest_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//Ich habe gehört, du seist der BESTE Armbrustschütze weit und breit.
+	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//Ich habe gehÃ¶rt, du seist der BESTE ArmbrustschÃ¼tze weit und breit.
 	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Wenn man das sagt, wird es wohl stimmen. Was willst du?
 };
 
@@ -93,7 +93,7 @@ INSTANCE DIA_Udar_TeachMe (C_INFO)
 	condition	= DIA_Udar_TeachMe_Condition;
 	information	= DIA_Udar_TeachME_Info;
 	permanent	= FALSE;
-	Description = "Bring mir Armbrustschießen bei.";
+	Description = "Bring mir ArmbrustschieÃŸen bei.";
 };                       
 
 FUNC INT DIA_Udar_TeachMe_Condition()
@@ -107,8 +107,8 @@ FUNC INT DIA_Udar_TeachMe_Condition()
  
 FUNC VOID DIA_Udar_TeachME_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//Bring mir Armbrustschießen bei.
-	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//Verzieh dich, vor der Burg laufen genug Ziele rum, üb an denen.
+	AI_Output	(other,self ,"DIA_Udar_Teacher_15_00");	//Bring mir ArmbrustschieÃŸen bei.
+	AI_Output	(self ,other,"DIA_Udar_Teacher_09_01");	//Verzieh dich, vor der Burg laufen genug Ziele rum, Ã¼b an denen.
 
 };	
 
@@ -123,7 +123,7 @@ INSTANCE DIA_Udar_ImGood (C_INFO)
 	condition	= DIA_Udar_ImGood_Condition;
 	information	= DIA_Udar_ImGood_Info;
 	permanent	= FALSE;
-	Description = "Ich bin der Größte.";
+	Description = "Ich bin der GrÃ¶ÃŸte.";
 };                       
 
 FUNC INT DIA_Udar_ImGood_Condition()
@@ -136,7 +136,7 @@ FUNC INT DIA_Udar_ImGood_Condition()
  
 FUNC VOID DIA_Udar_ImGood_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Ich bin der Größte.
+	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Ich bin der GrÃ¶ÃŸte.
 	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//(lacht) Du bist in Ordnung!
 	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//Also, wenn du was lernen willst, dann helfe ich dir.
 	
@@ -169,7 +169,7 @@ FUNC INT DIA_Udar_Teach_Condition()
 FUNC VOID DIA_Udar_Teach_Info()
 {	
 	AI_Output	(other,self ,"DIA_Udar_Teach_15_00");	//Ich will von dir lernen.
-	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //Okay, schieß los!
+	AI_Output	(self ,other,"DIA_Udar_Teach_09_01");   //Okay, schieÃŸ los!
 	
 	Info_ClearChoices (DIA_Udar_Teach);
 	
@@ -185,7 +185,7 @@ FUNC VOID DIA_Udar_Teach_BACK()
 
 FUNC VOID B_Udar_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Die Grundlagen kannst du ja schon, für mehr haben wir keine Zeit.
+	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Die Grundlagen kannst du ja schon, fÃ¼r mehr haben wir keine Zeit.
 };
 
 FUNC VOID B_Udar_TeachNoMore2 ()
@@ -248,7 +248,7 @@ FUNC VOID DIA_Udar_Perm_Info()
 {	
 	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Wie sieht's in der Burg aus?
 	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//Ein paar Jungs trainieren, aber im Prinzip warten wir alle nur darauf, dass irgendwas passiert.
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Diese Ungewissheit macht mürbe. Das ist die Taktik dieser verdammten Orks. Sie warten so lange ab, bis wir mit den Nerven am Ende sind.
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Diese Ungewissheit macht mÃ¼rbe. Das ist die Taktik dieser verdammten Orks. Sie warten so lange ab, bis wir mit den Nerven am Ende sind.
 };	
 //***********************************
 //	Ring 
@@ -272,9 +272,9 @@ FUNC INT DIA_Udar_Ring_Condition()
 };
 FUNC VOID DIA_Udar_Ring_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Ich bringe dir Tengrons Ring. Er soll dich schützen. Aber Tengron wird ihn sich holen, wenn er zurück ist.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Was? Weißt du, was das für ein Ring ist? Diesen Ring hat er als Auszeichnung für seinen Mut im Kampf bekommen.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Du sagst, er will ihn sich wieder zurückholen? So Innos will, wird er das. So Innos will ...
+	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Ich bringe dir Tengrons Ring. Er soll dich schÃ¼tzen. Aber Tengron wird ihn sich holen, wenn er zurÃ¼ck ist.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Was? WeiÃŸt du, was das fÃ¼r ein Ring ist? Diesen Ring hat er als Auszeichnung fÃ¼r seinen Mut im Kampf bekommen.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Du sagst, er will ihn sich wieder zurÃ¼ckholen? So Innos will, wird er das. So Innos will ...
 	
 	B_GiveInvItems (other,self,ItRi_Tengron,1);
 	TengronRing = TRUE;
@@ -338,13 +338,13 @@ func int DIA_Udar_Kap4WiederDa_Condition ()
 
 func void DIA_Udar_Kap4WiederDa_Info ()
 {
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Gut, dass du kommst. Hier ist die Hölle los.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //Gut, dass du kommst. Hier ist die HÃ¶lle los.
 
 	if (hero.guild != GIL_DJG)
 	{
 		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Was ist passiert?
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //Die Drachenjäger machen sich hier in der Burg breit und prahlen damit, das Drachenproblem lösen zu können.
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Aber ich sag dir was, die töten noch nicht einmal einen alten, kranken Snapper, so wie die aussehen.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //Die DrachenjÃ¤ger machen sich hier in der Burg breit und prahlen damit, das Drachenproblem lÃ¶sen zu kÃ¶nnen.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Aber ich sag dir was, die tÃ¶ten noch nicht einmal einen alten, kranken Snapper, so wie die aussehen.
 	};
 
 	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Viele von uns sind mittlerweile echt beunruhigt und glauben nicht mehr so recht daran, dass wir hier jemals wieder lebend rauskommen.
@@ -416,7 +416,7 @@ func void DIA_Udar_SENGRATHGEFUNDEN_Info ()
 	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //Ich habe Sengrath gefunden.
 	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //Wirklich? Wo ist er?
 	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //Er ist tot. Hier ist seine Armbrust. Er hatte sie bei sich.
-	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Er muss sich die Armbrust zurückgeholt haben, ist aber dann wohl doch von den Orks erschlagen worden.
+	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Er muss sich die Armbrust zurÃ¼ckgeholt haben, ist aber dann wohl doch von den Orks erschlagen worden.
 	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //Verdammter Narr. Ich wusste es. Wir werden alle sterben.
 
 	TOPIC_END_Sengrath_Missing = TRUE;
@@ -451,15 +451,15 @@ func void DIA_Udar_BADFEELING_Info ()
 {
 	if (MIS_OCGateOpen == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Noch so einen hinterhältigen Angriff, und wir sind Geschichte.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_00"); //Noch so einen hinterhÃ¤ltigen Angriff, und wir sind Geschichte.
 	}
 	else if (MIS_AllDragonsDead == TRUE)
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //Die Orks sind sehr beunruhigt. Irgendetwas hat ihnen einen Mordsschrecken eingejagt. Das spüre ich.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_01"); //Die Orks sind sehr beunruhigt. Irgendetwas hat ihnen einen Mordsschrecken eingejagt. Das spÃ¼re ich.
 	}
 	else 
 	{
-	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //Ich hab da ein ganz mieses Gefühl.
+	AI_Output			(self, other, "DIA_Udar_BADFEELING_09_02"); //Ich hab da ein ganz mieses GefÃ¼hl.
 	};
 	
 	Npc_SetRefuseTalk (self,30);

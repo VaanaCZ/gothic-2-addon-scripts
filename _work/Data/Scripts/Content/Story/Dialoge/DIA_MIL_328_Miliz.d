@@ -42,7 +42,7 @@ func void DIA_328_Miliz_Hi_Info ()
 	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Wer bist du?
 	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Das geht dich nichts an? Ich bin hier der Chef, okay?
 	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Der Chef? Von was? Von den Kisten?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Hey, das Lagerhaus untersteht meiner Aufsicht, klar? Also verpiss dich, sonst schlage ich dir den Sch‰del ein.
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Hey, das Lagerhaus untersteht meiner Aufsicht, klar? Also verpiss dich, sonst schlage ich dir den Sch√§del ein.
 	
 	AI_StopProcessInfos (self);
 	

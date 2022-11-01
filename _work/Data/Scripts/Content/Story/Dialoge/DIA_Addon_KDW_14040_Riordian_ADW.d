@@ -41,9 +41,9 @@ func int DIA_Addon_Riordian_HelloADW_Condition ()
 func void DIA_Addon_Riordian_HelloADW_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Riordian_HelloADW_15_00"); //Hast du DAS hier erwartet?
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_01"); //Auf keinen Fall. Ich bin überwältigt, wie groß die Stadt gewesen sein muss.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_02"); //Die meisten Gebäude sind unter Stein und Erde verschüttet, aber die Ruinen, die die Zeit überdauert haben, sind über das ganze Land hier verteilt.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_03"); //Es müssen Tausende gewesen sein, die hier gelebt haben.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_01"); //Auf keinen Fall. Ich bin Ã¼berwÃ¤ltigt, wie groÃŸ die Stadt gewesen sein muss.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_02"); //Die meisten GebÃ¤ude sind unter Stein und Erde verschÃ¼ttet, aber die Ruinen, die die Zeit Ã¼berdauert haben, sind Ã¼ber das ganze Land hier verteilt.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HelloADW_10_03"); //Es mÃ¼ssen Tausende gewesen sein, die hier gelebt haben.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -69,14 +69,14 @@ func int DIA_Addon_Riordian_WhatToFind_Condition ()
 
 func void DIA_Addon_Riordian_WhatToFind_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_WhatToFind_15_00"); //Was werde ich da draußen finden?
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_01"); //Im Osten gibt es eine große Festung in einem riesigen Sumpf.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_02"); //Soweit wir das von hier aus beurteilen können, haben sich die Banditen dort verschanzt.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_03"); //Wenn ich du wäre, würde ich nicht da runter gehen. Sie haben viele Vorposten und Wachen aufgestellt.
+	AI_Output	(other, self, "DIA_Addon_Riordian_WhatToFind_15_00"); //Was werde ich da drauÃŸen finden?
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_01"); //Im Osten gibt es eine groÃŸe Festung in einem riesigen Sumpf.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_02"); //Soweit wir das von hier aus beurteilen kÃ¶nnen, haben sich die Banditen dort verschanzt.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_03"); //Wenn ich du wÃ¤re, wÃ¼rde ich nicht da runter gehen. Sie haben viele Vorposten und Wachen aufgestellt.
 	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_04"); //Du meidest besser den Sumpf, bis du mehr Erfahrung hast oder einen Weg findest, die Banditen zu umgehen.
 	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_05"); //Im Westen haben wir einige Piraten entdeckt.
 	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_06"); //Ich bin mir nicht sicher, aber ich glaube, sie haben uns entdeckt.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_07"); //Scheint sie aber nicht sonderlich zu stören, dass wir hier sind.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhatToFind_10_07"); //Scheint sie aber nicht sonderlich zu stÃ¶ren, dass wir hier sind.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -90,7 +90,7 @@ instance DIA_Addon_Riordian_Gegend		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Gegend_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Erzähl' mir mehr über diese Gegend.";
+	description	 = 	"ErzÃ¤hl' mir mehr Ã¼ber diese Gegend.";
 };
 
 func int DIA_Addon_Riordian_Gegend_Condition ()
@@ -104,7 +104,7 @@ func int DIA_Addon_Riordian_Gegend_Condition ()
 var int DIA_Addon_Riordian_Gegend_Info_OneTime;
 func void DIA_Addon_Riordian_Gegend_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Gegend_15_00"); //Erzähl mir mehr über diese Gegend.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Gegend_15_00"); //ErzÃ¤hl mir mehr Ã¼ber diese Gegend.
 	AI_Output	(self, other, "DIA_Addon_Riordian_Gegend_10_01"); //Was willst du wissen?
 	
 	Info_ClearChoices	(DIA_Addon_Riordian_Gegend);
@@ -121,7 +121,7 @@ func void DIA_Addon_Riordian_Gegend_Info ()
 	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Wo waren die Banditen nochmal?", DIA_Addon_Riordian_Gegend_bandits );
 	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Warst du schon mal im Westen?", DIA_Addon_Riordian_Gegend_west );
 	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Was war nochmal im Osten?", DIA_Addon_Riordian_Gegend_ost );
-	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Wo komme ich hin, wenn ich nach Süden gehe?", DIA_Addon_Riordian_Gegend_sued );
+	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Wo komme ich hin, wenn ich nach SÃ¼den gehe?", DIA_Addon_Riordian_Gegend_sued );
 	Info_AddChoice	(DIA_Addon_Riordian_Gegend, "Was ist im Norden?", DIA_Addon_Riordian_Gegend_nord );
 };
 func void DIA_Addon_Riordian_Gegend_Back ()
@@ -131,13 +131,13 @@ func void DIA_Addon_Riordian_Gegend_Back ()
 func void DIA_Addon_Riordian_Gegend_map ()
 {
 	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_map_15_00"); //Gibt es eine Karte dieser Gegend?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_map_10_01"); //Cronos hat eine angefertigt. Er überlässt sie dir bestimmt.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_map_10_01"); //Cronos hat eine angefertigt. Er Ã¼berlÃ¤sst sie dir bestimmt.
 };
 func void DIA_Addon_Riordian_Gegend_bandits ()
 {
 	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_bandits_15_00"); //Wo waren die Banditen noch mal?
 	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_01"); //Sie haben eine Art Festung mit vielen Vorposten im Osten.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_02"); //Um da hin zu gelangen, musst du durch den großen Sumpf marschieren.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_bandits_10_02"); //Um da hin zu gelangen, musst du durch den groÃŸen Sumpf marschieren.
 };
 func void DIA_Addon_Riordian_Gegend_Piraten ()
 {
@@ -149,29 +149,29 @@ func void DIA_Addon_Riordian_Gegend_Piraten ()
 func void DIA_Addon_Riordian_Gegend_nord ()
 {
 	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_nord_15_00"); //Was ist im Norden?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_01"); //Wenn ich den Aufzeichnungen der Erbauer Glauben schenken darf, dann wirst du dort ein großes von hohen Felsen umringtes Tal finden.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_02"); //Dürre und Wüstensand bestimmen dort die Landschaft.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_01"); //Wenn ich den Aufzeichnungen der Erbauer Glauben schenken darf, dann wirst du dort ein groÃŸes von hohen Felsen umringtes Tal finden.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_nord_10_02"); //DÃ¼rre und WÃ¼stensand bestimmen dort die Landschaft.
 };
 
 func void DIA_Addon_Riordian_Gegend_sued ()
 {
-	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_sued_15_00"); //Wo komme ich hin, wenn ich nach Süden gehe?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_01"); //Das Land im Süden ist sehr zerklüftet.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_02"); //Serpentinenartige Wege, Wasserfälle und in Felsen gehauene Ruinen wirst du dort finden.
+	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_sued_15_00"); //Wo komme ich hin, wenn ich nach SÃ¼den gehe?
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_01"); //Das Land im SÃ¼den ist sehr zerklÃ¼ftet.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_sued_10_02"); //Serpentinenartige Wege, WasserfÃ¤lle und in Felsen gehauene Ruinen wirst du dort finden.
 };
 
 func void DIA_Addon_Riordian_Gegend_ost ()
 {
 	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_ost_15_00"); //Was war nochmal im Osten?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_01"); //Der große Sumpf. Die Gegend ist sehr gefährlich.
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_02"); //Nicht nur die Banditen lauern dort, sondern auch äußerst gefährliche Tiere.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_01"); //Der groÃŸe Sumpf. Die Gegend ist sehr gefÃ¤hrlich.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_02"); //Nicht nur die Banditen lauern dort, sondern auch Ã¤uÃŸerst gefÃ¤hrliche Tiere.
 	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_ost_10_03"); //Du solltest vorsichtig sein.
 };
 var int DIA_Addon_Riordian_Gegend_west_OneTime;
 func void DIA_Addon_Riordian_Gegend_west ()
 {
 	AI_Output			(other, self, "DIA_Addon_Riordian_Gegend_west_15_00"); //Warst du schon mal im Westen?
-	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_01"); //Nein. Aber irgendwo dort muss die Küste sein.
+	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_01"); //Nein. Aber irgendwo dort muss die KÃ¼ste sein.
 	AI_Output			(self, other, "DIA_Addon_Riordian_Gegend_west_10_02"); //Ich vermute, dass die Piraten dort ihr Lager haben.
 
 	if (DIA_Addon_Riordian_Gegend_west_OneTime == FALSE)
@@ -207,8 +207,8 @@ func int DIA_Addon_Riordian_HousesOfRulers_Condition ()
 
 func void DIA_Addon_Riordian_HousesOfRulers_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_HousesOfRulers_15_00"); //Saturas schickt mich. Ich soll die fünf Herrenhäuser von Jharkendar durchsuchen.
-	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_01"); //Ich habe lange dafür gebraucht, aus den Niederschriften der Erbauer den Standort der Herrenhäuser zu finden.
+	AI_Output	(other, self, "DIA_Addon_Riordian_HousesOfRulers_15_00"); //Saturas schickt mich. Ich soll die fÃ¼nf HerrenhÃ¤user von Jharkendar durchsuchen.
+	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_01"); //Ich habe lange dafÃ¼r gebraucht, aus den Niederschriften der Erbauer den Standort der HerrenhÃ¤user zu finden.
 	AI_Output	(self, other, "DIA_Addon_Riordian_HousesOfRulers_10_02"); //Aber jetzt kann ich es dir genau sagen.
 	MIS_Riordian_HousesOfRulers = LOG_RUNNING;
 };
@@ -223,7 +223,7 @@ instance DIA_Addon_Riordian_WhereAreHouses		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_WhereAreHouses_Condition;
 	information	 = 	DIA_Addon_Riordian_WhereAreHouses_Info;
 
-	description	 = 	"Wo finde ich die fünf Herrenhäuser?";
+	description	 = 	"Wo finde ich die fÃ¼nf HerrenhÃ¤user?";
 };
 
 func int DIA_Addon_Riordian_WhereAreHouses_Condition ()
@@ -237,18 +237,18 @@ func int DIA_Addon_Riordian_WhereAreHouses_Condition ()
 var int B_WhreAreHousesOfRulersOneTime;
 func void B_WhreAreHousesOfRulers ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_00"); //Das Haus der Gelehrten ist eine große Bibliothek. Sie muss irgendwo weit im Norden sein.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_00"); //Das Haus der Gelehrten ist eine groÃŸe Bibliothek. Sie muss irgendwo weit im Norden sein.
 	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_01"); //Das Haus der Krieger war damals eine von Felsen umringte Festung im Osten.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_02"); //Die Priester und die Totenwächter hatten ihre Behausungen nahe beieinander. Du solltest sie im Südwesten finden.
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_03"); //Und die Heiler hatten ihr Haus der Genesung im Südosten.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_02"); //Die Priester und die TotenwÃ¤chter hatten ihre Behausungen nahe beieinander. Du solltest sie im SÃ¼dwesten finden.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_03"); //Und die Heiler hatten ihr Haus der Genesung im SÃ¼dosten.
 
 	if (B_WhreAreHousesOfRulersOneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_04"); //Wenn diese Häuser noch stehen, dann wirst du sie an ihrer Bauweise erkennen.
+		AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_04"); //Wenn diese HÃ¤user noch stehen, dann wirst du sie an ihrer Bauweise erkennen.
 		B_WhreAreHousesOfRulersOneTime = TRUE;
 	};
 
-	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_05"); //Sie sind erhöht. Eine steile Treppe führt in den von hohen Säulen verdeckten Eingang.
+	AI_Output	(self, other, "DIA_Addon_Riordian_WhereAreHouses_10_05"); //Sie sind erhÃ¶ht. Eine steile Treppe fÃ¼hrt in den von hohen SÃ¤ulen verdeckten Eingang.
 
 	if (B_WhreAreHousesOfRulersOneTime == FALSE)
 	{
@@ -259,13 +259,13 @@ func void B_WhreAreHousesOfRulers ()
 	Log_SetTopicStatus(TOPIC_Addon_HousesOfRulers, LOG_RUNNING);
 	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Das Haus der Gelehrten ist eine grosse Bibliothek. Sie muss irgendwo weit im Norden sein."); 
 	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Das Haus der Krieger war damals eine von Felsen umringte Festung im Osten. "); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Die Priester und die Tötenwächter hatten ihre Behausungen nahe bei einander. Ich sollte sie im Südwesten finden. "); 
-	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Die Heiler hatten ihr Haus der Genesung im Südosten."); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Die Priester und die TÃ¶tenwÃ¤chter hatten ihre Behausungen nahe bei einander. Ich sollte sie im SÃ¼dwesten finden. "); 
+	Log_AddEntry (TOPIC_Addon_HousesOfRulers,"Die Heiler hatten ihr Haus der Genesung im SÃ¼dosten."); 
 };
 
 func void DIA_Addon_Riordian_WhereAreHouses_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_WhereAreHouses_15_00"); //Wo finde ich die 5 Herrenhäuser?
+	AI_Output	(other, self, "DIA_Addon_Riordian_WhereAreHouses_15_00"); //Wo finde ich die 5 HerrenhÃ¤user?
 	B_WhreAreHousesOfRulers ();
 };
 
@@ -280,7 +280,7 @@ instance DIA_Addon_Riordian_FoundHouse		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_FoundHouse_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Wegen der Herrenhäuser...";
+	description	 = 	"Wegen der HerrenhÃ¤user...";
 };
 
 func int DIA_Addon_Riordian_FoundHouse_Condition ()
@@ -304,28 +304,28 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 {
 	RiordianHouseNeuigkeit = 0;
 	
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_00"); //Äh, wegen der Herrenhäuser ...
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_00"); //Ã„h, wegen der HerrenhÃ¤user ...
 	AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_01"); //Ja?
 	
 	if (SC_COMESINTO_CANYONLIBRARY_FUNC_OneTime == TRUE)
 	&& (FOUNDHOUSEINFO [Library] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_02"); //Die Orks scheinen sich für die Bibliothek der Gelehrten zu interessieren.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_03"); //Denkst du, dass sie die alte Sprache lesen können?
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_04"); //Ich denke nicht, aber wer weiß das schon.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_05"); //Vielleicht solltest du trotzdem besser dafür sorgen, dass sie verschwinden.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_02"); //Die Orks scheinen sich fÃ¼r die Bibliothek der Gelehrten zu interessieren.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_03"); //Denkst du, dass sie die alte Sprache lesen kÃ¶nnen?
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_04"); //Ich denke nicht, aber wer weiÃŸ das schon.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_05"); //Vielleicht solltest du trotzdem besser dafÃ¼r sorgen, dass sie verschwinden.
 		FOUNDHOUSEINFO[Library] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 		
 		Log_CreateTopic (TOPIC_Addon_CanyonOrcs, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_CanyonOrcs, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_CanyonOrcs,"Dem Wassermagier Riordian wäre es lieber, wenn die Orks aus dem Canyon verschwinden."); 
+		B_LogEntry (TOPIC_Addon_CanyonOrcs,"Dem Wassermagier Riordian wÃ¤re es lieber, wenn die Orks aus dem Canyon verschwinden."); 
 	};
 	
 	if ((Npc_IsDead(StoneGuardian_Heiler)) || (Npc_HasItems (other,ItMi_Addon_Stone_04)) || (Saturas_SCFound_ItMi_Addon_Stone_04 == TRUE) )
 	&& (FOUNDHOUSEINFO [Heiler] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_06"); //Das Haus der Heiler steht mitten in der Sumpfregion und wurde von einer Menge Steinwächtern verteidigt.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_06"); //Das Haus der Heiler steht mitten in der Sumpfregion und wurde von einer Menge SteinwÃ¤chtern verteidigt.
 		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_07"); //Es steht also immer noch?
 		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_08"); //Ja, fragt sich nur, wie lange noch ...
 		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_09"); //Mich schmerzt es in der Seele, wenn ich die Zeugen der Vergangeheit in diesem zerfallenen Zustand sehe.
@@ -347,7 +347,7 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	&& (FOUNDHOUSEINFO [Priest] == FALSE)//crawler
 	{
 		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_13"); //Im Haus der Priester waren jede Menge Minecrawler ...
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_14"); //Ist so eine Gegend nicht sehr ungewöhnlich für diese Tiere?
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_14"); //Ist so eine Gegend nicht sehr ungewÃ¶hnlich fÃ¼r diese Tiere?
 		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_15"); //Allerdings.
 		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_16"); //Bei Adanos. Seltsame Dinge geschehen in dieser Region.
 		
@@ -358,10 +358,10 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	if ((Npc_IsDead(MayaZombie04_Totenw)) || (Npc_HasItems (other,ItMi_Addon_Stone_02)) || (Saturas_SCFound_ItMi_Addon_Stone_02 == TRUE))
 	&& (FOUNDHOUSEINFO [Totenw] == FALSE)//Zombies
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_17"); //Das Haus der Totenwächter wird beherrscht von der Macht des Bösen.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_17"); //Das Haus der TotenwÃ¤chter wird beherrscht von der Macht des BÃ¶sen.
 		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_18"); //Ich glaub, ich habe selten so viele Zombies auf einem Haufen gesehen.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_19"); //Das ist bedauerlich. Die Totenwächter wurden offenbar Opfer ihrer speziellen Fähigkeiten.
-		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_20"); //Ihre Verbundenheit zur Totenwelt hat ihnen schwer geschadet. Ich hoffe, du hast sie von ihrem Leid erlösen können.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_19"); //Das ist bedauerlich. Die TotenwÃ¤chter wurden offenbar Opfer ihrer speziellen FÃ¤higkeiten.
+		AI_Output	(self, other, "DIA_Addon_Riordian_FoundHouse_10_20"); //Ihre Verbundenheit zur Totenwelt hat ihnen schwer geschadet. Ich hoffe, du hast sie von ihrem Leid erlÃ¶sen kÃ¶nnen.
 		FOUNDHOUSEINFO[Totenw] = TRUE;
 		RiordianHouseNeuigkeit = (RiordianHouseNeuigkeit + 1);
 	};	
@@ -376,7 +376,7 @@ func void DIA_Addon_Riordian_FoundHouse_Info ()
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_21"); //Erzähl mir nochmal, wo sich jedes einzelne befindet.
+		AI_Output	(other, self, "DIA_Addon_Riordian_FoundHouse_15_21"); //ErzÃ¤hl mir nochmal, wo sich jedes einzelne befindet.
 		B_WhreAreHousesOfRulers ();
 	};
 };
@@ -410,15 +410,15 @@ func void DIA_Addon_Riordian_OrksWeg_Info ()
 
 	if (OrcShaman_Sit_CanyonLibraryKey.aivar [AIV_KilledByPlayer] == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_02"); //Ich habe ihren Anführer getötet.
+		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_02"); //Ich habe ihren AnfÃ¼hrer getÃ¶tet.
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_03"); //Ihr Anführer ist tot.
+		AI_Output	(other, self, "DIA_Addon_Riordian_OrksWeg_15_03"); //Ihr AnfÃ¼hrer ist tot.
 	};
 	
 	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_04"); //Wollen wir hoffen, dass du Recht hast.
-	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_05"); //Störungen dieser Art können wir jetzt nun wirklich nicht gebrauchen.
+	AI_Output	(self, other, "DIA_Addon_Riordian_OrksWeg_10_05"); //StÃ¶rungen dieser Art kÃ¶nnen wir jetzt nun wirklich nicht gebrauchen.
 	
 	TOPIC_END_CanyonOrcs = TRUE;
 	B_GivePlayerXP (XP_Addon_Riordian_OrksWeg);
@@ -434,7 +434,7 @@ instance DIA_Addon_Riordian_FoundAllHouses		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_FoundAllHouses_Condition;
 	information	 = 	DIA_Addon_Riordian_FoundAllHouses_Info;
 
-	description	 = 	"Ich habe alle Herrenhäuser gefunden.";
+	description	 = 	"Ich habe alle HerrenhÃ¤user gefunden.";
 };
 
 func int DIA_Addon_Riordian_FoundAllHouses_Condition ()
@@ -448,7 +448,7 @@ func int DIA_Addon_Riordian_FoundAllHouses_Condition ()
 
 func void DIA_Addon_Riordian_FoundAllHouses_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_00"); //Ich habe alle Herrenhäuser gefunden.
+	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_00"); //Ich habe alle HerrenhÃ¤user gefunden.
 	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_01"); //Waren sie alle dort, wo ich es gesagt habe?
 	AI_Output	(other, self, "DIA_Addon_Riordian_FoundAllHouses_15_02"); //Mehr oder weniger schon.
 	AI_Output	(self, other, "DIA_Addon_Riordian_FoundAllHouses_10_03"); //Sehr gut. Dann hat sich meine Arbeit ja DOCH gelohnt.
@@ -467,7 +467,7 @@ instance DIA_Addon_Riordian_ADW_PreTeach		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_ADW_PreTeach_Condition;
 	information	 = 	DIA_Addon_Riordian_ADW_PreTeach_Info;
 
-	description	 = 	"Kannst du mir deine Fähigkeiten beibringen?";
+	description	 = 	"Kannst du mir deine FÃ¤higkeiten beibringen?";
 };
 
 func int DIA_Addon_Riordian_ADW_PreTeach_Condition ()
@@ -477,13 +477,13 @@ func int DIA_Addon_Riordian_ADW_PreTeach_Condition ()
 
 func void DIA_Addon_Riordian_ADW_PreTeach_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_ADW_PreTeach_15_00"); //Kannst du mir deine Fähigkeiten beibringen?
+	AI_Output	(other, self, "DIA_Addon_Riordian_ADW_PreTeach_15_00"); //Kannst du mir deine FÃ¤higkeiten beibringen?
 	AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_01"); //Ich kann dich in der Kunst der Alchemie unterrichten.
 
 	if  (Npc_HasItems (other,ItAm_Addon_WispDetector))
 	&& (DIA_Addon_Riordian_Teach_NoPerm == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_02"); //Und ich kann dir zeigen, wie du deinem Irrlicht beibringst, nach Gegenständen zu suchen.
+		AI_Output	(self, other, "DIA_Addon_Riordian_ADW_PreTeach_10_02"); //Und ich kann dir zeigen, wie du deinem Irrlicht beibringst, nach GegenstÃ¤nden zu suchen.
 	
 		Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
 		Log_AddEntry		(TOPIC_Addon_KDWTeacher, LogText_Addon_RiordianTeach);
@@ -663,7 +663,7 @@ INSTANCE DIA_Riordian_ADW_TeachAlchemy   (C_INFO)
 	condition   = DIA_Riordian_ADW_TeachAlchemy_Condition;
 	information = DIA_Riordian_ADW_TeachAlchemy_Info;
 	permanent   = TRUE;
-	description = "Lehre mich die Kunst des Tränkebrauens.";
+	description = "Lehre mich die Kunst des TrÃ¤nkebrauens.";
 };
 //----------------------------------------
 var int DIA_Riordian_ADW_TeachAlchemy_permanent;
@@ -681,7 +681,7 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 {
 	var int talente;
 	talente = 0;
-	AI_Output (other, self,"DIA_Addon_Riordian_ADW_TeachAlchemy_15_00");//Lehre mich die Kunst des Tränkebrauens.
+	AI_Output (other, self,"DIA_Addon_Riordian_ADW_TeachAlchemy_15_00");//Lehre mich die Kunst des TrÃ¤nkebrauens.
 
 	if ( PLAYER_TALENT_ALCHEMY[POTION_Health_01] == FALSE)
 	|| ( PLAYER_TALENT_ALCHEMY[POTION_Health_02] == FALSE)
@@ -745,9 +745,9 @@ FUNC VOID DIA_Riordian_ADW_TeachAlchemy_Info()
 	{
 		if (Alchemy_Explain != TRUE)
 		{
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_01"); //Magische Tränke braut man an einem Alchemietisch. Wir haben einen davon in unserer Behausung hier oben.
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_02"); //Dafür benötigst du eine leere Laborflasche, die nötigen Ingredienzien und das Wissen, wie man den Trank herstellt.
-			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_03"); //Von mir kannst du das Wissen darüber bekommen. Die anderen Dinge wirst du dir selbst zusammensuchen müssen.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_01"); //Magische TrÃ¤nke braut man an einem Alchemietisch. Wir haben einen davon in unserer Behausung hier oben.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_02"); //DafÃ¼r benÃ¶tigst du eine leere Laborflasche, die nÃ¶tigen Ingredienzien und das Wissen, wie man den Trank herstellt.
+			AI_Output (self, other,"DIA_Addon_Riordian_ADW_TeachAlchemy_10_03"); //Von mir kannst du das Wissen darÃ¼ber bekommen. Die anderen Dinge wirst du dir selbst zusammensuchen mÃ¼ssen.
 			Alchemy_Explain = TRUE;
 		}
 		else

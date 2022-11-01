@@ -57,11 +57,11 @@ FUNC VOID DIA_Dragon_Rock_Hello_Info()
 	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Noch so ein vermessener Wicht, der sich auf meinen Felsen traut. Ihr kleinen Menschen. So mutig, doch so zerbrechlich.
 	if (Mis_KilledDragons == 0)
 	{
-		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Du kannst tats‰chlich sprechen.
+		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Du kannst tats√§chlich sprechen.
 	};
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Ich werde dir die Eingeweide herausreiﬂen und dich an die Ratten verf¸ttern.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Ich werde dir die Eingeweide herausrei√üen und dich an die Ratten verf√ºttern.
 	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //Nicht so schnell. Ich trage das Auge Innos bei mir. Du wirst mir gehorchen und mir meine Fragen beantworten.
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(Br¸llt) Arrh. Stell deine Fragen.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(Br√ºllt) Arrh. Stell deine Fragen.
 
 };
 
@@ -89,7 +89,7 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition ()
 func void DIA_Dragon_Rock_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Wer bist du?
-	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Ich heiﬂe Pedrakhan und ich werde dir ganz langsam das Fell abziehen, wenn ich dich zu fassen kriege.
+	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Ich hei√üe Pedrakhan und ich werde dir ganz langsam das Fell abziehen, wenn ich dich zu fassen kriege.
 
 };
 
@@ -103,7 +103,7 @@ instance DIA_Dragon_Rock_HIERARCHIE		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information	 = 	DIA_Dragon_Rock_HIERARCHIE_Info;
 
-	description	 = 	"Wer von euch Drachen ist der St‰rkste?";
+	description	 = 	"Wer von euch Drachen ist der St√§rkste?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
@@ -116,12 +116,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Wer von euch Drachen ist der St‰rkste?
+	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Wer von euch Drachen ist der St√§rkste?
 	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //Unsere Macht beziehen wir aus den Elementen dieser Welt. Ihre Hierarchie ist klar und einfach.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Aus weicher Erde geformtes Land spendet Leben f¸r alle Kreaturen unter der Sonne. Doch verschlingt es dich mit Haut und Haaren, wenn man ihm zu nahe kommt.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //Mit Stolz erhebt sich der Fels, der lieber bricht, als jemals nachzugeben, und begr‰bt so die Unachtsamen unter sich. Und doch bietet er den besten Schutz vor den Gezeiten.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Der Funke des Lebens lebt in den tiefen Feuern dieser Erde. Und doch verbrennt das Feuer alles in einem Atemzug und hinterl‰sst nicht mehr als Asche.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Alle unsere Elemente erhalten und zerstˆren. Nur im zu hartem Guss erstarrten Wasser wird alles zur ewig verweilenden Salzs‰ule, wo kaum Leben mˆglich ist.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //Aus weicher Erde geformtes Land spendet Leben f√ºr alle Kreaturen unter der Sonne. Doch verschlingt es dich mit Haut und Haaren, wenn man ihm zu nahe kommt.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //Mit Stolz erhebt sich der Fels, der lieber bricht, als jemals nachzugeben, und begr√§bt so die Unachtsamen unter sich. Und doch bietet er den besten Schutz vor den Gezeiten.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //Der Funke des Lebens lebt in den tiefen Feuern dieser Erde. Und doch verbrennt das Feuer alles in einem Atemzug und hinterl√§sst nicht mehr als Asche.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Alle unsere Elemente erhalten und zerst√∂ren. Nur im zu hartem Guss erstarrten Wasser wird alles zur ewig verweilenden Salzs√§ule, wo kaum Leben m√∂glich ist.
 
 };
 

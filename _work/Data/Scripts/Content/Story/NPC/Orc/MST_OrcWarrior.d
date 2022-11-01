@@ -125,7 +125,7 @@ INSTANCE OrcWarrior_Sit (Mst_Default_OrcWarrior)
 // ------ Ork vor Stadt ------
 INSTANCE OrcWarrior_Harad (Mst_Default_OrcWarrior)
 {
-	name							=	"Ork Sp‰her";
+	name							=	"Ork Sp√§her";
 	
 	level							=	15;
 	

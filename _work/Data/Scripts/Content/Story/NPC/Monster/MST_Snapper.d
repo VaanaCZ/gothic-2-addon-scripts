@@ -132,11 +132,11 @@ INSTANCE NewMine_Snapper8	(Mst_Default_Snapper)
 	Npc_SetToFistMode(self);
 };
 
-INSTANCE NewMine_LeadSnapper	(Mst_Default_Snapper)	//OW NewMineMission Kill_Snapper: Bilgot weiß von einem Leittier, das muß tot -> Fajeths Auftrag erledigt! 
+INSTANCE NewMine_LeadSnapper	(Mst_Default_Snapper)	//OW NewMineMission Kill_Snapper: Bilgot weiÃŸ von einem Leittier, das muÃŸ tot -> Fajeths Auftrag erledigt! 
 {
 	B_SetVisuals_Snapper();
 	Npc_SetToFistMode(self);
-	name	=	"Rudelführer";
+	name	=	"RudelfÃ¼hrer";
 	
 	//----- Attribute ----	
 	attribute	[ATR_STRENGTH]		=	60;

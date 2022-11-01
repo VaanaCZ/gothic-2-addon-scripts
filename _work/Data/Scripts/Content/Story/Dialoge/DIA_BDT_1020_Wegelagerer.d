@@ -22,7 +22,7 @@ FUNC VOID DIA_Wegelagerer_EXIT_Info()
 // 				  	Guard_Passage - First Warn
 // ************************************************************
 // ------------------------------------------------------------
-	const string BDT_1020_Wegelagerer_Checkpoint		= "NW_TROLLAREA_PATH_46"; //Die Brücke
+	const string BDT_1020_Wegelagerer_Checkpoint		= "NW_TROLLAREA_PATH_46"; //Die BrÃ¼cke
 // ------------------------------------------------------------
 instance DIA_BDT_1020_Wegelagerer_FirstWarn (C_INFO)
 {
@@ -46,7 +46,7 @@ func void DIA_BDT_1020_Wegelagerer_FirstWarn_Info()
 {
 	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_00"); //Hey du, bleib stehen.
 	AI_Output (other, self,"DIA_BDT_1020_Wegelagerer_FirstWarn_15_01"); //Was willst du?
-	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_02"); //Wenn du nicht willst, dass ich dir die Fresse poliere, solltest du schleunigst ein paar Goldmünzen in meine Taschen wandern lassen.
+	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_02"); //Wenn du nicht willst, dass ich dir die Fresse poliere, solltest du schleunigst ein paar GoldmÃ¼nzen in meine Taschen wandern lassen.
 	
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP(other,BDT_1020_Wegelagerer_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -64,8 +64,8 @@ func void DIA_BDT_1020_Wegelagerer_FirstWarn_Info()
 FUNC VOID DIA_BDT_1020_Wegelagerer_AGON ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_AGON_15_00"); //Sag mal, hast du einen Novizen gesehen?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_01"); //(verblüfft) äh - was? hmm... (überlegt) kann schon sein.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_02"); //Gib mir 20 Goldstücke, dann sag ich es dir!
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_01"); //(verblÃ¼fft) Ã¤h - was? hmm... (Ã¼berlegt) kann schon sein.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_02"); //Gib mir 20 GoldstÃ¼cke, dann sag ich es dir!
 
 	Wegelagerer_Surprise = TRUE;
 
@@ -79,7 +79,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_AGON ()
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_15_00"); //Wie viel willst du?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_06_01"); //(grinst) 20 Goldstücke und wir können Freunde werden.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_06_01"); //(grinst) 20 GoldstÃ¼cke und wir kÃ¶nnen Freunde werden.
 	
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
 	
@@ -95,8 +95,8 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Joke ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_15_00"); //Du machst Witze.
 	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_01"); //Seh ich so aus?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_02"); //Wenn ich nicht 20 Goldstücke sehe, bevor du auch nur einen Schritt näher kommst, ...
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_03"); //Dann mach ich dich platt. Also jetzt rück die Kohle raus.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_02"); //Wenn ich nicht 20 GoldstÃ¼cke sehe, bevor du auch nur einen Schritt nÃ¤her kommst, ...
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_03"); //Dann mach ich dich platt. Also jetzt rÃ¼ck die Kohle raus.
 	
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
@@ -112,7 +112,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Joke ()
 FUNC VOID DIA_BDT_1020_Wegelagerer_PissOff ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_PissOff_15_00"); //Geh mir aus dem Weg!
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_01"); //Du hast 'ne ganz schön große Klappe, Kleiner.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_01"); //Du hast 'ne ganz schÃ¶n groÃŸe Klappe, Kleiner.
 	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_PissOff_06_02"); //Es wird Zeit, dass ich sie dir stopfe.
 	
 	AI_StopProcessInfos (self);
@@ -125,7 +125,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney ()
 	
 	if (Wegelagerer_Surprise == FALSE)
 	{
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_01"); //(höhnisch) 20 Goldstücke war doch auch nicht zu viel für dein Leben. Du kannst passieren.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_01"); //(hÃ¶hnisch) 20 GoldstÃ¼cke war doch auch nicht zu viel fÃ¼r dein Leben. Du kannst passieren.
 	};
 	if (Wegelagerer_Surprise == TRUE)
 	{
@@ -152,7 +152,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney ()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_03"); //Ich sag dir was: Komm wieder, wenn du Geld hast. Kein Geld, keine Brücke.
+		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_03"); //Ich sag dir was: Komm wieder, wenn du Geld hast. Kein Geld, keine BrÃ¼cke.
 		
 		self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
 		AI_StopProcessInfos (self);
@@ -273,7 +273,7 @@ func void DIA_BDT_1020_Wegelagerer_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	
 	B_Attack (self, other, AR_NONE, 1);
 };

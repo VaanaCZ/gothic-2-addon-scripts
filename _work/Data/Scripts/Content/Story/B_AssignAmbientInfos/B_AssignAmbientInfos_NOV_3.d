@@ -74,7 +74,7 @@ FUNC VOID DIA_NOV_3_Fegen_Info()
 		}
 		else if (Feger1_Permanent == TRUE)
 		{
-			AI_Output (self, other, "DIA_NOV_3_Fegen_03_05"); //Hey, Bruder - ich helfe dir schon. Du musst mich nicht mehr überreden.
+			AI_Output (self, other, "DIA_NOV_3_Fegen_03_05"); //Hey, Bruder - ich helfe dir schon. Du musst mich nicht mehr Ã¼berreden.
 		};
 	};
 	//----------------------------Novize 611 steht draussen rum ----------------------------------------------------------------
@@ -83,13 +83,13 @@ FUNC VOID DIA_NOV_3_Fegen_Info()
 	{	
 		if (Feger2_Permanent == FALSE)
 		{
-			AI_Output (self, other, "DIA_NOV_3_Fegen_03_08"); //Klar helfe ich dir. Wir Novizen müssen doch zusammenhalten. Eine Hand wäscht die andere.
-			AI_Output (self, other, "DIA_NOV_3_Fegen_03_09"); //Ich brauche nur 50 Goldstücke, weil ich noch Parlan bezahlen muss.
+			AI_Output (self, other, "DIA_NOV_3_Fegen_03_08"); //Klar helfe ich dir. Wir Novizen mÃ¼ssen doch zusammenhalten. Eine Hand wÃ¤scht die andere.
+			AI_Output (self, other, "DIA_NOV_3_Fegen_03_09"); //Ich brauche nur 50 GoldstÃ¼cke, weil ich noch Parlan bezahlen muss.
 			
-			B_LogEntry 	(Topic_ParlanFegen,"Der Novize vor der Kirche hilft mir, wenn ich ihm 50 Goldstücke gebe.");
+			B_LogEntry 	(Topic_ParlanFegen,"Der Novize vor der Kirche hilft mir, wenn ich ihm 50 GoldstÃ¼cke gebe.");
 			
 			Info_ClearChoices  (DIA_NOV_3_Fegen);
-			Info_AddChoice (DIA_NOV_3_Fegen,"Vielleicht später...",DIA_NOV_3_Fegen_Nein);
+			Info_AddChoice (DIA_NOV_3_Fegen,"Vielleicht spÃ¤ter...",DIA_NOV_3_Fegen_Nein);
 			
 			if (Npc_HasItems (other, ItMi_Gold) >= 50)
 			{
@@ -106,14 +106,14 @@ FUNC VOID DIA_NOV_3_Fegen_Info()
 	if (Hlp_GetInstanceID (Feger1) !=  Hlp_GetInstanceID (self)) 
 	&& (Hlp_GetInstanceID (Feger2) !=  Hlp_GetInstanceID (self)) 
 	{	
-		AI_Output (self, other, "DIA_NOV_3_Fegen_03_07"); //Vergiss es - dafür habe ich keine Zeit. Such dir einen anderen, der dir hilft.
+		AI_Output (self, other, "DIA_NOV_3_Fegen_03_07"); //Vergiss es - dafÃ¼r habe ich keine Zeit. Such dir einen anderen, der dir hilft.
 	};
 };
 
 
 FUNC VOID DIA_NOV_3_Fegen_Nein()
 {
-	AI_Output (other, self, "DIA_NOV_3_Fegen_Nein_15_00"); //Vielleicht später, momentan kann ich mir das nicht leisten.
+	AI_Output (other, self, "DIA_NOV_3_Fegen_Nein_15_00"); //Vielleicht spÃ¤ter, momentan kann ich mir das nicht leisten.
 	Info_ClearChoices  (DIA_NOV_3_Fegen);
 };
 FUNC VOID DIA_NOV_3_Fegen_Ja()
@@ -196,9 +196,9 @@ FUNC INT DIA_NOV_3_JOIN_Condition()
 FUNC VOID DIA_NOV_3_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_NOV_3_JOIN_15_00"); //Ich will ein Magier werden!
-	AI_Output (self, other, "DIA_NOV_3_JOIN_03_01"); //Das wollen viele der Novizen. Aber nur den wenigsten ist es bestimmt, als Erwählte die Chance zu bekommen, in den Kreis des Feuers aufgenommen zu werden.
-	AI_Output (self, other, "DIA_NOV_3_JOIN_03_02"); //Ein Magier vom Kreis des Feuers zu sein, ist die höchste Ehre, die dir in unserem Orden zuteil werden kann.
-	AI_Output (self, other, "DIA_NOV_3_JOIN_03_03"); //Du wirst hart dafür arbeiten müssen, um deine Chance zu bekommen.
+	AI_Output (self, other, "DIA_NOV_3_JOIN_03_01"); //Das wollen viele der Novizen. Aber nur den wenigsten ist es bestimmt, als ErwÃ¤hlte die Chance zu bekommen, in den Kreis des Feuers aufgenommen zu werden.
+	AI_Output (self, other, "DIA_NOV_3_JOIN_03_02"); //Ein Magier vom Kreis des Feuers zu sein, ist die hÃ¶chste Ehre, die dir in unserem Orden zuteil werden kann.
+	AI_Output (self, other, "DIA_NOV_3_JOIN_03_03"); //Du wirst hart dafÃ¼r arbeiten mÃ¼ssen, um deine Chance zu bekommen.
 };
 
 // *************************************************************************
@@ -210,7 +210,7 @@ INSTANCE DIA_NOV_3_PEOPLE(C_INFO)
 	condition	= DIA_NOV_3_PEOPLE_Condition;
 	information	= DIA_NOV_3_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Wer führt dieses Kloster?";
+	description = "Wer fÃ¼hrt dieses Kloster?";
 };                       
 
 FUNC INT DIA_NOV_3_PEOPLE_Condition()
@@ -220,9 +220,9 @@ FUNC INT DIA_NOV_3_PEOPLE_Condition()
 
 FUNC VOID DIA_NOV_3_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_3_PEOPLE_15_00"); //Wer führt dieses Kloster?
-	AI_Output (self, other, "DIA_NOV_3_PEOPLE_03_01"); //Wir Novizen dienen den Magiern vom Kreis des Feuers. Diese wiederum werden angeführt vom hohen Rat, der aus den drei mächtigsten Magiern besteht.
-	AI_Output (self, other, "DIA_NOV_3_PEOPLE_03_02"); //Aber für alle Belange der Novizen ist Parlan zuständig. Er ist immer im Hof und überwacht die Arbeit der Novizen.
+	AI_Output (other, self, "DIA_NOV_3_PEOPLE_15_00"); //Wer fÃ¼hrt dieses Kloster?
+	AI_Output (self, other, "DIA_NOV_3_PEOPLE_03_01"); //Wir Novizen dienen den Magiern vom Kreis des Feuers. Diese wiederum werden angefÃ¼hrt vom hohen Rat, der aus den drei mÃ¤chtigsten Magiern besteht.
+	AI_Output (self, other, "DIA_NOV_3_PEOPLE_03_02"); //Aber fÃ¼r alle Belange der Novizen ist Parlan zustÃ¤ndig. Er ist immer im Hof und Ã¼berwacht die Arbeit der Novizen.
 };
 
 // *************************************************************************
@@ -234,7 +234,7 @@ INSTANCE DIA_NOV_3_LOCATION(C_INFO)
 	condition	= DIA_NOV_3_LOCATION_Condition;
 	information	= DIA_NOV_3_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Was kannst du mir über dieses Kloster erzählen?";
+	description = "Was kannst du mir Ã¼ber dieses Kloster erzÃ¤hlen?";
 };                       
 
 FUNC INT DIA_NOV_3_LOCATION_Condition()
@@ -244,10 +244,10 @@ FUNC INT DIA_NOV_3_LOCATION_Condition()
 
 FUNC VOID DIA_NOV_3_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_3_LOCATION_15_00"); //Was kannst du mir über dieses Kloster erzählen?
-	AI_Output (self, other, "DIA_NOV_3_LOCATION_03_01"); //Wir bauen uns hier unsere bescheidene Verpflegung selbst an. Wir züchten Schafe und keltern Wein.
+	AI_Output (other, self, "DIA_NOV_3_LOCATION_15_00"); //Was kannst du mir Ã¼ber dieses Kloster erzÃ¤hlen?
+	AI_Output (self, other, "DIA_NOV_3_LOCATION_03_01"); //Wir bauen uns hier unsere bescheidene Verpflegung selbst an. Wir zÃ¼chten Schafe und keltern Wein.
 	AI_Output (self, other, "DIA_NOV_3_LOCATION_03_02"); //Es gibt eine Bibliothek, aber deren Nutzung ist den Magiern und den ausgesuchten Novizen vorbehalten.
-	AI_Output (self, other, "DIA_NOV_3_LOCATION_03_03"); //Wir anderen Novizen kümmern uns in erster Linie darum, dass es den Magiern vom Kreis des Feuers an nichts fehlt.
+	AI_Output (self, other, "DIA_NOV_3_LOCATION_03_03"); //Wir anderen Novizen kÃ¼mmern uns in erster Linie darum, dass es den Magiern vom Kreis des Feuers an nichts fehlt.
 };
 
 // *************************************************************************
@@ -273,13 +273,13 @@ FUNC VOID DIA_NOV_3_STANDARD_Info()
 	{
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_01"); //Das fragt der Richtige! Alle Gespräche unter den Novizen drehen sich nur um dich.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_02"); //Es kommt nur sehr selten vor, dass ein Neuer wie du in den Kreis des Feuers erwählt wird.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_01"); //Das fragt der Richtige! Alle GesprÃ¤che unter den Novizen drehen sich nur um dich.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_02"); //Es kommt nur sehr selten vor, dass ein Neuer wie du in den Kreis des Feuers erwÃ¤hlt wird.
 		}
 		else
 		{
 			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_03"); //Es ist wieder soweit. Einer der Novizen wird bald in den Kreis des Feuers aufgenommen.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_04"); //Die Prüfungen werden bald beginnen.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_04"); //Die PrÃ¼fungen werden bald beginnen.
 		};
 	};
 
@@ -289,35 +289,35 @@ FUNC VOID DIA_NOV_3_STANDARD_Info()
 		if (Pedro_Traitor == TRUE)
 		&& (MIS_NovizenChase != LOG_SUCCESS)	//Kap 3b - SC weiss, das Pedro das Auge Innos geklaut hat
 		{
-	 		AI_Output (self,other,"DIA_NOV_3_STANDARD_03_05"); //Unser Orden wurde von Beliar berührt! Das Böse ist sehr stark, wenn es ihm gelingt, selbst hier Verbündete zu finden.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_06"); //Pedro war schon seit Jahren hier im Kloster. Ich glaube, die viele Zeit außerhalb dieser Mauern hat seinen Glauben geschwächt und ihn so anfällig für die Verlockungen Beliars gemacht.
+	 		AI_Output (self,other,"DIA_NOV_3_STANDARD_03_05"); //Unser Orden wurde von Beliar berÃ¼hrt! Das BÃ¶se ist sehr stark, wenn es ihm gelingt, selbst hier VerbÃ¼ndete zu finden.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_06"); //Pedro war schon seit Jahren hier im Kloster. Ich glaube, die viele Zeit auÃŸerhalb dieser Mauern hat seinen Glauben geschwÃ¤cht und ihn so anfÃ¤llig fÃ¼r die Verlockungen Beliars gemacht.
 		}
 		else if (MIS_NovizenChase == LOG_SUCCESS)	//Kap 3c - Das Auge Innos ist wieder da
 		{
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_07"); //Du bist zur rechten Zeit gekommen. Innos selbst hätte den Zeitpunkt deines Erscheinens nicht besser wählen können.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_07"); //Du bist zur rechten Zeit gekommen. Innos selbst hÃ¤tte den Zeitpunkt deines Erscheinens nicht besser wÃ¤hlen kÃ¶nnen.
 			AI_Output (self,other,"DIA_NOV_3_STANDARD_03_08"); //Du wirst als Retter des Auges in die Geschichte unseres Klosters eingehen.
 		}
 		else //Kap 2 - 3a
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self,other,"DIA_NOV_3_STANDARD_03_09"); //Die Nachrichten aus dem Minental sind erschreckend. Ich glaube, dass Innos uns eine schwere Prüfung auferlegt hat.
+				AI_Output (self,other,"DIA_NOV_3_STANDARD_03_09"); //Die Nachrichten aus dem Minental sind erschreckend. Ich glaube, dass Innos uns eine schwere PrÃ¼fung auferlegt hat.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_NOV_3_STANDARD_03_10"); //Es heißt, es gibt keine Nachricht von den Paladinen, die ins Minental ausgezogen sind. Der Hohe Rat wird am Besten wissen, was zu tun ist.
+				AI_Output (self,other,"DIA_NOV_3_STANDARD_03_10"); //Es heiÃŸt, es gibt keine Nachricht von den Paladinen, die ins Minental ausgezogen sind. Der Hohe Rat wird am Besten wissen, was zu tun ist.
 			};
 		};	
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_NOV_3_STANDARD_03_11"); //Es heißt, wir werden mit der Hilfe unseres Herrn die Drachen vernichten. Der Zorn Innos' wird die Kreaturen Beliars treffen.
+		AI_Output (self,other,"DIA_NOV_3_STANDARD_03_11"); //Es heiÃŸt, wir werden mit der Hilfe unseres Herrn die Drachen vernichten. Der Zorn Innos' wird die Kreaturen Beliars treffen.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_NOV_3_STANDARD_03_12"); //Innos sei Dank, es gibt keine neue Krise. Wir müssen den Weg unseres Herrn weiter gehen, denn nur mit seiner Hilfe werden wir gegen das Böse bestehen können.
+		AI_Output (self,other,"DIA_NOV_3_STANDARD_03_12"); //Innos sei Dank, es gibt keine neue Krise. Wir mÃ¼ssen den Weg unseres Herrn weiter gehen, denn nur mit seiner Hilfe werden wir gegen das BÃ¶se bestehen kÃ¶nnen.
 
 	};
 };
