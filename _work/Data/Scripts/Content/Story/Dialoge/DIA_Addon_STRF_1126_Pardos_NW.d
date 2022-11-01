@@ -37,7 +37,7 @@ FUNC INT DIA_Addon_Pardos_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Pardos_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_00");//Come ti va?
-	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(sorride) Ehi, il mio salvatore! Grazie! Ora potrò finalmente rilassarmi.
+	AI_Output (self, other, "DIA_Addon_Pardos_NW_Hi_03_01");//(sorride) Ehi, il mio salvatore! Grazie! Ora potrÃ² finalmente rilassarmi.
 	AI_Output (other, self, "DIA_Addon_Pardos_NW_Hi_15_02");//D'accordo, io vado, allora.
 };
 // ************************************************************

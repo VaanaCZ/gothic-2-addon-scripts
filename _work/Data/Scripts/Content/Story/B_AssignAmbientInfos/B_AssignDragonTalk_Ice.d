@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Ice_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Il potere dell'Occhio si Ë esaurito e cosÏ anche il tuo tempo.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Il potere dell'Occhio si √® esaurito e cos√¨ anche il tuo tempo.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -68,15 +68,15 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Come osi disturbare il mio riposo? Devo spingermi ancora pi˘ in profondit‡ per essere finalmente lasciato in pace da voi omuncoli?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Come osi disturbare il mio riposo? Devo spingermi ancora pi√π in profondit√† per essere finalmente lasciato in pace da voi omuncoli?
 	if (Mis_KilledDragons == 0)
 	{	
 		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Un drago parlante. Sia lodato l'Occhio di Innos.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Voi umani siete delle creature curiose. Anche dopo essere stati spazzati via dai venti gelidi della morte, ce n'Ë sempre qualcuno che risorge dalle ceneri credendo di essere destinato a diventare un eroe.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Ma tutto questo finir‡ presto. Mi assicurerÚ di persona che nessuno di voi risorga mai pi˘.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Voi umani siete delle creature curiose. Anche dopo essere stati spazzati via dai venti gelidi della morte, ce n'√® sempre qualcuno che risorge dalle ceneri credendo di essere destinato a diventare un eroe.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Ma tutto questo finir√† presto. Mi assicurer√≤ di persona che nessuno di voi risorga mai pi√π.
 	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Fai silenzio. Per il potere conferitomi dal sacro Occhio, ti ordino di rispondere alle mie domande.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ah ah ah. Chiedi dunque. La tua conoscenza non ti aiuter‡.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ah ah ah. Chiedi dunque. La tua conoscenza non ti aiuter√†.
 
 };
 
@@ -133,8 +133,8 @@ func void DIA_Dragon_Ice_BELIAR_Info ()
 	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Quale dio servite?
 	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Quale maledetto dio potrebbe mai consentire a creature spregevoli come te di mettere piede sulla terra?
 	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //Non preoccuparti di comprendere il significato del nostro raduno, piccolo eroe.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Non solo Beliar ci ha permesso di trovarci qui, ma Ë stato lui stesso a ordinarcelo.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Guidati dalle sue parole sacre, non ci riposeremo finchÈ non sar‡ fatta la sua volont‡.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Non solo Beliar ci ha permesso di trovarci qui, ma √® stato lui stesso a ordinarcelo.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Guidati dalle sue parole sacre, non ci riposeremo finch√© non sar√† fatta la sua volont√†.
 
 };
 

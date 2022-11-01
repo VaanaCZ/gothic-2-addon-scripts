@@ -38,8 +38,8 @@ FUNC VOID DIA_1061_Wache_Hallo_Info()
 {
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//Alt. Non puoi entrare.
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Voglio parlare con il tuo capo.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironico) Oh, dici davvero, vuoi parlare con il mio capo? Allora ti lascerò SICURAMENTE passare.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(serio) Ma solo se conosci il suo nome, altrimenti sarò costretto a ucciderti! Allora?
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironico) Oh, dici davvero, vuoi parlare con il mio capo? Allora ti lascerÃ² SICURAMENTE passare.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(serio) Ma solo se conosci il suo nome, altrimenti sarÃ² costretto a ucciderti! Allora?
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Lee",DIA_1061_Wache_Hallo_Lee);
@@ -63,7 +63,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Lee()
 FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Dexter.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Beh, a quanto pare conosci il capo. D’accordo, ti lascerò entrare. Ma ti avverto.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Beh, a quanto pare conosci il capo. Dâ€™accordo, ti lascerÃ² entrare. Ma ti avverto.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Se ti avvicini troppo a qualcuno, non uscirai di qui vivo!
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Dunque prendi un bel respiro e lascia qui le tue armi. Dexter si trova in casa.
 	
@@ -77,7 +77,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Diego.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Esatto!
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//No, stavo solo scherzando. Tu non hai idea di chi sia il nostro capo.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Quindi non c'è un motivo per cui non dovrei ucciderti.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Quindi non c'Ã¨ un motivo per cui non dovrei ucciderti.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	AI_StopProcessInfos (self);

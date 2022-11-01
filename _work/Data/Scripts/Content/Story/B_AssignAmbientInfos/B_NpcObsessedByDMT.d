@@ -28,7 +28,7 @@ func void B_DMTWurm ()
 // B_NpcClearObsessionByDMT	steht bei allen NSCs statt der AI_StopProcessInfos (self);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muﬂ in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
+func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT mu√ü in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
 {														
 	AI_StopProcessInfos	(medium);
 
@@ -124,7 +124,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Malak))
 			{
-				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //Non riuscirai a salvare la sua anima, mago. Non torner‡ mai pi˘ com'era prima.
+				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //Non riuscirai a salvare la sua anima, mago. Non torner√† mai pi√π com'era prima.
 				NpcObsessedByDMT_Malak = TRUE;
 			}		
 		
@@ -146,7 +146,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 				NpcObsessedByDMT_Randolph = TRUE;
 			}	
 				
-			else //Joly: f¸r alle anderen
+			else //Joly: f√ºr alle anderen
 			{
 				B_DMTWurm ();
 				if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Bromor))

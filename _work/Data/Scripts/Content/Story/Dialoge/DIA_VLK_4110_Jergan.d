@@ -66,8 +66,8 @@ FUNC INT DIA_Jergan_Vermisste_Condition()
 FUNC VOID DIA_Jergan_Vermisste_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Vermisste_15_00");//Quei dispersi?
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//Alcuni sono scappati quando i draghi hanno attaccato, non c'è da stupirsi!
-	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Ma se ci sono dei sopravvissuti, li porterò indietro.
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_01");//Alcuni sono scappati quando i draghi hanno attaccato, non c'Ã¨ da stupirsi!
+	AI_Output (self, other,"DIA_Jergan_Vermisste_13_02");//Ma se ci sono dei sopravvissuti, li porterÃ² indietro.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Burg 
@@ -94,11 +94,11 @@ FUNC VOID DIA_Jergan_Burg_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Burg_15_00");//Puoi aiutarmi a entrare nel castello?
 	AI_Output (self, other,"DIA_Jergan_Burg_13_01");//Certo, ma dovrai farmi un favore
-	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Se riuscirai a raggiungere il castello, parla con il paladino Oric. Digli che suo fratello c'è rimasto su al passo.
+	AI_Output (self, other,"DIA_Jergan_Burg_13_02");//Se riuscirai a raggiungere il castello, parla con il paladino Oric. Digli che suo fratello c'Ã¨ rimasto su al passo.
 	
 	Log_CreateTopic (Topic_OricBruder, LOG_MISSION);
 	Log_SetTopicStatus (Topic_OricBruder,LOG_RUNNING);
-	B_LogEntry (Topic_OricBruder,"Quando sono al castello, devo dire a Oric che suo fratello è caduto al passo.");
+	B_LogEntry (Topic_OricBruder,"Quando sono al castello, devo dire a Oric che suo fratello Ã¨ caduto al passo.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Gegend
@@ -110,7 +110,7 @@ INSTANCE DIA_Jergan_Gegend   (C_INFO)
 	condition   = DIA_Jergan_Gegend_Condition;
 	information = DIA_Jergan_Gegend_Info;
 	permanent   = TRUE;
-	description = "Cosa c’è da sapere su questa zona?";
+	description = "Cosa câ€™Ã¨ da sapere su questa zona?";
 };
 
 FUNC INT DIA_Jergan_Gegend_Condition()
@@ -125,11 +125,11 @@ FUNC VOID DIA_Jergan_Gegend_Info()
 {
 	if (Jergan_Tell == FALSE)
 	{
-		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Cosa c’è da sapere su questa zona?
+		AI_Output (other, self,"DIA_Jergan_Gegend_15_00");//Cosa câ€™Ã¨ da sapere su questa zona?
 		AI_Output (self, other,"DIA_Jergan_Gegend_13_01");//Se vuoi vivere, torna da dovunque sei venuto.
 		AI_Output (self, other,"DIA_Jergan_Gegend_13_02");//I pelleverde hanno stretto d'assedio il castello ormai da settimane e inoltre i draghi stanno nascondendosi da qualche parte.
 	};
-	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//L'intera Valle delle Miniere brulica di orchi, non importa dove sei diretto, non sarà una passeggiata.
+	AI_Output (self, other,"DIA_Jergan_Gegend_13_03");//L'intera Valle delle Miniere brulica di orchi, non importa dove sei diretto, non sarÃ  una passeggiata.
 	Jergan_Tell = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -156,9 +156,9 @@ FUNC INT DIA_Jergan_Hilfe_Condition()
 FUNC VOID DIA_Jergan_Hilfe_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Hilfe_15_00");//Come arrivo al castello?
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Innanzitutto, dimenticati la strada diretta. Ma se aggiri il castello, potresti avere qualche possibilità dal retro.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Dovresti stare lontano dai sentieri e usare il fiume. Sarà meglio se nuoterai verso valle per un tratto. Dovrebbe essere più facile da lì.
-	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Gli orchi hanno posizionato un ariete dietro il castello. Puoi entrare da quella parte, avvicinati di soppiatto agli orchi il più vicino possibile e poi corri più veloce che puoi.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_01");//Innanzitutto, dimenticati la strada diretta. Ma se aggiri il castello, potresti avere qualche possibilitÃ  dal retro.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_02");//Dovresti stare lontano dai sentieri e usare il fiume. SarÃ  meglio se nuoterai verso valle per un tratto. Dovrebbe essere piÃ¹ facile da lÃ¬.
+	AI_Output (self, other,"DIA_Jergan_Hilfe_13_03");//Gli orchi hanno posizionato un ariete dietro il castello. Puoi entrare da quella parte, avvicinati di soppiatto agli orchi il piÃ¹ vicino possibile e poi corri piÃ¹ veloce che puoi.
 	AI_Output (self, other,"DIA_Jergan_Hilfe_13_04");//Dovresti farcela se sei abbastanza veloce.
 };
 
@@ -188,7 +188,7 @@ FUNC VOID DIA_Jergan_Mine_Info()
 {
 	AI_Output (other, self,"DIA_Jergan_Mine_15_00");//Cosa stai facendo qui?
 	AI_Output (self, other,"DIA_Jergan_Mine_13_01");//Sono un esploratore. Vago per la regione. Ma tutti questi squartatori non mi rendono la vita facile.
-	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//È una buona occasione per recuperare qualche trofeo, ammesso che tu sappia quello che stai facendo.
+	AI_Output (self, other,"DIA_Jergan_Mine_13_02");//Ãˆ una buona occasione per recuperare qualche trofeo, ammesso che tu sappia quello che stai facendo.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Klauen reissen
@@ -244,7 +244,7 @@ FUNC VOID DIA_Jergan_Teach_Info()
 	
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 	{
-		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//L'importante è rimuovere gli artigli con uno strappo. Non essere troppo esitante, e non tagliare con la lama.
+		AI_Output (self, other,"DIA_Jergan_Teach_13_01");//L'importante Ã¨ rimuovere gli artigli con uno strappo. Non essere troppo esitante, e non tagliare con la lama.
 		AI_Output (self, other,"DIA_Jergan_Teach_13_02");//In questo modo non rimuovi solamente gli artigli degli squartatori, ma anche delle lucertole e delle bestie d'ombra.
 	};
 };
@@ -258,7 +258,7 @@ INSTANCE DIA_Jergan_Diego   (C_INFO)
 	condition   = DIA_Jergan_Diego_Condition;
 	information = DIA_Jergan_Diego_Info;
 	permanent   = FALSE;
-	description = "Sai dove si è diretto Diego?";
+	description = "Sai dove si Ã¨ diretto Diego?";
 };
 
 FUNC INT DIA_Jergan_Diego_Condition()
@@ -272,14 +272,14 @@ FUNC INT DIA_Jergan_Diego_Condition()
 };
 FUNC VOID DIA_Jergan_Diego_Info()
 {
-	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Sai dove si è diretto Diego?
-	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego? Era uno dei minatori di Silvestro. Ma se l'è svignata.
+	AI_Output (other, self,"DIA_Jergan_Diego_15_00");//Sai dove si Ã¨ diretto Diego?
+	AI_Output (self, other,"DIA_Jergan_Diego_13_01");//Diego? Era uno dei minatori di Silvestro. Ma se l'Ã¨ svignata.
 	AI_Output (self, other,"DIA_Jergan_Diego_13_02");//L'ho visto con due cavalieri e una cassa, non molto distante da qui.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Riesci a vedere quella vecchia torre di guardia da qui, vero? Vai laggiù, e poi verso il castello.
-	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Un sentiero conduce attraverso le rocce sulla destra. Sono andati di lì.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_03");//Riesci a vedere quella vecchia torre di guardia da qui, vero? Vai laggiÃ¹, e poi verso il castello.
+	AI_Output (self, other,"DIA_Jergan_Diego_13_04");//Un sentiero conduce attraverso le rocce sulla destra. Sono andati di lÃ¬.
 };
 ///////////////////////////////////////////////////////////////////////
-//	Rudelführer getötet
+//	RudelfÃ¼hrer getÃ¶tet
 ///////////////////////////////////////////////////////////////////////
 
 INSTANCE DIA_Jergan_Leader   (C_INFO)
@@ -307,7 +307,7 @@ FUNC VOID DIA_Jergan_Leader_Info()
 	
 	if (Npc_HasItems (other, ItAt_ClawLeader) >= 1)
 	{
-		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//Sì.
+		AI_Output (other, self,"DIA_Jergan_Leader_15_01");//SÃ¬.
 		AI_Output (self, other,"DIA_Jergan_Leader_13_02");//Varranno sicuramente molto. Ci sono alcune persone che collezionano queste cose.
 		AI_Output (self, other,"DIA_Jergan_Leader_13_03");//Se trovi l'acquirente giusto farai un mucchio di soldi.
 	}

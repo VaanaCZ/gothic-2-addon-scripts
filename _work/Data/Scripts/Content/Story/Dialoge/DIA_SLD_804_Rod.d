@@ -101,7 +101,7 @@ FUNC VOID DIA_Rod_WannaLearn_Info()
 	else
 	{
 		AI_Output (self, other, "DIA_Rod_WannaLearn_06_04"); //Ascolta, ragazzo. Ci vuole molta forza per brandire un'arma a due mani.
-		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //PerchÈ non vai a farti un giro sui pascoli e a giocare a girotondo con le pecore?
+		AI_Output (self, other, "DIA_Rod_WannaLearn_06_05"); //Perch√© non vai a farti un giro sui pascoli e a giocare a girotondo con le pecore?
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -119,7 +119,7 @@ INSTANCE DIA_Rod_Teach(C_INFO)
 	condition	= DIA_Rod_Teach_Condition;
 	information	= DIA_Rod_Teach_Info;
 	permanent	= TRUE;
-	description = "Voglio migliorare le mie abilit‡ di combattimento a due mani!";
+	description = "Voglio migliorare le mie abilit√† di combattimento a due mani!";
 };                       
 
 FUNC INT DIA_Rod_Teach_Condition()
@@ -132,7 +132,7 @@ FUNC INT DIA_Rod_Teach_Condition()
  
 FUNC VOID DIA_Rod_Teach_Info()
 {	
-	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //Voglio migliorare le mie abilit‡ di combattimento a due mani!
+	AI_Output (other,self, "DIA_Rod_Teach_15_00"); //Voglio migliorare le mie abilit√† di combattimento a due mani!
 
 	Rod_Merke_2h = other.HitChance[NPC_TALENT_2H];
 	
@@ -146,7 +146,7 @@ FUNC VOID DIA_Rod_Teach_Back ()
 {
 	if (Rod_Merke_2h < other.HitChance[NPC_TALENT_2H])
 	{
-		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //Stai gi‡ migliorando.
+		AI_Output (self ,other,"DIA_Rod_Teach_BACK_06_00"); //Stai gi√† migliorando.
 	};
 	
 	Info_ClearChoices (DIA_Rod_Teach);
@@ -208,7 +208,7 @@ FUNC VOID DIA_Rod_WannaJoin_Info()
 		if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 		{	
 			AI_Output (self, other, "DIA_Rod_WannaJoin_06_02"); //D'accordo, non serbo rancore.
-			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //Sai combattere e questo Ë quello che conta.
+			AI_Output (self, other, "DIA_Rod_WannaJoin_06_03"); //Sai combattere e questo √® quello che conta.
 			AI_Output (self, other, "DIA_Rod_WannaJoin_06_04"); //La maggior parte dei miei compagni non pensa ad altro che a una piccola rissa tra amici. Ti ci abituerai.
 		}
 		else //WetteGewonnen
@@ -217,11 +217,11 @@ FUNC VOID DIA_Rod_WannaJoin_Info()
 		};
 		
 		AI_Output (self, other, "DIA_Rod_WannaJoin_06_06"); //Per quanto mi riguarda, sei dentro.
-		B_LogEntry (TOPIC_SLDRespekt,"OtterrÚ il voto di Rod se deciderÚ di unirmi ai mercenari.");
+		B_LogEntry (TOPIC_SLDRespekt,"Otterr√≤ il voto di Rod se decider√≤ di unirmi ai mercenari.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //Non c'Ë posto per i deboli qui!
+		AI_Output (self, other, "DIA_Rod_WannaJoin_06_07"); //Non c'√® posto per i deboli qui!
 		Rod_SchwachGesagt = TRUE;
 	};
 };
@@ -378,7 +378,7 @@ FUNC VOID DIA_Rod_Wette_Info()
 	Info_AddChoice (DIA_Rod_Wette, "No.", DIA_Rod_Wette_No);
 	Info_AddChoice (DIA_Rod_Wette, "Certo.", DIA_Rod_Wette_Yes);
 	
-	B_LogEntry (Topic_RodWette,"Rod vuole scommettere 30 pezzi d'oro che non riuscirÚ a brandire la sua spada.");
+	B_LogEntry (Topic_RodWette,"Rod vuole scommettere 30 pezzi d'oro che non riuscir√≤ a brandire la sua spada.");
 };
 
 func void DIA_Rod_Wette_No()
@@ -409,7 +409,7 @@ func void DIA_Rod_Wette_Yes()
 			AI_EquipBestMeleeWeapon	(other);
 			AI_ReadyMeleeWeapon		(other);
 							
-			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//Forte circa cosÏ?!?
+			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_04");//Forte circa cos√¨?!?
 			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_05");//(perplesso) Sembra che tu mi abbia fregato.
 			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_06");//Non me la sarei mai aspettato. Non sembri veramente avere tutta quella forza in te.
 			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_07");//Bene, penso di avere appena perso 30 pezzi d'oro. Eccoteli.
@@ -420,7 +420,7 @@ func void DIA_Rod_Wette_Yes()
 		else
 		{
 			AI_Output (other, self, "DIA_Rod_Wette_Yes_15_08"); //Non riesco a brandire quest'arma.
-			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//(ride) » quello che ti dicevo!
+			AI_Output (self, other, "DIA_Rod_Wette_Yes_06_09");//(ride) √à quello che ti dicevo!
 		};
 		
 		AI_Output (self, other, "DIA_Rod_Wette_Yes_06_10");//E ora ridammi la mia arma.
@@ -464,7 +464,7 @@ func void DIA_Rod_Wette_KeepIt()
 {
 	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_00"); //Non credo...
 	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_01"); //(minaccioso) Cos'hai detto?
-	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Credo che la terrÚ ancora un po'.
+	AI_Output (other, self, "DIA_Rod_Wette_KeepIt_15_02"); //Credo che la terr√≤ ancora un po'.
 	AI_Output (self, other, "DIA_Rod_Wette_KeepIt_06_03"); //Aspetta e vedrai, maledetto!
 	
 	Info_ClearChoices (DIA_Rod_Wette);
@@ -474,7 +474,7 @@ func void DIA_Rod_Wette_KeepIt()
 
 
 // ************************************************************
-// 			  				Schwert zur¸ck
+// 			  				Schwert zur√ºck
 // ************************************************************
 var int Rod_SchwertXPGiven;
 

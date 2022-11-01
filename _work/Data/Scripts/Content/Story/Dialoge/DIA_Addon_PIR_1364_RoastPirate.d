@@ -63,7 +63,7 @@ FUNC VOID DIA_Addon_RoastPirate_GimmeGrog_Info()
 FUNC VOID DIA_Addon_RoastPirate_GimmeGrog_DontHaveAny()
 {
 	AI_Output (other,self ,"DIA_Addon_PIR_6_GimmeGrog_DontHaveAny_15_00"); //No, non ne ho.
-	AI_Output (self ,other,"DIA_Addon_PIR_6_GimmeGrog_DontHaveAny_06_00"); //Cavoli, allora morirò di sete.
+	AI_Output (self ,other,"DIA_Addon_PIR_6_GimmeGrog_DontHaveAny_06_00"); //Cavoli, allora morirÃ² di sete.
 	
 	Info_ClearChoices (DIA_Addon_RoastPirate_GimmeGrog);
 	AI_StopProcessInfos (self);
@@ -101,7 +101,7 @@ func int DIA_Addon_RoastPirate_SeichtesWasser_Condition ()
 };
 func void DIA_Addon_RoastPirate_SeichtesWasser_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_PIR_6_SeichtesWasser_15_00"); //Che c'è?
+	AI_Output	(other, self, "DIA_Addon_PIR_6_SeichtesWasser_15_00"); //Che c'Ã¨?
 	AI_Output	(self, other, "DIA_Addon_PIR_6_SeichtesWasser_06_01"); //Devo occuparmi di questi morti di fame.
 	AI_Output	(self, other, "DIA_Addon_PIR_6_SeichtesWasser_06_02"); //Per questo sgobbo ai fornelli giorno e notte.
 	AI_Output	(self, other, "DIA_Addon_PIR_6_SeichtesWasser_06_03"); //Preferirei andare a caccia di relitti sulla spiaggia.
@@ -137,9 +137,9 @@ func VOID DIA_Addon_RoastPirate_Francis_Info()
 {	
 	AI_Output (other,self ,"DIA_Addon_PIR_6_FRANCIS_15_00"); //Cosa puoi dirmi di Francis?
 	AI_Output (self ,other,"DIA_Addon_PIR_6_Francis_06_01"); //Francis? Si comporta come se fosse il capitano. Ma aspetta che torni Greg!
-	AI_Output (self ,other,"DIA_Addon_PIR_6_Francis_06_02"); //Francis abbasserà la cresta e striscerà come un verme.
+	AI_Output (self ,other,"DIA_Addon_PIR_6_Francis_06_02"); //Francis abbasserÃ  la cresta e striscerÃ  come un verme.
 	AI_Output (self ,other,"DIA_Addon_PIR_6_Francis_06_04"); //Secondo me ci sta prendendo tutti per fessi. Scommetto che sta arricchendosi a spese nostre.
-	AI_Output (self ,other,"DIA_Addon_PIR_6_Francis_06_05"); //Io non ti ho detto niente. E finché non ci sono prove, farai meglio a tenertelo per te.
+	AI_Output (self ,other,"DIA_Addon_PIR_6_Francis_06_05"); //Io non ti ho detto niente. E finchÃ© non ci sono prove, farai meglio a tenertelo per te.
 };	
 
 // ************************************************************
@@ -177,11 +177,11 @@ func VOID DIA_Addon_RoastPirate_PERM_Info()
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_03"); //Ora che Greg è tornato i briganti ci penseranno due volte prima di attaccarci.
+			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_03"); //Ora che Greg Ã¨ tornato i briganti ci penseranno due volte prima di attaccarci.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_01"); //Ora che Greg è tornato c'è più lavoro, ma almeno ci pagano decentemente.
+			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_01"); //Ora che Greg Ã¨ tornato c'Ã¨ piÃ¹ lavoro, ma almeno ci pagano decentemente.
 		};
 	}
 	else
@@ -189,7 +189,7 @@ func VOID DIA_Addon_RoastPirate_PERM_Info()
 		if (randy == 0)
 		&& (!Npc_IsDead(Francis))
 		{
-			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_06"); //Francis è una nullità. Da quando è lui il capo dell'accampamento qui sta andando tutto a rotoli.
+			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_06"); //Francis Ã¨ una nullitÃ . Da quando Ã¨ lui il capo dell'accampamento qui sta andando tutto a rotoli.
 		}
 		else if (randy == 1)
 		{
@@ -197,7 +197,7 @@ func VOID DIA_Addon_RoastPirate_PERM_Info()
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_04"); //Purché Greg torni presto. Voglio tornare in mare aperto.
+			AI_Output (self ,other,"DIA_Addon_PIR_6_Chef_06_04"); //PurchÃ© Greg torni presto. Voglio tornare in mare aperto.
 		};
 	};
 };
@@ -284,7 +284,7 @@ INSTANCE DIA_Addon_RoastPirate_GoHome(C_INFO)
 	condition	= DIA_Addon_RoastPirate_GoHome_Condition;
 	information	= DIA_Addon_RoastPirate_GoHome_Info;
 	permanent	= TRUE;
-	description = "Non mi servi più.";
+	description = "Non mi servi piÃ¹.";
 };                       
 FUNC INT DIA_Addon_RoastPirate_GoHome_Condition()
 {
@@ -296,7 +296,7 @@ FUNC INT DIA_Addon_RoastPirate_GoHome_Condition()
 
 FUNC VOID DIA_Addon_RoastPirate_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_RoastPirate_GoHome_15_00"); //Non ho più bisogno di te.
+	AI_Output (other,self ,"DIA_Addon_RoastPirate_GoHome_15_00"); //Non ho piÃ¹ bisogno di te.
 	B_Say(self, other, "$ABS_GOOD");
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");

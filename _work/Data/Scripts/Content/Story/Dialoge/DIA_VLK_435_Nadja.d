@@ -152,7 +152,7 @@ func int DIA_Nadja_hochgehen_Condition ()
 func void DIA_Nadja_hochgehen_Info ()
 {
 	AI_Output (other, self, "DIA_Nadja_hochgehen_15_00"); //Andiamo di sopra.
-	AI_Output (self, other, "DIA_Nadja_hochgehen_16_01"); //» il tuo giorno fortunato tesoro, andiamo.
+	AI_Output (self, other, "DIA_Nadja_hochgehen_16_01"); //√à il tuo giorno fortunato tesoro, andiamo.
 	
 	Bromor_Pay = 2;
 	AI_StopProcessInfos (self);
@@ -183,10 +183,10 @@ var int Nadja_GaveLuciaInfo;
 func void DIA_Addon_Nadja_LuciaInfo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_15_00"); //Possiamo parlare, ORA?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Quass˘ siamo abbastanza al sicuro.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Quass√π siamo abbastanza al sicuro.
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //A Bromor non piace vederci chiacchierare con i clienti durante il lavoro.
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //Stai cercando informazioni sulle persone che sono scomparse qui al porto, allora?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //Non so se potrÚ esserti utile, ma almeno posso dirti cos'Ë successo a Lucia.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //Non so se potr√≤ esserti utile, ma almeno posso dirti cos'√® successo a Lucia.
 
 	Nadja_GaveLuciaInfo = TRUE;
 	
@@ -198,19 +198,19 @@ func void DIA_Addon_Nadja_LuciaInfo_lucia ()
 {
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_00"); //Dimmi di Lucia.
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //La sua scomparsa non addolora nessuno.
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //PerchÈ?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Si Ë approfittata di tutti, qui intorno.
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //Perch√©?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Si √® approfittata di tutti, qui intorno.
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_04"); //Era una vera carogna!
 };
 func void DIA_Addon_Nadja_LuciaInfo_wo ()
 {
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_wo_15_00"); //Che fine ha fatto?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //So che frequentava Elvrich, l'apprendista di Thorben il carpentiere che sta della parte bassa della citt‡.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //Scommetto che Ë scappata con quel giovanotto.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //So che frequentava Elvrich, l'apprendista di Thorben il carpentiere che sta della parte bassa della citt√†.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //Scommetto che √® scappata con quel giovanotto.
 
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Lucia, la prostituta, Ë scomparsa nottetempo dal bordello di Bromor. Pare che sia scappata con Elvrich, l'apprendista del carpentiere Thorben."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Lucia, la prostituta, √® scomparsa nottetempo dal bordello di Bromor. Pare che sia scappata con Elvrich, l'apprendista del carpentiere Thorben."); 
 
 	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Dove possono essere andati quei due?", DIA_Addon_Nadja_LuciaInfo_Elvrich );
 };
@@ -229,7 +229,7 @@ func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_02"); //Ma non so se crederci o meno.
 	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //Ti conviene parlare con i mercanti della zona.
 	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //Putroppo non posso dirti altro.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //Ma adesso veniamo a noi, tesoruccio. Dopo tutto, hai gi‡ pagato...
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //Ma adesso veniamo a noi, tesoruccio. Dopo tutto, hai gi√† pagato...
 	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //Non ti piacerebbe divertirti un po' prima di andartene?
 
 	Info_ClearChoices (DIA_Addon_Nadja_LuciaInfo);
@@ -242,7 +242,7 @@ func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 		Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,PRINT_Addon_NadjaWait,DIA_Addon_Nadja_WAIT);
 	};
 	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"Grazie, ma devo andare.",DIA_Addon_Nadja_LuciaInfo_weiter);
-	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"PerchÈ no? ...",DIA_Nadja_Poppen_Start);
+	Info_AddChoice (DIA_Addon_Nadja_LuciaInfo,"Perch√© no? ...",DIA_Nadja_Poppen_Start);
 };
 func void DIA_Addon_Nadja_LuciaInfo_weiter ()
 {
@@ -279,7 +279,7 @@ func int DIA_Nadja_Poppen_Condition ()
 	if (Bromor_Pay == 2)
 	&& (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 300) 
 	
-	/* Das ist bˆse - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
+	/* Das ist b√∂se - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
 	&&  (
 		((Nadja_LuciaInfo != 0) && (Nadja_GaveLuciaInfo == 0))
 		|| (Nadja_GaveLuciaInfo == TRUE)
@@ -293,7 +293,7 @@ func int DIA_Nadja_Poppen_Condition ()
 func void DIA_Nadja_Poppen_Info ()
 {
 	AI_Output (self, other, "DIA_Nadja_Poppen_16_00"); //Abbiamo un paio d'ore tutte per noi.
-	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //» tempo di rilassarsi. Sdraiati e divertiti.
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //√à tempo di rilassarsi. Sdraiati e divertiti.
 
 	Info_ClearChoices (DIA_Nadja_Poppen);
 	Info_AddChoice (DIA_Nadja_Poppen,"Va bene...",DIA_Nadja_Poppen_Start);
@@ -343,7 +343,7 @@ instance DIA_Nadja_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Nadja_BUYHERB_Condition;
 	information	 = 	DIA_Nadja_BUYHERB_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Dove posso comprare dellíerba, qui?";
+	description	 = 	"Dove posso comprare dell‚Äôerba, qui?";
 };
 func int DIA_Nadja_BUYHERB_Condition ()
 {	
@@ -391,7 +391,7 @@ instance DIA_Nadja_WANT_HERB		(C_INFO)
 	condition	 = 	DIA_Nadja_WANT_HERB_Condition;
 	information	 = 	DIA_Nadja_WANT_HERB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Adesso dimmi dove posso comprare dellíerba (paga 50 monete díoro).";
+	description	 = 	"Adesso dimmi dove posso comprare dell‚Äôerba (paga 50 monete d‚Äôoro).";
 };
 func int DIA_Nadja_WANT_HERB_Condition ()
 {	

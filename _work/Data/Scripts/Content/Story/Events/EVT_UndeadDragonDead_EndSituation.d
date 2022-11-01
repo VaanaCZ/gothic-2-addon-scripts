@@ -1,5 +1,5 @@
 //****************************
-// 	EVT_UNDEADDRAGONDEAD_ENDSITUATION (Funktion, die beim Durchschreiten des Triggerfeldes vor dem Untoten Drachen ausgef¸hrt wird)
+// 	EVT_UNDEADDRAGONDEAD_ENDSITUATION (Funktion, die beim Durchschreiten des Triggerfeldes vor dem Untoten Drachen ausgef√ºhrt wird)
 //****************************
 var int EVT_UNDEADDRAGONDEAD_ENDSITUATION_OneTime;
 func void EVT_UNDEADDRAGONDEAD_ENDSITUATION ()
@@ -7,7 +7,7 @@ func void EVT_UNDEADDRAGONDEAD_ENDSITUATION ()
 	if (EVT_UNDEADDRAGONDEAD_ENDSITUATION_OneTime == FALSE)
 	&& (Npc_IsDead(Dragon_Undead))
 	{
-	Angar_DI_Party = LOG_SUCCESS; //Joly:(schluﬂ mit Follow)
+	Angar_DI_Party = LOG_SUCCESS; //Joly:(schlu√ü mit Follow)
 	B_StartOtherRoutine	(Angar_DI,"FireDragonIsland");
 	B_StartOtherRoutine	(Lee_DI,"UNDEADDRAGONDEAD");
 	B_StartOtherRoutine	(Diego_DI,"UNDEADDRAGONDEAD");

@@ -79,17 +79,17 @@ func void DIA_PAL_205_Torwache_FirstWarn_Info()
 	{
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_01"); //Violerei il mio incarico pi˘ sacro se lasciassi passare un assassino.
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_01"); //Violerei il mio incarico pi√π sacro se lasciassi passare un assassino.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_02"); //Sei accusato di furto. Fino a quando sar‡ cosÏ, non potrai entrare!
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_02"); //Sei accusato di furto. Fino a quando sar√† cos√¨, non potrai entrare!
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_03"); //Sei noto come persona rissosa. Non ti permetterÚ di passare.
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_03"); //Sei noto come persona rissosa. Non ti permetter√≤ di passare.
 		};
 	
 		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_04"); //Vai da Lord Andre e sistema la faccenda!
@@ -136,7 +136,7 @@ FUNC INT DIA_PAL_205_Torwache_SecondWarn_Condition()
 
 func void DIA_PAL_205_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_PAL_205_Torwache_SecondWarn_12_00"); //Se farai un altro passo, per Innos, ti abbatterÚ!
+	AI_Output (self, other,"DIA_PAL_205_Torwache_SecondWarn_12_00"); //Se farai un altro passo, per Innos, ti abbatter√≤!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,PAL_205_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -200,7 +200,7 @@ FUNC INT DIA_PAL_205_Torwache_Hagen_Condition()
 FUNC VOID DIA_PAL_205_Torwache_Hagen_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_Hagen_15_00"); //Devo parlare con Lord Hagen!
-	AI_Output (self, other,"DIA_PAL_205_Torwache_Hagen_12_01"); //Sai quante volte l'ho gi‡ sentita? Non puoi entrare. Se ci proverai, sarÚ costretto a ucciderti.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_Hagen_12_01"); //Sai quante volte l'ho gi√† sentita? Non puoi entrare. Se ci proverai, sar√≤ costretto a ucciderti.
 	 
 	
 	AI_StopProcessInfos(self);
@@ -266,14 +266,14 @@ FUNC INT DIA_PAL_205_Torwache_PassAsMage_Condition()
 FUNC VOID DIA_PAL_205_Torwache_PassAsMage_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsMage_15_00"); //Sono un Mago del Fuoco.
-	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMage_12_01"); //SÏ, naturalmente. Perdonami, Eletto, ma sto solo facendo il mio dovere.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMage_12_01"); //S√¨, naturalmente. Perdonami, Eletto, ma sto solo facendo il mio dovere.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	PAL_205_schonmalreingelassen = TRUE;
 	AI_StopProcessInfos	(self);
 };
 // ************************************************************
-// 						Pass as S÷LDNER
+// 						Pass as S√ñLDNER
 // ************************************************************
 
 INSTANCE DIA_PAL_205_Torwache_PassAsSld (C_INFO)
@@ -316,7 +316,7 @@ INSTANCE DIA_PAL_205_Torwache_PERM (C_INFO)
 	condition	= DIA_PAL_205_Torwache_PERM_Condition;
 	information	= DIA_PAL_205_Torwache_PERM_Info;
 	permanent	= TRUE;
-	description	= "Sar‡ un compito facile?";
+	description	= "Sar√† un compito facile?";
 };        
          
 FUNC INT DIA_PAL_205_Torwache_PERM_Condition()
@@ -335,7 +335,7 @@ FUNC VOID DIA_PAL_205_Torwache_PERM_Info()
 	if (other.guild == GIL_PAL) 
 	|| (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_01"); //» tutto sotto controllo.
+		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_01"); //√à tutto sotto controllo.
 	}
 	else if (other.guild == GIL_KDF)
 	{

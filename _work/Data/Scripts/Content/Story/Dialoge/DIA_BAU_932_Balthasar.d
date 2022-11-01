@@ -45,8 +45,8 @@ func void DIA_Balthasar_HALLO_Info ()
 	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_00"); //Come vanno le cose?
 	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_01"); //Ah, un volto nuovo qui alla fattoria. Che il vecchio taccagno si sia deciso a mandarmi un apprendista?
 	AI_Output			(other, self, "DIA_Balthasar_HALLO_15_02"); //Io non sono un apprendista.
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_03"); //Oh. Capisco. Non sono più giovane come una volta, e sono anni che aspetto un sostituto.
-	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_04"); //Non sei qui perché i vicini sono arrabbiati, vero?
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_03"); //Oh. Capisco. Non sono piÃ¹ giovane come una volta, e sono anni che aspetto un sostituto.
+	AI_Output			(self, other, "DIA_Balthasar_HALLO_05_04"); //Non sei qui perchÃ© i vicini sono arrabbiati, vero?
 	
 
 };
@@ -75,7 +75,7 @@ func int DIA_Balthasar_WASMACHSTDU_Condition ()
 func void DIA_Balthasar_WASMACHSTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Balthasar_WASMACHSTDU_15_00"); //Che tipo di lavoro svolgi, qui?
-	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_01"); //Oh, faccio la guardia alle pecore. È una vita che lo faccio.
+	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_01"); //Oh, faccio la guardia alle pecore. Ãˆ una vita che lo faccio.
 	AI_Output			(self, other, "DIA_Balthasar_WASMACHSTDU_05_02"); //Vedi, gli animali sono molto leali e intelligenti. Se li tratti bene, ti seguiranno per tutta la vita.
 
 };
@@ -156,10 +156,10 @@ func int DIA_Balthasar_AERGERMITNACHBARN_Condition ()
 func void DIA_Balthasar_AERGERMITNACHBARN_Info ()
 {
 	AI_Output			(other, self, "DIA_Balthasar_AERGERMITNACHBARN_15_00"); //Che problemi hai con i tuoi vicini?
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_01"); //L'erba da questo lato del grande campo è sempre così bassa e secca, e così la maggior parte delle volte vado nei grossi pascoli degli altri allevatori.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_02"); //Al padrone non importa, ma ogni volta che porto i miei animali lassù, Bengar, il contadino dell'altopiano, corre a lamentarsi da lui.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_01"); //L'erba da questo lato del grande campo Ã¨ sempre cosÃ¬ bassa e secca, e cosÃ¬ la maggior parte delle volte vado nei grossi pascoli degli altri allevatori.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_02"); //Al padrone non importa, ma ogni volta che porto i miei animali lassÃ¹, Bengar, il contadino dell'altopiano, corre a lamentarsi da lui.
 	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_03"); //Dice che Sekob deve pagare se vuole che porti i suoi animali nel pascolo di Bengar.
-	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_04"); //Ma Sekob non spenderebbe una sola moneta per questo, dunque non posso più andare lassù sull'altopiano.
+	AI_Output			(self, other, "DIA_Balthasar_AERGERMITNACHBARN_05_04"); //Ma Sekob non spenderebbe una sola moneta per questo, dunque non posso piÃ¹ andare lassÃ¹ sull'altopiano.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -266,7 +266,7 @@ func int DIA_Balthasar_BENGARUEBERREDET_Condition ()
 func void DIA_Balthasar_BENGARUEBERREDET_Info ()
 {
 	AI_Output			(other, self, "DIA_Balthasar_BENGARUEBERREDET_15_00"); //Puoi riportare le tue pecore sui pascoli di Bengar. Ho parlato con lui.
-	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_01"); //Ti ringrazio. Mi avvierò subito.
+	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_01"); //Ti ringrazio. Mi avvierÃ² subito.
 	AI_Output			(self, other, "DIA_Balthasar_BENGARUEBERREDET_05_02"); //Ecco, accetta queste pelli di pecora come segno della mia gratitudine.
 
 	B_GiveInvItems (self, other, ItAt_SheepFur, 10);  
@@ -330,7 +330,7 @@ func int DIA_Balthasar_PERMKAP1_Condition ()
 
 func void DIA_Balthasar_PERMKAP1_Info ()
 {
-	AI_Output			(other, self, "DIA_Balthasar_PERMKAP1_15_00"); //Tutto il resto è a posto?
+	AI_Output			(other, self, "DIA_Balthasar_PERMKAP1_15_00"); //Tutto il resto Ã¨ a posto?
 	
 	Npc_PerceiveAll(self);
 	if 	(
@@ -349,7 +349,7 @@ func void DIA_Balthasar_PERMKAP1_Info ()
 				}
 	else
 			{
-				AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_02"); //È un brutto periodo. Non riesco a trovare le mie pecore!
+				AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_02"); //Ãˆ un brutto periodo. Non riesco a trovare le mie pecore!
 				if (Npc_IsDead(Sekob)== FALSE)
 				{
 					AI_Output			(self, hero, "DIA_Balthasar_PERMKAP1_05_03"); //Credo che dovrei confessarlo a Sekob.

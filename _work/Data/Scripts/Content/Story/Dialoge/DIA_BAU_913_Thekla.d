@@ -68,7 +68,7 @@ func int DIA_Thekla_Lecker_Condition ()
 func void DIA_Thekla_Lecker_Info ()
 {
 	AI_Output (other, self, "DIA_Thekla_Lecker_15_00"); //Che odore delizioso, qui!
-	AI_Output (self, other, "DIA_Thekla_Lecker_17_01"); //Sì, certo! Conosco i tipi come te! Questo posto ne è pieno.
+	AI_Output (self, other, "DIA_Thekla_Lecker_17_01"); //SÃ¬, certo! Conosco i tipi come te! Questo posto ne Ã¨ pieno.
 	AI_Output (self, other, "DIA_Thekla_Lecker_17_02"); //Prima cercano di essere tutti cortesi e disponibili, e poi quando hai bisogno di loro, non ci sono mai!
 };
 
@@ -149,7 +149,7 @@ func void DIA_Thekla_Arbeit_Info ()
 {
 	AI_Output (other, self, "DIA_Thekla_Arbeit_15_00"); //Sto cercando un lavoro...
 	AI_Output (self, other, "DIA_Thekla_Arbeit_17_01"); //Vuoi lavorare qui alla fattoria?
-	AI_Output (self, other, "DIA_Thekla_Arbeit_17_02"); //Solo Onar può prendere una decisione in proposito. La fattoria appartiene a lui, così come tutta la valle.
+	AI_Output (self, other, "DIA_Thekla_Arbeit_17_02"); //Solo Onar puÃ² prendere una decisione in proposito. La fattoria appartiene a lui, cosÃ¬ come tutta la valle.
 };
 
 // ************************************************************
@@ -179,7 +179,7 @@ func void DIA_Thekla_WannaJoin_Info ()
 {
 	AI_Output (other, self, "DIA_Thekla_WannaJoin_15_00"); //Veramente, avevo intenzione di unirmi ai mercenari...
 	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_01"); //Dunque tu sei un altro di quelli che viene dalla colonia penale?
-	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_02"); //Avrei dovuto capirlo! Lasciami in pace! Ho già abbastanza gente come te da queste parti!
+	AI_Output (self, other, "DIA_Thekla_WannaJoin_17_02"); //Avrei dovuto capirlo! Lasciami in pace! Ho giÃ  abbastanza gente come te da queste parti!
 };
 
 // ************************************************************
@@ -221,7 +221,7 @@ instance DIA_Thekla_Problem		(C_INFO)
 	condition	= DIA_Thekla_Problem_Condition;
 	information	= DIA_Thekla_Problem_Info;
 	permanent 	= FALSE;
-	description	= "Cos’hai contro i mercenari?";
+	description	= "Cosâ€™hai contro i mercenari?";
 };
 
 func int DIA_Thekla_Problem_Condition ()
@@ -235,13 +235,13 @@ func int DIA_Thekla_Problem_Condition ()
 
 func void DIA_Thekla_Problem_Info ()
 {
-	AI_Output (other, self, "DIA_Thekla_Problem_15_00"); //Cos’hai contro i mercenari?
+	AI_Output (other, self, "DIA_Thekla_Problem_15_00"); //Cosâ€™hai contro i mercenari?
 	AI_Output (self, other, "DIA_Thekla_Problem_17_01"); //Ah, quegli imbecilli mi danno davvero sui nervi! Specialmente Silvio e quel grassone del suo compagno Bullco.
 	AI_Output (self, other, "DIA_Thekla_Problem_17_02"); //Quei due se ne stanno seduti nel loro angolo da giorni ormai, rendendomi la vita impossibile.
-	AI_Output (self, other, "DIA_Thekla_Problem_17_03"); //La minestra è troppo calda, la carne è troppo dura, e così via.
+	AI_Output (self, other, "DIA_Thekla_Problem_17_03"); //La minestra Ã¨ troppo calda, la carne Ã¨ troppo dura, e cosÃ¬ via.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (other, self, "DIA_Thekla_Problem_15_04"); //Perché allora non fai niente?
+		AI_Output (other, self, "DIA_Thekla_Problem_15_04"); //PerchÃ© allora non fai niente?
 		AI_Output (self, other, "DIA_Thekla_Problem_17_05"); //E cosa dovrei fare, Signor So-tutto-io? Colpirli col mio mattarello? Posso farlo con i contadini, ma questi luridi bastardi mi picchierebbero.
 	};
 };
@@ -274,9 +274,9 @@ func int DIA_Thekla_Manieren_Condition ()
 func void DIA_Thekla_Manieren_Info ()
 {
 	AI_Output (other, self, "DIA_Thekla_Manieren_15_00"); //Vuoi che insegni a quei due le buone maniere?
-	AI_Output (self, other, "DIA_Thekla_Manieren_17_01"); //Faresti meglio a restarne fuori, tesoro. Da quello che so, Silvio dispone di un'armatura magica e non può essere sconfitto.
+	AI_Output (self, other, "DIA_Thekla_Manieren_17_01"); //Faresti meglio a restarne fuori, tesoro. Da quello che so, Silvio dispone di un'armatura magica e non puÃ² essere sconfitto.
 	AI_Output (other, self, "DIA_Thekla_Manieren_15_02"); //E che mi dici di Bullco?
-	AI_Output (self, other, "DIA_Thekla_Manieren_17_03"); //Quel tipo è forte come un toro. Finora ha battuto tutti quelli che hanno cercato di attaccare briga con lui o con Silvio.
+	AI_Output (self, other, "DIA_Thekla_Manieren_17_03"); //Quel tipo Ã¨ forte come un toro. Finora ha battuto tutti quelli che hanno cercato di attaccare briga con lui o con Silvio.
 };
 		
 // ************************************************************
@@ -319,7 +319,7 @@ func void DIA_Thekla_AfterFight_Info ()
 		AI_Output (self, other, "DIA_Thekla_AfterFight_17_05"); //Ora non fare quella faccia. Non sei il primo che viene battuto da quelle canaglie.
 	};
 	
-	AI_Output (self, other, "DIA_Thekla_AfterFight_17_06"); //Tieni, mangia un boccone così recupererai le forze.
+	AI_Output (self, other, "DIA_Thekla_AfterFight_17_06"); //Tieni, mangia un boccone cosÃ¬ recupererai le forze.
 	B_GiveInvItems (self, other, ItFo_XPStew, 1);	
 	Thekla_GaveStew = TRUE;
 };
@@ -370,7 +370,7 @@ instance DIA_Thekla_PERM		(C_INFO)
 	condition	= DIA_Thekla_PERM_Condition;
 	information	= DIA_Thekla_PERM_Info;
 	permanent	= TRUE;
-	description	= "Posso avere un altro po’ di stufato?";
+	description	= "Posso avere un altro poâ€™ di stufato?";
 };
 func int DIA_Thekla_PERM_Condition()
 {
@@ -382,19 +382,19 @@ func int DIA_Thekla_PERM_Condition()
 
 func void DIA_Thekla_PERM_Info()
 {
-	AI_Output (other, self, "DIA_Thekla_PERM_15_00"); //Posso avere un altro po’ di stufato?
+	AI_Output (other, self, "DIA_Thekla_PERM_15_00"); //Posso avere un altro poâ€™ di stufato?
 	
 	if (MIS_Thekla_Paket == FALSE)
 	{	
 		AI_Output (self, other, "DIA_Thekla_PERM_17_01"); //Mi dispiace, ma l'ho finito.
-		AI_Output (other, self, "DIA_Thekla_PERM_15_02"); //Non te n'è rimasta nemmeno una piccola scodella?
+		AI_Output (other, self, "DIA_Thekla_PERM_15_02"); //Non te n'Ã¨ rimasta nemmeno una piccola scodella?
 		AI_Output (self, other, "DIA_Thekla_PERM_17_03"); //No.
 		AI_Output (other, self, "DIA_Thekla_PERM_15_04"); //Posso leccare la pentola allora?
 		AI_Output (self, other, "DIA_Thekla_PERM_17_05"); //Puoi darci un taglio?
-		AI_Output (self, other, "DIA_Thekla_PERM_17_06"); //Se ti piace così tanto il mio stufato, devi fare qualcosa per guadagnartelo.
+		AI_Output (self, other, "DIA_Thekla_PERM_17_06"); //Se ti piace cosÃ¬ tanto il mio stufato, devi fare qualcosa per guadagnartelo.
 		AI_Output (other, self, "DIA_Thekla_PERM_15_07"); //Cosa?
 		AI_Output (self, other, "DIA_Thekla_PERM_17_08"); //Vai da Sagitta, la guaritrice che vive dietro la fattoria di Sekob, e portami un pacco delle sue erbe.
-		AI_Output (self, other, "DIA_Thekla_PERM_17_09"); //Se mi porti le erbe, ti cucinerò dello stufato.
+		AI_Output (self, other, "DIA_Thekla_PERM_17_09"); //Se mi porti le erbe, ti cucinerÃ² dello stufato.
 		
 		MIS_Thekla_Paket = LOG_RUNNING;
 		
@@ -402,7 +402,7 @@ func void DIA_Thekla_PERM_Info()
 		
 		Log_CreateTopic (TOPIC_TheklaEintopf,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_TheklaEintopf,LOG_RUNNING);
-		B_LogEntry (TOPIC_TheklaEintopf,"Se porto le erbe di Sagitta la guaritrice a Thekla, ella cucinerà dell'altro stufato per me. Sagitta vive dietro la fattoria di Sekob.");
+		B_LogEntry (TOPIC_TheklaEintopf,"Se porto le erbe di Sagitta la guaritrice a Thekla, ella cucinerÃ  dell'altro stufato per me. Sagitta vive dietro la fattoria di Sekob.");
 		
 	}
 	else if (MIS_Thekla_Paket == LOG_SUCCESS)
@@ -411,14 +411,14 @@ func void DIA_Thekla_PERM_Info()
 		{
 			if (Thekla_MehrEintopfKap1 == FALSE)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_10"); //D'accordo, ti accontenterò. Tieni, così non morirai di fame proprio davanti ai miei occhi.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_10"); //D'accordo, ti accontenterÃ². Tieni, cosÃ¬ non morirai di fame proprio davanti ai miei occhi.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
 				Thekla_MehrEintopfKap1 = TRUE;
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_11"); //Ehi, ehi, ehi, non essere così ingordo! Ti avvertirò quando avrò qualcos'altro da farti fare.
-				AI_Output (self, other, "DIA_Thekla_PERM_17_12"); //DOPODICHÉ potrai avere dell'altro stufato, capito?
+				AI_Output (self, other, "DIA_Thekla_PERM_17_11"); //Ehi, ehi, ehi, non essere cosÃ¬ ingordo! Ti avvertirÃ² quando avrÃ² qualcos'altro da farti fare.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_12"); //DOPODICHÃ‰ potrai avere dell'altro stufato, capito?
 			};
 		};
 		
@@ -437,11 +437,11 @@ func void DIA_Thekla_PERM_Info()
 				if (MIS_RescueBennet != LOG_SUCCESS)
 				{
 					AI_Output (self, other, "DIA_Thekla_PERM_17_14"); //Quei bastardi della guardia cittadina hanno gettato Bennet in cella.
-					AI_Output (self, other, "DIA_Thekla_PERM_17_15"); //Fammi un favore e fallo uscire di lì, d’accordo? Nel frattempo ti preparerò dell'altro gustoso stufato.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_15"); //Fammi un favore e fallo uscire di lÃ¬, dâ€™accordo? Nel frattempo ti preparerÃ² dell'altro gustoso stufato.
 				}
 				else
 				{
-					AI_Output (self, other, "DIA_Thekla_PERM_17_16"); //Non mi è rimasto niente. Torna più tardi.
+					AI_Output (self, other, "DIA_Thekla_PERM_17_16"); //Non mi Ã¨ rimasto niente. Torna piÃ¹ tardi.
 				};
 			};
 		};
@@ -450,7 +450,7 @@ func void DIA_Thekla_PERM_Info()
 		{
 			if (Thekla_MehrEintopfKap5 == FALSE)
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_17"); //Sei sempre affamato, non è vero? Cos'è che fai tutto il giorno?
+				AI_Output (self, other, "DIA_Thekla_PERM_17_17"); //Sei sempre affamato, non Ã¨ vero? Cos'Ã¨ che fai tutto il giorno?
 				AI_Output (other, self, "DIA_Thekla_PERM_15_18"); //Ho ucciso alcuni draghi.
 				AI_Output (self, other, "DIA_Thekla_PERM_17_19"); //Oh! Credo che ti meriti una bella scodella di stufato dunque.
 				B_GiveInvItems (self, other, ItFo_XPStew, 1);
@@ -458,7 +458,7 @@ func void DIA_Thekla_PERM_Info()
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Thekla_PERM_17_20"); //Mi dispiace, ma non ce n'è più.
+				AI_Output (self, other, "DIA_Thekla_PERM_17_20"); //Mi dispiace, ma non ce n'Ã¨ piÃ¹.
 			};
 		};
 	}

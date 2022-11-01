@@ -14,7 +14,7 @@ func void B_LastWarningVatras ()
 
 func void B_VatrasPissedOff ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Di conseguenza, non puoi più contare sul nostro sostegno. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Di conseguenza, non puoi piÃ¹ contare sul nostro sostegno. 
 	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //Vattene. Per me, ora sei un reietto.
 	
 	if (Vatras_IsOnBoard == LOG_SUCCESS)

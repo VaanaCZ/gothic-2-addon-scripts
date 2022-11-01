@@ -54,7 +54,7 @@ instance DIA_Dobar_Talent		(C_INFO)
 	condition	 = 	DIA_Dobar_Talent_Condition;
 	information	 = 	DIA_Dobar_Talent_Info;
 	permanent 	 =  FALSE;
-	description	 =  "Conosco qualcosa sull’arte della forgiatura.";
+	description	 =  "Conosco qualcosa sullâ€™arte della forgiatura.";
 };
 func int DIA_Dobar_Talent_Condition ()
 {	
@@ -65,7 +65,7 @@ func int DIA_Dobar_Talent_Condition ()
 };
 func void DIA_Dobar_Talent_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Conosco qualcosa sull’arte della forgiatura.
+	AI_Output (other, self, "DIA_Dobar_Talent_15_00"); //Conosco qualcosa sullâ€™arte della forgiatura.
 	AI_Output (self, other, "DIA_Dobar_Talent_08_01"); //Bene... e quindi?
 };
 ///////////////////////////////////////////////////////////////////////
@@ -117,12 +117,12 @@ func int DIA_Dobar_beibringen_Condition ()
 func void DIA_Dobar_beibringen_Info ()
 {
 	AI_Output (other, self, "DIA_Dobar_beibringen_15_00"); //Puoi insegnarmi qualcosa?
-	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Dunque conosci già le basi. Posso mostrarti come migliorare il tuo lavoro.
+	AI_Output (self, other, "DIA_Dobar_beibringen_08_01"); //Dunque conosci giÃ  le basi. Posso mostrarti come migliorare il tuo lavoro.
 	AI_Output (self, other, "DIA_Dobar_beibringen_08_02"); //Allora sarai in grado di forgiare armi migliori.
 	
 	Dobar_Learnsmith = TRUE;
 	Log_CreateTopic	(TOPIC_Teacher_OC, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher_OC, "Dobar può insegnarmi a forgiare armi migliori.");
+	B_LogEntry		(TOPIC_Teacher_OC, "Dobar puÃ² insegnarmi a forgiare armi migliori.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Teach
@@ -151,8 +151,8 @@ func void DIA_Dobar_Teach_Info ()
 	if B_TeachPlayerTalentSmith	(self, hero, WEAPON_1H_Special_01) 
 	{	
 		AI_Output (self, other, "DIA_Dobar_Teach_08_01"); //Assicurati che l'acciaio risplenda in modo uniforme, in modo da ottenere poi una lama bilanciata.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Se lo terrai a mente, le lame che forgerai saranno più dure e affilate.
-		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //È tutto quello che ti serve sapere. Se cerchi dell'acciaio qui al castello, parla con Engor.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_02"); //Se lo terrai a mente, le lame che forgerai saranno piÃ¹ dure e affilate.
+		AI_Output (self, other, "DIA_Dobar_Teach_08_03"); //Ãˆ tutto quello che ti serve sapere. Se cerchi dell'acciaio qui al castello, parla con Engor.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -165,7 +165,7 @@ instance DIA_Dobar_Waffe		(C_INFO)
 	condition	 = 	DIA_Dobar_Waffe_Condition;
 	information	 = 	DIA_Dobar_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Puoi fabbricare un’arma per me?";
+	description	 = 	"Puoi fabbricare unâ€™arma per me?";
 };
 func int DIA_Dobar_Waffe_Condition ()
 {
@@ -173,7 +173,7 @@ func int DIA_Dobar_Waffe_Condition ()
 };
 func void DIA_Dobar_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Puoi fabbricare un’arma per me?
+	AI_Output (other, self, "DIA_Dobar_Waffe_15_00"); //Puoi fabbricare unâ€™arma per me?
 	AI_Output (self, other, "DIA_Dobar_Waffe_08_01"); //Non ho tempo per questo. Tandor distribuisce le armi, io le fabbrico soltanto e Parlaf le affila.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);

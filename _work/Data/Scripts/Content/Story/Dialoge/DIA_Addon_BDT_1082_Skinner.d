@@ -75,8 +75,8 @@ FUNC INT DIA_Addon_Skinner_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Skinner_Hi_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//Perché mi hai svegliato, eh? Scommetto che neanche lo sai...
-	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//No, non dire niente. È troppo tardi per le scuse.
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_00");//PerchÃ© mi hai svegliato, eh? Scommetto che neanche lo sai...
+	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_01");//No, non dire niente. Ãˆ troppo tardi per le scuse.
 	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_02");//Ora hai due scelte. Puoi batterti con me e la mia Betty. Oppure puoi cercare di scappare.
 	AI_Output (self, other, "DIA_Addon_Skinner_Hi_08_03");//Al posto tuo, scapperei
 	
@@ -93,7 +93,7 @@ INSTANCE DIA_Addon_Skinner_Attentat   (C_INFO)
 	condition   = DIA_Addon_Skinner_Attentat_Condition;
 	information = DIA_Addon_Skinner_Attentat_Info;
 	permanent   = FALSE;
-	description = "A proposito del tentato omicidio…";
+	description = "A proposito del tentato omicidioâ€¦";
 };
 FUNC INT DIA_Addon_Skinner_Attentat_Condition()
 {	

@@ -51,7 +51,7 @@ FUNC VOID DIA_OWPAL_4_STANDARD_Info()
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Resisteremo qui fino a quando Innos ci protegger‡.
+		AI_Output (self,other,"DIA_OWPAL_4_STANDARD_04_01"); //Resisteremo qui fino a quando Innos ci protegger√†.
 	};
 	if (randy == 2)
 	{

@@ -96,10 +96,10 @@ func int DIA_Ruga_Hallo_Condition ()
 func void DIA_Ruga_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Ruga_Hallo_15_00"); //Cosa stai facendo, qui?
-	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Sto addestrando i miei uomini a usare la balestra e a diventare un po' pi˘ rapidi.
+	AI_Output (self, other, "DIA_Ruga_Hallo_11_01"); //Sto addestrando i miei uomini a usare la balestra e a diventare un po' pi√π rapidi.
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher, "Ruga, la guardia cittadina, puÚ aiutarmi a migliorare la destrezza e puÚ insegnarmi a utilizzare la balestra. Ma per questo dovrÚ servire il re.");
+	B_LogEntry (Topic_CityTeacher, "Ruga, la guardia cittadina, pu√≤ aiutarmi a migliorare la destrezza e pu√≤ insegnarmi a utilizzare la balestra. Ma per questo dovr√≤ servire il re.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Train
@@ -186,7 +186,7 @@ FUNC VOID DIA_Ruga_Teach_Back ()
 {
 	if (other.HitChance[NPC_TALENT_CROSSBOW] >= 90)
 	{
-		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //Non sono in grado di insegnarti altro. » giunto il momento che ti trovi un nuovo maestro.
+		AI_Output(self,other,"DIA_Ruga_Teach_11_00"); //Non sono in grado di insegnarti altro. √à giunto il momento che ti trovi un nuovo maestro.
 		DIA_Ruga_Teach_permanent = TRUE;
 		
 	};
@@ -251,7 +251,7 @@ func void DIA_Ruga_TEACHDEX_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] >= T_LOW)
 	{
-		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //Questo Ë tutto ciÚ che sono in grado di insegnarti. Se vuoi migliorare la tua rapidit‡, devi trovarti un nuovo maestro.
+		AI_Output (self, other, "DIA_Ruga_TEACHDEX_11_00"); //Questo √® tutto ci√≤ che sono in grado di insegnarti. Se vuoi migliorare la tua rapidit√†, devi trovarti un nuovo maestro.
 		DIA_Ruga_TEACHDEX_permanent = TRUE;
 	};
 	Info_ClearChoices (DIA_Ruga_TEACHDEX);

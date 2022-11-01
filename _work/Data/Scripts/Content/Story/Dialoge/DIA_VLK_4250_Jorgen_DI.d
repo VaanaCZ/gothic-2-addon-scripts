@@ -49,11 +49,11 @@ FUNC VOID DIA_Jorgen_DI_Hallo_Info()
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //Abbastanza, almeno finché questi mostri staranno lontani da noi...
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_01"); //Abbastanza, almeno finchÃ© questi mostri staranno lontani da noi...
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //Non sopravvivremo ad un altro attacco di orchi come quello. Perciò sbrighiamoci, dobbiamo uscire da qui.
+		AI_Output (self ,other,"DIA_Jorgen_DI_Hallo_07_02"); //Non sopravvivremo ad un altro attacco di orchi come quello. PerciÃ² sbrighiamoci, dobbiamo uscire da qui.
 		B_StartOtherRoutine	(Jorgen_DI,"Start");
 	};
 	AI_StopProcessInfos (self);
@@ -70,7 +70,7 @@ instance DIA_Jorgen_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Jorgen_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 	
-	description = 	"Il nemico è morto.";
+	description = 	"Il nemico Ã¨ morto.";
 
 };
 
@@ -83,12 +83,12 @@ func int DIA_Jorgen_DI_UndeadDragonDead_Condition ()
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //Il nemico è morto.
-	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //Questa è una buona notizia. È tutto quello che dovevamo fare su quest'isola?
+	AI_Output			(other ,self, "DIA_Jorgen_DI_UndeadDragonDead_15_00"); //Il nemico Ã¨ morto.
+	AI_Output			(self ,other, "DIA_Jorgen_DI_UndeadDragonDead_07_01"); //Questa Ã¨ una buona notizia. Ãˆ tutto quello che dovevamo fare su quest'isola?
 
 	Info_ClearChoices	(DIA_Jorgen_DI_UndeadDragonDead);
 	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Ancora un minuto.", DIA_Jorgen_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "Sì. Ci siamo. Andiamo.", DIA_Jorgen_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Jorgen_DI_UndeadDragonDead, "SÃ¬. Ci siamo. Andiamo.", DIA_Jorgen_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Jorgen_DI_UndeadDragonDead_moment ()

@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_16_JOIN(C_INFO)
 	condition	= DIA_VLK_16_JOIN_Condition;
 	information	= DIA_VLK_16_JOIN_Info;
 	permanent	= TRUE;
-	description = "Voglio diventare un cittadino di questa citt‡!";
+	description = "Voglio diventare un cittadino di questa citt√†!";
 };                       
 
 FUNC INT DIA_VLK_16_JOIN_Condition()
@@ -43,8 +43,8 @@ FUNC INT DIA_VLK_16_JOIN_Condition()
 
 FUNC VOID DIA_VLK_16_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_JOIN_15_00"); //Voglio diventare un cittadino di questa citt‡!
-	AI_Output (self, other, "DIA_VLK_16_JOIN_16_01"); //Vuoi aiutarci a difendere la citt‡ dagli orchi?
+	AI_Output (other, self, "DIA_VLK_16_JOIN_15_00"); //Voglio diventare un cittadino di questa citt√†!
+	AI_Output (self, other, "DIA_VLK_16_JOIN_16_01"); //Vuoi aiutarci a difendere la citt√† dagli orchi?
 	AI_Output (self, other, "DIA_VLK_16_JOIN_16_02"); //Se sei un cittadino di Khorinis, puoi arruolarti nella guardia cittadina. Devi solo parlare con una delle guardie.
 };
 
@@ -57,7 +57,7 @@ INSTANCE DIA_VLK_16_PEOPLE(C_INFO)
 	condition	= DIA_VLK_16_PEOPLE_Condition;
 	information	= DIA_VLK_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Quali sono le personalit‡ importanti in questa citt‡?";
+	description = "Quali sono le personalit√† importanti in questa citt√†?";
 };                       
 
 FUNC INT DIA_VLK_16_PEOPLE_Condition()
@@ -67,8 +67,8 @@ FUNC INT DIA_VLK_16_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_PEOPLE_15_00"); //Quali sono le personalit‡ importanti in questa citt‡?
-	AI_Output (self, other, "DIA_VLK_16_PEOPLE_16_01"); //I paladini hanno il controllo della parte alta della citt‡.
+	AI_Output (other, self, "DIA_VLK_16_PEOPLE_15_00"); //Quali sono le personalit√† importanti in questa citt√†?
+	AI_Output (self, other, "DIA_VLK_16_PEOPLE_16_01"); //I paladini hanno il controllo della parte alta della citt√†.
 };
 
 // *************************************************************************
@@ -80,7 +80,7 @@ INSTANCE DIA_VLK_16_LOCATION(C_INFO)
 	condition	= DIA_VLK_16_LOCATION_Condition;
 	information	= DIA_VLK_16_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Cosa cíË di interessante da vedere, qui?";
+	description = "Cosa c‚Äô√® di interessante da vedere, qui?";
 };                       
 
 FUNC INT DIA_VLK_16_LOCATION_Condition()
@@ -90,7 +90,7 @@ FUNC INT DIA_VLK_16_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_LOCATION_15_00"); //Cosa cíË di interessante da vedere, qui?
+	AI_Output (other, self, "DIA_VLK_16_LOCATION_15_00"); //Cosa c‚Äô√® di interessante da vedere, qui?
 	AI_Output (self, other, "DIA_VLK_16_LOCATION_16_01"); //Ci sono merci di ogni genere in vendita al mercato.
 };
 
@@ -103,7 +103,7 @@ INSTANCE DIA_VLK_16_STANDARD(C_INFO)
 	condition	= DIA_VLK_16_STANDARD_Condition;
 	information	= DIA_VLK_16_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_VLK_16_STANDARD_Condition()
 {
@@ -111,12 +111,12 @@ func INT DIA_VLK_16_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_16_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_VLK_16_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_00"); //Spero che la milizia riuscir‡ a scoprire perchÈ la popolazione di Khorinis continui a diminuire.
-		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_01"); //Non puoi non temere per la tua vita quando senti che molti altri sono gi‡ scomparsi.
+		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_00"); //Spero che la milizia riuscir√† a scoprire perch√© la popolazione di Khorinis continui a diminuire.
+		AI_Output (self,other,"DIA_Addon_VLK_16_STANDARD_16_01"); //Non puoi non temere per la tua vita quando senti che molti altri sono gi√† scomparsi.
 			if (SC_HearedAboutMissingPeople == FALSE)
 			{
 				Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -128,20 +128,20 @@ FUNC VOID DIA_VLK_16_STANDARD_Info()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_01"); //L'hai saputo? Gli orchi sono stati avvistati fuori della citt‡. Speriamo che i paladini dispongano di abbastanza uomini.
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_02"); //Mi chiedo se sia questo il motivo per cui i contadini non vengono pi˘ al mercato.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_01"); //L'hai saputo? Gli orchi sono stati avvistati fuori della citt√†. Speriamo che i paladini dispongano di abbastanza uomini.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_02"); //Mi chiedo se sia questo il motivo per cui i contadini non vengono pi√π al mercato.
 	};
 	
 	if (Kapitel == 3)
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_03"); //Il mercenario accusato dell'assasinio di Lothar Ë innocente. Hanno trovato delle prove che era stato incastrato. L'ho sentito dire al mercato.
+			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_03"); //Il mercenario accusato dell'assasinio di Lothar √® innocente. Hanno trovato delle prove che era stato incastrato. L'ho sentito dire al mercato.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_04"); //» un oltraggio. I mercenari di Onar hanno ucciso l'onorevole Lothar in mezzo alla strada.
-			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_05"); //Innos in persona li punir‡ per i loro peccati. Nessuno puÚ alzare un dito contro un guerriero del nostro Signore.
+			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_04"); //√à un oltraggio. I mercenari di Onar hanno ucciso l'onorevole Lothar in mezzo alla strada.
+			AI_Output (self,other,"DIA_VLK_16_STANDARD_16_05"); //Innos in persona li punir√† per i loro peccati. Nessuno pu√≤ alzare un dito contro un guerriero del nostro Signore.
 		};
 	};
 
@@ -152,7 +152,7 @@ FUNC VOID DIA_VLK_16_STANDARD_Info()
 	
 	if (Kapitel == 5)
 	{
-		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_07"); //Ho sentito dire che un gruppo di paladini Ë riuscito a sconfiggere gli orribili draghi nella Valle delle Miniere.
+		AI_Output (self,other,"DIA_VLK_16_STANDARD_16_07"); //Ho sentito dire che un gruppo di paladini √® riuscito a sconfiggere gli orribili draghi nella Valle delle Miniere.
 	};
 };
 

@@ -14,7 +14,7 @@ var int ALchemy_2_permanent;
 var int ALchemy_3_permanent;
 //----------------------
 
-FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY1_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -70,7 +70,7 @@ FUNC VOID Use_BookstandALCHEMY1_S1()		//Alchemiebücher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY2_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -126,7 +126,7 @@ FUNC VOID Use_BookstandALCHEMY2_S1()		//Alchemiebücher
 	};
 };
 
-FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
+FUNC VOID Use_BookstandALCHEMY3_S1()		//AlchemiebÃ¼cher
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -152,7 +152,7 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					Doc_PrintLine	( nDocID,  0, "Elisir di destrezza"						);
 					Doc_PrintLine	( nDocID,  0, "1 bacca del goblin"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLine	( nDocID,  0, "Pozione della velocità"						);
+					Doc_PrintLine	( nDocID,  0, "Pozione della velocitÃ "						);
 					Doc_PrintLines	( nDocID,  0, "1 erba dello squartatore. Questa pozione non richiede una acetosella del re, ma il groviglio della prateria"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Elisir della forza"						);
@@ -167,9 +167,9 @@ FUNC VOID Use_BookstandALCHEMY3_S1()		//Alchemiebücher
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "Queste preparazioni sono gli esempi più alti dell'arte alchemica e hanno come ingrediente comune l'acetosella del re."); 
+					Doc_PrintLines	( nDocID,  1, "Queste preparazioni sono gli esempi piÃ¹ alti dell'arte alchemica e hanno come ingrediente comune l'acetosella del re."); 
 					Doc_PrintLine	( nDocID,  1, ""						);
-					Doc_PrintLines	( nDocID,  1, "La pozione di velocità è molto più semplice da realizzare, anche perché non ti serve l'acetosella del re."						);
+					Doc_PrintLines	( nDocID,  1, "La pozione di velocitÃ  Ã¨ molto piÃ¹ semplice da realizzare, anche perchÃ© non ti serve l'acetosella del re."						);
 					Doc_PrintLine	( nDocID,  1, ""						);
 					
 					

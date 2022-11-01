@@ -52,7 +52,7 @@ FUNC VOID DIA_BDT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_00"); //Perché mi fissi con quell'aria da idiota?
+		AI_Output (self,other,"DIA_BDT_13_STANDARD_13_00"); //PerchÃ© mi fissi con quell'aria da idiota?
 	};
 	if (randy == 1)
 	{

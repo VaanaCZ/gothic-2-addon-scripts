@@ -72,20 +72,20 @@ func void DIA_AmbientDementor_Info ()
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 		{	
-			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Sei venuto per interrompere il nostro rituale? La sua anima ora appartiene a noi, mago. Non puoi pi˘ salvarlo.
+			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Sei venuto per interrompere il nostro rituale? La sua anima ora appartiene a noi, mago. Non puoi pi√π salvarlo.
 		}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 		{
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 				{
 						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(ride) Sei venuto per sfidare me e il mio lavoro? Sei condannato a fallire.
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Nessuno Ë mai riuscito a oltrepassare la mia cripta. Torna indietro, perchÈ nemmeno tu riuscirai a raggiungere le sacre Sale di Irdorath.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Nessuno √® mai riuscito a oltrepassare la mia cripta. Torna indietro, perch√© nemmeno tu riuscirai a raggiungere le sacre Sale di Irdorath.
 				}
 				else
 				{	
 				 	if (randy == 0)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //Hai fatto gi‡ troppa strada, lurido verme. Non raggiungerai mai il nostro santuario interno.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //Hai fatto gi√† troppa strada, lurido verme. Non raggiungerai mai il nostro santuario interno.
 					};
 					if (randy == 1)
 					{
@@ -109,7 +109,7 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //Hai scelto la strada della magia per batterci. Una mossa saggia, ma neanche questo ti servir‡.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_08"); //Hai scelto la strada della magia per batterci. Una mossa saggia, ma neanche questo ti servir√†.
 			};
 			if (randy == 2)
 			{
@@ -117,14 +117,14 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Il mio Padrone ti distrugger‡. La tua patetica magia da quattro soldi non ti salver‡.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Il mio Padrone ti distrugger√†. La tua patetica magia da quattro soldi non ti salver√†.
 			};
 		}
 	else
 		{	
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Arrenditi, finchÈ sei in tempo. Non puoi fuggire.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_11"); //Arrenditi, finch√© sei in tempo. Non puoi fuggire.
 			};
 			if (randy == 1)
 			{
@@ -132,7 +132,7 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Il mio Padrone vuole la tua testa. Ora niente potr‡ salvarti.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Il mio Padrone vuole la tua testa. Ora niente potr√† salvarti.
 			};
 			if (randy == 3)
 			{

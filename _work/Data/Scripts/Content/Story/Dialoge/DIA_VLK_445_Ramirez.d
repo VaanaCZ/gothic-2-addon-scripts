@@ -110,14 +110,14 @@ FUNC VOID DIA_Ramirez_Hallo_Info()
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE)
 	&& (Join_Thiefs == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_00");//Ti sei perso? Non so se questo è il posto adatto per te.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_01");//Se dovesse succederti qualcosa, nessuno ti aiuterà. Perciò fai attenzione. (ampio ghigno)
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_00");//Ti sei perso? Non so se questo Ã¨ il posto adatto per te.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_01");//Se dovesse succederti qualcosa, nessuno ti aiuterÃ . PerciÃ² fai attenzione. (ampio ghigno)
 	};
 	if  (Join_Thiefs == TRUE)  
 	{
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_02");//Così ce l'hai fatta. Bene, ti auguro successo e fai attenzione, qualsiasi cosa tu faccia.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_03");//Oh, un'altra cosa. Non mi interessa chi sei e con chi lavori lassù.
-		AI_Output (self, other, "DIA_Ramirez_Hallo_14_04");//Quaggiù sei solamente uno di noi. Un ladro. Né più né meno.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_02");//CosÃ¬ ce l'hai fatta. Bene, ti auguro successo e fai attenzione, qualsiasi cosa tu faccia.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_03");//Oh, un'altra cosa. Non mi interessa chi sei e con chi lavori lassÃ¹.
+		AI_Output (self, other, "DIA_Ramirez_Hallo_14_04");//QuaggiÃ¹ sei solamente uno di noi. Un ladro. NÃ© piÃ¹ nÃ© meno.
 		DIA_Ramirez_Hallo_permanent = TRUE;
 	};
 	
@@ -150,12 +150,12 @@ FUNC VOID DIA_Ramirez_Beute_Info()
 {
 	AI_Output (self, other, "DIA_Ramirez_Beute_14_00");//Ascolta, non puoi essere serio, vero? Stai intascando il nostro oro... stai per caso cercando di derubarci?
 	AI_Output (other, self, "DIA_Ramirez_Beute_15_01");//Non fare tutto questo trambusto per un paio di monetine.
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_02");//Voglio dire... Tutto quello che avete qui è il vostro BOTTINO? Questo è tutto quello che hanno da offrire i ladri di Khorinis?
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_03");//E chi ha detto che il nostro bottino è tenuto qui sotto?
-	AI_Output (other, self, "DIA_Ramirez_Beute_15_04");//Non potrei crederci comunque. Perciò, dove nascondi i tuoi tesori?
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_02");//Voglio dire... Tutto quello che avete qui Ã¨ il vostro BOTTINO? Questo Ã¨ tutto quello che hanno da offrire i ladri di Khorinis?
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_03");//E chi ha detto che il nostro bottino Ã¨ tenuto qui sotto?
+	AI_Output (other, self, "DIA_Ramirez_Beute_15_04");//Non potrei crederci comunque. PerciÃ², dove nascondi i tuoi tesori?
 	AI_Output (self, other, "DIA_Ramirez_Beute_14_05");//In un posto molto sicuro.
 	AI_Output (other, self, "DIA_Ramirez_Beute_15_06");//Capisco.
-	AI_Output (self, other, "DIA_Ramirez_Beute_14_07");//Va bene, puoi tenerti l'oro. Ma ti terrò d'occhio, quindi non esagerare.
+	AI_Output (self, other, "DIA_Ramirez_Beute_14_07");//Va bene, puoi tenerti l'oro. Ma ti terrÃ² d'occhio, quindi non esagerare.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Lernen freischalten
@@ -206,12 +206,12 @@ FUNC VOID DIA_Ramirez_Bezahlen_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_02");//Posso mostrarti come si scassina una serratura. Ti costerà la misera somma di...
+		AI_Output (self, other, "DIA_Ramirez_Bezahlen_14_02");//Posso mostrarti come si scassina una serratura. Ti costerÃ  la misera somma di...
 		B_Say_Gold (self, other, Ramirez_Cost);
 		
 		Info_ClearChoices (DIA_Ramirez_Bezahlen);
-		Info_AddChoice (DIA_Ramirez_Bezahlen,"Forse più tardi... (INDIETRO)",DIA_Ramirez_Bezahlen_Spaeter);
-		Info_AddChoice (DIA_Ramirez_Bezahlen,"D'accordo, pagherò.",DIA_Ramirez_Bezahlen_Okay);
+		Info_AddChoice (DIA_Ramirez_Bezahlen,"Forse piÃ¹ tardi... (INDIETRO)",DIA_Ramirez_Bezahlen_Spaeter);
+		Info_AddChoice (DIA_Ramirez_Bezahlen,"D'accordo, pagherÃ².",DIA_Ramirez_Bezahlen_Okay);
 	};
 };
 FUNC VOID DIA_Ramirez_Bezahlen_Spaeter()
@@ -220,7 +220,7 @@ FUNC VOID DIA_Ramirez_Bezahlen_Spaeter()
 };
 FUNC VOID DIA_Ramirez_Bezahlen_Okay()
 {
-	AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_00");//Ok, pagherò.
+	AI_Output (other, self, "DIA_Ramirez_Bezahlen_Okay_15_00");//Ok, pagherÃ².
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, Ramirez_Cost)
 	{
@@ -264,16 +264,16 @@ FUNC VOID DIA_Ramirez_Teach_Info()
 	
 	if (Ramirez_Zweimal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_06");//Scassinare serrature è la nobile arte dei ladri.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_01");//Hai bisogno di un sacco di intuizione e sensibilità. E di un paio di buoni grimaldelli.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_06");//Scassinare serrature Ã¨ la nobile arte dei ladri.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_01");//Hai bisogno di un sacco di intuizione e sensibilitÃ . E di un paio di buoni grimaldelli.
 		AI_Output (self, other, "DIA_Ramirez_Teach_14_02");//Alcuni forzieri, tuttavia, sono dotati di serrature speciali che possono essere aperte solo con la chiave corrispondente.
 		Ramirez_Zweimal = TRUE;
 	}
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKLOCK)
 	{
 		AI_Output (self, other, "DIA_Ramirez_Teach_14_03");//Inginocchiati davanti alla serratura, gira il tuo grimaldello a sinistra e destra.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_04");//Se lo sposterai troppo velocemente, si romperà.
-		AI_Output (self, other, "DIA_Ramirez_Teach_14_05");//Ma più farai esperienza, più sarà facile maneggiare lo strumento.
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_04");//Se lo sposterai troppo velocemente, si romperÃ .
+		AI_Output (self, other, "DIA_Ramirez_Teach_14_05");//Ma piÃ¹ farai esperienza, piÃ¹ sarÃ  facile maneggiare lo strumento.
 	};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -298,10 +298,10 @@ FUNC INT DIA_Ramirez_Viertel_Condition()
 FUNC VOID DIA_Ramirez_Viertel_Info()
 {	
 	AI_Output (other, self, "DIA_Ramirez_Viertel_15_00");//Quanto vale il disturbo di fare irruzione?
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_01");//Nei quartieri alti della città, ovviamente.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_02");//Ma se vuoi rubare qualcosa là, sarebbe meglio aspettare che cali la notte, quando sono tutti addormentati, tranne la guardia cittadina.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_03");//Loro fanno la pattuglia anche di notte. Conosco uno di loro, Wambo. È l'unico interessato all'oro.
-	AI_Output (self, other, "DIA_Ramirez_Viertel_14_04");//Vuole molti soldi, ma una volta che l'avrai pagato, non dovrai preoccuparti più di nulla.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_01");//Nei quartieri alti della cittÃ , ovviamente.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_02");//Ma se vuoi rubare qualcosa lÃ , sarebbe meglio aspettare che cali la notte, quando sono tutti addormentati, tranne la guardia cittadina.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_03");//Loro fanno la pattuglia anche di notte. Conosco uno di loro, Wambo. Ãˆ l'unico interessato all'oro.
+	AI_Output (self, other, "DIA_Ramirez_Viertel_14_04");//Vuole molti soldi, ma una volta che l'avrai pagato, non dovrai preoccuparti piÃ¹ di nulla.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Sextant
@@ -328,9 +328,9 @@ FUNC INT DIA_Ramirez_Sextant_Condition()
 FUNC VOID DIA_Ramirez_Sextant_Info()
 {
 	AI_Output (other, self, "DIA_Ramirez_Sextant_15_00");//Hai un lavoro per me?
-	AI_Output (self, other, "DIA_Ramirez_Sextant_14_01");//Mmmh... c'è una cosa che mi piacerebbe avere. Ma non l'ho mai trovata.
+	AI_Output (self, other, "DIA_Ramirez_Sextant_14_01");//Mmmh... c'Ã¨ una cosa che mi piacerebbe avere. Ma non l'ho mai trovata.
 	AI_Output (other, self, "DIA_Ramirez_Sextant_15_02");//Che cosa posso portarti?
-	AI_Output (self, other, "DIA_Ramirez_Sextant_14_03");//Un sestante. Portami un sestante, te lo pagherò bene.
+	AI_Output (self, other, "DIA_Ramirez_Sextant_14_03");//Un sestante. Portami un sestante, te lo pagherÃ² bene.
 	
 	Log_CreateTopic (Topic_RamirezSextant,LOG_MISSION);
 	Log_SetTopicStatus (Topic_RamirezSextant, LOG_RUNNING);

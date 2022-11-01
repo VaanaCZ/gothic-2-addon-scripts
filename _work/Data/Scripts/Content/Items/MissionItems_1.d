@@ -1,5 +1,5 @@
 //****************************************************************************
-//			Schlüssel für Xardas Truhe
+//			SchlÃ¼ssel fÃ¼r Xardas Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Xardas(C_Item)
@@ -21,7 +21,7 @@ INSTANCE ItKe_Xardas(C_Item)
 	
 };
 //**********************************************************************************
-//	Canthars Kompromittierender Brief für Sarah die Händlerin
+//	Canthars Kompromittierender Brief fÃ¼r Sarah die HÃ¤ndlerin
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Canthars_KomproBrief_MIS		(C_Item)
@@ -53,13 +53,13 @@ func void Use_Canthars_KomproBrief ()
 					Doc_PrintLine	(nDocID,  0, "     Ultimo avvertimento"								);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "        Ti ho già ricordato diverse volte"				);
-					Doc_PrintLine	(nDocID,  0, "        nella maniera più amichevole"				);
+					Doc_PrintLine	(nDocID,  0, "        Ti ho giÃ  ricordato diverse volte"				);
+					Doc_PrintLine	(nDocID,  0, "        nella maniera piÃ¹ amichevole"				);
 					Doc_PrintLine	(nDocID,  0, "        i termini per i quali necessito delle"				);
 					Doc_PrintLine	(nDocID,  0, "        armi che ho ordinato una settimana"			);
 					Doc_PrintLine	(nDocID,  0, "        fa."										);
-					Doc_PrintLine	(nDocID,  0, "        Se non avrò presto tue notizie,"		);
-					Doc_PrintLine	(nDocID,  0, "        Sarah, sarò costretto a cambiare il mio"			);
+					Doc_PrintLine	(nDocID,  0, "        Se non avrÃ² presto tue notizie,"		);
+					Doc_PrintLine	(nDocID,  0, "        Sarah, sarÃ² costretto a cambiare il mio"			);
 					Doc_PrintLine	(nDocID,  0, "       atteggiamento verso di te. Spero che ci"			);
 					Doc_PrintLine	(nDocID,  0, "        capiamo!!!!!!!!!!!!"					);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -122,7 +122,7 @@ INSTANCE ItMi_CoragonsSilber (C_Item)
 };
 
 //*******************************
-//Päckchen für Thekla von Sagitta
+//PÃ¤ckchen fÃ¼r Thekla von Sagitta
 //*******************************
 INSTANCE ItMi_TheklasPaket (C_Item)
 {
@@ -225,7 +225,7 @@ INSTANCE ItRi_ValentinosRing(C_Item) //bei Cassia als Belohnung
 	};
 
 //****************************************************************************
-//			Schlüssel für Dexter Truhe
+//			SchlÃ¼ssel fÃ¼r Dexter Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Dexter(C_Item)
@@ -247,7 +247,7 @@ INSTANCE ItKe_Dexter(C_Item)
 	
 };
 //**********************************************************************************
-//	Constantinos Kräuterliste
+//	Constantinos KrÃ¤uterliste
 //----------------------------------------------------------------------------------
 
 INSTANCE ItWr_Kraeuterliste (C_Item)
@@ -290,10 +290,10 @@ func void Use_Kraeuterliste ()
 					Doc_PrintLine	( nDocID,  0, "Groviglio della prateria"      	);
 					Doc_PrintLine	( nDocID,  0, "Acetosella del re"       );
 					Doc_PrintLine	( nDocID,  0, ""						);
-					Doc_PrintLines	( nDocID,  0, "Nota: lascia a un potenziale apprendista la possibilità di prendere le piante per te. Così capirai se è in gamba."						);
+					Doc_PrintLines	( nDocID,  0, "Nota: lascia a un potenziale apprendista la possibilitÃ  di prendere le piante per te. CosÃ¬ capirai se Ã¨ in gamba."						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Con rispetto, Zuris."						);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 }; 
@@ -338,7 +338,7 @@ func void Use_ManaRezept ()
 					Doc_PrintLine	( nDocID,  0, "Groviglio della prateria"						);
 					Doc_PrintLine	( nDocID,  0, ""						);
 					Doc_PrintLine	( nDocID,  0, "Maestro Neoras"						);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 }; 
@@ -361,7 +361,7 @@ INSTANCE ItWr_Passierschein	(C_Item)
 	scemeName			=	"MAP";
 	description			= 	name;
 	TEXT[3]				=	"Queste carte mi permettono";
-	TEXT[4]				=   "di superare le guardie della città.";
+	TEXT[4]				=   "di superare le guardie della cittÃ .";
 };
 func void UsePassierschein ()
 {   
@@ -378,7 +378,7 @@ func void UsePassierschein ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_SetFont		(nDocID,  0, FONT_Book);
-					Doc_PrintLine	(nDocID,  0, "        Questo documento dà la facoltà al suo"					);
+					Doc_PrintLine	(nDocID,  0, "        Questo documento dÃ  la facoltÃ  al suo"					);
 					Doc_PrintLine	(nDocID,  0, "        portatore di muoversi liberamente per le zone"		);
 					Doc_PrintLine	(nDocID,  0, "        inferiori di Khorinisi per un periodo illimitato."		);
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -395,7 +395,7 @@ func void UsePassierschein ()
 };
 
 //****************************************************************************
-//				Kraut Paket für MIS_ANDRE_WAREHOUSE 
+//				Kraut Paket fÃ¼r MIS_ANDRE_WAREHOUSE 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_HerbPaket(C_Item)
@@ -420,7 +420,7 @@ INSTANCE ItMi_HerbPaket(C_Item)
 	
 };
 //****************************************************************************
-//				Lagerhaus Schlüssel für MIS_ANDRE_WAREHOUSE 
+//				Lagerhaus SchlÃ¼ssel fÃ¼r MIS_ANDRE_WAREHOUSE 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Storage(C_Item)
@@ -488,8 +488,8 @@ INSTANCE ItFo_HalvorFish_MIS (C_Item)
 	on_state[0]			=	Use_HalvorFish;
 
 	description			= 	"Un pesce dall'aspetto bizzarro.";
-	TEXT[2]				= 	"C'è qualcosa che non va in questo pesce.";		
-	TEXT[3]				= 	"Sembra che sia stato cucito…";
+	TEXT[2]				= 	"C'Ã¨ qualcosa che non va in questo pesce.";		
+	TEXT[3]				= 	"Sembra che sia stato cucitoâ€¦";
 };
 
 	FUNC VOID Use_HalvorFish()
@@ -533,7 +533,7 @@ func void UseHalvorMessage ()
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, ""													);
-					Doc_PrintLine	(nDocID,  0, "    Tenete giù la testa, ragazzi! "				);
+					Doc_PrintLine	(nDocID,  0, "    Tenete giÃ¹ la testa, ragazzi! "				);
 					Doc_PrintLine	(nDocID,  0, "    I militari si stanno insospettendo."				);
 					Doc_PrintLine	(nDocID,  0, "    Non fate nulla prima di avere nuovamente mie notizie!");
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -646,7 +646,7 @@ func void UseVatrasMessage ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
 					Doc_PrintLine	( nDocID,  0, "Caro Isgaroth, "					);
 					Doc_PrintLines	( nDocID,  0, "Percepisco la crescita costante di un'altra forza."					);
-					Doc_PrintLines	( nDocID,  0, "È una forza a noi sconosciuta. Può essere che i vassalli di Beliar siano vicini?"					);
+					Doc_PrintLines	( nDocID,  0, "Ãˆ una forza a noi sconosciuta. PuÃ² essere che i vassalli di Beliar siano vicini?"					);
 					Doc_PrintLines	( nDocID,  0, "Potrei sbagliarmi, ma credo che padre Pyrokar farebbe meglio a occuparsene di persona."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Che le nostre preghiere possano essere esaudite."					);
@@ -656,7 +656,7 @@ func void UseVatrasMessage ()
 }; 
 //****************************************************************************
 //				Botschaft von Vatras an die Magier des Feuers
-//				Das Siegel wurde geöffnet		
+//				Das Siegel wurde geÃ¶ffnet		
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItWr_VatrasMessage_Open	(C_Item)
@@ -675,7 +675,7 @@ INSTANCE ItWr_VatrasMessage_Open	(C_Item)
 	description			= 	name;
 	TEXT[2]				=   "Un messaggio da Vatras";
 	TEXT[3]				=   "ai maghi del fuoco.";
-	TEXT[4]				=   "Il sigillo è stato rotto.";
+	TEXT[4]				=   "Il sigillo Ã¨ stato rotto.";
 };
 func void UseVatrasMessageOpen ()
 {   
@@ -690,7 +690,7 @@ func void UseVatrasMessageOpen ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   	);  
 					Doc_PrintLine	( nDocID,  0, "Caro Isgaroth, "					);
 					Doc_PrintLines	( nDocID,  0, "Percepisco la crescita costante di un'altra forza."					);
-					Doc_PrintLines	( nDocID,  0, "È una forza a noi sconosciuta. Può essere che i vassalli di Beliar siano vicini?"					);
+					Doc_PrintLines	( nDocID,  0, "Ãˆ una forza a noi sconosciuta. PuÃ² essere che i vassalli di Beliar siano vicini?"					);
 					Doc_PrintLines	( nDocID,  0, "Potrei sbagliarmi, ma credo che padre Pyrokar farebbe meglio a occuparsene di persona."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Che le nostre preghiere possano essere esaudite."					);
@@ -699,7 +699,7 @@ func void UseVatrasMessageOpen ()
 					Doc_Show		( nDocID );
 }; 
 //****************************************************
-//		Hotelschlüssel
+//		HotelschlÃ¼ssel
 //****************************************************
 INSTANCE ItKe_Hotel(C_Item)
 {
@@ -720,7 +720,7 @@ INSTANCE ItKe_Hotel(C_Item)
 	
 };
 //****************************************************
-//		Schlüssel zur Diebesgilde
+//		SchlÃ¼ssel zur Diebesgilde
 //****************************************************
 INSTANCE ItKe_ThiefGuildKey_MIS (C_Item)
 {
@@ -736,11 +736,11 @@ INSTANCE ItKe_ThiefGuildKey_MIS (C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				=	"Questa chiave è stata danneggiata dall'acqua salata del mare.";
+	TEXT[2]				=	"Questa chiave Ã¨ stata danneggiata dall'acqua salata del mare.";
 	
 };
 //****************************************************
-//		Schlüssel zur Diebesgilde vom Hotel
+//		SchlÃ¼ssel zur Diebesgilde vom Hotel
 //****************************************************
 INSTANCE ItKe_ThiefGuildKey_Hotel_MIS (C_Item)
 {
@@ -760,7 +760,7 @@ INSTANCE ItKe_ThiefGuildKey_Hotel_MIS (C_Item)
 	
 };
 //****************************************************
-//		Pfortenschlüssel Tempel von Innos
+//		PfortenschlÃ¼ssel Tempel von Innos
 //****************************************************
 INSTANCE ItKe_Innos_MIS(C_Item)
 {
@@ -781,7 +781,7 @@ INSTANCE ItKe_Innos_MIS(C_Item)
 	
 };
 //****************************************************************************
-//			Schlüssel Vorratskammer Kloster
+//			SchlÃ¼ssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KlosterSchatz(C_Item)
@@ -803,7 +803,7 @@ INSTANCE ItKe_KlosterSchatz(C_Item)
 	
 };
 //****************************************************************************
-//			Schlüssel Vorratskammer Kloster
+//			SchlÃ¼ssel Vorratskammer Kloster
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KlosterStore(C_Item)
@@ -825,7 +825,7 @@ INSTANCE ItKe_KlosterStore(C_Item)
 	
 };
 //****************************************************************************
-//			Schlüssel Schlafgemach Player
+//			SchlÃ¼ssel Schlafgemach Player
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KDFPlayer(C_Item)
@@ -847,7 +847,7 @@ INSTANCE ItKe_KDFPlayer(C_Item)
 	
 };
 //****************************************************************************
-//			Schlüssel Bibliothek Kloster
+//			SchlÃ¼ssel Bibliothek Kloster
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_KlosterBibliothek(C_Item)
@@ -927,7 +927,7 @@ INSTANCE ItPo_Perm_LittleMana(C_Item)
 		Npc_ChangeAttribute	(self, ATR_MANA,	3);
 	};
 //****************************************************
-//		Hammer Innos, für Golem Prüfung 
+//		Hammer Innos, fÃ¼r Golem PrÃ¼fung 
 //****************************************************
 INSTANCE Holy_Hammer_MIS (C_Item)
 {	
@@ -968,7 +968,7 @@ INSTANCE Holy_Hammer_MIS (C_Item)
 };
 
 //****************************************************************************
-//			Schlüssel für die Truhe in der Magierhöhle
+//			SchlÃ¼ssel fÃ¼r die Truhe in der MagierhÃ¶hle
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_MagicChest(C_Item)
@@ -990,7 +990,7 @@ INSTANCE ItKe_MagicChest(C_Item)
 	TEXT[4]				=	"lucchetto.";
 };
 //****************************************************************************
-//			gefälschter Passierschein von Lee 
+//			gefÃ¤lschter Passierschein von Lee 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItWr_Passage_MIS	(C_Item)
@@ -1025,15 +1025,15 @@ func void UsePassage ()
 					Doc_PrintLine	( nDocID,  0, ""								);
 					Doc_PrintLine	( nDocID,  0, "Onorevole Lord Hagen,"			);
 					Doc_PrintLine	( nDocID,  0, ""								);
-					Doc_PrintLines	( nDocID,  0, "Siamo entrambi consapevoli della situazione, perciò propongo il seguente accordo:" 	);
+					Doc_PrintLines	( nDocID,  0, "Siamo entrambi consapevoli della situazione, perciÃ² propongo il seguente accordo:" 	);
 					Doc_PrintLines	( nDocID,  0, "Garantire a me e i miei uomini la totale assoluzione davanti a Innos e al Re."				);
-					Doc_PrintLines	( nDocID,  0, "In cambio, offriamo di assistervi nella difesa della città e delle terre circostanti." );
-					Doc_PrintLines	( nDocID,  0, "Inoltre, mi occuperò di evitare che i miei uomini stiano lontani dalle fattorie circostanti, eccetto, ovviamente, quella di Onar, dove continueremo a stazionare." );
-					Doc_PrintLines	( nDocID,  0, "Sono al corrente del fatto che c'è abbastanza spazio per me e alcuni miei uomini sulla nave in partenza. Quando decidi di partire, voglio essere a bordo." );
+					Doc_PrintLines	( nDocID,  0, "In cambio, offriamo di assistervi nella difesa della cittÃ  e delle terre circostanti." );
+					Doc_PrintLines	( nDocID,  0, "Inoltre, mi occuperÃ² di evitare che i miei uomini stiano lontani dalle fattorie circostanti, eccetto, ovviamente, quella di Onar, dove continueremo a stazionare." );
+					Doc_PrintLines	( nDocID,  0, "Sono al corrente del fatto che c'Ã¨ abbastanza spazio per me e alcuni miei uomini sulla nave in partenza. Quando decidi di partire, voglio essere a bordo." );
 					Doc_PrintLines	( nDocID,  0, "Ti supplico: prendi la tua decisione con tutta la saggezza che hai." );
 					Doc_PrintLine	( nDocID,  0, ""								);
 					Doc_PrintLine	( nDocID,  0, "Firmato Generale Lee"		);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   				);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   				);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 		
@@ -1071,7 +1071,7 @@ func void UseBanditLetter ()
 		
 			Log_CreateTopic (Topic_Bandits,LOG_MISSION);
 			Log_SetTopicStatus (Topic_Bandits,LOG_RUNNING);
-			B_LogEntry (Topic_Bandits,"Der Anführer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim Großbauer.");
+			B_LogEntry (Topic_Bandits,"Der AnfÃ¼hrer der Banditen ist Dexter. Er versteckt sich bei einer Mine, beim GroÃŸbauer.");
 			MIS_Steckbriefe = LOG_RUNNING;
 		};
 		*/
@@ -1086,17 +1086,17 @@ func void UseBanditLetter ()
 					Doc_PrintLine	(nDocID,  0, "Fermate tutti gli uomini che"							);
 					Doc_PrintLine	(nDocID,  0, " arrivano dalle montagne."						);
 					Doc_PrintLine	(nDocID,  0, "Se dovesse arrivare qualcuno al passo,"				);
-					Doc_PrintLine	(nDocID,  0, " sarà probabilmente un vecchio."			);
+					Doc_PrintLine	(nDocID,  0, " sarÃ  probabilmente un vecchio."			);
 					Doc_PrintLine	(nDocID,  0, "Non fatevi ingannare,"				);
-					Doc_PrintLine	(nDocID,  0, "    è uno stregone pericoloso.   "				);
+					Doc_PrintLine	(nDocID,  0, "    Ã¨ uno stregone pericoloso.   "				);
 					Doc_PrintLine	(nDocID,  0, "Tenetelo d'occhio."						);
 					Doc_PrintLine	(nDocID,  0, "     "											);
-					Doc_PrintLine	(nDocID,  0, "È possibile che il tipo che cercate"		);
-					Doc_PrintLine	(nDocID,  0, "    lo contatterà.    "						);
+					Doc_PrintLine	(nDocID,  0, "Ãˆ possibile che il tipo che cercate"		);
+					Doc_PrintLine	(nDocID,  0, "    lo contatterÃ .    "						);
 					Doc_PrintLine	(nDocID,  0, "Con questa lettera vi sto spedendo"				);
 					Doc_PrintLine	(nDocID,  0, "    trenta pezzi d'oro."							);
-					Doc_PrintLine	(nDocID,  0, "Ne darò altri trenta a chiunque"				);
-					Doc_PrintLine	(nDocID,  0, "    ucciderà l'uomo."							);
+					Doc_PrintLine	(nDocID,  0, "Ne darÃ² altri trenta a chiunque"				);
+					Doc_PrintLine	(nDocID,  0, "    ucciderÃ  l'uomo."							);
 					Doc_PrintLine	(nDocID,  0, ""													);
 					Doc_PrintLine	(nDocID,  0, "Portate la sua testa alla vecchia miniera.");
 					Doc_PrintLine	(nDocID,  0, ""													);
@@ -1135,7 +1135,7 @@ FUNC VOID UsePoster()
 	Doc_Show (nDocID);
 };
 //****************************************************************************
-//				Banditen Truhen Schlüssel 
+//				Banditen Truhen SchlÃ¼ssel 
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Bandit(C_Item)
@@ -1259,7 +1259,7 @@ INSTANCE ItMi_EddasStatue (C_Item)
 };
 
 //****************************************************************************
-//				Crypta-Schlüssel
+//				Crypta-SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_EVT_CRYPT_01(C_Item)
@@ -1359,7 +1359,7 @@ INSTANCE ITAR_PAL_SKEL (C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel zu Valentinos Truhe
+//				SchlÃ¼ssel zu Valentinos Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Valentino(C_Item)
@@ -1381,7 +1381,7 @@ INSTANCE ItKe_Valentino(C_Item)
 	
 };
 //****************************************************************************
-//				Schlüssel zur Truhe OV Noname Typen
+//				SchlÃ¼ssel zur Truhe OV Noname Typen
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Buerger(C_Item)
@@ -1403,7 +1403,7 @@ INSTANCE ItKe_Buerger(C_Item)
 	
 };
 //****************************************************************************
-//				Schlüssel Richter Truhe
+//				SchlÃ¼ssel Richter Truhe
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Richter(C_Item)
@@ -1425,7 +1425,7 @@ INSTANCE ItKe_Richter(C_Item)
 	
 };
 //****************************************************************************
-//				Schlüssel Salandril
+//				SchlÃ¼ssel Salandril
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Salandril(C_Item)
@@ -1448,7 +1448,7 @@ INSTANCE ItKe_Salandril(C_Item)
 };
 
 //****************************************************************************
-//				Schlüssel Truhe ...wo die Paladine schlafen
+//				SchlÃ¼ssel Truhe ...wo die Paladine schlafen
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_PaladinTruhe(C_Item)
@@ -1490,7 +1490,7 @@ INSTANCE ItKe_ThiefTreasure(C_Item)
 	TEXT[2]				=	"Una piccola chiave.";
 };
 //****************************************************************************
-//				Diebsgilde Fingers Tür
+//				Diebsgilde Fingers TÃ¼r
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItKe_Fingers(C_Item)
@@ -1564,7 +1564,7 @@ INSTANCE ItWr_Schuldenbuch (C_ITEM)
 					Doc_PrintLine	( nDocID,  0, ""					);
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					//Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages 
 					//Doc_PrintLine	( nDocID,  1, ""					);										
 					//Doc_PrintLines( nDocID,  1, "StandardBuch Seite 2"	);
@@ -1605,7 +1605,7 @@ INSTANCE ItPl_Sagitta_Herb_MIS (C_Item)
 
 
 //****************************************************************************
-//			Schlüssel für die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
+//			SchlÃ¼ssel fÃ¼r die obernen Schlafzimmer in der Taverne (MITTE DER WELT!)
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ITKE_ORLAN_HOTELZIMMER(C_Item)

@@ -138,7 +138,7 @@ func void DIA_Coragon_WhatsUp_Info ()
 	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_04"); //(ride) Alcuni di quei signoroni mi danno davvero ai nervi.
 	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_05"); //Prendi quel Valentino, per esempio. Non lo sopporto proprio.
 	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_06"); //Ma non posso scegliermi i clienti. Ho bisogno di guadagnare.
-	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_07"); //Quel poco che avevo risparmiato mi è stato rubato insieme a tutto il mio argento.
+	AI_Output (self ,other, "DIA_ADDON_NEW_Coragon_Add_09_07"); //Quel poco che avevo risparmiato mi Ã¨ stato rubato insieme a tutto il mio argento.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -166,13 +166,13 @@ func int DIA_Addon_Coragon_MissingPeople_Condition ()
 func void DIA_Addon_Coragon_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Coragon_MissingPeople_15_00"); //Parlami dei cittadini scomparsi.
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_01"); //°Ho saputo che parecchi sono scomparsi nella zona del porto. Non che mi meravigli, con quel che succede laggiù. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_02"); //°Persino Thorben, il falegname nella parte bassa della città, ha perso il suo apprendista.  
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_03"); //°Hakon, uno di quelli che vende al mercato, racconta una storia proprio strana. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_04"); //°Dice che c'era un tizio che incontrava tutti i giorni che a un tratto sembra essere scomparso dalla faccia della terra. Ne ha parlato persino alla milizia. 
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_05"); //°La cosa ha gettato nel panico gli abitanti della città. Io non so cosa pensare. Credo siano tutte sciocchezze.  
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_06"); //°Khorinis è un postaccio, e fuori dalle sue porte si celano molti pericoli.   
-	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_07"); //Chi esce dalla città finisce in mano ai briganti o divorato dalle bestie selvatiche. Tutto qui.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_01"); //Â°Ho saputo che parecchi sono scomparsi nella zona del porto. Non che mi meravigli, con quel che succede laggiÃ¹. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_02"); //Â°Persino Thorben, il falegname nella parte bassa della cittÃ , ha perso il suo apprendista.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_03"); //Â°Hakon, uno di quelli che vende al mercato, racconta una storia proprio strana. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_04"); //Â°Dice che c'era un tizio che incontrava tutti i giorni che a un tratto sembra essere scomparso dalla faccia della terra. Ne ha parlato persino alla milizia. 
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_05"); //Â°La cosa ha gettato nel panico gli abitanti della cittÃ . Io non so cosa pensare. Credo siano tutte sciocchezze.  
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_06"); //Â°Khorinis Ã¨ un postaccio, e fuori dalle sue porte si celano molti pericoli.   
+	AI_Output	(self, other, "DIA_Addon_Coragon_MissingPeople_09_07"); //Chi esce dalla cittÃ  finisce in mano ai briganti o divorato dalle bestie selvatiche. Tutto qui.  
 	
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
@@ -202,8 +202,8 @@ func int DIA_Coragon_Bestohlen_Condition ()
 func void DIA_Coragon_Bestohlen_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_08"); //Ti hanno derubato?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_09"); //Sì, qualche tempo fa. Il locale era affollato quella sera, e io servivo birra ai tavoli.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_10"); //Mi sono allontanato solo per un attimo dal bancone, ma per quei bastardi è stato sufficiente.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_09"); //SÃ¬, qualche tempo fa. Il locale era affollato quella sera, e io servivo birra ai tavoli.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_10"); //Mi sono allontanato solo per un attimo dal bancone, ma per quei bastardi Ã¨ stato sufficiente.
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_11"); //Ho sporto denuncia alla milizia, ma naturalmente non hanno scoperto nulla. Preferiscono sbronzarsi di birra gratis.
 	
 	MIS_Coragon_Silber = LOG_RUNNING;
@@ -226,11 +226,11 @@ func void B_Coragon_Bier()
 	
 	if (Coragon_Bier < 2)
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_21"); //È una birra speciale. Questo è l'ultimo barilotto.
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_21"); //Ãˆ una birra speciale. Questo Ã¨ l'ultimo barilotto.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_22"); //È l'ultimo bicchiere!
+		AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_22"); //Ãˆ l'ultimo bicchiere!
 	};
 };
 
@@ -294,7 +294,7 @@ func int DIA_Coragon_Schuldenbuch_Condition ()
 func void DIA_Coragon_Schuldenbuch_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_15"); //Guarda cosa ho qui...
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_16"); //Mmm? (sorpreso) Ma è il registro di Lehmar!
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_16"); //Mmm? (sorpreso) Ma Ã¨ il registro di Lehmar!
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_17"); //Cos'hai intenzione di fartene?
 };
 
@@ -323,7 +323,7 @@ func void DIA_Coragon_GiveBook_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_18"); //Ecco il tuo libro.
 	B_GiveInvItems (other, self, ItWr_Schuldenbuch, 1);
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_19"); //Grazie! Mi hai salvato la pelle. Lehmar è un tipaccio.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_19"); //Grazie! Mi hai salvato la pelle. Lehmar Ã¨ un tipaccio.
 	B_GivePlayerXP (XP_Schuldenbuch);
 	B_Coragon_Bier();
 };
@@ -355,9 +355,9 @@ func void DIA_Coragon_ToOV_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_23"); //Cosa devo fare per raggiungere il quartiere alto?
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_24"); //Devi essere un cittadino di qui. Trovati un lavoro.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_25"); //Preferibilmente dai maestri artigiani nella parte bassa della città. Così diventerai un cittadino.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_25"); //Preferibilmente dai maestri artigiani nella parte bassa della cittÃ . CosÃ¬ diventerai un cittadino.
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_26"); //Se non bastasse, va' in caserma e parla con Lord Andre.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_27"); //Magari ti accetterà tra le guardie cittadine. Anche a loro è consentito accedere al quartiere alto.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_27"); //Magari ti accetterÃ  tra le guardie cittadine. Anche a loro Ã¨ consentito accedere al quartiere alto.
 };
 
 
@@ -384,10 +384,10 @@ func int DIA_Coragon_Valentino_Condition ()
 func void DIA_Coragon_Valentino_Info ()
 {
 	AI_Output (other, self,"DIA_Coragon_Add_15_28"); //Come stanno le cose con questo Valentino?
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_29"); //È ricco sfondato e non ha bisogno di lavorare. E non perde occasione per vantarsene.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_29"); //Ãˆ ricco sfondato e non ha bisogno di lavorare. E non perde occasione per vantarsene.
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_30"); //Che a te interessi o meno...
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_31"); //Beve come una spugna e rimane sempre fino all'alba, poi se ne torna barcollando nel quartiere alto.
-	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_32"); //Ogni giorno così.
+	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_32"); //Ogni giorno cosÃ¬.
 	
 	
 };
@@ -442,7 +442,7 @@ instance DIA_Coragon_Ring (C_INFO)
 	condition	= DIA_Coragon_Ring_Condition;
 	information	= DIA_Coragon_Ring_Info;
 	permanent   = FALSE;
-	description = "Ecco… prendi questo anello.";
+	description = "Eccoâ€¦ prendi questo anello.";
 	
 };
 func int DIA_Coragon_Ring_Condition ()
@@ -459,7 +459,7 @@ func void DIA_Coragon_Ring_Info ()
 	B_GiveInvItems (other, self, ItRi_ValentinosRing, 1);
 	AI_Output (self ,other,"DIA_ADDON_NEW_Coragon_Add_09_40"); //Cosa? Non capisco...
 	AI_Output (other, self,"DIA_Coragon_Add_15_41"); //Apparteneva a Valentino.
-	AI_Output (other, self,"DIA_Coragon_Add_15_42"); //Sei libero di darlo alla prossima persona che lo concerà per le feste...
+	AI_Output (other, self,"DIA_Coragon_Add_15_42"); //Sei libero di darlo alla prossima persona che lo concerÃ  per le feste...
 
 	B_GivePlayerXP (300);
 	

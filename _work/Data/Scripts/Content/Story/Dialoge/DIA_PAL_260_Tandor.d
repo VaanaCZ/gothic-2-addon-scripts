@@ -44,15 +44,15 @@ func int DIA_Tandor_Hallo_Condition ()
 };
 func void DIA_Tandor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //Provieni da oltre il passo? Ben fatto. Abbiamo gi‡ perso molti uomini l‡ fuori.
-	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //Io stesso so com'Ë la situazione l‡ fuori, ho accompagnato una unit‡ di ricognizione per qualche tempo.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_00"); //Provieni da oltre il passo? Ben fatto. Abbiamo gi√† perso molti uomini l√† fuori.
+	AI_Output (self, other, "DIA_Tandor_Hallo_08_01"); //Io stesso so com'√® la situazione l√† fuori, ho accompagnato una unit√† di ricognizione per qualche tempo.
 	AI_Output (self, other, "DIA_Tandor_Hallo_08_02"); //Hai un'arma? Se ti serve una buona arma, sono la persona giusta.
 	
 	Log_CreateTopic (TOPIC_Trader_OC,LOG_NOTE);
 	B_LogEntry (TOPIC_Trader_OC,"Tandor commercia in armi al castello.");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Sp‰htrupp
+//	Info Sp√§htrupp
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Tandor_Trupp		(C_INFO)
 {
@@ -61,7 +61,7 @@ instance DIA_Tandor_Trupp		(C_INFO)
 	condition	 = 	DIA_Tandor_Trupp_Condition;
 	information	 = 	DIA_Tandor_Trupp_Info;
 	permanent 	 =  FALSE;
-	description  =  "Cosa ne Ë stato dellíunit‡?";
+	description  =  "Cosa ne √® stato dell‚Äôunit√†?";
 };
 func int DIA_Tandor_Trupp_Condition ()
 {	
@@ -72,10 +72,10 @@ func int DIA_Tandor_Trupp_Condition ()
 };
 func void DIA_Tandor_Trupp_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //Cosa ne Ë stato dellíunit‡?
+	AI_Output (other, self, "DIA_Tandor_Trupp_15_00"); //Cosa ne √® stato dell‚Äôunit√†?
 	AI_Output (self, other, "DIA_Tandor_Trupp_08_01"); //Esplorammo la zona e decidemmo di proseguire verso la costa. Stabilimmo il campo base in una caverna.
 	AI_Output (self, other, "DIA_Tandor_Trupp_08_02"); //Era tarda notte quando giunsero gli orchi. Scalarono il pendio con torce e tamburi e ci individuarono.
-	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Cercammo di scappare, ma fui l'unico che riuscÏ a farcela...
+	AI_Output (self, other, "DIA_Tandor_Trupp_08_03"); //Cercammo di scappare, ma fui l'unico che riusc√¨ a farcela...
 	AI_Output (self, other, "DIA_Tandor_Trupp_08_04"); //Poco dopo, gli orchi eressero la loro gigantesca palizzata e noi ci ritirammo nel castello.
 };	
 ///////////////////////////////////////////////////////////////////////
@@ -151,7 +151,7 @@ FUNC VOID DIA_Tandor_Equipment_Fern()
 FUNC VOID DIA_Tandor_Equipment_Ein()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Ein_15_00"); //A una mano.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Ein_08_01"); //Allora prendi questa rompipietra. » una buona arma.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Ein_08_01"); //Allora prendi questa rompipietra. √à una buona arma.
 	B_GiveInvItems (self,other, ItMw_Steinbrecher,1);
 	Info_ClearChoices (DIA_Tandor_Equipment);
 };
@@ -165,7 +165,7 @@ FUNC VOID DIA_Tandor_Equipment_Zwei()
 FUNC VOID DIA_Tandor_Equipment_Bow()
 {
 	AI_Output (other, self, "DIA_Tandor_Equipment_Bow_15_00"); //Arco.
-	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Questo arco da caccia Ë proprio quello che fa per te. E ti darÚ anche delle frecce.
+	AI_Output (self, other, "DIA_Tandor_Equipment_Bow_08_01"); //Questo arco da caccia √® proprio quello che fa per te. E ti dar√≤ anche delle frecce.
 	B_GiveInvItems (self,other,ItRw_Bow_L_03 ,1);
 	B_GiveInvItems (self,other, ItRw_Arrow,50);
 	Info_ClearChoices (DIA_Tandor_Equipment);
@@ -256,7 +256,7 @@ instance DIA_Tandor_News		(C_INFO)
 	condition	 = 	DIA_Tandor_News_Condition;
 	information	 = 	DIA_Tandor_News_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Hai qualche novit‡?";
+	description	 = 	"Hai qualche novit√†?";
 };
 
 func int DIA_Tandor_News_Condition ()
@@ -270,11 +270,11 @@ func int DIA_Tandor_News_Condition ()
 
 func void DIA_Tandor_News_Info ()
 {
-	AI_Output (other, self, "DIA_Tandor_News_15_00"); //Hai qualche novit‡?
+	AI_Output (other, self, "DIA_Tandor_News_15_00"); //Hai qualche novit√†?
 
 	if (hero.guild == GIL_DJG)
 		{
-			AI_Output (self, other, "DIA_Tandor_News_08_01"); //L'unica cosa successa di recente Ë l'arrivo di voi cacciatori di draghi qui.
+			AI_Output (self, other, "DIA_Tandor_News_08_01"); //L'unica cosa successa di recente √® l'arrivo di voi cacciatori di draghi qui.
 		}
 	else
 		{
@@ -326,7 +326,7 @@ instance DIA_Tandor_WASISTLOS		(C_INFO)
 	information	 = 	DIA_Tandor_WASISTLOS_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Non hai uníaria molto felice.";
+	description	 = 	"Non hai un‚Äôaria molto felice.";
 };
 
 func int DIA_Tandor_WASISTLOS_Condition ()
@@ -340,7 +340,7 @@ func int DIA_Tandor_WASISTLOS_Condition ()
 
 func void DIA_Tandor_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //Non hai uníaria molto felice.
+	AI_Output			(other, self, "DIA_Tandor_WASISTLOS_15_00"); //Non hai un‚Äôaria molto felice.
 
 	if (MIS_OCGateOpen == TRUE)
 	{

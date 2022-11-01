@@ -76,7 +76,7 @@ func int DIA_Torlof_WannaJoin_Condition ()
 func void DIA_Torlof_WannaJoin_Info ()
 {
 	AI_Output (other, self, "DIA_Torlof_WannaJoin_15_00"); //Voglio unirmi ai mercenari!
-	AI_Output (self, other, "DIA_Torlof_WannaJoin_01_01"); //Oh? E perché pensi che dovrei essere favorevole alla tua accettazione?
+	AI_Output (self, other, "DIA_Torlof_WannaJoin_01_01"); //Oh? E perchÃ© pensi che dovrei essere favorevole alla tua accettazione?
 };
 
 // ************************************************************
@@ -113,7 +113,7 @@ func void DIA_Torlof_Probe_Info ()
 	{
 		AI_Output (other, self, "DIA_Torlof_Probe_15_02"); //Ha detto che mi avresti aiutato.
 		AI_Output (self, other, "DIA_Torlof_Probe_01_03"); //(sospira) D'accordo. Vediamo: ci sono due cose che dovrai fare prima di poterti unire a noi.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_04"); //Primo: dovrai dimostrarti in grado di padroneggiare i compiti che dovrai poi svolgere come mercenario. Ti metterò alla prova.
+		AI_Output (self, other, "DIA_Torlof_Probe_01_04"); //Primo: dovrai dimostrarti in grado di padroneggiare i compiti che dovrai poi svolgere come mercenario. Ti metterÃ² alla prova.
 		AI_Output (self, other, "DIA_Torlof_Probe_01_05"); //E secondo: dovrai guadagnarti il rispetto degli altri mercenari.
 		Torlof_Go = TRUE;
 		Npc_ExchangeRoutine	(self,"Start"); 
@@ -125,7 +125,7 @@ func void DIA_Torlof_Probe_Info ()
 	else
 	{
 		AI_Output (other, self, "DIA_Torlof_Probe_15_06"); //No.
-		AI_Output (self, other, "DIA_Torlof_Probe_01_07"); //Allora perché sei qui a farmi perdere tempo?
+		AI_Output (self, other, "DIA_Torlof_Probe_01_07"); //Allora perchÃ© sei qui a farmi perdere tempo?
 		AI_StopProcessInfos(self);
 	};
 };
@@ -155,15 +155,15 @@ func int DIA_Torlof_Respekt_Condition ()
 func void DIA_Torlof_Respekt_Info ()
 {
 	AI_Output (other, self, "DIA_Torlof_Respekt_15_00"); //Come faccio a guadagnarmi il rispetto degli altri mercenari?
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_01"); //Per la maggior parte di loro, sarà sufficiente che esegua i tuoi compiti e superi la mia prova.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_01"); //Per la maggior parte di loro, sarÃ  sufficiente che esegua i tuoi compiti e superi la mia prova.
 	AI_Output (self, other, "DIA_Torlof_Respekt_01_02"); //Ma dovrai trovare altri modi per convincere alcuni di loro.
 	AI_Output (self, other, "DIA_Torlof_Respekt_01_03"); //Alcuni cercheranno di sfruttare la tua situazione e ad altri potrebbe non piacere la tua faccia.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_04"); //Dovresti cercare di andare d'accordo con più gente possibile, ma se non c'è altra scelta, puoi sempre prendere parte a un duello.
-	AI_Output (self, other, "DIA_Torlof_Respekt_01_05"); //Se vinci, ti guadagnerai il rispetto della maggior parte di loro. Ma fai attenzione a non uccidere nessuno per sbaglio, perché sarebbe un grosso guaio.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_04"); //Dovresti cercare di andare d'accordo con piÃ¹ gente possibile, ma se non c'Ã¨ altra scelta, puoi sempre prendere parte a un duello.
+	AI_Output (self, other, "DIA_Torlof_Respekt_01_05"); //Se vinci, ti guadagnerai il rispetto della maggior parte di loro. Ma fai attenzione a non uccidere nessuno per sbaglio, perchÃ© sarebbe un grosso guaio.
 	
 	Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
-	B_LogEntry (TOPIC_SLDRespekt,"Se voglio che gli altri mercenari mi rispettino, dovrò passare la prova che Torlof mi sottoporrà. Si convinceranno anche se li batterò in un duello.");
+	B_LogEntry (TOPIC_SLDRespekt,"Se voglio che gli altri mercenari mi rispettino, dovrÃ² passare la prova che Torlof mi sottoporrÃ . Si convinceranno anche se li batterÃ² in un duello.");
 	
 };
 
@@ -192,10 +192,10 @@ func int DIA_Torlof_Duellregeln_Condition ()
 func void DIA_Torlof_Duellregeln_Info ()
 {
 	AI_Output (other, self, "DIA_Torlof_Duellregeln_15_00"); //Quali sono le regole di un duello?
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_01"); //Semplice. Entrambi gli sfidanti devono avere la possibilità di estrarre le proprie armi prima di iniziare.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_01"); //Semplice. Entrambi gli sfidanti devono avere la possibilitÃ  di estrarre le proprie armi prima di iniziare.
 	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_02"); //Non puoi semplicemente andare e stendere qualcuno senza avvertirlo.
 	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_03"); //Dev'esserci qualche tipo di dichiarazione di sfida. Un insulto o un'altra ragione per combattere.
-	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_04"); //Nessuno degli altri uomini dovrà interferire in un combattimento del genere. A meno che uno dei due sfidanti venga ucciso in duello.
+	AI_Output (self, other, "DIA_Torlof_Duellregeln_01_04"); //Nessuno degli altri uomini dovrÃ  interferire in un combattimento del genere. A meno che uno dei due sfidanti venga ucciso in duello.
 	
 	B_LogEntry (TOPIC_SLDRespekt,"Le regole per i duelli: un duello deve iniziare con una sfida, in modo che nessuno venga coinvolto. Non ci devono essere uccisioni nei duelli.");
 };
@@ -227,7 +227,7 @@ func int DIA_Torlof_DeineStimme_Condition ()
 func void DIA_Torlof_DeineStimme_Info ()
 {
 	AI_Output (other, self, "DIA_Torlof_DeineStimme_15_00"); //E tu? Voterai per il mio ingresso?
-	AI_Output (self, other, "DIA_Torlof_DeineStimme_01_01"); //Se dimostrerai di essere in grado di adempiere ai tuoi doveri di mercenario, sì.
+	AI_Output (self, other, "DIA_Torlof_DeineStimme_01_01"); //Se dimostrerai di essere in grado di adempiere ai tuoi doveri di mercenario, sÃ¬.
 };
 
 
@@ -286,8 +286,8 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Jarvis.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_04"); //Jarvis non è ancora sicuro che tu sia a posto.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_05"); //Non vuole altra gente che accorra al fischio di Silvio. Se è per quello, nemmeno io.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_04"); //Jarvis non Ã¨ ancora sicuro che tu sia a posto.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_05"); //Non vuole altra gente che accorra al fischio di Silvio. Se Ã¨ per quello, nemmeno io.
 	};
 	
 	// ------ Cord ------
@@ -313,7 +313,7 @@ func void DIA_Torlof_RUF_Info ()
 	else if (MIS_Cipher_Paket == LOG_SUCCESS)
 	|| 		(MIS_Cipher_BringWeed == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_08"); //Cipher dice che per egli è estremamente chiaro che finirai per unirti a noi. Sembra che qualcosa lo abbia reso incredibilmente felice.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_08"); //Cipher dice che per egli Ã¨ estremamente chiaro che finirai per unirti a noi. Sembra che qualcosa lo abbia reso incredibilmente felice.
 		Points_Sld = Points_Sld + 1;
 	}
 	else if (Cipher.aivar[AIV_TalkedToPlayer] == TRUE)
@@ -351,13 +351,13 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Npc_HasItems (Sentenza, itmi_gold) >= 50)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_13"); //Sentenza voterà per te. Dice che sei un uomo molto ragionevole.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_13"); //Sentenza voterÃ  per te. Dice che sei un uomo molto ragionevole.
 		Points_Sld = Points_Sld + 1;
 		Torlof_SentenzaCounted = TRUE;
 	}
 	else if (Sentenza.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_14"); //Sentenza non voterà per te. Dice che gli devi ancora 50 pezzi d'oro.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_14"); //Sentenza non voterÃ  per te. Dice che gli devi ancora 50 pezzi d'oro.
 	};
 	
 	// ------ Raoul ------
@@ -367,7 +367,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Raoul.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_15"); //Raoul è contrario. Penso non possa sopportarti.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_15"); //Raoul Ã¨ contrario. Penso non possa sopportarti.
 	};
 	
 	// ------ Sylvio und Bullco ------
@@ -377,7 +377,7 @@ func void DIA_Torlof_RUF_Info ()
 	}
 	else if (Bullco.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_16"); //Non c'è bisogno che dica qualcosa su Silvio e Bullco. Quei due idioti sono sempre contro chiunque.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_16"); //Non c'Ã¨ bisogno che dica qualcosa su Silvio e Bullco. Quei due idioti sono sempre contro chiunque.
 	};
 	
 	// ------ Buster ------
@@ -397,7 +397,7 @@ func void DIA_Torlof_RUF_Info ()
 	else if (Buster.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
 		AI_Output (self, other, "DIA_Torlof_RUF_01_19"); //Buster dice che ti sei impaurito quando ti ha sfidato.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_20"); //Non è stata una buona idea. Forse dovresti tornare all'avamposto e sfidarlo.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_20"); //Non Ã¨ stata una buona idea. Forse dovresti tornare all'avamposto e sfidarlo.
 	};
 
 	// ------ Dar ------
@@ -454,18 +454,18 @@ func void DIA_Torlof_RUF_Info ()
 	// --------------------
 	// ------ Duelle ------
 	// --------------------
-	if (Sld_Duelle_gewonnen >= 3)//geändert M.F.
+	if (Sld_Duelle_gewonnen >= 3)//geÃ¤ndert M.F.
 	{
 		Points_Sld = Points_Sld + 1;
 		
-		if (Points_Sld >= 9)//geändert M.F.
+		if (Points_Sld >= 9)//geÃ¤ndert M.F.
 		{
 			AI_Output (self, other, "DIA_Torlof_RUF_01_27"); //E hai vinto alcuni duelli onestamente.
 			AI_Output (self, other, "DIA_Torlof_RUF_01_28"); //Molti mercenari rispettano questo.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Torlof_RUF_01_29"); //Ad ogni modo, hai già vinto alcuni duelli onestamente.
+			AI_Output (self, other, "DIA_Torlof_RUF_01_29"); //Ad ogni modo, hai giÃ  vinto alcuni duelli onestamente.
 		};
 	};
 		
@@ -473,16 +473,16 @@ func void DIA_Torlof_RUF_Info ()
 	// ------ ENDABRECHNUNG ------
 	// ---------------------------
 	
-	if (Points_Sld >= 9) //geändert M.F.					//(Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 für Duell)
+	if (Points_Sld >= 9) //geÃ¤ndert M.F.					//(Maximal 11 - 13 / insgesamt 6 + 3+1 oder 5+1 + 1 fÃ¼r Duell)
 	{
 		AI_Output (self, other, "DIA_Torlof_RUF_01_30"); //La maggior parte dei mercenari sono dalla tua parte, per quanto mi riguarda, puoi iniziare a lavorare con noi in qualsiasi momento.
-		AI_Output (self, other, "DIA_Torlof_RUF_01_31"); //Vai da Lee. Ti spiegherà tutto il resto.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_31"); //Vai da Lee. Ti spiegherÃ  tutto il resto.
 		Torlof_GenugStimmen = TRUE;
 		B_LogEntry (TOPIC_BecomeSLD,"Ho guadagnato abbastanza il rispetto di mercenari. Ora dovrei scambiare due parole con Lee."); 
 	}
 	else if (Points_Sld >= 7) 
 	{
-		AI_Output (self, other, "DIA_Torlof_RUF_01_32"); //Non c'è malaccio, ma non è ancora abbastanza.
+		AI_Output (self, other, "DIA_Torlof_RUF_01_32"); //Non c'Ã¨ malaccio, ma non Ã¨ ancora abbastanza.
 		AI_Output (self, other, "DIA_Torlof_RUF_01_33"); //Dovrai continuare a combattere con i ragazzi per un altro po'.
 	}
 	else // <7
@@ -523,7 +523,7 @@ func void DIA_Torlof_Aufgaben_Info ()
 	
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
 	Info_AddChoice (DIA_Torlof_Aufgaben, "Devo riscuotere la pigione!", DIA_Torlof_Aufgaben_Pacht);
-	Info_AddChoice (DIA_Torlof_Aufgaben, "Mi occuperò della guardia cittadina, non preoccuparti!", DIA_Torlof_Aufgaben_Miliz);
+	Info_AddChoice (DIA_Torlof_Aufgaben, "Mi occuperÃ² della guardia cittadina, non preoccuparti!", DIA_Torlof_Aufgaben_Miliz);
 };
 
 func void B_Torlof_HolPachtVonSekob()
@@ -531,7 +531,7 @@ func void B_Torlof_HolPachtVonSekob()
 	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_00"); //Bene, ascolta. Il contadino Sekob non paga il suo affitto a Onar da settimane.
 	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_01"); //Onar vuole che egli saldi i suoi 50 pezzi d'oro. Qualche domanda?
 	AI_Output (other, self, "B_Torlof_HolPachtvonSekob_15_02"); //Dove si trova la fattoria di Sekob?
-	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_03"); //Nella parte nord della valle. Da qui, è a destra del grande incrocio.
+	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_03"); //Nella parte nord della valle. Da qui, Ã¨ a destra del grande incrocio.
 	AI_Output (self, other, "B_Torlof_HolPachtvonSekob_01_04"); //Se hai qualche problema, i contadini nei campi ti aiuteranno a orientarti nella zona.
 	
 	MIS_Torlof_HolPachtVonSekob = LOG_RUNNING;
@@ -545,11 +545,11 @@ func void B_Torlof_HolPachtVonSekob()
 
 func void B_Torlof_BengarMilizKlatschen()
 {
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_00"); //Il contadino Bengar si è lamentato che ultimamente l'esercito dalla città lo sta facendo innervosire.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_00"); //Il contadino Bengar si Ã¨ lamentato che ultimamente l'esercito dalla cittÃ  lo sta facendo innervosire.
 	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_01"); //Stanno facendo pressione sul contadino, probabilmente per cercare di farlo separare da Onar.
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_02"); //Voglio che tu ti rechi alla sua fattoria e chiarisca all'esercito che quello non è luogo per loro! Domande?
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_02"); //Voglio che tu ti rechi alla sua fattoria e chiarisca all'esercito che quello non Ã¨ luogo per loro! Domande?
 	AI_Output (other, self, "B_Torlof_BengarMilizKlatschen_15_03"); //Come arrivo alla fattoria di Bengar?
-	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_04"); //A sud-ovest della valle c'è una lunga scalinata che conduce a un altopiano. Lì si trova la fattoria di Bengar.
+	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_04"); //A sud-ovest della valle c'Ã¨ una lunga scalinata che conduce a un altopiano. LÃ¬ si trova la fattoria di Bengar.
 	AI_Output (self, other, "B_Torlof_BengarMilizKlatschen_01_05"); //Se ti perdi, chiedi indicazioni ai contadini.
  	
  	MIS_Torlof_BengarMilizKlatschen = LOG_RUNNING;
@@ -574,7 +574,7 @@ func void DIA_Torlof_Aufgaben_Pacht()
 
 func void DIA_Torlof_Aufgaben_Miliz()
 {
-	AI_Output (other, self, "DIA_Torlof_Aufgaben_Miliz_15_00"); //Mi occuperò della guardia cittadina, non preoccuparti!
+	AI_Output (other, self, "DIA_Torlof_Aufgaben_Miliz_15_00"); //Mi occuperÃ² della guardia cittadina, non preoccuparti!
 	B_Torlof_BengarMilizKlatschen();
 	Torlof_Probe = Probe_Bengar;
 	Info_ClearChoices (DIA_Torlof_Aufgaben);
@@ -589,17 +589,17 @@ func void B_Torlof_TheOtherMissionDay()
 {
 	if (Torlof_TheOtherMission_Day < (Wld_GetDay() - 1)) 
 	{
-		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_00"); //Ci hai messo un sacco di tempo. Onar non sarà molto felice.
+		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_00"); //Ci hai messo un sacco di tempo. Onar non sarÃ  molto felice.
 		Torlof_TheOtherMission_TooLate = TRUE;
 		
 		if (EnterOW_Kapitel2 == TRUE)
 		{
-			AI_Output (self, other, "DIA_Torlof_Add_01_00"); //Ed è lo stesso per lui se i contadini finiscono mangiati o meno nella Valle delle Miniere...
+			AI_Output (self, other, "DIA_Torlof_Add_01_00"); //Ed Ã¨ lo stesso per lui se i contadini finiscono mangiati o meno nella Valle delle Miniere...
 		};
 	}
 		else
 	{
-		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_01"); //Ben fatto! Quando avrò qualcosa di nuovo, te lo farò sapere.
+		AI_Output (self, other, "B_Torlof_TheOtherMissionDay_01_01"); //Ben fatto! Quando avrÃ² qualcosa di nuovo, te lo farÃ² sapere.
 	};
 };
 // ------------------------------------------------------------
@@ -642,7 +642,7 @@ func void DIA_Torlof_SekobSuccess_Info ()
 				
 		if (Torlof_Probe == Probe_Sekob)
 		{
-			AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_03"); //Ben fatto! Hai superato la prova. Questo convincerà molti mercenari che sei adatto al lavoro.
+			AI_Output (self, other, "DIA_Torlof_SekobSuccess_01_03"); //Ben fatto! Hai superato la prova. Questo convincerÃ  molti mercenari che sei adatto al lavoro.
 		}
 		else
 		{
@@ -687,12 +687,12 @@ func void DIA_Torlof_BengarSuccess_Info ()
 {
 	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_00"); //Mi sono occupato del problema guardia cittadina di Bengar.
 	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_01"); //Ti sei assicurato che non torneranno nuovamente a bussare alla sua porta domani?
-	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_02"); //Sarà difficile che riescano a farlo...
+	AI_Output (other, self, "DIA_Torlof_BengarSuccess_15_02"); //SarÃ  difficile che riescano a farlo...
 	AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_03"); //Ben fatto!
 		
 	if (Torlof_Probe == Probe_Bengar)
 	{
-		AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_04"); //Hai passato la tua prova. Se puoi occuparti dell'esercito, la maggior parte delle persone qui ti rispetterà.
+		AI_Output (self, other, "DIA_Torlof_BengarSuccess_01_04"); //Hai passato la tua prova. Se puoi occuparti dell'esercito, la maggior parte delle persone qui ti rispetterÃ .
 	}
 	else
 	{
@@ -732,7 +732,7 @@ func void DIA_Torlof_Welcome_Info ()
 {
 	AI_Output (self, other, "DIA_Torlof_Welcome_01_00"); //Benvenuto nei mercenari, ragazzo!
 	AI_Output (other, self, "DIA_Torlof_Welcome_15_01"); //Grazie!
-	AI_Output (self, other, "DIA_Torlof_Welcome_01_02"); //Appena avrò qualcosa da farti fare, te lo farà sapere.
+	AI_Output (self, other, "DIA_Torlof_Welcome_01_02"); //Appena avrÃ² qualcosa da farti fare, te lo farÃ  sapere.
 };
 
 // ************************************************************
@@ -744,9 +744,9 @@ func void DIA_Torlof_Welcome_Info ()
 	func void B_Torlof_Dragons()
 	{
 		AI_Output (self, other, "DIA_Torlof_Add_01_01"); //Dove sei stato?
-		AI_Output (other, self, "DIA_Torlof_Add_15_02"); //Ero nella Valle delle Miniere! Ci sono dei draghi laggiù! Hanno messo i paladini in ginocchio!
+		AI_Output (other, self, "DIA_Torlof_Add_15_02"); //Ero nella Valle delle Miniere! Ci sono dei draghi laggiÃ¹! Hanno messo i paladini in ginocchio!
 		AI_Output (self, other, "DIA_Torlof_Add_01_03"); //Davvero? Allora c'era veramente qualcosa di vero in quelle storie!
-		AI_Output (self, other, "DIA_Torlof_Add_01_04"); //Lee sarà interessato...
+		AI_Output (self, other, "DIA_Torlof_Add_01_04"); //Lee sarÃ  interessato...
 		Torlof_KnowsDragons = TRUE;
 	};
 
@@ -833,7 +833,7 @@ INSTANCE DIA_Torlof_WhatCanYouTeach(C_INFO)
 	condition	= DIA_Torlof_WhatCanYouTeach_Condition;
 	information	= DIA_Torlof_WhatCanYouTeach_Info;
 	permanent	= FALSE;
-	description = "Puoi aiutarmi a migliorare le mie abilità?";
+	description = "Puoi aiutarmi a migliorare le mie abilitÃ ?";
 };                       
 
 FUNC INT DIA_Torlof_WhatCanYouTeach_Condition()
@@ -843,13 +843,13 @@ FUNC INT DIA_Torlof_WhatCanYouTeach_Condition()
  
 FUNC VOID DIA_Torlof_WhatCanYouTeach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_WhatCanYouTeach_15_00"); //Puoi aiutarmi a migliorare le mie abilità?
+	AI_Output (other,self ,"DIA_Torlof_WhatCanYouTeach_15_00"); //Puoi aiutarmi a migliorare le mie abilitÃ ?
 	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_01"); //Potrei mostrarti come usare al meglio la tua forza nel combattimento in mischia.
-	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_02"); //Molti guerrieri sono deboli perché non hanno la tecnica necessaria a utilizzare la loro forza adeguatamente.
+	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_02"); //Molti guerrieri sono deboli perchÃ© non hanno la tecnica necessaria a utilizzare la loro forza adeguatamente.
 	AI_Output (self ,other,"DIA_Torlof_WhatCanYouTeach_01_03"); //Lo stesso vale per la destrezza e le armi a distanza.
 
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Torlof può aiutarmi a migliorare forza e destrezza.");
+	B_LogEntry (Topic_SoldierTeacher,"Torlof puÃ² aiutarmi a migliorare forza e destrezza.");
 };
 
 // *******************************************
@@ -867,7 +867,7 @@ INSTANCE DIA_Torlof_Teach(C_INFO)
 	condition	= DIA_Torlof_Teach_Condition;
 	information	= DIA_Torlof_Teach_Info;
 	permanent	= TRUE;
-	description = "Voglio migliorare le mie abilità!";
+	description = "Voglio migliorare le mie abilitÃ !";
 };                       
 
 FUNC INT DIA_Torlof_Teach_Condition()
@@ -880,7 +880,7 @@ FUNC INT DIA_Torlof_Teach_Condition()
  
 FUNC VOID DIA_Torlof_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_Teach_15_00"); //Voglio migliorare le mie abilità!
+	AI_Output (other,self ,"DIA_Torlof_Teach_15_00"); //Voglio migliorare le mie abilitÃ !
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	|| (other.guild == GIL_NONE)
@@ -907,7 +907,7 @@ FUNC VOID DIA_Torlof_Teach_Back ()
 	if (Torlof_Merke_STR < other.attribute[ATR_STRENGTH])
 	|| (Torlof_Merke_DEX < other.attribute[ATR_DEXTERITY])
 	{
-		AI_Output (self, other, "DIA_Torlof_Teach_Back_01_00"); //Bene! Ora sai utilizzare meglio le tue abilità!
+		AI_Output (self, other, "DIA_Torlof_Teach_Back_01_00"); //Bene! Ora sai utilizzare meglio le tue abilitÃ !
 	};
 
 	Info_ClearChoices (DIA_Torlof_Teach);
@@ -1019,7 +1019,7 @@ func int DIA_Torlof_DEMENTOREN_Condition ()
 func void DIA_Torlof_DEMENTOREN_Info ()
 {
 	AI_Output (other, self, "DIA_Torlof_DEMENTOREN_15_00"); //Hai qualcosa da farmi fare?
-	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_01"); //Hai visto quei tizi incappucciati di nero aggirarsi da queste parti? Quella gente mi dà i brividi, te lo dico io.
+	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_01"); //Hai visto quei tizi incappucciati di nero aggirarsi da queste parti? Quella gente mi dÃ  i brividi, te lo dico io.
 	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_02"); //Quand'era ancora in mare, ho molte cose singolari, ma quei tizi mi fanno veramente paura.
 	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_03"); //Sono andati in direzione del campo dei briganti, nelle montagne a sud della valle.
 	AI_Output (self, other, "DIA_Torlof_DEMENTOREN_01_04"); //Forse dovresti andare a controllare quei tizi e occuparti di loro!
@@ -1028,7 +1028,7 @@ func void DIA_Torlof_DEMENTOREN_Info ()
 	
 	Log_CreateTopic (TOPIC_Torlof_Dmt, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Torlof_Dmt, LOG_RUNNING);
-	B_LogEntry (TOPIC_Torlof_Dmt,"Dovrebbero esserci alcuni di quei tizi incappucciati al campo dei briganti nelle montagne a sud della valle. La cosa non va giù a Torlof. Devo risolvere il problema."); 
+	B_LogEntry (TOPIC_Torlof_Dmt,"Dovrebbero esserci alcuni di quei tizi incappucciati al campo dei briganti nelle montagne a sud della valle. La cosa non va giÃ¹ a Torlof. Devo risolvere il problema."); 
 
 	MIS_Torlof_Dmt = LOG_RUNNING;
 };
@@ -1044,7 +1044,7 @@ instance DIA_Torlof_DmtSuccess	(C_INFO)
 	condition	 = 	DIA_Torlof_DmtSuccess_Condition;
 	information	 = 	DIA_Torlof_DmtSuccess_Info;
 
-	description	 = 	"Gli uomini incappucciati di nero sulle montagne non sono più con noi.";
+	description	 = 	"Gli uomini incappucciati di nero sulle montagne non sono piÃ¹ con noi.";
 };
 
 func int DIA_Torlof_DmtSuccess_Condition ()
@@ -1058,7 +1058,7 @@ func int DIA_Torlof_DmtSuccess_Condition ()
 
 func void DIA_Torlof_DmtSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Torlof_DmtSuccess_15_00"); //Gli uomini incappucciati di nero sulle montagne non sono più con noi.
+	AI_Output (other, self, "DIA_Torlof_DmtSuccess_15_00"); //Gli uomini incappucciati di nero sulle montagne non sono piÃ¹ con noi.
 	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_01"); //Sei riuscito a sistemarli? Bravo ragazzo!
 	AI_Output (self, other, "DIA_Torlof_DmtSuccess_01_02"); //Quei tizi non mi piacevano per niente. Avrebbero sicuramente causato un mucchio di guai...
 	
@@ -1113,7 +1113,7 @@ instance DIA_Torlof_WOISTSYLVIO		(C_INFO)
 	condition	 = 	DIA_Torlof_WOISTSYLVIO_Condition;
 	information	 = 	DIA_Torlof_WOISTSYLVIO_Info;
 
-	description	 = 	"Qualche mercenario se n’è andato?";
+	description	 = 	"Qualche mercenario se nâ€™Ã¨ andato?";
 };
 
 func int DIA_Torlof_WOISTSYLVIO_Condition ()
@@ -1126,11 +1126,11 @@ func int DIA_Torlof_WOISTSYLVIO_Condition ()
 
 func void DIA_Torlof_WOISTSYLVIO_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_WOISTSYLVIO_15_00"); //Qualche mercenario se n’è andato?
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_01"); //Silvio ha preso con sé alcuni ragazzi ed è scomparso oltre il passo.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_02"); //Si dice che alcuni draghi siano comparsi laggiù. Quando ha sentito questa voce, non c'è stato verso di fermarlo.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_03"); //Chi lo sa? Un trofeo di drago varrà sicuramente un mucchio di soldi sul mercato.
-	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_04"); //Non è roba per me. Sono un marinaio. Appartengo al mare, non a una puzzolente tana di drago.
+	AI_Output			(other, self, "DIA_Torlof_WOISTSYLVIO_15_00"); //Qualche mercenario se nâ€™Ã¨ andato?
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_01"); //Silvio ha preso con sÃ© alcuni ragazzi ed Ã¨ scomparso oltre il passo.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_02"); //Si dice che alcuni draghi siano comparsi laggiÃ¹. Quando ha sentito questa voce, non c'Ã¨ stato verso di fermarlo.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_03"); //Chi lo sa? Un trofeo di drago varrÃ  sicuramente un mucchio di soldi sul mercato.
+	AI_Output			(self, other, "DIA_Torlof_WOISTSYLVIO_01_04"); //Non Ã¨ roba per me. Sono un marinaio. Appartengo al mare, non a una puzzolente tana di drago.
 
 };
 
@@ -1193,17 +1193,17 @@ func int DIA_Torlof_BEMYCAPTAIN_Condition ()
 func void DIA_Torlof_BEMYCAPTAIN_Info ()
 {
 	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_00"); //Sei un marinaio?
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_01"); //L'hai capito, finalmente? Sì, dannazione, sono un marinaio. Perché me lo chiedi?
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_02"); //Potrei aver bisogno della tua abilità. Devo andare su un’isola.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_01"); //L'hai capito, finalmente? SÃ¬, dannazione, sono un marinaio. PerchÃ© me lo chiedi?
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN_15_02"); //Potrei aver bisogno della tua abilitÃ . Devo andare su unâ€™isola.
 	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_03"); //(ride) Su un'isola? Non hai nemmeno una nave, per non parlare di un equipaggio per comandarla.
 	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_04"); //No, ragazzo mio. Se vuoi ottenere i miei servigi come comandante e istruttore fisico, allora dovrai prima dimostrarmi che conosci quello di cui parli.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_05"); //A parte questo, ho già altre preoccupazioni. I paladini non hanno lasciato la città come previsto.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_06"); //Dovrà succedere qualcosa di grave per fargli lasciare la zona.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_05"); //A parte questo, ho giÃ  altre preoccupazioni. I paladini non hanno lasciato la cittÃ  come previsto.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_06"); //DovrÃ  succedere qualcosa di grave per fargli lasciare la zona.
 	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN_01_07"); //Recati al castello nella Valle delle Miniere. Ruba la chiave dell'ingresso principale dalle guardie e aprilo. Gli orchi faranno il resto!
 
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);      
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);    
-	B_LogEntry (TOPIC_Captain,"Prima che Torlof accetti il posto da capitano, devo fare in modo che i paladini lascino la città. Mi ha chiesto di creare qualche problema al castello della Valle delle Miniere. Vuole che rubi alla guardia la chiave del cancello principale e faccia entrare gli orchi nel castello. Spera che in questo modo i paladini lasceranno la città per aiutare i propri compagni.");
+	B_LogEntry (TOPIC_Captain,"Prima che Torlof accetti il posto da capitano, devo fare in modo che i paladini lascino la cittÃ . Mi ha chiesto di creare qualche problema al castello della Valle delle Miniere. Vuole che rubi alla guardia la chiave del cancello principale e faccia entrare gli orchi nel castello. Spera che in questo modo i paladini lasceranno la cittÃ  per aiutare i propri compagni.");
 };                                                                                                                                                                                                                                                                                                                                                                                                                   
 ///////////////////////////////////////////////////////////////////////                                                                                                                                                                                                                                                                                                                                              
 //	Info BeMyCaptain2s
@@ -1215,7 +1215,7 @@ instance DIA_Torlof_BEMYCAPTAIN2		(C_INFO)
 	condition	 = 	DIA_Torlof_BEMYCAPTAIN2_Condition;
 	information	 = 	DIA_Torlof_BEMYCAPTAIN2_Info;
 
-	description	 = 	"Il cancello di accesso al castello nella Valle delle Miniere è aperto...";
+	description	 = 	"Il cancello di accesso al castello nella Valle delle Miniere Ã¨ aperto...";
 };
 
 func int DIA_Torlof_BEMYCAPTAIN2_Condition ()
@@ -1229,10 +1229,10 @@ func int DIA_Torlof_BEMYCAPTAIN2_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN2_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_00"); //Il cancello del castello nella Valle delle Miniere è aperto e bloccato. Ora niente impedirà agli orchi di assaltare il castello.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_00"); //Il cancello del castello nella Valle delle Miniere Ã¨ aperto e bloccato. Ora niente impedirÃ  agli orchi di assaltare il castello.
  	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_01"); //I paladini nel castello hanno subito pesanti perdite contro gli orchi.
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_02"); //Immagino che non passerà molto prima che i paladini in città si rechino nella Valle delle Miniere per portare i loro ragazzi fuori dal castello.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN2_01_03"); //È una buona notizia. Dunque nulla ci impedisce di scappare da questa maledetta regione ormai.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN2_15_02"); //Immagino che non passerÃ  molto prima che i paladini in cittÃ  si rechino nella Valle delle Miniere per portare i loro ragazzi fuori dal castello.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN2_01_03"); //Ãˆ una buona notizia. Dunque nulla ci impedisce di scappare da questa maledetta regione ormai.
 	B_GivePlayerXP (XP_Ambient);
 	
 };
@@ -1247,7 +1247,7 @@ instance DIA_Torlof_BEMYCAPTAIN3		(C_INFO)
 	information	 = 	DIA_Torlof_BEMYCAPTAIN3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Adesso mi aiuterai a raggiungere l’isola?";
+	description	 = 	"Adesso mi aiuterai a raggiungere lâ€™isola?";
 };
 var int Torlof_PaidToBeCaptain;
 func int DIA_Torlof_BEMYCAPTAIN3_Condition ()
@@ -1262,20 +1262,20 @@ func int DIA_Torlof_BEMYCAPTAIN3_Condition ()
 
 func void DIA_Torlof_BEMYCAPTAIN3_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_15_00"); //Adesso mi aiuterai a raggiungere l’isola?
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_01"); //Oh, già. Volevi andare su un'isola. Mmmh, ti farò una proposta.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_02"); //Tu mi paghi 2500 monete d'oro e io sarò il capitano della tua nave.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_03"); //Per quella somma, ti insegnerò anche la forza e la destrezza dovunque vorrai andare.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_15_00"); //Adesso mi aiuterai a raggiungere lâ€™isola?
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_01"); //Oh, giÃ . Volevi andare su un'isola. Mmmh, ti farÃ² una proposta.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_02"); //Tu mi paghi 2500 monete d'oro e io sarÃ² il capitano della tua nave.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_01_03"); //Per quella somma, ti insegnerÃ² anche la forza e la destrezza dovunque vorrai andare.
 
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
-	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "È una spropositata quantità d’oro.", DIA_Torlof_BEMYCAPTAIN3_zuViel );
+	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Ãˆ una spropositata quantitÃ  dâ€™oro.", DIA_Torlof_BEMYCAPTAIN3_zuViel );
 	Info_AddChoice	(DIA_Torlof_BEMYCAPTAIN3, "Va bene. Ecco il tuo oro.", DIA_Torlof_BEMYCAPTAIN3_ok );
 
 };
 func void DIA_Torlof_BEMYCAPTAIN3_zuViel ()
 {
-	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_zuViel_15_00"); //È una spropositata quantità d’oro.
-	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_01"); //Beh, un valido aiuto è sempre caro. Non hai altra scelta, non troverai nessun altro in questa zona che possa comandare la tua nave.
+	AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN3_zuViel_15_00"); //Ãˆ una spropositata quantitÃ  dâ€™oro.
+	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_01"); //Beh, un valido aiuto Ã¨ sempre caro. Non hai altra scelta, non troverai nessun altro in questa zona che possa comandare la tua nave.
 	AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_zuViel_01_02"); //Dunque, paga e non fare troppe storie.
 	Info_ClearChoices	(DIA_Torlof_BEMYCAPTAIN3);
 	B_LogEntry (TOPIC_Captain,"Torlof ha accettato di comandare la nave. Sfortunatamente, vuole una ricompensa di 2.500 pezzi d'oro.");     
@@ -1288,7 +1288,7 @@ func void DIA_Torlof_BEMYCAPTAIN3_ok ()
 	{
 		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN3_ok_01_01"); //Fantastico. Ora devi solo dirmi esattamente cosa vuoi che faccia.
 		Torlof_PaidToBeCaptain = TRUE;
-		B_LogEntry (TOPIC_Captain,"Ora che ho pagato 2.500 pezzi d'oro, Torlof è finalmente pronto a venire con me.");     
+		B_LogEntry (TOPIC_Captain,"Ora che ho pagato 2.500 pezzi d'oro, Torlof Ã¨ finalmente pronto a venire con me.");     
 	}
 	else
 	{
@@ -1324,9 +1324,9 @@ func int DIA_Torlof_BEMYCAPTAIN4_Condition ()
 func void DIA_Torlof_BEMYCAPTAIN4_Info ()
 {
 		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_00"); //Ti nomino capitano della mia nave.
-		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_01"); //D'accordo. Trovami una nave e una ciurma abbastanza robusta e io ti porterò sulla tua dannata isola.
+		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_01"); //D'accordo. Trovami una nave e una ciurma abbastanza robusta e io ti porterÃ² sulla tua dannata isola.
 		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_02"); //Hai una carta nautica? Non andremo lontani senza una di quelle cose.
-		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_03"); //Me ne occuperò io. Ci vediamo al porto.
+		AI_Output			(other, self, "DIA_Torlof_BEMYCAPTAIN4_15_03"); //Me ne occuperÃ² io. Ci vediamo al porto.
 		AI_Output			(self, other, "DIA_Torlof_BEMYCAPTAIN4_01_04"); //Non vedo l'ora di vedere come farai.
 	
 		AI_StopProcessInfos (self);
@@ -1350,7 +1350,7 @@ instance DIA_Torlof_LOSFAHREN		(C_INFO)
 	information	 = 	DIA_Torlof_LOSFAHREN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Andiamo verso l’isola.";
+	description	 = 	"Andiamo verso lâ€™isola.";
 };
 
 func int DIA_Torlof_LOSFAHREN_Condition ()
@@ -1364,14 +1364,14 @@ func int DIA_Torlof_LOSFAHREN_Condition ()
 
 func void DIA_Torlof_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Torlof_LOSFAHREN_15_00"); //Andiamo verso l’isola.
+	AI_Output			(other, self, "DIA_Torlof_LOSFAHREN_15_00"); //Andiamo verso lâ€™isola.
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
 	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_01"); //D'accordo. Dammi la carta e possiamo partire.
 	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_02"); //(urla) Tutti a bordo.
 	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_03"); //Assicurati di avere veramente con te tutto quello di cui hai bisogno. Non torneremo indietro.
-	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_04"); //Se sei sicuro, allora vai a dormire nella cabina del capitano. Il viaggio richiederà parecchio tempo.
+	AI_Output			(self, other, "DIA_Torlof_LOSFAHREN_01_04"); //Se sei sicuro, allora vai a dormire nella cabina del capitano. Il viaggio richiederÃ  parecchio tempo.
 	AI_StopProcessInfos (self);
 	B_CaptainCallsAllOnBoard (self);
 	}
@@ -1394,7 +1394,7 @@ instance DIA_Torlof_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Torlof_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"La mia scelta è caduta su un altro capitano.";
+	description	 = 	"La mia scelta Ã¨ caduta su un altro capitano.";
 };
 
 func int DIA_Torlof_PERM5_NOTCAPTAIN_Condition ()
@@ -1410,7 +1410,7 @@ func int DIA_Torlof_PERM5_NOTCAPTAIN_Condition ()
 func void DIA_Torlof_PERM5_NOTCAPTAIN_Info ()
 {
 	AI_Output			(other, self, "DIA_Torlof_PERM5_NOTCAPTAIN_15_00"); //Ho scelto un altro capitano. Puoi ridarmi i miei soldi ora.
-	AI_Output			(self, other, "DIA_Torlof_PERM5_NOTCAPTAIN_01_01"); //Ti piacerebbe. Niente da fare. Se prima mi paghi e dopo non hai bisogno dei miei servizi, è un tuo problema.
+	AI_Output			(self, other, "DIA_Torlof_PERM5_NOTCAPTAIN_01_01"); //Ti piacerebbe. Niente da fare. Se prima mi paghi e dopo non hai bisogno dei miei servizi, Ã¨ un tuo problema.
 	AI_StopProcessInfos (self);
 };
 

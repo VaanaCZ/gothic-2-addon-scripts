@@ -63,15 +63,15 @@ func void DIA_Urshak_HALLO_wer ()
 {
 	AI_Output			(other, self, "DIA_Urshak_HALLO_wer_15_00"); //Un orco parlante?
 	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_01"); //Tu dimenticato di Ur-Shak? Questo rende me triste.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //Ur-Shak aiutato amico molto tempo fa, prima di prendere ULU-MULU per raggiungere mio villaggio. Dunque orchi rispettano amico e amico non puÚ essere ucciso da orchi.
-	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Amico poi entra dentro tempio degli orchi e sconfigge demone malvagio. » successo molti anni fa. Non ti ricordi?
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_02"); //Ur-Shak aiutato amico molto tempo fa, prima di prendere ULU-MULU per raggiungere mio villaggio. Dunque orchi rispettano amico e amico non pu√≤ essere ucciso da orchi.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_wer_18_03"); //Amico poi entra dentro tempio degli orchi e sconfigge demone malvagio. √à successo molti anni fa. Non ti ricordi?
 
 };
 
 func void DIA_Urshak_HALLO_freund ()
 {
 	AI_Output			(other, self, "DIA_Urshak_HALLO_freund_15_00"); //Hai scelto il momento sbagliato per incrociare la mia strada. Stavo quasi per ucciderti. Che ci fai qui?
-	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ur-Shak guarda terra e vede cosa ne Ë di essa e della mia gente.
+	AI_Output			(self, other, "DIA_Urshak_HALLO_freund_18_01"); //Ur-Shak guarda terra e vede cosa ne √® di essa e della mia gente.
 	Info_ClearChoices	(DIA_Urshak_HALLO);
 };
 
@@ -87,7 +87,7 @@ instance DIA_Urshak_WASMACHENORKS		(C_INFO)
 	condition	 = 	DIA_Urshak_WASMACHENORKS_Condition;
 	information	 = 	DIA_Urshak_WASMACHENORKS_Info;
 
-	description	 = 	"PerchÈ gli orchi stanno attaccando gli umani?";
+	description	 = 	"Perch√© gli orchi stanno attaccando gli umani?";
 };
 
 func int DIA_Urshak_WASMACHENORKS_Condition ()
@@ -101,11 +101,11 @@ func int DIA_Urshak_WASMACHENORKS_Condition ()
 
 func void DIA_Urshak_WASMACHENORKS_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //PerchÈ gli orchi stanno attaccando gli umani?
+	AI_Output			(other, self, "DIA_Urshak_WASMACHENORKS_15_00"); //Perch√© gli orchi stanno attaccando gli umani?
 	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_01"); //Ur-Shak dice sempre a orchi che umani non sono cattivi e che ci sono molti buoni amici fra loro.
-	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Ma lo sciamano non ascolta Ur-Shak. Ur-Shak non Ë ancora ben visto fra la gente.
+	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_02"); //Ma lo sciamano non ascolta Ur-Shak. Ur-Shak non √® ancora ben visto fra la gente.
 	AI_Output			(self, other, "DIA_Urshak_WASMACHENORKS_18_03"); //Dunque Ur-Shak non prestare molta attenzione a grosso piano di guerra contro gli umani.
-	B_LogEntry (TOPIC_Urshak,"Non Ë ancora riuscito a convincere il suo popolo ad ascoltarlo. » ancora un esiliato."); 
+	B_LogEntry (TOPIC_Urshak,"Non √® ancora riuscito a convincere il suo popolo ad ascoltarlo. √à ancora un esiliato."); 
 };
 
 
@@ -119,7 +119,7 @@ instance DIA_Urshak_SOVIELE		(C_INFO)
 	condition	 = 	DIA_Urshak_SOVIELE_Condition;
 	information	 = 	DIA_Urshak_SOVIELE_Info;
 
-	description	 = 	"PerchÈ siete improvvisamente diventati cosÏ tanti?";
+	description	 = 	"Perch√© siete improvvisamente diventati cos√¨ tanti?";
 };
 
 func int DIA_Urshak_SOVIELE_Condition ()
@@ -133,7 +133,7 @@ func int DIA_Urshak_SOVIELE_Condition ()
 
 func void DIA_Urshak_SOVIELE_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //PerchÈ siete improvvisamente diventati cosÏ tanti?
+	AI_Output			(other, self, "DIA_Urshak_SOVIELE_15_00"); //Perch√© siete improvvisamente diventati cos√¨ tanti?
 	AI_Output			(self, other, "DIA_Urshak_SOVIELE_18_01"); //Gli orchi vengono dalle montagne, ma altri sono venuti con navi e hanno fatto grosso recinto.
 };
 
@@ -195,7 +195,7 @@ func void DIA_Urshak_WASHASTDUVOR_Info ()
 {
 	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_00"); //Cosa pensi di fare, adesso?
 	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_01"); //Ur-Shak aspetta che esploratori orchi portino Ur-Shak a Hosh-Pak.
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_02"); //Chi Ë Hosh-Pak?
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_15_02"); //Chi √® Hosh-Pak?
 	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_18_03"); //Essere venerabile sciamano. Lui avere grande influenza sui guerrieri e fare grossi piani per orchi.
 
 	B_LogEntry (TOPIC_Urshak,"Ur-Shak intende incontrare lo sciamano orchesco Hosh-Pak e convincerlo ad accettarlo nuovamente nel concilio degli sciamani."); 
@@ -204,21 +204,21 @@ func void DIA_Urshak_WASHASTDUVOR_Info ()
 
 	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, DIALOG_BACK, DIA_Urshak_WASHASTDUVOR_weiter );
 	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Dove si trova questo Hosh-Pak?", DIA_Urshak_WASHASTDUVOR_ );
-	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "PerchÈ non vai da lui, allora?", DIA_Urshak_WASHASTDUVOR_hoshpak );
+	Info_AddChoice	(DIA_Urshak_WASHASTDUVOR, "Perch√© non vai da lui, allora?", DIA_Urshak_WASHASTDUVOR_hoshpak );
 };
 func void DIA_Urshak_WASHASTDUVOR_hoshpak ()
 {
-	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //PerchÈ non vai da lui, allora?
+	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_hoshpak_15_00"); //Perch√© non vai da lui, allora?
 	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_01"); //Ur-Shak prova continuamente a riottenere l'onore e il suo vecchio posto all'interno del consiglio degli sciamani.
 	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_02"); //Ma finora, Hosh-Pak non volere ascoltare Ur-Shak. Orchi uccidere Ur-Shak se vedere lui senza esploratori. Ur-Shak deve parlare con Hosh-Pak.
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //Forse oggi sarÚ fortunato.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_hoshpak_18_03"); //Forse oggi sar√≤ fortunato.
 	
 };
 
 func void DIA_Urshak_WASHASTDUVOR_ ()
 {
 	AI_Output			(other, self, "DIA_Urshak_WASHASTDUVOR_Urshak_15_00"); //Dove si trova questo Hosh-Pak?
-	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //Hosh-Pak essere in posto dove puÚ vedere orchi guerrieri, su una fortezza vicina a un grosso vulcano.
+	AI_Output			(self, other, "DIA_Urshak_WASHASTDUVOR_Urshak_18_01"); //Hosh-Pak essere in posto dove pu√≤ vedere orchi guerrieri, su una fortezza vicina a un grosso vulcano.
 
 };
 
@@ -239,7 +239,7 @@ instance DIA_Urshak_HOSHPAKDEAD		(C_INFO)
 	condition	 = 	DIA_Urshak_HOSHPAKDEAD_Condition;
 	information	 = 	DIA_Urshak_HOSHPAKDEAD_Info;
 
-	description	 = 	"Hosh-Pak Ë morto.";
+	description	 = 	"Hosh-Pak √® morto.";
 };
 
 func int DIA_Urshak_HOSHPAKDEAD_Condition ()
@@ -254,15 +254,15 @@ func int DIA_Urshak_HOSHPAKDEAD_Condition ()
 
 func void DIA_Urshak_HOSHPAKDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Hosh-Pak Ë morto.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_00"); //Hosh-Pak √® morto.
 	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_01"); //Hosh-Pak morto? RUSHTASOK!
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //Il mio cuore porta un peso tremendo. Ur-Shak non dimenticher‡ mai grande orco che ha nominato Ur-Shak sciamano.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_02"); //Il mio cuore porta un peso tremendo. Ur-Shak non dimenticher√† mai grande orco che ha nominato Ur-Shak sciamano.
 	AI_Output			(other, self, "DIA_Urshak_HOSHPAKDEAD_15_03"); //Capisco. Hosh-Pak era il tuo mentore.
 	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_04"); //Ur-Shak ora deve portare fardello di dolore, deve dare l'ultima sepoltura a Hosh-Pak. Ur-Shak deve andare.
 	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_05"); //Meglio se amico attraversare passo. Qui essere troppo pericoloso.
 	AI_Output			(self, other, "DIA_Urshak_HOSHPAKDEAD_18_06"); //Ur-Shak triste se anche amico umano muore.
 
-	B_LogEntry (TOPIC_Urshak,"Hosh-Pak Ë morto. Il mio amico orco Ë diretto alla tenda di Hosh-Pak. Egli Ë addolorato per il suo mentore. Dovrei lasciarlo andare."); 
+	B_LogEntry (TOPIC_Urshak,"Hosh-Pak √® morto. Il mio amico orco √® diretto alla tenda di Hosh-Pak. Egli √® addolorato per il suo mentore. Dovrei lasciarlo andare."); 
 
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);
@@ -297,7 +297,7 @@ func int DIA_Urshak_GEH_Condition ()
 
 func void DIA_Urshak_GEH_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //» meglio se amico attraversa passo ora.
+	AI_Output			(self, other, "DIA_Urshak_GEH_18_00"); //√à meglio se amico attraversa passo ora.
 	Npc_SetRefuseTalk (self,10);
 	AI_StopProcessInfos (self);
 };
@@ -326,16 +326,16 @@ func int DIA_Urshak_HOSHPAKRACHE_Condition ()
 
 func void DIA_Urshak_HOSHPAKRACHE_Info ()
 {
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //(aggressivo) KHROTOK ! Ho saputo che tu presente quando Hosh-Pak Ë stato ucciso. Tu fatto grosso sbaglio, straniero.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_00"); //(aggressivo) KHROTOK ! Ho saputo che tu presente quando Hosh-Pak √® stato ucciso. Tu fatto grosso sbaglio, straniero.
 	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_01"); //Vedo che hai preso il suo posto qui. Mi hai preso in giro.
-	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //L'influenza che hai sulla tua gente Ë maggiore di quanto voglia ammettere. Ora non sei altro che uno strumento del male.
+	AI_Output			(other, self, "DIA_Urshak_HOSHPAKRACHE_15_02"); //L'influenza che hai sulla tua gente √® maggiore di quanto voglia ammettere. Ora non sei altro che uno strumento del male.
 	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_03"); //Straniero avere ragione. Ur-Shak ora essere animato solo da rabbia e vendetta.
 	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_04"); //Ur-Shak vede grosso errore nel fidarsi di umano malvagio. Ur-Shak si pente di aver chiamato amico l'umano e di averlo aiutato a non essere ucciso.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Lo straniero ora abbandona la valle e attraversa il passo. Ur-Shak non puÚ pi˘ uccidere straniero ora. L'onore degli sciamani impone a Ur-Shak di non uccidere.
-	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //La prossima volta che ci incontreremo saremo nemici. Ora Ë meglio se tu vai.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_05"); //Lo straniero ora abbandona la valle e attraversa il passo. Ur-Shak non pu√≤ pi√π uccidere straniero ora. L'onore degli sciamani impone a Ur-Shak di non uccidere.
+	AI_Output			(self, other, "DIA_Urshak_HOSHPAKRACHE_18_06"); //La prossima volta che ci incontreremo saremo nemici. Ora √® meglio se tu vai.
 	AI_StopProcessInfos (self);
 	URSHAK_SUCKED = TRUE;
-	B_LogEntry (TOPIC_Urshak,"Ur-Shak Ë stato accettato nuovamente nel concilio degli sciamani degli orchi. Ora Ë dalla parte del nemico ed Ë un pochino nervoso. FarÚ meglio a tenermi lontano da lui fino a quando non avrÚ sistemato la mia divergenza con gli orchi. Allora si sar‡ sicuramente calmato."); 
+	B_LogEntry (TOPIC_Urshak,"Ur-Shak √® stato accettato nuovamente nel concilio degli sciamani degli orchi. Ora √® dalla parte del nemico ed √® un pochino nervoso. Far√≤ meglio a tenermi lontano da lui fino a quando non avr√≤ sistemato la mia divergenza con gli orchi. Allora si sar√† sicuramente calmato."); 
 	B_GivePlayerXP (XP_UrshakBecomesShaman);
 };
 

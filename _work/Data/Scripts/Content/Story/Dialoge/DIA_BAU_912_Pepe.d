@@ -42,8 +42,8 @@ func void DIA_Pepe_Hallo_Info ()
 	
 	if ((hero.guild != GIL_SLD)&&(hero.guild != GIL_DJG))
 	{
-		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Non è sempre possibile, vero?
-		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //Naaa, e soprattutto non con i mercenari. Sono davvero contento di starmene qua fuori al pascolo, anche se può rivelarsi pericoloso.
+		AI_Output (other, self, "DIA_Pepe_Hallo_15_02"); //Non Ã¨ sempre possibile, vero?
+		AI_Output (self, other, "DIA_Pepe_Hallo_03_03"); //Naaa, e soprattutto non con i mercenari. Sono davvero contento di starmene qua fuori al pascolo, anche se puÃ² rivelarsi pericoloso.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Pepe_Danger (C_INFO)
 	condition	= DIA_Pepe_Danger_Condition;
 	information	= DIA_Pepe_Danger_Info;
 	permanent 	= FALSE;
-	description	= "Perché è così pericoloso pascolare?";
+	description	= "PerchÃ© Ã¨ cosÃ¬ pericoloso pascolare?";
 };
 func int DIA_Pepe_Danger_Condition ()
 {
@@ -68,9 +68,9 @@ func int DIA_Pepe_Danger_Condition ()
 };
 func void DIA_Pepe_Danger_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Cosa c'è di pericoloso nel pascolo?
-	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //C'è un piccolo gruppo di lupi che si aggira nella zona. Di recente, quelle dannate bestie si sono avvicinate e hanno mangiato una delle mie pecore quasi ogni giorno.
-	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //Fino a qualche giorno fa avevo quasi il doppio delle pecore che ho adesso. Non voglio nemmeno pensare cosa mi farà Onar quando lo scoprirà.
+	AI_Output (other, self, "DIA_Pepe_Danger_15_00"); //Cosa c'Ã¨ di pericoloso nel pascolo?
+	AI_Output (self, other, "DIA_Pepe_Danger_03_01"); //C'Ã¨ un piccolo gruppo di lupi che si aggira nella zona. Di recente, quelle dannate bestie si sono avvicinate e hanno mangiato una delle mie pecore quasi ogni giorno.
+	AI_Output (self, other, "DIA_Pepe_Danger_03_02"); //Fino a qualche giorno fa avevo quasi il doppio delle pecore che ho adesso. Non voglio nemmeno pensare cosa mi farÃ  Onar quando lo scoprirÃ .
 };
 
 // ************************************************************
@@ -83,7 +83,7 @@ instance DIA_Pepe_WhyNotSLD	(C_INFO)
 	condition	= DIA_Pepe_WhyNotSLD_Condition;
 	information	= DIA_Pepe_WhyNotSLD_Info;
 	PERMANENT 	= FALSE;
-	description	= "Perché non hai detto ai mercenari dei lupi? Pensavo che lavorassero per te.";
+	description	= "PerchÃ© non hai detto ai mercenari dei lupi? Pensavo che lavorassero per te.";
 };
 func int DIA_Pepe_WhyNotSLD_Condition ()
 {
@@ -95,11 +95,11 @@ func int DIA_Pepe_WhyNotSLD_Condition ()
 };
 func void DIA_Pepe_WhyNotSLD_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //Perché non hai informato i mercenari dei lupi? Pensavo che lavorassero per te.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //Sì, è vero, avrei dovuto dirglielo, ma non ne ho avuto il coraggio, dannazione.
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //E ora che mi ritrovo con così tante pecore uccise, ho paura di raccontarlo in giro.
+	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_00"); //PerchÃ© non hai informato i mercenari dei lupi? Pensavo che lavorassero per te.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_01"); //SÃ¬, Ã¨ vero, avrei dovuto dirglielo, ma non ne ho avuto il coraggio, dannazione.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_02"); //E ora che mi ritrovo con cosÃ¬ tante pecore uccise, ho paura di raccontarlo in giro.
 	AI_Output (other, self, "DIA_Pepe_WhyNotSLD_15_03"); //Ma l'hai appena detto a ME...
-	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //(irritato) E infatti me ne sto già pentendo.
+	AI_Output (self, other, "DIA_Pepe_WhyNotSLD_03_04"); //(irritato) E infatti me ne sto giÃ  pentendo.
 };
 
 // ************************************************************
@@ -124,9 +124,9 @@ func int DIA_Pepe_KillWolves_Condition ()
 func void DIA_Pepe_KillWolves_Info ()
 {
 	AI_Output (other, self, "DIA_Pepe_KillWolves_15_00"); //E se uccido quei lupi?
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //(beffardo) Tu, da solo? Ah ah. Non ci credo. Farò meglio a chiedere al mio capo di occuparsene.
-	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Lascia stare, era solo una proposta. Andrò a parlare ai ragazzi e vedrò cos'hanno da dire in proposito...
-	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //(spaventato) Aspetta un attimo. D'accordo, d'accordo! Ehm... Tu sei il migliore e puoi uccidere cento lupi alla volta. Non c'è problema!
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_01"); //(beffardo) Tu, da solo? Ah ah. Non ci credo. FarÃ² meglio a chiedere al mio capo di occuparsene.
+	AI_Output (other, self, "DIA_Pepe_KillWolves_15_02"); //Lascia stare, era solo una proposta. AndrÃ² a parlare ai ragazzi e vedrÃ² cos'hanno da dire in proposito...
+	AI_Output (self, other, "DIA_Pepe_KillWolves_03_03"); //(spaventato) Aspetta un attimo. D'accordo, d'accordo! Ehm... Tu sei il migliore e puoi uccidere cento lupi alla volta. Non c'Ã¨ problema!
 	AI_Output (self, other, "DIA_Pepe_KillWolves_03_04"); //Essi si aggirano principalmente fra gli alberi vicino al pascolo. (precisa) Credo che ce ne fossero solo quattro...
 	
 	AI_StopProcessInfos (self);
@@ -173,7 +173,7 @@ func void DIA_Pepe_KilledWolves_Info ()
 	{
 		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_01"); //(stupito) Ce l'hai fatta! Grazie a Innos!
 		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_02"); //Ma non so ancora come dire a Onar che tutte quelle pecore sono morte.
-		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //(fra sé e sé) È tutta colpa di quel dannato Bullco!
+		AI_Output (self, other, "DIA_Pepe_KilledWolves_03_03"); //(fra sÃ© e sÃ©) Ãˆ tutta colpa di quel dannato Bullco!
 
 		MIS_Pepe_KillWolves = LOG_SUCCESS;
 		B_GivePlayerXP (XP_PepeWolves);
@@ -185,7 +185,7 @@ func void DIA_Pepe_KilledWolves_Info ()
 };
 
 // ************************************************************
-// 					Was hast du über Bullco gesagt?
+// 					Was hast du Ã¼ber Bullco gesagt?
 // ************************************************************
 instance DIA_Pepe_Bullco (C_INFO)
 {
@@ -208,10 +208,10 @@ func int DIA_Pepe_Bullco_Condition ()
 func void DIA_Pepe_Bullco_Info ()
 {
 	AI_Output (other, self, "DIA_Pepe_Bullco_15_00"); //Cosa hai detto di Bullco?
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //È uno dei mercenari. Tenere d'occhio il pascolo era in realtà compito suo.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_01"); //Ãˆ uno dei mercenari. Tenere d'occhio il pascolo era in realtÃ  compito suo.
 	AI_Output (self, other, "DIA_Pepe_Bullco_03_02"); //E invece lui e il suo amico Silvio gironzolano intorno a Thekla in cucina tutto il giorno.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //È colpa di quel bastardo se non verrò pagato per settimane a causa della perdita delle pecore.
-	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Vorrei almeno prenderlo a pugni in faccia per quello che ha fatto, ma nessuno può farcela contro di lui. Quel tipo è un assassino.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_03"); //Ãˆ colpa di quel bastardo se non verrÃ² pagato per settimane a causa della perdita delle pecore.
+	AI_Output (self, other, "DIA_Pepe_Bullco_03_04"); //Vorrei almeno prenderlo a pugni in faccia per quello che ha fatto, ma nessuno puÃ² farcela contro di lui. Quel tipo Ã¨ un assassino.
 
 	MIS_Pepe_KickBullco = LOG_RUNNING;
 	
@@ -230,7 +230,7 @@ instance DIA_Pepe_BullcoDefeated (C_INFO)
 	condition	 = 	DIA_Pepe_BullcoDefeated_Condition;
 	information	 = 	DIA_Pepe_BullcoDefeated_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Bullco ha avuto ciò che si meritava.";
+	description	 = 	"Bullco ha avuto ciÃ² che si meritava.";
 };
 func int DIA_Pepe_BullcoDefeated_Condition ()
 {
@@ -245,7 +245,7 @@ func int DIA_Pepe_BullcoDefeated_Condition ()
 };
 func void DIA_Pepe_BullcoDefeated_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Bullco ha avuto ciò che si meritava. Gli ho dato una lezione.
+	AI_Output (other, self, "DIA_Pepe_BullcoDefeated_15_00"); //Bullco ha avuto ciÃ² che si meritava. Gli ho dato una lezione.
 	AI_Output (self, other, "DIA_Pepe_BullcoDefeated_03_01"); //Gli sta bene.
 
 	MIS_Pepe_KickBullco = LOG_SUCCESS;
@@ -284,12 +284,12 @@ func void DIA_Pepe_PERM_Info ()
 	
 	if (Kapitel == 2)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Bene. Ma i lupi torneranno un giorno e probabilmente ce ne saranno di più!
+		AI_Output (self, other, "DIA_Pepe_PERM_03_02"); //Bene. Ma i lupi torneranno un giorno e probabilmente ce ne saranno di piÃ¹!
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //Ho sentito le cose più assurde. Pare che alcuni loschi figuri si siano presentati da Sekob. Stanno assediando la sua casa.
+		AI_Output (self, other, "DIA_Pepe_PERM_03_03"); //Ho sentito le cose piÃ¹ assurde. Pare che alcuni loschi figuri si siano presentati da Sekob. Stanno assediando la sua casa.
 	}
 	
 	if (kapitel >= 4)
@@ -320,7 +320,7 @@ func int DIA_Pepe_Liesel_Condition ()
 func void DIA_Pepe_Liesel_Info ()
 {
 	AI_Output (other, self, "DIA_Pepe_Liesel_15_00"); //Posso comprare una pecora?
-	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //Quando vuoi, sempre che tu possa pagare. Una pecora ti costerà 100 monete d'oro.
+	AI_Output (self, other, "DIA_Pepe_Liesel_03_01"); //Quando vuoi, sempre che tu possa pagare. Una pecora ti costerÃ  100 monete d'oro.
 	AI_Output (self, other, "DIA_Pepe_Liesel_03_02"); //Se paghi, puoi prenderti una pecora. Ma devi trattarla bene.
 };
 
@@ -336,7 +336,7 @@ instance DIA_Pepe_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Pepe_BuyLiesel_Condition;
 	information	 = 	DIA_Pepe_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Ecco 100 pezzi d’oro. Dammi una pecora.";
+	description	 = 	"Ecco 100 pezzi dâ€™oro. Dammi una pecora.";
 };
 func int DIA_Pepe_BuyLiesel_Condition ()
 {	
@@ -347,19 +347,19 @@ func int DIA_Pepe_BuyLiesel_Condition ()
 };
 func void DIA_Pepe_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Ecco 100 monete d’oro. Dammi una pecora.
+	AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_00"); //Ecco 100 monete dâ€™oro. Dammi una pecora.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 100))
 	{
 		if (Pepe_SchafGekauft == 0)
 		{
 			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_01"); //Bene. Puoi prenderti Betsy, la troverai al pascolo.
-			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //Basta che la chiami e ti seguirà. È molto intelligente per essere una pecora. Mi raccomando, trattala bene!
+			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_02"); //Basta che la chiami e ti seguirÃ . Ãˆ molto intelligente per essere una pecora. Mi raccomando, trattala bene!
 		}
 		else
 		{
 			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_03"); //Di nuovo? D'accordo, prendi Betsy.
-			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Betsy? Ma anche l'ultima pecora si chiamava così...
+			AI_Output (other, self, "DIA_Pepe_BuyLiesel_15_04"); //Betsy? Ma anche l'ultima pecora si chiamava cosÃ¬...
 			AI_Output (self, other, "DIA_Pepe_BuyLiesel_03_05"); //Tutte le pecore si chiamano Betsy.
 			if (Pepe_SchafGekauft == 3)
 			{

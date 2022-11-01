@@ -1,7 +1,7 @@
 //Missionitems 2. Kapitel
 
 //********************************************
-//	Xardas¥ Stein des Wissens   liegt im alten Demonenbeschwˆrerturm auf dem Tisch in seinem alten Studierzimmer!
+//	Xardas¬¥ Stein des Wissens   liegt im alten Demonenbeschw√∂rerturm auf dem Tisch in seinem alten Studierzimmer!
 //********************************************
 
 INSTANCE ItMi_StoneOfKnowlegde_MIS (C_Item)
@@ -52,8 +52,8 @@ func void UsePaladinLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Lord Hagen!");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "La spedizione alla Valle delle Miniere Ë fallita. Abbiamo subito molte perdite. I sopravvissuti sono intrappolati nel castello, circondati dagli orchi.");
-					Doc_PrintLines	( nDocID,  0, "Siamo stati attaccati pi˘ volte dai draghi. Hanno devastato le terre intorno al castello. Con l'aiuto di Innos sopravviveremo fino all'arrivo dei rinforzi. Una sortita Ë impensabile.");					
+					Doc_PrintLines	( nDocID,  0, "La spedizione alla Valle delle Miniere √® fallita. Abbiamo subito molte perdite. I sopravvissuti sono intrappolati nel castello, circondati dagli orchi.");
+					Doc_PrintLines	( nDocID,  0, "Siamo stati attaccati pi√π volte dai draghi. Hanno devastato le terre intorno al castello. Con l'aiuto di Innos sopravviveremo fino all'arrivo dei rinforzi. Una sortita √® impensabile.");					
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Possa Innos proteggerci tutti.");
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -95,8 +95,8 @@ func void UseLetterForGorn ()
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Gorn!"					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLines	( nDocID,  0, "Garond si Ë accordato per liberarti per 1000 pezzi d'oro.");
-					Doc_PrintLines	( nDocID,  0, "PerciÚ, se hai qualcosa nascosto da parte, questo Ë il momento buono per rivelarlo.");
+					Doc_PrintLines	( nDocID,  0, "Garond si √® accordato per liberarti per 1000 pezzi d'oro.");
+					Doc_PrintLines	( nDocID,  0, "Perci√≤, se hai qualcosa nascosto da parte, questo √® il momento buono per rivelarlo.");
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Milten"					);
@@ -105,7 +105,7 @@ func void UseLetterForGorn ()
 };
 
 //********************************************
-//	Kerkerschl¸ssel der Burg im Minental
+//	Kerkerschl√ºssel der Burg im Minental
 //********************************************
 
 
@@ -130,7 +130,7 @@ INSTANCE ItKe_PrisonKey_MIS(C_Item)
 };
 
 //********************************************
-//	Schl¸ssel Erzlager der Burg im Minental
+//	Schl√ºssel Erzlager der Burg im Minental
 //********************************************
 INSTANCE ItKe_OC_Store(C_Item)
 {
@@ -152,7 +152,7 @@ INSTANCE ItKe_OC_Store(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schl¸ssel Erzbaron Flur der Burg im Minental
+//	Schl√ºssel Erzbaron Flur der Burg im Minental
 //********************************************
 INSTANCE ITKE_ErzBaronFlur(C_Item)
 {
@@ -168,13 +168,13 @@ INSTANCE ITKE_ErzBaronFlur(C_Item)
 
 	description			= 	"Per la prima porta.";
 	
-	TEXT[2]				= 	"C'Ë un nome inciso sopra.";
+	TEXT[2]				= 	"C'√® un nome inciso sopra.";
 	TEXT[3]				= 	"Gomez.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schl¸ssel Erzbaron Raum der Burg im Minental
+//	Schl√ºssel Erzbaron Raum der Burg im Minental
 //********************************************
 INSTANCE ITKE_ErzBaronRaum(C_Item)
 {
@@ -190,7 +190,7 @@ INSTANCE ITKE_ErzBaronRaum(C_Item)
 
 	description			= 	"Per la seconda porta.";
 	
-	TEXT[2]				= 	"C'Ë un nome inciso sopra.";
+	TEXT[2]				= 	"C'√® un nome inciso sopra.";
 	TEXT[3]				= 	"Gomez.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -253,9 +253,9 @@ func void UseItwr_Silvestro ()
 				Doc_PrintLine	( nDocID,  0, "Dal paladino del Re, Silvestro");
 				Doc_PrintLine	( nDocID,  0, "");
 				Doc_PrintLines	( nDocID,  0, "Un altro giorno di estrazioni ci attende. Oggi abbiamo intenzione di abbattere il muro e continuare a scavare nella roccia.");
-				Doc_PrintLines	( nDocID,  0, "Ho un brutto presentimento, perciÚ naconderÚ il metallo. ");
-				Doc_PrintLines	( nDocID,  0, "Diego Ë l'unico che sa cosa fare qui. Devo fidarmi di lui. Porter‡ i forzieri al sicuro, ma non lo lascerÚ andare da solo. ");	
-				Doc_PrintLines	( nDocID,  0, "Il metallo deve essere protetto a tutti i costi, cosÏ manderÚ due cavalieri insieme a Diego.");	
+				Doc_PrintLines	( nDocID,  0, "Ho un brutto presentimento, perci√≤ naconder√≤ il metallo. ");
+				Doc_PrintLines	( nDocID,  0, "Diego √® l'unico che sa cosa fare qui. Devo fidarmi di lui. Porter√† i forzieri al sicuro, ma non lo lascer√≤ andare da solo. ");	
+				Doc_PrintLines	( nDocID,  0, "Il metallo deve essere protetto a tutti i costi, cos√¨ mander√≤ due cavalieri insieme a Diego.");	
 				Doc_PrintLine	( nDocID,  0, "");
 				Doc_PrintLine	( nDocID,  0, "Lunga vita al Re.");
 				Doc_PrintLine	( nDocID,  0, "");
@@ -264,7 +264,7 @@ func void UseItwr_Silvestro ()
 				
 };
 //**********************************************************************************
-//	Krallen des Rudelf¸hrers
+//	Krallen des Rudelf√ºhrers
 //----------------------------------------------------------------------------------
 INSTANCE ItAt_ClawLeader (C_Item)
 {
@@ -336,7 +336,7 @@ instance ItMi_GoldPlate_MIS (C_Item)
 };
 
 //********************************************
-//	Schl¸ssel Erzlager der Burg im Minental
+//	Schl√ºssel Erzlager der Burg im Minental
 //********************************************
 INSTANCE ItKe_Pass_MIS(C_Item)
 {
@@ -355,7 +355,7 @@ INSTANCE ItKe_Pass_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schl¸ssel Bromor
+//	Schl√ºssel Bromor
 //********************************************
 INSTANCE ItKe_Bromor(C_Item)
 {
@@ -374,7 +374,7 @@ INSTANCE ItKe_Bromor(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schl¸ssel Runenstein
+//	Schl√ºssel Runenstein
 //********************************************
 INSTANCE ITKE_RUNE_MIS(C_Item)
 {
@@ -390,14 +390,14 @@ INSTANCE ITKE_RUNE_MIS(C_Item)
 
 	description			= 	"Una piccola chiave di uno scrigno.";
 	
-	TEXT[1]				= 	"Lo scrigno cui appartiene questa chiave Ë";
+	TEXT[1]				= 	"Lo scrigno cui appartiene questa chiave √®";
 	TEXT[2]				= 	"sotto un ponte.";
 	TEXT[3]				= 	"Contiene una pietra runica.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //**********************************************************************************
-//	Bloodfly Stachel ausschl¸rfen lernen
+//	Bloodfly Stachel ausschl√ºrfen lernen
 //----------------------------------------------------------------------------------
 INSTANCE ItWr_Bloody_MIS		(C_Item)
 {
@@ -430,8 +430,8 @@ func void UseBloodMIS ()
 					Doc_PrintLines	( nDocID,  0, "A meno che non conosca l'arte di rimuovere il veleno e la successiva lavorazione.");
 					Doc_PrintLines	( nDocID,  0, "Il pungiglione deve essere aperto gentilmente con una lama molto tagliente dall'alto al basso.");					
 					Doc_PrintLines	( nDocID,  0, "Lo strato di pelle esterna viene rimosso. I tessuti esposti vengono aperti intorno alle ghiandole."					);
-					Doc_PrintLines	( nDocID,  0, "Il particolare liquido dei tessuti ha propriet‡ terapeutiche.");
-					Doc_PrintLines	( nDocID,  0, "Tuttavia, con il tempo, il corpo umano sviluppa un'immunit‡ alla pozione di guarigione."					);
+					Doc_PrintLines	( nDocID,  0, "Il particolare liquido dei tessuti ha propriet√† terapeutiche.");
+					Doc_PrintLines	( nDocID,  0, "Tuttavia, con il tempo, il corpo umano sviluppa un'immunit√† alla pozione di guarigione."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Damarok");
 					Doc_Show		( nDocID );
@@ -474,7 +474,7 @@ func void UsePfandbrief ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Per il pagamento di debiti irrisolti"					);
-					Doc_PrintLine	( nDocID,  0, "verr‡ accettato un oggetto pignorato,"					);
+					Doc_PrintLine	( nDocID,  0, "verr√† accettato un oggetto pignorato,"					);
 					Doc_PrintLine	( nDocID,  0, "il cui valore sia pari a quello del debito."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Pignorato: un calice d'oro decorato"					);
@@ -558,14 +558,14 @@ func void UseManowar ()
 					Doc_PrintLines	( nDocID,  0, "Il pianto di Dominique");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Dovremmo raccogliere la sua gloria.");
-					Doc_PrintLines	( nDocID,  0, "Innos Ë con me e i miei fratelli.");					
-					Doc_PrintLines	( nDocID,  0, "UcciderÚ come una pecora chiunque cerchi di fermarmi"					);
-					Doc_PrintLines	( nDocID,  0, "poichÈ Egli Ë il fuoco nel mio cuore."					);
+					Doc_PrintLines	( nDocID,  0, "Innos √® con me e i miei fratelli.");					
+					Doc_PrintLines	( nDocID,  0, "Uccider√≤ come una pecora chiunque cerchi di fermarmi"					);
+					Doc_PrintLines	( nDocID,  0, "poich√© Egli √® il fuoco nel mio cuore."					);
 					Doc_PrintLines	( nDocID,  0, "La mia lama serve solamente Lui."					);
-					Doc_PrintLines	( nDocID,  0, "Oggi il Suo nome riechegger‡ lontano."					);
+					Doc_PrintLines	( nDocID,  0, "Oggi il Suo nome riechegger√† lontano."					);
 					Doc_PrintLines	( nDocID,  0, "Qualsiasi uomo che si opponga a me"					);
-					Doc_PrintLines	( nDocID,  0, "morir‡ per mano mia");
-					Doc_PrintLines	( nDocID,  0, "poichÈ io sono un guerriero di Innos."					);
+					Doc_PrintLines	( nDocID,  0, "morir√† per mano mia");
+					Doc_PrintLines	( nDocID,  0, "poich√© io sono un guerriero di Innos."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -602,11 +602,11 @@ func void UseKDWLetter ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Abbiamo abbandonato il campo. Ora che la Barriera Ë caduta, cercheremo il centro della distruzione. Forse troveretemo la risposta che abbiamo cercato per tutti questi anni. Solo Adanos sa dove questo viaggio ci condurr‡."					);
+					Doc_PrintLines	( nDocID,  0, "Abbiamo abbandonato il campo. Ora che la Barriera √® caduta, cercheremo il centro della distruzione. Forse troveretemo la risposta che abbiamo cercato per tutti questi anni. Solo Adanos sa dove questo viaggio ci condurr√†."					);
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Adanos Ë con noi."					);
+					Doc_PrintLines	( nDocID,  0, "Adanos √® con noi."					);
 					Doc_PrintLine	( nDocID,  0, "Saturas");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
@@ -645,8 +645,8 @@ func void UseGilbertLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Sono stufo. Sono rimasto nascosto in questo buco abbastanza a lungo. E se ho capito bene, la Barriera Ë finalmente caduta."					);
-					Doc_PrintLines	( nDocID,  0, "Sembra improbabile che qualcuno venga a cercarmi, ormai. Ne ho avuto abbastanza di questa caverna e dell'intera dannata valle. » tempo che torni a casa.");
+					Doc_PrintLines	( nDocID,  0, "Sono stufo. Sono rimasto nascosto in questo buco abbastanza a lungo. E se ho capito bene, la Barriera √® finalmente caduta."					);
+					Doc_PrintLines	( nDocID,  0, "Sembra improbabile che qualcuno venga a cercarmi, ormai. Ne ho avuto abbastanza di questa caverna e dell'intera dannata valle. √à tempo che torni a casa.");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);

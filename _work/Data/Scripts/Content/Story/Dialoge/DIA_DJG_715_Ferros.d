@@ -44,7 +44,7 @@ FUNC VOID DIA_DJG_715_Ferros_Hello_Info()
 {
 	AI_Output (other,self ,"DIA_DJG_715_Ferros_Hello_15_00"); //Da dove venite?
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_01"); //Dal continente. La mia gente e io ci siamo rifugiati qui.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //La situazione lì sta peggiorando. Gli orchi bruciano tutti i villaggi che incontrano, lasciando dietro di loro solo cenere e distruzione.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_02"); //La situazione lÃ¬ sta peggiorando. Gli orchi bruciano tutti i villaggi che incontrano, lasciando dietro di loro solo cenere e distruzione.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_Hello_01_03"); //Il re ha perso il controllo del suo regno.
 
 	if (hero.guild == GIL_PAL)
@@ -63,7 +63,7 @@ INSTANCE DIA_DJG_715_Ferros_Friends   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_Friends_Condition;
 	information = DIA_DJG_715_Ferros_Friends_Info;
 	permanent   = FALSE;
-	description = "Dov’è la tua gente, adesso?";
+	description = "Dovâ€™Ã¨ la tua gente, adesso?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
@@ -76,9 +76,9 @@ FUNC INT DIA_DJG_715_Ferros_Friends_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_Friends_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Dov’è la tua gente, adesso?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_Friends_15_00"); //Dovâ€™Ã¨ la tua gente, adesso?
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_01"); //L'ho abbandonata.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Credevano che avrebbero potuto prendere tutto ciò che volevano, anche se non apparteneva a loro. Allora mi sono tirato fuori.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_Friends_01_02"); //Credevano che avrebbero potuto prendere tutto ciÃ² che volevano, anche se non apparteneva a loro. Allora mi sono tirato fuori.
 };
 
 //*********************************************************************
@@ -91,7 +91,7 @@ INSTANCE DIA_DJG_715_Ferros_War   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_War_Condition;
 	information = DIA_DJG_715_Ferros_War_Info;
 	permanent   = FALSE;
-	description = "Cos’altro sai sulla guerra?";
+	description = "Cosâ€™altro sai sulla guerra?";
 };
 
 FUNC INT DIA_DJG_715_Ferros_War_Condition()
@@ -104,7 +104,7 @@ FUNC INT DIA_DJG_715_Ferros_War_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_War_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Cos’altro sai sulla guerra?
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_War_15_00"); //Cosâ€™altro sai sulla guerra?
 
 	if (hero.guild == GIL_PAL)
 	{
@@ -112,7 +112,7 @@ FUNC VOID DIA_DJG_715_Ferros_War_Info()
 	};
 	
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_02"); //Gli orchi sono alle porte della capitale, ma non so se l'abbiano o meno conquistata.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //L'ultima cosa che ho sentito dire è che il re è morto. Ma non ci credo.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_War_01_03"); //L'ultima cosa che ho sentito dire Ã¨ che il re Ã¨ morto. Ma non ci credo.
 };
 
 //*********************************************************************
@@ -143,13 +143,13 @@ FUNC VOID DIA_DJG_715_Ferros_OldCamp_Info()
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
 	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Ti auguro buona fortuna per la tua ricerca.",DIA_DJG_715_Ferros_OldCamp_No);
 	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Cosa mi dai se ti trovo una buona spada?",DIA_DJG_715_Ferros_OldCamp_Price);
-	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"Troverò la tua spada.",DIA_DJG_715_Ferros_OldCamp_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_OldCamp,"TroverÃ² la tua spada.",DIA_DJG_715_Ferros_OldCamp_Yes);
 	Wld_InsertItem		(ItMW_1H_FerrosSword_Mis , "FP_OW_ITEM_08"); 
 	MIS_FerrosSword = LOG_RUNNING; 
 	
 	Log_CreateTopic (TOPIC_FerrosSword, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_FerrosSword, LOG_RUNNING);
-	B_LogEntry (TOPIC_FerrosSword,"Feros ha abbandonato la sua spada tra gli orchi. È stato stupido da parte sua."); 
+	B_LogEntry (TOPIC_FerrosSword,"Feros ha abbandonato la sua spada tra gli orchi. Ãˆ stato stupido da parte sua."); 
 };
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_No ()
@@ -170,9 +170,9 @@ FUNC VOID DIA_DJG_715_Ferros_OldCamp_Price ()
 
 FUNC VOID DIA_DJG_715_Ferros_OldCamp_Yes ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //Troverò la tua spada.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_OldCamp_Yes_15_00"); //TroverÃ² la tua spada.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_01"); //Sarebbe fantastico. Dovresti controllare l'alta scogliera a sud.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Probabilmente l'ho persa lì, vicino alle tende degli orchi.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_OldCamp_Yes_01_02"); //Probabilmente l'ho persa lÃ¬, vicino alle tende degli orchi.
 	B_LogEntry (TOPIC_FerrosSword,"Sembra che Feros abbia perso la sua spada sull'alta collina a sud, dove si trovano le tende degli orchi."); 
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_OldCamp);
@@ -188,7 +188,7 @@ INSTANCE DIA_DJG_715_Ferros_FerrosAnySword   (C_INFO)
 	condition   = DIA_DJG_715_Ferros_FerrosAnySword_Condition;
 	information = DIA_DJG_715_Ferros_FerrosAnySword_Info;
 	permanent   = FALSE;
-	description = "Forse ho un’altra spada per te.";
+	description = "Forse ho unâ€™altra spada per te.";
 };
 
 FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
@@ -203,7 +203,7 @@ FUNC INT DIA_DJG_715_Ferros_FerrosAnySword_Condition()
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Info()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Forse ho un’altra spada per te.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_15_00"); //Forse ho unâ€™altra spada per te.
 
 
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
@@ -227,7 +227,7 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Back ()
 
 FUNC VOID B_Ferros_FerrosAnySword_Give ()
 {
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //È una bella spada. Davvero di ottima fattura.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_00"); //Ãˆ una bella spada. Davvero di ottima fattura.
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Give_01_01"); //Sei sicuro di volermela regalare?
 };
 
@@ -237,7 +237,7 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Silverblade ()
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
 	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"No, serve a me.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Sì, prendila.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"SÃ¬, prendila.",DIA_DJG_715_Ferros_FerrosAnySword_Silverblade_Yes);
 };
 
 FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Oreblade ()
@@ -246,21 +246,21 @@ FUNC VOID DIA_DJG_715_Ferros_FerrosAnySword_Oreblade ()
 	
 	Info_ClearChoices (DIA_DJG_715_Ferros_FerrosAnySword);
 	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"No, serve a me.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_No);
-	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"Sì, prendila.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_Yes);
+	Info_AddChoice (DIA_DJG_715_Ferros_FerrosAnySword,"SÃ¬, prendila.",DIA_DJG_715_Ferros_FerrosAnySword_Oreblade_Yes);
 };
 
 FUNC VOID B_Ferros_FerrosAnySword_Yes1 ()
 {
-	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes_15_00"); //Sì, prendila.
+	AI_Output (other,self ,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes_15_00"); //SÃ¬, prendila.
 };
 
 FUNC VOID B_Ferros_FerrosAnySword_Yes2 ()
 {
 	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_00"); //Grazie, sono tuo debitore.
-	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //In cambio ti mostrerò un paio di trucchetti che ti permetteranno di sfruttare meglio la tua forza e destrezza in combattimento.
+	AI_Output (self ,other,"DIA_DJG_715_Ferros_FerrosAnySword_Blade_Yes2_01_01"); //In cambio ti mostrerÃ² un paio di trucchetti che ti permetteranno di sfruttare meglio la tua forza e destrezza in combattimento.
 
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Feros può insegnarmi a migliorare forza e destrezza.");
+	B_LogEntry		(TOPIC_Teacher, "Feros puÃ² insegnarmi a migliorare forza e destrezza.");
 
 };
 
@@ -348,7 +348,7 @@ INSTANCE DIA_Ferros_Teach(C_INFO)
 	condition	= DIA_Ferros_Teach_Condition;
 	information	= DIA_Ferros_Teach_Info;
 	permanent	= TRUE;
-	description = "Mostrami come migliorare le mie abilità.";
+	description = "Mostrami come migliorare le mie abilitÃ .";
 };                       
 
 FUNC INT DIA_Ferros_Teach_Condition()
@@ -361,7 +361,7 @@ FUNC INT DIA_Ferros_Teach_Condition()
  
 FUNC VOID DIA_Ferros_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Mostrami come migliorare le mie abilità.
+	AI_Output (other,self ,"DIA_Ferros_Teach_15_00"); //Mostrami come migliorare le mie abilitÃ .
 
 	if (MIS_OCGateOpen == TRUE)
 	{
@@ -369,7 +369,7 @@ FUNC VOID DIA_Ferros_Teach_Info()
 	}
 	else
 	{
-	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Un buon guerriero deve sapere come trasmettere le proprie abilità alla sua spada.
+	AI_Output (self ,other,"DIA_Ferros_Teach_01_02"); //Un buon guerriero deve sapere come trasmettere le proprie abilitÃ  alla sua spada.
 	
 	Info_ClearChoices (DIA_Ferros_Teach);
 	Info_AddChoice		(DIA_Ferros_Teach, DIALOG_BACK, DIA_Ferros_Teach_Back);
@@ -435,7 +435,7 @@ FUNC INT DIA_Ferros_AllDragonsDead_Condition()
 FUNC VOID DIA_Ferros_AllDragonsDead_Info()
 {
 	AI_Output	(other,self ,"DIA_Ferros_AllDragonsDead_15_00"); //Tutti i draghi sono morti.
-	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Bel lavoro! Se avessimo avuto più uomini come te, forse non saremmo arrivati a questo punto.
+	AI_Output 	(self ,other,"DIA_Ferros_AllDragonsDead_01_01"); //Bel lavoro! Se avessimo avuto piÃ¹ uomini come te, forse non saremmo arrivati a questo punto.
 };
 
 // ************************************************************

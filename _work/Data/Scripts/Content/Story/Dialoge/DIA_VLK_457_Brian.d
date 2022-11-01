@@ -83,7 +83,7 @@ func int DIA_Brian_HALLO_Condition ()
 
 func void DIA_Brian_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Brian_HALLO_04_00"); //Nuovo in citt‡, eh? Io sono Brian! Io sono l'apprendista di maestro Harad.
+	AI_Output (self, other, "DIA_Brian_HALLO_04_00"); //Nuovo in citt√†, eh? Io sono Brian! Io sono l'apprendista di maestro Harad.
 };
 
 // *****************************************************
@@ -111,10 +111,10 @@ func int DIA_Brian_AboutLehrling_Condition ()
 func void DIA_Brian_AboutLehrling_Info ()
 {
 	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_00"); //Cosa fa un apprendista fabbro?
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_01"); //PerchÈ me lo chiedi? Vorresti essere il mio successore?
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_01"); //Perch√© me lo chiedi? Vorresti essere il mio successore?
 	AI_Output (other, self, "DIA_Brian_AboutLehrling_15_02"); //Forse.
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_03"); //PerchÈ no... Ho quasi terminato il mio apprendistato e poi lascerÚ la citt‡.
-	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_04"); //Ma non per colpa di Harad, lui Ë un buon maestro, ho appreso molto da lui.
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_03"); //Perch√© no... Ho quasi terminato il mio apprendistato e poi lascer√≤ la citt√†.
+	AI_Output (self, other, "DIA_Brian_AboutLehrling_04_04"); //Ma non per colpa di Harad, lui √® un buon maestro, ho appreso molto da lui.
 	
 };
 
@@ -128,7 +128,7 @@ instance DIA_Brian_WhyLeave (C_INFO)
 	condition	= DIA_Brian_WhyLeave_Condition;
 	information	= DIA_Brian_WhyLeave_Info;
 	permanent 	= FALSE;
-	description = "PerchÈ vuoi lasciare la citt‡?";
+	description = "Perch√© vuoi lasciare la citt√†?";
 };
 
 func int DIA_Brian_WhyLeave_Condition ()
@@ -141,8 +141,8 @@ func int DIA_Brian_WhyLeave_Condition ()
 
 func void DIA_Brian_WhyLeave_Info ()
 {
-	AI_Output (other,self , "DIA_Brian_WhyLeave_15_00"); //PerchÈ vuoi lasciare la citt‡?
-	AI_Output (self,other , "DIA_Brian_WhyLeave_04_00"); //PerchÈ la gente di qui mi d‡ sui nervi! Soprattutto gli altri maestri!
+	AI_Output (other,self , "DIA_Brian_WhyLeave_15_00"); //Perch√© vuoi lasciare la citt√†?
+	AI_Output (self,other , "DIA_Brian_WhyLeave_04_00"); //Perch√© la gente di qui mi d√† sui nervi! Soprattutto gli altri maestri!
 	AI_Output (self, other, "DIA_Brian_WhyLeave_04_01"); //Ricordo ancora l'affanno per farsi accettare da Harad come apprendista.
 	AI_Output (self, other, "DIA_Brian_WhyLeave_04_02"); //Davvero, ciascuno di questi buffoni ha qualcosa da dire a riguardo.
 	AI_Output (self, other, "DIA_Brian_WhyLeave_04_03"); //Voglio decidere da solo chi posso prendere o meno come apprendista.
@@ -173,7 +173,7 @@ func void DIA_Brian_OtherMasters_Info ()
 {
 	AI_Output (other, self, "DIA_Brian_Add_15_00"); //Chi sono gli altri maestri?
 	AI_Output (self ,other, "DIA_Brian_Add_04_01"); //Beh, ci sono Thorben il carpentiere, Bosper il costruttore d'archi, Constantino l'alchimista e Matteo.
-	AI_Output (self ,other, "DIA_Brian_Add_04_02"); //Lui vende armature, ma prima di tutto Ë un mercante.
+	AI_Output (self ,other, "DIA_Brian_Add_04_02"); //Lui vende armature, ma prima di tutto √® un mercante.
 	AI_Output (self ,other, "DIA_Brian_Add_04_03"); //Tutti i maestri hanno le loro abitazioni qui sulla strada.
 	AI_Output (self ,other, "DIA_Brian_Add_04_04"); //E il negozio di Constantino si trova nel sottopassaggio che porta al tempio.
 };
@@ -181,7 +181,7 @@ func void DIA_Brian_OtherMasters_Info ()
 
 
 // *****************************************************
-// 					‹ber Meister Harad
+// 					√úber Meister Harad
 // *****************************************************
 instance DIA_Brian_AboutHarad (C_INFO)
 {
@@ -204,10 +204,10 @@ func int DIA_Brian_AboutHarad_Condition ()
 func void DIA_Brian_AboutHarad_Info ()
 {
 	AI_Output (other, self, "DIA_Brian_AboutHarad_15_00"); //Parlami ancora del maestro Harad.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_01"); //Non Ë proprio di buon umore in questo momento.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_01"); //Non √® proprio di buon umore in questo momento.
 	AI_Output (self, other, "DIA_Brian_AboutHarad_04_02"); //Pochi giorni fa, i paladini sono arrivati ordinandogli di forgiare alcune spade per loro.
 	AI_Output (self, other, "DIA_Brian_AboutHarad_04_03"); //Gli hanno addirittura proibito di vendere spade a chiunque altro.
-	AI_Output (self, other, "DIA_Brian_AboutHarad_04_04"); //Ora lavora notte e giorno per finire il lavoro il pi˘ in fretta possibile.
+	AI_Output (self, other, "DIA_Brian_AboutHarad_04_04"); //Ora lavora notte e giorno per finire il lavoro il pi√π in fretta possibile.
 };
 
 // *****************************************************
@@ -274,8 +274,8 @@ func void DIA_Brian_WASKAUFEN_Info ()
 		
 		if (MIS_Jack_NewLighthouseOfficer == 0)
 		{
-			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_02"); //Siccome Harad non Ë pi˘ qui, l'esercito mi tiene d'occhio.
-			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_03"); //Non mi Ë pi˘ permesso gestire la fucina. Hanno paura che possa vendere tutto e darmi alla macchia.
+			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_02"); //Siccome Harad non √® pi√π qui, l'esercito mi tiene d'occhio.
+			AI_Output			(self, other, "DIA_Brian_WASKAUFEN_04_03"); //Non mi √® pi√π permesso gestire la fucina. Hanno paura che possa vendere tutto e darmi alla macchia.
 		};
 	}
 	else
@@ -329,7 +329,7 @@ FUNC VOID DIA_Brian_KAP3_EXIT_Info()
 
 
 //*********************************************************************
-//	Kannst du auch Schmuckst¸cke reparieren?
+//	Kannst du auch Schmuckst√ºcke reparieren?
 //*********************************************************************
 instance DIA_Brian_RepairNecklace		(C_INFO)
 {
@@ -465,9 +465,9 @@ func void DIA_Brian_NEWLIGHTHOUSEOFFICER_Info ()
 {
 	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_00"); //Ho sentito che sei interessato al vecchio faro di Jack.
 	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_01"); //Jack sta considerando l'idea di tornar per mare. Ma a quel punto il suo faro rimarrebbe senza nessuno di guardia.
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_02"); //Ma a Jack dovrebbe essere chiaro che allestirÚ una fucina fuori dal faro finchÈ lui sar‡ via.
-	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_03"); //» un problema?
-	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_04"); //(ride) Non per me. Non prenderÚ la fucina di Harad in nessun caso. Mi sono tolto quel pensiero dalla testa.
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_02"); //Ma a Jack dovrebbe essere chiaro che allestir√≤ una fucina fuori dal faro finch√© lui sar√† via.
+	AI_Output			(other, self, "DIA_Brian_NEWLIGHTHOUSEOFFICER_15_03"); //√à un problema?
+	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_04"); //(ride) Non per me. Non prender√≤ la fucina di Harad in nessun caso. Mi sono tolto quel pensiero dalla testa.
 	AI_Output			(self, other, "DIA_Brian_NEWLIGHTHOUSEOFFICER_04_05"); //D'accordo. Ci incontreremo da Jack.
 	MIS_Jack_NewLighthouseOfficer = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
@@ -487,7 +487,7 @@ instance DIA_Brian_LIGHTHOUSEFREE		(C_INFO)
 	permanent	 = 	TRUE;
 
 
-	description	 = 	"Allora, cosíhai da dire?";
+	description	 = 	"Allora, cos‚Äôhai da dire?";
 };
 
 func int DIA_Brian_LIGHTHOUSEFREE_Condition ()
@@ -503,7 +503,7 @@ func int DIA_Brian_LIGHTHOUSEFREE_Condition ()
 func void DIA_Brian_LIGHTHOUSEFREE_Info ()
 {
 	AI_Output			(other, self, "DIA_Brian_LIGHTHOUSEFREE_15_00"); //E cosa dici?
-	AI_Output			(self, other, "DIA_Brian_LIGHTHOUSEFREE_04_01"); //Cavolo, che macello. Jack non riconoscer‡ nemmeno il posto quando avrÚ finito.
+	AI_Output			(self, other, "DIA_Brian_LIGHTHOUSEFREE_04_01"); //Cavolo, che macello. Jack non riconoscer√† nemmeno il posto quando avr√≤ finito.
 };
 
 

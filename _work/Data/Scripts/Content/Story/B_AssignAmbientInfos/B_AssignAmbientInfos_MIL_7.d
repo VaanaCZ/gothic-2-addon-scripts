@@ -45,13 +45,13 @@ FUNC VOID DIA_MIL_7_JOIN_Info()
 	AI_Output (other, self, "DIA_MIL_7_JOIN_15_00"); //Voglio entrare a far parte della guardia cittadina.
 	if (Player_IsApprentice == APP_NONE)
 	{
-		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01"); //Tu non sei nemmeno un cittadino di Khorinis! Perché Lord Andre dovrebbe accettarti?
+		AI_Output (self, other, "DIA_MIL_7_JOIN_07_01"); //Tu non sei nemmeno un cittadino di Khorinis! PerchÃ© Lord Andre dovrebbe accettarti?
 		AI_Output (self, other, "DIA_MIL_7_JOIN_07_02"); //Tutti potrebbero proporsi per la guardia cittadina, ricevere un'arma e un'armatura e poi fuggire con esse.
 		
 		if (C_NpcIsInQuarter (self) != Q_KASERNE)
 		{
 			AI_Output (other, self, "DIA_MIL_7_JOIN_15_03"); //Ma io parlo sul serio!
-			AI_Output (self, other, "DIA_MIL_7_JOIN_07_04"); //È a Lord Andre che devi dare delle spiegazioni, non a me. Lo troverai nella caserma.
+			AI_Output (self, other, "DIA_MIL_7_JOIN_07_04"); //Ãˆ a Lord Andre che devi dare delle spiegazioni, non a me. Lo troverai nella caserma.
 		};
 	}
 	else
@@ -84,8 +84,8 @@ FUNC VOID DIA_MIL_7_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_7_PEOPLE_15_00"); //Cosa sai sui paladini?
 	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_01"); //Non molto. Nessuno sa esattamente cosa ci facciano qui. Nemmeno noi della guardia cittadina.
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02"); //Hanno preso il controllo della città, cacciato il governatore dalla sua camera di consiglio e sollevato il giudice dal suo incarico.
-	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03"); //Se vuoi sapere la mia opinione, credo sia una cosa positiva. Quegli individui spocchiosi avevano bisogno di una bella lezione di umiltà.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_02"); //Hanno preso il controllo della cittÃ , cacciato il governatore dalla sua camera di consiglio e sollevato il giudice dal suo incarico.
+	AI_Output (self, other, "DIA_MIL_7_PEOPLE_07_03"); //Se vuoi sapere la mia opinione, credo sia una cosa positiva. Quegli individui spocchiosi avevano bisogno di una bella lezione di umiltÃ .
 };
 
 // *************************************************************************
@@ -97,7 +97,7 @@ INSTANCE DIA_MIL_7_LOCATION(C_INFO)
 	condition	= DIA_MIL_7_LOCATION_Condition;
 	information	= DIA_MIL_7_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Quali alternative ho qui in città?";
+	description = "Quali alternative ho qui in cittÃ ?";
 };                       
 
 FUNC INT DIA_MIL_7_LOCATION_Condition()
@@ -107,11 +107,11 @@ FUNC INT DIA_MIL_7_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_7_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_LOCATION_15_00"); //Quali alternative ho qui in città?
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_01"); //Se non vuoi finire nei bassifondi del distretto del porto, faresti meglio a trovarti un lavoro. Chiedi in giro nella parte bassa della città, magari sarai fortunato.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_02"); //Se hai intenzione di trattenerti più a lungo qui in città, dovresti arruolarti nella guardia cittadina o almeno addestrarti al combattimento.
+	AI_Output (other, self, "DIA_MIL_7_LOCATION_15_00"); //Quali alternative ho qui in cittÃ ?
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_01"); //Se non vuoi finire nei bassifondi del distretto del porto, faresti meglio a trovarti un lavoro. Chiedi in giro nella parte bassa della cittÃ , magari sarai fortunato.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_02"); //Se hai intenzione di trattenerti piÃ¹ a lungo qui in cittÃ , dovresti arruolarti nella guardia cittadina o almeno addestrarti al combattimento.
 	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_03"); //Gli istruttori di combattimento nella caserma addestrano anche i civili.
-	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_04"); //Gli orchi arriveranno presto, quindi ogni ora trascorsa ad addestrarti sarà preziosa.
+	AI_Output (self, other, "DIA_MIL_7_LOCATION_07_04"); //Gli orchi arriveranno presto, quindi ogni ora trascorsa ad addestrarti sarÃ  preziosa.
 };
 
 // *************************************************************************
@@ -123,7 +123,7 @@ INSTANCE DIA_MIL_7_STANDARD(C_INFO)
 	condition	= DIA_MIL_7_STANDARD_Condition;
 	information	= DIA_MIL_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novità?";
+	description = "NovitÃ ?";
 };                       
 func INT DIA_MIL_7_STANDARD_Condition()
 {
@@ -131,7 +131,7 @@ func INT DIA_MIL_7_STANDARD_Condition()
 };
 FUNC VOID DIA_MIL_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_7_STANDARD_15_00"); //Novità?
+	AI_Output (other, self, "DIA_MIL_7_STANDARD_15_00"); //NovitÃ ?
 		
 	if (Kapitel == 1)
 	{
@@ -168,18 +168,18 @@ FUNC VOID DIA_MIL_7_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_04"); //Uno dei mercenari di Onar ha ucciso l'onorevole paladino Lothar. Ma quel bastardo è stato preso e gettato in prigione.
+			AI_Output (self,other,"DIA_MIL_7_STANDARD_07_04"); //Uno dei mercenari di Onar ha ucciso l'onorevole paladino Lothar. Ma quel bastardo Ã¨ stato preso e gettato in prigione.
 		};
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_05"); //Alcuni dei mercenari hanno già lasciato la fattoria di Onar. A volte i problemi si risolvono da soli.
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_05"); //Alcuni dei mercenari hanno giÃ  lasciato la fattoria di Onar. A volte i problemi si risolvono da soli.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_06"); //I draghi sono stati sconfitti, ma non è ancora finita. Ora tocca agli orchi. Daremo una bella ripulita a questo posto.
+		AI_Output (self,other,"DIA_MIL_7_STANDARD_07_06"); //I draghi sono stati sconfitti, ma non Ã¨ ancora finita. Ora tocca agli orchi. Daremo una bella ripulita a questo posto.
 	};
 };
 

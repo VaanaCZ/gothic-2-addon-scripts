@@ -47,7 +47,7 @@ func void DIA_Mil_304_Torwache_WASMACHSTDU_Info ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Ehi, non cercare di ammorbidirmi dicendomi 'come vanno le cose?'. È un trucco vecchio ormai. Sparisci dalla mia vista, capito?
+		AI_Output			(self, other, "DIA_Mil_304_Torwache_WASMACHSTDU_08_02"); //Ehi, non cercare di ammorbidirmi dicendomi 'come vanno le cose?'. Ãˆ un trucco vecchio ormai. Sparisci dalla mia vista, capito?
 	};
 	 
 	AI_StopProcessInfos (self);

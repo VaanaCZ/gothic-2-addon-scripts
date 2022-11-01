@@ -55,14 +55,14 @@ FUNC VOID DIA_Raoul_NoSentenza_Info()
 	&& (!C_NpcIsDown(Sentenza))
 	{
 		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_02"); //SENTENZA! Vieni qui!
-		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_03"); //(con falsa cortesia) Un momento, sarà subito qui!
+		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_03"); //(con falsa cortesia) Un momento, sarÃ  subito qui!
 		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_04"); //Allora avrai una bella sorpresa!
 		
 		B_Attack (Sentenza, other, AR_NONE, 0);
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_05"); //Dov'è andato a cacciarsi? Beh, non importa, sei stato fortunato...
+		AI_Output (self ,other,"DIA_Raoul_NoSentenza_01_05"); //Dov'Ã¨ andato a cacciarsi? Beh, non importa, sei stato fortunato...
 	};
 	
 	AI_StopProcessInfos (self);
@@ -116,7 +116,7 @@ instance DIA_Raoul_PERMNone (C_INFO)
 	condition	= DIA_Raoul_PERMNone_Condition;
 	information	= DIA_Raoul_PERMNone_Info;
 	permanent	= TRUE;
-	description = "Voglio dare un’occhiata nei dintorni della fattoria!"; 
+	description = "Voglio dare unâ€™occhiata nei dintorni della fattoria!"; 
 };                       
 
 FUNC INT DIA_Raoul_PERMNone_Condition()
@@ -129,11 +129,11 @@ FUNC INT DIA_Raoul_PERMNone_Condition()
  
 FUNC VOID DIA_Raoul_PERMNone_Info()
 {
-	AI_Output (other, self, "DIA_Raoul_PERMNone_15_00"); //Voglio dare un’occhiata nei dintorni della fattoria!
+	AI_Output (other, self, "DIA_Raoul_PERMNone_15_00"); //Voglio dare unâ€™occhiata nei dintorni della fattoria!
 	
 	if (Raoul_gesagt == FALSE)
 	{
-		AI_Output (self, other, "DIA_Raoul_PERMNone_01_01"); //Non entrare nell'edificio a sinistra. Silvio è lì e ora non è proprio di buon umore.
+		AI_Output (self, other, "DIA_Raoul_PERMNone_01_01"); //Non entrare nell'edificio a sinistra. Silvio Ã¨ lÃ¬ e ora non Ã¨ proprio di buon umore.
 		AI_Output (self, other, "DIA_Raoul_PERMNone_01_02"); //Se vede un debole che non appartiene alla fattoria, potrebbe decidere di sfogarsi su di lui.
 		Raoul_gesagt = TRUE;
 	}
@@ -168,10 +168,10 @@ FUNC INT DIA_Raoul_WannaJoin_Condition()
 FUNC VOID DIA_Raoul_WannaJoin_Info()
 {	
 	AI_Output (other, self, "DIA_Raoul_WannaJoin_15_00"); //Voglio unirmi a Lee!
-	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_01"); //Lee non avrà più molto da dire da queste parti se continua così!
+	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_01"); //Lee non avrÃ  piÃ¹ molto da dire da queste parti se continua cosÃ¬!
 	AI_Output (other, self, "DIA_Raoul_WannaJoin_15_02"); //Cosa vuoi dire?
 	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_03"); //Vuole che tutti rimangano seduti a girarsi i pollici. Intimidire qualche contadini ogni tanto, e basta.
-	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_04"); //Silvio dice sempre che la miglior difesa è l'attacco e ha dannatamente ragione.
+	AI_Output (self, other, "DIA_Raoul_WannaJoin_01_04"); //Silvio dice sempre che la miglior difesa Ã¨ l'attacco e ha dannatamente ragione.
 };
 	
 // ************************************************************
@@ -184,7 +184,7 @@ instance DIA_Raoul_AboutSylvio (C_INFO)
 	condition	= DIA_Raoul_AboutSylvio_Condition;
 	information	= DIA_Raoul_AboutSylvio_Info;
 	permanent	= FALSE;
-	description = "Chi è Silvio?"; 
+	description = "Chi Ã¨ Silvio?"; 
 };                       
 
 FUNC INT DIA_Raoul_AboutSylvio_Condition()
@@ -198,7 +198,7 @@ FUNC INT DIA_Raoul_AboutSylvio_Condition()
  
 FUNC VOID DIA_Raoul_AboutSylvio_Info()
 {	
-	AI_Output (other, self, "DIA_Raoul_AboutSylvio_15_00"); //Chi è Sylvio?
+	AI_Output (other, self, "DIA_Raoul_AboutSylvio_15_00"); //Chi Ã¨ Sylvio?
 	AI_Output (self, other, "DIA_Raoul_AboutSylvio_01_01"); //Il nostro prossimo capo, se lo chiedi a me. Se hai intenzione di andare a chiedergli di unirti a noi, scordatelo!
 	AI_Output (self, other, "DIA_Raoul_AboutSylvio_01_02"); //Sembri a malapena in grado di portare le pecore al pascolo.
 };
@@ -261,8 +261,8 @@ FUNC VOID DIA_Raoul_Duell_Info()
 {	
 	AI_Output (other, self, "DIA_Raoul_Duell_15_00"); //Mi sa che sto per darti un pugno in faccia...
 	AI_Output (self, other, "DIA_Raoul_Duell_01_01"); //Cosa?
-	AI_Output (other, self, "DIA_Raoul_Duell_15_02"); //È proprio quello che ti serve in questo momento...
-	AI_Output (self, other, "DIA_Raoul_Duell_01_03"); //Sono stato gentile con te finora, non è vero?
+	AI_Output (other, self, "DIA_Raoul_Duell_15_02"); //Ãˆ proprio quello che ti serve in questo momento...
+	AI_Output (self, other, "DIA_Raoul_Duell_01_03"); //Sono stato gentile con te finora, non Ã¨ vero?
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -297,11 +297,11 @@ func int DIA_Raoul_PERM_Condition ()
 
 func void DIA_Raoul_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_PERM_15_00"); //Tutto il resto è a posto?
+	AI_Output			(other, self, "DIA_Raoul_PERM_15_00"); //Tutto il resto Ã¨ a posto?
 
 	if (MIS_Raoul_KillTrollBlack == LOG_RUNNING)
 	{
-		AI_Output			(self, other, "DIA_Raoul_PERM_01_01"); //Non chiacchierare così tanto. Vai e portami quella pelle di troll oscuro.
+		AI_Output			(self, other, "DIA_Raoul_PERM_01_01"); //Non chiacchierare cosÃ¬ tanto. Vai e portami quella pelle di troll oscuro.
 	}
 	else 
 	{
@@ -343,12 +343,12 @@ func void DIA_Raoul_TROLL_Info ()
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Raoul_TROLL_01_02"); //Ti sei unito ai mentecatti della città? Sembrerebbe di sì.
+			AI_Output			(self, other, "DIA_Raoul_TROLL_01_02"); //Ti sei unito ai mentecatti della cittÃ ? Sembrerebbe di sÃ¬.
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Raoul_TROLL_01_03"); //Non pensare che ora ti rispetti solamente perché adesso sei uno di noi.
+			AI_Output			(self, other, "DIA_Raoul_TROLL_01_03"); //Non pensare che ora ti rispetti solamente perchÃ© adesso sei uno di noi.
 		};
 
 		if (hero.guild == GIL_KDF)
@@ -356,53 +356,53 @@ func void DIA_Raoul_TROLL_Info ()
 			AI_Output			(self, other, "DIA_Raoul_TROLL_01_04"); //Stiamo giocando a fare i grandi maghi, eh?
 		};
 	
-	AI_Output			(self, other, "DIA_Raoul_TROLL_01_05"); //Ti dirò qualcosa. Non importa cosa indossi, sono capace di vedere quanto vali.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_01_06"); //Per me sei solo un grasso buono a nulla, niente di più.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_01_05"); //Ti dirÃ² qualcosa. Non importa cosa indossi, sono capace di vedere quanto vali.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_01_06"); //Per me sei solo un grasso buono a nulla, niente di piÃ¹.
 
 	Info_ClearChoices	(DIA_Raoul_TROLL);
 	Info_AddChoice	(DIA_Raoul_TROLL, "Devo andare.", DIA_Raoul_TROLL_weg );
-	Info_AddChoice	(DIA_Raoul_TROLL, "Qual è il problema?", DIA_Raoul_TROLL_rechnung );
+	Info_AddChoice	(DIA_Raoul_TROLL, "Qual Ã¨ il problema?", DIA_Raoul_TROLL_rechnung );
 };
 
 func void DIA_Raoul_TROLL_weg ()
 {
 	AI_Output			(other, self, "DIA_Raoul_TROLL_weg_15_00"); //Devo andare.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_weg_01_01"); //Sì. Vattene.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_weg_01_01"); //SÃ¬. Vattene.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Raoul_TROLL_rechnung ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_00"); //Qual è il problema?
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_00"); //Qual Ã¨ il problema?
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_01"); //Conosco quelli come te. Solo parole e niente attributi.
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_02"); //Detesto chi si veste pomposamente e si vanta delle proprie gesta eroiche.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_03"); //Proprio ieri ho fatto saltare i denti a uno dei ragazzi, perché diceva che avrebbe potuto stendere un troll oscuro con una mano legata dietro la schiena.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_03"); //Proprio ieri ho fatto saltare i denti a uno dei ragazzi, perchÃ© diceva che avrebbe potuto stendere un troll oscuro con una mano legata dietro la schiena.
 	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_15_04"); //E allora?
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_05"); //(aspramente) Cosa vorresti dire con quel 'e allora'?
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_06"); //Hai mai visto un troll oscuro, fanfarone? Hai idea di quanto siano grossi quei mostri, ragazzo?
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_01_07"); //Se ti avvicini troppo, ti faranno a pezzi.
 
 	Info_ClearChoices	(DIA_Raoul_TROLL);
-	Info_AddChoice	(DIA_Raoul_TROLL, "Non è una cosa che mi riguarda.", DIA_Raoul_TROLL_rechnung_hastrecht );
+	Info_AddChoice	(DIA_Raoul_TROLL, "Non Ã¨ una cosa che mi riguarda.", DIA_Raoul_TROLL_rechnung_hastrecht );
 
 	if (Npc_IsDead(Troll_Black))
 	{
-		Info_AddChoice	(DIA_Raoul_TROLL, "Ho già ucciso un troll oscuro.", DIA_Raoul_TROLL_rechnung_ich );
+		Info_AddChoice	(DIA_Raoul_TROLL, "Ho giÃ  ucciso un troll oscuro.", DIA_Raoul_TROLL_rechnung_ich );
 	}
 	else
 	{
-		Info_AddChoice	(DIA_Raoul_TROLL, "Troll oscuro? Non c’è problema.", DIA_Raoul_TROLL_rechnung_noProb );
+		Info_AddChoice	(DIA_Raoul_TROLL, "Troll oscuro? Non câ€™Ã¨ problema.", DIA_Raoul_TROLL_rechnung_noProb );
 	};
 };
 
 func void B_Raoul_Blame ()
 {
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_00"); //Te la stai cercando, eh? Dovrei darti una bella lezione, ma ho un'idea migliore.
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_01"); //Se sei un guerriero così abile, allora dimostramelo.
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_01"); //Se sei un guerriero cosÃ¬ abile, allora dimostramelo.
 	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_02"); //Cosa ci guadagno io?
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_03"); //Che domanda stupida. Il tuo onore e la mascella tutta intera, per esempio?
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_04"); //Non è poi molto, vero?
-	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_05"); //Mmmh. Diciamo che ti pagherò un mucchio d'oro se mi porterai una pelle di troll oscuro. Che te ne pare?
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_04"); //Non Ã¨ poi molto, vero?
+	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_05"); //Mmmh. Diciamo che ti pagherÃ² un mucchio d'oro se mi porterai una pelle di troll oscuro. Che te ne pare?
 	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_15_06"); //Meglio.
 	AI_Output			(self, other, "DIA_Raoul_TROLL_rechnung_B_Raoul_Blame_01_07"); //Allora cosa stai aspettando?
 	
@@ -424,12 +424,12 @@ func void DIA_Raoul_TROLL_rechnung_hastrecht ()
 
 func void DIA_Raoul_TROLL_rechnung_ich ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_ich_15_00"); //Ho già ucciso un troll oscuro.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_ich_15_00"); //Ho giÃ  ucciso un troll oscuro.
 	B_Raoul_Blame ();
 };
 func void DIA_Raoul_TROLL_rechnung_noProb ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_noProb_15_00"); //Troll oscuro? Non c'è problema.
+	AI_Output			(other, self, "DIA_Raoul_TROLL_rechnung_noProb_15_00"); //Troll oscuro? Non c'Ã¨ problema.
 	B_Raoul_Blame ();
 };
 	
@@ -463,9 +463,9 @@ func void DIA_Raoul_TrophyFur_Info ()
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 	{
-		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_01"); //Allora apri bene le orecchie. Questo suggerimento è gratis.
+		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_01"); //Allora apri bene le orecchie. Questo suggerimento Ã¨ gratis.
 		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_02"); //Afferra la bestia e apri una ferita in entrambe le gambe.
-		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_03"); //Poi potrai tirare la pelle di quella cosa al di sopra delle orecchie. È troppo difficile o cosa?
+		AI_Output			(self, other, "DIA_Raoul_TrophyFur_01_03"); //Poi potrai tirare la pelle di quella cosa al di sopra delle orecchie. Ãˆ troppo difficile o cosa?
 	};	
 };
 
@@ -499,10 +499,10 @@ func void DIA_Raoul_TROLLFELL_Info ()
 	B_GiveInvItems 		(other, self, ItAt_TrollBlackFur,1);
 	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_02"); //Incredibile. Cosa vuoi in cambio?
 	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_15_03"); //Dammi quello che hai.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_04"); //D'accordo. Ti darò 500 pezzi d'oro e ci aggiungerò tre pozioni di cura potenti, che ne dici?
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_01_04"); //D'accordo. Ti darÃ² 500 pezzi d'oro e ci aggiungerÃ² tre pozioni di cura potenti, che ne dici?
 	
 	Info_ClearChoices	(DIA_Raoul_TROLLFELL);
-	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Non è abbastanza.", DIA_Raoul_TROLLFELL_nein );
+	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Non Ã¨ abbastanza.", DIA_Raoul_TROLLFELL_nein );
 	Info_AddChoice	(DIA_Raoul_TROLLFELL, "Fatto.", DIA_Raoul_TROLLFELL_ja );
 
 	MIS_Raoul_KillTrollBlack = LOG_SUCCESS;
@@ -512,7 +512,7 @@ func void DIA_Raoul_TROLLFELL_Info ()
 func void DIA_Raoul_TROLLFELL_ja ()
 {
 	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_ja_15_00"); //Venduta.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_ja_01_01"); //È stato un piacere.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_ja_01_01"); //Ãˆ stato un piacere.
 	CreateInvItems (self, ItPo_Health_03, 3);									
 	B_GiveInvItems (self, other, ItPo_Health_03, 3);					
 	CreateInvItems (self, ItMi_Gold, 500);									
@@ -523,9 +523,9 @@ func void DIA_Raoul_TROLLFELL_ja ()
 
 func void DIA_Raoul_TROLLFELL_nein ()
 {
-	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_nein_15_00"); //Non è abbastanza.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_01"); //Fai come ti pare. Mi terrò la pelle, comunque.
-	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_02"); //Non mi farò sfuggire questa opportunità dalle mani.
+	AI_Output			(other, self, "DIA_Raoul_TROLLFELL_nein_15_00"); //Non Ã¨ abbastanza.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_01"); //Fai come ti pare. Mi terrÃ² la pelle, comunque.
+	AI_Output			(self, other, "DIA_Raoul_TROLLFELL_nein_01_02"); //Non mi farÃ² sfuggire questa opportunitÃ  dalle mani.
 	MIS_Raoul_DoesntPayTrollFur = LOG_RUNNING;
 	AI_StopProcessInfos (self);
 };
@@ -570,7 +570,7 @@ instance DIA_Raoul_GotTrollFurBack		(C_INFO)
 	condition	 = 	DIA_Raoul_GotTrollFurBack_Condition;
 	information	 = 	DIA_Raoul_GotTrollFurBack_Info;
 
-	description	 = 	"Non provare più a derubarmi, capito?";
+	description	 = 	"Non provare piÃ¹ a derubarmi, capito?";
 };
 
 func int DIA_Raoul_GotTrollFurBack_Condition ()
@@ -585,8 +585,8 @@ func int DIA_Raoul_GotTrollFurBack_Condition ()
 
 func void DIA_Raoul_GotTrollFurBack_Info ()
 {
-	AI_Output			(other, self, "DIA_Raoul_GotTrollFurBack_15_00"); //Non provare più a derubarmi, capito?
-	AI_Output			(self, other, "DIA_Raoul_GotTrollFurBack_01_01"); //D'accordo. Sai come vanno le cose qui attorno, non è vero? Dunque calmati.
+	AI_Output			(other, self, "DIA_Raoul_GotTrollFurBack_15_00"); //Non provare piÃ¹ a derubarmi, capito?
+	AI_Output			(self, other, "DIA_Raoul_GotTrollFurBack_01_01"); //D'accordo. Sai come vanno le cose qui attorno, non Ã¨ vero? Dunque calmati.
 	MIS_Raoul_DoesntPayTrollFur = LOG_SUCCESS;
 	AI_StopProcessInfos (self);
 };
@@ -702,7 +702,7 @@ instance DIA_Raoul_Ship		(C_INFO)
 	condition	 = 	DIA_Raoul_Ship_Condition;
 	information	 = 	DIA_Raoul_Ship_Info;
 
-	description	 = 	"TI piacerebbe una crociera sull’oceano lontano da qui?";
+	description	 = 	"TI piacerebbe una crociera sullâ€™oceano lontano da qui?";
 };
 
 func int DIA_Raoul_Ship_Condition ()
@@ -718,9 +718,9 @@ func void DIA_Raoul_Ship_Info ()
 {
 	AI_Output			(other, self, "DIA_Raoul_Ship_15_00"); //Ti piacerebbe una bella crociera sull'oceano lontano da qui?
 	AI_Output			(self, other, "DIA_Raoul_Ship_01_01"); //Cosa stai architettando? Vuoi forse impadronirti della nave dei paladini? (ride)
-	AI_Output			(other, self, "DIA_Raoul_Ship_15_02"); //E se così fosse?
+	AI_Output			(other, self, "DIA_Raoul_Ship_15_02"); //E se cosÃ¬ fosse?
 	AI_Output			(self, other, "DIA_Raoul_Ship_01_03"); //(serio) Sei completamente pazzo. No, grazie. Non fa per me.
-	AI_Output			(self, other, "DIA_Raoul_Ship_01_04"); //Non vedo nessun motivo per lasciare Khorinis. Che io guadagni il mio pasto qui o sulla terraferma, è lo stesso per me.
+	AI_Output			(self, other, "DIA_Raoul_Ship_01_04"); //Non vedo nessun motivo per lasciare Khorinis. Che io guadagni il mio pasto qui o sulla terraferma, Ã¨ lo stesso per me.
 	AI_Output			(self, other, "DIA_Raoul_Ship_01_05"); //Trovati qualcun altro.
 
 	if ((Npc_IsDead(Torlof))== FALSE)

@@ -42,10 +42,10 @@ FUNC INT DIA_Sengrath_Hello_Condition()
 FUNC VOID DIA_Sengrath_Hello_Info()
 {	
 	AI_Output (self ,other,"DIA_Sengrath_Hello_03_00"); //Lo sapevo! Sapevo che qualcuno ci sarebbe riuscito!
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Se giunto attraverso il passo? Il nostro messaggero Ë dunque riuscito a passare?
-	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //No, il vostro messaggero non Ë riuscito a passare. Sono venuto per ordine di Lord Hagen.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_01"); //Se giunto attraverso il passo? Il nostro messaggero √® dunque riuscito a passare?
+	AI_Output (other ,self,"DIA_Sengrath_Hello_15_02"); //No, il vostro messaggero non √® riuscito a passare. Sono venuto per ordine di Lord Hagen.
 	AI_Output (self ,other,"DIA_Sengrath_Hello_03_03"); //(borbottando) Maledetti orchi...
-	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Beh, il comandante Garond vorr‡ certamente parlare con te. Lo troverai nel grosso edificio sorvegliato da due cavalieri.
+	AI_Output (self ,other,"DIA_Sengrath_Hello_03_04"); //Beh, il comandante Garond vorr√† certamente parlare con te. Lo troverai nel grosso edificio sorvegliato da due cavalieri.
 };
 // ************************************************************
 // 			  	Equipment 
@@ -67,7 +67,7 @@ FUNC INT DIA_Sengrath_Equipment_Condition()
 FUNC VOID DIA_Sengrath_Equipment_Info()
 {	
 	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_00"); //Dove posso trovare dell'equipaggiamento, qui?
-	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Tandor si occupa delle armi. Engor il dispensiere Ë responsabile per tutto il resto.
+	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_01"); //Tandor si occupa delle armi. Engor il dispensiere √® responsabile per tutto il resto.
 	AI_Output (other ,self,"DIA_Sengrath_Equipment_15_02"); //E per i rifornimenti magici?
 	AI_Output (self ,other,"DIA_Sengrath_Equipment_03_03"); //Siamo equipaggiati con pergamene magiche. Se te ne serve qualcuna, fammelo sapere.
 	
@@ -84,7 +84,7 @@ INSTANCE DIA_Sengrath_Perm (C_INFO)
 	condition	= DIA_Sengrath_Perm_Condition;
 	information	= DIA_Sengrath_Perm_Info;
 	permanent	= FALSE;
-	description = "Chi puÚ insegnarmi qualcosa, qui?";
+	description = "Chi pu√≤ insegnarmi qualcosa, qui?";
 };                       
 
 FUNC INT DIA_Sengrath_Perm_Condition()
@@ -93,16 +93,16 @@ FUNC INT DIA_Sengrath_Perm_Condition()
 };
 FUNC VOID DIA_Sengrath_Perm_Info()
 {	
-	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Chi puÚ insegnarmi qualcosa, qui?
+	AI_Output (other ,self,"DIA_Sengrath_Perm_15_00"); //Chi pu√≤ insegnarmi qualcosa, qui?
 	
 	if (other.guild == GIL_KDF)
 	&& (Kapitel == 2)
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Parla con Milten, Ë l'unico mago qui.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_01"); //Parla con Milten, √® l'unico mago qui.
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Chiedi a Keroloth. Allena i ragazzi nel combattimento con la spada. Forse insegner‡ qualcosa anche a te.
+		AI_Output (self ,other,"DIA_Sengrath_Perm_03_02"); //Chiedi a Keroloth. Allena i ragazzi nel combattimento con la spada. Forse insegner√† qualcosa anche a te.
 		
 		Log_CreateTopic (TOPIC_Teacher_OC,LOG_NOTE);
 		B_LogEntry (TOPIC_Teacher_OC,"Keroloth allena i guerrieri nel castello.");

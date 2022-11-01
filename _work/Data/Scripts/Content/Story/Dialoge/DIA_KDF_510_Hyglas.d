@@ -45,8 +45,8 @@ func int DIA_Hyglas_Feuer_Condition ()
 func void DIA_Hyglas_Feuer_Info ()
 {
 	AI_Output (other, self, "DIA_Hyglas_Feuer_15_00"); //Voglio sottopormi alla Prova del Fuoco.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //La Prova del Fuoco appartiene al passato ed Ë stata cancellata ormai da parecchi anni.
-	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //Quello che mi stai chiedendo Ë troppo pericoloso, dunque toglitelo dalla testa.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_01"); //La Prova del Fuoco appartiene al passato ed √® stata cancellata ormai da parecchi anni.
+	AI_Output (self, other, "DIA_Hyglas_Feuer_14_02"); //Quello che mi stai chiedendo √® troppo pericoloso, dunque toglitelo dalla testa.
 };    
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -74,7 +74,7 @@ func void DIA_Hyglas_Hallo_Info ()
 	if (other.guild == GIL_NOV)
 	{
 		AI_Output (self, other, "DIA_Hyglas_Hallo_14_01"); //Dunque padre Parlan ti ha dato il permesso di studiare i testi sacri?
-		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //Allora datti da fare. Studia, cosÏ che tu possa allargare i tuoi orizzonti grazie alle scritture.
+		AI_Output (self, other, "DIA_Hyglas_Hallo_14_02"); //Allora datti da fare. Studia, cos√¨ che tu possa allargare i tuoi orizzonti grazie alle scritture.
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -96,13 +96,13 @@ func int DIA_Hyglas_JOB_Condition ()
 func void DIA_Hyglas_JOB_Info ()
 {
 	AI_Output (other, self, "DIA_Hyglas_JOB_15_00"); //Cosa studi, maestro?
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //La mia ricerca Ë concentrata sul fuoco, il potere di Innos.
-	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //» il suo dono e al tempo stesso un'arma potente e io creo rune contenenti questo potere.
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_01"); //La mia ricerca √® concentrata sul fuoco, il potere di Innos.
+	AI_Output (self, other, "DIA_Hyglas_JOB_14_02"); //√à il suo dono e al tempo stesso un'arma potente e io creo rune contenenti questo potere.
 	
 	if (other.guild == GIL_NOV)
 	{
 		AI_Output (other, self, "DIA_Hyglas_JOB_15_03"); //Davvero interessante. Puoi insegnarmelo?
-		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //» Innos che conferisce la magia. Solo ai suoi servi, i maghi del fuoco, Ë permesso imparare come usare questo potere.
+		AI_Output (self, other, "DIA_Hyglas_JOB_14_04"); //√à Innos che conferisce la magia. Solo ai suoi servi, i maghi del fuoco, √® permesso imparare come usare questo potere.
 	};
 };    
 ///////////////////////////////////////////////////////////////////////
@@ -130,9 +130,9 @@ func void DIA_Hyglas_CONTEST_Info ()
 	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_01"); //E ora vuoi che io ti insegni la formula?
 	AI_Output (other, self, "DIA_Hyglas_CONTEST_15_02"); //Altrimenti non so come potrei farla.
 	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_03"); //Mmmh...
-	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //Díaccordo, ti insegnerÚ la formula. Ma prima devi procurarmi gli ingredienti necessari.
+	AI_Output (self, other, "DIA_Hyglas_CONTEST_14_04"); //D‚Äôaccordo, ti insegner√≤ la formula. Ma prima devi procurarmi gli ingredienti necessari.
 	
-	B_LogEntry (TOPIC_Rune,"Hyglas Ë disposto a insegnarmi la formula per la runa della freccia infuocata una volta che avrÚ tutti gli ingredienti.");
+	B_LogEntry (TOPIC_Rune,"Hyglas √® disposto a insegnarmi la formula per la runa della freccia infuocata una volta che avr√≤ tutti gli ingredienti.");
 };	
 ///////////////////////////////////////////////////////////////////////
 //	Info FIREBOLT
@@ -158,7 +158,7 @@ func int DIA_Hyglas_FIREBOLT_Condition ()
 func void DIA_Hyglas_FIREBOLT_Info ()
 {
 	AI_Output (other, self, "DIA_Hyglas_FIREBOLT_15_00"); //Quali ingredienti mi occorrono per la runa freccia di fuoco?
-	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //Leggi, Ë riportato nei libri.
+	AI_Output (self, other, "DIA_Hyglas_FIREBOLT_14_01"); //Leggi, √® riportato nei libri.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TALENT_FIREBOLT
@@ -191,7 +191,7 @@ func void DIA_Hyglas_TALENT_FIREBOLT_Info ()
 	if (B_TeachPlayerTalentRunes (self, other, SPL_Firebolt))	
 	{
 		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_01"); //Per creare una runa freccia di fuoco devi unire lo zolfo con la runa al tavolo delle rune.
-		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //Il potere dell'incantesimo freccia infuocata verr‡ trasmesso alla runa, e tu possiederai uno strumento di Innos.
+		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_02"); //Il potere dell'incantesimo freccia infuocata verr√† trasmesso alla runa, e tu possiederai uno strumento di Innos.
 		AI_Output (self, other, "DIA_Hyglas_TALENT_FIREBOLT_14_03"); //Dunque, una volta che hai tutti gli ingredienti, vai al tavolo delle rune e creati quella che ti serve.
 	};
 };
@@ -246,7 +246,7 @@ func int DIA_Hyglas_GOTRUNE_Condition ()
 func void DIA_Hyglas_GOTRUNE_Info ()
 {
 	AI_Output (other, self, "DIA_Hyglas_GOTRUNE_15_00"); //Ho creato la runa.
-	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //Bene bene. Sembra tu abbia superato questa prova. Dopo tutto non Ë stato cosÏ difficile.
+	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_01"); //Bene bene. Sembra tu abbia superato questa prova. Dopo tutto non √® stato cos√¨ difficile.
 	AI_Output (self, other, "DIA_Hyglas_GOTRUNE_14_02"); //Ora vai da Ulthar e mostragli il tuo lavoro.
 	
 	B_LogEntry (TOPIC_Rune,"Ho creato la runa della freccia infuocata."); 
@@ -416,7 +416,7 @@ INSTANCE DIA_Hyglas_BringBook   (C_INFO)
 	condition   = DIA_Hyglas_BringBook_Condition;
 	information = DIA_Hyglas_BringBook_Info;
 	permanent   = FALSE;
-	description = "Qualche novit‡?";
+	description = "Qualche novit√†?";
 };
 FUNC INT DIA_Hyglas_BringBook_Condition()
 {
@@ -429,25 +429,25 @@ FUNC INT DIA_Hyglas_BringBook_Condition()
 };
 FUNC VOID DIA_Hyglas_BringBook_Info()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Qualche novit‡?
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Mmmh, sÏ. Beh, probabilmente ti sarai accorto di quegli individui vestiti di nero.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_00"); //Qualche novit√†?
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_01"); //Mmmh, s√¨. Beh, probabilmente ti sarai accorto di quegli individui vestiti di nero.
 	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_02"); //Li ho incontrati.
 	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_03"); //Questa cosa ci porta al nocciolo della faccenda. Attualmente, stiamo studiando una costellazione di stelle molto rara.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Per essere pi˘ precisi, il segno del bue ora si trova in corrispondenza diretta con quello del guerriero. Suppongo tu sappia cosa significhi.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_04"); //Per essere pi√π precisi, il segno del bue ora si trova in corrispondenza diretta con quello del guerriero. Suppongo tu sappia cosa significhi.
 	AI_Output (other,self ,"DIA_Hyglas_BringBook_15_05"); //Mmmh. Beh, a dire il vero...
 	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_06"); //Capisco. Beh, ora non posso spiegarti tutta la storia per filo e per segno, ma in definitiva significa grandi cambiamenti all'orizzonte. E io non amo i cambiamenti.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //PerciÚ voglio che tu mi recuperi un libro in citt‡. Il titolo Ë 'Il potere divino delle stelle'. Potresti dover girare un po' per trovarlo, ma sono sicuro che alla fine ce la farai.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_14_07"); //Perci√≤ voglio che tu mi recuperi un libro in citt√†. Il titolo √® 'Il potere divino delle stelle'. Potresti dover girare un po' per trovarlo, ma sono sicuro che alla fine ce la farai.
 	
 	Info_ClearChoices (DIA_Hyglas_BringBook);
 	Info_AddChoice (DIA_Hyglas_BringBook,"Prendi il libro da solo.",DIA_Hyglas_BringBook_GetItYourself);
 	Info_AddChoice (DIA_Hyglas_BringBook,"Cosa ci guadagno io?",DIA_Hyglas_BringBook_GetForIt);
-	Info_AddChoice (DIA_Hyglas_BringBook,"VedrÚ se riesco a trovarlo.",DIA_Hyglas_BringBook_Yes);
+	Info_AddChoice (DIA_Hyglas_BringBook,"Vedr√≤ se riesco a trovarlo.",DIA_Hyglas_BringBook_Yes);
 };
 
 FUNC VOID DIA_Hyglas_BringBook_GetItYourself()
 {
 	AI_Output (other,self ,"DIA_Hyglas_BringBook_GetItYourself_15_00"); //Prendi il libro da solo.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //Come osi rivolgerti a me con quel tono? Il tuo comportamento non Ë rispettoso della mia persona.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_01"); //Come osi rivolgerti a me con quel tono? Il tuo comportamento non √® rispettoso della mia persona.
 	AI_Output (self ,other,"DIA_Hyglas_BringBook_GetItYourself_14_02"); //Sparisci dalla mia vista e rifletti sul tuo comportamento.
 	
 	MIS_HyglasBringBook = LOG_OBSOLETE;
@@ -467,9 +467,9 @@ FUNC VOID DIA_Hyglas_BringBook_GetForIt()
 
 FUNC VOID DIA_Hyglas_BringBook_Yes()
 {
-	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //VedrÚ se riesco a trovarlo.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //CosÏ va bene, ora posso dedicarmi ad altro.
-	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //Ma non metterci troppo. Temo che non abbiamo pi˘ molto tempo.
+	AI_Output (other,self ,"DIA_Hyglas_BringBook_Yes_15_00"); //Vedr√≤ se riesco a trovarlo.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_01"); //Cos√¨ va bene, ora posso dedicarmi ad altro.
+	AI_Output (self ,other,"DIA_Hyglas_BringBook_Yes_14_02"); //Ma non metterci troppo. Temo che non abbiamo pi√π molto tempo.
 	
 	MIS_HyglasBringBook = LOG_RUNNING;
 	
@@ -477,7 +477,7 @@ FUNC VOID DIA_Hyglas_BringBook_Yes()
 	
 	Log_CreateTopic (TOPIC_HyglasBringBook,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HyglasBringBook,LOG_RUNNING);
-	B_LogEntry (TOPIC_HyglasBringBook,"Hyglas vuole che gli porti il libro 'Il potere divino delle stelle'. Devo cercarlo tra i mercanti della citt‡.");
+	B_LogEntry (TOPIC_HyglasBringBook,"Hyglas vuole che gli porti il libro 'Il potere divino delle stelle'. Devo cercarlo tra i mercanti della citt√†.");
 };
 
 //*********************************************************************
@@ -511,7 +511,7 @@ FUNC VOID DIA_Hyglas_HaveBook_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //Vedo che alla fine hai cambiato idea. Molto bene. Dov'Ë il libro?
+		AI_Output (self ,other,"DIA_Hyglas_HaveBook_14_02"); //Vedo che alla fine hai cambiato idea. Molto bene. Dov'√® il libro?
 	};		
 		
 	B_GiveInvItems (other,self,ItWr_Astronomy_Mis,1);
@@ -581,7 +581,7 @@ FUNC VOID DIA_Hyglas_Kap4_PERM_Info()
 	{
 		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_01"); //Beh, non ne sono proprio sicuro, ma la costellazione attuale sembra indicare molti pericoli.
 		AI_Output (other,self ,"DIA_Hyglas_Kap4_PERM_15_02"); //Che genere di pericoli?
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //La struttura fra i mondi sembra essere molto debole. Per crearvi un varco Ë sufficiente solo una piccola parte dell'energia altrimenti necessaria.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_03"); //La struttura fra i mondi sembra essere molto debole. Per crearvi un varco √® sufficiente solo una piccola parte dell'energia altrimenti necessaria.
 		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_04"); //I demoni potrebbero usare quei portali per entrare nel nostro mondo senza incontrare alcuna resistenza.
 		
 		Hyglas_SendsToKarras = TRUE;
@@ -592,7 +592,7 @@ FUNC VOID DIA_Hyglas_Kap4_PERM_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //Ti ho gi‡ detto che sto conducendo ancora delle ricerche, ma ovviamente ci vorr‡ pi˘ tempo se non dispongo del materiale necessario.
+		AI_Output (self ,other,"DIA_Hyglas_Kap4_PERM_14_06"); //Ti ho gi√† detto che sto conducendo ancora delle ricerche, ma ovviamente ci vorr√† pi√π tempo se non dispongo del materiale necessario.
 	};
 	
 };

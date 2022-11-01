@@ -45,15 +45,15 @@ func void DIA_Grom_HALLO_Info ()
 	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah, una faccia nuova. Sono molto occupato, per cui dimmi cosa ti serve.
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
-	Info_AddChoice	(DIA_Grom_HALLO, "Cosa c’è di interessante da vedere, qui?", DIA_Grom_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Grom_HALLO, "Cosa câ€™Ã¨ di interessante da vedere, qui?", DIA_Grom_HALLO_waszusehen );
 	Info_AddChoice	(DIA_Grom_HALLO, "Cosa stai facendo, qui?", DIA_Grom_HALLO_was );
 };
 
 func void DIA_Grom_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Cosa c’è di interessante da vedere, qui?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Interessante è la parola giusta. Se ti addentri nel bosco, ti imbatterai in alcuni individui davvero malvagi.
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Sono alti circa 3 metri, pelosi e di pessimo umore, dunque non andare lì a meno che tu non sia abbastanza forte da affrontarli.
+	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Cosa câ€™Ã¨ di interessante da vedere, qui?
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Interessante Ã¨ la parola giusta. Se ti addentri nel bosco, ti imbatterai in alcuni individui davvero malvagi.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Sono alti circa 3 metri, pelosi e di pessimo umore, dunque non andare lÃ¬ a meno che tu non sia abbastanza forte da affrontarli.
 };
 
 func void DIA_Grom_HALLO_was ()
@@ -94,10 +94,10 @@ FUNC VOID DIA_Grom_AskTeacher_Info()
 {
 	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Puoi insegnarmi qualcosa sulla caccia?
 	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Certamente. Ma prima procurami qualcosa di decente da mangiare. Sto morendo di fame.
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Voglio una bottiglia di latte, una pagnotta e un prosciutto, dopodiché ti insegnerò quello che vuoi.
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Voglio una bottiglia di latte, una pagnotta e un prosciutto, dopodichÃ© ti insegnerÃ² quello che vuoi.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
-	B_LogEntry (TOPIC_GromAskTeacher,"Grom il cacciatore mi insegnerà quello che sa se gli porterò una bottiglia di latte, del pane e del prosciutto."); 
+	B_LogEntry (TOPIC_GromAskTeacher,"Grom il cacciatore mi insegnerÃ  quello che sa se gli porterÃ² una bottiglia di latte, del pane e del prosciutto."); 
 };
 
 
@@ -191,12 +191,12 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Corno di mostro d’ombra",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Corno di mostro dâ€™ombra",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Non posso insegnarti nulla che tu non sappia già.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Non posso insegnarti nulla che tu non sappia giÃ .
 		};
 };
 
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Puoi rimuovere il cuore dell'animale con un'abile incisione sul torace. Ma di solito è un'operazione che vale la pena eseguire solo sugli animali speciali o sulle creature magiche.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Puoi rimuovere il cuore dell'animale con un'abile incisione sul torace. Ma di solito Ã¨ un'operazione che vale la pena eseguire solo sugli animali speciali o sulle creature magiche.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Le mandibole di uno scavaragno o di un razziatore dei campi devono essere rimosse con una leva di metallo robusta. Esse sono collocate molto in profondità nel teschio dell'animale.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Le mandibole di uno scavaragno o di un razziatore dei campi devono essere rimosse con una leva di metallo robusta. Esse sono collocate molto in profonditÃ  nel teschio dell'animale.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

@@ -64,19 +64,19 @@ func void DIA_Harad_Arbeit_Info ()
 {
 	AI_Output (other, self, "DIA_Harad_Arbeit_15_00"); //Sto cercando del lavoro.
 	AI_Output (self, other, "DIA_Harad_Arbeit_12_01"); //Mmmh, potrebbe servirmi un nuovo apprendista.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_02"); //Brian terminerà presto il suo apprendistato, e poi lascerà la città.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_02"); //Brian terminerÃ  presto il suo apprendistato, e poi lascerÃ  la cittÃ .
 	AI_Output (self, other, "DIA_Harad_Arbeit_12_03"); //Sei in grado di fare qualcosa?
 	AI_Output (other, self, "DIA_Harad_Arbeit_15_04"); //Se intendi se conosco il lavoro del fabbro...
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_05"); //No. Non è quello che intendo.
-	AI_Output (self, other, "DIA_Harad_Arbeit_12_06"); //Prima o poi, gli orchi arriveranno ad assediare la città, e allora i soli uomini che conteranno saranno quelli in grado di difendere la città.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_05"); //No. Non Ã¨ quello che intendo.
+	AI_Output (self, other, "DIA_Harad_Arbeit_12_06"); //Prima o poi, gli orchi arriveranno ad assediare la cittÃ , e allora i soli uomini che conteranno saranno quelli in grado di difendere la cittÃ .
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Harad_Arbeit_12_07"); //E io non prenderò come apprendista qualcuno che mi disonori scappando dalla città insieme alle donne e ai buoni a nulla, invece di resistere qui con gli altri uomini.
+		AI_Output (self, other, "DIA_Harad_Arbeit_12_07"); //E io non prenderÃ² come apprendista qualcuno che mi disonori scappando dalla cittÃ  insieme alle donne e ai buoni a nulla, invece di resistere qui con gli altri uomini.
 	};
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling,"Se riesco a convincere Harad che non sono un fannullone, mi accetterà come apprendista.");
+	B_LogEntry (TOPIC_Lehrling,"Se riesco a convincere Harad che non sono un fannullone, mi accetterÃ  come apprendista.");
 };
 
 // *****************************************************
@@ -104,14 +104,14 @@ func void DIA_Harad_Taugenichts_Info ()
 	AI_Output (self, other, "DIA_Harad_Taugenichts_12_01"); //Sono parole grosse. Puoi dimostrarle con grandi gesta?
 	AI_Output (other, self, "DIA_Harad_Taugenichts_15_02"); //Dove vuoi arrivare?
 	AI_Output (self, other, "DIA_Harad_Taugenichts_12_03"); //Portami un'arma degli orchi.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_04"); //Degli orchi sono stati avvistati vicino alla città. Con un po' di fortuna, non dovrai cercare a lungo.
-	AI_Output (self, other, "DIA_Harad_Taugenichts_12_05"); //Se riuscirai ad abbatterne uno, ti prenderò come apprendista.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_04"); //Degli orchi sono stati avvistati vicino alla cittÃ . Con un po' di fortuna, non dovrai cercare a lungo.
+	AI_Output (self, other, "DIA_Harad_Taugenichts_12_05"); //Se riuscirai ad abbatterne uno, ti prenderÃ² come apprendista.
 	AI_Output (self, other, "DIA_Harad_Taugenichts_12_06"); //Sempre che gli altri maestri siano d'accordo.
 	
 	MIS_Harad_Orc = LOG_RUNNING;
 	Log_CreateTopic(TOPIC_HaradOrk,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_HaradOrk,LOG_RUNNING);
-	B_LogEntry (TOPIC_HaradOrk,"C'è un orco fuori dalla città. Harad il fabbro vuole che lo uccida. Un'arma orchesca sarà la prova.");
+	B_LogEntry (TOPIC_HaradOrk,"C'Ã¨ un orco fuori dalla cittÃ . Harad il fabbro vuole che lo uccida. Un'arma orchesca sarÃ  la prova.");
 };
 
 // *****************************************************
@@ -124,7 +124,7 @@ instance DIA_Harad_OrcRunning (C_INFO)
 	condition	= DIA_Harad_OrcRunning_Condition;
 	information	= DIA_Harad_OrcRunning_Info;
 	permanent   = FALSE;
-	description = "Parliamo di nuovo della questione dell’orco...";
+	description = "Parliamo di nuovo della questione dellâ€™orco...";
 };
 func int DIA_Harad_OrcRunning_Condition ()
 {
@@ -136,26 +136,26 @@ func int DIA_Harad_OrcRunning_Condition ()
 };
 func void DIA_Harad_OrcRunning_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_15_00"); //Parliamo di nuovo della questione sull’orco...
+	AI_Output (other, self, "DIA_Harad_OrcRunning_15_00"); //Parliamo di nuovo della questione sullâ€™orco...
 	AI_Output (self, other, "DIA_Harad_OrcRunning_12_01"); //(brusco) Cosa?
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);	
-	Info_AddChoice (DIA_Harad_OrcRunning, "Il tuo orco è spacciato!", DIA_Harad_OrcRunning_Done);
-	Info_AddChoice (DIA_Harad_OrcRunning, "Un orco è un avversario maledettamente ostico...", DIA_Harad_OrcRunning_TooHard);
+	Info_AddChoice (DIA_Harad_OrcRunning, "Il tuo orco Ã¨ spacciato!", DIA_Harad_OrcRunning_Done);
+	Info_AddChoice (DIA_Harad_OrcRunning, "Un orco Ã¨ un avversario maledettamente ostico...", DIA_Harad_OrcRunning_TooHard);
 
 	//AI_Output (self, other, "DIA_Harad_OrcRunning_12_02"); //Ah, ich verstehe schon. Du hast Wichtigeres zu tun. Schon in Ordnung, die Sache hat sich erledigt.
 };
 
 func void DIA_Harad_OrcRunning_TooHard()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_00"); //Ma un orco è un avversario dannatamente tosto...
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_01"); //Mmmh... guardandoti bene, potresti aver ragione. Non hai molta carne su quelle ossa. Ma questo si può cambiare.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_00"); //Ma un orco Ã¨ un avversario dannatamente tosto...
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_01"); //Mmmh... guardandoti bene, potresti aver ragione. Non hai molta carne su quelle ossa. Ma questo si puÃ² cambiare.
 	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_02"); //Ad ogni modo, dovrai dimostrarmi che possiedi il coraggio necessario per combattere.
-	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_03"); //Non potrebbe essere qualcosa di un pochino più piccolo?
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_04"); //Mmmh... (riflettendo) Hakon, il mercante d'armi del mercato, mi ha detto che è stato attaccato dai briganti qualche giorno fa.
+	AI_Output (other, self, "DIA_Harad_OrcRunning_TooHard_15_03"); //Non potrebbe essere qualcosa di un pochino piÃ¹ piccolo?
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_04"); //Mmmh... (riflettendo) Hakon, il mercante d'armi del mercato, mi ha detto che Ã¨ stato attaccato dai briganti qualche giorno fa.
 	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_05"); //Si dice che quei maledetti si aggirino nella zona fuori dal cancello est.
 	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_06"); //Quei codardi non dovrebbero essere terribilmente svegli.
-	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_07"); //Trova quei bastardi! Ogni singolo brigante. Allora saprò che potrai esserci utile qui in città.
+	AI_Output (self, other, "DIA_Harad_OrcRunning_TooHard_12_07"); //Trova quei bastardi! Ogni singolo brigante. Allora saprÃ² che potrai esserci utile qui in cittÃ .
 	
 	Harad_HakonMission = TRUE;
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
@@ -163,11 +163,11 @@ func void DIA_Harad_OrcRunning_TooHard()
 	
 	if (MIS_HakonBandits != LOG_RUNNING)
 	{
-		B_LogEntry (TOPIC_Lehrling, "Harad mi ha raccontato dei briganti che hanno rapinato il mercante Hakon fuori città. Se riesco a trovarli, si convincerà che sono in gamba. Dovrei parlare con Hakon, forse sa qualcosa di più su dove possano trovarsi questi briganti.");
+		B_LogEntry (TOPIC_Lehrling, "Harad mi ha raccontato dei briganti che hanno rapinato il mercante Hakon fuori cittÃ . Se riesco a trovarli, si convincerÃ  che sono in gamba. Dovrei parlare con Hakon, forse sa qualcosa di piÃ¹ su dove possano trovarsi questi briganti.");
 	}
 	else
 	{
-		B_LogEntry (TOPIC_Lehrling, "Harad mi ha raccontato dei briganti che hanno rapinato il mercante Hakon fuori città. Se riesco a trovarli, si convincerà che sono in gamba.");
+		B_LogEntry (TOPIC_Lehrling, "Harad mi ha raccontato dei briganti che hanno rapinato il mercante Hakon fuori cittÃ . Se riesco a trovarli, si convincerÃ  che sono in gamba.");
 	};
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);
@@ -175,7 +175,7 @@ func void DIA_Harad_OrcRunning_TooHard()
 
 func void DIA_Harad_OrcRunning_Done()
 {
-	AI_Output (other, self, "DIA_Harad_OrcRunning_Done_15_00"); //Il tuo orco è spacciato!
+	AI_Output (other, self, "DIA_Harad_OrcRunning_Done_15_00"); //Il tuo orco Ã¨ spacciato!
 	AI_Output (self, other, "DIA_Harad_OrcRunning_Done_12_01"); //Bene! Allora smettila di sprecare fiato e lascia che siano le tue gesta a parlare al posto tuo.
 	
 	Info_ClearChoices (DIA_Harad_OrcRunning);
@@ -191,7 +191,7 @@ instance DIA_Harad_OrcSuccess (C_INFO)
 	condition	= DIA_Harad_OrcSuccess_Condition;
 	information	= DIA_Harad_OrcSuccess_Info;
 	permanent   = FALSE;
-	description = "Ho l’arma dell’orco che volevi.";
+	description = "Ho lâ€™arma dellâ€™orco che volevi.";
 };
 func int DIA_Harad_OrcSuccess_Condition ()
 {
@@ -209,7 +209,7 @@ func int DIA_Harad_OrcSuccess_Condition ()
 };
 func void DIA_Harad_OrcSuccess_Info ()
 {
-	AI_Output (other, self, "DIA_Harad_OrcSuccess_15_00"); //Ho l’arma dell’orco che volevi.
+	AI_Output (other, self, "DIA_Harad_OrcSuccess_15_00"); //Ho lâ€™arma dellâ€™orco che volevi.
 	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_01"); //Fammi vedere...
 	
 		if (Npc_HasItems(other, ItMw_2H_OrcAxe_01) > 0)
@@ -238,7 +238,7 @@ func void DIA_Harad_OrcSuccess_Info ()
 		AI_Output (self, other, "DIA_Harad_OrcSuccess_12_02"); //Ce l'hai fatta veramente? Bravo ragazzo!
 	};
 	
-	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_03"); //È da parecchio che non mi trovavo tra le mani un'arma del genere, ero un soldato ai tempi della Guerra degli Orchi.
+	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_03"); //Ãˆ da parecchio che non mi trovavo tra le mani un'arma del genere, ero un soldato ai tempi della Guerra degli Orchi.
 	AI_Output (self, other, "DIA_Harad_OrcSuccess_12_04"); //Quelli erano tempi duri, te lo dico io.
 	
 	if (Player_IsApprentice == APP_Harad)
@@ -257,7 +257,7 @@ func void DIA_Harad_OrcSuccess_Info ()
 	
 	MIS_Harad_Orc = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Harad_Orc);
-	B_LogEntry (Topic_Lehrling,"Harad mi accetterà come apprendista se riuscirò ad avere l'approvazione degli altri mastri.");
+	B_LogEntry (Topic_Lehrling,"Harad mi accetterÃ  come apprendista se riuscirÃ² ad avere l'approvazione degli altri mastri.");
 };
 
 // *****************************************************
@@ -345,7 +345,7 @@ func void DIA_Harad_LEHRLING_Info ()
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_12"); //Mi ha chiesto di dargli almeno la possibilità di cercare di interessarti alla sua professione.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_12"); //Mi ha chiesto di dargli almeno la possibilitÃ  di cercare di interessarti alla sua professione.
 				AI_Output (self, other,"DIA_Harad_LEHRLING_12_13"); //Dacci un'occhiata, puoi sempre decidere in seguito. A meno che tu voglia rinunciare al suo voto, si intende.
 			};
 		}
@@ -364,7 +364,7 @@ func void DIA_Harad_LEHRLING_Info ()
 			}
 			else
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_16"); //Constantino dice che sei accusato di un crimine qui in città, è vero?
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_16"); //Constantino dice che sei accusato di un crimine qui in cittÃ , Ã¨ vero?
 				AI_Output (self, other,"DIA_Harad_LEHRLING_12_17"); //In tal caso, dovresti sistemare la tua posizione immediatamente!
 			};
 		}
@@ -404,22 +404,22 @@ func void DIA_Harad_LEHRLING_Info ()
 			}
 			else // == 4
 			{
-				AI_Output (self, other,"DIA_Harad_LEHRLING_12_24"); //Questo significa che hai l'approvazione di quattro maestri. È abbastanza per essere accettato come apprendista.
+				AI_Output (self, other,"DIA_Harad_LEHRLING_12_24"); //Questo significa che hai l'approvazione di quattro maestri. Ãˆ abbastanza per essere accettato come apprendista.
 			};
 			
 			AI_Output (self, other,"DIA_Harad_LEHRLING_12_25"); //Sei pronto per iniziare il tuo apprendistato con me?
 			
 			Info_ClearChoices (DIA_Harad_LEHRLING);
-			Info_AddChoice (DIA_Harad_LEHRLING, "Bene... ci penserò su.", DIA_Harad_LEHRLING_Later);
+			Info_AddChoice (DIA_Harad_LEHRLING, "Bene... ci penserÃ² su.", DIA_Harad_LEHRLING_Later);
 			Info_AddChoice (DIA_Harad_LEHRLING, "Accetto!", DIA_Harad_LEHRLING_OK);
 		}
 		else // stimmen < 4
 		{
-			AI_Output (self, other,"DIA_Harad_LEHRLING_12_26"); //Hai bisogno dell'approvazione di almeno quattro maestri per essere accettato come apprendista nella parte bassa della città.
+			AI_Output (self, other,"DIA_Harad_LEHRLING_12_26"); //Hai bisogno dell'approvazione di almeno quattro maestri per essere accettato come apprendista nella parte bassa della cittÃ .
 			AI_Output (self, other,"DIA_Harad_LEHRLING_12_27"); //Dunque dovresti parlare con tutti quelli che non sono ancora convinti.
 		};
 	}
-	else //Mission nicht erfüllt
+	else //Mission nicht erfÃ¼llt
 	{
 		AI_Output (self, other,"DIA_Harad_LEHRLING_12_28"); //Non prima che tu mi abbia dimostrato che vali qualcosa.
 	};
@@ -428,17 +428,17 @@ func void DIA_Harad_LEHRLING_Info ()
 func void DIA_Harad_LEHRLING_OK()
 {
 	AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_00"); //Accetto!
-	AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_01"); //Bene! Ti insegnerò come forgiare una spada decente.
+	AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_01"); //Bene! Ti insegnerÃ² come forgiare una spada decente.
 	
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_02"); //So già farlo!
+		AI_Output (other, self, "DIA_Harad_LEHRLING_OK_15_02"); //So giÃ  farlo!
 		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_03"); //Bene, ancora meglio!
 	};
 	
 	if (other.attribute[ATR_STRENGTH] < (T_MED-30))
 	{
-		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_04"); //Oltre a quello, è ora che tu diventi un po' più forte. Mi sembri così sciupato!
+		AI_Output (self, other, "DIA_Harad_LEHRLING_OK_12_04"); //Oltre a quello, Ã¨ ora che tu diventi un po' piÃ¹ forte. Mi sembri cosÃ¬ sciupato!
 	};
 	Player_IsApprentice = APP_Harad;
 	Npc_ExchangeRoutine (Lothar, "START");
@@ -449,20 +449,20 @@ func void DIA_Harad_LEHRLING_OK()
 	Wld_AssignRoomToGuild ("schmied", GIL_NONE);
 	MIS_Apprentice = LOG_SUCCESS;
 	B_LogEntry (Topic_Bonus,"Harad mi ha accettato come apprendista: ora ho accesso ai quartieri alti.");
-	B_LogEntry (Topic_Bonus,"Harad comprerà le armi che forgio per un buon prezzo.");
+	B_LogEntry (Topic_Bonus,"Harad comprerÃ  le armi che forgio per un buon prezzo.");
 	
 	Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
 	B_GivePlayerXP (XP_Lehrling);
-	B_LogEntry (Topic_CityTeacher, "Harad può insegnarmi l'arte del fabbro. Inoltre, può aiutarmi a divenire più forte.");
+	B_LogEntry (Topic_CityTeacher, "Harad puÃ² insegnarmi l'arte del fabbro. Inoltre, puÃ² aiutarmi a divenire piÃ¹ forte.");
 	Info_ClearChoices (DIA_Harad_LEHRLING);
 };
 
 func void DIA_Harad_LEHRLING_Later()
 {
-	AI_Output (other, self, "DIA_Harad_LEHRLING_Later_15_00"); //Bene... ci penserò su.
+	AI_Output (other, self, "DIA_Harad_LEHRLING_Later_15_00"); //Bene... ci penserÃ² su.
 	if (!Npc_IsDead (Brian))
 	{
-		AI_Output (self, other, "DIA_Harad_LEHRLING_Later_12_01"); //Fai con calma. Brian starà qui ancora per un po'.
+		AI_Output (self, other, "DIA_Harad_LEHRLING_Later_12_01"); //Fai con calma. Brian starÃ  qui ancora per un po'.
 	};
 	Info_ClearChoices (DIA_Harad_LEHRLING);
 };
@@ -505,23 +505,23 @@ func void DIA_Harad_Zustimmung_Info ()
 		{
 			AI_Output (self, other, "DIA_Harad_Zustimmung_12_02"); //Hakon mi ha raccontato di come ti sei occupato dei briganti.
 		};
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_03"); //Ti darò la mia approvazione.
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_03"); //Ti darÃ² la mia approvazione.
 		
 		if (DIA_Harad_Zustimmung_Permanent == FALSE)
 		{
 			B_GivePlayerXP (XP_Zustimmung);
 			DIA_Harad_Zustimmung_Permanent = TRUE;
 		};
-		B_LogEntry (Topic_Lehrling,"Harad darà la sua approvazione qualora dovessi fare l'apprendista da qualche parte.");
+		B_LogEntry (Topic_Lehrling,"Harad darÃ  la sua approvazione qualora dovessi fare l'apprendista da qualche parte.");
 		
 		if (!Npc_IsDead(Brian))
 		{
-			AI_Output (self, other, "DIA_Harad_Zustimmung_12_04"); //Brian starà qui ancora per un po'. Una persona forte per prendere il suo posto spunterà sicuramente fuori col tempo.
+			AI_Output (self, other, "DIA_Harad_Zustimmung_12_04"); //Brian starÃ  qui ancora per un po'. Una persona forte per prendere il suo posto spunterÃ  sicuramente fuori col tempo.
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Harad_Zustimmung_12_05"); //Per quanto riguarda gli altri maestri... Gli altri maestri potranno anche approvare, ma io ti darò la mia approvazione solamente quando mi avrai dimostrato che sei capace di fare qualcosa.
+		AI_Output (self, other, "DIA_Harad_Zustimmung_12_05"); //Per quanto riguarda gli altri maestri... Gli altri maestri potranno anche approvare, ma io ti darÃ² la mia approvazione solamente quando mi avrai dimostrato che sei capace di fare qualcosa.
 	};
 };
 
@@ -558,7 +558,7 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_MILKommentar == FALSE)
 	{
 		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_00"); //Sei nell'esercito ora? Sono fiero di te!
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_01"); //Fino a quando sarai nell'esercito, naturalmente, non mi aspetterò che tu adempia anche ai tuoi doveri di apprendista.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_01"); //Fino a quando sarai nell'esercito, naturalmente, non mi aspetterÃ² che tu adempia anche ai tuoi doveri di apprendista.
 		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_02"); //Ma se hai bisogno di qualcosa, puoi venire da me in qualsiasi momento.
 		Harad_MILKommentar = TRUE;
 	}
@@ -578,8 +578,8 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_StartGuild != GIL_KDF)
 	&& (Harad_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_05"); //Dunque sei entrato a far parte del monastero. Avrei preferito che tu fossi rimasto in città. Abbiamo bisogno di ogni uomo valido.
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_06"); //Ma se hai dovuto seguire la chiamata di Innos, non c'è altro da fare.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_05"); //Dunque sei entrato a far parte del monastero. Avrei preferito che tu fossi rimasto in cittÃ . Abbiamo bisogno di ogni uomo valido.
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_06"); //Ma se hai dovuto seguire la chiamata di Innos, non c'Ã¨ altro da fare.
 		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_07"); //Se hai bisogno di qualcosa, io sono qui per te.
 		Harad_INNOSKommentar = TRUE;
 	}
@@ -589,7 +589,7 @@ FUNC VOID DIA_Harad_AlsLehrling_Info()
 	&& (Harad_PALKommentar == FALSE)
 	&& (Harad_INNOSKommentar == FALSE)
 	{
-		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_08"); //È passato parecchio tempo dall'ultima volta che sei venuto qui. Dove sei stato, mmh?
+		AI_Output (self, other,"DIA_Harad_AlsLehrling_12_08"); //Ãˆ passato parecchio tempo dall'ultima volta che sei venuto qui. Dove sei stato, mmh?
 		Harad_Lehrling_Day = Wld_GetDay();
 	}
 	
@@ -622,7 +622,7 @@ func int DIA_Harad_Waffen_Condition ()
 func void DIA_Harad_Waffen_Info ()
 {
 	AI_Output (other, self, "DIA_Harad_Waffen_15_00"); //Vendi anche le armi?
-	AI_Output (self, other, "DIA_Harad_Waffen_12_01"); //Scordatelo. Tutto quello che produco è destinato ai paladini o all'esercito.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_01"); //Scordatelo. Tutto quello che produco Ã¨ destinato ai paladini o all'esercito.
 	AI_Output (self ,other, "DIA_Harad_Add_12_00"); //Ho un ordine di 100 spade da parte di Lord Hagen. Vuole equipaggiare la guardia cittadina.
 };
 
@@ -651,9 +651,9 @@ func void DIA_Harad_Aufgaben_Info ()
 	AI_Output (other, self, "DIA_Harad_Aufgaben_15_00"); //Quali sono i miei compiti come apprendista?
 	AI_Output (self, other, "DIA_Harad_Aufgaben_12_01"); //Tre ipotesi.
 	AI_Output (other, self, "DIA_Harad_Aufgaben_15_02"); //Forgiare, forgiare e forgiare?
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_03"); //Non sei così stupido come sembri. Pago per ogni lama. Se non lavori, niente soldi. È semplice.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_05"); //Inoltre, ti insegnerò tutto quello che dovrai sapere per fabbricare una spada semplice.
-	AI_Output (self, other, "DIA_Harad_Aufgaben_12_06"); //Forgiare le lame magiche è qualcosa riservato solamente ai fabbri più esperti e ti manca ancora molta strada per quello...
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_03"); //Non sei cosÃ¬ stupido come sembri. Pago per ogni lama. Se non lavori, niente soldi. Ãˆ semplice.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_05"); //Inoltre, ti insegnerÃ² tutto quello che dovrai sapere per fabbricare una spada semplice.
+	AI_Output (self, other, "DIA_Harad_Aufgaben_12_06"); //Forgiare le lame magiche Ã¨ qualcosa riservato solamente ai fabbri piÃ¹ esperti e ti manca ancora molta strada per quello...
 	AI_Output (self, other, "DIA_Harad_Aufgaben_12_07"); //Se ti serve un posto per dormire, puoi riposarti da qualche parte a casa mia. Tutto chiaro finora?
 };
 
@@ -703,11 +703,11 @@ func void DIA_Harad_SellBlades_Info ()
 		|| (Hlp_IsItem(equipWeap, ItMw_Rubinklinge) == TRUE)
 		|| (Hlp_IsItem(equipWeap, ItMw_ElBastardo) == TRUE)  
 		{
-			AI_Output (self, other, "DIA_Harad_SellBlades_12_01"); //Tutto quello che hai è l'arma al tuo fianco. Farai meglio a tenerla.
+			AI_Output (self, other, "DIA_Harad_SellBlades_12_01"); //Tutto quello che hai Ã¨ l'arma al tuo fianco. Farai meglio a tenerla.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Harad_SellBlades_12_04"); //Allora forgiane qualcuna! Accetterò solamente spade semplici.
+			AI_Output (self, other, "DIA_Harad_SellBlades_12_04"); //Allora forgiane qualcuna! AccetterÃ² solamente spade semplici.
 		};
 	}
 	else //(gesamt >= 1) - die verbeliebenden Klingen verkaufen ------
@@ -721,7 +721,7 @@ func void DIA_Harad_SellBlades_Info ()
 		Npc_RemoveInvItems (other, ItMw_ElBastardo, anzahl_ElBastardo);
 		
 				var string concatText;
-				concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben);		// "x Gegenstände gegeben"
+				concatText = ConcatStrings(IntToString(gesamt), PRINT_ItemsGegeben);		// "x GegenstÃ¤nde gegeben"
 				AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 				
 		AI_Output (self, other, "DIA_Harad_SellBlades_12_03"); //D'accordo, ecco la tua paga.
@@ -743,7 +743,7 @@ func void DIA_Harad_SellBlades_Info ()
 // ************************************************************
 func void B_Harad_TeachSmith()
 {
-	AI_Output (self, other, "DIA_Harad_TeachCommon_12_01"); //È abbastanza facile, ragazzo. Prendi un pezzo di acciaio grezzo e tienilo sul fuoco fino a quando non sarà incandescente.
+	AI_Output (self, other, "DIA_Harad_TeachCommon_12_01"); //Ãˆ abbastanza facile, ragazzo. Prendi un pezzo di acciaio grezzo e tienilo sul fuoco fino a quando non sarÃ  incandescente.
 	AI_Output (self, other, "DIA_Harad_TeachCommon_12_02"); //Poi martella la lama sull'incudine dandole la forma.
 };
 // ------------------------------------------------------------
@@ -816,7 +816,7 @@ func void DIA_Harad_TeachSmith_Common()
 	if B_TeachPlayerTalentSmith (self, other, WEAPON_Common)
 	{
 		B_Harad_TeachSmith();
-		AI_Output (self, other, "DIA_Harad_TeachCommon_12_03"); //Le tue prime spade non saranno dei capolavori, ma potrai imparare il resto più tardi.
+		AI_Output (self, other, "DIA_Harad_TeachCommon_12_03"); //Le tue prime spade non saranno dei capolavori, ma potrai imparare il resto piÃ¹ tardi.
 	};
 	
 	B_HaradSmithChoices();
@@ -872,7 +872,7 @@ INSTANCE DIA_Harad_TeachSTR (C_INFO)
 	condition	= DIA_Harad_TeachSTR_Condition;
 	information	= DIA_Harad_TeachSTR_Info;
 	permanent	= 1;
-	description = "Voglio diventare più forte!";
+	description = "Voglio diventare piÃ¹ forte!";
 };                       
 
 FUNC INT DIA_Harad_TeachSTR_Condition()
@@ -885,7 +885,7 @@ FUNC INT DIA_Harad_TeachSTR_Condition()
 
 FUNC VOID DIA_Harad_TeachSTR_Info()
 {	
-	AI_Output (other, self, "DIA_Harad_TeachSTR_15_00"); //Voglio diventare più forte!
+	AI_Output (other, self, "DIA_Harad_TeachSTR_15_00"); //Voglio diventare piÃ¹ forte!
 	
 	Harad_Merke_STR = other.attribute[ATR_STRENGTH];
 	
@@ -899,7 +899,7 @@ func void DIA_Harad_TeachSTR_BACK()
 {
 	if (Harad_Merke_STR < other.attribute[ATR_STRENGTH])
 	{
-		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_01"); //Hai già messo su un po' di muscoli.
+		AI_Output (self, other, "DIA_Harad_TeachSTR_BACK_12_01"); //Hai giÃ  messo su un po' di muscoli.
 	};
 
 	if (other.attribute[ATR_STRENGTH] < T_MED)
@@ -920,7 +920,7 @@ func void DIA_Harad_TeachSTR_1()
 	Info_AddChoice		(DIA_Harad_TeachSTR, B_BuildLearnString(PRINT_LearnSTR5			, B_GetLearnCostAttribute(other, ATR_STRENGTH)*5)		,DIA_Harad_TeachSTR_5);
 };
 
-// ------ 5 Stärke ------
+// ------ 5 StÃ¤rke ------
 func void DIA_Harad_TeachSTR_5()
 {
 	B_TeachAttributePoints (self, other, ATR_STRENGTH, 5, T_MED);
@@ -992,13 +992,13 @@ func int DIA_Harad_AboutErzklingen_Condition ()
 func void DIA_Harad_AboutErzklingen_Info ()
 {
 	AI_Output (other, self,"DIA_Harad_Add_15_06"); //Parlami ancora delle lame di metallo magiche!
-	AI_Output (self, other, "DIA_Harad_Waffen_12_02"); //Creare una lama magica è un processo veramente complesso e dispendioso, ma il risultato è una lama che è facile da maneggiare e praticamente indistruttibile.
-	AI_Output (self, other, "DIA_Harad_Waffen_12_03"); //La lama è certamente di buona qualità, ma mostrerà il tuo vero potere solo nelle mani di un paladino.
-	AI_Output (self, other, "DIA_Harad_Waffen_12_04"); //La spada di un paladino è consacrata da Innos. Come risultato, la lama magica diventa un'arma incantata che infligge danni incomparabili!
+	AI_Output (self, other, "DIA_Harad_Waffen_12_02"); //Creare una lama magica Ã¨ un processo veramente complesso e dispendioso, ma il risultato Ã¨ una lama che Ã¨ facile da maneggiare e praticamente indistruttibile.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_03"); //La lama Ã¨ certamente di buona qualitÃ , ma mostrerÃ  il tuo vero potere solo nelle mani di un paladino.
+	AI_Output (self, other, "DIA_Harad_Waffen_12_04"); //La spada di un paladino Ã¨ consacrata da Innos. Come risultato, la lama magica diventa un'arma incantata che infligge danni incomparabili!
 };
 
 // *****************************************************
-// 					Ich möchte eine Erzklinge kaufen
+// 					Ich mÃ¶chte eine Erzklinge kaufen
 // *****************************************************
 instance DIA_Harad_Erzklingen (C_INFO)
 {
@@ -1033,14 +1033,14 @@ func void DIA_Harad_Erzklingen_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Harad_Erzklingen_12_02"); //Voi paladini potete considerarvi fortunati a poter brandire delle lame così eccellenti.
+		AI_Output (self, other, "DIA_Harad_Erzklingen_12_02"); //Voi paladini potete considerarvi fortunati a poter brandire delle lame cosÃ¬ eccellenti.
 		AI_Output (self, other, "DIA_Harad_Erzklingen_12_03"); //Per decreto di Lord Hagen, posso venderti una sola arma magica.
 		AI_Output (self, other, "DIA_Harad_Erzklingen_12_04"); //Dunque, cosa ti posso offrire?
 		
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a due mani (2000 monete d’oro)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a una mano (2000 monete d’oro)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a due mani (2000 monete dâ€™oro)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a una mano (2000 monete dâ€™oro)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
@@ -1065,7 +1065,7 @@ FUNC VOID B_Harad_HaveFunWithYourSword ()
 
 FUNC VOID DIA_Harad_Erzklingen_2h()
 {
-	AI_Output (other,self ,"DIA_Harad_Erzklingen_2h_15_00"); //Prenderò la spada a due mani!
+	AI_Output (other,self ,"DIA_Harad_Erzklingen_2h_15_00"); //PrenderÃ² la spada a due mani!
 	
 	if (Npc_HasItems (other,ItMi_Gold) >= Value_Blessed_2H_1)
 	{
@@ -1080,14 +1080,14 @@ FUNC VOID DIA_Harad_Erzklingen_2h()
 		B_Harad_NotEnoughGold ();
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a due mani (2000 monete d’oro)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a una mano (2000 monete d’oro)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a due mani (2000 monete dâ€™oro)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a una mano (2000 monete dâ€™oro)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
 FUNC VOID DIA_Harad_Erzklingen_1h()
 {
-	AI_Output (other,self ,"DIA_Harad_Erzklingen_1h_15_00"); //Prenderò la spada a una mano!
+	AI_Output (other,self ,"DIA_Harad_Erzklingen_1h_15_00"); //PrenderÃ² la spada a una mano!
 	
 	if (Npc_HasItems (other,ItMi_Gold) >= Value_Blessed_1H_1)
 	{
@@ -1102,8 +1102,8 @@ FUNC VOID DIA_Harad_Erzklingen_1h()
 		B_Harad_NotEnoughGold ();
 		Info_ClearChoices (DIA_Harad_Erzklingen);
 		Info_AddChoice (DIA_Harad_Erzklingen,DIALOG_BACK,DIA_Harad_Erzklingen_Back);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a due mani (2000 monete d’oro)",DIA_Harad_Erzklingen_2h);
-		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a una mano (2000 monete d’oro)",DIA_Harad_Erzklingen_1h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a due mani (2000 monete dâ€™oro)",DIA_Harad_Erzklingen_2h);
+		Info_AddChoice (DIA_Harad_Erzklingen,"Spada a una mano (2000 monete dâ€™oro)",DIA_Harad_Erzklingen_1h);
 	};
 };
 
@@ -1116,7 +1116,7 @@ FUNC VOID DIA_Harad_Erzklingen_1h()
 //############################
 
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃ¼cke reparieren?
 //*********************************************************************
 instance DIA_Harad_RepairNecklace		(C_INFO)
 {
@@ -1141,8 +1141,8 @@ func int DIA_Harad_RepairNecklace_Condition ()
 func void DIA_Harad_RepairNecklace_Info ()
 {
 	AI_Output (other,self ,"DIA_Harad_RepairNecklace_15_00"); //Ripari gioielli?
-	AI_Output (self	,other,"DIA_Harad_RepairNecklace_12_01"); //Sono un armaiolo, non un gioielliere. Probabilmente non troverai nessuno qui in città che ti possa aiutare.
-	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_02"); //La gente non ha più soldi in tasca, e nessuno si arricchirà per un bel po'.
+	AI_Output (self	,other,"DIA_Harad_RepairNecklace_12_01"); //Sono un armaiolo, non un gioielliere. Probabilmente non troverai nessuno qui in cittÃ  che ti possa aiutare.
+	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_02"); //La gente non ha piÃ¹ soldi in tasca, e nessuno si arricchirÃ  per un bel po'.
 	AI_Output (self ,other,"DIA_Harad_RepairNecklace_12_03"); //La maggior parte di loro sono solo felici di avere abbastanza per mangiare.
 	
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE; 	
@@ -1173,7 +1173,7 @@ func void DIA_Harad_Goldsmith_Info ()
 {
 	AI_Output (other,self ,"DIA_Harad_Goldsmith_15_00"); //Dove posso trovare un orefice?
 	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_01"); //Dovrebbe esserci un buon fabbro con i mercenari alla fattoria di Onar.
-	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_02"); //Forse dovresti cercare lì.
+	AI_Output (self ,other,"DIA_Harad_Goldsmith_12_02"); //Forse dovresti cercare lÃ¬.
 };
 
 

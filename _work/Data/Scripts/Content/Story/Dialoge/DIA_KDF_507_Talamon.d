@@ -54,7 +54,7 @@ func int DIA_KDF_507_Talamon_FirstWarn_Condition()
 
 func void DIA_KDF_507_Talamon_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //Non ti è permesso andare oltre. Torna indietro!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_FirstWarn_04_00"); //Non ti Ã¨ permesso andare oltre. Torna indietro!
 	//AI_Output (other, self,"DIA_KDF_507_Talamon_FirstWarn_15_01"); //
 	
 	AI_StopProcessInfos	(self);
@@ -92,7 +92,7 @@ FUNC INT DIA_KDF_507_Talamon_SecondWarn_Condition()
 
 func void DIA_KDF_507_Talamon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Innos sfogherà la sua ira su di te se non torni indietro!
+	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Innos sfogherÃ  la sua ira su di te se non torni indietro!
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,KDF_507_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -131,7 +131,7 @@ func void DIA_KDF_507_Talamon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;	//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -261,9 +261,9 @@ FUNC INT DIA_Talamon_KAP5_Stop_Condition()
 
 FUNC VOID DIA_Talamon_KAP5_Stop_Info()
 {
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //Non ti è permesso andare oltre. Torna indietro!
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //Non ti Ã¨ permesso andare oltre. Torna indietro!
 	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Pyrokar dice che posso esaminare il libro di Xardas.
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //Se lo ha detto lui, allora puoi entrare. Il libro che stai cercando si trova laggiù, sul banco dell'alchimista.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //Se lo ha detto lui, allora puoi entrare. Il libro che stai cercando si trova laggiÃ¹, sul banco dell'alchimista.
 
 	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamon custodisce il libro di Xardas su un banco d'alchimista in cantina."); 
 };
@@ -294,9 +294,9 @@ FUNC VOID DIA_Talamon_FoundSecretDoor_Info()
 	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //Ho trovato una porta segreta.
 	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(sorpreso) Cosa? Dove?
 	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //Dietro uno scaffale.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Cosa c'è dietro?
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Cosa c'Ã¨ dietro?
 	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //Somiglia a una stanza sotterranea.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //Questa è una notizia importante. Devo informare immediatamente Pyrokar.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //Questa Ã¨ una notizia importante. Devo informare immediatamente Pyrokar.
 	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Nel frattempo devi scoprire cosa si nasconde in quel sotterraneo.
 	
 	MIS_ScoutLibrary = LOG_RUNNING;
@@ -340,8 +340,8 @@ FUNC VOID DIA_Talamon_ScoutSecretLibrary_Info()
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //È pieno di mostri laggiù.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Deve esserci qualcosa, continua a cercare. E non avere pietà di quelle bestie.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Ãˆ pieno di mostri laggiÃ¹.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Deve esserci qualcosa, continua a cercare. E non avere pietÃ  di quelle bestie.
 	};
 };
 

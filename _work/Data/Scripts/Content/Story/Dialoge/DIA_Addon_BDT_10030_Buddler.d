@@ -40,7 +40,7 @@ FUNC VOID DIA_Addon_10030_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Gli schiavi stanno togliendo di torno i blocchi più grossi.
+		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_01");//Gli schiavi stanno togliendo di torno i blocchi piÃ¹ grossi.
 		AI_Output (self, other, "DIA_Addon_BDT_10030_Buddler_Hi_08_02");//(sogghigna) Poi saremo noi a raccogliere il frutto dorato.
 	}
 	else

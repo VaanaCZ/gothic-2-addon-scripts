@@ -43,10 +43,10 @@ FUNC INT DIA_MIL_6_JOIN_Condition()
 FUNC VOID DIA_MIL_6_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00"); //Cosa devo fare per unirmi alla guardia cittadina?
-	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Vai a parlare con Lord Andre. Da quando i paladini sono giunti in citt‡, egli ha assunto il comando dell'intera guardia cittadina.
+	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Vai a parlare con Lord Andre. Da quando i paladini sono giunti in citt√†, egli ha assunto il comando dell'intera guardia cittadina.
 	if (C_NpcIsInQuarter (self) != Q_KASERNE)
 	{
-		AI_Output (self, other, "DIA_MIL_6_JOIN_06_02"); //Puoi trovarlo alla caserma. Non si muove quasi mai da lÏ.
+		AI_Output (self, other, "DIA_MIL_6_JOIN_06_02"); //Puoi trovarlo alla caserma. Non si muove quasi mai da l√¨.
 	};
 };
 
@@ -102,9 +102,9 @@ FUNC INT DIA_MIL_6_PEOPLE_Condition()
 FUNC VOID DIA_MIL_6_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_6_PEOPLE_15_00"); //Parlami dei paladini.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Da quando i paladini sono giunti a Khorinis, si sono ritirati nella parte alta della citt‡.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Non lasciano entrare pi˘ nessuno, tranne ovviamente la popolazione e la guardia cittadina.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Ci sono anche alcuni paladini a guardia di una nave gi˘ al porto, ma sono persone tutt'altro che loquaci.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Da quando i paladini sono giunti a Khorinis, si sono ritirati nella parte alta della citt√†.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Non lasciano entrare pi√π nessuno, tranne ovviamente la popolazione e la guardia cittadina.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Ci sono anche alcuni paladini a guardia di una nave gi√π al porto, ma sono persone tutt'altro che loquaci.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Cosa cíË da sapere su questa citt‡?";
+	description = "Cosa c‚Äô√® da sapere su questa citt√†?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()
@@ -126,11 +126,11 @@ FUNC INT DIA_MIL_6_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Cosa cíË da sapere su questa citt‡?
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //I paladini ora hanno il controllo su tutta la citt‡ e sulla guardia cittadina.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Lord Andre Ë il comandante della guardia cittadina e allo stesso tempo svolge le funzioni di giudice.
+	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Cosa c‚Äô√® da sapere su questa citt√†?
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //I paladini ora hanno il controllo su tutta la citt√† e sulla guardia cittadina.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Lord Andre √® il comandante della guardia cittadina e allo stesso tempo svolge le funzioni di giudice.
 	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //Se mai dovessi infrangere la legge, dovrai rendere conto a lui.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Ma Ë abbastanza indulgente con tutti. Di solito lascia andare le persone con una semplice ammenda.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Ma √® abbastanza indulgente con tutti. Di solito lascia andare le persone con una semplice ammenda.
 	
 };
 
@@ -143,7 +143,7 @@ INSTANCE DIA_MIL_6_STANDARD(C_INFO)
 	condition	= DIA_MIL_6_STANDARD_Condition;
 	information	= DIA_MIL_6_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_MIL_6_STANDARD_Condition()
 {
@@ -151,11 +151,11 @@ func INT DIA_MIL_6_STANDARD_Condition()
 };
 FUNC VOID DIA_MIL_6_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_MIL_6_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //Altre canaglie si sono riversate in citt‡ ultimamente.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //Altre canaglie si sono riversate in citt√† ultimamente.
 		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //I furti sono all'ordine del giorno e Lord Andre sospetta che siano opera di una banda.
 		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //Abbiamo rivoltato l'intero distretto del porto non molto tempo fa, ma non abbiamo ancora trovato niente.
 	};
@@ -167,8 +167,8 @@ FUNC VOID DIA_MIL_6_STANDARD_Info()
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //Con tutto questo afflusso di gentaglia, le cose vanno sempre peggio. La scorsa notte ho inseguito un uomo vestito di nero nella parte alta della citt‡.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Sono sicuro che si trattava di un poco di buono, ma quando l'ho seguito intorno alla casa del governatore, Ë sparito nel nulla. Che strano individuo...
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //Con tutto questo afflusso di gentaglia, le cose vanno sempre peggio. La scorsa notte ho inseguito un uomo vestito di nero nella parte alta della citt√†.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Sono sicuro che si trattava di un poco di buono, ma quando l'ho seguito intorno alla casa del governatore, √® sparito nel nulla. Che strano individuo...
 	};
 
 	if (Kapitel == 4)

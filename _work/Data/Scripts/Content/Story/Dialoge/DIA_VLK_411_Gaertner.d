@@ -78,11 +78,11 @@ FUNC VOID DIA_Gaertner_Job_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Cosa stai facendo qui?
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //Cosa credi, mmh? Sono un giardiniere, mi prendo cura del giardino.
-	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Sei abbastanza isolato, non è vero?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Sì, e dovrebbe rimanere così. Sono felice di avere un po' di pace qui.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Una volta hanno cercato di mandarmi alla colonia penale perché ho ucciso un tizio.
+	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Sei abbastanza isolato, non Ã¨ vero?
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //SÃ¬, e dovrebbe rimanere cosÃ¬. Sono felice di avere un po' di pace qui.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //Una volta hanno cercato di mandarmi alla colonia penale perchÃ© ho ucciso un tizio.
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Ma il governatore Larius aveva bisogno un altro giardiniere, e quindi sono potuto rimanere qui.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Con il passare del tempo, questo giardino è diventato la mia casa. E sono soddisfatto di ciò.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Con il passare del tempo, questo giardino Ã¨ diventato la mia casa. E sono soddisfatto di ciÃ².
 };
 //*************************************************************
 //		
@@ -111,7 +111,7 @@ FUNC VOID DIA_Gaertner_Plants_Info()
 	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Beh, ho appena raccolto tutto. Quindi, se vuoi comprare qualcosa...
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Il giardiniere del governatore può vendermi delle piante.");
+	B_LogEntry (Topic_CityTrader,"Il giardiniere del governatore puÃ² vendermi delle piante.");
 };
 //*************************************************************
 //		Trade
@@ -163,7 +163,7 @@ FUNC INT DIA_Gaertner_Krautabak_Condition()
 FUNC VOID DIA_Gaertner_Krautabak_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //Ho dell'erba tabacco qui. Vuoi un tiro?
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Non la conosco, ma sicuro, da' qui. Mi farò una bella fumata.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Non la conosco, ma sicuro, da' qui. Mi farÃ² una bella fumata.
 	
 	B_GiveInvItems (other, self, ItMi_SumpfTabak,1);
 	Npc_RemoveInvItems (self,ItMi_SumpfTabak,1);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Gaertner_Krautabak_Info()
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
 	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_02"); //Ack... ackack...
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Roba pesante. Penso farei meglio a non fumarne più.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //Roba pesante. Penso farei meglio a non fumarne piÃ¹.
 	
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -201,7 +201,7 @@ FUNC VOID DIA_Gaertner_Sign_Info()
 {	
 	AI_PlayAni (other, "T_YES");
 	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Dunque sei uno di noi. Allora ho delle informazioni utili per te.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Alcune delle case quassù hanno pannelli segreti che possono essere aperti con interruttori nascosti.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Alcune delle case quassÃ¹ hanno pannelli segreti che possono essere aperti con interruttori nascosti.
 	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //La gente nasconde i propri valori dietro di essi.
 };
 

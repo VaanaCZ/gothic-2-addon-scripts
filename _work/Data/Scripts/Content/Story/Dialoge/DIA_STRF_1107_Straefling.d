@@ -40,7 +40,7 @@ func int DIA_STRF_1107_FINGER_Condition ()
 };
 func void DIA_STRF_1107_FINGER_Info ()
 {
-	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Gi˘ le mani delle mie pentole! Nessuno tocca le mie pentole, intesi?!?
+	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_00"); //Gi√π le mani delle mie pentole! Nessuno tocca le mie pentole, intesi?!?
 	AI_Output (self, other, "DIA_STRF_1107_FINGER_01_01"); //Sono il responsabile per il cibo e questo significa che nessun altro deve impicciarsi! Spero di essere stato chiaro!
 };
 ///////////////////////////////////////////////////////////////////////
@@ -65,8 +65,8 @@ func void DIA_STRF_1107_COOK_Info ()
 {
 	AI_Output (other, self, "DIA_STRF_1107_COOK_15_00"); //Chi ha fatto diventare un cuoco proprio te?
 	AI_Output (self, other, "DIA_STRF_1107_COOK_01_01"); //Il comandante Garond. Prima di diventare un detenuto, ero il cuoco del Cinghiale Infuriato.
-	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //E perchÈ ti hanno rinchiuso?
-	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //C'Ë stato un piccolo malinteso tra un ospite, una mannaia e me.
+	AI_Output (other, self, "DIA_STRF_1107_COOK_15_02"); //E perch√© ti hanno rinchiuso?
+	AI_Output (self, other, "DIA_STRF_1107_COOK_01_03"); //C'√® stato un piccolo malinteso tra un ospite, una mannaia e me.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM
@@ -78,7 +78,7 @@ instance DIA_STRF_1107_PERM		(C_INFO)
 	condition	 = 	DIA_STRF_1107_PERM_Condition;
 	information	 = 	DIA_STRF_1107_PERM_Info;
 	permanent	 =  TRUE;
-	description	 =  "Novit‡?";
+	description	 =  "Novit√†?";
 };
 
 func int DIA_STRF_1107_PERM_Condition ()
@@ -90,8 +90,8 @@ func int DIA_STRF_1107_PERM_Condition ()
 };
 func void DIA_STRF_1107_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //Novit‡?
-	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Se vuoi sapere le ultime novit‡, allora chiedi ai cavalieri. Sono solo un cuoco imprigionato.
+	AI_Output (other, self, "DIA_STRF_1107_PERM_15_00"); //Novit√†?
+	AI_Output (self, other, "DIA_STRF_1107_PERM_01_01"); //Se vuoi sapere le ultime novit√†, allora chiedi ai cavalieri. Sono solo un cuoco imprigionato.
 };
  
 

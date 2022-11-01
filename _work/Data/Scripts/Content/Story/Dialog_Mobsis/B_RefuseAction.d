@@ -1,14 +1,14 @@
 // --------------------------------------------------------------------------------------------------------
 // Mob-Benutzung
 // --------------------------------------------------------------------------------------------------------
-// Kein Schlüssel oder Dietrich
+// Kein SchlÃ¼ssel oder Dietrich
 func void PLAYER_MOB_MISSING_KEY_OR_LOCKPICK()
 {
 	Print (PRINT_Picklock_or_KeyMissing);
 	AI_PlayAni	(self,"T_DONTKNOW");
 	B_Say_Overlay (self, self , "$PICKLOCKORKEYMISSING");
 };
-// Hat keinen Schlüssel
+// Hat keinen SchlÃ¼ssel
 func void PLAYER_MOB_MISSING_KEY()
 {
 	Print (PRINT_KeyMissing);
@@ -56,7 +56,7 @@ func void PLAYER_MOB_TOO_FAR_AWAY()
 	Print (PRINT_Toofar_Away);
 	AI_PlayAni	(self,"T_DONTKNOW");
 };
-// Falsche Seite für Benutzung
+// Falsche Seite fÃ¼r Benutzung
 func void PLAYER_MOB_WRONG_SIDE()
 {
 	Print (PRINT_WrongSide);

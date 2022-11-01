@@ -21,7 +21,7 @@ instance VLK_437_Brahim (Npc_Default)
 	// ------ Equippte Waffen ------																
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 
 
 		

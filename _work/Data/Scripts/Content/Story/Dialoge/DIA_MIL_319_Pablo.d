@@ -100,7 +100,7 @@ func void DIA_Pablo_WANTED_Info ()
 {
 	AI_Output (self, other, "DIA_Pablo_WANTED_12_00"); //Ehi tu, aspetta. Hai un'aria familiare.
 	AI_Output (other, self, "DIA_Pablo_WANTED_15_01"); //Cosa vuoi?
-	AI_Output (self, other, "DIA_Pablo_WANTED_12_02"); //Ho gi‡ visto la tua faccia da qualche parte... Ah, giusto!
+	AI_Output (self, other, "DIA_Pablo_WANTED_12_02"); //Ho gi√† visto la tua faccia da qualche parte... Ah, giusto!
 	B_UseFakeScroll ();
 	AI_Output (self, other, "DIA_Pablo_WANTED_12_03"); //Ecco, abbiamo trovato questo ritratto addosso a dei briganti che abbiamo catturato qualche giorno fa. Il tizio raffigurato somiglia incredibilmente a te.
 	B_GiveInvItems (self, other, ItWr_Poster_MIS,1);
@@ -116,9 +116,9 @@ FUNC VOID DIA_Pablo_WANTED_NOTHING()
 {
 	AI_Output (other, self, "DIA_Pablo_WANTED_NOTHING_15_00"); //No, credo che tu ti stia sbagliando. Non ho nessun problema...
 	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_01"); //Come vuoi, straniero.
-	//AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); //Aber wenn du Probleme hast - dann lass sie auﬂerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_00"); //Ma se questa Ë davvero la TUA faccia e se hai dei problemi, tienili fuori da questa citt‡. Le cose qui sono gi‡ abbastanza difficili.
-	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //E gli stranieri che portano guai in citt‡ non vi restano a lungo... Spero di essere stato chiaro.
+	//AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_02"); //Aber wenn du Probleme hast - dann lass sie au√üerhalb der Stadt. Wir haben hier schon genug Schwierigkeiten.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_00"); //Ma se questa √® davvero la TUA faccia e se hai dei problemi, tienili fuori da questa citt√†. Le cose qui sono gi√† abbastanza difficili.
+	AI_Output (self, other, "DIA_Pablo_WANTED_NOTHING_12_03"); //E gli stranieri che portano guai in citt√† non vi restano a lungo... Spero di essere stato chiaro.
 	Pablo_belogen = TRUE;
 	
 	AI_StopProcessInfos (self);
@@ -128,11 +128,11 @@ FUNC VOID DIA_Pablo_WANTED_IRONY()
 	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_00"); //Accidenti, non ci sarei mai arrivato da solo.
 	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_01"); //Davvero divertente... Cosa volevano quei tizi da te?
 	//AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_02"); //Ich werde sie fragen, wenn ich sie sehe. Ihr habt doch die Kerle eingelocht, die den Wisch dabei hatten, oder?
-	AI_Output (other, self,"DIA_Pablo_Add_15_01"); //PerchÈ non glielo chiedi di persona? Li avete rinchiusi in prigione, non Ë vero?
+	AI_Output (other, self,"DIA_Pablo_Add_15_01"); //Perch√© non glielo chiedi di persona? Li avete rinchiusi in prigione, non √® vero?
 	AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_03"); //No, sono morti.
 	AI_Output (other, self, "DIA_Pablo_WANTED_IRONY_15_04"); //Credo che non lo scopriremo mai allora.
-	//AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_05"); //Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. Schˆnen Tag noch.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_02"); //Se ti trovi coinvolto in qualche guaio vai a parlare con Lord Andre, forse lui puÚ aiutarti. Lo troverai nella caserma.
+	//AI_Output (self, other, "DIA_Pablo_WANTED_IRONY_12_05"); //Nun, wenn du in Schwierigkeiten steckst, dann sprich mal mit Lord Andre. Den Wisch kannst du behalten. Sch√∂nen Tag noch.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_02"); //Se ti trovi coinvolto in qualche guaio vai a parlare con Lord Andre, forse lui pu√≤ aiutarti. Lo troverai nella caserma.
 	
 	AI_StopProcessInfos (self);
 };
@@ -156,11 +156,11 @@ FUNC INT DIA_Pablo_Banditen_Condition()
 FUNC VOID DIA_Pablo_Banditen_Info()
 {
 	AI_Output (other, self,"DIA_Pablo_Add_15_03"); //Cosa mi dici dei briganti?
-	//AI_Output (other, self, "DIA_Pablo_Banditen_15_00"); //Was weiﬂt du ¸ber die Banditen, die vor der Stadt ihr Unwesen treiben?
+	//AI_Output (other, self, "DIA_Pablo_Banditen_15_00"); //Was wei√üt du √ºber die Banditen, die vor der Stadt ihr Unwesen treiben?
 	AI_Output (self ,other,"DIA_Pablo_Add_12_04"); //Provengono tutti da quella maledetta colonia mineraria. Ma ci sono diversi gruppi.
 	AI_Output (self ,other,"DIA_Pablo_Add_12_05"); //Alcuni si sono rifugiati sulle montagne, mentre altri si sono uniti a Onar, il proprietario terriero.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_06"); //Ma sono i briganti fuori della citt‡ che causano la maggior parte dei problemi.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_07"); //» colpa loro se ora nessun mercante osa pi˘ avventursi oltre i cancelli cittadini.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_06"); //Ma sono i briganti fuori della citt√† che causano la maggior parte dei problemi.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_07"); //√à colpa loro se ora nessun mercante osa pi√π avventursi oltre i cancelli cittadini.
 };
 
 // *************************************************************
@@ -189,21 +189,21 @@ FUNC VOID DIA_Pablo_HakonBandits_Info()
 	AI_Output (self ,other,"DIA_Pablo_Add_12_21"); //Oh, QUELL'incidente. Non ricordarmelo...
 	AI_Output (self ,other,"DIA_Pablo_Add_12_22"); //Per quanto ne sappiamo, essi sono i responsabili della maggior parte degli attacchi ai mercanti.
 	
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_01"); //Quei topi di fogna si sono rintanati nei loro buchi e non osano puÚ uscire.
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_02"); //Una volta siamo riusciti a rintracciarli e a seguirli fino al bosco fuori citt‡, ma poi abbiamo lasciato perdere.
-	AI_Output (self, other, "DIA_Pablo_Banditen_12_03"); //Ci sono troppe bestie che girano da quelle parti, Ë troppo pericoloso.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_01"); //Quei topi di fogna si sono rintanati nei loro buchi e non osano pu√≤ uscire.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_02"); //Una volta siamo riusciti a rintracciarli e a seguirli fino al bosco fuori citt√†, ma poi abbiamo lasciato perdere.
+	AI_Output (self, other, "DIA_Pablo_Banditen_12_03"); //Ci sono troppe bestie che girano da quelle parti, √® troppo pericoloso.
 	
-	B_LogEntry(TOPIC_HakonBanditen,"I briganti che hanno derubato Hakon si nascondono da qualche parte nei boschi vicini alla citt‡." );
+	B_LogEntry(TOPIC_HakonBanditen,"I briganti che hanno derubato Hakon si nascondono da qualche parte nei boschi vicini alla citt√†." );
 	
 	if (Pablo_AndreMelden == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Pablo_Add_12_23"); //Ma c'Ë un'altra cosa...
+		AI_Output (self ,other,"DIA_Pablo_Add_12_23"); //Ma c'√® un'altra cosa...
 		AI_Output (self, other, "DIA_Pablo_Banditen_12_04"); //Alcune delle merci rubate sono state rivendute qui a Khorinis.
-		AI_Output (other, self, "DIA_Pablo_Banditen_15_05"); //CiÚ significa che essi sanno come poter far entrare di nascosto le merci in citt‡ e come rivenderle...
-		AI_Output (self, other, "DIA_Pablo_Banditen_12_06"); //SÏ, sospettiamo che abbiano un ricettatore in citt‡, ma non siamo ancora riusciti a prenderlo.
+		AI_Output (other, self, "DIA_Pablo_Banditen_15_05"); //Ci√≤ significa che essi sanno come poter far entrare di nascosto le merci in citt√† e come rivenderle...
+		AI_Output (self, other, "DIA_Pablo_Banditen_12_06"); //S√¨, sospettiamo che abbiano un ricettatore in citt√†, ma non siamo ancora riusciti a prenderlo.
 		AI_Output (self, other, "DIA_Pablo_Banditen_12_07"); //Se scopri qualcosa su questa faccenda, ricordati che Lord Andre ha messo una taglia sul ricettatore.
 	
-		B_LogEntry(TOPIC_HakonBanditen,"I briganti sono probabilmente in combutta con qualche ricettatore in citt‡. Lord Andre ha offerto una ricompensa per chi trova il ricettatore." );
+		B_LogEntry(TOPIC_HakonBanditen,"I briganti sono probabilmente in combutta con qualche ricettatore in citt√†. Lord Andre ha offerto una ricompensa per chi trova il ricettatore." );
 	};
 }; 
 
@@ -232,20 +232,20 @@ FUNC VOID DIA_Pablo_MyBandits_Info()
 	AI_Output (other, self,"DIA_Pablo_Add_15_08"); //Da dove venivano quei briganti con il mio ritratto da ricercato?
 	if (Pablo_belogen == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Pablo_Add_12_09"); //AH-HA! Allora Ë proprio la TUA faccia. PerchÈ non lo hai ammesso subito?
+		AI_Output (self ,other,"DIA_Pablo_Add_12_09"); //AH-HA! Allora √® proprio la TUA faccia. Perch√© non lo hai ammesso subito?
 		AI_Output (self ,other,"DIA_Pablo_Add_12_10"); //(interessato) Per cosa sei ricercato?
 		AI_Output (other, self,"DIA_Pablo_Add_15_11"); //Non lo so, giuro!
-		AI_Output (self ,other,"DIA_Pablo_Add_12_12"); //SÏ, sÏ, ti credo. Lascia che ti dica una cosa. Se avessi anche solo sospettato che tu fossi in combutta con quei briganti, a quest'ora saresti gi‡ a marcire in una cella, capito?
-		AI_Output (self ,other,"DIA_Pablo_Add_12_13"); //Ad ogni modo, farÚ meglio a informare Lord Andre dell'accaduto...
+		AI_Output (self ,other,"DIA_Pablo_Add_12_12"); //S√¨, s√¨, ti credo. Lascia che ti dica una cosa. Se avessi anche solo sospettato che tu fossi in combutta con quei briganti, a quest'ora saresti gi√† a marcire in una cella, capito?
+		AI_Output (self ,other,"DIA_Pablo_Add_12_13"); //Ad ogni modo, far√≤ meglio a informare Lord Andre dell'accaduto...
 		Pablo_AndreMelden = TRUE;
 		AI_Output (self ,other,"DIA_Pablo_Add_12_14"); //Ma per rispondere alla tua domanda...
 	};
 
 	AI_Output (self ,other,"DIA_Pablo_Add_12_15"); //Li abbiamo catturati vicino alla fattoria del proprietario terriero.
 	AI_Output (self ,other,"DIA_Pablo_Add_12_16"); //Ma non sembrano essere uomini di Onar.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_17"); //Credo che facciano parte di un gruppo pi˘ piccolo che si Ë rifugiato sulle montagne vicino la fattoria di Onar.
-	AI_Output (self ,other,"DIA_Pablo_Add_12_18"); //Ma se hai intenzione di andare lÏ, lascia che ti avverta: quei tagliagole uccidono chiunque gli capiti a tiro!
-	AI_Output (other, self,"DIA_Pablo_Add_15_19"); //Me ne ricorderÚ.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_17"); //Credo che facciano parte di un gruppo pi√π piccolo che si √® rifugiato sulle montagne vicino la fattoria di Onar.
+	AI_Output (self ,other,"DIA_Pablo_Add_12_18"); //Ma se hai intenzione di andare l√¨, lascia che ti avverta: quei tagliagole uccidono chiunque gli capiti a tiro!
+	AI_Output (other, self,"DIA_Pablo_Add_15_19"); //Me ne ricorder√≤.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -276,12 +276,12 @@ FUNC VOID DIA_Pablo_Perm_Info()
 			|| (hero.guild == GIL_PAL)
 			{
 				AI_Output (self, other, "DIA_Pablo_Perm_12_01"); //L'ho sempre detto che non ci si poteva fidare di questi mercenari.
-				AI_Output (self, other, "DIA_Pablo_Perm_12_02"); //Era ora che dessimo una bella lezione a questa feccia. Bennet non puÚ aver architettato tutto da solo.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_02"); //Era ora che dessimo una bella lezione a questa feccia. Bennet non pu√≤ aver architettato tutto da solo.
 			}
 			else if (hero.guild == GIL_KDF)
 			{
 				AI_Output (self, other, "DIA_Pablo_Perm_12_03"); //Sono profondamente scosso dall'assassinio dell'onorevole paladino Lothar.
-				AI_Output (self, other, "DIA_Pablo_Perm_12_04"); //Ma so che la chiesa trover‡ una giusta punizione per il colpevole.
+				AI_Output (self, other, "DIA_Pablo_Perm_12_04"); //Ma so che la chiesa trover√† una giusta punizione per il colpevole.
 			}
 			else
 			{
@@ -290,17 +290,17 @@ FUNC VOID DIA_Pablo_Perm_Info()
 		}
 		else //Bennet ist unschuldig
 		{
-			AI_Output (self, other, "DIA_Pablo_Perm_12_06"); //» patetico. Ora stanno cercando di metterci uno contro l'altro.
+			AI_Output (self, other, "DIA_Pablo_Perm_12_06"); //√à patetico. Ora stanno cercando di metterci uno contro l'altro.
 			AI_Output (self, other, "DIA_Pablo_Perm_12_07"); //Se tu non fossi riuscito a trovare il vero colpevole per l'omicidio, gli orchi non avrebbero dovuto alzare un dito.
 		};
 	}
 	else if (Kapitel == 5)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_08"); //Sono preoccupato per ciÚ che accadr‡ se i paladini se ne andranno ora.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_08"); //Sono preoccupato per ci√≤ che accadr√† se i paladini se ne andranno ora.
 	}
 	else if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_09"); //Puoi contare su di noi. Useremo ogni mezzo possibile per impedire che la citt‡ degeneri in un covo di ingiustizie.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_09"); //Puoi contare su di noi. Useremo ogni mezzo possibile per impedire che la citt√† degeneri in un covo di ingiustizie.
 	}
 	else if (hero.guild == GIL_SLD)
 	|| (hero.guild == GIL_DJG)
@@ -309,7 +309,7 @@ FUNC VOID DIA_Pablo_Perm_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Pablo_Perm_12_11"); //Al momento Ë tutto tranquillo. Solo i briganti fuori dalla citt‡ ci stanno causando dei problemi.
+		AI_Output (self, other, "DIA_Pablo_Perm_12_11"); //Al momento √® tutto tranquillo. Solo i briganti fuori dalla citt√† ci stanno causando dei problemi.
 	};	
 
 }; 

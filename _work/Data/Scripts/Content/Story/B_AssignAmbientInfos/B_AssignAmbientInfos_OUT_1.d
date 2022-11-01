@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Da quando la Barriera intorno alla colonia penale è sparita abbiamo avuto un sacco di guai con i briganti.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_00"); //Da quando la Barriera intorno alla colonia penale Ã¨ sparita abbiamo avuto un sacco di guai con i briganti.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_01"); //Non ci si può fidare della guardia cittadina. Dobbiamo difenderci da soli.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_01"); //Non ci si puÃ² fidare della guardia cittadina. Dobbiamo difenderci da soli.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_02"); //Non mi lascerò usare da nessuno, nemmeno dal re o da quel grassone di Onar. Io combatto solo per me stesso.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_01_02"); //Non mi lascerÃ² usare da nessuno, nemmeno dal re o da quel grassone di Onar. Io combatto solo per me stesso.
 	};
 	
 	AI_StopProcessInfos	(self);

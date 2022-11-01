@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Sancho_Mine   (C_INFO)
 	condition   = DIA_Addon_Sancho_Mine_Condition;
 	information = DIA_Addon_Sancho_Mine_Info;
 	permanent   = FALSE;
-	description = "Dimmi qualcosa in pi˘ della miniera...";
+	description = "Dimmi qualcosa in pi√π della miniera...";
 };
 FUNC INT DIA_Addon_Sancho_Mine_Condition()
 {	
@@ -140,13 +140,13 @@ FUNC INT DIA_Addon_Sancho_Mine_Condition()
 };
 FUNC VOID DIA_Addon_Sancho_Mine_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Dimmi qualcosa in pi˘ della miniera...
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Ti darÚ qualche buon consiglio: se vuoi scendere nella miniera, entra nelle simpatie di Franco. Lui Ë il capo, qui.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //» lui che decide chi Ë il prossimo a entrare.
-	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Ma ti far‡ entrare solo se non stai con le mani in mano qui fuori.
+	AI_Output (other,self,"DIA_Addon_Sancho_Mine_15_00"); //Dimmi qualcosa in pi√π della miniera...
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_01"); //Ti dar√≤ qualche buon consiglio: se vuoi scendere nella miniera, entra nelle simpatie di Franco. Lui √® il capo, qui.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_02"); //√à lui che decide chi √® il prossimo a entrare.
+	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_03"); //Ma ti far√† entrare solo se non stai con le mani in mano qui fuori.
 	AI_Output (self,other,"DIA_Addon_Sancho_Mine_06_04"); //Quindi vai da lui e fatti dare un lavoro!
 	
-	B_LogEntry (Topic_Addon_Franco,"FRANCO decide chi puÚ entrare nel campo e assegna i compiti.");
+	B_LogEntry (Topic_Addon_Franco,"FRANCO decide chi pu√≤ entrare nel campo e assegna i compiti.");
 };
 
 //---------------------------------------------------------------------
@@ -202,8 +202,8 @@ FUNC VOID DIA_Addon_Sancho_Spitzel_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Sancho_Spitzel_15_00");//Devi proprio bazzicare qui attorno tutto il tempo?
 	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_01");//Dovrei controllare tutti i novellini, per assicurarmi che non ci siano spie tra loro.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Ma puoi lasciar perdere. CioË, qui siamo alla fine del mondo, nel bel mezzo di una palude.
-	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Nessuno ci puÚ trovare, nessuno ci trover‡: e perchÈ qualcuno dovrebbe prendersi il disturbo di mandarci una spia?
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_02");//Ma puoi lasciar perdere. Cio√®, qui siamo alla fine del mondo, nel bel mezzo di una palude.
+	AI_Output (self,other,"DIA_Addon_Sancho_Spitzel_06_03");//Nessuno ci pu√≤ trovare, nessuno ci trover√†: e perch√© qualcuno dovrebbe prendersi il disturbo di mandarci una spia?
 };
 
 //---------------------------------------------------------------------
@@ -216,7 +216,7 @@ INSTANCE DIA_Addon_Sancho_Perm   (C_INFO)
 	condition   = DIA_Addon_Sancho_Perm_Condition;
 	information = DIA_Addon_Sancho_Perm_Info;
 	permanent   = TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };
 FUNC INT DIA_Addon_Sancho_Perm_Condition()
 {	
@@ -229,7 +229,7 @@ var int Comment_Franco;
 var int Comment_Esteban;
 FUNC VOID DIA_Addon_Sancho_Perm_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Sancho_Perm_15_00");//Novit‡?
+	AI_Output (other,self,"DIA_Addon_Sancho_Perm_15_00");//Novit√†?
 	
 	if Npc_IsDead (Franco)
 	&& (Comment_Franco == FALSE)

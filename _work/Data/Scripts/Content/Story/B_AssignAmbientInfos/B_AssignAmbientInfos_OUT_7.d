@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_7_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Ultimamente da queste parti Ë diventato molto pi˘ pericoloso, e i razziatori dei campi stanno diventando una vera piaga.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_00"); //Ultimamente da queste parti √® diventato molto pi√π pericoloso, e i razziatori dei campi stanno diventando una vera piaga.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Dobbiamo pagare le nostre tasse alla citt‡. Se non lo facciamo, avremo dei guai con i paladini.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_01"); //Dobbiamo pagare le nostre tasse alla citt√†. Se non lo facciamo, avremo dei guai con i paladini.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //La ribellione di Onar avr‡ delle conseguenze serie. Io preferisco restarne fuori.
+		AI_Output (self,other,"DIA_OUT_7_STANDARD_07_02"); //La ribellione di Onar avr√† delle conseguenze serie. Io preferisco restarne fuori.
 	};
 	
 	AI_StopProcessInfos	(self);

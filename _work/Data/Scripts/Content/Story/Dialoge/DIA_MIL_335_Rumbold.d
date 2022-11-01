@@ -102,18 +102,18 @@ func void DIA_Rumbold_HALLO_Attack ()
 func void DIA_Rumbold_HALLO_verschwindet ()
 {
 	AI_Output (other, self, "DIA_Rumbold_HALLO_verschwindet_15_00"); //Voglio che tu sparisca da qui.
-	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_01"); //Bene bene. Così vuoi che scompariamo?
-	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_02"); //(minaccia) E cosa ci succederà se non ce ne andiamo via?
+	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_01"); //Bene bene. CosÃ¬ vuoi che scompariamo?
+	AI_Output (self, other, "DIA_Rumbold_HALLO_verschwindet_10_02"); //(minaccia) E cosa ci succederÃ  se non ce ne andiamo via?
 
 	Info_ClearChoices	(DIA_Rumbold_HALLO);
 
 	Info_AddChoice	(DIA_Rumbold_HALLO, "Quanto vuoi per sparire?", DIA_Rumbold_HALLO_geld);
-	Info_AddChoice	(DIA_Rumbold_HALLO, "In tal caso, questa è l’ultima volta che infastidisci i coltivatori.", DIA_Rumbold_HALLO_AufsMaul);
+	Info_AddChoice	(DIA_Rumbold_HALLO, "In tal caso, questa Ã¨ lâ€™ultima volta che infastidisci i coltivatori.", DIA_Rumbold_HALLO_AufsMaul);
 };
 
 func void DIA_Rumbold_HALLO_AufsMaul()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_AufsMaul_15_00"); //In tal caso, questa è l’ultima volta che infastidisci i coltivatori.
+	AI_Output (other, self, "DIA_Rumbold_HALLO_AufsMaul_15_00"); //In tal caso, questa Ã¨ lâ€™ultima volta che infastidisci i coltivatori.
 	AI_Output (self, other, "DIA_Rumbold_HALLO_AufsMaul_10_01"); //Hai parlato anche troppo, imbecille!
 	
 	Info_ClearChoices	(DIA_Rumbold_HALLO);
@@ -123,13 +123,13 @@ func void DIA_Rumbold_HALLO_AufsMaul()
 func void DIA_Rumbold_HALLO_geld ()
 {
 	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_15_00"); //Quanto vuoi per sparire?
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_01"); //Vuoi pagare per Bengar? Allora è diverso.
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_01"); //Vuoi pagare per Bengar? Allora Ã¨ diverso.
 	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_02"); //Fammi pensare. Comprese tutte le spese straordinarie, Bengar ci deve ancora 65 monete d'oro.
 	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_03"); //Paga o fatti da parte.
 	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_10_04"); //Sei il tesoriere di Bengar o cosa?
 	
 	Info_ClearChoices (DIA_Rumbold_HALLO);
-	Info_AddChoice (DIA_Rumbold_HALLO, "Sei impazzito? È decisamente troppo.", DIA_Rumbold_HALLO_Geld_TooMuch);
+	Info_AddChoice (DIA_Rumbold_HALLO, "Sei impazzito? Ãˆ decisamente troppo.", DIA_Rumbold_HALLO_Geld_TooMuch);
 	if (Npc_HasItems (other, itmi_gold) >= 65)
 	{
 		Info_AddChoice (DIA_Rumbold_HALLO, "Ecco i tuoi soldi. Adesso sparisci.", DIA_Rumbold_HALLO_geld_ok);
@@ -140,7 +140,7 @@ func void DIA_Rumbold_HALLO_geld_ok ()
 {
 	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_ok_15_00"); //Ecco i tuoi soldi e ora levati di torno.
 	B_GiveInvItems (other, self, ItMi_Gold, 65);
-	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_ok_10_01"); //Non mi importa chi paga per Bengar. Buona giornata. (fra sé e sé) Imbecille!
+	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_ok_10_01"); //Non mi importa chi paga per Bengar. Buona giornata. (fra sÃ© e sÃ©) Imbecille!
 	
 	AI_StopProcessInfos (self);
 
@@ -165,7 +165,7 @@ func void DIA_Rumbold_HALLO_geld_ok ()
 
 func void DIA_Rumbold_HALLO_Geld_TooMuch()
 {
-	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_TooMuch_15_00"); //Sei impazzito? È decisamente troppo.
+	AI_Output (other, self, "DIA_Rumbold_HALLO_geld_TooMuch_15_00"); //Sei impazzito? Ãˆ decisamente troppo.
 	AI_Output (self, other, "DIA_Rumbold_HALLO_geld_TooMuch_10_01"); //Allora fatti da parte!
 	AI_StopProcessInfos (self);
 };

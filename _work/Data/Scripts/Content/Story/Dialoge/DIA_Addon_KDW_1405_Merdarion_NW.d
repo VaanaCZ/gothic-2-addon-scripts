@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Merdarion_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Merdarion_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Merdarion_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re schwierig seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re schwierig seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Merdarion_NW_PICKPOCKET_Condition()
@@ -96,9 +96,9 @@ func void DIA_Addon_Merdarion_Hallo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Hallo_15_00"); //Hai da fare?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_01"); //Questi sotterranei sono un mistero senza fine. Mi risulta difficile credere che nessuno li avesse scoperti prima d'ora.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_02"); //Noi abbiamo trovato l'entrata senza alcuna difficolt‡.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_03"); //La gente Ë cosÏ presa dal tran tran quotidiano che nessuno ha osservato con attenzione questa struttura.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_04"); //» l'unica spiegazione possibile.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_02"); //Noi abbiamo trovato l'entrata senza alcuna difficolt√†.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_03"); //La gente √® cos√¨ presa dal tran tran quotidiano che nessuno ha osservato con attenzione questa struttura.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Hallo_06_04"); //√à l'unica spiegazione possibile.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Aufgabe
@@ -110,7 +110,7 @@ instance DIA_Addon_Merdarion_Aufgabe		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Aufgabe_Condition;
 	information	 = 	DIA_Addon_Merdarion_Aufgabe_Info;
 
-	description	 = 	"Qual Ë il tuo compito?";
+	description	 = 	"Qual √® il tuo compito?";
 };
 
 func int DIA_Addon_Merdarion_Aufgabe_Condition ()
@@ -123,10 +123,10 @@ func int DIA_Addon_Merdarion_Aufgabe_Condition ()
 
 func void DIA_Addon_Merdarion_Aufgabe_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Aufgabe_15_00"); //Qual Ë il tuo compito?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Aufgabe_15_00"); //Qual √® il tuo compito?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_01"); //Sto cercando di scoprire dove conduce questo portale tondo.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_02"); //A parte quello, aiuto Nefarius a cercare l'ornamento mancante.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_03"); //Di certo questo portale conduce in una parte del'isola che ci Ë ancora ignota.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_03"); //Di certo questo portale conduce in una parte del'isola che ci √® ancora ignota.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Aufgabe_06_04"); //(riflettendo) Non ricordo di aver sentito o letto nulla al riguardo...
 	
 	Npc_ExchangeRoutine (self, "START");
@@ -162,7 +162,7 @@ func void DIA_Addon_Merdarion_DaDurch_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_DaDurch_15_00"); //Vuoi davvero attraversare il portale?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_01"); //Certo. Ammesso che riusciamo a trovare l'ornamento mancante
-	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_02"); //Ammetto che Ë alquanto rischioso.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_02"); //Ammetto che √® alquanto rischioso.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_DaDurch_06_03"); //Ma dobbiamo assolutamente scoprire la causa di questi continui terremoti.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -189,9 +189,9 @@ func int DIA_Addon_Merdarion_Bedrohung_Condition ()
 func void DIA_Addon_Merdarion_Bedrohung_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Bedrohung_15_00"); //Cosa sai sui terremoti?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_01"); //C'Ë qualcosa dall'altra parte che li causa.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_02"); //Forse Ë la stessa cosa che ha risvegliato le Sentinelle di Pietra.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_03"); //Ma questo non Ë il mio campo. Saturas e Cronos ne sapranno senz'altro di pi˘.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_01"); //C'√® qualcosa dall'altra parte che li causa.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_02"); //Forse √® la stessa cosa che ha risvegliato le Sentinelle di Pietra.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Bedrohung_06_03"); //Ma questo non √® il mio campo. Saturas e Cronos ne sapranno senz'altro di pi√π.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -217,10 +217,10 @@ func int DIA_Addon_Merdarion_Wasdahinter2_Condition ()
 
 func void DIA_Addon_Merdarion_Wasdahinter2_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Wasdahinter2_15_00"); //Cosa pensi di trovare laggi˘?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Wasdahinter2_15_00"); //Cosa pensi di trovare laggi√π?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_01"); //Non ne sono sicuro...
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_02"); //Sospetto che dall'altra parte ci sia una struttura simile a questa, con un portale speculare a questo.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_03"); //Quanto al resto, lo vedremo quando saremo lÏ.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Wasdahinter2_06_03"); //Quanto al resto, lo vedremo quando saremo l√¨.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM
@@ -247,7 +247,7 @@ func int DIA_Addon_Merdarion_PERM_Condition ()
 func void DIA_Addon_Merdarion_PERM_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_PERM_15_00"); //Puoi insegnarmi qualcosa sulla magia?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_PERM_06_01"); //Una volta laggi˘, sarÚ a tua disposizione.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_PERM_06_01"); //Una volta laggi√π, sar√≤ a tua disposizione.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -260,7 +260,7 @@ instance DIA_Addon_Merdarion_Teleportstein		(C_INFO)
 	condition	 = 	DIA_Addon_Merdarion_Teleportstein_Condition;
 	information	 = 	DIA_Addon_Merdarion_Teleportstein_Info;
 
-	description	 = 	"Qual Ë la strada pi˘ rapida per la citt‡?";
+	description	 = 	"Qual √® la strada pi√π rapida per la citt√†?";
 };
 
 func int DIA_Addon_Merdarion_Teleportstein_Condition ()
@@ -274,7 +274,7 @@ func int DIA_Addon_Merdarion_Teleportstein_Condition ()
 
 func void DIA_Addon_Merdarion_Teleportstein_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_00"); //Qual Ë la strada pi˘ rapida per la citt‡?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_00"); //Qual √® la strada pi√π rapida per la citt√†?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_01"); //Ripercorri la strada che hai fatto per venire qui.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_02"); //(riflettendo) Ma potresti anche... No. Sarebbe troppo pericoloso.
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_03"); //Parla, dunque!
@@ -282,17 +282,17 @@ func void DIA_Addon_Merdarion_Teleportstein_Info ()
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_05"); //Pare fossero in grado di teletrasportarsi.
 	AI_Output	(other, self, "DIA_Addon_Merdarion_Teleportstein_15_06"); //Niente di speciale.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_07"); //Ma le pietre del telestrasporto che abbiamo trovato qui a Khorinis sono speciali.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_08"); //Pare che la pietra del teletrasporto che si trova in queste stanze conduca alla citt‡ portuale.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_08"); //Pare che la pietra del teletrasporto che si trova in queste stanze conduca alla citt√† portuale.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_Teleportstein_06_09"); //Ma nessuno di noi ha avuto il coraggio di provarci.
 	
 	Info_ClearChoices	(DIA_Addon_Merdarion_Teleportstein);
 	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Cosa accadrebbe se la usassi?", DIA_Addon_Merdarion_Teleportstein_ich );
-	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Dov'Ë questa pietra di teletrasporto?", DIA_Addon_Merdarion_Teleportstein_wo );
+	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Dov'√® questa pietra di teletrasporto?", DIA_Addon_Merdarion_Teleportstein_wo );
 };
 func void DIA_Addon_Merdarion_Teleportstein_wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_wo_15_00"); //Dov'Ë questa pietra?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_wo_06_01"); //C'Ë una stanza chiusa a chiave nella darsena. La pietra Ë lÏ dentro.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_wo_15_00"); //Dov'√® questa pietra?
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_wo_06_01"); //C'√® una stanza chiusa a chiave nella darsena. La pietra √® l√¨ dentro.
 	Info_AddChoice	(DIA_Addon_Merdarion_Teleportstein, "Dammi la chiave. Voglio dare un'occhiata.", DIA_Addon_Merdarion_Teleportstein_key );
 };
 func void DIA_Addon_Merdarion_Teleportstein_ich ()
@@ -303,7 +303,7 @@ func void DIA_Addon_Merdarion_Teleportstein_ich ()
 func void DIA_Addon_Merdarion_Teleportstein_key ()
 {
 	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_00"); //Dammi la chiave. Voglio darci un'occhiata.
-	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_01"); //(incerto) Sicuro? Bada, io non mi assumo responsabilit‡.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_01"); //(incerto) Sicuro? Bada, io non mi assumo responsabilit√†.
 	AI_Output			(other, self, "DIA_Addon_Merdarion_Teleportstein_key_15_02"); //Da' qui.
 	AI_Output			(self, other, "DIA_Addon_Merdarion_Teleportstein_key_06_03"); //Se lo dici tu. Eccola.
 	CreateInvItems (self, ITKE_PORTALTEMPELWALKTHROUGH_ADDON, 1);									
@@ -313,7 +313,7 @@ func void DIA_Addon_Merdarion_Teleportstein_key ()
 
 	Log_CreateTopic (TOPIC_Addon_TeleportsNW, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_TeleportsNW, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_TeleportsNW,"Merdarion mi ha dato la chiave di una porta chiusa nei sotterranei del portale. Dietro la porta c'Ë una pietra del teletrasporto che dovrebbe ricondurmi al porto."); 
+	B_LogEntry (TOPIC_Addon_TeleportsNW,"Merdarion mi ha dato la chiave di una porta chiusa nei sotterranei del portale. Dietro la porta c'√® una pietra del teletrasporto che dovrebbe ricondurmi al porto."); 
 
 	Info_ClearChoices	(DIA_Addon_Merdarion_Teleportstein);
 };
@@ -374,8 +374,8 @@ func void DIA_Addon_Merdarion_TeleportsteinSuccess_Info ()
 	B_GivePlayerXP (XP_Ambient);
 	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_00"); //Il teletrasporto funziona perfettamente.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_01"); //Ce l'hai fatta? Sei entrato davvero?
-	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_02"); //SÏ. Funzionano ancora.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_03"); //(affascinato) Incredibile. DovrÚ studiare meglio questa faccenda.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_TeleportsteinSuccess_15_02"); //S√¨. Funzionano ancora.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_TeleportsteinSuccess_06_03"); //(affascinato) Incredibile. Dovr√≤ studiare meglio questa faccenda.
 };
 
 

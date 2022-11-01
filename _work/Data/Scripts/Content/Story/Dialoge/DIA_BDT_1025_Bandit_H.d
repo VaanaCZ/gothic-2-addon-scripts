@@ -46,7 +46,7 @@ func void DIA_NAME_BANDIT_SCHAFBLEIBTHIER_Info ()
 	if (MIS_Akil_SchafDiebe == 0)
 	{
 		AI_Output			(other, self, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_15_01"); //Pecora? Quale pecora?
-		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //Sei un bravo ragazzo. E ora vattene. Non c'è niente qui per te.
+		AI_Output			(self, other, "DIA_NAME_BANDIT_SCHAFBLEIBTHIER_09_02"); //Sei un bravo ragazzo. E ora vattene. Non c'Ã¨ niente qui per te.
 	};
 };
 
@@ -115,12 +115,12 @@ func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_Info ()
 	
 	Info_ClearChoices	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS);
 	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Niente. Cosa me ne faccio di quelle stupide pecore?", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_nichts );
-	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Consegnami quelle pecore o ti farò un occhio nero.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
+	Info_AddChoice	(DIA_NAME_BANDIT_RUECKDASSCHAFRAUS, "Consegnami quelle pecore o ti farÃ² un occhio nero.", DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf );
 
 };
 func void DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf ()
 {
-	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //Consegnami quelle pecore o ti farò un occhio nero.
+	AI_Output			(other, self, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_15_00"); //Consegnami quelle pecore o ti farÃ² un occhio nero.
 	AI_Output			(self, other, "DIA_NAME_BANDIT_RUECKDASSCHAFRAUS_schaf_09_01"); //Attento a come parli, ragazzino. Sta per scatenarsi il finimondo.
 
 	AI_StopProcessInfos (self);

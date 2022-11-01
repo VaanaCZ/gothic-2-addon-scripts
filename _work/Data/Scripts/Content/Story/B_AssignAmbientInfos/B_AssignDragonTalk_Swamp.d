@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Swamp_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Il potere dell'Occhio si Ë esaurito. La tua vita termina qui, umano.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_Exit_20_00"); //Il potere dell'Occhio si √® esaurito. La tua vita termina qui, umano.
 
 	Swampdragon = Hlp_GetNpc (dragon_swamp);
 
@@ -80,9 +80,9 @@ FUNC VOID DIA_Dragon_Swamp_Hello_Info()
 		};
 	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_02"); //Molti tuoi simili ti hanno preceduto, e li ho spazzati via tutti.
 	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_03"); //Risparmia il fiato. Le tue parolone non mi spaventano, fetida creatura degli inferi.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Dimmi ciÚ che voglio sapere o affogherai nel tuo stesso sangue.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_04"); //Dimmi ci√≤ che voglio sapere o affogherai nel tuo stesso sangue.
 	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_05"); //Ah ah ah. Tu osi minacciarmi, lurido verme? Dammi solo una ragione per cui non dovrei farti in mille pezzi all'istante.
-	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Io sono un messaggero di Innos e porto con me il sacro Occhio. Non hai scelta: arrenditi alla mia volont‡ o verrai ucciso.
+	AI_Output			(other, self, "DIA_Dragon_Swamp_Hello_15_06"); //Io sono un messaggero di Innos e porto con me il sacro Occhio. Non hai scelta: arrenditi alla mia volont√† o verrai ucciso.
 	AI_Output			(self, other, "DIA_Dragon_Swamp_Hello_20_07"); //(ruggisce) Argh. Dimmi cosa vuoi sapere.
 };
 
@@ -138,8 +138,8 @@ func int DIA_Dragon_Swamp_WOSINDDIEANDEREN_Condition ()
 func void DIA_Dragon_Swamp_WOSINDDIEANDEREN_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_15_00"); //Dove posso trovare le altre repellenti creature come te?
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Gli elementi, di cui Ë composta ogni cosa, tengono insieme questo mondo.
-	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Ognuno di essi ha la capacit‡ di controllare una parte del mondo.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_01"); //Gli elementi, di cui √® composta ogni cosa, tengono insieme questo mondo.
+	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_02"); //Ognuno di essi ha la capacit√† di controllare una parte del mondo.
 	AI_Output			(self, other, "DIA_Dragon_Swamp_WOSINDDIEANDEREN_20_03"); //Cerca gli elementi e troverai le altre creature.
 };
 

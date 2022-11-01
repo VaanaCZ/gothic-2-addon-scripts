@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Edgor_EXIT_Info()
 	if Npc_KnowsInfo (other, DIA_Addon_Edgor_MIS2)
 	&& (Edgor_Exiteinmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //» stato bello conoscerti
+		AI_Output (self, other, "DIA_Addon_Edgor_EXIT_06_00"); //√à stato bello conoscerti
 		Edgor_Exiteinmal = TRUE;
 	};
 	AI_StopProcessInfos (self);
@@ -80,8 +80,8 @@ FUNC VOID DIA_Addon_Edgor_Hi_Info()
 	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Come va?
 	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Vuoi sapere come va? Te lo dico io come va.
 	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //Prima di tutto dei pirati mi hanno portato qui in una notte di tempesta. Amico, ho vomitato di tutto su quel guscio di noce.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Poi Raven mi ha rinchiuso nella miniera perchÈ degli idioti sono troppo avidi d'oro.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //E infine Franco Ë diventato il capo dei cacciatori e ha ucciso chiunque gli si opponesse.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Poi Raven mi ha rinchiuso nella miniera perch√© degli idioti sono troppo avidi d'oro.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //E infine Franco √® diventato il capo dei cacciatori e ha ucciso chiunque gli si opponesse.
 	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Direi che va piuttosto male.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Edgor_MIS2   (C_INFO)
 	condition   = DIA_Addon_Edgor_MIS2_Condition;
 	information = DIA_Addon_Edgor_MIS2_Info;
 	permanent   = FALSE;
-	description = "Franco mi ha mandato a cercare questa tavoletta di pietraÖ";
+	description = "Franco mi ha mandato a cercare questa tavoletta di pietra‚Ä¶";
 };
 FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 {	
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_MIS2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco mi ha mandato qui a cercare quella tavoletta di pietraÖ L'hai trovata?
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Amico, non l'ho neanche cercata. Tutto quello che so Ë che dovrebbe trovarsi in questo vecchio edificio nel cuore della palude.
+	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco mi ha mandato qui a cercare quella tavoletta di pietra‚Ä¶ L'hai trovata?
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Amico, non l'ho neanche cercata. Tutto quello che so √® che dovrebbe trovarsi in questo vecchio edificio nel cuore della palude.
 	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //E una vocina nella mia testa mi dice 'Edgor, stai lontano dai vecchi edifici nel cuore della palude.'
 	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Certamente non mi gioco l'osso del collo per quel fannullone di Franco!
 	
-	B_LogEntry (Topic_Addon_Stoneplate,"Edgor non andr‡ mai alla ricerca della tavoletta di pietra. Dice che Ë da qualche parte in un vecchio edificio nella palude.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Edgor non andr√† mai alla ricerca della tavoletta di pietra. Dice che √® da qualche parte in un vecchio edificio nella palude.");
 };
 //---------------------------------------------------------------------
 //	Info Wegbeschreibung
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Edgor_Weg   (C_INFO)
 	condition   = DIA_Addon_Edgor_Weg_Condition;
 	information = DIA_Addon_Edgor_Weg_Info;
 	permanent   = FALSE;
-	description = "Dov'Ë esattamente questo vecchio edificio?";
+	description = "Dov'√® esattamente questo vecchio edificio?";
 };
 FUNC INT DIA_Addon_Edgor_Weg_Condition()
 {	
@@ -169,9 +169,9 @@ FUNC INT DIA_Addon_Edgor_Weg_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Dov'Ë esattamente questo vecchio edificio?
+	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Dov'√® esattamente questo vecchio edificio?
 	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Gira a sinistra dopo questa grande roccia. Dopo un po' arriverai a un'altra grande roccia.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Dopo dovrai andare a sinistra o a destra, non so nient'altro, Ë stato troppo tempo fa.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Dopo dovrai andare a sinistra o a destra, non so nient'altro, √® stato troppo tempo fa.
 	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Ma le rovine dovrebbero trovarsi su una specie di rilievo. Quasi nascoste tra le piante.
 	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Forse sarai fortunato e non la troverai
 };
@@ -224,8 +224,8 @@ FUNC INT DIA_Addon_Edgor_Teach_Condition()
 FUNC VOID DIA_Addon_Edgor_Teach_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Puoi insegnarmi qualcosa?
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//So tante cose sulle sanguimosche. Odio quelle bestie schifose anche pi˘ di quanto odio Franco!
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Ma so come strappare i pungiglioni e le ali dai loro cadaveri. (folle) SÏ, strappaglieli
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//So tante cose sulle sanguimosche. Odio quelle bestie schifose anche pi√π di quanto odio Franco!
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Ma so come strappare i pungiglioni e le ali dai loro cadaveri. (folle) S√¨, strappaglieli
 	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//Inoltre, so come estrarre la secrezione dal pungiglione.
 	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Se vuoi ti posso insegnare queste schifezze.
 	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Naturalmente, qui non si fa niente per niente...
@@ -248,7 +248,7 @@ INSTANCE DIA_Addon_Edgor_TrainStart   (C_INFO)
 	condition   = DIA_Addon_Edgor_Start_Condition;
 	information = DIA_Addon_Edgor_Start_Info;
 	permanent   = TRUE;
-	description = "A proposito di quelle sanguimoscheÖ";
+	description = "A proposito di quelle sanguimosche‚Ä¶";
 };
 FUNC INT DIA_Addon_Edgor_Start_Condition()
 {	
@@ -323,7 +323,7 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_GIFT()
 		if (other.lp >= 1)
 		{
 			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Come faccio a estrarre la secrezione dalle sanguimosche?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Taglia lo strato esterno del pungiglione nel senso della lunghezza e la secrezione curativa scorrer‡ all'esterno.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Taglia lo strato esterno del pungiglione nel senso della lunghezza e la secrezione curativa scorrer√† all'esterno.
 			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//In questo modo, non si corrono rischi se si vuole aspirare un pungiglione o lo si vuole usare per qualche pozione.
 			
 			other.lp = (other.lp - 1);

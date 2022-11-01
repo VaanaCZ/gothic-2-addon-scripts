@@ -79,7 +79,7 @@ func int DIA_Halvor_Hallo_Condition ()
 };
 func void DIA_Halvor_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Halvor_Hallo_06_00"); //Ehi, vuoi del pesce? Prendi il tuo pesce fresco proveniente dalle profondit‡ del mare!
+	AI_Output (self, other, "DIA_Halvor_Hallo_06_00"); //Ehi, vuoi del pesce? Prendi il tuo pesce fresco proveniente dalle profondit√† del mare!
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Halvor vende pesce al porto.");
@@ -165,15 +165,15 @@ func int DIA_Addon_Halvor_MissingPeople_Condition ()
 func void DIA_Addon_Halvor_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Halvor_MissingPeople_15_00"); //Puoi dirmi qualcosa sulle persone che sono scomparse?
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_01"); //Persone scomparse? Questo Ë un porto, amico. Cose del genere succedono di continuo.
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_02"); //Il mare Ë insidioso, e di tanto in tanto reclama qualche vita.
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_03"); //I capitani dei grandi vascelli arruolano marinai di rincalzo nelle citt‡ portuali come Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_04"); //E se non trovano volontari, finiscono per reclutare qualcuno a forza. E cosÏ la gente scompare.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_01"); //Persone scomparse? Questo √® un porto, amico. Cose del genere succedono di continuo.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_02"); //Il mare √® insidioso, e di tanto in tanto reclama qualche vita.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_03"); //I capitani dei grandi vascelli arruolano marinai di rincalzo nelle citt√† portuali come Khorinis.
+	AI_Output	(self, other, "DIA_Addon_Halvor_MissingPeople_06_04"); //E se non trovano volontari, finiscono per reclutare qualcuno a forza. E cos√¨ la gente scompare.
 	
 	Info_ClearChoices	(DIA_Addon_Halvor_MissingPeople);
 	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, DIALOG_BACK, DIA_Addon_Halvor_MissingPeople_Back );
 	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "E che nave sarebbe?", DIA_Addon_Halvor_MissingPeople_schiff );
-	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "Sai se Ë scomparso qualcuno?", DIA_Addon_Halvor_MissingPeople_wer );
+	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "Sai se √® scomparso qualcuno?", DIA_Addon_Halvor_MissingPeople_wer );
 	Info_AddChoice	(DIA_Addon_Halvor_MissingPeople, "Ti manca qualcuno?", DIA_Addon_Halvor_MissingPeople_you );
 };
 func void DIA_Addon_Halvor_MissingPeople_Back ()
@@ -182,7 +182,7 @@ func void DIA_Addon_Halvor_MissingPeople_Back ()
 };
 func void DIA_Addon_Halvor_MissingPeople_wer ()
 {
-	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_wer_15_00"); //Sai se Ë scomparso qualcuno?
+	AI_Output			(other, self, "DIA_Addon_Halvor_MissingPeople_wer_15_00"); //Sai se √® scomparso qualcuno?
 	AI_Output			(self, other, "DIA_Addon_Halvor_MissingPeople_wer_06_01"); //Boh. Chiedi ai costruttori di navi.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -227,17 +227,17 @@ func void DIA_Halvor_MESSAGE_Info ()
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_01"); //Cosa..? Fammi vedere.
 	B_UseFakeScroll 	();
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_02"); //(sudando) Ehm... Ok, stiamo calmi... Ascolta. Ho rivenduto i beni presi ai briganti.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_03"); //(rudemente) Ma non c'Ë ragione di andare direttamente dai militari, vero? Sono certo che troveremo un accordo.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_06_03"); //(rudemente) Ma non c'√® ragione di andare direttamente dai militari, vero? Sono certo che troveremo un accordo.
 	
 	Info_ClearChoices (DIA_Halvor_MESSAGE);
-	Info_AddChoice    (DIA_Halvor_MESSAGE,"Allora, fammi uníofferta.",DIA_Halvor_MESSAGE_OFFER);
+	Info_AddChoice    (DIA_Halvor_MESSAGE,"Allora, fammi un‚Äôofferta.",DIA_Halvor_MESSAGE_OFFER);
 	Info_AddChoice    (DIA_Halvor_MESSAGE,"Sembra che sia la prigione per te.",DIA_Halvor_MESSAGE_PRISON);
 
 };
 FUNC VOID DIA_Halvor_MESSAGE_OFFER()
 {
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_OFFER_15_00"); //Allora, fammi uníofferta.
-	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_01"); //Va bene. Ti dirÚ qualcosa. Io posso vendere altro, oltre al pesce.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_OFFER_15_00"); //Allora, fammi un‚Äôofferta.
+	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_01"); //Va bene. Ti dir√≤ qualcosa. Io posso vendere altro, oltre al pesce.
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_OFFER_06_03"); //Se mi darai quel ridicolo pezzettino di carta e... dimenticherai la faccenda, tu e io diventeremo buoni soci in affari.
 	
 	Info_ClearChoices (DIA_Halvor_MESSAGE);
@@ -249,7 +249,7 @@ FUNC VOID DIA_Halvor_MESSAGE_PRISON()
 {
 	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_00"); //Sembra che sia la prigione per te.
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_PRISON_06_01"); //No, aspetta, non puoi farlo! Dopo tutto non sono nient'altro che... lo sai... un pesce piccolo.
-	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_02"); //Avresti dovuto pensarci prima. AndrÚ a fare rapporto da Lord Andre.
+	AI_Output (other, self, "DIA_Halvor_MESSAGE_PRISON_15_02"); //Avresti dovuto pensarci prima. Andr√≤ a fare rapporto da Lord Andre.
 	AI_Output (self, other, "DIA_Halvor_MESSAGE_PRISON_06_03"); //Te ne pentirai.
 	
 	Betrayal_Halvor = TRUE;
@@ -308,12 +308,12 @@ FUNC VOID DIA_Halvor_Zeichen_Info()
 {
 	AI_PlayAni (other, "T_YES");
 	AI_Output (self, other, "DIA_Halvor_Zeichen_06_00");//Capisco. Non sei venuto solamente per comprare del pesce.
-	AI_Output (self, other, "DIA_Halvor_Zeichen_06_01");//(silenziosamente) Ti farÚ un'altra offerta. Se possiedi piatti d'argento o calici, portameli e te li pagherÚ bene.
+	AI_Output (self, other, "DIA_Halvor_Zeichen_06_01");//(silenziosamente) Ti far√≤ un'altra offerta. Se possiedi piatti d'argento o calici, portameli e te li pagher√≤ bene.
 	
 	CreateInvItems (self, ItKe_Lockpick, 20);
 	
 	Log_CreateTopic (Topic_Diebesgilde,LOG_NOTE);
-	B_LogEntry (Topic_Diebesgilde,"Halvor comprer‡ piatti d'argento e calici al prezzo migliore di qualsiasi altro mercante.");
+	B_LogEntry (Topic_Diebesgilde,"Halvor comprer√† piatti d'argento e calici al prezzo migliore di qualsiasi altro mercante.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Diebeszeichen
@@ -350,16 +350,16 @@ FUNC VOID DIA_Halvor_Hehlerei_Info()
 			
 			if (Halvor_Score <=  1000)  //weil sonst kein B_Say_Gold mehr...
 			{
-				AI_Output (self, other, "DIA_Halvor_Zeichen_06_05");//Per tutta la tua roba ti darÚ...
+				AI_Output (self, other, "DIA_Halvor_Zeichen_06_05");//Per tutta la tua roba ti dar√≤...
 				B_Say_Gold (self, other, Halvor_Score);
 			
 				Info_ClearChoices (DIA_Halvor_Hehlerei);
 				Info_AddChoice (DIA_Halvor_Hehlerei,"Va bene venduto.",DIA_Halvor_Hehlerei_Annehmen);
-				Info_AddChoice (DIA_Halvor_Hehlerei,"Ci penserÚ su.",DIA_Halvor_Hehlerei_Ablehnen);
+				Info_AddChoice (DIA_Halvor_Hehlerei,"Ci penser√≤ su.",DIA_Halvor_Hehlerei_Ablehnen);
 			}
 			else 
 			{
-				AI_Output (self, other, "DIA_Halvor_Zeichen_06_06");//Hai portato troppa roba. Non posso darti cosÏ tanto oro in una volta sola.
+				AI_Output (self, other, "DIA_Halvor_Zeichen_06_06");//Hai portato troppa roba. Non posso darti cos√¨ tanto oro in una volta sola.
 				Info_ClearChoices (DIA_Halvor_Hehlerei);
 			};
 		}
@@ -371,7 +371,7 @@ FUNC VOID DIA_Halvor_Hehlerei_Info()
 	}
 	else if (Wld_GetDay() == 0)
 	{
-		AI_Output (self, other, "DIA_Halvor_Zeichen_06_03");//Potrai liberarti del tuo argento domani. Oggi Ë troppo presto.
+		AI_Output (self, other, "DIA_Halvor_Zeichen_06_03");//Potrai liberarti del tuo argento domani. Oggi √® troppo presto.
 	}
 	else 
 	{
@@ -382,7 +382,7 @@ FUNC VOID DIA_Halvor_Hehlerei_Info()
 FUNC VOID DIA_Halvor_Hehlerei_Annehmen()
 {
 	/*
-	CreateInvItems (other, ItRW_Arrow,(Npc_HasItems (other, ItMi_SilverPlate)+ Npc_HasItems (other, ItMi_SilverCup)));//F¸r Textausgabe -> ist ziemlich dreckig, aber wie sonst? 
+	CreateInvItems (other, ItRW_Arrow,(Npc_HasItems (other, ItMi_SilverPlate)+ Npc_HasItems (other, ItMi_SilverCup)));//F√ºr Textausgabe -> ist ziemlich dreckig, aber wie sonst? 
 	B_GiveInvItems (other, self, ItRW_Arrow,(Npc_HasItems (other, ItMi_SilverPlate)+ Npc_HasItems (other, ItMi_SilverCup)) ); 
  	*/
  	
@@ -446,7 +446,7 @@ func void DIA_Halvor_Crew_Info ()
 	
 	Info_ClearChoices (DIA_Halvor_Crew);
 	Info_AddChoice (DIA_Halvor_Crew,"Sono affari miei.",DIA_Halvor_Crew_MyThing);
-	Info_AddChoice (DIA_Halvor_Crew,"Mi approprierÚ di una barca.",DIA_Halvor_Crew_StealShip);
+	Info_AddChoice (DIA_Halvor_Crew,"Mi approprier√≤ di una barca.",DIA_Halvor_Crew_StealShip);
 	
 };
 
@@ -463,9 +463,9 @@ FUNC VOID DIA_Halvor_Crew_MyThing()
 
 FUNC VOID DIA_Halvor_Crew_StealShip()
 {
-	AI_Output (other,self ,"DIA_Halvor_Crew_StealShip_15_00"); //Mi approprierÚ di una barca.
-	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_01"); //SÏ certo. Stai scherzando? I paladini ti faranno a pezzi, quando ti prenderanno.
-	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_02"); //Rilassati, non Ë la mia vita che stai rischiando.
+	AI_Output (other,self ,"DIA_Halvor_Crew_StealShip_15_00"); //Mi approprier√≤ di una barca.
+	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_01"); //S√¨ certo. Stai scherzando? I paladini ti faranno a pezzi, quando ti prenderanno.
+	AI_Output (self ,other,"DIA_Halvor_Crew_StealShip_06_02"); //Rilassati, non √® la mia vita che stai rischiando.
 	
 	Info_ClearChoices (DIA_Halvor_Crew);
 	Info_AddChoice (DIA_Halvor_Crew,DIALOG_BACK,DIA_Halvor_Crew_BACK);
@@ -486,7 +486,7 @@ FUNC VOID DIA_Halvor_Crew_JoinMe()
 FUNC VOID DIA_Halvor_Crew_HelpMe()
 {
 	AI_Output (other,self ,"DIA_Halvor_Crew_HelpMe_15_00"); //Puoi aiutarmi?
-	AI_Output (self ,other,"DIA_Halvor_Crew_HelpMe_06_01"); //Non sono la persona giusta per questo. Ma vai da Jack, dovrebbe essere da qualche parte nel porto. Sapr‡ sicuramente di cosa hai bisogno per il tuo viaggio.
+	AI_Output (self ,other,"DIA_Halvor_Crew_HelpMe_06_01"); //Non sono la persona giusta per questo. Ma vai da Jack, dovrebbe essere da qualche parte nel porto. Sapr√† sicuramente di cosa hai bisogno per il tuo viaggio.
 };
 
 FUNC VOID DIA_Halvor_Crew_Back()

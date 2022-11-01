@@ -54,9 +54,9 @@ func void DIA_Geppert_HALLO_Info ()
 		Kervo_GotStuff = TRUE;
 	};	
 	
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //Fermo! Chi va là?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_00"); //Fermo! Chi va lÃ ?
 	AI_Output			(self, other, "DIA_Geppert_HALLO_10_01"); //Non sarai venuto per rimandarmi nelle miniere di metallo, vero?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //In tal caso, dovrò deluderti. Non tornerò indietro.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_10_02"); //In tal caso, dovrÃ² deluderti. Non tornerÃ² indietro.
 	
 
 	Info_ClearChoices	(DIA_Geppert_HALLO);
@@ -67,7 +67,7 @@ func void DIA_Geppert_HALLO_Info ()
 func void DIA_Geppert_HALLO_Flucht ()
 {
 	AI_Output			(other, self, "DIA_Geppert_HALLO_Flucht_15_00"); //Sei un prigioniero alla sbarra, giusto?
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //Molto percettivo. Perché dovrei strisciare in questo buco altrimenti?
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Flucht_10_01"); //Molto percettivo. PerchÃ© dovrei strisciare in questo buco altrimenti?
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
@@ -85,7 +85,7 @@ func void DIA_Geppert_HALLO_Wasmachtihr ()
 				AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_03"); //Che domanda stupida. Mi sto nascondendo, che altro? Quei porci dell'esercito hanno spie dappertutto.
 			};
 
-	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //Non tornerò alla miniera, è la mia ultima parola.
+	AI_Output			(self, other, "DIA_Geppert_HALLO_Wasmachtihr_10_04"); //Non tornerÃ² alla miniera, Ã¨ la mia ultima parola.
 	Info_ClearChoices	(DIA_Geppert_HALLO);
 };
 
@@ -100,7 +100,7 @@ instance DIA_Geppert_BRATEN		(C_INFO)
 	information	 = 	DIA_Geppert_BRATEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"L’arrosto ha un buon odore.";
+	description	 = 	"Lâ€™arrosto ha un buon odore.";
 };
 
 func int DIA_Geppert_BRATEN_Condition ()
@@ -113,7 +113,7 @@ func int DIA_Geppert_BRATEN_Condition ()
 
 func void DIA_Geppert_BRATEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //L’arrosto ha un buon odore.
+	AI_Output			(other, self, "DIA_Geppert_BRATEN_15_00"); //Lâ€™arrosto ha un buon odore.
 	AI_Output			(self, other, "DIA_Geppert_BRATEN_10_01"); //Non toccarlo!
 	AI_StopProcessInfos (self);
 };

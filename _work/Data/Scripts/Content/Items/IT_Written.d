@@ -82,7 +82,7 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Libro comune, pagina 2"	);
@@ -143,7 +143,7 @@ instance ItWr_Map_NewWorld (C_Item)
 
 instance ItWr_Map_NewWorld_City (C_Item)
 {
-	name 		= "Mappa della citt‡ di Khorinis";  // 
+	name 		= "Mappa della citt√† di Khorinis";  // 
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -270,17 +270,17 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Arte della difesa del Sud."	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Un meridionale usa meno forza fisica di un settentrionale, invece fa affidamento sull'agilit‡. Visto il clima caldo della zona d'origine, preferisce usare un'armatura leggera che gli permette di muoversi liberamente. Il meridionale ha quindi sviluppato uno stile di combattimento che Ë profondamente diverso da quello cui siamo abituati."					);
+					Doc_PrintLines	( nDocID,  0, "Un meridionale usa meno forza fisica di un settentrionale, invece fa affidamento sull'agilit√†. Visto il clima caldo della zona d'origine, preferisce usare un'armatura leggera che gli permette di muoversi liberamente. Il meridionale ha quindi sviluppato uno stile di combattimento che √® profondamente diverso da quello cui siamo abituati."					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Probabilmente la tattica pi˘ famosa impiegata da un meridionale Ë la parata armata e l'arretramento. L'arretramento permette al combattente di smorzare il colpo dell'assalitore, portandosi allo stesso tempo in una posizione favorevole per il contrattacco."	);
+					Doc_PrintLines	( nDocID,  1, "Probabilmente la tattica pi√π famosa impiegata da un meridionale √® la parata armata e l'arretramento. L'arretramento permette al combattente di smorzare il colpo dell'assalitore, portandosi allo stesso tempo in una posizione favorevole per il contrattacco."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -337,16 +337,16 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Bloccare la lama avversaria con un'arma a due mani Ë una tecnica utilizzata dai combattenti robusti per fermare l'impeto degli attaccanti e costringere gli assalitori a interrompere immediatamente la propria combinazione di colpi."					);
+					Doc_PrintLines	( nDocID,  0, "Bloccare la lama avversaria con un'arma a due mani √® una tecnica utilizzata dai combattenti robusti per fermare l'impeto degli attaccanti e costringere gli assalitori a interrompere immediatamente la propria combinazione di colpi."					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R‰nder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den R√§nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "La pausa dei movimenti avversari che generalmente si crea Ë un'ottima opportunit‡ per prendere l'iniziativa e sconfiggere il nemico con dei colpi ben piazzati."	);
+					Doc_PrintLines	( nDocID,  1, "La pausa dei movimenti avversari che generalmente si crea √® un'ottima opportunit√† per prendere l'iniziativa e sconfiggere il nemico con dei colpi ben piazzati."	);
 					
 					Doc_Show		( nDocID );
 };

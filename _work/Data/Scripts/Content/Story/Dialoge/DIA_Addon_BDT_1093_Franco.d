@@ -100,16 +100,16 @@ FUNC VOID DIA_Addon_Franco_HI_Info()
 {	
 	Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Franco,"Se faccio un buon lavoro per Franco, mi farà entrare nel campo.");
+	B_LogEntry (Topic_Addon_Franco,"Se faccio un buon lavoro per Franco, mi farÃ  entrare nel campo.");
 	
 	AI_Output (self,other,"DIA_Addon_Franco_HI_08_00");//Ehi, cosa ci fai qui? Vuoi entrare nel campo.
-	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//Sì, sono...
+	AI_Output (other,self,"DIA_Addon_Franco_HI_15_01");//SÃ¬, sono...
 	AI_Output (self,other,"DIA_Addon_Franco_HI_08_02");//Non mi interessa sapere chi sei. Io sono Franco, qui sono il capo.
-	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Allora, se qui fai un buon lavoro, ti prenderò nel campo.
+	AI_Output (self,other,"DIA_Addon_Franco_HI_08_03");//Allora, se qui fai un buon lavoro, ti prenderÃ² nel campo.
 	
 	if (Ramon_News == FALSE)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Ramon, il custode, ti dirà se hanno bisogno di gente nuova nel campo. Parlagli.
+		AI_Output (self,other,"DIA_Addon_Franco_HI_08_04");//Ramon, il custode, ti dirÃ  se hanno bisogno di gente nuova nel campo. Parlagli.
 		B_LogEntry (Topic_Addon_Franco,"Dovrei chiedere a Ramon, il custode, se hanno bisogno di gente nuova nel campo.");
 	};
 };
@@ -136,7 +136,7 @@ FUNC VOID DIA_Addon_Franco_Hai_Info()
 {	
 	
 	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_00");//Thorus ha bisogno di un uomo nuovo.
-	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Bene. Me ne occuperò io.
+	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_01");//Bene. Me ne occuperÃ² io.
 	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_02");//Aspetta un momento, e io?
 	AI_Output (self,other,"DIA_Addon_Franco_Hai_08_03");//Tu non hai fatto ancora niente.
 	AI_Output (other,self,"DIA_Addon_Franco_Hai_15_04");//Ho fatto molto, invece, solo che TU non lo sai.
@@ -169,7 +169,7 @@ FUNC INT DIA_Addon_Franco_Wo_Condition()
 FUNC VOID DIA_Addon_Franco_Wo_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_Wo_15_00");//Dove trovo Logan?
-	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Piazzati davanti all'ingresso del campo e segui la parete di roccia a sinistra. È un po' più in là nella palude.
+	AI_Output (self,other,"DIA_Addon_Franco_Wo_08_01");//Piazzati davanti all'ingresso del campo e segui la parete di roccia a sinistra. Ãˆ un po' piÃ¹ in lÃ  nella palude.
 	AI_StopProcessInfos (self);
 };
 //---------------------------------------------------------------------
@@ -182,7 +182,7 @@ INSTANCE DIA_Addon_Franco_tot   (C_INFO)
 	condition   = DIA_Addon_Franco_tot_Condition;
 	information = DIA_Addon_Franco_tot_Info;
 	permanent   = FALSE;
-	description = "Logan è morto.";
+	description = "Logan Ã¨ morto.";
 };
 FUNC INT DIA_Addon_Franco_tot_Condition()
 {	
@@ -195,9 +195,9 @@ FUNC INT DIA_Addon_Franco_tot_Condition()
 };
 FUNC VOID DIA_Addon_Franco_tot_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Logan è morto.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Dannazione. Era il miglior cacciatore che abbiamo mai avuto là fuori. Che disdetta.
-	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//Ciò nonostante ho già inviato qualcun altro nel campo.
+	AI_Output (other,self,"DIA_Addon_Franco_tot_15_00");//Logan Ã¨ morto.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_01");//Dannazione. Era il miglior cacciatore che abbiamo mai avuto lÃ  fuori. Che disdetta.
+	AI_Output (self,other,"DIA_Addon_Franco_tot_08_02");//CiÃ² nonostante ho giÃ  inviato qualcun altro nel campo.
 	
 	if (MIS_HlpLogan == LOG_RUNNING)
 	{
@@ -215,7 +215,7 @@ INSTANCE DIA_Addon_Franco_HaiSuccess   (C_INFO)
 	condition   = DIA_Addon_Franco_HaiSuccess_Condition;
 	information = DIA_Addon_Franco_HaiSuccess_Info;
 	permanent   = FALSE;
-	description = "Ho aiutato Logan…";
+	description = "Ho aiutato Loganâ€¦";
 };
 FUNC INT DIA_Addon_Franco_HaiSuccess_Condition()
 {	
@@ -231,12 +231,12 @@ FUNC VOID DIA_Addon_Franco_HaiSuccess_Info()
 	
 	if Npc_IsDead (Logan)
 	{
-		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//... ma non è riuscito a sopravvivere.
+		AI_Output (other,self,"DIA_Addon_Franco_HaiSuccess_15_01");//... ma non Ã¨ riuscito a sopravvivere.
 	};
-	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//Bene, e così hai combattuto contro gli squali di palude, almeno sei utile più di tanti altri, qui.
+	AI_Output (self,other,"DIA_Addon_Franco_HaiSuccess_08_02");//Bene, e cosÃ¬ hai combattuto contro gli squali di palude, almeno sei utile piÃ¹ di tanti altri, qui.
 	B_GivePlayerXP (XP_Addon_HlpLogan);
 	
-	B_LogEntry (Topic_Addon_Franco,"A Franco non è bastato che aiutassi Logan per mandarmi nel campo.");
+	B_LogEntry (Topic_Addon_Franco,"A Franco non Ã¨ bastato che aiutassi Logan per mandarmi nel campo.");
 };
 
 //---------------------------------------------------------------------
@@ -264,7 +264,7 @@ FUNC VOID DIA_Addon_Franco_Mis2_Info()
 	AI_Output (other,self,"DIA_Addon_Franco_MIS2_15_00");//Allora posso andare al campo, adesso?
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_01");//Senti, avrei bisogno di te per un'altra cosa.
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_02");//Qualche giorno fa, ho mandato Edgor nella palude.
-	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//Avrebbe dovuto prendermi una vecchia tavoletta di pietra, ma da allora non si è più visto.
+	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_03");//Avrebbe dovuto prendermi una vecchia tavoletta di pietra, ma da allora non si Ã¨ piÃ¹ visto.
 	AI_Output (self,other,"DIA_Addon_Franco_MIS2_08_04");//Cerca di scoprire che cosa sta facendo e portami quella maledetta tavoletta di pietra.
 	
 	MIS_HlpEdgor = LOG_RUNNING;
@@ -300,7 +300,7 @@ FUNC VOID DIA_Addon_Franco_While_Info()
 	AI_Output (other,self,"DIA_Addon_Franco_While_15_00");//Cosa mi dici dell'oro?
 	AI_Output (self,other,"DIA_Addon_Franco_While_08_01");//Cosa?
 	AI_Output (other,self,"DIA_Addon_Franco_While_15_02");//Il lavoro qui nelle paludi mi frutta qualcosa?
-	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(molto cordiale) Vuoi dell'oro? Certo, quanto vuoi? Cinquanta pepite d'oro? Cento? Ti darò tutto l'oro che riesci a portare
+	AI_Output (self,other,"DIA_Addon_Franco_While_08_03");//(molto cordiale) Vuoi dell'oro? Certo, quanto vuoi? Cinquanta pepite d'oro? Cento? Ti darÃ² tutto l'oro che riesci a portare
 	AI_Output (self,other,"DIA_Addon_Franco_While_08_04");//(ad alta voce) Chi ti credi di essere? Mi stai prendendo in giro?
 	AI_Output (self,other,"DIA_Addon_Franco_While_08_05");//Ora fila a lavorare! Altrimenti non prenderai nemmeno una BRICIOLA D'ORO!!
 	AI_StopProcessInfos(self);
@@ -329,24 +329,24 @@ FUNC INT DIA_Addon_Franco_WOEDGOR_Condition()
 FUNC VOID DIA_Addon_Franco_WOEDGOR_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_15_00"); //(sospira) Allora, DOVE trovo questo Edgor?
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Vuoi il modo più facile o quello più veloce?
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_08_01"); //Vuoi il modo piÃ¹ facile o quello piÃ¹ veloce?
 	
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Prenderò la via più veloce." ,DIA_Addon_Franco_WOEDGOR_Fast);
-	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Spiegami il modo più semplice." ,DIA_Addon_Franco_WOEDGOR_Easy);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "PrenderÃ² la via piÃ¹ veloce." ,DIA_Addon_Franco_WOEDGOR_Fast);
+	Info_AddChoice (DIA_Addon_Franco_WOEDGOR, "Spiegami il modo piÃ¹ semplice." ,DIA_Addon_Franco_WOEDGOR_Easy);
 };
 
 func void B_Addon_Franco_There()
 {
-	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Ci sono rovine dappertutto. È seduto lì, da qualche parte.
+	AI_Output (self,other,"DIA_Addon_Franco_There_08_00"); //Ci sono rovine dappertutto. Ãˆ seduto lÃ¬, da qualche parte.
 	AI_Output (self,other,"DIA_Addon_Franco_There_08_01"); //Suppongo sia stato abbastanza furbo da accendersi un fuoco. Dovresti riuscire a trovare QUELLO.
 };
 
 func void DIA_Addon_Franco_WOEDGOR_Easy()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Spiegami il modo più semplice.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Segui il sentiero che porta al cancello principale. Lì dovrebbe esserci Sancho.
-	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Da lì vai a sinistra e segui la passerella
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Easy_15_00"); //Spiegami il modo piÃ¹ semplice.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_01"); //Segui il sentiero che porta al cancello principale. LÃ¬ dovrebbe esserci Sancho.
+	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Easy_08_02"); //Da lÃ¬ vai a sinistra e segui la passerella
 	
 	B_Addon_Franco_There();
 	Info_ClearChoices (DIA_Addon_Franco_WOEDGOR);
@@ -354,7 +354,7 @@ func void DIA_Addon_Franco_WOEDGOR_Easy()
 
 func void DIA_Addon_Franco_WOEDGOR_Fast()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //Prenderò la via più veloce.
+	AI_Output (other,self,"DIA_Addon_Franco_WOEDGOR_Fast_15_00"); //PrenderÃ² la via piÃ¹ veloce.
 	AI_Output (self,other,"DIA_Addon_Franco_WOEDGOR_Fast_08_01"); //D'accordo. Da qui procedi in diagonale verso sinistra dopo la passerella, nella palude.
 	
 	B_Addon_Franco_There();
@@ -385,7 +385,7 @@ FUNC VOID DIA_Addon_Franco_tafel_Info()
 	AI_Output (other,self,"DIA_Addon_Franco_tafel_15_00");//Ecco la tavoletta di pietra.
 	B_GiveInvItems (other, self, ItMi_Addon_Stone_04,1);
 	
-	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Bene, molto bene. Raven sarà contento di te.
+	AI_Output (self,other,"DIA_Addon_Franco_tafel_08_01");//Bene, molto bene. Raven sarÃ  contento di te.
 	MIS_HlpEdgor = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_HlpEdgor);
 	
@@ -417,7 +417,7 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 	
 	if !Npc_IsDead (Logan)
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//No, ho già fatto entrare Logan. Era davanti a te sulla lista.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_01");//No, ho giÃ  fatto entrare Logan. Era davanti a te sulla lista.
 		
 		Logan_Inside = TRUE;
 		AI_Teleport (Logan,"BL_INN_CORNER_02");
@@ -425,13 +425,13 @@ FUNC VOID DIA_Addon_Franco_JemandAnderen_Info()
 	}
 	else
 	{
-		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//No, ho già fatto entrare qualcun altro.
+		AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_02");//No, ho giÃ  fatto entrare qualcun altro.
 	};
 	
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//E al momento, non c'è bisogno di un altro uomo nel campo.
-	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Inoltre, ho proprio bisogno di te qui, (sogghigna) ora che Logan non c'è più.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_03");//E al momento, non c'Ã¨ bisogno di un altro uomo nel campo.
+	AI_Output (self,other,"DIA_Addon_Franco_JemandAnderen_08_04");//Inoltre, ho proprio bisogno di te qui, (sogghigna) ora che Logan non c'Ã¨ piÃ¹.
 		
-	B_LogEntry (Topic_Addon_Franco,"Franco non mi manderà al campo. Penso che dovrei occuparmi del problema 'Franco'…");
+	B_LogEntry (Topic_Addon_Franco,"Franco non mi manderÃ  al campo. Penso che dovrei occuparmi del problema 'Franco'â€¦");
 };
 
 //---------------------------------------------------------------------
@@ -456,14 +456,14 @@ FUNC VOID DIA_Addon_Franco_Fight_Info()
 	AI_Output (self,other,"DIA_Addon_Franco_Fight_08_01"); //(cordiale ma minaccioso) E se ti dico di no?
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
-	Info_AddChoice (DIA_Addon_Franco_Fight, "Allora aspetterò ancora un po'…" ,DIA_Addon_Franco_Fight_Nothing);
+	Info_AddChoice (DIA_Addon_Franco_Fight, "Allora aspetterÃ² ancora un po'â€¦" ,DIA_Addon_Franco_Fight_Nothing);
 	Info_AddChoice (DIA_Addon_Franco_Fight, "Te ne pentirai." ,DIA_Addon_Franco_Fight_Duel);
 };
 
 func void DIA_Addon_Franco_Fight_Duel()
 {
 	AI_Output (other,self,"DIA_Addon_Franco_Fight_Duel_15_00"); //Te ne pentirai.
-	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Mi stai minacciando? TU? Vuoi minacciare ME? È il momento di darti una lezione
+	AI_Output (self,other,"DIA_Addon_Franco_Fight_Duel_08_01"); //Mi stai minacciando? TU? Vuoi minacciare ME? Ãˆ il momento di darti una lezione
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
 	AI_StopProcessInfos(self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -471,7 +471,7 @@ func void DIA_Addon_Franco_Fight_Duel()
 
 func void DIA_Addon_Franco_Fight_Nothing()
 {
-	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Allora aspetterò un pochino
+	AI_Output (other,self,"DIA_Addon_Franco_Fight_Nothing_15_00"); //Allora aspetterÃ² un pochino
 	AI_Output (self,other,"DIA_Addon_Franco_Fight_Nothing_08_01"); //(beffardo) Risposta esatta.
 	
 	Info_ClearChoices (DIA_Addon_Franco_Fight);
@@ -488,7 +488,7 @@ INSTANCE DIA_Addon_Franco_Pig   (C_INFO)
 	condition   = DIA_Addon_Franco_Pig_Condition;
 	information = DIA_Addon_Franco_Pig_Info;
 	permanent   = TRUE;
-	description = "Che maiale! Ti prenderò!";
+	description = "Che maiale! Ti prenderÃ²!";
 };
 FUNC INT DIA_Addon_Franco_Pig_Condition()
 {	
@@ -499,7 +499,7 @@ FUNC INT DIA_Addon_Franco_Pig_Condition()
 };
 FUNC VOID DIA_Addon_Franco_Pig_Info()
 {	
-	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Che maiale! Ti prenderò!
+	AI_Output (other,self,"DIA_Addon_Franco_Pig_15_00");//Che maiale! Ti prenderÃ²!
 	AI_Output (self,other,"DIA_Addon_Franco_Pig_08_01");//(teso) Sciagurato, miserabile, vuoi attaccare briga con ME? Aspetta e vedrai!
 	
 	AI_StopProcessInfos(self);

@@ -20,13 +20,13 @@ func VOID DIA_Addon_Malcom_EXIT_Info()
 	
 	if (MalcomBotschaft == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Non farti mangiare, questo posto Ë pericolosissimo.
+		AI_Output (self, other, "DIA_Addon_Malcom_perm_04_01"); //Non farti mangiare, questo posto √® pericolosissimo.
 	}
 	else
 	{
 		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_03"); //Ehi! Se vai al campo, porta un messaggio a Henry.
 		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_04"); //Questi alberi sono davvero tosti.
-		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Per il legno dovr‡ aspettare ancora un po'. Vai a riferirglielo.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_05"); //Per il legno dovr√† aspettare ancora un po'. Vai a riferirglielo.
 		MalcomBotschaft = TRUE;
 	};
 	
@@ -119,15 +119,15 @@ func void DIA_Addon_Malcom_WasMachen_Info ()
 	if (Henry.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
 		AI_Output	(other, self, "DIA_Addon_Malcom_WasMachen_15_02"); //Henry?
-		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //» il capo della nostra truppa.
+		AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_00"); //√à il capo della nostra truppa.
 	};
 	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_04"); //Se ne sta tutto il giorno all'entrata del campo a darsi arie.
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Un migliore servizio per la comunit‡ e cavolate del genere.
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_05"); //Un migliore servizio per la comunit√† e cavolate del genere.
 	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_06"); //Ma lui personalmente non alza un dito.
 };
 
 // ************************************************************
-// 					Holz - Nachricht f¸r Henry
+// 					Holz - Nachricht f√ºr Henry
 // ************************************************************
 instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 {
@@ -136,7 +136,7 @@ instance DIA_Addon_Malcom_Entertrupp		(C_INFO)
 	condition	 = 	DIA_Addon_Malcom_Entertrupp_Condition;
 	information	 = 	DIA_Addon_Malcom_Entertrupp_Info;
 
-	description	 = 	"Henry Ë il vostro capo?";
+	description	 = 	"Henry √® il vostro capo?";
 };
 func int DIA_Addon_Malcom_Entertrupp_Condition ()
 {
@@ -147,12 +147,12 @@ func int DIA_Addon_Malcom_Entertrupp_Condition ()
 };
 func void DIA_Addon_Malcom_Entertrupp_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Henry Ë il vostro capo?
-	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //SÏ, Ë il capo dei razziatori.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Il nostro CAPITANO Ë Greg.
+	AI_Output	(other, self, "DIA_Addon_Malcom_Entertrupp_15_00"); //Henry √® il vostro capo?
+	AI_Output	(self, other, "DIA_Addon_Malcom_WasMachen_04_03"); //S√¨, √® il capo dei razziatori.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Add_04_01"); //Il nostro CAPITANO √® Greg.
 	if (GregIsBack == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Ma al momento Ë via.
+		AI_Output (self, other, "DIA_Addon_Malcom_Add_04_02"); //Ma al momento √® via.
 	};
 };
 
@@ -179,6 +179,6 @@ func void DIA_Addon_Malcom_Lager_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Malcom_Lager_15_00"); //Dove siete accampati?
 	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_01"); //Prosegui lungo questo sentiero, verso ovest.
-	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Henry Ë di fronte al campo, lo vedrai di sicuro.
+	AI_Output	(self, other, "DIA_Addon_Malcom_Lager_04_02"); //Henry √® di fronte al campo, lo vedrai di sicuro.
 };
 

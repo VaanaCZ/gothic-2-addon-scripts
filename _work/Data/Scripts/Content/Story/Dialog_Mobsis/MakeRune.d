@@ -3,7 +3,7 @@
 // MAKERUNE_S1
 // --------------
 // Funktion wird durch Runentisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_RuneBlank
+// benÃ¶tigtes Item dafÃ¼r: ItMi_RuneBlank
 // *****************************************************
 FUNC VOID MAKERUNE_S1 ()
 {

@@ -73,10 +73,10 @@ FUNC VOID DIA_Larius_WhoAreYou_Info()
 {	
 	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_00"); //Chi sei?
 	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_01"); //Io sono Larius, il governatore locale.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Anche se al momento potrebbe non sembrare, sono l'uomo pi˘ potente in citt‡.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_02"); //Anche se al momento potrebbe non sembrare, sono l'uomo pi√π potente in citt√†.
 	AI_Output (other,self ,"DIA_Larius_WhoAreYou_15_03"); //Dunque sei tu in carica qui?
 	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_04"); //Io... beh... al momento ho le mani legate.
-	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Lord Hagen Ë al comando qui, perlomeno fino a quando rester‡ in citt‡.
+	AI_Output (self ,other,"DIA_Larius_WhoAreYou_01_05"); //Lord Hagen √® al comando qui, perlomeno fino a quando rester√† in citt√†.
 		
 };
 
@@ -127,7 +127,7 @@ FUNC INT DIA_Larius_DieLage_Condition()
 FUNC VOID DIA_Larius_DieLage_Info()
 {	
 	AI_Output (other,self ,"DIA_Larius_DieLage_15_00"); //Come va?
-	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //Cosa te ne importa? Fintanto che i paladini rimarranno in citt‡, Lord Hagen si occuper‡ degli affari che riguardano la citt‡.
+	AI_Output (self ,other,"DIA_Larius_DieLage_01_01"); //Cosa te ne importa? Fintanto che i paladini rimarranno in citt√†, Lord Hagen si occuper√† degli affari che riguardano la citt√†.
 };
 
 
@@ -165,7 +165,7 @@ FUNC VOID DIA_Larius_Richterueberfall_Info()
 		{
 			AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_03"); //Anche se sei un mago dell'ordine...
 		};
-	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //La mia parola ha ancora un certo peso su questa citt‡. Non osare mai pi˘ infangare l'onorevole nome del giudice!
+	AI_Output (self ,other,"DIA_Larius_Richterueberfall_01_04"); //La mia parola ha ancora un certo peso su questa citt√†. Non osare mai pi√π infangare l'onorevole nome del giudice!
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos (self);
 };

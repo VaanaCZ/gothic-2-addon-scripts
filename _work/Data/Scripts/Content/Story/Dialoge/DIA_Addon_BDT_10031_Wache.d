@@ -39,7 +39,7 @@ FUNC VOID DIA_Addon_10031_Wache_Scatty_Info()
 	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_00");//Ehi, vuoi andare a scavare? Allora non dimenticarti di rifornirti da Scatty.
 	AI_Output (other, self, "DIA_Addon_BDT_10031_Wache_Scatty_15_01");//Che cosa mi serve?
 	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_02");//Beh, quanto meno un piccone. E qualche provvista non guasta.
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//O, e che ne dici di qualche pozione curativa? Laggi˘ ci sono gli scavaragno.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Scatty_06_03");//O, e che ne dici di qualche pozione curativa? Laggi√π ci sono gli scavaragno.
 	AI_StopProcessInfos (self);
 };
 //----------------------------------------------------------------------
@@ -71,6 +71,6 @@ FUNC VOID DIA_Addon_10031_Wache_Hi_Info()
 		AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_02");//Quando hanno saputo che erano liberi, se la sono data a gambe!
 		Wache_Joker = TRUE;
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Gi‡. Quindi non combinare guai e andr‡ tutto bene.
+	AI_Output (self, other, "DIA_Addon_BDT_10031_Wache_Hi_06_03");//Gi√†. Quindi non combinare guai e andr√† tutto bene.
 	
 };

@@ -40,7 +40,7 @@ FUNC VOID DIA_Addon_TAL_BDT_13_Hi_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Come va?
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//O finisci in pasto a una bestia oppure finisci in pasto a una bestia.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Questa palude sar‡ la nostra tomba...
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Questa palude sar√† la nostra tomba...
 };
 // *************************************************************************
 // 							Tal
@@ -62,7 +62,7 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Cosa sai di questa valle?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Qui c'Ë un mucchio di roba vecchia. Raven ci ha ordinato di raccogliere tutto.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//Qui c'√® un mucchio di roba vecchia. Raven ci ha ordinato di raccogliere tutto.
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Non so che cosa ci voglia fare, ma nessuno sano di mente rischierebbe il collo per qualche vecchio sasso...
 };
 // *************************************************************************
@@ -74,7 +74,7 @@ instance DIA_Addon_TAL_BDT_13_News(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_News_Condition;
 	information	= DIA_Addon_TAL_BDT_13_News_Info;
 	permanent	= TRUE;
-	description = "Qualche novit‡?";
+	description = "Qualche novit√†?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
@@ -84,9 +84,9 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Ci sono novit‡?
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Ci sono novit√†?
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//Li abbiamo davvero imbrogliati quei pirati.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Ci hanno fornito i prigionieri, ma non hanno mai visto un soldo in cambio. » ovvio che siano arrabbiati.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Ci hanno fornito i prigionieri, ma non hanno mai visto un soldo in cambio. √à ovvio che siano arrabbiati.
 	
 	if (BDT_13_einmal == FALSE)
 	{

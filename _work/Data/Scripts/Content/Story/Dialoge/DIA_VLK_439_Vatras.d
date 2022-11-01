@@ -33,7 +33,7 @@ func void DIA_Addon_Vatras_KillerWarning_Info ()
 {
 	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_00"); //A Khorinis girano molte voci sul tuo conto.
 	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_01"); //Si dice che tu sia responsabile dell'omicidio di innocenti.
-	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_02"); //Se è vero, posso solo metterti in guardia, figliolo. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_02"); //Se Ã¨ vero, posso solo metterti in guardia, figliolo. 
 	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_03"); //Non abbandonare il sentiero dell'equilibrio e della conservazione, o dovrai pagarne le conseguenze.
 	AI_Output	(self, other, "DIA_Addon_Vatras_KillerWarning_ADD_05_04"); //Dimmi, cosa possa fare per aiutarti?
 };
@@ -72,7 +72,7 @@ func void DIA_Addon_Vatras_LastWarning_Info ()
 func void DIA_Addon_Vatras_LastWarning_Arsch ()
 {
 	AI_Output	(other, self, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_15_00"); //Al diavolo.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_00"); //Non c'è ombra di rimorso nelle tue parole.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_00"); //Non c'Ã¨ ombra di rimorso nelle tue parole.
 	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Arsch_ADD_05_01"); //Non mi lasci scelta.
 	Info_ClearChoices	(DIA_Addon_Vatras_LastWarning);
 	B_VatrasPissedOff ();
@@ -81,7 +81,7 @@ func void DIA_Addon_Vatras_LastWarning_Arsch ()
 func void DIA_Addon_Vatras_LastWarning_Reue ()
 {
 	AI_Output	(other, self, "DIA_Addon_Vatras_LastWarning_Reue_ADD_15_00"); //Mi dispiace. Non sapevo cosa stavo facendo.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_00"); //Pregherò per te. Spero che tu possa presto rinsavire.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_00"); //PregherÃ² per te. Spero che tu possa presto rinsavire.
 	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_Reue_ADD_05_01"); //Guai a te se vengo a sapere del tuo coinvolgimento in un altro omicidio.
 	Info_ClearChoices	(DIA_Addon_Vatras_LastWarning);
 	VatrasMadKillerCount = MadKillerCount;
@@ -148,7 +148,7 @@ FUNC VOID DIA_Vatras_EXIT_Info()
 			Vatras_GehZuLares = TRUE;
 		};	
 			
-		AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_04"); //Dagli quest'ornamento e digli che dev'essere restituito. Saprà lui cosa fare.
+		AI_Output (self, other, "DIA_Addon_Vatras_LaresExit_05_04"); //Dagli quest'ornamento e digli che dev'essere restituito. SaprÃ  lui cosa fare.
 		CreateInvItems (self, ItMi_Ornament_Addon_Vatras, 1);									
 		B_GiveInvItems (self, other, ItMi_Ornament_Addon_Vatras, 1);	
 		
@@ -273,12 +273,12 @@ func void DIA_Addon_Vatras_Cavalorn_Info ()
 	{
 		B_GivePlayerXP (XP_Addon_Cavalorn_Letter2Vatras_Opened);
 		B_GiveInvItems (other, self, ItWr_SaturasFirstMessage_Addon,1);
-		AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_02"); //Si, ma... è stata aperta. Spero non sia caduta nelle mani sbagliate.
+		AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_02"); //Si, ma... Ã¨ stata aperta. Spero non sia caduta nelle mani sbagliate.
 	};
 
 	B_UseFakeScroll();
 	
-	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_03"); //Lo spero anch'io. Il messaggio che mi porti è importante.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_03"); //Lo spero anch'io. Il messaggio che mi porti Ã¨ importante.
 	AI_Output	(self, other, "DIA_Addon_Vatras_Cavalorn_05_04"); //Come sei entrato in possesso della lettera?
 	
 	Info_ClearChoices	(DIA_Addon_Vatras_Cavalorn);
@@ -294,17 +294,17 @@ func void DIA_Addon_Vatras_Cavalorn_Info ()
 func void DIA_Addon_Vatras_Cavalorn_Bandit ()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Bandit_15_00"); //L'ho presa ad alcuni banditi.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_01"); //(preoccupato) Per Adanos. La situazione è critica.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_02"); //Se ciò che dici è vero, abbiamo un grosso problema.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_03"); //Dovrò occuparmene il prima possibile.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_01"); //(preoccupato) Per Adanos. La situazione Ã¨ critica.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_02"); //Se ciÃ² che dici Ã¨ vero, abbiamo un grosso problema.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Bandit_05_03"); //DovrÃ² occuparmene il prima possibile.
 	Info_ClearChoices	(DIA_Addon_Vatras_Cavalorn);
 };
 func void DIA_Addon_Vatras_Cavalorn_Cavalorn ()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_00"); //L'ho avuta da Cavalorn, il cacciatore.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_01"); //(sorpreso) Cavalorn? Dov'è?
-	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_02"); //Mi ha detto di dirti che non ce l'ha fatta e che andrà al luogo dell'appuntamento. Qualunque cosa volesse dire.
-	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_03"); //Ti sei guadagnato la fiducia di Cavalorn. È un punto a tuo favore.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_01"); //(sorpreso) Cavalorn? Dov'Ã¨?
+	AI_Output (other, self, "DIA_Addon_Vatras_Cavalorn_Cavalorn_15_02"); //Mi ha detto di dirti che non ce l'ha fatta e che andrÃ  al luogo dell'appuntamento. Qualunque cosa volesse dire.
+	AI_Output (self, other, "DIA_Addon_Vatras_Cavalorn_Cavalorn_05_03"); //Ti sei guadagnato la fiducia di Cavalorn. Ãˆ un punto a tuo favore.
 	
 	B_GivePlayerXP (XP_Addon_CavalornTrust);
 	Info_ClearChoices	(DIA_Addon_Vatras_Cavalorn);
@@ -343,7 +343,7 @@ func void DIA_Addon_Vatras_CavalornSentMe_Info ()
 };
 
 // ************************************************************
-// 		Tell Me About RING 		(Trigger für MIS_Waffenhändler)
+// 		Tell Me About RING 		(Trigger fÃ¼r MIS_WaffenhÃ¤ndler)
 // ************************************************************
 instance DIA_Addon_Vatras_TellMe (C_INFO)
 {
@@ -369,17 +369,17 @@ func void DIA_Addon_Vatras_TellMe_Info ()
 
 	if (!Npc_KnowsInfo (other, DIA_Addon_Vatras_WannaBeRanger))
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_01"); //(ansioso) E perché mai dovrei farlo?
+		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_01"); //(ansioso) E perchÃ© mai dovrei farlo?
 		Vatras_Why = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_02"); //Dal momento che non sei ancora un membro della nostra comunità, non posso dirti TUTTO.
-		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_03"); //Ma ti dirò quel che posso.
+		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_02"); //Dal momento che non sei ancora un membro della nostra comunitÃ , non posso dirti TUTTO.
+		AI_Output (self, other, "DIA_Addon_Vatras_TellMe_05_03"); //Ma ti dirÃ² quel che posso.
 		
 		Info_ClearChoices (DIA_Addon_Vatras_TellMe);
 		Info_AddChoice (DIA_Addon_Vatras_TellMe, DIALOG_BACK, DIA_Addon_Vatras_TellMe_BACK);
-		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Qual è il vostro compito?", DIA_Addon_Vatras_TellMe_Philo);
+		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Qual Ã¨ il vostro compito?", DIA_Addon_Vatras_TellMe_Philo);
 		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Dove sono gli altri Maghi dell'Acqua?", DIA_Addon_Vatras_TellMe_OtherKdW);
 		Info_AddChoice (DIA_Addon_Vatras_TellMe, "Chi sono i membri dell'Anello dell'Acqua, allora?", DIA_Addon_Vatras_TellMe_WerNoch);
 	};
@@ -390,10 +390,10 @@ func void DIA_Addon_Vatras_TellMe_BACK()
 };
 func void DIA_Addon_Vatras_TellMe_Philo()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Philo_15_00"); //Qual è il vostro compito?
+	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Philo_15_00"); //Qual Ã¨ il vostro compito?
 	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_01"); //Ci frapponiamo tra l'ordine di Innos e il caos di Beliar.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_02"); //Se una delle due fazioni dovesse prendere il sopravvento, precipiteremmo nella schiavitù o nell'anarchia.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_03"); //Per questo preserviamo l'equilibrio tra le due. È l'unica cosa che renda possibile la vita in questo mondo.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_02"); //Se una delle due fazioni dovesse prendere il sopravvento, precipiteremmo nella schiavitÃ¹ o nell'anarchia.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Philo_05_03"); //Per questo preserviamo l'equilibrio tra le due. Ãˆ l'unica cosa che renda possibile la vita in questo mondo.
 	
 	if (MIS_Vatras_FindTheBanditTrader == 0)
 	{
@@ -404,24 +404,24 @@ func void DIA_Addon_Vatras_TellMe_Konkret()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_Konkret_15_00"); //(corrucciato) E questo cosa significa, in pratica?
 	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_01"); //La caduta della Barriera ha evocato molte minacce.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_02"); //Di queste, la più ovvia è quella dei briganti.
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_03"); //Non solo è diventato impossibile viaggiare per l'isola senza essere attaccati...
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_04"); //... per giunta c'è qualcuno in città che aiuta i briganti!
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_02"); //Di queste, la piÃ¹ ovvia Ã¨ quella dei briganti.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_03"); //Non solo Ã¨ diventato impossibile viaggiare per l'isola senza essere attaccati...
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_04"); //... per giunta c'Ã¨ qualcuno in cittÃ  che aiuta i briganti!
 	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Add_05_00"); //Abbiamo scoperto che i briganti vengono riforniti da un trafficante di armi di Khorinis. 
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_05"); //Noi cerchiamo di impedire che questa gente metta a repentaglio la città.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_05"); //Noi cerchiamo di impedire che questa gente metta a repentaglio la cittÃ .
 	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_Konkret_05_06"); //Se scopri qualcos'altro al riguardo, fammelo sapere.
 	MIS_Vatras_FindTheBanditTrader = LOG_RUNNING;
 	Vatras_ToMartin = TRUE;
 	Log_CreateTopic (TOPIC_Addon_BanditTrader, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BanditTrader, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BanditTrader,"A Khorinis c'è un venditore di armi che aiuta i briganti. Vatras vuole che indaghi."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"A Khorinis c'Ã¨ un venditore di armi che aiuta i briganti. Vatras vuole che indaghi."); 
 	B_LogEntry (TOPIC_Addon_BanditTrader,"Martin, il mastro furiere dei paladini, sta indagando sugli affari del venditore di armi. Lo posso trovare vicino al porto dove i paladini conservano i loro rifornimenti."); 
 	B_LogEntry (TOPIC_Addon_RingOfWater,"L''Anello dell'Acqua' si sta occupando del problema dei briganti a Khorinis."); 
 };
 func void DIA_Addon_Vatras_TellMe_OtherKdW()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_TellMe_OtherKdW_15_00"); //Dove sono gli altri Maghi dell'Acqua?
-	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_01"); //Stanno esplorando le rovine di un'antica civiltà a nord-est di Khorinis.
+	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_01"); //Stanno esplorando le rovine di un'antica civiltÃ  a nord-est di Khorinis.
 	AI_Output (self, other, "DIA_Addon_Vatras_TellMe_OtherKdW_05_02"); //Sospettiamo che in quelle rovine si celi un passaggio verso una parte dell'isola ancora ignota.
 	
 	Log_CreateTopic (TOPIC_Addon_KDW, LOG_MISSION);
@@ -470,17 +470,17 @@ func void DIA_Addon_Vatras_WannaBeRanger_Info ()
 	
 	if (Npc_KnowsInfo (other, DIA_Addon_Cavalorn_Ring))
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_01"); //Davvero? Dunque hai già soddisfatto il primo requisito.
+		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_01"); //Davvero? Dunque hai giÃ  soddisfatto il primo requisito.
 		AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_15_02"); //Cosa vuoi dire?
 		AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_03"); //Che tra noi dev'esserci qualcuno che si fida di te. In caso contrario, non sapresti neppure che esistiamo.
 	};
 	
 	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_05_04"); //Ma io non so nulla di te...
-	//AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_03"); //Ich will dich wohl segnen, Fremder, aber ich kenne dich nicht. Erzähle mir was über dich.
+	//AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_03"); //Ich will dich wohl segnen, Fremder, aber ich kenne dich nicht. ErzÃ¤hle mir was Ã¼ber dich.
 	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_04"); //Che cosa vuoi sapere?
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_05"); //Beh, potresti dirmi da dove vieni e perché sei qui in città.
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_05"); //Beh, potresti dirmi da dove vieni e perchÃ© sei qui in cittÃ .
 	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_06"); //Ho un messaggio importante per il capo dei paladini.
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_07"); //Cos'è questo messaggio?
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_07"); //Cos'Ã¨ questo messaggio?
 		
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
 	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"I draghi sono arrivati...",DIA_Vatras_INFLUENCE_FIRST_TRUTH);
@@ -492,7 +492,7 @@ FUNC VOID DIA_Vatras_INFLUENCE_FIRST_TRUTH()
 	
 	if (Vatras_First == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_05_01"); //Se quello che dici è vero, l'equilibrio della terrà verrà turbato. Chi te l'ha detto?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_FIRST_TRUTH_05_01"); //Se quello che dici Ã¨ vero, l'equilibrio della terrÃ  verrÃ  turbato. Chi te l'ha detto?
 	}
 	else
 	{
@@ -532,7 +532,7 @@ FUNC VOID DIA_Vatras_INFLUENCE_SECOND_TRUTH()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_05_02"); //Il negromante... Così è vivo... (pensieroso) e ha mandato te? Chi sei veramente?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_TRUTH_05_02"); //Il negromante... CosÃ¬ Ã¨ vivo... (pensieroso) e ha mandato te? Chi sei veramente?
 	};
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
 	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Sono solo un avventuriero del sud...",DIA_Vatras_INFLUENCE_THIRD_LIE);
@@ -550,7 +550,7 @@ FUNC VOID DIA_Vatras_INFLUENCE_SECOND_LIE()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_LIE_05_02"); //Aha. Ed è per questo che hai fatto questo viaggio. Chi sei veramente?
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_SECOND_LIE_05_02"); //Aha. Ed Ã¨ per questo che hai fatto questo viaggio. Chi sei veramente?
 	};
 	Info_ClearChoices   (DIA_Addon_Vatras_WannaBeRanger);
 	Info_AddChoice 		(DIA_Addon_Vatras_WannaBeRanger,"Sono un avventuriero del sud...",DIA_Vatras_INFLUENCE_THIRD_LIE);
@@ -575,7 +575,7 @@ func VOID B_Vatras_INFLUENCE_REPEAT()
 	};
 	if (Vatras_Second  == TRUE)
 	{
-		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_04"); //...al quale è stato detto dal negromante Xardas...
+		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_04"); //...al quale Ã¨ stato detto dal negromante Xardas...
 	}
 	else
 	{
@@ -598,21 +598,21 @@ func VOID B_Vatras_INFLUENCE_REPEAT()
 		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_09"); //Sembra una storia di fantasia, ma non credo che tu stia mentendo.
 		AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_10"); //Tuttavia devo presupporre che i tuoi motivi sono onorevoli.
 		
-		AI_Output (self, other, "DIA_ADDON_Vatras_INFLUENCE_REPEAT_05_11"); //Ti offro la possibilità di entrare nell'Anello dell'acqua.
+		AI_Output (self, other, "DIA_ADDON_Vatras_INFLUENCE_REPEAT_05_11"); //Ti offro la possibilitÃ  di entrare nell'Anello dell'acqua.
 		
 		Info_ClearChoices  (DIA_Addon_Vatras_WannaBeRanger);
 	}
 	else 
 	{
 		AI_Output (self, other, "DIA_Vatras_Add_05_00"); //Credo che mi nascondi qualcosa.
-		AI_Output (self, other, "DIA_Vatras_Add_05_01"); //Se sei preoccupato, potrei dimenticarmi di ciò che hai detto, stai tranquillo.
+		AI_Output (self, other, "DIA_Vatras_Add_05_01"); //Se sei preoccupato, potrei dimenticarmi di ciÃ² che hai detto, stai tranquillo.
 		AI_Output (self, other, "DIA_Vatras_Add_05_02"); //Ho giurato di mantenere tutti i segreti che mi sono stati affidati.
 		if (Wld_IsTime(05,05,20,10))
 		{
 			AI_Output (other, self, "DIA_Vatras_Add_15_03"); //E cosa mi dici di tutta questa gente?
-			AI_Output (self, other, "DIA_Vatras_Add_05_04"); //Capisco solo la metà di quello che PREDICO loro. Perciò, non preoccuparti.
+			AI_Output (self, other, "DIA_Vatras_Add_05_04"); //Capisco solo la metÃ  di quello che PREDICO loro. PerciÃ², non preoccuparti.
 		};
-		AI_Output (self, other, "DIA_Vatras_Add_05_05"); //Cominciamo dall'inizio. Qual è il messaggio?
+		AI_Output (self, other, "DIA_Vatras_Add_05_05"); //Cominciamo dall'inizio. Qual Ã¨ il messaggio?
 		
 		//ADDON - SC kann nicht mehr versagen!
 		//Vatras_Chance = TRUE; 
@@ -642,7 +642,7 @@ FUNC VOID DIA_Vatras_INFLUENCE_THIRD_LIE()
 // 			  			How to JOIN
 // ************************************************************
 // ------------------------------------------------------------
-// Was muß ich tun?
+// Was muÃŸ ich tun?
 // ------------------------------------------------------------
 instance DIA_Addon_Vatras_HowToJoin	(C_INFO)
 {
@@ -663,8 +663,8 @@ func int DIA_Addon_Vatras_HowToJoin_Condition ()
 func void DIA_Addon_Vatras_HowToJoin_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_15_00"); //Cosa devo fare per unirmi all'Anello?
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_01"); //Sappi che unendoti all'Anello ti assumi una grande responsabilità.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_02"); //Non a tutti è concesso unirsi a noi.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_01"); //Sappi che unendoti all'Anello ti assumi una grande responsabilitÃ .
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_02"); //Non a tutti Ã¨ concesso unirsi a noi.
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_03"); //Se vuoi entrare nell'Anello, devi dimostrare di comportarti come uno di noi.
 	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_15_04"); //Ovvero?
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_05_05"); //Per essere accettato nei ranghi dell'Anello, dovrai compiere un'impresa eroica.
@@ -673,35 +673,35 @@ func void DIA_Addon_Vatras_HowToJoin_Info ()
 	Info_ClearChoices	(DIA_Addon_Vatras_HowToJoin);	
 	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Allora, quale impresa potrebbe convincerti?", DIA_Addon_Vatras_HowToJoin_WhatsGreat);
 	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Ho liberato molte persone e distrutto la barriera.", DIA_Addon_Vatras_HowToJoin_FreedMen );
-	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Ho sconfitto il Dormiente. Non è un'impresa abbastanza grandiosa?", DIA_Addon_Vatras_HowToJoin_Sleeper );
+	Info_AddChoice	(DIA_Addon_Vatras_HowToJoin, "Ho sconfitto il Dormiente. Non Ã¨ un'impresa abbastanza grandiosa?", DIA_Addon_Vatras_HowToJoin_Sleeper );
 };
 func void DIA_Addon_Vatras_HowToJoin_Sleeper ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_Sleeper_15_00"); //Ho sconfitto il Dormiente. Non è un'impresa abbastanza grandiosa?
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_Sleeper_15_00"); //Ho sconfitto il Dormiente. Non Ã¨ un'impresa abbastanza grandiosa?
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_01"); //Molte voci sono giunte al mio orecchio.
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_02"); //Compresa la storia dell'esilio della bestia che chiamiamo il Dormiente.
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_03"); //Non sapevo che fosse stato un solo uomo a compiere quest'impresa, anche se i tuoi occhi mi dicono che sei convinto di quanto dici.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_04"); //Ciò mi confonde alquanto, ma può darsi che i sensi mi ingannino.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_Sleeper_05_04"); //CiÃ² mi confonde alquanto, ma puÃ² darsi che i sensi mi ingannino.
 };
 func void DIA_Addon_Vatras_HowToJoin_FreedMen ()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_15_00"); //Ho liberato molte persone e distrutto la barriera.
 	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_01"); //Ammesso che sia VERAMENTE opera tua...
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_02"); //Ciò che è accaduto nella Valle delle Miniere non ha liberato solo i Maghi dell'Acqua e i cittadini onesti...
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_02"); //CiÃ² che Ã¨ accaduto nella Valle delle Miniere non ha liberato solo i Maghi dell'Acqua e i cittadini onesti...
 	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_03"); //Tutti i criminali del paese stanno mettendo a ferro e fuoco Khorinis, tormentando la popolazione.
-	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_04"); //I briganti hanno già assunto il controllo di vaste aree fuori dalla città. È divenuto praticamente impossibile uscire dalla città e farvi ritorno illesi.
+	AI_Output (self, other, "DIA_Addon_Vatras_WannaBeRanger_FreedMen_05_04"); //I briganti hanno giÃ  assunto il controllo di vaste aree fuori dalla cittÃ . Ãˆ divenuto praticamente impossibile uscire dalla cittÃ  e farvi ritorno illesi.
 };
 func void DIA_Addon_Vatras_HowToJoin_WhatsGreat()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_00"); //Allora, quale impresa potrebbe convincerti?
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_01"); //Khorinis si trova di fronte a un grande mistero.
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_02"); //Il numero degli scomparsi sembra aumentare di giorno in giorno.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_03"); //Se riuscirai a scoprire cosa ne è stato di loro, ti accoglierò nell''Anello dell'Acqua'.
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_03"); //Se riuscirai a scoprire cosa ne Ã¨ stato di loro, ti accoglierÃ² nell''Anello dell'Acqua'.
 	
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
 	B_LogEntry (TOPIC_Addon_RingOfWater, LogText_Addon_KDWRight); 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Vatras mi farà entrare nell''Anello dell'Acqua' se prima scoprirò dove sono le persone scomparse."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Vatras mi farÃ  entrare nell''Anello dell'Acqua' se prima scoprirÃ² dove sono le persone scomparse."); 
 
 	if (SC_HearedAboutMissingPeople == FALSE)
 	{
@@ -714,9 +714,9 @@ func void DIA_Addon_Vatras_HowToJoin_WhatsGreat()
 	SC_HearedAboutMissingPeople = TRUE;
 
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_04"); //Tuttavia...
-	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_05"); //Sì?
+	AI_Output (other, self, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_15_05"); //SÃ¬?
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_06"); //... dovrai prima portare il tuo messaggio ai paladini.
-	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_07"); //È una questione della massima importanza!
+	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_07"); //Ãˆ una questione della massima importanza!
 	AI_Output (self, other, "DIA_Addon_Vatras_HowToJoin_WhatsGreat_05_08"); //Parla con Lord Hagen
 	
 	B_LogEntry (TOPIC_Addon_RingOfWater,"Vatras vuole che porti un messaggio importante a Lord Hagen."); 
@@ -733,7 +733,7 @@ instance DIA_Addon_Vatras_GuildBypass (C_INFO)
 	condition	= DIA_Addon_Vatras_GuildBypass_Condition;
 	information	= DIA_Addon_Vatras_GuildBypass_Info;
 
-	description	= "Ma Lord Hagen non mi riceverà!";
+	description	= "Ma Lord Hagen non mi riceverÃ !";
 };
 func int DIA_Addon_Vatras_GuildBypass_Condition ()
 {
@@ -745,38 +745,38 @@ func int DIA_Addon_Vatras_GuildBypass_Condition ()
 };
 func void DIA_Addon_Vatras_GuildBypass_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_15_00"); //Ma Lord Hagen non mi riceverà!
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_01"); //Lo farà, non dubitarne. PURCHÉ tu divenga membro di una comunità potente.
+	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_15_00"); //Ma Lord Hagen non mi riceverÃ !
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_01"); //Lo farÃ , non dubitarne. PURCHÃ‰ tu divenga membro di una comunitÃ  potente.
 	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_02"); //L'Anello ha collegamenti ovunque.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_03"); //Ti aiuteremo perché tu possa consegnare il tuo messaggio quanto prima.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_04"); //Parlane con Lares. È una persona fidata, e ti aiuterà.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_03"); //Ti aiuteremo perchÃ© tu possa consegnare il tuo messaggio quanto prima.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_05_04"); //Parlane con Lares. Ãˆ una persona fidata, e ti aiuterÃ .
 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Per riuscire a vedere Lord Hagen, devo entrare a far parte di una delle potenti comunità di Khorinis."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Per riuscire a vedere Lord Hagen, devo entrare a far parte di una delle potenti comunitÃ  di Khorinis."); 
 	
 
 	Info_ClearChoices (DIA_Addon_Vatras_GuildBypass);
-	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Lo farò.", DIA_Addon_Vatras_GuildBypass_BACK );
-	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "In quale comunità dovrei entrare?", DIA_Addon_Vatras_GuildBypass_WhichGuild);
+	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Lo farÃ².", DIA_Addon_Vatras_GuildBypass_BACK );
+	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "In quale comunitÃ  dovrei entrare?", DIA_Addon_Vatras_GuildBypass_WhichGuild);
 };
 func void DIA_Addon_Vatras_GuildBypass_BACK()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_BACK_15_00"); //Lo farò.
+	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_BACK_15_00"); //Lo farÃ².
 	Vatras_GehZuLares = TRUE;
 	
 	Info_ClearChoices (DIA_Addon_Vatras_GuildBypass);
 };
 func void DIA_Addon_Vatras_GuildBypass_WhichGuild()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_WhichGuild_15_00"); //In quale comunità dovrei entrare?
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_01"); //Sono solo tre le comunità dotate di sufficiente influenza.
+	AI_Output (other, self, "DIA_Addon_Vatras_GuildBypass_WhichGuild_15_00"); //In quale comunitÃ  dovrei entrare?
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_01"); //Sono solo tre le comunitÃ  dotate di sufficiente influenza.
 	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_02"); //La guardia cittadina, il monastero dei Maghi del Fuoco e le truppe di mercenari presso la fattoria del proprietario terriero.
 	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_03"); //Scegli tu, figliolo.
-	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_04"); //Lares potrà aiutarti a prendere una decisione. Parlane con lui.
+	AI_Output (self, other, "DIA_Addon_Vatras_GuildBypass_WhichGuild_05_04"); //Lares potrÃ  aiutarti a prendere una decisione. Parlane con lui.
 
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Tra le comunità potenti ci sono i MAGHI DEL FUOCO, la MILIZIA e i MERCENARI nella fattoria del proprietario terriero."); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Tra le comunitÃ  potenti ci sono i MAGHI DEL FUOCO, la MILIZIA e i MERCENARI nella fattoria del proprietario terriero."); 
 	
 	Info_ClearChoices (DIA_Addon_Vatras_GuildBypass);
-	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Lo farò.", DIA_Addon_Vatras_GuildBypass_BACK );
+	Info_AddChoice (DIA_Addon_Vatras_GuildBypass, "Lo farÃ².", DIA_Addon_Vatras_GuildBypass_BACK );
 };
 // ------------------------------------------------------------
 // Ranger NOW 	(MissingPeople ist hier schon Succes!!!)
@@ -805,12 +805,12 @@ func void DIA_Addon_Vatras_NowRanger_Info ()
 	AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_00"); //Sono pronto a entrare nell'Anello dell'Acqua.
 	AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_01"); //Hai consegnato il tuo messaggio a Lord Hagen?
 	
-	if (Kapitel >= 2) //Pass-Schlüssel von Hagen
+	if (Kapitel >= 2) //Pass-SchlÃ¼ssel von Hagen
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_02"); //Sì.
+		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_02"); //SÃ¬.
 		if (MIS_OLDWORLD != LOG_SUCCESS)
 		{
-			AI_Output (other, self, "DIA_Addon_Vatras_NowRanger_15_03"); //Ma vuole che vada nella Valle delle Miniere e gli porti le prove di ciò che dico!
+			AI_Output (other, self, "DIA_Addon_Vatras_NowRanger_15_03"); //Ma vuole che vada nella Valle delle Miniere e gli porti le prove di ciÃ² che dico!
 			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_04"); //Devi decidere TU cosa fare adesso.
 			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_05"); //Per me era importante che lui ricevesse il messaggio. Ora sta a lui decidere se agire o aspettare le tue prove.
 			AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_06"); //Per quanto ti riguarda...
@@ -820,18 +820,18 @@ func void DIA_Addon_Vatras_NowRanger_Info ()
 			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_07"); //Bene.
 		};
 		
-		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_08"); //Hai dimostrato di esserci indispensabile. Sarai uno dei nostri discepoli e porterai nel mondo la volontà di Adanos.
+		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_08"); //Hai dimostrato di esserci indispensabile. Sarai uno dei nostri discepoli e porterai nel mondo la volontÃ  di Adanos.
 		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_09"); //Ti consegno questo Anello dell'Acqua. Possa aiutarti a trovare alleati e a preservare insieme ad essi l'equilibrio del mondo.
 		CreateInvItems (self, ItRi_Ranger_Addon, 1);									
 		B_GiveInvItems (self, other, ItRi_Ranger_Addon, 1);		
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_10"); //Sei il primo Mago del Fuoco a entrare nei nostri ranghi. Ciò mi rende particolarmente felice.
+			AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_10"); //Sei il primo Mago del Fuoco a entrare nei nostri ranghi. CiÃ² mi rende particolarmente felice.
 		};
 		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_11"); //Che Adanos ti protegga. Ora va' a incontrare i tuoi fratelli.
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_12"); //Ti aspettano alla taverna 'L'Arpia Morta' per accoglierti in seno alla comunità.
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_13"); //Conosci già la taverna: è sulla strada per la fattoria di Onar.
-		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_14"); //Non dimenticare di indossare l'anello, così che i tuoi fratelli vedano che sei uno di loro.
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_12"); //Ti aspettano alla taverna 'L'Arpia Morta' per accoglierti in seno alla comunitÃ .
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_13"); //Conosci giÃ  la taverna: Ã¨ sulla strada per la fattoria di Onar.
+		AI_Output (self, other, "DIA_Addon_Vatras_NowRanger_05_14"); //Non dimenticare di indossare l'anello, cosÃ¬ che i tuoi fratelli vedano che sei uno di loro.
 		
 		B_LogEntry (TOPIC_Addon_RingOfWater,"Ora appartengo all''Anello dell'Acqua' e devo incontrare i miei fratelli nella taverna dell''Arpia Morta'."); 
 
@@ -843,7 +843,7 @@ func void DIA_Addon_Vatras_NowRanger_Info ()
 	else
 	{
 		AI_Output	(other, self, "DIA_Addon_Vatras_NowRanger_15_15"); //No. Non ancora.
-		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_16"); //Fai in fretta allora. Vai da lui. Il tuo messaggio è molto importante!
+		AI_Output	(self, other, "DIA_Addon_Vatras_NowRanger_05_16"); //Fai in fretta allora. Vai da lui. Il tuo messaggio Ã¨ molto importante!
 	};
 };
 // ------------------------------------------------------------
@@ -868,13 +868,13 @@ func void DIA_Addon_Vatras_CloseMeeting_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_CloseMeeting_15_00"); //Vengo per conto dei fratelli dell''Anello'.
 	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_01"); //Bene! Ti stavo aspettando!
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_02"); //Ti farò attraversare il portale insieme agli altri Maghi dell'Acqua.
-	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_03"); //Dovrai rintracciare l'ex barone del metallo Raven e scoprire perché ha rapito gli abitanti di Khorinis.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_02"); //Ti farÃ² attraversare il portale insieme agli altri Maghi dell'Acqua.
+	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_03"); //Dovrai rintracciare l'ex barone del metallo Raven e scoprire perchÃ© ha rapito gli abitanti di Khorinis.
 	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_04"); //Noi continueremo a occuparci dei briganti.
 	AI_Output (self, other, "DIA_Addon_Vatras_CloseMeeting_05_05"); //Porta questa lettera a Saturas. D'ora in poi eseguirai i suoi ordini.
 	if (MIS_Addon_Lares_Ornament2Saturas != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Vatras_CloseMeeting_05_08"); //Lares ti porterà da lui se non ha ancora consegnato l'ornamento.
+		AI_Output	(self, other, "DIA_Addon_Vatras_CloseMeeting_05_08"); //Lares ti porterÃ  da lui se non ha ancora consegnato l'ornamento.
 	};
 	CreateInvItems (self, ItWr_Vatras2Saturas_FindRaven, 1);									
 	B_GiveInvItems (self, other, ItWr_Vatras2Saturas_FindRaven, 1);	
@@ -884,7 +884,7 @@ func void DIA_Addon_Vatras_CloseMeeting_Info ()
 
 	Log_CreateTopic (TOPIC_Addon_Sklaven, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Sklaven, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Sklaven,"Devo scoprire perché Raven ha catturato i cittadini di Khorinis."); 
+	B_LogEntry (TOPIC_Addon_Sklaven,"Devo scoprire perchÃ© Raven ha catturato i cittadini di Khorinis."); 
 
 
 	RangerMeetingRunning = LOG_SUCCESS; //Joly:Muss hier stehen!Sonst Chaos mit Rangern! -> Meeting
@@ -908,7 +908,7 @@ instance DIA_Addon_Vatras_MissingPeople (C_INFO)
 	condition	= DIA_Addon_Vatras_MissingPeople_Condition;
 	information	= DIA_Addon_Vatras_MissingPeople_Info;
 	permanent	= TRUE;
-	description	= "A proposito delle persone scomparse…";
+	description	= "A proposito delle persone scomparseâ€¦";
 };
 func int DIA_Addon_Vatras_MissingPeople_Condition ()
 {
@@ -921,7 +921,7 @@ var int DIA_Addon_Vatras_MissingPeople_Wo_NoPerm;
 func void DIA_Addon_Vatras_MissingPeople_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_MissingPeople_15_00"); //E per quelle persone scomparse...
-	AI_Output (self, other, "DIA_Addon_Vatras_MissingPeople_05_01"); //Sì?
+	AI_Output (self, other, "DIA_Addon_Vatras_MissingPeople_05_01"); //SÃ¬?
 	
 	Info_ClearChoices (DIA_Addon_Vatras_MissingPeople);
 	Info_AddChoice (DIA_Addon_Vatras_MissingPeople, DIALOG_BACK, DIA_Addon_Vatras_MissingPeople_BACK);
@@ -931,12 +931,12 @@ func void DIA_Addon_Vatras_MissingPeople_Info ()
 	}
 	else
 	{
-		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Lascia che ti dica quello che so…", DIA_Addon_Vatras_MissingPeople_Report);
+		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Lascia che ti dica quello che soâ€¦", DIA_Addon_Vatras_MissingPeople_Report);
 	};
 	
 	if (DIA_Addon_Vatras_MissingPeople_Wo_NoPerm == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Qual è il primo luogo in cui cercarle?", DIA_Addon_Vatras_MissingPeople_Wo);
+		Info_AddChoice (DIA_Addon_Vatras_MissingPeople, "Qual Ã¨ il primo luogo in cui cercarle?", DIA_Addon_Vatras_MissingPeople_Wo);
 	};
 };
 func void DIA_Addon_Vatras_MissingPeople_BACK()
@@ -945,12 +945,12 @@ func void DIA_Addon_Vatras_MissingPeople_BACK()
 };
 func void DIA_Addon_Vatras_MissingPeople_Wo()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_HintMissingPeople_Wo_15_00"); //Qual è il primo luogo in cui cercarle?
-	AI_Output (self, other, "DIA_Addon_Vatras_HintMissingPeople_Wo_05_01"); //La maggior parte di esse è scomparsa al porto. Direi che dovresti iniziare le tue ricerche da lì.
+	AI_Output (other, self, "DIA_Addon_Vatras_HintMissingPeople_Wo_15_00"); //Qual Ã¨ il primo luogo in cui cercarle?
+	AI_Output (self, other, "DIA_Addon_Vatras_HintMissingPeople_Wo_05_01"); //La maggior parte di esse Ã¨ scomparsa al porto. Direi che dovresti iniziare le tue ricerche da lÃ¬.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Sono quasi tutti scomparsi nella zona del porto di Khorinis. È lì che devo cominciare le mie ricerche."); 
+	B_LogEntry (TOPIC_Addon_WhoStolePeople,"Sono quasi tutti scomparsi nella zona del porto di Khorinis. Ãˆ lÃ¬ che devo cominciare le mie ricerche."); 
 	
 	DIA_Addon_Vatras_MissingPeople_Wo_NoPerm = TRUE;
 };
@@ -990,7 +990,7 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (Elvrich_SCKnowsPirats == TRUE)
 	&& (MISSINGPEOPLEINFO[4] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_04"); //Di certo sono coinvolti anche i pirati, ma non ho ancora scoperto qual è il loro ruolo.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_04"); //Di certo sono coinvolti anche i pirati, ma non ho ancora scoperto qual Ã¨ il loro ruolo.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[4] = TRUE;
 	};	
@@ -1027,16 +1027,16 @@ func void DIA_Addon_Vatras_MissingPeople_Report()
 	if (SC_KnowsDexterAsKidnapper == TRUE)
 	&& (MISSINGPEOPLEINFO[8] == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_09"); //Il capo dei briganti si chiama Dexter. È lui il responsabile dei rapimenti.
+		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_09"); //Il capo dei briganti si chiama Dexter. Ãˆ lui il responsabile dei rapimenti.
 		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Report_15_10"); //Ho conosciuto Dexter nella colonia penale. All'epoca lavorava per il barone del metallo Gomez.
-		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_11"); //Di certo si ricorderà di te. Sii prudente.
+		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_11"); //Di certo si ricorderÃ  di te. Sii prudente.
 		Vatras_MissingPeopleReports = (Vatras_MissingPeopleReports + 1);
 		MISSINGPEOPLEINFO[8] = TRUE;
 	};
 
 	if (Vatras_MissingPeopleReports != 0)
 	{
-		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_12"); //Penso che tu sia sulla pista giusta. Continua così!
+		AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Report_05_12"); //Penso che tu sia sulla pista giusta. Continua cosÃ¬!
 		var int XP_Vatras_MissingPeopleReports;
 		XP_Vatras_MissingPeopleReports = (XP_Addon_Vatras_MissingPeopleReport * Vatras_MissingPeopleReports );
 		B_GivePlayerXP (XP_Vatras_MissingPeopleReports);
@@ -1059,7 +1059,7 @@ func void DIA_Addon_Vatras_MissingPeople_Success()
 		AI_Output	(other, self, "DIA_Addon_Vatras_MissingPeople_Success_15_05"); //Ecco.
 		B_UseFakeScroll ();
 	};
-	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_06"); //Bene. Hai fatto un ottimo lavoro. Temevo che non avremmo mai scoperto la verità.
+	AI_Output	(self, other, "DIA_Addon_Vatras_MissingPeople_Success_05_06"); //Bene. Hai fatto un ottimo lavoro. Temevo che non avremmo mai scoperto la veritÃ .
 	MIS_Addon_Vatras_WhereAreMissingPeople = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Vatras_WhereAreMissingPeople);
 };
@@ -1085,7 +1085,7 @@ func int DIA_Addon_Vatras_Free_Condition ()
 func void DIA_Addon_Vatras_Free_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Vatras_Free_15_00"); //Le persone scomparse sono tornate!
-	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_01"); //Sì. Il loro viaggio si è concluso felicemente.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_01"); //SÃ¬. Il loro viaggio si Ã¨ concluso felicemente.
 	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_02"); //Ma il nostro viaggio continua... Vai, e che Adanos ti benedica.
 	AI_Output	(self, other, "DIA_Addon_Vatras_Free_05_03"); //(pregnado) Adanos, benedici quest'uomo. Illumina il suo cammino e dagli la forza di resistere ai pericoli.
 	
@@ -1095,14 +1095,14 @@ func void DIA_Addon_Vatras_Free_Info ()
 	
 	Snd_Play ("Levelup");
 	
-	// ***Mike** Auskommentiert, weil FALSCHE funktion - bitte Rücksprache, bevor du's wieder änderst
+	// ***Mike** Auskommentiert, weil FALSCHE funktion - bitte RÃ¼cksprache, bevor du's wieder Ã¤nderst
 	//var string concatText;
 	//concatText = ConcatStrings (NAME_Bonus_ManaMax,IntToString (4));
 	//PrintScreen (concatText, -1,-1,FONT_ScreenSmall,2); 
 };
 
 // ************************************************************
-// 			  				Waffenhändler
+// 			  				WaffenhÃ¤ndler
 // ************************************************************
 instance DIA_Addon_Vatras_Waffen (C_INFO)
 {
@@ -1111,7 +1111,7 @@ instance DIA_Addon_Vatras_Waffen (C_INFO)
 	condition	= DIA_Addon_Vatras_Waffen_Condition;
 	information	= DIA_Addon_Vatras_Waffen_Info;
 	permanent 	= TRUE;
-	description = "A proposito di questo venditore di armi…";
+	description = "A proposito di questo venditore di armiâ€¦";
 };
 func int DIA_Addon_Vatras_Waffen_Condition ()
 {
@@ -1129,7 +1129,7 @@ func void DIA_Addon_Vatras_Waffen_Info ()
 	if (Fernando_ImKnast == TRUE)
 	|| (Fernando_HatsZugegeben == TRUE)
 	{
-		Info_AddChoice (DIA_Addon_Vatras_Waffen, "So chi è il trafficante che ha venduto armi ai briganti!", DIA_Addon_Vatras_Waffen_Success);
+		Info_AddChoice (DIA_Addon_Vatras_Waffen, "So chi Ã¨ il trafficante che ha venduto armi ai briganti!", DIA_Addon_Vatras_Waffen_Success);
 	}
 	else
 	{
@@ -1143,21 +1143,21 @@ func void DIA_Addon_Vatras_Waffen_BACK()
 func void DIA_Addon_Vatras_Waffen_ToMartin()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_ToMartin_15_00"); //Cosa sai sul trafficante d'armi?
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_01"); //Chiedi a Martin, il furiere dei paladini. Dovrebbe saperne di più.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_02"); //Gli è stato ordinato di smascherare il trafficante d'armi.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_03"); //Puoi trovare Martin nella zona del porto. Cerca un mucchio di casse, provviste e paladini: Martin sarà lì vicino.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_01"); //Chiedi a Martin, il furiere dei paladini. Dovrebbe saperne di piÃ¹.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_02"); //Gli Ã¨ stato ordinato di smascherare il trafficante d'armi.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_ToMartin_05_03"); //Puoi trovare Martin nella zona del porto. Cerca un mucchio di casse, provviste e paladini: Martin sarÃ  lÃ¬ vicino.
 		
 	Vatras_ToMartin = TRUE;
 };
 
 func void DIA_Addon_Vatras_Waffen_Success ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_00"); //So chi è il trafficante che ha venduto armi ai briganti!
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_01"); //Il suo nome è Fernando.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_00"); //So chi Ã¨ il trafficante che ha venduto armi ai briganti!
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Success_15_01"); //Il suo nome Ã¨ Fernando.
 	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_Success_05_02"); //Molto bene. Martin ha fatto quanto necessario per impedirgli di proseguire i suoi traffici?
 	if (Fernando_ImKnast == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_Waffen_Success_15_03"); //Sì. Martin farà in modo che non esca di prigione tanto presto.
+		AI_Output	(other, self, "DIA_Addon_Vatras_Waffen_Success_15_03"); //SÃ¬. Martin farÃ  in modo che non esca di prigione tanto presto.
 		AI_Output	(self, other, "DIA_Addon_Vatras_Waffen_Success_05_04"); //Bel lavoro, figliolo.
 
 		if (Npc_KnowsInfo (other, DIA_ADDON_Vatras_WannaBeRanger))
@@ -1180,7 +1180,7 @@ func void DIA_Addon_Vatras_Waffen_Success ()
 };
 
 // ************************************************************
-// 			  				Waffenhändler
+// 			  				WaffenhÃ¤ndler
 // ************************************************************
 instance DIA_Addon_Vatras_WISP (C_INFO)
 {
@@ -1189,7 +1189,7 @@ instance DIA_Addon_Vatras_WISP (C_INFO)
 	condition	= DIA_Addon_Vatras_WISP_Condition;
 	information	= DIA_Addon_Vatras_WISP_Info;
 
-	description = "C'è nulla che possa essemi utile nella mia ricerca?";
+	description = "C'Ã¨ nulla che possa essemi utile nella mia ricerca?";
 };
 func int DIA_Addon_Vatras_WISP_Condition ()
 {
@@ -1200,62 +1200,62 @@ func int DIA_Addon_Vatras_WISP_Condition ()
 };
 func void DIA_Addon_Vatras_WISP_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_WISP_15_00"); //C'è nulla che possa essemi utile nella mia ricerca?
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_01"); //Sei testardo, giovanotto. Ma forse c'è qualcosa che potrebbe rendere più semplice il tuo incarico.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_02"); //Ti darò quest'amuleto di metallo. Ti farà di certo comodo.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_WISP_15_00"); //C'Ã¨ nulla che possa essemi utile nella mia ricerca?
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_01"); //Sei testardo, giovanotto. Ma forse c'Ã¨ qualcosa che potrebbe rendere piÃ¹ semplice il tuo incarico.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_02"); //Ti darÃ² quest'amuleto di metallo. Ti farÃ  di certo comodo.
 	CreateInvItems (self, ItAm_Addon_WispDetector, 1);									
 	B_GiveInvItems (self, other, ItAm_Addon_WispDetector, 1);
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_03"); //È un amuleto del fuoco fatuo indagatore.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_03"); //Ãˆ un amuleto del fuoco fatuo indagatore.
 	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_04"); //Ne esistono pochissimi. Il fuoco fatuo inglobato in questo amuleto ha poteri molto speciali.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_05"); //Può aiutarti a trovare cose che di norma sfuggono all'occhio nudo.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_05"); //PuÃ² aiutarti a trovare cose che di norma sfuggono all'occhio nudo.
 	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_06"); //Per evocarlo basta che indossi l'amuleto.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_07"); //Se perde il suo potere, o non riesci a trovarlo, indossa di nuovo l'amuleto e lui riapparirà.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_07"); //Se perde il suo potere, o non riesci a trovarlo, indossa di nuovo l'amuleto e lui riapparirÃ .
 	
-	B_LogEntry (TOPIC_Addon_BanditTrader,"Vatras mi ha dato un 'amuleto del fuoco fatuo cercatore' che mi aiuterà nella ricerca del venditore di armi."); 
+	B_LogEntry (TOPIC_Addon_BanditTrader,"Vatras mi ha dato un 'amuleto del fuoco fatuo cercatore' che mi aiuterÃ  nella ricerca del venditore di armi."); 
 	Log_CreateTopic (TOPIC_WispDetector,LOG_NOTE);
 	B_LogEntry (TOPIC_WispDetector,LogText_Addon_WispLearned); 
 	B_LogEntry (TOPIC_WispDetector,LogText_Addon_WispLearned_NF); 
 
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_08"); //Il fuoco fatuo può individuare armi.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_08"); //Il fuoco fatuo puÃ² individuare armi.
 
 	if (MIS_Vatras_FindTheBanditTrader == LOG_RUNNING)
 	{
 		AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_09"); //Potrebbe farti comodo nelle tue indagini sulle consegne di armi ai briganti.
 	};
 
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_10"); //Trattalo bene, e non ti deluderà.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_WISP_05_10"); //Trattalo bene, e non ti deluderÃ .
 
 	Info_ClearChoices (DIA_Addon_Vatras_WISP);
-	Info_AddChoice (DIA_Addon_Vatras_WISP, "Grazie! Ne avrò buona cura.", DIA_Addon_Vatras_WISP_Thanks);
-	Info_AddChoice (DIA_Addon_Vatras_WISP, "Il fuoco fatuo può fare altro?", DIA_Addon_Vatras_WISP_MoreWISP);
+	Info_AddChoice (DIA_Addon_Vatras_WISP, "Grazie! Ne avrÃ² buona cura.", DIA_Addon_Vatras_WISP_Thanks);
+	Info_AddChoice (DIA_Addon_Vatras_WISP, "Il fuoco fatuo puÃ² fare altro?", DIA_Addon_Vatras_WISP_MoreWISP);
 	Info_AddChoice (DIA_Addon_Vatras_WISP, "Un fuoco fatuo in un amuleto?", DIA_Addon_Vatras_WISP_Amulett);
 	SC_GotWisp = TRUE;	
 };
 func void DIA_Addon_Vatras_WISP_Thanks()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Thanks_15_00"); //Grazie! Ne avrò buona cura.
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_Thanks_15_00"); //Grazie! Ne avrÃ² buona cura.
 	Info_ClearChoices (DIA_Addon_Vatras_WISP);
 };
 func void DIA_Addon_Vatras_WISP_MoreWISP()
 {
-	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_MoreWISP_15_00"); //Il fuoco fatuo può fare altro?
+	AI_Output (other, self, "DIA_Addon_Vatras_Waffen_MoreWISP_15_00"); //Il fuoco fatuo puÃ² fare altro?
 	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_01"); //Oltre che cercare armi da mischia? Solo se glielo insegni.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_02"); //Riordian sa come addestrare questi esseri. È uno di noi, al momento in viaggio con Saturas.
-	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_03"); //Forse potrà dirti di più.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_02"); //Riordian sa come addestrare questi esseri. Ãˆ uno di noi, al momento in viaggio con Saturas.
+	AI_Output (self, other, "DIA_Addon_Vatras_Waffen_MoreWISP_05_03"); //Forse potrÃ  dirti di piÃ¹.
 
 	if (MIS_Vatras_FindTheBanditTrader == LOG_RUNNING)
 	{
-		B_LogEntry (TOPIC_Addon_BanditTrader,"Il mio fuoco fatuo cercatore può fare di più che trovare armi per il combattimento corpo a corpo. Il Mago dell'Acqua Riordian può insegnargli a cercare anche altre cose."); 
+		B_LogEntry (TOPIC_Addon_BanditTrader,"Il mio fuoco fatuo cercatore puÃ² fare di piÃ¹ che trovare armi per il combattimento corpo a corpo. Il Mago dell'Acqua Riordian puÃ² insegnargli a cercare anche altre cose."); 
 	};
 };
 func void DIA_Addon_Vatras_WISP_Amulett()
 {
 	AI_Output (other, self, "DIA_Addon_Vatras_WISPDETECTOR_was_15_00"); //Un fuoco fatuo in un amuleto?
 	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_01"); //I fuochi fatui sono creature mirabili, composte di pura energia magica.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_02"); //In questo mondo sono legate al metallo magico, che è la loro origine e la fonte della loro forza.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_03"); //Non mi soprende che tu non ne abbia mai sentito parlare. Appaiono solo a chi porta con sé il metallo a cui appartengono.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_02"); //In questo mondo sono legate al metallo magico, che Ã¨ la loro origine e la fonte della loro forza.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_03"); //Non mi soprende che tu non ne abbia mai sentito parlare. Appaiono solo a chi porta con sÃ© il metallo a cui appartengono.
 	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_04"); //I fuochi fatui ancora allo stato brado sono stati allontanati dalla sorgente del loro potere. Attacano ognuno che venga vicino loro.
-	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_05"); //Non c'è modo di aiutare quelle povere creature. Ti conviene starne lontano.
+	AI_Output (self, other, "DIA_Addon_Vatras_WISPDETECTOR_was_05_05"); //Non c'Ã¨ modo di aiutare quelle povere creature. Ti conviene starne lontano.
 };
 
 // ********************************************************
@@ -1271,7 +1271,7 @@ instance DIA_Addon_Vatras_Stoneplate (C_INFO)
 	condition	= DIA_Addon_Vatras_Stoneplate_Condition;
 	information	= DIA_Addon_Vatras_Stoneplate_Info;
 
-	description	= "Ho questa tavoletta di pietra…";
+	description	= "Ho questa tavoletta di pietraâ€¦";
 };
 
 func int DIA_Addon_Vatras_Stoneplate_Condition ()
@@ -1285,11 +1285,11 @@ func int DIA_Addon_Vatras_Stoneplate_Condition ()
 
 func void DIA_Addon_Vatras_Stoneplate_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_Stoneplate_15_00"); //Ho questa tavoletta di pietra. Puoi dirmi qualcosa di più?
+	AI_Output	(other, self, "DIA_Addon_Vatras_Stoneplate_15_00"); //Ho questa tavoletta di pietra. Puoi dirmi qualcosa di piÃ¹?
 	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_01"); //Sono manufatti dell'antica cultura che studiamo da qualche tempo.
 	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_02"); //Ne esistono diversi tipi. Alcune contengono informazioni sulla storia del popolo antico.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_03"); //Questo è il tipo che mi interessa. Portami tutte quelle che riesci a trovare.
-	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_04"); //Ti ricompenserò adeguatamente.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_03"); //Questo Ã¨ il tipo che mi interessa. Portami tutte quelle che riesci a trovare.
+	AI_Output	(self, other, "DIA_Addon_Vatras_Stoneplate_05_04"); //Ti ricompenserÃ² adeguatamente.
 
 	Log_CreateTopic (TOPIC_Addon_Stoneplates, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Stoneplates, LOG_RUNNING);
@@ -1309,7 +1309,7 @@ instance DIA_Addon_Vatras_SellStonplate		(C_INFO)
 	condition	= DIA_Addon_Vatras_SellStonplate_Condition;
 	information	= DIA_Addon_Vatras_SellStonplate_Info;
 	permanent 	= TRUE;
-	description	= "Ho altre tavolette di pietra per te…";
+	description	= "Ho altre tavolette di pietra per teâ€¦";
 };
 func int DIA_Addon_Vatras_SellStonplate_Condition ()
 {
@@ -1329,7 +1329,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info ()
 	}
 	else 
 	{
-		//Fixme Joly --> Hier SC-output "Hier.." oder ähnliche --Mike
+		//Fixme Joly --> Hier SC-output "Hier.." oder Ã¤hnliche --Mike
 	};
 	
 	B_GiveInvItems (other, self, ItWr_StonePlateCommon_Addon, anzahl);
@@ -1338,7 +1338,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info ()
 	
 	if (anzahl >= 10)
 	{
-		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_02"); //Aumenterò il tuo potere magico!
+		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_02"); //AumenterÃ² il tuo potere magico!
 		B_RaiseAttribute	(other, ATR_MANA_MAX, anzahl);
 		Npc_ChangeAttribute	(other, ATR_MANA, anzahl);
 	}
@@ -1347,7 +1347,7 @@ func void DIA_Addon_Vatras_SellStonplate_Info ()
 		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_04"); //Prendi qualche pergamena magica come ricompensa...
 		B_GiveInvItems (self, other, ItSc_InstantFireball, anzahl);
 	}
-	else // 1-4 Plates --> 2-5 Tränke
+	else // 1-4 Plates --> 2-5 TrÃ¤nke
 	{
 		AI_Output (self, other, "DIA_Addon_Vatras_SellStonplate_05_03"); //Prendi qualche pozione come ricompensa...
 		B_GiveInvItems (self, other, ItPo_Health_03, anzahl+1);
@@ -1382,13 +1382,13 @@ func int DIA_Addon_Vatras_GuildHelp_Condition ()
 func void DIA_Addon_Vatras_GuildHelp_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_00"); //Lares dice che puoi aiutarmi a entrare nel monastero dei Maghi del Fuoco.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_01"); //È questo che scegli? La Via del Fuoco?
-	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_02"); //Sì. Voglio diventare un Mago del Fuoco.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_01"); //Ãˆ questo che scegli? La Via del Fuoco?
+	AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_02"); //SÃ¬. Voglio diventare un Mago del Fuoco.
 	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_03"); //Per quanto ne so, al monastero sono sempre felici di accogliere novizi. A che ti serve il mio aiuto?
 
 	if (SC_KnowsKlosterTribut == TRUE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_04"); //Il novizio di fronte al monastero vuole che paghi un tributo per entrare. Una pecora e un sacco d’oro.
+		AI_Output	(other, self, "DIA_Addon_Vatras_GuildHelp_15_04"); //Il novizio di fronte al monastero vuole che paghi un tributo per entrare. Una pecora e un sacco dâ€™oro.
 	}
 	else
 	{
@@ -1398,16 +1398,16 @@ func void DIA_Addon_Vatras_GuildHelp_Info ()
 	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_06"); //Non sta a me darti il permesso di entrare nel monastero. Come sai, io sono un Mago dell'Acqua, ma sono in ottimi rapporti con Daron, il Mago del Fuoco.
 	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_07"); //Trascorre gran parte della giornata al mercato, chiedendo offerte per la chiesa.
 	Vatras_SentToDaron = TRUE;
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_08"); //Ma ho saputo che non è in città solo per raccogliere fondi.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_09"); //Mi ha parlato di una statuetta che gli è stata rubata.
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_10"); //Era molto importante per lui. Se gliela riporti, ti consentirà di certo di entrare nel monastero.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_08"); //Ma ho saputo che non Ã¨ in cittÃ  solo per raccogliere fondi.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_09"); //Mi ha parlato di una statuetta che gli Ã¨ stata rubata.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_10"); //Era molto importante per lui. Se gliela riporti, ti consentirÃ  di certo di entrare nel monastero.
 	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_11"); //Certo, anche se decidessi di entrare nel Circolo del Fuoco potresti sempre diventare membro dell'Anello
-	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_12"); //Purché te ne dimostri degno, però.
+	AI_Output	(self, other, "DIA_Addon_Vatras_GuildHelp_05_12"); //PurchÃ© te ne dimostri degno, perÃ².
 	MIS_Addon_Vatras_Go2Daron = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Daron, il Mago del Fuoco del mercato, mi aiuterà a entrare nel monastero se trovo la statuetta che gli è stata rubata."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Daron, il Mago del Fuoco del mercato, mi aiuterÃ  a entrare nel monastero se trovo la statuetta che gli Ã¨ stata rubata."); 
 };
 
 
@@ -1418,7 +1418,7 @@ func void DIA_Addon_Vatras_GuildHelp_Info ()
 // ************************************************************
 
 // ============================================================
-// MORE 	(Wegen der alten Scheiße...)
+// MORE 	(Wegen der alten ScheiÃŸe...)
 // ============================================================
 instance DIA_Vatras_MORE		(C_INFO)
 {
@@ -1466,8 +1466,8 @@ func int DIA_Vatras_INFLUENCE_Condition ()
 func void DIA_Vatras_INFLUENCE_Info ()
 {
 	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_00"); //Ti chiedo la tua benedizione.
-	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_01"); //Perché dovrei darti la mia benedizione, straniero?
-	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_02"); //Voglio cominciare l'apprendistato con uno dei maestri nella parte bassa della città.
+	AI_Output (self, other, "DIA_Vatras_INFLUENCE_05_01"); //PerchÃ© dovrei darti la mia benedizione, straniero?
+	AI_Output (other, self, "DIA_Vatras_INFLUENCE_15_02"); //Voglio cominciare l'apprendistato con uno dei maestri nella parte bassa della cittÃ .
 	AI_Output (self, other, "DIA_Vatras_INFLUENCE_REPEAT_05_11"); //Vai con la benedizione di Adanos, figlio mio!
 	Snd_Play ("LevelUp");
 	B_GivePlayerXP (XP_VatrasTruth);
@@ -1502,7 +1502,7 @@ func int DIA_Vatras_WoKdF_Condition ()
 func void DIA_Vatras_WoKdF_Info ()
 {
 	AI_Output (other, self, "DIA_Vatras_WoKdF_15_00"); //Dove posso trovare un sacerdote di Innos?
-	AI_Output (self, other, "DIA_Vatras_WoKdF_05_01"); //La cosa migliore sarebbe dare un'occhiata al mercato. Là troverai un emissario del monastero.
+	AI_Output (self, other, "DIA_Vatras_WoKdF_05_01"); //La cosa migliore sarebbe dare un'occhiata al mercato. LÃ  troverai un emissario del monastero.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -1536,32 +1536,32 @@ func void DIA_Vatras_Spende_Info ()
 	Info_AddChoice 		(DIA_Vatras_Spende, "Non mi avanza nulla, in questo momento...", DIA_Vatras_Spende_BACK);
 	if (Npc_HasItems(other,itmi_gold) >= 50)
 	{
-		Info_AddChoice 		(DIA_Vatras_Spende, "Ho 50 monete d’oro...", DIA_Vatras_Spende_50);
+		Info_AddChoice 		(DIA_Vatras_Spende, "Ho 50 monete dâ€™oro...", DIA_Vatras_Spende_50);
 	};
 	if (Npc_HasItems(other,itmi_gold) >= 100)
 	{
-		Info_AddChoice 		(DIA_Vatras_Spende, "Ho 100 monete d’oro...",	DIA_Vatras_Spende_100);
+		Info_AddChoice 		(DIA_Vatras_Spende, "Ho 100 monete dâ€™oro...",	DIA_Vatras_Spende_100);
 	};
 };
 
 func void DIA_Vatras_Spende_BACK()
 {
 	AI_Output (other, self, "DIA_Vatras_Spende_BACK_15_00"); //Non mi avanza nulla, in questo momento...
-	AI_Output (self, other, "DIA_Vatras_Spende_BACK_05_01"); //Quello non è un mio problema, le buone intenzioni lasciamole per dopo, figlio mio.
+	AI_Output (self, other, "DIA_Vatras_Spende_BACK_05_01"); //Quello non Ã¨ un mio problema, le buone intenzioni lasciamole per dopo, figlio mio.
 	Info_ClearChoices   (DIA_Vatras_Spende);
 };
 
 func void DIA_Vatras_Spende_50()
 {
-	AI_Output (other, self, "DIA_Vatras_Spende_50_15_00"); //Ho 50 monete d’oro...
-	AI_Output (self, other, "DIA_Vatras_Spende_50_05_01"); //Ti ringrazio nel nome di Adanos, figlio mio. Il tuo oro verrà distribuito tra i bisognosi.
+	AI_Output (other, self, "DIA_Vatras_Spende_50_15_00"); //Ho 50 monete dâ€™oro...
+	AI_Output (self, other, "DIA_Vatras_Spende_50_05_01"); //Ti ringrazio nel nome di Adanos, figlio mio. Il tuo oro verrÃ  distribuito tra i bisognosi.
 	B_GiveInvItems (other, self, Itmi_Gold, 50);
 	Info_ClearChoices   (DIA_Vatras_Spende);
 };
 	
 func void DIA_Vatras_Spende_100()
 {
-	AI_Output (other, self, "DIA_Vatras_Spende_100_15_00"); //Ho 100 monete d’oro...
+	AI_Output (other, self, "DIA_Vatras_Spende_100_15_00"); //Ho 100 monete dâ€™oro...
 	AI_Output (self, other, "DIA_Vatras_Spende_100_05_01"); //Ti benedico nel nome di Adanos per questo atto generoso!
 	Snd_Play ("LevelUp");
 	AI_Output (self, other, "DIA_Vatras_Spende_100_05_02"); //Che il tuo cammino possa essere benedetto da Adanos!
@@ -1598,13 +1598,13 @@ func int DIA_Vatras_CanTeach_Condition ()
 func void DIA_Vatras_CanTeach_Info ()
 {
 	AI_Output (other, self, "DIA_Vatras_CanTeach_15_00"); //Puoi insegnarmi qualcosa sulla magia?
-	AI_Output (self, other, "DIA_Vatras_CanTeach_05_01"); //Solamente agli Eletti di Innos e Adanos è permesso usare magia runica.
+	AI_Output (self, other, "DIA_Vatras_CanTeach_05_01"); //Solamente agli Eletti di Innos e Adanos Ã¨ permesso usare magia runica.
 	AI_Output (self, other, "DIA_Vatras_CanTeach_05_02"); //Ma i comuni mortali possono anche usare la magia con l'aiuto di pergamene magiche.
 	AI_Output (self, other, "DIA_Vatras_CanTeach_05_03"); //Posso mostrarti come canalizzare ed espandere i tuoi poteri magici.
 	
 	Vatras_TeachMANA = TRUE;
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Vatras, il mago dell'acqua, può aiutarmi ad aumentare i miei poteri magici.");
+	B_LogEntry (Topic_CityTeacher,"Vatras, il mago dell'acqua, puÃ² aiutarmi ad aumentare i miei poteri magici.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH
@@ -1641,7 +1641,7 @@ func void DIA_Vatras_Teach_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)
 	{
-		AI_Output (self, other, "DIA_Vatras_Teach_05_00"); //Il tuo potere magico è cresciuto oltre le mie conoscenze.
+		AI_Output (self, other, "DIA_Vatras_Teach_05_00"); //Il tuo potere magico Ã¨ cresciuto oltre le mie conoscenze.
 	};
 	Info_ClearChoices (DIA_Vatras_TEACH);
 };
@@ -1675,7 +1675,7 @@ func void DIA_Vatras_Teach_5()
 instance DIA_Vatras_GODS		(C_INFO)
 {
 	npc			 = 	VLK_439_Vatras;
-	nr          = 	98;	//Joly: bracuht ne hohe Nummer, denn wird in den späteren Kapiteln auch verwendet.
+	nr          = 	98;	//Joly: bracuht ne hohe Nummer, denn wird in den spÃ¤teren Kapiteln auch verwendet.
 	condition	 = 	DIA_Vatras_GODS_Condition;
 	information	 = 	DIA_Vatras_GODS_Info;
 	permanent	 =  TRUE;
@@ -1709,8 +1709,8 @@ FUNC VOID DIA_Vatras_GODS_BACK()
 FUNC VOID DIA_Vatras_GODS_INNOS()
 {
 	AI_Output			(other, self, "DIA_Vatras_GODS_INNOS_15_00"); //Dimmi di Innos.
-	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_01"); //Molto bene. (predica) Innos è il primo e più grande dio. Ha creato il sole e il mondo.
-	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_02"); //Domina luce e fuoco, il suo dono all'umanità. Lui è legge e giustizia.
+	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_01"); //Molto bene. (predica) Innos Ã¨ il primo e piÃ¹ grande dio. Ha creato il sole e il mondo.
+	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_02"); //Domina luce e fuoco, il suo dono all'umanitÃ . Lui Ã¨ legge e giustizia.
 	AI_Output			(self, other, "DIA_Vatras_GODS_INNOS_05_03"); //I suoi sacerdoti sono i maghi del fuoco, i paladini sono i suoi guerrieri.
 	
 	Info_ClearChoices (DIA_Vatras_GODS); 
@@ -1723,8 +1723,8 @@ FUNC VOID DIA_Vatras_GODS_INNOS()
 FUNC VOID DIA_Vatras_GODS_ADANOS()
 {
 	AI_Output			(other, self, "DIA_Vatras_GODS_ADANOS_15_00"); //Dimmi di Adanos.
-	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_01"); //Adanos è il dio del centro. Lui è la bilancia della giustizia, il guardiano dell'equilibrio tra Innos e Beliar.
-	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_02"); //Lui domina il potere del cambiamento, il suo dono è l'acqua di tutti i laghi, fiumi e oceani.
+	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_01"); //Adanos Ã¨ il dio del centro. Lui Ã¨ la bilancia della giustizia, il guardiano dell'equilibrio tra Innos e Beliar.
+	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_02"); //Lui domina il potere del cambiamento, il suo dono Ã¨ l'acqua di tutti i laghi, fiumi e oceani.
 	AI_Output			(self, other, "DIA_Vatras_GODS_ADANOS_05_03"); //I suoi sacerdoti sono i maghi dell'acqua, esattamente come io sono un servitore e un sacerdote di Adanos.
 	
 	Info_ClearChoices (DIA_Vatras_GODS); 
@@ -1737,7 +1737,7 @@ FUNC VOID DIA_Vatras_GODS_ADANOS()
 FUNC VOID DIA_Vatras_GODS_BELIAR()
 {
 	AI_Output			(other, self, "DIA_Vatras_GODS_BELIAR_15_00"); //Dimmi di Beliar.
-	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_01"); //Beliar è il dio oscuro della morte, della distruzione e di tutte le entità sovrannaturali.
+	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_01"); //Beliar Ã¨ il dio oscuro della morte, della distruzione e di tutte le entitÃ  sovrannaturali.
 	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_02"); //Combatte una battaglia eterna con Innos, ma Adanos sorveglia l'equilibrio tra i due.
 	AI_Output			(self, other, "DIA_Vatras_GODS_BELIAR_05_03"); //Solamente pochi umani sono seguaci di Beliar, tuttavia lui garantisce grande forza a tutti coloro che lo fanno.
 	
@@ -1754,7 +1754,7 @@ FUNC VOID DIA_Vatras_GODS_BELIAR()
 instance DIA_Vatras_HEAL		(C_INFO)
 {
 	npc			 = 	VLK_439_Vatras;
-	nr          = 	99;	//Joly: bracuht ne hohe Nummer, denn wird in den späteren Kapiteln auch verwendet.
+	nr          = 	99;	//Joly: bracuht ne hohe Nummer, denn wird in den spÃ¤teren Kapiteln auch verwendet.
 	condition	 = 	DIA_Vatras_HEAL_Condition;
 	information	 = 	DIA_Vatras_HEAL_Info;
 	permanent	 = 	TRUE;
@@ -1811,7 +1811,7 @@ func int DIA_Vatras_MISSION_Condition ()
 };
 func void DIA_Vatras_MISSION_Info ()
 {
-	AI_Output (self, other, "DIA_Vatras_Add_05_10"); //Ho un messaggio per maestro Isgaroth, è di guardia al santuario di fronte al monastero.
+	AI_Output (self, other, "DIA_Vatras_Add_05_10"); //Ho un messaggio per maestro Isgaroth, Ã¨ di guardia al santuario di fronte al monastero.
 	AI_Output (self, other, "DIA_Vatras_MISSION_05_01"); //Se farai questo lavoretto per me, potrai scegliere la tua ricompensa.
 	
 	Info_ClearChoices   (DIA_Vatras_MISSION);
@@ -1820,37 +1820,37 @@ func void DIA_Vatras_MISSION_Info ()
 };
 FUNC VOID B_SayVatrasGo()
 {
-	AI_Output (self, other, "DIA_Vatras_Add_05_13"); //Bene. Perciò stai andando da maestro Isgaroth ora.
+	AI_Output (self, other, "DIA_Vatras_Add_05_13"); //Bene. PerciÃ² stai andando da maestro Isgaroth ora.
 };
 func VOID DIA_Vatras_MISSION_YES()
 {
-	AI_Output (other, self, "DIA_Vatras_MISSION_YES_15_00"); //Lo farò.
+	AI_Output (other, self, "DIA_Vatras_MISSION_YES_15_00"); //Lo farÃ².
 	AI_Output (self, other, "DIA_Vatras_Add_05_11"); //Bene, allora prendi il messaggio e una di questa pergamene magiche.
-	AI_Output (self, other, "DIA_Vatras_Add_05_12"); //Quando avrai consegnato il messaggio, ti ricompenserò adeguatamente.
+	AI_Output (self, other, "DIA_Vatras_Add_05_12"); //Quando avrai consegnato il messaggio, ti ricompenserÃ² adeguatamente.
 	
 	B_GiveInvItems (self, hero, ItWr_VatrasMessage,1); 
 	MIS_Vatras_Message = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Botschaft,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Botschaft,LOG_RUNNING);
-	B_LogEntry (TOPIC_Botschaft,"Vatras mi ha dato un messaggio per il maestro Isgaroth. È al santuario di fronte al monastero.");
+	B_LogEntry (TOPIC_Botschaft,"Vatras mi ha dato un messaggio per il maestro Isgaroth. Ãˆ al santuario di fronte al monastero.");
 	
 	Info_ClearChoices 	(DIA_Vatras_MISSION);
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Prenderò l’incantesimo di luce.",DIA_Vatras_MISSION_LIGHT);
-	Info_AddChoice 		(DIA_Vatras_MISSION,"Scelgo l’incantesimo curativo.",DIA_Vatras_MISSION_HEAL);	
+	Info_AddChoice 		(DIA_Vatras_MISSION,"PrenderÃ² lâ€™incantesimo di luce.",DIA_Vatras_MISSION_LIGHT);
+	Info_AddChoice 		(DIA_Vatras_MISSION,"Scelgo lâ€™incantesimo curativo.",DIA_Vatras_MISSION_HEAL);	
 	Info_AddChoice 		(DIA_Vatras_MISSION,"Dammi la Freccia di ghiaccio.",DIA_Vatras_MISSION_ICE);	
 };
 FUNC VOID DIA_Vatras_MISSION_NO ()
 {	
 	//AI_Output	(other, self, "DIA_Vatras_MISSION_NO_15_00"); //Such dir einen anderen Laufburschen, alter Mann!
 	AI_Output (other, self, "DIA_ADDON_Vatras_MISSION_NO_15_00"); //Non adesso!
-	AI_Output (self, other, "DIA_ADDON_Vatras_MISSION_NO_05_01"); //Non c'è problema. Manderò qualcun altro.
+	AI_Output (self, other, "DIA_ADDON_Vatras_MISSION_NO_05_01"); //Non c'Ã¨ problema. ManderÃ² qualcun altro.
 	MIS_Vatras_Message = LOG_OBSOLETE;
 	Info_ClearChoices 	(DIA_Vatras_MISSION);
 };
 FUNC VOID DIA_Vatras_MISSION_HEAL()
 {
-	AI_Output			(other, self, "DIA_Vatras_MISSION_HEAL_15_00"); //Scelgo l’incantesimo curativo.
+	AI_Output			(other, self, "DIA_Vatras_MISSION_HEAL_15_00"); //Scelgo lâ€™incantesimo curativo.
 	 B_SayVatrasGo();
 	 
 	B_GiveInvItems (self, hero,ItSc_LightHeal ,1);
@@ -1866,7 +1866,7 @@ FUNC VOID DIA_Vatras_MISSION_ICE()
 };
 FUNC VOID DIA_Vatras_MISSION_LIGHT()
 {
-	AI_Output			(other, self, "DIA_Vatras_MISSION_LIGHT_15_00"); //Prenderò l’incantesimo di luce.
+	AI_Output			(other, self, "DIA_Vatras_MISSION_LIGHT_15_00"); //PrenderÃ² lâ€™incantesimo di luce.
 	B_SayVatrasGo();
 	
 	B_GiveInvItems (self, hero,ItSc_Light ,1);
@@ -1903,7 +1903,7 @@ func void DIA_Vatras_MESSAGE_SUCCESS_Info ()
 	
 	Info_ClearChoices (DIA_Vatras_MESSAGE_SUCCESS);
 	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"1 acetosella del re",DIA_Vatras_MESSAGE_SUCCESS_Plant);
-	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"Anello dell'abilità",DIA_Vatras_MESSAGE_SUCCESS_Ring);	
+	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"Anello dell'abilitÃ ",DIA_Vatras_MESSAGE_SUCCESS_Ring);	
 	Info_AddChoice 	  (DIA_Vatras_MESSAGE_SUCCESS,"1 pezzo di metallo",DIA_Vatras_MESSAGE_SUCCESS_Ore);
 };
 FUNC VOID DIA_Vatras_MESSAGE_SUCCESS_Plant()
@@ -1958,11 +1958,11 @@ func void B_Vatras_GeheWeg (var int dauer)
 		AI_Output (self, other, "DIA_Vatras_Add_05_06"); //Ascoltate gente! Altrove hanno bisogno di me.
 		if (dauer == kurz)
 		{
-			AI_Output (self, other, "DIA_Vatras_Add_05_07"); //Non ci vorrà molto, quando sarò di ritorno vi racconterò il resto della storia.
+			AI_Output (self, other, "DIA_Vatras_Add_05_07"); //Non ci vorrÃ  molto, quando sarÃ² di ritorno vi racconterÃ² il resto della storia.
 		}
 		else //lang
 		{
-			AI_Output (self, other, "DIA_Vatras_Add_05_08"); //Non so se farò ritorno. Se vuoi sapere il finale, leggi la storia nelle scritture.
+			AI_Output (self, other, "DIA_Vatras_Add_05_08"); //Non so se farÃ² ritorno. Se vuoi sapere il finale, leggi la storia nelle scritture.
 			
 			Vatras_einmalLangWeg = TRUE;
 		};
@@ -2001,15 +2001,15 @@ func int DIA_Addon_Vatras_AbloesePre_Condition ()
 func void DIA_Addon_Vatras_AbloesePre_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Vatras_AbloesePre_15_00"); //Ho un problema con l'Occhio di Innos. Mi farebbe comodo il tuo aiuto.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_01"); //E dovrò lasciare la città per questo?
+	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_01"); //E dovrÃ² lasciare la cittÃ  per questo?
 	AI_Output	(other, self, "DIA_Addon_Vatras_AbloesePre_15_02"); //Non so. Forse.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_03"); //Sono giorni che aspetto che mi diano il cambio. Gli altri Maghi dell'Acqua sarebbero dovuti già essere a Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_04"); //Se fai in modo che almeno uno di loro venga a darmi il cambio, sarò libero di aiutarti a risolvere il tuo problema.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_03"); //Sono giorni che aspetto che mi diano il cambio. Gli altri Maghi dell'Acqua sarebbero dovuti giÃ  essere a Khorinis.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AbloesePre_05_04"); //Se fai in modo che almeno uno di loro venga a darmi il cambio, sarÃ² libero di aiutarti a risolvere il tuo problema.
 	MIS_SCKnowsInnosEyeIsBroken = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_VatrasAbloesung, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_VatrasAbloesung, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Vatras non mi può aiutare a risolvere il mio problema con l''Occhio di Innos' finché un altro Mago dell'Acqua non lo sostituisce in città."); 
+	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Vatras non mi puÃ² aiutare a risolvere il mio problema con l''Occhio di Innos' finchÃ© un altro Mago dell'Acqua non lo sostituisce in cittÃ ."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -2022,7 +2022,7 @@ instance DIA_Addon_Vatras_AddonSolved		(C_INFO)
 	condition	 = 	DIA_Addon_Vatras_AddonSolved_Condition;
 	information	 = 	DIA_Addon_Vatras_AddonSolved_Info;
 
-	description	 = 	"Il tuo sostituto è arrivato.";
+	description	 = 	"Il tuo sostituto Ã¨ arrivato.";
 };
 
 func int DIA_Addon_Vatras_AddonSolved_Condition ()
@@ -2035,10 +2035,10 @@ func int DIA_Addon_Vatras_AddonSolved_Condition ()
 
 func void DIA_Addon_Vatras_AddonSolved_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_00"); //Il tuo sostituto è arrivato.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_01"); //La faccenda delle montagne nord-orientali è stata sistemata?
-	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_02"); //Sì. Raven è morto e la minaccia è stata sventata.
-	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_03"); //Un'ottima notizia davvero. Speriamo solo che simili cose non accadano più.
+	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_00"); //Il tuo sostituto Ã¨ arrivato.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_01"); //La faccenda delle montagne nord-orientali Ã¨ stata sistemata?
+	AI_Output	(other, self, "DIA_Addon_Vatras_AddonSolved_15_02"); //SÃ¬. Raven Ã¨ morto e la minaccia Ã¨ stata sventata.
+	AI_Output	(self, other, "DIA_Addon_Vatras_AddonSolved_05_03"); //Un'ottima notizia davvero. Speriamo solo che simili cose non accadano piÃ¹.
 
 	if (Npc_KnowsInfo (other, DIA_Addon_Vatras_AbloesePre))
 	{
@@ -2059,7 +2059,7 @@ instance DIA_Vatras_INNOSEYEKAPUTT		(C_INFO)
 	condition	 = 	DIA_Vatras_INNOSEYEKAPUTT_Condition;
 	information	 = 	DIA_Vatras_INNOSEYEKAPUTT_Info;
 
-	description	 = 	"L’Occhio di Innos è rotto.";
+	description	 = 	"Lâ€™Occhio di Innos Ã¨ rotto.";
 };
 
 func int DIA_Vatras_INNOSEYEKAPUTT_Condition ()
@@ -2086,47 +2086,47 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Info ()
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 	B_GivePlayerXP (XP_Ambient);
 
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_02"); //L’Occhio di Innos è rotto.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_03"); //Lo so. Me l'hanno già detto alcuni agitatissimi novizi.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_15_02"); //Lâ€™Occhio di Innos Ã¨ rotto.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_03"); //Lo so. Me l'hanno giÃ  detto alcuni agitatissimi novizi.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_04"); //I Cercatori hanno usato il Circolo del sole dei maghi del fuoco per distruggere l'Occhio.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_05_05"); //La chiamerei una mossa ispirata dal nemico.
 
 	Info_ClearChoices	(DIA_Vatras_INNOSEYEKAPUTT);
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Le notizie volano in città.", DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Le notizie volano in cittÃ .", DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten );
 
 	if (hero.guild == GIL_KDF)
 	&& (MIS_Pyrokar_GoToVatrasInnoseye == LOG_RUNNING)
 	{
-		Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Perché Pyrokar ha inviato proprio me?", DIA_Vatras_INNOSEYEKAPUTT_warumdu );
+		Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "PerchÃ© Pyrokar ha inviato proprio me?", DIA_Vatras_INNOSEYEKAPUTT_warumdu );
 	};
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Cosa ne sarà dell’Occhio, adesso?", DIA_Vatras_INNOSEYEKAPUTT_Auge );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Cosa ne sarÃ  dellâ€™Occhio, adesso?", DIA_Vatras_INNOSEYEKAPUTT_Auge );
 
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_15_00"); //Cosa ne sarà dell’Occhio, adesso?
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_15_00"); //Cosa ne sarÃ  dellâ€™Occhio, adesso?
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_01"); //Dobbiamo rimetterlo insieme, ma ho paura che non sia un compito semplice.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_02"); //La montatura è rotta in due parti. Un abile fabbro dovrebbe essere in grado di ripararla.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_03"); //Ma non è questo il problema, ciò che mi preoccupa è la gemma incastonata.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_04"); //È smorta e senza potere. Sembra che il nemico sapesse esattamente dove colpire.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_02"); //La montatura Ã¨ rotta in due parti. Un abile fabbro dovrebbe essere in grado di ripararla.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_03"); //Ma non Ã¨ questo il problema, ciÃ² che mi preoccupa Ã¨ la gemma incastonata.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_05_04"); //Ãˆ smorta e senza potere. Sembra che il nemico sapesse esattamente dove colpire.
 
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Dove trovo un fabbro in grado di riparare l’impostazione?", DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied );
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "In che modo la gemma può riacquistare il suo potere?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Dove trovo un fabbro in grado di riparare lâ€™impostazione?", DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "In che modo la gemma puÃ² riacquistare il suo potere?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein );
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00"); //In che modo la gemma può riprendere il suo potere?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_01"); //Vedo una sola via, un'unione di tre divinità regnanti dovrebbe sortire l'effetto desiderato.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_15_00"); //In che modo la gemma puÃ² riprendere il suo potere?
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_01"); //Vedo una sola via, un'unione di tre divinitÃ  regnanti dovrebbe sortire l'effetto desiderato.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_02"); //Un rituale di annullamento ben preparato nel luogo della sua distruzione, dovrebbe ridare alla gemma il suo sacro fuoco.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_03"); //Tuttavia, il problema è che devi portare i rappresentanti terreni delle tre divinità in questo posto.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_04"); //Inoltre, è richiesta molta erba di palude per questo rituale. Ho stimato tre piante.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_03"); //Tuttavia, il problema Ã¨ che devi portare i rappresentanti terreni delle tre divinitÃ  in questo posto.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_05_04"); //Inoltre, Ã¨ richiesta molta erba di palude per questo rituale. Ho stimato tre piante.
 
 	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Chi potrebbero essere i tre rappresentanti terrestri degli dei?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer );
-	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Dove si trova l’erba di palude?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut );
+	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Dove si trova lâ€™erba di palude?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut );
 };
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_15_00"); //Dove si trova l’erba di palude?
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_15_00"); //Dove si trova lâ€™erba di palude?
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_05_01"); //Ho sentito parlare di una ciarlatana che vive nei boschi di nome Sagitta. Si suppone che lei venda quel tipo di erba.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut_05_02"); //Ma potresti anche provare a vedere al porto.
 	
@@ -2136,8 +2136,8 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Kraut ()
 func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer ()
 {
 	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_15_00"); //Chi potrebbero essere i tre rappresentanti terrestri degli dei?
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_01"); //Io rappresenterò Adanos.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_02"); //Pyrokar, il più importante dei maghi del fuoco, potrebbe essere la giusta persona per rappresentare il dio Innos.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_01"); //Io rappresenterÃ² Adanos.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_02"); //Pyrokar, il piÃ¹ importante dei maghi del fuoco, potrebbe essere la giusta persona per rappresentare il dio Innos.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_05_03"); //Ma per Beliar, non riesco a pensare a un candidato appropriato. Deve trattarsi di qualcuno che pratichi magia nera.
 
 	Info_AddChoice	(DIA_Vatras_INNOSEYEKAPUTT, "Magia nera? Cosami dici di Xardas?", DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas );
@@ -2161,19 +2161,19 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_schmied ()
 
 func void DIA_Vatras_INNOSEYEKAPUTT_warumdu ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_15_00"); //Perché Pyrokar ha inviato proprio me?
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_15_00"); //PerchÃ© Pyrokar ha inviato proprio me?
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_01"); //Sospettavo che, un giorno o l'altro, sarebbe accaduto qualcosa del genere.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_02"); //Pyrokar si pensa sempre così invulnerabile e superiore, ai limiti della sconsideratezza.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_03"); //Così anche le sue precauzioni nel proteggere l'Occhio sono state superficiali.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_04"); //Io penso semplicemente che inconsciamente faccia affidamento sulle abilità che Adanos mi ha garantito.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_02"); //Pyrokar si pensa sempre cosÃ¬ invulnerabile e superiore, ai limiti della sconsideratezza.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_03"); //CosÃ¬ anche le sue precauzioni nel proteggere l'Occhio sono state superficiali.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_04"); //Io penso semplicemente che inconsciamente faccia affidamento sulle abilitÃ  che Adanos mi ha garantito.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_warumdu_05_05"); //Non voglio pensare a cosa succederebbe se non fossi stato libero adesso.
 
 };
 
 func void DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten ()
 {
-	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_15_00"); //Le notizie si spargono in fretta in città.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_05_01"); //Questa è una buona cosa. Il nemico non starà dormendo comunque.
+	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_15_00"); //Le notizie si spargono in fretta in cittÃ .
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_schnelleNachrichten_05_01"); //Questa Ã¨ una buona cosa. Il nemico non starÃ  dormendo comunque.
 
 };
 
@@ -2181,7 +2181,7 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_weiter ()
 {
 	AI_Output			(other, self, "DIA_Vatras_INNOSEYEKAPUTT_weiter_15_00"); //Devo andare.
 	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_01"); //Io anche, devo andare a preparare la cerimonia del Circolo del sole.
-	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_02"); //Manda lì Xardas e Pyrokar e non dimenticarti di portare l'erba di palude. Conto su di te.
+	AI_Output			(self, other, "DIA_Vatras_INNOSEYEKAPUTT_weiter_05_02"); //Manda lÃ¬ Xardas e Pyrokar e non dimenticarti di portare l'erba di palude. Conto su di te.
 	
 	B_LogEntry (TOPIC_INNOSEYE, "Vatras vuole eseguire il rituale al Circolo del Sole per ripristinare l'Occhio. Devo persuadere Xardas e Pyrokar a prendervi parte. Inoltre, devo trovare un fabbro che possa riparare l'amuleto rotto.");
 
@@ -2190,13 +2190,13 @@ func void DIA_Vatras_INNOSEYEKAPUTT_Auge_Stein_Wer_Xardas_weiter ()
 	Npc_ExchangeRoutine	(self,"RITUALINNOSEYEREPAIR");
 
 	
-	// ------ Zuhörer weg -------
+	// ------ ZuhÃ¶rer weg -------
 		B_Vatras_Geheweg (kurz);
 	// --------------------------
 	
 	//Joly: Weg mit den Ritualdementoren!!!!!
 
-	DMT_1201.aivar[AIV_EnemyOverride] = TRUE;	//Joly: Damit sie erstmal nicht die Welt entvölkern, ohne Zutun des Spielers!!!!!
+	DMT_1201.aivar[AIV_EnemyOverride] = TRUE;	//Joly: Damit sie erstmal nicht die Welt entvÃ¶lkern, ohne Zutun des Spielers!!!!!
 	DMT_1202.aivar[AIV_EnemyOverride] = TRUE;
 	DMT_1203.aivar[AIV_EnemyOverride] = TRUE;
 	DMT_1204.aivar[AIV_EnemyOverride] = TRUE;
@@ -2231,7 +2231,7 @@ instance DIA_Vatras_RitualInnosEyeRepair		(C_INFO)
 	information	 = 	DIA_Vatras_RitualInnosEyeRepair_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Come stanno le cose con l’Occhio di Innos?";
+	description	 = 	"Come stanno le cose con lâ€™Occhio di Innos?";
 };
 
 func int DIA_Vatras_RitualInnosEyeRepair_Condition ()
@@ -2245,8 +2245,8 @@ func int DIA_Vatras_RitualInnosEyeRepair_Condition ()
 
 func void DIA_Vatras_RitualInnosEyeRepair_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_RitualInnosEyeRepair_15_00"); //Come stanno le cose con l’Occhio di Innos?
-	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_01"); //Ricorda, solamente un rituale di annullamento al Circolo del sole insieme con Xardas e Pyrokar rimetterà in sesto l'Occhio.
+	AI_Output			(other, self, "DIA_Vatras_RitualInnosEyeRepair_15_00"); //Come stanno le cose con lâ€™Occhio di Innos?
+	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_01"); //Ricorda, solamente un rituale di annullamento al Circolo del sole insieme con Xardas e Pyrokar rimetterÃ  in sesto l'Occhio.
 	AI_Output			(self, other, "DIA_Vatras_RitualInnosEyeRepair_05_02"); //E non dimenticare di portare l'Occhio con il suo alloggiamento riparato.
 };
 
@@ -2260,7 +2260,7 @@ instance DIA_Vatras_BEGINN		(C_INFO)
 	condition	 = 	DIA_Vatras_BEGINN_Condition;
 	information	 = 	DIA_Vatras_BEGINN_Info;
 
-	description	 = 	"Ho fatto tutto ciò che mi hai chiesto.";
+	description	 = 	"Ho fatto tutto ciÃ² che mi hai chiesto.";
 };
 
 func int DIA_Vatras_BEGINN_Condition ()
@@ -2278,7 +2278,7 @@ func int DIA_Vatras_BEGINN_Condition ()
 
 func void DIA_Vatras_BEGINN_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_00"); //Ho fatto tutto ciò che mi hai detto, ecco l'Occhio riparato.
+	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_00"); //Ho fatto tutto ciÃ² che mi hai detto, ecco l'Occhio riparato.
 	B_GivePlayerXP (XP_RitualInnosEyeRuns);
 
 	B_GiveInvItems 		(other, self, ItMi_InnosEye_Broken_MIS, 1);
@@ -2287,18 +2287,18 @@ func void DIA_Vatras_BEGINN_Info ()
 	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_01"); //Non manca che l'esecuzione del rituale.
 	AI_Output			(other, self, "DIA_Vatras_BEGINN_15_02"); //E per quanto riguarda l'erba di palude?
 	
-	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_03"); //Ah, sì. Hai le tre piante che ti avevo chiesto?
+	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_03"); //Ah, sÃ¬. Hai le tre piante che ti avevo chiesto?
 	
 	if (B_GiveInvItems (other, self, ItPL_SwampHerb,3))
 	{
-		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_04"); //Ehm, sì. Ecco le tre piante.
+		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_04"); //Ehm, sÃ¬. Ecco le tre piante.
 		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_05"); //Eccellente.
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
 		AI_Output			(other, self, "DIA_Vatras_BEGINN_15_06"); //No, non ancora.
-		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_07"); //Va bene. Vorrà dire che dovremo farcela senza.
+		AI_Output			(self, other, "DIA_Vatras_BEGINN_05_07"); //Va bene. VorrÃ  dire che dovremo farcela senza.
 	};
 	
 	AI_Output			(self, other, "DIA_Vatras_BEGINN_05_08"); //Hai fatto un buon lavoro, ma ora fatti da parte in modo che possa cominciare la cerimonia. Che i nostri spiriti possano unirsi.
@@ -2344,11 +2344,11 @@ func int DIA_Vatras_AUGEGEHEILT_Condition ()
 
 func void DIA_Vatras_AUGEGEHEILT_Info ()
 {
-	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_00"); //È finita. Siamo riusciti a ostacolare i piani del nemico e riparare l'Occhio.
+	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_00"); //Ãˆ finita. Siamo riusciti a ostacolare i piani del nemico e riparare l'Occhio.
 	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_01"); //Lascia che Pyrokar ti spieghi come usare i suoi poteri.
 	AI_Output			(self, other, "DIA_Vatras_AUGEGEHEILT_05_02"); //Spero di rivederti dopo che avrai terminato la tua missione. Addio.
  	
- 	B_LogEntry (TOPIC_INNOSEYE, "L'Occhio è stato ripristinato. Pyrokar me lo consegnerà e poi partirà la caccia al drago.");
+ 	B_LogEntry (TOPIC_INNOSEYE, "L'Occhio Ã¨ stato ripristinato. Pyrokar me lo consegnerÃ  e poi partirÃ  la caccia al drago.");
 	AI_StopProcessInfos (self); Vatras_MORE = FALSE;
  
  	RitualInnosEyeRuns = LOG_SUCCESS;
@@ -2377,7 +2377,7 @@ instance DIA_Vatras_PERMKAP3		(C_INFO)
 	condition	 = 	DIA_Vatras_PERMKAP3_Condition;
 	information	 = 	DIA_Vatras_PERMKAP3_Info;
 
-	description	 = 	"Grazie per aver contribuito alla guarigione dell’Occhio di Innos.";
+	description	 = 	"Grazie per aver contribuito alla guarigione dellâ€™Occhio di Innos.";
 };
 
 func int DIA_Vatras_PERMKAP3_Condition ()
@@ -2390,12 +2390,12 @@ func int DIA_Vatras_PERMKAP3_Condition ()
 
 func void DIA_Vatras_PERMKAP3_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_PERMKAP3_15_00"); //Grazie per aver contribuito alla guarigione dell’Occhio di Innos.
-	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_01"); //Non essere così prodigo di complimenti. Il tuo compito più grande ti attende.
+	AI_Output			(other, self, "DIA_Vatras_PERMKAP3_15_00"); //Grazie per aver contribuito alla guarigione dellâ€™Occhio di Innos.
+	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_01"); //Non essere cosÃ¬ prodigo di complimenti. Il tuo compito piÃ¹ grande ti attende.
 
 	if (MIS_ReadyforChapter4 == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_02"); //Parla con Pyrokar, ti spiegherà tutto.
+		AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_02"); //Parla con Pyrokar, ti spiegherÃ  tutto.
 	};
 
 	AI_Output			(self, other, "DIA_Vatras_PERMKAP3_05_03"); //Spero di vederti ancora tutto intero, figlio mio.
@@ -2427,9 +2427,9 @@ func int DIA_Vatras_HILDAKRANK_Condition ()
 func void DIA_Vatras_HILDAKRANK_Info ()
 {
 	AI_Output			(other, self, "DIA_Vatras_HILDAKRANK_15_00"); //Hilda, la moglie di Lobart, sta male.
-	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_01"); //Cosa? Ancora? Quella donna dovrebbe curarsi di più.
-	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_02"); //Con un inverno rigido, lei non sarà più con noi. Va bene, dalle una medicina per abbassare la febbre.
-	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_03"); //Oh, sai, già che ci sei, potresti lasciarla un po' in pace.
+	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_01"); //Cosa? Ancora? Quella donna dovrebbe curarsi di piÃ¹.
+	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_02"); //Con un inverno rigido, lei non sarÃ  piÃ¹ con noi. Va bene, dalle una medicina per abbassare la febbre.
+	AI_Output			(self, other, "DIA_Vatras_HILDAKRANK_05_03"); //Oh, sai, giÃ  che ci sei, potresti lasciarla un po' in pace.
 	CreateInvItems (self, ItPo_HealHilda_MIS, 1);									
 	B_GiveInvItems (self, other, ItPo_HealHilda_MIS, 1);					
 };
@@ -2444,7 +2444,7 @@ instance DIA_Vatras_OBSESSION		(C_INFO)
 	condition	 = 	DIA_Vatras_OBSESSION_Condition;
 	information	 = 	DIA_Vatras_OBSESSION_Info;
 
-	description	 = 	"Ho questo senso d’ansia.";
+	description	 = 	"Ho questo senso dâ€™ansia.";
 };
 
 func int DIA_Vatras_OBSESSION_Condition ()
@@ -2458,9 +2458,9 @@ func int DIA_Vatras_OBSESSION_Condition ()
 
 func void DIA_Vatras_OBSESSION_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_OBSESSION_15_00"); //Ho questo senso d’ansia.
+	AI_Output			(other, self, "DIA_Vatras_OBSESSION_15_00"); //Ho questo senso dâ€™ansia.
 	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_01"); //Neanche tu sembri molto a posto. Ti sei esposto troppo a lungo alle occhiate oscure dei Cercatori.
-	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_02"); //Tutto quello che posso fare è curare il tuo corpo, ma solo al monastero potrai purificare la tua anima. Parla con Pyrokar, ti aiuterà!
+	AI_Output			(self, other, "DIA_Vatras_OBSESSION_05_02"); //Tutto quello che posso fare Ã¨ curare il tuo corpo, ma solo al monastero potrai purificare la tua anima. Parla con Pyrokar, ti aiuterÃ !
 };
 
 
@@ -2474,7 +2474,7 @@ func void DIA_Vatras_OBSESSION_Info ()
 
 
 // ************************************************************
-// 	  				   Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  				   Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Vatras_AllDragonsDead(C_INFO)
@@ -2483,7 +2483,7 @@ INSTANCE DIA_Vatras_AllDragonsDead(C_INFO)
 	nr			= 59;
 	condition	= DIA_Vatras_AllDragonsDead_Condition;
 	information	= DIA_Vatras_AllDragonsDead_Info;
-	description = "I draghi non saranno più causa di distruzione.";
+	description = "I draghi non saranno piÃ¹ causa di distruzione.";
 };                       
 FUNC INT DIA_Vatras_AllDragonsDead_Condition()
 {
@@ -2494,8 +2494,8 @@ FUNC INT DIA_Vatras_AllDragonsDead_Condition()
 };
 FUNC VOID DIA_Vatras_AllDragonsDead_Info()
 {	
-	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_00"); //I draghi non saranno più causa di distruzione.
-	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_01"); //Sapevo che saresti ritornato sano e salvo. Tuttavia, devi ancora superare l'ostacolo più grande.
+	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_00"); //I draghi non saranno piÃ¹ causa di distruzione.
+	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_01"); //Sapevo che saresti ritornato sano e salvo. Tuttavia, devi ancora superare l'ostacolo piÃ¹ grande.
 	AI_Output (other,self ,"DIA_Vatras_AllDragonsDead_15_02"); //Lo so.
 	AI_Output (self ,other,"DIA_Vatras_AllDragonsDead_05_03"); //Allora equipaggiati e vieni da me se hai bisogno di aiuto. Porta sempre con te l'Occhio di Innos, hai capito? Che Adanos possa benedirti.
 };
@@ -2525,21 +2525,21 @@ func void DIA_Vatras_KnowWhereEnemy_Info ()
 	AI_Output			(other, self, "DIA_Vatras_KnowWhereEnemy_15_00"); //So dove si trova il nostro nemico.
 	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_01"); //Allora non perdiamo tempo e cerchiamolo prima che arrivi da noi.
 	AI_Output			(other, self, "DIA_Vatras_KnowWhereEnemy_15_02"); //Vuoi accompagnarmi?
-	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_03"); //Ci ho pensato molto e non sono mai stato così certo dei miei affari, amico mio.
+	AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_03"); //Ci ho pensato molto e non sono mai stato cosÃ¬ certo dei miei affari, amico mio.
 		
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                    	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                    	
-	B_LogEntry (TOPIC_Crew,"Sorprendentemente, Vatras si è offerto di accompagnarmi nel viaggio. Un uomo con le sue abilità ed esperienza potrebbe essere utile.");	
+	B_LogEntry (TOPIC_Crew,"Sorprendentemente, Vatras si Ã¨ offerto di accompagnarmi nel viaggio. Un uomo con le sue abilitÃ  ed esperienza potrebbe essere utile.");	
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Vatras_KnowWhereEnemy_15_04"); //C'è già troppa gente sulla mia lista. Temo che per te non ci sia più spazio.
+		AI_Output			(other,self , "DIA_Vatras_KnowWhereEnemy_15_04"); //C'Ã¨ giÃ  troppa gente sulla mia lista. Temo che per te non ci sia piÃ¹ spazio.
 		AI_Output			(self, other, "DIA_Vatras_KnowWhereEnemy_05_05"); //Allora fallo, avrai bisogno di me.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Vatras_KnowWhereEnemy);
-		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"Ci penserò su ancora un po’.",DIA_Vatras_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"Ci penserÃ² su ancora un poâ€™.",DIA_Vatras_KnowWhereEnemy_No);
 		Info_AddChoice (DIA_Vatras_KnowWhereEnemy,"Considero un onore che tu sia dalla mia parte.",DIA_Vatras_KnowWhereEnemy_Yes);
 	};
 };
@@ -2565,7 +2565,7 @@ FUNC VOID DIA_Vatras_KnowWhereEnemy_Yes ()
 			Npc_ExchangeRoutine (self,"WAITFORSHIP"); 
 		};
 
-	// ------ Zuhörer weg -------
+	// ------ ZuhÃ¶rer weg -------
 	B_Vatras_GeheWeg (lang);
 	
 	Info_ClearChoices (DIA_Vatras_KnowWhereEnemy);
@@ -2573,7 +2573,7 @@ FUNC VOID DIA_Vatras_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Vatras_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Vatras_KnowWhereEnemy_No_15_00"); //Ci penserò su ancora un po’.
+	AI_Output (other,self ,"DIA_Vatras_KnowWhereEnemy_No_15_00"); //Ci penserÃ² su ancora un poâ€™.
 	AI_Output (self ,other,"DIA_Vatras_KnowWhereEnemy_No_05_01"); //Fa' come vuoi. Torna da me quando avrai cambiato idea.
 
 	Vatras_IsOnBoard	 = LOG_OBSOLETE;
@@ -2590,7 +2590,7 @@ instance DIA_Vatras_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Vatras_LeaveMyShip_Condition;
 	information	 = 	DIA_Vatras_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Farai meglio a rimanere qui. La città ha bisogno di te.";
+	description	 = 	"Farai meglio a rimanere qui. La cittÃ  ha bisogno di te.";
 };
 func int DIA_Vatras_LeaveMyShip_Condition ()
 {	
@@ -2602,8 +2602,8 @@ func int DIA_Vatras_LeaveMyShip_Condition ()
 };
 func void DIA_Vatras_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Vatras_LeaveMyShip_15_00"); //Farai meglio a rimanere qui. La città ha bisogno di te.
-	AI_Output			(self, other, "DIA_Vatras_LeaveMyShip_05_01"); //Forse hai ragione. E sì, ti accompagnerò se lo desideri, lo sai.
+	AI_Output			(other, self, "DIA_Vatras_LeaveMyShip_15_00"); //Farai meglio a rimanere qui. La cittÃ  ha bisogno di te.
+	AI_Output			(self, other, "DIA_Vatras_LeaveMyShip_05_01"); //Forse hai ragione. E sÃ¬, ti accompagnerÃ² se lo desideri, lo sai.
 	
 	Vatras_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -2612,7 +2612,7 @@ func void DIA_Vatras_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Vatras_StillNeedYou		(C_INFO)
 {
@@ -2621,7 +2621,7 @@ instance DIA_Vatras_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Vatras_StillNeedYou_Condition;
 	information	 = 	DIA_Vatras_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Vieni con me sull’isola del nemico.";
+	description	 = 	"Vieni con me sullâ€™isola del nemico.";
 };
 
 func int DIA_Vatras_StillNeedYou_Condition ()
@@ -2636,14 +2636,14 @@ func int DIA_Vatras_StillNeedYou_Condition ()
 
 func void DIA_Vatras_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Vatras_StillNeedYou_15_00"); //Vieni con me sull’isola del nemico.
+	AI_Output	(other, self, "DIA_Vatras_StillNeedYou_15_00"); //Vieni con me sullâ€™isola del nemico.
 	AI_Output	(self, other, "DIA_Vatras_StillNeedYou_05_01"); //Una decisione saggia. Mi auguro che adesso tu possa andare avanti.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Vatras_IsOnBoard	 = LOG_SUCCESS;
 	crewmember_Count = (Crewmember_Count +1);
 
-	// ------ Zuhörer weg -------
+	// ------ ZuhÃ¶rer weg -------
 	B_Vatras_GeheWeg (lang);
 	
 	AI_StopProcessInfos (self); Vatras_MORE = FALSE;

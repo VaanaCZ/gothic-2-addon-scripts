@@ -17,7 +17,7 @@ INSTANCE ItSe_ErzFisch (C_Item)
 	on_state[0]			=	Use_ErzFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"C'è qualcosa nascosto dentro questo pesce.";		
+	TEXT[2]				= 	"C'Ã¨ qualcosa nascosto dentro questo pesce.";		
 	
 };
 
@@ -44,7 +44,7 @@ INSTANCE ItSe_GoldFisch (C_Item)
 	on_state[0]			=	Use_GoldFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"C'è qualcosa nascosto dentro questo pesce.";		
+	TEXT[2]				= 	"C'Ã¨ qualcosa nascosto dentro questo pesce.";		
 	
 };
 
@@ -71,7 +71,7 @@ INSTANCE ItSe_Ringfisch (C_Item)
 	on_state[0]			=	Use_Ringfisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"C'è qualcosa nascosto dentro questo pesce.";		
+	TEXT[2]				= 	"C'Ã¨ qualcosa nascosto dentro questo pesce.";		
 	
 };
 
@@ -98,7 +98,7 @@ INSTANCE ItSe_LockpickFisch (C_Item)
 	on_state[0]			=	Use_LockpickFisch;
 
 	description			= 	name;
-	TEXT[2]				= 	"C'è qualcosa nascosto dentro questo pesce.";		
+	TEXT[2]				= 	"C'Ã¨ qualcosa nascosto dentro questo pesce.";		
 	
 };
 
@@ -161,7 +161,7 @@ INSTANCE ItSe_GoldPocket50	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Questa borsa è piena di monete.";
+	TEXT[2]				= 	"Questa borsa Ã¨ piena di monete.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;

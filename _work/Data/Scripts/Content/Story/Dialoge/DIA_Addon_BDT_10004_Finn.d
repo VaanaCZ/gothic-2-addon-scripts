@@ -77,7 +77,7 @@ FUNC INT DIA_Addon_Finn_Hacker_Condition()
 FUNC VOID DIA_Addon_Finn_Hacker_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10004_Finn_Hacker_15_00"); //Di nuovo al lavoro?
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //Già, sto estraendo proprio l'ultimissimo pezzo d'oro da questa miniera.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Hacker_07_01"); //GiÃ , sto estraendo proprio l'ultimissimo pezzo d'oro da questa miniera.
 };
 //----------------------------------------------------------------------
 //	Info Hacke
@@ -125,7 +125,7 @@ FUNC VOID DIA_Addon_Finn_Hacke_Info()
 	AI_Output (other, self, "DIA_Addon_Finn_Hacke_15_00"); //Dove trovo un piccone?
 	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_01"); //Vai da Huno, il fabbro. Ma anche se hai un piccone, non significa che tu riesca a entrare nella miniera.
 	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_02"); //Se vuoi entrare, devi parlare con Esteban.
-	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Non perdere tempo con Thorus: ti farà entrare solo se hai una pietra rossa.
+	AI_Output (self, other, "DIA_Addon_Finn_Hacke_07_03"); //Non perdere tempo con Thorus: ti farÃ  entrare solo se hai una pietra rossa.
 };
 
 //----------------------------------------------------------------------
@@ -150,8 +150,8 @@ FUNC INT DIA_Addon_Finn_Esteban_Condition()
 FUNC VOID DIA_Addon_Finn_Esteban_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Finn_Esteban_15_00"); //Dimmi, che cosa pensi di Esteban?
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(cauto) Lui è il capo, qui… è… un tipo a posto, penso.
-	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(esitante) Fa sempre entrare nella miniera i bravi ragazzi. Cioè quelli che sanno qualcosa del lavoro in miniera.
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_01"); //(cauto) Lui Ã¨ il capo, quiâ€¦ Ã¨â€¦ un tipo a posto, penso.
+	AI_Output (self, other, "DIA_Addon_Finn_Esteban_07_02"); //(esitante) Fa sempre entrare nella miniera i bravi ragazzi. CioÃ¨ quelli che sanno qualcosa del lavoro in miniera.
 };
 
 //----------------------------------------------------------------------
@@ -206,7 +206,7 @@ FUNC VOID DIA_Addon_Finn_Mine_Info()
 	B_GiveInvItems (other, self, ItmI_Addon_Stone_01,1);
 	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_00"); //Ben detto, capo. Vuoi vedere il migliore in fatto di miniere? Allora torniamoci...
 	
-	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Ah, un'altra cosa. Ti svelerò un segreto da scavatori.
+	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_01");//Ah, un'altra cosa. Ti svelerÃ² un segreto da scavatori.
 	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_02");//Ogni tanto vale la pena di vibrare un colpo molto deciso:
 	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_03");//Se hai picconato un paio di volte senza risultato, allora sposta la punta del piccone di lato, lungo la roccia.
 	AI_Output (self, other, "DIA_Addon_BDT_10004_Finn_Mine_07_04");//Con un po' di fortuna, in questo modo scalzerai parecchi blocchi.
@@ -242,15 +242,15 @@ FUNC INT DIA_Addon_Finn_Gold_Condition()
 FUNC VOID DIA_Addon_Finn_Gold_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//Beh, c'è qualcosa che dovresti sapere. L'oro non è un metallo: c'è una differenza maledettamente importante.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_00");//Beh, c'Ã¨ qualcosa che dovresti sapere. L'oro non Ã¨ un metallo: c'Ã¨ una differenza maledettamente importante.
 	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_01");//Come dire... conosci una donna che si appenderebbe al collo una catena di metallo? (ride)
 	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_02");//Quando usi il piccone, colpisci dall'alto in basso. In questo modo riuscirai a scalzare meglio le pepite.
-	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//Ci sono anche scavatori che fanno il contrario, ma è molto più difficile.
+	AI_Output (self, other, "DIA_Addon_Finn_Gold_07_03");//Ci sono anche scavatori che fanno il contrario, ma Ã¨ molto piÃ¹ difficile.
 
 	B_Upgrade_hero_HackChance(10);
 };
 //---------------------------------------------------------------------
-//	Info einschätzen
+//	Info einschÃ¤tzen
 //---------------------------------------------------------------------
 INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 {
@@ -259,7 +259,7 @@ INSTANCE DIA_Addon_Finn_ein   (C_INFO)
 	condition   = DIA_Addon_Finn_ein_Condition;
 	information = DIA_Addon_Finn_ein_Info;
 	permanent   = TRUE;
-	description = "Sei in grado di giudicare le mie abilità di scavatore d'oro?";
+	description = "Sei in grado di giudicare le mie abilitÃ  di scavatore d'oro?";
 };
 FUNC INT DIA_Addon_Finn_ein_Condition()
 {	
@@ -272,11 +272,11 @@ var int Finn_einmal;
 var int Finn_Gratulation;
 FUNC VOID DIA_Addon_Finn_ein_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//Sei in grado di giudicare le mie abilità di scavatore d'oro?
+	AI_Output (other, self, "DIA_Addon_Finn_ein_15_00");//Sei in grado di giudicare le mie abilitÃ  di scavatore d'oro?
 	
 	if (Finn_einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//Certo, sono del mestiere da più di 35 anni. Non c'è nulla che non possa valutare!
+		AI_Output (self, other, "DIA_Addon_Finn_ein_07_01");//Certo, sono del mestiere da piÃ¹ di 35 anni. Non c'Ã¨ nulla che non possa valutare!
 		Finn_einmal = TRUE;
 	};
 	AI_Output (self, other, "DIA_Addon_Finn_ein_07_02");//Quanto a te, direi che sei
@@ -311,7 +311,7 @@ FUNC VOID DIA_Addon_Finn_ein_Info()
 		
 		if (Finn_Gratulation == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//E così adesso sei bravo quanto me. Complimenti, socio.
+			AI_Output (self, other, "DIA_Addon_Finn_ein_07_10");//E cosÃ¬ adesso sei bravo quanto me. Complimenti, socio.
 			B_GivePlayerXP (XP_Ambient*2);
 			Snd_Play ("LevelUP");
 			Finn_Gratulation = TRUE;
@@ -336,7 +336,7 @@ INSTANCE DIA_Addon_Finn_Attentat   (C_INFO)
 	condition   = DIA_Addon_Finn_Attentat_Condition;
 	information = DIA_Addon_Finn_Attentat_Info;
 	permanent   = FALSE;
-	description	= "A proposito del tentato omicidio di Esteban…";
+	description	= "A proposito del tentato omicidio di Estebanâ€¦";
 };
 FUNC INT DIA_Addon_Finn_Attentat_Condition()
 {	
@@ -348,12 +348,12 @@ FUNC INT DIA_Addon_Finn_Attentat_Condition()
 FUNC VOID DIA_Addon_Finn_Attentat_Info()
 {
 	B_Say (other, self, "$ATTENTAT_ADDON_DESCRIPTION2"); //Wegen des Attentats auf Esteban
-	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_00"); //(cauto) Sì?
+	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_00"); //(cauto) SÃ¬?
 	AI_Output (other, self, "DIA_Addon_Finn_Attentat_15_01"); //Hai idea di chi ci sia dietro tutto questo?
-	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_02"); //Perché lo vuoi sapere?
+	AI_Output (self, other, "DIA_Addon_Finn_Attentat_07_02"); //PerchÃ© lo vuoi sapere?
 	
 	Info_ClearChoices (DIA_Addon_Finn_Attentat);
-	Info_AddChoice (DIA_Addon_Finn_Attentat,"Devo parlare con quel tipo…",DIA_Addon_Finn_Attentat_WannaTalk);
+	Info_AddChoice (DIA_Addon_Finn_Attentat,"Devo parlare con quel tipoâ€¦",DIA_Addon_Finn_Attentat_WannaTalk);
 	Info_AddChoice (DIA_Addon_Finn_Attentat,"Esteban lo vuole vedere morto!",DIA_Addon_Finn_Attentat_ForTheBoss);
 };
 	
@@ -362,7 +362,7 @@ func void B_Addon_Finn_TellAll()
 	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_00"); //(racconta) Quando attaccarono, stavo cercando di prendere il mio piccone da Huno, il fabbro.
 	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_01"); //Ma lui non c'era.
 	AI_Output (other, self, "DIA_Addon_Finn_TellAll_15_02"); //E?
-	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Di solito, è SEMPRE là. Per me è una faccenda MOLTO sospetta.
+	AI_Output (self, other, "DIA_Addon_Finn_TellAll_07_03"); //Di solito, Ã¨ SEMPRE lÃ . Per me Ã¨ una faccenda MOLTO sospetta.
 	
 	Finn_TellAll = TRUE;
 	B_LogEntry (Topic_Addon_Esteban, "Finn dice che Huno non era presente durante l'attacco.");
@@ -372,7 +372,7 @@ func void DIA_Addon_Finn_Attentat_ForTheBoss()
 {
 	AI_Output (other, self, "DIA_Addon_Finn_ForTheBoss_15_00"); //Esteban lo vuole vedere morto!
 	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_01"); //Oh! Lavori per il capo?
-	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Allora ti dirò quello che so.
+	AI_Output (self, other, "DIA_Addon_Finn_ForTheBoss_07_02"); //Allora ti dirÃ² quello che so.
 	
 	B_Addon_Finn_TellAll();
 	
@@ -415,7 +415,7 @@ func void DIA_Addon_Finn_Attentat_HaveInfos()
 	func void DIA_Addon_Finn_Attentat_NoNo()
 	{
 		AI_Output (other, self, "DIA_Addon_Finn_NoNo_15_00"); //Niente affatto!
-		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(riflettendo) Bene! Ti dirò quello che so.
+		AI_Output (self, other, "DIA_Addon_Finn_NoNo_07_01"); //(riflettendo) Bene! Ti dirÃ² quello che so.
 		
 		B_Addon_Finn_TellAll();
 		Info_ClearChoices (DIA_Addon_Finn_Attentat);
@@ -439,7 +439,7 @@ INSTANCE DIA_Addon_Finn_Again  (C_INFO)
 	condition   = DIA_Addon_Finn_Again_Condition;
 	information = DIA_Addon_Finn_Again_Info;
 	permanent   = TRUE;
-	description	= "Ancora a proposito dell'attacco…";
+	description	= "Ancora a proposito dell'attaccoâ€¦";
 };
 FUNC INT DIA_Addon_Finn_Again_Condition()
 {	
@@ -454,15 +454,15 @@ FUNC VOID DIA_Addon_Finn_Again_Info()
 	AI_Output (other, self, "DIA_Addon_Finn_Again_15_00"); //Ancora a proposito dell'attacco
 	if (Finn_TellAll == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //Ti ho già detto tutto quello che so.
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_01"); //Ti ho giÃ  detto tutto quello che so.
 		
 		Info_ClearChoices (DIA_Addon_Finn_Again);
-		Info_AddChoice (DIA_Addon_Finn_Again, "Ok… (arretra)", DIA_Addon_Finn_Again_Exit);
+		Info_AddChoice (DIA_Addon_Finn_Again, "Okâ€¦ (arretra)", DIA_Addon_Finn_Again_Exit);
 		Info_AddChoice (DIA_Addon_Finn_Again, "Dimmelo ancora!", DIA_Addon_Finn_Again_Nochmal);		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Non ne voglio più sapere di quelle stupidaggini!
+		AI_Output (self, other, "DIA_Addon_Finn_Again_07_02"); //Non ne voglio piÃ¹ sapere di quelle stupidaggini!
 		AI_StopProcessInfos(self);
 	};
 };

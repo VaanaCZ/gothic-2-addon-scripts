@@ -50,11 +50,11 @@ FUNC VOID DIA_SLD_6_JOIN_Info()
 	}
 	else if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02"); //Derubare i contadini Ë un conto, ma combattere contro la guardia cittadina Ë tutta un'altra cosa. Ma se vai bene a Onar, allora per me non ci sono problemi...
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_02"); //Derubare i contadini √® un conto, ma combattere contro la guardia cittadina √® tutta un'altra cosa. Ma se vai bene a Onar, allora per me non ci sono problemi...
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03"); //Parla con Torlof. Ti dir‡ quello che devi fare... (ride)
+		AI_Output (self, other, "DIA_SLD_6_JOIN_06_03"); //Parla con Torlof. Ti dir√† quello che devi fare... (ride)
 	};
 };
 
@@ -67,7 +67,7 @@ INSTANCE DIA_SLD_6_PEOPLE(C_INFO)
 	condition	= DIA_SLD_6_PEOPLE_Condition;
 	information	= DIA_SLD_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT DIA_SLD_6_PEOPLE_Condition()
@@ -81,10 +81,10 @@ FUNC INT DIA_SLD_6_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Chi Ë il capo, qui?
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //La fattoria appartiene a Onar, se Ë questo ciÚ che intendi, ma il nostro capo Ë Lee.
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Egli era un generale dell'esercito reale, ma ora non Ë pi˘ in 'rapporti cosÏ amichevoli' con il re (ride).
-	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Ricordati il suo nome. Se dovessi finire nei guai qui, egli Ë probabilmente l'unica persona in grado di aiutarti. Tutti gli altri vorranno semplicemente farti la pelle.
+	AI_Output (other, self, "DIA_SLD_6_PEOPLE_15_00"); //Chi √® il capo, qui?
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_01"); //La fattoria appartiene a Onar, se √® questo ci√≤ che intendi, ma il nostro capo √® Lee.
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_02"); //Egli era un generale dell'esercito reale, ma ora non √® pi√π in 'rapporti cos√¨ amichevoli' con il re (ride).
+	AI_Output (self, other, "DIA_SLD_6_PEOPLE_06_03"); //Ricordati il suo nome. Se dovessi finire nei guai qui, egli √® probabilmente l'unica persona in grado di aiutarti. Tutti gli altri vorranno semplicemente farti la pelle.
 };
 
 // *************************************************************************
@@ -112,7 +112,7 @@ FUNC VOID DIA_SLD_6_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_SLD_6_LOCATION_15_00"); //State sorvegliando i contadini?
 	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_01"); //Noi siamo a guardia dell'intera valle, non solo della fattoria di Onar.
-	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02"); //Onar vuole che ci andiamo gi˘ pesanti con chiunque causi dei guai qui, perciÚ comportati bene.
+	AI_Output (self, other, "DIA_SLD_6_LOCATION_06_02"); //Onar vuole che ci andiamo gi√π pesanti con chiunque causi dei guai qui, perci√≤ comportati bene.
 };
 
 // *************************************************************************
@@ -152,12 +152,12 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 			if (other.guild == GIL_SLD)
 			{
 				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_03"); //Quando ho saputo dei draghi, all'inizio stentavo a crederci.
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Un drago, questo sÏ che Ë un combattimento. Finalmente un avversario degno, non pi˘ pecore o stupide guardie cittadine.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_04"); //Un drago, questo s√¨ che √® un combattimento. Finalmente un avversario degno, non pi√π pecore o stupide guardie cittadine.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //Il tuo Lord Hagen se l'Ë gi‡ fatta sotto dalla paura dei draghi?
-				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //Sembra che ora dovr‡ muovere il suo nobile fondoschiena dalla citt‡.
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_05"); //Il tuo Lord Hagen se l'√® gi√† fatta sotto dalla paura dei draghi?
+				AI_Output (self,other,"DIA_SLD_6_STANDARD_06_06"); //Sembra che ora dovr√† muovere il suo nobile fondoschiena dalla citt√†.
 			};
 		};	
 	};
@@ -166,7 +166,7 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 	{
 		if (MIS_RescueBennet == LOG_SUCCESS)
 		{
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Lord Hagen puÚ ritenersi fortunato. Ancora un paio di giorni e avremmo tirato Bennet fuori di lÏ da soli.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_07"); //Lord Hagen pu√≤ ritenersi fortunato. Ancora un paio di giorni e avremmo tirato Bennet fuori di l√¨ da soli.
 		}
 		else
 		{
@@ -192,7 +192,7 @@ FUNC VOID DIA_SLD_6_STANDARD_Info()
 		if (hero.guild == GIL_DJG)
 		{
 			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_12"); //Quando ti ho visto per la prima volta, ho capito subito che avresti rivoltato questo posto sottosopra.
-			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Ma i draghi? » una faccenda piuttosto seria. Nessuno combatter‡ contro di te per un po' di tempo.
+			AI_Output (self,other,"DIA_SLD_6_STANDARD_06_13"); //Ma i draghi? √à una faccenda piuttosto seria. Nessuno combatter√† contro di te per un po' di tempo.
 		}
 		else
 		{

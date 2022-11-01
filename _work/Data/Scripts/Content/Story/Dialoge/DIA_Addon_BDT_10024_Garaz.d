@@ -72,7 +72,7 @@ FUNC INT DIA_Addon_Garaz_Probleme_Condition()
 FUNC VOID DIA_Addon_Garaz_Probleme_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_00");//Aspetta un attimo.
-	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//C’è qualche problema?
+	AI_Output (other, self, "DIA_Addon_Garaz_Probleme_15_01");//Câ€™Ã¨ qualche problema?
 	AI_Output (self, other, "DIA_Addon_Garaz_Probleme_08_02");//Scavaragno. Un sacco di scavaragno. Siamo incappati in un nido.
 };
 //---------------------------------------------------------------------
@@ -85,7 +85,7 @@ INSTANCE DIA_Addon_Garaz_Hi   (C_INFO)
 	condition   = DIA_Addon_Garaz_Hi_Condition;
 	information = DIA_Addon_Garaz_Hi_Info;
 	permanent   = FALSE;
-	description = "Perché non attacchiamo gli scavaragno?";
+	description = "PerchÃ© non attacchiamo gli scavaragno?";
 };
 FUNC INT DIA_Addon_Garaz_Hi_Condition()
 {	
@@ -97,13 +97,13 @@ FUNC INT DIA_Addon_Garaz_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//Perché non attacchiamo gli scavaragno?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//L'ho chiesto anch'io. Ma le guardie avevano 'cose più importanti' da fare.
+	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_00");//PerchÃ© non attacchiamo gli scavaragno?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_01");//L'ho chiesto anch'io. Ma le guardie avevano 'cose piÃ¹ importanti' da fare.
 	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_02");//Bloodwyn ha incaricato me di risolvere il problema.
 	AI_Output (other, self, "DIA_Addon_Garaz_Hi_15_03");//Non credo che tu stia pensando di combattere contro gli scavaragno.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//Perché dovrei? Per l'oro che si trova nella caverna?
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Bloodwyn se ne prenderà comunque la maggior parte per sé. E io non rischio il collo per le briciole.
-	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Se TU vuoi combattere contro gli scavaragno, non ti fermerò. Ma non attirarli tutti qui fuori, va bene?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_04");//PerchÃ© dovrei? Per l'oro che si trova nella caverna?
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_05");//Bloodwyn se ne prenderÃ  comunque la maggior parte per sÃ©. E io non rischio il collo per le briciole.
+	AI_Output (self, other, "DIA_Addon_Garaz_Hi_08_06");//Se TU vuoi combattere contro gli scavaragno, non ti fermerÃ². Ma non attirarli tutti qui fuori, va bene?
 	
 };
 //---------------------------------------------------------------------
@@ -116,7 +116,7 @@ INSTANCE DIA_Addon_Garaz_Bloodwyn   (C_INFO)
 	condition   = DIA_Addon_Garaz_Bloodwyn_Condition;
 	information = DIA_Addon_Garaz_Bloodwyn_Info;
 	permanent   = FALSE;
-	description = "Puoi dirmi di più su Bloodwyn?";
+	description = "Puoi dirmi di piÃ¹ su Bloodwyn?";
 };
 FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 {	
@@ -129,15 +129,15 @@ FUNC INT DIA_Addon_Garaz_Bloodwyn_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Bloodwyn_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Puoi dirmi di più su Bloodwyn?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//Sì. È un bastardo affamato d'oro. Ispeziona ogni nuova vena e ogni pepita.
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//Non si può allontanare troppo in cerca dell'oro. Ma di noi non gli importa proprio niente.
+	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_00");//Puoi dirmi di piÃ¹ su Bloodwyn?
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_01");//SÃ¬. Ãˆ un bastardo affamato d'oro. Ispeziona ogni nuova vena e ogni pepita.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_02");//Non si puÃ² allontanare troppo in cerca dell'oro. Ma di noi non gli importa proprio niente.
 	AI_Output (other, self, "DIA_Addon_Garaz_Bloodwyn_15_03");//Inoltre?
-	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Pensa di essere il più grande e non sopporta che qualcuno sia messo meglio di lui. Insomma, io non mi metterei contro di lui.
+	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_04");//Pensa di essere il piÃ¹ grande e non sopporta che qualcuno sia messo meglio di lui. Insomma, io non mi metterei contro di lui.
 	AI_Output (self, other, "DIA_Addon_Garaz_Bloodwyn_08_05");//Stai lontano da lui e non provocarlo, a meno che tu non voglia farlo infuriare e fargli perdere il controllo
 	
-	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn lascerà definitivamente il tempio quando scoprirà che nella miniera è stata trovato un nuovo filone d'oro.");
-	B_LogEntry (Topic_Addon_Tempel,"Quando Bloodwyn si irrita, perde il controllo. Una cosa che mi sarà sicuramente utile."); 
+	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn lascerÃ  definitivamente il tempio quando scoprirÃ  che nella miniera Ã¨ stata trovato un nuovo filone d'oro.");
+	B_LogEntry (Topic_Addon_Tempel,"Quando Bloodwyn si irrita, perde il controllo. Una cosa che mi sarÃ  sicuramente utile."); 
 };
 //---------------------------------------------------------------------
 //	Info Sieg
@@ -161,8 +161,8 @@ FUNC INT DIA_Addon_Garaz_Sieg_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Sieg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//Così è tutto, gli scavaragno sono storia vecchia.
-	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Bloodwyn sta arrivando. È quello che volevi, no?
+	AI_Output (other, self, "DIA_Addon_Garaz_Sieg_15_00");//CosÃ¬ Ã¨ tutto, gli scavaragno sono storia vecchia.
+	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_01");//Bloodwyn sta arrivando. Ãˆ quello che volevi, no?
 	AI_Output (self, other, "DIA_Addon_Garaz_Sieg_08_02");//Voglio dire, hai ammazzato gli scavaragno per attirare qui Bloodwyn. Allora, qualsiasi cosa tu stia pensando, falla ORA.
 	
 	B_StartOtherRoutine (Bloodwyn,"GOLD");	
@@ -191,7 +191,7 @@ FUNC INT DIA_Addon_Garaz_Blood_Condition()
 FUNC VOID DIA_Addon_Garaz_Blood_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_00");//Gliel'hai fatta vedere a quel fannullone. Bel lavoro.
-	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Allora darò un'occhiata nella caverna.
+	AI_Output (self, other, "DIA_Addon_Garaz_Blood_08_01");//Allora darÃ² un'occhiata nella caverna.
 	
 	B_GivePlayerXP (XP_Ambient);
 	AI_StopProcessInfos  (self);
@@ -220,9 +220,9 @@ FUNC INT DIA_Addon_Garaz_Gold_Condition()
 };
 FUNC VOID DIA_Addon_Garaz_Gold_Info()
 {
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//Ehi, amico, qui c'è veramente un sacco d'oro.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Per raggiungere quei blocchi lassù ci vorrebbe una scala.
-	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Ma dalla caduta della Barriera, nessuno ha più usato scale… un vero peccato
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_00");//Ehi, amico, qui c'Ã¨ veramente un sacco d'oro.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_01");//Per raggiungere quei blocchi lassÃ¹ ci vorrebbe una scala.
+	AI_Output (self, other, "DIA_Addon_Garaz_Gold_08_02");//Ma dalla caduta della Barriera, nessuno ha piÃ¹ usato scaleâ€¦ un vero peccato
 };
 
 

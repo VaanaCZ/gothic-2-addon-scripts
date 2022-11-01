@@ -76,10 +76,10 @@ func int DIA_Borka_PISSOFF_Condition ()
 };
 func void DIA_Borka_PISSOFF_Info ()
 {
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Ehi, tu! Dove stai andando? Non importa quali siano i tuoi piani, ci sarà tutto il tempo dopo.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Sei esattamente davanti alla perla di Khorinis, la LANTERNA ROSSA. Dannazione, questo è il bordello più meraviglioso di tutta Myrtana!
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Ehi, tu! Dove stai andando? Non importa quali siano i tuoi piani, ci sarÃ  tutto il tempo dopo.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Sei esattamente davanti alla perla di Khorinis, la LANTERNA ROSSA. Dannazione, questo Ã¨ il bordello piÃ¹ meraviglioso di tutta Myrtana!
 	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //Marinai da tutto il mondo attraccano qui solamente per passare un paio di notti alla Lanterna Rossa.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //E ora è la tua possibilità, di più, l'onore di passare una notte con Nadja, il più passionale fiore degli dei.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //E ora Ã¨ la tua possibilitÃ , di piÃ¹, l'onore di passare una notte con Nadja, il piÃ¹ passionale fiore degli dei.
 	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //Entra e proverai cose che altri non hanno nemmeno mai sognato!
 	
 	AI_StopProcessInfos (self);
@@ -109,8 +109,8 @@ func int DIA_Borka_TROUBLE_Condition ()
 };
 func void DIA_Borka_TROUBLE_Info ()
 {
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Cosa fai lì impalato? Entra e potrai incontrare la nostra passionale Nadja.
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Questa calda creatura della notte darà alla tua vita un nuovo significato!
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Cosa fai lÃ¬ impalato? Entra e potrai incontrare la nostra passionale Nadja.
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Questa calda creatura della notte darÃ  alla tua vita un nuovo significato!
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ instance DIA_Borka_Smoke		(C_INFO)
 	condition	 = 	DIA_Borka_Smoke_Condition;
 	information	 = 	DIA_Borka_Smoke_Info;
 	permanent	 =  TRUE;
-	description	 =  "Sai dove posso comprare dell’erba?";
+	description	 =  "Sai dove posso comprare dellâ€™erba?";
 };
 
 func int DIA_Borka_Smoke_Condition ()
@@ -136,7 +136,7 @@ func int DIA_Borka_Smoke_Condition ()
 };
 func void DIA_Borka_Smoke_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Sai dove posso comprare dell’erba?
+	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Sai dove posso comprare dellâ€™erba?
 	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //No, sparisci!
 	AI_StopProcessInfos (self);
 };
@@ -174,7 +174,7 @@ func void DIA_Borka_BUYHERB_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //Chi è che lo dice?
+		AI_Output (self, other, "DIA_Borka_BUYHERB_11_02"); //Chi Ã¨ che lo dice?
 	
 		Info_ClearChoices 	(DIA_Borka_BUYHERB);
 		Info_AddChoice		(DIA_Borka_BUYHERB,"Non ha importanza.",DIA_Borka_BUYHERB_Egal);
@@ -183,7 +183,7 @@ func void DIA_Borka_BUYHERB_Info ()
 };
 FUNC VOID DIA_Borka_BUYHERB_Egal ()
 {
-	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //Non è questo il punto.
+	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //Non Ã¨ questo il punto.
 	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Voglio solo sapere chi ti ha mandato per essere sicuro che sei a posto.
 	
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
@@ -193,7 +193,7 @@ FUNC VOID DIA_Borka_BUYHERB_Egal ()
 FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 {
 	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //Lo dice Nadja.
-	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Chi può dirlo, l'uccellino ha cantato. Sai, non dovresti credere a qualsiasi cosa ti dice quella ragazza.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Chi puÃ² dirlo, l'uccellino ha cantato. Sai, non dovresti credere a qualsiasi cosa ti dice quella ragazza.
 	
 	Nadja_Victim = TRUE; 
 	Undercover_Failed = TRUE;
@@ -217,7 +217,7 @@ instance DIA_Borka_SECOND_CHANCE		(C_INFO)
 	condition	 = 	DIA_Borka_SECOND_CHANCE_Condition;
 	information	 = 	DIA_Borka_SECOND_CHANCE_Info;
 	permanent	 =  TRUE;  	
-	description	 = 	"Facciamo un affare (paga 50 monete d’oro)";
+	description	 = 	"Facciamo un affare (paga 50 monete dâ€™oro)";
 };
 func int DIA_Borka_SECOND_CHANCE_Condition ()
 {	

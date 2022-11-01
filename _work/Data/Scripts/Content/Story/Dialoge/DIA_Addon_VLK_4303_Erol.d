@@ -64,7 +64,7 @@ instance DIA_Addon_Erol_Hallo		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_Hallo_Condition;
 	information	 = 	DIA_Addon_Erol_Hallo_Info;
 
-	description	 = 	"Qual è il problema???";
+	description	 = 	"Qual Ã¨ il problema???";
 };
 
 func int DIA_Addon_Erol_Hallo_Condition ()
@@ -74,8 +74,8 @@ func int DIA_Addon_Erol_Hallo_Condition ()
 
 func void DIA_Addon_Erol_Hallo_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_Hallo_15_00"); //Qual è il problema?
-	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_01"); //(arrabbiato) Qual è il problema?! Guarda che confusione c'è sotto il ponte.
+	AI_Output	(other, self, "DIA_Addon_Erol_Hallo_15_00"); //Qual Ã¨ il problema?
+	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_01"); //(arrabbiato) Qual Ã¨ il problema?! Guarda che confusione c'Ã¨ sotto il ponte.
 	AI_Output	(self, other, "DIA_Addon_Erol_Hallo_10_02"); //(arrabbiato) Non ho mai visto niente di simile in tutta la mia vita. Quei porci andrebbero sterminati, ti dico.
 };
 
@@ -89,7 +89,7 @@ instance DIA_Addon_Erol_what		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_what_Condition;
 	information	 = 	DIA_Addon_Erol_what_Info;
 
-	description	 = 	"Cosa è successo?";
+	description	 = 	"Cosa Ã¨ successo?";
 };
 
 func int DIA_Addon_Erol_what_Condition ()
@@ -102,18 +102,18 @@ func int DIA_Addon_Erol_what_Condition ()
 
 func void DIA_Addon_Erol_what_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_what_15_00"); //Cosa è successo?
+	AI_Output	(other, self, "DIA_Addon_Erol_what_15_00"); //Cosa Ã¨ successo?
 	AI_Output	(self, other, "DIA_Addon_Erol_what_10_01"); //Ero in viaggio con i miei aiutanti quando quegli orribili bruti si sono avventati sul mio carro e hanno massacrato tutti quanti.
 	AI_Output	(self, other, "DIA_Addon_Erol_what_10_02"); //Fortunatamente ho ancora un gancio potente, altrimenti avrebbero ucciso anche me.
 
 	Log_CreateTopic (TOPIC_Addon_Erol, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Erol, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Erol,"Il commerciante Erol è stato attaccato da diversi briganti. Gli hanno rubato tutto. I briganti sul ponte vicino alla taverna dell''Arpia Morta' hanno ancora le sue preziose tavolette di pietra ed Erol le rivuole."); 
+	B_LogEntry (TOPIC_Addon_Erol,"Il commerciante Erol Ã¨ stato attaccato da diversi briganti. Gli hanno rubato tutto. I briganti sul ponte vicino alla taverna dell''Arpia Morta' hanno ancora le sue preziose tavolette di pietra ed Erol le rivuole."); 
 
 	MIS_Addon_Erol_BanditStuff = LOG_RUNNING;
 
 	Info_ClearChoices	(DIA_Addon_Erol_what);
-	Info_AddChoice	(DIA_Addon_Erol_what, "Quella roba sotto il ponte è tua?", DIA_Addon_Erol_what_dein );
+	Info_AddChoice	(DIA_Addon_Erol_what, "Quella roba sotto il ponte Ã¨ tua?", DIA_Addon_Erol_what_dein );
 	Info_AddChoice	(DIA_Addon_Erol_what, "Chi erano quelle persone?", DIA_Addon_Erol_what_wer );
 };
 func void DIA_Addon_Erol_what_back ()
@@ -122,7 +122,7 @@ func void DIA_Addon_Erol_what_back ()
 };
 func void DIA_Addon_Erol_what_dein ()
 {
-	AI_Output (other, self, "DIA_Addon_Erol_what_dein_15_00"); //Quella roba sotto il ponte è tua?
+	AI_Output (other, self, "DIA_Addon_Erol_what_dein_15_00"); //Quella roba sotto il ponte Ã¨ tua?
 	AI_Output (self, other, "DIA_Addon_Erol_what_dein_10_01"); //Il carro, le merci, tutto.
 	if (Npc_HasItems (other, itmi_erolskelch) > 0)
 	{
@@ -141,8 +141,8 @@ func void DIA_Addon_Erol_what_dein ()
 func void DIA_Addon_Erol_what_Was ()
 {
 	AI_Output			(other, self, "DIA_Addon_Erol_what_Was_15_00"); //Tavolette di pietra?
-	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_01"); //Me le ha chieste il Mago dell'Acqua in città, e io ho promesso di procurargliele.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_02"); //Devo assolutamente riaverle, altrimenti la mia reputazione ne soffrirà.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_01"); //Me le ha chieste il Mago dell'Acqua in cittÃ , e io ho promesso di procurargliele.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_Was_10_02"); //Devo assolutamente riaverle, altrimenti la mia reputazione ne soffrirÃ .
 
 	Info_AddChoice	(DIA_Addon_Erol_what, "Dove hai preso quelle tavolette di pietra?", DIA_Addon_Erol_what_woher );
 	Info_AddChoice	(DIA_Addon_Erol_what, "Cosa se ne fa un Mago dell'Acqua?", DIA_Addon_Erol_what_KDW );
@@ -156,14 +156,14 @@ func void DIA_Addon_Erol_what_woher ()
 {
 	AI_Output			(other, self, "DIA_Addon_Erol_what_woher_15_00"); //Dove hai preso quelle tavolette di pietra?
 	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_01"); //Le ho trovate vicino a edifici antichi, come mausolei, o a volte nelle grotte.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_02"); //Ne ho già vendute parecchie ai Maghi dell'Acqua, in città.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_02"); //Ne ho giÃ  vendute parecchie ai Maghi dell'Acqua, in cittÃ .
 	AI_Output			(self, other, "DIA_Addon_Erol_what_woher_10_03"); //Ma qui sono piuttosto rare. La maggior parte le ho trovate a nord-est di Khorinis.
 
-	Info_AddChoice	(DIA_Addon_Erol_what, "Perché non vai a cercarne delle altre?", DIA_Addon_Erol_what_neue );
+	Info_AddChoice	(DIA_Addon_Erol_what, "PerchÃ© non vai a cercarne delle altre?", DIA_Addon_Erol_what_neue );
 };
 func void DIA_Addon_Erol_what_neue ()
 {
-	AI_Output			(other, self, "DIA_Addon_Erol_what_neue_15_00"); //Perché non vai a cercarne delle altre?
+	AI_Output			(other, self, "DIA_Addon_Erol_what_neue_15_00"); //PerchÃ© non vai a cercarne delle altre?
 	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_01"); //Combattendo con i banditi mi sono storto la caviglia.
 	AI_Output			(self, other, "DIA_Addon_Erol_what_neue_10_02"); //Zoppico, e non posso fare molta strada col piede in queste condizioni.
 };
@@ -172,9 +172,9 @@ func void DIA_Addon_Erol_what_wer ()
 	AI_Output			(other, self, "DIA_Addon_Erol_what_wer_15_00"); //Chi erano quelle persone?
 	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_01"); //Briganti, chi altri? Hanno preso il controllo del ponte.
 	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_02"); //Rapinano chiunque cerchi di attraversare il ponte.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_03"); //Sapevo che erano appostati lassù, così sono passato sotto il ponte.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_03"); //Sapevo che erano appostati lassÃ¹, cosÃ¬ sono passato sotto il ponte.
 	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_04"); //Ma la mia roba dev'essere stata una tentazione troppo forte per loro.
-	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_05"); //Quei manigoldi sono saltati giù dal ponte, dritti sopra il mio carro.
+	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_05"); //Quei manigoldi sono saltati giÃ¹ dal ponte, dritti sopra il mio carro.
 	AI_Output			(self, other, "DIA_Addon_Erol_what_wer_10_06"); //Avrei dovuto provarci di notte...
 };
 
@@ -203,9 +203,9 @@ func int DIA_Addon_Erol_FernandosWeapons_Condition ()
 func void DIA_Addon_Erol_FernandosWeapons_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Erol_FernandosWeapons_15_00"); //Ho bisogno di informazioni su una consegna di armi ai briganti.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_01"); //Una consegna di armi? Sì, so di cosa parli. Qualche porco ha venduto loro talmente tante armi che quasi non riuscivano a portarle.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_01"); //Una consegna di armi? SÃ¬, so di cosa parli. Qualche porco ha venduto loro talmente tante armi che quasi non riuscivano a portarle.
 	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_02"); //Alcune le tengono sul ponte dove mi hanno attaccato, quei bastardi.
-	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_03"); //Il resto sarà stato trasportato oltre la fattoria di Bengar, sui pascoli alti.
+	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_03"); //Il resto sarÃ  stato trasportato oltre la fattoria di Bengar, sui pascoli alti.
 	AI_Output	(self, other, "DIA_Addon_Erol_FernandosWeapons_10_04"); //Forse i briganti volevano portarle oltre il passo.
 	
 	Info_ClearChoices	(DIA_Addon_Erol_FernandosWeapons);
@@ -216,7 +216,7 @@ func void DIA_Addon_Erol_FernandosWeapons_bengar ()
 {
 	AI_Output			(other, self, "DIA_Addon_Erol_FernandosWeapons_bengar_15_00"); //Dove sono i pascoli alti?
 	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_01"); //La taverna di Orlan si trova grosso modo al centro dell'isola di Khorinis. Si chiama 'L'Arpia Morta'.
-	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_02"); //Da lì parte una strada che va verso sud. Porta ai pascoli alti e all'ingresso del passo che conduce nella Valle delle Miniere.
+	AI_Output			(self, other, "DIA_Addon_Erol_FernandosWeapons_bengar_10_02"); //Da lÃ¬ parte una strada che va verso sud. Porta ai pascoli alti e all'ingresso del passo che conduce nella Valle delle Miniere.
 	Info_ClearChoices	(DIA_Addon_Erol_FernandosWeapons);
 };
 
@@ -237,7 +237,7 @@ instance DIA_Addon_Erol_Stoneplates		(C_INFO)
 	information	 = 	DIA_Addon_Erol_Stoneplates_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"A proposito delle tavolette di pietra…";
+	description	 = 	"A proposito delle tavolette di pietraâ€¦";
 };
 
 func int DIA_Addon_Erol_Stoneplates_Condition ()
@@ -249,7 +249,7 @@ func int DIA_Addon_Erol_Stoneplates_Condition ()
 };
 
 var int StoneplatesCounter;
-const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); //Joly:Kohle für eine StonePlateCommon
+const int Addon_ErolsStoneplatesOffer = (Value_StonePlateCommon + 5); //Joly:Kohle fÃ¼r eine StonePlateCommon
 
 func void DIA_Addon_Erol_Stoneplates_Info ()
 {
@@ -306,25 +306,25 @@ func void DIA_Addon_Erol_Stoneplates_Info ()
 			}
 			else // mindestens 3 Steintafeln hat er schon.
 			{
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_06"); //È sufficiente. Ora manterrò la promessa fatta al Mago dell'Acqua, e poi me ne tornerò finalmente a casa.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_06"); //Ãˆ sufficiente. Ora manterrÃ² la promessa fatta al Mago dell'Acqua, e poi me ne tornerÃ² finalmente a casa.
 				
 				MIS_Addon_Erol_BanditStuff = LOG_SUCCESS;
 				Wld_AssignRoomToGuild ("grpwaldhuette01",	GIL_PUBLIC);
 			};
 		
-			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_07"); //Ovviamente te le pagherò.
+			AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_07"); //Ovviamente te le pagherÃ².
 
 			StoneplatesGeld	= (Addon_ErolsStoneplatesOffer * Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));
 		
 			CreateInvItems (self, ItMi_Gold, StoneplatesGeld); 
 			B_GiveInvItems (self, other, ItMi_Gold, StoneplatesGeld);
 			
-			Npc_RemoveInvItems	(self ,ItWr_StonePlateCommon_Addon 	, Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));//Joly: weil er zum Händler wird.
+			Npc_RemoveInvItems	(self ,ItWr_StonePlateCommon_Addon 	, Npc_HasItems (self, ItWr_StonePlateCommon_Addon ));//Joly: weil er zum HÃ¤ndler wird.
 			
 			if (MIS_Addon_Erol_BanditStuff == LOG_SUCCESS)
 			{
 				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_08"); //Sto andando a casa. Puoi venire con me, se ti va.
-				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_09"); //Magari, una volta arrivati, potrò venderti qualcosa di interessante.
+				AI_Output			(self, other, "DIA_Addon_Erol_Stoneplates_10_09"); //Magari, una volta arrivati, potrÃ² venderti qualcosa di interessante.
 				
 				AI_StopProcessInfos (self);
 				AI_UseMob			(self,"BENCH",-1);
@@ -374,7 +374,7 @@ func void DIA_Addon_Erol_Buerger_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Erol_Buerger_15_00"); //Sei un cittadino di qui?
 	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_01"); //Non lo sono da tempo, ragazzo. Non sono in buoni rapporti con quei porci corrotti dei quartieri alti di Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_02"); //Un tempo ero una persona piuttosto influente lì, sai. Ma è stato mesi fa.
+	AI_Output	(self, other, "DIA_Addon_Erol_Buerger_10_02"); //Un tempo ero una persona piuttosto influente lÃ¬, sai. Ma Ã¨ stato mesi fa.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -401,8 +401,8 @@ func int DIA_Addon_Erol_PreTeach_Condition ()
 func void DIA_Addon_Erol_PreTeach_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_00"); //Sei riuscito a respingere i briganti?
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_01"); //Sì. Ma sono sicuro che sono ancora lì sul ponte.
-	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_02"); //Puoi insegnarmi a colpire così forte?
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_01"); //SÃ¬. Ma sono sicuro che sono ancora lÃ¬ sul ponte.
+	AI_Output	(other, self, "DIA_Addon_Erol_PreTeach_15_02"); //Puoi insegnarmi a colpire cosÃ¬ forte?
 	AI_Output	(self, other, "DIA_Addon_Erol_PreTeach_10_03"); //Certo che posso.
 	Erol_Addon_TeachPlayer = TRUE;
 	Log_CreateTopic (Topic_OutTeacher,LOG_NOTE);
@@ -436,12 +436,12 @@ func int DIA_Addon_Erol_PreTrade_Condition ()
 func void DIA_Addon_Erol_PreTrade_Info ()
 {
 	B_Say (other,self,"$TRADE_2");
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_00"); //Non posso venderti altro. Tutta la mia mercanzia è laggiù, sotto il ponte.
-	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_01"); //Potrò venderti qualcosa solo tornato a casa.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_00"); //Non posso venderti altro. Tutta la mia mercanzia Ã¨ laggiÃ¹, sotto il ponte.
+	AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_01"); //PotrÃ² venderti qualcosa solo tornato a casa.
 
 	if (MIS_Addon_Erol_BanditStuff != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_02"); //Ma non me ne andrò finché non avrò ripreso le mie tavolette.
+		AI_Output	(self, other, "DIA_Addon_Erol_PreTrade_10_02"); //Ma non me ne andrÃ² finchÃ© non avrÃ² ripreso le mie tavolette.
 	};
 };
 
@@ -455,7 +455,7 @@ instance DIA_Addon_Erol_SLD		(C_INFO)
 	condition	 = 	DIA_Addon_Erol_SLD_Condition;
 	information	 = 	DIA_Addon_Erol_SLD_Info;
 
-	description	 = 	"Questa è la TUA capanna?";
+	description	 = 	"Questa Ã¨ la TUA capanna?";
 };
 
 func int DIA_Addon_Erol_SLD_Condition ()
@@ -468,11 +468,11 @@ func int DIA_Addon_Erol_SLD_Condition ()
 var int Erol_IsAtHome;
 func void DIA_Addon_Erol_SLD_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_00"); //(sorpreso) È QUESTA la tua capanna?
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_01"); //Sì. Perché? C'è qualcosa che non va?
+	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_00"); //(sorpreso) Ãˆ QUESTA la tua capanna?
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_01"); //SÃ¬. PerchÃ©? C'Ã¨ qualcosa che non va?
 	AI_Output	(other, self, "DIA_Addon_Erol_SLD_15_02"); //Non hai nessun problema con i mercenari?
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_03"); //Finché non interferisco con le loro faccende, mi lasciano in pace.
-	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_04"); //E poi sono buoni clienti, e li pago perché tengano d'occhio la mia casa quando sono via.
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_03"); //FinchÃ© non interferisco con le loro faccende, mi lasciano in pace.
+	AI_Output	(self, other, "DIA_Addon_Erol_SLD_10_04"); //E poi sono buoni clienti, e li pago perchÃ© tengano d'occhio la mia casa quando sono via.
 	B_GivePlayerXP (XP_Ambient);
 	if (Erol_IsAtHome == FALSE)
 	{
@@ -531,7 +531,7 @@ INSTANCE DIA_Addon_Erol_Teach(C_INFO)
 	condition	= DIA_Addon_Erol_Teach_Condition;
 	information	= DIA_Addon_Erol_Teach_Info;
 	permanent	= TRUE;
-	description = "Insegnami a colpire più forte.";
+	description = "Insegnami a colpire piÃ¹ forte.";
 };                       
 
 FUNC INT DIA_Addon_Erol_Teach_Condition()
@@ -544,17 +544,17 @@ FUNC INT DIA_Addon_Erol_Teach_Condition()
  
 FUNC VOID DIA_Addon_Erol_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Erol_Teach_15_00"); //Insegnami a colpire più forte.
+	AI_Output (other,self ,"DIA_Addon_Erol_Teach_15_00"); //Insegnami a colpire piÃ¹ forte.
 
 	if (MIS_Addon_Erol_BanditStuff != LOG_SUCCESS)
 	{
 		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_01"); //D'accordo, ma devi farmi un favore.
 		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_02"); //Aiutami a salvare la mia reputazione e riportami le mie tavolette.
-		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_03"); //In cambio, ti mostrerò come utilizzare meglio la tua forza in combattimento.
+		AI_Output	(self, other, "DIA_Addon_Erol_Teach_10_03"); //In cambio, ti mostrerÃ² come utilizzare meglio la tua forza in combattimento.
 	}
 	else if (Erol_Bonus == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_00"); //Bene. Fai attenzione. Il trucco è semplice.
+		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_00"); //Bene. Fai attenzione. Il trucco Ã¨ semplice.
 		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_01"); //Quando colpisci, non usare solo la forza del braccio, ma sfrutta quella di tutto il corpo.
 		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_02"); //Ruota il fianco, porta in avanti la spalla e allunga il braccio per l'affondo.
 		AI_Output (self, other, "DIA_Addon_Erol_Teach_Add_10_03"); //(ride) Se colpisci bene, noterai la differenza!

@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benötigtes Item dafür: ItMi_Flask
+// benÃ¶tigtes Item dafÃ¼r: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tränke herstellen  Dialoge 
+//TrÃ¤nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -119,7 +119,7 @@ INSTANCE PC_Booze_Lou (C_Info)
 	condition		= PC_Booze_Lou_Condition;
 	information		= PC_Booze_Lou_Info;
 	permanent		= TRUE;
-	description		= "Prova il Martello di Lou…"; 
+	description		= "Prova il Martello di Louâ€¦"; 
 };
 
 FUNC INT PC_Booze_Lou_Condition ()
@@ -249,7 +249,7 @@ INSTANCE PC_Charge_InnosEye (C_INFO)
 	condition		= PC_Charge_InnosEye_Condition;
 	information		= PC_Charge_InnosEye_Info;
 	permanent		= TRUE;
-	description		= "Carica l’Occhio di Innos"; 
+	description		= "Carica lâ€™Occhio di Innos"; 
 };
 FUNC INT PC_Charge_InnosEye_Condition()
 {	
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tränke 
+//Mana TrÃ¤nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltränke 
+//HeiltrÃ¤nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tränke 
+//Spezielle TrÃ¤nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Pozione di velocità (1 erba dello squartatore, 1 groviglio della prateria)"; 
+	description		= "Pozione di velocitÃ  (1 erba dello squartatore, 1 groviglio della prateria)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1081,7 +1081,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "Lavora l’erba di palude (1 ciuffo)"; 
+	description		= "Lavora lâ€™erba di palude (1 ciuffo)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Grünen Novizen herstellen
+//	GrÃ¼nen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1186,7 +1186,7 @@ FUNC VOID PC_ItMi_Tabak_Info ()
 	};
 	if (Npc_HasItems (hero, ItPl_SwampHerb) >=1)
 	{
-		Info_AddChoice 	(PC_ItMi_Tabak,"...con l’erba di palude",PC_ItMi_Tabak_Swampherb);
+		Info_AddChoice 	(PC_ItMi_Tabak,"...con lâ€™erba di palude",PC_ItMi_Tabak_Swampherb);
 	};
 	if (Npc_HasItems (hero, ItPl_Mushroom_01) >=1)
 	{

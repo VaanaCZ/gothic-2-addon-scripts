@@ -45,7 +45,7 @@ func VOID DIA_Addon_BenchPirate_Hello_Info()
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_01"); //Greg è tornato, finalmente.
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_01"); //Greg Ã¨ tornato, finalmente.
 		}
 		else if (randy == 1)
 		{
@@ -60,15 +60,15 @@ func VOID DIA_Addon_BenchPirate_Hello_Info()
 	{
 		if (randy == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, il capo dell'accampamento, è solo un buffone. Come si fa a prenderlo sul serio?
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_04"); //Francis, il capo dell'accampamento, Ã¨ solo un buffone. Come si fa a prenderlo sul serio?
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg si fida di Francis perché è troppo stupido per imbrogliare! Ma affidargli il comando...
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_05"); //Greg si fida di Francis perchÃ© Ã¨ troppo stupido per imbrogliare! Ma affidargli il comando...
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Se Greg non torna presto e non ho un , comincerò a soffire di 'mal di terra'ng, I'll be getting landsick!
+			AI_Output (self ,other,"DIA_Addon_Pir_7_Hello_07_06"); //Se Greg non torna presto e non ho un , comincerÃ² a soffire di 'mal di terra'ng, I'll be getting landsick!
 		};
 	};	
 };
@@ -132,12 +132,12 @@ func void DIA_Addon_BenchPirate_ComeOn_Info ()
 	AI_Output	(other, self, "DIA_Addon_BenchPirate_ComeOn_15_01"); //ll canyon aspetta.
 	if (C_GregsPiratesTooFar() == TRUE)
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //È proprio lì che sto tornando...
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_02"); //Ãˆ proprio lÃ¬ che sto tornando...
 		AI_StopProcessInfos (self);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //Signorsì, Capitano!
+		AI_Output (self ,other,"DIA_Addon_BenchPirate_ComeOn_07_01"); //SignorsÃ¬, Capitano!
 		if (C_BodyStateContains (self, BS_SIT))
 		{
 			AI_StandUp (self);
@@ -160,7 +160,7 @@ INSTANCE DIA_Addon_BenchPirate_GoHome(C_INFO)
 	condition	= DIA_Addon_BenchPirate_GoHome_Condition;
 	information	= DIA_Addon_BenchPirate_GoHome_Info;
 	permanent	= TRUE;
-	description = "Non mi servi più.";
+	description = "Non mi servi piÃ¹.";
 };                       
 FUNC INT DIA_Addon_BenchPirate_GoHome_Condition()
 {
@@ -172,7 +172,7 @@ FUNC INT DIA_Addon_BenchPirate_GoHome_Condition()
 
 FUNC VOID DIA_Addon_BenchPirate_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_BenchPirate_GoHome_15_00"); //Non mi servi più.
+	AI_Output (other,self ,"DIA_Addon_BenchPirate_GoHome_15_00"); //Non mi servi piÃ¹.
 	AI_Output (self ,other,"DIA_Addon_BenchPirate_GoHome_07_01"); //Sono tornato al campo!
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;

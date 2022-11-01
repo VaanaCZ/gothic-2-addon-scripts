@@ -24,7 +24,7 @@ instance VLK_418_Gritta (Npc_Default)
 																		
 		
 	// ------ Inventory ------
-	CreateInvItems (self,ItMi_Gold, 100);		//für die Matteo Mission
+	CreateInvItems (self,ItMi_Gold, 100);		//fÃ¼r die Matteo Mission
 	//KEIN AmbientInv!!!
 		
 	// ------ visuals ------																			

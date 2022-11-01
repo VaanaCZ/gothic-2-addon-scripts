@@ -50,7 +50,7 @@ FUNC VOID DIA_Addon_Telbor_Hi_Info()
 	{
 		if (Pardos_Geheilt == FALSE)
 		{
-			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Ma Pardos è molto abbattuto.
+			AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_01");//Ma Pardos Ã¨ molto abbattuto.
 		}
 		else
 		{
@@ -63,7 +63,7 @@ FUNC VOID DIA_Addon_Telbor_Hi_Info()
 			};	
 		};
 	};
-	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_03");//Se hai bisogno di qualcosa, parla con Patrick. È il nostro portavoce.
+	AI_Output (self, other, "DIA_Addon_Telbor_Hi_12_03");//Se hai bisogno di qualcosa, parla con Patrick. Ãˆ il nostro portavoce.
 	
 	AI_StopProcessInfos (self);
 };

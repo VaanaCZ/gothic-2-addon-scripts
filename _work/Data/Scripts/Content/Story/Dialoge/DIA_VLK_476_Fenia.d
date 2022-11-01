@@ -177,7 +177,7 @@ func void DIA_Fenia_MoreTraders_Info ()
 {
 	AI_Output			(other, self, "DIA_Fenia_Infos_haendler_15_00"); //Ci sono altri commercianti, qui al porto?
 	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_01"); //Se tieni la sinistra sul molo, troverai mio marito Halvor, vende pesce.
-	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Sull'altro lato c'è Brahim, il cartografo.
+	AI_Output			(self, other, "DIA_Fenia_Infos_haendler_17_02"); //Sull'altro lato c'Ã¨ Brahim, il cartografo.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -190,7 +190,7 @@ instance DIA_Fenia_OV (C_INFO)
 	condition	= DIA_Fenia_OV_Condition;
 	information	= DIA_Fenia_OV_Info;
 	permanent 	= FALSE;
-	description	= "Conosci qualcuno del quartiere più alto?";
+	description	= "Conosci qualcuno del quartiere piÃ¹ alto?";
 };
 
 func int DIA_Fenia_OV_Condition ()
@@ -203,8 +203,8 @@ func int DIA_Fenia_OV_Condition ()
 };
 func void DIA_Fenia_OV_Info ()
 {
-	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Conosci qualcuno del quartiere più alto?
-	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(ride) Se conoscessi qualcuno là, non starei di certo qui, ragazzo mio.
+	AI_Output			(other, self, "DIA_Fenia_Infos_oberesViertel_15_00"); //Conosci qualcuno del quartiere piÃ¹ alto?
+	AI_Output			(self, other, "DIA_Fenia_Infos_oberesViertel_17_01"); //(ride) Se conoscessi qualcuno lÃ , non starei di certo qui, ragazzo mio.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -217,7 +217,7 @@ instance DIA_Fenia_Interesting (C_INFO)
 	condition	= DIA_Fenia_Interesting_Condition;
 	information	= DIA_Fenia_Interesting_Info;
 	permanent 	= FALSE;
-	description	= "Cosa c’è di interessante da vedere, nei dintorni del porto?";
+	description	= "Cosa câ€™Ã¨ di interessante da vedere, nei dintorni del porto?";
 };
 
 func int DIA_Fenia_Interesting_Condition ()
@@ -230,9 +230,9 @@ func int DIA_Fenia_Interesting_Condition ()
 func void DIA_Fenia_Interesting_Info ()
 {
 	AI_Output (other, self, "DIA_Fenia_Infos_interessantes_15_00"); //Che cose interessanti ci sono da vedere al porto?
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Bene. Se stai cercando un po' di azione, vai alla taverna di Kardif al molo. Là c'è sempre qualcosa in infusione...
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //Non puoi mancarlo. Il tipo all'ingresso cercherà senza ombra di dubbio di attirare la tua attenzione.
-	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //A parte questo, c'è una grossa nave dei paladini, l'imponente galera da guerra del Re, l'unica che vale la pena vedere.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_01"); //Bene. Se stai cercando un po' di azione, vai alla taverna di Kardif al molo. LÃ  c'Ã¨ sempre qualcosa in infusione...
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_02"); //Non puoi mancarlo. Il tipo all'ingresso cercherÃ  senza ombra di dubbio di attirare la tua attenzione.
+	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_03"); //A parte questo, c'Ã¨ una grossa nave dei paladini, l'imponente galera da guerra del Re, l'unica che vale la pena vedere.
 	AI_Output (self, other, "DIA_Fenia_Infos_interessantes_17_04"); //La troverai tenendo la sinistra e dopo essere passato sotto una grossa faccia di pietra.
 };
 
@@ -246,7 +246,7 @@ instance DIA_Fenia_Aufregend (C_INFO)
 	condition	= DIA_Fenia_Aufregend_Condition;
 	information	= DIA_Fenia_Aufregend_Info;
 	permanent 	= FALSE;
-	description	= "È accaduto qualcosa di rilevante qui, ultimamente?";
+	description	= "Ãˆ accaduto qualcosa di rilevante qui, ultimamente?";
 };
 
 func int DIA_Fenia_Aufregend_Condition ()
@@ -258,11 +258,11 @@ func int DIA_Fenia_Aufregend_Condition ()
 };
 func void DIA_Fenia_Aufregend_Info ()
 {
-	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //È accaduto qualcosa di particolare, ultimamente?
+	AI_Output (other, self, "DIA_Fenia_Add_15_00"); //Ãˆ accaduto qualcosa di particolare, ultimamente?
 	AI_Output (self, other, "DIA_Fenia_Add_17_01"); //Puoi dirlo... non molto tempo fa.
-	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Un ladro è passato correndo di qua: deve aver rubato un arco nella parte bassa della città.
-	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Naturalmente, l'esercito è arrivato troppo tardi, come al solito.
-	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //È riuscito a scappare, è saltato nel porto e poi è sparito.
+	AI_Output (self, other, "DIA_Fenia_Add_17_02"); //Un ladro Ã¨ passato correndo di qua: deve aver rubato un arco nella parte bassa della cittÃ .
+	AI_Output (self, other, "DIA_Fenia_Add_17_03"); //Naturalmente, l'esercito Ã¨ arrivato troppo tardi, come al solito.
+	AI_Output (self, other, "DIA_Fenia_Add_17_04"); //Ãˆ riuscito a scappare, Ã¨ saltato nel porto e poi Ã¨ sparito.
 };
 
 

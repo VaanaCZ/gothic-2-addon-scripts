@@ -72,9 +72,9 @@ func int DIA_Sylvio_Thekla_Condition ()
 func void DIA_Sylvio_Thekla_Info ()
 {
 	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Thekla ha qualche problema con te.
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Quindi? Qual è il problema della cara signora? E perché non viene lei di persona?
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Quindi? Qual Ã¨ il problema della cara signora? E perchÃ© non viene lei di persona?
 	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Lo sai benissimo...
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(cinicamente) Perché non vai a discuterne un po' con il mio amico Bullco?
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(cinicamente) PerchÃ© non vai a discuterne un po' con il mio amico Bullco?
 
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -128,7 +128,7 @@ func int DIA_Sylvio_AboutLee_Condition ()
 func void DIA_Sylvio_AboutLee_Info ()
 {
 	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Cosa pensi di Lee?
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(ironicamente) Oh, è un abile guerriero. Non vorrei mai battermi con lui.
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(ironicamente) Oh, Ã¨ un abile guerriero. Non vorrei mai battermi con lui.
 	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(freddo) A meno che, naturalmente, non possa essere altrimenti.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;

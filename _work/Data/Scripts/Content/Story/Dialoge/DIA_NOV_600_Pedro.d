@@ -66,11 +66,11 @@ FUNC INT DIA_Pedro_Wurst_Condition()
 FUNC VOID DIA_Pedro_Wurst_Info()
 {	
 	AI_Output (other, self, "DIA_Pedro_Wurst_15_00"); //Ecco, prendi una salsiccia, Fratello!
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_01"); //È bello da parte tua interessarti a me. Di solito tutti si dimenticano di me.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_01"); //Ãˆ bello da parte tua interessarti a me. Di solito tutti si dimenticano di me.
 	AI_Output (self, other, "DIA_Pedro_Wurst_09_02"); //Potresti darmi un'altra salsiccia?
 	AI_Output (other, self, "DIA_Pedro_Wurst_15_03"); //Scordatelo, non me ne rimarrebbero abbastanza.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_04"); //Ehi, si tratta di una sola salsiccia, nessuno se ne accorgerà. Ti ricompenserò per questo. Conosco un posto dove crescono alcune ortiche del fuoco.
-	AI_Output (self, other, "DIA_Pedro_Wurst_09_05"); //Se le porti a Neoras, egli ti darà certamente la chiave per la biblioteca. Che ne dici?
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_04"); //Ehi, si tratta di una sola salsiccia, nessuno se ne accorgerÃ . Ti ricompenserÃ² per questo. Conosco un posto dove crescono alcune ortiche del fuoco.
+	AI_Output (self, other, "DIA_Pedro_Wurst_09_05"); //Se le porti a Neoras, egli ti darÃ  certamente la chiave per la biblioteca. Che ne dici?
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -85,12 +85,12 @@ FUNC VOID DIA_Pedro_Wurst_Info()
 	AI_PrintScreen	(NovizeText, -1, YPOS_GOLDGIVEN, FONT_ScreenSmall, 2);
 	
 	Info_ClearChoices (DIA_Pedro_Wurst);
-	Info_AddChoice (DIA_Pedro_Wurst,"D'accordo, prendi un’altra salsiccia.",DIA_Pedro_Wurst_JA);
+	Info_AddChoice (DIA_Pedro_Wurst,"D'accordo, prendi unâ€™altra salsiccia.",DIA_Pedro_Wurst_JA);
 	Info_AddChoice (DIA_Pedro_Wurst,"No, non contarci.",DIA_Pedro_Wurst_NEIN);
 };
 FUNC VOID DIA_Pedro_Wurst_JA()
 {
-	AI_Output (other, self, "DIA_Pedro_Wurst_JA_15_00"); //Ok, prendi un’altra salsiccia.
+	AI_Output (other, self, "DIA_Pedro_Wurst_JA_15_00"); //Ok, prendi unâ€™altra salsiccia.
 	AI_Output (self, other, "DIA_Pedro_Wurst_JA_09_01"); //D'accordo. Ci sono alcune ortiche del fuoco che crescono sulla parte sinistra e destra dall'altro capo del ponte.
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Info_ClearChoices (DIA_Pedro_Wurst);
@@ -99,7 +99,7 @@ FUNC VOID DIA_Pedro_Wurst_JA()
 FUNC VOID DIA_Pedro_Wurst_NEIN()
 {
 	AI_Output (other, self, "DIA_Pedro_Wurst_NEIN_15_00"); //No, non contarci.
-	AI_Output (self, other, "DIA_Pedro_Wurst_NEIN_09_01"); //Vuoi entrare nelle simpatie di Gorax, eh? È sempre la stessa storia con tutti i novizi...
+	AI_Output (self, other, "DIA_Pedro_Wurst_NEIN_09_01"); //Vuoi entrare nelle simpatie di Gorax, eh? Ãˆ sempre la stessa storia con tutti i novizi...
 	
 	Info_ClearChoices (DIA_Pedro_Wurst);
 };
@@ -125,7 +125,7 @@ func void DIA_Pedro_EINLASS_Info ()
 {
 	AI_Output (other, self, "DIA_Pedro_EINLASS_15_00"); //Voglio entrare nel monastero.
 	AI_Output (self, other, "DIA_Pedro_EINLASS_09_01"); //Solo i servi di Innos possono accedere al monastero.
-	AI_Output (self, other, "DIA_Pedro_EINLASS_09_02"); //Se vuoi pregare Innos trova uno dei santuari lungo la strada. Lì troverai tutta la tranquillità che ti serve per pregare.
+	AI_Output (self, other, "DIA_Pedro_EINLASS_09_02"); //Se vuoi pregare Innos trova uno dei santuari lungo la strada. LÃ¬ troverai tutta la tranquillitÃ  che ti serve per pregare.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEMPEL
@@ -156,17 +156,17 @@ func void DIA_Pedro_TEMPEL_Info ()
  	
  	if (other.guild != GIL_NONE)
  	{
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_01"); //Non puoi essere ammesso nel monastero. Hai già scelto la tua strada.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_01"); //Non puoi essere ammesso nel monastero. Hai giÃ  scelto la tua strada.
  	}
  	else
  	{
  		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_02"); //Se vuoi essere accettato nella Confraternita di Innos, devi imparare e rispettare le regole del monastero.
-		//AI_Output (self, other, "DIA_Pedro_TEMPEL_09_03"); //Außerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
+		//AI_Output (self, other, "DIA_Pedro_TEMPEL_09_03"); //AuÃŸerdem verlangen wir von jedem neuen Novizen die Gaben an Innos. Ein Schaf und ...
 		//B_Say_Gold (self, other, Summe_Kloster);  
  		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_03"); //Inoltre, ciascun novizio deve presentare un'offerta a Innos.
- 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //Una pecora e 1000 monete d’oro.
- 		AI_Output (other, self, "DIA_Pedro_TEMPEL_15_04"); //È parecchio oro.
- 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_05"); //È il segno che stai iniziando una nuova vita come servo di Innos. Una volta che verrai accettato, ti verranno perdonati tutti i tuoi peccati precedenti.
+ 		AI_Output (self, other, "DIA_ADDON_Pedro_TEMPEL_09_04"); //Una pecora e 1000 monete dâ€™oro.
+ 		AI_Output (other, self, "DIA_Pedro_TEMPEL_15_04"); //Ãˆ parecchio oro.
+ 		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_05"); //Ãˆ il segno che stai iniziando una nuova vita come servo di Innos. Una volta che verrai accettato, ti verranno perdonati tutti i tuoi peccati precedenti.
  		AI_Output (self, other, "DIA_Pedro_TEMPEL_09_06"); //E ricordati che una volta presa la decisione di diventare un servo di Innos, non puoi tornare indietro.
  		SC_KnowsKlosterTribut = TRUE;
   		Log_CreateTopic (Topic_Kloster,LOG_MISSION);
@@ -185,7 +185,7 @@ instance DIA_Addon_Pedro_Statuette (C_INFO)
 	condition	 = 	DIA_Addon_Pedro_Statuette_Condition;
 	information	 = 	DIA_Addon_Pedro_Statuette_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Ho questa statuetta…";
+	description	 = 	"Ho questa statuettaâ€¦";
 };
 func int DIA_Addon_Pedro_Statuette_Condition ()
 {	
@@ -203,16 +203,16 @@ func void DIA_Addon_Pedro_Statuette_Info ()
 	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_15_01"); //Posso entrare adesso?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_02"); //Considerata l'eccezionalità di questa circostanza, puoi diventare un novizio, se vuoi.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_02"); //Considerata l'eccezionalitÃ  di questa circostanza, puoi diventare un novizio, se vuoi.
 
 		Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Pedro, il novizio, mi ha fatto entrare nel monastero perché avevo la statuetta perduta. Dovevo consegnarla a qualcuno nel monastero."); 
+		B_LogEntry (TOPIC_Addon_RangerHelpKDF,"Pedro, il novizio, mi ha fatto entrare nel monastero perchÃ© avevo la statuetta perduta. Dovevo consegnarla a qualcuno nel monastero."); 
 	}
 	else
 	{
 		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_03"); //Temo che non potrai entrare, neppure con questa preziosa gemma.
-		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_04"); //Hai già scelto un percorso diverso. La via del monastero ti è preclusa.
+		AI_Output (self, other, "DIA_Addon_Pedro_Statuette_09_04"); //Hai giÃ  scelto un percorso diverso. La via del monastero ti Ã¨ preclusa.
 	};
 };
 
@@ -239,7 +239,7 @@ func int DIA_Addon_Pedro_Statuette_Abgeben_Condition ()
 func void DIA_Addon_Pedro_Statuette_Abgeben_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Pedro_Statuette_Abgeben_15_00"); //Posso affidarti la statuetta?
-	AI_Output (self, other, "DIA_Addon_Pedro_Statuette_Abgeben_09_01"); //Naturalmente, me ne occuperò io. Grazie per la tua cortesia disinteressata.
+	AI_Output (self, other, "DIA_Addon_Pedro_Statuette_Abgeben_09_01"); //Naturalmente, me ne occuperÃ² io. Grazie per la tua cortesia disinteressata.
 	MIS_Addon_Daron_GetStatue = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_ReportLostInnosStatue2Daron);
 };
@@ -265,12 +265,12 @@ func int DIA_Pedro_Rules_Condition ()
 func void DIA_Pedro_Rules_Info ()
 {
 	AI_Output (other, self,"DIA_Pedro_Rules_15_00"); //Quali sono le vostre regole di condotta?
-	AI_Output (self, other,"DIA_Pedro_Rules_09_01"); //Innos è il dio della verità e della legge, dunque noi non mentiamo MAI né commettiamo crimini.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_02"); //Nel caso dovessi trasgredire contro un fratello del monastero o rubare una nostra proprietà, pagherai una penale.
-	AI_Output (self, other,"DIA_Pedro_Rules_09_03"); //Innos è anche il dio dell'autorità e del fuoco.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_01"); //Innos Ã¨ il dio della veritÃ  e della legge, dunque noi non mentiamo MAI nÃ© commettiamo crimini.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_02"); //Nel caso dovessi trasgredire contro un fratello del monastero o rubare una nostra proprietÃ , pagherai una penale.
+	AI_Output (self, other,"DIA_Pedro_Rules_09_03"); //Innos Ã¨ anche il dio dell'autoritÃ  e del fuoco.
 	AI_Output (self, other,"DIA_Pedro_Rules_09_04"); //Come novizio devi dimostrare OBBEDIENZA e RISPETTO a tutti i maghi del fuoco.
 	AI_Output (other,self ,"DIA_Pedro_Rules_15_05"); //Capisco.
-	AI_Output (self ,other,"DIA_Pedro_Rules_09_06"); //Inoltre, è COMPITO di un novizio svolgere tutti i lavori all'interno del monastero per il bene della comunità.
+	AI_Output (self ,other,"DIA_Pedro_Rules_09_06"); //Inoltre, Ã¨ COMPITO di un novizio svolgere tutti i lavori all'interno del monastero per il bene della comunitÃ .
 	if (hero.guild == GIL_NONE)
 	{
 		AI_Output (self ,other,"DIA_Pedro_Rules_09_07"); //Se sei disposto a seguire queste regole e hai un'offerta da fare a Innos, siamo disposti ad accettarti nel nostro monastero come novizio.
@@ -300,8 +300,8 @@ func int DIA_Pedro_AUFNAHME_Condition ()
 func void B_DIA_Pedro_AUFNAHME_Choice ()
 {
 		Info_ClearChoices (DIA_Pedro_AUFNAHME);
-		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Ci penserò su ancora un po’.",DIA_Pedro_AUFNAHME_NO);
-		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Sì, voglio dedicare la mia vita a servire Innos.",DIA_Pedro_AUFNAHME_YES);
+		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"Ci penserÃ² su ancora un poâ€™.",DIA_Pedro_AUFNAHME_NO);
+		Info_AddChoice 	  (DIA_Pedro_AUFNAHME,"SÃ¬, voglio dedicare la mia vita a servire Innos.",DIA_Pedro_AUFNAHME_YES);
 };
 func void DIA_Pedro_AUFNAHME_Info ()
 {
@@ -311,13 +311,13 @@ func void DIA_Pedro_AUFNAHME_Info ()
 	
 	if (hero.guild != GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_01"); //Hai già scelto la tua strada. La via della magia ti è preclusa.
+		AI_Output (self, other, "DIA_Pedro_AUFNAHME_09_01"); //Hai giÃ  scelto la tua strada. La via della magia ti Ã¨ preclusa.
 		DIA_Pedro_AUFNAHME_NOPERM = TRUE;
 	}
 	//ADDON>
 	else if (Npc_KnowsInfo (other, DIA_Addon_Pedro_Statuette))
 	{
-		AI_Output (self, other, "DIA_Addon_Pedro_AUFNAHME_09_02"); //È davvero ciò che desideri? Sappi che non potrai più tornare indietro, una volta fatta la tua scelta.
+		AI_Output (self, other, "DIA_Addon_Pedro_AUFNAHME_09_02"); //Ãˆ davvero ciÃ² che desideri? Sappi che non potrai piÃ¹ tornare indietro, una volta fatta la tua scelta.
 		B_DIA_Pedro_AUFNAHME_Choice ();
 	}
 	//<ADDON
@@ -328,7 +328,7 @@ func void DIA_Pedro_AUFNAHME_Info ()
 	{
 		
 		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_03"); //Vedo che hai con te l'offerta richiesta. Se lo desideri veramente, ora sei libero di diventare un novizio.
-		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_04"); //Tuttavia, una volta presa questa decisione non c'è modo di tornare indietro, rifletti bene dunque se è davvero questo il cammino che vuoi seguire!
+		AI_Output (self, hero, "DIA_Pedro_AUFNAHME_09_04"); //Tuttavia, una volta presa questa decisione non c'Ã¨ modo di tornare indietro, rifletti bene dunque se Ã¨ davvero questo il cammino che vuoi seguire!
 		
 		B_DIA_Pedro_AUFNAHME_Choice ();
 	}
@@ -340,13 +340,13 @@ func void DIA_Pedro_AUFNAHME_Info ()
 
 FUNC VOID DIA_Pedro_AUFNAHME_YES()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_00"); //Sì, voglio dedicare la mia vita a servire Innos.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_00"); //SÃ¬, voglio dedicare la mia vita a servire Innos.
 	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_01"); //Allora sei il benvenuto, fratello. Ti do la chiave del cancello del monastero.
 	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_02"); //A dimostrazione che si tratta di una tua libera scelta, spetta a te aprire il cancello ed entrare.
 	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_03"); //Ora sei un novizio. Indossa questa veste come segno di appartenenza a questa confraternita.
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_04"); //Una volta all'interno del monastero, vai da Parlan. Da ora in poi si occuperà lui di tutte le tue necessità.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_04"); //Una volta all'interno del monastero, vai da Parlan. Da ora in poi si occuperÃ  lui di tutte le tue necessitÃ .
 	AI_Output (other, self, "DIA_Pedro_AUFNAHME_YES_15_05"); //I miei peccati saranno perdonati ora?
-	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_06"); //Non ancora. Parla con padre Parlan. Egli ti benedirà e laverà via i tuoi peccati.
+	AI_Output (self, other, "DIA_Pedro_AUFNAHME_YES_09_06"); //Non ancora. Parla con padre Parlan. Egli ti benedirÃ  e laverÃ  via i tuoi peccati.
 	
 	CreateInvItems 		(self,ItKe_Innos_MIS,1);
 	B_GiveInvItems 		(self, hero, ItKe_Innos_MIS,1); 
@@ -375,13 +375,13 @@ FUNC VOID DIA_Pedro_AUFNAHME_YES()
 };
 FUNC VOID DIA_Pedro_AUFNAHME_NO()
 {
-	AI_Output (other, self, "DIA_Pedro_AUFNAHME_NO_15_00"); //Ci penserò su ancora un po’.
+	AI_Output (other, self, "DIA_Pedro_AUFNAHME_NO_15_00"); //Ci penserÃ² su ancora un poâ€™.
 	AI_Output (self, other, "DIA_Pedro_AUFNAHME_NO_09_01"); //Torna di nuovo quando sarai pronto.
 	
 	Info_ClearChoices (DIA_Pedro_AUFNAHME);
 };
 //*********************************************************************
-//	Erzähl mir vom Leben im Kloster.
+//	ErzÃ¤hl mir vom Leben im Kloster.
 //*********************************************************************
 instance DIA_Pedro_Monastery		(C_INFO)
 {

@@ -62,7 +62,7 @@ INSTANCE DIA_Agon_Wurst(C_INFO)
 	condition	= DIA_Agon_Wurst_Condition;
 	information	= DIA_Agon_Wurst_Info;
 	permanent	= FALSE;
-	description = "Ecco. Questa salsiccia di pecora è per te.";
+	description = "Ecco. Questa salsiccia di pecora Ã¨ per te.";
 };                       
 
 FUNC INT DIA_Agon_Wurst_Condition()
@@ -78,7 +78,7 @@ FUNC INT DIA_Agon_Wurst_Condition()
 
 FUNC VOID DIA_Agon_Wurst_Info()
 {	
-	AI_Output (other, self, "DIA_Agon_Wurst_15_00"); //Ecco. Questa salsiccia di pecora è per te.
+	AI_Output (other, self, "DIA_Agon_Wurst_15_00"); //Ecco. Questa salsiccia di pecora Ã¨ per te.
 	AI_Output (self, other, "DIA_Agon_Wurst_07_01"); //Salsiccia di pecora, formaggio di pecora... latte di pecora... sto arrivando al punto di non poterle nemmeno vedere.
 	AI_Output (other, self, "DIA_Agon_Wurst_15_02"); //Allora, vuoi la salsiccia o no?
 	AI_Output (self, other, "DIA_Agon_Wurst_07_03"); //D'accordo, la voglio!
@@ -122,7 +122,7 @@ FUNC VOID DIA_Agon_New_Info()
 {
 	AI_Output	(other,self ,"DIA_Agon_New_15_00"); //Sono nuovo.
 	AI_Output	(self ,other,"DIA_Agon_New_07_01"); //Vedo.
-	AI_Output	(self ,other,"DIA_Agon_New_07_02"); //Se non hai nessun lavoro da fare, chiedi a Parlan. Avrà sicuramente qualcosa per te.
+	AI_Output	(self ,other,"DIA_Agon_New_07_02"); //Se non hai nessun lavoro da fare, chiedi a Parlan. AvrÃ  sicuramente qualcosa per te.
 };
 //***********************************************************************
 //	Was ist zwischen dir und Babo passiert?
@@ -135,7 +135,7 @@ INSTANCE DIA_Agon_YouAndBabo   (C_INFO)
 	condition   = DIA_Agon_YouAndBabo_Condition;
 	information = DIA_Agon_YouAndBabo_Info;
 	permanent   = FALSE;
-	description = "Cosa è successo tra te e Balbo?";
+	description = "Cosa Ã¨ successo tra te e Balbo?";
 };
 
 FUNC INT DIA_Agon_YouAndBabo_Condition()
@@ -150,15 +150,15 @@ FUNC INT DIA_Agon_YouAndBabo_Condition()
 
 FUNC VOID DIA_Agon_YouAndBabo_Info()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_15_00"); //Cosa è successo tra te e Balbo?
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_15_00"); //Cosa Ã¨ successo tra te e Balbo?
 	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_01"); //Non dovresti credere a tutto quello che senti in giro.
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_02"); //(insistentemente) Parliamoci chiaro: io andrò per la mia strada. La strada che Innos mi ha destinato.
-	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_03"); //Non permetterò a nessuno di ostacolarmi, e sicuramente non a quel sempliciotto di Babo.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_02"); //(insistentemente) Parliamoci chiaro: io andrÃ² per la mia strada. La strada che Innos mi ha destinato.
+	AI_Output	(self ,other,"DIA_Agon_YouAndBabo_07_03"); //Non permetterÃ² a nessuno di ostacolarmi, e sicuramente non a quel sempliciotto di Babo.
 
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 	Info_AddChoice	(DIA_Agon_YouAndBabo,"I novizi non dovrebbero rimanere uniti?",DIA_Agon_YouAndBabo_AllTogether);
 	Info_AddChoice	(DIA_Agon_YouAndBabo,"Solo Innos sa quale percorso dovremmo prendere.",DIA_Agon_YouAndBabo_InnosWay);
-	Info_AddChoice	(DIA_Agon_YouAndBabo,"Andremo perfettamente d’accordo.",DIA_Agon_YouAndBabo_Understand);
+	Info_AddChoice	(DIA_Agon_YouAndBabo,"Andremo perfettamente dâ€™accordo.",DIA_Agon_YouAndBabo_Understand);
 };
 
 FUNC VOID DIA_Agon_YouAndBabo_AllTogether ()
@@ -173,19 +173,19 @@ FUNC VOID DIA_Agon_YouAndBabo_AllTogether ()
 FUNC VOID DIA_Agon_YouAndBabo_InnosWay ()
 {
 	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_InnosWay_15_00"); //Solo Innos sa quale percorso dovremmo prendere.
-	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_InnosWay_07_01"); //La mia famiglia è sempre stata una delle più vicine a Innos e così sarà sempre.
+	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_InnosWay_07_01"); //La mia famiglia Ã¨ sempre stata una delle piÃ¹ vicine a Innos e cosÃ¬ sarÃ  sempre.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 FUNC VOID DIA_Agon_YouAndBabo_Understand ()
 {
-	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_Understand_15_00"); //Andremo perfettamente d’accordo.
-	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_Understand_07_01"); //Lo spero. Una volta che sarò diventato mago, metterò una buona parola per te.
+	AI_Output	(other,self ,"DIA_Agon_YouAndBabo_Understand_15_00"); //Andremo perfettamente dâ€™accordo.
+	AI_Output 	(self ,other,"DIA_Agon_YouAndBabo_Understand_07_01"); //Lo spero. Una volta che sarÃ² diventato mago, metterÃ² una buona parola per te.
 	
 	Info_ClearChoices 	(DIA_Agon_YouAndBabo);
 };
 //************************************************************************
-//	Kann ich bei dir Kräuter bekommen?
+//	Kann ich bei dir KrÃ¤uter bekommen?
 //************************************************************************
 
 INSTANCE DIA_Agon_GetHerb   (C_INFO)
@@ -211,7 +211,7 @@ FUNC VOID DIA_Agon_GetHerb_Info()
 	AI_Output (self ,other,"DIA_Agon_GetHerb_07_01"); //Stiamo cercando di coltivare delle piante curative che maestro Neoras possa utilizzare per distillare le proprie pozioni.
 };
 //************************************************************************
-//	Agon ist in der Höhle
+//	Agon ist in der HÃ¶hle
 //************************************************************************
 
 INSTANCE DIA_Agon_GolemDead   (C_INFO)
@@ -256,19 +256,19 @@ FUNC VOID DIA_Agon_GolemDead_NoWay ()
 FUNC VOID DIA_Agon_GolemDead_ShutUp ()
 {
 	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_15_00"); //Zitto!
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_01"); //(beffardo) È inutile, hai perso! Rassegnati.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_01"); //(beffardo) Ãˆ inutile, hai perso! Rassegnati.
 	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_07_02"); //Solamente io sono destinato a diventare un mago.
 	
 	Info_ClearChoices (DIA_Agon_GolemDead);
-	Info_AddChoice (DIA_Agon_GolemDead,"Destinato un accidente. Il forziere è mio.",DIA_Agon_GolemDead_ShutUp_MyChest);
+	Info_AddChoice (DIA_Agon_GolemDead,"Destinato un accidente. Il forziere Ã¨ mio.",DIA_Agon_GolemDead_ShutUp_MyChest);
 	Info_AddChoice (DIA_Agon_GolemDead,"Hai vinto.",DIA_Agon_GolemDead_ShutUp_YouWin);
 
 };
 
 FUNC VOID DIA_Agon_GolemDead_ShutUp_MyChest ()
 {
-	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_MyChest_15_00"); //Destinato un accidente. Il forziere è mio.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_MyChest_07_01"); //(furioso) No, non puoi farlo, ti ucciderò prima.
+	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_MyChest_15_00"); //Destinato un accidente. Il forziere Ã¨ mio.
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_MyChest_07_01"); //(furioso) No, non puoi farlo, ti ucciderÃ² prima.
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -278,7 +278,7 @@ FUNC VOID DIA_Agon_GolemDead_ShutUp_YouWin ()
 {
 	AI_Output (other,self ,"DIA_Agon_GolemDead_ShutUp_YouWin_15_00"); //Hai vinto.
 	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_01"); //(furioso) No, non m'inganni. Stai cercando di liberarti di me.
-	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_02"); //Lo impedirò a tutti i costi!
+	AI_Output (self ,other,"DIA_Agon_GolemDead_ShutUp_YouWin_07_02"); //Lo impedirÃ² a tutti i costi!
 	
 	AI_StopProcessInfos (self);	
 	B_Attack (self,other,AR_NONE, 1);
@@ -297,7 +297,7 @@ FUNC VOID DIA_Agon_GolemDead_Congrat ()
 };
 
 //****************************************
-//	Der Sc war vor Agon in der Höhle
+//	Der Sc war vor Agon in der HÃ¶hle
 //****************************************
 
 INSTANCE DIA_Agon_GolemLives   (C_INFO)
@@ -321,8 +321,8 @@ FUNC INT DIA_Agon_GolemLives_Condition()
 
 FUNC VOID DIA_Agon_GolemLives_Info()
 {
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_00"); //(sorpreso) Hai trovato il nascondiglio prima di me. Non può essere...
-	AI_Output (self ,other,"DIA_Agon_GolemLives_07_01"); //(determinato) Non può essere! Non lo permetterò.
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_00"); //(sorpreso) Hai trovato il nascondiglio prima di me. Non puÃ² essere...
+	AI_Output (self ,other,"DIA_Agon_GolemLives_07_01"); //(determinato) Non puÃ² essere! Non lo permetterÃ².
 	AI_Output (self ,other,"DIA_Agon_GolemLives_07_02"); //Non troveranno neanche il tuo cadavere.
 	
 	AI_StopProcessInfos (self);
@@ -355,8 +355,8 @@ FUNC INT DIA_Agon_StillAlive_Condition()
 FUNC VOID DIA_Agon_StillAlive_Info()
 {
 	AI_Output (other,self ,"DIA_Agon_StillAlive_15_00"); //Was machst Du hier? 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //Hättest Du mich nicht töten können? Dann müsste ich das ganze hier wenigstens nicht mehr ertragen. 
-	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurück ins Kloster!
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_01"); //HÃ¤ttest Du mich nicht tÃ¶ten kÃ¶nnen? Dann mÃ¼sste ich das ganze hier wenigstens nicht mehr ertragen. 
+	AI_Output (self ,other,"DIA_Agon_StillAlive_07_02"); //Jetzt lass mich in Ruhe! Geh zurÃ¼ck ins Kloster!
 	
 	AI_StopProcessInfos (self);
 };
@@ -389,7 +389,7 @@ FUNC VOID DIA_Agon_Perm_Info()
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output	(self ,other,"DIA_Agon_Perm_07_01"); //Oh, grazie per il tuo interessamento, Signor Paladino. Mi piace il lavoro qui e sono sicuro che sarò scelto come mago molto presto.
+		AI_Output	(self ,other,"DIA_Agon_Perm_07_01"); //Oh, grazie per il tuo interessamento, Signor Paladino. Mi piace il lavoro qui e sono sicuro che sarÃ² scelto come mago molto presto.
 	}
 	else
 	{

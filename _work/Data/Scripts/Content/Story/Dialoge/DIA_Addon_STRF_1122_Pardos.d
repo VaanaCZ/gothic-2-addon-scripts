@@ -40,9 +40,9 @@ FUNC INT DIA_Addon_Pardos_Hi_Condition()
 FUNC VOID DIA_Addon_Pardos_Hi_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//Come te la passi?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(stancamente) Sono a pezzi... È una splendida giornata di sole, o una di quelle notti limpide rischiarate dal bagliore di migliaia di stelle?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(ancora più stanco) Non lo so... dove sono le dolci piogge estive... la fresca brezza della sera... Non riesco più a sentirle...
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(rassegnato) La prima cosa che perdi qua è la vista...
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(stancamente) Sono a pezzi... Ãˆ una splendida giornata di sole, o una di quelle notti limpide rischiarate dal bagliore di migliaia di stelle?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(ancora piÃ¹ stanco) Non lo so... dove sono le dolci piogge estive... la fresca brezza della sera... Non riesco piÃ¹ a sentirle...
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(rassegnato) La prima cosa che perdi qua Ã¨ la vista...
 };
 //---------------------------------------------------------------------
 //	Info save
@@ -122,7 +122,7 @@ FUNC VOID DIA_Addon_Pardos_trank_Info()
 };
 FUNC VOID B_SayPardosThanks()
 {
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//Grazie, mi farà bene.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//Grazie, mi farÃ  bene.
 };
 FUNC VOID DIA_Addon_Pardos_trank_BACK()
 {
@@ -176,7 +176,7 @@ FUNC VOID DIA_Addon_Pardos_trank_Soup()
 	{
 		B_UseItem 	(self,ItFo_Addon_Meatsoup);
 	};	
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//Grazie, mi sento un po' più forte ora.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_01");//Grazie, mi sento un po' piÃ¹ forte ora.
 	B_GivePlayerXP (XP_Ambient *3);
 };
 //---------------------------------------------------------------------

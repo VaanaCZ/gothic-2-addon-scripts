@@ -38,13 +38,13 @@ func int DIA_PAL_262_GREET_Condition ()
 func void DIA_PAL_262_GREET_Info ()
 {
 	AI_Output (self, other, "DIA_PAL_262_GREET_10_00"); //Fermo, chi sei?
-	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //La domanda 'da dove vieni?' è più importante. Vengo da oltre il passo.
+	AI_Output (other, self, "DIA_PAL_262_GREET_15_01"); //La domanda 'da dove vieni?' Ã¨ piÃ¹ importante. Vengo da oltre il passo.
 	AI_Output (other, self, "DIA_PAL_262_GREET_15_02"); //Dunque, vuoi fermarmi o posso entrare?
 	AI_Output (self, other, "DIA_PAL_262_GREET_10_03"); //Beh, non potevo saperlo. Certo che puoi entrare.
 
 	/*
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_00"); //Halt - wer bist du?
-	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin über den Pass gekommen.
+	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_01"); //Viel wichtiger ist die Frage, wo ich herkomme. Ich bin Ã¼ber den Pass gekommen.
 	AI_Output (other, self, "DIA_Addon_PAL_262_GREET_15_02"); //Also willst du mich jetzt aufhalten oder kann ich rein?
 	AI_Output (self, other, "DIA_Addon_PAL_262_GREET_10_03"); //Konnte ich ja nicht wissen. Klar kannst du rein.
 	*/
@@ -61,7 +61,7 @@ instance DIA_Wache_PERM		(C_INFO)
 	condition	 = 	DIA_Wache_PERM_Condition;
 	information	 = 	DIA_Wache_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Chi è il capo, qui?";
+	description	 = 	"Chi Ã¨ il capo, qui?";
 };
 
 func int DIA_Wache_PERM_Condition ()
@@ -76,7 +76,7 @@ func void DIA_Wache_PERM_Info ()
 	/* obskur
 	AI_Output (other, self, "DIA_Wache_PERM_15_00"); //Wer hat hier das Sagen?
 	AI_Output (self, other, "DIA_Wache_PERM_10_01"); //Unser Kommandant Garond und seine beiden Berater, die Paladine Oric und Parcival.
-	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. Tagsüber halten sie sich im Thronsaal im Erdgeschoss auf.
+	AI_Output (self, other, "DIA_Wache_PERM_10_02"); //Geh einfach rein. TagsÃ¼ber halten sie sich im Thronsaal im Erdgeschoss auf.
 	*/
 	AI_Output (other, self, "DIA_Addon_Wache_PERM_15_00"); //Chi comanda, qui?
 	AI_Output (self, other, "DIA_Addon_Wache_PERM_10_01"); //Il comandante Garond e i suoi consiglieri, i paladini Oric e Parcival.

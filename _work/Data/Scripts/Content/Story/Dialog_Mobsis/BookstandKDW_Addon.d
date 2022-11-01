@@ -55,7 +55,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 	};
 };

@@ -45,7 +45,7 @@ func int DIA_Rosi_HALLO_Condition ()
 func void DIA_Rosi_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_HALLO_15_00"); //Va tutto bene?
-	AI_Output			(self, other, "DIA_Rosi_HALLO_17_01"); //Beh, va così così. La schiena mi fa male a causa di tutto questo duro lavoro. Che ci fai qui? Non ricevo visite tanto spesso.
+	AI_Output			(self, other, "DIA_Rosi_HALLO_17_01"); //Beh, va cosÃ¬ cosÃ¬. La schiena mi fa male a causa di tutto questo duro lavoro. Che ci fai qui? Non ricevo visite tanto spesso.
 
 	if ((hero.guild != GIL_MIL))
 	{
@@ -84,7 +84,7 @@ func void DIA_Rosi_WASMACHSTDU_Info ()
 	if (Npc_IsDead(Sekob)== FALSE)
 	{
 	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_01"); //Sono parecchi anni che me lo chiedo. Mio marito Sekob ha litigato con tutti quanti nella zona.
-	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_02"); //Ha debiti con tutti, e così ruba le provviste dal magazzino di Onar e le rivende in città.
+	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_02"); //Ha debiti con tutti, e cosÃ¬ ruba le provviste dal magazzino di Onar e le rivende in cittÃ .
 	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_03"); //Finora ha accumulato una fortuna con i suoi affari sottobanco.
 	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_04"); //E sfrutta i suoi braccianti fino a quando non gli si spezza la schiena dalla fatica. I suoi stessi uomini lo chiamano negriero.
 	AI_Output			(self, other, "DIA_Rosi_WASMACHSTDU_17_05"); //Non sono particolarmente fiera di essere la moglie di Sekob, credimi. A volte vorrei che la Barriera fosse ancora al suo posto.
@@ -154,7 +154,7 @@ func void DIA_Rosi_BARRIERE_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_BARRIERE_15_00"); //La Barriera?
 	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_01"); //Beh, la cupola che un tempo racchiudeva la vecchia Valle delle Miniere.
-	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_02"); //Molti dei contadini e degli operai che commettevano un crimine a quei tempi venivano semplicemente gettati lì dentro per sempre.
+	AI_Output			(self, other, "DIA_Rosi_BARRIERE_17_02"); //Molti dei contadini e degli operai che commettevano un crimine a quei tempi venivano semplicemente gettati lÃ¬ dentro per sempre.
 
 };
 
@@ -182,8 +182,8 @@ func int DIA_Rosi_DuInBarriere_Condition ()
 func void DIA_Rosi_DuInBarriere_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_DuInBarriere_15_00"); //Sei mai stata alla Barriera?
-	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_01"); //No. Ne abbiamo solo sentito parlare. Bengar, il contadino dell'altopiano, saprà senz'altro darti maggiori informazioni in merito.
-	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_02"); //La sua fattoria è molto vicina al passo che conduce alla Valle delle Miniere.
+	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_01"); //No. Ne abbiamo solo sentito parlare. Bengar, il contadino dell'altopiano, saprÃ  senz'altro darti maggiori informazioni in merito.
+	AI_Output			(self, other, "DIA_Rosi_DuInBarriere_17_02"); //La sua fattoria Ã¨ molto vicina al passo che conduce alla Valle delle Miniere.
 
 };
 
@@ -213,8 +213,8 @@ func int DIA_Rosi_BENGAR_Condition ()
 func void DIA_Rosi_BENGAR_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_BENGAR_15_00"); //Come posso arrivare alla fattoria di Bengar?
-	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_01"); //Vai a chiederlo a Balthasar. È il nostro pastore. Egli a volta conduce i suoi animali a brucare l'erba dei pascoli di Bengar.
-	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_02"); //Lui sarà in grado di mostrarti la strada per la fattoria di Bengar.
+	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_01"); //Vai a chiederlo a Balthasar. Ãˆ il nostro pastore. Egli a volta conduce i suoi animali a brucare l'erba dei pascoli di Bengar.
+	AI_Output			(self, other, "DIA_Rosi_BENGAR_17_02"); //Lui sarÃ  in grado di mostrarti la strada per la fattoria di Bengar.
 		
 };
 
@@ -229,7 +229,7 @@ instance DIA_Rosi_Miliz		(C_INFO)
 	condition	 = 	DIA_Rosi_Miliz_Condition;
 	information	 = 	DIA_Rosi_Miliz_Info;
 
-	description	 = 	"Perché la guardia cittadina vi attacca qui nelle vostre fattorie?";
+	description	 = 	"PerchÃ© la guardia cittadina vi attacca qui nelle vostre fattorie?";
 };
 
 func int DIA_Rosi_Miliz_Condition ()
@@ -243,9 +243,9 @@ func int DIA_Rosi_Miliz_Condition ()
 
 func void DIA_Rosi_Miliz_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_Miliz_15_00"); //Perché la guardia cittadina vi attacca qui nelle vostre fattorie?
-	AI_Output			(self, other, "DIA_Rosi_Miliz_17_01"); //Perché non c'è niente che gli impedisca di saccheggiare le nostre fattorie piuttosto che procurarsi le merci acquistandole.
-	AI_Output			(self, other, "DIA_Rosi_Miliz_17_02"); //Il re è molto lontano e noi dobbiamo sopportare di lavorare per Onar sperando che ci manderà degli aiuti quando ne avremo davvero bisogno.
+	AI_Output			(other, self, "DIA_Rosi_Miliz_15_00"); //PerchÃ© la guardia cittadina vi attacca qui nelle vostre fattorie?
+	AI_Output			(self, other, "DIA_Rosi_Miliz_17_01"); //PerchÃ© non c'Ã¨ niente che gli impedisca di saccheggiare le nostre fattorie piuttosto che procurarsi le merci acquistandole.
+	AI_Output			(self, other, "DIA_Rosi_Miliz_17_02"); //Il re Ã¨ molto lontano e noi dobbiamo sopportare di lavorare per Onar sperando che ci manderÃ  degli aiuti quando ne avremo davvero bisogno.
 };
 
 
@@ -259,7 +259,7 @@ instance DIA_Rosi_ONAR		(C_INFO)
 	condition	 = 	DIA_Rosi_ONAR_Condition;
 	information	 = 	DIA_Rosi_ONAR_Info;
 
-	description	 = 	"Cosa te ne sembra dell’aiuto di Onar?";
+	description	 = 	"Cosa te ne sembra dellâ€™aiuto di Onar?";
 };
 
 func int DIA_Rosi_ONAR_Condition ()
@@ -272,10 +272,10 @@ func int DIA_Rosi_ONAR_Condition ()
 
 func void DIA_Rosi_ONAR_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_ONAR_15_00"); //Cosa te ne sembra dell’aiuto di Onar?
+	AI_Output			(other, self, "DIA_Rosi_ONAR_15_00"); //Cosa te ne sembra dellâ€™aiuto di Onar?
 	AI_Output			(self, other, "DIA_Rosi_ONAR_17_01"); //A volte riceviamo degli avvertimenti in anticipo quando alcune guardie cittadine stanno per farci visita per derubarci.
 	AI_Output			(self, other, "DIA_Rosi_ONAR_17_02"); //Allora mandiamo qualcuno dal vecchio padrone per chiedere aiuto.
-	AI_Output			(self, other, "DIA_Rosi_ONAR_17_03"); //Quindi, di solito, non ci vuole molto affinché i mercenari da lui pagati giungano qui e caccino via le guardie.
+	AI_Output			(self, other, "DIA_Rosi_ONAR_17_03"); //Quindi, di solito, non ci vuole molto affinchÃ© i mercenari da lui pagati giungano qui e caccino via le guardie.
 	AI_Output			(self, other, "DIA_Rosi_ONAR_17_04"); //Ma, a conti fatti, i mercenari non sono meglio delle guardie.
 };
 
@@ -445,7 +445,7 @@ func int DIA_Rosi_FLEEFROMSEKOB_Condition ()
 func void DIA_Rosi_FLEEFROMSEKOB_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_FLEEFROMSEKOB_15_00"); //Cosa ci fai qui in queste terre selvagge?
-	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_01"); //Non ce la facevo più a rimanere alla fattoria di Sekob Egli veniva colto da attacchi isterici a ripetizione.
+	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_01"); //Non ce la facevo piÃ¹ a rimanere alla fattoria di Sekob Egli veniva colto da attacchi isterici a ripetizione.
 	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_02"); //Alla fine era praticamente impossibile parlargli. Non faceva altro che gridare.
 	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_03"); //Devo fuggire da qui, ma non so dove andare.
 	AI_Output			(self, other, "DIA_Rosi_FLEEFROMSEKOB_17_04"); //Ti interesserebbe un piccolo affare?
@@ -463,7 +463,7 @@ instance DIA_Rosi_HILFE		(C_INFO)
 	condition	 = 	DIA_Rosi_HILFE_Condition;
 	information	 = 	DIA_Rosi_HILFE_Info;
 
-	description	 = 	"Ti porterò via di qui.";
+	description	 = 	"Ti porterÃ² via di qui.";
 };
 
 func int DIA_Rosi_HILFE_Condition ()
@@ -477,31 +477,31 @@ func int DIA_Rosi_HILFE_Condition ()
 
 func void DIA_Rosi_HILFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rosi_HILFE_15_00"); //Ti porterò via di qui.
+	AI_Output			(other, self, "DIA_Rosi_HILFE_15_00"); //Ti porterÃ² via di qui.
 
 	self.aivar[AIV_PARTYMEMBER] = TRUE;
 	Till.aivar[AIV_PARTYMEMBER] = TRUE;
 	
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_01"); //Potrei condurti fino in città.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_01"); //Potrei condurti fino in cittÃ .
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_02"); //Ti condurrò alla fattoria del proprietario terriero.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_02"); //Ti condurrÃ² alla fattoria del proprietario terriero.
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(other, self, "DIA_Rosi_HILFE_15_03"); //Vieni al monastero. Saresti la benvenuta lì.
+			AI_Output			(other, self, "DIA_Rosi_HILFE_15_03"); //Vieni al monastero. Saresti la benvenuta lÃ¬.
 		};	
 		
-		AI_Output			(self, other, "DIA_Rosi_HILFE_17_04"); //Non dimenticherò mai quello che hai fatto per me. Ovviamente ti pagherò.
+		AI_Output			(self, other, "DIA_Rosi_HILFE_17_04"); //Non dimenticherÃ² mai quello che hai fatto per me. Ovviamente ti pagherÃ².
 
 			if (Npc_IsDead(Till))
 			{
-				AI_Output			(self, other, "DIA_Rosi_HILFE_17_05"); //Vai avanti tu. Io ti seguirò.
+				AI_Output			(self, other, "DIA_Rosi_HILFE_17_05"); //Vai avanti tu. Io ti seguirÃ².
 			}
 			else
 			{
@@ -528,7 +528,7 @@ func void DIA_Rosi_HILFE_Info ()
 		};	
 		Log_CreateTopic (TOPIC_RosisFlucht, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_RosisFlucht, LOG_RUNNING);
-		B_LogEntry (TOPIC_RosisFlucht,"Rosi non poteva più sopportare la fattoria di Sekob e ora non sa dove andare. La guiderò fuori dalla regione selvaggia."); 
+		B_LogEntry (TOPIC_RosisFlucht,"Rosi non poteva piÃ¹ sopportare la fattoria di Sekob e ora non sa dove andare. La guiderÃ² fuori dalla regione selvaggia."); 
 		MIS_RosisFlucht = LOG_RUNNING;
 };
 
@@ -562,7 +562,7 @@ func int DIA_Rosi_ANGEKOMMEN_Condition ()
 
 func void DIA_Rosi_ANGEKOMMEN_Info ()
 {
-	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_00"); //Troverò la mia strada da sola da qui.
+	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_00"); //TroverÃ² la mia strada da sola da qui.
 	AI_Output			(self, other, "DIA_Rosi_ANGEKOMMEN_17_01"); //Grazie. Non so come avrei fatto senza di te.
 
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -630,7 +630,7 @@ func int DIA_Rosi_TRAIT_Condition ()
 func void DIA_Rosi_TRAIT_Info ()
 {
 	AI_Output			(other, self, "DIA_Rosi_TRAIT_15_00"); //Vedi, adesso sei di nuovo a casa.
-	AI_Output			(self, other, "DIA_Rosi_TRAIT_17_01"); //Sei l’essere più spregevole che abbia mai incontrato in vita mia, sporco maiale.
+	AI_Output			(self, other, "DIA_Rosi_TRAIT_17_01"); //Sei lâ€™essere piÃ¹ spregevole che abbia mai incontrato in vita mia, sporco maiale.
 	AI_StopProcessInfos (self);
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Till.aivar[AIV_PARTYMEMBER] = FALSE;

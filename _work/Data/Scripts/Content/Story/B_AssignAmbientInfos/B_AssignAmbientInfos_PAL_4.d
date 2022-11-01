@@ -45,7 +45,7 @@ FUNC VOID DIA_PAL_4_JOIN_Info()
 	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //Come faccio a diventare un paladino?
 	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Se stai dicendo sul serio, allora dovresti metterti al servizio dei paladini.
 	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Vai alla caserma e parla con Lord Andre per essere ammesso nella guardia cittadina.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Magari ti verr‡ data la possibilit‡ di dimostrare il tuo valore.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Magari ti verr√† data la possibilit√† di dimostrare il tuo valore.
 };
 
 // *************************************************************************
@@ -71,8 +71,8 @@ FUNC INT DIA_PAL_4_PEOPLE_Condition()
 FUNC VOID DIA_PAL_4_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //Chi comanda, qui?
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Lord Hagen Ë il comandante supremo di tutte le truppe sull'isola. Egli inoltre occuper‡ l'ufficio del governatore per il tempo che rimarremo qui.
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Ma egli Ë molto occupato. Se ti serve qualcosa, vai alla caserma e parla con Lord Andre.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Lord Hagen √® il comandante supremo di tutte le truppe sull'isola. Egli inoltre occuper√† l'ufficio del governatore per il tempo che rimarremo qui.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Ma egli √® molto occupato. Se ti serve qualcosa, vai alla caserma e parla con Lord Andre.
 };
 
 // *************************************************************************
@@ -110,7 +110,7 @@ INSTANCE DIA_PAL_4_STANDARD(C_INFO)
 	condition	= DIA_PAL_4_STANDARD_Condition;
 	information	= DIA_PAL_4_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };
                        
 func INT DIA_PAL_4_STANDARD_Condition()
@@ -120,7 +120,7 @@ func INT DIA_PAL_4_STANDARD_Condition()
 
 FUNC VOID DIA_PAL_4_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_PAL_4_STANDARD_15_00"); //Novit√†?
 
 	if (other.guild == GIL_PAL)
 	|| (other.guild == GIL_KDF)
@@ -129,22 +129,22 @@ FUNC VOID DIA_PAL_4_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //Ora che sappiamo di avere a che fare con i draghi, il nostro comandante far‡ certamente qualcosa subito.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //Ora che sappiamo di avere a che fare con i draghi, il nostro comandante far√† certamente qualcosa subito.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //Non abbiamo ancora ricevuto notizie dal nostro contingente nella Valle delle Miniere. La cosa Ë molto sospetta.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //Non abbiamo ancora ricevuto notizie dal nostro contingente nella Valle delle Miniere. La cosa √® molto sospetta.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Sia lodato Innos! La minaccia dei draghi Ë stata scongiurata. Ora per mettere le mani sul metallo dobbiamo solo annientare gli orchi.
+			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Sia lodato Innos! La minaccia dei draghi √® stata scongiurata. Ora per mettere le mani sul metallo dobbiamo solo annientare gli orchi.
 		};
 	}
 	else //KEIN Paladin
 	{
-		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //Non ho tempo da perdere per preoccuparmi delle chiacchiere che circolano in citt‡.
+		AI_Output (self, other, "DIA_PAL_4_STANDARD_04_04"); //Non ho tempo da perdere per preoccuparmi delle chiacchiere che circolano in citt√†.
 	};
 };
 

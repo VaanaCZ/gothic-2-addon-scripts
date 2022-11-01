@@ -143,7 +143,7 @@ FUNC VOID UnEquip_ItBE_Addon_Leather_01()
 	};
 };
 //------------------------------------------------------------------------------------------
-// Fellgürtel (SLD) Zweihand
+// FellgÃ¼rtel (SLD) Zweihand
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_SLD_01 (C_Item)  //Bennet(Kap1)
 {
@@ -212,7 +212,7 @@ FUNC VOID UnEquip_ItBE_Addon_SLD_01()
 	};
 };
 //------------------------------------------------------------------------------------------
-// Novizenschärpe (Zweihand)
+// NovizenschÃ¤rpe (Zweihand)
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_NOV_01 (C_Item)  //Gorax (Kap1)
 {
@@ -419,7 +419,7 @@ FUNC VOID UnEquip_ItBE_Addon_KDF_01()
 };
 
 //------------------------------------------------------------------------------------------
-// Minecrawler Gürtel Zweihand
+// Minecrawler GÃ¼rtel Zweihand
 //------------------------------------------------------------------------------------------
 	INSTANCE  ItBE_Addon_MC (C_Item)  //Bennet(Kap3)
 {
@@ -490,7 +490,7 @@ FUNC VOID UnEquip_ItBE_Addon_MC()
 
 
 // *****************************************************
-// 						kleine Gürtel
+// 						kleine GÃ¼rtel
 // *****************************************************
 // -----------------------------------------------------
 // STR 5
@@ -591,7 +591,7 @@ INSTANCE  ItBe_Addon_DEX_5 (C_Item)  //Bosper(Kap2)/Orlan(2)
 	on_equip		=	Equip_ItBe_Addon_DEX_5;
 	on_unequip		=	UnEquip_ItBe_Addon_DEX_5;
 
-	description		=  "Cintura dell'abilità";
+	description		=  "Cintura dell'abilitÃ ";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= BeltBonus_DEX01;
@@ -814,7 +814,7 @@ FUNC VOID UnEquip_ItBe_Addon_Prot_FIRE()
 // -----------------------------------------------------
 // PROT EdgPoi
 // -----------------------------------------------------
-INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohnung von Garett für Feuerwarane (Kap2)
+INSTANCE  ItBe_Addon_Prot_EdgPoi (C_Item)  //Khaled(Kap4)/Orlan(3)	Missionbelohnung von Garett fÃ¼r Feuerwarane (Kap2)
 {
 	name 			=	NAME_Addon_Belt;
 

@@ -76,7 +76,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Dead_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Bloodwyn_Dead_04_00");//Ehi, come hai fatto a entrare?
 	AI_Output (other, self, "DIA_Addon_Bloodwyn_Dead_15_01");//Dall'ingresso.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Dead_04_02");//Divertente… Io ODIO le battute.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Dead_04_02");//Divertenteâ€¦ Io ODIO le battute.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -101,8 +101,8 @@ FUNC VOID Bloodwyn_Choices_3()
 {
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Ovviamente non aveva tempo per fare il difficile…",DIA_Addon_Bloodwyn_Wait_GOOD3);
-	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Sì, penso che quello sia stato il suo errore più grosso.",DIA_Addon_Bloodwyn_Wait_BAD3);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"Ovviamente non aveva tempo per fare il difficileâ€¦",DIA_Addon_Bloodwyn_Wait_GOOD3);
+	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,"SÃ¬, penso che quello sia stato il suo errore piÃ¹ grosso.",DIA_Addon_Bloodwyn_Wait_BAD3);
 };
 //---------------------------------------------------------------------
 //	Info Wait
@@ -139,12 +139,12 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_Info()
 FUNC VOID DIA_Addon_Bloodwyn_Wait_Raven()
 {
 	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_00");//Sto cercando Raven.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_01");//Sì, e che cosa ti fa pensare che Raven voglia parlare proprio con TE… aspetta, TU sei… Sei TU?
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_01");//SÃ¬, e che cosa ti fa pensare che Raven voglia parlare proprio con TEâ€¦ aspetta, TU seiâ€¦ Sei TU?
 	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_02");//Sei il tizio che abbiamo cercato per tutto questo tempo. Cosa ci fai TU, qui? Dovresti essere morto da un pezzo!
 	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_03");//Me lo dicono sempre tutti.
 	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_04");//Quegli imbecilli hanno fallito, ma non io. Questa volta sei finito.
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_05");//Come ho già detto, sto cercando Raven, tu non mi interessi per niente.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_06");//Ti ucciderò: sono sopravvissuto a ogni battaglia, fino ad ora!
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_15_05");//Come ho giÃ  detto, sto cercando Raven, tu non mi interessi per niente.
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_04_06");//Ti ucciderÃ²: sono sopravvissuto a ogni battaglia, fino ad ora!
 	
 	Bloodwyn_Choices_1() ;
 	
@@ -152,7 +152,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_Raven()
 FUNC VOID DIA_Addon_Bloodwyn_Wait_FIGHT()
 {
 	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_15_00");//Basta parlare. Combattiamo.
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_04_01");//(trionfante) Per te è comunque troppo tardi! In questo preciso momento Raven sta aprendo il tempio! Ahahahah, muori, bastardo!
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Wait_Raven_FIGHT_04_01");//(trionfante) Per te Ã¨ comunque troppo tardi! In questo preciso momento Raven sta aprendo il tempio! Ahahahah, muori, bastardo!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -160,7 +160,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_FIGHT()
 
 FUNC VOID Bloodwyn_Lach()
 {
-	AI_Output (self, other, "DIA_Addon_Bloodwyn_Lach_04_00");//AHAHAH. Ti batterò comunque!
+	AI_Output (self, other, "DIA_Addon_Bloodwyn_Lach_04_00");//AHAHAH. Ti batterÃ² comunque!
 };
 FUNC VOID Bloodwyn_Wut()
 {
@@ -230,7 +230,7 @@ FUNC VOID DIA_Addon_Bloodwyn_Wait_GOOD3()
 FUNC VOID DIA_Addon_Bloodwyn_Wait_BAD3()
 {
 
-	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD3_15_00");//Sì, penso che quello sia stato il suo errore più grosso
+	AI_Output (other, self, "DIA_Addon_Bloodwyn_Wait_Raven_BAD3_15_00");//SÃ¬, penso che quello sia stato il suo errore piÃ¹ grosso
 	Bloodwyn_Wut();
 	Info_ClearChoices (DIA_Addon_Bloodwyn_Wait);
 	Info_AddChoice (DIA_Addon_Bloodwyn_Wait,PRINT_ADDON_ENOUGHTALK,DIA_Addon_Bloodwyn_Wait_FIGHT);

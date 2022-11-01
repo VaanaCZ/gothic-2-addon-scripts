@@ -64,13 +64,13 @@ FUNC VOID DIA_Dragon_Fire_Hello_Info()
 	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_00"); //Non riesco a credere che ci sono delle persone che darebbero la loro vita solo per vedere un drago di persona.
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Parli abbastanza bene per essere un mostro cosÏ ingombrante.
+		AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_01"); //Parli abbastanza bene per essere un mostro cos√¨ ingombrante.
 	};
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Non sono venuto per vedere te. Ho qualcosa di pi˘ importante da fare, mi dispiace.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_02"); //Non sono venuto per vedere te. Ho qualcosa di pi√π importante da fare, mi dispiace.
 	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_03"); //Non vorrai mica dire che osi sfidarmi?
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ah ah ah. Ti spezzerÚ l'osso del collo.
-	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Non correre troppo, amico mio. Io ho l'Occhio di Innos con me. Non puoi resistere alla mia volont‡. Rispondi alle mie domande o la tua agonia sar‡ insopportabile.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(ruggisce) Argh. Allora fammi le tue ridicole domande finchÈ sei in tempo. Il tuo potere non durer‡ a lungo.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_04"); //Ah ah ah. Ti spezzer√≤ l'osso del collo.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Hello_15_05"); //Non correre troppo, amico mio. Io ho l'Occhio di Innos con me. Non puoi resistere alla mia volont√†. Rispondi alle mie domande o la tua agonia sar√† insopportabile.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Hello_20_06"); //(ruggisce) Argh. Allora fammi le tue ridicole domande finch√© sei in tempo. Il tuo potere non durer√† a lungo.
 
 };
 
@@ -98,8 +98,8 @@ func int DIA_Dragon_Fire_WerBistDu_Condition ()
 func void DIA_Dragon_Fire_WerBistDu_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Fire_WerBistDu_15_00"); //Chi sei?
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Mi chiamo Feomathar e questo Ë tutto ciÚ che saprai da me.
-	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Una volta che avrÚ spezzato l'incantesimo dell'Occhio, tu finirai bruciato.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_01"); //Mi chiamo Feomathar e questo √® tutto ci√≤ che saprai da me.
+	AI_Output			(self, other, "DIA_Dragon_Fire_WerBistDu_20_02"); //Una volta che avr√≤ spezzato l'incantesimo dell'Occhio, tu finirai bruciato.
 
 };
 
@@ -112,7 +112,7 @@ instance DIA_Dragon_Fire_HORT		(C_INFO)
 	condition	 = 	DIA_Dragon_Fire_HORT_Condition;
 	information	 = 	DIA_Dragon_Fire_HORT_Info;
 
-	description	 = 	"DovíË il tuo tesoro?";
+	description	 = 	"Dov‚Äô√® il tuo tesoro?";
 };
 
 func int DIA_Dragon_Fire_HORT_Condition ()
@@ -126,7 +126,7 @@ func int DIA_Dragon_Fire_HORT_Condition ()
 func void DIA_Dragon_Fire_HORT_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Fire_HORT_15_00"); //Ogni drago ha una dimora in cui radunare i propri tesori. Dove si trova la tua?
-	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //In un posto che ti sar‡ inaccessibile, non appena mi sarÚ finalmente liberato dalle catene dell'Occhio.
+	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_01"); //In un posto che ti sar√† inaccessibile, non appena mi sar√≤ finalmente liberato dalle catene dell'Occhio.
 	AI_Output			(self, other, "DIA_Dragon_Fire_HORT_20_02"); //Conservo il mio tesoro in alto, sulle rupi bollenti, impossibili da raggiungere per un essere umano privo di ali come te.
 
 };

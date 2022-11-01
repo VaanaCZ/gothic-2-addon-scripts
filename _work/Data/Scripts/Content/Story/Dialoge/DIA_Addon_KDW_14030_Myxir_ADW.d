@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Myxir_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Myxir_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Myxir_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Myxir_ADW_PICKPOCKET_Condition()
@@ -84,7 +84,7 @@ instance DIA_Addon_Myxir_ADWHello		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_ADWHello_Condition;
 	information	 = 	DIA_Addon_Myxir_ADWHello_Info;
 
-	description	 = 	"Novit‡?";
+	description	 = 	"Novit√†?";
 };
 
 func int DIA_Addon_Myxir_ADWHello_Condition ()
@@ -94,7 +94,7 @@ func int DIA_Addon_Myxir_ADWHello_Condition ()
 
 func void DIA_Addon_Myxir_ADWHello_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_00"); //Novit‡?
+	AI_Output	(other, self, "DIA_Addon_Myxir_ADWHello_15_00"); //Novit√†?
 	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_01"); //I costruttori delle rovine mi affascinano!
 	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_02"); //Peccato che la loro lingua sia morta insieme a loro.
 	AI_Output	(self, other, "DIA_Addon_Myxir_ADWHello_12_03"); //(riflettendo) Neppure i potenti rituali e le evocazioni sono riusciti a salvarli.
@@ -105,7 +105,7 @@ func void DIA_Addon_Myxir_ADWHello_Info ()
 
 	Info_ClearChoices	(DIA_Addon_Myxir_ADWHello);
 	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "Come funzionavano queste evocazioni?", DIA_Addon_Myxir_ADWHello_wie );
-	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "I non morti che ho conosciuto non avevano granchÈ da dire.", DIA_Addon_Myxir_ADWHello_Watt );
+	Info_AddChoice	(DIA_Addon_Myxir_ADWHello, "I non morti che ho conosciuto non avevano granch√© da dire.", DIA_Addon_Myxir_ADWHello_Watt );
 };
 func void DIA_Addon_Myxir_ADWHello_wie ()
 {
@@ -145,7 +145,7 @@ func int DIA_Addon_Myxir_PermADW_Condition ()
 func void DIA_Addon_Myxir_PermADW_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_PermADW_15_00"); //Se vedo uno spirito, ti avviso.
-	AI_Output	(self, other, "DIA_Addon_Myxir_PermADW_12_01"); //(ride) SÏ, ci tengo proprio.
+	AI_Output	(self, other, "DIA_Addon_Myxir_PermADW_12_01"); //(ride) S√¨, ci tengo proprio.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info GeistTafel
@@ -172,8 +172,8 @@ func int DIA_Addon_Myxir_GeistTafel_Condition ()
 func void DIA_Addon_Myxir_GeistTafel_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_00"); //Mi manda Saturas.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_01"); //Raven si Ë introdotto nel tempio e ha bloccato il portale dall'interno.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_02"); //Saturas Ë convinto di aver avuto le informazioni sul tempio da un fantasma!
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_01"); //Raven si √® introdotto nel tempio e ha bloccato il portale dall'interno.
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_02"); //Saturas √® convinto di aver avuto le informazioni sul tempio da un fantasma!
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_03"); //(sbalordito) Per Adanos!
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_04"); //Deve aver evocato il sommo sacerdote Khardimon per chiedergli come entrare nel tempio.
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_05"); //Sta scritto che la sua tomba si trovava nelle caverne sotto la fortezza!
@@ -182,7 +182,7 @@ func void DIA_Addon_Myxir_GeistTafel_Info ()
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_08"); //Si dice che la tomba del principe guerriero Quahodron si trovi a ovest della valle.
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_09"); //Dovrai trovarla... e risvegliare Quahodron.
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_10"); //Queste iscrizioni spiegano come un fedele di Adanos possa evocare uno spirito.
-	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_11"); //Pensi che funzioner‡ davvero?
+	AI_Output (other, self, "DIA_Addon_Myxir_GeistTafel_15_11"); //Pensi che funzioner√† davvero?
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_12"); //Di vaneggiamenti ne ho letti tanti.
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_13"); //Ad esempio gli scritti di Y'Berion, il capo della Confraternita del Dormiente.
 	AI_Output (self, other, "DIA_Addon_Myxir_GeistTafel_12_14"); //Ma credo ad ogni singola parola di QUESTI scritti.
@@ -191,31 +191,31 @@ func void DIA_Addon_Myxir_GeistTafel_Info ()
 
 	Info_ClearChoices	(DIA_Addon_Myxir_GeistTafel);
 	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Stai dicendo sul serio?", DIA_Addon_Myxir_GeistTafel_geist );
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "PerchÈ Quarhodron e non il sommo sacerdote Khardimon?", DIA_Addon_Myxir_GeistTafel_Khardimon );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Perch√© Quarhodron e non il sommo sacerdote Khardimon?", DIA_Addon_Myxir_GeistTafel_Khardimon );
 	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "La Confraternita del Dormiente non ha diffuso SOLO menzogne.", DIA_Addon_Myxir_GeistTafel_psi );
 };
 
 func void DIA_Addon_Myxir_GeistTafel_Khardimon ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_Khardimon_15_00"); //PerchÈ Quarhodron e non il sommo sacerdote Khardimon?
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_01"); //» certo che, con la sua evocazione, Raven abbia profanato la tomba di Khardimon.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_Khardimon_15_00"); //Perch√© Quarhodron e non il sommo sacerdote Khardimon?
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_01"); //√à certo che, con la sua evocazione, Raven abbia profanato la tomba di Khardimon.
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_Khardimon_12_02"); //Dovremo cercare un altro spirito.
 };
 func void DIA_Addon_Myxir_GeistTafel_psi ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_psi_15_00"); //La Confraternita del Dormiente non diffondeva solo bugie: il Dormiente Ë esistito davvero.
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_psi_15_00"); //La Confraternita del Dormiente non diffondeva solo bugie: il Dormiente √® esistito davvero.
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_01"); //Ma non erano tanto le bugie a renderli poco plausibili, quanto le loro stesse parole.
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_02"); //Erano confuse, e di certo erano state scritte sotto l'influsso di tutta quell'erba di palude che fumavano.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_03"); //Ma le parole incise su questa tavoletta di pietra sono cosÏ prudenti che sono convinto che quest'uomo scrivesse la verit‡.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_psi_12_03"); //Ma le parole incise su questa tavoletta di pietra sono cos√¨ prudenti che sono convinto che quest'uomo scrivesse la verit√†.
 };
 func void DIA_Addon_Myxir_GeistTafel_geist ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_GeistTafel_geist_15_00"); //Stai dicendo sul serio?
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_01"); //Non voglio trascurare niente.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_02"); //Anche se le nostre possibilit‡ di incontrare uno dei Costruttori sono remote, dobbiamo provarci.
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_03"); //Dopo tutto, Raven ci Ë riuscito.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_02"); //Anche se le nostre possibilit√† di incontrare uno dei Costruttori sono remote, dobbiamo provarci.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_geist_12_03"); //Dopo tutto, Raven ci √® riuscito.
 	
-	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Supponiamo che volessi evocare questo fantasmaÖ", DIA_Addon_Myxir_GeistTafel_wie );
+	Info_AddChoice	(DIA_Addon_Myxir_GeistTafel, "Supponiamo che volessi evocare questo fantasma‚Ä¶", DIA_Addon_Myxir_GeistTafel_wie );
 };
 func void DIA_Addon_Myxir_GeistTafel_wie ()
 {
@@ -224,7 +224,7 @@ func void DIA_Addon_Myxir_GeistTafel_wie ()
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_02"); //Per evocare il suo fantasma devi pronunciare le parole dei guardiani dei morti, che ho annotato per te.
 	CreateInvItems (self, ItWr_Addon_SUMMONANCIENTGHOST, 1);									
 	B_GiveInvItems (self, other, ItWr_Addon_SUMMONANCIENTGHOST, 1);		
-	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_03"); //Questo Ë tutto. Ora devi solo trovare la tomba.
+	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_03"); //Questo √® tutto. Ora devi solo trovare la tomba.
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistTafel_wie_12_04"); //Buona fortuna!
 
 	B_LogEntry (TOPIC_Addon_Quarhodron,"Myxir vuole che risvegli il fantasma del vecchio principe guerriero Quarhodron per chiedergli consiglio. Mi ha dato un documento con una formula che dovrei leggere ad alta voce sulla tomba di Quarhodron, a ovest."); 
@@ -242,7 +242,7 @@ instance DIA_Addon_Myxir_GeistPerm		(C_INFO)
 	condition	 = 	DIA_Addon_Myxir_GeistPerm_Condition;
 	information	 = 	DIA_Addon_Myxir_GeistPerm_Info;
 
-	description	 = 	"Cos'Ë che dicevi riguardo al principe guerriero Quarhodron?";
+	description	 = 	"Cos'√® che dicevi riguardo al principe guerriero Quarhodron?";
 };
 
 func int DIA_Addon_Myxir_GeistPerm_Condition ()
@@ -255,7 +255,7 @@ func int DIA_Addon_Myxir_GeistPerm_Condition ()
 
 func void DIA_Addon_Myxir_GeistPerm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_GeistPerm_15_00"); //Cos'Ë che dicevi riguardo al principe guerriero Quarhodron?
+	AI_Output	(other, self, "DIA_Addon_Myxir_GeistPerm_15_00"); //Cos'√® che dicevi riguardo al principe guerriero Quarhodron?
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_01"); //Devi trovare la sua tomba ed evocare il suo fantasma con le parole dei guardiani dei morti.
 	AI_Output	(self, other, "DIA_Addon_Myxir_GeistPerm_12_02"); //Ho annotato la formula. Non devi far altro che leggerla ad alta voce.
 };
@@ -284,8 +284,8 @@ func void DIA_Addon_Myxir_TalkedToGhost_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_00"); //Ho parlato con Quarhodron.
 	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_01"); //(eccitato) Sei veramente riuscito a richiamarlo dal regno dei morti?
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_02"); //» incredibile! Questi Costruttori non finiscono mai di sorprendermi.
-	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_03"); //Chiss‡ quali traguardi avrebbero raggiunto se fossero sopravvissuti...
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_02"); //√à incredibile! Questi Costruttori non finiscono mai di sorprendermi.
+	AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_03"); //Chiss√† quali traguardi avrebbero raggiunto se fossero sopravvissuti...
 	MIS_ADDON_Myxir_GeistBeschwoeren = LOG_SUCCESS;
 	
 	B_GivePlayerXP (XP_Addon_Myxir_GeistBeschwoeren);
@@ -294,8 +294,8 @@ func void DIA_Addon_Myxir_TalkedToGhost_Info ()
 	&&	(Ghost_SCKnowsHow2GetInAdanosTempel == TRUE)
 	{
 		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_04"); //Cos'ha detto il fantasma?
-		AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_05"); //Mi ha dato qualcosa che mi consentir‡ di entrare nel tempio di Adanos.
-		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_06"); //Allora vai subito da Saturas. Gli interesser‡ moltissimo sentire quello che hai da dire.
+		AI_Output	(other, self, "DIA_Addon_Myxir_TalkedToGhost_15_05"); //Mi ha dato qualcosa che mi consentir√† di entrare nel tempio di Adanos.
+		AI_Output	(self, other, "DIA_Addon_Myxir_TalkedToGhost_12_06"); //Allora vai subito da Saturas. Gli interesser√† moltissimo sentire quello che hai da dire.
 
 		B_LogEntry (TOPIC_Addon_Quarhodron,"Dovrei riferire a Saturas che ho risvegliato Quarhodron."); 
 	};

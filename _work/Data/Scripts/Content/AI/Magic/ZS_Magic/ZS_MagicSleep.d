@@ -12,7 +12,7 @@ func int B_StopMagicSleep()
 	B_Say_Overlay		(self,	other,	"$WHATWASSTHAT");
 	AI_PlayAni			(self, "T_VICTIM_SLE_2_STAND");
 	
-	// nach Aufruf dieses Befehles wird die Loop über return LOOP_END beendet (weiter im TA)
+	// nach Aufruf dieses Befehles wird die Loop Ã¼ber return LOOP_END beendet (weiter im TA)
 };		
 
 
@@ -34,7 +34,7 @@ func void B_AssessMagicSleepTalk()
 
 func void ZS_MagicSleep ()
 {
-	// der ZS_MagicSleep beendet sich selbst im loop, daher ist keine perception PERC_ASSESSSTOPMAGIC nötig, und darf
+	// der ZS_MagicSleep beendet sich selbst im loop, daher ist keine perception PERC_ASSESSSTOPMAGIC nÃ¶tig, und darf
 	// auch nicht gesetzt werden, ansonsten wird der diesen zustand aktivierende effekt wenn er beendet ist (z.B. weil
 	// der partikeleffekt stirbt) ein assessstopmagic senden, und dadurch illegalerweise vorzeitig den zustand beenden
 	// mit anderen worten: der pfx triggert diesen zustand, und der zustand beendet sich selbst

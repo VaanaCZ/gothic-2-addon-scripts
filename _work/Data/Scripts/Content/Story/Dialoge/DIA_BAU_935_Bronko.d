@@ -45,10 +45,10 @@ func void DIA_Bronko_HALLO_Info ()
 
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //Ti darò un pugno in testa, furfante.
+			AI_Output			(self, other, "DIA_Bronko_HALLO_06_02"); //Ti darÃ² un pugno in testa, furfante.
 		};
 		
-	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Se vuoi attraversare la mia terra, devi pagarmi 5 monete d'oro, altrimenti dovrò picchiarti!
+	AI_Output			(self, other, "DIA_Bronko_HALLO_06_03"); //Se vuoi attraversare la mia terra, devi pagarmi 5 monete d'oro, altrimenti dovrÃ² picchiarti!
 	
 	Info_ClearChoices	(DIA_Bronko_HALLO);
 
@@ -61,7 +61,7 @@ func void DIA_Bronko_HALLO_Info ()
 func void DIA_Bronko_HALLO_deinland ()
 {
 	AI_Output			(other, self, "DIA_Bronko_HALLO_deinland_15_00"); //La tua terra? Se tu il contadino, qui?
-	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //Puoi scommetterci. Altrimenti perché ti farei pagare un pedaggio?
+	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_01"); //Puoi scommetterci. Altrimenti perchÃ© ti farei pagare un pedaggio?
 	AI_Output			(self, other, "DIA_Bronko_HALLO_deinland_06_02"); //Non mi importa se vai in giro a chiedere informazioni su di me agli altri. Eh eh!
 
 };
@@ -153,7 +153,7 @@ func int DIA_Bronko_KEINBAUER_Condition ()
 
 func void DIA_Bronko_KEINBAUER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //Tu saresti il padrone? Ma non farmi ridere! Tu non sei nessuno, ecco la verità.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_15_00"); //Tu saresti il padrone? Ma non farmi ridere! Tu non sei nessuno, ecco la veritÃ .
 	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_06_01"); //Cooosa? Vuoi che ti spacchi la faccia?
 
 	Info_ClearChoices	(DIA_Bronko_KEINBAUER);
@@ -166,18 +166,18 @@ func void DIA_Bronko_KEINBAUER_Info ()
 				};
 			if (MIS_Sekob_Bronko_eingeschuechtert == LOG_RUNNING)
 				{	
-					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Sekob è il coltivatore, qui, e tu non sei che un piccolo imbroglione.", DIA_Bronko_KEINBAUER_sekobderbauer );
+					Info_AddChoice	(DIA_Bronko_KEINBAUER, "Sekob Ã¨ il coltivatore, qui, e tu non sei che un piccolo imbroglione.", DIA_Bronko_KEINBAUER_sekobderbauer );
 				};
 		};
 
-	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Bene, vediamo cos’hai.", DIA_Bronko_KEINBAUER_attack );
+	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Bene, vediamo cosâ€™hai.", DIA_Bronko_KEINBAUER_attack );
 	Info_AddChoice	(DIA_Bronko_KEINBAUER, "Lascia stare!", DIA_Bronko_KEINBAUER_schongut );
 
 };
 
 func void DIA_Bronko_KEINBAUER_attack ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_attack_15_00"); //Bene, vediamo cos’hai.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_attack_15_00"); //Bene, vediamo cosâ€™hai.
 	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_attack_06_01"); //Speravo che l'avresti detto.
 	
 	AI_StopProcessInfos (self);	 	
@@ -186,8 +186,8 @@ func void DIA_Bronko_KEINBAUER_attack ()
 
 func void DIA_Bronko_KEINBAUER_sekobderbauer ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Sekob è il padrone qui, e tu non sei altro che un ladruncolo che sta cercando di rubare i soldi dalle tasche della gente.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //Chi è che lo dice?
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_00"); //Sekob Ã¨ il padrone qui, e tu non sei altro che un ladruncolo che sta cercando di rubare i soldi dalle tasche della gente.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_01"); //Chi Ã¨ che lo dice?
 	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_sekobderbauer_15_02"); //Io. Sekob vuole che torni al lavoro invece di oziare qua intorno.
 	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_sekobderbauer_06_03"); //E allora? Cosa farai ora?
 };
@@ -202,16 +202,16 @@ func void DIA_Bronko_KEINBAUER_schongut ()
 
 func void DIA_Bronko_KEINBAUER_SLD ()
 {
-	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //D'accordo, allora dovrò riferire al padrone Onar che c'è un allevatore ribelle che si rifiuta di pagare l'affitto.
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Ahem. Aspetta un attimo. Onar manderà tutti i suoi mercenari a darmi la caccia.
+	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_00"); //D'accordo, allora dovrÃ² riferire al padrone Onar che c'Ã¨ un allevatore ribelle che si rifiuta di pagare l'affitto.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_01"); //Ahem. Aspetta un attimo. Onar manderÃ  tutti i suoi mercenari a darmi la caccia.
 	AI_Output			(other, self, "DIA_Bronko_KEINBAUER_SLD_15_02"); //E allora?
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //D'accordo, d’accordo. Ti darò ciò che vuoi, ma tieni i mercenari fuori da tutta questa faccenda, d'accordo?
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_03"); //D'accordo, dâ€™accordo. Ti darÃ² ciÃ² che vuoi, ma tieni i mercenari fuori da tutta questa faccenda, d'accordo?
 
 	if (B_GiveInvItems (self, other, ItMi_Gold, Npc_HasItems (self,ItMi_Gold)))
 	{
-		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Tieni, ti darò anche tutto il mio oro.
+		AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_04"); //Tieni, ti darÃ² anche tutto il mio oro.
 	};
-	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //E tornerò al mio campo. Tutto tranne i mercenari.
+	AI_Output			(self, other, "DIA_Bronko_KEINBAUER_SLD_06_05"); //E tornerÃ² al mio campo. Tutto tranne i mercenari.
 
 	AI_StopProcessInfos (self);	 	
 	DIA_Bronko_KEINBAUER_noPerm = TRUE;

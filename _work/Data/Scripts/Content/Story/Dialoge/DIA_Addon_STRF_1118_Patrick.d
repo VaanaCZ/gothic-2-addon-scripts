@@ -37,13 +37,13 @@ FUNC INT DIA_Addon_Patrick_Hi_Condition()
 FUNC VOID DIA_Addon_Patrick_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_00");//Mi hanno mandato i Maghi dell'Acqua. Sono qui per liberarvi.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//(cauto) Davvero? E perchÈ dovrei crederti?
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_01");//(cauto) Davvero? E perch√© dovrei crederti?
 	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_02");//Vuoi uscire di qui o no?
 	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_03");//Certo che voglio uscire, ma...
 	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_04");//Mi ha mandato Vatras. Se non vi basta, per me potete anche restarvene qui a marcire.
 	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_05");//(in fretta) D'accordo, ti credo.
-	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//(perplesso) Davvero? Wow, ci Ë voluto meno di quanto pensassi. Ora ci serve solo un piano.
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Tentare la fuga Ë molto rischioso. William ci ha provato, ed Ë morto.
+	AI_Output (other, self, "DIA_Addon_Patrick_Hi_15_06");//(perplesso) Davvero? Wow, ci √® voluto meno di quanto pensassi. Ora ci serve solo un piano.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_07");//Tentare la fuga √® molto rischioso. William ci ha provato, ed √® morto.
 	AI_Output (self, other, "DIA_Addon_Patrick_Hi_07_08");//I prigionieri sono tutti contadini e operai. Si fidano di me, ma non oserebbero tentare la fuga.
 		
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
@@ -52,7 +52,7 @@ FUNC VOID DIA_Addon_Patrick_Hi_Info()
 };
 FUNC VOID B_Say_Patrick_Plan()
 {
-	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//Ma non puÚ funzionare.
+	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_00");//Ma non pu√≤ funzionare.
 	AI_Output (self, other, "DIA_Addon_Patrick_Plan_07_01");//Fa' in modo che le guardie non ci attacchino e noi usciremo di qui.
 	AI_Output (other, self, "DIA_Addon_Patrick_Plan_15_02");//Okay, me ne occupo io. Di' agli altri di tenersi pronti.
 	
@@ -62,7 +62,7 @@ FUNC VOID B_Say_Patrick_Plan()
 FUNC VOID DIA_Addon_Patrick_Hi_Raven()
 {
 	AI_Output (other, self, "DIA_Addon_Patrick_Hi_Raven_15_00");//Cosa vuoi che faccia? Devo chiedere a Raven di perdonarti?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//(sorride) Non Ë una cattiva idea.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hi_Raven_07_01");//(sorride) Non √® una cattiva idea.
 	B_Say_Patrick_Plan();
 	Info_ClearChoices (DIA_Addon_Patrick_Hi);
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Addon_Patrick_Killer   (C_INFO)
 	condition   = DIA_Addon_Patrick_Killer_Condition;
 	information = DIA_Addon_Patrick_Killer_Info;
 	permanent   = FALSE;
-	description = "La guardia Ë morta. Ora potete andare.";
+	description = "La guardia √® morta. Ora potete andare.";
 };
 FUNC INT DIA_Addon_Patrick_Killer_Condition()
 {	
@@ -164,8 +164,8 @@ FUNC INT DIA_Addon_Patrick_Killer_Condition()
 };
 FUNC VOID DIA_Addon_Patrick_Killer_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//La guardia Ë morta. Ora potete andare.
-	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//E cosa accadr‡ quando avremo lasciato la miniera? Le altre guardie ci massacreranno. No, Ë troppo rischioso.
+	AI_Output (other, self, "DIA_Addon_Patrick_Killer_15_00");//La guardia √® morta. Ora potete andare.
+	AI_Output (self, other, "DIA_Addon_Patrick_Killer_07_01");//E cosa accadr√† quando avremo lasciato la miniera? Le altre guardie ci massacreranno. No, √® troppo rischioso.
 };
 //---------------------------------------------------------------------
 //	Hoehle
@@ -189,7 +189,7 @@ FUNC INT DIA_Addon_Patrick_Hoehle_Condition()
 FUNC VOID DIA_Addon_Patrick_Hoehle_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Patrick_Hoehle_15_00");//Non volete andarvene?
-	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//Certo che sÏ. Stiamo solo aspettando il momento giusto.
+	AI_Output (self, other, "DIA_Addon_Patrick_Hoehle_07_01");//Certo che s√¨. Stiamo solo aspettando il momento giusto.
 };
 
 

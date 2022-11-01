@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchst‰nder in der Magierbibliothek
+//				Weitere Buchst√§nder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -200,7 +200,7 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -260,7 +260,7 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -329,7 +329,7 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -390,13 +390,13 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 		
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des f¸nften Kreises und ihre Ingredenzien
+//				Runen des f√ºnften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {
@@ -448,7 +448,7 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -519,7 +519,7 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Il creatore deve conoscere la formula dell'incantesimo, deve possedere una pietra runica vuota e una pergamena dell'incantesimo desiderato."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr‡ mettersi al lavoro su un tavolo runico."					);
+					Doc_PrintLines	( nDocID,  1, "Solo quando questo requisiti saranno raggiunti potr√† mettersi al lavoro su un tavolo runico."					);
 					Doc_Show		( nDocID );
 		
 	};

@@ -88,7 +88,7 @@ func void DIA_Attila_Hallo_Info ()
 FUNC VOID DIA_Attila_Hallo_Wer()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //Chi sei?
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Mi chiamo Attila... Ma è così importante il mio nome? I nostri nomi non hanno significato.
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Mi chiamo Attila... Ma Ã¨ cosÃ¬ importante il mio nome? I nostri nomi non hanno significato.
 	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //Dovresti saperlo bene, straniero (ride silenziosamente).
 	
 	Knows_Attila_Wer = TRUE;
@@ -103,7 +103,7 @@ FUNC VOID DIA_Attila_Hallo_Wer()
 FUNC VOID DIA_Attila_Hallo_Was()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Was_15_00"); //Cosa vuoi da me?
-	AI_Output (self, other, "DIA_Attila_Hallo_Was_09_01"); //Sono qui per spiegarti un paio di cose. Dopodiché, ti ucciderò.
+	AI_Output (self, other, "DIA_Attila_Hallo_Was_09_01"); //Sono qui per spiegarti un paio di cose. DopodichÃ©, ti ucciderÃ².
 	Knows_Attila_Was = TRUE;
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
@@ -122,56 +122,56 @@ FUNC VOID DIA_Attila_Hallo_Theater()
 	Info_ClearChoices 	(DIA_Attila_Hallo);
 	Info_AddChoice		(DIA_Attila_Hallo,"Sto andando via (FINE).",DIA_Attila_Hallo_Ende);
 	Info_AddChoice		(DIA_Attila_Hallo,"Chi ti paga per questo?",DIA_Attila_Hallo_Auftrag);
-	Info_AddChoice		(DIA_Attila_Hallo,"Perché vuoi uccidermi?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"PerchÃ© vuoi uccidermi?",DIA_Attila_Hallo_Warum);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Ende()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Ende_15_00"); //Sto per andarmene...
-	AI_Output (self, other, "DIA_Attila_Hallo_Ende_09_01"); //Mi dispiace... Ma non posso permetterlo. Rassegnati, è ora di morire.
+	AI_Output (self, other, "DIA_Attila_Hallo_Ende_09_01"); //Mi dispiace... Ma non posso permetterlo. Rassegnati, Ã¨ ora di morire.
 	AI_DrawWeapon (self);
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
 	Info_AddChoice		(DIA_Attila_Hallo,"Chi ti paga per questo?",DIA_Attila_Hallo_Auftrag);
-	Info_AddChoice		(DIA_Attila_Hallo,"Perché vuoi uccidermi?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"PerchÃ© vuoi uccidermi?",DIA_Attila_Hallo_Warum);
 };
 FUNC VOID DIA_Attila_Hallo_Auftrag()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Auftrag_15_00"); //Chi ti paga per questo?
 	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_01"); //Ai miei datori di lavoro non piace apparire e nemmeno a me.
-	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_02"); //Una condizione del contratto è che io non devo nominarli o dire dove risiedono.
+	AI_Output (self, other, "DIA_Attila_Hallo_Auftrag_09_02"); //Una condizione del contratto Ã¨ che io non devo nominarli o dire dove risiedono.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Perché vuoi uccidermi?",DIA_Attila_Hallo_Warum);
+	Info_AddChoice		(DIA_Attila_Hallo,"PerchÃ© vuoi uccidermi?",DIA_Attila_Hallo_Warum);
 };
 FUNC VOID DIA_Attila_Hallo_Warum()
 {
-	AI_Output (other, self, "DIA_Attila_Hallo_Warum_15_00"); //Perché vuoi uccidermi?
+	AI_Output (other, self, "DIA_Attila_Hallo_Warum_15_00"); //PerchÃ© vuoi uccidermi?
 	
 	if (Betrayal_Halvor == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_01"); //Hai fatto la spia su Halvor. Ora è in galera. Questo non faceva parte del piano.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_01"); //Hai fatto la spia su Halvor. Ora Ã¨ in galera. Questo non faceva parte del piano.
 	}; 
 	if (Rengaru_InKnast == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_02"); //Hai venduto Rengaru alla città. È solo un povero ladruncolo, ma non avresti dovuto farlo.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_02"); //Hai venduto Rengaru alla cittÃ . Ãˆ solo un povero ladruncolo, ma non avresti dovuto farlo.
 	};
 	if (Nagur_Ausgeliefert == TRUE)
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_03"); //Nagur è dietro le sbarre a causa della tua interferenza. Un errore imperdonabile, come dicono tutti.
+		AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_03"); //Nagur Ã¨ dietro le sbarre a causa della tua interferenza. Un errore imperdonabile, come dicono tutti.
 	};
 	
 	AI_Output (self, other, "DIA_Attila_Hallo_Warum_09_04"); //I miei lavoratori non sono proprio felici della faccenda. Per prevenirti dal commettere un altro errore, hanno mandato me.
 	
 	Info_ClearChoices 	(DIA_Attila_Hallo);
-	Info_AddChoice		(DIA_Attila_Hallo,"Posso darti dell’oro...",DIA_Attila_Hallo_Gold);
+	Info_AddChoice		(DIA_Attila_Hallo,"Posso darti dellâ€™oro...",DIA_Attila_Hallo_Gold);
 	Info_AddChoice		(DIA_Attila_Hallo,"Lascia che sfoderi almeno la mia arma.",DIA_Attila_Hallo_Attacke);
 	
 };
 FUNC VOID DIA_Attila_Hallo_Gold()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Gold_15_00"); //Posso darti oro, un sacco di oro.
-	AI_Output (self, other, "DIA_Attila_Hallo_Gold_09_01"); //Inutile. Non è per questo che sono venuto. L'unico prezzo che pagherai è la tua vita. Adesso.
+	AI_Output (self, other, "DIA_Attila_Hallo_Gold_09_01"); //Inutile. Non Ã¨ per questo che sono venuto. L'unico prezzo che pagherai Ã¨ la tua vita. Adesso.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 	
@@ -187,14 +187,14 @@ FUNC VOID DIA_Attila_Hallo_Attacke()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_02"); //Ma se sei disarmato... Non ti è rimasto molto tempo, straniero. La morte ti attende.
+		AI_Output (self, other, "DIA_Attila_Hallo_Attacke_09_02"); //Ma se sei disarmato... Non ti Ã¨ rimasto molto tempo, straniero. La morte ti attende.
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_NONE, 2);	
 	};
 	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Willkommen Schlüssel für die Diebesgilde 
+//	Info Willkommen SchlÃ¼ssel fÃ¼r die Diebesgilde 
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Willkommen  	(C_INFO)
 {
@@ -220,9 +220,9 @@ func void DIA_Attila_Willkommen_Info ()
 	AI_Output (self, other, "DIA_Attila_Willkommen_09_00"); //Ah, finalmente. Ti stavo aspettando, straniero.
 	B_GivePlayerXP (XP_Attila_Friend);
 	AI_Output (other, self, "DIA_Attila_Willkommen_15_01"); //Chi sei e che cosa vuoi da me?
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_02"); //Questo non è importante. Ciò che conta invece è quello che hai fatto. Sei rimasto fedele, anche senza saperlo.
-	AI_Output (self, other, "DIA_Attila_Willkommen_09_03"); //Alcuni benefattori si sono accorti della tua lealtà e ti stanno offrendo una possibilità. Usala.
-	AI_Output (other, self, "DIA_Attila_Willkommen_15_04"); //Ehi, dimmi solo perché sei qui.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_02"); //Questo non Ã¨ importante. CiÃ² che conta invece Ã¨ quello che hai fatto. Sei rimasto fedele, anche senza saperlo.
+	AI_Output (self, other, "DIA_Attila_Willkommen_09_03"); //Alcuni benefattori si sono accorti della tua lealtÃ  e ti stanno offrendo una possibilitÃ . Usala.
+	AI_Output (other, self, "DIA_Attila_Willkommen_15_04"); //Ehi, dimmi solo perchÃ© sei qui.
 	AI_Output (self, other, "DIA_Attila_Willkommen_09_05"); //Ho un regalo per te. Tutto il resto dipende da te, straniero (ride silenziosamente).
 	
 	B_GiveInvItems (self,other,ItKe_ThiefGuildKey_MIS,1);
@@ -231,7 +231,7 @@ func void DIA_Attila_Willkommen_Info ()
 	Npc_ExchangeRoutine (self, "AFTER");
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Übergabe
+//	Info Nach Schluessel Ãœbergabe
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_NachSchluessel		(C_INFO)
 {
@@ -254,12 +254,12 @@ func int DIA_Attila_NachSchluessel_Condition ()
 
 func void DIA_Attila_NachSchluessel_Info ()
 {
-	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_00"); //Il mio compito è terminato, per ora.
-	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_01"); //Ma chi può dirlo, forse i nostri cammini si incroceranno di nuovo.
+	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_00"); //Il mio compito Ã¨ terminato, per ora.
+	AI_Output (self, other, "DIA_Attila_NachSchluessel_09_01"); //Ma chi puÃ² dirlo, forse i nostri cammini si incroceranno di nuovo.
 	AI_StopProcessInfos (self);	 
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Nach Schluessel Übergabe Wer bist du?
+//	Info Nach Schluessel Ãœbergabe Wer bist du?
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Attila_Wer		(C_INFO)
 {
@@ -282,7 +282,7 @@ func int DIA_Attila_Wer_Condition ()
 func void DIA_Attila_Wer_Info ()
 {
 	AI_Output (other, self, "DIA_Attila_Hallo_Wer_15_00"); //Chi sei?
-	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Mi chiamo Attila... Ma è così importante il mio nome? I nostri nomi non hanno significato.
+	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_01"); //Mi chiamo Attila... Ma Ã¨ cosÃ¬ importante il mio nome? I nostri nomi non hanno significato.
 	AI_Output (self, other, "DIA_Attila_Hallo_Wer_09_02"); //Dovresti saperlo bene, straniero (ride silenziosamente).
 	
 	AI_StopProcessInfos (self);

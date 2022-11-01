@@ -154,7 +154,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF für alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
+	INSTANCE  ItAm_Prot_Mage_01(C_ITEM) // Magie Schutz Amulett von Serpentes an KDF fÃ¼r alle Minenanteile (Mission -> MIS_Serpentes_MinenAnteil_KDF == LOG_SUCCESS)
 {
 	name 			=	NAME_Amulett;
 
@@ -197,7 +197,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 
 /******************************************************************************************/
 
-	INSTANCE  ItAm_Prot_Total_01(C_ITEM)//ItAm_AmulettOfDeath_Mis (alle + 30)  MAGIER_EXKLUSIV_AMULETT für den Endkampf des KDFs  (Kapitel 5)
+	INSTANCE  ItAm_Prot_Total_01(C_ITEM)//ItAm_AmulettOfDeath_Mis (alle + 30)  MAGIER_EXKLUSIV_AMULETT fÃ¼r den Endkampf des KDFs  (Kapitel 5)
 
 {
 	name 			=	NAME_Amulett;
@@ -254,7 +254,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Dex_01(C_Item)	//Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area für PAL	(Kapitel 3)
+	INSTANCE  ItAm_Dex_01(C_Item)	//Joly: von Dar an KDF und DJG vergeben ab Kapitel 4 \ Xardas_Secret-area fÃ¼r PAL	(Kapitel 3)
 {
 	name 			=	NAME_Amulett;
 
@@ -273,7 +273,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= "Amuleto dell'agilità";
+	description		= "Amuleto dell'agilitÃ ";
 	
 	TEXT[2]			= NAME_Bonus_Dex;
 	COUNT[2]		= Am_Dex;
@@ -341,7 +341,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 
 /******************************************************************************************/
 
-	INSTANCE  ItAm_Hp_01(C_Item)  //von Bennet dem Schmied an den PAL und dem KDF        (Kapitel 3)\Xardas_Secret-area für DJG	(Kapitel 3)
+	INSTANCE  ItAm_Hp_01(C_Item)  //von Bennet dem Schmied an den PAL und dem KDF        (Kapitel 3)\Xardas_Secret-area fÃ¼r DJG	(Kapitel 3)
 {
 	name 			=	NAME_Amulett;
 
@@ -446,7 +446,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Dex_Strg_01(C_Item)	// wird dem PAL von Ulthar überreicht für die Reinigung der Schreine Kapitel 3\
+	INSTANCE  ItAm_Dex_Strg_01(C_Item)	// wird dem PAL von Ulthar Ã¼berreicht fÃ¼r die Reinigung der Schreine Kapitel 3\
 {
 	name 			=	"Amuleto del potere";
 
@@ -493,7 +493,7 @@ INSTANCE  ItAm_Prot_Fire_01(C_Item)
 	};
 
 /******************************************************************************************/
-	INSTANCE  ItAm_Hp_Mana_01 (C_Item)	//Xardas_Secret-area für KDF	(Kapitel 3)
+	INSTANCE  ItAm_Hp_Mana_01 (C_Item)	//Xardas_Secret-area fÃ¼r KDF	(Kapitel 3)
 {
 	name 			=	"Amuleto dell'illuminazione";
 

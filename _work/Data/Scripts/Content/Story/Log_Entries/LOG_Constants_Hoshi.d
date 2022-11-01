@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -14,14 +14,14 @@ const string TOPIC_Addon_RoastGrog		=	"Grog per il cuoco";
 const string TOPIC_Addon_BrandonBooze	=	"Un bicchierino per Brandon";
 const string TOPIC_Addon_MorganBeach	=	"La spiaggia a nord";
 const string TOPIC_Addon_AngusHank		=	"Angus e Hank";
-const string TOPIC_Addon_SkipsGrog		=	"Skip è a secco";
+const string TOPIC_Addon_SkipsGrog		=	"Skip Ã¨ a secco";
 const string TOPIC_Addon_KillJuan		= 	"L'assassino di Angus e Hank";
 const string TOPIC_Addon_ClearCanyon	=	"Caccia al rasoio";
 const string TOPIC_Addon_ScoutBandits	=	"Spiare i briganti";
 const string TOPIC_Addon_MalcomsStunt	=	"Malcom";
 
 
-//-------- Addon Händler -----------
+//-------- Addon HÃ¤ndler -----------
 
 const string Topic_Addon_PIR_Trader  = "Commerciare con i pirati";	
 
@@ -32,21 +32,21 @@ const string Topic_Addon_PIR_Teacher = "Imparare dai pirati";
 
 //Inhalte:
 
-const string Log_Text_Addon_ScoutBandits	=	"I briganti hanno una miniera d'oro Ecco perché sono qui.";
+const string Log_Text_Addon_ScoutBandits	=	"I briganti hanno una miniera d'oro Ecco perchÃ© sono qui.";
 
 //Teacher
 
-const string Log_Text_Addon_HenryTeach		=	"Henry può mostrarmi l'uso delle armi a due mani e le balestre.";
-const string Log_Text_Addon_MorganTeach		=	"Morgan può mostrarmi come si combatte con armi a una mano.";
-const string Log_Text_Addon_BrandonTeach	=	"Brandon mi può mostrare come diventare più forte e più abile.";
+const string Log_Text_Addon_HenryTeach		=	"Henry puÃ² mostrarmi l'uso delle armi a due mani e le balestre.";
+const string Log_Text_Addon_MorganTeach		=	"Morgan puÃ² mostrarmi come si combatte con armi a una mano.";
+const string Log_Text_Addon_BrandonTeach	=	"Brandon mi puÃ² mostrare come diventare piÃ¹ forte e piÃ¹ abile.";
 
 //Trader
 
-const string Log_Text_Addon_GarettTrade	=	"Garret è il pirata commerciante. Ha di tutto, tranne l'alcol.";
+const string Log_Text_Addon_GarettTrade	=	"Garret Ã¨ il pirata commerciante. Ha di tutto, tranne l'alcol.";
 
 const string Log_Text_Addon_SamuelTrade	=	"Samuel distilla di nascosto e vende liquori di tutti i tipi.";
 
-//	Sprüche
+//	SprÃ¼che
 
 const string Log_Text_Addon_TalentRune_Whirlwind	="Ingredienti per la runa 'Vortice': 1 ala";
 const string Log_Text_Addon_TalentRune_Icelance		="Runa 'Gelolancia': 1 quarzo del ghiacciaio";
@@ -63,10 +63,10 @@ const string Log_Text_Addon_TalentRune_Thunderstorm	="Per la runa 'Tempesta': 1 
 
 // ------ Kapitel 2 ------
 // ------ Kapitel 3 ------
-const string TOPIC_RescueBennet		=	"Bennet è in carcere";
+const string TOPIC_RescueBennet		=	"Bennet Ã¨ in carcere";
 const string Topic_Ship				=	"Mi serve una nave.";
 const string Topic_Crew				=	"Non si viaggia senza equipaggio"; 
-const string Topic_Captain			=	"Chi sarà il mio capitano?"; 	
+const string Topic_Captain			=	"Chi sarÃ  il mio capitano?"; 	
 
 // ------ Kapitel 4 ------
 // ------ Kapitel 5 ------

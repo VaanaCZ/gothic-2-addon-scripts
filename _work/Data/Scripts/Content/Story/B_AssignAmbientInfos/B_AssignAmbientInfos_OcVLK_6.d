@@ -29,7 +29,7 @@ INSTANCE DIA_OCVLK_6_PEOPLE(C_INFO)
 	condition	= DIA_OCVLK_6_PEOPLE_Condition;
 	information	= DIA_OCVLK_6_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
@@ -39,8 +39,8 @@ FUNC INT DIA_OCVLK_6_PEOPLE_Condition()
 
 FUNC VOID DIA_OCVLK_6_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //Chi è il capo, qui?
-	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond ha il comando dell'intero forte, o di ciò che ne rimane.
+	AI_Output (other, self, "DIA_OCVLK_6_PEOPLE_15_00"); //Chi Ã¨ il capo, qui?
+	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_01"); //Garond ha il comando dell'intero forte, o di ciÃ² che ne rimane.
 	AI_Output (self, other, "DIA_OCVLK_6_PEOPLE_06_02"); //Ma egli non si occupa personalmente di niente, tranne quando uno dei suoi uomini si trova nei guai.
 	if (Npc_IsDead (Engor) == FALSE)
 	{
@@ -72,10 +72,10 @@ FUNC INT DIA_OCVLK_6_LOCATION_Condition()
 FUNC VOID DIA_OCVLK_6_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_OCVLK_6_LOCATION_15_00"); //Che mi dici della situazione nella Valle delle Miniere?
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Sono preoccupato per la palizzata degli orchi. Non voglio nemmeno sapere cosa nascondano lì dietro.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_01"); //Sono preoccupato per la palizzata degli orchi. Non voglio nemmeno sapere cosa nascondano lÃ¬ dietro.
 	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_02"); //All'inizio erano in pochi. Poi hanno costruito quel muro e, una notte, hanno portato le macchine d'assedio.
 	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_03"); //Siamo stati fortunati e siamo riusciti a respingere l'attacco.
-	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Dietro quelle mura c'è il mare. Se arriveranno altre navi cariche di orchi, saremo spacciati.
+	AI_Output (self, other, "DIA_OCVLK_6_LOCATION_06_04"); //Dietro quelle mura c'Ã¨ il mare. Se arriveranno altre navi cariche di orchi, saremo spacciati.
 };
 
 // *************************************************************************
@@ -99,8 +99,8 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Arruolati nell'esercito e farai una bella vita, così dicevano. E ora guarda cosa sta succedendo.
-		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Ora è punibile con la pena di morte anche solo avvicinarsi alle provviste di cibo. Sembra che Garond tema che qualcuno rubi il cibo e se la svigni. (risata amara)
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_01"); //Arruolati nell'esercito e farai una bella vita, cosÃ¬ dicevano. E ora guarda cosa sta succedendo.
+		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_02"); //Ora Ã¨ punibile con la pena di morte anche solo avvicinarsi alle provviste di cibo. Sembra che Garond tema che qualcuno rubi il cibo e se la svigni. (risata amara)
 		AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_03"); //Moriremo tutti di fame qui se non ci uccidono prima quei dannati draghi!
 	};
 	
@@ -120,7 +120,7 @@ FUNC VOID DIA_OCVLK_6_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_06"); //Questo maledetto metallo. Dovremmo gettare tutte le nostre scorte giù dai bastioni. Forse così gli orchi ci lasceranno in pace.
+			AI_Output (self,other,"DIA_OCVLK_6_STANDARD_06_06"); //Questo maledetto metallo. Dovremmo gettare tutte le nostre scorte giÃ¹ dai bastioni. Forse cosÃ¬ gli orchi ci lasceranno in pace.
 		}
 		else
 		{

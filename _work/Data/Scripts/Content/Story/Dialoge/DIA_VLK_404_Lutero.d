@@ -54,7 +54,7 @@ FUNC INT DIA_Lutero_Hallo_Condition()
 };
 FUNC VOID DIA_Lutero_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Il mio nome Ë Lutero. Compro e vendo ogni genere di cose.
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Il mio nome √® Lutero. Compro e vendo ogni genere di cose.
 	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Quali mercanzie hai da offrirmi?
 	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Beh, specialmente cose rare e insolite. Finora sono sempre riuscito a soddisfare le richieste dei miei clienti.
 	
@@ -119,11 +119,11 @@ FUNC INT DIA_Lutero_Snapper_Condition()
 FUNC VOID DIA_Lutero_Snapper_Info()
 {	
 	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Stai cercando qualcosa in particolare?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //SÏ, per il mio attuale incarico mi servono gli artigli di uno squartatore.
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Ma non dei vecchi artigli normali. Dovrebbe trattarsi di qualcosa di speciale: gli artigli di una bestia possente che ha gi‡ ucciso molti uomini, o qualcosa del genere.
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //S√¨, per il mio attuale incarico mi servono gli artigli di uno squartatore.
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Ma non dei vecchi artigli normali. Dovrebbe trattarsi di qualcosa di speciale: gli artigli di una bestia possente che ha gi√† ucciso molti uomini, o qualcosa del genere.
 	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Dove posso trovare degli squartatori?
 	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Ce ne sono alcuni su quest'isola, ma la maggior parte di loro vive nella Valle delle Miniere.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //E cosa ci guadagnerÚ?
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //E cosa ci guadagner√≤?
 	
 	if (other.guild == GIL_KDF)
 	{
@@ -131,9 +131,9 @@ FUNC VOID DIA_Lutero_Snapper_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Potrei trovarti un anello dell'invincibilit‡.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Potrei trovarti un anello dell'invincibilit√†.
 	};
-	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //VedrÚ cosa posso fare.
+	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Vedr√≤ cosa posso fare.
 	
 	Log_CreateTopic (Topic_Lutero,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lutero,LOG_RUNNING);
@@ -167,14 +167,14 @@ FUNC VOID DIA_Lutero_Kralle_Info()
 	AI_Output (other ,self,"DIA_Lutero_Kralle_15_00"); //Ho degli speciali artigli di squartatore per te.
 	Lutero_Krallen = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Il mio cliente sar‡ felice di saperlo.
+	AI_Output (self ,other,"DIA_Lutero_Kralle_13_01"); //Il mio cliente sar√† felice di saperlo.
 	B_GiveInvItems (other, self, ItAt_ClawLeader,1);
 	
 	if (other.guild == GIL_KDF)
 	{
 		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Non ho la pietra runica qui con me, ma so dove potresti trovarla.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //Sulla strada che collega la citt‡ alla locanda, passerai sotto un ponte.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //LÏ, in una caverna, un mio amico ha depositato una pietra runica dentro un forziere. Eccoti la chiave.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //Sulla strada che collega la citt√† alla locanda, passerai sotto un ponte.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //L√¨, in una caverna, un mio amico ha depositato una pietra runica dentro un forziere. Eccoti la chiave.
 		B_GiveInvItems (self, other, ITKE_RUNE_MIS,1); 
 	}
 	else

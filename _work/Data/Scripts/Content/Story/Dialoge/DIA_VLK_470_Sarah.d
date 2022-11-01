@@ -103,10 +103,10 @@ func int DIA_Sarah_HALLO_Condition ()
 func void DIA_Sarah_HALLO_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_HALLO_15_00"); //Come vanno gli affari?
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Quando arrivarono i paladini, pensai che fosse una buona opportunità per fare affari.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Ma hanno incaricato Harad di forgiare le loro armi, quindi né io né Hakon riusciamo a guadagnare qualcosa.
-	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Inoltre, i contadini non ci forniscono più cibo e tutti i prezzi si sono impennati.
-	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //L'unica piccola consolazione è che i paladini stanno pagando il conto del mio motel.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_01"); //Quando arrivarono i paladini, pensai che fosse una buona opportunitÃ  per fare affari.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_02"); //Ma hanno incaricato Harad di forgiare le loro armi, quindi nÃ© io nÃ© Hakon riusciamo a guadagnare qualcosa.
+	AI_Output (self, other, "DIA_Sarah_HALLO_16_03"); //Inoltre, i contadini non ci forniscono piÃ¹ cibo e tutti i prezzi si sono impennati.
+	AI_Output (self, other, "DIA_Sarah_Add_16_00"); //L'unica piccola consolazione Ã¨ che i paladini stanno pagando il conto del mio motel.
 
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Sarah vende armi al mercato.");	
@@ -135,10 +135,10 @@ func void DIA_Sarah_Bauern_Info ()
 {
 	AI_Output (other, self, "DIA_Sarah_Bauern_15_00"); //Che problemi ci sono con i contadini?
 	AI_Output (self, other, "DIA_Sarah_Bauern_16_01"); //Si rifiutano di distribuire i loro beni.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Ora che non attraccano più navi, la città dipende interamente dalle provviste fornite dai contadini, naturalmente.
-	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //E Onar, l'agricoltore più importante, ha assunto dei mercenari per proteggere la sua fattoria dalla guardia cittadina. Altrimenti, si servirebbero da soli.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_02"); //Ora che non attraccano piÃ¹ navi, la cittÃ  dipende interamente dalle provviste fornite dai contadini, naturalmente.
+	AI_Output (self, other, "DIA_Sarah_Bauern_16_03"); //E Onar, l'agricoltore piÃ¹ importante, ha assunto dei mercenari per proteggere la sua fattoria dalla guardia cittadina. Altrimenti, si servirebbero da soli.
 	AI_Output (self, other, "DIA_Sarah_Add_16_01"); //Ma i mercenari non si limitano a badare alla fattoria di Onar.
-	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Hanno raggiunto anche le fattorie più piccole fuori città e hanno minacciato i contadini.
+	AI_Output (self, other, "DIA_Sarah_Add_16_02"); //Hanno raggiunto anche le fattorie piÃ¹ piccole fuori cittÃ  e hanno minacciato i contadini.
 	AI_Output (self, other, "DIA_Sarah_Add_16_03"); //Li ho visti mentre passavano dalla fattoria di Akil. Non vorrei essere nei suoi panni, ora.
 };
 
@@ -167,7 +167,7 @@ func void DIA_Sarah_AkilsHof_Info ()
 	AI_Output (other, self, "DIA_Sarah_AkilsHof_15_00"); //Dove si trova la fattoria di Akil?
 	AI_Output (self, other, "DIA_Sarah_Add_16_04"); //Se esci dal cancello di est e segui la strada a destra, arriverai a una scalinata.
 	AI_Output (self, other, "DIA_Sarah_Add_16_05"); //Conduce alla fattoria di Akil.
-	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Ma non ci andrei adesso, i mercenari sono sicuramente ancora lì.
+	AI_Output (self, other, "DIA_Sarah_Add_16_06"); //Ma non ci andrei adesso, i mercenari sono sicuramente ancora lÃ¬.
 };
 
 
@@ -226,7 +226,7 @@ func int DIA_Sarah_IMKNAST_Condition ()
 func void DIA_Sarah_IMKNAST_Info ()
 {
 	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_00"); //Tu! Con che coraggio ti fai vedere da queste parti! Non ho prove, ma sono pronta a scommettere che c'entri qualcosa in questo sporco affare.
-	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //È colpa tua se sono qui. Tua e di quell'altro maledetto di Canthar. Che Innos possa punirti!
+	AI_Output (self, other, "DIA_Sarah_IMKNAST_16_01"); //Ãˆ colpa tua se sono qui. Tua e di quell'altro maledetto di Canthar. Che Innos possa punirti!
 	
 	AI_StopProcessInfos (self);
 };
@@ -241,7 +241,7 @@ instance DIA_Sarah_Success		(C_INFO)
 	condition	 = 	DIA_Sarah_Success_Condition;
 	information	 = 	DIA_Sarah_Success_Info;
 	permanent 	 =  FALSE;
-	description	 = 	"Canthar stava cercando di fregarti…";
+	description	 = 	"Canthar stava cercando di fregartiâ€¦";
 };
 
 func int DIA_Sarah_Success_Condition ()
@@ -254,8 +254,8 @@ func int DIA_Sarah_Success_Condition ()
 };
 func void DIA_Sarah_Success_Info ()
 {
-	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar voleva fregarti per prendersi la bancarella per sé. Ma l'ho denunciato alla guardia cittadina.
-	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Allora ti sei fatto nemico un uomo pericoloso. Conosco quel bastardo da parecchio tempo e ha sempre voluto il mio posto per sé.
+	AI_Output (other, self, "DIA_Sarah_Success_15_00"); //Canthar voleva fregarti per prendersi la bancarella per sÃ©. Ma l'ho denunciato alla guardia cittadina.
+	AI_Output (self, other, "DIA_Sarah_Success_16_01"); //Allora ti sei fatto nemico un uomo pericoloso. Conosco quel bastardo da parecchio tempo e ha sempre voluto il mio posto per sÃ©.
 	AI_Output (self, other, "DIA_Sarah_Success_16_02"); //Prendi quest'arma come segno della mia gratitudine.
 	
 	B_GivePlayerXP (XP_CantharImKnast);

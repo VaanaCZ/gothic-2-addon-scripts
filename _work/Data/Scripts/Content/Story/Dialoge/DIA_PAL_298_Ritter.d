@@ -42,7 +42,7 @@ func void DIA_PAL_298_Pass_Info ()
 	AI_Output (other, self, "DIA_PAL_298_Pass_15_00");//Dove conduce questa via?
 	AI_Output (self, other, "DIA_PAL_298_Pass_09_01");//Oltre il cancello si trova il passo per la Valle delle Miniere.
 	AI_Output (self, other, "DIA_PAL_298_Pass_09_02");//Da questo lato ci siamo noi, dall'altro si sono trincerati alcuni orchi.
-	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//È meglio se torni indietro, non puoi passare qui.
+	AI_Output (self, other, "DIA_PAL_298_Pass_09_03");//Ãˆ meglio se torni indietro, non puoi passare qui.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TRESPASS
@@ -66,7 +66,7 @@ func int DIA_PAL_298_TRESPASS_Condition ()
 func void DIA_PAL_298_TRESPASS_Info ()
 {
 	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_00");//Sei sicuro di voler entrare? Ho paura che non andrai molto lontano: ci sono gli orchi dall'altra parte.
-	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Se esiste una via per la Valle delle Miniere, la troverò.
+	AI_Output (other, self, "DIA_PAL_298_TRESPASS_15_01");//Se esiste una via per la Valle delle Miniere, la troverÃ².
 	AI_Output (self, other, "DIA_PAL_298_TRESPASS_09_02");//Bene, allora vai. Vai con Innos.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -92,7 +92,7 @@ func int DIA_PAL_298_Perm1_Condition ()
 func void DIA_PAL_298_Perm1_Info ()
 {
 	AI_Output (other, self, "DIA_PAL_298_Perm1_15_00");//E se decidessi di andare a mio rischio e pericolo?
-	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Allora morirai. È per questo che siamo qui. Per far sì che non ti vengano idee stupide come questa.
+	AI_Output (self, other, "DIA_PAL_298_Perm1_09_01");//Allora morirai. Ãˆ per questo che siamo qui. Per far sÃ¬ che non ti vengano idee stupide come questa.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Perm 

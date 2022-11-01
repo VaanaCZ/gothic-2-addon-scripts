@@ -42,7 +42,7 @@ func void DIA_328_Miliz_Hi_Info ()
 	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Chi sei?
 	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Questi non sono affari tuoi! Io sono il capo qui, va bene?
 	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Il capo? E di cosa? Di questi forzieri?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Ehi, il magazzino Ë sotto la mia responsabilit‡, capito? Vattene dunque, altrimenti sarÚ costretto a usare le maniere forti.
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Ehi, il magazzino √® sotto la mia responsabilit√†, capito? Vattene dunque, altrimenti sar√≤ costretto a usare le maniere forti.
 	
 	AI_StopProcessInfos (self);
 	
@@ -70,7 +70,7 @@ func int DIA_328_Miliz_Kill_Condition ()
 func void DIA_328_Miliz_Kill_Info ()
 {
 	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Ehi, sei ancora qui. Non ti avevo detto di andartene?
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Ora ti farÚ vedere chi Ë che comanda qui!
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Ora ti far√≤ vedere chi √® che comanda qui!
 	
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,20);

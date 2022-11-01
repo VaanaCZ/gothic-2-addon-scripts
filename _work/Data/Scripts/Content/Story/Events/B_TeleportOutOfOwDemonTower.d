@@ -1,5 +1,5 @@
 // ****************************
-// B_TeleportOutOfOWDemonTower       (OWDemonTower: wird aufgerufen, wenn PC den Buchst‰nder benutzt den Xardas in Gothic1 benutzt hat, um aus OWDemonTower raus zu kommen!
+// B_TeleportOutOfOWDemonTower       (OWDemonTower: wird aufgerufen, wenn PC den Buchst√§nder benutzt den Xardas in Gothic1 benutzt hat, um aus OWDemonTower raus zu kommen!
 // ****************************
 
 func void B_TeleportOutOfOWDemonTower_S0 ()

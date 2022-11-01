@@ -7,7 +7,7 @@ func void B_BIFF_VERARSCHEN ()
 	AI_Output			(self, other, "DIA_Biff_ARBEITEN_lebenlassen_07_01"); //Non ho bisogno di essere imbrogliato da te.
 };
 
-func void B_BiffsAnteil_Berechnung() //Joly: Wieviel Kohle muﬂ der SC Biff nun geben:
+func void B_BiffsAnteil_Berechnung() //Joly: Wieviel Kohle mu√ü der SC Biff nun geben:
 {	
 	var int momentanKohle;
 	var int UeberschussKohle;
@@ -26,7 +26,7 @@ func void B_BiffsAnteil_PrintScreen ()
 	BiffsAnteilText	= ConcatStrings(BiffsAnteilText_Teil, PRINT_BiffGold);	
 	AI_PrintScreen	(BiffsAnteilText, -1, 45, FONT_ScreenSmall, 4);
 };
-func void B_Biff_SetRefuseTalk ()	//Joly: Biffs Geld eintreiberei kommt beim HalbeHalbe Deal nicht so h‰ufig.
+func void B_Biff_SetRefuseTalk ()	//Joly: Biffs Geld eintreiberei kommt beim HalbeHalbe Deal nicht so h√§ufig.
 {
 	if (DJG_Biff_HalbeHalbe == TRUE)
 	{
@@ -81,7 +81,7 @@ func int DIA_Biff_HALLO_Condition ()
 func void DIA_Biff_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Biff_HALLO_15_00"); //Cosa stai facendo, qui?
-	AI_Output			(self, other, "DIA_Biff_HALLO_07_01"); //Questa Ë davvero la domanda pi˘ stupida che abbia mai sentito da tempo. Secondo te cosa ti sembra che faccia?
+	AI_Output			(self, other, "DIA_Biff_HALLO_07_01"); //Questa √® davvero la domanda pi√π stupida che abbia mai sentito da tempo. Secondo te cosa ti sembra che faccia?
 
 	Info_AddChoice	(DIA_Biff_HALLO, "La tua faccia da idiota non mi dice niente.", DIA_Biff_HALLO_spott );
 	Info_AddChoice	(DIA_Biff_HALLO, "Non ne ho idea.", DIA_Biff_HALLO_keineAhnung );
@@ -96,8 +96,8 @@ func void DIA_Biff_HALLO_doof ()
 
 func void DIA_Biff_HALLO_spott ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_spott_15_00"); //Dalla faccia da idiota che stai facendo non riesco a capire nulla. Ecco perchÈ te l'ho chiesto.
-	AI_Output			(self, other, "DIA_Biff_HALLO_spott_07_01"); //Tu parli troppo per i miei gusti. » giunta l'ora che qualcuno ti chiuda quella boccaccia.
+	AI_Output			(other, self, "DIA_Biff_HALLO_spott_15_00"); //Dalla faccia da idiota che stai facendo non riesco a capire nulla. Ecco perch√© te l'ho chiesto.
+	AI_Output			(self, other, "DIA_Biff_HALLO_spott_07_01"); //Tu parli troppo per i miei gusti. √à giunta l'ora che qualcuno ti chiuda quella boccaccia.
 
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
@@ -114,7 +114,7 @@ func void DIA_Biff_HALLO_keineAhnung ()
 func void DIA_Biff_HALLO_keineAhnung_was ()
 {
 	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_15_00"); //Cosa ti aspetti che accada?
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_07_01"); //Oh, cielo, tu non sei certo la persona pi˘ sveglia che ci sia in giro. Se l'avessi saputo non avrei dovuto aspettare.
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_07_01"); //Oh, cielo, tu non sei certo la persona pi√π sveglia che ci sia in giro. Se l'avessi saputo non avrei dovuto aspettare.
 
 	Info_AddChoice	(DIA_Biff_HALLO, "E cosa potrebbe accadere, allora?", DIA_Biff_HALLO_keineAhnung_was_was2 );
 
@@ -122,23 +122,23 @@ func void DIA_Biff_HALLO_keineAhnung_was ()
 func void DIA_Biff_HALLO_keineAhnung_was_was2 ()
 {
 	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_15_00"); //E cosa potrebbe accadere, allora?
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_07_01"); //Mi stai dando sui nervi. Ascolta, non mi importa di cosa accadr‡, basta che accada.
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_07_01"); //Mi stai dando sui nervi. Ascolta, non mi importa di cosa accadr√†, basta che accada.
 
-	Info_AddChoice	(DIA_Biff_HALLO, "PerchÈ non qualcosa, allora?", DIA_Biff_HALLO_keineAhnung_was_was2_was3 );
+	Info_AddChoice	(DIA_Biff_HALLO, "Perch√© non qualcosa, allora?", DIA_Biff_HALLO_keineAhnung_was_was2_was3 );
 
 };
 func void DIA_Biff_HALLO_keineAhnung_was_was2_was3 ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_15_00"); //PerchÈ non fai qualcosa, allora?
-	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_07_01"); //Se non la smetti subito di fare domande stupide, ti tapperÚ quella boccaccia.
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_15_00"); //Perch√© non fai qualcosa, allora?
+	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_07_01"); //Se non la smetti subito di fare domande stupide, ti tapper√≤ quella boccaccia.
 
 
-	Info_AddChoice	(DIA_Biff_HALLO, "Se rimani qui ad aspettare, non succeder‡ mai nulla!", DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4 );
+	Info_AddChoice	(DIA_Biff_HALLO, "Se rimani qui ad aspettare, non succeder√† mai nulla!", DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4 );
 
 };
 func void DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4 ()
 {
-	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4_15_00"); //Se rimani qui ad aspettare, non succeder‡ mai nulla!
+	AI_Output			(other, self, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4_15_00"); //Se rimani qui ad aspettare, non succeder√† mai nulla!
 	AI_Output			(self, other, "DIA_Biff_HALLO_keineAhnung_was_was2_was3_was4_07_01"); //Esatto!
 
 	AI_StopProcessInfos (self);
@@ -171,7 +171,7 @@ func int DIA_Biff_WASHIERIMTAL_Condition ()
 func void DIA_Biff_WASHIERIMTAL_Info ()
 {
 	AI_Output			(other, self, "DIA_Biff_WASHIERIMTAL_15_00"); //Cosa speri di trovare qui nella Valle delle Miniere?
-	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_01"); //Onore e oro. Cos'altro? Quando avrÚ finito con il drago, nuoterÚ nell'oro.
+	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_01"); //Onore e oro. Cos'altro? Quando avr√≤ finito con il drago, nuoter√≤ nell'oro.
 	AI_Output			(self, other, "DIA_Biff_WASHIERIMTAL_07_02"); //Abbastanza da trascorrere il resto della mia vita frequentando ogni taverna e bordello del paese.
 
 	Info_AddChoice	(DIA_Biff_WASHIERIMTAL, "Bene, allora ti auguro buona fortuna.", DIA_Biff_WASHIERIMTAL_vielglueck );
@@ -221,31 +221,31 @@ func void DIA_Biff_ARBEITEN_Info ()
 {
 	AI_Output			(other, self, "DIA_Biff_ARBEITEN_15_00"); //Ti piacerebbe lavorare per me da adesso in poi?
 	
-	B_LogEntry (TOPIC_Dragonhunter,"Biff il cacciatore di draghi Ë il classico mercenario. Se lo pago, combatter‡ per me."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Biff il cacciatore di draghi √® il classico mercenario. Se lo pago, combatter√† per me."); 
 
 	if (DJG_BiffParty_nomore >= 6) //Joly: Biff hat bei 3 die Schnauze voll vom SC
 	{
-		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_01"); //Ci abbiamo gi‡ provato una volta e non Ë andata molto bene. Grazie, ma non mi interessa.
+		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_01"); //Ci abbiamo gi√† provato una volta e non √® andata molto bene. Grazie, ma non mi interessa.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
-		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_02"); //Mmmh. PerchÈ no? Quanto mi dai?
+		AI_Output			(self, other, "DIA_Biff_ARBEITEN_07_02"); //Mmmh. Perch√© no? Quanto mi dai?
 	};
 	Info_ClearChoices	(DIA_Biff_ARBEITEN);
 	
 	Info_AddChoice	(DIA_Biff_ARBEITEN, "Ritieniti fortunato, se ho deciso di lasciarti vivere.", DIA_Biff_ARBEITEN_lebenlassen );
-	Info_AddChoice	(DIA_Biff_ARBEITEN, "Avrai la met‡ del bottino.", DIA_Biff_ARBEITEN_HalbeHalbe );
-	Info_AddChoice	(DIA_Biff_ARBEITEN, "Ti pagherÚ 100 monete díoro per il momento.", DIA_Biff_ARBEITEN_100 );
+	Info_AddChoice	(DIA_Biff_ARBEITEN, "Avrai la met√† del bottino.", DIA_Biff_ARBEITEN_HalbeHalbe );
+	Info_AddChoice	(DIA_Biff_ARBEITEN, "Ti pagher√≤ 100 monete d‚Äôoro per il momento.", DIA_Biff_ARBEITEN_100 );
 };
 
 func void DIA_Biff_ARBEITEN_100 ()
 {
-	AI_Output			(other, self, "DIA_Biff_ARBEITEN_100_15_00"); //Ti pagherÚ 100 monete díoro per il momento.
+	AI_Output			(other, self, "DIA_Biff_ARBEITEN_100_15_00"); //Ti pagher√≤ 100 monete d‚Äôoro per il momento.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,100))
 		{	
-			AI_Output			(self, other, "DIA_Biff_ARBEITEN_100_07_01"); //D'accordo. » comunque un punto di partenza. Vai avanti tu. Io ti seguirÚ.
+			AI_Output			(self, other, "DIA_Biff_ARBEITEN_100_07_01"); //D'accordo. √à comunque un punto di partenza. Vai avanti tu. Io ti seguir√≤.
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"Follow");
 			B_Biff_SetRefuseTalk ();
@@ -263,7 +263,7 @@ func void DIA_Biff_ARBEITEN_100 ()
 
 func void DIA_Biff_ARBEITEN_HalbeHalbe ()
 {
-	AI_Output			(other, self, "DIA_Biff_ARBEITEN_HalbeHalbe_15_00"); //Avrai la met‡ del bottino.
+	AI_Output			(other, self, "DIA_Biff_ARBEITEN_HalbeHalbe_15_00"); //Avrai la met√† del bottino.
 	AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_01"); //Mi piace l'dea. Ma ti avverto, non cercare di fregarmi o te ne pentirai.
 	AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_02"); //E un'altra cosa. Non voglio armi o altra ferraglia che raccogli qui. A me interessa solo l'oro, capito?
 
@@ -281,7 +281,7 @@ func void DIA_Biff_ARBEITEN_HalbeHalbe ()
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_03"); //Ma che sto dicendo. Tu gi‡ sai tutto questo.
+		AI_Output			(self, other, "DIA_Biff_ARBEITEN_HalbeHalbe_07_03"); //Ma che sto dicendo. Tu gi√† sai tutto questo.
 	};
 };
 
@@ -312,7 +312,7 @@ func int DIA_Biff_GELDEINTREIBEN_Condition ()
 	if (DJG_Biff_SCGold < Npc_HasItems(hero,ItMi_Gold)-1)
 		&& ((Npc_GetBodyState(hero))!= BS_INVENTORY)				//Joly: wegen Truhen		 
 		&& ((Npc_GetBodyState(hero))!= BS_MOBINTERACT_INTERRUPT)
-		&& (((Npc_GetBodyState(hero))!= BS_STAND)||(BIFF_LABERT_GELDEINTREIBEN == TRUE))//Joly: wegen Pl¸ndern von NSC-Invs	
+		&& (((Npc_GetBodyState(hero))!= BS_STAND)||(BIFF_LABERT_GELDEINTREIBEN == TRUE))//Joly: wegen Pl√ºndern von NSC-Invs	
 		&& (((Npc_GetBodyState(hero))!= BS_ITEMINTERACT)||(BIFF_LABERT_GELDEINTREIBEN == TRUE))//Joly: wegen Geldbeutel	
 		&& (DJG_Biff_HalbeHalbe == TRUE)
 		&& (DJG_BiffParty == TRUE)	
@@ -325,7 +325,7 @@ func int DIA_Biff_GELDEINTREIBEN_Condition ()
 
 func void DIA_Biff_GELDEINTREIBEN_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_07_00"); //Aspetta un attimo! Non avevi detto che met‡ del bottino apparteneva a me? Dammelo!
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_07_00"); //Aspetta un attimo! Non avevi detto che met√† del bottino apparteneva a me? Dammelo!
 
 	B_BiffsAnteil_Berechnung ();
 	B_BiffsAnteil_PrintScreen ();
@@ -349,7 +349,7 @@ func void DIA_Biff_GELDEINTREIBEN_geben ()
 func void DIA_Biff_GELDEINTREIBEN_zuTeuer ()
 {
 	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_15_00"); //Sei troppo caro per me.
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_07_01"); //Smettila di piagnucolare. Ci eravamo accordati per met‡ bottino.
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_07_01"); //Smettila di piagnucolare. Ci eravamo accordati per met√† bottino.
 
 	Info_ClearChoices	(DIA_Biff_GELDEINTREIBEN);
 	Info_AddChoice	(DIA_Biff_GELDEINTREIBEN, "Mi dispiace, ma credo che le nostre strade dovranno dividersi.", DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen );
@@ -358,8 +358,8 @@ func void DIA_Biff_GELDEINTREIBEN_zuTeuer ()
 };
 func void DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen ()
 {
-	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00"); //Ich f¸rchte, ich muss mich von dir trennen.
-	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_07_01"); //Se lo dici tu. Allora mi prenderÚ la mia parte.
+	AI_Output			(other, self, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_15_00"); //Ich f√ºrchte, ich muss mich von dir trennen.
+	AI_Output			(self, other, "DIA_Biff_GELDEINTREIBEN_zuTeuer_trennen_07_01"); //Se lo dici tu. Allora mi prender√≤ la mia parte.
 
 	BIFF_LABERT_GELDEINTREIBEN = FALSE;
 	AI_StopProcessInfos (self);
@@ -394,7 +394,7 @@ func int DIA_Biff_ICHBLEIBHIER_Condition ()
 				&& 	(
 						(
 							(
-								//Joly: Biff stˆrt nicht das Drachengespr‰ch!
+								//Joly: Biff st√∂rt nicht das Drachengespr√§ch!
 								((Npc_GetDistToWP(self,"OW_SWAMPDRAGON_01")<4000)	&& (Npc_IsDead(SwampDragon)== FALSE)&& (SwampDragon.flags != 0))
 								||((Npc_GetDistToWP(self,"LOCATION_19_03_PATH_RUIN8")<2000)	&& (Npc_IsDead(RockDragon)== FALSE) && (RockDragon.flags != 0))
 								||((Npc_GetDistToWP(self,"CASTLE_36")<4000)			&& (Npc_IsDead(FireDragon)== FALSE) && (FireDragon.flags != 0))
@@ -412,7 +412,7 @@ func int DIA_Biff_ICHBLEIBHIER_Condition ()
 
 func void DIA_Biff_ICHBLEIBHIER_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_ICHBLEIBHIER_07_00"); //Quest'area Ë davvero pericolosa. Tu vai avanti. Io rimarrÚ nelle retrovie.
+	AI_Output			(self, other, "DIA_Biff_ICHBLEIBHIER_07_00"); //Quest'area √® davvero pericolosa. Tu vai avanti. Io rimarr√≤ nelle retrovie.
 
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,300);
@@ -509,7 +509,7 @@ func int DIA_Biff_KOHLEWEGGEBEN_Condition ()
 func void DIA_Biff_KOHLEWEGGEBEN_Info ()
 {
 	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_00"); //Non seminare il tuo oro per tutta l'area.
-	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_01"); //» meglio se lo dai a me.
+	AI_Output			(self, other, "DIA_Biff_KOHLEWEGGEBEN_07_01"); //√à meglio se lo dai a me.
 
 	AI_StopProcessInfos (self);
 	DJG_Biff_SCGold = Npc_HasItems(hero,ItMi_Gold);	// Biff merkt sich wieder, wieviel Geld der Spieler jetzt hat.
@@ -576,7 +576,7 @@ func int DIA_Biff_MEHRGELD_Condition ()
 var int DIA_Biff_MEHRGELD_Info_OneTime;
 func void DIA_Biff_MEHRGELD_Info ()
 {
-	AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_00"); //Sto cominciando ad avere la sensazione che dovrei chiederti pi˘ soldi.
+	AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_00"); //Sto cominciando ad avere la sensazione che dovrei chiederti pi√π soldi.
 
 	if (DJG_Biff_HalbeHalbe == TRUE)
 	{
@@ -584,7 +584,7 @@ func void DIA_Biff_MEHRGELD_Info ()
 		if (DIA_Biff_MEHRGELD_Info_OneTime == FALSE)
 		{
 			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_02"); //Non preoccuparti. Ovviamente non mi sono dimenticato che avevamo pattuito di dividerci il bottino.
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_03"); //Ecco perchÈ non ti chiederÚ spesso altri soldi.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_07_03"); //Ecco perch√© non ti chieder√≤ spesso altri soldi.
 			DIA_Biff_MEHRGELD_Info_OneTime = TRUE;
 		};
 	}
@@ -606,7 +606,7 @@ func void DIA_Biff_MEHRGELD_ok ()
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,100))
 		{
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_01"); //Direi di sÏ. Muoviamoci allora.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_01"); //Direi di s√¨. Muoviamoci allora.
 
 			AI_StopProcessInfos (self);
 
@@ -619,7 +619,7 @@ func void DIA_Biff_MEHRGELD_ok ()
 		else
 		{
 			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_02"); //Povero sciocco, non sei nemmeno in grado di pagare un soldato.
-			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_03"); //Credo che troverÚ un altro compagno d'affari.
+			AI_Output			(self, other, "DIA_Biff_MEHRGELD_ok_07_03"); //Credo che trover√≤ un altro compagno d'affari.
 			
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,"Start");
@@ -667,11 +667,11 @@ func int DIA_Biff_HEILUNG_Condition ()
 func void DIA_Biff_HEILUNG_Info ()
 {
 	AI_Output			(other, self, "DIA_Biff_HEILUNG_15_00"); //Ti serve una pozione guaritrice?
-	AI_Output			(self, other, "DIA_Biff_HEILUNG_07_01"); //Certo. PuÚ sempre servire.
+	AI_Output			(self, other, "DIA_Biff_HEILUNG_07_01"); //Certo. Pu√≤ sempre servire.
 
 	Info_ClearChoices	(DIA_Biff_HEILUNG);
-	Info_AddChoice	(DIA_Biff_HEILUNG, "Ti darÚ qualcosa pi˘ tardi!", DIA_Biff_HEILUNG_spaeter );
-	Info_AddChoice	(DIA_Biff_HEILUNG, "(la pozione guaritrice pi˘ piccola)", DIA_Biff_HEILUNG_heiltrankLow );
+	Info_AddChoice	(DIA_Biff_HEILUNG, "Ti dar√≤ qualcosa pi√π tardi!", DIA_Biff_HEILUNG_spaeter );
+	Info_AddChoice	(DIA_Biff_HEILUNG, "(la pozione guaritrice pi√π piccola)", DIA_Biff_HEILUNG_heiltrankLow );
 	Info_AddChoice	(DIA_Biff_HEILUNG, "(la pozione guaritrice migliore)", DIA_Biff_HEILUNG_heiltrank );
 
 };
@@ -691,7 +691,7 @@ func void DIA_Biff_HEILUNG_heiltrank ()
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Biff_HEILUNG_heiltrank_07_00"); //Credo che dovrÚ aspettare fino a quando ne avrai una per me.
+	AI_Output			(self, other, "DIA_Biff_HEILUNG_heiltrank_07_00"); //Credo che dovr√≤ aspettare fino a quando ne avrai una per me.
 	};
 
 	AI_StopProcessInfos (self);
@@ -719,7 +719,7 @@ func void DIA_Biff_HEILUNG_heiltrankLow ()
 };
 func void DIA_Biff_HEILUNG_spaeter ()
 {
-	AI_Output			(other, self, "DIA_Biff_HEILUNG_spaeter_15_00"); //Ti darÚ qualcosa pi˘ tardi!
+	AI_Output			(other, self, "DIA_Biff_HEILUNG_spaeter_15_00"); //Ti dar√≤ qualcosa pi√π tardi!
 	AI_Output			(self ,other, "DIA_Biff_HEILUNG_spaeter_07_01"); //Cerca di non dimenticarlo.
 	
 	AI_StopProcessInfos (self);
@@ -750,9 +750,9 @@ func int DIA_Biff_DRACHENTOT_Condition ()
 func void DIA_Biff_DRACHENTOT_Info ()
 {
 	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_00"); //Fatto. Tutti i draghi sono morti.
-	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_01"); //SÏ. E io sono ancora vivo.
+	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_01"); //S√¨. E io sono ancora vivo.
 	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_02"); //Sicuro che era l'ultimo?
-	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_03"); //Credo di sÏ.
+	AI_Output			(other, self, "DIA_Biff_DRACHENTOT_15_03"); //Credo di s√¨.
 	AI_Output			(self, other, "DIA_Biff_DRACHENTOT_07_04"); //Che peccato. Avevo appena cominciato a scaldarmi.
 	B_GivePlayerXP (XP_BiffSurvivedLastDragon);
 };
@@ -809,14 +809,14 @@ FUNC VOID DIA_Biff_KnowWhereEnemy_Yes ()
 {
 	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_00"); //Non vieni anche tu?
 	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_01"); //Non mi interessano nuovi avversari. Io voglio...
-	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_02"); //Dove stiamo andando ci sar‡ pi˘ oro di quanto tu sia in grado di portare.
-	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_03"); //Se le cose stanno cosÏ, sono con te. Dove siamo diretti?
+	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_02"); //Dove stiamo andando ci sar√† pi√π oro di quanto tu sia in grado di portare.
+	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_03"); //Se le cose stanno cos√¨, sono con te. Dove siamo diretti?
 	AI_Output (other,self ,"DIA_Biff_KnowWhereEnemy_Yes_15_04"); //Ma prima dobbiamo uscire dalla Valle delle Miniere.
-	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_05"); //Non c'Ë problema. Io mi avvio. Ci vediamo al passo.
+	AI_Output (self ,other,"DIA_Biff_KnowWhereEnemy_Yes_07_05"); //Non c'√® problema. Io mi avvio. Ci vediamo al passo.
 
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                       
     Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                       
-    B_LogEntry (TOPIC_Crew,"La prospettiva di ricchi bottini ha convinto Biff ad accompagnarmi. Fino a quando otterr‡ abbastanza oro potrÚ contare su di lui."); 
+    B_LogEntry (TOPIC_Crew,"La prospettiva di ricchi bottini ha convinto Biff ad accompagnarmi. Fino a quando otterr√† abbastanza oro potr√≤ contare su di lui."); 
     
     B_GivePlayerXP (XP_Crewmember_Success);   
 
@@ -840,7 +840,7 @@ FUNC VOID DIA_Biff_KnowWhereEnemy_No ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Gleich geht¥s los
+//	Gleich geht¬¥s los
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Biff_Pass		(C_INFO)
 {

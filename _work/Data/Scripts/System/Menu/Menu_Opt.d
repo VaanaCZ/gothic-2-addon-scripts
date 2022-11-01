@@ -79,7 +79,7 @@ instance MENUITEM_OPT_VIDEO(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		=	"Impostazioni video";
-	text[1]		=	"Adattatore grafico, risoluzione, luminosit‡ e contrasto";  // Kommentar
+	text[1]		=	"Adattatore grafico, risoluzione, luminosit√† e contrasto";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*2;
@@ -150,8 +150,8 @@ INSTANCE MENUITEM_OPT_EXT(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Prestazioni/Qualit‡";
-	text[1]		= "Ottimizza le prestazioni e la qualit‡";  // Kommentar
+	text[0]		= "Prestazioni/Qualit√†";
+	text[1]		= "Ottimizza le prestazioni e la qualit√†";  // Kommentar
 
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_OPT_START_Y + MENU_OPT_DY*6;
@@ -167,7 +167,7 @@ INSTANCE MENUITEM_PERF(C_MENU_ITEM_DEF)
 instance MENUITEM_PERF_CHOICE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_CHOICE_BACK_PIC;
-	text[0]		= "Personalizzato#Prestazioni alte|Qualit‡ media|Alta qualit‡";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
+	text[0]		= "Personalizzato#Prestazioni alte|Qualit√† media|Alta qualit√†";	// # trennt die UnDef-Option von der auswaehlbaren Optionen
 	type		= MENU_ITEM_CHOICEBOX;
 	fontName	= MENU_FONT_SMALL;
 	// Position und Dimension

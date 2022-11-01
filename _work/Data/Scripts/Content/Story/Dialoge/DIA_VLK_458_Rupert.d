@@ -101,7 +101,7 @@ FUNC INT DIA_Rupert_ZuPal_Condition()
 FUNC VOID DIA_Rupert_ZuPal_Info()
 {	
 	AI_Output (other, self,"DIA_Rupert_ZuPal_15_00"); //Veramente, mi stavo dirigendo dai paladini...
-	AI_Output (self ,other,"DIA_Rupert_ZuPal_03_01"); //Hai poche possibilit‡ visto che i paladini si sono sistemati nella parte alta della citt‡ e praticamente nessuno riesce pi˘ a metterci piede.
+	AI_Output (self ,other,"DIA_Rupert_ZuPal_03_01"); //Hai poche possibilit√† visto che i paladini si sono sistemati nella parte alta della citt√† e praticamente nessuno riesce pi√π a metterci piede.
 };	
 
 // ************************************************************
@@ -128,13 +128,13 @@ FUNC VOID DIA_Rupert_HelpMeIntoOV_Info()
 {	
 	AI_Output (other, self,"DIA_Rupert_HelpMeIntoOV_15_00"); //Puoi aiutarmi a raggiungere il quartiere alto?
 	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_01"); //Io? No, non ho molto da dire a riguardo!
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_02"); //Ci sono solo poche persone nella parte bassa della citt‡ che hanno abbastanza influenza per permetterti di passare oltre le guardie.
-	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_03"); //Matteo, il mio capo, Ë uno di queste. Forse dovresti parlargli.
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_02"); //Ci sono solo poche persone nella parte bassa della citt√† che hanno abbastanza influenza per permetterti di passare oltre le guardie.
+	AI_Output (self ,other,"DIA_Rupert_HelpMeIntoOV_03_03"); //Matteo, il mio capo, √® uno di queste. Forse dovresti parlargli.
 	
 	Log_CreateTopic (TOPIC_OV,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_OV,LOG_RUNNING);
-	B_LogEntry (TOPIC_OV,"Se voglio entrare nei quartieri alti, dovrÚ trovare l'aiuto di qualche cittadino autorevole della parte inferiore.");
-	B_LogEntry (TOPIC_OV,"Matteo il mercante Ë uno dei cittadini pi˘ influenti della parte inferiore della citt‡.");
+	B_LogEntry (TOPIC_OV,"Se voglio entrare nei quartieri alti, dovr√≤ trovare l'aiuto di qualche cittadino autorevole della parte inferiore.");
+	B_LogEntry (TOPIC_OV,"Matteo il mercante √® uno dei cittadini pi√π influenti della parte inferiore della citt√†.");
 };	
 
 // ***************************************************************
@@ -160,18 +160,18 @@ FUNC INT DIA_Rupert_WoMatteo_Condition()
 FUNC VOID DIA_Rupert_WoMatteo_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_WoMatteo_15_00"); //Dove si trova Matteo?
-	AI_Output (self ,other,"DIA_Rupert_WoMatteo_03_01"); //Sei proprio fuori dal suo negozio. Entra, Ë praticamente sempre lÏ.
+	AI_Output (self ,other,"DIA_Rupert_WoMatteo_03_01"); //Sei proprio fuori dal suo negozio. Entra, √® praticamente sempre l√¨.
 	
 	if (Knows_Matteo == FALSE)
 	{
 		Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-		B_LogEntry (TOPIC_CityTrader,"Il negozio di Matteo Ë al cancello sud della citt‡. Vende equipaggiamento, armi e provviste.");
+		B_LogEntry (TOPIC_CityTrader,"Il negozio di Matteo √® al cancello sud della citt√†. Vende equipaggiamento, armi e provviste.");
 		Knows_Matteo = TRUE;
 	};
 };
 
 // ***************************************************************
-//							Wer hat Einfluﬂ
+//							Wer hat Einflu√ü
 // ***************************************************************
 INSTANCE DIA_Rupert_WerEinfluss(C_INFO)
 {
@@ -193,9 +193,9 @@ FUNC INT DIA_Rupert_WerEinfluss_Condition()
 FUNC VOID DIA_Rupert_WerEinfluss_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_WerEinfluss_15_00"); //Cosa mi dici dei cittadini importanti?
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_01"); //I mercanti e i maestri artigiani si trovano sulla strada principale e sono le figure pi˘ importanti in citt‡.
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_01"); //I mercanti e i maestri artigiani si trovano sulla strada principale e sono le figure pi√π importanti in citt√†.
 	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_02"); //Dovresti provare a farti accettare come apprendista da uno di loro, come ho fatto io.
-	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_03"); //Da quando ho cominciato a lavorare per Matteo, la gente in citt‡ mi tratta con rispetto!
+	AI_Output (self ,other,"DIA_Rupert_WerEinfluss_03_03"); //Da quando ho cominciato a lavorare per Matteo, la gente in citt√† mi tratta con rispetto!
 	
 	B_LogEntry (TOPIC_OV,"Dovrei cominciare a lavorare come apprendista per uno dei mastri artigiani.");
 };
@@ -222,7 +222,7 @@ FUNC INT DIA_Rupert_Work_Condition()
 FUNC VOID DIA_Rupert_Work_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_Work_15_00"); //Mi serve del denaro e sto cercando un lavoro.
-	AI_Output (self ,other,"DIA_Rupert_Work_03_01"); //Ho sentito che Bosper ha dei problemi con i suoi fornitori. Il suo negozio Ë laggi˘.
+	AI_Output (self ,other,"DIA_Rupert_Work_03_01"); //Ho sentito che Bosper ha dei problemi con i suoi fornitori. Il suo negozio √® laggi√π.
 	AI_Output (self ,other,"DIA_Rupert_Work_03_02"); //Dicono che paghi bene.
 };
 
@@ -244,12 +244,12 @@ FUNC INT DIA_Rupert_YourOffer_Condition()
 };
 FUNC VOID DIA_Rupert_YourOffer_Info()
 {	
-	AI_Output (other,self ,"DIA_Rupert_YourOffer_15_00"); //Cosíhai da offrirmi?
+	AI_Output (other,self ,"DIA_Rupert_YourOffer_15_00"); //Cos‚Äôhai da offrirmi?
 	AI_Output (self ,other,"DIA_Rupert_YourOffer_03_01"); //Al momento, non ho molta scelta.
 	if (hero.guild != GIL_SLD)
 	&& (hero.guild != GIL_DJG)
 	{ 
-		AI_Output (self ,other,"DIA_Rupert_YourOffer_03_02"); //Quel maledetto possidente non fa pi˘ consegne e quello che otteniamo dalle fattorie pi˘ piccole non Ë abbastanza per soddisfare le richieste della citt‡.
+		AI_Output (self ,other,"DIA_Rupert_YourOffer_03_02"); //Quel maledetto possidente non fa pi√π consegne e quello che otteniamo dalle fattorie pi√π piccole non √® abbastanza per soddisfare le richieste della citt√†.
 	};
 };
 
@@ -284,7 +284,7 @@ FUNC VOID DIA_Rupert_Trade_Info()
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output (self,other,"DIA_Rupert_Trade_03_01"); //Perdonami per la ridotta scelta. Un uomo nella tua posizione Ë sicuramente abituato meglio.
+		AI_Output (self,other,"DIA_Rupert_Trade_03_01"); //Perdonami per la ridotta scelta. Un uomo nella tua posizione √® sicuramente abituato meglio.
 	};
 };
 
@@ -311,15 +311,15 @@ FUNC INT DIA_Rupert_Bauernaufstand_Condition()
 FUNC VOID DIA_Rupert_Bauernaufstand_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_Bauernaufstand_15_00"); //Parlami ancora della rivoluzione contadina.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_01"); //» molto semplice: il possidente Onar non pagher‡ pi˘ le tasse alla citt‡.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_02"); //Pensa te! Siamo in guerra con gli orchi e quel ciccione vuole tenere tutto per sÈ!
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_01"); //√à molto semplice: il possidente Onar non pagher√† pi√π le tasse alla citt√†.
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_02"); //Pensa te! Siamo in guerra con gli orchi e quel ciccione vuole tenere tutto per s√©!
 	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_03"); //In genere, la guardia cittadina prenderebbe delle misure in caso come questi.
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_04"); //Ma adesso viene la parte migliore: dicono che Onar abbia assunto dei mercenari per tenere le truppe della citt‡ lontano da lui!
-	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_05"); //MERCENARI! L'intera faccenda sfocer‡ in una guerra! Come se UNA non fosse gi‡ abbastanza!
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_04"); //Ma adesso viene la parte migliore: dicono che Onar abbia assunto dei mercenari per tenere le truppe della citt√† lontano da lui!
+	AI_Output (self ,other,"DIA_Rupert_Bauernaufstand_03_05"); //MERCENARI! L'intera faccenda sfocer√† in una guerra! Come se UNA non fosse gi√† abbastanza!
 };
 
 // ***************************************************************
-//							Sˆldner
+//							S√∂ldner
 // ***************************************************************
 INSTANCE DIA_Rupert_Mercs(C_INFO)
 {
@@ -343,7 +343,7 @@ FUNC VOID DIA_Rupert_Mercs_Info()
 {	
 	AI_Output (other,self ,"DIA_Rupert_Mercs_15_00"); //Cosa puoi dirmi sui mercenari di Onar?
 	AI_Output (self	,other,"DIA_Rupert_Mercs_03_01"); //Ho sentito dire che la maggior parte di loro sono degli ex detenuti della colonia mineraria.
-	AI_Output (self	,other,"DIA_Rupert_Mercs_03_02"); //E pare che il loro capo sia stato un pezzo grosso del Re un tempo, un generale o qualcosa del genere, ma Ë stato allontanato per tradimento!
+	AI_Output (self	,other,"DIA_Rupert_Mercs_03_02"); //E pare che il loro capo sia stato un pezzo grosso del Re un tempo, un generale o qualcosa del genere, ma √® stato allontanato per tradimento!
 	AI_Output (self	,other,"DIA_Rupert_Mercs_03_03"); //Sono tempi terribili.
 };
 

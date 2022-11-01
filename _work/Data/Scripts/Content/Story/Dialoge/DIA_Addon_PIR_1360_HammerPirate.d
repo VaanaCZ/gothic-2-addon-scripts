@@ -42,7 +42,7 @@ func VOID DIA_Addon_HammerPirate_Hello_Info()
 	{
 		if (C_TowerBanditsDead() == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_01"); //Certo, ora che il problema è risolto. Quelle carogne sono stecchite!
+			AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_01"); //Certo, ora che il problema Ã¨ risolto. Quelle carogne sono stecchite!
 		}
 		else
 		{
@@ -51,7 +51,7 @@ func VOID DIA_Addon_HammerPirate_Hello_Info()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //No! Martellare non è il mio forte.
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Hello_07_03"); //No! Martellare non Ã¨ il mio forte.
 	};
 };
 
@@ -87,7 +87,7 @@ func VOID DIA_Addon_HammerPirate_Anheuern_Info()
 	AI_Output (other,self ,"DIA_Addon_PIR_6_JoinHenry_15_08"); //Indovinato.
 	if (!Npc_IsDead(SawPirate))
 	{
-		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //Perché non chiedi a quel tizio con la sega?
+		AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_01"); //PerchÃ© non chiedi a quel tizio con la sega?
 	};
 	AI_Output (self, other, "DIA_Addon_HammerPirate_Anheuern_07_02"); //Io... non sopporto questa tensione...
 };
@@ -144,7 +144,7 @@ INSTANCE DIA_Addon_HammerPirate_GoHome(C_INFO)
 	condition	= DIA_Addon_HammerPirate_GoHome_Condition;
 	information	= DIA_Addon_HammerPirate_GoHome_Info;
 	permanent	= TRUE;
-	description = "Non mi servi più.";
+	description = "Non mi servi piÃ¹.";
 };                       
 FUNC INT DIA_Addon_HammerPirate_GoHome_Condition()
 {
@@ -156,7 +156,7 @@ FUNC INT DIA_Addon_HammerPirate_GoHome_Condition()
 
 FUNC VOID DIA_Addon_HammerPirate_GoHome_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_HammerPirate_GoHome_15_00"); //Non mi servi più.
+	AI_Output (other,self ,"DIA_Addon_HammerPirate_GoHome_15_00"); //Non mi servi piÃ¹.
 	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_01"); //Se lo dici tu...
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
@@ -187,7 +187,7 @@ FUNC INT DIA_Addon_HammerPirate_TooFar_Condition()
 FUNC VOID DIA_Addon_HammerPirate_TooFar_Info()
 {	
 	AI_Output (self ,other,"DIA_Addon_HammerPirate_TooFar_07_01"); //Se vuoi proseguire in quella direzione, non ti trattengo...
-	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //Credo che ora tornerò al campo.
+	AI_Output (self ,other,"DIA_Addon_HammerPirate_GoHome_07_02"); //Credo che ora tornerÃ² al campo.
 	
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"START");

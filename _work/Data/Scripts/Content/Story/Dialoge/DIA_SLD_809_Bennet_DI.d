@@ -49,11 +49,11 @@ FUNC VOID DIA_Bennet_DI_Hello_Info()
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//La fucina della nave è un pochino arrugginita. È colpa del sale marino. Potrebbe essere difficile produrre qualcosa di decente qui. Ma, a parte questo...
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_01");	//La fucina della nave Ã¨ un pochino arrugginita. Ãˆ colpa del sale marino. Potrebbe essere difficile produrre qualcosa di decente qui. Ma, a parte questo...
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//Sì, se gli orchi non torneranno ancora.
+		AI_Output	(self ,other,"DIA_Bennet_DI_Hello_06_02");	//SÃ¬, se gli orchi non torneranno ancora.
 	};
 };
   
@@ -220,7 +220,7 @@ INSTANCE DIA_Bennet_TeachSTR (C_INFO)
 	condition	= DIA_Bennet_TeachSTR_Condition;
 	information	= DIA_Bennet_TeachSTR_Info;
 	permanent	= TRUE;
-	description = "Voglio diventare più forte.";
+	description = "Voglio diventare piÃ¹ forte.";
 };                       
 
 FUNC INT DIA_Bennet_TeachSTR_Condition()
@@ -233,8 +233,8 @@ FUNC INT DIA_Bennet_TeachSTR_Condition()
  
 FUNC VOID DIA_Bennet_TeachSTR_Info()
 {	
-	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Voglio diventare più forte.
-	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //In momenti come questo, un braccio forte è quello che serve.
+	AI_Output (other,self ,"DIA_Bennet_TeachSTR_15_00"); //Voglio diventare piÃ¹ forte.
+	AI_Output (self,other ,"DIA_Bennet_TeachSTR_06_01"); //In momenti come questo, un braccio forte Ã¨ quello che serve.
 	
 	Info_ClearChoices (DIA_Bennet_TeachSTR);
 	Info_AddChoice		(DIA_Bennet_TeachSTR, DIALOG_BACK, DIA_Bennet_TeachSTR_Back);
@@ -300,7 +300,7 @@ instance DIA_Bennet_DI_UndeadDragonDead		(C_INFO)
 	information	 = 	DIA_Bennet_DI_UndeadDragonDead_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Abbiamo fatto tutto ciò che serviva.";
+	description	 = 	"Abbiamo fatto tutto ciÃ² che serviva.";
 };
 
 func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
@@ -313,7 +313,7 @@ func int DIA_Bennet_DI_UndeadDragonDead_Condition ()
 
 func void DIA_Bennet_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Abbiamo fatto tutto ciò che serviva.
+	AI_Output			(other, self, "DIA_Bennet_DI_UndeadDragonDead_15_00"); //Abbiamo fatto tutto ciÃ² che serviva.
 	AI_Output			(self, other, "DIA_Bennet_DI_UndeadDragonDead_06_01"); //Felice di sentirtelo dire. Ne ho avuto abbastanza di questa vecchia fucina. Ho bisogno di poggiare nuovamente i piedi sulla terraferma.
 	AI_StopProcessInfos (self);
 };

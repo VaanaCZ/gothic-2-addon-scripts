@@ -40,7 +40,7 @@ FUNC VOID DIA_Addon_10029_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_01");//Finché lavorano gli schiavi, io non muovo un dito.
+		AI_Output (self, other, "DIA_Addon_BDT_10029_Buddler_Hi_06_01");//FinchÃ© lavorano gli schiavi, io non muovo un dito.
 	}
 	else
 	{
@@ -67,7 +67,7 @@ FUNC INT DIA_Addon_10029_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10029_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//Gambe, è tutta una questione di gambe.
+	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_00");//Gambe, Ã¨ tutta una questione di gambe.
 	AI_Output (self, other, "DIA_Addon_10029_Buddler_Hacken_06_01");//La forza e lo slancio vengono dalle gambe.
 	
 	B_Upgrade_Hero_HackChance(5);

@@ -16,7 +16,7 @@ func void EVT_ARCHOLDEAD_FUNC ()
 	
 		if (EVT_ARCHOLDEAD_FUNC_OneTime == FALSE)
 		{
-			B_LogEntry (TOPIC_HallenVonIrdorath,"Ho scoperto qualcosa di simile a un tempio. È abitato da un mucchio di non morti, mi ricorda molto il maledetto tempio orchesco del Dormiente. Questa volta non fallirò!"); 
+			B_LogEntry (TOPIC_HallenVonIrdorath,"Ho scoperto qualcosa di simile a un tempio. Ãˆ abitato da un mucchio di non morti, mi ricorda molto il maledetto tempio orchesco del Dormiente. Questa volta non fallirÃ²!"); 
 			EVT_ARCHOLDEAD_FUNC_OneTime = TRUE;
 		};
 };

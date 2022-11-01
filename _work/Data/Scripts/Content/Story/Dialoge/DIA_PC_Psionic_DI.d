@@ -52,9 +52,9 @@ FUNC VOID DIA_Lester_DI_Hello_Info()
 	&& (ORkSturmDI  == TRUE)
 	&& (DIA_Lester_DI_SCGotWarning1 == FALSE)
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Mario se l'è svignata quanto gli orchi hanno attaccato. Nonostante la confusione sulla nave sono riuscito a tenerlo d'occhio.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Si è diretto proprio verso le fila degli orchi, e gli orchi non l'hanno nemmeno toccato.
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Ho sospettato di quel bastardo fin dall'inizio. È in combutta con il nemico.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_01");	//Mario se l'Ã¨ svignata quanto gli orchi hanno attaccato. Nonostante la confusione sulla nave sono riuscito a tenerlo d'occhio.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_02");	//Si Ã¨ diretto proprio verso le fila degli orchi, e gli orchi non l'hanno nemmeno toccato.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_03");	//Ho sospettato di quel bastardo fin dall'inizio. Ãˆ in combutta con il nemico.
 		B_GivePlayerXP (XP_Ambient);
 		DIA_Lester_DI_SCGotWarning1 = TRUE;
 	}
@@ -67,7 +67,7 @@ FUNC VOID DIA_Lester_DI_Hello_Info()
 	}
 	else
 	{
-		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Non adesso. Magari piùì tardi.
+		AI_Output	(self ,other,"DIA_Lester_DI_Hello_13_06");	//Non adesso. Magari piÃ¹Ã¬ tardi.
 	};
 };
 
@@ -96,8 +96,8 @@ FUNC INT DIA_Lester_DI_MarioArsch_Condition()
 FUNC VOID DIA_Lester_DI_MarioArsch_Info()
 {	
 	AI_Output	(other ,self,"DIA_Lester_DI_MarioArsch_15_00");	//Avevi ragione. Mario ci ha traditi.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//Sì. Forse di solito non sono molto percettivo, ma questa volta mi è sembrato chiaro.
-	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//In futuro stai più attento quando scegli i tuoi compagni.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_01");	//SÃ¬. Forse di solito non sono molto percettivo, ma questa volta mi Ã¨ sembrato chiaro.
+	AI_Output	(self ,other,"DIA_Lester_DI_MarioArsch_13_02");	//In futuro stai piÃ¹ attento quando scegli i tuoi compagni.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -132,7 +132,7 @@ FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 	{
 		if ((Npc_GetDistToWP(self,"DI_DRACONIANAREA_19")<4000) )
 			{
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //È come se il mio mal di testa fosse improvvisamente scomparso.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_01"); //Ãˆ come se il mio mal di testa fosse improvvisamente scomparso.
 				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_02"); //Come hai fatto?
 				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_03"); //Ho distrutto il nemico.
 				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_04"); //Dev'essere stato qualcosa di estremamente potente. Cos'era esattamente, dunque?
@@ -142,12 +142,12 @@ FUNC VOID DIA_PC_Lester_DI_UndeadDragonDead_Info()
 		if (SC_KnowsMadPsi == TRUE)
 			{
 				AI_Output (other,self ,"DIA_PC_Lester_DI_UndeadDragonDead_15_06"); //I tuoi vecchi amici di Campo Palude mi hanno reso la vita difficile.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //Già. La fede può smuovere le montagne. È sempre stato così. Sfortunatamente essi servivano la divinità sbagliata.
-				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Mi servirà del tempo prima di poter superare tutto questo.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_07"); //GiÃ . La fede puÃ² smuovere le montagne. Ãˆ sempre stato cosÃ¬. Sfortunatamente essi servivano la divinitÃ  sbagliata.
+				AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_08"); //Mi servirÃ  del tempo prima di poter superare tutto questo.
 			};
 		DIA_PC_Lester_DI_UndeadDragonDead_OneTime = TRUE;
 	};
-	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Spero che non accadrà mai più niente del genere. Non c'è abbastanza erba di palude nel mondo per quello che vorrei fumare in questo momento.
+	AI_Output (self ,other,"DIA_PC_Lester_DI_UndeadDragonDead_13_09"); //Spero che non accadrÃ  mai piÃ¹ niente del genere. Non c'Ã¨ abbastanza erba di palude nel mondo per quello che vorrei fumare in questo momento.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");		
 };

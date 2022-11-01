@@ -9,11 +9,11 @@ func void B_AddCityGuideChoices()
 	
 	if (!C_IsQuarterNearest(self, Q_UNTERSTADT))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Verso la parte bassa della città.", DIA_CITYGUIDE_UNTERSTADT);
+		Info_AddChoice (DIA_CITYGUIDE, "Verso la parte bassa della cittÃ .", DIA_CITYGUIDE_UNTERSTADT);
 	};
 	if (!C_IsQuarterNearest(self, Q_OBERSTADT))
 	{
-		Info_AddChoice (DIA_CITYGUIDE, "Verso il quartiere più alto.", DIA_CITYGUIDE_OBERSTADT);
+		Info_AddChoice (DIA_CITYGUIDE, "Verso il quartiere piÃ¹ alto.", DIA_CITYGUIDE_OBERSTADT);
 	};
 	if (!C_IsQuarterNearest(self, Q_TEMPEL))
 	{
@@ -36,7 +36,7 @@ func void B_AddCityGuideChoices()
 		Info_AddChoice (DIA_CITYGUIDE, "Verso il distretto del porto.", DIA_CITYGUIDE_HAFEN);
 	};
 	
-	Info_AddChoice (DIA_CITYGUIDE, "Grazie, era tutto ciò che volevo sapere!", DIA_CITYGUIDE_BACK);
+	Info_AddChoice (DIA_CITYGUIDE, "Grazie, era tutto ciÃ² che volevo sapere!", DIA_CITYGUIDE_BACK);
 };
 
 INSTANCE DIA_CITYGUIDE (C_INFO)
@@ -94,13 +94,13 @@ FUNC VOID DIA_CITYGUIDE_Info()
 
 func void DIA_CITYGUIDE_BACK()
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_BACK_15_00"); //Grazie, era tutto ciò che volevo sapere!
+	AI_Output (other, self, "DIA_CITYGUIDE_BACK_15_00"); //Grazie, era tutto ciÃ² che volevo sapere!
 	Info_ClearChoices (DIA_CITYGUIDE);
 };
 	
 func void DIA_CITYGUIDE_UNTERSTADT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_UNTERSTADT_15_00"); //Come faccio a raggiungere la parte bassa della città?
+	AI_Output (other, self, "DIA_CITYGUIDE_UNTERSTADT_15_00"); //Come faccio a raggiungere la parte bassa della cittÃ ?
 	
 	if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
@@ -108,23 +108,23 @@ func void DIA_CITYGUIDE_UNTERSTADT()
 	}
 	else if (C_NpcIsInQuarter(self) == Q_TEMPEL)
 	{
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.	
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.	
 	}
 	else if (C_NpcIsInQuarter(self) == Q_MARKT)
 	{
 		B_Say (self, other, "$MARKT_2_TEMPEL"); 		//Wenn du vom Marktplatz aus an der hohen Stadtmauer entlang gehst, kommst du zum Tempel.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.	
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.	
 	}
 	else if (C_NpcIsInQuarter(self) == Q_GALGEN)
 	{
 		B_Say (self, other, "$GALGEN_2_TEMPEL"); 		//Geh vom Galgenplatz aus die Gasse runter und du komst zum Tempelplatz.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_KASERNE)
 	{
 		B_Say (self, other, "$KASERNE_2_GALGEN"); 		//Geh einfach die Treppe am Haupteingang rechts runter, dann kommst du zum Galgenplatz. 
 		B_Say (self, other, "$GALGEN_2_TEMPEL"); 		//Geh vom Galgenplatz aus die Gasse runter und du komst zum Tempelplatz.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_HAFEN)
 	{
@@ -136,40 +136,40 @@ func void DIA_CITYGUIDE_UNTERSTADT()
 
 func void DIA_CITYGUIDE_OBERSTADT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_OBERSTADT_15_00"); //Come faccio a raggiungere la parte alta della città?
+	AI_Output (other, self, "DIA_CITYGUIDE_OBERSTADT_15_00"); //Come faccio a raggiungere la parte alta della cittÃ ?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
-		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am südlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch führt. Dort beginnt die Oberstadt.
+		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am sÃ¼dlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch fÃ¼hrt. Dort beginnt die Oberstadt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_TEMPEL)
 	{
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
-		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am südlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch führt. Dort beginnt die Oberstadt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
+		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am sÃ¼dlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch fÃ¼hrt. Dort beginnt die Oberstadt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_MARKT)
 	{
 		B_Say (self, other, "$MARKT_2_TEMPEL"); 		//Wenn du vom Marktplatz aus an der hohen Stadtmauer entlang gehst, kommst du zum Tempel.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
-		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am südlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch führt. Dort beginnt die Oberstadt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
+		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am sÃ¼dlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch fÃ¼hrt. Dort beginnt die Oberstadt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_GALGEN)
 	{
 		B_Say (self, other, "$GALGEN_2_TEMPEL"); 		//Geh vom Galgenplatz aus die Gasse runter und du komst zum Tempelplatz.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
-		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am südlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch führt. Dort beginnt die Oberstadt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
+		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am sÃ¼dlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch fÃ¼hrt. Dort beginnt die Oberstadt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_KASERNE)
 	{
 		B_Say (self, other, "$KASERNE_2_GALGEN"); 		//Geh einfach die Treppe am Haupteingang rechts runter, dann kommst du zum Galgenplatz. 
 		B_Say (self, other, "$GALGEN_2_TEMPEL"); 		//Geh vom Galgenplatz aus die Gasse runter und du komst zum Tempelplatz.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
-		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am südlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch führt. Dort beginnt die Oberstadt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
+		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am sÃ¼dlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch fÃ¼hrt. Dort beginnt die Oberstadt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_HAFEN)
 	{
 		B_Say (self, other, "$HAFEN_2_UNTERSTADT");		//Geh von der Kaimauer aus die Hafenstrasse hoch, dann kommst du in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am südlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch führt. Dort beginnt die Oberstadt.
+		B_Say (self, other, "$UNTERSTADT_2_OBERSTADT"); //Am sÃ¼dlichen Stadttor gibt es eine Treppe die zum innere Stadttor hoch fÃ¼hrt. Dort beginnt die Oberstadt.
 	};
 	
 	B_AddCityGuideChoices();
@@ -181,12 +181,12 @@ func void DIA_CITYGUIDE_TEMPEL()
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 	}
 	else if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
 		B_Say (self, other, "$OBERSTADT_2_UNTERSTADT"); //Geh von hier aus durch das innere Stadttor und du kommst in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 	}
 	else if (C_NpcIsInQuarter(self) == Q_MARKT)
 	{
@@ -204,7 +204,7 @@ func void DIA_CITYGUIDE_TEMPEL()
 	else if (C_NpcIsInQuarter(self) == Q_HAFEN)
 	{
 		B_Say (self, other, "$HAFEN_2_UNTERSTADT");		//Geh von der Kaimauer aus die Hafenstrasse hoch, dann kommst du in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 	};
 	
 	B_AddCityGuideChoices();
@@ -212,17 +212,17 @@ func void DIA_CITYGUIDE_TEMPEL()
 	
 func void DIA_CITYGUIDE_MARKT()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_MARKT_15_00"); //Dov'è il mercato?
+	AI_Output (other, self, "DIA_CITYGUIDE_MARKT_15_00"); //Dov'Ã¨ il mercato?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_MARKT"); 		//Wenn du vorm Tempel stehst, geh links hoch und an der Stadtmauer entlang, dann kommst du zum Markt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
 		B_Say (self, other, "$OBERSTADT_2_UNTERSTADT"); //Geh von hier aus durchdas innere Stadttor und du kommst in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_MARKT"); 		//Wenn du vorm Tempel stehst, geh links hoch und an der Stadtmauer entlang, dann kommst du zum Markt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_TEMPEL)
@@ -231,7 +231,7 @@ func void DIA_CITYGUIDE_MARKT()
 	}
 	else if (C_NpcIsInQuarter(self) == Q_GALGEN)
 	{
-		B_Say (self, other, "$GALGEN_2_MARKT"); 		//Geh einfach an der großen Kaserne entlang und du kommst zum Markt.
+		B_Say (self, other, "$GALGEN_2_MARKT"); 		//Geh einfach an der groÃŸen Kaserne entlang und du kommst zum Markt.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_KASERNE)
 	{
@@ -240,7 +240,7 @@ func void DIA_CITYGUIDE_MARKT()
 	else if (C_NpcIsInQuarter(self) == Q_HAFEN)
 	{
 		B_Say (self, other, "$HAFEN_2_UNTERSTADT");		//Geh von der Kaimauer aus die Hafenstrasse hoch, dann kommst du in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_MARKT"); 		//Wenn du vorm Tempel stehst, geh links hoch und an der Stadtmauer entlang, dann kommst du zum Markt.
 	};
 	
@@ -253,13 +253,13 @@ func void DIA_CITYGUIDE_GALGEN()
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
 		B_Say (self, other, "$OBERSTADT_2_UNTERSTADT"); //Geh von hier aus durchdas innere Stadttor und du kommst in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_TEMPEL)
@@ -268,7 +268,7 @@ func void DIA_CITYGUIDE_GALGEN()
 	}
 	else if (C_NpcIsInQuarter(self) == Q_MARKT)
 	{
-		B_Say (self, other, "$MARKT_2_GALGEN"); 		//Geh einfach an der großen Kaserne entlang und du kommst zum Galgenplatz.
+		B_Say (self, other, "$MARKT_2_GALGEN"); 		//Geh einfach an der groÃŸen Kaserne entlang und du kommst zum Galgenplatz.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_KASERNE)
 	{
@@ -277,7 +277,7 @@ func void DIA_CITYGUIDE_GALGEN()
 	else if (C_NpcIsInQuarter(self) == Q_HAFEN)
 	{
 		B_Say (self, other, "$HAFEN_2_UNTERSTADT");		//Geh von der Kaimauer aus die Hafenstrasse hoch, dann kommst du in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
 	};
 	
@@ -286,40 +286,40 @@ func void DIA_CITYGUIDE_GALGEN()
 	
 func void DIA_CITYGUIDE_KASERNE()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_KASERNE_15_00"); //Dov'è la caserma?
+	AI_Output (other, self, "DIA_CITYGUIDE_KASERNE_15_00"); //Dov'Ã¨ la caserma?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
-		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroße Gebäude. Geh einfach die Treppen rauf.
+		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroÃŸe GebÃ¤ude. Geh einfach die Treppen rauf.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_OBERSTADT)
 	{
 		B_Say (self, other, "$OBERSTADT_2_UNTERSTADT"); 	//Geh von hier aus durchdas innere Stadttor und du kommst in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
-		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroße Gebäude. Geh einfach die Treppen rauf.
+		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroÃŸe GebÃ¤ude. Geh einfach die Treppen rauf.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_TEMPEL)
 	{
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
-		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroße Gebäude. Geh einfach die Treppen rauf.
+		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroÃŸe GebÃ¤ude. Geh einfach die Treppen rauf.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_MARKT)
 	{
-		B_Say (self, other, "$MARKT_2_KASERNE");		//Die Kaserne ist das riesengroße Gebäude. Geh einfach die Treppen gegenüber dem Hotel rauf.
+		B_Say (self, other, "$MARKT_2_KASERNE");		//Die Kaserne ist das riesengroÃŸe GebÃ¤ude. Geh einfach die Treppen gegenÃ¼ber dem Hotel rauf.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_GALGEN)
 	{
-		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroße Gebäude. Geh einfach die Treppen rauf. 
+		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroÃŸe GebÃ¤ude. Geh einfach die Treppen rauf. 
 	}
 	else if (C_NpcIsInQuarter(self) == Q_HAFEN)
 	{
 		B_Say (self, other, "$HAFEN_2_UNTERSTADT");		//Geh von der Kaimauer aus die Hafenstrasse hoch, dann kommst du in die Unterstadt.
-		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die Unterführung und du kommst zum Tempelplatz.	
+		B_Say (self, other, "$UNTERSTADT_2_TEMPEL");	//Geh vom Schmied aus durch die UnterfÃ¼hrung und du kommst zum Tempelplatz.	
 		B_Say (self, other, "$TEMPEL_2_GALGEN"); 		//Wenn du vom Tempel aus gesehen links an der Kneipe vorbei gehst, kommst du zum Galgenplatz.
-		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroße Gebäude. Geh einfach die Treppen rauf.
+		B_Say (self, other, "$GALGEN_2_KASERNE");		//Die Kaserne ist das riesengroÃŸe GebÃ¤ude. Geh einfach die Treppen rauf.
 	};
 	
 	B_AddCityGuideChoices();
@@ -327,7 +327,7 @@ func void DIA_CITYGUIDE_KASERNE()
 	
 func void DIA_CITYGUIDE_HAFEN()	
 {
-	AI_Output (other, self, "DIA_CITYGUIDE_HAFEN_15_00"); //Dov'è il distretto del porto?
+	AI_Output (other, self, "DIA_CITYGUIDE_HAFEN_15_00"); //Dov'Ã¨ il distretto del porto?
 	
 	if (C_NpcIsInQuarter(self) == Q_UNTERSTADT)
 	{
@@ -340,26 +340,26 @@ func void DIA_CITYGUIDE_HAFEN()
 	}
 	else if (C_NpcIsInQuarter(self) == Q_TEMPEL)
 	{
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
 		B_Say (self, other, "$UNTERSTADT_2_HAFEN");		//Geh vom Schmied aus die Hafenstrasse runter, dann kommst du zum Hafen.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_MARKT)
 	{
 		B_Say (self, other, "$MARKT_2_TEMPEL"); 		//Wenn du vom Marktplatz aus an der hohen Stadtmauer entlang gehst, kommst du zum Tempel.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
 		B_Say (self, other, "$UNTERSTADT_2_HAFEN");		//Geh vom Schmied aus die Hafenstrasse runter, dann kommst du zum Hafen.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_GALGEN)
 	{
 		B_Say (self, other, "$GALGEN_2_TEMPEL"); 		//Geh vom Galgenplatz aus die Gasse runter und du komst zum Tempelplatz.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
 		B_Say (self, other, "$UNTERSTADT_2_HAFEN");		//Geh vom Schmied aus die Hafenstrasse runter, dann kommst du zum Hafen.
 	}
 	else if (C_NpcIsInQuarter(self) == Q_KASERNE)
 	{
 		B_Say (self, other, "$KASERNE_2_GALGEN"); 		//Geh einfach die Treppe am Haupteingang rechts runter, dann kommst du zum Galgenplatz. 
 		B_Say (self, other, "$GALGEN_2_TEMPEL"); 		//Geh vom Galgenplatz aus die Gasse runter und du komst zum Tempelplatz.
-		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine Unterführung, die in die Unterstadt führt.
+		B_Say (self, other, "$TEMPEL_2_UNTERSTADT");	//Vom Tempelplatz aus gibt es eine UnterfÃ¼hrung, die in die Unterstadt fÃ¼hrt.
 		B_Say (self, other, "$UNTERSTADT_2_HAFEN");		//Geh vom Schmied aus die Hafenstrasse runter, dann kommst du zum Hafen.
 	};
 	

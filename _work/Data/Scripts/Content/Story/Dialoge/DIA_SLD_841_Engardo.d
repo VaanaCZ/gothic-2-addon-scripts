@@ -63,7 +63,7 @@ func void DIA_Engardo_HALLO_Info ()
 	}
 	else if (Chance == 2)
 	{
-		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //Hai problemi di udito oppure vuoi solamente morire? (freddamente) Beh, è troppo tardi ormai.
+		AI_Output (self, other, "DIA_Engardo_HALLO_13_03"); //Hai problemi di udito oppure vuoi solamente morire? (freddamente) Beh, Ã¨ troppo tardi ormai.
 		
 		AI_StopProcessInfos (self);
 		B_Attack (self, other, AR_SuddenEnemyInferno, 1);

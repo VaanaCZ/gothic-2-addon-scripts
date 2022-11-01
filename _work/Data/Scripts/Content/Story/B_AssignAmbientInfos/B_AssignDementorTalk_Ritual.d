@@ -12,8 +12,8 @@ func void B_AssignDementorTalk_Ritual ()
 	
 	{
 		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //Sei arrivato troppo tardi.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Abbiamo distrutto l'Occhio di Innos in modo che esso non possa più recuperare il suo potere.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Ora dimostreremo l'inutilità del tuo tentativo di sfidare il Padrone.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Abbiamo distrutto l'Occhio di Innos in modo che esso non possa piÃ¹ recuperare il suo potere.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Ora dimostreremo l'inutilitÃ  del tuo tentativo di sfidare il Padrone.
 
 		MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 		B_LogEntry (TOPIC_INNOSEYE, "Questi tizi inquietanti cominciano a darmi sui nervi. Hanno distrutto l'Occhio di Innos, e non ho idea di come potrei aggiustarlo.");

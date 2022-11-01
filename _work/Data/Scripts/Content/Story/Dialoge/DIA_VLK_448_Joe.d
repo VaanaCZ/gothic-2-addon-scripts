@@ -75,14 +75,14 @@ FUNC INT DIA_Joe_Hallo_Condition()
 };
 FUNC VOID DIA_Joe_Hallo_Info()
 {
-	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Ehi, grazie, grazie davvero, non so che dire. Pensavo che non sarei mai uscito di lì.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_00");//Ehi, grazie, grazie davvero, non so che dire. Pensavo che non sarei mai uscito di lÃ¬.
 	TOPIC_END_Joe = TRUE;
 	B_GivePlayerXP ((XP_Ambient*4));
 	
 	AI_Output (other, self,"DIA_Joe_Hallo_15_01");//Che cosa stai facendo QUI?
-	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Sono rimasto chiuso dentro. La porta era aperta e tutto quello che volevo fare era dare un'occhiatina. Ma non appena sono entrato, il guardiano è venuto e ha chiuso quella maledetta porta.
+	AI_Output (self, other,"DIA_Joe_Hallo_10_02");//Sono rimasto chiuso dentro. La porta era aperta e tutto quello che volevo fare era dare un'occhiatina. Ma non appena sono entrato, il guardiano Ã¨ venuto e ha chiuso quella maledetta porta.
 	AI_Output (self, other,"DIA_Joe_Hallo_10_03");//Siccome si tratta di una questione imbarazzante, ti sarei grato se rimanesse tra me e te.
-	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Capisco, non è esattamente qualcosa di cui andare fieri.
+	AI_Output (other, self,"DIA_Joe_Hallo_15_04");//Capisco, non Ã¨ esattamente qualcosa di cui andare fieri.
 	AI_Output (self, other,"DIA_Joe_Hallo_10_05");//Ho bisogno di un goccetto.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"START"); 

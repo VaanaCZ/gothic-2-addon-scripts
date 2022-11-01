@@ -42,7 +42,7 @@ INSTANCE DIA_Buster_Hello (C_INFO)
 
 FUNC INT DIA_Buster_Hello_Condition()
 {
-	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal geprügelt
+	if (self.aivar[AIV_LastFightAgainstPlayer] != FIGHT_LOST) //Wegen News - Info kommt nicht mehr gut, wenn schonmal geprÃ¼gelt
 	&& ((hero.guild != GIL_SLD) && (hero.guild != GIL_DJG))
 	{
 		return TRUE;
@@ -51,7 +51,7 @@ FUNC INT DIA_Buster_Hello_Condition()
  
 FUNC VOID DIA_Buster_Hello_Info()
 {	
-	AI_Output (self ,other,"DIA_Buster_Hello_13_00");	//Chi abbiamo qui? Non ti ho già incontrato?
+	AI_Output (self ,other,"DIA_Buster_Hello_13_00");	//Chi abbiamo qui? Non ti ho giÃ  incontrato?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
@@ -63,7 +63,7 @@ func void DIA_Buster_Hello_WhoAreYou()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_WhoAreYou_15_00"); //Chi vuole saperlo?
 	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_01"); //Sono Buster, uno dei mercenari di Lee!
-	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_02"); //E TU faresti meglio a essere un po' più rispettoso con me, o avrò la tua pelle!
+	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_02"); //E TU faresti meglio a essere un po' piÃ¹ rispettoso con me, o avrÃ² la tua pelle!
 	AI_Output (self ,other,"DIA_Buster_Hello_WhoAreYou_13_03"); //D'accordo, cosa vuoi?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
@@ -76,7 +76,7 @@ func void DIA_Buster_Hello_WhoAreYou()
 func void DIA_Buster_Hello_IKnowLee()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_IKnowLee_15_00"); //Conosco Lee!
-	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_01"); //Tutti conoscono Lee! Non significa nulla, amico. Al momento però stai parlando con ME!
+	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_01"); //Tutti conoscono Lee! Non significa nulla, amico. Al momento perÃ² stai parlando con ME!
 	AI_Output (self ,other,"DIA_Buster_Hello_IKnowLee_13_02"); //Dunque, dove stai andando?
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
@@ -88,7 +88,7 @@ func void DIA_Buster_Hello_IKnowLee()
 func void DIA_Buster_Hello_NotYourBusiness()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_NotYourBusiness_15_00"); //Non sono affari tuoi.
-	AI_Output (self ,other,"DIA_Buster_Hello_NotYourBusiness_13_01"); //Nessuno può parlarmi in quel modo, verme! Penso sia giunto il momento di darti una bella lezione!
+	AI_Output (self ,other,"DIA_Buster_Hello_NotYourBusiness_13_01"); //Nessuno puÃ² parlarmi in quel modo, verme! Penso sia giunto il momento di darti una bella lezione!
 	
 	AI_StopProcessInfos	(self);
 	B_Attack(self,other,AR_NONE, 1);
@@ -97,7 +97,7 @@ func void DIA_Buster_Hello_NotYourBusiness()
 func void DIA_Buster_Hello_GoingToFarm()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_GoingToFarm_15_00"); //Se lo dici tu. Sto andando a parlare con il proprietario.
-	AI_Output (self ,other,"DIA_Buster_Hello_GoingToFarm_13_01"); //Davvero... Mmmh, non mi sembri così pericoloso.
+	AI_Output (self ,other,"DIA_Buster_Hello_GoingToFarm_13_01"); //Davvero... Mmmh, non mi sembri cosÃ¬ pericoloso.
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
@@ -109,8 +109,8 @@ func void DIA_Buster_Hello_GoingToFarm()
 func void DIA_Buster_Hello_ImNoDanger()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_ImNoDanger_15_00"); //Hai capito bene.
-	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_01"); //(soddisfatto) Già, con gli anni impari a capire queste cose al primo colpo, amico.
-	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_02"); //Siamo abituati a combattere gli orchi un giorno sì e uno no. O le guardie della città. Sono dei piccoli insetti ostinati. (ride)
+	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_01"); //(soddisfatto) GiÃ , con gli anni impari a capire queste cose al primo colpo, amico.
+	AI_Output (self ,other,"DIA_Buster_Hello_ImNoDanger_13_02"); //Siamo abituati a combattere gli orchi un giorno sÃ¬ e uno no. O le guardie della cittÃ . Sono dei piccoli insetti ostinati. (ride)
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
@@ -123,7 +123,7 @@ func void DIA_Buster_Hello_SlewBeasts()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_SlewBeasts_15_00"); //Ho ucciso un paio di bestie in qualche occasione.
 	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_01"); //Ah! (ride) Probabilmente avrai schiacciato qualche insetto nei campi e inseguito un paio di topi fino ai loro buchi.
-	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_02"); //Qui ci occupiamo di orchi! Beh, sì, anche di quelle maledette guardie cittadine. (ride)
+	AI_Output (self ,other,"DIA_Buster_Hello_SlewBeasts_13_02"); //Qui ci occupiamo di orchi! Beh, sÃ¬, anche di quelle maledette guardie cittadine. (ride)
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
@@ -135,7 +135,7 @@ func void DIA_Buster_Hello_SlewBeasts()
 func void DIA_Buster_Hello_WannaTestIt()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_00"); //Vuoi scoprirlo?
-	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_01"); //Oh, aiuto! Ho scelto la persona sbagliata, non è vero?
+	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_01"); //Oh, aiuto! Ho scelto la persona sbagliata, non Ã¨ vero?
 	AI_Output (other,self ,"DIA_Buster_Hello_WannaTestIt_15_02"); //Puoi dirlo forte.
 	AI_Output (self ,other,"DIA_Buster_Hello_WannaTestIt_13_03"); //Allora vieni, mostrami cosa sai fare.
 	
@@ -146,8 +146,8 @@ func void DIA_Buster_Hello_WannaTestIt()
 func void DIA_Buster_Hello_Impressive()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_Impressive_15_00"); //Impressionante.
-	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_01"); //(ride) È il nostro mestiere, ragazzo! Creiamo noi stessi armi e armature!
-	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_02"); //Sfidiamo la morte ogni giorno. Ma un bifolco di campagna come te non può capirlo.
+	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_01"); //(ride) Ãˆ il nostro mestiere, ragazzo! Creiamo noi stessi armi e armature!
+	AI_Output (self ,other,"DIA_Buster_Hello_Impressive_13_02"); //Sfidiamo la morte ogni giorno. Ma un bifolco di campagna come te non puÃ² capirlo.
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
@@ -176,8 +176,8 @@ func void DIA_Buster_Hello_LetMeShowYou()
 func void DIA_Buster_Hello_SoWhat()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_SoWhat_15_00"); //E allora?
-	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_01"); //(sbuffa) Come se sapessi di cosa stai parlando. Pensi di essere forte, non è vero?
-	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_02"); //(arrabbiato) Forse è giunto il momento che qualcuno ti dia una bella lezione!
+	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_01"); //(sbuffa) Come se sapessi di cosa stai parlando. Pensi di essere forte, non Ã¨ vero?
+	AI_Output (self ,other,"DIA_Buster_Hello_SoWhat_13_02"); //(arrabbiato) Forse Ã¨ giunto il momento che qualcuno ti dia una bella lezione!
 	
 	Info_ClearChoices	(DIA_Buster_Hello);
 
@@ -211,7 +211,7 @@ func void DIA_Buster_Hello_Whenever()
 func void DIA_Buster_Hello_JustJoking()
 {
 	AI_Output (other,self ,"DIA_Buster_Hello_JustJoking_15_00"); //Stavo solo scherzando...
-	AI_Output (self ,other,"DIA_Buster_Hello_JustJoking_13_01"); //Già, bravo, abbassa la cresta! Sparisci subito dalla mia vista!
+	AI_Output (self ,other,"DIA_Buster_Hello_JustJoking_13_01"); //GiÃ , bravo, abbassa la cresta! Sparisci subito dalla mia vista!
 	
 	AI_StopProcessInfos	(self);
 };
@@ -326,7 +326,7 @@ FUNC VOID DIA_Buster_WannaJoin_Info()
 		{
 			AI_Output (self, other,"DIA_Buster_WannaJoin_13_02"); //Non sei il migliore dei guerrieri, ma almeno non sei un codardo.
 		};
-		AI_Output (self, other,"DIA_Buster_WannaJoin_13_03"); //Il mio voto non conta molto visto che non sono qui da tanto tempo, ma quando Lee me lo chiederà, voterò per te.
+		AI_Output (self, other,"DIA_Buster_WannaJoin_13_03"); //Il mio voto non conta molto visto che non sono qui da tanto tempo, ma quando Lee me lo chiederÃ , voterÃ² per te.
 		Buster_Duell = TRUE;
 		Log_CreateTopic (TOPIC_SLDRespekt,LOG_MISSION);
 		Log_SetTopicStatus (TOPIC_SLDRespekt,LOG_RUNNING);
@@ -343,7 +343,7 @@ FUNC VOID DIA_Buster_WannaJoin_Info()
 };
 
 // ************************************************************
-// 		  				 Mehr über Söldner		
+// 		  				 Mehr Ã¼ber SÃ¶ldner		
 // ************************************************************
 var int Buster_SentenzaTip;
 
@@ -384,7 +384,7 @@ FUNC VOID DIA_Buster_OtherSld_Info()
 	}
 	else  //FIGHT_NONE oder FIGHT_CANCEL
 	{
-		AI_Output (self, other,"DIA_Buster_OtherSld_13_07"); //Ma perché sto dicendo tutto questo a TE, pulce!
+		AI_Output (self, other,"DIA_Buster_OtherSld_13_07"); //Ma perchÃ© sto dicendo tutto questo a TE, pulce!
 		AI_StopProcessInfos (self);		
 	};
 };
@@ -416,8 +416,8 @@ FUNC INT DIA_Buster_AboutSentenza_Condition()
 FUNC VOID DIA_Buster_AboutSentenza_Info()
 {	
 	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_00"); //E questa Sentenza?
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_01"); //Cercherà di scucirti dell'oro quando entrerai nella fattoria. Lo fa con tutti i nuovi arrivati.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_02"); //E se fossi in te, pagherei. È quello che ho fatto ai tempi. E la cosa buona è che ha votato per me dopo.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_01"); //CercherÃ  di scucirti dell'oro quando entrerai nella fattoria. Lo fa con tutti i nuovi arrivati.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_02"); //E se fossi in te, pagherei. Ãˆ quello che ho fatto ai tempi. E la cosa buona Ã¨ che ha votato per me dopo.
 	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_03"); //Una mano lava l'altra, ha detto. Ho perso tutto il mio oro nello scambio, ma non era comunque molto. E alla fine sono stato soddisfatto.
 	AI_Output (self, other,"DIA_Buster_AboutSentenza_13_04"); //Una volta l'ho visto picchiare un tizio che aveva deciso di NON pagarlo.
 	AI_Output (other, self,"DIA_Buster_AboutSentenza_15_05"); //Grazie per il suggerimento.
@@ -425,13 +425,13 @@ FUNC VOID DIA_Buster_AboutSentenza_Info()
 
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
 	Info_AddChoice (DIA_Buster_AboutSentenza, "No.", DIA_Buster_AboutSentenza_No);
-	Info_AddChoice (DIA_Buster_AboutSentenza, "Ecco prendi... 5 pezzi d’oro.", DIA_Buster_AboutSentenza_Give);
+	Info_AddChoice (DIA_Buster_AboutSentenza, "Ecco prendi... 5 pezzi dâ€™oro.", DIA_Buster_AboutSentenza_Give);
 };
 
 func void DIA_Buster_AboutSentenza_Give()
 {
-	AI_Output (other, self,"DIA_Buster_AboutSentenza_Give_15_00"); //Ecco prendi... 5 monete d’oro.
-	AI_Output (self, other,"DIA_Buster_AboutSentenza_Give_13_01"); //Grazie amico. Sembra che potrò bere qualcosa stasera, dopo tutto. Non lo dimenticherò.
+	AI_Output (other, self,"DIA_Buster_AboutSentenza_Give_15_00"); //Ecco prendi... 5 monete dâ€™oro.
+	AI_Output (self, other,"DIA_Buster_AboutSentenza_Give_13_01"); //Grazie amico. Sembra che potrÃ² bere qualcosa stasera, dopo tutto. Non lo dimenticherÃ².
 	Buster_GoldZumBrennen = TRUE;
 	Buster_Bonus = 50;
 	Info_ClearChoices (DIA_Buster_AboutSentenza);
@@ -455,7 +455,7 @@ INSTANCE DIA_Buster_LeeLeader (C_INFO)
 	condition	= DIA_Buster_LeeLeader_Condition;
 	information	= DIA_Buster_LeeLeader_Info;
 	permanent	= FALSE;
-	description = "Lee è il capo dei mercenari, non è vero?";
+	description = "Lee Ã¨ il capo dei mercenari, non Ã¨ vero?";
 };                       
 
 FUNC INT DIA_Buster_LeeLeader_Condition()
@@ -468,10 +468,10 @@ FUNC INT DIA_Buster_LeeLeader_Condition()
  
 FUNC VOID DIA_Buster_LeeLeader_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_00"); //Lee è il capo dei mercenari, non è vero?
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_00"); //Lee Ã¨ il capo dei mercenari, non Ã¨ vero?
 	AI_Output (self, other,"DIA_Buster_LeeLeader_13_01"); //Esatto. Ehi, ora ricordo dove ti ho visto! Anche tu eri nella colonia.
-	AI_Output (other, self,"DIA_Buster_LeeLeader_15_02"); //(sospira) Sì, c'ero anch'io.
-	AI_Output (self, other,"DIA_Buster_LeeLeader_13_03"); //Non ti ho visto quando è successo quel disastro. Neanche prima, a dire il vero.
+	AI_Output (other, self,"DIA_Buster_LeeLeader_15_02"); //(sospira) SÃ¬, c'ero anch'io.
+	AI_Output (self, other,"DIA_Buster_LeeLeader_13_03"); //Non ti ho visto quando Ã¨ successo quel disastro. Neanche prima, a dire il vero.
 	AI_Output (other, self,"DIA_Buster_LeeLeader_15_04"); //Ho avuto altri problemi.
 	AI_Output (self, other,"DIA_Buster_LeeLeader_13_05"); //Ti sei perso parecchio, allora... Le cose sono cambiate da quando eravamo in prigioni assieme.
 };
@@ -488,7 +488,7 @@ INSTANCE DIA_Buster_WhatHappened (C_INFO)
 	condition	= DIA_Buster_WhatHappened_Condition;
 	information	= DIA_Buster_WhatHappened_Info;
 	permanent	= FALSE;
-	description = "Cosa ne è stato dei mercenari nella colonia?";
+	description = "Cosa ne Ã¨ stato dei mercenari nella colonia?";
 };                       
 
 FUNC INT DIA_Buster_WhatHappened_Condition()
@@ -502,11 +502,11 @@ FUNC INT DIA_Buster_WhatHappened_Condition()
  
 FUNC VOID DIA_Buster_WhatHappened_Info()
 {	
-	AI_Output (other, self,"DIA_Buster_WhatHappened_15_00"); //Cosa ne è stato dei mercenari nella colonia?
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_01"); //Dopo che la Barriera è scomparsa, Lee ci ha guidati fuori dalla colonia. Ha detto che non ci sarebbe potuto succedere nulla se fossimo rimasti tutti uniti. E ha avuto ragione.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_02"); //Non c'è voluto molto prima che ci trovassimo un posto tranquillo proprio qui. Il proprietario terriero ci paga per tenere lontano l'esercito della città.
+	AI_Output (other, self,"DIA_Buster_WhatHappened_15_00"); //Cosa ne Ã¨ stato dei mercenari nella colonia?
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_01"); //Dopo che la Barriera Ã¨ scomparsa, Lee ci ha guidati fuori dalla colonia. Ha detto che non ci sarebbe potuto succedere nulla se fossimo rimasti tutti uniti. E ha avuto ragione.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_02"); //Non c'Ã¨ voluto molto prima che ci trovassimo un posto tranquillo proprio qui. Il proprietario terriero ci paga per tenere lontano l'esercito della cittÃ .
 	AI_Output (self, other,"DIA_Buster_WhatHappened_13_03"); //E la maggior parte di noi si sarebbe offerta volontaria per farlo senza nessun compenso.
-	AI_Output (self, other,"DIA_Buster_WhatHappened_13_04"); //Ma Onar ci nutre tutti e noi possiamo prendercela comoda fino a quando non capiterà una buona occasione per lasciare questa maledetta isola.
+	AI_Output (self, other,"DIA_Buster_WhatHappened_13_04"); //Ma Onar ci nutre tutti e noi possiamo prendercela comoda fino a quando non capiterÃ  una buona occasione per lasciare questa maledetta isola.
 };
 
 
@@ -539,13 +539,13 @@ FUNC VOID DIA_Buster_Teach_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Buster_Teach_13_02"); //Non sei così stupido come sembri. D'accordo, ti insegnerò quello che so. Forse allora avrai persino una possibilità contro di me...
+		AI_Output (self, other, "DIA_Buster_Teach_13_02"); //Non sei cosÃ¬ stupido come sembri. D'accordo, ti insegnerÃ² quello che so. Forse allora avrai persino una possibilitÃ  contro di me...
 	};
 	
 	if (BusterLOG == FALSE)
 	{
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTeacher,"Buster può insegnarmi il combattimento con le armi a una mano.");
+		B_LogEntry (Topic_SoldierTeacher,"Buster puÃ² insegnarmi il combattimento con le armi a una mano.");
 		BusterLOG = TRUE;
 	};
 	Info_ClearChoices 	(DIA_Buster_Teach);
@@ -645,28 +645,28 @@ func void DIA_Buster_SHADOWBEASTS_Info ()
 	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_01"); //Che vuoi?
 	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_02"); //In questi giorni ho pensato a come potremmo fare un po' di soldi facili in questa fogna.
 	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_15_03"); //E allora?
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_04"); //Penso di essere incappato nella possibilità di far soldi velocemente.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_05"); //Un mercante della città sarebbe disposto a sborsare un mucchio di quattrini per una certa cosa.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_04"); //Penso di essere incappato nella possibilitÃ  di far soldi velocemente.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_13_05"); //Un mercante della cittÃ  sarebbe disposto a sborsare un mucchio di quattrini per una certa cosa.
 
 	Info_ClearChoices	(DIA_Buster_SHADOWBEASTS);
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Chi è questo mercante di cui parli?", DIA_Buster_SHADOWBEASTS_wer );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Chi Ã¨ questo mercante di cui parli?", DIA_Buster_SHADOWBEASTS_wer );
 	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Di cosa si tratta?", DIA_Buster_SHADOWBEASTS_was );
-	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Perché mi stai dicendo tutto questo?", DIA_Buster_SHADOWBEASTS_ich );
+	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "PerchÃ© mi stai dicendo tutto questo?", DIA_Buster_SHADOWBEASTS_ich );
 
 };
 func void DIA_Buster_SHADOWBEASTS_ich ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_00"); //Perché mi stai dicendo tutto questo?
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_00"); //PerchÃ© mi stai dicendo tutto questo?
 	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_01"); //Non posso farlo da solo. Devo restare qui e sorvegliare queste stupide pecore.
 	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_ich_15_02"); //I contadini, intendi.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_03"); //È quello che ho detto.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_ich_13_03"); //Ãˆ quello che ho detto.
 
 };
 func void DIA_Buster_SHADOWBEASTS_was ()
 {
 	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_15_00"); //Di cosa si tratta?
 	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_01"); //Il mercante dice che potrebbe rivendere i corni delle bestie d'ombra con un notevole profitto.
-	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_02"); //Qualcuno dovrebbe recarsi nei boschi e mietere quelle bestiacce. Ed è qui che entri in gioco tu.
+	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_13_02"); //Qualcuno dovrebbe recarsi nei boschi e mietere quelle bestiacce. Ed Ã¨ qui che entri in gioco tu.
 
 	Info_AddChoice	(DIA_Buster_SHADOWBEASTS, "Quanto si guadagna?", DIA_Buster_SHADOWBEASTS_was_wieviel );
 };
@@ -676,20 +676,20 @@ func void DIA_Buster_SHADOWBEASTS_was_wieviel ()
 	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_01"); //Un mucchio di soldi, ti dico. Ce ne saranno abbastanza per entrambi.
 	if (Buster_GoldZumBrennen == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_02"); //E siccome mi hai dato quell'oro in passato, ti farò un prezzo speciale.
+		AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_was_wieviel_13_02"); //E siccome mi hai dato quell'oro in passato, ti farÃ² un prezzo speciale.
 	};
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_03"); //Sembra interessante! Ti farò sapere quando riuscirò a ottenere dei corni.
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_was_wieviel_15_03"); //Sembra interessante! Ti farÃ² sapere quando riuscirÃ² a ottenere dei corni.
 	MIS_Buster_KillShadowbeasts_DJG = LOG_RUNNING;
 
 	Log_CreateTopic (TOPIC_Buster_KillShadowbeasts, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Buster_KillShadowbeasts, LOG_RUNNING);
-	B_LogEntry (TOPIC_Buster_KillShadowbeasts,"Buster mi offrirà un buon prezzo per ogni corno di bestia d'ombra che gli porterò."); 
+	B_LogEntry (TOPIC_Buster_KillShadowbeasts,"Buster mi offrirÃ  un buon prezzo per ogni corno di bestia d'ombra che gli porterÃ²."); 
 
 	Info_ClearChoices	(DIA_Buster_SHADOWBEASTS);
 };
 func void DIA_Buster_SHADOWBEASTS_wer ()
 {
-	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_wer_15_00"); //Chi è questo mercante di cui parli?
+	AI_Output			(other, self, "DIA_Buster_SHADOWBEASTS_wer_15_00"); //Chi Ã¨ questo mercante di cui parli?
 	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_01"); //Mi dispiace, amico. Dovrei essere veramente stupido per rivelarti le mie fonti. Stai cercando di scavalcarmi?
 	AI_Output			(self, other, "DIA_Buster_SHADOWBEASTS_wer_13_02"); //O fai affari con ME, o non ne fai affatto, capisci?
 
@@ -706,7 +706,7 @@ instance DIA_Buster_BringTrophyShadowbeast		(C_INFO)
 	information	 = 	DIA_Buster_BringTrophyShadowbeast_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Riguardo ai corni di bestia d’ombra...";
+	description	 = 	"Riguardo ai corni di bestia dâ€™ombra...";
 };
 
 func int DIA_Buster_BringTrophyShadowbeast_Condition ()
@@ -725,19 +725,19 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 {
 	if ((Kapitel >= 5))
 	{
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_00"); //Il mio mercante di città ci ha lasciati.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_00"); //Il mio mercante di cittÃ  ci ha lasciati.
 		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_15_01"); //Cosa vorresti dire?
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_02"); //È morto. Puoi tenerti i corni, non saprei cosa farmene ora.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_02"); //Ãˆ morto. Puoi tenerti i corni, non saprei cosa farmene ora.
 		MIS_Buster_KillShadowbeasts_DJG = LOG_SUCCESS; //Joly: Feierabend ab Kapitel 5!!!!!!!
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 	{
 		AI_Output			(other, self, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_15_03"); //Come si fa a prendere il corno da una bestia d'ombra?
-		AI_Output			(self, other, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_13_04"); //Non lo sai? Oh, mi sarei aspettato di più da te.
+		AI_Output			(self, other, "DIA_Buster_ANIMALTROPHYSHADOWBEAST_13_04"); //Non lo sai? Oh, mi sarei aspettato di piÃ¹ da te.
 	
 		Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
-		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, "Te ne parlerò più avanti.", DIA_Buster_BringTrophyShadowbeast_back );
+		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, "Te ne parlerÃ² piÃ¹ avanti.", DIA_Buster_BringTrophyShadowbeast_back );
 		Info_AddChoice	(DIA_Buster_BringTrophyShadowbeast, B_BuildLearnString ("Insegnami.",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Buster_BringTrophyShadowbeast_teach );
 	}
 	else 
@@ -772,7 +772,7 @@ func void DIA_Buster_BringTrophyShadowbeast_Info ()
 				B_GivePlayerXP (XP_BringBusterTrophyShadowbeasts);
 			};
 	
-		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_07"); //Ottimo, da' qui. E portamene ancora. Chi lo sa fino a quando quel mercante vorrà ancora queste cose.
+		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_07"); //Ottimo, da' qui. E portamene ancora. Chi lo sa fino a quando quel mercante vorrÃ  ancora queste cose.
 		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_13_08"); //Ecco la tua parte.
 	
 		BusterTrophyShadowbeastGeld	= (BusterTrophyShadowbeastCount * BustersBusterTrophyShadowbeastOffer);
@@ -788,7 +788,7 @@ func void DIA_Buster_BringTrophyShadowbeast_teach ()
 
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_01"); //Ascolta allora. Prima ti occupi della bestia d'ombra, poi afferri il corno con la mano destra più forte che puoi.
+			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_01"); //Ascolta allora. Prima ti occupi della bestia d'ombra, poi afferri il corno con la mano destra piÃ¹ forte che puoi.
 			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_02"); //Poi infili il coltello nella fronte e tagli una scanalatura nella carne intorno al corno.
 			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_03"); //Infine usi il coltello per fare leva sul corno, staccarlo dal teschio e mettertelo poi in tasca.
 			AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_teach_13_04"); //Bene. E poi lo porti a me. Non dovrebbe essere troppo difficile da farsi.
@@ -798,7 +798,7 @@ func void DIA_Buster_BringTrophyShadowbeast_teach ()
 
 func void DIA_Buster_BringTrophyShadowbeast_back ()
 {
-		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_back_15_00"); //Te ne parlerò più avanti.
+		AI_Output			(other, self, "DIA_Buster_BringTrophyShadowbeast_back_15_00"); //Te ne parlerÃ² piÃ¹ avanti.
 		AI_Output			(self, other, "DIA_Buster_BringTrophyShadowbeast_back_13_01"); //Lo spero.
 		Info_ClearChoices	(DIA_Buster_BringTrophyShadowbeast);
 };

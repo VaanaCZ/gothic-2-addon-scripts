@@ -40,16 +40,16 @@ FUNC INT DIA_Addon_10023_Wache_Hi_Condition()
 FUNC VOID DIA_Addon_10023_Wache_Hi_Info()
 {
 	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_00");//Ehi, dove vai? Vuoi entrare in questo passaggio?
-	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//Beh, certo, perché no?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//Là dietro ci sono anche più schiavi. Per quanto mi riguarda, puoi entrare, ma non fargli troppo male altrimenti non riescono più a lavorare.
+	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_01");//Beh, certo, perchÃ© no?
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_02");//LÃ  dietro ci sono anche piÃ¹ schiavi. Per quanto mi riguarda, puoi entrare, ma non fargli troppo male altrimenti non riescono piÃ¹ a lavorare.
 	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_03");//Dopo tutto, non vogliamo che perdano tempo: devono estrarre l'oro.
 	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_04");//Capisco. E chi ha dato quest'ordine?
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//È un ordine diretto di Bloodwyn.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_05");//Ãˆ un ordine diretto di Bloodwyn.
 	AI_Output (other, self, "DIA_Addon_10023_Wache_Hi_15_06");//Pensavo che il capo qui fosse Raven.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//Sì, ma ha dato gli schiavi a Bloodwyn perché a lui non servono più.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_Hi_11_07");//SÃ¬, ma ha dato gli schiavi a Bloodwyn perchÃ© a lui non servono piÃ¹.
 	
 	Pardos.attribute[ATR_HITPOINTS] 		= 70;
-	B_LogEntry (Topic_Addon_Sklaven,"Raven non sa più cosa fare degli schiavi. Ora appartengono a Bloodwyn."); 
+	B_LogEntry (Topic_Addon_Sklaven,"Raven non sa piÃ¹ cosa fare degli schiavi. Ora appartengono a Bloodwyn."); 
 };
 //---------------------------------------------------------------------
 //	Info go
@@ -75,7 +75,7 @@ FUNC VOID DIA_Addon_10023_Wache_go_Info()
 	
 	if (PrisonGuard_Rules == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//Ascolta. Qui comanda Bloodwyn. Gli schiavi sono suoi, quindi è lui che ha il diritto di liberarli.
+		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_01");//Ascolta. Qui comanda Bloodwyn. Gli schiavi sono suoi, quindi Ã¨ lui che ha il diritto di liberarli.
 		AI_Output (self, other, "DIA_Addon_10023_Wache_go_11_02");//Inoltre, anche Thorus ha voce in capitolo. E tu?
 		PrisonGuard_Rules = TRUE;
 		B_LogEntry (Topic_Addon_Sklaven,"Solo Bloodwyn e Thorus hanno il diritto di liberare gli schiavi.");
@@ -115,10 +115,10 @@ var int Wache_einmal;
 FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 {
 	
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//Ecco, è sufficiente?
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_00");//Ecco, Ã¨ sufficiente?
 	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_01");//(sta per vomitare) Metti via. Non voglio vedere!
 	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_02");//Faresti meglio a lasciar andare gli schiavi ADESSO.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//Aspetta un attimo. Bloodwyn non è l'unico ad avere voce in capitolo, qui. Finché non ho un ordine da Thorus, non verrà liberato nessuno.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_03");//Aspetta un attimo. Bloodwyn non Ã¨ l'unico ad avere voce in capitolo, qui. FinchÃ© non ho un ordine da Thorus, non verrÃ  liberato nessuno.
 	
 	if Npc_KnowsInfo (other, DIA_Addon_Thorus_Answer)
 	{
@@ -130,14 +130,14 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 		if (Wache_einmal == FALSE)
 		{
 			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_04");//Ma hai appena detto che gli schiavi appartengono a Bloodwyn.
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//Sì, ma ho anche detto che non lascerò andare via nessuno senza un ordine di Thorus.
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//Sei uno di quelli che non fa neppure la pipì senza un ordine, eh?
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_05");//SÃ¬, ma ho anche detto che non lascerÃ² andare via nessuno senza un ordine di Thorus.
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_06");//Sei uno di quelli che non fa neppure la pipÃ¬ senza un ordine, eh?
 			Wache_einmal = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//Sì, ma ho anche detto
-			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//…va bene, risparmiami il resto.
+			AI_Output (self, other, "DIA_Addon_10023_Wache_go_Blood_11_07");//SÃ¬, ma ho anche detto
+			AI_Output (other, self, "DIA_Addon_10023_Wache_go_Blood_15_08");//â€¦va bene, risparmiami il resto.
 		};
 		Info_ClearChoices 	(DIA_Addon_10023_Wache_go);
 	}; 
@@ -147,9 +147,9 @@ FUNC VOID DIA_Addon_10023_Wache_go_Blood()
 FUNC VOID DIA_Addon_10023_Wache_go_Thorus()
 {
 	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_00");//Ho parlato con Thorus. Ha ordinato che gli schiavi vengano liberati.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//Va bene, se lo ha ordinato Thorus. Ma mi domando perché mai abbia deciso una cosa del genere
-	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//…ma tu non sei pagato per porti delle domande.
-	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Va bene, va bene. Evidentemente qui non c'è più bisogno di me, quindi vado a prendermi un po' di stufato.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_01");//Va bene, se lo ha ordinato Thorus. Ma mi domando perchÃ© mai abbia deciso una cosa del genere
+	AI_Output (other, self, "DIA_Addon_10023_Wache_go_Thorus_15_02");//â€¦ma tu non sei pagato per porti delle domande.
+	AI_Output (self, other, "DIA_Addon_10023_Wache_go_Thorus_11_03");//Va bene, va bene. Evidentemente qui non c'Ã¨ piÃ¹ bisogno di me, quindi vado a prendermi un po' di stufato.
 	
 	Ready_Togo = TRUE;
 	AI_StopProcessInfos (self);

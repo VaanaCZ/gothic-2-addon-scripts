@@ -49,7 +49,7 @@ FUNC INT DIA_Udar_Hello_Condition()
 FUNC VOID DIA_Udar_Hello_Info()
 {	
 	AI_Output	(self ,other,"DIA_Udar_Hello_09_00");//Sei stato fortunato a entrare. Stavo quasi per spararti addosso.
-	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//Allora immagino di dover essere felice che tu abbia una vista cosÏ acuta.
+	AI_Output	(other,self ,"DIA_Udar_Hello_15_01");//Allora immagino di dover essere felice che tu abbia una vista cos√¨ acuta.
 	AI_Output	(self ,other,"DIA_Udar_Hello_09_02");//Risparmia il fiato. Parla con Sengrath se hai bisogno di qualcosa.
 	
 	AI_StopProcessInfos (self);
@@ -79,7 +79,7 @@ FUNC INT DIA_Udar_YouAreBest_Condition()
 FUNC VOID DIA_Udar_YouAreBest_Info()
 {	
 	AI_Output	(other,self ,"DIA_Udar_YouAreBest_15_00");	//Ho sentito che sei il MIGLIORE balestriere in lungo e in largo.
-	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Se dicono cosÏ, dev'essere vero. Che cosa vuoi?
+	AI_Output	(self ,other,"DIA_Udar_YouAreBest_09_01");	//Se dicono cos√¨, dev'essere vero. Che cosa vuoi?
 };
 
 //***********************************
@@ -123,7 +123,7 @@ INSTANCE DIA_Udar_ImGood (C_INFO)
 	condition	= DIA_Udar_ImGood_Condition;
 	information	= DIA_Udar_ImGood_Info;
 	permanent	= FALSE;
-	Description = "Sono il pi˘ forte.";
+	Description = "Sono il pi√π forte.";
 };                       
 
 FUNC INT DIA_Udar_ImGood_Condition()
@@ -136,12 +136,12 @@ FUNC INT DIA_Udar_ImGood_Condition()
  
 FUNC VOID DIA_Udar_ImGood_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Sono il pi˘ forte.
+	AI_Output	(other,self ,"DIA_Udar_ImGood_15_00");	//Sono il pi√π forte.
 	AI_Output	(self ,other,"DIA_Udar_ImGood_09_01");	//(ride) Certo, come no!
-	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//Beh, se vuoi imparare, ti aiuterÚ.
+	AI_Output	(self ,other,"DIA_Udar_ImGood_09_02");	//Beh, se vuoi imparare, ti aiuter√≤.
 	
 	Udar_TeachPlayer = TRUE;
-	B_LogEntry		(TOPIC_Teacher_OC, "Udar puÚ insegnarmi a usare la balestra."); 
+	B_LogEntry		(TOPIC_Teacher_OC, "Udar pu√≤ insegnarmi a usare la balestra."); 
 };
 
 //***********************************
@@ -185,12 +185,12 @@ FUNC VOID DIA_Udar_Teach_BACK()
 
 FUNC VOID B_Udar_TeachNoMore1 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Conosci gi‡ le basi, non abbiamo tempo per altro.
+	AI_Output(self,other,"B_Udar_TeachNoMore1_09_00"); //Conosci gi√† le basi, non abbiamo tempo per altro.
 };
 
 FUNC VOID B_Udar_TeachNoMore2 ()
 {
-	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Per migliorare la tua abilit‡ con l'arma, dovresti cercare un maestro adatto.
+	AI_Output(self,other,"B_Udar_TeachNoMore2_09_00"); //Per migliorare la tua abilit√† con l'arma, dovresti cercare un maestro adatto.
 };
 
 FUNC VOID DIA_Udar_Teach_Crossbow_1 ()
@@ -248,7 +248,7 @@ FUNC VOID DIA_Udar_Perm_Info()
 {	
 	AI_Output	(other,self ,"DIA_Udar_Perm_15_00");	//Come vanno le cose, al castello?
 	AI_Output	(self ,other,"DIA_Udar_Perm_09_01");	//Alcuni dei ragazzi si stanno allenando, ma in generale stiamo tutti aspettando che succeda qualcosa.
-	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Questa incertezza ci sta esaurendo. » la strategia di questi maledetti orchi. Aspetteranno fino a quando i nostri nervi non saranno a pezzi.
+	AI_Output	(self ,other,"DIA_Udar_Perm_09_02");	//Questa incertezza ci sta esaurendo. √à la strategia di questi maledetti orchi. Aspetteranno fino a quando i nostri nervi non saranno a pezzi.
 };	
 //***********************************
 //	Ring 
@@ -261,7 +261,7 @@ INSTANCE DIA_Udar_Ring (C_INFO)
 	condition	= DIA_Udar_Ring_Condition;
 	information	= DIA_Udar_Ring_Info;
 	permanent	= FALSE;
-	Description = "Ecco, ti ho portato líanello di Tengron...";
+	Description = "Ecco, ti ho portato l‚Äôanello di Tengron...";
 };                       
 FUNC INT DIA_Udar_Ring_Condition()
 {
@@ -272,9 +272,9 @@ FUNC INT DIA_Udar_Ring_Condition()
 };
 FUNC VOID DIA_Udar_Ring_Info()
 {	
-	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Tieni, ti ho portato l'anello di Tengron. Dovrebbe proteggerti. Tengron dice che verr‡ a riprenderlo quando sar‡ tornato.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Cosa? Sai cos'Ë questo anello? Ha ottenuto l'anello come ricompensa per il suo coraggio in battaglia.
-	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Dici che vuole tornare a riprenderlo? Se Ë il volere di Innos, ce la far‡. Se Ë il volere di Innos...
+	AI_Output	(other,self ,"DIA_Udar_Ring_15_00");	//Tieni, ti ho portato l'anello di Tengron. Dovrebbe proteggerti. Tengron dice che verr√† a riprenderlo quando sar√† tornato.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_01");	//Cosa? Sai cos'√® questo anello? Ha ottenuto l'anello come ricompensa per il suo coraggio in battaglia.
+	AI_Output	(self ,other,"DIA_Udar_Ring_09_02");	//Dici che vuole tornare a riprenderlo? Se √® il volere di Innos, ce la far√†. Se √® il volere di Innos...
 	
 	B_GiveInvItems (other,self,ItRi_Tengron,1);
 	TengronRing = TRUE;
@@ -338,13 +338,13 @@ func int DIA_Udar_Kap4WiederDa_Condition ()
 
 func void DIA_Udar_Kap4WiederDa_Info ()
 {
-	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //» un bene che tu sia arrivato. Si Ë scatenato un inferno qui.
+	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_00"); //√à un bene che tu sia arrivato. Si √® scatenato un inferno qui.
 
 	if (hero.guild != GIL_DJG)
 	{
-		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Cos'Ë successo?
+		AI_Output			(other, self, "DIA_Udar_Kap4WiederDa_15_01"); //Cos'√® successo?
 		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_02"); //I cacciatori di draghi sfilano per il castello e si vantano di poter risolvere il problema dei draghi.
-		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Ma a dire la verit‡, dal loro aspetto sembra che non potrebbero uccidere nemmeno un vecchio squartatore malato.
+		AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_03"); //Ma a dire la verit√†, dal loro aspetto sembra che non potrebbero uccidere nemmeno un vecchio squartatore malato.
 	};
 
 	AI_Output			(self, other, "DIA_Udar_Kap4WiederDa_09_04"); //Molti di noi ormai stanno cominciando a preoccuparsi e a non credere che usciremo vivi da qui.
@@ -376,15 +376,15 @@ func int DIA_Udar_Sengrath_Condition ()
 func void DIA_Udar_Sengrath_Info ()
 {
 	AI_Output			(other, self, "DIA_Udar_Sengrath_15_00"); //Non dovevate essere in due di guardia, qui?
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //Non pi˘. Sengrath era di guardia sui bastioni, quando si Ë addormentato.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //Quindi la sua preziosa balestra Ë caduta.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //Abbiamo solo fatto in tempo a vedere uno degli orchi raccoglierla e sparire nell'oscurit‡.
-	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Sengrath si Ë svegliato ed Ë corso nella notte verso la palizzata degli orchi. Da allora non Ë pi˘ tornato.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_01"); //Non pi√π. Sengrath era di guardia sui bastioni, quando si √® addormentato.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_02"); //Quindi la sua preziosa balestra √® caduta.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_03"); //Abbiamo solo fatto in tempo a vedere uno degli orchi raccoglierla e sparire nell'oscurit√†.
+	AI_Output			(self, other, "DIA_Udar_Sengrath_09_04"); //Sengrath si √® svegliato ed √® corso nella notte verso la palizzata degli orchi. Da allora non √® pi√π tornato.
 	AI_Output			(self, other, "DIA_Udar_Sengrath_09_05"); //Che Innos ci protegga!
 
 	Log_CreateTopic (TOPIC_Sengrath_Missing, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Sengrath_Missing, LOG_RUNNING);
-	B_LogEntry (TOPIC_Sengrath_Missing,"Udar, la guardia del castello, Ë preoccupato per l'assenza del suo socio Sengrath. L'ultima volta che l'ha visto era di notte, mentre si stava recando alla palizzata degli orchi per recuperare la sua balestra."); 
+	B_LogEntry (TOPIC_Sengrath_Missing,"Udar, la guardia del castello, √® preoccupato per l'assenza del suo socio Sengrath. L'ultima volta che l'ha visto era di notte, mentre si stava recando alla palizzata degli orchi per recuperare la sua balestra."); 
 };
 
 
@@ -415,7 +415,7 @@ func void DIA_Udar_SENGRATHGEFUNDEN_Info ()
 {
 	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_00"); //Ho trovato Sengrath.
 	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_01"); //Davvero? Dove si trova?
-	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //» morto. Ecco la sua balestra. L'aveva con sÈ.
+	AI_Output			(other, self, "DIA_Udar_SENGRATHGEFUNDEN_15_02"); //√à morto. Ecco la sua balestra. L'aveva con s√©.
 	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_03"); //Dev'essere riuscito a recuperare la sua balestra, ma gli orchi l'hanno ucciso alla fine.
 	AI_Output			(self, other, "DIA_Udar_SENGRATHGEFUNDEN_09_04"); //Maledetto stupido. Lo sapevo, moriremo tutti.
 

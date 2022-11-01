@@ -8,7 +8,7 @@ const int SPL_MAGICBURN_DAMAGE_PER_SEC = 1;
 
 func void B_StopMagicBurn()
 {	
-	Npc_PercEnable	(self, PERC_ASSESSMAGIC, B_AssessMagic); //falls in diesem Frame (während des Ausführens des B_) noch ein neuer Spruch wirkt
+	Npc_PercEnable	(self, PERC_ASSESSMAGIC, B_AssessMagic); //falls in diesem Frame (wÃ¤hrend des AusfÃ¼hrens des B_) noch ein neuer Spruch wirkt
 	
 	Npc_ClearAIQueue(self);
 	AI_StandUp		(self);
@@ -16,11 +16,11 @@ func void B_StopMagicBurn()
 	if (self.guild < GIL_SEPERATOR_HUM)
 	{
 		B_AssessDamage();
-		AI_ContinueRoutine	(self); //Sicherheitshalber, falls B_AssessDamage NICHT in neuen ZS weiterleitet (kann z.ZT. aber nicht passieren) 							// - sonst würde NPC in Loop hängenbleiben
+		AI_ContinueRoutine	(self); //Sicherheitshalber, falls B_AssessDamage NICHT in neuen ZS weiterleitet (kann z.ZT. aber nicht passieren) 							// - sonst wÃ¼rde NPC in Loop hÃ¤ngenbleiben
 	}
 	else
 	{
-		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-Attitüde hostile ist 
+		Npc_SetTempAttitude (self, ATT_HOSTILE); //falls nicht schon Gilden-AttitÃ¼de hostile ist 
 		AI_ContinueRoutine	(self); //sonst bleibt Monster in Loop und kassiert weiter Schaden
 	};
 	
@@ -50,7 +50,7 @@ func void B_RestartBurn()
 	{
 		// nun, das ist krass, hier muss dann der ZS_Magicburn beendet werden, und der ZS_MagicFreeze gestartet werden
 		Npc_ClearAIQueue	(self);
-		B_ClearPerceptions	(self);								//schaltet alle Wahrnehmungen ab - so kann keine später priorisierte diesen Stateaufruf verhindern (s. z.B. AssessFightSound + AssessDamage)
+		B_ClearPerceptions	(self);								//schaltet alle Wahrnehmungen ab - so kann keine spÃ¤ter priorisierte diesen Stateaufruf verhindern (s. z.B. AssessFightSound + AssessDamage)
 		AI_StartState		(self, ZS_MagicFreeze, 0, "");
 	};
 };
@@ -82,7 +82,7 @@ func int ZS_MagicBurn_Loop ()
 	Npc_PercEnable		(self, PERC_ASSESSMAGIC, B_RestartBurn);// falls ein NSC nochmal von einem Firespell getroffen wurde, so muss die State Time reseted werden
 
 	// evtl. kann man hier auch den aktuellen Spell Level holen, und dann mehr Schaden verabreichen.
-	// allerdings brennt ein höher gecasteter Firespell auch länger und zieht somit sowieso mehr Schaden ab.
+	// allerdings brennt ein hÃ¶her gecasteter Firespell auch lÃ¤nger und zieht somit sowieso mehr Schaden ab.
 	if (Npc_GetStateTime(self) == 1)
 	{
 		Npc_SetStateTime(self,0);
@@ -95,7 +95,7 @@ func int ZS_MagicBurn_Loop ()
 	{
 		Npc_ClearAIQueue(self);		
 		AI_StandUp		(self);				// FIXME: wieso ? dann steht er doch noch mal auf bevor er abkratzt
-											// (dann sollte er auch noch sowas sagen wie: "Macht das nicht zu Hause Kinder" bevor er endgültig stirbt :)												
+											// (dann sollte er auch noch sowas sagen wie: "Macht das nicht zu Hause Kinder" bevor er endgÃ¼ltig stirbt :)												
 		return			LOOP_END;
 	};
 	

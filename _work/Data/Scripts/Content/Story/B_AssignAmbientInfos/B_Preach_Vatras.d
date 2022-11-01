@@ -6,35 +6,35 @@ func void B_Preach_Vatras(var int satz)
 {
 	if (satz == 0) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Ma la luce era un tormento per Beliar. E tutto ciò che Innos ha creato è stato distrutto da Beliar.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_00"); //Ma la luce era un tormento per Beliar. E tutto ciÃ² che Innos ha creato Ã¨ stato distrutto da Beliar.
 	};
 	if (satz == 1) 	
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //Ma Adanos ha visto che, in questo modo, niente avrebbe potuto esistere da solo. Né la luce, né le tenebre.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_01"); //Ma Adanos ha visto che, in questo modo, niente avrebbe potuto esistere da solo. NÃ© la luce, nÃ© le tenebre.
 	};
 	if (satz == 2)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //E dunque si è messo in mezzo ai suoi fratelli per tentare di riconciliarli, ma senza successo.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_02"); //E dunque si Ã¨ messo in mezzo ai suoi fratelli per tentare di riconciliarli, ma senza successo.
 	};
 	if (satz == 3)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Ma lì, dove si trovava Adanos, c'era un posto nel quale Innos e Beliar non avevano alcun potere.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_03"); //Ma lÃ¬, dove si trovava Adanos, c'era un posto nel quale Innos e Beliar non avevano alcun potere.
 	};
 	if (satz == 4)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //E in questo posto l'ordine e il caos si equivalevano. E così fu creato il mare.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_04"); //E in questo posto l'ordine e il caos si equivalevano. E cosÃ¬ fu creato il mare.
 	};
 	if (satz == 5)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //E il mare liberò la terra. E lì nacquero tutte le creature. Alberi e animali. Lupi e pecore. E per ultimi vennero gli esseri umani.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_05"); //E il mare liberÃ² la terra. E lÃ¬ nacquero tutte le creature. Alberi e animali. Lupi e pecore. E per ultimi vennero gli esseri umani.
 	};
 	if (satz == 6)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //E Adanos rimase compiaciuto da ciò che venne creato e fu soddisfatto allo stesso modo di tutte le creature.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_06"); //E Adanos rimase compiaciuto da ciÃ² che venne creato e fu soddisfatto allo stesso modo di tutte le creature.
 	};
 	if (satz == 7)
 	{	
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Ma la rabbia di Beliar era tale che egli venne sulla terra e scelse una bestia, le parlò e la sottomise.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_07"); //Ma la rabbia di Beliar era tale che egli venne sulla terra e scelse una bestia, le parlÃ² e la sottomise.
 	};
 	if (satz == 8)
 	{	
@@ -42,7 +42,7 @@ func void B_Preach_Vatras(var int satz)
 	};
 	if (satz == 9)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Ma Innos vide ciò che aveva fatto Beliar e anche lui scese sulla terra, scelse un essere umano, gli parlò, ed egli divenne il suo campione.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_09"); //Ma Innos vide ciÃ² che aveva fatto Beliar e anche lui scese sulla terra, scelse un essere umano, gli parlÃ², ed egli divenne il suo campione.
 	};
 	if (satz == 10)
 	{		
@@ -50,7 +50,7 @@ func void B_Preach_Vatras(var int satz)
 	};
 	if (satz == 11)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //E Beliar parlò con un'altra creatura. Ma Adanos scatenò una marea che spazzò via la creatura dalla faccia della terra.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_11"); //E Beliar parlÃ² con un'altra creatura. Ma Adanos scatenÃ² una marea che spazzÃ² via la creatura dalla faccia della terra.
 	};
 	if (satz == 12)
 	{		
@@ -58,7 +58,7 @@ func void B_Preach_Vatras(var int satz)
 	};
 	if (satz == 13)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //A questo punto Adanos si rivolse così ai suoi fratelli: 'non dovrete mai più camminare sulla mia terra, poiché essa è sacra. E tale resterà'.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_13"); //A questo punto Adanos si rivolse cosÃ¬ ai suoi fratelli: 'non dovrete mai piÃ¹ camminare sulla mia terra, poichÃ© essa Ã¨ sacra. E tale resterÃ '.
 	};
 	if (satz == 14)
 	{		
@@ -66,15 +66,15 @@ func void B_Preach_Vatras(var int satz)
 	};
 	if (satz == 15)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //E l'umano uccise la bestia ed entrò nel regno di Beliar.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_15"); //E l'umano uccise la bestia ed entrÃ² nel regno di Beliar.
 	};
 	if (satz == 16)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //Ma Adanos vide che l'ordine e il caos non erano più equilibrati e ordinò a Innos di riprendere il proprio potere divino dall'umano.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_16"); //Ma Adanos vide che l'ordine e il caos non erano piÃ¹ equilibrati e ordinÃ² a Innos di riprendere il proprio potere divino dall'umano.
 	};
 	if (satz == 17)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //E Innos, nella sua saggezza, obbedì.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_17"); //E Innos, nella sua saggezza, obbedÃ¬.
 	};
 	if (satz == 18)
 	{		
@@ -82,10 +82,10 @@ func void B_Preach_Vatras(var int satz)
 	};
 	if (satz == 19)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //E così ordinò a Innos di lasciare una parte del suo potere nel suo regno, in modo che avrebbe potuto riconsegnarlo agli umani nel caso in cui la bestia fosse ritornata.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_19"); //E cosÃ¬ ordinÃ² a Innos di lasciare una parte del suo potere nel suo regno, in modo che avrebbe potuto riconsegnarlo agli umani nel caso in cui la bestia fosse ritornata.
 	};
 	if (satz == 20)
 	{		
-		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //E Innos, nella sua saggezza, obbedì.
+		AI_Output (self, self, "DIA_Vatras_PREACH_05_20"); //E Innos, nella sua saggezza, obbedÃ¬.
 	};
 };

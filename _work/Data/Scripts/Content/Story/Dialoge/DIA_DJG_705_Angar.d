@@ -31,7 +31,7 @@ instance DIA_AngarDJG_HALLO		(C_INFO)
 	condition	 = 	DIA_AngarDJG_HALLO_Condition;
 	information	 = 	DIA_AngarDJG_HALLO_Info;
 
-	description	 = 	"Non ci siamo già visti?";
+	description	 = 	"Non ci siamo giÃ  visti?";
 };
 
 func int DIA_AngarDJG_HALLO_Condition ()
@@ -42,9 +42,9 @@ func int DIA_AngarDJG_HALLO_Condition ()
 func void DIA_AngarDJG_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_00"); //Io ti conosco! Sei Cor Angar. Eri un templare a Campo Palude.
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_01"); //(rassegnato) Chiamami Angar. Mi sono liberato del mio titolo. La Fratellanza del Dormiente è stata sciolta.
-	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_02"); //È strano, ma mi sembri un volto conosciuto. Tuttavia, non riesco a ricordarmi di te.
-	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_03"); //Qual è il problema?
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_01"); //(rassegnato) Chiamami Angar. Mi sono liberato del mio titolo. La Fratellanza del Dormiente Ã¨ stata sciolta.
+	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_02"); //Ãˆ strano, ma mi sembri un volto conosciuto. Tuttavia, non riesco a ricordarmi di te.
+	AI_Output			(other, self, "DIA_AngarDJG_HALLO_15_03"); //Qual Ã¨ il problema?
 	AI_Output			(self, other, "DIA_AngarDJG_HALLO_04_04"); //(stanco) Oh. Non sono riuscito a dormire bene per un po' di tempo per via di questi incubi ricorrenti.
 	B_LogEntry (TOPIC_Dragonhunter,"Ho trovato Angar nella Valle delle Miniere.");
 };
@@ -57,8 +57,8 @@ func void B_SCTellsAngarAboutMadPsi ()
 {	
 	if (Angar_KnowsMadPsi == FALSE)
 	{
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_00"); //La Confraternita del Dormiente è stata assoggettata dal maligno.
-		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_01"); //I tuoi vecchi amici di Campo Palude ora vagano per la regione con indosso vesti nere, e sono infastidite da tutto ciò che si muove.
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_00"); //La Confraternita del Dormiente Ã¨ stata assoggettata dal maligno.
+		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi_15_01"); //I tuoi vecchi amici di Campo Palude ora vagano per la regione con indosso vesti nere, e sono infastidite da tutto ciÃ² che si muove.
 		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi_04_02"); //Di cosa stai parlando?
 	};
 };
@@ -68,7 +68,7 @@ func void B_SCTellsAngarAboutMadPsi2 ()
 	if (Angar_KnowsMadPsi == FALSE)
 	{
 		AI_Output			(other, self, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_15_00"); //Essi ora servono il nemico e non sono altro che guerrieri del male senz'anima.
-		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_04_01"); //Per tutti gli dei. Come vorrei non essermi fatto accecare in questo modo. Ma non accadrà mai più, lo giuro.
+		AI_Output			(self, other, "DIA_Angar_B_SCTellsAngarAboutMadPsi2_04_01"); //Per tutti gli dei. Come vorrei non essermi fatto accecare in questo modo. Ma non accadrÃ  mai piÃ¹, lo giuro.
 		B_GivePlayerXP (XP_Angar_KnowsMadPsi);
 		Angar_KnowsMadPsi = TRUE;
 	};
@@ -100,8 +100,8 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_Info ()
 {
 	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_15_00"); //Come sei arrivato qui?
 	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_01"); //Dopo il crollo della barriera magica, mi sono nascosto sulle montagne. Era giunto il momento di fare qualcosa.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_02"); //Mi sono allontanato per giorni, quando all'improvviso mi sono risvegliato nel castello. Non chiedermi come sia stato possibile perché non ne ho idea.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_03"); //Come se non bastasse, ho perso anche l'amuleto che avevo da anni. Diventerò matto se non lo ritrovo.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_02"); //Mi sono allontanato per giorni, quando all'improvviso mi sono risvegliato nel castello. Non chiedermi come sia stato possibile perchÃ© non ne ho idea.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_04_03"); //Come se non bastasse, ho perso anche l'amuleto che avevo da anni. DiventerÃ² matto se non lo ritrovo.
 
 	Log_CreateTopic (TOPIC_AngarsAmulett, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AngarsAmulett, LOG_RUNNING);
@@ -113,16 +113,16 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_Info ()
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "La Confraternita del Dormiente è stata assoggettata dal male.", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "La Confraternita del Dormiente Ã¨ stata assoggettata dal male.", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
 	}
 	else
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Cosa è successo agli altri occupanti di Campo Palude?", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Cosa Ã¨ successo agli altri occupanti di Campo Palude?", DIA_Angar_WIEKOMMSTDUHIERHER_andere );
 	};
 
 	if (DJG_Angar_SentToStones == FALSE)
 	{
-	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Qual è la tua prossima mossa?", DIA_Angar_WIEKOMMSTDUHIERHER_nun );
+	Info_AddChoice	(DIA_Angar_WIEKOMMSTDUHIERHER, "Qual Ã¨ la tua prossima mossa?", DIA_Angar_WIEKOMMSTDUHIERHER_nun );
 	};
 };
 func void DIA_Angar_WIEKOMMSTDUHIERHER_amulett ()
@@ -137,7 +137,7 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_amulett ()
 	else
 	{
 		AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_02"); //Deve essere qui da qualche parte.
-		B_LogEntry (TOPIC_AngarsAmulett,"L'amuleto è vicino a una tomba di pietra a sud della Valle delle Miniere."); 
+		B_LogEntry (TOPIC_AngarsAmulett,"L'amuleto Ã¨ vicino a una tomba di pietra a sud della Valle delle Miniere."); 
 	};
 	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_amulett_04_03"); //Sospetto che sia stato rubato. Devo riaverlo assolutamente indietro.
 };
@@ -150,13 +150,13 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_15_00"); //Cosa è successo agli altri abitanti di Campo Palude?
+		AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_15_00"); //Cosa Ã¨ successo agli altri abitanti di Campo Palude?
 	};
 	
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_01"); //L'ultima cosa che mi ricordo è che la Barriera era crollata, accompagnata da un urlo disumano.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_02"); //Assaliti dal panico e dalla paura, siamo caduti a terra contorcendoci dal dolore. Quella voce... diventava sempre più forte.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_03"); //Una volta che tutto è finito, tutti sono fuggiti come forsennati finendo inghiottiti dalle tenebre, mentre gridavano disperatamente.
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_04"); //Non li ho più rivisti.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_01"); //L'ultima cosa che mi ricordo Ã¨ che la Barriera era crollata, accompagnata da un urlo disumano.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_02"); //Assaliti dal panico e dalla paura, siamo caduti a terra contorcendoci dal dolore. Quella voce... diventava sempre piÃ¹ forte.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_03"); //Una volta che tutto Ã¨ finito, tutti sono fuggiti come forsennati finendo inghiottiti dalle tenebre, mentre gridavano disperatamente.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_andere_04_04"); //Non li ho piÃ¹ rivisti.
 	
 	if (SC_KnowsMadPsi == TRUE)
 	{
@@ -167,7 +167,7 @@ func void DIA_Angar_WIEKOMMSTDUHIERHER_andere ()
 func void DIA_Angar_WIEKOMMSTDUHIERHER_nun ()
 {
 	AI_Output			(other, self, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_15_00"); //Cosa farai adesso?
-	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_01"); //Prima mi riposerò un po', per poter poi riprendere la ricerca del mio amuleto.
+	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_01"); //Prima mi riposerÃ² un po', per poter poi riprendere la ricerca del mio amuleto.
 	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_02"); //Ho sentito parlare dei draghi.
 	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_03"); //Pare inoltre che molti guerrieri siano giunti nella Valle delle Miniere per cacciarli.
 	AI_Output			(self, other, "DIA_Angar_WIEKOMMSTDUHIERHER_nun_04_04"); //Sto pensando di unirmi a loro.
@@ -191,7 +191,7 @@ instance DIA_Angar_SCTellsAngarAboutMadPsi2		(C_INFO)
 	condition	 = 	DIA_Angar_SCTellsAngarAboutMadPsi2_Condition;
 	information	 = 	DIA_Angar_SCTellsAngarAboutMadPsi2_Info;
 
-	description	 = 	"La Confraternita del Dormiente è stata assoggettata dal male."; //Joly: falls erst nach DIA_Angar_WIEKOMMSTDUHIERHER  (SC_KnowsMadPsi == TRUE)
+	description	 = 	"La Confraternita del Dormiente Ã¨ stata assoggettata dal male."; //Joly: falls erst nach DIA_Angar_WIEKOMMSTDUHIERHER  (SC_KnowsMadPsi == TRUE)
 };
 
 func int DIA_Angar_SCTellsAngarAboutMadPsi2_Condition ()
@@ -235,7 +235,7 @@ func int DIA_Angar_FOUNDAMULETT_Condition ()
 func void B_AngarsAmulettAbgeben()
 {
 	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_15_00"); //Ho trovato il tuo amuleto.
-	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_04_01"); //Ti ringrazio. Credevo che non l'avrei più rivisto.
+	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_04_01"); //Ti ringrazio. Credevo che non l'avrei piÃ¹ rivisto.
 
 	B_GiveInvItems (other, self, ItAm_Mana_Angar_MIS,1);
 	
@@ -247,13 +247,13 @@ func void DIA_Angar_FOUNDAMULETT_Info ()
 {
 	B_AngarsAmulettAbgeben ();
 
-	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Cosa lo rende così speciale per te?", DIA_Angar_FOUNDAMULETT_besonders );
+	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Cosa lo rende cosÃ¬ speciale per te?", DIA_Angar_FOUNDAMULETT_besonders );
 	Info_AddChoice	(DIA_Angar_FOUNDAMULETT, "Cosa pensi di fare, adesso?", DIA_Angar_FOUNDAMULETT_nun );
 };
 
 func void DIA_Angar_FOUNDAMULETT_besonders ()
 {
-	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_00"); //Cosa lo rende così speciale per te?
+	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_00"); //Cosa lo rende cosÃ¬ speciale per te?
 	AI_Output			(self, other, "DIA_Angar_FOUNDAMULETT_besonders_04_01"); //Era un regalo.
 	AI_Output			(other, self, "DIA_Angar_FOUNDAMULETT_besonders_15_02"); //Capisco.
 
@@ -298,7 +298,7 @@ func int DIA_Angar_DJG_ANWERBEN_Condition ()
 func void DIA_Angar_DJG_ANWERBEN_Info ()
 {
 	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_15_00"); //Forse posso aiutarti a trovare il tuo amuleto.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_04_01"); //Perché no? Un po' di aiuto non fa mai male.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_04_01"); //PerchÃ© no? Un po' di aiuto non fa mai male.
 
 
 	if (DJG_Angar_SentToStones == FALSE)
@@ -316,21 +316,21 @@ func void DIA_Angar_DJG_ANWERBEN_Info ()
 func void DIA_Angar_DJG_ANWERBEN_DJG ()
 {
 	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_DJG_15_00"); //Cosa mi dici dei cacciatori di draghi.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_DJG_04_01"); //Parlerò con loro più tardi. Forse potrebbe tornargli utile un alleato capace.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_DJG_04_01"); //ParlerÃ² con loro piÃ¹ tardi. Forse potrebbe tornargli utile un alleato capace.
 
 };
 
 func void DIA_Angar_DJG_ANWERBEN_wann ()
 {
 	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wann_15_00"); //Quando andrai?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wann_04_01"); //Non appena mi sentirò meglio.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wann_04_01"); //Non appena mi sentirÃ² meglio.
 };
 
 func void DIA_Angar_DJG_ANWERBEN_wo ()
 {
 	AI_Output			(other, self, "DIA_Angar_DJG_ANWERBEN_wo_15_00"); //Dove vuoi cercare?
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_01"); //Andrò a sud, dove mi trovavo l'ultima volta.
-	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_02"); //C'è una tomba sotterranea laggiù, circondata da molti massi.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_01"); //AndrÃ² a sud, dove mi trovavo l'ultima volta.
+	AI_Output			(self, other, "DIA_Angar_DJG_ANWERBEN_wo_04_02"); //C'Ã¨ una tomba sotterranea laggiÃ¹, circondata da molti massi.
 
 };
 func void DIA_Angar_DJG_ANWERBEN_gehen ()
@@ -354,7 +354,7 @@ instance DIA_AngarDJG_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_AngarDJG_WASMACHSTDU_Condition;
 	information	 = 	DIA_AngarDJG_WASMACHSTDU_Info;
 
-	description	 = 	"C’è qualcosa che non va?";
+	description	 = 	"Câ€™Ã¨ qualcosa che non va?";
 };
 
 func int DIA_AngarDJG_WASMACHSTDU_Condition ()
@@ -371,12 +371,12 @@ func int DIA_AngarDJG_WASMACHSTDU_Condition ()
 
 func void DIA_AngarDJG_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_00"); //C’è qualcosa che non va?
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_01"); //Hai sentito? In tutta la mia vita non ho sentito niente di più spaventoso!
+	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_00"); //Câ€™Ã¨ qualcosa che non va?
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_01"); //Hai sentito? In tutta la mia vita non ho sentito niente di piÃ¹ spaventoso!
 	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_15_02"); //Di cosa parli? Io non sento niente!
 	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_03"); //Tutta quest'area emana odore di morte e distruzione. Le creature putride sorvegliano l'ingresso roccioso alla cripta di fronte a noi.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_04"); //C'è qualcosa di spaventoso nascosto lì dentro che invia i suoi scagnozzi sulla superficie di questo mondo.
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_05"); //Sono convinto che il mio amuleto si trovi là dentro, da qualche parte.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_04"); //C'Ã¨ qualcosa di spaventoso nascosto lÃ¬ dentro che invia i suoi scagnozzi sulla superficie di questo mondo.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_04_05"); //Sono convinto che il mio amuleto si trovi lÃ  dentro, da qualche parte.
 
 	if (Angar_willDJGwerden == TRUE)
 	{
@@ -386,7 +386,7 @@ func void DIA_AngarDJG_WASMACHSTDU_Info ()
 func void DIA_AngarDJG_WASMACHSTDU_DJG ()
 {
 	AI_Output			(other, self, "DIA_AngarDJG_WASMACHSTDU_DJG_15_00"); //Hai parlato con i cacciatori di draghi?
-	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_01"); //Sì. Ma io mi aspettavo una compagnia come quella che avevamo a Campo Palude.
+	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_01"); //SÃ¬. Ma io mi aspettavo una compagnia come quella che avevamo a Campo Palude.
 	AI_Output			(self, other, "DIA_AngarDJG_WASMACHSTDU_DJG_04_02"); //Quei ragazzi non sono altro che un'accozzaglia di idioti selvaggi. Non fanno per me.
 };
 
@@ -416,11 +416,11 @@ func int DIA_AngarDJG_WHATSINTHERE_Condition ()
 func void DIA_AngarDJG_WHATSINTHERE_Info ()
 {
 	AI_Output			(other, self, "DIA_AngarDJG_WHATSINTHERE_15_00"); //Cosa si nasconde nella miniera tra le rocce?
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_01"); //Qualcosa che non mi lascerà avvicinare all'ingresso!
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //È sorvegliato da una creatura magica, dall'aspetto orrendo. L'ho vista di notte, mentre perlustrava la zona.
-	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //Si muove avanti e indietro fra gli alberi, e hai come l'impressione che succhi tutta la linfa vitale da ciò che la circonda, come una spugna.
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_01"); //Qualcosa che non mi lascerÃ  avvicinare all'ingresso!
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_02"); //Ãˆ sorvegliato da una creatura magica, dall'aspetto orrendo. L'ho vista di notte, mentre perlustrava la zona.
+	AI_Output			(self, other, "DIA_AngarDJG_WHATSINTHERE_04_03"); //Si muove avanti e indietro fra gli alberi, e hai come l'impressione che succhi tutta la linfa vitale da ciÃ² che la circonda, come una spugna.
 
-	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, daß sich in der Felsengruft, wo er sich aufhält, ein Drache befindet, der hier seine untoten Helfer an die Oberfläche entsendet.");
+	//Log_AddEntry (TOPIC_Dragonhunter,"Ich habe Angar im Minental gefunden. Er vermutet, daÃŸ sich in der Felsengruft, wo er sich aufhÃ¤lt, ein Drache befindet, der hier seine untoten Helfer an die OberflÃ¤che entsendet.");
 	B_LogEntry (TOPIC_Dragonhunter,"Ho trovato Angar nella Valle delle Miniere.");
 };
 
@@ -449,7 +449,7 @@ func int DIA_AngarDJG_WANTTOGOINTHERE_Condition ()
 func void DIA_AngarDJG_WANTTOGOINTHERE_Info ()
 {
 	AI_Output			(other, self, "DIA_AngarDJG_WANTTOGOINTHERE_15_00"); //Andiamoci insieme.
-	AI_Output			(self, other, "DIA_AngarDJG_WANTTOGOINTHERE_04_01"); //Ci proverò io, ma fai attenzione.
+	AI_Output			(self, other, "DIA_AngarDJG_WANTTOGOINTHERE_04_01"); //Ci proverÃ² io, ma fai attenzione.
 
 	AI_StopProcessInfos (self);  
 
@@ -545,7 +545,7 @@ instance DIA_Angar_WASISTLOS		(C_INFO)
 	condition	 = 	DIA_Angar_WASISTLOS_Condition;
 	information	 = 	DIA_Angar_WASISTLOS_Info;
 
-	description	 = 	"Qual è il problema?";
+	description	 = 	"Qual Ã¨ il problema?";
 };
 
 func int DIA_Angar_WASISTLOS_Condition ()
@@ -562,14 +562,14 @@ func int DIA_Angar_WASISTLOS_Condition ()
 
 func void DIA_Angar_WASISTLOS_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_WASISTLOS_15_00"); //Qual è il problema?
+	AI_Output			(other, self, "DIA_Angar_WASISTLOS_15_00"); //Qual Ã¨ il problema?
 	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_01"); //Non posso proseguire oltre con te.
-	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_02"); //Qualcosa mi dice che non uscirò di qui vivo.
+	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_02"); //Qualcosa mi dice che non uscirÃ² di qui vivo.
 	AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_03"); //Non riesco a spiegarlo, ma...
 	
 	if (SC_KnowsMadPsi == TRUE)
 	{
-		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_04"); //Devo abbandonare questa terra maledetta il prima possibile, altrimenti andrò incontro allo stesso destino dei miei fratelli.
+		AI_Output			(self, other, "DIA_Angar_WASISTLOS_04_04"); //Devo abbandonare questa terra maledetta il prima possibile, altrimenti andrÃ² incontro allo stesso destino dei miei fratelli.
 	}
 	else
 	{
@@ -578,7 +578,7 @@ func void DIA_Angar_WASISTLOS_Info ()
 
 	AI_StopProcessInfos (self);
 
-	B_LogEntry (TOPIC_Dragonhunter,"Angar se n'è andato. Con tutti quei non morti ha l'impressione di combattere la propria gente.");
+	B_LogEntry (TOPIC_Dragonhunter,"Angar se n'Ã¨ andato. Con tutti quei non morti ha l'impressione di combattere la propria gente.");
 			
 	self.aivar[AIV_PARTYMEMBER] = FALSE;
 	Npc_ExchangeRoutine	(self,"LeavingOW");
@@ -609,9 +609,9 @@ func void DIA_Angar_WHYAREYOUHERE_Info ()
 {
 	AI_Output			(other, self, "DIA_Angar_WHYAREYOUHERE_15_00"); //Angar? Cosa stai facendo, qui?
 	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_01"); //Ero diretto al passo quando mi sono imbattuto negli orchi. Non sono riuscito a scrollarmi di dosso quelle creature dimenticate da dio.
-	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_02"); //Aspetterò un po' e poi attraverserò il passo. Ci vediamo dall'altra parte!
+	AI_Output			(self, other, "DIA_Angar_WHYAREYOUHERE_04_02"); //AspetterÃ² un po' e poi attraverserÃ² il passo. Ci vediamo dall'altra parte!
 
-	B_LogEntry (TOPIC_Dragonhunter,"Ho nuovamente incontrato Angar, è bloccato nella Valle delle Miniere.");
+	B_LogEntry (TOPIC_Dragonhunter,"Ho nuovamente incontrato Angar, Ã¨ bloccato nella Valle delle Miniere.");
 	B_GivePlayerXP (XP_AngarDJGAgain); 
 	AI_StopProcessInfos (self);
 };

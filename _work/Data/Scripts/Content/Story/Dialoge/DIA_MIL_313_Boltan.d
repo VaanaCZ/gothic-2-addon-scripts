@@ -73,7 +73,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_SLD)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //Sì, entra e vai a salutare il tuo amico.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_07"); //SÃ¬, entra e vai a salutare il tuo amico.
 		}
 		else
 		{
@@ -91,7 +91,7 @@ func void DIA_Boltan_ToConvicts_Info ()
 	{
 		if (other.guild == GIL_MIL)
 		{
-			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //D’accordo, collega.
+			AI_Output (self ,other, "DIA_Boltan_Add_05_04"); //Dâ€™accordo, collega.
 		}
 		else if (other.guild == GIL_PAL) || (other.guild == GIL_KDF)
 		{
@@ -130,7 +130,7 @@ func int DIA_Boltan_HalloBennet_Condition ()
 func void DIA_Boltan_HalloBennet_Info ()
 {
 	AI_Output (self ,other, "DIA_Boltan_Add_05_08"); //Non sei venuto per far evadere il tuo amico, vero?
-	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Scordatelo! Non appena suonerò l'allarme, i miei uomini saranno qui in un attimo!
+	AI_Output (self ,other, "DIA_Boltan_Add_05_09"); //Scordatelo! Non appena suonerÃ² l'allarme, i miei uomini saranno qui in un attimo!
 	AI_Output (self ,other, "DIA_Boltan_Add_05_10"); //E a quel punto faremo uno spezzatino di mercenario! (risata sguaiata)
 };		
 	
@@ -160,9 +160,9 @@ func int DIA_Boltan_HalloCanthar_Condition ()
 func void DIA_Boltan_HalloCanthar_Info ()
 {
 	AI_Output (self ,other, "DIA_Boltan_Add_05_11"); //Ehi, tu sei quello che ha accusato Canthar il mercante.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Molta gente è venuta qui per garantire per lui. Tutte persone rispettabili.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_12"); //Molta gente Ã¨ venuta qui per garantire per lui. Tutte persone rispettabili.
 	AI_Output (self ,other, "DIA_Boltan_Add_05_13"); //Credo che la situazione sia stata fraintesa. Sono cose che succedono.
-	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //In futuro dovresti fare più attenzione a chi mandi in prigione.
+	AI_Output (self ,other, "DIA_Boltan_Add_05_14"); //In futuro dovresti fare piÃ¹ attenzione a chi mandi in prigione.
 };		
 
 

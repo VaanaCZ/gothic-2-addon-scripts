@@ -45,7 +45,7 @@ FUNC INT DIA_OCVLK_1_PEOPLE_Condition()
 FUNC VOID DIA_OCVLK_1_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCVLK_1_PEOPLE_15_00"); //Chi comanda, qui?
-	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Il comandante Garond. Ma da quando la situazione qui è peggiorata, non è più uscito dalla sala del trono. Temo che possa essergli successo qualcosa di terribile.
+	AI_Output (self, other, "DIA_OCVLK_1_PEOPLE_01_01"); //Il comandante Garond. Ma da quando la situazione qui Ã¨ peggiorata, non Ã¨ piÃ¹ uscito dalla sala del trono. Temo che possa essergli successo qualcosa di terribile.
 };
 
 // *************************************************************************
@@ -97,7 +97,7 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Gli orchi hanno ottenuto quello che volevano! Senza i rinforzi nessuno di noi riuscirà a sopravvivere! Mi sorprende che i draghi non ci abbiano ancora annientati completamente.
+		AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_01"); //Gli orchi hanno ottenuto quello che volevano! Senza i rinforzi nessuno di noi riuscirÃ  a sopravvivere! Mi sorprende che i draghi non ci abbiano ancora annientati completamente.
 	};
 	
 	if (Kapitel == 4)
@@ -116,7 +116,7 @@ FUNC VOID DIA_OCVLK_1_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Questo maledetto metallo. Dovremmo gettare tutte le nostre scorte giù dai bastioni. Forse così gli orchi ci lasceranno in pace.
+			AI_Output (self,other,"DIA_OCVLK_1_STANDARD_01_04"); //Questo maledetto metallo. Dovremmo gettare tutte le nostre scorte giÃ¹ dai bastioni. Forse cosÃ¬ gli orchi ci lasceranno in pace.
 		}
 		else
 		{

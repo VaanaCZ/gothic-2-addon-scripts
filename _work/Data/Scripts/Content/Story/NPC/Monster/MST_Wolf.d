@@ -146,7 +146,7 @@ INSTANCE YWolf	(Mst_Default_Wolf)
 
 
 //************
-//	Missions Wölfe für Pepe: YWolf    	
+//	Missions WÃ¶lfe fÃ¼r Pepe: YWolf    	
 //************
 
 

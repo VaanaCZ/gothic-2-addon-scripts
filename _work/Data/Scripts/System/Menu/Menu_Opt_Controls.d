@@ -71,7 +71,7 @@ instance MENU_OPT_CONTROLS(C_MENU_DEF)
 instance MENU_ITEM_NEXTMENU(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Altri tasti…";
+	text[0]		= "Altri tastiâ€¦";
 	text[1]		= "Configura ulteriori comandi";  // Kommentar
 
 	// Positionen  und Dimensionen

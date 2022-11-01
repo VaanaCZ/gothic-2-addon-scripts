@@ -57,7 +57,7 @@ FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Non ti Ë bastato aver distrutto quasi tutta la nostra discendenza?
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_02"); //Non ti √® bastato aver distrutto quasi tutta la nostra discendenza?
 	};
 	
 	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_03"); //Hai mio fratello Feomathar sulla tua coscienza, e pagherai per questo.
@@ -65,8 +65,8 @@ FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 	if (hero.guild == GIL_DJG)
 	&& (DragonEggCounter >= 7)
 	{
-	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //UcciderÚ anche il resto della tua disgustosa prole.
-	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Argh. Sar‡ un piacere per me bruciarti vivo.
+	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_04"); //Uccider√≤ anche il resto della tua disgustosa prole.
+	AI_Output			(self, other, "DIA_Dragon_Fire_Island_Hello_20_05"); //Argh. Sar√† un piacere per me bruciarti vivo.
 	};
 
 	AI_Output			(other, self, "DIA_Dragon_Fire_Island_Hello_15_06"); //Smettila di fare tutto questo chiasso e cerchiamo di ragionare.
@@ -76,7 +76,7 @@ FUNC VOID DIA_Dragon_Fire_Island_Hello_Info()
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 	AI_StopProcessInfos	(self);
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"Un altro drago di fuoco. Mi sto stancando dei denti di quelle bestiacce. Tutto ciÚ che desidero Ë solamente attraversare il baratro che si apre dietro il drago di fuoco."); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"Un altro drago di fuoco. Mi sto stancando dei denti di quelle bestiacce. Tutto ci√≤ che desidero √® solamente attraversare il baratro che si apre dietro il drago di fuoco."); 
 
 	DragonTalk_Exit_Free  = FALSE;
 	self.flags =  0;

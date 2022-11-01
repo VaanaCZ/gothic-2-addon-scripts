@@ -30,7 +30,7 @@ instance DIA_Addon_BL_BDT_13_Chef(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_Chef_Condition;
 	information	= DIA_Addon_BL_BDT_13_Chef_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_Chef_Condition()
@@ -39,22 +39,22 @@ FUNC INT DIA_Addon_BL_BDT_13_Chef_Condition()
 };
 FUNC VOID DIA_Addon_BL_BDT_13_Chef_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Chef_15_00");//Chi Ë il capo, qui?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Chef_15_00");//Chi √® il capo, qui?
 	
 	if (RavenIsDead == TRUE)
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//(esultante) Il nostro glorioso capo Thorus. Ci far‡ diventare tutti ricchi!
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_01");//(esultante) Il nostro glorioso capo Thorus. Ci far√† diventare tutti ricchi!
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Il nostro glorioso capoÖ ehm.. non saprei
+			AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_02");//Il nostro glorioso capo‚Ä¶ ehm.. non saprei
 		};
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//(esultante) Il nostro glorioso capo Raven. Ci far‡ diventare tutti ricchi!
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Chef_13_03");//(esultante) Il nostro glorioso capo Raven. Ci far√† diventare tutti ricchi!
 			
 	};
 };
@@ -89,7 +89,7 @@ instance DIA_Addon_BL_BDT_13_News(C_INFO)
 	condition	= DIA_Addon_BL_BDT_13_News_Condition;
 	information	= DIA_Addon_BL_BDT_13_News_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_13_News_Condition()
@@ -99,11 +99,11 @@ FUNC INT DIA_Addon_BL_BDT_13_News_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_13_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_13_News_15_00");//Novit‡?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_13_News_15_00");//Novit√†?
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Raven Ë morto. Ora non ce ne andremo PIŸ da quest'isola.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Raven √® morto. Ora non ce ne andremo PI√ô da quest'isola.
 	}
 	else
 	{
@@ -140,7 +140,7 @@ FUNC VOID DIA_Addon_BL_BDT_13_Gold_Info()
 	
 	if (BDT_13_Nerver <= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Bella domanda. Non Ë per questo che siamo tutti qui?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Bella domanda. Non √® per questo che siamo tutti qui?
 		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_02");//Vedi di farti dare una pietra rossa da Thorus e potrai entrare nella miniera.
 	}
 	else if (BDT_13_Kill == FALSE)

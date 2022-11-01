@@ -2,7 +2,7 @@
 // B_SetAttributesToChapter
 // -------------------------------------
 // setzt die NSC-Attribute und den LEVEL
-// abhängig vom Kapitel
+// abhÃ¤ngig vom Kapitel
 // in dem sie als Gegner vorkommen
 // *************************************
 
@@ -122,7 +122,7 @@ func void B_SetAttributesToChapter (var C_NPC slf, var int kap)
 		slf.attribute[ATR_HITPOINTS] 		= 760;
 	};
 	
-	// ------ XP für NSCs ------
+	// ------ XP fÃ¼r NSCs ------
 	slf.exp				= (500*((slf.level+1)/2)*(slf.level+1));
 	slf.exp_next		= (500*((slf.level+2)/2)*(slf.level+1));
 };

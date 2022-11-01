@@ -56,7 +56,7 @@ func int DIA_RodDJG_HALLO_Condition ()
 func void DIA_RodDJG_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_15_00"); //Va tutto bene?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_01"); //Questi stivali mi fanno un male cane! La nuova armatura è davvero splendida, ma perché le cinghie di questi stivali devono essere così strette?
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_01"); //Questi stivali mi fanno un male cane! La nuova armatura Ã¨ davvero splendida, ma perchÃ© le cinghie di questi stivali devono essere cosÃ¬ strette?
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_06_02"); //Se le allento, quasi perdo gli stivali dai piedi.
 
 	if 	(
@@ -72,7 +72,7 @@ func void DIA_RodDJG_HALLO_Info ()
 func void DIA_RodDJG_HALLO_Woher ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_Woher_15_00"); //Dove hai preso quegli stivali?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_01"); //Quel vecchio guerrafondaio di Bennet li ha costruiti per noi cacciatori di draghi, e si è fatto pure pagare bene per questa robaccia.
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_01"); //Quel vecchio guerrafondaio di Bennet li ha costruiti per noi cacciatori di draghi, e si Ã¨ fatto pure pagare bene per questa robaccia.
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_Woher_06_02"); //Se gli metto le mani addosso, prima gli faccio mangiare questi stivali e poi lo costringo a restituirmi i soldi.
 
 };
@@ -85,15 +85,15 @@ func void DIA_RodDJG_HALLO_warten ()
 
 	if ((Npc_IsDead(DJG_Cipher))== FALSE)
 		{
-		AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_06_01"); //Sto aspettando che Cipher muova le chiappe e si metta in cammino. È quasi ora di andare.
+		AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_06_01"); //Sto aspettando che Cipher muova le chiappe e si metta in cammino. Ãˆ quasi ora di andare.
 		AI_StopProcessInfos (self);
 		}
 		else
 		{
-		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_02"); //Stavo pensando a dare un'occhiata più da vicino a quell'area paludosa laggiù.
+		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_02"); //Stavo pensando a dare un'occhiata piÃ¹ da vicino a quell'area paludosa laggiÃ¹.
 		AI_Output		(self, other, "DIA_RodDJG_HALLO_warten_06_03"); //Che ne dici di andarci insieme e vedere quello che riusciamo a trovare?
 
-		Info_AddChoice	(DIA_RodDJG_HALLO, "Andrò da solo.", DIA_RodDJG_HALLO_warten_allein );
+		Info_AddChoice	(DIA_RodDJG_HALLO, "AndrÃ² da solo.", DIA_RodDJG_HALLO_warten_allein );
 		Info_AddChoice	(DIA_RodDJG_HALLO, "Cosa sai della regione della palude?", DIA_RodDJG_HALLO_warten_wasweisstdu );
 		Info_AddChoice	(DIA_RodDJG_HALLO, "Andiamoci insieme.", DIA_RodDJG_HALLO_warten_zusammen );
 		};
@@ -113,13 +113,13 @@ func void DIA_RodDJG_HALLO_warten_zusammen ()
 func void DIA_RodDJG_HALLO_warten_wasweisstdu ()
 {
 	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_wasweisstdu_15_00"); //Cosa sai della regione della palude?
-	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_wasweisstdu_06_01"); //So solo che emana un fetore nauseabondo e che c'è probabilmente molto oro. Ti basta?
+	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_wasweisstdu_06_01"); //So solo che emana un fetore nauseabondo e che c'Ã¨ probabilmente molto oro. Ti basta?
 
 };
 
 func void DIA_RodDJG_HALLO_warten_allein ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_allein_15_00"); //Andrò da solo.
+	AI_Output			(other, self, "DIA_RodDJG_HALLO_warten_allein_15_00"); //AndrÃ² da solo.
 	AI_Output			(self, other, "DIA_RodDJG_HALLO_warten_allein_06_01"); //Bene, allora ti auguro buona fortuna.
 
 	AI_StopProcessInfos (self);
@@ -151,14 +151,14 @@ func int DIA_RodDJG_WARTEMAL_Condition ()
 
 func void DIA_RodDJG_WARTEMAL_Info ()
 {
-	AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_00"); //Qual è il problema?
+	AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_00"); //Qual Ã¨ il problema?
 
 	if 	(
 		((DJG_SwampParty == TRUE) || (Npc_GetDistToWP(self,"OW_DJG_SWAMP_WAIT2_02")<1000))
 		&& (Npc_IsDead(DJG_Cipher))
 		)
 		{
-			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_01"); //Ascolta, amico. Credo che questa faccenda ci stia leggermente sfuggendo di mano. Me ne andrò via in punta di piedi.
+			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_01"); //Ascolta, amico. Credo che questa faccenda ci stia leggermente sfuggendo di mano. Me ne andrÃ² via in punta di piedi.
 			DJG_SwampParty = FALSE;
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
 			AI_StopProcessInfos (self);
@@ -172,7 +172,7 @@ func void DIA_RodDJG_WARTEMAL_Info ()
 	if 	(Npc_IsDead(SwampDragon))
 		{
 			AI_Output			(other, self, "DIA_RodDJG_WARTEMAL_15_03"); //E cosa hai intenzione di fare, adesso?
-			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_04"); //Quante domande che fai! Per prima cosa mi comprerò un paio di stivali nuovi!
+			AI_Output			(self, other, "DIA_RodDJG_WARTEMAL_06_04"); //Quante domande che fai! Per prima cosa mi comprerÃ² un paio di stivali nuovi!
 			self.aivar[AIV_PARTYMEMBER] = FALSE;
 			AI_StopProcessInfos (self);
 			Npc_ExchangeRoutine	(self,	"Start");

@@ -83,7 +83,7 @@ FUNC VOID DIA_Hanna_Room_Info()
 		AI_Output (other, self, "DIA_Hanna_Add_15_04"); //Quindi posso passare la notte qua senza pagare?
 	};
 	
-	AI_Output (self, other, "DIA_Hanna_Add_17_05"); //Sì, sì.
+	AI_Output (self, other, "DIA_Hanna_Add_17_05"); //SÃ¬, sÃ¬.
 	AI_Output (self, other, "DIA_Hanna_Add_17_06"); //Sali le scale.
 	AI_Output (self, other, "DIA_Hanna_Add_17_07"); //Abbiamo ancora uno o due letti liberi.
 	//AI_Output (self ,other,"DIA_Hanna_Room_17_02"); //Geh einfach nach oben und suche dir ein Bett.
@@ -99,7 +99,7 @@ INSTANCE DIA_Hanna_WhyPay(C_INFO)
 	condition	= DIA_Hanna_WhyPay_Condition;
 	information	= DIA_Hanna_WhyPay_Info;
 	permanent	= FALSE;
-	description	= "Perché i paladini pagano per qualsiasi cosa?";
+	description	= "PerchÃ© i paladini pagano per qualsiasi cosa?";
 };                       
 
 FUNC INT DIA_Hanna_WhyPay_Condition()
@@ -112,12 +112,12 @@ FUNC INT DIA_Hanna_WhyPay_Condition()
  
 FUNC VOID DIA_Hanna_WhyPay_Info()
 {	
-	AI_Output (other, self, "DIA_Hanna_Add_15_12"); //Perché i paladini pagano per qualsiasi cosa?
+	AI_Output (other, self, "DIA_Hanna_Add_15_12"); //PerchÃ© i paladini pagano per qualsiasi cosa?
 	AI_Output (self, other, "DIA_Hanna_Add_17_13"); //Onestamente non lo so.
-	AI_Output (self, other, "DIA_Hanna_Add_17_14"); //La cosa certa è che vogliono togliere i poveracci dalle strade per impedire loro di commettere qualche sciocchezza.
+	AI_Output (self, other, "DIA_Hanna_Add_17_14"); //La cosa certa Ã¨ che vogliono togliere i poveracci dalle strade per impedire loro di commettere qualche sciocchezza.
 	AI_Output (self, other, "DIA_Hanna_Add_17_15"); //Per contro, vogliono stare dalla parte dei mercanti ambulanti.
 	AI_Output (self, other, "DIA_Hanna_Add_17_16"); //Ora che i contadini sono in rivolta, dobbiamo fare affidamento sui mercanti per gli approvvigionamenti.
-	AI_Output (self, other, "DIA_Hanna_Add_17_17"); //Inoltre, credo che vogliano alzare il morale della città.
+	AI_Output (self, other, "DIA_Hanna_Add_17_17"); //Inoltre, credo che vogliano alzare il morale della cittÃ .
 	AI_Output (self, other, "DIA_Hanna_Add_17_18"); //Lord Andre ha addirittura organizzato una distribuzione di birra gratuita nella piazza delle impiccagioni.
 };
 
@@ -161,7 +161,7 @@ INSTANCE DIA_Hanna_City(C_INFO)
 	condition	= DIA_Hanna_City_Condition;
 	information	= DIA_Hanna_City_Info;
 	permanent	= TRUE;
-	description	= "Ho qualche domanda sulla città...";
+	description	= "Ho qualche domanda sulla cittÃ ...";
 };                       
 
 FUNC INT DIA_Hanna_City_Condition()
@@ -171,12 +171,12 @@ FUNC INT DIA_Hanna_City_Condition()
  
 FUNC VOID DIA_Hanna_City_Info()
 {	
-	AI_Output (other,self ,"DIA_Hanna_City_15_00"); //Ho qualche domanda sulla città...
+	AI_Output (other,self ,"DIA_Hanna_City_15_00"); //Ho qualche domanda sulla cittÃ ...
 	
 	Info_ClearChoices (DIA_Hanna_City);
 	Info_AddChoice (DIA_Hanna_City,DIALOG_BACK,DIA_Hanna_City_Back);
 	Info_AddChoice (DIA_Hanna_City,"Dove posso fare acquisti nei dintorni?",DIA_Hanna_City_Buy);
-	Info_AddChoice (DIA_Hanna_City,"Parlami della città.",DIA_Hanna_City_City);
+	Info_AddChoice (DIA_Hanna_City,"Parlami della cittÃ .",DIA_Hanna_City_City);
 };
 
 FUNC VOID DIA_Hanna_City_Back ()
@@ -187,18 +187,18 @@ FUNC VOID DIA_Hanna_City_Back ()
 FUNC VOID DIA_Hanna_City_Buy ()
 {
 	AI_Output (other,self ,"DIA_Hanna_City_Buy_15_00"); //Dove posso fare acquisti nei dintorni?
-	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_01"); //Il mercato è esattamente davanti alla porta. Dovresti essere in grado di trovare lì tutto quello che ti serve.
-	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_02"); //Ci sono altri negozi e artigiani dall'altro lato della città. La maggior parte sono vicini al cancello cittadino.
-	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_03"); //In più, c'è un pescivendolo nella zona portuale. Il suo negozio si affaccia direttamente sul porto. È facile da trovare.
+	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_01"); //Il mercato Ã¨ esattamente davanti alla porta. Dovresti essere in grado di trovare lÃ¬ tutto quello che ti serve.
+	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_02"); //Ci sono altri negozi e artigiani dall'altro lato della cittÃ . La maggior parte sono vicini al cancello cittadino.
+	AI_Output (self ,other,"DIA_Hanna_City_Buy_17_03"); //In piÃ¹, c'Ã¨ un pescivendolo nella zona portuale. Il suo negozio si affaccia direttamente sul porto. Ãˆ facile da trovare.
 };
 
 FUNC VOID DIA_Hanna_City_City ()
 {
-	AI_Output (other,self ,"DIA_Hanna_City_City_15_00"); //Parlami della città.
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_01"); //Khorinis è una delle città più ricche del regno, anche se al momento può non sembrare così.
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_02"); //Ma da quando è cominciata la guerra degli orchi, il commercio ristagna. Il re ha richiesto l'impiego dell'intera flotta mercantile per uso militare,
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_03"); //il che significa che non si vedono navi nel porto. Perciò, gli approvvigionamenti sono decisamente scarsi in questo momento e molti cittadini sono preoccupati.
-	AI_Output (self ,other,"DIA_Hanna_City_City_17_04"); //Nessuno sa con certezza cosa ci riservi il futuro. Non c'è niente che possiamo fare, se non aspettare e vedere che cosa succede. Non c'è altro da fare.
+	AI_Output (other,self ,"DIA_Hanna_City_City_15_00"); //Parlami della cittÃ .
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_01"); //Khorinis Ã¨ una delle cittÃ  piÃ¹ ricche del regno, anche se al momento puÃ² non sembrare cosÃ¬.
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_02"); //Ma da quando Ã¨ cominciata la guerra degli orchi, il commercio ristagna. Il re ha richiesto l'impiego dell'intera flotta mercantile per uso militare,
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_03"); //il che significa che non si vedono navi nel porto. PerciÃ², gli approvvigionamenti sono decisamente scarsi in questo momento e molti cittadini sono preoccupati.
+	AI_Output (self ,other,"DIA_Hanna_City_City_17_04"); //Nessuno sa con certezza cosa ci riservi il futuro. Non c'Ã¨ niente che possiamo fare, se non aspettare e vedere che cosa succede. Non c'Ã¨ altro da fare.
 };
 
 
@@ -236,7 +236,7 @@ FUNC VOID DIA_Hanna_Kap3_EXIT_Info()
 var int Hanna_PriceForLetter;
 
 // ************************************************************
-// 		Wie sieht´s aus?
+// 		Wie siehtÂ´s aus?
 // ************************************************************
 INSTANCE DIA_Hanna_AnyNews(C_INFO)
 {
@@ -260,7 +260,7 @@ FUNC VOID DIA_Hanna_AnyNews_Info()
 	AI_Output (self ,other,"DIA_Hanna_AnyNews_17_01"); //Non sembri molto interessato ai problemi degli altri, in fin dei conti.
 	
 	Info_ClearChoices (DIA_Hanna_AnyNews);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Sì, certo.",DIA_Hanna_AnyNews_Yes);
+	Info_AddChoice (DIA_Hanna_AnyNews,"SÃ¬, certo.",DIA_Hanna_AnyNews_Yes);
 	Info_AddChoice (DIA_Hanna_AnyNews,"Dipende.",DIA_Hanna_AnyNews_Depends);
 	Info_AddChoice (DIA_Hanna_AnyNews,"Non proprio.",DIA_Hanna_AnyNews_No);
 };
@@ -278,7 +278,7 @@ FUNC VOID DIA_Hanna_AnyNews_No ()
 FUNC VOID DIA_Hanna_AnyNews_Depends ()
 {
 	AI_Output (other,self ,"DIA_Hanna_AnyNews_Depends_15_00"); //Dipende.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_01"); //Dipende da quanto ci si può guadagnare, vuoi dire.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_01"); //Dipende da quanto ci si puÃ² guadagnare, vuoi dire.
 	AI_Output (self ,other,"DIA_Hanna_AnyNews_Depends_17_02"); //Non ho bisogno di gente come te qui.
 
 
@@ -289,8 +289,8 @@ FUNC VOID DIA_Hanna_AnyNews_Depends ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_15_00"); //Sì, certo.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_01"); //Chi può dirlo? Il mondo è pieno di sorprese. Ho fatto un po' di pulizia di recente e ho venduto un mucchio di vecchie mappe a Brahim, il cartografo che si trova al porto.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_15_00"); //SÃ¬, certo.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_01"); //Chi puÃ² dirlo? Il mondo Ã¨ pieno di sorprese. Ho fatto un po' di pulizia di recente e ho venduto un mucchio di vecchie mappe a Brahim, il cartografo che si trova al porto.
 	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_02"); //Sfortunatamente, ho notato che mi manca un documento.
 	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_03"); //Credo sia scivolato in mezzo alle altre carte.
 	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_17_04"); //Puoi recuperarlo da parte mia?
@@ -305,13 +305,13 @@ FUNC VOID DIA_Hanna_AnyNews_Yes ()
 	Info_ClearChoices (DIA_Hanna_AnyNews);
 	Info_AddChoice (DIA_Hanna_AnyNews,"Non sono un fattorino.",DIA_Hanna_AnyNews_Yes_Footboy);
 	Info_AddChoice (DIA_Hanna_AnyNews,"Cosa ci guadagno io?",DIA_Hanna_AnyNews_Yes_Reward);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Vedrò cosa posso fare.",DIA_Hanna_AnyNews_Yes_WillSee);
+	Info_AddChoice (DIA_Hanna_AnyNews,"VedrÃ² cosa posso fare.",DIA_Hanna_AnyNews_Yes_WillSee);
 };
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Footboy ()
 {
 	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Footboy_15_00"); //Non sono un fattorino.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Footboy_17_01"); //Capisco, i problemi di una donna comune sono sacrileghi per te. Immagino che dovrò occuparmene da sola.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Footboy_17_01"); //Capisco, i problemi di una donna comune sono sacrileghi per te. Immagino che dovrÃ² occuparmene da sola.
 
 	Info_ClearChoices (DIA_Hanna_AnyNews);
 };
@@ -324,14 +324,14 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward ()
 	
 	Info_ClearChoices (DIA_Hanna_AnyNews);
 	Info_AddChoice (DIA_Hanna_AnyNews,"Lascia stare.",DIA_Hanna_AnyNews_Yes_Reward_OK);
-	Info_AddChoice (DIA_Hanna_AnyNews,"Potresti essere più gentile con me.",DIA_Hanna_AnyNews_Yes_Reward_BeNice);
+	Info_AddChoice (DIA_Hanna_AnyNews,"Potresti essere piÃ¹ gentile con me.",DIA_Hanna_AnyNews_Yes_Reward_BeNice);
 	Info_AddChoice (DIA_Hanna_AnyNews,"Oro.",DIA_Hanna_AnyNews_Yes_Reward_Gold);
 };
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_OK ()
 {
 	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_OK_15_00"); //Lascia stare.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_OK_17_01"); //Almeno ti è rimasto un briciolo di dignità. Se mi riporterai quel documento, ti darò 75 pezzi d'oro.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_OK_17_01"); //Almeno ti Ã¨ rimasto un briciolo di dignitÃ . Se mi riporterai quel documento, ti darÃ² 75 pezzi d'oro.
 
 	Hanna_PriceForLetter = 75;
 	
@@ -340,8 +340,8 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_OK ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_BeNice ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_15_00"); //Potresti mostrarti più gentile con me.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_17_01"); //Ma è oltraggioso! Io... fuori di qui, villano zoticone!
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_15_00"); //Potresti mostrarti piÃ¹ gentile con me.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_BeNice_17_01"); //Ma Ã¨ oltraggioso! Io... fuori di qui, villano zoticone!
 	
 	MIS_HannaRetrieveLetter = LOG_FAILED;
 	
@@ -351,8 +351,8 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_BeNice ()
 FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_Gold ()
 {
 	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_Reward_Gold_15_00"); //Oro.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_01"); //Soldi contanti è il massimo che posso offrirti. Diciamo che è un compito che valuto 50 pezzi d'oro.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_02"); //Se riesci a riportarmi quel documento, ti darò 50 pezzi d'oro.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_01"); //Soldi contanti Ã¨ il massimo che posso offrirti. Diciamo che Ã¨ un compito che valuto 50 pezzi d'oro.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_Reward_Gold_17_02"); //Se riesci a riportarmi quel documento, ti darÃ² 50 pezzi d'oro.
 
 	Hanna_PriceForLetter = 50;
 
@@ -361,9 +361,9 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_Reward_Gold ()
 
 FUNC VOID DIA_Hanna_AnyNews_Yes_WillSee ()
 {
-	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_WillSee_15_00"); //Vedrò cosa posso fare.
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_01"); //Sei così caro. Ti auguro tanta fortuna!
-	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_02"); //Se mi riporti quel documento, ti darò una ricompensa.
+	AI_Output (other,self ,"DIA_Hanna_AnyNews_Yes_WillSee_15_00"); //VedrÃ² cosa posso fare.
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_01"); //Sei cosÃ¬ caro. Ti auguro tanta fortuna!
+	AI_Output (self ,other,"DIA_Hanna_AnyNews_Yes_WillSee_17_02"); //Se mi riporti quel documento, ti darÃ² una ricompensa.
 	
 	Hanna_PriceForLetter = 200;
 	
@@ -372,7 +372,7 @@ FUNC VOID DIA_Hanna_AnyNews_Yes_WillSee ()
 
 
 // ************************************************************
-//		Meinst du dieses Schriftstück?
+//		Meinst du dieses SchriftstÃ¼ck?
 // ************************************************************
 INSTANCE DIA_Hanna_ThisLetter(C_INFO)
 {
@@ -394,9 +394,9 @@ FUNC INT DIA_Hanna_ThisLetter_Condition()
 FUNC VOID DIA_Hanna_ThisLetter_Info()
 {	
 	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_00"); //Intendevi questo documento?
-	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_01"); //Sì, esattamente questo. Grazie.
-	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_02"); //Qual è la mia ricompensa?
-	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_03"); //Non così in fretta. Ecco i tuoi soldi.
+	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_01"); //SÃ¬, esattamente questo. Grazie.
+	AI_Output (other,self ,"DIA_Hanna_ThisLetter_15_02"); //Qual Ã¨ la mia ricompensa?
+	AI_Output (self ,other,"DIA_Hanna_ThisLetter_17_03"); //Non cosÃ¬ in fretta. Ecco i tuoi soldi.
 		
 	CreateInvItems (self,ItMi_Gold,Hanna_PriceForLetter);
 	B_GiveInvItems (self,other,ItMi_Gold,Hanna_PriceForLetter);
@@ -513,7 +513,7 @@ FUNC VOID DIA_Hanna_Schuldenbuch_Info()
 	AI_Output (other, self, "DIA_Hanna_Add_15_41"); //Guarda quale libro ho qui!
 	AI_Output (self, other, "DIA_Hanna_Add_17_42"); //Il libro mastro di Lehmar. Come fai ad averlo?
 	AI_Output (other, self, "DIA_Hanna_Add_15_43"); //Beh...
-	AI_Output (self, other, "DIA_Hanna_Add_17_44"); //Se Lehmar non ce l'ha più, è una buona cosa. Ma lo vorrei per me...
+	AI_Output (self, other, "DIA_Hanna_Add_17_44"); //Se Lehmar non ce l'ha piÃ¹, Ã¨ una buona cosa. Ma lo vorrei per me...
 };
 
 // ************************************************************
@@ -526,7 +526,7 @@ instance DIA_Hanna_GiveSchuldenbuch(C_INFO)
 	condition	= DIA_Hanna_GiveSchuldenbuch_Condition;
 	information	= DIA_Hanna_GiveSchuldenbuch_Info;
 	permanent	= FALSE;
-	description = "Ecco… prendi il libro.";
+	description = "Eccoâ€¦ prendi il libro.";
 };                       
 FUNC INT DIA_Hanna_GiveSchuldenbuch_Condition()
 {
@@ -545,7 +545,7 @@ FUNC VOID DIA_Hanna_GiveSchuldenbuch_Info()
 	B_GiveInvItems (self, other, ItSe_HannasBeutel, 1);
 	B_GivePlayerXP (XP_Schuldenbuch);
 	AI_Output (other, self, "DIA_Hanna_Add_15_49"); //Che cosa mi hai dato?
-	AI_Output (self, other, "DIA_Hanna_Add_17_48"); //È la chiave per il cancello della ricchezza.
+	AI_Output (self, other, "DIA_Hanna_Add_17_48"); //Ãˆ la chiave per il cancello della ricchezza.
 };
 
 
@@ -554,10 +554,10 @@ FUNC VOID DIA_Hanna_GiveSchuldenbuch_Info()
 // ************************************************************
 func void Hanna_Blubb()
 {
-	AI_Output (other, self, "DIA_Hanna_Add_15_37"); //Tutto ciò che c'è dentro al nascondiglio?
+	AI_Output (other, self, "DIA_Hanna_Add_15_37"); //Tutto ciÃ² che c'Ã¨ dentro al nascondiglio?
 	AI_Output (self, other, "DIA_Hanna_Add_17_39"); //Non vedo nessuno di loro da un pezzo.
-	AI_Output (self, other, "DIA_Hanna_Add_17_40"); //Appena ne avrò l'occasione, andrò giù a vedere come stanno le cose.
-	AI_Output (self, other, "DIA_Hanna_Add_17_38"); //Sì. Ma faresti meglio a non parlarne con nessuno...
+	AI_Output (self, other, "DIA_Hanna_Add_17_40"); //Appena ne avrÃ² l'occasione, andrÃ² giÃ¹ a vedere come stanno le cose.
+	AI_Output (self, other, "DIA_Hanna_Add_17_38"); //SÃ¬. Ma faresti meglio a non parlarne con nessuno...
 	//-------------------
 	AI_Output (other, self, "DIA_Hanna_Add_15_25"); //Sapevi qualcosa del nascondiglio dei ladri?
 	AI_Output (self, other, "DIA_Hanna_Add_17_26"); //(Sorride compiaciuta) Non so di cosa tu stia parlando...
@@ -566,7 +566,7 @@ func void Hanna_Blubb()
 	AI_Output (self, other, "DIA_Hanna_Add_17_33"); //Non hanno potuto accusarmi di niente, ma Cassia e la sua gente sono morti!
 	AI_Output (self, other, "DIA_Hanna_Add_17_34"); //Sono certa che sei stato TU...
 	AI_Output (self, other, "DIA_Hanna_Add_17_35"); //L'ho comprato appositamente per te.
-	AI_Output (self, other, "DIA_Hanna_Add_17_36"); //Mi è costato un sacco di soldi, ma ne vale la pena, brutto porco...
+	AI_Output (self, other, "DIA_Hanna_Add_17_36"); //Mi Ã¨ costato un sacco di soldi, ma ne vale la pena, brutto porco...
 };	
 
 	

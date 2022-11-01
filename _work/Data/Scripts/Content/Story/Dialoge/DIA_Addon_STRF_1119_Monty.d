@@ -68,8 +68,8 @@ FUNC INT DIA_Addon_Monty_Hacken_Condition()
 FUNC VOID DIA_Addon_Monty_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Per estarre il metallo in maniera efficiente l'angolazione è essenziale.
-	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Non inclinare la piccozza troppo, né troppo poco: così arriverai alle pepite e non danneggerai l'attrezzo.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_00");//Per estarre il metallo in maniera efficiente l'angolazione Ã¨ essenziale.
+	AI_Output (self, other, "DIA_Addon_Monty_Hacken_08_01");//Non inclinare la piccozza troppo, nÃ© troppo poco: cosÃ¬ arriverai alle pepite e non danneggerai l'attrezzo.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

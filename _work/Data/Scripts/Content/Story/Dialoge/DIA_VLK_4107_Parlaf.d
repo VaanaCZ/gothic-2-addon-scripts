@@ -43,7 +43,7 @@ func void DIA_Parlaf_HALLO_Info ()
 	AI_Output (self, other, "DIA_Parlaf_HALLO_03_01"); //Come pensi che stia? Trascorro l'intera giornata alla mola, affilando le lame.
 	if ((Npc_IsDead(Engor))== FALSE)
 	{
-		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //E ieri Engor ha nuovamente ridotto le razioni. Se continua cosÏ, finiremo per morire tutti di fame.
+		AI_Output (self, other, "DIA_Parlaf_HALLO_03_02"); //E ieri Engor ha nuovamente ridotto le razioni. Se continua cos√¨, finiremo per morire tutti di fame.
 		AI_Output (self, other, "DIA_Parlaf_HALLO_03_03"); //O saremo tutti uccisi dagli orchi. Una prospettiva non proprio piacevole.
 	};
 };
@@ -56,7 +56,7 @@ instance DIA_Parlaf_ENGOR		(C_INFO)
 	nr			 = 	2;
 	condition	 = 	DIA_Parlaf_ENGOR_Condition;
 	information	 = 	DIA_Parlaf_ENGOR_Info;
-	description	 = 	"Chi Ë Engor?";
+	description	 = 	"Chi √® Engor?";
 };
 
 func int DIA_Parlaf_ENGOR_Condition ()
@@ -69,11 +69,11 @@ func int DIA_Parlaf_ENGOR_Condition ()
 };
 func void DIA_Parlaf_ENGOR_Info ()
 {
-	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_00"); //Chi Ë Engor?
+	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_00"); //Chi √® Engor?
 	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_01"); //Engor si occupa delle provviste e divide le razioni. Ed esse si riducono ogni settimana.
 	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_02"); //Certo, puoi contrattare con lui, ma solo per il freddo, duro denaro.
 	AI_Output (other, self, "DIA_Parlaf_ENGOR_15_03"); //E non puoi permettertelo?
-	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //Tutto quello che posso permettermi con questa paga ridicola Ë un paio di rape!
+	AI_Output (self, other, "DIA_Parlaf_ENGOR_03_04"); //Tutto quello che posso permettermi con questa paga ridicola √® un paio di rape!
 	
 	Log_CreateTopic (TOPIC_Trader_OC, LOG_NOTE);
 	Log_AddEntry(TOPIC_Trader_OC, "Engor gestisce i rifornimenti al castello e ci fa degli affari extra.");     
@@ -114,7 +114,7 @@ instance DIA_Parlaf_HUNGRIG		(C_INFO)
 	condition	 = 	DIA_Parlaf_HUNGRIG_Condition;
 	information	 = 	DIA_Parlaf_HUNGRIG_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Novit‡?";
+	description	 = 	"Novit√†?";
 };
 
 func int DIA_Parlaf_HUNGRIG_Condition ()
@@ -129,7 +129,7 @@ func int DIA_Parlaf_HUNGRIG_Condition ()
 func void DIA_Parlaf_HUNGRIG_Info ()
 {
 	AI_Output (other, self, "DIA_Parlaf_HUNGRIG_15_00"); //Cosa succede?
-	AI_Output (self, other, "DIA_Parlaf_HUNGRIG_03_01"); //Quel dannato Engor dovrebbe darci pi˘ razioni!
+	AI_Output (self, other, "DIA_Parlaf_HUNGRIG_03_01"); //Quel dannato Engor dovrebbe darci pi√π razioni!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SATT
@@ -141,7 +141,7 @@ instance DIA_Parlaf_SATT		(C_INFO)
 	condition	 = 	DIA_Parlaf_SATT_Condition;
 	information	 = 	DIA_Parlaf_SATT_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Novit‡?";
+	description	 = 	"Novit√†?";
 };
 
 func int DIA_Parlaf_SATT_Condition ()
@@ -165,7 +165,7 @@ func void DIA_Parlaf_SATT_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Parlaf_SATT_03_02"); //Il tuo arrivo Ë l'unica notizia veramente recente.
+		AI_Output (self, other, "DIA_Parlaf_SATT_03_02"); //Il tuo arrivo √® l'unica notizia veramente recente.
 	};
 };
 

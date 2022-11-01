@@ -53,11 +53,11 @@ func void DIA_Khaled_Hallo_Info ()
 		AI_Output (self, other, "DIA_Khaled_Hallo_11_01"); //Dunque vuoi unirti a noi, allora? Hai almeno un'arma decente?
 		Khaled_weiter = TRUE;
 		Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTrader,"Khaled è un venditore di armi.");
+		B_LogEntry (Topic_SoldierTrader,"Khaled Ã¨ un venditore di armi.");
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Khaled_Hallo_11_02"); //Se è qualcosa di importante, vai a parlare con Lee. Altrimenti, lasciami in pace.
+		AI_Output (self, other, "DIA_Khaled_Hallo_11_02"); //Se Ã¨ qualcosa di importante, vai a parlare con Lee. Altrimenti, lasciami in pace.
 		AI_StopProcessInfos (self);
 	};	
 };
@@ -116,12 +116,12 @@ func int DIA_Khaled_WannaJoin_Condition ()
 func void DIA_Khaled_WannaJoin_Info ()
 {
 	AI_Output (other, self, "DIA_Khaled_WannaJoin_15_00"); //Ti dispiacerebbe se mi unissi a voi?
-	AI_Output (self, other, "DIA_Khaled_WannaJoin_11_01"); //Una volta che avrai passato la prova, voterò per te.
+	AI_Output (self, other, "DIA_Khaled_WannaJoin_11_01"); //Una volta che avrai passato la prova, voterÃ² per te.
 	if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	|| (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Khaled_WannaJoin_15_02"); //L'ho già passata.
-		AI_Output (self, other, "DIA_Khaled_WannaJoin_11_03"); //Bene, allora è tutto a posto.
+		AI_Output (other, self, "DIA_Khaled_WannaJoin_15_02"); //L'ho giÃ  passata.
+		AI_Output (self, other, "DIA_Khaled_WannaJoin_11_03"); //Bene, allora Ã¨ tutto a posto.
 	};
 };
 
@@ -176,7 +176,7 @@ func int DIA_Khaled_AboutSylvio_Condition ()
 func void DIA_Khaled_AboutSylvio_Info ()
 {
 	AI_Output (other, self, "DIA_Khaled_AboutSylvio_15_00"); //Cosa pensi di Sylvio?
-	AI_Output (self, other, "DIA_Khaled_AboutSylvio_11_01"); //È un tipo pericoloso! E molti dei mercenari che sono venuti con lui ascoltano tutto quello che dice. Farai meglio a non farlo arrabbiare.
+	AI_Output (self, other, "DIA_Khaled_AboutSylvio_11_01"); //Ãˆ un tipo pericoloso! E molti dei mercenari che sono venuti con lui ascoltano tutto quello che dice. Farai meglio a non farlo arrabbiare.
 };
 
 // ************************************************************
@@ -204,9 +204,9 @@ func void DIA_Khaled_AboutLee_Info ()
 {
 	AI_Output (other, self, "DIA_Khaled_AboutLee_15_00"); //Cosa pensi di Lee?
 	AI_Output (self, other, "DIA_Khaled_AboutLee_11_01"); //Penso che l'unica cosa che conti veramente per Lee sia andarsene da quest'isola.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_02"); //Vuole raggiungere la terraferma. Sembra che abbia un conto in sospeso con qualcuno laggiù...
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_02"); //Vuole raggiungere la terraferma. Sembra che abbia un conto in sospeso con qualcuno laggiÃ¹...
 	AI_Output (self, other, "DIA_Khaled_AboutLee_11_03"); //Ad ogni modo, svolge un lavoro ben migliore di quanto potrebbe fare Silvio.
-	AI_Output (self, other, "DIA_Khaled_AboutLee_11_04"); //Inoltre, è un ottimo capo. Il più delle volte possiamo fare quello che vogliamo qui.
+	AI_Output (self, other, "DIA_Khaled_AboutLee_11_04"); //Inoltre, Ã¨ un ottimo capo. Il piÃ¹ delle volte possiamo fare quello che vogliamo qui.
 };
 
 

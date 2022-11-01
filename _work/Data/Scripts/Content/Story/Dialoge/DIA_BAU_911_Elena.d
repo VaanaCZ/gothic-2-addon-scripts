@@ -77,7 +77,7 @@ func int DIA_Elena_Aufstand_Condition ()
 func void DIA_Elena_Aufstand_Info ()
 {
 	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //Dicono che siate in rivolta contro il re.
-	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Mio padre ha deciso che è giunta l'ora di difenderci da soli.
+	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Mio padre ha deciso che Ã¨ giunta l'ora di difenderci da soli.
 	if (other.guild != GIL_MIL)
 	{
 		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //La guardia cittadina non ci ha mai aiutati. L'unico motivo per cui venivano qui era per rubare le nostre provviste.
@@ -111,9 +111,9 @@ func void DIA_Elena_Arbeit_Info ()
 	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Che tipo di lavoro bisogna fare qui alla fattoria?
 	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Mio padre paga tutti gli uomini che aiutano a difendere la fattoria.
 	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //Ti interessa? Non mi sembri uno con la passione per il lavoro nei campi.
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Quanto è disposto a pagare tuo padre?
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Quanto Ã¨ disposto a pagare tuo padre?
 	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //Di questo dovrai discuterne con lui.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Tutto ciò che so è che ogni mercenario qui viene pagato quotidianamente.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Tutto ciÃ² che so Ã¨ che ogni mercenario qui viene pagato quotidianamente.
 };
 
 // ************************************************************
@@ -158,7 +158,7 @@ instance DIA_Elena_AUFGABE		(C_INFO)
 	condition	= DIA_Elena_AUFGABE_Condition;
 	information	= DIA_Elena_AUFGABE_Info;
 	permanent 	= FALSE;
-	description	= "Qual è il tuo compito?";
+	description	= "Qual Ã¨ il tuo compito?";
 };
 
 func int DIA_Elena_AUFGABE_Condition ()
@@ -171,7 +171,7 @@ func int DIA_Elena_AUFGABE_Condition ()
 
 func void DIA_Elena_AUFGABE_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Qual è il tuo compito?
+	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Qual Ã¨ il tuo compito?
 	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //Vendo le merci che produciamo. Se vuoi acquistare qualcosa, fammelo sapere.
 	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Ma lascia che ti avverta. Non sopporto chi cerca di mercanteggiare o di rubare, ci siamo capiti?
 	
@@ -224,7 +224,7 @@ instance DIA_Elena_PERM		(C_INFO)
 	condition	= DIA_Elena_PERM_Condition;
 	information	= DIA_Elena_PERM_Info;
 	permanent	= TRUE;
-	description	= "È accaduto qualcosa di rilevante, ultimamente?";
+	description	= "Ãˆ accaduto qualcosa di rilevante, ultimamente?";
 };
 
 func int DIA_Elena_PERM_Condition ()
@@ -237,26 +237,26 @@ func int DIA_Elena_PERM_Condition ()
 
 func void DIA_Elena_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //È accaduto qualcosa di rilevante, ultimamente?
+	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //Ãˆ accaduto qualcosa di rilevante, ultimamente?
 
 	if (kapitel <= 1)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Un paio di giorni fa, mio padre ha stabilito che non possiamo più vendere niente in città.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Un paio di giorni fa, mio padre ha stabilito che non possiamo piÃ¹ vendere niente in cittÃ .
 		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Dunque ora me ne sto qui alla fattoria a vendere le mie merci solo ai visitatori.
 	
 		Elena_Trade_mit_mir = TRUE;
 	}
 	else if (Kapitel == 2)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Gli attacchi della guardia cittadina alle fattorie vicine si stanno facendo sempre più frequenti. È solo una questione di tempo prima che mio padre debba intervenire.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Gli attacchi della guardia cittadina alle fattorie vicine si stanno facendo sempre piÃ¹ frequenti. Ãˆ solo una questione di tempo prima che mio padre debba intervenire.
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //La regione è diventata piuttosto pericolosa. Ora nessuno si avventura più oltre i propri campi. È passato molto tempo da quando uno di noi si è recato in città l'ultima volta.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //La regione Ã¨ diventata piuttosto pericolosa. Ora nessuno si avventura piÃ¹ oltre i propri campi. Ãˆ passato molto tempo da quando uno di noi si Ã¨ recato in cittÃ  l'ultima volta.
 	}
 	else if (kapitel == 4)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //I mercenari sono diventati sempre più irrequieti, ma da quando Silvio e i suoi uomini se ne sono andati, sembra essere tornata un po' più di pace.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //I mercenari sono diventati sempre piÃ¹ irrequieti, ma da quando Silvio e i suoi uomini se ne sono andati, sembra essere tornata un po' piÃ¹ di pace.
 	}
 	else //Kapitel 5
 	{

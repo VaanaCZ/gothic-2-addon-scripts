@@ -44,7 +44,7 @@ func int DIA_Lee_DI_Hallo_Condition ()
 func void DIA_Lee_DI_Hallo_Info ()
 {
 	AI_Output			(other, self, "DIA_Lee_DI_Hallo_15_00"); //Quale incarico assumerai?
-	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Qualcuno dovrà controllare la nave. Starò qui e mi assicurerò che sia ancora qui quando tornerai.
+	AI_Output			(self, other, "DIA_Lee_DI_Hallo_04_01"); //Qualcuno dovrÃ  controllare la nave. StarÃ² qui e mi assicurerÃ² che sia ancora qui quando tornerai.
 	
 };
 
@@ -60,7 +60,7 @@ instance DIA_Lee_DI_PERM6		(C_INFO)
 	information	 = 	DIA_Lee_DI_PERM6_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Com’è la mia nave?";
+	description	 = 	"Comâ€™Ã¨ la mia nave?";
 };
 
 func int DIA_Lee_DI_PERM6_Condition ()
@@ -74,7 +74,7 @@ func int DIA_Lee_DI_PERM6_Condition ()
 
 func void DIA_Lee_DI_PERM6_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Com’è la mia nave?
+	AI_Output			(other, self, "DIA_Lee_DI_PERM6_15_00"); //Comâ€™Ã¨ la mia nave?
 
 	if (ORkSturmDI == FALSE)
 	{
@@ -128,7 +128,7 @@ FUNC VOID DIA_Lee_DI_Teach_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //La tua difesa è terribile, dobbiamo lavorarci sopra.
+			AI_Output (self ,other,"DIA_Lee_DI_Teach_1H_1_04_00"); //La tua difesa Ã¨ terribile, dobbiamo lavorarci sopra.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Lee_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //Anche il colpo più potente è inutile se non colpisce nulla. Usa dunque saggiamente la tua forza.
+		AI_Output(self,other,"DIA_Lee_DI_Teach_2H_5_04_00"); //Anche il colpo piÃ¹ potente Ã¨ inutile se non colpisce nulla. Usa dunque saggiamente la tua forza.
 	};
 	Info_ClearChoices 	(DIA_Lee_DI_Teach);
 	Info_AddChoice 		(DIA_Lee_DI_Teach,	DIALOG_BACK		,DIA_Lee_DI_Teach_Back);
@@ -214,20 +214,20 @@ func int DIA_Lee_DI_UndeadDragonDead_Condition ()
 var int DIA_Lee_DI_UndeadDragonDead_OneTime;
 func void DIA_Lee_DI_UndeadDragonDead_Info ()
 {
-	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Possiamo tornare indietro ora. Il nemico è morto.
+	AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_00"); //Possiamo tornare indietro ora. Il nemico Ã¨ morto.
 	AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_01"); //Molto bene. Vai a dire al capitano di levare l'ancora.
 
 	if (DIA_Lee_DI_UndeadDragonDead_OneTime == FALSE)
 	&& (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Mi porterai sulla terraferma, non è vero?
-			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //Sì. Khorinis sopravviverà anche senza di te.
-			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem König endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
-			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Dunque potrò finalmente saldare la mia tanto attesa visita di cortesia al re.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_02"); //Mi porterai sulla terraferma, non Ã¨ vero?
+			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_03"); //SÃ¬. Khorinis sopravviverÃ  anche senza di te.
+			//AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_04"); //Dann kann ich dem KÃ¶nig endlich meine lang ersehnte Aufwartung machen. Er ist schon zu lange vor mir davon gelaufen.
+			AI_Output (self ,other, "DIA_Lee_Add_04_26"); //Dunque potrÃ² finalmente saldare la mia tanto attesa visita di cortesia al re.
 			AI_Output (self ,other, "DIA_Lee_Add_04_27"); //Ho aspettato a lungo questo momento...
 			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_05"); //Cosa ne pensi? La mia pazienza non dovrebbe finalmente essere ricompensata?
 			AI_Output			(other ,self, "DIA_Lee_DI_UndeadDragonDead_15_06"); //La pazienza e alcuni argomenti notevoli.
-			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(ride) Già. Non funzionerà senza un po' di forza bruta. È stato un onore scendere in battaglia con te.
+			AI_Output			(self ,other, "DIA_Lee_DI_UndeadDragonDead_04_07"); //(ride) GiÃ . Non funzionerÃ  senza un po' di forza bruta. Ãˆ stato un onore scendere in battaglia con te.
 			DIA_Lee_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 

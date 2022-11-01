@@ -58,17 +58,17 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 {
 	if Npc_IsDead (Franco)
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_00"); //Ehi, che cos'Ë successo l‡ sotto?
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_00"); //Ehi, che cos'√® successo l√† sotto?
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_01"); //Ho messo Franco al tappeto.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_02"); //E allora? Adesso tocca a TE far lavorare quei fannulloni tutti i giorni.
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_03"); //Ehi, non sono qui per farmi seccare dai cacciatori. Voglio entrare nel campo.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_04"); //Scordatelo. Hai sconfitto Franco: ora sei tu il capo, quindi fai il tuo lavoro.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Se il capo sono io, allora decido io chi Ë il prossimo a entrare.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_05"); //Se il capo sono io, allora decido io chi √® il prossimo a entrare.
 		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_06"); //E ho deciso che il prossimo sono IO.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(ride) Non Ë cosÏ facile. Non abbiamo bisogno di NESSUNO, quindi non entra NESSUNO.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Thorus puÚ mandare un nuovo capo dei cacciatori, e allora dentro mi mancher‡ una persona.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_07"); //(ride) Non √® cos√¨ facile. Non abbiamo bisogno di NESSUNO, quindi non entra NESSUNO.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_08"); //Thorus pu√≤ mandare un nuovo capo dei cacciatori, e allora dentro mi mancher√† una persona.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_09"); //(ride) Non rinunci mai, vero? Va bene, muovi le chiappe e vieni dentro.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Thorus far‡ in modo che i cacciatori non debbano vivere senza un capo.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_10"); //Thorus far√† in modo che i cacciatori non debbano vivere senza un capo.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_11"); //Cosa aspetti? E procurati un piccone.
 		
 		self.aivar[AIV_PASSGATE] = TRUE;
@@ -88,27 +88,27 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 		
 		if Npc_KnowsInfo (other, DIA_Addon_Franco_HI)
 		{
-			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //Mi ha mandato Franco: vuole sapere se al campo c'Ë bisogno di qualcuno.
+			AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_13"); //Mi ha mandato Franco: vuole sapere se al campo c'√® bisogno di qualcuno.
 		};
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //SÏ, abbiamo bisogno di qualcuno. Un altro ha tirato le cuoia ieri.
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Quell'idiota se l'Ë presa con Esteban.
-		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_16"); //Chi Ë Esteban?
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Il capo del campo pi˘ basso. » lui che decide chi entra nella miniera.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_14"); //S√¨, abbiamo bisogno di qualcuno. Un altro ha tirato le cuoia ieri.
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_15"); //Quell'idiota se l'√® presa con Esteban.
+		AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_15_16"); //Chi √® Esteban?
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_17"); //Il capo del campo pi√π basso. √à lui che decide chi entra nella miniera.
 		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_18"); //Quindi di' a Franco che Thorus vuole un altro uomo. Chiaro?
 		
 		Log_CreateTopic (Topic_Addon_Franco,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Franco,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Franco,"Thorus ha bisogno di un nuovo uomo per il campo. Franco sar‡ interessato.");
+		B_LogEntry (Topic_Addon_Franco,"Thorus ha bisogno di un nuovo uomo per il campo. Franco sar√† interessato.");
 		
 		Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? QUEL Thorus?",DIA_Addon_Ramon_FirstWarn_YES);
-		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? Mai sentito nominareÖ",DIA_Addon_Ramon_FirstWarn_NO);
+		Info_AddChoice    (DIA_Addon_Ramon_FirstWarn,"Thorus? Mai sentito nominare‚Ä¶",DIA_Addon_Ramon_FirstWarn_NO);
 		
 		Ramon_News = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_19"); //Ehi, rallenta! Tu l‡ dentro non ci vai, quindi sparisci!
+		AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_07_19"); //Ehi, rallenta! Tu l√† dentro non ci vai, quindi sparisci!
 		AI_StopProcessInfos(self);
 	};
 				
@@ -118,12 +118,12 @@ func void DIA_Addon_Ramon_FirstWarn_Info()
 FUNC VOID DIA_Addon_Ramon_FirstWarn_YES()
 {
 	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_00"); //Thorus? QUEL Thorus?
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //SÏ. QUEL Thorus. L'uomo che procura i nuovi arrivati.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //L'uomo che decide se e quando qualcuno puÚ uscire dalla palude ed entrare nel campo.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //Non starai cercando di dirmi che lo conosci gi‡?
-	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_04"); //BehÖ s
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_01"); //S√¨. QUEL Thorus. L'uomo che procura i nuovi arrivati.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_02"); //L'uomo che decide se e quando qualcuno pu√≤ uscire dalla palude ed entrare nel campo.
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_03"); //Non starai cercando di dirmi che lo conosci gi√†?
+	AI_Output (other, self,"DIA_Addon_Ramon_FirstWarn_YES_15_04"); //Beh‚Ä¶ s
 	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_05"); //Senti: TUTTI conoscono Thorus.
-	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //CiÚ nonostante, tu non entri, e io NON gli darÚ alcun messaggio!
+	AI_Output (self, other,"DIA_Addon_Ramon_FirstWarn_YES_07_06"); //Ci√≤ nonostante, tu non entri, e io NON gli dar√≤ alcun messaggio!
 	
 	Info_ClearChoices (DIA_Addon_Ramon_FirstWarn);
 };
@@ -164,7 +164,7 @@ FUNC INT DIA_Addon_Ramon_SecondWarn_Condition()
 
 func void DIA_Addon_Ramon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_Ramon_SecondWarn_07_00"); //Fai un altro passo e sar‡ l'ultimo!
+	AI_Output (self, other,"DIA_Addon_Ramon_SecondWarn_07_00"); //Fai un altro passo e sar√† l'ultimo!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_1071_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -230,7 +230,7 @@ FUNC INT DIA_Addon_Ramon_News_Condition()
 func void DIA_Addon_Ramon_News_Info()
 {
 	AI_Output (other, self,"DIA_Addon_Ramon_News_15_00"); //Sono io l'uomo nuovo.
-	AI_Output (self, other,"DIA_Addon_Ramon_News_07_01"); //Ehi, non cercare di prendermi in giro. » sempre Franco che decide chi di voi entra nel campo.
+	AI_Output (self, other,"DIA_Addon_Ramon_News_07_01"); //Ehi, non cercare di prendermi in giro. √à sempre Franco che decide chi di voi entra nel campo.
 };
 // ************************************************************
 // 			Lie
@@ -242,7 +242,7 @@ INSTANCE DIA_Addon_Ramon_Lie (C_INFO)
 	condition	= DIA_Addon_Ramon_Lie_Condition;
 	information	= DIA_Addon_Ramon_Lie_Info;
 	permanent	= FALSE;
-	description	= "Mi ha mandato FrancoÖ";
+	description	= "Mi ha mandato Franco‚Ä¶";
 };                       
 
 FUNC INT DIA_Addon_Ramon_Lie_Condition()
@@ -256,7 +256,7 @@ FUNC INT DIA_Addon_Ramon_Lie_Condition()
 func void DIA_Addon_Ramon_Lie_Info()
 {
 	AI_Output (other, self,"DIA_Addon_Ramon_Lie_15_00"); //Mi ha mandato Franco
-	AI_Output (self, other,"DIA_Addon_Ramon_Lie_07_01"); //Non Ë vero. Quindi falla finita, altrimenti ti spacco le ossa
+	AI_Output (self, other,"DIA_Addon_Ramon_Lie_07_01"); //Non √® vero. Quindi falla finita, altrimenti ti spacco le ossa
 	
 	AI_StopProcessInfos (self);
 };
