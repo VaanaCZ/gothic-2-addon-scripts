@@ -43,9 +43,9 @@ func int DIA_Draal_DRAGON_Condition ()
 };
 func void DIA_Draal_DRAGON_Info ()
 {
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_00"); //Ero l‡ fuori quando i draghi hanno attaccato.
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_00"); //Ero l√† fuori quando i draghi hanno attaccato.
 	AI_Output			(self, other, "DIA_Draal_DRAGON_03_01"); //L'ho visto, grande come 10 uomini, il suo soffio infuocato ha distrutto le capanne in un batter d'occhio!
-	AI_Output			(self, other, "DIA_Draal_DRAGON_03_02"); //Un drago! Io rimango qui. Niente riuscir‡ a smuovermi. Non sono pazzo!
+	AI_Output			(self, other, "DIA_Draal_DRAGON_03_02"); //Un drago! Io rimango qui. Niente riuscir√† a smuovermi. Non sono pazzo!
 };
 
 

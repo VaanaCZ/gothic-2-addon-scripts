@@ -40,7 +40,7 @@ FUNC VOID DIA_Niclas_Hello_Info()
 {
 	AI_Output (self ,other,"DIA_Niclas_Hello_03_00"); //Sei fuggito anche tu?
 	AI_Output (other,self ,"DIA_Niclas_Hello_15_01"); //Cosa te lo fa pensare?
-	AI_Output (self ,other,"DIA_Niclas_Hello_03_02"); //Altrimenti perché saresti venuto qui tutto solo? Non c'è NIENTE qui.
+	AI_Output (self ,other,"DIA_Niclas_Hello_03_02"); //Altrimenti perchÃ© saresti venuto qui tutto solo? Non c'Ã¨ NIENTE qui.
 };
 
 // ***********************************************************
@@ -62,13 +62,13 @@ FUNC INT DIA_Niclas_HaveALook_Condition()
 FUNC VOID DIA_Niclas_HaveALook_Info()
 {
 	AI_Output (other,self ,"DIA_Niclas_HaveALook_15_00"); //Volevo solo dare un'occhiata in giro.
-	AI_Output (self ,other,"DIA_Niclas_HaveALook_03_01"); //D’accordo, mettiti comodo. Ti andrebbe un pezzo di carne?
+	AI_Output (self ,other,"DIA_Niclas_HaveALook_03_01"); //Dâ€™accordo, mettiti comodo. Ti andrebbe un pezzo di carne?
 	
 	CreateInvItems (self,ItFoMutton,1);
 	
 	Info_ClearChoices (DIA_Niclas_HaveALook);
 	Info_AddChoice (DIA_Niclas_HaveALook,"No, grazie.",DIA_Niclas_HaveALook_No);
-	Info_AddChoice (DIA_Niclas_HaveALook,"Sì, con piacere.",DIA_Niclas_HaveALook_Yes);
+	Info_AddChoice (DIA_Niclas_HaveALook,"SÃ¬, con piacere.",DIA_Niclas_HaveALook_Yes);
 };
 
 FUNC VOID DIA_Niclas_HaveALook_No ()
@@ -83,7 +83,7 @@ FUNC VOID DIA_Niclas_HaveALook_No ()
 
 FUNC VOID DIA_Niclas_HaveALook_Yes ()
 {
-	AI_Output (other,self ,"DIA_Niclas_HaveALook_Yes_15_00"); //Sì, con piacere.
+	AI_Output (other,self ,"DIA_Niclas_HaveALook_Yes_15_00"); //SÃ¬, con piacere.
 	AI_Output (self ,other,"DIA_Niclas_HaveALook_Yes_03_01"); //Tieni, il miglior coscio di ratto talpa. Cucinato secondo la mia ricetta personale.
 	
 	B_GiveInvItems (self ,other,ItFOMutton,1);
@@ -101,7 +101,7 @@ INSTANCE DIA_Niclas_WhyHere   (C_INFO)
 	condition   = DIA_Niclas_WhyHere_Condition;
 	information = DIA_Niclas_WhyHere_Info;
 	permanent   = FALSE;
-	description = "Allora, perché sei qui?";
+	description = "Allora, perchÃ© sei qui?";
 };
 FUNC INT DIA_Niclas_WhyHere_Condition()
 {
@@ -109,8 +109,8 @@ FUNC INT DIA_Niclas_WhyHere_Condition()
 };
 FUNC VOID DIA_Niclas_WhyHere_Info()
 {
-	AI_Output (other,self ,"DIA_Niclas_WhyHere_15_00"); //Allora, perché sei qui?
-	AI_Output (self ,other,"DIA_Niclas_WhyHere_03_01"); //Per avere un po' più di pace. La città mi soffoca.
+	AI_Output (other,self ,"DIA_Niclas_WhyHere_15_00"); //Allora, perchÃ© sei qui?
+	AI_Output (self ,other,"DIA_Niclas_WhyHere_03_01"); //Per avere un po' piÃ¹ di pace. La cittÃ  mi soffoca.
 };
 
 // ***********************************************************
@@ -135,9 +135,9 @@ FUNC INT DIA_Niclas_ShouldntWork_Condition()
 FUNC VOID DIA_Niclas_ShouldntWork_Info()
 {
 	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_00"); //Non hai del lavoro da fare?
-	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_01"); //Posso procurarmi da solo tutto ciò che mi serve. Mi costruisco le frecce e la natura mi dà da mangiare.
+	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_01"); //Posso procurarmi da solo tutto ciÃ² che mi serve. Mi costruisco le frecce e la natura mi dÃ  da mangiare.
 	AI_Output (other,self ,"DIA_Niclas_ShouldntWork_15_02"); //Dunque sei un cacciatore.
-	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_03"); //In un certo senso, sì. Ma caccio soltanto lo stretto necessario, e non per soldi.
+	AI_Output (self ,other,"DIA_Niclas_ShouldntWork_03_03"); //In un certo senso, sÃ¬. Ma caccio soltanto lo stretto necessario, e non per soldi.
 };
 
 // ***********************************************************
@@ -162,10 +162,10 @@ FUNC INT DIA_Niclas_CanTeachMe_Condition()
 FUNC VOID DIA_Niclas_CanTeachMe_Info()
 {
 	AI_Output (other,self ,"DIA_Niclas_CanTeachMe_15_00"); //In tal caso, sono sicuro che puoi insegnarmi qualcosa.
-	AI_Output (self ,other,"DIA_Niclas_CanTeachMe_03_01"); //Perché no? Potrei farti vedere come si usa un arco.
+	AI_Output (self ,other,"DIA_Niclas_CanTeachMe_03_01"); //PerchÃ© no? Potrei farti vedere come si usa un arco.
 	
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Niclas può mostrarmi come migliorare la mia abilità con l'arco.");
+	B_LogEntry		(TOPIC_Teacher, "Niclas puÃ² mostrarmi come migliorare la mia abilitÃ  con l'arco.");
 };
 		
 // ***********************************************************
@@ -193,7 +193,7 @@ FUNC VOID DIA_Niclas_Teach_Info()
 	
 	if (other.HitChance[NPC_TALENT_BOW] >= 60)
 	{
-		AI_Output(self,other,"DIA_Niclas_Teach_03_01"); //Ti ho insegnato tutto ciò che sapevo. Dovrai trovarti un altro maestro.
+		AI_Output(self,other,"DIA_Niclas_Teach_03_01"); //Ti ho insegnato tutto ciÃ² che sapevo. Dovrai trovarti un altro maestro.
 	}
 	else
 	{

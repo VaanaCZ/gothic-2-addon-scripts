@@ -72,7 +72,7 @@ func void DIA_Cedric_CanTeach_Info ()
 	{
 		AI_Output (self, other, "DIA_Cedric_CanTeach_12_01"); //Posso allenarti nel combattimento con le armi a una mano.
 		Cedric_Teach1H = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Il paladino Cedric puÚ insegnarmi a combattere con armi a una mano.");
+		B_LogEntry (TOPIC_CityTeacher,"Il paladino Cedric pu√≤ insegnarmi a combattere con armi a una mano.");
 	}
 	else
 	{
@@ -110,7 +110,7 @@ FUNC VOID DIA_Cedric_Teach_Info()
 	
 	if (other.HitChance[NPC_TALENT_1H] >= 90)
 	{
-		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Hai gi‡ imparato tutto sul combattimento con la spada. Non posso insegnarti nient'altro.
+		AI_Output (self,other,"DIA_DIA_Cedric_Teach_12_01"); //Hai gi√† imparato tutto sul combattimento con la spada. Non posso insegnarti nient'altro.
 	}
 	else
 	{

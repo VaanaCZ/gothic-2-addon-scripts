@@ -71,13 +71,13 @@ FUNC VOID DIA_Onar_PERM_Info()
 	
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //Spero proprio di sì! In fondo è per questo che vi pago!
+		AI_Output (self, other, "DIA_Onar_PERM_14_02"); //Spero proprio di sÃ¬! In fondo Ã¨ per questo che vi pago!
 		AI_Output (self, other, "DIA_Onar_PERM_14_03"); //Faresti meglio ad andare da Torlof a chiedergli se ha del lavoro per te.
 	};
 	
 	if (other.guild == GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //Sì, certo. Tu vai a cacciare i tuoi draghi.
+		AI_Output (self, other, "DIA_Onar_PERM_14_04"); //SÃ¬, certo. Tu vai a cacciare i tuoi draghi.
 	};
 	
 	if (other.guild == GIL_NOV) || (other.guild == GIL_KDF)
@@ -87,7 +87,7 @@ FUNC VOID DIA_Onar_PERM_Info()
 	
 	if (other.guild == GIL_MIL) || (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //La nostra ospitalità non è estesa alle truppe del re.
+		AI_Output (self, other, "DIA_Onar_PERM_14_06"); //La nostra ospitalitÃ  non Ã¨ estesa alle truppe del re.
 	};
 };
 
@@ -115,7 +115,7 @@ FUNC VOID DIA_Onar_Work_Info()
 	AI_Output (other, self, "DIA_Onar_Work_15_00"); //Voglio lavorare per te.
 	AI_Output (self, other, "DIA_Onar_Work_14_01"); //Non mi serve un bracciante per ora.
 	AI_Output (self, other, "DIA_Onar_Work_14_02"); //I miei uomini provvedono a ogni cosa.
-	AI_Output (self, other, "DIA_Onar_Work_14_03"); //Non hai nessun motivo per startene qua in casa, perciò vattene!
+	AI_Output (self, other, "DIA_Onar_Work_14_03"); //Non hai nessun motivo per startene qua in casa, perciÃ² vattene!
 };
 
 
@@ -143,7 +143,7 @@ FUNC INT DIA_Onar_WorkAsSld_Condition()
 FUNC VOID DIA_Onar_WorkAsSld_Info()
 {
 	AI_Output (other, self, "DIA_Onar_WorkAsSld_15_00"); //Voglio lavorare qui come mercenario!
-	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Tu? Un mercenario? Ma non farmi ridere! Se fossi un buon mercenario, Lee mi avrebbe già parlato di te.
+	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_01"); //Tu? Un mercenario? Ma non farmi ridere! Se fossi un buon mercenario, Lee mi avrebbe giÃ  parlato di te.
 	AI_Output (self, other, "DIA_Onar_WorkAsSld_14_02"); //Ora vattene di qui alla svelta!
 	Onar_WegenSldWerden = TRUE;
 };
@@ -158,7 +158,7 @@ INSTANCE DIA_Onar_Aufstand (C_INFO)
 	condition   = DIA_Onar_Aufstand_Condition;
 	information = DIA_Onar_Aufstand_Info;
 	permanent   = FALSE;
-	description = "Ho sentito che sei in rivolta contro la città, o sbaglio?";
+	description = "Ho sentito che sei in rivolta contro la cittÃ , o sbaglio?";
 };
 FUNC INT DIA_Onar_Aufstand_Condition()
 {
@@ -166,10 +166,10 @@ FUNC INT DIA_Onar_Aufstand_Condition()
 };
 FUNC VOID DIA_Onar_Aufstand_Info()
 {
-	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //Ho sentito che sei in rivolta contro la città, o sbaglio?
+	AI_Output (other, self, "DIA_Onar_Aufstand_15_00"); //Ho sentito che sei in rivolta contro la cittÃ , o sbaglio?
 	AI_Output (self, other, "DIA_Onar_Aufstand_14_01"); //Ora ascolta. Ho ereditato questa fattoria e questa terra da mio padre.
 	AI_Output (self, other, "DIA_Onar_Aufstand_14_02"); //Lui l'aveva ereditata da SUO padre.
-	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //Non permetterò a quell'avido imbecille di un re di portarmi via tutto questo solo per sfamare i suoi inutili eserciti.
+	AI_Output (self, other, "DIA_Onar_Aufstand_14_03"); //Non permetterÃ² a quell'avido imbecille di un re di portarmi via tutto questo solo per sfamare i suoi inutili eserciti.
 	AI_Output (self, other, "DIA_Onar_Aufstand_14_04"); //La guerra con gli orchi va avanti da sempre. E a che punto siamo? Sull'orlo del baratro.
 	AI_Output (self, other, "DIA_Onar_Aufstand_14_05"); //No, preferisco difendere la mia fattoria da solo! Con i soldi che risparmio in questo modo posso permettermi un esercito personale.
 };
@@ -196,10 +196,10 @@ FUNC INT DIA_Onar_WegenPepe_Condition()
 FUNC VOID DIA_Onar_WegenPepe_Info()
 {
 	AI_Output (other, self, "DIA_Onar_WegenPepe_15_00"); //Per colpa di Bullco, ti ritrovi con qualche pecora in meno.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //Di che stai parlando? Chi è Bullco?
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_01"); //Di che stai parlando? Chi Ã¨ Bullco?
 	AI_Output (other, self, "DIA_Onar_WegenPepe_15_02"); //Uno dei mercenari.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //Perché lo dici a me? Se ha ucciso le mie pecore dovrà risponderne a Lee.
-	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //Perché dunque mi stai annoiando con questi inutili dettagli?
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_03"); //PerchÃ© lo dici a me? Se ha ucciso le mie pecore dovrÃ  risponderne a Lee.
+	AI_Output (self, other, "DIA_Onar_WegenPepe_14_04"); //PerchÃ© dunque mi stai annoiando con questi inutili dettagli?
 	Onar_WegenPepe = TRUE;
 };
 
@@ -238,8 +238,8 @@ FUNC VOID DIA_Onar_WegenSekob_Info()
 		Onar_WegenSldWerden = TRUE;
 	};
 	AI_Output (other, self, "DIA_Onar_WegenSekob_15_04"); //Ma Sekob non ha soldi. L'ho anche picchiato.
-	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Dice che è per colpa del cattivo raccolto...
-	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //(urlando) Stupido imbecille! Credi che si porti dietro i soldi? Li avrà nascosti da qualche parte!
+	AI_Output (other, self, "DIA_Onar_WegenSekob_15_05"); //Dice che Ã¨ per colpa del cattivo raccolto...
+	AI_Output (self, other, "DIA_Onar_WegenSekob_14_06"); //(urlando) Stupido imbecille! Credi che si porti dietro i soldi? Li avrÃ  nascosti da qualche parte!
 	AI_Output (self, other, "DIA_Onar_WegenSekob_14_07"); //Sai quanto piove qui? Cattivo raccolto un corno!
 	AI_Output (self, other, "DIA_Onar_WegenSekob_14_08"); //Vai e fatti dare quei soldi in un modo o nell'altro.
 	Onar_WegenSekob = TRUE;
@@ -269,21 +269,21 @@ FUNC INT DIA_Onar_LeeSentMe_Condition()
 FUNC VOID DIA_Onar_LeeSentMe_Info()
 {
 	AI_Output (other, self, "DIA_Onar_LeeSentMe_15_00"); //Mi ha mandato Lee. Voglio lavorare qui come mercenario!
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //Mi ha già accennato qualcosa.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_01"); //Mi ha giÃ  accennato qualcosa.
 	
 	if (Onar_WegenSldWerden == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //Mi ero fatto una cattiva idea su di te già la prima volta che mi avevi chiesto di essere assunto.
-		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Ma se Lee crede che tu possa farcela, allora ti darò una possibilità.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_02"); //Mi ero fatto una cattiva idea su di te giÃ  la prima volta che mi avevi chiesto di essere assunto.
+		AI_Output (self, other, "DIA_Onar_LeeSentMe_14_03"); //Ma se Lee crede che tu possa farcela, allora ti darÃ² una possibilitÃ .
 	};
 	
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //Lui è l'unico responsabile per il tuo comportamento, per cui fai come ti pare.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_04"); //Lui Ã¨ l'unico responsabile per il tuo comportamento, per cui fai come ti pare.
 	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_05"); //Ma non perdere tempo in sciocchezze! Lascia in pace i contadini e le cameriere, e soprattutto, non rubare nulla, intesi?
 	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_06"); //Per tutto il resto, parla con Lee.
-	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //Tutto quello di cui dobbiamo discutere ora è la tua paga.
+	AI_Output (self, other, "DIA_Onar_LeeSentMe_14_07"); //Tutto quello di cui dobbiamo discutere ora Ã¨ la tua paga.
 
 	Onar_Approved = TRUE;
-	B_LogEntry (TOPIC_BecomeSLD,"Onar mi ha dato la sua approvazione. Ora niente potrà impedirmi di unirmi ai mercenari.");
+	B_LogEntry (TOPIC_BecomeSLD,"Onar mi ha dato la sua approvazione. Ora niente potrÃ  impedirmi di unirmi ai mercenari.");
 };
 
 
@@ -325,14 +325,14 @@ FUNC VOID DIA_Onar_HowMuch_Info()
 	
 	if (Onar_WegenSekob == TRUE)
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Non sei la persona più sveglia del mondo. L'ho capito da come hai affrontato quella faccenda con Sekob.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_03"); //Non sei la persona piÃ¹ sveglia del mondo. L'ho capito da come hai affrontato quella faccenda con Sekob.
 		SOLD = SOLD - 10;
 	};
 	
 	if (ABSOLUTIONLEVEL_Farm > 1)
 	|| ( (B_GetGreatestPetzCrime (self) > CRIME_NONE) && (ABSOLUTIONLEVEL_Farm > 0) )
 	{
-		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //Hai già causato ripetuti guai qui alla fattoria.
+		AI_Output (self, other, "DIA_Onar_HowMuch_14_04"); //Hai giÃ  causato ripetuti guai qui alla fattoria.
 		SOLD = SOLD - 10;
 	};
 	
@@ -354,7 +354,7 @@ FUNC VOID DIA_Onar_HowMuch_Info()
 	
 	Info_ClearChoices (DIA_Onar_HowMuch);
 	Info_AddChoice (DIA_Onar_HowMuch, "Accetto!", DIA_Onar_HowMuch_Ok);
-	Info_AddChoice (DIA_Onar_HowMuch, "Non è un granché...", DIA_Onar_HowMuch_More);
+	Info_AddChoice (DIA_Onar_HowMuch, "Non Ã¨ un granchÃ©...", DIA_Onar_HowMuch_More);
 	Info_AddChoice (DIA_Onar_HowMuch, "Al giorno?", DIA_Onar_HowMuch_PerDay);
 };
 
@@ -368,9 +368,9 @@ func void DIA_Onar_HowMuch_PerDay()
 
 func void DIA_Onar_HowMuch_More()
 {
-	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //Non è un granché...
+	AI_Output (other, self, "DIA_Onar_HowMuch_More_15_00"); //Non Ã¨ un granchÃ©...
 	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_01"); //Ovviamente puoi lavorare per me gratis.
-	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Ad ogni modo, è tutto ciò che sono disposto a darti!
+	AI_Output (self, other, "DIA_Onar_HowMuch_More_14_02"); //Ad ogni modo, Ã¨ tutto ciÃ² che sono disposto a darti!
 	
 	Log_CreateTopic (Topic_Bonus, LOG_NOTE);
 	B_LogEntry (Topic_Bonus,"Posso ricevere la paga da Onar ogni giorno.");
@@ -421,7 +421,7 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 	else if (Torlof_TheOtherMission_TooLate == TRUE)
 	{
 		AI_Output (self, other, "DIA_Onar_CollectGold_14_02"); //Non hai portato a termine gli incarichi che ti erano stati assegnati!
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //Ho chiesto a Torlof come te la stai cavando e mi ha detto che ti ci vuole un'eternità per completare un lavoro.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_03"); //Ho chiesto a Torlof come te la stai cavando e mi ha detto che ti ci vuole un'eternitÃ  per completare un lavoro.
 		AI_Output (self, other, "DIA_Onar_CollectGold_14_04"); //Io non spreco soldi con uno sfaticato.
 		AI_Output (self, other, "DIA_Onar_CollectGold_14_05"); //Per ora lavorerai un paio di settimane senza paga! Forse allora imparerai la lezione.
 	}
@@ -432,7 +432,7 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 	else if (Wld_GetDay() <= Onar_SOLD_Day)
 	{
 		AI_Output (self, other, "DIA_Onar_CollectGold_14_07"); //Sei impazzito?
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //Prima lavora qui in prova per un giorno. Da domani inizierò a pagarti.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_08"); //Prima lavora qui in prova per un giorno. Da domani inizierÃ² a pagarti.
 	}
 	else if (Wld_GetDay() - 2 >= Onar_SOLD_Day)
 	{
@@ -446,11 +446,11 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 		};
 	
 		AI_Output (self, other, "DIA_Onar_CollectGold_14_11"); //Non ti sei mai fatto vedere.
-		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //Chi lo sa dov'è che sei stato.
+		AI_Output (self, other, "DIA_Onar_CollectGold_14_12"); //Chi lo sa dov'Ã¨ che sei stato.
 		Onar_SOLD_Day = Wld_GetDay();
 		Onar_SOLD_XP = other.exp;
 	}
-	else //genau 1 Tag später...
+	else //genau 1 Tag spÃ¤ter...
 	{
 		if (other.exp > Onar_SOLD_XP + 200)
 		{
@@ -463,7 +463,7 @@ FUNC VOID DIA_Onar_CollectGold_Info()
 		else //nur gepennt
 		{
 			AI_Output (self, other, "DIA_Onar_CollectGold_14_14"); //Cosa? Non hai fatto niente per tutto il giorno, se non perdere tempo e dormire!
-			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //Non ti pagherò per questo!
+			AI_Output (self, other, "DIA_Onar_CollectGold_14_15"); //Non ti pagherÃ² per questo!
 		};
 		
 		Onar_SOLD_Day = Wld_GetDay();
@@ -499,8 +499,8 @@ FUNC VOID DIA_Onar_MariaGold_Info()
 	AI_Output (self, other, "DIA_Onar_MariaGold_14_03"); //(arrabbiato) Quella donna ha il vizio di ficcare il naso dappertutto.
 	AI_Output (self, other, "DIA_Onar_MariaGold_14_04"); //Ti ha detto anche quanto dovrei darti?
 	AI_Output (other, self, "DIA_Onar_MariaGold_15_05"); //No.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //D’accordo, a partire dalla prossima paga riceverai 10 monete d'oro extra.
-	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Ma non una moneta di più, intesi?
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_06"); //Dâ€™accordo, a partire dalla prossima paga riceverai 10 monete d'oro extra.
+	AI_Output (self, other, "DIA_Onar_MariaGold_14_07"); //Ma non una moneta di piÃ¹, intesi?
 	
 	SOLD = SOLD + 10;
 };	
@@ -531,14 +531,14 @@ func int DIA_Onar_WannaSheep_Condition ()
 func void DIA_Onar_WannaSheep_Info ()
 {
 	AI_Output (other, self, "DIA_Onar_WannaSheep_15_00"); //Voglio comprare una pecora!
-	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //Allora perché sei qui? Vedi per caso una pecora da qualche parte?
+	AI_Output (self, other, "DIA_Onar_WannaSheep_14_01"); //Allora perchÃ© sei qui? Vedi per caso una pecora da qualche parte?
 	AI_Output (other, self, "DIA_Onar_WannaSheep_15_02"); //Io...
 	AI_Output (self, other, "DIA_Onar_WannaSheep_14_03"); //Se vuoi comprare una pecora, vai al pascolo. Si trova sulla destra della mia casa.
 	AI_Output (self, other, "DIA_Onar_WannaSheep_14_04"); //Fattene vendere una da Pepe.
 	
 	if (Npc_IsDead (Pepe))
 	{
-		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Mi dispiace, ma Pepe è morto.
+		AI_Output (other, self, "DIA_Onar_WannaSheep_15_05"); //Mi dispiace, ma Pepe Ã¨ morto.
 		AI_Output (self, other, "DIA_Onar_WannaSheep_14_06"); //Oh! In questo caso... lasciami 200 monete d'oro e vatti a scegliere una pecora dal pascolo.
 		
 		Onar_SellSheep = TRUE;
@@ -555,7 +555,7 @@ instance DIA_Onar_BuyLiesel	(C_INFO)
 	condition	 = 	DIA_Onar_BuyLiesel_Condition;
 	information	 = 	DIA_Onar_BuyLiesel_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Eccoti 200 pezzi d’oro. Dammi una pecora.";
+	description	 = 	"Eccoti 200 pezzi dâ€™oro. Dammi una pecora.";
 };
 func int DIA_Onar_BuyLiesel_Condition ()
 {	
@@ -566,12 +566,12 @@ func int DIA_Onar_BuyLiesel_Condition ()
 };
 func void DIA_Onar_BuyLiesel_Info ()
 {
-	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Eccoti 200 monete d’oro. Dammi una pecora.
+	AI_Output (other, self, "DIA_Onar_BuyLiesel_15_00"); //Eccoti 200 monete dâ€™oro. Dammi una pecora.
 	
 	if (B_GiveInvItems  (other, self, ItMi_Gold, 200))
 	{
 		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_01"); //Puoi prendertene una da solo dal pascolo.
-		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //Una di quelle pecore ti seguirà. La maggior parte di esse si chiamano Betsy.
+		AI_Output (self, other, "DIA_Onar_BuyLiesel_14_02"); //Una di quelle pecore ti seguirÃ . La maggior parte di esse si chiamano Betsy.
 		
 		Wld_InsertNpc	(Follow_Sheep,"NW_BIGFARM_SHEEP2_02");
 	

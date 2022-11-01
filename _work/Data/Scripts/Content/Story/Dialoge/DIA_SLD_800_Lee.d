@@ -36,7 +36,7 @@ func void B_Lee_Teleport()
 	AI_Output (other, self, "DIA_Lee_Add_15_06"); //Cosa succede?
 	AI_Output (self ,other, "DIA_Lee_Add_04_07"); //Ho trovato questa nella vecchia cappella.
 	B_GiveInvItems (self, other, ItRu_TeleportFarm, 1);
-	AI_Output (self ,other, "DIA_Lee_Add_04_08"); //» una runa magica. Credo che ti teletrasporter‡ direttamente qui alla fattoria.
+	AI_Output (self ,other, "DIA_Lee_Add_04_08"); //√à una runa magica. Credo che ti teletrasporter√† direttamente qui alla fattoria.
 	AI_Output (self ,other, "DIA_Lee_Add_04_09"); //Ho pensato che saresti stato in grado di usarla.
 	
 	Lee_Teleport = TRUE;
@@ -86,10 +86,10 @@ FUNC VOID DIA_Lee_PMSchulden_Info()
 	if (B_GetTotalPetzCounter(self) > Lee_LastPetzCounter)
 	{
 		AI_Output (self, other, "DIA_Lee_PMSchulden_04_01"); //Ti avevo detto di non fare niente di stupido qui.
-		AI_Output (self, other, "DIA_Lee_PMSchulden_04_02"); //Onar ha sentito dire che la lista dei tuoi misfatti si Ë allungata.
+		AI_Output (self, other, "DIA_Lee_PMSchulden_04_02"); //Onar ha sentito dire che la lista dei tuoi misfatti si √® allungata.
 		if (Lee_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_03"); //Di conseguenza, adesso vuole pi˘ oro.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_03"); //Di conseguenza, adesso vuole pi√π oro.
 			AI_Output (other, self, "DIA_Lee_PMAdd_15_00"); //Quanto vuoi?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Lee_LastPetzCounter);
@@ -105,7 +105,7 @@ FUNC VOID DIA_Lee_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_04"); //Pensavo fossi pi˘ sveglio.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_04"); //Pensavo fossi pi√π sveglio.
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Lee_LastPetzCrime)
@@ -114,19 +114,19 @@ FUNC VOID DIA_Lee_PMSchulden_Info()
 		
 		if (Lee_LastPetzCrime == CRIME_MURDER)
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_06"); //Improvvisamente non c'Ë pi˘ nessuno che ti abbia visto commettere un omicidio.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_06"); //Improvvisamente non c'√® pi√π nessuno che ti abbia visto commettere un omicidio.
 		};
 		
 		if (Lee_LastPetzCrime == CRIME_THEFT)
 		|| ( (Lee_LastPetzCrime > CRIME_THEFT) && (B_GetGreatestPetzCrime(self) < CRIME_THEFT) )
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_07"); //Nessuno testimonier‡ che ti ha visto rubare.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_07"); //Nessuno testimonier√† che ti ha visto rubare.
 		};
 		
 		if (Lee_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Lee_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_08"); //Non c'Ë pi˘ nessuno che ti abbia VISTO picchiare uno dei contadini.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_08"); //Non c'√® pi√π nessuno che ti abbia VISTO picchiare uno dei contadini.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
@@ -139,7 +139,7 @@ FUNC VOID DIA_Lee_PMSchulden_Info()
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_11"); //In ogni caso, non devi pi˘ pagare.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_11"); //In ogni caso, non devi pi√π pagare.
 			AI_Output (self, other, "DIA_Lee_PMSchulden_04_12"); //Ma fai attenzione in futuro.
 	
 			Lee_Schulden			= 0;
@@ -148,7 +148,7 @@ FUNC VOID DIA_Lee_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Lee_PMSchulden_04_13"); //Una cosa Ë chiara: devi, nondimeno, pagare tutta la tua penale.
+			AI_Output (self, other, "DIA_Lee_PMSchulden_04_13"); //Una cosa √® chiara: devi, nondimeno, pagare tutta la tua penale.
 			B_Say_Gold (self, other, Lee_Schulden);
 			AI_Output (self, other, "DIA_Lee_PMSchulden_04_14"); //Allora, cosa ne dici?
 		};
@@ -215,7 +215,7 @@ FUNC VOID DIA_Lee_PETZMASTER_Info()
 				};
 	
 	
-	Lee_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hˆher ist...
+	Lee_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime h√∂her ist...
 	
 	// ------ SC hat mit Lee noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
@@ -226,16 +226,16 @@ FUNC VOID DIA_Lee_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_02"); //» bello che tu ti sia consegnato spontaneamente prima di peggiorare ulteriormente la tua situazione.
+		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_02"); //√à bello che tu ti sia consegnato spontaneamente prima di peggiorare ulteriormente la tua situazione.
 		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_03"); //I mercenari sono gente rude e i contadini qui non sono esattamente dei deboli, ma non puoi semplicemente andare in giro a uccidere le persone.
 		Lee_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Lee_Schulden = Lee_Schulden + 500;						//PLUS Mˆrder-Malus
+		Lee_Schulden = Lee_Schulden + 500;						//PLUS M√∂rder-Malus
 		if ((PETZCOUNTER_Farm_Theft + PETZCOUNTER_Farm_Attack + PETZCOUNTER_Farm_Sheepkiller) > 0)
 		{
 			AI_Output (self, other, "DIA_Lee_PETZMASTER_04_04"); //Per non parlare delle altre malefatte che hai commesso.
 		};
 		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_05"); //Posso aiutarti a uscire da questo casino con una fedina pulita.
-		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_06"); //Ti verr‡ a costare perÚ. Onar Ë un uomo avido e solamente se LUI chiuder‡ un occhio il fatto verr‡ dimenticato.
+		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_06"); //Ti verr√† a costare per√≤. Onar √® un uomo avido e solamente se LUI chiuder√† un occhio il fatto verr√† dimenticato.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
@@ -257,17 +257,17 @@ FUNC VOID DIA_Lee_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
-		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_12"); //Se ti impegni in duello con uno dei mercenari Ë un conto...
-		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_13"); //Ma se picchi un contadino, correr‡ subito da Onar. Ed egli si aspetta che io faccia qualcosa.
+		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_12"); //Se ti impegni in duello con uno dei mercenari √® un conto...
+		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_13"); //Ma se picchi un contadino, correr√† subito da Onar. Ed egli si aspetta che io faccia qualcosa.
 		if (PETZCOUNTER_Farm_Sheepkiller > 0)
 		{
 			AI_Output (self, other, "DIA_Lee_PETZMASTER_04_14"); //Per non dire del fatto che egli non sia esattamente entusiasta che qualcuno uccida le sue pecore.
 		};
-		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_15"); //Dovrai pagare una penale. Onar di regola intasca di persona il denaro, ma Ë l'unico modo di sistemare la faccenda.
+		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_15"); //Dovrai pagare una penale. Onar di regola intasca di persona il denaro, ma √® l'unico modo di sistemare la faccenda.
 		Lee_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getˆtet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf get√∂tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
 		AI_Output (self, other, "DIA_Lee_PETZMASTER_04_16"); //Onar si aspetta che io protegga la sua fattoria. E questo include anche le sue pecore.
@@ -295,7 +295,7 @@ func void DIA_Lee_PETZMASTER_PayNow()
 {
 	AI_Output (other, self, "DIA_Lee_PETZMASTER_PayNow_15_00"); //Voglio pagare la penale!
 	B_GiveInvItems (other, self, itmi_gold, Lee_Schulden);
-	AI_Output (self, other, "DIA_Lee_PETZMASTER_PayNow_04_01"); //Bene! Mi assicurerÚ che Onar riceva il denaro. Puoi considerare la faccenda dimenticata.
+	AI_Output (self, other, "DIA_Lee_PETZMASTER_PayNow_04_01"); //Bene! Mi assicurer√≤ che Onar riceva il denaro. Puoi considerare la faccenda dimenticata.
 
 	B_GrantAbsolution (LOC_FARM);
 	
@@ -310,7 +310,7 @@ func void DIA_Lee_PETZMASTER_PayNow()
 func void DIA_Lee_PETZMASTER_PayLater()
 {
 	AI_Output (other, self, "DIA_Lee_PETZMASTER_PayLater_15_00"); //Non ho abbastanza oro!
-	AI_Output (self, other, "DIA_Lee_PETZMASTER_PayLater_04_01"); //Allora vallo a prendere il pi˘ in fretta possibile.
+	AI_Output (self, other, "DIA_Lee_PETZMASTER_PayLater_04_01"); //Allora vallo a prendere il pi√π in fretta possibile.
 	AI_Output (self, other, "DIA_Lee_PETZMASTER_PayLater_04_02"); //Ma non credere di poterlo rubare qui nella fattoria. Se verrai preso, le cose peggioreranno per te.
 	
 	Lee_LastPetzCounter 	= B_GetTotalPetzCounter(self);
@@ -343,7 +343,7 @@ FUNC VOID DIA_Lee_Hallo_Info()
 	AI_Output (self, other, "DIA_Lee_Hallo_04_00"); //Chi diavolo ha fatto entrare TE qui? (sorpreso) Cosa stai facendo qui? Pensavo fossi morto!
 	AI_Output (other, self, "DIA_Lee_Hallo_15_01"); //Cosa te lo fa pensare?
 	AI_Output (self, other, "DIA_Lee_Hallo_04_02"); //Gorn mi ha detto che sei stato tu a distruggere la Barriera.
-	AI_Output (other, self, "DIA_Lee_Hallo_15_03"); //SÏ, esatto, sono stato io.
+	AI_Output (other, self, "DIA_Lee_Hallo_15_03"); //S√¨, esatto, sono stato io.
 	AI_Output (self, other, "DIA_Lee_Hallo_04_04"); //Non avrei mai pensato che un uomo potesse sopravvivere a qualcosa del genere. Cosa ti porta qui? Non puoi essere qui senza una ragione...
 };
 
@@ -357,7 +357,7 @@ INSTANCE DIA_Lee_Paladine   (C_INFO)
 	condition   = DIA_Lee_Paladine_Condition;
 	information = DIA_Lee_Paladine_Info;
 	permanent   = FALSE;
-	description = "Devo assolutamente parlare con i paladini in citt‡...";
+	description = "Devo assolutamente parlare con i paladini in citt√†...";
 };
 FUNC INT DIA_Lee_Paladine_Condition()
 {
@@ -368,13 +368,13 @@ FUNC INT DIA_Lee_Paladine_Condition()
 };
 FUNC VOID DIA_Lee_Paladine_Info()
 {
-	AI_Output (other, self, "DIA_Lee_Paladine_15_00"); //Devo assolutamente parlare con i paladini in citt‡. Puoi aiutarmi a raggiungerli?
+	AI_Output (other, self, "DIA_Lee_Paladine_15_00"); //Devo assolutamente parlare con i paladini in citt√†. Puoi aiutarmi a raggiungerli?
 	AI_Output (self, other, "DIA_Lee_Paladine_04_01"); //(sospettoso) A cosa ti servono i paladini?
-	AI_Output (other, self, "DIA_Lee_Paladine_15_02"); //» una lunga storia...
+	AI_Output (other, self, "DIA_Lee_Paladine_15_02"); //√à una lunga storia...
 	AI_Output (self, other, "DIA_Lee_Paladine_04_03"); //Ho abbastanza tempo.
 	AI_Output (other, self, "DIA_Lee_Paladine_15_04"); //(sospira) Xardas mi ha mandato in missione. Vuole che io ottenga un potente amuleto, l'Occhio di Innos.
 	AI_Output (self, other, "DIA_Lee_Paladine_04_05"); //Dunque sei ancora alleato con il negromante. Capisco. E i paladini hanno questo amuleto?
-	AI_Output (other, self, "DIA_Lee_Paladine_15_06"); //Per quanto ne so sÏ.
+	AI_Output (other, self, "DIA_Lee_Paladine_15_06"); //Per quanto ne so s√¨.
 	AI_Output (self, other, "DIA_Lee_Paladine_04_07"); //Posso aiutarti a raggiungere i paladini. Ma prima dovrai diventare uno di noi.
 };
 
@@ -402,7 +402,7 @@ FUNC VOID DIA_Lee_PaladineHOW_Info()
 {
 	AI_Output (other, self, "DIA_Lee_PaladineHOW_15_00"); //Puoi aiutarmi a trovare i paladini?
 	AI_Output (self, other, "DIA_Lee_PaladineHOW_04_01"); //Fidati, ho un piano. Credo tu sia l'uomo giusto per questo...
-	AI_Output (self, other, "DIA_Lee_PaladineHOW_04_02"); //Ti porterÚ dai paladini e tu mi farai un favore. Ma prima, unisciti a noi!
+	AI_Output (self, other, "DIA_Lee_PaladineHOW_04_02"); //Ti porter√≤ dai paladini e tu mi farai un favore. Ma prima, unisciti a noi!
 };
 
 // ************************************************************
@@ -427,18 +427,18 @@ FUNC INT DIA_Lee_LeesPlan_Condition()
 FUNC VOID DIA_Lee_LeesPlan_Info()
 {
 	AI_Output (other, self, "DIA_Lee_LeesPlan_15_00"); //Cosa stai facendo esattamente, qui?
-	AI_Output (self, other, "DIA_Lee_LeesPlan_04_01"); //Molto semplice: farÚ in modo che tutti noi potremo lasciare quest'isola.
-	AI_Output (self, other, "DIA_Lee_LeesPlan_04_02"); //Onar ci ha assunti per difendere la sua fattoria ed Ë esattamente quello che faremo.
-	AI_Output (self, other, "DIA_Lee_LeesPlan_04_03"); //Ma la nostra ricompensa Ë ben pi˘ della nostra paga. Aiutando le fattorie tagliamo anche i rifornimenti della citt‡.
-	AI_Output (self, other, "DIA_Lee_LeesPlan_04_04"); //E meno i paladini avranno da mangiare, prima ascolteranno quando farÚ finalmente loro un'offerta di pace.
+	AI_Output (self, other, "DIA_Lee_LeesPlan_04_01"); //Molto semplice: far√≤ in modo che tutti noi potremo lasciare quest'isola.
+	AI_Output (self, other, "DIA_Lee_LeesPlan_04_02"); //Onar ci ha assunti per difendere la sua fattoria ed √® esattamente quello che faremo.
+	AI_Output (self, other, "DIA_Lee_LeesPlan_04_03"); //Ma la nostra ricompensa √® ben pi√π della nostra paga. Aiutando le fattorie tagliamo anche i rifornimenti della citt√†.
+	AI_Output (self, other, "DIA_Lee_LeesPlan_04_04"); //E meno i paladini avranno da mangiare, prima ascolteranno quando far√≤ finalmente loro un'offerta di pace.
 
 	if ((hero.guild == GIL_MIL)||(hero.guild == GIL_PAL))
 	{
 	AI_Output (self, other, "DIA_Lee_LeesPlan_04_05"); //Peccato che ti sei unito proprio a loro.
 	};
 
-	AI_Output (other, self, "DIA_Lee_LeesPlan_15_06"); //Come sar‡ la tua offerta?
-	AI_Output (self, other, "DIA_Lee_LeesPlan_04_07"); //Principalmente, riguarder‡ la nostra amnistia e un passaggio per la terraferma. Ne saprai di pi˘ quando sar‡ il momento.
+	AI_Output (other, self, "DIA_Lee_LeesPlan_15_06"); //Come sar√† la tua offerta?
+	AI_Output (self, other, "DIA_Lee_LeesPlan_04_07"); //Principalmente, riguarder√† la nostra amnistia e un passaggio per la terraferma. Ne saprai di pi√π quando sar√† il momento.
 };
 
 // ************************************************************
@@ -491,9 +491,9 @@ FUNC INT DIA_Lee_ClearWhat_Condition()
 FUNC VOID DIA_Lee_ClearWhat_Info()
 {
 	AI_Output (other, self, "DIA_Lee_ClearWhat_15_00"); //Cosa devo sapere prima di potermi unire a voi?
-	AI_Output (self, other, "DIA_Lee_ClearWhat_04_01"); //Onar, il proprietario terriero, Ë colui che ci ha assunto. Puoi stare nella fattoria solo con la sua approvazione.
-	AI_Output (self, other, "DIA_Lee_ClearWhat_04_02"); //E poi ci sono i ragazzi. Posso accettarti solo se la maggior parte dei mercenari sar‡ d'accordo che tu ti unisca a noi.
-	AI_Output (self, other, "DIA_Lee_ClearWhat_04_03"); //Ma non andare da Onar prima che tutto sia sistemato. » un tipo molto impaziente...
+	AI_Output (self, other, "DIA_Lee_ClearWhat_04_01"); //Onar, il proprietario terriero, √® colui che ci ha assunto. Puoi stare nella fattoria solo con la sua approvazione.
+	AI_Output (self, other, "DIA_Lee_ClearWhat_04_02"); //E poi ci sono i ragazzi. Posso accettarti solo se la maggior parte dei mercenari sar√† d'accordo che tu ti unisca a noi.
+	AI_Output (self, other, "DIA_Lee_ClearWhat_04_03"); //Ma non andare da Onar prima che tutto sia sistemato. √à un tipo molto impaziente...
 	
 	Log_CreateTopic (TOPIC_BecomeSLD,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BecomeSLD,LOG_RUNNING);
@@ -524,9 +524,9 @@ FUNC VOID DIA_Lee_OtherSld_Info()
 {
 	AI_Output (other, self, "DIA_Lee_OtherSld_15_00"); //Come faccio a convincere i mercenari a votare per il mio ingresso?
 	AI_Output (self, other, "DIA_Lee_OtherSld_04_01"); //Facendo quello che dovresti fare come mercenario, direi.
-	AI_Output (self, other, "DIA_Lee_OtherSld_04_02"); //Parla con Torlof. Di solito Ë fuori, di fronte alla casa. Ti metter‡ alla prova.
+	AI_Output (self, other, "DIA_Lee_OtherSld_04_02"); //Parla con Torlof. Di solito √® fuori, di fronte alla casa. Ti metter√† alla prova.
 	AI_Output (self, other, "DIA_Lee_OtherSld_04_03"); //Se riuscirai a superare la prova, avrai guadagnato buona parte del rispetto necessario.
-	AI_Output (self, other, "DIA_Lee_OtherSld_04_04"); //Egli ti dir‡ tutte le altre cose che devi sapere.
+	AI_Output (self, other, "DIA_Lee_OtherSld_04_04"); //Egli ti dir√† tutte le altre cose che devi sapere.
 	
 	B_LogEntry (TOPIC_BecomeSLD,"Per essere accettato come mercenario, devo superare la prova di Torlof e guadagnarmi il rispetto degli altri mercenari.");
 };
@@ -541,7 +541,7 @@ instance DIA_Addon_Lee_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Lee_Ranger_Condition;
 	information	 = 	DIA_Addon_Lee_Ranger_Info;
 
-	description	 = 	"Cosa sai dellíAnello dell'Acqua?";
+	description	 = 	"Cosa sai dell‚ÄôAnello dell'Acqua?";
 };
 
 func int DIA_Addon_Lee_Ranger_Condition ()
@@ -555,13 +555,13 @@ func int DIA_Addon_Lee_Ranger_Condition ()
 
 func void DIA_Addon_Lee_Ranger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lee_Ranger_15_00"); //Cosa sai dellíAnello dell'Acqua?
+	AI_Output	(other, self, "DIA_Addon_Lee_Ranger_15_00"); //Cosa sai dell‚ÄôAnello dell'Acqua?
 	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_01"); //(ride) Lo sapevo. Devi proprio immischiarti in affari che non ti riguardano, eh?
 	AI_Output	(other, self, "DIA_Addon_Lee_Ranger_15_02"); //Suvvia, dimmelo.
-	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_03"); //Il mio coinvolgimento in questa faccenda Ë marginale. So che questa gilda segreta esiste, e che dietro ci sono i Maghi dell'Acqua.
-	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_04"); //Dopo la caduta della Barriera, l'accordo che avevo stretto con i Maghi dell'Acqua Ë decaduto.
+	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_03"); //Il mio coinvolgimento in questa faccenda √® marginale. So che questa gilda segreta esiste, e che dietro ci sono i Maghi dell'Acqua.
+	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_04"); //Dopo la caduta della Barriera, l'accordo che avevo stretto con i Maghi dell'Acqua √® decaduto.
 	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_05"); //Ovviamente do ancora una mano quando posso. Ma ho anch'io i miei problemi, e non ho molto tempo da dedicare ad altre faccende.
-	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_06"); //Se vuoi saperne di pi˘, parla con Cord. » uno di loro, per quanto ne so.
+	AI_Output	(self, other, "DIA_Addon_Lee_Ranger_04_06"); //Se vuoi saperne di pi√π, parla con Cord. √à uno di loro, per quanto ne so.
 		
 	RangerHelp_gildeSLD = TRUE;	
 	SC_KnowsCordAsRangerFromLee = TRUE;
@@ -607,7 +607,7 @@ FUNC VOID DIA_Lee_JoinNOW_Info()
 		else //Probe bestanden
 		{			
 			AI_Output (self, other, "DIA_Lee_JoinNOW_04_02"); //Dunque hai superato la prova di Torlof?
-			AI_Output (other, self, "DIA_Lee_JoinNOW_15_03"); //SÏ.
+			AI_Output (other, self, "DIA_Lee_JoinNOW_15_03"); //S√¨.
 			AI_Output (self, other, "DIA_Lee_JoinNOW_04_04"); //Sono contento.
 			Lee_ProbeOK = TRUE;
 		};
@@ -625,7 +625,7 @@ FUNC VOID DIA_Lee_JoinNOW_Info()
 		}
 		else //genug Stimmen
 		{
-			AI_Output (other, self, "DIA_Lee_JoinNOW_15_08"); //La maggior parte di loro Ë dalla mia parte.
+			AI_Output (other, self, "DIA_Lee_JoinNOW_15_08"); //La maggior parte di loro √® dalla mia parte.
 			Lee_StimmenOK = TRUE;
 		};	
 	};
@@ -636,10 +636,10 @@ FUNC VOID DIA_Lee_JoinNOW_Info()
 	{		
 		if (Onar_Approved == FALSE)
 		{
-			AI_Output (self, other, "DIA_Lee_JoinNOW_04_09"); //Bene, allora vai a parlare con Onar adesso. Gli ho gi‡ parlato di te.
+			AI_Output (self, other, "DIA_Lee_JoinNOW_04_09"); //Bene, allora vai a parlare con Onar adesso. Gli ho gi√† parlato di te.
 			AI_Output (self, other, "DIA_Lee_JoinNOW_04_10"); //Ma dovrai trattare la tua paga da solo.
 			Lee_SendToOnar = TRUE;
-			B_LogEntry (TOPIC_BecomeSLD,"Tutto quello che mi serve ora Ë l'approvazione di Onar.");
+			B_LogEntry (TOPIC_BecomeSLD,"Tutto quello che mi serve ora √® l'approvazione di Onar.");
 		}
 		else //Onar ist einverstanden
 		{
@@ -664,8 +664,8 @@ FUNC VOID DIA_Lee_JoinNOW_Info()
 			B_GivePlayerXP (XP_BecomeMercenary);
 			
 			AI_Output (self, other, "DIA_Lee_JoinNOW_04_15"); //Sono felice di averti con noi.
-			AI_Output (self, other, "DIA_Lee_JoinNOW_04_16"); //Ho gi‡ il tuo primo incarico.
-			AI_Output (self, other, "DIA_Lee_JoinNOW_04_17"); //Ha a che fare con i paladini. » ora che tu vada a incontrarli
+			AI_Output (self, other, "DIA_Lee_JoinNOW_04_16"); //Ho gi√† il tuo primo incarico.
+			AI_Output (self, other, "DIA_Lee_JoinNOW_04_17"); //Ha a che fare con i paladini. √à ora che tu vada a incontrarli
 			AI_Output (self, other, "DIA_Lee_JoinNOW_04_18"); //Volevi comunque andarci.
 		};
 	};
@@ -704,7 +704,7 @@ FUNC VOID DIA_Lee_KeinSld_Info()
 		AI_Output (self, other, "DIA_Lee_KeinSld_04_01"); //Sei entrato a fare parte del monastero? (ride) Mi sarei aspettato tutto tranne quello.
 	};
 	
-	AI_Output (self, other, "DIA_Lee_KeinSld_04_02"); //Beh, non puoi pi˘ diventare un mercenario ora.
+	AI_Output (self, other, "DIA_Lee_KeinSld_04_02"); //Beh, non puoi pi√π diventare un mercenario ora.
 	AI_Output (self, other, "DIA_Lee_KeinSld_04_03"); //Ma chi lo sa, forse puoi fare una o due cose per me, o io per te.
 	AI_Output (self, other, "DIA_Lee_KeinSld_04_04"); //Vedremo. Ad ogni modo, ti auguro ogni bene.
 	AI_Output (self, other, "DIA_Lee_KeinSld_04_05"); //Ma non pensare lontanamente di ingannarmi, intesi?
@@ -734,7 +734,7 @@ FUNC VOID DIA_Lee_ToHagen_Info()
 	AI_Output (other, self, "DIA_Lee_ToHagen_15_00"); //E come faccio a raggiungere i paladini, adesso?
 	AI_Output (self, other, "DIA_Lee_ToHagen_04_01"); //Molto semplice. Dovrai portargli la nostra offerta di pace.
 	AI_Output (self, other, "DIA_Lee_ToHagen_04_02"); //Conosco Lord Hagen, il comandante dei paladini, dai tempi in cui ero nell'esercito reale.
-	AI_Output (self, other, "DIA_Lee_ToHagen_04_03"); //So bene come ragiona, non ha abbastanza uomini. Accetter‡ l'offerta. Perlomeno ti ascolter‡.
+	AI_Output (self, other, "DIA_Lee_ToHagen_04_03"); //So bene come ragiona, non ha abbastanza uomini. Accetter√† l'offerta. Perlomeno ti ascolter√†.
 	AI_Output (self, other, "DIA_Lee_ToHagen_04_04"); //Ho scritto una lettera, tieni.
 	B_GiveInvItems (self,other,ItWr_Passage_MIS,1);
 	AI_Output (self, other, "DIA_Lee_ToHagen_04_05"); //Ad ogni modo, dovresti essere ammesso a cospetto del capo dei paladini.
@@ -769,11 +769,11 @@ FUNC VOID DIA_Lee_AngebotSuccess_Info()
 {
 	AI_Output (other, self, "DIA_Lee_AngebotSuccess_15_00"); //Ho recapitato a Lord Hagen la tua offerta di pace.
 	AI_Output (self, other, "DIA_Lee_AngebotSuccess_04_01"); //Cosa ti ha detto?
-	AI_Output (other, self, "DIA_Lee_AngebotSuccess_15_02"); //Dice che conceder‡ l'amnistia a te, ma non ai tuoi uomini.
+	AI_Output (other, self, "DIA_Lee_AngebotSuccess_15_02"); //Dice che conceder√† l'amnistia a te, ma non ai tuoi uomini.
 	AI_Output (self, other, "DIA_Lee_AngebotSuccess_04_03"); //Quello stupido testardo. La maggior parte degli uomini nell'esercito del RE sono dei tagliagole peggiori dei miei uomini.
 	AI_Output (other, self, "DIA_Lee_AngebotSuccess_15_04"); //Cosa farai adesso?
 	AI_Output (self, other, "DIA_Lee_AngebotSuccess_04_05"); //Dobbiamo trovare un altro modo per andarcene. Se necessario, ci impadroniremo della nave. Ci devo pensare.
-	AI_Output (self, other, "DIA_Lee_AngebotSuccess_04_06"); //Togliere la testa dal cappio e abbandonare i miei uomini Ë fuori discussione.
+	AI_Output (self, other, "DIA_Lee_AngebotSuccess_04_06"); //Togliere la testa dal cappio e abbandonare i miei uomini √® fuori discussione.
 
 	MIS_Lee_Friedensangebot = LOG_SUCCESS;
 };
@@ -788,7 +788,7 @@ INSTANCE DIA_Lee_Background (C_INFO)
 	condition   = DIA_Lee_Background_Condition;
 	information = DIA_Lee_Background_Info;
 	permanent   = FALSE;
-	description = "PerchÈ desideri cosÏ ardentemente andare sulla terraferma?";
+	description = "Perch√© desideri cos√¨ ardentemente andare sulla terraferma?";
 };
 FUNC INT DIA_Lee_Background_Condition()
 {
@@ -799,12 +799,12 @@ FUNC INT DIA_Lee_Background_Condition()
 };
 FUNC VOID DIA_Lee_Background_Info()
 {
-	AI_Output (other, self, "DIA_Lee_Add_15_10"); //PerchÈ desideri cosÏ ardentemente andare sulla terraferma?
+	AI_Output (other, self, "DIA_Lee_Add_15_10"); //Perch√© desideri cos√¨ ardentemente andare sulla terraferma?
 	AI_Output (self ,other, "DIA_Lee_Add_04_11"); //Come saprai, servivo il re come generale.
-	AI_Output (self ,other, "DIA_Lee_Add_04_12"); //Ma i suoi leccapiedi mi hanno tradito, poichÈ sapevo qualcosa che non avrei dovuto sapere.
-	AI_Output (self ,other, "DIA_Lee_Add_04_13"); //Mi hanno gettato nella colonia mineraria e il re ha permesso tutto ciÚ.
+	AI_Output (self ,other, "DIA_Lee_Add_04_12"); //Ma i suoi leccapiedi mi hanno tradito, poich√© sapevo qualcosa che non avrei dovuto sapere.
+	AI_Output (self ,other, "DIA_Lee_Add_04_13"); //Mi hanno gettato nella colonia mineraria e il re ha permesso tutto ci√≤.
 	AI_Output (self ,other, "DIA_Lee_Add_04_14"); //Ho avuto molto tempo per rifletterci.
-	AI_Output (self ,other, "DIA_Lee_Add_04_15"); //Mi vendicherÚ.
+	AI_Output (self ,other, "DIA_Lee_Add_04_15"); //Mi vendicher√≤.
 	AI_Output (other, self, "DIA_Lee_Add_15_16"); //(stupito) Sul re?
 	AI_Output (self ,other, "DIA_Lee_Add_04_17"); //(determinato) Sul re! E su tutti i suoi leccapiedi. Si pentiranno amaramente di quello che mi hanno fatto...
 };
@@ -819,7 +819,7 @@ INSTANCE DIA_Lee_RescueGorn (C_INFO)
 	condition   = DIA_Lee_RescueGorn_Condition;
 	information = DIA_Lee_RescueGorn_Info;
 	permanent   = FALSE;
-	description = "Mi dirigerÚ verso la Valle delle Miniere.";
+	description = "Mi diriger√≤ verso la Valle delle Miniere.";
 };
 FUNC INT DIA_Lee_RescueGorn_Condition()
 {
@@ -832,10 +832,10 @@ FUNC INT DIA_Lee_RescueGorn_Condition()
 };
 FUNC VOID DIA_Lee_RescueGorn_Info()
 {
-	AI_Output (other, self, "DIA_Lee_RescueGorn_15_00"); //Mi dirigerÚ verso la Valle delle Miniere.
+	AI_Output (other, self, "DIA_Lee_RescueGorn_15_00"); //Mi diriger√≤ verso la Valle delle Miniere.
 	AI_Output (self, other, "DIA_Lee_RescueGorn_04_01"); //Non ho mai pensato che saresti rimasto alla fattoria a lungo.
-	AI_Output (self, other, "DIA_Lee_RescueGorn_04_02"); //Se torni nella colonia, vedi come sta Gorn. I paladini lo tengono prigioniero laggi˘.
-	AI_Output (self, other, "DIA_Lee_RescueGorn_04_03"); //Gorn Ë un buon uomo e mi servirebbe veramente qui, quindi se avrai la possibilit‡ di liberarlo, fallo.
+	AI_Output (self, other, "DIA_Lee_RescueGorn_04_02"); //Se torni nella colonia, vedi come sta Gorn. I paladini lo tengono prigioniero laggi√π.
+	AI_Output (self, other, "DIA_Lee_RescueGorn_04_03"); //Gorn √® un buon uomo e mi servirebbe veramente qui, quindi se avrai la possibilit√† di liberarlo, fallo.
 	
 	KnowsAboutGorn = TRUE;
 };
@@ -863,8 +863,8 @@ FUNC INT DIA_Lee_Success_Condition()
 FUNC VOID DIA_Lee_Success_Info()
 {
 	AI_Output (other, self, "DIA_Lee_Success_15_00"); //Ho liberato Gorn.
-	AI_Output (self, other, "DIA_Lee_Success_04_01"); //SÏ, me lo ha detto. Ottimo lavoro.
-	AI_Output (self, other, "DIA_Lee_Success_04_02"); //Vale pi˘ di Silvio e dei suoi ragazzi messi assieme.
+	AI_Output (self, other, "DIA_Lee_Success_04_01"); //S√¨, me lo ha detto. Ottimo lavoro.
+	AI_Output (self, other, "DIA_Lee_Success_04_02"); //Vale pi√π di Silvio e dei suoi ragazzi messi assieme.
 	
 	B_GivePlayerXP (XP_Ambient);
 	
@@ -879,7 +879,7 @@ INSTANCE DIA_Lee_AboutGorn (C_INFO)
 	condition   = DIA_Lee_AboutGorn_Condition;
 	information = DIA_Lee_AboutGorn_Info;
 	permanent   = FALSE;
-	description = "Gorn ti ha parlato di me??? Che cosa gli Ë successo?";
+	description = "Gorn ti ha parlato di me??? Che cosa gli √® successo?";
 };
 FUNC INT DIA_Lee_AboutGorn_Condition()
 {
@@ -891,7 +891,7 @@ FUNC INT DIA_Lee_AboutGorn_Condition()
 };
 FUNC VOID DIA_Lee_AboutGorn_Info()
 {
-	AI_Output (other, self, "DIA_Lee_AboutGorn_15_00"); //Gorn ti ha parlato di me??? Che cosa gli Ë successo?
+	AI_Output (other, self, "DIA_Lee_AboutGorn_15_00"); //Gorn ti ha parlato di me??? Che cosa gli √® successo?
 	AI_Output (self, other, "DIA_Lee_AboutGorn_04_01"); //Ti ricordi di lui, vero?
 	
 	Info_ClearChoices (DIA_Lee_AboutGorn);
@@ -902,9 +902,9 @@ FUNC VOID DIA_Lee_AboutGorn_Info()
 func void DIA_Lee_AboutGorn_Yes()
 {
 	AI_Output (other, self, "DIA_Lee_AboutGorn_Yes_15_00"); //Certo.
-	AI_Output (self, other, "DIA_Lee_AboutGorn_Yes_04_01"); //» stato catturato dai paladini e rimandato nella Valle delle Miniere con un convoglio di detenuti.
-	AI_Output (self, other, "DIA_Lee_AboutGorn_Yes_04_02"); //Se la strada per la Valle delle Miniere non fosse infestata da paladini e orchi, avrei gi‡ mandato un paio di ragazzi a liberarlo.
-	AI_Output (self, other, "DIA_Lee_AboutGorn_Yes_04_03"); //Ma per come stanno le cose, non c'Ë possibilit‡. Poveraccio.
+	AI_Output (self, other, "DIA_Lee_AboutGorn_Yes_04_01"); //√à stato catturato dai paladini e rimandato nella Valle delle Miniere con un convoglio di detenuti.
+	AI_Output (self, other, "DIA_Lee_AboutGorn_Yes_04_02"); //Se la strada per la Valle delle Miniere non fosse infestata da paladini e orchi, avrei gi√† mandato un paio di ragazzi a liberarlo.
+	AI_Output (self, other, "DIA_Lee_AboutGorn_Yes_04_03"); //Ma per come stanno le cose, non c'√® possibilit√†. Poveraccio.
 	Info_ClearChoices (DIA_Lee_AboutGorn);
 };
 
@@ -938,13 +938,13 @@ FUNC INT DIA_Lee_WegenBullco_Condition()
 FUNC VOID DIA_Lee_WegenBullco_Info()
 {
 	AI_Output (other, self, "DIA_Lee_Add_15_00"); //Adesso Onar possiede qualche pecora in meno, grazie a Bullco...
-	AI_Output (self ,other, "DIA_Lee_Add_04_01"); //Oh, non me ne parlare! Ho gi‡ abbastanza problemi.
+	AI_Output (self ,other, "DIA_Lee_Add_04_01"); //Oh, non me ne parlare! Ho gi√† abbastanza problemi.
 	if (Bullco_scharf == TRUE)
 	&& (!Npc_IsDead(Bullco))
 	{
 		AI_Output (other, self, "DIA_Lee_Add_15_02"); //Anch'io. Bullco sembra avercela con me. Vuole che io lasci la fattoria...
-		AI_Output (self ,other, "DIA_Lee_Add_04_03"); //SÏ, e...? Fatti valere.
-		AI_Output (self ,other, "DIA_Lee_Add_04_04"); //Puoi dirgli di contenersi, altrimenti sottrarrÚ il costo delle pecore dalla sua paga...
+		AI_Output (self ,other, "DIA_Lee_Add_04_03"); //S√¨, e...? Fatti valere.
+		AI_Output (self ,other, "DIA_Lee_Add_04_04"); //Puoi dirgli di contenersi, altrimenti sottrarr√≤ il costo delle pecore dalla sua paga...
 	};
 };
 
@@ -979,19 +979,19 @@ FUNC INT DIA_Lee_Report_Condition()
 };
 FUNC VOID DIA_Lee_Report_Info()
 {	
-	AI_Output (other, self, "DIA_Lee_Add_15_18"); //Vengo dalla Valle delle Miniere. Il castello Ë stato attaccato dai draghi!
-	AI_Output (self ,other, "DIA_Lee_Add_04_19"); //Dunque era vero! Lares mi aveva detto che storie di draghi stavano circolando in citt‡... non ci credevo...
+	AI_Output (other, self, "DIA_Lee_Add_15_18"); //Vengo dalla Valle delle Miniere. Il castello √® stato attaccato dai draghi!
+	AI_Output (self ,other, "DIA_Lee_Add_04_19"); //Dunque era vero! Lares mi aveva detto che storie di draghi stavano circolando in citt√†... non ci credevo...
 	AI_Output (self ,other, "DIA_Lee_Add_04_20"); //Che mi dici dei paladini?
 	AI_Output (other, self, "DIA_Lee_Add_15_21"); //Sono stati pesantemente decimati.
 	if (other.guild == GIL_SLD)
 	{
-		AI_Output (self ,other, "DIA_Lee_Add_04_22"); //Bene! Forse ora Lord Hagen ripenser‡ alla mia offerta...
-		AI_Output (self ,other, "DIA_Lee_Add_04_23"); //E se non lo far‡... (severo) Allora troveremo un altro modo per andarcene da qui...
+		AI_Output (self ,other, "DIA_Lee_Add_04_22"); //Bene! Forse ora Lord Hagen ripenser√† alla mia offerta...
+		AI_Output (self ,other, "DIA_Lee_Add_04_23"); //E se non lo far√†... (severo) Allora troveremo un altro modo per andarcene da qui...
 	}
 	else
 	{
-		AI_Output (self ,other, "DIA_Lee_Add_04_24"); //Bene! Forse questo costringer‡ Lord Hagen ad andare nella Valle delle Miniere con i suoi uomini...
-		AI_Output (self ,other, "DIA_Lee_Add_04_25"); //Meno paladini rimarranno qui, meglio sar‡.
+		AI_Output (self ,other, "DIA_Lee_Add_04_24"); //Bene! Forse questo costringer√† Lord Hagen ad andare nella Valle delle Miniere con i suoi uomini...
+		AI_Output (self ,other, "DIA_Lee_Add_04_25"); //Meno paladini rimarranno qui, meglio sar√†.
 	};
 };
 
@@ -1009,7 +1009,7 @@ instance DIA_Lee_ArmorM (C_INFO)
 	condition	= DIA_Lee_ArmorM_Condition;
 	information	= DIA_Lee_ArmorM_Info;
 	permanent	= TRUE;
-	description = "Che ne dici di uníarmatura migliore?";
+	description = "Che ne dici di un‚Äôarmatura migliore?";
 };                       
 FUNC INT DIA_Lee_ArmorM_Condition()
 {
@@ -1022,7 +1022,7 @@ FUNC INT DIA_Lee_ArmorM_Condition()
 };
 FUNC VOID DIA_Lee_ArmorM_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_ArmorM_15_00"); //Che ne dici di uníarmatura migliore?
+	AI_Output (other,self ,"DIA_Lee_ArmorM_15_00"); //Che ne dici di un‚Äôarmatura migliore?
 	
 	if (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	&& (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
@@ -1034,7 +1034,7 @@ FUNC VOID DIA_Lee_ArmorM_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lee_ArmorM_04_03"); //Torlof ha un incarico da parte di Onar di cui avremmo dovuto occuparci gi‡ da tempo.
+		AI_Output (self ,other,"DIA_Lee_ArmorM_04_03"); //Torlof ha un incarico da parte di Onar di cui avremmo dovuto occuparci gi√† da tempo.
 		AI_Output (self ,other,"DIA_Lee_ArmorM_04_04"); //Occupatene tu, poi potremo parlare di un'armatura migliore!
 	};
 };
@@ -1052,7 +1052,7 @@ instance DIA_Lee_BuyArmorM (C_INFO)
 	condition	= DIA_Lee_BuyArmorM_Condition;
 	information	= DIA_Lee_BuyArmorM_Info;
 	permanent	= TRUE;
-	description = "Compra uníarmatura da mercenario media. Protezione: armi 45, frecce 45. Costo: 500 monete díoro";
+	description = "Compra un‚Äôarmatura da mercenario media. Protezione: armi 45, frecce 45. Costo: 500 monete d‚Äôoro";
 };                       
 FUNC INT DIA_Lee_BuyArmorM_Condition()
 {
@@ -1077,7 +1077,7 @@ FUNC VOID DIA_Lee_BuyArmorM_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lee_BuyArmorM_04_02"); //Ma non Ë un regalo! Prima voglio vedere l'oro!
+		AI_Output (self ,other,"DIA_Lee_BuyArmorM_04_02"); //Ma non √® un regalo! Prima voglio vedere l'oro!
 	};
 };
 
@@ -1153,7 +1153,7 @@ instance DIA_Lee_ArmorH (C_INFO)
 	condition	= DIA_Lee_ArmorH_Condition;
 	information	= DIA_Lee_ArmorH_Info;
 	permanent	= FALSE;
-	description = "Hai uníarmatura migliore per me?";
+	description = "Hai un‚Äôarmatura migliore per me?";
 };                       
 FUNC INT DIA_Lee_ArmorH_Condition()
 {
@@ -1165,7 +1165,7 @@ FUNC INT DIA_Lee_ArmorH_Condition()
 };
 FUNC VOID DIA_Lee_ArmorH_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_ArmorH_15_00"); //Hai uníarmatura migliore per me?
+	AI_Output (other,self ,"DIA_Lee_ArmorH_15_00"); //Hai un‚Äôarmatura migliore per me?
 	AI_Output (self ,other,"DIA_Lee_ArmorH_04_01"); //Certamente.
 };
 
@@ -1182,7 +1182,7 @@ instance DIA_Lee_BuyArmorH (C_INFO)
 	condition	= DIA_Lee_BuyArmorH_Condition;
 	information	= DIA_Lee_BuyArmorH_Info;
 	permanent	= TRUE;
-	description = "Compra uníarmatura da mercenario pesante. Protezione: armi 60, frecce 60. Costo: 1000 monete díoro";
+	description = "Compra un‚Äôarmatura da mercenario pesante. Protezione: armi 60, frecce 60. Costo: 1000 monete d‚Äôoro";
 };                       
 FUNC INT DIA_Lee_BuyArmorH_Condition()
 {
@@ -1198,7 +1198,7 @@ FUNC VOID DIA_Lee_BuyArmorH_Info()
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 2500))
 	{
-		AI_Output (self ,other,"DIA_Lee_BuyArmorH_04_01"); //Eccotela. Un'armatura molto buona. » la stessa che indosso io.
+		AI_Output (self ,other,"DIA_Lee_BuyArmorH_04_01"); //Eccotela. Un'armatura molto buona. √à la stessa che indosso io.
 		//CreateInvItems (self,itar_sld_H,1);
 		//B_GiveInvItems (self, other, itar_sld_H, 1);
 		
@@ -1225,7 +1225,7 @@ INSTANCE DIA_Lee_Richter (C_INFO)
 	condition	= DIA_Lee_Richter_Condition;
 	information	= DIA_Lee_Richter_Info;
 	permanent	= FALSE;
-	description = "Non hai nientíaltro da farmi fare?";
+	description = "Non hai nient‚Äôaltro da farmi fare?";
 };                       
 FUNC INT DIA_Lee_Richter_Condition()
 {
@@ -1238,15 +1238,15 @@ FUNC INT DIA_Lee_Richter_Condition()
 };
 FUNC VOID DIA_Lee_Richter_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_Richter_15_00"); //Non hai nientíaltro da farmi fare?
-	AI_Output (self ,other,"DIA_Lee_Richter_04_01"); //Non ti accontenti mai, eh? Sei gi‡ abbastanza inguaiato come sei. Che altro vuoi, allora?
+	AI_Output (other,self ,"DIA_Lee_Richter_15_00"); //Non hai nient‚Äôaltro da farmi fare?
+	AI_Output (self ,other,"DIA_Lee_Richter_04_01"); //Non ti accontenti mai, eh? Sei gi√† abbastanza inguaiato come sei. Che altro vuoi, allora?
 	AI_Output (other,self ,"DIA_Lee_Richter_15_02"); //Un altro incarico. Sono un mercenario, ricordi?
-	AI_Output (self ,other,"DIA_Lee_Richter_04_03"); //D'accordo, ci sarebbe qualcosa. » proprio quello che fa per te.
-	AI_Output (self ,other,"DIA_Lee_Richter_04_04"); //Ho un debito da saldare con il giudice in citt‡. Preferirei farlo di persona, a dire il vero.
+	AI_Output (self ,other,"DIA_Lee_Richter_04_03"); //D'accordo, ci sarebbe qualcosa. √à proprio quello che fa per te.
+	AI_Output (self ,other,"DIA_Lee_Richter_04_04"); //Ho un debito da saldare con il giudice in citt√†. Preferirei farlo di persona, a dire il vero.
 	AI_Output (self ,other,"DIA_Lee_Richter_04_05"); //Ma i paladini non permetterebbero di avvicinarmi neanche lontanamente alla sua casa.
-	AI_Output (self ,other,"DIA_Lee_Richter_04_06"); //La cosa andr‡ gestita con un po' di buon senso, quindi fai attenzione. Andrai dal giudice e gli offrirai i tuoi servigi.
+	AI_Output (self ,other,"DIA_Lee_Richter_04_06"); //La cosa andr√† gestita con un po' di buon senso, quindi fai attenzione. Andrai dal giudice e gli offrirai i tuoi servigi.
 	AI_Output (self ,other,"DIA_Lee_Richter_04_07"); //Dovrai cercare di guadagnarti la sua fiducia e svolgere alcuni lavoretti sporchi, fino a quando non scoprirai qualcosa per incriminarlo.
-	AI_Output (self ,other,"DIA_Lee_Richter_04_08"); //Quel porco ha fatto cosÏ tante ingiustizie che la sua puzza arriva fino agli dei.
+	AI_Output (self ,other,"DIA_Lee_Richter_04_08"); //Quel porco ha fatto cos√¨ tante ingiustizie che la sua puzza arriva fino agli dei.
 	AI_Output (self ,other,"DIA_Lee_Richter_04_09"); //Portami qualcosa che io possa utilizzare per diffamare il suo nome con l'esercito, in modo che passi il resto della sua vita a marcire in prigione.
 	AI_Output (self ,other,"DIA_Lee_Richter_04_10"); //Ma non voglio che tu lo uccida. Sarebbe troppo breve. Voglio vederlo soffrire, capito?
 	AI_Output (self ,other,"DIA_Lee_Richter_04_11"); //Pensi di poterlo fare?
@@ -1254,7 +1254,7 @@ FUNC VOID DIA_Lee_Richter_Info()
 	
 	Log_CreateTopic (TOPIC_RichterLakai, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_RichterLakai, LOG_RUNNING);
-	B_LogEntry (TOPIC_RichterLakai,"Lee vuole che trovi alcune prove che incriminino il giudice di Khorinis. Per farlo ho offerto i miei servigi al giudice, e terrÚ gli occhi aperti."); 
+	B_LogEntry (TOPIC_RichterLakai,"Lee vuole che trovi alcune prove che incriminino il giudice di Khorinis. Per farlo ho offerto i miei servigi al giudice, e terr√≤ gli occhi aperti."); 
 
 	MIS_Lee_JudgeRichter = LOG_RUNNING;
 	
@@ -1265,13 +1265,13 @@ FUNC VOID DIA_Lee_Richter_Info()
 func void DIA_Lee_Richter_wieviel ()
 {
 	AI_Output			(other, self, "DIA_Lee_Richter_wieviel_15_00"); //Nessun problema. Il prezzo?
-	AI_Output			(self, other, "DIA_Lee_Richter_wieviel_04_01"); //La tua ricompensa dipender‡ da quello che riuscirai a portarmi, quindi cerca di sforzarti.
+	AI_Output			(self, other, "DIA_Lee_Richter_wieviel_04_01"); //La tua ricompensa dipender√† da quello che riuscirai a portarmi, quindi cerca di sforzarti.
 	Info_ClearChoices	(DIA_Lee_Richter);
 };
 func void DIA_Lee_Richter_nein ()
 {
 	AI_Output			(other, self, "DIA_Lee_Richter_nein_15_00"); //Non voglio farlo. Non intendo diventare il leccapiedi di quel porco.
-	AI_Output			(self, other, "DIA_Lee_Richter_nein_04_01"); //Non fare il difficile. Ad ogni modo, Ë lui quello che ti ha condannato e fatto gettare all'interno della Barriera. O te ne sei dimenticato?
+	AI_Output			(self, other, "DIA_Lee_Richter_nein_04_01"); //Non fare il difficile. Ad ogni modo, √® lui quello che ti ha condannato e fatto gettare all'interno della Barriera. O te ne sei dimenticato?
 	AI_Output			(self, other, "DIA_Lee_Richter_nein_04_02"); //Fai quello che ti pare, ma credo che farai la scelta giusta.
 	Info_ClearChoices	(DIA_Lee_Richter);
 };
@@ -1306,7 +1306,7 @@ FUNC VOID DIA_Lee_RichterBeweise_Info()
 	AI_Output (other,self ,"DIA_Lee_RichterBeweise_15_00"); //Ho trovato qualcosa per incriminare il giudice.
 	AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_01"); //Davvero? Di cosa si tratta?
 	AI_Output (other,self ,"DIA_Lee_RichterBeweise_15_02"); //Ha pagato alcuni malviventi per derubare il governatore di Khorinis.
-	AI_Output (other,self ,"DIA_Lee_RichterBeweise_15_03"); //Poco dopo, li ha fatti arrestare e si Ë intascato tutto l'oro.
+	AI_Output (other,self ,"DIA_Lee_RichterBeweise_15_03"); //Poco dopo, li ha fatti arrestare e si √® intascato tutto l'oro.
 	AI_Output (other,self ,"DIA_Lee_RichterBeweise_15_04"); //Ti ho portato la pergamena che il giudice ha scritto ai delinquenti come prova.
 	AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_05"); //Mostramela.
 	B_GiveInvItems (other, self, ItWr_RichterKomproBrief_MIS,1);
@@ -1324,9 +1324,9 @@ FUNC VOID DIA_Lee_RichterBeweise_Info()
 		}
 	else
 		{
-			AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_09"); //Ottimo. Ma il problema si Ë risolto da solo. Il giudice Ë morto.
-			AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_10"); //Qualche idiota lo ha ucciso. Oh, beh, va bene anche cosÏ.
-			AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_11"); //Eccoti un po' di monete. » tutto quello che la pergamena puÚ valere per me ora.
+			AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_09"); //Ottimo. Ma il problema si √® risolto da solo. Il giudice √® morto.
+			AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_10"); //Qualche idiota lo ha ucciso. Oh, beh, va bene anche cos√¨.
+			AI_Output (self ,other,"DIA_Lee_RichterBeweise_04_11"); //Eccoti un po' di monete. √à tutto quello che la pergamena pu√≤ valere per me ora.
 			CreateInvItems (self, ItMi_Gold, 50);									
 			B_GiveInvItems (self, other, ItMi_Gold, 50);		
 			MIS_Lee_JudgeRichter = LOG_FAILED;
@@ -1361,7 +1361,7 @@ FUNC VOID DIA_Lee_TalkAboutBennet_Info()
 	AI_Output (self ,other,"DIA_Lee_TalkAboutBennet_04_01"); //Dunque l'hai saputo. Quei bastardi lo hanno rinchiuso in cella, proprio come si dice.
 	if ((hero.guild != GIL_MIL)&&(hero.guild != GIL_PAL))
 	{
-	AI_Output (self ,other,"DIA_Lee_TalkAboutBennet_04_02"); //Come se non avessi gi‡ abbastanza problemi con i miei uomini ora devo anche occuparmi dei paladini.
+	AI_Output (self ,other,"DIA_Lee_TalkAboutBennet_04_02"); //Come se non avessi gi√† abbastanza problemi con i miei uomini ora devo anche occuparmi dei paladini.
 	};
 };
 
@@ -1389,23 +1389,23 @@ FUNC INT DIA_Lee_DoAboutBennet_Condition()
 FUNC VOID DIA_Lee_DoAboutBennet_Info()
 {	
 	AI_Output (other,self ,"DIA_Lee_DoAboutBennet_15_00"); //Cosa pensi di fare a proposito di Bennet?
-	AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_01"); //Non lo so ancora. Alcuni dei ragazzi vorrebbero correre in citt‡ e far saltare i denti a Lord Hagen.
-	AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_02"); //Fortunatamente non abbiamo abbastanza persone per un'operazione di quel genere. Inoltre, non Ë il mio stile.
+	AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_01"); //Non lo so ancora. Alcuni dei ragazzi vorrebbero correre in citt√† e far saltare i denti a Lord Hagen.
+	AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_02"); //Fortunatamente non abbiamo abbastanza persone per un'operazione di quel genere. Inoltre, non √® il mio stile.
 	AI_Output (other,self ,"DIA_Lee_DoAboutBennet_15_03"); //Intendi stare seduto a vedere cosa succede, quindi?
 	AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_04"); //Certamente no.
 	
-	B_LogEntry (TOPIC_RESCUEBENNET,"Se non riuscirÚ a provare l'innocenza di Bennet al pi˘ presto, Lee non potr‡ frenare i mercenari. I suoi uomini non esiteranno ad attaccare la citt‡ e liberare Bennet con la forza."); 
+	B_LogEntry (TOPIC_RESCUEBENNET,"Se non riuscir√≤ a provare l'innocenza di Bennet al pi√π presto, Lee non potr√† frenare i mercenari. I suoi uomini non esiteranno ad attaccare la citt√† e liberare Bennet con la forza."); 
 	
 	if (!Npc_IsDead (Lares))
 	{ 
-		AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_05"); //Lares Ë ancora in citt‡ e sta cercando di scoprire come fare per tirare Bennet fuori da lÏ.
-		AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_06"); //Fino ad allora, cercherÚ di calmare i miei uomini. Spero solo che Lares non ci metta troppo.
+		AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_05"); //Lares √® ancora in citt√† e sta cercando di scoprire come fare per tirare Bennet fuori da l√¨.
+		AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_06"); //Fino ad allora, cercher√≤ di calmare i miei uomini. Spero solo che Lares non ci metta troppo.
 	};
 		
 	if (!Npc_IsDead (Buster))
 	&& ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 	{ 
-		AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_07"); //Oh, gi‡. Prima che mi dimentichi... Buster vuole parlarti. Non ha voluto dirmi riguardo a cosa. Forse faresti meglio ad andare a parlargli!
+		AI_Output (self ,other,"DIA_Lee_DoAboutBennet_04_07"); //Oh, gi√†. Prima che mi dimentichi... Buster vuole parlarti. Non ha voluto dirmi riguardo a cosa. Forse faresti meglio ad andare a parlargli!
 	};
 };
 
@@ -1434,9 +1434,9 @@ FUNC VOID DIA_Lee_CanHelpYou_Info()
 {	
 	AI_Output (other,self ,"DIA_Lee_CanHelpYou_15_00"); //Posso aiutarti in questa faccenda che riguarda Bennet?
 	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_01"); //Certo, un po' di intelligenza e buonsenso non faranno male in questa storia.
-	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_02"); //Innos sa se non ci sono gi‡ abbastanza idioti qui intorno.
-	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_03"); //Recati in citt‡ e vedi se riesci a trovare un modo per far uscire Bennet da lÏ.
-	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_04"); //Ma non metterci troppo, non so fino a quando riuscirÚ ancora a tenere gli uomini sotto controllo.
+	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_02"); //Innos sa se non ci sono gi√† abbastanza idioti qui intorno.
+	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_03"); //Recati in citt√† e vedi se riesci a trovare un modo per far uscire Bennet da l√¨.
+	AI_Output (self ,other,"DIA_Lee_CanHelpYou_04_04"); //Ma non metterci troppo, non so fino a quando riuscir√≤ ancora a tenere gli uomini sotto controllo.
 };
 
 //**************************************************************
@@ -1454,7 +1454,7 @@ INSTANCE DIA_Lee_AnyNews(C_INFO)
 	condition	= DIA_Lee_AnyNews_Condition;
 	information	= DIA_Lee_AnyNews_Info;
 	permanent	= TRUE;
-	description = "Novit‡ su Bennet?";
+	description = "Novit√† su Bennet?";
 };                       
 FUNC INT DIA_Lee_AnyNews_Condition()
 {
@@ -1468,7 +1468,7 @@ FUNC INT DIA_Lee_AnyNews_Condition()
 
 FUNC VOID DIA_Lee_AnyNews_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_AnyNews_15_00"); //Novit‡ su Bennet?
+	AI_Output (other,self ,"DIA_Lee_AnyNews_15_00"); //Novit√† su Bennet?
 
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
@@ -1497,7 +1497,7 @@ instance DIA_Lee_SYLVIO		(C_INFO)
 	condition	 = 	DIA_Lee_SYLVIO_Condition;
 	information	 = 	DIA_Lee_SYLVIO_Info;
 
-	description	 = 	"Che cosa Ë successo, nel frattempo?";
+	description	 = 	"Che cosa √® successo, nel frattempo?";
 };
 
 func int DIA_Lee_SYLVIO_Condition ()
@@ -1510,10 +1510,10 @@ func int DIA_Lee_SYLVIO_Condition ()
 
 func void DIA_Lee_SYLVIO_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_SYLVIO_15_00"); //Che cosa Ë successo, nel frattempo?
-	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_01"); //Silvio, quel bastardo, Ë venuto a sapere dei draghi nella Valle delle Miniere, e ha gettato l'intera fattoria nel caos.
+	AI_Output			(other, self, "DIA_Lee_SYLVIO_15_00"); //Che cosa √® successo, nel frattempo?
+	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_01"); //Silvio, quel bastardo, √® venuto a sapere dei draghi nella Valle delle Miniere, e ha gettato l'intera fattoria nel caos.
 	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_02"); //Ha cercato di convincere i ragazzi a seguirlo nella Valle delle Miniere. Gli ha promesso gloria, onore, oro e ogni genere di cose.
-	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_03"); //Molti di loro non hanno interesse a farsi ammazzare per Silvio, ma c'Ë stato qualche idiota che si Ë fatto incantare dalle sue ciance.
+	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_03"); //Molti di loro non hanno interesse a farsi ammazzare per Silvio, ma c'√® stato qualche idiota che si √® fatto incantare dalle sue ciance.
 	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_04"); //Alla fine della storia, si sono equipaggiati da Bennet e sono partiti.
 	AI_Output			(self, other, "DIA_Lee_SYLVIO_04_05"); //(senza interesse) Beh, per quanto mi riguarda sono felice che Silvio sia finalmente sparito dalla fattoria.
 };
@@ -1581,7 +1581,7 @@ func void DIA_Lee_CanTeach_Info ()
 	if (other.HitChance[NPC_TALENT_2H] < 75)
 	{
 		AI_Output			(self, other, "DIA_Lee_CanTeach_04_02"); //Ma non ho tempo per insegnarti anche le basi.
-		AI_Output			(self, other, "DIA_Lee_CanTeach_04_03"); //Appena avrai raggiunto un certo livello di abilit‡, mi occuperÚ di te. Fino ad allora, dovrai cercarti un altro maestro.
+		AI_Output			(self, other, "DIA_Lee_CanTeach_04_03"); //Appena avrai raggiunto un certo livello di abilit√†, mi occuper√≤ di te. Fino ad allora, dovrai cercarti un altro maestro.
 	}
 	else
 	{
@@ -1591,20 +1591,20 @@ func void DIA_Lee_CanTeach_Info ()
 		{
 			Lee_TeachPlayer = TRUE;
 			Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-			B_LogEntry (Topic_SoldierTeacher,"Lee mi insegner‡ a brandire le armi a due mani.");
+			B_LogEntry (Topic_SoldierTeacher,"Lee mi insegner√† a brandire le armi a due mani.");
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Lee_CanTeach_04_05"); //Quindi, se vuoi, ti insegnerÚ qualcosa. Ti coster‡ un po', perÚ.
+			AI_Output			(self, other, "DIA_Lee_CanTeach_04_05"); //Quindi, se vuoi, ti insegner√≤ qualcosa. Ti coster√† un po', per√≤.
 			AI_Output			(other,self , "DIA_Lee_CanTeach_15_06"); //Quanto vuoi?
 			AI_Output			(self, other, "DIA_Lee_CanTeach_04_07"); //1000 pezzi d'oro e siamo in affari.
 		
 			Info_ClearChoices (DIA_Lee_CanTeach);
-			Info_AddChoice (DIA_Lee_CanTeach,"Il prezzo Ë troppo alto per me.",DIA_Lee_CanTeach_No);
+			Info_AddChoice (DIA_Lee_CanTeach,"Il prezzo √® troppo alto per me.",DIA_Lee_CanTeach_No);
 		
 			if (Npc_HasItems (other,ItMi_Gold) >= 1000)
 			{
-				Info_AddChoice (DIA_Lee_CanTeach,"Affare fatto. Ecco líoro.",DIA_Lee_CanTeach_Yes);
+				Info_AddChoice (DIA_Lee_CanTeach,"Affare fatto. Ecco l‚Äôoro.",DIA_Lee_CanTeach_Yes);
 			};
 		};
 	};		
@@ -1612,7 +1612,7 @@ func void DIA_Lee_CanTeach_Info ()
  
 FUNC VOID DIA_Lee_CanTeach_No ()
 {
-	AI_Output (other,self ,"DIA_Lee_CanTeach_No_15_00"); //Il prezzo Ë troppo alto per me.
+	AI_Output (other,self ,"DIA_Lee_CanTeach_No_15_00"); //Il prezzo √® troppo alto per me.
 	AI_Output (self ,other,"DIA_Lee_CanTeach_No_04_01"); //Pensaci. Insegnanti del mio calibro sono difficili da trovare.
 	
 	Info_ClearChoices (DIA_Lee_CanTeach);
@@ -1627,7 +1627,7 @@ FUNC VOID DIA_Lee_CanTeach_Yes ()
 	Lee_TeachPlayer = TRUE;
 	Info_ClearChoices (DIA_Lee_CanTeach);
 	Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTeacher,"Lee mi insegner‡ a brandire le armi a due mani.");
+	B_LogEntry (Topic_SoldierTeacher,"Lee mi insegner√† a brandire le armi a due mani.");
 };
  
 //**************************************
@@ -1640,7 +1640,7 @@ INSTANCE DIA_Lee_Teach(C_INFO)
 	condition	= DIA_Lee_Teach_Condition;
 	information	= DIA_Lee_Teach_Info;
 	permanent	= TRUE;
-	description = "Diamo inizio allíaddestramento.";
+	description = "Diamo inizio all‚Äôaddestramento.";
 };                       
 
 FUNC INT DIA_Lee_Teach_Condition()
@@ -1653,7 +1653,7 @@ FUNC INT DIA_Lee_Teach_Condition()
  
 FUNC VOID DIA_Lee_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Lee_Teach_15_00"); //Diamo inizio allíaddestramento.
+	AI_Output (other,self ,"DIA_Lee_Teach_15_00"); //Diamo inizio all‚Äôaddestramento.
 	
 	Info_ClearChoices 	(DIA_Lee_Teach);
 	Info_AddChoice 		(DIA_Lee_Teach,	DIALOG_BACK		,DIA_Lee_Teach_Back);
@@ -1675,7 +1675,7 @@ FUNC VOID DIA_Lee_Teach_2H_1 ()
 	if (other.HitChance[NPC_TALENT_2H] >= 100)
 	{
 		AI_Output(self,other,"DIA_DIA_Lee_Teach_2H_1_04_00"); //Ora sei un vero maestro del combattimento con le armi a due mani.
-		AI_Output(self,other,"DIA_DIA_Lee_Teach_2H_1_04_01"); //Non hai pi˘ bisogno di un insegnante.
+		AI_Output(self,other,"DIA_DIA_Lee_Teach_2H_1_04_01"); //Non hai pi√π bisogno di un insegnante.
 	};
 	Info_ClearChoices 	(DIA_Lee_Teach);
 	Info_AddChoice 		(DIA_Lee_Teach,	DIALOG_BACK		,DIA_Lee_Teach_Back);
@@ -1690,7 +1690,7 @@ FUNC VOID DIA_Lee_Teach_2H_5 ()
 	if (other.HitChance[NPC_TALENT_2H] >= 100)
 	{
 		AI_Output(self,other,"DIA_Lee_Teach_2H_5_04_00"); //Ora sei un vero maestro del combattimento con le armi a due mani.
-		AI_Output(self,other,"DIA_Lee_Teach_2H_5_04_01"); //Non hai pi˘ bisogno di un insegnante.
+		AI_Output(self,other,"DIA_Lee_Teach_2H_5_04_01"); //Non hai pi√π bisogno di un insegnante.
 	};
 	Info_ClearChoices 	(DIA_Lee_Teach);
 	Info_AddChoice 		(DIA_Lee_Teach,	DIALOG_BACK		,DIA_Lee_Teach_Back);
@@ -1724,7 +1724,7 @@ func void DIA_Lee_DRACHENEI_Info ()
 {
 	AI_Output			(other, self, "DIA_Lee_DRACHENEI_15_00"); //Gli uomini lucertola stanno distribuendo uova di drago per tutto il paese.
 	B_GivePlayerXP (XP_Ambient);
-	AI_Output			(self, other, "DIA_Lee_DRACHENEI_04_01"); //Avrei dovuto saperlo. » ora di andarsene da qui.
+	AI_Output			(self, other, "DIA_Lee_DRACHENEI_04_01"); //Avrei dovuto saperlo. √à ora di andarsene da qui.
 	
 	if (hero.guild == GIL_DJG)
 	{
@@ -1759,9 +1759,9 @@ FUNC INT DIA_Lee_KAP4_Perm_Condition()
 FUNC VOID DIA_Lee_KAP4_Perm_Info()
 {	
 	AI_Output (other,self ,"DIA_Lee_KAP4_Perm_15_00"); //Come vanno le cose alla fattoria?
-	AI_Output (self ,other,"DIA_Lee_KAP4_Perm_04_01"); //Bene, da quando Silvio Ë partito abbiamo finalmente un po' di pace qui.
+	AI_Output (self ,other,"DIA_Lee_KAP4_Perm_04_01"); //Bene, da quando Silvio √® partito abbiamo finalmente un po' di pace qui.
 	AI_Output (other,self ,"DIA_Lee_KAP4_Perm_15_02"); //Non sembra male.
-	AI_Output (self ,other,"DIA_Lee_KAP4_Perm_04_03"); //Sfortunatamente, non abbiamo meno lavoro. Gli uomini sono sempre pi˘ scontenti, poichÈ devono svolgere il lavoro degli uomini di Silvio, oltre al loro.
+	AI_Output (self ,other,"DIA_Lee_KAP4_Perm_04_03"); //Sfortunatamente, non abbiamo meno lavoro. Gli uomini sono sempre pi√π scontenti, poich√© devono svolgere il lavoro degli uomini di Silvio, oltre al loro.
 	AI_Output (self ,other,"DIA_Lee_KAP4_Perm_04_04"); //Ma lascia che me ne preoccupi io. Posso gestire la cosa.
 };
 
@@ -1820,9 +1820,9 @@ func int DIA_Lee_GetShip_Condition ()
 func void DIA_Lee_GetShip_Info ()
 {
 	AI_Output	(other, self, "DIA_Lee_GetShip_15_00"); //Hai qualche idea su come posso prendere il controllo della nave dei paladini?
-	AI_Output	(self, other, "DIA_Lee_GetShip_04_01"); //Pensi che sarei ancora qui se lo sapessi? Quella cosa Ë protetta meglio di quanto i trasporti di metallo lo fossero a Campo Vecchio.
+	AI_Output	(self, other, "DIA_Lee_GetShip_04_01"); //Pensi che sarei ancora qui se lo sapessi? Quella cosa √® protetta meglio di quanto i trasporti di metallo lo fossero a Campo Vecchio.
 	AI_Output	(other, self, "DIA_Lee_GetShip_15_02"); //Dev'esserci un modo per salire a bordo della nave.
-	AI_Output	(self, other, "DIA_Lee_GetShip_04_03"); //Certo. Salire a bordo Ë facile.
+	AI_Output	(self, other, "DIA_Lee_GetShip_04_03"); //Certo. Salire a bordo √® facile.
 	
 	Log_CreateTopic (TOPIC_Ship, LOG_MISSION);   	                                                                                                                                                                                                                                             
 	Log_SetTopicStatus(TOPIC_Ship, LOG_RUNNING);                                                                                                                                                                                                                                                 
@@ -1838,7 +1838,7 @@ func void DIA_Lee_GetShip_Info ()
 		{
 			AI_Output	(self, other, "DIA_Lee_GetShip_04_05"); //Ho una lettera d'autorizzazione falsificata qui. Con questa la guardie della nave ti faranno passare.
 		
-			B_LogEntry (TOPIC_Ship,"Buon vecchio Lee. Ha falsificato una lettera che mi permetter‡ di salire a bordo della nave dei paladini.");
+			B_LogEntry (TOPIC_Ship,"Buon vecchio Lee. Ha falsificato una lettera che mi permetter√† di salire a bordo della nave dei paladini.");
 		};
 
 	AI_Output	(self, other, "DIA_Lee_GetShip_04_06"); //Ma non basta. Per condurre una nave hai bisogno di un capitano, un equipaggio e altro.
@@ -1865,16 +1865,16 @@ func void DIA_Lee_GetShip_torlof ()
 	AI_Output			(other, self, "DIA_Lee_GetShip_torlof_15_00"); //Conosci qualcuno che potrebbe governare la nave?
 	AI_Output			(self, other, "DIA_Lee_GetShip_torlof_04_01"); //Per quanto ne so, Torlof una volta navigava per il mare. Sa il fatto suo.
 
-	B_LogEntry (TOPIC_Captain,"Torlof Ë un vecchio marinaio, forse vorr‡ diventare il mio capitano.");
+	B_LogEntry (TOPIC_Captain,"Torlof √® un vecchio marinaio, forse vorr√† diventare il mio capitano.");
 };
 
 func void DIA_Lee_GetShip_crew ()
 {
 	AI_Output			(other, self, "DIA_Lee_GetShip_crew_15_00"); //Chi posso ingaggiare come equipaggio?
 	AI_Output			(self, other, "DIA_Lee_GetShip_crew_04_01"); //Dovrai deciderlo da solo. Ma io prenderei con me solo persone di cui mi fido. Hai abbastanza persone di cui puoi fidarti?
-	AI_Output			(self, other, "DIA_Lee_GetShip_crew_04_02"); //Se ti serve un fabbro nell'equipaggio, dovresti chiedere a Bennet. » sicuramente il migliore che potrai trovare.
+	AI_Output			(self, other, "DIA_Lee_GetShip_crew_04_02"); //Se ti serve un fabbro nell'equipaggio, dovresti chiedere a Bennet. √à sicuramente il migliore che potrai trovare.
 
-	B_LogEntry (TOPIC_Crew,"Per quanto riguarda l'equipaggio, non c'Ë molto che Lee possa fare per me. Ma mi ha detto che dovrei scegliere solamente persone di cui mi possa fidare. Inoltre, dovrei chiedere a Bennet, potrebbe essere interessato.");
+	B_LogEntry (TOPIC_Crew,"Per quanto riguarda l'equipaggio, non c'√® molto che Lee possa fare per me. Ma mi ha detto che dovrei scegliere solamente persone di cui mi possa fidare. Inoltre, dovrei chiedere a Bennet, potrebbe essere interessato.");
 };
 
 func void DIA_Lee_GetShip_back ()
@@ -1892,7 +1892,7 @@ instance DIA_Lee_GotRichtersPermissionForShip		(C_INFO)
 	condition	 = 	DIA_Lee_GotRichtersPermissionForShip_Condition;
 	information	 = 	DIA_Lee_GotRichtersPermissionForShip_Info;
 
-	description	 = 	"Líautorizzazione scritta ha avuto líeffetto desiderato.";
+	description	 = 	"L‚Äôautorizzazione scritta ha avuto l‚Äôeffetto desiderato.";
 };
 func int DIA_Lee_GotRichtersPermissionForShip_Condition ()
 {	
@@ -1903,8 +1903,8 @@ func int DIA_Lee_GotRichtersPermissionForShip_Condition ()
 };
 func void DIA_Lee_GotRichtersPermissionForShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lee_GotRichtersPermissionForShip_15_00"); //L'autorizzazione scritta ha funzionato. La nave Ë mia ora. Il giudice Ë stato molto cooperativo.
-	AI_Output			(self, other, "DIA_Lee_GotRichtersPermissionForShip_04_01"); //Bene. Il tuo lungo periodo di umiliazione con quei bastardi Ë finalmente servito a qualcosa.
+	AI_Output			(other, self, "DIA_Lee_GotRichtersPermissionForShip_15_00"); //L'autorizzazione scritta ha funzionato. La nave √® mia ora. Il giudice √® stato molto cooperativo.
+	AI_Output			(self, other, "DIA_Lee_GotRichtersPermissionForShip_04_01"); //Bene. Il tuo lungo periodo di umiliazione con quei bastardi √® finalmente servito a qualcosa.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -1925,7 +1925,7 @@ func int DIA_Lee_StealShip_Condition ()
 {	
 	if (Npc_KnowsInfo (other,DIA_Lee_GetShip))
 	&& (hero.guild == GIL_DJG)
-	&& (MIS_RichtersPermissionForShip == 0)	//Joly: kein Richter Erpressen nˆtig!
+	&& (MIS_RichtersPermissionForShip == 0)	//Joly: kein Richter Erpressen n√∂tig!
 	{
 		return TRUE;
 	};	
@@ -1935,8 +1935,8 @@ func void DIA_Lee_StealShip_Info ()
 {
 	AI_Output	(other, self, "DIA_Lee_StealShip_15_00"); //Voglio rubare la nave.
 	AI_Output	(self, other, "DIA_Lee_StealShip_04_01"); //E come vorresti fare?
-	AI_Output	(other, self, "DIA_Lee_StealShip_15_02"); //Facilissimo. Vado lÏ, gli mostro i tuoi documenti e prendo la nave.
-	AI_Output	(self, other, "DIA_Lee_StealShip_04_03"); //Se lo dici tu. Tieni, spero tu sappia ciÚ che stai facendo.
+	AI_Output	(other, self, "DIA_Lee_StealShip_15_02"); //Facilissimo. Vado l√¨, gli mostro i tuoi documenti e prendo la nave.
+	AI_Output	(self, other, "DIA_Lee_StealShip_04_03"); //Se lo dici tu. Tieni, spero tu sappia ci√≤ che stai facendo.
 	
 	CreateInvItems (self,ItWr_ForgedShipLetter_Mis,1);
 	B_GiveInvItems (self,other,ItWr_ForgedShipLetter_Mis,1);
@@ -1973,16 +1973,16 @@ func void DIA_Lee_KnowWhereEnemy_Info ()
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	                 
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	                 
-	B_LogEntry (TOPIC_Crew,"Lee sembra impaziente di rivedere nuovamente la terra ferma. Si Ë offerto di aiutarmi. Sarebbe difficile trovare un buon maestro d'armi come lui da altre parti.");
+	B_LogEntry (TOPIC_Crew,"Lee sembra impaziente di rivedere nuovamente la terra ferma. Si √® offerto di aiutarmi. Sarebbe difficile trovare un buon maestro d'armi come lui da altre parti.");
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lee_KnowWhereEnemy_15_03"); //La nave Ë piena al momento, ma tornerÚ non appena ci sar‡ un posto.
+		AI_Output			(other,self , "DIA_Lee_KnowWhereEnemy_15_03"); //La nave √® piena al momento, ma torner√≤ non appena ci sar√† un posto.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Lee_KnowWhereEnemy);
-		Info_AddChoice (DIA_Lee_KnowWhereEnemy,"Ti farÚ sapere in caso avessi bisogno di te.",DIA_Lee_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Lee_KnowWhereEnemy,"Ti far√≤ sapere in caso avessi bisogno di te.",DIA_Lee_KnowWhereEnemy_No);
 		Info_AddChoice (DIA_Lee_KnowWhereEnemy,"Vai a fare i bagagli, allora!",DIA_Lee_KnowWhereEnemy_Yes);
 	};
 };
@@ -1991,8 +1991,8 @@ FUNC VOID DIA_Lee_KnowWhereEnemy_Yes ()
 {
 	AI_Output (other,self ,"DIA_Lee_KnowWhereEnemy_Yes_15_00"); //Vai a fare i bagagli, allora!
 	AI_Output (self ,other,"DIA_Lee_KnowWhereEnemy_Yes_04_01"); //Cosa? Adesso?
-	AI_Output (other,self ,"DIA_Lee_KnowWhereEnemy_Yes_15_02"); //SÏ, ho intenzione di andarmene da qui, e se vuoi unirti a me, vieni al porto. Ci incontreremo alla nave.
-	AI_Output (self ,other,"DIA_Lee_KnowWhereEnemy_Yes_04_03"); //Ho aspettato a lungo questo momento. Ci sarÚ.
+	AI_Output (other,self ,"DIA_Lee_KnowWhereEnemy_Yes_15_02"); //S√¨, ho intenzione di andarmene da qui, e se vuoi unirti a me, vieni al porto. Ci incontreremo alla nave.
+	AI_Output (self ,other,"DIA_Lee_KnowWhereEnemy_Yes_04_03"); //Ho aspettato a lungo questo momento. Ci sar√≤.
 	
 	B_GivePlayerXP (XP_Crewmember_Success);                                                                    
 	                                                                                                           
@@ -2014,7 +2014,7 @@ FUNC VOID DIA_Lee_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Lee_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Lee_KnowWhereEnemy_No_15_00"); //Ti farÚ sapere in caso avessi bisogno di te.
+	AI_Output (other,self ,"DIA_Lee_KnowWhereEnemy_No_15_00"); //Ti far√≤ sapere in caso avessi bisogno di te.
 	AI_Output (self ,other,"DIA_Lee_KnowWhereEnemy_No_04_01"); //Devi sapere quello che vuoi. Ma non si hanno mai abbastanza guerrieri abili intorno.
 	AI_Output (self ,other,"DIA_Lee_KnowWhereEnemy_No_04_02"); //(ghigno) A meno che non siano dei totali imbecilli come Silvio.
 
@@ -2057,7 +2057,7 @@ func void DIA_Lee_LeaveMyShip_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lee_StillNeedYou		(C_INFO)
 {
@@ -2070,7 +2070,7 @@ instance DIA_Lee_StillNeedYou		(C_INFO)
 };
 func int DIA_Lee_StillNeedYou_Condition ()
 {	
-	if ((Lee_IsOnBOard == LOG_OBSOLETE)		//Hier braucht man nat¸rlich nur eine variable abfragen
+	if ((Lee_IsOnBOard == LOG_OBSOLETE)		//Hier braucht man nat√ºrlich nur eine variable abfragen
 	|| (Lee_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{

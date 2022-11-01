@@ -277,7 +277,7 @@ func void PLAYER_HOTKEY_LAME_POTION()
 		 }
 		 else
 		 {
-				Print ("Mana massimo gi‡ raggiunto!");
+				Print ("Mana massimo gi√† raggiunto!");
 		 };
 	};
 };
@@ -335,7 +335,7 @@ if (Npc_IsInState (hero,ZS_Dead)==FALSE)
 		 }
 		 else
 		 {
-				Print ("Forza vitale massima gi‡ raggiunta!");
+				Print ("Forza vitale massima gi√† raggiunta!");
 		 };
 	};
 };

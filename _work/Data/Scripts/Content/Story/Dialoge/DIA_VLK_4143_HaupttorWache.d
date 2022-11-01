@@ -42,8 +42,8 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Qual Ë il tuo compito?
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Il mio compito Ë semplice. Devo assicurarmi che gli orchi stiano ad almeno dieci metri di distanza dal portone.
+	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Qual √® il tuo compito?
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Il mio compito √® semplice. Devo assicurarmi che gli orchi stiano ad almeno dieci metri di distanza dal portone.
 	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //Se dovessero provare a sfondare, io suono l'allarme. Tutto qui.
 };
 
@@ -71,30 +71,30 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Cosa si deve fare per aprire il cancello principale?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Santo cielo. E perchÈ vorresti saperlo?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Santo cielo. E perch√© vorresti saperlo?
 
 	self.flags = 0;//Joly:zur sicherheit
 
 	Info_ClearChoices	(DIA_Haupttorwache_TOROEFFNEN);
 	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Sono preoccupato per la sicurezza del castello.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Lascia stare. Semplice curiosit‡.", DIA_Haupttorwache_TOROEFFNEN_frage );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Lascia stare. Semplice curiosit√†.", DIA_Haupttorwache_TOROEFFNEN_frage );
 	
 };
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
 	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Sono preoccupato per la sicurezza del castello.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //» cosÏ anche per me, credimi.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //√à cos√¨ anche per me, credimi.
 	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //E siccome sono un guardiano ligio al dovere, Garond mi ha finalmente affidato la chiave della stanza del portone.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(orgogliosamente) » una grande responsabilit‡. DovrÚ fare attenzione. Ho prestato giuramento a Garond.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //SÏ. Immagina se qualcuno venisse qui a tirare la leva per aprire il cancello, facendo incastrare la vecchia inferriata arrugginita.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nessuno potrebbe chiudere e non oso nemmeno immaginare cosa succederebbe dopo. » un bene che nessuno sappia che io ho la chiave.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(orgogliosamente) √à una grande responsabilit√†. Dovr√≤ fare attenzione. Ho prestato giuramento a Garond.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //S√¨. Immagina se qualcuno venisse qui a tirare la leva per aprire il cancello, facendo incastrare la vecchia inferriata arrugginita.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Nessuno potrebbe chiudere e non oso nemmeno immaginare cosa succederebbe dopo. √à un bene che nessuno sappia che io ho la chiave.
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Lascia stare. Semplice curiosit‡.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Non parlarne troppo, non cercare guai. I tempi sono gi‡ abbastanza duri cosÏ. Ora vai. Sono occupato.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Lascia stare. Semplice curiosit√†.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Non parlarne troppo, non cercare guai. I tempi sono gi√† abbastanza duri cos√¨. Ora vai. Sono occupato.
 	AI_StopProcessInfos (self);
 };
 

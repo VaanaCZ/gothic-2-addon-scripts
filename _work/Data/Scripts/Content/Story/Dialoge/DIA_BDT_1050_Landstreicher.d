@@ -47,21 +47,21 @@ func void DIA_Landstreicher_HALLO_Info ()
 	Info_ClearChoices	(DIA_Landstreicher_HALLO);
 		
 	Info_AddChoice	(DIA_Landstreicher_HALLO, "Devo andare.", DIA_Landstreicher_HALLO_weg );
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Dov’è andato l’altro?", DIA_Landstreicher_HALLO_wo );
-	Info_AddChoice	(DIA_Landstreicher_HALLO, "Chi era l’altro tizio?", DIA_Landstreicher_HALLO_wer );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "Dovâ€™Ã¨ andato lâ€™altro?", DIA_Landstreicher_HALLO_wo );
+	Info_AddChoice	(DIA_Landstreicher_HALLO, "Chi era lâ€™altro tizio?", DIA_Landstreicher_HALLO_wer );
 
 };
 func void DIA_Landstreicher_HALLO_wo ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wo_15_00"); //Dov’è andata l’altra?
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wo_09_01"); //È corsa lassù, come un fulmine.
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wo_15_00"); //Dovâ€™Ã¨ andata lâ€™altra?
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wo_09_01"); //Ãˆ corsa lassÃ¹, come un fulmine.
 };
 
 func void DIA_Landstreicher_HALLO_wer ()
 {
-	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Chi era l’altro tizio?
+	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_15_00"); //Chi era lâ€™altro tizio?
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_01"); //Somigliava a uno di quei novizi del monastero.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Puoi dire ciò che vuoi, ma quei tizi hanno qualche rotella fuori posto.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_09_02"); //Puoi dire ciÃ² che vuoi, ma quei tizi hanno qualche rotella fuori posto.
 	
 	if (hero.guild == GIL_KDF)
 	{
@@ -81,7 +81,7 @@ func void DIA_Landstreicher_HALLO_wer_vorsicht ()
 func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 {
 	AI_Output			(other, self, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_15_00"); //Qualcuno dovrebbe insegnarti le buone maniere.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //Non volevo offenderti, ma se vuoi combattere a tutti i costi, ti accontenterò.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_01"); //Non volevo offenderti, ma se vuoi combattere a tutti i costi, ti accontenterÃ².
 	AI_Output			(self, other, "DIA_Landstreicher_HALLO_wer_vorsicht_Manieren_09_02"); //Fammi vedere quello che sai fare, novizio.
 
 	AI_StopProcessInfos (self); 
@@ -93,7 +93,7 @@ func void DIA_Landstreicher_HALLO_wer_vorsicht_Manieren ()
 func void DIA_Landstreicher_HALLO_weg ()
 {
 	AI_Output			(other, self, "DIA_Landstreicher_HALLO_weg_15_00"); //Devo andare.
-	AI_Output			(self, other, "DIA_Landstreicher_HALLO_weg_09_01"); //Ehi, non c'è problema.
+	AI_Output			(self, other, "DIA_Landstreicher_HALLO_weg_09_01"); //Ehi, non c'Ã¨ problema.
 
 	AI_StopProcessInfos (self);
 };
@@ -127,7 +127,7 @@ func void DIA_Landstreicher_WASMACHSTDU_Info ()
 			AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_01"); //Fai troppe domande per essere un giovane arrogante.
 		};
 
-	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Dimmi il nome della caverna goblin nella quale ci siamo avventurati insieme, e io ti svelerò i miei segreti.
+	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_02"); //Dimmi il nome della caverna goblin nella quale ci siamo avventurati insieme, e io ti svelerÃ² i miei segreti.
 	AI_Output			(self, other, "DIA_Landstreicher_WASMACHSTDU_09_03"); //Altrimenti pensa agli affari tuoi.
 
 	AI_StopProcessInfos (self);

@@ -33,7 +33,7 @@ INSTANCE DIA_NONE_101_MARIO_DI_Job (C_INFO)
 	information = DIA_NONE_101_MARIO_DI_Job_Info;
 	permanent   = TRUE;
 
-	description	= "Questa Ë la tua occasione per dimostrare le tue abilit‡ di combattimento.";
+	description	= "Questa √® la tua occasione per dimostrare le tue abilit√† di combattimento.";
 };
 
 FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
@@ -47,7 +47,7 @@ FUNC INT DIA_NONE_101_MARIO_DI_Job_Condition()
 
 FUNC VOID DIA_NONE_101_MARIO_DI_Job_Info()
 {
-	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //Questa Ë la tua occasione per dimostrare le tue abilit‡ di combattimento.
+	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_00"); //Questa √® la tua occasione per dimostrare le tue abilit√† di combattimento.
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_01"); //Con calma. Ogni cosa a suo tempo.
 	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_Job_15_02"); //Mmmh. Era quello che mi aspettavo da te.
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_Job_07_03"); //Aspetta.
@@ -77,7 +77,7 @@ FUNC VOID DIA_NONE_101_MARIO_DI_ambush_Info()
 {
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_00"); //Avvicinati. Coraggio, amico. Ora mostrami che sai fare.
 	AI_Output (other,self ,"DIA_NONE_101_MARIO_DI_ambush_15_01"); //Cosa intendi dire?
-	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //» molto semplice. Il padrone ne ha avuto abbastanza di te.
+	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_02"); //√à molto semplice. Il padrone ne ha avuto abbastanza di te.
 	AI_Output (self ,other,"DIA_NONE_101_MARIO_DI_ambush_07_03"); //Avrei dovuto ucciderti prima, ma i miei amici ed io rimedieremo a quell'errore subito.
 	
 	Info_ClearChoices	(DIA_NONE_101_MARIO_DI_ambush);

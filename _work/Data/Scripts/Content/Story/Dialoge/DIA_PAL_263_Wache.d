@@ -45,7 +45,7 @@ func void DIA_PAL_263_PERM_Info ()
 {
 	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Soldato, a rapporto!
 	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Sissignore! Sto mantenendo la posizione, come ordinato. Nessun'altra perdita. Le provviste stanno finendo, gli orchi sono tranquilli.
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //L'ultimo attacco di drago ha completamente distrutto le mura esterne. Ma da allora non è più successo niente di speciale.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //L'ultimo attacco di drago ha completamente distrutto le mura esterne. Ma da allora non Ã¨ piÃ¹ successo niente di speciale.
 	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //D'accordo, continua.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -72,7 +72,7 @@ func int DIA_PAL_263_PERM_OTH_Condition ()
 func void DIA_PAL_263_PERM_OTH_Info ()
 {
 	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Come vanno le cose?
-	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Abbiamo la situazione sotto controllo. Non preoccuparti, civile. Andrà tutto a posto.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Abbiamo la situazione sotto controllo. Non preoccuparti, civile. AndrÃ  tutto a posto.
 };
 
 

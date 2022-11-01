@@ -6,7 +6,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 {	
   	Wld_PlayEffect("spellFX_Teleport_RING",  hero  , hero	, 0, 0, 0, FALSE );
 	Snd_Play ("MFX_TELEPORT_CAST");
-	Npc_ClearAIQueue (hero);	//Joly:wegen Seitwärts da durch rennen.
+	Npc_ClearAIQueue (hero);	//Joly:wegen SeitwÃ¤rts da durch rennen.
 	
 	SCUsed_TELEPORTER = TRUE;			//SC hat schon mal einen Teleporter benutzt
 	
@@ -132,14 +132,14 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			{
 				Log_CreateTopic (TOPIC_Addon_TeleportsADW, LOG_MISSION);
 				Log_SetTopicStatus(TOPIC_Addon_TeleportsADW, LOG_RUNNING);
-				B_LogEntry (TOPIC_Addon_TeleportsADW,"Nella caverna vicino al canyon c'è una pietra di teletrasporto. L'ho attivata."); 
+				B_LogEntry (TOPIC_Addon_TeleportsADW,"Nella caverna vicino al canyon c'Ã¨ una pietra di teletrasporto. L'ho attivata."); 
 				B_GivePlayerXP (XP_Ambient);
 			};	
 
 			if (MIS_KrokoJagd == LOG_SUCCESS)
 			&& (SCUsed_ADW_TELEPORTSTATION_PIRATES_JACKSMONSTER == FALSE)
 			{
-				// Monster, die bei der Jagd mit Alligator Jack stören
+				// Monster, die bei der Jagd mit Alligator Jack stÃ¶ren
 				Wld_InsertNpc  	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Gobbo_Black,"ADW_PIRATECAMP_WATERHOLE_GOBBO");
 				Wld_InsertNpc 	(Giant_DesertRat,"ADW_CANYON_PATH_TO_MINE1_05");
@@ -160,7 +160,7 @@ func void EVT_TELEPORTSTATION_FUNC ()
 			};	
 			SCUsed_ADW_TELEPORTSTATION_RAVENTELEPORT_OUT = TRUE;
 		}
-		else	//immer zurück zum ADW_ENTRANCE für alle anderen Teleportstations
+		else	//immer zurÃ¼ck zum ADW_ENTRANCE fÃ¼r alle anderen Teleportstations
 		{
 			AI_Teleport	(hero, "ADW_ENTRANCE"); 
 		};

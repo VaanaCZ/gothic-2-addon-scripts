@@ -84,7 +84,7 @@ func void DIA_Sld_820_Halt_WannaJoin()
 func void DIA_Sld_820_Halt_KenneLee()
 {
 	AI_Output (other, self, "DIA_Sld_820_Halt_KenneLee_15_00"); //Lui ed io torniamo indietro...
-	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //TU saresti un compagno di Lee? Non credo a una parola di quello che dici! Ma entra pure, se non ti riconoscer‡, te ne accorgerai... (ride)
+	AI_Output (self, other, "DIA_Sld_820_Halt_KenneLee_07_01"); //TU saresti un compagno di Lee? Non credo a una parola di quello che dici! Ma entra pure, se non ti riconoscer√†, te ne accorgerai... (ride)
 	B_Sld_820_LeeIsRight();
 	AI_StopProcessInfos	(self);
 };

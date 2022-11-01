@@ -44,10 +44,10 @@ func int DIA_Fed_HALLO_Condition ()
 };
 func void DIA_Fed_HALLO_Info ()
 {
-	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Cosa vuoi da me? Non andrò da nessuna parte!
+	AI_Output (self, other, "DIA_Fed_HALLO_08_00"); //Cosa vuoi da me? Non andrÃ² da nessuna parte!
 	AI_Output (other, self, "DIA_Fed_HALLO_15_01"); //Stai calmo, rilassati. Nessuno vuole che tu vada da qualche parte.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Grazie a Innos. Sai, negli ultimi giorni molti uomini hanno lasciato il campo e nessuno di loro è più tornato.
-	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Sono stati tutti mangiati dagli squartatori. Ma non io. Me ne resterò qui fino a quando non sarà tutto finito.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_02"); //Grazie a Innos. Sai, negli ultimi giorni molti uomini hanno lasciato il campo e nessuno di loro Ã¨ piÃ¹ tornato.
+	AI_Output (self, other, "DIA_Fed_HALLO_08_03"); //Sono stati tutti mangiati dagli squartatori. Ma non io. Me ne resterÃ² qui fino a quando non sarÃ  tutto finito.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -71,7 +71,7 @@ func int DIA_Fed_Snapper_Condition ()
 func void DIA_Fed_Snapper_Info ()
 {
 	AI_Output (other, self, "DIA_Fed_Snapper_15_00"); //Cosa sai dirmi sugli squartatori?
-	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot li tiene d'occhio di notte. Alcuni di loro sono giù al lago ai pieni della torre oscura.
+	AI_Output (self, other, "DIA_Fed_Snapper_08_01"); //Bilgot li tiene d'occhio di notte. Alcuni di loro sono giÃ¹ al lago ai pieni della torre oscura.
 	AI_Output (self, other, "DIA_Fed_Snapper_08_02"); //Altri sono proprio sopra di noi, in cima alla collina. Stanno prendendoci per stanchezza.
 	AI_Output (self, other, "DIA_Fed_Snapper_08_03"); //Siamo riusciti a intrappolarci qui. Presto attaccheranno il campo e avranno il loro festino di sangue...
 	AI_Output (other, self, "DIA_Fed_Snapper_15_04"); //Capisco.
@@ -98,7 +98,7 @@ func void DIA_Fed_Perm_Info ()
 	
 	if (MIS_Fajeth_Kill_Snapper != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Gli squartatori sono là fuori. Riesci a sentire il loro odore? Io li sento...
+		AI_Output (self, other, "DIA_Fed_Perm_08_01"); //Gli squartatori sono lÃ  fuori. Riesci a sentire il loro odore? Io li sento...
 	}
 	else 
 	{

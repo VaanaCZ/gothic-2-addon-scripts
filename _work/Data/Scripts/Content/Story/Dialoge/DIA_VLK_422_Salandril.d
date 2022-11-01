@@ -107,7 +107,7 @@ func void DIA_Salandril_Hallo_Info ()
 	AI_Output (self, other, "DIA_Salandril_PERM_13_01"); //Ho un'ampia scelta a prezzi interessanti. E le mie pozioni sono molto meglio di quelle che vende Zuris.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Salandril vende pozioni. Il suo negozio è nei quartieri alti."); 
+	B_LogEntry (TOPIC_CityTrader, "Salandril vende pozioni. Il suo negozio Ã¨ nei quartieri alti."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Trank
@@ -245,9 +245,9 @@ func void DIA_Salandril_KLOSTER_Info ()
 	}
 	else
 	{
-		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Ho i miei ordini e li porterò a termine. Perciò sei libero di venire con le buone, altrimenti passerò alle cattive.
+		AI_Output			(other, self, "DIA_Salandril_KLOSTER_15_03"); //Ho i miei ordini e li porterÃ² a termine. PerciÃ² sei libero di venire con le buone, altrimenti passerÃ² alle cattive.
 	};
-	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //Cosa? Ti trascinerò per il colletto come un sudicio straccio.
+	AI_Output			(self, other, "DIA_Salandril_KLOSTER_13_04"); //Cosa? Ti trascinerÃ² per il colletto come un sudicio straccio.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);
 };
@@ -278,7 +278,7 @@ func int DIA_Salandril_GehinsKloster_Condition ()
 func void DIA_Salandril_GehinsKloster_Info ()
 {
 	AI_Output			(other, self, "DIA_Salandril_GehinsKloster_15_00"); //Allora, vai al monastero, o devo darti un altro...?
-	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //Vivrai per pentirtene. Sì, dannazione, andrò al monastero, ma non pensare di cavartela così.
+	AI_Output			(self, other, "DIA_Salandril_GehinsKloster_13_01"); //Vivrai per pentirtene. SÃ¬, dannazione, andrÃ² al monastero, ma non pensare di cavartela cosÃ¬.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"KlosterUrteil");
 	MIS_Serpentes_BringSalandril_SLD = LOG_SUCCESS;

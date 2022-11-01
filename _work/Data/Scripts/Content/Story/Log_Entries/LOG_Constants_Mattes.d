@@ -1,5 +1,5 @@
 // ***************************
-// LOG_Constants für Missionen
+// LOG_Constants fÃ¼r Missionen
 // ---------------------------
 // (LOG_MISSION)
 // ***************************
@@ -30,7 +30,7 @@ const string Topic_Addon_BDT_Teacher = "Imparare dai briganti";
 // ------ Kapitel 1 ------
 CONST string 	Topic_Bandits				=	"Briganti e manifesti dei ricercati."; 
 
-// ------ Der Rübenbauer ------
+// ------ Der RÃ¼benbauer ------
 const string	TOPIC_Kleidung				=	"Abiti da lavoro di Lobart.";
 const string	TOPIC_Rueben				=	"Raccogli le rape.";
 const string	TOPIC_Ruebenbringen			=	"Porta le rape a Hilda.";
@@ -39,7 +39,7 @@ const string	TOPIC_Maleth				=	"I briganti alla fattoria di Lobart.";
 const string	TOPIC_Hilda					=	"Una padella per Hilda.";
 
 //-----Der Weg in die Stadt-------------
-const string	TOPIC_City					=	"Accesso alla città di Khorinis.";
+const string	TOPIC_City					=	"Accesso alla cittÃ  di Khorinis.";
 
 //-----In Khorinis Lehrling werden --------- 
 const string	TOPIC_BecomeMIL				=	"Ammissione alla milizia.";
@@ -54,7 +54,7 @@ const string	TOPIC_BosperBogen			=   "L'arco di Bosper.";
 const string	TOPIC_BosperWolf			=   "Pelli per Bosper.";
 const string	TOPIC_ConstantinoPlants		=   "Piante per Constantino.";
 
-//-------------Händler und Diebe---------------------------
+//-------------HÃ¤ndler und Diebe---------------------------
 const string	TOPIC_Canthar				=	"Il favore di Canthar.";
 const string	TOPIC_HakonBanditen			=   "Razzie dei briganti.";
 const string	TOPIC_Jora					=	"L'oro del mercante.";
@@ -74,8 +74,8 @@ const string 	TOPIC_Garvell				= 	"Informazioni per Garvell.";
 
 
 
-//---------Milizaufträge-------------------------------
-const string	TOPIC_Peck					= 	"Dov'è Peck?";
+//---------MilizauftrÃ¤ge-------------------------------
+const string	TOPIC_Peck					= 	"Dov'Ã¨ Peck?";
 const string	TOPIC_Warehouse				= 	"Un pacchetto d'erba.";
 const string	TOPIC_Redlight				= 	"Traffico d'erba.";
 const string	TOPIC_Feldraeuber			= 	"Problemi alla fattoria di Lobart.";
@@ -86,9 +86,9 @@ const string	TOPIC_Feldraeuber			= 	"Problemi alla fattoria di Lobart.";
 const string	TOPIC_BecomeKdF				=	"Nomina a Mago del Fuoco"; 
 
 const string	Topic_Kloster				=	"Accesso al monastero di Innos.";
-const string    Topic_Gemeinschaft			=	"Lavoro per la comunità.";
+const string    Topic_Gemeinschaft			=	"Lavoro per la comunitÃ .";
 
-//---------Arbeiten für die Gemeinschaft-----------------------------
+//---------Arbeiten fÃ¼r die Gemeinschaft-----------------------------
 const string    Topic_Neorasrezept  		=	"La ricetta perduta.";
 const string    Topic_NeorasPflanzen		=	"Sette piante.";
 const string    Topic_IsgarothWolf			=	"Il problema di Isgaroth.";
@@ -100,15 +100,15 @@ const string    Topic_MardukBeten 			=	"Una preghiera per i paladini.";
 //---------Sonstiges -----------------------------
 const string	Topic_OpolosRezept			=	"Opolos e la ricetta.";
 const string	Topic_BaboTrain				=	"Babo si addestra al combattimento";
-const string	Topic_KarrasCharm			=	"Una passeggiata in città.";
+const string	Topic_KarrasCharm			=	"Una passeggiata in cittÃ .";
 
-//---------Prüfung des Feuers---------------------
+//---------PrÃ¼fung des Feuers---------------------
 const string	TOPIC_FireContest			=	"La Prova del Fuoco";
 const string	TOPIC_Golem					=	"La roccia vivente.";
 const string	TOPIC_Rune					=	"La runa del fuoco.";
 const string	TOPIC_Schnitzeljagd			=	"Il cammino dei credenti."; 
 
-//---------Hilfe für Novizen-----------------------
+//---------Hilfe fÃ¼r Novizen-----------------------
 const string 	Topic_BaboGaertner			=   "Babo e il giardino delle erbe.";
 const string 	Topic_DyrianDrin			=   "La trasgressione di Dyrian.";
 const string 	Topic_OpolosStudy			=   "Opolos e la biblioteca.";
@@ -118,7 +118,7 @@ const string	Topic_KlosterTrader			=	"Commercio al monastero.";
 const string	Topic_KlosterTeacher		=	"Lezioni al monastero.";
 
 
-//---------Söldner----------------------------------
+//---------SÃ¶ldner----------------------------------
 const string	TOPIC_BecomeSLD				=	"Ammissione tra i mercenari."; 
 const string	TOPIC_TorlofPacht			=	"Riscuoti l'affitto.";
 const string	TOPIC_TorlofMiliz			=	"Allontana la milizia.";

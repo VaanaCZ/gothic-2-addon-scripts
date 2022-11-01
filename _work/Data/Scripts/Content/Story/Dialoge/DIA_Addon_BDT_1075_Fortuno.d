@@ -77,21 +77,21 @@ FUNC VOID DIA_Addon_Fortuno_Hi_Info()
 {
 	if (Fortuno_Einmal == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_00");//(ansioso) Una nuvola cura sopra la casa… l'eletto si avvicina
-		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_01");//Con il sangue… dovevo chiamarlo… LUI che mi vede… mi vede… oh, no, vai via, vattene
+		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_00");//(ansioso) Una nuvola cura sopra la casaâ€¦ l'eletto si avvicina
+		AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_01");//Con il sangueâ€¦ dovevo chiamarloâ€¦ LUI che mi vedeâ€¦ mi vedeâ€¦ oh, no, vai via, vattene
 		AI_Output (other, self, "DIA_Addon_Fortuno_Hi_15_02");//Tutto bene?
 		Fortuno_Einmal = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Fortuno,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Fortuno,LOG_RUNNING);
 		
-		B_LogEntry (Topic_Addon_Fortuno,"Fortuno è fuori di testa. Sta cercando un 'novizio verde'");
+		B_LogEntry (Topic_Addon_Fortuno,"Fortuno Ã¨ fuori di testa. Sta cercando un 'novizio verde'");
 		
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_03");//Verde… novizio verde… Non lo trovo
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_13_03");//Verdeâ€¦ novizio verdeâ€¦ Non lo trovo
 	
 	Info_ClearChoices (DIA_Addon_Fortuno_Hi);
-	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Tornerò più tardi… (FINE)",DIA_Addon_Fortuno_Hi_BACK);	
+	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"TornerÃ² piÃ¹ tardiâ€¦ (FINE)",DIA_Addon_Fortuno_Hi_BACK);	
 	
 	Info_AddChoice 	  (DIA_Addon_Fortuno_Hi,"Come posso aiutarti?",DIA_Addon_Fortuno_Hi_HILFE);
 	
@@ -112,7 +112,7 @@ FUNC VOID DIA_Addon_Fortuno_Hi_BACK()
 FUNC VOID DIA_Addon_Fortuno_Hi_HILFE()
 {
 	AI_Output (other, self, "DIA_Addon_Fortuno_Hi_HILFE_15_00");//Come posso aiutarti?
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_HILFE_13_01");//Il novizio… il novizio verde aiuterà il novizio
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_HILFE_13_01");//Il novizioâ€¦ il novizio verde aiuterÃ  il novizio
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_JOINT()
 {
@@ -122,7 +122,7 @@ FUNC VOID DIA_Addon_Fortuno_Hi_JOINT()
 	{
 		AI_UseItem (self, ItMI_Joint);
 	};
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_JOINT_13_01");//Se non è verde non è forte, se non è verde non è forte
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_JOINT_13_01");//Se non Ã¨ verde non Ã¨ forte, se non Ã¨ verde non Ã¨ forte
 };
 FUNC VOID DIA_Addon_Fortuno_Hi_GREEN()
 {
@@ -134,7 +134,7 @@ FUNC VOID DIA_Addon_Fortuno_Hi_GREEN()
 		
 	};
 	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_01");//(si riprende) AAAHHH...
-	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_02");//La mia testa… chi… Mi chiamo... Fortuno… che cosa… cosa c'è che non va?
+	AI_Output (self, other, "DIA_Addon_Fortuno_Hi_GREEN_13_02");//La mia testaâ€¦ chiâ€¦ Mi chiamo... Fortunoâ€¦ che cosaâ€¦ cosa c'Ã¨ che non va?
 	
 	Info_ClearChoices (DIA_Addon_Fortuno_Hi);
 	Fortuno_Geheilt_01 = TRUE;
@@ -170,11 +170,11 @@ FUNC VOID DIA_Addon_Fortuno_wer_Info()
 	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_01");//Una volta facevo parte della Confraternita del Dormiente. Andava tutto bene a quei tempi.
 	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_02");//Bene, eravamo tutti criminali condannati, ma noi novizi non avevamo preoccupazioni
 	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_03");//Ehi, anch'io ero un prigioniero nella Valle delle Miniere. Raccontami qualcosa di nuovo.
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_04");//Io... Non ricordo niente. La mia mente è annebbiata
-	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_05");//Avanti, concentrati. Cosa è successo? Quando hai ripreso i sensi?
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_06");//Raven… Mi ricordo solo di Raven e… di stanze buie.
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_04");//Io... Non ricordo niente. La mia mente Ã¨ annebbiata
+	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_05");//Avanti, concentrati. Cosa Ã¨ successo? Quando hai ripreso i sensi?
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_06");//Ravenâ€¦ Mi ricordo solo di Raven eâ€¦ di stanze buie.
 	AI_Output (other, self, "DIA_Addon_Fortuno_wer_15_07");//Che c'entra Raven? Cosa ti ha fatto?
-	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_08");//(sospira) Mi dispiace. È come se la mia mente fosse prigioniera… Non capisco nemmeno io...
+	AI_Output (self, other, "DIA_Addon_Fortuno_wer_13_08");//(sospira) Mi dispiace. Ãˆ come se la mia mente fosse prigionieraâ€¦ Non capisco nemmeno io...
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info FREE
@@ -198,11 +198,11 @@ FUNC INT DIA_Addon_Fortuno_FREE_Condition()
 FUNC VOID DIA_Addon_Fortuno_FREE_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_00");//Dev'esserci un modo per rinfrescarti la memoria.
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_01");//Sì… sì, forse c'è un modo.
-	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_02");//I guru conoscono varie forme di alterazione dello spirito e della volontà.
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_01");//SÃ¬â€¦ sÃ¬, forse c'Ã¨ un modo.
+	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_02");//I guru conoscono varie forme di alterazione dello spirito e della volontÃ .
 	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_03");//TU ti ricordi qualcosa in proposito?
 	AI_Output (self, other, "DIA_Addon_Fortuno_FREE_13_04");//No, temo che questa conoscenza si sia persa con i guru
-	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_05");//Dannazione. Beh, se c'è un modo per liberare il tuo spirito, lo troverò.
+	AI_Output (other, self, "DIA_Addon_Fortuno_FREE_15_05");//Dannazione. Beh, se c'Ã¨ un modo per liberare il tuo spirito, lo troverÃ².
 
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_BL_09");
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_BL_10");
@@ -210,7 +210,7 @@ FUNC VOID DIA_Addon_Fortuno_FREE_Info()
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_LOCH_01");
 	Wld_InsertNpc (Bloodfly,"ADW_PATH_TO_LOCH_01");
 	
-	B_LogEntry (Topic_Addon_Fortuno,"Fortuno si è ripreso, ma non si ricorda ancora nulla.");
+	B_LogEntry (Topic_Addon_Fortuno,"Fortuno si Ã¨ ripreso, ma non si ricorda ancora nulla.");
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Herb
@@ -234,8 +234,8 @@ FUNC INT DIA_Addon_Fortuno_Herb_Condition()
 FUNC VOID DIA_Addon_Fortuno_Herb_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Fortuno_Herb_15_00");//Ti serve altra erba di palude?
-	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_01");//Sììììì, sicuramente. Comprerò tutta l'erba di palude su cui riuscirai a mettere le mani.
-	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_02");//Te la pagherò più di Fisk.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_01");//SÃ¬Ã¬Ã¬Ã¬Ã¬, sicuramente. ComprerÃ² tutta l'erba di palude su cui riuscirai a mettere le mani.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Herb_13_02");//Te la pagherÃ² piÃ¹ di Fisk.
 };
 FUNC VOID B_Fortuno_InfoManager()
 {
@@ -257,7 +257,7 @@ INSTANCE DIA_Addon_Fortuno_Trade   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Trade_Condition;
 	information = DIA_Addon_Fortuno_Trade_Info;
 	permanent   = TRUE;
-	description	= "Ho dell'erba di palude per te…";
+	description	= "Ho dell'erba di palude per teâ€¦";
 };
 FUNC INT DIA_Addon_Fortuno_Trade_Condition()
 {	
@@ -314,7 +314,7 @@ INSTANCE DIA_Addon_Fortuno_Trank   (C_INFO)
 	condition   = DIA_Addon_Fortuno_Trank_Condition;
 	information = DIA_Addon_Fortuno_Trank_Info;
 	permanent   = FALSE;
-	description	= "Ho una pozione per te…";
+	description	= "Ho una pozione per teâ€¦";
 };
 FUNC INT DIA_Addon_Fortuno_Trank_Condition()
 {
@@ -328,7 +328,7 @@ FUNC INT DIA_Addon_Fortuno_Trank_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_Trank_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_Trank_15_00");//Ho una pozione per te. Ti aiuterà a ricordare.
+	AI_Output (other, self, "DIA_Addon_Fortuno_Trank_15_00");//Ho una pozione per te. Ti aiuterÃ  a ricordare.
 	AI_Output (self, other, "DIA_Addon_Fortuno_Trank_13_01");//Mi fido di te.
 	
 	if (Npc_HasItems (other, ItPo_Addon_Geist_02) >= 1)//der richtige
@@ -342,7 +342,7 @@ FUNC VOID DIA_Addon_Fortuno_Trank_Info()
 	}
 	else
 	{
-		if B_GiveInvItems (other, self, ItPo_Addon_Geist_01,1)//der...äh...tödliche
+		if B_GiveInvItems (other, self, ItPo_Addon_Geist_01,1)//der...Ã¤h...tÃ¶dliche
 		{
 			Log_SetTopicStatus (Topic_Addon_Fortuno,LOG_OBSOLETE);
 			AI_StopProcessInfos (self);
@@ -360,7 +360,7 @@ INSTANCE DIA_Addon_Fortuno_more   (C_INFO)
 	condition   = DIA_Addon_Fortuno_more_Condition;
 	information = DIA_Addon_Fortuno_more_Info;
 	permanent   = FALSE;
-	description	= "E…?";
+	description	= "Eâ€¦?";
 };
 FUNC INT DIA_Addon_Fortuno_more_Condition()
 {
@@ -371,22 +371,22 @@ FUNC INT DIA_Addon_Fortuno_more_Condition()
 };
 FUNC VOID DIA_Addon_Fortuno_more_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_00");//E…?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_01");//Aah! Io... Ora ricordo di nuovo! Ora vedo… Che Adanos sia con me, che cosa ho fatto?
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_02");//Sì? Cos'hai fatto? E soprattutto, che cosa ha fatto Raven?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_03");//Io l'ho aiutato… a prendere contatto. Con LUI. Voleva vari elisir… Glieli ho preparati.
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_00");//Eâ€¦?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_01");//Aah! Io... Ora ricordo di nuovo! Ora vedoâ€¦ Che Adanos sia con me, che cosa ho fatto?
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_02");//SÃ¬? Cos'hai fatto? E soprattutto, che cosa ha fatto Raven?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_03");//Io l'ho aiutatoâ€¦ a prendere contatto. Con LUI. Voleva vari elisirâ€¦ Glieli ho preparati.
 	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_04");//Ha cercato di aprire il portale per entrare nel tempio.
-	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_05");//Perché? Che cosa vuole nel tempio?
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_06");//Un potente artefatto… è sepolto insieme a colui che lo portava un tempo. Un possente guerriero che è caduto per SUA mano
+	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_05");//PerchÃ©? Che cosa vuole nel tempio?
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_06");//Un potente artefattoâ€¦ Ã¨ sepolto insieme a colui che lo portava un tempo. Un possente guerriero che Ã¨ caduto per SUA mano
 	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_07");//E poi?
 	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_08");//Non siamo riusciti ad aprire il portale
 	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_09");//Ma Raven era SICURO di riuscirci, se avesse fatto scavare la tomba del sacerdote.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_10");//Ecco perché ha portato qui gli schiavi. Vittime che poteva obbligare a scavare dove riposano i poteri del tempo.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_10");//Ecco perchÃ© ha portato qui gli schiavi. Vittime che poteva obbligare a scavare dove riposano i poteri del tempo.
 	AI_Output (other, self, "DIA_Addon_Fortuno_more_15_11");//Tomba del sacerdote?
 	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_12");//Il luogo in cui riposa un sacerdote di Adanos. Si trova nella miniera.
 	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_13");//Mi ricordo anche delle tavolette di pietra. Credeva che gli avrebbero mostrato la strada.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_14");//E quando riuscì a decifrare i caratteri incisi su di esse, non ebbe più bisogno di me.
-	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_15");//Cancellò la mia memoria con un incantesimo e… tu mi hai liberato.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_14");//E quando riuscÃ¬ a decifrare i caratteri incisi su di esse, non ebbe piÃ¹ bisogno di me.
+	AI_Output (self, other, "DIA_Addon_Fortuno_more_13_15");//CancellÃ² la mia memoria con un incantesimo eâ€¦ tu mi hai liberato.
 	
 	SC_KnowsFortunoInfos = TRUE;
 	
@@ -420,6 +420,6 @@ FUNC INT DIA_Addon_Fortuno_Attentat_Condition()
 FUNC VOID DIA_Addon_Fortuno_Attentat_Info()
 {
 	B_Say 	  (other, self, "$ATTENTAT_ADDON_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_Fortuno_Attentat_13_00");//Attacco? Mi spiace, sono stato… assente… per un po' di tempo. Non ne so niente.
+	AI_Output (self, other, "DIA_Addon_Fortuno_Attentat_13_00");//Attacco? Mi spiace, sono statoâ€¦ assenteâ€¦ per un po' di tempo. Non ne so niente.
 };
 

@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Riordian_NW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Riordian_NW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Riordian_NW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Riordian_NW_PICKPOCKET_Condition()
@@ -96,8 +96,8 @@ func void DIA_Addon_Riordian_Hallo_Info ()
 	AI_Output	(other, self, "DIA_Addon_Riordian_Hallo_15_00"); //Cosa stai facendo?
 	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_01"); //Sto studiando la cultura del popolo antico.
 	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_02"); //Stando a queste iscrizioni, quelle genti vissero molto tempo fa.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Non so QUANDO eressero questi edifici, ma la loro civilt‡ aveva raggiunto un elevato livello di sviluppo.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Costruirono una citt‡ sull'altro versante delle montagne. (riflettendo) E un tempio per Adanos.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_03"); //Non so QUANDO eressero questi edifici, ma la loro civilt√† aveva raggiunto un elevato livello di sviluppo.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Hallo_10_04"); //Costruirono una citt√† sull'altro versante delle montagne. (riflettendo) E un tempio per Adanos.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Alter
@@ -131,7 +131,7 @@ instance DIA_Addon_Riordian_Atlantis		(C_INFO)
 	nr			 = 	4;
 	condition	 = 	DIA_Addon_Riordian_Atlantis_Condition;
 	information	 = 	DIA_Addon_Riordian_Atlantis_Info;
-	description	 = 	"Una citt‡ perduta sull'isola di Khorinis?";
+	description	 = 	"Una citt√† perduta sull'isola di Khorinis?";
 };
 
 func int DIA_Addon_Riordian_Atlantis_Condition ()
@@ -144,14 +144,14 @@ func int DIA_Addon_Riordian_Atlantis_Condition ()
 
 func void DIA_Addon_Riordian_Atlantis_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Una citt‡ perduta sull'isola di Khorinis?
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Gi‡. Finora siamo vissuti nella convinzione di conoscere tutta l'isola.
+	AI_Output	(other, self, "DIA_Addon_Riordian_Atlantis_15_00"); //Una citt√† perduta sull'isola di Khorinis?
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_01"); //Gi√†. Finora siamo vissuti nella convinzione di conoscere tutta l'isola.
 	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_02"); //Ritenevamo che la zona nordorientale fosse occupata da un'unica catena montuosa.
 	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_03"); //Ma ci sbagliavamo.
-	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Oltre queste montagne si apre una valle, e lÏ sorgeva la citt‡ fondata dal popolo antico.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_04"); //Oltre queste montagne si apre una valle, e l√¨ sorgeva la citt√† fondata dal popolo antico.
 	AI_Output	(self, other, "DIA_Addon_Riordian_Atlantis_10_05"); //(sospira) Sarebbe bellissimo poterne ammirare gli edifici, ma credo che siano da tempo ridotti in macerie...
 	
-	B_LogEntry (TOPIC_Addon_KDW,"I Maghi dell'Acqua sospettano che dietro il portale si trovi un'antica citt‡ perduta."); 
+	B_LogEntry (TOPIC_Addon_KDW,"I Maghi dell'Acqua sospettano che dietro il portale si trovi un'antica citt√† perduta."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SaturasWantYou
@@ -177,12 +177,12 @@ func int DIA_Addon_Riordian_SaturasWantYou_Condition ()
 func void DIA_Addon_Riordian_SaturasWantYou_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Riordian_SaturasWantYou_15_00"); //Saturas vuole vederti.
-	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Ha fatto progressi nelle indagini? Allora andrÚ da lui immediatamente.
+	AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_01"); //Ha fatto progressi nelle indagini? Allora andr√≤ da lui immediatamente.
 	
 	if (Nefarius_NW.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Se vuoi saperne di pi˘ su questo complesso, parla con Nefarius.
-		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Si Ë addentrato nei sotterranei, lo troverai lÏ.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_02"); //Se vuoi saperne di pi√π su questo complesso, parla con Nefarius.
+		AI_Output	(self, other, "DIA_Addon_Riordian_SaturasWantYou_10_03"); //Si √® addentrato nei sotterranei, lo troverai l√¨.
 	};	
 	
 	AI_StopProcessInfos (self);
@@ -204,7 +204,7 @@ instance DIA_Addon_Riordian_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Riordian_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Ci sono novit‡?";
+	description	 = 	"Ci sono novit√†?";
 };
 
 func int DIA_Addon_Riordian_Perm_Condition ()
@@ -217,10 +217,10 @@ func int DIA_Addon_Riordian_Perm_Condition ()
 
 func void DIA_Addon_Riordian_Perm_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Ci sono novit‡?
+	AI_Output	(other, self, "DIA_Addon_Riordian_Perm_15_00"); //Ci sono novit√†?
 	if (Riordian_PermNews == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //» confermato: il popolo antico credeva in Adanos!
+		AI_Output	(self, other, "DIA_Addon_Riordian_Perm_10_01"); //√à confermato: il popolo antico credeva in Adanos!
 		Riordian_PermNews = TRUE;
 	}
 	else
@@ -240,7 +240,7 @@ instance DIA_Addon_Riordian_TeachPre		(C_INFO)
 	condition	 = 	DIA_Addon_Riordian_TeachPre_Condition;
 	information	 = 	DIA_Addon_Riordian_TeachPre_Info;
 
-	description	 = 	"Vatras mi ha dato questo amuleto del fuoco fatuo cercatoreÖ";
+	description	 = 	"Vatras mi ha dato questo amuleto del fuoco fatuo cercatore‚Ä¶";
 };
 func int DIA_Addon_Riordian_TeachPre_Condition ()
 {

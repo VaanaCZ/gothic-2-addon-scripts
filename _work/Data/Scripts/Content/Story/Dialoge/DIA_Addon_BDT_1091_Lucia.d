@@ -98,10 +98,10 @@ FUNC VOID DIA_Addon_Lucia_was_Info()
 	AI_Output (self, other, "DIA_Addon_Lucia_was_16_01");//Abbiamo solo un po' di birra. I paladini hanno portato con loro l'unica birra sull'isola.
 	AI_Output (self, other, "DIA_Addon_Lucia_was_16_02");//Praticamente l'unica cosa buona che hanno portato...
 	AI_Output (self, other, "DIA_Addon_Lucia_was_16_03");//Altrimenti beviamo liquori. Ho del distillato clandestino, del grog e del rum bianco...
-	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//(approvando) Mmmh… dovresti provare QUELLO, ho avuto la ricetta da Samuel. L'amico conosce bene il suo lavoro.
+	AI_Output (self, other, "DIA_Addon_Lucia_was_16_04");//(approvando) Mmmhâ€¦ dovresti provare QUELLO, ho avuto la ricetta da Samuel. L'amico conosce bene il suo lavoro.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Trader,LOG_NOTE);
-	B_LogEntry (Topic_Addon_BDT_Trader,"Lucia può darmi da roba forte da bere.");
+	B_LogEntry (Topic_Addon_BDT_Trader,"Lucia puÃ² darmi da roba forte da bere.");
 };
 //---------------------------------------------------------------------
 //	Info Khorinis
@@ -127,17 +127,17 @@ FUNC INT DIA_Addon_Lucia_Khorinis_Condition()
 FUNC VOID DIA_Addon_Lucia_Khorinis_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Khorinis_15_00");//Non vieni anche tu da Khorinis?
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Non ricordarmelo! La mia vita in quella città era veramente orribile.
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//Finché arrivavano le navi coi nuovi prigionieri c'era ancora vita in città.
-	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//Ma tutti quegli altri… (ride) No, grazie. Forse è perché siamo su un'isola… beh, quei giorni sono finiti.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_01");//Non ricordarmelo! La mia vita in quella cittÃ  era veramente orribile.
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_02");//FinchÃ© arrivavano le navi coi nuovi prigionieri c'era ancora vita in cittÃ .
+	AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_03");//Ma tutti quegli altriâ€¦ (ride) No, grazie. Forse Ã¨ perchÃ© siamo su un'isolaâ€¦ beh, quei giorni sono finiti.
 
 	if (MIS_LuciasLetter != 0)
 	|| (SC_KnowsLuciaCaughtByBandits != 0)
 	|| (Nadja_GaveLuciaInfo != 0)
 	{
 		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_06"); //Con Elvrich ho chiuso!
-		AI_Output (other,self , "DIA_Addon_Lucia_Khorinis_15_04"); //Perché?
-		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_05"); //È una pulce. Quando i briganti mi hanno trascinato via, non ha alzato un dito per aiutarmi.
+		AI_Output (other,self , "DIA_Addon_Lucia_Khorinis_15_04"); //PerchÃ©?
+		AI_Output (self, other, "DIA_Addon_Lucia_Khorinis_16_05"); //Ãˆ una pulce. Quando i briganti mi hanno trascinato via, non ha alzato un dito per aiutarmi.
 		TOPIC_END_Lucia = TRUE;
 		B_GivePlayerXP (XP_Ambient);
 	};
@@ -165,9 +165,9 @@ FUNC INT DIA_Addon_Lucia_Jetzt_Condition()
 FUNC VOID DIA_Addon_Lucia_Jetzt_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Jetzt_15_00");//Cosa pensi di fare?
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//Vedremo. Per ora, resterò qui con Snaf, Fisk e gli altri.
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//Hai già parlato con Thorus? (alza gli occhi al cielo) Oh, Innos, è un pezzo d'uomo!
-	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(ride) Scusami… torniamo alla tua domanda… Non ho un obiettivo preciso, sto andando a caso.
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_01");//Vedremo. Per ora, resterÃ² qui con Snaf, Fisk e gli altri.
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_02");//Hai giÃ  parlato con Thorus? (alza gli occhi al cielo) Oh, Innos, Ã¨ un pezzo d'uomo!
+	AI_Output (self, other, "DIA_Addon_Lucia_Jetzt_16_03");//(ride) Scusamiâ€¦ torniamo alla tua domandaâ€¦ Non ho un obiettivo preciso, sto andando a caso.
 };
 //---------------------------------------------------------------------
 //	Info Paladine
@@ -192,7 +192,7 @@ FUNC VOID DIA_Addon_Lucia_Paladine_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_15_00");//I paladini non ti piacciono molto, vero?
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_01");//Quegli assassini fanatici sul libro paga dei Maghi del Fuoco? No.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Quel Lord Hagen occupa la città con i suoi delinquenti e tutti si inchinano davanti a lui.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_02");//Quel Lord Hagen occupa la cittÃ  con i suoi delinquenti e tutti si inchinano davanti a lui.
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_16_03");//E io non volevo farlo. Non avevo intenzione di aspettare che chiudessero la Lanterna Rossa e mi mettessero dentro.
 	
 	if (Npc_GetTrueGuild (other) != GIL_SLD)
@@ -222,7 +222,7 @@ FUNC VOID DIA_Addon_Lucia_Paladine_KILL()
 	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_KILL_15_00");//Hai mai ucciso nessuno?
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_01");//No, e ne sono molto contento.
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_02");//Ti prego, smettiamola di fare i seri.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//Perché non beviamo qualcosa e non ci godiamo ogni momento che gli dei ci concedono.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_KILL_16_03");//PerchÃ© non beviamo qualcosa e non ci godiamo ogni momento che gli dei ci concedono.
 	
 	Info_ClearChoices (DIA_Addon_Lucia_Paladine);
 };
@@ -236,7 +236,7 @@ FUNC VOID DIA_Addon_Lucia_Paladine_MURDER()
 {
 	AI_Output (other, self, "DIA_Addon_Lucia_Paladine_MURDER_15_00");//I paladini sono i guerrieri di Innos. Non sono assassini.
 	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_01");//Allora? Il sangue cola anche dalle loro spade, nello stesso modo in cui cola dalle armi di pirati e briganti.
-	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//L'unica differenza è che lo fanno in nome di Innos e non perché vogliono sopravvivere.
+	AI_Output (self, other, "DIA_Addon_Lucia_Paladine_MURDER_16_02");//L'unica differenza Ã¨ che lo fanno in nome di Innos e non perchÃ© vogliono sopravvivere.
 	
 	Info_AddChoice (DIA_Addon_Lucia_Paladine,"Allora rinneghi Innos, donnetta?",DIA_Addon_Lucia_Paladine_WEIB);
 };
@@ -314,7 +314,7 @@ FUNC VOID DIA_Addon_Lucia_lernen_Info()
 	AI_Output (self, other, "DIA_Addon_Lucia_lernen_16_01");//(ride) Ma con piacere. Con me puoi migliorare la tua DESTREZZA.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Lucia può aiutarmi a migliorare la mia destrezza.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Lucia puÃ² aiutarmi a migliorare la mia destrezza.");	
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH

@@ -42,7 +42,7 @@ INSTANCE ItFo_Addon_Shellflesh (C_Item)
 	description			= 	name;
 	TEXT[0]				= 	"Succosa carne di mollusco";
 	TEXT[1]				= 	NAME_Bonus_HP; COUNT[1] = HP_Shellflesh;
-	TEXT[2]				= 	"Può essere mangiata cruda";
+	TEXT[2]				= 	"PuÃ² essere mangiata cruda";
 	TEXT[3]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -118,7 +118,7 @@ INSTANCE ItFo_Addon_Grog(C_Item)
 //	Lou's Hammer (mit Manaessenz)
 //-----------------------------
 
-var int Hammer_Once;	//damit der Magier sich nicht für 30 Gold superviel MANA kauft!!
+var int Hammer_Once;	//damit der Magier sich nicht fÃ¼r 30 Gold superviel MANA kauft!!
 
 INSTANCE ItFo_Addon_LousHammer (C_Item)
 {
@@ -172,7 +172,7 @@ INSTANCE ItFo_Addon_SchlafHammer (C_Item)
 
 	description		= 	"Martello doppio";
 	
-	TEXT[1]			= 	"Rende sonnolento il bevitore più accanito…";				
+	TEXT[1]			= 	"Rende sonnolento il bevitore piÃ¹ accanitoâ€¦";				
 
 	TEXT[5]			= 	NAME_Value;					
 	COUNT[5]		= 	Value_SchlafHammer;

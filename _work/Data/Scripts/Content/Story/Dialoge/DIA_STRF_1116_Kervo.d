@@ -43,10 +43,10 @@ func int DIA_Kervo_WASIST_Condition ()
 func void DIA_Kervo_WASIST_Info ()
 {
 	AI_Output			(other, self, "DIA_Kervo_WASIST_15_00"); //Che ti prende?
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_01"); //E c'Ë bisogno di chiederlo? Guardati attorno.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_01"); //E c'√® bisogno di chiederlo? Guardati attorno.
 	AI_Output			(self, other, "DIA_Kervo_WASIST_13_02"); //Questi dannati predatori hanno invaso l'intero fiume da quando sono arrivato.
 	AI_Output			(self, other, "DIA_Kervo_WASIST_13_03"); //All'inizio, erano solo in due. Da ieri ne ho contati almeno cinque.
-	AI_Output			(self, other, "DIA_Kervo_WASIST_13_04"); //Non ho idea di come farÚ a uscire di qui.
+	AI_Output			(self, other, "DIA_Kervo_WASIST_13_04"); //Non ho idea di come far√≤ a uscire di qui.
 };
 
 
@@ -73,9 +73,9 @@ func int DIA_Kervo_HILFE_Condition ()
 func void DIA_Kervo_HILFE_Info ()
 {
 	AI_Output			(other, self, "DIA_Kervo_HILFE_15_00"); //Hai provato ad attraversare il passo?
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_01"); //Ti sembro forse pazzo? 20 soldati non potrebbero trascinarmi fuori di qui fino a quando quelle bestiacce saranno l‡ fuori. Odio quelle cose.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_01"); //Ti sembro forse pazzo? 20 soldati non potrebbero trascinarmi fuori di qui fino a quando quelle bestiacce saranno l√† fuori. Odio quelle cose.
 	AI_Output			(self, other, "DIA_Kervo_HILFE_13_02"); //(nervoso) Appena sento il loro odore impazzisco. I loro continui versi mi raggelano il sangue nelle vene.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_13_03"); //Se sei cosÏ ansioso di farti spellare vivo, vai pure.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_13_03"); //Se sei cos√¨ ansioso di farti spellare vivo, vai pure.
 
 	Info_ClearChoices	(DIA_Kervo_HILFE);
 	Info_AddChoice	(DIA_Kervo_HILFE, "Bene, io sono fuori.", DIA_Kervo_HILFE_tschau );
@@ -108,7 +108,7 @@ func void DIA_Kervo_HILFE_Problem ()
 		AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_03"); //Ho trovato un pezzo di metallo.
 	};
 
-	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_04"); //Te lo darÚ in cambio.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_Problem_13_04"); //Te lo dar√≤ in cambio.
 	Kervo_PromiseNugget = TRUE;
 	AI_StopProcessInfos (self);
 };
@@ -116,7 +116,7 @@ func void DIA_Kervo_HILFE_Problem ()
 func void DIA_Kervo_HILFE_tschau ()
 {
 	AI_Output			(other, self, "DIA_Kervo_HILFE_tschau_15_00"); //Bene, io sono fuori.
-	AI_Output			(self, other, "DIA_Kervo_HILFE_tschau_13_01"); //Sicuro, non ti tratterrÚ.
+	AI_Output			(self, other, "DIA_Kervo_HILFE_tschau_13_01"); //Sicuro, non ti tratterr√≤.
 
 	AI_StopProcessInfos (self);
 };
@@ -193,7 +193,7 @@ func int DIA_Kervo_VERGISSES_Condition ()
 func void DIA_Kervo_VERGISSES_Info ()
 {
 	AI_Output			(other, self, "DIA_Kervo_VERGISSES_15_00"); //Attraverserai il passo, adesso?
-	AI_Output			(self, other, "DIA_Kervo_VERGISSES_13_01"); //Scordatelo, amico. Se mi prendono, mi riporteranno nelle miniere. ResterÚ qui.
+	AI_Output			(self, other, "DIA_Kervo_VERGISSES_13_01"); //Scordatelo, amico. Se mi prendono, mi riporteranno nelle miniere. Rester√≤ qui.
 	AI_StopProcessInfos (self);
 };
 

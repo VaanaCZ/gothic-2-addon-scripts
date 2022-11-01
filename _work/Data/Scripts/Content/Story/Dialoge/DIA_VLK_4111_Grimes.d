@@ -68,7 +68,7 @@ INSTANCE DIA_Grimes_Erz(C_INFO)
 	condition	= DIA_Grimes_Erz_Condition;
 	information	= DIA_Grimes_Erz_Info;
 	permanent	= FALSE;
-	description	= "Quanto minerale hai gi‡ estratto?";
+	description	= "Quanto minerale hai gi√† estratto?";
 };                       
 
 FUNC INT DIA_Grimes_Erz_Condition()
@@ -81,9 +81,9 @@ FUNC INT DIA_Grimes_Erz_Condition()
 }; 
 FUNC VOID DIA_Grimes_Erz_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Quanto metallo hai gi‡ estratto?
-	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//Poche casse. Ma non sono pi˘ qui.
-	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Il paladino Marcos ha deciso di portare il metallo al castello, poichÈ qui siamo sotto costante attacco da parte degli orchi.
+	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Quanto metallo hai gi√† estratto?
+	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//Poche casse. Ma non sono pi√π qui.
+	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Il paladino Marcos ha deciso di portare il metallo al castello, poich√© qui siamo sotto costante attacco da parte degli orchi.
 };
 // ************************************************************
 // 			 Weg
@@ -95,7 +95,7 @@ INSTANCE DIA_Grimes_Weg(C_INFO)
 	condition	= DIA_Grimes_Weg_Condition;
 	information	= DIA_Grimes_Weg_Info;
 	permanent	= FALSE;
-	description = "Sai in quale direzione Ë andato Marcos?";
+	description = "Sai in quale direzione √® andato Marcos?";
 };                       
 
 FUNC INT DIA_Grimes_Weg_Condition()
@@ -108,8 +108,8 @@ FUNC INT DIA_Grimes_Weg_Condition()
 }; 
 FUNC VOID DIA_Grimes_Weg_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//Sai in quale direzione Ë andato Marcos?
-	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//Non ha preso la strada diretta - invece ha voluto attraversare il fiume dove si Ë congelato.
+	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//Sai in quale direzione √® andato Marcos?
+	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//Non ha preso la strada diretta - invece ha voluto attraversare il fiume dove si √® congelato.
 	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//Intendeva fare il giro e avvicinare il castello da ovest.
 };
 // ************************************************************
@@ -135,8 +135,8 @@ FUNC INT DIA_Grimes_Grimes_Condition()
 FUNC VOID DIA_Grimes_Grimes_Info()
 {	
 	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//Non vuoi lasciare la valle?
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//No, continuerÚ a estrarre il metallo.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//Non lascerÚ che qualche orco riesca a fermarmi, ho gi‡ affrontato di peggio.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//No, continuer√≤ a estrarre il metallo.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//Non lascer√≤ che qualche orco riesca a fermarmi, ho gi√† affrontato di peggio.
 	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//Quando scavavamo ancora nella vecchia miniera, e l'acqua fece improvvisamente irruzione...
 	AI_Output (self,other,"DIA_Grimes_Grimes_05_04");//Ma sono vecchie storie.
 };
@@ -163,7 +163,7 @@ FUNC INT DIA_Grimes_PERM_Condition()
 FUNC VOID DIA_Grimes_PERM_Info()
 {	
 	AI_Output (other,self,"DIA_Grimes_PERM_15_00");//Come va il tuo lavoro?
-	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Questa roccia Ë dannatamente dura - quasi stesse cercando di impedirci di prendere il metallo.
+	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Questa roccia √® dannatamente dura - quasi stesse cercando di impedirci di prendere il metallo.
 };
 
 
@@ -208,12 +208,12 @@ func void DIA_Grimes_PICKPOCKET_BACK()
 
 
 /*
-	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen m¸ssen.  
+	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen m√ºssen.  
 	Ich habe ihn gefunden. 
-	Er h‰lt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
+	Er h√§lt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
 	Innos sei dank...
 	
 	Nein, bisher nicht. 
-	Dann hoffe ich, das er ein Versteck f¸r sich und das Erz gefunden hat.
+	Dann hoffe ich, das er ein Versteck f√ºr sich und das Erz gefunden hat.
 */
 

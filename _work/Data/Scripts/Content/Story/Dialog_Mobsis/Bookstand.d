@@ -1,15 +1,15 @@
 //##########################################################################
 //##
-//##	Hier stehen alle Buchst‰ndermobsiscripte
+//##	Hier stehen alle Buchst√§ndermobsiscripte
 //##
 //##########################################################################
 
 
 //*************************************
-//	Buchst‰nder in der Klosterbibliothek
+//	Buchst√§nder in der Klosterbibliothek
 //*************************************
 
-FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
+FUNC VOID Use_Bookstand_01_S1()		//Buchst√§nder in der Magierbibliothek
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -17,11 +17,11 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 	{	
 	if  (hero.guild == GIL_NOV)
 		{
-			KNOWS_FIRE_CONTEST = TRUE; //f¸r die Pr¸fung des Feuers 
+			KNOWS_FIRE_CONTEST = TRUE; //f√ºr die Pr√ºfung des Feuers 
 			
 			Log_CreateTopic (TOPIC_FireContest,LOG_MISSION);
 			Log_SetTopicStatus	(TOPIC_FireContest,LOG_RUNNING);
-			B_LogEntry (TOPIC_FireContest,"Come novizio, ho il diritto di richiedere una Prova del Fuoco. Questo obbliga ciascuno dei tre maghi dell'Alto Concilio a preparare una prova. Se passerÚ queste prove, sarÚ accettato nel Circolo del Fuoco.");
+			B_LogEntry (TOPIC_FireContest,"Come novizio, ho il diritto di richiedere una Prova del Fuoco. Questo obbliga ciascuno dei tre maghi dell'Alto Concilio a preparare una prova. Se passer√≤ queste prove, sar√≤ accettato nel Circolo del Fuoco.");
 		};
 	
 		var int nDocID;
@@ -40,7 +40,7 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  0, ""					);
 				
 					
-					Doc_PrintLines	( nDocID,  0, "Sebbene un novizio possa sentirsi pronto per sottoporsi alla Prova della Magia, potrebbe non essere necessariamente scelto. Se, tuttavia, avr‡ considerato attentamente la propria decisione e insister‡, gli verr‡ accordato il diritto di richiedere la Prova, e nessun mago potr‡ negargliela. Ma egli non solo dovr‡ superare la Prova della Magia, ma dovr‡ anche raggiungere l'illuminazione attraverso il fuoco. Se insiste di fronte all'Alto Concilio, dovr‡ essere sottoposto alla PROVA DEL FUOCO.");
+					Doc_PrintLines	( nDocID,  0, "Sebbene un novizio possa sentirsi pronto per sottoporsi alla Prova della Magia, potrebbe non essere necessariamente scelto. Se, tuttavia, avr√† considerato attentamente la propria decisione e insister√†, gli verr√† accordato il diritto di richiedere la Prova, e nessun mago potr√† negargliela. Ma egli non solo dovr√† superare la Prova della Magia, ma dovr√† anche raggiungere l'illuminazione attraverso il fuoco. Se insiste di fronte all'Alto Concilio, dovr√† essere sottoposto alla PROVA DEL FUOCO.");
 			
 					
 					
@@ -48,10 +48,10 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "La Prova dovr‡ verificare la saggezza, la forza e la destrezza del novizio. Pertando egli dovr‡ superare tre prove, ognuna presentata da un mago dell'Alto Concilio, prima di affrontare il Giuramento del Fuoco e unirsi al patto con il fuoco."); 
+					Doc_PrintLines	( nDocID,  1, "La Prova dovr√† verificare la saggezza, la forza e la destrezza del novizio. Pertando egli dovr√† superare tre prove, ognuna presentata da un mago dell'Alto Concilio, prima di affrontare il Giuramento del Fuoco e unirsi al patto con il fuoco."); 
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Questo Ë il volere di Innos e cosÏ deve essere."					);
+					Doc_PrintLines	( nDocID,  1, "Questo √® il volere di Innos e cos√¨ deve essere."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "L'Alto Concilio"					);
@@ -62,13 +62,13 @@ FUNC VOID Use_Bookstand_01_S1()		//Buchst‰nder in der Magierbibliothek
 };
 
 //*************************************
-//	Buchst‰nder in der Geheimen Bibliothek
+//	Buchst√§nder in der Geheimen Bibliothek
 //*************************************
 //--------------------------------------
 var int FinalDragonEquipment_Once;
 //--------------------------------------
 
-FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothek 
+FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst√§nder in der geheimen Bibliothek 
 {
 	var C_NPC her; 	her = Hlp_GetNpc(PC_Hero); 
 	
@@ -86,7 +86,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1);  	
 	
 						Doc_PrintLine	( nDocID,  0, "");
-						Doc_PrintLines	( nDocID,  0, "Ö Spero che la cupola possa proteggere il metallo dalla minaccia di Beliar. Il re Ë abbastanza ingenuo da credere che la cupola sia stata costruita come protezione contro eventuali fughe. Beh, fino a quando questo stratatagemma ci permetter‡ di raggiungere obiettivi pi˘ elevati, lasciamoglielo credere. Posso solo sperare che avremo abbastanza tempo per prepararci alla battaglia. Appena la cupola intorno alla Valle delle Miniere sar‡ stata eretta, userÚ tutti i poteri a mia disposizione per intervenire nell'imminente battaglia.");
+						Doc_PrintLines	( nDocID,  0, "‚Ä¶ Spero che la cupola possa proteggere il metallo dalla minaccia di Beliar. Il re √® abbastanza ingenuo da credere che la cupola sia stata costruita come protezione contro eventuali fughe. Beh, fino a quando questo stratatagemma ci permetter√† di raggiungere obiettivi pi√π elevati, lasciamoglielo credere. Posso solo sperare che avremo abbastanza tempo per prepararci alla battaglia. Appena la cupola intorno alla Valle delle Miniere sar√† stata eretta, user√≤ tutti i poteri a mia disposizione per intervenire nell'imminente battaglia.");
 						Doc_PrintLines	( nDocID,  0, "");
 			
 					
@@ -102,9 +102,9 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 						
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Ö Ho seguito le istruzioni e ho semplicemente versato l'acqua santa di Innos su una pietra runica vuota, sopra un tavolo runico. La pietra Ë andata distrutta. Sospetto che questo incantesimo sia accessibile solamente all'Eletto."); 
-						Doc_PrintLines	( nDocID,  1, "Ho lasciato l'aura sacra di Innos a protezione del monastero. L'abate se ne occuper‡ fino a quando l'Eletto non si riveler‡."	);
-						Doc_PrintLines	( nDocID,  1, "Le Lacrime di Innos potrebbero giocare un ruolo fondamentale nella futura battaglia. Tuttavia Ë troppo rischioso conservarle dove tutti possano vederle. FarÚ meglio a lasciarle qui nella biblioteca."	);
+						Doc_PrintLines	( nDocID,  1, "‚Ä¶ Ho seguito le istruzioni e ho semplicemente versato l'acqua santa di Innos su una pietra runica vuota, sopra un tavolo runico. La pietra √® andata distrutta. Sospetto che questo incantesimo sia accessibile solamente all'Eletto."); 
+						Doc_PrintLines	( nDocID,  1, "Ho lasciato l'aura sacra di Innos a protezione del monastero. L'abate se ne occuper√† fino a quando l'Eletto non si riveler√†."	);
+						Doc_PrintLines	( nDocID,  1, "Le Lacrime di Innos potrebbero giocare un ruolo fondamentale nella futura battaglia. Tuttavia √® troppo rischioso conservarle dove tutti possano vederle. Far√≤ meglio a lasciarle qui nella biblioteca."	);
 						Doc_Show		( nDocID );
 						
 						
@@ -126,7 +126,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_PrintLines	( nDocID,  1, "Devi creare una runa di teletrasporto per raggiungere il luogo segreto. Per farlo avrai bisogno di una pietra runica vuota e di una bottiglia di acqua santa. Puoi utilizzare la runa per teletrasportarti nella stanza."); 
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Sono ragionevolmente sicuro che le Lacrime di Innos siano ciÚ che gli antichi paladini utilizzarono nel dimenticato rituale della Consacrazione della Spada. Questo significa che dovrei essere in grado di utilizzare la bottiglietta che ho trovato per potenziare un'arma consacrata."	);
+						Doc_PrintLines	( nDocID,  1, "Sono ragionevolmente sicuro che le Lacrime di Innos siano ci√≤ che gli antichi paladini utilizzarono nel dimenticato rituale della Consacrazione della Spada. Questo significa che dovrei essere in grado di utilizzare la bottiglietta che ho trovato per potenziare un'arma consacrata."	);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_Show		( nDocID );
 		}
@@ -138,7 +138,7 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 			PrintScreen			(PRINT_LearnSmith, -1, -1, FONT_Screen, 2);
 			Npc_SetTalentSkill 	(self, NPC_TALENT_SMITH, 1);
 			Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-			B_LogEntry (TOPIC_TalentSmith,"Per forgiare un'arma, ho innanzitutto bisogno di un pezzo di acciaio grezzo. DovrÚ poi scaldarlo nel fuoco di una fucina fino a quando non sar‡ incandescente e poi plasmarlo su un'incudine. Le armi speciali spesso richiedono l'uso di certe sostanze che possano offrire caratteristiche particolari.");
+			B_LogEntry (TOPIC_TalentSmith,"Per forgiare un'arma, ho innanzitutto bisogno di un pezzo di acciaio grezzo. Dovr√≤ poi scaldarlo nel fuoco di una fucina fino a quando non sar√† incandescente e poi plasmarlo su un'incudine. Le armi speciali spesso richiedono l'uso di certe sostanze che possano offrire caratteristiche particolari.");
 			B_LogEntry (TOPIC_TalentSmith,"Se aggiungo 4 pepite metallifere e 5 sangue di drago, posso forgiare un'AMMAZZADRAGHI DI METALLO.");
 			B_LogEntry (TOPIC_TalentSmith,"Se aggiungo 5 pepite metallifere e 5 sangue di drago, posso forgiare un'AMMAZZADRAGHI DI METALLO.");
 			PlayerGetsFinalDJGArmor = TRUE;
@@ -147,11 +147,11 @@ FUNC VOID Use_FINALDRAGONEQUIPMENT_S1()		//Buchst‰nder in der geheimen Bibliothe
 						Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1);
 						Doc_PrintLine	( nDocID,  1, "");
 						Doc_PrintLines	( nDocID,  1, "Da: Le armi del signore dei draghi."); 
-						Doc_PrintLines	( nDocID,  1, "Per rendere un'armatura di scaglie di drago il pi˘ resistente possibile, le scaglie dovranno essere ricoperte con il metallo estratto dalla valle dell'isola di Karynis."					);
+						Doc_PrintLines	( nDocID,  1, "Per rendere un'armatura di scaglie di drago il pi√π resistente possibile, le scaglie dovranno essere ricoperte con il metallo estratto dalla valle dell'isola di Karynis."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Per rendere una lama degna di un signore dei draghi, lessa dovr‡ essere immersa nel sangue di drago. Persino 5 fiale di sangue potranno fornire all'acciaio ineguagliabile affilatezza e resistenza."					);
+						Doc_PrintLines	( nDocID,  1, "Per rendere una lama degna di un signore dei draghi, lessa dovr√† essere immersa nel sangue di drago. Persino 5 fiale di sangue potranno fornire all'acciaio ineguagliabile affilatezza e resistenza."					);
 						Doc_PrintLine	( nDocID,  1, "");
-						Doc_PrintLines	( nDocID,  1, "Nota: 'Karynis' Ë riferito all'isola nota come Khorinis.");
+						Doc_PrintLines	( nDocID,  1, "Nota: 'Karynis' √® riferito all'isola nota come Khorinis.");
 						Doc_Show		( nDocID );
 		};
 		

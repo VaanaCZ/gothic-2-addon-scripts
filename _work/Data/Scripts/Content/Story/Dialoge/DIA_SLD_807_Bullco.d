@@ -116,7 +116,7 @@ func void DIA_Bullco_PleaseLeave_Info ()
 {
 	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_00"); //Dobbiamo parlare, tu e io.
 	AI_Output (other, self, "DIA_Bullco_PleaseLeave_15_01"); //Che vuoi?
-	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //Penso che la cosa migliore sarebbe se non mostrassi più la tua faccia qui alla fattoria.
+	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_02"); //Penso che la cosa migliore sarebbe se non mostrassi piÃ¹ la tua faccia qui alla fattoria.
 	AI_Output (self, other, "DIA_Bullco_PleaseLeave_06_03"); //Fai in modo di essere sparito per domani. Ci siamo capiti?
 
 	Bullco_Leave_Day = B_GetDayPlus();	
@@ -161,7 +161,7 @@ func void DIA_Bullco_DailyCheck_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //Non posso crederci! Il ragazzo è ancora qui!
+		AI_Output (self, other, "DIA_Bullco_DailyCheck_06_03"); //Non posso crederci! Il ragazzo Ã¨ ancora qui!
 	};
 	
 	Bullco_HitCounter = Bullco_HitCounter + 1;
@@ -183,7 +183,7 @@ instance DIA_Bullco_WontLeave (C_INFO)
 	condition	= DIA_Bullco_WontLeave_Condition;
 	information	= DIA_Bullco_WontLeave_Info;
 	permanent	= FALSE;
-	description = "NON me ne andrò di qui!";
+	description = "NON me ne andrÃ² di qui!";
 };
 
 func int DIA_Bullco_WontLeave_Condition ()
@@ -196,7 +196,7 @@ func int DIA_Bullco_WontLeave_Condition ()
 
 func void DIA_Bullco_WontLeave_Info ()
 {
-	AI_Output (other, self, "DIA_Bullco_WontLeave_15_00"); //NON me ne andrò di qui!
+	AI_Output (other, self, "DIA_Bullco_WontLeave_15_00"); //NON me ne andrÃ² di qui!
 
 	if (self.aivar[AIV_DefeatedByPlayer] == FALSE)
 	{
@@ -206,7 +206,7 @@ func void DIA_Bullco_WontLeave_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(brontolando) Sì, sì, vai a dirlo a qualcuno a cui importi.
+		AI_Output (self, other, "DIA_Bullco_WontLeave_06_02"); //(brontolando) SÃ¬, sÃ¬, vai a dirlo a qualcuno a cui importi.
 		Bullco_scharf = FALSE;
 		AI_StopProcessInfos (self);
 	};
@@ -245,11 +245,11 @@ func void DIA_Bullco_PepesSchafe_Info ()
 	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_03"); //Che m'importa delle sue pecore?
 	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_04"); //A Lee importa.
 	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_05"); //Dove vuoi arrivare?
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Se mi farai innervosire, farò in modo che tu debba pagarla per le pecore.
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_06"); //Se mi farai innervosire, farÃ² in modo che tu debba pagarla per le pecore.
 	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_07"); //Quindi se sei interessato nella tua paga, lasciami in pace d'ora in poi!
 	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_08"); //(furioso) Tu, tu...
-	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(calmo) Sì?
-	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(tra sé) Ignobile ladruncolo...
+	AI_Output (other, self, "DIA_Bullco_PepesSchafe_15_09"); //(calmo) SÃ¬?
+	AI_Output (self, other, "DIA_Bullco_PepesSchafe_06_10"); //(tra sÃ©) Ignobile ladruncolo...
 	
 	Bullco_scharf = FALSE;
 	B_GivePlayerXP (XP_Ambient);

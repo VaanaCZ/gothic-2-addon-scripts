@@ -51,8 +51,8 @@ FUNC VOID DIA_NOV_8_Fegen_Info()
 	{	
 		if (Feger3_Permanent == FALSE)
 		{
-			AI_Output (self, other, "DIA_NOV_8_Fegen_08_01"); //Santo cielo. Sei appena giunto qui e lasci gi‡ che ti facciano spazzare per terra?
-			AI_Output (self, other, "DIA_NOV_8_Fegen_08_02"); //Consolati, a me Ë successa esattamente la stessa cosa la prima volta che sono arrivato. Ed Ë per questo che ti aiuterÚ. Sarebbe ridicolo se non ci dessimo una mano a vicenda.
+			AI_Output (self, other, "DIA_NOV_8_Fegen_08_01"); //Santo cielo. Sei appena giunto qui e lasci gi√† che ti facciano spazzare per terra?
+			AI_Output (self, other, "DIA_NOV_8_Fegen_08_02"); //Consolati, a me √® successa esattamente la stessa cosa la prima volta che sono arrivato. Ed √® per questo che ti aiuter√≤. Sarebbe ridicolo se non ci dessimo una mano a vicenda.
 			
 			NOV_Helfer = (NOV_Helfer +1);
 			Feger3_Permanent = TRUE;
@@ -64,7 +64,7 @@ FUNC VOID DIA_NOV_8_Fegen_Info()
 		}
 		else //if (Feger3_Permanent == TRUE)
 		{
-			AI_Output (self, other, "DIA_NOV_8_Fegen_08_03"); //Conosco la situazione in cui ti trovi. Ti ho gi‡ detto che ti aiuterÚ, ed Ë ciÚ che sto facendo.
+			AI_Output (self, other, "DIA_NOV_8_Fegen_08_03"); //Conosco la situazione in cui ti trovi. Ti ho gi√† detto che ti aiuter√≤, ed √® ci√≤ che sto facendo.
 		};
 	};
 	//-------------------------- alle anderen Novizen mit Stimme 8 -----------------------------------------------------
@@ -138,7 +138,7 @@ FUNC VOID DIA_NOV_8_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_NOV_8_JOIN_15_00"); //Che cosa devo fare per diventare un mago?
 	AI_Output (self, other, "DIA_NOV_8_JOIN_08_01"); //Diventerai un prescelto di Innos solo quando lo diranno gli Alti Maghi del Fuoco.
-	AI_Output (self, other, "DIA_NOV_8_JOIN_08_02"); //Come novizi ci Ë proibito studiare le rune magiche, e possiamo leggere i vecchi testi sacri solo su permesso dei maghi.
+	AI_Output (self, other, "DIA_NOV_8_JOIN_08_02"); //Come novizi ci √® proibito studiare le rune magiche, e possiamo leggere i vecchi testi sacri solo su permesso dei maghi.
 };
 
 // *************************************************************************
@@ -150,7 +150,7 @@ INSTANCE DIA_NOV_8_PEOPLE(C_INFO)
 	condition	= DIA_NOV_8_PEOPLE_Condition;
 	information	= DIA_NOV_8_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo di questo monastero?";
+	description = "Chi √® il capo di questo monastero?";
 };                       
 
 FUNC INT DIA_NOV_8_PEOPLE_Condition()
@@ -160,9 +160,9 @@ FUNC INT DIA_NOV_8_PEOPLE_Condition()
 
 FUNC VOID DIA_NOV_8_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_PEOPLE_15_00"); //Chi Ë il capo di questo monastero?
-	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_01"); //L'Alto Concilio. » composto dai tre maghi pi˘ potenti del nostro ordine. Essi si consultano quotidianamente nella chiesa.
-	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_02"); //Gli Eletti di Innos sono tutti maghi. Innos ha dato loro questo dono, in modo che essi siano in grado di fare la sua volont‡ in terra.
+	AI_Output (other, self, "DIA_NOV_8_PEOPLE_15_00"); //Chi √® il capo di questo monastero?
+	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_01"); //L'Alto Concilio. √à composto dai tre maghi pi√π potenti del nostro ordine. Essi si consultano quotidianamente nella chiesa.
+	AI_Output (self, other, "DIA_NOV_8_PEOPLE_08_02"); //Gli Eletti di Innos sono tutti maghi. Innos ha dato loro questo dono, in modo che essi siano in grado di fare la sua volont√† in terra.
 };
 
 // *************************************************************************
@@ -185,9 +185,9 @@ FUNC INT DIA_NOV_8_LOCATION_Condition()
 FUNC VOID DIA_NOV_8_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_NOV_8_LOCATION_15_00"); //Parlami di questo monastero.
-	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_01"); //» una struttura antica, costruita ben prima dell'era di Rhobar I.
-	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_02"); //Sotto al monastero ci sono le catacombe. Esse si estendono fin nelle profondit‡ della montagna.
-	//AI_Output (self, other, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die hˆchsten Geweihten Innos' Zutritt.
+	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_01"); //√à una struttura antica, costruita ben prima dell'era di Rhobar I.
+	AI_Output (self, other, "DIA_NOV_8_LOCATION_08_02"); //Sotto al monastero ci sono le catacombe. Esse si estendono fin nelle profondit√† della montagna.
+	//AI_Output (self, other, "DIA_NOV_8_LOCATION_08_03"); //Aber zur untersten Ebene haben nur die h√∂chsten Geweihten Innos' Zutritt.
 };
 
 // *************************************************************************
@@ -199,7 +199,7 @@ INSTANCE DIA_NOV_8_STANDARD(C_INFO)
 	condition	= DIA_NOV_8_STANDARD_Condition;
 	information	= DIA_NOV_8_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Ci sono novit‡?";
+	description = "Ci sono novit√†?";
 };
                        
 func INT DIA_NOV_8_STANDARD_Condition()
@@ -209,14 +209,14 @@ func INT DIA_NOV_8_STANDARD_Condition()
 
 FUNC VOID DIA_NOV_8_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_NOV_8_STANDARD_15_00"); //Ci sono novit‡?
+	AI_Output (other, self, "DIA_NOV_8_STANDARD_15_00"); //Ci sono novit√†?
 		
 	if (Kapitel == 1)
 	{
 		if (other.guild == GIL_KDF)
 		{
-			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_01"); //Puoi dirlo forte. Sono passati oltre cento anni dall'ultima volta che un novizio Ë stato ammesso cosÏ rapidamente nel Circolo del Fuoco.
-			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_02"); //Spero di avere anch'io quest'onore un giorno. LavorerÚ sodo per questo.
+			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_01"); //Puoi dirlo forte. Sono passati oltre cento anni dall'ultima volta che un novizio √® stato ammesso cos√¨ rapidamente nel Circolo del Fuoco.
+			AI_Output (self,other,"DIA_NOV_8_STANDARD_08_02"); //Spero di avere anch'io quest'onore un giorno. Lavorer√≤ sodo per questo.
 		}
 		else
 		{
@@ -231,12 +231,12 @@ FUNC VOID DIA_NOV_8_STANDARD_Info()
 		&& (MIS_NovizenChase != LOG_SUCCESS)	//Kap 3b - SC weiss, das Pedro das Auge Innos geklaut hat
 		{
 	 		AI_Output (self,other,"DIA_NOV_3_STANDARD_08_04"); //Non riesco ancora a crederci. Uno di noi ha tradito il monastero e ha rubato l'Occhio di Innos.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_05"); //Il nostro compito era costruire una comunit‡, ma eravamo troppo deboli. Questa Ë l'unica ragione per cui Beliar Ë riuscito ad attirare uno dei nostri dalla sua parte.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_05"); //Il nostro compito era costruire una comunit√†, ma eravamo troppo deboli. Questa √® l'unica ragione per cui Beliar √® riuscito ad attirare uno dei nostri dalla sua parte.
 		}
 		else if (MIS_NovizenChase == LOG_SUCCESS)	//Kap 3c - Das Auge Innos ist wieder da
 		{
 			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_06"); //Siamo riusciti a recuperare l'Occhio dal nemico. Sia lodato Innos.
-			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_07"); //Il tuo coraggio puÚ essere d'esempio per molte anime perse per aiutarle a sopravvivere in questi tempi bui.
+			AI_Output (self,other,"DIA_NOV_3_STANDARD_08_07"); //Il tuo coraggio pu√≤ essere d'esempio per molte anime perse per aiutarle a sopravvivere in questi tempi bui.
 		}
 		else //Kap 2 - 3a
 		{
@@ -246,7 +246,7 @@ FUNC VOID DIA_NOV_8_STANDARD_Info()
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_NOV_8_STANDARD_08_09"); //L'Alto Concilio Ë molto preoccupato per la situazione in cui si trovano i nostri paladini. Ormai Ë un po' che non si hanno pi˘ notizie dalla Valle delle Miniere.
+				AI_Output (self,other,"DIA_NOV_8_STANDARD_08_09"); //L'Alto Concilio √® molto preoccupato per la situazione in cui si trovano i nostri paladini. Ormai √® un po' che non si hanno pi√π notizie dalla Valle delle Miniere.
 			};
 		};
 	};
@@ -258,8 +258,8 @@ FUNC VOID DIA_NOV_8_STANDARD_Info()
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_11"); //SÏ. Abbiamo sconfitto i draghi! Innos ci ha dimostrato che non bisogna mai perdere la speranza.
-		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_12"); //Ci sono gi‡ molte ombre e noi dobbiamo accendere molti fuochi per scacciarle.
+		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_11"); //S√¨. Abbiamo sconfitto i draghi! Innos ci ha dimostrato che non bisogna mai perdere la speranza.
+		AI_Output (self,other,"DIA_NOV_8_STANDARD_08_12"); //Ci sono gi√† molte ombre e noi dobbiamo accendere molti fuochi per scacciarle.
 	};
 };
 

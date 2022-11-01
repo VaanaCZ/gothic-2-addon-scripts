@@ -31,7 +31,7 @@ INSTANCE DIA_Addon_Saturas_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Saturas_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Saturas_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Saturas_ADW_PICKPOCKET_Condition()
@@ -93,11 +93,11 @@ func int DIA_Addon_Saturas_ADWStart_Condition ()
 };
 func void DIA_Addon_Saturas_ADWStart_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_00"); //Sia ringraziato Adanos. Sei qui, finalmente. Pensavamo che non ti saresti pi˘ fatto vedere.
-	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_01"); //(confuso) Cosa? Come mai voi siete gi‡ QUI?
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_02"); //Sei passato attraverso il portale e ti abbiamo seguito. Non ci Ë voluto molto per arrivare qui.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_00"); //Sia ringraziato Adanos. Sei qui, finalmente. Pensavamo che non ti saresti pi√π fatto vedere.
+	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_01"); //(confuso) Cosa? Come mai voi siete gi√† QUI?
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_02"); //Sei passato attraverso il portale e ti abbiamo seguito. Non ci √® voluto molto per arrivare qui.
 	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_03"); //Ma tu non c'eri. Siamo qui da parecchi giorni.
-	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_04"); //(sorpreso) PARECCHI GIORNI? Come Ë possibile?
+	AI_Output	(other, self, "DIA_Addon_Saturas_ADWStart_15_04"); //(sorpreso) PARECCHI GIORNI? Come √® possibile?
 	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_05"); //Non riuscivamo a trovarti da nessuna parte, quindi Nefarius ha cercato di capire che cosa potesse essere andato storto. Fino ad ora non era approdato a nulla.
 	AI_Output	(self, other, "DIA_Addon_Saturas_ADWStart_14_06"); //Bene. Ora sei qui e puoi cominciare a lavorare.
 
@@ -105,15 +105,15 @@ func void DIA_Addon_Saturas_ADWStart_Info ()
 	Wld_InsertNpc (Giant_Rat ,"ADW_PORTALTEMPEL_11");
 
 	Info_ClearChoices	(DIA_Addon_Saturas_ADWStart);
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Che cosa Ë successo, nel frattempo?", DIA_Addon_Saturas_ADWStart_was );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Che cosa √® successo, nel frattempo?", DIA_Addon_Saturas_ADWStart_was );
 };
 func void DIA_Addon_Saturas_ADWStart_was ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_was_15_00"); //Cosa Ë successo nel frattempo?
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_was_15_00"); //Cosa √® successo nel frattempo?
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_01"); //Abbiamo capito molte cose nuove.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_02"); //I terremoti qui sembrano proprio essere PIŸ FORTI. Ora non siamo molto lontani dal loro epicentro.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_03"); //I costruttori di queste vecchie strutture eressero qui una citt‡, questo possiamo confermarlo.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_04"); //Tuttavia, per qualche motivo la loro cultura si esaurÏ.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_02"); //I terremoti qui sembrano proprio essere PI√ô FORTI. Ora non siamo molto lontani dal loro epicentro.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_03"); //I costruttori di queste vecchie strutture eressero qui una citt√†, questo possiamo confermarlo.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_04"); //Tuttavia, per qualche motivo la loro cultura si esaur√¨.
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_was_14_05"); //Per ora possiamo solo fare ipotesi.
 
 	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Hai trovato tracce delle persone scomparse?", DIA_Addon_Saturas_ADWStart_missingPeople );
@@ -128,22 +128,22 @@ func void DIA_Addon_Saturas_ADWStart_Raven ()
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_04"); //Le porte del tempio sono sigillate dalla magia, che provoca il risveglio delle sentinelle di pietra.
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_Raven_14_05"); //Il tempio si difende. Dobbiamo fermare Raven prima che possa penetrare nel sancta sanctorum.
 	
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Qual Ë la prossima mossa?", DIA_Addon_Saturas_ADWStart_wastun );
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Raven Ë solo un ex barone del metallo, non un mago.", DIA_Addon_Saturas_ADWStart_RavenOnlyBaron );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Qual √® la prossima mossa?", DIA_Addon_Saturas_ADWStart_wastun );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Raven √® solo un ex barone del metallo, non un mago.", DIA_Addon_Saturas_ADWStart_RavenOnlyBaron );
 	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Che cosa vuole Raven, nel tempio?", DIA_Addon_Saturas_ADWStart_RavenAim );
 };
 func void DIA_Addon_Saturas_ADWStart_RavenAim ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenAim_15_00"); //Che cosa vuole Raven, nel tempio?
-	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_01"); //Wir wissen es nicht. Es muss etwas sehr Wertvolles oder M‰chtiges in dem Tempel sein.
-	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_02"); //Aber wir kˆnnen davon ausgehen, dass er nichts Gutes im Schilde f¸hrt.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_01"); //Wir wissen es nicht. Es muss etwas sehr Wertvolles oder M√§chtiges in dem Tempel sein.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenAim_14_02"); //Aber wir k√∂nnen davon ausgehen, dass er nichts Gutes im Schilde f√ºhrt.
 	AI_Output (self, other, "DIA_Addon_Bodo_14_01"); //Sappiamo solo che ha a che fare con un potente artefatto collegato in qualche modo ad Adanos e Beliar.
 	AI_Output (self, other, "DIA_Addon_Bodo_14_02"); //(cupo) Possiamo ragionevolmente supporre che non sia mosso da buone intenzioni
 };
 func void DIA_Addon_Saturas_ADWStart_RavenOnlyBaron ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_15_00"); //Raven Ë solo un ex barone del metallo, non un mago. Come puÚ essere all'altezza di un'invocazione di quel genere?
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_01"); //Forse ha pagato un mago rinnegato perchÈ lo faccia al posto suo.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_15_00"); //Raven √® solo un ex barone del metallo, non un mago. Come pu√≤ essere all'altezza di un'invocazione di quel genere?
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_01"); //Forse ha pagato un mago rinnegato perch√© lo faccia al posto suo.
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_RavenOnlyBaron_14_02"); //Comunque sia, DOBBIAMO evitare il peggio.
 };
 func void DIA_Addon_Saturas_ADWStart_missingPeople ()
@@ -159,7 +159,7 @@ func void DIA_Addon_Saturas_ADWStart_wastun ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun_15_00"); //Poi cosa succede?
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_01"); //NOI rimarremo qui e continueremo a studiare l'antica cultura.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_02"); //Le antiche iscrizioni sugli edifici nascondono moltissimi segreti che dobbiamo svelare, se vogliamo capire che cosa Ë successo tanto tempo fa.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_02"); //Le antiche iscrizioni sugli edifici nascondono moltissimi segreti che dobbiamo svelare, se vogliamo capire che cosa √® successo tanto tempo fa.
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun_14_03"); //Nel frattempo, TU devi fare qualche cosetta per noi
 	
 	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Cosa dovrei fare?", DIA_Addon_Saturas_ADWStart_wastun2 );
@@ -169,13 +169,13 @@ func void DIA_Addon_Saturas_ADWStart_wastun2 ()
 	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_00"); //Cosa dovrei fare?
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_01"); //Devi trovare Raven e impedirgli di profanare il tempio di Adanos.
 	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_02"); //In altre parole dovrei UCCIDERLO.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_03"); //Se Ë l'unico modo per fermarlo, allora, nel nome di AdanosÖ SÃ!
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_03"); //Se √® l'unico modo per fermarlo, allora, nel nome di Adanos‚Ä¶ S√å!
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_04"); //Nel frattempo, raccogli tutti gli antichi cimeli e le iscrizioni dei costruttori che trovi e portaceli.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_05"); //Dobbiamo sapere di pi˘ su questa gente e sulla loro scomparsa.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_05"); //Dobbiamo sapere di pi√π su questa gente e sulla loro scomparsa.
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_06"); //Solo quando avremo capito cosa ha in mente di fare Raven potremo fermarlo.
 	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_07"); //Inoltre, devi trovare il modo di liberare gli schiavi.
-	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_08"); //(cinico) » tutto? Posso farlo con una mano sola.
-	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_09"); //(irritato) So che ti chiedo molto. In cambio avrai la possibilit‡ di riconquistare la mia fiducia.
+	AI_Output			(other, self, "DIA_Addon_Saturas_ADWStart_wastun2_15_08"); //(cinico) √à tutto? Posso farlo con una mano sola.
+	AI_Output			(self, other, "DIA_Addon_Saturas_ADWStart_wastun2_14_09"); //(irritato) So che ti chiedo molto. In cambio avrai la possibilit√† di riconquistare la mia fiducia.
 	
 	MIS_ADDON_Saturas_GoToRaven = LOG_RUNNING;
 	
@@ -189,19 +189,19 @@ func void DIA_Addon_Saturas_ADWStart_wastun2 ()
 
 	Log_CreateTopic (TOPIC_Addon_Relicts, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Relicts, LOG_RUNNING);
-	Log_AddEntry (TOPIC_Addon_Relicts,"Saturas vuole che gli porti tutto quello che puÚ dargli pi˘ informazioni sull'antico popolo dei costruttori."); 
+	Log_AddEntry (TOPIC_Addon_Relicts,"Saturas vuole che gli porti tutto quello che pu√≤ dargli pi√π informazioni sull'antico popolo dei costruttori."); 
 	
-	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Allora Ë meglio che vada.", DIA_Addon_Saturas_ADWStart_back );
+	Info_AddChoice	(DIA_Addon_Saturas_ADWStart, "Allora √® meglio che vada.", DIA_Addon_Saturas_ADWStart_back );
 };
 func void DIA_Addon_Saturas_ADWStart_back ()
 {
-	AI_Output (other, self, "DIA_Addon_Saturas_ADWStart_back_15_00"); //Allora Ë meglio che vada.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_01"); //Un'ultima cosa... Raven ha raccolto attorno a sÈ un gran numero di briganti.
+	AI_Output (other, self, "DIA_Addon_Saturas_ADWStart_back_15_00"); //Allora √® meglio che vada.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_01"); //Un'ultima cosa... Raven ha raccolto attorno a s√© un gran numero di briganti.
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_02"); //In tua assenza, abbiamo portato qui un altro componente dell''Anello dell'Acqua'.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_03"); //L'abbiamo inviato nella palude. Non Ë tornato.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_03"); //L'abbiamo inviato nella palude. Non √® tornato.
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_04"); //Sospettiamo che i briganti attacchino chiunque abbia un aspetto diverso dal loro.
 	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_05"); //Quindi procurati un'armatura da brigante.
-	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_06"); //» l'unico modo per avvicinarsi a loro senza essere immediatamente attaccati.
+	AI_Output (self, other, "DIA_Addon_Saturas_ADWStart_back_14_06"); //√à l'unico modo per avvicinarsi a loro senza essere immediatamente attaccati.
 
 	Log_CreateTopic (TOPIC_Addon_BDTRuestung, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BDTRuestung, LOG_RUNNING);
@@ -221,7 +221,7 @@ instance DIA_Addon_Saturas_PoorRanger		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_PoorRanger_Condition;
 	information	 = 	DIA_Addon_Saturas_PoorRanger_Info;
 
-	description	 = 	"Chi Ë il poveraccio che hai inviato nella palude?";
+	description	 = 	"Chi √® il poveraccio che hai inviato nella palude?";
 };
 
 func int DIA_Addon_Saturas_PoorRanger_Condition ()
@@ -231,7 +231,7 @@ func int DIA_Addon_Saturas_PoorRanger_Condition ()
 
 func void DIA_Addon_Saturas_PoorRanger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_PoorRanger_15_00"); //Chi Ë il poveraccio che hai inviato nella palude?
+	AI_Output	(other, self, "DIA_Addon_Saturas_PoorRanger_15_00"); //Chi √® il poveraccio che hai inviato nella palude?
 	AI_Output	(self, other, "DIA_Addon_Saturas_PoorRanger_14_01"); //Si chiamava Lance.
 	AI_Output	(self, other, "DIA_Addon_Saturas_PoorRanger_14_02"); //Temo che non sia andato tanto lontano.
 	
@@ -345,7 +345,7 @@ instance DIA_Addon_Saturas_Tokens		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_Tokens_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"A proposito dei cimeliÖ";
+	description	 = 	"A proposito dei cimeli‚Ä¶";
 };
 
 func int DIA_Addon_Saturas_Tokens_Condition ()
@@ -375,7 +375,7 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 	|| (Npc_HasItems (other,ItWr_StonePlateCommon_Addon)))
 	{
 		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_01"); //Penso di avere qui qualcosa per te.
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_02"); //Conosciamo gi‡ questo tipo di tavolette di pietra. Non ci faranno fare grandi progressi.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_02"); //Conosciamo gi√† questo tipo di tavolette di pietra. Non ci faranno fare grandi progressi.
 		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_03"); //Ci dev'essere dell'altro.
 		DIA_Addon_Saturas_Tokens_OneTime = TRUE;
 	};
@@ -402,7 +402,7 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 				BroughtToken = (BroughtToken + 1);
 				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_06"); //I briganti usano queste tavolette di pietra come valuta corrente.
 				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_07"); //Le tavolette hanno il segno di Quahodron, un grande guerriero.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_08"); //» il comandante il cui figlio Rhademes ha provocato la caduta dell'intera citt‡.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_08"); //√à il comandante il cui figlio Rhademes ha provocato la caduta dell'intera citt√†.
 				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_09"); //(sprezzante) Tsk. Scommetto che i briganti non sanno nemmeno che cosa vendono.
 				Log_AddEntry (TOPIC_Addon_Relicts,"Una tavoletta di pietra rossa che i briganti usano come moneta corrente. Porta il nome del grande guerriero Quarhodron."); 
 			};		
@@ -423,7 +423,7 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 				Saturas_SCFound_ItMi_Addon_Stone_03 = TRUE;
 				BroughtToken = (BroughtToken + 1);
 				AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_13"); //Ho trovato queste tavolette in una struttura a sud-ovest.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_14"); //A giudicare dalla tavoletta, ha qualcosa a che fare con gli alloggi dei sacerdoti della citt‡.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_14"); //A giudicare dalla tavoletta, ha qualcosa a che fare con gli alloggi dei sacerdoti della citt√†.
 				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_15"); //Il nome del sommo sacerdote era KHARDIMON. Non sappiamo molto di lui.
 				Log_AddEntry (TOPIC_Addon_Relicts,"#NV"); 
 			};		 
@@ -446,7 +446,7 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_19"); //Era la biblioteca dell'antico popolo.
 				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_20"); //A quanto pare era una tavoletta degli studiosi.
 				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_80"); //Molti degli scritti che abbiamo trovato si possono far risalire al capo della 'Casta degli studiosi'.
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_81"); //» curioso che non abbia lasciato il suo nome in alcun luogo
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_81"); //√à curioso che non abbia lasciato il suo nome in alcun luogo
 				Log_AddEntry (TOPIC_Addon_Relicts,"#NV"); 
 		};		 
 			
@@ -463,7 +463,7 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 		{
 			if (Ghost_SCKnowsHow2GetInAdanosTempel == FALSE)
 			{
-				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_21"); //Molto bene. L'immagine di questa citt‡ si sta facendo sempre pi˘ chiara, ma non sappiamo ancora abbastanza.
+				AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_21"); //Molto bene. L'immagine di questa citt√† si sta facendo sempre pi√π chiara, ma non sappiamo ancora abbastanza.
 			};
 			
 			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_22"); //In tutto, ci devono essere cinque tavolette di pietra di questo tipo nascoste qui in giro.
@@ -488,15 +488,15 @@ func void DIA_Addon_Saturas_Tokens_Info ()
 		if (Ghost_SCKnowsHow2GetInAdanosTempel == FALSE)
 		{
 			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_26"); //Ci hai reso un grande servizio. Grazie.
-			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_27"); //Questo ci far‡ fare un importante passo avanti nei nostri studi.
+			AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_27"); //Questo ci far√† fare un importante passo avanti nei nostri studi.
 		};
 		MIS_Saturas_LookingForHousesOfRulers = LOG_SUCCESS;
 		Saturas_SCBroughtAllToken = TRUE;
 	}
 	else
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_28"); //VedrÚ se riesco a trovare qualcosa.
-		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_29"); //Bene. Ma sbrigati. Il tempo non ci Ë amico.
+		AI_Output	(other, self, "DIA_Addon_Saturas_Tokens_15_28"); //Vedr√≤ se riesco a trovare qualcosa.
+		AI_Output	(self, other, "DIA_Addon_Saturas_Tokens_14_29"); //Bene. Ma sbrigati. Il tempo non ci √® amico.
 	};
 };
 
@@ -528,30 +528,30 @@ func void DIA_Addon_Saturas_StonePlateHint_Info ()
 {
 	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_00"); //Hai fatto bene a venire. Abbiamo fatto nuove scoperte che dobbiamo illustrarti.
 	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_15_01"); //Allora sentiamo.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_02"); //La citt‡ affondata si chiamava Jharkendar ed era governata da cinque uomini.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_02"); //La citt√† affondata si chiamava Jharkendar ed era governata da cinque uomini.
 	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_03"); //Ciascuno di essi viveva in una residenza, nella quale conservava i propri averi.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_04"); //Di conseguenza, mentre cerchi cimeli dell'antica cultura Ë di vitale importanza che tu perlustri a fondo queste residenze.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_14_04"); //Di conseguenza, mentre cerchi cimeli dell'antica cultura √® di vitale importanza che tu perlustri a fondo queste residenze.
 	
 	MIS_Saturas_LookingForHousesOfRulers = LOG_RUNNING;
 	
 	Info_ClearChoices	(DIA_Addon_Saturas_StonePlateHint);
-	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "E se queste residenze non esistessero pi˘?", DIA_Addon_Saturas_StonePlateHint_unter );
+	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "E se queste residenze non esistessero pi√π?", DIA_Addon_Saturas_StonePlateHint_unter );
 	Info_AddChoice	(DIA_Addon_Saturas_StonePlateHint, "Dove dovrei cercare queste residenze?", DIA_Addon_Saturas_StonePlateHint_wo );
 };
 func void DIA_Addon_Saturas_StonePlateHint_wo ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_wo_15_00"); //Dove dovrei cercare queste residenze?
 	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_01"); //Riordian ha studiato la struttura degli edifici di Jharkendar.
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_02"); //Ti dir‡ dove cercare le residenze.
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_wo_14_02"); //Ti dir√† dove cercare le residenze.
 
 	Log_CreateTopic (TOPIC_Addon_HousesOfRulers, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_HousesOfRulers, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Saturas vuole che perlustri le dimore dei costruttori alla ricerca di qualcosa di utile. Riordian mi dir‡ dove posso trovare questi edifici."); 
+	B_LogEntry (TOPIC_Addon_HousesOfRulers,"Saturas vuole che perlustri le dimore dei costruttori alla ricerca di qualcosa di utile. Riordian mi dir√† dove posso trovare questi edifici."); 
 };
 func void DIA_Addon_Saturas_StonePlateHint_unter ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_unter_15_00"); //E se queste residenze non esistessero pi˘?
-	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_01"); //Se non riesci a trovare queste abitazioni, probabilmente sono affondate insieme alla citt‡.
+	AI_Output	(other, self, "DIA_Addon_Saturas_StonePlateHint_unter_15_00"); //E se queste residenze non esistessero pi√π?
+	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_01"); //Se non riesci a trovare queste abitazioni, probabilmente sono affondate insieme alla citt√†.
 	AI_Output	(self, other, "DIA_Addon_Saturas_StonePlateHint_unter_14_02"); //Se invece esistessero ancora, sarebbero di inestimabile valore per i nostri studi.
 };
 
@@ -565,7 +565,7 @@ instance DIA_Addon_Saturas_SCBroughtAllToken		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_SCBroughtAllToken_Condition;
 	information	 = 	DIA_Addon_Saturas_SCBroughtAllToken_Info;
 
-	description	 = 	"PerchÈ ti servono queste cinque tavolette di pietra?";
+	description	 = 	"Perch√© ti servono queste cinque tavolette di pietra?";
 };
 
 func int DIA_Addon_Saturas_SCBroughtAllToken_Condition ()
@@ -580,9 +580,9 @@ func int DIA_Addon_Saturas_SCBroughtAllToken_Condition ()
 
 func void DIA_Addon_Saturas_SCBroughtAllToken_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_SCBroughtAllToken_15_00"); //PerchÈ ti servono queste cinque tavolette di pietra?
+	AI_Output	(other, self, "DIA_Addon_Saturas_SCBroughtAllToken_15_00"); //Perch√© ti servono queste cinque tavolette di pietra?
 	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_01"); //I dati che siamo riusciti a raccogliere tra queste rovine non sono completi.
-	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_02"); //Ma gli scritti dei costruttori parlano di cinque governanti che esercitavano il potere su questa citt‡.
+	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_02"); //Ma gli scritti dei costruttori parlano di cinque governanti che esercitavano il potere su questa citt√†.
 	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_03"); //Ciascuno di essi aveva una di queste tavolette come simbolo del suo potere.
 	AI_Output	(self, other, "DIA_Addon_Saturas_SCBroughtAllToken_14_04"); //Penso che queste tavolette siano la chiave per ottenere le risposte.
 };
@@ -597,7 +597,7 @@ instance DIA_Addon_Saturas_Flut		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_Flut_Condition;
 	information	 = 	DIA_Addon_Saturas_Flut_Info;
 
-	description	 = 	"Nefarius mi ha parlato di una inondazioneÖ";
+	description	 = 	"Nefarius mi ha parlato di una inondazione‚Ä¶";
 };
 
 func int DIA_Addon_Saturas_Flut_Condition ()
@@ -612,8 +612,8 @@ func int DIA_Addon_Saturas_Flut_Condition ()
 func void DIA_Addon_Saturas_Flut_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_Flut_15_00"); //Nefarius mi ha parlato di un'inondazione
-	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_02"); //» scritto che Adanos in persona sia disceso dal cielo per punire i miscredenti e spedirli nel regno dei morti.
-	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_03"); //Animato dal sacro furore, fece ricadere il mare sui costruttori di questa citt‡ e li spazzÚ via.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_02"); //√à scritto che Adanos in persona sia disceso dal cielo per punire i miscredenti e spedirli nel regno dei morti.
+	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_03"); //Animato dal sacro furore, fece ricadere il mare sui costruttori di questa citt√† e li spazz√≤ via.
 	AI_Output	(self, other, "DIA_Addon_Saturas_Flut_14_04"); //La palude a est porta ancora i segni di questi eventi passati.
 
 	TOPIC_END_Flut = TRUE;
@@ -630,7 +630,7 @@ instance DIA_Addon_Saturas_AdanosZorn		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_AdanosZorn_Condition;
 	information	 = 	DIA_Addon_Saturas_AdanosZorn_Info;
 
-	description	 = 	"Che cosa puÚ aver fatto irritare tanto Adanos?";
+	description	 = 	"Che cosa pu√≤ aver fatto irritare tanto Adanos?";
 };
 func int DIA_Addon_Saturas_AdanosZorn_Condition ()
 {
@@ -642,13 +642,13 @@ func int DIA_Addon_Saturas_AdanosZorn_Condition ()
 };
 func void DIA_Addon_Saturas_AdanosZorn_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_AdanosZorn_15_00"); //Che cosa puÚ aver fatto irritare tanto Adanos?
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_01"); //Il tempio di questa citt‡ era una struttura grandiosa e gloriosa.
+	AI_Output	(other, self, "DIA_Addon_Saturas_AdanosZorn_15_00"); //Che cosa pu√≤ aver fatto irritare tanto Adanos?
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_01"); //Il tempio di questa citt√† era una struttura grandiosa e gloriosa.
 	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_02"); //Tutti lo rispettavano e pregavano il nostro dio Adanos.
 	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_03"); //Rhademes, figlio del comandante Quahodron, ha profanato il tempio.
 	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_04"); //Di conseguenza, uno dopo l'altro tutti caddero vittima del male.
 	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_05"); //Sospetto che Adanos non potesse perdonarlo e la sua vendetta ricadde su quella terra.
-	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_06"); //Riuscire a fermare Raven Ë ancora pi˘ importante. Sta per fare esattamente la stessa cosa...
+	AI_Output	(self, other, "DIA_Addon_Saturas_AdanosZorn_14_06"); //Riuscire a fermare Raven √® ancora pi√π importante. Sta per fare esattamente la stessa cosa...
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -662,7 +662,7 @@ instance DIA_Addon_Saturas_RavenInfos		(C_INFO)
 	information	 = 	DIA_Addon_Saturas_RavenInfos_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"A proposito di RavenÖ";
+	description	 = 	"A proposito di Raven‚Ä¶";
 };
 var int DIA_Addon_Saturas_RavenInfos_OneTime1;
 var int DIA_Addon_Saturas_RavenInfos_OneTime2;
@@ -692,7 +692,7 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	&& (DIA_Addon_Saturas_RavenInfos_OneTime1 == FALSE)
 	&& (RavenIsInTempel == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_01"); //Ero nel campo dei briganti a est. Raven Ë il loro capo.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_01"); //Ero nel campo dei briganti a est. Raven √® il loro capo.
 		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_02"); //Ma per arrivare a Raven, devo prima togliere di mezzo alcuni dei briganti.
 		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_03"); //Bene. Allora buona fortuna. Ma non dimenticare che non abbiamo molto tempo.
 		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_04"); //Raven non deve raggiungere il suo obiettivo in nessun modo.
@@ -705,7 +705,7 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	{
 		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_05"); //Ha una miniera d'oro e ha dei prigionieri che lo estraggono.
 		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_06"); //Tipico di Raven. Devi far uscire i prigionieri.
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_07"); //(sospira) SÏ, certo. Ci sto lavorando.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_07"); //(sospira) S√¨, certo. Ci sto lavorando.
 		DIA_Addon_Saturas_RavenInfos_OneTime2 = TRUE;
 		RavenNeuigkeit = (RavenNeuigkeit + 1);
 	};	
@@ -713,11 +713,11 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	if (SC_KnowsFortunoInfos == TRUE)
 	&& (DIA_Addon_Saturas_RavenInfos_OneTime3 == FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_08"); //C'Ë persino un tizio con i briganti che sostiene di conoscere i piani di Raven.
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_09"); //Il suo nome Ë Fortuno. Dice che Raven vuole entrare nel tempio per impossessarsi di un potente artefatto.
-		AI_Output	(self, other, "DIA_Addon_Bodo_14_03"); //E allora? Sapeva qualcosa di pi˘ su questo artefatto?
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_08"); //C'√® persino un tizio con i briganti che sostiene di conoscere i piani di Raven.
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_09"); //Il suo nome √® Fortuno. Dice che Raven vuole entrare nel tempio per impossessarsi di un potente artefatto.
+		AI_Output	(self, other, "DIA_Addon_Bodo_14_03"); //E allora? Sapeva qualcosa di pi√π su questo artefatto?
 		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_11"); //Ha potuto dirmi solo che Raven ha fatto scoperchiare la tomba di un sacerdote di Adanos.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_12"); //Questa tomba puÚ contenere la chiave del tempio. Dovresti dare un'occhiata da quelle parti.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_12"); //Questa tomba pu√≤ contenere la chiave del tempio. Dovresti dare un'occhiata da quelle parti.
 		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_13"); //Raven ha obbligato i prigionieri a scavare la tomba del sacerdote.
 		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_14"); //Non va bene. Devi sbrigarti a fermare Raven.
 		Addon_Saturas_Fortuno = TRUE;
@@ -731,8 +731,8 @@ func void DIA_Addon_Saturas_RavenInfos_Info ()
 	{
 		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_15"); //Sono riuscito a entrare negli appartamenti di Raven.
 		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_16"); //E allora? Che mi dici di Raven?
-		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_17"); //Sono arrivato troppo tardi. » scomparso nel tempio di Adanos proprio davanti ai miei occhi.
-		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_18"); //(agitato) Cosa?! » una CATASTROFE. PerchÈ non l'hai seguito?!
+		AI_Output	(other, self, "DIA_Addon_Saturas_RavenInfos_15_17"); //Sono arrivato troppo tardi. √à scomparso nel tempio di Adanos proprio davanti ai miei occhi.
+		AI_Output	(self, other, "DIA_Addon_Saturas_RavenInfos_14_18"); //(agitato) Cosa?! √à una CATASTROFE. Perch√© non l'hai seguito?!
 
 		DIA_Addon_Saturas_RavenInfos_OneTime4 = TRUE;
 		MIS_ADDON_Saturas_GoToRaven = LOG_SUCCESS;
@@ -779,7 +779,7 @@ func void DIA_Addon_Saturas_TuerZu_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_00"); //Non ho potuto seguire Raven. Ha bloccato l'entrata dall'interno.
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_02"); //(precipitoso) Devo pensare
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_03"); //La domanda Ë: come ha fatto Raven a entrare nel tempio
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_03"); //La domanda √®: come ha fatto Raven a entrare nel tempio
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_04"); //Che cosa ha fatto prima di attraversare il portale?
 	AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_05"); //Ha pronunciato un incantesimo al cancello.
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_06"); //E prima?
@@ -787,7 +787,7 @@ func void DIA_Addon_Saturas_TuerZu_Info ()
 
 	if (Addon_Saturas_Fortuno == TRUE)
 	{
-		AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_09"); //Te ne ho gi‡ parlato
+		AI_Output (other, self, "DIA_Addon_Saturas_TuerZu_15_09"); //Te ne ho gi√† parlato
 		AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_10"); //Esatto!
 	}
 	else
@@ -796,7 +796,7 @@ func void DIA_Addon_Saturas_TuerZu_Info ()
 	};
 
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_11"); //(pensando) Un rituale
-	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_12"); //(illuminazione) SÏ! Ci siamo!
+	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_12"); //(illuminazione) S√¨! Ci siamo!
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_13"); //Temo che Raven si sia appropriato del potere dei guardiani dei morti.
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_14"); //Ha saputo tutto del tempio da uno spirito!
 	AI_Output (self, other, "DIA_Addon_Saturas_TuerZu_14_15"); //Devi andare da Myxir a dirglielo!
@@ -833,14 +833,14 @@ func void DIA_Addon_Saturas_GhostQuestions_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_00"); //Ho parlato con Quarhodron.
 	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_01"); //E allora? Cosa ti ha detto?
-	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_02"); //Mi aiuter‡ solo se risponderÚ ad alcune domande.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_03"); //Qual Ë il problema?
+	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_02"); //Mi aiuter√† solo se risponder√≤ ad alcune domande.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_03"); //Qual √® il problema?
 	AI_Output	(other, self, "DIA_Addon_Saturas_GhostQuestions_15_04"); //Non sono sicuro delle risposte.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_05"); //MhmmÖ sappiamo che gli studiosi di questa citt‡ hanno costruito una biblioteca nel nord.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_05"); //Mhmm‚Ä¶ sappiamo che gli studiosi di questa citt√† hanno costruito una biblioteca nel nord.
 	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_06"); //Si sono impegnati molto per archiviare gli eventi del passato.
-	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_07"); //Forse troverai l‡ le risposte alle domande di Quarhodron.
+	AI_Output	(self, other, "DIA_Addon_Saturas_GhostQuestions_14_07"); //Forse troverai l√† le risposte alle domande di Quarhodron.
 
-	B_LogEntry (TOPIC_Addon_Quarhodron,"Saturas pensa che io possa trovare le risposte alle domande di Quarhodron nella biblioteca degli studiosi. La biblioteca Ë lontana, a nord."); 
+	B_LogEntry (TOPIC_Addon_Quarhodron,"Saturas pensa che io possa trovare le risposte alle domande di Quarhodron nella biblioteca degli studiosi. La biblioteca √® lontana, a nord."); 
 
 };
 
@@ -854,7 +854,7 @@ instance DIA_Addon_Saturas_TalkedToGhost		(C_INFO)
 	condition	 = 	DIA_Addon_Saturas_TalkedToGhost_Condition;
 	information	 = 	DIA_Addon_Saturas_TalkedToGhost_Info;
 
-	description	 = 	"Il problema con la porta del tempio Ë risolto.";
+	description	 = 	"Il problema con la porta del tempio √® risolto.";
 };
 
 func int DIA_Addon_Saturas_TalkedToGhost_Condition ()
@@ -868,48 +868,48 @@ func int DIA_Addon_Saturas_TalkedToGhost_Condition ()
 
 func void DIA_Addon_Saturas_TalkedToGhost_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_00"); //Il problema con la porta del tempio Ë risolto.
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_00"); //Il problema con la porta del tempio √® risolto.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_01"); //Lo spirito ha parlato?
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_02"); //SÏ.
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_02"); //S√¨.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_03"); //Allora sai come entrare nel tempio.
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_04"); //Esatto. E mi ha anche detto che cosa Ë contenuto nel tempio.
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_04"); //Esatto. E mi ha anche detto che cosa √® contenuto nel tempio.
 	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_15_05"); //Ha parlato di una potente spada e delle stanze di Adanos.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_06"); //(disperandosi) Per Adanos. Che sciocchi siamo stati. Come abbiamo potuto essere tanto ingenui?
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_07"); //(scosso) Gli indizi negli archivi
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_08"); //(eccitato) Questa spada puÚ essere solo l''Artiglio di Beliar'.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_08"); //(eccitato) Questa spada pu√≤ essere solo l''Artiglio di Beliar'.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_14_09"); //Dobbiamo entrare in quelle stanze il prima possibile e impossessarci dell'arma.
 	
 	Info_ClearChoices	(DIA_Addon_Saturas_TalkedToGhost);
-	Info_AddChoice		(DIA_Addon_Saturas_TalkedToGhost, "Che cos'Ë l''Artiglio di Beliar'?", DIA_Addon_Saturas_TalkedToGhost_wasistdas );
+	Info_AddChoice		(DIA_Addon_Saturas_TalkedToGhost, "Che cos'√® l''Artiglio di Beliar'?", DIA_Addon_Saturas_TalkedToGhost_wasistdas );
 	Info_AddChoice		(DIA_Addon_Saturas_TalkedToGhost, "Dove sono le camere di Adanos?", DIA_Addon_Saturas_TalkedToGhost_kammern );
 };
 func void DIA_Addon_Saturas_TalkedToGhost_wasistdas ()
 {
-	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_15_00"); //Che cos'Ë l''Artiglio di Beliar'?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_01"); //» l'incarnazione del Male. L'ha creata Beliar IN PERSONA.
+	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_15_00"); //Che cos'√® l''Artiglio di Beliar'?
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_01"); //√à l'incarnazione del Male. L'ha creata Beliar IN PERSONA.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_02"); //Chiunque la porti possiede un terribile strumento di distruzione.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_03"); //E pi˘ Ë potente colui che la porta, maggiore Ë il potere dell''Artiglio'.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_04"); //Solo una persona forte di spirito e di fede incrollabile puÚ reggere questo incantesimo.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_05"); //Ora mi Ë chiaro il motivo per cui i costruttori hanno isolato questa valle.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_06"); //Portarono quest'arma del Male nella loro citt‡ e caddero vittima del suo potere.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_07"); //Questi sciocchi arroganti si sono distrutti l'un l'altro mossi dall'avidit‡.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_08"); //La crudelt‡ non ebbe fine finchÈ la furia di Adanos non spazzÚ la terra sommergendo ogni cosa.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_03"); //E pi√π √® potente colui che la porta, maggiore √® il potere dell''Artiglio'.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_04"); //Solo una persona forte di spirito e di fede incrollabile pu√≤ reggere questo incantesimo.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_05"); //Ora mi √® chiaro il motivo per cui i costruttori hanno isolato questa valle.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_06"); //Portarono quest'arma del Male nella loro citt√† e caddero vittima del suo potere.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_07"); //Questi sciocchi arroganti si sono distrutti l'un l'altro mossi dall'avidit√†.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_08"); //La crudelt√† non ebbe fine finch√© la furia di Adanos non spazz√≤ la terra sommergendo ogni cosa.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_09"); //Certo. I creatori del portale hanno fatto bene a nascondere queste cose al resto del mondo.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_10"); //Una tragica fine per una cultura meravigliosa.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_11"); //Ora ti rendi conto di quanto sia urgente la nostra missione?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_12"); //Raven Ë un forte combattente ed Ë accecato dalla brama di potere.
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_13"); //Nelle sue mani, l'Artiglio sar‡ uno strumento di distruzione.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_12"); //Raven √® un forte combattente ed √® accecato dalla brama di potere.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_13"); //Nelle sue mani, l'Artiglio sar√† uno strumento di distruzione.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_wasistdas_14_14"); //Non deve arrivare all'arma o saremo tutti perduti.
 
 	Log_CreateTopic (TOPIC_Addon_Klaue, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Klaue, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Klaue,"C'Ë un'arma potente dentro il tempio di Adanos. Si chiama 'Artiglio di Beliar'. Non si puÚ permettere a Raven di mettere le mani su quest'arma."); 
+	B_LogEntry (TOPIC_Addon_Klaue,"C'√® un'arma potente dentro il tempio di Adanos. Si chiama 'Artiglio di Beliar'. Non si pu√≤ permettere a Raven di mettere le mani su quest'arma."); 
 
 };
 func void DIA_Addon_Saturas_TalkedToGhost_kammern ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_TalkedToGhost_kammern_15_00"); //Che cosa sono le stanze di Adanos?
-	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_01"); //Ora sappiamo che l'entrata non Ë l'unico ostacolo che ci impedisce di entrare nel cuore del tempio.
+	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_01"); //Ora sappiamo che l'entrata non √® l'unico ostacolo che ci impedisce di entrare nel cuore del tempio.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_02"); //Dentro al tempio ci sono tre stanze che dovrebbero respingere tutti gli intrusi.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_03"); //La chiave sono i cimeli colorati dei costruttori.
 	AI_Output	(self, other, "DIA_Addon_Saturas_TalkedToGhost_kammern_14_04"); //Solo se raccogliamo tutti quei cimeli e risolviamo gli enigmi potremo entrare nel sancta sanctorum del tempio.
@@ -953,7 +953,7 @@ func void DIA_Addon_Saturas_RelictsBack_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_RelictsBack_15_00"); //Che cosa dovrei fare, esattamente, con i cimeli nel tempio?
 	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_03"); //Ne sappiamo troppo poco. Tuttavia, si spera che ne comprenderai il significato una volta entrato nel tempio.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_05"); //Mi dispiace di non poterti dire di pi˘. Ora Ë tutto nelle tue mani.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_05"); //Mi dispiace di non poterti dire di pi√π. Ora √® tutto nelle tue mani.
 	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_06"); //Prendi i cimeli e dirigiti immediatamente al tempio.
 
 	CreateInvItems (hero, ItMi_Addon_Stone_01, 1);
@@ -966,7 +966,7 @@ func void DIA_Addon_Saturas_RelictsBack_Info ()
 	B_LogEntry (TOPIC_Addon_Kammern,"Saturas mi ha mandato al tempio di Adanos con i cinque cimeli dei costruttori, per superare le camere e fermare Raven."); 
 
 	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_07"); //Che Adanos sia misericordioso e ci protegga tutti.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_08"); //Forse non Ë ancora troppo tardi.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RelictsBack_14_08"); //Forse non √® ancora troppo tardi.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -991,9 +991,9 @@ func int DIA_Addon_Saturas_RavensDead_Condition ()
 func void DIA_Addon_Saturas_RavensDead_Info ()
 {
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_00"); //I terremoti non sono ancora finiti e, a quanto vedo, sei ancora tra i vivi.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_01"); //Questo significa che la tua missione Ë riuscita?
-	AI_Output	(other, self, "DIA_Addon_Saturas_RavensDead_15_02"); //SÏ. Raven Ë morto.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_03"); //Allora Ë finita. Grazie Adanos.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_01"); //Questo significa che la tua missione √® riuscita?
+	AI_Output	(other, self, "DIA_Addon_Saturas_RavensDead_15_02"); //S√¨. Raven √® morto.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_03"); //Allora √® finita. Grazie Adanos.
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_04"); //Hai fatto bene, figlio mio. Abbiamo un grande debito nei tuoi confronti.
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_05"); //Hai sottratto al Male un'arma potente e hai riportato l'equilibrio in questa parte del mondo.
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_06"); //Quando i terremoti si sono fermati, abbiamo discusso di quello che sarebbe dovuto succedere e abbiamo raggiunto una conclusione.
@@ -1001,12 +1001,12 @@ func void DIA_Addon_Saturas_RavensDead_Info ()
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_08"); //Nelle tue mani, potrebbe dimostrarsi un potente alleato per noi.
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_09"); //Usalo con saggezza, figlio mio. Che Adanos ti aiuti.
 	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_11"); //Rimarremo qui e faremo in modo che il tempio sia riportato al suo antico splendore.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_12"); //Solo Myxir Ë gi‡ in cammino per Khorinis per prestare aiuto a Vatras.
-	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_13"); //Vatras Ë rimasto troppo a lungo solo in citt‡.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_12"); //Solo Myxir √® gi√† in cammino per Khorinis per prestare aiuto a Vatras.
+	AI_Output	(self, other, "DIA_Addon_Saturas_RavensDead_14_13"); //Vatras √® rimasto troppo a lungo solo in citt√†.
 
 	Log_CreateTopic (TOPIC_Addon_VatrasAbloesung, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_VatrasAbloesung, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Myxir Ë stato mandato in aiuto di Vatras nel porto."); 
+	B_LogEntry (TOPIC_Addon_VatrasAbloesung,"Myxir √® stato mandato in aiuto di Vatras nel porto."); 
 
 	B_GivePlayerXP (XP_Addon_Saturas_RavensDead);
 };
@@ -1072,15 +1072,15 @@ func void DIA_Addon_Saturas_BeliarsWeapon_Info ()
 		AI_Output	(other, self, "DIA_Addon_Saturas_BeliarsWeapon_15_01"); //Ma non posso portarlo.
 	};
 	
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_02"); //L''Artiglio di Beliar' Ë un'arma molto SPECIALE.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_03"); //Ha una volont‡ e una coscienza proprie.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_02"); //L''Artiglio di Beliar' √® un'arma molto SPECIALE.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_03"); //Ha una volont√† e una coscienza proprie.
 	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_04"); //Tu, che possiedi quest'arma potente, sei il suo signore e padrone.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_05"); //» parte di te e si adatter‡ alle tue capacit‡.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_06"); //Ma non lo far‡ di sua spontanea volont‡.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_07"); //Solo Beliar IN PERSONA puÚ obbligarla a obbedirti.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_05"); //√à parte di te e si adatter√† alle tue capacit√†.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_06"); //Ma non lo far√† di sua spontanea volont√†.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarsWeapon_14_07"); //Solo Beliar IN PERSONA pu√≤ obbligarla a obbedirti.
 	
 	Info_ClearChoices	(DIA_Addon_Saturas_BeliarsWeapon);
-	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "E perchÈ Beliar dovrebbe aiutarmi?", DIA_Addon_Saturas_BeliarsWeapon_besser );
+	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "E perch√© Beliar dovrebbe aiutarmi?", DIA_Addon_Saturas_BeliarsWeapon_besser );
 	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Cosa posso fare con l'arma?", DIA_Addon_Saturas_BeliarsWeapon_wastun );
 };
 func void DIA_Addon_Saturas_BeliarsWeapon_wastun ()
@@ -1088,7 +1088,7 @@ func void DIA_Addon_Saturas_BeliarsWeapon_wastun ()
 	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_wastun_15_00"); //Cosa posso fare con l'arma?
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_01"); //Questo spetta a te: hai conquistato l'arma e ora sei il suo padrone.
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_02"); //Posso solo darti qualche raccomandazione su come usarla.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_03"); //O la dai a ME cosÏ che possa assicurarmi che non faccia pi˘ alcun male
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_03"); //O la dai a ME cos√¨ che possa assicurarmi che non faccia pi√π alcun male
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_wastun_14_04"); //.. oppure metti a frutto il suo potere brandendola in combattimento.
 	Info_AddChoice	(DIA_Addon_Saturas_BeliarsWeapon, "Non potresti tenere l'arma al sicuro?", DIA_Addon_Saturas_BeliarsWeapon_geben );
 };
@@ -1096,9 +1096,9 @@ func void DIA_Addon_Saturas_BeliarsWeapon_wastun ()
 func void DIA_Addon_Saturas_BeliarsWeapon_geben ()
 {
 	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_geben_15_00"); //Non potresti tenere l'arma al sicuro?
-	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_01"); //Du bist der Bezwinger des Bˆsen. Deine Entscheidungen bestimmen das Geschick dieser Welt.
-	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_02"); //Wenn du dich dazu entschlieﬂt, die Klaue aus der Hand zu geben, ist dein Schicksal nicht mehr an sie gebunden.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_03"); //Se la dai a me la renderÚ innocua, cosÏ che non se ne possa pi˘ abusare.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_01"); //Du bist der Bezwinger des B√∂sen. Deine Entscheidungen bestimmen das Geschick dieser Welt.
+	//AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_02"); //Wenn du dich dazu entschlie√üt, die Klaue aus der Hand zu geben, ist dein Schicksal nicht mehr an sie gebunden.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_03"); //Se la dai a me la render√≤ innocua, cos√¨ che non se ne possa pi√π abusare.
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_geben_14_04"); //Quindi pensa bene a quello che intendi fare.
 
 	Log_CreateTopic (TOPIC_Addon_Klaue, LOG_MISSION);
@@ -1108,9 +1108,9 @@ func void DIA_Addon_Saturas_BeliarsWeapon_geben ()
 
 func void DIA_Addon_Saturas_BeliarsWeapon_besser ()
 {
-	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_besser_15_00"); //E perchÈ Beliar dovrebbe aiutarmi?
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_01"); //Solo una preghiera a Beliar puÚ ottenere il risultato.
-	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_02"); //Ma fai attenzione. Beliar Ë maligno.
+	AI_Output			(other, self, "DIA_Addon_Saturas_BeliarsWeapon_besser_15_00"); //E perch√© Beliar dovrebbe aiutarmi?
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_01"); //Solo una preghiera a Beliar pu√≤ ottenere il risultato.
+	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_02"); //Ma fai attenzione. Beliar √® maligno.
 	AI_Output			(self, other, "DIA_Addon_Saturas_BeliarsWeapon_besser_14_03"); //Se scateni la sua ira, ne subirai le conseguenze.
 	
 	Log_CreateTopic (TOPIC_Addon_Klaue, LOG_MISSION);
@@ -1187,8 +1187,8 @@ func void DIA_Addon_Saturas_BeliarWeapGeben_Info ()
 	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_01"); //Come desideri, figlio mio. Dammelo.
 	B_ClearBeliarsWeapon ();
 	AI_PrintScreen (PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);	// "1 Gegenstand gegeben"	
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_02"); //AffinchÈ non possa pi˘ fare alcun male, lo lascerÚ affondare negli abissi del mare.
-	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_03"); //La saggezza di Adanos veglier‡ su di esso.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_02"); //Affinch√© non possa pi√π fare alcun male, lo lascer√≤ affondare negli abissi del mare.
+	AI_Output	(self, other, "DIA_Addon_Saturas_BeliarWeapGeben_14_03"); //La saggezza di Adanos veglier√† su di esso.
 	TOPIC_END_Klaue = TRUE;
 	B_GivePlayerXP (XP_Addon_BeliarsWeaponAbgegeben);
 	Saturas_KlaueInsMeer = TRUE;
@@ -1220,12 +1220,12 @@ func void DIA_Addon_Saturas_ADW_PreTeachCircle_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_00"); //Mi puoi insegnare i Circoli della magia?
 	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_01"); //Tu sei un Mago del Fuoco. Che cosa ne direbbe Pyrokar?
-	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_02"); //Non c'Ë bisogno che gli altri lo sappiano.
-	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_03"); //(sospira) Vedo che fai sul serio, quindi rispetterÚ la tua richiesta.
+	AI_Output	(other, self, "DIA_Addon_Saturas_ADW_PreTeachCircle_15_02"); //Non c'√® bisogno che gli altri lo sappiano.
+	AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_03"); //(sospira) Vedo che fai sul serio, quindi rispetter√≤ la tua richiesta.
 
 	if ((RavenIsDead == FALSE))
 	{
-		AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_04"); //Tuttavia, se dovessi rendermi conto che la nostra conoscenza Ë nelle mani sbagliate, non potrai pi˘ contare sul mio aiuto.
+		AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_04"); //Tuttavia, se dovessi rendermi conto che la nostra conoscenza √® nelle mani sbagliate, non potrai pi√π contare sul mio aiuto.
 		AI_Output	(self, other, "DIA_Addon_Saturas_ADW_PreTeachCircle_14_05"); //Quindi farai meglio a non deludermi.
 	};
 	Saturas_Addon_TeachCircle = TRUE;
@@ -1266,7 +1266,7 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	{
 		if B_TeachMagicCircle (self,other, 2)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_01"); //SÏ, sei pronto a estendere la tua conoscenza.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_01"); //S√¨, sei pronto a estendere la tua conoscenza.
 			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_02"); //Entra nel secondo Circolo della magia. Possa Adanos darti la forza di usare saggiamente il potere che ti ha affidato.
 		};                                                                                                                     
 	}
@@ -1275,8 +1275,8 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	{
 		if B_TeachMagicCircle (self,other, 3)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_03"); //SÏ, Ë il momento giusto. Entra nel terzo Circolo della magia.
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_04"); //Ora la tua conoscenza ti permetter‡ di compiere nuove e pi˘ potenti magie. Usala con cautela.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_03"); //S√¨, √® il momento giusto. Entra nel terzo Circolo della magia.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_04"); //Ora la tua conoscenza ti permetter√† di compiere nuove e pi√π potenti magie. Usala con cautela.
 		};                                                             
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 3)
@@ -1284,7 +1284,7 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	{
 		if B_TeachMagicCircle (self,other, 4)
 		{
-			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_05"); //» giunta l'ora. Sei pronto per entrare nel quarto Circolo della magia.
+			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_05"); //√à giunta l'ora. Sei pronto per entrare nel quarto Circolo della magia.
 			AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_06"); //Ora le tue parole e le tue azioni sono potenti. Scegli sempre con cautela e con saggezza i tuoi nuovi incantesimi.
 		};
 	}
@@ -1300,13 +1300,13 @@ func void DIA_Addon_Saturas_ADW_CIRCLE_Info ()
 	}
 	else if (Npc_GetTalentSkill (hero, NPC_TALENT_MAGE) == 5)
 	{
-		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_10"); //Quello non Ë pi˘ mio compito, ora.
+		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_10"); //Quello non √® pi√π mio compito, ora.
 		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_11"); //Per apprendere il sesto e ultimo Circolo della magia, faresti meglio a raggiungere il monastero dei Maghi del Fuoco.
 		DIA_Addon_Saturas_ADW_CIRCLE_NoPerm = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_12"); //» ancora troppo presto per te. Ripassa pi˘ tardi.
+		AI_Output (self, other, "DIA_Addon_Saturas_ADW_CIRCLE_14_12"); //√à ancora troppo presto per te. Ripassa pi√π tardi.
 	};
 };
 

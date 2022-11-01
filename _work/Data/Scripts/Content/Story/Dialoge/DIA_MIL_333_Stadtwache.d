@@ -78,12 +78,12 @@ func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 	// ------ PETZMASTER LIGHT ------
 	if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 	{
-		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(sospira) Che c'è?
+		AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_01"); //(sospira) Che c'Ã¨?
 		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_02"); //Lo sai benissimo!
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Sei ricercato in città per omicidio.
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_03"); //Sei ricercato in cittÃ  per omicidio.
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
@@ -93,22 +93,22 @@ func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //Non sappiamo che farcene dei sobillatori in città!
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_05"); //Non sappiamo che farcene dei sobillatori in cittÃ !
 		};
 	
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //Perché pensi che dovremmo lasciarti entrare?
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_06"); //PerchÃ© pensi che dovremmo lasciarti entrare?
 	}
 	else // ------ normales Reinkommen ------
 	{
 		 var C_Item itm; itm = Npc_GetEquippedArmor(other);
 		
-		// ------ ohne Rüstung ODER als Bauer ------
+		// ------ ohne RÃ¼stung ODER als Bauer ------
 		if (Npc_HasEquippedArmor(other) == FALSE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_L) == TRUE)
 		|| (Hlp_IsItem(itm, ItAr_Bau_M) == TRUE)
 		{
-			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //Sì?
-			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //Mi sembri una povera canaglia. In questa città non sappiamo che farcene della gente senza soldi.
+			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_07"); //SÃ¬?
+			AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_08"); //Mi sembri una povera canaglia. In questa cittÃ  non sappiamo che farcene della gente senza soldi.
 			
 			if (Npc_HasItems(other, ItWr_Passierschein))
 			{
@@ -120,11 +120,11 @@ func void DIA_Mil_333_Stadtwache_FirstWarn_Info()
 			{
 				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_11"); //Ma io voglio arruolarmi nella guardia cittadina!
 				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_12"); //Ah! Ma non farmi ridere! Vai all'altro cancello e cerca di fregare a LORO.
-				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Ci sono già stato, e mi hanno mandato qui.
+				AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_13"); //Ci sono giÃ  stato, e mi hanno mandato qui.
 				AI_Output (self, other,"DIA_Mil_333_Stadtwache_FirstWarn_06_14"); //(risata grassa) Santo cielo! Ci mandano sempre la crema... della feccia.
 			};
 		}
- 	 	// ------ alle anderen Rüstungen ------
+ 	 	// ------ alle anderen RÃ¼stungen ------
 		else 
 		{
 			AI_Output (other, self,"DIA_Mil_333_Stadtwache_FirstWarn_15_15"); //(calmo) Cosa?
@@ -225,7 +225,7 @@ INSTANCE DIA_Mil_333_Stadtwache_Bribe (C_INFO)
 	condition	= DIA_Mil_333_Stadtwache_Bribe_Condition;
 	information	= DIA_Mil_333_Stadtwache_Bribe_Info;
 	permanent	= TRUE;
-	description	= "Ecco 100 pezzi d’oro. Fammi passare!";
+	description	= "Ecco 100 pezzi dâ€™oro. Fammi passare!";
 };                       
 
 FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
@@ -238,11 +238,11 @@ FUNC INT DIA_Mil_333_Stadtwache_Bribe_Condition()
 	
 func void DIA_Mil_333_Stadtwache_Bribe_Info()
 {
-	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Ecco 100 monete d’oro. Fammi passare!
+	AI_Output (other, self,"DIA_Mil_333_Stadtwache_Bribe_15_00"); //Ecco 100 monete dâ€™oro. Fammi passare!
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 100))
 	{
-		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //(avido) 100 monete d'oro mi sembra una somma adeguata per entrare. D’accordo, passa.
+		AI_Output (self, other,"DIA_Mil_333_Stadtwache_Bribe_06_01"); //(avido) 100 monete d'oro mi sembra una somma adeguata per entrare. Dâ€™accordo, passa.
 		
 		if (B_GetGreatestPetzCrime(self) >= CRIME_ATTACK)
 		{
@@ -254,7 +254,7 @@ func void DIA_Mil_333_Stadtwache_Bribe_Info()
 		Mil_333_schonmalreingelassen = TRUE;
 		B_CheckLog();
 		
-		// ------ wenn bezahlt, persönliche Absolution erteilen -------
+		// ------ wenn bezahlt, persÃ¶nliche Absolution erteilen -------
 		MIL_333_Personal_AbsolutionLevel = B_GetCurrentAbsolutionLevel(self) + 1;
 	}
 	else //nicht genug Gold

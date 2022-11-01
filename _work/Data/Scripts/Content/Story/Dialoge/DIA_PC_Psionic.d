@@ -59,15 +59,15 @@ FUNC VOID DIA_Lester_Hello_Lester()
 {
 	Info_ClearChoices	(DIA_Lester_Hello);
 	AI_Output	(other,self ,"DIA_Lester_Hello_Lester_15_00");	//Lester! Come sei arrivato qui?
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_01");	//È stata una fuga pazzesca. Dopo che la Barriera è esplosa ho vagato nella zona per un po', in preda alla confusione.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_01");	//Ãˆ stata una fuga pazzesca. Dopo che la Barriera Ã¨ esplosa ho vagato nella zona per un po', in preda alla confusione.
 	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_02");	//Poi ho trascorso i miei giorni aprendomi la strada attraverso questi boschi, fino a quando non ho trovato questa valle.
-	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_03");	//Diego, Milten e Gorn sono ancora nella Valle delle Miniere. Perlomeno, così credo.
+	AI_Output	(self ,other,"DIA_Lester_Hello_Lester_13_03");	//Diego, Milten e Gorn sono ancora nella Valle delle Miniere. Perlomeno, cosÃ¬ credo.
 };
 FUNC VOID DIA_Lester_Hello_YouKnowMe()
 {
 	Info_ClearChoices	(DIA_Lester_Hello);
 	AI_Output	(other,self ,"DIA_Lester_Hello_YouKnowMe_15_00");	//Dovrei conoscerti?
-	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_01");	//Pronto? C'è qualcuno in casa? Ho rischiato la vita per farti avere quella strana pietra.
+	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_01");	//Pronto? C'Ã¨ qualcuno in casa? Ho rischiato la vita per farti avere quella strana pietra.
 	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_02");	//Mi devi qualcosa... QUESTO dovresti ricordartelo.
 	AI_Output	(self ,other,"DIA_Lester_Hello_YouKnowMe_13_03"); 	//Ti ricordi ancora Diego, Milten e Gorn?
 
@@ -89,7 +89,7 @@ FUNC VOID DIA_Lester_Hello_WhoFourFriends()
 	AI_Output	(other,self ,"DIA_Lester_Hello_WhoFourFriends_15_00");	//Diego, Milten e CHI?
 	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_01");	//Non dirmi che non te li ricordi. Le pietre focalizzatrici, il troll, l'enorme mucchio di metallo dei Maghi dell'Acqua...?
 	AI_Output	(other, self,"DIA_Lester_Hello_WhoFourFriends_15_02");	//Non sono sicuro...
-	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_03");	//Ti ricorderai col tempo. C'è voluto un po' per schiarirmi le idee anche per me.
+	AI_Output	(self ,other,"DIA_Lester_Hello_WhoFourFriends_13_03");	//Ti ricorderai col tempo. C'Ã¨ voluto un po' per schiarirmi le idee anche per me.
 };
 // ************************************************************
 // 		  				  Was ist passiert?		//E1
@@ -101,7 +101,7 @@ INSTANCE DIA_Lester_WhatHappened (C_INFO)
 	condition	= DIA_Lester_WhatHappened_Condition;
 	information	= DIA_Lester_WhatHappened_Info;
 	permanent	= FALSE;
-	description = "Cosa è successo?";
+	description = "Cosa Ã¨ successo?";
 };                       
 FUNC INT DIA_Lester_WhatHappened_Condition()
 {
@@ -113,12 +113,12 @@ FUNC INT DIA_Lester_WhatHappened_Condition()
 };
 FUNC VOID DIA_Lester_WhatHappened_Info()
 {	
-	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_00");	//Cosa è successo?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_01");	//Dopo che il Dormiente è stato sconfitto, l'intera Fratellanza ha perduto la ragione.
+	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_00");	//Cosa Ã¨ successo?
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_01");	//Dopo che il Dormiente Ã¨ stato sconfitto, l'intera Fratellanza ha perduto la ragione.
 	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_02");	//Senza il loro maestro erano solamente degli involucri vuoti.
 	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_03");	//E tu? Cosa mi dici di te?
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_04");	//È stato lo stesso anche per me. Ho avuto incubi e persino allucinazioni. Ma una volta che la mia mente è stata più o meno sgombra, sono scappato.
-	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_05");	//Una volta mi è parso di vedere una gigantesca ombra scura calare su un gruppo di fuggitivi e incenerirli tutti in una gigantesca nube di fuoco.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_04");	//Ãˆ stato lo stesso anche per me. Ho avuto incubi e persino allucinazioni. Ma una volta che la mia mente Ã¨ stata piÃ¹ o meno sgombra, sono scappato.
+	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_05");	//Una volta mi Ã¨ parso di vedere una gigantesca ombra scura calare su un gruppo di fuggitivi e incenerirli tutti in una gigantesca nube di fuoco.
 	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_06");	//In quel momento ho veramente creduto che un drago fosse venuto a uccidermi.
 	AI_Output	(other, self,"DIA_Lester_WhatHappened_15_07");	//Hai visto qualcos'altro?
 	AI_Output	(self, other,"DIA_Lester_WhatHappened_13_08");	//No, ho alzato i tacchi e sono scappato via!
@@ -146,12 +146,12 @@ FUNC INT DIA_Lester_MineColony_Condition()
 FUNC VOID DIA_Lester_MineColony_Info()
 {	
 	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_00");	//Da quanto tempo ti nascondi in questa valle?
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_01");	//Non lo so con esattezza. Una settimana, forse. Ma c'è dell'altro:
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_02");	//Quando sono arrivato, di sera, ho gettato uno sguardo alla montagna, c'erano solo alcuni alberi laggiù.
-	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_03");	//E quando, il mattino seguente, ho alzato lo sguardo, ho visto quella torre. Avrei potuto giurare che prima non ci fosse. Da allora non ho più lasciato la valle.
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_04");	//Intendi la torre di Xardas? Sapevo che fosse potente, ma creare una torre così...
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_01");	//Non lo so con esattezza. Una settimana, forse. Ma c'Ã¨ dell'altro:
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_02");	//Quando sono arrivato, di sera, ho gettato uno sguardo alla montagna, c'erano solo alcuni alberi laggiÃ¹.
+	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_03");	//E quando, il mattino seguente, ho alzato lo sguardo, ho visto quella torre. Avrei potuto giurare che prima non ci fosse. Da allora non ho piÃ¹ lasciato la valle.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_04");	//Intendi la torre di Xardas? Sapevo che fosse potente, ma creare una torre cosÃ¬...
 	AI_Output	(self, other,"DIA_Lester_ReturnToColony_13_05");	//Xardas il negromante? Vive in quella torre? Non so se questo mi faccia piacere...
-	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_06");	//Non preoccuparti, è stato lui a soccorrermi nel tempio del Dormiente. È dalla nostra parte.
+	AI_Output	(other, self,"DIA_Lester_ReturnToColony_15_06");	//Non preoccuparti, Ã¨ stato lui a soccorrermi nel tempio del Dormiente. Ãˆ dalla nostra parte.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SEND_XARDAS
@@ -163,7 +163,7 @@ instance DIA_Lester_SEND_XARDAS		(C_INFO)
 	condition	 = 	DIA_Lester_SEND_XARDAS_Condition;
 	information	 = 	DIA_Lester_SEND_XARDAS_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Devi parlare a Xardas dell’ombra...";
+	description	 = 	"Devi parlare a Xardas dellâ€™ombra...";
 };
 func int DIA_Lester_SEND_XARDAS_Condition ()
 {	
@@ -178,12 +178,12 @@ func void DIA_Lester_SEND_XARDAS_Info ()
 {
 	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_00"); //Devi raccontare a Xardas dell'ombra che hai visto, potrebbe essere importante.
 	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_01"); //Pensi non sia stata solo la mia immaginazione? Vuoi dire che c'era veramente un...
-	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_02"); //...drago. Sì.
+	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_02"); //...drago. SÃ¬.
 	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_03"); //Stai per lanciarti nuovamente nel bel mezzo di una delle tue avventure, vero?
 	AI_Output (other, self, "DIA_Lester_SEND_XARDAS_15_04"); //Non direi proprio nel mezzo... non ancora.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_05"); //(sospira) Bene, d'accordo, se è così importante, allora andrò a incontrarlo, ma non ora.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_05"); //(sospira) Bene, d'accordo, se Ã¨ cosÃ¬ importante, allora andrÃ² a incontrarlo, ma non ora.
 	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_06"); //Per il momento intendo riposarmi. Sono ancora esausto dopo la fuga dalla colonia penale.
-	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_07"); //Credo tu abbia grandi progetti. Ci vedremo più tardi da Xardas.
+	AI_Output (self, other, "DIA_Lester_SEND_XARDAS_13_07"); //Credo tu abbia grandi progetti. Ci vedremo piÃ¹ tardi da Xardas.
 	
 	AI_StopProcessInfos (self);
 	
@@ -200,7 +200,7 @@ instance DIA_Addon_Lester_STADT		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_STADT_Condition;
 	information	 = 	DIA_Addon_Lester_STADT_Info;
 
-	description	 = 	"Sono diretto a KHORINIS! Cosa sai della città?";
+	description	 = 	"Sono diretto a KHORINIS! Cosa sai della cittÃ ?";
 };
 
 func int DIA_Addon_Lester_STADT_Condition ()
@@ -215,11 +215,11 @@ func int DIA_Addon_Lester_STADT_Condition ()
 
 func void DIA_Addon_Lester_STADT_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_00"); //Sto andando a Khorinis! Cosa sai sulla città?
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_01"); //Su Khorinis? Beh, è una città portuale, niente di speciale.
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_02"); //Perché me lo chiedi?
-	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_03"); //Devo recarmi dai paladini che si dice siano in città.
-	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_04"); //(ride) Ma davvero? Ah! Non ti faranno neppure entrare in città, tantomeno nella zona in cui si trovano i paladini.
+	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_00"); //Sto andando a Khorinis! Cosa sai sulla cittÃ ?
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_01"); //Su Khorinis? Beh, Ã¨ una cittÃ  portuale, niente di speciale.
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_02"); //PerchÃ© me lo chiedi?
+	AI_Output	(other, self, "DIA_Addon_Lester_STADT_15_03"); //Devo recarmi dai paladini che si dice siano in cittÃ .
+	AI_Output	(self, other, "DIA_Addon_Lester_STADT_13_04"); //(ride) Ma davvero? Ah! Non ti faranno neppure entrare in cittÃ , tantomeno nella zona in cui si trovano i paladini.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Addon_Lester_Vorschlag		(C_INFO)
 	condition	 = 	DIA_Addon_Lester_Vorschlag_Condition;
 	information	 = 	DIA_Addon_Lester_Vorschlag_Info;
 
-	description	 = 	"Puoi suggerirmi un modo per entrare in città?";
+	description	 = 	"Puoi suggerirmi un modo per entrare in cittÃ ?";
 };
 
 func int DIA_Addon_Lester_Vorschlag_Condition ()
@@ -247,10 +247,10 @@ func int DIA_Addon_Lester_Vorschlag_Condition ()
 
 func void DIA_Addon_Lester_Vorschlag_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_00"); //Puoi suggerirmi un modo per entrare in città?
+	AI_Output	(other, self, "DIA_Addon_Lester_Vorschlag_15_00"); //Puoi suggerirmi un modo per entrare in cittÃ ?
 	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_01"); //Sicuro. Qualche tempo fa lavoravo per un vecchio alchimista di nome Constantino.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_02"); //È un personaggio molto influente in città, e ha ordinato alle guardie di lasciar entrare chiunque possa vendergli erbe rare.
-	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_03"); //È presto detto: raccogli un bel fascio di quelle erbe che crescono qui intorno, poi ti presenti alle porte della città sostenendo di lavorare per Constantino ed è fatta.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_02"); //Ãˆ un personaggio molto influente in cittÃ , e ha ordinato alle guardie di lasciar entrare chiunque possa vendergli erbe rare.
+	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_03"); //Ãˆ presto detto: raccogli un bel fascio di quelle erbe che crescono qui intorno, poi ti presenti alle porte della cittÃ  sostenendo di lavorare per Constantino ed Ã¨ fatta.
 	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_04"); //Ma non raccogliere un miscuglio di piante. Le guardie non sono delle arche di scienza, e non sanno nulla di alchimia.
 	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_05"); //Ma il tuo fascio di erbe deve avere un'aria convincente.
 	AI_Output	(self, other, "DIA_Addon_Lester_Vorschlag_13_06"); //10 esemplari dello stesso tipo di pianta dovrebbero essere sufficienti.
@@ -258,7 +258,7 @@ func void DIA_Addon_Lester_Vorschlag_Info ()
 	
 	Log_CreateTopic (TOPIC_Addon_PickForConstantino, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_PickForConstantino, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_PickForConstantino,"Lester dice che posso aggirare le guardie cittadine portando 10 piante dello stesso tipo, purché dica loro che sono per il vecchio alchimista Constantino."); 
+	B_LogEntry (TOPIC_Addon_PickForConstantino,"Lester dice che posso aggirare le guardie cittadine portando 10 piante dello stesso tipo, purchÃ© dica loro che sono per il vecchio alchimista Constantino."); 
 	
 	MIS_Addon_Lester_PickForConstantino = LOG_RUNNING;
 };
@@ -315,7 +315,7 @@ FUNC INT DIA_Lester_Perm_Condition()
 FUNC VOID DIA_Lester_Perm_Info()
 {	
 	AI_Output	(other, self,"DIA_Lester_Perm_15_00");	//Cosa puoi dirmi della zona?
-	AI_Output	(self, other,"DIA_Lester_Perm_13_01");	//Se continui per quella strada arriverai a una fattoria. La città inizia poco oltre.
+	AI_Output	(self, other,"DIA_Lester_Perm_13_01");	//Se continui per quella strada arriverai a una fattoria. La cittÃ  inizia poco oltre.
 	AI_Output	(self, other,"DIA_Lester_Perm_13_02");	//Ma fai attenzione, non ci sono solamente lupi e ratti in zona, ma anche goblin e briganti!
 };
 // ************************************************************
@@ -341,8 +341,8 @@ FUNC INT DIA_Lester_Sleep_Condition()
 FUNC VOID DIA_Lester_Sleep_Info()
 {	
 	AI_Output	(other, self,"DIA_Lester_Sleep_15_00");	//Sei ancora esausto?
-	AI_Output	(self, other,"DIA_Lester_Sleep_13_01");	//E tanto. (sbadiglia) Ho raccontato tutto quanto a Xardas. Ora dormirò un po'. Credo, un giorno o...
-	AI_Output	(self, other,"DIA_Lester_Sleep_13_02");	//...due ...o più.
+	AI_Output	(self, other,"DIA_Lester_Sleep_13_01");	//E tanto. (sbadiglia) Ho raccontato tutto quanto a Xardas. Ora dormirÃ² un po'. Credo, un giorno o...
+	AI_Output	(self, other,"DIA_Lester_Sleep_13_02");	//...due ...o piÃ¹.
 	
 	AI_StopProcessInfos (self);
 };
@@ -400,17 +400,17 @@ func int DIA_Lester_BACKINTOWN_Condition ()
 };
 func void DIA_Lester_BACKINTOWN_Info ()
 {
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_00"); //Ehi, sei tornato finalmente! Devi subito andare a parlare con Xardas, c'è un problema.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_00"); //Ehi, sei tornato finalmente! Devi subito andare a parlare con Xardas, c'Ã¨ un problema.
 	AI_Output			(other, self, "DIA_Lester_BACKINTOWN_15_01"); //Lo credo proprio.
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_02"); //È scoppiato un inferno da quando sei partito.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_02"); //Ãˆ scoppiato un inferno da quando sei partito.
 	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_03"); //Parla con Xardas, ti sta aspettando!
-	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_04"); //Xardas mi ha dato questa runa per te. Ti aiuterà a raggiungerlo più in fretta. Ci incontreremo lì più tardi.
+	AI_Output			(self, other, "DIA_Lester_BACKINTOWN_13_04"); //Xardas mi ha dato questa runa per te. Ti aiuterÃ  a raggiungerlo piÃ¹ in fretta. Ci incontreremo lÃ¬ piÃ¹ tardi.
 	
 	CreateInvItems 		(self,ItRu_TeleportXardas,1);
 	B_GiveInvItems 		(self,other,ItRu_TeleportXardas,1);
 	
 	AI_StopProcessInfos (self);
-	Npc_ExchangeRoutine (self,"START");	//Joly: Lester geht wieder zurück in sein Tal!
+	Npc_ExchangeRoutine (self,"START");	//Joly: Lester geht wieder zurÃ¼ck in sein Tal!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -424,7 +424,7 @@ instance DIA_Lester_PERM3		(C_INFO)
 	information	 = 	DIA_Lester_PERM3_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Non sembri così forte.";
+	description	 = 	"Non sembri cosÃ¬ forte.";
 };
 
 func int DIA_Lester_PERM3_Condition ()
@@ -439,7 +439,7 @@ func int DIA_Lester_PERM3_Condition ()
 var int DIA_Lester_PERM3_OneTime;
 func void DIA_Lester_PERM3_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_PERM3_15_00"); //Non sembri così forte.
+	AI_Output			(other, self, "DIA_Lester_PERM3_15_00"); //Non sembri cosÃ¬ forte.
 	
 	if (hero.guild == GIL_KDF)
 	{
@@ -450,14 +450,14 @@ func void DIA_Lester_PERM3_Info ()
 			
 			if (SC_KnowsMadPsi == TRUE)
 				{
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_03"); //E posso anche dirti esattamente il perché.
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_03"); //E posso anche dirti esattamente il perchÃ©.
 					AI_Output			(self, other, "DIA_Lester_PERM3_13_04"); //Davvero? Non credo di volerlo sapere.
 					AI_Output			(other, self, "DIA_Lester_PERM3_15_05"); //Questi incappucciati neri o Cercatori, come li chiamiamo noi maghi, erano i seguaci di un potente arcidemone. Ti dice qualcosa?
 					AI_Output			(self, other, "DIA_Lester_PERM3_13_06"); //Mmmh, no. A meno che tu non voglia dirmi che...
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_07"); //Sì, esatto. I Cercatori erano i seguaci del Dormiente. La setta rinnegata dei pazzi di Campo Palude.
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_07"); //SÃ¬, esatto. I Cercatori erano i seguaci del Dormiente. La setta rinnegata dei pazzi di Campo Palude.
 					AI_Output			(other, self, "DIA_Lester_PERM3_15_08"); //Erano i tuoi compagni, Lester, la vecchia Confraternita del Dormiente. Ora non sono altro che schiavi del male privi di anima.
-					AI_Output			(self, other, "DIA_Lester_PERM3_13_09"); //Ne avevo il sospetto, ma speravo non fosse così. Vuoi dire che egli è tornato? Il Dormiente è nuovamente qui?
-					AI_Output			(other, self, "DIA_Lester_PERM3_15_10"); //Buona domanda. Tutto quello che so di certo è che devo fermare i Cercatori, prima che diventino troppo potenti.
+					AI_Output			(self, other, "DIA_Lester_PERM3_13_09"); //Ne avevo il sospetto, ma speravo non fosse cosÃ¬. Vuoi dire che egli Ã¨ tornato? Il Dormiente Ã¨ nuovamente qui?
+					AI_Output			(other, self, "DIA_Lester_PERM3_15_10"); //Buona domanda. Tutto quello che so di certo Ã¨ che devo fermare i Cercatori, prima che diventino troppo potenti.
 					AI_Output			(self, other, "DIA_Lester_PERM3_13_11"); //Non mi piace l'idea, ma immagino tu abbia ragione. Mi dispiace, tutto questo mi sta dando alla testa.
 					B_LogEntry (TOPIC_DEMENTOREN,"I miei sospetti hanno trovato conferma. Anche Lester non ha dubbi che i Cercatori siano dei seguaci del Dormiente del vecchio Campo Palude."); 
 					B_GivePlayerXP (XP_Lester_KnowsMadPsi);
@@ -469,19 +469,19 @@ func void DIA_Lester_PERM3_Info ()
 	{
 		if (Lester_IsOnBOard == LOG_SUCCESS)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_12"); //Il mal di testa c'è ancora, ma spero che il problema si risolva presto.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_12"); //Il mal di testa c'Ã¨ ancora, ma spero che il problema si risolva presto.
 			AI_Output			(self, other, "DIA_Lester_PERM3_13_13"); //In un modo o nell'altro.
 		}
 		else if (hero.guild == GIL_DJG)
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_14"); //Il mio mal di testa è diventato insopportabile. E ora anche questi uomini lucertola continuano ad attaccarmi. Mi chiedo da dove vengano.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_14"); //Il mio mal di testa Ã¨ diventato insopportabile. E ora anche questi uomini lucertola continuano ad attaccarmi. Mi chiedo da dove vengano.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Lester_PERM3_13_15"); //Questo mal di testa non si placa. C'è qualcosa che non va.
+			AI_Output			(self, other, "DIA_Lester_PERM3_13_15"); //Questo mal di testa non si placa. C'Ã¨ qualcosa che non va.
 		};
 	};
-	AI_Output			(self, other, "DIA_Lester_PERM3_13_16"); //(sospira) Penso che mi riposerò prima.
+	AI_Output			(self, other, "DIA_Lester_PERM3_13_16"); //(sospira) Penso che mi riposerÃ² prima.
 };
 
 //#####################################################################
@@ -564,7 +564,7 @@ instance DIA_Lester_XARDASWEG		(C_INFO)
 	condition	 = 	DIA_Lester_XARDASWEG_Condition;
 	information	 = 	DIA_Lester_XARDASWEG_Info;
 
-	description	 = 	"Dov’è Xardas?";
+	description	 = 	"Dovâ€™Ã¨ Xardas?";
 };
 
 func int DIA_Lester_XARDASWEG_Condition ()
@@ -577,10 +577,10 @@ func int DIA_Lester_XARDASWEG_Condition ()
 
 func void DIA_Lester_XARDASWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_00"); //Dov’è Xardas?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_01"); //Se n'è andato, e ha lasciato questi esseri demoniaci nella torre.
+	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_00"); //Dovâ€™Ã¨ Xardas?
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_01"); //Se n'Ã¨ andato, e ha lasciato questi esseri demoniaci nella torre.
 	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_02"); //Penso non voglia che qualcuno vada in giro a curiosare per la torre durante la sua assenza.
-	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_03"); //Dov'è andato?
+	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_03"); //Dov'Ã¨ andato?
 	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_04"); //Non me lo ha detto. Mi ha solo chiesto di consegnarti questa lettera da parte sua.
 	
 	CreateInvItems 		(self, ItWr_XardasLetterToOpenBook_MIS, 1);					
@@ -588,9 +588,9 @@ func void DIA_Lester_XARDASWEG_Info ()
 	
 	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_05"); //L'ho letta. Mi dispiace, ero curioso.
 	AI_Output			(other, self, "DIA_Lester_XARDASWEG_15_06"); //E allora?
-	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_07"); //Non ne ho idea, non ho capito una parola, amico. Ma una cosa è chiara: non lo rivedremo presto.
+	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_07"); //Non ne ho idea, non ho capito una parola, amico. Ma una cosa Ã¨ chiara: non lo rivedremo presto.
 	AI_Output			(self, other, "DIA_Lester_XARDASWEG_13_08"); //Penso che la situazione si sia fatta troppo scottante per lui, e che si sia diretto verso le colline.
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardas è scomparso. Lester mi ha dato una lettera che Xardas ha lasciato per me."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Xardas Ã¨ scomparso. Lester mi ha dato una lettera che Xardas ha lasciato per me."); 
 };
 
 
@@ -617,14 +617,14 @@ func int DIA_Lester_KnowWhereEnemy_Condition ()
 func void DIA_Lester_KnowWhereEnemy_Info ()
 {
 	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_00"); //Ho scoperto dove si nasconde il nemico.
-	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_01"); //Non chiedermi perché, ma ho la sensazione che dovrei venire con te.
+	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_01"); //Non chiedermi perchÃ©, ma ho la sensazione che dovrei venire con te.
 	AI_Output			(other, self, "DIA_Lester_KnowWhereEnemy_15_02"); //Cosa intendi dire?
-	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_03"); //Non so spiegartelo, ma so che otterrò la risposta se verrò con te.
+	AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_03"); //Non so spiegartelo, ma so che otterrÃ² la risposta se verrÃ² con te.
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lester_KnowWhereEnemy_15_04"); //Mi dispiace, ma la nave è già al completo.
-		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_05"); //Forse lo è, forse il mio destino è insignificante di fronte agli eventi che ci attendono.
+		AI_Output			(other,self , "DIA_Lester_KnowWhereEnemy_15_04"); //Mi dispiace, ma la nave Ã¨ giÃ  al completo.
+		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_05"); //Forse lo Ã¨, forse il mio destino Ã¨ insignificante di fronte agli eventi che ci attendono.
 		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_06"); //Sai quello che devi fare. Fronteggia il male, non preoccuparti per me.
 		AI_Output			(self, other, "DIA_Lester_KnowWhereEnemy_13_07"); //Non sono importante.
 	}
@@ -639,7 +639,7 @@ func void DIA_Lester_KnowWhereEnemy_Info ()
 FUNC VOID DIA_Lester_KnowWhereEnemy_Yes ()
 {
 	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_00"); //Allora vieni con me e trova le tue risposte!
-	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_01"); //Ti incontrerò al porto. Andrò laggiù non appena sarò pronto.
+	AI_Output (other,self ,"DIA_Lester_KnowWhereEnemy_Yes_15_01"); //Ti incontrerÃ² al porto. AndrÃ² laggiÃ¹ non appena sarÃ² pronto.
 	AI_Output (self ,other,"DIA_Lester_KnowWhereEnemy_Yes_13_02"); //Fai in fretta, il tempo stringe.
 	
 	self.flags 		 = NPC_FLAG_IMMORTAL;
@@ -680,7 +680,7 @@ instance DIA_Lester_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Lester_LeaveMyShip_Condition;
 	information	 = 	DIA_Lester_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Non c’è più spazio per te.";
+	description	 = 	"Non câ€™Ã¨ piÃ¹ spazio per te.";
 };
 func int DIA_Lester_LeaveMyShip_Condition ()
 {	
@@ -692,9 +692,9 @@ func int DIA_Lester_LeaveMyShip_Condition ()
 };
 func void DIA_Lester_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_LeaveMyShip_15_00"); //Non c’è più spazio per te.
+	AI_Output			(other, self, "DIA_Lester_LeaveMyShip_15_00"); //Non câ€™Ã¨ piÃ¹ spazio per te.
 	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_01"); //Ti capisco. Probabilmente farei lo stesso al tuo posto.
-	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_02"); //Se hai bisogno di me, ti aiuterò. Sai dove trovarmi.
+	AI_Output			(self, other, "DIA_Lester_LeaveMyShip_13_02"); //Se hai bisogno di me, ti aiuterÃ². Sai dove trovarmi.
 	
 	Lester_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -703,7 +703,7 @@ func void DIA_Lester_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lester_StillNeedYou		(C_INFO)
 {
@@ -712,11 +712,11 @@ instance DIA_Lester_StillNeedYou		(C_INFO)
 	condition	 = 	DIA_Lester_StillNeedYou_Condition;
 	information	 = 	DIA_Lester_StillNeedYou_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Ho bisogno dell’aiuto di un amico.";
+	description	 = 	"Ho bisogno dellâ€™aiuto di un amico.";
 };
 func int DIA_Lester_StillNeedYou_Condition ()
 {	
-	if ((Lester_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natürlich nur eine variable abfragen
+	if ((Lester_IsOnBOard == LOG_OBSOLETE)		//Hier brauch man natÃ¼rlich nur eine variable abfragen
 	|| (Lester_IsOnBOard == LOG_FAILED))
 	&& (crewmember_count < Max_Crew)
 	{
@@ -725,12 +725,12 @@ func int DIA_Lester_StillNeedYou_Condition ()
 };
 func void DIA_Lester_StillNeedYou_Info ()
 {
-	AI_Output			(other, self, "DIA_Lester_StillNeedYou_15_00"); //Ho bisogno dell’aiuto di un amico.
+	AI_Output			(other, self, "DIA_Lester_StillNeedYou_15_00"); //Ho bisogno dellâ€™aiuto di un amico.
 	
 	if (Lester_IsOnBoard == LOG_OBSOLETE)
 	{
 		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_01"); //Lo sapevo! Affronteremo tutto questo insieme, come ai vecchi tempi.
-		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_02"); //Il male farà meglio a stare attento, gli stiamo con il fiato sul collo.
+		AI_Output	(self, other, "DIA_Lester_StillNeedYou_13_02"); //Il male farÃ  meglio a stare attento, gli stiamo con il fiato sul collo.
 		
 		self.flags 		 = NPC_FLAG_IMMORTAL;
 		Lester_IsOnBoard	 = LOG_SUCCESS;

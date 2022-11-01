@@ -69,7 +69,7 @@ INSTANCE DIA_Lares_DI_Training (C_INFO)
 	information	= DIA_Lares_DI_Training_Info;
 	permanent	 = 	TRUE;
 
-	description = "Insegnami le tue abilit‡.";
+	description = "Insegnami le tue abilit√†.";
 };                       
 FUNC INT DIA_Lares_DI_Training_Condition()
 {
@@ -81,8 +81,8 @@ FUNC INT DIA_Lares_DI_Training_Condition()
 
 FUNC VOID DIA_Lares_DI_Training_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Insegnami le tue abilit‡.
-	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //Non c'Ë problema.
+	AI_Output (other,self ,"DIA_Lares_DI_Training_15_00"); //Insegnami le tue abilit√†.
+	AI_Output (self ,other,"DIA_Lares_DI_Training_09_01"); //Non c'√® problema.
 	
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
@@ -101,7 +101,7 @@ FUNC VOID DIA_Lares_DI_Training_1H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 1, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Devi piegare la gamba davanti e tenere dritta quella dietro, cosÏ avrai una postura pi˘ stabile.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_1_09_00"); //Devi piegare la gamba davanti e tenere dritta quella dietro, cos√¨ avrai una postura pi√π stabile.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
@@ -120,7 +120,7 @@ FUNC VOID DIA_Lares_DI_Training_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 100))
 	{
-			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //Muovi molto il bacino, ti aiuter‡ a evitare un contrattacco.
+			AI_Output (self ,other,"DIA_Lares_DI_Training_1H_5_09_00"); //Muovi molto il bacino, ti aiuter√† a evitare un contrattacco.
 	};
 	Info_ClearChoices (DIA_Lares_DI_Training);
 	Info_AddChoice	  (DIA_Lares_DI_Training, DIALOG_BACK, DIA_Lares_DI_Training_BACK);
@@ -242,7 +242,7 @@ FUNC VOID DIA_Lares_DI_UndeadDragonDead_Info()
 	if (DIA_Lares_DI_UndeadDragonDead_OneTime == FALSE )
 	{
 		AI_Output (other,self ,"DIA_Lares_DI_UndeadDragonDead_15_02"); //Che cosa hai intenzione di fare adesso?
-		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Non ne ho idea. Per il momento credo che ti seguirÚ.
+		AI_Output (self ,other,"DIA_Lares_DI_UndeadDragonDead_09_03"); //Non ne ho idea. Per il momento credo che ti seguir√≤.
 		
 		DIA_Lares_DI_UndeadDragonDead_OneTime = TRUE;
 	};

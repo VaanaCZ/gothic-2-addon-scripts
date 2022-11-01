@@ -29,7 +29,7 @@ INSTANCE DIA_VLK_1_JOIN(C_INFO)
 	condition	= DIA_VLK_1_JOIN_Condition;
 	information	= DIA_VLK_1_JOIN_Info;
 	permanent	= TRUE;
-	description = "Come faccio a diventare un cittadino di questa citt‡?";
+	description = "Come faccio a diventare un cittadino di questa citt√†?";
 };                       
 
 FUNC INT DIA_VLK_1_JOIN_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_VLK_1_JOIN_Condition()
 
 FUNC VOID DIA_VLK_1_JOIN_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //Come faccio a diventare un cittadino di questa citt‡?
+	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //Come faccio a diventare un cittadino di questa citt√†?
 	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Vatti a cercare un lavoro! Tutti quelli che hanno un posto fisso a Khorinis vengono considerati cittadini a tutti gli effetti.
 };
 
@@ -56,7 +56,7 @@ INSTANCE DIA_VLK_1_PEOPLE(C_INFO)
 	condition	= DIA_VLK_1_PEOPLE_Condition;
 	information	= DIA_VLK_1_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Quali sono le personalit‡ importanti, qui?";
+	description = "Quali sono le personalit√† importanti, qui?";
 };                       
 
 FUNC INT DIA_VLK_1_PEOPLE_Condition()
@@ -66,10 +66,10 @@ FUNC INT DIA_VLK_1_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_1_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Quali sono le personalit‡ importanti, qui?
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(ride) Fino a poco fa, erano il governatore e il giudice, poi sono venuti i paladini e hanno assunto il controllo della citt‡.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Il loro capo Ë Lord Hagen. Egli Ë il nuovo governatore, pi˘ o meno.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre Ë il suo braccio destro. Egli comanda la guardia cittadina e svolge anche la funzione di giudice.
+	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Quali sono le personalit√† importanti, qui?
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(ride) Fino a poco fa, erano il governatore e il giudice, poi sono venuti i paladini e hanno assunto il controllo della citt√†.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Il loro capo √® Lord Hagen. Egli √® il nuovo governatore, pi√π o meno.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Lord Andre √® il suo braccio destro. Egli comanda la guardia cittadina e svolge anche la funzione di giudice.
 	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //Tutti i cittadini che vengono accusati di un crimine devono rispondere a lui.
 };
 
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_1_LOCATION(C_INFO)
 	condition	= DIA_VLK_1_LOCATION_Condition;
 	information	= DIA_VLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Cosa cíË di interessante in questa citt‡?";
+	description = "Cosa c‚Äô√® di interessante in questa citt√†?";
 };                       
 
 FUNC INT DIA_VLK_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Cosa cíË di interessante in questa citt‡?
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Qui puoi acquistare tutto ciÚ che ti serve, sia dai commercianti al mercato che nella parte bassa della citt‡.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Ma quasi tutto ciÚ che puoi acquistare ha un prezzo.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Se non hai abbastanza soldi, forse allora l'usuraio Lehmar puÚ aiutarti. La sua casa si trova all'inizio del distretto del porto, venendo dalla parte bassa della citt‡.
+	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Cosa c‚Äô√® di interessante in questa citt√†?
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Qui puoi acquistare tutto ci√≤ che ti serve, sia dai commercianti al mercato che nella parte bassa della citt√†.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Ma quasi tutto ci√≤ che puoi acquistare ha un prezzo.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Se non hai abbastanza soldi, forse allora l'usuraio Lehmar pu√≤ aiutarti. La sua casa si trova all'inizio del distretto del porto, venendo dalla parte bassa della citt√†.
 };
 
 // *************************************************************************
@@ -107,7 +107,7 @@ INSTANCE DIA_VLK_1_STANDARD(C_INFO)
 	condition	= DIA_VLK_1_STANDARD_Condition;
 	information	= DIA_VLK_1_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_VLK_1_STANDARD_Condition()
 {
@@ -115,21 +115,21 @@ func INT DIA_VLK_1_STANDARD_Condition()
 };
 FUNC VOID DIA_VLK_1_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_VLK_1_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Dopo il crollo della Barriera, i liberi scambi con il proprietario terriero principale si sono interrotti bruscamente. Chiss‡ cos'ha in mente. C'Ë qualcosa di sospetto sotto.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Dopo il crollo della Barriera, i liberi scambi con il proprietario terriero principale si sono interrotti bruscamente. Chiss√† cos'ha in mente. C'√® qualcosa di sospetto sotto.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar sta esagerando. Egli continua a non rifornire di cibo la citt‡. Se la guardia cittadina non interviene subito, altri contadini potrebbero seguire il suo esempio e fare come gli pare.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar sta esagerando. Egli continua a non rifornire di cibo la citt√†. Se la guardia cittadina non interviene subito, altri contadini potrebbero seguire il suo esempio e fare come gli pare.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //Ho saputo che i briganti si sono uniti ai maghi. Si tratta di grandi esperti di magia nera vestiti di nero. Sono pronto a giurare di averne visto uno in citt‡ la scorsa notte.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //Ho saputo che i briganti si sono uniti ai maghi. Si tratta di grandi esperti di magia nera vestiti di nero. Sono pronto a giurare di averne visto uno in citt√† la scorsa notte.
 	};
 
 	if (Kapitel == 4)

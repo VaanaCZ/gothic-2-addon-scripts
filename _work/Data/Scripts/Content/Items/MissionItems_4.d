@@ -1,6 +1,6 @@
 
-const int Value_Dragonegg 		= 200;//Joly: nicht ‰ndern
-const int Value_OrcEliteRing 	= 130;//Joly: nicht ‰ndern
+const int Value_Dragonegg 		= 200;//Joly: nicht √§ndern
+const int Value_OrcEliteRing 	= 130;//Joly: nicht √§ndern
 /******************************************************************************************/
 // Angars Amulett
 /******************************************************************************************/
@@ -149,7 +149,7 @@ INSTANCE ItRw_SengrathsArmbrust_MIS(C_Item)
 };
 
 
-//Tabins Lurkerh‰ute von Engrom
+//Tabins Lurkerh√§ute von Engrom
 
 INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 {
@@ -164,7 +164,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 	material 			=	MAT_LEATHER;
 
 	description			= 	name;
-	TEXT[0]				= 	"Il nome Talbin Ë marchiato all'interno.";
+	TEXT[0]				= 	"Il nome Talbin √® marchiato all'interno.";
 	TEXT[1]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -172,7 +172,7 @@ INSTANCE ItAt_TalbinsLurkerSkin (C_Item)
 };
 
 //---------------------------------------------------------------------
-//	Drachen-Ei	(f¸r DJG only Ambient auftrag)
+//	Drachen-Ei	(f√ºr DJG only Ambient auftrag)
 //---------------------------------------------------------------------
 INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 {	
@@ -187,7 +187,7 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	description				=	name;
-	TEXT[0]					=	"L'uovo Ë caldo e si sente";
+	TEXT[0]					=	"L'uovo √® caldo e si sente";
 	TEXT[1]					=	"un rumore provenire dall'interno.";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";
@@ -195,7 +195,7 @@ INSTANCE ItAt_DragonEgg_MIS	(C_ITEM)
 };
 
 //---------------------------------------------------------------------
-//	OrcEliteRing (f¸r PAL only Ambient auftrag)
+//	OrcEliteRing (f√ºr PAL only Ambient auftrag)
 //---------------------------------------------------------------------
 
 INSTANCE ItRi_OrcEliteRing(C_Item)
@@ -203,7 +203,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 	name 					=	"Anello del signore degli orchi";
 
 	mainflag 				=	ITEM_KAT_MAGIC;
-	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Muﬂ so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
+	flags 					=	ITEM_MISSION|ITEM_RING|ITEM_MULTI; //Joly: Mu√ü so bleiben, sonst XP und Gold Exploit (Lord Hagen die Dinger bringen!)
 
 	value 					=	Value_OrcEliteRing;
 
@@ -216,7 +216,7 @@ INSTANCE ItRi_OrcEliteRing(C_Item)
 
 	description				= 	name;
 
-	TEXT[0]					=	"L'anello Ë grezzo e sembra";
+	TEXT[0]					=	"L'anello √® grezzo e sembra";
 	TEXT[1]					=	"stranamente freddo";
 	TEXT[2]					=	"";
 	TEXT[3]					=	"";

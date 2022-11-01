@@ -1,5 +1,5 @@
 // *************************************
-// NSC steht mit verschr‰nkten Armen rum
+// NSC steht mit verschr√§nkten Armen rum
 // *************************************
 
 func void ZS_Stand_WP()

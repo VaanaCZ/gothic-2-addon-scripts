@@ -41,8 +41,8 @@ FUNC VOID DIA_Addon_10026_Wache_Hi_Info()
 	if (Sklaven_Flucht == FALSE)
 	{	
 		CreateInvItems (self, ItFo_Bacon,1);
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//È un vero peccato che abbiamo ancora così pochi schiavi. Presto dovremo procurarcene di nuovi.
-		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Questi sono praticamente sfiniti. Probabilmente perché mangiano così poco. (ride)
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_01");//Ãˆ un vero peccato che abbiamo ancora cosÃ¬ pochi schiavi. Presto dovremo procurarcene di nuovi.
+		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_02");//Questi sono praticamente sfiniti. Probabilmente perchÃ© mangiano cosÃ¬ poco. (ride)
 		B_UseItem (self, ItFo_Bacon);
 		
 		AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Hi_13_03");//Comunque, piuttosto che dare a questi cani un pezzo di carne mando di nuovo a lavorare gli scavatori.
@@ -73,7 +73,7 @@ FUNC INT DIA_Addon_10026_Wache_Gruft_Condition()
 FUNC VOID DIA_Addon_10026_Wache_Gruft_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10026_Wache_Gruft_15_00");//Sai qualcosa della tomba?
-	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//Sì. La tomba è dietro a questo passaggio.
+	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_01");//SÃ¬. La tomba Ã¨ dietro a questo passaggio.
 	AI_Output (self, other, "DIA_Addon_BDT_10026_Wache_Gruft_13_02");//(impassibile) Segui i corpi e la troverai.
 };
 

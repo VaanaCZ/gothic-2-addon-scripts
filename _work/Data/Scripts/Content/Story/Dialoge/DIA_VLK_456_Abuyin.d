@@ -76,7 +76,7 @@ FUNC INT DIA_Abuyin_Hallo_Condition()
 };
 FUNC VOID DIA_Abuyin_Hallo_Info()
 {	
-	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_00");//(riflettendo) ... Che strano. Ho l'impressione di averti gi‡ incontrato, viandante...
+	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_00");//(riflettendo) ... Che strano. Ho l'impressione di averti gi√† incontrato, viandante...
 	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_01");//Be'... i misteri del tempo e dello spazio sono profondi... Ma perdona la mia scortesia, figlio della pazienza. Non ti ho neppure salutato ancora.
 	AI_Output (self, other,"DIA_Addon_Abuyin_Hallo_13_02");//Benvenuto, accomodati sui miei umili tappeti e fatti una fumatina in santa pace.
 };
@@ -99,7 +99,7 @@ FUNC INT DIA_Abuyin_du_Condition()
 FUNC VOID DIA_Abuyin_du_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_du_15_00");//Chi sei?
-	AI_Output (self, other,"DIA_Abuyin_du_13_01");//Il mio nome Ë Abuyin ibn Djadir ibn Omar Kalid ben Hadji al Sharidi. Sono un veggente e un profeta, astrologo e forntitore di tabacco.
+	AI_Output (self, other,"DIA_Abuyin_du_13_01");//Il mio nome √® Abuyin ibn Djadir ibn Omar Kalid ben Hadji al Sharidi. Sono un veggente e un profeta, astrologo e forntitore di tabacco.
 };
 // ************************************************************
 // 			  		Kraut
@@ -148,11 +148,11 @@ FUNC INT DIA_Abuyin_anderen_Condition()
 FUNC VOID DIA_Abuyin_anderen_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_anderen_15_00");//Hai anche altri tipi di tabacco?
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_01");//Io offro solamente il tabacco migliore. Questo aroma di mela Ë una sinfonia della mia terra natale, le Isole Meridionali.
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_02");//Ma, naturalmente, sono sempre aperto a provare differenti tipi di tabacco, se qualcuno dovesse riuscire a produrne di buona qualit‡.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_01");//Io offro solamente il tabacco migliore. Questo aroma di mela √® una sinfonia della mia terra natale, le Isole Meridionali.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_02");//Ma, naturalmente, sono sempre aperto a provare differenti tipi di tabacco, se qualcuno dovesse riuscire a produrne di buona qualit√†.
 	AI_Output (other, self,"DIA_Abuyin_anderen_15_03");//Come viene fatto?
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_04");//Cominciare con il mio tabacco alla mela Ë la base, dopodichÈ si prova a combinarlo con altri ingredienti.
-	AI_Output (self, other,"DIA_Abuyin_anderen_13_05");//Tutto ciÚ viene fatto sul banco dell'alchimista, a condizione che tu conosca le basi dell'alchimia.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_04");//Cominciare con il mio tabacco alla mela √® la base, dopodich√© si prova a combinarlo con altri ingredienti.
+	AI_Output (self, other,"DIA_Abuyin_anderen_13_05");//Tutto ci√≤ viene fatto sul banco dell'alchimista, a condizione che tu conosca le basi dell'alchimia.
 };
 // ************************************************************
 // 			  	Woher 
@@ -176,8 +176,8 @@ FUNC INT DIA_Abuyin_Woher_Condition()
 FUNC VOID DIA_Abuyin_Woher_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_Woher_15_00");//Dove si trova il tabacco alla mela?
-	AI_Output (self, other,"DIA_Abuyin_Woher_13_01");//Ti ne darÚ due porzioni, star‡ poi alla tua saggezza decidere come utilizzarle.
-	AI_Output (self, other,"DIA_Abuyin_Woher_13_02");//Se ne desideri di pi˘, allora vai da Zuris, il maestro delle pozioni. Lui produce e vende tabacco.
+	AI_Output (self, other,"DIA_Abuyin_Woher_13_01");//Ti ne dar√≤ due porzioni, star√† poi alla tua saggezza decidere come utilizzarle.
+	AI_Output (self, other,"DIA_Abuyin_Woher_13_02");//Se ne desideri di pi√π, allora vai da Zuris, il maestro delle pozioni. Lui produce e vende tabacco.
 	
 	B_GiveInvItems (self, other, ItMi_ApfelTabak,2);
 };
@@ -273,7 +273,7 @@ FUNC VOID DIA_Abuyin_Mischung_Super ()
 	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_03");//Ho mescolato il tabacco con il miele.
 	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_04");//Hai fatto bene, Padre dell'arte della miscela. Sarei onorato di riempire le mie miserabili pipe con questa.
 	AI_Output (other, self,"DIA_Abuyin_Mischung_Super_15_05");//Allora fallo.
-	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_06");//Grazie, figlio della generosit‡. Nessun'altra miscela Ë buona quanto questa. Ne comprerÚ ogni singolo grammo che riuscirai a portarmi.
+	AI_Output (self, other,"DIA_Abuyin_Mischung_Super_13_06");//Grazie, figlio della generosit√†. Nessun'altra miscela √® buona quanto questa. Ne comprer√≤ ogni singolo grammo che riuscirai a portarmi.
 	
 	Abuyin_Honigtabak = TRUE;
 	B_GivePlayerXP ((XP_Ambient)*2);
@@ -311,7 +311,7 @@ FUNC VOID DIA_Abuyin_Trade_Info()
 	B_GiveInvItems (other, self, ItmI_HonigTabak, Npc_HasItems (other, Itmi_Honigtabak));
 	B_GiveInvItems (self, other, ItmI_Gold, Abuyin_Score);
 	
-	AI_Output (self, other,"DIA_Abuyin_Trade_13_01");//» un vero piacere fare affari con te.
+	AI_Output (self, other,"DIA_Abuyin_Trade_13_01");//√à un vero piacere fare affari con te.
 };
 // ************************************************************
 // 			  		Herb - KrautPaket
@@ -335,9 +335,9 @@ FUNC INT DIA_Abuyin_Herb_Condition()
 FUNC VOID DIA_Abuyin_Herb_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_Herb_15_00");//Ti interessa questa confezione di erbe?
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_01");//Una confezione di erbe... non Ë l'erba di palude, vero? Oh, portala via, Figlio dell'Imprevidenza.
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_02");//Se la guardia cittadina dovesse scoprirmi con questa, mi getter‡ in galera e tu non farai una fine migliore!
-	AI_Output (self, other,"DIA_Abuyin_Herb_13_03");//Se hai intenzione di vendere questa roba, ti avviso, lascia la citt‡.
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_01");//Una confezione di erbe... non √® l'erba di palude, vero? Oh, portala via, Figlio dell'Imprevidenza.
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_02");//Se la guardia cittadina dovesse scoprirmi con questa, mi getter√† in galera e tu non farai una fine migliore!
+	AI_Output (self, other,"DIA_Abuyin_Herb_13_03");//Se hai intenzione di vendere questa roba, ti avviso, lascia la citt√†.
 	AI_Output (self, other,"DIA_Abuyin_Herb_13_04");//Prova a disfartene fuori dalle mura cittadina, qui attirerai solo guai.
 };
 // ************************************************************
@@ -363,10 +363,10 @@ FUNC INT DIA_Abuyin_Weissagung_Condition()
 FUNC VOID DIA_Abuyin_Weissagung_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_00");//Puoi rivelarmi una profezia?
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_01");//Sono al tuo servizio per una somma modesta, grande padre della generosit‡.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_01");//Sono al tuo servizio per una somma modesta, grande padre della generosit√†.
 	AI_Output (other, self,"DIA_Abuyin_Weissagung_15_02");//Quanto vuoi?
 	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_03");//Per 25 misere monete, posso dare un'occhiata al tuo futuro.
-	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_04");//Ma ricorda, il futuro Ë sempre incerto. Tutto quello che posso fare Ë vedere frammenti nel tempo.
+	AI_Output (self, other,"DIA_Abuyin_Weissagung_13_04");//Ma ricorda, il futuro √® sempre incerto. Tutto quello che posso fare √® vedere frammenti nel tempo.
 };
 // ************************************************************
 // 			Weisagen lassen Kapitel 1
@@ -378,7 +378,7 @@ INSTANCE DIA_Abuyin_Zukunft(C_INFO)
 	condition	= DIA_Abuyin_Zukunft_Condition;
 	information	= DIA_Abuyin_Zukunft_Info;
 	permanent	= TRUE;
-	description	= "Predici il mio futuro (paga 25 monete díoro)";
+	description	= "Predici il mio futuro (paga 25 monete d‚Äôoro)";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft_permanent;
@@ -398,7 +398,7 @@ FUNC VOID DIA_Abuyin_Zukunft_Info()
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 25)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_01");//Come vuoi, cercatore della conoscenza. Ora entrerÚ in stato di trance. Sei pronto?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_13_01");//Come vuoi, cercatore della conoscenza. Ora entrer√≤ in stato di trance. Sei pronto?
 		Info_ClearChoices (DIA_Abuyin_Zukunft);
 		Info_AddChoice (DIA_Abuyin_Zukunft,"Sono pronto!",DIA_Abuyin_Zukunft_Trance);
 	}
@@ -414,14 +414,14 @@ FUNC VOID DIA_Abuyin_Zukunft_Trance()
 		Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 		
 		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_00");//(Trance) ...Orchi... di guardia ad un ingresso... un vecchio tunnel... la Valle delle Miniere...
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_01");//(Trance) ...Uomini in armature scintillanti... Uno stregone... Il tuo amico Ë con loro... Ti sta aspettando...
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_01");//(Trance) ...Uomini in armature scintillanti... Uno stregone... Il tuo amico √® con loro... Ti sta aspettando...
 		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_02");//(Trance) ...Fuoco! Un attacco... una creatura potente... le fiamme... molti... moriranno...
 		
-		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_00");//(Trance) ... cosa ... ? Una citt‡... Rovine... Quarhodron a Jharkendar ...
-		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_01");//(Trance) ... Ë stato evocato... Quarhodron a Jharkendar!
+		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_00");//(Trance) ... cosa ... ? Una citt√†... Rovine... Quarhodron a Jharkendar ...
+		AI_Output (self, other,"DIA_Addon_Abuyin_Zukunft_Trance_13_01");//(Trance) ... √® stato evocato... Quarhodron a Jharkendar!
 		
 		AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_03");//...mi dispiace... La visione Ë terminata. Non c'Ë nient'altro che posso dirti.
+		AI_Output (self, other,"DIA_Abuyin_Zukunft_Trance_13_03");//...mi dispiace... La visione √® terminata. Non c'√® nient'altro che posso dirti.
 		
 		DIA_Abuyin_Zukunft_permanent = TRUE; 
 		Abuyin_Zukunft = 1;
@@ -439,7 +439,7 @@ INSTANCE DIA_Abuyin_Nochmal(C_INFO)
 	condition	= DIA_Abuyin_Nochmal_Condition;
 	information	= DIA_Abuyin_Nochmal_Info;
 	permanent	= TRUE;
-	description	= "Puoi rivelarmi uníaltra profezia?";
+	description	= "Puoi rivelarmi un‚Äôaltra profezia?";
 };                       
 FUNC INT DIA_Abuyin_Nochmal_Condition()
 {	
@@ -451,13 +451,13 @@ FUNC INT DIA_Abuyin_Nochmal_Condition()
 FUNC VOID DIA_Abuyin_Nochmal_Info()
 {	
 	AI_Output (other, self,"DIA_Abuyin_Nochmal_15_00");//Puoi fare un'altra profezia?
-	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_01");//Oh, figlio del futuro misterioso, non Ë nei miei poteri sollevare il velo del tempo.
-	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_02");//Solo quando il tempo mi mander‡ un altro presagio sarÚ in grado di vedere di nuovo nel tuo futuro.
+	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_01");//Oh, figlio del futuro misterioso, non √® nei miei poteri sollevare il velo del tempo.
+	AI_Output (self, other,"DIA_Abuyin_Nochmal_13_02");//Solo quando il tempo mi mander√† un altro presagio sar√≤ in grado di vedere di nuovo nel tuo futuro.
 	
 	if (Abuyin_Erzaehlt == FALSE)
 	{
-		AI_Output (other, self,"DIA_Abuyin_Nochmal_15_03");//E quando sar‡?
-		AI_Output (self, other,"DIA_Abuyin_Nochmal_13_04");//Quando il futuro sar‡ diventato presente e tu avrai proseguito nel tuo viaggio.
+		AI_Output (other, self,"DIA_Abuyin_Nochmal_15_03");//E quando sar√†?
+		AI_Output (self, other,"DIA_Abuyin_Nochmal_13_04");//Quando il futuro sar√† diventato presente e tu avrai proseguito nel tuo viaggio.
 		Abuyin_Erzaehlt = TRUE;
 	};
 };
@@ -473,7 +473,7 @@ FUNC VOID DIA_Abuyin_Nochmal_Info()
 FUNC void B_Abuyin_Weissagung ()
 {	
 	AI_Output (other, self,"B_Abuyin_Weissagung_15_00");//Puoi rivelarmi una profezia?
-	AI_Output (self, other,"B_Abuyin_Weissagung_13_01");//SÏ, il tempo Ë passato Ë ti farÚ una profezia in cambio di poche monete.
+	AI_Output (self, other,"B_Abuyin_Weissagung_13_01");//S√¨, il tempo √® passato √® ti far√≤ una profezia in cambio di poche monete.
 	AI_Output (other, self,"B_Abuyin_Weissagung_15_02");//Quanto vuoi?
 };
 
@@ -513,7 +513,7 @@ INSTANCE DIA_Abuyin_Zukunft2(C_INFO)
 	condition	= DIA_Abuyin_Zukunft2_Condition;
 	information	= DIA_Abuyin_Zukunft2_Info;
 	permanent	= TRUE;
-	description	= "Predici il mio futuro (paga 100 monete díoro)";
+	description	= "Predici il mio futuro (paga 100 monete d‚Äôoro)";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft2_permanent;
@@ -533,7 +533,7 @@ FUNC VOID DIA_Abuyin_Zukunft2_Info()
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 100)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_01");//Come vuoi, figlio del valore. Ora entrerÚ in stato di trance. Sei pronto?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft2_13_01");//Come vuoi, figlio del valore. Ora entrer√≤ in stato di trance. Sei pronto?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft2);
 		Info_AddChoice (DIA_Abuyin_Zukunft2,"Sono pronto!",DIA_Abuyin_Zukunft2_Trance);
@@ -549,12 +549,12 @@ FUNC VOID DIA_Abuyin_Zukunft2_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_00");//(Trance) ÖUn mercenario, avr‡ bisogno di te... un omicidio terribile... l'Occhio...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_01");//(Trance) ...Un sinistro seguace... Stanno arrivando... ti stanno cercando... un guardiano cadr‡...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_02");//(Trance) ...Ma i tre si uniranno... solo allora riceverai ciÚ che ti spetta...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_00");//(Trance) ‚Ä¶Un mercenario, avr√† bisogno di te... un omicidio terribile... l'Occhio...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_01");//(Trance) ...Un sinistro seguace... Stanno arrivando... ti stanno cercando... un guardiano cadr√†...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_02");//(Trance) ...Ma i tre si uniranno... solo allora riceverai ci√≤ che ti spetta...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_03");//Questo Ë tutto. Non c'Ë nient'altro che posso dirti.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft2_Trance_13_03");//Questo √® tutto. Non c'√® nient'altro che posso dirti.
 	
 	DIA_Abuyin_Zukunft2_permanent = TRUE; 
 	Abuyin_Zukunft = 2;
@@ -606,7 +606,7 @@ INSTANCE DIA_Abuyin_Zukunft3(C_INFO)
 	condition	= DIA_Abuyin_Zukunft3_Condition;
 	information	= DIA_Abuyin_Zukunft3_Info;
 	permanent	= TRUE;
-	description	= "Predici il mio futuro (paga 250 monete díoro)";
+	description	= "Predici il mio futuro (paga 250 monete d‚Äôoro)";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft3_permanent;
@@ -626,7 +626,7 @@ FUNC VOID DIA_Abuyin_Zukunft3_Info()
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 250)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_01");//Come vuoi, figlio della conoscenza. Ora entrerÚ in stato di trance. Sei pronto?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft3_13_01");//Come vuoi, figlio della conoscenza. Ora entrer√≤ in stato di trance. Sei pronto?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft3);
 		Info_AddChoice (DIA_Abuyin_Zukunft3,"Sono pronto!",DIA_Abuyin_Zukunft3_Trance);
@@ -642,12 +642,12 @@ FUNC VOID  DIA_Abuyin_Zukunft3_Trance()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_00");//(Trance) ...tu che incarni la forza... » il destino di nessun altro se non tuo...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_00");//(Trance) ...tu che incarni la forza... √à il destino di nessun altro se non tuo...
 	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_01");//(Trance) ...Attraverso il fuoco e la neve... Tra il ghiaccio e le fiamme...
 	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_02");//(Trance )...Uomini in armatura straniere... una palude... lucertole... ti aspettano...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_03");//Questo Ë tutto. Non c'Ë nient'altro che posso dirti.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft3_Trance_13_03");//Questo √® tutto. Non c'√® nient'altro che posso dirti.
 	
 	DIA_Abuyin_Zukunft3_permanent = TRUE; 
 	Abuyin_Zukunft = 3;
@@ -699,7 +699,7 @@ INSTANCE DIA_Abuyin_Zukunft4(C_INFO)
 	condition	= DIA_Abuyin_Zukunft4_Condition;
 	information	= DIA_Abuyin_Zukunft4_Info;
 	permanent	= TRUE;
-	description	= "Predici il mio futuro (paga 500 monete díoro)";
+	description	= "Predici il mio futuro (paga 500 monete d‚Äôoro)";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft4_permanent;
@@ -719,7 +719,7 @@ FUNC VOID DIA_Abuyin_Zukunft4_Info()
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 500)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_01");//Come vuoi, figlio della conoscenza. Ora entrerÚ in stato di trance. Sei pronto?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft4_13_01");//Come vuoi, figlio della conoscenza. Ora entrer√≤ in stato di trance. Sei pronto?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft4);
 		Info_AddChoice (DIA_Abuyin_Zukunft4,"Sono pronto!",DIA_Abuyin_Zukunft4_Trance);	
@@ -740,7 +740,7 @@ FUNC VOID DIA_Abuyin_Zukunft4_Trance()
 	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_02");//(Trance) ...un tempio... si trova nel reame di Adanos... nascosto dalla nebbia...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_03");//Questo Ë tutto. Non c'Ë nient'altro che posso dirti.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft4_Trance_13_03");//Questo √® tutto. Non c'√® nient'altro che posso dirti.
 	
 	DIA_Abuyin_Zukunft4_permanent = TRUE; 
 	Abuyin_Zukunft = 4;
@@ -792,7 +792,7 @@ INSTANCE DIA_Abuyin_Zukunft5(C_INFO)
 	condition	= DIA_Abuyin_Zukunft5_Condition;
 	information	= DIA_Abuyin_Zukunft5_Info;
 	permanent	= TRUE;
-	description	= "Predici il mio futuro (paga 1000 monete díoro)";
+	description	= "Predici il mio futuro (paga 1000 monete d‚Äôoro)";
 };                    
 //---------------------------------------   
 var int DIA_Abuyin_Zukunft5_permanent;
@@ -812,7 +812,7 @@ FUNC VOID DIA_Abuyin_Zukunft5_Info()
 	
 	if B_GiveInvItems (other,self, ItMI_Gold, 1000)
 	{ 
-		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_01");//Come vuoi, figlio della conoscenza. Ora entrerÚ in stato di trance. Sei pronto?
+		AI_Output (self, other,"DIA_Abuyin_Zukunft5_13_01");//Come vuoi, figlio della conoscenza. Ora entrer√≤ in stato di trance. Sei pronto?
 		
 		Info_ClearChoices (DIA_Abuyin_Zukunft5);
 		Info_AddChoice (DIA_Abuyin_Zukunft5,"Sono pronto!",DIA_Abuyin_Zukunft5_Trance);
@@ -828,12 +828,12 @@ FUNC VOID DIA_Abuyin_Zukunft5_Trance ()
 	AI_PlayAni  (self,"T_MAGRUN_2_HEASHOOT");
 	Wld_PlayEffect("SPELLFX_TELEPORT",  self, self, 0, 0, 0, FALSE );
 	
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_00");//(Trance) ...L'oscurit‡ si diffonde nella regione... il male trionfer‡...
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_01");//(Trance) ...il Re perder‡ la sua guerra contro gli orchi...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_00");//(Trance) ...L'oscurit√† si diffonde nella regione... il male trionfer√†...
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_01");//(Trance) ...il Re perder√† la sua guerra contro gli orchi...
 	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_02");//(Trance) ...ritornerai, ma non troverai pace...
 	
 	AI_PlayAni  (self,"T_HEASHOOT_2_STAND");
-	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_03");//Questo Ë tutto. Non c'Ë nient'altro che posso dirti.
+	AI_Output (self, other,"DIA_Abuyin_Zukunft5_Trance_13_03");//Questo √® tutto. Non c'√® nient'altro che posso dirti.
 		
 	DIA_Abuyin_Zukunft5_permanent = TRUE; 
 	Abuyin_Zukunft = 5;

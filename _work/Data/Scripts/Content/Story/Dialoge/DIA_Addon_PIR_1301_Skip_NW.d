@@ -42,7 +42,7 @@ func void DIA_Addon_Skip_NW_Hallo_Info ()
 {
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_00"); //(irritato) Sei arrivato, finalmente. Sono ore che ti aspetto.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_01"); //(confuso) Aspetta un attimo. Tu non sei un mercante, vero?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_02"); //(arrabbiato) Dov'Ë Baltram?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Hallo_08_02"); //(arrabbiato) Dov'√® Baltram?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -69,7 +69,7 @@ func void DIA_Addon_Skip_NW_WerBistDu_Info ()
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_01"); //Non vedo come la cosa possa interessarti. Ma se proprio ci tieni a saperlo, mi chiamo Skip. Ti dice qualcosa?
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_WerBistDu_15_02"); //(fingendo di non capire) Chi?
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_03"); //Vorresti dirmi che non hai mai sentito parlare di Skip? Ma dove vivi, idiota?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_04"); //Sono uno dei criminali pi˘ ricercati di tutta Khorinis. Io e i miei ragazzi siamo il terrore delle acque che circondano questo schifo di isola.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_04"); //Sono uno dei criminali pi√π ricercati di tutta Khorinis. Io e i miei ragazzi siamo il terrore delle acque che circondano questo schifo di isola.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_WerBistDu_08_05"); //(indignato) Avanti, devi aver sentito parlare di me!
 	
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
@@ -81,7 +81,7 @@ func void DIA_Addon_Skip_NW_WerBistDu_ja ()
 {
 	AI_Output (other, self, "DIA_Addon_Skip_NW_WerBistDu_ja_15_00"); //Ma certo. Ora mi ricordo.
 	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_01"); //(perplesso) Dici davvero? Non hai mai sentito parlare di me?
-	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_02"); //Oh, cavolo! E io che pensavo di fare un salto in citt‡!
+	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_02"); //Oh, cavolo! E io che pensavo di fare un salto in citt√†!
 	AI_Output (self, other, "DIA_Addon_Skip_NW_WerBistDu_ja_08_03"); //Meno male che non l'ho fatto.
 
 	if (hero.guild != GIL_MIL)
@@ -102,14 +102,14 @@ func void DIA_Addon_Skip_NW_WerBistDu_ja ()
 func void DIA_Addon_Skip_NW_WerBistDu_keineAhnung ()
 {
 	AI_Output			(other, self, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_15_00"); //Dovrei conoscerti?
-	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_08_01"); //Bada a quel che dici, o il vecchio Skip ti dar‡ la lezione che meriti.
+	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_keineAhnung_08_01"); //Bada a quel che dici, o il vecchio Skip ti dar√† la lezione che meriti.
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
 };
 
 func void DIA_Addon_Skip_NW_WerBistDu_pirat ()
 {
 	AI_Output			(other, self, "DIA_Addon_Skip_NW_WerBistDu_pirat_15_00"); //Sei un pirata.
-	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_01"); //(irritato) SÏ, dannazione. Non si vede?! E un pirata furioso, per giunta.
+	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_01"); //(irritato) S√¨, dannazione. Non si vede?! E un pirata furioso, per giunta.
 	AI_Output			(self, other, "DIA_Addon_Skip_NW_WerBistDu_pirat_08_02"); //Mi annoio tanto che morderei le assi della nave.
 	Info_ClearChoices	(DIA_Addon_Skip_NW_WerBistDu);
 };
@@ -180,7 +180,7 @@ func void DIA_Addon_Skip_BaltramPaket_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_BaltramPaket_15_00"); //Ho un pacchetto per te, da parte di Baltram.
 	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_01"); //Cosa? Mi ha mandato un fattorino?
-	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_02"); //Cos'Ë, se la fa sotto per la paura? Oh beh. Che vuoi aspettarti da un taccagno come quello.
+	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_02"); //Cos'√®, se la fa sotto per la paura? Oh beh. Che vuoi aspettarti da un taccagno come quello.
 	B_GiveInvItems (other, self, ItMi_Packet_Baltram4Skip_Addon,1);
 	AI_Output	(other, self, "DIA_Addon_Skip_BaltramPaket_15_03"); //Dice che in cambio vuole 3 bottiglie del tuo rum.
 	AI_Output	(self, other, "DIA_Addon_Skip_BaltramPaket_08_04"); //(ride) Gli piacerebbe, eh? Non solo mi fa aspettare per un secolo e non ha neppure la decenza di presentarsi di persona, avanza pure pretese.
@@ -217,7 +217,7 @@ func int DIA_Addon_Skip_NW_Woher_Condition ()
 func void DIA_Addon_Skip_NW_Woher_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_Woher_15_00"); //Da dove vieni?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_01"); //Vuoi sapere dov'Ë il nostro nascondiglio?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_01"); //Vuoi sapere dov'√® il nostro nascondiglio?
 
 	if (hero.guild == GIL_MIL)
 	{
@@ -229,7 +229,7 @@ func void DIA_Addon_Skip_NW_Woher_Info ()
 	};
 
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_04"); //E poi comunque non riusciresti a trovarci lo stesso.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_05"); //L'isola di Khorinis Ë vasta, e nessuno arriva mai dove siamo noi, a meno che non abbia un'imbarcazione di qualche tipo.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_05"); //L'isola di Khorinis √® vasta, e nessuno arriva mai dove siamo noi, a meno che non abbia un'imbarcazione di qualche tipo.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_06"); //E poi dovresti anche sapere come muoverti tra le scogliere. Solo chi conosce il sentiero segreto riesce ad attraversarle.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Woher_08_07"); //Solo due persone conoscono il sentiero segreto, e tu non sei una di loro.
 };
@@ -260,8 +260,8 @@ func int DIA_Addon_Skip_SCSawGreg_Condition ()
 func void DIA_Addon_Skip_SCSawGreg_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_00"); //Conosci un tizio con una benda sull'occhio?
-	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_01"); //C'Ë un sacco di gente con una benda sull'occhio.
-	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_02"); //C'Ë un tizio che viaggia per tutta Khorinis e che sembra conoscerti bene.
+	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_01"); //C'√® un sacco di gente con una benda sull'occhio.
+	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_02"); //C'√® un tizio che viaggia per tutta Khorinis e che sembra conoscerti bene.
 	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_03"); //Non so chi sia. Non ho rapporti con la gente di terra.
 	AI_Output	(other, self, "DIA_Addon_Skip_SCSawGreg_15_04"); //Ma...
 	AI_Output	(self, other, "DIA_Addon_Skip_SCSawGreg_08_05"); //Lascia perdere, non mi interessa proprio.
@@ -293,11 +293,11 @@ func int DIA_Addon_Skip_NW_MissingPeople_Condition ()
 func void DIA_Addon_Skip_NW_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_MissingPeople_15_00"); //Numerosi cittadini sono scomparsi, e tutto sembra suggerire che tu sia coinvolto nella faccenda.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_01"); //(sentendosi smascherato) Ehm... Maledizione, non Ë come pensi.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_01"); //(sentendosi smascherato) Ehm... Maledizione, non √® come pensi.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_02"); //Ti sembro un mercante di schiavi, per caso? No, io mi limito alle merci. Di che tipo e provenienza, non mi riguarda affatto.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_03"); //Abbiamo trasportato ogni genere di roba per quei porci.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_04"); //All'inizio erano merci normali... Beh, sÏ, a volte di contrabbando.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_05"); //Ma poi hanno cominciato a rapire gli abitanti della citt‡. Non ho idea di cosa intendano farsene.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_04"); //All'inizio erano merci normali... Beh, s√¨, a volte di contrabbando.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_05"); //Ma poi hanno cominciato a rapire gli abitanti della citt√†. Non ho idea di cosa intendano farsene.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_MissingPeople_08_06"); //Noi li abbiamo solo traghettati.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -331,7 +331,7 @@ func void DIA_Addon_Skip_NW_Dexter_Info ()
 
 func void B_Skip_SaysDextersName ()
 {
-	AI_Output	(self, other, "DIA_Addon_Skip_SaysDextersName_08_00"); //Ora ricordo il suo nome! Dexter. SÏ, mi pare si chiamasse Dexter.
+	AI_Output	(self, other, "DIA_Addon_Skip_SaysDextersName_08_00"); //Ora ricordo il suo nome! Dexter. S√¨, mi pare si chiamasse Dexter.
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_WhoStolePeople, LOG_RUNNING);
@@ -351,7 +351,7 @@ instance DIA_Addon_Skip_NW_Name		(C_INFO)
 	condition	 = 	DIA_Addon_Skip_NW_Name_Condition;
 	information	 = 	DIA_Addon_Skip_NW_Name_Info;
 
-	description	 = 	"Per me 'briganti' non Ë abbastanza: voglio un nome...";
+	description	 = 	"Per me 'briganti' non √® abbastanza: voglio un nome...";
 };
 
 func int DIA_Addon_Skip_NW_Name_Condition ()
@@ -366,7 +366,7 @@ func int DIA_Addon_Skip_NW_Name_Condition ()
 func void DIA_Addon_Skip_NW_Name_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_Name_15_00"); //Non mi basta che tu mi parli di 'briganti'. Voglio un nome...
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_01"); //Vuoi sapere chi Ë il capo dei briganti? Accidenti, non me lo ricordo... Com'Ë che si chiamava quel bastardo?
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_01"); //Vuoi sapere chi √® il capo dei briganti? Accidenti, non me lo ricordo... Com'√® che si chiamava quel bastardo?
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_02"); //Mmm... Non riesco a ricordarmi il suo nome. Eppure non era complicato.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_03"); //Ma posso mostrarti dove trovare il capo della banda in questa parte di Khorinis.
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_04"); //Hai una mappa decente?
@@ -378,7 +378,7 @@ func void DIA_Addon_Skip_NW_Name_Info ()
 		|| (Npc_HasItems (other,ItWr_Map_Caves_MIS) == TRUE)
 		{
 			AI_Output	(other, self, "DIA_Addon_Skip_NW_Name_15_05"); //Ho una mappa proprio qui.
-			AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_06"); //Ma qualcuno l'ha gi‡ scarabocchiata. Che piacere ci sarebbe a scriverci sopra?
+			AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_06"); //Ma qualcuno l'ha gi√† scarabocchiata. Che piacere ci sarebbe a scriverci sopra?
 		}
 		else
 		{
@@ -386,9 +386,9 @@ func void DIA_Addon_Skip_NW_Name_Info ()
 		};
 		
 		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_08"); //Allora dovrai accontentarti di una descrizione.
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_09"); //C'Ë una grossa fattoria a est, credo che appartenga a un certo Onar.
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_10"); //Quel tizio possiede dei vasti appezzamenti di terreno. A sud di quei campi, c'Ë una fortezza che sorge su una rupe.
-		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_11"); //LÏ troverai il tuo uomo.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_09"); //C'√® una grossa fattoria a est, credo che appartenga a un certo Onar.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_10"); //Quel tizio possiede dei vasti appezzamenti di terreno. A sud di quei campi, c'√® una fortezza che sorge su una rupe.
+		AI_Output	(self, other, "DIA_Addon_Skip_NW_Name_08_11"); //L√¨ troverai il tuo uomo.
 		B_Skip_SaysDextersName ();
 	};
 };
@@ -419,7 +419,7 @@ func int DIA_Addon_Skip_NW_Landkarte_Condition ()
 func void DIA_Addon_Skip_NW_Landkarte_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_Landkarte_15_00"); //Ecco, ho una mappa di Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_01"); //Ti segnerÚ la posizione del nascondiglio di quel tizio.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_01"); //Ti segner√≤ la posizione del nascondiglio di quel tizio.
 	B_GiveInvItems (other, self, ItWr_Map_NewWorld,1);
 	B_Skip_SaysDextersName ();
 	AI_Output	(self, other, "DIA_Addon_Skip_NW_Landkarte_08_02"); //Ecco la tua mappa.
@@ -455,5 +455,5 @@ func int DIA_Addon_Skip_NW_Wohin_Condition ()
 func void DIA_Addon_Skip_NW_Wohin_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Skip_NW_Wohin_15_00"); //Dove hai portato quella gente?
-	AI_Output	(self, other, "DIA_Addon_Skip_NW_Wohin_08_01"); //Te l'ho detto, non ti rivelerÚ la posizione del nostro accampamento.
+	AI_Output	(self, other, "DIA_Addon_Skip_NW_Wohin_08_01"); //Te l'ho detto, non ti riveler√≤ la posizione del nostro accampamento.
 };

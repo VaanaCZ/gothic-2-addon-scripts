@@ -8,11 +8,11 @@ func void B_DIA_Addon_Riordian_Teach_15_00 ()
 };
 func void  B_DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00 ()
 {
-	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Ora il tuo fuoco fatuo puÚ trovare altre cose che puoi usare.
+	AI_Output	(self, other, "DIA_Addon_Riordian_Teach_WISPSKILL_X_10_00"); //Ora il tuo fuoco fatuo pu√≤ trovare altre cose che puoi usare.
 };
 func void B_DIA_Addon_Riordian_Teach_10_08 () 
 {
-	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Ora il tuo fuoco fatuo cercher‡ oggetti preziosi. Non posso mostrarti altro.
+	AI_Output 	(self, other, "DIA_Addon_Riordian_Teach1_10_00"); //Ora il tuo fuoco fatuo cercher√† oggetti preziosi. Non posso mostrarti altro.
 };
 func void B_DIA_Addon_Riordian_Teach_10_01 () 
 {

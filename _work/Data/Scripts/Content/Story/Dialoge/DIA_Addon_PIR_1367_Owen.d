@@ -92,7 +92,7 @@ func void DIA_Addon_Owen_Hello_Info ()
 	|| (Hlp_IsItem(itm, ItAr_BDT_H) == TRUE))
 	
 	{
-	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_04"); //Ad essere sinceri, sì.
+	 	AI_Output	(self, other, "DIA_Addon_Owen_Hello_13_04"); //Ad essere sinceri, sÃ¬.
 	}
 	else
 	{
@@ -179,7 +179,7 @@ func void DIA_Addon_Owen_Henry_Info ()
 
 	if (MIS_Owen_FindMalcom != LOG_SUCCESS)
 	{
-		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_01"); //Prima voglio scoprire cos'è successo al mio amico Malcolm.
+		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_01"); //Prima voglio scoprire cos'Ã¨ successo al mio amico Malcolm.
 	
 			
 	}
@@ -188,7 +188,7 @@ func void DIA_Addon_Owen_Henry_Info ()
 		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_02"); //Rilassati. Prima o poi glielo porto, quel suo stupido legno.
 		AI_Output	(self, other, "DIA_Addon_Owen_Henry_13_03"); //Riferiscigli questo.
 		
-		B_LogEntry (TOPIC_Addon_HolOwen,"Dovrei dire a Henry che Owen consegnerà la legna.");
+		B_LogEntry (TOPIC_Addon_HolOwen,"Dovrei dire a Henry che Owen consegnerÃ  la legna.");
 		
 		AI_StopProcessInfos (self);
 		Owen_ComesToHenry = TRUE;
@@ -212,7 +212,7 @@ instance DIA_Addon_Owen_MalcomStunt		(C_INFO)
 	condition	= DIA_Addon_Owen_MalcomStunt_Condition;
 	information	= DIA_Addon_Owen_MalcomStunt_Info;
 
-	description	= "Qual è il problema???";
+	description	= "Qual Ã¨ il problema???";
 };
 func int DIA_Addon_Owen_MalcomStunt_Condition ()
 {
@@ -223,20 +223,20 @@ func int DIA_Addon_Owen_MalcomStunt_Condition ()
 };
 func void DIA_Addon_Owen_MalcomStunt_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //Che c'è?
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //Il mio amico Malcolm è scomparso.
+	AI_Output (other, self, "DIA_Addon_Owen_MalcomStunt_15_00"); //Che c'Ã¨?
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_01"); //Il mio amico Malcolm Ã¨ scomparso.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_02"); //Uno di quei predatori ci ha attaccati.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_03"); //Ci siamo rifugiati qui.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_04"); //Ma il predatore ci ha seguiti.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcolm e la bestia hanno lottato, poi sono caduti in quel buco laggiù.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_05"); //Malcolm e la bestia hanno lottato, poi sono caduti in quel buco laggiÃ¹.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_06"); //Sembra pieno d'acqua.
-	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Il predatore e Malcolm hanno combattuto per un po', poi non si è sentito più niente.
+	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_07"); //Il predatore e Malcolm hanno combattuto per un po', poi non si Ã¨ sentito piÃ¹ niente.
 	AI_Output (self, other, "DIA_Addon_Owen_MalcomStunt_13_08"); //Non so neppure se sia ancora vivo.
 	
 	Log_CreateTopic (TOPIC_Addon_MalcomsStunt,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Addon_MalcomsStunt,LOG_RUNNING);
-	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Owen vuole sapere se il suo amico Malcom è ancora vivo. È caduto insieme a un predatore in un buco profondo vicino al fuoco.");
-	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Owen ha detto che laggiù c'è dell'acqua e che Malcom era ancora vivo. Ma dopo un po' non si è sentito più niente.");
+	B_LogEntry	(TOPIC_Addon_MalcomsStunt,"Owen vuole sapere se il suo amico Malcom Ã¨ ancora vivo. Ãˆ caduto insieme a un predatore in un buco profondo vicino al fuoco.");
+	Log_AddEntry	(TOPIC_Addon_MalcomsStunt,"Owen ha detto che laggiÃ¹ c'Ã¨ dell'acqua e che Malcom era ancora vivo. Ma dopo un po' non si Ã¨ sentito piÃ¹ niente.");
 	
 	MIS_Owen_FindMalcom = LOG_RUNNING;
 };
@@ -278,7 +278,7 @@ instance DIA_Addon_Owen_MalcomDead		(C_INFO)
 	condition	= DIA_Addon_Owen_MalcomDead_Condition;
 	information	= DIA_Addon_Owen_MalcomDead_Info;
 
-	description	= "Il tuo amico Malcolm è morto.";
+	description	= "Il tuo amico Malcolm Ã¨ morto.";
 };
 func int DIA_Addon_Owen_MalcomDead_Condition ()
 {
@@ -291,7 +291,7 @@ func int DIA_Addon_Owen_MalcomDead_Condition ()
 };
 func void DIA_Addon_Owen_MalcomDead_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Il tuo amico Malcolm è morto.
+	AI_Output	(other, self, "DIA_Addon_Owen_MalcomDead_15_00"); //Il tuo amico Malcolm Ã¨ morto.
 	AI_Output	(self, other, "DIA_Addon_Owen_MalcomDead_13_01"); //Lo sospettavo. Poveraccio. Avrei dovuto aiutarlo, dopo tutto.
 	if (SC_MadeStunt == TRUE)
 	{

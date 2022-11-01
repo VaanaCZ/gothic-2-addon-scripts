@@ -55,7 +55,7 @@ INSTANCE DIA_BAU_16_PEOPLE(C_INFO)
 	condition	= DIA_BAU_16_PEOPLE_Condition;
 	information	= DIA_BAU_16_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT DIA_BAU_16_PEOPLE_Condition()
@@ -65,7 +65,7 @@ FUNC INT DIA_BAU_16_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_16_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Chi Ë il capo, qui?
+	AI_Output (other, self, "DIA_BAU_16_PEOPLE_15_00"); //Chi √® il capo, qui?
 	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_01"); //Se vuoi saperlo, per me sono i mercenari che comandano.
 	AI_Output (self, other, "DIA_BAU_16_PEOPLE_16_02"); //Onar li paga, ma la maggior parte di loro fa quel che gli pare.
 };
@@ -91,7 +91,7 @@ FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Cosa mi dici di questa zona?
 	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Ci sono tre fattorie qui. Quella di Onar a est e quella di Sekob al confine nord della valle.
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //A sud-ovest c'Ë una strada che conduce all'altopiano. LÏ si trova la fattoria di Bengar.
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //A sud-ovest c'√® una strada che conduce all'altopiano. L√¨ si trova la fattoria di Bengar.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_16_STANDARD(C_INFO)
 	condition	= DIA_BAU_16_STANDARD_Condition;
 	information	= DIA_BAU_16_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_BAU_16_STANDARD_Condition()
 {
@@ -111,16 +111,16 @@ func INT DIA_BAU_16_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_16_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_BAU_16_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Le truppe provenienti dalla citt‡ non portano pi˘ via il nostro raccolto e il nostro bestiame! Ora che siamo in grado di difenderci da soli, preferiscono non rischiare!
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Le truppe provenienti dalla citt√† non portano pi√π via il nostro raccolto e il nostro bestiame! Ora che siamo in grado di difenderci da soli, preferiscono non rischiare!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Dicono che nella Valle delle Miniere si stia radunando un esercito e che sar‡ qui a momenti.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //Dicono che nella Valle delle Miniere si stia radunando un esercito e che sar√† qui a momenti.
 	};
 
 	if (Kapitel == 3)

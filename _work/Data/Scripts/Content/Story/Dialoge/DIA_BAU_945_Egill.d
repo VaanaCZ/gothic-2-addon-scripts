@@ -43,14 +43,14 @@ func int DIA_Egill_HALLO_Condition ()
 func void DIA_Egill_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_HALLO_15_00"); //Cosa succede?
-	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //È passato molto tempo dall'ultima volta che abbiamo visto uno straniero nella nostra regione che non voleva scuoiarci.
+	AI_Output			(self, other, "DIA_Egill_HALLO_08_01"); //Ãˆ passato molto tempo dall'ultima volta che abbiamo visto uno straniero nella nostra regione che non voleva scuoiarci.
 	AI_Output			(self, other, "DIA_Egill_HALLO_08_02"); //Spero di non sbagliarmi sul tuo conto.
 	AI_Output			(self, other, "DIA_Egill_HALLO_08_03"); //Io sono Egill.
 	
 	if (Hlp_IsValidNpc (Ehnim))
 		&& (!C_NpcIsDown (Ehnim))
 		{
-			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //E quello strano tizio laggiù è mio fratello Ehnim.
+			AI_Output			(self, other, "DIA_Egill_HALLO_08_04"); //E quello strano tizio laggiÃ¹ Ã¨ mio fratello Ehnim.
 		};
 };
 
@@ -94,7 +94,7 @@ instance DIA_Egill_FELDRAEUBER		(C_INFO)
 	condition	 = 	DIA_Egill_FELDRAEUBER_Condition;
 	information	 = 	DIA_Egill_FELDRAEUBER_Info;
 
-	description	 = 	"Perché non fai qualcosa per contrastare i predatori di campi?";
+	description	 = 	"PerchÃ© non fai qualcosa per contrastare i predatori di campi?";
 };
 
 func int DIA_Egill_FELDRAEUBER_Condition ()
@@ -107,9 +107,9 @@ func int DIA_Egill_FELDRAEUBER_Condition ()
 
 func void DIA_Egill_FELDRAEUBER_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //Perché non fate qualcosa per contrastare i razziatori dei campi?
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Stai scherzando. Da quando sono arrivato in questa fattoria, ho ucciso così tante bestie che ormai ho perso il conto.
-	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Ma, ahimé, continuano ad arrivarne sempre di nuove.
+	AI_Output			(other, self, "DIA_Egill_FELDRAEUBER_15_00"); //PerchÃ© non fate qualcosa per contrastare i razziatori dei campi?
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_01"); //Stai scherzando. Da quando sono arrivato in questa fattoria, ho ucciso cosÃ¬ tante bestie che ormai ho perso il conto.
+	AI_Output			(self, other, "DIA_Egill_FELDRAEUBER_08_02"); //Ma, ahimÃ©, continuano ad arrivarne sempre di nuove.
 };
 
 
@@ -146,7 +146,7 @@ func void DIA_Egill_STREIT2_Info ()
 {
 	AI_Output			(other, self, "DIA_Egill_STREIT2_15_00"); //Tuo fratello racconta una storia simile.
 	AI_Output			(self, other, "DIA_Egill_STREIT2_08_01"); //(con furbizia) Ah. Cosa ti ha detto esattamente?
-	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Che anch'egli si è sbarazzato di numerosi razziatori dei campi.
+	AI_Output			(other, self, "DIA_Egill_STREIT2_15_02"); //Che anch'egli si Ã¨ sbarazzato di numerosi razziatori dei campi.
 	AI_Output			(self, other, "DIA_Egill_STREIT2_08_03"); //Cosa? Quella femminuccia non riuscirebbe nemmeno a ritrovare la strada di casa da solo.
 	AI_Output			(self, other, "DIA_Egill_STREIT2_08_04"); //Digli che non dovrebbe vantarsi in questo modo.
 
@@ -165,7 +165,7 @@ instance DIA_Egill_STREIT4		(C_INFO)
 	condition	 = 	DIA_Egill_STREIT4_Condition;
 	information	 = 	DIA_Egill_STREIT4_Info;
 
-	description	 = 	"Ehnim è un po’ arrabbiato per questa faccenda.";
+	description	 = 	"Ehnim Ã¨ un poâ€™ arrabbiato per questa faccenda.";
 };
 
 func int DIA_Egill_STREIT4_Condition ()
@@ -185,8 +185,8 @@ func int DIA_Egill_STREIT4_Condition ()
 
 func void DIA_Egill_STREIT4_Info ()
 {
-	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim è un po’ arrabbiato per questa faccenda.
-	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Non dovrebbe sentirsi troppo sicuro di sé, altrimenti finirò col tagliargli la testa. Vai a riferirglielo.
+	AI_Output			(other, self, "DIA_Egill_STREIT4_15_00"); //Ehnim Ã¨ un poâ€™ arrabbiato per questa faccenda.
+	AI_Output			(self, other, "DIA_Egill_STREIT4_08_01"); //Non dovrebbe sentirsi troppo sicuro di sÃ©, altrimenti finirÃ² col tagliargli la testa. Vai a riferirglielo.
 
 	AI_StopProcessInfos (self);
 };
@@ -217,7 +217,7 @@ func int DIA_Egill_PERMKAP1_Condition ()
 
 func void DIA_Egill_PERMKAP1_Info ()
 {
-	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //Non hai già fatto abbastanza danni? Credo che ora dovresti andartene.
+	AI_Output			(self, other, "DIA_Egill_PERMKAP1_08_00"); //Non hai giÃ  fatto abbastanza danni? Credo che ora dovresti andartene.
 
 	AI_StopProcessInfos (self);
 };

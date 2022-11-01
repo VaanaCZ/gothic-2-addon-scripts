@@ -26,7 +26,7 @@ FUNC VOID DIA_BridgeDementor_EXIT_Info()
 
 };	
 ///////////////////////////////////////////////////////////////////////
-//	Info BridgeDementor (steht an der Br¸cke)
+//	Info BridgeDementor (steht an der Br√ºcke)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_BridgeDementor		(C_INFO)
 {
@@ -54,8 +54,8 @@ func void DIA_BridgeDementor_Info ()
 	AI_PlayAni (self,"T_PRACTICEMAGIC5");	
 	
 	AI_Output			(self ,other, "DIA_BridgeDementor_19_00"); //Sapevamo che saresti venuto!
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //Il mio padrone trionfer‡ e dominer‡ su tutto il mondo.
-	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Sciocco miscredente! Non sapevi chi avevi di fronte e io ti punirÚ immediatamente!
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_01"); //Il mio padrone trionfer√† e dominer√† su tutto il mondo.
+	AI_Output			(self ,other, "DIA_BridgeDementor_19_02"); //Sciocco miscredente! Non sapevi chi avevi di fronte e io ti punir√≤ immediatamente!
 
 	Npc_SetRefuseTalk (self,30);	
 };

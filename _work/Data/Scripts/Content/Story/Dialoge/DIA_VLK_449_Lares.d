@@ -7,7 +7,7 @@ instance DIA_Addon_Lares_Patch		(C_INFO)
 	nr		 	= 99;
 	condition	= DIA_Addon_Lares_Patch_Condition;
 	information	= DIA_Addon_Lares_Patch_Info;
-	description	= "(Ornament - St¸ck zur¸ckverlangen)";
+	description	= "(Ornament - St√ºck zur√ºckverlangen)";
 };
 func int DIA_Addon_Lares_Patch_Condition ()
 {
@@ -69,7 +69,7 @@ func int DIA_Addon_Lares_HaltsMaul_Condition ()
 
 func void DIA_Addon_Lares_HaltsMaul_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_HaltsMaul_09_01"); //Ci vediamo pi˘ tardi al porto.
+	AI_Output	(self, other, "DIA_Addon_Lares_HaltsMaul_09_01"); //Ci vediamo pi√π tardi al porto.
 	AI_StopProcessInfos (self);
 };
 
@@ -136,18 +136,18 @@ func void DIA_Lares_HALLO_Info ()
 	&& (Mil_333_schonmalreingelassen == FALSE)
 	{
 		AI_Output (self, other, "DIA_Lares_HALLO_09_01"); //Hai NUOTATO fin qui?
-		AI_Output (self, other, "DIA_Lares_HALLO_09_02"); //(ride) Questo Ë un modo per passare oltre le guardie del portone principale.
+		AI_Output (self, other, "DIA_Lares_HALLO_09_02"); //(ride) Questo √® un modo per passare oltre le guardie del portone principale.
 		B_GivePlayerXP (500); //wer's schafft...	
 	};
 			
 	Info_ClearChoices 	(DIA_Lares_HALLO);
 	
-	Info_AddChoice 		(DIA_Lares_HALLO,"Ci siamo gi‡ incontrati?",DIA_Lares_HALLO_NO);
+	Info_AddChoice 		(DIA_Lares_HALLO,"Ci siamo gi√† incontrati?",DIA_Lares_HALLO_NO);
 	Info_AddChoice 		(DIA_Lares_HALLO,"Ehi, Lares, vecchia canaglia...",DIA_Lares_HALLO_YES);
 };
 FUNC VOID DIA_Lares_HALLO_NO()
 {
-	AI_Output (other, self, "DIA_Lares_HALLO_NO_15_00"); //Ci siamo gi‡ incontrati?
+	AI_Output (other, self, "DIA_Lares_HALLO_NO_15_00"); //Ci siamo gi√† incontrati?
 	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_01"); //Ehi, non ti ricordi di me? Ero solito bazzicare a Campo Nuovo.
 	AI_Output (self, other, "DIA_Lares_HALLO_NO_09_02"); //La lista per la miniera... Cavolo, ci siamo divertiti un mondo. Ti ricordi Lee?
 	
@@ -173,7 +173,7 @@ FUNC VOID DIA_Lares_HALLO_YES()
 	{
 		AI_Output (self, other, "B_Lares_AboutLee_09_00"); //Sono uscito dalla colonia con lui, subito dopo la distruzione della Barriera.
 		AI_Output (self, other, "B_Lares_AboutLee_09_01"); //Lui e i suoi ragazzi ora si trovano alla fattoria del possidente Onar.
-		AI_Output (self, other, "B_Lares_AboutLee_09_02"); //Ha fatto un accordo con il contadino. Lui e i suoi ragazzi difendono la fattoria e in cambio Onar d‡ loro da mangiare.
+		AI_Output (self, other, "B_Lares_AboutLee_09_02"); //Ha fatto un accordo con il contadino. Lui e i suoi ragazzi difendono la fattoria e in cambio Onar d√† loro da mangiare.
 	};
 // ------------------------------	
 
@@ -187,7 +187,7 @@ FUNC VOID DIA_Lares_HALLO_LEE()
 FUNC VOID DIA_Lares_HALLO_NOIDEA()
 {
 	AI_Output (other, self, "DIA_Lares_HALLO_NOIDEA_15_00"); //Lee...?
-	AI_Output (self, other, "DIA_Lares_HALLO_NOIDEA_09_01"); //» passato tanto tempo, vero? Lee era il capo dei mercenari di Campo Nuovo.
+	AI_Output (self, other, "DIA_Lares_HALLO_NOIDEA_09_01"); //√à passato tanto tempo, vero? Lee era il capo dei mercenari di Campo Nuovo.
 	B_Lares_AboutLee();
 	
 	Info_ClearChoices 	(DIA_Lares_HALLO);
@@ -223,8 +223,8 @@ func int DIA_Addon_Lares_Vatras_Condition ()
 func void DIA_Addon_Lares_Vatras_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_Vatras_15_00"); //Mi manda Vatras. Mi ha detto di venire da te in caso di bisogno.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_01"); //(sorpreso) Hai gi‡ parlato con Vatras, dunque. Devi avergli fatto una buona impressione.
-	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_02"); //In caso contrario non ti avrebbe mai fatto il mio nome. Soprattutto considerando che la questione dei rapimenti non Ë ancora stata risolta.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_01"); //(sorpreso) Hai gi√† parlato con Vatras, dunque. Devi avergli fatto una buona impressione.
+	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_02"); //In caso contrario non ti avrebbe mai fatto il mio nome. Soprattutto considerando che la questione dei rapimenti non √® ancora stata risolta.
 	AI_Output	(self, other, "DIA_Addon_Lares_Vatras_09_03"); //Dimmi cosa ti serve.
 	Lares_RangerHelp = TRUE;
 
@@ -268,7 +268,7 @@ func void DIA_Addon_Lares_WhatAreYouGuys_Info ()
 	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_04"); //Stai parlando dell'Anello dell'Acqua?
 	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_05"); //Ne hai sentito parlare?
 	AI_Output (other, self, "DIA_Addon_Lares_WhatAreYouGuys_15_06"); //Me ne ha parlato Vatras.
-	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_07"); //PerchÈ non me l'hai detto subito?
+	AI_Output (self, other, "DIA_Addon_Lares_WhatAreYouGuys_09_07"); //Perch√© non me l'hai detto subito?
 
 	Log_CreateTopic (TOPIC_Addon_RingOfWater, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RingOfWater, LOG_RUNNING);
@@ -297,13 +297,13 @@ func int DIA_Addon_Lares_Ranger_Condition ()
 func void DIA_Addon_Lares_Ranger_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_00"); //Parlami ancora dell'Anello dell'Acqua.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_01"); //L'Anello Ë per i Maghi dell'Acqua quello che i paladini sono per i Maghi del Fuoco.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_01"); //L'Anello √® per i Maghi dell'Acqua quello che i paladini sono per i Maghi del Fuoco.
 	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_02"); //Ma a differenza dei paladini, noi operiamo dietro le quinte.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_03"); //L'Anello Ë un'arma potente nella lotta contro i pericoli che minacciano gli abitanti di Khorinis.
-	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_04"); //Ma Ë essenziale che l'identit‡ di coloro che appartengono all''Anello dell'Acqua' resti segreta.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_03"); //L'Anello √® un'arma potente nella lotta contro i pericoli che minacciano gli abitanti di Khorinis.
+	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_04"); //Ma √® essenziale che l'identit√† di coloro che appartengono all''Anello dell'Acqua' resti segreta.
 	AI_Output	(self, other, "DIA_Addon_Lares_Ranger_09_05"); //Non farne parola con nessuno!
 	AI_Output	(other, self, "DIA_Addon_Lares_Ranger_15_06"); //Certo.
-	B_LogEntry (TOPIC_Addon_RingOfWater,"L''Anello' Ë per i Maghi dell'Acqua quello che i paladini sono per i Maghi del Fuoco. Ma l''Anello' opera dietro le quinte. Nessuno deve sapere CHI ne fa parte, cosÏ la sua forza rimane un segreto." ); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"L''Anello' √® per i Maghi dell'Acqua quello che i paladini sono per i Maghi del Fuoco. Ma l''Anello' opera dietro le quinte. Nessuno deve sapere CHI ne fa parte, cos√¨ la sua forza rimane un segreto." ); 
 };
 // ------------------------------------------------------------
 // Info WannaBeRanger
@@ -335,7 +335,7 @@ func void DIA_Addon_Lares_WannaBeRanger_Info ()
 
 	Info_ClearChoices	(DIA_Addon_Lares_WannaBeRanger);
 	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Capisco.", DIA_Addon_Lares_WannaBeRanger_BACK );
-	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Com'Ë far parte dell'Anello?", DIA_Addon_Lares_WannaBeRanger_HowIsIt );
+	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Com'√® far parte dell'Anello?", DIA_Addon_Lares_WannaBeRanger_HowIsIt );
 	Info_AddChoice	(DIA_Addon_Lares_WannaBeRanger, "Che cosa hai fatto per far colpo sui Maghi dell'Acqua?", DIA_Addon_Lares_WannaBeRanger_AboutYou );
 };
 func void DIA_Addon_Lares_WannaBeRanger_BACK ()
@@ -351,12 +351,12 @@ func void DIA_Addon_Lares_WannaBeRanger_AboutYou ()
 };
 func void DIA_Addon_Lares_WannaBeRanger_HowIsIt ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_15_00"); //Com'Ë far parte dell'Anello?
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_01"); //Siamo molto diversi dalle altre comunit‡ di Khorinis.
+	AI_Output (other, self, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_15_00"); //Com'√® far parte dell'Anello?
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_01"); //Siamo molto diversi dalle altre comunit√† di Khorinis.
 	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_02"); //Quando sarai uno di noi, non ti chiederemo di far nulla che tu non sia pronto a fare.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_03"); //L'unico requisito essenziale Ë che tu mantenga il segreto.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_03"); //L'unico requisito essenziale √® che tu mantenga il segreto.
 	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_04"); //Agiamo nell'ombra e non vogliamo che il nome dei nostri membri sia noto.
-	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_05"); //Ti terremo d'occhio. Per il resto, si vedr‡.
+	AI_Output (self, other, "DIA_Addon_Lares_WannaBeRanger_HowIsIt_09_05"); //Ti terremo d'occhio. Per il resto, si vedr√†.
 };
 // ------------------------------------------------------------
 // Info RingBack (Bin jetzt dabei)
@@ -364,7 +364,7 @@ func void DIA_Addon_Lares_WannaBeRanger_HowIsIt ()
 func void B_Lares_Geheimtreffen()
 {
 	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_07"); //Presto terremo una riunione segreta alla taverna di Orlan.
-	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_08"); //Vediamoci lÏ non appena possibile. Avrai il tuo equipaggiamento.
+	AI_Output (self, other, "DIA_Addon_Lares_RingBack_09_08"); //Vediamoci l√¨ non appena possibile. Avrai il tuo equipaggiamento.
 };
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_RingBack		(C_INFO)
@@ -470,7 +470,7 @@ func int DIA_Addon_Lares_Geduld_Condition ()
 
 func void DIA_Addon_Lares_Geduld_Info ()
 { 
-	AI_Output	(self, other, "DIA_Addon_Lares_Geduld_09_01"); //Dovrai aspettare ancora un poí. Non siamo ancora tutti.
+	AI_Output	(self, other, "DIA_Addon_Lares_Geduld_09_01"); //Dovrai aspettare ancora un po‚Äô. Non siamo ancora tutti.
 	AI_StopProcessInfos (self);
 };
 
@@ -501,12 +501,12 @@ func void DIA_Addon_Lares_GetRangerArmor_Info ()
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_01"); //Da oggi in poi, tutti i presenti ti terranno d'occhio.
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_02"); //Ovviamente, ci sono anche altri che appartengono all'Anello e ti sorveglieranno.
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_03"); //Se ci rendi un servizio, o combini un guaio... noi lo scopriremo.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_04"); //Questa Ë l'armatura della nostra comunit‡.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_04"); //Questa √® l'armatura della nostra comunit√†.
 	CreateInvItem	(hero, ITAR_RANGER_Addon);
 	AI_EquipArmor	(hero, ITAR_RANGER_Addon);	
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_05"); //Indossala con orgoglio, ma mai in citt‡ o in altre zone abitate.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_05"); //Indossala con orgoglio, ma mai in citt√† o in altre zone abitate.
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_06"); //Ricorda, non devono scoprirci. Nessuno deve sapere chi sono i membri dell'Anello dell'Acqua.
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_07"); //Nessuno parla dell'Anello dell'Acqua. Questa Ë la nostra prima regola. Rispettala.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_07"); //Nessuno parla dell'Anello dell'Acqua. Questa √® la nostra prima regola. Rispettala.
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_09_08"); //Altre domande?
 	
 	MIS_Addon_Lares_ComeToRangerMeeting = LOG_SUCCESS;
@@ -521,7 +521,7 @@ func void DIA_Addon_Lares_GetRangerArmor_Info ()
 func void DIA_Addon_Lares_GetRangerArmor_weapons ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_weapons_15_00"); //Che mi dici delle armi?
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_01"); //L'arma dell'Anello Ë l'asta, ma ciascun membro usa le armi che ritiene pi˘ opportune.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_01"); //L'arma dell'Anello √® l'asta, ma ciascun membro usa le armi che ritiene pi√π opportune.
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_weapons_09_02"); //Ecco una delle nostre aste. Personalmente non ho mai capito come funziona, ma magari tu ci riuscirai.
 	CreateInvItems (self, ItMw_RangerStaff_Addon, 1);									
 	B_GiveInvItems (self, other, ItMw_RangerStaff_Addon, 1);		
@@ -544,33 +544,33 @@ func void DIA_Addon_Lares_GetRangerArmor_weiter ()
 {
 	AI_StopProcessInfos (self);
 	B_RangerMeetingParking ();
-	B_LogEntry (TOPIC_Addon_RingOfWater,"Durante la riunione segreta nella taverna di Orlan mi hanno consegnato l'armatura. Ora dovrei incontrare Vatras che mi assegner‡ il mio primo compito da componente dell''Anello'." ); 
+	B_LogEntry (TOPIC_Addon_RingOfWater,"Durante la riunione segreta nella taverna di Orlan mi hanno consegnato l'armatura. Ora dovrei incontrare Vatras che mi assegner√† il mio primo compito da componente dell''Anello'." ); 
 };
 
 func void DIA_Addon_Lares_GetRangerArmor_Learn ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_GetRangerArmor_Learn_15_00"); //Come puoi aiutarmi?
-	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_01"); //Posso insegnarti a diventare pi˘ agile.
+	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_01"); //Posso insegnarti a diventare pi√π agile.
 
 	if ((Npc_IsDead(SLD_805_Cord))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_02"); //Se vuoi imparare a usare armi da mischia, parla con Cord. » un abile spadaccino.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_02"); //Se vuoi imparare a usare armi da mischia, parla con Cord. √à un abile spadaccino.
 	};
 	if ((Npc_IsDead(BAU_961_Gaan))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_03"); //Gaan ti insegner‡ a scuoiare gli animali.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_03"); //Gaan ti insegner√† a scuoiare gli animali.
 	};	
 	if ((Npc_IsDead(Mil_350_Addon_Martin))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_04"); //Martin puÚ dirti molte cose sui paladini.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_04"); //Martin pu√≤ dirti molte cose sui paladini.
 	};	
 	if ((Npc_IsDead(Bau_4300_Addon_Cavalorn))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_05"); //Cavalorn ti insegner‡ la furtivit‡, la mischia e il tiro con l'arco.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_05"); //Cavalorn ti insegner√† la furtivit√†, la mischia e il tiro con l'arco.
 	};
 	if ((Npc_IsDead(BAU_970_Orlan))== FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_06"); //Orlan avr‡ sempre una stanza calda e un letto per te.
+		AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_06"); //Orlan avr√† sempre una stanza calda e un letto per te.
 	};
 	AI_Output	(self, other, "DIA_Addon_Lares_GetRangerArmor_Learn_09_07"); //E per quanto concerne la magia, parla con Vatras.
 };
@@ -593,7 +593,7 @@ func int DIA_Addon_Lares_Teleportstation_Condition ()
 {
 	if (MIS_Addon_Lares_Ornament2Saturas == LOG_SUCCESS)//SC war schon bei den Wassermagiern
 	&& (SCUsed_TELEPORTER == TRUE)			//SC hat schon mal einen Teleporter benutzt
-	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> f¸r Orlan
+	&& (MIS_Lares_BringRangerToMe != 0) 				//hat Aquamarinring von Lares bekommen. -> f√ºr Orlan
 	{
 		return TRUE;
 	};
@@ -606,7 +606,7 @@ func void DIA_Addon_Lares_Teleportstation_Info ()
 	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_03"); //(ride) Ci avrei scommesso. Non hai paura di nulla, eh?
 	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_04"); //Bene. Se vuoi usarle, chiedi a Orlan il taverniere che ti lasci entrare nella caverna che ha sbarrato.
 	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_05"); //I Maghi dell'Acqua gli hanno chiesto di nascondere una di quelle pietre vicino alla taverna.
-	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_06"); //Esci dalla porta orientale della citt‡ e segui la strada. Non puoi sbagliarti.
+	AI_Output	(self, other, "DIA_Addon_Lares_Teleportstation_09_06"); //Esci dalla porta orientale della citt√† e segui la strada. Non puoi sbagliarti.
 	
 	B_LogEntry (TOPIC_Addon_TeleportsNW,"Lares mi ha detto che Orlan ha nascosto la pietra di teletrasporto vicino alla sua caverna."); 
 	Orlan_Hint_Lares = TRUE;
@@ -642,7 +642,7 @@ func void DIA_Addon_Lares_Ornament_Info ()
 	AI_Output (other, self, "DIA_Addon_Lares_Ornament_15_00"); //Vatras mi ha dato questo ornamento per te. Ha detto che va riportato indietro.
 	B_GiveInvItems (other, self, ItMi_Ornament_Addon_Vatras,1);
 	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_01"); //(sospira) Certo. E come al solito tocca a me. Ci avrei scommesso.
-	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_02"); //DovrÚ attraversare mezza isola per riportarlo ai Maghi dell'Acqua.
+	AI_Output (self, other, "DIA_Addon_Lares_Ornament_09_02"); //Dovr√≤ attraversare mezza isola per riportarlo ai Maghi dell'Acqua.
 };
 // ------------------------------------------------------------
 // Ornament BringJob
@@ -667,7 +667,7 @@ func int DIA_Addon_Lares_OrnamentBringJob_Condition ()
 func void DIA_Addon_Lares_OrnamentBringJob_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_OrnamentBringJob_15_00"); //Se vuoi posso portarglielo io, l'ornamento!
-	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_01"); //(pensieroso) Mmh. FarÚ meglio a portarlo io. Ma puoi venire con me, se vuoi.
+	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_01"); //(pensieroso) Mmh. Far√≤ meglio a portarlo io. Ma puoi venire con me, se vuoi.
 	AI_Output	(self, other, "DIA_Addon_Lares_OrnamentBringJob_09_02"); //Purtroppo per ora non posso assentarmi. Devo tenere d'occhio il porto.
 	
 	B_LogEntry (TOPIC_Addon_KDW,"Ho portato a Lares l'ornamento di Vatras. Vuole portarlo ai Maghi dell'Acqua di persona. Dovrei accompagnarlo."); 
@@ -675,7 +675,7 @@ func void DIA_Addon_Lares_OrnamentBringJob_Info ()
 	MIS_Addon_Lares_Ornament2Saturas = LOG_RUNNING;
 };
 // ------------------------------------------------------------
-// Hol Ablˆsung
+// Hol Abl√∂sung
 // ------------------------------------------------------------
 instance DIA_Addon_Lares_YourMission		(C_INFO)
 {
@@ -684,7 +684,7 @@ instance DIA_Addon_Lares_YourMission		(C_INFO)
 	condition	= DIA_Addon_Lares_YourMission_Condition;
 	information	= DIA_Addon_Lares_YourMission_Info;
 	permanent 	= TRUE;
-	description = "Qual Ë esattamente il tuo ruolo qui al porto?";
+	description = "Qual √® esattamente il tuo ruolo qui al porto?";
 };
 func int DIA_Addon_Lares_YourMission_Condition ()
 {
@@ -696,7 +696,7 @@ func int DIA_Addon_Lares_YourMission_Condition ()
 };
 func void DIA_Addon_Lares_YourMission_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_YourMission_15_00"); //Qual Ë esattamente il tuo ruolo qui al porto?
+	AI_Output (other, self, "DIA_Addon_Lares_YourMission_15_00"); //Qual √® esattamente il tuo ruolo qui al porto?
 	
 	if (!Npc_KnowsInfo (other, DIA_Addon_Lares_WhatAreYouGuys))
 	{
@@ -707,24 +707,24 @@ func void DIA_Addon_Lares_YourMission_Info ()
 	{
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_03"); //Porto a termine gli incarichi che i Maghi dell'Acqua mi assegnano.
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_04"); //Alcuni di coloro che sono scomparsi erano pescatori. Sono svaniti insieme alle loro barche.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_05"); //» per questo che sorveglio il porto, nel caso accada qualcos'altro.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_05"); //√à per questo che sorveglio il porto, nel caso accada qualcos'altro.
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_06"); //Ma tu potresti aiutarmi.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_07"); //Ascolta. Ti darÚ il mio anello di acquamarina. Identifica i membri dell'Anello dell'Acqua.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_07"); //Ascolta. Ti dar√≤ il mio anello di acquamarina. Identifica i membri dell'Anello dell'Acqua.
 		
 		CreateInvItems (self, ItRi_Ranger_Lares_Addon, 1);									
 		B_GiveInvItems (self, other, ItRi_Ranger_Lares_Addon, 1);
 		SC_GotLaresRing = TRUE;		
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_08"); //Se indossi il mio anello, gli altri sapranno che agisci per mio conto.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_09"); //Trova qualcuno che mi sostituisca e io riporterÚ l'ornamento ai Maghi.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_10"); //C'Ë sempre uno di noi di guardia al mercato, ma non so chi sia di turno oggi.
-		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_11"); //Attacca discorso con tutti quelli che girano lÏ intorno. Quando l'uomo giusto vedr‡ l'anello di acquamarina, si far‡ riconoscere.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_09"); //Trova qualcuno che mi sostituisca e io riporter√≤ l'ornamento ai Maghi.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_10"); //C'√® sempre uno di noi di guardia al mercato, ma non so chi sia di turno oggi.
+		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_11"); //Attacca discorso con tutti quelli che girano l√¨ intorno. Quando l'uomo giusto vedr√† l'anello di acquamarina, si far√† riconoscere.
 		AI_Output (self, other, "DIA_Addon_Lares_YourMission_09_12"); //Digli di mandare qualcuno qui al porto a darmi il cambio.
 
 		B_LogEntry (TOPIC_Addon_RingOfWater,"Lares mi ha dato il suo anello di acquamarina, il segno segreto dell''Anello'. Quando lo porto, gli altri componenti dell''Anello' si faranno riconoscere."); 
 
 		Log_CreateTopic (TOPIC_Addon_BringRangerToLares, LOG_MISSION);
 		Log_SetTopicStatus(TOPIC_Addon_BringRangerToLares, LOG_RUNNING);
-		B_LogEntry (TOPIC_Addon_BringRangerToLares,"Lares non puÚ lasciare il porto. Devo farmi vedere al mercato portando il suo anello di acquamarina per trovare qualcuno che possa sostituirlo."); 
+		B_LogEntry (TOPIC_Addon_BringRangerToLares,"Lares non pu√≤ lasciare il porto. Devo farmi vedere al mercato portando il suo anello di acquamarina per trovare qualcuno che possa sostituirlo."); 
 
 		MIS_Lares_BringRangerToMe = LOG_RUNNING;
 	};
@@ -752,7 +752,7 @@ func int DIA_Addon_Lares_BaltramAbloese_Condition ()
 
 func void DIA_Addon_Lares_BaltramAbloese_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_BaltramAbloese_15_00"); //Ho parlato con Baltram. Mander‡ qualcuno a darti il cambio.
+	AI_Output (other, self, "DIA_Addon_Lares_BaltramAbloese_15_00"); //Ho parlato con Baltram. Mander√† qualcuno a darti il cambio.
 	AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_01"); //Ah! Molto bene. Allora possiamo andarcene.
 	if (SC_IsRanger == FALSE)
 	{
@@ -760,11 +760,11 @@ func void DIA_Addon_Lares_BaltramAbloese_Info ()
 		
 		if (Npc_KnowsInfo (other, DIA_Addon_Lares_WannaBeRanger))
 		{
-			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_03"); //(sorride) Penso ti far‡ comodo.
+			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_03"); //(sorride) Penso ti far√† comodo.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_04"); //(sorride) Chiss‡, magari vorrai unirti a noi...
+			AI_Output (self, other, "DIA_Addon_Lares_BaltramAbloese_09_04"); //(sorride) Chiss√†, magari vorrai unirti a noi...
 		};
 	};
 	MIS_Lares_BringRangerToMe = LOG_SUCCESS;
@@ -788,7 +788,7 @@ instance DIA_Addon_Lares_PeopleMissing		(C_INFO)
 	condition	= DIA_Addon_Lares_PeopleMissing_Condition;
 	information	= DIA_Addon_Lares_PeopleMissing_Info;
 	permanent 	= TRUE;
-	description	= "A proposito di quelle persone scomparseÖ";
+	description	= "A proposito di quelle persone scomparse‚Ä¶";
 };
 func int DIA_Addon_Lares_PeopleMissing_Condition ()
 {
@@ -812,7 +812,7 @@ func void DIA_Addon_Lares_PeopleMissing_Info ()
 	&& (SCKnowsMissingPeopleAreInAddonWorld == TRUE)
 	&& (MissingPeopleReturnedHome == FALSE)
 	{
-		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "So che cosa Ë successo alle persone scomparse.", DIA_Addon_Lares_PeopleMissing_Success );
+		Info_AddChoice (DIA_Addon_Lares_PeopleMissing, "So che cosa √® successo alle persone scomparse.", DIA_Addon_Lares_PeopleMissing_Success );
 	}
 	else
 	{
@@ -827,9 +827,9 @@ func void DIA_Addon_Lares_PeopleMissing_BACK()
 func void DIA_Addon_Lares_PeopleMissing_TellMe()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_TellMe_15_00"); //Dimmi quello che sai.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_01"); //Il primo a sparire Ë stato William, uno dei pescatori di Khorinis. Un giorno non Ë rientrato.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_01"); //Il primo a sparire √® stato William, uno dei pescatori di Khorinis. Un giorno non √® rientrato.
 	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_02"); //Al principio abbiamo pensato che un mostro marino avesse mangiato lui e la sua barca per colazione.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_03"); //Ma subito dopo sono scomparse altre persone, in citt‡ e nei dintorni. Si direbbero eventi casuali, perÚ.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_03"); //Ma subito dopo sono scomparse altre persone, in citt√† e nei dintorni. Si direbbero eventi casuali, per√≤.
 	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_TellMe_09_04"); //Nessuno ci capisce niente. Mi sa che dovremo aspettare fino a quando non avremo scoperto qualche indizio.
 
 		if (SC_HearedAboutMissingPeople == FALSE)
@@ -848,12 +848,12 @@ func void DIA_Addon_Lares_PeopleMissing_TellMe()
 func void DIA_Addon_Lares_PeopleMissing_MIL()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_PeopleMissing_MIL_15_00"); //Non dovrebbe pensarci la milizia?
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_01"); //La milizia Ë inutile, dammi retta.
-	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_02"); //Non risolver‡ un bel niente. Le persone scomparse sembrano svanite nell'aria.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_01"); //La milizia √® inutile, dammi retta.
+	AI_Output (self, other, "DIA_Addon_Lares_PeopleMissing_MIL_09_02"); //Non risolver√† un bel niente. Le persone scomparse sembrano svanite nell'aria.
 };
 func void DIA_Addon_Lares_PeopleMissing_Success()
 {
-	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_00"); //So che cosa Ë successo alle persone scomparse!
+	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_00"); //So che cosa √® successo alle persone scomparse!
 	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_01"); //(sorpreso) Davvero?
 	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_Success_15_02"); //Sono stati rapiti dall'ex barone del metallo Raven.
 	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_Success_09_03"); //Sei sicuro? Allora dobbiamo liberarli.
@@ -866,7 +866,7 @@ func void DIA_Addon_Lares_PeopleMissing_Success()
 func void DIA_Addon_Lares_PeopleMissing_SAVED ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_PeopleMissing_SAVED_15_00"); //Ho salvato alcune delle persone che erano scomparse.
-	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_SAVED_09_01"); //Sapevo che ce l'avresti fatta. TornerÚ a occuparmi delle mie faccende.
+	AI_Output	(self, other, "DIA_Addon_Lares_PeopleMissing_SAVED_09_01"); //Sapevo che ce l'avresti fatta. Torner√≤ a occuparmi delle mie faccende.
 	B_GivePlayerXP (XP_Ambient);
 	Lares_PeopleMissing_PERM = TRUE;
 	Lares_CanBringScToPlaces = TRUE;
@@ -927,7 +927,7 @@ func void DIA_Addon_Lares_RangerHelp_Info ()
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_ruestung == FALSE)
 	&& (Lares_RangerHelp == TRUE)
 	{
-		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Magari uníarmatura migliore?", DIA_Addon_Lares_RangerHelp_ruestung );
+		Info_AddChoice	(DIA_Addon_Lares_RangerHelp, "Magari un‚Äôarmatura migliore?", DIA_Addon_Lares_RangerHelp_ruestung );
 	};
 
 	if (DIA_Addon_Lares_RangerHelp_gilde_OneTime_geld == FALSE)
@@ -938,11 +938,11 @@ func void DIA_Addon_Lares_RangerHelp_Info ()
 };
 func void DIA_Addon_Lares_RangerHelp_ruestung ()
 {
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_00"); //Magari uníarmatura migliore?
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_00"); //Magari un‚Äôarmatura migliore?
 	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_01"); //Mmm... Matteo vende armature, ma comprarla da lui ti costerebbe un occhio della testa.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_02"); //Ma c'Ë un modo per averla gratis, se non ti dispiace giocare un tiro alla milizia...
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_02"); //Ma c'√® un modo per averla gratis, se non ti dispiace giocare un tiro alla milizia...
 	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_ruestung_15_03"); //Cosa vuoi dire?
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_04"); //Vicino alla casa di Matteo c'Ë un magazzino. Ma tutte le merci sono state confiscate dalla milizia.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_04"); //Vicino alla casa di Matteo c'√® un magazzino. Ma tutte le merci sono state confiscate dalla milizia.
 	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_05"); //Va' da Zuris, al mercato, procurati un incantesimo del sonno e usalo per mandare le guardie nel mondo dei sogni.
 	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_ruestung_09_06"); //Sono sicuro che troverai un'armatura decente tra quelle di Matteo...
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_ruestung = TRUE;
@@ -957,7 +957,7 @@ func void DIA_Addon_Lares_RangerHelp_geld ()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_geld_15_00"); //Ho bisogno di denaro.
 	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_01"); //A chi lo dici... Mi spiace, non ne no. Ma l'usuraio Lehmar mi deve un favore.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_02"); //Vai da lui e fatti prestare quel che ti serve. Al resto ci penserÚ io. Troverai Lehmar al confine tra il quartiere del porto e la citt‡ bassa.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_geld_09_02"); //Vai da lui e fatti prestare quel che ti serve. Al resto ci penser√≤ io. Troverai Lehmar al confine tra il quartiere del porto e la citt√† bassa.
 	DIA_Addon_Lares_RangerHelp_gilde_OneTime_geld = TRUE;
 	RangerHelp_LehmarKohle = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_RangerHelp);
@@ -1019,15 +1019,15 @@ func void DIA_Lares_Paladine_Info ()
 	AI_Output (other, self, "DIA_Lares_Paladine_15_00"); //Devo parlare con i paladini, a tutti i costi!
 	AI_Output (self, other, "DIA_Lares_Paladine_09_01"); //Che cosa vuoi da LORO?
 	AI_Output (other, self, "DIA_Lares_Paladine_15_02"); //Sono in possesso di un potente amuleto, l'Occhio di Innos, e io devo averlo.
-	AI_Output (self, other, "DIA_Lares_Paladine_09_03"); //E pensi che te lo daranno? Non arriverai nella parte alta della citt‡.
+	AI_Output (self, other, "DIA_Lares_Paladine_09_03"); //E pensi che te lo daranno? Non arriverai nella parte alta della citt√†.
 	if (!Npc_KnowsInfo (other, DIA_Addon_Lares_Vatras))
 	{
-		AI_Output (other, self, "DIA_Lares_Paladine_15_04"); //TroverÚ un modo.
+		AI_Output (other, self, "DIA_Lares_Paladine_15_04"); //Trover√≤ un modo.
 		AI_Output (self, other, "DIA_Lares_Paladine_09_05"); //Certamente, se vuoi ingraziarti i cittadini o fare il fattorino per l'esercito...
 	};
 	
 	//AI_Output (other, self, "DIA_Lares_Alternative_15_00"); //Hab' ich eine Alternative?
-	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du w‰re, w¸rde ich zu Onars Hof gehen und mit Lee reden.
+	//AI_Output (self, other, "DIA_Lares_Alternative_09_01"); //Wenn ich du w√§re, w√ºrde ich zu Onars Hof gehen und mit Lee reden.
 	//AI_Output (self, other, "DIA_Lares_Alternative_09_02"); //Ich bin mir sicher, wir finden einem Weg, dich ins obere Viertel zu bringen.
 };	
 
@@ -1041,7 +1041,7 @@ instance DIA_Lares_WhyPalHere		(C_INFO)
 	condition	 = 	DIA_Lares_WhyPalHere_Condition;
 	information	 = 	DIA_Lares_WhyPalHere_Info;
 	permanent    =  FALSE;
-	description	 = 	"Sai perchÈ i paladini sono qui?";
+	description	 = 	"Sai perch√© i paladini sono qui?";
 };
 func int DIA_Lares_WhyPalHere_Condition ()
 {	
@@ -1058,7 +1058,7 @@ func int DIA_Lares_WhyPalHere_Condition ()
 };
 func void DIA_Lares_WhyPalHere_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_WhyPalHere_15_00"); //Sai perchÈ i paladini sono qui?
+	AI_Output (other, self, "DIA_Lares_WhyPalHere_15_00"); //Sai perch√© i paladini sono qui?
 	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_01"); //Nessuno lo sa per certo... Un sacco di gente pensa che sia a causa degli orchi, ma io credo che ci sia un'altra ragione.
 	AI_Output (self, other, "DIA_Lares_WhyPalHere_09_02"); //Ha probabilmente qualcosa a che fare con la vecchia colonia penale.
 };	
@@ -1093,11 +1093,11 @@ func void DIA_Addon_Lares_Gilde_Info ()
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_02"); //Va bene. Ti capisco.
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_03"); //Se vuoi unirti a Lee, posso esercitare la mia influenza sui mercenari.
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_04"); //E presto troveremo il modo di farti entrare al monastero.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_05"); //Ma la cosa pi˘ semplice sarebbe di certo arruolarsi nella milizia.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_06"); //Quale comunit‡ preferisci?
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_05"); //Ma la cosa pi√π semplice sarebbe di certo arruolarsi nella milizia.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_09_06"); //Quale comunit√† preferisci?
 		
 	Info_ClearChoices (DIA_Addon_Lares_Gilde);
-	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Ci penserÚ suÖ", DIA_Addon_Lares_Gilde_BACK);
+	Info_AddChoice	(DIA_Addon_Lares_Gilde, "Ci penser√≤ su‚Ä¶", DIA_Addon_Lares_Gilde_BACK);
 	Info_AddChoice	(DIA_Addon_Lares_Gilde, "I Maghi del Fuoco.", DIA_Addon_Lares_Gilde_KDF );
 	Info_AddChoice	(DIA_Addon_Lares_Gilde, "I mercenari.", DIA_Addon_Lares_Gilde_SLD );	
 	Info_AddChoice	(DIA_Addon_Lares_Gilde, "La milizia.", DIA_Addon_Lares_Gilde_MIL );
@@ -1110,16 +1110,16 @@ func void DIA_Addon_Lares_Gilde_BACK ()
 func void DIA_Addon_Lares_Gilde_SLD ()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_Gilde_SLD_15_00"); //I mercenari.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_01"); //Sono certo che Lee ti accetter‡.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_01"); //Sono certo che Lee ti accetter√†.
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_01"); //Ma prima dovrai superare una prova.
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_02"); //Parla con Cord alla fattoria di Onar.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_02"); //Potr‡ aiutarti con la prova.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03"); //Digli che 'risiedi sotto la mia ala'. Lui capir‡.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_Add_09_02"); //Potr√† aiutarti con la prova.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_SLD_09_03"); //Digli che 'risiedi sotto la mia ala'. Lui capir√†.
 	RangerHelp_gildeSLD = TRUE;
 	
 	Log_CreateTopic (TOPIC_Addon_RangerHelpSLD, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpSLD, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Lares ha detto che Cord, il mercenario, potrebbe rendermi la vita pi˘ facile nella fattoria del proprietario terriero."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpSLD,"Lares ha detto che Cord, il mercenario, potrebbe rendermi la vita pi√π facile nella fattoria del proprietario terriero."); 
 	
 	SC_KnowsCordAsRangerFromLares = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
@@ -1128,12 +1128,12 @@ func void DIA_Addon_Lares_Gilde_MIL ()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_Gilde_MIL_15_00"); //La milizia.
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_01"); //(divertito) Ti piacerebbe, eh? Rubare dalle tasche delle stesse persone alle quali fai rispettare la legge...
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_02"); //I paladini hanno uno spaccio dalle parti del porto. Il loro furiere Ë un mio buon amico.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_03"); //Forse potr‡ aiutarti. Si chiama Martin.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_02"); //I paladini hanno uno spaccio dalle parti del porto. Il loro furiere √® un mio buon amico.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_MIL_09_03"); //Forse potr√† aiutarti. Si chiama Martin.
 
 	Log_CreateTopic (TOPIC_Addon_RangerHelpMIL, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpMIL, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Lares ha detto che Martin, il mastro furiere, presto mi aiuter‡ a entrare nella milizia. Di solito lo si trova al porto, dove i paladini hanno il loro spaccio."); 
+	B_LogEntry (TOPIC_Addon_RangerHelpMIL,"Lares ha detto che Martin, il mastro furiere, presto mi aiuter√† a entrare nella milizia. Di solito lo si trova al porto, dove i paladini hanno il loro spaccio."); 
 	
 	RangerHelp_gildeMIL = TRUE;
 	Info_ClearChoices	(DIA_Addon_Lares_Gilde);
@@ -1142,9 +1142,9 @@ func void DIA_Addon_Lares_Gilde_KDF ()
 {
 	AI_Output (other, self, "DIA_Addon_Lares_Gilde_KDF_15_00"); //I Maghi del Fuoco.
 	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_01"); //(ride) Vatras non l'aveva previsto, altrimenti non ti avrebbe mandato da me.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_02"); //Unirsi ai monaci Ë costoso.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_03"); //Se non paghi un tributo, non c'Ë verso che ti lascino entrare.
-	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_04"); //E l'unico che potrebbe fare qualcosa al riguardo Ë Vatras stesso. Parlane con lui, ti conviene.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_02"); //Unirsi ai monaci √® costoso.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_03"); //Se non paghi un tributo, non c'√® verso che ti lascino entrare.
+	AI_Output (self, other, "DIA_Addon_Lares_Gilde_KDF_09_04"); //E l'unico che potrebbe fare qualcosa al riguardo √® Vatras stesso. Parlane con lui, ti conviene.
 
 	Log_CreateTopic (TOPIC_Addon_RangerHelpKDF, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_RangerHelpKDF, LOG_RUNNING);
@@ -1168,7 +1168,7 @@ instance DIA_Lares_AboutSld (C_INFO)
 	condition	 = 	DIA_Lares_AboutSld_Condition;
 	information	 = 	DIA_Lares_AboutSld_Info;
 	permanent    =  TRUE;
-	description	 = 	"Parlami ancora di Lee e dei suoi mercenariÖ";
+	description	 = 	"Parlami ancora di Lee e dei suoi mercenari‚Ä¶";
 };
 func int DIA_Lares_AboutSld_Condition ()
 {	
@@ -1185,8 +1185,8 @@ func void DIA_Lares_AboutSld_Info ()
 	
 	Info_ClearChoices (DIA_Lares_AboutSld);
 	Info_AddChoice (DIA_Lares_AboutSld, DIALOG_BACK, DIA_Lares_AboutSld_BACK);
-	Info_AddChoice (DIA_Lares_AboutSld, "PerchÈ TU sei con Lee e i suoi mercenari?", DIA_Lares_AboutSld_WhyNotYou);
-	Info_AddChoice (DIA_Lares_AboutSld, "Parlami ancora dei mercenariÖ", DIA_Lares_AboutSld_Sld);
+	Info_AddChoice (DIA_Lares_AboutSld, "Perch√© TU sei con Lee e i suoi mercenari?", DIA_Lares_AboutSld_WhyNotYou);
+	Info_AddChoice (DIA_Lares_AboutSld, "Parlami ancora dei mercenari‚Ä¶", DIA_Lares_AboutSld_Sld);
 	Info_AddChoice (DIA_Lares_AboutSld, "Come trovo la fattoria del proprietario terriero?", DIA_Lares_AboutSld_WayToOnar); 
 };
 func void DIA_Lares_AboutSld_BACK()
@@ -1198,13 +1198,13 @@ func void DIA_Lares_AboutSld_Sld()
 	AI_Output (other,self,  "DIA_Lares_AboutSld_15_00"); //Parlami ancora dei mercenari.
 	AI_Output (self, other, "DIA_Lares_AboutSld_09_01"); //Beh, se sei forte come un tempo, non credo che avrai problemi con loro.
 	AI_Output (self, other, "DIA_Lares_AboutSld_09_02"); //Molto di loro sono dei semplici manigoldi e se non riesci a tenergli testa, non andrai lontano.
-	AI_Output (self, other, "DIA_Lares_AboutSld_09_03"); //(ride) Se sei schizzinoso, non hai possibilit‡ di vincere.
+	AI_Output (self, other, "DIA_Lares_AboutSld_09_03"); //(ride) Se sei schizzinoso, non hai possibilit√† di vincere.
 };	
 func void DIA_Lares_AboutSld_WhyNotYou()
 {
-	AI_Output (other, self, "DIA_Lares_WhyInCity_15_00"); //PerchÈ, TU non sei con Lee e i suoi mercenari?
+	AI_Output (other, self, "DIA_Lares_WhyInCity_15_00"); //Perch√©, TU non sei con Lee e i suoi mercenari?
 	AI_Output (self, other, "DIA_Lares_WhyInCity_09_01"); //Infatti, solo che non sto alla fattoria.
-	AI_Output (self, other, "DIA_Lares_WhyInCity_09_02"); //Si potrebbe dire che sono il nostro avamposto in citt‡. Non vogliamo che la nave salpi senza di noi.
+	AI_Output (self, other, "DIA_Lares_WhyInCity_09_02"); //Si potrebbe dire che sono il nostro avamposto in citt√†. Non vogliamo che la nave salpi senza di noi.
 	//AI_Output (self, other, "DIA_Lares_WhyInCity_09_03"); //Warum bist DU in die Stadt gekommen?
 	Lares_WorkForLee = TRUE;
 	
@@ -1213,18 +1213,18 @@ func void DIA_Lares_AboutSld_WhyNotYou()
 func void DIA_Lares_AboutSld_Schiff()
 {	
 	AI_Output (other,self , "DIA_Lares_Schiff_15_00"); //Di quale nave stavi parlando?
-	AI_Output (self, other, "DIA_Lares_Schiff_09_01"); //» al porto, dietro la scogliera. Lee e la sua gente se ne vogliono veramente andare via da qui.
+	AI_Output (self, other, "DIA_Lares_Schiff_09_01"); //√à al porto, dietro la scogliera. Lee e la sua gente se ne vogliono veramente andare via da qui.
 	AI_Output (self, other, "DIA_Lares_Schiff_09_02"); //Ma ci potrebbe volere un po'...
-	AI_Output (other,self , "DIA_Lares_Schiff_15_03"); //PerchÈ?
+	AI_Output (other,self , "DIA_Lares_Schiff_15_03"); //Perch√©?
 	AI_Output (self, other, "DIA_Lares_Schiff_09_04"); //Faresti meglio a chiedere a Lee, se lo incontri. Ha qualche piano.
 };
 func void DIA_Lares_AboutSld_WayToOnar()
 {
 	AI_Output (other,self, "DIA_Lares_WegZumHof_15_00"); //Come trovo la fattoria del proprietario terriero?
-	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //» semplice. Esci dal porto passando dalla porta orientale e segui la strada che va ad est.
+	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_00"); //√à semplice. Esci dal porto passando dalla porta orientale e segui la strada che va ad est.
 	AI_Output (self, other, "DIA_Addon_Lares_WegZumHof_09_01"); //Posso accompagnarti, se vuoi.
 	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_01"); //Ich kann dich hinbringen, wenn du willst. Hab sowieso schon zu lange hier rumgehangen.
-	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar f¸r gewˆhnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht schˆpft ...
+	//AI_Output (self, other, "DIA_Lares_WegZumHof_09_02"); //Hier im Hafen gibt es zwar f√ºr gew√∂hnlich keine Miliz, aber ich muss ja nicht riskieren, dass einer von ihnen Verdacht sch√∂pft ...
 	Lares_WayToOnar = TRUE;
 };	
 
@@ -1243,7 +1243,7 @@ instance DIA_Lares_GuildOfThieves (C_INFO)
 	condition	 = 	DIA_Lares_GuildOfThieves_Condition;
 	information	 = 	DIA_Lares_GuildOfThieves_Info;
 	permanent    =  FALSE;
-	description	 = 	"Cosa sai dirmi della gilda dei ladri in citt‡?";
+	description	 = 	"Cosa sai dirmi della gilda dei ladri in citt√†?";
 };
 func int DIA_Lares_GuildOfThieves_Condition ()
 {	
@@ -1254,10 +1254,10 @@ func int DIA_Lares_GuildOfThieves_Condition ()
 };
 func void DIA_Lares_GuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GuildOfThieves_15_00"); //Cosa sai dirmi della gilda dei ladri in citt‡?
+	AI_Output (other, self, "DIA_Lares_GuildOfThieves_15_00"); //Cosa sai dirmi della gilda dei ladri in citt√†?
 	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_01"); //Che domande che fai...
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_02"); //Certo che qui c'Ë una gilda di ladri, come in qualsiasi altra citt‡.
-	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_03"); //E praticamente ogni borseggio o recinzione Ë probabilmente correlata a questo fatto.
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_02"); //Certo che qui c'√® una gilda di ladri, come in qualsiasi altra citt√†.
+	AI_Output (self, other, "DIA_Lares_GuildOfThieves_09_03"); //E praticamente ogni borseggio o recinzione √® probabilmente correlata a questo fatto.
 };	
 // ------------------------------------------------------------
 // Wo finden?
@@ -1287,7 +1287,7 @@ func void DIA_Lares_WhereGuildOfThieves_Info ()
 	AI_Output (self, other, "DIA_Lares_WhereGuildOfThieves_09_03"); //Se vuoi avere a che fare con loro, faresti meglio a stare attento.
 };
 // ------------------------------------------------------------
-// Meersalz Schl¸ssel
+// Meersalz Schl√ºssel
 // ------------------------------------------------------------
 instance DIA_Lares_GotKey (C_INFO)
 {
@@ -1296,7 +1296,7 @@ instance DIA_Lares_GotKey (C_INFO)
 	condition	 = 	DIA_Lares_GotKey_Condition;
 	information	 = 	DIA_Lares_GotKey_Info;
 	permanent    =  FALSE;
-	description	 = 	"Ho qui la chiave. Il sale marino líha corrosa...";
+	description	 = 	"Ho qui la chiave. Il sale marino l‚Äôha corrosa...";
 };
 func int DIA_Lares_GotKey_Condition ()
 {	
@@ -1309,7 +1309,7 @@ func int DIA_Lares_GotKey_Condition ()
 };
 func void DIA_Lares_GotKey_Info ()
 {
-	AI_Output (other, self, "DIA_Lares_GotKey_15_00"); //Ho qui la chiave. Il sale marino líha corrosa...
+	AI_Output (other, self, "DIA_Lares_GotKey_15_00"); //Ho qui la chiave. Il sale marino l‚Äôha corrosa...
 	AI_Output (self, other, "DIA_Lares_GotKey_09_01"); //E allora?
 	AI_Output (other,self, "DIA_Lares_GotKey_15_02"); //Penso che possa condurmi al nascondiglio segreto della gilda dei ladri...
 	AI_Output (self, other, "DIA_Lares_GotKey_09_03"); //Beh, potrebbe anche essere la chiave delle fogne.
@@ -1337,11 +1337,11 @@ func int DIA_Lares_Kanalisation_Condition ()
 func void DIA_Lares_Kanalisation_Info ()
 {
 	AI_Output (other,self, "DIA_Lares_Kanalisation_15_00"); //Dove sono le fognature?
-	AI_Output (self, other, "DIA_Lares_Kanalisation_09_01"); //Chi puÚ dirlo... Generalmente scaricano nell'oceano.
+	AI_Output (self, other, "DIA_Lares_Kanalisation_09_01"); //Chi pu√≤ dirlo... Generalmente scaricano nell'oceano.
 };
 
 // ************************************************************
-// 		  			Important f¸r andere Gilden
+// 		  			Important f√ºr andere Gilden
 // ************************************************************
 instance DIA_Lares_OtherGuild (C_INFO)
 {
@@ -1369,11 +1369,11 @@ func void DIA_Lares_OtherGuild_Info ()
 		if (other.guild == GIL_MIL)
 		{
 			AI_Output (self, other, "DIA_Lares_OtherGuild_09_00"); //Sei nell'esercito adesso!
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_01"); //(ride) RiderÚ fino a crepare. Un ex detenuto nell'esercito...
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_01"); //(ride) Rider√≤ fino a crepare. Un ex detenuto nell'esercito...
 		}
 		else //GIL_PAL
 		{
-			AI_Output (self, other, "DIA_Lares_OtherGuild_09_02"); //CosÏ tu sei uno dei paladini del Re!
+			AI_Output (self, other, "DIA_Lares_OtherGuild_09_02"); //Cos√¨ tu sei uno dei paladini del Re!
 		};
 	
 		AI_Output (self, other, "DIA_Lares_OtherGuild_09_03"); //(furbescamente) Solo tu potevi riuscire in qualcosa del genere...
@@ -1388,7 +1388,7 @@ func void DIA_Lares_OtherGuild_Info ()
 	if (other.guild == GIL_KDF) 
 	|| (other.guild == GIL_NOV)
 	{
-		AI_Output (self, other, "DIA_Lares_OtherGuild_09_06"); //Non capisco. Sei entrato nel monastero. Com'Ë?
+		AI_Output (self, other, "DIA_Lares_OtherGuild_09_06"); //Non capisco. Sei entrato nel monastero. Com'√®?
 		AI_Output (other,self , "DIA_Lares_OtherGuild_15_07"); //Diverso.
 		AI_Output (self, other, "DIA_Lares_OtherGuild_09_08"); //Posso immaginarlo.
 	};
@@ -1396,7 +1396,7 @@ func void DIA_Lares_OtherGuild_Info ()
 	if (other.guild == GIL_SLD) 
 	|| (other.guild == GIL_DJG)
 	{
-		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab gehˆrt, du bist aufgenommen worden.
+		//AI_Output (self, other, "DIA_Lares_OtherGuild_09_09"); //Ich hab geh√∂rt, du bist aufgenommen worden.
 		AI_Output (self, other, "DIA_Addon_Lares_OtherGuild_09_00"); //Ho saputo che Lee ti ha preso tra i suoi.
 		AI_Output (self, other, "DIA_Lares_OtherGuild_09_10"); //Congratulazioni.
 	};
@@ -1431,8 +1431,8 @@ func void DIA_Addon_Lares_Forest_info ()
 	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_00"); //Puoi aiutarmi a attraversare la fitta foresta a est?
 	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_01"); //D'accordo. Ma che ci vai a fare?
 	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_02"); //Nefarius mi ha ordinato di trovare altri ornamenti.
-	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03"); //Uno dei posti in cui devo cercare Ë il la foresta.
-	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04"); //Capisco. E andarci da solo Ë troppo pericoloso, giusto?
+	AI_Output (other, self, "DIA_Addon_Lares_RangerHelp_Forest_15_03"); //Uno dei posti in cui devo cercare √® il la foresta.
+	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_04"); //Capisco. E andarci da solo √® troppo pericoloso, giusto?
 	AI_Output (self, other, "DIA_Addon_Lares_RangerHelp_Forest_09_05"); //Nessun problema. Fammi sapere quando vuoi andare.
 
 	RangerHelp_OrnamentForest = TRUE;
@@ -1487,9 +1487,9 @@ func void DIA_Lares_GoNow_Info ()
 	
 	if (Lares_CanBringScToPlaces == FALSE)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //Non posso andarmene finchÈ non sapremo di pi˘ sugli scomparsi, o finchÈ qualcuno non mi d‡ il cambio.
+		AI_Output (self, other, "DIA_Addon_Lares_GoNow_09_03"); //Non posso andarmene finch√© non sapremo di pi√π sugli scomparsi, o finch√© qualcuno non mi d√† il cambio.
 	}
-	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen w‰hrend RangerMeeting
+	else if (MIS_Addon_Lares_ComeToRangerMeeting == LOG_RUNNING) //bleibt am Hafen w√§hrend RangerMeeting
 	{
 		B_Lares_Geheimtreffen();
 	}
@@ -1577,8 +1577,8 @@ func void DIA_Lares_GUIDE_Info ()
 	{
 		AI_Output (self, other, "DIA_Lares_GUIDE_09_01"); //Eccoti qui. Stavo cominciando a temere che ti avessero mangiato i lupi.
 	};
-	AI_Output (self, other, "DIA_Lares_GUIDE_09_02"); //Per il resto della strada puoi arrangiarti da solo. Devo tornare in citt‡, ho alcuni affari da sbrigare...
-	AI_Output (self, other, "DIA_Lares_GUIDE_09_03"); //Segui questa strada e ricorda, difenditi e fai attenzione, e vedrai che sar‡ una passeggiata.
+	AI_Output (self, other, "DIA_Lares_GUIDE_09_02"); //Per il resto della strada puoi arrangiarti da solo. Devo tornare in citt√†, ho alcuni affari da sbrigare...
+	AI_Output (self, other, "DIA_Lares_GUIDE_09_03"); //Segui questa strada e ricorda, difenditi e fai attenzione, e vedrai che sar√† una passeggiata.
 	
 	AI_StopProcessInfos (self);
 	
@@ -1613,7 +1613,7 @@ func int DIA_Addon_Lares_ArrivedPortalInter1_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter1_Info ()
 {
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_00"); //Ora che siamo lontani dalla citt‡ e da orecchie indiscrete, ti dirÚ qualcosa in pi˘.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_00"); //Ora che siamo lontani dalla citt√† e da orecchie indiscrete, ti dir√≤ qualcosa in pi√π.
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_09_01"); //Adesso riporteremo l'ornamento che mi hai dato da Saturas. Ti ricordi di Saturas, vero?
 	
 	
@@ -1627,18 +1627,18 @@ func void DIA_Addon_Lares_ArrivedPortalInter1_Info ()
 func void DIA_Addon_Lares_ArrivedPortalInter1_teil2 ()
 {
 	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_00"); //Noi dell'ex Campo nuovo siamo ancora in buoni rapporti con i Maghi dell'Acqua.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_01"); //Ancora oggi Lee fa tutto quanto Ë in suo potere per proteggere i Maghi da ogni pericolo.
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_02"); //Per tenere i contatti con i Maghi dell'Acqua, io sto quasi sempre in citt‡ e lavoro con Vatras.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_01"); //Ancora oggi Lee fa tutto quanto √® in suo potere per proteggere i Maghi da ogni pericolo.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_02"); //Per tenere i contatti con i Maghi dell'Acqua, io sto quasi sempre in citt√† e lavoro con Vatras.
 	B_MakeRangerReadyForMeeting (self);
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03"); //E questa Ë l'armatura che i Maghi dell'Acqua danno a ognuno di noi. I membri dell'Anello dell'Acqua indossano quest'armatura da prima delle guerre con gli Orchi.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_03"); //E questa √® l'armatura che i Maghi dell'Acqua danno a ognuno di noi. I membri dell'Anello dell'Acqua indossano quest'armatura da prima delle guerre con gli Orchi.
 	
 	if (Cavalorn_RangerHint == TRUE)
 	{
 		AI_Output (other, self, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_15_04"); //Che ruolo ha Cavalorn? Per quanto ne so non era un seguace del Campo Nuovo.
-		AI_Output (self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_05"); //» vero, la nostra comunit‡ Ë cresciuta. Neanch'io so quanti siamo adesso.
+		AI_Output (self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_05"); //√à vero, la nostra comunit√† √® cresciuta. Neanch'io so quanti siamo adesso.
 	};
 
-	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_06"); //Ma proseguiamo. Voglio allontanarmi di pi˘ dalla citt‡. Ne riparleremo dopo.
+	AI_Output			(self, other, "DIA_Addon_Lares_ArrivedPortalInter1_teil2_09_06"); //Ma proseguiamo. Voglio allontanarmi di pi√π dalla citt√†. Ne riparleremo dopo.
 	Info_ClearChoices	(DIA_Addon_Lares_ArrivedPortalInter1);
 };
 
@@ -1681,13 +1681,13 @@ func int DIA_Addon_Lares_ArrivedPortalInterWeiter_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInterWeiter_Info ()
 {
-	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_00"); //Cosa c'Ë che non va? Reggi ancora?
+	AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_00"); //Cosa c'√® che non va? Reggi ancora?
 	
 	if (MIS_Addon_Erol_BanditStuff == LOG_RUNNING)
 	&& ((Npc_GetDistToWP(Erol,"NW_TAVERN_TO_FOREST_03")<1000))
 	&& ((Npc_IsDead(Erol))==FALSE)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_ArrivedPortalInterWeiter_15_01"); //Quel tizio laggi˘ ha problemi con i briganti.
+		AI_Output	(other, self, "DIA_Addon_Lares_ArrivedPortalInterWeiter_15_01"); //Quel tizio laggi√π ha problemi con i briganti.
 		AI_Output	(self, other, "DIA_Addon_Lares_ArrivedPortalInterWeiter_09_02"); //(sprezzante) Peggio per lui, non abbiamo tempo di occuparcene.
 	};
 	
@@ -1748,10 +1748,10 @@ func int DIA_Addon_Lares_ArrivedPortalInter2_Condition ()
 
 func void DIA_Addon_Lares_ArrivedPortalInter2_Info ()
 {
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_00"); //I Maghi dell'Acqua sono fuori di sÈ. » da settimane che scavano in un sito a nord-est. Chiss‡ cosa sperano di trovarci.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_01"); //Tutto Ë iniziato quando la terra ha preso a tremare come faceva nei tempi peggiori della Barriera.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_00"); //I Maghi dell'Acqua sono fuori di s√©. √à da settimane che scavano in un sito a nord-est. Chiss√† cosa sperano di trovarci.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_01"); //Tutto √® iniziato quando la terra ha preso a tremare come faceva nei tempi peggiori della Barriera.
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_02"); //Delle orribili creature di pietra emergevano dal suolo, uccidendo chiunque si avvicinasse a loro.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_03"); //I Maghi dell'Acqua presero in pugno la situazione e distrussero quegli esseri. E ora stanno scavando laggi˘, sperando di trovare una spiegazione per questi strani eventi.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_03"); //I Maghi dell'Acqua presero in pugno la situazione e distrussero quegli esseri. E ora stanno scavando laggi√π, sperando di trovare una spiegazione per questi strani eventi.
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortalInter2_09_04"); //Ma lo vedrai con i tuoi occhi.
 
 	LaresGuide_ZumPortal = 5;
@@ -1841,10 +1841,10 @@ func void DIA_Addon_Lares_ArrivedPortal_Info ()
 {
 	B_MakeRangerReadyToLeaveMeeting (self);
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_00"); //Eccoci qui.
- 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_01"); //Tieni, prendi l'ornamento. I Maghi dell'Acqua devono essere lÏ dentro. Portalo a loro.
+ 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_01"); //Tieni, prendi l'ornamento. I Maghi dell'Acqua devono essere l√¨ dentro. Portalo a loro.
 	B_GiveInvItems (self, other, ItMi_Ornament_Addon_Vatras, 1);					
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_02"); //Se ti imbatti in qualche bestia troppo potente per te, in quel buco nel terreno, torna di corsa da Saturas.
-	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_03"); //Si occuper‡ lui delle bestie. Devo tornare indietro.
+	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_03"); //Si occuper√† lui delle bestie. Devo tornare indietro.
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_04"); //E un'altra cosa: non gingillarti troppo con quest'ornamento. Vai SUBITO da Saturas.
 	AI_Output 	(self, other, "DIA_Addon_Lares_ArrivedPortal_09_05"); //Ci si vede.
 	
@@ -1907,8 +1907,8 @@ func int DIA_Addon_Lares_GOFORESTPRE_Condition ()
 func void DIA_Addon_Lares_GOFORESTPRE_ja ()
 {
 	B_MakeRangerReadyForMeeting (self);
-	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_ja_15_00"); //SÏ.
-	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_ja_09_01"); //D'accordo, amico mio. Seguimi. Non sar‡ piacevole.
+	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_ja_15_00"); //S√¨.
+	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_ja_09_01"); //D'accordo, amico mio. Seguimi. Non sar√† piacevole.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"GUIDEMEDIUMWALD2");
 	LaresGuide_OrnamentForest = 2; 
@@ -1916,7 +1916,7 @@ func void DIA_Addon_Lares_GOFORESTPRE_ja ()
 func void DIA_Addon_Lares_GOFORESTPRE_nein ()
 {
 	AI_Output	(other, self, "DIA_Addon_Lares_GOFORESTPRE_nein_15_00"); //No. Puoi andare.
-	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_nein_09_01"); //La faccenda si Ë risolta, quindi? Va bene. Ci si vede.
+	AI_Output	(self, other, "DIA_Addon_Lares_GOFORESTPRE_nein_09_01"); //La faccenda si √® risolta, quindi? Va bene. Ci si vede.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self,"Start");
 	LaresGuide_OrnamentForest = 3; //Joly: Schluss mit Guide
@@ -1934,7 +1934,7 @@ func void DIA_Addon_Lares_GOFORESTPRE_Info ()
  	};
 	Info_ClearChoices	(DIA_Addon_Lares_GOFORESTPRE);
 	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "No. Puoi andare.", DIA_Addon_Lares_GOFORESTPRE_nein );
-	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "SÏ.", DIA_Addon_Lares_GOFORESTPRE_ja );
+	Info_AddChoice	(DIA_Addon_Lares_GOFORESTPRE, "S√¨.", DIA_Addon_Lares_GOFORESTPRE_ja );
 };
 
 
@@ -1983,7 +1983,7 @@ func void DIA_Addon_Lares_GOFOREST_Info ()
  	}
  	else
  	{
-		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_01"); //Sbrigati. Non voglio restare qui pi˘ dello stretto necessario.
+		AI_Output 	(self, other, "DIA_Addon_Lares_GOFOREST_09_01"); //Sbrigati. Non voglio restare qui pi√π dello stretto necessario.
 	 	AI_StopProcessInfos (self);
  	};
 };
@@ -2019,7 +2019,7 @@ func void DIA_Addon_Lares_PortalInterWEITER_Info ()
 	}
 	else if (LaresGuide_ZumPortal == 6)
 	{
-		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_01"); //(irritato) SÏ, sÏ.
+		AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_01"); //(irritato) S√¨, s√¨.
 	};
 
 	AI_Output	(other, self, "DIA_Addon_Lares_PortalInterWEITER_15_02"); //Proseguiamo!
@@ -2083,12 +2083,12 @@ func int DIA_Lares_DEX_Condition ()
 func void DIA_Lares_DEX_Info ()
 {
 	AI_Output (other, self, "DIA_Lares_DEX_15_00"); //Puoi insegnarmi qualcosa?
-	AI_Output (self, other, "DIA_Addon_Lares_DEX_Add_09_01"); //Certo. Posso aiutarti a diventare pi˘ forte e pi˘ agile, se vuoi.
+	AI_Output (self, other, "DIA_Addon_Lares_DEX_Add_09_01"); //Certo. Posso aiutarti a diventare pi√π forte e pi√π agile, se vuoi.
 
 	Lares_TeachDEX = TRUE;
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry (Topic_CityTeacher,"Lares puÚ aiutarmi a diventare pi˘ forte e pi˘ abile.");
+	B_LogEntry (Topic_CityTeacher,"Lares pu√≤ aiutarmi a diventare pi√π forte e pi√π abile.");
 };
 // ------------------------------------------------------------
 // 			  				   TEACH 
@@ -2131,11 +2131,11 @@ func void DIA_Lares_TEACH_BACK()
 {
 	if (other.attribute[ATR_DEXTERITY] > Lares_MerkeDEX)
 	{
-		AI_Output (self, other, "DIA_Lares_TEACH_BACK_09_00"); //Hai gi‡ migliorato la tua destrezza.
+		AI_Output (self, other, "DIA_Lares_TEACH_BACK_09_00"); //Hai gi√† migliorato la tua destrezza.
 	};
 	if (other.attribute[ATR_STRENGTH] > Lares_MerkeSTR)
 	{
-		AI_Output (self, other, "DIA_Addon_Lares_TEACH_BACK_Add_09_00"); //(valutandolo) Bene. La tua forza Ë aumentata.
+		AI_Output (self, other, "DIA_Addon_Lares_TEACH_BACK_Add_09_00"); //(valutandolo) Bene. La tua forza √® aumentata.
 	};
 	
 	Info_ClearChoices (DIA_Lares_TEACH);
@@ -2256,7 +2256,7 @@ INSTANCE DIA_Lares_AnyNews(C_INFO)
 	condition	= DIA_Lares_AnyNews_Condition;
 	information	= DIA_Lares_AnyNews_Info;
 	permanent	= TRUE;
-	description = "Qualche novit‡?";
+	description = "Qualche novit√†?";
 };                       
 FUNC INT DIA_Lares_AnyNews_Condition()
 {
@@ -2267,11 +2267,11 @@ FUNC INT DIA_Lares_AnyNews_Condition()
 };
 FUNC VOID DIA_Lares_AnyNews_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_AnyNews_15_00"); //Qualche novit‡?
+	AI_Output (other,self ,"DIA_Lares_AnyNews_15_00"); //Qualche novit√†?
 	if (MIS_RescueBennet == LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_01"); //Sei responsabile dell'unica buona notizia. Hanno rilasciato Bennet di nuovo, Ë tornato alla fattoria.
-		AI_Output (self ,other,"DIA_Lares_AnyNews_09_02"); //Vai da lui, penso che ti vorr‡ ringraziare di persona.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_01"); //Sei responsabile dell'unica buona notizia. Hanno rilasciato Bennet di nuovo, √® tornato alla fattoria.
+		AI_Output (self ,other,"DIA_Lares_AnyNews_09_02"); //Vai da lui, penso che ti vorr√† ringraziare di persona.
 	}
 	else
 	{
@@ -2284,9 +2284,9 @@ FUNC VOID DIA_Lares_AnyNews_Info()
 		}
 		else
 		{
-			AI_Output (other,self ,"DIA_Lares_AnyNews_15_06"); //Come Ë successo?
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_07"); //Bennet Ë andato in citt‡ per fare rifornimenti. Beh, non Ë mai tornato.
-			AI_Output (self ,other,"DIA_Lares_AnyNews_09_08"); //Se vuoi saperne di pi˘, potresti chiedere a Hodges, era in citt‡ con Bennet.
+			AI_Output (other,self ,"DIA_Lares_AnyNews_15_06"); //Come √® successo?
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_07"); //Bennet √® andato in citt√† per fare rifornimenti. Beh, non √® mai tornato.
+			AI_Output (self ,other,"DIA_Lares_AnyNews_09_08"); //Se vuoi saperne di pi√π, potresti chiedere a Hodges, era in citt√† con Bennet.
 			
 			MIS_RescueBennet = LOG_RUNNING;
 		};
@@ -2294,7 +2294,7 @@ FUNC VOID DIA_Lares_AnyNews_Info()
 };
 
 // ************************************************************
-// 		Hast du was von Bennet gehˆrt?			 
+// 		Hast du was von Bennet geh√∂rt?			 
 // ************************************************************
 INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 {
@@ -2303,7 +2303,7 @@ INSTANCE DIA_Lares_NewsAboutBennet(C_INFO)
 	condition	= DIA_Lares_NewsAboutBennet_Condition;
 	information	= DIA_Lares_NewsAboutBennet_Info;
 	permanent	= FALSE;
-	description = "Novit‡ di Bennet?";
+	description = "Novit√† di Bennet?";
 };                       
 FUNC INT DIA_Lares_NewsAboutBennet_Condition()
 {
@@ -2314,11 +2314,11 @@ FUNC INT DIA_Lares_NewsAboutBennet_Condition()
 };
 FUNC VOID DIA_Lares_NewsAboutBennet_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_00"); //Novit‡ di Bennet?
+	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_00"); //Novit√† di Bennet?
 	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_01"); //Sembra che l'abbiano portato in caserma e sbattuto nei sotterranei.
 	AI_Output (other,self ,"DIA_Lares_NewsAboutBennet_15_02"); //Come possiamo tirarlo fuori?
 	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_03"); //Non ne ho assolutamente idea. Non posso raggiungere la sua cella per parlargli.
-	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_04"); //Tutto quello che posso fare Ë tenere le orecchie aperte, ma non c'Ë molto da scoprire da queste parti.
+	AI_Output (self ,other,"DIA_Lares_NewsAboutBennet_09_04"); //Tutto quello che posso fare √® tenere le orecchie aperte, ma non c'√® molto da scoprire da queste parti.
 };
 
 //#################################
@@ -2362,7 +2362,7 @@ INSTANCE DIA_Lares_Kap4_PERM(C_INFO)
 	condition	= DIA_Lares_Kap4_PERM_Condition;
 	information	= DIA_Lares_Kap4_PERM_Info;
 	permanent	= TRUE;
-	description = "PerchÈ non siete a caccia di draghi?";
+	description = "Perch√© non siete a caccia di draghi?";
 };                       
 FUNC INT DIA_Lares_Kap4_PERM_Condition()
 {
@@ -2373,9 +2373,9 @@ FUNC INT DIA_Lares_Kap4_PERM_Condition()
 };
 FUNC VOID DIA_Lares_Kap4_PERM_Info()
 {	
-	AI_Output (other,self ,"DIA_Lares_Kap4_PERM_15_00"); //PerchÈ non siete a caccia di draghi?
-	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_01"); //Non Ë il mio genere di cose, preferisco lasciarlo ad altri.
-	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_02"); //No, no, ciÚ di cui ho bisogno ora Ë fresca aria di mare.
+	AI_Output (other,self ,"DIA_Lares_Kap4_PERM_15_00"); //Perch√© non siete a caccia di draghi?
+	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_01"); //Non √® il mio genere di cose, preferisco lasciarlo ad altri.
+	AI_Output (self ,other,"DIA_Lares_Kap4_PERM_09_02"); //No, no, ci√≤ di cui ho bisogno ora √® fresca aria di mare.
 };
 
 //#################################
@@ -2422,7 +2422,7 @@ instance DIA_Lares_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Lares_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Lares_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Vorresti lasciare questíisola?";
+	description	 = 	"Vorresti lasciare quest‚Äôisola?";
 };
 func int DIA_Lares_KnowWhereEnemy_Condition ()
 {	
@@ -2435,15 +2435,15 @@ func int DIA_Lares_KnowWhereEnemy_Condition ()
 func void DIA_Lares_KnowWhereEnemy_Info ()
 {
 	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_00"); //Ti piacerebbe abbandonare questa isola?
-	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_01"); //Pi˘ di qualsiasi altra cosa. Cosa hai in mente?
-	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_02"); //Ho scoperto dove si nasconde il capo dei draghi. » su un'isola non troppo lontana da qui.
+	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_01"); //Pi√π di qualsiasi altra cosa. Cosa hai in mente?
+	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_02"); //Ho scoperto dove si nasconde il capo dei draghi. √à su un'isola non troppo lontana da qui.
 	AI_Output			(other, self, "DIA_Lares_KnowWhereEnemy_15_03"); //Intendo farlo fuori una volta per tutte.
 	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_04"); //Sembra interessante. Se hai bisogno di me, ci sono.
 	AI_Output			(self, other, "DIA_Lares_KnowWhereEnemy_09_05"); //Non ti servirebbe un insegnante per la destrezza o nel combattimento con armi a una mano durante il cammino?
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Lares_KnowWhereEnemy_15_06"); //La nave Ë al completo, ma tornerÚ se ci saranno cambiamenti.
+		AI_Output			(other,self , "DIA_Lares_KnowWhereEnemy_15_06"); //La nave √® al completo, ma torner√≤ se ci saranno cambiamenti.
 	}
 	else 
 	{
@@ -2457,7 +2457,7 @@ FUNC VOID DIA_Lares_KnowWhereEnemy_Yes ()
 {
 	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_00"); //Sapevo che avrei potuto contare su di te.
 	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_Yes_15_01"); //Ci incontreremo tutti alla nave.
-	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_Yes_09_02"); //Un uomo d'azione, cosÏ mi piaci. A dopo.
+	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_Yes_09_02"); //Un uomo d'azione, cos√¨ mi piaci. A dopo.
 	
 	Lares_IsOnBoard	 = LOG_SUCCESS;
 	crewmember_Count = (Crewmember_Count +1);
@@ -2477,7 +2477,7 @@ FUNC VOID DIA_Lares_KnowWhereEnemy_Yes ()
 FUNC VOID DIA_Lares_KnowWhereEnemy_No ()
 {
 	AI_Output (other,self ,"DIA_Lares_KnowWhereEnemy_No_15_00"); //Apprezzo la tua offerta, ma non mi serve il tuo aiuto.
-	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_No_09_01"); //Devi sapere ciÚ che vuoi. Se ti va possiamo parlarne pi˘ tardi, sai dove trovarmi.
+	AI_Output (self ,other,"DIA_Lares_KnowWhereEnemy_No_09_01"); //Devi sapere ci√≤ che vuoi. Se ti va possiamo parlarne pi√π tardi, sai dove trovarmi.
 
 	if (hero.guild == GIL_DJG)
 	{
@@ -2501,7 +2501,7 @@ instance DIA_Lares_LeaveMyShip		(C_INFO)
 	condition	 = 	DIA_Lares_LeaveMyShip_Condition;
 	information	 = 	DIA_Lares_LeaveMyShip_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"» meglio se non vieni anche tu.";
+	description	 = 	"√à meglio se non vieni anche tu.";
 };
 func int DIA_Lares_LeaveMyShip_Condition ()
 {	
@@ -2513,7 +2513,7 @@ func int DIA_Lares_LeaveMyShip_Condition ()
 };
 func void DIA_Lares_LeaveMyShip_Info ()
 {
-	AI_Output			(other, self, "DIA_Lares_LeaveMyShip_15_00"); //» meglio se non vieni anche tu.
+	AI_Output			(other, self, "DIA_Lares_LeaveMyShip_15_00"); //√à meglio se non vieni anche tu.
 	AI_Output			(self, other, "DIA_Lares_LeaveMyShip_09_01"); //Come desideri, ma in futuro pensaci bene prima di fare promesse a chiunque.
 	
 	if (hero.guild == GIL_DJG)
@@ -2530,7 +2530,7 @@ func void DIA_Lares_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir ¸berlegt!
+//	Ich habs mir √ºberlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lares_StillNeedYou		(C_INFO)
 {
@@ -2556,7 +2556,7 @@ func void DIA_Lares_StillNeedYou_Info ()
 	
 	if (Lares_IsOnBoard == LOG_OBSOLETE)
 	{
-		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_01"); //In genere non permetto che la gente mi tratti cosÏ, ma siccome sei uno di noi, per questa volta lascerÚ perdere.
+		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_01"); //In genere non permetto che la gente mi tratti cos√¨, ma siccome sei uno di noi, per questa volta lascer√≤ perdere.
 		AI_Output	(self, other, "DIA_Lares_StillNeedYou_09_02"); //Ci troveremo alla nave.
 		
 		Lares_IsOnBoard	 = LOG_SUCCESS;

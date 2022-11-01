@@ -43,7 +43,7 @@ FUNC INT DIA_Edda_Hallo_Condition()
 FUNC VOID DIA_Edda_Hallo_Info()
 {	
 	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Che cosa stai cucinando?
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Una zuppa di pesce. Non Ë molto saporita, ma almeno Ë calda.
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Una zuppa di pesce. Non √® molto saporita, ma almeno √® calda.
 	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //Puoi assaggiarla se vuoi.
 };
 
@@ -57,7 +57,7 @@ INSTANCE DIA_Edda_Stadt(C_INFO)
 	condition	= DIA_Edda_Stadt_Condition;
 	information	= DIA_Edda_Stadt_Info;
 	permanent	= FALSE;
-	description = "Cosa mi dici della citt‡?";
+	description = "Cosa mi dici della citt√†?";
 };                       
 
 FUNC INT DIA_Edda_Stadt_Condition()
@@ -66,11 +66,11 @@ FUNC INT DIA_Edda_Stadt_Condition()
 };
 FUNC VOID DIA_Edda_Stadt_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Cosa mi dici della citt‡?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //La maggior parte dei cittadini in citt‡ ha paura dei ladri. Di conseguenza non Ë una buona idea entrare in strane abitazioni.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Ma se stai cercando un posto per la notte, puoi sempre dormire nella mia capanna. C'Ë un letto supplementare che puoi usare.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Cosa mi dici della citt√†?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //La maggior parte dei cittadini in citt√† ha paura dei ladri. Di conseguenza non √® una buona idea entrare in strane abitazioni.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Ma se stai cercando un posto per la notte, puoi sempre dormire nella mia capanna. C'√® un letto supplementare che puoi usare.
 	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Non hai paura dei ladri?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //L'unica cosa di valore che possedevo mi Ë gi‡ stata tolta.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //L'unica cosa di valore che possedevo mi √® gi√† stata tolta.
 	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //Qualcuno ha rubato la mia statua di Innos.
 	
 	Edda_Schlafplatz = TRUE;
@@ -96,10 +96,10 @@ FUNC INT DIA_Edda_Kochen_Condition()
 FUNC VOID DIA_Edda_Kochen_Info()
 {	
 	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //Mi prepari una zuppa?
-	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //Cucino per tutti e anche per te, se vuoi. Tutto quello che devi fare Ë portarmi un pesce.
+	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //Cucino per tutti e anche per te, se vuoi. Tutto quello che devi fare √® portarmi un pesce.
 };			
 // ************************************************************
-// 		t‰gliche Suppe abholen
+// 		t√§gliche Suppe abholen
 // ************************************************************
 INSTANCE DIA_Edda_Suppe(C_INFO)
 {
@@ -130,13 +130,13 @@ FUNC VOID DIA_Edda_Suppe_Info()
 	{
 		if B_GiveInvItems (other, self, ItFo_Fish,1)
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //Niente di pi˘ facile. Ecco, prendi un piatto.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_01"); //Niente di pi√π facile. Ecco, prendi un piatto.
 			B_GiveInvItems (self, other, ItFo_Fishsoup, 1);
 			Edda_Day = Wld_GetDay ();
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //Portami un pesce e ti cucinerÚ una zuppa gustosa.
+			AI_Output (self ,other,"DIA_Edda_Suppe_17_04"); //Portami un pesce e ti cuciner√≤ una zuppa gustosa.
 		};
 		
 	}

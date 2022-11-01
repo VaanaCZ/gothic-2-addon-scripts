@@ -49,8 +49,8 @@ FUNC VOID DIA_GornOW_Hello_Info()
 	
 	AI_Output	(other,self ,"DIA_GornOW_Hello_15_00");	//Hai oziato abbastanza, sei libero!
 	AI_Output 	(self ,other,"DIA_GornOW_Hello_12_01"); //Era ora che qualcuno mi facesse uscire da qui.
-	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Certo, non mi sarei mai aspettato che fossi proprio tu. È bello rivederti.
-	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(ghigno) Garond dice che mangi troppo e che non può più permettersi di nutrirti.
+	AI_Output	(self ,other,"DIA_GornOW_Hello_12_02");	//Certo, non mi sarei mai aspettato che fossi proprio tu. Ãˆ bello rivederti.
+	AI_Output	(other,self ,"DIA_GornOW_Hello_15_03");	//(ghigno) Garond dice che mangi troppo e che non puÃ² piÃ¹ permettersi di nutrirti.
 	AI_Output	(self ,other,"DIA_GornOW_Hello_12_04");	//Ora che mi ci fai pensare, gradirei un paio di birre. Usciamo da qui, ne ho abbastanza di questa cella.
 	
 	if (other.guild == GIL_SLD)
@@ -58,7 +58,7 @@ FUNC VOID DIA_GornOW_Hello_Info()
 		AI_Output (self ,other,"DIA_GornOW_Add_12_00"); //Aspetta, ho qui qualcosa che potrebbe tornarti utile.
 		AI_Output (self ,other,"DIA_GornOW_Add_12_01"); //Ho trovato quest'armatura qui in cella. Qualche prigioniero deve averla nascosta qui.
 		B_GiveInvItems (self, other, itar_sld_M, 1);
-		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //È troppo piccola per me, ma a te potrebbe andare bene...
+		AI_Output (self ,other,"DIA_GornOW_Add_12_02"); //Ãˆ troppo piccola per me, ma a te potrebbe andare bene...
 		AI_Output (other,self ,"DIA_GornOW_Add_15_03"); //Grazie! Ci vediamo da Milten...
 	}
 	else
@@ -100,20 +100,20 @@ FUNC INT DIA_GornOW_MetMilten_Condition()
 };
 FUNC VOID DIA_GornOW_MetMilten_Info()
 {	
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Ascolta, ho oziato quaggiù troppo a lungo. È ora che io veda qualcos'altro oltre a questa valle.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_00");//Ascolta, ho oziato quaggiÃ¹ troppo a lungo. Ãˆ ora che io veda qualcos'altro oltre a questa valle.
 	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_01");//Come hai fatto ad attraversare il passo?
-	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//C'è un sentiero che attraversa la miniera abbandonata.
-	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Bene, aspetterò il momento giusto e poi me ne andrò.
+	AI_Output (other, self,"DIA_GornOW_MetMilten_15_02");//C'Ã¨ un sentiero che attraversa la miniera abbandonata.
+	AI_Output (self ,other,"DIA_GornOW_MetMilten_12_03");//Bene, aspetterÃ² il momento giusto e poi me ne andrÃ².
 	
 	if (other.guild != GIL_SLD)
 	{
 		AI_Output (other, self,"DIA_GornOW_MetMilten_15_04");//Dove andrai poi?
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Ho sentito dire che Lee è ancora vivo. Voglio nuovamente unirmi a lui.
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_05");//Ho sentito dire che Lee Ã¨ ancora vivo. Voglio nuovamente unirmi a lui.
 	}
 	else
 	{
-		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//Allora vai alla fattoria di Onar, Lee e i suoi ragazzi si trovano lì. Ha bisogno di uomini abili come te.
-		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//Lo farò. Andrò a controllare come stanno.
+		AI_Output (other, self,"DIA_GornOW_MetMilten_15_06");//Allora vai alla fattoria di Onar, Lee e i suoi ragazzi si trovano lÃ¬. Ha bisogno di uomini abili come te.
+		AI_Output (self ,other,"DIA_GornOW_MetMilten_12_07");//Lo farÃ². AndrÃ² a controllare come stanno.
 	};
 };	
 

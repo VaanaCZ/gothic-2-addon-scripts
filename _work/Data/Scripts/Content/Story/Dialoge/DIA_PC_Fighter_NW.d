@@ -43,13 +43,13 @@ FUNC VOID DIA_GornNW_Hallo_Info()
 	if (MIS_RescueGorn == LOG_SUCCESS)
 	{
 		AI_Output (self ,other,"DIA_GornNW_Add_12_01"); //Mi hai salvato la pelle, amico.
-		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //Non lo dimenticherÚ mai.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_02"); //Non lo dimenticher√≤ mai.
 		B_GivePlayerXP (XP_Ambient);
 	}
 	else
 	{
 		AI_Output (self ,other,"DIA_GornNW_Add_12_03"); //Milten mi ha fatto uscire.
-		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //Non lo dimenticherÚ mai.
+		AI_Output (self ,other,"DIA_GornNW_Add_12_04"); //Non lo dimenticher√≤ mai.
 	};
 };
 
@@ -73,8 +73,8 @@ FUNC INT DIA_GornNW_WhatNext_Condition()
 FUNC VOID DIA_GornNW_WhatNext_Info()
 {	
 	AI_Output (other,self ,"DIA_GornNW_Add_15_05"); //Cosa intendi fare ora?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //Penso che asseconderÚ il mio stomaco.
+	AI_Output (self ,other,"DIA_GornNW_Add_12_06"); //Penso che asseconder√≤ il mio stomaco.
 	AI_Output (other,self ,"DIA_GornNW_Add_15_07"); //E poi?
-	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Chi lo sa... Forse tornerÚ alla colonia mineraria.
-	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //Qualcuno dovr‡ pur tener d'occhio gli orchi, altrimenti si presenteranno alla porta senza alcun avvertimento.
+	AI_Output (self ,other,"DIA_GornNW_Add_12_08"); //Chi lo sa... Forse torner√≤ alla colonia mineraria.
+	AI_Output (self ,other,"DIA_GornNW_Add_12_09"); //Qualcuno dovr√† pur tener d'occhio gli orchi, altrimenti si presenteranno alla porta senza alcun avvertimento.
 };

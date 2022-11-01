@@ -27,12 +27,12 @@ func int B_TeachPlayerTalentSmith (var C_NPC slf, var C_NPC oth, var int waffe)
 	oth.lp = oth.lp - kosten;
 	
 	Log_CreateTopic (TOPIC_TalentSmith,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentSmith,"Per forgiare un'arma, ho innanzitutto bisogno di un pezzo di acciaio grezzo. DovrÚ poi scaldarlo nel fuoco di una fucina fino a quando non sar‡ incandescente e poi plasmarlo su un'incudine. Le armi speciali spesso richiedono l'uso di certe sostanze che possano offrire caratteristiche particolari.");
+	B_LogEntry (TOPIC_TalentSmith,"Per forgiare un'arma, ho innanzitutto bisogno di un pezzo di acciaio grezzo. Dovr√≤ poi scaldarlo nel fuoco di una fucina fino a quando non sar√† incandescente e poi plasmarlo su un'incudine. Le armi speciali spesso richiedono l'uso di certe sostanze che possano offrire caratteristiche particolari.");
 	
 	// ------ Waffe schmieden lernen ------
 	//Bennet
 	if (waffe == WEAPON_Common)				{	PLAYER_TALENT_SMITH[WEAPON_Common] 			= TRUE;	
-	B_LogEntry (TOPIC_TalentSmith,"Non mi servono altri ingredienti per la 'Spada che si forgia da sÈ'.                     ");};
+	B_LogEntry (TOPIC_TalentSmith,"Non mi servono altri ingredienti per la 'Spada che si forgia da s√©'.                     ");};
 	if (waffe == WEAPON_1H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_1H_Special_01] 	= TRUE;	
 	B_LogEntry (TOPIC_TalentSmith,"Mi serve 1 pepita metallifera per forgiare 'Spada lunga di metallo'.");};
 	if (waffe == WEAPON_2H_Special_01)		{	PLAYER_TALENT_SMITH[WEAPON_2H_Special_01] 	= TRUE;	

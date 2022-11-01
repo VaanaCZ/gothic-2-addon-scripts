@@ -1,6 +1,6 @@
 // *****************************************************************
 // //Joly: Auge Innos nicht dabei? Kein Problem. Xardas hilft auch dir Idiot!!!!!!!!!!!!
-// Vorsicht: Nur für D.A.U.s
+// Vorsicht: Nur fÃ¼r D.A.U.s
 // *****************************************************************
 
 INSTANCE ItSe_XardasNotfallBeutel_MIS	(C_Item)
@@ -71,7 +71,7 @@ func void Use_XardasErmahnungFuerIdioten ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Mio giovane amico, mi deludi alquanto. Come hai potuto partire con la nave senza prendere l'Occhio di Innos?"					);
-					Doc_PrintLines	( nDocID,  0, "Posso solo sperare che ci siano dei limiti alla tua negligenza. Altrimenti, non libererai il mondo dal male e io sarò costretto a giustiziarti personalmente per la tua stupidità."					);
+					Doc_PrintLines	( nDocID,  0, "Posso solo sperare che ci siano dei limiti alla tua negligenza. Altrimenti, non libererai il mondo dal male e io sarÃ² costretto a giustiziarti personalmente per la tua stupiditÃ ."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -116,30 +116,30 @@ func void Use_Krypta_Garon ()
 
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Ho fallito. Invano ho cercato di portare Inubis sulla strada del Bene."					);
-					Doc_PrintLines	( nDocID,  0, "All'inizio credevo di essere morto, ma è rimasta ancora della forza nelle ossa del vecchio Ivan."					);
-					Doc_PrintLines	( nDocID,  0, "Inubis è risorto dalla morte. Bandito dall'antico ordine dei paladini, egli cerca ora vendetta per la sua maledizione."					);
-					Doc_PrintLines	( nDocID,  0, "Molti dei suoi seguaci lo accompagnano. Non avevo idea che un signore della guerra come Inubis potesse diventare così malvagio."					);
+					Doc_PrintLines	( nDocID,  0, "All'inizio credevo di essere morto, ma Ã¨ rimasta ancora della forza nelle ossa del vecchio Ivan."					);
+					Doc_PrintLines	( nDocID,  0, "Inubis Ã¨ risorto dalla morte. Bandito dall'antico ordine dei paladini, egli cerca ora vendetta per la sua maledizione."					);
+					Doc_PrintLines	( nDocID,  0, "Molti dei suoi seguaci lo accompagnano. Non avevo idea che un signore della guerra come Inubis potesse diventare cosÃ¬ malvagio."					);
 					Doc_PrintLines	( nDocID,  0, "Ho trovato la sua tomba in questa cripta. Ma non sono sicuro di riuscire a sopravvivere per riferire questa scoperta, pertanto scrivo queste righe nella speranza che qualcuno possa trovarle."					);
-					Doc_PrintLines	( nDocID,  0, "Fate attenzione, un potente nemico sta cercando di corrompere le anime dei giusti. Inubis non sarà l'ultimo."					);
+					Doc_PrintLines	( nDocID,  0, "Fate attenzione, un potente nemico sta cercando di corrompere le anime dei giusti. Inubis non sarÃ  l'ultimo."					);
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Possa Innos salvare le vostre anime."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "                                 Ivan");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 
 }; 
 
 //****************************************************************************
-//				DragonIsle_Undead_Schlüssel
+//				DragonIsle_Undead_SchlÃ¼ssel
 //			---------------------------------------------
 //****************************************************************************
 
 //**********************************************************************************
-//	Knasttürschlüssel für Pedros Zelle auf DI
+//	KnasttÃ¼rschlÃ¼ssel fÃ¼r Pedros Zelle auf DI
 //**********************************************************************************
 
 INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
@@ -158,7 +158,7 @@ INSTANCE ItKe_OrkKnastDI_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
-INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
+INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//SchlÃ¼ssel fÃ¼r erste TÃ¼r
 {
 	name 				=	"Chiave di Archol";
 
@@ -177,7 +177,7 @@ INSTANCE ItKe_EVT_UNDEAD_01(C_Item)	//Schlüssel für erste Tür
 };
 
 //**********************************************************************************
-//	Schlüssel zum Labyrinth der Untoten auf DI
+//	SchlÃ¼ssel zum Labyrinth der Untoten auf DI
 //**********************************************************************************
 
 INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
@@ -198,7 +198,7 @@ INSTANCE ItKe_EVT_UNDEAD_02	(C_Item)
 
 
 //**********************************************************************************
-//	Kammerschlüssel für´s Tor zum Saal des Untoten Drachen.
+//	KammerschlÃ¼ssel fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 	
 INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
@@ -217,7 +217,7 @@ INSTANCE ItKe_LastDoorToUndeadDrgDI_MIS	(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //**********************************************************************************
-//	Schriftrolle für´s Tor zum Saal des Untoten Drachen.
+//	Schriftrolle fÃ¼rÂ´s Tor zum Saal des Untoten Drachen.
 //**********************************************************************************
 	
 INSTANCE ItWr_LastDoorToUndeadDrgDI_MIS	(C_Item)
@@ -257,14 +257,14 @@ func void Use_ItWr_LastDoorToUndeadDrgDI_MIS ()
 					Doc_PrintLine	( nDocID,  0, "L'Occhio del Potere illumina il tuo cammino.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus
+					Doc_SetMargins	( nDocID, -1, 200, 50, 50, 50, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus
 				
 					Doc_Show		( nDocID );
 	
-	B_LogEntry (TOPIC_HallenVonIrdorath,"La pergamena del mago oscuro conteneva le parole KHADOSH EMEM KADAR. Sembra una specie di formula magica, ma a cosa serve e cos'è l'Occhio del Potere?"); 
+	B_LogEntry (TOPIC_HallenVonIrdorath,"La pergamena del mago oscuro conteneva le parole KHADOSH EMEM KADAR. Sembra una specie di formula magica, ma a cosa serve e cos'Ã¨ l'Occhio del Potere?"); 
 };
 //**********************************************************************************
-//	Schlüssel zur Truhe in der Kammer des OberDementors.
+//	SchlÃ¼ssel zur Truhe in der Kammer des OberDementors.
 //**********************************************************************************
 INSTANCE ItKe_ChestMasterDementor_MIS	(C_Item)
 {
@@ -317,14 +317,14 @@ func void Use_RezeptFuerMegaTrank ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Ho riesumato un'antica arte. Temo che Feodaron non sarà molto colpito dal risultato."					);
-					Doc_PrintLines	( nDocID,  0, "Questo significa, semplicemente, che dovrei miscelare la sua intera nidiata in una pozione. Se solo non stesse seduto sulle uova tutto il giorno come una gallina, avrei già terminato l'esperimento. Ma egli mi ispira ancora un certo rispetto."					);
+					Doc_PrintLines	( nDocID,  0, "Ho riesumato un'antica arte. Temo che Feodaron non sarÃ  molto colpito dal risultato."					);
+					Doc_PrintLines	( nDocID,  0, "Questo significa, semplicemente, che dovrei miscelare la sua intera nidiata in una pozione. Se solo non stesse seduto sulle uova tutto il giorno come una gallina, avrei giÃ  terminato l'esperimento. Ma egli mi ispira ancora un certo rispetto."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Embarla Firgasto:"					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "11 uova di drago, una perla nera polverizzata e un pizzico di zolfo."					);
 					Doc_PrintLines	( nDocID,  0, "L'emulsione deve essere portata al punto di ebollizione e costantemente mescolata mentre passa attraverso il distillatore."					);
-					Doc_PrintLines	( nDocID,  0, "L'elisir deve essere utilizzato con cautela. Esso possiede forti effetti secondari e può sconvolgere l'intero sistema del mana."					);
+					Doc_PrintLines	( nDocID,  0, "L'elisir deve essere utilizzato con cautela. Esso possiede forti effetti secondari e puÃ² sconvolgere l'intero sistema del mana."					);
 					
 					Doc_Show		( nDocID );
 		
@@ -371,17 +371,17 @@ INSTANCE ItWr_Diary_BlackNovice_MIS (C_ITEM)
 					Doc_PrintLine	( nDocID,  0, ""					);										
 					Doc_PrintLines	( nDocID,  0, "Ho atteso di essere convocato per 36 giorni ormai. Comincio a dubitare che mi permetteranno di unirmi a loro. Ho fatto tutto quello che mi hanno chiesto. Ho trovato e portato loro un sacco di cose, come una vecchia cameriera."					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  0, "Il maestro mi insegnato a sbarrare il cancello. Purtroppo non ho ancora capito bene come fare. Se continua così, chiunque potrebbe passare indisturbato oltre il cancello.");
-					Doc_PrintLines	( nDocID,  0, "È un peccato che io non riesca a ricordare la combinazione.");
+					Doc_PrintLines	( nDocID,  0, "Il maestro mi insegnato a sbarrare il cancello. Purtroppo non ho ancora capito bene come fare. Se continua cosÃ¬, chiunque potrebbe passare indisturbato oltre il cancello.");
+					Doc_PrintLines	( nDocID,  0, "Ãˆ un peccato che io non riesca a ricordare la combinazione.");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages 
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Avrei potuto intrufolarmi nelle grandi Sale anni fa. Sono impaziente di incontrare il Maestro. Mi chiedo se me lo lasceranno vedere una volta che sarò diventato uno di loro."	);
+					Doc_PrintLines	( nDocID,  1, "Avrei potuto intrufolarmi nelle grandi Sale anni fa. Sono impaziente di incontrare il Maestro. Mi chiedo se me lo lasceranno vedere una volta che sarÃ² diventato uno di loro."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					//Absatz
-					Doc_PrintLines	( nDocID,  1, "Ieri ho sfidato la sorte. Ma ho fallito nella stanza delle due leve prima che potessi premere i tre interruttori dell'ala ovest nell'ordine corretto. Quel cane ha chiuso la stanze! Domani cercherò di prendergli la chiave...");
+					Doc_PrintLines	( nDocID,  1, "Ieri ho sfidato la sorte. Ma ho fallito nella stanza delle due leve prima che potessi premere i tre interruttori dell'ala ovest nell'ordine corretto. Quel cane ha chiuso la stanze! Domani cercherÃ² di prendergli la chiave...");
 					Doc_Show		( nDocID );
 
 	B_LogEntry (TOPIC_HallenVonIrdorath,"Il diario del mago oscuro novizio parla di stanze, leve, maestri di chiavi, combinazioni di interruttori e altre cose. Dovrei tenerlo a mente, potrebbe essere utile in seguito."); 
@@ -422,7 +422,7 @@ func void Use_ZugBruecke ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Non mi importa se puoi attraversare il ponte dall'altro lato o meno. Se potessi dire qualcosa, marcireste tutti all'inferno."					);
-					Doc_PrintLines	( nDocID,  0, "Lascerò il ponte ritratto fino a quando sarà in mio potere. E se scoprirò qualcuno intento a cercare di colpire i pulsanti con arco e freccia per passare, impiccherò personalmente l'idiota all'albero più vicino."	);
+					Doc_PrintLines	( nDocID,  0, "LascerÃ² il ponte ritratto fino a quando sarÃ  in mio potere. E se scoprirÃ² qualcuno intento a cercare di colpire i pulsanti con arco e freccia per passare, impiccherÃ² personalmente l'idiota all'albero piÃ¹ vicino."	);
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -433,7 +433,7 @@ func void Use_ZugBruecke ()
 
 
 //**********************************************************************************
-//	ItMi_PowerEye zum öffnen der letzten Tür
+//	ItMi_PowerEye zum Ã¶ffnen der letzten TÃ¼r
 //**********************************************************************************
 
 INSTANCE ItMi_PowerEye (C_Item)

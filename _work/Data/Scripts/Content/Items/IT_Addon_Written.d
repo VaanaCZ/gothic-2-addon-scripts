@@ -31,10 +31,10 @@ func void Use_Hinweis_02 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Ehi gente,");
 					Doc_PrintLines	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Lou Ë scomparso nella palude: forse Ë stato divorato dagli squali di palude.");	
-					Doc_PrintLines	( nDocID,  0, "Ma il peggio Ë che la chiave della porta Ë scomparsa insieme a lui."					);
+					Doc_PrintLines	( nDocID,  0, "Lou √® scomparso nella palude: forse √® stato divorato dagli squali di palude.");	
+					Doc_PrintLines	( nDocID,  0, "Ma il peggio √® che la chiave della porta √® scomparsa insieme a lui."					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Chi la trova puÚ tenersi la roba di Lou.");	
+					Doc_PrintLines	( nDocID,  0, "Chi la trova pu√≤ tenersi la roba di Lou.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Snaf");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -59,7 +59,7 @@ INSTANCE ITWr_Addon_Health_04		(C_Item)
 	description			= 	"Energia vitale pura";
 	
 	TEXT[2]				=	"Per preparare una pozione potente.";
-	TEXT[3]				=	"» necessario conoscere elisir di guarigione.";
+	TEXT[3]				=	"√à necessario conoscere elisir di guarigione.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -91,7 +91,7 @@ func void Use_Heilrezept_04 ()
 					Doc_PrintLines	( nDocID,  0, "Versa tutto insieme e segui la ricetta degli elisir curativi.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Questa pozione puÚ essere creata solo da alchimisti che conoscono la ricetta degli elisir curativi.");	
+					Doc_PrintLines	( nDocID,  0, "Questa pozione pu√≤ essere creata solo da alchimisti che conoscono la ricetta degli elisir curativi.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -117,7 +117,7 @@ INSTANCE ITWr_Addon_Mana_04		(C_Item)
 	description			= 	"Mana puro";
 	
 	TEXT[2]				=	"Per preparare una pozione potente.";
-	TEXT[3]				=	"» necessario conoscere gli elisir di mana.";
+	TEXT[3]				=	"√à necessario conoscere gli elisir di mana.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -149,7 +149,7 @@ func void Use_Manarezept_04 ()
 					Doc_PrintLines	( nDocID,  0, "Versa tutto insieme e segui la ricetta degli elisir di mana.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Questa pozione puÚ essere creata solo da alchimisti che conoscono la ricetta degli elisir di mana.");	
+					Doc_PrintLines	( nDocID,  0, "Questa pozione pu√≤ essere creata solo da alchimisti che conoscono la ricetta degli elisir di mana.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -188,9 +188,9 @@ func void Use_Hinweis_01 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Ehi gente,");
 					Doc_PrintLines	( nDocID,  0, "la roba dentro ai forzieri serve per le emergenze.");	
-					Doc_PrintLines	( nDocID,  0, "Ed Ë per TUTTI. Quindi prendete solo quello che vi serve.");	
-					Doc_PrintLines	( nDocID,  0, "E non prendete pi˘ di quello che vi serve."					);
-					Doc_PrintLines	( nDocID,  0, "Se tutti si regoleranno in questo modo andr‡ tutto bene."					);
+					Doc_PrintLines	( nDocID,  0, "Ed √® per TUTTI. Quindi prendete solo quello che vi serve.");	
+					Doc_PrintLines	( nDocID,  0, "E non prendete pi√π di quello che vi serve."					);
+					Doc_PrintLines	( nDocID,  0, "Se tutti si regoleranno in questo modo andr√† tutto bene."					);
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Fletcher");
@@ -229,11 +229,11 @@ func void Use_William_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "William,");
-					Doc_PrintLines	( nDocID,  0, "Quando la luna sar‡ piena, la guardia sar‡ distratta.");	
+					Doc_PrintLines	( nDocID,  0, "Quando la luna sar√† piena, la guardia sar√† distratta.");	
 					Doc_PrintLines	( nDocID,  0, "Svicola fuori: ma fa attenzione!");	
 					Doc_PrintLines	( nDocID,  0, "Se segui la via dei tronchi puoi uscire dalla palude."					);
-					Doc_PrintLines	( nDocID,  0, "Il campo dei pirati Ë lontano, sull'altro lato della valle a ovest."					);
-					Doc_PrintLines	( nDocID,  0, "Da l‡, dovrebbe essere facile allontanarsi con la barca.");	
+					Doc_PrintLines	( nDocID,  0, "Il campo dei pirati √® lontano, sull'altro lato della valle a ovest."					);
+					Doc_PrintLines	( nDocID,  0, "Da l√†, dovrebbe essere facile allontanarsi con la barca.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Un amico");	
@@ -273,7 +273,7 @@ func void Use_MCELIXIER_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "Elisir d'alterazione mentale");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Per questa pozione, Ë necessaria la secrezione di due pungiglioni di sanguimosche.");	
+					Doc_PrintLines	( nDocID,  0, "Per questa pozione, √® necessaria la secrezione di due pungiglioni di sanguimosche.");	
 					Doc_PrintLines	( nDocID,  0, "Aggiungi un estratto di mana e un'essenza curativa.");	
 					Doc_PrintLines	( nDocID,  0, "Infine, mescola una borsa di pepe rosso irritante nel decotto bollente."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -317,16 +317,16 @@ func void Use_Pirates_01 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Prendete l'ultima consegna diretta a noi.");	
-					Doc_PrintLine	( nDocID,  0, "Quindi portatela nella vostra caverna. Ci vedremo l‡.");	
-					Doc_PrintLines	( nDocID,  0, "Vi pagherÚ il doppio del suo valore in oro."					);
+					Doc_PrintLine	( nDocID,  0, "Quindi portatela nella vostra caverna. Ci vedremo l√†.");	
+					Doc_PrintLines	( nDocID,  0, "Vi pagher√≤ il doppio del suo valore in oro."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "» cosÏ che si fa");	
+					Doc_PrintLines	( nDocID,  0, "√à cos√¨ che si fa");	
 					Doc_PrintLine	( nDocID,  0, "Tom");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
-//	Rezept f¸r gr¸nene Novizen
+//	Rezept f√ºr gr√ºnene Novizen
 //**********************************************************************************
 INSTANCE ITWr_Addon_Joint_01		(C_Item)
 {
@@ -359,7 +359,7 @@ func void Use_Joint_Rezept_01 ()
 					Doc_PrintLine	( nDocID,  0, "Il novizio verde"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "(Ö) Il sigaro si arrotola molto bene, ma nel Campo della palude abbiamo trovato roba di tutt'altro livello.");	
+					Doc_PrintLines	( nDocID,  0, "(‚Ä¶) Il sigaro si arrotola molto bene, ma nel Campo della palude abbiamo trovato roba di tutt'altro livello.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLines	( nDocID,  0, "Se uso l'essenza di due piante di erba di palude e aggiungo un groviglio della prateria, ottengo un sigaro con l'effetto del novizio verde."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -412,7 +412,7 @@ func void UseLouRezept ()
 					Doc_PrintLine	( nDocID,  0, "Salute");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Secondo il vecchio cieco, Ë pi˘ salutare non respirare i vapori!");	
+					Doc_PrintLines	( nDocID,  0, "Secondo il vecchio cieco, √® pi√π salutare non respirare i vapori!");	
 					Doc_Show		( nDocID );
 
 };
@@ -453,7 +453,7 @@ func void UseLouRezept2 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLines	( nDocID,  0, "Questa miscela dovrebbe essere preparata solo da distillatori esperti.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Se ci prova un profano, ne uscir‡ non solo cieco, ma proprio morto.");	
+					Doc_PrintLines	( nDocID,  0, "Se ci prova un profano, ne uscir√† non solo cieco, ma proprio morto.");	
 					
 					Doc_Show		( nDocID );
 
@@ -499,7 +499,7 @@ func void UseRezeptPiratentod ()
 					Doc_PrintLines	( nDocID,  0, "Come il liquido comincia a ingiallire, togli il pesce e aggiungi una presa di"					);
 					Doc_PrintLines	( nDocID,  0, "erba fresca dello squartatore."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Attenzione: d‡ una scarica potente.");	
+					Doc_PrintLines	( nDocID,  0, "Attenzione: d√† una scarica potente.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_Show		( nDocID );
 
@@ -561,13 +561,13 @@ func void UseAxtAnleitung ()
 					Doc_PrintLine	( nDocID,  0, "Un'ascia a una mano");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Chiunque conosca le basi della forgiatura puÚ realizzare un'ascia speciale.");	
+					Doc_PrintLines	( nDocID,  0, "Chiunque conosca le basi della forgiatura pu√≤ realizzare un'ascia speciale.");	
 					Doc_PrintLines	( nDocID,  0, "Servono due pezzi di ferro incandescente."					);
 					Doc_PrintLines	( nDocID,  0, "Un pezzo di metallo e tre denti di lupo, squartatore o bestie simili."					);
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Batti metallo, denti e ferro con il martello su un'incudine.");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Un'ascia come questa Ë molto facile da usare e provoca danni notevoli.");
+					Doc_PrintLine	( nDocID,  0, "Un'ascia come questa √® molto facile da usare e provoca danni notevoli.");
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };

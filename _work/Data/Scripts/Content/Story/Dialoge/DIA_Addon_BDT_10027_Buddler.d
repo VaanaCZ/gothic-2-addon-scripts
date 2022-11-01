@@ -40,7 +40,7 @@ FUNC VOID DIA_Addon_10027_Buddler_Hi_Info()
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//Ho sgobbato a sufficienza per i baroni del metallo. È giusto che ora scavi qualcun altro.
+		AI_Output (self, other, "DIA_Addon_BDT_10027_Buddler_Hi_11_01");//Ho sgobbato a sufficienza per i baroni del metallo. Ãˆ giusto che ora scavi qualcun altro.
 	}
 	else
 	{
@@ -66,8 +66,8 @@ FUNC INT DIA_Addon_10027_Buddler_Hacken_Condition()
 FUNC VOID DIA_Addon_10027_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Lavoro di cervello, ragazzo. Estrarre l'oro è tutte questione di cervello. Non cercare di forzare la roccia: è più dura di te.
-	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Sgombra la mente e cerca di diventare tutt'uno con l'oro. È come meditare, come una preghiera.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_00");//Lavoro di cervello, ragazzo. Estrarre l'oro Ã¨ tutte questione di cervello. Non cercare di forzare la roccia: Ã¨ piÃ¹ dura di te.
+	AI_Output (self, other, "DIA_Addon_10027_Buddler_Hacken_11_01");//Sgombra la mente e cerca di diventare tutt'uno con l'oro. Ãˆ come meditare, come una preghiera.
 	
 	B_Upgrade_Hero_HackChance(10);
 };

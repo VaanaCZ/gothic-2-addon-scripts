@@ -55,7 +55,7 @@ FUNC VOID DIA_BDT_1_STANDARD_Info()
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_02"); //Vattene finché sei in tempo!
+		AI_Output (self,other,"DIA_BDT_1_STANDARD_01_02"); //Vattene finchÃ© sei in tempo!
 	};
 	
 	AI_StopProcessInfos	(self);

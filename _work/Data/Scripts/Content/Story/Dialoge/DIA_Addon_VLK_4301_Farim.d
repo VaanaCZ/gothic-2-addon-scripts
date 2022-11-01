@@ -76,7 +76,7 @@ func void DIA_Addon_Farim_Hallo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Farim_Hallo_15_00"); //Sei un pescatore?
 	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_01"); //(cinico) Ma come avrai fatto a indovinare?!
-	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //PerchÈ non mi lasci in pace?
+	AI_Output	(self, other, "DIA_Addon_Farim_Hallo_11_02"); //Perch√© non mi lasci in pace?
 	if (hero.guild == GIL_MIL)
 	{
 		AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_Add_11_02"); //Niente di personale, ma ultimamente non sono in buoni rapporti con la milizia.
@@ -115,10 +115,10 @@ func void DIA_Addon_Farim_MilizProbs_Info ()
 	{
 		AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_01"); //Quei bastardi vengono qui e si prendono quello che vogliono.
 	};
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //La settimana scorsa mi hanno preso tutto. '» per una buona causa,' mi hanno detto.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_02"); //La settimana scorsa mi hanno preso tutto. '√à per una buona causa,' mi hanno detto.
 	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_03"); //So che tutti devono arrangiarsi da quando i contadini hanno smesso di vendere le loro merci.
 	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_04"); //E naturalmente a volte la gente ha fame. Non mi meraviglia che mi rubino il pesce da sotto il naso.
-	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Ma se continuano cosÏ, non avrÚ di che sfamarmi.
+	AI_Output	(self, other, "DIA_Addon_Farim_MilizProbs_11_05"); //Ma se continuano cos√¨, non avr√≤ di che sfamarmi.
 	
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 	Info_AddChoice	(DIA_Addon_Farim_MilizProbs, "Dammi tutto il tuo pesce.", DIA_Addon_Farim_MilizProbs_klauen );
@@ -151,12 +151,12 @@ func void DIA_Addon_Farim_MilizProbs_helfen ()
 	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_00"); //Forse posso aiutarti.
 	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_02"); //Non so. Certo, se conoscessi qualche miliziano che abbia rapporti con i paladini...
 	AI_Output			(self, other, "DIA_Addon_Farim_MilizProbs_helfen_11_03"); //Dubito che i paladini mi paghino il pesce.
-	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //VedrÚ cosa posso fare.
+	AI_Output			(other, self, "DIA_Addon_Farim_MilizProbs_helfen_15_04"); //Vedr√≤ cosa posso fare.
 	Info_ClearChoices	(DIA_Addon_Farim_MilizProbs);
 	
 	Log_CreateTopic (TOPIC_Addon_FarimsFish, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_FarimsFish, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_FarimsFish,"Farim, il pescatore, ha problemi con la milizia. Gli portano via cosÏ tanto pesce che non ne gliene rimane a sufficienza per vivere. Dovrei trovare qualcuno nella milizia che abbia influenza sui paladini e che possa aiutarlo."); 
+	B_LogEntry (TOPIC_Addon_FarimsFish,"Farim, il pescatore, ha problemi con la milizia. Gli portano via cos√¨ tanto pesce che non ne gliene rimane a sufficienza per vivere. Dovrei trovare qualcuno nella milizia che abbia influenza sui paladini e che possa aiutarlo."); 
 		
 	MIS_Addon_Farim_PaladinFisch = LOG_RUNNING;
 };
@@ -195,8 +195,8 @@ func void DIA_Addon_Farim_MartinHelps_Info ()
 	};
 	
 	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_04"); //Martin, il furiere dei paladini, vuole sentire la tua storia riguardo alla milizia e al pesce.
-	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //E pensi che convincer‡ i miliziani a lasciarmi in pace?
-	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //CosÏ mi ha detto.
+	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_05"); //E pensi che convincer√† i miliziani a lasciarmi in pace?
+	AI_Output	(other, self, "DIA_Addon_Farim_MartinHelps_15_06"); //Cos√¨ mi ha detto.
 	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_07"); //Eccellente. Grazie. Non posso darti molto. Ma aspetta...
 	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_08"); //Ho trovato questa strana pietra blu su una delle isole al largo di Khorinis.
 	AI_Output	(self, other, "DIA_Addon_Farim_MartinHelps_11_09"); //Non vale molto, ma troverai di sicuro il modo di usarla.
@@ -233,7 +233,7 @@ func void DIA_Addon_Farim_Landstreicher_Info ()
 {
 	AI_Output (other, self, "DIA_Addon_Farim_Landstreicher_15_01"); //Puoi dirmi qualcosa sulle persone che sono scomparse?
 	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_02"); //Il mio amico William aveva cominciato a frequentare certi tipi loschi. E che fine ha fatto?
-	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Un giorno non si Ë presentato al lavoro, e da allora non l'abbiamo pi˘ visto.
+	AI_Output (self, other, "DIA_Addon_Farim_Landstreicher_11_03"); //Un giorno non si √® presentato al lavoro, e da allora non l'abbiamo pi√π visto.
 	SCKnowsFarimAsWilliamsFriend = TRUE;
 };
 
@@ -248,7 +248,7 @@ instance DIA_Addon_Farim_William		(C_INFO)
 	condition	 = 	DIA_Addon_Farim_William_Condition;
 	information	 = 	DIA_Addon_Farim_William_Info;
 
-	description	 = 	"Il tuo amico William Ë scomparso?";
+	description	 = 	"Il tuo amico William √® scomparso?";
 };
 
 func int DIA_Addon_Farim_William_Condition ()
@@ -262,8 +262,8 @@ func int DIA_Addon_Farim_William_Condition ()
 
 func void DIA_Addon_Farim_William_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //Il tuo amico William Ë scomparso?
-	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //Gi‡. » un pescatore, ma ha fatto il passo pi˘ lungo della gamba.
+	AI_Output	(other, self, "DIA_Addon_Farim_William_15_00"); //Il tuo amico William √® scomparso?
+	AI_Output	(self, other, "DIA_Addon_Farim_William_11_01"); //Gi√†. √à un pescatore, ma ha fatto il passo pi√π lungo della gamba.
 	AI_Output	(self, other, "DIA_Addon_Farim_William_11_02"); //Non doveva immischiarsi con quella gentaglia.
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
@@ -272,7 +272,7 @@ func void DIA_Addon_Farim_William_Info ()
 	
 	Info_ClearChoices	(DIA_Addon_Farim_William);	
 	Info_AddChoice	(DIA_Addon_Farim_William, "E chi sarebbero questi bastardi?", DIA_Addon_Farim_William_typen );
-	Info_AddChoice	(DIA_Addon_Farim_William, "Si far‡ vivo prima o poi.", DIA_Addon_Farim_William_auftauchen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Si far√† vivo prima o poi.", DIA_Addon_Farim_William_auftauchen );
 	Info_AddChoice	(DIA_Addon_Farim_William, "Cos'ha fatto?", DIA_Addon_Farim_William_WasGemacht );
 	Info_AddChoice	(DIA_Addon_Farim_William, "Quando l'hai visto l'ultima volta?", DIA_Addon_Farim_William_WannWeg );
 };
@@ -281,23 +281,23 @@ func void DIA_Addon_Farim_William_WasGemacht ()
 	AI_Output			(other, self, "DIA_Addon_Farim_William_WasGemacht_15_00"); //Cos'ha fatto?
 	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_01"); //William aveva loschi commerci con quei manigoldi.
 	AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_02"); //Penso che vendesse delle merci di contrabbando a quei bastardi.
-	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, weiﬂ ich nicht, was er stattdessen f¸r sie gemacht hat.
+	//AI_Output			(self, other, "DIA_Addon_Farim_William_WasGemacht_11_03"); //Aber seit die Handelschiffe nicht mehr hier in Khorinis anlegen, wei√ü ich nicht, was er stattdessen f√ºr sie gemacht hat.
 };
 func void DIA_Addon_Farim_William_typen ()
 {
 	AI_Output			(other, self, "DIA_Addon_Farim_William_typen_15_00"); //E chi sarebbero questi bastardi?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //Non so chi siano, nÈ cosa ci facciano qui a Khorinis.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //PerÚ conosco il posto dove si incontravano con William.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //Una volta mi Ë capitato di vedere William lÏ mentre pescavo nella baia.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_01"); //Non so chi siano, n√© cosa ci facciano qui a Khorinis.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_02"); //Per√≤ conosco il posto dove si incontravano con William.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_typen_11_03"); //Una volta mi √® capitato di vedere William l√¨ mentre pescavo nella baia.
 	
-	Info_AddChoice	(DIA_Addon_Farim_William, "Dov'Ë esattamente che si incontravano?", DIA_Addon_Farim_William_Wo );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Dov'√® esattamente che si incontravano?", DIA_Addon_Farim_William_Wo );
 };
 func void DIA_Addon_Farim_William_Wo ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Dov'Ë esattamente che si incontravano?
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //C'Ë una baia di fronte al porto, a nord.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Wo_15_00"); //Dov'√® esattamente che si incontravano?
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_01"); //C'√® una baia di fronte al porto, a nord.
 	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_02"); //Ci si arriva solo a nuoto, o in barca.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //LÏ, sulla spiaggia, c'Ë un piccolo campo di pescatori. » lÏ che li ho visti.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Wo_11_03"); //L√¨, sulla spiaggia, c'√® un piccolo campo di pescatori. √à l√¨ che li ho visti.
 	self.flags = 0;	//Joly: hat seine Pflicht getan
 
 	Log_CreateTopic (TOPIC_Addon_WhoStolePeople, LOG_MISSION);
@@ -311,18 +311,18 @@ func void DIA_Addon_Farim_William_WannWeg ()
 	AI_Output			(other, self, "DIA_Addon_Farim_William_WannWeg_15_00"); //Quando l'hai visto l'ultima volta?
 	AI_Output			(self, other, "DIA_Addon_Farim_William_WannWeg_11_01"); //Qualche giorno fa.
 
-	Info_AddChoice	(DIA_Addon_Farim_William, "Forse Ë appena andato a pescare?", DIA_Addon_Farim_William_Fischen );
+	Info_AddChoice	(DIA_Addon_Farim_William, "Forse √® appena andato a pescare?", DIA_Addon_Farim_William_Fischen );
 };
 func void DIA_Addon_Farim_William_Fischen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //Forse Ë solo uscito per pescare...
-	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //» improbabile. La sua barca Ë ancora ormeggiata al porto.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_Fischen_15_00"); //Forse √® solo uscito per pescare...
+	AI_Output			(self, other, "DIA_Addon_Farim_William_Fischen_11_01"); //√à improbabile. La sua barca √® ancora ormeggiata al porto.
 };
 func void DIA_Addon_Farim_William_auftauchen ()
 {
-	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Si far‡ vivo prima o poi.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //Non credo. » gi‡ troppo tempo che manca.
-	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //Temo che uno di questi giorni ripescherÚ il suo cadavere.
+	AI_Output			(other, self, "DIA_Addon_Farim_William_auftauchen_15_00"); //Si far√† vivo prima o poi.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_01"); //Non credo. √à gi√† troppo tempo che manca.
+	AI_Output			(self, other, "DIA_Addon_Farim_William_auftauchen_11_02"); //Temo che uno di questi giorni ripescher√≤ il suo cadavere.
 };
 func void DIA_Addon_Farim_William_Tschau ()
 {
@@ -342,7 +342,7 @@ instance DIA_Addon_Farim_Perm		(C_INFO)
 	information	 = 	DIA_Addon_Farim_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"E com'Ë che i pesci mordono?";
+	description	 = 	"E com'√® che i pesci mordono?";
 };
 
 func int DIA_Addon_Farim_Perm_Condition ()
@@ -363,7 +363,7 @@ func void DIA_Addon_Farim_Perm_Info ()
 	}
 	else
 	{
-		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //Con quel poco che c'Ë, Ë pi˘ facile morire che vivere.
+		AI_Output	(self, other, "DIA_Addon_Farim_Perm_11_02"); //Con quel poco che c'√®, √® pi√π facile morire che vivere.
 	};
 };
 
@@ -396,10 +396,10 @@ func void DIA_Addon_Farim_WilliamReport_Info ()
 {
 	AI_Output (self, other, "DIA_Addon_Farim_Add_11_01"); //Eccoti ancora qui!
 	AI_Output (self, other, "DIA_Addon_Farim_Add_11_02"); //Hai saputo nulla del mio amico William?
-	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //» morto.
+	AI_Output (other, self, "DIA_Addon_Farim_Add_15_02"); //√à morto.
 	AI_Output (self, other, "DIA_Addon_Farim_Add_11_03"); //(sospira) Me l'aspettavo.
 	AI_Output (self, other, "DIA_Addon_Farim_Add_11_04"); //Grazie per essere tornato a dirmelo.
-	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //AndrÚ alla taverna e mi berrÚ la sua parte dell'ultima pesca... Lui avrebbe voluto cosÏ...
+	AI_Output (self, other, "DIA_Addon_Farim_Add_11_05"); //Andr√≤ alla taverna e mi berr√≤ la sua parte dell'ultima pesca... Lui avrebbe voluto cos√¨...
 };
 
 

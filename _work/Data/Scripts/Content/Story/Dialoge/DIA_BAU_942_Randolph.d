@@ -45,13 +45,13 @@ func int DIA_Randolph_SchwereLuft_Condition ()
 func void DIA_Randolph_SchwereLuft_Info ()
 {
 	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_00"); //Va tutto bene?
-	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_01"); //Mmmh... Finché qualcuno non dice qualcosa di sbagliato qui intorno, non succederà nulla... dunque stai attento a come ti muovi, o ci sarà un massacro.
+	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_01"); //Mmmh... FinchÃ© qualcuno non dice qualcosa di sbagliato qui intorno, non succederÃ  nulla... dunque stai attento a come ti muovi, o ci sarÃ  un massacro.
 	AI_Output (other, self, "DIA_Randolph_SchwereLuft_15_02"); //Ti unirai al combattimento?
-	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_03"); //Non me ne starò qui con le mani in mano quando ci sarà da combattere, anche se da parte mia farò il possibile affinché ciò non avvenga.
+	AI_Output (self, other, "DIA_Randolph_SchwereLuft_06_03"); //Non me ne starÃ² qui con le mani in mano quando ci sarÃ  da combattere, anche se da parte mia farÃ² il possibile affinchÃ© ciÃ² non avvenga.
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"La fattoria di Akil è minacciata dai mercenari."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"La fattoria di Akil Ã¨ minacciata dai mercenari."); 
 	B_NpcClearObsessionByDMT (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -83,14 +83,14 @@ func void DIA_Randolph_HALLO_Info ()
 	if Npc_IsDead (Akil)
 	&& Npc_IsDead (Kati)
 	{
-		AI_Output (self, other, "DIA_Randolph_HALLO_06_01"); //Ora che Kati e Akil sono stati portati nel regno di Innos, sarò io a mandare avanti la fattoria.
+		AI_Output (self, other, "DIA_Randolph_HALLO_06_01"); //Ora che Kati e Akil sono stati portati nel regno di Innos, sarÃ² io a mandare avanti la fattoria.
 		
 		Npc_ExchangeRoutine (self,"START");
 		AI_ContinueRoutine  (self);
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Randolph_HALLO_06_02"); //Sì, sto bene. Quell'Alvares è diventato sempre più spavaldo di recente. Per fortuna ora è tutto finito.
+		AI_Output (self, other, "DIA_Randolph_HALLO_06_02"); //SÃ¬, sto bene. Quell'Alvares Ã¨ diventato sempre piÃ¹ spavaldo di recente. Per fortuna ora Ã¨ tutto finito.
 	};
 	AI_Output (self, other, "DIA_Randolph_HALLO_06_03"); //Ora potrebbe farmi bene una visitina alla taverna.
 };
@@ -124,7 +124,7 @@ func int DIA_Randolph_Baltram_Condition ()
 func void DIA_Randolph_Baltram_Info ()
 {
 	AI_Output (other, self, "DIA_Randolph_Baltram_15_00"); //Mi ha mandato Baltram. Devo ritirare un carico per lui qui.
-	AI_Output (self, other, "DIA_Randolph_Baltram_06_01"); //Bene. Ho già preparato tutto. Ecco il tuo pacchetto.
+	AI_Output (self, other, "DIA_Randolph_Baltram_06_01"); //Bene. Ho giÃ  preparato tutto. Ecco il tuo pacchetto.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -157,21 +157,21 @@ func void DIA_Randolph_Geschichte_Info ()
 	AI_Output (other, self, "DIA_Randolph_Geschichte_15_00"); //Non sei di queste parti, vero?
 	AI_Output (self, other, "DIA_Randolph_Geschichte_06_01"); //Vengo dalle isole del sud. A un certo punto hanno detto che avevano bisogno di gente a Khorinis, per via di quel metallo magico.
 	AI_Output (self, other, "DIA_Randolph_Geschichte_06_02"); //Ma quando sono arrivato qui, essi avevano eretto quest'enorme barriera. E dato che non volevo entrarci dentro, ho cominciato a lavorare al porto.
-	AI_Output (self, other, "DIA_Randolph_Geschichte_06_03"); //Beh, le navi hanno smesso di arrivare e così sono andato a lavorare per Akil. Ho fatto lavori peggiori.
+	AI_Output (self, other, "DIA_Randolph_Geschichte_06_03"); //Beh, le navi hanno smesso di arrivare e cosÃ¬ sono andato a lavorare per Akil. Ho fatto lavori peggiori.
 };
 /*
 	Du kommst nicht aus der Gegend, richtig? 
-	Ich komme von den südlichen Inseln. Irgendwann hieß es, sie bräuchten Leute in Khorinis, wegen dem magischen Erz. 
+	Ich komme von den sÃ¼dlichen Inseln. Irgendwann hieÃŸ es, sie brÃ¤uchten Leute in Khorinis, wegen dem magischen Erz. 
 	Aber als ich ankam war da diese riesige Barriere. Und da wollte ich nicht rein. Ich hab dann angefangen im Hafen zu arbeiten. 
 	Und seitdem keine Schiffe mehr kommen, bin ich halt zu Akil gegangen. Naja, ich hab schon schlechtere Jobs gemacht.  
 	
 	
 	Hey, ich kenne da noch jemanden, der dir ein paar Sachen besorgen kann. 
-	Ein Freund, der mit mir zusammen aus dem Süden gekommen ist. 
-	Aber ich brauche 10 Goldmünzen, um beim Wett - Trinken in der Taverne mitzumachen.  
+	Ein Freund, der mit mir zusammen aus dem SÃ¼den gekommen ist. 
+	Aber ich brauche 10 GoldmÃ¼nzen, um beim Wett - Trinken in der Taverne mitzumachen.  
 	Also wenn du die Info willst, dann gib mir das Gold. 
 	
-//Wenn du die Taverne suchst dann geh einfach über die Brücke und folge dem Weg, dann kommst direkt daran vorbei.
+//Wenn du die Taverne suchst dann geh einfach Ã¼ber die BrÃ¼cke und folge dem Weg, dann kommst direkt daran vorbei.
 */
 ///////////////////////////////////////////////////////////////////////
 //	Info Taverne
@@ -199,7 +199,7 @@ func void DIA_Randolph_TAVERNE_Info ()
 {
 	AI_Output			(other, self, "DIA_Randolph_TAVERNE_15_00"); //Frequenti la locanda?
 	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_01"); //Esatto, ma non di recente.
-	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_02"); //Non posso più permettermi di andare lì.
+	AI_Output			(self, other, "DIA_Randolph_TAVERNE_06_02"); //Non posso piÃ¹ permettermi di andare lÃ¬.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -227,12 +227,12 @@ func int DIA_Randolph_WASISTINTAVERNE_Condition ()
 func void DIA_Randolph_WASISTINTAVERNE_Info ()
 {
 	AI_Output			(other, self, "DIA_Randolph_WASISTINTAVERNE_15_00"); //Cosa sta accadendo di preciso nella locanda?
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_01"); //Si fanno delle scommesse laggiù.
-	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_02"); //Due persone si sfidano a chi riesce a bere più birra.
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_01"); //Si fanno delle scommesse laggiÃ¹.
+	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_02"); //Due persone si sfidano a chi riesce a bere piÃ¹ birra.
 	AI_Output			(self, other, "DIA_Randolph_WASISTINTAVERNE_06_03"); //Alla fine non ho fatto altro che perdere, e ora devo guadagnare dei soldi prima di poter tornare alla taverna.
 	Log_CreateTopic (TOPIC_Wettsaufen, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Wettsaufen, LOG_RUNNING);
-	B_LogEntry (TOPIC_Wettsaufen,"Si può scommettere nella taverna."); 
+	B_LogEntry (TOPIC_Wettsaufen,"Si puÃ² scommettere nella taverna."); 
 
 };
 
@@ -264,7 +264,7 @@ func void DIA_Randolph_GEGENWEN_Info ()
 	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_01"); //Rukhar, quel vecchio buono a nulla. Finora mi ha sempre battuto.
 	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_02"); //Ma ho il netto sospetto che quello sporco maiale abbia corretto la mia birra con del gin ogni volta.
 	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_03"); //Sospetto che tenga il gin nascosto in quel suo dannato forziere. Quello sporco baro!
-	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_04"); //Qualcuno dovrebbe sostituire di nascosto il gin nel suo forziere con dell'acqua, e a quel punto potrà correggere la mia birra finché vorrà.
+	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_04"); //Qualcuno dovrebbe sostituire di nascosto il gin nel suo forziere con dell'acqua, e a quel punto potrÃ  correggere la mia birra finchÃ© vorrÃ .
 	AI_Output			(self, other, "DIA_Randolph_GEGENWEN_06_05"); //Se solo avessi i soldi per competere contro di lui un'altra volta.
 
 	B_LogEntry (TOPIC_Wettsaufen,"Randolph mi ha raccontato di Rukhar e della gara di bevute. Randolph non ha abbastanza soldi per scommettere nuovamente contro Rukhar."); 
@@ -297,7 +297,7 @@ func int DIA_Randolph_WASBRAUCHSTDU_Condition ()
 func void DIA_Randolph_WASBRAUCHSTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Randolph_WASBRAUCHSTDU_15_00"); //Quanti soldi ti servono per partecipare alla competizione?
-	AI_Output			(self, other, "DIA_Randolph_WASBRAUCHSTDU_06_01"); //10 monete d’oro.
+	AI_Output			(self, other, "DIA_Randolph_WASBRAUCHSTDU_06_01"); //10 monete dâ€™oro.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -311,7 +311,7 @@ instance DIA_Randolph_ICHGEBEDIRGELD		(C_INFO)
 	information	 = 	DIA_Randolph_ICHGEBEDIRGELD_Info;
 	permanent	 =  TRUE;
 
-	description	 = 	"Ti darò i soldi per competere contro Rukhar.";
+	description	 = 	"Ti darÃ² i soldi per competere contro Rukhar.";
 };
 
 var int DIA_Randolph_ICHGEBEDIRGELD_noPerm;
@@ -328,14 +328,14 @@ func int DIA_Randolph_ICHGEBEDIRGELD_Condition ()
 
 func void DIA_Randolph_ICHGEBEDIRGELD_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_ICHGEBEDIRGELD_15_00"); //Ti darò i soldi per competere contro Rukhar.
+	AI_Output			(other, self, "DIA_Randolph_ICHGEBEDIRGELD_15_00"); //Ti darÃ² i soldi per competere contro Rukhar.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold,10))
 		{
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_01"); //(entusiasta) Davvero? Grazie mille. Mi sdebiterò presto.
-			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_02"); //Se vinco ti darò anche di più di quel che ti devo. Ci vediamo.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_01"); //(entusiasta) Davvero? Grazie mille. Mi sdebiterÃ² presto.
+			AI_Output			(self, other, "DIA_Randolph_ICHGEBEDIRGELD_06_02"); //Se vinco ti darÃ² anche di piÃ¹ di quel che ti devo. Ci vediamo.
 		
-			B_LogEntry (TOPIC_Wettsaufen,"La scommessa è aperta. Farò meglio ad assistere."); 
+			B_LogEntry (TOPIC_Wettsaufen,"La scommessa Ã¨ aperta. FarÃ² meglio ad assistere."); 
 			B_GivePlayerXP (XP_Randolph_WettkampfStart);
 		
 			DIA_Randolph_ICHGEBEDIRGELD_noPerm = TRUE;
@@ -385,7 +385,7 @@ func void DIA_Randolph_WETTKAMPFZUENDE_Info ()
 	
 	if (Rukhar_Won_Wettkampf == TRUE)
 		{
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_01"); //Questa è la madre di tutte le sbornie, e io non riesco a sbarazzarmene. Giuro che non toccherò mai più neanche un bicchiere.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_01"); //Questa Ã¨ la madre di tutte le sbornie, e io non riesco a sbarazzarmene. Giuro che non toccherÃ² mai piÃ¹ neanche un bicchiere.
 			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_02"); //I tuoi soldi sono andati. Mi dispiace.
 		}
 	else
@@ -400,7 +400,7 @@ func void DIA_Randolph_WETTKAMPFZUENDE_Info ()
 				DIA_Randolph_WETTKAMPFZUENDE_OneTime = TRUE;					
 			};
 			
-			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_05"); //Sembra che Rukhar non si rialzerà tanto presto.
+			AI_Output			(self, other, "DIA_Randolph_WETTKAMPFZUENDE_06_05"); //Sembra che Rukhar non si rialzerÃ  tanto presto.
 		};
 
 	B_NpcClearObsessionByDMT (self);
@@ -448,9 +448,9 @@ func void DIA_Randolph_PERM_Info ()
 					&& (DIA_Sagitta_HEALRANDOLPH_KnowsPrice == TRUE)
 					&& (DIA_Randolph_PERM_GotMoney == FALSE)
 					{
-						AI_Output			(other, self, "DIA_Randolph_PERM_15_01"); //Mi mandi via senza darmi neanche una moneta, e non ti prendi nemmeno la briga di dirmi che questa roba è così costosa?
+						AI_Output			(other, self, "DIA_Randolph_PERM_15_01"); //Mi mandi via senza darmi neanche una moneta, e non ti prendi nemmeno la briga di dirmi che questa roba Ã¨ cosÃ¬ costosa?
 						AI_Output			(other, self, "DIA_Randolph_PERM_15_02"); //Sagitta vuole 300 monete d'oro da me.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_03"); //Non posso darti più di 150 monete d'oro. Ti prego, devi aiutarmi. Ti prego.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_03"); //Non posso darti piÃ¹ di 150 monete d'oro. Ti prego, devi aiutarmi. Ti prego.
 						CreateInvItems (self, ItMi_Gold, 150);									
 						B_GiveInvItems (self, other, ItMi_Gold, 150);					
 						DIA_Randolph_PERM_GotMoney = TRUE;
@@ -458,8 +458,8 @@ func void DIA_Randolph_PERM_Info ()
 					else
 					{
 						AI_Output			(self, other, "DIA_Randolph_PERM_06_04"); //Sono davvero al verde. Da quando ho smesso di bere l'astinenza mi sta uccidendo. Ho davvero bisogno d'aiuto.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_05"); //C'è un rimedio che potrebbe tornarti utile.
-						AI_Output			(self, other, "DIA_Randolph_PERM_06_06"); //Sagitta, la vecchia strega delle erbe, era solita prepararlo per me. Ma non credo che possa recarmi lì di persona ora che ci sono in giro tutti questi orchi.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_05"); //C'Ã¨ un rimedio che potrebbe tornarti utile.
+						AI_Output			(self, other, "DIA_Randolph_PERM_06_06"); //Sagitta, la vecchia strega delle erbe, era solita prepararlo per me. Ma non credo che possa recarmi lÃ¬ di persona ora che ci sono in giro tutti questi orchi.
 					};
 					Log_CreateTopic (TOPIC_HealRandolph, LOG_MISSION);
 					Log_SetTopicStatus(TOPIC_HealRandolph, LOG_RUNNING);
@@ -485,7 +485,7 @@ instance DIA_Randolph_Heilung		(C_INFO)
 	information	 = 	DIA_Randolph_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"L’alcol ti ha dato alla testa, eh?";
+	description	 = 	"Lâ€™alcol ti ha dato alla testa, eh?";
 };
 
 func int DIA_Randolph_Heilung_Condition ()
@@ -499,8 +499,8 @@ func int DIA_Randolph_Heilung_Condition ()
 
 func void DIA_Randolph_Heilung_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_Heilung_15_00"); //L’alcol ti ha dato alla testa, eh?
-	AI_Output			(self, other, "DIA_Randolph_Heilung_06_01"); //Non berrò mai più neanche un bicchiere. Non in questa vita. Puoi scommetterci, amico.
+	AI_Output			(other, self, "DIA_Randolph_Heilung_15_00"); //Lâ€™alcol ti ha dato alla testa, eh?
+	AI_Output			(self, other, "DIA_Randolph_Heilung_06_01"); //Non berrÃ² mai piÃ¹ neanche un bicchiere. Non in questa vita. Puoi scommetterci, amico.
 	B_NpcClearObsessionByDMT (self);
 };
 
@@ -515,7 +515,7 @@ instance DIA_Randolph_SAGITTAHEAL		(C_INFO)
 	condition	 = 	DIA_Randolph_SAGITTAHEAL_Condition;
 	information	 = 	DIA_Randolph_SAGITTAHEAL_Info;
 
-	description	 = 	"Ecco, questo ti aiuterà a superare la sindrome da astinenza.";
+	description	 = 	"Ecco, questo ti aiuterÃ  a superare la sindrome da astinenza.";
 };
 
 func int DIA_Randolph_SAGITTAHEAL_Condition ()
@@ -529,7 +529,7 @@ func int DIA_Randolph_SAGITTAHEAL_Condition ()
 
 func void DIA_Randolph_SAGITTAHEAL_Info ()
 {
-	AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_00"); //Ecco, questo ti aiuterà a superare i sintomi dell'astinenza.
+	AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_00"); //Ecco, questo ti aiuterÃ  a superare i sintomi dell'astinenza.
 	B_GiveInvItems 		(other, self, ItPo_HealRandolph_MIS, 1);					
 	
 	if (Npc_IsInState (self,ZS_Pick_FP))
@@ -537,12 +537,12 @@ func void DIA_Randolph_SAGITTAHEAL_Info ()
 			B_UseItem 			(self,ItPo_HealRandolph_MIS);
 		};	
 		
-	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_01"); //Oh! Grazie amico. Ora potrò di nuovo dormire tranquillo.
-	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_02"); //Come potrò mai ripagarti per questo?
+	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_01"); //Oh! Grazie amico. Ora potrÃ² di nuovo dormire tranquillo.
+	AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_02"); //Come potrÃ² mai ripagarti per questo?
 	
 	if (DIA_Randolph_PERM_GotMoney == FALSE)
 		{
-			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_03"); //Suppongo che queste poche monete servano solo per salvarmi la faccia, ma è tutto quello che ho, mi dispiace.
+			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_03"); //Suppongo che queste poche monete servano solo per salvarmi la faccia, ma Ã¨ tutto quello che ho, mi dispiace.
 		
 			CreateInvItems (self, ItMi_Gold, 150);									
 			B_GiveInvItems (self, other, ItMi_Gold, 150);					
@@ -550,7 +550,7 @@ func void DIA_Randolph_SAGITTAHEAL_Info ()
 	else
 		{
 			AI_Output			(other, self, "DIA_Randolph_SAGITTAHEAL_15_04"); //Ho pagato un sacco di soldi, e un paio di monete consunte non sono sufficienti a rimborsarmi delle mie spese.
-			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_05"); //Beh, in questo caso posso ritenermi fortunato ad aver incontrato un paladino così servizievole, non credi?
+			AI_Output			(self, other, "DIA_Randolph_SAGITTAHEAL_06_05"); //Beh, in questo caso posso ritenermi fortunato ad aver incontrato un paladino cosÃ¬ servizievole, non credi?
 			
 		};
 	

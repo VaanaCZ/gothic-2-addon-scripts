@@ -122,7 +122,7 @@ FUNC INT DIA_Wambo_Situation_Condition()
 FUNC VOID DIA_Wambo_Situation_Info()
 {	
 	AI_Output (other,self ,"DIA_Wambo_Situation_15_00"); //Come vanno le cose?
-	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //Attualmente è tutto tranquillo.
+	AI_Output (self ,other,"DIA_Wambo_Situation_03_01"); //Attualmente Ã¨ tutto tranquillo.
 };
 //*************************************************************
 //		Ramirez
@@ -148,11 +148,11 @@ FUNC INT DIA_Wambo_Ramirez_Condition()
 FUNC VOID DIA_Wambo_Ramirez_Info()
 {	
 	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_00"); //Mi manda il nostro amico in comune Ramirez.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Oh? Quel Ramirez è uno sporco ratto. E non è mio amico. Non importa. Hai qualcosa per me?
-	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Dipende da ciò che vuoi.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_01"); //Oh? Quel Ramirez Ã¨ uno sporco ratto. E non Ã¨ mio amico. Non importa. Hai qualcosa per me?
+	AI_Output (other,self ,"DIA_Wambo_Ramirez_15_02"); //Dipende da ciÃ² che vuoi.
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(a bassa voce) D’accordo, ti dirò come funziona. Tu mi paghi 250 monete d'oro e io non mi farò vedere qui di notte.
-	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Se, tuttavia, tu dovessi essere avvistato e io mi trovassi in zona, l'accordo salterà.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_03"); //(a bassa voce) Dâ€™accordo, ti dirÃ² come funziona. Tu mi paghi 250 monete d'oro e io non mi farÃ² vedere qui di notte.
+	AI_Output (self ,other,"DIA_Wambo_Ramirez_03_04"); //Se, tuttavia, tu dovessi essere avvistato e io mi trovassi in zona, l'accordo salterÃ .
 };
 //*************************************************************
 //	Deal
@@ -164,7 +164,7 @@ INSTANCE DIA_Wambo_Deal(C_INFO)
 	condition	= DIA_Wambo_Deal_Condition;
 	information	= DIA_Wambo_Deal_Info;
 	permanent	= TRUE;
-	description = "(Paga 250 monete d’oro)";
+	description = "(Paga 250 monete dâ€™oro)";
 };                       
 //-----------------------------------
 var int DIA_Wambo_Deal_permanent;
@@ -183,7 +183,7 @@ FUNC VOID DIA_Wambo_Deal_Info()
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 250)
 	{
-		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Bene, allora sparirò... da ora.
+		AI_Output (self ,other,"DIA_Wambo_Deal_03_01"); //Bene, allora sparirÃ²... da ora.
 		AI_Output (self ,other,"DIA_Wambo_Deal_03_02"); //E ricordati, se dovessi causarmi dei guai, io non ti conosco.
 		
 		DIA_Wambo_Deal_permanent = TRUE;

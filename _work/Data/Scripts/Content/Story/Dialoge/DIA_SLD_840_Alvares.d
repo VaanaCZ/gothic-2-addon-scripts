@@ -46,7 +46,7 @@ func void DIA_Alvares_HAUAB_Info ()
 	AI_Output (self, other, "DIA_Alvares_HAUAB_11_00"); //Qualsiasi cosa ti abbia portato qui farai meglio a dimenticartene e ad andare via.
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"La fattoria di Akil Ë minacciata dai mercenari."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"La fattoria di Akil √® minacciata dai mercenari."); 
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -71,7 +71,7 @@ func int DIA_Alvares_ATTACK_Condition ()
 };
 func void DIA_Alvares_ATTACK_Info ()
 {
-	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Ehi, sei ancora qui. Ti offrirÚ una scelta, straniero: sparisci o muori.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_11_00"); //Ehi, sei ancora qui. Ti offrir√≤ una scelta, straniero: sparisci o muori.
 	
 	Info_ClearChoices (DIA_Alvares_ATTACK);
 	Info_AddChoice 	  (DIA_Alvares_ATTACK,"Chi siete ragazzi, una coppia di jolly?",DIA_Alvares_ATTACK_Kerle);
@@ -101,8 +101,8 @@ FUNC VOID DIA_Alvares_ATTACK_Witz()
 FUNC VOID DIA_Alvares_ATTACK_Kerle()
 {
 	AI_Output (other, self, "DIA_Alvares_ATTACK_Kerle_15_00"); //Chi siete ragazzi, una coppia di jolly?
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //L'hai detto. RiderÚ parecchio quando vedrÚ la tua faccia strisciare nel fango.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(chiama) Engardo, vieni! Tu pensa al contadino, io mi occuperÚ di questo pagliaccio!
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_01"); //L'hai detto. Rider√≤ parecchio quando vedr√≤ la tua faccia strisciare nel fango.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Kerle_11_02"); //(chiama) Engardo, vieni! Tu pensa al contadino, io mi occuper√≤ di questo pagliaccio!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -112,21 +112,21 @@ FUNC VOID DIA_Alvares_ATTACK_Aerger()
 {
 	AI_Output (other, self, "DIA_Alvares_ATTACK_Aerger_15_00"); //Non voglio guai.
 	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_01"); //Ma sono proprio i problemi quello che stiamo cercando. Siamo venuti da lontano solo per creare qualche piccolo problemino.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Gi‡, siamo qui per creare un mucchio di problemi. E inizierÚ proprio da te non sparirai all'istante.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Aerger_11_02"); //Gi√†, siamo qui per creare un mucchio di problemi. E inizier√≤ proprio da te non sparirai all'istante.
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Alvares_ATTACK_Lieferung()
 {
 	AI_Output (other, self, "DIA_Alvares_ATTACK_Lieferung_15_00"); //Sono venuto solamente per prendere qualcosa.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Lieferung_11_01"); //Anche noi. E siamo arrivati prima. Quindi sparisci, o sarÚ costretto a farti del male.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Lieferung_11_01"); //Anche noi. E siamo arrivati prima. Quindi sparisci, o sar√≤ costretto a farti del male.
 	
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Alvares_ATTACK_Soeldner()
 {
 	AI_Output (other, self, "DIA_Alvares_ATTACK_Soeldner_15_00"); //Voglio unirmi a voi mercenari.
-	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Oh, davvero? Sparisci, allora, o non potrai mai pi˘ unirti a nessuno.
+	AI_Output (self, other, "DIA_Alvares_ATTACK_Soeldner_11_01"); //Oh, davvero? Sparisci, allora, o non potrai mai pi√π unirti a nessuno.
 	
 	AI_StopProcessInfos (self);
 };
@@ -153,8 +153,8 @@ func int DIA_Alvares_Schluss_Condition ()
 };
 func void DIA_Alvares_Schluss_Info ()
 {
-	AI_Output (self, other, "DIA_Alvares_Schluss_11_00"); //Hai avuto la tua possibilit‡. Ma non sembri voler ascoltare.
-	AI_Output (self, other, "DIA_Alvares_Schluss_11_01"); //D'accordo, dunque ora dovrÚ ucciderti. (chiama) Engardo, finiamoli!
+	AI_Output (self, other, "DIA_Alvares_Schluss_11_00"); //Hai avuto la tua possibilit√†. Ma non sembri voler ascoltare.
+	AI_Output (self, other, "DIA_Alvares_Schluss_11_01"); //D'accordo, dunque ora dovr√≤ ucciderti. (chiama) Engardo, finiamoli!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);	

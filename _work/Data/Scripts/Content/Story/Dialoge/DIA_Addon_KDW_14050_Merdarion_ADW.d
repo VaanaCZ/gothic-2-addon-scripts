@@ -30,7 +30,7 @@ INSTANCE DIA_Addon_Merdarion_ADW_PICKPOCKET (C_INFO)
 	condition	= DIA_Addon_Merdarion_ADW_PICKPOCKET_Condition;
 	information	= DIA_Addon_Merdarion_ADW_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Es w‰re einfach seine Spruchrolle zu stehlen)";
+	description = "(Es w√§re einfach seine Spruchrolle zu stehlen)";
 };                       
 
 FUNC INT DIA_Addon_Merdarion_ADW_PICKPOCKET_Condition()
@@ -103,7 +103,7 @@ func void DIA_Addon_Merdarion_ADWHello_Info ()
 	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_01"); //(in ascolto) Ascolta... Strano, non credi?
 	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_15_02"); //Mmm...
 	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_03"); //Queste pietre del teletrasporto non sembrano funzionare, eppure ronzano.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_04"); //BenchÈ non siano attive possiedono ancora una certa energia.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_06_04"); //Bench√© non siano attive possiedono ancora una certa energia.
 
 	Info_ClearChoices	(DIA_Addon_Merdarion_ADWHello);
 	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Da cosa sono alimentate queste pietre di teletrasporto?", DIA_Addon_Merdarion_ADWHello_reaktor );
@@ -113,11 +113,11 @@ func void DIA_Addon_Merdarion_ADWHello_was ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_was_15_00"); //Cosa pensi si debba fare per attivarle?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_01"); //Ho un'idea al riguardo, ma devo verificare i miei sospetti.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_02"); //Ho la sensazione di aver gi‡ visto edifici di questo tipo prima d'ora.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_03"); //Sospetto che ci vorr‡ un'enorme quantit‡ di energia magica per rimetterle in funzione.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_02"); //Ho la sensazione di aver gi√† visto edifici di questo tipo prima d'ora.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_was_06_03"); //Sospetto che ci vorr√† un'enorme quantit√† di energia magica per rimetterle in funzione.
 	
 	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Dove hai visto queste pietre di teletrasporto prima d'ora?", DIA_Addon_Merdarion_ADWHello_wo );
-	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Che cosa potrebbe fornire energia magica a sufficienza per questoÖ", DIA_Addon_Merdarion_ADWHello_focus );
+	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Che cosa potrebbe fornire energia magica a sufficienza per questo‚Ä¶", DIA_Addon_Merdarion_ADWHello_focus );
 };
 func void DIA_Addon_Merdarion_ADWHello_focus ()
 {
@@ -125,7 +125,7 @@ func void DIA_Addon_Merdarion_ADWHello_focus ()
 	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_01"); //Una sola cosa: un focalizzatore magico.
 	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_02"); //Una delle cinque pietre focalizzatrici che furono usate per creare la barriera magica nella Valle delle Miniere.
 	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focus_06_03"); //Sbaglio, o ti era stato chiesto di recuperarle e portarle qui?
-	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_04"); //SÏ. Ricordo.
+	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focus_15_04"); //S√¨. Ricordo.
 	
 	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Hai detto che ti serviva una prova della tua ipotesi.", DIA_Addon_Merdarion_ADWHello_focusProof );
 	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Dove sono ora le focalizzatrici?", DIA_Addon_Merdarion_ADWHello_focusWo );
@@ -133,7 +133,7 @@ func void DIA_Addon_Merdarion_ADWHello_focus ()
 func void DIA_Addon_Merdarion_ADWHello_focusWo ()
 {
 	AI_Output			(other, self, "DIA_Addon_Merdarion_ADWHello_focusWo_15_00"); //Dove sono ora le focalizzatrici?
-	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_01"); //Furono affidate a me perchÈ le conservassi finchÈ non fosse giunto il momento di usarle di nuovo.
+	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_01"); //Furono affidate a me perch√© le conservassi finch√© non fosse giunto il momento di usarle di nuovo.
 	AI_Output			(self, other, "DIA_Addon_Merdarion_ADWHello_focusWo_06_02"); //E credo che quel momento sia arrivato.
 	Info_AddChoice	(DIA_Addon_Merdarion_ADWHello, "Ho sentito abbastanza.", DIA_Addon_Merdarion_ADWHello_Back );
 };
@@ -145,17 +145,17 @@ func void DIA_Addon_Merdarion_ADWHello_focusProof ()
 };
 func void DIA_Addon_Merdarion_ADWHello_wo ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_wo_15_00"); //Dove hai gi‡ visto queste pietre del telestrasporto?
+	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_wo_15_00"); //Dove hai gi√† visto queste pietre del telestrasporto?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_01"); //C'eri anche tu nella colonia penale. Non hai mai notato quelle pietre?
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_02"); //Sono sicuro che sono ancora lÏ.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_wo_06_02"); //Sono sicuro che sono ancora l√¨.
 };
 func void DIA_Addon_Merdarion_ADWHello_reaktor ()
 {
 	AI_Output	(other, self, "DIA_Addon_Merdarion_ADWHello_reaktor_15_00"); //Cosa fanno le pietre del teletrasporto?
 	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_01"); //I Costruttori erano un popolo altamente sviluppato.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_02"); //Usavano forme di magia che noi non immaginiamo neppure.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_03"); //Costruirono una rete di pietre del teletrasporto che consentivano loro di spostarsi rapidamente all'interno della citt‡.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_04"); //La pietra che Ë qui Ë una sorta di fulcro.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_03"); //Costruirono una rete di pietre del teletrasporto che consentivano loro di spostarsi rapidamente all'interno della citt√†.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_ADWHello_reaktor_06_04"); //La pietra che √® qui √® una sorta di fulcro.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -181,9 +181,9 @@ func int DIA_Addon_Merdarion_FokusGeben_Condition ()
 
 func void DIA_Addon_Merdarion_FokusGeben_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Merdarion_FokusGeben_15_00"); //Dammi una pietra focalizzatrice. RipristinerÚ il teletrasporto.
+	AI_Output	(other, self, "DIA_Addon_Merdarion_FokusGeben_15_00"); //Dammi una pietra focalizzatrice. Ripristiner√≤ il teletrasporto.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_01"); //D'accordo, ma sii prudente, mi raccomando.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_02"); //Se le perdo Saturas mi taglier‡ la testa.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FokusGeben_06_02"); //Se le perdo Saturas mi taglier√† la testa.
 	CreateInvItems (self, ItMi_Focus, 1);									
 	B_GiveInvItems (self, other, ItMi_Focus, 1);			
 	
@@ -219,7 +219,7 @@ func void DIA_Addon_Merdarion_FirstFocus_Info ()
 	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_01"); //Lo vedo. Avevo ragione, allora.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_02"); //Ne ho discusso con gli altri.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_03"); //Vogliamo che tu riattivi tutte le pietre del teletrasporto.
-	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_04"); //Ci sarebbe di grande aiuto nelle indagini poterci spostare rapidamente da una parte all'altra della citt‡.
+	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_04"); //Ci sarebbe di grande aiuto nelle indagini poterci spostare rapidamente da una parte all'altra della citt√†.
 	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_05"); //Ecco un'altra focalizzatrice.
 	CreateInvItems (self, ItMi_Focus, 1);									
 	B_GiveInvItems (self, other, ItMi_Focus, 1);		
@@ -227,7 +227,7 @@ func void DIA_Addon_Merdarion_FirstFocus_Info ()
 	AI_Output	(self, other, "DIA_Addon_Merdarion_FirstFocus_06_06"); //Attivale tutte, se ci riesci.
 	AI_Output	(other, self, "DIA_Addon_Merdarion_FirstFocus_15_07"); //Ci provo.
 	B_GivePlayerXP (XP_Addon_ActivatedTeleportStone);
-	B_LogEntry (TOPIC_Addon_TeleportsADW,"Merdarion mi ha dato un'altra pietra focale. Dovrei cercare di recuperare tutte le pietre di teletrasporto funzionanti. Mi dar‡ un'altra pietra focale non appena la prossima pietra di teletrasporto funzioner‡."); 
+	B_LogEntry (TOPIC_Addon_TeleportsADW,"Merdarion mi ha dato un'altra pietra focale. Dovrei cercare di recuperare tutte le pietre di teletrasporto funzionanti. Mi dar√† un'altra pietra focale non appena la prossima pietra di teletrasporto funzioner√†."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -269,10 +269,10 @@ func void DIA_Addon_Merdarion_ActivateTeleports_Info ()
 	
 	if (DIA_Addon_Merdarion_ActivateTeleports_OneTime == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_03"); //» stato difficile?
+		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_03"); //√à stato difficile?
 		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_04"); //Dipende dai punti di vista. Certo un aiuto mi farebbe comodo.
 		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_05"); //Posso darti dell'oro, pensi possa servirti?
-		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_06"); //Male non ne far‡.
+		AI_Output	(other, self, "DIA_Addon_Merdarion_ActivateTeleports_15_06"); //Male non ne far√†.
 		AI_Output	(self, other, "DIA_Addon_Merdarion_ActivateTeleports_06_07"); //Vediamo...
 		DIA_Addon_Merdarion_ActivateTeleports_OneTime = TRUE;
 	};
@@ -325,7 +325,7 @@ func void DIA_Addon_Merdarion_ADW_PreTeachMana_Info ()
 	Merdarion_Addon_TeachMana = TRUE;
 
 	Log_CreateTopic	(TOPIC_Addon_KDWTeacher, LOG_NOTE);
-	B_LogEntry (TOPIC_Addon_KDWTeacher,"Merdarion puÚ aumentare il mio mana."); 
+	B_LogEntry (TOPIC_Addon_KDWTeacher,"Merdarion pu√≤ aumentare il mio mana."); 
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info TEACH_MANA
@@ -361,7 +361,7 @@ FUNC VOID DIA_Addon_Merdarion_ADW_TEACH_MANA_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_HIGH)  
 	{
-		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //Quel che chiedi esula dalle mie capacit‡.
+		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_00"); //Quel che chiedi esula dalle mie capacit√†.
 		AI_Output (self, other, "DIA_Addon_Merdarion_ADW_TEACH_MANA_06_01"); //Non posso insegnarti altro.
 		Merdarion_ADW_Empty = TRUE;
 	};

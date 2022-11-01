@@ -47,15 +47,15 @@ FUNC VOID DIA_OUT_13_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Finora siamo riusciti a tenere gli orchi a distanza, ma ultimamente ce ne sono sempre di pi˘.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_00"); //Finora siamo riusciti a tenere gli orchi a distanza, ma ultimamente ce ne sono sempre di pi√π.
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_01"); //La guardia cittadina non verr‡ in nostro soccorso. I suoi uomini vengono dalla citt‡ solo per rubare il nostro raccolto e il bestiame.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_01"); //La guardia cittadina non verr√† in nostro soccorso. I suoi uomini vengono dalla citt√† solo per rubare il nostro raccolto e il bestiame.
 	};
 	if (randy == 2)
 	{
-		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar Ë fuori di testa se pensa di combattere contro la citt‡ quando ci sono i paladini.
+		AI_Output (self,other,"DIA_OUT_1_STANDARD_13_02"); //Onar √® fuori di testa se pensa di combattere contro la citt√† quando ci sono i paladini.
 	};
 	
 	AI_StopProcessInfos	(self);

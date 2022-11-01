@@ -72,9 +72,9 @@ FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 FUNC VOID DIA_Addon_Wache_02_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Come va?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Aspetta un attimo, non ti ho già visto da qualche parte?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Aspetta un attimo, non ti ho giÃ  visto da qualche parte?
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Ehm… no. Non sei lui. Avanti, sparisci.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Ehmâ€¦ no. Non sei lui. Avanti, sparisci.
 };
 //--------------------------------------------------------------------
 //	Info Attentat
@@ -100,7 +100,7 @@ FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Cosa sai dirmi dell'attacco?
 	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Cosa ne so? (ride) Gli ho spezzato le gambe.
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(minaccia) E farò lo stesso a chiunque altro voglia attaccare Esteban
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(minaccia) E farÃ² lo stesso a chiunque altro voglia attaccare Esteban
 };
 //--------------------------------------------------------------------
 //	Info perm

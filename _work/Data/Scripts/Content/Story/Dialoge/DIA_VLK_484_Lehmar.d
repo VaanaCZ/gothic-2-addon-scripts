@@ -77,16 +77,16 @@ func void DIA_Lehmar_GELDLEIHEN_Info ()
 
 	Info_ClearChoices	(DIA_Lehmar_GELDLEIHEN);
 
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "Ci penserò su.", DIA_Lehmar_GELDLEIHEN_back );
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "1000 monete d’oro.", DIA_Lehmar_GELDLEIHEN_1000 );
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, " 200 monete d’oro.", DIA_Lehmar_GELDLEIHEN_200 );
-	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "   50 monete d’oro.", DIA_Lehmar_GELDLEIHEN_50 );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "Ci penserÃ² su.", DIA_Lehmar_GELDLEIHEN_back );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "1000 monete dâ€™oro.", DIA_Lehmar_GELDLEIHEN_1000 );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, " 200 monete dâ€™oro.", DIA_Lehmar_GELDLEIHEN_200 );
+	Info_AddChoice	(DIA_Lehmar_GELDLEIHEN, "   50 monete dâ€™oro.", DIA_Lehmar_GELDLEIHEN_50 );
 	
 	
 };
 func void DIA_Lehmar_GELDLEIHEN_back ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_back_15_00"); //Ci penserò su.
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_back_15_00"); //Ci penserÃ² su.
 	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_back_09_01"); //Ehi sveglia! Non farmi perdere tempo!
 
 	AI_StopProcessInfos (self);
@@ -94,7 +94,7 @@ func void DIA_Lehmar_GELDLEIHEN_back ()
 
 func void DIA_Lehmar_GELDLEIHEN_50 ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_50_15_00"); //50 monete d’oro.
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_50_15_00"); //50 monete dâ€™oro.
 	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_50_09_01"); //Robetta eh? Li rivoglio domani, capito?
 
 	CreateInvItems (self, ItMi_Gold, 50);
@@ -110,7 +110,7 @@ func void DIA_Lehmar_GELDLEIHEN_50 ()
 
 func void DIA_Lehmar_GELDLEIHEN_200 ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_200_15_00"); //200 monete d’oro.
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_200_15_00"); //200 monete dâ€™oro.
 	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_200_09_01"); //Sono un sacco di soldi. Ti voglio rivedere qui domani, con i soldi. Capito?
 	
 
@@ -127,9 +127,9 @@ func void DIA_Lehmar_GELDLEIHEN_200 ()
 
 func void DIA_Lehmar_GELDLEIHEN_1000 ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_1000_15_00"); //1000 monete d’oro.
+	AI_Output (other, self, "DIA_Lehmar_GELDLEIHEN_1000_15_00"); //1000 monete dâ€™oro.
 	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_01"); //Hai qualche rotella fuori posto o cosa?
-	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_02"); //Ti darò 100 pezzi e non dimenticarti che li rivoglio domani!
+	AI_Output (self, other, "DIA_Lehmar_GELDLEIHEN_1000_09_02"); //Ti darÃ² 100 pezzi e non dimenticarti che li rivoglio domani!
 	
 
 	CreateInvItems (self, ItMi_Gold, 100);
@@ -167,9 +167,9 @@ func int DIA_Lehmar_WARUMGELD_Condition ()
 func void DIA_Lehmar_WARUMGELD_Info ()
 {
 	AI_Output (other, self, "DIA_Lehmar_WARUMGELD_15_00"); //Sei solito consegnare il tuo denaro alla gente in questo modo?
-	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_01"); //(divertito) Non preoccuparti. Tornerai. Altrimenti ti troverò e ti ucciderò. Semplice.
-	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_02"); //Hai una faccia così da babbeo che non farò fatica a trovarti.
-	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_03"); //Perciò non pensare di fregarmi.
+	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_01"); //(divertito) Non preoccuparti. Tornerai. Altrimenti ti troverÃ² e ti ucciderÃ². Semplice.
+	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_02"); //Hai una faccia cosÃ¬ da babbeo che non farÃ² fatica a trovarti.
+	AI_Output (self, other, "DIA_Lehmar_WARUMGELD_09_03"); //PerciÃ² non pensare di fregarmi.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info geldeintreiben
@@ -198,18 +198,18 @@ func int DIA_Lehmar_GELDEINTREIBEN_Condition ()
 
 func void DIA_Lehmar_GELDEINTREIBEN_Info ()
 {
-	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_00"); //Sei in ritardo, bastardo! Dammi i soldi! E siccome ho dovuto ricordartelo, ti costerà di più.
+	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_00"); //Sei in ritardo, bastardo! Dammi i soldi! E siccome ho dovuto ricordartelo, ti costerÃ  di piÃ¹.
 	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_09_01"); //Il 30 percento invece del normale 20 percento.
 
 
 	Info_ClearChoices	(DIA_Lehmar_GELDEINTREIBEN);
-	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "Pagherò il mio debito.", DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen );
-	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "Non ti darò proprio niente.", DIA_Lehmar_GELDEINTREIBEN_kannstmich );
+	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "PagherÃ² il mio debito.", DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen );
+	Info_AddChoice	(DIA_Lehmar_GELDEINTREIBEN, "Non ti darÃ² proprio niente.", DIA_Lehmar_GELDEINTREIBEN_kannstmich );
 };
 func void DIA_Lehmar_GELDEINTREIBEN_kannstmich ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_15_00"); //Non ti darò proprio niente.
-	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_09_01"); //Oh sì, lo farai.
+	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_15_00"); //Non ti darÃ² proprio niente.
+	AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_kannstmich_09_01"); //Oh sÃ¬, lo farai.
 	Lehmar_vorbei = TRUE;
 	AI_StopProcessInfos (self);		
 	
@@ -218,7 +218,7 @@ func void DIA_Lehmar_GELDEINTREIBEN_kannstmich ()
 
 func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 {
-	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_15_00"); //Pagherò il mio debito.
+	AI_Output (other, self, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_15_00"); //PagherÃ² il mio debito.
 
 				 	///////////////////////////////////////////////////////////////////////	
 		 	
@@ -248,7 +248,7 @@ func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_02"); //Non hai abbastanza soldi! Bene, vedo che dovrò darti una lezione.
+		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_02"); //Non hai abbastanza soldi! Bene, vedo che dovrÃ² darti una lezione.
 		AI_Output (self, other, "DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen_09_03"); //Non prenderla sul personale, ho una reputazione da mantenere.
 		Lehmar_vorbei = TRUE;
 		
@@ -258,7 +258,7 @@ func void DIA_Lehmar_GELDEINTREIBEN_schuldenzahlen ()
 	};
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Geldzurück
+//	Info GeldzurÃ¼ck
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Lehmar_GELDZURUECK		(C_INFO)
 {
@@ -285,8 +285,8 @@ func void DIA_Lehmar_GELDZURUECK_Info ()
 	if  (RangerHelp_LehmarKohle == TRUE)
 	&& (Lehmar_GeldGeliehen_Day<=(Wld_GetDay()-2))
 	{
-		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_00"); //Non preoccuparti. Ci ha già pensato Lares.
-		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_01"); //Quel bastardo è un tuo amico, eh? Beh, non sono affari miei. Buona giornata.
+		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_00"); //Non preoccuparti. Ci ha giÃ  pensato Lares.
+		AI_Output (self, other, "DIA_Addon_Lehmar_GELDZURUECK_09_01"); //Quel bastardo Ã¨ un tuo amico, eh? Beh, non sono affari miei. Buona giornata.
 		Lehmar_GeldGeliehen = 0;
 		AI_StopProcessInfos (self);		
 	}
@@ -313,7 +313,7 @@ func void DIA_Lehmar_GELDZURUECK_Info ()
 		{
 			B_GiveInvItems (other, self, ItMi_Gold, Lehmar_GeldGeliehen_MitZinsen);
 				
-			AI_Output (self, other, "DIA_Lehmar_GELDZURUECK_09_01"); //Meraviglioso! È bello fare affari con te.
+			AI_Output (self, other, "DIA_Lehmar_GELDZURUECK_09_01"); //Meraviglioso! Ãˆ bello fare affari con te.
 				
 			Lehmar_GeldGeliehen = 0;
 			AI_StopProcessInfos (self);		
@@ -350,14 +350,14 @@ func void DIA_Lehmar_NOCHMALGELD_Info ()
 {
 	AI_Output (other, self, "DIA_Lehmar_NOCHMALGELD_15_00"); //Puoi prestarmi altro denaro?
 
-	if (Npc_KnowsInfo(other, DIA_Lehmar_GELDEINTREIBEN))//Joly: SC hat Schulden nicht ordnungsgemäß zurück gezahlt!
+	if (Npc_KnowsInfo(other, DIA_Lehmar_GELDEINTREIBEN))//Joly: SC hat Schulden nicht ordnungsgemÃ¤ÃŸ zurÃ¼ck gezahlt!
 	|| (Npc_KnowsInfo (other, DIA_Lehmar_BuchWeg))
 	{
 		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_01"); //Pensi che sia stupido? Sparisci!
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_02"); //Non più, adesso! Ho appena avuto una grossa uscita e ora ho bisogno di denaro.
+		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_02"); //Non piÃ¹, adesso! Ho appena avuto una grossa uscita e ora ho bisogno di denaro.
 		AI_Output (self, other, "DIA_Lehmar_NOCHMALGELD_09_03"); //Torna tra qualche giorno.
 	};
 };
@@ -444,7 +444,7 @@ FUNC VOID DIA_Lehmar_BuchWeg_Info()
 	AI_Output (self, other, "DIA_Lehmar_Add_09_00"); //(con rimorso) Qualche miserabile ladruncolo ha rubato il mio libro mastro...
 	AI_Output (self, other, "DIA_Lehmar_Add_09_01"); //Non hai niente a che fare con questa faccenda, vero?
 	AI_Output (other, self, "DIA_Addon_Lehmar_Add_15_02"); //(sorride) Io? No.
-	AI_Output (self, other, "DIA_Lehmar_Add_09_03"); //Sì, sì, certamente... Esci di qui...
+	AI_Output (self, other, "DIA_Lehmar_Add_09_03"); //SÃ¬, sÃ¬, certamente... Esci di qui...
 	AI_StopProcessInfos (self);
 };
 

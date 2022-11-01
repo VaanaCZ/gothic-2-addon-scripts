@@ -71,7 +71,7 @@ FUNC INT DIA_PAL_12_PEOPLE_Condition()
 FUNC VOID DIA_PAL_12_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_12_PEOPLE_15_00"); //Chi comanda, qui?
-	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //L'onorevole Lord Hagen. Ma è Lord Andre il responsabile di tutto ciò che riguarda la popolazione.
+	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_01"); //L'onorevole Lord Hagen. Ma Ã¨ Lord Andre il responsabile di tutto ciÃ² che riguarda la popolazione.
 	AI_Output (self, other, "DIA_PAL_12_PEOPLE_12_02"); //Lo troverai nella caserma. Se sarai fortunato potrebbe dedicarti un po' del suo tempo prezioso.
 };
 
@@ -99,7 +99,7 @@ FUNC VOID DIA_PAL_12_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_12_LOCATION_15_00"); //Cosa ci fate voi paladini qui a Khorinis?
 	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_01"); //Le persone che fanno queste domande si ritrovano appese alla forca prima che possano rendersene conto.
-	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Se c'è UNA cosa che Lord Andre non sopporta è veder cadere nelle mani di spie le informazioni sulla nostra missione.
+	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_02"); //Se c'Ã¨ UNA cosa che Lord Andre non sopporta Ã¨ veder cadere nelle mani di spie le informazioni sulla nostra missione.
 	AI_Output (self, other, "DIA_PAL_12_LOCATION_12_03"); //Dunque faresti meglio a stare attento a come parli.
 };
 
@@ -131,17 +131,17 @@ FUNC VOID DIA_PAL_12_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_01"); //Ora che sappiamo di avere a che fare con i draghi, il nostro comandante farà certamente qualcosa al più presto.
+				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_01"); //Ora che sappiamo di avere a che fare con i draghi, il nostro comandante farÃ  certamente qualcosa al piÃ¹ presto.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_02"); //Non abbiamo ancora ricevuto notizie dal nostro contingente nella Valle delle Miniere. La cosa è molto sospetta.
+				AI_Output (self, other, "DIA_PAL_12_STANDARD_12_02"); //Non abbiamo ancora ricevuto notizie dal nostro contingente nella Valle delle Miniere. La cosa Ã¨ molto sospetta.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Sia lodato Innos! La minaccia dei draghi è stata scongiurata. Ora per mettere le mani sul metallo dobbiamo solo annientare gli orchi.
+			AI_Output (self, other, "DIA_PAL_12_STANDARD_12_03"); //Sia lodato Innos! La minaccia dei draghi Ã¨ stata scongiurata. Ora per mettere le mani sul metallo dobbiamo solo annientare gli orchi.
 		};
 	}
 	else //KEIN Paladin

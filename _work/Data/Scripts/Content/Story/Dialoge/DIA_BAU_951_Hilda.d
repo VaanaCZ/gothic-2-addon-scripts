@@ -50,11 +50,11 @@ func void DIA_Hilda_Hallo_Info ()
 {
 	if (hero.guild == GIL_NONE)
 		{
-			AI_Output (self, other, "DIA_Hilda_Hallo_17_00"); //Ehi, chi ti ha invitato? Esci subito da casa mia. Qui non facciamo la carit‡.
+			AI_Output (self, other, "DIA_Hilda_Hallo_17_00"); //Ehi, chi ti ha invitato? Esci subito da casa mia. Qui non facciamo la carit√†.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Hilda_Hallo_17_01"); //SÏ, che c'Ë?
+			AI_Output (self, other, "DIA_Hilda_Hallo_17_01"); //S√¨, che c'√®?
 		};
 		
 	AI_StopProcessInfos (self);
@@ -116,10 +116,10 @@ func void DIA_Hilda_WasZuEssen_Info ()
 						}
 						else //heute schon bekommen
 						{
-							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //Hai avuto la tua parte per oggi! Torna pi˘ tardi.
+							AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_03"); //Hai avuto la tua parte per oggi! Torna pi√π tardi.
 						};
 					}
-					else //Pfanne zu sp‰t
+					else //Pfanne zu sp√§t
 					{
 						AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_04"); //Qui non diamo da mangiare ai fannulloni. Vattene!
 						AI_StopProcessInfos (self); 
@@ -132,13 +132,13 @@ func void DIA_Hilda_WasZuEssen_Info ()
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_06"); //Sono sicuro che hai abbastanza soldi per comprarti qualcosa in citt‡.
+			AI_Output (self, other, "DIA_Hilda_WasZuEssen_17_06"); //Sono sicuro che hai abbastanza soldi per comprarti qualcosa in citt√†.
 		};
 };
 
 
 ///////////////////////////////////////////////////////////////////////
-//	R¸ben bringen
+//	R√ºben bringen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_BringBeet (C_INFO)
 {
@@ -169,8 +169,8 @@ func void DIA_Hilda_BringBeet_Info ()
 		B_GiveInvItems (other, self, ItPl_Beet, Npc_HasItems (other,ItPl_Beet));
 		
 		AI_Output (self, other, "DIA_Hilda_BringBeet_17_01"); //Ottimo! (ride) Queste dovrebbero bastare a saziare i ragazzi!
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_02"); //Gi‡ che sei qui, ho visto un mercante ambulante passare di qui un paio di minuti fa.
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_03"); //Credo che abbia fatto una sosta prima di recarsi in citt‡. Vedi se ha una padella decente per me.
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_02"); //Gi√† che sei qui, ho visto un mercante ambulante passare di qui un paio di minuti fa.
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_03"); //Credo che abbia fatto una sosta prima di recarsi in citt√†. Vedi se ha una padella decente per me.
 				
 		MIS_Lobart_RuebenToHilda = LOG_SUCCESS;
 		B_GivePlayerXP (XP_Ambient);//damit der Logeintrag verschwindet
@@ -186,7 +186,7 @@ func void DIA_Hilda_BringBeet_Info ()
 			AI_Output (self, other, "DIA_Hilda_BringBeet_17_05"); //Non basta.
 		};
 		
-		AI_Output (self, other, "DIA_Hilda_BringBeet_17_06"); //Torna nel campo e prendine di pi˘. Gli uomini sono affamati!
+		AI_Output (self, other, "DIA_Hilda_BringBeet_17_06"); //Torna nel campo e prendine di pi√π. Gli uomini sono affamati!
 		AI_StopProcessInfos (self);
 	};
 };
@@ -202,7 +202,7 @@ instance DIA_Hilda_Einkaufen (C_INFO)
 	condition	= DIA_Hilda_Einkaufen_Condition;
 	information	= DIA_Hilda_Einkaufen_Info;
 	permanent	= FALSE;
-	description	= "Dammi líoro e andrÚ a far visita al mercante per te...";
+	description	= "Dammi l‚Äôoro e andr√≤ a far visita al mercante per te...";
 };
 
 func int DIA_Hilda_Einkaufen_Condition ()
@@ -216,7 +216,7 @@ func int DIA_Hilda_Einkaufen_Condition ()
 
 func void DIA_Hilda_Einkaufen_Info ()
 {
-	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00"); //Dammi líoro e andrÚ a parlare al mercante in vece tua...
+	AI_Output (other, self, "DIA_Hilda_Einkaufen_15_00"); //Dammi l‚Äôoro e andr√≤ a parlare al mercante in vece tua...
 		
 		if (hero.guild == GIL_NONE)
 		{
@@ -271,7 +271,7 @@ func void DIA_Hilda_PfanneGeholt_Info ()
 
 
 ///////////////////////////////////////////////////////////////////////
-//	Pfanne zu sp‰t
+//	Pfanne zu sp√§t
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Hilda_PfanneTooLate (C_INFO)
 {
@@ -306,7 +306,7 @@ func void DIA_Hilda_PfanneTooLate_Info ()
 		
 	if (Npc_HasItems(other, itmi_pan) > 0)
 	{
-		AI_Output (other, self, "DIA_Hilda_PfanneTooLate_15_02"); //Scusa, ma mi ci Ë voluto del tempo. Ecco la tua padella!
+		AI_Output (other, self, "DIA_Hilda_PfanneTooLate_15_02"); //Scusa, ma mi ci √® voluto del tempo. Ecco la tua padella!
 	
 		B_GiveInvItems (other, self, itmi_pan, 1);
 	
@@ -328,7 +328,7 @@ func void DIA_Hilda_PfanneTooLate_Info ()
 		}
 		else //kein Gold
 		{
-			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_06"); //Non ce l'hai pi˘? Ti avevo dato 20 monete d'oro!
+			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_06"); //Non ce l'hai pi√π? Ti avevo dato 20 monete d'oro!
 			AI_Output (self, other, "DIA_Hilda_PfanneTooLate_17_07"); //Sparisci dalla mia vista, sporco ladro!
 			
 			B_MemorizePlayerCrime (self, other, CRIME_THEFT);
@@ -368,8 +368,8 @@ func int DIA_Hilda_TruheRumgemacht_Condition ()
 
 func void DIA_Hilda_TruheRumgemacht_Info ()
 {
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //Denk¥ bloss nicht, ich h‰tte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
-	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst hol¥ ich meinen Mann!
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_00"); //Denk¬¥ bloss nicht, ich h√§tte nicht gesehen, wie du an der Kiste 'rumgemacht hast.
+	AI_Output (self, other, "DIA_Hilda_TruheRumgemacht_17_01"); //Raus hier aber schnell. Sonst hol¬¥ ich meinen Mann!
 	
 	AI_StopProcessInfos(self);
 };
@@ -437,7 +437,7 @@ func void DIA_Hilda_KRANK_Info ()
 {
 	AI_Output			(other, self, "DIA_Hilda_KRANK_15_00"); //Non ti senti bene?
 	AI_Output			(self, other, "DIA_Hilda_KRANK_17_01"); //No, niente affatto. Ho di nuovo questa dannata febbre.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_17_02"); //Dovrei andare dal guaritore in citt‡, ma sono troppo debole per farlo.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_17_02"); //Dovrei andare dal guaritore in citt√†, ma sono troppo debole per farlo.
 
 	if (DIA_Hilda_KRANK_OnTime == FALSE)
 	{
@@ -461,11 +461,11 @@ func void DIA_Hilda_KRANK_helfen ()
 {
 	AI_Output			(other, self, "DIA_Hilda_KRANK_helfen_15_00"); //Posso fare qualcosa per te?
 	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_01"); //Sarebbe meraviglioso se tu potessi andare da Vatras e portarmi la mia medicina.
-	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_02"); //Egli sapr‡ cosa fare! Io non ce la faccio pi˘.
+	AI_Output			(self, other, "DIA_Hilda_KRANK_helfen_17_02"); //Egli sapr√† cosa fare! Io non ce la faccio pi√π.
 
 	Log_CreateTopic (TOPIC_HealHilda, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_HealHilda, LOG_RUNNING);
-	B_LogEntry (TOPIC_HealHilda,"La moglie di Lobart Ë malata, ma Vatras ha qualcosa che potr‡ curarla."); 
+	B_LogEntry (TOPIC_HealHilda,"La moglie di Lobart √® malata, ma Vatras ha qualcosa che potr√† curarla."); 
 	AI_StopProcessInfos (self);
 };
 
@@ -494,7 +494,7 @@ func void DIA_Hilda_HEILUNGBRINGEN_Info ()
 {
 	AI_Output			(other, self, "DIA_Hilda_HEILUNGBRINGEN_15_00"); //Ho qui la tua medicina.
 	B_GiveInvItems 		(other, self, ItPo_HealHilda_MIS,1);
-	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_01"); //Davvero? La nostra societ‡ ha bisogno pi˘ gente come te. Grazie mille.
+	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_01"); //Davvero? La nostra societ√† ha bisogno pi√π gente come te. Grazie mille.
 	B_UseItem 			(self,ItPo_HealHilda_MIS);
 	AI_Output			(self, other, "DIA_Hilda_HEILUNGBRINGEN_17_02"); //Spero che queste poche monete siano abbastanza.
 	CreateInvItems 		(self, ItMi_Gold, 50);									
@@ -535,7 +535,7 @@ func void DIA_Hilda_DISTURB_Info ()
 	if (MIS_HealHilda == LOG_SUCCESS)
 	{
 	AI_Output	(other, self, "DIA_Hilda_DISTURB_15_00"); //Come stai?
-	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_01"); //Sto gi‡ un pochino meglio, grazie a te.
+	AI_Output	(self, other, "DIA_Hilda_DISTURB_17_01"); //Sto gi√† un pochino meglio, grazie a te.
 	}
 	else
 	{

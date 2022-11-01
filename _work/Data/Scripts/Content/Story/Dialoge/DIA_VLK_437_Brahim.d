@@ -6,7 +6,7 @@ FUNC VOID B_BrahimNewMaps ()
 {
 	if (Brahim_ShowedMaps == TRUE)
 	{
-		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //Torna un'altra volta. Sono certo che per allora avrÚ qualcosa di nuovo per te.
+		AI_Output			(self, other, "B_BrahimNewMaps_07_00"); //Torna un'altra volta. Sono certo che per allora avr√≤ qualcosa di nuovo per te.
 	};
 };
 INSTANCE DIA_Brahim_EXIT   (C_INFO)
@@ -87,9 +87,9 @@ func int DIA_Brahim_GREET_Condition ()
 func void DIA_Brahim_GREET_Info ()
 {
 	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //Cosa stai facendo qui?
-	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Il mio nome Ë Brahim. Disegno e vendo mappe.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Siccome sei nuovo da queste parti, forse potrebbe servirti una mappa della citt‡.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Non costa molto ed Ë utile finchÈ non impari come muoverti.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Il mio nome √® Brahim. Disegno e vendo mappe.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Siccome sei nuovo da queste parti, forse potrebbe servirti una mappa della citt√†.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Non costa molto ed √® utile finch√© non impari come muoverti.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Brahim disegna e vende mappe vicino al porto.");
@@ -105,7 +105,7 @@ instance DIA_Addon_Brahim_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Brahim_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Brahim_MissingPeople_Info;
 
-	description	 = 	"» vero che alcuni abitanti della citt‡ sono scomparsi?";
+	description	 = 	"√à vero che alcuni abitanti della citt√† sono scomparsi?";
 };
 
 func int DIA_Addon_Brahim_MissingPeople_Condition ()
@@ -119,8 +119,8 @@ func int DIA_Addon_Brahim_MissingPeople_Condition ()
 
 func void DIA_Addon_Brahim_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //» vero che alcuni abitanti della citt‡ sono scomparsi?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //CosÏ ho sentito dire. Ma non so se sia vero.
+	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //√à vero che alcuni abitanti della citt√† sono scomparsi?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //Cos√¨ ho sentito dire. Ma non so se sia vero.
 	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Guardati un po' attorno. Ti piacerebbe passare i tuoi anni migliori in questa fogna?
 	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Non mi sorprende proprio che la gente se ne stia andando.
 };
@@ -257,8 +257,8 @@ FUNC VOID DIA_Brahim_Kap3_First_EXIT_Info()
 	Info_ClearChoices (DIA_Brahim_Kap3_First_EXIT);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,DIALOG_BACK,DIA_Brahim_Kap3_First_EXIT_BACK);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Da dove hai preso quel documento?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Che tipo di documento Ë?",DIA_Brahim_Kap3_First_EXIT_Content);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"PerchÈ non lo tieni per te?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Che tipo di documento √®?",DIA_Brahim_Kap3_First_EXIT_Content);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Perch√© non lo tieni per te?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
@@ -282,9 +282,9 @@ FUNC VOID DIA_Brahim_Kap3_First_EXIT_Content ()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_KeepIt()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //PerchÈ non la tieni per te?
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Perch√© non la tieni per te?
 	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Sono vecchio e quei tempi sono lontani.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //La lascio ai pi˘ giovani.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //La lascio ai pi√π giovani.
 };
 
 

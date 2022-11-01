@@ -40,7 +40,7 @@ FUNC INT DIA_OCPAL_4_PEOPLE_Condition()
 FUNC VOID DIA_OCPAL_4_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCPAL_4_PEOPLE_15_00"); //Chi comanda, qui?
-	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Il comandante Garond. Si trova nell'edificio più grande all'interno del castello.
+	AI_Output (self, other, "DIA_OCPAL_4_PEOPLE_04_01"); //Il comandante Garond. Si trova nell'edificio piÃ¹ grande all'interno del castello.
 };
 
 // *************************************************************************
@@ -90,14 +90,14 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //Gli orchi ci hanno circondati! Ma ci difenderemo fino all'ultimo uomo! E Innos ci aiuterà contro i draghi!
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_01"); //Gli orchi ci hanno circondati! Ma ci difenderemo fino all'ultimo uomo! E Innos ci aiuterÃ  contro i draghi!
 	};
 	
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Non ci vorrà molto prima che gli orchi attacchino. Dove diavolo sono i rinforzi?
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_02"); //Non ci vorrÃ  molto prima che gli orchi attacchino. Dove diavolo sono i rinforzi?
 			if (other.guild == GIL_DJG)
 			{
 				AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_03"); //Non crederai veramente che voi cacciatori di draghi abbiate qualche speranza contro TUTTI i draghi?
@@ -117,11 +117,11 @@ FUNC VOID DIA_OCPAL_4_STANDARD_Info()
 	{
 		if (MIS_OCGateOpen == FALSE)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //La morte dei draghi non sembra aver colpito particolarmente gli orchi. Perché, in nome di Innos, non se ne vanno via? Qui c'è qualche diavoleria all'opera.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_06"); //La morte dei draghi non sembra aver colpito particolarmente gli orchi. PerchÃ©, in nome di Innos, non se ne vanno via? Qui c'Ã¨ qualche diavoleria all'opera.
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Quel dannato cancello è bloccato. Gli orchi si stanno riversando nel castello senza che niente riesca a fermarli.
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_07"); //Quel dannato cancello Ã¨ bloccato. Gli orchi si stanno riversando nel castello senza che niente riesca a fermarli.
 			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_04_08"); //Qualcuno deve informare Lord Hagen. Abbiamo bisogno di lui QUI ora.
 		};
 	};

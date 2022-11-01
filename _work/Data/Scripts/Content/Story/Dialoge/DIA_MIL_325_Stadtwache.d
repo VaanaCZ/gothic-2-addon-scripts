@@ -92,7 +92,7 @@ FUNC INT DIA_Mil_325_Miliz_SecondWarn_Condition()
 
 func void DIA_Mil_325_Miliz_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Sei sordo? Fai un altro passo avanti e ti farò a fettine!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Sei sordo? Fai un altro passo avanti e ti farÃ² a fettine!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -130,7 +130,7 @@ func void DIA_Mil_325_Miliz_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //È stato uno sbaglio!
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //Ãˆ stato uno sbaglio!
 	
 	AI_StopProcessInfos	(self);		
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -148,7 +148,7 @@ INSTANCE DIA_Mil_325_Miliz_Pass (C_INFO)
 	condition	= DIA_Mil_325_Miliz_Pass_Condition;
 	information	= DIA_Mil_325_Miliz_Pass_Info;
 	permanent	= FALSE;
-	description	= "Faccio parte dell’esercito reale. Ho bisogno di equipaggiamento.";
+	description	= "Faccio parte dellâ€™esercito reale. Ho bisogno di equipaggiamento.";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
@@ -162,7 +162,7 @@ FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
 	
 func void DIA_Mil_325_Miliz_Pass_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Faccio parte dell’esercito reale. Ho bisogno di equipaggiamento.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Faccio parte dellâ€™esercito reale. Ho bisogno di equipaggiamento.
 	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //Hai un ordine preciso?
 	
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
@@ -199,7 +199,7 @@ INSTANCE DIA_Mil_325_Miliz_PERM (C_INFO)
 	condition	= DIA_Mil_325_Miliz_PERM_Condition;
 	information	= DIA_Mil_325_Miliz_PERM_Info;
 	permanent	= TRUE;
-	description	= "Perché nessuno ha accesso al magazzino?";
+	description	= "PerchÃ© nessuno ha accesso al magazzino?";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
@@ -209,7 +209,7 @@ FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
 	
 func void DIA_Mil_325_Miliz_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Perché nessuno ha accesso al magazzino?
+	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //PerchÃ© nessuno ha accesso al magazzino?
 	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //L'onorevole Lord Hagen ha sequestrato i beni destinati all'esercito reale.
 };
 

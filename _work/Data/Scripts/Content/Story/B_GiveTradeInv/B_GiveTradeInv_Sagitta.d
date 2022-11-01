@@ -11,8 +11,8 @@ FUNC VOID B_GiveTradeInv_Sagitta (var C_NPC slf)
 	{
 		CreateInvItems	 (slf, ItMi_Gold,		100);  
 
-		CreateInvItems 	 (slf, ItPl_SwampHerb, 9);  //Joly: für Dealer
-		CreateInvItems 	 (slf, ItMi_Joint, 3);  	//Joly: für Dealer
+		CreateInvItems 	 (slf, ItPl_SwampHerb, 9);  //Joly: fÃ¼r Dealer
+		CreateInvItems 	 (slf, ItMi_Joint, 3);  	//Joly: fÃ¼r Dealer
 
 		CreateInvItems   (slf, ItMi_Sulfur,   	2);
 		CreateInvItems   (slf, ItMi_Quartz, 	1);
@@ -27,7 +27,7 @@ FUNC VOID B_GiveTradeInv_Sagitta (var C_NPC slf)
 		CreateInvItems (slf, ITWr_Addon_Health_04, 1); //NEUES REZEPT
 		CreateInvItems (slf, ITWr_Addon_Mana_04, 1); //NEUES REZEPT
 		
-		CreateInvItems (slf,ItFo_Addon_Pfeffer_01,1);//FÜR Mission fortuno
+		CreateInvItems (slf,ItFo_Addon_Pfeffer_01,1);//FÃœR Mission fortuno
 
 		Sagitta_ItemsGiven_Chapter_1 = TRUE;
 	};

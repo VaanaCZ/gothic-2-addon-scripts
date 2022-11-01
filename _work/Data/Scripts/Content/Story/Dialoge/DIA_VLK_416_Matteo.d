@@ -96,14 +96,14 @@ FUNC INT DIA_Matteo_SellWhat_Condition()
 FUNC VOID DIA_Matteo_SellWhat_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_SellWhat_15_00"); //Cosa vendi?
-	AI_Output (self, other, "DIA_Matteo_SellWhat_09_01"); //Posso offrirti qualsiasi cosa per sopravvivere l‡ fuori. Armi, torce, provviste... anche armature!
+	AI_Output (self, other, "DIA_Matteo_SellWhat_09_01"); //Posso offrirti qualsiasi cosa per sopravvivere l√† fuori. Armi, torce, provviste... anche armature!
 	AI_Output (self, other, "DIA_Matteo_SellWhat_09_02"); //Ho ancora un pezzo speciale a disposizione.
 	AI_Output (self, other, "DIA_Matteo_SellWhat_09_03"); //Armatura di pelle di squartatore rinforzata, mai usata. Ti interessa?
 	
 	if (Knows_Matteo == FALSE)
 	{
 		Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-		B_LogEntry (TOPIC_CityTrader,"Il negozio di Matteo Ë al cancello sud della citt‡. Vende equipaggiamento, armi e provviste.");
+		B_LogEntry (TOPIC_CityTrader,"Il negozio di Matteo √® al cancello sud della citt√†. Vende equipaggiamento, armi e provviste.");
 		Knows_Matteo = TRUE;
 	};
 };
@@ -139,7 +139,7 @@ FUNC VOID DIA_Matteo_TRADE_Info()
 	&& (MIS_RescueBennet != LOG_SUCCESS)
 	&& (Matteo_TradeNewsPermanent == FALSE)
 	{
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_01"); //Da quando i mercenari hanno fatto fuori Lothar, le ispezioni dei paladini si sono fatte pi˘ intense.
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_01"); //Da quando i mercenari hanno fatto fuori Lothar, le ispezioni dei paladini si sono fatte pi√π intense.
 		AI_Output (self,other,"DIA_Matteo_TRADE_09_02"); //Spero che la smetteranno, una volta che avranno impiccato l'assassino.
 	
 		Matteo_TradeNewsPermanent = 1;
@@ -148,7 +148,7 @@ FUNC VOID DIA_Matteo_TRADE_Info()
 	&& (Matteo_TradeNewsPermanent < 2)
 	{
 		AI_Output (self,other,"DIA_Matteo_TRADE_09_03"); //Sembra che i paladini facciano sul serio, questa volta, hanno addirittura ritirato le guardie della flotta navale.
-		AI_Output (self,other,"DIA_Matteo_TRADE_09_04"); //» saggio fare il pieno di scorte adesso. Chi puÚ dire se la settimana prossima la citt‡ regger‡ ancora?
+		AI_Output (self,other,"DIA_Matteo_TRADE_09_04"); //√à saggio fare il pieno di scorte adesso. Chi pu√≤ dire se la settimana prossima la citt√† regger√† ancora?
 	
 		Matteo_TradeNewsPermanent = 2;
 	};
@@ -169,7 +169,7 @@ instance DIA_Matteo_LEATHER		(C_INFO)
 	condition	 = 	DIA_Matteo_LEATHER_Condition;
 	information	 = 	DIA_Matteo_LEATHER_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Compra líarmatura di cuoio. Protezione: armi 25, frecce 20 (250 monete díoro)";
+	description	 = 	"Compra l‚Äôarmatura di cuoio. Protezione: armi 25, frecce 20 (250 monete d‚Äôoro)";
 };
 
 func int DIA_Matteo_LEATHER_Condition ()
@@ -193,7 +193,7 @@ func void DIA_Matteo_LEATHER_Info ()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Matteo_LEATHER_09_02"); //L'armatura ha il suo prezzo e lo vale tutto. PerciÚ, torna quando avrai abbastanza oro.
+		AI_Output (self, other, "DIA_Matteo_LEATHER_09_02"); //L'armatura ha il suo prezzo e lo vale tutto. Perci√≤, torna quando avrai abbastanza oro.
 	};
 };
 
@@ -219,12 +219,12 @@ FUNC INT DIA_Matteo_Paladine_Condition()
 FUNC VOID DIA_Matteo_Paladine_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_Paladine_15_00"); //Cosa sai sui paladini?
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_01"); //Da quando quei bastardi sono arrivati in citt‡ non hanno portato altro che guai.
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_02"); //L'ultima volta che stavo andando verso la parte alta della citt‡, le guardie sono sbucate dal nulla, mi hanno fermato e mi hanno chiesto che cosa facevo lÏ!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_01"); //Da quando quei bastardi sono arrivati in citt√† non hanno portato altro che guai.
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_02"); //L'ultima volta che stavo andando verso la parte alta della citt√†, le guardie sono sbucate dal nulla, mi hanno fermato e mi hanno chiesto che cosa facevo l√¨!
 	AI_Output (other, self, "DIA_Matteo_Paladine_15_03"); //E allora?
 	AI_Output (self, other, "DIA_Matteo_Paladine_09_04"); //Naturalmente mi hanno fatto entrare!
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_05"); //Avevo il mio negozio in citt‡ da quando la maggior parte di questi animali rincorreva maiali con spade di legno.
-	AI_Output (self, other, "DIA_Matteo_Paladine_09_06"); //E ieri quei bastardi sono venuti e hanno confiscato met‡ dei miei beni!
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_05"); //Avevo il mio negozio in citt√† da quando la maggior parte di questi animali rincorreva maiali con spade di legno.
+	AI_Output (self, other, "DIA_Matteo_Paladine_09_06"); //E ieri quei bastardi sono venuti e hanno confiscato met√† dei miei beni!
 };
 
 // ************************************************************
@@ -279,24 +279,24 @@ FUNC INT DIA_Matteo_HelpMeToOV_Condition()
 FUNC VOID DIA_Matteo_HelpMeToOV_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_00"); //Puoi aiutarmi a raggiungere il quartiere alto?
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_01"); //(sbalordito) Cosa? Che cosa stai facendo LÃ?
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_01"); //(sbalordito) Cosa? Che cosa stai facendo L√å?
 	AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_02"); //Ho un messaggio importante...
 	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_03"); //Bene, bene... Hai provato a superare le guardie?
 
 	if (Torwache_305.aivar[AIV_TalkedToPlayer] == TRUE)
 	{
-		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_04"); //(risata amara) Oh, non parliamone pi˘!
-		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_05"); //(ride) » TIPICO di quei mendicanti!
+		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_04"); //(risata amara) Oh, non parliamone pi√π!
+		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_05"); //(ride) √à TIPICO di quei mendicanti!
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_06"); //Non vedo perchÈ dovrei provarci.
+		AI_Output (other, self, "DIA_Matteo_HelpMeToOV_15_06"); //Non vedo perch√© dovrei provarci.
 		AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_07"); //Probabilmente hai ragione.
 	};
 	
 	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_08"); //Non so QUANTO sia importante il tuo messaggio e non sono affari miei.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_09"); //Ma anche se dici loro che c'Ë una nave carica di orchi ancorata al porto, ti manderanno via.
-	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_10"); //PerchÈ hanno i loro ORDINI.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_09"); //Ma anche se dici loro che c'√® una nave carica di orchi ancorata al porto, ti manderanno via.
+	AI_Output (self, other, "DIA_Matteo_HelpMeToOV_09_10"); //Perch√© hanno i loro ORDINI.
 };
 
 // ************************************************************
@@ -306,10 +306,10 @@ FUNC VOID DIA_Matteo_HelpMeToOV_Info()
 func void B_Matteo_Preis()
 {
 	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_01"); //Sembra essere molto importante per te.
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_02"); //(maliziosamente) La domanda Ë: QUANTO Ë importante per te?
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_02"); //(maliziosamente) La domanda √®: QUANTO √® importante per te?
 	AI_Output (other, self, "DIA_Matteo_HelpMeNow_15_03"); //Dove vuoi arrivare?
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_04"); //Posso aiutarti, dopo tutto sono una delle persone pi˘ influenti qui.
-	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_05"); //Ma ti coster‡.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_04"); //Posso aiutarti, dopo tutto sono una delle persone pi√π influenti qui.
+	AI_Output (self, other, "DIA_Matteo_HelpMeNow_09_05"); //Ma ti coster√†.
 };
 
 
@@ -386,7 +386,7 @@ FUNC INT DIA_Matteo_PriceOfHelp_Condition()
 FUNC VOID DIA_Matteo_PriceOfHelp_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_PriceOfHelp_15_00"); //Cosa chiedi in cambio del tuo aiuto?
-	AI_Output (self, other, "DIA_Matteo_PriceOfHelp_09_01"); //100 monete díoro.
+	AI_Output (self, other, "DIA_Matteo_PriceOfHelp_09_01"); //100 monete d‚Äôoro.
 	
 	Info_ClearChoices 	(DIA_Matteo_PriceOfHelp);
 	Info_AddChoice 		(DIA_Matteo_PriceOfHelp, "Stai chiedendo troppo...", DIA_Matteo_PriceOfHelp_Wow);
@@ -395,18 +395,18 @@ FUNC VOID DIA_Matteo_PriceOfHelp_Info()
 
 func void B_Matteo_RegDichAb()
 {
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_00"); //Calma! Non Ë il TUO oro ciÚ a cui sono interessato.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_00"); //Calma! Non √® il TUO oro ci√≤ a cui sono interessato.
 	AI_Output (other, self, "B_Matteo_RegDichAb_15_01"); //Ma?
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_02"); //Sostanzialmente Ë il MIO oro.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_03"); //Gritta, la nipote del carpentiere, non mi ha ancora pagato ciÚ che mi deve da tempo.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_04"); //Ma quella piccola peste continua ad andare in giro con vestiti nuovi, perciÚ vuol dire che ha i soldi.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_05"); //Vorrei darle una lezione, ma anche maestro Thorben, il carpentiere, Ë una personalit‡ autorevole.
-	AI_Output (self, other, "B_Matteo_RegDichAb_09_06"); //Portami i miei soldi e ti aiuterÚ.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_02"); //Sostanzialmente √® il MIO oro.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_03"); //Gritta, la nipote del carpentiere, non mi ha ancora pagato ci√≤ che mi deve da tempo.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_04"); //Ma quella piccola peste continua ad andare in giro con vestiti nuovi, perci√≤ vuol dire che ha i soldi.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_05"); //Vorrei darle una lezione, ma anche maestro Thorben, il carpentiere, √® una personalit√† autorevole.
+	AI_Output (self, other, "B_Matteo_RegDichAb_09_06"); //Portami i miei soldi e ti aiuter√≤.
 	
 	MIS_Matteo_Gold = LOG_RUNNING;
 	Log_CreateTopic (Topic_Matteo,LOG_MISSION);
 	Log_SetTopicStatus	(Topic_Matteo,LOG_RUNNING);
-	B_LogEntry (Topic_Matteo,"Gritta, la nipote del carpentiere Thorben, deve 100 pezzi d'oro a Matteo. Se riesco a riportarglieli, mi aiuter‡ ad arrivare nei quartieri alti.");
+	B_LogEntry (Topic_Matteo,"Gritta, la nipote del carpentiere Thorben, deve 100 pezzi d'oro a Matteo. Se riesco a riportarglieli, mi aiuter√† ad arrivare nei quartieri alti.");
 };
 
 func void DIA_Matteo_PriceOfHelp_Cutthroat()
@@ -446,7 +446,7 @@ FUNC INT DIA_Matteo_WoGritta_Condition()
 FUNC VOID DIA_Matteo_WoGritta_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_WoGritta_15_00"); //Dove si trova questa Gritta?
-	AI_Output (self, other, "DIA_Matteo_WoGritta_09_01"); //Come ho gi‡ detto, Gritta Ë la nipote del carpentiere, la sua casa si trova in fondo alla strada, l'ultima casa sulla destra prima del fabbro.
+	AI_Output (self, other, "DIA_Matteo_WoGritta_09_01"); //Come ho gi√† detto, Gritta √® la nipote del carpentiere, la sua casa si trova in fondo alla strada, l'ultima casa sulla destra prima del fabbro.
 };
 
 // ************************************************************
@@ -459,7 +459,7 @@ INSTANCE DIA_Matteo_GoldRunning(C_INFO)
 	condition	= DIA_Matteo_GoldRunning_Condition;
 	information	= DIA_MAtteo_GoldRunning_Info;
 	permanent	= TRUE;
-	description = "Ecco le tue 100 monete díoro!";
+	description = "Ecco le tue 100 monete d‚Äôoro!";
 };                       
 FUNC INT DIA_Matteo_GoldRunning_Condition()
 {	
@@ -477,8 +477,8 @@ FUNC VOID DIA_Matteo_GoldRunning_Info()
 	
 	if (Npc_IsDead(Gritta))
 	{
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_01"); //Questo oro Ë sporco del sangue di Gritta! Nessuno ti aveva detto di ucciderla!
-		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_02"); //Non voglio entrare in questa faccenda, il nostro accordo Ë annullato! E non rivolgermi pi˘ la parola!
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_01"); //Questo oro √® sporco del sangue di Gritta! Nessuno ti aveva detto di ucciderla!
+		AI_Output (self, other, "DIA_Matteo_GoldRunning_09_02"); //Non voglio entrare in questa faccenda, il nostro accordo √® annullato! E non rivolgermi pi√π la parola!
 		MIS_Matteo_Gold = LOG_FAILED;
 		B_CheckLog();
 		AI_StopProcessInfos	(self);
@@ -541,11 +541,11 @@ FUNC VOID DIA_Matteo_Zustimmung_Info()
 	
 	if (MIS_Matteo_Gold == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_01"); //Non preoccuparti. RispetterÚ la mia parte dell'accordo.
+		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_01"); //Non preoccuparti. Rispetter√≤ la mia parte dell'accordo.
 		AI_Output (self, other, "DIA_Matteo_Zustimmung_09_02"); //Gli altri maestri sentiranno da parte mia solo lodi su di te.
 		
 		B_GivePlayerXP (XP_Zustimmung);
-		B_LogEntry (Topic_Lehrling,"Matteo dar‡ la sua approvazione qualora dovessi fare l'apprendista da qualche parte.");
+		B_LogEntry (Topic_Lehrling,"Matteo dar√† la sua approvazione qualora dovessi fare l'apprendista da qualche parte.");
 		DIA_Matteo_Zustimmung_perm = TRUE;
 	}
 	else //LOG_RUNNING
@@ -578,15 +578,15 @@ FUNC INT DIA_Matteo_HowCanYouHelp_Condition()
 FUNC VOID DIA_Matteo_HowCanYouHelp_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_HowCanYouHelp_15_00"); //Come puoi aiutarmi, ESATTAMENTE?
-	AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_01"); //Molto semplice. UserÚ la mia influenza per vedere se uno dei maestri artigiani di qui Ë interessato a te come apprendista.
+	AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_01"); //Molto semplice. User√≤ la mia influenza per vedere se uno dei maestri artigiani di qui √® interessato a te come apprendista.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_02"); //Come tale, diventerai un cittadino a tutti gli effetti e avrai accesso ai quartieri alti. Inoltre, potrai guadagnare qualche spicciolo, gi‡ che ci sei.
+		AI_Output (self, other, "DIA_Matteo_HowCanYouHelp_09_02"); //Come tale, diventerai un cittadino a tutti gli effetti e avrai accesso ai quartieri alti. Inoltre, potrai guadagnare qualche spicciolo, gi√† che ci sei.
 	};
 	
 	Log_CreateTopic(TOPIC_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Lehrling,LOG_RUNNING);
-	B_LogEntry (TOPIC_Lehrling,"Matteo puÚ aiutarmi a essere accettato come apprendista da uno dei mastri artigiani.");
+	B_LogEntry (TOPIC_Lehrling,"Matteo pu√≤ aiutarmi a essere accettato come apprendista da uno dei mastri artigiani.");
 };	
 
 // ************************************************************
@@ -614,8 +614,8 @@ FUNC VOID DIA_Matteo_WoAlsLehrling_Info()
 	AI_Output (other, self, "DIA_Matteo_WoAlsLehrling_15_00"); //Allora, dove posso prendere servizio come apprendista?
 	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_01"); //Fondamentalmente con uno qualsiasi dei maestri sulla strada principale.
 	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_02"); //Potrebbe essere Harald il fabbro, il fabbricante d'archi Bosper, Thorben il carpentiere o Constantino l'alchimista.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_03"); //Uno di loro Ë destinato a prenderti con sÈ.
-	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_04"); //Ma Ë importante che gli altri maestri siano d'accordo. Qui a Khorinis ha sempre funzionato cosÏ.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_03"); //Uno di loro √® destinato a prenderti con s√©.
+	AI_Output (self, other, "DIA_Matteo_WoAlsLehrling_09_04"); //Ma √® importante che gli altri maestri siano d'accordo. Qui a Khorinis ha sempre funzionato cos√¨.
 	
 	Log_CreateTopic (Topic_Lehrling,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lehrling,LOG_RUNNING);
@@ -632,7 +632,7 @@ INSTANCE DIA_Matteo_WieZustimmung (C_INFO)
 	condition	= DIA_Matteo_WieZustimmung_Condition;
 	information	= DIA_MAtteo_WieZustimmung_Info;
 	permanent	= FALSE;
-	description = "Come faccio a ottenere líapprovazione degli altri maestri?";
+	description = "Come faccio a ottenere l‚Äôapprovazione degli altri maestri?";
 };                       
 FUNC INT DIA_Matteo_WieZustimmung_Condition()
 {	
@@ -644,9 +644,9 @@ FUNC INT DIA_Matteo_WieZustimmung_Condition()
 };
 FUNC VOID DIA_Matteo_WieZustimmung_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WieZustimmung_15_00"); //Come faccio a ottenere líapprovazione degli altri maestri?
+	AI_Output (other, self, "DIA_Matteo_WieZustimmung_15_00"); //Come faccio a ottenere l‚Äôapprovazione degli altri maestri?
 	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_01"); //Devi solamente convincerli. Vai e parla con loro.
-	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_02"); //Ma se pi˘ di uno di loro sar‡ contro di te, allora non hai possibilit‡! PerciÚ, comportati bene!
+	AI_Output (self, other, "DIA_Matteo_WieZustimmung_09_02"); //Ma se pi√π di uno di loro sar√† contro di te, allora non hai possibilit√†! Perci√≤, comportati bene!
 	
 	B_LogEntry (Topic_Lehrling,"Posso ottenere l'approvazione semplicemente mostrandomi degno ai loro occhi.");
 };	
@@ -661,7 +661,7 @@ INSTANCE DIA_Matteo_WarumNichtBeiDir (C_INFO)
 	condition	= DIA_Matteo_WarumNichtBeiDir_Condition;
 	information	= DIA_MAtteo_WarumNichtBeiDir_Info;
 	permanent	= FALSE;
-	description = "PerchÈ non mi prendi TU come apprendista?";
+	description = "Perch√© non mi prendi TU come apprendista?";
 };                       
 FUNC INT DIA_Matteo_WarumNichtBeiDir_Condition()
 {	
@@ -673,13 +673,13 @@ FUNC INT DIA_Matteo_WarumNichtBeiDir_Condition()
 };
 FUNC VOID DIA_Matteo_WarumNichtBeiDir_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_WarumNichtBeiDir_15_00"); //PerchÈ non mi prendi TU come apprendista?
+	AI_Output (other, self, "DIA_Matteo_WarumNichtBeiDir_15_00"); //Perch√© non mi prendi TU come apprendista?
 	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_01"); //Mi piacerebbe, ma gli altri maestri non sarebbero d'accordo.
 	AI_Output (self, other, "DIA_Matteo_WarumNichtBeiDir_09_02"); //Ho appena preso con me un nuovo apprendista.
 };	
 
 // ************************************************************
-// 			  				Andere Mˆglichkeie 			E5
+// 			  				Andere M√∂glichkeie 			E5
 // ************************************************************
 INSTANCE DIA_Matteo_OtherWay (C_INFO)
 {
@@ -688,7 +688,7 @@ INSTANCE DIA_Matteo_OtherWay (C_INFO)
 	condition	= DIA_Matteo_OtherWay_Condition;
 	information	= DIA_MAtteo_OtherWay_Info;
 	permanent	= FALSE;
-	description = "CíË un altro modo per raggiungere il quartiere alto?";
+	description = "C‚Äô√® un altro modo per raggiungere il quartiere alto?";
 };                       
 FUNC INT DIA_Matteo_OtherWay_Condition()
 {	
@@ -702,8 +702,8 @@ FUNC INT DIA_Matteo_OtherWay_Condition()
 };
 FUNC VOID DIA_Matteo_OtherWay_Info()
 {	
-	AI_Output (other, self, "DIA_Matteo_OtherWay_15_00"); //CíË un altro modo per raggiungere il quartiere alto?
-	AI_Output (self, other, "DIA_Matteo_OtherWay_09_01"); //Forse... se mi viene in mente qualcosa ti farÚ sapere.
+	AI_Output (other, self, "DIA_Matteo_OtherWay_15_00"); //C‚Äô√® un altro modo per raggiungere il quartiere alto?
+	AI_Output (self, other, "DIA_Matteo_OtherWay_09_01"); //Forse... se mi viene in mente qualcosa ti far√≤ sapere.
 };	
 
 // ************************************************************
@@ -732,7 +732,7 @@ FUNC INT DIA_Matteo_Minenanteil_Condition()
 FUNC VOID DIA_Matteo_Minenanteil_Info()
 {	
 	AI_Output (other, self, "DIA_Matteo_Minenanteil_15_00"); //Tra la tua roba hai delle quote minerarie. Chi te le ha vendute?
-	AI_Output (self, other, "DIA_Matteo_Minenanteil_09_01"); //(nervosamente) Quote minerarie? Oops. Da dove vengono? Non ho idea di dove le ho prese, in tutta onest‡, vostro onore.
+	AI_Output (self, other, "DIA_Matteo_Minenanteil_09_01"); //(nervosamente) Quote minerarie? Oops. Da dove vengono? Non ho idea di dove le ho prese, in tutta onest√†, vostro onore.
 	B_GivePlayerXP (XP_Ambient);
 };	
 

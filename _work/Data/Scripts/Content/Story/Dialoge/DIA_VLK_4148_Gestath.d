@@ -51,43 +51,43 @@ func void DIA_Gestath_HALLO_Info ()
 	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(seccamente) Coraggioso a venire fin qui. Ti sei perso, eh?
 	Gestath_TeachAnimalTrophy = TRUE;
 	Info_ClearChoices	(DIA_Gestath_HALLO);
-	Info_AddChoice	(DIA_Gestath_HALLO, "Cosa c’è da vedere, qui?", DIA_Gestath_HALLO_waszusehen );
-	Info_AddChoice	(DIA_Gestath_HALLO, "Cosa stai facendo, quassù?", DIA_Gestath_HALLO_was );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Cosa câ€™Ã¨ da vedere, qui?", DIA_Gestath_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Cosa stai facendo, quassÃ¹?", DIA_Gestath_HALLO_was );
 };
 func void DIA_Gestath_HALLO_plate ()
 {
 	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Che bella armatura che indossi.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Certo. Difficile da trovare. È fatta di scaglie di scavaragno. Me l'ha costruita un tipo di nome Wolf.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Ero detenuto qui nella colonia, gli ho dato un paio di scaglie di scavaragno e pochi giorni dopo era terminata. Il tipo è in gamba.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Certo. Difficile da trovare. Ãˆ fatta di scaglie di scavaragno. Me l'ha costruita un tipo di nome Wolf.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Ero detenuto qui nella colonia, gli ho dato un paio di scaglie di scavaragno e pochi giorni dopo era terminata. Il tipo Ã¨ in gamba.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, DIALOG_BACK, DIA_Gestath_HALLO_Back );
-	Info_AddChoice	(DIA_Gestath_HALLO, "Dov’è questo lupo, adesso?", DIA_Gestath_HALLO_plate_woWolf );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Dovâ€™Ã¨ questo lupo, adesso?", DIA_Gestath_HALLO_plate_woWolf );
 };
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Dov’è questo lupo, adesso?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //È da un po' che non lo vedo. In passato ha fatto il mercenario per la colonia.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Dovâ€™Ã¨ questo lupo, adesso?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Ãˆ da un po' che non lo vedo. In passato ha fatto il mercenario per la colonia.
 	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //Suppongo che sia ancora in giro con i ragazzi.
 };
 
 func void DIA_Gestath_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Cosa stai facendo, quassù?
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Cosa stai facendo, quassÃ¹?
 	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Sono qui per far soldi.
 	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Qui, nel bel mezzo del nulla?
 	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Sono un cacciatore, specializzato in casi difficili.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Lucertole di fuoco, scavaragni, draghi squartatori... Qualsiasi cosa cui nessuno darebbe la caccia. È così che faccio soldi.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Lucertole di fuoco, scavaragni, draghi squartatori... Qualsiasi cosa cui nessuno darebbe la caccia. Ãˆ cosÃ¬ che faccio soldi.
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, "Che bella armatura che indossi.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Cosa c’è da vedere, qui?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Un po' di lucertole di fuoco, orchi e non so cos'altro. Non mi sono avventurato troppo in là.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //E ti consiglio di fare altrettanto: le cose che vivono lassù non sembrano per niente amichevoli.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Cosa câ€™Ã¨ da vedere, qui?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Un po' di lucertole di fuoco, orchi e non so cos'altro. Non mi sono avventurato troppo in lÃ .
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //E ti consiglio di fare altrettanto: le cose che vivono lassÃ¹ non sembrano per niente amichevoli.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -124,11 +124,11 @@ func void DIA_Gestath_Drachen_Info ()
 	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Sai anche sgozzare i draghi?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(ride) Richiedimelo più avanti, quando sarai pronto per qualcosa del genere, va bene?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(ride) Richiedimelo piÃ¹ avanti, quando sarai pronto per qualcosa del genere, va bene?
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Certo, perché no?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Certo, perchÃ© no?
 		Gestath_DragonTrophy = TRUE;
 	};
 };
@@ -174,7 +174,7 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			{
 				if (DIA_Gestath_TEACHHUNTING_OneTime == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Perché no? Perché non ne ho voglia in questo momento.
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //PerchÃ© no? PerchÃ© non ne ho voglia in questo momento.
 						DIA_Gestath_TEACHHUNTING_OneTime = TRUE;
 					}
 				else
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Il posto migliore per segare il corno di un drago squartatore dal cranio è in mezzo alla fronte. Usa un coltello robusto.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Il posto migliore per segare il corno di un drago squartatore dal cranio Ã¨ in mezzo alla fronte. Usa un coltello robusto.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -273,7 +273,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonBlood ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Il posto migliore da cui prendere il sangue è la parte sottostante. Cerca un punto morbido e bucalo con un coltello molto affilato.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Il posto migliore da cui prendere il sangue Ã¨ la parte sottostante. Cerca un punto morbido e bucalo con un coltello molto affilato.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

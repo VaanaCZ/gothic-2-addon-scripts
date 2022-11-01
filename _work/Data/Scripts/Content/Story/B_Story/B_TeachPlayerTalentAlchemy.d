@@ -49,7 +49,7 @@ func int B_TeachPlayerTalentAlchemy (var C_NPC slf, var C_NPC oth, var int potio
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredienti per 'ELISIR DI MANA': 2 radici del fuoco e 1 groviglio della prateria.");  };
 	
 	if (potion == POTION_Speed)			{	PLAYER_TALENT_ALCHEMY[POTION_Speed] 		= TRUE;	
-	B_LogEntry(TOPIC_TalentAlchemy,"Ingredienti per 'POZIONE DI VELOCITÀ': 1 erba dello squartatore e 1 groviglio della prateria.");  };
+	B_LogEntry(TOPIC_TalentAlchemy,"Ingredienti per 'POZIONE DI VELOCITÃ€': 1 erba dello squartatore e 1 groviglio della prateria.");  };
 	
 	if (potion == POTION_Perm_STR)		{	PLAYER_TALENT_ALCHEMY[POTION_Perm_STR] 		= TRUE;	
 	B_LogEntry(TOPIC_TalentAlchemy,"Ingredienti per 'ELISIR DELLA FORZA': 1 radice del drago e 1 acetosella del re.");  };

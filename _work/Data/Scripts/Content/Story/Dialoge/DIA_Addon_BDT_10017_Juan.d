@@ -76,7 +76,7 @@ FUNC VOID DIA_Addon_Juan_HI_Info()
 	
 	if !Npc_IsDead (Freund)
 	{
-		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//Altrimenti il mio amico ti ridurrà in polpette. Allora, cosa c'è?
+		AI_Output (self,other,"DIA_Addon_Juan_HI_13_02");//Altrimenti il mio amico ti ridurrÃ  in polpette. Allora, cosa c'Ã¨?
 		B_StartOtherRoutine (Freund,"STAND");
 	};
 };	
@@ -91,7 +91,7 @@ INSTANCE DIA_Addon_Juan_Losung   (C_INFO)
 	condition   = DIA_Addon_Juan_Losung_Condition;
 	information = DIA_Addon_Juan_Losung_Info;
 	permanent   = FALSE;
-	description = "Dicono che tu abbia in vendita merci interessanti…";
+	description = "Dicono che tu abbia in vendita merci interessantiâ€¦";
 };
 FUNC INT DIA_Addon_Juan_Losung_Condition()
 {	
@@ -105,10 +105,10 @@ FUNC VOID DIA_Addon_Juan_Losung_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_00");//Dicono che hai della mercanzia interessante da offrire
 	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_01");//E allora? Esteban vuole prendermi in giro, eh? Io faccio tutto il lavoro e sto nascosto in questo misero buco da giorni
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//… e lui mi manda qualcuno a prendere la roba? Non sono un magazzino!
-	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//Sì, e allora? Non è un problema mio.
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_02");//â€¦ e lui mi manda qualcuno a prendere la roba? Non sono un magazzino!
+	AI_Output (other,self,"DIA_Addon_Juan_Losung_15_03");//SÃ¬, e allora? Non Ã¨ un problema mio.
 	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_04");//Ci penso io a farlo DIVENTARE un problema tuo. Tu vuoi la consegna: bene, dovrai pagarla!
-	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Fatti dare l'oro da Esteban o da Raven o non so dove. Non mi interessa... Chiunque voglia questa merce dovrà pagare!
+	AI_Output (self,other,"DIA_Addon_Juan_Losung_13_05");//Fatti dare l'oro da Esteban o da Raven o non so dove. Non mi interessa... Chiunque voglia questa merce dovrÃ  pagare!
 };
 
 //---------------------------------------------------------------------
@@ -133,7 +133,7 @@ FUNC INT DIA_Addon_Juan_AufsMaul_Condition()
 FUNC VOID DIA_Addon_Juan_AufsMaul_Info()
 {	
 	AI_Output (other,self,"DIA_Addon_Juan_AufsMaul_15_00"); //Non vengo da parte di Esteban!
-	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Ah, beh, allora… ehm… Un momento solo! Aspetta un attimo, hai una bestionlina sulla spalla.
+	AI_Output (self,other,"DIA_Addon_Juan_AufsMaul_13_01"); //Ah, beh, alloraâ€¦ ehmâ€¦ Un momento solo! Aspetta un attimo, hai una bestionlina sulla spalla.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_NONE, 1);

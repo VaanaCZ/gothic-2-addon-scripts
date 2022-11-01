@@ -50,7 +50,7 @@ func void DIA_Angar_DI_HALLO_Info ()
 
 	if ((Npc_IsDead(UndeadDragon)) == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_01"); //Il mal di testa Ë diventato insopportabile da quando siamo giunti sull'isola.
+		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_01"); //Il mal di testa √® diventato insopportabile da quando siamo giunti sull'isola.
 		AI_Output			(self, other, "DIA_Angar_DI_HALLO_04_02"); //Dannazione. Questa storia deve finire.
 	}
 	else
@@ -84,9 +84,9 @@ func int DIA_Angar_DI_ORKS_Condition ()
 
 func void DIA_Angar_DI_ORKS_Info ()
 {
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_00"); //Faresti meglio ad affrettarti. Il prossimo attacco degli orchi ci coster‡ la vita.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_00"); //Faresti meglio ad affrettarti. Il prossimo attacco degli orchi ci coster√† la vita.
 	AI_Output			(other, self, "DIA_Angar_DI_ORKS_15_01"); //Sto facendo del mio meglio.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_02"); //Non Ë abbastanza.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_04_02"); //Non √® abbastanza.
 
 	Info_ClearChoices	(DIA_Angar_DI_ORKS);
 	Info_AddChoice	(DIA_Angar_DI_ORKS, "Rilassati.", DIA_Angar_DI_ORKS_no );
@@ -95,7 +95,7 @@ func void DIA_Angar_DI_ORKS_Info ()
 func void DIA_Angar_DI_ORKS_follow ()
 {
 	AI_Output			(other, self, "DIA_Angar_DI_ORKS_follow_15_00"); //Allora aiutami e smettila di lamentarti.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //Lo farÚ. Vai avanti tu. Muoviti.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_follow_04_01"); //Lo far√≤. Vai avanti tu. Muoviti.
 	AI_StopProcessInfos (self); 
 	B_GivePlayerXP (XP_Ambient);
 	Npc_ExchangeRoutine	(self,"FollowDI");
@@ -105,7 +105,7 @@ func void DIA_Angar_DI_ORKS_follow ()
 func void DIA_Angar_DI_ORKS_no ()
 {
 	AI_Output			(other, self, "DIA_Angar_DI_ORKS_no_15_00"); //Rilassati.
-	AI_Output			(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //» facile da dire per te. Io sto per impazzire qui.
+	AI_Output			(self, other, "DIA_Angar_DI_ORKS_no_04_01"); //√à facile da dire per te. Io sto per impazzire qui.
 	AI_StopProcessInfos (self); 
 };
 
@@ -138,7 +138,7 @@ func void DIA_Angar_DI_FOLLOW_Info ()
 
 	if (Npc_GetDistToWP(self,"SKELETTE")<4000) 
 		{
-			AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //DovrÚ occuparmi di tutto il resto da solo.
+			AI_Output			(other, self, "DIA_Angar_DI_FOLLOW_15_01"); //Dovr√≤ occuparmi di tutto il resto da solo.
 			AI_Output			(self ,other, "DIA_Angar_DI_FOLLOW_04_02"); //Buona fortuna.
 			
 			AI_StopProcessInfos (self); 
@@ -252,7 +252,7 @@ instance DIA_Angar_DI_UNDEADDRGDEAD		(C_INFO)
 	condition	 = 	DIA_Angar_DI_UNDEADDRGDEAD_Condition;
 	information	 = 	DIA_Angar_DI_UNDEADDRGDEAD_Info;
 	
-	description	 = 	"Ce líhai fatta.";
+	description	 = 	"Ce l‚Äôhai fatta.";
 
 };
 
@@ -266,19 +266,19 @@ func int DIA_Angar_DI_UNDEADDRGDEAD_Condition ()
 
 func void DIA_Angar_DI_UNDEADDRGDEAD_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //Ce líhai fatta.
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_00"); //Ce l‚Äôhai fatta.
 	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_01"); //Riusciremo a uscire di qui?
-	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //SÏ. Il nemico Ë stato sconfitto.
+	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_02"); //S√¨. Il nemico √® stato sconfitto.
 	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_03"); //Allora non perdiamo altro tempo. Vai dal capitano e digli di levare l'ancora.
 
 	if (SC_KnowsMadPsi == TRUE)
 	{
 		AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_04"); //Spero che non ci siano altri membri traditori della setta come te.
-		AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Tutto Ë possibile. I Cercatori erano comunque molto meticolosi. Persino io mi ero quasi fatto controllare da loro. Chi lo sa?
+		AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_05"); //Tutto √® possibile. I Cercatori erano comunque molto meticolosi. Persino io mi ero quasi fatto controllare da loro. Chi lo sa?
 	};
 
 	AI_Output			(other, self, "DIA_Angar_DI_UNDEADDRGDEAD_15_06"); //Cosa farai ora?
-	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Forse mi ritirerÚ in campagna e diventerÚ un contadino. Sono stufo di combattere.
+	AI_Output			(self, other, "DIA_Angar_DI_UNDEADDRGDEAD_04_07"); //Forse mi ritirer√≤ in campagna e diventer√≤ un contadino. Sono stufo di combattere.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

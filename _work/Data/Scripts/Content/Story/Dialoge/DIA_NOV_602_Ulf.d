@@ -53,7 +53,7 @@ func void DIA_Ulf_Hallo_Info ()
 	else
 	{
 		AI_Output (self, other, "DIA_Ulf_Hallo_03_02"); //Sono un novizio del monastero. Vado in giro a fare commissioni per conto dei maghi e dei paladini.
-		AI_Output (self, other, "DIA_Ulf_Hallo_03_03"); //Ho consegnato ai tre locandieri della citt‡ il vino del monastero.
+		AI_Output (self, other, "DIA_Ulf_Hallo_03_03"); //Ho consegnato ai tre locandieri della citt√† il vino del monastero.
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
@@ -81,8 +81,8 @@ func int DIA_Ulf_Wirte_Condition ()
 func void DIA_Ulf_Wirte_Info ()
 {
 	AI_Output (other, self, "DIA_Ulf_Wirte_15_00"); //Chi sono i tre locandieri?
-	AI_Output (self, other, "DIA_Ulf_Wirte_03_01"); //Uno di loro Ë quella brava persona dietro il bancone.
-	AI_Output (self, other, "DIA_Ulf_Wirte_03_02"); //Poi c'Ë Caragon, la cui taverna si trova nella piazza del tempio, e Kardif, il proprietario della taverna nel distretto del porto.
+	AI_Output (self, other, "DIA_Ulf_Wirte_03_01"); //Uno di loro √® quella brava persona dietro il bancone.
+	AI_Output (self, other, "DIA_Ulf_Wirte_03_02"); //Poi c'√® Caragon, la cui taverna si trova nella piazza del tempio, e Kardif, il proprietario della taverna nel distretto del porto.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Kloster
@@ -139,10 +139,10 @@ func void DIA_Ulf_Bringen_Info ()
 {
 	AI_Output (other, self, "DIA_Ulf_Bringen_15_00"); //Conducimi al monastero.
 	AI_Output (self, other, "DIA_Ulf_Bringen_03_01"); //Scordatelo. Sai quante creature ho dovuto evitare lungo la strada?
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_02"); //Quando ripenso a quelle sanguimosche, lupi e goblin, sono felice di non dovermene pi˘ andare di qui.
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_02"); //Quando ripenso a quelle sanguimosche, lupi e goblin, sono felice di non dovermene pi√π andare di qui.
 	AI_Output (self, other, "DIA_Ulf_Bringen_03_03"); //Inoltre, non potresti comunque entrare nel monastero.
-	AI_Output (other, self, "DIA_Ulf_Bringen_15_04"); //PerchÈ?
-	AI_Output (self, other, "DIA_Ulf_Bringen_03_05"); //L'ingresso Ë consentito solo ai maghi, ai novizi e ai paladini.
+	AI_Output (other, self, "DIA_Ulf_Bringen_15_04"); //Perch√©?
+	AI_Output (self, other, "DIA_Ulf_Bringen_03_05"); //L'ingresso √® consentito solo ai maghi, ai novizi e ai paladini.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Kloster
@@ -187,7 +187,7 @@ instance DIA_Ulf_Gold		(C_INFO)
 	condition	 = 	DIA_Ulf_Gold_Condition;
 	information	 = 	DIA_Ulf_Gold_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Come faccio a procurarmi tutto quellíoro?";
+	description	 = 	"Come faccio a procurarmi tutto quell‚Äôoro?";
 };
 
 func int DIA_Ulf_Gold_Condition ()
@@ -200,7 +200,7 @@ func int DIA_Ulf_Gold_Condition ()
 };
 func void DIA_Ulf_Gold_Info ()
 {
-	AI_Output (other, self, "DIA_Ulf_Gold_15_00"); //Come faccio a procurarmi tutto quellíoro?
+	AI_Output (other, self, "DIA_Ulf_Gold_15_00"); //Come faccio a procurarmi tutto quell‚Äôoro?
 	AI_Output (self, other, "DIA_Ulf_Gold_03_01"); //Dal momento che tu ovviamente non conosci nessuno in grado di pagare quella somma per te, dovrai andare a lavorare.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -254,13 +254,13 @@ func int DIA_Ulf_Suche_Condition ()
 };
 func void DIA_Ulf_Suche_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Suche_03_00"); //Ehi, sai cos'Ë successo?
+	AI_Output (self, other, "DIA_Ulf_Suche_03_00"); //Ehi, sai cos'√® successo?
 	AI_Output (other, self, "DIA_Ulf_Suche_15_01"); //Sei stato prescelto.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_02"); //Esatto. Proprio mentre stavo per farmi una birra Ë venuto Daron e mi ha detto che ero stato scelto.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_03"); //Chi l'avrebbe mai detto? La volont‡ di Innos Ë impenetrabile. E qual buon vento ti porta qui?
+	AI_Output (self, other, "DIA_Ulf_Suche_03_02"); //Esatto. Proprio mentre stavo per farmi una birra √® venuto Daron e mi ha detto che ero stato scelto.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_03"); //Chi l'avrebbe mai detto? La volont√† di Innos √® impenetrabile. E qual buon vento ti porta qui?
 	AI_Output (other, self, "DIA_Ulf_Suche_15_04"); //Ho chiesto di sottopormi alla Prova del Fuoco.
-	AI_Output (self, other, "DIA_Ulf_Suche_03_05"); //Non Ë possibile! Ragazzo, tu sei molto coraggioso. Questo significa che cercherai anche 'quel qualcosa che il credente trova oltre il cammino'?
-	AI_Output (other, self, "DIA_Ulf_Suche_15_06"); //Credo di sÏ.
+	AI_Output (self, other, "DIA_Ulf_Suche_03_05"); //Non √® possibile! Ragazzo, tu sei molto coraggioso. Questo significa che cercherai anche 'quel qualcosa che il credente trova oltre il cammino'?
+	AI_Output (other, self, "DIA_Ulf_Suche_15_06"); //Credo di s√¨.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Rausgefunden
@@ -288,7 +288,7 @@ func void DIA_Ulf_Rausgefunden_Info ()
 	AI_Output (other, self, "DIA_Ulf_Rausgefunden_15_00"); //Hai scoperto qualcosa?
 	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_01"); //Beh, stavo seguendo Agon, ma poi l'ho perso di vista.
 	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_02"); //E ora... cosa diranno? Segui i segni di Innos. Ma io non capisco quella parte sul cammino...
-	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_03"); //E con ciÚ? ContinuerÚ a cercare.
+	AI_Output (self, other, "DIA_Ulf_Rausgefunden_03_03"); //E con ci√≤? Continuer√≤ a cercare.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "FOLLOW");
@@ -346,7 +346,7 @@ func int DIA_Ulf_Stop_Condition ()
 func void DIA_Ulf_Stop_Info ()
 {
 	AI_Output (other, self, "DIA_Ulf_Stop_15_00"); //Smettila di seguirmi!
-	AI_Output (self, other, "DIA_Ulf_Stop_03_01"); //Non ti sto seguendo. Ma se Ë questo ciÚ che pensi allora seguirÚ una strada diversa.
+	AI_Output (self, other, "DIA_Ulf_Stop_03_01"); //Non ti sto seguendo. Ma se √® questo ci√≤ che pensi allora seguir√≤ una strada diversa.
 	
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine (self, "SUCHE");
@@ -374,10 +374,10 @@ func int DIA_Ulf_Abrechnung_Condition ()
 };
 func void DIA_Ulf_Abrechnung_Info ()
 {
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_00"); //E cosÏ ci incontriamo di nuovo? Stavo riflettendo sul fatto che il desiderio di diventare un mago Ë forte in me.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_00"); //E cos√¨ ci incontriamo di nuovo? Stavo riflettendo sul fatto che il desiderio di diventare un mago √® forte in me.
 	AI_Output (other, self, "DIA_Ulf_Abrechnung_15_01"); //Oh, cielo... Non farlo...
 	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_02"); //Non ho altra scelta. La vita da novizio non fa per me.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_03"); //Devo diventare un mago, dopodichÈ ogni cosa andr‡ per il verso giusto. E ora prenderÚ quello che mi spetta.
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_03"); //Devo diventare un mago, dopodich√© ogni cosa andr√† per il verso giusto. E ora prender√≤ quello che mi spetta.
 	AI_Output (self, other, "DIA_Ulf_Abrechnung_03_04"); //Qualche ultima parola, prima di morire?
 	
 	Info_ClearChoices (DIA_Ulf_Abrechnung);
@@ -388,7 +388,7 @@ func void DIA_Ulf_Abrechnung_Info ()
 FUNC VOID DIA_Ulf_Abrechnung_Lass()
 {
 	AI_Output (other, self, "DIA_Ulf_Abrechnung_Lass_15_00"); //Piantala! Non ho intenzione di ucciderti.
-	AI_Output (self, other, "DIA_Ulf_Abrechnung_Lass_03_01"); //Parole grosse. Ma sai bene che non hai alcuna possibilit‡ contro di me! Avanti!
+	AI_Output (self, other, "DIA_Ulf_Abrechnung_Lass_03_01"); //Parole grosse. Ma sai bene che non hai alcuna possibilit√† contro di me! Avanti!
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0);

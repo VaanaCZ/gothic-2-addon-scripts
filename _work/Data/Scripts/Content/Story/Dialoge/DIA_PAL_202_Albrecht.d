@@ -43,8 +43,8 @@ func int DIA_Albrecht_Hagen_Condition ()
 func void DIA_Albrecht_Hagen_Info ()
 {
 	AI_Output (other, self, "DIA_Albrecht_Hagen_15_00"); //Devo parlare con Lord Hagen!
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //» nel salone, dritto da questa parte.
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Qualsiasi cosa tu voglia da lui, fai in fretta, Ë un uomo molto impegnato!
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //√à nel salone, dritto da questa parte.
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Qualsiasi cosa tu voglia da lui, fai in fretta, √® un uomo molto impegnato!
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -66,8 +66,8 @@ func int DIA_Albrecht_Hallo_Condition ()
 func void DIA_Albrecht_Hallo_Info ()
 {
 	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //Cosa significa essere un paladino?
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //Un paladino Ë un guerriero di Innos. Vive per servirlo e combatte per onorarlo.
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //In cambio ci Ë concesso il dono della magia. La magia delle rune, le quali ci vengono offerte come ricompensa per le nostre gesta.
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //Un paladino √® un guerriero di Innos. Vive per servirlo e combatte per onorarlo.
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //In cambio ci √® concesso il dono della magia. La magia delle rune, le quali ci vengono offerte come ricompensa per le nostre gesta.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -95,10 +95,10 @@ func void DIA_Albrecht_CanTeach_Info ()
 	
 	if (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Se ti dimostrerai degno ti conferirÚ le magiche rune dei paladini.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Se ti dimostrerai degno ti conferir√≤ le magiche rune dei paladini.
 		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //Oltre a questo, posso insegnarti ad aumentare il tuo potere magico.
 		Albrecht_TeachMANA = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Il paladino Albrecht puÚ aiutarmi a incrementare i miei poteri magici.");
+		B_LogEntry (TOPIC_CityTeacher,"Il paladino Albrecht pu√≤ aiutarmi a incrementare i miei poteri magici.");
 	}
 	else
 	{	
@@ -132,7 +132,7 @@ func void DIA_Albrecht_TEACHPalRunes_Info ()
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
 		
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Come segno del tuo rango, ti concedo la Runa della Luce. » un simbolo di verit‡ e giustizia.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Come segno del tuo rango, ti concedo la Runa della Luce. √à un simbolo di verit√† e giustizia.
 		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_02"); //Illumina la via per tutti coloro che percorrono la via di Innos.
 		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //Dovrai guadagnarti le altre rune. Torna quando penserai di esserti dimostrato degno.
 	

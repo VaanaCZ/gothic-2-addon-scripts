@@ -46,17 +46,17 @@ func void DIA_Valentino_HALLO_Info ()
 	if (hero.guild == GIL_KDF)
 	|| (hero.guild == GIL_PAL)
 	{
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_01"); //Il mio nome è Valentino. Sto cercando di non profanare con il lavoro questa giornata che Innos mi ha dato.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_01"); //Il mio nome Ã¨ Valentino. Sto cercando di non profanare con il lavoro questa giornata che Innos mi ha dato.
 		AI_Output			(other, self, "DIA_Valentino_HALLO_15_02"); //Attento a quello che dici.
 		AI_Output			(self, other, "DIA_Valentino_HALLO_03_03"); //Oh, perdonami, non volevo offendere il nostro Signore. Perdonami, sire.
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_04"); //Non conosci le buone maniere? È disgustoso!
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_04"); //Non conosci le buone maniere? Ãˆ disgustoso!
 		AI_Output			(self, other, "DIA_Valentino_HALLO_03_05"); //Sempre questa sporca canaglia. Non dovresti essere al lavoro?
 		AI_Output			(self, other, "DIA_Valentino_HALLO_03_06"); //D'altronde immagino che nessuno sentirebbe la mancanza di un rifiuto umano come te, eh?
-		AI_Output			(self, other, "DIA_Valentino_HALLO_03_07"); //Se avessi tanto oro come me, non dovresti lavorare. Ma non sarai mai così ricco.
-		AI_Output			(other, self, "DIA_Valentino_HALLO_15_08"); //Credo che mi divertirò molto con te.
+		AI_Output			(self, other, "DIA_Valentino_HALLO_03_07"); //Se avessi tanto oro come me, non dovresti lavorare. Ma non sarai mai cosÃ¬ ricco.
+		AI_Output			(other, self, "DIA_Valentino_HALLO_15_08"); //Credo che mi divertirÃ² molto con te.
 	};
 };
 
@@ -104,7 +104,7 @@ instance DIA_Valentino_Manieren		(C_INFO)
 	condition	= DIA_Valentino_Manieren_Condition;
 	information	= DIA_Valentino_Manieren_Info;
 	permanent 	= FALSE;
-	description	= "Sembra proprio che dovrò insegnarti le buone maniere!";
+	description	= "Sembra proprio che dovrÃ² insegnarti le buone maniere!";
 };
 
 func int DIA_Valentino_Manieren_Condition ()
@@ -119,9 +119,9 @@ func int DIA_Valentino_Manieren_Condition ()
 
 func void DIA_Valentino_Manieren_Info ()
 {
-	AI_Output (other, self, "DIA_Valentino_Add_15_02"); //Sembra proprio che dovrò insegnarti le buone maniere!
-	//AI_Output			(other, self, "DIA_Valentino_HALLO_klappe_15_00"); //Für deine dünnen Ärmchen hast du 'ne ganz schön große Klappe!
-	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //Non è affar mio! Picchiami quanto vuoi, quando mi alzerò domani, starò di nuovo bene.
+	AI_Output (other, self, "DIA_Valentino_Add_15_02"); //Sembra proprio che dovrÃ² insegnarti le buone maniere!
+	//AI_Output			(other, self, "DIA_Valentino_HALLO_klappe_15_00"); //FÃ¼r deine dÃ¼nnen Ã„rmchen hast du 'ne ganz schÃ¶n groÃŸe Klappe!
+	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_01"); //Non Ã¨ affar mio! Picchiami quanto vuoi, quando mi alzerÃ² domani, starÃ² di nuovo bene.
 	AI_Output			(self, other, "DIA_Valentino_HALLO_klappe_03_02"); //Ma tu dovrai andare in giro con quella faccia da imbecille per tutta la vita.
 };
 
@@ -140,7 +140,7 @@ instance DIA_Valentino_WASNUETZLICHES		(C_INFO)
 	condition	= DIA_Valentino_WASNUETZLICHES_Condition;
 	information	= DIA_Valentino_WASNUETZLICHES_Info;
 	permanent	= TRUE;
-	description	= "C’è qualcos’altro che devi dirmi?";
+	description	= "Câ€™Ã¨ qualcosâ€™altro che devi dirmi?";
 };
 
 func int DIA_Valentino_WASNUETZLICHES_Condition ()
@@ -154,7 +154,7 @@ func int DIA_Valentino_WASNUETZLICHES_Condition ()
 func void DIA_Valentino_WASNUETZLICHES_Info ()
 {
 	AI_Output (other, self, "DIA_Valentino_Add_15_03"); //(con calma) Hai qualcos'altro da dirmi?
-	//AI_Output			(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); //Kannst du mir was Nützliches über die Stadt erzählen?
+	//AI_Output			(other, self, "DIA_Valentino_WASNUETZLICHES_15_00"); //Kannst du mir was NÃ¼tzliches Ã¼ber die Stadt erzÃ¤hlen?
 	
 	if (self.aivar[AIV_DefeatedByPlayer] == TRUE)
 	{
@@ -171,13 +171,13 @@ func void DIA_Valentino_WASNUETZLICHES_Info ()
 	else if (Valentino_Hi_Perm == FALSE)
 	&& ( (other.guild == GIL_PAL) || (other.guild == GIL_KDF) )
 	{
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_03"); //Per un uomo nella tua posizione, tutto è possibile. Devi solo semplicemente riconoscere il momento adatto per agire.
-		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_04"); //Perciò, non perdere altro tempo e agisci.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_03"); //Per un uomo nella tua posizione, tutto Ã¨ possibile. Devi solo semplicemente riconoscere il momento adatto per agire.
+		AI_Output (self, other, "DIA_Valentino_WASNUETZLICHES_03_04"); //PerciÃ², non perdere altro tempo e agisci.
 		Valentino_Hi_Perm = TRUE;
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Valentino_WASNUETZLICHES_03_05"); //Ti ho detto tutto ciò di che volevi sapere, il resto spetta a te.
+		AI_Output (self ,other,"DIA_Valentino_WASNUETZLICHES_03_05"); //Ti ho detto tutto ciÃ² di che volevi sapere, il resto spetta a te.
 	};
 };
 

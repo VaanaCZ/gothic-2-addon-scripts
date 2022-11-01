@@ -44,7 +44,7 @@ func void DIA_Addon_Cronos_Hallo_Info ()
 	AI_Output	(other, self, "DIA_Addon_Cronos_Hallo_15_00"); //Posso seccarti per un momento?
 	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_01"); //(sorpreso) Sei TU. Non avrei mai pensato di rivedere la tua faccia.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_02"); //Hai un bel coraggio a venire qui. Un tempo ti avrei spellato vivo.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Buon per te che è successo qualche settimana fa e che ho avuto il tempo di calmarmi.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Hallo_04_03"); //Buon per te che Ã¨ successo qualche settimana fa e che ho avuto il tempo di calmarmi.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -71,10 +71,10 @@ func int DIA_Addon_Cronos_WasMachstdu_Condition ()
 func void DIA_Addon_Cronos_WasMachstdu_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Cronos_WasMachstdu_15_00"); //Cosa ci fai qui?
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //(confuso) Il mio compito è di saperne di più sui guardiani del tempio.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //È una brutta faccenda, lasciatelo dire. Queste sentinelle di pietra hanno caratteristiche che mi sono del tutto sconosciute.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //Un attimo prima se ne stanno lì senza vita e un momento dopo ti attaccano come fossero possedute da un demone.
-	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Non sono ancora riuscito a capire che cosa le muova, ma una cosa è sicura: ha origini nella magia.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_01"); //(confuso) Il mio compito Ã¨ di saperne di piÃ¹ sui guardiani del tempio.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_02"); //Ãˆ una brutta faccenda, lasciatelo dire. Queste sentinelle di pietra hanno caratteristiche che mi sono del tutto sconosciute.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_03"); //Un attimo prima se ne stanno lÃ¬ senza vita e un momento dopo ti attaccano come fossero possedute da un demone.
+	AI_Output	(self, other, "DIA_Addon_Cronos_WasMachstdu_04_04"); //Non sono ancora riuscito a capire che cosa le muova, ma una cosa Ã¨ sicura: ha origini nella magia.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Waechter
@@ -86,7 +86,7 @@ instance DIA_Addon_Cronos_Waechter		(C_INFO)
 	condition	 = 	DIA_Addon_Cronos_Waechter_Condition;
 	information	 = 	DIA_Addon_Cronos_Waechter_Info;
 
-	description	 = 	"Dimmi qualcosa di più su queste sentinelle di pietra.";
+	description	 = 	"Dimmi qualcosa di piÃ¹ su queste sentinelle di pietra.";
 };
 
 func int DIA_Addon_Cronos_Waechter_Condition ()
@@ -99,8 +99,8 @@ func int DIA_Addon_Cronos_Waechter_Condition ()
 
 func void DIA_Addon_Cronos_Waechter_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Dimmi qualcosa di più su queste sentinelle di pietra.
-	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //(confuso) Non posso dirti molto fino ad ora. Purtroppo abbiamo dovuto distruggerle. Ora non sono più un pericolo.
+	AI_Output	(other, self, "DIA_Addon_Cronos_Waechter_15_00"); //Dimmi qualcosa di piÃ¹ su queste sentinelle di pietra.
+	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_01"); //(confuso) Non posso dirti molto fino ad ora. Purtroppo abbiamo dovuto distruggerle. Ora non sono piÃ¹ un pericolo.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_02"); //Quando siamo arrivati ci hanno attaccati.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_03"); //Siamo riusciti a sconfiggerle solo combinando i nostri poteri e temo che dietro al portale ce ne siano altre ad aspettarci.
 	AI_Output	(self, other, "DIA_Addon_Cronos_Waechter_04_04"); //Ci dev'essere un modo per annientare la forza che li anima, in modo tale che non siano altro che statue.
@@ -137,7 +137,7 @@ func void DIA_Addon_Cronos_NW_Trade_Info ()
 
 	if (DIA_Addon_Cronos_NW_Trade_OneTime==FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //Perché no? Se ricordo bene, abbiamo già fatto affari insieme.
+		AI_Output	(self, other, "DIA_Addon_Cronos_NW_Trade_04_01"); //PerchÃ© no? Se ricordo bene, abbiamo giÃ  fatto affari insieme.
 		
 		DIA_Addon_Cronos_NW_Trade_OneTime = TRUE;
 	};

@@ -21,7 +21,7 @@ FUNC VOID DIA_Angar_NW_KAP5_EXIT_Info()
 };
 
 // ************************************************************
-// 	  	  Ich habe alle Drachen getötet. (Perm Kap 5)
+// 	  	  Ich habe alle Drachen getÃ¶tet. (Perm Kap 5)
 // ************************************************************
 
 INSTANCE DIA_Angar_NW_AllDragonsDead(C_INFO)
@@ -40,10 +40,10 @@ FUNC INT DIA_Angar_NW_AllDragonsDead_Condition()
 FUNC VOID DIA_Angar_NW_AllDragonsDead_Info()
 {	
 	AI_Output (other,self ,"DIA_Angar_NW_AllDragonsDead_15_00"); //Come va?
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Abbastanza bene. Ma ho ancora questo maledetto mal di testa, anche se la situazione è migliorata da quando non sono più nella Valle delle Miniere.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_01"); //Abbastanza bene. Ma ho ancora questo maledetto mal di testa, anche se la situazione Ã¨ migliorata da quando non sono piÃ¹ nella Valle delle Miniere.
 	if (Angar_IsOnBoard != LOG_SUCCESS) 
 	{
-	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //Resterò qui così saprai dove trovarmi nel caso in cui avessi bisogno di me.
+	AI_Output (self ,other,"DIA_Angar_NW_AllDragonsDead_04_02"); //ResterÃ² qui cosÃ¬ saprai dove trovarmi nel caso in cui avessi bisogno di me.
 	};
 };
 
@@ -57,7 +57,7 @@ instance DIA_Angar_NW_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Angar_NW_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Angar_NW_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Me ne andrò da Khorinis. Vuoi venire con me?";
+	description	 = 	"Me ne andrÃ² da Khorinis. Vuoi venire con me?";
 };
 func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 {	
@@ -70,29 +70,29 @@ func int DIA_Angar_NW_KnowWhereEnemy_Condition ()
 };
 func void DIA_Angar_NW_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Me ne andrò da Khorinis. Vuoi venire con me?
-	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //Più mi allontano dalla Valle delle Miniere e meglio è. Quando partiamo?
+	AI_Output			(other, self, "DIA_Angar_NW_KnowWhereEnemy_15_00"); //Me ne andrÃ² da Khorinis. Vuoi venire con me?
+	AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_01"); //PiÃ¹ mi allontano dalla Valle delle Miniere e meglio Ã¨. Quando partiamo?
 		
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);                                                                                        	
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 	                                                                                  	
-	B_LogEntry (TOPIC_Crew,"Angar è grato per ogni miglio che riuscirà a frapporre tra sé e le miniere. Si è offerto di accompagnarmi nel mio viaggio.");  
+	B_LogEntry (TOPIC_Crew,"Angar Ã¨ grato per ogni miglio che riuscirÃ  a frapporre tra sÃ© e le miniere. Si Ã¨ offerto di accompagnarmi nel mio viaggio.");  
 	
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Subito. Ho abbastanza uomini per governare la nave. Forse tornerò a prenderti più tardi.
+		AI_Output			(other,self , "DIA_Angar_NW_KnowWhereEnemy_15_02"); //Subito. Ho abbastanza uomini per governare la nave. Forse tornerÃ² a prenderti piÃ¹ tardi.
 		AI_Output			(self, other, "DIA_Angar_NW_KnowWhereEnemy_04_03"); //Va bene. Mi troverai qui se avrai bisogno di me.
 	}
 	else 
 	{
 		Info_ClearChoices (DIA_Angar_NW_KnowWhereEnemy);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Ti farò sapere quando è il momento di andare.",DIA_Angar_NW_KnowWhereEnemy_No);
-		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Vai al porto, allora. Ti raggiungerò lì più tardi.",DIA_Angar_NW_KnowWhereEnemy_Yes);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Ti farÃ² sapere quando Ã¨ il momento di andare.",DIA_Angar_NW_KnowWhereEnemy_No);
+		Info_AddChoice (DIA_Angar_NW_KnowWhereEnemy,"Vai al porto, allora. Ti raggiungerÃ² lÃ¬ piÃ¹ tardi.",DIA_Angar_NW_KnowWhereEnemy_Yes);
 	};
 };
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Vai al porto, allora. Ti raggiungerò lì più tardi.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_Yes_15_00"); //Vai al porto, allora. Ti raggiungerÃ² lÃ¬ piÃ¹ tardi.
 	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_Yes_04_01"); //Vado.
 	 
                                                                                                                                                   
@@ -116,7 +116,7 @@ FUNC VOID DIA_Angar_NW_KnowWhereEnemy_Yes ()
 
 FUNC VOID DIA_Angar_NW_KnowWhereEnemy_No ()
 {
-	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //Ti farò sapere quando è il momento di andare.
+	AI_Output (other,self ,"DIA_Angar_NW_KnowWhereEnemy_No_15_00"); //Ti farÃ² sapere quando Ã¨ il momento di andare.
 	AI_Output (self ,other,"DIA_Angar_NW_KnowWhereEnemy_No_04_01"); //Bene.
 
 	Angar_IsOnBoard	 = LOG_OBSOLETE;
@@ -146,7 +146,7 @@ func int DIA_Angar_NW_LeaveMyShip_Condition ()
 func void DIA_Angar_NW_LeaveMyShip_Info ()
 {
 	AI_Output			(other, self, "DIA_Angar_NW_LeaveMyShip_15_00"); //Rimani qui e tieni a bada il tuo dolore.
-	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //D'accordo. Tornerò indietro. Forse è meglio così.
+	AI_Output			(self, other, "DIA_Angar_NW_LeaveMyShip_04_01"); //D'accordo. TornerÃ² indietro. Forse Ã¨ meglio cosÃ¬.
 	
 	Angar_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -155,7 +155,7 @@ func void DIA_Angar_NW_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Angar_NW_StillNeedYou		(C_INFO)
 {
@@ -180,7 +180,7 @@ func int DIA_Angar_NW_StillNeedYou_Condition ()
 func void DIA_Angar_NW_StillNeedYou_Info ()
 {
 	AI_Output	(other, self, "DIA_Angar_NW_StillNeedYou_15_00"); //Torna a bordo.
-	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Tu sei peggio di me. Un po' più di risolutezza ti farebbe bene. Ci vediamo dopo.
+	AI_Output	(self, other, "DIA_Angar_NW_StillNeedYou_04_01"); //Tu sei peggio di me. Un po' piÃ¹ di risolutezza ti farebbe bene. Ci vediamo dopo.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Angar_IsOnBoard	 = LOG_SUCCESS;

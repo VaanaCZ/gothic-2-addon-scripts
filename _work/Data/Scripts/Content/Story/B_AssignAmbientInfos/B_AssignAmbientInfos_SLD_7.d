@@ -66,7 +66,7 @@ INSTANCE DIA_SLD_7_PEOPLE(C_INFO)
 	condition	= DIA_SLD_7_PEOPLE_Condition;
 	information	= DIA_SLD_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT DIA_SLD_7_PEOPLE_Condition()
@@ -76,11 +76,11 @@ FUNC INT DIA_SLD_7_PEOPLE_Condition()
 
 FUNC VOID DIA_SLD_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Chi Ë il capo, qui?
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee Ë il nostro capo e Torlof Ë il suo braccio destro. La maggior parte degli uomini lo segue perchÈ egli era il loro capo ai tempi della colonia.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //E poi c'Ë Silvio. Egli Ë giunto dalle montagne con i suoi uomini dopo l'arrivo di Lee.
+	AI_Output (other, self, "DIA_SLD_7_PEOPLE_15_00"); //Chi √® il capo, qui?
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_01"); //Lee √® il nostro capo e Torlof √® il suo braccio destro. La maggior parte degli uomini lo segue perch√© egli era il loro capo ai tempi della colonia.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_02"); //E poi c'√® Silvio. Egli √® giunto dalle montagne con i suoi uomini dopo l'arrivo di Lee.
 	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_03"); //Lui e i suoi uomini sono solo una piccola parte dei mercenari, ma causano parecchi guai. Quei ragazzi seguono delle regole tutte loro.
-	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //E Silvio Ë uno sporco figlio di buona donna, per cui stai attento quando avrai a che fare con lui.
+	AI_Output (self, other, "DIA_SLD_7_PEOPLE_07_04"); //E Silvio √® uno sporco figlio di buona donna, per cui stai attento quando avrai a che fare con lui.
 };
 
 // *************************************************************************
@@ -103,11 +103,11 @@ FUNC INT DIA_SLD_7_LOCATION_Condition()
 FUNC VOID DIA_SLD_7_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_SLD_7_LOCATION_15_00"); //Parlami della fattoria.
-	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Onar ci ha assoldati per difendere le sue propriet‡.
+	AI_Output (self, other, "DIA_SLD_7_LOCATION_07_01"); //Onar ci ha assoldati per difendere le sue propriet√†.
 	if (other.guild != GIL_SLD)
 	&& (other.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //PerciÚ togliti dalla testa di rubare qualcosa o di attaccare i contadini, altrimenti dovrai vedertela con noi, capito?
+		AI_Output (self, other, "DIA_SLD_7_LOCATION_07_02"); //Perci√≤ togliti dalla testa di rubare qualcosa o di attaccare i contadini, altrimenti dovrai vedertela con noi, capito?
 	};
 };
 
@@ -120,7 +120,7 @@ INSTANCE DIA_SLD_7_STANDARD(C_INFO)
 	condition	= DIA_SLD_7_STANDARD_Condition;
 	information	= DIA_SLD_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_SLD_7_STANDARD_Condition()
 {
@@ -128,7 +128,7 @@ func INT DIA_SLD_7_STANDARD_Condition()
 };
 FUNC VOID DIA_SLD_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_SLD_7_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_SLD_7_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel <= 2)
 	{
@@ -136,11 +136,11 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 		{
 			if (other.guild == GIL_SLD)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_01"); //Da quando ti sei unito a noi, non ci sono stati problemi alla fattoria, niente pi˘ guardie cittadine.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_01"); //Da quando ti sei unito a noi, non ci sono stati problemi alla fattoria, niente pi√π guardie cittadine.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_02"); //Qui da noi non succede molto. Prova a chiedere in citt‡. Credo che siano a corto di cibo. (ride)
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_02"); //Qui da noi non succede molto. Prova a chiedere in citt√†. Credo che siano a corto di cibo. (ride)
 			};
 		}
 		else
@@ -148,11 +148,11 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (other.guild == GIL_SLD)
 			{
 				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_03"); //Draghi nella Valle delle Miniere! Non vorrei essere nei panni dei paladini in questo momento.
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //Credo che il re prender‡ a calci nel sedere Lord Hagen quando torner‡ da lui a mani vuote a causa dei draghi.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_04"); //Credo che il re prender√† a calci nel sedere Lord Hagen quando torner√† da lui a mani vuote a causa dei draghi.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //I tuoi paladini non possono occuparsi dei draghi? Dopo tutto, combattere Ë un lavoro per veri uomini.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_05"); //I tuoi paladini non possono occuparsi dei draghi? Dopo tutto, combattere √® un lavoro per veri uomini.
 			};
 		};	
 	};
@@ -164,12 +164,12 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //Hai fatto un ottimo lavoro con Bennet. Silvio sta bollendo di rabbia. Lui avrebbe preferito mettere a soqquadro la citt‡ e fare a pezzi ogni cosa.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_06"); //Hai fatto un ottimo lavoro con Bennet. Silvio sta bollendo di rabbia. Lui avrebbe preferito mettere a soqquadro la citt√† e fare a pezzi ogni cosa.
 				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_07"); //Cerca sempre di costringere Lee sulla difensiva, e Bennet gli aveva offerto un'occasione perfetta.
 			}
 			else
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Non so perchÈ hai aiutato Bennet, ma credimi, Ë stato meglio per la citt‡.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_08"); //Non so perch√© hai aiutato Bennet, ma credimi, √® stato meglio per la citt√†.
 			};
 		}
 		else
@@ -177,7 +177,7 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 			if (hero.guild == GIL_SLD)
 			|| (hero.guild == GIL_DJG)
 			{
-				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //La faccenda di Bennet Ë davvero un brutto affare. Forse dopo tutto dovremmo prestare ascolto a Silvio e attaccare la citt‡.
+				AI_Output (self,other,"DIA_SLD_7_STANDARD_07_09"); //La faccenda di Bennet √® davvero un brutto affare. Forse dopo tutto dovremmo prestare ascolto a Silvio e attaccare la citt√†.
 			}
 			else
 			{
@@ -195,14 +195,14 @@ FUNC VOID DIA_SLD_7_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //» stato molto coraggioso da parte tua venire qui tutto solo.
-			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Ma non mi interessa, finchÈ non cercherai di riscuotere delle tasse.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_13"); //√à stato molto coraggioso da parte tua venire qui tutto solo.
+			AI_Output (self,other,"DIA_SLD_7_STANDARD_07_14"); //Ma non mi interessa, finch√© non cercherai di riscuotere delle tasse.
 		};
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Non ce la faccio pi˘ a restare in questo posto. Ci sono solo pecore, pascoli e alberi. Voglio andarmene di qui.
+		AI_Output (self,other,"DIA_SLD_7_STANDARD_07_15"); //Non ce la faccio pi√π a restare in questo posto. Ci sono solo pecore, pascoli e alberi. Voglio andarmene di qui.
 	};
 };
 

@@ -62,20 +62,20 @@ func void DIA_Morgahard_HALLO_Info ()
 func void DIA_Morgahard_HALLO_tot ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_tot_15_00"); //Il giudice mi ha ordinato di ucciderti.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_tot_07_01"); //Sì, certo. Sei qui per questo, non è così?
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_tot_07_01"); //SÃ¬, certo. Sei qui per questo, non Ã¨ cosÃ¬?
 
 };
 
 func void DIA_Morgahard_HALLO_richter ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_00"); //Cosa possiamo fare contro il giudice?
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_01"); //Assolutamente niente. Egli se ne sta seduto nella parte alta della città, intoccabile come un ragno sulla sua ragnatela.
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_02"); //Io non direi così. Abbiamo solo bisogno di prove della sua colpevolezza nella faccenda del governatore.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_01"); //Assolutamente niente. Egli se ne sta seduto nella parte alta della cittÃ , intoccabile come un ragno sulla sua ragnatela.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_02"); //Io non direi cosÃ¬. Abbiamo solo bisogno di prove della sua colpevolezza nella faccenda del governatore.
 	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_03"); //Hai detto prove? Le ho. Ma chi crederebbe a un criminale?
-	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_04"); //Dammi la tua parola e farò in modo che nessuno ti dia più la caccia.
+	AI_Output			(other, self, "DIA_Morgahard_HALLO_richter_15_04"); //Dammi la tua parola e farÃ² in modo che nessuno ti dia piÃ¹ la caccia.
 	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_05"); //Ne sei sicuro? Va bene. Tieni, prendi questa lettera. Porta la firma del giudice.
 	B_GiveInvItems 		(self, other, ItWr_RichterKomproBrief_MIS, 1);					
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_06"); //Anche se non estinguerà la mia colpa, dovrebbe essere sufficiente a confermare che egli era nostro complice.
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_richter_07_06"); //Anche se non estinguerÃ  la mia colpa, dovrebbe essere sufficiente a confermare che egli era nostro complice.
 	B_LogEntry (TOPIC_RichterLakai,"Morgahard mi ha consegnato l'incarico del giudice. Questo pezzo di carta prova senza alcun dubbio che il giudice ha derubato il Governatore Larius. Penso che questo sia proprio il tipo di prova che Lee voleva che trovassi."); 
 	AI_StopProcessInfos (self);
 };
@@ -83,7 +83,7 @@ var int MorgahardSucked;
 func void DIA_Morgahard_HALLO_attack ()
 {
 	AI_Output			(other, self, "DIA_Morgahard_HALLO_attack_15_00"); //Smettila di frignare ed estrai la tua arma. Metteremo fine a questa cosa adesso.
-	AI_Output			(self, other, "DIA_Morgahard_HALLO_attack_07_01"); //Per me va bene, tanto non ho più niente da perdere. Quel maiale di un giudice!
+	AI_Output			(self, other, "DIA_Morgahard_HALLO_attack_07_01"); //Per me va bene, tanto non ho piÃ¹ niente da perdere. Quel maiale di un giudice!
 	AI_StopProcessInfos (self);
 	MorgahardSucked = TRUE;
 	B_Attack (self, other, AR_SuddenEnemyInferno, 1);
@@ -116,7 +116,7 @@ func int DIA_Morgahard_Perm_Condition ()
 
 func void DIA_Morgahard_Perm_Info ()
 {
-	AI_Output			(self, other, "DIA_Morgahard_Perm_07_00"); //Lo vedrò pendere dalla forca un giorno.
+	AI_Output			(self, other, "DIA_Morgahard_Perm_07_00"); //Lo vedrÃ² pendere dalla forca un giorno.
 	AI_StopProcessInfos (self);
 };
 
@@ -144,7 +144,7 @@ func int DIA_Morgahard_Perm2_Condition ()
 };
 func void DIA_Morgahard_Perm2_Info ()
 {
-	AI_Output			(self, other, "DIA_Morgahard_Perm2_07_00"); //Perché non sparisci e basta?
+	AI_Output			(self, other, "DIA_Morgahard_Perm2_07_00"); //PerchÃ© non sparisci e basta?
 	AI_StopProcessInfos (self);
 };
 

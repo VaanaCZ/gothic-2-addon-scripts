@@ -41,7 +41,7 @@ instance DIA_Talbin_NW		(C_INFO)
 	condition	 = 	DIA_Talbin_NW_Condition;
 	information	 = 	DIA_Talbin_NW_Info;
 
-	description	 = 	"Il passaggio non era poi cosÏ male, vero?";
+	description	 = 	"Il passaggio non era poi cos√¨ male, vero?";
 };
 
 func int DIA_Talbin_NW_Condition ()
@@ -51,7 +51,7 @@ func int DIA_Talbin_NW_Condition ()
 
 func void DIA_Talbin_NW_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Il passo non era poi cosÏ male, vero?
+	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Il passo non era poi cos√¨ male, vero?
 	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Grazie per avermi salvato.
 	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Ecco. Ho trovato questa pietra grezza al passo. Credo ti possa tornare utile.
 
@@ -103,7 +103,7 @@ func int DIA_Talbin_NW_PERM_Condition ()
 func void DIA_Talbin_NW_PERM_Info ()
 {
 	AI_Output			(other, self, "DIA_Talbin_NW_PERM_15_00"); //Va tutto bene?
-	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //SÏ, grazie. Ora vai. Andr‡ tutto bene.
+	AI_Output			(self, other, "DIA_Talbin_NW_PERM_07_01"); //S√¨, grazie. Ora vai. Andr√† tutto bene.
 	AI_StopProcessInfos (self);
 };
 

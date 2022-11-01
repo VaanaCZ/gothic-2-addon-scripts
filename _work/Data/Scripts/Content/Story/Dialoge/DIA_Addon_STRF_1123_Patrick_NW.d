@@ -73,11 +73,11 @@ FUNC INT DIA_Addon_Patrick_NW_Hi_Condition()
 FUNC VOID DIA_Addon_Patrick_NW_Hi_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_00");//Allora? Tutto a posto?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//SÏ. I Maghi dell'Acqua ci hanno fatti uscire da questa maledetta valle.
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_01");//S√¨. I Maghi dell'Acqua ci hanno fatti uscire da questa maledetta valle.
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_02");//Cosa farai ora?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//ContinuerÚ a combattere per Lee. E uno di questi giorni lasceremo l'isola...
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_03");//Continuer√≤ a combattere per Lee. E uno di questi giorni lasceremo l'isola...
 	AI_Output (other, self, "DIA_Addon_Patrick_NW_Hi_15_04");//E poi?
-	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Si vedr‡. Se la guerra Ë ancora in corso, affronteremo gli orchi. Ma questo resta da vedersi.
+	AI_Output (self, other, "DIA_Addon_Patrick_NW_Hi_07_05");//Si vedr√†. Se la guerra √® ancora in corso, affronteremo gli orchi. Ma questo resta da vedersi.
 };
 
 

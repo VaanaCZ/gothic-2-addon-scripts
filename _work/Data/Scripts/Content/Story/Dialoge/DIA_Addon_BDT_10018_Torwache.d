@@ -22,7 +22,7 @@ FUNC VOID DIA_Addon_BDT_10018_Torwache_EXIT_Info()
 	
 	if (BDT_100018_Einmal == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_01"); //Tu sai già che cosa ti dirò...
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_EXIT_04_01"); //Tu sai giÃ  che cosa ti dirÃ²...
 		BDT_100018_Einmal = TRUE;
 	}
 	else
@@ -73,14 +73,14 @@ func void DIA_Addon_BDT_10018_Torwache_FirstWarn_Info()
 	
 	if ( BDT_100018_Tells == FALSE)
 	{
-		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //Ehi, rallenta! Tu là dentro non ci vai, quindi sparisci!
+		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_00"); //Ehi, rallenta! Tu lÃ  dentro non ci vai, quindi sparisci!
 		AI_Output (other, self,"DIA_Addon_BDT_10018_Torwache_FirstWarn_15_01"); //Vattene, devo vedere Raven.
 		AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_FirstWarn_04_02"); //Nessuno entra in questi alloggi. Ordini diretti di Raven in persona.
 		BDT_100018_Tells = TRUE;
 		
 		Log_CreateTopic (Topic_Addon_Tempel,LOG_MISSION);
 		Log_SetTopicStatus (Topic_Addon_Tempel,LOG_RUNNING);
-		B_LogEntry (Topic_Addon_Tempel,"Il custode di fronte al tempio non vuole farmi entrare. Dovrò trovare un altro modo.");
+		B_LogEntry (Topic_Addon_Tempel,"Il custode di fronte al tempio non vuole farmi entrare. DovrÃ² trovare un altro modo.");
 	}
 	else
 	{	
@@ -117,7 +117,7 @@ FUNC INT DIA_Addon_BDT_10018_Torwache_SecondWarn_Condition()
 
 func void DIA_Addon_BDT_10018_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //Fai un altro passo e sarà l'ultimo!
+	AI_Output (self, other,"DIA_Addon_BDT_10018_Torwache_SecondWarn_04_00"); //Fai un altro passo e sarÃ  l'ultimo!
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,BDT_10018_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -170,7 +170,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Hi   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Hi_Condition;
 	information = DIA_Addon_10018_Torwache_Hi_Info;
 	permanent   = FALSE;
-	description = "È importantissimo che lo veda.";
+	description = "Ãˆ importantissimo che lo veda.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 {	
@@ -178,10 +178,10 @@ FUNC INT DIA_Addon_10018_Torwache_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//È importantissimo che lo veda.
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//No, non lo è. Solo Bloodwyn ha il permesso di stare là dentro.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Hi_15_00");//Ãˆ importantissimo che lo veda.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Hi_04_01");//No, non lo Ã¨. Solo Bloodwyn ha il permesso di stare lÃ  dentro.
 	
-	B_LogEntry (Topic_Addon_Tempel,"Solo Bloodwyn è autorizzato a restare nel tempio. Forse potrei entrare nel tempio tramite lui.");
+	B_LogEntry (Topic_Addon_Tempel,"Solo Bloodwyn Ã¨ autorizzato a restare nel tempio. Forse potrei entrare nel tempio tramite lui.");
 };
 //----------------------------------------------------------------------
 //	Info Bloodwyn
@@ -206,7 +206,7 @@ FUNC INT DIA_Addon_10018_Torwache_Bloodwyn_Condition()
 FUNC VOID DIA_Addon_10018_Torwache_Bloodwyn_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_15_00");//Bloodwyn? Ma non era morto?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//È più forte che mai. E se scopre che qualcuno sta creando dei problemi qui fuori, ti ridurrà in polpette.
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bloodwyn_04_01");//Ãˆ piÃ¹ forte che mai. E se scopre che qualcuno sta creando dei problemi qui fuori, ti ridurrÃ  in polpette.
 };
 //----------------------------------------------------------------------
 //	Info Bribe
@@ -218,7 +218,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Bribe   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Bribe_Condition;
 	information = DIA_Addon_10018_Torwache_Bribe_Info;
 	permanent   = FALSE;
-	description = "Sono disposto a pagarti 1000 monete d’oro, purché tu mi faccia entrare.";
+	description = "Sono disposto a pagarti 1000 monete dâ€™oro, purchÃ© tu mi faccia entrare.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 {	
@@ -230,7 +230,7 @@ FUNC INT DIA_Addon_10018_Torwache_Bribe_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Bribe_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bribe_15_00");//Sono disposto a pagarti 1000 monete d’oro, purché tu mi faccia entrare.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Bribe_15_00");//Sono disposto a pagarti 1000 monete dâ€™oro, purchÃ© tu mi faccia entrare.
 	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Bribe_04_01");//Stai perdendo il tuo tempo, fannullone.
 };
 //----------------------------------------------------------------------
@@ -243,7 +243,7 @@ INSTANCE DIA_Addon_BDT_10018_Torwache_Drin   (C_INFO)
 	condition   = DIA_Addon_10018_Torwache_Drin_Condition;
 	information = DIA_Addon_10018_Torwache_Drin_Info;
 	permanent   = FALSE;
-	description = "Bloodwyn è là dentro? Allora fallo uscire.";
+	description = "Bloodwyn Ã¨ lÃ  dentro? Allora fallo uscire.";
 };
 FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 {	
@@ -255,14 +255,14 @@ FUNC INT DIA_Addon_10018_Torwache_Drin_Condition()
 };
 FUNC VOID DIA_Addon_10018_Torwache_Drin_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//Bloodwyn è là dentro? Allora fallo uscire.
+	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_Drin_15_00");//Bloodwyn Ã¨ lÃ  dentro? Allora fallo uscire.
 	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_01");//Ah! Credi davvero che lo farei?
 	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_02");//Sarai anche un uomo importante nel campo, adesso, ma il tuo potere finisce PROPRIO QUI. Capito?
 	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_Drin_04_03");//Allora, vai alla miniera a estrarre l'oro oppure fai qualcos'altro, ma non mi stare tra i piedi!
 	
 	MIS_BloodwynRaus = LOG_RUNNING;
 
-	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn è nel tempio. Ma io non riesco ad andare da nessuna parte. Forse dovrei dare un'occhiata nella miniera.");
+	B_LogEntry (Topic_Addon_Tempel,"Bloodwyn Ã¨ nel tempio. Ma io non riesco ad andare da nessuna parte. Forse dovrei dare un'occhiata nella miniera.");
 };
 //----------------------------------------------------------------------
 //	Info kopf
@@ -286,8 +286,8 @@ FUNC INT DIA_Addon_10018_Torwache_kopf_Condition()
 FUNC VOID DIA_Addon_10018_Torwache_kopf_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BDT_10018_Torwache_kopf_15_00");//Ecco! Vuoi ancora fermarmi, adesso!?
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//Quello è… quello è… Bloodwyn? ... bleah, è...
-	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//Ehm… sì, ehm, no. Cioè… ehm, puoi entrare
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_01");//Quello Ã¨â€¦ quello Ã¨â€¦ Bloodwyn? ... bleah, Ã¨...
+	AI_Output (self, other, "DIA_Addon_BDT_10018_Torwache_kopf_04_02");//Ehmâ€¦ sÃ¬, ehm, no. CioÃ¨â€¦ ehm, puoi entrare
 	
 	MIS_BloodwynRaus = LOG_SUCCESS;
 	

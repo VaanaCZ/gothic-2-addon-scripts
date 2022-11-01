@@ -51,7 +51,7 @@ FUNC VOID DIA_Hokurn_Hello_Info()
 	AI_Output (self ,other,"DIA_Hokurn_Hello_01_03"); //Quando non ho avuto niente da bere per un certo periodo, sembrava che la mia testa stesse per esplodere da un momento all'altro.
 
 	Info_ClearChoices (DIA_Hokurn_Hello);
-	Info_AddChoice (DIA_Hokurn_Hello,"Proverò a prendere qualcosa.",DIA_Hokurn_Hello_No);
+	Info_AddChoice (DIA_Hokurn_Hello,"ProverÃ² a prendere qualcosa.",DIA_Hokurn_Hello_No);
 	
 	IF(	(Npc_HasItems (other,ItFo_Beer) 	>=1)	
 	||	(Npc_HasItems (other,ItFo_Booze) 	>=1)	
@@ -78,12 +78,12 @@ FUNC VOID DIA_Hokurn_Hello_ASK1 ()
 	
 	Info_ClearChoices (DIA_Hokurn_Hello);
 	Info_AddChoice (DIA_Hokurn_Hello,DIALOG_ENDE,DIA_Hokurn_Hello_END);
-	Info_AddChoice (DIA_Hokurn_Hello,"È importante.",DIA_Hokurn_Hello_ASK2);
+	Info_AddChoice (DIA_Hokurn_Hello,"Ãˆ importante.",DIA_Hokurn_Hello_ASK2);
 };
 
 FUNC VOID DIA_Hokurn_Hello_ASK2 ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //È importante.
+	AI_Output (other,self ,"DIA_Hokurn_Hello_ASK2_15_00"); //Ãˆ importante.
 	AI_Output (self ,other,"DIA_Hokurn_Hello_ASK2_01_01"); //(urla) L'hai voluto tu.
 	
 	AI_StopProcessInfos (self);
@@ -98,7 +98,7 @@ FUNC VOID DIA_Hokurn_Hello_END ()
 FUNC VOID B_Hokurn_Sauf ()
 {
 	AI_Output (self ,other,"B_Hokurn_Sauf_01_00"); //(rutta) Ah, ci voleva proprio.
-	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //Finalmente! Ora posso finalmente pensare con lucidità. Cosa posso fare per te?
+	AI_Output (self ,other,"B_Hokurn_Sauf_01_01"); //Finalmente! Ora posso finalmente pensare con luciditÃ . Cosa posso fare per te?
 };
 
 FUNC VOID DIA_Hokurn_Hello_Yes ()
@@ -231,10 +231,10 @@ FUNC VOID DIA_Hokurn_Learn_Info()
 {
 	AI_Output (other,self ,"DIA_Hokurn_Learn_15_00"); //Cerco qualcuno che possa insegnarmi qualcosa.
 	AI_Output (self ,other,"DIA_Hokurn_Learn_01_01"); //Potrei insegnarti alcune cose. Sono il miglior guerriero nel giro di svariate miglia.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Dato che siamo amici, ti farò un prezzo speciale. 300 monete d'oro.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_01_02"); //Dato che siamo amici, ti farÃ² un prezzo speciale. 300 monete d'oro.
 
 	Info_ClearChoices (DIA_Hokurn_Learn);
-	Info_AddChoice	(DIA_Hokurn_Learn,"Il prezzo è troppo alto per me.",DIA_Hokurn_Learn_TooExpensive);
+	Info_AddChoice	(DIA_Hokurn_Learn,"Il prezzo Ã¨ troppo alto per me.",DIA_Hokurn_Learn_TooExpensive);
 	if (Npc_HasItems (other,ItMi_Gold) >= 300)
 	{
 		Info_AddChoice	(DIA_Hokurn_Learn,"Va bene, ecco i soldi.",DIA_Hokurn_Learn_OK);
@@ -243,8 +243,8 @@ FUNC VOID DIA_Hokurn_Learn_Info()
 
 FUNC VOID DIA_Hokurn_Learn_TooExpensive ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //Il prezzo è troppo alto per me.
-	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //Troppo caro? È meno di quanto ti chiederebbe qualsiasi altra persona al mio posto.
+	AI_Output (other,self ,"DIA_Hokurn_Learn_TooExpensive_15_00"); //Il prezzo Ã¨ troppo alto per me.
+	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_01"); //Troppo caro? Ãˆ meno di quanto ti chiederebbe qualsiasi altra persona al mio posto.
 	AI_Output (self ,other,"DIA_Hokurn_Learn_TooExpensive_01_02"); //Pensaci bene.
 	
 	Info_ClearChoices (DIA_Hokurn_Learn);
@@ -351,7 +351,7 @@ INSTANCE DIA_Hokurn_Teach(C_INFO)
 	condition	= DIA_Hokurn_Teach_Condition;
 	information	= DIA_Hokurn_Teach_Info;
 	permanent	= TRUE;
-	description = "Diamo inizio all’addestramento.";
+	description = "Diamo inizio allâ€™addestramento.";
 };                       
 
 FUNC INT DIA_Hokurn_Teach_Condition()
@@ -364,7 +364,7 @@ FUNC INT DIA_Hokurn_Teach_Condition()
  
 FUNC VOID DIA_Hokurn_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Hokurn_Teach_15_00"); //Diamo inizio all’addestramento.
+	AI_Output (other,self ,"DIA_Hokurn_Teach_15_00"); //Diamo inizio allâ€™addestramento.
 	
 	if (HokurnLastDrink < Wld_GetDay ())
 	{
@@ -374,7 +374,7 @@ FUNC VOID DIA_Hokurn_Teach_Info()
 	{	 
 		if (hero.guild == GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Poi vedremo cosa possiamo tirare fuori dalle tue ossa arruginite di paladino, d’accordo?
+			AI_Output (self ,other,"DIA_Hokurn_Teach_01_02"); //Poi vedremo cosa possiamo tirare fuori dalle tue ossa arruginite di paladino, dâ€™accordo?
 		}
 		else if (hero.guild == GIL_KDF)
 		{
@@ -396,7 +396,7 @@ FUNC VOID DIA_Hokurn_Teach_Back ()
 };
 FUNC VOID B_Hokurn_TeachedEnough ()
 {
-	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00"); //Non hai più bisogno di un maestro per questa disciplina.
+	AI_Output(self,other,"B_Hokurn_TeachedEnough_01_00"); //Non hai piÃ¹ bisogno di un maestro per questa disciplina.
 };
 
 FUNC VOID DIA_Hokurn_Teach_2H_1 ()
@@ -444,7 +444,7 @@ FUNC VOID DIA_Hokurn_Teach_1H_5 ()
 };
 
 //*********************************************************************
-//	Wieso hängt ihr hier überhaupt rum?
+//	Wieso hÃ¤ngt ihr hier Ã¼berhaupt rum?
 //*********************************************************************
 INSTANCE DIA_Hokurn_StayHere   (C_INFO)
 {
@@ -467,11 +467,11 @@ FUNC INT DIA_Hokurn_StayHere_Condition()
 FUNC VOID DIA_Hokurn_StayHere_Info()
 {
 	AI_Output (other,self ,"DIA_Hokurn_StayHere_15_00"); //Cosa ci fate qui, ad ogni modo?
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //Non ho la più pallida idea di cosa ci facciamo qui né quando entreremo in azione.
-	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //E non me ne importa niente, fino a quando avrò abbastanza da bere.
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_01"); //Non ho la piÃ¹ pallida idea di cosa ci facciamo qui nÃ© quando entreremo in azione.
+	AI_Output (self ,other,"DIA_Hokurn_StayHere_01_02"); //E non me ne importa niente, fino a quando avrÃ² abbastanza da bere.
 	
 	/*
-	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier überhaupt?
+	AI_Output (other,self ,"DIA_Addon_Hokurn_StayHere_15_00"); //Was wollt ihr hier Ã¼berhaupt?
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_01"); //Keine Ahnung, was wir hier machen oder wann es los geht.
 	AI_Output (self ,other,"DIA_Addon_Hokurn_StayHere_01_02"); //Ist mir auch egal, solange ich genug zu trinken habe.
 	*/
@@ -507,7 +507,7 @@ FUNC VOID DIA_Hokurn_WhereDragon_Info()
 	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_01_01"); //Se te lo dico cosa ci guadagno?
 
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"Niente, li troverò da solo.",DIA_Hokurn_WhereDragon_FindMyself);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"Niente, li troverÃ² da solo.",DIA_Hokurn_WhereDragon_FindMyself);
 	Info_AddChoice (DIA_Hokurn_WhereDragon,"Sono disposto a pagarti per questa informazione.",DIA_Hokurn_WhereDragon_Gold);
 	if Npc_HasItems (other,ITFO_BOOZE) >=1
 	{
@@ -517,7 +517,7 @@ FUNC VOID DIA_Hokurn_WhereDragon_Info()
 
 FUNC VOID DIA_Hokurn_WhereDragon_FindMyself ()
 {
-	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Niente, li troverò da solo.
+	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_FindMyself_15_00"); //Niente, li troverÃ² da solo.
 	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_FindMyself_01_01"); //Farai meglio a essere prudente. Ti aspettano numerosi combattimenti.
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
 };
@@ -525,10 +525,10 @@ FUNC VOID DIA_Hokurn_WhereDragon_FindMyself ()
 FUNC VOID DIA_Hokurn_WhereDragon_Gold ()
 {
 	AI_Output (other,self ,"DIA_Hokurn_WhereDragon_Gold_15_00"); //Sono disposto a pagarti per questa informazione.
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Pagarmi? Mmmh. Ti darò l'informazione che ti serve per 200 monete d'oro.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Gold_01_01"); //Pagarmi? Mmmh. Ti darÃ² l'informazione che ti serve per 200 monete d'oro.
 	
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
-	Info_AddChoice (DIA_Hokurn_WhereDragon,"È troppo!",DIA_Hokurn_WhereDragon_TooMuch);
+	Info_AddChoice (DIA_Hokurn_WhereDragon,"Ãˆ troppo!",DIA_Hokurn_WhereDragon_TooMuch);
 	if Npc_HasItems (other,ItMi_Gold) >=200
 	{
 		Info_AddChoice (DIA_Hokurn_WhereDragon,"Affare fatto. Ecco i soldi!",DIA_Hokurn_WhereDragon_OK);
@@ -537,7 +537,7 @@ FUNC VOID DIA_Hokurn_WhereDragon_Gold ()
 
 FUNC VOID DIA_Hokurn_WhereDragon_TooMuch ()
 {
-	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //È troppo!
+	AI_Output	(other,self ,"DIA_Hokurn_WhereDragon_TooMuch_15_00"); //Ãˆ troppo!
 	AI_Output 	(self ,other,"DIA_Hokurn_WhereDragon_TooMuch_01_01"); //Allora scordatelo.
 	Info_ClearChoices	(DIA_Hokurn_WhereDragon); 
 };
@@ -557,7 +557,7 @@ FUNC VOID DIA_Hokurn_WhereDragon_Booze ()
 	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_01"); //Combatterei tutti i draghi del mondo per una buona bevuta.
 	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_02"); //D'accordo. Passami la bottiglia!
 	B_GiveInvItems ( other,self,ItFo_booze,1);
-	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //La terrò in serbo per quando non avrò altro da bere.
+	AI_Output (self ,other,"DIA_Hokurn_WhereDragon_Booze_01_03"); //La terrÃ² in serbo per quando non avrÃ² altro da bere.
 
 	HokurnTellsDragon = TRUE;
 	Info_ClearChoices (DIA_Hokurn_WhereDragon);
@@ -588,8 +588,8 @@ FUNC VOID DIA_Hokurn_Dragon_Info()
 {
 	AI_Output (other,self ,"DIA_Hokurn_Dragon_15_00"); //Va bene... ora, dove sono i draghi?
 	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_01"); //Ovviamente non sono in grado di darti delle indicazioni precise, ma ho sentito dire che dovrebbero esserci quattro draghi.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //Abbiamo visto un bagliore rosso sulla montagna più alta durante la notte.
-	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //Giuro su mia madre che se stai cercando un drago, lì ne troverai uno.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_02"); //Abbiamo visto un bagliore rosso sulla montagna piÃ¹ alta durante la notte.
+	AI_Output (self ,other,"DIA_Hokurn_Dragon_01_03"); //Giuro su mia madre che se stai cercando un drago, lÃ¬ ne troverai uno.
 };
 
 //*********************************************************************

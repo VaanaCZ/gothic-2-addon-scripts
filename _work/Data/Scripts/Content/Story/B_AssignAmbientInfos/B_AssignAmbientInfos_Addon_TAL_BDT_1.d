@@ -42,11 +42,11 @@ FUNC VOID DIA_Addon_TAL_BDT_1_Hi_Info()
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_01");//Aspetto che abbiano bisogno di uno nuovo e che arrivi il mio turno.
 	if (!Npc_IsDead(Franco))
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Di tutte le persone che ci sono qui fuori, può entrare solo Franco.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_02");//Di tutte le persone che ci sono qui fuori, puÃ² entrare solo Franco.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Ora che Franco è morto, spero di avere qualche chance.
+		AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Hi_01_03");//Ora che Franco Ã¨ morto, spero di avere qualche chance.
 	};
 };
 // *************************************************************************
@@ -92,9 +92,9 @@ FUNC INT DIA_Addon_TAL_BDT_1_Raven_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_1_Raven_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_1_Raven_15_00");//Cosa sai su Raven?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//È il tizio che è arrivato qui per primo coi suoi ragazzi.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//È il capo del campo. Dammi retta, è meglio non prendersela con lui.
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Una volta hanno avuto bisogno di cinque uomini nuovi perché ha sfogato la sua rabbia su qualcuno dei suoi.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_01");//Ãˆ il tizio che Ã¨ arrivato qui per primo coi suoi ragazzi.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_02");//Ãˆ il capo del campo. Dammi retta, Ã¨ meglio non prendersela con lui.
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_1_Raven_01_03");//Una volta hanno avuto bisogno di cinque uomini nuovi perchÃ© ha sfogato la sua rabbia su qualcuno dei suoi.
 };
 FUNC VOID B_AssignAmbientInfos_Addon_TAL_BDT_1(var C_NPC slf)
 {

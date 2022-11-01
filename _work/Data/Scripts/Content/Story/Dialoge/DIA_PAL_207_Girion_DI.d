@@ -48,11 +48,11 @@ func void DIA_Girion_DI_Hallo_Info ()
 	if (ORkSturmDI == TRUE)
 		{
 			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_01"); //Gli orchi sono veramente coraggiosi per mettersi contro di me.
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Dovrebbero saper bene che non Ë il caso di sfidare un paladino della guardia reale.
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_02"); //Dovrebbero saper bene che non √® il caso di sfidare un paladino della guardia reale.
 		}
 	else if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //Credo. Ti servir‡ molto tempo per la tua missione su questa collina?
+			AI_Output			(self, other, "DIA_Girion_DI_Hallo_08_03"); //Credo. Ti servir√† molto tempo per la tua missione su questa collina?
 		}
 	else
 		{
@@ -70,7 +70,7 @@ INSTANCE DIA_Girion_DI_Teach(C_INFO)
 	condition	= DIA_Girion_DI_Teach_Condition;
 	information	= DIA_Girion_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Addestrami, cosÏ saremo in grado di andarcene di qui pi˘ in fretta!";
+	description = "Addestrami, cos√¨ saremo in grado di andarcene di qui pi√π in fretta!";
 };                       
 
 FUNC INT DIA_Girion_DI_Teach_Condition()
@@ -83,7 +83,7 @@ FUNC INT DIA_Girion_DI_Teach_Condition()
  
 FUNC VOID DIA_Girion_DI_Teach_Info()
 {	
-	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //Insegnami, cosÏ lasceremo questo posto pi˘ in fretta.
+	AI_Output (other,self 	,"DIA_Girion_DI_Teach_15_00"); //Insegnami, cos√¨ lasceremo questo posto pi√π in fretta.
 	AI_Output (self ,other 	,"DIA_Girion_DI_Teach_08_01"); //Sembra che io non abbia altra scelta.
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -123,7 +123,7 @@ func void DIA_Girion_DI_Teach_CROSSBOW_5()
 {
 	if B_TeachFightTalentPercent (self, other, NPC_TALENT_CROSSBOW, 5, 90)
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //Rilassa sempre il braccio prima di sparare. In questo modo sarai pi˘ flessibile quando mirerai.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_CROSSBOW_5_08_00"); //Rilassa sempre il braccio prima di sparare. In questo modo sarai pi√π flessibile quando mirerai.
 	};
 	
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
@@ -157,7 +157,7 @@ FUNC VOID DIA_Girion_DI_Teach_1H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_1H, 5, 90))
 	{
-			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //Usa sempre la tua forza con astuzia. Caricare ciecamente il tuo avversario non ti porter‡ mai alla vittoria.
+			AI_Output (self ,other,"DIA_Girion_DI_Teach_1H_5_08_00"); //Usa sempre la tua forza con astuzia. Caricare ciecamente il tuo avversario non ti porter√† mai alla vittoria.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -174,7 +174,7 @@ FUNC VOID DIA_Girion_DI_Teach_2H_1 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 1, 90))
 	{
-		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //Non afferrare la freccia cosÏ saldamente, e il tuo tiro colpir‡ il bersaglio.
+		AI_Output(self,other,"DIA_DIA_Girion_DI_Teach_2H_1_08_00"); //Non afferrare la freccia cos√¨ saldamente, e il tuo tiro colpir√† il bersaglio.
 	};
 	Info_ClearChoices 	(DIA_Girion_DI_Teach);
 	Info_AddChoice 		(DIA_Girion_DI_Teach,	DIALOG_BACK		,DIA_Girion_DI_Teach_Back);
@@ -238,11 +238,11 @@ func void DIA_Girion_DI_OrcEliteRing_Info ()
 
 	if (DIA_Girion_DI_OrcEliteRing_OneTime == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //Immagino che Lord Hagen sapr‡ cosa farsene.
+		AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_01"); //Immagino che Lord Hagen sapr√† cosa farsene.
 		DIA_Girion_DI_OrcEliteRing_OneTime = TRUE;
 	};
 
-	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Dammelo, lo consegnerÚ io a Lord Hagen.
+	AI_Output			(self, other, "DIA_Girion_DI_OrcEliteRing_08_02"); //Dammelo, lo consegner√≤ io a Lord Hagen.
 
 	Info_ClearChoices	(DIA_Girion_DI_OrcEliteRing);
 	Info_AddChoice	(DIA_Girion_DI_OrcEliteRing, "Preferisco tenerlo io.", DIA_Girion_DI_OrcEliteRing_behalten );
@@ -296,13 +296,13 @@ func void DIA_Girion_DI_UndeadDragonDead_Info ()
 		{
 			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_02"); //Ora ridammi subito la nave.
 			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_03"); //Non siamo ancora a Khorinis. E, a essere onesti, non ho molta voglia di tornare a Khorinis.
-			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //Ci sono gi‡ rimasto troppo a lungo.
-			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //Lo sospettavo. Ma questo non Ë il momento nÈ il luogo adatto per discuterne. Ne riparleremo una volta in mare.
+			AI_Output			(other ,self, "DIA_Girion_DI_UndeadDragonDead_15_04"); //Ci sono gi√† rimasto troppo a lungo.
+			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_05"); //Lo sospettavo. Ma questo non √® il momento n√© il luogo adatto per discuterne. Ne riparleremo una volta in mare.
 			AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_06"); //Fa niente. Sono felice di riaverti a bordo tutto intero, nonostante tutto.
 			
 			if (hero.guild == GIL_PAL)
 			{
-				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //Sei un vero guerriero di Innos, non ho pi˘ alcun dubbio. Sono felice di essere al tuo fianco.
+				AI_Output			(self ,other, "DIA_Girion_DI_UndeadDragonDead_08_07"); //Sei un vero guerriero di Innos, non ho pi√π alcun dubbio. Sono felice di essere al tuo fianco.
 			}
 			else
 			{

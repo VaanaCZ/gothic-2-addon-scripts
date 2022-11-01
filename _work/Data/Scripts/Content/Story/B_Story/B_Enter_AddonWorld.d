@@ -7,14 +7,14 @@
 FUNC VOID B_ENTER_ADDONWORLD_Kapitel_1 ()
 {
 	
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		if (RavenIsDead == TRUE)
 		{
 			B_RemoveNpc (KDW_14030_Addon_Myxir_ADW);
 		};
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 		if (Sklaven_weg == TRUE)
 		&& (RemoveSklaven == FALSE)
 		{	
@@ -37,11 +37,11 @@ FUNC VOID B_ENTER_ADDONWORLD_Kapitel_2 ()
 	if (EnterADW_Kapitel2 == FALSE)
 	{
 	
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
 
@@ -57,11 +57,11 @@ FUNC VOID B_ENTER_ADDONWORLD_Kapitel_3 ()
 	if (EnterADW_Kapitel3 == FALSE)
 	{
 	
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
  
@@ -77,11 +77,11 @@ FUNC VOID B_ENTER_ADDONWORLD_Kapitel_4 ()
 	if (EnterADW_Kapitel4 == FALSE)
 	{
 	
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
 
@@ -283,11 +283,11 @@ FUNC VOID B_ENTER_ADDONWORLD_Kapitel_5 ()
 	if (EnterADW_Kapitel5 == FALSE)
 	{
 	
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
 
@@ -304,11 +304,11 @@ FUNC VOID B_ENTER_ADDONWORLD_Kapitel_6 ()
 {
 	if (EnterADW_Kapitel6 == FALSE)
 	{
-		// ------ Gilden-Attitüden ändern ------
+		// ------ Gilden-AttitÃ¼den Ã¤ndern ------
 		
-		// ------ Immortal-Flags löschen ------
+		// ------ Immortal-Flags lÃ¶schen ------
 
-		// ------ TAs ändern ------
+		// ------ TAs Ã¤ndern ------
 
 		// ------ Respawn ------
 
@@ -317,7 +317,7 @@ FUNC VOID B_ENTER_ADDONWORLD_Kapitel_6 ()
 };
 
 // ******************************************************************************************************************************************************************
-// B_ENTER_ADDONWORLD			 (wird über INIT_ADDONWORLD)
+// B_ENTER_ADDONWORLD			 (wird Ã¼ber INIT_ADDONWORLD)
 // ******************************************************************************************************************************************************************
 
 FUNC VOID B_ENTER_ADDONWORLD ()	

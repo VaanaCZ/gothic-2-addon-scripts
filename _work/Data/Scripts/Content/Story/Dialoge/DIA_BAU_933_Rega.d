@@ -46,7 +46,7 @@ func void DIA_Rega_HALLO_Info ()
 
 	if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Tu vieni dalla citt‡, non Ë cosÏ?
+			AI_Output			(self, other, "DIA_Rega_HALLO_17_01"); //Tu vieni dalla citt√†, non √® cos√¨?
 		}
 	else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
@@ -63,9 +63,9 @@ func void DIA_Rega_HALLO_Info ()
 		};
 		
 	AI_Output			(self, other, "DIA_Rega_HALLO_17_05"); //Se fossi in te me ne andrei di qui.
-	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //PerchÈ?
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Questo non era un paradiso prima, ma almeno finchÈ svolgevamo il nostro lavoro per Sekob venivamo lasciati in pace.
-	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Ma ultimamente la situazione Ë diventata insostenibile.
+	AI_Output			(other, self, "DIA_Rega_HALLO_15_06"); //Perch√©?
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_07"); //Questo non era un paradiso prima, ma almeno finch√© svolgevamo il nostro lavoro per Sekob venivamo lasciati in pace.
+	AI_Output			(self, other, "DIA_Rega_HALLO_17_08"); //Ma ultimamente la situazione √® diventata insostenibile.
 	if (Kapitel < 3)
 		{
 			AI_Output			(self, other, "DIA_Rega_HALLO_17_09"); //I briganti sono dappertutto, i razziatori dei campi distruggono l'intero raccolto e il proprietario terriero si sta incattivendo.
@@ -99,8 +99,8 @@ func int DIA_Rega_ONAR_Condition ()
 func void DIA_Rega_ONAR_Info ()
 {
 	AI_Output			(other, self, "DIA_Rega_ONAR_15_00"); //Allora, il proprietario terriero ti incute timore?
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Puoi scommetterci. Se al padrone non piacciono le facce delle persone, egli manda i suoi mercenari, e quella sar‡ l'ultima volta che li vedrai.
-	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //CosÏ noi preferiamo tenere la bocca chiusa.
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_01"); //Puoi scommetterci. Se al padrone non piacciono le facce delle persone, egli manda i suoi mercenari, e quella sar√† l'ultima volta che li vedrai.
+	AI_Output			(self, other, "DIA_Rega_ONAR_17_02"); //Cos√¨ noi preferiamo tenere la bocca chiusa.
 
 };
 
@@ -133,7 +133,7 @@ func void DIA_Rega_SLD_Info ()
 {
 	AI_Output			(other, self, "DIA_Rega_SLD_15_00"); //I mercenari non dovrebbero occuparsi dei razziatori dei campi?
 	AI_Output			(self, other, "DIA_Rega_SLD_17_01"); //Non so per cosa vengano pagati, ma di certo non per aiutare la gente comune come noi.
-	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //Il problema dei razziatori dei campi Ë lasciato ai piccoli proprietari che affittano i terreni dal padrone.
+	AI_Output			(self, other, "DIA_Rega_SLD_17_02"); //Il problema dei razziatori dei campi √® lasciato ai piccoli proprietari che affittano i terreni dal padrone.
 
 };
 
@@ -193,7 +193,7 @@ func int DIA_Rega_BRONKO_Condition ()
 
 func void DIA_Rega_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Chi Ë quel losco figuro laggi˘?
+	AI_Output			(other, self, "DIA_Rega_BRONKO_15_00"); //Chi √® quel losco figuro laggi√π?
 	AI_Output			(self, other, "DIA_Rega_BRONKO_17_01"); //Non fraintendermi, ma non voglio cacciarmi nei guai. Vai a chiederlo a qualcun altro.
 
 	AI_StopProcessInfos (self);
@@ -228,19 +228,19 @@ func void DIA_Rega_PERMKAP1_Info ()
 
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //» facile da dire per te. Dopo tutto tu vivi in una citt‡.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_01"); //√à facile da dire per te. Dopo tutto tu vivi in una citt√†.
 		}
 		else if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Se voi mercenari non foste cosÏ insopportabili, tutto il resto non sarebbe cosÏ male.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_02"); //Se voi mercenari non foste cos√¨ insopportabili, tutto il resto non sarebbe cos√¨ male.
 		}
 		else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Ci sono sempre meno maghi. Spero che tu non sia l'ultimo. Abbiamo bisogno di te, ora pi˘ che mai.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_03"); //Ci sono sempre meno maghi. Spero che tu non sia l'ultimo. Abbiamo bisogno di te, ora pi√π che mai.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Non Ë cosÏ facile se lavori per Sekob il negriero.
+			AI_Output			(self, other, "DIA_Rega_PERMKAP1_17_04"); //Non √® cos√¨ facile se lavori per Sekob il negriero.
 		};
 	AI_StopProcessInfos (self);
 };

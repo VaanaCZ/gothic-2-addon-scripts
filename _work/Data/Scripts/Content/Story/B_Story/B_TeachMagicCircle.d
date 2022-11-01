@@ -36,7 +36,7 @@ func int B_TeachMagicCircle (var C_NPC slf, var C_NPC oth, var int circle)
 	// ------ Kreis setzen ------
 	Npc_SetTalentSkill (oth, NPC_TALENT_MAGE, circle);
 	Log_CreateTopic (TOPIC_TalentMagicCircle,LOG_NOTE);
-	B_LogEntry (TOPIC_TalentMagicCircle,"Le rune magiche alle quali ho accesso sono divise in Circoli. Non posso utilizzare un incantesimo che richieda un Circolo più alto di quello che ho imparato."); 
+	B_LogEntry (TOPIC_TalentMagicCircle,"Le rune magiche alle quali ho accesso sono divise in Circoli. Non posso utilizzare un incantesimo che richieda un Circolo piÃ¹ alto di quello che ho imparato."); 
 	
 	// ------ 1. Kreis ------
 	if (circle == 1)

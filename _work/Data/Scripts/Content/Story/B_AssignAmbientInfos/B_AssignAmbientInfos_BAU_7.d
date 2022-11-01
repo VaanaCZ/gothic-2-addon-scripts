@@ -56,7 +56,7 @@ INSTANCE DIA_BAU_7_PEOPLE(C_INFO)
 	condition	= DIA_BAU_7_PEOPLE_Condition;
 	information	= DIA_BAU_7_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT DIA_BAU_7_PEOPLE_Condition()
@@ -66,8 +66,8 @@ FUNC INT DIA_BAU_7_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_7_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_PEOPLE_15_00"); //Chi Ë il capo, qui?
-	AI_Output (self, other, "DIA_BAU_7_PEOPLE_07_01"); //La fattoria pi˘ grande appartiene a Onar, cosÏ come quelle piccole qui intorno, solo che le affitta ad altri contadini.
+	AI_Output (other, self, "DIA_BAU_7_PEOPLE_15_00"); //Chi √® il capo, qui?
+	AI_Output (self, other, "DIA_BAU_7_PEOPLE_07_01"); //La fattoria pi√π grande appartiene a Onar, cos√¨ come quelle piccole qui intorno, solo che le affitta ad altri contadini.
 };
 
 // *************************************************************************
@@ -91,7 +91,7 @@ FUNC VOID DIA_BAU_7_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_7_LOCATION_15_00"); //Parlami ancora di questa zona.
 	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_01"); //La grande fattoria nella zona est della valle appartiene a Onar. Quella di Sekob si trova a nord.
-	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_02"); //E quella di Bengar si trova sull'altopiano a sud-ovest. Puoi raggiungerla attraversando la valle, c'Ë un enorme scala di pietra che conduce fino lÏ.
+	AI_Output (self, other, "DIA_BAU_7_LOCATION_07_02"); //E quella di Bengar si trova sull'altopiano a sud-ovest. Puoi raggiungerla attraversando la valle, c'√® un enorme scala di pietra che conduce fino l√¨.
 };
 
 // *************************************************************************
@@ -103,7 +103,7 @@ INSTANCE DIA_BAU_7_STANDARD(C_INFO)
 	condition	= DIA_BAU_7_STANDARD_Condition;
 	information	= DIA_BAU_7_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_BAU_7_STANDARD_Condition()
 {
@@ -111,11 +111,11 @@ func INT DIA_BAU_7_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_7_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_7_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_BAU_7_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_01"); //Abbiamo dichiarato la nostra indipendenza, non pagheremo pi˘ le tasse alla citt‡. Il re non ha fatto niente per noi, siamo stufi!
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_01"); //Abbiamo dichiarato la nostra indipendenza, non pagheremo pi√π le tasse alla citt√†. Il re non ha fatto niente per noi, siamo stufi!
 	};
 
 	if (Kapitel == 2)
@@ -125,7 +125,7 @@ FUNC VOID DIA_BAU_7_STANDARD_Info()
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_03"); //Ora sono spuntate fuori queste storie sui draghi! Il re non sa pi˘ che inventarsi per spillare soldi alla gente.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_03"); //Ora sono spuntate fuori queste storie sui draghi! Il re non sa pi√π che inventarsi per spillare soldi alla gente.
 	};
 
 	if (Kapitel == 4)
@@ -135,7 +135,7 @@ FUNC VOID DIA_BAU_7_STANDARD_Info()
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_05"); //Ora che i draghi sono morti, i signori paladini si degnano di uscire dalla citt‡. » tempo che l'ordine venga ristabilito.
+		AI_Output (self,other,"DIA_BAU_7_STANDARD_07_05"); //Ora che i draghi sono morti, i signori paladini si degnano di uscire dalla citt√†. √à tempo che l'ordine venga ristabilito.
 	};
 };
 

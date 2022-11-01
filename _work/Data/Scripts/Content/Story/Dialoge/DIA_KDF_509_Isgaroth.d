@@ -23,7 +23,7 @@ FUNC VOID DIA_Isgaroth_EXIT_Info()
 	AI_StopProcessInfos (self);
 };
 //****************************************************************************
-//	Begr¸ssung
+//	Begr√ºssung
 //****************************************************************************
 
 INSTANCE DIA_Isgaroth_Hello   (C_INFO)
@@ -93,10 +93,10 @@ FUNC INT DIA_Isgaroth_Wolf_Condition()
 FUNC VOID DIA_Isgaroth_Wolf_Info()
 {
 	AI_Output (other,self ,"DIA_Isgaroth_Wolf_15_00"); //Mi manda Sergio. Ho accettato il suo incarico. Di cosa si tratta?
-	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //Recentemente Ë stato avvistato un lupo nero che gira per la zona. Trovalo e uccidilo.
+	AI_Output (self ,other,"DIA_Isgaroth_Wolf_01_01"); //Recentemente √® stato avvistato un lupo nero che gira per la zona. Trovalo e uccidilo.
 
 	MIS_IsgarothWolf = LOG_RUNNING;
-	B_LogEntry (Topic_IsgarothWolf,"C'Ë un lupo oscuro che vaga intorno al santuario. Devo trovarlo e ucciderlo.");
+	B_LogEntry (Topic_IsgarothWolf,"C'√® un lupo oscuro che vaga intorno al santuario. Devo trovarlo e ucciderlo.");
 	
 };
 //********************************************************************************
@@ -155,7 +155,7 @@ FUNC VOID DIA_Isgaroth_Job_Info()
 {
 	AI_Output (other,self ,"DIA_Isgaroth_Job_15_00"); //Cosa stai facendo, qui?
 	AI_Output (self ,other,"DIA_Isgaroth_Job_01_01"); //Io sono un mago del fuoco. Un sacerdote del nostro dio Innos.
-	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Questo santuario Ë consacrato a LUI, il dio supremo, creatore del fuoco e signore della giustizia.
+	AI_Output (self ,other,"DIA_Isgaroth_Job_01_02"); //Questo santuario √® consacrato a LUI, il dio supremo, creatore del fuoco e signore della giustizia.
 	AI_Output (self ,other,"DIA_Isgaroth_Job_01_03"); //La gente viene da me per pregare Innos ed essere benedetta.
 	AI_Output (self ,other,"DIA_Isgaroth_Job_01_04"); //E per una piccola offerta, puoi ottenere molte cose utili da me.
 	
@@ -210,7 +210,7 @@ FUNC INT DIA_Isgaroth_Kloster_Condition()
 FUNC VOID DIA_Isgaroth_Kloster_Info()
 {
 	AI_Output (other,self ,"DIA_Isgaroth_Kloster_15_00"); //Dove conduce questo percorso?
-	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //La strada porta al monastero dei maghi del fuoco. Tuttavia l'accesso Ë consentito solo ai servi di Innos.
+	AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_01"); //La strada porta al monastero dei maghi del fuoco. Tuttavia l'accesso √® consentito solo ai servi di Innos.
 	
 	if (other.guild == GIL_NONE)
 	{
@@ -223,7 +223,7 @@ FUNC VOID DIA_Isgaroth_Kloster_Info()
 	}
 	else 
 	{
-		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //Dal momento che hai gi‡ deciso di unirti a un altro gruppo, l'accesso ti verr‡ negato.
+		AI_Output (self ,other,"DIA_Isgaroth_Kloster_01_03"); //Dal momento che hai gi√† deciso di unirti a un altro gruppo, l'accesso ti verr√† negato.
 	};
 };
 
@@ -253,8 +253,8 @@ FUNC INT DIA_Isgaroth_Vatras_Condition()
 FUNC VOID DIA_Isgaroth_Vatras_Info()
 {
 	AI_Output (other,self ,"DIA_ISgaroth_Vatras_15_00"); //Ho un messaggio da parte di Vatras.
-	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Cos'Ë questo messaggio?
-	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //» una lettera. Tieni.
+	AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_01"); //Cos'√® questo messaggio?
+	AI_Output (other,self ,"DIA_Isgaroth_Vatras_15_02"); //√à una lettera. Tieni.
 	
 	if (Npc_HasItems (other,ItWr_VatrasMessage) == 1)
 	{
@@ -281,7 +281,7 @@ FUNC VOID DIA_Isgaroth_Vatras_Info()
 		};
 		B_UseFakeScroll ();
 	
-		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //Il sigillo Ë rotto. A cosa stavi pensando, sciocco!
+		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_05"); //Il sigillo √® rotto. A cosa stavi pensando, sciocco!
 		AI_Output (self ,other,"DIA_Isgaroth_Vatras_01_06"); //Vai da Vatras e digli che ho ricevuto il suo messaggio.
 		AI_StopProcessInfos (self);
 	};	

@@ -102,7 +102,7 @@ INSTANCE DIA_1051_Wegelagerer_Question   (C_INFO)
 	condition   = DIA_Wegelagerer_Question_Condition;
 	information = DIA_Wegelagerer_Question_Info;
 	permanent   = FALSE;
-	description = "Semplice curiosità.";
+	description = "Semplice curiositÃ .";
 };
 
 FUNC INT DIA_Wegelagerer_Question_Condition()
@@ -116,9 +116,9 @@ FUNC INT DIA_Wegelagerer_Question_Condition()
 
 FUNC VOID DIA_Wegelagerer_Question_Info()
 {
-	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //Semplice curiosità.
+	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_15_00"); //Semplice curiositÃ .
 	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_01"); //Ho capito. Ma che ci fai TU qui?
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Ad ogni modo, questa è la nostra strada, e non ci piace quando qualcuno viene qui a infastidirci.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_07_02"); //Ad ogni modo, questa Ã¨ la nostra strada, e non ci piace quando qualcuno viene qui a infastidirci.
 	
 	Info_ClearChoices (DIA_1051_Wegelagerer_Question);
 	if (MIS_Novizenchase == LOG_RUNNING)
@@ -127,7 +127,7 @@ FUNC VOID DIA_Wegelagerer_Question_Info()
 		Info_AddChoice (DIA_1051_Wegelagerer_Question,"Sto cercando un novizio.",DIA_1051_Wegelagerer_Question_Novice);
 	};	
 	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Non sono affari tuoi.",DIA_1051_Wegelagerer_Question_MyConcern);
-	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Sto solo dando un’occhiata in giro.",DIA_1051_Wegelagerer_Question_LookAround);
+	Info_AddChoice (DIA_1051_Wegelagerer_Question,"Sto solo dando unâ€™occhiata in giro.",DIA_1051_Wegelagerer_Question_LookAround);
 };
 
 FUNC VOID DIA_1051_Wegelagerer_Question_Novice ()
@@ -172,7 +172,7 @@ FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 {
 	AI_Output (other,self ,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_15_00"); //Se insisti.
 	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_01"); //Oh-oh, hai una bella boccaccia.
-	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //È giunta l'ora di tappartela per sempre.
+	AI_Output (self ,other,"DIA_1051_Wegelagerer_Question_MyConcern_Yes_07_02"); //Ãˆ giunta l'ora di tappartela per sempre.
 
 	BDT_1051_Wegelagerer_Angriff = TRUE;
 	Npc_SetRefuseTalk (self,40);
@@ -181,7 +181,7 @@ FUNC VOID DIA_1051_Wegelagerer_Question_MyConcern_Yes ()
 
 FUNC VOID DIA_1051_Wegelagerer_Question_LookAround ()
 {
-	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Sto solo dando un’occhiata in giro.
+	AI_Output	(other,self ,"DIA_1051_Wegelagerer_Question_LookAround_15_00"); //Sto solo dando unâ€™occhiata in giro.
 	AI_Output 	(self ,other,"DIA_1051_Wegelagerer_Question_LookAround_07_01"); //Allora vai per la tua strada e non darci noie.
 	
 	AI_StopProcessInfos (self); //Joly: Ausweg ohne angegriffen zu werden!!!!!!!!!
@@ -214,7 +214,7 @@ func int DIA_Wegelagerer_ANGRIFF_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF_07_00"); //Questo è per te.
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF_07_00"); //Questo Ã¨ per te.
 
 	AI_StopProcessInfos (self);
 

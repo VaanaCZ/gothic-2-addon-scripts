@@ -42,7 +42,7 @@ FUNC VOID DIA_Addon_10025_Wache_Hi_Info()
 	if (Sklaven_Flucht == FALSE)
 	{	
 		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_02");//Ma gli schiavi, non avranno un bel niente. Un po' di acqua stagnante e del pane vecchio, se va bene.
-		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Non gli far‡ male a quei figli di pap‡.
+		AI_Output (self, other, "DIA_Addon_BDT_10025_Wache_Hi_07_03");//Non gli far√† male a quei figli di pap√†.
 	};
 };
 

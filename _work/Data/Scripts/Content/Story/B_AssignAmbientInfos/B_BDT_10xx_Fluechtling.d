@@ -63,13 +63,13 @@ func void DIA_BDT_1031_Fluechtling_Tip1_Info ()
 		Info_ClearChoices	(DIA_BDT_1031_Fluechtling_Tip1);
 		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Non ho intenzione di tradirti.", DIA_BDT_1031_Fluechtling_Tip1_frei );
 		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Sono qui per arrestarti.", DIA_BDT_1031_Fluechtling_Tip1_Knast );
-		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Dov’è Morgahard, il tuo capo?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
+		Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Dovâ€™Ã¨ Morgahard, il tuo capo?", DIA_BDT_1031_Fluechtling_Tip1_Morgahard );
 	};
 };
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Dov’è Morgahard, il tuo capo?
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //Ci siamo divisi, in modo da rendere più difficile la nostra cattura. Non ho idea di dove siano gli altri.
+	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_15_00"); //Dovâ€™Ã¨ Morgahard, il tuo capo?
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_07_01"); //Ci siamo divisi, in modo da rendere piÃ¹ difficile la nostra cattura. Non ho idea di dove siano gli altri.
 	
 	Info_AddChoice	(DIA_BDT_1031_Fluechtling_Tip1, "Che peccato. Allora, immagino di dover chiamare il giudice.", DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen );
 
@@ -77,7 +77,7 @@ func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard ()
 func void DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen ()
 {
 	AI_Output			(other, self, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_15_00"); //Che peccato. Allora, immagino di dover chiamare il giudice.
-	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Va bene, va bene. Credo che alcuni di noi siano fuggiti alla taverna, ma fai finta che io non ti abbia detto nulla, d’accordo?
+	AI_Output			(self, other, "DIA_BDT_1031_Fluechtling_Tip1_Morgahard_drohen_07_01"); //Va bene, va bene. Credo che alcuni di noi siano fuggiti alla taverna, ma fai finta che io non ti abbia detto nulla, dâ€™accordo?
 	AI_StopProcessInfos (self);
 };
 
@@ -225,12 +225,12 @@ func void DIA_BDT_1033_Fluechtling_Tip2_Info ()
 		Info_ClearChoices	(DIA_BDT_1033_Fluechtling_Tip2);
 		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Rilassati, voglio solo parlare.", DIA_BDT_1033_Fluechtling_Tip2_frei );
 		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Il giudice mi ha mandato qui per riportarti indietro.", DIA_BDT_1033_Fluechtling_Tip2_Knast );
-		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Dov’è Morgahard, il tuo capo?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
+		Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Dovâ€™Ã¨ Morgahard, il tuo capo?", DIA_BDT_1033_Fluechtling_Tip2_Morgahard );
 	};
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_Morgahard ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Dov’è Morgahard, il tuo capo?
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_15_00"); //Dovâ€™Ã¨ Morgahard, il tuo capo?
 	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_Morgahard_07_01"); //(spaventato) Non voglio guai. Vai dal proprietario terriero. Voleva nascondersi con i mercenari. E ora lasciami in pace.
 	AI_StopProcessInfos (self);
 };
@@ -248,11 +248,11 @@ func void DIA_BDT_1033_Fluechtling_Tip2_frei ()
 	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_15_00"); //Rilassati, voglio solo parlare.
 	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_07_01"); //Ma io non ho niente da dirti. Vattene, amico.
 	
-	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Sei solo un topolino impaurito, non è vero?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
+	Info_AddChoice	(DIA_BDT_1033_Fluechtling_Tip2, "Sei solo un topolino impaurito, non Ã¨ vero?", DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen );
 };
 func void DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen ()
 {
-	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //Sei spaventato a morte, non è vero?
+	AI_Output			(other, self, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_15_00"); //Sei spaventato a morte, non Ã¨ vero?
 	AI_Output			(self, other, "DIA_BDT_1033_Fluechtling_Tip2_frei_verbrechen_07_01"); //Puoi parlare. Non verrai condannato alla forca se verrai catturato.
 
 };

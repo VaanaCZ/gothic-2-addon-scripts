@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Rock_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Basta con le parole. Il tuo potere temporaneo si Ë esaurito. L'Occhio ha perso la sua forza. Preparati a morire.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Exit_20_00"); //Basta con le parole. Il tuo potere temporaneo si √® esaurito. L'Occhio ha perso la sua forza. Preparati a morire.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -54,12 +54,12 @@ FUNC INT DIA_Dragon_Rock_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Rock_Hello_Info()
 {	
-	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Ecco un'altra creatura presuntuosa che osa arrampicarsi fino a me. Voi piccoli umani siete cosÏ coraggiosi e, al tempo stesso, cosÏ fragili.
+	AI_Output			(self, other, "DIA_Dragon_Rock_Hello_20_00"); //Ecco un'altra creatura presuntuosa che osa arrampicarsi fino a me. Voi piccoli umani siete cos√¨ coraggiosi e, al tempo stesso, cos√¨ fragili.
 	if (Mis_KilledDragons == 0)
 	{
 		AI_Output			(other, self, "DIA_Dragon_Rock_Hello_15_01"); //Ehi, ma tu sai parlare.
 	};
-	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Ti strapperÚ le budella e le darÚ in pasto ai topi.
+	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_02"); //Ti strapper√≤ le budella e le dar√≤ in pasto ai topi.
 	AI_Output (other, self, "DIA_Dragon_Rock_Add_15_00"); //Non avere troppa fretta. Ho con me l'Occhio di Innos. Tu mi obbedirai e risponderai alle mie domande.
 	AI_Output (self, other, "DIA_Dragon_Rock_Hello_20_04"); //(ruggisce) Argh. Fammi le tue domande.
 
@@ -89,7 +89,7 @@ func int DIA_Dragon_Rock_WERBISTDU_Condition ()
 func void DIA_Dragon_Rock_WERBISTDU_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Rock_WERBISTDU_15_00"); //Chi sei?
-	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Il mio nome Ë Pedrakhan e ti scuoierÚ vivo lentamente quando ti metterÚ le mani addosso.
+	AI_Output			(self, other, "DIA_Dragon_Rock_WERBISTDU_20_01"); //Il mio nome √® Pedrakhan e ti scuoier√≤ vivo lentamente quando ti metter√≤ le mani addosso.
 
 };
 
@@ -103,7 +103,7 @@ instance DIA_Dragon_Rock_HIERARCHIE		(C_INFO)
 	condition	 = 	DIA_Dragon_Rock_HIERARCHIE_Condition;
 	information	 = 	DIA_Dragon_Rock_HIERARCHIE_Info;
 
-	description	 = 	"Chi Ë il drago pi˘ forte tra voi?";
+	description	 = 	"Chi √® il drago pi√π forte tra voi?";
 };
 
 func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
@@ -116,12 +116,12 @@ func int DIA_Dragon_Rock_HIERARCHIE_Condition ()
 
 func void DIA_Dragon_Rock_HIERARCHIE_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Chi Ë il drago pi˘ forte tra voi?
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //La nostra forza deriva dagli elementi di questo mondo. La loro gerarchia Ë chiara e semplice.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //La soffice terra conferisce la vita a tutte le creature baciate dal sole, eppure si aprir‡ e ti inghiottir‡ completamente se ti avvicini troppo a essa.
+	AI_Output			(other, self, "DIA_Dragon_Rock_HIERARCHIE_15_00"); //Chi √® il drago pi√π forte tra voi?
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_01"); //La nostra forza deriva dagli elementi di questo mondo. La loro gerarchia √® chiara e semplice.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_02"); //La soffice terra conferisce la vita a tutte le creature baciate dal sole, eppure si aprir√† e ti inghiottir√† completamente se ti avvicini troppo a essa.
 	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_03"); //La roccia, che preferirebbe spaccarsi piuttosto che arrendersi, troneggia con orgoglio e seppellisce gli sbadati sotto di essa, eppure fornisce il miglior riparo dalle maree.
 	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_04"); //La scintilla della vita vive nei fuochi profondi di questo mondo, eppure il fuoco brucia ogni cosa in un attimo, lasciando solo cenere.
-	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Tutti i nostri elementi sono in grado di preservare e distruggere, ma solo nell'acqua diventata dura e solida come la roccia ogni cosa verr‡ trasformata in una eterna colonna di sale dove la vita Ë a mala pena possibile.
+	AI_Output			(self, other, "DIA_Dragon_Rock_HIERARCHIE_20_05"); //Tutti i nostri elementi sono in grado di preservare e distruggere, ma solo nell'acqua diventata dura e solida come la roccia ogni cosa verr√† trasformata in una eterna colonna di sale dove la vita √® a mala pena possibile.
 
 };
 

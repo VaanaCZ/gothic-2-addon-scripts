@@ -8,7 +8,7 @@ instance SLD_816_Fester (Npc_Default)
 	id 			= 816;
 	voice 		= 8;
 	flags       = 0;							//NPC_FLAG_IMMORTAL oder 0
-	npctype		= NPCTYPE_FRIEND; //weil sonst FK-Waffe zu "Steck die Waffe weg" führt, wenn Fester mit dir losgeht (kein Partymember!)
+	npctype		= NPCTYPE_FRIEND; //weil sonst FK-Waffe zu "Steck die Waffe weg" fÃ¼hrt, wenn Fester mit dir losgeht (kein Partymember!)
 	
 	// ------ Attribute ------
 	B_SetAttributesToChapter (self, 1);																	//setzt Attribute und LEVEL entsprechend dem angegebenen Kapitel (1-6)
@@ -32,9 +32,9 @@ instance SLD_816_Fester (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 30); //Grenzen für Talent-Level liegen bei 30 und 60
-	// guter Bogenkämpfer
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 30); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
+	// guter BogenkÃ¤mpfer
 	B_AddFightSkill (self, NPC_TALENT_BOW, 30); //ADD!!!
 	
 	// ------ TA anmelden ------

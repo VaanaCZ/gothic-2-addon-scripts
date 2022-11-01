@@ -42,7 +42,7 @@ FUNC INT DIA_Addon_Samuel_Hello_Condition()
 FUNC VOID DIA_Addon_Samuel_Hello_Info()
 {	
 	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_00"); //Ah, uno nuovo!
-	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_01"); //Cosa ti porto? Rum o qualcosa di pi˘ forte?
+	AI_Output (self ,other, "DIA_Addon_Samuel_Hello_14_01"); //Cosa ti porto? Rum o qualcosa di pi√π forte?
 	
 	Log_CreateTopic (Topic_Addon_PIR_Trader,LOG_NOTE);
 	B_LogEntry (Topic_Addon_PIR_Trader,Log_Text_Addon_SamuelTrade);
@@ -76,13 +76,13 @@ FUNC VOID DIA_Addon_Samuel_Francis_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_00"); //Devo parlarti a proposito di Francis.
 	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_01"); //Non mi parlare di quel lavativo! 
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_02"); //Non fa nulla tutto il giorno e si d‡ un sacco di arie.
-	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_03"); //Chiss‡ cosa diamine aveva in mente il Capitano quando ha affidato a LUI il comando!
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_02"); //Non fa nulla tutto il giorno e si d√† un sacco di arie.
+	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_03"); //Chiss√† cosa diamine aveva in mente il Capitano quando ha affidato a LUI il comando!
 	AI_Output (self, other, "DIA_Addon_Samuel_Francis_14_04"); //Che cosa vuoi da quel farabutto?
 };
 
 // ************************************************************
-// 			  		In Gregs H¸tte (Versteck)
+// 			  		In Gregs H√ºtte (Versteck)
 // ************************************************************
 instance DIA_Addon_Samuel_Versteck(C_INFO)
 {
@@ -105,16 +105,16 @@ FUNC INT DIA_Addon_Samuel_Versteck_Condition()
 func VOID DIA_Addon_Samuel_Versteck_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_02"); //Devo entrare nella capanna di Greg.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_05"); //(furbescamente) Ma davvero? E perchÈ?
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_05"); //(furbescamente) Ma davvero? E perch√©?
 	AI_Output (other, self, "DIA_Addon_Samuel_Francis_15_01"); //Mi serve l'armatura di un brigante.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_06"); //(ride) Francis non ti permetter‡ MAI di entrare nella capanna di Greg per rubargli le sue cose.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_06"); //(ride) Francis non ti permetter√† MAI di entrare nella capanna di Greg per rubargli le sue cose.
 	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_07"); //A meno che...
-	AI_Output (other, self,	"DIA_Addon_Samuel_Francis_15_03"); //SÏ?
+	AI_Output (other, self,	"DIA_Addon_Samuel_Francis_15_03"); //S√¨?
 	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_08"); //...tu non abbia qualcosa che lui vuole.
 	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_09"); //So che Francis ha nascosto qualcosa in una miniera abbandonata, nel canyon.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_10"); //Una volta, mentre eravamo di guardia insieme, si Ë addormentato e ha cominciato a parlare nel sonno.
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_11"); //Non ho idea di cosa abbia sepolto lÏ, ma forse pur di riaverla accetter‡ di farti entrare nella capanna...
-	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_12"); //(felice) Quando il Capitano scoprir‡ il furto, gli lever‡ la pelle a suon di scudisciate, a Francis.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_10"); //Una volta, mentre eravamo di guardia insieme, si √® addormentato e ha cominciato a parlare nel sonno.
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_11"); //Non ho idea di cosa abbia sepolto l√¨, ma forse pur di riaverla accetter√† di farti entrare nella capanna...
+	AI_Output (self ,other, "DIA_Addon_Samuel_Francis_14_12"); //(felice) Quando il Capitano scoprir√† il furto, gli lever√† la pelle a suon di scudisciate, a Francis.
 
 	B_LogEntry (TOPIC_Addon_BDTRuestung,"Samuel, che distilla alcol clandestinamente, ha parlato di un nascondiglio segreto di Francis in una delle miniere del canyon. Forse, posso trovarci qualcosa che mi aiuti a entrare nella capanna."); 
 };
@@ -165,7 +165,7 @@ func VOID DIA_Addon_Samuel_Recipe_Back()
 };
 func VOID DIA_Addon_Samuel_Recipe_LousHammer ()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousHammer_15_00"); //» di Snaf.
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousHammer_15_00"); //√à di Snaf.
 	B_GiveInvItems (other, self, ITWr_Addon_Lou_Rezept, 1);
 	B_UseFakeScroll();
 	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousHammer_14_04"); //Ma dev'essere terribile! Devo provarla subito!
@@ -175,10 +175,10 @@ func VOID DIA_Addon_Samuel_Recipe_LousHammer ()
 };
 func VOID DIA_Addon_Samuel_Recipe_LousDoubleHammer ()
 {
-	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_15_00"); //Sta' attento! Questa roba Ë letale!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_15_00"); //Sta' attento! Questa roba √® letale!
 	B_GiveInvItems (other, self, ITWr_Addon_Lou_Rezept2, 1);
 	B_UseFakeScroll();
-	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_14_04"); //Mi stai facendo paura. FarÚ come dici tu.
+	AI_Output (self ,other,"DIA_Addon_Samuel_Recipe_LousDoubleHammer_14_04"); //Mi stai facendo paura. Far√≤ come dici tu.
 	
 	B_GivePlayerXP (XP_Ambient);
 	Samuel_Knows_SchlafHammer = TRUE;
@@ -196,7 +196,7 @@ instance DIA_Addon_Samuel_Grog(C_INFO)
 	condition	= DIA_Addon_Samuel_Grog_Condition;
 	information	= DIA_Addon_Samuel_Grog_Info;
 	permanent	= TRUE;
-	description = "Sono venuto a prendere la mia razione di grog! (10 monete díoro)";
+	description = "Sono venuto a prendere la mia razione di grog! (10 monete d‚Äôoro)";
 };                       
 FUNC INT DIA_Addon_Samuel_Grog_Condition()
 {
@@ -227,7 +227,7 @@ FUNC VOID DIA_Addon_Samuel_Grog_Info()
 	}
 	else //nicht genug Gold
 	{
-		AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_04"); //Costa poco, ma non Ë gratis! Se vuoi bere, procurati dell'oro, ragazzo.
+		AI_Output (self,other,"DIA_Addon_Samuel_Grog_14_04"); //Costa poco, ma non √® gratis! Se vuoi bere, procurati dell'oro, ragazzo.
 	};
 };
 
@@ -257,12 +257,12 @@ func VOID DIA_Addon_Samuel_Rum_Info()
 	{
 		if (Samuel_Rum_Varianz == 0)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_01"); //Ah! Per un marinaio Ë come il latte della mamma!
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_01"); //Ah! Per un marinaio √® come il latte della mamma!
 			Samuel_Rum_Varianz = 1;
 		}
 		else if (Samuel_Rum_Varianz == 1)
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_02"); //Forse sa un po' di pesce, perchÈ qi abbiamo solo vecchi barili di aringhe. Ma il rum Ë sempre rum. Alla tua salute!
+			AI_Output (self ,other,"DIA_Addon_Samuel_Rum_14_02"); //Forse sa un po' di pesce, perch√© qi abbiamo solo vecchi barili di aringhe. Ma il rum √® sempre rum. Alla tua salute!
 			Samuel_Rum_Varianz = 2;
 		}
 		else // (Samuel_Rum_Varianz == 2)
@@ -279,7 +279,7 @@ func VOID DIA_Addon_Samuel_Rum_Info()
 };
 
 // ************************************************************
-// 			  	  			Was St‰rkeres
+// 			  	  			Was St√§rkeres
 // ************************************************************
 var int Samuel_Stronger_Varianz;
 var int Samuel_DoppelHammer_Varianz;
@@ -291,7 +291,7 @@ instance DIA_Addon_Samuel_Stronger(C_INFO)
 	condition	= DIA_Addon_Samuel_Stronger_Condition;
 	information	= DIA_Addon_Samuel_Stronger_Info;
 	permanent	= TRUE;
-	description = "Voglio qualcosa di pi˘ forte!";
+	description = "Voglio qualcosa di pi√π forte!";
 };
                        
 FUNC INT DIA_Addon_Samuel_Stronger_Condition()
@@ -301,19 +301,19 @@ FUNC INT DIA_Addon_Samuel_Stronger_Condition()
 
 func VOID DIA_Addon_Samuel_Stronger_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_00"); //Voglio qualcosa di pi˘ forte!
+	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_00"); //Voglio qualcosa di pi√π forte!
 	
 	if (Samuel_Stronger_Varianz == 0)
 	{
 		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_01"); //Ah, un intenditore! Anch'io cerco sempre ricette nuove.
 		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_02"); //Un buon liquore dev'essere chiaro e forte, e bruciare la gola come fuoco liquido.
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_03"); //Non se ne trova molto, cosÏ. Ma io sto parlando troppo, e tu hai sete!
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_04"); //Tieni! » una mia ricetta! Che te ne pare? Si chiama 'Aringa Furiosa'.
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_03"); //Non se ne trova molto, cos√¨. Ma io sto parlando troppo, e tu hai sete!
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_04"); //Tieni! √à una mia ricetta! Che te ne pare? Si chiama 'Aringa Furiosa'.
 		B_GiveInvItems (self,other,ItFo_Addon_Schnellerhering,1);
 		B_UseItem (other, ItFo_Addon_Schnellerhering);
 		AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_15_05"); //Notevole!
 		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_06"); //(ride) Puoi dirlo forte! 
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_07"); //Non Ë che puoi darmi qualche buona ricetta per un liquore?
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_07"); //Non √® che puoi darmi qualche buona ricetta per un liquore?
 		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_14_08"); //Un altro?
 		Samuel_Stronger_Varianz = 1;
 	}
@@ -375,7 +375,7 @@ func VOID DIA_Addon_Samuel_Stronger_LousHammer()
 	AI_Output (other,self ,"DIA_Addon_Samuel_Stronger_LousHammer_15_00"); //Voglio un Martello di Lou!
 	if (B_GiveInvItems (other, self, ItMi_Gold, 30))
 	{
-		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousHammer_14_01"); //Ottimo! Gi˘ nel gargarozzo!
+		AI_Output (self ,other,"DIA_Addon_Samuel_Stronger_LousHammer_14_01"); //Ottimo! Gi√π nel gargarozzo!
 		B_GiveInvItems (self,other,ItFo_Addon_LousHammer,1);
 	}
 	else
@@ -406,7 +406,7 @@ func VOID DIA_Addon_Samuel_Stronger_LousDoubleHammer()
 		}
 		else
 		{
-			AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_LousDoubleHammer_14_02"); //(con foga) SÏ! Non c'Ë nulla di meglio per tirarsi su!
+			AI_Output (self ,other,"DIa_Addon_Samuel_Stronger_LousDoubleHammer_14_02"); //(con foga) S√¨! Non c'√® nulla di meglio per tirarsi su!
 		};
 
 		B_GiveInvItems (self,other,ItFo_Addon_SchlafHammer,1);
@@ -454,7 +454,7 @@ FUNC VOID DIA_Addon_Samuel_Trade_Info()
 	CreateInvItems 	(self, ItFo_Addon_Grog, 15);
 	
 	AI_Output (other,self ,"DIA_Addon_Samuel_Trade_15_00"); //Cos'altro hai?
-	AI_Output (self ,other,"DIA_Addon_Samuel_Trade_14_01"); //Posso darti tutto ciÚ di cui un pirata ha bisogno.
+	AI_Output (self ,other,"DIA_Addon_Samuel_Trade_14_01"); //Posso darti tutto ci√≤ di cui un pirata ha bisogno.
 };
 
 // ************************************************************
@@ -467,7 +467,7 @@ instance DIA_Addon_Samuel_News(C_INFO)
 	condition	= DIA_Addon_Samuel_News_Condition;
 	information	= DIA_Addon_Samuel_News_Info;
 	permanent	= TRUE;
-	description	= "Cose c'Ë di nuovo al campo?";
+	description	= "Cose c'√® di nuovo al campo?";
 };                       
 FUNC INT DIA_Addon_Samuel_News_Condition()
 {
@@ -475,7 +475,7 @@ FUNC INT DIA_Addon_Samuel_News_Condition()
 };
 func VOID DIA_Addon_Samuel_News_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_Samuel_News_15_00"); //Novit‡ all'accampamento?
+	AI_Output (other,self ,"DIA_Addon_Samuel_News_15_00"); //Novit√† all'accampamento?
 	
 	if (Npc_IsDead (Francis))
 	|| (Francis_ausgeschissen == TRUE)
@@ -484,18 +484,18 @@ func VOID DIA_Addon_Samuel_News_Info()
 		AI_Output (self, other, "DIA_Addon_Samuel_News_14_02"); //Hai proprio ragione. Facciamoci un bicchiere... Offro io!
 		if (GregIsBack == TRUE)
 		{
-			AI_Output (self, other, "DIA_Addon_Samuel_News_14_03"); //E Greg Ë finalmente tornato. Ha perso la nave, ma almeno riporter‡ l'ordine nell'accampamento.
+			AI_Output (self, other, "DIA_Addon_Samuel_News_14_03"); //E Greg √® finalmente tornato. Ha perso la nave, ma almeno riporter√† l'ordine nell'accampamento.
 		};
 	}
 	else //Greg noch weg UND Francis lebt noch
 	{
 		if (!Npc_IsDead (Morgan))
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_04"); //Da quando Greg se n'Ë andato qui non Ë successo granchÈ. Morgan e i suoi ragazzi non fanno altro che oziare e sbronzarsi.
+			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_04"); //Da quando Greg se n'√® andato qui non √® successo granch√©. Morgan e i suoi ragazzi non fanno altro che oziare e sbronzarsi.
 		};
 		if (!Npc_IsDead (Henry))
 		{
-			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_05"); //L'unico che faccia qualcosa Ë Henry. Lui e i suoi ragazzi stanno costruendo la palizzata.
+			AI_Output (self ,other,"DIA_Addon_Samuel_News_14_05"); //L'unico che faccia qualcosa √® Henry. Lui e i suoi ragazzi stanno costruendo la palizzata.
 		};
 		AI_Output (self ,other,"DIA_Addon_Samuel_News_14_06"); //Non vedo l'ora che Capitan Greg torni e prenda a calci nel sedere Francis!
 	};

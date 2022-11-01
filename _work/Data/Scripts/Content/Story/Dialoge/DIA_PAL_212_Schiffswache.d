@@ -72,11 +72,11 @@ func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Non salirai sulla nave. Questo Ë tutto quello che devi sapere.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Non salirai sulla nave. Questo √® tutto quello che devi sapere.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Siamo stati assegnati qui come guardie. Nessun intruso potr‡ salire sulla nave. Neanche tu, mi dispiace.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Siamo stati assegnati qui come guardie. Nessun intruso potr√† salire sulla nave. Neanche tu, mi dispiace.
 		};
 	}
 	else

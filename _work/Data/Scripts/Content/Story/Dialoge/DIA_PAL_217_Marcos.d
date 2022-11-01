@@ -46,10 +46,10 @@ FUNC VOID DIA_Marcos_Hallo_Info()
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//L'Eletto di Innos dice sempre la verit‡.
+		AI_Output (other, self, "DIA_Marcos_Hallo_15_01");//L'Eletto di Innos dice sempre la verit√†.
 		AI_Output (self, other, "DIA_Marcos_Hallo_04_02");//Perdonami, venerabile mago. Non avevo capito con chi stavo parlando.
 		AI_Output (other, self, "DIA_Marcos_Hallo_15_03");//D'accordo, tutto a posto, non preoccuparti.
-		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Se mi Ë permesso chiederlo, cosa ti porta qui?
+		AI_Output (self, other, "DIA_Marcos_Hallo_04_04");//Se mi √® permesso chiederlo, cosa ti porta qui?
 	}
 	else if (other.guild == GIL_MIL)
 	{
@@ -90,7 +90,7 @@ FUNC VOID DIA_Marcos_Hagen_Info()
 	AI_Output (self, other, "DIA_Marcos_Hagen_04_01");//Allora non dovresti perdere tempo e rischiare la tua vita inutilmente.
 	AI_Output (self, other, "DIA_Marcos_Hagen_04_02");//Pensi forse di trovare una scaglia di drago da portargli proprio qui?
 	AI_Output (self, other, "DIA_Marcos_Hagen_04_03");//Prova a raggiungere il castello e parlare con il comandante Garond.
-	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//Dev'essere informato della tua missione da parte di Lord Hagen! E si occuper‡ anche del tuo incarico.
+	AI_Output (self, other, "DIA_Marcos_Hagen_04_04");//Dev'essere informato della tua missione da parte di Lord Hagen! E si occuper√† anche del tuo incarico.
 };	
 
 // ************************************************************
@@ -116,15 +116,15 @@ FUNC INT DIA_Marcos_Garond_Condition()
 };
 FUNC VOID DIA_Marcos_Garond_Info()
 {	
-	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//Vengo da parte di Garond, ha bisogno di sapere quanto metallo Ë pronto per il trasporto.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//Di' a Garond che abbiamo abbandonato la miniera poichÈ gli attacchi degli orchi erano diventati troppo violenti.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_00");//Vengo da parte di Garond, ha bisogno di sapere quanto metallo √® pronto per il trasporto.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_01");//Di' a Garond che abbiamo abbandonato la miniera poich√© gli attacchi degli orchi erano diventati troppo violenti.
 	AI_Output (self, other, "DIA_Marcos_Garond_04_02");//Ho provato a raggiungere il castello con qualche uomo, ma sono l'unico sopravvissuto.
 	AI_Output (self, other, "DIA_Marcos_Garond_04_03");//Ho nascosto il metallo in un posto sicuro. Ci sono QUATTRO forzieri. Vai da Garond a riferirglielo.
-	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Digli che proteggerÚ i forzieri a costo della mia vita. Ma non so quanto ci metteranno gli orchi a trovarmi.
+	AI_Output (self, other, "DIA_Marcos_Garond_04_04");//Digli che protegger√≤ i forzieri a costo della mia vita. Ma non so quanto ci metteranno gli orchi a trovarmi.
 	AI_Output (self, other, "DIA_Marcos_Garond_04_05");//Digli di mandarmi dei rinforzi.
-	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//Glielo farÚ sapere.
+	AI_Output (other, self, "DIA_Marcos_Garond_15_06");//Glielo far√≤ sapere.
 	
-	B_LogEntry (TOPIC_ScoutMine,"Il paladino Marcos Ë di guardia a QUATTRO casse di metallo in una piccola valle.");
+	B_LogEntry (TOPIC_ScoutMine,"Il paladino Marcos √® di guardia a QUATTRO casse di metallo in una piccola valle.");
 	
 	Log_CreateTopic (Topic_MarcosJungs,LOG_MISSION);
 	Log_SetTopicStatus (Topic_MarcosJungs,LOG_RUNNING);
@@ -170,11 +170,11 @@ FUNC VOID DIA_Marcos_Perm_Info()
 	}
 	else if (MIS_Marcos_Jungs == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//ResisterÚ e spero che Garond mi mander‡ presto dei rinforzi.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_02");//Resister√≤ e spero che Garond mi mander√† presto dei rinforzi.
 	}
 	else if (MIS_Marcos_Jungs == LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//Grazie per l'aiuto. Innos ci dar‡ la forza per resistere.
+		AI_Output (self, other, "DIA_Marcos_Perm_04_03");//Grazie per l'aiuto. Innos ci dar√† la forza per resistere.
 		
 		if (Marcos_einmalig == FALSE)
 		{
@@ -184,7 +184,7 @@ FUNC VOID DIA_Marcos_Perm_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//ResisterÚ, poichÈ Innos Ë con me!
+		AI_Output (self, other, "DIA_Marcos_Perm_04_04");//Resister√≤, poich√© Innos √® con me!
 	};
 	
 	AI_StopProcessInfos (self);

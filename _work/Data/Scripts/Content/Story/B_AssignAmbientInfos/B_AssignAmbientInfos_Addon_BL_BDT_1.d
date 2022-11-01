@@ -28,7 +28,7 @@ instance DIA_Addon_BL_BDT_1_Chef(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Chef_Condition;
 	information	= DIA_Addon_BL_BDT_1_Chef_Info;
 	permanent	= TRUE;
-	description = "Chi è il capo, qui?";
+	description = "Chi Ã¨ il capo, qui?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Chef_Condition()
@@ -38,13 +38,13 @@ FUNC INT DIA_Addon_BL_BDT_1_Chef_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Chef_15_00");//Chi è il capo, qui?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Chef_15_00");//Chi Ã¨ il capo, qui?
 	
 	if (RavenIsDead == TRUE)
 	{
 		if Npc_IsDead (Thorus)
 		{
-			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Con tutti i capi che vanno e vengono… dopo un po' si perde la visione d'insieme.
+			AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_01");//Con tutti i capi che vanno e vengonoâ€¦ dopo un po' si perde la visione d'insieme.
 		}
 		else
 		{
@@ -53,7 +53,7 @@ FUNC VOID DIA_Addon_BL_BDT_1_Chef_Info()
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Il nostro capo è Raven. Ci ha portato qui e ha costruito il campo.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_03");//Il nostro capo Ã¨ Raven. Ci ha portato qui e ha costruito il campo.
 		AI_Output (self, other, "DIA_Addon_BL_BDT_1_Chef_01_04");//Controlla la miniera, altrimenti quei cani si sarebbero scannati per l'oro parecchio tempo fa.
 	};
 };
@@ -80,9 +80,9 @@ FUNC INT DIA_Addon_BL_BDT_1_Lager_Condition()
 FUNC VOID DIA_Addon_BL_BDT_1_Lager_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Lager_15_00");//Cosa sai dirmi del campo?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Quando si è sparsa la voce che qui c'era una miniera d'oro, questi fannulloni devono aver scatenato un pandemonio.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_01");//Quando si Ã¨ sparsa la voce che qui c'era una miniera d'oro, questi fannulloni devono aver scatenato un pandemonio.
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_02");//Raven ha ucciso i peggiori tra loro e ha cacciato gli altri dalla miniera.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Da allora, nessuno ha più avuto il permesso di accedere all'area superiore. Ha persino trascinato qui dei prigionieri per scavare.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Lager_01_03");//Da allora, nessuno ha piÃ¹ avuto il permesso di accedere all'area superiore. Ha persino trascinato qui dei prigionieri per scavare.
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
 		B_LogEntry (TOPIC_Addon_RavenKDW, LogText_Addon_RavensGoldmine); 
@@ -100,7 +100,7 @@ instance DIA_Addon_BL_BDT_1_Lager2(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_Lager2_Condition;
 	information	= DIA_Addon_BL_BDT_1_Lager2_Info;
 	permanent	= TRUE;
-	description = "Puoi dirmi qualcosa di più del campo?";
+	description = "Puoi dirmi qualcosa di piÃ¹ del campo?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_Lager2_Condition()
@@ -125,7 +125,7 @@ instance DIA_Addon_BL_BDT_1_News(C_INFO)
 	condition	= DIA_Addon_BL_BDT_1_News_Condition;
 	information	= DIA_Addon_BL_BDT_1_News_Info;
 	permanent	= TRUE;
-	description = "Novità?";
+	description = "NovitÃ ?";
 };                       
 
 FUNC INT DIA_Addon_BL_BDT_1_News_Condition()
@@ -135,13 +135,13 @@ FUNC INT DIA_Addon_BL_BDT_1_News_Condition()
 
 FUNC VOID DIA_Addon_BL_BDT_1_News_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");//Novità?
+	AI_Output (other, self, "DIA_Addon_BL_BDT_1_News_15_00");//NovitÃ ?
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Raven è morto. Che cosa faremo, adesso?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_01");//Raven Ã¨ morto. Che cosa faremo, adesso?
 	};
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//I pirati non ci riporteranno sulla terraferma, perché non sono stati pagati per gli ultimi trasporti.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_02");//I pirati non ci riporteranno sulla terraferma, perchÃ© non sono stati pagati per gli ultimi trasporti.
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_News_01_03");//Dovremmo infilzarne uno o due e allora gli altri di sicuro ci trasporteranno.
 };
 // *************************************************************************
@@ -169,7 +169,7 @@ FUNC VOID DIA_Addon_BL_BDT_1_Sklaven_Info()
 	 
 	AI_Output (other, self, "DIA_Addon_BL_BDT_1_Sklaven_15_00");//Cosa sai dei prigionieri?
 	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_01");//Raven vuole scavare qualcosa. All'inizio lo faceva fare ai briganti, ma ne sono morti troppi.
-	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Ecco perché ha portato i prigionieri: se schiattano, chi se ne importa.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_1_Sklaven_01_02");//Ecco perchÃ© ha portato i prigionieri: se schiattano, chi se ne importa.
 	
 	if (BDT_1_Ausbuddeln == FALSE)
 	{

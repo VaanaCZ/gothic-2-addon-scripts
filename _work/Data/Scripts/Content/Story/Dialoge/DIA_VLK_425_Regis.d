@@ -74,9 +74,9 @@ func int DIA_Regis_Hallo_Condition ()
 };
 func void DIA_Regis_Hallo_Info ()
 {	
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Ehi, sei nuovo in citt‡?
-	AI_Output			(other, self, "DIA_Regis_Hallo_15_01"); //SÏ e tu?
-	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //Vengo dalla terraferma e sto facendo un giro da queste parti. Ho quasi finito l'oro, perciÚ non mi resta che arruolarmi nell'esercito.
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_00"); //Ehi, sei nuovo in citt√†?
+	AI_Output			(other, self, "DIA_Regis_Hallo_15_01"); //S√¨ e tu?
+	AI_Output			(self, other, "DIA_Regis_Hallo_13_02"); //Vengo dalla terraferma e sto facendo un giro da queste parti. Ho quasi finito l'oro, perci√≤ non mi resta che arruolarmi nell'esercito.
 	AI_Output			(self, other, "DIA_Regis_Hallo_13_03"); //Ma non voglio farlo. Non voglio essere massacrato dai quegli orchi in nome del Re.
 };
 ///////////////////////////////////////////////////////////////////////
@@ -102,7 +102,7 @@ func void DIA_Regis_MILIZ_Info ()
 {
 	AI_Output (other, self, "DIA_Regis_MILIZ_15_00"); //Cosa mi dici della guardia cittadina?
 	AI_Output (self, other, "DIA_Regis_Add_13_01"); //Uno dei paladini ha preso il comando, un certo Lord Andre.
-	AI_Output (self, other, "DIA_Regis_Add_13_02"); //Sta cercando di mobilitare la citt‡ in caso di attacco orchesco.
+	AI_Output (self, other, "DIA_Regis_Add_13_02"); //Sta cercando di mobilitare la citt√† in caso di attacco orchesco.
 	AI_Output (self, other, "DIA_Regis_Add_13_03"); //Devi prima diventare un cittadino per essere ammesso.
 	AI_Output (self, other, "DIA_Regis_Add_13_04"); //Per quel che ne so, se non sei un cittadino, puoi allenarti ugualmente, ma non sarai ammesso ufficialmente.
 };
@@ -129,16 +129,16 @@ func void DIA_Regis_ANDRE_Info ()
 {
 	AI_Output (other, self, "DIA_Regis_ANDRE_15_00"); //Cos'altro puoi dirmi di Lord Andre?
 	AI_Output (self, other, "DIA_Regis_Add_13_05"); //Ha anche preso il posto del giudice.
-	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Se causerai guai in citt‡, dovrai risponderne a lui.
+	AI_Output (self, other, "DIA_Regis_Add_13_06"); //Se causerai guai in citt√†, dovrai risponderne a lui.
 	AI_Output (self, other, "DIA_Regis_Add_13_07"); //Una volta mi sono azzuffato con un cittadino.
-	AI_Output (self, other, "DIA_Regis_Add_13_08"); //» andato a piangere da Lord Andre e a fare la spia.
-	AI_Output (self, other, "DIA_Regis_Add_13_09"); //Questa piccola questione mi Ë costata 50 pezzi.
-	AI_Output (self, other, "DIA_Regis_Add_13_10"); //Per fortuna Ë accaduto di notte, altrimenti ci sarebbero stati testimoni.
-	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Pi˘ la gente si lamenta del tuo comportamento, maggiore Ë la penale da pagare.
+	AI_Output (self, other, "DIA_Regis_Add_13_08"); //√à andato a piangere da Lord Andre e a fare la spia.
+	AI_Output (self, other, "DIA_Regis_Add_13_09"); //Questa piccola questione mi √® costata 50 pezzi.
+	AI_Output (self, other, "DIA_Regis_Add_13_10"); //Per fortuna √® accaduto di notte, altrimenti ci sarebbero stati testimoni.
+	AI_Output (self, other, "DIA_Regis_Add_13_11"); //Pi√π la gente si lamenta del tuo comportamento, maggiore √® la penale da pagare.
 };
 
 // ****************************************************
-// 					Pr¸gelei mit Valentino
+// 					Pr√ºgelei mit Valentino
 // ****************************************************
 instance DIA_Regis_Valentino (C_INFO)
 {
@@ -188,13 +188,13 @@ func void DIA_Regis_ValDefeat_Info ()
 	AI_Output (other, self, "DIA_Regis_Add_15_15"); //Ho incontrato Valentino...
 	AI_Output (self, other, "DIA_Regis_Add_13_16"); //E allora?
 	AI_Output (other, self, "DIA_Regis_Add_15_17"); //Gli ho dato delle sonore legnate...
-	AI_Output (self, other, "DIA_Regis_Add_13_18"); //(ride) Se le Ë meritate...
+	AI_Output (self, other, "DIA_Regis_Add_13_18"); //(ride) Se le √® meritate...
 	if (!Npc_IsDead (Valentino))
 	{
 		AI_Output (self, other, "DIA_Regis_Add_13_19"); //Ecco, ho trovato questo anello su di lui dopo che abbiamo appianato il nostro disaccordo.
 		B_GiveInvItems (self, other, ItRi_ValentinosRing, 1);
 		Regis_Ring = TRUE;
-		AI_Output (self, other, "DIA_Regis_Add_13_20"); //(sogghignando) Sei libero di passarlo alla prossima persona che lo gonfier‡ di botte...
+		AI_Output (self, other, "DIA_Regis_Add_13_20"); //(sogghignando) Sei libero di passarlo alla prossima persona che lo gonfier√† di botte...
 	};
 };
 
@@ -211,7 +211,7 @@ instance DIA_Regis_PERM		(C_INFO)
 	condition	 = 	DIA_Regis_PERM_Condition;
 	information	 = 	DIA_Regis_PERM_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"» accaduto qualcosa di particolare?";
+	description	 = 	"√à accaduto qualcosa di particolare?";
 };
 func int DIA_Regis_PERM_Condition ()
 {
@@ -219,14 +219,14 @@ func int DIA_Regis_PERM_Condition ()
 };
 func void DIA_Regis_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //» accaduto qualcosa di particolare?
+	AI_Output (other, self, "DIA_Regis_PERM_15_00"); //√à accaduto qualcosa di particolare?
 	
 	if (Regis_Bogendieb == FALSE)
 	&& (MIS_Bosper_Bogen != LOG_SUCCESS)
 	{
 		AI_Output (self, other, "DIA_Regis_PERM_13_01"); //Puoi dirlo forte.
 		AI_Output (self, other, "DIA_Regis_PERM_13_02"); //Hanno derubato Bosper il costruttore d'archi. Una cosa sfacciata, te lo dico!
-		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Il tipo si Ë infiltrato in pieno giorno nel negozio e si Ë preso un arco.
+		AI_Output (self, other, "DIA_Regis_PERM_13_03"); //Il tipo si √® infiltrato in pieno giorno nel negozio e si √® preso un arco.
 		AI_Output (self, other, "DIA_Regis_PERM_13_04"); //E Bosper lo inseguiva dicendo, 'Fermati, furfante!', ma il tipo correva troppo veloce.
 		
 		
@@ -250,14 +250,14 @@ func void DIA_Regis_PERM_Info ()
 		{
 			if (MIS_RescueBennet == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Hanno scoperto che il mercenario Ë innocente e l'hanno lasciato andare.
-				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Lord Hagen deve essere fuori di sÈ dalla rabbia.
+				AI_Output (self, other, "DIA_Regis_PERM_13_08"); //Hanno scoperto che il mercenario √® innocente e l'hanno lasciato andare.
+				AI_Output (self, other, "DIA_Regis_PERM_13_09"); //Lord Hagen deve essere fuori di s√© dalla rabbia.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //L'intera citt‡ ne sta parlando. Ti ricordi il paladino Lothar?
+				AI_Output (self, other, "DIA_Regis_PERM_13_10"); //L'intera citt√† ne sta parlando. Ti ricordi il paladino Lothar?
 				AI_Output (other,self , "DIA_Regis_PERM_15_11"); //Forse.
-				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //In ogni caso, Ë morto. Assassinato in mezzo alla strada. Stanno accusando i mercenari, ovviamente.
+				AI_Output (self, other, "DIA_Regis_PERM_13_12"); //In ogni caso, √® morto. Assassinato in mezzo alla strada. Stanno accusando i mercenari, ovviamente.
 			};
 		};
 	};
@@ -286,7 +286,7 @@ func void DIA_Regis_Crew_Info ()
 {
 	AI_Output			(other, self, "DIA_Regis_Crew_15_00"); //Sto cercando di mettere insieme un equipaggio per un viaggio in mare.
 	AI_Output			(self, other, "DIA_Regis_Crew_13_01"); //Non posso aiutarti. Probabilmente dovresti dare un'occhiata al porto o forse alla taverna.
-	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Se ci sono rimasti dei marinai, probabilmente li troverai l‡.
+	AI_Output			(self, other, "DIA_Regis_Crew_13_02"); //Se ci sono rimasti dei marinai, probabilmente li troverai l√†.
 
 };
 

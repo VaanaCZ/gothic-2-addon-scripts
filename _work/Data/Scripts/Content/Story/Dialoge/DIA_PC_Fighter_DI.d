@@ -33,7 +33,7 @@ INSTANCE DIA_Gorn_DI_Hallo (C_INFO)
 	information	= DIA_Gorn_DI_Hallo_Info;
 	permanent	 = 	TRUE;
 
-	description = "È tutto pronto?";
+	description = "Ãˆ tutto pronto?";
 };                       
 
 FUNC INT DIA_Gorn_DI_Hallo_Condition()
@@ -50,11 +50,11 @@ FUNC VOID DIA_Gorn_DI_Hallo_Info()
 
 	if (ORkSturmDI == FALSE)
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //Finora sì. Ricorda, voglio un po' di azione.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_01"); //Finora sÃ¬. Ricorda, voglio un po' di azione.
 		}
 	else
 		{
-			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //Ci sono altri orchi laggiù? Mandameli qui, mi sono appena scaldato.
+			AI_Output (self ,other,"DIA_Gorn_DI_Hallo_12_02"); //Ci sono altri orchi laggiÃ¹? Mandameli qui, mi sono appena scaldato.
 		};
 };
 
@@ -109,7 +109,7 @@ FUNC VOID DIA_Gorn_DI_Teach_2H_5 ()
 {
 	if (B_TeachFightTalentPercent (self, other, NPC_TALENT_2H, 5, 100))
 	{
-		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Devi tenere più alta la tua arma. Un cieco potrebbe oltrepassare la tua guardia con il suo bastone.
+		AI_Output(self,other,"DIA_Gorn_DI_Teach_2H_5_12_00"); //Devi tenere piÃ¹ alta la tua arma. Un cieco potrebbe oltrepassare la tua guardia con il suo bastone.
 	};
 	Info_ClearChoices 	(DIA_Gorn_DI_Teach);
 	Info_AddChoice 		(DIA_Gorn_DI_Teach,	DIALOG_BACK		,DIA_Gorn_DI_Teach_Back);
@@ -148,7 +148,7 @@ var int DIA_Gorn_DI_UndeadDragonDead_OneTime;
 func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 {
 	AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_00"); //Sei rimasto alla nave?
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Certamente. Pensa a cosa succederebbe se non la trovassimo più.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_01"); //Certamente. Pensa a cosa succederebbe se non la trovassimo piÃ¹.
 
 	if (DIA_Gorn_DI_UndeadDragonDead_OneTime == FALSE)
 		{
@@ -157,24 +157,24 @@ func void DIA_Gorn_DI_UndeadDragonDead_Info ()
 				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_02"); //Ora cosa succede?
 				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_03"); //Nient'altro, voglio tornare a casa.
 				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_04"); //(ride) Casa? E dove sarebbe? Per quanto ne so, non esiste per te.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Ti do un suggerimento. Corriamo alla taverna più vicina e beviamo fino a crollare.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_05"); //Ti do un suggerimento. Corriamo alla taverna piÃ¹ vicina e beviamo fino a crollare.
 				AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_06"); //Mmmh, forse.
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Ehi, riprenditi, ragazzo. È finita.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_07"); //Ehi, riprenditi, ragazzo. Ãˆ finita.
 			};
 			DIA_Gorn_DI_UndeadDragonDead_OneTime = TRUE;
 		};
 	
 	if (Npc_KnowsInfo(other, DIA_Biff_DI_plunder))
 			{
-				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //Qualcuno deve andare a dirlo a Biff, altrimenti marcirà su quest'isola.
+				AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_08"); //Qualcuno deve andare a dirlo a Biff, altrimenti marcirÃ  su quest'isola.
 
 				if (Npc_IsDead(Biff_DI)== FALSE)
 					{
-						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //Tornerà in tempo.
+						AI_Output			(other ,self, "DIA_Gorn_DI_UndeadDragonDead_15_09"); //TornerÃ  in tempo.
 					};
 			};			
 	
-	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Non c'è nient'altro da fare qui, vai a dire al capitano di partire.
+	AI_Output			(self ,other, "DIA_Gorn_DI_UndeadDragonDead_12_10"); //Non c'Ã¨ nient'altro da fare qui, vai a dire al capitano di partire.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Start");
 };

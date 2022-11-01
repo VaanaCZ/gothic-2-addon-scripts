@@ -1,5 +1,5 @@
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (unwissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (unwissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_01(C_Item)
 {
@@ -22,7 +22,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 	
 	TEXT[2]			=   "Prendere PRECAUZIONI prima dell'uso!";
 	
-	TEXT[3]			= 	"PuÚ avere notevole influenza sulla mente";	
+	TEXT[3]			= 	"Pu√≤ avere notevole influenza sulla mente";	
 	TEXT[4]			= 	"o uccidere chi ne faccia uso";
 	
 	TEXT[5]			= 	NAME_Value;					
@@ -36,7 +36,7 @@ INSTANCE ItPo_Addon_Geist_01(C_Item)
 		self.attribute[ATR_HITPOINTS] = (self.attribute[ATR_HITPOINTS] -1000);
 	};
 /******************************************************************************************/
-//	Trank der Geistesver‰nderung (wissend zusammengebraut)																		//
+//	Trank der Geistesver√§nderung (wissend zusammengebraut)																		//
 /******************************************************************************************/
 INSTANCE ItPo_Addon_Geist_02(C_Item)
 {
@@ -59,7 +59,7 @@ INSTANCE ItPo_Addon_Geist_02(C_Item)
 	
 	TEXT[2]			=   "Prendere PRECAUZIONI prima dell'uso!";
 	
-	TEXT[3]			= 	"PuÚ avere notevole influenza sulla mente";	
+	TEXT[3]			= 	"Pu√≤ avere notevole influenza sulla mente";	
 	TEXT[4]			= 	"o uccidere chi ne faccia uso";
 	
 	TEXT[5]			= 	NAME_Value;					

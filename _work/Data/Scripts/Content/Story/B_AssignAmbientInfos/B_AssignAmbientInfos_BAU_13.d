@@ -43,7 +43,7 @@ FUNC INT DIA_BAU_13_JOIN_Condition()
 FUNC VOID DIA_BAU_13_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_13_JOIN_15_00"); //Parlami ancora di quei mercenari!
-	AI_Output (self, other, "DIA_BAU_13_JOIN_13_01"); //Se mai dovessi avere dei problemi con loro, vai a parlare con Lee. » quello che fanno i contadini. Egli Ë davvero severo con i suoi uomini.
+	AI_Output (self, other, "DIA_BAU_13_JOIN_13_01"); //Se mai dovessi avere dei problemi con loro, vai a parlare con Lee. √à quello che fanno i contadini. Egli √® davvero severo con i suoi uomini.
 	AI_Output (self, other, "DIA_BAU_13_JOIN_13_02"); //Ho visto uno di loro comportarsi male, e lui lo ha punito duramente.
 };
 
@@ -56,7 +56,7 @@ INSTANCE DIA_BAU_13_PEOPLE(C_INFO)
 	condition	= DIA_BAU_13_PEOPLE_Condition;
 	information	= DIA_BAU_13_PEOPLE_Info;
 	permanent	= TRUE;
-	description = "Chi Ë il capo, qui?";
+	description = "Chi √® il capo, qui?";
 };                       
 
 FUNC INT DIA_BAU_13_PEOPLE_Condition()
@@ -66,8 +66,8 @@ FUNC INT DIA_BAU_13_PEOPLE_Condition()
 
 FUNC VOID DIA_BAU_13_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_PEOPLE_15_00"); //Chi Ë il capo, qui?
-	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01"); //Se vuoi saperlo, per me sono i mercenari che comandano. Certo, Onar li paga, ma chiss‡ fino a quando accetteranno di prendere ordini da lui.
+	AI_Output (other, self, "DIA_BAU_13_PEOPLE_15_00"); //Chi √® il capo, qui?
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01"); //Se vuoi saperlo, per me sono i mercenari che comandano. Certo, Onar li paga, ma chiss√† fino a quando accetteranno di prendere ordini da lui.
 	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_02"); //Se ai mercenari dovesse passare per la mente che possono fare a meno di lui, non vorrei essere nei suoi panni.
 };
 
@@ -92,7 +92,7 @@ FUNC VOID DIA_BAU_13_LOCATION_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_13_LOCATION_15_00"); //Cosa mi dici di questa zona?
 	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_01"); //Ci sono tre fattorie qui. Quella di Onar a est e quella di Sekob al confine nord della valle.
-	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02"); //A sud-ovest c'Ë una strada che conduce all'altopiano. LÏ si trova la fattoria di Bengar.
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02"); //A sud-ovest c'√® una strada che conduce all'altopiano. L√¨ si trova la fattoria di Bengar.
 };
 
 // *************************************************************************
@@ -104,7 +104,7 @@ INSTANCE DIA_BAU_13_STANDARD(C_INFO)
 	condition	= DIA_BAU_13_STANDARD_Condition;
 	information	= DIA_BAU_13_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Novit‡?";
+	description = "Novit√†?";
 };                       
 func INT DIA_BAU_13_STANDARD_Condition()
 {
@@ -112,16 +112,16 @@ func INT DIA_BAU_13_STANDARD_Condition()
 };
 FUNC VOID DIA_BAU_13_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_STANDARD_15_00"); //Novit‡?
+	AI_Output (other, self, "DIA_BAU_13_STANDARD_15_00"); //Novit√†?
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_01"); //Le truppe provenienti dalla citt‡ non portano pi˘ via il nostro raccolto e il nostro bestiame! Ora che siamo in grado di difenderci da soli, preferiscono non rischiare!
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_01"); //Le truppe provenienti dalla citt√† non portano pi√π via il nostro raccolto e il nostro bestiame! Ora che siamo in grado di difenderci da soli, preferiscono non rischiare!
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_02"); //Ai paladini in citt‡ non importa niente di noi contadini. Se gli orchi dovessero attaccarci, dovremmo cavarcela da soli.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_02"); //Ai paladini in citt√† non importa niente di noi contadini. Se gli orchi dovessero attaccarci, dovremmo cavarcela da soli.
 	};
 
 	if (Kapitel == 3)
@@ -136,7 +136,7 @@ FUNC VOID DIA_BAU_13_STANDARD_Info()
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_05"); //Quando le tasse scenderanno e verremo pagati in maniera ragionevole per il nostro lavoro, allora faremo di nuovo affari con la citt‡.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_05"); //Quando le tasse scenderanno e verremo pagati in maniera ragionevole per il nostro lavoro, allora faremo di nuovo affari con la citt√†.
 	};
 };
 

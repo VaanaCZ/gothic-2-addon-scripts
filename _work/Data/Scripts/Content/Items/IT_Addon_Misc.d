@@ -28,7 +28,7 @@ INSTANCE ItMi_GoldNugget_Addon(C_Item)
 	
 };
 //---------------------------------------------------------------------
-//	Weiße Perle
+//	WeiÃŸe Perle
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_WhitePearl (C_Item)
 {
@@ -49,7 +49,7 @@ INSTANCE ItMi_Addon_WhitePearl (C_Item)
 	INV_ZBIAS			= INVCAM_ENTF_MISC_STANDARD;
 };
 //---------------------------------------------------------------------
-//	Grüner Novize
+//	GrÃ¼ner Novize
 //---------------------------------------------------------------------
 INSTANCE ItMi_Addon_Joint_01(C_Item)
 {
@@ -112,7 +112,7 @@ INSTANCE ItMi_BaltramPaket(C_Item)
 };
 
 //****************************************************************************
-//				Baltrams Lieferung für Skip
+//				Baltrams Lieferung fÃ¼r Skip
 //			---------------------------------------------
 //****************************************************************************
 INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
@@ -131,7 +131,7 @@ INSTANCE ItMi_Packet_Baltram4Skip_Addon (C_Item)
 	description			= 	name;
 	TEXT[2]				= 	"Questo pacchetto pesante";
 	TEXT[3]				=	"pieno di merce di valore.";
-	TEXT[4]				=	"è destinato al pirata Skip";
+	TEXT[4]				=	"Ã¨ destinato al pirata Skip";
 	
 };
 /******************************************************************************************/
@@ -148,7 +148,7 @@ INSTANCE ItMi_BromorsGeld_Addon (C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	name;
-	TEXT[2]				= 	"Il nome 'Bromor' è";
+	TEXT[2]				= 	"Il nome 'Bromor' Ã¨";
 	TEXT[3]				=	"inciso sul fondo";
 	TEXT[4]				=	"della scodella con un oggetto appuntito.";
 	TEXT[5]				= 	NAME_Value;	

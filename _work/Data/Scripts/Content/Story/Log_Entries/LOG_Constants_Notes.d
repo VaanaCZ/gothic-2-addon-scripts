@@ -1,9 +1,9 @@
 // *******************
 // LOG_Topic Constants 
 // -------------------
-// (für LOG_NOTE)
+// (fÃ¼r LOG_NOTE)
 // *******************
-// ------ Händler ------
+// ------ HÃ¤ndler ------
 const string	TOPIC_Trader_OC				=   "Commercio al castello";
 const string	TOPIC_CityTrader			=	"Commercio a Khorinis";
 const string	Topic_OutTrader				=	"Commercio nel mondo esterno";
@@ -29,6 +29,6 @@ const string	TOPIC_WispDetector			= 	"Il fuoco fatuo cercatore";
 const string	TOPIC_Language				= 	"La lingua dei costruttori";
 
 // ------ Sonstiges ------
-const string	Topic_Bonus					=	"Speciali"; //z.B. täglich essen abholen...
+const string	Topic_Bonus					=	"Speciali"; //z.B. tÃ¤glich essen abholen...
 const string	Topic_Diebesgilde			=	"La gilda dei ladri"; 
 

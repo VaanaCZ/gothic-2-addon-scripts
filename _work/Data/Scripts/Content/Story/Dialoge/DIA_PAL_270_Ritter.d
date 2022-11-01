@@ -43,13 +43,13 @@ func void DIA_Ritter_OUT_Info ()
 {
 	if (DIA_Ritter_OUT_NoPerm == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Vieni da Khorinis, non Ë vero? Quando tutto questo sar‡ finito, tornerÚ lÏ.
+		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Vieni da Khorinis, non √® vero? Quando tutto questo sar√† finito, torner√≤ l√¨.
 		DIA_Ritter_OUT_NoPerm = TRUE;
 	};
 	
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //Ci Ë di grande conforto avervi al nostro fianco, Signore.
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //Ci √® di grande conforto avervi al nostro fianco, Signore.
 		}
 		else
 		{

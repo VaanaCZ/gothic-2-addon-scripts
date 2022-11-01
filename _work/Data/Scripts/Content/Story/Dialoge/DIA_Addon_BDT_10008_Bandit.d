@@ -80,7 +80,7 @@ FUNC VOID DIA_Addon_10008_Bandit_Hi_Info()
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_00");//NON svegliarlo!
 	AI_Output (other, self, "DIA_Addon_10008_Bandit_Hi_15_01");//Cosa???
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_02");//Se vuoi fare un favore a te stesso, stai lontano da Skinner.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Quel tizio è imprevedibile. Ha ucciso l'ultimo che lo ha svegliato.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_03");//Quel tizio Ã¨ imprevedibile. Ha ucciso l'ultimo che lo ha svegliato.
 	AI_Output (self, other, "DIA_Addon_10008_Bandit_Hi_01_04");//Lascialo dormire, per il bene di tutti.
 };
 //--------------------------------------------------------------------
@@ -102,14 +102,14 @@ FUNC INT DIA_Addon_10008_Bandit_soup_Condition()
 FUNC VOID DIA_Addon_10008_Bandit_soup_Info()
 {
 	AI_Output (other, self, "DIA_Addon_10008_Bandit_soup_15_00");//Sei uno scavatore?
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//Per i pantaloni? No, li porto solo perché sono comodi.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Qui non faccio altro che preparare lo stufato di carne. Ecco, provane un po': ti renderà più forte.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_01");//Per i pantaloni? No, li porto solo perchÃ© sono comodi.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_02");//Qui non faccio altro che preparare lo stufato di carne. Ecco, provane un po': ti renderÃ  piÃ¹ forte.
 	B_GiveInvItems (self, other, ItFo_Addon_Meatsoup,1);
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//È sempre importante mantenersi in forze: qui attorno ci sono molti pericoli.
-	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Se vuoi, posso aiutarti a diventare più forte.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_03");//Ãˆ sempre importante mantenersi in forze: qui attorno ci sono molti pericoli.
+	AI_Output (self, other, "DIA_Addon_10008_Bandit_soup_01_04");//Se vuoi, posso aiutarti a diventare piÃ¹ forte.
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Il brigante che sta badando allo stufato può aiutarmi a migliorare la mia forza.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Il brigante che sta badando allo stufato puÃ² aiutarmi a migliorare la mia forza.");	
 };
 //*******************************************
 //	TechPlayer
@@ -122,7 +122,7 @@ INSTANCE DIA_Addon_10008_Bandit_Teach(C_INFO)
 	condition	= DIA_Addon_10008_Bandit_Teach_Condition;
 	information	= DIA_Addon_10008_Bandit_Teach_Info;
 	permanent	= TRUE;
-	description = "Voglio diventare più forte.";
+	description = "Voglio diventare piÃ¹ forte.";
 };                       
 
 FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
@@ -134,7 +134,7 @@ FUNC INT DIA_Addon_10008_Bandit_Teach_Condition()
 };
 FUNC VOID DIA_Addon_10008_Bandit_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Voglio essere più forte.
+	AI_Output (other,self ,"DIA_Addon_10008_Bandit_Teach_15_00"); //Voglio essere piÃ¹ forte.
 
 	Info_ClearChoices 	(DIA_Addon_10008_Bandit_Teach);
 	Info_AddChoice		(DIA_Addon_10008_Bandit_Teach, DIALOG_BACK, DIA_Addon_10008_Bandit_Teach_Back);

@@ -31,7 +31,7 @@ instance DIA_Wulfgar_Hallo		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Hallo_Condition;
 	information	 = 	DIA_Wulfgar_Hallo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Sarà un compito facile?";
+	description	 = 	"SarÃ  un compito facile?";
 };
 
 func int DIA_Wulfgar_Hallo_Condition ()
@@ -41,9 +41,9 @@ func int DIA_Wulfgar_Hallo_Condition ()
 
 func void DIA_Wulfgar_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //Sarà un compito facile?
+	AI_Output (other, self, "DIA_Wulfgar_Hallo_15_00"); //SarÃ  un compito facile?
 	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_01"); //(sprezzante) Questi ragazzi brandiscono le spade come contadini.
-	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(convinto) Ma quando avrò finito con loro, saranno tutti dei veri guerrieri.
+	AI_Output (self, other, "DIA_Wulfgar_Hallo_04_02"); //(convinto) Ma quando avrÃ² finito con loro, saranno tutti dei veri guerrieri.
 };
 
 // *************************************************
@@ -75,13 +75,13 @@ func void DIA_Wulfgar_WannaJoin_Info ()
 	if (Player_IsApprentice == APP_NONE)
 	{
 		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_02"); //No.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //Allora Lord Andre non ti accetterà.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Certo, puoi andare a parlargli, ma non credo che farà un'eccezione per te.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_03"); //Allora Lord Andre non ti accetterÃ .
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_04"); //Certo, puoi andare a parlargli, ma non credo che farÃ  un'eccezione per te.
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_05"); //Sì.
-		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //Allora parla con Lord Andre. È lui che decide chi viene accettato qui.
+		AI_Output (other, self, "DIA_Wulfgar_WannaJoin_15_05"); //SÃ¬.
+		AI_Output (self, other, "DIA_Wulfgar_WannaJoin_04_06"); //Allora parla con Lord Andre. Ãˆ lui che decide chi viene accettato qui.
 	};
 };
 
@@ -95,7 +95,7 @@ instance DIA_Wulfgar_AboutMiliz		(C_INFO)
 	condition	 = 	DIA_Wulfgar_AboutMiliz_Condition;
 	information	 = 	DIA_Wulfgar_AboutMiliz_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Com’è la vita nella guardia cittadina?";
+	description	 = 	"Comâ€™Ã¨ la vita nella guardia cittadina?";
 };
 
 func int DIA_Wulfgar_AboutMiliz_Condition ()
@@ -109,8 +109,8 @@ func int DIA_Wulfgar_AboutMiliz_Condition ()
 
 func void DIA_Wulfgar_AboutMiliz_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Com’è la vita nella guardia cittadina?
-	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //Lord Andre è il nostro comandante ora.
+	AI_Output (other, self, "DIA_Wulfgar_AboutMiliz_15_00"); //Comâ€™Ã¨ la vita nella guardia cittadina?
+	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_01"); //Lord Andre Ã¨ il nostro comandante ora.
 	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_02"); //La guardia citadina faceva rapporto al governatore. (ride) Egli non aveva la minima idea di cosa facciamo qui.
 	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_03"); //Ma Lord Andre sa il fatto suo. Egli si prende cura dei suoi uomini.
 	AI_Output (self, other, "DIA_Wulfgar_AboutMiliz_04_04"); //Tutti i nuovi arrivati ricevono un'armatura decente e una buona spada.
@@ -142,7 +142,7 @@ func int DIA_Wulfgar_CanYouTrain_Condition ()
 func void DIA_Wulfgar_CanYouTrain_Info ()
 {
 	AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_00"); //Puoi insegnarmi anche come combattere con la spada?
-	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre ha ordinato di addestrare tutti coloro che sono in grado di difendere la città.
+	AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_01"); //Lord Andre ha ordinato di addestrare tutti coloro che sono in grado di difendere la cittÃ .
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
 	{
@@ -152,10 +152,10 @@ func void DIA_Wulfgar_CanYouTrain_Info ()
 	{
 		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_03"); //Ma la cosa vale solo per l'addestramento al combattimento. Tutte le altre aree di addestramento sono riservate alla guardia cittadina.
 		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_04"); //Sai almeno tenere una spada in mano?
-		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Credo di sì...
+		AI_Output (other, self, "DIA_Wulfgar_CanYouTrain_15_05"); //Credo di sÃ¬...
 		AI_Output (self, other, "DIA_Wulfgar_CanYouTrain_04_06"); //(sospira) D'accordo, possiamo cominciare quando sei pronto.
 		Log_CreateTopic (Topic_CityTeacher, LOG_NOTE);
-		B_LogEntry (Topic_CityTeacher, "Wulfgar, la guardia cittadina, può insegnarmi il combattimento con le armi a una e a due mani.");
+		B_LogEntry (Topic_CityTeacher, "Wulfgar, la guardia cittadina, puÃ² insegnarmi il combattimento con le armi a una e a due mani.");
 		Wulfgar_Teach1H = TRUE;	
 	};
 };
@@ -170,7 +170,7 @@ instance DIA_Wulfgar_Advantage		(C_INFO)
 	condition	 = 	DIA_Wulfgar_Advantage_Condition;
 	information	 = 	DIA_Wulfgar_Advantage_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Quali sono i vantaggi di un’arma a una o a due mani?";
+	description	 = 	"Quali sono i vantaggi di unâ€™arma a una o a due mani?";
 };
 
 func int DIA_Wulfgar_Advantage_Condition ()
@@ -184,9 +184,9 @@ func int DIA_Wulfgar_Advantage_Condition ()
 
 func void DIA_Wulfgar_Advantage_Info ()
 {
-	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Quali sono i vantaggi di un’arma a una o a due mani?
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //È molto semplice. Con un'arma a una sola mano sei più veloce. Può rivelarsi un vantaggio fondamentale in battaglia.
-	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Le armi a due mani sono più pesanti. Devi usarle con prudenza, ma infliggono più danni quando vanno a segno.
+	AI_Output (other, self, "DIA_Wulfgar_Advantage_15_00"); //Quali sono i vantaggi di unâ€™arma a una o a due mani?
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_01"); //Ãˆ molto semplice. Con un'arma a una sola mano sei piÃ¹ veloce. PuÃ² rivelarsi un vantaggio fondamentale in battaglia.
+	AI_Output (self, other, "DIA_Wulfgar_Advantage_04_02"); //Le armi a due mani sono piÃ¹ pesanti. Devi usarle con prudenza, ma infliggono piÃ¹ danni quando vanno a segno.
 };
 
 // *************************************************
@@ -217,8 +217,8 @@ func void DIA_Wulfgar_HowToBegin_Info ()
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_01"); //Dipende da te.
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_02"); //Se ti specializzi in un solo tipo di arma, imparerai automaticamente anche l'altra allo stesso tempo.
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_03"); //Per esempio, se sei bravo a combattere con le armi a una mano, ma sei ancora un principiante con quelle a due mani...
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...le tue abilità con le armi a due mani miglioreranno ogni volta che ti alleni con quelle a una mano sola.
-	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //In quel caso, l'addestramento è più faticoso piuttosto che se scegliessi di allenarti con entrambi i tipi di armi.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_04"); //...le tue abilitÃ  con le armi a due mani miglioreranno ogni volta che ti alleni con quelle a una mano sola.
+	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_05"); //In quel caso, l'addestramento Ã¨ piÃ¹ faticoso piuttosto che se scegliessi di allenarti con entrambi i tipi di armi.
 	AI_Output (self, other, "DIA_Wulfgar_HowToBegin_04_06"); //Inizia e capirai presto di cosa parlo.
 };
 
@@ -232,7 +232,7 @@ INSTANCE DIA_Wulfgar_Teach(C_INFO)
 	condition	= DIA_Wulfgar_Teach_Condition;
 	information	= DIA_Wulfgar_Teach_Info;
 	permanent	= TRUE;
-	description = "Diamo inizio all’addestramento.";
+	description = "Diamo inizio allâ€™addestramento.";
 };                       
 
 FUNC INT DIA_Wulfgar_Teach_Condition()
@@ -246,7 +246,7 @@ FUNC INT DIA_Wulfgar_Teach_Condition()
  
 FUNC VOID DIA_Wulfgar_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Wulfgar_Teach_15_00"); //Diamo inizio all’addestramento.
+	AI_Output (other,self ,"DIA_Wulfgar_Teach_15_00"); //Diamo inizio allâ€™addestramento.
 	
 	if (other.guild == GIL_SLD)
 	|| (other.guild == GIL_DJG)
@@ -348,11 +348,11 @@ FUNC INT DIA_Wulfgar_AlsMil_Condition()
  
 FUNC VOID DIA_Wulfgar_AlsMil_Info()
 {	
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //Così Lord Andre ti ha accettato!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_00"); //CosÃ¬ Lord Andre ti ha accettato!
 	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_01"); //Mi aspetto che tu venga qui e ti alleni regolarmente.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga ti addestrerà con la balestra e Mortis ti aiuterà a migliorare la tua forza.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Ma la cosa più importante è imparare a usare la spada in modo appropriato.
-	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //Farò di te un ottimo guerriero!
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_02"); //Ruga ti addestrerÃ  con la balestra e Mortis ti aiuterÃ  a migliorare la tua forza.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_03"); //Ma la cosa piÃ¹ importante Ã¨ imparare a usare la spada in modo appropriato.
+	AI_Output (self, other, "DIA_Wulfgar_AlsMil_04_04"); //FarÃ² di te un ottimo guerriero!
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -378,7 +378,7 @@ func int DIA_Wulfgar_Bonus_Condition ()
 };
 func void DIA_Wulfgar_Bonus_Info ()
 {
-	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Sei già in piedi? A quest'ora di solito sono solo. Ma dato che sei qui, potresti approfittarne per imparare qualcosa.
+	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_00"); //Sei giÃ  in piedi? A quest'ora di solito sono solo. Ma dato che sei qui, potresti approfittarne per imparare qualcosa.
 	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_01"); //Fai attenzione, dunque. Puoi ingannare alcuni avversari schivando i loro colpi e attaccando al momento giusto.
 	AI_Output (self, other, "DIA_Wulfgar_Bonus_04_02"); //Ricordatelo la prossima volta che combatterai!
 	

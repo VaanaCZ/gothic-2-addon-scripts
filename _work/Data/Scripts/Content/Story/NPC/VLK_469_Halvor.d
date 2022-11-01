@@ -21,7 +21,7 @@ instance VLK_469_Halvor (Npc_Default)
 	EquipItem	(self, ItMw_1H_Mace_L_03); 
 	
 	// ------ Inventory ------
-	// Händler
+	// HÃ¤ndler
 		
 	// ------ visuals ------																			
 	B_SetNpcVisual 		(self, MALE, "Hum_Head_Bald", Face_N_NormalBart11, BodyTex_N,ITAR_Vlk_M);	

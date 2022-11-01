@@ -30,7 +30,7 @@ instance DIA_Addon_Myxir_CITY_HelloCITY		(C_INFO)
 	information	 = 	DIA_Addon_Myxir_CITY_HelloCITY_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Tu resterai in citt‡?";
+	description	 = 	"Tu resterai in citt√†?";
 };
 
 func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
@@ -40,7 +40,7 @@ func int DIA_Addon_Myxir_CITY_HelloCITY_Condition ()
 var int DIA_Addon_Myxir_CITY_HelloCITY_OneTime;
 func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Tu resterai in citt‡?
+	AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_00"); //Tu resterai in citt√†?
 	AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_01"); //Uno di noi deve restare qui, nel caso Vatras vada via.
 	
 	VatrasAbloeseIstDa = TRUE;

@@ -43,14 +43,14 @@ func void DIA_Mil_309_Stadtwache_Hallo_Info ()
 	|| (hero.guild == GIL_PAL)
 	|| (hero.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_01"); //È tutto tranquillo. Dobbiamo comunque tenere gli occhi aperti.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_01"); //Ãˆ tutto tranquillo. Dobbiamo comunque tenere gli occhi aperti.
 	}
 	else if (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&& (MIl_309_News < 1)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //Stammi a sentire. Non possiamo farti entrare in città.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Ma ti darò un consiglio, e gratis per giunta.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Stai alla larga da questa foresta di fronte a noi, è infestata da bestie feroci.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //Stammi a sentire. Non possiamo farti entrare in cittÃ .
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Ma ti darÃ² un consiglio, e gratis per giunta.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Stai alla larga da questa foresta di fronte a noi, Ã¨ infestata da bestie feroci.
 		
 		MIl_309_News = 1;
 	}
@@ -63,7 +63,7 @@ func void DIA_Mil_309_Stadtwache_Hallo_Info ()
 	if  (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&&  (MIl_309_News < 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Ascolta, ora puoi entrare in città, ma non significa che tu possa fare ciò che ti pare qui intorno.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Ascolta, ora puoi entrare in cittÃ , ma non significa che tu possa fare ciÃ² che ti pare qui intorno.
 		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Se non rispetterai le regole, perderai tutti i tuoi diritti qui!
 		
 		MIl_309_News = 2;

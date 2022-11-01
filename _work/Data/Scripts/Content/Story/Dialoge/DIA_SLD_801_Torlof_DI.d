@@ -45,11 +45,11 @@ FUNC INT DIA_Torlof_DI_Hallo_Condition()
 
 FUNC VOID DIA_Torlof_DI_Hallo_Info()
 {
-	AI_Output (other,self ,"DIA_Torlof_DI_Hallo_15_00"); //» tutto tranquillo?
+	AI_Output (other,self ,"DIA_Torlof_DI_Hallo_15_00"); //√à tutto tranquillo?
 
 	if (ORkSturmDI == FALSE)
 	{
-		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Finora sÏ. Ma le cose potrebbero cambiare in un istante. Fai attenzione.
+		AI_Output (self ,other,"DIA_Torlof_DI_Hallo_01_01"); //Finora s√¨. Ma le cose potrebbero cambiare in un istante. Fai attenzione.
 	}
 	else
 	{
@@ -70,7 +70,7 @@ INSTANCE DIA_Torlof_DI_Teach (C_INFO)
 	condition	= DIA_Torlof_DI_Teach_Condition;
 	information	= DIA_Torlof_DI_Teach_Info;
 	permanent	= TRUE;
-	description = "Voglio migliorare le mie abilit‡!";
+	description = "Voglio migliorare le mie abilit√†!";
 };                       
 
 FUNC INT DIA_Torlof_DI_Teach_Condition()
@@ -83,7 +83,7 @@ FUNC INT DIA_Torlof_DI_Teach_Condition()
  
 FUNC VOID DIA_Torlof_DI_Teach_Info()
 {	
-	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //Voglio migliorare le mie abilit‡!
+	AI_Output (other,self ,"DIA_Torlof_DI_Teach_15_00"); //Voglio migliorare le mie abilit√†!
 	
 	Info_ClearChoices (DIA_Torlof_DI_Teach); 
 	Info_AddChoice		(DIA_Torlof_DI_Teach, DIALOG_BACK, DIA_Torlof_DI_Teach_Back);
@@ -173,7 +173,7 @@ func void DIA_Torlof_DI_UndeadDragonDead_Info ()
 
 	Info_ClearChoices	(DIA_Torlof_DI_UndeadDragonDead);
 	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "Mi serve ancora qualche minuto.", DIA_Torlof_DI_UndeadDragonDead_moment );
-	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "SÏ. » finita. Andiamo.", DIA_Torlof_DI_UndeadDragonDead_over );
+	Info_AddChoice	(DIA_Torlof_DI_UndeadDragonDead, "S√¨. √à finita. Andiamo.", DIA_Torlof_DI_UndeadDragonDead_over );
 	
 };
 func void DIA_Torlof_DI_UndeadDragonDead_moment ()

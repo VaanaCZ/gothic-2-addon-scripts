@@ -88,26 +88,26 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	}
 	else if (randy == 0)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Non c'è niente di meglio di una buona pinta fresca dopo il lavoro.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Non c'Ã¨ niente di meglio di una buona pinta fresca dopo il lavoro.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 1)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//I paladini sistemeranno tutto, perciò prenditi un'altra birra e divertiti.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//I paladini sistemeranno tutto, perciÃ² prenditi un'altra birra e divertiti.
 		
 		B_GiveInvItems (self, other, ItFo_Beer,1);
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 2)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Si può dire quello che si vuole di Khorinis, ma il nostro 'paladino oscuro' è il migliore di tutta Myrtana.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//Si puÃ² dire quello che si vuole di Khorinis, ma il nostro 'paladino oscuro' Ã¨ il migliore di tutta Myrtana.
 		AI_StopProcessInfos (self);
 	};
 };
 
 /*
-	Wenn du ein Problem hast und es lässt sich lösen, dann denk nicht weiter drüber nach.
-	Und wenn du es nicht lösen kannst, dann brauchst du auch nicht weiter drüber nachzudenken. 
+	Wenn du ein Problem hast und es lÃ¤sst sich lÃ¶sen, dann denk nicht weiter drÃ¼ber nach.
+	Und wenn du es nicht lÃ¶sen kannst, dann brauchst du auch nicht weiter drÃ¼ber nachzudenken. 
 */
 
 

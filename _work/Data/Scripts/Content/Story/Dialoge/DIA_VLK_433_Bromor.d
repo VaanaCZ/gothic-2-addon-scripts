@@ -49,7 +49,7 @@ func void DIA_Bromor_GIRLS_Info ()
 	//AI_Output (other, self, "DIA_Bromor_GIRLS_15_00"); //Voglio divertirmi.
 	//AI_Output (self, other, "DIA_Bromor_GIRLS_07_01"); //Deshalb bist du ja hergekommen.
 
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Io sono Bromor. Questa Ë la mia casa e queste sono le mie ragazze. Mi piacciono le mie ragazze.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Io sono Bromor. Questa √® la mia casa e queste sono le mie ragazze. Mi piacciono le mie ragazze.
 	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //E se piacciono anche a te, dovrai pagare 50 pezzi d'oro.
 	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //E non farti venire idee strane.
 };
@@ -64,7 +64,7 @@ instance DIA_Addon_Bromor_MissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Bromor_MissingPeople_Condition;
 	information	 = 	DIA_Addon_Bromor_MissingPeople_Info;
 
-	description	 = 	"» tutto a posto con le tue ragazze?";
+	description	 = 	"√à tutto a posto con le tue ragazze?";
 };
 
 func int DIA_Addon_Bromor_MissingPeople_Condition ()
@@ -79,15 +79,15 @@ func int DIA_Addon_Bromor_MissingPeople_Condition ()
 
 func void DIA_Addon_Bromor_MissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //» tutto a posto con le tue ragazze?
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //√à tutto a posto con le tue ragazze?
 	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //Tutto in regola, certo. Pensi che voglia finire in galera per una cosa del genere?
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(irritato) Ehm... non mi riferivo ai loro contratti. Voglio dire, sono tutte PRESENTI? O qualcuna Ë scomparsa?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //Oh. SÏ, effettivamente una delle mie ragazze se n'Ë andata. Si chiama Lucia.
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(irritato) Ehm... non mi riferivo ai loro contratti. Voglio dire, sono tutte PRESENTI? O qualcuna √® scomparsa?
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //Oh. S√¨, effettivamente una delle mie ragazze se n'√® andata. Si chiama Lucia.
 	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //Ho anche fatto rapporto alla milizia, ma finora non hanno trovato alcuna traccia di lei.
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Una prostituta di nome Lucia Ë scomparsa dal bordello vicino al porto."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Una prostituta di nome Lucia √® scomparsa dal bordello vicino al porto."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -118,8 +118,8 @@ func void DIA_Addon_Bromor_Lucia_Info ()
 	AI_Output	(other, self, "DIA_Addon_Bromor_Lucia_15_00"); //Da quanto tempo manca Lucia?
 	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_01"); //Da diversi giorni, non so di preciso.
 	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //Presumo sia scappata con uno dei suoi ammiratori.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Quella stronza se n'Ë andata portandosi dietro un mio prezioso piatto d'oro.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Ma se la becco gliela farÚ pagare.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Quella stronza se n'√® andata portandosi dietro un mio prezioso piatto d'oro.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Ma se la becco gliela far√≤ pagare.
 	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_05"); //Ma a te che importa? Ti stai prendendo gioco di me, per caso?
 
 	Log_CreateTopic (TOPIC_Addon_BromorsGold, LOG_MISSION);
@@ -166,7 +166,7 @@ func void DIA_Addon_Bromor_LuciaGold_Info ()
 	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Ecco il tuo piatto.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Non vuoi sapere cosa ne Ë stato di Lucia?", DIA_Addon_Bromor_LuciaGold_lucia );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Non vuoi sapere cosa ne √® stato di Lucia?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};
 };
 func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
@@ -182,8 +182,8 @@ func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
 var int DIA_Addon_Bromor_LuciaGold_lucia_OneTime;
 func void DIA_Addon_Bromor_LuciaGold_lucia ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //Non vuoi sapere cosa ne Ë stato di Lucia?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //No. PerchÈ? Ho riavuto il mio piatto, no?
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //Non vuoi sapere cosa ne √® stato di Lucia?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //No. Perch√©? Ho riavuto il mio piatto, no?
 	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //Non m'importa che Lucia torni. Posso cavarmela benissimo anche senza di lei.
 	DIA_Addon_Bromor_LuciaGold_lucia_OneTime = TRUE;
 };
@@ -195,22 +195,22 @@ func void DIA_Addon_Bromor_LuciaGold_lohn ()
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Non vuoi sapere cosa ne Ë stato di Lucia?", DIA_Addon_Bromor_LuciaGold_lucia );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Non vuoi sapere cosa ne √® stato di Lucia?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};	
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Non Ë abbastanza.", DIA_Addon_Bromor_LuciaGold_mehr );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Non √® abbastanza.", DIA_Addon_Bromor_LuciaGold_mehr );
 	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "D'accordo. Ecco il tuo piatto.", DIA_Addon_Bromor_LuciaGold_geben );
 };
 func void DIA_Addon_Bromor_LuciaGold_mehr ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //Non Ë abbastanza.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //Se non ti sta bene, vattene e non tornare pi˘ qui.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //Non √® abbastanza.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //Se non ti sta bene, vattene e non tornare pi√π qui.
 	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Scordatelo.", DIA_Addon_Bromor_LuciaGold_nein );
 };
 func void DIA_Addon_Bromor_LuciaGold_nein ()
 {
 	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_nein_15_00"); //Scordatelo.
 	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //Allora esci subito dal mio locale, bastardo.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //E non farti pi˘ vedere qui.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //E non farti pi√π vedere qui.
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	Bromor_Hausverbot = TRUE;
 	Bromor_Pay = 0;
@@ -219,7 +219,7 @@ func void DIA_Addon_Bromor_LuciaGold_geben ()
 {
 	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //D'accordo. Ecco il tuo piatto.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Grazie. Vai da Nadja. Ti accompagner‡ al piano di sopra.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Grazie. Vai da Nadja. Ti accompagner√† al piano di sopra.
 	Bromor_Pay = 1; 
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
@@ -237,7 +237,7 @@ instance DIA_Bromor_Pay		(C_INFO)
 	condition	 = 	DIA_Bromor_Pay_Condition;
 	information	 = 	DIA_Bromor_Pay_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Voglio divertirmi (paga 50 monete díoro)";
+	description	 = 	"Voglio divertirmi (paga 50 monete d‚Äôoro)";
 };
 
 func int DIA_Bromor_Pay_Condition ()
@@ -299,7 +299,7 @@ func int DIA_Bromor_DOPE_Condition ()
 };
 func void DIA_Bromor_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //Posso avere anche merce ìspecialeî, qui?
+	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //Posso avere anche merce ‚Äúspeciale‚Äù, qui?
 	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //Certo, tutte le mie ragazze sono molto speciali (sogghigna).
 	AI_Output (self, other, "DIA_Bromor_DOPE_07_02"); //Se hai abbastanza oro, puoi andare al piano di sopra con Nadja.
 };

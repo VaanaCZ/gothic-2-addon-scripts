@@ -33,8 +33,8 @@ INSTANCE MENUITEM_LEAVE_GAME_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LEAVE_GAME_YES(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Sì.";
-	text[1]		= "Sì, tornerò più tardi."; // Kommentar
+	text[0]		= "SÃ¬.";
+	text[1]		= "SÃ¬, tornerÃ² piÃ¹ tardi."; // Kommentar
 	
 	// Position und Dimension	
 	posx		=    0;		posy		= 4400;	

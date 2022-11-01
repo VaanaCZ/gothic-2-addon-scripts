@@ -45,10 +45,10 @@ FUNC INT DIA_MiltenOW_Hello_Condition()
 };
 FUNC VOID DIA_MiltenOW_Hello_Info()
 {	
-	AI_Output	(self ,other,"DIA_MiltenOW_Hello_03_00");//Guarda chi è tornato! Il nostro eroe della Barriera!
+	AI_Output	(self ,other,"DIA_MiltenOW_Hello_03_00");//Guarda chi Ã¨ tornato! Il nostro eroe della Barriera!
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
-	Info_AddChoice (DIA_MiltenOW_Hello,"È un piacere vederti, Milten.",DIA_MiltenOW_Hello_YES);
+	Info_AddChoice (DIA_MiltenOW_Hello,"Ãˆ un piacere vederti, Milten.",DIA_MiltenOW_Hello_YES);
 	Info_AddChoice (DIA_MiltenOW_Hello,"Ci conosciamo?",DIA_MiltenOW_Hello_NO);
 };
 	// ------------------------------------
@@ -61,9 +61,9 @@ FUNC VOID DIA_MiltenOW_Hello_Info()
 FUNC VOID DIA_MiltenOW_Hello_YES()
 {
 	AI_Output	(other,self ,"DIA_MiltenOW_Hello_YES_15_00");//Felice di vederti, Milten. Sei ancora qui, oppure nuovamente qui?
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_01");//Nuovamente. Dopo che la Barriera è crollata mi sono unito al monastero dei Maghi del Fuoco.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_02");//Ma quando è stato chiaro che i paladini volessero venire qui, la mia esperienza e la mia conoscenza del luogo si sono rivelate abbastanza utili.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_03");//Così hanno deciso di affidarmi la sacra missione di fornire supporto magico a questa spedizione.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_01");//Nuovamente. Dopo che la Barriera Ã¨ crollata mi sono unito al monastero dei Maghi del Fuoco.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_02");//Ma quando Ã¨ stato chiaro che i paladini volessero venire qui, la mia esperienza e la mia conoscenza del luogo si sono rivelate abbastanza utili.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_YES_03_03");//CosÃ¬ hanno deciso di affidarmi la sacra missione di fornire supporto magico a questa spedizione.
 	B_Milten_GornDiegoLester();
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
@@ -77,18 +77,18 @@ FUNC VOID DIA_MiltenOW_Hello_NO()
 	B_Milten_GornDiegoLester();
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
-	Info_AddChoice (DIA_MiltenOW_Hello,"Allora, cosa c’è da riferire?",DIA_MiltenOW_Hello_Friends);
+	Info_AddChoice (DIA_MiltenOW_Hello,"Allora, cosa câ€™Ã¨ da riferire?",DIA_MiltenOW_Hello_Friends);
 	Info_AddChoice (DIA_MiltenOW_Hello,"Quei nomi non mi dicono assolutamente nulla.",DIA_MiltenOW_Hello_Forget);
 };
 FUNC VOID DIA_MiltenOW_Hello_Friends()
 {
 	AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_00");//Certo che mi ricordo dei ragazzi.
 	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_01");//Beh, Gorn e Diego non sono andati lontano. Sono stati acciuffati dai paladini qui nella valle.
-	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_02");//Lester è scomparso, però non ho idea dove sia finito.
+	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_02");//Lester Ã¨ scomparso, perÃ² non ho idea dove sia finito.
 	
 	if (Npc_KnowsInfo (other, DIA_Lester_Hello)) 
 	{
-		AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_03");//Ho incontrato Lester, è con Xardas al momento.
+		AI_Output	(other,self ,"DIA_MiltenOW_Hello_Friends_15_03");//Ho incontrato Lester, Ã¨ con Xardas al momento.
 		AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_04");//Una buona notizia, finalmente.
 	};
 	AI_Output 	(self ,other,"DIA_MiltenOW_Hello_Friends_03_05");//Beh, non ho nient'altro di piacevole da riferire.
@@ -99,8 +99,8 @@ FUNC VOID DIA_MiltenOW_Hello_Friends()
 FUNC VOID DIA_MiltenOW_Hello_Forget()
 {
 	AI_Output (other,self ,"DIA_MiltenOW_Hello_Forget_15_00");//Quei nomi non mi dicono assolutamente nulla.
-	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_01");//Hai dimenticato molte cose, non è vero? Beh, mettiamo da parte il passato e pensiamo al presente.
-	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_02");//Anche se non c'è niente di piacevole da riferire.
+	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_01");//Hai dimenticato molte cose, non Ã¨ vero? Beh, mettiamo da parte il passato e pensiamo al presente.
+	AI_Output (self ,other,"DIA_MiltenOW_Hello_Forget_03_02");//Anche se non c'Ã¨ niente di piacevole da riferire.
 	
 	Info_ClearChoices (DIA_MiltenOW_Hello);
 };
@@ -114,7 +114,7 @@ INSTANCE DIA_MiltenOW_Bericht(C_INFO)
 	condition	= DIA_MiltenOW_Bericht_Condition;
 	information	= DIA_MiltenOW_Bericht_Info;
 	permanent	= FALSE;
-	description = "Allora, cosa c’è da riferire?";
+	description = "Allora, cosa câ€™Ã¨ da riferire?";
 };                       
 
 FUNC INT DIA_MiltenOW_Bericht_Condition()
@@ -126,7 +126,7 @@ FUNC INT DIA_MiltenOW_Bericht_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Bericht_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Bericht_15_00");//Allora, cosa c’è da riferire?
+	AI_Output (other,self ,"DIA_MiltenOW_Bericht_15_00");//Allora, cosa câ€™Ã¨ da riferire?
 	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_01");//I paladini sono venuti qui con l'intenzione di estrarre il metallo magico.
 	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_02");//Ma dopo gli attacchi dei draghi e degli orchi, non riesco a credere che i paladini marceranno fuori di qui con il metallo.
 	AI_Output (self ,other,"DIA_MiltenOW_Bericht_03_03");//No, per Innos, avverto la presenza di qualcosa di oscuro... qualcosa di malvagio sta sorgendo qui. Qualcosa che scaturisce da questa valle.
@@ -156,13 +156,13 @@ FUNC INT DIA_MiltenOW_Erz_Condition()
 FUNC VOID DIA_MiltenOW_Erz_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Erz_15_00");//Quanto metallo avete messo da parte, finora?
-	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_01");//Quanto metallo...? Neanche una cassa! Non riceviamo più notizie dei minatori da parecchio tempo.
+	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_01");//Quanto metallo...? Neanche una cassa! Non riceviamo piÃ¹ notizie dei minatori da parecchio tempo.
 	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_02");//Non sarei sorpreso se fossero tutti morti da tempo. E noi siamo attaccati dai draghi e assediati dagli orchi!
-	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_03");//Questa spedizione è un completo disastro.
+	AI_Output (self ,other,"DIA_MiltenOW_Erz_03_03");//Questa spedizione Ã¨ un completo disastro.
 	
 };
 /*	
-	Diesen Blick kenne ich, den hattest Du auch kurz bevor Du in den Schläfertempel gegangen bist.
+	Diesen Blick kenne ich, den hattest Du auch kurz bevor Du in den SchlÃ¤fertempel gegangen bist.
 */
 // ************************************************************
 // 		Wo sind Gorn und Diego?	  				  
@@ -188,8 +188,8 @@ FUNC INT DIA_MiltenOW_Wo_Condition()
 FUNC VOID DIA_MiltenOW_Wo_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Wo_Forget_15_00");//Dove sono Gorn e Diego?
-	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_01");//Beh, Gorn è chiuso nei sotterranei poiché si è opposto all'arresto.
-	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_02");//Hanno assegnato Diego a un gruppo di minatori, chiedi al paladino Parcival, è lui che ha diviso i gruppi.
+	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_01");//Beh, Gorn Ã¨ chiuso nei sotterranei poichÃ© si Ã¨ opposto all'arresto.
+	AI_Output (self ,other,"DIA_MiltenOW_Wo_Forget_03_02");//Hanno assegnato Diego a un gruppo di minatori, chiedi al paladino Parcival, Ã¨ lui che ha diviso i gruppi.
 	
 	KnowsAboutGorn = TRUE; 
 	SearchForDiego = LOG_RUNNING; 
@@ -218,9 +218,9 @@ FUNC INT DIA_MiltenOW_Gorn_Condition()
 FUNC VOID DIA_MiltenOW_Gorn_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_00");//Andiamo a liberare Gorn!
-	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_01");//Beh, il problema è che Gorn è un detenuto prigioniero.
-	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_02");//Ma se siamo fortunati Garond accetterà uno scambio, e potremo comprare la sua libertà.
-	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_03");//Sì, forse...
+	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_01");//Beh, il problema Ã¨ che Gorn Ã¨ un detenuto prigioniero.
+	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_02");//Ma se siamo fortunati Garond accetterÃ  uno scambio, e potremo comprare la sua libertÃ .
+	AI_Output (other,self ,"DIA_MiltenOW_Gorn_15_03");//SÃ¬, forse...
 	AI_Output (self ,other,"DIA_MiltenOW_Gorn_03_04");//Contami nei tuoi piani.
 	
 	Log_CreateTopic (TOPIC_RescueGorn,LOG_MISSION);
@@ -228,7 +228,7 @@ FUNC VOID DIA_MiltenOW_Gorn_Info()
 	B_LogEntry (TOPIC_RescueGorn,"Il comandante Garond ha imprigionato Gorn. Forse potremo trovare un accordo per farlo uscire dal carcere.");
 };
 // ************************************************************
-// 		Garond will tausend Goldstücke			  
+// 		Garond will tausend GoldstÃ¼cke			  
 // ************************************************************
 INSTANCE DIA_MiltenOW_Preis(C_INFO)
 {
@@ -237,7 +237,7 @@ INSTANCE DIA_MiltenOW_Preis(C_INFO)
 	condition	= DIA_MiltenOW_Preis_Condition;
 	information	= DIA_MiltenOW_Preis_Info;
 	permanent	= FALSE;
-	description = "Garond vuole 1000 monete d’oro in cambio di Gorn.";
+	description = "Garond vuole 1000 monete dâ€™oro in cambio di Gorn.";
 };                       
 
 FUNC INT DIA_MiltenOW_Preis_Condition()
@@ -250,7 +250,7 @@ FUNC INT DIA_MiltenOW_Preis_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Preis_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Preis_15_00");//Garond vuole 1000 monete d’oro in cambio di Gorn.
+	AI_Output (other,self ,"DIA_MiltenOW_Preis_15_00");//Garond vuole 1000 monete dâ€™oro in cambio di Gorn.
 	AI_Output (self ,other,"DIA_MiltenOW_Preis_03_01");//Una bella somma. Posso contribuire con 250 pezzi d'oro.
 	
 	B_GiveInvItems (self, other, Itmi_gold, 250);
@@ -267,7 +267,7 @@ INSTANCE DIA_MiltenOW_Mehr(C_INFO)
 	condition	= DIA_MiltenOW_Mehr_Condition;
 	information	= DIA_MiltenOW_Mehr_Info;
 	permanent	= FALSE;
-	description = "Ho bisogno di altro oro per comprare la libertà di Gorn.";
+	description = "Ho bisogno di altro oro per comprare la libertÃ  di Gorn.";
 };                       
 
 FUNC INT DIA_MiltenOW_Mehr_Condition()
@@ -282,16 +282,16 @@ FUNC INT DIA_MiltenOW_Mehr_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Mehr_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Mehr_15_00");//Ho bisogno di altro oro per comprare la libertà di Gorn.
-	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_01");//Ottenere più oro... mmh. Diego saprebbe molto a riguardo, ma non è qui.
+	AI_Output (other,self ,"DIA_MiltenOW_Mehr_15_00");//Ho bisogno di altro oro per comprare la libertÃ  di Gorn.
+	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_01");//Ottenere piÃ¹ oro... mmh. Diego saprebbe molto a riguardo, ma non Ã¨ qui.
 	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_02");//Forse Gorn stesso ha dell'oro nascosto da qualche parte, dovremmo scoprirlo.
-	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_03");//Gli scriverò un messaggio. Tieni, cerca di portarlo di nascosto nei sotterranei.
+	AI_Output (self ,other,"DIA_MiltenOW_Mehr_03_03");//Gli scriverÃ² un messaggio. Tieni, cerca di portarlo di nascosto nei sotterranei.
 	
 	B_GiveInvItems(self,other,ItWr_LetterForGorn_MIS,1);	 
 	B_LogEntry (TOPIC_RescueGorn,"Milten mi ha dato un messaggio per Gorn. Se riuscissi a farglielo arrivare in prigione, potrebbe dirci se ha dell'oro messo da parte.");
 };
 // ************************************************************
-// 		Ausrüstung				  
+// 		AusrÃ¼stung				  
 // ************************************************************
 INSTANCE DIA_MiltenOW_Equipment(C_INFO)
 {
@@ -314,11 +314,11 @@ FUNC INT DIA_MiltenOW_Equipment_Condition()
 FUNC VOID DIA_MiltenOW_Equipment_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Equipmentt_15_00");//Puoi darmi dell'equipaggiamento? Garond mi ha chiesto di recarmi alle miniere.
-	AI_Output (self ,other,"DIA_MiltenOW_Equipment_03_01");//E dove dovrei recuperarlo, secondo te? L'unica cosa che ti posso dare è una pietra runica di un certo valore.
-	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die Schlösser nicht öffnen.  
+	AI_Output (self ,other,"DIA_MiltenOW_Equipment_03_01");//E dove dovrei recuperarlo, secondo te? L'unica cosa che ti posso dare Ã¨ una pietra runica di un certo valore.
+	//AI_Output (self ,other,"DIA_MiltenOW_Equipmentt_03_02");//Hier stehen zwar noch ein paar Truhen rum, aber ich kann die SchlÃ¶sser nicht Ã¶ffnen.  
 	
 	B_GiveInvItems (self,other, ItMI_RuneBlank,1);
-	//Schlüssel auf FP inserten
+	//SchlÃ¼ssel auf FP inserten
 };	
 
 //***********************
@@ -349,13 +349,13 @@ FUNC INT DIA_MiltenOW_Versteck_Condition()
  
 FUNC VOID DIA_MiltenOW_Versteck_Info()
 {
-	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_00"); //Ho ricevuto una risposta da parte di Gorn. Dice che l'oro è al cancello sud.
+	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_00"); //Ho ricevuto una risposta da parte di Gorn. Dice che l'oro Ã¨ al cancello sud.
 	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_01"); //(amaramente) Ex cancello sud, vorrai dire. I draghi lo hanno ridotto in macerie.
 	AI_Output	(other,self ,"DIA_MiltenOW_Versteck_15_02"); //Come posso arrivarci?
-	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_03"); //È vicino all'ariete degli orchi. Il cancello a sud era proprio a destra di esso.
-	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_04"); //Non sarà facile, tieni la testa bassa e corri.
+	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_03"); //Ãˆ vicino all'ariete degli orchi. Il cancello a sud era proprio a destra di esso.
+	AI_Output	(self ,other,"DIA_MiltenOW_Versteck_03_04"); //Non sarÃ  facile, tieni la testa bassa e corri.
 	
-	B_LogEntry (TOPIC_RescueGorn,"Il vecchio ingresso sud è a destra dell'ariete degli orchi. L'oro di Gorn è da qualche parte lì sotto.");
+	B_LogEntry (TOPIC_RescueGorn,"Il vecchio ingresso sud Ã¨ a destra dell'ariete degli orchi. L'oro di Gorn Ã¨ da qualche parte lÃ¬ sotto.");
 };
 // ************************************************************
 // 		Gorn ist frei		  
@@ -408,7 +408,7 @@ FUNC VOID DIA_MiltenOW_Lehren_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Lehren_15_00");//Puoi insegnarmi qualcosa?
 	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_01");//Posso istruirti in qualche incantesimo del secondo Circolo della Magia, oppure posso aiutarti ad aumentare il tuo potere magico.
-	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_02");//Se ti senti pronto ad aumentare il tuo potere, allora potrò istruirti.
+	AI_Output (self ,other,"DIA_MiltenOW_Lehren_03_02");//Se ti senti pronto ad aumentare il tuo potere, allora potrÃ² istruirti.
 };	
 
 // ************************************************************
@@ -436,13 +436,13 @@ FUNC INT DIA_MiltenOW_TeachCircle2_Condition()
 FUNC VOID DIA_MiltenOW_TeachCircle2_Info()
 {	
 	AI_Output (other, self, "DIA_Milten_Add_15_00"); //Insegnami il secondo Cerchio della magia.
-	AI_Output (self, other, "DIA_Milten_Add_03_01"); //Normalmente questo è un privilegio riservato agli insegnanti del nostro ordine.
+	AI_Output (self, other, "DIA_Milten_Add_03_01"); //Normalmente questo Ã¨ un privilegio riservato agli insegnanti del nostro ordine.
 	AI_Output (self, other, "DIA_Milten_Add_03_02"); //Ma penso che, in questo caso, possiamo fare un'eccezione...
 	
 	if (B_TeachMagicCircle (self, other, 2))
 	{
 		AI_Output (self, other, "DIA_Milten_Add_03_03"); //Non so se mi ricordo bene le parole ufficiali...
-		AI_Output (self, other, "DIA_Milten_Add_03_04"); //Accedi ora al secondo Circolo. Ehm... Ti mostrerà la via, ma le tue azioni formeranno il sentiero, o qualcosa del genere...
+		AI_Output (self, other, "DIA_Milten_Add_03_04"); //Accedi ora al secondo Circolo. Ehm... Ti mostrerÃ  la via, ma le tue azioni formeranno il sentiero, o qualcosa del genere...
 		AI_Output (self, other, "DIA_Milten_Add_03_05"); //Penso tu capisca cosa significa...
 	};
 };
@@ -548,7 +548,7 @@ func void DIA_MiltenOW_Mana_BACK()
 {
 	if (other.attribute[ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_MiltenOW_Mana_03_00"); //Il tuo potere magico è grande. Troppo grande perché io sia in grado di aiutarti ad aumentarlo.
+		AI_Output (self, other, "DIA_MiltenOW_Mana_03_00"); //Il tuo potere magico Ã¨ grande. Troppo grande perchÃ© io sia in grado di aiutarti ad aumentarlo.
 	};
 	Info_ClearChoices (DIA_MiltenOW_Mana);
 };
@@ -585,7 +585,7 @@ INSTANCE DIA_MiltenOW_Perm(C_INFO)
 	condition	= DIA_MiltenOW_Perm_Condition;
 	information	= DIA_MiltenOW_Perm_Info;
 	permanent	= TRUE;
-	description = "Qual è il tuo compito?";
+	description = "Qual Ã¨ il tuo compito?";
 };                       
 FUNC INT DIA_MiltenOW_Perm_Condition()
 {	
@@ -597,8 +597,8 @@ FUNC INT DIA_MiltenOW_Perm_Condition()
 }; 
 FUNC VOID DIA_MiltenOW_Perm_Info()
 {	
-	AI_Output (other,self ,"DIA_MiltenOW_Perm_15_00");//Qual è il tuo compito, qui?
-	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_01");//Originariamente avrei dovuto saggiare il metallo magico. Ma non se n'è visto molto finora.
+	AI_Output (other,self ,"DIA_MiltenOW_Perm_15_00");//Qual Ã¨ il tuo compito, qui?
+	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_01");//Originariamente avrei dovuto saggiare il metallo magico. Ma non se n'Ã¨ visto molto finora.
 	AI_Output (self ,other,"DIA_MiltenOW_Perm_03_02");//Ora mi sto concentrando sullo studio dell'alchimia.
 };
 // ************************************************************
@@ -624,8 +624,8 @@ FUNC INT DIA_MiltenOW_Plan_Condition()
 FUNC VOID DIA_MiltenOW_Plan_Info()
 {	
 	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_00");//Quali sono i tuoi piani?
-	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_01");//Ho intenzione di tornare. Attenderò ancora un po', ma ora che Gorn è libero posso andarmene con lui.
-	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_02");//È assolutamente necessario che Pyrokar venga a conoscenza della situazione.
+	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_01");//Ho intenzione di tornare. AttenderÃ² ancora un po', ma ora che Gorn Ã¨ libero posso andarmene con lui.
+	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_02");//Ãˆ assolutamente necessario che Pyrokar venga a conoscenza della situazione.
 	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_03");//Fai come credi.
 	AI_Output (self ,other,"DIA_MiltenOW_Plan_03_04");//Spero che quel Lord Hagen riconosca la minaccia che scaturisce da questa valle. Per non pensare a cosa succederebbe se gli orchi attraversassero il passo.
 	AI_Output (other,self ,"DIA_MiltenOW_Plan_15_05");//Bene, dunque, buon viaggio.

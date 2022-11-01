@@ -88,7 +88,7 @@ func void DIA_Fellan_News_Info ()
 		 && (FellanGeschlagen == FALSE)
 		 {
 		 	AI_Output (other, self, "DIA_Fellan_News_15_01"); //Adesso la pianterai di martellare, oppure devo darti una ripassata?
-		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //No, piantala di colpirmi. La smetterÚ. Ma se tutto dovesse crollare, sar‡ colpa tua!
+		 	AI_Output (self, other, "DIA_Fellan_News_06_02"); //No, piantala di colpirmi. La smetter√≤. Ma se tutto dovesse crollare, sar√† colpa tua!
 		 	
 		 	FellanGeschlagen = TRUE;
 		 	Npc_ExchangeRoutine (self,"OHNEHAMMER");
@@ -98,7 +98,7 @@ func void DIA_Fellan_News_Info ()
 	}; 
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_WON)
 	{
-		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Qual Ë il problema? Vuoi un altro pugno in faccia?
+		AI_Output (self, other, "DIA_Fellan_News_06_03");  //Qual √® il problema? Vuoi un altro pugno in faccia?
 	};
 	if (self.aivar[AIV_LastFightAgainstPlayer] == FIGHT_CANCEL)
 	{
@@ -117,7 +117,7 @@ instance DIA_Fellan_HALLO		(C_INFO)
 	condition	 = 	DIA_Fellan_HALLO_Condition;
 	information	 = 	DIA_Fellan_HALLO_Info;
 	permanent	 =  FALSE;
-	description	 = 	"PerchÈ stai martellando?";
+	description	 = 	"Perch√© stai martellando?";
 };
 func int DIA_Fellan_HALLO_Condition ()
 {	
@@ -128,9 +128,9 @@ func int DIA_Fellan_HALLO_Condition ()
 };
 func void DIA_Fellan_HALLO_Info ()
 {
-	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //PerchÈ stai martellando?
+	AI_Output (other, self, "DIA_Fellan_HALLO_15_00"); //Perch√© stai martellando?
 	AI_Output (self, other, "DIA_Fellan_HALLO_06_01"); //Da giorni ormai sto tentando disperatamente di riparare le crepe di casa mia.
-	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Le travi hanno cominciato a sbriciolarsi in seguito alle ultime piogge torrenziali. Presto croller‡ tutto sulla mia testa!
+	AI_Output (self, other, "DIA_Fellan_HALLO_06_02"); //Le travi hanno cominciato a sbriciolarsi in seguito alle ultime piogge torrenziali. Presto croller√† tutto sulla mia testa!
 	AI_StopProcessInfos (self);
 };
 
@@ -161,19 +161,19 @@ func void DIA_Fellan_Stop_Info ()
 	
 	Info_ClearChoices (DIA_Fellan_Stop);
 	Info_AddChoice (DIA_Fellan_Stop,"Smettila di martellare o ti spezzo le ossa, una a una.",DIA_Fellan_Stop_Bones);
-	Info_AddChoice (DIA_Fellan_Stop,"Sono disposto a pagarti 10 monete díoro, purchÈ tu smetta di martellare.",DIA_Fellan_Stop_Gold);
+	Info_AddChoice (DIA_Fellan_Stop,"Sono disposto a pagarti 10 monete d‚Äôoro, purch√© tu smetta di martellare.",DIA_Fellan_Stop_Gold);
 	Info_AddChoice (DIA_Fellan_Stop,"Piantala di martellare, ok?",DIA_Fellan_Stop_Just);
 };
 FUNC VOID DIA_Fellan_Stop_Bones()
 {
 	AI_Output (other, self, "DIA_Fellan_Stop_Bones_15_00"); //Smettila di martellare o ti spezzo le ossa, una ad una.
-	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Scordatelo, altrimenti ti inculcherÚ un po' di buon senso a suon di martellate.
+	AI_Output (self, other, "DIA_Fellan_Stop_Bones_06_01"); //Scordatelo, altrimenti ti inculcher√≤ un po' di buon senso a suon di martellate.
 	AI_StopProcessInfos (self);
 };
 FUNC VOID DIA_Fellan_Stop_Gold()
 {
-	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Sono disposto a pagarti 10 monete díoro, purchÈ tu smetta di martellare.
-	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Ehi, Ë molto generoso da parte tua. Ma con il tuo oro puoi...
+	AI_Output (other, self, "DIA_Fellan_Stop_Gold_15_00"); //Sono disposto a pagarti 10 monete d‚Äôoro, purch√© tu smetta di martellare.
+	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_01"); //Ehi, √® molto generoso da parte tua. Ma con il tuo oro puoi...
 	AI_Output (self, other, "DIA_Fellan_Stop_Gold_06_02"); //...beh, sai cosa farci.
 };
 FUNC VOID DIA_Fellan_Stop_Just()
@@ -206,11 +206,11 @@ func void DIA_Fellan_klar_Info ()
 	
 	if (FellanGeschlagen == FALSE) 
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Benissimo, se riuscirÚ a riparare tutto questo in tempo.
+		AI_Output (self, other, "DIA_Fellan_klar_06_01"); //Benissimo, se riuscir√≤ a riparare tutto questo in tempo.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Il tetto peggiora a vista d'occhio. La prossima volta che piove, l'acqua mi arriver‡ ai fianchi e sar‡ tutta colpa tua!
+		AI_Output (self, other, "DIA_Fellan_klar_06_02"); //Il tetto peggiora a vista d'occhio. La prossima volta che piove, l'acqua mi arriver√† ai fianchi e sar√† tutta colpa tua!
 	};
 	AI_StopProcessInfos (self);
 };

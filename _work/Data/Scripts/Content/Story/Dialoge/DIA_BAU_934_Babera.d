@@ -76,7 +76,7 @@ func void DIA_Babera_WIESIEHTSAUS_Info ()
 
 	if (hero.guild == GIL_NONE)
 		{
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "No. In verità, voglio diventare un mercenario.", DIA_Babera_WIESIEHTSAUS_Nein );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "No. In veritÃ , voglio diventare un mercenario.", DIA_Babera_WIESIEHTSAUS_Nein );
 			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Forse.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
 		};
 };
@@ -92,7 +92,7 @@ func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 
 func void DIA_Babera_WIESIEHTSAUS_Nein ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //No. In verità, voglio diventare un mercenario.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //No. In veritÃ , voglio diventare un mercenario.
 	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Allora sei capitato nel posto sbagliato. Di solito i mercenari si trovano nella fattoria del padrone.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
@@ -124,11 +124,11 @@ func int DIA_Babera_BRONKO_Condition ()
 
 func void DIA_Babera_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //Di' un po', chi è quel losco figuro laggiù...
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //Quello è Bronco. Che vuoi sapere?
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //È lui il tuo padrone?
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(ride) Te lo ha detto lui? Sekob è il nostro padrone. Bronco non è altro che un perdigiorno e un poco di buono. Ma ha la forza di un toro.
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Ecco perché nessuno gli dice niente quando non lavora.
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //Di' un po', chi Ã¨ quel losco figuro laggiÃ¹...
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //Quello Ã¨ Bronco. Che vuoi sapere?
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //Ãˆ lui il tuo padrone?
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(ride) Te lo ha detto lui? Sekob Ã¨ il nostro padrone. Bronco non Ã¨ altro che un perdigiorno e un poco di buono. Ma ha la forza di un toro.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //Ecco perchÃ© nessuno gli dice niente quando non lavora.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
@@ -153,7 +153,7 @@ instance DIA_Babera_Rosi		(C_INFO)
 	condition	 = 	DIA_Babera_Rosi_Condition;
 	information	 = 	DIA_Babera_Rosi_Info;
 
-	description	 = 	"Dov’è Rosi?";
+	description	 = 	"Dovâ€™Ã¨ Rosi?";
 };
 
 func int DIA_Babera_Rosi_Condition ()
@@ -168,10 +168,10 @@ func int DIA_Babera_Rosi_Condition ()
 
 func void DIA_Babera_Rosi_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //Dov’è Rosi?
-	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Non riusciva a stare più qui e se n'è andata a nord, nel bosco.
-	B_LogEntry (TOPIC_RosisFlucht,"Rosi è scappata dalla fattoria di Sekob. Babera dice che si è diretta a nord, nei boschi."); 
-	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi è scappata dalla fattoria di Sekob. Babera dice che si è diretta a nord, nei boschi."); 
+	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //Dovâ€™Ã¨ Rosi?
+	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Non riusciva a stare piÃ¹ qui e se n'Ã¨ andata a nord, nel bosco.
+	B_LogEntry (TOPIC_RosisFlucht,"Rosi Ã¨ scappata dalla fattoria di Sekob. Babera dice che si Ã¨ diretta a nord, nei boschi."); 
+	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi Ã¨ scappata dalla fattoria di Sekob. Babera dice che si Ã¨ diretta a nord, nei boschi."); 
 };
 
 

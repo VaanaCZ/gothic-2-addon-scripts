@@ -47,7 +47,7 @@ func void EVT_ORKOBERST ()
 		
 		ORkSturmDI  = TRUE;
 		
-		B_LogEntry (TOPIC_HallenVonIrdorath,"L'orco colonnello è un osso duro. Da qualche parte nella sua stanza del trono dovrebbe esserci una via per proseguire."); 
+		B_LogEntry (TOPIC_HallenVonIrdorath,"L'orco colonnello Ã¨ un osso duro. Da qualche parte nella sua stanza del trono dovrebbe esserci una via per proseguire."); 
 
 		EVT_ORKOBERST_OneTime = TRUE;
 	};

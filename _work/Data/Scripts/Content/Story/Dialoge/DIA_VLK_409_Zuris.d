@@ -189,7 +189,7 @@ func void DIA_Zuris_POTIONS_Info ()
 	if (hero.guild == GIL_NONE)
 	{
 		AI_Output (self, other, "DIA_Zuris_POTIONS_14_02"); //Se sei interessato a preparare delle pozioni, allora va a parlare con lui. Ha bisogno di un assistente.
-		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Ma è troppo ottuso per assoldarne uno da solo. È proprio testardo come un mulo.
+		AI_Output (self, other, "DIA_Zuris_POTIONS_14_03"); //Ma Ã¨ troppo ottuso per assoldarne uno da solo. Ãˆ proprio testardo come un mulo.
 	};
 	
 	AI_Output (self, other, "DIA_Zuris_Add_14_00"); //Passa sempre da me quando esce dal cancello est per raccogliere delle piante per le sue pozioni.
@@ -220,7 +220,7 @@ func void DIA_Zuris_Kraut_Info ()
 {
 	AI_Output (other, self, "DIA_Zuris_Add_15_01"); //Dove raccoglie esattamente le sue erbe Costantino?
 	AI_Output (self, other, "DIA_Zuris_Add_14_02"); //Esce sempre dal cancello est e poi sparisce nella selva a sinistra.
-	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Un volta mi ha detto che lì cresce di tutto, tranne l'acetosella del re.
+	AI_Output (self, other, "DIA_Zuris_Add_14_03"); //Un volta mi ha detto che lÃ¬ cresce di tutto, tranne l'acetosella del re.
 	
 	Wld_InsertItem (ItPl_Mana_Herb_01,"FP_ITEM_HERB_01");
 	Wld_InsertItem (ItPl_Mana_Herb_02,"FP_ITEM_HERB_02");
@@ -236,7 +236,7 @@ func void DIA_Zuris_Kraut_Info ()
 };
 
 // **************************************************
-//					 Kronstöckel
+//					 KronstÃ¶ckel
 // **************************************************
 
 instance DIA_Zuris_Kronstoeckel (C_INFO)
@@ -246,7 +246,7 @@ instance DIA_Zuris_Kronstoeckel (C_INFO)
 	condition	= DIA_Zuris_Kronstoeckel_Condition;
 	information	= DIA_Zuris_Kronstoeckel_Info;
 	permanent	= FALSE;
-	description	= "Costantino ti ha mai detto dove si trova l’acetosella del re?";
+	description	= "Costantino ti ha mai detto dove si trova lâ€™acetosella del re?";
 };
 
 func int DIA_Zuris_Kronstoeckel_Condition ()
@@ -258,9 +258,9 @@ func int DIA_Zuris_Kronstoeckel_Condition ()
 };
 func void DIA_Zuris_Kronstoeckel_Info ()
 {
-	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //Costantino ti ha mai detto dove si trova l’acetosella del re?
+	AI_Output (other, self, "DIA_Zuris_Add_15_04"); //Costantino ti ha mai detto dove si trova lâ€™acetosella del re?
 	AI_Output (self, other, "DIA_Zuris_Add_14_05"); //Una volta ho sentito che diceva che quella roba cresce vicino ai cerchi di pietra.
-	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //Vicino alla fattoria di Lobart, la fattoria vicino all'altro cancello, c'è uno di quei cerchi di pietra.
+	AI_Output (self, other, "DIA_Zuris_Add_14_06"); //Vicino alla fattoria di Lobart, la fattoria vicino all'altro cancello, c'Ã¨ uno di quei cerchi di pietra.
 	AI_Output (self, other, "DIA_Zuris_Add_14_07"); //Mi pare sia in cima alla collina. Una volta era un cimitero o qualcosa di simile.
 	
 	Wld_InsertItem (ItPl_Perm_Herb,"FP_ITEM_HERB_11");
@@ -316,7 +316,7 @@ func int DIA_Zuris_Kloster_Condition ()
 func void DIA_Zuris_Kloster_Info ()
 {
 	AI_Output (other, self, "DIA_Zuris_Kloster_14_00"); //Parlami del monastero.
-	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //Faresti meglio a chiedere allo stesso Maestro Daron. Ne sa sicuramente più di me.
+	AI_Output (self, other, "DIA_Zuris_Kloster_14_01"); //Faresti meglio a chiedere allo stesso Maestro Daron. Ne sa sicuramente piÃ¹ di me.
 };
 
 // ************************************************************
@@ -344,7 +344,7 @@ FUNC INT DIA_Zuris_Minenanteil_Condition()
 FUNC VOID DIA_Zuris_Minenanteil_Info()
 {	
 	AI_Output (other, self, "DIA_Zuris_Minenanteil_15_00"); //Vendi azioni della miniera?
-	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //Sì. È stato un fallimento. È l'ultima volta che mi farò coinvolgere in un affare losco come quello!
+	AI_Output (self, other, "DIA_Zuris_Minenanteil_14_01"); //SÃ¬. Ãˆ stato un fallimento. Ãˆ l'ultima volta che mi farÃ² coinvolgere in un affare losco come quello!
 	
 	B_GivePlayerXP (XP_Ambient);
 };	

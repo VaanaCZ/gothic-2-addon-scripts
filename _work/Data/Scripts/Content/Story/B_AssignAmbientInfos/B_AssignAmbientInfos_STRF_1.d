@@ -47,11 +47,11 @@ FUNC VOID DIA_STRF_1_STANDARD_Info()
 	
 	if (randy == 0)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Se me ne fossi andato quando ne avevo l'opportunit‡, ora non dovrei sgobbare per quel maiale!
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_00"); //Se me ne fossi andato quando ne avevo l'opportunit√†, ora non dovrei sgobbare per quel maiale!
 	};
 	if (randy == 1)
 	{
-		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_01"); //» tutta colpa del metallo. » sempre la stessa storia. A tutti interessa solo quel dannato metallo.
+		AI_Output (self,other,"DIA_STRF_1_STANDARD_01_01"); //√à tutta colpa del metallo. √à sempre la stessa storia. A tutti interessa solo quel dannato metallo.
 	};
 	if (randy == 2)
 	{

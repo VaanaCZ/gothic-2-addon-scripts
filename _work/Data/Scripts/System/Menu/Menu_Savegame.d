@@ -638,7 +638,7 @@ INSTANCE MENUITEM_SAVE_SLOT20(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 1 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 1 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 0 * SAVEGAME_DY;
@@ -651,7 +651,7 @@ INSTANCE MENUITEM_LOAD_SLOT1(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 2 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 2 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 1 * SAVEGAME_DY;
@@ -664,7 +664,7 @@ INSTANCE MENUITEM_LOAD_SLOT2(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 3 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 3 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 2 * SAVEGAME_DY;
@@ -677,7 +677,7 @@ INSTANCE MENUITEM_LOAD_SLOT3(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 4 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 4 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 3 * SAVEGAME_DY;
@@ -690,7 +690,7 @@ INSTANCE MENUITEM_LOAD_SLOT4(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 5 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 5 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 4 * SAVEGAME_DY;
@@ -703,7 +703,7 @@ INSTANCE MENUITEM_LOAD_SLOT5(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 6 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 6 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 5 * SAVEGAME_DY;
@@ -716,7 +716,7 @@ INSTANCE MENUITEM_LOAD_SLOT6(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "Ignoto";
-	text[1]		=   "Spazio 7 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 7 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 6 * SAVEGAME_DY;
@@ -729,7 +729,7 @@ INSTANCE MENUITEM_LOAD_SLOT7(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 8 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 8 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 7 * SAVEGAME_DY;
@@ -742,7 +742,7 @@ INSTANCE MENUITEM_LOAD_SLOT8(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 9 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 9 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 8 * SAVEGAME_DY;
@@ -755,7 +755,7 @@ INSTANCE MENUITEM_LOAD_SLOT9(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 10 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 10 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 9 * SAVEGAME_DY;
@@ -771,7 +771,7 @@ INSTANCE MENUITEM_LOAD_SLOT10(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 11 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 11 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 10 * SAVEGAME_DY;
@@ -784,7 +784,7 @@ INSTANCE MENUITEM_LOAD_SLOT11(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 12 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 12 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 11 * SAVEGAME_DY;
@@ -797,7 +797,7 @@ INSTANCE MENUITEM_LOAD_SLOT12(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 13 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 13 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 12 * SAVEGAME_DY;
@@ -810,7 +810,7 @@ INSTANCE MENUITEM_LOAD_SLOT13(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 14 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 14 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 13 * SAVEGAME_DY;
@@ -823,7 +823,7 @@ INSTANCE MENUITEM_LOAD_SLOT14(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 15 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 15 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 14 * SAVEGAME_DY;
@@ -837,7 +837,7 @@ INSTANCE MENUITEM_LOAD_SLOT15(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT16(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 16 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 16 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 15 * SAVEGAME_DY;
@@ -850,7 +850,7 @@ INSTANCE MENUITEM_LOAD_SLOT16(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT17(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 17 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 17 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 16 * SAVEGAME_DY;
@@ -863,7 +863,7 @@ INSTANCE MENUITEM_LOAD_SLOT17(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT18(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 18 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 18 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 17 * SAVEGAME_DY;
@@ -876,7 +876,7 @@ INSTANCE MENUITEM_LOAD_SLOT18(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT19(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 19 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 19 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 18 * SAVEGAME_DY;
@@ -889,7 +889,7 @@ INSTANCE MENUITEM_LOAD_SLOT19(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_LOAD_SLOT20(C_MENU_ITEM_DEF)
 {
 	text[0]		=   "---";
-	text[1]		=   "Spazio 20 – TORNA a caricamento partita."; // Kommentar
+	text[1]		=   "Spazio 20 â€“ TORNA a caricamento partita."; // Kommentar
 
 	posx		=	SAVEGAME_X1;
 	posy		=	SAVEGAME_Y + 19 * SAVEGAME_DY;
