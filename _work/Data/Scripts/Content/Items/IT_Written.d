@@ -82,7 +82,7 @@ INSTANCE StandardBuch (C_ITEM)
 					Doc_PrintLines	( nDocID,  0, "Bla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bBla blaBla blaBla blaBlaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla blaBla bla");
 
 					//2.Seite
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, "Livre classique p 2"	);
@@ -181,7 +181,7 @@ instance ItWr_Map_NewWorld_City (C_Item)
 
 instance ItWr_Map_OldWorld (C_Item)
 {
-	name 		= "Carte de la Vallée des mines";
+	name 		= "Carte de la VallÃ©e des mines";
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;
@@ -235,10 +235,10 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
 	material 				=	MAT_LEATHER;
 
 	scemeName				=	"MAP";
-	description				= 	"Art de la défense du sud";
+	description				= 	"Art de la dÃ©fense du sud";
 	
 	TEXT[2] 				=  "Un livre sur l'art du";
-	TEXT[3] 				=  "combat à une main.";
+	TEXT[3] 				=  "combat Ã  une main.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseEinhandBuch;
@@ -267,20 +267,20 @@ INSTANCE ItWr_EinhandBuch (C_ITEM)
  					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  //  0 -> margins are in pixels
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline	   			); 	// -1 -> all pages
  					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Art de la défense du sud"	);
+					Doc_PrintLines	( nDocID,  0, "Art de la dÃ©fense du sud"	);
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Un habitant des terres du sud a moins recours à la force que les gens du nord et préfère privilégier l'agilité. Dans ces climats chauds, une armure légère permet de se mouvoir plus librement. Les gens du sud ont donc élaboré une technique de combat différente de la nôtre."					);
+					Doc_PrintLines	( nDocID,  0, "Un habitant des terres du sud a moins recours Ã  la force que les gens du nord et prÃ©fÃ¨re privilÃ©gier l'agilitÃ©. Dans ces climats chauds, une armure lÃ©gÃ¨re permet de se mouvoir plus librement. Les gens du sud ont donc Ã©laborÃ© une technique de combat diffÃ©rente de la nÃ´tre."					);
 					
 					
 
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "La technique la plus utilisée par les gens du sud est la parade accompagnée d'un pas en arrière. Ce mouvement permet de réduire l’impact de l'attaque adverse et de se trouver en excellente posture pour une contre-attaque."	);
+					Doc_PrintLines	( nDocID,  1, "La technique la plus utilisÃ©e par les gens du sud est la parade accompagnÃ©e d'un pas en arriÃ¨re. Ce mouvement permet de rÃ©duire lâ€™impact de l'attaque adverse et de se trouver en excellente posture pour une contre-attaque."	);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					
 					
@@ -305,7 +305,7 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 	description				= 	"Parade double";
 	
 	TEXT[2] 				=  "Un livre sur l'art du";
-	TEXT[3] 				=  "combat à deux mains.";
+	TEXT[3] 				=  "combat Ã  deux mains.";
 	TEXT[5]					= 	NAME_Value;
 	COUNT[5]				= 	value;
 	on_state[0]				=	UseZweihandBuch;
@@ -337,16 +337,16 @@ INSTANCE ItWr_ZweihandBuch (C_ITEM)
 					Doc_SetFont 	( nDocID,  0, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Parer une attaque ennemie avec une arme à deux mains est une technique utilisée par les combattants les plus forts pour briser les enchaînements offensifs de leurs assaillants."					);
+					Doc_PrintLines	( nDocID,  0, "Parer une attaque ennemie avec une arme Ã  deux mains est une technique utilisÃ©e par les combattants les plus forts pour briser les enchaÃ®nements offensifs de leurs assaillants."					);
 					
-					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den Ränder des TGAs aus, links,oben,rechts,unten)
+					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);  //  0 -> margins are in pixels (Position des Textes von den RÃ¤nder des TGAs aus, links,oben,rechts,unten)
 					Doc_SetFont 	( nDocID,  1, FONT_BookHeadline	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLines	( nDocID,  1, ""	);
 					Doc_SetFont 	( nDocID,  1, FONT_Book	   			); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Cela permet généralement de couper l'élan de son adversaire et de reprendre l'initiative afin de le vaincre avec des attaques bien placées."	);
+					Doc_PrintLines	( nDocID,  1, "Cela permet gÃ©nÃ©ralement de couper l'Ã©lan de son adversaire et de reprendre l'initiative afin de le vaincre avec des attaques bien placÃ©es."	);
 					
 					Doc_Show		( nDocID );
 };

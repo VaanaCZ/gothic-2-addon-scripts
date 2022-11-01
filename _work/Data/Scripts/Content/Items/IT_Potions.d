@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wirkung und Kosten von Tr‰nken
+// Wirkung und Kosten von Tr√§nken
 // ************************************************************************************************
 
 
@@ -25,7 +25,7 @@ const int 	Value_ManaTrunk			=   200;
 const int 	Value_HpTrunk			=   150;
 
 /******************************************************************************************/
-//	MANATRƒNKE																			//
+//	MANATR√ÑNKE																			//
 /******************************************************************************************/
 INSTANCE ItPo_Mana_01(C_Item)
 {
@@ -128,7 +128,7 @@ INSTANCE ItPo_Mana_03(C_Item)
 		Npc_ChangeAttribute	(self,	ATR_MANA,	Mana_Elixier);
 	};
 /******************************************************************************************/
-//	HEILTRƒNKE																			//
+//	HEILTR√ÑNKE																			//
 /******************************************************************************************/
 INSTANCE ItPo_Health_01(C_Item)
 {
@@ -147,7 +147,7 @@ INSTANCE ItPo_Health_01(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Essence mÈdicinale";
+	description		= 	"Essence m√©dicinale";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Essenz;
@@ -180,7 +180,7 @@ INSTANCE ItPo_Health_02(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Extrait mÈdicinal";
+	description		= 	"Extrait m√©dicinal";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Extrakt;
@@ -213,7 +213,7 @@ INSTANCE ItPo_Health_03(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_HEALTHPOTION"; 
 
-	description		= 	"Elixir mÈdicinal";
+	description		= 	"Elixir m√©dicinal";
 	
 	TEXT[1]			= 	NAME_Bonus_HP;				
 	COUNT[1]		= 	HP_Elixier;
@@ -228,7 +228,7 @@ INSTANCE ItPo_Health_03(C_Item)
 		Npc_ChangeAttribute	(self,	ATR_HITPOINTS,	HP_Elixier);
 	};
 /******************************************************************************************/
-// TRƒNKE F‹R PERMANENTE ATTRIBUT-ƒNDERUNGEN!
+// TR√ÑNKE F√úR PERMANENTE ATTRIBUT-√ÑNDERUNGEN!
 /******************************************************************************************/
 INSTANCE ItPo_Perm_STR(C_Item)
 {
@@ -278,7 +278,7 @@ INSTANCE ItPo_Perm_DEX(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Elixir de dextÈritÈ";
+	description		= 	"Elixir de dext√©rit√©";
 	TEXT[1]			= 	NAME_Bonus_Dex;
 	COUNT[1]		= 	DEX_Elixier;
 	TEXT[5]			= 	NAME_Value;					
@@ -372,7 +372,7 @@ INSTANCE ItPo_Speed(C_Item)
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		= 	"Potion de rapiditÈ";
+	description		= 	"Potion de rapidit√©";
 	TEXT[1]			= 	"Augmente temporairement la vitesse.";
 	
 	TEXT[3]			= 	NAME_Duration;				
@@ -392,7 +392,7 @@ INSTANCE ItPo_Speed(C_Item)
 //	MegaDrink	Kapitel 6																      //
 /******************************************************************************************/
 
-INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor¥m Endgegner
+INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Dracheninsel -> Kapitel 6 kurz vor¬¥m Endgegner
 {
 	name 			=	"Embarla Firgasto";
 
@@ -428,6 +428,6 @@ INSTANCE ItPo_MegaDrink (C_Item)	//Joly: Megatrank aus Dracheneiern auf der Drac
 					B_RaiseAttribute	(self, ATR_STRENGTH,	STRorDEX_MegaDrink);
 				};
 	
-			Npc_ChangeAttribute	(self,	ATR_MANA, - ATR_MANA); //Joly: gem‰ﬂ des Rezeptes
+			Npc_ChangeAttribute	(self,	ATR_MANA, - ATR_MANA); //Joly: gem√§√ü des Rezeptes
 			Snd_Play ("DEM_Warn");
 		};

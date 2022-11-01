@@ -44,7 +44,7 @@ FUNC INT DIA_Grimes_Hallo_Condition()
 }; 
 FUNC VOID DIA_Grimes_Hallo_Info()
 {	
-	AI_Output (self,other,"DIA_Grimes_Hallo_05_00");//Vous ? Qui aurait pu croire que nous nous reverrions un jour ?
+	AI_Output (self,other,"DIA_Grimes_Hallo_05_00");//VousÂ ? Qui aurait pu croire que nous nous reverrions un jourÂ ?
 	AI_Output (self,other,"DIA_Grimes_Hallo_05_01");//On dirait que nous savons rester en vie tous les deux. Comme vous pouvez voir, je continue de prospecter.
 	
 	if (Grimes_First == FALSE)
@@ -68,7 +68,7 @@ INSTANCE DIA_Grimes_Erz(C_INFO)
 	condition	= DIA_Grimes_Erz_Condition;
 	information	= DIA_Grimes_Erz_Info;
 	permanent	= FALSE;
-	description	= "Quelle quantité de minerai avez-vous extraite ?";
+	description	= "Quelle quantitÃ© de minerai avez-vous extraite ?";
 };                       
 
 FUNC INT DIA_Grimes_Erz_Condition()
@@ -81,9 +81,9 @@ FUNC INT DIA_Grimes_Erz_Condition()
 }; 
 FUNC VOID DIA_Grimes_Erz_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Quelle quantité de minerai avez-vous réussi à extraire ?
+	AI_Output (other,self,"DIA_Grimes_Erz_15_00");//Quelle quantitÃ© de minerai avez-vous rÃ©ussi Ã  extraireÂ ?
 	AI_Output (self,other,"DIA_Grimes_Erz_05_01");//Quelques coffres, mais ils ne sont plus ici.
-	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Marcos le paladin a décidé de les emporter au château car nous étions constamment attaqués par les orques.
+	AI_Output (self,other,"DIA_Grimes_Erz_05_02");//Marcos le paladin a dÃ©cidÃ© de les emporter au chÃ¢teau car nous Ã©tions constamment attaquÃ©s par les orques.
 };
 // ************************************************************
 // 			 Weg
@@ -95,7 +95,7 @@ INSTANCE DIA_Grimes_Weg(C_INFO)
 	condition	= DIA_Grimes_Weg_Condition;
 	information	= DIA_Grimes_Weg_Info;
 	permanent	= FALSE;
-	description = "Savez-vous par où est parti Marcos ?";
+	description = "Savez-vous par oÃ¹ est parti Marcos ?";
 };                       
 
 FUNC INT DIA_Grimes_Weg_Condition()
@@ -108,9 +108,9 @@ FUNC INT DIA_Grimes_Weg_Condition()
 }; 
 FUNC VOID DIA_Grimes_Weg_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//Savez-vous par où Marcos est parti ?
-	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//Il n'a pas pris la route directe. Il préférait traverser la rivière à l'endroit où elle a gelé.
-	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//Il avait l'intention d'approcher du château par l'ouest.
+	AI_Output (other,self,"DIA_Grimes_Weg_15_00");//Savez-vous par oÃ¹ Marcos est partiÂ ?
+	AI_Output (self,other,"DIA_Grimes_Weg_05_01");//Il n'a pas pris la route directe. Il prÃ©fÃ©rait traverser la riviÃ¨re Ã  l'endroit oÃ¹ elle a gelÃ©.
+	AI_Output (self,other,"DIA_Grimes_Weg_05_02");//Il avait l'intention d'approcher du chÃ¢teau par l'ouest.
 };
 // ************************************************************
 // 			  Grimes
@@ -122,7 +122,7 @@ INSTANCE DIA_Grimes_Grimes(C_INFO)
 	condition	= DIA_Grimes_Grimes_Condition;
 	information	= DIA_Grimes_Grimes_Info;
 	permanent	= FALSE;
-	description	= "Ne voulez-vous pas quitter la vallée ?";
+	description	= "Ne voulez-vous pas quitter la vallÃ©e ?";
 };                       
 
 FUNC INT DIA_Grimes_Grimes_Condition()
@@ -134,10 +134,10 @@ FUNC INT DIA_Grimes_Grimes_Condition()
 }; 
 FUNC VOID DIA_Grimes_Grimes_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//Vous ne voulez pas quitter la vallée ?
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//Non, je préfère continuer à extraire du minerai.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//Après tout ce que j'ai vécu, je ne vais pas avoir peur de quelques orques.
-	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//Du temps où je travaillais dans la vieille mine, nous avons été inondés un jour...
+	AI_Output (other,self,"DIA_Grimes_Grimes_15_00");//Vous ne voulez pas quitter la vallÃ©eÂ ?
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_01");//Non, je prÃ©fÃ¨re continuer Ã  extraire du minerai.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_02");//AprÃ¨s tout ce que j'ai vÃ©cu, je ne vais pas avoir peur de quelques orques.
+	AI_Output (self,other,"DIA_Grimes_Grimes_05_03");//Du temps oÃ¹ je travaillais dans la vieille mine, nous avons Ã©tÃ© inondÃ©s un jour...
 	AI_Output (self,other,"DIA_Grimes_Grimes_05_04");//Mais c'est une vieille histoire.
 };
 // ************************************************************
@@ -162,8 +162,8 @@ FUNC INT DIA_Grimes_PERM_Condition()
 }; 
 FUNC VOID DIA_Grimes_PERM_Info()
 {	
-	AI_Output (other,self,"DIA_Grimes_PERM_15_00");//Comment va le travail ?
-	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Cette satanée roche est vraiment résistante. C'est à croire qu'elle cherche à nous empêcher d'extraire le minerai.
+	AI_Output (other,self,"DIA_Grimes_PERM_15_00");//Comment va le travailÂ ?
+	AI_Output (self,other,"DIA_Grimes_PERM_05_01");//Cette satanÃ©e roche est vraiment rÃ©sistante. C'est Ã  croire qu'elle cherche Ã  nous empÃªcher d'extraire le minerai.
 };
 
 
@@ -208,12 +208,12 @@ func void DIA_Grimes_PICKPOCKET_BACK()
 
 
 /*
-	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen müssen.  
+	Keine Ahnung - vielleicht steckt er noch irgendwo da draussen. Ich werde ihn wohl suchen mÃ¼ssen.  
 	Ich habe ihn gefunden. 
-	Er hält sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
+	Er hÃ¤lt sich in einem kleinen Tal auf - unweit der Burg. Dort sind die Kisten wenigstens sicher. 
 	Innos sei dank...
 	
 	Nein, bisher nicht. 
-	Dann hoffe ich, das er ein Versteck für sich und das Erz gefunden hat.
+	Dann hoffe ich, das er ein Versteck fÃ¼r sich und das Erz gefunden hat.
 */
 

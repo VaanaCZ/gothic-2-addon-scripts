@@ -3,7 +3,7 @@
 // POTIONALCHEMY_S1
 // --------------
 // Funktion wird durch Labortisch-Mobsi-Benutzung aufgerufen!
-// benˆtigtes Item daf¸r: ItMi_Flask
+// ben√∂tigtes Item daf√ºr: ItMi_Flask
 // *****************************************************
 FUNC VOID POTIONALCHEMY_S1 ()
 {
@@ -49,7 +49,7 @@ FUNC VOID PC_PotionAlchemy_End_Info()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Tr‰nke herstellen  Dialoge 
+//Tr√§nke herstellen  Dialoge 
 //--------
 //********************************************************
 
@@ -67,7 +67,7 @@ INSTANCE PC_Booze_Start (C_Info)
 	condition		= PC_Booze_Start_Condition;
 	information		= PC_Booze_Start_Info;
 	permanent		= TRUE;
-	description		= "Br˚ler de l'alcool"; 
+	description		= "Br√ªler de l'alcool"; 
 };
 
 FUNC INT PC_Booze_Start_Condition ()
@@ -206,7 +206,7 @@ INSTANCE PC_Booze_SchnellerHering (C_Info)
 	condition		= PC_Booze_SchnellerHering_Condition;
 	information		= PC_Booze_SchnellerHering_Info;
 	permanent		= TRUE;
-	description		= "MÈlanger un Hareng pressÈ"; 
+	description		= "M√©langer un Hareng press√©"; 
 };
 
 FUNC INT PC_Booze_SchnellerHering_Condition ()
@@ -249,7 +249,7 @@ INSTANCE PC_Charge_InnosEye (C_INFO)
 	condition		= PC_Charge_InnosEye_Condition;
 	information		= PC_Charge_InnosEye_Info;
 	permanent		= TRUE;
-	description		= "Recharger l'åil d'Innos"; 
+	description		= "Recharger l'≈íil d'Innos"; 
 };
 FUNC INT PC_Charge_InnosEye_Condition()
 {	
@@ -296,7 +296,7 @@ FUNC VOID PC_Charge_InnosEye_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Mana Tr‰nke 
+//Mana Tr√§nke 
 //*******************************************************
 var int ManaStart;
 //----------------------
@@ -358,7 +358,7 @@ INSTANCE PC_ItPo_Mana_01 (C_INFO)
 	condition		= PC_ItPo_Mana_01_Condition;
 	information		= PC_ItPo_Mana_01_Info;
 	permanent		= TRUE;
-	description		= "Essence de mana (2 orties de feu, 1 núud de prairie)"; 
+	description		= "Essence de mana (2 orties de feu, 1 n≈ìud de prairie)"; 
 };
 
 FUNC INT PC_ItPo_Mana_01_Condition()
@@ -398,7 +398,7 @@ INSTANCE PC_ItPo_Mana_02 (C_INFO)
 	condition		= PC_ItPo_Mana_02_Condition;
 	information		= PC_ItPo_Mana_02_Info;
 	permanent		= TRUE;
-	description		= "Extrait de mana (2 herbes de feu, 1 núud de prairie)"; 
+	description		= "Extrait de mana (2 herbes de feu, 1 n≈ìud de prairie)"; 
 };
 FUNC INT PC_ItPo_Mana_02_Condition()
 {	
@@ -436,7 +436,7 @@ INSTANCE PC_ItPo_Mana_03 (C_INFO)
 	condition		= PC_ItPo_Mana_03_Condition;
 	information		= PC_ItPo_Mana_03_Info;
 	permanent		= TRUE;
-	description		= "Elixir de mana (2 racines de feu, 1 núud de prairie)"; 
+	description		= "Elixir de mana (2 racines de feu, 1 n≈ìud de prairie)"; 
 };
 
 FUNC INT PC_ItPo_Mana_03_Condition()
@@ -475,7 +475,7 @@ INSTANCE PC_ItPo_Mana_04 (C_INFO)
 	condition		= PC_ItPo_Mana_04_Condition;
 	information		= PC_ItPo_Mana_04_Info;
 	permanent		= TRUE;
-	description		= "Potion de mana (3 essences de mana, 1 núud de prairie)"; 
+	description		= "Potion de mana (3 essences de mana, 1 n≈ìud de prairie)"; 
 };
 
 FUNC INT PC_ItPo_Mana_04_Condition()
@@ -507,7 +507,7 @@ FUNC VOID PC_ItPo_Mana_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();
 };
 //*******************************************************
-//Heiltr‰nke 
+//Heiltr√§nke 
 //*******************************************************
 var int HealthStart;
 //----------------------
@@ -569,7 +569,7 @@ INSTANCE PC_ItPo_Health_01 (C_INFO)
 	condition		= PC_ItPo_Health_01_Condition;
 	information		= PC_ItPo_Health_01_Info;
 	permanent		= TRUE;
-	description		= "Essence mÈdicinale (2 plantes mÈdicinales, 1 núud de prairie)"; 
+	description		= "Essence m√©dicinale (2 plantes m√©dicinales, 1 n≈ìud de prairie)"; 
 };
 
 FUNC INT PC_ItPo_Health_01_Condition()
@@ -609,7 +609,7 @@ INSTANCE PC_ItPo_Health_02 (C_INFO)
 	condition		= PC_ItPo_Health_02_Condition;
 	information		= PC_ItPo_Health_02_Info;
 	permanent		= TRUE;
-	description		= "Extrait mÈdicinal (2 herbes mÈdicinales, 1 núud de prairie)"; 
+	description		= "Extrait m√©dicinal (2 herbes m√©dicinales, 1 n≈ìud de prairie)"; 
 };
 
 FUNC INT PC_ItPo_Health_02_Condition()
@@ -648,7 +648,7 @@ INSTANCE PC_ItPo_Health_03 (C_INFO)
 	condition		= PC_ItPo_Health_03_Condition;
 	information		= PC_ItPo_Health_03_Info;
 	permanent		= TRUE;
-	description		= "Elixir mÈdicinal (2 racines mÈdicinales, 1 núud de prairie)"; 
+	description		= "Elixir m√©dicinal (2 racines m√©dicinales, 1 n≈ìud de prairie)"; 
 };
 FUNC INT PC_ItPo_Health_03_Condition()
 {	
@@ -686,7 +686,7 @@ INSTANCE PC_ItPo_Health_04 (C_INFO)
 	condition		= PC_ItPo_Health_04_Condition;
 	information		= PC_ItPo_Health_04_Info;
 	permanent		= TRUE;
-	description		= "potion de soins (3 essences de soin, 1 núud de prairie)"; 
+	description		= "potion de soins (3 essences de soin, 1 n≈ìud de prairie)"; 
 };
 FUNC INT PC_ItPo_Health_04_Condition()
 {	
@@ -717,7 +717,7 @@ FUNC VOID PC_ItPo_Health_04_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//Spezielle Tr‰nke 
+//Spezielle Tr√§nke 
 //*******************************************************
 var int SpecialStart;
 //----------------------
@@ -728,7 +728,7 @@ INSTANCE PC_Special_Start (C_Info)
 	condition		= PC_Special_Start_Condition;
 	information		= PC_Special_Start_Info;
 	permanent		= TRUE;
-	description		= "Brasser des potions spÈciales"; 
+	description		= "Brasser des potions sp√©ciales"; 
 };
 
 FUNC INT PC_Special_Start_Condition ()
@@ -779,7 +779,7 @@ INSTANCE PC_ItPo_Addon_Geist (C_INFO)
 	condition		= PC_ItPo_Addon_Geist_Condition;
 	information		= PC_ItPo_Addon_Geist_Info;
 	permanent		= TRUE;
-	description		= "Elixir d'altÈration mentale"; 
+	description		= "Elixir d'alt√©ration mentale"; 
 };
 
 FUNC INT PC_ItPo_Addon_Geist_Condition()
@@ -829,7 +829,7 @@ INSTANCE PC_ItPo_Perm_Health (C_INFO)
 	condition		= PC_ItPo_Perm_Health_Condition;
 	information		= PC_ItPo_Perm_Health_Info;
 	permanent		= TRUE;
-	description		= "Elixir de vie (1 racine mÈdicinale, 1 oseille royale)"; 
+	description		= "Elixir de vie (1 racine m√©dicinale, 1 oseille royale)"; 
 };
 
 FUNC INT PC_ItPo_Perm_Health_Condition()
@@ -907,7 +907,7 @@ INSTANCE PC_ItPo_Dex (C_INFO)
 	condition		= PC_ItPo_Dex_Condition;
 	information		= PC_ItPo_Dex_Info;
 	permanent		= TRUE;
-	description		= "Potion de dextÈritÈ (1 baie gobeline, 1 oseille royale)"; 
+	description		= "Potion de dext√©rit√© (1 baie gobeline, 1 oseille royale)"; 
 };
 
 FUNC INT PC_ItPo_Dex_Condition()
@@ -985,7 +985,7 @@ INSTANCE PC_ItPo_Speed (C_INFO)
 	condition		= PC_ItPo_Speed_Condition;
 	information		= PC_ItPo_Speed_Info;
 	permanent		= TRUE;
-	description		= "Potion de rapiditÈ (1 herbe faucheuse, 1 núud de prairie)"; 
+	description		= "Potion de rapidit√© (1 herbe faucheuse, 1 n≈ìud de prairie)"; 
 };
 
 FUNC INT PC_ItPo_Speed_Condition()
@@ -1028,7 +1028,7 @@ INSTANCE PC_Tabak_Start (C_Info)
 	condition		= PC_Tabak_Start_Condition;
 	information		= PC_Tabak_Start_Info;
 	permanent		= TRUE;
-	description		= "MÈlanger du tabac et rouler un joint"; 
+	description		= "M√©langer du tabac et rouler un joint"; 
 };
 
 FUNC INT PC_Tabak_Start_Condition ()
@@ -1081,7 +1081,7 @@ INSTANCE PC_ItMi_Joint (C_INFO)
 	condition		= PC_ItMi_Joint_Condition;
 	information		= PC_ItMi_Joint_Info;
 	permanent		= TRUE;
-	description		= "PrÈparer l'herbe des marais (1 joint)"; 
+	description		= "Pr√©parer l'herbe des marais (1 joint)"; 
 };
 
 FUNC INT PC_ItMi_Joint_Condition()
@@ -1110,7 +1110,7 @@ FUNC VOID PC_ItMi_Joint_Info ()
 	B_ENDPRODUCTIONDIALOG ();		
 };
 //*******************************************************
-//	Gr¸nen Novizen herstellen
+//	Gr√ºnen Novizen herstellen
 //*******************************************************
 INSTANCE PC_ItMi_Addon_Joint_01 (C_INFO)
 {
@@ -1159,7 +1159,7 @@ INSTANCE PC_ItMi_Tabak (C_INFO)
 	condition		= PC_ItMi_Tabak_Condition;
 	information		= PC_ItMi_Tabak_Info;
 	permanent		= TRUE;
-	description		= "MÈlanger le tabac..."; 
+	description		= "M√©langer le tabac..."; 
 };
 
 FUNC INT PC_ItMi_Tabak_Condition()
@@ -1228,7 +1228,7 @@ INSTANCE PC_ItPo_MegaDrink (C_INFO)
 	condition		= PC_ItPo_MegaDrink_Condition;
 	information		= PC_ItPo_MegaDrink_Info;
 	permanent		= TRUE;
-	description		= "Potion d'úufs de dragon (10 úufs de dragon, 1 perle noire, 1 dose de souffre)"; 
+	description		= "Potion d'≈ìufs de dragon (10 ≈ìufs de dragon, 1 perle noire, 1 dose de souffre)"; 
 };
 
 FUNC INT PC_ItPo_MegaDrink_Condition()

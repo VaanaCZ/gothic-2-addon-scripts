@@ -1,7 +1,7 @@
 //Missionitems 2. Kapitel
 
 //********************************************
-//	Xardas´ Stein des Wissens   liegt im alten Demonenbeschwörerturm auf dem Tisch in seinem alten Studierzimmer!
+//	XardasÂ´ Stein des Wissens   liegt im alten DemonenbeschwÃ¶rerturm auf dem Tisch in seinem alten Studierzimmer!
 //********************************************
 
 INSTANCE ItMi_StoneOfKnowlegde_MIS (C_Item)
@@ -52,10 +52,10 @@ func void UsePaladinLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Seigneur Hagen !");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "L'expédition dans la vallée a échoué. Nos pertes sont lourdes et les survivants sont piégés au château, assiégés par des orques.");
-					Doc_PrintLines	( nDocID,  0, "Nous avons été attaqués par des dragons. Ils ont dévasté les terres du château. Avec l'aide d'Innos, nous tiendrons jusqu'à l'arrivée des renforts. Impossible d'effectuer une sortie.");					
+					Doc_PrintLines	( nDocID,  0, "L'expÃ©dition dans la vallÃ©e a Ã©chouÃ©. Nos pertes sont lourdes et les survivants sont piÃ©gÃ©s au chÃ¢teau, assiÃ©gÃ©s par des orques.");
+					Doc_PrintLines	( nDocID,  0, "Nous avons Ã©tÃ© attaquÃ©s par des dragons. Ils ont dÃ©vastÃ© les terres du chÃ¢teau. Avec l'aide d'Innos, nous tiendrons jusqu'Ã  l'arrivÃ©e des renforts. Impossible d'effectuer une sortie.");					
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Qu'Innos nous protège.");
+					Doc_PrintLine	( nDocID,  0, "Qu'Innos nous protÃ¨ge.");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "Garond");
 					Doc_Show		( nDocID );
@@ -78,7 +78,7 @@ INSTANCE ItWr_LetterForGorn_MIS		(C_Item)
 	material 			=	MAT_LEATHER;
 	on_state[0]			=   UseLetterForGorn;
 	scemeName			=	"MAP";
-	description			= 	"Note de Milten à Gorn";
+	description			= 	"Note de Milten Ã  Gorn";
 };
 func void UseLetterForGorn ()
 {   
@@ -95,8 +95,8 @@ func void UseLetterForGorn ()
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Gorn !"					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLines	( nDocID,  0, "Garond accepte de vous libérer contre 1 000 pièces d'or.");
-					Doc_PrintLines	( nDocID,  0, "Donc, si vous avez de l'or caché quelque part, ce serait le moment de me le dire.");
+					Doc_PrintLines	( nDocID,  0, "Garond accepte de vous libÃ©rer contre 1 000 piÃ¨ces d'or.");
+					Doc_PrintLines	( nDocID,  0, "Donc, si vous avez de l'or cachÃ© quelque part, ce serait le moment de me le dire.");
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Milten"					);
@@ -105,7 +105,7 @@ func void UseLetterForGorn ()
 };
 
 //********************************************
-//	Kerkerschlüssel der Burg im Minental
+//	KerkerschlÃ¼ssel der Burg im Minental
 //********************************************
 
 
@@ -124,17 +124,17 @@ INSTANCE ItKe_PrisonKey_MIS(C_Item)
 	description			= 	name;
 	
 	TEXT[2]				= 	"La clef du donjon";
-	TEXT[3]				= 	"du château.";
+	TEXT[3]				= 	"du chÃ¢teau.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 
 //********************************************
-//	Schlüssel Erzlager der Burg im Minental
+//	SchlÃ¼ssel Erzlager der Burg im Minental
 //********************************************
 INSTANCE ItKe_OC_Store(C_Item)
 {
-	name 				=	"Clef de l'entrepôt";
+	name 				=	"Clef de l'entrepÃ´t";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	0;
@@ -146,13 +146,13 @@ INSTANCE ItKe_OC_Store(C_Item)
 
 	description			= 	name;
 	
-	TEXT[2]				= 	"La clef de l'entrepôt";
-	TEXT[3]				= 	"du château.";
+	TEXT[2]				= 	"La clef de l'entrepÃ´t";
+	TEXT[3]				= 	"du chÃ¢teau.";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Erzbaron Flur der Burg im Minental
+//	SchlÃ¼ssel Erzbaron Flur der Burg im Minental
 //********************************************
 INSTANCE ITKE_ErzBaronFlur(C_Item)
 {
@@ -166,15 +166,15 @@ INSTANCE ITKE_ErzBaronFlur(C_Item)
 	visual 				=	"ItKe_Key_02.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Pour la première porte.";
+	description			= 	"Pour la premiÃ¨re porte.";
 	
-	TEXT[2]				= 	"Un nom est gravé dessus.";
+	TEXT[2]				= 	"Un nom est gravÃ© dessus.";
 	TEXT[3]				= 	"Gomez";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Erzbaron Raum der Burg im Minental
+//	SchlÃ¼ssel Erzbaron Raum der Burg im Minental
 //********************************************
 INSTANCE ITKE_ErzBaronRaum(C_Item)
 {
@@ -188,9 +188,9 @@ INSTANCE ITKE_ErzBaronRaum(C_Item)
 	visual 				=	"ItKe_Key_01.3ds";
 	material 			=	MAT_METAL;
 
-	description			= 	"Pour la deuxième porte.";
+	description			= 	"Pour la deuxiÃ¨me porte.";
 	
-	TEXT[2]				= 	"Un nom est gravé dessus.";
+	TEXT[2]				= 	"Un nom est gravÃ© dessus.";
 	TEXT[3]				= 	"Gomez";
 	
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -252,10 +252,10 @@ func void UseItwr_Silvestro ()
 				Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 				Doc_PrintLine	( nDocID,  0, "De Silvestro, paladin du roi");
 				Doc_PrintLine	( nDocID,  0, "");
-				Doc_PrintLines	( nDocID,  0, "Encore une journée à creuser. Aujourd'hui nous prévoyons d'enfoncer le mur pour creuser plus loin dans la roche.");
-				Doc_PrintLines	( nDocID,  0, "J'ai un mauvais pressentiment… Je vais faire cacher le minerai.");
-				Doc_PrintLines	( nDocID,  0, "Diego est le seul qui connaisse cet endroit. Je dois lui faire confiance. Il mettra le coffre à l'abri mais je ne le laisserai pas y aller seul.");	
-				Doc_PrintLines	( nDocID,  0, "Le minerai doit être protégé coûte que coûte. Deux chevaliers iront donc avec Diego.");	
+				Doc_PrintLines	( nDocID,  0, "Encore une journÃ©e Ã  creuser. Aujourd'hui nous prÃ©voyons d'enfoncer le mur pour creuser plus loin dans la roche.");
+				Doc_PrintLines	( nDocID,  0, "J'ai un mauvais pressentimentâ€¦ Je vais faire cacher le minerai.");
+				Doc_PrintLines	( nDocID,  0, "Diego est le seul qui connaisse cet endroit. Je dois lui faire confiance. Il mettra le coffre Ã  l'abri mais je ne le laisserai pas y aller seul.");	
+				Doc_PrintLines	( nDocID,  0, "Le minerai doit Ãªtre protÃ©gÃ© coÃ»te que coÃ»te. Deux chevaliers iront donc avec Diego.");	
 				Doc_PrintLine	( nDocID,  0, "");
 				Doc_PrintLine	( nDocID,  0, "Longue vie au roi.");
 				Doc_PrintLine	( nDocID,  0, "");
@@ -264,7 +264,7 @@ func void UseItwr_Silvestro ()
 				
 };
 //**********************************************************************************
-//	Krallen des Rudelführers
+//	Krallen des RudelfÃ¼hrers
 //----------------------------------------------------------------------------------
 INSTANCE ItAt_ClawLeader (C_Item)
 {
@@ -306,7 +306,7 @@ INSTANCE ItSe_Olav	(C_Item)
 	
 	TEXT[0]				= 	"";
 	TEXT[1]				= 	"";
-	TEXT[2]				= 	"Quelques pièces tintent à l'intérieur.";
+	TEXT[2]				= 	"Quelques piÃ¨ces tintent Ã  l'intÃ©rieur.";
 	TEXT[3]				= 	"";
 	TEXT[4]				= 	"";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
@@ -336,7 +336,7 @@ instance ItMi_GoldPlate_MIS (C_Item)
 };
 
 //********************************************
-//	Schlüssel Erzlager der Burg im Minental
+//	SchlÃ¼ssel Erzlager der Burg im Minental
 //********************************************
 INSTANCE ItKe_Pass_MIS(C_Item)
 {
@@ -355,7 +355,7 @@ INSTANCE ItKe_Pass_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Bromor
+//	SchlÃ¼ssel Bromor
 //********************************************
 INSTANCE ItKe_Bromor(C_Item)
 {
@@ -370,11 +370,11 @@ INSTANCE ItKe_Bromor(C_Item)
 	material 			=	MAT_METAL;
 
 	description			= 	"La clef de la chambre";
-	TEXT[1]				= 	"propriétaire du bordel.";
+	TEXT[1]				= 	"propriÃ©taire du bordel.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //********************************************
-//	Schlüssel Runenstein
+//	SchlÃ¼ssel Runenstein
 //********************************************
 INSTANCE ITKE_RUNE_MIS(C_Item)
 {
@@ -397,7 +397,7 @@ INSTANCE ITKE_RUNE_MIS(C_Item)
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
 //**********************************************************************************
-//	Bloodfly Stachel ausschlürfen lernen
+//	Bloodfly Stachel ausschlÃ¼rfen lernen
 //----------------------------------------------------------------------------------
 INSTANCE ItWr_Bloody_MIS		(C_Item)
 {
@@ -427,11 +427,11 @@ func void UseBloodMIS ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Le dard d'une mouche sanguine contient un venin mortel pour quiconque le manipule."					);
-					Doc_PrintLines	( nDocID,  0, "A moins de connaître l'art d'extraire le dard de la façon suivante.");
-					Doc_PrintLines	( nDocID,  0, "Le dard est ouvert soigneusement en faisant glisser la lame de la pointe à la base.");					
-					Doc_PrintLines	( nDocID,  0, "On retire le derme supérieur et on incise le tissu autour des glandes."					);
-					Doc_PrintLines	( nDocID,  0, "Le suc du tissu a des propriétés curatives.");
-					Doc_PrintLines	( nDocID,  0, "Cependant, le corps humain devient insensible à ces vertus avec le temps."					);
+					Doc_PrintLines	( nDocID,  0, "A moins de connaÃ®tre l'art d'extraire le dard de la faÃ§on suivante.");
+					Doc_PrintLines	( nDocID,  0, "Le dard est ouvert soigneusement en faisant glisser la lame de la pointe Ã  la base.");					
+					Doc_PrintLines	( nDocID,  0, "On retire le derme supÃ©rieur et on incise le tissu autour des glandes."					);
+					Doc_PrintLines	( nDocID,  0, "Le suc du tissu a des propriÃ©tÃ©s curatives.");
+					Doc_PrintLines	( nDocID,  0, "Cependant, le corps humain devient insensible Ã  ces vertus avec le temps."					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Damarok");
 					Doc_Show		( nDocID );
@@ -440,7 +440,7 @@ func void UseBloodMIS ()
 		{
 			Knows_Bloodfly = TRUE;
 			Log_CreateTopic (Topic_Bonus,LOG_NOTE);
-			B_LogEntry (Topic_Bonus, "Maintenant, je sais extraire le suc médicinal des dards de mouches sanguines.");
+			B_LogEntry (Topic_Bonus, "Maintenant, je sais extraire le suc mÃ©dicinal des dards de mouches sanguines.");
 			B_GivePlayerXP (XP_Ambient);
 		};		
 };
@@ -474,16 +474,16 @@ func void UsePfandbrief ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, " "					);
 					Doc_PrintLine	( nDocID,  0, "Pour le paiement des dettes, est"					);
-					Doc_PrintLine	( nDocID,  0, "accepté un objet mis en gage, d'une valeur"					);
-					Doc_PrintLine	( nDocID,  0, "égale à celle des dettes."					);
+					Doc_PrintLine	( nDocID,  0, "acceptÃ© un objet mis en gage, d'une valeur"					);
+					Doc_PrintLine	( nDocID,  0, "Ã©gale Ã  celle des dettes."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLine	( nDocID,  0, "Gage : un calice en or décoré de"					);
+					Doc_PrintLine	( nDocID,  0, "Gage : un calice en or dÃ©corÃ© de"					);
 					Doc_PrintLines	( nDocID,  0, "la collection des calices de sang");
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "signé");
-					Doc_PrintLine	( nDocID,  0, "Lutéro, marchand"					);
+					Doc_PrintLine	( nDocID,  0, "signÃ©");
+					Doc_PrintLine	( nDocID,  0, "LutÃ©ro, marchand"					);
 					Doc_PrintLine	( nDocID,  0, " "					);
-					Doc_PrintLine	( nDocID,  0, "Lehmar, prêteur sur gages"					);
+					Doc_PrintLine	( nDocID,  0, "Lehmar, prÃªteur sur gages"					);
 					Doc_Show		( nDocID );
 		
 };
@@ -558,12 +558,12 @@ func void UseManowar ()
 					Doc_PrintLines	( nDocID,  0, "Le Cri De Dominique");
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, "Nous imposerons Sa gloire.");
-					Doc_PrintLines	( nDocID,  0, "Innos est avec mes frères et moi.");					
-					Doc_PrintLines	( nDocID,  0, "J'abattrai tous ceux qui voudront m'arrêter"					);
-					Doc_PrintLines	( nDocID,  0, "car Il est le feu dans mon cœur."					);
-					Doc_PrintLines	( nDocID,  0, "Mon épée est à Son service."					);
-					Doc_PrintLines	( nDocID,  0, "En ce jour Son nom résonnera."					);
-					Doc_PrintLines	( nDocID,  0, "Quiconque me défiera"					);
+					Doc_PrintLines	( nDocID,  0, "Innos est avec mes frÃ¨res et moi.");					
+					Doc_PrintLines	( nDocID,  0, "J'abattrai tous ceux qui voudront m'arrÃªter"					);
+					Doc_PrintLines	( nDocID,  0, "car Il est le feu dans mon cÅ“ur."					);
+					Doc_PrintLines	( nDocID,  0, "Mon Ã©pÃ©e est Ã  Son service."					);
+					Doc_PrintLines	( nDocID,  0, "En ce jour Son nom rÃ©sonnera."					);
+					Doc_PrintLines	( nDocID,  0, "Quiconque me dÃ©fiera"					);
 					Doc_PrintLines	( nDocID,  0, "mourra de ma main");
 					Doc_PrintLines	( nDocID,  0, "car je suis un guerrier d'Innos."					);
 					
@@ -602,7 +602,7 @@ func void UseKDWLetter ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Nous avons quitté le camp. Maintenant que la Barrière est tombée, nous chercherons la source du désastre. Peut-être y trouverons-nous les réponses à nos questions. Adanos seul sait où nous mènera notre voyage."					);
+					Doc_PrintLines	( nDocID,  0, "Nous avons quittÃ© le camp. Maintenant que la BarriÃ¨re est tombÃ©e, nous chercherons la source du dÃ©sastre. Peut-Ãªtre y trouverons-nous les rÃ©ponses Ã  nos questions. Adanos seul sait oÃ¹ nous mÃ¨nera notre voyage."					);
 					Doc_PrintLines	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
@@ -645,8 +645,8 @@ func void UseGilbertLetter ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "J'en ai assez. Je me cache ici depuis trop longtemps. Et je crois avoir entendu la Barrière tomber."					);
-					Doc_PrintLines	( nDocID,  0, "Il semble peu probable qu'on me cherchera. J'en ai assez de cette grotte et de la vallée. Il est temps de rentrer chez moi.");
+					Doc_PrintLines	( nDocID,  0, "J'en ai assez. Je me cache ici depuis trop longtemps. Et je crois avoir entendu la BarriÃ¨re tomber."					);
+					Doc_PrintLines	( nDocID,  0, "Il semble peu probable qu'on me cherchera. J'en ai assez de cette grotte et de la vallÃ©e. Il est temps de rentrer chez moi.");
 					Doc_PrintLines	( nDocID,  0, "");					
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);

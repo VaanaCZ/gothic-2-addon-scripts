@@ -31,7 +31,7 @@ INSTANCE MENU_OPT_GRAPHICS(C_MENU_DEF)
 
 INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"PARAMÈTRES GRAPHIQUES";
+	text[0]		=	"PARAMÃˆTRES GRAPHIQUES";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -49,8 +49,8 @@ INSTANCE MENUITEM_GRA_HEADLINE(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_TEXQUAL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"détails des textures";
-	text[1]		= 	"Déterminer niveau de détail des textures"; // Kommentar
+	text[0]		=	"dÃ©tails des textures";
+	text[1]		= 	"DÃ©terminer niveau de dÃ©tail des textures"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -84,8 +84,8 @@ INSTANCE MENUITEM_GRA_TEXQUAL_SLIDER(C_MENU_ITEM_DEF)
 INSTANCE MENUITEM_GRA_MODEL_DETAIL(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
-	text[0]		=	"détails des modèles";
-	text[1]		= 	"Sélectionnez niveau de détails modèles"; // Kommentar
+	text[0]		=	"dÃ©tails des modÃ¨les";
+	text[1]		= 	"SÃ©lectionnez niveau de dÃ©tails modÃ¨les"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -121,8 +121,8 @@ instance MENUITEM_GRA_MODEL_DETAIL_SLIDER(C_MENU_ITEM_DEF)
 instance MENUITEM_GRA_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Portée de vue";
-	text[1]		= "Sélectionnez portée de vue en pourcentage"; // Kommentar
+	text[0]		= "PortÃ©e de vue";
+	text[1]		= "SÃ©lectionnez portÃ©e de vue en pourcentage"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -154,7 +154,7 @@ instance MENUITEM_VOB_SIGHT(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Fondu objets";
-	text[1]		= "Sélectionnez la portée de vue des objets"; // Kommentar
+	text[1]		= "SÃ©lectionnez la portÃ©e de vue des objets"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3000;	dimy		=	750;
@@ -191,7 +191,7 @@ INSTANCE MENUITEM_GRA_SKY_EFFECTS(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Effets du ciel";
-	text[1]		= 	"Activer/désactiver effets du ciel"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver effets du ciel"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;

@@ -60,13 +60,13 @@ var int Andre_Steckbrief; //damit es nur EINMAL kommt
 func void B_Andre_Steckbrief()
 {
 	AI_Output (self ,other,"DIA_Andre_Add_08_00"); //Un de mes hommes m'a dit que les bandits faisaient circuler des avis de recherche avec votre visage dessus.
-	AI_Output (self ,other,"DIA_Andre_Add_08_01"); //Il m'a aussi dit que vous aviez nié ce fait.
+	AI_Output (self ,other,"DIA_Andre_Add_08_01"); //Il m'a aussi dit que vous aviez niÃ© ce fait.
 	AI_Output (self ,other,"DIA_Andre_Add_08_02"); //Alors qu'est-ce que cela signifie ?
 	AI_Output (other, self,"DIA_Andre_Add_15_03"); //J'ignore pourquoi ces types me recherchent.
-	AI_Output (self ,other,"DIA_Andre_Add_08_04"); //J'espère pour vous que vous dites la vérité.
+	AI_Output (self ,other,"DIA_Andre_Add_08_04"); //J'espÃ¨re pour vous que vous dites la vÃ©ritÃ©.
 	AI_Output (self ,other,"DIA_Andre_Add_08_05"); //Je ne peux engager dans la milice quelqu'un qui a un casier.
-	AI_Output (self ,other,"DIA_Andre_Add_08_06"); //La plupart de ces bandits sont d'anciens prisonniers de la colonie minière.
-	AI_Output (self ,other,"DIA_Andre_Add_08_07"); //J'espère que vous n'êtes pas de mèche avec ces coupeurs de gorge !
+	AI_Output (self ,other,"DIA_Andre_Add_08_06"); //La plupart de ces bandits sont d'anciens prisonniers de la colonie miniÃ¨re.
+	AI_Output (self ,other,"DIA_Andre_Add_08_07"); //J'espÃ¨re que vous n'Ãªtes pas de mÃ¨che avec ces coupeurs de gorge !
 	Andre_Steckbrief = TRUE;
 };
 
@@ -78,8 +78,8 @@ var int Andre_CantharFalle; //damit es nur EINMAL kommt
 
 func void B_Andre_CantharFalle()
 {
-	AI_Output (self, other, "B_Andre_CantharFalle_08_00"); //Le marchand Canthar était ici. Il a dit que vous étiez un prisonnier évadé de la colonie minière.
-	AI_Output (self, other, "B_Andre_CantharFalle_08_01"); //J'ignore si c'est la vérité et je préfère ne pas le savoir mais vous devez d'abord régler cette affaire.
+	AI_Output (self, other, "B_Andre_CantharFalle_08_00"); //Le marchand Canthar Ã©tait ici. Il a dit que vous Ã©tiez un prisonnier Ã©vadÃ© de la colonie miniÃ¨re.
+	AI_Output (self, other, "B_Andre_CantharFalle_08_01"); //J'ignore si c'est la vÃ©ritÃ© et je prÃ©fÃ¨re ne pas le savoir mais vous devez d'abord rÃ©gler cette affaire.
 	
 	B_RemoveNpc (Sarah);
 	
@@ -197,10 +197,10 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 	if (B_GetTotalPetzCounter(self) > Andre_LastPetzCounter)
 	{
 		AI_Output (self, other, "DIA_Andre_PMSchulden_08_01"); //Je me demandais si vous oseriez venir ici !
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_02"); //Apparemment, les charges contre vous se sont multipliées !
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_02"); //Apparemment, les charges contre vous se sont multipliÃ©es !
 		if (Andre_Schulden < 1000)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_03"); //Je vous avais prévenu ! Maintenant l'amende que vous devez payer est beaucoup plus importante.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_03"); //Je vous avais prÃ©venu ! Maintenant l'amende que vous devez payer est beaucoup plus importante.
 			AI_Output (other, self, "DIA_Andre_PMAdd_15_00"); //Combien ?
 			
 			var int diff; diff = (B_GetTotalPetzCounter(self) - Andre_LastPetzCounter);
@@ -216,12 +216,12 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_04"); //Vous m'avez vraiment déçu.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_04"); //Vous m'avez vraiment dÃ©Ã§u.
 		};
 	}
 	else if (B_GetGreatestPetzCrime(self) < Andre_LastPetzCrime)
 	{
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_05"); //J'ai de nouveaux éléments.
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_05"); //J'ai de nouveaux Ã©lÃ©ments.
 		
 		if (Andre_LastPetzCrime == CRIME_MURDER)
 		{
@@ -237,20 +237,20 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 		if (Andre_LastPetzCrime == CRIME_ATTACK)
 		|| ( (Andre_LastPetzCrime > CRIME_ATTACK) && (B_GetGreatestPetzCrime(self) < CRIME_ATTACK) )
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_08"); //Il n'y a plus personne pour témoigner que vous avez participé à une bagarre.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_08"); //Il n'y a plus personne pour tÃ©moigner que vous avez participÃ© Ã  une bagarre.
 		};
 		
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_09"); //Apparemment, toutes les charges qui pesaient contre vous ont été levées.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_09"); //Apparemment, toutes les charges qui pesaient contre vous ont Ã©tÃ© levÃ©es.
 		};
 		
-		AI_Output (self, other, "DIA_Andre_PMSchulden_08_10"); //J'ignore ce qui s'est passé mais je vous avertis : n'essayez pas de me duper.
+		AI_Output (self, other, "DIA_Andre_PMSchulden_08_10"); //J'ignore ce qui s'est passÃ© mais je vous avertis : n'essayez pas de me duper.
 				
 		// ------- Schulden erlassen oder trotzdem zahlen ------
 		if (B_GetGreatestPetzCrime(self) == CRIME_NONE)
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_11"); //Quoi qu'il en soit j'ai décidé d'effacer vos dettes.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_11"); //Quoi qu'il en soit j'ai dÃ©cidÃ© d'effacer vos dettes.
 			AI_Output (self, other, "DIA_Andre_PMSchulden_08_12"); //Faites-en sorte de ne plus vous attirer d'ennuis.
 	
 			Andre_Schulden			= 0;
@@ -259,7 +259,7 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Andre_PMSchulden_08_13"); //Que les choses soient claires. Vous devrez tout de même payer votre amende dans sa totalité.
+			AI_Output (self, other, "DIA_Andre_PMSchulden_08_13"); //Que les choses soient claires. Vous devrez tout de mÃªme payer votre amende dans sa totalitÃ©.
 			B_Say_Gold (self, other, Andre_Schulden);
 			AI_Output (self, other, "DIA_Andre_PMSchulden_08_14"); //Oui, qu'y a-t-il ?
 		};
@@ -271,7 +271,7 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 		Info_ClearChoices  	(DIA_Andre_PMSchulden);
 		Info_ClearChoices  	(DIA_Andre_PETZMASTER);
 		Info_AddChoice		(DIA_Andre_PMSchulden,"Je n'ai pas assez d'or.",DIA_Andre_PETZMASTER_PayLater);
-		Info_AddChoice		(DIA_Andre_PMSchulden,"C'est combien déjà ?",DIA_Andre_PMSchulden_HowMuchAgain);
+		Info_AddChoice		(DIA_Andre_PMSchulden,"C'est combien dÃ©jÃ  ?",DIA_Andre_PMSchulden_HowMuchAgain);
 		if (Npc_HasItems(other, itmi_gold) >= Andre_Schulden)
 		{
 			Info_AddChoice 	(DIA_Andre_PMSchulden,"Je veux payer l'amende !",DIA_Andre_PETZMASTER_PayNow);
@@ -281,13 +281,13 @@ FUNC VOID DIA_Andre_PMSchulden_Info()
 
 func void DIA_Andre_PMSchulden_HowMuchAgain()
 {
-	AI_Output (other, self, "DIA_Andre_PMSchulden_HowMuchAgain_15_00"); //C'était quoi le prix déjà ?
+	AI_Output (other, self, "DIA_Andre_PMSchulden_HowMuchAgain_15_00"); //C'Ã©tait quoi le prix dÃ©jÃ  ?
 	B_Say_Gold (self, other, Andre_Schulden);
 
 	Info_ClearChoices  	(DIA_Andre_PMSchulden);
 	Info_ClearChoices  	(DIA_Andre_PETZMASTER);
 	Info_AddChoice		(DIA_Andre_PMSchulden,"Je n'ai pas assez d'or.",DIA_Andre_PETZMASTER_PayLater);
-	Info_AddChoice		(DIA_Andre_PMSchulden,"C'est combien déjà ?",DIA_Andre_PMSchulden_HowMuchAgain);
+	Info_AddChoice		(DIA_Andre_PMSchulden,"C'est combien dÃ©jÃ  ?",DIA_Andre_PMSchulden_HowMuchAgain);
 	if (Npc_HasItems(other, itmi_gold) >= Andre_Schulden)
 	{
 		Info_AddChoice 	(DIA_Andre_PMSchulden,"Je veux payer l'amende !",DIA_Andre_PETZMASTER_PayNow);
@@ -319,12 +319,12 @@ FUNC INT DIA_Andre_PETZMASTER_Condition()
 };
 FUNC VOID DIA_Andre_PETZMASTER_Info()
 {
-	Andre_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime höher ist...
+	Andre_Schulden = 0; //weil Funktion nochmal durchlaufen wird, wenn Crime hÃ¶her ist...
 	
 	// ------ SC hat mit Andre noch nicht gesprochen ------
 	if (self.aivar[AIV_TalkedToPlayer] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_00"); //Vous devez être cet individu qui provoque des troubles en ville.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_00"); //Vous devez Ãªtre cet individu qui provoque des troubles en ville.
 	};
 	
 						// ------ STECKBRIEF ------
@@ -346,29 +346,29 @@ FUNC VOID DIA_Andre_PETZMASTER_Info()
 	
 	if (B_GetGreatestPetzCrime(self) == CRIME_MURDER) 
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_01"); //Il est bien que vous vous soyez présenté devant moi avant que votre cas ne s'aggrave.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_02"); //Le meurtre est un crime sérieux !
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_01"); //Il est bien que vous vous soyez prÃ©sentÃ© devant moi avant que votre cas ne s'aggrave.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_02"); //Le meurtre est un crime sÃ©rieux !
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); 		//Anzahl der Zeugen * 50
-		Andre_Schulden = Andre_Schulden + 500;						//PLUS Mörder-Malus
+		Andre_Schulden = Andre_Schulden + 500;						//PLUS MÃ¶rder-Malus
 		if ((PETZCOUNTER_City_Theft + PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
 			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_03"); //Sans parler des autres choses que vous avez faites.
 		};
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_04"); //La garde a reçu l'ordre d'exécuter sur le champ tous les meurtriers.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_05"); //Et la plupart des citoyens ne peuvent tolérer la présence d'un meurtrier en ville !
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_06"); //Vous pendre ne m'intéresse pas. Nous sommes en guerre et nous avons besoin de chaque homme.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_07"); //Mais il ne sera pas aisé de changer l'opinion que les gens ont de vous.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_08"); //Vous pourriez témoigner de vos remords en payant une amende qui, naturellement, serait assez conséquente.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_04"); //La garde a reÃ§u l'ordre d'exÃ©cuter sur le champ tous les meurtriers.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_05"); //Et la plupart des citoyens ne peuvent tolÃ©rer la prÃ©sence d'un meurtrier en ville !
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_06"); //Vous pendre ne m'intÃ©resse pas. Nous sommes en guerre et nous avons besoin de chaque homme.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_07"); //Mais il ne sera pas aisÃ© de changer l'opinion que les gens ont de vous.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_08"); //Vous pourriez tÃ©moigner de vos remords en payant une amende qui, naturellement, serait assez consÃ©quente.
 	};
 		
 	if (B_GetGreatestPetzCrime(self) == CRIME_THEFT) 
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_09"); //C'est bien que vous soyez venu ! Vous êtes accusé de vol ! Il y a des témoins !
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_09"); //C'est bien que vous soyez venu ! Vous Ãªtes accusÃ© de vol ! Il y a des tÃ©moins !
 		if ((PETZCOUNTER_City_Attack + PETZCOUNTER_City_Sheepkiller) > 0)
 		{
-			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_10"); //Je ne parlerai même pas des autres méfaits dont vous êtes coupable.
+			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_10"); //Je ne parlerai mÃªme pas des autres mÃ©faits dont vous Ãªtes coupable.
 		};
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_11"); //Je ne peux tolérer une telle attitude en ville !
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_11"); //Je ne peux tolÃ©rer une telle attitude en ville !
 		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_12"); //Vous devez payer une amende pour vous faire pardonner.
 		
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
@@ -377,22 +377,22 @@ FUNC VOID DIA_Andre_PETZMASTER_Info()
 	if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 	{
 		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_13"); //C'est une chose de se bagarrer contre la vermine du port...
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_14"); //C'en est une autre de s'en prendre à des citoyens ou aux soldats du roi. Je dois vous traîner en justice.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_14"); //C'en est une autre de s'en prendre Ã  des citoyens ou aux soldats du roi. Je dois vous traÃ®ner en justice.
 		if (PETZCOUNTER_City_Sheepkiller > 0)
 		{
 			AI_Output (self, other, "DIA_Andre_PETZMASTER_08_15"); //Et cette histoire de mouton n'arrange rien.
 		};
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_16"); //Si je vous laisse vous en tirer comme ça, bientôt tout le monde fera ce qui lui plaira.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_17"); //Vous paierez donc une amende appropriée et nous oublierons tout ça.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_16"); //Si je vous laisse vous en tirer comme Ã§a, bientÃ´t tout le monde fera ce qui lui plaira.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_17"); //Vous paierez donc une amende appropriÃ©e et nous oublierons tout Ã§a.
 		
 		Andre_Schulden = (B_GetTotalPetzCounter(self) * 50); //Anzahl der Zeugen * 50
 	};
 	
-	// ------ Schaf getötet (nahezu uninteressant - in der City gibt es keine Schafe) ------
+	// ------ Schaf getÃ¶tet (nahezu uninteressant - in der City gibt es keine Schafe) ------
 	if (B_GetGreatestPetzCrime(self) == CRIME_SHEEPKILLER) 
 	{
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_18"); //J'ai entendu dire que vous vous en preniez à nos moutons.
-		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_19"); //Vous vous rendez compte que je ne peux pas laisser passer ça.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_18"); //J'ai entendu dire que vous vous en preniez Ã  nos moutons.
+		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_19"); //Vous vous rendez compte que je ne peux pas laisser passer Ã§a.
 		AI_Output (self, other, "DIA_Andre_PETZMASTER_08_20"); //Vous allez devoir payer une compensation !
 		
 		Andre_Schulden = 100;
@@ -417,7 +417,7 @@ func void DIA_Andre_PETZMASTER_PayNow()
 {
 	AI_Output (other, self, "DIA_Andre_PETZMASTER_PayNow_15_00"); //Je veux payer l'amende !
 	B_GiveInvItems (other, self, itmi_gold, Andre_Schulden);
-	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayNow_08_01"); //Bien ! Je veillerai à ce que tout le monde en ville soit au courant, cela permettra d'améliorer quelque peu votre réputation.
+	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayNow_08_01"); //Bien ! Je veillerai Ã  ce que tout le monde en ville soit au courant, cela permettra d'amÃ©liorer quelque peu votre rÃ©putation.
 
 	B_GrantAbsolution (LOC_CITY);
 	
@@ -433,7 +433,7 @@ func void DIA_Andre_PETZMASTER_PayLater()
 {
 	AI_Output (other, self, "DIA_Andre_PETZMASTER_PayLater_15_00"); //Je n'ai pas assez d'argent.
 	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_01"); //Alors faites en sorte de trouver de l'or le plus vite possible.
-	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_02"); //Je vous avertis : si vous aggravez votre culpabilité, ça ira mal pour vous !
+	AI_Output (self, other, "DIA_Andre_PETZMASTER_PayLater_08_02"); //Je vous avertis : si vous aggravez votre culpabilitÃ©, Ã§a ira mal pour vous !
 	
 	Andre_LastPetzCounter 	= B_GetTotalPetzCounter(self);
 	Andre_LastPetzCrime		= B_GetGreatestPetzCrime(self);
@@ -462,13 +462,13 @@ func int DIA_Andre_Hallo_Condition ()
 };
 func void DIA_Andre_Hallo_Info ()
 {
-	AI_Output (self, other, "DIA_Andre_Hallo_08_00"); //Qu'Innos soit avec vous étranger ! Qu'est-ce qui vous amène ?
+	AI_Output (self, other, "DIA_Andre_Hallo_08_00"); //Qu'Innos soit avec vous Ã©tranger ! Qu'est-ce qui vous amÃ¨ne ?
 };
 
 
 
 // *********************************************************
-//					Nachricht für Lord Hagen
+//					Nachricht fÃ¼r Lord Hagen
 // *********************************************************
 instance DIA_Andre_Message		(C_INFO)
 {
@@ -491,25 +491,25 @@ func int DIA_Andre_Message_Condition ()
 func void DIA_Andre_Message_Info ()
 {
 	AI_Output (other, self, "DIA_Andre_Message_15_00"); //J'ai un message important pour le seigneur Hagen.
-	AI_Output (self, other, "DIA_Andre_Message_08_01"); //Eh bien, vous êtes en présence d'un de ses hommes. De quoi s'agit-il ?
+	AI_Output (self, other, "DIA_Andre_Message_08_01"); //Eh bien, vous Ãªtes en prÃ©sence d'un de ses hommes. De quoi s'agit-il ?
 	
 	Info_ClearChoices (DIA_Andre_Message);
-	Info_AddChoice (DIA_Andre_Message, "Que je dois transmettre moi-même au seigneur Hagen.", DIA_Andre_Message_Personal);
-	Info_AddChoice (DIA_Andre_Message, "Les hordes d'orques sont menées par des DRAGONS !", DIA_Andre_Message_Dragons);
-	Info_AddChoice (DIA_Andre_Message, "Cela concerne une relique sacrée, l'Œil d'Innos.", DIA_Andre_Message_EyeInnos);
+	Info_AddChoice (DIA_Andre_Message, "Que je dois transmettre moi-mÃªme au seigneur Hagen.", DIA_Andre_Message_Personal);
+	Info_AddChoice (DIA_Andre_Message, "Les hordes d'orques sont menÃ©es par des DRAGONS !", DIA_Andre_Message_Dragons);
+	Info_AddChoice (DIA_Andre_Message, "Cela concerne une relique sacrÃ©e, l'Å’il d'Innos.", DIA_Andre_Message_EyeInnos);
 };
 
 func void B_Andre_LordHagenNichtZuSprechen()
 {
-	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_00"); //Le seigneur Hagen ne reçoit que les paladins et ceux qui sont au service des paladins.
-	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_01"); //Il n'est pas digne de lui de consacrer son temps à des gens de la plèbe.
+	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_00"); //Le seigneur Hagen ne reÃ§oit que les paladins et ceux qui sont au service des paladins.
+	AI_Output (self, other, "B_Andre_LordHagenNichtZuSprechen_08_01"); //Il n'est pas digne de lui de consacrer son temps Ã  des gens de la plÃ¨be.
 };
 
 func void DIA_Andre_Message_EyeInnos()
 {
-	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_00"); //Cela concerne un artefact sacré, l'Œil d'Innos.
-	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_01"); //L'Œil d'Innos... jamais entendu parler. Mais cela ne veut pas dire grand-chose.
-	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_02"); //S'il existe vraiment un artefact portant ce nom, seuls les plus hauts représentants de notre ordre peuvent en savoir queqlque chose.
+	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_00"); //Cela concerne un artefact sacrÃ©, l'Å’il d'Innos.
+	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_01"); //L'Å’il d'Innos... jamais entendu parler. Mais cela ne veut pas dire grand-chose.
+	AI_Output (self, other, "DIA_Andre_Message_EyeInnos_08_02"); //S'il existe vraiment un artefact portant ce nom, seuls les plus hauts reprÃ©sentants de notre ordre peuvent en savoir queqlque chose.
 	AI_Output (other, self, "DIA_Andre_Message_EyeInnos_15_03"); //C'est pourquoi je dois parler au seigneur Hagen.
 	
 	Andre_EyeInnos = TRUE;
@@ -520,16 +520,16 @@ func void DIA_Andre_Message_EyeInnos()
 };
 func void DIA_Andre_Message_Dragons()
 {
-	AI_Output (other, self, "DIA_Andre_Message_Dragons_15_00"); //Les hordes d'orques sont dirigées par des DRA...
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_01"); //(il l'interrompt) Je SAIS que l'armée des orques ne fait que se renforcer.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_02"); //Ne me dites pas que c'est pour ça que vous voulez déranger le seigneur Hagen.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_03"); //Il vous arracherait la tête si vous lui faisiez perdre son temps avec de telles histoires.
-	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_04"); //Je suis sûr que vous êtes assez malin pour vous en rendre compte.
+	AI_Output (other, self, "DIA_Andre_Message_Dragons_15_00"); //Les hordes d'orques sont dirigÃ©es par des DRA...
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_01"); //(il l'interrompt) Je SAIS que l'armÃ©e des orques ne fait que se renforcer.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_02"); //Ne me dites pas que c'est pour Ã§a que vous voulez dÃ©ranger le seigneur Hagen.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_03"); //Il vous arracherait la tÃªte si vous lui faisiez perdre son temps avec de telles histoires.
+	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_04"); //Je suis sÃ»r que vous Ãªtes assez malin pour vous en rendre compte.
 	AI_Output (self, other, "DIA_Andre_Message_Dragons_08_05"); //Alors, de quoi s'agit-il vraiment ?
 };
 func void DIA_Andre_Message_Personal()
 {
-	AI_Output (other, self, "DIA_Andre_Message_Personal_15_00"); //Ça, je dois le dire au seigneur Hagen moi-même.
+	AI_Output (other, self, "DIA_Andre_Message_Personal_15_00"); //Ã‡a, je dois le dire au seigneur Hagen moi-mÃªme.
 	AI_Output (self, other, "DIA_Andre_Message_Personal_08_01"); //Comme vous voulez, mais sachez une chose :
 	B_Andre_LordHagenNichtZuSprechen();
 	
@@ -545,7 +545,7 @@ instance DIA_Andre_Paladine		(C_INFO)
 	condition	 = 	DIA_Andre_Paladine_Condition;
 	information	 = 	DIA_Andre_Paladine_Info;
 	permanent 	 =  FALSE; 
-	description	 = 	"Pourquoi êtes-vous en ville ?";	
+	description	 = 	"Pourquoi Ãªtes-vous en ville ?";	
 };
 func int DIA_Andre_Paladine_Condition ()
 {	
@@ -557,10 +557,10 @@ func int DIA_Andre_Paladine_Condition ()
 };
 func void DIA_Andre_Paladine_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Paladine_15_00"); //Pourquoi êtes-vous en ville ?
+	AI_Output (other, self, "DIA_Andre_Paladine_15_00"); //Pourquoi Ãªtes-vous en ville ?
 	AI_Output (self, other, "DIA_Andre_Paladine_08_01"); //Les objectifs de notre mission sont secrets.
 	AI_Output (self, other, "DIA_Andre_Paladine_08_02"); //La seule chose que je puisse vous dire c'est que les citoyens ne risquent rien.
-	AI_Output (self, other, "DIA_Andre_Paladine_08_03"); //Inutile de vous inquiéter.
+	AI_Output (self, other, "DIA_Andre_Paladine_08_03"); //Inutile de vous inquiÃ©ter.
 };
 // *********************************************************
 //	Warum seid ihr Paladine in der Stadt? 
@@ -572,7 +572,7 @@ instance DIA_Andre_PaladineAgain		(C_INFO)
 	condition	 = 	DIA_Andre_PaladineAgain_Condition;
 	information	 = 	DIA_Andre_PaladineAgain_Info;
 	permanent 	 =  FALSE; 
-	description	 = 	"Pourquoi êtes-vous en ville ?";	
+	description	 = 	"Pourquoi Ãªtes-vous en ville ?";	
 };
 func int DIA_Andre_PaladineAgain_Condition ()
 {	
@@ -586,16 +586,16 @@ func void DIA_Andre_PaladineAgain_Info ()
 {
 	if Npc_KnowsInfo (other,DIA_Andre_Paladine)
 	{
-		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_00"); //Allez-vous me dire maintenant pourquoi les paladins sont à Khorinis ?
+		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_00"); //Allez-vous me dire maintenant pourquoi les paladins sont Ã  Khorinis ?
 	}
 	else
 	{
-		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_01"); //Pourquoi êtes-vous en ville ?
+		AI_Output (other, self, "DIA_Andre_PaladineAgain_15_01"); //Pourquoi Ãªtes-vous en ville ?
 	};
 	
-	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_02"); //Maintenant vous êtes membre de la garde et donc sous l'autorité des paladins.
+	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_02"); //Maintenant vous Ãªtes membre de la garde et donc sous l'autoritÃ© des paladins.
 	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_03"); //Je peux donc vous mettre dans la confidence.
-	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_04"); //Nous sommes en mission pour le roi Rhobar. Avec l'effondrement de la Barrière, les livraisons de minerai se sont interrompues.
+	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_04"); //Nous sommes en mission pour le roi Rhobar. Avec l'effondrement de la BarriÃ¨re, les livraisons de minerai se sont interrompues.
 	AI_Output (self, other, "DIA_Andre_PaladineAgain_08_05"); //Aussi nous venons chercher le minerai pour le ramener sur le continent. Avec ce minerai, nous allons forger de nouvelles armes et repousser les orques.
 	
 	KnowsPaladins_Ore = TRUE;
@@ -621,26 +621,26 @@ func int DIA_Andre_AskToJoin_Condition ()
 };
 func void DIA_Andre_AskToJoin_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_AskToJoin_15_00"); //Je veux m'engager auprès des paladins !
+	AI_Output (other, self, "DIA_Andre_AskToJoin_15_00"); //Je veux m'engager auprÃ¨s des paladins !
 
 	if (Npc_KnowsInfo(other,DIA_Andre_Message))
 	{
-		AI_Output (self, other, "DIA_Andre_AskToJoin_08_01"); //Bien. Un homme capable me serait très utile, quelle que soit la raison pour laquelle il se joint à nous.
-		AI_Output (self, other, "DIA_Andre_AskToJoin_08_02"); //Si vous vous mettez au service des paladins, je vous aiderai à obtenir une audience auprès du seigneur Hagen.
+		AI_Output (self, other, "DIA_Andre_AskToJoin_08_01"); //Bien. Un homme capable me serait trÃ¨s utile, quelle que soit la raison pour laquelle il se joint Ã  nous.
+		AI_Output (self, other, "DIA_Andre_AskToJoin_08_02"); //Si vous vous mettez au service des paladins, je vous aiderai Ã  obtenir une audience auprÃ¨s du seigneur Hagen.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Andre_AskToJoin_08_03"); //Une requête des plus honorables.
+		AI_Output (self, other, "DIA_Andre_AskToJoin_08_03"); //Une requÃªte des plus honorables.
 	};
 	
 	AI_Output (self, other, "DIA_Andre_AskToJoin_08_04"); //Cependant, j'ai ordre de n'accepter de citoyens de la ville qu'au sein de la milice.
 	AI_Output (self, other, "DIA_Andre_AskToJoin_08_05"); //Mon commandant craint que des espions ou des saboteurs ne s'infiltrent dans nos rangs.
 	AI_Output (self, other, "DIA_Andre_AskToJoin_08_06"); //Il veut ainsi prendre le moins de risques possible.
-	AI_Output (self, other, "DIA_Andre_AskToJoin_08_07"); //Ainsi, vous devez donc d'abord devenir citoyen de la ville. Que cela vous paraisse censé ou non importe peu. Les ordres sont les ordres.
+	AI_Output (self, other, "DIA_Andre_AskToJoin_08_07"); //Ainsi, vous devez donc d'abord devenir citoyen de la ville. Que cela vous paraisse censÃ© ou non importe peu. Les ordres sont les ordres.
 	
 	Log_CreateTopic (TOPIC_BecomeMIL,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_BecomeMIL,LOG_RUNNING);
-	B_LogEntry (TOPIC_BecomeMIL,"Avant de pouvoir devenir membre de la garde, je dois être citoyen de la ville.");
+	B_LogEntry (TOPIC_BecomeMIL,"Avant de pouvoir devenir membre de la garde, je dois Ãªtre citoyen de la ville.");
 };
 
 // *********************************************************
@@ -670,7 +670,7 @@ func void DIA_Andre_ABOUTMILIZ_Info ()
 	AI_Output (other, self, "DIA_Andre_AboutMiliz_15_00"); //A quoi dois-je m'attendre avec la milice ?
 	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_01"); //Que les choses soient claires. Etre soldat de la milice signifie autre chose que de parader en ville dans un bel uniforme.
 	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_02"); //C'est un travail difficile et il faut parfois se salir les mains. Une fois que vous serez l'un de nous, beaucoup de travail vous attendra.
-	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_03"); //Mais cela en vaut la peine. En plus de la paie, vous aurez peut-être l'occasion de devenir un guerrier saint d'Innos.
+	AI_Output (self, other, "DIA_Andre_AboutMiliz_08_03"); //Mais cela en vaut la peine. En plus de la paie, vous aurez peut-Ãªtre l'occasion de devenir un guerrier saint d'Innos.
 };
 			
 ///////////////////////////////////////////////////////////////////////
@@ -683,7 +683,7 @@ instance DIA_Addon_Andre_MartinEmpfehlung		(C_INFO)
 	condition	 = 	DIA_Addon_Andre_MartinEmpfehlung_Condition;
 	information	 = 	DIA_Addon_Andre_MartinEmpfehlung_Info;
 
-	description	 = 	"J'ai une lettre de recommandation de votre maître du cellier.";
+	description	 = 	"J'ai une lettre de recommandation de votre maÃ®tre du cellier.";
 };
 
 func int DIA_Addon_Andre_MartinEmpfehlung_Condition ()
@@ -697,12 +697,12 @@ func int DIA_Addon_Andre_MartinEmpfehlung_Condition ()
 
 func void DIA_Addon_Andre_MartinEmpfehlung_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Andre_MartinEmpfehlung_15_00"); //J'ai une lettre de recommandation de votre maître du cellier.
-	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_01"); //(incrédule) Quoi ? Faites voir.
+	AI_Output	(other, self, "DIA_Addon_Andre_MartinEmpfehlung_15_00"); //J'ai une lettre de recommandation de votre maÃ®tre du cellier.
+	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_01"); //(incrÃ©dule) Quoi ? Faites voir.
 	B_GiveInvItems (other, self, ItWr_Martin_MilizEmpfehlung_Addon,1);
 	B_UseFakeScroll();
-	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_02"); //(impressionné) Et bien, que je sois… ! Cela a dû vous demander beaucoup d'efforts. Ce n'est pas chose facile que d'obtenir ceci de Martin.
-	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_03"); //D'accord. Vous m'avez convaincu. Si Martin vous parraine, je vous accepte. Faites-moi savoir quand vous serez prêt.
+	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_02"); //(impressionnÃ©) Et bien, que je soisâ€¦ ! Cela a dÃ» vous demander beaucoup d'efforts. Ce n'est pas chose facile que d'obtenir ceci de Martin.
+	AI_Output	(self, other, "DIA_Addon_Andre_MartinEmpfehlung_08_03"); //D'accord. Vous m'avez convaincu. Si Martin vous parraine, je vous accepte. Faites-moi savoir quand vous serez prÃªt.
 	Andre_Knows_MartinEmpfehlung = TRUE;
 };
 
@@ -716,7 +716,7 @@ instance DIA_Andre_Alternative (C_INFO)
 	condition	= DIA_Andre_Alternative_Condition;
 	information	= DIA_Andre_Alternative_Info;
 	permanent 	= FALSE; 
-	description = "N'y a-t-il pas un moyen plus rapide pour me joindre à vous ?";
+	description = "N'y a-t-il pas un moyen plus rapide pour me joindre Ã  vous ?";
 };
 func int DIA_Andre_Alternative_Condition ()
 {
@@ -729,9 +729,9 @@ func int DIA_Andre_Alternative_Condition ()
 func void DIA_Andre_Alternative_Info ()
 {
 	AI_Output (other, self, "DIA_Andre_Alternative_15_00"); //Y a-t-il un moyen plus rapide de rejoindre vos rangs?
-	AI_Output (self, other, "DIA_Andre_Alternative_08_01"); //Hum (il marque un temps d'arrêt). Vous le voulez vraiment, hein ?
-	AI_Output (self, other, "DIA_Andre_Alternative_08_02"); //Alors, écoutez. J'ai un problème. Si vous le résolvez pour moi, je ferai en sorte que vous soyez accepté dans la milice.
-	AI_Output (self, other, "DIA_Andre_Alternative_08_03"); //Mais la chose la plus importante est : vous ne devez en souffler mot à quiconque.
+	AI_Output (self, other, "DIA_Andre_Alternative_08_01"); //Hum (il marque un temps d'arrÃªt). Vous le voulez vraiment, hein ?
+	AI_Output (self, other, "DIA_Andre_Alternative_08_02"); //Alors, Ã©coutez. J'ai un problÃ¨me. Si vous le rÃ©solvez pour moi, je ferai en sorte que vous soyez acceptÃ© dans la milice.
+	AI_Output (self, other, "DIA_Andre_Alternative_08_03"); //Mais la chose la plus importante est : vous ne devez en souffler mot Ã  quiconque.
 	
 	
 };
@@ -746,7 +746,7 @@ instance DIA_Andre_GuildOfThieves (C_INFO)
 	condition	= DIA_Andre_GuildOfThieves_Condition;
 	information	= DIA_Andre_GuildOfThieves_Info;
 	permanent 	= FALSE; 
-	description = "Quel est votre problème ?";
+	description = "Quel est votre problÃ¨me ?";
 };
 func int DIA_Andre_GuildOfThieves_Condition ()
 {
@@ -757,18 +757,18 @@ func int DIA_Andre_GuildOfThieves_Condition ()
 };
 func void DIA_Andre_GuildOfThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_GuildOfThieves_15_00"); //Quel est votre problème ?
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_01"); //Il y a eu récemment un grand nombre de vols en ville. Pour l'instant, nous n'avons pu arrêter personne, les voleurs sont trop malins.
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_02"); //La vermine connaît son affaire. Je suis persuadé que nous avons affaire à un gang organisé.
-	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_03"); //Cela ne m'étonnerait pas qu'il y ait une guilde des voleurs à Khorinis. Débusquez les chefs de ce gang.
+	AI_Output (other, self, "DIA_Andre_GuildOfThieves_15_00"); //Quel est votre problÃ¨me ?
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_01"); //Il y a eu rÃ©cemment un grand nombre de vols en ville. Pour l'instant, nous n'avons pu arrÃªter personne, les voleurs sont trop malins.
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_02"); //La vermine connaÃ®t son affaire. Je suis persuadÃ© que nous avons affaire Ã  un gang organisÃ©.
+	AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_03"); //Cela ne m'Ã©tonnerait pas qu'il y ait une guilde des voleurs Ã  Khorinis. DÃ©busquez les chefs de ce gang.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_04"); //Alors je ferai en sorte que vous soyez accepté dans la milice, que vous soyez ou non un citoyen.
+		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_04"); //Alors je ferai en sorte que vous soyez acceptÃ© dans la milice, que vous soyez ou non un citoyen.
 		AI_Output (self, other, "DIA_Andre_GuildOfThieves_08_05"); //Mais vous ne devrez rien dire au sujet de notre accord.
 	};
 	
 	MIS_Andre_GuildOfThieves = LOG_RUNNING;
-	B_LogEntry (TOPIC_BecomeMIL,"Il y a un autre moyen d'être accepté par la garde de la ville. Il faut trouver et éliminer la guilde des voleurs de Khorinis.");
+	B_LogEntry (TOPIC_BecomeMIL,"Il y a un autre moyen d'Ãªtre acceptÃ© par la garde de la ville. Il faut trouver et Ã©liminer la guilde des voleurs de Khorinis.");
 	
 };
 
@@ -782,7 +782,7 @@ instance DIA_Andre_WhereThieves (C_INFO)
 	condition	= DIA_Andre_WhereThieves_Condition;
 	information	= DIA_Andre_WhereThieves_Info;
 	permanent 	= FALSE; 
-	description = "Où dois-je commencer mes recherches pour trouver les voleurs ?";
+	description = "OÃ¹ dois-je commencer mes recherches pour trouver les voleurs ?";
 };
 func int DIA_Andre_WhereThieves_Condition ()
 {
@@ -794,14 +794,14 @@ func int DIA_Andre_WhereThieves_Condition ()
 };
 func void DIA_Andre_WhereThieves_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_WhereThieves_15_00"); //Où dois-je commencer mes recherches pour les voleurs ?
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_01"); //Si je le savais, j'irai moi-même.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_02"); //Tout ce que je peux vous dire, c'est que nous avons récemment fouillé de fond en comble le quartier du port et que nous n'avons rien trouvé.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_03"); //Les gens là-bas ne sont pas très bavards. Particulièrement si vous portez l'armure d'un paladin.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_04"); //Mais vous êtes un étranger, ils ne se méfieront pas trop de vous.
-	AI_Output (self, other, "DIA_Andre_WhereThieves_08_05"); //Vous pouvez commencer votre enquête au port. Mais soyez prudent. Si les gens de là-bas se rendent compte que vous travaillez pour nous, vous n'obtiendrez rien d'eux !
+	AI_Output (other, self, "DIA_Andre_WhereThieves_15_00"); //OÃ¹ dois-je commencer mes recherches pour les voleurs ?
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_01"); //Si je le savais, j'irai moi-mÃªme.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_02"); //Tout ce que je peux vous dire, c'est que nous avons rÃ©cemment fouillÃ© de fond en comble le quartier du port et que nous n'avons rien trouvÃ©.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_03"); //Les gens lÃ -bas ne sont pas trÃ¨s bavards. ParticuliÃ¨rement si vous portez l'armure d'un paladin.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_04"); //Mais vous Ãªtes un Ã©tranger, ils ne se mÃ©fieront pas trop de vous.
+	AI_Output (self, other, "DIA_Andre_WhereThieves_08_05"); //Vous pouvez commencer votre enquÃªte au port. Mais soyez prudent. Si les gens de lÃ -bas se rendent compte que vous travaillez pour nous, vous n'obtiendrez rien d'eux !
 	
-	B_LogEntry (TOPIC_BecomeMIL,"Pour trouver la guilde des voleurs, je ferais bien d'aller écouter les ragots dans le quartier du port.");
+	B_LogEntry (TOPIC_BecomeMIL,"Pour trouver la guilde des voleurs, je ferais bien d'aller Ã©couter les ragots dans le quartier du port.");
 };
 
 // *********************************************************
@@ -814,7 +814,7 @@ instance DIA_Andre_WhatToDo (C_INFO)
 	condition	= DIA_Andre_WhatToDo_Condition;
 	information	= DIA_Andre_WhatToDo_Info;
 	permanent 	= FALSE; 
-	description = "Que devrai-je faire une fois que j'aurai trouvé les voleurs ?";
+	description = "Que devrai-je faire une fois que j'aurai trouvÃ© les voleurs ?";
 };
 func int DIA_Andre_WhatToDo_Condition ()
 {
@@ -826,14 +826,14 @@ func int DIA_Andre_WhatToDo_Condition ()
 };
 func void DIA_Andre_WhatToDo_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_WhatToDo_15_00"); //Que dois-je faire une fois que j'aurai trouvé un des voleurs ?
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_01"); //S'il s'agit d'un laquais ou de menu fretin, évitez le combat.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_02"); //Venez plutôt me voir pour me faire votre rapport. Je m'arrangerai pour que ces individus finissent derrière les barreaux.
+	AI_Output (other, self, "DIA_Andre_WhatToDo_15_00"); //Que dois-je faire une fois que j'aurai trouvÃ© un des voleurs ?
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_01"); //S'il s'agit d'un laquais ou de menu fretin, Ã©vitez le combat.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_02"); //Venez plutÃ´t me voir pour me faire votre rapport. Je m'arrangerai pour que ces individus finissent derriÃ¨re les barreaux.
 	AI_Output (self, other, "DIA_Andre_WhatToDo_08_03"); //La garde pourrait intervenir en cas de combat et vous n'auriez pas l'occasion de vous expliquer.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_04"); //De plus, il y a une prime pour chaque malfaiteur que vous mettrez derrière les barreaux.
-	AI_Output (self, other, "DIA_Andre_WhatToDo_08_05"); //Cependant, si vous localisez le repaire de leurs chefs, vous ne pourrez certainement pas éviter le combat.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_04"); //De plus, il y a une prime pour chaque malfaiteur que vous mettrez derriÃ¨re les barreaux.
+	AI_Output (self, other, "DIA_Andre_WhatToDo_08_05"); //Cependant, si vous localisez le repaire de leurs chefs, vous ne pourrez certainement pas Ã©viter le combat.
 	
-	B_LogEntry (TOPIC_BecomeMIL,"Si j’attrape un serviteur de la guilde des voleurs, je dois le conduire directement auprès du seigneur André. Pour éliminer la guilde, je dois trouver le repaire des voleurs.");
+	B_LogEntry (TOPIC_BecomeMIL,"Si jâ€™attrape un serviteur de la guilde des voleurs, je dois le conduire directement auprÃ¨s du seigneur AndrÃ©. Pour Ã©liminer la guilde, je dois trouver le repaire des voleurs.");
 };
 
 // *********************************************************
@@ -847,7 +847,7 @@ instance DIA_Andre_Auslieferung		(C_INFO)
 	condition	 = 	DIA_Andre_Auslieferung_Condition;
 	information	 = 	DIA_Andre_Auslieferung_Info;
 	permanent    =  TRUE;
-	description	 = 	"Je suis venu chercher la récompense pour un criminel.";
+	description	 = 	"Je suis venu chercher la rÃ©compense pour un criminel.";
 };
 
 func int DIA_Andre_Auslieferung_Condition ()
@@ -863,7 +863,7 @@ func int DIA_Andre_Auslieferung_Condition ()
 
 func void DIA_Andre_Auslieferung_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Auslieferung_15_00"); //Je viens chercher la récompense pour la capture d'un criminel.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_15_00"); //Je viens chercher la rÃ©compense pour la capture d'un criminel.
 	
 	Info_ClearChoices (DIA_Andre_Auslieferung);
 	
@@ -873,31 +873,31 @@ func void DIA_Andre_Auslieferung_Info ()
 	if (Rengaru_InKnast == TRUE)
 	&& (Rengaru_Ausgeliefert == FALSE)
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Rengaru a volé Jora.",DIA_Andre_Auslieferung_Rengaru);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Rengaru a volÃ© Jora.",DIA_Andre_Auslieferung_Rengaru);
 	};
 	// ------ Halvor ------
 	if (Betrayal_Halvor == TRUE)
 	&& (Halvor_Ausgeliefert == FALSE)
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Halvor vend des marchandises volées.",DIA_Andre_Auslieferung_Halvor);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Halvor vend des marchandises volÃ©es.",DIA_Andre_Auslieferung_Halvor);
 	};
 	// ------ Nagur ------
 	if (MIS_Nagur_Bote == LOG_RUNNING)
 	&& (Nagur_Ausgeliefert == FALSE)
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Nagur a tué le messager de Baltram.",DIA_Andre_Auslieferung_Nagur);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Nagur a tuÃ© le messager de Baltram.",DIA_Andre_Auslieferung_Nagur);
 	};
 	// ------ Canthar -------
 	if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	&& (MIS_Canthars_KomproBrief_Day > (Wld_GetDay()-2))
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Canthar tente de se débarrasser de Sarah !",DIA_Andre_Auslieferung_Canthar);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Canthar tente de se dÃ©barrasser de Sarah !",DIA_Andre_Auslieferung_Canthar);
 	};
 	if (MIS_Canthars_KomproBrief == LOG_RUNNING)
 	&& (Npc_HasItems (Sarah, ItWr_Canthars_KomproBrief_MIS) >= 1)
 	&& (MIS_Canthars_KomproBrief_Day > (Wld_GetDay()-2))
 	{
-		Info_AddChoice (DIA_Andre_Auslieferung,"Sarah vend des armes à Onar.",DIA_Andre_Auslieferung_Sarah);
+		Info_AddChoice (DIA_Andre_Auslieferung,"Sarah vend des armes Ã  Onar.",DIA_Andre_Auslieferung_Sarah);
 	};
 };
 
@@ -911,8 +911,8 @@ func void DIA_Andre_Auslieferung_Rengaru()
 	//Rengaru in den Knast beamen
 	AI_Teleport			(Rengaru,"NW_CITY_HABOUR_KASERN_RENGARU"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Rengaru_15_00"); //Rengaru a volé Jora. Il a essayé de déguerpir mais je l'ai attrapé.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_01"); //Bien, mes hommes l'ont déjà embarqué. Il ne volera plus personne désormais.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Rengaru_15_00"); //Rengaru a volÃ© Jora. Il a essayÃ© de dÃ©guerpir mais je l'ai attrapÃ©.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_01"); //Bien, mes hommes l'ont dÃ©jÃ  embarquÃ©. Il ne volera plus personne dÃ©sormais.
 	AI_Output (self, other, "DIA_Andre_Auslieferung_Rengaru_08_02"); //Voici votre argent.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
@@ -930,8 +930,8 @@ func void DIA_Andre_Auslieferung_Halvor()
 	AI_Teleport			(Halvor,"NW_CITY_HABOUR_KASERN_HALVOR"); 
 	
 	AI_Output (other, self, "DIA_Andre_Auslieferung_Halvor_15_00"); //Halvor est un receleur. Il revend les marchandises que les bandits volent aux marchands.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_01"); //Ainsi c'est lui qui est derrière tout ça. Mes hommes vont l'arrêter.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_02"); //Je doute qu'il continue à nous créer des ennuis. Je vais vous donner votre récompense.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_01"); //Ainsi c'est lui qui est derriÃ¨re tout Ã§a. Mes hommes vont l'arrÃªter.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Halvor_08_02"); //Je doute qu'il continue Ã  nous crÃ©er des ennuis. Je vais vous donner votre rÃ©compense.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	
@@ -947,9 +947,9 @@ func void DIA_Andre_Auslieferung_Nagur()
 	//Nagur in den Knast beamen
 	AI_Teleport			(Nagur,"NW_CITY_HABOUR_KASERN_NAGUR"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Nagur_15_00"); //Nagur a tué le messager de Baltram. Il a tenté de m'engager comme nouveau messager pour intercepter la livraison d'Akil.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_01"); //Cet individu aura la punition qu'il mérite. Je vais le faire enfermer immédiatement.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_02"); //Tenez, prenez cette récompense qui vous revient de droit.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Nagur_15_00"); //Nagur a tuÃ© le messager de Baltram. Il a tentÃ© de m'engager comme nouveau messager pour intercepter la livraison d'Akil.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_01"); //Cet individu aura la punition qu'il mÃ©rite. Je vais le faire enfermer immÃ©diatement.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Nagur_08_02"); //Tenez, prenez cette rÃ©compense qui vous revient de droit.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	B_StartOtherRoutine (Nagur,"PRISON");
@@ -964,10 +964,10 @@ func void DIA_Andre_Auslieferung_Canthar()
 	//Canthar in den Knast beamen
 	AI_Teleport			(Canthar,"NW_CITY_HABOUR_KASERN_RENGARU"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Canthar_15_00"); //Le marchand Canthar essaie de se débarrasser de Sarah !
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_01"); //Sarah ? La vendeuse d'armes de la place du marché ?
-	AI_Output (other,self , "DIA_Andre_Auslieferung_Canthar_15_02"); //Je devais glisser dans les poches de Sarah une lettre qui l'impliquait dans des ventes d'armes à Onar.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_03"); //Je vois. C'est avec joie que je vais payer la prime pour ce bâtard. C'est comme s'il était déjà derrière les barreaux.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Canthar_15_00"); //Le marchand Canthar essaie de se dÃ©barrasser de Sarah !
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_01"); //Sarah ? La vendeuse d'armes de la place du marchÃ© ?
+	AI_Output (other,self , "DIA_Andre_Auslieferung_Canthar_15_02"); //Je devais glisser dans les poches de Sarah une lettre qui l'impliquait dans des ventes d'armes Ã  Onar.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Canthar_08_03"); //Je vois. C'est avec joie que je vais payer la prime pour ce bÃ¢tard. C'est comme s'il Ã©tait dÃ©jÃ  derriÃ¨re les barreaux.
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
 	
@@ -988,10 +988,10 @@ func void DIA_Andre_Auslieferung_Sarah()
 	//Canthar zum markt beamen
 	AI_Teleport			(Canthar,"NW_CITY_SARAH"); 
 	
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_00"); //Sarah vend des armes à Onar.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_01"); //Sarah ? La marchande d'armes de la place du marché ? En avez-vous la preuve ?
-	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_02"); //Elle a une lettre dans sa poche, qui détaille ces transactions.
-	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_03"); //Elle ne s'en tirera pas comme ça. Je vais la faire arrêter.
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_00"); //Sarah vend des armes Ã  Onar.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_01"); //Sarah ? La marchande d'armes de la place du marchÃ© ? En avez-vous la preuve ?
+	AI_Output (other, self, "DIA_Andre_Auslieferung_Sarah_15_02"); //Elle a une lettre dans sa poche, qui dÃ©taille ces transactions.
+	AI_Output (self, other, "DIA_Andre_Auslieferung_Sarah_08_03"); //Elle ne s'en tirera pas comme Ã§a. Je vais la faire arrÃªter.
 	
 	B_GiveInvItems (self, other, itmi_gold, Kopfgeld);
 	
@@ -1035,7 +1035,7 @@ func void DIA_Andre_DGRunning_Info ()
 	
 	if (Andre_Diebesgilde_aufgeraeumt == TRUE)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_08_01"); //Vous pouvez oublier cette affaire. J'ai envoyé quelques hommes dans les égouts.
+		AI_Output (self, other, "DIA_Andre_DGRunning_08_01"); //Vous pouvez oublier cette affaire. J'ai envoyÃ© quelques hommes dans les Ã©gouts.
 		AI_Output (self, other, "DIA_Andre_DGRunning_08_02"); //La guilde des voleurs n'est plus que de l'histoire ancienne.
 		MIS_Andre_GuildOfThieves = LOG_OBSOLETE;
 		
@@ -1059,13 +1059,13 @@ func void DIA_Andre_DGRunning_Info ()
 	&& (Npc_IsDead(Jesper))
 	&& (Npc_IsDead(Ramirez))
 	{
-		Info_AddChoice(DIA_Andre_DGRunning, "Je les ai tous débusqués !", DIA_Andre_DGRunning_Success);
+		Info_AddChoice(DIA_Andre_DGRunning, "Je les ai tous dÃ©busquÃ©s !", DIA_Andre_DGRunning_Success);
 	};
 	
 	if ( (Cassia.aivar[AIV_TalkedToPlayer] == TRUE) || (Jesper.aivar[AIV_TalkedToPlayer] == TRUE) || (Ramirez.aivar[AIV_TalkedToPlayer] == TRUE) )
 	&& (Diebesgilde_verraten == FALSE)
 	{
-		Info_AddChoice(DIA_Andre_DGRunning, "J'ai trouvé le repaire de la guilde des voleurs !", DIA_Andre_DGRunning_Verrat);
+		Info_AddChoice(DIA_Andre_DGRunning, "J'ai trouvÃ© le repaire de la guilde des voleurs !", DIA_Andre_DGRunning_Verrat);
 	};
 };
 
@@ -1074,31 +1074,31 @@ func void DIA_Andre_DGRunning_BACK()
 	AI_Output (other, self, "DIA_Andre_DGRunning_BACK_15_00"); //J'y travaille.
 	if (Diebesgilde_verraten == TRUE)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_01"); //Très bien. Je vous accorde encore un peu de temps pour remplir votre mission.
+		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_01"); //TrÃ¨s bien. Je vous accorde encore un peu de temps pour remplir votre mission.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_02"); //Bien ! Tenez moi informé.
+		AI_Output (self, other, "DIA_Andre_DGRunning_BACK_08_02"); //Bien ! Tenez moi informÃ©.
 	};
 	Info_ClearChoices(DIA_Andre_DGRunning);
 };
 
 func void DIA_Andre_DGRunning_Verrat()
 {	
-	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_00"); //J'ai découvert le repaire des voleurs.
-	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_01"); //Où ?
-	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_02"); //Dans les égouts sous la ville.
-	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_03"); //Quoi ? Nous avons scellé les égouts...
-	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_04"); //Il semble que cela ne les ai pas empêchés de s'y répandre.
-	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_05"); //Avez-vous débusqué les criminels ?
+	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_00"); //J'ai dÃ©couvert le repaire des voleurs.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_01"); //OÃ¹ ?
+	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_02"); //Dans les Ã©gouts sous la ville.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_03"); //Quoi ? Nous avons scellÃ© les Ã©gouts...
+	AI_Output (other, self, "DIA_Andre_DGRunning_Verrat_15_04"); //Il semble que cela ne les ai pas empÃªchÃ©s de s'y rÃ©pandre.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Verrat_08_05"); //Avez-vous dÃ©busquÃ© les criminels ?
 	Diebesgilde_verraten = TRUE;
 	DG_gefunden = TRUE;
 };
 
 func void DIA_Andre_DGRunning_Success()
 {
-	AI_Output (other, self, "DIA_Andre_DGRunning_Success_15_00"); //Je les ai tous débusqués !
-	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_01"); //Vous avez rendu un grand service à la ville.
+	AI_Output (other, self, "DIA_Andre_DGRunning_Success_15_00"); //Je les ai tous dÃ©busquÃ©s !
+	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_01"); //Vous avez rendu un grand service Ã  la ville.
 	DG_gefunden = TRUE;
 	MIS_Andre_GuildOfThieves = LOG_SUCCESS;
 	B_GivePlayerXP (XP_GuildOfThievesPlatt);
@@ -1110,14 +1110,14 @@ func void DIA_Andre_DGRunning_Success()
 	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_02"); //Si un poste dans la milice vous intéresse toujours, faites-le moi savoir.
+		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_02"); //Si un poste dans la milice vous intÃ©resse toujours, faites-le moi savoir.
 	}
 	else if (other.guild == GIL_MIL) || (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_03"); //Vous avez réussi votre mission comme il se doit pour un serviteur d'Innos et un soldat du roi.
+		AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_03"); //Vous avez rÃ©ussi votre mission comme il se doit pour un serviteur d'Innos et un soldat du roi.
 	};
 	
-	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_04"); //Vous avez droit à la prime pour ces bandits. Tenez, prenez-la.
+	AI_Output (self, other, "DIA_Andre_DGRunning_Success_08_04"); //Vous avez droit Ã  la prime pour ces bandits. Tenez, prenez-la.
 	B_GiveInvItems (self, other, itmi_gold, (Kopfgeld*3));
 	
 	Info_ClearChoices(DIA_Andre_DGRunning);
@@ -1133,7 +1133,7 @@ instance DIA_Andre_JOIN	(C_INFO)
 	condition	 = 	DIA_Andre_JOIN_Condition;
 	information	 = 	DIA_Andre_JOIN_Info;
 	permanent    =  TRUE;
-	description	 = 	"Je suis prêt à me joindre à la milice !";
+	description	 = 	"Je suis prÃªt Ã  me joindre Ã  la milice !";
 };
 
 func int DIA_Andre_JOIN_Condition ()
@@ -1147,23 +1147,23 @@ func int DIA_Andre_JOIN_Condition ()
 
 func void DIA_Andre_JOIN_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_JOIN_15_00"); //Je suis prêt à m'engager dans la milice.
+	AI_Output (other, self, "DIA_Andre_JOIN_15_00"); //Je suis prÃªt Ã  m'engager dans la milice.
 	
 	//ADDON
 	if (Andre_Knows_MartinEmpfehlung == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_Andre_JOIN_08_00"); //Martin, le maître du cellier, vous parraine et vous recommande. Cela me suffit.
+		AI_Output (self, other, "DIA_Addon_Andre_JOIN_08_00"); //Martin, le maÃ®tre du cellier, vous parraine et vous recommande. Cela me suffit.
 	}
 	//ADDON
 	else if (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 	&& (Player_IsApprentice == APP_NONE)
 	{
 		AI_Output (self, other, "DIA_Andre_JOIN_08_01"); //Je respecterai ma parole et je vous accepte au sein de la milice bien que vous ne soyez pas citoyen de la ville.
-		AI_Output (self, other, "DIA_Andre_JOIN_08_02"); //Mais n'en parlez à personne ! Moins on parlera de cette entorse au règlement, moins j'aurai à m'en justifier.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_02"); //Mais n'en parlez Ã  personne ! Moins on parlera de cette entorse au rÃ¨glement, moins j'aurai Ã  m'en justifier.
 	}
 	else if (Player_IsApprentice > APP_NONE)
 	{
-		AI_Output (self, other, "DIA_Andre_JOIN_08_03"); //Ainsi vous êtes citoyen de Khorinis ?
+		AI_Output (self, other, "DIA_Andre_JOIN_08_03"); //Ainsi vous Ãªtes citoyen de Khorinis ?
 		
 		if (Player_IsApprentice == APP_Harad)
 		{
@@ -1174,44 +1174,44 @@ func void DIA_Andre_JOIN_Info ()
 		if (Player_IsApprentice == APP_Constantino)
 		{
 			AI_Output (other, self, "DIA_Andre_JOIN_15_06"); //Je suis l'apprenti de l'alchimiste !
-			AI_Output (self, other, "DIA_Andre_JOIN_08_07"); //Nous n'avons pas vraiment beaucoup d'érudits dans la milice. Peut-être que vos connaissances pourront nous être utiles.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_07"); //Nous n'avons pas vraiment beaucoup d'Ã©rudits dans la milice. Peut-Ãªtre que vos connaissances pourront nous Ãªtre utiles.
 			AI_Output (self, other, "DIA_Andre_JOIN_08_08"); //Je ne connais pas bien cet alchimiste mais les gens disent que c'est un homme honorable.
 		};
 		
 		if (Player_IsApprentice == APP_Bosper)
 		{
-			AI_Output (other, self, "DIA_Andre_JOIN_15_09"); //Bosper m'a engagé comme apprenti !
-			AI_Output (self, other, "DIA_Andre_JOIN_08_10"); //Alors vous savez également ce qu'est la vie en pleine nature. Voilà qui est bien car la mission de la milice ne s'arrête pas aux remparts de la ville.
-			AI_Output (self, other, "DIA_Andre_JOIN_08_11"); //Nous aurons certainement besoin de gens qui savent se débrouiller en pleine nature.
+			AI_Output (other, self, "DIA_Andre_JOIN_15_09"); //Bosper m'a engagÃ© comme apprenti !
+			AI_Output (self, other, "DIA_Andre_JOIN_08_10"); //Alors vous savez Ã©galement ce qu'est la vie en pleine nature. VoilÃ  qui est bien car la mission de la milice ne s'arrÃªte pas aux remparts de la ville.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_11"); //Nous aurons certainement besoin de gens qui savent se dÃ©brouiller en pleine nature.
 			AI_Output (self, other, "DIA_Andre_JOIN_08_12"); //Et Bosper est un citoyen important de la ville.
 		};
 		
-		AI_Output (self, other, "DIA_Andre_JOIN_08_13"); //S'il se porte garant de vous, rien ne s'oppose à ce que vous intégriez la milice.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_13"); //S'il se porte garant de vous, rien ne s'oppose Ã  ce que vous intÃ©griez la milice.
 		
-		// ------- Außerdem noch GuildOfThieves ------
+		// ------- AuÃŸerdem noch GuildOfThieves ------
 		if (MIS_Andre_GuildOfThieves == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Andre_JOIN_08_14"); //De plus, vous avez réussi à nous débarrasser des bandits. Pour ce seul fait, j'aurais accepté votre candidature.
+			AI_Output (self, other, "DIA_Andre_JOIN_08_14"); //De plus, vous avez rÃ©ussi Ã  nous dÃ©barrasser des bandits. Pour ce seul fait, j'aurais acceptÃ© votre candidature.
 		};
 	}
 	else //Player_IsApprentice == APP_NONE
 	{
-		AI_Output (self, other, "DIA_Andre_JOIN_08_15"); //Peut-être mais vous n'êtes toujours pas citoyen de la ville et j'ai des consignes.
+		AI_Output (self, other, "DIA_Andre_JOIN_08_15"); //Peut-Ãªtre mais vous n'Ãªtes toujours pas citoyen de la ville et j'ai des consignes.
 		return;
 	};
 		
-	AI_Output (self, other, "DIA_Andre_JOIN_08_16"); //Vous pouvez vous joindre à nous si vous le désirez. Mais vous ne pourrez pas revenir sur votre décision.
-	AI_Output (self, other, "DIA_Andre_JOIN_08_17"); //Une fois que vous revêtez l'armure de la milice, vous ne pouvez pas l'ôter aussi facilement et ne plus être l'un des nôtres.
-	AI_Output (self, other, "DIA_Andre_JOIN_08_18"); //Etes-vous prêt à combattre à nos côtés pour Innos et pour le roi ?
+	AI_Output (self, other, "DIA_Andre_JOIN_08_16"); //Vous pouvez vous joindre Ã  nous si vous le dÃ©sirez. Mais vous ne pourrez pas revenir sur votre dÃ©cision.
+	AI_Output (self, other, "DIA_Andre_JOIN_08_17"); //Une fois que vous revÃªtez l'armure de la milice, vous ne pouvez pas l'Ã´ter aussi facilement et ne plus Ãªtre l'un des nÃ´tres.
+	AI_Output (self, other, "DIA_Andre_JOIN_08_18"); //Etes-vous prÃªt Ã  combattre Ã  nos cÃ´tÃ©s pour Innos et pour le roi ?
 	
 	Info_ClearChoices (DIA_Andre_JOIN);
-	Info_AddChoice (DIA_Andre_JOIN,"Je n'en suis pas encore très sûr...",DIA_Andre_JOIN_No);
-	Info_AddChoice (DIA_Andre_JOIN,"Je suis prêt !",DIA_Andre_JOIN_Yes);
+	Info_AddChoice (DIA_Andre_JOIN,"Je n'en suis pas encore trÃ¨s sÃ»r...",DIA_Andre_JOIN_No);
+	Info_AddChoice (DIA_Andre_JOIN,"Je suis prÃªt !",DIA_Andre_JOIN_Yes);
 };
 	
 func void DIA_Andre_JOIN_Yes()
 {
-	AI_Output (other, self, "DIA_Andre_JOIN_Yes_15_00"); //Je suis prêt !
+	AI_Output (other, self, "DIA_Andre_JOIN_Yes_15_00"); //Je suis prÃªt !
 	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_01"); //Alors qu'il en soit ainsi. Bienvenue dans la milice.
 	
 	Npc_SetTrueGuild (other, GIL_MIL);
@@ -1222,7 +1222,7 @@ func void DIA_Andre_JOIN_Yes()
 	
 	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_02"); //Voici votre armure.
 	B_GiveInvItems (self,other, ITAR_MIL_L,1);
-	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_03"); //Portez-la fièrement et dignement.
+	AI_Output (self, other, "DIA_Andre_JOIN_Yes_08_03"); //Portez-la fiÃ¨rement et dignement.
 	
 	SLD_Aufnahme = LOG_OBSOLETE;
 	KDF_Aufnahme = LOG_OBSOLETE;
@@ -1234,7 +1234,7 @@ func void DIA_Andre_JOIN_Yes()
 
 func void DIA_Andre_JOIN_No()
 {
-	AI_Output (other, self, "DIA_Andre_JOIN_No_15_00"); //Je n'en suis pas encore tout à fait sûr...
+	AI_Output (other, self, "DIA_Andre_JOIN_No_15_00"); //Je n'en suis pas encore tout Ã  fait sÃ»r...
 	AI_Output (self, other, "DIA_Andre_JOIN_No_08_01"); //Tant que vous nourrissez des doutes, je ne peux vous accepter dans la milice.
 	
 	Info_ClearChoices (DIA_Andre_JOIN);
@@ -1264,9 +1264,9 @@ func int DIA_Andre_LORDHAGEN_Condition ()
 func void DIA_Andre_LORDHAGEN_Info ()
 {
 	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_00"); //Puis-je enfin voir le seigneur Hagen ?
-	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_01"); //Vous êtes désormais au service des paladins. Ils vous laisseront entrer. Mais vous avez intérêt à avoir des choses importantes à lui dire.
-	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_02"); //Ne vous inquiétez pas pour ça...
-	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_03"); //Rappelez-vous que vous allez rencontrer le chef des paladins. Comportez-vous comme il convient. Vous représentez non seulement vous, mais aussi toute la milice.
+	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_01"); //Vous Ãªtes dÃ©sormais au service des paladins. Ils vous laisseront entrer. Mais vous avez intÃ©rÃªt Ã  avoir des choses importantes Ã  lui dire.
+	AI_Output (other, self, "DIA_Andre_LORDHAGEN_15_02"); //Ne vous inquiÃ©tez pas pour Ã§a...
+	AI_Output (self, other, "DIA_Andre_LORDHAGEN_08_03"); //Rappelez-vous que vous allez rencontrer le chef des paladins. Comportez-vous comme il convient. Vous reprÃ©sentez non seulement vous, mais aussi toute la milice.
 };
 // *********************************************************
 //				Waffe
@@ -1278,7 +1278,7 @@ instance DIA_Andre_Waffe		(C_INFO)
 	condition	 = 	DIA_Andre_Waffe_Condition;
 	information	 = 	DIA_Andre_Waffe_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Aurai-je également une épée ?";
+	description	 = 	"Aurai-je Ã©galement une Ã©pÃ©e ?";
 };
 func int DIA_Andre_Waffe_Condition ()
 {	
@@ -1290,16 +1290,16 @@ func int DIA_Andre_Waffe_Condition ()
 };
 func void DIA_Andre_Waffe_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_Waffe_15_00"); //Aurai-je une arme également ?
-	AI_Output (self, other, "DIA_Andre_Waffe_08_01"); //Naturellement. C'est généralement Peck qui se charge de ça. Mais maintenant que j'y pense, cela fait quelque temps que je ne l'ai pas vu.
-	AI_Output (self, other, "DIA_Andre_Waffe_08_02"); //Trouvez où il se cache et ramenez-le ici. Il vous donnera alors une arme.
+	AI_Output (other, self, "DIA_Andre_Waffe_15_00"); //Aurai-je une arme Ã©galement ?
+	AI_Output (self, other, "DIA_Andre_Waffe_08_01"); //Naturellement. C'est gÃ©nÃ©ralement Peck qui se charge de Ã§a. Mais maintenant que j'y pense, cela fait quelque temps que je ne l'ai pas vu.
+	AI_Output (self, other, "DIA_Andre_Waffe_08_02"); //Trouvez oÃ¹ il se cache et ramenez-le ici. Il vous donnera alors une arme.
 	AI_Output (self, other, "DIA_Andre_Waffe_08_03"); //Et si vous voulez dormir, vous pouvez vous allonger sur un des lits dans le dortoir.
 	
 	MIS_Andre_Peck = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_Peck,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_Peck,LOG_RUNNING);
-	B_LogEntry (TOPIC_Peck,"Peck se trouve quelque part en ville. Si je le ramène à la caserne, il me donnera une arme.");
+	B_LogEntry (TOPIC_Peck,"Peck se trouve quelque part en ville. Si je le ramÃ¨ne Ã  la caserne, il me donnera une arme.");
 	
 	AI_StopProcessInfos (self);
 };
@@ -1315,7 +1315,7 @@ instance DIA_Andre_FOUND_PECK		(C_INFO)
 	condition	 = 	DIA_Andre_FOUND_PECK_Condition;
 	information	 = 	DIA_Andre_FOUND_PECK_Info;
 	permanent	 =  FALSE;
-	description	 = 	"J'ai réussi à débusquer Peck.";
+	description	 = 	"J'ai rÃ©ussi Ã  dÃ©busquer Peck.";
 };
 
 func int DIA_Andre_FOUND_PECK_Condition ()
@@ -1329,18 +1329,18 @@ func int DIA_Andre_FOUND_PECK_Condition ()
 };
 func void DIA_Andre_FOUND_PECK_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_PECK_15_00"); //J'ai réussi à débusquer Peck.
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_08_01"); //Oui, il est déjà de retour à son poste et a repris le travail. Où l'avez-vous trouvé ?
+	AI_Output (other, self, "DIA_Andre_FOUND_PECK_15_00"); //J'ai rÃ©ussi Ã  dÃ©busquer Peck.
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_08_01"); //Oui, il est dÃ©jÃ  de retour Ã  son poste et a repris le travail. OÃ¹ l'avez-vous trouvÃ© ?
 
 	Info_ClearChoices 	(DIA_Andre_FOUND_PECK);
-	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"Il a croisé ma route...",DIA_Andre_FOUND_PECK_SOMEWHERE);
-	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"À l'intérieur de la 'Lanterne rouge'...",DIA_Andre_FOUND_PECK_REDLIGHT);
+	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"Il a croisÃ© ma route...",DIA_Andre_FOUND_PECK_SOMEWHERE);
+	Info_AddChoice 		(DIA_Andre_FOUND_PECK,"Ã€ l'intÃ©rieur de la 'Lanterne rouge'...",DIA_Andre_FOUND_PECK_REDLIGHT);
 
 };
 FUNC VOID DIA_Andre_FOUND_PECK_SOMEWHERE()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_PECK_SOMEWHERE_15_00"); //Je l'ai croisé en ville.
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_SOMEWHERE_08_01"); //Très bien, alors allez le voir et prenez votre arme.
+	AI_Output (other, self, "DIA_Andre_FOUND_PECK_SOMEWHERE_15_00"); //Je l'ai croisÃ© en ville.
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_SOMEWHERE_08_01"); //TrÃ¨s bien, alors allez le voir et prenez votre arme.
 	
 	MIS_Andre_Peck = LOG_OBSOLETE;// wird hier benutzt, um Unterscheidung bei Waffenausgabe zu haben, aber Mission ist trotzdem geschafft! M.F.
 	B_GivePlayerXP 		(XP_FoundPeck);
@@ -1348,8 +1348,8 @@ FUNC VOID DIA_Andre_FOUND_PECK_SOMEWHERE()
 };
 FUNC VOID DIA_Andre_FOUND_PECK_REDLIGHT()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_PECK_REDLIGHT_15_00"); //Il était à la 'Lanterne rouge'.
-	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_01"); //Ainsi il traîne avec les filles au lieu d'accomplir son devoir.
+	AI_Output (other, self, "DIA_Andre_FOUND_PECK_REDLIGHT_15_00"); //Il Ã©tait Ã  la 'Lanterne rouge'.
+	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_01"); //Ainsi il traÃ®ne avec les filles au lieu d'accomplir son devoir.
 	AI_Output (self, other, "DIA_Andre_FOUND_PECK_REDLIGHT_08_02"); //Je vais devoir lui en toucher deux mots.
 	
 	B_GivePlayerXP 		(XP_FoundPeck*2);
@@ -1383,7 +1383,7 @@ instance DIA_Andre_FIRSTMISSION		(C_INFO)
 	condition	 = 	DIA_Andre_FIRSTMISSION_Condition;
 	information	 = 	DIA_Andre_FIRSTMISSION_Info;
 	permanent 	 =  FALSE; 
-	description	 = 	"Avez-vous une mission à me confier ?";
+	description	 = 	"Avez-vous une mission Ã  me confier ?";
 };
 func int DIA_Andre_FIRSTMISSION_Condition ()
 {
@@ -1394,21 +1394,21 @@ func int DIA_Andre_FIRSTMISSION_Condition ()
 };
 func void DIA_Andre_FIRSTMISSION_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_00"); //Avez-vous une mission à me confier ?
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_01"); //Récemment, les ventes d'herbes des marais n'ont fait que croître.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_02"); //Nous ne pouvons tolérer ce trafic.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_03"); //Sinon, tout le monde va se mettre à fumer et plus personne ne pourra travailler et encore moins manier une arme.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_04"); //Surtout que la possibilité d'une attaque des orques ou des mercenaires se fait de plus en plus probable.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_05"); //Je soupçonne les mercenaires d'être derrière tout ça. Je parierai que ce sont eux qui inondent la ville de cette substance.
+	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_00"); //Avez-vous une mission Ã  me confier ?
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_01"); //RÃ©cemment, les ventes d'herbes des marais n'ont fait que croÃ®tre.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_02"); //Nous ne pouvons tolÃ©rer ce trafic.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_03"); //Sinon, tout le monde va se mettre Ã  fumer et plus personne ne pourra travailler et encore moins manier une arme.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_04"); //Surtout que la possibilitÃ© d'une attaque des orques ou des mercenaires se fait de plus en plus probable.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_05"); //Je soupÃ§onne les mercenaires d'Ãªtre derriÃ¨re tout Ã§a. Je parierai que ce sont eux qui inondent la ville de cette substance.
 	AI_Output (other, self, "DIA_Andre_FIRSTMISSION_15_06"); //Que faut-il faire ?
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_07"); //Mortis, l'un de nos hommes, a entendu dire dans le pub du port, qu'une livraison d'herbes des marais était arrivée quelque part dans le quartier du port.
-	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_08"); //Allez fouiner là-bas et ramenez-moi cette livraison.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_07"); //Mortis, l'un de nos hommes, a entendu dire dans le pub du port, qu'une livraison d'herbes des marais Ã©tait arrivÃ©e quelque part dans le quartier du port.
+	AI_Output (self, other, "DIA_Andre_FIRSTMISSION_08_08"); //Allez fouiner lÃ -bas et ramenez-moi cette livraison.
 	
 	MIS_ANDRE_WAREHOUSE = LOG_RUNNING;
 	
 	Log_CreateTopic (TOPIC_WAREHOUSE,LOG_MISSION);
 	Log_SetTopicStatus (TOPIC_WAREHOUSE,LOG_RUNNING);
-	B_LogEntry (TOPIC_WAREHOUSE,"Un paquet d'herbes des marais est arrivé au port. Mortis en a entendu parler dans ce pub. Je dois trouver ce paquet et le remettre au seigneur André.");
+	B_LogEntry (TOPIC_WAREHOUSE,"Un paquet d'herbes des marais est arrivÃ© au port. Mortis en a entendu parler dans ce pub. Je dois trouver ce paquet et le remettre au seigneur AndrÃ©.");
 	
 	
 };
@@ -1436,7 +1436,7 @@ func void DIA_Andre_FOUND_STUFF_Info ()
 {
 	
 	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_15_00"); //Au sujet de la livraison...
-	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_08_01"); //L'avez-vous trouvée ?
+	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_08_01"); //L'avez-vous trouvÃ©e ?
 	
 	if (Npc_HasItems (other, ItMi_HerbPaket) > 0)
 	|| (MIS_Cipher_Paket == LOG_SUCCESS)
@@ -1448,7 +1448,7 @@ func void DIA_Andre_FOUND_STUFF_Info ()
 			Info_AddChoice (DIA_Andre_FOUND_STUFF,"Oui, le voici.",DIA_Andre_FOUND_STUFF_Ja);	
 		};
 		
-		Info_AddChoice (DIA_Andre_FOUND_STUFF,"Je l'ai jeté dans le port.",DIA_Andre_FOUND_STUFF_Becken);
+		Info_AddChoice (DIA_Andre_FOUND_STUFF,"Je l'ai jetÃ© dans le port.",DIA_Andre_FOUND_STUFF_Becken);
 	}
 	else
 	{
@@ -1457,9 +1457,9 @@ func void DIA_Andre_FOUND_STUFF_Info ()
 };
 FUNC VOID DIA_Andre_FOUND_STUFF_Ja()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Ja_15_00"); //Oui, la voilà.
+	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Ja_15_00"); //Oui, la voilÃ .
 	B_GiveInvItems (other, self,ItMi_HerbPaket,1);
-	AI_Output	(self, other, "DIA_Andre_FOUND_STUFF_Ja_08_01"); //Beau travail. Nous allons la mettre en sécurité.
+	AI_Output	(self, other, "DIA_Andre_FOUND_STUFF_Ja_08_01"); //Beau travail. Nous allons la mettre en sÃ©curitÃ©.
 	B_AndreSold ();
 	
 	MIS_ANDRE_WAREHOUSE = LOG_SUCCESS;
@@ -1470,7 +1470,7 @@ FUNC VOID DIA_Andre_FOUND_STUFF_Ja()
 };
 FUNC VOID DIA_Andre_FOUND_STUFF_Becken()
 {
-	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Becken_15_00"); //Je l'ai jetée dans le bassin du port.
+	AI_Output (other, self, "DIA_Andre_FOUND_STUFF_Becken_15_00"); //Je l'ai jetÃ©e dans le bassin du port.
 	AI_Output (self, other, "DIA_Andre_FOUND_STUFF_Becken_08_01"); //Le principal est qu'elle ne puisse pas tomber entre de mauvaises mains.
 	B_AndreSold ();
 	
@@ -1505,13 +1505,13 @@ func int DIA_Andre_FIND_DEALER_Condition ()
 func void DIA_Andre_FIND_DEALER_Info ()
 {
 	AI_Output (other, self, "DIA_Andre_FIND_DEALER_15_00"); //Avez-vous un autre travail pour moi ?
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_01"); //Vous avez débarrassé la ville du paquet d'herbes des marais, très bien.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_02"); //Mais j'aimerais que vous découvriez qui distribue cette substance à la population.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_01"); //Vous avez dÃ©barrassÃ© la ville du paquet d'herbes des marais, trÃ¨s bien.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_02"); //Mais j'aimerais que vous dÃ©couvriez qui distribue cette substance Ã  la population.
 	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_03"); //Il doit s'agir de quelqu'un du quartier du port.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_04"); //Si un individu étranger à la ville venait régulièrement, il aurait été arrêté depuis longtemps.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_04"); //Si un individu Ã©tranger Ã  la ville venait rÃ©guliÃ¨rement, il aurait Ã©tÃ© arrÃªtÃ© depuis longtemps.
 	AI_Output (other, self, "DIA_Andre_FIND_DEALER_15_05"); //Que dois-je faire exactement ?
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_06"); //Trouvez ce dealer et faites-en sorte qu'il vous vende des herbes. Ce ne sera pas facile mais c'est le seul moyen de le faire arrêter.
-	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_07"); //Parlez à Mortis, il connaît bien le quartier du port. Peut-être pourra-t-il vous aider.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_06"); //Trouvez ce dealer et faites-en sorte qu'il vous vende des herbes. Ce ne sera pas facile mais c'est le seul moyen de le faire arrÃªter.
+	AI_Output (self, other, "DIA_Andre_FIND_DEALER_08_07"); //Parlez Ã  Mortis, il connaÃ®t bien le quartier du port. Peut-Ãªtre pourra-t-il vous aider.
 	
 	
 	MIS_Andre_REDLIGHT = LOG_RUNNING;
@@ -1548,7 +1548,7 @@ func void DIA_Andre_REDLIGHT_SUCCESS_Info ()
 	if (Npc_IsDead (Borka) == TRUE)
 	|| (Undercover_Failed == TRUE)
 	{
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_01"); //Je crains que désormais nous n'apprenions plus quoi que ce soit dans le quartier du port.
+		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_01"); //Je crains que dÃ©sormais nous n'apprenions plus quoi que ce soit dans le quartier du port.
 		
 		if  (Npc_IsDead (Borka) == TRUE)
 		{
@@ -1557,12 +1557,12 @@ func void DIA_Andre_REDLIGHT_SUCCESS_Info ()
 		
 		if (Nadja_Victim == TRUE)
 		{
-			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_03"); //Cette fille de la Lanterne Rouge, cette Nadja… elle est morte. Il doit s'agir d'un accident.
+			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_03"); //Cette fille de la Lanterne Rouge, cette Nadjaâ€¦ elle est morte. Il doit s'agir d'un accident.
 			B_RemoveNpc (Nadja);
 		};
 		if (Undercover_Failed == TRUE)
 		{
-			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_04"); //Vous n'avez pas été assez discret.
+			AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_04"); //Vous n'avez pas Ã©tÃ© assez discret.
 		};
 		MIS_Andre_REDLIGHT = LOG_FAILED;
 		B_CheckLog();
@@ -1572,7 +1572,7 @@ func void DIA_Andre_REDLIGHT_SUCCESS_Info ()
 		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_05"); //Je sais qui vend l'herbe en ville. C'est Borka, le videur de la Lanterne Rouge.
 		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_06"); //Vraiment ? Avons-nous une preuve ?
 		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_07"); //Il m'en a vendu.
-		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_08"); //Très bien, cela nous suffit. Je vais le faire arrêter immédiatement.
+		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_08"); //TrÃ¨s bien, cela nous suffit. Je vais le faire arrÃªter immÃ©diatement.
 		
 		B_StartOtherRoutine (Borka, "PRISON");
 		MIS_Andre_REDLIGHT = LOG_SUCCESS;
@@ -1581,7 +1581,7 @@ func void DIA_Andre_REDLIGHT_SUCCESS_Info ()
 	}
 	else 
 	{
-		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_09"); //… j'y travaille toujours.
+		AI_Output (other, self, "DIA_Andre_REDLIGHT_SUCCESS_15_09"); //â€¦ j'y travaille toujours.
 		AI_Output (self, other, "DIA_Andre_REDLIGHT_SUCCESS_08_10"); //Bien, rappelez-vous que vous devez faire affaire avec cet individu.
 	};
 };
@@ -1595,7 +1595,7 @@ instance DIA_Andre_HILFBAUERLOBART		(C_INFO)
 	nr			 =  3;
 	condition	 = 	DIA_Andre_HILFBAUERLOBART_Condition;
 	information	 = 	DIA_Andre_HILFBAUERLOBART_Info;
-	description	 = 	"Avez-vous une autre mission à me confier ?";
+	description	 = 	"Avez-vous une autre mission Ã  me confier ?";
 };
 func int DIA_Andre_HILFBAUERLOBART_Condition ()
 {	
@@ -1607,13 +1607,13 @@ func int DIA_Andre_HILFBAUERLOBART_Condition ()
 func void DIA_Andre_HILFBAUERLOBART_Info ()
 {
 	AI_Output (other, self, "DIA_Andre_HILFBAUERLOBART_15_00"); //Avez-vous une autre mission pour moi ?
-	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_01"); //Lobart, le cultivateur de navets, a des problèmes dans ses champs.
+	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_01"); //Lobart, le cultivateur de navets, a des problÃ¨mes dans ses champs.
 	AI_Output (self, other, "DIA_Andre_HILFBAUERLOBART_08_02"); //Si nous l'aidons, cela renforcera ses relations avec la ville. Allez le voir et voyez ce qui ne va pas.
 
 	
 	Log_CreateTopic (TOPIC_Feldraeuber, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Feldraeuber, LOG_RUNNING);
-	B_LogEntry (TOPIC_Feldraeuber,"André m'envoie à la ferme de Lobart. Je dois aider Lobart à remettre de l'ordre dans sa ferme."); 
+	B_LogEntry (TOPIC_Feldraeuber,"AndrÃ© m'envoie Ã  la ferme de Lobart. Je dois aider Lobart Ã  remettre de l'ordre dans sa ferme."); 
 	
 	
 	MIS_AndreHelpLobart = LOG_RUNNING;
@@ -1646,7 +1646,7 @@ instance DIA_Andre_LOBART_SUCCESS		(C_INFO)
 	npc			 = 	Mil_311_Andre;
 	condition	 = 	DIA_Andre_LOBART_SUCCESS_Condition;
 	information	 = 	DIA_Andre_LOBART_SUCCESS_Info;
-	description	 = 	"J'ai aidé Lobart.";
+	description	 = 	"J'ai aidÃ© Lobart.";
 };
 func int DIA_Andre_LOBART_SUCCESS_Condition ()
 {	
@@ -1657,8 +1657,8 @@ func int DIA_Andre_LOBART_SUCCESS_Condition ()
 };
 func void DIA_Andre_LOBART_SUCCESS_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_LOBART_SUCCESS_15_00"); //J'ai aidé Lobart.
-	AI_Output (self, other, "DIA_Andre_LOBART_SUCCESS_08_01"); //Excellent. Si Lobart est content, il continuera à nous vendre des navets.
+	AI_Output (other, self, "DIA_Andre_LOBART_SUCCESS_15_00"); //J'ai aidÃ© Lobart.
+	AI_Output (self, other, "DIA_Andre_LOBART_SUCCESS_08_01"); //Excellent. Si Lobart est content, il continuera Ã  nous vendre des navets.
 	B_GivePlayerXP (XP_LobartBugs);
 	B_AndreSold ();
 };
@@ -1688,10 +1688,10 @@ func void DIA_Addon_Andre_MissingPeople_Info ()
 	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople_15_00"); //Qu'en est-il des disparitions ?
 	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_01"); //Et bien quoi ?
 	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople_15_02"); //Ne devrions-nous pas essayer de retrouver les disparus ?
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_03"); //Le seigneur Hagen m'a donné l'ordre de protéger la ville et les fermes alentours.
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_04"); //Cela veut dire que nous protégeons les gens qui sont encore ici.
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_03"); //Le seigneur Hagen m'a donnÃ© l'ordre de protÃ©ger la ville et les fermes alentours.
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_04"); //Cela veut dire que nous protÃ©geons les gens qui sont encore ici.
 	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_05"); //La milice fait des patrouilles de nuit. Je ne peux rien de plus.
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_06"); //Et vous allez obéir aux ordres que je vous donne, compris ?
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople_08_06"); //Et vous allez obÃ©ir aux ordres que je vous donne, compris ?
 	
 	MIS_Addon_Andre_MissingPeople = LOG_RUNNING;
 };
@@ -1719,8 +1719,8 @@ func int DIA_Addon_Andre_MissingPeople2_Condition ()
 };
 func void DIA_Addon_Andre_MissingPeople2_Info ()
 {
-	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople2_15_00"); //À propos des gens qui disparaissent
-	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople2_08_01"); //Fichez-moi la paix avec ça. J'ai d'autres soucis en tête.
+	AI_Output (other, self, "DIA_Addon_Andre_MissingPeople2_15_00"); //Ã€ propos des gens qui disparaissent
+	AI_Output (self, other, "DIA_Addon_Andre_MissingPeople2_08_01"); //Fichez-moi la paix avec Ã§a. J'ai d'autres soucis en tÃªte.
 	MIS_Addon_Andre_MissingPeople = LOG_RUNNING;
 };
 
@@ -1734,7 +1734,7 @@ instance DIA_Addon_Andre_ReturnedMissingPeople		(C_INFO)
 	condition	 = 	DIA_Addon_Andre_ReturnedMissingPeople_Condition;
 	information	 = 	DIA_Addon_Andre_ReturnedMissingPeople_Info;
 
-	description	 = 	"J'ai réussi à sauver des disparus.";
+	description	 = 	"J'ai rÃ©ussi Ã  sauver des disparus.";
 };
 
 func int DIA_Addon_Andre_ReturnedMissingPeople_Condition ()
@@ -1748,22 +1748,22 @@ func int DIA_Addon_Andre_ReturnedMissingPeople_Condition ()
 
 func void DIA_Addon_Andre_ReturnedMissingPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_00"); //J'ai réussi à sauver certains d'entre-eux.
+	AI_Output	(other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_00"); //J'ai rÃ©ussi Ã  sauver certains d'entre-eux.
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_01"); //Nous y voilà. Moi qui me demandais où vous aviez bien pu passer.
-		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_02"); //Vous êtes dans la milice. Vous n'aviez pas d'ordre pour ce type d'action !
+		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_01"); //Nous y voilÃ . Moi qui me demandais oÃ¹ vous aviez bien pu passer.
+		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_02"); //Vous Ãªtes dans la milice. Vous n'aviez pas d'ordre pour ce type d'action !
 		AI_Output (other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_03"); //Mais
 	};	
-	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_04"); //Combien de gens avez-vous trouvés ?
-	AI_Output (other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_05"); //Tout ceux qui étaient encore en vie
+	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_04"); //Combien de gens avez-vous trouvÃ©s ?
+	AI_Output (other, self, "DIA_Addon_Andre_ReturnedMissingPeople_15_05"); //Tout ceux qui Ã©taient encore en vie
 	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_06"); //Tous ?! Euh
 	if (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_07"); //Je suis tellement fier de vous ! Et je suis fier de vous avoir laissé rejoindre nos rangs.
+		AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_07"); //Je suis tellement fier de vous ! Et je suis fier de vous avoir laissÃ© rejoindre nos rangs.
 		B_AndreSold ();
 	};
-	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_08"); //Voilà une belle prouesse.
+	AI_Output (self, other, "DIA_Addon_Andre_ReturnedMissingPeople_08_08"); //VoilÃ  une belle prouesse.
 
 	MIS_Addon_Andre_MissingPeople = LOG_SUCCESS;
 	B_GivePlayerXP (XP_Addon_Andre_MissingPeople);
@@ -1794,7 +1794,7 @@ instance DIA_Andre_BerichtDrachen		(C_INFO)
 	condition	 = 	DIA_Andre_BerichtDrachen_Condition;
 	information	 = 	DIA_Andre_BerichtDrachen_Info;
 	permanent	 =	FALSE;
-	description	 = 	"Je suis allé dans la Vallée des mines et j'ai vu des dragons !";
+	description	 = 	"Je suis allÃ© dans la VallÃ©e des mines et j'ai vu des dragons !";
 };
 func int DIA_Andre_BerichtDrachen_Condition ()
 {	
@@ -1808,17 +1808,17 @@ func void DIA_Andre_BerichtDrachen_Info ()
 {
 	//AI_Output (other, self,"DIA_Andre_Add_15_12"); //Lord Hagen hat mich auf eine Mission ins Minental geschickt! Ich soll direkt aufbrechen.
 	
-	AI_Output (other, self,"DIA_Andre_Add_15_13"); //J'étais dans la Vallée des mines et j'ai vu des dragons !
+	AI_Output (other, self,"DIA_Andre_Add_15_13"); //J'Ã©tais dans la VallÃ©e des mines et j'ai vu des dragons !
 	if (Npc_HasItems (hero, ItWr_PaladinLetter_MIS) > 0)
 	{
 		AI_Output (other, self,"DIA_Andre_Add_15_14"); //J'ai une lettre du commandant Garond qui confirme mes dires.
 	};
-	AI_Output (self ,other,"DIA_Andre_Add_08_10"); //Cela va intéresser le seigneur Hagen !
+	AI_Output (self ,other,"DIA_Andre_Add_08_10"); //Cela va intÃ©resser le seigneur Hagen !
 	B_Andre_GotoLordHagen();
 };
 
 ///////////////////////////////////////////////////////////////////////
-//		Cornelius lügt
+//		Cornelius lÃ¼gt
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Andre_BennetInPrison		(C_INFO)
@@ -1841,11 +1841,11 @@ func void DIA_Andre_BennetInPrison_Info ()
 	AI_Output (other, self, "DIA_Andre_BennetInPrison_15_00"); //Et qu'en est-il de Bennet, le forgeron ?
 	AI_Output (self, other, "DIA_Andre_BennetInPrison_08_01"); //Vous voulez parler du mercenaire ? Il croupit en prison, ce qui est sa place.
 	AI_Output (other,self ,"DIA_Andre_BennetInPrison_Talk_15_00"); //Puis-je lui parler ?
-	AI_Output (self ,other,"DIA_Andre_BennetInPrison_Talk_08_01"); //Certainement, entrez. Mais si vous l'aidez à s'échapper, vous subirez sa peine.
+	AI_Output (self ,other,"DIA_Andre_BennetInPrison_Talk_08_01"); //Certainement, entrez. Mais si vous l'aidez Ã  s'Ã©chapper, vous subirez sa peine.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//		Cornelius lügt
+//		Cornelius lÃ¼gt
 ///////////////////////////////////////////////////////////////////////
 
 instance DIA_Andre_Cornelius_Liar		(C_INFO)
@@ -1854,7 +1854,7 @@ instance DIA_Andre_Cornelius_Liar		(C_INFO)
 	condition	 = 	DIA_Andre_Cornelius_Liar_Condition;
 	information	 = 	DIA_Andre_Cornelius_Liar_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Je crois que Cornélius ment.";
+	description	 = 	"Je crois que CornÃ©lius ment.";
 };
 func int DIA_Andre_Cornelius_Liar_Condition ()
 {	
@@ -1866,8 +1866,8 @@ func int DIA_Andre_Cornelius_Liar_Condition ()
 };
 func void DIA_Andre_Cornelius_Liar_Info ()
 {
-	AI_Output			(other, self, "DIA_Andre_Cornelius_Liar_15_00"); //Je crois que Cornélius ment.
-	AI_Output			(self, other, "DIA_Andre_Cornelius_Liar_08_01"); //Vous en êtes sûr ?
+	AI_Output			(other, self, "DIA_Andre_Cornelius_Liar_15_00"); //Je crois que CornÃ©lius ment.
+	AI_Output			(self, other, "DIA_Andre_Cornelius_Liar_08_01"); //Vous en Ãªtes sÃ»r ?
 	
 	Info_ClearChoices (DIA_Andre_Cornelius_Liar);
 	Info_AddChoice (DIA_Andre_Cornelius_Liar,"Non.",DIA_Andre_Cornelius_Liar_No);  
@@ -1878,7 +1878,7 @@ FUNC VOID DIA_Andre_Cornelius_Liar_No()
 {
 	AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_No_15_00"); //Non.
 	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_01"); //Alors vous ne devriez pas crier vos doutes sur les toits.
-	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_02"); //Cornélius est un homme influent. Il peut faire de votre vie un véritable enfer s'il le souhaite.
+	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_02"); //CornÃ©lius est un homme influent. Il peut faire de votre vie un vÃ©ritable enfer s'il le souhaite.
 	AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_No_08_03"); //Tant que vous n'avez pas de preuve, je ne peux pas vous aider.
 
 	Info_ClearChoices (DIA_Andre_Cornelius_Liar);
@@ -1891,15 +1891,15 @@ FUNC VOID DIA_Andre_Cornelius_Liar_Yes()
 	
 	if (Cornelius_IsLiar == TRUE)
 	{
-		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_02"); //J'ai lu son journal ! Ils l'ont corrompu. Tout ça n'était qu'un ramassis de mensonges.
-		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_03"); //Si c'est vraiment le cas, vous devez immédiatement aller voir le seigneur Hagen.
+		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_02"); //J'ai lu son journal ! Ils l'ont corrompu. Tout Ã§a n'Ã©tait qu'un ramassis de mensonges.
+		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_03"); //Si c'est vraiment le cas, vous devez immÃ©diatement aller voir le seigneur Hagen.
 		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_04"); //Montrez-lui le journal. Il s'occupera du reste.
 	}
 	else
 	{
 		AI_Output (other,self ,"DIA_Andre_Cornelius_Liar_Yes_15_05"); //Hum, oui, je crois...
 		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_06"); //J'ai besoin de preuves, pas de suppositions. Obtenez-moi une preuve et je pourrai faire quelque chose pour vous.
-		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_07"); //En attendant, ne le dites pas à n'importe qui.
+		AI_Output (self ,other,"DIA_Andre_Cornelius_Liar_Yes_08_07"); //En attendant, ne le dites pas Ã  n'importe qui.
 	};
 	
 	Info_ClearChoices (DIA_Andre_Cornelius_Liar);
@@ -1926,8 +1926,8 @@ func int DIA_Andre_Paladin_Condition ()
 };
 func void DIA_Andre_Paladin_Info ()
 {
-	AI_Output (self, other, "DIA_Andre_Paladin_08_00"); //Ainsi vous êtes désormais un paladin ! Félicitations !
-	AI_Output (self, other, "DIA_Andre_Paladin_08_01"); //Dès le début j'ai su que vous ne resteriez pas longtemps avec la milice.
+	AI_Output (self, other, "DIA_Andre_Paladin_08_00"); //Ainsi vous Ãªtes dÃ©sormais un paladin ! FÃ©licitations !
+	AI_Output (self, other, "DIA_Andre_Paladin_08_01"); //DÃ¨s le dÃ©but j'ai su que vous ne resteriez pas longtemps avec la milice.
 };
 
 // ******************************************************
@@ -1952,9 +1952,9 @@ func int DIA_Andre_PERM_Condition ()
 };
 func void DIA_Andre_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Andre_PERM_15_00"); //Comment ça va en ville ?
+	AI_Output (other, self, "DIA_Andre_PERM_15_00"); //Comment Ã§a va en ville ?
 	
-	AI_Output (self, other, "DIA_Andre_PERM_08_01"); //Tout est sous contrôle.
+	AI_Output (self, other, "DIA_Andre_PERM_08_01"); //Tout est sous contrÃ´le.
 	if (other.guild == GIL_MIL)
 	{
 		AI_Output (self, other, "DIA_Andre_PERM_08_02"); //Accomplissez votre mission.
@@ -1982,7 +1982,7 @@ instance DIA_Andre_BerichtDrachenTot		(C_INFO)
 	condition	 = 	DIA_Andre_BerichtDrachenTot_Condition;
 	information	 = 	DIA_Andre_BerichtDrachenTot_Info;
 	permanent	 =	FALSE;
-	description	 = 	"J'ai tué tous les dragons de la Vallée des mines !";
+	description	 = 	"J'ai tuÃ© tous les dragons de la VallÃ©e des mines !";
 };
 func int DIA_Andre_BerichtDrachenTot_Condition ()
 {	
@@ -1993,7 +1993,7 @@ func int DIA_Andre_BerichtDrachenTot_Condition ()
 };
 func void DIA_Andre_BerichtDrachenTot_Info ()
 {
-	AI_Output (other, self,"DIA_Andre_Add_15_15"); //J'ai tué tous les dragons de la Vallée des mines !
+	AI_Output (other, self,"DIA_Andre_Add_15_15"); //J'ai tuÃ© tous les dragons de la VallÃ©e des mines !
 	AI_Output (self ,other,"DIA_Andre_Add_08_08"); //Si c'est vrai, vous devez le dire au seigneur Hagen.
 	B_Andre_GotoLordHagen();
 };
@@ -2009,7 +2009,7 @@ instance DIA_Andre_BerichtTorAuf (C_INFO)
 	condition	 = 	DIA_Andre_BerichtTorAuf_Condition;
 	information	 = 	DIA_Andre_BerichtTorAuf_Info;
 	permanent	 =	FALSE;
-	description	 = 	"Le château de la Vallée des mines a été attaqué par les orques !";
+	description	 = 	"Le chÃ¢teau de la VallÃ©e des mines a Ã©tÃ© attaquÃ© par les orques !";
 };
 func int DIA_Andre_BerichtTorAuf_Condition ()
 {	
@@ -2022,8 +2022,8 @@ func int DIA_Andre_BerichtTorAuf_Condition ()
 };
 func void DIA_Andre_BerichtTorAuf_Info ()
 {
-	AI_Output (other, self,"DIA_Andre_Add_15_16"); //Le château de la Vallée des mines a été envahi par les orques !
-	AI_Output (self ,other,"DIA_Andre_Add_08_09"); //Non ! Le seigneur Hagen doit être averti !
+	AI_Output (other, self,"DIA_Andre_Add_15_16"); //Le chÃ¢teau de la VallÃ©e des mines a Ã©tÃ© envahi par les orques !
+	AI_Output (self ,other,"DIA_Andre_Add_08_09"); //Non ! Le seigneur Hagen doit Ãªtre averti !
 	B_Andre_GotoLordHagen();
 };
 

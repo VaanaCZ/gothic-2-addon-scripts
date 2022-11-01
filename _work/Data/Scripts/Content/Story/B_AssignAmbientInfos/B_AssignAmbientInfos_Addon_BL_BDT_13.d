@@ -77,8 +77,8 @@ FUNC INT DIA_Addon_BL_BDT_13_Lager_Condition()
 FUNC VOID DIA_Addon_BL_BDT_13_Lager_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_BL_BDT_13_Lager_15_00");//Que savez-vous sur le camp ?
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Allez voir Snaf si vous cherchez des informations. Notre gros cuistot sait un sacré paquet de choses sur tout le monde !
-	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Si vous voulez acheter quelque chose, allez voir Fisk. Il arrive à dégotter toutes sortes de trucs.
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_01");//Allez voir Snaf si vous cherchez des informations. Notre gros cuistot sait un sacrÃ© paquet de choses sur tout le monde !
+	AI_Output (self, other, "DIA_Addon_BL_BDT_13_Lager_13_02");//Si vous voulez acheter quelque chose, allez voir Fisk. Il arrive Ã  dÃ©gotter toutes sortes de trucs.
 };
 // *************************************************************************
 // 								News
@@ -103,13 +103,13 @@ FUNC VOID DIA_Addon_BL_BDT_13_News_Info()
 	
 	if (RavenIsDead == TRUE)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Raven est mort. Maintenant, on n'a plus AUCUNE chance de quitter cette île !
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_01");//Raven est mort. Maintenant, on n'a plus AUCUNE chance de quitter cette Ã®le !
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//Les pirates ont mis les voiles et quitté l'île.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Maintenant, il ne reste que quelques imbéciles assis sur la plage, et ils n'ont aucun navire digne de ce nom.
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Je doute même que Beliar sache comment nous faire quitter ce caillou.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_02");//Les pirates ont mis les voiles et quittÃ© l'Ã®le.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_03");//Maintenant, il ne reste que quelques imbÃ©ciles assis sur la plage, et ils n'ont aucun navire digne de ce nom.
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_News_13_04");//Je doute mÃªme que Beliar sache comment nous faire quitter ce caillou.
 	};
 };
 // *************************************************************************
@@ -140,14 +140,14 @@ FUNC VOID DIA_Addon_BL_BDT_13_Gold_Info()
 	
 	if (BDT_13_Nerver <= 2)
 	{
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Bonne question. C'est la raison pour laquelle chacun de nous est là, non ?
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_01");//Bonne question. C'est la raison pour laquelle chacun de nous est lÃ , non ?
 		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_02");//Arrangez-vous simplement pour que Thorus vous remette une pierre rouge. Ensuite, vous pourrez aller creuser dans la mine.
 	}
 	else if (BDT_13_Kill == FALSE)
 	{
 		BDT_13_Nerver = 0;
 		BDT_13_Kill = TRUE;
-		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_03");//Hé, tu cherches les ennuis, ou quoi ? Dégage !
+		AI_Output (self, other, "DIA_Addon_BL_BDT_13_Gold_13_03");//HÃ©, tu cherches les ennuis, ou quoi ? DÃ©gage !
 		AI_StopProcessInfos (self);
 	}
 	else 

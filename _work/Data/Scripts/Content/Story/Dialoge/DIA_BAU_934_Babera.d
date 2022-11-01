@@ -42,7 +42,7 @@ func int DIA_Babera_HALLO_Condition ()
 func void DIA_Babera_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_HALLO_15_00"); //Bonjour, superbe jeune fille.
-	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //Arrêtez d'essayer de m'amadouer, mon garçon. Dites-moi ce que vous voulez, je suis occupée.
+	AI_Output			(self, other, "DIA_Babera_HALLO_16_01"); //ArrÃªtez d'essayer de m'amadouer, mon garÃ§on. Dites-moi ce que vous voulez, je suis occupÃ©e.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -69,23 +69,23 @@ func int DIA_Babera_WIESIEHTSAUS_Condition ()
 func void DIA_Babera_WIESIEHTSAUS_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_15_00"); //Comment va le travail aux champs ?
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Jetez un coup d'œil à ces énormes champs et vous saurez comment ça se passe.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Cherchez-vous un emploi à la ferme ?
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_01"); //Jetez un coup d'Å“il Ã  ces Ã©normes champs et vous saurez comment Ã§a se passe.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_16_02"); //Cherchez-vous un emploi Ã  la ferme ?
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 
 	if (hero.guild == GIL_NONE)
 		{
 			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Non. En fait, je veux devenir mercenaire.", DIA_Babera_WIESIEHTSAUS_Nein );
-			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Peut-être.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
+			Info_AddChoice	(DIA_Babera_WIESIEHTSAUS, "Peut-Ãªtre.", DIA_Babera_WIESIEHTSAUS_Vielleicht );
 		};
 };
 func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 {
-	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Peut-être.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //Dans ce cas, vous devriez aller voir le fermier Sékob, le vieil esclavagiste. Il a peut-être quelque chose pour vous.
+	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Vielleicht_15_00"); //Peut-Ãªtre.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_01"); //Dans ce cas, vous devriez aller voir le fermier SÃ©kob, le vieil esclavagiste. Il a peut-Ãªtre quelque chose pour vous.
 	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_02"); //Naturellement, vous pouvez aussi essayer la ferme d'Onar au bout de la grande route.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Mais méfiez-vous des mercenaires. Ils n'apprécient pas les étrangers.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Vielleicht_16_03"); //Mais mÃ©fiez-vous des mercenaires. Ils n'apprÃ©cient pas les Ã©trangers.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
@@ -93,7 +93,7 @@ func void DIA_Babera_WIESIEHTSAUS_Vielleicht ()
 func void DIA_Babera_WIESIEHTSAUS_Nein ()
 {
 	AI_Output			(other, self, "DIA_Babera_WIESIEHTSAUS_Nein_15_00"); //Non. En fait, je veux devenir mercenaire.
-	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Alors ce n'est pas ici. Vous les trouverez à la ferme du propriétaire terrien.
+	AI_Output			(self, other, "DIA_Babera_WIESIEHTSAUS_Nein_16_01"); //Alors ce n'est pas ici. Vous les trouverez Ã  la ferme du propriÃ©taire terrien.
 
 	Info_ClearChoices	(DIA_Babera_WIESIEHTSAUS);
 };
@@ -124,11 +124,11 @@ func int DIA_Babera_BRONKO_Condition ()
 
 func void DIA_Babera_BRONKO_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //Dites-moi, le type à la mine patibulaire là-bas...
+	AI_Output			(other, self, "DIA_Babera_BRONKO_15_00"); //Dites-moi, le type Ã  la mine patibulaire lÃ -bas...
 	AI_Output			(self, other, "DIA_Babera_BRONKO_16_01"); //C'est Bronko. Que voulez savoir ?
 	AI_Output			(other, self, "DIA_Babera_BRONKO_15_02"); //Est-ce le fermier ?
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(rires) C'est ce qu'il vous a dit ? C'est Sékob le fermier. Bronko n'est rien d'autre qu'un bon à rien et un tâcheron. Mais il est aussi fort qu'un bœuf.
-	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //C'est pour ça que personne ne lui dit rien quand il ne travaille pas.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_03"); //(rires) C'est ce qu'il vous a dit ? C'est SÃ©kob le fermier. Bronko n'est rien d'autre qu'un bon Ã  rien et un tÃ¢cheron. Mais il est aussi fort qu'un bÅ“uf.
+	AI_Output			(self, other, "DIA_Babera_BRONKO_16_04"); //C'est pour Ã§a que personne ne lui dit rien quand il ne travaille pas.
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
@@ -153,7 +153,7 @@ instance DIA_Babera_Rosi		(C_INFO)
 	condition	 = 	DIA_Babera_Rosi_Condition;
 	information	 = 	DIA_Babera_Rosi_Info;
 
-	description	 = 	"Où est Rosi ?";
+	description	 = 	"OÃ¹ est Rosi ?";
 };
 
 func int DIA_Babera_Rosi_Condition ()
@@ -169,9 +169,9 @@ func int DIA_Babera_Rosi_Condition ()
 func void DIA_Babera_Rosi_Info ()
 {
 	AI_Output			(other, self, "DIA_Babera_Rosi_15_00"); //Ou est Rosi ?
-	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Elle ne pouvait plus supporter d'être ici et elle est partie vers le nord dans la forêt.
-	B_LogEntry (TOPIC_RosisFlucht,"Rosi a fui la ferme de Sékob. Babéra dit qu'elle est partie vers le nord, dans les bois."); 
-	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi a fui la ferme de Sékob. Babéra dit qu'elle est partie vers le nord, dans les bois."); 
+	AI_Output			(self, other, "DIA_Babera_Rosi_16_01"); //Elle ne pouvait plus supporter d'Ãªtre ici et elle est partie vers le nord dans la forÃªt.
+	B_LogEntry (TOPIC_RosisFlucht,"Rosi a fui la ferme de SÃ©kob. BabÃ©ra dit qu'elle est partie vers le nord, dans les bois."); 
+	B_LogEntry (TOPIC_bringRosiBackToSekob,"Rosi a fui la ferme de SÃ©kob. BabÃ©ra dit qu'elle est partie vers le nord, dans les bois."); 
 };
 
 
@@ -186,7 +186,7 @@ instance DIA_Babera_DUSTOERST		(C_INFO)
 	information	 = 	DIA_Babera_DUSTOERST_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Et à part ça ?";
+	description	 = 	"Et Ã  part Ã§a ?";
 };
 
 func int DIA_Babera_DUSTOERST_Condition ()
@@ -199,8 +199,8 @@ func int DIA_Babera_DUSTOERST_Condition ()
 
 func void DIA_Babera_DUSTOERST_Info ()
 {
-	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //Et à part ça ?
-	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //Je suis occupée.
+	AI_Output			(other, self, "DIA_Babera_DUSTOERST_15_00"); //Et Ã  part Ã§a ?
+	AI_Output			(self, other, "DIA_Babera_DUSTOERST_16_01"); //Je suis occupÃ©e.
 	AI_StopProcessInfos (self);
 };
 

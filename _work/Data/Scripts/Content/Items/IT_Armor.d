@@ -1,5 +1,5 @@
 // *********************************************************
-// Rüstungs Kosten in Gold
+// RÃ¼stungs Kosten in Gold
 // -----------------------
 // Alles, was hier mit 0 angegeben ist  
 // a) kann der Spieler NIE bekommen und
@@ -22,7 +22,7 @@ const int VALUE_ITAR_MIL_M		= 2500;
 const int VALUE_ITAR_PAL_M		= 5000;
 const int VALUE_ITAR_PAL_H		= 20000;
 
-// ------ Bauern und Söldner ------
+// ------ Bauern und SÃ¶ldner ------
 const int VALUE_ITAR_Bau_L		= 80;
 const int VALUE_ITAR_Bau_M		= 100;
 const int VALUE_ITAR_BauBabe_L	= 0;
@@ -42,7 +42,7 @@ const int VALUE_ITAR_Leather_L	= 250;
 const int VALUE_ITAR_BDT_M		= 550;
 const int VALUE_ITAR_BDT_H		= 2100;
 
-// ------ Drachenjäger ------
+// ------ DrachenjÃ¤ger ------
 const int VALUE_ITAR_DJG_L		= 3000;
 const int VALUE_ITAR_DJG_M		= 12000;
 const int VALUE_ITAR_DJG_H		= 20000;
@@ -59,7 +59,7 @@ const int VALUE_ITAR_Prisoner	= 10;
 
 
 // ******************
-// 		Rüstungen
+// 		RÃ¼stungen
 // ******************
 
 INSTANCE ITAR_Governor (C_Item)
@@ -144,7 +144,7 @@ INSTANCE ITAR_JUDGE (C_Item)
 // ******************************************************
 INSTANCE ITAR_SMITH (C_Item)
 {
-	name 					=	"Vêtement de forgeron";
+	name 					=	"VÃªtement de forgeron";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -184,7 +184,7 @@ INSTANCE ITAR_SMITH (C_Item)
 // ******************************************************
 INSTANCE ITAR_BARKEEPER (C_Item)
 {
-	name 					=	"Vêtement de propriétaire terrien";
+	name 					=	"VÃªtement de propriÃ©taire terrien";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -224,7 +224,7 @@ INSTANCE ITAR_BARKEEPER (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_L (C_Item)
 {
-	name 					=	"Vêtement de citoyen";
+	name 					=	"VÃªtement de citoyen";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -264,7 +264,7 @@ INSTANCE ITAR_VLK_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_M (C_Item)
 {
-	name 					=	"Vêtement de citoyen";
+	name 					=	"VÃªtement de citoyen";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -304,7 +304,7 @@ INSTANCE ITAR_VLK_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VLK_H (C_Item)
 {
-	name 					=	"Vêtement de citoyen";
+	name 					=	"VÃªtement de citoyen";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -340,7 +340,7 @@ INSTANCE ITAR_VLK_H (C_Item)
 // ******************************************************
 instance ITAR_VlkBabe_L (C_Item)
 {
-	name 					=	"Vêtement de citoyen 1";
+	name 					=	"VÃªtement de citoyen 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -380,7 +380,7 @@ instance ITAR_VlkBabe_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_M (C_Item)
 {
-	name 					=	"Vêtement de citoyen 2";
+	name 					=	"VÃªtement de citoyen 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -420,7 +420,7 @@ INSTANCE ITAR_VlkBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_VlkBabe_H (C_Item)
 {
-	name 					=	"Vêtement de citoyen 3";
+	name 					=	"VÃªtement de citoyen 3";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -456,7 +456,7 @@ INSTANCE ITAR_VlkBabe_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_MIL_L (C_Item)
 {
-	name 					=	"Armure légère de la milice";
+	name 					=	"Armure lÃ©gÃ¨re de la milice";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -502,7 +502,7 @@ FUNC VOID Equip_ITAR_MIL_L()
 	{
 		MILArmor_Equipped = TRUE;
 		
-		if (MIL01_Equipped == TRUE)//Gürtel
+		if (MIL01_Equipped == TRUE)//GÃ¼rtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -682,7 +682,7 @@ INSTANCE ITAR_PAL_H (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_L (C_Item)
 {
-	name 					=	"Vêtement de fermier 1";
+	name 					=	"VÃªtement de fermier 1";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -722,7 +722,7 @@ INSTANCE ITAR_BAU_L (C_Item)
 // ******************************************************
 INSTANCE ITAR_BAU_M (C_Item)
 {
-	name 					=	"Vêtement de fermier 2";
+	name 					=	"VÃªtement de fermier 2";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -834,7 +834,7 @@ INSTANCE ITAR_BauBabe_M (C_Item)
 // ******************************************************
 INSTANCE ITAR_SLD_L (C_Item)
 {
-	name 					=	"Armure légère de mercenaire";
+	name 					=	"Armure lÃ©gÃ¨re de mercenaire";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1131,7 +1131,7 @@ FUNC VOID UnEquip_ITAR_DJG_Crawler()
 // ******************************************************
 INSTANCE ITAR_DJG_L (C_Item)
 {
-	name 					=	"Armure légère chasseur dragons";
+	name 					=	"Armure lÃ©gÃ¨re chasseur dragons";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -1559,7 +1559,7 @@ FUNC VOID Equip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = TRUE;	
 	
-		if (Leather01_Equipped == TRUE) //Ledergürtel
+		if (Leather01_Equipped == TRUE) //LedergÃ¼rtel
 		{
 			self.protection[PROT_EDGE] 	+= BA_Bonus01;
 			self.protection[PROT_BLUNT] += BA_Bonus01;
@@ -1575,7 +1575,7 @@ FUNC VOID UnEquip_ITAR_Leather_L()
 	{
 		LeatherArmor_Equipped = FALSE;	
 	
-		if (Leather01_Equipped == TRUE) //Ledergürtel
+		if (Leather01_Equipped == TRUE) //LedergÃ¼rtel
 		{
 			self.protection[PROT_EDGE] 	-= BA_Bonus01;
 			self.protection[PROT_BLUNT] -= BA_Bonus01;

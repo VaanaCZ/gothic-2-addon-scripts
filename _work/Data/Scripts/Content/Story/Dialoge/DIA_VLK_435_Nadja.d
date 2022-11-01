@@ -80,7 +80,7 @@ func void DIA_Nadja_STANDARD_Info ()
 {
 	if (Nadja_LuciaInfo == TRUE)
 	{
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_00"); //Je ne pourrai vous parler que quand vous aurez rencontré à Bromor.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_00"); //Je ne pourrai vous parler que quand vous aurez rencontrÃ© Ã  Bromor.
 	}
 	else
 	{
@@ -92,9 +92,9 @@ func void DIA_Nadja_STANDARD_Info ()
 	&& (Nadja_LuciaInfo == FALSE) 
 	{
 		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_01"); //Je veux seulement vous poser quelques questions sur ces disparus.
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_02"); //Je ne peux vous dire que peu de choses, mais pas ici, chéri.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_02"); //Je ne peux vous dire que peu de choses, mais pas ici, chÃ©ri.
 		AI_Output (other, self, "DIA_ADDON_Nadja_STANDARD_15_03"); //Montons.
-		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_04"); //Bien. Vous devez d'abord régler ça avec Bromor. Je ne veux pas de problème.
+		AI_Output (self, other, "DIA_ADDON_Nadja_STANDARD_16_04"); //Bien. Vous devez d'abord rÃ©gler Ã§a avec Bromor. Je ne veux pas de problÃ¨me.
 		Nadja_LuciaInfo = TRUE;
 	};	
 	
@@ -139,7 +139,7 @@ instance DIA_Nadja_hochgehen		(C_INFO)
 	information	 = 	DIA_Nadja_hochgehen_Info;
 	important	 = 	FALSE;
 	permanent	 = 	TRUE;
-	description	 =	"Allons là-haut.";
+	description	 =	"Allons lÃ -haut.";
 };
 
 func int DIA_Nadja_hochgehen_Condition ()
@@ -183,54 +183,54 @@ var int Nadja_GaveLuciaInfo;
 func void DIA_Addon_Nadja_LuciaInfo_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_15_00"); //Bon pouvons-nous parler maintenant ?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Nous sommes plus tranquilles ici à l'étage.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //Bromor n'aime pas nous voir parler aux clients pendant le travail, si ça ne lui rapporte pas un petit quelque chose.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //Alors comme ça vous voulez en savoir plus sur les gens qui ont disparu ici dans le port, n'est-ce pas ?
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_01"); //Nous sommes plus tranquilles ici Ã  l'Ã©tage.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_02"); //Bromor n'aime pas nous voir parler aux clients pendant le travail, si Ã§a ne lui rapporte pas un petit quelque chose.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_03"); //Alors comme Ã§a vous voulez en savoir plus sur les gens qui ont disparu ici dans le port, n'est-ce pas ?
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_16_04"); //Je ne sais pas si je vous serai d'une grande aide mais au moins je peux vous dire ce qu'il est advenu de Lucia.
 
 	Nadja_GaveLuciaInfo = TRUE;
 	
 	Info_ClearChoices	(DIA_Addon_Nadja_LuciaInfo);
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Où s'est-elle enfuie ?", DIA_Addon_Nadja_LuciaInfo_wo );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "OÃ¹ s'est-elle enfuie ?", DIA_Addon_Nadja_LuciaInfo_wo );
 	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Parlez-moi de Lucia.", DIA_Addon_Nadja_LuciaInfo_lucia );
 };
 func void DIA_Addon_Nadja_LuciaInfo_lucia ()
 {
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_00"); //Parlez-moi de Lucia.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //Personne ici, ne regrette son départ.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_01"); //Personne ici, ne regrette son dÃ©part.
 	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_lucia_15_02"); //Pourquoi ?
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Je ne pense pas qu'il n'y ait une personne ici dont elle n'a pas essayé de se servir.
-	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_04"); //C'était une vraie garce !
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_03"); //Je ne pense pas qu'il n'y ait une personne ici dont elle n'a pas essayÃ© de se servir.
+	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_lucia_16_04"); //C'Ã©tait une vraie garce !
 };
 func void DIA_Addon_Nadja_LuciaInfo_wo ()
 {
-	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_wo_15_00"); //Où s'est-elle enfuie ?
+	AI_Output	(other, self, "DIA_Addon_Nadja_LuciaInfo_wo_15_00"); //OÃ¹ s'est-elle enfuie ?
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_01"); //Elle voyait beaucoup Elvrich, l'apprenti de Thorben le charpentier du quartier bas de la ville.
 	AI_Output	(self, other, "DIA_Addon_Nadja_LuciaInfo_wo_16_02"); //Je parie qu'elle s'est fait la belle avec ce jouvenceau.
 
 	Log_CreateTopic (TOPIC_Addon_Lucia, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_Lucia, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_Lucia,"Lucia la prostituée a disparu de la maison close de Bromor dans la nuit. On raconte qu'elle se serait enfuie avec Elvrich, l'apprenti du charpentier Thorben."); 
+	B_LogEntry (TOPIC_Addon_Lucia,"Lucia la prostituÃ©e a disparu de la maison close de Bromor dans la nuit. On raconte qu'elle se serait enfuie avec Elvrich, l'apprenti du charpentier Thorben."); 
 
-	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Où ont-ils pu aller, tous les deux ?", DIA_Addon_Nadja_LuciaInfo_Elvrich );
+	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "OÃ¹ ont-ils pu aller, tous les deux ?", DIA_Addon_Nadja_LuciaInfo_Elvrich );
 };
 func void DIA_Addon_Nadja_LuciaInfo_Elvrich ()
 {
-	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_Elvrich_15_00"); //Où ces deux-là ont-ils pu aller ?
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01"); //Si les loups ne les ont pas mangés, je suppose qu'ils sont partis s'installer avec les fermiers.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02"); //Y-a-t-il un autre endroit où ils auraient pu aller ?
+	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_Elvrich_15_00"); //OÃ¹ ces deux-lÃ  ont-ils pu aller ?
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_01"); //Si les loups ne les ont pas mangÃ©s, je suppose qu'ils sont partis s'installer avec les fermiers.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_Elvrich_16_02"); //Y-a-t-il un autre endroit oÃ¹ ils auraient pu aller ?
 
 	Info_AddChoice	(DIA_Addon_Nadja_LuciaInfo, "Que savez-vous d'autre ?", DIA_Addon_Nadja_LuciaInfo_sonst );
 };
 func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 {
 	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_sonst_15_00"); //Que savez-vous d'autre ?
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_01"); //J'ai entendu beaucoup d'histoires sur ces gens qui ont disparu par ici près du port.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_01"); //J'ai entendu beaucoup d'histoires sur ces gens qui ont disparu par ici prÃ¨s du port.
 	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_02"); //Mais je ne sais pas si je dois y croire ou pas.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //Vous devriez avoir une petite discussion avec les marchands près d'ici.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //C'est tout ce que je peux vous dire hélas.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //Maintenant, que faisons-nous tous les deux, mon chou ? Après tout, vous avez payé pour cela.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //Ça ne vous dirait pas de prendre un peu de bon temps avant de partir ?
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_03"); //Vous devriez avoir une petite discussion avec les marchands prÃ¨s d'ici.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_04"); //C'est tout ce que je peux vous dire hÃ©las.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_05"); //Maintenant, que faisons-nous tous les deux, mon chou ? AprÃ¨s tout, vous avez payÃ© pour cela.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_sonst_16_06"); //Ã‡a ne vous dirait pas de prendre un peu de bon temps avant de partir ?
 
 	Info_ClearChoices (DIA_Addon_Nadja_LuciaInfo);
 	
@@ -247,7 +247,7 @@ func void DIA_Addon_Nadja_LuciaInfo_sonst ()
 func void DIA_Addon_Nadja_LuciaInfo_weiter ()
 {
 	AI_Output			(other, self, "DIA_Addon_Nadja_LuciaInfo_weiter_15_00"); //Merci, mais je dois y aller maintenant.
-	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01"); //Tant pis. Et bien, à une prochaine fois peut-être.
+	AI_Output			(self, other, "DIA_Addon_Nadja_LuciaInfo_weiter_16_01"); //Tant pis. Et bien, Ã  une prochaine fois peut-Ãªtre.
 	
 	Bromor_Pay = FALSE;
 	Nadja_Nacht = (Nadja_Nacht +1);
@@ -279,7 +279,7 @@ func int DIA_Nadja_Poppen_Condition ()
 	if (Bromor_Pay == 2)
 	&& (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 300) 
 	
-	/* Das ist böse - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
+	/* Das ist bÃ¶se - wenn ich direkt mit Bromor spreche passiert nix mehr. M.F.
 	&&  (
 		((Nadja_LuciaInfo != 0) && (Nadja_GaveLuciaInfo == 0))
 		|| (Nadja_GaveLuciaInfo == TRUE)
@@ -293,10 +293,10 @@ func int DIA_Nadja_Poppen_Condition ()
 func void DIA_Nadja_Poppen_Info ()
 {
 	AI_Output (self, other, "DIA_Nadja_Poppen_16_00"); //Les heures qui viennent sont rien que pour nous deux.
-	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //Détendez-vous. Allongez-vous sur le dos et prenez votre pied...
+	AI_Output (self, other, "DIA_Nadja_Poppen_16_01"); //DÃ©tendez-vous. Allongez-vous sur le dos et prenez votre pied...
 
 	Info_ClearChoices (DIA_Nadja_Poppen);
-	Info_AddChoice (DIA_Nadja_Poppen,"Très bien...",DIA_Nadja_Poppen_Start);
+	Info_AddChoice (DIA_Nadja_Poppen,"TrÃ¨s bien...",DIA_Nadja_Poppen_Start);
 };
 FUNC VOID DIA_Nadja_Poppen_Start()
 {
@@ -343,7 +343,7 @@ instance DIA_Nadja_BUYHERB		(C_INFO)
 	condition	 = 	DIA_Nadja_BUYHERB_Condition;
 	information	 = 	DIA_Nadja_BUYHERB_Info;
 	permanent	 =	TRUE;
-	description	 = 	"Où puis-je acheter de l'herbe ici ?";
+	description	 = 	"OÃ¹ puis-je acheter de l'herbe ici ?";
 };
 func int DIA_Nadja_BUYHERB_Condition ()
 {	
@@ -359,20 +359,20 @@ func void DIA_Nadja_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Nadja_BUYHERB_15_00"); //Où puis-je acheter de l'herbe par ici ?
+	AI_Output (other, self, "DIA_Nadja_BUYHERB_15_00"); //OÃ¹ puis-je acheter de l'herbe par iciÂ ?
 	
 	if  (Npc_GetDistToWP (self,"NW_CITY_HABOUR_PUFF_NADJA") < 500) 
 	{	
 		if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 		{
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_01"); //Comment voulez-vous que je le sache ? Et même si je le savais, pensez-vous que je le dirais à un garde ?
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_01"); //Comment voulez-vous que je le sacheÂ ? Et mÃªme si je le savais, pensez-vous que je le dirais Ã  un gardeÂ ?
 			Undercover_Failed = TRUE;
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_02"); //Si vous voulez que je vous réponde, montrez-moi la couleur de votre argent.
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_02"); //Si vous voulez que je vous rÃ©ponde, montrez-moi la couleur de votre argent.
 			AI_Output (other, self, "DIA_Nadja_BUYHERB_15_03"); //Combien voulez-vous ?
-			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_04"); //50 pièces d'or devraient faire l'affaire.
+			AI_Output (self, other, "DIA_Nadja_BUYHERB_16_04"); //50 piÃ¨ces d'or devraient faire l'affaire.
 			Nadja_Money = TRUE;
 		};
 	}
@@ -391,7 +391,7 @@ instance DIA_Nadja_WANT_HERB		(C_INFO)
 	condition	 = 	DIA_Nadja_WANT_HERB_Condition;
 	information	 = 	DIA_Nadja_WANT_HERB_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Maintenant, dites-moi où je peux acheter de l'herbe (donner 50 pièces d'or).";
+	description	 = 	"Maintenant, dites-moi oÃ¹ je peux acheter de l'herbe (donner 50 piÃ¨ces d'or).";
 };
 func int DIA_Nadja_WANT_HERB_Condition ()
 {	
@@ -405,16 +405,16 @@ func int DIA_Nadja_WANT_HERB_Condition ()
 func void DIA_Nadja_WANT_HERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
-	AI_Output (other, self, "DIA_Nadja_WANT_HERB_15_00"); //Et maintenant, dites-moi où je peux acheter de l'herbe.
+	AI_Output (other, self, "DIA_Nadja_WANT_HERB_15_00"); //Et maintenant, dites-moi oÃ¹ je peux acheter de l'herbe.
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
-		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_01"); //Je regrette, mais j'ai oublié.
+		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_01"); //Je regrette, mais j'ai oubliÃ©.
 	}
 	else
 	{
 		B_GiveInvItems	(other, self, ItMi_Gold, 50); 
-		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_02"); //Allez voir Borka, mon grand loup. Il en aura à vous offrir.
+		AI_Output (self, other, "DIA_Nadja_WANT_HERB_16_02"); //Allez voir Borka, mon grand loup. Il en aura Ã  vous offrir.
 		Knows_Borka_Dealer = TRUE;
 	};
 };

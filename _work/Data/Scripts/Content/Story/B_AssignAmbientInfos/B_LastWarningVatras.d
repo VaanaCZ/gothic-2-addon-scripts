@@ -5,17 +5,17 @@
 func void B_LastWarningVatras ()
 {
 	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_00"); //Qu'avez-vous fait, malheureux ? 
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //La confrérie de l'Ordre de l'eau vous a averti plusieurs fois au sujet de la corruption que peut engendrer le mal !
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //Toutefois, il a récemment été porté à mon attention que vous avez quitté la voie de l'équilibre garant de l'existence de ce monde...
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //Vous avez commis meurtres et pillages en traversant ces terres, et vous êtes rendu coupable de crimes odieux.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_01"); //La confrÃ©rie de l'Ordre de l'eau vous a averti plusieurs fois au sujet de la corruption que peut engendrer le mal !
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_02"); //Toutefois, il a rÃ©cemment Ã©tÃ© portÃ© Ã  mon attention que vous avez quittÃ© la voie de l'Ã©quilibre garant de l'existence de ce monde...
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_03"); //Vous avez commis meurtres et pillages en traversant ces terres, et vous Ãªtes rendu coupable de crimes odieux.
 	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_04"); //De nombreux innocents sont morts de votre main.
-	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //Vous êtes maintenant un allié des puissances des ténèbres.
+	AI_Output	(self, other, "DIA_Addon_Vatras_LastWarning_ADD_05_05"); //Vous Ãªtes maintenant un alliÃ© des puissances des tÃ©nÃ¨bres.
 };
 
 func void B_VatrasPissedOff ()
 {
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Par conséquent, vous ne pouvez désormais plus compter sur notre aide. 
-	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //Disparaissez. Vous êtes désormais banni de notre confrérie.
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_00"); //Par consÃ©quent, vous ne pouvez dÃ©sormais plus compter sur notre aide. 
+	AI_Output	(self, other, "DIA_Addon_Vatras_PissedOffPerm_Add_05_01"); //Disparaissez. Vous Ãªtes dÃ©sormais banni de notre confrÃ©rie.
 	
 	if (Vatras_IsOnBoard == LOG_SUCCESS)
 	{

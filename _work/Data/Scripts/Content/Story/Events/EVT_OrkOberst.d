@@ -47,7 +47,7 @@ func void EVT_ORKOBERST ()
 		
 		ORkSturmDI  = TRUE;
 		
-		B_LogEntry (TOPIC_HallenVonIrdorath,"Le colonel orque est un type vraiment costaud. C'est quelque part dans sa salle du trône que doit se trouver le chemin pour continuer."); 
+		B_LogEntry (TOPIC_HallenVonIrdorath,"Le colonel orque est un type vraiment costaud. C'est quelque part dans sa salle du trÃ´ne que doit se trouver le chemin pour continuer."); 
 
 		EVT_ORKOBERST_OneTime = TRUE;
 	};

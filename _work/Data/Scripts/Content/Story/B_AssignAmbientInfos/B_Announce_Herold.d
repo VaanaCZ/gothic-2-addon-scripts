@@ -17,69 +17,69 @@ func void B_Announce_Herold ()
 	CreateInvItem		(self,	Fakescroll);
 	AI_UseItemToState	(self,	Fakescroll,	1);
 
-	AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //Oyez, habitants de Khorinis ! Sur ordre de l'honorable seigneur Hagen, le décret suivant a été promulgué.
+	AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //Oyez, habitants de Khorinis ! Sur ordre de l'honorable seigneur Hagen, le dÃ©cret suivant a Ã©tÃ© promulguÃ©.
 	
 	if (Kapitel <= 2)
 	{
 		randy = Hlp_Random (5);
 		if (randy == 0)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_01"); //En raison de la situation, pour votre propre protection, il est conseillé d'éviter les forêts et les zones sauvages aux alentours de la cité.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //De plus, tout contact avec les paysans rebelles dans les régions avoisinantes est interdit.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_01"); //En raison de la situation, pour votre propre protection, il est conseillÃ© d'Ã©viter les forÃªts et les zones sauvages aux alentours de la citÃ©.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //De plus, tout contact avec les paysans rebelles dans les rÃ©gions avoisinantes est interdit.
 		}
 		else if (randy == 1)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_03"); //A partir d'aujourd'hui, le seigneur André prend le commandement de notre milice.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_04"); //Tous les citoyens de la ville qui savent se battre sont invités à se joindre à la milice royale.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_03"); //A partir d'aujourd'hui, le seigneur AndrÃ© prend le commandement de notre milice.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_04"); //Tous les citoyens de la ville qui savent se battre sont invitÃ©s Ã  se joindre Ã  la milice royale.
 		}
 		else if (randy == 2)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_05"); //Les mesures de sécurité pour la protection du haut quartier seront renforcées.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_06"); //Les gardes à la porte ont reçu l'ordre d'appliquer la loi à la lettre pour empêcher toute entrée illégale.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_05"); //Les mesures de sÃ©curitÃ© pour la protection du haut quartier seront renforcÃ©es.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_06"); //Les gardes Ã  la porte ont reÃ§u l'ordre d'appliquer la loi Ã  la lettre pour empÃªcher toute entrÃ©e illÃ©gale.
 		}
 		else if (randy == 3)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_07"); //La loi martiale a été déclarée dans toutes les villes et régions du royaume.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_08"); //Tous les juges civils doivent confier leurs tâches aux paladins royaux et ce, immédiatement.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //L'honorable seigneur André a reçu pour instruction de condamner encore plus sévèrement les crimes ou les actes de résistance contre la garde royale.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_10"); //Tout habitant de Khorinis coupable d'un crime doit le signaler sur l'instant au seigneur André.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_07"); //La loi martiale a Ã©tÃ© dÃ©clarÃ©e dans toutes les villes et rÃ©gions du royaume.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_08"); //Tous les juges civils doivent confier leurs tÃ¢ches aux paladins royaux et ce, immÃ©diatement.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //L'honorable seigneur AndrÃ© a reÃ§u pour instruction de condamner encore plus sÃ©vÃ¨rement les crimes ou les actes de rÃ©sistance contre la garde royale.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_10"); //Tout habitant de Khorinis coupable d'un crime doit le signaler sur l'instant au seigneur AndrÃ©.
 		}
 		else
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_11"); //En raison d'une attaque orque imminente, chaque citoyen doit se tenir prêt.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_12"); //Tout le monde doit s'entraîner au combat et s'armer comme il convient.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_11"); //En raison d'une attaque orque imminente, chaque citoyen doit se tenir prÃªt.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_12"); //Tout le monde doit s'entraÃ®ner au combat et s'armer comme il convient.
 		};
 	}
 	else if (Kapitel == 3)
 	{
 		IF (MIS_RescueBennet != LOG_SUCCESS)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_13"); //Le forgeron mercenaire Bennet, qui a traîtreusement assassiné le paladin Lothar, a été condamné au nom d'Innos.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_14"); //Il sera pendu jusqu'à ce que mort s'ensuive. L'exécution aura lieu dans quelques jours.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_13"); //Le forgeron mercenaire Bennet, qui a traÃ®treusement assassinÃ© le paladin Lothar, a Ã©tÃ© condamnÃ© au nom d'Innos.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_14"); //Il sera pendu jusqu'Ã  ce que mort s'ensuive. L'exÃ©cution aura lieu dans quelques jours.
 		}
 		else
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_15"); //Le forgeron Bennet a été lavé de toute accusation car la preuve de son innocence a été faite par l'un des conseillers du seigneur Hagen.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_15"); //Le forgeron Bennet a Ã©tÃ© lavÃ© de toute accusation car la preuve de son innocence a Ã©tÃ© faite par l'un des conseillers du seigneur Hagen.
 		};	
 	}
 	else if (Kapitel == 4)
 	{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_16"); //Il ne faut pas prêter foi aux rumeurs selon lesquelles des dragons seraient apparus dans la Vallée des mines.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_17"); //Ces rumeurs sont répandues par l'ennemi pour semer la peur et la terreur parmi les braves gens de Myrtana.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_18"); //Pour tordre le cou à ces affirmations ridicules, une troupe de courageux paladins est partie vers la Vallée des mines sous le commandement d'un individu connaissant bien la région.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_16"); //Il ne faut pas prÃªter foi aux rumeurs selon lesquelles des dragons seraient apparus dans la VallÃ©e des mines.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_17"); //Ces rumeurs sont rÃ©pandues par l'ennemi pour semer la peur et la terreur parmi les braves gens de Myrtana.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_18"); //Pour tordre le cou Ã  ces affirmations ridicules, une troupe de courageux paladins est partie vers la VallÃ©e des mines sous le commandement d'un individu connaissant bien la rÃ©gion.
 	}
 	else	//Kapitel 5
 	{
 		randy = Hlp_Random (2);
 		if (randy == 0)
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_19"); //Les dragons qui menaçaient nos terres ont été vaincus par des braves sous le commandement du seigneur Hagen.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_20"); //Bientôt, le roi Rhobar aura libéré nos terres des orques et notre royaume prospérera de nouveau.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_19"); //Les dragons qui menaÃ§aient nos terres ont Ã©tÃ© vaincus par des braves sous le commandement du seigneur Hagen.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_20"); //BientÃ´t, le roi Rhobar aura libÃ©rÃ© nos terres des orques et notre royaume prospÃ©rera de nouveau.
 		}
 		else
 		{
-			AI_Output (self ,self,"DIA_Herold_Announce_04_21"); //A partir de maintenant, le seigneur André prend le commandement de la ville de Khorinis.
-			AI_Output (self ,self,"DIA_Herold_Announce_04_22"); //Le seigneur Hagen a annoncé qu'il se rendrait personnellement dans la Vallée des mines pour s'assurer que le minerai magique sera chargé sur son navire.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_21"); //A partir de maintenant, le seigneur AndrÃ© prend le commandement de la ville de Khorinis.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_22"); //Le seigneur Hagen a annoncÃ© qu'il se rendrait personnellement dans la VallÃ©e des mines pour s'assurer que le minerai magique sera chargÃ© sur son navire.
 		};
 	};
 	AI_UseItemToState	(self,	Fakescroll,	-1);
@@ -88,9 +88,9 @@ func void B_Announce_Herold ()
 
 /* 
 
-			AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //Hört Bürger von Khorinis den Beschluß des ehrenwerten Lord Hagen!
-			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //An alle Bürger von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
-			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //Hört ihr Bewohner von Khorinis und vernehmt das königliche Dekret zur Aufrechterhaltung der öffentlichen Ordnung.
+			AI_Output (self ,self,"DIA_Herold_Announce_04_00"); //HÃ¶rt BÃ¼rger von Khorinis den BeschluÃŸ des ehrenwerten Lord Hagen!
+			AI_Output (self ,self,"DIA_Herold_Announce_04_02"); //An alle BÃ¼rger von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
+			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //HÃ¶rt ihr Bewohner von Khorinis und vernehmt das kÃ¶nigliche Dekret zur Aufrechterhaltung der Ã¶ffentlichen Ordnung.
 			AI_Output (self ,self,"DIA_Herold_Announce_04_09"); //An alle Bewohner von Khorinis, vernehmt Lord Hagens Anordnungen zum Schutze unserer Stadt. 
 
 
@@ -98,26 +98,26 @@ func void B_Announce_Herold ()
 
 
 Kapitel 3 Spieler kommt aus dem Minental und hat mit Lord Hagen gesprochen
-Hört ihr Büger von Khorinis. Ein Bote der Paladine brachte Kunde aus dem Minental
-Unsere tapferen Paladine halten den Orks wehrhaft stand und erschliessen neue Minen für das Königreich!
+HÃ¶rt ihr BÃ¼ger von Khorinis. Ein Bote der Paladine brachte Kunde aus dem Minental
+Unsere tapferen Paladine halten den Orks wehrhaft stand und erschliessen neue Minen fÃ¼r das KÃ¶nigreich!
 
 Kapitel 3 Bennet ist im Knast
-Hört ihr Bürger von Khorinis
-Der Schmied Bennet, der den ehrenwerten Paladin Lothar heimtückisch ermordert hat, ist im Namen Innos verurteilt worden. 
+HÃ¶rt ihr BÃ¼rger von Khorinis
+Der Schmied Bennet, der den ehrenwerten Paladin Lothar heimtÃ¼ckisch ermordert hat, ist im Namen Innos verurteilt worden. 
 Das Urteil lautet Tod durch den Strick.
 
 Kapitel 3 Bennet ist wieder frei
-Hört ihr Bürger,
+HÃ¶rt ihr BÃ¼rger,
 Der Schmied Bennet wird freigesprochen, da seine Unschuld von einem klugen Berater Lord Hagens bewiesen wurde. 
 So ist es Innos Wille und nach seiner Gerechtigkeit handeln wir. 
  
 Kapitel 5 Start Drachen sind tot
-Hört Bürger von Khorinis
-Die Drachen die das Land bedrohten wurden von tapferen Männern unter dem Befehl von Lord Hagen besiegt.   
-Bald wird auch König Rohbar das Land von den Orks befreien und das Königreich wird in neuem Glanz aufblühen!
+HÃ¶rt BÃ¼rger von Khorinis
+Die Drachen die das Land bedrohten wurden von tapferen MÃ¤nnern unter dem Befehl von Lord Hagen besiegt.   
+Bald wird auch KÃ¶nig Rohbar das Land von den Orks befreien und das KÃ¶nigreich wird in neuem Glanz aufblÃ¼hen!
 
 
-Kapitel 5 Kurz vor Schluß (Spieler war in der Biblothek) 
-Der ehrenwerte Lord Hagen hat verkündet nun selbst ins Minental zu ziehen um dafür zu sorgen das sein Schiff mit dem Erz beladen werden kann.  
+Kapitel 5 Kurz vor SchluÃŸ (Spieler war in der Biblothek) 
+Der ehrenwerte Lord Hagen hat verkÃ¼ndet nun selbst ins Minental zu ziehen um dafÃ¼r zu sorgen das sein Schiff mit dem Erz beladen werden kann.  
 
 */

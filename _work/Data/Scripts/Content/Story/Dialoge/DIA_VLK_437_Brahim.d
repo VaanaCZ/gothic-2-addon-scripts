@@ -88,11 +88,11 @@ func void DIA_Brahim_GREET_Info ()
 {
 	AI_Output (other, self, "DIA_Brahim_GREET_15_00"); //Que faites-vous ici ?
 	AI_Output (self, other, "DIA_Brahim_GREET_07_01"); //Je me nomme Brahim. Je trace des cartes et je les vends.
-	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Comme vous venez d'arriver, vous aurez peut-être besoin d'une carte de la ville...
-	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Elle n'est pas chère... et très utile tant que vous n'aurez pas appris à vous repérer.
+	AI_Output (self, other, "DIA_Brahim_GREET_07_02"); //Comme vous venez d'arriver, vous aurez peut-Ãªtre besoin d'une carte de la ville...
+	AI_Output (self, other, "DIA_Brahim_GREET_07_03"); //Elle n'est pas chÃ¨re... et trÃ¨s utile tant que vous n'aurez pas appris Ã  vous repÃ©rer.
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
-	B_LogEntry (Topic_CityTrader,"Brahim dessine et vend des cartes près du port.");
+	B_LogEntry (Topic_CityTrader,"Brahim dessine et vend des cartes prÃ¨s du port.");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -121,8 +121,8 @@ func void DIA_Addon_Brahim_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Brahim_MissingPeople_15_00"); //Est-ce exact que certains habitants de la ville ont tout simplement disparu ?
 	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_01"); //J'en ai entendu parler. Mais je ne sais pas si c'est vrai ou non.
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Regardez autour de vous. Est-ce dans ce trou à rats que vous voulez passer vos meilleures années ?
-	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Pas étonnant que des gens partent d'ici.
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_02"); //Regardez autour de vous. Est-ce dans ce trou Ã  rats que vous voulez passer vos meilleures annÃ©es ?
+	AI_Output	(self, other, "DIA_Addon_Brahim_MissingPeople_07_03"); //Pas Ã©tonnant que des gens partent d'ici.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -179,11 +179,11 @@ func void DIA_Brahim_BUY_Info ()
 	
 	if (hero.guild == GIL_KDF)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_01"); //Vous n'en trouverez pas de meilleures dans votre monastère.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_01"); //Vous n'en trouverez pas de meilleures dans votre monastÃ¨re.
 	};
 	if (hero.guild == GIL_PAL)
 	{
-		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Les cartes précises sont très utiles, surtout pour les gens originaires du continent, monsieur le paladin.
+		AI_Output (self ,other, "DIA_Brahim_BUY_07_02"); //Les cartes prÃ©cises sont trÃ¨s utiles, surtout pour les gens originaires du continent, monsieur le paladin.
 	};
 	Brahim_ShowedMaps = TRUE;
 };
@@ -250,14 +250,14 @@ FUNC INT DIA_Brahim_Kap3_First_EXIT_Condition()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Info()
 {
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //Je savais que celle-ci vous intéresserait.
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //De quoi voulez-vous parler ?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_00"); //Je savais que celle-ci vous intÃ©resserait.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_15_01"); //De quoi voulez-vous parlerÂ ?
 	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_07_02"); //Eh bien, de la vieille carte que vous venez juste d'acheter.
-	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Je connais les gens tels que vous. Vous vous intéressez à toutes les possibilités de vous enrichir.
+	AI_Output (self, other,"DIA_Brahim_Kap3_First_EXIT_07_03"); //Je connais les gens tels que vous. Vous vous intÃ©ressez Ã  toutes les possibilitÃ©s de vous enrichir.
 	Info_ClearChoices (DIA_Brahim_Kap3_First_EXIT);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,DIALOG_BACK,DIA_Brahim_Kap3_First_EXIT_BACK);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Où avez-vous eu ce document ?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
-	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Quel genre de document est-ce là ?",DIA_Brahim_Kap3_First_EXIT_Content);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"OÃ¹ avez-vous eu ce document ?",DIA_Brahim_Kap3_First_EXIT_WhereGetIt);
+	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Quel genre de document est-ce lÃ  ?",DIA_Brahim_Kap3_First_EXIT_Content);
 	Info_AddChoice (DIA_Brahim_Kap3_First_EXIT,"Pourquoi ne pas le garder pour vous ?",DIA_Brahim_Kap3_First_EXIT_KeepIt);
 };
 
@@ -268,22 +268,22 @@ FUNC VOID DIA_Brahim_Kap3_First_EXIT_BACK ()
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_WhereGetIt ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //D'où tenez-vous cette carte ?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Je l'ai trouvée dans un tas de vieilles cartes que j'ai récemment achetées.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Mon vendeur n'avait pas dû y faire attention.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_15_00"); //D'oÃ¹ tenez-vous cette carteÂ ?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_01"); //Je l'ai trouvÃ©e dans un tas de vieilles cartes que j'ai rÃ©cemment achetÃ©es.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_WhereGetIt_07_02"); //Mon vendeur n'avait pas dÃ» y faire attention.
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_Content ()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //De quel genre de carte s'agit-il ?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //On dirait une carte au trésor.
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //Mais j'ai l'impression que vous êtes du genre à vouloir vous en assurer...
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_Content_15_00"); //De quel genre de carte s'agit-ilÂ ?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_01"); //On dirait une carte au trÃ©sor.
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_Content_07_02"); //Mais j'ai l'impression que vous Ãªtes du genre Ã  vouloir vous en assurer...
 };
 
 FUNC VOID DIA_Brahim_Kap3_First_EXIT_KeepIt()
 {
-	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Pourquoi ne la gardez-vous pas ?
-	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Je suis un vieillard et le temps où je serais parti seul à l'aventure est révolu depuis longtemps.
+	AI_Output (other,self ,"DIA_Brahim_Kap3_First_EXIT_KeepIt_15_00"); //Pourquoi ne la gardez-vous pasÂ ?
+	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_01"); //Je suis un vieillard et le temps oÃ¹ je serais parti seul Ã  l'aventure est rÃ©volu depuis longtemps.
 	AI_Output (self ,other,"DIA_Brahim_Kap3_First_EXIT_KeepIt_07_02"); //Je laisse cela aux jeunes.
 };
 

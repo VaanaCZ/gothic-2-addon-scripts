@@ -43,7 +43,7 @@ const int MENU_SOUND_DY = 550;
 INSTANCE MENUITEM_AUDIO_HEADLINE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Paramètres audio";
+	text[0]		= "ParamÃ¨tres audio";
 	type		= MENU_ITEM_TEXT;
 	// Position und Dimension
 	posx		= 0;		posy		= MENU_TITLE_Y;
@@ -134,7 +134,7 @@ instance MENUITEM_AUDIO_MUSIC(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Musique";
-	text[1]		= "Activer/désactiver la musique d'ambiance"; // Kommentar
+	text[1]		= "Activer/dÃ©sactiver la musique d'ambiance"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*2;
@@ -150,7 +150,7 @@ INSTANCE MENUITEM_AUDIO_MUSIC_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
-	text[0]		=   "désactivée|activée";
+	text[0]		=   "dÃ©sactivÃ©e|activÃ©e";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*2 + MENU_CHOICE_YPLUS;
@@ -177,7 +177,7 @@ instance MENUITEM_AUDIO_PROVIDER(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Carte son";
-	text[1]		= "Redémarrez pour que les modifications soient prises en compte."; // Kommentar
+	text[1]		= "RedÃ©marrez pour que les modifications soient prises en compte."; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*3;
@@ -226,7 +226,7 @@ instance MENUITEM_AUDIO_SPEEKER_CHOICE(C_MENU_ITEM_DEF)
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
 	// PATCH 1.30 - added 5.1 and 7.1 speaker system flags
-	text[0]		=   "2 haut-parleurs|écouteurs|surround|4 haut-parleurs|haut-parleurs 5.1|haut-parleurs 7.1";
+	text[0]		=   "2 haut-parleurs|Ã©couteurs|surround|4 haut-parleurs|haut-parleurs 5.1|haut-parleurs 7.1";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*4 + MENU_CHOICE_YPLUS;
@@ -243,7 +243,7 @@ instance MENUITEM_AUDIO_REVERB(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Echos";
-	text[1]		= "Entendre les effets de réverbération dans les grottes, etc. ?"; // Kommentar
+	text[1]		= "Entendre les effets de rÃ©verbÃ©ration dans les grottes, etc. ?"; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5;
@@ -258,7 +258,7 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
-	text[0]		=   "désactivée|activée";
+	text[0]		=   "dÃ©sactivÃ©e|activÃ©e";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*5 + MENU_CHOICE_YPLUS;
@@ -275,8 +275,8 @@ instance MENUITEM_AUDIO_REVERB_CHOICE(C_MENU_ITEM_DEF)
 instance MENUITEM_AUDIO_REVERB_SPEECH(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
-	text[0]		= "Réverb. dialog.";
-	text[1]		= "Voulez-vous appliquer la réverbération aux dialogues ?";
+	text[0]		= "RÃ©verb. dialog.";
+	text[1]		= "Voulez-vous appliquer la rÃ©verbÃ©ration aux dialogues ?";
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6;
@@ -291,7 +291,7 @@ instance MENUITEM_AUDIO_REVERB_SPEECH_CHOICE(C_MENU_ITEM_DEF)
 {
 	backPic		=	MENU_CHOICE_BACK_PIC;
 	type		=	MENU_ITEM_CHOICEBOX;
-	text[0]		=   "nulle|moyenne|complète";
+	text[0]		=   "nulle|moyenne|complÃ¨te";
 	fontName	= 	MENU_FONT_SMALL;
 	// Position und Dimension
 	posx		= 4300;		posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*6 + MENU_CHOICE_YPLUS;
@@ -310,7 +310,7 @@ instance MENUITEM_AUDIO_SAMPLERATE(C_MENU_ITEM_DEF)
 {
 	backpic		= MENU_ITEM_BACK_PIC;
 	text[0]		= "Echantillon";
-	text[1]		= "Redémarrez pour que les modifications soient prises en compte."; // Kommentar
+	text[1]		= "RedÃ©marrez pour que les modifications soient prises en compte."; // Kommentar
 
 	// Position und Dimension
 	posx		=	1000;	posy		=	MENU_START_SOUND_Y + MENU_SOUND_DY*7;

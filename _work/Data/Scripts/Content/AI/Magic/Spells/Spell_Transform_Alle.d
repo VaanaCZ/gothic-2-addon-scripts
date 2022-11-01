@@ -15,7 +15,7 @@ const int SPL_Cost_TrfLurker		= 10;
 const int SPL_Cost_TrfShadowbeast	= 10;
 const int SPL_Cost_TrfDragonSnapper	= 10;
 
-// ------ Instanz für alle Transform-Sprüche ------
+// ------ Instanz fÃ¼r alle Transform-SprÃ¼che ------
 INSTANCE Spell_Transform (C_Spell_Proto)
 {
 	time_per_mana			= 0;

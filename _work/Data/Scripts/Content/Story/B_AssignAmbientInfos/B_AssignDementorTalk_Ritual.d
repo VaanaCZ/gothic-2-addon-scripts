@@ -12,12 +12,12 @@ func void B_AssignDementorTalk_Ritual ()
 	
 	{
 		AI_Output			(self ,other, "DIA_RitualDementor_19_00"); //Vous arrivez trop tard.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Nous avons détruit l'Œil d'Innos pour qu'il ne retrouve plus jamais son pouvoir.
-		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Nous allons maintenant vous démontrer combien est vaine votre tentative pour défier le Maître.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_01"); //Nous avons dÃ©truit l'Å’il d'Innos pour qu'il ne retrouve plus jamais son pouvoir.
+		AI_Output			(self ,other, "DIA_RitualDementor_19_02"); //Nous allons maintenant vous dÃ©montrer combien est vaine votre tentative pour dÃ©fier le MaÃ®tre.
 
 		MIS_SCKnowsInnosEyeIsBroken  = TRUE;
-		B_LogEntry (TOPIC_INNOSEYE, "Ces types sinistres commencent à me taper sur les nerfs. Ils ont détruits l'Œil d'Innos. J'ignore comment le réparer.");
- 		B_LogEntry (TOPIC_TraitorPedro, "J'ai trouvé l'Œil d'Innos. Mais pour l'instant, aucune trace de Pedro. Ces magiciens noirs sont de mèche avec lui.");
+		B_LogEntry (TOPIC_INNOSEYE, "Ces types sinistres commencent Ã  me taper sur les nerfs. Ils ont dÃ©truits l'Å’il d'Innos. J'ignore comment le rÃ©parer.");
+ 		B_LogEntry (TOPIC_TraitorPedro, "J'ai trouvÃ© l'Å’il d'Innos. Mais pour l'instant, aucune trace de Pedro. Ces magiciens noirs sont de mÃ¨che avec lui.");
 		B_GivePlayerXP (XP_SCKnowsInnosEyeIsBroken);
 	}
 	else
@@ -27,11 +27,11 @@ func void B_AssignDementorTalk_Ritual ()
 		
 	 	if (randy == 0)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //Tâtez de notre puissance.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_03"); //TÃ¢tez de notre puissance.
 		};
 		if (randy == 1)
 		{
-			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Pour le Maître.
+			AI_Output			(self ,other, "DIA_RitualDementor_19_04"); //Pour le MaÃ®tre.
 		};
 		if (randy == 2)
 		{

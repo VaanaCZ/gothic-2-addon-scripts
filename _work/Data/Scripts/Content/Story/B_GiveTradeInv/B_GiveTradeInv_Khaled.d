@@ -31,7 +31,7 @@ FUNC VOID B_GiveTradeInv_Khaled (var C_NPC slf)
 		
 		CreateInvItems (slf, ItRw_Arrow, 30); 
 		
-		//Gürtel
+		//GÃ¼rtel
 		CreateInvItems (slf, ItBE_Addon_Leather_01, 1); 
 		
 		Khaled_ItemsGiven_Chapter_1 = TRUE;

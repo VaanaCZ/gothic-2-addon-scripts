@@ -7,7 +7,7 @@ const int ThiefXP = 50;
 FUNC VOID B_GiveThiefXP()
 {
 	
-	VictimCount = (VictimCount +1);//zähl die Opfer
+	VictimCount = (VictimCount +1);//zÃ¤hl die Opfer
 	
 	
 	if (VictimLevel == 0)
@@ -20,9 +20,9 @@ FUNC VOID B_GiveThiefXP()
 		//----------------Kalkulation-----------------
 		
 		ThiefLevel = (ThiefLevel +1);
-		VictimLevel =(VictimCount  + ThiefLevel); //Erhöhe die Anzahl der nötigen Opfer zum nächsten Level (aktuelleOpfer + aktueller Level)
+		VictimLevel =(VictimCount  + ThiefLevel); //ErhÃ¶he die Anzahl der nÃ¶tigen Opfer zum nÃ¤chsten Level (aktuelleOpfer + aktueller Level)
 		
-		//Platz für Goodies (Items, Attributes...) 
+		//Platz fÃ¼r Goodies (Items, Attributes...) 
 	};
 		
 		//-------------------XP-----------------------

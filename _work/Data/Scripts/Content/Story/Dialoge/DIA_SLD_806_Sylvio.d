@@ -41,8 +41,8 @@ func int DIA_Sylvio_Hallo_Condition ()
 
 func void DIA_Sylvio_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //Comment ça se passe ?
-	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Je vous ai donné l'autorisation de m'adresser la parole ?
+	AI_Output (other, self, "DIA_Sylvio_Hallo_15_00"); //Comment Ã§a se passe ?
+	AI_Output (self, other, "DIA_Sylvio_Hallo_09_01"); //Je vous ai donnÃ© l'autorisation de m'adresser la paroleÂ ?
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -58,7 +58,7 @@ instance DIA_Sylvio_Thekla		(C_INFO)
 	condition	= DIA_Sylvio_Thekla_Condition;
 	information	= DIA_Sylvio_Thekla_Info;
 	permanent 	= FALSE;
-	description	= "Thékla a un problème avec vous.";
+	description	= "ThÃ©kla a un problÃ¨me avec vous.";
 };
 
 func int DIA_Sylvio_Thekla_Condition ()
@@ -71,10 +71,10 @@ func int DIA_Sylvio_Thekla_Condition ()
 
 func void DIA_Sylvio_Thekla_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //Thékla a un problème avec vous.
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Et alors ? C'est quoi, le problème de la petite dame ? Et pourquoi elle n'est pas venue elle-même, hein ?
-	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Vous savez très bien pourquoi...
-	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(cynique) Si on en discutait quelques instants avec mon ami Bullco ?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_00"); //ThÃ©kla a un problÃ¨me avec vous.
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_01"); //Et alorsÂ ? C'est quoi, le problÃ¨me de la petite dameÂ ? Et pourquoi elle n'est pas venue elle-mÃªme, heinÂ ?
+	AI_Output (other, self, "DIA_Sylvio_Thekla_15_02"); //Vous savez trÃ¨s bien pourquoi...
+	AI_Output (self, other, "DIA_Sylvio_Thekla_09_03"); //(cynique) Si on en discutait quelques instants avec mon ami BullcoÂ ?
 
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -100,7 +100,7 @@ func int DIA_Sylvio_Gossip_Condition ()
 
 func void DIA_Sylvio_Gossip_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //On raconte beaucoup de choses à votre sujet.
+	AI_Output (other, self, "DIA_Sylvio_Gossip_15_00"); //On raconte beaucoup de choses Ã  votre sujet.
 	AI_Output (self, other, "DIA_Sylvio_Gossip_09_01"); //La plupart des gens parlent trop.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
@@ -127,9 +127,9 @@ func int DIA_Sylvio_AboutLee_Condition ()
 
 func void DIA_Sylvio_AboutLee_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Que pensez-vous de Lee ?
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(ironique) Oh, c'est un bon combattant. Je n'aimerais pas me retrouver face à lui, c'est sûr.
-	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(implacable) Sauf si je ne pouvais pas faire autrement, bien sûr.
+	AI_Output (other, self, "DIA_Sylvio_AboutLee_15_00"); //Que pensez-vous de LeeÂ ?
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_01"); //(ironique) Oh, c'est un bon combattant. Je n'aimerais pas me retrouver face Ã  lui, c'est sÃ»r.
+	AI_Output (self, other, "DIA_Sylvio_AboutLee_09_02"); //(implacable) Sauf si je ne pouvais pas faire autrement, bien sÃ»r.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;
 	AI_StopProcessInfos (self);
@@ -167,9 +167,9 @@ func int DIA_Sylvio_MenDefeated_Condition ()
 
 func void DIA_Sylvio_MenDefeated_Info ()
 {
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //Je me suis laissé dire que vous aviez une dent contre mes hommes.
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Et, pour autant que je sache, vous êtes l'un des protégés de Lee.
-	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Je vous préviens, les choses vont bientôt changer par ici, et nous reprendrons cette petite discussion à ce moment-là...
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_00"); //Je me suis laissÃ© dire que vous aviez une dent contre mes hommes.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_01"); //Et, pour autant que je sache, vous Ãªtes l'un des protÃ©gÃ©s de Lee.
+	AI_Output (self, other, "DIA_Sylvio_MenDefeated_09_02"); //Je vous prÃ©viens, les choses vont bientÃ´t changer par ici, et nous reprendrons cette petite discussion Ã  ce moment-lÃ ...
 	
 	Sylvio_MenDefeated = TRUE;
 	
@@ -186,7 +186,7 @@ instance DIA_Sylvio_Asshole (C_INFO)
 	condition	= DIA_Sylvio_Asshole_Condition;
 	information	= DIA_Sylvio_Asshole_Info;
 	permanent	= FALSE;
-	description	= "Hé ! Trou du cul...";
+	description	= "HÃ© ! Trou du cul...";
 };
 
 func int DIA_Sylvio_Asshole_Condition ()
@@ -199,8 +199,8 @@ func int DIA_Sylvio_Asshole_Condition ()
 
 func void DIA_Sylvio_Asshole_Info ()
 {
-	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //Hé, connard !
-	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //Vous ne croyez tout de même pas que je vais accepter de me battre en duel contre vous, si ?
+	AI_Output (other, self, "DIA_Sylvio_Asshole_15_00"); //HÃ©, connardÂ !
+	AI_Output (self, other, "DIA_Sylvio_Asshole_09_01"); //Vous ne croyez tout de mÃªme pas que je vais accepter de me battre en duel contre vous, siÂ ?
 	AI_Output (self, other, "DIA_Sylvio_Asshole_09_02"); //Retournez vous terrer dans votre coin.
 	
 	Sylvio_angequatscht = Sylvio_angequatscht + 1;

@@ -42,8 +42,8 @@ func int DIA_Haupttorwache_AUFGABE_Condition ()
 
 func void DIA_Haupttorwache_AUFGABE_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Quel est votre rôle ?
-	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Ma mission est simple. Je suis censé m'assurer que les orques n'approchent pas à moins de dix mètres de la porte.
+	AI_Output			(other, self, "DIA_Haupttorwache_AUFGABE_15_00"); //Quel est votre rÃ´leÂ ?
+	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_01"); //Ma mission est simple. Je suis censÃ© m'assurer que les orques n'approchent pas Ã  moins de dix mÃ¨tres de la porte.
 	AI_Output			(self, other, "DIA_Haupttorwache_AUFGABE_13_02"); //S'ils essayent d'enfoncer la herse, je dois sonner l'alerte, c'est tout.
 };
 
@@ -70,31 +70,31 @@ func int DIA_Haupttorwache_TOROEFFNEN_Condition ()
 };
 func void DIA_Haupttorwache_TOROEFFNEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Que faut-il faire pour ouvrir la porte principale ?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Au nom du ciel, pourquoi voulez-vous le savoir ?
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_15_00"); //Que faut-il faire pour ouvrir la porte principaleÂ ?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_13_01"); //Au nom du ciel, pourquoi voulez-vous le savoirÂ ?
 
 	self.flags = 0;//Joly:zur sicherheit
 
 	Info_ClearChoices	(DIA_Haupttorwache_TOROEFFNEN);
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Je m'inquiète au sujet de la sécurité du château.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
-	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Laissez tomber. Simple curiosité.", DIA_Haupttorwache_TOROEFFNEN_frage );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Je m'inquiÃ¨te au sujet de la sÃ©curitÃ© du chÃ¢teau.", DIA_Haupttorwache_TOROEFFNEN_sicherheit );
+	Info_AddChoice	(DIA_Haupttorwache_TOROEFFNEN, "Laissez tomber. Simple curiositÃ©.", DIA_Haupttorwache_TOROEFFNEN_frage );
 	
 };
 func void DIA_Haupttorwache_TOROEFFNEN_sicherheit ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Je me fais du souci au sujet de la sécurité du château.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_15_00"); //Je me fais du souci au sujet de la sÃ©curitÃ© du chÃ¢teau.
 	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_01"); //Moi aussi, vous pouvez me croire.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Mais Garond sait bien que je suis un garde d'une fidélité absolue. C'est pour cela qu'il m'a confié la clé de la porte.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(fièrement) C'est une grande responsabilité, mais j'en suis digne. Je garderai cette clé jusqu'à mon dernier souffle. D'ailleurs, j'ai dû le jurer à Garond.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Vous vous rendez compte, si quelqu'un tirait le levier pour ouvrir la vieille herse rouillée et si cette dernière se bloquait en position haute ?
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Il deviendrait alors impossible de refermer la porte et je n'ose imaginer ce qui se passerait ensuite. Heureusement, personne ne sait que c'est moi qui ai la clé !
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_02"); //Mais Garond sait bien que je suis un garde d'une fidÃ©litÃ© absolue. C'est pour cela qu'il m'a confiÃ© la clÃ© de la porte.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_03"); //(fiÃ¨rement) C'est une grande responsabilitÃ©, mais j'en suis digne. Je garderai cette clÃ© jusqu'Ã  mon dernier souffle. D'ailleurs, j'ai dÃ» le jurer Ã  Garond.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_04"); //Vous vous rendez compte, si quelqu'un tirait le levier pour ouvrir la vieille herse rouillÃ©e et si cette derniÃ¨re se bloquait en position hauteÂ ?
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_sicherheit_13_05"); //Il deviendrait alors impossible de refermer la porte et je n'ose imaginer ce qui se passerait ensuite. Heureusement, personne ne sait que c'est moi qui ai la clÃ©Â !
 	AI_StopProcessInfos (self);
 };
 
 func void DIA_Haupttorwache_TOROEFFNEN_frage ()
 {
-	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Simple curiosité de ma part.
-	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Ne parlez pas comme ça, ça pourrait nous porter la poisse, et nous n'en avons vraiment pas besoin en ce moment.. Et maintenant, partez, j'ai à faire.
+	AI_Output			(other, self, "DIA_Haupttorwache_TOROEFFNEN_frage_15_00"); //Simple curiositÃ© de ma part.
+	AI_Output			(self, other, "DIA_Haupttorwache_TOROEFFNEN_frage_13_01"); //Ne parlez pas comme Ã§a, Ã§a pourrait nous porter la poisse, et nous n'en avons vraiment pas besoin en ce moment.. Et maintenant, partez, j'ai Ã  faire.
 	AI_StopProcessInfos (self);
 };
 

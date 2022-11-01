@@ -40,7 +40,7 @@ FUNC INT DIA_OCPAL_9_PEOPLE_Condition()
 FUNC VOID DIA_OCPAL_9_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_OCPAL_9_PEOPLE_15_00"); //Qui commande ici ?
-	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Garond est le commandant du ch‚teau. On ne peut pas vraiment lui envier son poste.
+	AI_Output (self, other, "DIA_OCPAL_9_PEOPLE_09_01"); //Garond est le commandant du ch√¢teau. On ne peut pas vraiment lui envier son poste.
 };
 
 // *************************************************************************
@@ -52,7 +52,7 @@ INSTANCE DIA_OCPAL_9_LOCATION(C_INFO)
 	condition	= DIA_OCPAL_9_LOCATION_Condition;
 	information	= DIA_OCPAL_9_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Que savez-vous au sujet de cette vallÈe ?";
+	description = "Que savez-vous au sujet de cette vall√©e ?";
 };                       
 
 FUNC INT DIA_OCPAL_9_LOCATION_Condition()
@@ -62,9 +62,9 @@ FUNC INT DIA_OCPAL_9_LOCATION_Condition()
 
 FUNC VOID DIA_OCPAL_9_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //Que savez-vous au sujet de cette vallÈe ?
-	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //A l'est, les orques ont ÈrigÈ une gigantesque enceinte, certainement pour protÈger leur ravitaillement. DerriËre le mur, des docks peuvent accueillir leurs navires.
-	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02"); //J'espËre que les orques ne seront pas ravitaillÈs trop rapidement. Je trouve que ce que nous devons affronter pour l'instant est largement suffisant.
+	AI_Output (other, self, "DIA_OCPAL_9_LOCATION_15_00"); //Que savez-vous au sujet de cette vall√©e ?
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_01"); //A l'est, les orques ont √©rig√© une gigantesque enceinte, certainement pour prot√©ger leur ravitaillement. Derri√®re le mur, des docks peuvent accueillir leurs navires.
+	AI_Output (self, other, "DIA_OCPAL_9_LOCATION_09_02"); //J'esp√®re que les orques ne seront pas ravitaill√©s trop rapidement. Je trouve que ce que nous devons affronter pour l'instant est largement suffisant.
 };
 
 // *************************************************************************
@@ -76,7 +76,7 @@ INSTANCE DIA_OCPAL_9_STANDARD(C_INFO)
 	condition	= DIA_OCPAL_9_STANDARD_Condition;
 	information	= DIA_OCPAL_9_STANDARD_Info;
 	permanent	= TRUE;
-	description = "Comment Áa se passe ?";
+	description = "Comment √ßa se passe ?";
 };
                        
 func INT DIA_OCPAL_9_STANDARD_Condition()
@@ -86,22 +86,22 @@ func INT DIA_OCPAL_9_STANDARD_Condition()
 
 FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 {	
-	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Comment Áa se passe ?
+	AI_Output (other, self, "DIA_OCPAL_4_STANDARD_15_00"); //Comment √ßa se passe ?
 		
 	if (Kapitel <= 3)
 	{
-		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Les dragons nous ont encore attaquÈs ! Mais Innos nous protÈgera. Les crÈatures de BÈliar le paieront de leur sang !
+		AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_01"); //Les dragons nous ont encore attaqu√©s ! Mais Innos nous prot√©gera. Les cr√©atures de B√©liar le paieront de leur sang !
 	};
 
 	if (Kapitel == 4)
 	{
 		if (MIS_KilledDragons < 4)
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Des chasseurs de dragons ! Ils auraient d˚ nous envoyer des paladins !
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_02"); //Des chasseurs de dragons ! Ils auraient d√ª nous envoyer des paladins !
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //Maintenant que nous sommes dÈbarrassÈs de ces dragons, on peut s'occuper des orques !
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_03"); //Maintenant que nous sommes d√©barrass√©s de ces dragons, on peut s'occuper des orques !
 		};
 	};
 
@@ -113,7 +113,7 @@ FUNC VOID DIA_OCPAL_9_STANDARD_Info()
 		}
 		else
 		{
-			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Trahison ! La porte n'aurait jamais d˚ s'ouvrir. Mort aux traÓtres !
+			AI_Output (self,other,"DIA_OCPAL_4_STANDARD_09_05"); //Trahison ! La porte n'aurait jamais d√ª s'ouvrir. Mort aux tra√Ætres !
 		};
 	};
 };

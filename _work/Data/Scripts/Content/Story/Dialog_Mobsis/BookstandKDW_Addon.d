@@ -22,7 +22,7 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 
 					Doc_PrintLine	( nDocID,  0, "Les Cercles de l'eau"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Les runes de l'eau et les ingrédients nécessaires à leur création.");
+					Doc_PrintLines	( nDocID,  0, "Les runes de l'eau et les ingrÃ©dients nÃ©cessaires Ã  leur crÃ©ation.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					Doc_PrintLine	( nDocID,  0, "Tornade");
@@ -37,12 +37,12 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  0, "Aigue-marine");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Tempête");
+					Doc_PrintLine	( nDocID,  0, "TempÃªte");
 					Doc_PrintLine	( nDocID,  0, "Quartz");
 					Doc_PrintLine	( nDocID,  0, "Ailes d'une mouche sanguine");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Démon de l'eau");
+					Doc_PrintLine	( nDocID,  0, "DÃ©mon de l'eau");
 					Doc_PrintLine	( nDocID,  0, "Aigue-marine");
 					Doc_PrintLine	( nDocID,  0, "Cristal de roche");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -51,11 +51,11 @@ FUNC VOID Use_Runemaking_KDW_CIRC1_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 	};
 };

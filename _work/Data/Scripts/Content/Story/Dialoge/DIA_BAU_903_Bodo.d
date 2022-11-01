@@ -29,7 +29,7 @@ INSTANCE DIA_Bodo_Hallo   (C_INFO)
 	condition   = DIA_Bodo_Hallo_Condition;
 	information = DIA_Bodo_Hallo_Info;
 	permanent   = TRUE;
-	description = "Comment ça va ?";
+	description = "Comment Ã§a va ?";
 };
 FUNC INT DIA_Bodo_Hallo_Condition()
 {
@@ -37,11 +37,11 @@ FUNC INT DIA_Bodo_Hallo_Condition()
 };
 FUNC VOID DIA_Bodo_Hallo_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Hallo_15_00"); //Comment ça se passe ?
+	AI_Output (other, self, "DIA_Bodo_Hallo_15_00"); //Comment Ã§a se passe ?
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //La milice nous persécute depuis trop longtemps. Maintenant que les mercenaires sont avec nous, elle n'osera pas pointer le bout de son nez.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Si le roi croit qu'il peut en faire à sa guise, nous ne l'acceptons plus.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_01"); //La milice nous persÃ©cute depuis trop longtemps. Maintenant que les mercenaires sont avec nous, elle n'osera pas pointer le bout de son nez.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_02"); //Si le roi croit qu'il peut en faire Ã  sa guise, nous ne l'acceptons plus.
 	};
 	
 	if (other.guild == GIL_SLD)
@@ -59,8 +59,8 @@ FUNC VOID DIA_Bodo_Hallo_Info()
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{	
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Les troupes du roi ne sont pas vraiment les bienvenues à la ferme.
-		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //Beaucoup de gens ici accepteront de vous parler malgré tout mais vous risquez de ne pas être très populaire.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_05"); //Les troupes du roi ne sont pas vraiment les bienvenues Ã  la ferme.
+		AI_Output (self, other, "DIA_Bodo_Hallo_12_06"); //Beaucoup de gens ici accepteront de vous parler malgrÃ© tout mais vous risquez de ne pas Ãªtre trÃ¨s populaire.
 	};
 };
 
@@ -74,7 +74,7 @@ INSTANCE DIA_Bodo_Bauernaufstand   (C_INFO)
 	condition   = DIA_Bodo_Bauernaufstand_Condition;
 	information = DIA_Bodo_Bauernaufstand_Info;
 	permanent   = FALSE;
-	description = "En ville, ils parlent d'une révolte de paysans !";
+	description = "En ville, ils parlent d'une rÃ©volte de paysans !";
 };
 FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 {
@@ -82,9 +82,9 @@ FUNC INT DIA_Bodo_Bauernaufstand_Condition()
 };
 FUNC VOID DIA_Bodo_Bauernaufstand_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //En ville, ils parlent d'une révolte paysanne !
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //C'est absurde. Nous ne faisons que défendre ce pour quoi nous avons tant travaillé.
-	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //Il est vrai que la guerre se fait sur le dos des paysans. Mais Onar refuse de faire quoi que ce soit pendant que le roi nous saigne à blanc.
+	AI_Output (other, self, "DIA_Bodo_Bauernaufstand_15_00"); //En ville, ils parlent d'une rÃ©volte paysanne !
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_01"); //C'est absurde. Nous ne faisons que dÃ©fendre ce pour quoi nous avons tant travaillÃ©.
+	AI_Output (self, other, "DIA_Bodo_Bauernaufstand_12_02"); //Il est vrai que la guerre se fait sur le dos des paysans. Mais Onar refuse de faire quoi que ce soit pendant que le roi nous saigne Ã  blanc.
 };
 
 // ************************************************************
@@ -97,7 +97,7 @@ INSTANCE DIA_Bodo_Bett   (C_INFO)
 	condition   = DIA_Bodo_Bett_Condition;
 	information = DIA_Bodo_Bett_Info;
 	permanent   = FALSE;
-	description = "Y a-t-il un endroit où je puisse me reposer dans le coin ?";
+	description = "Y a-t-il un endroit oÃ¹ je puisse me reposer dans le coin ?";
 };
 FUNC INT DIA_Bodo_Bett_Condition()
 {
@@ -105,9 +105,9 @@ FUNC INT DIA_Bodo_Bett_Condition()
 };
 FUNC VOID DIA_Bodo_Bett_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //Y a-t-il un endroit dans le coin où je puisse me reposer ?
-	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Si vous cherchez un endroit où dormir allez dans la grange. Mais ne vous affalez pas par erreur sur le lit d'un mercenaire.
-	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Onar s'assure qu'ils nous laissent tranquilles mais, avec les étrangers qui n'appartiennent pas à la ferme, les mercenaires peuvent faire ce qu'ils veulent.
+	AI_Output (other, self, "DIA_Bodo_Bett_15_00"); //Y a-t-il un endroit dans le coin oÃ¹ je puisse me reposer ?
+	AI_Output (self, other, "DIA_Bodo_Bett_12_01"); //Si vous cherchez un endroit oÃ¹ dormir allez dans la grange. Mais ne vous affalez pas par erreur sur le lit d'un mercenaire.
+	AI_Output (self, other, "DIA_Bodo_Bett_12_02"); //Onar s'assure qu'ils nous laissent tranquilles mais, avec les Ã©trangers qui n'appartiennent pas Ã  la ferme, les mercenaires peuvent faire ce qu'ils veulent.
 };
 
 // ************************************************************
@@ -120,7 +120,7 @@ INSTANCE DIA_Bodo_Cipher   (C_INFO)
 	condition   = DIA_Bodo_Cipher_Condition;
 	information = DIA_Bodo_Cipher_Info;
 	permanent   = FALSE;
-	description = "Cipher dit que quelqu'un lui a volé un paquet d'herbes des marais.";
+	description = "Cipher dit que quelqu'un lui a volÃ© un paquet d'herbes des marais.";
 };
 FUNC INT DIA_Bodo_Cipher_Condition()
 {
@@ -132,12 +132,12 @@ FUNC INT DIA_Bodo_Cipher_Condition()
 };
 FUNC VOID DIA_Bodo_Cipher_Info()
 {
-	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Cipher m'a dit que quelqu'un lui avait volé un paquet d'herbes...
+	AI_Output (other, self, "DIA_Bodo_Cipher_15_00"); //Cipher m'a dit que quelqu'un lui avait volÃ© un paquet d'herbes...
 	AI_Output (self, other, "DIA_Bodo_Cipher_12_01"); //Et ?
 	AI_Output (other, self, "DIA_Bodo_Cipher_15_02"); //Il pense que c'est vous.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Oh ! C'est pour ça qu'il me regarde avec cet air stupide.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //Je me suis montré extrêmement amical avec lui ces derniers temps car il semble avoir eu des problèmes.
-	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //Mais je ne pouvais rien faire. Je voulais me montrer amical et lui, il me lançait des regards pleins de menaces.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_03"); //Oh ! C'est pour Ã§a qu'il me regarde avec cet air stupide.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_04"); //Je me suis montrÃ© extrÃªmement amical avec lui ces derniers temps car il semble avoir eu des problÃ¨mes.
+	AI_Output (self, other, "DIA_Bodo_Cipher_12_05"); //Mais je ne pouvais rien faire. Je voulais me montrer amical et lui, il me lanÃ§ait des regards pleins de menaces.
 };
 
 // ************************************************************
@@ -167,7 +167,7 @@ FUNC VOID DIA_Bodo_WeedOrElse_Info()
 	B_GiveInvItems (self, other, itmi_joint, 1);
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Vous savez que les mercenaires d'Onar nous protègent, n'est-ce pas ?
+		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_02"); //Vous savez que les mercenaires d'Onar nous protÃ¨gent, n'est-ce pas ?
 		AI_Output (self, other, "DIA_Bodo_WeedOrElse_12_03"); //Alors ne faites rien que vous puissiez regretter.
 	};
 };

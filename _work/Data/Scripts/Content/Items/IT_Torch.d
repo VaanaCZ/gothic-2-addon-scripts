@@ -5,7 +5,7 @@
 const int	Value_Fackel			=	2;
 
 // ************************************************************************************************
-// 	Fackel muﬂ ihre Instanznamen behalten
+// 	Fackel mu√ü ihre Instanznamen behalten
 // ************************************************************************************************
 INSTANCE ItLsTorch(C_Item)
 {
@@ -28,7 +28,7 @@ INSTANCE ItLsTorch(C_Item)
 /******************************************************************************************/
 INSTANCE ItLsTorchburning(C_Item)
 {
-	name 				=	"Une torche allumÈe";
+	name 				=	"Une torche allum√©e";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_TORCH;
@@ -54,7 +54,7 @@ INSTANCE ItLsTorchburned(C_Item)
 
 	visual 				=	"ItLs_Torchburned_01.3ds";
 	material 			=	MAT_WOOD;
-	TEXT[3]				=   "Une torche consumÈe.";
+	TEXT[3]				=   "Une torche consum√©e.";
 	description			= 	name;
 };
 // *****************

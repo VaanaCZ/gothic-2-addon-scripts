@@ -33,7 +33,7 @@ PROTOTYPE Mst_Default_Dragon_Fire(C_Npc)
 //	damage		[DAM_INDEX_EDGE]	=	0;
 //	damage		[DAM_INDEX_POINT]	=	0;
 	damage		[DAM_INDEX_FIRE]	=	149;
-	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt für Fire+Fly
+	damage		[DAM_INDEX_FLY]		=	1; //Opfer fliegt fÃ¼r Fire+Fly
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----	
@@ -73,7 +73,7 @@ func void B_SetVisuals_Dragon_Fire()
 
 INSTANCE Dragon_Fire	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Féomathar";
+	name				=	"FÃ©omathar";
 	//flags				= 	NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);
@@ -85,7 +85,7 @@ INSTANCE Dragon_Fire	(Mst_Default_Dragon_Fire)
 
 INSTANCE Dragon_Fire_Island	(Mst_Default_Dragon_Fire)
 {
-	name				=	"Féodaron";
+	name				=	"FÃ©odaron";
 	flags				   			= 	NPC_FLAG_IMMORTAL;
 	B_SetVisuals_Dragon_Fire();
 	Npc_SetToFistMode(self);

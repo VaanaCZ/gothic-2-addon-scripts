@@ -151,7 +151,7 @@ INSTANCE Zombie_Addon_Knecht	(Mst_Default_Zombie)
 INSTANCE Zombie_Addon_Bloodwyn	(Mst_Default_Zombie)
 {
 	
-	name = "Bloodwyn ÈveillÈ";
+	name = "Bloodwyn √©veill√©";
 	level							=	25;
 	
 	attribute	[ATR_HITPOINTS_MAX]	=	1600;
@@ -341,7 +341,7 @@ INSTANCE MayaZombie04		(Mst_Default_Zombie)
 	Npc_SetToFistMode(self);
 };
 //*************
-//	Einer der Totenw‰chter  	
+//	Einer der Totenw√§chter  	
 //*************
 
 INSTANCE MayaZombie04_Totenw	(Mst_Default_Zombie) 

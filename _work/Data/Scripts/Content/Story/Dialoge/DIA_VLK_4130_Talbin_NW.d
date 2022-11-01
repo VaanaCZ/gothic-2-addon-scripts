@@ -41,7 +41,7 @@ instance DIA_Talbin_NW		(C_INFO)
 	condition	 = 	DIA_Talbin_NW_Condition;
 	information	 = 	DIA_Talbin_NW_Info;
 
-	description	 = 	"Ce n'était pas si difficile, n'est-ce pas ?";
+	description	 = 	"Ce n'Ã©tait pas si difficile, n'est-ce pas ?";
 };
 
 func int DIA_Talbin_NW_Condition ()
@@ -51,9 +51,9 @@ func int DIA_Talbin_NW_Condition ()
 
 func void DIA_Talbin_NW_Info ()
 {
-	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Alors, le franchissement du col n'était pas si terrible que ça, si ?
-	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Merci de m'avoir sauvé.
-	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Tenez, j'ai trouvé cette pierre au niveau du col. Peut-être vous sera-t-elle utile...
+	AI_Output			(other, self, "DIA_Talbin_NW_15_00"); //Alors, le franchissement du col n'Ã©tait pas si terrible que Ã§a, siÂ ?
+	AI_Output			(self, other, "DIA_Talbin_NW_07_01"); //Merci de m'avoir sauvÃ©.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_02"); //Tenez, j'ai trouvÃ© cette pierre au niveau du col. Peut-Ãªtre vous sera-t-elle utile...
 
 	if (hero.guild == GIL_KDF)
 	{
@@ -68,7 +68,7 @@ func void DIA_Talbin_NW_Info ()
 	B_GiveInvItems (self, other, ItMi_Nugget, 1);					
 	};
 	
-	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Qu'Innos vous protège.
+	AI_Output			(self, other, "DIA_Talbin_NW_07_05"); //Qu'Innos vous protÃ¨ge.
 
 	AI_StopProcessInfos (self);
 

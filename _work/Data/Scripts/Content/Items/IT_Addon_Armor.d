@@ -12,7 +12,7 @@ const int VALUE_ITAR_Bloodwyn_Addon 	= 1300;
 // ******************************************************
 INSTANCE ITAR_PIR_L_Addon (C_Item)
 {
-	name 					=	"Vêtements de pirate";
+	name 					=	"VÃªtements de pirate";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -94,7 +94,7 @@ INSTANCE ITAR_PIR_M_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_PIR_H_Addon (C_Item)
 {
-	name 					=	"Vêtements de capitaine";
+	name 					=	"VÃªtements de capitaine";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -300,7 +300,7 @@ INSTANCE ITAR_RANGER_Addon (C_Item)
 // ******************************************************
 INSTANCE ITAR_Fake_RANGER (C_Item)
 {
-	name 					=	"Armure brisée";
+	name 					=	"Armure brisÃ©e";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -330,7 +330,7 @@ INSTANCE ITAR_Fake_RANGER (C_Item)
 // ******************************************************
 INSTANCE ITAR_KDW_L_Addon (C_Item)
 {
-	name 					=	"CoW légère";
+	name 					=	"CoW lÃ©gÃ¨re";
 
 	mainflag 				=	ITEM_KAT_ARMOR;
 	flags 					=	0;
@@ -453,7 +453,7 @@ INSTANCE ITAR_MayaZombie_Addon (C_Item)
 
 ////////////////////////////////////////////////////////////////////////////////
 //
-//	Magische Rüstungen
+//	Magische RÃ¼stungen
 //
 
 

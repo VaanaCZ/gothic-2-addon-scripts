@@ -2,7 +2,7 @@
 // ZS_Guard_Passage
 // ----------------
 // Torwachen erhalten in der AI an einigen Stellen eine Sonderbehandlung
-// Torwachen halten Spieler über Important-Dialogmodule auf
+// Torwachen halten Spieler Ã¼ber Important-Dialogmodule auf
 // *********************************************************************
 
 func void ZS_Guard_Passage ()
@@ -11,11 +11,11 @@ func void ZS_Guard_Passage ()
 	
 	B_ResetAll (self);
 	
-	// ------ PercTime überschreiben ------
+	// ------ PercTime Ã¼berschreiben ------
 	Npc_SetPercTime		(self, 0.1);
 	
 	AI_StandUp		(self);				
-	AI_SetWalkmode 	(self,NPC_WALK);			// Walkmode für den Zustand
+	AI_SetWalkmode 	(self,NPC_WALK);			// Walkmode fÃ¼r den Zustand
 	AI_GotoWP		(self, self.wp);			// Gehe zum Tagesablaufstart
 	if (Npc_GetDistToNpc(self, hero) > PERC_DIST_DIALOG)
 	{

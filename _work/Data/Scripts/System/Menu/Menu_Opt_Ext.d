@@ -10,8 +10,8 @@
 // Ambient Vobs			(ZTOGGLE RENDERAMBIENTVOBS)
 // Env Mapping			(ZTOGGLE ENVMAP)
 
-// optional vielleicht später noch
-// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nötig auf älteren Karten und evtl. Performance Gewinn (TEST!)
+// optional vielleicht spÃ¤ter noch
+// Radial Fog			(TODO):		bisher nur in der INI einstellbar, vielleicht nÃ¶tig auf Ã¤lteren Karten und evtl. Performance Gewinn (TEST!)
 // Wolkenschatten		(TODO):     bisher nur in der INI einstellbar, bringt Performance wenn aus und es regnet
 
 INSTANCE MENU_OPT_EXT(C_MENU_DEF)
@@ -52,7 +52,7 @@ INSTANCE MENU_OPT_EXT(C_MENU_DEF)
 
 INSTANCE MENUITEM_EXT_HEADLINE(C_MENU_ITEM_DEF) 
 {
-	text[0]		=	"Configuration avancée";
+	text[0]		=	"Configuration avancÃ©e";
 	type		=	MENU_ITEM_TEXT;
 	// Position und Dimension	
 	posx		=	0;		posy		=	MENU_TITLE_Y;
@@ -71,7 +71,7 @@ INSTANCE MENUITEM_EXT_FFT(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Vagues sur l'eau";
-	text[1]		= 	"Activer/désactiver ondulation des vagues"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver ondulation des vagues"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*0;
 	dimx		=	3000;	dimy		=	750;
@@ -102,7 +102,7 @@ INSTANCE MENUITEM_EXT_WATERFADE(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Fondu de l'eau";
-	text[1]		= 	"Activer/désactiver fondu de l'eau"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver fondu de l'eau"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*1;
 	dimx		=	3000;	dimy		=	750;
@@ -133,7 +133,7 @@ INSTANCE MENUITEM_EXT_OBJWIND(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Mouvements du vent";
-	text[1]		= 	"Activer/désactiver vent sur objets"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver vent sur objets"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*2;
 	dimx		=	3000;	dimy		=	750;
@@ -198,7 +198,7 @@ INSTANCE MENUITEM_EXT_CLOUDSHADOW(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Ombres nuages";
-	text[1]		= 	"Activer/désactiver ombres portées des nuages"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver ombres portÃ©es des nuages"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*3;
 	dimx		=	3500;	dimy		=	750;
@@ -230,7 +230,7 @@ INSTANCE MENUITEM_EXT_AMBIENTPFX(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Effets d'ambiance";
-	text[1]		= 	"Activer/désactiver effets d'ambiance inutiles"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver effets d'ambiance inutiles"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*4;
 	dimx		=	3000;	dimy		=	750;
@@ -262,7 +262,7 @@ INSTANCE MENUITEM_EXT_ENVMAP(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Reflets";
-	text[1]		= 	"Activer/désactiver les reflets"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver les reflets"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*5;
 	dimx		=	3000;	dimy		=	750;
@@ -294,7 +294,7 @@ INSTANCE MENUITEM_EXT_RADIALFOG(C_MENU_ITEM_DEF)
 {
 	backpic		=	MENU_ITEM_BACK_PIC;
 	text[0]		=	"Zones de brouillard";
-	text[1]		= 	"Activer/désactiver les zones de brouillard"; // Kommentar
+	text[1]		= 	"Activer/dÃ©sactiver les zones de brouillard"; // Kommentar
 	// Position und Dimension	
 	posx		=	1000;	posy		=	MENU_START_Y + MENU_DY*6;
 	dimx		=	3000;	dimy		=	750;

@@ -76,11 +76,11 @@ func int DIA_Borka_PISSOFF_Condition ()
 };
 func void DIA_Borka_PISSOFF_Info ()
 {
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //Hé, vous ! Qu'est-ce que vous fabriquez ? J'ignore ce que vous cherchez, mais vous aurez tout le temps de vous y intéresser... après.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Vous voilà devant la perle de Khorinis, la Lanterne Rouge. Vous ne trouverez pas de meilleure maison de passe dans tout Myrtana.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //Les marins viennent des quatre coins du monde connu pour passer quelques nuits à la Lanterne Rouge.
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //Et aujourd'hui, c'est vous qui avez la chance, que dis-je... l'honneur, de passer la nuit avec Nadja, la plus passionnée des fleurs divines !
-	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //Entrez et vous connaîtrez des délices dont les autres n'osent même pas rêver !
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_00");  //HÃ©, vousÂ ! Qu'est-ce que vous fabriquezÂ ? J'ignore ce que vous cherchez, mais vous aurez tout le temps de vous y intÃ©resser... aprÃ¨s.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_01");  //Vous voilÃ  devant la perle de Khorinis, la Lanterne Rouge. Vous ne trouverez pas de meilleure maison de passe dans tout Myrtana.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_02");  //Les marins viennent des quatre coins du monde connu pour passer quelques nuits Ã  la Lanterne Rouge.
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_03");  //Et aujourd'hui, c'est vous qui avez la chance, que dis-je... l'honneur, de passer la nuit avec Nadja, la plus passionnÃ©e des fleurs divinesÂ !
+	AI_Output (self, other,"DIA_Borka_PISSOFF_11_04");  //Entrez et vous connaÃ®trez des dÃ©lices dont les autres n'osent mÃªme pas rÃªverÂ !
 	
 	AI_StopProcessInfos (self);
 };
@@ -109,8 +109,8 @@ func int DIA_Borka_TROUBLE_Condition ()
 };
 func void DIA_Borka_TROUBLE_Info ()
 {
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Qu'est-ce que vous attendez ? Entrez faire la connaissance de notre Nadja.
-	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Cette fleur nocturne brûlante de passion donnera un nouveau sens à votre existence.
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_00"); //Qu'est-ce que vous attendezÂ ? Entrez faire la connaissance de notre Nadja.
+	AI_Output (self, other, "DIA_Borka_TROUBLE_11_01"); //Cette fleur nocturne brÃ»lante de passion donnera un nouveau sens Ã  votre existence.
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -123,7 +123,7 @@ instance DIA_Borka_Smoke		(C_INFO)
 	condition	 = 	DIA_Borka_Smoke_Condition;
 	information	 = 	DIA_Borka_Smoke_Info;
 	permanent	 =  TRUE;
-	description	 =  "Savez-vous où je peux acheter de l'herbe ?";
+	description	 =  "Savez-vous oÃ¹ je peux acheter de l'herbe ?";
 };
 
 func int DIA_Borka_Smoke_Condition ()
@@ -136,8 +136,8 @@ func int DIA_Borka_Smoke_Condition ()
 };
 func void DIA_Borka_Smoke_Info ()
 {
-	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Savez-vous où je pourrais acheter de l'herbe ?
-	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //Non. Tirez-vous !
+	AI_Output (other, self, "DIA_Borka_Smoke_15_00"); //Savez-vous oÃ¹ je pourrais acheter de l'herbeÂ ?
+	AI_Output (self, other, "DIA_Borka_Smoke_11_01"); //Non. Tirez-vousÂ !
 	AI_StopProcessInfos (self);
 };
 ///////////////////////////////////////////////////////////////////////
@@ -166,7 +166,7 @@ func void DIA_Borka_BUYHERB_Info ()
 {
 	var C_ITEM heroArmor; heroArmor = Npc_GetEquippedArmor(other);
 	
-	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //Je me suis laissé dire que vous vendiez de l'herbe...
+	AI_Output (other, self, "DIA_Borka_BUYHERB_15_00"); //Je me suis laissÃ© dire que vous vendiez de l'herbe...
 	
 	if (Hlp_IsItem (heroArmor, ItAR_MIl_L) == TRUE) 
 	{
@@ -183,8 +183,8 @@ func void DIA_Borka_BUYHERB_Info ()
 };
 FUNC VOID DIA_Borka_BUYHERB_Egal ()
 {
-	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //Là n'est pas la question.
-	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Je veux juste savoir qui vous a dit ça afin de décider si je peux vous faire confiance.
+	AI_Output	(other, self, "DIA_Borka_BUYHERB_Egal_15_00"); //LÃ  n'est pas la question.
+	AI_Output	(self, other, "DIA_Borka_BUYHERB_Egal_11_01"); //Je veux juste savoir qui vous a dit Ã§a afin de dÃ©cider si je peux vous faire confiance.
 	
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
 	Info_AddChoice		(DIA_Borka_BUYHERB,"Disons Nadja.",DIA_Borka_BUYHERB_Nadja);
@@ -193,7 +193,7 @@ FUNC VOID DIA_Borka_BUYHERB_Egal ()
 FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 {
 	AI_Output (other, self, "DIA_Borka_BUYHERB_NADJA_15_00"); //Nadja.
-	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Tiens, la petite oiselle a décidé de chanter ? Il ne faut pas croire tout ce qu'elle raconte, vous savez.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_NADJA_11_01"); //Tiens, la petite oiselle a dÃ©cidÃ© de chanterÂ ? Il ne faut pas croire tout ce qu'elle raconte, vous savez.
 	
 	Nadja_Victim = TRUE; 
 	Undercover_Failed = TRUE;
@@ -201,9 +201,9 @@ FUNC VOID DIA_Borka_BUYHERB_NADJA ()
 };
 FUNC VOID DIA_Borka_BUYHERB_Deal ()
 {
-	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //Bon, vous voulez faire affaire, oui ou non ?
+	AI_Output (other, self, "DIA_Borka_BUYHERB_Deal_15_00"); //Bon, vous voulez faire affaire, oui ou nonÂ ?
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //D'accord. Donnez-moi 50 pièces d'or et vous aurez votre herbe. Oh, et je ne marchande pas.
+	AI_Output (self, other, "DIA_Borka_BUYHERB_Deal_11_01"); //D'accord. Donnez-moi 50 piÃ¨ces d'or et vous aurez votre herbe. Oh, et je ne marchande pas.
 	Info_ClearChoices 	(DIA_Borka_BUYHERB);
 	Borka_Deal = TRUE;
 };	
@@ -217,7 +217,7 @@ instance DIA_Borka_SECOND_CHANCE		(C_INFO)
 	condition	 = 	DIA_Borka_SECOND_CHANCE_Condition;
 	information	 = 	DIA_Borka_SECOND_CHANCE_Info;
 	permanent	 =  TRUE;  	
-	description	 = 	"Faisons affaire (donner 50 pièces d'or).";
+	description	 = 	"Faisons affaire (donner 50 piÃ¨ces d'or).";
 };
 func int DIA_Borka_SECOND_CHANCE_Condition ()
 {	
@@ -234,9 +234,9 @@ func void DIA_Borka_SECOND_CHANCE_Info ()
 {
 	AI_Output (other, self, "DIA_Borka_SECOND_CHANCE_15_00"); //D'accord, voici l'argent.
 	B_GiveInvItems (hero, self, ItMi_Gold, 50);
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //Très bien...
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_01"); //TrÃ¨s bien...
 	AI_PlayAni (self, "T_SEARCH");
-	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //Et voici de la bonne herbe bien fraîche.
+	AI_Output (self, other, "DIA_Borka_SECOND_CHANCE_11_02"); //Et voici de la bonne herbe bien fraÃ®che.
 	B_GiveInvItems (self, hero, ItMi_Joint, 1);
 	Borka_Deal = 2;
 	AI_StopProcessInfos (self);

@@ -36,7 +36,7 @@ PROTOTYPE Mst_Default_Sheep(C_Npc)
 //	damage		[DAM_INDEX_MAGIC]	=	0;
 
 	//----- Kampf-Taktik ----
-	//fight_tactic					= FAI_Giant_Rat;//Schafe k‰mpfen nicht!!
+	//fight_tactic					= FAI_Giant_Rat;//Schafe k√§mpfen nicht!!
 
 	//----- Senses & Ranges ----
 	senses			= 	SENSE_HEAR | SENSE_SEE | SENSE_SMELL;
@@ -103,7 +103,7 @@ INSTANCE Follow_Sheep	(Mst_Default_Sheep)
 {
 	name						= "Betsy";
 	
-	aivar[AIV_ToughGuy] = TRUE; //Liesel knn getˆtet werden, ohne daﬂ jemand sich anpiﬂt!
+	aivar[AIV_ToughGuy] = TRUE; //Liesel knn get√∂tet werden, ohne da√ü jemand sich anpi√üt!
 		
 	B_SetVisuals_Sheep();
 	Npc_SetToFistMode(self);

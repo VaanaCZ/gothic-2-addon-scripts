@@ -46,7 +46,7 @@ const int TwoHStonePlate 		= 7;
 const int BowStonePlate 		= 8;
 const int CrsBowStonePlate 		= 9;
 
-const string StPl_MagicAuraText = "La tablette de pierre possède une aura magique.";
+const string StPl_MagicAuraText = "La tablette de pierre possÃ¨de une aura magique.";
 const string StPl_StandardText 	= "";
 
 //------------------------------------------------------------------------------------------
@@ -376,7 +376,7 @@ func void Use_StrStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_DexStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablette de pierre de la dextérité I";
+	description 		=	"Tablette de pierre de la dextÃ©ritÃ© I";
 	on_state[0]			=   Use_DexStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -387,7 +387,7 @@ func void Use_DexStonePlate1 ()
 };
 instance ItWr_DexStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablette de pierre de la dextérité II";
+	description 		=	"Tablette de pierre de la dextÃ©ritÃ© II";
 	on_state[0]			=   Use_DexStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -398,7 +398,7 @@ func void Use_DexStonePlate2 ()
 };
 instance ItWr_DexStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre de la dextérité III";
+	description 		=	"Tablette de pierre de la dextÃ©ritÃ© III";
 	on_state[0]			=   Use_DexStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_02.3DS";	 
 };
@@ -412,7 +412,7 @@ func void Use_DexStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_HitPointStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablette de pierre de l'énergie vitale I";
+	description 		=	"Tablette de pierre de l'Ã©nergie vitale I";
 	on_state[0]			=   Use_HitPointStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -423,7 +423,7 @@ func void Use_HitPointStonePlate1 ()
 };
 instance ItWr_HitPointStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre de l'énergie vitale II";
+	description 		=	"Tablette de pierre de l'Ã©nergie vitale II";
 	on_state[0]			=   Use_HitPointStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -434,7 +434,7 @@ func void Use_HitPointStonePlate2 ()
 };
 instance ItWr_HitPointStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre de l'énergie vitale III";
+	description 		=	"Tablette de pierre de l'Ã©nergie vitale III";
 	on_state[0]			=   Use_HitPointStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_03.3DS";	 
 };
@@ -487,7 +487,7 @@ func void Use_ManaStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_OneHStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre du combat à une main I";
+	description 		=	"Tablette de pierre du combat Ã  une main I";
 	on_state[0]			=   Use_OneHStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -498,7 +498,7 @@ func void Use_OneHStonePlate1 ()
 };
 instance ItWr_OneHStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablette de pierre du combat à une main II";
+	description 		=	"Tablette de pierre du combat Ã  une main II";
 	on_state[0]			=   Use_OneHStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -509,7 +509,7 @@ func void Use_OneHStonePlate2 ()
 };
 instance ItWr_OneHStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate  
 {
-	description 		=	"Tablette de pierre du combat à une main III";
+	description 		=	"Tablette de pierre du combat Ã  une main III";
 	on_state[0]			=   Use_OneHStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -523,7 +523,7 @@ func void Use_OneHStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_TwoHStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre du combat à deux mains I";
+	description 		=	"Tablette de pierre du combat Ã  deux mains I";
 	on_state[0]			=   Use_TwoHStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -534,7 +534,7 @@ func void Use_TwoHStonePlate1 ()
 };
 instance ItWr_TwoHStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablette de pierre du combat à deux mains II";
+	description 		=	"Tablette de pierre du combat Ã  deux mains II";
 	on_state[0]			=   Use_TwoHStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -545,7 +545,7 @@ func void Use_TwoHStonePlate2 ()
 };
 instance ItWr_TwoHStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: hat Malcom in der Tasche!
 {
-	description 		=	"Tablette de pierre du combat à deux mains III";
+	description 		=	"Tablette de pierre du combat Ã  deux mains III";
 	on_state[0]			=   Use_TwoHStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_05.3DS";	 
 };
@@ -595,7 +595,7 @@ func void Use_BowStonePlate3 ()
 //------------------------------------------------------------------------------------------
 instance ItWr_CrsBowStonePlate1_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate //Joly: in NW verteilt
 {
-	description 		=	"Tablette de pierre de l'arbalète I";
+	description 		=	"Tablette de pierre de l'arbalÃ¨te I";
 	on_state[0]			=   Use_CrsBowStonePlate1;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -606,7 +606,7 @@ func void Use_CrsBowStonePlate1 ()
 };
 instance ItWr_CrsBowStonePlate2_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre de l'arbalète II";
+	description 		=	"Tablette de pierre de l'arbalÃ¨te II";
 	on_state[0]			=   Use_CrsBowStonePlate2;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };
@@ -617,7 +617,7 @@ func void Use_CrsBowStonePlate2 ()
 };
 instance ItWr_CrsBowStonePlate3_Addon (Prototype_StonePlate)//Joly:neue Instancen auch unten eintragen!!!!!!!!!!!!!!!C_ScHasMagicStonePlate 
 {
-	description 		=	"Tablette de pierre de l'arbalète III";
+	description 		=	"Tablette de pierre de l'arbalÃ¨te III";
 	on_state[0]			=   Use_CrsBowStonePlate3;
 	visual 				=	"ItMi_StonePlate_PowerUp_04.3DS";	 
 };

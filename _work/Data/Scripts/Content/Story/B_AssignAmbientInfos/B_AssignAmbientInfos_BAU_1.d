@@ -43,9 +43,9 @@ FUNC INT DIA_BAU_1_JOIN_Condition()
 FUNC VOID DIA_BAU_1_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_1_JOIN_15_00"); //Dites-m'en plus au sujet des mercenaires.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01"); //Tout ce que je peux vous conseiller, c'est de les éviter.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02"); //Si votre tête ne revient pas à l'un d'entre eux, il peut vous casser la figure.
-	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03"); //Après, vous pouvez vous plaindre à Lee, mais vous aurez toujours le nez cassé.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_01"); //Tout ce que je peux vous conseiller, c'est de les Ã©viter.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_02"); //Si votre tÃªte ne revient pas Ã  l'un d'entre eux, il peut vous casser la figure.
+	AI_Output (self, other, "DIA_BAU_1_JOIN_01_03"); //AprÃ¨s, vous pouvez vous plaindre Ã  Lee, mais vous aurez toujours le nez cassÃ©.
 };
 
 // *************************************************************************
@@ -68,9 +68,9 @@ FUNC INT DIA_BAU_1_PEOPLE_Condition()
 FUNC VOID DIA_BAU_1_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_1_PEOPLE_15_00"); //Qui est le responsable ici ?
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01"); //C'est la ferme d'Onar. C'est lui qui prend toutes les décisions ici.
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02"); //Laissez-moi vous donner un conseil : ne provoquez pas un combat avec ses mercenaires. Il vaut mieux ne pas se frotter à eux.
-	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03"); //Sylvio, en particulier, est un gredin sournois. Mais leur chef, Lee, est réglo.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_01"); //C'est la ferme d'Onar. C'est lui qui prend toutes les dÃ©cisions ici.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_02"); //Laissez-moi vous donner un conseil : ne provoquez pas un combat avec ses mercenaires. Il vaut mieux ne pas se frotter Ã  eux.
+	AI_Output (self, other, "DIA_BAU_1_PEOPLE_01_03"); //Sylvio, en particulier, est un gredin sournois. Mais leur chef, Lee, est rÃ©glo.
 };
 
 // *************************************************************************
@@ -92,10 +92,10 @@ FUNC INT DIA_BAU_1_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00"); //Qu'y a-t-il dans la région ?
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01"); //Juste des champs et des fermes. Et un groupe de mercenaires. Mais ils sont presque tous à l'est, dans la ferme d'Onar.
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02"); //La ferme de Sékob est au nord mais ils ne s'y rendent que pour encaisser le loyer.
-	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03"); //Vous trouverez la piste qui mène à la ferme de Bengar vers le sud-ouest.
+	AI_Output (other, self, "DIA_BAU_1_LOCATION_15_00"); //Qu'y a-t-il dans la rÃ©gion ?
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_01"); //Juste des champs et des fermes. Et un groupe de mercenaires. Mais ils sont presque tous Ã  l'est, dans la ferme d'Onar.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_02"); //La ferme de SÃ©kob est au nord mais ils ne s'y rendent que pour encaisser le loyer.
+	AI_Output (self, other, "DIA_BAU_1_LOCATION_01_03"); //Vous trouverez la piste qui mÃ¨ne Ã  la ferme de Bengar vers le sud-ouest.
 };
 
 // *************************************************************************
@@ -119,17 +119,17 @@ FUNC VOID DIA_BAU_1_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_01"); //Onar a engagé des mercenaires pour se débarrasser des miliciens de la ville. Sinon, ils nous prendraient jusqu'à notre dernier mouton !
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_01"); //Onar a engagÃ© des mercenaires pour se dÃ©barrasser des miliciens de la ville. Sinon, ils nous prendraient jusqu'Ã  notre dernier mouton !
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_02"); //Pas grand-chose. Toujours la même chose. La milice, les orques et les fléaux des champs.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_02"); //Pas grand-chose. Toujours la mÃªme chose. La milice, les orques et les flÃ©aux des champs.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_03"); //Il se passe des choses étranges ici. Il y a quelques nuits, j'ai aperçu une silhouette sombre. Elle n'avait rien d'humain.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_03"); //Il se passe des choses Ã©tranges ici. Il y a quelques nuits, j'ai aperÃ§u une silhouette sombre. Elle n'avait rien d'humain.
 	};
 
 	if (Kapitel == 4)
@@ -139,7 +139,7 @@ FUNC VOID DIA_BAU_1_STANDARD_Info()
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_05"); //Les paladins se rendent dans la Vallée des mines. Qu'est-ce que cela signifie ? Il ne va plus rester personne pour contenir la milice.
+		AI_Output (self,other,"DIA_BAU_1_STANDARD_01_05"); //Les paladins se rendent dans la VallÃ©e des mines. Qu'est-ce que cela signifie ? Il ne va plus rester personne pour contenir la milice.
 	};
 };
 

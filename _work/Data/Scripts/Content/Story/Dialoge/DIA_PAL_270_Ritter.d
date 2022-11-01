@@ -43,17 +43,17 @@ func void DIA_Ritter_OUT_Info ()
 {
 	if (DIA_Ritter_OUT_NoPerm == FALSE)
 	{
-		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Vous venez de Khorinis, n'est-ce pas ? J'y retournerai quand tout sera terminé.
+		AI_Output			(self, other, "DIA_Ritter_OUT_06_00"); //Vous venez de Khorinis, n'est-ce pasÂ ? J'y retournerai quand tout sera terminÃ©.
 		DIA_Ritter_OUT_NoPerm = TRUE;
 	};
 	
 	if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //C'est un grand réconfort de vous avoir à notre côté, monsieur.
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_01"); //C'est un grand rÃ©confort de vous avoir Ã  notre cÃ´tÃ©, monsieur.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Ritter_OUT_06_02"); //Nous allons nous en sortir. Nous ramènerons le minerai à Khorinis et tout le monde nous fêtera comme nous le méritons.
+			AI_Output			(self, other, "DIA_Ritter_OUT_06_02"); //Nous allons nous en sortir. Nous ramÃ¨nerons le minerai Ã  Khorinis et tout le monde nous fÃªtera comme nous le mÃ©ritons.
 		};
 };
 

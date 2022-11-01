@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Demon(C_Npc)			
 {
 	//---- Monster ----
-	name							=	"Démon";
+	name							=	"DÃ©mon";
 	guild							=	GIL_DEMON;
 	aivar[AIV_MM_REAL_ID]			= 	ID_DEMON;
 	level							=	50;
@@ -81,7 +81,7 @@ INSTANCE Demon (Mst_Default_Demon)
 
 INSTANCE Summoned_Demon (Mst_Default_Demon)
 {
-	name							= "Démon convoqué";
+	name							= "DÃ©mon convoquÃ©";
 	guild							= GIL_SUMMONED_DEMON;
 	aivar[AIV_MM_REAL_ID]			= ID_SUMMONED_DEMON;
 	level							= 0;

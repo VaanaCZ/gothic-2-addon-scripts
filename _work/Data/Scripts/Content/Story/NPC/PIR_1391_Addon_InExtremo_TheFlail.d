@@ -6,7 +6,7 @@ instance PIR_1391_Addon_InExtremo_TheFlail(Npc_Default)
 {
 	//-------- primary data --------
 	
-	name =					"Le fléau";
+	name =					"Le flÃ©au";
 	npctype		= 			npctype_main;
    	guild =					GIL_NONE;
 	level =					4;

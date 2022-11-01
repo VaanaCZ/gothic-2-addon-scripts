@@ -1,5 +1,5 @@
 // ************************************************************************************************
-// Wert von Tiertrophäen
+// Wert von TiertrophÃ¤en
 // ************************************************************************************************
 
 //Addon
@@ -48,7 +48,7 @@ const int	Value_Keilerfur				= 	 15;
 /*****************ADDON*************************************************************************/
 INSTANCE ItAt_Addon_BCKopf (C_Item)
 {
-	name 				=	"Tête";
+	name 				=	"TÃªte";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -59,7 +59,7 @@ INSTANCE ItAt_Addon_BCKopf (C_Item)
 	material 			=	MAT_LEATHER;
 	
 
-	description			= 	"Tête de la mante religieuse";
+	description			= 	"TÃªte de la mante religieuse";
 	TEXT[0]				= 	"";
 	TEXT[2]				= 	"";
 	TEXT[3]				= 	"";
@@ -136,7 +136,7 @@ INSTANCE ItAt_WolfFur (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_BugMandibles (C_Item)
 {
-	name 				=	"Mandibules de fléau des champs";
+	name 				=	"Mandibules de flÃ©au des champs";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -230,9 +230,9 @@ INSTANCE ItAt_CrawlerMandibles (C_Item)
 	
 	description			= 	name;
 	
-	TEXT[0]				= 	"On peut écarter les mandibules";
-	TEXT[1]				= 	"pour boire la sécrétion qu'elles contiennent.";
-	TEXT[2]				= 	"Cela régénère le potentiel de magie.";
+	TEXT[0]				= 	"On peut Ã©carter les mandibules";
+	TEXT[1]				= 	"pour boire la sÃ©crÃ©tion qu'elles contiennent.";
+	TEXT[2]				= 	"Cela rÃ©gÃ©nÃ¨re le potentiel de magie.";
 	TEXT[3]				= 	"L'effet est temporaire.";
 	TEXT[5]				= 	NAME_Value;	COUNT[5]	= value;
 };
@@ -423,7 +423,7 @@ INSTANCE ItAt_CrawlerPlate (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowFur (C_Item)
 {
-	name 				=	"Peau de bête des ombres";
+	name 				=	"Peau de bÃªte des ombres";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -523,7 +523,7 @@ INSTANCE ItAt_WaranFiretongue (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_ShadowHorn (C_Item)
 {
-	name 				=	"Corne de bête des ombres";
+	name 				=	"Corne de bÃªte des ombres";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -563,7 +563,7 @@ INSTANCE ItAt_SharkTeeth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_TrollTooth (C_Item)
 {
-	name 				=	"Défense de troll";
+	name 				=	"DÃ©fense de troll";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -586,7 +586,7 @@ INSTANCE ItAt_TrollTooth (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_StoneGolemHeart (C_Item)
 {
-	name 				=	"Cœur d'un golem de pierre";
+	name 				=	"CÅ“ur d'un golem de pierre";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -608,7 +608,7 @@ INSTANCE ItAt_StoneGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FireGolemHeart (C_Item)
 {
-	name 				=	"Cœur d'un golem de feu";
+	name 				=	"CÅ“ur d'un golem de feu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -630,7 +630,7 @@ INSTANCE ItAt_FireGolemHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IceGolemHeart (C_Item)
 {
-	name 				=	"Cœur d'un golem de glace";
+	name 				=	"CÅ“ur d'un golem de glace";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -691,7 +691,7 @@ INSTANCE ItAt_SkeletonBone (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_DemonHeart (C_Item)
 {
-	name 				=	"Cœur d'un démon";
+	name 				=	"CÅ“ur d'un dÃ©mon";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI;
@@ -710,11 +710,11 @@ INSTANCE ItAt_DemonHeart (C_Item)
 };
 
 //**************************************************************************
-//					Drachentrophäen		
+//					DrachentrophÃ¤en		
 //**************************************************************************
 INSTANCE ItAt_UndeadDragonSoulStone (C_Item)
 {
-	name 				=	"Pierre âme dragon mort-vivant";
+	name 				=	"Pierre Ã¢me dragon mort-vivant";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -737,7 +737,7 @@ INSTANCE ItAt_UndeadDragonSoulStone (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_IcedragonHeart (C_Item)
 {
-	name 				=	"Cœur d'un dragon des glaces";
+	name 				=	"CÅ“ur d'un dragon des glaces";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -757,7 +757,7 @@ INSTANCE ItAt_IcedragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_RockdragonHeart (C_Item)
 {
-	name 				=	"Cœur d'un dragon de pierre";
+	name 				=	"CÅ“ur d'un dragon de pierre";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;
@@ -777,7 +777,7 @@ INSTANCE ItAt_RockdragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_SwampdragonHeart (C_Item)
 {
-	name 				=	"Cœur d'un dragon des marais";
+	name 				=	"CÅ“ur d'un dragon des marais";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION; 
@@ -797,7 +797,7 @@ INSTANCE ItAt_SwampdragonHeart (C_Item)
 /******************************************************************************************/
 INSTANCE ItAt_FiredragonHeart (C_Item)
 {
-	name 				=	"Cœur d'un dragon de feu";
+	name 				=	"CÅ“ur d'un dragon de feu";
 
 	mainflag 			=	ITEM_KAT_NONE;
 	flags 				=	ITEM_MULTI|ITEM_MISSION;

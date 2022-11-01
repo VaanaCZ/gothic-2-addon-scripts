@@ -61,11 +61,11 @@ func void DIA_Addon_WispDetector_DetectItems_Info ()
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Je veux des armes à longue portée et des munitions."				, DIA_Addon_WispDetector_DetectItems_FF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Je veux des armes Ã  longue portÃ©e et des munitions."				, DIA_Addon_WispDetector_DetectItems_FF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_NF] 	== TRUE)		
 	{	
-		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Je veux des armes de corps à corps."								, DIA_Addon_WispDetector_DetectItems_NF );
+		Info_AddChoice	(DIA_Addon_WispDetector_DetectItems, "Je veux des armes de corps Ã  corps."								, DIA_Addon_WispDetector_DetectItems_NF );
 	};
 	if (PLAYER_TALENT_WISPDETECTOR[WISPSKILL_FOOD] 	== TRUE)		
 	{	
@@ -125,7 +125,7 @@ func void DIA_Addon_WispDetector_DetectItems_FOOD ()
 
 func void DIA_Addon_WispDetector_DetectItems_NF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NF_15_00"); //Je veux des armes de corps à corps.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_NF_15_00"); //Je veux des armes de corps Ã  corps.
 	WispSearching = WispSearch_NF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);
@@ -133,7 +133,7 @@ func void DIA_Addon_WispDetector_DetectItems_NF ()
 
 func void DIA_Addon_WispDetector_DetectItems_FF ()
 {
-	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Je veux des armes à longue portée et des munitions.
+	AI_Output			(other, self, "DIA_Addon_WispDetector_DetectItems_FF_15_00"); //Je veux des armes Ã  longue portÃ©e et des munitions.
 	WispSearching = WispSearch_FF;
 	B_IrrlichtBeep();
 	AI_StopProcessInfos (self);

@@ -64,7 +64,7 @@ instance DIA_Bennet_TRADE		(C_INFO)
 	condition	= DIA_Bennet_TRADE_Condition;
 	information	= DIA_Bennet_TRADE_Info;
 	permanent	= TRUE;
-	description	= "Et en ce qui concerne la fabrication d'équipements ?";
+	description	= "Et en ce qui concerne la fabrication d'Ã©quipements ?";
 	trade		= TRUE;
 };
 
@@ -78,7 +78,7 @@ func int DIA_Bennet_TRADE_Condition ()
 
 func void DIA_Bennet_TRADE_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_TRADE_15_00"); //Vous fabriquez de l'équipement ?
+	AI_Output (other, self, "DIA_Bennet_TRADE_15_00"); //Vous fabriquez de l'Ã©quipementÂ ?
 	B_GiveTradeInv (self);
 
 	//Joly: Mc ArrowBolt
@@ -94,12 +94,12 @@ func void DIA_Bennet_TRADE_Info ()
 	CreateInvItems 	(self, ItRw_Arrow, McArrowAmount );
 	//////////////////////////////////////////////////////////////////////////////////////
 
-	AI_Output (self, other, "DIA_Bennet_TRADE_06_01"); //Qu'est-ce qu'il vous faut ?
+	AI_Output (self, other, "DIA_Bennet_TRADE_06_01"); //Qu'est-ce qu'il vous fautÂ ?
 	
 	if (BennetLOG == FALSE)
 	{
 		Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-		B_LogEntry (Topic_SoldierTrader,"Bennet vend de l'équipement pour la forge.");
+		B_LogEntry (Topic_SoldierTrader,"Bennet vend de l'Ã©quipement pour la forge.");
 		BennetLOG = TRUE;
 	};
 };
@@ -128,10 +128,10 @@ func int DIA_Bennet_WhichWeapons_Condition ()
 
 func void DIA_Bennet_WhichWeapons_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_WhichWeapons_15_00"); //Qu'est-ce que vous faites comme armes ?
-	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_01"); //Pour le moment des épées toutes simples, et c'est à peu près tout.
-	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_02"); //Mais si j'avais du minerai magique, je pourrais forger des armes de meilleure qualité que celles en acier.
-	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_03"); //Vous ne savez pas où en trouver dans le coin des fois ? (éclate de rire) A part dans la Vallée des mines, je veux dire.
+	AI_Output (other, self, "DIA_Bennet_WhichWeapons_15_00"); //Qu'est-ce que vous faites comme armesÂ ?
+	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_01"); //Pour le moment des Ã©pÃ©es toutes simples, et c'est Ã  peu prÃ¨s tout.
+	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_02"); //Mais si j'avais du minerai magique, je pourrais forger des armes de meilleure qualitÃ© que celles en acier.
+	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_03"); //Vous ne savez pas oÃ¹ en trouver dans le coin des fois ? (Ã©clate de rire) A part dans la VallÃ©e des mines, je veux dire.
 	AI_Output (other, self, "DIA_Bennet_WhichWeapons_15_04"); //Non.
 	AI_Output (self, other, "DIA_Bennet_WhichWeapons_06_05"); //Je m'en doutais.
 };
@@ -156,12 +156,12 @@ func int DIA_Bennet_BauOrSld_Condition ()
 
 func void DIA_Bennet_BauOrSld_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_BauOrSld_15_00"); //Vous êtes un fermier ou un mercenaire ?
-	AI_Output (self, other, "DIA_Bennet_BauOrSld_06_01"); //Vous vous fichez de moi là ?
-	AI_Output (other, self, "DIA_Bennet_BauOrSld_15_02"); //Simple curiosité de ma part.
-	AI_Output (self, other, "DIA_Bennet_BauOrSld_06_03"); //Vous avez déjà vu un fermier capable de forger des armes ?
+	AI_Output (other, self, "DIA_Bennet_BauOrSld_15_00"); //Vous Ãªtes un fermier ou un mercenaireÂ ?
+	AI_Output (self, other, "DIA_Bennet_BauOrSld_06_01"); //Vous vous fichez de moi lÃ Â ?
+	AI_Output (other, self, "DIA_Bennet_BauOrSld_15_02"); //Simple curiositÃ© de ma part.
+	AI_Output (self, other, "DIA_Bennet_BauOrSld_06_03"); //Vous avez dÃ©jÃ  vu un fermier capable de forger des armesÂ ?
 	AI_Output (other, self, "DIA_Bennet_BauOrSld_15_04"); //Non.
-	AI_Output (self, other, "DIA_Bennet_BauOrSld_06_05"); //Alors, pourquoi posez-vous des questions aussi stupides ?
+	AI_Output (self, other, "DIA_Bennet_BauOrSld_06_05"); //Alors, pourquoi posez-vous des questions aussi stupidesÂ ?
 };
 
 // ************************************************************
@@ -189,12 +189,12 @@ func int DIA_Bennet_WannaJoin_Condition ()
 func void DIA_Bennet_WannaJoin_Info ()
 {
 	AI_Output (other, self, "DIA_Bennet_WannaJoin_15_00"); //Je voudrais rejoindre les mercenaires.
-	AI_Output (self, other, "DIA_Bennet_WannaJoin_06_01"); //Dans ce cas, arrêtez de m'importuner et allez voir Torlof pour qu'il vous fasse passer l'épreuve.
+	AI_Output (self, other, "DIA_Bennet_WannaJoin_06_01"); //Dans ce cas, arrÃªtez de m'importuner et allez voir Torlof pour qu'il vous fasse passer l'Ã©preuve.
 	if (MIS_Torlof_HolPachtVonSekob == LOG_SUCCESS)
 	|| (MIS_Torlof_BengarMilizKlatschen == LOG_SUCCESS)
 	{
-		AI_Output (other, self, "DIA_Bennet_WannaJoin_15_02"); //J'ai réussi l'épreuve.
-		AI_Output (self, other, "DIA_Bennet_WannaJoin_06_03"); //Très bien. Dans ce cas, ma voix vous est acquise.
+		AI_Output (other, self, "DIA_Bennet_WannaJoin_15_02"); //J'ai rÃ©ussi l'Ã©preuve.
+		AI_Output (self, other, "DIA_Bennet_WannaJoin_06_03"); //TrÃ¨s bien. Dans ce cas, ma voix vous est acquise.
 	};
 };
 
@@ -209,7 +209,7 @@ instance DIA_Bennet_WannaSmith (C_INFO)
 	condition	= DIA_Bennet_WannaSmith_Condition;
 	information	= DIA_Bennet_WannaSmith_Info;
 	permanent	= TRUE;
-	description	= "Pouvez-vous m'apprendre à forger une épée ?";
+	description	= "Pouvez-vous m'apprendre Ã  forger une Ã©pÃ©e ?";
 };
 
 func int DIA_Bennet_WannaSmith_Condition ()
@@ -224,22 +224,22 @@ func int DIA_Bennet_WannaSmith_Condition ()
 
 func void DIA_Bennet_WannaSmith_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_WannaSmith_15_00"); //Pouvez-vous m'apprendre à forger une épée ?
-	AI_Output (self, other, "DIA_Bennet_WannaSmith_06_01"); //Bien sûr.
-	AI_Output (self, other, "DIA_Bennet_WannaSmith_06_02"); //Mais ce ne sera pas gratuit. Disons... 30 pièces d'or.
+	AI_Output (other, self, "DIA_Bennet_WannaSmith_15_00"); //Pouvez-vous m'apprendre Ã  forger une Ã©pÃ©eÂ ?
+	AI_Output (self, other, "DIA_Bennet_WannaSmith_06_01"); //Bien sÃ»r.
+	AI_Output (self, other, "DIA_Bennet_WannaSmith_06_02"); //Mais ce ne sera pas gratuit. Disons... 30 piÃ¨ces d'or.
 	
 	Info_ClearChoices (DIA_Bennet_WannaSmith);
-	Info_AddChoice (DIA_Bennet_WannaSmith, "Peut-être plus tard.", DIA_Bennet_WannaSmith_Later);
-	Info_AddChoice (DIA_Bennet_WannaSmith, "Très bien, voici vos 30 pièces d'or.", DIA_Bennet_WannaSmith_Pay);
+	Info_AddChoice (DIA_Bennet_WannaSmith, "Peut-Ãªtre plus tard.", DIA_Bennet_WannaSmith_Later);
+	Info_AddChoice (DIA_Bennet_WannaSmith, "TrÃ¨s bien, voici vos 30 piÃ¨ces d'or.", DIA_Bennet_WannaSmith_Pay);
 };
 
 func void DIA_Bennet_WannaSmith_Pay()
 {
-	AI_Output (other, self, "DIA_Bennet_WannaSmith_Pay_15_00"); //D'accord. Les voilà.
+	AI_Output (other, self, "DIA_Bennet_WannaSmith_Pay_15_00"); //D'accord. Les voilÃ .
 	
 	if (B_GiveInvItems (other, self, itmi_gold, 30))
 	{
-		AI_Output (self, other, "DIA_Bennet_WannaSmith_Pay_06_01"); //Et c'est un prix d'ami. Bien, prévenez-moi quand vous voudrez commencer.
+		AI_Output (self, other, "DIA_Bennet_WannaSmith_Pay_06_01"); //Et c'est un prix d'ami. Bien, prÃ©venez-moi quand vous voudrez commencer.
 		
 		Bennet_TeachCommon = TRUE;
 		Log_CreateTopic (Topic_SoldierTeacher,LOG_NOTE);
@@ -247,14 +247,14 @@ func void DIA_Bennet_WannaSmith_Pay()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bennet_WannaSmith_Pay_06_02"); //N'essayez pas de me prendre pour un pigeon. Ce sera 30 pièces d'or, et pas une de moins !
+		AI_Output (self, other, "DIA_Bennet_WannaSmith_Pay_06_02"); //N'essayez pas de me prendre pour un pigeon. Ce sera 30 piÃ¨ces d'or, et pas une de moinsÂ !
 	};
 	Info_ClearChoices (DIA_Bennet_WannaSmith);
 };
 
 func void DIA_Bennet_WannaSmith_Later()
 {
-	AI_Output (other, self, "DIA_Bennet_WannaSmith_Later_15_00"); //Peut-être plus tard.
+	AI_Output (other, self, "DIA_Bennet_WannaSmith_Later_15_00"); //Peut-Ãªtre plus tard.
 	Info_ClearChoices (DIA_Bennet_WannaSmith);
 };
 
@@ -284,14 +284,14 @@ func int DIA_Bennet_TeachCOMMON_Condition ()
 
 func void DIA_Bennet_TeachCOMMON_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_TeachCOMMON_15_00"); //Apprenez-moi à forger une épée !
+	AI_Output (other, self, "DIA_Bennet_TeachCOMMON_15_00"); //Apprenez-moi Ã  forger une Ã©pÃ©eÂ !
 	
 	if (B_TeachPlayerTalentSmith (self, other, WEAPON_Common))
 	{
-		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_01"); //C'est très simple : trouvez-vous une barre d'acier et plongez-la dans les flammes jusqu'à ce qu'elle se mette à luire.
+		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_01"); //C'est trÃ¨s simpleÂ : trouvez-vous une barre d'acier et plongez-la dans les flammes jusqu'Ã  ce qu'elle se mette Ã  luire.
 		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_02"); //Puis, placez-la sur l'enclume et martelez-la pour lui donner une forme de lame.
-		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_03"); //Attention surtout à ce qu'elle ne refroidisse pas trop. Vous ne disposez que de quelques minutes pour travailler votre arme avant de devoir la plonger de nouveau dans le feu.
-		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_04"); //Quant au reste, vous l'apprendrez par vous-même. Ce n'est qu'une question de pratique.
+		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_03"); //Attention surtout Ã  ce qu'elle ne refroidisse pas trop. Vous ne disposez que de quelques minutes pour travailler votre arme avant de devoir la plonger de nouveau dans le feu.
+		AI_Output (self, other, "DIA_Bennet_TeachCOMMON_06_04"); //Quant au reste, vous l'apprendrez par vous-mÃªme. Ce n'est qu'une question de pratique.
 	};
 };
 
@@ -305,7 +305,7 @@ instance DIA_Bennet_WannaSmithORE (C_INFO)
 	condition	= DIA_Bennet_WannaSmithORE_Condition;
 	information	= DIA_Bennet_WannaSmithORE_Info;
 	permanent	= TRUE;
-	description	= "Apprenez-moi à fabriquer des armes en minerai magique !";
+	description	= "Apprenez-moi Ã  fabriquer des armes en minerai magique !";
 };
 
 func int DIA_Bennet_WannaSmithORE_Condition ()
@@ -319,31 +319,31 @@ func int DIA_Bennet_WannaSmithORE_Condition ()
 
 func void DIA_Bennet_WannaSmithORE_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_00"); //Apprenez-moi à forger des armes à base de minerai magique !
+	AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_00"); //Apprenez-moi Ã  forger des armes Ã  base de minerai magiqueÂ !
 		
 	if (PLAYER_TALENT_SMITH[WEAPON_Common] == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_01"); //Mais vous ne connaissez même pas les bases !
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_02"); //Commencez par apprendre comment forger une épée normale et après, on verra.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_01"); //Mais vous ne connaissez mÃªme pas les basesÂ !
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_02"); //Commencez par apprendre comment forger une Ã©pÃ©e normale et aprÃ¨s, on verra.
 	}
 	else if (other.guild != GIL_SLD)
 	&& 		(other.guild != GIL_DJG)
 	{
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_03"); //Tant que vous ne serez pas des nôtres, il est hors de question que je vous révèle le secret des armes en minerai magique !
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_03"); //Tant que vous ne serez pas des nÃ´tres, il est hors de question que je vous rÃ©vÃ¨le le secret des armes en minerai magiqueÂ !
 		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_04"); //Seuls quelques forgerons le connaissent et croyez-moi, ceux qu'on trouve en ville n'en font pas partie.
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_05"); //Tant mieux d'ailleurs, sans quoi ces minables de la garde auraient tous une épée magique à l'heure qu'il est.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_05"); //Tant mieux d'ailleurs, sans quoi ces minables de la garde auraient tous une Ã©pÃ©e magique Ã  l'heure qu'il est.
 		if (other.guild == GIL_MIL)
 		{	
-			AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_06"); //Je n'ai rien contre vous. (sourit) Vous avez l'air d'être un type correct.
+			AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_06"); //Je n'ai rien contre vous. (sourit) Vous avez l'air d'Ãªtre un type correct.
 		};
 	}
 	else if (MIS_Bennet_BringOre != LOG_SUCCESS)
 	{
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_07"); //Je le ferais peut-être, si j'avais du minerai magique.
-		AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_08");//Allons, je fais partie des mercenaires et je sais forger une arme ! Qu'est-ce qu'il vous faut de plus ?
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_09"); //Et si vous m'expliquiez comment je suis censé forger une arme magique sans minerai magique ?
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_07"); //Je le ferais peut-Ãªtre, si j'avais du minerai magique.
+		AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_08");//Allons, je fais partie des mercenaires et je sais forger une armeÂ ! Qu'est-ce qu'il vous faut de plusÂ ?
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_09"); //Et si vous m'expliquiez comment je suis censÃ© forger une arme magique sans minerai magiqueÂ ?
 		AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_10");//Euh...
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_11"); //C'est bien ce qu'il me semblait. Il me faut au moins cinq blocs de minerai. Sinon ce n'est même pas la peine d'y penser.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_11"); //C'est bien ce qu'il me semblait. Il me faut au moins cinq blocs de minerai. Sinon ce n'est mÃªme pas la peine d'y penser.
 		if (MIS_Bennet_BringOre == FALSE)
 		{
 			MIS_Bennet_BringOre = LOG_RUNNING;
@@ -351,12 +351,12 @@ func void DIA_Bennet_WannaSmithORE_Info ()
 	}
 	else //alles OK
 	{
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_12"); //Excellent ! Vous m'avez apporté le minerai et vous savez comment forger une épée.
-		AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_13");//Je vous écoute.
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_14"); //Le plus important, c'est qu'il n'y a aucune différence entre une arme intégralement en minerai magique et une lame normale recouverte d'une fine couche de ce minerai. Ce qui compte, c'est la surface de l'arme.
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_15"); //Et le minerai magique coûte si cher qu'il vaut mieux s'en servir pour plaquer du métal ordinaire.
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_16"); //Evidemment, recouvrir une épée existante d'une fine couche de minerai magique ne donne pas le résultat escompté. Il faut forger l'arme à partir de rien.
-		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_17"); //Pour le reste, tout dépend de l'arme que vous cherchez à obtenir.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_12"); //ExcellentÂ ! Vous m'avez apportÃ© le minerai et vous savez comment forger une Ã©pÃ©e.
+		AI_Output (other, self, "DIA_Bennet_WannaSmithORE_15_13");//Je vous Ã©coute.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_14"); //Le plus important, c'est qu'il n'y a aucune diffÃ©rence entre une arme intÃ©gralement en minerai magique et une lame normale recouverte d'une fine couche de ce minerai. Ce qui compte, c'est la surface de l'arme.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_15"); //Et le minerai magique coÃ»te si cher qu'il vaut mieux s'en servir pour plaquer du mÃ©tal ordinaire.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_16"); //Evidemment, recouvrir une Ã©pÃ©e existante d'une fine couche de minerai magique ne donne pas le rÃ©sultat escomptÃ©. Il faut forger l'arme Ã  partir de rien.
+		AI_Output (self, other, "DIA_Bennet_WannaSmithORE_06_17"); //Pour le reste, tout dÃ©pend de l'arme que vous cherchez Ã  obtenir.
 		Bennet_TeachSmith = TRUE;
 	};
 };
@@ -371,7 +371,7 @@ instance DIA_Bennet_WhereOre (C_INFO)
 	condition	= DIA_Bennet_WhereOre_Condition;
 	information	= DIA_Bennet_WhereOre_Info;
 	permanent	= FALSE;
-	description	= "Où puis-je trouver du minerai magique ?";
+	description	= "OÃ¹ puis-je trouver du minerai magique ?";
 };
 
 func int DIA_Bennet_WhereOre_Condition ()
@@ -385,11 +385,11 @@ func int DIA_Bennet_WhereOre_Condition ()
 
 func void DIA_Bennet_WhereOre_Info ()
 {
-	AI_Output (other, self, "DIA_Bennet_WhereOre_15_00"); //Où puis-je trouver du minerai magique ?
-	AI_Output (self, other, "DIA_Bennet_WhereOre_06_01"); //Si seulement je le savais ! Il doit y en avoir à la colonie minière.
-	AI_Output (self, other, "DIA_Bennet_WhereOre_06_02"); //Mais peut-être que vous aurez de la chance et que vous en trouverez quelques blocs dans les environs.
-	AI_Output (self, other, "DIA_Bennet_WhereOre_06_03"); //Il me semble qu'il y a des galeries minières dans les montagnes situées au sud d'ici.
-	AI_Output (self, other, "DIA_Bennet_WhereOre_06_04"); //Mais attention, j'ai entendu dire que ça grouillait de brigands par là-bas !
+	AI_Output (other, self, "DIA_Bennet_WhereOre_15_00"); //OÃ¹ puis-je trouver du minerai magiqueÂ ?
+	AI_Output (self, other, "DIA_Bennet_WhereOre_06_01"); //Si seulement je le savaisÂ ! Il doit y en avoir Ã  la colonie miniÃ¨re.
+	AI_Output (self, other, "DIA_Bennet_WhereOre_06_02"); //Mais peut-Ãªtre que vous aurez de la chance et que vous en trouverez quelques blocs dans les environs.
+	AI_Output (self, other, "DIA_Bennet_WhereOre_06_03"); //Il me semble qu'il y a des galeries miniÃ¨res dans les montagnes situÃ©es au sud d'ici.
+	AI_Output (self, other, "DIA_Bennet_WhereOre_06_04"); //Mais attention, j'ai entendu dire que Ã§a grouillait de brigands par lÃ -basÂ !
 };
 
 // ************************************************************
@@ -402,7 +402,7 @@ instance DIA_Bennet_BringOre (C_INFO)
 	condition	= DIA_Bennet_BringOre_Condition;
 	information	= DIA_Bennet_BringOre_Info;
 	permanent	= FALSE;
-	description	= "Tenez - 5 pépites de minerai.";
+	description	= "Tenez - 5 pÃ©pites de minerai.";
 };
 
 func int DIA_Bennet_BringOre_Condition ()
@@ -417,9 +417,9 @@ func int DIA_Bennet_BringOre_Condition ()
 func void DIA_Bennet_BringOre_Info ()
 {
 	AI_Output (other, self, "DIA_Bennet_BringOre_15_00"); //Tenez.
-	AI_Output (self, other, "DIA_Bennet_BringOre_06_01"); //(éclate de rire) Montrez-moi ça !
+	AI_Output (self, other, "DIA_Bennet_BringOre_06_01"); //(Ã©clate de rire) Montrez-moi Ã§aÂ !
 	B_GiveInvItems (other, self, itmi_nugget, 5);
-	AI_Output (self, other, "DIA_Bennet_BringOre_06_02"); //Vraiment ? Ça alors !
+	AI_Output (self, other, "DIA_Bennet_BringOre_06_02"); //VraimentÂ ? Ã‡a alorsÂ !
 	AI_Output (self, other, "DIA_Bennet_BringOre_06_03"); //Vous pouvez en garder deux. Vous en aurez besoin pour forger votre propre arme.
 	B_GiveInvItems (self,other, itmi_nugget, 2);
 	MIS_Bennet_BringOre = LOG_SUCCESS;
@@ -468,33 +468,33 @@ func void DIA_Bennet_TeachSmith_Info ()
 	else if (Kapitel == 2)
 	&& (Bennet_Kap2Smith == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_01"); //Je peux vous apprendre à forger une épée à une main ou à deux mains en utilisant du minerai magique.
+		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_01"); //Je peux vous apprendre Ã  forger une Ã©pÃ©e Ã  une main ou Ã  deux mains en utilisant du minerai magique.
 		Bennet_Kap2Smith = TRUE;
 	}
 	else if (Kapitel == 3)
 	&& (MIS_ReadyForChapter4 == FALSE)
 	&& (Bennet_Kap3Smith == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_02"); //J'ai amélioré ma technique. Je peux désormais vous apprendre à forger une épée bâtarde ou une épée lourde à deux mains à l'aide de minerai magique.
+		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_02"); //J'ai amÃ©liorÃ© ma technique. Je peux dÃ©sormais vous apprendre Ã  forger une Ã©pÃ©e bÃ¢tarde ou une Ã©pÃ©e lourde Ã  deux mains Ã  l'aide de minerai magique.
 		Bennet_Kap3Smith = TRUE;
 	}
 	else if (MIS_ReadyForChapter4 == TRUE)
 	&& (Kapitel < 5)
 	&& (Bennet_Kap4Smith == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_03"); //Cette fois-ci, je crois bien que je me suis surpassé. J'ai fabriqué deux lames de combat. Je n'ai jamais vu d'armes de cette qualité.
+		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_03"); //Cette fois-ci, je crois bien que je me suis surpassÃ©. J'ai fabriquÃ© deux lames de combat. Je n'ai jamais vu d'armes de cette qualitÃ©.
 		Bennet_Kap4Smith = TRUE;
 	}
 	else if (Kapitel >= 5)
 	&& (Bennet_Kap5Smith == FALSE)
 	{
-		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_04"); //Ecoutez, je crois bien que je viens d'avoir une inspiration : des armes en minerai magique trempées dans du sang de dragon. Et je sais exactement comment procéder !
-		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_05"); //(sourit) Ça vous intéresse ?
+		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_04"); //Ecoutez, je crois bien que je viens d'avoir une inspirationÂ : des armes en minerai magique trempÃ©es dans du sang de dragon. Et je sais exactement comment procÃ©derÂ !
+		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_05"); //(sourit) Ã‡a vous intÃ©resseÂ ?
 		Bennet_Kap5Smith = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_06"); //Quel genre d'arme aimeriez-vous fabriquer ?
+		AI_Output (self, other, "DIA_Bennet_TeachSmith_06_06"); //Quel genre d'arme aimeriez-vous fabriquerÂ ?
 	};
 	
 	Info_ClearChoices (DIA_Bennet_TeachSmith);
@@ -649,12 +649,12 @@ func int DIA_Bennet_WhyPrison_Condition ()
 
 func void DIA_Bennet_WhyPrison_Info ()
 {
-	AI_Output	(other, self ,"DIA_Bennet_WhyPrison_15_00"); //Que faites-vous au cachot ?
-	AI_Output	(self , other,"DIA_Bennet_WhyPrison_06_01"); //Ces fumiers m'ont balancé là. Je suis censé avoir tué un paladin.
-	AI_Output 	(self ,other ,"DIA_Bennet_WhyPrison_06_02"); //Mais je n'y suis pour rien. C'est un coup monté.
-	AI_Output	(other, self ,"DIA_Bennet_WhyPrison_15_03"); //Un coup monté ? Pour quelle raison ?
-	AI_Output 	(self ,other ,"DIA_Bennet_WhyPrison_06_04"); //Aucune idée, mais vous devez me sortir d'ici.
-	AI_Output 	(self ,other ,"DIA_Bennet_WhyPrison_06_05"); //Allez voir le seigneur Hagen, détruisez le mur de ma cellule... Je ne sais pas moi, mais faites quelque chose !
+	AI_Output	(other, self ,"DIA_Bennet_WhyPrison_15_00"); //Que faites-vous au cachotÂ ?
+	AI_Output	(self , other,"DIA_Bennet_WhyPrison_06_01"); //Ces fumiers m'ont balancÃ© lÃ . Je suis censÃ© avoir tuÃ© un paladin.
+	AI_Output 	(self ,other ,"DIA_Bennet_WhyPrison_06_02"); //Mais je n'y suis pour rien. C'est un coup montÃ©.
+	AI_Output	(other, self ,"DIA_Bennet_WhyPrison_15_03"); //Un coup montÃ©Â ? Pour quelle raisonÂ ?
+	AI_Output 	(self ,other ,"DIA_Bennet_WhyPrison_06_04"); //Aucune idÃ©e, mais vous devez me sortir d'ici.
+	AI_Output 	(self ,other ,"DIA_Bennet_WhyPrison_06_05"); //Allez voir le seigneur Hagen, dÃ©truisez le mur de ma cellule... Je ne sais pas moi, mais faites quelque choseÂ !
 	
 	MIS_RescueBennet = LOG_RUNNING; 
 	Log_CreateTopic (TOPIC_RESCUEBENNET, LOG_MISSION);
@@ -672,7 +672,7 @@ instance DIA_Bennet_WhatHappened		(C_INFO)
 	condition	 = 	DIA_Bennet_WhatHappened_Condition;
 	information	 = 	DIA_Bennet_WhatHappened_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Que s'est-il passé ?";
+	description	 = 	"Que s'est-il passÃ© ?";
 };
 
 func int DIA_Bennet_WhatHappened_Condition ()
@@ -686,13 +686,13 @@ func int DIA_Bennet_WhatHappened_Condition ()
 
 func void DIA_Bennet_WhatHappened_Info ()
 {
-	AI_Output	(other, self ,"DIA_Bennet_WhatHappened_15_00"); //Que s'est-il passé ?
-	AI_Output	(self , other,"DIA_Bennet_WhatHappened_06_01"); //J'étais allé au centre ville avec Hodges pour acheter des provisions pour nos hommes.
+	AI_Output	(other, self ,"DIA_Bennet_WhatHappened_15_00"); //Que s'est-il passÃ© ?
+	AI_Output	(self , other,"DIA_Bennet_WhatHappened_06_01"); //J'Ã©tais allÃ© au centre ville avec Hodges pour acheter des provisions pour nos hommes.
 	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_02"); //Et puis, brusquement, on a entendu un cri et un bruit de course.
 	AI_Output	(other, self ,"DIA_Bennet_WhatHappened_15_03"); //Venez-en au fait.
-	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_04"); //On a tout de suite compris que quelque chose venait de se produire et qu'on finirait en taule si la garde nous trouvait là.
-	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_05"); //Alors, on a filé sans demander notre reste. Mais juste avant d'arriver aux portes de la ville, j'ai trébuché et je me suis tordu la cheville.
-	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_06"); //Le reste se passe de commentaire. La milice m'est tombée dessus et m'a jeté dans ce trou.
+	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_04"); //On a tout de suite compris que quelque chose venait de se produire et qu'on finirait en taule si la garde nous trouvait lÃ .
+	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_05"); //Alors, on a filÃ© sans demander notre reste. Mais juste avant d'arriver aux portes de la ville, j'ai trÃ©buchÃ© et je me suis tordu la cheville.
+	AI_Output 	(self ,other ,"DIA_Bennet_WhatHappened_06_06"); //Le reste se passe de commentaire. La milice m'est tombÃ©e dessus et m'a jetÃ© dans ce trou.
 };
 
 //*********************************************************************
@@ -705,7 +705,7 @@ instance DIA_Bennet_Victim		(C_INFO)
 	condition	 = 	DIA_Bennet_Victim_Condition;
 	information	 = 	DIA_Bennet_Victim_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Qui a été assassiné ?";
+	description	 = 	"Qui a Ã©tÃ© assassinÃ© ?";
 };
 
 func int DIA_Bennet_Victim_Condition ()
@@ -719,13 +719,13 @@ func int DIA_Bennet_Victim_Condition ()
 
 func void DIA_Bennet_Victim_Info ()
 {
-	AI_Output	(other, self ,"DIA_Bennet_Victim_15_00"); //Qui a été tué ?
-	AI_Output	(self , other,"DIA_Bennet_Victim_06_01"); //Je n'en ai pas la moindre idée. Un des paladins, mais je n'en connais aucun.
-	AI_Output	(other, self ,"DIA_Bennet_Victim_15_02"); //Vous connaissez son nom ?
-	AI_Output 	(self ,other ,"DIA_Bennet_Victim_06_03"); //Quelque chose comme Lothar, je crois bien, mais je n'en suis pas sûr.
-	AI_Output 	(self ,other ,"DIA_Bennet_Victim_06_04"); //Demandez au seigneur Hagen, il connaît tous les détails de l'affaire.
+	AI_Output	(other, self ,"DIA_Bennet_Victim_15_00"); //Qui a Ã©tÃ© tuÃ©Â ?
+	AI_Output	(self , other,"DIA_Bennet_Victim_06_01"); //Je n'en ai pas la moindre idÃ©e. Un des paladins, mais je n'en connais aucun.
+	AI_Output	(other, self ,"DIA_Bennet_Victim_15_02"); //Vous connaissez son nomÂ ?
+	AI_Output 	(self ,other ,"DIA_Bennet_Victim_06_03"); //Quelque chose comme Lothar, je crois bien, mais je n'en suis pas sÃ»r.
+	AI_Output 	(self ,other ,"DIA_Bennet_Victim_06_04"); //Demandez au seigneur Hagen, il connaÃ®t tous les dÃ©tails de l'affaire.
 
-	B_LogEntry (TOPIC_RESCUEBENNET,"Lothar, un des paladins, a été assassiné. Le seigneur Hagen devrait pouvoir m'en dire plus, il est responsable de l'enquête.");
+	B_LogEntry (TOPIC_RESCUEBENNET,"Lothar, un des paladins, a Ã©tÃ© assassinÃ©. Le seigneur Hagen devrait pouvoir m'en dire plus, il est responsable de l'enquÃªte.");
 };
 
 //*********************************************************************
@@ -752,19 +752,19 @@ func int DIA_Bennet_Evidence_Condition ()
 
 func void DIA_Bennet_Evidence_Info ()
 {
-	AI_Output	(other, self ,"DIA_Bennet_Evidence_15_00"); //Y a-t-il des preuves contre vous ?
-	AI_Output	(self , other,"DIA_Bennet_Evidence_06_01"); //Il paraît qu'un témoin m'aurait reconnu.
-	AI_Output	(other, self ,"DIA_Bennet_Evidence_15_02"); //Savez-vous de qui il s'agit ?
+	AI_Output	(other, self ,"DIA_Bennet_Evidence_15_00"); //Y a-t-il des preuves contre vousÂ ?
+	AI_Output	(self , other,"DIA_Bennet_Evidence_06_01"); //Il paraÃ®t qu'un tÃ©moin m'aurait reconnu.
+	AI_Output	(other, self ,"DIA_Bennet_Evidence_15_02"); //Savez-vous de qui il s'agitÂ ?
 	AI_Output 	(self ,other ,"DIA_Bennet_Evidence_06_03"); //Non. Tout ce que je sais c'est qu'il ment.
 	
-	B_LogEntry (TOPIC_RESCUEBENNET,"Un témoin affirme avoir vu Bennet. Je dois le trouver si je veux connaître la vérité.");
+	B_LogEntry (TOPIC_RESCUEBENNET,"Un tÃ©moin affirme avoir vu Bennet. Je dois le trouver si je veux connaÃ®tre la vÃ©ritÃ©.");
 	
 	RescueBennet_KnowsWitness = TRUE; 
 };
 
 
 //*********************************************************************
-//	Wer führt die Untersuchungen durch?
+//	Wer fÃ¼hrt die Untersuchungen durch?
 //*********************************************************************
 instance DIA_Bennet_Investigation		(C_INFO)
 {
@@ -773,7 +773,7 @@ instance DIA_Bennet_Investigation		(C_INFO)
 	condition	 = 	DIA_Bennet_Investigation_Condition;
 	information	 = 	DIA_Bennet_Investigation_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Qui dirige l'enquête ?";
+	description	 = 	"Qui dirige l'enquÃªte ?";
 };
 
 func int DIA_Bennet_Investigation_Condition ()
@@ -787,17 +787,17 @@ func int DIA_Bennet_Investigation_Condition ()
 
 func void DIA_Bennet_Investigation_Info ()
 {
-	AI_Output	(other, self ,"DIA_Bennet_Investigation_15_00"); //Qui est chargé de l'enquête ?
-	AI_Output	(self , other,"DIA_Bennet_Investigation_06_01"); //Le seigneur Hagen en personne. Comme la victime était un paladin, l'affaire tombe sous le coup de la loi martiale.
+	AI_Output	(other, self ,"DIA_Bennet_Investigation_15_00"); //Qui est chargÃ© de l'enquÃªteÂ ?
+	AI_Output	(self , other,"DIA_Bennet_Investigation_06_01"); //Le seigneur Hagen en personne. Comme la victime Ã©tait un paladin, l'affaire tombe sous le coup de la loi martiale.
 	AI_Output	(other, self ,"DIA_Bennet_Investigation_15_02"); //Qu'est-ce que cela signifie ?
-	AI_Output 	(self ,other ,"DIA_Bennet_Investigation_06_03"); //C'est facile à deviner. Si je ne sors pas d'ici, ils vont me pendre sans se poser la moindre question.
-	AI_Output 	(self ,other ,"DIA_Bennet_Investigation_06_04"); //Aidez-moi ou ce sera la guerre. Lee n'acceptera jamais ça !
-	AI_Output 	(self ,other ,"DIA_Bennet_Investigation_06_05"); //Vous pouvez imaginer ce que ça signifie...
+	AI_Output 	(self ,other ,"DIA_Bennet_Investigation_06_03"); //C'est facile Ã  deviner. Si je ne sors pas d'ici, ils vont me pendre sans se poser la moindre question.
+	AI_Output 	(self ,other ,"DIA_Bennet_Investigation_06_04"); //Aidez-moi ou ce sera la guerre. Lee n'acceptera jamais Ã§aÂ !
+	AI_Output 	(self ,other ,"DIA_Bennet_Investigation_06_05"); //Vous pouvez imaginer ce que Ã§a signifie...
 };
 
 
 //*********************************************************************
-//	Mann, ich hatte echt schon geglaubt, dass die mich hängen! 
+//	Mann, ich hatte echt schon geglaubt, dass die mich hÃ¤ngen! 
 //*********************************************************************
 instance DIA_Bennet_ThankYou		(C_INFO)
 {
@@ -825,10 +825,10 @@ func void DIA_Bennet_ThankYou_Info ()
 		Npc_SetTrueGuild (other, GIL_DJG);
 	};
 
-	AI_Output	(self ,other,"DIA_Bennet_ThankYou_06_00"); //Et moi qui pensais que j'allais finir pendu !
+	AI_Output	(self ,other,"DIA_Bennet_ThankYou_06_00"); //Et moi qui pensais que j'allais finir penduÂ !
 	AI_Output	(other,self ,"DIA_Bennet_ThankYou_15_01"); //Cette histoire se termine bien finalement.
-	AI_Output 	(self ,other,"DIA_Bennet_ThankYou_06_02"); //Ça, vous pouvez le dire ! Vous auriez dû voir la tête du soldat qui m'a libéré !
-	AI_Output 	(self ,other,"DIA_Bennet_ThankYou_06_03"); //(éclate de rire) Il était si terrifié qu'il a failli mouiller ses chausses !
+	AI_Output 	(self ,other,"DIA_Bennet_ThankYou_06_02"); //Ã‡a, vous pouvez le direÂ ! Vous auriez dÃ» voir la tÃªte du soldat qui m'a libÃ©rÃ©Â !
+	AI_Output 	(self ,other,"DIA_Bennet_ThankYou_06_03"); //(Ã©clate de rire) Il Ã©tait si terrifiÃ© qu'il a failli mouiller ses chaussesÂ !
 	AI_Output 	(self ,other,"DIA_Bennet_ThankYou_06_04"); //Ce qui me fait penser que j'ai quelque chose pour vous...
 	AI_Output	(other,self ,"DIA_Bennet_ThankYou_15_05"); //Que voulez-vous dire ?
 	AI_Output 	(self ,other,"DIA_Bennet_ThankYou_06_06"); //(sourit) Un cadeau.
@@ -836,7 +836,7 @@ func void DIA_Bennet_ThankYou_Info ()
 };
 
 //*********************************************************************
-//	Was für ein Geschenk?
+//	Was fÃ¼r ein Geschenk?
 //*********************************************************************
 
 instance DIA_Bennet_Present		(C_INFO)
@@ -846,7 +846,7 @@ instance DIA_Bennet_Present		(C_INFO)
 	condition	 = 	DIA_Bennet_Present_Condition;
 	information	 = 	DIA_Bennet_Present_Info;
 	permanent	 = 	FALSE;
-	description	 =	"Quel présent ?";
+	description	 =	"Quel prÃ©sent ?";
 };
 
 func int DIA_Bennet_Present_Condition ()
@@ -859,35 +859,35 @@ func int DIA_Bennet_Present_Condition ()
 
 func void DIA_Bennet_Present_Info ()
 {
-	AI_Output	(other,self ,"DIA_Bennet_Present_15_00"); //Quoi comme cadeau ?
+	AI_Output	(other,self ,"DIA_Bennet_Present_15_00"); //Quoi comme cadeauÂ ?
 	
-	AI_Output 	(self ,other,"DIA_Bennet_Present_06_01"); //Nous avons entendu parler des dragons censés se trouver dans la vallée.
-	AI_Output	(other,self ,"DIA_Bennet_Present_15_02"); //Ils existent bel et bien !
-	AI_Output 	(self ,other,"DIA_Bennet_Present_06_03"); //Très bien, je vous crois.
+	AI_Output 	(self ,other,"DIA_Bennet_Present_06_01"); //Nous avons entendu parler des dragons censÃ©s se trouver dans la vallÃ©e.
+	AI_Output	(other,self ,"DIA_Bennet_Present_15_02"); //Ils existent bel et bienÂ !
+	AI_Output 	(self ,other,"DIA_Bennet_Present_06_03"); //TrÃ¨s bien, je vous crois.
 	
 	if (hero.guild == GIL_DJG)
 	{
 			
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_04"); //Quoi qu'il en soit, quelques-uns d'entre nous ont décidé d'aller eux-aussi dans la vallée.
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_05"); //(sourit) Ils ont l'intention d'y faire le ménage.
-		AI_Output	(other,self ,"DIA_Bennet_Present_15_06"); //Qu'est-ce que cela a à voir avec moi ?
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_07"); //(fièrement) J'ai mis au point un nouveau modèle d'armure : l'armure de chasseur de dragons !
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_08"); //Elle est plus solide et plus légère qu'une armure classique.
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_09"); //Comme vous m'avez sauvé, je tiens à ce que le tout premier modèle existant vous revienne. Je vous l'offre !
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_04"); //Quoi qu'il en soit, quelques-uns d'entre nous ont dÃ©cidÃ© d'aller eux-aussi dans la vallÃ©e.
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_05"); //(sourit) Ils ont l'intention d'y faire le mÃ©nage.
+		AI_Output	(other,self ,"DIA_Bennet_Present_15_06"); //Qu'est-ce que cela a Ã  voir avec moiÂ ?
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_07"); //(fiÃ¨rement) J'ai mis au point un nouveau modÃ¨le d'armureÂ : l'armure de chasseur de dragonsÂ !
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_08"); //Elle est plus solide et plus lÃ©gÃ¨re qu'une armure classique.
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_09"); //Comme vous m'avez sauvÃ©, je tiens Ã  ce que le tout premier modÃ¨le existant vous revienne. Je vous l'offreÂ !
 			
 		CreateInvItems (self,ITAR_DJG_L,1);
 		B_GiveInvItems (self,other,ITAR_DJG_L,1);
 			
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_10"); //Je me suis dit que vous voudriez sûrement en être et vous allez avoir besoin d'un équipement fiable quand vous irez dans cette vallée.
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_11"); //Ah, au fait, les écailles de dragon m'intéressent. Les vraies, je veux dire. Je suis prêt à vous en offrir un bon prix.
-		AI_Output	(other,self ,"DIA_Bennet_Present_15_12"); //Combien par écaille ?
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_10"); //Je me suis dit que vous voudriez sÃ»rement en Ãªtre et vous allez avoir besoin d'un Ã©quipement fiable quand vous irez dans cette vallÃ©e.
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_11"); //Ah, au fait, les Ã©cailles de dragon m'intÃ©ressent. Les vraies, je veux dire. Je suis prÃªt Ã  vous en offrir un bon prix.
+		AI_Output	(other,self ,"DIA_Bennet_Present_15_12"); //Combien par Ã©cailleÂ ?
 		B_Say_Gold (self,other,Value_DragonScale); 
 	}
 	else
 	{
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_13"); //Bref, je me suis dit que vous voudriez sûrement prendre part à la chasse aux dragons qui se prépare...
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_13"); //Bref, je me suis dit que vous voudriez sÃ»rement prendre part Ã  la chasse aux dragons qui se prÃ©pare...
 		AI_Output	(other,self ,"DIA_Bennet_Present_15_14"); //Et ?
-		AI_Output 	(self ,other,"DIA_Bennet_Present_06_15"); //Tenez, prenez cette amulette. A mon avis, elle vous sera plus utile qu'à moi.
+		AI_Output 	(self ,other,"DIA_Bennet_Present_06_15"); //Tenez, prenez cette amulette. A mon avis, elle vous sera plus utile qu'Ã  moi.
 	
 		CreateInvItems (self,ItAm_Hp_01,1); 
 		B_GiveInvItems (self,other,ItAm_Hp_01,1);
@@ -911,7 +911,7 @@ instance DIA_Bennet_DragonScale		(C_INFO)
 	condition	 = 	DIA_Bennet_DragonScale_Condition;
 	information	 = 	DIA_Bennet_DragonScale_Info;
 	permanent	 = 	TRUE;
-	description	 =	"J'ai quelques écailles de dragon pour vous.";
+	description	 =	"J'ai quelques Ã©cailles de dragon pour vous.";
 };
 
 func int DIA_Bennet_DragonScale_Condition ()
@@ -925,9 +925,9 @@ func int DIA_Bennet_DragonScale_Condition ()
 
 func void DIA_Bennet_DragonScale_Info ()
 {	
-	AI_Output	(other,self ,"DIA_Bennet_DragonScale_15_00"); //J'ai quelques écailles de dragon pour vous.
-	AI_Output 	(self ,other,"DIA_Bennet_DragonScale_06_01"); //De véritables écailles de dragon ?
-	AI_Output 	(self ,other,"DIA_Bennet_DragonScale_06_02"); //Tenez, voici votre or !
+	AI_Output	(other,self ,"DIA_Bennet_DragonScale_15_00"); //J'ai quelques Ã©cailles de dragon pour vous.
+	AI_Output 	(self ,other,"DIA_Bennet_DragonScale_06_01"); //De vÃ©ritables Ã©cailles de dragonÂ ?
+	AI_Output 	(self ,other,"DIA_Bennet_DragonScale_06_02"); //Tenez, voici votre orÂ !
 	
 	Bennet_DragonScale_Counter = (Bennet_DragonScale_Counter +(Npc_HasItems (other,ItAT_Dragonscale)));
 	
@@ -938,7 +938,7 @@ func void DIA_Bennet_DragonScale_Info ()
 	if (Bennet_DragonScale_Counter >= 20)
 	&& (Show_DJG_Armor_M == FALSE)
 	{
-		AI_Output 	(self ,other,"DIA_Bennet_DragonScale_06_03"); //Merci, ça devrait me suffire. Si vous voulez, je peux vous vendre une armure toute nouvelle et de meilleure qualité.
+		AI_Output 	(self ,other,"DIA_Bennet_DragonScale_06_03"); //Merci, Ã§a devrait me suffire. Si vous voulez, je peux vous vendre une armure toute nouvelle et de meilleure qualitÃ©.
 		
 		Show_DJG_Armor_M = TRUE;
 	};
@@ -959,7 +959,7 @@ instance DIA_Bennet_DJG_ARMOR_M		(C_INFO)
 	condition	 = 	DIA_Bennet_DJG_ARMOR_M_Condition;
 	information	 = 	DIA_Bennet_DJG_ARMOR_M_Info;
 	permanent	 = 	TRUE;
-	description	 =	"Armure moyenne chasseur de dragons. Prot. : Armes 80, flèches 80 (12 000 po)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
+	description	 =	"Armure moyenne chasseur de dragons. Prot. : Armes 80, flÃ¨ches 80 (12 000 po)"; //Wenn Ã¤ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Bennet_DJG_ARMOR_M_Condition ()
@@ -978,8 +978,8 @@ func void DIA_Bennet_DJG_ARMOR_M_Info ()
 	
 	if (Npc_HasItems (other,itmi_Gold) >= 12000)
 	{
-		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_M_06_01"); //Très bien. Je suis sûr qu'elle vous donnera entière satisfaction.
-		AI_Output	(other,self ,"DIA_Bennet_DJG_ARMOR_M_15_02"); //Vu son prix, j'ose l'espérer...
+		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_M_06_01"); //TrÃ¨s bien. Je suis sÃ»r qu'elle vous donnera entiÃ¨re satisfaction.
+		AI_Output	(other,self ,"DIA_Bennet_DJG_ARMOR_M_15_02"); //Vu son prix, j'ose l'espÃ©rer...
 		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_M_06_03"); //Vous verrez qu'elle le vaut amplement.
 		
 		B_GiveInvItems (other,self,ItMi_Gold,12000);
@@ -996,7 +996,7 @@ func void DIA_Bennet_DJG_ARMOR_M_Info ()
 };
 
 //*********************************************************************
-//		Ich weiss, wie man die Rüstung noch mehr verbessern kann.
+//		Ich weiss, wie man die RÃ¼stung noch mehr verbessern kann.
 //*********************************************************************
 
 instance DIA_Bennet_BetterArmor		(C_INFO)
@@ -1006,7 +1006,7 @@ instance DIA_Bennet_BetterArmor		(C_INFO)
 	condition	 = 	DIA_Bennet_BetterArmor_Condition;
 	information	 = 	DIA_Bennet_BetterArmor_Info;
 	permanent	 = 	FALSE;
-	description	 =	"Je sais comment améliorer davantage une armure.";
+	description	 =	"Je sais comment amÃ©liorer davantage une armure.";
 };
 
 func int DIA_Bennet_BetterArmor_Condition ()
@@ -1020,13 +1020,13 @@ func int DIA_Bennet_BetterArmor_Condition ()
 
 func void DIA_Bennet_BetterArmor_Info ()
 {	
-	AI_Output	(other,self ,"DIA_Bennet_BetterArmor_15_00"); //Je sais comment faire pour améliorer encore cette armure.
-	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_01"); //(sourit) Je vous écoute.
-	AI_Output	(other,self ,"DIA_Bennet_BetterArmor_15_02"); //Pourquoi ne pas recouvrir les écailles de dragon de minerai magique ?
-	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_03"); //(éclate de rire) C'est exactement ce à quoi je pensais ! Vous avez raison bien sûr.
-	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_04"); //Ma dernière armure en date est la meilleure que j'aie jamais fabriquée. Elle est légère et résistante à la fois.
+	AI_Output	(other,self ,"DIA_Bennet_BetterArmor_15_00"); //Je sais comment faire pour amÃ©liorer encore cette armure.
+	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_01"); //(sourit) Je vous Ã©coute.
+	AI_Output	(other,self ,"DIA_Bennet_BetterArmor_15_02"); //Pourquoi ne pas recouvrir les Ã©cailles de dragon de minerai magiqueÂ ?
+	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_03"); //(Ã©clate de rire) C'est exactement ce Ã  quoi je pensaisÂ ! Vous avez raison bien sÃ»r.
+	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_04"); //Ma derniÃ¨re armure en date est la meilleure que j'aie jamais fabriquÃ©e. Elle est lÃ©gÃ¨re et rÃ©sistante Ã  la fois.
 	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_05"); //En un mot, elle est parfaite.
-	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_06"); //Si vous la voulez, je vous la vends. Je ne ferai pas cette offre à n'importe qui, mais le prix auquel je vous la propose couvre à peine mes frais de fabrication.
+	AI_Output 	(self ,other,"DIA_Bennet_BetterArmor_06_06"); //Si vous la voulez, je vous la vends. Je ne ferai pas cette offre Ã  n'importe qui, mais le prix auquel je vous la propose couvre Ã  peine mes frais de fabrication.
 };
 
 
@@ -1045,7 +1045,7 @@ instance DIA_Bennet_DJG_ARMOR_H		(C_INFO)
 	condition	 = 	DIA_Bennet_DJG_ARMOR_H_Condition;
 	information	 = 	DIA_Bennet_DJG_ARMOR_H_Info;
 	permanent	 = 	TRUE;
-	description	 =	"Armure lourde chasseur de dragons : Prot. : Armes 90, Flèches 90. (20 000 po)"; //Wenn ändern, dann bitte auch in der Info-Instanz. s.u.
+	description	 =	"Armure lourde chasseur de dragons : Prot. : Armes 90, FlÃ¨ches 90. (20 000 po)"; //Wenn Ã¤ndern, dann bitte auch in der Info-Instanz. s.u.
 };
 
 func int DIA_Bennet_DJG_ARMOR_H_Condition ()
@@ -1064,8 +1064,8 @@ func void DIA_Bennet_DJG_ARMOR_H_Info ()
 	
 	if (Npc_HasItems (other,itmi_Gold) >= 20000)
 	{
-		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_H_06_01"); //C'est la meilleure armure que j'aie jamais forgée.
-		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_H_06_02"); //Un véritable chef-d'œuvre.
+		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_H_06_01"); //C'est la meilleure armure que j'aie jamais forgÃ©e.
+		AI_Output 	(self ,other,"DIA_Bennet_DJG_ARMOR_H_06_02"); //Un vÃ©ritable chef-d'Å“uvre.
 		
 		B_GiveInvItems (other,self,ItMi_Gold,20000);
 		CreateInvItems (self,ITAR_DJG_H,1);
@@ -1080,7 +1080,7 @@ func void DIA_Bennet_DJG_ARMOR_H_Info ()
 	
 };
 //*********************************************************************
-//	Kannst du auch Schmuckstücke reparieren?
+//	Kannst du auch SchmuckstÃ¼cke reparieren?
 //*********************************************************************
 instance DIA_Bennet_RepairNecklace		(C_INFO)
 {
@@ -1089,7 +1089,7 @@ instance DIA_Bennet_RepairNecklace		(C_INFO)
 	condition	 = 	DIA_Bennet_RepairNecklace_Condition;
 	information	 = 	DIA_Bennet_RepairNecklace_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Pouvez-vous réparer un bijou ?";
+	description	 = 	"Pouvez-vous rÃ©parer un bijou ?";
 };
 
 func int DIA_Bennet_RepairNecklace_Condition ()
@@ -1104,13 +1104,13 @@ func int DIA_Bennet_RepairNecklace_Condition ()
 
 func void DIA_Bennet_RepairNecklace_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_RepairNecklace_15_00"); //Vous réparez les bijoux ?
-	AI_Output			(self, other, "DIA_Bennet_RepairNecklace_06_01"); //Ça dépend. Je dois d'abord voir la pièce avant de pouvoir vous répondre.
+	AI_Output			(other, self, "DIA_Bennet_RepairNecklace_15_00"); //Vous rÃ©parez les bijouxÂ ?
+	AI_Output			(self, other, "DIA_Bennet_RepairNecklace_06_01"); //Ã‡a dÃ©pend. Je dois d'abord voir la piÃ¨ce avant de pouvoir vous rÃ©pondre.
 	
 	if (MIS_RescueBennet != LOG_SUCCESS)
 	{
 		AI_Output (self ,other,"DIA_Bennet_RepairNecklace_06_02"); //Il faut aussi que je sorte d'ici.
-		AI_Output (self ,other,"DIA_Bennet_RepairNecklace_06_03"); //D'ici là, je ne pourrai manifestement rien faire.
+		AI_Output (self ,other,"DIA_Bennet_RepairNecklace_06_03"); //D'ici lÃ , je ne pourrai manifestement rien faire.
 	};	
 	
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE; 	
@@ -1130,7 +1130,7 @@ instance DIA_Bennet_ShowInnosEye		(C_INFO)
 	condition	 = 	DIA_Bennet_ShowInnosEye_Condition;
 	information	 = 	DIA_Bennet_ShowInnosEye_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Pouvez-vous jeter un coup d'œil à cette amulette ?";
+	description	 = 	"Pouvez-vous jeter un coup d'Å“il Ã  cette amulette ?";
 };
 
 func int DIA_Bennet_ShowInnosEye_Condition ()
@@ -1145,22 +1145,22 @@ func int DIA_Bennet_ShowInnosEye_Condition ()
 
 func void DIA_Bennet_ShowInnosEye_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_ShowInnosEye_15_00"); //Pouvez-vous jeter un œil à cette amulette ?
-	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_01"); //Bien sûr. Montrez-la moi.
-	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_02"); //Hmm... très jolie pièce. La monture est cassée, mais je pense pouvoir la réparer.
-	AI_Output			(other, self, "DIA_Bennet_ShowInnosEye_15_03"); //Combien de temps cela vous prendra-t-il ?
+	AI_Output			(other, self, "DIA_Bennet_ShowInnosEye_15_00"); //Pouvez-vous jeter un Å“il Ã  cette amuletteÂ ?
+	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_01"); //Bien sÃ»r. Montrez-la moi.
+	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_02"); //Hmm... trÃ¨s jolie piÃ¨ce. La monture est cassÃ©e, mais je pense pouvoir la rÃ©parer.
+	AI_Output			(other, self, "DIA_Bennet_ShowInnosEye_15_03"); //Combien de temps cela vous prendra-t-ilÂ ?
 	if (MIS_REscueBennet != LOG_SUCCESS)
 	{
-		AI_Output (self ,other,"DIA_Bennet_ShowInnosEye_06_04"); //Pour le moment, je suis coincé ici et je ne vois pas de forge dans les environs. Vous, si ?
-		AI_Output (self ,other,"DIA_Bennet_ShowInnosEye_06_05"); //Si j'étais dans ma forge, une journée me suffirait. Mais il faudrait déjà commencer par me sortir d'ici bien sûr.
+		AI_Output (self ,other,"DIA_Bennet_ShowInnosEye_06_04"); //Pour le moment, je suis coincÃ© ici et je ne vois pas de forge dans les environs. Vous, siÂ ?
+		AI_Output (self ,other,"DIA_Bennet_ShowInnosEye_06_05"); //Si j'Ã©tais dans ma forge, une journÃ©e me suffirait. Mais il faudrait dÃ©jÃ  commencer par me sortir d'ici bien sÃ»r.
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_06"); //Si vous me la laissez maintenant, elle sera prête demain.
-	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_07"); //Et je vous fais ça gratuitement. Vous m'avez sorti de prison après tout.
+	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_06"); //Si vous me la laissez maintenant, elle sera prÃªte demain.
+	AI_Output			(self, other, "DIA_Bennet_ShowInnosEye_06_07"); //Et je vous fais Ã§a gratuitement. Vous m'avez sorti de prison aprÃ¨s tout.
 	};
 	
-	B_LogEntry (TOPIC_INNOSEYE, "Bennet est le forgeron dont j'ai besoin pour réparer l'amulette.");
+	B_LogEntry (TOPIC_INNOSEYE, "Bennet est le forgeron dont j'ai besoin pour rÃ©parer l'amulette.");
 
 	MIS_SCKnowsInnosEyeIsBroken  = TRUE;
 };
@@ -1175,7 +1175,7 @@ instance DIA_Bennet_GiveInnosEye		(C_INFO)
 	condition	 = 	DIA_Bennet_GiveInnosEye_Condition;
 	information	 = 	DIA_Bennet_GiveInnosEye_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Voici l'amulette, réparez-la s'il vous plaît.";
+	description	 = 	"Voici l'amulette, rÃ©parez-la s'il vous plaÃ®t.";
 };
 
 func int DIA_Bennet_GiveInnosEye_Condition ()
@@ -1191,9 +1191,9 @@ func int DIA_Bennet_GiveInnosEye_Condition ()
 
 func void DIA_Bennet_GiveInnosEye_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_GiveInnosEye_15_00"); //Voici l'amulette. Réparez-la pour moi, s'il vous plaît.
-	AI_Output			(self, other, "DIA_Bennet_GiveInnosEye_06_01"); //Très bien. La nouvelle monture sera finie demain.
-	AI_Output			(self, other, "DIA_Bennet_GiveInnosEye_06_02"); //Vous n'avez qu'à revenir la chercher à ce moment là.
+	AI_Output			(other, self, "DIA_Bennet_GiveInnosEye_15_00"); //Voici l'amulette. RÃ©parez-la pour moi, s'il vous plaÃ®t.
+	AI_Output			(self, other, "DIA_Bennet_GiveInnosEye_06_01"); //TrÃ¨s bien. La nouvelle monture sera finie demain.
+	AI_Output			(self, other, "DIA_Bennet_GiveInnosEye_06_02"); //Vous n'avez qu'Ã  revenir la chercher Ã  ce moment lÃ .
 	
 	Npc_RemoveInvItems	(other,	ItMi_InnosEye_Broken_Mis,1);
 	AI_PrintScreen (Print_InnoseyeGiven, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
@@ -1213,7 +1213,7 @@ instance DIA_Bennet_GetInnosEye		(C_INFO)
 	condition	 = 	DIA_Bennet_GetInnosEye_Condition;
 	information	 = 	DIA_Bennet_GetInnosEye_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"L'amulette est-elle prête ?";
+	description	 = 	"L'amulette est-elle prÃªte ?";
 };
 
 func int DIA_Bennet_GetInnosEye_Condition ()
@@ -1227,7 +1227,7 @@ func int DIA_Bennet_GetInnosEye_Condition ()
 
 func void DIA_Bennet_GetInnosEye_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_GetInnosEye_15_00"); //L'amulette est-elle prête ?
+	AI_Output			(other, self, "DIA_Bennet_GetInnosEye_15_00"); //L'amulette est-elle prÃªteÂ ?
 	
 	if (Bennet_RepairDay < Wld_GetDay())
 	{
@@ -1237,10 +1237,10 @@ func void DIA_Bennet_GetInnosEye_Info ()
 		CreateInvItems (other,ItMi_InnosEye_Broken_Mis,1);
 		AI_PrintScreen (Print_InnoseyeGet, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 	
-		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_02"); //Il m'a fallu refaire la monture de la pierre précieuse.
-		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_03"); //J'y ai travaillé toute la nuit, mais l'amulette est comme neuve désormais.
+		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_02"); //Il m'a fallu refaire la monture de la pierre prÃ©cieuse.
+		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_03"); //J'y ai travaillÃ© toute la nuit, mais l'amulette est comme neuve dÃ©sormais.
 		
-		B_LogEntry (TOPIC_INNOSEYE, "L'amulette est enfin réparée. Bennet a fait du bon travail.");
+		B_LogEntry (TOPIC_INNOSEYE, "L'amulette est enfin rÃ©parÃ©e. Bennet a fait du bon travail.");
 		
 		MIS_Bennet_InnosEyeRepairedSetting   = LOG_SUCCESS;
 		
@@ -1249,8 +1249,8 @@ func void DIA_Bennet_GetInnosEye_Info ()
 	else
 	{	//Hack Mattes
 		B_SayBennetLATER();
-		//AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_04"); //Nein, noch nicht. Komm später wieder.
-		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_05"); //Si vous n'arrêtez pas de m'interrompre, il me faudra encore plus de temps.
+		//AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_04"); //Nein, noch nicht. Komm spÃ¤ter wieder.
+		AI_Output			(self, other, "DIA_Bennet_GetInnosEye_06_05"); //Si vous n'arrÃªtez pas de m'interrompre, il me faudra encore plus de temps.
 		
 		AI_StopProcessInfos (self);
 	};	 
@@ -1301,7 +1301,7 @@ instance DIA_Bennet_DRACHENEIER		(C_INFO)
 	information	 = 	DIA_Bennet_DRACHENEIER_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Pouvez-vous faire quelque chose avec des œufs de dragon ?";
+	description	 = 	"Pouvez-vous faire quelque chose avec des Å“ufs de dragon ?";
 };
 
 func int DIA_Bennet_DRACHENEIER_Condition ()
@@ -1318,12 +1318,12 @@ var int BennetsDragonEggOffer;
 var int DRACHENEIER_angebotenXP_OneTime;
 func void DIA_Bennet_DRACHENEIER_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_15_00"); //Pouvez-vous travailler les œufs de dragon ?
+	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_15_00"); //Pouvez-vous travailler les Å“ufs de dragonÂ ?
 	if (DRACHENEIER_angebotenXP_OneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_01"); //Des œufs de dragon ? Comment diable avez-vous réussi à vous en procurer ?
-	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_15_02"); //Je les ai pris aux hommes-lézards.
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_03"); //Montrez-moi ça.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_01"); //Des Å“ufs de dragonÂ ? Comment diable avez-vous rÃ©ussi Ã  vous en procurerÂ ?
+	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_15_02"); //Je les ai pris aux hommes-lÃ©zards.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_03"); //Montrez-moi Ã§a.
 	};
 
 	Npc_RemoveInvItems	(other,	ItAt_DragonEgg_MIS,	1);
@@ -1331,33 +1331,33 @@ func void DIA_Bennet_DRACHENEIER_Info ()
 
 	if (DRACHENEIER_angebotenXP_OneTime == FALSE)
 	{
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_04"); //Hmm... voilà un matériau extrêmement résistant... Idéal pour la finition des armures, à condition qu'ils éclosent, bien sûr.
-	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_15_05"); //Alors, ça vous intéresse, oui ou non ?
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_06"); //Bien sûr ! Donnez-le moi.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_04"); //Hmm... voilÃ  un matÃ©riau extrÃªmement rÃ©sistant... IdÃ©al pour la finition des armures, Ã  condition qu'ils Ã©closent, bien sÃ»r.
+	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_15_05"); //Alors, Ã§a vous intÃ©resse, oui ou nonÂ ?
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_06"); //Bien sÃ»rÂ ! Donnez-le moi.
 	}
 	else
 	{
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_07"); //Combien de fois allez-vous me le montrer ? Vous voulez que je vous l'achète ou pas ?
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_07"); //Combien de fois allez-vous me le montrerÂ ? Vous voulez que je vous l'achÃ¨te ou pasÂ ?
 	};
 
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_08"); //Je vous offre... hmm... disons 300 pièces d'or par œuf que vous me ramènerez.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_06_08"); //Je vous offre... hmm... disons 300 piÃ¨ces d'or par Å“uf que vous me ramÃ¨nerez.
 
 	Info_ClearChoices	(DIA_Bennet_DRACHENEIER);
-	Info_AddChoice	(DIA_Bennet_DRACHENEIER, "Alors économisez votre or, je crois que je vais les garder.", DIA_Bennet_DRACHENEIER_nein );
-	Info_AddChoice	(DIA_Bennet_DRACHENEIER, "Ce sont des œufs de dragon, pas de poule…", DIA_Bennet_DRACHENEIER_mehr );
-	Info_AddChoice	(DIA_Bennet_DRACHENEIER, "Marché conclu.", DIA_Bennet_DRACHENEIER_ok );
+	Info_AddChoice	(DIA_Bennet_DRACHENEIER, "Alors Ã©conomisez votre or, je crois que je vais les garder.", DIA_Bennet_DRACHENEIER_nein );
+	Info_AddChoice	(DIA_Bennet_DRACHENEIER, "Ce sont des Å“ufs de dragon, pas de pouleâ€¦", DIA_Bennet_DRACHENEIER_mehr );
+	Info_AddChoice	(DIA_Bennet_DRACHENEIER, "MarchÃ© conclu.", DIA_Bennet_DRACHENEIER_ok );
 
 	IF (DRACHENEIER_angebotenXP_OneTime == FALSE)
 	{
-	B_LogEntry (TOPIC_DRACHENEIER,"Bennet veut bien acheter un bon prix tous les œufs de dragon que je trouverai."); 
+	B_LogEntry (TOPIC_DRACHENEIER,"Bennet veut bien acheter un bon prix tous les Å“ufs de dragon que je trouverai."); 
 	B_GivePlayerXP (XP_DJG_BringDragonEgg);
 	DRACHENEIER_angebotenXP_OneTime = TRUE;
 	};
 };
 func void DIA_Bennet_DRACHENEIER_ok ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_ok_15_00"); //Marché conclu.
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_01"); //Excellent !
+	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_ok_15_00"); //MarchÃ© conclu.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_01"); //ExcellentÂ !
 	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_02"); //Dans ce cas, amenez-m'en autant que vous le pourrez.
 
 	if (BennetsDragonEggOffer != 350)
@@ -1368,21 +1368,21 @@ func void DIA_Bennet_DRACHENEIER_ok ()
 	CreateInvItems (self, ItMi_Gold, BennetsDragonEggOffer);									
 	B_GiveInvItems (self, other, ItMi_Gold,	BennetsDragonEggOffer);
 
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_03"); //Euh... vous dites l'avoir pris aux hommes-lézards ?
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_03"); //Euh... vous dites l'avoir pris aux hommes-lÃ©zardsÂ ?
 	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_ok_15_04"); //Exact.
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_05"); //Que je sache, ils vivent généralement dans des grottes.
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_06"); //Peut-être en trouverez-vous davantage si vous explorez les cavernes de la région.
-	B_LogEntry (TOPIC_DRACHENEIER,"Bennet pense que je devrais chercher les œufs dans les cavernes de Khorinis. On raconte que bon nombre d'entre elles sont habitées par le peuple lézard."); 
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_05"); //Que je sache, ils vivent gÃ©nÃ©ralement dans des grottes.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_06"); //Peut-Ãªtre en trouverez-vous davantage si vous explorez les cavernes de la rÃ©gion.
+	B_LogEntry (TOPIC_DRACHENEIER,"Bennet pense que je devrais chercher les Å“ufs dans les cavernes de Khorinis. On raconte que bon nombre d'entre elles sont habitÃ©es par le peuple lÃ©zard."); 
 	
-	AI_Output (self, other, "DIA_Bennet_DRACHENEIER_ok_06_07"); //Tenez, cette carte vous aidera à les trouver.
+	AI_Output (self, other, "DIA_Bennet_DRACHENEIER_ok_06_07"); //Tenez, cette carte vous aidera Ã  les trouver.
 	CreateInvItems (self, ItWr_Map_Caves_MIS, 1);									
 	B_GiveInvItems (self, other, ItWr_Map_Caves_MIS,1);
-	B_LogEntry (TOPIC_DRACHENEIER,"Il m'a donné la carte des cavernes pour m'aider."); 
+	B_LogEntry (TOPIC_DRACHENEIER,"Il m'a donnÃ© la carte des cavernes pour m'aider."); 
 	
 	if (1 == 2) //MH: Besser Karte direkt (war sowieso so - wegen Bug)
 	{
-		AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_08"); //Mais il vous faut tout d'abord aller voir un cartographe afin de vous procurer une carte indiquant l'emplacement de toutes les grottes. Ce serait dommage d'en rater !
-		B_LogEntry (TOPIC_DRACHENEIER,"Je devrais pouvoir obtenir la carte des cavernes chez un cartographe de la ville. C'est juste pour s'assurer de ne rater aucun œuf."); 
+		AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_ok_06_08"); //Mais il vous faut tout d'abord aller voir un cartographe afin de vous procurer une carte indiquant l'emplacement de toutes les grottes. Ce serait dommage d'en raterÂ !
+		B_LogEntry (TOPIC_DRACHENEIER,"Je devrais pouvoir obtenir la carte des cavernes chez un cartographe de la ville. C'est juste pour s'assurer de ne rater aucun Å“uf."); 
 	};
 	
 	Info_ClearChoices	(DIA_Bennet_DRACHENEIER);
@@ -1390,14 +1390,14 @@ func void DIA_Bennet_DRACHENEIER_ok ()
 
 func void DIA_Bennet_DRACHENEIER_mehr ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_mehr_15_00"); //Je vous rappelle qu'il s'agit d'œufs de dragon, pas d'œufs de poule.
-	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_mehr_06_01"); //(exaspéré) Bon d'accord, disons 350 pièce. Mais je ne peux pas aller au-delà, sans quoi je ne m'en sortirai pas financièrement.
+	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_mehr_15_00"); //Je vous rappelle qu'il s'agit d'Å“ufs de dragon, pas d'Å“ufs de poule.
+	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_mehr_06_01"); //(exaspÃ©rÃ©) Bon d'accord, disons 350 piÃ¨ce. Mais je ne peux pas aller au-delÃ , sans quoi je ne m'en sortirai pas financiÃ¨rement.
 	BennetsDragonEggOffer =	350;
 };
 
 func void DIA_Bennet_DRACHENEIER_nein ()
 {
-	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_nein_15_00"); //Dans ce cas, gardez votre argent. Moi, je conserve mon œuf.
+	AI_Output			(other, self, "DIA_Bennet_DRACHENEIER_nein_15_00"); //Dans ce cas, gardez votre argent. Moi, je conserve mon Å“uf.
 	AI_Output			(self, other, "DIA_Bennet_DRACHENEIER_nein_06_01"); //Si jamais vous changez d'avis, faites-le moi savoir.
 
 	CreateInvItems (other, ItAt_DragonEgg_MIS, 1);									
@@ -1418,7 +1418,7 @@ instance DIA_Bennet_EierBringen		(C_INFO)
 	information	 = 	DIA_Bennet_EierBringen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Etes-vous intéressé par d'autres œufs de dragon ?";
+	description	 = 	"Etes-vous intÃ©ressÃ© par d'autres Å“ufs de dragon ?";
 };
 
 func int DIA_Bennet_EierBringen_Condition ()
@@ -1436,8 +1436,8 @@ var int DragonEggCounter;
 
 func void DIA_Bennet_EierBringen_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_EierBringen_15_00"); //Vous êtes toujours intéressé par les œufs de dragon ?
-	AI_Output			(self, other, "DIA_Bennet_EierBringen_06_01"); //Bien sûr.
+	AI_Output			(other, self, "DIA_Bennet_EierBringen_15_00"); //Vous Ãªtes toujours intÃ©ressÃ© par les Å“ufs de dragonÂ ?
+	AI_Output			(self, other, "DIA_Bennet_EierBringen_06_01"); //Bien sÃ»r.
 
 	var int DragonEggCount;
 	var int XP_DJG_BringDragonEggs;
@@ -1449,7 +1449,7 @@ func void DIA_Bennet_EierBringen_Info ()
 
 	if (DragonEggCount == 1)
 		{
-			AI_Output		(other, self, "DIA_Bennet_EierBringen_15_02"); //Tenez, en voilà un autre.
+			AI_Output		(other, self, "DIA_Bennet_EierBringen_15_02"); //Tenez, en voilÃ  un autre.
 			B_GivePlayerXP (XP_DJG_BringDragonEgg);
 			Npc_RemoveInvItems	(other,	ItAt_DragonEgg_MIS,	1);
 			AI_PrintScreen (PRINT_ItemGegeben, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);	// "1 Gegenstand gegeben"	
@@ -1457,10 +1457,10 @@ func void DIA_Bennet_EierBringen_Info ()
 		}
 		else
 		{
-			AI_Output		(other, self, "DIA_Bennet_EierBringen_15_03"); //Tenez, en voilà d'autres.
+			AI_Output		(other, self, "DIA_Bennet_EierBringen_15_03"); //Tenez, en voilÃ  d'autres.
 
 			Npc_RemoveInvItems	(other,	ItAt_DragonEgg_MIS,	DragonEggCount);
-			concatText = ConcatStrings(IntToString(DragonEggCount), PRINT_ItemsGegeben);		// "x Gegenstände gegeben"
+			concatText = ConcatStrings(IntToString(DragonEggCount), PRINT_ItemsGegeben);		// "x GegenstÃ¤nde gegeben"
 			AI_PrintScreen (concatText, -1, YPOS_ItemGiven, FONT_ScreenSmall, 2);
 
 			XP_DJG_BringDragonEggs = (DragonEggCount * XP_DJG_BringDragonEgg);
@@ -1471,19 +1471,19 @@ func void DIA_Bennet_EierBringen_Info ()
 
 	if (DragonEggCounter <= 7)
 	{
-		AI_Output			(self, other, "DIA_Bennet_EierBringen_06_04"); //Splendide ! Donnez-moi ça. Vous avez cherché partout ? Il doit bien y en avoir d'autres, non ?
+		AI_Output			(self, other, "DIA_Bennet_EierBringen_06_04"); //SplendideÂ ! Donnez-moi Ã§a. Vous avez cherchÃ© partoutÂ ? Il doit bien y en avoir d'autres, nonÂ ?
 	}
 	else if	(DragonEggCounter <= 11)
 	{
-		AI_Output			(self, other, "DIA_Bennet_EierBringen_06_05"); //Mais où les trouvez-vous donc ? J'imagine qu'il ne doit plus guère en rester maintenant...
+		AI_Output			(self, other, "DIA_Bennet_EierBringen_06_05"); //Mais oÃ¹ les trouvez-vous doncÂ ? J'imagine qu'il ne doit plus guÃ¨re en rester maintenant...
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Bennet_EierBringen_06_06"); //Je ne pense pas que vous en trouviez encore beaucoup. Et de toute façon, j'en ai déjà tellement que je ne sais pour ainsi dire pas quoi en faire.
+		AI_Output			(self, other, "DIA_Bennet_EierBringen_06_06"); //Je ne pense pas que vous en trouviez encore beaucoup. Et de toute faÃ§on, j'en ai dÃ©jÃ  tellement que je ne sais pour ainsi dire pas quoi en faire.
 		TOPIC_END_DRACHENEIER = TRUE;
 	};
 
-	AI_Output			(self, other, "DIA_Bennet_EierBringen_06_07"); //Oh, c'est vrai... voilà votre argent.
+	AI_Output			(self, other, "DIA_Bennet_EierBringen_06_07"); //Oh, c'est vrai... voilÃ  votre argent.
 
 	DragonEggGeld	= (DragonEggCount * BennetsDragonEggOffer);
 
@@ -1535,7 +1535,7 @@ instance DIA_Bennet_KnowWhereEnemy		(C_INFO)
 	condition	 = 	DIA_Bennet_KnowWhereEnemy_Condition;
 	information	 = 	DIA_Bennet_KnowWhereEnemy_Info;
 	PERMANENT 	 =  TRUE;
-	description	 = 	"Je dois me rendre sur une île. Je pourrais avoir besoin d'un forgeron.";
+	description	 = 	"Je dois me rendre sur une Ã®le. Je pourrais avoir besoin d'un forgeron.";
 };
 func int DIA_Bennet_KnowWhereEnemy_Condition ()
 {	
@@ -1547,19 +1547,19 @@ func int DIA_Bennet_KnowWhereEnemy_Condition ()
 };
 func void DIA_Bennet_KnowWhereEnemy_Info ()
 {
-	AI_Output			(other, self, "DIA_Bennet_KnowWhereEnemy_15_00"); //Je dois me rendre sur une île. Un forgeron pourrait m'être utile.
-	AI_Output			(self, other, "DIA_Bennet_KnowWhereEnemy_06_01"); //Et vous avez pensé à moi ?
-	AI_Output			(other, self, "DIA_Bennet_KnowWhereEnemy_15_02"); //Oui. Qu'en dites-vous ? Ça vous permettrait au moins de partir d'ici.
-	AI_Output			(self, other, "DIA_Bennet_KnowWhereEnemy_06_03"); //Ce sera forcément mieux que la ferme d'Onar. Même l'enfer serait préférable à ce trou paumé. D'accord, je suis partant.
+	AI_Output			(other, self, "DIA_Bennet_KnowWhereEnemy_15_00"); //Je dois me rendre sur une Ã®le. Un forgeron pourrait m'Ãªtre utile.
+	AI_Output			(self, other, "DIA_Bennet_KnowWhereEnemy_06_01"); //Et vous avez pensÃ© Ã  moiÂ ?
+	AI_Output			(other, self, "DIA_Bennet_KnowWhereEnemy_15_02"); //Oui. Qu'en dites-vous ? Ã‡a vous permettrait au moins de partir d'ici.
+	AI_Output			(self, other, "DIA_Bennet_KnowWhereEnemy_06_03"); //Ce sera forcÃ©ment mieux que la ferme d'Onar. MÃªme l'enfer serait prÃ©fÃ©rable Ã  ce trou paumÃ©. D'accord, je suis partant.
 	
 	Log_CreateTopic (TOPIC_Crew, LOG_MISSION);   
 	Log_SetTopicStatus(TOPIC_Crew, LOG_RUNNING); 
-	B_LogEntry (TOPIC_Crew,"Bennet peut partir. Sa maîtrise de la forge est sans égale. Je suis sûr qu'il pourrait m'apprendre quelques trucs.");
+	B_LogEntry (TOPIC_Crew,"Bennet peut partir. Sa maÃ®trise de la forge est sans Ã©gale. Je suis sÃ»r qu'il pourrait m'apprendre quelques trucs.");
 		
 	if (crewmember_count >= Max_Crew)
 	{
-		AI_Output			(other,self , "DIA_Bennet_KnowWhereEnemy_15_04"); //Mon équipage est complet à l'heure actuelle.
-		AI_Output			(self, other, "DIA_Bennet_KnowWhereEnemy_06_05"); //Alors, débarrassez-vous de quelqu'un.
+		AI_Output			(other,self , "DIA_Bennet_KnowWhereEnemy_15_04"); //Mon Ã©quipage est complet Ã  l'heure actuelle.
+		AI_Output			(self, other, "DIA_Bennet_KnowWhereEnemy_06_05"); //Alors, dÃ©barrassez-vous de quelqu'un.
 	}
 	else 
 	{
@@ -1596,7 +1596,7 @@ FUNC VOID DIA_Bennet_KnowWhereEnemy_Yes ()
 FUNC VOID DIA_Bennet_KnowWhereEnemy_No ()
 {
 	AI_Output (other,self ,"DIA_Bennet_KnowWhereEnemy_No_15_00"); //Quand j'aurai besoin de vous, je vous le ferai savoir.
-	AI_Output (self ,other,"DIA_Bennet_KnowWhereEnemy_No_06_01"); //Très bien. D'ici là, je reste ici.
+	AI_Output (self ,other,"DIA_Bennet_KnowWhereEnemy_No_06_01"); //TrÃ¨s bien. D'ici lÃ , je reste ici.
 
 	Bennet_IsOnBoard	 = LOG_OBSOLETE;
 	Info_ClearChoices (DIA_Bennet_KnowWhereEnemy);
@@ -1625,7 +1625,7 @@ func int DIA_Bennet_LeaveMyShip_Condition ()
 func void DIA_Bennet_LeaveMyShip_Info ()
 {
 	AI_Output			(other, self, "DIA_Bennet_LeaveMyShip_15_00"); //Je vais me trouver un autre forgeron.
-	AI_Output			(self, other, "DIA_Bennet_LeaveMyShip_06_01"); //Vous changez d'avis d'une minute à l'autre, vous. Décidez-vous une bonne fois pour toutes ! Quand vous aurez enfin pris votre décision, faites-le moi savoir.
+	AI_Output			(self, other, "DIA_Bennet_LeaveMyShip_06_01"); //Vous changez d'avis d'une minute Ã  l'autre, vous. DÃ©cidez-vous une bonne fois pour toutesÂ ! Quand vous aurez enfin pris votre dÃ©cision, faites-le moi savoir.
 	
 	Bennet_IsOnBoard	 = LOG_OBSOLETE;				//Log_Obsolete ->der Sc kann ihn wiederholen, Log_Failed ->hat die Schnauze voll, kommt nicht mehr mit! 
 	crewmember_Count = (Crewmember_Count -1);
@@ -1634,7 +1634,7 @@ func void DIA_Bennet_LeaveMyShip_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Ich habs mir überlegt!
+//	Ich habs mir Ã¼berlegt!
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Bennet_StillNeedYou		(C_INFO)
 {
@@ -1658,8 +1658,8 @@ func int DIA_Bennet_StillNeedYou_Condition ()
 
 func void DIA_Bennet_StillNeedYou_Info ()
 {
-	AI_Output	(other, self, "DIA_Bennet_StillNeedYou_15_00"); //Revenez, je n'arrive pas à trouver d'autre forgeron.
-	AI_Output	(self, other, "DIA_Bennet_StillNeedYou_06_01"); //(irrité) Ben voyons ! Ce n'est que moi, alors vous pouvez bien me traiter comme un chien ! Je vous retrouve sur les quais.
+	AI_Output	(other, self, "DIA_Bennet_StillNeedYou_15_00"); //Revenez, je n'arrive pas Ã  trouver d'autre forgeron.
+	AI_Output	(self, other, "DIA_Bennet_StillNeedYou_06_01"); //(irritÃ©) Ben voyonsÂ ! Ce n'est que moi, alors vous pouvez bien me traiter comme un chienÂ ! Je vous retrouve sur les quais.
 		
 	self.flags 		 = NPC_FLAG_IMMORTAL;
 	Bennet_IsOnBoard	 = LOG_SUCCESS;

@@ -47,47 +47,47 @@ func int DIA_Gestath_HALLO_Condition ()
 
 func void DIA_Gestath_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //Comment ça se passe ?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(pince-sans-rire) C'est courageux de votre part d'être venu ici. Vous vous êtes perdu, j'imagine...
+	AI_Output			(other, self, "DIA_Gestath_HALLO_15_00"); //Comment Ã§a se passe ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_09_01"); //(pince-sans-rire) C'est courageux de votre part d'Ãªtre venu ici. Vous vous Ãªtes perdu, j'imagine...
 	Gestath_TeachAnimalTrophy = TRUE;
 	Info_ClearChoices	(DIA_Gestath_HALLO);
-	Info_AddChoice	(DIA_Gestath_HALLO, "Qu'y a-t-il à voir par ici ?", DIA_Gestath_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Qu'y a-t-il Ã  voir par ici ?", DIA_Gestath_HALLO_waszusehen );
 	Info_AddChoice	(DIA_Gestath_HALLO, "Que faites-vous ici ?", DIA_Gestath_HALLO_was );
 };
 func void DIA_Gestath_HALLO_plate ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //Sacrée armure que vous avez là.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Oui. Difficile de se la procurer. Elle est faite de plaques de foreurs des mines. C'est un certain Wolf qui me l'a fabriquée.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Autrefois, j'étais prisonnier ici, à la colonie. Je lui ai amené quelques plaques de foreurs des mines et, quelques jours plus tard, l'armure était terminée. C'est un type bien.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_15_00"); //SacrÃ©e armure que vous avez lÃ .
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_01"); //Oui. Difficile de se la procurer. Elle est faite de plaques de foreurs des mines. C'est un certain Wolf qui me l'a fabriquÃ©e.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_09_02"); //Autrefois, j'Ã©tais prisonnier ici, Ã  la colonie. Je lui ai amenÃ© quelques plaques de foreurs des mines et, quelques jours plus tard, l'armure Ã©tait terminÃ©e. C'est un type bien.
 
 	Wolf_ProduceCrawlerArmor = TRUE;
 	
 	Info_AddChoice	(DIA_Gestath_HALLO, DIALOG_BACK, DIA_Gestath_HALLO_Back );
-	Info_AddChoice	(DIA_Gestath_HALLO, "Où se trouve ce Wolf ?", DIA_Gestath_HALLO_plate_woWolf );
+	Info_AddChoice	(DIA_Gestath_HALLO, "OÃ¹ se trouve ce Wolf ?", DIA_Gestath_HALLO_plate_woWolf );
 };
 func void DIA_Gestath_HALLO_plate_woWolf ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //Où est ce Wolf désormais ?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Cela fait quelque temps que je ne l'ai pas vu. A l'époque, il était mercenaire ici, à la colonie.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //J'imagine qu'il n'a pas changé de métier.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_plate_woWolf_15_00"); //OÃ¹ est ce Wolf dÃ©sormaisÂ ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_01"); //Cela fait quelque temps que je ne l'ai pas vu. A l'Ã©poque, il Ã©tait mercenaire ici, Ã  la colonie.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_plate_woWolf_09_02"); //J'imagine qu'il n'a pas changÃ© de mÃ©tier.
 };
 
 func void DIA_Gestath_HALLO_was ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Qu'est-ce que vous faites ici ?
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_00"); //Qu'est-ce que vous faites iciÂ ?
 	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_01"); //Je gagne ma vie.
-	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Ici, au milieu de nulle part ?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Je suis chasseur et je me spécialise dans les cas... disons, difficiles.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //Lézards de feu, foreurs des mines, draco-saurinides... bref, tout ce que les autres refusent de chasser. Ça me permet de gagner ma vie.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_was_15_02"); //Ici, au milieu de nulle partÂ ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_03"); //Je suis chasseur et je me spÃ©cialise dans les cas... disons, difficiles.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_was_09_04"); //LÃ©zards de feu, foreurs des mines, draco-saurinides... bref, tout ce que les autres refusent de chasser. Ã‡a me permet de gagner ma vie.
 	
-	Info_AddChoice	(DIA_Gestath_HALLO, "Vous portez une sacrée armure.", DIA_Gestath_HALLO_plate );
+	Info_AddChoice	(DIA_Gestath_HALLO, "Vous portez une sacrÃ©e armure.", DIA_Gestath_HALLO_plate );
 };
 
 func void DIA_Gestath_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Qu'y a-t-il à voir ici ?
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Des lézards de feu, des orques et je ne sais quoi d'autre. Plus loin dans les hautes plaines, je ne sais pas. Je n'y suis jamais allé.
-	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Et je vous déconseille d'ailleurs d'essayer. Les bestioles qui y vivent ont l'air tout sauf amicales.
+	AI_Output			(other, self, "DIA_Gestath_HALLO_waszusehen_15_00"); //Qu'y a-t-il Ã  voir iciÂ ?
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_01"); //Des lÃ©zards de feu, des orques et je ne sais quoi d'autre. Plus loin dans les hautes plaines, je ne sais pas. Je n'y suis jamais allÃ©.
+	AI_Output			(self, other, "DIA_Gestath_HALLO_waszusehen_09_02"); //Et je vous dÃ©conseille d'ailleurs d'essayer. Les bestioles qui y vivent ont l'air tout sauf amicales.
 };
 
 func void DIA_Gestath_HALLO_Back ()
@@ -106,7 +106,7 @@ instance DIA_Gestath_Drachen		(C_INFO)
 	information	 = 	DIA_Gestath_Drachen_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Savez-vous dépecer les dragons ?";
+	description	 = 	"Savez-vous dÃ©pecer les dragons ?";
 };
 var int Gestath_DragonTrophy;
 
@@ -121,14 +121,14 @@ func int DIA_Gestath_Drachen_Condition ()
 
 func void DIA_Gestath_Drachen_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Vous savez aussi comment vider un dragon ?
+	AI_Output			(other, self, "DIA_Gestath_Drachen_15_00"); //Vous savez aussi comment vider un dragonÂ ?
 	if (Kapitel < 4)
 	{
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(éclate de rire) Demandez-le moi plus tard, quand vous serez prêt à essayer d'accord ?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_01"); //(Ã©clate de rire) Demandez-le moi plus tard, quand vous serez prÃªt Ã  essayer d'accordÂ ?
 	}
 	else
 	{	
-		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Hmm... Oui. Pourquoi pas ?
+		AI_Output			(self, other, "DIA_Gestath_Drachen_09_02"); //Hmm... Oui. Pourquoi pasÂ ?
 		Gestath_DragonTrophy = TRUE;
 	};
 };
@@ -143,7 +143,7 @@ instance DIA_Gestath_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Gestath_TEACHHUNTING_Condition;
 	information	 = 	DIA_Gestath_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Apprenez-moi à dépecer les animaux.";
+	description	 = 	"Apprenez-moi Ã  dÃ©pecer les animaux.";
 };
 
 func int DIA_Gestath_TEACHHUNTING_Condition ()
@@ -157,7 +157,7 @@ func int DIA_Gestath_TEACHHUNTING_Condition ()
 var int DIA_Gestath_TEACHHUNTING_OneTime;
 func void DIA_Gestath_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Apprenez-moi à vider les animaux.
+	AI_Output			(other, self, "DIA_Gestath_TEACHHUNTING_15_00"); //Apprenez-moi Ã  vider les animaux.
 	if 	(
 			(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_FireTongue] == FALSE)
 			||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_CrawlerPlate] == FALSE)
@@ -174,12 +174,12 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 			{
 				if (DIA_Gestath_TEACHHUNTING_OneTime == FALSE)
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Pourquoi pas ? J'en ai suffisamment en ce moment.
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_01"); //Pourquoi pasÂ ? J'en ai suffisamment en ce moment.
 						DIA_Gestath_TEACHHUNTING_OneTime = TRUE;
 					}
 				else
 					{
-						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Qu'est-ce que vous voulez savoir ?
+						AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_09_02"); //Qu'est-ce que vous voulez savoirÂ ?
 					};
 	
 				Info_AddChoice		(DIA_Gestath_TEACHHUNTING, DIALOG_BACK, DIA_Gestath_TEACHHUNTING_BACK);
@@ -205,7 +205,7 @@ func void DIA_Gestath_TEACHHUNTING_Info ()
 				{	
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonScale] == FALSE)
 					{ 
-						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Retirer écailles de dragon",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
+						Info_AddChoice	(DIA_Gestath_TEACHHUNTING, B_BuildLearnString ("Retirer Ã©cailles de dragon",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_DragonScale)),  DIA_Gestath_TEACHHUNTING_DragonScale);
 					};
 					if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DragonBlood] == FALSE)
 					{ 
@@ -228,7 +228,7 @@ func void DIA_Gestath_TEACHHUNTING_FireTongue()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_FireTongue))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Tenez la langue d'un lézard de feu dans une main en la tirant autant que faire se peut et maniez le couteau de l'autre pour la trancher d'un coup sec.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_FireTongue_09_00"); //Tenez la langue d'un lÃ©zard de feu dans une main en la tirant autant que faire se peut et maniez le couteau de l'autre pour la trancher d'un coup sec.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -246,7 +246,7 @@ func void DIA_Gestath_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Les mandibules des foreurs des mines et des fléaux des champs sont profondément enfoncées dans leur crâne et il n'est pas aisé de les en extraire.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_Mandibles_09_00"); //Les mandibules des foreurs des mines et des flÃ©aux des champs sont profondÃ©ment enfoncÃ©es dans leur crÃ¢ne et il n'est pas aisÃ© de les en extraire.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -255,7 +255,7 @@ func void DIA_Gestath_TEACHHUNTING_DrgSnapperHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Il vaut mieux couper au niveau de la partie haute du front pour détacher la corne d'un draco-saurinide, mais attention à ce que votre couteau soit bien résistant.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DrgSnapperHorn_09_00"); //Il vaut mieux couper au niveau de la partie haute du front pour dÃ©tacher la corne d'un draco-saurinide, mais attention Ã  ce que votre couteau soit bien rÃ©sistant.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -264,7 +264,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonScale ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonScale))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Les écailles de dragon sont particulièrement récalcitrantes. En règle générale, elles finissent par céder au moment où on commence à être persuadé qu'on ne les aura jamais.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonScale_09_00"); //Les Ã©cailles de dragon sont particuliÃ¨rement rÃ©calcitrantes. En rÃ¨gle gÃ©nÃ©rale, elles finissent par cÃ©der au moment oÃ¹ on commence Ã  Ãªtre persuadÃ© qu'on ne les aura jamais.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };
@@ -273,7 +273,7 @@ func void DIA_Gestath_TEACHHUNTING_DragonBlood ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DragonBlood))
 		{
-			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Le ventre est le meilleur endroit où prélever le sang. Plantez votre couteau d'un coup après avoir choisi un endroit où la peau n'est pas trop épaisse.
+			AI_Output			(self, other, "DIA_Gestath_TEACHHUNTING_DragonBlood_09_00"); //Le ventre est le meilleur endroit oÃ¹ prÃ©lever le sang. Plantez votre couteau d'un coup aprÃ¨s avoir choisi un endroit oÃ¹ la peau n'est pas trop Ã©paisse.
 		};
 	Info_ClearChoices	(DIA_Gestath_TEACHHUNTING);
 };

@@ -29,14 +29,14 @@ func void DIA_Akil_EXIT_Info ()
 		}
 	else
 		{
-			AI_Output			(self, other, "DIA_Akil_EXIT_13_02"); //A plus tard. J'aurais vraiment aimé en faire plus pour vous.
+			AI_Output			(self, other, "DIA_Akil_EXIT_13_02"); //A plus tard. J'aurais vraiment aimÃ© en faire plus pour vous.
 		};
 		
 		AI_StopProcessInfos (self);
 };
 
 //////////////////////////////////////////////////////////////////////
-//	Info Hallo mit Söldnern
+//	Info Hallo mit SÃ¶ldnern
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Akil_Hallo	(C_INFO)
 {
@@ -45,7 +45,7 @@ instance DIA_Akil_Hallo	(C_INFO)
 	condition	 = 	DIA_Akil_Hallo_Condition;
 	information	 = 	DIA_Akil_Hallo_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Y a-t-il un problème ?";
+	description	 = 	"Y a-t-il un problÃ¨me ?";
 };
 func int DIA_Akil_Hallo_Condition ()
 {
@@ -57,14 +57,14 @@ func int DIA_Akil_Hallo_Condition ()
 };
 func void DIA_Akil_Hallo_Info ()
 {
-	AI_Output  (other, self, "DIA_Akil_Hallo_15_00"); //Y a-t-il un problème ?
-	AI_Output  (self, other, "DIA_Akil_Hallo_13_01"); //(transpirant) Euh... Non, non... tout va bien. (nerveux) Il... il serait préférable que vous partiez maintenant.
-	AI_Output  (other, self, "DIA_Akil_Hallo_15_02"); //Vous en êtes sûr ?
-	AI_Output  (self, other, "DIA_Akil_Hallo_13_03"); //Euh... oui, oui… tout va bien. Vous... euh... Je... je ne peux pas vous parler pour l'instant.
+	AI_Output  (other, self, "DIA_Akil_Hallo_15_00"); //Y a-t-il un problÃ¨me ?
+	AI_Output  (self, other, "DIA_Akil_Hallo_13_01"); //(transpirant) Euh... Non, non... tout va bien. (nerveux) Il... il serait prÃ©fÃ©rable que vous partiez maintenant.
+	AI_Output  (other, self, "DIA_Akil_Hallo_15_02"); //Vous en Ãªtes sÃ»r ?
+	AI_Output  (self, other, "DIA_Akil_Hallo_13_03"); //Euh... oui, ouiâ€¦ tout va bien. Vous... euh... Je... je ne peux pas vous parler pour l'instant.
 	
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"La ferme d'Akil est menacée par des mercenaires."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"La ferme d'Akil est menacÃ©e par des mercenaires."); 
 
 	Akils_SLDStillthere = TRUE;
 	AI_StopProcessInfos (self);
@@ -119,25 +119,25 @@ func int DIA_Akil_NachKampf_Condition ()
 };
 func void DIA_Akil_NachKampf_Info ()
 {
-	AI_Output (self, other, "DIA_Akil_NachKampf_13_00"); //Loué soit Innos. Je croyais que mon heure était venue.
+	AI_Output (self, other, "DIA_Akil_NachKampf_13_00"); //LouÃ© soit Innos. Je croyais que mon heure Ã©tait venue.
 	AI_Output (self, other, "DIA_Akil_NachKampf_13_01"); //Je me nomme Akil. Je cultive cette modeste parcelle de terrain.
-	AI_Output (other, self, "DIA_Akil_NachKampf_15_02"); //Qui étaient ces gens ?
+	AI_Output (other, self, "DIA_Akil_NachKampf_15_02"); //Qui Ã©taient ces gens ?
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Akil_NachKampf_13_03"); //Vous auriez dû les reconnaître. C'étaient des mercenaires de la ferme d'Onar. Comme vous.
+			AI_Output (self, other, "DIA_Akil_NachKampf_13_03"); //Vous auriez dÃ» les reconnaÃ®tre. C'Ã©taient des mercenaires de la ferme d'Onar. Comme vous.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Akil_NachKampf_13_04"); //C'étaient des mercenaires de la ferme d'Onar. Ces bâtards ne savent que piller et assassiner.
+			AI_Output (self, other, "DIA_Akil_NachKampf_13_04"); //C'Ã©taient des mercenaires de la ferme d'Onar. Ces bÃ¢tards ne savent que piller et assassiner.
 		};
 		
 	AI_Output (self, other, "DIA_Akil_NachKampf_13_05"); //Je craignais le pire...
-	AI_Output (self, other, "DIA_Akil_NachKampf_13_06"); //(il respire à fond)... Loué soit Innos, on n'en est pas arrivé là. Que puis-je faire pour vous ?
+	AI_Output (self, other, "DIA_Akil_NachKampf_13_06"); //(il respire Ã  fond)... LouÃ© soit Innos, on n'en est pas arrivÃ© lÃ . Que puis-je faire pour vous ?
 	
 	Info_ClearChoices (DIA_Akil_NachKampf);
-	Info_AddChoice (DIA_Akil_NachKampf,"Rien. Tant que vous sortez indemne de tout ça.",DIA_Akil_NachKampf_Ehre);
-	Info_AddChoice (DIA_Akil_NachKampf,"Et que diriez-vous de quelques pièces d'or ?",DIA_Akil_NachKampf_Gold);
+	Info_AddChoice (DIA_Akil_NachKampf,"Rien. Tant que vous sortez indemne de tout Ã§a.",DIA_Akil_NachKampf_Ehre);
+	Info_AddChoice (DIA_Akil_NachKampf,"Et que diriez-vous de quelques piÃ¨ces d'or ?",DIA_Akil_NachKampf_Gold);
 	
 	Npc_ExchangeRoutine	(self,"Start"); 
 
@@ -164,17 +164,17 @@ func void DIA_Akil_NachKampf_Info ()
 };
 FUNC VOID DIA_Akil_NachKampf_Ehre()
 {
-	AI_Output (other, self, "DIA_Akil_NachKampf_Ehre_15_00"); //Rien. Tant que vous sortez indemne de tout ça.
-	AI_Output (self, other, "DIA_Akil_NachKampf_Ehre_13_01"); //Vous êtes un individu exceptionnel. Qu'Innos veille sur vous.
+	AI_Output (other, self, "DIA_Akil_NachKampf_Ehre_15_00"); //Rien. Tant que vous sortez indemne de tout Ã§a.
+	AI_Output (self, other, "DIA_Akil_NachKampf_Ehre_13_01"); //Vous Ãªtes un individu exceptionnel. Qu'Innos veille sur vous.
 	
 	B_GivePlayerXP (XP_Akil_SLDWegVomHofEhre);
 	Info_ClearChoices (DIA_Akil_NachKampf);
 };
 FUNC VOID DIA_Akil_NachKampf_Gold()
 {
-	AI_Output (other, self, "DIA_Akil_NachKampf_Gold_15_00"); //Que diriez-vous de quelques pièces d'or ?
-	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_01"); //Je crains de devoir vous décevoir. Nous ne sommes que de pauvres fermiers. Nous avons seulement de quoi vivre.
-	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_02"); //Tout ce que je peux vous offrir, c'est un repas. Allez parler à Kati et dites-lui de prendre soin de vous.
+	AI_Output (other, self, "DIA_Akil_NachKampf_Gold_15_00"); //Que diriez-vous de quelques piÃ¨ces d'or ?
+	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_01"); //Je crains de devoir vous dÃ©cevoir. Nous ne sommes que de pauvres fermiers. Nous avons seulement de quoi vivre.
+	AI_Output (self, other, "DIA_Akil_NachKampf_Gold_13_02"); //Tout ce que je peux vous offrir, c'est un repas. Allez parler Ã  Kati et dites-lui de prendre soin de vous.
 	
 	B_GivePlayerXP (XP_Akil_SLDWegVomHof);
 	Info_ClearChoices (DIA_Akil_NachKampf);
@@ -206,12 +206,12 @@ func void DIA_Akil_Soeldner_Info ()
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-				AI_Output (self, other, "DIA_Akil_Soeldner_13_01"); //Ils voulaient récupérer mon loyer.
+				AI_Output (self, other, "DIA_Akil_Soeldner_13_01"); //Ils voulaient rÃ©cupÃ©rer mon loyer.
 		}
 	else
 		{
-				AI_Output (self, other, "DIA_Akil_Soeldner_13_02"); //Vous l'ignorez ? Onar, le propriétaire, les a engagés. Ils protègent sa ferme et encaissent les loyer.
-				AI_Output (self, other, "DIA_Akil_Soeldner_13_03"); //C'est-à-dire qu'ils vont de ferme en ferme et prennent ce qu'ils veulent. Et ceux qui ne peuvent pas les payer tâtent de leurs épées.
+				AI_Output (self, other, "DIA_Akil_Soeldner_13_02"); //Vous l'ignorez ? Onar, le propriÃ©taire, les a engagÃ©s. Ils protÃ¨gent sa ferme et encaissent les loyer.
+				AI_Output (self, other, "DIA_Akil_Soeldner_13_03"); //C'est-Ã -dire qu'ils vont de ferme en ferme et prennent ce qu'ils veulent. Et ceux qui ne peuvent pas les payer tÃ¢tent de leurs Ã©pÃ©es.
 		};
 };
 ///////////////////////////////////////////////////////////////////////
@@ -239,11 +239,11 @@ func int DIA_Addon_Akil_MissingPeople_Condition ()
 func void DIA_Addon_Akil_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Akil_MissingPeople_15_00"); //Avez-vous entendu parler de disparitions ?
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_01"); //Ne me faites pas rire. Si j'en ai entendu parler ? Des gens à moi ont disparu.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_02"); //Tonak et Telbor travaillaient dans mes champs il y a trois jours de ça.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_03"); //Et je suis sûr qu'ils ne seraient pas partis comme ça.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_04"); //Pourtant ils ont tout simplement disparu et personne n'a pu me dire où ils étaient allés.
-	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_05"); //Si par hasard vous découvrez ce qui leur est arrivé, faites-le moi savoir, voulez-vous ?
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_01"); //Ne me faites pas rire. Si j'en ai entendu parler ? Des gens Ã  moi ont disparu.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_02"); //Tonak et Telbor travaillaient dans mes champs il y a trois jours de Ã§a.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_03"); //Et je suis sÃ»r qu'ils ne seraient pas partis comme Ã§a.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_04"); //Pourtant ils ont tout simplement disparu et personne n'a pu me dire oÃ¹ ils Ã©taient allÃ©s.
+	AI_Output	(self, other, "DIA_Addon_Akil_MissingPeople_13_05"); //Si par hasard vous dÃ©couvrez ce qui leur est arrivÃ©, faites-le moi savoir, voulez-vous ?
 	B_GivePlayerXP (XP_Ambient);
 
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
@@ -277,16 +277,16 @@ func int DIA_Addon_Akil_ReturnPeople_Condition ()
 
 func void DIA_Addon_Akil_ReturnPeople_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Akil_ReturnPeople_15_00"); //À propos de vos garçons de ferme
+	AI_Output	(other, self, "DIA_Addon_Akil_ReturnPeople_15_00"); //Ã€ propos de vos garÃ§ons de ferme
 	
 	if (Npc_GetDistToWP (Tonak_NW,"NW_FARM2_FIELD_TANOK")<= 1000)
 	&& (Npc_GetDistToWP (Telbor_NW,"NW_FARM2_FIELD_TELBOR")<= 1000)
 	{
-		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_01"); //Vous les avez ramenés. Vous êtes un brave.
+		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_01"); //Vous les avez ramenÃ©s. Vous Ãªtes un brave.
 	}
 	else 
 	{
-		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_02"); //L'un d'eux a survécu.
+		AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_02"); //L'un d'eux a survÃ©cu.
 	};
 	AI_Output	(self, other, "DIA_Addon_Akil_ReturnPeople_13_03"); //Prenez cet or comme preuve de ma reconnaissance.
 	B_GiveInvItems (self, other, itmi_Gold, 100);
@@ -304,7 +304,7 @@ instance DIA_Akil_Lieferung		(C_INFO)
 	condition	 = 	DIA_Akil_Lieferung_Condition;
 	information	 = 	DIA_Akil_Lieferung_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Je suis envoyé par Baltram...";
+	description	 = 	"Je suis envoyÃ© par Baltram...";
 };
 
 func int DIA_Akil_Lieferung_Condition ()
@@ -317,14 +317,14 @@ func int DIA_Akil_Lieferung_Condition ()
 };
 func void DIA_Akil_Lieferung_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Lieferung_15_00"); //Baltram m'envoie. Je suis censé récupérer des marchandises pour lui.
-	AI_Output (self, other, "DIA_Akil_Lieferung_13_01"); //Vous êtes son nouveau messager. Parfait, le paquet est déjà prêt.
+	AI_Output (other, self, "DIA_Akil_Lieferung_15_00"); //Baltram m'envoie. Je suis censÃ© rÃ©cupÃ©rer des marchandises pour lui.
+	AI_Output (self, other, "DIA_Akil_Lieferung_13_01"); //Vous Ãªtes son nouveau messager. Parfait, le paquet est dÃ©jÃ  prÃªt.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
 	
-	B_LogEntry (TOPIC_Baltram, "J'ai les marchandises. Je peux les apporter à Baltram...");
-	B_LogEntry (TOPIC_Nagur,   "J'ai les marchandises. Je peux les apporter à Nagur...");
+	B_LogEntry (TOPIC_Baltram, "J'ai les marchandises. Je peux les apporter Ã  Baltram...");
+	B_LogEntry (TOPIC_Nagur,   "J'ai les marchandises. Je peux les apporter Ã  Nagur...");
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -353,8 +353,8 @@ var int Knows_Taverne;
 //-------------------------------
 func void DIA_Akil_Gegend_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_15_00"); //Vous connaissez bien la région...
-	AI_Output (self, other, "DIA_Akil_Gegend_13_01"); //Bien sûr, que voulez-vous savoir ?
+	AI_Output (other, self, "DIA_Akil_Gegend_15_00"); //Vous connaissez bien la rÃ©gion...
+	AI_Output (self, other, "DIA_Akil_Gegend_13_01"); //Bien sÃ»r, que voulez-vous savoir ?
 };
 /*
 FUNC VOID DIA_Akil_Gegend_BACK()
@@ -365,19 +365,19 @@ FUNC VOID DIA_Akil_Gegend_Onar()
 {
 	AI_Output (other, self, "DIA_Akil_Gegend_Onar_15_00"); //Wo finde ich den Hof von Onar?
 	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_01"); //Geh einfach wieder die Steinstufen runter und folge dem Weg weiter nach Osten.
-	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_02"); //Irgendwann kommt eine Taverne. Da gehst du weiter nach Osten bis du zu den großen Feldern kommst. Da lungern dann schon die Söldner rum.
+	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_02"); //Irgendwann kommt eine Taverne. Da gehst du weiter nach Osten bis du zu den groÃŸen Feldern kommst. Da lungern dann schon die SÃ¶ldner rum.
 	Knows_Taverne = TRUE;
 };
 FUNC VOID DIA_Akil_Gegend_Wald()
 {
 	AI_Output (other, self, "DIA_Akil_Gegend_Wald_15_00"); //Was finde ich in dem Wald hinter deinem Hof?
-	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_01"); //Da gibt's nur jede Menge Monster - wobei die Wölfe noch die ungefährlichsten sind.
-	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_02"); //Angeblich sollen da auch ein paar Banditen ihre Höhle haben. Na - meinen Hof haben sie bis jetzt in Ruhe gelassen.
+	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_01"); //Da gibt's nur jede Menge Monster - wobei die WÃ¶lfe noch die ungefÃ¤hrlichsten sind.
+	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_02"); //Angeblich sollen da auch ein paar Banditen ihre HÃ¶hle haben. Na - meinen Hof haben sie bis jetzt in Ruhe gelassen.
 };
 FUNC VOID DIA_Akil_Gegend_Taverne ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Taverne_15_00"); //Was ist das für eine Taverne im Osten?
-	AI_Output (self, other, "DIA_Akil_Gegend_Taverne_13_01"); //Frag mal Randolph. Er weiß mehr darüber als ich. Er war schon ein paar mal dort.
+	AI_Output (other, self, "DIA_Akil_Gegend_Taverne_15_00"); //Was ist das fÃ¼r eine Taverne im Osten?
+	AI_Output (self, other, "DIA_Akil_Gegend_Taverne_13_01"); //Frag mal Randolph. Er weiÃŸ mehr darÃ¼ber als ich. Er war schon ein paar mal dort.
 };
 */
 ///////////////////////////////////////////////////////////////////////
@@ -390,7 +390,7 @@ instance DIA_Akil_Hof		(C_INFO)
 	condition	 = 	DIA_Akil_Hof_Condition;
 	information	 = 	DIA_Akil_Hof_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Où puis-je trouver la ferme d'Onar ?";
+	description	 = 	"OÃ¹ puis-je trouver la ferme d'Onar ?";
 };
 
 func int DIA_Akil_Hof_Condition ()
@@ -402,9 +402,9 @@ func int DIA_Akil_Hof_Condition ()
 };
 func void DIA_Akil_Hof_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Onar_15_00"); //Où puis-je trouver la ferme d'Onar ?
+	AI_Output (other, self, "DIA_Akil_Gegend_Onar_15_00"); //OÃ¹ puis-je trouver la ferme d'Onar ?
 	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_01"); //Redescendez l'escalier de pierre et suivez la route vers l'est.
-	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_02"); //Vous allez arriver à une taverne. De là, dirigez-vous vers l'est jusqu'à que vous parveniez à de grands champs. C'est là que se trouvent les mercenaires.
+	AI_Output (self, other, "DIA_Akil_Gegend_Onar_13_02"); //Vous allez arriver Ã  une taverne. De lÃ , dirigez-vous vers l'est jusqu'Ã  que vous parveniez Ã  de grands champs. C'est lÃ  que se trouvent les mercenaires.
 	Knows_Taverne = TRUE;
 };
 ///////////////////////////////////////////////////////////////////////
@@ -417,7 +417,7 @@ instance DIA_Akil_Taverne		(C_INFO)
 	condition	 = 	DIA_Akil_Taverne_Condition;
 	information	 = 	DIA_Akil_Taverne_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Quelle est cette taverne, à l'est d'ici ?";
+	description	 = 	"Quelle est cette taverne, Ã  l'est d'ici ?";
 };
 
 func int DIA_Akil_Taverne_Condition ()
@@ -429,8 +429,8 @@ func int DIA_Akil_Taverne_Condition ()
 };
 func void DIA_Akil_Taverne_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Taverne_15_00"); //Quelle est cette taverne à l'est ?
-	AI_Output (self, other, "DIA_Akil_Gegend_Taverne_13_01"); //Demandez à Randolph. Il en sait plus que moi sur ce sujet. Il s'y rend de temps en temps.
+	AI_Output (other, self, "DIA_Akil_Gegend_Taverne_15_00"); //Quelle est cette taverne Ã  l'est ?
+	AI_Output (self, other, "DIA_Akil_Gegend_Taverne_13_01"); //Demandez Ã  Randolph. Il en sait plus que moi sur ce sujet. Il s'y rend de temps en temps.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Wald
@@ -442,7 +442,7 @@ instance DIA_Akil_Wald		(C_INFO)
 	condition	 = 	DIA_Akil_Wald_Condition;
 	information	 = 	DIA_Akil_Wald_Info;
 	permanent	 =  FALSE; 	 
-	description	 = 	"Qu'y a-t-il dans le bois derrière votre ferme ?";
+	description	 = 	"Qu'y a-t-il dans le bois derriÃ¨re votre ferme ?";
 };
 func int DIA_Akil_Wald_Condition ()
 {
@@ -455,7 +455,7 @@ func int DIA_Akil_Wald_Condition ()
 };
 func void DIA_Akil_Wald_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Gegend_Wald_15_00"); //Qu'y a-t-il dans les bois derrière la ferme ?
+	AI_Output (other, self, "DIA_Akil_Gegend_Wald_15_00"); //Qu'y a-t-il dans les bois derriÃ¨re la ferme ?
 	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_01"); //Juste un tas de monstres. Et les loups sont les moins dangereux.
 	AI_Output (self, other, "DIA_Akil_Gegend_Wald_13_02"); //On raconte aussi qu'il y a quelques bandits dans des grottes. Pour l'instant, ils me laissent tranquille.
 };
@@ -470,7 +470,7 @@ instance DIA_Akil_Perm		(C_INFO)
 	information	 = 	DIA_Akil_Perm_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Il s'est passé autre chose ?";
+	description	 = 	"Il s'est passÃ© autre chose ?";
 };
 
 func int DIA_Akil_Perm_Condition ()
@@ -484,37 +484,37 @@ func int DIA_Akil_Perm_Condition ()
 
 func void DIA_Akil_Perm_Info ()
 {
-	AI_Output (other, self, "DIA_Akil_Perm_15_00"); //S'est-il passé autre chose ?
+	AI_Output (other, self, "DIA_Akil_Perm_15_00"); //S'est-il passÃ© autre chose ?
 
 	if (Kapitel == 3)
 	{
 		if (MIS_Akil_SchafDiebe == LOG_SUCCESS)
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_01"); //Non. J'espère que les moutons vont rester là où ils sont.
+			AI_Output (self, other, "DIA_Akil_Perm_13_01"); //Non. J'espÃ¨re que les moutons vont rester lÃ  oÃ¹ ils sont.
 		}
 		else
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_02"); //Mes moutons continuent de disparaître. Bientôt je n'aurai même plus de quoi nous nourrir.
+			AI_Output (self, other, "DIA_Akil_Perm_13_02"); //Mes moutons continuent de disparaÃ®tre. BientÃ´t je n'aurai mÃªme plus de quoi nous nourrir.
 		};
 	}
 	else //Kapitel 4 & 5
 	{
 		if ((hero.guild == GIL_MIL) || (hero.guild == GIL_PAL))
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_03"); //Les orques arrivent de partout. On parle même de leur quartier général. Allez parler au fermier Lobart à ce sujet.
+			AI_Output (self, other, "DIA_Akil_Perm_13_03"); //Les orques arrivent de partout. On parle mÃªme de leur quartier gÃ©nÃ©ral. Allez parler au fermier Lobart Ã  ce sujet.
 
 		};
 
 		if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Akil_Perm_13_04"); //On a aussi aperçu plein d'hommes-lézards dans cette région. Si j'étais vous, je n'irais pas dans les grottes.
+			AI_Output (self, other, "DIA_Akil_Perm_13_04"); //On a aussi aperÃ§u plein d'hommes-lÃ©zards dans cette rÃ©gion. Si j'Ã©tais vous, je n'irais pas dans les grottes.
 
 		};
 
 		if (hero.guild == GIL_KDF)
 		{
 			AI_Output (self, other, "DIA_Akil_Perm_13_05"); //Les hommes aux capuchons noirs vous recherchent.
-			AI_Output (other, self, "DIA_Akil_Perm_15_06"); //Ça c'est pas nouveau.
+			AI_Output (other, self, "DIA_Akil_Perm_15_06"); //Ã‡a c'est pas nouveau.
 			AI_Output (self, other, "DIA_Akil_Perm_13_07"); //Je pensais juste que je devais vous le dire.
 		};		
 	};
@@ -563,7 +563,7 @@ instance DIA_Akil_SCHAFDIEB		(C_INFO)
 	condition	 = 	DIA_Akil_SCHAFDIEB_Condition;
 	information	 = 	DIA_Akil_SCHAFDIEB_Info;
 
-	description	 = 	"Voilà une idée de roman…";
+	description	 = 	"VoilÃ  une idÃ©e de romanâ€¦";
 };
 
 func int DIA_Akil_SCHAFDIEB_Condition ()
@@ -577,24 +577,24 @@ func int DIA_Akil_SCHAFDIEB_Condition ()
 func void DIA_Akil_SCHAFDIEB_Info ()
 {
 	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_15_00"); //Y a-t-il d'autres nouvelles ?
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_13_01"); //Quelqu'un continue à voler mes moutons. Cela fait des nuits que je n'arrive pas à dormir correctement.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_13_01"); //Quelqu'un continue Ã  voler mes moutons. Cela fait des nuits que je n'arrive pas Ã  dormir correctement.
 
 	Info_ClearChoices	(DIA_Akil_SCHAFDIEB);
-	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Pas mon problème.", DIA_Akil_SCHAFDIEB_nein );
+	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Pas mon problÃ¨me.", DIA_Akil_SCHAFDIEB_nein );
 	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Combien vous manque-t-il de moutons ?", DIA_Akil_SCHAFDIEB_wieviel );
-	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Qui aurait pu faire ça ?", DIA_Akil_SCHAFDIEB_wer );
+	Info_AddChoice	(DIA_Akil_SCHAFDIEB, "Qui aurait pu faire Ã§a ?", DIA_Akil_SCHAFDIEB_wer );
 	MIS_Akil_SchafDiebe	= LOG_RUNNING;
 	Log_CreateTopic (TOPIC_AkilSchafDiebe, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilSchafDiebe, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilSchafDiebe,"On continue à voler les moutons d'Akil. Il soupçonne les bandits dans la grotte de la forêt."); 
+	B_LogEntry (TOPIC_AkilSchafDiebe,"On continue Ã  voler les moutons d'Akil. Il soupÃ§onne les bandits dans la grotte de la forÃªt."); 
 };
 
 func void DIA_Akil_SCHAFDIEB_wer ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_wer_15_00"); //Qui aurait pu faire ça ?
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_01"); //J'ai ma petite idée.
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_02"); //Des types très louches se sont installés dans les grottes de la forêt.
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_03"); //Je doute qu'ils se contentent de baies pour vivre. Je suis presque certain que c'est là que mes moutons disparaissent.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_wer_15_00"); //Qui aurait pu faire Ã§a ?
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_01"); //J'ai ma petite idÃ©e.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_02"); //Des types trÃ¨s louches se sont installÃ©s dans les grottes de la forÃªt.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_wer_13_03"); //Je doute qu'ils se contentent de baies pour vivre. Je suis presque certain que c'est lÃ  que mes moutons disparaissent.
 	Info_ClearChoices	(DIA_Akil_SCHAFDIEB);
 };
 
@@ -607,8 +607,8 @@ func void DIA_Akil_SCHAFDIEB_wieviel ()
 
 func void DIA_Akil_SCHAFDIEB_nein ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_nein_15_00"); //Pas mon problème.
-	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_nein_13_01"); //Je comprends. Vous avez d'autres choses à faire.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEB_nein_15_00"); //Pas mon problÃ¨me.
+	AI_Output			(self, other, "DIA_Akil_SCHAFDIEB_nein_13_01"); //Je comprends. Vous avez d'autres choses Ã  faire.
 	Info_ClearChoices	(DIA_Akil_SCHAFDIEB);
 
 };
@@ -623,7 +623,7 @@ instance DIA_Akil_SCHAFDIEBEPLATT		(C_INFO)
 	condition	 = 	DIA_Akil_SCHAFDIEBEPLATT_Condition;
 	information	 = 	DIA_Akil_SCHAFDIEBEPLATT_Info;
 
-	description	 = 	"J'ai trouvé les voleurs de moutons.";
+	description	 = 	"J'ai trouvÃ© les voleurs de moutons.";
 };
 
 func int DIA_Akil_SCHAFDIEBEPLATT_Condition ()
@@ -640,7 +640,7 @@ func int DIA_Akil_SCHAFDIEBEPLATT_Condition ()
 
 func void DIA_Akil_SCHAFDIEBEPLATT_Info ()
 {
-	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_00"); //J'ai trouvé les voleurs de moutons.
+	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_00"); //J'ai trouvÃ© les voleurs de moutons.
 	AI_Output			(other, self, "DIA_Akil_SCHAFDIEBEPLATT_15_01"); //Vous aviez raison. Ce sont les types dans les grottes qui ont fait le coup. Ils ne vous voleront plus jamais de moutons.
 
 	if 		((hero.guild == GIL_PAL) || (hero.guild == GIL_KDF))
@@ -653,7 +653,7 @@ func void DIA_Akil_SCHAFDIEBEPLATT_Info ()
 			}
 	else 
 			{
-				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_04"); //Merci. Vous êtes un étrange mercenaire. Pas du tout comme les autres.
+				AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_04"); //Merci. Vous Ãªtes un Ã©trange mercenaire. Pas du tout comme les autres.
 			};
 		
 	AI_Output			(self, other, "DIA_Akil_SCHAFDIEBEPLATT_13_05"); //Prenez ceci en gage de ma reconnaissance pour ce service que vous m'avez rendu.
@@ -674,7 +674,7 @@ instance DIA_Akil_AkilsSchaf		(C_INFO)
 	condition	 = 	DIA_Akil_AkilsSchaf_Condition;
 	information	 = 	DIA_Akil_AkilsSchaf_Info;
 
-	description	 = 	"(rendre ses moutons à Akil)";
+	description	 = 	"(rendre ses moutons Ã  Akil)";
 };
 
 func int DIA_Akil_AkilsSchaf_Condition ()
@@ -690,7 +690,7 @@ func int DIA_Akil_AkilsSchaf_Condition ()
 func void DIA_Akil_AkilsSchaf_Info ()
 {
 	//Joly: AI_Output			(other, self, "DIA_Akil_AkilsSchaf_15_00"); //Ich habe die Schafdiebe gefunden.
-	AI_Output			(self, other, "DIA_Akil_AkilsSchaf_13_01"); //Très bien. Voici quelques pièces d'or. J'espère que cela vous conviendra.
+	AI_Output			(self, other, "DIA_Akil_AkilsSchaf_13_01"); //TrÃ¨s bien. Voici quelques piÃ¨ces d'or. J'espÃ¨re que cela vous conviendra.
 	
 	CreateInvItems (self, ItMi_Gold, 150);									
 	B_GiveInvItems (self, other, ItMi_Gold, 150);					

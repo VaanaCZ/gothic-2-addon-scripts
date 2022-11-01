@@ -22,13 +22,13 @@ var int NpcObsessedByDMT_Randolph;	//Joly: hat sein Buch Anfang 4. Kapitel
 
 func void B_DMTWurm ()
 {
-		AI_Output	(self, other, "DIA_NoName_ObsessedByDMT_19_00"); //Nous te voyons, ver de terre. Tu ne peux nous échapper.
+		AI_Output	(self, other, "DIA_NoName_ObsessedByDMT_19_00"); //Nous te voyons, ver de terre. Tu ne peux nous Ã©chapper.
 };
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 // B_NpcClearObsessionByDMT	steht bei allen NSCs statt der AI_StopProcessInfos (self);
 /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muß in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
+func void B_NpcClearObsessionByDMT (VAR C_NPC medium)	//Joly: WARUNG:  B_NpcClearObsessionByDMT muÃŸ in eine Exit Info, die ganz sicher kommt, nachdem B_NpcObsessedByDMT abgefeuert wurde!!!!!!!!!!!!!!
 {														
 	AI_StopProcessInfos	(medium);
 
@@ -91,7 +91,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			{
 				if (MIS_OCGateOpen == TRUE)
 					{
-						AI_Output	(self, other, "DIA_Brutus_ObsessedByDMT_19_00"); //Tu as rendu un grande service à notre Maître en ouvrant la porte, faible mortel. Nous érigerons sur ta tombe un temple en son honneur.
+						AI_Output	(self, other, "DIA_Brutus_ObsessedByDMT_19_00"); //Tu as rendu un grande service Ã  notre MaÃ®tre en ouvrant la porte, faible mortel. Nous Ã©rigerons sur ta tombe un temple en son honneur.
 					}
 					else
 					{
@@ -115,7 +115,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Vino))
 			{
-				AI_Output	(self, other, "DIA_Vino_ObsessedByDMT_19_00"); //Bientôt ils nous obéiront tous. Vous et vos pathétiques pouvoirs de magicien n'êtes pas une menace.
+				AI_Output	(self, other, "DIA_Vino_ObsessedByDMT_19_00"); //BientÃ´t ils nous obÃ©iront tous. Vous et vos pathÃ©tiques pouvoirs de magicien n'Ãªtes pas une menace.
 				NpcObsessedByDMT_Vino = TRUE;
 			}		
 
@@ -124,7 +124,7 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Malak))
 			{
-				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //Vous ne pourrez pas sauver cette âme, magicien. Il ne reviendra jamais de lui-même.
+				AI_Output	(self, other, "DIA_Malak_ObsessedByDMT_19_00"); //Vous ne pourrez pas sauver cette Ã¢me, magicien. Il ne reviendra jamais de lui-mÃªme.
 				NpcObsessedByDMT_Malak = TRUE;
 			}		
 		
@@ -142,11 +142,11 @@ func void B_NpcObsessedByDMT (VAR C_NPC medium)
 			///////////////////////////////////////////////////////////////////////
 			else if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Randolph))
 			{
-				AI_Output	(self, other, "DIA_Randolph_ObsessedByDMT_19_00"); //Ne vous préoccupez pas des faibles. Ils seront tous nos esclaves.
+				AI_Output	(self, other, "DIA_Randolph_ObsessedByDMT_19_00"); //Ne vous prÃ©occupez pas des faibles. Ils seront tous nos esclaves.
 				NpcObsessedByDMT_Randolph = TRUE;
 			}	
 				
-			else //Joly: für alle anderen
+			else //Joly: fÃ¼r alle anderen
 			{
 				B_DMTWurm ();
 				if (Hlp_GetInstanceID(medium) == Hlp_GetInstanceID(Bromor))

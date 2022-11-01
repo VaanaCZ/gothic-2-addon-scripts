@@ -2,7 +2,7 @@
 instance VLK_432_Moe (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Moé"; 
+	name 		= "MoÃ©"; 
 	guild 		= GIL_NONE;
 	id 			= 432;
 	voice 		= 1;

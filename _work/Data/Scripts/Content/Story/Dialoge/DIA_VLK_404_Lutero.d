@@ -54,12 +54,12 @@ FUNC INT DIA_Lutero_Hallo_Condition()
 };
 FUNC VOID DIA_Lutero_Hallo_Info()
 {	
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Je me nomme Lutero. Je vends et j'achète toutes sortes de choses.
-	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Quelles marchandises avez-vous à proposer ?
-	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Je me spécialise dans les marchandises rares et inhabituelles. Et jusqu'à aujourd'hui, mes clients sont toujours ressortis satisfaits de ma boutique.
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_00"); //Je me nomme Lutero. Je vends et j'achÃ¨te toutes sortes de choses.
+	AI_Output (other ,self,"DIA_Lutero_Hallo_15_01"); //Quelles marchandises avez-vous Ã  proposer ?
+	AI_Output (self ,other,"DIA_Lutero_Hallo_13_02"); //Je me spÃ©cialise dans les marchandises rares et inhabituelles. Et jusqu'Ã  aujourd'hui, mes clients sont toujours ressortis satisfaits de ma boutique.
 	
 	Log_CreateTopic (TOPIC_CityTrader, LOG_NOTE);
-	B_LogEntry (TOPIC_CityTrader, "Lutéro vend des objets rares dans le haut quartier."); 
+	B_LogEntry (TOPIC_CityTrader, "LutÃ©ro vend des objets rares dans le haut quartier."); 
 };
 //************************************************************
 //	GetLost
@@ -87,11 +87,11 @@ FUNC VOID DIA_Lutero_GetLost_Info()
 {	
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //Débarrassez-moi le plancher ! Vous n'avez donc rien à faire ? Dans ce cas, allez vous trouver du travail... mais ailleurs !
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_00"); //DÃ©barrassez-moi le plancherÂ ! Vous n'avez donc rien Ã  faireÂ ? Dans ce cas, allez vous trouver du travail... mais ailleursÂ !
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Qu'est-ce que vous voulez, novice ? Vous ne devriez pas être au monastère ?
+		AI_Output (self ,other,"DIA_Lutero_GetLost_13_01"); //Qu'est-ce que vous voulez, noviceÂ ? Vous ne devriez pas Ãªtre au monastÃ¨reÂ ?
 	};
 	AI_StopProcessInfos (self);
 };
@@ -118,12 +118,12 @@ FUNC INT DIA_Lutero_Snapper_Condition()
 };
 FUNC VOID DIA_Lutero_Snapper_Info()
 {	
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Est-ce que vous êtes à la recherche d'un objet particulier ?
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_00"); //Est-ce que vous Ãªtes Ã  la recherche d'un objet particulierÂ ?
 	AI_Output (self ,other,"DIA_Lutero_Snapper_13_01"); //Oui. A l'heure actuelle, j'ai besoin de griffes de saurinide.
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Mais pas de n'importe quelles griffes. Il faut qu'elles aient appartenu à l'un d'entre eux qui a déjà tué plusieurs humains, ou quelque chose du même genre.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //Où trouve-t-on des saurinides ?
-	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Il y en a quelques-uns sur l'île, mais la plupart vivent dans la Vallée des mines.
-	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Qu'est-ce que j'y gagne ?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_02"); //Mais pas de n'importe quelles griffes. Il faut qu'elles aient appartenu Ã  l'un d'entre eux qui a dÃ©jÃ  tuÃ© plusieurs humains, ou quelque chose du mÃªme genre.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_03"); //OÃ¹ trouve-t-on des saurinidesÂ ?
+	AI_Output (self ,other,"DIA_Lutero_Snapper_13_04"); //Il y en a quelques-uns sur l'Ã®le, mais la plupart vivent dans la VallÃ©e des mines.
+	AI_Output (other ,self,"DIA_Lutero_Snapper_15_05"); //Qu'est-ce que j'y gagneÂ ?
 	
 	if (other.guild == GIL_KDF)
 	{
@@ -131,13 +131,13 @@ FUNC VOID DIA_Lutero_Snapper_Info()
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Je pourrais vous procurer un anneau d'invincibilité...
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_07"); //Je pourrais vous procurer un anneau d'invincibilitÃ©...
 	};
 	AI_Output (other ,self,"DIA_Lutero_Hello_15_08"); //Je verrai ce que je peux faire.
 	
 	Log_CreateTopic (Topic_Lutero,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Lutero,LOG_RUNNING);
-	B_LogEntry (Topic_Lutero,"Le marchand Lutéro recherche les griffes d'un saurinide particulièrement puissant.");
+	B_LogEntry (Topic_Lutero,"Le marchand LutÃ©ro recherche les griffes d'un saurinide particuliÃ¨rement puissant.");
 	
 	Lutero_Krallen = LOG_RUNNING;
 };
@@ -151,7 +151,7 @@ INSTANCE DIA_Lutero_Kralle(C_INFO)
 	condition	= DIA_Lutero_Kralle_Condition;
 	information	= DIA_Lutero_Kralle_Info;
 	permanent	= FALSE;
-	description = "J'ai des griffes spéciales de saurinide.";
+	description = "J'ai des griffes spÃ©ciales de saurinide.";
 };                       
 
 FUNC INT DIA_Lutero_Kralle_Condition()
@@ -172,9 +172,9 @@ FUNC VOID DIA_Lutero_Kralle_Info()
 	
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Je n'ai pas la pierre runique ici, mais je sais où elle se trouve.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_02"); //Je n'ai pas la pierre runique ici, mais je sais oÃ¹ elle se trouve.
 		AI_Output (self ,other,"DIA_Lutero_Hello_13_03"); //Partez en direction de l'auberge. A un moment, vous passerez sous un pont.
-		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Un ami à moi a déposé une pierre runique dans un coffre caché au fond d'une grotte. En voici la clé.
+		AI_Output (self ,other,"DIA_Lutero_Hello_13_04"); //Un ami Ã  moi a dÃ©posÃ© une pierre runique dans un coffre cachÃ© au fond d'une grotte. En voici la clÃ©.
 		B_GiveInvItems (self, other, ITKE_RUNE_MIS,1); 
 	}
 	else

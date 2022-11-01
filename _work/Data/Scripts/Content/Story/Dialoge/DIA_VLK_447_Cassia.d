@@ -83,12 +83,12 @@ FUNC VOID DIA_Cassia_Gilde_Info()
 	if (other.guild == GIL_MIL)
 	|| (other.guild == GIL_PAL)
 	{
-		AI_Output (self, other, "DIA_Cassia_Gilde_16_00");//Je vois que vous représentez désormais la loi et l'ordre.
-		AI_Output (self, other, "DIA_Cassia_Gilde_16_01");//Mais le fait que vous soyez entré au service d'Innos n'a pas la moindre importance. Pour moi, vous êtes toujours des nôtres. J'espère que c'est également votre avis.
+		AI_Output (self, other, "DIA_Cassia_Gilde_16_00");//Je vois que vous reprÃ©sentez dÃ©sormais la loi et l'ordre.
+		AI_Output (self, other, "DIA_Cassia_Gilde_16_01");//Mais le fait que vous soyez entrÃ© au service d'Innos n'a pas la moindre importance. Pour moi, vous Ãªtes toujours des nÃ´tres. J'espÃ¨re que c'est Ã©galement votre avis.
 	};
 	if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other, "DIA_Cassia_Gilde_16_02");//Ainsi, vous faites désormais partie de l'Eglise d'Innos. Très bien, mais j'espère que vous n'oublierez pas que vous êtes toujours des nôtres.
+		AI_Output (self, other, "DIA_Cassia_Gilde_16_02");//Ainsi, vous faites dÃ©sormais partie de l'Eglise d'Innos. TrÃ¨s bien, mais j'espÃ¨re que vous n'oublierez pas que vous Ãªtes toujours des nÃ´tres.
 	};
 	
 	
@@ -119,7 +119,7 @@ FUNC INT DIA_Cassia_Abgelaufen_Condition()
 };
 FUNC VOID DIA_Cassia_Abgelaufen_Info()
 {
-	AI_Output (self, other, "DIA_Cassia_Abgelaufen_16_00");//Vous avez laissé passer le délai que je vous avais accordé. Vous n'auriez pas dû revenir.
+	AI_Output (self, other, "DIA_Cassia_Abgelaufen_16_00");//Vous avez laissÃ© passer le dÃ©lai que je vous avais accordÃ©. Vous n'auriez pas dÃ» revenir.
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_KILL,0); 
 };
@@ -147,19 +147,19 @@ FUNC VOID DIA_Cassia_News_Info()
 {
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_News_16_00");//Je vois que vous avez reçu notre présent. Je suis Cassia.
-		AI_Output (other, self, "DIA_Cassia_News_15_01");//Très bien, Cassia. Si vous me disiez ce que je fais ici ?
-		AI_Output (self, other, "DIA_Cassia_News_16_02");//Vous avez attiré notre attention en gagnant la confiance d'amis à nous.
-		AI_Output (self, other, "DIA_Cassia_News_16_03");//Nous avons donc décidé de vous offrir la possibilité de vous joindre à nous.
+		AI_Output (self, other, "DIA_Cassia_News_16_00");//Je vois que vous avez reÃ§u notre prÃ©sent. Je suis Cassia.
+		AI_Output (other, self, "DIA_Cassia_News_15_01");//TrÃ¨s bien, Cassia. Si vous me disiez ce que je fais iciÂ ?
+		AI_Output (self, other, "DIA_Cassia_News_16_02");//Vous avez attirÃ© notre attention en gagnant la confiance d'amis Ã  nous.
+		AI_Output (self, other, "DIA_Cassia_News_16_03");//Nous avons donc dÃ©cidÃ© de vous offrir la possibilitÃ© de vous joindre Ã  nous.
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_News_16_04");//Eh bien, eh bien... voyez un peu qui a réussi à arriver jusqu'ici. On dirait qu'Attila vous a sous-estimé... mais ne vous attendez pas à ce que je commette la même erreur...
-		AI_Output (other, self, "DIA_Cassia_News_15_05");//A quoi jouez-vous au juste ?
-		AI_Output (self, other, "DIA_Cassia_News_16_06");//Vous deviez mourir pour avoir dénoncé notre ami. C'est pour cela que nous avons chargé Attila de vous tuer.
-		AI_Output (self, other, "DIA_Cassia_News_16_07");//Mais votre présence parmi nous modifie sensiblement la donne...
-		AI_Output (other, self, "DIA_Cassia_News_15_08");//Qu'avez-vous à me proposer ?
-		AI_Output (self, other, "DIA_Cassia_News_16_09");//La possibilité de vous joindre à nous.
+		AI_Output (self, other, "DIA_Cassia_News_16_04");//Eh bien, eh bien... voyez un peu qui a rÃ©ussi Ã  arriver jusqu'ici. On dirait qu'Attila vous a sous-estimÃ©... mais ne vous attendez pas Ã  ce que je commette la mÃªme erreur...
+		AI_Output (other, self, "DIA_Cassia_News_15_05");//A quoi jouez-vous au justeÂ ?
+		AI_Output (self, other, "DIA_Cassia_News_16_06");//Vous deviez mourir pour avoir dÃ©noncÃ© notre ami. C'est pour cela que nous avons chargÃ© Attila de vous tuer.
+		AI_Output (self, other, "DIA_Cassia_News_16_07");//Mais votre prÃ©sence parmi nous modifie sensiblement la donne...
+		AI_Output (other, self, "DIA_Cassia_News_15_08");//Qu'avez-vous Ã  me proposerÂ ?
+		AI_Output (self, other, "DIA_Cassia_News_16_09");//La possibilitÃ© de vous joindre Ã  nous.
 	};
 	if  (Npc_GetTrueGuild (other) == GIL_NONE)
 	||  (Npc_GetTrueGuild (other) == GIL_NOV)
@@ -170,7 +170,7 @@ FUNC VOID DIA_Cassia_News_Info()
 	DG_gefunden = TRUE;
 };
 //////////////////////////////////////////////////////////////////////
-//	Info Erzähle mir mehr 
+//	Info ErzÃ¤hle mir mehr 
 ///////////////////////////////////////////////////////////////////////
 INSTANCE DIA_Cassia_mehr   (C_INFO)
 {
@@ -190,8 +190,8 @@ FUNC INT DIA_Cassia_mehr_Condition()
 FUNC VOID DIA_Cassia_mehr_Info()
 {
 	AI_Output (other, self, "DIA_Cassia_mehr_15_00");//Parlez-moi de votre organisation.
-	AI_Output (self, other, "DIA_Cassia_mehr_16_01");//Nous rendons tout le monde nerveux en ville, mais nul ne sait où se trouve notre cachette.
-	AI_Output (self, other, "DIA_Cassia_mehr_16_02");//Les rares gens qui sont au courant de l'existence des égouts pensent qu'ils sont fermés et totalement inaccessibles.
+	AI_Output (self, other, "DIA_Cassia_mehr_16_01");//Nous rendons tout le monde nerveux en ville, mais nul ne sait oÃ¹ se trouve notre cachette.
+	AI_Output (self, other, "DIA_Cassia_mehr_16_02");//Les rares gens qui sont au courant de l'existence des Ã©gouts pensent qu'ils sont fermÃ©s et totalement inaccessibles.
 	AI_Output (self, other, "DIA_Cassia_mehr_16_03");//Et tant que personne ne nous trouve, nous pouvons travailler en paix.
 };
 
@@ -220,10 +220,10 @@ FUNC INT DIA_Cassia_MissingPeople_Condition()
 FUNC VOID DIA_Cassia_MissingPeople_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Cassia_Add_15_00"); //Que savez-vous sur les disparus ?
-	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_01"); //Pourquoi vous intéressez-vous à cela ?
-	AI_Output (other, self, "DIA_Addon_Cassia_Add_15_02"); //Je veux comprendre ce qui leur est arrivé.
-	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_03"); //Quand vous sortirez des égouts, longez un moment la côte à la nage vers la droite.
-	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_04"); //Vous trouverez sûrement vos réponses là...
+	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_01"); //Pourquoi vous intÃ©ressez-vous Ã  cela ?
+	AI_Output (other, self, "DIA_Addon_Cassia_Add_15_02"); //Je veux comprendre ce qui leur est arrivÃ©.
+	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_03"); //Quand vous sortirez des Ã©gouts, longez un moment la cÃ´te Ã  la nage vers la droite.
+	AI_Output (self, other, "DIA_Addon_Cassia_Add_16_04"); //Vous trouverez sÃ»rement vos rÃ©ponses lÃ ...
 };
 
 
@@ -237,7 +237,7 @@ INSTANCE DIA_Cassia_Vorteil   (C_INFO)
 	condition   = DIA_Cassia_Vorteil_Condition;
 	information = DIA_Cassia_Vorteil_Info;
 	permanent   = FALSE;
-	description = "Qu'est-ce que je gagne si je me joins à vous ?";
+	description = "Qu'est-ce que je gagne si je me joins Ã  vous ?";
 };
 
 FUNC INT DIA_Cassia_Vorteil_Condition()
@@ -247,10 +247,10 @@ FUNC INT DIA_Cassia_Vorteil_Condition()
 
 FUNC VOID DIA_Cassia_Vorteil_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Vorteil_15_00");//Qu'est-ce que je gagne si je me joins à vous ?
-	AI_Output (self, other, "DIA_Cassia_Vorteil_16_01");//Nous pourrons vous enseigner nos compétences spéciales, ça vous permettra de vivre dans le luxe et l'opulence.
-	AI_Output (other, self, "DIA_Cassia_Vorteil_15_02");//Mais je ne serais pas obligé de vivre caché ici, si ?
-	AI_Output (self, other, "DIA_Cassia_Vorteil_16_03");//(éclate de rire) Non, bien sûr. Il vous suffira juste d'obéir à nos règles.
+	AI_Output (other, self, "DIA_Cassia_Vorteil_15_00");//Qu'est-ce que je gagne si je me joins Ã  vousÂ ?
+	AI_Output (self, other, "DIA_Cassia_Vorteil_16_01");//Nous pourrons vous enseigner nos compÃ©tences spÃ©ciales, Ã§a vous permettra de vivre dans le luxe et l'opulence.
+	AI_Output (other, self, "DIA_Cassia_Vorteil_15_02");//Mais je ne serais pas obligÃ© de vivre cachÃ© ici, siÂ ?
+	AI_Output (self, other, "DIA_Cassia_Vorteil_16_03");//(Ã©clate de rire) Non, bien sÃ»r. Il vous suffira juste d'obÃ©ir Ã  nos rÃ¨gles.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Was kann ich bei euch lernen?
@@ -274,16 +274,16 @@ FUNC INT DIA_Cassia_Lernen_Condition()
 };
 FUNC VOID DIA_Cassia_Lernen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Lernen_15_00");//Que pouvez-vous m'apprendre au juste ?
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_01");//Jesper est passé maître dans l'art de la discrétion. Il vous montrera comment vous déplacer sans bruit.
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_02");//Ramirez est un cambrioleur de haut vol. Aucune serrure ne lui résiste.
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_03");//Et moi, je peux vous enseigner l'art du vol à la tire.
-	AI_Output (self, other, "DIA_Cassia_Lernen_16_04");//Je vous apprendrai également à développer votre agilité, Une grande agilité est essentielle à la bonne utilisation de nos compétences.
+	AI_Output (other, self, "DIA_Cassia_Lernen_15_00");//Que pouvez-vous m'apprendre au justeÂ ?
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_01");//Jesper est passÃ© maÃ®tre dans l'art de la discrÃ©tion. Il vous montrera comment vous dÃ©placer sans bruit.
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_02");//Ramirez est un cambrioleur de haut vol. Aucune serrure ne lui rÃ©siste.
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_03");//Et moi, je peux vous enseigner l'art du vol Ã  la tire.
+	AI_Output (self, other, "DIA_Cassia_Lernen_16_04");//Je vous apprendrai Ã©galement Ã  dÃ©velopper votre agilitÃ©, Une grande agilitÃ© est essentielle Ã  la bonne utilisation de nos compÃ©tences.
 	
 	Log_CreateTopic (Topic_CityTeacher,LOG_NOTE);
-	B_LogEntry(Topic_CityTeacher,"Cassia peut m'apprendre le vol à la tire et peut m'aider à améliorer ma dextérité.");
-	B_LogEntry(Topic_CityTeacher,"Ramirez peut m'apprendre à crocheter les serrures.");
-	B_LogEntry(Topic_CityTeacher,"Jesper peut m'apprendre la discrétion.");
+	B_LogEntry(Topic_CityTeacher,"Cassia peut m'apprendre le vol Ã  la tire et peut m'aider Ã  amÃ©liorer ma dextÃ©ritÃ©.");
+	B_LogEntry(Topic_CityTeacher,"Ramirez peut m'apprendre Ã  crocheter les serrures.");
+	B_LogEntry(Topic_CityTeacher,"Jesper peut m'apprendre la discrÃ©tion.");
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Regeln 
@@ -295,7 +295,7 @@ INSTANCE DIA_Cassia_Regeln   (C_INFO)
 	condition   = DIA_Cassia_Regeln_Condition;
 	information = DIA_Cassia_Regeln_Info;
 	permanent   = FALSE;
-	description = "Quelles sont vos règles ?";
+	description = "Quelles sont vos rÃ¨gles ?";
 };
 
 FUNC INT DIA_Cassia_Regeln_Condition()
@@ -307,12 +307,12 @@ FUNC INT DIA_Cassia_Regeln_Condition()
 };
 FUNC VOID DIA_Cassia_Regeln_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Regeln_15_00");//Quelles sont vos règles ?
+	AI_Output (other, self, "DIA_Cassia_Regeln_15_00");//Quelles sont vos rÃ¨glesÂ ?
 	//AI_Output (self, other, "DIA_Cassia_Regeln_16_01");//Wir richten uns nach drei Regeln.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_02");//La première est simple : vous ne devez parler de nous à personne, jamais.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_03");//Deuxièmement, défense de se faire prendre.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_04");//Troisièmement, si vous sortez votre arme ici dans le but d'attaquer quelqu'un, nous vous tuerons.
-	AI_Output (self, other, "DIA_Cassia_Regeln_16_05");//Et enfin, ceux qui veulent se joindre à nous doivent commencer par faire leurs preuves.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_02");//La premiÃ¨re est simpleÂ : vous ne devez parler de nous Ã  personne, jamais.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_03");//DeuxiÃ¨mement, dÃ©fense de se faire prendre.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_04");//TroisiÃ¨mement, si vous sortez votre arme ici dans le but d'attaquer quelqu'un, nous vous tuerons.
+	AI_Output (self, other, "DIA_Cassia_Regeln_16_05");//Et enfin, ceux qui veulent se joindre Ã  nous doivent commencer par faire leurs preuves.
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Was passiert, wenn ich erwischt werde? 
@@ -336,8 +336,8 @@ FUNC INT DIA_Cassia_Erwischen_Condition()
 };
 FUNC VOID DIA_Cassia_Erwischen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Erwischen_15_00");//Que se passera-t-il si je me fais attraper ?
-	AI_Output (self, other, "DIA_Cassia_Erwischen_16_01");//Faites en sorte que cela n'arrive pas, d'accord ?
+	AI_Output (other, self, "DIA_Cassia_Erwischen_15_00");//Que se passera-t-il si je me fais attraperÂ ?
+	AI_Output (self, other, "DIA_Cassia_Erwischen_16_01");//Faites en sorte que cela n'arrive pas, d'accordÂ ?
 };
 //////////////////////////////////////////////////////////////////////
 //	Info Wie muss ich mich beweisen?
@@ -349,7 +349,7 @@ INSTANCE DIA_Cassia_beweisen   (C_INFO)
 	condition   = DIA_Cassia_beweisen_Condition;
 	information = DIA_Cassia_beweisen_Info;
 	permanent   = TRUE;
-	description = "Comment suis-je supposé faire mes preuves ?";
+	description = "Comment suis-je supposÃ© faire mes preuves ?";
 };
 //--------------------------------------
 var int DIA_Cassia_beweisen_permanent;
@@ -364,16 +364,16 @@ FUNC INT DIA_Cassia_beweisen_Condition()
 };
 FUNC VOID DIA_Cassia_beweisen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_beweisen_15_00");//Comment suis-je censé faire mes preuves ?
+	AI_Output (other, self, "DIA_Cassia_beweisen_15_00");//Comment suis-je censÃ© faire mes preuvesÂ ?
 	
 	if (Join_Thiefs == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_beweisen_16_01");//Vous voulez vous joindre à nous, oui ou non ?
+		AI_Output (self, other, "DIA_Cassia_beweisen_16_01");//Vous voulez vous joindre Ã  nous, oui ou nonÂ ?
 	}
 	else 
 	{
-		AI_Output (self, other, "DIA_Cassia_beweisen_16_02");//Cet entêté de Constantino, l'alchimiste, possède un très bel anneau.
-		AI_Output (self, other, "DIA_Cassia_beweisen_16_03");//Mais il n'en a pas vraiment besoin. En fait, il serait bien plus joli à mon doigt.
+		AI_Output (self, other, "DIA_Cassia_beweisen_16_02");//Cet entÃªtÃ© de Constantino, l'alchimiste, possÃ¨de un trÃ¨s bel anneau.
+		AI_Output (self, other, "DIA_Cassia_beweisen_16_03");//Mais il n'en a pas vraiment besoin. En fait, il serait bien plus joli Ã  mon doigt.
 		
 		MIS_CassiaRing = LOG_RUNNING;
 		DIA_Cassia_beweisen_permanent = TRUE;
@@ -393,7 +393,7 @@ INSTANCE DIA_Cassia_Beitreten   (C_INFO)
 	condition   = DIA_Cassia_Beitreten_Condition;
 	information = DIA_Cassia_Beitreten_Info;
 	permanent   = FALSE;
-	description = "Très bien, je marche.";
+	description = "TrÃ¨s bien, je marche.";
 };
 
 FUNC INT DIA_Cassia_Beitreten_Condition()
@@ -407,7 +407,7 @@ FUNC INT DIA_Cassia_Beitreten_Condition()
 FUNC VOID DIA_Cassia_Beitreten_Info()
 {
 	AI_Output (other, self, "DIA_Cassia_Beitreten_15_00");//D'accord, je suis partant.
-	AI_Output (self, other, "DIA_Cassia_Beitreten_16_01");//Excellent ! Nous allons vous donner la possibilité de faire vos preuves. Et si vous voulez profiter de notre enseignement, pas de problème.
+	AI_Output (self, other, "DIA_Cassia_Beitreten_16_01");//ExcellentÂ ! Nous allons vous donner la possibilitÃ© de faire vos preuves. Et si vous voulez profiter de notre enseignement, pas de problÃ¨me.
 	
 	Join_Thiefs = TRUE;
 };
@@ -421,7 +421,7 @@ INSTANCE DIA_Cassia_Ablehnen   (C_INFO)
 	condition   = DIA_Cassia_Ablehnen_Condition;
 	information = DIA_Cassia_Ablehnen_Info;
 	permanent   = FALSE;
-	description = "Et si je ne veux pas me joindre à vous… ?";
+	description = "Et si je ne veux pas me joindre Ã  vousâ€¦ ?";
 };
 
 FUNC INT DIA_Cassia_Ablehnen_Condition()
@@ -434,31 +434,31 @@ FUNC INT DIA_Cassia_Ablehnen_Condition()
 };
 FUNC VOID DIA_Cassia_Ablehnen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Ablehnen_15_00");//Et si je ne veux pas me joindre à vous ?
+	AI_Output (other, self, "DIA_Cassia_Ablehnen_15_00");//Et si je ne veux pas me joindre Ã  vousÂ ?
 	
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_01");//Vous laissez passer la chance de votre vie, mais vous êtes libre de partir.
-		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_02");//(sérieuse) Par contre, ne songez même pas à nous trahir. Vous le regretteriez amèrement.
+		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_01");//Vous laissez passer la chance de votre vie, mais vous Ãªtes libre de partir.
+		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_02");//(sÃ©rieuse) Par contre, ne songez mÃªme pas Ã  nous trahir. Vous le regretteriez amÃ¨rement.
 		
 		Info_ClearChoices (DIA_Cassia_Ablehnen);
-		Info_AddChoice (DIA_Cassia_Ablehnen,"Très bien, je marche.",DIA_Cassia_Ablehnen_Okay);
-		Info_AddChoice (DIA_Cassia_Ablehnen,"Je dois y réfléchir.",DIA_Cassia_Ablehnen_Frist);
+		Info_AddChoice (DIA_Cassia_Ablehnen,"TrÃ¨s bien, je marche.",DIA_Cassia_Ablehnen_Okay);
+		Info_AddChoice (DIA_Cassia_Ablehnen,"Je dois y rÃ©flÃ©chir.",DIA_Cassia_Ablehnen_Frist);
 	}
 	else 
 	{
 		AI_Output (self, other, "DIA_Cassia_Ablehnen_16_03");//Dans ce cas, je vous tue.
 		
 		Info_ClearChoices (DIA_Cassia_Ablehnen);
-		Info_AddChoice (DIA_Cassia_Ablehnen,"Très bien, je marche.",DIA_Cassia_Ablehnen_Okay);
+		Info_AddChoice (DIA_Cassia_Ablehnen,"TrÃ¨s bien, je marche.",DIA_Cassia_Ablehnen_Okay);
 		Info_AddChoice (DIA_Cassia_Ablehnen,"Eh bien, essayez donc de me tuer.",DIA_Cassia_Ablehnen_Kill);
 	};
 };
 FUNC VOID DIA_Cassia_Ablehnen_Okay()
 {
 	AI_Output (other, self, "DIA_Cassia_Ablehnen_Okay_15_00");//D'accord, je suis partant.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_01");//(sourit) Sage décision. Vous pourrez rejoindre nos rangs si vous parvenez à faire vos preuves.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_02");//Si vous voulez commencer par apprendre les compétences de voleur, pas de problème. Vous en aurez bien besoin.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_01");//(sourit) Sage dÃ©cision. Vous pourrez rejoindre nos rangs si vous parvenez Ã  faire vos preuves.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Okay_16_02");//Si vous voulez commencer par apprendre les compÃ©tences de voleur, pas de problÃ¨me. Vous en aurez bien besoin.
 	Join_Thiefs = TRUE; 
 	Info_ClearChoices (DIA_Cassia_Ablehnen);
 };
@@ -472,8 +472,8 @@ FUNC VOID DIA_Cassia_Ablehnen_Kill()
 };
 FUNC VOID DIA_Cassia_Ablehnen_Frist()
 {
-	AI_Output (other, self, "DIA_Cassia_Ablehnen_Frist_15_00");//Il faut que j'y réfléchisse.
-	AI_Output (self, other, "DIA_Cassia_Ablehnen_Frist_16_01");//Faites. Je vous donne deux jours pour prendre votre décision. Passé ce délai, vous ne serez plus le bienvenu ici.
+	AI_Output (other, self, "DIA_Cassia_Ablehnen_Frist_15_00");//Il faut que j'y rÃ©flÃ©chisse.
+	AI_Output (self, other, "DIA_Cassia_Ablehnen_Frist_16_01");//Faites. Je vous donne deux jours pour prendre votre dÃ©cision. PassÃ© ce dÃ©lai, vous ne serez plus le bienvenu ici.
 	
 	Cassia_Day = B_GetDayPlus ();
 	Cassia_Frist = TRUE;
@@ -505,29 +505,29 @@ FUNC INT DIA_Cassia_BevorLernen_Condition()
 };
 FUNC VOID DIA_Cassia_BevorLernen_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_BevorLernen_15_00");//Pouvez-vous me faire profiter de votre enseignement ?
+	AI_Output (other, self, "DIA_Cassia_BevorLernen_15_00");//Pouvez-vous me faire profiter de votre enseignementÂ ?
 	
 	if (MIS_ThiefGuild_sucked == FALSE)
 	{
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_01");//Bien sûr. Faites-moi savoir quand vous serez prêt.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_01");//Bien sÃ»r. Faites-moi savoir quand vous serez prÃªt.
 		Cassia_TeachPickpocket = TRUE;
 		Cassia_TeachDEX = TRUE;
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_02");//Bien sûr. Les cours de vol à la tire vous coûteront 100 pièces d'or et ce sera le même tarif pour les exercices d'agilité.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_16_02");//Bien sÃ»r. Les cours de vol Ã  la tire vous coÃ»teront 100 piÃ¨ces d'or et ce sera le mÃªme tarif pour les exercices d'agilitÃ©.
 	
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
-		Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Peut-être plus tard... (RETOUR)",DIA_Cassia_BevorLernen_Spaeter);
+		Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Peut-Ãªtre plus tard... (RETOUR)",DIA_Cassia_BevorLernen_Spaeter);
 		
 		if (Cassia_TeachPickpocket == FALSE)
 		{
-			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Je veux apprendre à crocheter des serrures (payer 100 pièces d'or).",DIA_Cassia_BevorLernen_Pickpocket);
+			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Je veux apprendre Ã  crocheter des serrures (payer 100 piÃ¨ces d'or).",DIA_Cassia_BevorLernen_Pickpocket);
 		};
 		
 		if (Cassia_TeachDEX == FALSE)
 		{
-			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Je veux améliorer ma dextérité (payer 100 pièces d'or).",DIA_Cassia_BevorLernen_DEX);
+			Info_AddChoice 	  (DIA_Cassia_BevorLernen,"Je veux amÃ©liorer ma dextÃ©ritÃ© (payer 100 piÃ¨ces d'or).",DIA_Cassia_BevorLernen_DEX);
 		};
 	};
 };
@@ -539,8 +539,8 @@ FUNC VOID DIA_Cassia_BevorLernen_DEX()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (other, self, "DIA_Cassia_BevorLernen_DEX_15_00");//Je voudrais devenir plus agile. Voilà votre argent.
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_DEX_16_01");//Nous pouvons commencer dès que vous serez prêt.
+		AI_Output (other, self, "DIA_Cassia_BevorLernen_DEX_15_00");//Je voudrais devenir plus agile. VoilÃ  votre argent.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_DEX_16_01");//Nous pouvons commencer dÃ¨s que vous serez prÃªt.
 		Cassia_TeachDEX = TRUE;
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
 	}
@@ -554,8 +554,8 @@ FUNC VOID DIA_Cassia_BevorLernen_Pickpocket()
 {
 	if B_GiveInvItems (other, self, ItMi_Gold, 100)
 	{
-		AI_Output (other, self, "DIA_Cassia_BevorLernen_Pickpocket_15_00");//Je voudrais apprendre le vol à la tire. Voilà votre argent.
-		AI_Output (self, other, "DIA_Cassia_BevorLernen_Pickpocket_16_01");//Nous pouvons commencer dès que vous serez prêt.
+		AI_Output (other, self, "DIA_Cassia_BevorLernen_Pickpocket_15_00");//Je voudrais apprendre le vol Ã  la tire. VoilÃ  votre argent.
+		AI_Output (self, other, "DIA_Cassia_BevorLernen_Pickpocket_16_01");//Nous pouvons commencer dÃ¨s que vous serez prÃªt.
 		Cassia_TeachPickpocket = TRUE;
 		Info_ClearChoices (DIA_Cassia_BevorLernen);
 	}
@@ -632,7 +632,7 @@ INSTANCE DIA_Cassia_Pickpocket   (C_INFO)
 	condition   = DIA_Cassia_Pickpocket_Condition;
 	information = DIA_Cassia_Pickpocket_Info;
 	permanent   = TRUE;
-	description = "Apprenez-moi à voler à la tire. (10 PA)";
+	description = "Apprenez-moi Ã  voler Ã  la tire. (10 PA)";
 };
 
 FUNC INT DIA_Cassia_Pickpocket_Condition()
@@ -645,14 +645,14 @@ FUNC INT DIA_Cassia_Pickpocket_Condition()
 };
 FUNC VOID DIA_Cassia_Pickpocket_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Pickpocket_15_00");//Montrez-moi comment pratiquer le vol à la tire.
+	AI_Output (other, self, "DIA_Cassia_Pickpocket_15_00");//Montrez-moi comment pratiquer le vol Ã  la tire.
 	
 	if B_TeachThiefTalent (self, other, NPC_TALENT_PICKPOCKET)
 	{
 		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_01");//Si vous voulez faire les poches de quelqu'un, commencez par distraire votre proie, par exemple en lui parlant.
-		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_02");//Dans le même temps, évaluez votre victime du regard et cherchez ses poches rembourrées, ou encore ses éventuels bijoux. Et surtout, voyez si vous avez affaire ou non à quelqu'un d'attentif.
+		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_02");//Dans le mÃªme temps, Ã©valuez votre victime du regard et cherchez ses poches rembourrÃ©es, ou encore ses Ã©ventuels bijoux. Et surtout, voyez si vous avez affaire ou non Ã  quelqu'un d'attentif.
 		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_03");//Il est bien plus facile de voler un ivrogne qu'un marchand vigilant, vous vous en doutez.
-		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_04");//Evidemment, si vous êtes trop maladroit, votre victime se doutera de quelque chose. Alors, d'abord et avant toute chose, gardez votre calme.
+		AI_Output (self, other, "DIA_Cassia_Pickpocket_16_04");//Evidemment, si vous Ãªtes trop maladroit, votre victime se doutera de quelque chose. Alors, d'abord et avant toute chose, gardez votre calme.
 	};
 };
 //////////////////////////////////////////////////////////////////////
@@ -681,19 +681,19 @@ FUNC VOID DIA_Cassia_Aufnahme_Info()
 	AI_Output (other, self, "DIA_Cassia_Aufnahme_15_00");//J'ai l'anneau de Constantino.
 	B_GiveInvItems (other, self,ItRi_Prot_Point_01_MIS,1);
 	
-	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_01");//Félicitations ! Vous avez passé avec succès votre épreuve d'initiation. Vous voilà des nôtres désormais.
-	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_02");//Prenez cette clé. Elle ouvre la porte de l'hôtel. (sourit) De cette manière, vous n'aurez pas à nager à chaque fois.
+	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_01");//FÃ©licitationsÂ ! Vous avez passÃ© avec succÃ¨s votre Ã©preuve d'initiation. Vous voilÃ  des nÃ´tres dÃ©sormais.
+	AI_Output (self, other, "DIA_Cassia_Aufnahme_16_02");//Prenez cette clÃ©. Elle ouvre la porte de l'hÃ´tel. (sourit) De cette maniÃ¨re, vous n'aurez pas Ã  nager Ã  chaque fois.
 	B_GiveInvItems (self, other,ItKe_ThiefGuildKey_Hotel_MIS,1);
 	
-	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_03");//Sachez aussi que nous avons un signe de reconnaissance, un hochement de tête bien spécifique.
+	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_03");//Sachez aussi que nous avons un signe de reconnaissance, un hochement de tÃªte bien spÃ©cifique.
 	AI_PlayAni (other,"T_YES");
-	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_04");//Exactement. Si vous faites ce signe en parlant à quelqu'un qui nous connaît, votre interlocuteur saura que vous êtes des nôtres.
+	AI_Output  (self, other, "DIA_Cassia_Aufnahme_16_04");//Exactement. Si vous faites ce signe en parlant Ã  quelqu'un qui nous connaÃ®t, votre interlocuteur saura que vous Ãªtes des nÃ´tres.
 		
 	MIS_CassiaRing = LOG_SUCCESS;
 	B_GivePlayerXP (XP_CassiaRing);
 	Knows_SecretSign = TRUE;
 	Log_CreateTopic (Topic_Diebesgilde, LOG_NOTE);
-	B_LogEntry (Topic_Diebesgilde,"J'ai été accepté au sein de la guilde des voleurs."); 
+	B_LogEntry (Topic_Diebesgilde,"J'ai Ã©tÃ© acceptÃ© au sein de la guilde des voleurs."); 
 	B_LogEntry (Topic_Diebesgilde,"Je connais le signe de reconnaissance des voleurs. Si je l'adresse aux bonnes personnes, elles sauront que je suis l'un d'eux.");
 	 
 	
@@ -708,7 +708,7 @@ INSTANCE DIA_Cassia_Versteck   (C_INFO)
 	condition   = DIA_Cassia_Versteck_Condition;
 	information = DIA_Cassia_Versteck_Info;
 	permanent   = FALSE;
-	description = "Alors où cachez-vous votre butin ?";
+	description = "Alors oÃ¹ cachez-vous votre butin ?";
 };
 
 FUNC INT DIA_Cassia_Versteck_Condition()
@@ -721,8 +721,8 @@ FUNC INT DIA_Cassia_Versteck_Condition()
 };
 FUNC VOID DIA_Cassia_Versteck_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Versteck_15_00");//Où cachez-vous votre butin ?
-	AI_Output (self, other, "DIA_Cassia_Versteck_16_01");//Allons... vous ne pensiez tout de même pas que j'allais vous répondre, si ?
+	AI_Output (other, self, "DIA_Cassia_Versteck_15_00");//OÃ¹ cachez-vous votre butinÂ ?
+	AI_Output (self, other, "DIA_Cassia_Versteck_16_01");//Allons... vous ne pensiez tout de mÃªme pas que j'allais vous rÃ©pondre, siÂ ?
 	AI_Output (self, other, "DIA_Cassia_Versteck_16_02");//Vous aurez amplement l'occasion de vous enrichir. Mais n'oubliez jamais que les plus cupides finissent toujours par tout perdre.
 };
 //////////////////////////////////////////////////////////////////////
@@ -748,24 +748,24 @@ FUNC INT DIA_Cassia_Blutkelche_Condition()
 };
 FUNC VOID DIA_Cassia_Blutkelche_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Blutkelche_15_00");//Vous avez du travail pour moi ?
+	AI_Output (other, self, "DIA_Cassia_Blutkelche_15_00");//Vous avez du travail pour moiÂ ?
 	
 	if (PETZCOUNTER_City_Theft  > 0)
 	{
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_01");//Pas tant que vous serez recherché par les autorités.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_02");//Réglez cette affaire rapidement. Payez l'amende ou éliminez les témoins, je ne veux pas le savoir, mais réglez-moi ça.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_01");//Pas tant que vous serez recherchÃ© par les autoritÃ©s.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_02");//RÃ©glez cette affaire rapidement. Payez l'amende ou Ã©liminez les tÃ©moins, je ne veux pas le savoir, mais rÃ©glez-moi Ã§a.
 		AI_StopProcessInfos (self);
 	}
 	else 
 	{
 		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_03");//Oui. Il existe un total de six calices identiques.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_04");//Autrefois, le roi Rhobar les avait rapportés d'une longue campagne, coûteuse en vies humaines. C'est pour cette raison qu'on les nomme les calices de sang.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_05");//Individuellement, ils ne valent pas grand-chose, mais les six réunis ont une bien plus grande valeur.
-		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_06");//Où sont ces calices ?
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_04");//Autrefois, le roi Rhobar les avait rapportÃ©s d'une longue campagne, coÃ»teuse en vies humaines. C'est pour cette raison qu'on les nomme les calices de sang.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_05");//Individuellement, ils ne valent pas grand-chose, mais les six rÃ©unis ont une bien plus grande valeur.
+		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_06");//OÃ¹ sont ces calicesÂ ?
 		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_07");//Ils sont ici, en ville, entre les mains des riches marchands du haut quartier.
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_08");//Ramenez-les moi. De mon côté, je ferai en sorte de leur trouver un acheteur.
-		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_09");//Et qu'est-ce que j'ai à y gagner ?
-		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_10");//Au choix : la moitié du prix de la vente ou un objet de mon butin.
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_08");//Ramenez-les moi. De mon cÃ´tÃ©, je ferai en sorte de leur trouver un acheteur.
+		AI_Output (other, self, "DIA_Cassia_Blutkelche_15_09");//Et qu'est-ce que j'ai Ã  y gagner ?
+		AI_Output (self, other, "DIA_Cassia_Blutkelche_16_10");//Au choixÂ : la moitiÃ© du prix de la vente ou un objet de mon butin.
  		
  		MIS_CassiaKelche = LOG_RUNNING;
  		Log_CreateTopic(Topic_Cassiakelche,LOG_MISSION);
@@ -801,9 +801,9 @@ FUNC VOID DIA_Cassia_abgeben_Info()
 	if B_GiveInvItems (other, self, ItMi_BloodCup_MIS,6)
 	{
 		AI_Output (other, self, "DIA_Cassia_abgeben_15_01");//J'ai les six calices.
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_02");//Beau travail. De mon côté, j'ai trouvé un acheteur.
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_03");//Vous pouvez prendre votre récompense. Merci d'avoir fait cela pour moi.
-		AI_Output (self, other, "DIA_Cassia_abgeben_16_04");//Je n'ai rien d'autre à vous proposer. Mais je peux vous donner des leçons, si vous voulez. Et puis, il y a des tas de choses qui attendent juste qu'on aille les prendre sur cette île... (sourit)
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_02");//Beau travail. De mon cÃ´tÃ©, j'ai trouvÃ© un acheteur.
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_03");//Vous pouvez prendre votre rÃ©compense. Merci d'avoir fait cela pour moi.
+		AI_Output (self, other, "DIA_Cassia_abgeben_16_04");//Je n'ai rien d'autre Ã  vous proposer. Mais je peux vous donner des leÃ§ons, si vous voulez. Et puis, il y a des tas de choses qui attendent juste qu'on aille les prendre sur cette Ã®le... (sourit)
 		    
 		
 		MIS_CassiaKelche = LOG_SUCCESS;
@@ -824,7 +824,7 @@ INSTANCE DIA_Cassia_Belohnung   (C_INFO)
 	condition   = DIA_Cassia_Belohnung_Condition;
 	information = DIA_Cassia_Belohnung_Info;
 	permanent   = FALSE;
-	description = "Je viens récupérer ma récompense.";
+	description = "Je viens rÃ©cupÃ©rer ma rÃ©compense.";
 };
 
 FUNC INT DIA_Cassia_Belohnung_Condition()
@@ -837,13 +837,13 @@ FUNC INT DIA_Cassia_Belohnung_Condition()
 };
 FUNC VOID DIA_Cassia_Belohnung_Info()
 {
-	AI_Output (other, self, "DIA_Cassia_Belohnung_15_00");//Je viens chercher ma récompense.
-	AI_Output (self, other, "DIA_Cassia_Belohnung_16_01");//Que choisissez-vous ?
+	AI_Output (other, self, "DIA_Cassia_Belohnung_15_00");//Je viens chercher ma rÃ©compense.
+	AI_Output (self, other, "DIA_Cassia_Belohnung_16_01");//Que choisissez-vousÂ ?
 	
 	Info_ClearChoices (DIA_Cassia_Belohnung);
 	
-	Info_AddChoice (DIA_Cassia_Belohnung,"400 pièces d'or.",DIA_Cassia_Belohnung_Gold);
-	Info_AddChoice (DIA_Cassia_Belohnung,"4 élixirs de soin",DIA_Cassia_Belohnung_Trank);
+	Info_AddChoice (DIA_Cassia_Belohnung,"400 piÃ¨ces d'or.",DIA_Cassia_Belohnung_Gold);
+	Info_AddChoice (DIA_Cassia_Belohnung,"4 Ã©lixirs de soin",DIA_Cassia_Belohnung_Trank);
 	Info_AddChoice (DIA_Cassia_Belohnung, NAME_ADDON_CASSIASBELOHNUNGSRING ,DIA_Cassia_Belohnung_Ring);
 	
 };

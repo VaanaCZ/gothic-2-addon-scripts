@@ -52,7 +52,7 @@ func void DIA_Addon_Gaan_MeetingIsRunning_Info ()
 {
 	if (DIA_Addon_Gaan_MeetingIsRunning_One_time == FALSE)
 	{
-		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_00"); //Une nouvelle tête parmi nous. Bienvenue à 'L'Anneau de l'eau'.
+		AI_Output	(self, other, "DIA_Addon_Gaan_MeetingIsRunning_03_00"); //Une nouvelle tÃªte parmi nous. Bienvenue Ã  'L'Anneau de l'eau'.
 		DIA_Addon_Gaan_MeetingIsRunning_One_time = TRUE;
 	}
 	else
@@ -72,7 +72,7 @@ instance DIA_Gaan_HALLO		(C_INFO)
 	condition	 = 	DIA_Gaan_HALLO_Condition;
 	information	 = 	DIA_Gaan_HALLO_Info;
 
-	description	 = 	"Vous bénéficiez de beaucoup d'espace ici.";
+	description	 = 	"Vous bÃ©nÃ©ficiez de beaucoup d'espace ici.";
 };
 
 func int DIA_Gaan_HALLO_Condition ()
@@ -83,8 +83,8 @@ func int DIA_Gaan_HALLO_Condition ()
 func void DIA_Gaan_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Gaan_HALLO_15_00"); //Vous avez beaucoup d'espace ici.
-	AI_Output			(self, other, "DIA_Gaan_HALLO_03_01"); //C'est pas mal mais si vous franchissez le col là-bas, vous changerez vite d'avis.
-	AI_Output			(self, other, "DIA_Gaan_HALLO_03_02"); //Si cette petite parcelle de terre vous impressionne, attendez de voir la Vallée des mines.
+	AI_Output			(self, other, "DIA_Gaan_HALLO_03_01"); //C'est pas mal mais si vous franchissez le col lÃ -bas, vous changerez vite d'avis.
+	AI_Output			(self, other, "DIA_Gaan_HALLO_03_02"); //Si cette petite parcelle de terre vous impressionne, attendez de voir la VallÃ©e des mines.
 
 };
 
@@ -100,7 +100,7 @@ instance DIA_Gaan_WASMACHSTDU		(C_INFO)
 	condition	 = 	DIA_Gaan_WASMACHSTDU_Condition;
 	information	 = 	DIA_Gaan_WASMACHSTDU_Info;
 
-	description	 = 	"Qui êtes-vous ?";
+	description	 = 	"Qui Ãªtes-vous ?";
 };
 
 func int DIA_Gaan_WASMACHSTDU_Condition ()
@@ -115,9 +115,9 @@ func int DIA_Gaan_WASMACHSTDU_Condition ()
 
 func void DIA_Gaan_WASMACHSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WASMACHSTDU_15_00"); //Qui êtes-vous ?
-	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_01"); //Je m'appelle Gaan. Je suis chasseur et je travaille pour Bengar, le fermier des hauts pâturages.
-	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_02"); //Je passe le plus clair de mon temps dehors à me baigner au soleil.
+	AI_Output			(other, self, "DIA_Gaan_WASMACHSTDU_15_00"); //Qui Ãªtes-vous ?
+	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_01"); //Je m'appelle Gaan. Je suis chasseur et je travaille pour Bengar, le fermier des hauts pÃ¢turages.
+	AI_Output			(self, other, "DIA_Gaan_WASMACHSTDU_03_02"); //Je passe le plus clair de mon temps dehors Ã  me baigner au soleil.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -130,7 +130,7 @@ instance DIA_Addon_Gaan_Ranger		(C_INFO)
 	condition	 = 	DIA_Addon_Gaan_Ranger_Condition;
 	information	 = 	DIA_Addon_Gaan_Ranger_Info;
 
-	description	 = 	"Pourquoi êtes-vous aussi solennel ?";
+	description	 = 	"Pourquoi Ãªtes-vous aussi solennel ?";
 };
 
 func int DIA_Addon_Gaan_Ranger_Condition ()
@@ -145,10 +145,10 @@ func int DIA_Addon_Gaan_Ranger_Condition ()
 
 func void DIA_Addon_Gaan_Ranger_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_00"); //Pourquoi êtes-vous aussi solennel ?
+	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_00"); //Pourquoi Ãªtes-vous aussi solennel ?
 	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_01"); //Vous portez notre anneau d'aigue-marine.
-	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_02"); //Vous appartenez à 'L'Anneau de l'eau' ?
-	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_03"); //Tout à fait. Heureux de voir une nouvelle tête dans nos rangs.
+	AI_Output	(other, self, "DIA_Addon_Gaan_Ranger_15_02"); //Vous appartenez Ã  'L'Anneau de l'eau' ?
+	AI_Output	(self, other, "DIA_Addon_Gaan_Ranger_03_03"); //Tout Ã  fait. Heureux de voir une nouvelle tÃªte dans nos rangs.
 	B_GivePlayerXP (XP_Ambient);
 };
 
@@ -178,8 +178,8 @@ func int DIA_Addon_Gaan_AufgabeBeimRing_Condition ()
 func void DIA_Addon_Gaan_AufgabeBeimRing_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Gaan_AufgabeBeimRing_15_00"); //Quelles sont vos fonctions au sein de 'L'Anneau de l'eau' ?
-	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_01"); //Je surveille l'accès au col pour savoir qui entre et qui sort.
-	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_02"); //Depuis que les paladins ont fermé la porte donnant sur le col, il n'y a plus beaucoup de passage.
+	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_01"); //Je surveille l'accÃ¨s au col pour savoir qui entre et qui sort.
+	AI_Output	(self, other, "DIA_Addon_Gaan_AufgabeBeimRing_03_02"); //Depuis que les paladins ont fermÃ© la porte donnant sur le col, il n'y a plus beaucoup de passage.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -207,7 +207,7 @@ func int DIA_Addon_Gaan_MissingPeople_Condition ()
 func void DIA_Addon_Gaan_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Gaan_MissingPeople_15_00"); //Avez-vous entendu parler des disparitions ?
-	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_01"); //Bien sûr. C'est pour cela que nous devons rester vigilants.
+	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_01"); //Bien sÃ»r. C'est pour cela que nous devons rester vigilants.
 	AI_Output	(self, other, "DIA_Addon_Gaan_MissingPeople_03_02"); //Mais je dois vous avouer que je n'ai rien vu qui puisse vous aider.
 };
 
@@ -221,7 +221,7 @@ instance DIA_Gaan_WALD		(C_INFO)
 	condition	 = 	DIA_Gaan_WALD_Condition;
 	information	 = 	DIA_Gaan_WALD_Info;
 
-	description	 = 	"Que dois-je savoir sur la Vallée des mines ?";
+	description	 = 	"Que dois-je savoir sur la VallÃ©e des mines ?";
 };
 
 func int DIA_Gaan_WALD_Condition ()
@@ -231,12 +231,12 @@ func int DIA_Gaan_WALD_Condition ()
 
 func void DIA_Gaan_WALD_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WALD_15_00"); //Que dois-je savoir sur la Vallée des mines ?
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_01"); //Aucune idée. Je n'ai fait qu'y jeter un coup d'œil. Ça m'a l'air assez dangereux.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_02"); //La meilleure chose à faire si vous y aller par le col, c'est de ne pas vous éloigner de la piste.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_03"); //Soit vous prenez le chemin par la grande gorge ou la route du pont de pierre. Celle-ci est la plus courte et la plus sûre.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_04"); //Maintenant que les orques sont partout, vous devrez être prudent.
-	AI_Output			(self, other, "DIA_Gaan_WALD_03_05"); //Je ne voudrais pas avoir à vous conduire auprès de la sorcière herboriste.
+	AI_Output			(other, self, "DIA_Gaan_WALD_15_00"); //Que dois-je savoir sur la VallÃ©e des mines ?
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_01"); //Aucune idÃ©e. Je n'ai fait qu'y jeter un coup d'Å“il. Ã‡a m'a l'air assez dangereux.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_02"); //La meilleure chose Ã  faire si vous y aller par le col, c'est de ne pas vous Ã©loigner de la piste.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_03"); //Soit vous prenez le chemin par la grande gorge ou la route du pont de pierre. Celle-ci est la plus courte et la plus sÃ»re.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_04"); //Maintenant que les orques sont partout, vous devrez Ãªtre prudent.
+	AI_Output			(self, other, "DIA_Gaan_WALD_03_05"); //Je ne voudrais pas avoir Ã  vous conduire auprÃ¨s de la sorciÃ¨re herboriste.
 
 };
 
@@ -250,7 +250,7 @@ instance DIA_Gaan_SAGITTA		(C_INFO)
 	condition	 = 	DIA_Gaan_SAGITTA_Condition;
 	information	 = 	DIA_Gaan_SAGITTA_Info;
 
-	description	 = 	"La sorcière herboriste ?";
+	description	 = 	"La sorciÃ¨re herboriste ?";
 };
 
 func int DIA_Gaan_SAGITTA_Condition ()
@@ -263,12 +263,12 @@ func int DIA_Gaan_SAGITTA_Condition ()
 
 func void DIA_Gaan_SAGITTA_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_SAGITTA_15_00"); //La sorcière herboriste ?
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_01"); //Elle s'appelle Sagitta. C'est la guérisseuse des fermiers et de ceux qui vivent hors de la ville portuaire.
+	AI_Output			(other, self, "DIA_Gaan_SAGITTA_15_00"); //La sorciÃ¨re herboriste ?
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_01"); //Elle s'appelle Sagitta. C'est la guÃ©risseuse des fermiers et de ceux qui vivent hors de la ville portuaire.
 	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_02"); //Une femme vraiment curieuse.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_03"); //Personne n'aime vraiment aller la voir et tout le monde adore faire des commérages à son sujet.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_04"); //Mais si vous êtes malade, vous ne trouverez personne qui puisse mieux vous aider que Sagitta et sa cuisine pleine d'herbes médicinales.
-	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_05"); //Vous la trouverez dans le petit bois près de la ferme de Sékob.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_03"); //Personne n'aime vraiment aller la voir et tout le monde adore faire des commÃ©rages Ã  son sujet.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_04"); //Mais si vous Ãªtes malade, vous ne trouverez personne qui puisse mieux vous aider que Sagitta et sa cuisine pleine d'herbes mÃ©dicinales.
+	AI_Output			(self, other, "DIA_Gaan_SAGITTA_03_05"); //Vous la trouverez dans le petit bois prÃ¨s de la ferme de SÃ©kob.
 
 };
 
@@ -282,7 +282,7 @@ instance DIA_Gaan_MONSTER		(C_INFO)
 	condition	 = 	DIA_Gaan_MONSTER_Condition;
 	information	 = 	DIA_Gaan_MONSTER_Info;
 
-	description	 = 	"A quoi ressemble cette bête si dangereuse ?";
+	description	 = 	"A quoi ressemble cette bÃªte si dangereuse ?";
 };
 
 func int DIA_Gaan_MONSTER_Condition ()
@@ -298,9 +298,9 @@ func int DIA_Gaan_MONSTER_Condition ()
 
 func void DIA_Gaan_MONSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_MONSTER_15_00"); //A quoi ressemble cette bête si dangereuse ?
+	AI_Output			(other, self, "DIA_Gaan_MONSTER_15_00"); //A quoi ressemble cette bÃªte si dangereuse ?
 	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_01"); //Je ne sais pas exactement. Pour l'instant je n'ai fait qu'entendre des grognements et des grattements. Mais j'ai vu ce qu'elle pouvait faire.
-	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_02"); //Même les loups en ont peur. La bête a mordu la tête de l'un d'eux.
+	AI_Output			(self, other, "DIA_Gaan_MONSTER_03_02"); //MÃªme les loups en ont peur. La bÃªte a mordu la tÃªte de l'un d'eux.
 
 };
 
@@ -314,7 +314,7 @@ instance DIA_Gaan_WASZAHLSTDU		(C_INFO)
 	condition	 = 	DIA_Gaan_WASZAHLSTDU_Condition;
 	information	 = 	DIA_Gaan_WASZAHLSTDU_Info;
 
-	description	 = 	"Combien m'offrez-vous pour tuer cette bête ?";
+	description	 = 	"Combien m'offrez-vous pour tuer cette bÃªte ?";
 };
 
 func int DIA_Gaan_WASZAHLSTDU_Condition ()
@@ -330,9 +330,9 @@ func int DIA_Gaan_WASZAHLSTDU_Condition ()
 
 func void DIA_Gaan_WASZAHLSTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //Combien me donneriez-vous si je tuais la bête pour vous ?
-	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //Je donnerais tout ce que je peux à la personne qui la tuera.
-	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 Goldmünzen? 
+	AI_Output			(other, self, "DIA_Gaan_WASZAHLSTDU_15_00"); //Combien me donneriez-vous si je tuais la bÃªte pour vous ?
+	AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_01"); //Je donnerais tout ce que je peux Ã  la personne qui la tuera.
+	//AI_Output			(self, other, "DIA_Gaan_WASZAHLSTDU_03_02"); //30 GoldmÃ¼nzen? 
 	//Auskommentiert, weil "?" ist auch so gesprochen worden - kommt nicht gut
 	B_Say_Gold   (self,other,30);
 	MIS_Gaan_Deal = LOG_RUNNING;
@@ -348,7 +348,7 @@ instance DIA_Gaan_WOHERMONSTER		(C_INFO)
 	condition	 = 	DIA_Gaan_WOHERMONSTER_Condition;
 	information	 = 	DIA_Gaan_WOHERMONSTER_Info;
 
-	description	 = 	"D'où vient cette bête immonde ?";
+	description	 = 	"D'oÃ¹ vient cette bÃªte immonde ?";
 };
 
 func int DIA_Gaan_WOHERMONSTER_Condition ()
@@ -364,9 +364,9 @@ func int DIA_Gaan_WOHERMONSTER_Condition ()
 
 func void DIA_Gaan_WOHERMONSTER_Info ()
 {
-	AI_Output			(other, self, "DIA_Gaan_WOHERMONSTER_15_00"); //D'où vient cette bête ?
-	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_01"); //De quelque part hors de la forêt. Peut-être la Vallée des mines. Mais je n'en suis pas sûr.
-	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_02"); //Je ne suis jamais allé dans la Vallée des mines.
+	AI_Output			(other, self, "DIA_Gaan_WOHERMONSTER_15_00"); //D'oÃ¹ vient cette bÃªte ?
+	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_01"); //De quelque part hors de la forÃªt. Peut-Ãªtre la VallÃ©e des mines. Mais je n'en suis pas sÃ»r.
+	AI_Output			(self, other, "DIA_Gaan_WOHERMONSTER_03_02"); //Je ne suis jamais allÃ© dans la VallÃ©e des mines.
  
 };
 
@@ -394,7 +394,7 @@ func int DIA_Gaan_MONSTERTOT_Condition ()
 
 func void DIA_Gaan_MONSTERTOT_Info ()
 {
-	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_00"); //Je présume que cet horrible animal est mort.
+	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_00"); //Je prÃ©sume que cet horrible animal est mort.
 	AI_Output			(self, other, "DIA_Gaan_MONSTERTOT_03_01"); //Je peux donc de nouveau chasser en paix.
 	
 
@@ -433,12 +433,12 @@ FUNC INT DIA_Gaan_AskTeacher_Condition()
 
 FUNC VOID DIA_Gaan_AskTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Gaan_AskTeacher_15_00"); //Pouvez-vous m'apprendre à chasser ?
-	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_01"); //Pas de problème. Pour 100 pièces d'or je peux vous apprendre à dépecer les animaux que vous abattez.
-	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_02"); //Les peaux et les autres trophées rapportent beaucoup d'argent au marché.
+	AI_Output(other,self,"DIA_Gaan_AskTeacher_15_00"); //Pouvez-vous m'apprendre Ã  chasser ?
+	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_01"); //Pas de problÃ¨me. Pour 100 piÃ¨ces d'or je peux vous apprendre Ã  dÃ©pecer les animaux que vous abattez.
+	AI_Output(self,other,"DIA_Gaan_AskTeacher_03_02"); //Les peaux et les autres trophÃ©es rapportent beaucoup d'argent au marchÃ©.
 		
 	Log_CreateTopic	(TOPIC_Teacher, LOG_NOTE);
-	B_LogEntry		(TOPIC_Teacher, "Gaan peut m'apprendre comment eviscérer les animaux.");
+	B_LogEntry		(TOPIC_Teacher, "Gaan peut m'apprendre comment eviscÃ©rer les animaux.");
 };
 
 
@@ -453,7 +453,7 @@ INSTANCE DIA_Gaan_PayTeacher (C_INFO)
 	condition	= DIA_Gaan_PayTeacher_Condition;
 	information	= DIA_Gaan_PayTeacher_Info;
 	permanent	= TRUE;
-	description = "Tenez. 100 pièces d'or pour m'enseigner à dépecer les animaux.";
+	description = "Tenez. 100 piÃ¨ces d'or pour m'enseigner Ã  dÃ©pecer les animaux.";
 };                       
 
 var int DIA_Gaan_PayTeacher_noPerm;
@@ -469,7 +469,7 @@ FUNC INT DIA_Gaan_PayTeacher_Condition()
 
 FUNC VOID DIA_Gaan_PayTeacher_Info()
 {
-	AI_Output(other,self,"DIA_Gaan_PayTeacher_15_00"); //Tenez. 100 pièces d'or pour m'apprendre à dépecer les animaux.
+	AI_Output(other,self,"DIA_Gaan_PayTeacher_15_00"); //Tenez. 100 piÃ¨ces d'or pour m'apprendre Ã  dÃ©pecer les animaux.
 
 	if (B_GiveInvItems (other, self, ItMi_Gold, 100))
 	{
@@ -517,7 +517,7 @@ func void DIA_Gaan_TEACHHUNTING_Info ()
 			||((PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_DrgSnapperHorn] == FALSE) && (MIS_Gaan_Snapper == LOG_SUCCESS))
 		)
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_01"); //Cela dépend de ce que vous voulez savoir.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_01"); //Cela dÃ©pend de ce que vous voulez savoir.
 
 			Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 		
@@ -549,7 +549,7 @@ func void DIA_Gaan_TEACHHUNTING_Info ()
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_02"); //Pour le moment je ne peux rien vous apprendre que vous ne sachiez déjà. Navré.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_03_02"); //Pour le moment je ne peux rien vous apprendre que vous ne sachiez dÃ©jÃ . NavrÃ©.
 		};
 };
 
@@ -563,9 +563,9 @@ func void DIA_Gaan_TEACHHUNTING_Claws()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Claws))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_00"); //Les animaux n'aiment pas se séparer de leurs griffes. Vous devez placer votre couteau avec une grande précision.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_01"); //Les mains légèrement croisées, vous ôtez les griffes d'un coup sec et ferme.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_02"); //Les marchands adorent être payés en griffes.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_00"); //Les animaux n'aiment pas se sÃ©parer de leurs griffes. Vous devez placer votre couteau avec une grande prÃ©cision.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_01"); //Les mains lÃ©gÃ¨rement croisÃ©es, vous Ã´tez les griffes d'un coup sec et ferme.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Claws_03_02"); //Les marchands adorent Ãªtre payÃ©s en griffes.
 		
 		};
 
@@ -579,8 +579,8 @@ func void DIA_Gaan_TEACHHUNTING_Teeth()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_00"); //La chose la plus facile à prendre sur un animal, ce sont ses crocs. Vous faites glisser le couteau autour de la racine.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_01"); //Puis vous les arrachez de la mâchoire d'un coup sec.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_00"); //La chose la plus facile Ã  prendre sur un animal, ce sont ses crocs. Vous faites glisser le couteau autour de la racine.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Teeth_03_01"); //Puis vous les arrachez de la mÃ¢choire d'un coup sec.
 	
 			
 		};
@@ -594,8 +594,8 @@ func void DIA_Gaan_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_00"); //Le meilleur moyen d'écorcher la peau est de pratiquer une profonde incision le long des pattes arrières.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_01"); //Après, cela devrait être facile d'ôter la peau d'avant vers l'arrière.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_00"); //Le meilleur moyen d'Ã©corcher la peau est de pratiquer une profonde incision le long des pattes arriÃ¨res.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_Fur_03_01"); //AprÃ¨s, cela devrait Ãªtre facile d'Ã´ter la peau d'avant vers l'arriÃ¨re.
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
@@ -608,20 +608,20 @@ func void DIA_Gaan_TEACHHUNTING_BFSting()
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFSting))
 		{
 			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_00"); //Ces mouches ont un point faible sur le dos.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_01"); //Si vous appuyez ici, le dard jaillira et vous pourrez l'ôter avec votre couteau.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFSting_03_01"); //Si vous appuyez ici, le dard jaillira et vous pourrez l'Ã´ter avec votre couteau.
 			
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
 	Info_AddChoice		(DIA_Gaan_TEACHHUNTING, DIALOG_BACK, DIA_Gaan_TEACHHUNTING_BACK);
 };
-// ------ Blutfliegenflügel ------
+// ------ BlutfliegenflÃ¼gel ------
 func void DIA_Gaan_TEACHHUNTING_BFWing ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_00"); //Le meilleur moyen d'ôter les ailes d'une mouche sanguine est d'utiliser un couteau tranchant le plus près possible du corps.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_01"); //Il faut faire attention à ne pas endommager les délicats tissus des ailes. Si vous vous y prenez mal, elles n'auront plus aucune valeur.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_00"); //Le meilleur moyen d'Ã´ter les ailes d'une mouche sanguine est d'utiliser un couteau tranchant le plus prÃ¨s possible du corps.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_BFWing_03_01"); //Il faut faire attention Ã  ne pas endommager les dÃ©licats tissus des ailes. Si vous vous y prenez mal, elles n'auront plus aucune valeur.
 
 		};
 
@@ -633,12 +633,12 @@ func void DIA_Gaan_TEACHHUNTING_DrgSnapperHorn()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_DrgSnapperHorn))
 		{
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00"); //Maintenant que ce saurinide légèrement démesuré est mort, je peux vous montrer comment ôter sa corne.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_01"); //Vous plongez votre couteau profondément dans le front de l'animal et vous faites doucement levier.
-			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //Si cela ne veut pas venir, utilisez un second couteau du coté opposé.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_00"); //Maintenant que ce saurinide lÃ©gÃ¨rement dÃ©mesurÃ© est mort, je peux vous montrer comment Ã´ter sa corne.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_01"); //Vous plongez votre couteau profondÃ©ment dans le front de l'animal et vous faites doucement levier.
+			AI_Output			(self, other, "DIA_Gaan_TEACHHUNTING_DrgSnapperHorn_03_02"); //Si cela ne veut pas venir, utilisez un second couteau du cotÃ© opposÃ©.
 	
 			
-			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den Füssen liegt!!
+			CreateInvItems (Gaans_Snapper, ItAt_DrgSnapperHorn, 1); //falls der Snapper ihm gerade vor den FÃ¼ssen liegt!!
 		};
 
 	Info_ClearChoices	(DIA_Gaan_TEACHHUNTING);
@@ -667,7 +667,7 @@ func int DIA_Gaan_JAGD_Condition ()
 
 func void B_WasMachtJagd ()
 {
-	AI_Output			(other, self, "DIA_Gaan_JAGD_15_00"); //Comment ça va la chasse ?
+	AI_Output			(other, self, "DIA_Gaan_JAGD_15_00"); //Comment Ã§a va la chasse ?
 };
 
 func void DIA_Gaan_JAGD_Info ()
@@ -676,17 +676,17 @@ func void DIA_Gaan_JAGD_Info ()
 
 	if ((Npc_IsDead(Gaans_Snapper))== FALSE)
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_01"); //Le dernier animal que j'ai pu abattre était un grand rat. Pas très encourageant ça et très mauvais pour les affaires.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_02"); //Cela fait plusieurs jours qu'une bête qui grogne erre dans la région.
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_03"); //Non seulement elle tue tout ce qui bouge mais, en plus, elle m'empêche d'exercer mon activité.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_01"); //Le dernier animal que j'ai pu abattre Ã©tait un grand rat. Pas trÃ¨s encourageant Ã§a et trÃ¨s mauvais pour les affaires.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_02"); //Cela fait plusieurs jours qu'une bÃªte qui grogne erre dans la rÃ©gion.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_03"); //Non seulement elle tue tout ce qui bouge mais, en plus, elle m'empÃªche d'exercer mon activitÃ©.
 			Log_CreateTopic (TOPIC_GaanSchnaubi, LOG_MISSION);
 			Log_SetTopicStatus(TOPIC_GaanSchnaubi, LOG_RUNNING);
-			B_LogEntry (TOPIC_GaanSchnaubi,"Une créature pose un problème au chasseur Gaan. Si je ne la vaincs pas, il ne pourra plus aller chasser."); 
+			B_LogEntry (TOPIC_GaanSchnaubi,"Une crÃ©ature pose un problÃ¨me au chasseur Gaan. Si je ne la vaincs pas, il ne pourra plus aller chasser."); 
 			MIS_Gaan_Snapper = LOG_RUNNING;
 		}
 	else if (Kapitel >= 3)
 		{
-			AI_Output			(self, other, "DIA_Gaan_JAGD_03_04"); //Cela devient complètement dingue ici. Des dizaines de ces animaux qui grognent ont franchi le col.
+			AI_Output			(self, other, "DIA_Gaan_JAGD_03_04"); //Cela devient complÃ¨tement dingue ici. Des dizaines de ces animaux qui grognent ont franchi le col.
 			AI_Output			(self, other, "DIA_Gaan_JAGD_03_05"); //Dans ces circonstances, il devient de plus en plus difficile de chasser.
 		}
 	else

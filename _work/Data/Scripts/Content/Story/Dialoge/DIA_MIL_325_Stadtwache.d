@@ -59,7 +59,7 @@ func int DIA_Mil_325_Miliz_FirstWarn_Condition()
 func void DIA_Mil_325_Miliz_FirstWarn_Info()
 {
 	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_00"); //HALTE !
-	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Nul n'a le droit d'entrer dans la réserve !
+	AI_Output (self, other,"DIA_Mil_325_Miliz_FirstWarn_12_01"); //Nul n'a le droit d'entrer dans la rÃ©serveÂ !
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -92,7 +92,7 @@ FUNC INT DIA_Mil_325_Miliz_SecondWarn_Condition()
 
 func void DIA_Mil_325_Miliz_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Vous êtes sourd, ou quoi ? Un pas de plus et je vous découpe en morceaux !
+	AI_Output (self, other,"DIA_Mil_325_Miliz_SecondWarn_12_00"); //Vous Ãªtes sourd, ou quoiÂ ? Un pas de plus et je vous dÃ©coupe en morceauxÂ !
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,Mil_325_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -130,7 +130,7 @@ func void DIA_Mil_325_Miliz_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //Vous venez de commettre une grave erreur !
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Attack_12_00"); //Vous venez de commettre une grave erreurÂ !
 	
 	AI_StopProcessInfos	(self);		
 	B_Attack (self, other, AR_GuardStopsIntruder, 0); 
@@ -148,7 +148,7 @@ INSTANCE DIA_Mil_325_Miliz_Pass (C_INFO)
 	condition	= DIA_Mil_325_Miliz_Pass_Condition;
 	information	= DIA_Mil_325_Miliz_Pass_Info;
 	permanent	= FALSE;
-	description	= "J'appartiens à l'armée royale. Je veux m’équiper.";
+	description	= "J'appartiens Ã  l'armÃ©e royale. Je veux mâ€™Ã©quiper.";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
@@ -162,18 +162,18 @@ FUNC INT DIA_Mil_325_Miliz_Pass_Condition()
 	
 func void DIA_Mil_325_Miliz_Pass_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Je fais partie de l'armée du roi et je veux m'équiper !
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //Vous avez une commande ?
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_15_00"); //Je fais partie de l'armÃ©e du roi et je veux m'Ã©quiperÂ !
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_12_01"); //Vous avez une commandeÂ ?
 	
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Non.", DIA_Mil_325_Miliz_Pass_No);
-	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Bien sûr.", DIA_Mil_325_Miliz_Pass_Yes);
+	Info_AddChoice (DIA_Mil_325_Miliz_Pass, "Bien sÃ»r.", DIA_Mil_325_Miliz_Pass_Yes);
 };
 
 func void DIA_Mil_325_Miliz_Pass_Yes()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //Bien sûr.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //Très bien, vous pouvez entrer.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_Yes_15_00"); //Bien sÃ»r.
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_Yes_12_01"); //TrÃ¨s bien, vous pouvez entrer.
 	self.aivar[AIV_PASSGATE] = TRUE;
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
@@ -182,7 +182,7 @@ func void DIA_Mil_325_Miliz_Pass_Yes()
 func void DIA_Mil_325_Miliz_Pass_No()
 {
 	AI_Output (other, self,"DIA_Mil_325_Miliz_Pass_No_15_00"); //Non.
-	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_No_12_01"); //Dans ce cas, fichez-moi le camp d'ici !
+	AI_Output (self, other,"DIA_Mil_325_Miliz_Pass_No_12_01"); //Dans ce cas, fichez-moi le camp d'iciÂ !
 	Info_ClearChoices (DIA_Mil_325_Miliz_Pass);
 	AI_StopProcessInfos (self);
 };
@@ -199,7 +199,7 @@ INSTANCE DIA_Mil_325_Miliz_PERM (C_INFO)
 	condition	= DIA_Mil_325_Miliz_PERM_Condition;
 	information	= DIA_Mil_325_Miliz_PERM_Info;
 	permanent	= TRUE;
-	description	= "Pourquoi personne ne peut-il entrer dans la réserve ?";
+	description	= "Pourquoi personne ne peut-il entrer dans la rÃ©serve ?";
 };                       
 
 FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
@@ -209,8 +209,8 @@ FUNC INT DIA_Mil_325_Miliz_PERM_Condition()
 	
 func void DIA_Mil_325_Miliz_PERM_Info()
 {
-	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Pourquoi n'a-t-on pas le droit d'entrer dans l'entrepôt ?
-	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //L'honorable seigneur Hagen a confisqué tous ces biens pour l'armée du roi.
+	AI_Output (other, self,"DIA_Mil_325_Miliz_PERM_15_00"); //Pourquoi n'a-t-on pas le droit d'entrer dans l'entrepÃ´tÂ ?
+	AI_Output (self, other,"DIA_Mil_325_Miliz_PERM_12_01"); //L'honorable seigneur Hagen a confisquÃ© tous ces biens pour l'armÃ©e du roi.
 };
 
 

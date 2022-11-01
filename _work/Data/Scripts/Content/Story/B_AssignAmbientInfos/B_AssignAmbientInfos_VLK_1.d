@@ -44,7 +44,7 @@ FUNC INT DIA_VLK_1_JOIN_Condition()
 FUNC VOID DIA_VLK_1_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_1_JOIN_15_00"); //Comment puis-je devenir citoyen de la ville ?
-	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Allez trouver un travail respectable ! Ceux qui ont un emploi stable à Khorinis sont considérés comme des citoyens.
+	AI_Output (self, other, "DIA_VLK_1_JOIN_01_01"); //Allez trouver un travail respectable ! Ceux qui ont un emploi stable Ã  Khorinis sont considÃ©rÃ©s comme des citoyens.
 };
 
 // *************************************************************************
@@ -67,10 +67,10 @@ FUNC INT DIA_VLK_1_PEOPLE_Condition()
 FUNC VOID DIA_VLK_1_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_1_PEOPLE_15_00"); //Qui sont les personnages importants ici ?
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(rires) Jusqu'à récemment, c'étaient le gouverneur et le juge. Puis les paladins sont arrivés et ont pris possession de la ville.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_01"); //(rires) Jusqu'Ã  rÃ©cemment, c'Ã©taient le gouverneur et le juge. Puis les paladins sont arrivÃ©s et ont pris possession de la ville.
 	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_02"); //Le seigneur Hagen est leur chef. Il est plus ou moins le nouveau gouverneur.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Le seigneur André est son bras droit. Il dirige la garde de la ville et fait office de juge.
-	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //Quiconque en ville est coupable d'un crime quelconque en répond devant lui.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_03"); //Le seigneur AndrÃ© est son bras droit. Il dirige la garde de la ville et fait office de juge.
+	AI_Output (self, other, "DIA_VLK_1_PEOPLE_01_04"); //Quiconque en ville est coupable d'un crime quelconque en rÃ©pond devant lui.
 };
 
 // *************************************************************************
@@ -82,7 +82,7 @@ INSTANCE DIA_VLK_1_LOCATION(C_INFO)
 	condition	= DIA_VLK_1_LOCATION_Condition;
 	information	= DIA_VLK_1_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Qu'y a-t-il d'intéressant dans cette ville ?";
+	description = "Qu'y a-t-il d'intÃ©ressant dans cette ville ?";
 };                       
 
 FUNC INT DIA_VLK_1_LOCATION_Condition()
@@ -92,10 +92,10 @@ FUNC INT DIA_VLK_1_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_1_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Qu'y a-t-il d'intéressant en ville ?
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Vous pouvez y acheter presque tout ce que vous pouvez imaginer, soit auprès des marchands sur la place du marché soit dans le bas quartier de la ville.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Mais tout ce que vous voudrez acheter coûte cher.
-	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Si vous n'avez pas assez d'argent, Lehmar le prêteur sur gages pourra peut-être vous aider. Sa demeure se trouve à l'entrée du quartier du port en venant du bas quartier.
+	AI_Output (other, self, "DIA_VLK_1_LOCATION_15_00"); //Qu'y a-t-il d'intÃ©ressant en ville ?
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_01"); //Vous pouvez y acheter presque tout ce que vous pouvez imaginer, soit auprÃ¨s des marchands sur la place du marchÃ© soit dans le bas quartier de la ville.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_02"); //Mais tout ce que vous voudrez acheter coÃ»te cher.
+	AI_Output (self, other, "DIA_VLK_1_LOCATION_01_03"); //Si vous n'avez pas assez d'argent, Lehmar le prÃªteur sur gages pourra peut-Ãªtre vous aider. Sa demeure se trouve Ã  l'entrÃ©e du quartier du port en venant du bas quartier.
 };
 
 // *************************************************************************
@@ -119,27 +119,27 @@ FUNC VOID DIA_VLK_1_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Depuis l'effondrement de la Barrière, le commerce avec les fermiers a cessé brusquement. Qui sait ce qu'ils préparent. Il y a quelque chose qui sent mauvais dans cette affaire.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_01"); //Depuis l'effondrement de la BarriÃ¨re, le commerce avec les fermiers a cessÃ© brusquement. Qui sait ce qu'ils prÃ©parent. Il y a quelque chose qui sent mauvais dans cette affaire.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar va trop loin. Il refuse toujours d'alimenter la ville. Si la milice n'intervient pas bientôt, les autres fermiers vont également n'en faire qu'à leur tête.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_02"); //Onar va trop loin. Il refuse toujours d'alimenter la ville. Si la milice n'intervient pas bientÃ´t, les autres fermiers vont Ã©galement n'en faire qu'Ã  leur tÃªte.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //J'ai entendu dire que les bandits s'étaient alliés à des magiciens. De puissants magiciens en robe noire. Je suis presque sûr d'en avoir aperçu un en ville la nuit dernière.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_03"); //J'ai entendu dire que les bandits s'Ã©taient alliÃ©s Ã  des magiciens. De puissants magiciens en robe noire. Je suis presque sÃ»r d'en avoir aperÃ§u un en ville la nuit derniÃ¨re.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //J'ai entendu dire que des mercenaires à la solde d'Onar étaient partis pour tuer les dragons. Ils font enfin quelque chose d'utile.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_04"); //J'ai entendu dire que des mercenaires Ã  la solde d'Onar Ã©taient partis pour tuer les dragons. Ils font enfin quelque chose d'utile.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //Ils disent que les dragons ont été vaincus ! Le seigneur Hagen rassemble ses forces pour débarrasser la Vallée des mines des dernières créatures.
+		AI_Output (self,other,"DIA_VLK_1_STANDARD_01_05"); //Ils disent que les dragons ont Ã©tÃ© vaincus ! Le seigneur Hagen rassemble ses forces pour dÃ©barrasser la VallÃ©e des mines des derniÃ¨res crÃ©atures.
 	};
 };
 

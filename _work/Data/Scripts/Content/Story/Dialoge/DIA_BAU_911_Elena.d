@@ -44,7 +44,7 @@ func void DIA_Elena_HALLO_Info ()
 	AI_Output (other, self, "DIA_Elena_HALLO_15_00"); //Bonjour, ma jolie.
 	if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Elena_HALLO_16_01"); //Hum. D'où vous êtes-vous échappé ?
+		AI_Output (self, other, "DIA_Elena_HALLO_16_01"); //Hum. D'oÃ¹ vous Ãªtes-vous Ã©chappÃ© ?
 	}
 	else
 	{
@@ -63,7 +63,7 @@ instance DIA_Elena_Aufstand		(C_INFO)
 	condition	= DIA_Elena_Aufstand_Condition;
 	information	= DIA_Elena_Aufstand_Info;
 	permanent	= FALSE;
-	description	= "Ils disent que vous vous êtes révoltés contre le roi ?";
+	description	= "Ils disent que vous vous Ãªtes rÃ©voltÃ©s contre le roi ?";
 };
 
 func int DIA_Elena_Aufstand_Condition ()
@@ -76,11 +76,11 @@ func int DIA_Elena_Aufstand_Condition ()
 
 func void DIA_Elena_Aufstand_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //On raconte que vous vous êtes révoltés contre le roi.
-	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Mon père a décidé qu'il était temps que nous nous défendions nous-mêmes
+	AI_Output (other, self, "DIA_Elena_Aufstand_15_00"); //On raconte que vous vous Ãªtes rÃ©voltÃ©s contre le roi.
+	AI_Output (self, other, "DIA_Elena_Aufstand_16_01"); //Mon pÃ¨re a dÃ©cidÃ© qu'il Ã©tait temps que nous nous dÃ©fendions nous-mÃªmes
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //De toute façon, la milice ne nous a jamais aidés. Ils ne viennent ici que pour piller nos réserves.
+		AI_Output (self, other, "DIA_Elena_Aufstand_16_02"); //De toute faÃ§on, la milice ne nous a jamais aidÃ©s. Ils ne viennent ici que pour piller nos rÃ©serves.
 	};
 };
 
@@ -94,7 +94,7 @@ instance DIA_Elena_Arbeit		(C_INFO)
 	condition	= DIA_Elena_Arbeit_Condition;
 	information	= DIA_Elena_Arbeit_Info;
 	permanent	= FALSE;
-	description	= "Quel genre de travail peut-on trouver à la ferme ?";
+	description	= "Quel genre de travail peut-on trouver Ã  la ferme ?";
 };
 
 func int DIA_Elena_Arbeit_Condition ()
@@ -108,12 +108,12 @@ func int DIA_Elena_Arbeit_Condition ()
 
 func void DIA_Elena_Arbeit_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Quel genre de travail peut-on trouver à la ferme ?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Mon père paie tous ceux qui peuvent aider à protéger la ferme.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //Cela vous intéresse ? Vous n'avez pas l'air de quelqu'un qui aime le travail des champs.
-	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Quel salaire propose votre père ?
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //Vous devrez négocier avec lui.
-	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Tout ce que je sais, c'est que chaque mercenaire est payé chaque jour.
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_00"); //Quel genre de travail peut-on trouver Ã  la ferme ?
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_01"); //Mon pÃ¨re paie tous ceux qui peuvent aider Ã  protÃ©ger la ferme.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_02"); //Cela vous intÃ©resse ? Vous n'avez pas l'air de quelqu'un qui aime le travail des champs.
+	AI_Output (other, self, "DIA_Elena_Arbeit_15_03"); //Quel salaire propose votre pÃ¨re ?
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_04"); //Vous devrez nÃ©gocier avec lui.
+	AI_Output (self, other, "DIA_Elena_Arbeit_16_05"); //Tout ce que je sais, c'est que chaque mercenaire est payÃ© chaque jour.
 };
 
 // ************************************************************
@@ -126,7 +126,7 @@ instance DIA_Elena_Regeln		(C_INFO)
 	condition	= DIA_Elena_Regeln_Condition;
 	information	= DIA_Elena_Regeln_Info;
 	permanent	= FALSE;
-	description	= "Y a-t-il des règles auxquelles je dois me soumettre ?";
+	description	= "Y a-t-il des rÃ¨gles auxquelles je dois me soumettre ?";
 };
 
 func int DIA_Elena_Regeln_Condition ()
@@ -140,11 +140,11 @@ func int DIA_Elena_Regeln_Condition ()
 
 func void DIA_Elena_Regeln_Info ()
 {
-	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //Y a-t-il des règles auxquelles je doive me soumettre ?
-	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //Evitez de toucher à ce qui ne vous appartient pas.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //Evitez les endroits où vous n'avez rien à faire.
+	AI_Output (other, self, "DIA_Elena_Regeln_15_00"); //Y a-t-il des rÃ¨gles auxquelles je doive me soumettre ?
+	AI_Output (self, other, "DIA_Elena_Regeln_16_01"); //Evitez de toucher Ã  ce qui ne vous appartient pas.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_02"); //Evitez les endroits oÃ¹ vous n'avez rien Ã  faire.
 	AI_Output (self, other, "DIA_Elena_Regeln_16_03"); //Et si vous devez vous battre, faites-le contre des mercenaires.
-	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Si vous vous en prenez à un fermier, vous aurez tout le monde contre vous.
+	AI_Output (self, other, "DIA_Elena_Regeln_16_04"); //Si vous vous en prenez Ã  un fermier, vous aurez tout le monde contre vous.
 };
 
 
@@ -173,10 +173,10 @@ func void DIA_Elena_AUFGABE_Info ()
 {
 	AI_Output (other, self, "DIA_Elena_AUFGABE_15_00"); //Quel est votre travail ici ?
 	AI_Output (self, other, "DIA_Elena_AUFGABE_16_01"); //Je vends ce que nous produisons. Si vous voulez acheter quelque chose, dites-le moi.
-	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Mais je vous préviens, je ne tolère ni vol ni marchandage, compris ?
+	AI_Output (self, other, "DIA_Elena_AUFGABE_16_02"); //Mais je vous prÃ©viens, je ne tolÃ¨re ni vol ni marchandage, compris ?
 	
 	Log_CreateTopic (Topic_SoldierTrader,LOG_NOTE);
-	B_LogEntry (Topic_SoldierTrader,"Héléna vend des marchandises à la ferme d'Onar.");
+	B_LogEntry (Topic_SoldierTrader,"HÃ©lÃ©na vend des marchandises Ã  la ferme d'Onar.");
 };
 
 // ************************************************************
@@ -224,7 +224,7 @@ instance DIA_Elena_PERM		(C_INFO)
 	condition	= DIA_Elena_PERM_Condition;
 	information	= DIA_Elena_PERM_Info;
 	permanent	= TRUE;
-	description	= "Il s'est passé quelque chose d'important récemment ?";
+	description	= "Il s'est passÃ© quelque chose d'important rÃ©cemment ?";
 };
 
 func int DIA_Elena_PERM_Condition ()
@@ -237,30 +237,30 @@ func int DIA_Elena_PERM_Condition ()
 
 func void DIA_Elena_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //S'est-il passé quelque chose d'intéressant récemment ?
+	AI_Output			(other, self, "DIA_Elena_PERM_15_00"); //S'est-il passÃ© quelque chose d'intÃ©ressant rÃ©cemment ?
 
 	if (kapitel <= 1)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Il y a quelques jours, mon père a décrété que nous ne vendrions plus rien en ville.
-		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Alors je reste à la ferme et je ne vends mes marchandises qu'aux visiteurs.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_01"); //Il y a quelques jours, mon pÃ¨re a dÃ©crÃ©tÃ© que nous ne vendrions plus rien en ville.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_02"); //Alors je reste Ã  la ferme et je ne vends mes marchandises qu'aux visiteurs.
 	
 		Elena_Trade_mit_mir = TRUE;
 	}
 	else if (Kapitel == 2)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Les attaques de la milice contre les fermes avoisinantes sont de plus en plus fréquentes. Ce n'est qu'une question de temps avant que mon père n'intervienne.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_03"); //Les attaques de la milice contre les fermes avoisinantes sont de plus en plus frÃ©quentes. Ce n'est qu'une question de temps avant que mon pÃ¨re n'intervienne.
 	}
 	else if (Kapitel == 3)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //La région est devenue dangereuse. Plus personne ne quitte ses champs. Cela fait longtemps qu'aucun d'entre nous ne s'est rendu en ville.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_04"); //La rÃ©gion est devenue dangereuse. Plus personne ne quitte ses champs. Cela fait longtemps qu'aucun d'entre nous ne s'est rendu en ville.
 	}
 	else if (kapitel == 4)
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //Les mercenaires sont de plus en plus impatients. Mais, depuis que Sylvio et ses gars sont partis, ils ont l'air plus détendus.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_05"); //Les mercenaires sont de plus en plus impatients. Mais, depuis que Sylvio et ses gars sont partis, ils ont l'air plus dÃ©tendus.
 	}
 	else //Kapitel 5
 	{
-		AI_Output			(self, other, "DIA_Elena_PERM_16_06"); //Tout le monde parle de l'attaque imminente des orques. Mais je n'y crois pas vraiment. Je pense que nous sommes à l'abri à la ferme.
+		AI_Output			(self, other, "DIA_Elena_PERM_16_06"); //Tout le monde parle de l'attaque imminente des orques. Mais je n'y crois pas vraiment. Je pense que nous sommes Ã  l'abri Ã  la ferme.
 	};
 };
 
@@ -282,7 +282,7 @@ instance DIA_Elena_MINENANTEIL		(C_INFO)
 	condition	 = 	DIA_Elena_MINENANTEIL_Condition;
 	information	 = 	DIA_Elena_MINENANTEIL_Info;
 
-	description  =  "Vous vendez des concessions minières ?";
+	description  =  "Vous vendez des concessions miniÃ¨res ?";
 };
 
 func int DIA_Elena_MINENANTEIL_Condition ()
@@ -297,8 +297,8 @@ func int DIA_Elena_MINENANTEIL_Condition ()
 
 func void DIA_Elena_MINENANTEIL_Info ()
 {
-	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //Vous vendez des concessions minières ?
-	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //Et alors ? J'y ai laissé ma chemise pour les acheter.
+	AI_Output			(other, self, "DIA_Elena_MINENANTEIL_15_00"); //Vous vendez des concessions miniÃ¨res ?
+	AI_Output			(self, other, "DIA_Elena_MINENANTEIL_16_01"); //Et alors ? J'y ai laissÃ© ma chemise pour les acheter.
 	B_GivePlayerXP (XP_Ambient);
 };
 

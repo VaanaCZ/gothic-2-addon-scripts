@@ -36,16 +36,16 @@ FUNC INT DIA_Addon_10028_Buddler_Hi_Condition()
 };
 FUNC VOID DIA_Addon_10028_Buddler_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00");//Comment ça va ?
+	AI_Output (other, self, "DIA_Addon_BDT_10028_Buddler_Hi_15_00");//Comment Ã§a va ?
 	
 	if (Sklaven_Flucht == FALSE)
 	{	
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//Je ne vais certainement pas me fatiguer à aller creuser par moi-même. On a suffisamment d'esclaves pour le faire à notre place.
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(rit) Jamais je n'ai gagné de l'or aussi facilement !
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_01");//Je ne vais certainement pas me fatiguer Ã  aller creuser par moi-mÃªme. On a suffisamment d'esclaves pour le faire Ã  notre place.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_02");//(rit) Jamais je n'ai gagnÃ© de l'or aussi facilement !
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03");//Grmpf. Quel imbécile a libéré les esclaves.
+		AI_Output (self, other, "DIA_Addon_BDT_10028_Buddler_Hi_12_03");//Grmpf. Quel imbÃ©cile a libÃ©rÃ© les esclaves.
 		AI_StopProcessInfos(self);
 	};
 };
@@ -69,7 +69,7 @@ FUNC VOID DIA_Addon_10028_Buddler_Hacken_Info()
 {
 	B_Say 	  (other, self, "$ADDON_GOLD_DESCRIPTION");
 	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_00");//Creusez toujours du bas vers le haut.
-	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//C'est peut-être difficile, mais en procédant ainsi, vous pouvez extraire beaucoup plus d'or de la roche.
+	AI_Output (self, other, "DIA_Addon_10028_Buddler_Hacken_12_01");//C'est peut-Ãªtre difficile, mais en procÃ©dant ainsi, vous pouvez extraire beaucoup plus d'or de la roche.
 	
 	B_Upgrade_Hero_HackChance(5);
 };

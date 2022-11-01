@@ -44,7 +44,7 @@ FUNC INT DIA_VLK_17_JOIN_Condition()
 FUNC VOID DIA_VLK_17_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_VLK_17_JOIN_15_00"); //Que dois-je faire pour devenir citoyen de la ville ?
-	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01"); //Les maÓtres artisans du bas quartier ont une grande influence ‡ Khorinis. Vous devriez aller parler ‡ l'un d'eux.
+	AI_Output (self, other, "DIA_VLK_17_JOIN_17_01"); //Les ma√Ætres artisans du bas quartier ont une grande influence √† Khorinis. Vous devriez aller parler √† l'un d'eux.
 };
 
 // *************************************************************************
@@ -66,10 +66,10 @@ FUNC INT DIA_VLK_17_PEOPLE_Condition()
 
 FUNC VOID DIA_VLK_17_PEOPLE_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00"); //Qui sont les personnalitÈs les plus importantes de la ville ?
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01"); //Depuis que les paladins sont arrivÈs, ils ont pris le contrÙle de toute la ville.
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_02"); //Le seigneur AndrÈ reprÈsente la loi. Vous le trouverez dans la caserne.
-	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03"); //Mais vous devez vous prÈsenter devant lui uniquement si vous avez enfreint la loi ou si vous voulez vous engager dans la milice.
+	AI_Output (other, self, "DIA_VLK_17_PEOPLE_15_00"); //Qui sont les personnalit√©s les plus importantes de la ville ?
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_01"); //Depuis que les paladins sont arriv√©s, ils ont pris le contr√¥le de toute la ville.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_02"); //Le seigneur Andr√© repr√©sente la loi. Vous le trouverez dans la caserne.
+	AI_Output (self, other, "DIA_VLK_17_PEOPLE_17_03"); //Mais vous devez vous pr√©senter devant lui uniquement si vous avez enfreint la loi ou si vous voulez vous engager dans la milice.
 };
 
 // *************************************************************************
@@ -81,7 +81,7 @@ INSTANCE DIA_VLK_17_LOCATION(C_INFO)
 	condition	= DIA_VLK_17_LOCATION_Condition;
 	information	= DIA_VLK_17_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Quels sont les endroits les plus intÈressants de Khorinis ?";
+	description = "Quels sont les endroits les plus int√©ressants de Khorinis ?";
 };                       
 
 FUNC INT DIA_VLK_17_LOCATION_Condition()
@@ -91,9 +91,9 @@ FUNC INT DIA_VLK_17_LOCATION_Condition()
 
 FUNC VOID DIA_VLK_17_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_VLK_17_LOCATION_15_00"); //Quels sont les endroits les plus intÈressants de Khorinis ?
-	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_01"); //(rires) Vous feriez mieux de demander Áa ‡ un homme. Si vous voulez vous divertir, essayez le port.
-	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_02"); //Mais si vous voulez acheter quelque chose, allez sur la place du marchÈ ou dans le bas quartier.
+	AI_Output (other, self, "DIA_VLK_17_LOCATION_15_00"); //Quels sont les endroits les plus int√©ressants de Khorinis ?
+	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_01"); //(rires) Vous feriez mieux de demander √ßa √† un homme. Si vous voulez vous divertir, essayez le port.
+	AI_Output (self, other, "DIA_VLK_17_LOCATION_17_02"); //Mais si vous voulez acheter quelque chose, allez sur la place du march√© ou dans le bas quartier.
 };
 
 // *************************************************************************
@@ -118,23 +118,23 @@ FUNC VOID DIA_VLK_17_STANDARD_Info()
 	if (Kapitel == 1)
 	|| (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_01"); //Je me demande ce que viennent faire ici les paladins. Ils contrÙlent l'hÙtel de ville, la caserne et le port mais, pour l'instant, ils n'ont rien fait.
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_02"); //S'ils Ètaient ici pour les bandits ou les orques, ils auraient dÈj‡ agi. Il doit y avoir une autre raison...
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_01"); //Je me demande ce que viennent faire ici les paladins. Ils contr√¥lent l'h√¥tel de ville, la caserne et le port mais, pour l'instant, ils n'ont rien fait.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_02"); //S'ils √©taient ici pour les bandits ou les orques, ils auraient d√©j√† agi. Il doit y avoir une autre raison...
 	};
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_03"); //Je viens de comprendre ce que viennent faire les paladins. Cela concerne le minerai. Ils feraient mieux de protÈger la ville.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_03"); //Je viens de comprendre ce que viennent faire les paladins. Cela concerne le minerai. Ils feraient mieux de prot√©ger la ville.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_04"); //J'espËre que ces histoires de dragons sont vraies. Comme Áa le seigneur Hagen sera obligÈ d'agir. Il est impossible qu'il nous livre ‡ ces crÈatures.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_04"); //J'esp√®re que ces histoires de dragons sont vraies. Comme √ßa le seigneur Hagen sera oblig√© d'agir. Il est impossible qu'il nous livre √† ces cr√©atures.
 	};
 	
 	if (Kapitel == 5)
 	{
-		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_05"); //Maintenant que les dragons sont morts, les paladins ne vont faire qu'une bouchÈe de la racaille qui reste.
+		AI_Output (self,other,"DIA_VLK_17_STANDARD_17_05"); //Maintenant que les dragons sont morts, les paladins ne vont faire qu'une bouch√©e de la racaille qui reste.
 	};
 };
 

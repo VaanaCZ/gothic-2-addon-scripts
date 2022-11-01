@@ -766,7 +766,7 @@ INSTANCE ItRu_SumGobSkel (C_Item)
 	TEXT	[1]			=	NAME_Manakosten;			
 	COUNT	[1]			=	SPL_Cost_SummonGoblinSkeleton;
 	
-	TEXT 	[2]			=   "Les dépouilles errantes";
+	TEXT 	[2]			=   "Les dÃ©pouilles errantes";
 	TEXT 	[3]			=   "de gobelins morts.";
 	
 	TEXT	[5]			=	NAME_Value;					

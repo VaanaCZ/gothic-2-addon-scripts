@@ -43,7 +43,7 @@ func int DIA_Rethon_HALLO_Condition ()
 func void DIA_Rethon_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Rethon_HALLO_15_00"); //Que faites-vous ici ?
-	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //Je me prépare au combat, qu'est-ce que vous croyez ?
+	AI_Output			(self, other, "DIA_Rethon_HALLO_12_01"); //Je me prÃ©pare au combat, qu'est-ce que vous croyez ?
 };
 
 
@@ -72,7 +72,7 @@ func void DIA_Rethon_KAMPF_Info ()
 {
 	AI_Output			(other, self, "DIA_Rethon_KAMPF_15_00"); //Contre qui voulez-vous vous battre ?
 	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_01"); //Je pensais m'en prendre aux paladins pour leur botter les fesses.
-	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //Imbécile. Contre les dragons, naturellement. Qu'est-ce que vous croyez ?
+	AI_Output			(self, other, "DIA_Rethon_KAMPF_12_02"); //ImbÃ©cile. Contre les dragons, naturellement. Qu'est-ce que vous croyez ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -85,7 +85,7 @@ instance DIA_Rethon_PALADINE		(C_INFO)
 	condition	 = 	DIA_Rethon_PALADINE_Condition;
 	information	 = 	DIA_Rethon_PALADINE_Info;
 
-	description	 = 	"Cela ne dérange pas les paladins que vous soyez ici ?";
+	description	 = 	"Cela ne dÃ©range pas les paladins que vous soyez ici ?";
 };
 
 func int DIA_Rethon_PALADINE_Condition ()
@@ -98,11 +98,11 @@ func int DIA_Rethon_PALADINE_Condition ()
 
 func void DIA_Rethon_PALADINE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Ça n'ennuie pas les paladins que vous soyez ici ?
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Absurde. Ils ont d'autres problèmes. La plupart d'entre eux sont déjà heureux d'être en vie.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Leur moral n'est pas au beau fixe. Ça causera leur perte.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Regardez-moi ces épées ébréchées qu'ils tentent de réparer pour aller se battre.
-	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Tout soldat raisonnable déserterait sur le champ.
+	AI_Output			(other, self, "DIA_Rethon_PALADINE_15_00"); //Ã‡a n'ennuie pas les paladins que vous soyez ici ?
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_01"); //Absurde. Ils ont d'autres problÃ¨mes. La plupart d'entre eux sont dÃ©jÃ  heureux d'Ãªtre en vie.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_02"); //Leur moral n'est pas au beau fixe. Ã‡a causera leur perte.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_03"); //Regardez-moi ces Ã©pÃ©es Ã©brÃ©chÃ©es qu'ils tentent de rÃ©parer pour aller se battre.
+	AI_Output			(self, other, "DIA_Rethon_PALADINE_12_04"); //Tout soldat raisonnable dÃ©serterait sur le champ.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Rethon_WOGRUPPE		(C_INFO)
 	condition	 = 	DIA_Rethon_WOGRUPPE_Condition;
 	information	 = 	DIA_Rethon_WOGRUPPE_Info;
 
-	description	 = 	"Vous êtes-vous séparé de votre groupe ?";
+	description	 = 	"Vous Ãªtes-vous sÃ©parÃ© de votre groupe ?";
 };
 
 func int DIA_Rethon_WOGRUPPE_Condition ()
@@ -130,9 +130,9 @@ func int DIA_Rethon_WOGRUPPE_Condition ()
 
 func void DIA_Rethon_WOGRUPPE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //Vous avez quitté votre groupe ?
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //Mon groupe ? Je n'ai pas de groupe. Je collectionne les trophées.
-	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Si je rentre chez moi sans trophée, je n'aurai aucune raison d'être venu. Alors je n'ai besoin de personne.
+	AI_Output			(other, self, "DIA_Rethon_WOGRUPPE_15_00"); //Vous avez quittÃ© votre groupe ?
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_01"); //Mon groupe ? Je n'ai pas de groupe. Je collectionne les trophÃ©es.
+	AI_Output			(self, other, "DIA_Rethon_WOGRUPPE_12_02"); //Si je rentre chez moi sans trophÃ©e, je n'aurai aucune raison d'Ãªtre venu. Alors je n'ai besoin de personne.
 };
 
 
@@ -146,7 +146,7 @@ instance DIA_Rethon_DRACHENGESEHEN		(C_INFO)
 	condition	 = 	DIA_Rethon_DRACHENGESEHEN_Condition;
 	information	 = 	DIA_Rethon_DRACHENGESEHEN_Info;
 
-	description	 = 	"Avez-vous déjà posé les yeux sur un dragon ?";
+	description	 = 	"Avez-vous dÃ©jÃ  posÃ© les yeux sur un dragon ?";
 };
 
 func int DIA_Rethon_DRACHENGESEHEN_Condition ()
@@ -159,8 +159,8 @@ func int DIA_Rethon_DRACHENGESEHEN_Condition ()
 
 func void DIA_Rethon_DRACHENGESEHEN_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //Avez-vous déjà posé les yeux sur un dragon ?
-	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Non. Je veux achever de préparer mon arme avant d'y aller.
+	AI_Output			(other, self, "DIA_Rethon_DRACHENGESEHEN_15_00"); //Avez-vous dÃ©jÃ  posÃ© les yeux sur un dragon ?
+	AI_Output			(self, other, "DIA_Rethon_DRACHENGESEHEN_12_01"); //Non. Je veux achever de prÃ©parer mon arme avant d'y aller.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -192,12 +192,12 @@ func void DIA_Rethon_ANGST_Info ()
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //Votre patron croit vraiment pouvoir réussir, hein ?
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_02"); //Votre patron croit vraiment pouvoir rÃ©ussir, hein ?
 			AI_Output			(other, self, "DIA_Rethon_ANGST_15_03"); //Je ne suis pas un des gars de Sylvio. Je travaille pour moi.
-			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //Oh ! Très bien alors. Oubliez ce que j'ai dit.
+			AI_Output			(self, other, "DIA_Rethon_ANGST_12_04"); //Oh ! TrÃ¨s bien alors. Oubliez ce que j'ai dit.
 		};
 
-	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //Avez-vous vu les individus pathétiques qui l'accompagnent ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_12_05"); //Avez-vous vu les individus pathÃ©tiques qui l'accompagnent ?
 	AI_Output			(self, other, "DIA_Rethon_ANGST_12_06"); //Sylvio pourra s'estimer heureux s'il s'en tire vivant.
 
 	if (Npc_IsDead(DJG_Sylvio))
@@ -208,9 +208,9 @@ func void DIA_Rethon_ANGST_Info ()
 	else
 	{
 	Info_AddChoice	(DIA_Rethon_ANGST, DIALOG_BACK, DIA_Rethon_ANGST_weiter );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Vous ne semblez pas l'apprécier.", DIA_Rethon_ANGST_sylviomoegen );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Alors où est Sylvio maintenant ?", DIA_Rethon_ANGST_woSylvio );
-	Info_AddChoice	(DIA_Rethon_ANGST, "Sylvio était ici ?", DIA_Rethon_ANGST_sylviohier );
+	Info_AddChoice	(DIA_Rethon_ANGST, "Vous ne semblez pas l'apprÃ©cier.", DIA_Rethon_ANGST_sylviomoegen );
+	Info_AddChoice	(DIA_Rethon_ANGST, "Alors oÃ¹ est Sylvio maintenant ?", DIA_Rethon_ANGST_woSylvio );
+	Info_AddChoice	(DIA_Rethon_ANGST, "Sylvio Ã©tait ici ?", DIA_Rethon_ANGST_sylviohier );
 	};
 };
 
@@ -221,30 +221,30 @@ func void DIA_Rethon_ANGST_weiter ()
 
 func void DIA_Rethon_ANGST_sylviohier ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //Sylvio était ici ?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //Dans le château vous voulez dire ? Oui. Il était là. Mais il n'est pas resté longtemps.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Il a parlé à quelques personnes puis il est reparti.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviohier_15_00"); //Sylvio Ã©tait ici ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_01"); //Dans le chÃ¢teau vous voulez dire ? Oui. Il Ã©tait lÃ . Mais il n'est pas restÃ© longtemps.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviohier_12_02"); //Il a parlÃ© Ã  quelques personnes puis il est reparti.
 
 };
 
 func void DIA_Rethon_ANGST_sylviomoegen ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //Vous ne semblez pas l'apprécier beaucoup.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Qu'entendez-vous par là ? Je ne suis pas particulièrement fier de le connaître.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_sylviomoegen_15_00"); //Vous ne semblez pas l'apprÃ©cier beaucoup.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_01"); //Qu'entendez-vous par lÃ  ? Je ne suis pas particuliÃ¨rement fier de le connaÃ®tre.
 	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_02"); //Sylvio n'a pas d'ami. Il a besoin de gens qui le suivent sans se poser de question.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //Je ne mange pas de ce pain-là. Je travaille seul.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_sylviomoegen_12_03"); //Je ne mange pas de ce pain-lÃ . Je travaille seul.
 
 
 };
 
 func void DIA_Rethon_ANGST_woSylvio ()
 {
-	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //Alors où est Sylvio maintenant ?
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Les paladins ont parlé d'un dragon des glaces à l'ouest. C'est censé être le plus puissant et le plus dangereux de tous.
-	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //Vous auriez dû voir cette lueur dans le regard de Sylvio quand il a entendu ça.
+	AI_Output			(other, self, "DIA_Rethon_ANGST_woSylvio_15_00"); //Alors oÃ¹ est Sylvio maintenant ?
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_01"); //Les paladins ont parlÃ© d'un dragon des glaces Ã  l'ouest. C'est censÃ© Ãªtre le plus puissant et le plus dangereux de tous.
+	AI_Output			(self, other, "DIA_Rethon_ANGST_woSylvio_12_02"); //Vous auriez dÃ» voir cette lueur dans le regard de Sylvio quand il a entendu Ã§a.
 
-	B_LogEntry (TOPIC_DRACHENJAGD,"Réthon, le chasseur de dragon, a marmonné quelque chose au sujet d'un dragon des glaces."); 
-	B_LogEntry (TOPIC_Dragonhunter,"Sylvio était au château puis il est parti à la recherche du dragon des glaces.");
+	B_LogEntry (TOPIC_DRACHENJAGD,"RÃ©thon, le chasseur de dragon, a marmonnÃ© quelque chose au sujet d'un dragon des glaces."); 
+	B_LogEntry (TOPIC_Dragonhunter,"Sylvio Ã©tait au chÃ¢teau puis il est parti Ã  la recherche du dragon des glaces.");
 
 };
 
@@ -260,7 +260,7 @@ instance DIA_Rethon_MEINEWAFFE		(C_INFO)
 	condition	 = 	DIA_Rethon_MEINEWAFFE_Condition;
 	information	 = 	DIA_Rethon_MEINEWAFFE_Info;
 
-	description	 = 	"Pouvez-vous m'aider à améliorer mes armes ?";
+	description	 = 	"Pouvez-vous m'aider Ã  amÃ©liorer mes armes ?";
 };
 
 func int DIA_Rethon_MEINEWAFFE_Condition ()
@@ -273,9 +273,9 @@ func int DIA_Rethon_MEINEWAFFE_Condition ()
 
 func void DIA_Rethon_MEINEWAFFE_Info ()
 {
-	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //Pouvez-vous m'aider à améliorer mes armes ?
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //Améliorer ? Il vaut mieux acheter quelque chose de neuf et jeter ce truc que vous avez.
-	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //J'ai peut-être quelque chose pour vous. Ça vous intéresse ?
+	AI_Output			(other, self, "DIA_Rethon_MEINEWAFFE_15_00"); //Pouvez-vous m'aider Ã  amÃ©liorer mes armes ?
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_01"); //AmÃ©liorer ? Il vaut mieux acheter quelque chose de neuf et jeter ce truc que vous avez.
+	AI_Output			(self, other, "DIA_Rethon_MEINEWAFFE_12_02"); //J'ai peut-Ãªtre quelque chose pour vous. Ã‡a vous intÃ©resse ?
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -308,11 +308,11 @@ func void DIA_Rethon_TRADE_Info ()
 
 	if (hero.guild == GIL_PAL)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //Regardez à quel point j'en suis arrivé. Maintenant je vends mes armes à un paladin.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_01"); //Regardez Ã  quel point j'en suis arrivÃ©. Maintenant je vends mes armes Ã  un paladin.
 		}
 	else if (hero.guild == GIL_KDF)
 		{
-			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //Je n'ai pas grand-chose pour un magicien mais vous pouvez tout de même jeter un coup d'œil.
+			AI_Output			(self, other, "DIA_Rethon_TRADE_12_02"); //Je n'ai pas grand-chose pour un magicien mais vous pouvez tout de mÃªme jeter un coup d'Å“il.
 		}
 	else
 		{

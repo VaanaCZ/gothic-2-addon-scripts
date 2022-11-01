@@ -31,7 +31,7 @@ instance DIA_Maria_Hallo		(C_INFO)
 	condition	= DIA_Maria_Hallo_Condition;
 	information	= DIA_Maria_Hallo_Info;
 	permanent  	= FALSE;
-	description = "Qui êtes-vous ?";
+	description = "Qui Ãªtes-vous ?";
 };
 
 func int DIA_Maria_Hallo_Condition ()
@@ -41,7 +41,7 @@ func int DIA_Maria_Hallo_Condition ()
 
 func void DIA_Maria_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Hallo_15_00"); //Qui êtes-vous ?
+	AI_Output (other, self, "DIA_Maria_Hallo_15_00"); //Qui Ãªtes-vous ?
 	AI_Output (self, other, "DIA_Maria_Hallo_17_01"); //Je suis la femme d'Onar, Maria.
 	AI_Output (self, other, "DIA_Maria_Hallo_17_02"); //Que venez-vous faire ici ?
 };
@@ -56,7 +56,7 @@ instance DIA_Maria_Umsehen		(C_INFO)
 	condition	= DIA_Maria_Umsehen_Condition;
 	information	= DIA_Maria_Umsehen_Info;
 	permanent  	= FALSE;
-	description = "Je voulais juste jeter un coup d'œil dans le coin...";
+	description = "Je voulais juste jeter un coup d'Å“il dans le coin...";
 };
 
 func int DIA_Maria_Umsehen_Condition ()
@@ -69,9 +69,9 @@ func int DIA_Maria_Umsehen_Condition ()
 
 func void DIA_Maria_Umsehen_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Umsehen_15_00"); //Je voulais juste jeter un coup d'œil...
-	AI_Output (self, other, "DIA_Maria_Umsehen_17_01"); //Avec tous ces hommes à la ferme, je n'ai plus la paix dans cette maison.
-	AI_Output (self, other, "DIA_Maria_Umsehen_17_02"); //Ils n'arrêtent pas d'entrer et sortir.
+	AI_Output (other, self, "DIA_Maria_Umsehen_15_00"); //Je voulais juste jeter un coup d'Å“il...
+	AI_Output (self, other, "DIA_Maria_Umsehen_17_01"); //Avec tous ces hommes Ã  la ferme, je n'ai plus la paix dans cette maison.
+	AI_Output (self, other, "DIA_Maria_Umsehen_17_02"); //Ils n'arrÃªtent pas d'entrer et sortir.
 };
 
 // ************************************************************
@@ -84,7 +84,7 @@ instance DIA_Maria_Soeldner	(C_INFO)
 	condition	= DIA_Maria_Soeldner_Condition;
 	information	= DIA_Maria_Soeldner_Info;
 	permanent  	= FALSE;
-	description = "Est-ce que les mercenaires vous dérangent ?";
+	description = "Est-ce que les mercenaires vous dÃ©rangent ?";
 };
 
 func int DIA_Maria_Soeldner_Condition ()
@@ -97,23 +97,23 @@ func int DIA_Maria_Soeldner_Condition ()
 
 func void DIA_Maria_Soeldner_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //Les mercenaires vous embêtent-ils ?
+	AI_Output (other, self, "DIA_Maria_Soeldner_15_00"); //Les mercenaires vous embÃªtent-ils ?
 
 	if ((hero.guild == GIL_SLD) || (hero.guild == GIL_DJG))
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_01"); //Oh ! Oubliez ce que je viens de dire. On est beaucoup plus en sécurité depuis que ces gars sont arrivés.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_01"); //Oh ! Oubliez ce que je viens de dire. On est beaucoup plus en sÃ©curitÃ© depuis que ces gars sont arrivÃ©s.
 		}
 	else
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //Au moins, c'est beaucoup plus sûr à la ferme depuis l'arrivée des mercenaires.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_02"); //Au moins, c'est beaucoup plus sÃ»r Ã  la ferme depuis l'arrivÃ©e des mercenaires.
 		};
 
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Quand nous étions tout seuls, la milice n'arrêtait pas de venir pour piller nos provisions.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Ils ont volé la plus grande partie de la récolte et ils ont pris des moutons. Et, en échange, ils n'ont rien fait pour nous.
-	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //Certains de ces bandits nous ont même volés.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_03"); //Quand nous Ã©tions tout seuls, la milice n'arrÃªtait pas de venir pour piller nos provisions.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_04"); //Ils ont volÃ© la plus grande partie de la rÃ©colte et ils ont pris des moutons. Et, en Ã©change, ils n'ont rien fait pour nous.
+	AI_Output (self, other, "DIA_Maria_Soeldner_17_05"); //Certains de ces bandits nous ont mÃªme volÃ©s.
 	if (hero.guild == GIL_MIL)
 		{
-			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //Comprenez-moi bien soldat, je sais que vous n'êtes pas tous comme ça.
+			AI_Output (self, other, "DIA_Maria_Soeldner_17_06"); //Comprenez-moi bien soldat, je sais que vous n'Ãªtes pas tous comme Ã§a.
 		};	
 };
 
@@ -127,7 +127,7 @@ instance DIA_Maria_Mission	(C_INFO)
 	condition	= DIA_Maria_Mission_Condition;
 	information	= DIA_Maria_Mission_Info;
 	permanent  	= FALSE;
-	description = "Alors que vous ont-ils volé ?";
+	description = "Alors que vous ont-ils volÃ© ?";
 };
 
 func int DIA_Maria_Mission_Condition ()
@@ -141,11 +141,11 @@ func int DIA_Maria_Mission_Condition ()
 
 func void DIA_Maria_Mission_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Mission_15_00"); //Que vous ont-ils volé ?
-	AI_Output (self, other, "DIA_Maria_Mission_17_01"); //De l'or et de l'argenterie. Ils m'ont même dérobé mon cadeau de mariage, une assiette en or.
+	AI_Output (other, self, "DIA_Maria_Mission_15_00"); //Que vous ont-ils volÃ© ?
+	AI_Output (self, other, "DIA_Maria_Mission_17_01"); //De l'or et de l'argenterie. Ils m'ont mÃªme dÃ©robÃ© mon cadeau de mariage, une assiette en or.
 	if (other.guild != GIL_MIL)
 	{
-		AI_Output (self, other, "DIA_Maria_Mission_17_02"); //Je suis persuadée que maintenant elle prend la poussière dans le coffre d'un sale garde de la ville.
+		AI_Output (self, other, "DIA_Maria_Mission_17_02"); //Je suis persuadÃ©e que maintenant elle prend la poussiÃ¨re dans le coffre d'un sale garde de la ville.
 	};
 	MIS_Maria_BringPlate = LOG_RUNNING;
 };
@@ -160,7 +160,7 @@ instance DIA_Maria_BringPlate	(C_INFO)
 	condition	= DIA_Maria_BringPlate_Condition;
 	information	= DIA_Maria_BringPlate_Info;
 	permanent  	= FALSE;
-	description = "J'ai une assiette en or. Ne serait-ce pas la vôtre ?";
+	description = "J'ai une assiette en or. Ne serait-ce pas la vÃ´tre ?";
 };
 
 func int DIA_Maria_BringPlate_Condition ()
@@ -174,7 +174,7 @@ func int DIA_Maria_BringPlate_Condition ()
 func void DIA_Maria_BringPlate_Info ()
 {
 	B_GiveInvItems (other, self, ItMi_MariasGoldPlate, 1);
-	AI_Output (other, self, "DIA_Maria_BringPlate_15_00"); //J'ai une assiette en or avec moi. Ne serait-ce pas la vôtre ?
+	AI_Output (other, self, "DIA_Maria_BringPlate_15_00"); //J'ai une assiette en or avec moi. Ne serait-ce pas la vÃ´tre ?
 	AI_Output (self, other, "DIA_Maria_BringPlate_17_01"); //Oui ! C'est celle-la ! Merci mille fois !
 	
 	MIS_Maria_BringPlate = LOG_SUCCESS;
@@ -195,7 +195,7 @@ instance DIA_Maria_Belohnung	(C_INFO)
 	condition	= DIA_Maria_Belohnung_Condition;
 	information	= DIA_Maria_Belohnung_Info;
 	permanent  	= TRUE;
-	description = "Et au sujet de ma récompense ?";
+	description = "Et au sujet de ma rÃ©compense ?";
 };
 
 func int DIA_Maria_Belohnung_Condition ()
@@ -209,7 +209,7 @@ func int DIA_Maria_Belohnung_Condition ()
 
 func void DIA_Maria_Belohnung_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_Belohnung_15_00"); //Et en ce qui concerne ma récompense ?
+	AI_Output (other, self, "DIA_Maria_Belohnung_15_00"); //Et en ce qui concerne ma rÃ©compense ?
 	
 	
 	if (other.guild == GIL_SLD)
@@ -227,7 +227,7 @@ func void DIA_Maria_Belohnung_Info ()
 	}
 	else if (other.guild == GIL_NONE)
 	{
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //Voulez-vous travailler comme mercenaire à la ferme ?
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_07"); //Voulez-vous travailler comme mercenaire Ã  la ferme ?
 		Info_ClearChoices (DIA_Maria_Belohnung);
 		Info_AddChoice (DIA_Maria_Belohnung, "Non, pas vraiment.", DIA_Maria_Belohnung_Gold);
 		Info_AddChoice (DIA_Maria_Belohnung, "Oui.", DIA_Maria_Belohnung_SOLD);
@@ -236,7 +236,7 @@ func void DIA_Maria_Belohnung_Info ()
 	{
 		B_GiveInvItems (self, other, itmi_gold, 50);
 		Maria_Belohnung = TRUE;
-		AI_Output (self, other, "DIA_Maria_Belohnung_17_08"); //Tenez, prenez ceci. Vous le méritez.
+		AI_Output (self, other, "DIA_Maria_Belohnung_17_08"); //Tenez, prenez ceci. Vous le mÃ©ritez.
 	};
 };
 
@@ -245,15 +245,15 @@ func void DIA_Maria_Belohnung_Gold()
 	AI_Output (other, self, "DIA_Maria_Belohnung_Gold_15_00"); //Non, pas vraiment.
 	B_GiveInvItems (self, other, itmi_gold, 50);
 	Maria_Belohnung = TRUE;
-	AI_Output (self, other, "DIA_Maria_Belohnung_Gold_17_01"); //Alors prenez cet or en récompense. Vous l'avez bien gagné.
+	AI_Output (self, other, "DIA_Maria_Belohnung_Gold_17_01"); //Alors prenez cet or en rÃ©compense. Vous l'avez bien gagnÃ©.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 
 func void DIA_Maria_Belohnung_SOLD()
 {
 	AI_Output (other, self, "DIA_Maria_Belohnung_SOLD_15_00"); //Oui.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //Très bien alors. Si vous travaillez ici, je veillerai à ce que vous ayez un salaire décent.
-	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Revenez quand vous aurez parlé de votre salaire à mon mari.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_01"); //TrÃ¨s bien alors. Si vous travaillez ici, je veillerai Ã  ce que vous ayez un salaire dÃ©cent.
+	AI_Output (self, other, "DIA_Maria_Belohnung_SOLD_17_02"); //Revenez quand vous aurez parlÃ© de votre salaire Ã  mon mari.
 	Info_ClearChoices (DIA_Maria_Belohnung);
 };
 		
@@ -281,10 +281,10 @@ func int DIA_Maria_AboutOnar_Condition ()
 func void DIA_Maria_AboutOnar_Info ()
 {
 	AI_Output (other, self, "DIA_Maria_AboutOnar_15_00"); //Parlez-moi d'Onar...
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //C'est un brave homme. Un peu ronchon et très impatient mais nous avons tous nos défauts.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //J'ai demandé à mon mari pourquoi il laissait les soldats de la ville le traiter de la sorte.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_01"); //C'est un brave homme. Un peu ronchon et trÃ¨s impatient mais nous avons tous nos dÃ©fauts.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_02"); //J'ai demandÃ© Ã  mon mari pourquoi il laissait les soldats de la ville le traiter de la sorte.
 	AI_Output (self, other, "DIA_Maria_AboutOnar_17_03"); //'Fais quelque chose' lui ai-je dit.
-	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Alors il a engagé les mercenaires. Maintenant j'ai l'impression de me retrouver au beau milieu d'une guerre.
+	AI_Output (self, other, "DIA_Maria_AboutOnar_17_04"); //Alors il a engagÃ© les mercenaires. Maintenant j'ai l'impression de me retrouver au beau milieu d'une guerre.
 	AI_Output (self, other, "DIA_Maria_AboutOnar_17_05"); //Mais nous SOMMES en guerre, n'est-ce pas ?
 };
 
@@ -298,7 +298,7 @@ instance DIA_Maria_PERM	(C_INFO)
 	condition	= DIA_Maria_PERM_Condition;
 	information	= DIA_Maria_PERM_Info;
 	permanent  	= FALSE;
-	description = "Il s'est passé quelque chose d'intéressant dans le coin ces derniers temps ?";
+	description = "Il s'est passÃ© quelque chose d'intÃ©ressant dans le coin ces derniers temps ?";
 };
 
 func int DIA_Maria_PERM_Condition ()
@@ -311,16 +311,16 @@ func int DIA_Maria_PERM_Condition ()
 
 func void DIA_Maria_PERM_Info ()
 {
-	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //S'est-il passé quelque chose d'intéressant récemment ?
+	AI_Output (other, self, "DIA_Maria_PERM_15_00"); //S'est-il passÃ© quelque chose d'intÃ©ressant rÃ©cemment ?
 	if (Kapitel <= 2)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //Les paladins sont passés par ici.
-		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //Au début, on a cru qu'ils venaient nous attaquer mais ils se rendaient dans la Vallée des mines.
+		AI_Output (self, other, "DIA_Maria_PERM_17_01"); //Les paladins sont passÃ©s par ici.
+		AI_Output (self, other, "DIA_Maria_PERM_17_02"); //Au dÃ©but, on a cru qu'ils venaient nous attaquer mais ils se rendaient dans la VallÃ©e des mines.
 	}
 	
 	if (Kapitel == 3)
 	{
-		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Wasili a chassé un voleur il y a quelques nuits. A part ça, tout est calme.
+		AI_Output (self, other, "DIA_Maria_PERM_17_03"); //Wasili a chassÃ© un voleur il y a quelques nuits. A part Ã§a, tout est calme.
 	};
 	
 	if (Kapitel >= 4)

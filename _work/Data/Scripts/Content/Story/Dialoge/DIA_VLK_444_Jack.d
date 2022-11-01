@@ -81,8 +81,8 @@ func int DIA_Jack_GREET_Condition ()
 };
 func void DIA_Jack_GREET_Info ()
 {
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_00"); //Hé ho ! Vous avez échoué ici, marin d'eau douce ?
-	AI_Output			(self ,other, "DIA_Jack_GREET_14_01"); //Je vous trouve un peu pâlot...
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_00"); //HÃ© ho ! Vous avez Ã©chouÃ© ici, marin d'eau douceÂ ?
+	AI_Output			(self ,other, "DIA_Jack_GREET_14_01"); //Je vous trouve un peu pÃ¢lot...
 	AI_Output			(self ,other, "DIA_Jack_GREET_14_02"); //Mais ce n'est pas grave, moussaillon. L'air du large vous fera du bien.
 };
 
@@ -110,16 +110,16 @@ func int DIA_Jack_Job_Condition ()
 func void DIA_Jack_Job_Info ()
 {
 	AI_Output			(other, self, "DIA_Jack_Job_15_00"); //Que faites-vous ici ?
-	//AI_Output			(self, other, "DIA_Jack_Job_14_01"); //Damals, als junger Mann, bin ich noch zur See gefahren und habe so manchen großen Sturm miterlebt.
-	//AI_Output			(self, other, "DIA_Jack_Job_14_02"); //Vor vielen Jahren hab ich mich dann hier nieder gelassen und war lange Zeit Leuchtturmwärter von Khorinis.
-	//AI_Output			(self, other, "DIA_Jack_Job_14_03"); //Keine aufregende Sache. Wirklich nicht. Aber dieser alte Turm kam dem, was man ein Zuhause nennt, am Nächsten.
+	//AI_Output			(self, other, "DIA_Jack_Job_14_01"); //Damals, als junger Mann, bin ich noch zur See gefahren und habe so manchen groÃŸen Sturm miterlebt.
+	//AI_Output			(self, other, "DIA_Jack_Job_14_02"); //Vor vielen Jahren hab ich mich dann hier nieder gelassen und war lange Zeit LeuchtturmwÃ¤rter von Khorinis.
+	//AI_Output			(self, other, "DIA_Jack_Job_14_03"); //Keine aufregende Sache. Wirklich nicht. Aber dieser alte Turm kam dem, was man ein Zuhause nennt, am NÃ¤chsten.
 	//AI_Output			(self, other, "DIA_Jack_Job_14_04"); //Bin schon ziemlich lange nicht mehr oben gewesen.
 	//AI_Output			(other, self, "DIA_Jack_Job_15_05"); //Warum nicht?
-	AI_Output			(self ,other, "DIA_Jack_Job_14_06"); //Je n'ose plus approcher de mon phare depuis que ces salauds s'en sont emparés. Ce sont vraiment des féroces, ceux-là.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_07"); //Il s'agit de criminels échappés de la Vallée des mines vous savez...
-	AI_Output			(self ,other, "DIA_Jack_Job_14_08"); //Il y a eu une terrible explosion de l'autre côté des montagnes et ils se sont abattus sur la région comme une nuée de sauterelles. Et maintenant, ils se cachent partout... jusque dans mon phare !
-	AI_Output			(self ,other, "DIA_Jack_Job_14_09"); //A mon avis, ils cherchent un bateau à attaquer.
-	AI_Output			(self ,other, "DIA_Jack_Job_14_10"); //Ha ! Qu'ils le fassent, tiens ! Comme ça, au moins, ils déguerpiront de mon phare.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_06"); //Je n'ose plus approcher de mon phare depuis que ces salauds s'en sont emparÃ©s. Ce sont vraiment des fÃ©roces, ceux-lÃ .
+	AI_Output			(self ,other, "DIA_Jack_Job_14_07"); //Il s'agit de criminels Ã©chappÃ©s de la VallÃ©e des mines vous savez...
+	AI_Output			(self ,other, "DIA_Jack_Job_14_08"); //Il y a eu une terrible explosion de l'autre cÃ´tÃ© des montagnes et ils se sont abattus sur la rÃ©gion comme une nuÃ©e de sauterelles. Et maintenant, ils se cachent partout... jusque dans mon phareÂ !
+	AI_Output			(self ,other, "DIA_Jack_Job_14_09"); //A mon avis, ils cherchent un bateau Ã  attaquer.
+	AI_Output			(self ,other, "DIA_Jack_Job_14_10"); //HaÂ ! Qu'ils le fassent, tiensÂ ! Comme Ã§a, au moins, ils dÃ©guerpiront de mon phare.
 	
 	Log_CreateTopic (TOPIC_KillLighthouseBandits, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_KillLighthouseBandits, LOG_RUNNING);
@@ -130,7 +130,7 @@ func void DIA_Jack_Job_Info ()
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über die Stadt
+//	ErzÃ¤hl mir was Ã¼ber die Stadt
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_City		(C_INFO)
 {
@@ -151,14 +151,14 @@ func int DIA_Jack_City_Condition ()
 };
 func void DIA_Jack_City_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_City_15_00"); //Vous venez souvent en ville ?
-	AI_Output			(self ,other, "DIA_Jack_City_14_01"); //Comme je dis toujours, on peut juger une ville à son port.
-	AI_Output			(self ,other, "DIA_Jack_City_14_02"); //Le port, c'est la porte ouverte vers le monde. C'est là que tout le monde se rencontre et que tout commence.
-	AI_Output			(self ,other, "DIA_Jack_City_14_03"); //Quand le port se met à partir à vau-l'eau, vous pouvez vous attendre à ce que le reste de la ville suive dans les plus brefs délais.
+	AI_Output			(other, self, "DIA_Jack_City_15_00"); //Vous venez souvent en villeÂ ?
+	AI_Output			(self ,other, "DIA_Jack_City_14_01"); //Comme je dis toujours, on peut juger une ville Ã  son port.
+	AI_Output			(self ,other, "DIA_Jack_City_14_02"); //Le port, c'est la porte ouverte vers le monde. C'est lÃ  que tout le monde se rencontre et que tout commence.
+	AI_Output			(self ,other, "DIA_Jack_City_14_03"); //Quand le port se met Ã  partir Ã  vau-l'eau, vous pouvez vous attendre Ã  ce que le reste de la ville suive dans les plus brefs dÃ©lais.
 };
 
 ///////////////////////////////////////////////////////////////////////
-//	Erzähl mir was über den Hafen
+//	ErzÃ¤hl mir was Ã¼ber den Hafen
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Jack_Harbor		(C_INFO)
 {
@@ -183,7 +183,7 @@ func int DIA_Jack_Harbor_Condition ()
 func void DIA_Jack_Harbor_Info ()
 {
 	AI_Output			(other, self, "DIA_Jack_Harbor_15_00"); //Parlez-moi du port.
-	AI_Output			(self ,other, "DIA_Jack_Harbor_14_01"); //Le port de Khorinis n'est plus ce qu'il était.
+	AI_Output			(self ,other, "DIA_Jack_Harbor_14_01"); //Le port de Khorinis n'est plus ce qu'il Ã©tait.
 	AI_Output			(self ,other, "DIA_Jack_Harbor_14_02"); //On n'y trouve plus que de la racaille, plus aucun bateau n'y vient et le commerce est mort. Bel exemple de naufrage, si vous voulez mon avis...
 	
 	Info_ClearChoices (DIA_Jack_Harbor);
@@ -200,26 +200,26 @@ FUNC VOID DIA_Jack_Harbor_Back ()
 
 FUNC VOID DIA_Jack_Harbor_Ships ()
 {	
-	AI_Output (other,self ,"DIA_Jack_Harbor_Ships_15_00"); //Pourquoi les bateaux n'arrivent-ils plus ?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_01"); //Tout le monde dit que la situation redeviendra normale quand la guerre sera terminée, mais c'est des foutaises si vous voulez mon avis.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_02"); //Je vous le dis, moi, un marin voit bien quand une ville part à vau-l'eau.
-	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_03"); //Un matelot le sent dans ses veines. Et je vous le répète, vous pouvez oublier ce port : sa grande époque est passée.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Ships_15_00"); //Pourquoi les bateaux n'arrivent-ils plusÂ ?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_01"); //Tout le monde dit que la situation redeviendra normale quand la guerre sera terminÃ©e, mais c'est des foutaises si vous voulez mon avis.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_02"); //Je vous le dis, moi, un marin voit bien quand une ville part Ã  vau-l'eau.
+	AI_Output (self ,other,"DIA_Jack_Harbor_Ships_14_03"); //Un matelot le sent dans ses veines. Et je vous le rÃ©pÃ¨te, vous pouvez oublier ce portÂ : sa grande Ã©poque est passÃ©e.
 };
 
 FUNC VOID DIA_Jack_Harbor_Rogue ()
 {
-	AI_Output (other,self ,"DIA_Jack_Harbor_Rogue_15_00"); //Que voulez-vous dire par racaille ?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_01"); //Regardez-moi tous ces bons à rien. La plupart d'entre eux ne savent même pas ce qu'est le travail. Ils passent leurs journées à boire et dépensent le peu d'argent qu'ils ont à la maison de passe.
+	AI_Output (other,self ,"DIA_Jack_Harbor_Rogue_15_00"); //Que voulez-vous dire par racailleÂ ?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_01"); //Regardez-moi tous ces bons Ã  rien. La plupart d'entre eux ne savent mÃªme pas ce qu'est le travail. Ils passent leurs journÃ©es Ã  boire et dÃ©pensent le peu d'argent qu'ils ont Ã  la maison de passe.
 	AI_Output (self ,other,"DIA_Jack_Harbor_Rogue_14_02"); //Je vous le dis, restez au large.
 };
 
 FUNC VOID DIA_Jack_Harbor_Leave ()
 {
-	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_00"); //Pourquoi ne partez-vous pas, dans ces conditions ?
+	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_00"); //Pourquoi ne partez-vous pas, dans ces conditionsÂ ?
 	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_01"); //De nos jours, personne ne veut d'un vieux loup de mer tel que moi sur son bateau.
 	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_02"); //La plupart des gens pensent que le vieux Jack souffre de la goutte.
-	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_03"); //Et ? C'est vrai ?
-	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_04"); //Foutaises, oui ! Mettez-moi un pont de bateau sous les pieds et je retrouve l'énergie de mes vingt ans !
+	AI_Output (other,self ,"DIA_Jack_Harbor_Leave_15_03"); //EtÂ ? C'est vraiÂ ?
+	AI_Output (self ,other,"DIA_Jack_Harbor_Leave_14_04"); //Foutaises, ouiÂ ! Mettez-moi un pont de bateau sous les pieds et je retrouve l'Ã©nergie de mes vingt ansÂ !
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -248,9 +248,9 @@ func int DIA_Jack_BANDITENWEG_Condition ()
 
 func void DIA_Jack_BANDITENWEG_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BANDITENWEG_15_00"); //Les brigands qui s'étaient appropriés votre phare sont partis.
-	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_01"); //C'est vrai ? Enfin ! Je vais pouvoir recommencer à travailler.
-	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_02"); //Accompagnez-moi jusqu'au phare. Vous verrez, le point de vue est saisissant là-haut.
+	AI_Output			(other, self, "DIA_Jack_BANDITENWEG_15_00"); //Les brigands qui s'Ã©taient appropriÃ©s votre phare sont partis.
+	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_01"); //C'est vraiÂ ? EnfinÂ ! Je vais pouvoir recommencer Ã  travailler.
+	AI_Output			(self, other, "DIA_Jack_BANDITENWEG_14_02"); //Accompagnez-moi jusqu'au phare. Vous verrez, le point de vue est saisissant lÃ -haut.
 	AI_StopProcessInfos (self);
 	Npc_ExchangeRoutine	(self,"Lighthouse");
 	MIS_Jack_KillLighthouseBandits = LOG_SUCCESS;
@@ -284,8 +284,8 @@ func int DIA_Jack_LIGHTHOUSEFREE_Condition ()
 
 func void DIA_Jack_LIGHTHOUSEFREE_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_LIGHTHOUSEFREE_15_00"); //Joli phare que vous avez là.
-	AI_Output			(self, other, "DIA_Jack_LIGHTHOUSEFREE_14_01"); //Merci. Montez jusqu'en haut et appréciez la vue, moussaillon. Vous êtes ici chez vous.
+	AI_Output			(other, self, "DIA_Jack_LIGHTHOUSEFREE_15_00"); //Joli phare que vous avez lÃ .
+	AI_Output			(self, other, "DIA_Jack_LIGHTHOUSEFREE_14_01"); //Merci. Montez jusqu'en haut et apprÃ©ciez la vue, moussaillon. Vous Ãªtes ici chez vous.
 };
 
 
@@ -419,39 +419,39 @@ func int DIA_Jack_BEMYCAPTAIN_Condition ()
 
 func void DIA_Jack_BEMYCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_15_00"); //Vous n'aimeriez pas reprendre la mer ?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_01"); //Je donnerais mon bras droit pour faire une dernière fois partie de l'équipage d'un grand navire.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_02"); //Mais ce n'est pas simple pour un vieux loup de mer comme moi, moussaillon. Et qui s'occuperait du phare si je venais à partir, hein ?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_15_00"); //Vous n'aimeriez pas reprendre la merÂ ?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_01"); //Je donnerais mon bras droit pour faire une derniÃ¨re fois partie de l'Ã©quipage d'un grand navire.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_14_02"); //Mais ce n'est pas simple pour un vieux loup de mer comme moi, moussaillon. Et qui s'occuperait du phare si je venais Ã  partir, heinÂ ?
 
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Laissez tomber. C'était juste une idée en l'air.", DIA_Jack_BEMYCAPTAIN_no );
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "J'ai besoin de votre expérience de navigateur.", DIA_Jack_BEMYCAPTAIN_seaman );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Laissez tomber. C'Ã©tait juste une idÃ©e en l'air.", DIA_Jack_BEMYCAPTAIN_no );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "J'ai besoin de votre expÃ©rience de navigateur.", DIA_Jack_BEMYCAPTAIN_seaman );
 
 };
 
 func void DIA_Jack_BEMYCAPTAIN_seaman ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_00"); //J'aurais besoin d'un marin aussi expérimenté que vous.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_01"); //Par ma barbe ! Qu'est-ce que vous avez en tête, moussaillon ? Vous ne comptez tout de même pas vous lancer à l'abordage de la galère du roi, si ?
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_02"); //Qui peut savoir ?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_03"); //(éclate de rire) Ça, ce serait quelque chose ! Mais je ne peux pas abandonner mon phare comme ça. Hmm... Que faire ?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_00"); //J'aurais besoin d'un marin aussi expÃ©rimentÃ© que vous.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_01"); //Par ma barbeÂ ! Qu'est-ce que vous avez en tÃªte, moussaillonÂ ? Vous ne comptez tout de mÃªme pas vous lancer Ã  l'abordage de la galÃ¨re du roi, siÂ ?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_15_02"); //Qui peut savoirÂ ?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_14_03"); //(Ã©clate de rire) Ã‡a, ce serait quelque choseÂ ! Mais je ne peux pas abandonner mon phare comme Ã§a. Hmm... Que faireÂ ?
 	
 	Log_CreateTopic (TOPIC_Captain, LOG_MISSION);                                                                                                                        
 	Log_SetTopicStatus(TOPIC_Captain, LOG_RUNNING);                                                                                                                      
 	B_LogEntry (TOPIC_Captain,"Jack, le vieux loup de mer du port, ferait un bon capitaine. Mais je dois d'abord trouver quelqu'un pour le remplacer au phare."); 
 	
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
-	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Laissez tomber. C'était juste une idée en l'air.", DIA_Jack_BEMYCAPTAIN_no );
+	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Laissez tomber. C'Ã©tait juste une idÃ©e en l'air.", DIA_Jack_BEMYCAPTAIN_no );
 	Info_AddChoice	(DIA_Jack_BEMYCAPTAIN, "Et si je vous amenais quelqu'un... ?", DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer );
 
 };
 func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_15_00"); //Et si je vous ramenais quelqu'un qui accepterait de vous remplacer au phare en votre absence ?
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_01"); //Bonne idée, moussaillon. Et je connais même quelqu'un qui ferait l'affaire...
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_02"); //Harad le forgeron a un apprenti du nom de Brian, à qui j'ai parlé à de nombreuses reprises.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_03"); //J'aimerais bien lui confier mon phare. Je crois qu'il ferait un très bon gardien en mon absence.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_04"); //Allez lui parler. Avec un peu de chance, il acceptera peut-être de nous aider.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_15_00"); //Et si je vous ramenais quelqu'un qui accepterait de vous remplacer au phare en votre absenceÂ ?
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_01"); //Bonne idÃ©e, moussaillon. Et je connais mÃªme quelqu'un qui ferait l'affaire...
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_02"); //Harad le forgeron a un apprenti du nom de Brian, Ã  qui j'ai parlÃ© Ã  de nombreuses reprises.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_03"); //J'aimerais bien lui confier mon phare. Je crois qu'il ferait un trÃ¨s bon gardien en mon absence.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer_14_04"); //Allez lui parler. Avec un peu de chance, il acceptera peut-Ãªtre de nous aider.
 	
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
 	MIS_Jack_NewLighthouseOfficer = LOG_RUNNING;
@@ -460,7 +460,7 @@ func void DIA_Jack_BEMYCAPTAIN_seaman_NewOfficer ()
 
 func void DIA_Jack_BEMYCAPTAIN_no ()
 {
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_no_15_00"); //Laissez tomber, c'était juste une idée en l'air.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN_no_15_00"); //Laissez tomber, c'Ã©tait juste une idÃ©e en l'air.
 	Info_ClearChoices	(DIA_Jack_BEMYCAPTAIN);
 };
 
@@ -491,23 +491,23 @@ func void DIA_Jack_BEMYCAPTAIN2_Info ()
 	if (Npc_IsDead(Brian))
 	{
 			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_00"); //Brian est mort.
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_01"); //Oh. Nous vivons vraiment une époque affreuse. Il était si sympathique...
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_01"); //Oh. Nous vivons vraiment une Ã©poque affreuse. Il Ã©tait si sympathique...
 			MIS_Jack_NewLighthouseOfficer = LOG_OBSOLETE;
 	}
 	else
 	{
-			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_02"); //Brian est d'accord pour garder le phare à votre place.
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_03"); //J'espérais vous entendre dire ça.
+			AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN2_15_02"); //Brian est d'accord pour garder le phare Ã  votre place.
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_03"); //J'espÃ©rais vous entendre dire Ã§a.
 			B_GivePlayerXP (XP_Jack_NewLighthouseOfficer);
  
 		
 			if (SCGotCaptain == FALSE)
 			{
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_04"); //Avez-vous encore besoin de moi ?
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_04"); //Avez-vous encore besoin de moiÂ ?
 			}
 			else
 			{
-			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_05"); //Voyons ce que ce garçon sait faire...
+			AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN2_14_05"); //Voyons ce que ce garÃ§on sait faire...
 			AI_StopProcessInfos (self);
 			};
 	};
@@ -539,11 +539,11 @@ func int DIA_Jack_BEMYCAPTAIN3_Condition ()
 func void DIA_Jack_BEMYCAPTAIN3_Info ()
 {
 	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_00"); //Je vous veux comme capitaine.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_01"); //J'ai sillonné les sept mers, moussaillon, mais jamais en tant que capitaine d'un navire.
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_02"); //Je ne connais rien à la navigation. Il va falloir vous en charger.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_01"); //J'ai sillonnÃ© les sept mers, moussaillon, mais jamais en tant que capitaine d'un navire.
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_02"); //Je ne connais rien Ã  la navigation. Il va falloir vous en charger.
 	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_03"); //Je ferai de mon mieux.
-	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_04"); //Montez-moi votre bateau et votre équipage. Vous savez où vous voulez aller au fait ? Enfin, je veux dire, vous avez une carte marine ?
-	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_05"); //Attendez-moi au port sans vous préoccuper du reste.
+	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_04"); //Montez-moi votre bateau et votre Ã©quipage. Vous savez oÃ¹ vous voulez aller au faitÂ ? Enfin, je veux dire, vous avez une carte marineÂ ?
+	AI_Output			(other, self, "DIA_Jack_BEMYCAPTAIN3_15_05"); //Attendez-moi au port sans vous prÃ©occuper du reste.
 	AI_Output			(self, other, "DIA_Jack_BEMYCAPTAIN3_14_06"); //Si vous le dites.
 	AI_StopProcessInfos (self);
 	SCGotCaptain = TRUE;
@@ -579,21 +579,21 @@ func int DIA_Jack_LOSFAHREN_Condition ()
 
 func void DIA_Jack_LOSFAHREN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_LOSFAHREN_15_00"); //Tout à fait, vieil homme. Levons l'ancre.
+	AI_Output			(other, self, "DIA_Jack_LOSFAHREN_15_00"); //Tout Ã  fait, vieil homme. Levons l'ancre.
 
 	if ((B_CaptainConditions (self)) == TRUE)
 	{
 		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_01"); //Tout est en ordre. Montrez-moi votre carte marine.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_02"); //Quel voyage ! J'espère qu'on arrivera à bon port en un seul morceau...
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_03"); //Vous avez vraiment tout ce qu'il vous faut ? On ne fera pas demi-tour pour vous si jamais vous vous apercevez que vous avez oublié quelque chose.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_04"); //Si vous êtes bien sûr de tout avoir sur vous, allez dormir dans la cabine du capitaine. Vous en aurez bien besoin.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_02"); //Quel voyageÂ ! J'espÃ¨re qu'on arrivera Ã  bon port en un seul morceau...
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_03"); //Vous avez vraiment tout ce qu'il vous fautÂ ? On ne fera pas demi-tour pour vous si jamais vous vous apercevez que vous avez oubliÃ© quelque chose.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_04"); //Si vous Ãªtes bien sÃ»r de tout avoir sur vous, allez dormir dans la cabine du capitaine. Vous en aurez bien besoin.
 		AI_StopProcessInfos (self);
 		B_CaptainCallsAllOnBoard (self);
 	}
 	else
 	{
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_05"); //Du calme, moussaillon. Je n'ai pas encore vu votre rafiot. Ça ne marche pas comme ça, vous savez.
-		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_06"); //Pour commencer, il vous faut un équipage de cinq hommes, plus l'accès au bateau et une carte marine. Si vous n'arrivez pas à réunir tout ça, inutile d'y penser.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_05"); //Du calme, moussaillon. Je n'ai pas encore vu votre rafiot. Ã‡a ne marche pas comme Ã§a, vous savez.
+		AI_Output			(self, other, "DIA_Jack_LOSFAHREN_14_06"); //Pour commencer, il vous faut un Ã©quipage de cinq hommes, plus l'accÃ¨s au bateau et une carte marine. Si vous n'arrivez pas Ã  rÃ©unir tout Ã§a, inutile d'y penser.
 		AI_StopProcessInfos (self);
 	};
 };
@@ -610,7 +610,7 @@ instance DIA_Jack_PERM5_NOTCAPTAIN		(C_INFO)
 	information	 = 	DIA_Jack_PERM5_NOTCAPTAIN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Et que c'est-il passé ensuite ?";
+	description	 = 	"Et que c'est-il passÃ© ensuite ?";
 };
 
 func int DIA_Jack_PERM5_NOTCAPTAIN_Condition ()
@@ -626,8 +626,8 @@ func int DIA_Jack_PERM5_NOTCAPTAIN_Condition ()
 
 func void DIA_Jack_PERM5_NOTCAPTAIN_Info ()
 {
-	AI_Output			(other, self, "DIA_Jack_PERM5_NOTCAPTAIN_15_00"); //Alors ? Et maintenant ?
-	AI_Output			(self, other, "DIA_Jack_PERM5_NOTCAPTAIN_14_01"); //J'y ai longuement réfléchi. Je crois bien que je vais rester ici et que finalement je vais continuer à garder mon phare.
+	AI_Output			(other, self, "DIA_Jack_PERM5_NOTCAPTAIN_15_00"); //AlorsÂ ? Et maintenantÂ ?
+	AI_Output			(self, other, "DIA_Jack_PERM5_NOTCAPTAIN_14_01"); //J'y ai longuement rÃ©flÃ©chi. Je crois bien que je vais rester ici et que finalement je vais continuer Ã  garder mon phare.
 	
 	AI_StopProcessInfos (self);
 };

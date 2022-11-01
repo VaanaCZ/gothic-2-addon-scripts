@@ -28,7 +28,7 @@ instance DIA_PAL_297_TRESPAS		(C_INFO)
 	condition	 = 	DIA_PAL_297_TRESPAS_Condition;
 	information	 = 	DIA_PAL_297_TRESPAS_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Comment ça va ?";
+	description	 = 	"Comment Ã§a va ?";
 };
 func int DIA_PAL_297_TRESPAS_Condition ()
 {
@@ -36,15 +36,15 @@ func int DIA_PAL_297_TRESPAS_Condition ()
 };
 func void DIA_PAL_297_TRESPAS_Info ()
 {
-	AI_Output (other, self, "DIA_PAL_297_TRESPAS_15_00"); //Comment ça se passe ?
+	AI_Output (other, self, "DIA_PAL_297_TRESPAS_15_00"); //Comment Ã§a se passe ?
 	
 	if (Kapitel == 1)
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //La région est extrêmement dangereuse. Vous feriez bien de faire demi-tour, car nous ne voudrions pas qu'il vous arrive quoi que ce soit.
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_01"); //La rÃ©gion est extrÃªmement dangereuse. Vous feriez bien de faire demi-tour, car nous ne voudrions pas qu'il vous arrive quoi que ce soit.
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //C'est très courageux à vous d'entrer dans cette vallée. J'espère toutefois que vous avez pensé à vous munir d'un grand nombre de potions de soins...
+		AI_Output (self, other, "DIA_PAL_297_TRESPAS_04_02"); //C'est trÃ¨s courageux Ã  vous d'entrer dans cette vallÃ©e. J'espÃ¨re toutefois que vous avez pensÃ© Ã  vous munir d'un grand nombre de potions de soins...
 	};
 };
 
@@ -58,7 +58,7 @@ instance DIA_Addon_PAL_297_Rangerbandits		(C_INFO)
 	condition	 = 	DIA_Addon_PAL_297_Rangerbandits_Condition;
 	information	 = 	DIA_Addon_PAL_297_Rangerbandits_Info;
 
-	description	 = 	"Avez-vous vu des bandits rôder dans les parages, ces derniers temps ?";
+	description	 = 	"Avez-vous vu des bandits rÃ´der dans les parages, ces derniers temps ?";
 };
 
 func int DIA_Addon_PAL_297_Rangerbandits_Condition ()
@@ -71,9 +71,9 @@ func int DIA_Addon_PAL_297_Rangerbandits_Condition ()
 
 func void DIA_Addon_PAL_297_Rangerbandits_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_PAL_297_Rangerbandits_15_00"); //Des bandits ne seraient-ils pas passés par là récemment ?
-	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_01"); //Mais de quoi  parlez-vous ? Aussi longtemps que nous montons la garde ici, personne ne passe. Et certainement pas ces satanés bandits.
-	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_02"); //Demandez à ces paysans là-bas derrière. Ils ont peut-être vu quelque chose.
+	AI_Output	(other, self, "DIA_Addon_PAL_297_Rangerbandits_15_00"); //Des bandits ne seraient-ils pas passÃ©s par lÃ  rÃ©cemment ?
+	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_01"); //Mais de quoi  parlez-vous ? Aussi longtemps que nous montons la garde ici, personne ne passe. Et certainement pas ces satanÃ©s bandits.
+	AI_Output	(self, other, "DIA_Addon_PAL_297_Rangerbandits_04_02"); //Demandez Ã  ces paysans lÃ -bas derriÃ¨re. Ils ont peut-Ãªtre vu quelque chose.
 };
  
 

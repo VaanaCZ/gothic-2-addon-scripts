@@ -43,10 +43,10 @@ func int DIA_PAL_263_PERM_Condition ()
 };
 func void DIA_PAL_263_PERM_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Au rapport, soldat !
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Oui, monsieur ! Nous tenons la position. Pas de pertes depuis la dernière fois. Les provisions se font rares, mais les orques sont calmes.
-	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //La dernière attaque de dragon en date a complètement détruit le mur extérieur, mais il ne s'est rien produit d'inhabituel depuis.
-	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //Très bien, continuez comme ça.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_00"); //Au rapport, soldatÂ !
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_01"); //Oui, monsieurÂ ! Nous tenons la position. Pas de pertes depuis la derniÃ¨re fois. Les provisions se font rares, mais les orques sont calmes.
+	AI_Output			(self, other, "DIA_PAL_263_PERM_04_02"); //La derniÃ¨re attaque de dragon en date a complÃ¨tement dÃ©truit le mur extÃ©rieur, mais il ne s'est rien produit d'inhabituel depuis.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_15_03"); //TrÃ¨s bien, continuez comme Ã§a.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info PERM_OTH
@@ -58,7 +58,7 @@ instance DIA_PAL_263_PERM_OTH		(C_INFO)
 	condition	 = 	DIA_PAL_263_PERM_OTH_Condition;
 	information	 = 	DIA_PAL_263_PERM_OTH_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Comment ça se passe ?";
+	description	 = 	"Comment Ã§a se passe ?";
 };
 
 func int DIA_PAL_263_PERM_OTH_Condition ()
@@ -71,8 +71,8 @@ func int DIA_PAL_263_PERM_OTH_Condition ()
 };
 func void DIA_PAL_263_PERM_OTH_Info ()
 {
-	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Comment ça va ?
-	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Nous contrôlons la situation. Ne vous inquiétez pas, citoyen. Tout va bien se passer.
+	AI_Output			(other, self, "DIA_PAL_263_PERM_OTH_15_00"); //Comment Ã§a va ?
+	AI_Output			(self, other, "DIA_PAL_263_PERM_OTH_04_01"); //Nous contrÃ´lons la situation. Ne vous inquiÃ©tez pas, citoyen. Tout va bien se passer.
 };
 
 

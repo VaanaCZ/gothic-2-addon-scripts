@@ -37,9 +37,9 @@ FUNC INT DIA_1061_Wache_Hallo_Condition()
 FUNC VOID DIA_1061_Wache_Hallo_Info()
 {
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_00");//Halte, vous ne pouvez passer.
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Je veux parler à votre chef.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironique) Oh ! Je vois... Vous voulez parler à mon chef. Alors BIEN SUR, je vais vous laisser passer.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(très sérieux) Mais uniquement si vous connaissez son nom car dans le cas contraire, je serai obligé de vous tuer.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_15_01");//Je veux parler Ã  votre chef.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_02");//(ironique) Oh ! Je vois... Vous voulez parler Ã  mon chef. Alors BIEN SUR, je vais vous laisser passer.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_01_03");//(trÃ¨s sÃ©rieux) Mais uniquement si vous connaissez son nom car dans le cas contraire, je serai obligÃ© de vous tuer.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Lee",DIA_1061_Wache_Hallo_Lee);
@@ -49,7 +49,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Info()
 		Info_AddChoice (DIA_1061_Wache_Hallo,"Dexter",DIA_1061_Wache_Hallo_Dexter);
 	};
 	Info_AddChoice (DIA_1061_Wache_Hallo,"Diego",DIA_1061_Wache_Hallo_Diego);
-	Info_AddChoice (DIA_1061_Wache_Hallo,"Aucune idée.",DIA_1061_Wache_Hallo_Ahnung);
+	Info_AddChoice (DIA_1061_Wache_Hallo,"Aucune idÃ©e.",DIA_1061_Wache_Hallo_Ahnung);
 };
 FUNC VOID DIA_1061_Wache_Hallo_Lee()
 {
@@ -63,9 +63,9 @@ FUNC VOID DIA_1061_Wache_Hallo_Lee()
 FUNC VOID DIA_1061_Wache_Hallo_Dexter()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Dexter_15_00");//Dexter.
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Bon... Il semble que vous connaissiez le patron. Je vais vous laisser passer mais je vous préviens.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_01");//Bon... Il semble que vous connaissiez le patron. Je vais vous laisser passer mais je vous prÃ©viens.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_02");//Si vous vous approchez trop de qui que ce soit, vous ne ressortirez pas vivant !
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Alors respirez à fond et ne touchez pas à vos armes. Vous trouverez Dexter dans la maison.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Dexter_01_03");//Alors respirez Ã  fond et ne touchez pas Ã  vos armes. Vous trouverez Dexter dans la maison.
 	
 	Knows_Dexter = TRUE;
 	BanditGuard.aivar[AIV_PASSGATE] = TRUE;
@@ -76,7 +76,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 {
 	AI_Output (other, self, "DIA_1061_Wache_Hallo_Diego_15_00");//Diego.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_01");//Exact !
-	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//Non, c'était juste une blague. Vous ignorez complètement qui est le patron.
+	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_02");//Non, c'Ã©tait juste une blague. Vous ignorez complÃ¨tement qui est le patron.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Diego_01_03");//Il n'y a donc aucune raison pour que je ne vous tue pas.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);
@@ -85,7 +85,7 @@ FUNC VOID DIA_1061_Wache_Hallo_Diego()
 };
 FUNC VOID DIA_1061_Wache_Hallo_Ahnung()
 {
-	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//Aucune idée.
+	AI_Output (other, self, "DIA_1061_Wache_Hallo_Ahnung_15_00");//Aucune idÃ©e.
 	AI_Output (self, other, "DIA_1061_Wache_Hallo_Ahnung_01_01");//Alors, vous mourrez sans savoir.
 	
 	Info_ClearChoices (DIA_1061_Wache_Hallo);

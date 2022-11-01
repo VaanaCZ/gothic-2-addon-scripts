@@ -7,14 +7,14 @@ func void B_AssignORC_AntiPaladinTalk (var C_NPC Antipaladin)
 {	
 	 	if (AntiPaladinTalkcount == 0)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_01"); //KHROKGNAR ! Maître dire vous paladin maintenant ! Maître raison. Maître toujours raison.
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_02"); //Nous chefs de fière armée orque venir tuer grand paladin.
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_03"); //Hagen et hommes à lui être balayés. Même vous pas pouvoir aider eux.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_01"); //KHROKGNAR ! MaÃ®tre dire vous paladin maintenant ! MaÃ®tre raison. MaÃ®tre toujours raison.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_02"); //Nous chefs de fiÃ¨re armÃ©e orque venir tuer grand paladin.
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_03"); //Hagen et hommes Ã  lui Ãªtre balayÃ©s. MÃªme vous pas pouvoir aider eux.
 			B_GivePlayerXP (XP_Ambient);
 		}
 		else if (AntiPaladinTalkcount == 1)
 		{
-			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_04"); //Maître dire chefs orques apporter tête de grand paladin. Vous maintenant mourir par main à moi. KHROKGNAR !
+			AI_Output			(self ,other, "DIA_ORC_AntiPaladin_18_04"); //MaÃ®tre dire chefs orques apporter tÃªte de grand paladin. Vous maintenant mourir par main Ã  moi. KHROKGNAR !
 		}
 		else if (AntiPaladinTalkcount == 2)
 		{

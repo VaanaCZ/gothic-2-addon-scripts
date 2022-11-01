@@ -1,4 +1,4 @@
-// Visualisierung: Schriftst¸ck lesen -> 'self' zieht ein St¸ck Pergament aus der Tasche und wirft einen Blick drauf 
+// Visualisierung: Schriftst√ºck lesen -> 'self' zieht ein St√ºck Pergament aus der Tasche und wirft einen Blick drauf 
 
 func void B_UseFakeScroll ()
 {

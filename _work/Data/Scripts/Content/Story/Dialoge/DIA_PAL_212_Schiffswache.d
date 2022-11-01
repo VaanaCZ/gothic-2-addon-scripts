@@ -29,7 +29,7 @@ instance DIA_Pal_212_Schiffswache_WERSEIDIHR		(C_INFO)
 	condition	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition;
 	information	 = 	DIA_Pal_212_Schiffswache_WERSEIDIHR_Info;
 
-	description	 = 	"Qui êtes-vous ?";
+	description	 = 	"Qui Ãªtes-vous ?";
 };
 
 func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
@@ -42,8 +42,8 @@ func int DIA_Pal_212_Schiffswache_WERSEIDIHR_Condition ()
 
 func void DIA_Pal_212_Schiffswache_WERSEIDIHR_Info ()
 {
-	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Qui êtes-vous ?
-	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Nous sommes les émissaires du roi Rhobar, les serviteurs d'Innos, que l'on appelle paladins dans la langue commune.
+	AI_Output			(other, self, "DIA_Pal_212_Schiffswache_WERSEIDIHR_15_00"); //Qui Ãªtes-vous ?
+	AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WERSEIDIHR_08_01"); //Nous sommes les Ã©missaires du roi Rhobar, les serviteurs d'Innos, que l'on appelle paladins dans la langue commune.
 };
 
 
@@ -72,16 +72,16 @@ func void DIA_Pal_212_Schiffswache_WASMACHSTDU2_Info ()
 	{
 		if ((hero.guild != GIL_PAL) && (hero.guild != GIL_KDF))
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Vous ne monterez pas à bord de ce bateau, c'est tout ce que vous avez besoin de savoir.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_01"); //Vous ne monterez pas Ã  bord de ce bateau, c'est tout ce que vous avez besoin de savoir.
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Nous avons pour mission de garder l'accès au navire et nul étranger n'a le droit de monter à bord. Vous non plus, je regrette.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_02"); //Nous avons pour mission de garder l'accÃ¨s au navire et nul Ã©tranger n'a le droit de monter Ã  bord. Vous non plus, je regrette.
 		};
 	}
 	else
 	{
-			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Je tue le temps comme je peux. Je préfèrerais être avec nos frères dans la Vallée des mines.
+			AI_Output			(self, other, "DIA_Pal_212_Schiffswache_WASMACHSTDU2_08_03"); //Je tue le temps comme je peux. Je prÃ©fÃ¨rerais Ãªtre avec nos frÃ¨res dans la VallÃ©e des mines.
 	};
 	AI_StopProcessInfos (self);
 };

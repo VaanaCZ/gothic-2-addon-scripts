@@ -71,10 +71,10 @@ FUNC INT DIA_Addon_Wache_02_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Comment ça va ?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//Hé, attendez voir... je ne vous connais pas de quelque part ?
+	AI_Output (other, self, "DIA_Addon_Wache_02_Hi_15_00");//Comment Ã§a va ?
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_01");//HÃ©, attendez voir... je ne vous connais pas de quelque part ?
 	B_UseFakeScroll ();
-	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Hmm... non. Vous n'êtes pas celui auquel je pensais. Foutez-moi la paix, maintenant.
+	AI_Output (self, other, "DIA_Addon_Wache_02_Hi_13_02");//Hmm... non. Vous n'Ãªtes pas celui auquel je pensais. Foutez-moi la paix, maintenant.
 };
 //--------------------------------------------------------------------
 //	Info Attentat
@@ -99,8 +99,8 @@ FUNC INT DIA_Addon_Wache_02_Attentat_Condition()
 FUNC VOID DIA_Addon_Wache_02_Attentat_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Wache_02_Attentat_15_00");//Que savez-vous de l'attaque ?
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Qu'est-ce que j'en sais ? (rit) Je lui ai cassé les jambes, à ce type !
-	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(menaçant) Et je ferai la même chose à toute personne qui tentera d'attaquer Esteban...
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_01");//Qu'est-ce que j'en sais ? (rit) Je lui ai cassÃ© les jambes, Ã  ce type !
+	AI_Output (self, other, "DIA_Addon_Wache_02_Attentat_13_02");//(menaÃ§ant) Et je ferai la mÃªme chose Ã  toute personne qui tentera d'attaquer Esteban...
 };
 //--------------------------------------------------------------------
 //	Info perm
@@ -123,12 +123,12 @@ FUNC INT DIA_Addon_Wache_02_perm_Condition()
 };
 FUNC VOID DIA_Addon_Wache_02_perm_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Comment ça va ?
-	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//Tout est calme, jusqu'à maintenant.
+	AI_Output (other, self, "DIA_Addon_Wache_02_perm_15_00");//Comment Ã§a va ?
+	AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_01");//Tout est calme, jusqu'Ã  maintenant.
 	
 	if (MIS_Judas == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Vous, trouvez-moi le traître - ensuite, nous nous occuperons de lui.
+		AI_Output (self, other, "DIA_Addon_Wache_02_perm_13_02");//Vous, trouvez-moi le traÃ®tre - ensuite, nous nous occuperons de lui.
 	};
 };
 

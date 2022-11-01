@@ -44,8 +44,8 @@ FUNC VOID DIA_PAL_4_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_4_JOIN_15_00"); //Comment faire pour devenir paladin ?
 	AI_Output (self, other, "DIA_PAL_4_JOIN_04_01"); //Si vous le voulez vraiment, vous devriez entrer au service des paladins.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Allez parler au seigneur AndrÈ dans la caserne et faites-vous engager par la milice.
-	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Vous aurez alors peut-Ítre l'occasion de prouver votre valeur.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_02"); //Allez parler au seigneur Andr√© dans la caserne et faites-vous engager par la milice.
+	AI_Output (self, other, "DIA_PAL_4_JOIN_04_03"); //Vous aurez alors peut-√™tre l'occasion de prouver votre valeur.
 };
 
 // *************************************************************************
@@ -71,8 +71,8 @@ FUNC INT DIA_PAL_4_PEOPLE_Condition()
 FUNC VOID DIA_PAL_4_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_PAL_4_PEOPLE_15_00"); //Qui commande ici ?
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Le seigneur Hagen est le commandant en chef de toutes les troupes de l'Óle. Il occupe Ègalement le poste de gouverneur tant que nous serons ici.
-	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Mais il est trËs occupÈ. Si vous avez besoin de quelque chose, allez parler au seigneur AndrÈ dans la caserne.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_01"); //Le seigneur Hagen est le commandant en chef de toutes les troupes de l'√Æle. Il occupe √©galement le poste de gouverneur tant que nous serons ici.
+	AI_Output (self, other, "DIA_PAL_4_PEOPLE_04_02"); //Mais il est tr√®s occup√©. Si vous avez besoin de quelque chose, allez parler au seigneur Andr√© dans la caserne.
 };
 
 // *************************************************************************
@@ -84,7 +84,7 @@ INSTANCE DIA_PAL_4_LOCATION(C_INFO)
 	condition	= DIA_PAL_4_LOCATION_Condition;
 	information	= DIA_PAL_4_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Que faites-vous ‡ Khorinis ?";
+	description = "Que faites-vous √† Khorinis ?";
 };                       
 
 FUNC INT DIA_PAL_4_LOCATION_Condition()
@@ -97,8 +97,8 @@ FUNC INT DIA_PAL_4_LOCATION_Condition()
 
 FUNC VOID DIA_PAL_4_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_PAL_4_LOCATION_15_00"); //Que faites-vous ‡ Khorinis ?
-	AI_Output (self, other, "DIA_PAL_4_LOCATION_04_01"); //Je n'ai pas le droit de vous dire Áa.
+	AI_Output (other, self, "DIA_PAL_4_LOCATION_15_00"); //Que faites-vous √† Khorinis ?
+	AI_Output (self, other, "DIA_PAL_4_LOCATION_04_01"); //Je n'ai pas le droit de vous dire √ßa.
 };
 
 // *************************************************************************
@@ -129,17 +129,17 @@ FUNC VOID DIA_PAL_4_STANDARD_Info()
 		{
 			if (MIS_OLDWORLD == LOG_SUCCESS)
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //Maintenant que nous savons que nous avons affaire ‡ des dragons, notre commandant va bientÙt agir.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_01"); //Maintenant que nous savons que nous avons affaire √† des dragons, notre commandant va bient√¥t agir.
 			}
 			else
 			{
-				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //Nous n'avons toujours pas de nouvelles de notre dÈtachement dans la VallÈe des mines. C'est trËs inquiÈtant.
+				AI_Output (self, other, "DIA_PAL_4_STANDARD_04_02"); //Nous n'avons toujours pas de nouvelles de notre d√©tachement dans la Vall√©e des mines. C'est tr√®s inqui√©tant.
 			};
 		};
 
 		if (Kapitel >= 5)
 		{
-			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Gr‚ces soient rendues ‡ Innos ! La menace des dragons a ÈtÈ jugulÈe. DÈsormais nous n'avons plus qu'‡ nous occuper des orques pour accÈder au minerai.
+			AI_Output (self, other, "DIA_PAL_4_STANDARD_04_03"); //Gr√¢ces soient rendues √† Innos ! La menace des dragons a √©t√© jugul√©e. D√©sormais nous n'avons plus qu'√† nous occuper des orques pour acc√©der au minerai.
 		};
 	}
 	else //KEIN Paladin

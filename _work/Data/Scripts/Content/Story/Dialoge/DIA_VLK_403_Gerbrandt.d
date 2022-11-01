@@ -121,8 +121,8 @@ FUNC INT DIA_Gerbrandt_Hello_Condition()
 FUNC VOID DIA_Gerbrandt_Hello_Info()
 {	
 	AI_Output (other,self ,"DIA_Gerbrandt_Hello_15_00"); //Que faites-vous ici ?
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_01"); //Qui êtes-vous ? On dirait que vous venez d'arriver et que vous n'avez pas la moindre idée de ce qui se passe par ici.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_02"); //On m'appelle Gerbrandt, mais pour vous, c'est Monsieur Gerbrandt, pigé ?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_01"); //Qui Ãªtes-vousÂ ? On dirait que vous venez d'arriver et que vous n'avez pas la moindre idÃ©e de ce qui se passe par ici.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_10_02"); //On m'appelle Gerbrandt, mais pour vous, c'est Monsieur Gerbrandt, pigÃ©Â ?
 	
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 	Info_AddChoice (DIA_Gerbrandt_Hello,"Compris, Gerbrandt.",DIA_Gerbrandt_Hello_No);
@@ -131,10 +131,10 @@ FUNC VOID DIA_Gerbrandt_Hello_Info()
 
 FUNC VOID DIA_Gerbrandt_Hello_No()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_No_15_00"); //Pigé, Gerbrandt.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_01"); //Attention à ce que vous dites. Montrez-moi un peu plus de respect que ça si vous ne voulez pas avoir de sérieux ennuis.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_02"); //Ici, c'est moi qui donne les ordres. Les fauteurs de troubles doivent me rendre des comptes et ont intérêt à quitter la ville sans attendre, parce qu'une fois que je me suis occupé d'eux, il ne leur reste plus que les yeux pour pleurer.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_03"); //La plupart des gens du port sont mes employés. Si vous cherchez du travail, vous avez intérêt à ce que je vous aie à la bonne.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_No_15_00"); //PigÃ©, Gerbrandt.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_01"); //Attention Ã  ce que vous dites. Montrez-moi un peu plus de respect que Ã§a si vous ne voulez pas avoir de sÃ©rieux ennuis.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_02"); //Ici, c'est moi qui donne les ordres. Les fauteurs de troubles doivent me rendre des comptes et ont intÃ©rÃªt Ã  quitter la ville sans attendre, parce qu'une fois que je me suis occupÃ© d'eux, il ne leur reste plus que les yeux pour pleurer.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_No_10_03"); //La plupart des gens du port sont mes employÃ©s. Si vous cherchez du travail, vous avez intÃ©rÃªt Ã  ce que je vous aie Ã  la bonne.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
@@ -142,10 +142,10 @@ FUNC VOID DIA_Gerbrandt_Hello_No()
 FUNC VOID DIA_Gerbrandt_Hello_Yes()
 {
 	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_15_00"); //C'est bien compris, monsieur Gerbrandt.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_01"); //Au moins, vous avez vite compris d'où souffle le vent.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_02"); //Dès que les affaires reprendront, je trouverai sûrement du travail pour un grand gaillard comme vous.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_03"); //Vous feriez un excellent responsable de dépôt.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_04"); //Vous savez lire ?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_01"); //Au moins, vous avez vite compris d'oÃ¹ souffle le vent.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_02"); //DÃ¨s que les affaires reprendront, je trouverai sÃ»rement du travail pour un grand gaillard comme vous.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_03"); //Vous feriez un excellent responsable de dÃ©pÃ´t.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_10_04"); //Vous savez lireÂ ?
 	
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 	Info_AddChoice (DIA_Gerbrandt_Hello,"Non.",DIA_Gerbrandt_Hello_Yes_No);
@@ -157,17 +157,17 @@ FUNC VOID DIA_Gerbrandt_Hello_Yes_No()
 {
 	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_No_15_00"); //Non.
 	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_01"); //Sans importance. Au moins, vous pouvez porter les sacs.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_02"); //Si vous me donnez entière satisfaction, je vous proposerai peut-être un poste fixe. Ce n'est pas le travail qui manque, par ici.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_03"); //Bon. J'espère que vous serez là quand les premiers bateaux arriveront à quai.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_02"); //Si vous me donnez entiÃ¨re satisfaction, je vous proposerai peut-Ãªtre un poste fixe. Ce n'est pas le travail qui manque, par ici.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_No_10_03"); //Bon. J'espÃ¨re que vous serez lÃ  quand les premiers bateaux arriveront Ã  quai.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
 
 FUNC VOID DIA_Gerbrandt_Hello_NoJob ()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Hello_NoJob_15_00"); //Je ne suis pas à la recherche d'un emploi.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_01"); //Vous vous croyez malin, hein ? Vous devriez faire attention. Ici, personne ne peut trouver de travail sans mon approbation.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_02"); //Alors, si vous continuez à me parler comme ça, cherchez-vous tout de suite une paillasse infestée de puces, parce que c'est tout ce que vous pourrez vous offrir.
+	AI_Output (other,self ,"DIA_Gerbrandt_Hello_NoJob_15_00"); //Je ne suis pas Ã  la recherche d'un emploi.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_01"); //Vous vous croyez malin, heinÂ ? Vous devriez faire attention. Ici, personne ne peut trouver de travail sans mon approbation.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_02"); //Alors, si vous continuez Ã  me parler comme Ã§a, cherchez-vous tout de suite une paillasse infestÃ©e de puces, parce que c'est tout ce que vous pourrez vous offrir.
 	AI_Output (self ,other,"DIA_Gerbrandt_Hello_NoJob_10_03"); //Un jour, vous viendrez me supplier de vous offrir du travail.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
@@ -176,10 +176,10 @@ FUNC VOID DIA_Gerbrandt_Hello_NoJob ()
 FUNC VOID DIA_Gerbrandt_Hello_Yes_Yes ()
 {
 	AI_Output (other,self ,"DIA_Gerbrandt_Hello_Yes_Yes_15_00"); //Naturellement.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Bien, bien. Il est toujours difficile de trouver des employés qualifiés.
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //Vous avez des références ?
-	AI_Output (other,self,"DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //Des références ?
-	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //Très bien. Je me souviendrai de vous. Revenez me voir quand les affaires reprendront. A ce moment-là, j'aurai peut-être quelque chose pour vous.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_01"); //Bien, bien. Il est toujours difficile de trouver des employÃ©s qualifiÃ©s.
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_02"); //Vous avez des rÃ©fÃ©rencesÂ ?
+	AI_Output (other,self,"DIA_Gerbrandt_Hello_Yes_Yes_15_03"); //Des rÃ©fÃ©rencesÂ ?
+	AI_Output (self ,other,"DIA_Gerbrandt_Hello_Yes_Yes_10_04"); //TrÃ¨s bien. Je me souviendrai de vous. Revenez me voir quand les affaires reprendront. A ce moment-lÃ , j'aurai peut-Ãªtre quelque chose pour vous.
 
 	Info_ClearChoices (DIA_Gerbrandt_Hello);
 };
@@ -190,8 +190,8 @@ FUNC VOID DIA_Gerbrandt_Hello_Yes_Yes ()
 
 FUNC VOID B_GErbrandt_PissOff ()
 {
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_00"); //Qu'est-ce que c'est que cette histoire ? Vous vous moquez de moi ?
-	AI_Output (self,other,"B_Gerbrandt_PissOff_10_01"); //Vous et votre ami Diego m'avez déjà posé bien assez de problèmes comme ça !
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_00"); //Qu'est-ce que c'est que cette histoireÂ ? Vous vous moquez de moiÂ ?
+	AI_Output (self,other,"B_Gerbrandt_PissOff_10_01"); //Vous et votre ami Diego m'avez dÃ©jÃ  posÃ© bien assez de problÃ¨mes comme Ã§aÂ !
 	AI_Output (self,other,"B_Gerbrandt_PissOff_10_02"); //Laissez-moi tranquille !
 	
 	//Patch m.f. Wenn diego kommt und er wird gefragt, geht er nicht los, weil losgehen steht in exit info und durch diesen Ai_Stop wird das umgangen
@@ -221,19 +221,19 @@ FUNC INT DIA_Gerbrandt_Perm_Condition()
 
 FUNC VOID DIA_Gerbrandt_Perm_Info()
 {
-	AI_Output (other,self ,"DIA_Gerbrandt_Perm_15_00"); //Du nouveau ?
+	AI_Output (other,self ,"DIA_Gerbrandt_Perm_15_00"); //Du nouveauÂ ?
 	
 	if (Kapitel <= 2)
 	{
 		if (hero.guild != GIL_KDF)
 		&& (hero.guild != GIL_PAL)
 		{
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_01"); //Les gens tels que vous n'ont rien à faire là. Ce sont les gens respectables qui vivent ici, pas les clochards et les mendiants.
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_02"); //Si jamais vous devenez un jour riche et respectable, peut-être serez-vous le bienvenu ici.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_01"); //Les gens tels que vous n'ont rien Ã  faire lÃ . Ce sont les gens respectables qui vivent ici, pas les clochards et les mendiants.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_02"); //Si jamais vous devenez un jour riche et respectable, peut-Ãªtre serez-vous le bienvenu ici.
 		}
 		else
 		{
-			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_03"); //Je n'ai pas à me plaindre, monsieur.
+			AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_03"); //Je n'ai pas Ã  me plaindre, monsieur.
 		};
 	}
 	else if (Kapitel >= 3)
@@ -243,12 +243,12 @@ FUNC VOID DIA_Gerbrandt_Perm_Info()
 			if (hero.guild != GIL_KDF)
 			&& (hero.guild != GIL_PAL)
 			{
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_04"); //Les gens comme vous, je les connais. Vous ne savez pas rester à votre place.
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_05"); //Je crois que je vais avoir une discussion avec le gouverneur au sujet des mesures de sécurité à appliquer dans le haut quartier.
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_04"); //Les gens comme vous, je les connais. Vous ne savez pas rester Ã  votre place.
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_05"); //Je crois que je vais avoir une discussion avec le gouverneur au sujet des mesures de sÃ©curitÃ© Ã  appliquer dans le haut quartier.
 			}
 			else
 			{
-				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_06"); //Cela ne regarde que moi ! J'ai à faire !
+				AI_Output (self ,other,"DIA_Gerbrandt_Perm_10_06"); //Cela ne regarde que moiÂ ! J'ai Ã  faireÂ !
 			};
 		}
 		else
@@ -287,19 +287,19 @@ FUNC INT DIA_Gerbrandt_GreetingsFromDiego_Condition()
 FUNC VOID DIA_Gerbrandt_GreetingsFromDiego_Info()
 {
 	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_00"); //Vous avez le bonjour de Diego.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(effrayé) Quoi ? Qui ? Quel Diego ?
-	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_02"); //Il m'a demandé de vous remettre cette lettre.
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_01"); //(effrayÃ©) QuoiÂ ? QuiÂ ? Quel DiegoÂ ?
+	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_02"); //Il m'a demandÃ© de vous remettre cette lettre.
 	
 	B_GiveInvItems (other,self,ItWr_DiegosLetter_MIS,1);
 	B_UseFakeScroll ();
 	
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(agité) Ce n'est pas possible ! Je suis perdu !
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(terrifié) Il est en ville ?
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_03"); //(agitÃ©) Ce n'est pas possibleÂ ! Je suis perduÂ !
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_04"); //(terrifiÃ©) Il est en villeÂ ?
 	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_05"); //Qui ?
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Diego, bien sûr !
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_06"); //Diego, bien sÃ»rÂ !
 	AI_Output (other,self ,"DIA_Gerbrandt_GreetingsFromDiego_15_07"); //Oui, et je vais d'ailleurs le rejoindre.
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(se parle tout seul) C'est la fin ! Tout est perdu !
-	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_09"); //Il faut que je parte sans perdre un instant. Vite ! S'il me trouve ici, je suis un homme mort !
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_08"); //(se parle tout seul) C'est la finÂ ! Tout est perduÂ !
+	AI_Output (self ,other,"DIA_Gerbrandt_GreetingsFromDiego_10_09"); //Il faut que je parte sans perdre un instant. ViteÂ ! S'il me trouve ici, je suis un homme mortÂ !
 	
 	MIS_DiegosResidence = LOG_SUCCESS;
 	

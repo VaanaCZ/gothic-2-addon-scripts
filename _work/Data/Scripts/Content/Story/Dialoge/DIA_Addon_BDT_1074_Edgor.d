@@ -69,7 +69,7 @@ INSTANCE DIA_Addon_Edgor_Hi   (C_INFO)
 	condition   = DIA_Addon_Edgor_Hi_Condition;
 	information = DIA_Addon_Edgor_Hi_Info;
 	permanent   = FALSE;
-	description = "Comment ça se passe ?";
+	description = "Comment Ã§a se passe ?";
 };
 FUNC INT DIA_Addon_Edgor_Hi_Condition()
 {	
@@ -77,12 +77,12 @@ FUNC INT DIA_Addon_Edgor_Hi_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Hi_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Comment ça va ?
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Vous voulez savoir comment ça va ? Je vais vous dire comment ça va !
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //D'abord, des pirates me débarquent ici un soir de tempête. Mon gars, j'ai jamais autant vomi de toute ma vie !
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Ensuite, Raven ferme l'accès à la mine parce que certains crétins sont trop assoiffés d'or.
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Et ensuite, Franco devient le chef des chasseurs et commence à tuer tous ceux qui se dressent contre lui !
-	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Je dirais que ça ne va pas super bien.
+	AI_Output (other, self, "DIA_Addon_Edgor_Hi_15_00"); //Comment Ã§a va ?
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_01"); //Vous voulez savoir comment Ã§a va ? Je vais vous dire comment Ã§a va !
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_02"); //D'abord, des pirates me dÃ©barquent ici un soir de tempÃªte. Mon gars, j'ai jamais autant vomi de toute ma vie !
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_03"); //Ensuite, Raven ferme l'accÃ¨s Ã  la mine parce que certains crÃ©tins sont trop assoiffÃ©s d'or.
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_04"); //Et ensuite, Franco devient le chef des chasseurs et commence Ã  tuer tous ceux qui se dressent contre lui !
+	AI_Output (self, other, "DIA_Addon_Edgor_Hi_06_05"); //Je dirais que Ã§a ne va pas super bien.
 
 	if (SC_KnowsRavensGoldmine == FALSE)
 	{
@@ -115,8 +115,8 @@ FUNC INT DIA_Addon_Edgor_Franco_Condition()
 FUNC VOID DIA_Addon_Edgor_Franco_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Franco_15_00"); //Comment Franco a-t-il pu devenir le leader ?
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //Très simplement ! Il a tué Fletcher, qui était l'un des chefs des chasseurs.
-	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Mais Fletcher était correct. Franco passe son temps à nous chercher des ennuis.
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_01"); //TrÃ¨s simplement ! Il a tuÃ© Fletcher, qui Ã©tait l'un des chefs des chasseurs.
+	AI_Output (self, other, "DIA_Addon_Edgor_Franco_06_02"); //Mais Fletcher Ã©tait correct. Franco passe son temps Ã  nous chercher des ennuis.
 };	
 
 //---------------------------------------------------------------------
@@ -129,7 +129,7 @@ INSTANCE DIA_Addon_Edgor_MIS2   (C_INFO)
 	condition   = DIA_Addon_Edgor_MIS2_Condition;
 	information = DIA_Addon_Edgor_MIS2_Info;
 	permanent   = FALSE;
-	description = "Franco m'envoie ici à propos de cette tablette de pierre...";
+	description = "Franco m'envoie ici Ã  propos de cette tablette de pierre...";
 };
 FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 {	
@@ -141,12 +141,12 @@ FUNC INT DIA_Addon_Edgor_MIS2_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_MIS2_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco m'a envoyé ici à propos de cette tablette de pierre. Vous l'avez trouvée ?
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Franchement, je ne l'ai même pas encore cherchée. Tout ce que je sais, c'est qu'elle est censée être cachée dans un vieux bâtiment tout au fond du marais.
-	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //Et ma voix intérieure me dit 'Edgor, ne t'approche pas des vieux bâtiments au fin fond d'un marais puant !'
+	AI_Output (other, self, "DIA_Addon_Edgor_MIS2_15_00"); //Franco m'a envoyÃ© ici Ã  propos de cette tablette de pierre. Vous l'avez trouvÃ©e ?
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_01"); //Franchement, je ne l'ai mÃªme pas encore cherchÃ©e. Tout ce que je sais, c'est qu'elle est censÃ©e Ãªtre cachÃ©e dans un vieux bÃ¢timent tout au fond du marais.
+	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_02"); //Et ma voix intÃ©rieure me dit 'Edgor, ne t'approche pas des vieux bÃ¢timents au fin fond d'un marais puant !'
 	AI_Output (self, other, "DIA_Addon_Edgor_MIS2_06_03"); //Hors de question que je risque ma vie pour ce goret de Franco !
 	
-	B_LogEntry (Topic_Addon_Stoneplate,"Edgor ne partira jamais à la recherche de la tablette de pierre. Il dit qu'elle se trouve quelque part dans un vieux bâtiment au cœur du marais.");
+	B_LogEntry (Topic_Addon_Stoneplate,"Edgor ne partira jamais Ã  la recherche de la tablette de pierre. Il dit qu'elle se trouve quelque part dans un vieux bÃ¢timent au cÅ“ur du marais.");
 };
 //---------------------------------------------------------------------
 //	Info Wegbeschreibung
@@ -158,7 +158,7 @@ INSTANCE DIA_Addon_Edgor_Weg   (C_INFO)
 	condition   = DIA_Addon_Edgor_Weg_Condition;
 	information = DIA_Addon_Edgor_Weg_Info;
 	permanent   = FALSE;
-	description = "Où se trouve ce vieux bâtiment, au juste ?";
+	description = "OÃ¹ se trouve ce vieux bÃ¢timent, au juste ?";
 };
 FUNC INT DIA_Addon_Edgor_Weg_Condition()
 {	
@@ -169,11 +169,11 @@ FUNC INT DIA_Addon_Edgor_Weg_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Weg_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //Où se trouve ce vieux bâtiment, au juste ?
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Passez devant le gros rocher, là-bas. Un peu plus loin, vous trouverez un autre gros rocher.
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Quand vous atteignez celui-la, il faut prendre à droite ou gauche - je ne me rappelle plus, ça fait bien trop longtemps !
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Les ruines du bâtiment devraient se trouver en hauteur. Elles sont sûrement recouvertes de végétation, maintenant...
-	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Peut-être que vous aurez de la chance et que vous ne la trouverez pas...
+	AI_Output (other, self, "DIA_Addon_Edgor_Weg_15_00"); //OÃ¹ se trouve ce vieux bÃ¢timent, au juste ?
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_01"); //Passez devant le gros rocher, lÃ -bas. Un peu plus loin, vous trouverez un autre gros rocher.
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_02"); //Quand vous atteignez celui-la, il faut prendre Ã  droite ou gauche - je ne me rappelle plus, Ã§a fait bien trop longtemps !
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_03"); //Les ruines du bÃ¢timent devraient se trouver en hauteur. Elles sont sÃ»rement recouvertes de vÃ©gÃ©tation, maintenant...
+	AI_Output (self, other, "DIA_Addon_Edgor_Weg_06_04"); //Peut-Ãªtre que vous aurez de la chance et que vous ne la trouverez pas...
 };
 //---------------------------------------------------------------------
 //	Info Found
@@ -185,7 +185,7 @@ INSTANCE DIA_Addon_Edgor_Found   (C_INFO)
 	condition   = DIA_Addon_Edgor_Found_Condition;
 	information = DIA_Addon_Edgor_Found_Info;
 	permanent   = FALSE;
-	description = "J'ai trouvé la tablette de pierre !";
+	description = "J'ai trouvÃ© la tablette de pierre !";
 };
 FUNC INT DIA_Addon_Edgor_Found_Condition()
 {	
@@ -198,9 +198,9 @@ FUNC INT DIA_Addon_Edgor_Found_Condition()
 };
 FUNC VOID DIA_Addon_Edgor_Found_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//(content) J'ai trouvé la tablette de pierre !
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(blasé) Vraiment ? Vous devez être un type très courageux
-	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(blasé) Ça vous vaudra certainement le droit d'entrer dans le camp. (baille)
+	AI_Output (other, self, "DIA_Addon_Edgor_Found_15_00");//(content) J'ai trouvÃ© la tablette de pierre !
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_01");//(blasÃ©) Vraiment ? Vous devez Ãªtre un type trÃ¨s courageux
+	AI_Output (self, other, "DIA_Addon_Edgor_Found_06_02");//(blasÃ©) Ã‡a vous vaudra certainement le droit d'entrer dans le camp. (baille)
 };
 //---------------------------------------------------------------------
 //	Info Teach
@@ -224,19 +224,19 @@ FUNC INT DIA_Addon_Edgor_Teach_Condition()
 FUNC VOID DIA_Addon_Edgor_Teach_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Edgor_Teach_15_00");//Pouvez-vous m'apprendre quelque chose ?
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//Je sais bien des choses sur les mouches sanguines. Je hais ces saletés de bestioles encore plus que je hais Franco !
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Mais je sais comment arracher les dards et les ailes de leurs cadavres. (délirant) Ouais, leur arracher...
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//En plus, je sais comment extraire les secrétions de leur dard.
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_01");//Je sais bien des choses sur les mouches sanguines. Je hais ces saletÃ©s de bestioles encore plus que je hais Franco !
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_02");//Mais je sais comment arracher les dards et les ailes de leurs cadavres. (dÃ©lirant) Ouais, leur arracher...
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_03");//En plus, je sais comment extraire les secrÃ©tions de leur dard.
 	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_04");//Si vous voulez, je peux vous enseigner tous ces trucs.
-	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Bien sûr, aucun service n'est gratuit, dans le coin...
+	AI_Output (self, other, "DIA_Addon_Edgor_Teach_06_05");//Bien sÃ»r, aucun service n'est gratuit, dans le coin...
 	
 	Log_CreateTopic (Topic_Addon_BDT_Teacher,LOG_NOTE);
-	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor sait bien des choses sur les mouches sanguines et leurs trophées.");	
+	B_LogEntry 	(Topic_Addon_BDT_Teacher,"Edgor sait bien des choses sur les mouches sanguines et leurs trophÃ©es.");	
 	Edgor_Teach = TRUE;
 };
 FUNC VOID B_Edgor_NotEnoughGold()
 {
-	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Allez me chercher l'or. Je veux des pièces, pas des pépites.
+	AI_Output (self, other, "DIA_Addon_Edgor_NotEnoughGold_06_00");//Allez me chercher l'or. Je veux des piÃ¨ces, pas des pÃ©pites.
 };
 //---------------------------------------------------------------------
 //	Info Train (Bloodflys)
@@ -268,15 +268,15 @@ FUNC VOID DIA_Addon_Edgor_Start_Info()
 	
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFSting] == FALSE)
 	{ 
-		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "Extraire les dards des mouches sanguines (Coût : 5 PA, 100 pièces d'or)",DIA_Addon_Edgor_TrainStart_Sting);
+		Info_AddChoice    (DIA_Addon_Edgor_TrainStart, "Extraire les dards des mouches sanguines (CoÃ»t : 5 PA, 100 piÃ¨ces d'or)",DIA_Addon_Edgor_TrainStart_Sting);
 	};
 	if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_BFWing] == FALSE)
 	{ 
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Arracher les ailes des mouches sanguines (Coût : 5 PA, 100 pièces d'or)",DIA_Addon_Edgor_TrainStart_Wing);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart, "Arracher les ailes des mouches sanguines (CoÃ»t : 5 PA, 100 piÃ¨ces d'or)",DIA_Addon_Edgor_TrainStart_Wing);
 	};
 	if (Knows_Bloodfly == FALSE)
 	{
-		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"Extraire les secrétions du dard (Coût : 1 PA, 100 pièces d'or)",DIA_Addon_Edgor_TrainStart_GIFT);
+		Info_AddChoice 	  (DIA_Addon_Edgor_TrainStart,"Extraire les secrÃ©tions du dard (CoÃ»t : 1 PA, 100 piÃ¨ces d'or)",DIA_Addon_Edgor_TrainStart_GIFT);
 	};
 };	
 FUNC VOID DIA_Addon_Edgor_TrainStart_BACK()
@@ -307,7 +307,7 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_Wing()
 		if B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_BFWing)
 		{
 			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_Wing_15_00");//Comment puis-je en arracher les ailes ?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Vous prenez une aile dans une main. Avec l'autre, vous la découpez au niveau de la couche supérieure de la carapace.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_Wing_06_01");//Vous prenez une aile dans une main. Avec l'autre, vous la dÃ©coupez au niveau de la couche supÃ©rieure de la carapace.
 		};
 	}
 	else
@@ -322,9 +322,9 @@ FUNC VOID DIA_Addon_Edgor_TrainStart_GIFT()
 	{
 		if (other.lp >= 1)
 		{
-			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Comment puis-je extraire les secrétions du dard des mouches sanguines ?
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Entaillez la couche supérieure du dard dans le sens de la longueur - ensuite, la sécrétion médicinale commencera à couler.
-			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Si vous faites comme ça, il n'y a aucun risque à aspirer les secrétions d'un dard - vous pouvez aussi les utiliser dans des potions.
+			AI_Output (other, self, "DIA_Addon_Edgor_TrainStart_GIFT_15_00");//Comment puis-je extraire les secrÃ©tions du dard des mouches sanguines ?
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_01");//Entaillez la couche supÃ©rieure du dard dans le sens de la longueur - ensuite, la sÃ©crÃ©tion mÃ©dicinale commencera Ã  couler.
+			AI_Output (self, other, "DIA_Addon_Edgor_TrainStart_GIFT_06_02");//Si vous faites comme Ã§a, il n'y a aucun risque Ã  aspirer les secrÃ©tions d'un dard - vous pouvez aussi les utiliser dans des potions.
 			
 			other.lp = (other.lp - 1);
 			Knows_Bloodfly = TRUE; 

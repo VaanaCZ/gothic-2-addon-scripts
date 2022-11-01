@@ -92,7 +92,7 @@ FUNC INT DIA_KDF_507_Talamon_SecondWarn_Condition()
 
 func void DIA_KDF_507_Talamon_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Si vous ne faites pas demi-tour, vous subirez la colère d'Innos !
+	AI_Output (self, other,"DIA_KDF_507_Talamon_SecondWarn_04_00"); //Si vous ne faites pas demi-tour, vous subirez la colÃ¨re d'Innos !
 
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP (other,KDF_507_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -131,7 +131,7 @@ func void DIA_KDF_507_Talamon_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;	//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurückgeben
+	AI_StopProcessInfos	(self);							//dem Spieler sofort wieder die Kontrolle zurÃ¼ckgeben
 	
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -262,10 +262,10 @@ FUNC INT DIA_Talamon_KAP5_Stop_Condition()
 FUNC VOID DIA_Talamon_KAP5_Stop_Info()
 {
 	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_00"); //Vous n'avez pas le droit d'aller plus loin. Demi-tour !
-	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Pyrokar m'a autorisé à examiner le livre de Xardas.
-	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //Il a dit ça ! Très bien, vous pouvez entrer. Le livre que vous cherchez se trouve dans le laboratoire d'alchimie.
+	AI_Output (other,self ,"DIA_Talamon_KAP5_Stop_15_01"); //Pyrokar m'a autorisÃ© Ã  examiner le livre de Xardas.
+	AI_Output (self, other,"DIA_Talamon_KAP5_Stop_04_02"); //Il a dit Ã§a ! TrÃ¨s bien, vous pouvez entrer. Le livre que vous cherchez se trouve dans le laboratoire d'alchimie.
 
-	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamos conservait le livre de Xardas sur un laboratoire d'alchimie à la cave."); 
+	B_LogEntry (TOPIC_BuchHallenVonIrdorath,"Talamos conservait le livre de Xardas sur un laboratoire d'alchimie Ã  la cave."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -278,7 +278,7 @@ INSTANCE DIA_Talamon_FoundSecretDoor   (C_INFO)
 	condition   = DIA_Talamon_FoundSecretDoor_Condition;
 	information = DIA_Talamon_FoundSecretDoor_Info;
 	permanent   = FALSE;
-	description = "J'ai trouvé une porte secrète.";
+	description = "J'ai trouvÃ© une porte secrÃ¨te.";
 };
 
 FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
@@ -291,13 +291,13 @@ FUNC INT DIA_Talamon_FoundSecretDoor_Condition()
 
 FUNC VOID DIA_Talamon_FoundSecretDoor_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //J'ai trouvé une porte secrète.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(surpris) Quoi ? Où ?
-	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //Derrière une étagère.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Qu'y a-t-il derrière ?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_00"); //J'ai trouvÃ© une porte secrÃ¨te.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_01"); //(surpris) Quoi ? OÃ¹ ?
+	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_02"); //DerriÃ¨re une Ã©tagÃ¨re.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_03"); //Qu'y a-t-il derriÃ¨re ?
 	AI_Output (other,self ,"DIA_Talamon_FoundSecretDoor_15_04"); //On dirait une vieille cave souterraine.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //C'est une nouvelle importante, je dois en informer Pyrokar immédiatement.
-	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Pendant ce temps, tâchez de découvrir ce qu'il y a dans cette cave.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_05"); //C'est une nouvelle importante, je dois en informer Pyrokar immÃ©diatement.
+	AI_Output (self ,other,"DIA_Talamon_FoundSecretDoor_04_06"); //Pendant ce temps, tÃ¢chez de dÃ©couvrir ce qu'il y a dans cette cave.
 	
 	MIS_ScoutLibrary = LOG_RUNNING;
 };
@@ -312,7 +312,7 @@ INSTANCE DIA_Talamon_ScoutSecretLibrary   (C_INFO)
 	condition   = DIA_Talamon_ScoutSecretLibrary_Condition;
 	information = DIA_Talamon_ScoutSecretLibrary_Info;
 	permanent   = TRUE;
-	description = "Je suis allé dans la cave.";
+	description = "Je suis allÃ© dans la cave.";
 };
 
 FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
@@ -326,13 +326,13 @@ FUNC INT DIA_Talamon_ScoutSecretLibrary_Condition()
 
 FUNC VOID DIA_Talamon_ScoutSecretLibrary_Info()
 {
-	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //Je suis allé dans la cave.
-	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //Et qu'y avez-vous trouvé ?
+	AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_00"); //Je suis allÃ© dans la cave.
+	AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_01"); //Et qu'y avez-vous trouvÃ© ?
 	
 	if (Npc_IsDead (SecretLibrarySkeleton))
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //Il y avait un guerrier squelette qui gardait une porte. Je l'ai tué.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //Bien joué.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_02"); //Il y avait un guerrier squelette qui gardait une porte. Je l'ai tuÃ©.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_03"); //Bien jouÃ©.
 		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_04"); //Nous nous occuperons de cette cave quand nous aurons vaincu le Mal.
 	
 		MIS_ScoutLibrary = LOG_SUCCESS;
@@ -340,8 +340,8 @@ FUNC VOID DIA_Talamon_ScoutSecretLibrary_Info()
 	}
 	else
 	{
-		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Ça grouille de monstres en bas.
-		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Il doit y avoir quelque chose. Continuez à regarder. Et ne faites preuve d'aucune pitié avec ces monstres.
+		AI_Output (other,self ,"DIA_Talamon_ScoutSecretLibrary_15_05"); //Ã‡a grouille de monstres en bas.
+		AI_Output (self ,other,"DIA_Talamon_ScoutSecretLibrary_04_06"); //Il doit y avoir quelque chose. Continuez Ã  regarder. Et ne faites preuve d'aucune pitiÃ© avec ces monstres.
 	};
 };
 

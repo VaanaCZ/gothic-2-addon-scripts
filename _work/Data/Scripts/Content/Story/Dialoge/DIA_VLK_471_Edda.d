@@ -42,8 +42,8 @@ FUNC INT DIA_Edda_Hallo_Condition()
 };
 FUNC VOID DIA_Edda_Hallo_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Qu'est-ce que vous êtes en train de préparer ?
-	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Une soupe de poisson. Elle n'a pas trop de goût mais, au moins, elle est chaude.
+	AI_Output (other ,self,"DIA_Edda_Hallo_15_00"); //Qu'est-ce que vous Ãªtes en train de prÃ©parerÂ ?
+	AI_Output (self ,other,"DIA_Edda_Hallo_17_01"); //Une soupe de poisson. Elle n'a pas trop de goÃ»t mais, au moins, elle est chaude.
 	AI_Output (self ,other,"DIA_Edda_Hallo_17_02"); //Vous pouvez en prendre, si vous voulez.
 };
 
@@ -66,12 +66,12 @@ FUNC INT DIA_Edda_Stadt_Condition()
 };
 FUNC VOID DIA_Edda_Stadt_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Que pouvez-vous me dire au sujet de la ville ?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //La plupart des habitants ont peur des voleurs. Je vous déconseille vivement d'entrer dans des maisons particulières sans y être invité.
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Mais si vous cherchez un endroit où dormir, vous pouvez passer la nuit dans ma hutte. Il y a un lit supplémentaire et je vous le prête.
-	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Vous n'avez pas peur des voleurs ?
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Je n'ai jamais possédé qu'un seul objet de valeur, et on me l'a déjà volé, alors...
-	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //Quelqu'un s'est emparé de ma statue d'Innos.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_00"); //Que pouvez-vous me dire au sujet de la villeÂ ?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_01"); //La plupart des habitants ont peur des voleurs. Je vous dÃ©conseille vivement d'entrer dans des maisons particuliÃ¨res sans y Ãªtre invitÃ©.
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_02"); //Mais si vous cherchez un endroit oÃ¹ dormir, vous pouvez passer la nuit dans ma hutte. Il y a un lit supplÃ©mentaire et je vous le prÃªte.
+	AI_Output (other ,self,"DIA_Edda_Stadt_15_03"); //Vous n'avez pas peur des voleursÂ ?
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_04"); //Je n'ai jamais possÃ©dÃ© qu'un seul objet de valeur, et on me l'a dÃ©jÃ  volÃ©, alors...
+	AI_Output (self ,other,"DIA_Edda_Stadt_17_05"); //Quelqu'un s'est emparÃ© de ma statue d'Innos.
 	
 	Edda_Schlafplatz = TRUE;
 	Wld_AssignRoomToGuild ("hafen08",	GIL_NONE);
@@ -95,11 +95,11 @@ FUNC INT DIA_Edda_Kochen_Condition()
 };
 FUNC VOID DIA_Edda_Kochen_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //Pouvez-vous me faire un peu de soupe ?
+	AI_Output (other ,self,"DIA_Edda_Kochen_15_00"); //Pouvez-vous me faire un peu de soupeÂ ?
 	AI_Output (self ,other,"DIA_Edda_Kochen_17_01"); //Je fais la cuisine pour n'importe qui. Pour vous aussi, si vous voulez. Il vous suffit de m'apporter un poisson.
 };			
 // ************************************************************
-// 		tägliche Suppe abholen
+// 		tÃ¤gliche Suppe abholen
 // ************************************************************
 INSTANCE DIA_Edda_Suppe(C_INFO)
 {
@@ -120,11 +120,11 @@ FUNC INT DIA_Edda_Suppe_Condition()
 };
 FUNC VOID DIA_Edda_Suppe_Info()
 {	
-	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //Pouvez-vous me faire un peu de soupe ?
+	AI_Output (other ,self,"DIA_Edda_Suppe_15_00"); //Pouvez-vous me faire un peu de soupeÂ ?
 	
 	if (Wld_GetDay() == 0)
 	{
-		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //Dès demain, vous pouvez venir chercher votre soupe de poisson chaque jour.
+		AI_Output (self ,other,"DIA_Edda_Suppe_17_02"); //DÃ¨s demain, vous pouvez venir chercher votre soupe de poisson chaque jour.
 	}
 	else if (Edda_Day != Wld_GetDay())
 	{
@@ -168,7 +168,7 @@ FUNC INT DIA_Edda_Statue_Condition()
 FUNC VOID DIA_Edda_Statue_Info()
 {	
 	AI_Output (other ,self,"DIA_Edda_Statue_15_00"); //Regardez, j'ai une statue d'Innos pour vous.
-	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //Oh, merci ! Merci mille fois ! Puisse la lumière d'Innos vous éclairer !
+	AI_Output (self ,other,"DIA_Edda_Statue_17_01"); //Oh, merciÂ ! Merci mille foisÂ ! Puisse la lumiÃ¨re d'Innos vous Ã©clairerÂ !
 	AI_Output (other ,self,"DIA_Edda_Statue_15_02"); //Ce n'est pas grave.
 	
 	B_GiveInvItems (other, self,ItMI_InnosStatue, 1); 

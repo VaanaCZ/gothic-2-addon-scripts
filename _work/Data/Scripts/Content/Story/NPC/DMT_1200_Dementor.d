@@ -42,6 +42,6 @@ instance DMT_1200_Dementor (Npc_Default)
 
 FUNC VOID Rtn_Start_1200 ()
 {	
-	TA_Stand_Dementor 	(08,00,23,00,"NW_TROLLAREA_PATH_47");	//Joly: DMT an der Brücke bei Novizenchace Kapitel 3
+	TA_Stand_Dementor 	(08,00,23,00,"NW_TROLLAREA_PATH_47");	//Joly: DMT an der BrÃ¼cke bei Novizenchace Kapitel 3
     TA_Stand_Dementor	(23,00,08,00,"NW_TROLLAREA_PATH_47");
 };

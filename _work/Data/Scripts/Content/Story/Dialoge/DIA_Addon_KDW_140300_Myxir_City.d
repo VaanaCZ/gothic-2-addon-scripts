@@ -49,9 +49,9 @@ func void DIA_Addon_Myxir_CITY_HelloCITY_Info ()
 	&& (DIA_Addon_Myxir_CITY_HelloCITY_OneTime == FALSE)
 	{
 		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_02"); //Je voulais vous dire une chose encore.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //Vous avez accompli un acte réellement héroïque à Jharkendar.
-		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //Hélas, mes travaux à Khorinis ne sont pas encore terminés.
-		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //C'est vrai, mais je suis convaincu que vous parviendrez à les maîtriser également, Gardien.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_03"); //Vous avez accompli un acte rÃ©ellement hÃ©roÃ¯que Ã  Jharkendar.
+		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_04"); //HÃ©las, mes travaux Ã  Khorinis ne sont pas encore terminÃ©s.
+		AI_Output	(self, other, "DIA_Addon_Myxir_CITY_HelloCITY_12_05"); //C'est vrai, mais je suis convaincu que vous parviendrez Ã  les maÃ®triser Ã©galement, Gardien.
 		AI_Output	(other, self, "DIA_Addon_Myxir_CITY_HelloCITY_15_06"); //Nous verrons.
 		DIA_Addon_Myxir_CITY_HelloCITY_OneTime = TRUE;
 		B_GivePlayerXP (XP_Ambient);

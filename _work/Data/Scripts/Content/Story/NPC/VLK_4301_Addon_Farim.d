@@ -19,7 +19,7 @@ instance VLK_4301_Addon_Farim (Npc_Default)
 	fight_tactic	= FAI_HUMAN_NORMAL;	
 	
 	// ------ Equippte Waffen ------																
-	CreateInvItems (self, ItMi_Aquamarine, 1);	//Joly: für Mission							
+	CreateInvItems (self, ItMi_Aquamarine, 1);	//Joly: fÃ¼r Mission							
 	EquipItem	(self, ItMw_1h_Bau_Mace); 
 	
 	

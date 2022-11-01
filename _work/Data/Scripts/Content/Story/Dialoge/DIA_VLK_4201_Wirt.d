@@ -79,35 +79,35 @@ FUNC VOID DIA_Wirt_Hallo_Info()
 	var int randy;
 	randy = Hlp_Random (2);
 	
-	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//Hé, approchez ! Accordez-vous une pause et venez boire un peu de bière bien fraîche.
+	AI_Output (self, other,"DIA_Wirt_Hallo_14_00");//HÃ©, approchezÂ ! Accordez-vous une pause et venez boire un peu de biÃ¨re bien fraÃ®che.
 	
 	if (self.aivar [AIV_TalkedToPlayer] == FALSE) 
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//C'est le seigneur André qui vous l'offre.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_01");//C'est le seigneur AndrÃ© qui vous l'offre.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 0)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Rien ne vaut une petite chope pour se remettre d'une journée de travail.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_02");//Rien ne vaut une petite chope pour se remettre d'une journÃ©e de travail.
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 1)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//Vous verrez, les paladins vont régler tous nos problèmes. Alors, buvez et détendez-vous !
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_03");//Vous verrez, les paladins vont rÃ©gler tous nos problÃ¨mes. Alors, buvez et dÃ©tendez-vousÂ !
 		
 		B_GiveInvItems (self, other, ItFo_Beer,1);
 		AI_StopProcessInfos (self);
 	}
 	else if (randy == 2)
 	{
-		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//On peut dire ce qu'on veut au sujet de Khorinis, mais notre 'Paladine brune' est la meilleure bière de Myrtana.
+		AI_Output (self, other,"DIA_Wirt_Hallo_14_04");//On peut dire ce qu'on veut au sujet de Khorinis, mais notre 'Paladine brune' est la meilleure biÃ¨re de Myrtana.
 		AI_StopProcessInfos (self);
 	};
 };
 
 /*
-	Wenn du ein Problem hast und es lässt sich lösen, dann denk nicht weiter drüber nach.
-	Und wenn du es nicht lösen kannst, dann brauchst du auch nicht weiter drüber nachzudenken. 
+	Wenn du ein Problem hast und es lÃ¤sst sich lÃ¶sen, dann denk nicht weiter drÃ¼ber nach.
+	Und wenn du es nicht lÃ¶sen kannst, dann brauchst du auch nicht weiter drÃ¼ber nachzudenken. 
 */
 
 

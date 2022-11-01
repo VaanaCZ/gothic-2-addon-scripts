@@ -77,11 +77,11 @@ FUNC INT DIA_Gaertner_Job_Condition()
 FUNC VOID DIA_Gaertner_Job_Info()
 {	
 	AI_Output (other,self ,"DIA_Gaertner_Job_15_00"); //Que faites-vous ici ?
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //A votre avis ? Je suis jardinier, alors je m'occupe du jardin.
-	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Vous êtes plutôt seul par ici, non ?
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_01"); //A votre avisÂ ? Je suis jardinier, alors je m'occupe du jardin.
+	AI_Output (other,self ,"DIA_Gaertner_Job_15_02"); //Vous Ãªtes plutÃ´t seul par ici, nonÂ ?
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_03"); //Oui, et cela me convient. Je suis heureux de pouvoir travailler en paix.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //A un moment, ils voulaient m'envoyer à la colonie pénitentiaire parce que j'avais tué quelqu'un.
-	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Mais le gouverneur Larius avait besoin d'un nouveau jardinier et je suis resté ici.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_04"); //A un moment, ils voulaient m'envoyer Ã  la colonie pÃ©nitentiaire parce que j'avais tuÃ© quelqu'un.
+	AI_Output (self ,other,"DIA_Gaertner_Job_09_05"); //Mais le gouverneur Larius avait besoin d'un nouveau jardinier et je suis restÃ© ici.
 	AI_Output (self ,other,"DIA_Gaertner_Job_09_06"); //Depuis, ce jardin, c'est mon foyer. Et cela me convient parfaitement.
 };
 //*************************************************************
@@ -94,7 +94,7 @@ INSTANCE DIA_Gaertner_Plants(C_INFO)
 	condition	= DIA_Gaertner_Plants_Condition;
 	information	= DIA_Gaertner_Plants_Info;
 	permanent	= FALSE;
-	description = "Faites-vous également pousser des herbes ?";
+	description = "Faites-vous Ã©galement pousser des herbes ?";
 };                       
 
 FUNC INT DIA_Gaertner_Plants_Condition()
@@ -106,9 +106,9 @@ FUNC INT DIA_Gaertner_Plants_Condition()
 };
 FUNC VOID DIA_Gaertner_Plants_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Vous faites également pousser des herbes arômatiques ?
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Quelques-unes. Surtout de l'herbe de feu et des orties de feu. J'ai également essayé l'herbe des marais, mais elle ne prend pas ici.
-	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Je viens juste de les récolter, alors si vous voulez m'acheter quelque chose...
+	AI_Output (other,self ,"DIA_Gaertner_Plants_15_00"); //Vous faites Ã©galement pousser des herbes arÃ´matiquesÂ ?
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_01"); //Quelques-unes. Surtout de l'herbe de feu et des orties de feu. J'ai Ã©galement essayÃ© l'herbe des marais, mais elle ne prend pas ici.
+	AI_Output (self ,other,"DIA_Gaertner_Plants_09_02"); //Je viens juste de les rÃ©colter, alors si vous voulez m'acheter quelque chose...
 	
 	Log_CreateTopic (Topic_CityTrader,LOG_NOTE);
 	B_LogEntry (Topic_CityTrader,"Le jardinier du gouverneur peut me vendre des plantes.");
@@ -162,7 +162,7 @@ FUNC INT DIA_Gaertner_Krautabak_Condition()
 };
 FUNC VOID DIA_Gaertner_Krautabak_Info()
 {	
-	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //J'ai des feuilles de tabac. Ça vous intéresse ?
+	AI_Output (other,self ,"DIA_Gaertner_Krautabak_15_00"); //J'ai des feuilles de tabac. Ã‡a vous intÃ©resseÂ ?
 	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_01"); //Je ne connais pas, mais donnez-m'en une feuille ou deux que j'essaye...
 	
 	B_GiveInvItems (other, self, ItMi_SumpfTabak,1);
@@ -173,7 +173,7 @@ FUNC VOID DIA_Gaertner_Krautabak_Info()
 	AI_PlayAni (self, "T_MAGRUN_2_HEASHOOT");
 	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_02"); //Koff... koff...
 	AI_PlayAni (self, "T_HEASHOOT_2_STAND");
-	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //La vache ! Il est fort ! Je crois qu'il vaut mieux que j'arrête d'en fumer.
+	AI_Output (self ,other,"DIA_Gaertner_Krautabak_09_03"); //La vacheÂ ! Il est fortÂ ! Je crois qu'il vaut mieux que j'arrÃªte d'en fumer.
 	
 	B_GivePlayerXP (XP_Ambient);
 };
@@ -200,8 +200,8 @@ FUNC INT DIA_Gaertner_Sign_Condition()
 FUNC VOID DIA_Gaertner_Sign_Info()
 {	
 	AI_PlayAni (other, "T_YES");
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Ainsi, vous êtes des nôtres. Dans ce cas, j'ai des informations à vous divulguer.
-	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Ici, certaines maisons sont équipées de compartiments secrets qu'on ne peut ouvrir qu'à l'aide de mécanismes dissimulés.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_00"); //Ainsi, vous Ãªtes des nÃ´tres. Dans ce cas, j'ai des informations Ã  vous divulguer.
+	AI_Output (self ,other,"DIA_Gaertner_Sign_09_01"); //Ici, certaines maisons sont Ã©quipÃ©es de compartiments secrets qu'on ne peut ouvrir qu'Ã  l'aide de mÃ©canismes dissimulÃ©s.
 	AI_Output (self ,other,"DIA_Gaertner_Sign_09_02"); //Les gens s'en servent pour entreposer leurs objets de valeur.
 };
 

@@ -42,24 +42,24 @@ func int DIA_Grom_HALLO_Condition ()
 func void DIA_Grom_HALLO_Info ()
 {
 	AI_Output			(other, self, "DIA_Grom_HALLO_15_00"); //Tout va bien ?
-	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah ! Un vagabond que je ne connais pas. Je suis très occupé, alors que voulez-vous ?
+	AI_Output			(self, other, "DIA_Grom_HALLO_08_01"); //Ah ! Un vagabond que je ne connais pas. Je suis trÃ¨s occupÃ©, alors que voulez-vous ?
 
 	Info_ClearChoices	(DIA_Grom_HALLO);
-	Info_AddChoice	(DIA_Grom_HALLO, "Qu'y a-t-il d'intéressant à voir ici ?", DIA_Grom_HALLO_waszusehen );
+	Info_AddChoice	(DIA_Grom_HALLO, "Qu'y a-t-il d'intÃ©ressant Ã  voir ici ?", DIA_Grom_HALLO_waszusehen );
 	Info_AddChoice	(DIA_Grom_HALLO, "Que faites-vous ici ?", DIA_Grom_HALLO_was );
 };
 
 func void DIA_Grom_HALLO_waszusehen ()
 {
-	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Qu'y a-t-il d'intéressant à voir ici ?
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //Intéressant est le mot. Si vous vous enfoncez dans les bois, vous allez rencontrer des types vraiment maléfiques.
-	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Ils font à peu près trois mètres de haut, pleins de poils et ont un très mauvais caractère. Alors n'y allez pas si vous n'êtes pas de taille.
+	AI_Output			(other, self, "DIA_Grom_HALLO_waszusehen_15_00"); //Qu'y a-t-il d'intÃ©ressant Ã  voir ici ?
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_01"); //IntÃ©ressant est le mot. Si vous vous enfoncez dans les bois, vous allez rencontrer des types vraiment malÃ©fiques.
+	AI_Output			(self, other, "DIA_Grom_HALLO_waszusehen_08_02"); //Ils font Ã  peu prÃ¨s trois mÃ¨tres de haut, pleins de poils et ont un trÃ¨s mauvais caractÃ¨re. Alors n'y allez pas si vous n'Ãªtes pas de taille.
 };
 
 func void DIA_Grom_HALLO_was ()
 {
 	AI_Output			(other, self, "DIA_Grom_HALLO_was_15_00"); //Que faites-vous ici ?
-	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Disons le genre de choses dont s'occupe un bûcheron et un chasseur.
+	AI_Output			(self, other, "DIA_Grom_HALLO_was_08_01"); //Disons le genre de choses dont s'occupe un bÃ»cheron et un chasseur.
 	Info_AddChoice	(DIA_Grom_HALLO, DIALOG_BACK, DIA_Grom_HALLO_BACK );
 };
 
@@ -93,7 +93,7 @@ FUNC INT DIA_Grom_AskTeacher_Condition()
 FUNC VOID DIA_Grom_AskTeacher_Info()
 {
 	AI_Output(other,self,"DIA_Grom_AskTeacher_15_00"); //Pouvez-vous m'apprendre l'art de la chasse ?
-	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Bien sûr. Mais d'abord trouvez-moi quelque chose de correct à manger. Je meurs de faim.
+	AI_Output(self,other,"DIA_Grom_AskTeacher_08_01"); //Bien sÃ»r. Mais d'abord trouvez-moi quelque chose de correct Ã  manger. Je meurs de faim.
 	AI_Output(self,other,"DIA_Grom_AskTeacher_08_02"); //Je veux une bouteille de lait, du pain et du jambon. Puis je vous enseignerai ce que vous voulez.
 	Log_CreateTopic (TOPIC_GromAskTeacher, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_GromAskTeacher, LOG_RUNNING);
@@ -146,7 +146,7 @@ instance DIA_Grom_TEACHHUNTING		(C_INFO)
 	condition	 = 	DIA_Grom_TEACHHUNTING_Condition;
 	information	 = 	DIA_Grom_TEACHHUNTING_Info;
 	permanent	 =  TRUE;
-	description	 = 	"Apprenez-moi à chasser.";
+	description	 = 	"Apprenez-moi Ã  chasser.";
 };
 
 func int DIA_Grom_TEACHHUNTING_Condition ()
@@ -159,7 +159,7 @@ func int DIA_Grom_TEACHHUNTING_Condition ()
 
 func void DIA_Grom_TEACHHUNTING_Info ()
 {
-	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //Apprenez-moi à chasser.
+	AI_Output			(other, self, "DIA_Grom_TEACHHUNTING_15_00"); //Apprenez-moi Ã  chasser.
 		if 	(
 				(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Fur] == FALSE)
 				||(PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Teeth] == FALSE)
@@ -183,7 +183,7 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Heart] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Retirer le cœur",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Retirer le cÅ“ur",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_Heart)),  DIA_Grom_TEACHHUNTING_Heart);
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_Mandibles] == FALSE)
 			{ 
@@ -191,12 +191,12 @@ func void DIA_Grom_TEACHHUNTING_Info ()
 			};
 			if (PLAYER_TALENT_TAKEANIMALTROPHY [TROPHY_ShadowHorn] == FALSE)
 			{ 
-				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Corne de bête des ombres",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
+				Info_AddChoice	(DIA_Grom_TEACHHUNTING, B_BuildLearnString ("Corne de bÃªte des ombres",B_GetLearnCostTalent (other,NPC_TALENT_TAKEANIMALTROPHY, TROPHY_ShadowHorn)),  DIA_Grom_TEACHHUNTING_ShadowHorn	);
 			};
 		}
 		else
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Je ne peux rien vous apprendre que vous ne sachiez déjà.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_08_02"); //Je ne peux rien vous apprendre que vous ne sachiez dÃ©jÃ .
 		};
 };
 
@@ -210,7 +210,7 @@ func void DIA_Grom_TEACHHUNTING_Fur()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Fur))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Faites une incision dans la jambe de l'animal pour pouvoir ôter sa peau. Tirez de l'avant vers l'arrière. C'est le seul moyen.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Fur_08_00"); //Faites une incision dans la jambe de l'animal pour pouvoir Ã´ter sa peau. Tirez de l'avant vers l'arriÃ¨re. C'est le seul moyen.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -220,7 +220,7 @@ func void DIA_Grom_TEACHHUNTING_Teeth ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Teeth))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Quand vous retirez les crocs, vous devez faire particulièrement attention à ce qu'ils ne se cassent pas quand ils se détachent de la mâchoire.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Teeth_08_00"); //Quand vous retirez les crocs, vous devez faire particuliÃ¨rement attention Ã  ce qu'ils ne se cassent pas quand ils se dÃ©tachent de la mÃ¢choire.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -230,7 +230,7 @@ func void DIA_Grom_TEACHHUNTING_Heart ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Heart))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Vous retirez le cœur de l'animal d'une adroite incision dans la poitrine. Mais cela ne vaut la peine qu'avec des animaux spéciaux ou des êtres enchantés.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Heart_08_00"); //Vous retirez le cÅ“ur de l'animal d'une adroite incision dans la poitrine. Mais cela ne vaut la peine qu'avec des animaux spÃ©ciaux ou des Ãªtres enchantÃ©s.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -240,7 +240,7 @@ func void DIA_Grom_TEACHHUNTING_Mandibles ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_Mandibles))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Les mandibules d'un foreur des mines ou d'un fléau des champs doivent être retirées avec un solide levier de métal. Elles sont profondément enfoncées dans le crâne de l'animal.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_Mandibles_08_00"); //Les mandibules d'un foreur des mines ou d'un flÃ©au des champs doivent Ãªtre retirÃ©es avec un solide levier de mÃ©tal. Elles sont profondÃ©ment enfoncÃ©es dans le crÃ¢ne de l'animal.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };
@@ -250,7 +250,7 @@ func void DIA_Grom_TEACHHUNTING_ShadowHorn ()
 {
 	if (B_TeachPlayerTalentTakeAnimalTrophy (self, other, TROPHY_ShadowHorn))
 		{
-			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Pour retirer la corne d'une bête des ombres, prenez appui sur le crâne, tirez de toutes vos forces sur la corne et coupez-la avec une lame solide.
+			AI_Output			(self, other, "DIA_Grom_TEACHHUNTING_ShadowHorn_08_00"); //Pour retirer la corne d'une bÃªte des ombres, prenez appui sur le crÃ¢ne, tirez de toutes vos forces sur la corne et coupez-la avec une lame solide.
 		};
 	Info_ClearChoices	(DIA_Grom_TEACHHUNTING);
 };

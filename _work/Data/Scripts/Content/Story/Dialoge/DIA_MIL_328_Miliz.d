@@ -38,11 +38,11 @@ func int DIA_328_Miliz_Hi_Condition ()
 };
 func void DIA_328_Miliz_Hi_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //Hé ! Vous n'avez rien à faire ici, c'est compris ?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Qui êtes-vous ?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Ça ne vous regarde pas ! C'est moi le patron, ici, pigé ?
-	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Le patron ? De quoi ? De ces coffres ?
-	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //Hé ! La réserve est sous ma responsabilité, pigé ? Tirez-vous si vous ne voulez pas que je vous défonce le crâne !
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_00"); //HÃ©Â ! Vous n'avez rien Ã  faire ici, c'est comprisÂ ?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_01"); //Qui Ãªtes-vous ?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_02"); //Ã‡a ne vous regarde pasÂ ! C'est moi le patron, ici, pigÃ©Â ?
+	AI_Output (other, self, "DIA_328_Miliz_Hi_15_03"); //Le patronÂ ? De quoiÂ ? De ces coffresÂ ?
+	AI_Output (self, other, "DIA_328_Miliz_Hi_08_04"); //HÃ©Â ! La rÃ©serve est sous ma responsabilitÃ©, pigÃ©Â ? Tirez-vous si vous ne voulez pas que je vous dÃ©fonce le crÃ¢neÂ !
 	
 	AI_StopProcessInfos (self);
 	
@@ -69,7 +69,7 @@ func int DIA_328_Miliz_Kill_Condition ()
 };
 func void DIA_328_Miliz_Kill_Info ()
 {
-	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //Hé, vous êtes encore là ? Je vous ai pourtant bien dit de vous tirer, non ?
+	AI_Output (self, other, "DIA_328_Miliz_Kill_08_00"); //HÃ©, vous Ãªtes encore lÃ  ? Je vous ai pourtant bien dit de vous tirer, non ?
 	AI_Output (self, other, "DIA_328_Miliz_Kill_08_01"); //Je vais vous montrer qui commande, ici...
 	
 	AI_StopProcessInfos (self);

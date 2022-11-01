@@ -5,7 +5,7 @@
 PROTOTYPE Mst_Default_Waran(C_Npc)			
 {
 	//----- Monster ----
-	name							=	"Lézard";
+	name							=	"LÃ©zard";
 	guild							=	GIL_WARAN;
 	aivar[AIV_MM_REAL_ID]			= 	ID_WARAN;
 	level							=	12;

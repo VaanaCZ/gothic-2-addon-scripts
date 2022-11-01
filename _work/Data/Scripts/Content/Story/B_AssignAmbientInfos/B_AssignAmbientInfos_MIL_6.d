@@ -29,7 +29,7 @@ INSTANCE DIA_MIL_6_JOIN(C_INFO)
 	condition	= DIA_MIL_6_JOIN_Condition;
 	information	= DIA_MIL_6_JOIN_Info;
 	permanent	= TRUE;
-	description = "Que dois-je faire pour me joindre à la milice ?";
+	description = "Que dois-je faire pour me joindre Ã  la milice ?";
 };                       
 
 FUNC INT DIA_MIL_6_JOIN_Condition()
@@ -43,7 +43,7 @@ FUNC INT DIA_MIL_6_JOIN_Condition()
 FUNC VOID DIA_MIL_6_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_6_JOIN_15_00"); //Que dois-je faire pour m'engager dans la milice ?
-	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Allez parler au seigneur André. Depuis que les paladins sont en ville, il commande la milice.
+	AI_Output (self, other, "DIA_MIL_6_JOIN_06_01"); //Allez parler au seigneur AndrÃ©. Depuis que les paladins sont en ville, il commande la milice.
 	if (C_NpcIsInQuarter (self) != Q_KASERNE)
 	{
 		AI_Output (self, other, "DIA_MIL_6_JOIN_06_02"); //Vous pourrez le trouver dans la caserne. Il y est presque toujours.
@@ -102,9 +102,9 @@ FUNC INT DIA_MIL_6_PEOPLE_Condition()
 FUNC VOID DIA_MIL_6_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_MIL_6_PEOPLE_15_00"); //Parlez-moi de ces paladins.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Depuis que les paladins sont arrivés à Khorinis, ils se sont installés à l'autre bout de la ville, dans le haut quartier.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_01"); //Depuis que les paladins sont arrivÃ©s Ã  Khorinis, ils se sont installÃ©s Ã  l'autre bout de la ville, dans le haut quartier.
 	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_02"); //Ils ne laissent personne entrer sauf les citoyens de la ville et la milice, bien entendu.
-	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Des paladins gardent également le navire au port. Mais ils ne sont pas très bavards.
+	AI_Output (self, other, "DIA_MIL_6_PEOPLE_06_03"); //Des paladins gardent Ã©galement le navire au port. Mais ils ne sont pas trÃ¨s bavards.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ INSTANCE DIA_MIL_6_LOCATION(C_INFO)
 	condition	= DIA_MIL_6_LOCATION_Condition;
 	information	= DIA_MIL_6_LOCATION_Info;
 	permanent	= TRUE;
-	description = "Qu'y a-t-il à savoir au sujet de cette ville ?";
+	description = "Qu'y a-t-il Ã  savoir au sujet de cette ville ?";
 };                       
 
 FUNC INT DIA_MIL_6_LOCATION_Condition()
@@ -126,11 +126,11 @@ FUNC INT DIA_MIL_6_LOCATION_Condition()
 
 FUNC VOID DIA_MIL_6_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Qu'y a-t-il à savoir au sujet de cette ville ?
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //Désormais les paladins contrôlent toute la ville. La milice est sous leurs ordres.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Le seigneur André commande la milice et fait office de juge.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //Si vous deviez aller à l'encontre de la loi, c'est à lui que vous devrez en rendre compte.
-	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Mais il se montre assez indulgent. Généralement, il se contente de donner des amendes.
+	AI_Output (other, self, "DIA_MIL_6_LOCATION_15_00"); //Qu'y a-t-il Ã  savoir au sujet de cette ville ?
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_01"); //DÃ©sormais les paladins contrÃ´lent toute la ville. La milice est sous leurs ordres.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_02"); //Le seigneur AndrÃ© commande la milice et fait office de juge.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_03"); //Si vous deviez aller Ã  l'encontre de la loi, c'est Ã  lui que vous devrez en rendre compte.
+	AI_Output (self, other, "DIA_MIL_6_LOCATION_06_04"); //Mais il se montre assez indulgent. GÃ©nÃ©ralement, il se contente de donner des amendes.
 	
 };
 
@@ -155,30 +155,30 @@ FUNC VOID DIA_MIL_6_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //Dernièrement, on voit de plus en plus de racaille en ville.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //Il y a de plus en plus de vols et le seigneur André pense qu'un gang en est responsable.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //Il n'y pas très longtemps, on a fouillé le quartier du port de fond en comble mais nous n'avons encore rien trouvé.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_01"); //DerniÃ¨rement, on voit de plus en plus de racaille en ville.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_02"); //Il y a de plus en plus de vols et le seigneur AndrÃ© pense qu'un gang en est responsable.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_03"); //Il n'y pas trÃ¨s longtemps, on a fouillÃ© le quartier du port de fond en comble mais nous n'avons encore rien trouvÃ©.
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_04"); //Il semblerait que le problème des bandits soit presque réglé. Depuis peu, il n'y a presque plus de raids.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_04"); //Il semblerait que le problÃ¨me des bandits soit presque rÃ©glÃ©. Depuis peu, il n'y a presque plus de raids.
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //C'est de pire en pire avec cette racaille en ville. La nuit dernière j'ai suivi un homme en robe noire dans le haut quartier de la ville.
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Je suis sûr qu'il préparait un sale coup. Mais il a disparu à l'angle de la maison du gouverneur. C'était vraiment un étrange individu.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_05"); //C'est de pire en pire avec cette racaille en ville. La nuit derniÃ¨re j'ai suivi un homme en robe noire dans le haut quartier de la ville.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_06"); //Je suis sÃ»r qu'il prÃ©parait un sale coup. Mais il a disparu Ã  l'angle de la maison du gouverneur. C'Ã©tait vraiment un Ã©trange individu.
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_07"); //On dit que le seigneur Hagen a engagé des mercenaires pour combattre les dragons. Je suis tout à fait d'accord, je ne voudrais pas avoir à combattre des dragons.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_07"); //On dit que le seigneur Hagen a engagÃ© des mercenaires pour combattre les dragons. Je suis tout Ã  fait d'accord, je ne voudrais pas avoir Ã  combattre des dragons.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_08"); //Ils disent que les dragons ont été vaincus ! Le seigneur Hagen rassemble ses forces pour repousser les dernières créatures de la Vallée des mines.
+		AI_Output (self,other,"DIA_MIL_6_STANDARD_06_08"); //Ils disent que les dragons ont Ã©tÃ© vaincus ! Le seigneur Hagen rassemble ses forces pour repousser les derniÃ¨res crÃ©atures de la VallÃ©e des mines.
 	};
 };
 

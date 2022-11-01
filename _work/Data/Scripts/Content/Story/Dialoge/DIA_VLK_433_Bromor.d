@@ -30,7 +30,7 @@ instance DIA_Bromor_GIRLS		(C_INFO)
 	condition	 = 	DIA_Bromor_GIRLS_Condition;
 	information	 = 	DIA_Bromor_GIRLS_Info;
 	permanent	 = 	FALSE;
-	description	 = 	"Êtes-vous le patron de cet endroit ?";
+	description	 = 	"ÃŠtes-vous le patron de cet endroit ?";
 };
 
 func int DIA_Bromor_GIRLS_Condition ()
@@ -43,15 +43,15 @@ func int DIA_Bromor_GIRLS_Condition ()
 func void DIA_Bromor_GIRLS_Info ()
 {
 	//ADDON>
-	AI_Output (other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //Êtes-vous le patron de cet endroit ?
+	AI_Output (other, self, "DIA_Addon_Bromor_GIRLS_15_00"); //ÃŠtes-vous le patron de cet endroit ?
 	//ADDON<
 
 	//AI_Output (other, self, "DIA_Bromor_GIRLS_15_00"); //J'ai envie de m'amuser.
 	//AI_Output (self, other, "DIA_Bromor_GIRLS_07_01"); //Deshalb bist du ja hergekommen.
 
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Je m'appelle Bromor. Cet établissement m'appartient, et voici mes filles. Je les aime bien.
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //Si elles vous plaisent aussi, ça vous coûtera 50 pièces d'or.
-	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //Et qu'il ne vous vienne surtout pas à l'idée de me faire des ennuis !
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_02"); //Je m'appelle Bromor. Cet Ã©tablissement m'appartient, et voici mes filles. Je les aime bien.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_03"); //Si elles vous plaisent aussi, Ã§a vous coÃ»tera 50 piÃ¨ces d'or.
+	AI_Output (self, other, "DIA_Bromor_GIRLS_07_04"); //Et qu'il ne vous vienne surtout pas Ã  l'idÃ©e de me faire des ennuisÂ !
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -80,14 +80,14 @@ func int DIA_Addon_Bromor_MissingPeople_Condition ()
 func void DIA_Addon_Bromor_MissingPeople_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_00"); //Tout va bien avec vos filles ?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //Évidemment. C'est une maison respectable, ici.
-	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(irrité) Euh... Je ne parlais pas de leur santé. Je voulais dire, sont-elles toutes présentes ? Ou certaines ont-elles disparu ?
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //Oh. Oui. En réalité, une de mes filles est partie. Elle s'appelle Lucia.
-	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //J'ai signalé sa disparition à la milice. Mais ils ont déclaré n'avoir retrouvé aucune trace d'elle.
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_01"); //Ã‰videmment. C'est une maison respectable, ici.
+	AI_Output	(other, self, "DIA_Addon_Bromor_MissingPeople_15_02"); //(irritÃ©) Euh... Je ne parlais pas de leur santÃ©. Je voulais dire, sont-elles toutes prÃ©sentes ? Ou certaines ont-elles disparu ?
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_03"); //Oh. Oui. En rÃ©alitÃ©, une de mes filles est partie. Elle s'appelle Lucia.
+	AI_Output	(self, other, "DIA_Addon_Bromor_MissingPeople_07_04"); //J'ai signalÃ© sa disparition Ã  la milice. Mais ils ont dÃ©clarÃ© n'avoir retrouvÃ© aucune trace d'elle.
 	
 	Log_CreateTopic (TOPIC_Addon_MissingPeople, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_MissingPeople, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_MissingPeople,"Une prostituée appelée Lucia a disparu de la maison close près du port."); 
+	B_LogEntry (TOPIC_Addon_MissingPeople,"Une prostituÃ©e appelÃ©e Lucia a disparu de la maison close prÃ¨s du port."); 
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -117,14 +117,14 @@ func void DIA_Addon_Bromor_Lucia_Info ()
 {
 	AI_Output	(other, self, "DIA_Addon_Bromor_Lucia_15_00"); //Depuis combien de temps Lucia a-t-elle disparu ?
 	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_01"); //Depuis plusieurs jours. Je ne sais pas exactement.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //Je suppose qu'elle s'est tirée avec l'un de ses soupirants.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Cette garce a décampé avec une partie de mes économies. C'était une écuelle dorée de grande valeur.
-	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Si je lui mets la main dessus, elle aura ce qu'elle mérite.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_02"); //Je suppose qu'elle s'est tirÃ©e avec l'un de ses soupirants.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_03"); //Cette garce a dÃ©campÃ© avec une partie de mes Ã©conomies. C'Ã©tait une Ã©cuelle dorÃ©e de grande valeur.
+	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_04"); //Si je lui mets la main dessus, elle aura ce qu'elle mÃ©rite.
 	AI_Output	(self, other, "DIA_Addon_Bromor_Lucia_07_05"); //Est-ce que ce sont vos oignons ? Essayez-vous de vous moquer de moi ou quoi ?
 
 	Log_CreateTopic (TOPIC_Addon_BromorsGold, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_Addon_BromorsGold, LOG_RUNNING);
-	B_LogEntry (TOPIC_Addon_BromorsGold,"Lucia la prostituée a dérobé une écuelle dorée à Bromor, son patron. Bromor veut récupérer son écuelle."); 
+	B_LogEntry (TOPIC_Addon_BromorsGold,"Lucia la prostituÃ©e a dÃ©robÃ© une Ã©cuelle dorÃ©e Ã  Bromor, son patron. Bromor veut rÃ©cupÃ©rer son Ã©cuelle."); 
 
 	MIS_Bromor_LuciaStoleGold = LOG_RUNNING;
 };
@@ -140,7 +140,7 @@ instance DIA_Addon_Bromor_LuciaGold		(C_INFO)
 	information	 = 	DIA_Addon_Bromor_LuciaGold_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"J'ai retrouvé l'écuelle que Lucia vous avait volée.";
+	description	 = 	"J'ai retrouvÃ© l'Ã©cuelle que Lucia vous avait volÃ©e.";
 };
 
 func int DIA_Addon_Bromor_LuciaGold_Condition ()
@@ -155,15 +155,15 @@ func int DIA_Addon_Bromor_LuciaGold_Condition ()
 
 func void DIA_Addon_Bromor_LuciaGold_Info ()
 {
-	AI_Output	(other, self, "DIA_Addon_Bromor_LuciaGold_15_00"); //J'ai retrouvé l'écuelle que Lucia vous avait volée.
-	AI_Output	(self, other, "DIA_Addon_Bromor_LuciaGold_07_01"); //Fantastique ! Il était grand temps que je le retrouve.
+	AI_Output	(other, self, "DIA_Addon_Bromor_LuciaGold_15_00"); //J'ai retrouvÃ© l'Ã©cuelle que Lucia vous avait volÃ©e.
+	AI_Output	(self, other, "DIA_Addon_Bromor_LuciaGold_07_01"); //Fantastique ! Il Ã©tait grand temps que je le retrouve.
 	
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	if (Bromor_Hausverbot == FALSE)
 	{
-		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Et qu'en est-il de la récompense ?", DIA_Addon_Bromor_LuciaGold_lohn );
+		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Et qu'en est-il de la rÃ©compense ?", DIA_Addon_Bromor_LuciaGold_lohn );
 	};
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Voici votre écuelle.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Voici votre Ã©cuelle.", DIA_Addon_Bromor_LuciaGold_einfachgeben );
 	if (DIA_Addon_Bromor_LuciaGold_lucia_OneTime == FALSE)
 	{
 		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Ne voulez-vous pas savoir ce qu'est devenue Lucia ?", DIA_Addon_Bromor_LuciaGold_lucia );
@@ -171,9 +171,9 @@ func void DIA_Addon_Bromor_LuciaGold_Info ()
 };
 func void DIA_Addon_Bromor_LuciaGold_einfachgeben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_einfachgeben_15_00"); //Voici votre écuelle.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_einfachgeben_15_00"); //Voici votre Ã©cuelle.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_einfachgeben_07_01"); //Merci. C'est très généreux de votre part. Vous désirez autre chose ?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_einfachgeben_07_01"); //Merci. C'est trÃ¨s gÃ©nÃ©reux de votre part. Vous dÃ©sirez autre chose ?
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
 	B_GivePlayerXP (XP_Addon_Bromor_LuciaGold);
@@ -183,13 +183,13 @@ var int DIA_Addon_Bromor_LuciaGold_lucia_OneTime;
 func void DIA_Addon_Bromor_LuciaGold_lucia ()
 {
 	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lucia_15_00"); //Ne voulez-vous pas savoir ce qu'est devenue Lucia ?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //Non. Pourquoi ? J'ai retrouvé mon écuelle, n'est-ce pas ?
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //Je me suis toujours débrouillé sans Lucia jusqu'à maintenant et ça continuera ainsi. Pourquoi souhaiterais-je la faire revenir ?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_01"); //Non. Pourquoi ? J'ai retrouvÃ© mon Ã©cuelle, n'est-ce pas ?
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lucia_07_02"); //Je me suis toujours dÃ©brouillÃ© sans Lucia jusqu'Ã  maintenant et Ã§a continuera ainsi. Pourquoi souhaiterais-je la faire revenir ?
 	DIA_Addon_Bromor_LuciaGold_lucia_OneTime = TRUE;
 };
 func void DIA_Addon_Bromor_LuciaGold_lohn ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lohn_15_00"); //Et qu'en est-il de la récompense ?
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_lohn_15_00"); //Et qu'en est-il de la rÃ©compense ?
 	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_lohn_07_01"); //Vous pouvez prendre du bon temps avec une de mes filles pour rien. Qu'en dites-vous ?
 
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
@@ -198,28 +198,28 @@ func void DIA_Addon_Bromor_LuciaGold_lohn ()
 		Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Ne voulez-vous pas savoir ce qu'est devenue Lucia ?", DIA_Addon_Bromor_LuciaGold_lucia );
 	};	
 	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Ce n'est pas assez.", DIA_Addon_Bromor_LuciaGold_mehr );
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Marché conclu. Voici votre plat.", DIA_Addon_Bromor_LuciaGold_geben );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "MarchÃ© conclu. Voici votre plat.", DIA_Addon_Bromor_LuciaGold_geben );
 };
 func void DIA_Addon_Bromor_LuciaGold_mehr ()
 {
 	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_mehr_15_00"); //Ce n'est pas assez.
 	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_mehr_07_01"); //Contentez-vous de cela ou ne remettez plus les pieds ici.
-	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Oubliez ça.", DIA_Addon_Bromor_LuciaGold_nein );
+	Info_AddChoice	(DIA_Addon_Bromor_LuciaGold, "Oubliez Ã§a.", DIA_Addon_Bromor_LuciaGold_nein );
 };
 func void DIA_Addon_Bromor_LuciaGold_nein ()
 {
 	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_nein_15_00"); //N'y pensez pas.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //Alors quittez mon établissement sur le champ, espèce de bâtard.
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //Et n'imaginez même pas être servi ici à l'avenir.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_01"); //Alors quittez mon Ã©tablissement sur le champ, espÃ¨ce de bÃ¢tard.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_nein_07_02"); //Et n'imaginez mÃªme pas Ãªtre servi ici Ã  l'avenir.
 	Info_ClearChoices	(DIA_Addon_Bromor_LuciaGold);
 	Bromor_Hausverbot = TRUE;
 	Bromor_Pay = 0;
 };
 func void DIA_Addon_Bromor_LuciaGold_geben ()
 {
-	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //Marché conclu. Voici votre plat.
+	AI_Output			(other, self, "DIA_Addon_Bromor_LuciaGold_geben_15_00"); //MarchÃ© conclu. Voici votre plat.
 	B_GiveInvItems (other, self, ItMi_BromorsGeld_Addon,1);
-	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Merci. Allez voir Nadja. Elle vous accompagnera à l'étage.
+	AI_Output			(self, other, "DIA_Addon_Bromor_LuciaGold_geben_07_01"); //Merci. Allez voir Nadja. Elle vous accompagnera Ã  l'Ã©tage.
 	Bromor_Pay = 1; 
 	MIS_Bromor_LuciaStoleGold = LOG_SUCCESS;
 	Bromor_Hausverbot = FALSE;
@@ -237,7 +237,7 @@ instance DIA_Bromor_Pay		(C_INFO)
 	condition	 = 	DIA_Bromor_Pay_Condition;
 	information	 = 	DIA_Bromor_Pay_Info;
 	permanent	 = 	TRUE;
-	description	 = 	"Je veux m'amuser un peu (donner 50 pièces d'or).";
+	description	 = 	"Je veux m'amuser un peu (donner 50 piÃ¨ces d'or).";
 };
 
 func int DIA_Bromor_Pay_Condition ()
@@ -259,8 +259,8 @@ func void DIA_Bromor_Pay_Info ()
 	
 	if B_GiveInvItems (other, self, ItMi_Gold, 50)
 	{
-		AI_Output (self, other, "DIA_Bromor_Pay_07_01"); //Bien. (sourit) Préparez-vous à vivre des heures inoubliables.
-		AI_Output (self, other, "DIA_Bromor_Pay_07_02"); //Montez avec Nadja et amusez-vous bien !
+		AI_Output (self, other, "DIA_Bromor_Pay_07_01"); //Bien. (sourit) PrÃ©parez-vous Ã  vivre des heures inoubliables.
+		AI_Output (self, other, "DIA_Bromor_Pay_07_02"); //Montez avec Nadja et amusez-vous bienÂ !
 	
 		if (DIA_Bromor_Pay_OneTime == FALSE)
 		{
@@ -271,7 +271,7 @@ func void DIA_Bromor_Pay_Info ()
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Bromor_Pay_07_03"); //Je déteste qu'on se moque de moi. Si vous n'avez pas de quoi payer, fichez-moi le camp d'ici !
+		AI_Output (self, other, "DIA_Bromor_Pay_07_03"); //Je dÃ©teste qu'on se moque de moi. Si vous n'avez pas de quoi payer, fichez-moi le camp d'ici !
 	};
 	B_NpcClearObsessionByDMT (self);
 };
@@ -285,7 +285,7 @@ instance DIA_Bromor_DOPE		(C_INFO)
 	condition	 = 	DIA_Bromor_DOPE_Condition;
 	information	 = 	DIA_Bromor_DOPE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Puis-je avoir des marchandises 'spéciales' ?";
+	description	 = 	"Puis-je avoir des marchandises 'spÃ©ciales' ?";
 };
 
 func int DIA_Bromor_DOPE_Condition ()
@@ -299,8 +299,8 @@ func int DIA_Bromor_DOPE_Condition ()
 };
 func void DIA_Bromor_DOPE_Info ()
 {
-	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //Est-ce que je peux avoir quelque chose de 'spécial' ici ?
-	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //Toutes mes filles sont très spéciales. (sourit)
+	AI_Output (other, self, "DIA_Bromor_DOPE_15_00"); //Est-ce que je peux avoir quelque chose de 'spÃ©cial' iciÂ ?
+	AI_Output (self, other, "DIA_Bromor_DOPE_07_01"); //Toutes mes filles sont trÃ¨s spÃ©ciales. (sourit)
 	AI_Output (self, other, "DIA_Bromor_DOPE_07_02"); //Si vous avez de quoi payer, vous pouvez monter avec Nadja.
 };
 
@@ -345,7 +345,7 @@ instance DIA_Bromor_Heilung		(C_INFO)
 	information	 = 	DIA_Bromor_Heilung_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vous êtes possédé !";
+	description	 = 	"Vous Ãªtes possÃ©dÃ© !";
 };
 
 func int DIA_Bromor_Heilung_Condition ()
@@ -360,7 +360,7 @@ func int DIA_Bromor_Heilung_Condition ()
 func void DIA_Bromor_Heilung_Info ()
 {
 	AI_Output			(other, self, "DIA_Bromor_Heilung_15_00"); //Vous avez perdu la raison.
-	AI_Output			(self, other, "DIA_Bromor_Heilung_07_01"); //Quoi ? Qu'est-ce que vous me racontez là ? Fichez-moi le camp !
+	AI_Output			(self, other, "DIA_Bromor_Heilung_07_01"); //QuoiÂ ? Qu'est-ce que vous me racontez lÃ Â ? Fichez-moi le campÂ !
 	B_NpcClearObsessionByDMT (self);
 };
 
@@ -375,7 +375,7 @@ INSTANCE DIA_Bromor_PICKPOCKET (C_INFO)
 	condition	= DIA_Bromor_PICKPOCKET_Condition;
 	information	= DIA_Bromor_PICKPOCKET_Info;
 	permanent	= TRUE;
-	description = "(Ce serait risqué de lui voler sa clef)";
+	description = "(Ce serait risquÃ© de lui voler sa clef)";
 };                       
 
 FUNC INT DIA_Bromor_PICKPOCKET_Condition()

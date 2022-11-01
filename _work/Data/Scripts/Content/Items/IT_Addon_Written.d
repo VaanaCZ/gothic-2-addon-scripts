@@ -29,12 +29,12 @@ func void Use_Hinweis_02 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Bonjour ‡ tous,");
+					Doc_PrintLine	( nDocID,  0, "Bonjour √† tous,");
 					Doc_PrintLines	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Lou a disparu dans le marais, il a s˚rement ÈtÈ mangÈ par des requins des marais.");	
+					Doc_PrintLines	( nDocID,  0, "Lou a disparu dans le marais, il a s√ªrement √©t√© mang√© par des requins des marais.");	
 					Doc_PrintLines	( nDocID,  0, "Plus grave encore, la clef de la porte a disparu avec lui."					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Si vous la retrouvez, libre ‡ vous de garder les affaires de Lou.");	
+					Doc_PrintLines	( nDocID,  0, "Si vous la retrouvez, libre √† vous de garder les affaires de Lou.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Snaf");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -58,8 +58,8 @@ INSTANCE ITWr_Addon_Health_04		(C_Item)
 	scemeName			=	"MAP";
 	description			= 	"Energie vitale pure";
 	
-	TEXT[2]				=	"Pour prÈparer une puissante potion.";
-	TEXT[3]				=	"La maÓtrise des Èlixirs de soins est requise.";
+	TEXT[2]				=	"Pour pr√©parer une puissante potion.";
+	TEXT[3]				=	"La ma√Ætrise des √©lixirs de soins est requise.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -74,7 +74,7 @@ func void Use_Heilrezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Health_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"Pour crÈer une potion de soins, il me faut 1 núud de prairie et 3 essences mÈdicinales.");
+				B_LogEntry (TOPIC_TalentAlchemy,"Pour cr√©er une potion de soins, il me faut 1 n≈ìud de prairie et 3 essences m√©dicinales.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -85,13 +85,13 @@ func void Use_Heilrezept_04 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "CrÈation d'une potion de soins :");
+					Doc_PrintLines	( nDocID,  0, "Cr√©ation d'une potion de soins :");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Vous devez possÈder un núud de prairie et trois essences de soins.");	
-					Doc_PrintLines	( nDocID,  0, "MÈlangez et infusez-les conformÈment ‡ la recette des Èlixirs de soins.");	
+					Doc_PrintLines	( nDocID,  0, "Vous devez poss√©der un n≈ìud de prairie et trois essences de soins.");	
+					Doc_PrintLines	( nDocID,  0, "M√©langez et infusez-les conform√©ment √† la recette des √©lixirs de soins.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Cette potion peut uniquement Ítre crÈÈe par un alchimiste connaissant la recette des Èlixirs de soins.");	
+					Doc_PrintLines	( nDocID,  0, "Cette potion peut uniquement √™tre cr√©√©e par un alchimiste connaissant la recette des √©lixirs de soins.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -116,8 +116,8 @@ INSTANCE ITWr_Addon_Mana_04		(C_Item)
 
 	description			= 	"Mana pur";
 	
-	TEXT[2]				=	"Pour prÈparer une puissante potion.";
-	TEXT[3]				=	"La maÓtrise des Èlixirs de mana est requise.";
+	TEXT[2]				=	"Pour pr√©parer une puissante potion.";
+	TEXT[3]				=	"La ma√Ætrise des √©lixirs de mana est requise.";
 	
 	TEXT[5]			= NAME_Value;
 	COUNT[5]		= value;
@@ -132,7 +132,7 @@ func void Use_Manarezept_04 ()
 			{
 				PLAYER_TALENT_ALCHEMY[POTION_Mana_04] = TRUE;
 				Snd_Play ("LevelUP");
-				B_LogEntry (TOPIC_TalentAlchemy,"Pour crÈer une potion de mana, il me faut 1 núud de prairie et 3 essences de mana.");
+				B_LogEntry (TOPIC_TalentAlchemy,"Pour cr√©er une potion de mana, il me faut 1 n≈ìud de prairie et 3 essences de mana.");
 			};
 		};
 		nDocID = 	Doc_Create		()			  ;							// DocManager
@@ -143,13 +143,13 @@ func void Use_Manarezept_04 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "CrÈation d'une potion de mana :");
+					Doc_PrintLines	( nDocID,  0, "Cr√©ation d'une potion de mana :");
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Vous devez possÈder un núud de prairie et trois essences de soins.");	
-					Doc_PrintLines	( nDocID,  0, "MÈlangez et infusez-les conformÈment ‡ la recette des Èlixirs de mana.");	
+					Doc_PrintLines	( nDocID,  0, "Vous devez poss√©der un n≈ìud de prairie et trois essences de soins.");	
+					Doc_PrintLines	( nDocID,  0, "M√©langez et infusez-les conform√©ment √† la recette des √©lixirs de mana.");	
 					Doc_PrintLines	( nDocID,  0, ""					);
 					Doc_PrintLines	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Cette potion peut uniquement Ítre crÈÈe par un alchimiste connaissant la recette des Èlixirs de mana.");	
+					Doc_PrintLines	( nDocID,  0, "Cette potion peut uniquement √™tre cr√©√©e par un alchimiste connaissant la recette des √©lixirs de mana.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");	
@@ -172,7 +172,7 @@ INSTANCE ITWr_Addon_Hinweis_01		(C_Item)
 	on_state[0]			=   Use_Hinweis_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	TEXT[0]				=  "AccrochÈ sur une hutte dans les marais";
+	TEXT[0]				=  "Accroch√© sur une hutte dans les marais";
 };
 func void Use_Hinweis_01 ()
 {
@@ -186,9 +186,9 @@ func void Use_Hinweis_01 ()
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Bonjour ‡ tous,");
-					Doc_PrintLines	( nDocID,  0, "Le contenu des coffres est rÈservÈ aux cas d'urgences.");	
-					Doc_PrintLines	( nDocID,  0, "Et il est destinÈ ‡ TOUS. Alors ne vous servez dans les coffres que si vous en avez vraiment besoin.");	
+					Doc_PrintLine	( nDocID,  0, "Bonjour √† tous,");
+					Doc_PrintLines	( nDocID,  0, "Le contenu des coffres est r√©serv√© aux cas d'urgences.");	
+					Doc_PrintLines	( nDocID,  0, "Et il est destin√© √† TOUS. Alors ne vous servez dans les coffres que si vous en avez vraiment besoin.");	
 					Doc_PrintLines	( nDocID,  0, "Et prenez uniquement ce dont vous avez besoin."					);
 					Doc_PrintLines	( nDocID,  0, "Si tout le monde respecte ces consignes, tout se passera bien."					);
 					Doc_PrintLines	( nDocID,  0, "");	
@@ -214,7 +214,7 @@ INSTANCE ITWr_Addon_William_01		(C_Item)
 	on_state[0]			=   Use_William_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"William le pÍcheur portait ceci sur lui.";
+	Text[0]				=	"William le p√™cheur portait ceci sur lui.";
 };
 func void Use_William_01 ()
 {
@@ -230,10 +230,10 @@ func void Use_William_01 ()
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "William, ");
 					Doc_PrintLines	( nDocID,  0, "Lorsque la lune sera pleine, le garde sera distrait.");	
-					Doc_PrintLines	( nDocID,  0, "Profitez-en pour vous Èclipser - mais soyez prudent !");	
-					Doc_PrintLines	( nDocID,  0, "La route forestiËre vous mËnera hors des marais."					);
-					Doc_PrintLines	( nDocID,  0, "Le camp des pirates se trouve sur l'autre versant de la vallÈe, loin vers l'ouest."					);
-					Doc_PrintLines	( nDocID,  0, "De l‡, vous devriez facilement pouvoir vous enfuir en bateau.");	
+					Doc_PrintLines	( nDocID,  0, "Profitez-en pour vous √©clipser - mais soyez prudent !");	
+					Doc_PrintLines	( nDocID,  0, "La route foresti√®re vous m√®nera hors des marais."					);
+					Doc_PrintLines	( nDocID,  0, "Le camp des pirates se trouve sur l'autre versant de la vall√©e, loin vers l'ouest."					);
+					Doc_PrintLines	( nDocID,  0, "De l√†, vous devriez facilement pouvoir vous enfuir en bateau.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "Quelqu'un qui vous veut du bien");	
@@ -256,7 +256,7 @@ INSTANCE ITWr_Addon_MCELIXIER_01		(C_Item)
 	on_state[0]			=   Use_MCELIXIER_01;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Recette de l'Èlixir de l'aliÈnation mentale.";
+	Text[0]				= 	"Recette de l'√©lixir de l'ali√©nation mentale.";
 	Text[1]				= 	"Cette potion restaure les souvenirs perdus.";
 };
 func void Use_MCELIXIER_01 ()
@@ -271,13 +271,13 @@ func void Use_MCELIXIER_01 ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, ""					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Elixir de l'aliÈnation mentale");	
+					Doc_PrintLine	( nDocID,  0, "Elixir de l'ali√©nation mentale");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Les secrÈtions de deux dards de mouches sanguines sont requises pour crÈer cette potion.");	
+					Doc_PrintLines	( nDocID,  0, "Les secr√©tions de deux dards de mouches sanguines sont requises pour cr√©er cette potion.");	
 					Doc_PrintLines	( nDocID,  0, "Ajoutez-y un extrait de mana et une essence de soins.");	
-					Doc_PrintLines	( nDocID,  0, "Enfin, versez un sac de piments rouges forts dans la dÈcoction, et faites bouillir."					);
+					Doc_PrintLines	( nDocID,  0, "Enfin, versez un sac de piments rouges forts dans la d√©coction, et faites bouillir."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Seul un alchimiste expÈrimentÈ sachant extraire les secrÈtions des dards peut tenter de prÈparer cette potion.");	
+					Doc_PrintLines	( nDocID,  0, "Seul un alchimiste exp√©riment√© sachant extraire les secr√©tions des dards peut tenter de pr√©parer cette potion.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -287,7 +287,7 @@ func void Use_MCELIXIER_01 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Pirates_01		(C_Item)
 {
-	name 				=	"Billet maculÈ de graisse";
+	name 				=	"Billet macul√© de graisse";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -316,17 +316,17 @@ func void Use_Pirates_01 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Procurez-vous la derniËre livraison qui nous est destinÈe.");	
-					Doc_PrintLine	( nDocID,  0, "Ensuite, amenez-la ‡ votre grotte. Nous vous retrouverons l‡-bas.");	
+					Doc_PrintLines	( nDocID,  0, "Procurez-vous la derni√®re livraison qui nous est destin√©e.");	
+					Doc_PrintLine	( nDocID,  0, "Ensuite, amenez-la √† votre grotte. Nous vous retrouverons l√†-bas.");	
 					Doc_PrintLines	( nDocID,  0, "Je vous paierai le double de sa valeur en or."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Voil‡ comment nous ferons.");	
+					Doc_PrintLines	( nDocID,  0, "Voil√† comment nous ferons.");	
 					Doc_PrintLine	( nDocID,  0, "Tom");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
 //**********************************************************************************
-//	Rezept f¸r gr¸nene Novizen
+//	Rezept f√ºr gr√ºnene Novizen
 //**********************************************************************************
 INSTANCE ITWr_Addon_Joint_01		(C_Item)
 {
@@ -359,11 +359,11 @@ func void Use_Joint_Rezept_01 ()
 					Doc_PrintLine	( nDocID,  0, "Le novice vert"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "(...) Ces joints se roulent trËs facilement, mais ce que nous avions dans le camp des marais Ètait d'un tout autre calibre.");	
+					Doc_PrintLines	( nDocID,  0, "(...) Ces joints se roulent tr√®s facilement, mais ce que nous avions dans le camp des marais √©tait d'un tout autre calibre.");	
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Si j'utilise l'essence de deux plants d'herbe des marais et j'y ajoute un núud de prairie, j'obtiens un joint dont l'effet Ègale celui du novice vert."					);
+					Doc_PrintLines	( nDocID,  0, "Si j'utilise l'essence de deux plants d'herbe des marais et j'y ajoute un n≈ìud de prairie, j'obtiens un joint dont l'effet √©gale celui du novice vert."					);
 					Doc_PrintLine	( nDocID,  0, ""					);
-					Doc_PrintLines	( nDocID,  0, "Le novice vert agit efficacement contre toutes les douleurs, et Èclaircit l'esprit.");	
+					Doc_PrintLines	( nDocID,  0, "Le novice vert agit efficacement contre toutes les douleurs, et √©claircit l'esprit.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
@@ -403,16 +403,16 @@ func void UseLouRezept ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "Recette du Marteau de Lou"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "IngrÈdients pour distiller un Marteau : ");	
+					Doc_PrintLine	( nDocID,  0, "Ingr√©dients pour distiller un Marteau : ");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Prenez une bouteille d'eau, deux navets et une bonne portion d'herbe des marais.");	
-					Doc_PrintLines	( nDocID,  0, "Ajoutez-y les dents broyÈes d'un requin des marais."					);
+					Doc_PrintLines	( nDocID,  0, "Ajoutez-y les dents broy√©es d'un requin des marais."					);
 					Doc_PrintLines	( nDocID,  0, "Versez le tout dans une bouteille, et faites-le bouillir avec un trait de rhum."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "SantÈ !");	
+					Doc_PrintLine	( nDocID,  0, "Sant√© !");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Selon le vieil aveugle, mieux vaut Èviter de respirer les vapeurs !");	
+					Doc_PrintLines	( nDocID,  0, "Selon le vieil aveugle, mieux vaut √©viter de respirer les vapeurs !");	
 					Doc_Show		( nDocID );
 
 };
@@ -449,9 +449,9 @@ func void UseLouRezept2 ()
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "Marteau double de Lou"					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Prenez un bon vieux Marteau de Lou et distillez-le ‡ nouveau.");
+					Doc_PrintLines	( nDocID,  0, "Prenez un bon vieux Marteau de Lou et distillez-le √† nouveau.");
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Ce mÈlange doit uniquement Ítre crÈÈ par des br˚leurs expÈrimentÈs.");	
+					Doc_PrintLines	( nDocID,  0, "Ce m√©lange doit uniquement √™tre cr√©√© par des br√ªleurs exp√©riment√©s.");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLines	( nDocID,  0, "Si un profane s'y essaie, il se retrouvera non seulement aveugle, mais mort.");	
 					
@@ -464,7 +464,7 @@ func void UseLouRezept2 ()
 //**********************************************************************************
 INSTANCE ITWr_Addon_Piratentod		(C_Item)
 {
-	name 				=	"Hareng pressÈ";
+	name 				=	"Hareng press√©";
 
 	mainflag 			=	ITEM_KAT_DOCS;
 	flags 				=	ITEM_MISSION;
@@ -476,7 +476,7 @@ INSTANCE ITWr_Addon_Piratentod		(C_Item)
 	on_state[0]			=   UseRezeptPiratentod;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				=	"Recette pour prÈparer un Hareng pressÈ.";
+	Text[0]				=	"Recette pour pr√©parer un Hareng press√©.";
 };
 func void UseRezeptPiratentod ()
 {
@@ -490,16 +490,16 @@ func void UseRezeptPiratentod ()
 					Doc_SetPage 	( nDocID,  0, "letters.TGA"  , 0 		);
 					Doc_SetFont 	( nDocID,  0, FONT_BookHeadline  			); 	// -1 -> all pages
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
-					Doc_PrintLine	( nDocID,  0, "Hareng pressÈ (par moi)"					);
+					Doc_PrintLine	( nDocID,  0, "Hareng press√© (par moi)"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "Un petit en-cas pour les vrais hommes");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLines	( nDocID,  0, "Comme toujours, il vous faudra une bouteille d'eau. Versez-y une dose de rhum, et ajoutez-y du poisson frais.");	
-					Doc_PrintLines	( nDocID,  0, "DËs que le liquide vire au jaune, retirez-en le poisson et ajoutez-y une poignÈe"					);
-					Doc_PrintLines	( nDocID,  0, "d'herbe faucheuse fraÓchement cueillie, pour le go˚t."					);
+					Doc_PrintLines	( nDocID,  0, "D√®s que le liquide vire au jaune, retirez-en le poisson et ajoutez-y une poign√©e"					);
+					Doc_PrintLines	( nDocID,  0, "d'herbe faucheuse fra√Æchement cueillie, pour le go√ªt."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLines	( nDocID,  0, "Attention. Ce truc est plutÙt puissant.");	
+					Doc_PrintLines	( nDocID,  0, "Attention. Ce truc est plut√¥t puissant.");	
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_Show		( nDocID );
 
@@ -541,7 +541,7 @@ INSTANCE ItWr_Addon_AxtAnleitung (C_ITEM)
 	on_state[0]			=   UseAxtAnleitung;
 	scemeName			=	"MAP";
 	description			= 	name;
-	Text[0]				= 	"Pour crÈer une hache de bandit lÈgËre et fine";
+	Text[0]				= 	"Pour cr√©er une hache de bandit l√©g√®re et fine";
 };
 func void UseAxtAnleitung ()
 {
@@ -558,16 +558,16 @@ func void UseAxtAnleitung ()
 					Doc_SetMargins	( nDocID, -1, 50, 50, 50, 50, 1   		);  //  0 -> margins are in pixels
 					Doc_PrintLine	( nDocID,  0, "La hache de bandit"					);
 					Doc_SetFont 	( nDocID,  0, FONT_Book		); 	// -1 -> all pages
-					Doc_PrintLine	( nDocID,  0, "Une hache ‡ une main");	
+					Doc_PrintLine	( nDocID,  0, "Une hache √† une main");	
 					Doc_PrintLine	( nDocID,  0, "");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLines	( nDocID,  0, "Toute personne maÓtrisant les rudiments du mÈtier de forgeron peut fabriquer une hache spÈciale.");	
-					Doc_PrintLines	( nDocID,  0, "Vous devez disposer de deux piËces de fer brut chaud."					);
-					Doc_PrintLines	( nDocID,  0, "Un bloc de minerai et trois dents de loups, de saurinide ou de crÈatures semblables."					);
+					Doc_PrintLines	( nDocID,  0, "Toute personne ma√Ætrisant les rudiments du m√©tier de forgeron peut fabriquer une hache sp√©ciale.");	
+					Doc_PrintLines	( nDocID,  0, "Vous devez disposer de deux pi√®ces de fer brut chaud."					);
+					Doc_PrintLines	( nDocID,  0, "Un bloc de minerai et trois dents de loups, de saurinide ou de cr√©atures semblables."					);
 					Doc_PrintLine	( nDocID,  0, "");	
-					Doc_PrintLine	( nDocID,  0, "Pilez le minerai et les dents, et mÈlangez la poudre au fer sur une enclume.");	
+					Doc_PrintLine	( nDocID,  0, "Pilez le minerai et les dents, et m√©langez la poudre au fer sur une enclume.");	
 					Doc_PrintLine	( nDocID,  0, "");
-					Doc_PrintLine	( nDocID,  0, "Une hache comme celle-ci est trËs facile ‡ manier, et inflige d'importants dÈg‚ts.");
+					Doc_PrintLine	( nDocID,  0, "Une hache comme celle-ci est tr√®s facile √† manier, et inflige d'importants d√©g√¢ts.");
 					Doc_PrintLines	( nDocID,  0, "");	
 					Doc_Show		( nDocID );
 };
@@ -621,7 +621,7 @@ func void UseSummonAncientGhost ()
 
 instance ItWr_Map_AddonWorld (C_Item)
 {
-	name 		= "La vallÈe des b‚tisseurs.";  
+	name 		= "La vall√©e des b√¢tisseurs.";  
 
 	mainflag 	= ITEM_KAT_DOCS;
 	flags 		= ITEM_MISSION|ITEM_MULTI;

@@ -72,32 +72,32 @@ func void DIA_AmbientDementor_Info ()
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino3))
 		||	(Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DMT_Vino4)))
 		{	
-			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Etes-vous ici pour perturber le rituel ? Son âme nous appartient. Vous ne pouvez le sauver, magicien.
+			AI_Output			(self ,other, "DIA_VinoDementor_19_00"); //Etes-vous ici pour perturber le rituel ? Son Ã¢me nous appartient. Vous ne pouvez le sauver, magicien.
 		}
 	else if (CurrentLevel == DRAGONISLAND_ZEN)
 		{
 			if (Hlp_GetInstanceID(self) == Hlp_GetInstanceID(DragonIsle_Keymaster))
 				{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(rires) Vous êtes ici pour vous opposer à moi ainsi qu'à tout ce que j'ai accompli ? Vous êtes certain d'échouer.
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Personne n'a jamais réussi à franchir ma crypte. Faites demi-tour, car vous non plus vous n'atteindrez jamais les Halls sacrés d'Irdorath.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_01"); //(rires) Vous Ãªtes ici pour vous opposer Ã  moi ainsi qu'Ã  tout ce que j'ai accompli ? Vous Ãªtes certain d'Ã©chouer.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_02"); //Personne n'a jamais rÃ©ussi Ã  franchir ma crypte. Faites demi-tour, car vous non plus vous n'atteindrez jamais les Halls sacrÃ©s d'Irdorath.
 				}
 				else
 				{	
 				 	if (randy == 0)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //Vous êtes déjà allé trop loin, ver de terre. Vous n'atteindrez jamais notre sanctuaire intérieur.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_03"); //Vous Ãªtes dÃ©jÃ  allÃ© trop loin, ver de terre. Vous n'atteindrez jamais notre sanctuaire intÃ©rieur.
 					};
 					if (randy == 1)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //Restez où vous êtes. Pas un pas de plus !
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_04"); //Restez oÃ¹ vous Ãªtes. Pas un pas de plus !
 					};
 					if (randy == 2)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Vous êtes venu jusqu'ici mais vous n'irez pas plus loin.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_05"); //Vous Ãªtes venu jusqu'ici mais vous n'irez pas plus loin.
 					};
 					if (randy == 3)
 					{
-						AI_Output			(self ,other, "DIA_AmbientDementor_19_06"); //Vous êtes venu défier le Maître, mais vous devez d'abord me vaincre.
+						AI_Output			(self ,other, "DIA_AmbientDementor_19_06"); //Vous Ãªtes venu dÃ©fier le MaÃ®tre, mais vous devez d'abord me vaincre.
 					};
 				};	
 		}
@@ -105,7 +105,7 @@ func void DIA_AmbientDementor_Info ()
 		{
 		 	if (randy == 0)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Ridicule petit mage, jamais vous ne pourrez vous mesurer au pouvoir du Maître.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_07"); //Ridicule petit mage, jamais vous ne pourrez vous mesurer au pouvoir du MaÃ®tre.
 			};
 			if (randy == 1)
 			{
@@ -113,11 +113,11 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //Même en tant que magicien vous ne pourrez nous arrêter.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_09"); //MÃªme en tant que magicien vous ne pourrez nous arrÃªter.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mon maître vous détruira. Votre pathétique magie de pacotille ne peut vous sauver.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_10"); //Mon maÃ®tre vous dÃ©truira. Votre pathÃ©tique magie de pacotille ne peut vous sauver.
 			};
 		}
 	else
@@ -128,15 +128,15 @@ func void DIA_AmbientDementor_Info ()
 			};
 			if (randy == 1)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Vous allez ressentir le pouvoir du Maître. Vous ne pouvez y échapper.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_12"); //Vous allez ressentir le pouvoir du MaÃ®tre. Vous ne pouvez y Ã©chapper.
 			};
 			if (randy == 2)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Le Maître veut votre tête. Désormais plus personne ne peut vous sauver.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_13"); //Le MaÃ®tre veut votre tÃªte. DÃ©sormais plus personne ne peut vous sauver.
 			};
 			if (randy == 3)
 			{
-				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Vous êtes tombé dans notre piège et nous allons vous détruire.
+				AI_Output			(self ,other, "DIA_AmbientDementor_19_14"); //Vous Ãªtes tombÃ© dans notre piÃ¨ge et nous allons vous dÃ©truire.
 			};
 		};
 };

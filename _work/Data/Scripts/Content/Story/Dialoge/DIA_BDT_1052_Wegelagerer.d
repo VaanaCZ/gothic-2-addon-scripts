@@ -31,7 +31,7 @@ INSTANCE DIA_1052_Wegelagerer_Hello   (C_INFO)
 	condition   = DIA_1052_Wegelagerer_Hello_Condition;
 	information = DIA_1052_Wegelagerer_Hello_Info;
 	permanent   = FALSE;
-	description = "Qui êtes-vous ?";
+	description = "Qui Ãªtes-vous ?";
 };
 
 FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
@@ -47,10 +47,10 @@ FUNC INT DIA_1052_Wegelagerer_Hello_Condition()
 
 FUNC VOID DIA_1052_Wegelagerer_Hello_Info()
 {
-	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Qui êtes-vous ?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //C'est quoi ça ? Un interrogatoire ?
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Je n'ai rien à vous dire mais vous voulez peut-être parler à mon copain.
-	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Mais faites attention, il n'aime pas les étrangers.
+	AI_Output (other,self ,"DIA_1052_Wegelagerer_Hello_15_00"); //Qui Ãªtes-vous ?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_01"); //C'est quoi Ã§a ? Un interrogatoire ?
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_02"); //Je n'ai rien Ã  vous dire mais vous voulez peut-Ãªtre parler Ã  mon copain.
+	AI_Output (self ,other,"DIA_1052_Wegelagerer_Hello_06_03"); //Mais faites attention, il n'aime pas les Ã©trangers.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -77,7 +77,7 @@ func int DIA_Wegelagerer_ANGRIFF2_Condition ()
 
 func void DIA_Wegelagerer_ANGRIFF2_Info ()
 {
-	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //D'accord, mon pote, vous l'avez cherché.
+	AI_Output			(self, other, "DIA_Wegelagerer_ANGRIFF2_06_00"); //D'accord, mon pote, vous l'avez cherchÃ©.
 	AI_StopProcessInfos (self);
 	Npc_SetRefuseTalk (self,40);
 

@@ -1,5 +1,5 @@
 //-------------------------------------------------------------------------------------
-//				Weitere Buchständer in der Magierbibliothek
+//				Weitere BuchstÃ¤nder in der Magierbibliothek
 //-------------------------------------------------------------------------------------
 //				Runensteine 
 //-------------------------------------------------------------------------------------
@@ -58,7 +58,7 @@ FUNC VOID Use_Bookstand_Rune_02_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, "Page 1"					);
-					Doc_PrintLine	( nDocID,  0, "Les runes et leurs ingrédients"	);
+					Doc_PrintLine	( nDocID,  0, "Les runes et leurs ingrÃ©dients"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");
@@ -168,15 +168,15 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  0, "PREMIER CERCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Les runes du 1er Cercle et les ingrédients requis pour les créer.");
+					Doc_PrintLines	( nDocID,  0, "Les runes du 1er Cercle et les ingrÃ©dients requis pour les crÃ©er.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Lumière");
-					Doc_PrintLine	( nDocID,  0, "Pièce d'or");
+					Doc_PrintLine	( nDocID,  0, "LumiÃ¨re");
+					Doc_PrintLine	( nDocID,  0, "PiÃ¨ce d'or");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Flèche de feu");
+					Doc_PrintLine	( nDocID,  0, "FlÃ¨che de feu");
 					Doc_PrintLine	( nDocID,  0, "Souffre");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -188,19 +188,19 @@ FUNC VOID Use_Bookstand_Kreise_01_S1()
 					Doc_PrintLine	( nDocID,  0, "Os de gobelin");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Soins légers.");
-					Doc_PrintLine	( nDocID,  0, "Plante médicinale");
+					Doc_PrintLine	( nDocID,  0, "Soins lÃ©gers.");
+					Doc_PrintLine	( nDocID,  0, "Plante mÃ©dicinale");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 	};
 };
@@ -226,7 +226,7 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  0, "SECOND CERCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
-					Doc_PrintLines	( nDocID,  0, "Les runes du 2ème Cercle et les ingrédients requis pour les créer.");
+					Doc_PrintLines	( nDocID,  0, "Les runes du 2Ã¨me Cercle et les ingrÃ©dients requis pour les crÃ©er.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -235,7 +235,7 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Flèche de glace");
+					Doc_PrintLine	( nDocID,  0, "FlÃ¨che de glace");
 					Doc_PrintLine	( nDocID,  0, "Quartz");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -256,11 +256,11 @@ FUNC VOID Use_Bookstand_Kreise_02_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 	
 	};
@@ -287,20 +287,20 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "TROISIEME CERCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Les runes du 3ème Cercle et les ingrédients requis pour les créer.");
+					Doc_PrintLines	( nDocID,  0, "Les runes du 3Ã¨me Cercle et les ingrÃ©dients requis pour les crÃ©er.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
 					
 					Doc_PrintLine	( nDocID,  0, "Soins importants.");
-					Doc_PrintLine	( nDocID,  0, "Herbe médicinale");
+					Doc_PrintLine	( nDocID,  0, "Herbe mÃ©dicinale");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Tempête de feu mineure");
+					Doc_PrintLine	( nDocID,  0, "TempÃªte de feu mineure");
 					Doc_PrintLine	( nDocID,  0, "Eclat, Soufre");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Création de squelette");
+					Doc_PrintLine	( nDocID,  0, "CrÃ©ation de squelette");
 					Doc_PrintLine	( nDocID,  0, "Os de squelette");
 					Doc_PrintLine	( nDocID,  0, "");
 					
@@ -313,7 +313,7 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "Aigue-marine");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Sphère d'éclairs");
+					Doc_PrintLine	( nDocID,  0, "SphÃ¨re d'Ã©clairs");
 					Doc_PrintLine	( nDocID,  0, "Cristal de roche");
 					Doc_PrintLine	( nDocID,  0, "Souffre");
 					Doc_PrintLine	( nDocID,  0, "");
@@ -325,11 +325,11 @@ FUNC VOID Use_Bookstand_Kreise_03_S1()
 					Doc_PrintLine	( nDocID,  0, "");
 					Doc_PrintLine	( nDocID,  0, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -356,7 +356,7 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  0, "LE QUATRIEME CERCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Les runes du 4ème Cercle et les ingrédients requis pour les créer.");
+					Doc_PrintLines	( nDocID,  0, "Les runes du 4Ã¨me Cercle et les ingrÃ©dients requis pour les crÃ©er.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -371,11 +371,11 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					Doc_PrintLine	( nDocID,  0, "");				
 					
 					Doc_PrintLine	( nDocID,  0, "Eveil du golem");
-					Doc_PrintLine	( nDocID,  0, "Cœur d'un golem de pierre");
+					Doc_PrintLine	( nDocID,  0, "CÅ“ur d'un golem de pierre");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Destruction de morts-vivants");
-					Doc_PrintLine	( nDocID,  0, "Eau bénite");
+					Doc_PrintLine	( nDocID,  0, "Eau bÃ©nite");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -386,17 +386,17 @@ FUNC VOID Use_Bookstand_Kreise_04_S1()
 					
 					
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 		
 	};
 };  					
 //-------------------------------------------------------------------------------------
-//				Runen des fünften Kreises und ihre Ingredenzien
+//				Runen des fÃ¼nften Kreises und ihre Ingredenzien
 //-------------------------------------------------------------------------------------
 FUNC VOID Use_Bookstand_Kreise_05_S1()		
 {
@@ -417,38 +417,38 @@ FUNC VOID Use_Bookstand_Kreise_05_S1()
 					Doc_PrintLine	( nDocID,  0, "LE CINQUIEME CERCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Les runes du 5ème Cercle et les ingrédients requis pour les créer.");
+					Doc_PrintLines	( nDocID,  0, "Les runes du 5Ã¨me Cercle et les ingrÃ©dients requis pour les crÃ©er.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLine	( nDocID,  0, "Déferlante de glace");
+					Doc_PrintLine	( nDocID,  0, "DÃ©ferlante de glace");
 					Doc_PrintLine	( nDocID,  0, "Quartz");
 					Doc_PrintLine	( nDocID,  0, "Aigue-marine");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
-					Doc_PrintLine	( nDocID,  0, "Tempête de feu");
+					Doc_PrintLine	( nDocID,  0, "TempÃªte de feu");
 					Doc_PrintLine	( nDocID,  0, "Souffre");
 					Doc_PrintLine	( nDocID,  0, "Langue de feu");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Convocation de démon");
-					Doc_PrintLine	( nDocID,  0, "Cœur d'un démon");
+					Doc_PrintLine	( nDocID,  0, "Convocation de dÃ©mon");
+					Doc_PrintLine	( nDocID,  0, "CÅ“ur d'un dÃ©mon");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_PrintLine	( nDocID,  0, "Soins critiques");
-					Doc_PrintLine	( nDocID,  0, "Racine médicinale");
+					Doc_PrintLine	( nDocID,  0, "Racine mÃ©dicinale");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					Doc_SetMargins	( nDocID, -1, 30, 20, 275, 20, 1   		);
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -475,7 +475,7 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "LE SIXIEME CERCLE"					);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
-					Doc_PrintLines	( nDocID,  0, "Les runes du 6ème Cercle et les ingrédients requis pour les créer.");
+					Doc_PrintLines	( nDocID,  0, "Les runes du 6Ã¨me Cercle et les ingrÃ©dients requis pour les crÃ©er.");
 					Doc_PrintLine	( nDocID,  0, ""	);
 					Doc_PrintLine	( nDocID,  0, ""	);
 					
@@ -495,11 +495,11 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  0, "Perle noire");
 					Doc_PrintLine	( nDocID,  0, "");
 					
-					Doc_PrintLine	( nDocID,  0, "Armée des ténèbres");
+					Doc_PrintLine	( nDocID,  0, "ArmÃ©e des tÃ©nÃ¨bres");
 					Doc_PrintLine	( nDocID,  0, "Os de squelette");
 					Doc_PrintLine	( nDocID,  0, "Perle noire");
-					Doc_PrintLine	( nDocID,  0, "Cœur d'un golem de pierre");
-					Doc_PrintLine	( nDocID,  0,  "Cœur d'un démon");
+					Doc_PrintLine	( nDocID,  0, "CÅ“ur d'un golem de pierre");
+					Doc_PrintLine	( nDocID,  0,  "CÅ“ur d'un dÃ©mon");
 					Doc_PrintLine	( nDocID,  0, "");
 					
 					
@@ -509,17 +509,17 @@ FUNC VOID Use_Bookstand_Kreise_06_S1()
 					Doc_PrintLine	( nDocID,  1, ""					);
 					Doc_PrintLine	( nDocID,  1, ""					);
 			
-					Doc_PrintLine	( nDocID,  1, "Réduction de monstre");
+					Doc_PrintLine	( nDocID,  1, "RÃ©duction de monstre");
 					Doc_PrintLine	( nDocID,  1, "Os de gobelin");
-					Doc_PrintLine	( nDocID,  1, "Défense de troll");
+					Doc_PrintLine	( nDocID,  1, "DÃ©fense de troll");
 					Doc_PrintLine	( nDocID,  1, "");
 					Doc_PrintLine	( nDocID,  1, "");
 			
-					Doc_PrintLines	( nDocID,  1, "Pour créer une rune, il faut UN des ingrédients indiqués."					);
+					Doc_PrintLines	( nDocID,  1, "Pour crÃ©er une rune, il faut UN des ingrÃ©dients indiquÃ©s."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaître la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort désiré."					);
+					Doc_PrintLines	( nDocID,  1, "L'utilisateur doit connaÃ®tre la formule du sort et doit avoir une pierre runique vierge et le parchemin du sort dÃ©sirÃ©."					);
 					Doc_PrintLine	( nDocID,  1, ""					);
-					Doc_PrintLines	( nDocID,  1, "Quand ces éléments sont réunis il peut travailler à la table runique."					);
+					Doc_PrintLines	( nDocID,  1, "Quand ces Ã©lÃ©ments sont rÃ©unis il peut travailler Ã  la table runique."					);
 					Doc_Show		( nDocID );
 		
 	};
@@ -544,7 +544,7 @@ FUNC VOID Use_Bookstand_Rules_01_S1()
 					Doc_SetMargins	( nDocID,  0,  275, 20, 30, 20, 1   		);  	
 
 					Doc_PrintLine	( nDocID,  0, "Page 1"					);
-					Doc_PrintLine	( nDocID,  0, "Règles"	);
+					Doc_PrintLine	( nDocID,  0, "RÃ¨gles"	);
 					Doc_PrintLine	( nDocID,  0, ""					);
 					
 					Doc_PrintLines	( nDocID,  0, "");

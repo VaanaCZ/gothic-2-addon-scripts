@@ -38,7 +38,7 @@ FUNC INT DIA_Addon_TAL_BDT_13_Hi_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Hi_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Comment ça va ?
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Hi_15_00");//Comment Ã§a va ?
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_01");//Soit vous vous ferez bouffer par une bestiole, soit vous vous ferez bouffer par une bestiole.
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Hi_13_02");//Ce marais sera notre tombeau...
 };
@@ -51,7 +51,7 @@ instance DIA_Addon_TAL_BDT_13_Tal(C_INFO)
 	condition	= DIA_Addon_TAL_BDT_13_Tal_Condition;
 	information	= DIA_Addon_TAL_BDT_13_Tal_Info;
 	permanent	= TRUE;
-	description = "Que savez-vous au sujet de cette vallée ?";
+	description = "Que savez-vous au sujet de cette vallÃ©e ?";
 };                       
 
 FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
@@ -61,8 +61,8 @@ FUNC INT DIA_Addon_TAL_BDT_13_Tal_Condition()
 
 FUNC VOID DIA_Addon_TAL_BDT_13_Tal_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Que savez-vous de cette vallée ?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//La terre regorge de tout un tas de vieux objets, dans ce coin. Raven nous a ordonné de tout ramasser.
+	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_Tal_15_00");//Que savez-vous de cette vallÃ©e ?
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_01");//La terre regorge de tout un tas de vieux objets, dans ce coin. Raven nous a ordonnÃ© de tout ramasser.
 	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_Tal_13_02");//Je ne sais pas ce qu'il a l'intention d'en faire, mais aucune personne saine de corps et d'esprit ne risquerait sa vie pour quelques vieux cailloux...
 };
 // *************************************************************************
@@ -85,8 +85,8 @@ FUNC INT DIA_Addon_TAL_BDT_13_News_Condition()
 FUNC VOID DIA_Addon_TAL_BDT_13_News_Info()
 {	
 	AI_Output (other, self, "DIA_Addon_TAL_BDT_13_News_15_00");//Du nouveau ?
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//On les a vraiment arnaqués, ces crétins de pirates...
-	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Ils nous ont fourni des prisonniers et n'ont jamais reçu la moindre pièce en échange. Pas étonnant qu'ils soient furieux...
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_01");//On les a vraiment arnaquÃ©s, ces crÃ©tins de pirates...
+	AI_Output (self, other, "DIA_Addon_TAL_BDT_13_News_13_02");//Ils nous ont fourni des prisonniers et n'ont jamais reÃ§u la moindre piÃ¨ce en Ã©change. Pas Ã©tonnant qu'ils soient furieux...
 	
 	if (BDT_13_einmal == FALSE)
 	{

@@ -47,11 +47,11 @@ func int DIA_Engrom_HALLO_Condition ()
 
 func void DIA_Engrom_HALLO_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_HALLO_15_00"); //Comment ça se passe ?
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_01"); //Mal !
+	AI_Output			(other, self, "DIA_Engrom_HALLO_15_00"); //Comment Ã§a se passe ?
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_01"); //MalÂ !
 	AI_Output			(other, self, "DIA_Engrom_HALLO_15_02"); //Hmm...
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_03"); //Que voulez-vous que je vous dise d'autre ? Ça fait plusieurs jours que je ne fais que descendre et remonter cette fichue rivière !
-	AI_Output			(self, other, "DIA_Engrom_HALLO_12_04"); //Les orques à gauches, les brigands à droite, et rien d'autre à manger que de la viande de guetteur ! Je n'en peux vraiment plus !
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_03"); //Que voulez-vous que je vous dise d'autreÂ ? Ã‡a fait plusieurs jours que je ne fais que descendre et remonter cette fichue riviÃ¨reÂ !
+	AI_Output			(self, other, "DIA_Engrom_HALLO_12_04"); //Les orques Ã  gauches, les brigands Ã  droite, et rien d'autre Ã  manger que de la viande de guetteur ! Je n'en peux vraiment plusÂ !
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -64,7 +64,7 @@ instance DIA_Engrom_WhatAboutLeaving		(C_INFO)
 	condition	 = 	DIA_Engrom_WhatAboutLeaving_Condition;
 	information	 = 	DIA_Engrom_WhatAboutLeaving_Info;
 
-	description	 = 	"N'avez-vous jamais envisagé de partir d'ici ?";
+	description	 = 	"N'avez-vous jamais envisagÃ© de partir d'ici ?";
 };
 
 func int DIA_Engrom_WhatAboutLeaving_Condition ()
@@ -78,14 +78,14 @@ func int DIA_Engrom_WhatAboutLeaving_Condition ()
 
 func void DIA_Engrom_WhatAboutLeaving_Info ()
 {
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_00"); //Vous avez déjà pensé à partir d'ici ?
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_01"); //Ben voyons. Aucun problème...
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_02"); //Pour commencer, je me fraye un passage au milieu de toutes ces hordes d'orques, puis je fais un petit coucou à tous les autres monstres qui rôdent dans le coin, et je termine en franchissant le col en sifflotant.
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_03"); //Pas mal, hein ?
-	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_04"); //Je suis bien arrivé jusqu'ici moi.
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_00"); //Vous avez dÃ©jÃ  pensÃ© Ã  partir d'iciÂ ?
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_01"); //Ben voyons. Aucun problÃ¨me...
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_02"); //Pour commencer, je me fraye un passage au milieu de toutes ces hordes d'orques, puis je fais un petit coucou Ã  tous les autres monstres qui rÃ´dent dans le coin, et je termine en franchissant le col en sifflotant.
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_03"); //Pas mal, heinÂ ?
+	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_04"); //Je suis bien arrivÃ© jusqu'ici moi.
 	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_05"); //Vous voulez dire que vous avez franchi le col ?
 	AI_Output			(other, self, "DIA_Engrom_WhatAboutLeaving_15_06"); //Plus ou moins, oui.
-	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_07"); //Alors, vous avez eu beaucoup de chance. Mais moi, hors de question que je bouge de là tant que c'est autant la pagaille.
+	AI_Output			(self, other, "DIA_Engrom_WhatAboutLeaving_12_07"); //Alors, vous avez eu beaucoup de chance. Mais moi, hors de question que je bouge de lÃ  tant que c'est autant la pagaille.
 
 };
 
@@ -116,7 +116,7 @@ func void DIA_Engrom_Jagd_Info ()
 {
 	B_WasMachtJagd ();
 	//Joly:AI_Output			(other, self, "DIA_Engrom_Jagd_15_00"); //Schon mal dran gedacht, hier abzuhauen?
-	AI_Output			(self, other, "DIA_Engrom_Jagd_12_01"); //La chasse est ma seule consolation, mais j'aimerais bien trouver un de ces jours un autre gibier que ces saletés de guetteurs.
+	AI_Output			(self, other, "DIA_Engrom_Jagd_12_01"); //La chasse est ma seule consolation, mais j'aimerais bien trouver un de ces jours un autre gibier que ces saletÃ©s de guetteurs.
 };
 
 //#####################################################################
@@ -227,7 +227,7 @@ instance DIA_Engrom_BESSEN		(C_INFO)
 	information	 = 	DIA_Engrom_BESSEN_Info;
 	permanent	 = 	TRUE;
 
-	description	 = 	"Vous êtes possédé par le Mal.";
+	description	 = 	"Vous Ãªtes possÃ©dÃ© par le Mal.";
 };
 
 func int DIA_Engrom_BESSEN_Condition ()
@@ -245,13 +245,13 @@ func void DIA_Engrom_BESSEN_Info ()
 	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_00"); //Le mal a pris possession de vous.
 
 	AI_Output			(other, self, "DIA_Engrom_BESSEN_15_01"); //Laissez-moi vous aider...
-	AI_Output			(self, other, "DIA_Engrom_BESSEN_12_02"); //(hurle) Ne me touchez pas !
+	AI_Output			(self, other, "DIA_Engrom_BESSEN_12_02"); //(hurle) Ne me touchez pasÂ !
 
 	B_NpcClearObsessionByDMT (self);
 		
 	Npc_SetTarget 		(self, other);
 	
-	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (böse) Flag nicht zurückgesetzt wird 
+	self.aivar[AIV_INVINCIBLE] = FALSE; //HACK, weil durch AI_StartState (bÃ¶se) Flag nicht zurÃ¼ckgesetzt wird 
 	other.aivar[AIV_INVINCIBLE] = FALSE;
 			
 	AI_StartState 		(self, ZS_Flee, 0, "");	

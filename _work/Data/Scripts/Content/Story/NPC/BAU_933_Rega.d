@@ -3,7 +3,7 @@
 instance BAU_933_Rega  (Npc_Default)
 {
 	// ------ NSC ------
-	name 		= "Réga";
+	name 		= "RÃ©ga";
 	guild 		= GIL_OUT;
 	id 			= 933;
 	voice 		= 17;
@@ -31,8 +31,8 @@ instance BAU_933_Rega  (Npc_Default)
 	// ------ NSC-relevante Talente vergeben ------
 	B_GiveNpcTalents (self);
 	
-	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhängig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
-	B_SetFightSkills (self, 15); //Grenzen für Talent-Level liegen bei 30 und 60
+	// ------ Kampf-Talente ------																		//Der enthaltene B_AddFightSkill setzt Talent-Ani abhÃ¤ngig von TrefferChance% - alle Kampftalente werden gleichhoch gesetzt
+	B_SetFightSkills (self, 15); //Grenzen fÃ¼r Talent-Level liegen bei 30 und 60
 	
 	// ------ TA anmelden ------
 	daily_routine 		= Rtn_Start_933;

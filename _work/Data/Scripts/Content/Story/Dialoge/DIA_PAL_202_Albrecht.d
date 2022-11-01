@@ -44,7 +44,7 @@ func void DIA_Albrecht_Hagen_Info ()
 {
 	AI_Output (other, self, "DIA_Albrecht_Hagen_15_00"); //Il faut que je parle au seigneur Hagen.
 	AI_Output (self, other, "DIA_Albrecht_Hagen_03_01"); //Il se trouve dans la grande salle. Continuez tout droit.
-	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Quoi que vous lui vouliez, soyez bref, car il est très pris.
+	AI_Output (self, other, "DIA_Albrecht_Hagen_03_02"); //Quoi que vous lui vouliez, soyez bref, car il est trÃ¨s pris.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info Hallo
@@ -56,7 +56,7 @@ instance DIA_Albrecht_Hallo		(C_INFO)
 	condition	 = 	DIA_Albrecht_Hallo_Condition;
 	information	 = 	DIA_Albrecht_Hallo_Info;
 	permanent    =  FALSE;
-	description	 =  "Qu'est-ce que cela implique d'être paladin ?";
+	description	 =  "Qu'est-ce que cela implique d'Ãªtre paladin ?";
 };
 
 func int DIA_Albrecht_Hallo_Condition ()
@@ -65,9 +65,9 @@ func int DIA_Albrecht_Hallo_Condition ()
 };
 func void DIA_Albrecht_Hallo_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //Que signifie être paladin ?
+	AI_Output (other, self, "DIA_Albrecht_Hallo_15_00"); //Que signifie Ãªtre paladinÂ ?
 	AI_Output (self, other, "DIA_Albrecht_Hallo_03_01"); //Un paladin est un guerrier d'Innos. Il ne vit que pour servir notre dieu et se bat en son honneur.
-	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //En échange, il reçoit le don de magie runique. Elle lui est accordée en reconnaissance de ses actes.
+	AI_Output (self, other, "DIA_Albrecht_Hallo_03_02"); //En Ã©change, il reÃ§oit le don de magie runique. Elle lui est accordÃ©e en reconnaissance de ses actes.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info CanTeach
@@ -96,13 +96,13 @@ func void DIA_Albrecht_CanTeach_Info ()
 	if (other.guild == GIL_PAL)
 	{
 		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_01"); //Si vous vous en montrez digne, je vous donnerai le pouvoir d'utiliser les runes magiques des paladins.
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //Sinon, je peux vous apprendre à augmenter votre puissance magique.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_02"); //Sinon, je peux vous apprendre Ã  augmenter votre puissance magique.
 		Albrecht_TeachMANA = TRUE;
-		B_LogEntry (TOPIC_CityTeacher,"Le paladin Albrecht peut m'aider à augmenter mon pouvoir magique.");
+		B_LogEntry (TOPIC_CityTeacher,"Le paladin Albrecht peut m'aider Ã  augmenter mon pouvoir magique.");
 	}
 	else
 	{	
-		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_03"); //Mais mon enseignement est réservé aux paladins.
+		AI_Output (self, other, "DIA_Albrecht_CanTeach_03_03"); //Mais mon enseignement est rÃ©servÃ© aux paladins.
 	};
 };
 
@@ -127,14 +127,14 @@ func int DIA_Albrecht_TEACHPalRunes_Condition ()
 };
 func void DIA_Albrecht_TEACHPalRunes_Info ()
 {
-	AI_Output (other, self, "DIA_Albrecht_TEACHPalRunes_15_00"); //Suis-je digne de recevoir une rune ?
+	AI_Output (other, self, "DIA_Albrecht_TEACHPalRunes_15_00"); //Suis-je digne de recevoir une runeÂ ?
 	
 	if (PLAYER_TALENT_RUNES [SPL_PalLight] == FALSE)
 	{
 		
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Comme insigne de votre rang, je vous attribue la Rune de lumière, symbole de vérité et de justice.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_01"); //Comme insigne de votre rang, je vous attribue la Rune de lumiÃ¨re, symbole de vÃ©ritÃ© et de justice.
 		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_02"); //Eclairez les pas de tous ceux qui suivent la voie d'Innos.
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //Vous devez mériter les autres runes. Revenez me voir quand vous vous en sentirez digne.
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_03"); //Vous devez mÃ©riter les autres runes. Revenez me voir quand vous vous en sentirez digne.
 	
 		PLAYER_TALENT_RUNES [SPL_PalLight] = TRUE;
 	
@@ -143,12 +143,12 @@ func void DIA_Albrecht_TEACHPalRunes_Info ()
 	}
 	else
 	{
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_04"); //Quelle voie avez-vous choisie ?
-		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_05"); //Celle de la guérison ou celle du combat ?
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_04"); //Quelle voie avez-vous choisieÂ ?
+		AI_Output (self,other, "DIA_Albrecht_TEACHPalRunes_03_05"); //Celle de la guÃ©rison ou celle du combatÂ ?
 		
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Je choisis la voie de la guérison.",DIA_Albrecht_TEACHPalRunes_Heal);
+		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Je choisis la voie de la guÃ©rison.",DIA_Albrecht_TEACHPalRunes_Heal);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,"Je choisis la voie du combat.",DIA_Albrecht_TEACHPalRunes_Combat);
 	};	
 };
@@ -160,18 +160,18 @@ FUNC VOID DIA_Albrecht_TEACHPalRunes_BACK()
 
 FUNC VOID B_Albrecht_YouAreNotWorthy ()
 {
-	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //Vous n'êtes pas encore digne de recevoir le sort suivant de cette voie.
+	AI_Output (self ,other,"B_Albrecht_YouAreNotWorthy_03_00"); //Vous n'Ãªtes pas encore digne de recevoir le sort suivant de cette voie.
 };
 
 FUNC VOID DIA_Albrecht_TEACHPalRunes_Heal()
 {
-	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Heal_15_00"); //J'ai choisi la voie de la guérison.
+	AI_Output (other,self ,"DIA_Albrecht_TEACHPalRunes_Heal_15_00"); //J'ai choisi la voie de la guÃ©rison.
 	if  (PLAYER_TALENT_RUNES [SPL_PalLightHeal] == FALSE)
 	&&	(MIS_ReadyforChapter4 == TRUE)
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Soins légers.", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalLightHeal);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Soins lÃ©gers.", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalLightHeal);
 	}
 	else if 	(PLAYER_TALENT_RUNES [SPL_PalMediumHeal] == FALSE)
 	&&	(Kapitel >= 5)
@@ -195,7 +195,7 @@ FUNC VOID DIA_Albrecht_TEACHPalRunes_Combat()
 	{
 		Info_ClearChoices   (DIA_Albrecht_TEACHPalRunes);
 		Info_AddChoice (DIA_Albrecht_TEACHPalRunes,DIALOG_BACK,DIA_Albrecht_TEACHPalRunes_BACK);
-		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("Flèche sainte", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalHolyBolt);
+		Info_AddChoice	(DIA_Albrecht_TEACHPalRunes, B_BuildLearnString ("FlÃ¨che sainte", CostForPalSpells) ,DIA_Albrecht_TEACHPalRunes_PalHolyBolt);
 	}
 	else if (PLAYER_TALENT_RUNES [SPL_PalRepelEvil] == FALSE)
 	&&	(Kapitel >= 5)
@@ -316,7 +316,7 @@ func void DIA_Albrecht_Teach_BACK()
 {
 	if (other.attribute [ATR_MANA_MAX] >= T_MED)
 	{
-		AI_Output (self, other, "DIA_Albrecht_Teach_03_00"); //Si vous voulez accroître davantage votre puissance magique, vous devrez vous trouver un autre mentor.
+		AI_Output (self, other, "DIA_Albrecht_Teach_03_00"); //Si vous voulez accroÃ®tre davantage votre puissance magique, vous devrez vous trouver un autre mentor.
 	};
 	Info_ClearChoices (DIA_Albrecht_TEACH);
 };

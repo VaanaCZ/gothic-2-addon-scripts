@@ -24,7 +24,7 @@ FUNC VOID DIA_Dragon_Ice_Exit_Info()
 	Npc_RemoveInvItems (other,ItMi_InnosEye_MIS,1);
 	CreateInvItems 	   (other,ItMi_InnosEye_Discharged_MIS,1);	 
 
-	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Le pouvoir de l'Œil est épuisé. Votre heure a sonné.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Exit_20_00"); //Le pouvoir de l'Å’il est Ã©puisÃ©. Votre heure a sonnÃ©.
 
 	AI_StopProcessInfos	(self);
 	DragonTalk_Exit_Free  = FALSE;
@@ -68,14 +68,14 @@ FUNC INT DIA_Dragon_Ice_Hello_Condition()
 
 FUNC VOID DIA_Dragon_Ice_Hello_Info()
 {
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Pourquoi troubler mon repos ? Dois-je aller encore plus profondément pour que les petits parasites tels que vous me laissiez en paix ?
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_00"); //Pourquoi troubler mon repos ? Dois-je aller encore plus profondÃ©ment pour que les petits parasites tels que vous me laissiez en paix ?
 	if (Mis_KilledDragons == 0)
 	{	
-		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Un dragon qui parle. Grâces en soient rendues à l'Œil d'Innos.
+		AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_01"); //Un dragon qui parle. GrÃ¢ces en soient rendues Ã  l'Å’il d'Innos.
 	};
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Vous êtes de bien curieuses créatures vous autres les humains. On a beau vous balayer, il y en a toujours un pour renaître des cendres et se prendre pour un héros.
-	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Mais bientôt tout cela sera terminé. Cette fois-ci, je veillerai personnellement à ce qu'aucun d'entre vous ne se relève.
-	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Silence. Par le pouvoir de l'Œil sacré qui m'a été conféré, je vous ordonne de répondre à mes questions.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_02"); //Vous Ãªtes de bien curieuses crÃ©atures vous autres les humains. On a beau vous balayer, il y en a toujours un pour renaÃ®tre des cendres et se prendre pour un hÃ©ros.
+	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_03"); //Mais bientÃ´t tout cela sera terminÃ©. Cette fois-ci, je veillerai personnellement Ã  ce qu'aucun d'entre vous ne se relÃ¨ve.
+	AI_Output			(other, self, "DIA_Dragon_Ice_Hello_15_04"); //Silence. Par le pouvoir de l'Å’il sacrÃ© qui m'a Ã©tÃ© confÃ©rÃ©, je vous ordonne de rÃ©pondre Ã  mes questions.
 	AI_Output			(self, other, "DIA_Dragon_Ice_Hello_20_05"); //Ha ! Ha ! Ha ! Eh ! Bien, posez-les. Cela ne vous sauvera pas.
 
 };
@@ -90,7 +90,7 @@ instance DIA_Dragon_Ice_WERBISTDU		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_WERBISTDU_Condition;
 	information	 = 	DIA_Dragon_Ice_WERBISTDU_Info;
 
-	description	 = 	"Qui êtes-vous ?";
+	description	 = 	"Qui Ãªtes-vous ?";
 };
 
 func int DIA_Dragon_Ice_WERBISTDU_Condition ()
@@ -103,8 +103,8 @@ func int DIA_Dragon_Ice_WERBISTDU_Condition ()
 
 func void DIA_Dragon_Ice_WERBISTDU_Info ()
 {
-	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Qui êtes-vous ?
-	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Je suis Finkregh, Seigneur de la glace et de la neige, Gardien du Concile et, bientôt, votre bourreau.
+	AI_Output			(other, self, "DIA_Dragon_Ice_WERBISTDU_15_00"); //Qui Ãªtes-vous ?
+	AI_Output			(self, other, "DIA_Dragon_Ice_WERBISTDU_20_01"); //Je suis Finkregh, Seigneur de la glace et de la neige, Gardien du Concile et, bientÃ´t, votre bourreau.
 
 };
 
@@ -117,7 +117,7 @@ instance DIA_Dragon_Ice_BELIAR		(C_INFO)
 	condition	 = 	DIA_Dragon_Ice_BELIAR_Condition;
 	information	 = 	DIA_Dragon_Ice_BELIAR_Info;
 
-	description	 = 	"Quel divinité adorez-vous ?";
+	description	 = 	"Quel divinitÃ© adorez-vous ?";
 };
 
 func int DIA_Dragon_Ice_BELIAR_Condition ()
@@ -131,10 +131,10 @@ func int DIA_Dragon_Ice_BELIAR_Condition ()
 func void DIA_Dragon_Ice_BELIAR_Info ()
 {
 	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_00"); //Quel dieu servez-vous ?
-	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Quel divinité maudite peut permettre à une créature aussi immonde que vous d'errer sur cette terre ?
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //N'essayez même de vouloir comprendre les raisons de notre assemblée, petit héros.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Non seulement Béliar nous a permis de nous retrouver ici, mais il l'a ordonné.
-	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //Inspirés par ses paroles divines, nous n'aurons de cesse d'accomplir sa volonté.
+	AI_Output			(other, self, "DIA_Dragon_Ice_BELIAR_15_01"); //Quel divinitÃ© maudite peut permettre Ã  une crÃ©ature aussi immonde que vous d'errer sur cette terre ?
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_02"); //N'essayez mÃªme de vouloir comprendre les raisons de notre assemblÃ©e, petit hÃ©ros.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_03"); //Non seulement BÃ©liar nous a permis de nous retrouver ici, mais il l'a ordonnÃ©.
+	AI_Output			(self, other, "DIA_Dragon_Ice_BELIAR_20_04"); //InspirÃ©s par ses paroles divines, nous n'aurons de cesse d'accomplir sa volontÃ©.
 
 };
 

@@ -18,7 +18,7 @@ FUNC VOID DIA_Addon_Senyan_EXIT_Info()
 {
 	if (Senyan_Erpressung == LOG_RUNNING)
 	{
-		AI_Output (self, other, "DIA_Addon_Senyan_EXIT_12_00");//Vous savez ce que vous avez à faire...
+		AI_Output (self, other, "DIA_Addon_Senyan_EXIT_12_00");//Vous savez ce que vous avez Ã  faire...
 	};
 	AI_StopProcessInfos (self);
 };
@@ -60,8 +60,8 @@ func void DIA_Addon_Senyan_PICKPOCKET_BACK()
 //----------------------------------------------------------------------
 FUNC VOID B_Senyan_Attack()
 {
-	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_00");//(ricane) Alors à quoi pouvez-vous encore bien me servir, jeune impudent ?
-	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_01");//(appelle) Hé, les gars, regardez qui est ici !
+	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_00");//(ricane) Alors Ã  quoi pouvez-vous encore bien me servir, jeune impudent ?
+	AI_Output (self, other, "DIA_Addon_Senyan_Attack_12_01");//(appelle) HÃ©, les gars, regardez qui est ici !
 	
 	Senyan_Called = TRUE;	
 	Senyan_Erpressung = LOG_OBSOLETE;
@@ -74,15 +74,15 @@ FUNC VOID B_Senyan_Attack()
 FUNC VOID B_Senyan_Erpressung()
 {
 	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_00");//Combien voulez-vous ?
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_01");//(joue la comédie) Oh non, pitié... je ne voudrais surtout pas vous extorquer de l'or. Ça ne me viendrait pas à l'esprit...
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_01");//(joue la comÃ©die) Oh non, pitiÃ©... je ne voudrais surtout pas vous extorquer de l'or. Ã‡a ne me viendrait pas Ã  l'esprit...
 	AI_Output (other, self, "DIA_Addon_Senyan_Erpressung_15_02");//Alors que voulez-vous ?
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_03");//Récemment, quelqu'un a essayé d'éliminer Esteban. Mais il s'est heurté à ses gardes du corps...
-	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_04");//Allez voir Esteban et parlez-lui. Après, peut-être pourrons nous reparler un peu.
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_03");//RÃ©cemment, quelqu'un a essayÃ© d'Ã©liminer Esteban. Mais il s'est heurtÃ© Ã  ses gardes du corps...
+	AI_Output (self, other, "DIA_Addon_Senyan_Erpressung_12_04");//Allez voir Esteban et parlez-lui. AprÃ¨s, peut-Ãªtre pourrons nous reparler un peu.
 	
 	AI_StopProcessInfos (self);
 	Log_CreateTopic (Topic_Addon_Senyan,LOG_MISSION);
 	Log_SetTopicStatus (Topic_Addon_Senyan,LOG_RUNNING);
-	B_LogEntry (Topic_Addon_Senyan,"Senyan m'a reconnu. Il sait qui je suis, et il compte utiliser cela à ses propres fins. Il projette quelque chose, et veut d'abord que j'aille parler à Esteban.");
+	B_LogEntry (Topic_Addon_Senyan,"Senyan m'a reconnu. Il sait qui je suis, et il compte utiliser cela Ã  ses propres fins. Il projette quelque chose, et veut d'abord que j'aille parler Ã  Esteban.");
 };
 //----------------------------------------------------------------------
 //	Info Hi
@@ -110,7 +110,7 @@ FUNC VOID DIA_Addon_Senyan_Hi_Info()
 	
 	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_00");//Ah ! Et qui est donc ici ?
 	B_UseFakeScroll();
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_01");//Oh, regardez-moi ça. Vous voila... J'ai une bonne nouvelle et une mauvaise nouvelle pour vous.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_12_01");//Oh, regardez-moi Ã§a. Vous voila... J'ai une bonne nouvelle et une mauvaise nouvelle pour vous.
 	
 	Info_ClearChoices (DIA_Addon_BDT_1084_Senyan_Hi);
 	Info_AddChoice (DIA_Addon_BDT_1084_Senyan_Hi,"Donnez-moi d'abord la bonne nouvelle.",DIA_Addon_BDT_1084_Senyan_Hi_good);
@@ -127,9 +127,9 @@ FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_good()
 	{
 		AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_good_15_01");//Et quelle est la bonne nouvelle ?
 	};
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_02");//Eh bien, je ne sais pas vraiment pourquoi, mais vous vous êtes fait une poignée d'ennemis particulièrement puissants.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_02");//Eh bien, je ne sais pas vraiment pourquoi, mais vous vous Ãªtes fait une poignÃ©e d'ennemis particuliÃ¨rement puissants.
 	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_03");//Vous pouvez vous estimer heureux que moi seul vous aie reconnu.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_04");//Parce que je suis quelqu'un de compréhensif et d'aimable.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_good_12_04");//Parce que je suis quelqu'un de comprÃ©hensif et d'aimable.
 	
 	
 	Senyan_Good = TRUE;
@@ -158,9 +158,9 @@ FUNC VOID DIA_Addon_BDT_1084_Senyan_Hi_bad()
 	};
 	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_02");//Raven vous recherche. Ses gardes aussi. D'ailleurs, tous les bandits vous recherchent...
 	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_03");//Et s'ils vous retrouvent, ils vous tueront.
-	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_04");//Il ne seraient pas les premiers à essayer.
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_05");//Dans ce cas, vous êtes aussi bon combattant que vous êtes rusé. Entrer dans le camp en portant notre armure, c'est comme...
-	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_06");//...se jeter dans la gueule du loup. Votre vie ne tient plus qu'à un fil, fils du danger.
+	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Hi_bad_15_04");//Il ne seraient pas les premiers Ã  essayer.
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_05");//Dans ce cas, vous Ãªtes aussi bon combattant que vous Ãªtes rusÃ©. Entrer dans le camp en portant notre armure, c'est comme...
+	AI_Output (self, other, "DIA_Addon_BDT_1084_Senyan_Hi_bad_12_06");//...se jeter dans la gueule du loup. Votre vie ne tient plus qu'Ã  un fil, fils du danger.
 	
 	Senyan_Bad = TRUE;
 	
@@ -198,9 +198,9 @@ FUNC INT DIA_Addon_Senyan_unterwegs_Condition()
 FUNC VOID DIA_Addon_Senyan_unterwegs_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_00");//A propos d'Esteban ?
-	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_01");//Lui avez-vous parlé ?
+	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_01");//Lui avez-vous parlÃ© ?
 	AI_Output (other, self, "DIA_Addon_Senyan_unterwegs_15_02");//Pas encore.
-	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_03");//Eh bien, vous ne devriez pas tarder à le faire.
+	AI_Output (self, other, "DIA_Addon_Senyan_unterwegs_12_03");//Eh bien, vous ne devriez pas tarder Ã  le faire.
 };
 //---------------------------------------------------------------------
 //	Info Attentat
@@ -212,7 +212,7 @@ INSTANCE DIA_Addon_Senyan_Attentat   (C_INFO)
 	condition   = DIA_Addon_Senyan_Attentat_Condition;
 	information = DIA_Addon_Senyan_Attentat_Info;
 	permanent   = FALSE;
-	description	= "J'ai parlé à Esteban.";
+	description	= "J'ai parlÃ© Ã  Esteban.";
 };
 FUNC INT DIA_Addon_Senyan_Attentat_Condition()
 {	
@@ -224,15 +224,15 @@ FUNC INT DIA_Addon_Senyan_Attentat_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_00");//J'ai parlé à Esteban.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_01");//Et vous a-t-il parlé de l'attaque ?
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_02");//Il m'a ordonné d'identifier le commanditaire de l'assassin. Savez-vous autre chose à ce sujet ?
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_00");//J'ai parlÃ© Ã  Esteban.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_01");//Et vous a-t-il parlÃ© de l'attaque ?
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_02");//Il m'a ordonnÃ© d'identifier le commanditaire de l'assassin. Savez-vous autre chose Ã  ce sujet ?
 	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_03");//Rien de plus que vous. Je recherche moi aussi le responsable de l'attaque.
 	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_15_04");//Dites-m'en davantage...
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_05");//Allez faire votre travail, et faites-le bien. Je veux que vous retrouviez le traître.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_06");//(froidement) Et lorsque vous l'aurez trouvé, je veux que vous le tuiez.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_07");//Ensuite, j'empocherai la récompense.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_08");//Je possède l'affiche sur laquelle votre tête est mise à prix. Faites votre travail, et faites-le bien. Dans le cas contraire, vous savez ce qu'il vous arrivera...
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_05");//Allez faire votre travail, et faites-le bien. Je veux que vous retrouviez le traÃ®tre.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_06");//(froidement) Et lorsque vous l'aurez trouvÃ©, je veux que vous le tuiez.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_07");//Ensuite, j'empocherai la rÃ©compense.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_12_08");//Je possÃ¨de l'affiche sur laquelle votre tÃªte est mise Ã  prix. Faites votre travail, et faites-le bien. Dans le cas contraire, vous savez ce qu'il vous arrivera...
 
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
 	Info_AddChoice (DIA_Addon_Senyan_Attentat,"J'imagine que je n'ai pas le choix...",DIA_Addon_Senyan_Attentat_JA);
@@ -240,7 +240,7 @@ FUNC VOID DIA_Addon_Senyan_Attentat_Info()
 };
 FUNC VOID DIA_Addon_Senyan_Attentat_NO()
 {
-	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_NO_15_00");//N'y pensez même pas !
+	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_NO_15_00");//N'y pensez mÃªme pas !
 
 	B_Senyan_Attack();
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
@@ -248,17 +248,17 @@ FUNC VOID DIA_Addon_Senyan_Attentat_NO()
 FUNC VOID DIA_Addon_Senyan_Attentat_JA()
 {
 	AI_Output (other, self, "DIA_Addon_Senyan_Attentat_JA_15_00");//Je n'ai pas vraiment le choix...
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_01");//Je savais que nous parviendrions à nous entendre.
-	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_02");//(sèchement) Et lorsque vous aurez découvert le responsable... nous tuerons ensemble cette vermine. Et maintenant, dégagez !
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_01");//Je savais que nous parviendrions Ã  nous entendre.
+	AI_Output (self, other, "DIA_Addon_Senyan_Attentat_JA_12_02");//(sÃ¨chement) Et lorsque vous aurez dÃ©couvert le responsable... nous tuerons ensemble cette vermine. Et maintenant, dÃ©gagez !
 	
 	Senyan_Erpressung = LOG_RUNNING;
 	Info_ClearChoices (DIA_Addon_Senyan_Attentat);
 	
-	B_LogEntry (Topic_Addon_Senyan,"Senyan veut que je retrouve le responsable de la tentative d'assassinat et que je le tue. Ensuite, il empochera la récompense.");
+	B_LogEntry (Topic_Addon_Senyan,"Senyan veut que je retrouve le responsable de la tentative d'assassinat et que je le tue. Ensuite, il empochera la rÃ©compense.");
 };
 
 //----------------------------------------------------------------------
-//	Anders Überlegt
+//	Anders Ãœberlegt
 //----------------------------------------------------------------------
 INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 {
@@ -267,7 +267,7 @@ INSTANCE DIA_Addon_Senyan_ChangePlan   (C_INFO)
 	condition   = DIA_Addon_Senyan_ChangePlan_Condition;
 	information = DIA_Addon_Senyan_ChangePlan_Info;
 	permanent   = FALSE;
-	description = "J'ai changé d'avis. Dorénavant, nous ne travaillerons plus ensemble.";
+	description = "J'ai changÃ© d'avis. DorÃ©navant, nous ne travaillerons plus ensemble.";
 };
 FUNC INT DIA_Addon_Senyan_ChangePlan_Condition()
 {	
@@ -279,7 +279,7 @@ FUNC INT DIA_Addon_Senyan_ChangePlan_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_ChangePlan_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_Senyan_ChangePlan_15_00"); //J'ai changé d'avis. Nous ne travaillons plus ensemble.
+	AI_Output (other, self, "DIA_Addon_Senyan_ChangePlan_15_00"); //J'ai changÃ© d'avis. Nous ne travaillons plus ensemble.
 	B_Senyan_Attack(); 
 			
 	AI_StopProcessInfos (self);
@@ -295,7 +295,7 @@ INSTANCE DIA_Addon_BDT_1084_Senyan_Found   (C_INFO)
 	condition   = DIA_Addon_Senyan_Found_Condition;
 	information = DIA_Addon_Senyan_Found_Info;
 	permanent   = FALSE;
-	description = "J'ai retrouvé le traître. C'est Fisk.";
+	description = "J'ai retrouvÃ© le traÃ®tre. C'est Fisk.";
 };
 FUNC INT DIA_Addon_Senyan_Found_Condition()
 {	
@@ -307,7 +307,7 @@ FUNC INT DIA_Addon_Senyan_Found_Condition()
 };
 FUNC VOID DIA_Addon_Senyan_Found_Info()
 {	
-	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Found_15_00");//J'ai retrouvé le traître. C'est Fisk.
+	AI_Output (other, self, "DIA_Addon_BDT_1084_Senyan_Found_15_00");//J'ai retrouvÃ© le traÃ®tre. C'est Fisk.
 	B_Senyan_Attack(); 
 };		
 //----------------------------------------------------------------------

@@ -67,8 +67,8 @@ FUNC INT DIA_BAU_13_PEOPLE_Condition()
 FUNC VOID DIA_BAU_13_PEOPLE_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_13_PEOPLE_15_00"); //Qui est le responsable ici ?
-	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01"); //Si vous voulez mon avis, ce sont les mercenaires. Bien sûr, ils sont payés par Onar mais Innos seul sait combien de temps ils lui obéiront.
-	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_02"); //Si jamais ils estiment qu'il ne leur est plus utile, je n'aimerais pas être à sa place.
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_01"); //Si vous voulez mon avis, ce sont les mercenaires. Bien sÃ»r, ils sont payÃ©s par Onar mais Innos seul sait combien de temps ils lui obÃ©iront.
+	AI_Output (self, other, "DIA_BAU_13_PEOPLE_13_02"); //Si jamais ils estiment qu'il ne leur est plus utile, je n'aimerais pas Ãªtre Ã  sa place.
 };
 
 // *************************************************************************
@@ -90,9 +90,9 @@ FUNC INT DIA_BAU_13_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_13_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_13_LOCATION_15_00"); //Que pouvez-vous me dire sur cette région ?
-	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_01"); //Il y a trois fermes dans le coin. Celle d'Onar à l'est et celle de Sékob à l'extrémité nord de la vallée.
-	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02"); //Il y a une piste au sud-ouest qui mène à la haute plaine. C'est là que se trouve la ferme de Bengar.
+	AI_Output (other, self, "DIA_BAU_13_LOCATION_15_00"); //Que pouvez-vous me dire sur cette rÃ©gion ?
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_01"); //Il y a trois fermes dans le coin. Celle d'Onar Ã  l'est et celle de SÃ©kob Ã  l'extrÃ©mitÃ© nord de la vallÃ©e.
+	AI_Output (self, other, "DIA_BAU_13_LOCATION_13_02"); //Il y a une piste au sud-ouest qui mÃ¨ne Ã  la haute plaine. C'est lÃ  que se trouve la ferme de Bengar.
 };
 
 // *************************************************************************
@@ -116,7 +116,7 @@ FUNC VOID DIA_BAU_13_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_01"); //Les troupes de la ville ne confisquent plus notre bétail et nos récoltes ! Ils ne veulent plus jouer à ça maintenant que nous pouvons nous défendre !
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_01"); //Les troupes de la ville ne confisquent plus notre bÃ©tail et nos rÃ©coltes ! Ils ne veulent plus jouer Ã  Ã§a maintenant que nous pouvons nous dÃ©fendre !
 	};
 
 	if (Kapitel == 2)
@@ -126,17 +126,17 @@ FUNC VOID DIA_BAU_13_STANDARD_Info()
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_03"); //Des dragons ! On raconte qu'il y a des dragons dans la Vallée des mines. Ils vont bientôt franchir le col !
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_03"); //Des dragons ! On raconte qu'il y a des dragons dans la VallÃ©e des mines. Ils vont bientÃ´t franchir le col !
 	};
 
 	if (Kapitel == 4)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_04"); //On dit même que des bandits des montagnes se dirigent vers la Vallée des mines. Ça devient bien trop dangereux pour moi.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_04"); //On dit mÃªme que des bandits des montagnes se dirigent vers la VallÃ©e des mines. Ã‡a devient bien trop dangereux pour moi.
 	};
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_05"); //Quand les taxes baisseront et que nous serons payés convenablement pour notre travail, on pourra de nouveau commercer avec la ville.
+		AI_Output (self,other,"DIA_BAU_13_STANDARD_13_05"); //Quand les taxes baisseront et que nous serons payÃ©s convenablement pour notre travail, on pourra de nouveau commercer avec la ville.
 	};
 };
 

@@ -22,7 +22,7 @@ FUNC VOID DIA_Wegelagerer_EXIT_Info()
 // 				  	Guard_Passage - First Warn
 // ************************************************************
 // ------------------------------------------------------------
-	const string BDT_1020_Wegelagerer_Checkpoint		= "NW_TROLLAREA_PATH_46"; //Die Br¸cke
+	const string BDT_1020_Wegelagerer_Checkpoint		= "NW_TROLLAREA_PATH_46"; //Die Br√ºcke
 // ------------------------------------------------------------
 instance DIA_BDT_1020_Wegelagerer_FirstWarn (C_INFO)
 {
@@ -44,9 +44,9 @@ func int DIA_BDT_1020_Wegelagerer_FirstWarn_Condition()
 };
 func void DIA_BDT_1020_Wegelagerer_FirstWarn_Info()
 {
-	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_00"); //Eh, vous ! Restez o˘ vous Ítes !
+	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_00"); //Eh, vous ! Restez o√π vous √™tes !
 	AI_Output (other, self,"DIA_BDT_1020_Wegelagerer_FirstWarn_15_01"); //Que voulez-vous ?
-	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_02"); //Si vous voulez pas que je vous casse la tÍte, vous feriez bien de me donner quelques piËces d'or et pronto !
+	AI_Output (self, other,"DIA_BDT_1020_Wegelagerer_FirstWarn_06_02"); //Si vous voulez pas que je vous casse la t√™te, vous feriez bien de me donner quelques pi√®ces d'or et pronto !
 	
 	other.aivar[AIV_LastDistToWP] 			= Npc_GetDistToWP(other,BDT_1020_Wegelagerer_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
@@ -64,49 +64,49 @@ func void DIA_BDT_1020_Wegelagerer_FirstWarn_Info()
 FUNC VOID DIA_BDT_1020_Wegelagerer_AGON ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_AGON_15_00"); //Dites-moi, avez-vous vu un novice ?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_01"); //(perplexe) Euh... quoi ? Hum, (il rÈflÈchit) Áa se pourrait.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_02"); //Donnez-moi 20 piËces d'or et je vous le dis !
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_01"); //(perplexe) Euh... quoi ? Hum, (il r√©fl√©chit) √ßa se pourrait.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_AGON_06_02"); //Donnez-moi 20 pi√®ces d'or et je vous le dis !
 
 	Wegelagerer_Surprise = TRUE;
 
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{ 
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"TrËs bien, voici votre argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Tr√®s bien, voici votre argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"DÈsolÈ, je n'ai pas d'argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Contentez-vous de vous Ècarter de mon chemin.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"D√©sol√©, je n'ai pas d'argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Contentez-vous de vous √©carter de mon chemin.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_15_00"); //Combien voulez-vous ?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_06_01"); //(il sourit) 20 piËces d'or et on fera copain-copain..
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_HowMuch_06_01"); //(il sourit) 20 pi√®ces d'or et on fera copain-copain..
 	
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
 	
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{ 
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"TrËs bien, voici votre argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Tr√®s bien, voici votre argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"DÈsolÈ, je n'ai pas d'argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Contentez-vous de vous Ècarter de mon chemin.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"D√©sol√©, je n'ai pas d'argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Contentez-vous de vous √©carter de mon chemin.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
 		
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Joke ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_15_00"); //Vous plaisantez.
 	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_01"); //Est-ce que j'en ai l'air ?
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_02"); //Si je ne vois pas 20 piËces d'or avant que vous ne vous approchiez...
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_03"); //Alors je vous Ètale. Alors filez-moi le pognon.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_02"); //Si je ne vois pas 20 pi√®ces d'or avant que vous ne vous approchiez...
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Joke_06_03"); //Alors je vous √©tale. Alors filez-moi le pognon.
 	
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;
 	Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
 	
 	if (Npc_HasItems (other,ItMi_gold) >= 20)
 	{ 
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"TrËs bien, voici votre argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Tr√®s bien, voici votre argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney);
 	};
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"DÈsolÈ, je n'ai pas d'argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
-	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Contentez-vous de vous Ècarter de mon chemin.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"D√©sol√©, je n'ai pas d'argent.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney);
+	Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Contentez-vous de vous √©carter de mon chemin.",DIA_BDT_1020_Wegelagerer_FirstWarn_Never);
 	
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_PissOff ()
@@ -121,16 +121,16 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_PissOff ()
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_15_00"); //TrËs bien, voici votre argent.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_15_00"); //Tr√®s bien, voici votre argent.
 	
 	if (Wegelagerer_Surprise == FALSE)
 	{
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_01"); //(sarcastique) Je dirais que 20 piËces d'or, ce n'est pas beaucoup pour votre vie. Vous pouvez passer.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_01"); //(sarcastique) Je dirais que 20 pi√®ces d'or, ce n'est pas beaucoup pour votre vie. Vous pouvez passer.
 	};
 	if (Wegelagerer_Surprise == TRUE)
 	{
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_02"); //Au fait, le novice est passÈ par ici il y a environ une heure.
-		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_03"); //Il semblait assez pressÈ et il regardait tout le temps derriËre lui. Maintenant, du vent.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_02"); //Au fait, le novice est pass√© par ici il y a environ une heure.
+		AI_Output (self,other ,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney_06_03"); //Il semblait assez press√© et il regardait tout le temps derri√®re lui. Maintenant, du vent.
 	};
 	B_GiveInvItems (other,self ,itmi_gold,20);
 	self.aivar[AIV_PASSGATE]						= TRUE;
@@ -139,20 +139,20 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveMoney ()
 };
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney ()
 {
-	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_15_00"); //DÈsolÈ, je n'ai pas d'argent.
+	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_15_00"); //D√©sol√©, je n'ai pas d'argent.
 	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_01"); //Eh oui, les temps sont durs.
 	
 	if Npc_HasEquippedMeleeWeapon (other)
 	{
-		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_02"); //Mais voil‡ ce qu'on va faire, vous allez me donner votre arme et je vous laisse passer.
+		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_02"); //Mais voil√† ce qu'on va faire, vous allez me donner votre arme et je vous laisse passer.
 	
 		Info_ClearChoices (DIA_BDT_1020_Wegelagerer_FirstWarn);
-		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Oubliez Áa.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon);
+		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Oubliez √ßa.",DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon);
 		Info_AddChoice (DIA_BDT_1020_Wegelagerer_FirstWarn,"Tenez, prenez mon arme.",DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon);
 	}
 	else
 	{
-		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_03"); //Voil‡ ce qu'on va faire : revenez quand vous aurez de l'argent. Sans argent, on ne passe pas.
+		AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney_06_03"); //Voil√† ce qu'on va faire : revenez quand vous aurez de l'argent. Sans argent, on ne passe pas.
 		
 		self.aivar[AIV_Guardpassage_Status]	= GP_FirstWarnGiven;
 		AI_StopProcessInfos (self);
@@ -162,7 +162,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoMoney ()
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Never ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_Never_15_00"); //Ecartez-vous de mon chemin.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Never_06_01"); //Alors vous voulez utiliser la maniËre forte ?
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_Never_06_01"); //Alors vous voulez utiliser la mani√®re forte ?
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -170,7 +170,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_Never ()
 FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon ()
 {
 	AI_Output (other,self ,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_15_00"); //Laissez tomber.
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_06_01"); //D'accord, la maniËre forte alors.
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_NoWeapon_06_01"); //D'accord, la mani√®re forte alors.
 	
 	AI_StopProcessInfos (self);
 	B_Attack (self,other,AR_NONE, 1);
@@ -181,7 +181,7 @@ FUNC VOID DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon ()
 	
 	AI_DrawWeapon (other);
 	
-	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_06_01"); // Ne touchez pas ‡ cette arme. Vous allez voir ce que vous allez voir !
+	AI_Output (self ,other,"DIA_BDT_1020_Wegelagerer_FirstWarn_GiveWeapon_06_01"); // Ne touchez pas √† cette arme. Vous allez voir ce que vous allez voir !
 	AI_StopProcessInfos (self);
 	B_Attack (self, other, AR_GuardStopsIntruder, 1);
 };
@@ -273,7 +273,7 @@ func void DIA_BDT_1020_Wegelagerer_Attack_Info()
 	other.aivar[AIV_LastDistToWP] 			= 0;
 	self.aivar[AIV_Guardpassage_Status]	= GP_NONE;						//wird auch in ZS_Attack resettet
 	
-	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zur¸ckgeben
+	AI_StopProcessInfos	(self);												//dem Spieler sofort wieder die Kontrolle zur√ºckgeben
 	
 	B_Attack (self, other, AR_NONE, 1);
 };

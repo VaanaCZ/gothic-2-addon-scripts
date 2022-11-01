@@ -43,7 +43,7 @@ FUNC INT DIA_BAU_16_JOIN_Condition()
 FUNC VOID DIA_BAU_16_JOIN_Info()
 {	
 	AI_Output (other, self, "DIA_BAU_16_JOIN_15_00"); //Dites-m'en plus au sujet des mercenaires !
-	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Ils traînent toute la journée autour de la ferme et ils se tapent dessus à l'occasion. Et ça les amuse.
+	AI_Output (self, other, "DIA_BAU_16_JOIN_16_01"); //Ils traÃ®nent toute la journÃ©e autour de la ferme et ils se tapent dessus Ã  l'occasion. Et Ã§a les amuse.
 };
 
 // *************************************************************************
@@ -89,9 +89,9 @@ FUNC INT DIA_BAU_16_LOCATION_Condition()
 
 FUNC VOID DIA_BAU_16_LOCATION_Info()
 {	
-	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Que pouvez-vous me dire sur cette région ?
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Il y a trois fermes ici. Celle d'Onar à l'est et celle de Sékob à l'extrémité nord de la vallée.
-	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Il y a une piste au sud-ouest qui mène à la haute plaine. C'est là que se trouve la ferme de Bengar.
+	AI_Output (other, self, "DIA_BAU_16_LOCATION_15_00"); //Que pouvez-vous me dire sur cette rÃ©gion ?
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_01"); //Il y a trois fermes ici. Celle d'Onar Ã  l'est et celle de SÃ©kob Ã  l'extrÃ©mitÃ© nord de la vallÃ©e.
+	AI_Output (self, other, "DIA_BAU_16_LOCATION_16_02"); //Il y a une piste au sud-ouest qui mÃ¨ne Ã  la haute plaine. C'est lÃ  que se trouve la ferme de Bengar.
 };
 
 // *************************************************************************
@@ -115,17 +115,17 @@ FUNC VOID DIA_BAU_16_STANDARD_Info()
 		
 	if (Kapitel == 1)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Les troupes de la ville ne confisquent plus notre bétail et nos récoltes ! Ça rigole plus maintenant que nous pouvons nous défendre !
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_01"); //Les troupes de la ville ne confisquent plus notre bÃ©tail et nos rÃ©coltes ! Ã‡a rigole plus maintenant que nous pouvons nous dÃ©fendre !
 	};
 
 	if (Kapitel == 2)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //On raconte qu'une armée se rassemble dans la Vallée des mines. Elle sera bientôt là.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_02"); //On raconte qu'une armÃ©e se rassemble dans la VallÃ©e des mines. Elle sera bientÃ´t lÃ .
 	};
 
 	if (Kapitel == 3)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //J'ai entendu dire qu'il y avait des dragons dans la Vallée des mines. J'ai peine à y croire.
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_03"); //J'ai entendu dire qu'il y avait des dragons dans la VallÃ©e des mines. J'ai peine Ã  y croire.
 	};
 
 	if (Kapitel == 4)
@@ -135,7 +135,7 @@ FUNC VOID DIA_BAU_16_STANDARD_Info()
 	
 	if (Kapitel >= 5)
 	{
-		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Envoyer les paladins dans la Vallée des mines. Qu'est-ce que c'est que cette histoire ?
+		AI_Output (self,other,"DIA_BAU_16_STANDARD_16_05"); //Envoyer les paladins dans la VallÃ©e des mines. Qu'est-ce que c'est que cette histoire ?
 	};
 };
 

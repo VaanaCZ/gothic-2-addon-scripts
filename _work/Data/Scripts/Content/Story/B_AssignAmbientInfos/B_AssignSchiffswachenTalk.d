@@ -3,8 +3,8 @@
 // ***************************************************
 func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 {	
-	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt auf´s Schiff!!!!
-	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: Für die Kurzzeitige Erlaubnis, das Schiff zu besuchen! Muß nach der Aktion wieder geändert werden, z. B = 0;
+	if 	((MIS_ShipIsFree == TRUE)		//Joly: SC darf jetzt aufÂ´s Schiff!!!!
+	||	(MIS_SCVisitShip == LOG_RUNNING))//Joly: FÃ¼r die Kurzzeitige Erlaubnis, das Schiff zu besuchen! MuÃŸ nach der Aktion wieder geÃ¤ndert werden, z. B = 0;
 	{
 			if (Schiffswache.voice == 4)
 			{
@@ -12,11 +12,11 @@ func void B_AssignSchiffswachenGuard (var C_NPC Schiffswache)
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Evitez les problèmes tant que vous serez ici.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_09_01"); //Evitez les problÃ¨mes tant que vous serez ici.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Ne songez même pas à voler quoi que ce soit ici, compris ?
+				AI_Output (self,other,"DIA_Pal_Schiffswache_Ambient_12_02"); //Ne songez mÃªme pas Ã  voler quoi que ce soit ici, compris ?
 			};
 		AI_StopProcessInfos (Schiffswache);
 		Npc_SetRefuseTalk 	(Schiffswache,60);
@@ -54,30 +54,30 @@ func void B_AssignSchiffswachenInfos (var C_NPC Schiffswache)
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Les maudits orques ont envahi le château de Garond. Nous devons agir.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_00"); //Les maudits orques ont envahi le chÃ¢teau de Garond. Nous devons agir.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Si jamais nous mettons la main sur ce traître qui a ouvert la porte du château, on en fera qu'une bouchée.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_01"); //Si jamais nous mettons la main sur ce traÃ®tre qui a ouvert la porte du chÃ¢teau, on en fera qu'une bouchÃ©e.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //On ne peut attendre plus longtemps. Nos hommes de la Vallée des mines ont besoin de notre aide avant le prochain assaut des orques.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_02"); //On ne peut attendre plus longtemps. Nos hommes de la VallÃ©e des mines ont besoin de notre aide avant le prochain assaut des orques.
 			};
 		}
 	else
 		{
 			if (Schiffswache.voice == 4)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond en appelle à la mobilisation générale. Nous partons bientôt à la Vallée des mines.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_04_03"); //Garond en appelle Ã  la mobilisation gÃ©nÃ©rale. Nous partons bientÃ´t Ã  la VallÃ©e des mines.
 			};
 			if (Schiffswache.voice == 9)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Il faut enfin donner une leçon à ces orques.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_09_04"); //Il faut enfin donner une leÃ§on Ã  ces orques.
 			};
 			if (Schiffswache.voice == 12)
 			{
-				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Je suis impatient de donner à ces orques ce qu'ils méritent. Nous partons bientôt.
+				AI_Output (self,other,"DIA_Pal_Schiffswache_AmbientKap5_12_05"); //Je suis impatient de donner Ã  ces orques ce qu'ils mÃ©ritent. Nous partons bientÃ´t.
 			};
 		};
 	AI_StopProcessInfos	(Schiffswache);

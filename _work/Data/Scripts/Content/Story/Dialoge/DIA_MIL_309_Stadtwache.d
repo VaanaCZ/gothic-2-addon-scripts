@@ -50,21 +50,21 @@ func void DIA_Mil_309_Stadtwache_Hallo_Info ()
 	{
 		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_02"); //Ecoutez-moi bien. Nous ne pouvons vous laisser entrer en ville.
 		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_03"); //Mais je vais vous donner gratuitement un conseil.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Restez éloigné de cette forêt, elle est hantée par des monstres féroces.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_04"); //Restez Ã©loignÃ© de cette forÃªt, elle est hantÃ©e par des monstres fÃ©roces.
 		
 		MIl_309_News = 1;
 	}
 	else if  (Stadtwache_310.aivar[AIV_PASSGATE] == FALSE)
 	&&		 (MIl_309_News == 1)
 	{	
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Retournez dans le cloaque d'où vous venez, vermine !
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_05"); //Retournez dans le cloaque d'oÃ¹ vous venez, vermine !
 	};
 	
 	if  (Stadtwache_310.aivar[AIV_PASSGATE] == TRUE)
 	&&  (MIl_309_News < 2)
 	{
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Ecoutez, vous avez désormais accès à la ville. Mais cela ne veut pas dire que vous puissiez y faire ce que vous voulez.
-		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Si vous ne respectez pas les règles, vous perdrez tous vos droits !
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_06"); //Ecoutez, vous avez dÃ©sormais accÃ¨s Ã  la ville. Mais cela ne veut pas dire que vous puissiez y faire ce que vous voulez.
+		AI_Output (self, other, "DIA_Mil_309_Stadtwache_Hallo_06_07"); //Si vous ne respectez pas les rÃ¨gles, vous perdrez tous vos droits !
 		
 		MIl_309_News = 2;
 	}

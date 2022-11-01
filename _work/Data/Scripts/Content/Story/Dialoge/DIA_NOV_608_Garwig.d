@@ -45,7 +45,7 @@ FUNC INT DIA_Garwig_Wurst_Condition()
 FUNC VOID DIA_Garwig_Wurst_Info()
 {	
 	AI_Output (other, self, "DIA_Garwig_Wurst_15_00"); //Voulez-vous une saucisse ?
-	AI_Output (self, other, "DIA_Garwig_Wurst_06_01"); //Ah, délicieux ! Merci beaucoup, frère.
+	AI_Output (self, other, "DIA_Garwig_Wurst_06_01"); //Ah, dÃ©licieuxÂ ! Merci beaucoup, frÃ¨re.
 	
 	B_GiveInvItems (other, self, ItFo_SchafsWurst, 1);
 	Wurst_Gegeben = (Wurst_Gegeben +1);
@@ -80,9 +80,9 @@ FUNC INT DIA_Garwig_Hello_Condition()
 };
 FUNC VOID DIA_Garwig_Hello_Info()
 {
-	AI_Output (self ,other,"DIA_Garwig_Hello_06_00"); //Innos soit avec vous. Je ne vous ai jamais vu auparavant... Vous êtes nouveau ?
-	AI_Output (other ,self,"DIA_Garwig_Hello_15_01"); //Oui, je viens juste de me joindre à vous.
-	AI_Output (self ,other,"DIA_Garwig_Hello_06_02"); //Dans ce cas, j'espère que vous prendrez vite vos marques. Si je peux vous être d'une quelconque utilité faites-le moi savoir.
+	AI_Output (self ,other,"DIA_Garwig_Hello_06_00"); //Innos soit avec vous. Je ne vous ai jamais vu auparavant... Vous Ãªtes nouveauÂ ?
+	AI_Output (other ,self,"DIA_Garwig_Hello_15_01"); //Oui, je viens juste de me joindre Ã  vous.
+	AI_Output (self ,other,"DIA_Garwig_Hello_06_02"); //Dans ce cas, j'espÃ¨re que vous prendrez vite vos marques. Si je peux vous Ãªtre d'une quelconque utilitÃ© faites-le moi savoir.
 };
 //**************************************************************************
 //	Info Hello 
@@ -94,7 +94,7 @@ INSTANCE DIA_Garwig_Room   (C_INFO)
 	condition   = DIA_Garwig_Room_Condition;
 	information = DIA_Garwig_Room_Info;
 	permanent   = FALSE;
-	description	= "C'est quoi cette pièce ?";
+	description	= "C'est quoi cette piÃ¨ce ?";
 };
 FUNC INT DIA_Garwig_Room_Condition()
 {	
@@ -102,9 +102,9 @@ FUNC INT DIA_Garwig_Room_Condition()
 };
 FUNC VOID DIA_Garwig_Room_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Room_15_00"); //Dans quelle pièce sommes-nous ?
-	AI_Output (self ,other,"DIA_Garwig_Room_06_01"); //C'est ici que sont entreposées les saintes reliques du monastère.
-	AI_Output (other,self ,"DIA_Garwig_Room_15_02"); //Quelles reliques ?
+	AI_Output (other,self ,"DIA_Garwig_Room_15_00"); //Dans quelle piÃ¨ce sommes-nousÂ ?
+	AI_Output (self ,other,"DIA_Garwig_Room_06_01"); //C'est ici que sont entreposÃ©es les saintes reliques du monastÃ¨re.
+	AI_Output (other,self ,"DIA_Garwig_Room_15_02"); //Quelles reliquesÂ ?
 	AI_Output (self ,other,"DIA_Garwig_Room_06_03"); //Le Marteau d'Innos et le Bouclier du Feu, les plus importantes reliques de l'Eglise d'Innos en dehors de la capitale.
 };
 //**************************************************************************
@@ -129,9 +129,9 @@ FUNC INT DIA_Garwig_Hammer_Condition()
 FUNC VOID DIA_Garwig_Hammer_Info()
 {
 	AI_Output (other,self ,"DIA_Garwig_Hammer_15_00"); //Parlez-moi du marteau...
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_01"); //Il s'agit du marteau sacré d'Innos. C'est grâce à lui que saint Rhobar a tué la Sentinelle de pierre.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_02"); //Les textes sacrés racontent que la Sentinelle de pierre était invulnérable. Elle se dressait, aussi indestructible qu'une tour, et les armes de ses adversaires venaient se briser sur sa peau de roche.
-	AI_Output (self ,other,"DIA_Garwig_Hammer_06_03"); //Mais, en prononçant le nom d'Innos, Rhobar s'est rué sur elle et l'a fracassée d'un seul coup de ce marteau.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_01"); //Il s'agit du marteau sacrÃ© d'Innos. C'est grÃ¢ce Ã  lui que saint Rhobar a tuÃ© la Sentinelle de pierre.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_02"); //Les textes sacrÃ©s racontent que la Sentinelle de pierre Ã©tait invulnÃ©rable. Elle se dressait, aussi indestructible qu'une tour, et les armes de ses adversaires venaient se briser sur sa peau de roche.
+	AI_Output (self ,other,"DIA_Garwig_Hammer_06_03"); //Mais, en prononÃ§ant le nom d'Innos, Rhobar s'est ruÃ© sur elle et l'a fracassÃ©e d'un seul coup de ce marteau.
 };
 //**************************************************************************
 //	Info Schild 
@@ -155,8 +155,8 @@ FUNC INT DIA_Garwig_Shield_Condition()
 FUNC VOID DIA_Garwig_Shield_Info()
 {
 	AI_Output (other,self ,"DIA_Garwig_Shield_15_00"); //Parlez-moi du bouclier...
-	AI_Output (self ,other,"DIA_Garwig_Shield_06_01"); //Le Bouclier de Feu était au bras de Dominique lors de la bataille des Iles méridionales.
-	AI_Output (self ,other,"DIA_Garwig_Shield_06_02"); //Mais nul ne doit plus jamais le porter. C'est pour cette raison que nous l'avons cloué au mur.
+	AI_Output (self ,other,"DIA_Garwig_Shield_06_01"); //Le Bouclier de Feu Ã©tait au bras de Dominique lors de la bataille des Iles mÃ©ridionales.
+	AI_Output (self ,other,"DIA_Garwig_Shield_06_02"); //Mais nul ne doit plus jamais le porter. C'est pour cette raison que nous l'avons clouÃ© au mur.
 };
 //**************************************************************************
 //	Info Auge Innos
@@ -168,7 +168,7 @@ INSTANCE DIA_Garwig_Auge  (C_INFO)
 	condition   = DIA_Garwig_Auge_Condition;
 	information = DIA_Garwig_Auge_Info;
 	permanent   = FALSE;
-	description	= "L'Œil d'Innos est-il aussi gardé ici ?";
+	description	= "L'Å’il d'Innos est-il aussi gardÃ© ici ?";
 };
 FUNC INT DIA_Garwig_Auge_Condition()
 {
@@ -180,8 +180,8 @@ FUNC INT DIA_Garwig_Auge_Condition()
 };
 FUNC VOID DIA_Garwig_Auge_Info()
 {
-	AI_Output (other,self ,"DIA_Garwig_Auge_15_00"); //L'Œil d'Innos se trouve-t-il ici lui aussi ?
-	AI_Output (self ,other,"DIA_Garwig_Auge_06_01"); //Bien sûr que non ! Quelle étrange idée. Nul ne sait où se trouve cet artefact divin.
+	AI_Output (other,self ,"DIA_Garwig_Auge_15_00"); //L'Å’il d'Innos se trouve-t-il ici lui aussiÂ ?
+	AI_Output (self ,other,"DIA_Garwig_Auge_06_01"); //Bien sÃ»r que nonÂ ! Quelle Ã©trange idÃ©e. Nul ne sait oÃ¹ se trouve cet artefact divin.
 };
 ///////////////////////////////////////////////////////////////////////
 //	Info SLEEP
@@ -205,12 +205,12 @@ func int DIA_Garwig_SLEEP_Condition ()
 func void DIA_Garwig_SLEEP_Info ()
 {
 	AI_Output			(other, self, "DIA_Garwig_SLEEP_15_00"); //Que faites-vous ici ?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_06_01"); //Je suis le gardien des artefacts sacrés.
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_06_01"); //Je suis le gardien des artefacts sacrÃ©s.
 	
 	Info_ClearChoices 	(DIA_Garwig_SLEEP);
 	Info_AddChoice 		(DIA_Garwig_SLEEP,DIALOG_BACK,DIA_Garwig_SLEEP_BACK);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Voulez-vous que je vous relève un moment ?",DIA_Garwig_SLEEP_EXCHANGE);
-	Info_AddChoice 		(DIA_Garwig_SLEEP,"Quels sont les artefacts qui sont gardés ?",DIA_Garwig_SLEEP_THIEF);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"Voulez-vous que je vous relÃ¨ve un moment ?",DIA_Garwig_SLEEP_EXCHANGE);
+	Info_AddChoice 		(DIA_Garwig_SLEEP,"Quels sont les artefacts qui sont gardÃ©s ?",DIA_Garwig_SLEEP_THIEF);
 	Info_AddChoice 		(DIA_Garwig_SLEEP,"Vous ne dormez jamais ?",DIA_Garwig_SLEEP_NEVER);
 };
 FUNC VOID DIA_Garwig_SLEEP_BACK()
@@ -219,29 +219,29 @@ FUNC VOID DIA_Garwig_SLEEP_BACK()
 };
 FUNC VOID DIA_Garwig_SLEEP_EXCHANGE()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Voulez-vous que je vous remplace quelque temps ?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //S'agit-il d'une épreuve ? Les mages vous envoient me tester, n'est-ce pas ? Je le savais !
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //Mais je ne faillirai pas à ma tâche. Dites aux mages que je suis ferme comme le roc et que je résiste à toutes les tentations, car je suis digne de mon poste de gardien.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_EXCHANGE_15_00"); //Voulez-vous que je vous remplace quelque tempsÂ ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_01"); //S'agit-il d'une Ã©preuveÂ ? Les mages vous envoient me tester, n'est-ce pasÂ ? Je le savaisÂ !
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_EXCHANGE_06_02"); //Mais je ne faillirai pas Ã  ma tÃ¢che. Dites aux mages que je suis ferme comme le roc et que je rÃ©siste Ã  toutes les tentations, car je suis digne de mon poste de gardien.
 };
 FUNC VOID DIA_Garwig_SLEEP_THIEF()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //Pourquoi les artefacts sont-ils défendus ? Y a-t-il des raisons de craindre que quelqu'un cherche à s'en emparer ?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //Quelle surprenante idée ! D'où la sortez-vous ?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Les serviteurs d'Innos sont les seuls qui aient le droit de pénétrer dans le monastère, et aucun fidèle ne ferait jamais cela.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_THIEF_15_00"); //Pourquoi les artefacts sont-ils dÃ©fendusÂ ? Y a-t-il des raisons de craindre que quelqu'un cherche Ã  s'en emparerÂ ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_01"); //Quelle surprenante idÃ©eÂ ! D'oÃ¹ la sortez-vousÂ ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_THIEF_06_02"); //Les serviteurs d'Innos sont les seuls qui aient le droit de pÃ©nÃ©trer dans le monastÃ¨re, et aucun fidÃ¨le ne ferait jamais cela.
 };
 FUNC VOID DIA_Garwig_SLEEP_NEVER()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //Vous ne dormez jamais ?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //Quelle idée saugrenue ! Bien sûr que non ! C'est Innos lui-même qui me confère le pouvoir de ne jamais avoir à dormir.
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //Sinon comment pourrais-je m'acquitter de ma mission sacrée de gardien des reliques ?
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_NEVER_15_00"); //Vous ne dormez jamaisÂ ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_01"); //Quelle idÃ©e saugrenueÂ ! Bien sÃ»r que nonÂ ! C'est Innos lui-mÃªme qui me confÃ¨re le pouvoir de ne jamais avoir Ã  dormir.
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_NEVER_06_02"); //Sinon comment pourrais-je m'acquitter de ma mission sacrÃ©e de gardien des reliques ?
 	
 	Info_ClearChoices 	(DIA_Garwig_SLEEP);
 	Info_AddChoice (DIA_Garwig_SLEEP,"Vous ne dormez VRAIMENT jamais ?",DIA_Garwig_SLEEP_AGAIN);
 };
 FUNC VOID DIA_Garwig_SLEEP_AGAIN()
 {
-	AI_Output			(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //C'est vrai ? Vous ne dormez vraiment jamais ?
-	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //Non. Un gardien qui s'endort à son poste manque à son devoir.
+	AI_Output			(other, self, "DIA_Garwig_SLEEP_AGAIN_15_00"); //C'est vraiÂ ? Vous ne dormez vraiment jamaisÂ ?
+	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_01"); //Non. Un gardien qui s'endort Ã  son poste manque Ã  son devoir.
 	AI_Output			(self, other, "DIA_Garwig_SLEEP_AGAIN_06_02"); //Mais je ne faillirai pas moi, car ma force et mon endurance me viennent directement d'Innos, et jamais je ne ressentirai la fatigue.
 	
 	
@@ -271,18 +271,18 @@ func void DIA_Garwig_THIEF_Info ()
 					
 	if (Hammer_Taken == TRUE) 
 	{ 
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_00"); //(fou de rage) Voleur ! Vous faites honte non seulement à vous-même mais à l'ensemble de ce monastère !
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_01"); //Vous allez devoir faire pénitence pour vous faire pardonner ce sacrilège ! Mais pour commencer... rendez-moi ce marteau !
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_00"); //(fou de rage) VoleurÂ ! Vous faites honte non seulement Ã  vous-mÃªme mais Ã  l'ensemble de ce monastÃ¨reÂ !
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_01"); //Vous allez devoir faire pÃ©nitence pour vous faire pardonner ce sacrilÃ¨geÂ ! Mais pour commencer... rendez-moi ce marteauÂ !
 		
 	}
 	else
 	{
-		AI_Output (self, other, "DIA_Garwig_THIEF_06_02"); //(désespéré) Le marteau a disparu ! Comment cela a-t-il bien pu se produire ?
+		AI_Output (self, other, "DIA_Garwig_THIEF_06_02"); //(dÃ©sespÃ©rÃ©) Le marteau a disparuÂ ! Comment cela a-t-il bien pu se produireÂ ?
 		AI_Output (self, other, "DIA_Garwig_THIEF_06_03"); //J'ai failli. Innos ne manquera pas de me punir.
 	};	
 };
 ///////////////////////////////////////////////////////////////////////
-//	Info Hammer zurückbringen (immer wenn Spieler den Hammer hat)
+//	Info Hammer zurÃ¼ckbringen (immer wenn Spieler den Hammer hat)
 ///////////////////////////////////////////////////////////////////////
 instance DIA_Garwig_Abgeben		(C_INFO)
 {
@@ -302,17 +302,17 @@ func int DIA_Garwig_Abgeben_Condition ()
 };
 func void DIA_Garwig_Abgeben_Info ()
 {
-	AI_Output (other, self, "DIA_Garwig_Abgeben_15_00"); //Je vous ramène le marteau.
+	AI_Output (other, self, "DIA_Garwig_Abgeben_15_00"); //Je vous ramÃ¨ne le marteau.
 	
 	if (Hammer_Taken == TRUE)
 	{
-		AI_Output (self, other, "DIA_Garwig_Abgeben_06_01"); //Vous n'êtes qu'un sale voleur !
+		AI_Output (self, other, "DIA_Garwig_Abgeben_06_01"); //Vous n'Ãªtes qu'un sale voleurÂ !
 	}
 	else
 	{
 		AI_Output (self, other, "DIA_Garwig_Abgeben_06_02"); //Ainsi, c'est donc vous qui l'aviez pris...
 	};
-	AI_Output (self, other, "DIA_Garwig_Abgeben_06_03"); //Mais ce n'est pas à moi de vous juger. Innos se chargera de faire justice lui-même et de vous faire payer votre crime !
+	AI_Output (self, other, "DIA_Garwig_Abgeben_06_03"); //Mais ce n'est pas Ã  moi de vous juger. Innos se chargera de faire justice lui-mÃªme et de vous faire payer votre crimeÂ !
 	
 	B_GiveInvItems (other,self, Holy_Hammer_MIS,1);
 	Hammer_Taken = FALSE;

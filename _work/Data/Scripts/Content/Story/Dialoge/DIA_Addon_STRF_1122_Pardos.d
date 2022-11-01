@@ -40,9 +40,9 @@ FUNC INT DIA_Addon_Pardos_Hi_Condition()
 FUNC VOID DIA_Addon_Pardos_Hi_Info()
 {
 	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_00");//Comment vous sentez-vous ?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(fatigué) Je suis épuisé… complètement à plat. Est-ce une de ces belles journées ensoleillées ou une des ces nuits claires constellées ?
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(encore plus fatigué) Je ne sais pas… où est la douce pluie de l'été… la brise fraîche du soir… je ne les sens plus
-	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(résigné) C'est la vue que l'on perd en premier ici
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_01");//(fatiguÃ©) Je suis Ã©puisÃ©â€¦ complÃ¨tement Ã  plat. Est-ce une de ces belles journÃ©es ensoleillÃ©es ou une des ces nuits claires constellÃ©es ?
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_02");//(encore plus fatiguÃ©) Je ne sais pasâ€¦ oÃ¹ est la douce pluie de l'Ã©tÃ©â€¦ la brise fraÃ®che du soirâ€¦ je ne les sens plus
+	AI_Output (self, other, "DIA_Addon_Pardos_Hi_03_03");//(rÃ©signÃ©) C'est la vue que l'on perd en premier ici
 };
 //---------------------------------------------------------------------
 //	Info save
@@ -67,7 +67,7 @@ FUNC INT DIA_Addon_Pardos_save_Condition()
 FUNC VOID DIA_Addon_Pardos_save_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pardos_save_15_00");//Tenez bon. Les secours arrivent.
-	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(fatigué) Merci. Merci de ce que vous me dites.
+	AI_Output (self, other, "DIA_Addon_Pardos_save_03_01");//(fatiguÃ©) Merci. Merci de ce que vous me dites.
 	//Falsche Stimm Nummer M.F.//AI_Output (self, other, "DIA_Addon_Pardos_save_03_02");//Hey, du wirst doch jetzt nicht schlappmachen, oder? Gib jetzt nicht auf - klar?!
 };
 //---------------------------------------------------------------------
@@ -94,7 +94,7 @@ FUNC INT DIA_Addon_Pardos_trank_Condition()
 };
 FUNC VOID DIA_Addon_Pardos_trank_Info()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_trank_15_00");//Tenez, buvez ça.
+	AI_Output (other, self, "DIA_Addon_Pardos_trank_15_00");//Tenez, buvez Ã§a.
 	AI_StandUpQuick	(self);	
 	
 	Info_ClearChoices (DIA_Addon_Pardos_trank);
@@ -115,14 +115,14 @@ FUNC VOID DIA_Addon_Pardos_trank_Info()
 	};
 	if Npc_HasItems (other, ItFo_Addon_Meatsoup)
 	{
-		Info_AddChoice (DIA_Addon_Pardos_trank,"Donner du ragoût",DIA_Addon_Pardos_trank_Soup);
+		Info_AddChoice (DIA_Addon_Pardos_trank,"Donner du ragoÃ»t",DIA_Addon_Pardos_trank_Soup);
 	};
 	
 	
 };
 FUNC VOID B_SayPardosThanks()
 {
-	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//Merci, ça fait du bien.
+	AI_Output (self, other, "DIA_Addon_Pardos_trank_03_00");//Merci, Ã§a fait du bien.
 };
 FUNC VOID DIA_Addon_Pardos_trank_BACK()
 {
@@ -170,7 +170,7 @@ FUNC VOID DIA_Addon_Pardos_trank_03()
 //---------------------------------------------------------------------
 FUNC VOID DIA_Addon_Pardos_trank_Soup()
 {
-	AI_Output (other, self, "DIA_Addon_Pardos_trank_soup_15_00");//Tenez, mangez un peu de ragoût.
+	AI_Output (other, self, "DIA_Addon_Pardos_trank_soup_15_00");//Tenez, mangez un peu de ragoÃ»t.
 	
 	if B_GiveInvItems (other, self, ItFo_Addon_Meatsoup,1)
 	{
@@ -201,7 +201,7 @@ FUNC INT DIA_Addon_Pardos_perm_Condition()
 FUNC VOID DIA_Addon_Pardos_perm_Info()
 {
 	AI_Output (other, self, "DIA_Addon_Pardos_perm_15_00");//Comment allez-vous maintenant.
-	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//Mieux, grâce à vous Je sens que mes forces reviennent.
+	AI_Output (self, other, "DIA_Addon_Pardos_perm_03_01");//Mieux, grÃ¢ce Ã  vous Je sens que mes forces reviennent.
 };
 
 

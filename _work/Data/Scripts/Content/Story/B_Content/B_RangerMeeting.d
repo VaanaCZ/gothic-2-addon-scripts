@@ -12,7 +12,7 @@ func void B_MakeRangerReadyToLeaveMeeting (VAR C_NPC Ranger)
 	AI_UnequipArmor	(Ranger);
 	Npc_RemoveInvItems	(Ranger, ITAR_RANGER_Addon,	Npc_HasItems (Ranger, ITAR_RANGER_Addon ) );
 	Npc_RemoveInvItems	(Ranger, ITAR_Fake_RANGER,	Npc_HasItems (Ranger, ITAR_Fake_RANGER ) );
-	AI_EquipBestArmor (Ranger); //Joly:ITAR_Fake_RANGER wegen diesem hier, falls die Armor nicht gelöscht wurde.
+	AI_EquipBestArmor (Ranger); //Joly:ITAR_Fake_RANGER wegen diesem hier, falls die Armor nicht gelÃ¶scht wurde.
 };
 func void B_MakeRangerReadyForMeetingALL ()
 {
@@ -67,7 +67,7 @@ func VOID B_RangerMeetingParking () // im Lares dialog
 {
 	if (MIS_Addon_Cavalorn_GetOrnamentFromPAL != 0)
 	{
-		B_StartOtherRoutine	(Cavalorn,"Stadt"); //Joly:nicht parking. Der plöppt sonst bei Vat vat rein.			
+		B_StartOtherRoutine	(Cavalorn,"Stadt"); //Joly:nicht parking. Der plÃ¶ppt sonst bei Vat vat rein.			
 	};
 	
 	B_StartOtherRoutine	(Orlan,"START");	

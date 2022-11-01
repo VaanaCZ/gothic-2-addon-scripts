@@ -56,11 +56,11 @@ func void DIA_Kati_SLDNOCHDA_Info ()
 		AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_00"); //Ces coupeurs de gorges menacent mon mari ! Nous sommes citoyens de la ville, loyaux sujets du roi et les mercenaires veulent nous voler !
 		Hilfe = TRUE;
 	};
-	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Que faites-vous planté là ! Faites quelque chose ! Aidez-nous !
+	AI_Output (self, other, "DIA_Kati_SLDNOCHDA_16_01"); //Que faites-vous plantÃ© lÃ  ! Faites quelque chose ! Aidez-nous !
 	Akils_SLDStillthere = TRUE;
 	Log_CreateTopic (TOPIC_AkilsSLDStillthere, LOG_MISSION);
 	Log_SetTopicStatus(TOPIC_AkilsSLDStillthere, LOG_RUNNING);
-	B_LogEntry (TOPIC_AkilsSLDStillthere,"La ferme d'Akil est menacée par des mercenaires."); 
+	B_LogEntry (TOPIC_AkilsSLDStillthere,"La ferme d'Akil est menacÃ©e par des mercenaires."); 
 
 	AI_StopProcessInfos (self);
 };
@@ -91,7 +91,7 @@ func void DIA_Kati_HALLO_Info ()
 	
 	if (Npc_IsDead (Akil))
 	{
-		AI_Output (self, other, "DIA_Kati_HALLO_16_01"); //(sanglots) Mon bien-aimé mari est mort ! Oh ! Innos ! Pourquoi me punir aussi durement ?
+		AI_Output (self, other, "DIA_Kati_HALLO_16_01"); //(sanglots) Mon bien-aimÃ© mari est mort ! Oh ! Innos ! Pourquoi me punir aussi durement ?
 		
 		Npc_ExchangeRoutine	(self,"Start");
 		B_StartOtherRoutine	(Randolph,"Start");
@@ -127,7 +127,7 @@ func int DIA_Kati_ESSEN_Condition ()
 func void DIA_Kati_ESSEN_Info ()
 {
 	AI_Output (other, self, "DIA_Kati_ESSEN_15_00"); //Akil m'a dit que vous auriez un repas pour moi.
-	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //Les temps sont durs depuis que la Barrière est tombée et la région n'est plus sûre.
+	AI_Output (self, other, "DIA_Kati_ESSEN_16_01"); //Les temps sont durs depuis que la BarriÃ¨re est tombÃ©e et la rÃ©gion n'est plus sÃ»re.
 	AI_Output (self, other, "DIA_Kati_ESSEN_16_02"); //Voici un peu de pain, de la viande et de l'eau. C'est tout ce que je peux vous offrir.
 	
 	B_GiveInvItems (self, other, ItFo_Bread, 1);			
@@ -146,7 +146,7 @@ instance DIA_Kati_Baltram		(C_INFO)
 	condition	 = 	DIA_Kati_Baltram_Condition;
 	information	 = 	DIA_Kati_Baltram_Info;
 	permanent	 = 	FALSE;
-	description	 = "Je suis envoyé par Baltram...";
+	description	 = "Je suis envoyÃ© par Baltram...";
 };
 func int DIA_Kati_Baltram_Condition ()
 {
@@ -159,8 +159,8 @@ func int DIA_Kati_Baltram_Condition ()
 };
 func void DIA_Kati_Baltram_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Baltram m'envoie. Je dois récupérer une livraison pour lui.
-	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Oui, naturellement. Tenez, j'ai tout préparé.
+	AI_Output (other, self, "DIA_Kati_Baltram_15_00"); //Baltram m'envoie. Je dois rÃ©cupÃ©rer une livraison pour lui.
+	AI_Output (self, other, "DIA_Kati_Baltram_16_01"); //Oui, naturellement. Tenez, j'ai tout prÃ©parÃ©.
 	CreateInvItems 	(self, ItMi_BaltramPaket, 1 );
 	B_GiveInvItems (self, other, ItMi_BaltramPaket,1);
 	Lieferung_Geholt = TRUE;
@@ -176,7 +176,7 @@ instance DIA_Kati_BAUERNAUFSTAND		(C_INFO)
 	condition	 = 	DIA_Kati_BAUERNAUFSTAND_Condition;
 	information	 = 	DIA_Kati_BAUERNAUFSTAND_Info;
 	permanent    =  FALSE;
-	description	 = 	"Pourquoi ne pas vous défendre contre la tyrannie d'Onar ?";
+	description	 = 	"Pourquoi ne pas vous dÃ©fendre contre la tyrannie d'Onar ?";
 };
 
 func int DIA_Kati_BAUERNAUFSTAND_Condition ()
@@ -189,9 +189,9 @@ func int DIA_Kati_BAUERNAUFSTAND_Condition ()
 
 func void DIA_Kati_BAUERNAUFSTAND_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Pourquoi ne pas vous défendre contre la tyrannie d'Onar ?
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Pour nous les fermiers proches de la ville, il est plus important de rester en bonne intelligence avec la milice plutôt que de se fier aux mercenaires d'Onar.
-	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //D'un autre coté, Bengar et Sékob préféreraient perdre leurs fermes plutôt que de travailler pour le roi.
+	AI_Output (other, self, "DIA_Kati_BAUERNAUFSTAND_15_00"); //Pourquoi ne pas vous dÃ©fendre contre la tyrannie d'Onar ?
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_01"); //Pour nous les fermiers proches de la ville, il est plus important de rester en bonne intelligence avec la milice plutÃ´t que de se fier aux mercenaires d'Onar.
+	AI_Output (self, other, "DIA_Kati_BAUERNAUFSTAND_16_02"); //D'un autre cotÃ©, Bengar et SÃ©kob prÃ©fÃ©reraient perdre leurs fermes plutÃ´t que de travailler pour le roi.
 
 };
 
@@ -205,7 +205,7 @@ instance DIA_Kati_ANDEREHOEFE		(C_INFO)
 	condition	 = 	DIA_Kati_ANDEREHOEFE_Condition;
 	information	 = 	DIA_Kati_ANDEREHOEFE_Info;
 	permanent	 =  FALSE;
-	description	 = 	"Où puis-je trouver les fermes de Bengar et de Sékob ?";
+	description	 = 	"OÃ¹ puis-je trouver les fermes de Bengar et de SÃ©kob ?";
 };
 
 func int DIA_Kati_ANDEREHOEFE_Condition ()
@@ -218,8 +218,8 @@ func int DIA_Kati_ANDEREHOEFE_Condition ()
 
 func void DIA_Kati_ANDEREHOEFE_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //Où puis-je trouver les fermes de Bengar et de Sékob ?
-	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Elles ne sont pas loin de celle du propriétaire terrien. Allez vers l'est et vous les trouverez.
+	AI_Output (other, self, "DIA_Kati_ANDEREHOEFE_15_00"); //OÃ¹ puis-je trouver les fermes de Bengar et de SÃ©kob ?
+	AI_Output (self, other, "DIA_Kati_ANDEREHOEFE_16_01"); //Elles ne sont pas loin de celle du propriÃ©taire terrien. Allez vers l'est et vous les trouverez.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -232,7 +232,7 @@ instance DIA_Kati_HIERWEG		(C_INFO)
 	condition	 = 	DIA_Kati_HIERWEG_Condition;
 	information	 = 	DIA_Kati_HIERWEG_Info;
 	permanent	 =  FALSE;
-	description	 = 	"N'avez-vous jamais envisagé de partir d'ici ?";
+	description	 = 	"N'avez-vous jamais envisagÃ© de partir d'ici ?";
 };
 
 func int DIA_Kati_HIERWEG_Condition ()
@@ -245,10 +245,10 @@ func int DIA_Kati_HIERWEG_Condition ()
 
 func void DIA_Kati_HIERWEG_Info ()
 {
-	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //N'avez-vous jamais songé à partir d'ici ?
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //Il n'est pas facile de partir de cette région entourée d'une haute chaîne de montagnes.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //Les seuls moyens de partir d'ici sont le col vers la Vallée des mines et le port.
-	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //Puisque nous ne pouvons nous offrir un passage sur un bateau et que la Vallée des mines est une destination sans retour, nous sommes obligés de rester ici.
+	AI_Output (other, self, "DIA_Kati_HIERWEG_15_00"); //N'avez-vous jamais songÃ© Ã  partir d'ici ?
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_01"); //Il n'est pas facile de partir de cette rÃ©gion entourÃ©e d'une haute chaÃ®ne de montagnes.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_02"); //Les seuls moyens de partir d'ici sont le col vers la VallÃ©e des mines et le port.
+	AI_Output (self, other, "DIA_Kati_HIERWEG_16_03"); //Puisque nous ne pouvons nous offrir un passage sur un bateau et que la VallÃ©e des mines est une destination sans retour, nous sommes obligÃ©s de rester ici.
 };
 
 ///////////////////////////////////////////////////////////////////////
@@ -275,7 +275,7 @@ func int DIA_Kati_PASS_Condition ()
 func void DIA_Kati_PASS_Info ()
 {
 	AI_Output (other, self, "DIA_Kati_PASS_15_00"); //Que savez-vous au sujet du col ?
-	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //Je n'y suis jamais allée moi-même. Mais il doit se trouver quelque part près de la ferme de Bengar, sur les hauts pâturages.
+	AI_Output (self, other, "DIA_Kati_PASS_16_01"); //Je n'y suis jamais allÃ©e moi-mÃªme. Mais il doit se trouver quelque part prÃ¨s de la ferme de Bengar, sur les hauts pÃ¢turages.
 };
 
 
@@ -374,8 +374,8 @@ func int DIA_Kati_PERM_Condition ()
 func void DIA_Kati_PERM_Info ()
 {
 	AI_Output			(other, self, "DIA_Kati_PERM_15_00"); //Vous vous en sortez toujours ?
-	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //On se débrouille. Je me demande juste combien de temps nous allons devoir subir ces diables en noir.
-	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //Je ne peux plus les supporter. Ils traînent autour de la maison et font des bruits étranges.
+	AI_Output			(self, other, "DIA_Kati_PERM_16_01"); //On se dÃ©brouille. Je me demande juste combien de temps nous allons devoir subir ces diables en noir.
+	AI_Output			(self, other, "DIA_Kati_PERM_16_02"); //Je ne peux plus les supporter. Ils traÃ®nent autour de la maison et font des bruits Ã©tranges.
 };
 
 

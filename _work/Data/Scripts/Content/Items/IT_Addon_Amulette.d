@@ -249,7 +249,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		//aktuelle Hitpoints werden nicht gesteigert. (Sonst Heilmaschine)
 	};
 //---------------------------------------------------------------------------------------------------------
-	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //Höhle zum Canyon
+	INSTANCE  ItRi_Addon_Health_02 (C_Item)  //HÃ¶hle zum Canyon
 {
 	name 			=	NAME_Ring;
 
@@ -336,7 +336,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Amulette des prêtres";
+	description		=  "Amulette des prÃªtres";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Amulett_Solo_Bonus;
@@ -401,7 +401,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Anneau des prêtres";
+	description		=  "Anneau des prÃªtres";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -466,7 +466,7 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 	wear			= 	WEAR_EFFECT;
 	effect			=	"SPELLFX_ITEMGLIMMER"; 
 
-	description		=  "Anneau des prêtres";
+	description		=  "Anneau des prÃªtres";
 
 	TEXT[2]			= NAME_Bonus_Mana;
 	COUNT[2]		= MA_Ring_Solo_Bonus;
@@ -513,9 +513,9 @@ const int  STR_Amulett_Artefakt_Bonus	=   40; //wenn schon beide Ringe equipped 
 		
 	};
 //------------------------------------------------------------------------------------------
-// Kumulatives Stärke Amulett (Maya) 
+// Kumulatives StÃ¤rke Amulett (Maya) 
 //------------------------------------------------------------------------------------------
-	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhöhle strand
+	INSTANCE  ItAm_Addon_STR(C_Item)  //feuerwaranhÃ¶hle strand
 {
 	name 			=	NAME_Amulett;
 

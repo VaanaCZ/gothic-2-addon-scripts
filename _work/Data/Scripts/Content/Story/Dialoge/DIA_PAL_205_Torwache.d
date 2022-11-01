@@ -79,26 +79,26 @@ func void DIA_PAL_205_Torwache_FirstWarn_Info()
 	{
 		if (B_GetGreatestPetzCrime(self) == CRIME_MURDER)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_01"); //Je faillirais à ma mission sacrée si je laissais entrer un meurtrier !
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_01"); //Je faillirais Ã  ma mission sacrÃ©e si je laissais entrer un meurtrierÂ !
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_THEFT)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_02"); //Vous êtes accusé de vol. Tant que ce sera vrai, vous n'entrerez pas !
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_02"); //Vous Ãªtes accusÃ© de vol. Tant que ce sera vrai, vous n'entrerez pasÂ !
 		};
 	
 		if (B_GetGreatestPetzCrime(self) == CRIME_ATTACK)
 		{
-			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_03"); //Je refuse de vous laisser passer car vous êtes d'un tempérament bagarreur.
+			AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_03"); //Je refuse de vous laisser passer car vous Ãªtes d'un tempÃ©rament bagarreur.
 		};
 	
-		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_04"); //Allez voir le seigneur André et réglez cette affaire !
+		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_04"); //Allez voir le seigneur AndrÃ© et rÃ©glez cette affaire !
 	}
 	
 	// ------ normales Reinkommen ------
 	else 
 	{
-		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_05"); //Seuls ceux qui sont au service du roi peuvent entrer à l'hôtel de ville.
+		AI_Output (self, other,"DIA_PAL_205_Torwache_FirstWarn_12_05"); //Seuls ceux qui sont au service du roi peuvent entrer Ã  l'hÃ´tel de ville.
 	};
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP(other,PAL_205_Checkpoint);
@@ -136,7 +136,7 @@ FUNC INT DIA_PAL_205_Torwache_SecondWarn_Condition()
 
 func void DIA_PAL_205_Torwache_SecondWarn_Info()
 {
-	AI_Output (self, other,"DIA_PAL_205_Torwache_SecondWarn_12_00"); //Si vous faites un pas de plus, je devrai vous assommer, par Innos !
+	AI_Output (self, other,"DIA_PAL_205_Torwache_SecondWarn_12_00"); //Si vous faites un pas de plus, je devrai vous assommer, par InnosÂ !
 
 	other.aivar[AIV_LastDistToWP] 		= Npc_GetDistToWP (other,PAL_205_Checkpoint);
 	self.aivar[AIV_Guardpassage_Status]	= GP_SecondWarnGiven;	
@@ -199,8 +199,8 @@ FUNC INT DIA_PAL_205_Torwache_Hagen_Condition()
 };
 FUNC VOID DIA_PAL_205_Torwache_Hagen_Info()
 {
-	AI_Output (other, self,"DIA_PAL_205_Torwache_Hagen_15_00"); //Il faut que je parle au seigneur Hagen !
-	AI_Output (self, other,"DIA_PAL_205_Torwache_Hagen_12_01"); //Savez-vous combien de fois par jour j'entends cette phrase ? Vous n'avez pas le droit d'entrer. Si vous essayez tout de même, je serai obligé de vous tuer.
+	AI_Output (other, self,"DIA_PAL_205_Torwache_Hagen_15_00"); //Il faut que je parle au seigneur HagenÂ !
+	AI_Output (self, other,"DIA_PAL_205_Torwache_Hagen_12_01"); //Savez-vous combien de fois par jour j'entends cette phraseÂ ? Vous n'avez pas le droit d'entrer. Si vous essayez tout de mÃªme, je serai obligÃ© de vous tuer.
 	 
 	
 	AI_StopProcessInfos(self);
@@ -232,7 +232,7 @@ FUNC INT DIA_PAL_205_Torwache_PassAsMil_Condition()
 FUNC VOID DIA_PAL_205_Torwache_PassAsMil_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsMil_15_00"); //Je fais partie de la milice.
-	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMil_12_01"); //Très bien, vous pouvez entrer.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMil_12_01"); //TrÃ¨s bien, vous pouvez entrer.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	PAL_205_schonmalreingelassen = TRUE;
@@ -266,14 +266,14 @@ FUNC INT DIA_PAL_205_Torwache_PassAsMage_Condition()
 FUNC VOID DIA_PAL_205_Torwache_PassAsMage_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsMage_15_00"); //Je suis un Magicien du feu.
-	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMage_12_01"); //Bien sûr. Pardonnez-moi, ô Elu, mais je ne fais que mon devoir.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsMage_12_01"); //Bien sÃ»r. Pardonnez-moi, Ã´ Elu, mais je ne fais que mon devoir.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	PAL_205_schonmalreingelassen = TRUE;
 	AI_StopProcessInfos	(self);
 };
 // ************************************************************
-// 						Pass as SÖLDNER
+// 						Pass as SÃ–LDNER
 // ************************************************************
 
 INSTANCE DIA_PAL_205_Torwache_PassAsSld (C_INFO)
@@ -299,7 +299,7 @@ FUNC INT DIA_PAL_205_Torwache_PassAsSld_Condition()
 FUNC VOID DIA_PAL_205_Torwache_PassAsSld_Info()
 {
 	AI_Output (other, self,"DIA_PAL_205_Torwache_PassAsSld_15_00"); //Laissez-moi passer. Je suis porteur d'un message des mercenaires.
-	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsSld_12_01"); //Très bien, mais je vous préviens : si vous causez des ennuis en ce lieu, vous n'aurez pas le temps de le regretter.
+	AI_Output (self, other,"DIA_PAL_205_Torwache_PassAsSld_12_01"); //TrÃ¨s bien, mais je vous prÃ©viensÂ : si vous causez des ennuis en ce lieu, vous n'aurez pas le temps de le regretter.
 	
 	self.aivar[AIV_PASSGATE] = TRUE;
 	PAL_205_schonmalreingelassen = TRUE;
@@ -316,7 +316,7 @@ INSTANCE DIA_PAL_205_Torwache_PERM (C_INFO)
 	condition	= DIA_PAL_205_Torwache_PERM_Condition;
 	information	= DIA_PAL_205_Torwache_PERM_Info;
 	permanent	= TRUE;
-	description	= "Comment ça se passe ?";
+	description	= "Comment Ã§a se passe ?";
 };        
          
 FUNC INT DIA_PAL_205_Torwache_PERM_Condition()
@@ -330,16 +330,16 @@ FUNC INT DIA_PAL_205_Torwache_PERM_Condition()
 
 FUNC VOID DIA_PAL_205_Torwache_PERM_Info()
 {
-	AI_Output (other, self,"DIA_PAL_205_Torwache_PERM_15_00"); //Comment ça se passe ?
+	AI_Output (other, self,"DIA_PAL_205_Torwache_PERM_15_00"); //Comment Ã§a se passeÂ ?
 	
 	if (other.guild == GIL_PAL) 
 	|| (other.guild == GIL_MIL)
 	{
-		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_01"); //La situation est sous contrôle.
+		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_01"); //La situation est sous contrÃ´le.
 	}
 	else if (other.guild == GIL_KDF)
 	{
-		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_02"); //Ma mission me comble, ô Elu.
+		AI_Output (self, other,"DIA_PAL_205_Torwache_PERM_12_02"); //Ma mission me comble, Ã´ Elu.
 	}
 	else if (other.guild == GIL_SLD)
 	||		(other.guild == GIL_DJG)

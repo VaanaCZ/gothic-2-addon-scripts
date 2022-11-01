@@ -2,7 +2,7 @@
 // ZS_ObservePlayer
 // ----------------
 // Aufgerufen durch B_AssessObserveSuspect, wenn ich den Spieler schleichen sehe
-// und durch B_AssessQuietSound, wenn ich den Spieler direkt hinter mir höre
+// und durch B_AssessQuietSound, wenn ich den Spieler direkt hinter mir hÃ¶re
 // und wenn ein NSC in ZS_Sleep von QuietSound geweckt wird
 // ****************************************************************************************
 

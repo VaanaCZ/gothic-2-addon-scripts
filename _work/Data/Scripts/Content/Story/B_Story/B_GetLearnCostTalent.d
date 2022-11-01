@@ -3,10 +3,10 @@
 // --------------------
 // Ermittelt die Kosten eines beliebigen Talentes
 // oder die Kosten eines Kampftalent %-Punktes
-// in Abhängigkeit des zugeordneten "verwandten" Kampftalentes
-// Einhänder - Zweihänder
+// in AbhÃ¤ngigkeit des zugeordneten "verwandten" Kampftalentes
+// EinhÃ¤nder - ZweihÃ¤nder
 // Bogen - Armbrust
-// Die Kosten für ein Talent% verdoppeln sich, 
+// Die Kosten fÃ¼r ein Talent% verdoppeln sich, 
 // wenn der Spieler das "verwandte" Talent eine STUFE schlechter beherrscht
 // Das "untere" Talent wird simultan mit-hochgezogen
 // ************************************************************************
@@ -16,7 +16,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 	// ------ Kostenberechnung ------
 	var int kosten; kosten = 0;
 	
-	// ------ Kosten für Magiekreis ------
+	// ------ Kosten fÃ¼r Magiekreis ------
 	if (talent == NPC_TALENT_MAGE)
 	{
 		if (skill >= 1) && (skill <= 6)
@@ -25,7 +25,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		};
 	};
 	
-	// ------ Kosten für Einhand % ------
+	// ------ Kosten fÃ¼r Einhand % ------
 	if (talent == NPC_TALENT_1H)
 	{	
 		if (oth.aivar[REAL_TALENT_1H] >= 120)		{	kosten = (5);	}
@@ -37,7 +37,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		kosten = (kosten * skill);
 	};
 	
-	// ------ Kosten für Zweihand % ------
+	// ------ Kosten fÃ¼r Zweihand % ------
 	if (talent == NPC_TALENT_2H)
 	{	
 		if (oth.aivar[REAL_TALENT_2H] >= 120)		{	kosten = (5);	}
@@ -49,7 +49,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		kosten = (kosten * skill);
 	};
 	
-		// ------ Kosten für Bogen % ------
+		// ------ Kosten fÃ¼r Bogen % ------
 	if (talent == NPC_TALENT_BOW)
 	{	
 		if (oth.aivar[REAL_TALENT_BOW] >= 120)		{	kosten = (5);	}
@@ -61,7 +61,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		kosten = (kosten * skill);
 	};
 	
-	// ------ Kosten für Crossbow % ------
+	// ------ Kosten fÃ¼r Crossbow % ------
 	if (talent == NPC_TALENT_CROSSBOW)
 	{	
 		if (oth.aivar[REAL_TALENT_CROSSBOW] >= 120)		{	kosten = (5);	}
@@ -73,7 +73,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		kosten = (kosten * skill);
 	};
 	
-	// ------ Kosten für Diebestalente ------
+	// ------ Kosten fÃ¼r Diebestalente ------
 	if (talent == NPC_TALENT_SNEAK)
 	|| (talent == NPC_TALENT_ACROBAT)
 	{
@@ -86,7 +86,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		kosten = (10);
 	};
 		
-	// ------ Kosten für Schmieden ------
+	// ------ Kosten fÃ¼r Schmieden ------
 	if (talent == NPC_TALENT_SMITH)
 	{
 		if 		(skill == WEAPON_Common) 			{	kosten = (2);	}
@@ -105,7 +105,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		else if (skill == WEAPON_1H_Harad_04)		{	kosten = (10);	};
 	};
 
-	// ------ Kosten für Alchemie ------
+	// ------ Kosten fÃ¼r Alchemie ------
 	if (talent == NPC_TALENT_ALCHEMY)
 	{
 		if 		(skill == POTION_Health_01	) 	{	kosten = (1);	}
@@ -124,7 +124,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		else if (skill == POTION_MegaDrink	) 	{	kosten = (20);	};
 	};                                                              
 	
-	// ------ Kosten für Animaltrophy ------
+	// ------ Kosten fÃ¼r Animaltrophy ------
 	if (talent == NPC_TALENT_TAKEANIMALTROPHY)
 	{
 		if 		(skill == TROPHY_Teeth			) 	{	kosten = (3);	}
@@ -143,7 +143,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		else if (skill == TROPHY_ReptileSkin	) 	{	kosten = (3);	};
 	};                                                                  
 
-	// ------ Kosten für Sprache der Erbauer ------
+	// ------ Kosten fÃ¼r Sprache der Erbauer ------
 	if (talent == NPC_TALENT_FOREIGNLANGUAGE) 	//ADDON
 	{
 		if 		(skill == LANGUAGE_1			) 	{	kosten = (5);	}
@@ -162,7 +162,7 @@ func int B_GetLearnCostTalent (var C_NPC oth, var int talent, var int skill)
 		else if (skill == WISPSKILL_POTIONS ) 	{	kosten = (5);	};
 	};                                                              
 	                                                                
-	// ------ Kosten für Runen ------
+	// ------ Kosten fÃ¼r Runen ------
 	if (talent == NPC_TALENT_RUNES)
 	{
 		// PAL
